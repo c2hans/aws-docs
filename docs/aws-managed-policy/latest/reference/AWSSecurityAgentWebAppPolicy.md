@@ -17,20 +17,20 @@ You can attach `AWSSecurityAgentWebAppPolicy` to your users, groups, and roles.
 <a name="AWSSecurityAgentWebAppPolicy-details"></a>
 + **Type**: Service role policy
 + **Creation time**: February 05, 2026, 23:19 UTC
-+ **Edited time:** November 14, 2026, 02:37 UTC
++ **Edited time:** November 20, 2026, 18:07 UTC
 + **ARN**: `arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy`
 
 ## Policy version
 <a name="AWSSecurityAgentWebAppPolicy-version"></a>
 
-**Policy version:** v11 (default)
+**Policy version:** v12 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
 ## JSON policy document
 <a name="AWSSecurityAgentWebAppPolicy-json"></a>
 
-```
+```json
 {
   "Version" : "2012-10-17",
   "Statement" : [
@@ -136,6 +136,7 @@ The policy's default version is the version that defines the permissions for the
         "securityagent:GetDesignReview",
         "securityagent:GetDesignReviewArtifact",
         "securityagent:GetDesignReviewFeedback",
+        "securityagent:GetPentestEstimate",
         "securityagent:ListActorMessages",
         "securityagent:ListArtifacts",
         "securityagent:ListCodeReviewJobsForCodeReview",
@@ -158,10 +159,12 @@ The policy's default version is the version that defines the permissions for the
         "securityagent:StartCodeRemediation",
         "securityagent:StartCodeReviewJob",
         "securityagent:StartPentestJob",
+        "securityagent:StartPentestEstimationRun",
         "securityagent:StartThreatModelJob",
         "securityagent:StartValidationRun",
         "securityagent:StopCodeReviewJob",
         "securityagent:StopPentestJob",
+        "securityagent:StopPentestEstimationRun",
         "securityagent:StopThreatModelJob",
         "securityagent:UpdateCodeReview",
         "securityagent:UpdateDiscoveredDomains",

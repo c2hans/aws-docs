@@ -26,7 +26,7 @@ A composite primary key contains a partition key and a sort key. The item and qu
 
  **Imports**
 
-```
+```python
 import time
 
 from aws_sdk_dynamodb import DynamoDBClient
@@ -34,7 +34,7 @@ from aws_sdk_dynamodb import DynamoDBClient
 
  **Code**
 
-```
+```python
 def create_table_composite_key(
     client: DynamoDBClient,
     table_name: str,
@@ -74,13 +74,13 @@ For request and response details, see the [list\_tables()](https://docs.aws.amaz
 
  **Imports**
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient
 ```
 
  **Code**
 
-```
+```python
 def list_tables(client: DynamoDBClient, max_pages: int = 100) -> list[str]:
     """Return table names from at most ``max_pages`` response pages."""
     table_names: list[str] = []
@@ -106,14 +106,14 @@ Use `describe_table` to inspect table metadata such as status, key schema, item 
 
  **Imports**
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient
 from aws_sdk_dynamodb.models import TableDescription
 ```
 
  **Code**
 
-```
+```python
 def describe_table(
     client: DynamoDBClient, table_name: str
 ) -> TableDescription:
@@ -133,7 +133,7 @@ You can change your table's provisioned throughput values at any time with `upda
 
  **Imports**
 
-```
+```python
 import time
 
 from aws_sdk_dynamodb import DynamoDBClient
@@ -141,7 +141,7 @@ from aws_sdk_dynamodb import DynamoDBClient
 
  **Code**
 
-```
+```python
 def update_table(
     client: DynamoDBClient,
     table_name: str,
@@ -180,7 +180,7 @@ After you run the examples, delete each temporary table that you created. The bo
 
  **Imports**
 
-```
+```python
 import time
 
 from aws_sdk_dynamodb import DynamoDBClient
@@ -189,7 +189,7 @@ from aws_sdk_dynamodb.models import ResourceNotFoundException
 
  **Code**
 
-```
+```python
 def delete_table(
     client: DynamoDBClient,
     table_name: str,

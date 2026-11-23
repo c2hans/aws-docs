@@ -130,7 +130,7 @@ Before you begin, note the following:
 
 This command returns the Amazon Resource Name (ARN) of the NFS location, similar to the ARN shown following.
 
-```
+```json
 {
     "LocationArn": "arn:aws:datasync:us-east-1:111222333444:location/loc-0f01451b140b2af49"
 }

@@ -31,7 +31,7 @@ Before you create an EMR Serverless custom image, complete these prerequisites.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -156,7 +156,7 @@ Choose the AWS Management Console tab or AWS CLI tab according to how you want t
 #### [ CLI ]
 + Create an application with the `image-configuration` parameter. EMR Serverless applies this setting to all worker types.
 
-  ```
+  ```bash
   aws emr-serverless create-application \
   --release-label emr-6.9.0 \
   --type SPARK \
@@ -167,7 +167,7 @@ Choose the AWS Management Console tab or AWS CLI tab according to how you want t
 
   To create an application with different image settings for each worker type, use the `worker-type-specifications` parameter.
 
-  ```
+  ```bash
   aws emr-serverless create-application \
   --release-label emr-6.9.0 \
   --type SPARK \
@@ -187,7 +187,7 @@ Choose the AWS Management Console tab or AWS CLI tab according to how you want t
 
   To update an application, use the `image-configuration` parameter. EMR Serverless applies this setting to all worker types.
 
-  ```
+  ```bash
   aws emr-serverless update-application \
   --application-id {{application-id}} \
   --image-configuration '{
@@ -207,7 +207,7 @@ Add the following resource policy to the Amazon ECR repository to allow the EMR 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

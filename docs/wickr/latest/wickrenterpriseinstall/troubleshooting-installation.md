@@ -72,7 +72,7 @@ Check the Kubernetes installation records:
 
 1. Output will look something like this:
 
-   ```
+   ```bash
          [root@ip-172-31-6-72 ~]# kubectl get installations
    NAME             STATE      INSTALLERVERSION   CREATEDAT              AGE
    20251113170603   Obsolete   2.1.3+k8s-1.30     2025-11-13T17:06:05Z   22h

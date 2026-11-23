@@ -17,13 +17,13 @@ For best results, we recommend that you start sessions on Windows clients using 
 
 1. Download the installer using the following URL.
 
-   ```
+   ```http
    https://s3.amazonaws.com/session-manager-downloads/plugin/latest/windows/SessionManagerPluginSetup.exe
    ```
 
    Alternatively, you can download a zipped version of the installer using the following URL.
 
-   ```
+   ```http
    https://s3.amazonaws.com/session-manager-downloads/plugin/latest/windows/SessionManagerPlugin.zip
    ```
 

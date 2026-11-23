@@ -138,7 +138,7 @@ Once you've configured your DNS provider for AutoDiscover, you can test your Aut
 
 1. Next, test a real AutoDiscover request. Create a `request.xml` file with the following XML content:
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="utf-8"?>
 
    <Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/mobilesync/requestschema/2006">
@@ -159,7 +159,7 @@ Once you've configured your DNS provider for AutoDiscover, you can test your Aut
 
    The response will look similar to the following example if the endpoint is configured correctly:
 
-   ```
+   ```xml
    $ curl -d @request.xml -u testuser@company.tld -v https://autodiscover.company.tld/autodiscover/autodiscover.xml
 
    Enter host password for user 'testuser@company.tld':

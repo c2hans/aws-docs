@@ -35,7 +35,7 @@ If you don't provide user context or a visitor ID, the feedback is anonymous and
 
 The following code shows how to include user context as a token or the visitor ID.
 
-```
+```python
 response = kendra.query(
     QueryText = query,
     IndexId = index,

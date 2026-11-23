@@ -42,7 +42,7 @@ When you delete a user's account from a directory, all information about the use
 **To delete an AWS Managed Microsoft AD user account with AWS CLI**
 +  Open the AWS CLI, and run the following command with your Directory ID and username:
 
-```
+```bash
 aws ds-data delete-user --directory-id {{d-1234567890}} --sam-account-name "{{jane.doe}}"
 ```
 
@@ -56,7 +56,7 @@ For more information, see [`delete-user`](https://docs.aws.amazon.com/cli/latest
 **To delete an AWS Managed Microsoft AD user account with AWS Tools for PowerShell**
 +  Open PowerShell, and run the following command with your Directory ID and username:
 
-```
+```ps
 Remove-DSDUser -DirectoryId {{d-1234567890}} -SAMAccountName "{{jane.doe}}"
 ```
 

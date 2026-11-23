@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::DestinationEndpoint RouterInputDestinationEndpointConfiguration
 
-<a name="aws-properties-mediaconnect-destinationendpoint-routerinputdestinationendpointconfiguration-description"></a>The `RouterInputDestinationEndpointConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::DestinationEndpoint](aws-resource-mediaconnect-destinationendpoint.md).
+The configuration settings for a destination endpoint that represents a router input.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-routerinputdestinationendpointconfiguration-syntax"></a>
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-routerinputdestinationendpointconfiguration-properties"></a>
 
 `RouterInputArn`  <a name="cfn-mediaconnect-destinationendpoint-routerinputdestinationendpointconfiguration-routerinputarn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the router input that the destination endpoint represents.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:routerInput:[a-z0-9]{12}$`

@@ -35,7 +35,7 @@ You can use the delete-protect-configuration command to delete a protect configu
 **To delete a protect configuration**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 delete-protect-configuration --protect-configuration-id {{ProtectConfigId}}
   ```
 

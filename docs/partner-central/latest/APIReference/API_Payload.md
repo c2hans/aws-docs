@@ -15,6 +15,11 @@ In the following list, the required parameters are described first.
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** AccountPlanningInvitation **   <a name="AWSPartnerCentral-Type-Payload-AccountPlanningInvitation"></a>
+The content of an account-planning invitation. This field is present when the invitation is for account planning.
+Type: [AccountPlanningInvitationPayload](API_AccountPlanningInvitationPayload.md) object
+Required: No
+
  ** LeadInvitation **   <a name="AWSPartnerCentral-Type-Payload-LeadInvitation"></a>
 Specifies the details of the lead invitation within the Engagement Invitation payload. This data helps partners understand the lead context, customer information, and interaction history for the lead opportunity from AWS.
 Type: [LeadInvitationPayload](API_LeadInvitationPayload.md) object

@@ -24,7 +24,7 @@ Before creating `IoTSiteWiseDefaultWorkspace`, make sure you have done the follo
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

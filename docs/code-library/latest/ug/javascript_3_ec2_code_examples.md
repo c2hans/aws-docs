@@ -33,7 +33,7 @@ The following code example shows how to get started using Amazon EC2.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { DescribeSecurityGroupsCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 // Call DescribeSecurityGroups and display the result.
@@ -82,7 +82,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 This file contains a list of common actions used with EC2. The steps are constructed with a Scenario framework that simplifies running an interactive example. For the full context, visit the GitHub repository.
 
-```
+```javascript
 import { tmpdir } from "node:os";
 import { writeFile, mkdtemp, rm } from "node:fs/promises";
 import { join } from "node:path";
@@ -934,7 +934,7 @@ The following code example shows how to use `AllocateAddress`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { AllocateAddressCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -975,7 +975,7 @@ The following code example shows how to use `AssociateAddress`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { AssociateAddressCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -1024,7 +1024,7 @@ The following code example shows how to use `AuthorizeSecurityGroupIngress`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import {
   AuthorizeSecurityGroupIngressCommand,
   EC2Client,
@@ -1075,7 +1075,7 @@ The following code example shows how to use `CreateKeyPair`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { CreateKeyPairCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -1112,7 +1112,7 @@ The following code example shows how to use `CreateLaunchTemplate`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
     const ssmClient = new SSMClient({});
     const { Parameter } = await ssmClient.send(
       new GetParameterCommand({
@@ -1144,7 +1144,7 @@ The following code example shows how to use `CreateSecurityGroup`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { CreateSecurityGroupCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -1182,7 +1182,7 @@ The following code example shows how to use `DeleteKeyPair`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { DeleteKeyPairCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -1217,7 +1217,7 @@ The following code example shows how to use `DeleteLaunchTemplate`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
       await client.send(
         new DeleteLaunchTemplateCommand({
           LaunchTemplateName: NAMES.launchTemplateName,
@@ -1234,7 +1234,7 @@ The following code example shows how to use `DeleteSecurityGroup`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { DeleteSecurityGroupCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -1269,7 +1269,7 @@ The following code example shows how to use `DescribeAddresses`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { DescribeAddressesCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -1310,7 +1310,7 @@ The following code example shows how to use `DescribeIamInstanceProfileAssociati
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
       const ec2Client = new EC2Client({});
       const { IamInstanceProfileAssociations } = await ec2Client.send(
         new DescribeIamInstanceProfileAssociationsCommand({
@@ -1330,7 +1330,7 @@ The following code example shows how to use `DescribeImages`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { EC2Client, paginateDescribeImages } from "@aws-sdk/client-ec2";
 
 /**
@@ -1402,7 +1402,7 @@ The following code example shows how to use `DescribeInstanceTypes`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { EC2Client, paginateDescribeInstanceTypes } from "@aws-sdk/client-ec2";
 
 /**
@@ -1468,7 +1468,7 @@ The following code example shows how to use `DescribeInstances`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { EC2Client, paginateDescribeInstances } from "@aws-sdk/client-ec2";
 
 /**
@@ -1534,7 +1534,7 @@ The following code example shows how to use `DescribeKeyPairs`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { DescribeKeyPairsCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -1571,7 +1571,7 @@ The following code example shows how to use `DescribeRegions`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { DescribeRegionsCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -1622,7 +1622,7 @@ The following code example shows how to use `DescribeSecurityGroups`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { DescribeSecurityGroupsCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -1669,7 +1669,7 @@ The following code example shows how to use `DescribeSubnets`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
     const client = new EC2Client({});
     const { Subnets } = await client.send(
       new DescribeSubnetsCommand({
@@ -1691,7 +1691,7 @@ The following code example shows how to use `DescribeVpcs`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
     const client = new EC2Client({});
     const { Vpcs } = await client.send(
       new DescribeVpcsCommand({
@@ -1709,7 +1709,7 @@ The following code example shows how to use `DisassociateAddress`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { DisassociateAddressCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -1748,7 +1748,7 @@ The following code example shows how to use `MonitorInstances`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { EC2Client, MonitorInstancesCommand } from "@aws-sdk/client-ec2";
 
 /**
@@ -1790,7 +1790,7 @@ The following code example shows how to use `RebootInstances`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { EC2Client, RebootInstancesCommand } from "@aws-sdk/client-ec2";
 
 /**
@@ -1831,7 +1831,7 @@ The following code example shows how to use `ReleaseAddress`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { ReleaseAddressCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -1870,7 +1870,7 @@ The following code example shows how to use `ReplaceIamInstanceProfileAssociatio
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
       await retry({ intervalInMs: 1000, maxRetries: 30 }, () =>
         ec2Client.send(
           new ReplaceIamInstanceProfileAssociationCommand({
@@ -1890,7 +1890,7 @@ The following code example shows how to use `RunInstances`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { EC2Client, RunInstancesCommand } from "@aws-sdk/client-ec2";
 
 /**
@@ -1961,7 +1961,7 @@ The following code example shows how to use `StartInstances`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { EC2Client, StartInstancesCommand } from "@aws-sdk/client-ec2";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
@@ -2005,7 +2005,7 @@ The following code example shows how to use `StopInstances`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { EC2Client, StopInstancesCommand } from "@aws-sdk/client-ec2";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
@@ -2049,7 +2049,7 @@ The following code example shows how to use `TerminateInstances`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { EC2Client, TerminateInstancesCommand } from "@aws-sdk/client-ec2";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
@@ -2093,7 +2093,7 @@ The following code example shows how to use `UnmonitorInstances`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { EC2Client, UnmonitorInstancesCommand } from "@aws-sdk/client-ec2";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
@@ -2148,7 +2148,7 @@ The following code example shows how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```javascript
 #!/usr/bin/env node
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -2203,7 +2203,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 ```
 Create steps to deploy all of the resources.
 
-```
+```javascript
 import { join } from "node:path";
 import { readFileSync, writeFileSync } from "node:fs";
 import axios from "axios";
@@ -2815,7 +2815,7 @@ export const deploySteps = [
 ```
 Create steps to run the demo.
 
-```
+```javascript
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -3276,7 +3276,7 @@ async function createSsmOnlyInstanceProfile() {
 ```
 Create steps to destroy all of the resources.
 
-```
+```javascript
 import { unlinkSync } from "node:fs";
 
 import { DynamoDBClient, DeleteTableCommand } from "@aws-sdk/client-dynamodb";

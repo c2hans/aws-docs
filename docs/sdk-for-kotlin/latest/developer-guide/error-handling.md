@@ -30,7 +30,7 @@ Several predefined extensions exist to the `AwsErrorMetadata` type directly, inc
 
 The following example demonstrates accessing the error metadata.
 
-```
+```kotlin
 try {
     s3Client.listBuckets { ... }
 } catch (ex: S3Exception) {

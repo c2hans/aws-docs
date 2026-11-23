@@ -110,7 +110,7 @@ Enables CORS by returning correct headers.
 #### PUT schema
 <a name="readinesschecks-readinesscheckname-request-body-put-example"></a>
 
-```
+```json
 {
   "resourceSetName": "string"
 }
@@ -122,7 +122,7 @@ Enables CORS by returning correct headers.
 #### ReadinessCheckOutput schema
 <a name="readinesschecks-readinesscheckname-response-body-readinesscheckoutput-example"></a>
 
-```
+```json
 {
   "resourceSet": "string",
   "readinessCheckName": "string",

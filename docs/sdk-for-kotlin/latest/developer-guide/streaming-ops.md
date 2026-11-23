@@ -15,7 +15,7 @@ After the lambda function returns, any resources like the underlying HTTP connec
 
 The following code example shows the [getObject](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/get-object.html) function receiving a lambda parameter, which handles the response.
 
-```
+```kotlin
 val s3Client = S3Client.fromEnvironment()
 val req = GetObjectRequest { ... }
 
@@ -57,7 +57,7 @@ All of these are defined in the `aws.smithy.kotlin.runtime.content` package.
 
 The following code example shows the use of [`ByteStream`](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.content/-byte-stream/index.html) convenience methods that provide the body property in the creation of a [PutObjectRequest](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3.model/-put-object-request/index.html):
 
-```
+```kotlin
 val req = PutObjectRequest {
     ...
     body = ByteStream.fromFile(file)

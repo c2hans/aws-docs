@@ -142,7 +142,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-standalone-ec2-instance-terminate-ex-min"></a>
 
-```
+```json
 {
     "DocumentName": "AWSManagedServices-TerminateStandaloneInstances",
     "Region": "us-east-1",
@@ -158,7 +158,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-standalone-ec2-instance-terminate-ex-max"></a>
 
-```
+```json
 {
     "DocumentName": "AWSManagedServices-TerminateStandaloneInstances",
     "Region": "us-east-1",

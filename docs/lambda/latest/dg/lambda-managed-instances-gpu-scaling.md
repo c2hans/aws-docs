@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 
 AWS Lambda Managed Instances scales GPU-accelerated Event Functions by adding or removing execution environments based on GPU utilization, CPU utilization, and concurrency. Within each execution environment, `PerExecutionEnvironmentMaxConcurrency` controls how many invocations run concurrently. Tuning these settings together helps you optimize GPU utilization and reduce costs for your workloads.
 
-To avoid paying for idle GPU capacity, you can configure your capacity provider to scale to zero by setting `MinExecutionEnvironments` to 0 and `MaxExecutionEnvironments` to a value greater than 0. When traffic resumes, scaling from zero can take several minutes while Lambda provisions new GPU instances, and requests might fail if GPU capacity isn't available. For more information, see [Scaling to zero](lambda-managed-instances-scaling.md#lambda-managed-instances-scale-to-zero).
+To avoid paying for idle GPU capacity, you can configure your function to scale to zero by setting `MinExecutionEnvironments` to 0 and `MaxExecutionEnvironments` to a value greater than 0. When traffic resumes, scaling from zero can take several minutes while Lambda provisions new GPU instances, and requests might fail if GPU capacity isn't available. For more information, see [Scaling to zero](lambda-managed-instances-scaling.md#lambda-managed-instances-scale-to-zero).
 
 ## GPU scaling behavior
 <a name="lambda-managed-instances-gpu-scaling-behavior"></a>
@@ -18,14 +18,14 @@ GPU-accelerated Event Functions scale on GPU utilization, in addition to the CPU
 
 You can set your own GPU utilization target using a `TargetTrackingScalingPolicy` on the capacity provider configuration. The target value can be between 0 and 100. Choose a low target for relatively bursty workloads that are latency-sensitive. Alternatively, choose a high target to reduce costs, with the potential trade-off being more invocations being throttled if traffic is bursty.
 
-```
-aws lambda update-capacity-provider-scaling-config \
+```bash
+aws lambda update-capacity-provider \
   --capacity-provider-name my-gpu-capacity-provider \
   --capacity-provider-scaling-config '{
     "ScalingMode": "Manual",
     "ScalingPolicies": [
       {
-        "PredefinedMetricType": "AVERAGE_GPU_UTILIZATION",
+        "PredefinedMetricType": "LambdaCapacityProviderAverageGPUUtilization",
         "TargetValue": 70
       }
     ]
@@ -68,7 +68,7 @@ This example uses one `model_server.py` file.
 
 load\_model() and run() are placeholders for your own model loading and inference. If you use this pattern on the vLLM or SGLang image, set `ENGINE_EXTENSION=off` so that the image does not start its own server. For a handler that forwards to the server the vLLM image starts, see [Customize request handling with your own handler](lambda-managed-instances-gpu-inference.md#lambda-managed-instances-gpu-inference-custom-handler).
 
-```
+```python
 import torch, uvicorn
 from fastapi import FastAPI, Request
 app = FastAPI()
@@ -82,7 +82,7 @@ uvicorn.run(app, host="127.0.0.1", port=8000)
 
 An `app.py` file defines the handler code and starts the model server only once.
 
-```
+```python
 import os, sys, time, socket, subprocess, fcntl, json, urllib.request
 PORT, LOCK = 8000, "/tmp/model_server.lock"
 

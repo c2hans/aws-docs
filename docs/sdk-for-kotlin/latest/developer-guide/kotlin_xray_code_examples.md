@@ -24,7 +24,7 @@ The following code example shows how to use `CreateGroup`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/xray#code-examples).
 
-```
+```kotlin
 suspend fun createNewGroup(groupNameVal: String?) {
     val groupRequest =
         CreateGroupRequest {
@@ -48,7 +48,7 @@ The following code example shows how to use `CreateSamplingRule`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/xray#code-examples).
 
-```
+```kotlin
 suspend fun createRule(ruleNameVal: String?) {
     val rule =
         SamplingRule {
@@ -84,7 +84,7 @@ The following code example shows how to use `DeleteGroup`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/xray#code-examples).
 
-```
+```kotlin
 suspend fun deleteSpecificGroup(groupNameVal: String) {
     val groupRequest =
         DeleteGroupRequest {
@@ -107,7 +107,7 @@ The following code example shows how to use `DeleteSamplingRule`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/xray#code-examples).
 
-```
+```kotlin
 suspend fun deleteRule(ruleNameVal: String?) {
     val ruleRequest =
         DeleteSamplingRuleRequest {
@@ -130,7 +130,7 @@ The following code example shows how to use `GetGroups`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/xray#code-examples).
 
-```
+```kotlin
 suspend fun getAllGroups() {
     XRayClient.fromEnvironment { region = "us-east-1" }.use { xRayClient ->
         val response = xRayClient.getGroups(GetGroupsRequest {})
@@ -150,7 +150,7 @@ The following code example shows how to use `GetSamplingRules`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/xray#code-examples).
 
-```
+```kotlin
 suspend fun getRules() {
     XRayClient.fromEnvironment { region = "us-east-1" }.use { xRayClient ->
         val response = xRayClient.getSamplingRules(GetSamplingRulesRequest {})
@@ -171,7 +171,7 @@ The following code example shows how to use `GetServiceGraph`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/xray#code-examples).
 
-```
+```kotlin
 suspend fun getGraph(groupNameVal: String?) {
     val time = aws.smithy.kotlin.runtime.time.Instant
     val getServiceGraphRequest =

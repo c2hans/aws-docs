@@ -13,6 +13,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 
 ![AWS Step Functions orchestrates Lambda functions that perform the data transfer between your S3 Glacier vault and an S3 bucket.](https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/architecture-diagram.png)
 
+***Data Transfer from Amazon Glacier Vaults to Amazon S3 architecture on AWS***
+
 **Note**
  AWS CloudFormation resources are created from [AWS Cloud Development Kit (AWS CDK)](https://aws.amazon.com/cdk/) (AWS CDK) constructs.
 

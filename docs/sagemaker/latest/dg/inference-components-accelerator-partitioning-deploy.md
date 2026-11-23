@@ -25,7 +25,7 @@ The following procedure deploys a model to the endpoint `partition-demo` on a `m
 
 1. Create an inference component. Set `AcceleratorPartitionType` to select the partition type that the model runs on. The following `create-inference-component` command creates the inference component `demo-ic-4g` on a `mig-4g.20gb` partition:
 
-   ```
+   ```bash
    aws sagemaker create-inference-component \
      --region us-west-2 \
      --inference-component-name demo-ic-4g \
@@ -58,7 +58,7 @@ The following procedure deploys a model to the endpoint `partition-demo` on a `m
 
 1. Describe the inference component. It takes a few minutes to create. The following `describe-inference-component` command returns the name, status, and any failure reason of the inference component:
 
-   ```
+   ```bash
    aws sagemaker describe-inference-component --region us-west-2 --inference-component-name demo-ic-4g \
      --query '[InferenceComponentName,InferenceComponentStatus,FailureReason]' --output text
    ```

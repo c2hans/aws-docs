@@ -36,7 +36,7 @@ Create the file `create_enable_alarms.go`.
 
 Import packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -49,7 +49,7 @@ import (
 
 Get an instance name, value, and alarm name.
 
-```
+```go
 if len(os.Args) != 4 {
     fmt.Println("You must supply an instance name, value, and alarm name")
     os.Exit(1)
@@ -62,7 +62,7 @@ name := os.Args[3]
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials`, load your configuration from the shared configuration file `~/.aws/config`, and create a CloudWatch client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -73,7 +73,7 @@ svc := cloudwatch.New(sess)
 
 Create a metric alarm that reboots an instance if its CPU utilization is greater than 70 percent.
 
-```
+```go
 _, err := svc.PutMetricAlarm(&cloudwatch.PutMetricAlarmInput{
     AlarmName:          aws.String(name),
     ComparisonOperator: aws.String(cloudwatch.ComparisonOperatorGreaterThanThreshold),
@@ -103,7 +103,7 @@ _, err := svc.PutMetricAlarm(&cloudwatch.PutMetricAlarmInput{
 
 Call `EnableAlarmActions` with the new alarm for the instance, and display a message.
 
-```
+```go
 result, err := svc.EnableAlarmActions(&cloudwatch.EnableAlarmActionsInput{
     AlarmNames: []*string{
         aws.String(name),
@@ -123,7 +123,7 @@ Create the file `disable_alarm.go`.
 
 Import the packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -136,7 +136,7 @@ import (
 
 Get the name of the alarm from the command line.
 
-```
+```go
 if len(os.Args) != 2 {
     fmt.Println("You must supply an alarm name")
     os.Exit(1)
@@ -145,7 +145,7 @@ if len(os.Args) != 2 {
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials`, load your configuration from the shared configuration file `~/.aws/config`, and create a CloudWatch client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -156,7 +156,7 @@ svc := cloudwatch.New(sess)
 
 Call `DisableAlarmActions` to disable the actions for this alarm and display a message.
 
-```
+```go
 // Disable the alarm.
 _, err := svc.DisableAlarmActions(&cloudwatch.DisableAlarmActionsInput{
     AlarmNames: []*string{

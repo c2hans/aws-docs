@@ -122,6 +122,8 @@ BLE capable devices can communicate with accessories without establishing perman
 
 <a name="elpg-figure7"></a>![Figure 7 - BLE scanning for devices](https://docs.aws.amazon.com/iot-expresslink/archive/v1.2/programmersguide/images/ble-scanning-for-devices.png)
 
+Figure 7 - BLE scanning for devices
+
 The ExpressLink module scans for advertisements from peripherals that match criteria defined in the corresponding configuration string BLECentral\#. This is an asynchronous command. It returns an immediate response to confirm the process has started (or an error prevented it). During the scanning time, any advertised data received will be queued. The scanning process will stop after a set amount of time optionally configured by the duration parameter (30 seconds by default), and a BLE DISCOVER COMPLETE event (see [Table 4 - ExpressLink event codes](elpg-event-handling.md#elpg-table4)) will be produced. Queued data can then be retrieved using the [ BLE GET DISCOVER](#elpg-ble-get-discover-command) command.
 
 The CANCEL parameter is used to terminate an ongoing scanning process.
@@ -235,6 +237,8 @@ OK{EOL}
 In some use cases, instead of just reading sensor data provided in the advertisement message, the host may want to inspect what type of services and characteristics a peripheral exposes. To do this, the ExpressLink module must first establish a direct connection to the BLE peripheral device (using the BLE GAP protocol).
 
 <a name="elpg-figure8"></a>![Figure 8 - Connecting to a BLE device](https://docs.aws.amazon.com/iot-expresslink/archive/v1.2/programmersguide/images/connecting-to-ble-device.png)
+
+Figure 8 - Connecting to a BLE device
 
 When you use the BLE{\#} CONNECT command, the ExpressLink module attempts to connect to a peripheral based on a specific configuration defined int the BLECentral\# parameter.Returns:
 
@@ -356,6 +360,8 @@ The READ command allows the host to request the value of a characteristic when c
 
 <a name="elpg-figure9"></a>![Figure 9 - Reading a connected BLE peripheral](https://docs.aws.amazon.com/iot-expresslink/archive/v1.2/programmersguide/images/reading-a-connected-ble-peripheral.png)
 
+Figure 9 - Reading a connected BLE peripheral
+
  Returns:
 
 **12.2.6.1**   `OK {value}{EOL}`
@@ -416,6 +422,8 @@ The WRITE command allows the host to update the value of (writable) characterist
 
 <a name="elpg-figure10"></a>![Figure 10 - Writing to a connected BLE device](https://docs.aws.amazon.com/iot-expresslink/archive/v1.2/programmersguide/images/writing-to-connected-ble-device.png)
 
+Figure 10 - Writing to a connected BLE device
+
  Returns:
 
 **12.2.7.1**   `OK{EOL}`
@@ -470,6 +478,8 @@ OK{EOL}
 The host can subscribe to receive notifications (see [Table 4 - ExpressLink event codes](elpg-event-handling.md#elpg-table4)) when connected to a peripheral and the selected characteristic is updated (it must be configured as notify or indicate). The BLE (first) numerical suffix \# identifies the connected device by the corresponding BLECentral\# parameter. The SUBSCRIBE (second) numerical suffix \#, identifies the characteristic by its corresponding BLEGATT\# parameter.
 
 <a name="elpg-figure11"></a>![Figure 11 - Subscribing to receive peripheral notifications](https://docs.aws.amazon.com/iot-expresslink/archive/v1.2/programmersguide/images/subscribe-to-peripheral-notifications.png)
+
+Figure 11 - Subscribing to receive peripheral notifications
 
  Returns:
 
@@ -760,6 +770,8 @@ The BLE GET command allows the host to perform a synchronous read of the value o
 
 <a name="elpg-figure12"></a>![Figure 12 - Reading from a local characteristic in BLE peripheral mode](https://docs.aws.amazon.com/iot-expresslink/archive/v1.2/programmersguide/images/reading-from-a-local-characteristic.jpg)
 
+Figure 12 - Reading from a local characteristic in BLE peripheral mode
+
  Returns:
 
 **12.3.4.1**   `OK {value}{EOL}`
@@ -793,6 +805,8 @@ OK 014A{EOL}
 The BLE SET command allows the host to perform a synchronous write to the value of a local peripheral characteristic. The maximum value that can be written to the local characteristic is 31 bytes.
 
 <a name="elpg-figure13"></a>![Figure 13 - Writing to a connected BLE device](https://docs.aws.amazon.com/iot-expresslink/archive/v1.2/programmersguide/images/writing-to-a-local-characteristic.jpg)
+
+Figure 13 - Writing to a connected BLE device
 
  Returns:
 

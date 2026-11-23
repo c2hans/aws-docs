@@ -15,13 +15,13 @@ Use the following steps to install the Kubernetes operator for Apache Flink.
 
 1. Install the {{cert-manager}} (once per Amazon EKS cluster) to enable adding the webhook component.
 
-   ```
+   ```bash,sh,zh
    kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.0/cert-manager.yaml
    ```
 
 1. Install the Helm chart.
 
-   ```
+   ```bash,sh,zh
    export VERSION=7.13.0 # The Amazon EMR release version
    export NAMESPACE={{The Kubernetes namespace to deploy the operator}}
 
@@ -44,7 +44,7 @@ Use the following steps to install the Kubernetes operator for Apache Flink.
 
 1. Wait for the deployment to be complete and verify the chart installation.
 
-   ```
+   ```bash,sh,zh
    kubectl wait deployment flink-kubernetes-operator --namespace $NAMESPACE --for condition=Available=True --timeout=30s
    ```
 
@@ -56,7 +56,7 @@ Use the following steps to install the Kubernetes operator for Apache Flink.
 
 1. Use the following command to see the deployed operator.
 
-   ```
+   ```bash,sh,zh
    helm list --namespace $NAMESPACE
    ```
 

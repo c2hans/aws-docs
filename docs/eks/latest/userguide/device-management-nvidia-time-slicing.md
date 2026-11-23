@@ -117,7 +117,7 @@ Time-slicing through the DRA driver requires the `TimeSlicingSettings` feature g
 
 1. Create a `ResourceClaim` that requests a GPU with the `TimeSlicing` sharing strategy. Multiple Pods that reference this claim share the same physical GPU.
 
-   ```
+   ```bash
    cat <<EOF | kubectl apply -f -
    apiVersion: resource.k8s.io/v1
    kind: ResourceClaim
@@ -146,7 +146,7 @@ Time-slicing through the DRA driver requires the `TimeSlicingSettings` feature g
 
 1. Deploy two or more Pods that reference the shared `ResourceClaim` by name. Each Pod references the claim through `resourceClaims` and `resources.claims`.
 
-   ```
+   ```bash
    cat <<EOF | kubectl apply -f -
    apiVersion: v1
    kind: Pod
@@ -173,13 +173,13 @@ Time-slicing through the DRA driver requires the `TimeSlicingSettings` feature g
 
 1. Verify that the Pods share the same physical GPU. Run `nvidia-smi -L` in each Pod and confirm they report the same GPU UUID.
 
-   ```
+   ```bash
    kubectl logs share-a
    ```
 
    An example output is as follows. A second Pod that references the same claim reports an identical `GPU` UUID, which confirms that both Pods share one physical GPU.
 
-   ```
+   ```bash
    GPU 0: NVIDIA L4 (UUID: GPU-b41973ee-5d0a-cde8-6287-12b53f861f02)
    ```
 
@@ -205,14 +205,14 @@ System-mediated time-slicing is alpha. It requires the alpha `ConsumableShares` 
 
 1. Install the NVIDIA DRA driver as described in [Install the NVIDIA DRA driver](device-management-nvidia-dra-device-plugin.md#eks-nvidia-dra-driver), adding the `ConsumableShares` feature gate and the number of shares per GPU. This is a cluster-wide driver setting. The following example configures four shares per GPU.
 
-   ```
+   ```bash
    --set featureGates.ConsumableShares=true \
    --set consumableShares=4
    ```
 
 1. Tell Karpenter the same sharing mode with the `karpenter.k8s.aws/nvidia-consumable-capacity` annotation on your `EC2NodeClass`. Karpenter cannot read the driver’s configuration, so this value **must** match the driver’s `consumableShares` setting.
 
-   ```
+   ```yaml
    apiVersion: karpenter.k8s.aws/v1
    kind: EC2NodeClass
    metadata:
@@ -239,7 +239,7 @@ System-mediated time-slicing is alpha. It requires the alpha `ConsumableShares` 
 
 1. Create a `ResourceClaimTemplate`. A plain whole-GPU request consumes the default of one share. To request more than one share, or to request memory in `memory` mode, set the capacity explicitly.
 
-   ```
+   ```bash
    cat <<EOF | kubectl apply -f -
    apiVersion: resource.k8s.io/v1
    kind: ResourceClaimTemplate
@@ -260,7 +260,7 @@ System-mediated time-slicing is alpha. It requires the alpha `ConsumableShares` 
 
 1. Deploy a workload that references the template. Each Pod gets its own generated `ResourceClaim`. With four shares per GPU, the following eight replicas occupy two GPUs.
 
-   ```
+   ```bash
    cat <<EOF | kubectl apply -f -
    apiVersion: apps/v1
    kind: Deployment
@@ -295,7 +295,7 @@ System-mediated time-slicing is alpha. It requires the alpha `ConsumableShares` 
 
 1. Delete the workload when you are finished, so that the GPU nodes it provisioned are released. The `ResourceClaimTemplate` can stay in place for future workloads.
 
-   ```
+   ```bash
    kubectl delete deployment gpu-share-demo
    kubectl delete resourceclaimtemplate gpu-share
    ```
@@ -327,7 +327,7 @@ On Bottlerocket, the EKS-optimized accelerated AMI includes the NVIDIA device pl
 
 Add the time-slicing settings to the Bottlerocket user data for your GPU nodes. The following example configures four slots per GPU. The way you supply user data depends on how you provision nodes. The following example shows a Karpenter `EC2NodeClass`.
 
-```
+```bash
 cat <<EOF | kubectl apply -f -
 apiVersion: karpenter.k8s.aws/v1
 kind: EC2NodeClass
@@ -373,7 +373,7 @@ On AL2023, you install the NVIDIA device plugin as described in [Install the NVI
 
 1. Create the time-slicing `ConfigMap` in the `nvidia` namespace, where you installed the device plugin in [Install the NVIDIA Kubernetes device plugin](device-management-nvidia-dra-device-plugin.md#eks-nvidia-device-plugin). This example configures four slots per GPU.
 
-   ```
+   ```bash
    cat <<EOF | kubectl apply -f -
    apiVersion: v1
    kind: ConfigMap
@@ -395,7 +395,7 @@ On AL2023, you install the NVIDIA device plugin as described in [Install the NVI
 
 1. Update the existing NVIDIA device plugin release to reference the `ConfigMap` with the `config.name` value. The `--reuse-values` flag preserves the values you set when you installed the device plugin in [Install the NVIDIA Kubernetes device plugin](device-management-nvidia-dra-device-plugin.md#eks-nvidia-device-plugin).
 
-   ```
+   ```bash
    helm upgrade nvdp nvdp/nvidia-device-plugin \
        --namespace nvidia \
        --reuse-values \
@@ -415,20 +415,20 @@ The shared-UUID check in this procedure demonstrates time-slicing most clearly w
 
 1. Confirm that the node advertises the configured number of GPU slots. With four slots per GPU, a node with one physical GPU reports `4`.
 
-   ```
+   ```bash
    kubectl get nodes "-o=custom-columns=NAME:.metadata.name,GPU:.status.allocatable.nvidia\.com/gpu"
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    NAME                                           GPU
    ip-192-168-11-225.us-west-2.compute.internal   4
    ```
 
 1. Create a deployment that runs four replicas, each requesting one GPU slot.
 
-   ```
+   ```bash
    cat <<EOF | kubectl apply -f -
    apiVersion: apps/v1
    kind: Deployment
@@ -460,19 +460,19 @@ The shared-UUID check in this procedure demonstrates time-slicing most clearly w
 
 1. Confirm that all four Pods are scheduled on the same node.
 
-   ```
+   ```bash
    kubectl get pods -l app=timeslicing-demo -o wide
    ```
 
 1. Confirm that all four Pods report the same GPU UUID. A single shared UUID across all four Pods confirms that one physical GPU is being time-multiplexed.
 
-   ```
+   ```bash
    kubectl logs -l app=timeslicing-demo --prefix
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    [pod/timeslicing-demo-xxxxxxxxxx-aaaaa/cuda] GPU-c0583cce-87c5-c736-db7f-6d3128c84d03
    [pod/timeslicing-demo-xxxxxxxxxx-bbbbb/cuda] GPU-c0583cce-87c5-c736-db7f-6d3128c84d03
    [pod/timeslicing-demo-xxxxxxxxxx-ccccc/cuda] GPU-c0583cce-87c5-c736-db7f-6d3128c84d03

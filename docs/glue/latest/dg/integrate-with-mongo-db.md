@@ -39,7 +39,7 @@ By placing the `database` and `collection` information inside the ETL job script
 ------
 #### [  Python  ]
 
-   ```
+   ```py
    glue_context.create_dynamic_frame_from_catalog(
            database = {{catalogDB}},
            table_name = {{catalogTable}},

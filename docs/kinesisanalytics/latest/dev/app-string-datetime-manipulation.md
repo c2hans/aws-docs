@@ -70,7 +70,7 @@ Create an Amazon Kinesis data stream and populate it with event time and ticker 
 
 1. Run the following Python code to populate the stream with sample data. This simple code continuously writes a record with a random ticker symbol and the current time stamp to the stream.
 
-   ```
+   ```python
 
    import datetime
    import json

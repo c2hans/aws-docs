@@ -45,7 +45,7 @@ You might need to obtain a new certificate for your custom domain's subdomain if
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -104,7 +104,7 @@ You can have a custom domain and a prefix domain, but Amazon Cognito only serves
 
 The following [CreateUserPoolDomain](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPoolDomain.html) request body creates a custom domain.
 
-```
+```json
 {
    "Domain": "auth.example.com",
    "UserPoolId": "us-east-1_EXAMPLE",
@@ -252,7 +252,7 @@ You can select the minimum TLS version from the Amazon Cognito console, or with 
 
 The following [UpdateUserPoolDomain](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPoolDomain.html) request body updates the minimum TLS version of an existing custom domain.
 
-```
+```json
 {
    "Domain": "auth.example.com",
    "UserPoolId": "us-east-1_EXAMPLE",

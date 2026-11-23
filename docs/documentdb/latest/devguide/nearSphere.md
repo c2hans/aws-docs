@@ -69,7 +69,7 @@ To view a code example for using the `$nearSphere` command, choose the tab for t
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function findNearbyRestaurants() {
@@ -102,7 +102,7 @@ findNearbyRestaurants();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def find_nearby_restaurants():

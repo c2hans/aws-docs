@@ -84,7 +84,7 @@ Beyond the preceding category subscriptions, you can build your own notification
 In order to verify the email address, make sure that a user with access to the AWS console is part of the distribution list. From there, you may add and remove emails to the list without having to verify again.
 
 ## Example: Event rule configuration
-<a name="w2aac27c15c45b1"></a>
+<a name="w2aac29c15c45b1"></a>
 
 ![Pattern builder section showing AWS Marketplace Agreement Service selected with Purchase Agreement Ending - Acceptor event type and US East N. Virginia region.](https://docs.aws.amazon.com/marketplace/latest/buyerguide/images/UNO-Agreement-Ending-example.png)
 

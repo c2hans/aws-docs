@@ -30,7 +30,7 @@ For more information, see [Modify a WorkSpace](https://docs.aws.amazon.com/works
 **Tools for PowerShell V4**
 **Example 1: This Sample changes the Workspace Running Mode Property to Auto Stop for the specified Workspace**
 
-```
+```powershell
 Edit-WKSWorkspaceProperty -WorkspaceId ws-w361s100v -Region us-west-2 -WorkspaceProperties_RunningMode AUTO_STOP
 ```
 +  For API details, see [ModifyWorkspaceProperties](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -38,7 +38,7 @@ Edit-WKSWorkspaceProperty -WorkspaceId ws-w361s100v -Region us-west-2 -Workspace
 **Tools for PowerShell V5**
 **Example 1: This Sample changes the Workspace Running Mode Property to Auto Stop for the specified Workspace**
 
-```
+```powershell
 Edit-WKSWorkspaceProperty -WorkspaceId ws-w361s100v -Region us-west-2 -WorkspaceProperties_RunningMode AUTO_STOP
 ```
 +  For API details, see [ModifyWorkspaceProperties](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

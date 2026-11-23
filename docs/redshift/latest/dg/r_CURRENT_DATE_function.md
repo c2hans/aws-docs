@@ -28,7 +28,7 @@ DATE
 
 The following example returns the current date (in the AWS Region where the function runs).
 
-```
+```sql
 select current_date;
 
    date
@@ -38,7 +38,7 @@ select current_date;
 
 The following example creates a table, inserts a row where the default of column `todays_date` is CURRENT\_DATE, and then selects all the rows in the table.
 
-```
+```sql
 CREATE TABLE insert_dates(
     label varchar(128) NOT NULL,
     todays_date DATE DEFAULT CURRENT_DATE);

@@ -21,7 +21,7 @@ The following tag formats are not supported:
 
 **Example**
 
-```
+```xml
 <grammar xmlns="http://www.w3.org/2001/06/grammar"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xml:base="http://www.example.com/base-file-path"

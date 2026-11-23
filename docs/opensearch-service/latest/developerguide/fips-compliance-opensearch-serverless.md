@@ -48,7 +48,7 @@ In FIPS-enabled Regions, both standard and FIPS-compliant endpoints provide FIPS
 
 When using AWS SDKs, you can specify the FIPS endpoint when creating the client. In the following example, replace {{collection\_id}} and {{AWS Region}} with your collection ID and its AWS Region.
 
-```
+```python
 # Python SDK example
 from opensearchpy import OpenSearch, RequestsHttpConnection, AWSV4SignerAuth
 import boto3

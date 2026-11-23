@@ -10,7 +10,7 @@ The default Docker queue environment bind-mounts the directory at the same path 
 
 When you create a custom wrapping environment, include both options in the container start command:
 
-```
+```bash
 --mount {{ repr_sh("type=bind,src=" + Session.WorkingDirectory + ",dst=" + Session.WorkingDirectory) }} \
 --workdir {{ repr_sh(Session.WorkingDirectory) }}
 ```
@@ -30,7 +30,7 @@ When no `SHARED` location in the job's storage profile covers an output location
 
 The session directory is mounted at the same path inside the container, so pass the parameter value to the application as its output directory. The following partial job template declares an output location and passes it to the task command:
 
-```
+```yaml
 parameterDefinitions:
 - name: OutputDir
   type: PATH

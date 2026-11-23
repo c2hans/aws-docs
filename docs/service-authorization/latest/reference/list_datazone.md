@@ -1051,6 +1051,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   UpdateAssetOwner  **
+  - **IAM action:**  [datazone:UpdateAssetOwner](#list_datazone-action-UpdateAssetOwner)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateConnection  **
   - **IAM action:**  [datazone:UpdateConnection](#list_datazone-action-UpdateConnection)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** datazone.amazonaws.com / **Access level:** Write

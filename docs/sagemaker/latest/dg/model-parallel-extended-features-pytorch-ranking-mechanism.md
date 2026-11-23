@@ -16,7 +16,7 @@ To learn more about the communication process APIs in the SageMaker model parall
 
 For example, consider process groups for a single node with 8 GPUs, where the degree of tensor parallelism is 2, the degree of pipeline parallelism is 2, and the degree of data parallelism is 4. The upper center part of the preceding figure shows an example of a model with 4 layers. The lower left and lower right parts of figure illustrate the 4-layer model distributed across 4 GPUs using both pipeline parallelism and tensor parallelism, where tensor parallelism is used for the middle two layers. These two lower figures are simple copies to illustrate different group boundary lines. The partitioned model is replicated for data parallelism across GPUs 0-3 and 4-7. The lower left figure shows the definitions of `MP_GROUP`, `PP_GROUP`, and `TP_GROUP`. The lower right figure shows `RDP_GROUP`, `DP_GROUP`, and `WORLD` over the same set of GPUs. The gradients for the layers and layer slices that have the same color are `allreduce`d together for data parallelism. For example, the first layer (light blue) gets the `allreduce` operations across `DP_GROUP`, whereas the dark orange slice in the second layer only gets the `allreduce` operations within the `RDP_GROUP` of its process. The bold dark red arrows represent tensors with the batch of its entire `TP_GROUP`.
 
-```
+```txt
 GPU0: pp_rank 0, tp_rank 0, rdp_rank 0, dp_rank 0, mp_rank 0
 GPU1: pp_rank 1, tp_rank 0, rdp_rank 0, dp_rank 0, mp_rank 1
 GPU2: pp_rank 0, tp_rank 1, rdp_rank 0, dp_rank 1, mp_rank 2

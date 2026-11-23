@@ -33,7 +33,7 @@ Not every workflow requires every permission that's listed in this example. You 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

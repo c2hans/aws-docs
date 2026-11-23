@@ -123,7 +123,7 @@ In the following JSON example, two separate rules are defined, one for an `EQ` (
 ------
 #### [ YAML ]
 
-```
+```yaml
 - name: MyVariableCheck
   ruleTypeId:
     category: Rule
@@ -141,7 +141,7 @@ In the following JSON example, two separate rules are defined, one for an `EQ` (
 ------
 #### [ JSON ]
 
-```
+```json
 "rules": [
     {
         "name": "MyVariableCheck",

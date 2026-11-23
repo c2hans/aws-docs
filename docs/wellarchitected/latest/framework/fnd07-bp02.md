@@ -36,6 +36,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd07-b
 
 ![Network diagram of a hub-and-spoke topology where spoke VPCs connect through a central hub that hosts shared protection and inspection controls.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/hub-and-spoke.png)
 
+*Hub-and-spoke network with centralized protection controls*
+
  Routing is a security control. Route tables enforce least privilege at the network layer by providing paths only between networks that must communicate. Omit routes between workloads that have no interdependency (for example, between two unrelated business unit VPCs) to close lateral movement paths before any firewall rule runs.
 
  [AWS Network Firewall](https://aws.amazon.com/network-firewall/) provides stateful filtering and deep packet inspection with protocol, port, domain, URL, and custom rule filtering. It inspects north-south traffic (entering or leaving the network) as well as east-west traffic (moving between workloads inside the network). Deploy Network Firewall in a dedicated inspection VPC attached to the hub. This lets firewall capacity scale independently of Transit Gateway capacity and keeps the inspection path off the critical data plane. [AWS Firewall Manager](https://aws.amazon.com/firewall-manager/) extends these controls across accounts by managing policies centrally. The [centralized network security patterns](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/centralized-network-security-for-vpc-to-vpc-and-on-premises-to-vpc-traffic.html) in the multi-VPC network infrastructure whitepaper cover alternative inspection models.

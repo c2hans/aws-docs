@@ -25,7 +25,7 @@ To enable remote debugging for your training job, SageMaker AI needs to start th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -55,7 +55,7 @@ Add the following policy to provide an IAM user with SSM session permissions to 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -80,7 +80,7 @@ Add the following policy to provide an IAM user with SSM session permissions to 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -114,7 +114,7 @@ You can also explicitly use the `sagemaker:EnableRemoteDebug` condition key to r
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -154,7 +154,7 @@ Using the ModelTrainer class in the SageMaker Python SDK, you can turn remote de
 
 To enable remote debugging when you create a new training job, set the `enable_remote_debug` parameter to `True`. The default value is `False`, so if you don’t set this parameter at all, or you explicitly set it to `False`, remote debugging functionality is disabled.
 
-```
+```py
 from sagemaker.core.helper.session_helper import Session
 from sagemaker.train import ModelTrainer
 from sagemaker.train.configs import Compute
@@ -180,7 +180,7 @@ model_trainer = ModelTrainer(
 
 Using the following ModelTrainer class methods, you can enable or disable remote debugging while a training job is running when the `SecondaryStatus` of the job is `Downloading` or `Training`.
 
-```
+```py
 # Enable RemoteDebug
 model_trainer.enable_remote_debug()
 
@@ -195,7 +195,7 @@ model_trainer.disable_remote_debug()
 
 To enable remote debugging when you create a new training job, set the value for the `EnableRemoteDebug` key to `True` in the `RemoteDebugConfig` parameter.
 
-```
+```py
 import boto3
 
 sm = boto3.Session(region_name=region).client("sagemaker")
@@ -230,7 +230,7 @@ sm.create_training_job(
 
 Using the `update_traing_job` API, you can enable or disable remote debugging while a training job is running when the `SecondaryStatus` of the job is `Downloading` or `Training`.
 
-```
+```py
 # Update a training job
 sm.update_training_job(
     TrainingJobName={{job_name}},
@@ -247,7 +247,7 @@ sm.update_training_job(
 
 Prepare a `CreateTrainingJob` request file in JSON format, as follows.
 
-```
+```json
 // train-with-remote-debug.json
 {
     "TrainingJobName": {{job_name}},
@@ -276,7 +276,7 @@ Prepare a `CreateTrainingJob` request file in JSON format, as follows.
 
 After saving the JSON file, run the following command in the terminal where you submit the training job. The following example command assumes that the JSON file is named `train-with-remote-debug.json`. If you run it from a Jupyter notebook, add an exclamation point (`!`) to the beginning of the line.
 
-```
+```sh
 aws sagemaker create-training-job \
     --cli-input-json {{file://train-with-remote-debug.json}}
 ```
@@ -285,7 +285,7 @@ aws sagemaker create-training-job \
 
 Prepare an `UpdateTrainingJob` request file in JSON format, as follows.
 
-```
+```json
 // update-training-job-with-remote-debug-config.json
 {
     "TrainingJobName": {{job_name}},
@@ -297,7 +297,7 @@ Prepare an `UpdateTrainingJob` request file in JSON format, as follows.
 
 After saving the JSON file, run the following command in the terminal where you submit the training job. The following example command assumes that the JSON file is named `train-with-remote-debug.json`. If you run it from a Jupyter notebook, add an exclamation point (`!`) to the beginning of the line.
 
-```
+```sh
 aws sagemaker update-training-job \
     --cli-input-json {{file://update-training-job-with-remote-debug-config.json}}
 ```
@@ -316,7 +316,7 @@ You can access a training container when the `SecondaryStatus` of the correspond
 
 To check the `SecondaryStatus` of a training job, run the following SageMaker Python SDK code.
 
-```
+```py
 import sagemaker
 from sagemaker.core.helper.session_helper import Session
 
@@ -332,7 +332,7 @@ print(training_job_info)
 
 To check the `SecondaryStatus` of a training job, run the following SDK for Python (Boto3) code.
 
-```
+```py
 import boto3
 
 session = boto3.session.Session()
@@ -348,7 +348,7 @@ sm.describe_training_job(TrainingJobName={{job_name}})
 
 To check the `SecondaryStatus` of a training job, run the following AWS CLI command for SageMaker AI.
 
-```
+```sh
 aws sagemaker describe-training-job \
     --training-job-name {{job_name}}
 ```
@@ -375,7 +375,7 @@ To learn more about how SageMaker AI manages configuration information for multi
 
 Use the following command in terminal to start the SSM session (`[aws ssm start-session](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html)`) and connect to the training container.
 
-```
+```sh
 aws ssm start-session --target sagemaker-training-job:{{<training-job-name>}}_{{algo-<n>}}
 ```
 

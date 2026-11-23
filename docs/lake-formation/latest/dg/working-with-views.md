@@ -66,7 +66,7 @@ You can learn more about the Data Catalog in this guide, as well as using the fo
 
 The following video demonstrates how to create views and query them from Athena and Amazon Redshift.
 
-[![AWS Videos](https://img.youtube.com/vi/rFO2OoxVYxE?si=Z0qsyuvTp2ZJg-PL/0.jpg)](https://www.youtube.com/watch?v=rFO2OoxVYxE?si=Z0qsyuvTp2ZJg-PL)
+[![AWS Videos](https://img.youtube.com/vi/rFO2OoxVYxE/0.jpg)](https://www.youtube.com/watch?v=rFO2OoxVYxE)
 
 **Topics**
 + [Differentiating Data Catalog views from other view types](#diff-views)

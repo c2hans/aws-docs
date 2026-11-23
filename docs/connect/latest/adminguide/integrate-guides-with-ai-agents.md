@@ -43,7 +43,7 @@ To obtain the ID of knowledge base that you want to associate with step-by-step 
 
 Following is an example `list-knowledge-bases` command that lists all of the knowledge bases:
 
-```
+```json
 aws qconnect list-knowledge-bases
 ```
 
@@ -56,7 +56,7 @@ To list the content resources in the knowledge base, you can call the [ListConte
 
 Following is an example `list-contents` command that lists the content resources and their content ID.
 
-```
+```json
 aws qconnect list-contents \
 --knowledge-base-id {{knowledgeBaseId}}
 ```
@@ -89,7 +89,7 @@ You need to get the `flowARN` of the step-by-step guide that you want to associa
 
    Following is an example `list-instances` command:
 
-   ```
+   ```json
    aws connect list-instances
    ```
 
@@ -99,7 +99,7 @@ You need to get the `flowARN` of the step-by-step guide that you want to associa
 
    Following is an example `list-contact-flows` command that lists all the flows and step-by-step guides, and their `flowARNs`:
 
-   ```
+   ```json
    aws connect list-contact-flows \
    --instance-id {{instanceId}}
    ```
@@ -122,7 +122,7 @@ You can call the [CreateContentAssociation](https://docs.aws.amazon.com/connect/
 
 Following is an example `create-content-association` command to create a content association between the content resource and a step-by-step guide:
 
-```
+```json
 aws qconnect create-content-association \
 --knowledge-base-id {{knowledgeBaseId}} \
 --content-id {{contentId}} \
@@ -132,7 +132,7 @@ aws qconnect create-content-association \
 
 For example, the command might look like the following sample when values are added:
 
-```
+```json
 aws qconnect create-content-association \
 --knowledge-base-id {{00000000-0000-0000-0000-000000000000}} \
 --content-id {{11111111-1111-1111-1111-111111111111}} \
@@ -147,7 +147,7 @@ You can call the [ListContentAssociations](https://docs.aws.amazon.com/connect/l
 
 Following is an example `list-content-associations` command that returns a list of content associations so you can verify that the association you created exists:
 
-```
+```json
 aws qconnect list-content-associations \
 --knowledge-base-id {{knowledgebaseId}} \
 --content-id {{contentId}}
@@ -155,7 +155,7 @@ aws qconnect list-content-associations \
 
 For example, the command might look like the following sample when values are added:
 
-```
+```json
 aws qconnect list-content-associations \
 --knowledge-base-id {{00000000-0000-0000-0000-000000000000}} \
 --content-id {{11111111-1111-1111-1111-111111111111}}

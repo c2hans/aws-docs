@@ -28,8 +28,9 @@ Required: Yes
  ** [ResourceType](#API_ListTagsForResource_RequestSyntax) **   <a name="Route53-ListTagsForResource-request-uri-ResourceType"></a>
 The type of the resource.
 + The resource type for health checks is `healthcheck`.
++ The resource type for health check sources is `healthchecksource`.
 + The resource type for hosted zones is `hostedzone`.
-Valid Values: `healthcheck | hostedzone`
+Valid Values: `healthcheck | hostedzone | healthchecksource`
 Required: Yes
 
 ## Request Body
@@ -87,6 +88,10 @@ HTTP Status Code: 400
 No health check exists with the specified ID.
  ** message **
 
+HTTP Status Code: 404
+
+ ** NoSuchHealthCheckSource **
+No health check source exists with the specified ID. Verify that the ID is correct and that the health check source hasn't been deleted.
 HTTP Status Code: 404
 
  ** NoSuchHostedZone **

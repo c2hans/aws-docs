@@ -10,11 +10,11 @@ Specifications that define the characteristics and constraints for compute insta
 <a name="API_InstanceRequirements_Contents"></a>
 
  ** AllowedInstanceTypes **   <a name="lambda-Type-InstanceRequirements-AllowedInstanceTypes"></a>
-A list of EC2 instance types that the capacity provider is allowed to use. If not specified, all compatible instance types are allowed.
+A list of EC2 instance types that the capacity provider is allowed to use. You can use wildcards to specify an instance family, for example `g6.*`. If not specified, all compatible instance types are allowed.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 400 items.
 Length Constraints: Minimum length of 1. Maximum length of 30.
-Pattern: `[a-zA-Z0-9\.\-]+`
+Pattern: `[a-zA-Z0-9\.\*\-]+`
 Required: No
 
  ** Architectures **   <a name="lambda-Type-InstanceRequirements-Architectures"></a>
@@ -25,11 +25,11 @@ Valid Values: `x86_64 | arm64`
 Required: No
 
  ** ExcludedInstanceTypes **   <a name="lambda-Type-InstanceRequirements-ExcludedInstanceTypes"></a>
-A list of EC2 instance types that the capacity provider should not use, even if they meet other requirements.
+A list of EC2 instance types that the capacity provider should not use, even if they meet other requirements. You can use wildcards to specify an instance family, for example `g6.*`.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 400 items.
 Length Constraints: Minimum length of 1. Maximum length of 30.
-Pattern: `[a-zA-Z0-9\.\-]+`
+Pattern: `[a-zA-Z0-9\.\*\-]+`
 Required: No
 
 ## See Also

@@ -26,7 +26,7 @@ Use `POST /findings` to search and page through the findings you want to remedia
 
 Send the collected finding IDs to `POST /findings/action` with an `actionType` of `Remediate`. Each finding is routed through the Orchestrator exactly as it would be from the Web UI.
 
-```
+```json
 POST /findings/action
 Authorization: Bearer <access-token>
 Content-Type: application/json

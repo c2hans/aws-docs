@@ -134,7 +134,7 @@ Location: {{https://www.example.com}}?code={{[Authorization code]}}
 
 Configure IdP-initiated SAML with the `IDPInit` parameter in a [CreateIdentityProvider](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html) or [UpdateIdentityProvider](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateIdentityProvider.html) API request. The following is an example `ProviderDetails` of an IdP that supports IdP-initiated SAML.
 
-```
+```json
 "ProviderDetails": {
       "MetadataURL" : "{{https://myidp.example.com/saml/metadata}}",
       "IDPSignout" : "true",

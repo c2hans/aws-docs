@@ -8,7 +8,7 @@ In 1.x, SDK client configuration was modified by setting a `ClientConfiguration`
 
 **Example of client configuration in version 1.x**
 
-```
+```java
 AmazonDynamoDBClientBuilder.standard()
 .withClientConfiguration(clientConfiguration)
 .build()
@@ -16,7 +16,7 @@ AmazonDynamoDBClientBuilder.standard()
 
 **Example of synchronous client configuration in version 2.x**
 
-```
+```java
 ProxyConfiguration.Builder proxyConfig = ProxyConfiguration.builder();
 
 ApacheHttpClient.Builder httpClientBuilder =
@@ -35,7 +35,7 @@ DynamoDbClient client =
 
 **Example of asynchronous client configuration in version 2.x**
 
-```
+```java
 NettyNioAsyncHttpClient.Builder httpClientBuilder =
         NettyNioAsyncHttpClient.builder();
 

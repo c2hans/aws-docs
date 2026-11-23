@@ -36,4 +36,6 @@ To get started with CTI sharing, we recommend that you do the following:
 
 The following video, [Scaling cyber threat intelligence sharing with the AUS Cyber Security Center](https://www.youtube.com/watch?v=0P8snWhCN4I), discusses these steps in more detail. Although this video discusses the CTI sharing capabilities of the Australian Cyber Security Centre, the steps are the same regardless of the threat feed you choose or your location.
 
+[![AWS Videos](https://img.youtube.com/vi/0P8snWhCN4I/0.jpg)](https://www.youtube.com/watch?v=0P8snWhCN4I)
+
 [https://www.youtube-nocookie.com/embed/0P8snWhCN4I?controls=0](https://www.youtube-nocookie.com/embed/0P8snWhCN4I?controls=0)

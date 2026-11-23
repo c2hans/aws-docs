@@ -18,7 +18,7 @@ To include the agent in your application, you need to tell your build system how
 
 To add a dependency to the agent, add the following sections to your pom.xml file. if you already have a `repositories` or `dependencies` element in your POM, add the individual `repositories` or `dependencies` elements inside the existing outer elements.
 
-```
+```XML
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">

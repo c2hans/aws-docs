@@ -8,7 +8,7 @@ The following example shows the AWS Security Finding Format (ASFF) syntax for th
 
 **Example**
 
-```
+```JSON
 "Container": {
     "ContainerRuntime": "docker",
     "ImageId": "image12",

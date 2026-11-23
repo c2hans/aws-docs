@@ -26,7 +26,7 @@ The following code example shows how to use `CreateDocumentClassifier`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->createdocumentclassifier(
           iv_documentclassifiername = iv_classifier_name
@@ -60,7 +60,7 @@ The following code example shows how to use `DeleteDocumentClassifier`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->deletedocumentclassifier(
           iv_documentclassifierarn = iv_classifier_arn
@@ -88,7 +88,7 @@ The following code example shows how to use `DescribeDocumentClassificationJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->describedocclassificationjob(
           iv_jobid = iv_job_id
@@ -114,7 +114,7 @@ The following code example shows how to use `DescribeDocumentClassifier`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->describedocumentclassifier(
           iv_documentclassifierarn = iv_classifier_arn
@@ -140,7 +140,7 @@ The following code example shows how to use `DescribeTopicsDetectionJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->describetopicsdetectionjob(
           iv_jobid = iv_job_id
@@ -166,7 +166,7 @@ The following code example shows how to use `DetectDominantLanguage`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->detectdominantlanguage( iv_text = iv_text ).
         MESSAGE 'Languages detected.' TYPE 'I'.
@@ -188,7 +188,7 @@ The following code example shows how to use `DetectEntities`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->detectentities(
           iv_text = iv_text
@@ -215,7 +215,7 @@ The following code example shows how to use `DetectKeyPhrases`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->detectkeyphrases(
           iv_text = iv_text
@@ -242,7 +242,7 @@ The following code example shows how to use `DetectPiiEntities`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->detectpiientities(
           iv_text = iv_text
@@ -269,7 +269,7 @@ The following code example shows how to use `DetectSentiment`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->detectsentiment(
           iv_text = iv_text
@@ -296,7 +296,7 @@ The following code example shows how to use `DetectSyntax`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->detectsyntax(
           iv_text = iv_text
@@ -323,7 +323,7 @@ The following code example shows how to use `ListDocumentClassificationJobs`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->listdocclassificationjobs( ).
         MESSAGE 'Document classification jobs listed.' TYPE 'I'.
@@ -347,7 +347,7 @@ The following code example shows how to use `ListDocumentClassifiers`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->listdocumentclassifiers( ).
         MESSAGE 'Document classifiers listed.' TYPE 'I'.
@@ -371,7 +371,7 @@ The following code example shows how to use `ListTopicsDetectionJobs`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->listtopicsdetectionjobs( ).
         MESSAGE 'Topics detection jobs listed.' TYPE 'I'.
@@ -395,7 +395,7 @@ The following code example shows how to use `StartDocumentClassificationJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->startdocclassificationjob(
           iv_jobname = iv_job_name
@@ -438,7 +438,7 @@ The following code example shows how to use `StartTopicsDetectionJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->starttopicsdetectionjob(
           iv_jobname = iv_job_name

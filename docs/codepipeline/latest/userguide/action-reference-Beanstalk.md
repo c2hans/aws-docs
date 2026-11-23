@@ -77,7 +77,7 @@ You should replace wildcards in the resource policy with the resources for the a
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: Deploy
 Actions:
   - Name: Deploy
@@ -100,7 +100,7 @@ Actions:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "Deploy",
     "Actions": [

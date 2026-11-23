@@ -53,7 +53,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateSpace` action.
 
-```
+```json
  {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -107,7 +107,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 
 The following example shows a CloudTrail log entry that demonstrates the `RegisterAdmin` action.
 
-```
+```json
  {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -156,7 +156,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Regist
 
 The following example shows a CloudTrail log entry that demonstrates the `ListSpaces` action.
 
-```
+```json
  {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -200,7 +200,7 @@ The following example shows a CloudTrail log entry that demonstrates the `ListSp
 
 The following example shows a CloudTrail log entry that demonstrates the `ResolveCase` action. You can use the `sourceIdentity` element in this log entry to identify the user that resolved the case.
 
-```
+```json
  {
     "eventVersion": "1.09",
     "userIdentity": {

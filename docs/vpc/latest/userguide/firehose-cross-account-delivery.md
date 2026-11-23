@@ -20,7 +20,7 @@ In the source account, create a role that grants the following permissions. In t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -67,7 +67,7 @@ Ensure that this role has the following trust policy, which allows the log deliv
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -110,7 +110,7 @@ From the source account, use the following procedure to create the role.
 
 1. For **Trusted entity type**, choose **Custom trust policy**. For **Custom trust policy**, replace `"Principal": {},` with the following, which specifies the log delivery service. Choose **Next**.
 
-   ```
+   ```json
    "Principal": {
       "Service": "delivery.logs.amazonaws.com"
    },
@@ -132,7 +132,7 @@ In the destination account, create a role with a name that starts with **AWSLogD
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -157,7 +157,7 @@ Ensure that this role has the following trust policy, which allows the role that
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -200,7 +200,7 @@ From the destination account, use the following procedure to create the role.
 
 1. For **Trusted entity type**, choose **Custom trust policy**. For **Custom trust policy**, replace `"Principal": {},` with the following, which specifies the source account role. Choose **Next**.
 
-   ```
+   ```json
    "Principal": {
       "AWS": "arn:aws:iam::{{source-account}}:role/{{mySourceRole}}"
    },

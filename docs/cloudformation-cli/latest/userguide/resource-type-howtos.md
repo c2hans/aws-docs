@@ -11,7 +11,7 @@ Use the following patterns to model the data structures of your resource types u
 
 Use the `dependencies` element to specify if a property is required in order for another property to be specified. In the following example, if the user specifies a value for the `ResponseCode` property, they must also specify a value for `ResponsePagePath`, and vice versa. (Note that, as a best practice, this is also called out in the `description` of each property.)
 
-```
+```json
 "properties": {
 "CustomErrorResponse": {
     "additionalProperties": false,
@@ -47,7 +47,7 @@ It's considered a best practice is to use the `definitions` section to define sc
 
 For example, define the reused element in the `definitions` section:
 
-```
+```json
 "definitions": {
     "AccountId": {
         "pattern": "^[0-9]{12}$",
@@ -60,7 +60,7 @@ For example, define the reused element in the `definitions` section:
 
 And then reference that definition where appropriate:
 
-```
+```json
 "AwsAccountNumber": {
     "description": "An AWS account that is included in the TrustedSigners complex type for this distribution.",
     "$ref": "#/definitions/AccountId"
@@ -75,7 +75,7 @@ Use the `allOf`, `oneOf`, or `anyOf` elements to encapsulate complex logic in yo
 
 In the example below, if `whitelist` is specified for the Forward property in your resource, then the `WhitelistedNames` property must also be specified.
 
-```
+```json
 "properties": {
 "Cookies": {
     "oneOf": [

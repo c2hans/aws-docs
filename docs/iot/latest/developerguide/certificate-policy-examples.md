@@ -8,7 +8,7 @@ For devices registered in AWS IoT Core registry, the following policy grants per
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -34,7 +34,7 @@ For devices not registered in the AWS IoT Core registry, the following policy gr
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -64,7 +64,7 @@ For devices registered in AWS IoT Core registry, the following policy grants per
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -93,7 +93,7 @@ For devices not registered in AWS IoT Core registry, the following policy grants
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -126,7 +126,7 @@ For devices registered in the AWS IoT Core registry, the following policy grants
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -157,7 +157,7 @@ For devices not registered in AWS IoT Core registry, the following policy grants
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -192,7 +192,7 @@ For devices registered in AWS IoT Core registry, the following policy allows a d
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -223,7 +223,7 @@ For devices not registered in AWS IoT Core registry, the following policy grants
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

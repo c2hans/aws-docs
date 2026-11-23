@@ -78,7 +78,7 @@ aws iotwireless update-event-configuration-by-resource-types \
 
 **Contents of input.json**
 
-```
+```JSON
 {
    "DeviceRegistrationState": {
       "Sidewalk": {
@@ -114,7 +114,7 @@ aws iotwireless update-resource-event-configuration \
 
 **Contents of input.json**
 
-```
+```JSON
 {
    "Join": {
       "LoRaWAN": {

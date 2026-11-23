@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 
 # Enable CloudWatch Application Signals
 
-Use CloudWatch Application Signals to automatically instrument your applications on AWS so that you can track application performance against your business objectives. Application Signals provides you a unified, application-centric view of your Java applications, their dependencies, and their edges. For more information, see [Application Signals](CloudWatch-Application-Monitoring-Sections.md).
+Use CloudWatch Application Signals to automatically instrument your applications on AWS so that you can track application performance against your business objectives. Application Signals provides you a unified, application-centric view of your applications, their dependencies, and their edges. For more information, see [Application Signals](CloudWatch-Application-Monitoring-Sections.md).
 
 CloudWatch Application Signals leverages the CloudWatch agent to receive metrics and traces from your auto-instrumented applications, optionally apply rules to reduce high cardinality, and then publish the processed telemetry to CloudWatch. You can provide custom configuration to the CloudWatch agent specifically for Application Signals using the agent configuration file. To start with, the presence of an `application_signals` section under the `metrics_collected` section within the `logs` section of the agent configuration file specifies that the CloudWatch agent will receive metrics from your auto-instrumented applications. Similarly, the presence of an `application_signals` section under the `traces_collected` section within the `traces` section of the agent configuration file specifies that the CloudWatch agent is enabled to receive traces from your auto-instrumented applications. In addition, you can optionally pass in custom configuration rules to reduce publishing high-cardinality telemetry as outlined in this section.
 + For Amazon EKS clusters, when you install the [Amazon CloudWatch Observability](install-CloudWatch-Observability-EKS-addon.md) EKS add-on, the CloudWatch agent is by default enabled to receive both metrics and traces from your auto-instrumented applications. If you would like to optionally pass in custom configuration rules, you can do so by passing in a custom agent configuration to the Amazon EKS add-on when you create or update it by using additional configuration, as outlined in [(Optional) Additional configuration](install-CloudWatch-Observability-EKS-addon.md#install-CloudWatch-Observability-EKS-addon-configuration).
@@ -13,10 +13,8 @@ CloudWatch Application Signals leverages the CloudWatch agent to receive metrics
 
 The following is an overview of the fields in the CloudWatch agent configuration file that are related to CloudWatch Application Signals.
 + `logs`
-  + `metrics_collected` – This field can contain sections to specify that the agent is to collect logs to enable use cases such as CloudWatch Application Signals and Container Insights with enhanced observability for Amazon EKS.
-**Note**
-Previously this section was also used to specify that the agent is to collect logs that are in embedded metric format. Those settings are no longer needed.
-    + `application_signals` (Optional) Specifies that you want to enable CloudWatch Application Signals to receive metrics from your auto-instrumented applications to facilitate CloudWatch Application Signals.
+  + `metrics_collected` – Turns on CloudWatch Application Signals and Container Insights with enhanced observability for Amazon EKS.
+    + `application_signals` (Optional) Specifies that you want to enable CloudWatch Application Signals to receive metrics from your auto-instrumented applications.
       + `rules` (Optional) An array of rules to conditionally select metrics and traces and apply actions to handle high-cardinality scenarios. Each rule can contain the following fields:
         + `rule_name` (Optional) The name of the rule.
         + `selectors` (Optional) An array of metrics and traces dimension matchers. Each selector must provide the following fields:
@@ -131,11 +129,11 @@ The following is a complete example of a CloudWatch configuration file that mana
                     "log_dropped_metrics": true
                 }
             }
-        },
-        "traces": {
-            "traces_collected": {
-                "application_signals": {}
-            }
+        }
+    },
+    "traces": {
+        "traces_collected": {
+            "application_signals": {}
         }
     }
 }

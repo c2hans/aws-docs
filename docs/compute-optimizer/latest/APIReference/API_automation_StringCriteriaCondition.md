@@ -10,9 +10,9 @@ Criteria condition for filtering based on string values, including comparison op
 <a name="API_automation_StringCriteriaCondition_Contents"></a>
 
  ** comparison **   <a name="computeoptimizer-Type-automation_StringCriteriaCondition-comparison"></a>
-The comparison operator used to evaluate the string criteria, such as equals, not equals, or contains.
+The comparison operator used to evaluate the attribute against the specified values. Only operators that begin with `String` are valid. Any other operator returns an `InvalidParameterValueException`.
 Type: String
-Valid Values: `StringEquals | StringNotEquals | StringEqualsIgnoreCase | StringNotEqualsIgnoreCase | StringLike | StringNotLike | NumericEquals | NumericNotEquals | NumericLessThan | NumericLessThanEquals | NumericGreaterThan | NumericGreaterThanEquals`
+Valid Values: `StringEquals | StringNotEquals | StringEqualsIgnoreCase | StringNotEqualsIgnoreCase | StringLike | StringNotLike | NumericEquals | NumericNotEquals | NumericLessThan | NumericLessThanEquals | NumericGreaterThan | NumericGreaterThanEquals | StringEqualsIfExists | StringNotEqualsIfExists | StringEqualsIgnoreCaseIfExists | StringNotEqualsIgnoreCaseIfExists | StringLikeIfExists | StringNotLikeIfExists | NumericEqualsIfExists | NumericNotEqualsIfExists | NumericLessThanIfExists | NumericLessThanEqualsIfExists | NumericGreaterThanIfExists | NumericGreaterThanEqualsIfExists`
 Required: No
 
  ** values **   <a name="computeoptimizer-Type-automation_StringCriteriaCondition-values"></a>

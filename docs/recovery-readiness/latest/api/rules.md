@@ -57,7 +57,7 @@ Enable CORS by returning correct headers
 #### ListRulesResult schema
 <a name="rules-response-body-listrulesresult-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "rules": [

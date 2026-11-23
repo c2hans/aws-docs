@@ -43,7 +43,7 @@ The agent can:
 
 Install the Migration Assistant CLI, then launch an interactive agent session:
 
-```
+```bash
 migration-assistant
 ```
 

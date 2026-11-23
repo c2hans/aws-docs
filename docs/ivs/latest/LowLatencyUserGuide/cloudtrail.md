@@ -40,7 +40,7 @@ CloudTrail log files contain one or more log entries. CloudTrail log files are n
 
 The following example shows a CloudTrail log entry for the `CreateChannel` operation.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

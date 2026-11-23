@@ -17,7 +17,7 @@ This topic assumes you’re familiar with [generating schemas from annotations](
 
 The following example declares a family based on the sealed interface `Vehicle`. Because the base also carries `@DynamoDbItem`, the family describes a table item:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbHeterogeneousType
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbItem
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbPartitionKey
@@ -46,7 +46,7 @@ data object Unicycle : Vehicle {
 
 The plugin generates a `VehicleSchema` object and a `getVehicleTable` extension, just as it does for an ordinary `@DynamoDbItem` class. The resulting table reads and writes any `Vehicle`:
 
-```
+```kotlin
 val vehicles = mapper.getVehicleTable("vehicles")
 
 vehicles.putItem { item = Car(1, "Ford", "Model T") }
@@ -95,7 +95,7 @@ When you write an object, DynamoDB Mapper chooses the registration that matches 
 
 When an object matches more than one registration, the most specific type always wins, regardless of the order in which the classes are declared. In the following example, from the `Animal` family described in [Use open and abstract base types](#ddb-mapper-anno-heterogeneous-open), a `Puppy` is stored as `puppy`, and any other `Dog` (including an unregistered subclass such as `Poodle`) is stored as `dog`:
 
-```
+```kotlin
 @DynamoDbSubtype("dog", match = DynamoDbSubtypeMatch.INSTANCE_OF)
 open class Dog(var breed: String = "") : Animal()
 
@@ -117,7 +117,7 @@ Intermediate types in a hierarchy take part in a family only if they’re annota
 
 In the following example, `TwoWheeler` is unannotated, so `Bike` is registered directly in `Vehicle`. `Truck` is registered in `Vehicle` under the type name `truck`, and is itself a family whose members are distinguished by `truckType`:
 
-```
+```kotlin
 // Unannotated, so ignored by the Vehicle family
 sealed interface TwoWheeler : Vehicle
 
@@ -146,7 +146,7 @@ An open concrete base can also register its own instances by setting `baseTypeNa
 
 To have the base registration catch any subclass that no other registration matches, set `baseMatch = DynamoDbSubtypeMatch.INSTANCE_OF`:
 
-```
+```kotlin
 @DynamoDbHeterogeneousType(typeAttribute = "kind", baseTypeName = "animal", baseMatch = DynamoDbSubtypeMatch.INSTANCE_OF)
 open class Animal(var name: String = "")
 
@@ -162,7 +162,7 @@ class Cat(var indoor: Boolean = false) : Animal()
 
 Some designs, such as [single-table designs](/amazondynamodb/latest/developerguide/bp-general-nosql-design.html), store unrelated classes in one table. These classes share no common supertype other than `Any`. To group them, annotate an `object` with `@DynamoDbHeterogeneousType`. The object only names the family. Each member must name it explicitly with `parent`, and declares its own key properties:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbHeterogeneousType
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbItem
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbPartitionKey
@@ -195,7 +195,7 @@ The generated `getEntitiesTable` extension returns a table whose items are typed
 
 A family can be used as the type of a property in another mapped class, including inside collections and as a nullable type. The family’s base doesn’t need `@DynamoDbItem` for this; without it, the family can be used only as a nested attribute. Each value is stored as a map that includes the type attribute:
 
-```
+```kotlin
 @DynamoDbItem
 data class Garage(
     @DynamoDbPartitionKey val name: String,
@@ -206,7 +206,7 @@ data class Garage(
 
 The plugin can’t infer an ad-hoc family from a property of type `Any`. Annotate such properties with `@DynamoDbHeterogeneousAttribute` and name the family’s object. The annotation applies to each family value in the property, including the elements of a list or the values of a map:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbHeterogeneousAttribute
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbMappable
 
@@ -224,7 +224,7 @@ data class AuditRecord(
 
 To control how a single subtype is converted, pass your own [`ItemConverter`](ddb-mapper-code-schemas.md#ddb-mapper-code-schemas-item-converters) with the `converter` parameter, as you would with `@DynamoDbItem(converter = …​)`. The family’s converter still writes and reads the type attribute, so your converter must not write that attribute itself:
 
-```
+```kotlin
 @DynamoDbSubtype("car", converter = CustomCarConverter::class)
 data class Car(override val id: Int, override val manufacturer: String, val model: String) : Vehicle
 ```

@@ -32,7 +32,7 @@ To set up and run this example, you must first complete these tasks:
 
 Configure the SDK for JavaScript by creating a global configuration object then setting the Region for your code. In this example, the Region is set to `us-west-2`.
 
-```
+```javascript
 // Load the SDK for JavaScript
 var AWS = require('aws-sdk');
 // Set the Region
@@ -48,7 +48,7 @@ The only parameter you need to pass is the name of the selected bucket when call
 
 If the selected bucket has no CORS configuration, that information is returned to the callback function in the `error` parameter.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -87,7 +87,7 @@ Create a Node.js module with the file name `s3_setcors.js`. The module takes mul
 
 Specify the allowed methods as command line parameters to the Node.js module, adding each of the methods that match one of the parameters. Add the resulting CORS configuration to the array of configurations contained in the `CORSRules` parameter. Specify the bucket you want to configure for CORS in the `Bucket` parameter.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region

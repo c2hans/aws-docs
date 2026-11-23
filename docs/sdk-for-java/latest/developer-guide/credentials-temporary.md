@@ -52,7 +52,7 @@ For more details about how the SDK gets temporary credentials from the configura
 **Important**
 In addition to the configuration that you set in the shared `config` file that works for all projects, each individual Java project requires the following dependencies in the Maven `pom.xml` file:
 
-```
+```xml
 <dependency>
     <groupId>software.amazon.awssdk</groupId>
     <artifactId>sso</artifactId>

@@ -36,7 +36,7 @@ Enabling segment membership streaming is a one-time setup that an administrator 
 
 When you enable segment membership streaming, Customer Profiles assumes the role that you specify. Because of this, the IAM principal that enables streaming must have permission to pass that role to Customer Profiles. Grant the `iam:PassRole` action for the Kinesis role to the principal, scoped to the Customer Profiles service. The following is a sample statement to add to the principal's permissions.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "iam:PassRole",
@@ -51,7 +51,7 @@ When you enable segment membership streaming, Customer Profiles assumes the role
 
 The IAM role that you provide must trust the Customer Profiles service principal and grant permissions to write to the Kinesis data stream. The following is a sample trust policy for the Kinesis role.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -68,7 +68,7 @@ The IAM role that you provide must trust the Customer Profiles service principal
 
 The following is a sample of the permissions to grant the Kinesis role.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -87,7 +87,7 @@ The following is a sample of the permissions to grant the Kinesis role.
 
 If your Kinesis data stream is encrypted with a customer managed AWS KMS key, the role also needs permission to use that key to write to the stream. Add the following statement, scoped to your AWS KMS key, to the role's permissions.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -174,7 +174,7 @@ The number of scheduled runs that succeeded.
 
 Customer Profiles sends this event to your Kinesis data stream each time a customer profile enters or exits a segment. The following is a sample segment membership event in JSON.
 
-```
+```json
 {
     "AccountId": "123456789012",
     "DomainName": "cp-domain-prod",

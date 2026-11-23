@@ -13,7 +13,7 @@ By default, Amazon Bedrock uses AWS-managed keys for session encryption. For mor
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

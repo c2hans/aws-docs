@@ -83,7 +83,7 @@ This section provides solutions to common issues you might encounter when using 
 
  **Solution:** Add CORS middleware to your BedrockAgentCoreApp to handle cross-origin requests from your frontend:
 
-```
+```python
 from bedrock_agentcore.runtime import BedrockAgentCoreApp
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -120,7 +120,7 @@ In production environments, replace allow\_origins=["\*"] with specific domain o
 
  **Solution:** Use the default browser context provided when you connect to the browser session. Avoid creating new contexts or windows if you need Session Replay or Web Bot Auth functionality.
 
-```
+```python
 # ✓ Use the existing default context
 context = browser.contexts[0]
 page = context.pages[0]

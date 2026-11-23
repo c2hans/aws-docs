@@ -39,7 +39,7 @@ If *geom* is a `GEOMETRYCOLLECTION` or a `MULTI` subtype, then the number of geo
 
 The following SQL returns the number of geometries in the input multilinestring.
 
-```
+```sql
 SELECT ST_NumGeometries(ST_GeomFromText('MULTILINESTRING((0 0,1 0,0 5),(3 4,13 26))'));
 ```
 

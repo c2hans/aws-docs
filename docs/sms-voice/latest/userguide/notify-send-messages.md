@@ -42,7 +42,7 @@ aws pinpoint-sms-voice-v2 send-notify-text-message \
 ------
 #### [ Python (boto3) ]
 
-```
+```python
 import boto3
 
 client = boto3.client('pinpoint-sms-voice-v2')
@@ -158,7 +158,7 @@ AWS automatically selects the best origination identity for each message based o
 
 If you enable `MessageFeedbackEnabled` when sending a message, you can report whether the end user successfully received and used the code:
 
-```
+```python
 client.put_message_feedback(
     MessageId='{{msg-1234567890abcdef}}',
     MessageFeedbackStatus='RECEIVED'  # or 'FAILED'

@@ -61,7 +61,7 @@ To view a code example for using the `$subtract` command, choose the tab for the
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function example() {
@@ -101,7 +101,7 @@ example().catch(console.error);
 ------
 #### [ Python ]
 
-```
+```python
 from datetime import datetime, timedelta
 from pymongo import MongoClient
 

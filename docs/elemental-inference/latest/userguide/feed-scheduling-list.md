@@ -13,7 +13,7 @@ aws elemental-inference list-schedule-actions \
 
 The following example shows a response.
 
-```
+```json
 {
   "scheduleActions": [
     {

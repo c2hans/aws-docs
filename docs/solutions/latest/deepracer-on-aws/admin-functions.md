@@ -90,7 +90,7 @@ Instead of inviting users one at a time, admins can create many racer accounts a
 
 The CSV file has one entry per row, with two comma-separated columns: `email` (required) and `displayName` (optional). A header row is auto-detected and skipped if it is present. You can include up to 200 entries per file.
 
-```
+```csv
 email,displayName
 alex@example.com,Alex
 jordan@example.com,Jordan

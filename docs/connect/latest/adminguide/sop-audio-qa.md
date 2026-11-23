@@ -15,7 +15,7 @@ Connect Customer provides QualityMetrics in the contact record for each connecte
 
 QualityMetrics is part of the contact object that you get as a response when you call the [DescribeContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContact.html) API. The following snippet from the `DescribeContact` response shows what it looks like:
 
-```
+```json
  "QualityMetrics": {
          "Agent": {
             "Audio": {

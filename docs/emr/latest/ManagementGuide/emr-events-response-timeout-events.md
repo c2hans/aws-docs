@@ -28,7 +28,7 @@ You can build automation in response to Amazon EMR events with the `Spot Provisi
 
 **Example function to respond to `Spot Provisioning timeout` event**
 
-```
+```python
 // Lambda code with Python 3.10 and handler is lambda_function.lambda_handler
 // Note: related IAM role requires permission to use Amazon EMR
 

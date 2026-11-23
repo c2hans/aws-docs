@@ -8,20 +8,20 @@ Only after the rollback window has passed should you remove the Migration Assist
 
 1. Uninstall the Migration Assistant release and delete its persistent volume claims in the `ma` namespace:
 
-   ```
+   ```bash
    helm uninstall -n ma ma
    kubectl delete pvc --all -n ma
    ```
 
 1. Delete the AWS CloudFormation stack that created the deployment:
 
-   ```
+   ```bash
    aws cloudformation delete-stack --stack-name MA --region <REGION>
    ```
 
 1. Optionally, remove the snapshot bucket once you are certain you no longer need the snapshot. This is destructive and permanent:
 
-   ```
+   ```bash
    aws s3 rb s3://<SNAPSHOT_BUCKET> --force --region <REGION>
    ```
 

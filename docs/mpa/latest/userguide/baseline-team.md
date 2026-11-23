@@ -60,7 +60,7 @@ You can use one of the following operations:
 
   1. Run the following command to return a list of Amazon Resource Names (ARNs) for teams:
 
-     ```
+     ```bash
      $ C:\> aws mpa list-approval-teams
      ```
 
@@ -70,14 +70,14 @@ You can use one of the following operations:
 
      **To baseline all approvers in a team:**
 
-     ```
+     ```bash
      $ C:\> aws mpa start-approval-team-baseline \
        --arn arn:aws:mpa:{{region}}:{{123456789012}}:approval-team/{{TeamName-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
      ```
 
      **To baseline specific approvers:**
 
-     ```
+     ```bash
      $ C:\> aws mpa start-approval-team-baseline \
        --arn arn:aws:mpa:{{region}}:{{123456789012}}:approval-team/{{TeamName-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
        --approver-ids {{approver-id-1}} {{approver-id-2}}
@@ -87,7 +87,7 @@ You can use one of the following operations:
 
   1. (Optional) Run the following command to view the last activity information for each approver in the team:
 
-     ```
+     ```bash
      $ C:\> aws mpa get-approval-team \
        --arn arn:aws:mpa:{{region}}:{{123456789012}}:approval-team/{{TeamName-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
      ```

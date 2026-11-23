@@ -35,7 +35,7 @@ In this step, the Amazon EMR Studio administrator creates and IAM service role a
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -91,7 +91,7 @@ The EMR Studio user role does not need to include permissions to access the Amaz
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

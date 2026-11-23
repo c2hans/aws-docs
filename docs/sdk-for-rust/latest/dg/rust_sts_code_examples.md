@@ -24,7 +24,7 @@ The following code example shows how to use `AssumeRole`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/sts/#code-examples).
 
-```
+```rust
 async fn assume_role(config: &SdkConfig, role_name: String, session_name: Option<String>) {
     let provider = aws_config::sts::AssumeRoleProvider::builder(role_name)
         .session_name(session_name.unwrap_or("rust_sdk_example_session".into()))

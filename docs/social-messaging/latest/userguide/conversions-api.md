@@ -25,7 +25,7 @@ The end-to-end workflow is:
 
 The `ctwa_clid` is included in the `referral` object of the inbound-message webhook payload when a customer starts a conversation from an ad. The following example shows the relevant portion of the webhook message:
 
-```
+```json
 {
   "messages": [
     {
@@ -69,7 +69,7 @@ Before you can send conversion events, you must create a conversions dataset for
 
 The following example creates or retrieves the dataset for a WABA. Replace {{waba-id}} with the ARN of your linked WhatsApp Business Account (WABA) (for example, `arn:aws:social-messaging:us-east-1:123456789012:waba/a1b2c3d4e5example`).
 
-```
+```bash
 aws socialmessaging create-whatsapp-dataset \
     --region us-east-1 \
     --id {{waba-id}}
@@ -77,7 +77,7 @@ aws socialmessaging create-whatsapp-dataset \
 
 The response contains the dataset ID. Save this value. You pass it as the `datasetId` parameter every time you send a conversion event.
 
-```
+```json
 {
     "datasetId": "123456789012345"
 }
@@ -95,7 +95,7 @@ The event content you send in the `event-data` parameter follows the Meta Conver
 
 The following example reports a `Purchase` conversion. Replace the placeholder values with your own.
 
-```
+```bash
 aws socialmessaging send-whatsapp-conversion-event \
     --region us-east-1 \
     --id {{waba-id}} \
@@ -122,7 +122,7 @@ aws socialmessaging send-whatsapp-conversion-event \
 
 The response contains a request ID that identifies your submission:
 
-```
+```json
 {
     "requestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
@@ -133,7 +133,7 @@ The response contains a request ID that identifies your submission:
 
 Non-purchase event types such as `LeadSubmitted` do not require `custom_data`.
 
-```
+```bash
 aws socialmessaging send-whatsapp-conversion-event \
     --region us-east-1 \
     --id {{waba-id}} \
@@ -159,7 +159,7 @@ aws socialmessaging send-whatsapp-conversion-event \
 
 The `data` array accepts multiple events in a single call. Meta allows up to 1,000 events per request.
 
-```
+```bash
 aws socialmessaging send-whatsapp-conversion-event \
     --region us-east-1 \
     --id {{waba-id}} \

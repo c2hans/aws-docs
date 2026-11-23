@@ -39,7 +39,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 The DynamoDB getting started scenario.
 
-```
+```bash
 ###############################################################################
 # function dynamodb_getting_started_movies
 #
@@ -303,7 +303,7 @@ function dynamodb_getting_started_movies() {
 ```
 The DynamoDB functions used in this scenario.
 
-```
+```bash
 ###############################################################################
 # function dynamodb_create_table
 #
@@ -1164,7 +1164,7 @@ function dynamodb_delete_table() {
 ```
 The utility functions used in this scenario.
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -1245,7 +1245,7 @@ The following code example shows how to use `BatchGetItem`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 #############################################################################
 # function dynamodb_batch_get_item
 #
@@ -1313,7 +1313,7 @@ function dynamodb_batch_get_item() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -1369,7 +1369,7 @@ The following code example shows how to use `BatchWriteItem`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 ##############################################################################
 # function dynamodb_batch_write_item
 #
@@ -1438,7 +1438,7 @@ function dynamodb_batch_write_item() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -1506,7 +1506,7 @@ The following code example shows how to use `CreateTable`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 ###############################################################################
 # function dynamodb_create_table
 #
@@ -1599,7 +1599,7 @@ function dynamodb_create_table() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -1667,7 +1667,7 @@ The following code example shows how to use `DeleteItem`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 ##############################################################################
 # function dynamodb_delete_item
 #
@@ -1747,7 +1747,7 @@ function dynamodb_delete_item() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -1815,7 +1815,7 @@ The following code example shows how to use `DeleteTable`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 ###############################################################################
 # function dynamodb_delete_table
 #
@@ -1883,7 +1883,7 @@ function dynamodb_delete_table() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -1951,7 +1951,7 @@ The following code example shows how to use `DescribeTable`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 ###############################################################################
 # function dynamodb_describe_table
 #
@@ -2026,7 +2026,7 @@ function dynamodb_describe_table {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2082,7 +2082,7 @@ The following code example shows how to use `GetItem`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 #############################################################################
 # function dynamodb_get_item
 #
@@ -2179,7 +2179,7 @@ function dynamodb_get_item() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2235,7 +2235,7 @@ The following code example shows how to use `ListTables`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 ##############################################################################
 # function dynamodb_list_tables
 #
@@ -2265,7 +2265,7 @@ function dynamodb_list_tables() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2321,7 +2321,7 @@ The following code example shows how to use `PutItem`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 ##############################################################################
 # function dynamodb_put_item
 #
@@ -2403,7 +2403,7 @@ function dynamodb_put_item() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -2471,7 +2471,7 @@ The following code example shows how to use `Query`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 #############################################################################
 # function dynamodb_query
 #
@@ -2582,7 +2582,7 @@ function dynamodb_query() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2638,7 +2638,7 @@ The following code example shows how to use `Scan`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 #############################################################################
 # function dynamodb_scan
 #
@@ -2749,7 +2749,7 @@ function dynamodb_scan() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2805,7 +2805,7 @@ The following code example shows how to use `UpdateItem`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 ##############################################################################
 # function dynamodb_update_item
 #
@@ -2907,7 +2907,7 @@ function dynamodb_update_item() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -2982,7 +2982,7 @@ The following code example shows how to work with advanced Global Secondary Inde
 **AWS CLI with Bash script**
 Create a table with multiple GSIs.
 
-```
+```bash
 # Create a table with multiple GSIs
 aws dynamodb create-table \
     --table-name MusicLibrary \
@@ -3015,7 +3015,7 @@ aws dynamodb create-table \
 ```
 Create a table with on-demand capacity and GSI.
 
-```
+```bash
 # Create a table with on-demand capacity and GSI
 aws dynamodb create-table \
     --table-name MusicOnDemand \
@@ -3038,7 +3038,7 @@ aws dynamodb create-table \
 ```
 Put items into a table with multiple GSIs.
 
-```
+```bash
 # Add items to MusicLibrary table
 aws dynamodb put-item \
     --table-name MusicLibrary \
@@ -3062,7 +3062,7 @@ aws dynamodb put-item \
 ```
 Query items from a table with multiple GSIs.
 
-```
+```bash
 # Query the AlbumIndex GSI
 echo "Querying AlbumIndex GSI:"
 aws dynamodb query \
@@ -3098,7 +3098,7 @@ The following code example shows how to create and manage DynamoDB global tables
 **AWS CLI with Bash script**
 Create a table with Multi-Region Strong Consistency.
 
-```
+```bash
 # Step 1: Create a new table in us-east-2 (primary region for MRSC)
 # Note: Table must be empty when enabling MRSC
 aws dynamodb create-table \
@@ -3126,7 +3126,7 @@ aws dynamodb update-table \
 ```
 Verify MRSC configuration and replica status.
 
-```
+```bash
 # Verify the global table configuration and MRSC setting
 aws dynamodb describe-table \
     --table-name MusicTable \
@@ -3135,7 +3135,7 @@ aws dynamodb describe-table \
 ```
 Test strong consistency with immediate reads across Regions.
 
-```
+```bash
 # Write an item to the primary region
 aws dynamodb put-item \
     --table-name MusicTable \
@@ -3153,7 +3153,7 @@ aws dynamodb get-item \
 ```
 Perform conditional writes with MRSC guarantees.
 
-```
+```bash
 # Perform a conditional update from a different region
 # This demonstrates that conditions work consistently across all regions
 aws dynamodb update-item \
@@ -3167,7 +3167,7 @@ aws dynamodb update-item \
 ```
 Clean up MRSC global table resources.
 
-```
+```bash
 # Remove replica tables (must be done before deleting the primary table)
 aws dynamodb update-table \
     --table-name MusicTable \
@@ -3205,7 +3205,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/070-amazon-dynamodb-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # DynamoDB Getting Started Tutorial Script
@@ -3480,7 +3480,7 @@ The following code example shows how to manage the complete lifecycle of Global 
 **AWS CLI with Bash script**
 Create a table with a Global Secondary Index.
 
-```
+```bash
 # Create a table with a GSI
 aws dynamodb create-table \
     --table-name MusicCollection \
@@ -3499,7 +3499,7 @@ aws dynamodb create-table \
 ```
 Add a new (on-demand) GSI to an existing table.
 
-```
+```bash
 # Add a new GSI to an existing table
 aws dynamodb update-table \
     --table-name MusicCollection \
@@ -3512,7 +3512,7 @@ aws dynamodb update-table \
 ```
 Update (increase) GSI warm throughput.
 
-```
+```bash
 # Increase the warm throughput of a GSI (default values are 12k reads, 4k writes)
 aws dynamodb update-table \
     --table-name MusicCollection \
@@ -3522,7 +3522,7 @@ aws dynamodb update-table \
 ```
 Query data using GSIs.
 
-```
+```bash
 # Query the AlbumIndex GSI
 aws dynamodb query \
     --table-name MusicCollection \
@@ -3539,7 +3539,7 @@ aws dynamodb query \
 ```
 Delete a GSI.
 
-```
+```bash
 # Delete a GSI from a table
 aws dynamodb update-table \
     --table-name MusicCollection \
@@ -3564,7 +3564,7 @@ The following code example shows how to manage the complete lifecycle of resourc
 **AWS CLI with Bash script**
 Create a table with a resource policy.
 
-```
+```bash
 # Step 1: Create a DynamoDB table
 aws dynamodb create-table \
     --table-name MusicCollection \
@@ -3605,14 +3605,14 @@ aws dynamodb put-resource-policy \
 ```
 Get a resource policy.
 
-```
+```bash
 # Get the resource-based policy attached to a table
 aws dynamodb get-resource-policy \
     --resource-arn arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection
 ```
 Update a resource policy.
 
-```
+```bash
 # Step 1: Create an updated policy document
 cat > updated-policy.json << 'EOF'
 {
@@ -3645,7 +3645,7 @@ aws dynamodb put-resource-policy \
 ```
 Delete a resource policy.
 
-```
+```bash
 # Delete the resource-based policy from a table
 aws dynamodb delete-resource-policy \
     --resource-arn arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection
@@ -3667,7 +3667,7 @@ The following code example shows how to implement Attribute-Based Access Control
 **AWS CLI with Bash script**
 Create an IAM policy for ABAC.
 
-```
+```bash
 # Step 1: Create a policy document for ABAC
 cat > abac-policy.json << 'EOF'
 {
@@ -3715,7 +3715,7 @@ aws iam create-policy \
 ```
 Create tables with tags for different departments.
 
-```
+```bash
 # Create a DynamoDB table with tags for ABAC
 aws dynamodb create-table \
     --table-name FinanceData \
@@ -3742,7 +3742,7 @@ aws dynamodb create-table \
 ```
 List and filter tables based on tags.
 
-```
+```bash
 # List all DynamoDB tables
 echo "Listing all tables:"
 aws dynamodb list-tables
@@ -3785,7 +3785,7 @@ The following code example shows how to create and query tables with Local Secon
 **AWS CLI with Bash script**
 Create a table with a Local Secondary Index.
 
-```
+```bash
 # Create a table with a Local Secondary Index
 aws dynamodb create-table \
     --table-name CustomerOrders \
@@ -3804,7 +3804,7 @@ aws dynamodb create-table \
 ```
 Create a table with multiple LSIs.
 
-```
+```bash
 # Create a table with multiple Local Secondary Indexes
 aws dynamodb create-table \
     --table-name CustomerDetails \
@@ -3839,7 +3839,7 @@ aws dynamodb create-table \
 ```
 Query data using LSIs.
 
-```
+```bash
 # Query the OrderDateIndex LSI
 aws dynamodb query \
     --table-name CustomerOrders \
@@ -3880,7 +3880,7 @@ The following code example shows how to manage DynamoDB Streams and Time-to-Live
 **AWS CLI with Bash script**
 Create a table with Streams enabled.
 
-```
+```bash
 # Create a table with DynamoDB Streams enabled
 aws dynamodb create-table \
     --table-name StreamsDemo \
@@ -3893,7 +3893,7 @@ aws dynamodb create-table \
 ```
 Describe Streams.
 
-```
+```bash
 # Get information about the stream
 aws dynamodb describe-table \
     --table-name StreamsDemo \
@@ -3913,7 +3913,7 @@ aws dynamodbstreams describe-stream \
 ```
 Create a Lambda function for Streams.
 
-```
+```bash
 # Step 1: Create an IAM role for the Lambda function
 cat > trust-policy.json << 'EOF'
 {
@@ -3952,7 +3952,7 @@ echo "    --starting-position LATEST"
 ```
 Enable TTL on a table.
 
-```
+```bash
 # Create a table for TTL demonstration
 aws dynamodb create-table \
     --table-name TTLDemo \
@@ -3972,7 +3972,7 @@ aws dynamodb update-time-to-live \
 ```
 Add items with TTL attributes.
 
-```
+```bash
 # Calculate expiration time (current time + 1 day in seconds)
 EXPIRATION_TIME=$(date -d "+1 day" +%s)
 
@@ -3997,7 +3997,7 @@ aws dynamodb put-item \
 ```
 Describe TTL settings.
 
-```
+```bash
 # Describe TTL settings for a table
 aws dynamodb describe-time-to-live \
     --table-name TTLDemo
@@ -4023,7 +4023,7 @@ The following code example shows how to manage DynamoDB global tables with multi
 **AWS CLI with Bash script**
 Create a table with multi-Region replication.
 
-```
+```bash
 # Step 1: Create a new table (MusicTable) in US East (Ohio), with DynamoDB Streams enabled (NEW_AND_OLD_IMAGES)
 aws dynamodb create-table \
     --table-name MusicTable \
@@ -4067,7 +4067,7 @@ aws dynamodb update-table --table-name MusicTable --cli-input-json \
 ```
 Describe the multi-Region table.
 
-```
+```bash
 # Step 4: View the list of replicas created using describe-table
 aws dynamodb describe-table \
     --table-name MusicTable \
@@ -4076,7 +4076,7 @@ aws dynamodb describe-table \
 ```
 Put items in a replica table.
 
-```
+```bash
 # Step 5: To verify that replication is working, add a new item to the Music table in US East (Ohio)
 aws dynamodb put-item \
     --table-name MusicTable \
@@ -4085,7 +4085,7 @@ aws dynamodb put-item \
 ```
 Get items from replica tables.
 
-```
+```bash
 # Step 6: Wait for a few seconds, and then check to see whether the item has been
 # successfully replicated to US East (N. Virginia) and Europe (Ireland)
 aws dynamodb get-item \
@@ -4100,7 +4100,7 @@ aws dynamodb get-item \
 ```
 Remove replicas.
 
-```
+```bash
 # Step 7: Delete the replica table in Europe (Ireland) Region
 aws dynamodb update-table --table-name MusicTable --cli-input-json \
 '{
@@ -4131,7 +4131,7 @@ aws dynamodb update-table --table-name MusicTable --cli-input-json \
 ```
 Clean up by deleting the table.
 
-```
+```bash
 # Clean up: Delete the primary table
 aws dynamodb delete-table --table-name MusicTable --region us-east-2
 
@@ -4158,7 +4158,7 @@ The following code example shows how to manage tags for DynamoDB resources.
 **AWS CLI with Bash script**
 Create a table with tags.
 
-```
+```bash
 # Create a table with tags
 aws dynamodb create-table \
     --table-name TaggedTable \
@@ -4174,7 +4174,7 @@ aws dynamodb create-table \
 ```
 List tags for a resource.
 
-```
+```bash
 # Get the table ARN
 TABLE_ARN=$(aws dynamodb describe-table \
     --table-name TaggedTable \
@@ -4187,7 +4187,7 @@ aws dynamodb list-tags-of-resource \
 ```
 Add tags to a resource.
 
-```
+```bash
 # Add tags to an existing table
 aws dynamodb tag-resource \
     --resource-arn $TABLE_ARN \
@@ -4197,7 +4197,7 @@ aws dynamodb tag-resource \
 ```
 Remove tags from a resource.
 
-```
+```bash
 # Remove tags from a table
 aws dynamodb untag-resource \
     --resource-arn $TABLE_ARN \
@@ -4205,7 +4205,7 @@ aws dynamodb untag-resource \
 ```
 Filter tables by tags.
 
-```
+```bash
 # Create another table with different tags
 aws dynamodb create-table \
     --table-name AnotherTaggedTable \
@@ -4256,7 +4256,7 @@ The following code example shows how to manage encryption options for DynamoDB t
 **AWS CLI with Bash script**
 Create a table with default encryption.
 
-```
+```bash
 # Create a table with default encryption (AWS owned key)
 aws dynamodb create-table \
     --table-name CustomerData \
@@ -4269,7 +4269,7 @@ aws dynamodb create-table \
 ```
 Create a table with a customer managed CMK.
 
-```
+```bash
 # Step 1: Create a customer managed key in KMS
 aws kms create-key \
     --description "Key for DynamoDB table encryption" \
@@ -4291,7 +4291,7 @@ aws dynamodb create-table \
 ```
 Update table encryption.
 
-```
+```bash
 # Update a table to use a different KMS key
 aws dynamodb update-table \
     --table-name CustomerData \
@@ -4299,7 +4299,7 @@ aws dynamodb update-table \
 ```
 Describe table encryption.
 
-```
+```bash
 # Describe the table to see encryption settings
 aws dynamodb describe-table \
     --table-name CustomerData \

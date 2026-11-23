@@ -53,7 +53,7 @@ To determine if an endpoint is the *active endpoint*, do a DNS lookup on the *gl
 **Example : DNS lookup on global endpoint**
 The following command completes a DNS lookup on the global.health.amazonaws.com endpoint. The command then returns the us-east-1 Region endpoint. This output tells you which endpoint you should use for AWS Health.
 
-```
+```bash
 dig global.health.amazonaws.com | grep CNAME
 global.health.amazonaws.com. 10 IN CNAME health.us-east-1.amazonaws.com
 ```

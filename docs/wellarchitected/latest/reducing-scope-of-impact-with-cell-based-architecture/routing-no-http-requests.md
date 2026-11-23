@@ -8,4 +8,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 
 ![Diagram showing the routing of no-HTTP requests](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/no-http-requests.jpg)
 
+*Routing no-HTTP requests*
+
  In this example the entry point is an Events/Messages API which could be an Amazon SQS or an Amazon MSK. As in the previous example, cell mapping lives in memory in the router. With each change in the S3 bucket, another process or thread is in listener mode and updates the memory map when necessary.

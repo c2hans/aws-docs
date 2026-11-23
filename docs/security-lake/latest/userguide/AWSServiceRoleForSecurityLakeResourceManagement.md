@@ -44,7 +44,7 @@ To create the service-linked role you must grant the following permissions to yo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

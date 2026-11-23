@@ -14,4 +14,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 
 ![App Runner architecture with two services: one deploying from code repository, another from ECR.](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image7.png)
 
+App Runner use case
+
  App Runner supports full stack development, including both frontend and backend web applications that use HTTP and HTTPS protocols. These applications include API services, backend web services, and websites. App Runner supports container images as well as runtimes and web frameworks including Node.js and Python.

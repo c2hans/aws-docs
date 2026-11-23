@@ -8,6 +8,7 @@ The following table describes the important changes in each release of the *Amaz
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [EKS fields for VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-log-records.html#flow-logs-fields) | VPC Flow Logs can now include metadata from Amazon EKS, such as the cluster ARN, node name, pod name, pod UID, namespace, and pod labels, in flow log records. | November 20, 2026 |
 | [VPC encryption controls](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-encryption-controls.html) | You can now enforce encryption in transit for network traffic within your VPC using VPC encryption controls. This feature provides centralized encryption policy enforcement and monitoring capabilities. | November 21, 2025 |
 | [Regional NAT gateways for automatic multi-AZ expansion](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html) | You can now use regional NAT gateways that automatically expand across Availability Zones based on your workload footprint. Regional NAT gateways provide simplified setup, enhanced security, and automatic high availability without manual intervention. | November 19, 2025 |
 | [Route inbound VPC traffic to public IP addresses](https://docs.aws.amazon.com/vpc/latest/userguide/igw-ingress-routing.html) | You can now configure advanced routing rules to direct inbound traffic from the internet to specific public IP addresses within your VPC, enabling more granular control over traffic flow and routing decisions for ingress scenarios. | August 13, 2025 |

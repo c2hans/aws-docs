@@ -13,7 +13,7 @@ The [CustomExtension](https://docs.aws.amazon.com/privateca/latest/APIReference/
 ## Activate a subordinate CA with the NameConstraints extension
 <a name="Sub_CA_NameConstraints"></a>
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.auth.AWSCredentials;
@@ -428,7 +428,7 @@ public class SubordinateCAActivationWithNameConstraints {
 ## Issue a certificate with the QC statement extension
 <a name="Certificate_QC_statement"></a>
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.auth.AWSCredentials;

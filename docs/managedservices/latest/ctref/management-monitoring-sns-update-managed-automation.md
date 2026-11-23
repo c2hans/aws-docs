@@ -141,7 +141,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-monitoring-sns-update-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "TopicArn": "arn:aws:sns:us-east-1:000000000000:Test-Stack"
 }
@@ -150,7 +150,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-monitoring-sns-update-managed-automation-ex-max"></a>
 
-```
+```json
 {
 
   "TopicArn": "arn:aws:sns:us-east-1:000000000000:Test-Stack",

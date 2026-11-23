@@ -29,7 +29,7 @@ A `shared_ptr` to an `AsyncCallerContext` object is allocated. Its `UUID` proper
 
 The call to `PutObjectAsync` includes a reference argument to the response handler callback function `uploadFileAsyncFinished`. This callback function is examined in more detail in the next section.
 
-```
+```cpp
 bool AwsDoc::S3::uploadFileAsync(const Aws::S3::S3Client &s3Client,
                                 Aws::S3::Model::PutObjectRequest &request,
                                 const Aws::String &bucketName,
@@ -78,7 +78,7 @@ When an asynchronous operation finishes, an application response handler callbac
 
 The example’s response handler callback function `uploadFileAsyncFinished` is shown below. It checks whether the asynchronous operation succeeded or failed. It uses a `std::condition_variable` to notify the application thread that the async operation has finished.
 
-```
+```cpp
 // A mutex is a synchronization primitive that can be used to protect shared
 // data from being simultaneously accessed by multiple threads.
 std::mutex AwsDoc::S3::upload_mutex;
@@ -90,7 +90,7 @@ std::mutex AwsDoc::S3::upload_mutex;
 std::condition_variable AwsDoc::S3::upload_variable;
 ```
 
-```
+```cpp
 void uploadFileAsyncFinished(const Aws::S3::S3Client *s3Client,
                             const Aws::S3::Model::PutObjectRequest &request,
                             const Aws::S3::Model::PutObjectOutcome &outcome,
@@ -114,7 +114,7 @@ The following code demonstrates how the `uploadFileAsync` and `uploadFileAsyncFi
 
 The application allocates the `S3Client` and `PutObjectRequest` objects so that they continue to exist until the asynchronous operation finishes. After calling `uploadFileAsync`, the application can perform whatever operations it wishes. For simplicity, the example uses a `std::mutex` and `std::condition_variable` to wait until the response handler callback notifies it that the upload operation has finished.
 
-```
+```cpp
 int main(int argc, char* argv[])
 {
     if (argc != 3)

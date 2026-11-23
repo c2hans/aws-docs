@@ -58,7 +58,7 @@ For more information, see [WorkSpaces bundles and images](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This sample fetches details of all the Workspace bundles in the current region**
 
-```
+```powershell
 Get-WKSWorkspaceBundle
 ```
 **Output:**
@@ -79,7 +79,7 @@ UserStorage     : Amazon.WorkSpaces.Model.UserStorage
 **Tools for PowerShell V5**
 **Example 1: This sample fetches details of all the Workspace bundles in the current region**
 
-```
+```powershell
 Get-WKSWorkspaceBundle
 ```
 **Output:**

@@ -31,7 +31,7 @@ To see what resources are created when the build pipeline runs, see [Resources c
 
 The following example shows how to use the [Start-EC2IBImagePipelineExecution](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2IBImagePipelineExecution.html) cmdlet to start an image pipeline manually. When you run this cmdlet, the pipeline builds and distributes a new image.
 
-```
+```ps
 Start-EC2IBImagePipelineExecution -ImagePipelineArn arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:image-pipeline/{{my-example-pipeline}}
 ```
 

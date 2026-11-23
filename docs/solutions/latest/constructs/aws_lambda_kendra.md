@@ -27,7 +27,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps, Aws } from 'aws-cdk-lib';
 import { LambdaToKendra } from '@aws-solutions-constructs/aws-lambda-kendra';
@@ -54,11 +54,11 @@ new LambdaToKendra(this, 'sample', {
 });
 ```
 
-```
+```python
 TBD
 ```
 
-```
+```java
 TBD
 ```
 

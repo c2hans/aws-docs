@@ -33,7 +33,7 @@ For more information, see [Configure route tables](https://docs.aws.amazon.com/v
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified route table. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2RouteTable -RouteTableId rtb-1a2b3c4d
 ```
 **Output:**
@@ -49,7 +49,7 @@ Performing operation "Remove-EC2RouteTable (DeleteRouteTable)" on Target "rtb-1a
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified route table. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2RouteTable -RouteTableId rtb-1a2b3c4d
 ```
 **Output:**

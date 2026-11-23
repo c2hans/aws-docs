@@ -32,7 +32,7 @@ For customer managed permissions, after you update the permissions to the defaul
 
    For example, the following sample command returns details for every resource share that uses the default AWS managed permission for Amazon EC2 capacity reservations.
 
-   ```
+   ```bash
    $ aws ram get-resource-shares \
        --resource-owner SELF \
        --permission-arn arn:aws:ram::aws:permission/AWSRAMDefaultPermissionCapacityReservation
@@ -42,7 +42,7 @@ For customer managed permissions, after you update the permissions to the defaul
 
 1. For each resource share specified in the previous command, run the command [associate-resource-share-permission](https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share-permission.html). Include the `--resource-share-arn` to specify the resource share to update, the `--permission-arn` to specify which AWS managed permission you're updating, and the `--replace` parameter to specify that you want to update the share to use the latest version of that managed permission. You don't need to specify the version number; the default version is automatically used.
 
-   ```
+   ```bash
    $ aws ram associate-resource-share-permission \
        --resource-share-arn {{< ARN of one of the shares from the output of the previous command >}} \
        --permission-arn arn:aws:ram::aws:permission/AWSRAMDefaultPermissionCapacityReservation \

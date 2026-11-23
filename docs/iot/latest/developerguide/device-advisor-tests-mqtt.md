@@ -12,7 +12,7 @@ Validates that the device under test sends a CONNECT request.
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 2 minutes.
 
-```
+```JSON
 "tests":[
    {
       "name":"{{my_mqtt_connect_test}}",
@@ -34,7 +34,7 @@ The payload content and the payload size are configurable for this test case. If
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 2 minutes. `PAYLOAD_SIZE` can be configured to a value between 0 and 128 kilobytes. Defining a payload size overrides the payload content as Device Advisor will be sending a pre-defined payload with the given size back to the device.
 
-```
+```JSON
 "tests":[
 {
         "name":{{"my_mqtt_client_puback_qos1"}},
@@ -59,7 +59,7 @@ We recommend implementation of the [Exponential Backoff And Jitter](https://aws.
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 4 minutes.
 
-```
+```JSON
 "tests":[
    {
       "name":"my_mqtt_jitter_backoff_retries_test",
@@ -81,7 +81,7 @@ We recommend implementation of the [Exponential Backoff And Jitter](https://aws.
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 4 minutes.
 
-```
+```JSON
 "tests":[
    {
       "name":"{{my_mqtt_exponential_backoff_retries_test}}",
@@ -104,7 +104,7 @@ To pass this test case, we recommend implementing the [Exponential Backoff And J
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 4 minutes.
 The number of reconnection attempts to validate for backoff can be changed by specifying the `RECONNECTION_ATTEMPTS`. The number must be between 5 and 10. The default value is 5.
 
-```
+```JSON
 "tests":[
    {
       "name":"my_mqtt_reconnect_backoff_retries_on_server_disconnect",
@@ -128,7 +128,7 @@ To pass this test case, we recommend implementing the [Exponential Backoff And J
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 4 minutes.
 The number of reconnection attempts to validate for backoff can be changed by specifying the `RECONNECTION_ATTEMPTS`. The number must be between 5 and 10. The default value is 5.
 
-```
+```JSON
 "tests":[
    {
       "name":"my_mqtt_reconnect_backoff_retries_on_unstable_connection",
@@ -152,7 +152,7 @@ The number of reconnection attempts to validate for backoff can be changed by sp
 Validates that the device under test publishes a message with QoS0 or QoS1. You can also validate the topic of the message and payload by specifying the topic value and payload in the test settings.
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 2 minutes.
 
-```
+```JSON
 "tests":[
    {
       "name":"{{my_mqtt_publish_test}}",
@@ -175,7 +175,7 @@ Validates that the device under test republishes a message sent with QoS1, if th
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. It is recommended for at least 4 minutes.
 
-```
+```JSON
 "tests":[
    {
       "name":"{{my_mqtt_publish_retry_test}}",
@@ -198,7 +198,7 @@ Validates that the device under test publishes a message with `retainFlag` set t
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 2 minutes. To run this test case, add the `iot:RetainPublish` action in your [ device role](https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor-setting-up.html#da-iam-role).
 
-```
+```JSON
 "tests":[
    {
       "name":"{{my_mqtt_publish_retained_messages_test}}",
@@ -222,7 +222,7 @@ Validates that the device under test publishes a message with the correct user p
 This is a MQTT5 only test case.
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 2 minutes.
 
-```
+```JSON
 "tests":[
    {
       "name":"{{my_mqtt_user_property_test}}",
@@ -249,7 +249,7 @@ Validates that the device under test subscribes to MQTT topics. You can also val
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 2 minutes.
 
-```
+```JSON
 "tests":[
    {
       "name":"{{my_mqtt_subscribe_test}}",
@@ -271,7 +271,7 @@ Validates that the device under test retries a failed subscription to MQTT topic
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 4 minutes.
 
-```
+```JSON
 "tests":[
    {
       "name":"{{my_mqtt_subscribe_retry_test}}",
@@ -297,7 +297,7 @@ This test case validates if the device under test disconnects when it doesn't re
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout greater than 1.5 times the `keepAliveTime` value.
  The maximum `keepAliveTime` must be no greater than 230 seconds for this test.
 
-```
+```JSON
 "tests":[
     {
        "name":"{{Mqtt No Ack PingResp}}",
@@ -322,7 +322,7 @@ In this test case, the client device is expected to CONNECT with the AWS IoT Cor
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of at least 4 minutes. In the first connection, client device needs to explicitly subscribe to a `TRIGGER_TOPIC` which was not subscribed before. To pass the test case, client device must successfully subscribe to `TRIGGER_TOPIC` with a QoS 1. After re-connecting, the client device is expected to understand that there is an active persistent session; so it should accept the stored message sent by the trigger topic and return PUBACK for that specific message.
 
-```
+```JSON
 "tests":[
    {
       "name":"my_mqtt_persistent_session_happy_case",
@@ -349,7 +349,7 @@ If this test case passes for a test device, it indicates that the device is able
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of at least 4 minutes. The test device needs to explicitly subscribe to a `TRIGGER_TOPIC`, to which it was not subscribed before. To pass the test case, the test device must send a CONNECT packet with `CleanSession` flag set to false, and successfully subscribe to a trigger topic with a QoS 1. After a successful connection, AWS IoT Core Device Advisor disconnects the device. After the disconnection, AWS IoT Core Device Advisor allows the device to re-connect back, and the device is expected to re-subscribe to the same `TRIGGER_TOPIC` since AWS IoT Core Device Advisor would have terminated the persistent session.
 
-```
+```JSON
 "tests":[
    {
       "name":"my_expired_persistent_session_test",

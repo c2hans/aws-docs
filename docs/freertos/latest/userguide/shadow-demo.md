@@ -54,7 +54,7 @@ To connect to the AWS IoT MQTT broker, we use the same method as `MQTT_Connect()
 
 To delete the shadow document, call `xPublishToTopic` with an empty message, using macros defined by the AWS IoT Device Shadow library. This uses `MQTT_Publish` to publish to the `/delete` topic. The following code section shows how this is done in the function `prvShadowDemoTask`.
 
-```
+```c
 /* First of all, try to delete any Shadow document in the cloud. */
 returnStatus = PublishToTopic( SHADOW_TOPIC_STRING_DELETE( THING_NAME ),
                                SHADOW_TOPIC_LENGTH_DELETE( THING_NAME_LENGTH ),
@@ -67,7 +67,7 @@ returnStatus = PublishToTopic( SHADOW_TOPIC_STRING_DELETE( THING_NAME ),
 
 Subscribe to the Device Shadow topics to receive notifications from the AWS IoT broker about shadow changes. The Device Shadow topics are assembled by macros defined in the Device Shadow library. The following code section shows how this is done in the `prvShadowDemoTask` function.
 
-```
+```c
 /* Then try to subscribe shadow topics. */
 if( returnStatus == EXIT_SUCCESS )
 {
@@ -96,7 +96,7 @@ if( returnStatus == EXIT_SUCCESS )
 
 To send a shadow update, the demo calls `xPublishToTopic` with a message in JSON format, using macros defined by the Device Shadow library. This uses `MQTT_Publish` to publish to the `/delete` topic. The following code section shows how this is done in the `prvShadowDemoTask` function.
 
-```
+```c
 #define SHADOW_REPORTED_JSON    \
     "{"                         \
     "\"state\":{"               \

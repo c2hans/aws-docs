@@ -65,7 +65,7 @@ Enable CORS by returning correct headers.
 #### PUT schema
 <a name="packaging_groups-id-configure_logs-request-body-put-example"></a>
 
-```
+```json
 {
   "egressAccessLogs": {
     "logGroupName": "string"
@@ -79,7 +79,7 @@ Enable CORS by returning correct headers.
 #### PackagingGroup schema
 <a name="packaging_groups-id-configure_logs-response-body-packaginggroup-example"></a>
 
-```
+```json
 {
   "authorization": {
     "cdnIdentifierSecret": "string",

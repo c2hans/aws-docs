@@ -31,7 +31,7 @@ The following code example shows how to use `DetectDominantLanguage`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Comprehend/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Comprehend;
@@ -79,7 +79,7 @@ The following code example shows how to use `DetectEntities`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Comprehend/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Comprehend;
@@ -128,7 +128,7 @@ The following code example shows how to use `DetectKeyPhrases`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Comprehend/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Comprehend;
@@ -177,7 +177,7 @@ The following code example shows how to use `DetectPiiEntities`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Comprehend/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Comprehend;
@@ -230,7 +230,7 @@ The following code example shows how to use `DetectSentiment`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Comprehend/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Comprehend;
@@ -275,7 +275,7 @@ The following code example shows how to use `DetectSyntax`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Comprehend/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Comprehend;
@@ -324,7 +324,7 @@ The following code example shows how to use `StartTopicsDetectionJob`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Comprehend/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Comprehend;

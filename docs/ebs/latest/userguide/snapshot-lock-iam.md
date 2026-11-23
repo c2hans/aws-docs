@@ -25,7 +25,7 @@ The following is an example IAM policy that gives users permission to lock and u
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -81,7 +81,7 @@ The following example policy restricts users to specifying a lock duration betwe
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -117,7 +117,7 @@ The following example policy restricts users to specifying a cooling-off period 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

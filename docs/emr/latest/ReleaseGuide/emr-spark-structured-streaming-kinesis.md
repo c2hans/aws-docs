@@ -8,6 +8,6 @@ Amazon EMR releases 7.1.0 and higher include a spark structured streaming Amazon
 
 The following example demonstrates how to use the connector to launch a Spark application with Amazon EMR
 
-```
+```bash,sh,zsh
 spark-submit {{my_kinesis_streaming_script.py}}
 ```

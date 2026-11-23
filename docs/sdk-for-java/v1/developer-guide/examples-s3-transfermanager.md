@@ -34,7 +34,7 @@ Call TransferManager’s `upload` method, providing an Amazon S3 bucket name, a 
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.s3.transfer.MultipleFileUpload;
 import com.amazonaws.services.s3.transfer.TransferManager;
@@ -48,7 +48,7 @@ import java.util.Arrays;
 
  **Code**
 
-```
+```java
 File f = new File(file_path);
 TransferManager xfer_mgr = TransferManagerBuilder.standard().build();
 try {
@@ -81,7 +81,7 @@ To upload multiple files in one operation, call the TransferManager`uploadFileLi
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.s3.transfer.MultipleFileUpload;
 import com.amazonaws.services.s3.transfer.TransferManager;
@@ -95,7 +95,7 @@ import java.util.Arrays;
 
  **Code**
 
-```
+```java
 ArrayList<File> files = new ArrayList<File>();
 for (String path : file_paths) {
     files.add(new File(path));
@@ -131,7 +131,7 @@ You can use TransferManager’s `uploadDirectory` method to upload an entire dir
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.s3.transfer.MultipleFileUpload;
 import com.amazonaws.services.s3.transfer.TransferManager;
@@ -145,7 +145,7 @@ import java.util.Arrays;
 
  **Code**
 
-```
+```java
 TransferManager xfer_mgr = TransferManagerBuilder.standard().build();
 try {
     MultipleFileUpload xfer = xfer_mgr.uploadDirectory(bucket_name,
@@ -185,7 +185,7 @@ Use the TransferManager’s `download` method, providing the Amazon S3 bucket na
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.s3.transfer.Download;
 import com.amazonaws.services.s3.transfer.MultipleFileDownload;
@@ -197,7 +197,7 @@ import java.io.File;
 
  **Code**
 
-```
+```java
 File f = new File(file_path);
 TransferManager xfer_mgr = TransferManagerBuilder.standard().build();
 try {
@@ -224,7 +224,7 @@ To download a set of files that share a common key prefix (analogous to a direct
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.s3.transfer.Download;
 import com.amazonaws.services.s3.transfer.MultipleFileDownload;
@@ -236,7 +236,7 @@ import java.io.File;
 
  **Code**
 
-```
+```java
 TransferManager xfer_mgr = TransferManagerBuilder.standard().build();
 
 try {
@@ -264,7 +264,7 @@ To copy an object from one S3 bucket to another, use the TransferManager`copy` m
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.s3.transfer.Copy;
 import com.amazonaws.services.s3.transfer.TransferManager;
@@ -273,7 +273,7 @@ import com.amazonaws.services.s3.transfer.TransferManagerBuilder;
 
  **Code**
 
-```
+```java
 System.out.println("Copying s3 object: " + from_key);
 System.out.println("      from bucket: " + from_bucket);
 System.out.println("     to s3 object: " + to_key);
@@ -300,7 +300,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 
 If your application (or thread) can block until the transfer completes, you can use the [Transfer](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/s3/transfer/Transfer.html) interface’s `waitForCompletion` method to block until the transfer is complete or an exception occurs.
 
-```
+```java
 try {
     xfer.waitForCompletion();
 } catch (AmazonServiceException e) {
@@ -348,7 +348,7 @@ This loop prints the progress of a transfer, examines its current progress while
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.event.ProgressEvent;
@@ -363,7 +363,7 @@ import java.util.Collection;
 
  **Code**
 
-```
+```java
 // print the transfer's human-readable description
 System.out.println(xfer.getDescription());
 // print an empty progress bar...
@@ -400,7 +400,7 @@ A [ProgressListener](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/a
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.event.ProgressEvent;
@@ -415,7 +415,7 @@ import java.util.Collection;
 
  **Code**
 
-```
+```java
 File f = new File(file_path);
 TransferManager xfer_mgr = TransferManagerBuilder.standard().build();
 try {
@@ -450,7 +450,7 @@ The [MultipleFileUpload](https://docs.aws.amazon.com/sdk-for-java/v1/reference/c
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.event.ProgressEvent;
@@ -465,7 +465,7 @@ import java.util.Collection;
 
  **Code**
 
-```
+```java
 Collection<? extends Upload> sub_xfers = new ArrayList<Upload>();
 sub_xfers = multi_upload.getSubTransfers();
 

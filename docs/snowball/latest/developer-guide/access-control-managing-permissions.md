@@ -23,7 +23,7 @@ The following shows an example of a permissions policy.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -70,7 +70,7 @@ The permissions reference table lists the AWS Snowball Edge job management API o
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -204,7 +204,7 @@ The permissions reference table lists the AWS Snowball Edge job management API o
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

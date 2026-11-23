@@ -8,7 +8,7 @@ In Secrets Manager, a *secret* consists of secret information, the *secret value
 
 To store multiple string values in one secret, we recommend that you use a JSON text string with key-value pairs, for example:
 
-```
+```json
 {
   "host"       : "ProdServer-01.databases.example.com",
   "port"       : "8888",

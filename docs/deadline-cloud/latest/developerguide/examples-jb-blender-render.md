@@ -8,13 +8,13 @@ The [blender\_render](https://github.com/aws-deadline/deadline-cloud-samples/tre
 
 Submit the bundle with the GUI submitter:
 
-```
+```bash
 deadline bundle gui-submit blender_render/
 ```
 
 Or submit from the CLI with parameter values:
 
-```
+```bash
 deadline bundle submit blender_render/ \
     -p BlenderSceneFile={{path-to-scene.blend}} \
     -p OutputDir={{path-for-outputs}}

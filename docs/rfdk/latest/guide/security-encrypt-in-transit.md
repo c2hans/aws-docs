@@ -56,7 +56,7 @@ Here is an example snippet from a CDK application that uses the [X509Certificate
 ------
 #### [ Python ]
 
-```
+```python
 class CertStack(cdk.Stack):
   def __init__(scope, id, props):
     # Generate a root CA and then use it to sign another identity certificate
@@ -85,7 +85,7 @@ class CertStack(cdk.Stack):
 ------
 #### [ TypeScript ]
 
-```
+```typescript
 class CertStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props: StackProps) {
     // Generate a root CA and then use it to sign another identity certificate
@@ -135,7 +135,7 @@ An ACM Certificate in CDK does not expose the certificate chain, so when using t
 ------
 #### [ Python ]
 
-```
+```python
   acm_cert = aws_cdk.aws_certificatemanager.Certificate.from_certificate_arn(this, 'RqCert', [certificate_arn])
   acm_cert_chain = aws_cdk.aws_secretsmanager.Secret.from_secret_arn(this, 'RqCertChain', [secret_arn])
   traffic_encryption = aws_rfdk.deadline.RenderQueueTrafficEncryptionProps(
@@ -149,7 +149,7 @@ An ACM Certificate in CDK does not expose the certificate chain, so when using t
 ------
 #### [ TypeScript ]
 
-```
+```typescript
   trafficEncryption: {
     externalTLS: {
       acmCertificate: AcmCertificate.fromCertificateArn(

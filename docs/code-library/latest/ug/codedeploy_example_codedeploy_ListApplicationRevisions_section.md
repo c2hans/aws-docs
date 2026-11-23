@@ -59,7 +59,7 @@ For more information, see [View application revision details with CodeDeploy](ht
 **Tools for PowerShell V4**
 **Example 1: This example gets information about available revisions for the specified application.**
 
-```
+```powershell
 ForEach ($revision in (Get-CDApplicationRevisionList -ApplicationName CodeDeployDemoApplication -Deployed Ignore)) {
 >>   If ($revision.RevisionType -Eq "S3") {
 >>     Write-Output ("Type = S3, Bucket = " + $revision.S3Location.Bucket + ", BundleType = " + $revision.S3Location.BundleType + ", ETag = " + $revision.S3Location.ETag + ", Key = " + $revision.S3Location.Key)
@@ -81,7 +81,7 @@ Type = GitHub, CommitId = f48933c3...76405362, Repository = MyGitHubUser/CodeDep
 **Tools for PowerShell V5**
 **Example 1: This example gets information about available revisions for the specified application.**
 
-```
+```powershell
 ForEach ($revision in (Get-CDApplicationRevisionList -ApplicationName CodeDeployDemoApplication -Deployed Ignore)) {
 >>   If ($revision.RevisionType -Eq "S3") {
 >>     Write-Output ("Type = S3, Bucket = " + $revision.S3Location.Bucket + ", BundleType = " + $revision.S3Location.BundleType + ", ETag = " + $revision.S3Location.ETag + ", Key = " + $revision.S3Location.Key)

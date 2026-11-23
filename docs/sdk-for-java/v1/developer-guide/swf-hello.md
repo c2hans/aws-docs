@@ -49,7 +49,7 @@ To successfully work through this tutorial, you must have access to the AWS acce
 
 The instructions describe how to access temporary credentials that you copy and paste to your local shared `credentials` file. The temporary credentials that you paste must be associated with an IAM role in AWS IAM Identity Center that has permissions to access Amazon SWF. After pasting the temporary credentials, your `credentials` file will look similar to the following.
 
-```
+```sh
 [default]
 aws_access_key_id=AKIAIOSFODNN7EXAMPLE
 aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
@@ -63,7 +63,7 @@ These temporary credentials are associated with the `default` profile.
 
 1. Start a new project with Maven:
 
-   ```
+   ```sh
    mvn archetype:generate -DartifactId=helloswf \
    -DgroupId=aws.example.helloswf -DinteractiveMode=false
    ```
@@ -88,7 +88,7 @@ These temporary credentials are associated with the `default` profile.
 
 1. Edit the project’s `pom.xml` file and add the **aws-java-sdk-simpleworkflow** module by adding a dependency for it within the `<dependencies>` block.
 
-   ```
+   ```xml
    <dependencies>
      <dependency>
        <groupId>com.amazonaws</groupId>
@@ -100,7 +100,7 @@ These temporary credentials are associated with the `default` profile.
 
 1.  *Make sure that Maven builds your project with JDK 1.7\+ support*. Add the following to your project (either before or after the `<dependencies>` block) in `pom.xml`:
 
-   ```
+   ```xml
    <build>
      <plugins>
        <plugin>
@@ -133,13 +133,13 @@ All of the files that you create to house your Java classes will have a few thin
 
 1. Add a `package` declaration to the beginning of each file to declare its namespace. The example project uses:
 
-   ```
+   ```java
    package aws.example.helloswf;
    ```
 
 1. Add `import` declarations for the [AmazonSimpleWorkflowClient](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflowClient.html) class and for multiple classes in the `com.amazonaws.services.simpleworkflow.model` namespace. To simplify things, we’ll use:
 
-   ```
+   ```java
    import com.amazonaws.regions.Regions;
    import com.amazonaws.services.simpleworkflow.AmazonSimpleWorkflow;
    import com.amazonaws.services.simpleworkflow.AmazonSimpleWorkflowClientBuilder;
@@ -155,7 +155,7 @@ We’ll begin by creating a new executable class, `HelloTypes.java`. This file w
 
 1. Declare the `HelloTypes` class and provide it with values to use for your registered activity and workflow types:
 
-   ```
+   ```java
        public static final String DOMAIN = "HelloDomain";
        public static final String TASKLIST = "HelloTasklist";
        public static final String WORKFLOW = "HelloWorkflow";
@@ -168,14 +168,14 @@ We’ll begin by creating a new executable class, `HelloTypes.java`. This file w
 
 1. After the String declarations, create an instance of the [AmazonSimpleWorkflowClient](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflowClient.html) class. This is the basic interface to the Amazon SWF methods provided by the AWS SDK for Java.
 
-   ```
+   ```java
    private static final AmazonSimpleWorkflow swf =
        AmazonSimpleWorkflowClientBuilder.standard().withRegion(Regions.DEFAULT_REGION).build();
    ```
 
    The previous snippet assumes that temporary credentials are associated with the `default` profile. If you use a different profile, modify the code above as follows and replace {{profile\_name }}with the name of actual profile name.
 
-   ```
+   ```java
    private static final AmazonSimpleWorkflow swf =
            AmazonSimpleWorkflowClientBuilder
                    .standard()
@@ -186,7 +186,7 @@ We’ll begin by creating a new executable class, `HelloTypes.java`. This file w
 
 1. Add a new function to register a SWF domain. A *domain* is a logical container for a number of related SWF activity and workflow types. SWF components can only communicate with each other if they exist within the same domain.
 
-   ```
+   ```java
        try {
            System.out.println("** Registering the domain '" + DOMAIN + "'.");
            swf.registerDomain(new RegisterDomainRequest()
@@ -205,7 +205,7 @@ This code demonstrates a common pattern when working with AWS SDK for Java metho
 
 1. Add a function to register a new activity type. An *activity* represents a unit of work in your workflow.
 
-   ```
+   ```java
        try {
            System.out.println("** Registering the activity type '" + ACTIVITY +
                "-" + ACTIVITY_VERSION + "'.");
@@ -231,7 +231,7 @@ If the activity type that you’re trying to register already exists, an [TypeAl
 
 \+
 
-```
+```java
     try {
         System.out.println("** Registering the workflow type '" + WORKFLOW +
             "-" + WORKFLOW_VERSION + "'.");
@@ -257,7 +257,7 @@ If the workflow type that you’re trying to register already exists, an [TypeAl
 
 \+
 
-```
+```java
     registerDomain();
     registerWorkflowType();
     registerActivityType();
@@ -276,7 +276,7 @@ We’ll implement a simple activity worker that drives a single activity.
 
 1. Open your text editor and create the file `ActivityWorker.java`, adding a package declaration and imports according to the [common steps](#swf-hello-common).
 
-   ```
+   ```java
    import com.amazonaws.regions.Regions;
    import com.amazonaws.services.simpleworkflow.AmazonSimpleWorkflow;
    import com.amazonaws.services.simpleworkflow.AmazonSimpleWorkflowClientBuilder;
@@ -285,14 +285,14 @@ We’ll implement a simple activity worker that drives a single activity.
 
 1. Add the `ActivityWorker` class to the file, and give it a data member to hold a SWF client that we’ll use to interact with Amazon SWF:
 
-   ```
+   ```java
        private static final AmazonSimpleWorkflow swf =
                AmazonSimpleWorkflowClientBuilder.standard().withRegion(Regions.DEFAULT_REGION).build();
    ```
 
 1. Add the method that we’ll use as an activity:
 
-   ```
+   ```java
    private static String sayHello(String input) throws Throwable {
        return "Hello, " + input + "!";
    }
@@ -302,7 +302,7 @@ We’ll implement a simple activity worker that drives a single activity.
 
 1. Add a `main` method that we’ll use as the activity task polling method. We’ll start it by adding some code to poll the task list for activity tasks:
 
-   ```
+   ```java
            System.out.println("Polling for an activity task from the tasklist '"
                    + HelloTypes.TASKLIST + "' in the domain '" +
                    HelloTypes.DOMAIN + "'.");
@@ -322,7 +322,7 @@ We’ll implement a simple activity worker that drives a single activity.
 
 1. Next, write some code to process the tasks that come in. Add the following to your `main` method, right after the code that polls for the task and retrieves its task token.
 
-   ```
+   ```java
        if (task_token != null) {
            String result = null;
            Throwable error = null;
@@ -374,7 +374,7 @@ When the workflow worker receives a task, it makes some sort of decision (usuall
 
 1. Add a few additional imports to the file:
 
-   ```
+   ```java
    import com.amazonaws.regions.Regions;
    import com.amazonaws.services.simpleworkflow.AmazonSimpleWorkflow;
    import com.amazonaws.services.simpleworkflow.AmazonSimpleWorkflowClientBuilder;
@@ -386,14 +386,14 @@ When the workflow worker receives a task, it makes some sort of decision (usuall
 
 1. Declare the `WorkflowWorker` class, and create an instance of the [AmazonSimpleWorkflowClient](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflowClient.html) class used to access SWF methods.
 
-   ```
+   ```java
        private static final AmazonSimpleWorkflow swf =
                AmazonSimpleWorkflowClientBuilder.standard().withRegion(Regions.DEFAULT_REGION).build();
    ```
 
 1. Add the `main` method. The method loops continuously, polling for decision tasks using the SWF client’s `pollForDecisionTask` method. The [PollForDecisionTaskRequest](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/simpleworkflow/model/PollForDecisionTaskRequest.html) provides the details.
 
-   ```
+   ```java
        PollForDecisionTaskRequest task_request =
            new PollForDecisionTaskRequest()
                .withDomain(HelloTypes.DOMAIN)
@@ -422,7 +422,7 @@ When the workflow worker receives a task, it makes some sort of decision (usuall
 
 1. Add the `executeDecisionTask` method, taking the task token (a `String`) and the `HistoryEvent` list.
 
-   ```
+   ```java
        List<Decision> decisions = new ArrayList<Decision>();
        String workflow_input = null;
        int scheduled_activities = 0;
@@ -440,7 +440,7 @@ When the workflow worker receives a task, it makes some sort of decision (usuall
 
 1. Next, add some code to `executeDecisionTask` to process the `HistoryEvent` objects that were sent with the task, based on the event type reported by the `getEventType` method.
 
-   ```
+   ```java
    System.out.println("Executing the decision task for the history events: [");
    for (HistoryEvent event : events) {
        System.out.println("  " + event);
@@ -485,13 +485,13 @@ When the workflow worker receives a task, it makes some sort of decision (usuall
 
    \+ NOTE: Strings in `switch` statements were introduced in Java 7. If you’re using an earlier version of Java, you can make use of the [EventType](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/model/EventType.html) class to convert the `String` returned by `history_event.getType()` to an enum value and then back to a `String` if necessary:
 
-```
+```java
 EventType et = EventType.fromValue(event.getEventType());
 ```
 
 1. After the `switch` statement, add more code to respond with an appropriate *decision* based on the task that was received.
 
-   ```
+   ```java
    if (activity_completed) {
        decisions.add(
            new Decision()
@@ -529,7 +529,7 @@ EventType et = EventType.fromValue(event.getEventType());
 
 1. Complete the decision task by returning the list of `Decision` objects collected while processing the task. Add this code at the end of the `executeDecisionTask` method that we’ve been writing:
 
-   ```
+   ```java
    swf.respondDecisionTaskCompleted(
        new RespondDecisionTaskCompletedRequest()
            .withTaskToken(taskToken)
@@ -547,7 +547,7 @@ Finally, we’ll write some code to start the workflow execution.
 
 1. Add the `WorkflowStarter` class:
 
-   ```
+   ```java
    package aws.example.helloswf;
 
    import com.amazonaws.regions.Regions;
@@ -602,7 +602,7 @@ Finally, we’ll write some code to start the workflow execution.
 
 To build the example project with Maven, go to the `helloswf` directory and type:
 
-```
+```sh
 mvn package
 ```
 
@@ -621,14 +621,14 @@ If you are using a Linux, macOS, or Unix system, you can run all of them, one af
 
 Although Maven has handled the dependencies for you, to run the example, you’ll need to provide the AWS SDK library and its dependencies on your Java classpath. You can either set the `CLASSPATH` environment variable to the location of your AWS SDK libraries and the `third-party/lib` directory in the SDK, which includes necessary dependencies:
 
-```
+```sh
 export CLASSPATH='target/helloswf-1.0.jar:/path/to/sdk/lib/*:/path/to/sdk/third-party/lib/*'
 java example.swf.hello.HelloTypes
 ```
 
 or use the ** ` java ` ** command’s `-cp` option to set the classpath while running each applications.
 
-```
+```sh
 java -cp target/helloswf-1.0.jar:/path/to/sdk/lib/*:/path/to/sdk/third-party/lib/* \
   example.swf.hello.HelloTypes
 ```
@@ -642,7 +642,7 @@ Before running your workers and the workflow starter, you’ll need to register 
 
 After building, and if you’ve [set the CLASSPATH](#swf-hello-set-classpath), you can run the registration code by executing the command:
 
-```
+```sh
     echo 'Supply the name of one of the example classes as an argument.'
 ```
 
@@ -651,7 +651,7 @@ After building, and if you’ve [set the CLASSPATH](#swf-hello-set-classpath), y
 
 Now that the types have been registered, you can start the activity and workflow workers. These will continue to run and poll for tasks until they are killed, so you should either run them in separate terminal windows, or, if you’re running on Linux, macOS, or Unix you can use the `&` operator to cause each of them to spawn a separate process when run.
 
-```
+```sh
     echo 'If there are arguments to the class, put them in quotes after the class name.'
     exit 1
 ```
@@ -663,14 +663,14 @@ If you’re running these commands in separate windows, omit the final `&` opera
 
 Now that your activity and workflow workers are polling, you can start the workflow execution. This process will run until the workflow returns a completed status. You should run it in a new terminal window (unless you ran your workers as new spawned processes by using the `&` operator).
 
-```
+```sh
 fi
 ```
 
 **Note**
 If you want to provide your own input data, which will be passed first to the workflow and then to the activity, add it to the command-line. For example:
 
-```
+```sh
 echo "## Running $className..."
 ```
 

@@ -92,7 +92,7 @@ aws cloudwatch get-metric-statistics --namespace AWS/GlobalAccelerator \
 
 The following is example output from the command:
 
-```
+```json
 {
     "Label": "ProcessedBytesIn",
     "Datapoints": [

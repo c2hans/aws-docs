@@ -37,7 +37,7 @@ You can install the AWS Startup Advisor plugin for Claude Code and Codex. Every 
 
 For Claude Code, run the following command in your terminal:
 
-```
+```bash
 claude plugin install aws-startup-advisor@claude-plugins-official
 ```
 
@@ -46,13 +46,13 @@ The `claude-plugins-official` marketplace is added to Claude Code by default.
 **Tip**
 If you get `Plugin not found`, update the marketplace index first. In Claude Code, run the following command:
 
-```
+```bash
 /plugin marketplace update claude-plugins-official
 ```
 
 Alternatively, you can install the plugin from the Agent Toolkit for AWS repository’s own marketplace. In Claude Code, run the following commands:
 
-```
+```bash
 /plugin marketplace add aws/agent-toolkit-for-aws
 /plugin install aws-startup-advisor@agent-toolkit-for-aws
 /reload-plugins
@@ -67,7 +67,7 @@ For the plugin’s marketplace listing, see [the AWS Startup Advisor Claude Code
 
 To add the marketplace, run the following command in a terminal:
 
-```
+```bash
 codex plugin marketplace add aws/agent-toolkit-for-aws
 ```
 
@@ -94,7 +94,7 @@ The Cursor extension is available from the Open VSX Registry. For the marketplac
 
 To install the extension from the command line, run the following command:
 
-```
+```bash
 cursor --install-extension amazonwebservices.aws-startup-advisor
 ```
 
@@ -117,7 +117,7 @@ The VS Code extension is available from the Visual Studio Marketplace. For the m
 
 To install the extension from the command line, run the following command:
 
-```
+```bash
 code --install-extension AmazonWebServices.aws-startup-advisor
 ```
 
@@ -134,7 +134,7 @@ The Kiro extension is available from the Open VSX Registry. For the marketplace 
 
 To install the extension from the command line, run the following command:
 
-```
+```bash
 kiro --install-extension amazonwebservices.aws-startup-advisor
 ```
 
@@ -161,13 +161,13 @@ For agents beyond the IDE extension and the plugin, for example Kiro, fx, or Git
 
 To install the skills, run the following command:
 
-```
+```bash
 npx skills add aws/agent-toolkit-for-aws/plugins/aws-startup-advisor/skills --skill '*'
 ```
 
 If you get an npm authentication or registry error, retry against the public registry:
 
-```
+```bash
 npx --registry https://registry.npmjs.org skills add aws/agent-toolkit-for-aws/plugins/aws-startup-advisor/skills --skill '*'
 ```
 

@@ -34,7 +34,7 @@ Use the [delete-lifecycle-policy](https://docs.aws.amazon.com/cli/latest/referen
 **Note**
 You can delete snapshots created only by Amazon Data Lifecycle Manager.
 
-```
+```bash
 aws dlm delete-lifecycle-policy --policy-id policy-{{0123456789abcdef0}}
 ```
 

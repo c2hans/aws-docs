@@ -15,7 +15,7 @@ This action supports the following `CreateImage` parameters. For more informatio
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: createMyImage
 action: aws:createImage
 maxAttempts: 3
@@ -30,7 +30,7 @@ inputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "createMyImage",
     "action": "aws:createImage",

@@ -35,7 +35,7 @@ If *geo* is null, then null is returned.
 
 The following SQL returns the Cartesian area of a multipolygon.
 
-```
+```sql
 SELECT ST_Area(ST_GeomFromText('MULTIPOLYGON(((0 0,10 0,0 10,0 0)),((10 0,20 0,20 10,10 0)))'));
 ```
 
@@ -47,7 +47,7 @@ SELECT ST_Area(ST_GeomFromText('MULTIPOLYGON(((0 0,10 0,0 10,0 0)),((10 0,20 0,2
 
 The following SQL returns the area of a polygon in a geography.
 
-```
+```sql
 SELECT ST_Area(ST_GeogFromText('polygon((34 35, 28 30, 25 34, 34 35))'));
 ```
 
@@ -59,7 +59,7 @@ SELECT ST_Area(ST_GeogFromText('polygon((34 35, 28 30, 25 34, 34 35))'));
 
 The following SQL returns zero for a linear geography.
 
-```
+```sql
 SELECT ST_Area(ST_GeogFromText('multipoint(0 0, 1 1, -21.32 121.2)'));
 ```
 

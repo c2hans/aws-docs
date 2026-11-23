@@ -13,7 +13,7 @@ When you publish a journey, Amazon Pinpoint can stream event data for email, SMS
 
 The JSON object for a journey event contains the data shown in the following sample.
 
-```
+```json
 {
    "event_type":"_journey.send",
    "event_timestamp":1572989078843,

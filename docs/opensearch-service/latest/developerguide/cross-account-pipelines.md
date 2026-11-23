@@ -81,7 +81,7 @@ In the following command, you must use the short form of the account ID by provi
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

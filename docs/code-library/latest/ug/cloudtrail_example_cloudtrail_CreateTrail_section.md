@@ -14,7 +14,7 @@ The following code examples show how to use `CreateTrail`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudtrail#code-examples).
 
-```
+```cpp
 // Routine which creates an AWS CloudTrail trail.
 /*!
   \param trailName: The name of the CloudTrail trail.
@@ -79,12 +79,12 @@ For more information, see [Using the create-trail command to create a trail](htt
 **Tools for PowerShell V4**
 **Example 1: Creates a trail that will use the bucket 'amzn-s3-demo-bucket' for log file storage.**
 
-```
+```powershell
 New-CTTrail -Name "awscloudtrail-example" -S3BucketName "amzn-s3-demo-bucket"
 ```
 **Example 2: Creates a trail that will use the bucket 'amzn-s3-demo-bucket' for log file storage. The S3 objects representing the logs will have a common key prefix of 'mylogs'. When new logs are delivered to the bucket a notification will be sent to the SNS topic 'mlog-deliverytopic'. This example using splatting to supply the parameter values to the cmdlet.**
 
-```
+```powershell
 $params = @{
     Name="awscloudtrail-example"
     S3BucketName="amzn-s3-demo-bucket"
@@ -98,12 +98,12 @@ New-CTTrail @params
 **Tools for PowerShell V5**
 **Example 1: Creates a trail that will use the bucket 'amzn-s3-demo-bucket' for log file storage.**
 
-```
+```powershell
 New-CTTrail -Name "awscloudtrail-example" -S3BucketName "amzn-s3-demo-bucket"
 ```
 **Example 2: Creates a trail that will use the bucket 'amzn-s3-demo-bucket' for log file storage. The S3 objects representing the logs will have a common key prefix of 'mylogs'. When new logs are delivered to the bucket a notification will be sent to the SNS topic 'mlog-deliverytopic'. This example using splatting to supply the parameter values to the cmdlet.**
 
-```
+```powershell
 $params = @{
     Name="awscloudtrail-example"
     S3BucketName="amzn-s3-demo-bucket"
@@ -120,7 +120,7 @@ New-CTTrail @params
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudtrail#code-examples).
 
-```
+```ruby
 require 'aws-sdk-cloudtrail' # v2: require 'aws-sdk'
 require 'aws-sdk-s3'
 require 'aws-sdk-sts'

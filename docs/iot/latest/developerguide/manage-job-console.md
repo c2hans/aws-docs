@@ -44,7 +44,7 @@ We recommend that you don't use personally identifiable information in your job 
 
        If you want to use presigned URLs for a code signing placeholder, use the following example template:
 
-       ```
+       ```JSON
            ${aws:iot:s3-presigned-url:${aws:iot:code-sign-signature:<S3 URL>}
        ```
    + **From template**: A job template containing a job document and job configurations. The job template can be a custom job template you created or an AWS managed template.

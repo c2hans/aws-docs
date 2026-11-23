@@ -20,7 +20,7 @@ Install the AWS Quick app in your Slack workspace to enable AI-powered assistanc
 
 **Add a Slack Extension to your Slack**
 
-1. Open and login to the Slack workspace for your company.
+1. Open and log in to the Slack workspace for your company.
 
 1. Choose **More** in the left navigation, then select **Automations**.
 

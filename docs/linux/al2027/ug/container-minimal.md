@@ -31,7 +31,7 @@ Image Size is as-shown on [Amazon Linux on Amazon ECR Public Gallery](https://ga
 
 Public repositories support unauthenticated pulls. For optional authentication, see [Authenticate to Amazon ECR Public (optional)](container-base.md#container-base-authenticate).
 
-```
+```sh
 $ docker pull public.ecr.aws/amazonlinux/amazonlinux:2027-minimal
 ```
 
@@ -40,7 +40,7 @@ $ docker pull public.ecr.aws/amazonlinux/amazonlinux:2027-minimal
 
 The minimal container image uses DNF5. Use the **dnf** command to install packages. The following example installs GCC and removes cached repository data.
 
-```
+```Dockerfile
 FROM public.ecr.aws/amazonlinux/amazonlinux:2027-minimal
 RUN dnf install -y gcc && dnf clean all
 ```

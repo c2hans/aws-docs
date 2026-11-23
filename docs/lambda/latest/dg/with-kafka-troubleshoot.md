@@ -36,7 +36,7 @@ After you add the required permissions to the execution role, it might take seve
 
 The following is an example ESM system-level log after enabling [Logging Config](esm-logging.md) for this issue:
 
-```
+```JSON
 {
     "eventType": "ESM_PROCESSING_EVENT",
     "timestamp": 1734567890123,
@@ -62,7 +62,7 @@ You might see this error occurring intermittently. The cluster rejects connectio
 
 The following is an example ESM system-level log after enabling [Logging Config](esm-logging.md) for this issue when using IAM authentication:
 
-```
+```JSON
 {
     "eventType": "ESM_PROCESSING_EVENT",
     "timestamp": 1734567890456,
@@ -100,7 +100,7 @@ This error indicates that the Kafka consumer couldn't use the provided certifica
 
 The following is an example ESM system-level log after enabling [Logging Config](esm-logging.md) for this issue:
 
-```
+```JSON
 {
     "eventType": "ESM_PROCESSING_EVENT",
     "timestamp": 1734567891234,
@@ -131,7 +131,7 @@ If the security group associated with your Kafka cluster doesn't allow inbound t
 
 The following is an example ESM system-level log after enabling [Logging Config](esm-logging.md) for this issue:
 
-```
+```JSON
 {
     "eventType": "ESM_PROCESSING_EVENT",
     "timestamp": 1734567892345,
@@ -148,7 +148,7 @@ The following is an example ESM system-level log after enabling [Logging Config]
 
 You can also check the Kafka consumer INFO log to verify the connection and network configuration. The `brokerEndpoints` field shows the Kafka broker addresses, `securityProtocol` and `saslMechanism` (if applicable) show the authentication method, and the `networkConfig` field shows the IP addresses, subnet CIDR block, and security groups used by the event source mapping. Verify that the security groups listed allow the required inbound traffic:
 
-```
+```JSON
 {
     "eventType": "POLLER_STATUS_EVENT",
     "timestamp": 1734567892456,
@@ -192,7 +192,7 @@ This error indicates that the Kafka cluster doesn't exist or has been deleted. V
 
 The following is an example ESM system-level log after enabling [Logging Config](esm-logging.md) for this issue:
 
-```
+```JSON
 {
     "eventType": "ESM_PROCESSING_EVENT",
     "timestamp": 1734567893456,

@@ -20,6 +20,8 @@ Web applications often have demanding requirements to ensure a consistent, secur
 
 ![Reference architecture diagram for a web application](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/reference-architecture-for-web-application.png)
 
+*Figure 6: Reference architecture for a web application *
+
 1.  **Amazon Cognito user pools** provides user management and identity provider features for your web application. Tokens issued by Amazon Cognito are used to authenticate users when making request to Amazon API Gateway.
 
 1.  **Amazon CloudFront** provides a better user experience by accelerating content delivery of static assets and calls to your backend compute layer. CloudFront brings content closer to clients using AWS’s global Points of Presence (PoPs). CloudFront can also cache API calls to reduce calls to compute backends while also providing optimal network routing for non-cacheable API calls.

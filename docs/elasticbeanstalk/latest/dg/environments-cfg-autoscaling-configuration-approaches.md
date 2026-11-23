@@ -156,7 +156,7 @@ aws elasticbeanstalk create-environment \
 
 **Example**
 
-```
+```json
 ### example options.json ###
 [
     {

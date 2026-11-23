@@ -28,7 +28,7 @@ The following code example shows how to use `Get-ECRLoginCommand`.
 **Tools for PowerShell V4**
 **Example 1: Returns a PSObject containing login information that can be used to authenticate to any Amazon ECR registry that your IAM principal has access to. The credentials and region endpoint required for the call to obtain the authorization token are obtained from the shell defaults (set up by the `Set-AWSCredential/Set-DefaultAWSRegion` or `Initialize-AWSDefaultConfiguration` cmdlets). You can use the Command property with Invoke-Expression to log in to the specified registry or use the returned credentials in other tools requiring login.**
 
-```
+```powershell
 Get-ECRLoginCommand
 ```
 **Output:**
@@ -43,7 +43,7 @@ Command       : docker login --username AWS --password eyJwYXlsb2Fk...kRBVEFfS0V
 ```
 **Example 2: Retrieves a PSObject containing login information that you use as an input to a docker login command. You can specify any Amazon ECR registry URI to authenticate to as long as your IAM principal has access to that registry.**
 
-```
+```powershell
 (Get-ECRLoginCommand).Password | docker login --username AWS --password-stdin 012345678910.dkr.ecr.us-east-1.amazonaws.com
 ```
 +  For API details, see [Get-ECRLoginCommand](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.

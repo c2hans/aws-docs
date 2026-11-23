@@ -9,6 +9,8 @@ Synthesizes UTF-8 input, plain text, or SSML over a bidirectional streaming conn
 This operation serves as a bidirectional counterpart to `SynthesizeSpeech`:
 +  [SynthesizeSpeech](https://docs.aws.amazon.com/polly/latest/dg/API_SynthesizeSpeech.html)
 
+To use a custom voice, specify its ID in `VoiceId`. The voice must be in `active` status. If the voice is in `pending` or `failed` status, the request fails with `ConflictException`. If no custom voice with the specified ID exists in your account and Region, the request fails with `ResourceNotFoundException`. If the custom voice uses a customer managed key, you need `kms:Decrypt` permission on the key. If you disabled the key or scheduled it for deletion, the request fails with `ValidationException`. If you don't have permission to use the key, the request fails with `AccessDeniedException`. If AWS KMS throttles Amazon Polly's request to use the key, the request fails with `ThrottlingException`.
+
 ## Request Syntax
 <a name="API_StartSpeechSynthesisStream_RequestSyntax"></a>
 
@@ -63,7 +65,7 @@ Required: Yes
 The audio frequency, specified in Hz.
 
  ** [VoiceId](#API_StartSpeechSynthesisStream_RequestSyntax) **   <a name="polly-StartSpeechSynthesisStream-request-VoiceId"></a>
-The voice to use in synthesis. To get a list of available voice IDs, use the [DescribeVoices](https://docs.aws.amazon.com/polly/latest/dg/API_DescribeVoices.html) operation.
+The voice ID to use for the synthesis. To get a list of available voice IDs, use the [DescribeVoices](https://docs.aws.amazon.com/polly/latest/dg/API_DescribeVoices.html) operation. To use a custom voice, specify the voice ID that `CreateVoice` returned, for example, `vc-9a8fa85dd3`. You can't specify the ARN of a voice.
 Valid Values: `Aditi | Amy | Astrid | Bianca | Brian | Camila | Carla | Carmen | Celine | Chantal | Conchita | Cristiano | Dora | Emma | Enrique | Ewa | Filiz | Gabrielle | Geraint | Giorgio | Gwyneth | Hans | Ines | Ivy | Jacek | Jan | Joanna | Joey | Justin | Karl | Kendra | Kevin | Kimberly | Lea | Liv | Lotte | Lucia | Lupe | Mads | Maja | Marlene | Mathieu | Matthew | Maxim | Mia | Miguel | Mizuki | Naja | Nicole | Olivia | Penelope | Raveena | Ricardo | Ruben | Russell | Salli | Seoyeon | Takumi | Tatyana | Vicki | Vitoria | Zeina | Zhiyu | Aria | Ayanda | Arlet | Hannah | Arthur | Daniel | Liam | Pedro | Kajal | Hiujin | Laura | Elin | Ida | Suvi | Ola | Hala | Andres | Sergio | Remi | Adriano | Thiago | Ruth | Stephen | Kazuha | Tomoko | Niamh | Sofie | Lisa | Isabelle | Zayd | Danielle | Gregory | Burcu | Jitka | Sabrina | Jasmine | Jihye | Ambre | Beatrice | Florian | Lennart | Lorenzo | Tiffany | Arjun | Carlos | Carolina | Curtis | Hyunduk | Kenneth | Kiara | Leo | Nate | Tina`
 Required: Yes
 
@@ -147,6 +149,22 @@ HTTP Status Code: 400
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** ConflictException **
+The request conflicts with the current state of the resource. For a custom voice, the voice isn't in the status that the operation requires. Check the status with `GetVoice`, and then try again.
+ ** resourceId **
+The ID of the resource that the request conflicts with.
+ ** resourceType **
+The type of the resource that the request conflicts with.
+HTTP Status Code: 409
+
+ ** ResourceNotFoundException **
+Amazon Polly can't find the specified resource. Verify that the resource exists in the AWS account and Region of the request and that its ARN or ID is spelled correctly, and then try again.
+ ** resourceId **
+The identifier of the resource that wasn't found.
+ ** resourceType **
+The type of the resource that wasn't found.
+HTTP Status Code: 404
+
  ** ServiceFailureException **
 An unknown condition has caused a service failure.
 HTTP Status Code: 500
@@ -170,7 +188,11 @@ The input fails to satisfy the constraints specified by the service.
  ** fields **
 The fields that caused the validation error.
  ** reason **
-The reason the request failed validation.
+The reason the request failed validation. If Amazon Polly can't use the AWS KMS key that you specified in `CreateVoice`, `fields` names `CustomerManagedEncryption.KmsKeyArn` and the reason is one of the following:
+kmsKeyNotFound
+No key with the specified ARN exists.
+kmsKeyUnusable
+The key is disabled, scheduled for deletion, or missing its key material, or it isn't a symmetric encryption key.
 HTTP Status Code: 400
 
 ## See Also

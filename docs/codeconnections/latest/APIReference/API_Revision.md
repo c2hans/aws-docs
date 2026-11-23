@@ -31,7 +31,7 @@ Required: Yes
  ** ProviderType **   <a name="codeconnections-Type-Revision-ProviderType"></a>
 The provider type for a revision, such as GitHub.
 Type: String
-Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps`
+Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps | GitHubEnterpriseCloudDataResidency`
 Required: Yes
 
  ** RepositoryName **   <a name="codeconnections-Type-Revision-RepositoryName"></a>

@@ -87,7 +87,7 @@ To view a code example for using the `$dateFromString` command, choose the tab f
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function example() {
@@ -118,7 +118,7 @@ example();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def example():

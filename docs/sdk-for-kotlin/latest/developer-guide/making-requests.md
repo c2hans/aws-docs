@@ -8,7 +8,7 @@ Use a service client to make requests to an AWS service. The AWS SDK for Kotlin 
 
 The following example shows how to create an Amazon DynamoDB [createTable](/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/create-table.html) operation input:
 
-```
+```kotlin
 val ddb = DynamoDbClient.fromEnvironment()
 
 val req = CreateTableRequest {
@@ -53,7 +53,7 @@ Each non-streaming operation on the service client interface has a DSL overload 
 
 Example of creating an Amazon Simple Storage Service (Amazon S3) bucket with the overloaded function:
 
-```
+```kotlin
 s3Client.createBucket {    // this: CreateBucketRequest.Builder
     bucket = newBucketName
 }
@@ -61,7 +61,7 @@ s3Client.createBucket {    // this: CreateBucketRequest.Builder
 
 This is equivalent to:
 
-```
+```kotlin
 val request = CreateBucketRequest {    // this: CreateBucketRequest.Builder
     bucket = newBucketName
 }
@@ -76,7 +76,7 @@ Operations that don’t have required inputs can be called without having to pas
 
 For example, the following three statements are equivalent:
 
-```
+```kotlin
 s3Client.listBuckets(ListBucketsRequest {
   // Construct the request object directly.
 })

@@ -52,7 +52,7 @@ You can also perform this procedure with the API by using the methods in the AWS
 
 **Contents of input.json**
 
-```
+```JSON
 {
     "Description": {{"My LoRaWAN wireless device"}},
     "DestinationName": {{"IoTWirelessDestination"}},

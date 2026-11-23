@@ -14,7 +14,7 @@ You can generate the URL with the HyperPod CLI, which is simpler than creating t
 
 To generate the URL with the HyperPod CLI, run:
 
-```
+```bash
 hyp create ray-dashboard-connection \
   --cluster-name {{my-cluster}} \
   --namespace {{my-namespace}}
@@ -26,7 +26,7 @@ The command returns a short-lived presigned URL. Open it in a browser.
 
 1. Create the connection resource and read the URL from its status.
 
-   ```
+   ```bash
    kubectl create -o jsonpath='{.status.connectionUrl}' -f - <<EOF
    apiVersion: connection.access.sagemaker.amazonaws.com/v1alpha1
    kind: RayDashboardConnection

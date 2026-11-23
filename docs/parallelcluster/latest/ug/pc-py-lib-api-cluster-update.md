@@ -6,7 +6,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 # `update_cluster`
 
-```
+```python
 update_cluster(cluster_name, cluster_configuration, suppress_validators, validation_failure_level, region, force_update, dry_run, wait)
 ```
 

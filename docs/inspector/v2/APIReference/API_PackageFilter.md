@@ -29,9 +29,24 @@ An object that contains details on the name of the package to filter on.
 Type: [StringFilter](API_StringFilter.md) object
 Required: No
 
+ ** purlQualifier **   <a name="inspector2-Type-PackageFilter-purlQualifier"></a>
+An object that contains details on the package URL (purl) qualifier to filter on.
+Type: [PurlQualifierFilter](API_PurlQualifierFilter.md) object
+Required: No
+
  ** release **   <a name="inspector2-Type-PackageFilter-release"></a>
 An object that contains details on the package release to filter on.
 Type: [StringFilter](API_StringFilter.md) object
+Required: No
+
+ ** runtimeReachability **   <a name="inspector2-Type-PackageFilter-runtimeReachability"></a>
+An object that contains details on the runtime reachability status of the package to filter on. For more information, see [Understanding runtime reachability](https://docs.aws.amazon.com/inspector/latest/user/findings-understanding-runtime-reachability.html) in the Amazon Inspector user guide.
+Type: [RuntimeReachabilityFilter](API_RuntimeReachabilityFilter.md) object
+Required: No
+
+ ** runtimeReachabilityReason **   <a name="inspector2-Type-PackageFilter-runtimeReachabilityReason"></a>
+An object that contains details on the runtime reachability reason of the package to filter on. For more information, see [Understanding runtime reachability](https://docs.aws.amazon.com/inspector/latest/user/findings-understanding-runtime-reachability.html) in the Amazon Inspector user guide.
+Type: [RuntimeReachabilityReasonFilter](API_RuntimeReachabilityReasonFilter.md) object
 Required: No
 
  ** sourceLambdaLayerArn **   <a name="inspector2-Type-PackageFilter-sourceLambdaLayerArn"></a>

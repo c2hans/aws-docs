@@ -14,7 +14,7 @@ The following code examples show how to reject an agreement cancellation request
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer.agreementCancellation;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -68,7 +68,7 @@ public class RejectAgreementCancellationRequest {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     RejectAgreementCancellationRequestCommand,
@@ -108,7 +108,7 @@ rejectAgreementCancellationRequest();
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 import sys
 import os
 

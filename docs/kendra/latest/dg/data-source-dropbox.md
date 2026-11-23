@@ -166,7 +166,7 @@ You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/
 It's recommended that you create a refresh access token that never expires in Dropbox rather that relying on a one-time access token that expires after 4 hours. You create an app and a refresh access token in the Dropbox developer console and provide the access token in your secret.
 + **Secret Amazon Resource Name (ARN)**—Provide the Amazon Resource Name (ARN) of an Secrets Manager secret that contains the authentication credentials for your Dropbox account. The secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "appKey": "{{Dropbox app key}}",
       "appSecret": "{{Dropbox app secret}}",

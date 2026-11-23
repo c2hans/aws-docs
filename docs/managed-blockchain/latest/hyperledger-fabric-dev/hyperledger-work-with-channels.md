@@ -468,7 +468,7 @@ In the following examples, the client machine directory `/home/ec2-user` is mapp
    + {{ourchannel}} is the channel ID that will be used for the channel.
    + {{/opt/home/}} for the `--configPath` option is the container location where the `configtx.yaml` file is saved.
 
-   ```
+   ```bash
    docker exec cli configtxgen \
    -outputCreateChannelTx {{/opt/home/ourchannel.pb}} \
    -profile {{TwoOrgChannel}} -channelID {{ourchannel}} \
@@ -495,7 +495,7 @@ In the following examples, the client machine directory `/home/ec2-user` is mapp
 
    1. Using the channel genesis block file created above, each member uses the Hyperledger Fabric [peer channel join](https://hyperledger-fabric.readthedocs.io/en/release-2.2/commands/peerchannel.html#peer-channel-join) command to join their member's peer node to the channel.
 
-      ```
+      ```bash
       docker exec cli peer channel join -b {{/opt/home/ourchannel.block}} \
       -o $ORDERER --cafile /opt/home/managedblockchain-tls-chain.pem --tls
       ```

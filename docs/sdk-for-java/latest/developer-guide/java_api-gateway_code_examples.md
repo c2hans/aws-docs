@@ -30,7 +30,7 @@ The following code example shows how to use `CreateDeployment`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/apigateway#code-examples).
 
-```
+```java
     public static String createNewDeployment(ApiGatewayClient apiGateway, String restApiId, String stageName) {
 
         try {
@@ -61,7 +61,7 @@ The following code example shows how to use `CreateRestApi`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/apigateway#code-examples).
 
-```
+```java
     public static String createAPI(ApiGatewayClient apiGateway, String restApiId, String restApiName) {
 
         try {
@@ -92,7 +92,7 @@ The following code example shows how to use `DeleteDeployment`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/apigateway#code-examples).
 
-```
+```java
     public static void deleteSpecificDeployment(ApiGatewayClient apiGateway, String restApiId, String deploymentId) {
 
         try {
@@ -120,7 +120,7 @@ The following code example shows how to use `DeleteRestApi`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/apigateway#code-examples).
 
-```
+```java
     public static void deleteAPI(ApiGatewayClient apiGateway, String restApiId) {
 
         try {

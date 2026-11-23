@@ -27,7 +27,7 @@ To be able to complete the steps and migrate your environment, you'll need the f
 
  You can create an environment using the detailed steps in [Getting started with Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/get-started.html) in the *Amazon MWAA User Guide*, or by using an CloudFormation template. If you're migrating from an existing Amazon MWAA environment, and used an CloudFormation template to create your old environment, you can change the `AirflowVersion` property to specify the new version.
 
-```
+```json
 MwaaEnvironment:
   Type: AWS::MWAA::Environment
   DependsOn: MwaaExecutionPolicy
@@ -68,7 +68,7 @@ MwaaEnvironment:
 ### Python Script
 <a name="migrating-to-new-mwaa-clone-a-new-environment"></a>
 
-```
+```python
 # This Python file uses the following encoding: utf-8
 '''
 Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
@@ -321,7 +321,7 @@ if __name__ == '__main__':
 
 1.  Create an Amazon S3 bucket using the AWS CLI to store the exported data. Replace the `UUID` and `region` with your information.
 
-   ```
+   ```bash
    aws s3api create-bucket \
    --bucket mwaa-migration-{{{UUID}}}\
    --region {{{region}}}
@@ -340,7 +340,7 @@ Does not apply to migration from a self-managed environment.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -361,7 +361,7 @@ Does not apply to migration from a self-managed environment.
 
 1.  Clone the [mwaa-disaster-recovery](https://github.com/aws-samples/mwaa-disaster-recovery) repository on GitHub, and navigate to the `mwaa-disaster-recovery/assets/dags/mwaa_dr` directory.
 
-   ```
+   ```bash
    git clone https://github.com/aws-samples/mwaa-disaster-recovery.git
    cd mwaa-disaster-recovery/assets/dags/mwaa_dr/
    ```
@@ -403,7 +403,7 @@ Importing metadata can break your new environment if the imported data is corrup
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

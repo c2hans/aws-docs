@@ -123,7 +123,7 @@ Only a user or role in the Organizations management account can configure a memb
 If you want to configure a delegated administrator account using the AWS CLI or one of the AWS SDKs, you can use the following commands:
 + AWS CLI:
 
-  ```
+  ```bash
   $ aws organizations register-delegated-administrator \
       --account-id 123456789012 \
       --service-principal devops-guru.amazonaws.com

@@ -81,7 +81,7 @@ The following example sets the delivery policy to 5 retries.
 
 The JSON format for `AttributeValue` is as follows. For more information on the `DeliveryPolicy` subscription attribute, see [Creating an HTTP/S delivery policy](https://docs.aws.amazon.com/sns/latest/dg/sns-message-delivery-retries.html#creating-delivery-policy).
 
-```
+```json
 {
     "healthyRetryPolicy": {
         "minDelayTarget": <int>,
@@ -114,7 +114,7 @@ https://sns.us-east-2.amazonaws.com/?Action=SetSubscriptionAttributes
 #### Sample Response
 <a name="API_SetSubscriptionAttributes_Example_1_Response"></a>
 
-```
+```xml
 <SetSubscriptionAttributesResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ResponseMetadata>
         <RequestId>a8763b99-33a7-11df-a9b7-05d48da6f042</RequestId>

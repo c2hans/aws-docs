@@ -33,7 +33,7 @@ You can use [resource-based policies](https://docs.aws.amazon.com/IAM/latest/Use
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -64,7 +64,7 @@ You can use [resource-based policies](https://docs.aws.amazon.com/IAM/latest/Use
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

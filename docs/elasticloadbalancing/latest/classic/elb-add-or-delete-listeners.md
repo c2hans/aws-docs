@@ -103,7 +103,7 @@ You can add an HTTPS listener to an existing load balancer.
 
    The following is an example response:
 
-   ```
+   ```json
    {
        "LoadBalancerDescriptions": [
            {

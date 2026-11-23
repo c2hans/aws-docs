@@ -49,7 +49,7 @@ You can use the [setupcli\_data\_integrity\_linux.sh](https://github.com/aws/ama
 ## Amazon Linux 2, RHEL 7.x, and Oracle Linux
 <a name="cent-7"></a>
 
-```
+```sh
 mkdir /tmp/ssm
 curl https://amazon-ssm-{{region}}.s3.{{region}}.amazonaws.com/latest/linux_amd64/ssm-setup-cli -o /tmp/ssm/ssm-setup-cli
 sudo chmod +x /tmp/ssm/ssm-setup-cli
@@ -59,7 +59,7 @@ sudo /tmp/ssm/ssm-setup-cli -register -activation-code "{{activation-code}}" -ac
 ## RHEL 8.x
 <a name="cent-8"></a>
 
-```
+```sh
 mkdir /tmp/ssm
 curl https://amazon-ssm-{{region}}.s3.{{region}}.amazonaws.com/latest/linux_amd64/ssm-setup-cli -o /tmp/ssm/ssm-setup-cli
 sudo chmod +x /tmp/ssm/ssm-setup-cli
@@ -69,7 +69,7 @@ sudo /tmp/ssm/ssm-setup-cli -register -activation-code "{{activation-code}}" -ac
 ## Debian Server
 <a name="deb"></a>
 
-```
+```sh
 mkdir /tmp/ssm
 curl https://amazon-ssm-{{region}}.s3.{{region}}.amazonaws.com/latest/debian_amd64/ssm-setup-cli -o /tmp/ssm/ssm-setup-cli
 sudo chmod +x /tmp/ssm/ssm-setup-cli
@@ -80,7 +80,7 @@ sudo /tmp/ssm/ssm-setup-cli -register -activation-code "{{activation-code}}" -ac
 <a name="ubu"></a>
 + **Using .deb packages**
 
-  ```
+  ```sh
   mkdir /tmp/ssm
   curl https://amazon-ssm-{{region}}.s3.{{region}}.amazonaws.com/latest/debian_amd64/ssm-setup-cli -o /tmp/ssm/ssm-setup-cli
   sudo chmod +x /tmp/ssm/ssm-setup-cli
@@ -92,7 +92,7 @@ sudo /tmp/ssm/ssm-setup-cli -register -activation-code "{{activation-code}}" -ac
 
   On Ubuntu Server 20.04 and 18.04 LTS, SSM Agent installer files, including agent binaries and config files, are stored in the following directory: `/snap/amazon-ssm-agent/current/`. If you make changes to any configuration files in this directory, then you must copy these files from the `/snap` directory to the `/etc/amazon/ssm/` directory. Log and library files haven't changed (`/var/lib/amazon/ssm`, `/var/log/amazon/ssm`).
 
-  ```
+  ```sh
   sudo snap install amazon-ssm-agent --classic
   sudo systemctl stop snap.amazon-ssm-agent.amazon-ssm-agent.service
   sudo /snap/amazon-ssm-agent/current/amazon-ssm-agent -register -code "{{activation-code}}" -id "{{activation-id}}" -region "{{region}}"
@@ -139,13 +139,13 @@ To remove the remaining registration information for the agent, remove the `Iden
 
 On Ubuntu Server nodes where SSM Agent was installed using Snap packages:
 
-```
+```sh
 sudo /snap/amazon-ssm-agent/current/amazon-ssm-agent -register -clear
 ```
 
 On all other Linux installations:
 
-```
+```sh
 amazon-ssm-agent -register -clear
 ```
 
@@ -158,7 +158,7 @@ You can reregister an on-premises server, edge device, or VM using the same acti
 
 1. Run the following command. Be sure to replace the placeholder values with the Activation Code and Activation ID generated when you created a managed-node activation, and with the identifier of the Region you want to download the SSM Agent from.
 
-   ```
+   ```sh
    echo "yes" | sudo /tmp/ssm/ssm-setup-cli -register -activation-code "{{activation-code}}" -activation-id "{{activation-id}}" -region "{{region}}
    ```
 

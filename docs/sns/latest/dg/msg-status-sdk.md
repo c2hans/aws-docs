@@ -11,7 +11,7 @@ The AWS SDKs provide APIs in several languages to set topic attributes for messa
 
 **Example AWS CLI command**
 
-```
+```bash
 aws sns set-topic-attributes \
     --topic-arn arn:aws:sns:us-west-2:123456789012:MyTopic \
     --attribute-name LambdaSuccessFeedbackRoleArn \

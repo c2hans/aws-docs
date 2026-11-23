@@ -30,7 +30,7 @@ The following code example shows how to get started using EventBridge Scheduler.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge Scheduler#code-examples).
 
-```
+```csharp
 public static class HelloScheduler
 {
     static async Task Main(string[] args)
@@ -74,7 +74,7 @@ The following code example shows how to use `CreateSchedule`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge Scheduler#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Creates a new schedule in Amazon EventBridge Scheduler.
     /// </summary>
@@ -156,7 +156,7 @@ The following code example shows how to use `CreateScheduleGroup`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge Scheduler#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Creates a new schedule group in Amazon EventBridge Scheduler.
     /// </summary>
@@ -198,7 +198,7 @@ The following code example shows how to use `DeleteSchedule`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge Scheduler#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Deletes an existing schedule from Amazon EventBridge Scheduler.
     /// </summary>
@@ -245,7 +245,7 @@ The following code example shows how to use `DeleteScheduleGroup`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge Scheduler#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Deletes an existing schedule group from Amazon EventBridge Scheduler.
     /// </summary>
@@ -297,7 +297,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge Scheduler#code-examples).
 Run the scenario.
 
-```
+```csharp
 using System.Text.RegularExpressions;
 using Amazon.CloudFormation;
 using Amazon.CloudFormation.Model;
@@ -950,7 +950,7 @@ public class SchedulerWorkflow
 ```
 Wrapper for service operations.
 
-```
+```csharp
 using Amazon.Scheduler;
 using Amazon.Scheduler.Model;
 using Microsoft.Extensions.Logging;

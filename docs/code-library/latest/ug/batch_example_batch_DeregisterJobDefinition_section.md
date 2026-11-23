@@ -32,7 +32,7 @@ For more information, see [Job definitions](https://docs.aws.amazon.com/batch/la
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Deregisters a job definition asynchronously.
      *
@@ -63,7 +63,7 @@ For more information, see [Job definitions](https://docs.aws.amazon.com/batch/la
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def deregister_job_definition(self, job_definition: str) -> None:
         """
         Deregisters a job definition.

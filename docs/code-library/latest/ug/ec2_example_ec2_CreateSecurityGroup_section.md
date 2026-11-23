@@ -29,7 +29,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an Amazon EC2 security group with a specified name and description.
     /// </summary>
@@ -84,7 +84,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_create_security_group
 #
@@ -160,7 +160,7 @@ function ec2_create_security_group() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -212,7 +212,7 @@ function aws_cli_error_log() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Create a security group.
 /*!
   \param groupName: A security group name.
@@ -299,7 +299,7 @@ For more information, see [Creating, configuring, and deleting Amazon EC2 securi
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Creates a new security group asynchronously with the specified group name, description, and VPC ID. It also
      * authorizes inbound traffic on ports 80 and 22 from the specified IP address.
@@ -367,7 +367,7 @@ For more information, see [Creating, configuring, and deleting Amazon EC2 securi
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { CreateSecurityGroupCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -403,7 +403,7 @@ export const main = async ({ groupName, description }) => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun createEC2SecurityGroup(
     groupNameVal: String?,
     groupDescVal: String?,
@@ -458,7 +458,7 @@ suspend fun createEC2SecurityGroup(
 **Tools for PowerShell V4**
 **Example 1: This example creates a security group for the specified VPC.**
 
-```
+```powershell
 New-EC2SecurityGroup -GroupName my-security-group -Description "my security group" -VpcId vpc-12345678
 ```
 **Output:**
@@ -468,7 +468,7 @@ sg-12345678
 ```
 **Example 2: This example creates a security group for EC2-Classic.**
 
-```
+```powershell
 New-EC2SecurityGroup -GroupName my-security-group -Description "my security group"
 ```
 **Output:**
@@ -481,7 +481,7 @@ sg-45678901
 **Tools for PowerShell V5**
 **Example 1: This example creates a security group for the specified VPC.**
 
-```
+```powershell
 New-EC2SecurityGroup -GroupName my-security-group -Description "my security group" -VpcId vpc-12345678
 ```
 **Output:**
@@ -491,7 +491,7 @@ sg-12345678
 ```
 **Example 2: This example creates a security group for EC2-Classic.**
 
-```
+```powershell
 New-EC2SecurityGroup -GroupName my-security-group -Description "my security group"
 ```
 **Output:**
@@ -507,7 +507,7 @@ sg-45678901
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ec2#code-examples).
 
-```
+```python
 class SecurityGroupWrapper:
     """Encapsulates Amazon Elastic Compute Cloud (Amazon EC2) security group actions."""
 
@@ -564,7 +564,7 @@ class SecurityGroupWrapper:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 # This code example does the following:
 # 1. Creates an Amazon Elastic Compute Cloud (Amazon EC2) security group.
 # 2. Adds inbound rules to the security group.
@@ -819,7 +819,7 @@ run_me if $PROGRAM_NAME == __FILE__
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     pub async fn create_security_group(
         &self,
         name: &str,
@@ -859,7 +859,7 @@ run_me if $PROGRAM_NAME == __FILE__
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->createsecuritygroup(                 " oo_result is returned for testing purposes. "
           iv_description = 'Security group example'
@@ -879,7 +879,7 @@ run_me if $PROGRAM_NAME == __FILE__
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Create a new security group.

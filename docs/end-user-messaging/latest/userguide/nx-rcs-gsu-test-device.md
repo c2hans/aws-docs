@@ -29,7 +29,7 @@ After you add a test device, the tester invitation is not sent immediately. The 
 
 Use the `CreateVerifiedDestinationNumber` API with the `--rcs-agent-id` parameter to register a test device for your AWS RCS Agent:
 
-```
+```bash
 aws pinpoint-sms-voice-v2 create-verified-destination-number \
     --destination-phone-number +12065550100 \
     --rcs-agent-id rcs-a1b2c3d4

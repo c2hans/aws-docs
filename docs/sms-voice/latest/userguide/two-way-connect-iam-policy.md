@@ -25,7 +25,7 @@ The following is the **permission policy** for the IAM role to allow for publish
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -52,7 +52,7 @@ The following is the **trust policy** for the IAM role, make the following chang
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

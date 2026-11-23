@@ -27,7 +27,7 @@ The following code example shows how to use `CreateTopic`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sns#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sns->createtopic( iv_name = iv_topic_name ). " oo_result is returned for testing purposes. "
         MESSAGE 'SNS topic created' TYPE 'I'.
@@ -45,7 +45,7 @@ The following code example shows how to use `DeleteTopic`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sns#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_sns->deletetopic( iv_topicarn = iv_topic_arn ).
         MESSAGE 'SNS topic deleted.' TYPE 'I'.
@@ -63,7 +63,7 @@ The following code example shows how to use `GetTopicAttributes`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sns#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sns->gettopicattributes( iv_topicarn = iv_topic_arn ). " oo_result is returned for testing purposes. "
         DATA(lt_attributes) = oo_result->get_attributes( ).
@@ -82,7 +82,7 @@ The following code example shows how to use `ListSubscriptions`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sns#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sns->listsubscriptions( ).                " oo_result is returned for testing purposes. "
         DATA(lt_subscriptions) = oo_result->get_subscriptions( ).
@@ -101,7 +101,7 @@ The following code example shows how to use `ListTopics`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sns#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sns->listtopics( ).            " oo_result is returned for testing purposes. "
         DATA(lt_topics) = oo_result->get_topics( ).
@@ -120,7 +120,7 @@ The following code example shows how to use `Publish`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sns#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sns->publish(              " oo_result is returned for testing purposes. "
           iv_topicarn = iv_topic_arn
@@ -132,7 +132,7 @@ The following code example shows how to use `Publish`.
 ```
 Publish a message with attributes to a topic.
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sns->publish(              " oo_result is returned for testing purposes. "
           iv_topicarn = iv_topic_arn
@@ -145,7 +145,7 @@ Publish a message with attributes to a topic.
 ```
 Publish a multi-format message to a topic.
 
-```
+```sap-abap
     " Build JSON message structure for multi-format message
     DATA(lv_json_message) = |\{ "default": "{ iv_default_message }", "sms": "{ iv_sms_message }", "email": "{ iv_email_message }" \}|.
 
@@ -170,7 +170,7 @@ The following code example shows how to use `SetSubscriptionAttributes`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sns#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_sns->setsubscriptionattributes(
             iv_subscriptionarn = iv_subscription_arn
@@ -191,7 +191,7 @@ The following code example shows how to use `SetTopicAttributes`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sns#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_sns->settopicattributes(
             iv_topicarn = iv_topic_arn
@@ -213,7 +213,7 @@ The following code example shows how to use `Subscribe`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sns->subscribe(                      "oo_result is returned for testing purposes."
                 iv_topicarn = iv_topic_arn
@@ -237,7 +237,7 @@ The following code example shows how to use `Unsubscribe`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sns#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_sns->unsubscribe( iv_subscriptionarn = iv_subscription_arn ).
         MESSAGE 'Subscription deleted.' TYPE 'I'.
@@ -261,7 +261,7 @@ The following code example shows how to create and publish to a FIFO Amazon SNS 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sns#code-examples).
 Create a FIFO topic, subscribe an Amazon SQS FIFO queue to the topic, and publish a message to an Amazon SNS topic.
 
-```
+```sap-abap
     " Creates a FIFO topic. "
     DATA lt_tpc_attributes TYPE /aws1/cl_snstopicattrsmap_w=>tt_topicattributesmap.
     DATA ls_tpc_attributes TYPE /aws1/cl_snstopicattrsmap_w=>ts_topicattributesmap_maprow.
@@ -331,7 +331,7 @@ The following code example shows how to publish SMS messages using Amazon SNS.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sns#code-examples).
 
-```
+```sap-abap
     " iv_phone_number = '+12065550101' - Phone number in E.164 format
     TRY.
         oo_result = lo_sns->publish(              " oo_result is returned for testing purposes. "

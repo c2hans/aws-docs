@@ -31,7 +31,7 @@ To initialize your application:
 
 1. At the project level of your **build.gradle** file, add the following maven repository to access the MapLibre packages for Android:
 
-   ```
+   ```java
    allprojects {
        repositories {
            // Retain your existing repositories
@@ -49,7 +49,7 @@ To initialize your application:
 
 To configure your application with your resources and AWS Region:   Create `app/src/main/res/values/configuration.xml`.   Enter the names and identifiers of your resource the AWS Region they were created in:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="identityPoolId">{{us-east-1:54f2ba88-9390-498d-aaa5-0d97fb7ca3bd}}</string>
@@ -65,7 +65,7 @@ Edit `app/src/main/res/layout/activity_main.xml`:
 + Add a `MapView`, which renders the map. This will also set the map's initial center point.
 + Add a `TextView`, which displays attribution.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -107,7 +107,7 @@ You must provide word mark or text attribution for each data provider that you u
 
 Create a class named `SigV4Interceptor` to intercept AWS requests and sign them using [Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html). This will be registered with the HTTP client used to fetch map resources when the Main Activity is created.
 
-```
+```java
 package aws.location.demo.okhttp
 
 import com.amazonaws.DefaultRequest
@@ -225,7 +225,7 @@ The Main Activity is responsible for initializing the views that will be display
 
  `MainActivity` is also responsible for forwarding life cycle events to the map view, allowing it to preserve the active viewport between invocations.
 
-```
+```java
 package aws.location.demo.maplibre
 
 import android.os.Bundle

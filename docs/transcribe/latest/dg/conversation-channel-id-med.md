@@ -58,7 +58,7 @@ To use the AWS Management Console to enable channel identification in your batch
 
 The following is an example request using the AWS SDK for Python (Boto3).
 
-```
+```python
 from __future__ import print_function
 import time
 import boto3
@@ -104,7 +104,7 @@ print(status)
 
   The following is the code of `example-start-command.json`.
 
-  ```
+  ```json
   {
         "MedicalTranscriptionJobName": "{{my-first-med-transcription-job}}",
         "Media": {
@@ -124,7 +124,7 @@ print(status)
 
 The following code shows the transcription output for an audio file that has a conversation on two channels.
 
-```
+```json
 {
   "jobName": "{{job id}}",
   "accountId": "111122223333",
@@ -266,7 +266,7 @@ For more information about WebSocket requests, see [Setting up a WebSocket strea
 
 The output of a streaming transcription is the same for HTTP/2 and WebSocket requests. The following is an example output.
 
-```
+```json
 {
     "resultId": "XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXX",
     "startTime": 0.11,

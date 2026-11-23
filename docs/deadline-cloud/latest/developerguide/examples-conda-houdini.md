@@ -15,6 +15,6 @@ The [Render USD scenes with Houdini Husk on Deadline Cloud](examples-jb-houdini-
 
 Submit the build:
 
-```
+```bash
 ./submit-package-job houdini-21.0
 ```

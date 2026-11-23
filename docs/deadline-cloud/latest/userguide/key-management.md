@@ -49,7 +49,7 @@ The following policy statement grants the necessary permissions for the `CreateF
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -89,7 +89,7 @@ The following policy statement grants the necessary permissions for read-only op
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -128,7 +128,7 @@ The following policy statement grants the necessary permissions for the `CreateF
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -165,7 +165,7 @@ Deadline Cloud generates a `CreateGrant` event when it sets up access to your ke
 
 The following example CloudTrail event occurs when grants are created, typically when you call the `CreateFarm`, `CreateMonitor`, or `CreateFleet` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

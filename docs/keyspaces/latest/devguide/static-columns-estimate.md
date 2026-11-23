@@ -18,13 +18,13 @@ partition key columns + static columns + metadata = total encoded size of static
 
 Consider the following example of a table where all columns are of type integer. The table has two partition key columns, two clustering columns, one regular column, and one static column.
 
-```
+```sql
 CREATE TABLE mykeyspace.mytable(pk_col1 int, pk_col2 int, ck_col1 int, ck_col2 int, reg_col1 int, static_col1 int static, primary key((pk_col1, pk_col2),ck_col1, ck_col2));
 ```
 
 In this example, we calculate the size of static data of the following statement:
 
-```
+```sql
 INSERT INTO mykeyspace.mytable (pk_col1, pk_col2, static_col1) values(1,2,6);
 ```
 
@@ -71,13 +71,13 @@ To calculate the total size of an update of static and nonstatic data in the sam
 
 Consider the following example of a table where all columns are of type integer. The table has two partition key columns, two clustering columns, one regular column, and one static column.
 
-```
+```sql
 CREATE TABLE mykeyspace.mytable(pk_col1 int, pk_col2 int, ck_col1 int, ck_col2 int, reg_col1 int, static_col1 int static, primary key((pk_col1, pk_col2),ck_col1, ck_col2));
 ```
 
 In this example, we calculate the size of data when we write a row to the table, as shown in the following statement:
 
-```
+```sql
 INSERT INTO mykeyspace.mytable (pk_col1, pk_col2, ck_col1, ck_col2, reg_col1, static_col1) values(2,3,4,5,6,7);
 ```
 

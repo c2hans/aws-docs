@@ -83,7 +83,7 @@ To create the proper permissions on an Amazon S3 bucket in an AWS Region, take t
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "Policy15397346",
@@ -123,7 +123,7 @@ Now you've created your S3 bucket and granted MemoryDB permissions to access it.
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [{

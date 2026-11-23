@@ -30,7 +30,7 @@ If the attachment is currently associated with a route table, disassociate it fi
 **To disassociate a route table using the AWS CLI**
 Use the [disassociate-transit-gateway-route-table](https://docs.aws.amazon.com/cli/latest/reference/ec2/disassociate-transit-gateway-route-table.html) command.
 
-```
+```bash
 # Disassociate existing route table (if applicable)
 aws ec2 disassociate-transit-gateway-route-table \
     --transit-gateway-attachment-id tgw-attach-0def6EXAMPLE \
@@ -39,7 +39,7 @@ aws ec2 disassociate-transit-gateway-route-table \
 
 Example response. The association transitions to the `disassociating` state:
 
-```
+```json
 {
     "Association": {
         "TransitGatewayRouteTableId": "tgw-rtb-CURRENTEXAMPLE",
@@ -75,7 +75,7 @@ The association **State** transitions from **Associating** to **Associated**. Yo
 **To associate a policy table using the AWS CLI**
 Use the [associate-transit-gateway-policy-table](https://docs.aws.amazon.com/cli/latest/reference/ec2/associate-transit-gateway-policy-table.html) command.
 
-```
+```bash
 # Associate the policy table
 aws ec2 associate-transit-gateway-policy-table \
     --transit-gateway-policy-table-id tgw-ptb-0ca78a549EXAMPLE \
@@ -84,7 +84,7 @@ aws ec2 associate-transit-gateway-policy-table \
 
 Example response. The association starts in the `associating` state and transitions to `associated`:
 
-```
+```json
 {
     "Association": {
         "TransitGatewayPolicyTableId": "tgw-ptb-0ca78a549EXAMPLE",
@@ -100,7 +100,7 @@ Example response. The association starts in the `associating` state and transiti
 
 You can use resource-level conditions to restrict which attachments or policy tables a principal can act on. For example, the following policy allows a user to associate policy tables only with attachments tagged `network: Prod Network`:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{

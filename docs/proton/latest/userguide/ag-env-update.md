@@ -128,7 +128,7 @@ Standard provisioning is only supported by environments that provision with Clou
 
 Run the following command to update your environment:
 
-```
+```sh
 $ aws proton update-environment \
         --name "{{MySimpleEnv}}" \
         --deployment-type "{{MINOR_VERSION}}" \
@@ -140,7 +140,7 @@ $ aws proton update-environment \
 
 Response:
 
-```
+```json
 {
     "environment": {
         "arn": "arn:aws:proton:region-id:123456789012:environment/MySimpleEnv",
@@ -159,14 +159,14 @@ Response:
 
 Run the following command to get and confirm the status:
 
-```
+```sh
 $ aws proton get-environment \
         --name "{{MySimpleEnv}}"
 ```
 
 Response:
 
-```
+```json
 {
     "environment": {
         "arn": "arn:aws:proton:region-id:123456789012:environment/MySimpleEnv",
@@ -277,7 +277,7 @@ Self-managed provisioning is only supported by environments that provision with 
 
 1. Run the following command to update your environment:
 
-   ```
+   ```sh
    $ aws proton update-environment \
        --name "{{pr-environment}}" \
        --deployment-type "{{MINOR_VERSION}}" \
@@ -289,7 +289,7 @@ Self-managed provisioning is only supported by environments that provision with 
 
    Response:
 
-   ```
+   ```json
    {
        "environment": {
            "arn": "arn:aws:proton:region-id:123456789012:environment/pr-environment",
@@ -313,14 +313,14 @@ Self-managed provisioning is only supported by environments that provision with 
 
 1. Run the following command to get and confirm the status:
 
-   ```
+   ```sh
    $ aws proton get-environment \
        --name "{{pr-environment}}"
    ```
 
    Response:
 
-   ```
+   ```json
    {
        "environment": {
            "arn": "arn:aws:proton:region-id:123456789012:environment/pr-environment",
@@ -350,7 +350,7 @@ Self-managed provisioning is only supported by environments that provision with 
 
 1. Provide provisioning status to AWS Proton.
 
-   ```
+   ```sh
    $ aws proton notify-resource-deployment-status-change \
        --resource-arn "arn:aws:proton:{{region-id}}:{{123456789012}}:environment/{{pr-environment}}" \
        --status "{{SUCCEEDED}}"
@@ -403,14 +403,14 @@ A wait condition is included in the template used for this example so that the c
 
 Run the following command to cancel the update:
 
-```
+```sh
 $ aws proton cancel-environment-deployment \
         --environment-name "{{MySimpleEnv}}"
 ```
 
 Response:
 
-```
+```json
 {
     "environment": {
         "arn": "arn:aws:proton:region-id:123456789012:environment/MySimpleEnv",
@@ -430,14 +430,14 @@ Response:
 
 Run the following command to get and confirm the status:"
 
-```
+```sh
 $ aws proton get-environment \
         --name "{{MySimpleEnv}}"
 ```
 
 Response:
 
-```
+```json
 {
     "environment": {
         "arn": "arn:aws:proton:region-id:123456789012:environment/MySimpleEnv",

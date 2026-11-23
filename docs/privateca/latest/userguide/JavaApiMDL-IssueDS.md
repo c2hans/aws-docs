@@ -9,7 +9,7 @@ This Java sample shows how to use the [BlankEndEntityCertificate\_APIPassthrough
 The example calls the following AWS Private CA API action:
 + [IssueCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_IssueCertificate.html)
 
-```
+```java
 package com.amazonaws.samples.mdl;
 
 import com.amazonaws.auth.AWSCredentials;

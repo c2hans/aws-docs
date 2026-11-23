@@ -17,12 +17,12 @@ The following examples delete an Amazon S3 compatible storage on Snowball Edge b
 
 **Example of deleting a bucket**
 
-```
+```bash,sh,zsh
 aws s3api delete-bucket --bucket {{amzn-s3-demo-bucket}} --endpoint-url https://{{s3api-endpoint-ip}} --profile {{your-profile}}
 ```
 For more information about this command, see [delete-bucket](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-bucket.html) in the AWS CLI Command Reference.
 
-```
+```bash,sh,zsh
 aws s3control delete-bucket --account-id {{123456789012}} --bucket amzn-s3-demo-bucket --endpoint-url https://{{s3ctrlapi-endpoint-ip}} --profile {{your-profile}}
 ```
 For more information about this command, see [delete-bucket](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/delete-bucket.html) in the AWS CLI Command Reference.

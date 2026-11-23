@@ -103,7 +103,7 @@ If none of the [active images](#build-curated-images) supplied by CodeCatalyst i
 
   The {{setup-script}} instruction would then run the following script to install the Node package manager (npm):
 
-  ```
+  ```shell
   #!/usr/bin/env bash
   echo "Setting up environment"
 
@@ -239,7 +239,7 @@ The following examples show how to assign a custom runtime environment Docker im
 
 The following example shows how to use a custom runtime environment Docker image to add support for Node.js 18 with [Amazon ECR](https://gallery.ecr.aws/amazonlinux/amazonlinux).
 
-```
+```yaml
 Configuration:
   Container:
     Registry: ECR
@@ -251,7 +251,7 @@ Configuration:
 
 The following example shows how to use a custom runtime environment Docker image to add support for Node.js 18 with [Docker Hub](https://hub.docker.com/_/node).
 
-```
+```yaml
 Configuration:
   Container:
     Registry: DockerHub

@@ -59,7 +59,7 @@ The following diagram illustrates another common configuration: a public access 
 
 Consider a `GET` request to `movies/_search?q=thor`. Does the user have permissions to search the `movies` index? If so, does the user have permissions to see *all* documents within it? Should the response omit or anonymize any fields? For the master user, the response might look like this:
 
-```
+```json
 {
   "hits": {
     "total": 7,
@@ -98,7 +98,7 @@ Consider a `GET` request to `movies/_search?q=thor`. Does the user have permissi
 
 If a user with more limited permissions issues the exact same request, the response might look like this:
 
-```
+```json
 {
   "hits": {
     "total": 2,
@@ -123,7 +123,7 @@ If a user with more limited permissions issues the exact same request, the respo
 
 The response has fewer hits and fewer fields for each hit. Also, the `release_date` field is anonymized. If a user with no permissions makes the same request, the cluster returns an error:
 
-```
+```json
 {
   "error": {
     "root_cause": [{
@@ -375,7 +375,7 @@ Fine-grained access control has several important limitations:
 
   To minimize the issue, [don't include sensitive information in index names](indexing.md#indexing-naming). To deny all access to SQL, add the following element to your domain access policy:
 
-  ```
+  ```json
   {
     "Effect": "Deny",
     "Principal": {
@@ -418,7 +418,7 @@ You designate a master user when you create a domain, but if you want, you can u
 ![Role mapping page](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/new-master-users.png)
 + To use the REST API, send the following requests:
 
-  ```
+  ```json
   PUT _plugins/_security/api/rolesmapping/all_access
   {
     "backend_roles": [
@@ -433,7 +433,7 @@ You designate a master user when you create a domain, but if you want, you can u
   }
   ```
 
-  ```
+  ```json
   PUT _plugins/_security/api/rolesmapping/security_manager
   {
     "backend_roles": [
@@ -462,7 +462,7 @@ Then use that IAM role to send a signed request to the domain, as outlined in [R
 
 If you use [other AWS services](integrations.md) with OpenSearch Service, you must provide the IAM roles for those services with appropriate permissions. For example, Firehose delivery streams often use an IAM role called `firehose_delivery_role`. In Dashboards, [create a role for fine-grained access control](#fgac-roles), and [map the IAM role to it](#fgac-mapping). In this case, the new role needs the following permissions:
 
-```
+```json
 {
   "cluster_permissions": [
     "cluster_composite_ops",
@@ -490,7 +490,7 @@ The fine-grained access control REST API differs slightly depending on your Open
 
 On Elasticsearch 6.*x*, requests to create users look like this:
 
-```
+```json
 PUT _opendistro/_security/api/user/new-user
 {
   "password": "some-password",
@@ -500,7 +500,7 @@ PUT _opendistro/_security/api/user/new-user
 
 On OpenSearch or Elasticsearch 7.x, requests look like this (change `_plugins` to `_opendistro` if using Elasticsearch):
 
-```
+```json
 PUT _plugins/_security/api/user/new-user
 {
   "password": "some-password",
@@ -510,7 +510,7 @@ PUT _plugins/_security/api/user/new-user
 
 Further, tenants are properties of roles in Elasticsearch 6.*x*:
 
-```
+```json
 GET _opendistro/_security/api/roles/all_access
 
 {
@@ -531,7 +531,7 @@ GET _opendistro/_security/api/roles/all_access
 
 In OpenSearch and Elasticsearch 7.x, they're objects with their own URI (change `_plugins` to `_opendistro` if using Elasticsearch)::
 
-```
+```json
 GET _plugins/_security/api/tenants
 
 {

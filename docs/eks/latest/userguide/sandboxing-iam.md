@@ -15,7 +15,7 @@ The following IAM permissions are required for specific Nitro Sandboxes features
 
 The pod’s IAM role (through EKS Pod Identity) must have `kms:Decrypt` permission on the KMS key used to encrypt the image layers. The Nitro Sandbox does not use IRSA credentials for this call:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -46,7 +46,7 @@ Both actions are required. If either call fails, or returns a permission error, 
 
 To release KMS-protected secrets only to attested sandboxes, add `kms:RecipientAttestation:PCR<PCR_ID>` conditions to your KMS key policy. Gate on PCR17 (the Cedar policy hash) set to the predicted value from `eks-nitro-sandbox-genpolicy` (included in the signed runtime binaries; see [Download and verify the runtime binaries](sandboxing-download-binaries.md)), and also add a `kms:RecipientAttestation:PCR8:ServiceName` condition set to `eks.amazonaws.com` so that only attestations from the EKS Nitro Sandbox service are accepted. Gating on PCR17 alone is not sufficient:
 
-```
+```json
 {
   "Effect": "Allow",
   "Principal": {

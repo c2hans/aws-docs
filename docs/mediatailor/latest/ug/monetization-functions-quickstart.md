@@ -40,7 +40,7 @@ A success notification confirms the function was created, and you are redirected
 
 The resulting function configuration is:
 
-```
+```JSON
 {
     "FunctionId": "myFirstFunction",
     "FunctionType": "CUSTOM_OUTPUT",
@@ -73,7 +73,7 @@ Map the function to a lifecycle hook on your playback configuration. The mapping
 
 This attaches `myFirstFunction` to the [Pre-session initialization](monetization-functions-hooks-pre-session.md) lifecycle hook. The resulting function mapping is:
 
-```
+```JSON
 {
     "FunctionMapping": {
         "PRE_SESSION_INITIALIZATION": "myFirstFunction"
@@ -99,7 +99,7 @@ If the function fails, MediaTailor emits error log events to Manifest Logs by de
 
 The following example shows a `PRE_SESSION_INIT_FUNCTION_ERROR` event for a syntax error in the function expression:
 
-```
+```JSON
 {
     "eventTimestamp": "2024-01-01T12:00:00.076000000Z",
     "eventType": "PRE_SESSION_INIT_FUNCTION_ERROR",

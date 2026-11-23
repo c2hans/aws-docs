@@ -8,13 +8,13 @@ You can use the AWS CLI to find the ARN for an AWS PCS cluster secret. Enter the
 + Replace `{{region}}` with the AWS Region to create your cluster in, such as `us-east-1`.
 + Replace `{{my-cluster}}` with the name or identifier for your cluster.
 
-```
+```cmd
 aws pcs get-cluster --region {{region}} --cluster-identifier {{my-cluster}}
 ```
 
 The following example output is from the `get-cluster` command. You can use `secretArn` and `secretVersion` together to get the secret.
 
-```
+```json
 {
     "cluster": {
         "name": "get-started",

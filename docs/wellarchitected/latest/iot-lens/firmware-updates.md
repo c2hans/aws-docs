@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/firmware
 
 ![Updating firmware on devices](https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/images/image6.png)
 
+*Updating firmware on devices*
+
 1.  A device subscribes to the IoT job notification topic $aws/things/<<thingName>>/jobs/notify-next upon which IoT job notification messages will arrive.
 
 1.  A device publishes a message to $aws/things/<<thingName>>/jobs/start-next to start the next job and get the next job, its job document, and other details including states saved in statusDetails.

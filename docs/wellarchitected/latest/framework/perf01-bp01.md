@@ -39,6 +39,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf01-
 
 ![Flow diagram showing an iterative process for validating performance requirements against business needs.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/bp01.png)
 
+*Example process for validating performance requirements against business needs*
+
 ### Implementation steps
 <a name="implementation-steps"></a>
 

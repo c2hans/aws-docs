@@ -87,7 +87,7 @@ The following complex data type example demonstrates how signals and data types 
 
 **Example complex data type**
 
-```
+```json
 {
   "Vehicle": {
     "type": "branch"

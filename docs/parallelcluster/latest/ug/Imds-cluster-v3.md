@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 **(Optional)** Specifies the global instance metadata service (IMDS) configuration.
 
-```
+```yaml
 Imds:
   ImdsSupport: {{string}}
 ```

@@ -28,7 +28,7 @@ For boards using any other TCP/IP stack, we provide stub definitions of the metr
 
 For ESP32, the default lwIP configuration does not use core locking and therefore the demo will use stubbed metrics. If you want to use the reference lwIP metrics collection implementation, define the following macros in `lwiopts.h`:
 
-```
+```c
 #define LINK_SPEED_OF_YOUR_NETIF_IN_BPS 0
 #define LWIP_TCPIP_CORE_LOCKING         1
 #define LWIP_STATS                      1

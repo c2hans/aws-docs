@@ -32,14 +32,14 @@ Because the Pod template doesn’t change, Argo CD, Flux, and other tools that m
 
 This also means `kubectl get deployment` shows the values you declared, not the values your Pods run with. The following command shows what a Pod runs with. Replace {{my-pod}} and {{my-namespace}} with your values.
 
-```
+```bash
 kubectl get pod {{my-pod}} -n {{my-namespace}} \
   -o jsonpath='{range .status.containerStatuses[*]}{.name}{"\t"}{.resources}{"\n"}{end}'
 ```
 
 The following command shows the recommendation and whether it’s applied, from the workload’s `ResourceOptimization`. Its name is the workload’s name followed by `-deploy` for a Deployment or `-sts` for a StatefulSet. A very long name is shortened, so if you can’t find it, list them with `kubectl get ro --all-namespaces`. Replace {{my-app-deploy}} and {{my-namespace}} with your values.
 
-```
+```bash
 kubectl get ro {{my-app-deploy}} -n {{my-namespace}} -o yaml
 ```
 
@@ -50,7 +50,7 @@ When you opt a workload out, set its policy to `Recommend`, or delete the policy
 
 To return Pods to the values in the Pod template, restart the workload after you stop. For example, the following command restarts a Deployment. Replace {{my-app}} and {{my-namespace}} with your values. For a StatefulSet, replace `deployment` with `statefulset`.
 
-```
+```bash
 kubectl rollout restart deployment {{my-app}} -n {{my-namespace}}
 ```
 
@@ -73,14 +73,14 @@ The kubelet applies a resize only if the Pod’s node has room for it. Kubernete
 
 The following command lists a workload’s conditions. Replace {{my-app-deploy}} and {{my-namespace}} with your values.
 
-```
+```bash
 kubectl get ro {{my-app-deploy}} -n {{my-namespace}} \
   -o jsonpath='{range .status.conditions[*]}{.type}{"\t"}{.status}{"\t"}{.reason}{"\t"}{.message}{"\n"}{end}'
 ```
 
 The following command lists the `ResizeInfeasible` events for Pods whose node can never hold their resize. Replace {{my-namespace}} with your namespace.
 
-```
+```bash
 kubectl get events -n {{my-namespace}} --field-selector reason=ResizeInfeasible
 ```
 
@@ -160,7 +160,7 @@ Give each container a readiness probe or a startup probe that passes only once t
 
 The following YAML example declares 2 CPUs for startup on a Java service that needs about 400 millicores once it’s running. Its readiness probe passes only after the application has started. Replace the image and the probe path with your own.
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -203,13 +203,13 @@ The annotation goes on the Deployment or StatefulSet itself, not on the Pod temp
 
 The following command shows the `startupShrink` field in the `ResourceOptimization` status, which counts the workload’s Ready Pods:
 
-```
+```bash
 kubectl get ro orders-deploy -n shop -o jsonpath='{.status.startupShrink}'
 ```
 
 An example output is as follows.
 
-```
+```json
 {"blockedPods":0,"eligiblePods":3,"matchingPods":3,"pendingPods":0}
 ```
 +  `eligiblePods`: Ready Pods whose startup CPU is to be handed back. It equals `matchingPods` plus `pendingPods` plus `blockedPods`.

@@ -24,7 +24,7 @@ Retrieving generation results is a two-step process: first check the generation 
 
 Start a policy generation:
 
-```
+```bash
 aws bedrock-agentcore-control start-policy-generation \
   --policy-engine-id MyEngine-abc123 \
   --name RefundPolicy \
@@ -38,7 +38,7 @@ aws bedrock-agentcore-control start-policy-generation \
 
 The response includes a policy generation ID and status:
 
-```
+```json
 {
   "policyGenerationId": "RefundPolicy-def456",
   "policyEngineId": "MyEngine-abc123",
@@ -48,7 +48,7 @@ The response includes a policy generation ID and status:
 
 Check the generation status using `get-policy-generation` :
 
-```
+```bash
 aws bedrock-agentcore-control get-policy-generation \
   --policy-engine-id MyEngine-abc123 \
   --policy-generation-id RefundPolicy-def456
@@ -56,7 +56,7 @@ aws bedrock-agentcore-control get-policy-generation \
 
 The response shows the overall generation status:
 
-```
+```json
 {
   "policyGenerationId": "RefundPolicy-def456",
   "status": "GENERATED",
@@ -66,7 +66,7 @@ The response shows the overall generation status:
 
 Once the status is `GENERATED` , list the generated assets to retrieve the policies and their per-policy validation findings:
 
-```
+```bash
 aws bedrock-agentcore-control list-policy-generation-assets \
   --policy-engine-id MyEngine-abc123 \
   --policy-generation-id RefundPolicy-def456
@@ -74,7 +74,7 @@ aws bedrock-agentcore-control list-policy-generation-assets \
 
 The response includes each generated policy with its Cedar definition and validation findings:
 
-```
+```json
 {
   "policyGenerationAssets": [
     {
@@ -117,7 +117,7 @@ Each generated policy asset includes a `findings` array of `Finding` objects, ea
 
 A policy that passed validation and analysis:
 
-```
+```json
 {
   "findings": [
     {
@@ -129,7 +129,7 @@ A policy that passed validation and analysis:
 
 A policy flagged as overly permissive:
 
-```
+```json
 {
   "findings": [
     {
@@ -142,7 +142,7 @@ A policy flagged as overly permissive:
 
 A policy that could not be generated from the natural language input:
 
-```
+```json
 {
   "findings": [
     {

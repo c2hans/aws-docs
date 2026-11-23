@@ -18,7 +18,7 @@ Failed mutual authentication attempts are not logged.
 
 A connection log entry is a JSON-formatted blob of key-value pairs. The following is an example connection log entry.
 
-```
+```json
 {
     "connection-log-type": "connection-attempt",
     "connection-attempt-status": "successful",
@@ -104,7 +104,7 @@ You can configure the following option to control the content of your connection
 
 When an authorization policy is configured, connection log entries record the authorization decision. The following example shows a successful connection that was permitted by the authorization policy.
 
-```
+```json
 {
   "connection-log-type": "connection-attempt",
   "connection-attempt-status": "successful",
@@ -142,7 +142,7 @@ When an authorization policy is configured, connection log entries record the au
 
 The following example shows a connection that was denied by the authorization policy.
 
-```
+```json
 {
   "connection-log-type": "connection-attempt",
   "connection-attempt-status": "failed",
@@ -182,7 +182,7 @@ The following example shows a connection that was denied by the authorization po
 
 The following example shows a session that was terminated when a periodic re-evaluation of the authorization policy no longer met the requirements.
 
-```
+```json
 {
   "connection-log-type": "connection-reset",
   "connection-attempt-status": "NA",

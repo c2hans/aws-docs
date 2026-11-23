@@ -41,7 +41,7 @@ After completing the configuration:
 
 1. Verify TLS version using a tool like SSL Labs or `openssl`:
 
-   ```
+   ```bash
    openssl s_client -connect your-custom-domain:443
    ```
 

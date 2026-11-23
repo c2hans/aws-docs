@@ -50,7 +50,7 @@ To grant access to all functionality in the Deadline Cloud console, attach this 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -303,7 +303,7 @@ In this example, you create a scoped-down policy that grants permission to submi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -329,7 +329,7 @@ In this example, you create a scoped-down policy that grants the required permis
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -368,7 +368,7 @@ In this example, you create a scoped-down policy that grants permission to monit
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -408,7 +408,7 @@ The queue–fleet associations on a fleet determine which jobs can be scheduled 
 
 In this example, you create a scoped-down policy that grants permission to manage queue–fleet associations only between a specific fleet and a specific queue. The `CreateQueueFleetAssociation` operation authorizes against the farm, queue, and fleet resources, so a principal with this policy cannot associate the fleet with any other queue. In the following example, replace each {{placeholder}} with your resource-specific information.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

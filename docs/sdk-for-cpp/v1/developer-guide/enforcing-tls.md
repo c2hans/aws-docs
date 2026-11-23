@@ -30,7 +30,7 @@ The following procedure shows you how to perform these tasks.
 
 1. Open `aws-cpp-sdk-core/source/http/curl/CurlHttpClient.cpp` and find the following lines of code.
 
-   ```
+   ```cpp
    #if LIBCURL_VERSION_MAJOR >= 7
    #if LIBCURL_VERSION_MINOR >= 34
    curl_easy_setopt(connectionHandle, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1);
@@ -40,7 +40,7 @@ The following procedure shows you how to perform these tasks.
 
 1. If necessary, change the last parameter in the function call as follows.
 
-   ```
+   ```cpp
    #if LIBCURL_VERSION_MAJOR >= 7
    #if LIBCURL_VERSION_MINOR >= 34
    curl_easy_setopt(connectionHandle, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_2);
@@ -76,7 +76,7 @@ WinHttp provides an API to explicitly set the acceptable secure protocols. Howev
 
 1. Open `aws-cpp-sdk-core/source/http/windows/WinHttpSyncHttpClient.cpp` and find the following lines of code.
 
-   ```
+   ```cpp
    #if defined(WINHTTP_FLAG_SECURE_PROTOCOL_TLS1_3)
        DWORD flags = WINHTTP_FLAG_SECURE_PROTOCOL_TLS1 | WINHTTP_FLAG_SECURE_PROTOCOL_TLS1_1 |
                WINHTTP_FLAG_SECURE_PROTOCOL_TLS1_2 | WINHTTP_FLAG_SECURE_PROTOCOL_TLS1_3;
@@ -97,14 +97,14 @@ WinHttp provides an API to explicitly set the acceptable secure protocols. Howev
 
      Under the `#else` directive, change the value of the `flags` variable, as follows.
 
-     ```
+     ```cpp
      DWORD flags = WINHTTP_FLAG_SECURE_PROTOCOL_TLS1_2;
      ```
    + **To enforce TLS 1.3:**
 
      Under the `#if defined(WINHTTP_FLAG_SECURE_PROTOCOL_TLS1_3)` directive, change the value of the `flags` variable, as follows.
 
-     ```
+     ```cpp
      DWORD flags = WINHTTP_FLAG_SECURE_PROTOCOL_TLS1_3;
      ```
 
@@ -125,7 +125,7 @@ There is no API to specify the secure protocol for the WinINet and IXMLHTTPReque
 
 1. Create the following keys and values.
 
-   ```
+   ```text
     Key name                          Key type   Value
     --------                          ---------  -----
     TLS 1.0\Client\DisabledByDefault  DWORD      0
@@ -151,7 +151,7 @@ There is no API to specify the secure protocol for the WinINet and IXMLHTTPReque
 
 1. Create the following keys and values.
 
-   ```
+   ```text
     Key name                          Key type   Value
     --------                          ---------  -----
     TLS 1.0\Client\DisabledByDefault  DWORD      0

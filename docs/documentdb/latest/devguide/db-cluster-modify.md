@@ -95,7 +95,7 @@ aws docdb modify-db-cluster ^
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 {
     "DBCluster": {
         "BackupRetentionPeriod": 7,

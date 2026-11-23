@@ -32,7 +32,7 @@ The following code example shows how to get started using Amazon S3.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -101,7 +101,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 Define a struct that wraps bucket and object actions used by the scenario.
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -460,7 +460,7 @@ func (basics BucketBasics) DeleteBucket(ctx context.Context, bucketName string) 
 ```
 Run an interactive scenario that shows you how to work with S3 buckets and objects.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -630,7 +630,7 @@ The following code example shows how to use `CopyObject`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -691,7 +691,7 @@ The following code example shows how to use `CreateBucket`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 Create a bucket with default configuration.
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -747,7 +747,7 @@ func (basics BucketBasics) CreateBucket(ctx context.Context, name string, region
 ```
 Create a bucket with object locking and wait for it to exist.
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -815,7 +815,7 @@ The following code example shows how to use `DeleteBucket`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -875,7 +875,7 @@ The following code example shows how to use `DeleteObject`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/s3_object_lock#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -951,7 +951,7 @@ The following code example shows how to use `DeleteObjects`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/s3_object_lock#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1028,7 +1028,7 @@ The following code example shows how to use `GetObject`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1095,7 +1095,7 @@ The following code example shows how to use `GetObjectLegalHold`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/s3_object_lock#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1160,7 +1160,7 @@ The following code example shows how to use `GetObjectLockConfiguration`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/s3_object_lock#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1217,7 +1217,7 @@ The following code example shows how to use `GetObjectRetention`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/s3_object_lock#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1280,7 +1280,7 @@ The following code example shows how to use `HeadBucket`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1342,7 +1342,7 @@ The following code example shows how to use `ListBuckets`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1402,7 +1402,7 @@ The following code example shows how to use `ListObjectVersions`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/s3_object_lock#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1457,7 +1457,7 @@ The following code example shows how to use `ListObjectsV2`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1519,7 +1519,7 @@ The following code example shows how to use `PutObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 Put an object in a bucket by using the low-level API.
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1580,7 +1580,7 @@ func (basics BucketBasics) UploadFile(ctx context.Context, bucketName string, ob
 ```
 Upload an object to a bucket by using a transfer manager.
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1642,7 +1642,7 @@ The following code example shows how to use `PutObjectLegalHold`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/s3_object_lock#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1700,7 +1700,7 @@ The following code example shows how to use `PutObjectLockConfiguration`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/s3_object_lock#code-examples).
 Set the object lock configuration of a bucket.
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1762,7 +1762,7 @@ func (actor S3Actions) EnableObjectLockOnBucket(ctx context.Context, bucket stri
 ```
 Set the default retention period of a bucket.
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1822,7 +1822,7 @@ The following code example shows how to use `PutObjectRetention`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/s3_object_lock#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1882,7 +1882,7 @@ The following code example shows how to create a presigned URL for Amazon S3 and
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 Create functions that wrap S3 presigning actions.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -1962,7 +1962,7 @@ func (presigner Presigner) PresignPostObject(ctx context.Context, bucketName str
 ```
 Run an interactive example that generates and uses presigned URLs to upload, download, and delete an S3 object.
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -2131,7 +2131,7 @@ func RunPresigningScenario(ctx context.Context, sdkConfig aws.Config, questioner
 ```
 Define an HTTP request wrapper used by the example to make HTTP requests.
 
-```
+```go
 // IHttpRequester abstracts HTTP requests into an interface so it can be mocked during
 // unit testing.
 type IHttpRequester interface {
@@ -2182,7 +2182,7 @@ The following code example shows how to work with S3 object lock features.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/s3_object_lock#code-examples).
 Run an interactive scenario demonstrating Amazon S3 object lock features.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -2558,7 +2558,7 @@ func (scenario *ObjectLockScenario) Run(ctx context.Context) {
 ```
 Define a struct that wraps S3 actions used in this example.
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -2964,7 +2964,7 @@ func (actor S3Actions) DeleteObjects(ctx context.Context, bucket string, objects
 ```
 Clean up resources.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -3119,7 +3119,7 @@ For more information, see [Uploading an object using multipart upload](https://d
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 Create functions that use upload and download managers to break the data into parts and transfer them concurrently.
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -3200,7 +3200,7 @@ func (basics BucketBasics) DownloadLargeObject(ctx context.Context, bucketName s
 ```
 Run an interactive scenario that shows you how to use the upload and download managers in context.
 
-```
+```go
 import (
 	"context"
 	"crypto/rand"
@@ -3319,7 +3319,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using Go.
 
-```
+```go
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 package main

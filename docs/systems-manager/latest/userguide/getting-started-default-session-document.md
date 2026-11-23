@@ -11,7 +11,7 @@ When you configure Session Manager for your AWS account or when you change sessi
 
 Here is an example of the information contained in the `SSM-SessionManagerRunShell` session preferences document.
 
-```
+```json
 {
   "schemaVersion": "1.0",
   "description": "Document to hold regional settings for Session Manager",
@@ -43,7 +43,7 @@ To start a default shell session, you must specify the default session document 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtime-environm
 
 # Understanding the Lambda execution environment lifecycle
 
-Lambda execution environments run function invocations for up to 15 minutes by default, and durable functions can run for up to one year. Durable functions share the same basic lifecycle and add state management capabilities for long-running workflows.
+Lambda execution environments run function invocations for up to 30 minutes, and durable functions can run for up to one year. Durable functions share the same basic lifecycle and add state management capabilities for long-running workflows.
 
  Lambda invokes your function in an execution environment, which provides a secure and isolated runtime environment. The execution environment manages the resources required to run your function. The execution environment also provides lifecycle support for the function's runtime and any [external extensions](lambda-extensions.md) associated with your function.
 
@@ -67,7 +67,7 @@ The `Init` phase ends when the runtime and all extensions signal that they are r
 When [SnapStart](snapstart.md) is activated, the `Init` phase happens when you publish a function version. Lambda saves a snapshot of the memory and disk state of the initialized execution environment, persists the encrypted snapshot, and caches it for low-latency access. If you have a before-checkpoint [runtime hook](snapstart-runtime-hooks.md), then the code runs at the end of `Init` phase.
 
 **Note**
-The 10-second timeout doesn't apply to functions that are using provisioned concurrency, SnapStart, or Lambda Managed Instances. For provisioned concurrency, SnapStart, and Managed Instances functions, your initialization code can run for up to 15 minutes. The time limit is 130 seconds or the configured function timeout (maximum 900 seconds), whichever is higher.
+The 10-second timeout doesn't apply to functions that are using provisioned concurrency, SnapStart, or Lambda Managed Instances. For provisioned concurrency, SnapStart, and Managed Instances functions, your initialization code can run for up to 15 minutes. The time limit is 130 seconds or the configured function timeout (maximum 900 seconds, even if the function timeout is longer), whichever is higher.
 
 When you use [provisioned concurrency](https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html), Lambda initializes the execution environment when you configure the PC settings for a function. Lambda also ensures that initialized execution environments are always available in advance of invocations. You might see gaps between your function's invocation and initialization phases. Depending on your function's runtime and memory configuration, you might also see variable latency on the first invocation on an initialized execution environment.
 
@@ -243,7 +243,7 @@ Static initialization happens before the handler code starts running in a functi
 
 The following Python example shows importing, and configuring modules, and creating the Amazon S3 client during the initialization phase, before the `lambda_handler` function runs during invoke.
 
-```
+```python
 import os
 import json
 import cv2

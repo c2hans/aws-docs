@@ -108,7 +108,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of GetInvocationStep.
 
-```
+```json
 POST bedrock-agent-runtime.us-east-1.amazonaws.com/sessions/12345abc-1234-abcd-1234-abcdef123456/invocationSteps/11111111-2222-3333-4444-555555555555 HTTP/1.1
 Content-type: application/json
 

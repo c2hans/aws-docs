@@ -13,7 +13,7 @@ Create a new Amazon EC2 instance by calling the AmazonEC2Client’s `runInstance
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.InstanceType;
 import com.amazonaws.services.ec2.model.RunInstancesRequest;
@@ -23,7 +23,7 @@ import com.amazonaws.services.ec2.model.Tag;
 
  **Code**
 
-```
+```java
 RunInstancesRequest run_request = new RunInstancesRequest()
     .withImageId(ami_id)
     .withInstanceType(InstanceType.T1Micro)
@@ -44,7 +44,7 @@ To start an Amazon EC2 instance, call the AmazonEC2Client’s `startInstances` m
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.StartInstancesRequest;
@@ -52,7 +52,7 @@ import com.amazonaws.services.ec2.model.StartInstancesRequest;
 
  **Code**
 
-```
+```java
 final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
 StartInstancesRequest request = new StartInstancesRequest()
@@ -70,7 +70,7 @@ To stop an Amazon EC2 instance, call the AmazonEC2Client’s `stopInstances` met
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.StopInstancesRequest;
@@ -78,7 +78,7 @@ import com.amazonaws.services.ec2.model.StopInstancesRequest;
 
  **Code**
 
-```
+```java
 final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
 StopInstancesRequest request = new StopInstancesRequest()
@@ -96,7 +96,7 @@ To reboot an Amazon EC2 instance, call the AmazonEC2Client’s `rebootInstances`
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.RebootInstancesRequest;
@@ -105,7 +105,7 @@ import com.amazonaws.services.ec2.model.RebootInstancesResult;
 
  **Code**
 
-```
+```java
 final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
 RebootInstancesRequest request = new RebootInstancesRequest()
@@ -125,7 +125,7 @@ Instances are grouped by *reservation*. Each reservation corresponds to the call
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.DescribeInstancesRequest;
@@ -136,7 +136,7 @@ import com.amazonaws.services.ec2.model.Reservation;
 
  **Code**
 
-```
+```java
 final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 boolean done = false;
 
@@ -181,7 +181,7 @@ To start monitoring an instance, you must create a [MonitorInstancesRequest](htt
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.MonitorInstancesRequest;
@@ -189,7 +189,7 @@ import com.amazonaws.services.ec2.model.MonitorInstancesRequest;
 
  **Code**
 
-```
+```java
 final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
 MonitorInstancesRequest request = new MonitorInstancesRequest()
@@ -207,7 +207,7 @@ To stop monitoring an instance, create an [UnmonitorInstancesRequest](https://do
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.UnmonitorInstancesRequest;
@@ -215,7 +215,7 @@ import com.amazonaws.services.ec2.model.UnmonitorInstancesRequest;
 
  **Code**
 
-```
+```java
 final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
 UnmonitorInstancesRequest request = new UnmonitorInstancesRequest()

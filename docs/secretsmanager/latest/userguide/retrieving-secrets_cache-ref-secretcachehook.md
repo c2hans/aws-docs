@@ -17,7 +17,7 @@ Prepares the object for storing in the cache.
 
 Request syntax
 
-```
+```python
 response = hook.put(
     obj='{{secret_object}}'
 )
@@ -36,7 +36,7 @@ Derives the object from the cached object.
 
 Request syntax
 
-```
+```python
 response = hook.get(
     obj='{{secret_object}}'
 )

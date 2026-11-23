@@ -26,7 +26,7 @@ There are several ways you can do this.
 
   Use an existing customer managed key or create a new one and add required permissions for Connect Customer role to use the key. To add permissions using AWS KMS grants, see the following example:
 
-  ```
+  ```json
   aws kms create-grant \
       --key-id {{your key ID}} \
       --grantee-principal arn:aws:iam::{{your AWS account ID}}:role/aws-service-role/connect.amazonaws.com/AWSServiceRoleForAmazonConnect_{{11111111111111111111}} \
@@ -49,7 +49,7 @@ If you have previously associated a stream with `REAL_TIME_CONTACT_ANALYSIS_SEGM
 
 Specify the Kinesis stream where real-time contact analysis segments will be published. You'll need the instance ID and the Kinesis stream ARN. The following code shows an example:
 
-```
+```java
 // Build request
   const request: Connect.Types.AssociateInstanceStorageConfigRequest = {
     InstanceId: 'your Amazon Connect instance ID',
@@ -72,7 +72,7 @@ The following example is for chat contacts.
 If you don't include the AWS Region (`--region`) it uses the default Region based on the CLI profile.
 The `--storage-config` parameter value must not be include within single quote ('). Otherwise it raises an error.
 
-```
+```json
 aws connect associate-instance-storage-config \
 --region "us-west-2" \
 --instance-id {{your Connect Customer instance ID}} \
@@ -85,7 +85,7 @@ aws connect associate-instance-storage-config \
 
 The following example is for voice contacts.
 
-```
+```java
 import { Connect } from 'aws-sdk';
 
 async function associate (): Promise <void> {

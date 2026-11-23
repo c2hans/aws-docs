@@ -148,7 +148,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-rds-database-stack-create-db-subnet-group-ex-min"></a>
 
-```
+```json
 {
   "Description": "Create RDS db subnet group",
   "VpcId": "vpc-12345678901234567",
@@ -165,7 +165,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-rds-database-stack-create-db-subnet-group-ex-max"></a>
 
-```
+```json
 {
   "Description": "Create RDS db subnet group",
   "VpcId": "vpc-12345678901234567",

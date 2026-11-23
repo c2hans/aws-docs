@@ -79,7 +79,7 @@ For the purposes of this guide, the code examples in [Starting an import job](st
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -126,7 +126,7 @@ The `Condition` block in this trust policy helps prevent the confused deputy pro
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

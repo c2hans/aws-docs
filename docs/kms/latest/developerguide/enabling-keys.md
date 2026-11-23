@@ -37,19 +37,19 @@ The [EnableKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_EnableKe
 
 This operation does not return any output. To see the key status, use the [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) operation.
 
-```
+```bash
 $ aws kms enable-key --key-id 1234abcd-12ab-34cd-56ef-1234567890ab
 ```
 
 The [DisableKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DisableKey.html) operation disables an enabled KMS key. The `key-id` parameter is required.
 
-```
+```bash
 $ aws kms disable-key --key-id 1234abcd-12ab-34cd-56ef-1234567890ab
 ```
 
 This operation does not return any output. To see the key status, use the [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) operation, and see the `Enabled` field.
 
-```
+```bash
 $ aws kms describe-key --key-id 1234abcd-12ab-34cd-56ef-1234567890ab
 {
     "KeyMetadata": {

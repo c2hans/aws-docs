@@ -78,14 +78,14 @@ AWS IoT Greengrass supports two modes of private key storage: hardware-based or 
 1. In the `crypto.principals.SecretsManager` object, for the `privateKeyPath` property, enter the path of the private key:
    + If your private key is stored in the file system, specify the absolute path to the key. For example:
 
-     ```
+     ```json
      "SecretsManager" : {
        "privateKeyPath" : "file:///somepath/{{hash}}.private.key"
      }
      ```
    + If your private key is stored in a hardware security module (HSM), specify the path using the [RFC 7512 PKCS\#11](https://tools.ietf.org/html/rfc7512) URI scheme. For example:
 
-     ```
+     ```json
      "SecretsManager" : {
        "privateKeyPath" : "pkcs11:object={{private-key-label}};type=private"
      }
@@ -104,13 +104,13 @@ In this procedure, you add an inline policy to the Greengrass service role that 
 
 1. Run the following CLI command to get the ARN of the Greengrass service role:
 
-   ```
+   ```bash
    aws greengrass get-service-role-for-account --region {{region}}
    ```
 
    The returned ARN contains the role name.
 
-   ```
+   ```json
    {
      "AssociatedAt": "{{time-stamp}}",
      "RoleArn": "arn:aws:iam::{{account-id}}:role/service-role/{{role-name}}"
@@ -128,7 +128,7 @@ In this procedure, you add an inline policy to the Greengrass service role that 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automating-
 ---
 
 # FAQ
-<a name="faq"></a>
 
 **What is the Infrastructure Document Generator?** It's an automated tool that scans AWS environments to create comprehensive documentation and analysis, including dependency maps, configuration reports, and AWS Well-Architected Framework assessments.
 

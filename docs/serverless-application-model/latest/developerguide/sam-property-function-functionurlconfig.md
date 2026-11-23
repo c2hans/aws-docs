@@ -18,7 +18,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-functionurlconfig-syntax.yaml"></a>
 
-```
+```yaml
 [AuthType](#sam-function-functionurlconfig-authtype): {{String}}
 [Cors](#sam-function-functionurlconfig-cors): {{[Cors](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-url-cors.html)}}
 [InvokeMode](#sam-function-functionurlconfig-invokemode): {{String}}
@@ -57,7 +57,7 @@ The following example creates a Lambda function with a function URL. The functio
 #### YAML
 <a name="sam-property-function-functionurlconfig--examples--function-url--yaml"></a>
 
-```
+```yaml
 HelloWorldFunction:
   Type: AWS::Serverless::Function
   Properties:

@@ -32,7 +32,7 @@ The following example IAM policy allows a user to do the following:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -83,7 +83,7 @@ The following example IAM policy allows a user to run a specific version of an a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -147,7 +147,7 @@ The following example IAM policy allows a user to run any automation document th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -214,7 +214,7 @@ The following example IAM policy grants permissions to a user to run automation 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

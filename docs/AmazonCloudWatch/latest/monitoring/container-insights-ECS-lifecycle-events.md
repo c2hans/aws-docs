@@ -8,7 +8,7 @@ You can view Amazon ECS lifecycle events within the Container Insights console. 
 
 The events include container instance state change events, task state change events, and service action events. They are automatically sent by Amazon ECS to Amazon EventBridge and are also collected in CloudWatch in event log format. For more information about these events, see [Amazon ECS events](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_cwe_events.html).
 
-Standard Container Insights pricing applies for Amazon ECS Lifecycle events. For more information, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/).
+Standard Container Insights pricing applies for Amazon ECS Lifecycle events. For more information, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/) on the AWS website.
 
 To configure the table of lifecycle events and create rules for a cluster, you must have the `events:PutRule`, `events:PutTargets`, and `logs:CreateLogGroup` permissions. You must also make sure that there is a resource policy that enables EventBridge to create the log stream and send logs to CloudWatch Logs. If this resource policy doesn't exist, you can enter the following command to create it:
 

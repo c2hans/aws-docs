@@ -165,7 +165,7 @@ The following section contains the CloudFormation template to create the Client 
   + Your Amazon VPC ID in `VpcId`. A VPC of `vpc-010101010101` is provided.
   + Your VPC security group IDs in `SecurityGroupIds`. A security group of `sg-0101010101` is provided.
 
-  ```
+  ```yaml
   AWSTemplateFormatVersion: 2010-09-09
   Description: This template deploys a VPN Client Endpoint.
   Resources:

@@ -62,6 +62,18 @@ Required: Yes
             "instanceType": "string"
          }
       ],
+      "instanceHealthChecks": {
+         "deepHealthChecks": {
+            "onStart": {
+               "profile": "string",
+               "repairAction": "string"
+            }
+         },
+         "healthMonitoring": {
+            "mode": "string",
+            "repairAction": "string"
+         }
+      },
       "launchTemplateMode": "string",
       "modifiedAt": "string",
       "name": "string",

@@ -30,7 +30,7 @@ To delete an agent, send a [DeleteAgent](https://docs.aws.amazon.com/bedrock/lat
 
 By default, the `skipResourceInUseCheck` parameter is `false` and deletion is stopped if the resource is in use. If you set `skipResourceInUseCheck` to `true`, the resource will be deleted even if the resource is in use.
 
-```
+```python
     def delete_agent(self, agent_id):
         """
         Deletes an Amazon Bedrock agent.

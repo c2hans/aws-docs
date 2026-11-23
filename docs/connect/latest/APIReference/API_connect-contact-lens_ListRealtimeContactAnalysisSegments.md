@@ -155,6 +155,7 @@ Content-type: application/json
                   }
                }
             ],
+            "LanguageCode": "string",
             "ParticipantId": "string",
             "ParticipantRole": "string",
             "Sentiment": "string"

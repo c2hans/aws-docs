@@ -12,7 +12,7 @@ Using the Amazon Silk **Settings** menu, users can enable or disable JavaScript.
 
 When JavaScript is disabled, Silk ignores the content of `<script>` tags. You can use the `<noscript>` tag to let users know that JavaScript content is disabled.
 
-```
+```html
 <html>
   <body>
     <h1>Test Script</h1>

@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Polly#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Polly;
@@ -105,7 +105,7 @@ For more information, see [Managing lexicons](https://docs.aws.amazon.com/polly/
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/polly#code-examples).
 
-```
+```python
 class PollyWrapper:
     """Encapsulates Amazon Polly functions."""
 
@@ -141,7 +141,7 @@ class PollyWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/polly#code-examples).
 
-```
+```rust
 async fn make_lexicon(client: &Client, name: &str, from: &str, to: &str) -> Result<(), Error> {
     let content = format!("<?xml version=\"1.0\" encoding=\"UTF-8\"?>
     <lexicon version=\"1.0\" xmlns=\"http://www.w3.org/2005/01/pronunciation-lexicon\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
@@ -170,7 +170,7 @@ async fn make_lexicon(client: &Client, name: &str, from: &str, to: &str) -> Resu
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ply#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ply->putlexicon(
           iv_name = iv_name

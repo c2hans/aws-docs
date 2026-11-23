@@ -48,7 +48,7 @@ Add code to initialize a game client. Run this code on launch, it's necessary fo
 
    The following example shows how to set up an Amazon GameLift Servers client.
 
-   ```
+   ```cs
    public class GameLiftClient
    {
        private GameLift gl;
@@ -91,7 +91,7 @@ Add code to start new game sessions on your deployed fleets and make them availa
 
  The following example shows how to create a game session.
 
-```
+```cs
 public Amazon.GameLift.Model.GameSession()
 {
     var cgsreq = new Amazon.GameLift.Model.CreateGameSessionRequest();
@@ -130,7 +130,7 @@ After Amazon GameLift Servers has created the new game session and returned a `
 
 The following example demonstrates how to reserve a player spot in a game session.
 
-```
+```cs
 public Amazon.GameLift.Model.PlayerSession CreatePlayerSession(Amazon.GameLift.Model.GameSession gsession)
 {
     var cpsreq = new Amazon.GameLift.Model.CreatePlayerSessionRequest();
@@ -146,7 +146,7 @@ public Amazon.GameLift.Model.PlayerSession CreatePlayerSession(Amazon.GameLift.M
 
 The following code illustrates how to connect a player with the game session.
 
-```
+```cs
 public bool ConnectPlayer(int playerIdx, string playerSessionId)
 {
     //Call ConnectPlayer with player ID and player session ID.
@@ -168,7 +168,7 @@ You can remove the players from the game session when they leave the game.
 
  The following example illustrates how to remove a player session.
 
-```
+```cs
 public void DisconnectPlayer(int playerIdx)
 {
     //Receive the player session ID.

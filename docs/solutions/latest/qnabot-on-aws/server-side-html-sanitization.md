@@ -27,7 +27,7 @@ To add custom tags or attributes to the sanitization allowlist:
 
 1. Add your custom tags to `extraAllowedTags`:
 
-   ```
+   ```javascript
    extraAllowedTags: [
        'question', 'references', 'chatHistory', 'followUpMessage',
        'details', 'summary', 'img',
@@ -37,7 +37,7 @@ To add custom tags or attributes to the sanitization allowlist:
 
 1. Add custom attributes to `extraAllowedAttributes` if needed:
 
-   ```
+   ```javascript
    extraAllowedAttributes: {
        a: ['href'],
        p: ['style'],

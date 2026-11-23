@@ -115,7 +115,7 @@ OPENAI_BASE_URL="https://bedrock-mantle.<your-region>.api.aws/openai/v1"
 ------
 #### [ Chat Completions API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -130,7 +130,7 @@ print(response)
 ------
 #### [ Responses API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()

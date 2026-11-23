@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/smc/index.html
 title: 'AWS Service Management Connector Documentation'
 canonical_url: https://docs.aws.amazon.com/smc/
 source: aws-documentation
-generated_on: 2026-11-18
+generated_on: 2026-11-21
 ---
 
 # AWS Service Management Connector Documentation

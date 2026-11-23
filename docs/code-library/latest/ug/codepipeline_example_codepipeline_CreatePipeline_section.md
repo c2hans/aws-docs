@@ -163,7 +163,7 @@ For more information, see [Create a pipeline, stages, and actions](https://docs.
 **Tools for PowerShell V4**
 **Example 1: This examples creates a new pipeline with the specified settings.**
 
-```
+```powershell
 $pipeline = New-Object Amazon.CodePipeline.Model.PipelineDeclaration
 
 $sourceStageAction = New-Object Amazon.CodePipeline.Model.ActionDeclaration
@@ -219,7 +219,7 @@ Version       : 1
 **Tools for PowerShell V5**
 **Example 1: This examples creates a new pipeline with the specified settings.**
 
-```
+```powershell
 $pipeline = New-Object Amazon.CodePipeline.Model.PipelineDeclaration
 
 $sourceStageAction = New-Object Amazon.CodePipeline.Model.ActionDeclaration

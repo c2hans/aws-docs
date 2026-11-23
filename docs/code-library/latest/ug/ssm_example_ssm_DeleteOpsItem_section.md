@@ -14,7 +14,7 @@ The following code examples show how to use `DeleteOpsItem`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class OpsItemWrapper:
     """Encapsulates AWS Systems Manager OpsItem actions."""
 
@@ -60,7 +60,7 @@ class OpsItemWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ssm->deleteopsitem( iv_opsitemid = iv_ops_item_id ).
         MESSAGE 'OpsItem deleted.' TYPE 'I'.

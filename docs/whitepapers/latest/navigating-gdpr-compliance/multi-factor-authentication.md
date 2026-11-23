@@ -8,7 +8,7 @@ For extra security, customers can add two-factor authentication to their AWS acc
 
 For example, customers can define a policy that allows full access to all AWS API operations in [Amazon EC2](https://aws.amazon.com/ec2/), but explicitly denies access to specific API operations – such as StopInstances and TerminateInstances – if the user is not authenticated with MFA.
 
-```
+```json
 {
 “Version”: “2012-10-17”,
 “Statement”: [

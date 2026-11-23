@@ -35,6 +35,7 @@ For information about how to configure IAM users from the AWS Management Console
 
 1. In the **Create User** dialog box, type a name for the IAM user and choose **OK**. This is the IAM [friendly name](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html). For information about constraints on names for IAM users, go to the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/LimitationsOnEntities.html).
 ![Create User dialog box with Name field and OK/Cancel buttons.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/iam-user-create-dlg.png)
+   Create an IAM user
 
 The new user will appear as a subnode under **Users** under the **AWS Identity and Access Management** node.
 
@@ -51,6 +52,7 @@ Groups provide a way of applying IAM policies to a collection of users. For info
 
 1. In the **Create Group** dialog box, type a name for the IAM group and choose **OK**.
 ![Dialog box for creating a group with a name field and OK and Cancel buttons.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/iam-group-create-dlg.png)
+   Create IAM group
 
 The new IAM group will appear under the **Groups** subnode of **Identity and Access Management**.
 
@@ -69,6 +71,7 @@ In AWS Explorer, you add IAM users to IAM groups from the **Users** subnode, not
 
 1. In AWS Explorer, under **Identity and Access Management**, open the context (right-click) menu for **Users** and choose **Edit**.
 ![User interface for managing IAM groups, showing available and assigned groups for myIAMUser.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/iam-group-assign.png)
+   Assign an IAM user to a IAM group
 
 1. The left pane of the **Groups** tab displays the available IAM groups. The right pane displays the groups of which the specified IAM user is already a member.
 
@@ -98,6 +101,7 @@ The Toolkit cannot be used to generate a password for an IAM user.
 
    You can generate only two sets of credentials per IAM user. If you already have two sets of credentials and need to create an additional set, you must delete one of the existing sets.
 ![Access Keys dialog showing Access Key ID and Secret Access Key fields with an option to save locally.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/iam-user-creds-create.png)
+   reate credentials for IAM user
 
    If you want the Toolkit to save an encrypted copy of your secret access key to your local drive, select **Save the secret access key locally. AWS only returns the secret access key when created**. You can also copy the secret access key from the dialog box and save it in a secure location.
 
@@ -106,6 +110,8 @@ The Toolkit cannot be used to generate a password for an IAM user.
 After you generate the credentials, you can view them from the **Access Keys** tab. If you selected the option to have the Toolkit save the secret key locally, it will be displayed here.
 
 ![Access Keys tab showing an active key with ID, status, creation date, and secret key options.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/iam-user-show-creds.png)
+
+Create credentials for IAM user
 
 If you saved the secret key yourself and would also like the Toolkit to save it, in the **Secret Access Key** box, type the secret access key, and then select **Save the secret access key locally**.
 
@@ -126,6 +132,7 @@ For more information about IAM roles, go to [Working with IAM Roles in the IAM U
 
 1. In the **Create Role** dialog box, type a name for the IAM role and choose **OK**.
 ![Dialog box for creating a role with a name field and OK/Cancel buttons.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/iam-role-create-dlg.png)
+   Create IAM role
 
 The new IAM role will appears under **Roles** in **Identity and Access Management**.
 
@@ -146,9 +153,13 @@ In the **New Policy Name** dialog box, type a name for the policy (for example, 
 
 ![Dialog box for entering a new policy name, with "s3-access" typed in the input field.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/iam-policy-create-dlg.png)
 
+New Policy Name dialog box
+
 In the policy editor, add policy statements to specify the level of access to provide to the role (in this example, winapp-instance-role-2 associated with the policy. In this example, a policy provides full access to Amazon S3, but no access to any other resources.
 
 ![Policy editor interface showing allowed actions for Amazon S3 in the winapp-instance-role-2 role.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/iam-policy-specify.png)
+
+Specify IAM policy
 
 For more precise access control, you can expand the subnodes in the policy editor to allow or disallow actions associated with Amazon Web Services.
 

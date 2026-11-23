@@ -75,7 +75,7 @@ An event represents a single request from any source and includes information ab
 
 The following example shows a CloudTrail management event that demonstrates the [CreateApplication](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_CreateApplication.html) operation.
 
-```
+```JSON
 {
       "eventVersion": "1.09",
       "userIdentity": {
@@ -141,7 +141,7 @@ The following example shows a CloudTrail management event that demonstrates the 
 
 The following example shows a CloudTrail data event from a trail log that demonstrates the [StartStreamSession](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_StartStreamSession.html) operation.
 
-```
+```JSON
 {
     "Records": [
         {

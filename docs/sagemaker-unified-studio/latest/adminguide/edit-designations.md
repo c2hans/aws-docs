@@ -37,7 +37,7 @@ The following image shows the edit designation page, where you can change the de
 
 To update a designation using the AWS CLI, run the `update-designation` command.
 
-```
+```bash
 aws datazone update-designation \
     --domain-identifier "dzd_example1234" \
     --identifier "dry7c1plpxl0k6" \

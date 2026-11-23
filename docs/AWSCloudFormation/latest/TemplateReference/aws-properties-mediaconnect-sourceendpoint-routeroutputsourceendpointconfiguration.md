@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::SourceEndpoint RouterOutputSourceEndpointConfiguration
 
-<a name="aws-properties-mediaconnect-sourceendpoint-routeroutputsourceendpointconfiguration-description"></a>The `RouterOutputSourceEndpointConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::SourceEndpoint](aws-resource-mediaconnect-sourceendpoint.md).
+The configuration settings for a source endpoint that represents a router output.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-routeroutputsourceendpointconfiguration-syntax"></a>
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-routeroutputsourceendpointconfiguration-properties"></a>
 
 `RouterOutputArn`  <a name="cfn-mediaconnect-sourceendpoint-routeroutputsourceendpointconfiguration-routeroutputarn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the router output that the source endpoint represents.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:routerOutput:[a-z0-9]{12}$`

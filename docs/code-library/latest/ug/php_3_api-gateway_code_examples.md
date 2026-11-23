@@ -29,7 +29,7 @@ The following code example shows how to use `GetBasePathMapping`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/apigateway#code-examples).
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\ApiGateway\ApiGatewayClient;
@@ -90,7 +90,7 @@ The following code example shows how to use `ListBasePathMappings`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/apigateway#code-examples).
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\ApiGateway\ApiGatewayClient;
@@ -149,7 +149,7 @@ The following code example shows how to use `UpdateBasePathMapping`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/apigateway#code-examples).
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\ApiGateway\ApiGatewayClient;

@@ -19,7 +19,7 @@ Calling `PutResourcePolicy` against each destination Region's own endpoint succe
 A cross-account [ApplyGuardrail](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ApplyGuardrail.html) call fails with `AccessDeniedException: The provided resource ARN is from a different account.` even though `GetGuardrail` succeeds and the same guardrail works without a profile.
 Attach the guardrail's own policy and then every destination-Region profile policy, all through the source Region. The following example uses {{eu-central-1}} as the source Region.
 
-```
+```bash
 SOURCE_REGION=eu-central-1
 OWNER={{111122223333}}
 
@@ -56,7 +56,7 @@ The allowed policy language for guardrail and guardrail-profile resource-based p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -82,7 +82,7 @@ The allowed policy language for guardrail and guardrail-profile resource-based p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -112,7 +112,7 @@ The allowed policy language for guardrail and guardrail-profile resource-based p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -141,7 +141,7 @@ The allowed policy language for guardrail and guardrail-profile resource-based p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -174,7 +174,7 @@ The allowed policy language for guardrail and guardrail-profile resource-based p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -208,7 +208,7 @@ The allowed policy language for guardrail and guardrail-profile resource-based p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

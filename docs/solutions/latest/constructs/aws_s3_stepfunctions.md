@@ -29,7 +29,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { S3ToStepfunctions, S3ToStepfunctionsProps } from '@aws-solutions-constructs/aws-s3-stepfunctions';
@@ -44,7 +44,7 @@ new S3ToStepfunctions(this, 'test-s3-stepfunctions-stack', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_s3_stepfunctions import S3ToStepfunctions
 from aws_cdk import (
     aws_stepfunctions as stepfunctions,
@@ -61,7 +61,7 @@ S3ToStepfunctions(
 )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

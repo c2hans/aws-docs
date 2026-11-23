@@ -75,7 +75,7 @@ We recommend using `/ready` instead of `/health` for CoreDNS’s readiness probe
 
 In alignment with the earlier recommendation to set the lameduck duration to 30 seconds, providing ample time for the node’s iptables rules to be updated before pod termination, employing `/ready` instead of `/health` for the CoreDNS readiness probe ensures that the CoreDNS pod is fully prepared at startup to promptly respond to DNS requests.
 
-```
+```yaml
 readinessProbe:
   httpGet:
     path: /ready

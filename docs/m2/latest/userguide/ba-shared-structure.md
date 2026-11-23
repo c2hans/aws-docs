@@ -106,7 +106,7 @@ The most exhaustive case will have three packages:
 
     When building the state machine, the controller refers to methods that are defined in the associated service class located in the state machine package and described below:
 
-    ```
+    ```java
     subConfigurer.state(States._0000_MAIN, buildAction(() -> {stateProcess._0000Main(lctx, ctrl);}), null);
     subConfigurer.state(States.ABEND_ROUTINE, buildAction(() -> {stateProcess.abendRoutine(lctx, ctrl);}), null);
     ```

@@ -12,7 +12,7 @@ We recommend using the [`aws:SourceArn`](https://docs.aws.amazon.com/IAM/latest/
 
 The following example shows a policy that you can apply to limit the confused deputy problem for Amazon Redshift.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": {
@@ -36,7 +36,7 @@ The following example shows a policy that you can apply to limit the confused de
 
 The following example shows a policy for Amazon Redshift Serverless.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": {

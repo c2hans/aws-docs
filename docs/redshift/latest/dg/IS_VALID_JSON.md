@@ -37,7 +37,7 @@ A string or expression that evaluates to a JSON string.
 
 To create a table and insert JSON strings for testing, use the following example.
 
-```
+```sql
 CREATE TABLE test_json(id int IDENTITY(0,1), json_strings VARCHAR);
 
 -- Insert valid JSON strings --
@@ -55,7 +55,7 @@ INSERT INTO test_json(json_strings) VALUES
 
 To validate the strings in the preceding example, use the following example.
 
-```
+```sql
 SELECT id, json_strings, IS_VALID_JSON(json_strings)
 FROM test_json
 ORDER BY id;

@@ -30,7 +30,7 @@ aws ec2 describe-route-tables \
 
 The following example describes the specified associations between a specific VPC and your local gateway route tables.
 
-```
+```sh
 aws ec2 describe-local-gateway-route-table-vpc-associations
 --filters "Name=vpc-id,Values={{vpc-0daeb67adda59e0cd}}"
 ```

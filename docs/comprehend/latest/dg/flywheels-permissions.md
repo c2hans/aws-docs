@@ -18,7 +18,7 @@ The following example shows permissions policy to create datasets, to create and
 
 **Example IAM policy to manage flywheels**
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": [

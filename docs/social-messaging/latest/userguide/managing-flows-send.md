@@ -16,7 +16,7 @@ Before you can send a Flow, the following must be true:
 
 The following example sends a template message that contains a Flow button. The `flow_token` is a unique identifier you provide to track the session, and `flow_action_data` specifies the starting screen and any initial data.
 
-```
+```bsh
 aws socialmessaging send-whatsapp-message \
     --origination-phone-number-id {{{PHONE_NUMBER_ID}}} \
     --meta-api-version v20.0 \

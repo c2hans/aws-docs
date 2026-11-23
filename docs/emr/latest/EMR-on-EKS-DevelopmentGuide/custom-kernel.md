@@ -22,7 +22,7 @@ You can only override base images. You can't add new kernel image types.
    1. Create a JSON file `custom-image-managed-endpoint.json` with the following contents. This example uses Amazon EMR release 6.9.0.
 **Example**
 
-      ```
+      ```json
       {
           "name": "{{endpoint-name}}",
           "virtualClusterId": "{{virtual-cluster-id}}",
@@ -55,7 +55,7 @@ You can only override base images. You can't add new kernel image types.
 
    1. Create an interactive endpoint with the configurations specified in the JSON file as shown in the following example. For more information, see [Create an interactive endpoint with the `create-managed-endpoint` command](create-managed-endpoint.md#create-using-json-file).
 
-      ```
+      ```bash,sh,zsh
       aws emr-containers create-managed-endpoint --cli-input-json custom-image-managed-endpoint.json
       ```
 

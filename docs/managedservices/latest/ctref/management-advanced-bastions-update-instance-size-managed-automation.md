@@ -135,7 +135,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-bastions-update-instance-size-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "BastionType": "RDP Bastion",
   "InstanceType": "t3.medium"
@@ -145,7 +145,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-bastions-update-instance-size-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "BastionType": "RDP Bastion",
   "InstanceType": "t3.medium",

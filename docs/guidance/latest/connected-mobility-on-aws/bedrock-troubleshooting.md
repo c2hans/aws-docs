@@ -18,7 +18,7 @@ The Fleet Intelligence portal chat panel opens but reports the assistant as unav
 
 1. Fetch `/runtimeConfig.json` from the CloudFront-served UI and inspect the `vsaApiEndpoint` field:
 
-   ```
+   ```bash
    STAGE=staging
    CLOUDFRONT_URL=$(aws cloudformation describe-stacks \
      --stack-name cms-$STAGE-ui \
@@ -29,7 +29,7 @@ The Fleet Intelligence portal chat panel opens but reports the assistant as unav
 
 1. If `vsaApiEndpoint` is missing or empty, the ChatAgent has no target endpoint. Populate it and regenerate the runtime config:
 
-   ```
+   ```bash
    # Set vsaApiEndpoint in deployment/config/<stage>.env, then:
    make -C deployment regenerate-runtime-config DEPLOYMENT_STAGE=$STAGE
    ```

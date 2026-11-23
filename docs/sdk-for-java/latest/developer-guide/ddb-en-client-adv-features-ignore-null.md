@@ -13,7 +13,7 @@ To illustrate how the annotation works, the code example uses the following two 
 
 The following data class contains two `InnerBean` fields. The getter method, `getInnerBeanWithoutAnno()`, is not annotated. The `getInnerBeanWithIgnoreNullsAnno()` method is annotated with `@DynamoDbIgnoreNulls`.
 
-```
+```java
 @DynamoDbBean
 public class MyBean {
 
@@ -50,7 +50,7 @@ public class MyBean {
 
 Instances of the following `InnerBean` class are fields of `MyBean` and are used in the following example code.
 
-```
+```java
 @DynamoDbBean
 public class InnerBean {
 
@@ -75,7 +75,7 @@ public class InnerBean {
 
 The following code example creates an `InnerBean` object and sets only one of its two attributes with a value.
 
-```
+```java
     public void ignoreNullsAnnoUsingPutItemExample(DynamoDbTable<MyBean> myBeanTable) {
         // Create an InnerBean object and give only one attribute a value.
         InnerBean innerBeanOneAttributeSet = new InnerBean();
@@ -101,13 +101,13 @@ To visualize the low-level data that is sent to DynamoDB, the code logs the attr
 
 The logged output shows that the `innerBeanWithIgnoreNullsAnno` outputs one attribute,
 
-```
+```java
 innerBeanWithIgnoreNullsAnno=AttributeValue(M={innerBeanFieldInteger=AttributeValue(N=200)})
 ```
 
 The `innerBeanWithoutAnno` instance outputs two attributes. One attribute has a value of 200 and the other is a null-valued attribute.
 
-```
+```java
 innerBeanWithoutAnno=AttributeValue(M={innerBeanFieldInteger=AttributeValue(N=200), innerBeanFieldString=AttributeValue(NUL=true)})
 ```
 
@@ -116,7 +116,7 @@ innerBeanWithoutAnno=AttributeValue(M={innerBeanFieldInteger=AttributeValue(N=20
 
 The following JSON representation makes it easier to see the data that is saved to DynamoDB.
 
-```
+```json
 {
   "id": {
     "S": "1"
@@ -146,7 +146,7 @@ The following JSON representation makes it easier to see the data that is saved 
 
 You can use the following `StaticTableSchema` version of the table schemas in place data class annotations.
 
-```
+```java
 public static TableSchema<MyBean> buildStaticSchemas() {
 
     StaticTableSchema<InnerBean> innerBeanStaticTableSchema =

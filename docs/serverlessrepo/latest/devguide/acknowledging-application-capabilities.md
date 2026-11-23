@@ -31,7 +31,7 @@ You can review the capabilities of an application under the **Permissions** tab 
 
 To view an application's capabilities using the AWS CLI, you first need the application's Amazon Resource Name (ARN). You can then execute the following command:
 
-```
+```sh
 aws serverlessrepo get-application \
 --application-id {{application-arn}}
 ```

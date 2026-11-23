@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # AmazonMachineImageRecommendation
 
-Recommended instance types for running an AMI fulfillment option.
+The recommended instance types for running an AMI fulfillment option.
 
 ## Contents
 <a name="API_marketplace-discovery_AmazonMachineImageRecommendation_Contents"></a>
@@ -13,7 +13,7 @@ Recommended instance types for running an AMI fulfillment option.
 In the following list, the required parameters are described first.
 
  ** instanceType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageRecommendation-instanceType"></a>
-The recommended EC2 instance type for this AMI.
+The recommended Amazon Elastic Compute Cloud (Amazon EC2) instance type for this AMI.
 Type: String
 Required: Yes
 

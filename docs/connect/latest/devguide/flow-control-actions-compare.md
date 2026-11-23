@@ -9,7 +9,7 @@ Allows comparisons against the specified value.
 ## Parameter object
 <a name="compare-parameter"></a>
 
-```
+```json
 {
   "ComparisonValue": Any **single** JSONPath identifier that is valid for the flow data object
 }

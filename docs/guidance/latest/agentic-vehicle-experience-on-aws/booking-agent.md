@@ -11,7 +11,7 @@ The `book` tool creates service requests as **STAR-shaped JSON** `ServiceRequest
 
 Every booking action produces a STAR-shaped envelope:
 
-```
+```json
 {
   "messageType": "ServiceRequestAdd",
   "header": {

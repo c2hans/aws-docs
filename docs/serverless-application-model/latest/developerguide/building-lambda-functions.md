@@ -16,4 +16,5 @@ For more information on functions, see [Lambda concepts](https://docs.aws.amazon
 + [Building Rust Lambda Event Functions with Cargo Lambda in AWS SAM](building-rust.md)
 + [Building Python Lambda Event Functions with uv in AWS SAM](building-python-uv.md)
 + [Building Lambda Event Functions with custom runtimes in AWS SAM](building-custom-runtimes.md)
++ [Building Lambda Event Functions with customer-managed runtimes in AWS SAM](building-customer-managed-runtimes.md)
 + [Building Lambda layers in AWS SAM](building-layers.md)

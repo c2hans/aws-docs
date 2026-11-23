@@ -10,7 +10,7 @@ Here are some example queries for Security Hub CSPM findings for AWS source vers
 
 **New findings with severity greater than or equal to `MEDIUM` in the last 7 days**
 
-```
+```sql
 SELECT
     time_dt,
     finding_info,
@@ -26,7 +26,7 @@ LIMIT 25
 
 **Duplicate findings in the last 7 days**
 
-```
+```sql
 SELECT
     finding_info.uid,
     MAX(time_dt) AS time,
@@ -42,7 +42,7 @@ LIMIT 25
 
 **All non-informational findings in the last 7 days**
 
-```
+```sql
 SELECT
     time_dt,
     finding_info.title,
@@ -55,7 +55,7 @@ LIMIT 25
 
 **Findings where the resource is an Amazon S3 bucket (no time restriction)**
 
-```
+```sql
 SELECT *
    FROM "amazon_security_lake_glue_db_us_east_1"."amazon_security_lake_table_us_east_1_sh_findings_2_0"
 WHERE any_match(resources, element -> element.type = 'amzn-s3-demo-bucket')
@@ -64,7 +64,7 @@ LIMIT 25
 
 **Findings with a Common Vulnerability Scoring System (CVSS) score greater than `1` (no time restriction)**
 
-```
+```sql
 SELECT
     DISTINCT finding_info.uid
     time_dt,
@@ -82,7 +82,7 @@ LIMIT 25
 
 **Findings that match Common Vulnerabilities and Exposures (CVE) `CVE-0000-0000` (no time restriction)**
 
-```
+```sql
 SELECT *
     FROM "amazon_security_lake_glue_db_us_east_1"."amazon_security_lake_table_us_east_1_sh_findings_2_0"
 WHERE any_match(vulnerabilities, element -> element.cve.uid = 'CVE-0000-0000')
@@ -91,7 +91,7 @@ LIMIT 25
 
 **Count of products that are sending findings from Security Hub CSPM in the last 7 days**
 
-```
+```sql
 SELECT
     metadata.product.name,
     count(*)
@@ -104,7 +104,7 @@ LIMIT 25
 
 **Count of resource types in findings in the last 7 days**
 
-```
+```sql
 SELECT
     count(*) AS "Total",
     resource.type
@@ -117,7 +117,7 @@ LIMIT 25
 
 **Vulnerable packages from findings in the last 7 days**
 
-```
+```sql
 SELECT
     vulnerabilities
 FROM "amazon_security_lake_glue_db_us_east_1"."amazon_security_lake_table_us_east_1_sh_findings_2_0"
@@ -128,7 +128,7 @@ LIMIT 25
 
 **Findings that have changed in the last 7 days**
 
-```
+```sql
 SELECT
     status,
     finding_info.title,

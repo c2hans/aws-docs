@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Get detailed information about a cluster.
 
-```
+```sh
 pcluster describe-cluster [-h]
                  --cluster-name {{CLUSTER_NAME}}
                 [--debug]

@@ -48,7 +48,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dev-endpoint-tutorial-sag
 
 1. Create a dynamic frame and run a query against it: Copy, paste, and run the following code, which outputs the count and schema of the `persons_json` table.
 
-   ```
+   ```python
    import sys
    from pyspark.context import SparkContext
    from awsglue.context import GlueContext

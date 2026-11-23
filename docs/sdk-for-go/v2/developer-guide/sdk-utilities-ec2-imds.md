@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/sdk-utilit
 
  For example to construct a client:
 
-```
+```go
 import "context"
 import "github.com/aws/aws-sdk-go-v2/config"
 import "github.com/aws/aws-sdk-go-v2/feature/ec2/imds"
@@ -28,7 +28,7 @@ client := imds.NewFromConfig(cfg)
 
  Then use the service client to retrieve information from a metadata category such as `local-ipv4` (the private IP address of the instance).
 
-```
+```go
 localIp, err := client.GetMetadata(context.TODO(), &imds.GetMetadataInput{
     Path: "local-ipv4",
 })

@@ -4,13 +4,12 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/home.html
 
 # What is the AWS CDK?
 
-The AWS Cloud Development Kit (AWS CDK) is an open-source software development framework for defining cloud infrastructure in code and provisioning it through AWS CloudFormation.
+The AWS Cloud Development Kit (AWS CDK) is an open-source set of libraries and command-line tools for building and deploying applications on AWS.
 
-The AWS CDK consists of two primary parts:
-+  ** [AWS CDK Construct Library](constructs.md) ** – A collection of pre-written modular and reusable pieces of code, called constructs, that you can use, modify, and integrate to develop your infrastructure quickly. The goal of the AWS CDK Construct Library is to reduce the complexity required to define and integrate AWS services together when building applications on AWS.
+The AWS CDK consists of three primary parts:
++  ** [AWS CDK Construct Library](constructs.md) ** – A collection of pre-written modular and reusable pieces of code, called constructs, that you can use, modify, and integrate to develop your infrastructure quickly. The goal of the AWS CDK Construct Library is to reduce the complexity required to define and integrate AWS services together when building applications on AWS. The AWS CDK supports TypeScript, JavaScript, Python, Java, C\#/.Net, and Go. You can use any of these supported programming languages to define reusable cloud components known as [constructs](constructs.md). You compose these together into [stacks](stacks.md) and [apps](apps.md). Then, you deploy your CDK applications through AWS CloudFormation to provision or update your resources.
++  ** [AWS CDK Blocks Library](https://docs.aws.amazon.com/cdk/blocks/devguide/what-is-blocks.html) ** – A CDK Block packages a construct, an interface, and the interface’s AWS and local implementations into one package, incorporating AWS service-specific best practices, such as safe retries, dead-letter routing, and partial batch failures. The CDK Blocks Library contains Blocks that AWS builds and maintains, such as Database, AsyncJob, and Agent. AWS CDK Blocks supports TypeScript, Kotlin, Dart, and Swift. You can build a custom Block using the CDK Block format, which lets you package infrastructure, application interfaces, and local development tools with best practices built in.
 +  AWS CDK Toolkit - Tools that you can use to manage and interact with your CDK apps, such as performing synthesis or deployment. The CDK Toolkit consists of a command line tool ([CDK CLI](ref-cli-cmd.md)) and a programmatic library ([CDK Toolkit Library](toolkit-library.md)).
-
-The AWS CDK supports TypeScript, JavaScript, Python, Java, C\#/.Net, and Go. You can use any of these supported programming languages to define reusable cloud components known as [constructs](constructs.md). You compose these together into [stacks](stacks.md) and [apps](apps.md). Then, you deploy your CDK applications through AWS CloudFormation to provision or update your resources.
 
 ![CDK app and process overview](https://docs.aws.amazon.com/cdk/v2/guide/images/AppStacks.png)
 
@@ -45,7 +44,7 @@ The following is an example of using the AWS CDK Constructs Library to create an
 
 **Example**
 
-```
+```javascript
 export class MyEcsConstructStack extends Stack {
   constructor(scope: App, id: string, props?: StackProps) {
     super(scope, id, props);
@@ -71,7 +70,7 @@ export class MyEcsConstructStack extends Stack {
 }
 ```
 
-```
+```javascript
 class MyEcsConstructStack extends Stack {
   constructor(scope, id, props) {
     super(scope, id, props);
@@ -99,7 +98,7 @@ class MyEcsConstructStack extends Stack {
 module.exports = { MyEcsConstructStack }
 ```
 
-```
+```python
 class MyEcsConstructStack(Stack):
 
   def __init__(self, scope: Construct, id: str, **kwargs) -> None:
@@ -119,7 +118,7 @@ class MyEcsConstructStack(Stack):
       public_load_balancer=True)  # Default is False
 ```
 
-```
+```java
 public class MyEcsConstructStack extends Stack {
 
   public MyEcsConstructStack(final Construct scope, final String id) {
@@ -149,7 +148,7 @@ public class MyEcsConstructStack extends Stack {
 }
 ```
 
-```
+```csharp
 public class MyEcsConstructStack : Stack
 {
     public MyEcsConstructStack(Construct scope, string id, IStackProps props=null) : base(scope, id, props)
@@ -181,7 +180,7 @@ public class MyEcsConstructStack : Stack
 }
 ```
 
-```
+```go
 func NewMyEcsConstructStack(scope constructs.Construct, id string, props *MyEcsConstructStackProps) awscdk.Stack {
 
 	var sprops awscdk.StackProps

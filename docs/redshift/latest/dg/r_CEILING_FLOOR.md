@@ -35,7 +35,7 @@ The following example uses the TICKIT sample database. For more information, see
 
 To calculate the ceiling of the commission paid for a given sales transaction, use the following example.
 
-```
+```sql
 SELECT CEILING(commission) FROM sales
 WHERE salesid=10000;
 

@@ -31,7 +31,7 @@ Embed this dashboard in your webpage by using the [AWS Quick Sight embedding SDK
 
 The following example shows how to use the generated URL. This code is generated on your app server.
 
-```
+```html
 <!DOCTYPE html>
 <html>
 
@@ -70,6 +70,6 @@ For this example to work, make sure to use the AWS Quick Sight Embedding SDK to 
 + Download the latest embedding SDK version from [https://www.npmjs.com/package/amazon-quicksight-embedding-sdk](https://www.npmjs.com/package/amazon-quicksight-embedding-sdk).
 + If you use `npm` for JavaScript dependencies, download and install it by running the following command.
 
-  ```
+  ```bash
   npm install amazon-quicksight-embedding-sdk
   ```

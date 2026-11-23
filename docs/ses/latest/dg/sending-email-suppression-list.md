@@ -220,7 +220,7 @@ To add email addresses in bulk to your account-level suppression list, complete 
 
   Paste the following policy statement into the key policy to permit SES to use your customer managed key.
 
-  ```
+  ```json
   {
      "Sid": "AllowSESToDecrypt",
      "Effect": "Allow",
@@ -302,7 +302,7 @@ You can view a list of all of the email addresses that are on your account-level
 
 The preceding command returns all of the email addresses that are in your account-level suppression list for your account. The output resembles the following example:
 
-```
+```json
 {
     "SuppressedDestinationSummaries": [
         {
@@ -458,7 +458,7 @@ To remove email addresses in bulk from your account-level suppression list, comp
 
   Paste the following policy statement into the key policy to permit SES to use your customer managed key.
 
-  ```
+  ```json
   {
      "Sid": "AllowSESToDecrypt",
      "Effect": "Allow",
@@ -536,7 +536,7 @@ You can view a list of all of the email addresses that are on your account-level
 
 The preceding command returns all of the import jobs for the account. The output resembles the following example:
 
-```
+```json
 {
     "ImportJobs": [
         {
@@ -603,7 +603,7 @@ You can get information about an import job for the account by using the [GetImp
 
 The preceding command returns information about an import job for the account. The output resembles the following example:
 
-```
+```json
 {
     "ImportDataSource": {
         "S3Url": "s3://bucket/object",

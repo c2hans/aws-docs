@@ -35,7 +35,7 @@ Configure the AWS SDK for PHP by creating a MediaConvert client, with the region
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -44,7 +44,7 @@ use Aws\MediaConvert\MediaConvertClient;
 
  **Sample Code**
 
-```
+```php
 $mediaConvertClient = new MediaConvertClient([
     'version' => '2017-08-29',
     'region' => 'us-east-2',
@@ -61,7 +61,7 @@ These parameters are detailed. You can use the [AWS Elemental MediaConvert conso
 
  **Sample Code**
 
-```
+```php
 $jobSetting = [
     "OutputGroups" => [
         [
@@ -195,7 +195,7 @@ After creating the job parameters JSON, call the createJob method by invoking an
 
  **Sample Code**
 
-```
+```php
 try {
     $result = $mediaConvertClient->createJob([
         "Role" => "IAM_ROLE_ARN",
@@ -219,7 +219,7 @@ With the JobID returned when you called createjob, you can get detailed descript
 
  **Sample Code**
 
-```
+```php
 $mediaConvertClient = new MediaConvertClient([
     'version' => '2017-08-29',
     'region' => 'us-east-2',
@@ -244,7 +244,7 @@ With the JobID returned when you called createjob, you can cancel a job while it
 
  **Sample Code**
 
-```
+```php
 $mediaConvertClient = new MediaConvertClient([
     'version' => '2017-08-29',
     'region' => 'us-east-2',
@@ -269,7 +269,7 @@ Create the parameters JSON, including values to specify whether to sort the list
 
  **Sample Code**
 
-```
+```php
 $mediaConvertClient = new MediaConvertClient([
     'version' => '2017-08-29',
     'region' => 'us-east-2',

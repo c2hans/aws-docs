@@ -10,7 +10,7 @@ The following code example shows how to get a Secrets Manager secret value.
 
 **Required permissions: **`secretsmanager:GetSecretValue`
 
-```
+```javascript
 import {
   GetSecretValueCommand,
   SecretsManagerClient,

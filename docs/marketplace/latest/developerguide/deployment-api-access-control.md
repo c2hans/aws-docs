@@ -17,7 +17,7 @@ To call `PutDeploymentParameter`, sellers must have IAM permissions for the foll
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

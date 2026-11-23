@@ -64,7 +64,7 @@ The following example VPC endpoint policy grants access to all CloudTrail action
 
 ****
 
-```
+```json
 {
      "Version":"2012-10-17",
      "Statement": [
@@ -90,7 +90,7 @@ The following example VPC endpoint policy grants access to perform the `cloudtra
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -116,7 +116,7 @@ The following example VPC endpoint policy denies access to all CloudTrail action
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -142,7 +142,7 @@ The following example VPC endpoint policy denies the `cloudtrail:CreateTrail` an
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -168,7 +168,7 @@ The following example VPC endpoint policy grants access to perform all CloudTrai
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -199,7 +199,7 @@ The following example VPC endpoint policy grants access to perform all CloudTrai
 
 ****
 
-```
+```json
 {
      "Version":"2012-10-17",
      "Statement": [

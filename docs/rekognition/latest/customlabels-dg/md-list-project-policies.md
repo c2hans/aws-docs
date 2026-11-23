@@ -31,7 +31,7 @@ You can use the [ListProjectPolicies](https://docs.aws.amazon.com/rekognition/la
 
    For example: `python list_project_policies.py {{project_arn}} `
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
 
@@ -142,7 +142,7 @@ You can use the [ListProjectPolicies](https://docs.aws.amazon.com/rekognition/la
    Use the following code. Supply the following command line parameters:
    + project\_arn — The ARN of the project that has the project polices you want to list.
 
-   ```
+   ```java
    /*
       Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
       SPDX-License-Identifier: Apache-2.0

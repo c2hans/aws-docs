@@ -49,7 +49,7 @@ ApplicationSets in additional namespaces don’t support the Plugin (`plugin`), 
 
 The following example shows an ApplicationSet that you create in `team-a-gitops`. The generated Applications are also created in `team-a-gitops` and use the `team-a` project:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
@@ -77,7 +77,7 @@ spec:
 
 Apply and view the ApplicationSet and its generated Applications in the source namespace:
 
-```
+```bash
 kubectl apply -f applicationset.yaml
 kubectl get applicationset guestbook-environments -n team-a-gitops
 kubectl get applications -n team-a-gitops \
@@ -91,7 +91,7 @@ When you use the Argo CD CLI, identify an ApplicationSet in an additional namesp
 
 Deploy to multiple clusters with explicit configuration:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
@@ -135,7 +135,7 @@ This creates three Applications: `guestbook-dev`, `guestbook-staging`, and `gues
 
 Deploy to all registered clusters automatically:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
@@ -168,7 +168,7 @@ This automatically creates an Application for each registered cluster.
 
 Use `matchLabels` to include specific clusters, or `matchExpressions` to exclude clusters:
 
-```
+```yaml
 spec:
   generators:
   - clusters:
@@ -189,7 +189,7 @@ Git generators create Applications based on repository structure:
 
  **Example: Microservices deployment**
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
@@ -238,7 +238,7 @@ For more information about the endpoints and the shared secret, see [Webhook con
 
 Combine multiple generators to deploy across multiple dimensions (environments × clusters):
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
@@ -278,7 +278,7 @@ For details on combining generators, see [Matrix Generator](https://argo-cd.read
 
 Deploy to clusters across multiple regions:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
@@ -321,7 +321,7 @@ spec:
 
  **View ApplicationSets and generated Applications**:
 
-```
+```bash
 kubectl get applicationsets -n argocd
 kubectl get applications -n argocd -l argocd.argoproj.io/application-set-name=<applicationset-name>
 ```
@@ -330,13 +330,13 @@ kubectl get applications -n argocd -l argocd.argoproj.io/application-set-name=<a
 
 Modify the ApplicationSet spec and reapply. Argo CD automatically updates all generated Applications:
 
-```
+```bash
 kubectl apply -f applicationset.yaml
 ```
 
  **Delete an ApplicationSet**:
 
-```
+```bash
 kubectl delete applicationset <name> -n argocd
 ```
 

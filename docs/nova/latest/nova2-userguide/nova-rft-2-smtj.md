@@ -40,7 +40,7 @@ Once the input data has been uploaded to S3, use the recipe from [SageMaker Hype
 
 **Sample recipe**
 
-```
+```yaml
 # Note:
 # This recipe can run on p5.48xlarge, p5e.48xlarge, and p5en.48xlarge instance types.
 run:

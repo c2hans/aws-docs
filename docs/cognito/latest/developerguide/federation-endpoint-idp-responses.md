@@ -19,7 +19,7 @@ When Amazon Cognito encounters an error, it communicates it in one of the follow
 
 Errors that Amazon Cognito appends to request parameters have the following format.
 
-```
+```http
 https://{{<Callback URL>}}/?error_description={{error+description}}&error={{error+name}}
 ```
 
@@ -33,7 +33,7 @@ Your identity provider might return an error. When an OIDC or OAuth 2.0 IdP retu
 
 The following URL is an example redirect from an IdP that returned an error to Amazon Cognito.
 
-```
+```HTTP
 https://{{www.amazon.com}}/?error_description={{LoginWithAmazon}}+Error+-+{{400}}+{{invalid_request+The+request+is+missing+a+required+parameter+%3A+client_secret}}&error={{invalid_request}}
 ```
 

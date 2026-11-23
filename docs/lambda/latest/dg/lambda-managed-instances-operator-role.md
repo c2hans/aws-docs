@@ -20,7 +20,7 @@ You can create an operator role in the IAM console or with the AWS CLI. The role
 
 The operator role needs permissions to manage capacity providers and the underlying compute resources. At minimum, the role requires the permissions in the [AWSLambdaManagedEC2ResourceOperator](https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/policies/details/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAWSLambdaManagedEC2ResourceOperator) managed policy, currently:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -106,7 +106,7 @@ The operator role needs permissions to manage capacity providers and the underly
 
 The trust policy allows Lambda to assume the operator role:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

@@ -43,6 +43,8 @@ Application infrastructure (including Amazon Elastic Container Registry (Amazon 
 
 ![On-premises server with ECS Agent, SSM Agent, and containers connecting to Amazon ECS and Systems Manager.](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image4-1.png)
 
+Amazon ECS Anywhere architecture
+
 ## Amazon Elastic Container Service on AWS Outposts
 <a name="ecs-on-outposts"></a>
 

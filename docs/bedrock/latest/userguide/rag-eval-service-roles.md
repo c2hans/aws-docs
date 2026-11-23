@@ -20,7 +20,7 @@ The following example policy grants access to the S3 buckets where both of the f
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -81,7 +81,7 @@ You also need to create a policy that allows Amazon Bedrock to do the following:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -130,7 +130,7 @@ You must also specify a trust policy that defines Amazon Bedrock as the service 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -11,7 +11,7 @@ Based on your use case, replace the highlighted portion in the inference image U
 ## Amazon SageMaker AI XGBoost
 <a name="inference-container-collapse-xgboost"></a>
 
-```
+```bash
 {{aws_account_id}}.dkr.ecr.{{aws_region}}.amazonaws.com/xgboost-neo:latest
 ```
 
@@ -20,7 +20,7 @@ Replace {{aws\_account\_id}} from the table at the end of this page based on the
 ## Keras
 <a name="inference-container-collapse-keras"></a>
 
-```
+```bash
 {{aws_account_id}}.dkr.ecr.{{aws_region}}.amazonaws.com/sagemaker-neo-keras:fx_version-instance_type-py3
 ```
 
@@ -36,7 +36,7 @@ Replace {{instance\_type}} with either `cpu` or `gpu`.
 ------
 #### [ CPU or GPU instance types ]
 
-```
+```bash
 {{aws_account_id}}.dkr.ecr.{{aws_region}}.amazonaws.com/sagemaker-inference-mxnet:{{fx_version}}-{{instance_type}}-py3
 ```
 
@@ -49,7 +49,7 @@ Replace {{instance\_type}} with either `cpu` or `gpu`.
 ------
 #### [ Inferentia1 ]
 
-```
+```bash
 {{aws_account_id}}.dkr.ecr.{{aws_region}}.amazonaws.com/sagemaker-neo-mxnet:{{fx_version}}-{{instance_type}}-py3
 ```
 
@@ -66,7 +66,7 @@ Replace {{`instance_type`}} with `inf`.
 ## ONNX
 <a name="inference-container-collapse-onnx"></a>
 
-```
+```bash
 {{aws_account_id}}.dkr.ecr.{{aws_region}}.amazonaws.com/sagemaker-neo-onnx:fx_version-instance_type-py3
 ```
 
@@ -82,7 +82,7 @@ Replace {{instance\_type}} with either `cpu` or `gpu`.
 ------
 #### [ CPU or GPU instance types ]
 
-```
+```bash
 {{aws_account_id}}.dkr.ecr.{{aws_region}}.amazonaws.com/sagemaker-inference-pytorch:{{fx_version}}-{{instance_type}}-py3
 ```
 
@@ -95,7 +95,7 @@ Replace {{instance\_type}} with either `cpu` or `gpu`.
 ------
 #### [ Inferentia1 ]
 
-```
+```bash
 {{aws_account_id}}.dkr.ecr.{{aws_region}}.amazonaws.com/sagemaker-neo-pytorch:{{fx_version}}-{{instance_type}}-py3
 ```
 
@@ -110,7 +110,7 @@ Replace {{`instance_type`}} with `inf`.
 ------
 #### [ Inferentia2 and Trainium1 ]
 
-```
+```bash
 763104351884.dkr.ecr.{{aws_region}}.amazonaws.com/pytorch-inference-neuronx:1.13.1-neuronx-py38-sdk2.10.0-ubuntu20.04
 ```
 
@@ -124,7 +124,7 @@ Replace {{aws\_region}} with `us-east-2` for Inferentia2, and `us-east-1` for Tr
 ------
 #### [ CPU or GPU instance types ]
 
-```
+```bash
 {{aws_account_id}}.dkr.ecr.{{aws_region}}.amazonaws.com/sagemaker-inference-tensorflow:{{fx_version}}-{{instance_type}}-py3
 ```
 
@@ -137,7 +137,7 @@ Replace {{instance\_type}} with either `cpu` or `gpu`.
 ------
 #### [ Inferentia1 ]
 
-```
+```bash
 {{aws_account_id}}.dkr.ecr.{{aws_region}}.amazonaws.com/sagemaker-neo-tensorflow:{{fx_version}}-{{instance_type}}-py3
 ```
 
@@ -150,7 +150,7 @@ Replace {{instance\_type}} with `inf`.
 ------
 #### [ Inferentia2 and Trainium1 ]
 
-```
+```bash
 763104351884.dkr.ecr.{{aws_region}}.amazonaws.com/tensorflow-inference-neuronx:2.10.1-neuronx-py38-sdk2.10.0-ubuntu20.04
 ```
 

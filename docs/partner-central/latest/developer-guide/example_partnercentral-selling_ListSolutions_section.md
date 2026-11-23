@@ -14,7 +14,7 @@ The following code examples show how to use `ListSolutions`.
 **SDK for Java 2.x**
 Retrieves a list of Partner Solutions that the partner registered on Partner Central.
 
-```
+```java
 package org.example;
 
 import java.util.ArrayList;
@@ -73,7 +73,7 @@ public class ListSolutions {
 **SDK for Python (Boto3)**
 Retrieves a list of Partner Solutions that the partner registered on Partner Central.
 
-```
+```python
 #!/usr/bin/env python
 
 """

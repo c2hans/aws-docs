@@ -62,7 +62,7 @@ Supported parameters include:
   + Required: no
   + Logs are included in the response under the key `logs`. There may be multiple pods within the job, each with multiple containers.
 
-    ```
+    ```json
     {
       ...
       "logs": {
@@ -91,7 +91,7 @@ Supported parameters include:
   + Required: no
   + Example:
 
-    ```
+    ```json
     "LogParameters": {
       "tailLines": [ "6" ]
     }
@@ -99,7 +99,7 @@ Supported parameters include:
 
 The following example includes a `Task` state that runs a job, waits for it to complete, then retrieves the job’s logs:
 
-```
+```json
 {
   "StartAt": "Run a job on EKS",
   "States": {
@@ -180,7 +180,7 @@ Supported parameters for `Call` include:
   + Required: No
   + Example:
 
-    ```
+    ```json
     "QueryParameters": {
       "labelSelector": [ "job-name=example-job" ]
     }
@@ -191,7 +191,7 @@ Supported parameters for `Call` include:
 
 The following includes a `Task` state that uses `eks:call` to list the pods belonging to the job `example-job`.
 
-```
+```json
 {
   "StartAt": "Call EKS",
   "States": {
@@ -218,7 +218,7 @@ The following includes a `Task` state that uses `eks:call` to list the pods belo
 
 The following includes a `Task` state that uses `eks:call` to delete the job `example-job`, and sets the `propagationPolicy` to ensure the job's pods are also deleted.
 
-```
+```json
 {
   "StartAt": "Call EKS",
   "States": {
@@ -288,7 +288,7 @@ Supported Amazon EKS APIs and syntax include:
 
 The following includes a `Task` that creates an Amazon EKS cluster.
 
-```
+```json
 {
   "StartAt": "CreateCluster.sync",
   "States": {
@@ -313,7 +313,7 @@ The following includes a `Task` that creates an Amazon EKS cluster.
 
 The following includes a `Task` state that deletes an Amazon EKS cluster.
 
-```
+```json
 {
   "StartAt": "DeleteCluster.sync",
   "States": {
@@ -331,7 +331,7 @@ The following includes a `Task` state that deletes an Amazon EKS cluster.
 
 The following includes a `Task` state that creates a Fargate profile.
 
-```
+```json
 {
   "StartAt": "CreateFargateProfile.sync",
   "States": {
@@ -355,7 +355,7 @@ The following includes a `Task` state that creates a Fargate profile.
 
 The following includes a `Task` state that deletes a Fargate profile.
 
-```
+```json
 {
   "StartAt": "DeleteFargateProfile.sync",
   "States": {
@@ -374,7 +374,7 @@ The following includes a `Task` state that deletes a Fargate profile.
 
 The following includes a `Task` state that creates a node group.
 
-```
+```json
 {
   "StartAt": "CreateNodegroup.sync",
   "States": {
@@ -395,7 +395,7 @@ The following includes a `Task` state that creates a node group.
 
 The following includes a `Task` state that deletes a node group.
 
-```
+```json
 {
   "StartAt": "DeleteNodegroup.sync",
   "States": {
@@ -421,7 +421,7 @@ You can add permission for additional IAM entities, such as users or roles, by a
 
 The following includes a `Task` state that creates an `aws-auth` `ConfigMap` and grants `system:masters` permission to the user `arn:aws:iam::{{account-id}}:user/my-user` and the IAM role `arn:aws:iam::{{account-id}}:role/my-role`.
 
-```
+```json
 {
   "StartAt": "Add authorized user",
   "States": {
@@ -463,7 +463,7 @@ If your cluster was created outside of Step Functions, you can configure **kubec
 
 If your IAM role does not have sufficient permissions in Kubernetes, the `eks:call` or `eks:runJob` service integrations will fail with the following error:
 
-```
+```json
 Error:
 EKS.401
 
@@ -495,7 +495,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -530,7 +530,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 }
 ```
 
-```
+```json
 
 ```
 
@@ -541,7 +541,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -592,7 +592,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -617,7 +617,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

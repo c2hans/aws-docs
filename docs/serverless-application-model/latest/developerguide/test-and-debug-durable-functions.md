@@ -39,7 +39,7 @@ When testing durable functions locally, the workflow differs from regular Lambda
 
 To test that your function properly checkpoints state:
 
-```
+```python
 # Example Python durable function
 def handler(event, context):
     # This will create a checkpoint

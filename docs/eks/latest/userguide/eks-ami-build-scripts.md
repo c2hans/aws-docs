@@ -27,26 +27,26 @@ When building custom AMIs for GPU instances, it is recommended to build separate
 
 Install the required [Amazon plugin](https://developer.hashicorp.com/packer/integrations/hashicorp/amazon).
 
-```
+```bash
 packer plugins install github.com/hashicorp/amazon
 ```
 
 Verify that Packer is installed.
 
-```
+```bash
 packer --version
 ```
 
 Clone or fork the official Amazon EKS AMI repository.
 
-```
+```bash
 git clone https://github.com/awslabs/amazon-eks-ami.git
 cd amazon-eks-ami
 ```
 
 To view default values and additional options, run the following command. To learn more about the configurations available to customize your AMI, see the template variables on the [Amazon Linux 2023](https://awslabs.github.io/amazon-eks-ami/usage/al2023/) page.
 
-```
+```bash
 make help
 ```
 
@@ -57,7 +57,7 @@ The following are example commands for various custom AMIs.
 
  **EKS NVIDIA AL2 AMI**
 
-```
+```bash
 make k8s=1.32 os_distro=al2 \
   enable_accelerator=nvidia \
   nvidia_driver_major_version=580 \
@@ -66,7 +66,7 @@ make k8s=1.32 os_distro=al2 \
 
  **EKS NVIDIA AL2023 AMI**
 
-```
+```bash
 make k8s=1.36 os_distro=al2023 \
   enable_accelerator=nvidia \
   nvidia_driver_major_version=580 \
@@ -77,7 +77,7 @@ make k8s=1.36 os_distro=al2023 \
 
 The EKS-optimized AL2023 NVIDIA AMI bundles two NVIDIA driver versions in a single image. Each node automatically selects the appropriate driver for its GPU at boot. As of EKS AL2023 AMI version [v20260917](https://github.com/awslabs/amazon-eks-ami/releases/tag/v20260917), the LTS (long-term support) version is 580, and the production branch version is 595, which together support all EC2 GPU instance types. To override the default versions, set `nvidia_driver_lts_version` and `nvidia_driver_pb_version` together.
 
-```
+```bash
 make k8s=1.36 os_distro=al2023 \
   enable_accelerator=nvidia \
   nvidia_driver_lts_version=580 \
@@ -90,7 +90,7 @@ The EKS AL2023 AMI’s NVIDIA driver selection logic runs at runtime, but it is 
 
  **STIG-Compliant Neuron AL2023 AMI:**
 
-```
+```bash
 make k8s=1.31 os_distro=al2023 \
   enable_accelerator=neuron \
   enable_fips=true \
@@ -105,7 +105,7 @@ After you run these commands, Packer will do the following:
 
 The expected output should look like this:
 
-```
+```bash
 ==> Wait completed after 8 minutes 42 seconds
 
 ==> Builds finished. The artifacts of successful builds are:

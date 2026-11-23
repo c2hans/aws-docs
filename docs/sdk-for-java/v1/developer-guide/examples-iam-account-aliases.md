@@ -18,7 +18,7 @@ To create an account alias, call the AmazonIdentityManagementClient’s `createA
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.CreateAccountAliasRequest;
@@ -27,7 +27,7 @@ import com.amazonaws.services.identitymanagement.model.CreateAccountAliasResult;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -49,7 +49,7 @@ The returned [ListAccountAliasesResult](https://docs.aws.amazon.com/AWSJavaSDK/l
 
  **imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.ListAccountAliasesResult;
@@ -57,7 +57,7 @@ import com.amazonaws.services.identitymanagement.model.ListAccountAliasesResult;
 
  **code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -77,7 +77,7 @@ To delete your account’s alias, call the AmazonIdentityManagementClient’s `d
 
  **imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.DeleteAccountAliasRequest;
@@ -86,7 +86,7 @@ import com.amazonaws.services.identitymanagement.model.DeleteAccountAliasResult;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 

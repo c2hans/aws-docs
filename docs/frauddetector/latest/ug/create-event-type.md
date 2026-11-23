@@ -64,7 +64,7 @@ The following example shows a sample request for the `PutEventType` API. The exa
 **Note**
 You must first create variables, entity types, and labels prior to adding them to the event type.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

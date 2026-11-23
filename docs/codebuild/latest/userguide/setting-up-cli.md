@@ -12,13 +12,13 @@ After installing the AWS CLI, complete the following tasks:
 
 1. Run the following command to confirm whether your installation of the AWS CLI supports CodeBuild:
 
-   ```
+   ```shell
    aws codebuild list-builds
    ```
 
    If successful, information similar to the following will appear in the output:
 
-   ```
+   ```json
    {
      "ids": []
    }

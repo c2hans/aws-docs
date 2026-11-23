@@ -61,7 +61,7 @@ The following example restarts an Amazon EC2-compatible instance. It requires tw
 
 *YAML example*
 
-```
+```yaml
 description: Restart EC2 instance
 schemaVersion: '0.3'
 parameters:
@@ -100,7 +100,7 @@ mainSteps:
 
 *JSON example*
 
-```
+```JSON
 {
   "description" : "Restart EC2 instance",
   "schemaVersion" : "0.3",

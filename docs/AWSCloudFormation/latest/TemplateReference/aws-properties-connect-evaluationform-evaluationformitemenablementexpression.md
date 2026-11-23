@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-connect-evaluationform-evaluationformitemenablementexpression-properties"></a>
 
 `Comparator`  <a name="cfn-connect-evaluationform-evaluationformitemenablementexpression-comparator"></a>
-A comparator to be used against list of values.
+A comparator to be used against a list of values. `IN`, `NOT_IN`, `ALL_IN`, and `EXACT` compare sets of values. `GREATER_THAN`, `LESS_THAN`, `GREATER_THAN_OR_EQUAL_TO`, and `LESS_THAN_OR_EQUAL_TO` compare a single numeric or date and time value. `EQUAL_TO` and `NOT_EQUAL_TO` compare a single value.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `IN | NOT_IN | ALL_IN | EXACT`

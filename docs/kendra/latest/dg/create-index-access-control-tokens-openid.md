@@ -48,7 +48,7 @@ The following examples show how to use an OpenID token for user access control w
 
 To create an index with the AWS CLI using a JSON input file, first create a JSON file with your desired parameters:
 
-```
+```json
 {
     "Name": "{{user-context}}",
     "Edition": "{{ENTERPRISE_EDITION}}",
@@ -80,7 +80,7 @@ aws kendra create-index --cli-input-json file://create-index-openid.json
 ------
 #### [ Python ]
 
-```
+```Python
 response = kendra.create_index(
     Name='{{user-context}}',
     Edition='{{ENTERPRISE_EDITION}}',

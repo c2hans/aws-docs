@@ -86,7 +86,7 @@ The following example uses the [ UpdateConnectivity](https://docs.aws.amazon.com
 
 In the following example, replace the sample cluster ARN, arn:aws:kafka:{{us-east-1}}:{{ 123456789012}}:cluster/{{myCluster}} /{{12345678-1234-1234-1234-123456789012 -1}}, with your actual MSK cluster ARN. To get the current cluster version use the [ DescribeCluster](https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn.html#DescribeCluster) API.
 
-```
+```python
 import boto3
 
 client = boto3.client("kafka")

@@ -37,7 +37,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-s3-crea
 
  Use the `create-channel` command to create an Amazon S3 delivery that sends records to a general purpose Amazon S3 bucket with JSON format and GZIP compression:
 
-```
+```bash
 aws kinesis create-channel \
     --channel-name "my-s3-delivery" \
     --service-execution-role-arn "arn:aws:iam::111122223333:role/my-channel-role" \

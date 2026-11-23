@@ -21,7 +21,7 @@ If you plan to use SageMaker AI notebooks with development endpoints, you must s
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

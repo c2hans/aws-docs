@@ -12,7 +12,7 @@ By default, each Iceberg write query runs as its own auto-commit transaction, an
 
 The following example creates a table with a single auto-commit statement:
 
-```
+```sql
 CREATE TABLE sales_schema.orders (
     order_id int,
     customer_id int,
@@ -31,7 +31,7 @@ You can run a multi-statement transaction in any of the following ways:
 
 The following example applies a nightly batch of point-of-sale (POS) changes to a `sales` table. The `MERGE` statement adds new sales and corrects existing ones from the `pos_sales` Iceberg staging table. The `DELETE` statement removes the voided sales listed in the `pos_voids` Iceberg staging table. The `SELECT` statement checks the day's total before the transaction commits.
 
-```
+```sql
 BEGIN;
 
 -- Add new sales and correct existing ones
@@ -56,7 +56,7 @@ The `SELECT` statement sees the changes from the `MERGE` and `DELETE` statements
 
 If any statement in the transaction fails, or if you end the transaction with `ROLLBACK`, Amazon Redshift doesn't publish any of the transaction's changes. The following example inserts an order, updates it, and then rolls back both changes:
 
-```
+```sql
 BEGIN;
 INSERT INTO "analytics-bucket@s3tablescatalog".sales_db.orders VALUES (12346, 5432, '2026-10-06', 150.75);
 UPDATE "analytics-bucket@s3tablescatalog".sales_db.orders SET total_amount = 160.75 WHERE order_id = 12346;
@@ -79,7 +79,7 @@ A transaction that writes to an Iceberg table can read from any tables, but it c
 
 When you run a statement that isn't allowed, the statement fails and Amazon Redshift aborts the transaction. None of the changes made earlier in the transaction are published. In the following example, the second `DELETE` statement fails because it writes to a second Iceberg table:
 
-```
+```sql
 BEGIN;
 DELETE FROM iceberg_schema.sales
   WHERE sale_id IN (SELECT sale_id FROM iceberg_schema.pos_voids);

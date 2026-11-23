@@ -19,7 +19,7 @@ aws neptunedata get-engine-status
 
 The [JSON output](access-graph-status.md#access-graph-status-sample-output) includes a `"dbEngineVersion"` field like this:
 
-```
+```json
   "dbEngineVersion": "1.3.0.0",
 ```
 

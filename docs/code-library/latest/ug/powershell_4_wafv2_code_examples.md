@@ -26,7 +26,7 @@ The following code example shows how to use `New-WAF2WebACL`.
 **Tools for PowerShell V4**
 **Example 1: This command creates a new web ACL named "waf-test". Kindly note that as per service API documentation, 'DefaultAction' is a required property. Hence, value for either '-DefaultAction\_Allow' and/or '-DefaultAction\_Block' should be specified. Since '-DefaultAction\_Allow' and '-DefaultAction\_Block' are not the required properties, value '@{}' could be used as placeholder as shown in above example.**
 
-```
+```powershell
 New-WAF2WebACL -Name "waf-test" -Scope REGIONAL -Region eu-west-1 -VisibilityConfig_CloudWatchMetricsEnabled $true -VisibilityConfig_SampledRequestsEnabled $true -VisibilityConfig_MetricName "waf-test" -Description "Test" -DefaultAction_Allow @{}
 ```
 **Output:**

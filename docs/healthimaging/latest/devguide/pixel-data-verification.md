@@ -19,7 +19,7 @@ During import, HealthImaging provides built-in pixel data verification by checki
 
    Following is example metadata output for the IFRC that is generated as part of the import job process and recorded to `job-output-manifest.json`.
 
-   ```
+   ```json
    "ImageFrames": [{
    "ID": "67890678906789012345123451234512",
    "PixelDataChecksumFromBaseToFullResolution": [
@@ -33,7 +33,7 @@ During import, HealthImaging provides built-in pixel data verification by checki
 
    For images stored in their original transfer syntax 1.2.840.10008.1.2.4.203, 1.2.840.10008.1.2.4.91, 1.2.840.10008.1.2.4.50, and 1.2.840.10008.1.2.1 (Binary Segmentation only) the `MinPixelValue` and `MaxPixelValue` will not be available. The `FrameSizeInBytes` indicates the size of the original frame.
 
-   ```
+   ```json
    "PixelDataChecksumFromBaseToFullResolution": [
       {"Width": 512, "Height": 512, "Checksum": 1379921327 }
    ],
@@ -44,7 +44,7 @@ During import, HealthImaging provides built-in pixel data verification by checki
 
    For images stored in HTJ2K Lossless with RPCL, the `FrameSizeInBytes` indicates the size of the decoded image frame.
 
-   ```
+   ```json
    "PixelDataChecksumFromBaseToFullResolution": [
       {"Width": 512, "Height": 512, "Checksum": 1379921327 }
    ],

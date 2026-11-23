@@ -32,7 +32,7 @@ This checkpointing method is recommended if you use PyTorch and the SageMaker mo
 
 To save checkpoints of a model trained with model parallelism, use the [`smdistributed.modelparallel.torch.save_checkpoint`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.save_checkpoint) API with the partial checkpointing option set to true (`partial=True`). This saves each model partition individually. In addition to the model and the optimizer state, you can also save any additional custom data through the `user_content` argument. The checkpointed model, optimizer, and user content are saved as separate files. The `save_checkpoint` API call creates checkpoint folders in the following structure.
 
-```
+```txt
 - path
   - ${tag}_partial (folder for partial checkpoints)
     - model_rankinfo.pt
@@ -50,7 +50,7 @@ When saving a partial checkpoint, the library also saves the model partition dec
 
 The following code snippet shows how to set the checkpoint APIs in a PyTorch training script.
 
-```
+```py
 import smdistributed.modelparallel.torch as smp
 
 model = ...
@@ -129,7 +129,7 @@ This checkpointing method is recommended if you use PyTorch, [Tensor Parallelism
 
 1. Prepare a model object and wrap it with the library's wrapper function `smp.DistributedModel()`.
 
-   ```
+   ```py
    model = MyModel(...)
    model = smp.DistributedModel(model)
    ```
@@ -138,7 +138,7 @@ This checkpointing method is recommended if you use PyTorch, [Tensor Parallelism
 
    If there are parameters with duplicated IDs in the model parameter iterable, loading the checkpointed optimizer state fails. To create an iterable of model parameters with unique IDs for your optimizer, see the following:
 
-   ```
+   ```py
    unique_params = []
    unique_params_set = set()
    for p in model.parameters():
@@ -152,14 +152,14 @@ This checkpointing method is recommended if you use PyTorch, [Tensor Parallelism
 
 1. Wrap the optimizer using the library's wrapper function `smp.DistributedOptimizer()`.
 
-   ```
+   ```py
    optimizer = smp.DistributedOptimizer(optimizer)
    ```
 
 1. Save the model and the optimizer state using [`smp.save()`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.save). Depending on how you want to save checkpoints, choose one of the following two options:
    + **Option 1:** Save a partial model on each `mp_rank` for a single `MP_GROUP`.
 
-     ```
+     ```py
      model_dict = model.local_state_dict() # save a partial model
      opt_dict = optimizer.local_state_dict() # save a partial optimizer state
      # Save the dictionaries at rdp_rank 0 as a checkpoint
@@ -176,7 +176,7 @@ This checkpointing method is recommended if you use PyTorch, [Tensor Parallelism
 With tensor parallelism, make sure you set the if statement as `if smp.rdp_rank() == 0` instead of `if smp.dp_rank() == 0`. When the optimizer state is sharded with tensor parallelism, all reduced-data parallel ranks must save their own partition of the optimizer state. Using a wrong *if* statement for checkpointing might result in a stalling training job. For more information about using `if smp.dp_rank() == 0` without tensor parallelism, see [General Instruction for Saving and Loading](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#general-instruction-for-saving-and-loading) in the *SageMaker Python SDK documentation*.
    + **Option 2:** Save the full model.
 
-     ```
+     ```py
      if smp.rdp_rank() == 0:
          model_dict = model.state_dict(gather_to_rank0=True) # save the full model
          if smp.rank() == 0:
@@ -195,7 +195,7 @@ The full model only needs to be saved at `smp.rank() == 0`.
 1. Load the checkpoints using [`smp.load()`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.load). Depending on how you checkpointed in the previous step, choose one of the following two options:
    + **Option 1:** Load the partial checkpoints.
 
-     ```
+     ```py
      checkpoint = smp.load("/checkpoint.pt", partial=True)
      model.load_state_dict(checkpoint["model_state_dict"], same_partition_load=False)
      optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
@@ -204,7 +204,7 @@ The full model only needs to be saved at `smp.rank() == 0`.
      You can set `same_partition_load=True` in `model.load_state_dict()` for a faster load, if you know that the partition will not change.
    + **Option 2:** Load the full checkpoints.
 
-     ```
+     ```py
      if smp.rdp_rank() == 0:
          checkpoint = smp.load("/checkpoint.pt", partial=False)
          model.load_state_dict(checkpoint["model_state_dict"])
@@ -227,7 +227,7 @@ The fine-tuning needs to be configured in your training script. The following co
 **Note**
 Fine-tuning a distributed transformer (a Transformer model wrapped by `smp.DistributedModel()`) with the [smp.delayed\_param\_initialization](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.delay_param_initialization) function activated requires the fine-tuning job to be configured with an FSx for Lustre file system. In cases where you want to fine-tune a large-scale model with the delayed parameter initialization option, you should set up an FSx for Lustre file system.
 
-```
+```py
 import argparse
 from transformers import AutoModelForCausalLM
 import smdistributed.modelparallel

@@ -61,6 +61,11 @@ Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `^[a-z0-9](?:[a-z0-9\-]{0,61}[a-z0-9])?$`
 Required: No
 
+ ** DcrConfiguration **   <a name="CognitoUserPools-Type-UserPoolType-DcrConfiguration"></a>
+The dynamic client registration configuration for the user pool. With dynamic client registration, applications can register their own app clients at runtime through the registration endpoint of your user pool domain. To activate this setting, your user pool must be in the [ Essentials tier](https://docs.aws.amazon.com/cognito/latest/developerguide/feature-plans-features-essentials.html) or higher.
+Type: [DcrConfigurationType](API_DcrConfigurationType.md) object
+Required: No
+
  ** DeletionProtection **   <a name="CognitoUserPools-Type-UserPoolType-DeletionProtection"></a>
 When active, `DeletionProtection` prevents accidental deletion of your user pool. Before you can delete a user pool that you have protected against deletion, you must deactivate this feature.
 When you try to delete a protected user pool in a `DeleteUserPool` API request, Amazon Cognito returns an `InvalidParameterException` error. To delete a protected user pool, send a new `DeleteUserPool` request after you deactivate deletion protection in an `UpdateUserPool` API request.

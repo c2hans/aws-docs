@@ -18,6 +18,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 
 ![Diagram showing Highly available anchor connectivity with AWS Direct Connect and public internet access](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/highly-available-anchor-connectivity.png)
 
+*Highly available anchor connectivity with AWS Direct Connect and public internet access*
+
  Outpost A has three redundant network paths to reach its private anchor point. Two paths are available through redundant Direct Connect circuits at a single Direct Connect location. The third path is available through a Direct Connect circuit at a second Direct Connect location. This design keeps Outpost A’s service link traffic on private networks and provides path redundancy that allows for failure of any one of the Direct Connect circuits or failure of an entire Direct Connect location.
 
  Outpost B has four redundant network paths to reach its public anchor point. Three paths are available through public VIFs provisioned on the Direct Connect circuits and locations used by Outpost A. The fourth path is available through the customer WAN and the public internet. Outpost B’s service link traffic may be routed over any available path that can successfully reach the anchor points on the public internet. Using the Direct Connect paths may provide more consistent latency and higher bandwidth availability, while the public internet path may be used for Disaster Recovery (DR) or bandwidth augmentation scenarios.

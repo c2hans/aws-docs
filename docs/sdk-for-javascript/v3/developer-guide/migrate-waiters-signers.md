@@ -15,7 +15,7 @@ This page describes the usage of waiters and signers in the AWS SDK for JavaScri
 
  In v3, you don't need to import waiters if your application doesn't need one. Moreover, you can import only the waiter you need to wait for the particular desired state you want. Thus, you can reduce your bundle size and improve performance. Here is an example of waiting for bucket to be ready after creation:
 
-```
+```javascript
 import { S3Client, CreateBucketCommand, waitUntilBucketExists } from "@aws-sdk/client-s3"; // ES6 import
 // const { S3Client, CreateBucketCommand, waitUntilBucketExists } = require("@aws-sdk/client-s3"); // CommonJS import
 

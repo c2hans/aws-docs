@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 
 The following is an example of the specifications required to create a SAP HANA high-availability deployment with HANA database software installed:
 
-```
+```json
 {
   "KeyPairName": "ExampleKeyPair",
   "VpcId": "vpc-a1b2c3d4",

@@ -67,6 +67,26 @@ Information about the reference when the `referenceType` is `URL`. Otherwise, nu
 Type: [UrlReference](API_UrlReference.md) object
 Required: No
 
+ ** VoicemailAnalysis **   <a name="connect-Type-ReferenceSummary-VoicemailAnalysis"></a>
+Information about the reference when the `referenceType` is `VOICEMAIL_ANALYSIS`. Otherwise, null.
+Type: [VoicemailAnalysisReference](API_VoicemailAnalysisReference.md) object
+Required: No
+
+ ** VoicemailAnalysisRedacted **   <a name="connect-Type-ReferenceSummary-VoicemailAnalysisRedacted"></a>
+Information about the reference when the `referenceType` is `VOICEMAIL_ANALYSIS_REDACTED`. Otherwise, null.
+Type: [VoicemailAnalysisReference](API_VoicemailAnalysisReference.md) object
+Required: No
+
+ ** VoicemailRecording **   <a name="connect-Type-ReferenceSummary-VoicemailRecording"></a>
+Information about the reference when the `referenceType` is `VOICEMAIL_RECORDING`. Otherwise, null.
+Type: [VoicemailRecordingReference](API_VoicemailRecordingReference.md) object
+Required: No
+
+ ** VoicemailRecordingRedacted **   <a name="connect-Type-ReferenceSummary-VoicemailRecordingRedacted"></a>
+Information about the reference when the `referenceType` is `VOICEMAIL_RECORDING_REDACTED`. Otherwise, null.
+Type: [VoicemailRecordingReference](API_VoicemailRecordingReference.md) object
+Required: No
+
 ## See Also
 <a name="API_ReferenceSummary_SeeAlso"></a>
 

@@ -25,7 +25,7 @@ After you develop a blueprint, you must upload it to Amazon S3. You must have wr
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

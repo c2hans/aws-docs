@@ -73,7 +73,7 @@ This example illustrates one usage of VerifySMSSandboxPhoneNumber.
 #### Sample Request
 <a name="API_VerifySMSSandboxPhoneNumber_Example_1_Request"></a>
 
-```
+```xml
 https://sns.us-west-2.amazonaws.com/?Action=VerifySMSSandboxPhoneNumber
 &PhoneNumber=%2B12065550100
 &OneTimePassword=7973610
@@ -84,7 +84,7 @@ https://sns.us-west-2.amazonaws.com/?Action=VerifySMSSandboxPhoneNumber
 #### Sample Response
 <a name="API_VerifySMSSandboxPhoneNumber_Example_1_Response"></a>
 
-```
+```xml
 <VerifySMSSandboxPhoneNumberResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <VerifySMSSandboxPhoneNumberResult>
     </VerifySMSSandboxPhoneNumberResult>

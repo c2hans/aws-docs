@@ -12,7 +12,7 @@ When deployed with default settings, API invoke permissions are only granted to 
 
 To retrieve the ARN of the default IAM user, run:
 
-```
+```sh
 $ REGION={{<region>}}
 $ API_STACK_NAME={{<stack-name>}}
 $ aws cloudformation describe-stacks --region ${REGION} --stack-name ${API_STACK_NAME} --query "Stacks[0].Outputs[?OutputKey=='ParallelClusterApiUserRole'].OutputValue" --output text
@@ -22,7 +22,7 @@ To obtain temporary credentials for the default IAM user, run the [ STS AssumeR
 
 To retrieve the AWS ParallelCluster API endpoint run the following command:
 
-```
+```sh
 $ REGION={{<region>}}
 $ API_STACK_NAME={{<stack-name>}}
 $ aws cloudformation describe-stacks --region ${REGION} --stack-name ${API_STACK_NAME} --query "Stacks[0].Outputs[?OutputKey=='ParallelClusterApiInvokeUrl'].OutputValue" --output text

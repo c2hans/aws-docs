@@ -28,7 +28,7 @@ After you finish setting up your VPC, attach the following permissions to your [
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -137,7 +137,7 @@ You can use security groups to establish rules for controlling Amazon Bedrock ac
 
 When you submit a [CreateModelInvocationJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelInvocationJob.html) request, you can include a `VpcConfig` as a request parameter to specify the VPC subnets and security groups to use, as in the following example.
 
-```
+```json
 "vpcConfig": {
     "securityGroupIds": [
         "{{sg-0123456789abcdef0}}"

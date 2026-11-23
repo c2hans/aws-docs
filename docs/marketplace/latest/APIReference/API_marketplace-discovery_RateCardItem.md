@@ -33,6 +33,12 @@ Length Constraints: Minimum length of 1. Maximum length of 4096.
 Pattern: `(.)+`
 Required: Yes
 
+ ** regionalPrices **   <a name="AWSMarketplaceService-Type-marketplace-discovery_RateCardItem-regionalPrices"></a>
+The price overrides for the dimension in individual AWS Regions. When a Regional price is present for an AWS Region, it replaces the default price.
+Type: Array of [RegionalPrice](API_marketplace-discovery_RegionalPrice.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
+Required: Yes
+
  ** unit **   <a name="AWSMarketplaceService-Type-marketplace-discovery_RateCardItem-unit"></a>
 The unit of measurement for the dimension.
 Type: String
@@ -48,7 +54,7 @@ Pattern: `(.)+`
 Required: No
 
  ** dimensionLabels **   <a name="AWSMarketplaceService-Type-marketplace-discovery_RateCardItem-dimensionLabels"></a>
-Labels used to categorize this dimension, such as by region.
+Labels that categorize this dimension, such as by region.
 Type: Array of [DimensionLabel](API_marketplace-discovery_DimensionLabel.md) objects
 Required: No
 

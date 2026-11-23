@@ -52,7 +52,7 @@ Apart from CBL\_NOT which has only one operand (target), all other operations ha
 
 Here is a cobol usage of CBL\_NOT:
 
-```
+```cobol
    * TARGET:       00000101
    * OPERATION:     NOT
    * EXPECTED:     11111010 = 64000 dec (2nd byte unchanged - all 0)
@@ -62,7 +62,7 @@ Here is a cobol usage of CBL\_NOT:
 
 and the corresponding java modernization:
 
-```
+```java
     /*
     TARGET:       00000101
     OPERATION:     NOT
@@ -77,7 +77,7 @@ and the corresponding java modernization:
 
 See for instance the following COBOL code using CBL\_AND:
 
-```
+```cobol
    * SOURCE:       00000011
    * OPERATION:     AND
    * TARGET:       00000101
@@ -89,7 +89,7 @@ See for instance the following COBOL code using CBL\_AND:
 
 and its java modernization:
 
-```
+```java
     /*
     SOURCE:       00000011
     OPERATION:     AND
@@ -137,7 +137,7 @@ Any failure to these tests will trigger an `IllegalArgumentException`.
 
 Here is a sample usage in a COBOL program, from the Carddemo application:
 
-```
+```cobol
    9999-ABEND-PROGRAM.
        DISPLAY 'ABENDING PROGRAM'
        MOVE 0 TO TIMING
@@ -147,7 +147,7 @@ Here is a sample usage in a COBOL program, from the Carddemo application:
 
 and the corresponding modernized java code:
 
-```
+```java
 public void _9999AbendProgram(final Cbtrn03cContext ctx, final ExecutionController ctrl) {
     DisplayUtils.display(ctx, ctrl, LOGGER, "ABENDING PROGRAM");
     ctx.getTiming().setTiming(0);
@@ -191,7 +191,7 @@ It takes three or four arguments (last argument is optional):
 
 Here is a sample call from a COBOL program (the structure for the feedback code holder FC contains ellipsis, as is contains hundreds of conditions (level 88) entries not shown here):
 
-```
+```cobol
    WORKING-STORAGE SECTION.
    01  LILIANS              PIC S9(9) BINARY.
    01  TIMESTAMP-OUT               PIC X(80).
@@ -252,7 +252,7 @@ It takes three or four arguments (last argument is optional):
 
 Here is a sample COBOL snippet showing the usage of the CEELOCT utility. The feedback code holder structure FC is not given in full as it contains hundreds of conditions (level 88) entries.
 
-```
+```cobol
    WORKING-STORAGE SECTION.
    01  LILIANS              PIC S9(9) BINARY.
    01  GREGORN              PIC X(80).
@@ -298,7 +298,7 @@ The CEERAN0 program takes three parameters:
 
 This a java sample demonstrating how to use the CEERAN0 program, using all parameters including the feedback code, with bits from several layers (entity, service):
 
-```
+```java
 //Entity layer
 public class Randomin extends RecordEntity {
     private final Group root = new Group(getData()).named("RANDOMIN");
@@ -353,7 +353,7 @@ It takes three or four arguments (last argument is optional):
 
 Here is a sample call to CEESECS utility in a COBOL program:
 
-```
+```cobol
    WORKING-STORAGE SECTION.
    01  SECONDS              COMP-2.
    01  TIMESTAMP-IN.
@@ -409,7 +409,7 @@ While throwing the `StopRunUnitException` to interrupt the current run unit run,
 
 Here is a java sample usage of the ILBOABN0 program, resulting from a COBOL modernization through AWS transform:
 
-```
+```cobol
    77  WS-ABND-CODE          COMP   PIC S9(4)      VALUE +1234.
 ...
 ...
@@ -420,7 +420,7 @@ Here is a java sample usage of the ILBOABN0 program, resulting from a COBOL mode
 
 and the matching java modernization:
 
-```
+```java
 //Entity layer
 private final Group root = new Group(getData());
 private final Elementary wsAbndCode = new Elementary(root,new BinaryType(4, 0, "STD", false, false, true),Short.valueOf("1234"));

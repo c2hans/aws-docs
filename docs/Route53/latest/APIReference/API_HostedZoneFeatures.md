@@ -15,9 +15,30 @@ Type: String
 Valid Values: `ENABLING | ENABLE_FAILED | ENABLING_HOSTED_ZONE_LOCKED | ENABLED | DISABLING | DISABLE_FAILED | DISABLED | DISABLING_HOSTED_ZONE_LOCKED`
 Required: No
 
+ ** ChangeGuardrails **   <a name="Route53-Type-HostedZoneFeatures-ChangeGuardrails"></a>
+The name and status of each Change Guardrail for the hosted zone. For the guardrail names and statuses, see `ChangeGuardrail`.
+Type: Array of [ChangeGuardrail](API_ChangeGuardrail.md) objects
+Array Members: Minimum number of 1 item.
+Required: No
+
+ ** ChangeHistory **   <a name="Route53-Type-HostedZoneFeatures-ChangeHistory"></a>
+The status of Change History for the hosted zone, and the earliest time from which you can read its change history.
+Type: [ChangeHistoryFeature](API_ChangeHistoryFeature.md) object
+Required: No
+
  ** FailureReasons **   <a name="Route53-Type-HostedZoneFeatures-FailureReasons"></a>
 Information about any failures that occurred when attempting to enable or configure features for the hosted zone.
 Type: [HostedZoneFailureReasons](API_HostedZoneFailureReasons.md) object
+Required: No
+
+ ** PublicDNSFallbackStatus **   <a name="Route53-Type-HostedZoneFeatures-PublicDNSFallbackStatus"></a>
+The current status of public DNS fallback for the hosted zone. Valid values:
++  `ENABLED`: Public DNS fallback is enabled.
++  `DISABLED`: Public DNS fallback is disabled.
++  `ENABLING`: A request to enable public DNS fallback is still propagating.
++  `DISABLING`: A request to disable public DNS fallback is still propagating.
+Type: String
+Valid Values: `ENABLED | DISABLED | ENABLING | DISABLING`
 Required: No
 
 ## See Also

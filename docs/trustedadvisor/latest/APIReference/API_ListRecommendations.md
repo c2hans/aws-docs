@@ -155,7 +155,7 @@ List all recommendations and do not include a filter.
 #### Sample Response
 <a name="API_ListRecommendations_Example_1_Response"></a>
 
-```
+```json
 {
                     "recommendationSummaries": [
                     {
@@ -225,7 +225,7 @@ Filter and return a max of one Recommendation that regards AWS IAM.
 #### Sample Request
 <a name="API_ListRecommendations_Example_2_Request"></a>
 
-```
+```json
 {
                     "awsService": "iam",
                     "maxResults": 100
@@ -235,7 +235,7 @@ Filter and return a max of one Recommendation that regards AWS IAM.
 #### Sample Response
 <a name="API_ListRecommendations_Example_2_Response"></a>
 
-```
+```json
 {
                     "recommendationSummaries": [{
                     "arn": "arn:aws:trustedadvisor::000000000000:recommendation/55fa4d2e-bbb7-491a-833b-5773e9589578",
@@ -276,7 +276,7 @@ Use the "nextToken" returned from a previous request to fetch the next page of f
 #### Sample Request
 <a name="API_ListRecommendations_Example_3_Request"></a>
 
-```
+```json
 {
                     "nextToken": "REDACTED",
                     "awsService": "rds",
@@ -287,7 +287,7 @@ Use the "nextToken" returned from a previous request to fetch the next page of f
 #### Sample Response
 <a name="API_ListRecommendations_Example_3_Response"></a>
 
-```
+```json
 {
                     "recommendationSummaries": [{
                     "arn": "arn:aws:trustedadvisor::000000000000:recommendation/8b602b6f-452d-4cb2-8a9e-c7650955d9cd",

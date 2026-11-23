@@ -20,7 +20,7 @@ The CRL configuration specifies the following:
 
 If successful, this function returns the Amazon Resource Name (ARN) of the CA.
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.auth.AWSCredentials;

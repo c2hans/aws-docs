@@ -36,7 +36,7 @@ Programming elements:
 
   Class [Tag](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/CloudFormation/TTag.html)
 
-```
+```csharp
 using Amazon.CloudFormation;
 using Amazon.CloudFormation.Model;
 using Amazon.Runtime;

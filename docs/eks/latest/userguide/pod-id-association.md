@@ -34,7 +34,7 @@ To create an EKS Pod Identity association, there is only a single step; you crea
 **Note**
 The list only contains roles that have the following trust policy which allows EKS Pod Identity to use them.
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -88,7 +88,7 @@ A session policy can only be applied when the **Disable session tags** setting i
 
       You can run the following command to create an example policy file that allows read-only access to an Amazon S3 bucket. You can optionally store configuration information or a bootstrap script in this bucket, and the containers in your Pod can read the file from the bucket and load it into your application. If you want to create this example policy, copy the following contents to your device. Replace {{my-pod-secrets-bucket}} with your bucket name and run the command.
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -103,7 +103,7 @@ A session policy can only be applied when the **Disable session tags** setting i
 
    1. Create the IAM policy.
 
-      ```
+      ```bash
       aws iam create-policy --policy-name my-policy --policy-document file://my-policy.json
       ```
 
@@ -113,7 +113,7 @@ A session policy can only be applied when the **Disable session tags** setting i
 
       Create a Kubernetes service account. Copy the following contents to your device. Replace {{my-service-account}} with your desired name and {{default}} with a different namespace, if necessary. If you change {{default}}, the namespace must already exist.
 
-      ```
+      ```yaml
       cat >my-service-account.yaml <<EOF
       apiVersion: v1
       kind: ServiceAccount
@@ -126,13 +126,13 @@ A session policy can only be applied when the **Disable session tags** setting i
 
       Run the following command.
 
-      ```
+      ```yaml
       kubectl apply -f my-service-account.yaml
       ```
 
    1. Run the following command to create a trust policy file for the IAM role.
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -153,13 +153,13 @@ A session policy can only be applied when the **Disable session tags** setting i
 
    1. Create the role. Replace {{my-role}} with a name for your IAM role, and {{my-role-description}} with a description for your role.
 
-      ```
+      ```bash
       aws iam create-role --role-name my-role --assume-role-policy-document file://trust-relationship.json --description "my-role-description"
       ```
 
    1. Attach an IAM policy to your role. Replace {{my-role}} with the name of your IAM role and {{my-policy}} with the name of an existing policy that you created.
 
-      ```
+      ```bash
       aws iam attach-role-policy --role-name my-role --policy-arn=arn:aws:iam::111122223333:policy/my-policy
       ```
 **Note**
@@ -167,13 +167,13 @@ Unlike IAM roles for service accounts, EKS Pod Identity doesn’t use an annotat
 
    1. Run the following command to create the association. Replace `my-cluster` with the name of the cluster, replace {{my-service-account}} with your desired name and {{default}} with a different namespace, if necessary.
 
-      ```
+      ```bash
       aws eks create-pod-identity-association --cluster-name my-cluster --role-arn arn:aws:iam::111122223333:role/my-role --namespace default --service-account my-service-account
       ```
 
       An example output is as follows.
 
-      ```
+      ```json
       {
           "association": {
               "clusterName": "my-cluster",
@@ -196,13 +196,13 @@ You can specify a namespace and service account by name that doesn’t exist in 
 
 1. Confirm that the IAM role’s trust policy is configured correctly.
 
-   ```
+   ```bash
    aws iam get-role --role-name my-role --query Role.AssumeRolePolicyDocument
    ```
 
    An example output is as follows.
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -222,31 +222,31 @@ You can specify a namespace and service account by name that doesn’t exist in 
 
 1. Confirm that the policy that you attached to your role in a previous step is attached to the role.
 
-   ```
+   ```bash
    aws iam list-attached-role-policies --role-name my-role --query 'AttachedPolicies[].PolicyArn' --output text
    ```
 
    An example output is as follows.
 
-   ```
+   ```json
                   arn:aws:iam::111122223333:policy/my-policy
    ```
 
 1. Set a variable to store the Amazon Resource Name (ARN) of the policy that you want to use. Replace {{my-policy}} with the name of the policy that you want to confirm permissions for.
 
-   ```
+   ```bash
    export policy_arn=arn:aws:iam::111122223333:policy/my-policy
    ```
 
 1. View the default version of the policy.
 
-   ```
+   ```bash
    aws iam get-policy --policy-arn $policy_arn
    ```
 
    An example output is as follows.
 
-   ```
+   ```json
    {
        "Policy": {
            "PolicyName": "my-policy",
@@ -261,13 +261,13 @@ You can specify a namespace and service account by name that doesn’t exist in 
 
 1. View the policy contents to make sure that the policy includes all the permissions that your Pod needs. If necessary, replace {{1}} in the following command with the version that’s returned in the previous output.
 
-   ```
+   ```bash
    aws iam get-policy-version --policy-arn $policy_arn --version-id v1
    ```
 
    An example output is as follows.
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

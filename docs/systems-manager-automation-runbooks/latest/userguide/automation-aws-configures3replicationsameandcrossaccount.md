@@ -96,7 +96,7 @@ The following AutomationAssumeRole policy examples assume that you provide the S
 
 Example **AutomationAssumeRole** policy for **same-account replication**:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -188,7 +188,7 @@ The Policy statements (KMSKeyReadOperations and KMSKeyMutatingOperations) are on
 
 Example **AutomationAssumeRole** policy for **cross-account replication**:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -278,7 +278,7 @@ Replace CROSS\_ACCOUNT\_REPLICATION\_ROLE\_ARN with the actual CrossAccountRepli
 
 Example **CrossAccountReplicationRole** policy:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -325,7 +325,7 @@ The KMS statements (KMSDestinationKeyReadOperations and KMSDestinationKeyMutatin
 
 Example CrossAccountReplicationRole trust policy:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -345,7 +345,7 @@ Replace AUTOMATION\_ASSUME\_ROLE\_ARN with the actual AutomationAssumeRole param
 
 Example **S3ReplicationRole** policy:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -408,7 +408,7 @@ The S3CrossAccountPermissions statement is only required for cross-account bucke
 
 Example S3ReplicationRole trust policy:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

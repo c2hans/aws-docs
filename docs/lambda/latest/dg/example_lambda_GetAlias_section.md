@@ -38,7 +38,7 @@ For more information, see [Configuring AWS Lambda Function Aliases](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example retrieves the Routing Config weights for a specific Lambda Function Alias.**
 
-```
+```powershell
 Get-LMAlias -FunctionName "MylambdaFunction123" -Name "newlabel1" -Select RoutingConfig
 ```
 **Output:**
@@ -53,7 +53,7 @@ AdditionalVersionWeights
 **Tools for PowerShell V5**
 **Example 1: This example retrieves the Routing Config weights for a specific Lambda Function Alias.**
 
-```
+```powershell
 Get-LMAlias -FunctionName "MylambdaFunction123" -Name "newlabel1" -Select RoutingConfig
 ```
 **Output:**

@@ -39,7 +39,7 @@ The following policy grants permission to create a labeling job for a [built-in 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -96,7 +96,7 @@ If you create a streaming labeling job, you must add a policy similar to the fol
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -258,7 +258,7 @@ The following statement allows SageMaker AI to assume the execution role to crea
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

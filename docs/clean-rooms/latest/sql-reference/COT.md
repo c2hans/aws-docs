@@ -29,7 +29,7 @@ The input parameter is a `DOUBLE PRECISION` number.
 
 To return the cotangent of 1, use the following example.
 
-```
+```sql
 SELECT COT(1);
 
 +--------------------+

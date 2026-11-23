@@ -16,25 +16,25 @@ called `aws-auth`. `eksctl` provides commands to read and edit this config map.
 
  **Get all identity mappings:**
 
-```
+```bash
 eksctl get iamidentitymapping --cluster <clusterName> --region=<region>
 ```
 
  **Get all identity mappings matching an arn:**
 
-```
+```bash
 eksctl get iamidentitymapping --cluster <clusterName> --region=<region> --arn arn:aws:iam::123456:role/testing-role
 ```
 
  **Create an identity mapping:**
 
-```
+```bash
  eksctl create iamidentitymapping --cluster  <clusterName> --region=<region> --arn arn:aws:iam::123456:role/testing --group system:masters --username admin
 ```
 
  **Delete an identity mapping:**
 
-```
+```bash
 eksctl delete iamidentitymapping --cluster  <clusterName> --region=<region> --arn arn:aws:iam::123456:role/testing
 ```
 
@@ -43,13 +43,13 @@ Above command deletes a single mapping FIFO unless `--all` is given in which cas
 
  **Create an account mapping:**
 
-```
+```bash
  eksctl create iamidentitymapping --cluster  <clusterName> --region=<region> --account user-account
 ```
 
  **Delete an account mapping:**
 
-```
+```bash
  eksctl delete iamidentitymapping --cluster  <clusterName> --region=<region> --account user-account
 ```
 
@@ -58,7 +58,7 @@ Above command deletes a single mapping FIFO unless `--all` is given in which cas
 
 The identity mappings can also be specified in ClusterConfig:
 
-```
+```yaml
 ---
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
@@ -89,6 +89,6 @@ nodeGroups:
     desiredCapacity: 1
 ```
 
-```
+```bash
  eksctl create iamidentitymapping -f cluster-with-iamidentitymappings.yaml
 ```

@@ -30,7 +30,7 @@ The Maya Windows installer requires Administrator permissions that aren't availa
 
 Submit the build:
 
-```
+```bash
 ./submit-package-job maya-2026
 ```
 

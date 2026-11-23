@@ -45,7 +45,7 @@ In the Amazon Comprehend Medical console, this is shown like this:
 
 When using the **DetectPHI** operation, the response appears like this. When you use the **StartPHIDetectionJob** operation, Amazon Comprehend Medical creates a file in the output location with this structure.
 
-```
+```JSON
 {
     "Entities": [
         {

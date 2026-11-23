@@ -12,7 +12,7 @@ You can share a training plan only with other AWS accounts in your organization 
 
 The following example uses the an AWS CLI command to request a specific training plan, passing the plan ID as a parameter.
 
-```
+```sh
 aws sagemaker create-training-plan \
 --training-plan-offering-id "{{tpo-SHA-256-hash-value}}" \
 --training-plan-name "{{name}}" \
@@ -23,7 +23,7 @@ This JSON document is a sample response from the SageMaker training plans API. T
 **Note**
 The training plan remains in a `Pending` status until the fulfillment process is complete.
 
-```
+```JSON
 {
    "TrainingPlanArn":"arn:aws:sagemaker:us-east-1:123456789123:training-plan/large-models-fine-tuning"
 }

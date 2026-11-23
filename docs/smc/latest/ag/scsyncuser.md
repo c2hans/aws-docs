@@ -28,7 +28,7 @@ The CloudFormation template to set up the AWS configurations of the Connector fo
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [
@@ -57,7 +57,7 @@ The CloudFormation template to set up the AWS configurations of the Connector fo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -89,7 +89,7 @@ The CloudFormation template to set up the AWS configurations of the Connector fo
 
 ****
 
-   ```
+   ```json
      {
        "Version":"2012-10-17",
        "Statement": [
@@ -116,7 +116,7 @@ The CloudFormation template to set up the AWS configurations of the Connector fo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -147,7 +147,7 @@ The CloudFormation template to set up the AWS configurations of the Connector fo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -174,7 +174,7 @@ The CloudFormation template to set up the AWS configurations of the Connector fo
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

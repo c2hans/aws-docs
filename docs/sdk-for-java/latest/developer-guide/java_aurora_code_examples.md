@@ -31,7 +31,7 @@ The following code example shows how to get started using Aurora.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.rds.RdsClient;
 import software.amazon.awssdk.services.rds.paginators.DescribeDBClustersIterable;
@@ -73,7 +73,7 @@ The following code example shows how to:
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
 /**
  * Before running this Java (v2) code example, set up your development
  * environment, including your credentials.
@@ -713,7 +713,7 @@ The following code example shows how to use `CreateDBCluster`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static String createDBCluster(RdsClient rdsClient, String dbParameterGroupFamily, String dbName,
             String dbClusterIdentifier, String userName, String password) {
         try {
@@ -746,7 +746,7 @@ The following code example shows how to use `CreateDBClusterParameterGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void createDBClusterParameterGroup(RdsClient rdsClient, String dbClusterGroupName,
             String dbParameterGroupFamily) {
         try {
@@ -775,7 +775,7 @@ The following code example shows how to use `CreateDBClusterSnapshot`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void createDBClusterSnapshot(RdsClient rdsClient, String dbInstanceClusterIdentifier,
             String dbSnapshotIdentifier) {
         try {
@@ -803,7 +803,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static String createDBInstanceCluster(RdsClient rdsClient,
             String dbInstanceIdentifier,
             String dbInstanceClusterIdentifier,
@@ -837,7 +837,7 @@ The following code example shows how to use `DeleteDBCluster`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void deleteCluster(RdsClient rdsClient, String dbInstanceClusterIdentifier) {
         try {
             DeleteDbClusterRequest deleteDbClusterRequest = DeleteDbClusterRequest.builder()
@@ -864,7 +864,7 @@ The following code example shows how to use `DeleteDBClusterParameterGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void deleteDBClusterGroup(RdsClient rdsClient, String dbClusterGroupName, String clusterDBARN)
             throws InterruptedException {
         try {
@@ -918,7 +918,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void deleteDatabaseInstance(RdsClient rdsClient, String dbInstanceIdentifier) {
         try {
             DeleteDbInstanceRequest deleteDbInstanceRequest = DeleteDbInstanceRequest.builder()
@@ -946,7 +946,7 @@ The following code example shows how to use `DescribeDBClusterParameterGroups`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void describeDbClusterParameterGroups(RdsClient rdsClient, String dbClusterGroupName) {
         try {
             DescribeDbClusterParameterGroupsRequest groupsRequest = DescribeDbClusterParameterGroupsRequest.builder()
@@ -977,7 +977,7 @@ The following code example shows how to use `DescribeDBClusterParameters`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void describeDbClusterParameters(RdsClient rdsClient, String dbCLusterGroupName, int flag) {
         try {
             DescribeDbClusterParametersRequest dbParameterGroupsRequest;
@@ -1026,7 +1026,7 @@ The following code example shows how to use `DescribeDBClusterSnapshots`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void waitForSnapshotReady(RdsClient rdsClient, String dbSnapshotIdentifier,
             String dbInstanceClusterIdentifier) {
         try {
@@ -1071,7 +1071,7 @@ The following code example shows how to use `DescribeDBClusters`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void describeDbClusterParameters(RdsClient rdsClient, String dbCLusterGroupName, int flag) {
         try {
             DescribeDbClusterParametersRequest dbParameterGroupsRequest;
@@ -1120,7 +1120,7 @@ The following code example shows how to use `DescribeDBEngineVersions`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void describeDBEngines(RdsClient rdsClient) {
         try {
             DescribeDbEngineVersionsRequest engineVersionsRequest = DescribeDbEngineVersionsRequest.builder()
@@ -1156,7 +1156,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     // Waits until the database instance is available.
     public static void waitForInstanceReady(RdsClient rdsClient, String dbClusterIdentifier) {
         boolean instanceReady = false;
@@ -1198,7 +1198,7 @@ The following code example shows how to use `DescribeOrderableDBInstanceOptions`
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void describeDBEngines(RdsClient rdsClient) {
         try {
             DescribeDbEngineVersionsRequest engineVersionsRequest = DescribeDbEngineVersionsRequest.builder()
@@ -1234,7 +1234,7 @@ The following code example shows how to use `ModifyDBClusterParameterGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void describeDbClusterParameterGroups(RdsClient rdsClient, String dbClusterGroupName) {
         try {
             DescribeDbClusterParameterGroupsRequest groupsRequest = DescribeDbClusterParameterGroupsRequest.builder()

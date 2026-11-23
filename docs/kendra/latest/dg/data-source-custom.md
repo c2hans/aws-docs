@@ -45,7 +45,7 @@ When you submit a document to Amazon Kendra using the `BatchPutDocument` API, ea
 
 The following is the JSON required to index a document using a custom data source.
 
-```
+```json
 {
     "Documents": [
         {
@@ -80,7 +80,7 @@ When you remove a document from the index using the `BatchDeleteDocument` API, y
 
 The following is the JSON required to delete a document from the index using the `BatchDeleteDocument` API.
 
-```
+```json
 {
     "DataSourceSyncJobMetricTarget": {
         "DataSourceId": "{{data source identifier}}",

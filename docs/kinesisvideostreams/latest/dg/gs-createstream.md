@@ -30,13 +30,13 @@ This section contains the following procedures:
 
 1. Run the following `Create-Stream` command in the AWS CLI:
 
-   ```
+   ```bash
    aws kinesisvideo create-stream --stream-name "{{YourStreamName}}" --data-retention-in-hours 24
    ```
 
    The response will look similar to the following:
 
-   ```
+   ```json
    {
        "StreamARN": "arn:aws:kinesisvideo:{{us-west-2}}:{{123456789012}}:stream/{{YourStreamName}}/{{123456789012}}"
    }

@@ -55,7 +55,7 @@ To use the AWS Management Console to transcribe a clinician-patient dialogue, cr
 
   The following is an example request that uses the AWS SDK for Python (Boto3) to transcribe an audio file and identify the PHI of a patient.
 
-  ```
+  ```python
   from __future__ import print_function
   import time
   import boto3
@@ -82,7 +82,7 @@ To use the AWS Management Console to transcribe a clinician-patient dialogue, cr
 
 The following example code shows the transcription results with patient PHI identified.
 
-```
+```json
 {
     "jobName": "my-medical-transcription-job-name",
     "accountId": "111122223333",

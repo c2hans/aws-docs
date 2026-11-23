@@ -29,7 +29,7 @@ In the following example, you will set up permissions for an orchestrator accoun
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -67,7 +67,7 @@ In the following example, you will set up permissions for an orchestrator accoun
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -99,7 +99,7 @@ In the following example, you will set up permissions for an orchestrator accoun
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -123,7 +123,7 @@ In the following example, you will set up permissions for an orchestrator accoun
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

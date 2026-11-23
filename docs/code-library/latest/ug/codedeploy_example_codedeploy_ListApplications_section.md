@@ -37,7 +37,7 @@ For more information, see [View application details with CodeDeploy](https://doc
 **Tools for PowerShell V4**
 **Example 1: This example gets a list of available applications.**
 
-```
+```powershell
 Get-CDApplicationList
 ```
 **Output:**
@@ -51,7 +51,7 @@ CodePipelineDemoApplication
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of available applications.**
 
-```
+```powershell
 Get-CDApplicationList
 ```
 **Output:**

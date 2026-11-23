@@ -156,7 +156,7 @@ The steps below describe how to access the various types of metrics.
 **To access your application UI with the AWS CLI**
 + To generate a URL that use to access your application UI for running and completed jobs, call the `GetDashboardForJobRun` API.
 
-  ```
+  ```literal
   aws emr-serverless get-dashboard-for-job-run /
   --application-id {{<application-id>}} /
   --job-run-id {{<job-id>}}

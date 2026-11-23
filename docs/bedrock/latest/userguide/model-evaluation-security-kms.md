@@ -13,7 +13,7 @@ Every AWS KMS key must have exactly one key policy. The statements in the key po
 
 You must add the following statement to your existing AWS KMS key policy. It provides Amazon Bedrock with permissions to temporarily store your data in an Amazon Bedrock service bucket using the AWS KMS that you've specified.
 
-```
+```json
 {
 	"Effect": "Allow",
 	"Principal": {
@@ -41,7 +41,7 @@ The following is an example of a complete AWS KMS policy.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "key-consolepolicy-3",
@@ -126,7 +126,7 @@ Example IAM Policy for Role Calling CreateEvaluationJob API
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

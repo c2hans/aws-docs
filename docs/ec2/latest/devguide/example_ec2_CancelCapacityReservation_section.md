@@ -33,7 +33,7 @@ For more information, see [Cancel a Capacity Reservation](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This example cancels the capacity reservation cr-0c1f2345db6f7cdba**
 
-```
+```powershell
 Remove-EC2CapacityReservation -CapacityReservationId cr-0c1f2345db6f7cdba
 ```
 **Output:**
@@ -50,7 +50,7 @@ True
 **Tools for PowerShell V5**
 **Example 1: This example cancels the capacity reservation cr-0c1f2345db6f7cdba**
 
-```
+```powershell
 Remove-EC2CapacityReservation -CapacityReservationId cr-0c1f2345db6f7cdba
 ```
 **Output:**

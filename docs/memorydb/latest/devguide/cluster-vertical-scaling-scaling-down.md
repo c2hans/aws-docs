@@ -55,7 +55,7 @@ The following procedure describes how to scale down a MemoryDB cluster using the
 
    Output from the above command looks something like this (JSON format).
 
-   ```
+   ```json
    {
    	    "ScaleUpNodeTypes": [
    	        "db.r6g.2xlarge",

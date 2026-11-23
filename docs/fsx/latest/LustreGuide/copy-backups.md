@@ -37,7 +37,7 @@ You use the policy to grant permissions to the `CopyBackup` action for the backu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

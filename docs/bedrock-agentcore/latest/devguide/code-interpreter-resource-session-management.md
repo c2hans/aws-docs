@@ -18,7 +18,7 @@ The following topics show how the Amazon Bedrock AgentCore Code Interpreter work
 
 The following IAM policy provides the necessary permissions for using the AgentCore Code Interpreter:
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [
@@ -43,7 +43,7 @@ The following IAM policy provides the necessary permissions for using the AgentC
 
 You should also add the following trust policy to the execution role:
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [{

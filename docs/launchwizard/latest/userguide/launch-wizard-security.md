@@ -97,7 +97,7 @@ If you deploy domain controllers into an existing VPC with an existing Active Di
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

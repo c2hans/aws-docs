@@ -22,7 +22,7 @@ Without the `"Language": "EN"` line in the request, results would be returned in
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryText": "Vegan",
         "BiasPosition":[
@@ -36,7 +36,7 @@ Without the `"Language": "EN"` line in the request, results would be returned in
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -187,7 +187,7 @@ Without the `"Language": "EN"` line in the request, results would be returned in
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/search-text?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -205,7 +205,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places search-text --key ${YourKey} --query-text "Vegan" \
 --bias-position 34.78953 32.08556 \
 --language "EN"

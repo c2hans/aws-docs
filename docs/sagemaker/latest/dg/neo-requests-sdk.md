@@ -18,7 +18,7 @@ For version 3.x, use the [`Endpoint`](https://sagemaker.readthedocs.io/en/stable
 
 The following code example shows how to use these APIs to send an image for inference:
 
-```
+```python
 from sagemaker.core.resources import Endpoint
 
 endpoint_name = {{'insert name of your endpoint here'}}
@@ -38,7 +38,7 @@ print(inference_response.body.read().decode('utf-8'))
 
 The following code example shows how to use the SageMaker Python SDK API to send an image for inference:
 
-```
+```python
 from sagemaker.core.resources import Endpoint
 from PIL import Image
 import numpy as np

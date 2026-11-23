@@ -17,7 +17,7 @@ The following is an example `AwsCodeBuildProject` finding in the AWS Security Fi
 
 **Example**
 
-```
+```JSON
 "AwsCodeBuildProject": {
    "Artifacts": [
       {

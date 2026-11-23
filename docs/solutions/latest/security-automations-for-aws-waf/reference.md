@@ -31,7 +31,7 @@ AWS owns the data gathered through this survey. Data collection is subject to th
 
 1. Modify the CloudFormation template mapping section from:
 
-   ```
+   ```json
    Solution:
      Data:
       SendAnonymizedUsageData: "Yes"
@@ -39,7 +39,7 @@ AWS owns the data gathered through this survey. Data collection is subject to th
 
    to:
 
-   ```
+   ```json
    Solution:
      Data:
       SendAnonymizedUsageData: "No"

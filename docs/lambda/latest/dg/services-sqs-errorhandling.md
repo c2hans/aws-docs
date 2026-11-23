@@ -68,7 +68,7 @@ If you're using this feature with a FIFO queue, your function should stop proces
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using .NET.
 
-   ```
+   ```csharp
    // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    // SPDX-License-Identifier: Apache-2.0
    using Amazon.Lambda.Core;
@@ -119,7 +119,7 @@ Reporting SQS batch item failures with Lambda using .NET.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using Go.
 
-   ```
+   ```go
    // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    // SPDX-License-Identifier: Apache-2.0
    package main
@@ -163,7 +163,7 @@ Reporting SQS batch item failures with Lambda using Go.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using Java.
 
-   ```
+   ```java
    // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    // SPDX-License-Identifier: Apache-2.0
    import com.amazonaws.services.lambda.runtime.Context;
@@ -199,7 +199,7 @@ Reporting SQS batch item failures with Lambda using Java.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using JavaScript.
 
-   ```
+   ```javascript
    // Node.js 20.x Lambda runtime, AWS SDK for Javascript V3
    export const handler = async (event, context) => {
        const batchItemFailures = [];
@@ -222,7 +222,7 @@ Reporting SQS batch item failures with Lambda using JavaScript.
    ```
 Reporting SQS batch item failures with Lambda using TypeScript.
 
-   ```
+   ```javascript
    // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    // SPDX-License-Identifier: Apache-2.0
    import { SQSEvent, SQSBatchResponse, Context, SQSBatchItemFailure, SQSRecord } from 'aws-lambda';
@@ -256,7 +256,7 @@ Reporting SQS batch item failures with Lambda using TypeScript.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using PHP.
 
-   ```
+   ```php
    // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    // SPDX-License-Identifier: Apache-2.0
    <?php
@@ -313,7 +313,7 @@ Reporting SQS batch item failures with Lambda using PHP.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using Python.
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
 
@@ -339,7 +339,7 @@ Reporting SQS batch item failures with Lambda using Python.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda-with-batch-item-handling) repository.
 Reporting SQS batch item failures with Lambda using Ruby.
 
-   ```
+   ```ruby
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
    require 'json'
@@ -370,7 +370,7 @@ Reporting SQS batch item failures with Lambda using Ruby.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using Rust.
 
-   ```
+   ```rust
    // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    // SPDX-License-Identifier: Apache-2.0
    use aws_lambda_events::{
@@ -441,7 +441,7 @@ The batch processor utility from Powertools for AWS Lambda automatically handles
 For complete examples and setup instructions, see the [batch processor documentation](https://docs.aws.amazon.com/powertools/python/latest/utilities/batch/).
 Processing Amazon SQS messages with AWS Lambda batch processor.
 
-```
+```python
 import json
 from aws_lambda_powertools import Logger
 from aws_lambda_powertools.utilities.batch import BatchProcessor, EventType, process_partial_response
@@ -469,7 +469,7 @@ def lambda_handler(event, context: LambdaContext):
 For complete examples and setup instructions, see the [batch processor documentation](https://docs.aws.amazon.com/powertools/typescript/latest/features/batch/).
 Processing Amazon SQS messages with AWS Lambda batch processor.
 
-```
+```typescript
 import { BatchProcessor, EventType, processPartialResponse } from '@aws-lambda-powertools/batch';
 import { Logger } from '@aws-lambda-powertools/logger';
 import type { SQSEvent, Context } from 'aws-lambda';

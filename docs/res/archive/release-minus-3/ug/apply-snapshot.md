@@ -30,7 +30,7 @@ If the new environment is not as expected or fails, you can check the CloudWatch
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

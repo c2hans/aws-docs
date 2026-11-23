@@ -91,7 +91,7 @@ When combining both AddressLines and AddressComponents in a request, enter first
 
 The following Python script creates a sample Parquet file with address data:
 
-```
+```python
 import pyarrow as pa
 import pyarrow.parquet as pq
 

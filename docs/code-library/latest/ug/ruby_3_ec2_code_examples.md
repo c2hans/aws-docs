@@ -27,7 +27,7 @@ The following code example shows how to get started using Amazon EC2.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ec2'
 require 'logger'
 
@@ -105,7 +105,7 @@ The following code example shows how to use `AllocateAddress`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 # Creates an Elastic IP address in Amazon Virtual Private Cloud (Amazon VPC).
 #
 # @param ec2_client [Aws::EC2::Client] An initialized EC2 client.
@@ -130,7 +130,7 @@ The following code example shows how to use `AssociateAddress`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 # Associates an Elastic IP address with an Amazon Elastic Compute Cloud
 # (Amazon EC2) instance.
 #
@@ -175,7 +175,7 @@ The following code example shows how to use `CreateKeyPair`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 # This code example does the following:
 # 1. Creates a key pair in Amazon Elastic Compute Cloud (Amazon EC2).
 # 2. Displays information about available key pairs.
@@ -324,7 +324,7 @@ The following code example shows how to use `CreateRouteTable`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ec2'
 
 # Prerequisites:
@@ -460,7 +460,7 @@ The following code example shows how to use `CreateSecurityGroup`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 # This code example does the following:
 # 1. Creates an Amazon Elastic Compute Cloud (Amazon EC2) security group.
 # 2. Adds inbound rules to the security group.
@@ -717,7 +717,7 @@ The following code example shows how to use `CreateSubnet`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ec2'
 
 # Creates a subnet within a virtual private cloud (VPC) in
@@ -841,7 +841,7 @@ The following code example shows how to use `CreateVpc`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ec2'
 
 # Creates a virtual private cloud (VPC) in
@@ -939,7 +939,7 @@ The following code example shows how to use `DescribeInstances`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ec2'
 
 # @param ec2_resource [Aws::EC2::Resource] An initialized EC2 resource object.
@@ -992,7 +992,7 @@ The following code example shows how to use `DescribeRegions`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ec2'
 
 # @param ec2_client [Aws::EC2::Client] An initialized EC2 client.
@@ -1105,7 +1105,7 @@ The following code example shows how to use `ReleaseAddress`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 # Releases an Elastic IP address from an
 # Amazon Elastic Compute Cloud (Amazon EC2) instance.
 #
@@ -1141,7 +1141,7 @@ The following code example shows how to use `StartInstances`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ec2'
 
 # Attempts to start an Amazon Elastic Compute Cloud (Amazon EC2) instance.
@@ -1230,7 +1230,7 @@ The following code example shows how to use `StopInstances`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ec2'
 
 # Prerequisites:
@@ -1317,7 +1317,7 @@ The following code example shows how to use `TerminateInstances`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ec2'
 
 # Prerequisites:

@@ -42,7 +42,7 @@ Version 3 of the policy is shown, which is the most recent version at the time o
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{

@@ -16,7 +16,7 @@ In the following list, the required parameters are described first.
 The name of the catalog the entity is present in. The only value at this time is `AWSMarketplace`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[a-zA-Z]+$`
+Pattern: `^(?![.-])(?!.*[.-]{2})(?![0-9]+\.[0-9.]+$)[a-zA-Z0-9.-]{1,47}(?<![.-])$`
 Required: Yes
 
  ** EntityId **   <a name="AWSMarketplaceService-Type-EntityRequest-EntityId"></a>

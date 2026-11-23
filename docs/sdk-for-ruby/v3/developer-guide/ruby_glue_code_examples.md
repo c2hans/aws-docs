@@ -28,7 +28,7 @@ The following code example shows how to get started using AWS Glue.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 require 'aws-sdk-glue'
 require 'logger'
 
@@ -87,7 +87,7 @@ For more information, see [Tutorial: Getting started with AWS Glue Studio](https
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 Create a class that wraps AWS Glue functions used in the scenario.
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -312,7 +312,7 @@ end
 ```
 Create a class that runs the scenario.
 
-```
+```ruby
 class GlueCrawlerJobScenario
   def initialize(glue_client, glue_service_role, glue_bucket, logger)
     @glue_client = glue_client
@@ -402,7 +402,7 @@ end
 ```
 Create an ETL script that is used by AWS Glue to extract, transform, and load data during job runs.
 
-```
+```ruby
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
@@ -500,7 +500,7 @@ The following code example shows how to use `CreateCrawler`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -546,7 +546,7 @@ The following code example shows how to use `CreateJob`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -590,7 +590,7 @@ The following code example shows how to use `DeleteCrawler`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -621,7 +621,7 @@ The following code example shows how to use `DeleteDatabase`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -651,7 +651,7 @@ The following code example shows how to use `DeleteJob`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -681,7 +681,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -712,7 +712,7 @@ The following code example shows how to use `GetCrawler`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -746,7 +746,7 @@ The following code example shows how to use `GetDatabase`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -778,7 +778,7 @@ The following code example shows how to use `GetJobRun`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -808,7 +808,7 @@ The following code example shows how to use `GetJobRuns`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -839,7 +839,7 @@ The following code example shows how to use `GetTables`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -871,7 +871,7 @@ The following code example shows how to use `ListJobs`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -901,7 +901,7 @@ The following code example shows how to use `StartCrawler`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -932,7 +932,7 @@ The following code example shows how to use `StartJobRun`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.

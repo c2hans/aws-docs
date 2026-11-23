@@ -230,7 +230,7 @@ If you are using Agent Assistance, citation data is automatically included and n
 + Create a copy of your default self-service orchestration prompt (default prompts cannot be edited directly).
 + In your copied prompt, replace the Retrieve tool's instruction block with the following:
 
-```
+```yaml
 instruction:
   instruction: |-
     Search the knowledge base using semantic search to find relevant information. Use the results of the RETRIEVE tool to provide an informed answer to the customer's query.

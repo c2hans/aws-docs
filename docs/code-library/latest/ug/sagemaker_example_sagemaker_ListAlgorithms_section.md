@@ -14,7 +14,7 @@ The following code example shows how to use `ListAlgorithms`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sgm->listalgorithms(         " oo_result is returned for testing purposes. "
           iv_namecontains = iv_name_contains ).

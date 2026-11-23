@@ -133,7 +133,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-identity-and-access-management-iam-create-service-linked-role-ex-min"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-CreateServiceLinkedRole-Admin",
   "Region" : "us-east-1",
@@ -148,7 +148,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-identity-and-access-management-iam-create-service-linked-role-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-CreateServiceLinkedRole-Admin",
   "Region": "us-east-1",

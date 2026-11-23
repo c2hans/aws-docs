@@ -10,7 +10,7 @@ This section contains the full HTML and JavaScript code for the example in which
 
 The HTML for the example:
 
-```
+```javascript
 <!DOCTYPE html>
 <html>
   <head>
@@ -36,7 +36,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 The browser script code for the example:
 
-```
+```javascript
 var albumBucketName = "BUCKET_NAME";
 var bucketRegion = "REGION";
 var IdentityPoolId = "IDENTITY_POOL_ID";

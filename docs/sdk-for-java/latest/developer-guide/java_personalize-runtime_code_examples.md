@@ -24,7 +24,7 @@ The following code example shows how to use `GetPersonalizedRanking`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static List<PredictedItem> getRankedRecs(PersonalizeRuntimeClient personalizeRuntimeClient,
             String campaignArn,
             String userId,
@@ -67,7 +67,7 @@ The following code example shows how to use `GetRecommendations`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 Get a list of recommended items.
 
-```
+```java
     public static void getRecs(PersonalizeRuntimeClient personalizeRuntimeClient, String campaignArn, String userId) {
 
         try {
@@ -93,7 +93,7 @@ Get a list of recommended items.
 ```
 Get a list of recommended items from a recommender created in a domain dataset group.
 
-```
+```java
     public static void getRecs(PersonalizeRuntimeClient personalizeRuntimeClient, String recommenderArn,
             String userId) {
 
@@ -120,7 +120,7 @@ Get a list of recommended items from a recommender created in a domain dataset g
 ```
 Use a filter when requesting recommendations.
 
-```
+```java
     public static void getFilteredRecs(PersonalizeRuntimeClient personalizeRuntimeClient,
             String campaignArn,
             String userId,

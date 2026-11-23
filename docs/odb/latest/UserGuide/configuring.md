@@ -27,6 +27,9 @@ You can create an ODB peering connection between an ODB network and an Amazon VP
 **Cross-account ODB peering**
 You can create an ODB peering connection between an ODB network in one account and an Amazon VPC in a different account, after the ODB network has been shared using AWS RAM. VPC owner accounts can manage CIDR ranges specified in the peering connection without also owning the ODB network.
 
+**Important**
+Currently, your Amazon VPC must have at least one subnet in the Availability Zone where you deployed your ODB network. If it doesn't, the console shows the peering connection as available. However, you can't send cross-Availability Zone (cross-AZ) traffic between your Amazon VPC and the ODB network. You don't need to add any resources to the subnet.
+
 ### Peering connection limits
 <a name="peering-limit"></a>
 

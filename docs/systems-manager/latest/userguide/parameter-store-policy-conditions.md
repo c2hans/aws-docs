@@ -43,7 +43,7 @@ However, the `"Deny"` statement prevents Entities from changing values of *exist
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -86,7 +86,7 @@ In the following policy example, the `"Allow"` statement grants general permissi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

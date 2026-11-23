@@ -70,7 +70,7 @@ To enable sending logs to CloudWatch Logs, you must be signed in with the follow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -145,7 +145,7 @@ The log group where the logs are being sent must have a resource policy that inc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -201,7 +201,7 @@ To enable sending logs to Amazon S3, you must be signed in with the following pe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -271,7 +271,7 @@ The S3 bucket where the logs are being sent must have a resource policy that inc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "AWSLogDeliveryWrite20150319",
@@ -346,7 +346,7 @@ When you use a customer managed AWS KMS key, you can specify the Amazon Resource
 
 If you choose SSE-KMS, you must use a customer managed key, because using an AWS managed key isn't supported for this scenario. When you use a customer managed AWS KMS key, you can specify the Amazon Resource Name (ARN) of the customer managed key when you enable bucket encryption. Add the following to the key policy for your customer managed key (not to the bucket policy for your S3 bucket), so that the log delivery account can write to your S3 bucket.
 
-```
+```json
 {
     "Sid":"Allow Logs Delivery to use the key",
     "Effect":"Allow",
@@ -392,7 +392,7 @@ To enable sending logs to Firehose, you must be signed in with the following per
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -473,7 +473,7 @@ Because Firehose doesn't use resource policies, AWS uses IAM roles when setting 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -506,7 +506,7 @@ This service-linked role also has a trust policy that allows the `delivery.logs.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -533,7 +533,7 @@ In addition to the permissions listed in the previous sections, if you're settin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

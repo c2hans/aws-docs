@@ -15,7 +15,7 @@ To describe projects with the AWS CLI and SDK:
 ------
 #### [ CLI ]
 
-```
+```bash
 # Request
 # Getting CONTENT_MODERATION project details
 aws rekognition describe-projects \

@@ -53,7 +53,7 @@ Shared VPCs are not currently supported for Timestream for InfluxDB 3.
 
  Using the AWS CLI:
 
-```
+```sh
 aws timestream-influxdb create-db-cluster \
      --name myinfluxDbinstance \
      --db-instance-type db.influx.4xlarge \

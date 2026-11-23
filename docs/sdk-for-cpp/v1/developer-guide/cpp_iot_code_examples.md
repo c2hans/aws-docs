@@ -28,7 +28,7 @@ The following code example shows how to get started using AWS IoT.
 **SDK for C\+\+**
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -70,7 +70,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the hello\_iot.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/iot/IoTClient.h>
 #include <aws/iot/model/ListThingsRequest.h>
@@ -158,7 +158,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot/things_and_shadows_workflow#code-examples).
 Create an AWS IoT thing.
 
-```
+```cpp
     Aws::String thingName = askQuestion("Enter a thing name: ");
 
     if (!createThing(thingName, clientConfiguration)) {
@@ -168,7 +168,7 @@ Create an AWS IoT thing.
     }
 ```
 
-```
+```cpp
 //! Create an AWS IoT thing.
 /*!
   \param thingName: The name for the thing.
@@ -196,7 +196,7 @@ bool AwsDoc::IoT::createThing(const Aws::String &thingName,
 ```
 Generate and attach a device certificate.
 
-```
+```cpp
     Aws::String certificateARN;
     Aws::String certificateID;
     if (askYesNoQuestion("Would you like to create a certificate for your thing? (y/n) ")) {
@@ -232,7 +232,7 @@ Generate and attach a device certificate.
     }
 ```
 
-```
+```cpp
 //! Create keys and certificate for an Aws IoT device.
 //! This routine will save certificates and keys to an output folder, if provided.
 /*!
@@ -335,7 +335,7 @@ bool AwsDoc::IoT::attachThingPrincipal(const Aws::String &principal,
 ```
 Perform various operations on the AWS IoT thing.
 
-```
+```cpp
     if (!updateThing(thingName, { {"location", "Office"}, {"firmwareVersion", "v2.0"} }, clientConfiguration)) {
         std::cerr << "Exiting because updateThing failed." << std::endl;
         cleanup(thingName, certificateARN, certificateID, "", "", false,
@@ -500,7 +500,7 @@ Perform various operations on the AWS IoT thing.
     }
 ```
 
-```
+```cpp
 //! Update an AWS IoT thing with attributes.
 /*!
   \param thingName: The name for the thing.
@@ -798,7 +798,7 @@ bool AwsDoc::IoT::searchIndex(const Aws::String &query,
 ```
 Clean up resources.
 
-```
+```cpp
 bool
 AwsDoc::IoT::cleanup(const Aws::String &thingName, const Aws::String &certificateARN,
                      const Aws::String &certificateID, const Aws::String &stackName,
@@ -838,7 +838,7 @@ AwsDoc::IoT::cleanup(const Aws::String &thingName, const Aws::String &certificat
 }
 ```
 
-```
+```cpp
 //! Detach a principal from an AWS IoT thing.
 /*!
   \param principal: A principal to detach.
@@ -974,7 +974,7 @@ The following code example shows how to use `AttachThingPrincipal`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Attach a principal to an AWS IoT thing.
 /*!
   \param principal: A principal to attach.
@@ -1012,7 +1012,7 @@ The following code example shows how to use `CreateKeysAndCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Create keys and certificate for an Aws IoT device.
 //! This routine will save certificates and keys to an output folder, if provided.
 /*!
@@ -1096,7 +1096,7 @@ The following code example shows how to use `CreateThing`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Create an AWS IoT thing.
 /*!
   \param thingName: The name for the thing.
@@ -1132,7 +1132,7 @@ The following code example shows how to use `CreateTopicRule`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Create an AWS IoT rule with an SNS topic as the target.
 /*!
   \param ruleName: The name for the rule.
@@ -1185,7 +1185,7 @@ The following code example shows how to use `DeleteCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Delete a certificate.
 /*!
   \param certificateID: The ID of a certificate.
@@ -1223,7 +1223,7 @@ The following code example shows how to use `DeleteThing`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Delete an AWS IoT thing.
 /*!
   \param thingName: The name for the thing.
@@ -1257,7 +1257,7 @@ The following code example shows how to use `DeleteTopicRule`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Delete an AWS IoT rule.
 /*!
   \param ruleName: The name for the rule.
@@ -1293,7 +1293,7 @@ The following code example shows how to use `DescribeEndpoint`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Describe the endpoint specific to the AWS account making the call.
 /*!
   \param endpointResult: String to receive the endpoint result.
@@ -1333,7 +1333,7 @@ The following code example shows how to use `DescribeThing`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Describe an AWS IoT thing.
 /*!
   \param thingName: The name for the thing.
@@ -1378,7 +1378,7 @@ The following code example shows how to use `DetachThingPrincipal`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Detach a principal from an AWS IoT thing.
 /*!
   \param principal: A principal to detach.
@@ -1421,7 +1421,7 @@ The following code example shows how to use `ListCertificates`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! List certificates registered in the AWS account making the call.
 /*!
    \param clientConfiguration: AWS client configuration.
@@ -1477,7 +1477,7 @@ The following code example shows how to use `SearchIndex`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Query the AWS IoT fleet index.
 //! For query information, see https://docs.aws.amazon.com/iot/latest/developerguide/query-syntax.html
 /*!
@@ -1534,7 +1534,7 @@ The following code example shows how to use `UpdateIndexingConfiguration`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Update the indexing configuration.
 /*!
   \param thingIndexingConfiguration: A ThingIndexingConfiguration object which is ignored if not set.
@@ -1582,7 +1582,7 @@ The following code example shows how to use `UpdateThing`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Update an AWS IoT thing with attributes.
 /*!
   \param thingName: The name for the thing.

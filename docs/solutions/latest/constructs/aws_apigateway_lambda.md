@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { ApiGatewayToLambda } from '@aws-solutions-constructs/aws-apigateway-lambda';
@@ -40,7 +40,7 @@ new ApiGatewayToLambda(this, 'ApiGatewayToLambdaPattern', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_apigateway_lambda import ApiGatewayToLambda
 from aws_cdk import (
     aws_lambda as _lambda,
@@ -57,7 +57,7 @@ ApiGatewayToLambda(self, 'ApiGatewayToLambdaPattern',
             )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/nvme-cache.html
 
 # Managing the NVMe cache
 
-The NVMe cache is enabled by default on your second-generation file system. If your second-generation file system has a throughput-heavy workload, you can disable the NVMe cache to improve performance. The following procedure explains how to enable, disable, and validate your file system's NVMe cache.
+The NVMe cache is enabled by default on second-generation and third-generation file systems. If you're running a throughput-heavy workload on your second-generation or third-generation file system, you can disable the NVMe cache to improve performance. The following procedure explains how to enable, disable, and validate your file system's NVMe cache.
 
 **To manage the NVMe cache**
 

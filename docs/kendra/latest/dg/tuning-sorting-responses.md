@@ -37,7 +37,7 @@ To tune an attribute in a query, set the `DocumentRelevanceOverrideConfiguration
 
 The following JSON example shows a `DocumentRelevanceOverrideConfigurations` object that overrides the tuning for the attribute called "department" in the index.
 
-```
+```json
 "DocumentRelevanceOverrideConfigurations" : [
     "Name": "department",
     "Relevance": {
@@ -87,7 +87,7 @@ You can sort on one or more document attributes in each query. Queries return 10
 
    The following JSON example shows the `SortingConfiguration` parameter that you use to sort the results of a query by the "Department" attribute in ascending order.
 
-   ```
+   ```json
       "SortingConfiguration": {
          "DocumentAttributeKey": "Department",
          "SortOrder": "ASC"
@@ -100,7 +100,7 @@ You can sort on one or more document attributes in each query. Queries return 10
 
    The following JSON example shows the `SortingConfigurations` parameter that you use to sort the results of a query by the attributes "Name" and "Price" in ascending order.
 
-   ```
+   ```json
    "CollapseConfiguration" : {
        "DocumentAttributeKey": "Name",
        "SortingConfigurations": [

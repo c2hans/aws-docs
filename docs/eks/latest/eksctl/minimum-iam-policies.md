@@ -22,7 +22,7 @@ An AWS Managed Policy is created and administered by AWS. You cannot change the 
 
  **EksAllAccess**
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -63,7 +63,7 @@ An AWS Managed Policy is created and administered by AWS. You cannot change the 
 
  **IamLimitedAccess**
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

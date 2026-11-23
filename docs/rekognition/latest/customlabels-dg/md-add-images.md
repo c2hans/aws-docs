@@ -76,7 +76,7 @@ Use `source-ref` field as a key to identify images that you want to update. If t
    + dataset\_arn``— the ARN of the dataset that you want to update.
    + updates\_file``— the file that contains the JSON Line updates.
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
 
@@ -212,7 +212,7 @@ Use `source-ref` field as a key to identify images that you want to update. If t
    + dataset\_arn``— the ARN of the dataset that you want to update.
    + update\_file``— the file that contains the JSON Line updates.
 
-   ```
+   ```java
    /*
       Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
       SPDX-License-Identifier: Apache-2.0

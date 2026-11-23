@@ -50,7 +50,7 @@ Running the example script requires the following:
 + Node.js is installed on your machine. If you use an Amazon EC2 instance, see [Tutorial: Setting Up Node.js on an Amazon EC2 Instance](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html).
 + The Node package manager (npm) is used to install the AWS SDK for JavaScript. The script uses classes from these packages.
 
-  ```
+  ```bash
   npm install aws-sdk
   ```
 + The environment variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` must contain the credentials that are associated with the same account that created the node.
@@ -63,7 +63,7 @@ Running the example script requires the following:
 
    **Contents of consensus-ethereum-example.js**
 
-   ```
+   ```JavaScript
    const AWS = require('aws-sdk');
    const REGION = process.env.AWS_DEFAULT_REGION || '{{us-east-1}}';
 
@@ -113,7 +113,7 @@ Running the example script requires the following:
 
 1. Run the script to call the Consensus API method over HTTP on your Ethereum node.
 
-   ```
+   ```bash
    NODE_ID={{nd-6eaj5va43jggnpxouzp7y47e4y}} AWS_DEFAULT_REGION=us-east-1 node {{consensus-ethereum-example.js}}
    ```
 
@@ -124,7 +124,7 @@ The following example uses [awscurl](https://pypi.org/project/awscurl/0.6/), whi
 
 This example calls the ` /eth/v1/beacon/genesis` method, which takes an empty parameter block. You can replace this method and its parameters with any method listed in [Supported Consensus API methods](https://docs.aws.amazon.com/managed-blockchain/latest/ethereum-dev/supported-consensus-apis.html). Replace `{{your-node-id-lowercase}}` with the ID of a node in your account (for example, `nd-6eaj5va43jggnpxouzp7y47e4y`).
 
-```
+```bash
 awscurl --service managedblockchain \
 -X GET 'https://{{your-node-id-lowercase}}.ethereum.managedblockchain.us-east-1.amazonaws.com/{{eth/v1/beacon/genesis}}'
 ```
@@ -177,7 +177,7 @@ Running the example script requires the following:
 + Node.js is installed on your machine. If you use an Amazon EC2 instance, see [Tutorial: Setting Up Node.js on an Amazon EC2 Instance](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html).
 + The Node package manager (npm) is used to install the AWS SDK for JavaScript. The script uses classes from these packages.
 
-  ```
+  ```bash
   npm install aws-sdk
   ```
 + The environment variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` must contain the credentials that are associated with the same account that created the node.
@@ -190,7 +190,7 @@ Running the example script requires the following:
 
    **Contents of consensus-ethereum-example.js**
 
-   ```
+   ```JavaScript
    const AWS = require('aws-sdk');
    const REGION = process.env.AWS_DEFAULT_REGION || '{{us-east-1}}';
 
@@ -284,7 +284,7 @@ Running the example script requires the following:
 
 1. Run the script to call the Consensus API method over HTTP on your Ethereum node.
 
-   ```
+   ```bash
    NODE_ID={{nd-6eaj5va43jggnpxouzp7y47e4y}} AWS_DEFAULT_REGION=us-east-1 node {{consensus-ethereum-example.js}}
    ```
 
@@ -295,7 +295,7 @@ The following example uses [awscurl](https://pypi.org/project/awscurl/0.6/), whi
 
 This example calls the ` /eth/v1/beacon/genesis` method, which takes an empty parameter block. You can replace this method and its parameters with any method listed in [Supported Consensus API methods](https://docs.aws.amazon.com/managed-blockchain/latest/ethereum-dev/supported-consensus-apis.html). Replace `{{your-node-id-lowercase}}` with the ID of a node in your account (for example, `nd-6eaj5va43jggnpxouzp7y47e4y`).
 
-```
+```bash
 awscurl --service managedblockchain \
 -X GET 'https://{{your-node-id-lowercase}}.t.ethereum.managedblockchain.us-east-1.amazonaws.com/{{eth/v1/beacon/genesis}}?billingtoken={{your-billing-token}}'
 ```

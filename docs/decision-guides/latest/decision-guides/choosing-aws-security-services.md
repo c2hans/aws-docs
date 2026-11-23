@@ -29,6 +29,8 @@ Security, identity, and governance in the cloud are important components for you
 
 [![AWS Videos](https://img.youtube.com/vi/T4svAhNLNfc/0.jpg)](https://www.youtube.com/watch?v=T4svAhNLNfc)
 
+This one-and-a-half minute video summarizes how AWS builds strong security at our core.
+
 ## Understand AWS security, identity, and governance services
 <a name="understand"></a>
 

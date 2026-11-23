@@ -13,7 +13,7 @@ You can configure timeouts for all requests made by a service clients using `[Cl
 
 The following example shows the configuration of an Amazon S3 client with custom timeout values.
 
-```
+```java
 S3Client.builder()
         .overrideConfiguration(
              b -> b.apiCallTimeout(Duration.ofSeconds({{<custom value>}}))

@@ -72,7 +72,7 @@ Version attributes aren't required to follow a specific naming convention. You c
 
 You can have all package version attributes automatically added to your job deployment for selected devices. To automatically use all package version attributes programmatically in an API or CLI command, refer to the following job document example:
 
-```
+```JSON
 "{{TestPackage}}": "${aws:iot:package:{{TestPackage}}:version:{{PackageVersion}}:attributes}"
 ```
 
@@ -115,7 +115,7 @@ In order for AWS IoT acting as the specified principal to access the SBOM zip ar
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -172,7 +172,7 @@ Indexing the reserved named shadow doesn’t count toward the number of named sh
 
 The reserved named shadow contains the following:
 
-```
+```json
 {
     "state": {
         "reported": {

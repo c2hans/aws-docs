@@ -30,7 +30,7 @@ To enable access logs and send the logs to their destinations, you must have the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

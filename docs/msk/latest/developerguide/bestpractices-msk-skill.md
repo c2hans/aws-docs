@@ -54,7 +54,7 @@ For full CLI documentation, see [Managing skills with the AWS CLI](https://docs.
 
 Connect your AI coding agent to the AWS MCP Server, which provides the skill along with sandboxed AWS API execution capabilities.
 
-```
+```json
 {
   "mcpServers": {
     "aws-mcp": {

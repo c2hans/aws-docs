@@ -19,7 +19,7 @@ The role that you create in this step can be assumed by AWS IoT in order to obta
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": {

@@ -36,7 +36,7 @@ Submits an audit trail query. Returns a result ID for polling.
 ### Sample Request
 <a name="acxd-trails-starttrailquery-sample-request"></a>
 
-```
+```typescript
 await client.send(new StartTrailQueryCommand({
   startTimestamp: "2026-08-03T00:00:00.000Z",
   endTimestamp: "2026-08-10T23:59:59.000Z",
@@ -46,7 +46,7 @@ await client.send(new StartTrailQueryCommand({
 ### StartTrailQuery with filters
 <a name="acxd-trails-starttrailquery-filters"></a>
 
-```
+```typescript
 await client.send(new StartTrailQueryCommand({
   startTimestamp: "2026-08-10T00:00:00.000Z",
   endTimestamp: "2026-08-10T23:59:59.000Z",
@@ -58,7 +58,7 @@ await client.send(new StartTrailQueryCommand({
 ### Output
 <a name="acxd-trails-starttrailquery-output"></a>
 
-```
+```json
 {
   "resultId": "qry-a1b2c3d4e5f6..."
 }
@@ -85,7 +85,7 @@ Gets results of a previously submitted trail query.
 ### Sample Request
 <a name="acxd-trails-gettrailqueryresults-sample-request"></a>
 
-```
+```typescript
 await client.send(new GetTrailQueryResultsCommand({
   resultId: "7eba7313-ad4d-48d9-acba-dbf2a0d492cc",
 }));
@@ -94,7 +94,7 @@ await client.send(new GetTrailQueryResultsCommand({
 ### Output
 <a name="acxd-trails-gettrailqueryresults-output"></a>
 
-```
+```json
 {
   "status": "SUCCEEDED",
   "items": [

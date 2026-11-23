@@ -24,7 +24,7 @@ The turbine simulator generates wind speed data every second in this standardize
 
 **Example : Turbine data payload**
 
-```
+```json
 {
     name: string,         // Property name/identifier
     timestamp: number,    // Epoch time in nanoseconds
@@ -41,7 +41,7 @@ This format provides several benefits:
 
 **Example : Inject node of a turbine simulator**
 
-```
+```json
 [
     {
         "id": "string",
@@ -95,7 +95,7 @@ By standardizing the data format at this stage, you enable integration between y
 
 **Example : Payload structure for SiteWise Edge data parsing**
 
-```
+```json
 {
   "propertyAlias": "string",
   "propertyValues": [
@@ -120,7 +120,7 @@ Match the `propertyAlias` to your MQTT topic hierarchy (for example, `/Renton/Wi
 
 1. Import the example function node for AWS IoT SiteWise payload translation. This function handles the conversion from your standardized input format to the AWS IoT SiteWise-compatible format, ensuring proper timestamp formatting, quality indicators, and value typing.
 
-   ```
+   ```json
    [
        {
            "id": "string",
@@ -172,7 +172,7 @@ Import the example `mqtt out` node.
 
 **Example**
 
-```
+```json
 [
     {
         "id": "string",

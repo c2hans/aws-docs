@@ -55,7 +55,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings.
 #### ListOfferingsResultModel schema
 <a name="offerings-response-body-listofferingsresultmodel-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "offerings": [
@@ -88,7 +88,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings.
 #### InvalidRequest schema
 <a name="offerings-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -97,7 +97,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings.
 #### AccessDenied schema
 <a name="offerings-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -106,7 +106,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings.
 #### LimitExceeded schema
 <a name="offerings-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -115,7 +115,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings.
 #### InternalServiceError schema
 <a name="offerings-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -124,7 +124,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings.
 #### BadGatewayException schema
 <a name="offerings-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -133,7 +133,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings.
 #### GatewayTimeoutException schema
 <a name="offerings-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

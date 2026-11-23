@@ -28,7 +28,7 @@ This view is available when querying provisioned clusters or Redshift Serverless
 
 The following example displays the quota and the current disk usage for the schema named `sales_schema`.
 
-```
+```sql
 SELECT TRIM(SCHEMA_NAME) "schema_name", QUOTA, disk_usage FROM svv_redshift_schema_quota
 WHERE SCHEMA_NAME = 'sales_schema';
 

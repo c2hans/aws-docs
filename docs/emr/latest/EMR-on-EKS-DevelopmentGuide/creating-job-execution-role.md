@@ -73,7 +73,7 @@ Access should be appropriately scoped, not granted to all S3 objects in the job 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

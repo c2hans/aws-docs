@@ -49,7 +49,7 @@ Use the `[CreateMap](https://docs.aws.amazon.com/location/previous/APIReference/
 
 The following example is an API request to create a map resource called {{ExampleMap}} using the {{VectorEsriStreets}} map style.
 
-```
+```json
 POST /maps/v0/maps HTTP/1.1
 Content-type: application/json
 

@@ -128,7 +128,7 @@ aws --region us-west-2 globalaccelerator list-custom-routing-port-mappings-by-de
 					--endpoint-id subnet-abcd123example --destination-address "198.51.100.52"
 ```
 
-```
+```json
 {
     "DestinationPortMappings": [
         {

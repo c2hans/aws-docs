@@ -44,7 +44,7 @@ You can get these extra permissions by creating an IAM policy using the followin
 
 The following policy grants the extra required permissions necessary to be able to use Refactor Spaces.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

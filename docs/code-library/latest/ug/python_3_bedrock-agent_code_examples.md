@@ -30,7 +30,7 @@ The following code example shows how to use `CreateAgent`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Create an agent.
 
-```
+```python
     def create_agent(self, agent_name, foundation_model, role_arn, instruction):
         """
         Creates an agent that orchestrates interactions between foundation models,
@@ -68,7 +68,7 @@ The following code example shows how to use `CreateAgentActionGroup`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Create an agent action group.
 
-```
+```python
     def create_agent_action_group(
             self, name, description, agent_id, agent_version, function_arn, api_schema
     ):
@@ -112,7 +112,7 @@ The following code example shows how to use `CreateAgentAlias`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Create an agent alias.
 
-```
+```python
     def create_agent_alias(self, name, agent_id):
         """
         Creates an alias of an agent that can be used to deploy the agent.
@@ -143,7 +143,7 @@ The following code example shows how to use `CreateFlow`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Create an Amazon Bedrock flow.
 
-```
+```python
 def create_flow(client, flow_name, flow_description, role_arn, flow_def):
     """
     Creates an Amazon Bedrock flow.
@@ -193,7 +193,7 @@ The following code example shows how to use `CreateFlowAlias`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Create an alias for an Amazon Bedrock flow.
 
-```
+```python
 def create_flow_alias(client, flow_id, flow_version, name, description):
     """
     Creates an alias for an Amazon Bedrock flow.
@@ -243,7 +243,7 @@ The following code example shows how to use `CreateFlowVersion`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Create a version of an Amazon Bedrock flow.
 
-```
+```python
 def create_flow_version(client, flow_id, description):
     """
     Creates a version of an Amazon Bedrock flow.
@@ -289,7 +289,7 @@ The following code example shows how to use `CreateKnowledgeBase`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Create an Amazon Bedrock knowledge base.
 
-```
+```python
 def create_knowledge_base(bedrock_agent_client, name, role_arn, description=None):
     """
     Creates a new knowledge base.
@@ -358,7 +358,7 @@ The following code example shows how to use `CreatePrompt`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Create an Amazon Bedrock managed prompt.
 
-```
+```python
 def create_prompt(client, prompt_name, prompt_description, prompt_template, model_id=None):
     """
     Creates an Amazon Bedrock managed prompt.
@@ -433,7 +433,7 @@ The following code example shows how to use `CreatePromptVersion`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Create a version of an Amazon Bedrock managed prompt.
 
-```
+```python
 def create_prompt_version(client, prompt_id, description=None):
     """
     Creates a version of an Amazon Bedrock managed prompt.
@@ -482,7 +482,7 @@ The following code example shows how to use `DeleteAgent`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Delete an agent.
 
-```
+```python
     def delete_agent(self, agent_id):
         """
         Deletes an Amazon Bedrock agent.
@@ -512,7 +512,7 @@ The following code example shows how to use `DeleteAgentAlias`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Delete an agent alias.
 
-```
+```python
     def delete_agent_alias(self, agent_id, agent_alias_id):
         """
         Deletes an alias of an Amazon Bedrock agent.
@@ -543,7 +543,7 @@ The following code example shows how to use `DeleteFlow`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Delete an Amazon Bedrock flow.
 
-```
+```python
 def delete_flow(client, flow_id):
     """
     Deletes an Amazon Bedrock flow.
@@ -589,7 +589,7 @@ The following code example shows how to use `DeleteFlowAlias`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Delete an alias for an Amazon Bedrock flow.
 
-```
+```python
 def delete_flow_alias(client, flow_id, flow_alias_id):
     """
     Deletes an Amazon Bedrock flow alias.
@@ -632,7 +632,7 @@ The following code example shows how to use `DeleteFlowVersion`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Delete a version of an Amazon Bedrock flow.
 
-```
+```python
 def delete_flow_version(client, flow_id, flow_version):
     """
     Deletes a version of an Amazon Bedrock flow.
@@ -677,7 +677,7 @@ The following code example shows how to use `DeleteKnowledgeBase`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Delete an Amazon Bedrock knowledge base.
 
-```
+```python
 def delete_knowledge_base(bedrock_agent_client, knowledge_base_id):
     """
     Deletes a knowledge base.
@@ -716,7 +716,7 @@ The following code example shows how to use `DeletePrompt`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Delete an Amazon Bedrock managed prompt.
 
-```
+```python
 def delete_prompt(client, prompt_id):
     """
     Deletes an Amazon Bedrock managed prompt.
@@ -758,7 +758,7 @@ The following code example shows how to use `GetAgent`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Get an agent.
 
-```
+```python
     def get_agent(self, agent_id, log_error=True):
         """
         Gets information about an agent.
@@ -791,7 +791,7 @@ The following code example shows how to use `GetFlow`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Get an Amazon Bedrock flow.
 
-```
+```python
 def get_flow(client, flow_id):
     """
     Gets an Amazon Bedrock flow.
@@ -837,7 +837,7 @@ The following code example shows how to use `GetFlowVersion`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Get a version of an Amazon Bedrock flow.
 
-```
+```python
 def get_flow_version(client, flow_id, flow_version):
     """
     Gets information about a version of an Amazon Bedrock flow.
@@ -884,7 +884,7 @@ The following code example shows how to use `GetKnowledgeBase`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Get an Amazon Bedrock knowledge base.
 
-```
+```python
 def get_knowledge_base(bedrock_agent_client, knowledge_base_id):
     """
     Gets details about a specific knowledge base.
@@ -923,7 +923,7 @@ The following code example shows how to use `GetPrompt`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Get an Amazon Bedrock managed prompt.
 
-```
+```python
 def get_prompt(client, prompt_id):
     """
     Gets an Amazon Bedrock managed prompt.
@@ -967,7 +967,7 @@ The following code example shows how to use `ListAgentActionGroups`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 List the action groups for an agent.
 
-```
+```python
     def list_agent_action_groups(self, agent_id, agent_version):
         """
         List the action groups for a version of an Amazon Bedrock Agent.
@@ -1005,7 +1005,7 @@ The following code example shows how to use `ListAgentKnowledgeBases`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 List the knowledge bases associated with an agent.
 
-```
+```python
     def list_agent_knowledge_bases(self, agent_id, agent_version):
         """
         List the knowledge bases associated with a version of an Amazon Bedrock Agent.
@@ -1043,7 +1043,7 @@ The following code example shows how to use `ListAgents`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 List the agents belonging to an account.
 
-```
+```python
     def list_agents(self):
         """
         List the available Amazon Bedrock Agents.
@@ -1075,7 +1075,7 @@ The following code example shows how to use `ListFlowAliases`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 List the aliases for an Amazon Bedrock flow.
 
-```
+```python
 def list_flow_aliases(client, flow_id):
     """
     Lists the aliases of an Amazon Bedrock flow.
@@ -1136,7 +1136,7 @@ The following code example shows how to use `ListFlowVersions`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 List the versions of an Amazon Bedrock flow.
 
-```
+```python
 def list_flow_versions(client, flow_id):
     """
     Lists the versions of an Amazon Bedrock flow.
@@ -1195,7 +1195,7 @@ The following code example shows how to use `ListFlows`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 List Amazon Bedrock flows.
 
-```
+```python
 def list_flows(client):
     """
     Lists versions of an Amazon Bedrock flow.
@@ -1251,7 +1251,7 @@ The following code example shows how to use `ListKnowledgeBases`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 List Amazon Bedrock knowledge Bases.
 
-```
+```python
 def list_knowledge_bases(bedrock_agent_client, max_results=None):
     """
     Lists the knowledge bases in your AWS account.
@@ -1300,7 +1300,7 @@ The following code example shows how to use `ListPrompts`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 List Amazon Bedrock managed prompts.
 
-```
+```python
 def list_prompts(client, max_results=10):
     """
     Lists Amazon Bedrock managed prompts.
@@ -1351,7 +1351,7 @@ The following code example shows how to use `PrepareAgent`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Prepare an agent for internal testing.
 
-```
+```python
     def prepare_agent(self, agent_id):
         """
         Creates a DRAFT version of the agent that can be used for internal testing.
@@ -1378,7 +1378,7 @@ The following code example shows how to use `PrepareFlow`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Prepare an Amazon Bedrock flow.
 
-```
+```python
 def prepare_flow(client, flow_id):
     """
     Prepares an Amazon Bedrock Flow.
@@ -1441,7 +1441,7 @@ The following code example shows how to use `UpdateFlow`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Update an Amazon Bedrock Flow.
 
-```
+```python
 def update_flow(client, flow_id, flow_name, flow_description, role_arn, flow_def):
     """
     Updates an Amazon Bedrock flow.
@@ -1493,7 +1493,7 @@ The following code example shows how to use `UpdateFlowAlias`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Update an alias for an Amazon Bedrock flow.
 
-```
+```python
 def update_flow_alias(client, flow_id, alias_id, flow_version, name, description):
     """
     Updates an alias for an Amazon Bedrock flow.
@@ -1544,7 +1544,7 @@ The following code example shows how to use `UpdateKnowledgeBase`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Update an Amazon Bedrock knowledge base.
 
-```
+```python
 def update_knowledge_base(bedrock_agent_client, knowledge_base_id, name=None, description=None, role_arn=None):
     """
     Updates an existing knowledge base.
@@ -1610,7 +1610,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Generates a music playlist based on user-specified genre and number of songs.
 
-```
+```python
 from datetime import datetime
 import logging
 import boto3
@@ -2239,7 +2239,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Create and invoke a managed prompt.
 
-```
+```python
 import argparse
 import boto3
 import logging
@@ -2427,7 +2427,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Create and invoke an agent.
 
-```
+```python
 REGION = "us-east-1"
 ROLE_POLICY_NAME = "agent_permissions"
 

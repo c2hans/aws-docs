@@ -24,6 +24,12 @@ Additional Cgroup-specific configuration that directly maps to Cgroup settings.
 Type: Array of [CgroupCustomSetting](API_CgroupCustomSetting.md) objects
 Required: No
 
+ ** jobSubmitPlugins **   <a name="PCS-Type-ClusterSlurmConfiguration-jobSubmitPlugins"></a>
+The job submit plugins to run on the cluster controller. Use job submit plugins to execute custom scripts during job submission and job modification to validate or modify the job's configuration. Custom scripts can accept or reject jobs based on their configuration or modify the configuration before job execution.
+Type: Array of [JobSubmitPlugin](API_JobSubmitPlugin.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
+Required: No
+
  ** jwtAuth **   <a name="PCS-Type-ClusterSlurmConfiguration-jwtAuth"></a>
 The JWT authentication configuration for Slurm REST API access.
 Type: [JwtAuth](API_JwtAuth.md) object

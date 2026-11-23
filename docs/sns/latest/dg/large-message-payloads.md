@@ -61,7 +61,7 @@ To set `MaximumMessageSize` above 256 KiB, the topic must have 100 or fewer tota
 
 Set `MaximumMessageSize` when creating a new topic:
 
-```
+```bash
 aws sns create-topic \
     --name my-large-message-topic \
     --attributes MaximumMessageSize=1048576
@@ -71,7 +71,7 @@ Replace `my-large-message-topic` with your topic name and `1048576` with your de
 
 Set `MaximumMessageSize` on an existing topic:
 
-```
+```bash
 aws sns set-topic-attributes \
     --topic-arn arn:aws:sns:us-east-1:123456789012:my-topic \
     --attribute-name MaximumMessageSize \
@@ -82,7 +82,7 @@ Replace `arn:aws:sns:us-east-1:123456789012:my-topic` with the ARN of your topic
 
 Verify your topic's current `MaximumMessageSize`. If the attribute has not been explicitly set, it does not appear in the response, and the topic uses the default of 262,144 bytes (256 KiB).
 
-```
+```bash
 aws sns get-topic-attributes \
     --topic-arn arn:aws:sns:us-east-1:123456789012:my-topic
 ```

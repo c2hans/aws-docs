@@ -50,7 +50,7 @@ To set up target tracking for an endpoint, you use AWS CLI commands to register 
 
 1. Create a target tracking configuration for the scaling policy and save the configuration in a file called `config.json`. The following is an example of a target tracking configuration for a document classification endpoint that targets keeping the InferenceUtilization metric at 70%.
 
-   ```
+   ```json
    {
      "TargetValue": 70,
      "CustomizedMetricSpecification": {
@@ -70,7 +70,7 @@ To set up target tracking for an endpoint, you use AWS CLI commands to register 
 
    The following is an example for an entity recognizer endpoint:
 
-   ```
+   ```json
    {
      "TargetValue": 70,
      "CustomizedMetricSpecification": {

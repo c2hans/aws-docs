@@ -28,7 +28,7 @@ The following example shows how you specify these parameters for the gateway. Th
 **Note**
 The parameters for specifying the list of participating gateways aren't available when you send a downlink message from AWS IoT Core for LoRaWAN using the AWS IoT console.
 
-```
+```JSON
 aws iotwireless send-data-to-wireless-device \
     --id {{"11aa5eae-2f56-4b8e-a023-b28d98494e49"}} \
     --transmit-mode "1" \
@@ -40,7 +40,7 @@ The following shows the contents of the `input.json` file.
 
 **Contents of input.json**
 
-```
+```JSON
 {
     "WirelessMetadata": {
         "LoRaWAN": {

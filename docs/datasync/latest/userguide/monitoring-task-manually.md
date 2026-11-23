@@ -31,7 +31,7 @@ aws datasync describe-task-execution \
 
 This command returns information about a task execution similar to that shown following.
 
-```
+```json
 {
     "BytesCompressed": 3500,
     "BytesTransferred": 5000,

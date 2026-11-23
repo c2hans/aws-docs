@@ -15,26 +15,26 @@ First, check what you need in [Setting up AWS Emulator](setting-up.md).
 
     **RPM package (x86\_64)**
 
-   ```
+   ```bash
    sudo dnf install -y https://downloads.aws.com/aws-emulator/packages/aws-emulator/LTS/latest/aws-emulator-x86_64.rpm
    ```
 
     **RPM package (aarch64)**
 
-   ```
+   ```bash
    sudo dnf install -y https://downloads.aws.com/aws-emulator/packages/aws-emulator/LTS/latest/aws-emulator-aarch64.rpm
    ```
 
     **Debian package (amd64)**
 
-   ```
+   ```bash
    curl -fsSLo aws-emulator.deb https://downloads.aws.com/aws-emulator/packages/aws-emulator/LTS/latest/aws-emulator_amd64.deb
    sudo apt-get install -y ./aws-emulator.deb
    ```
 
     **Debian package (arm64)**
 
-   ```
+   ```bash
    curl -fsSLo aws-emulator.deb https://downloads.aws.com/aws-emulator/packages/aws-emulator/LTS/latest/aws-emulator_arm64.deb
    sudo apt-get install -y ./aws-emulator.deb
    ```
@@ -47,7 +47,7 @@ First, check what you need in [Setting up AWS Emulator](setting-up.md).
 
 1. Confirm the installation. The command prints the version. For what it shows, see [Version numbers](versioning.md#versioning-numbers).
 
-   ```
+   ```bash
    aws-emulator -v
    ```
 
@@ -58,7 +58,7 @@ First, check what you need in [Setting up AWS Emulator](setting-up.md).
 
 1. Download the package and its signature file. The following example uses the RPM package for x86\_64. For another package, change the file name in `PACKAGE_FILE`.
 
-   ```
+   ```bash
    PACKAGE_FILE=aws-emulator-x86_64.rpm
    curl -fsSLO https://downloads.aws.com/aws-emulator/packages/aws-emulator/LTS/latest/$PACKAGE_FILE
    curl -fsSLO https://downloads.aws.com/aws-emulator/packages/aws-emulator/LTS/latest/$PACKAGE_FILE.sig
@@ -66,14 +66,14 @@ First, check what you need in [Setting up AWS Emulator](setting-up.md).
 
 1. Import the public key.
 
-   ```
+   ```bash
    curl -fsSLo aws-publishing.asc https://downloads.aws.com/keys/gpg/current.asc
    gpg --import aws-publishing.asc
    ```
 
 1. Check the fingerprint of the key.
 
-   ```
+   ```bash
    gpg --fingerprint ssm-publishing@amazon.com
    ```
 
@@ -81,7 +81,7 @@ First, check what you need in [Setting up AWS Emulator](setting-up.md).
 
 1. Verify the signature.
 
-   ```
+   ```bash
    gpg --verify $PACKAGE_FILE.sig $PACKAGE_FILE
    ```
 
@@ -91,13 +91,13 @@ First, check what you need in [Setting up AWS Emulator](setting-up.md).
 
     **RPM package**
 
-   ```
+   ```bash
    sudo dnf install -y ./$PACKAGE_FILE
    ```
 
     **Debian package**
 
-   ```
+   ```bash
    sudo apt-get install -y ./$PACKAGE_FILE
    ```
 
@@ -106,7 +106,7 @@ First, check what you need in [Setting up AWS Emulator](setting-up.md).
 
 1. Start the emulator.
 
-   ```
+   ```bash
    aws-emulator
    ```
 
@@ -134,7 +134,7 @@ The emulator keeps emulated resources in memory. It uses about 160 MiB when idle
 
 1. Start the emulator with the following `systemd-run` command. It sets a limit of 2 GiB, and `MemorySwapMax=0` keeps the emulator out of swap.
 
-   ```
+   ```bash
    systemd-run --user --scope -p MemoryMax=2G -p MemorySwapMax=0 aws-emulator
    ```
 
@@ -151,13 +151,13 @@ The emulator keeps emulated resources in memory. It uses about 160 MiB when idle
 
     **RPM systems**
 
-   ```
+   ```bash
    sudo dnf remove -y aws-emulator
    ```
 
     **Debian systems**
 
-   ```
+   ```bash
    sudo apt-get remove -y aws-emulator
    ```
 
@@ -165,6 +165,6 @@ The emulator keeps emulated resources in memory. It uses about 160 MiB when idle
 **Important**
 This command deletes all the files that the emulator keeps in your home directory. Do this only when you’re done with the emulator.
 
-   ```
+   ```bash
    rm -rf ~/.aws/emulator
    ```

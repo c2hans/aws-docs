@@ -55,3 +55,6 @@ Editor includes `cloudwatch:InvokeIntegration`. A member or access profile with 
 | Lambda | lambda:InvokeFunction, lambda:GetFunction | Run code-based custom evaluators. | Members who use code evaluators. |
 | Secrets Manager | secretsmanager:ListSecrets, secretsmanager:CreateSecret, secretsmanager:TagResource, secretsmanager:PutSecretValue, secretsmanager:GetSecretValue, secretsmanager:DeleteSecret | Store, read, rotate, and delete model provider API keys used by evaluators. | Members who add provider keys. |
 | Config | config:PutServiceLinkedConfigurationRecorder, config:DeleteServiceLinkedConfigurationRecorder, config:DescribeConfigurationRecorderStatus | Turn the AWS Config recorder on or off, and read its status, to build the Azure topology map. | Members who set up Azure topology. |
+
+**Note**
+Observations, which `cloudwatch:GetIntelligenceConfiguration` and `cloudwatch:PutIntelligenceConfiguration` configure, is in preview release for CloudWatch Omni and is subject to change.

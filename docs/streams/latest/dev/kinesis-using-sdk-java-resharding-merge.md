@@ -15,7 +15,7 @@ The set of all `OPEN` shards in a stream—as a group—always spans the entire 
 
 To identify shards that are candidates for merging, you should filter out all shards that are in a `CLOSED` state. Shards that are `OPEN`—that is, not `CLOSED`—have an ending sequence number of `null`. You can test the ending sequence number for a shard using:
 
-```
+```java
 if( null == shard.getSequenceNumberRange().getEndingSequenceNumber() )
 {
   // Shard is OPEN, so it is a possible candidate to be merged.
@@ -24,7 +24,7 @@ if( null == shard.getSequenceNumberRange().getEndingSequenceNumber() )
 
 After filtering out the closed shards, sort the remaining shards by the highest hash key value supported by each shard. You can retrieve this value using:
 
-```
+```java
 shard.getHashKeyRange().getEndingHashKey();
 ```
 
@@ -35,7 +35,7 @@ shard.getHashKeyRange().getEndingHashKey();
 
 For the merge operation, begin by instantiating a new `mergeShardsRequest` object. Specify the stream name with the `setStreamName` method. Then specify the two shards to merge using the `setShardToMerge` and `setAdjacentShardToMerge` methods. Finally, call the `mergeShards` method on the Kinesis Data Streams client to carry out the operation.
 
-```
+```java
 MergeShardsRequest mergeShardsRequest = new MergeShardsRequest();
 mergeShardsRequest.setStreamName(myStreamName);
 mergeShardsRequest.setShardToMerge(shard1.getShardId());

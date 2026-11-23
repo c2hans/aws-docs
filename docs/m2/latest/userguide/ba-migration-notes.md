@@ -89,7 +89,7 @@ This section lists changes required to make the modernized code compatible with 
 
 Update the Spring Boot version:
 
-```
+```xml
 <properties>
     <spring.boot.version>4.0.3</spring.boot.version>
 </properties>
@@ -97,7 +97,7 @@ Update the Spring Boot version:
 
 Replace `spring-boot-starter-web` with `spring-boot-starter-webmvc`:
 
-```
+```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-webmvc</artifactId>

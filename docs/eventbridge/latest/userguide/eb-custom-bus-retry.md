@@ -25,7 +25,7 @@ For a FIFO subscriber, a failed call holds up the later events of every event gr
 
 The record is a JSON document, not the event. The following example shows one record for two events that failed together in one batch.
 
-```
+```json
 {
     "version": "1.0",
     "busArn": "arn:aws:events:us-east-1:111122223333:event-busv2/orders/EXAMPLE1234567890abcdef",
@@ -79,7 +79,7 @@ The queue holds records, not events, so you redrive by replaying the events from
 
 1. When the subscriber has delivered the events, delete it and delete the records from the queue.
 
-```
+```bash
 aws eventsv2 create-subscriber \
     --name redrive-2026-09-16 \
     --event-bus-arn arn:aws:events:us-east-1:111122223333:event-busv2/orders/EXAMPLE1234567890abcdef \

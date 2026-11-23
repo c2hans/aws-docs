@@ -47,13 +47,13 @@ After the new static IP address is attached to your instance, you must complete 
 1. After you're connected, enter the following command. Replace {{<StaticIP>}} with the new static IP address of your instance.
 
    ```
-   sudo /opt/aws/wordpress/update_multisite_domain.sh {{<StaticIP>}}
+   sudo /opt/aws/wordpress/update_multisite_domain.sh --new-domain {{<StaticIP>}}
    ```
 
    **Example:**
 
    ```
-   sudo /opt/aws/wordpress/update_multisite_domain.sh {{203.0.113.0}}
+   sudo /opt/aws/wordpress/update_multisite_domain.sh --new-domain {{192.0.2.1}}
    ```
 
    The WordPress website on your instance should now be aware of the new static IP address.
@@ -66,7 +66,7 @@ Now that you have the default application password, complete the following proce
 1. On your instance management page, under the **Connect** tab, make note of the public IP address of your instance. The public IP address is also displayed in the header section of your instance management page.
 ![Public IP address of an instance](https://docs.aws.amazon.com/lightsail/latest/userguide/images/quick-start-public-ip.png)
 
-1. Browse to the public IP address of your instance, for example by going to `http://203.0.113.0`.
+1. Browse to the public IP address of your instance, for example by going to `http://192.0.2.1`.
 
    The home page of your WordPress website should appear.
 
@@ -93,13 +93,13 @@ After your domain name is routing traffic to your instance, you must complete th
 1. After you're connected, enter the following command. Replace {{<DomainName>}} with the domain name that is routing traffic to your instance.
 
    ```
-   sudo /opt/aws/wordpress/update_multisite_domain.sh {{<DomainName>}}
+   sudo /opt/aws/wordpress/update_multisite_domain.sh --new-domain {{<DomainName>}}
    ```
 
    **Example:**
 
    ```
-   sudo /opt/aws/wordpress/update_multisite_domain.sh {{www.example.com}}
+   sudo /opt/aws/wordpress/update_multisite_domain.sh --new-domain {{www.example.com}}
    ```
 
    The WordPress Multisite software should now be aware of the domain name.
@@ -129,6 +129,10 @@ You can work with snapshots on your instance's management page on the **Snapshot
 
 ------
 #### [ Bitnami ]
+
+**This blueprint packaged by Bitnami was deprecated on November 19, 2026**
+You can no longer create new instances with this blueprint. Existing instances and snapshots are not affected; you can keep using them and can still create new instances from snapshots. You are responsible for keeping the software on these instances up to date. When creating new instances, we recommend using the equivalent blueprint packaged by Lightsail if available. [Learn more](amazon-lightsail-faq-bitnami-blueprints.md)
+If you have an existing instance that uses a blueprint packaged by Bitnami and want to migrate to a blueprint packaged by Lightsail, see [Migrating from Bitnami blueprints to Lightsail blueprints](migrate-from-bitnami-to-lightsail-blueprints.md).
 
 <a name="amazon-lightsail-read-the-bitnami-documentation-wordpress-multisite"></a>**Step 1: Read the Bitnami documentation**
 
@@ -175,7 +179,7 @@ After the new static IP address is attached to your instance, you must complete 
    **Example:**
 
    ```
-   sudo /opt/bitnami/configure_app_domain --domain {{203.0.113.0}}
+   sudo /opt/bitnami/configure_app_domain --domain {{192.0.2.1}}
    ```
 
    You should see a response similar to the following example. The WordPress website on your instance should now be aware of the new static IP address.
@@ -200,7 +204,7 @@ Now that you have the default application password, complete the following proce
 1. On your instance management page, under the **Connect** tab, make note of the public IP address of your instance. The public IP address is also displayed in the header section of your instance management page.
 ![Public IP address of an instance](https://docs.aws.amazon.com/lightsail/latest/userguide/images/quick-start-public-ip.png)
 
-1. Browse to the public IP address of your instance, for example by going to `http://203.0.113.0`.
+1. Browse to the public IP address of your instance, for example by going to `http://192.0.2.1`.
 
    The home page of your WordPress website should appear.
 

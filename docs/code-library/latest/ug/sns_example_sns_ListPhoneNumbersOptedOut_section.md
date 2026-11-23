@@ -36,7 +36,7 @@ For more information, see [Managing Amazon SNS phone numbers and subscriptions](
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sns#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sns.SnsClient;
 import software.amazon.awssdk.services.sns.model.ListPhoneNumbersOptedOutRequest;
@@ -83,7 +83,7 @@ public class ListOptOut {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/sns#code-examples).
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;

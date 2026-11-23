@@ -43,7 +43,7 @@ You must use the same `sts_role_arn` in all pipeline components.
 
 Add the following permissions to allow the pipeline to poll and manage messages on the queue:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -67,7 +67,7 @@ Add the following permissions to allow the pipeline to poll and manage messages 
 
 If your Amazon SQS queue is encrypted with an AWS KMS customer managed key, add the following permissions:
 
-```
+```json
 {
   "Sid": "allowKMSDecryptSQS",
   "Effect": "Allow",
@@ -84,7 +84,7 @@ If your Amazon SQS queue is encrypted with an AWS KMS customer managed key, add 
 
 Add the following permissions for writing to your OpenSearch domain or collection:
 
-```
+```json
 {
   "Sid": "allowAccessToOpenSearch",
   "Effect": "Allow",
@@ -104,7 +104,7 @@ Add the following permissions for writing to your OpenSearch domain or collectio
 
 The pipeline role must have a trust relationship with `osis-pipelines.amazonaws.com`:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -132,7 +132,7 @@ The pipeline role must have a trust relationship with `osis-pipelines.amazonaws.
 
 If you're writing to an OpenSearch Service domain, configure the [domain access policy](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ac.html#ac-types-resource) to allow the pipeline role:
 
-```
+```json
 {
   "Statement": [
     {
@@ -157,7 +157,7 @@ After configuring the pipeline role, create your OpenSearch Ingestion pipeline s
 
 The following example reads JSON messages from a single Amazon SQS queue and indexes them into OpenSearch:
 
-```
+```YAML
 version: "2"
 sqs-pipeline:
   source:
@@ -200,7 +200,7 @@ sqs-pipeline:
 
 Each queue is configured as its own entry in the `queues` list with independent settings:
 
-```
+```YAML
 version: "2"
 multi-queue-pipeline:
   source:
@@ -239,7 +239,7 @@ multi-queue-pipeline:
 
 For queues where each message contains multiple log lines separated by newlines:
 
-```
+```YAML
 version: "2"
 log-pipeline:
   source:
@@ -280,7 +280,7 @@ log-pipeline:
 
 For high-throughput queues where processing time may exceed the visibility timeout:
 
-```
+```YAML
 version: "2"
 protected-pipeline:
   source:
@@ -313,7 +313,7 @@ protected-pipeline:
 ### Pipeline configuration with Amazon OpenSearch Serverless
 <a name="sqs-pipeline-serverless"></a>
 
-```
+```YAML
 version: "2"
 serverless-sqs-pipeline:
   source:
@@ -426,7 +426,7 @@ You can configure cross-account access so that an OpenSearch Ingestion pipeline 
 
 In the account that owns the Amazon SQS queue, add the following to the queue's access policy:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -453,7 +453,7 @@ In the account that owns the Amazon SQS queue, add the following to the queue's 
 
 Specify the full queue URL from the source account in your pipeline configuration:
 
-```
+```YAML
 version: "2"
 cross-account-sqs-pipeline:
   source:

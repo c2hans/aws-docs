@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/transcribe-streaming#code-examples).
 
-```
+```cpp
 int main() {
     Aws::SDKOptions options;
 
@@ -150,7 +150,7 @@ int main() {
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/transcribe-streaming#code-examples).
 
-```
+```java
 public class TranscribeStreamingDemoApp {
     private static final Region REGION = Region.US_EAST_1;
     private static TranscribeStreamingAsyncClient client;
@@ -328,7 +328,7 @@ public class TranscribeStreamingDemoApp {
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/transcribe-streaming#code-examples).
 
-```
+```swift
         let client = TranscribeStreamingClient(
             config: try await TranscribeStreamingClient.TranscribeStreamingClientConfig(
                 region: region

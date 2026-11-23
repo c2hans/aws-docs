@@ -137,7 +137,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-kms-alias-delete-ex-min"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-DeleteKMSAlias",
   "Region" : "us-east-1",
@@ -152,6 +152,6 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-kms-alias-delete-ex-max"></a>
 
-```
+```json
 Example not available.
 ```

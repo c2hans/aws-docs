@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 
 ![Offload game builds to the cloud](https://docs.aws.amazon.com/wellarchitected/latest/games-industry-lens/images/image6.png)
 
+*Offload game builds to the cloud*
+
 1.  AWS Direct Connect provides a low latency, private, dedicated connection to AWS for in-office developers. Remote developers use zero-trust technologies like AWS Verified Access, or virtual private networks (VPN) like AWS Client VPN.
 
 1.  AWS Transit Gateway simplifies network management for connectivity between VPCs and from on-premises networks.

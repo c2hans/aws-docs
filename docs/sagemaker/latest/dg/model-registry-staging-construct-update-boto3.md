@@ -8,7 +8,7 @@ To update a model package stage and status, you will need to assume an execution
 
 In this example, the `ModelLifeCycle` stage `"Development"` and stage status `"Approved"` condition keys for the [`UpdateModelPackage`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateModelPackage.html) API action has been granted to the your execution role. You can include a description in `{{stage-description}}`. See [Set up Staging Construct Examples](model-registry-staging-construct-set-up.md) for more information.
 
-```
+```python
 from sagemaker.core.helper.session_helper import get_execution_role, session
 import boto3
 

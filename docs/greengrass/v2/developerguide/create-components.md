@@ -30,7 +30,7 @@ Follow instructions in this section to create and build a component using the GD
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    mkdir {{~/greengrassv2}}
    cd {{~/greengrassv2}}
    ```
@@ -38,7 +38,7 @@ Follow instructions in this section to create and build a component using the GD
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    mkdir {{%USERPROFILE%\greengrassv2}}
    cd {{%USERPROFILE%\greengrassv2}}
    ```
@@ -46,7 +46,7 @@ Follow instructions in this section to create and build a component using the GD
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    mkdir {{~/greengrassv2}}
    cd {{~/greengrassv2}}
    ```
@@ -56,12 +56,12 @@ Follow instructions in this section to create and build a component using the GD
 1. Choose a component template or community component to download. The GDK CLI downloads the template or community component, so you can start from a functional example. Use the [component list](greengrass-development-kit-cli-component.md#greengrass-development-kit-cli-component-list) command to retrieve the list of available templates or community components.
    + To list component templates, run the following command. Each line in the response includes a template's name and programming language.
 
-     ```
+     ```bash
      gdk component list --template
      ```
    + To list community components, run the following command.
 
-     ```
+     ```bash
      gdk component list --repository
      ```
 
@@ -70,7 +70,7 @@ Follow instructions in this section to create and build a component using the GD
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    mkdir {{HelloWorld}}
    cd {{HelloWorld}}
    ```
@@ -78,7 +78,7 @@ Follow instructions in this section to create and build a component using the GD
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    mkdir {{HelloWorld}}
    cd {{HelloWorld}}
    ```
@@ -86,7 +86,7 @@ Follow instructions in this section to create and build a component using the GD
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    mkdir {{HelloWorld}}
    cd {{HelloWorld}}
    ```
@@ -96,12 +96,12 @@ Follow instructions in this section to create and build a component using the GD
 1. Download the template or community component to the current folder. Use the [component init](greengrass-development-kit-cli-component.md#greengrass-development-kit-cli-component-init) command.
    + To create a component folder from a template, run the following command. Replace {{HelloWorld}} with the name of the template, and replace {{python}} with the name of the programming language.
 
-     ```
+     ```bash
      gdk component init --template {{HelloWorld}} --language {{python}}
      ```
    + To create a component folder from a community component, run the following command. Replace {{ComponentName}} with the name of the community component.
 
-     ```
+     ```bash
      gdk component init --repository {{ComponentName}}
      ```
 **Note**
@@ -160,7 +160,7 @@ If you use GDK CLI version 1.0.0 on a Windows device, the component folder and z
 
    When you're done with this step, the `gdk-config.json` file might look similar to the following example.
 
-   ```
+   ```json
    {
      "component": {
        "com.example.PythonHelloWorld": {
@@ -186,7 +186,7 @@ If you use GDK CLI version 1.0.0 on a Windows device, the component folder and z
 ------
 #### [ JSON ]
 
-      ```
+      ```json
       {
         {{...}}
         "Manifests": [
@@ -211,7 +211,7 @@ If you use GDK CLI version 1.0.0 on a Windows device, the component folder and z
 ------
 #### [ YAML ]
 
-      ```
+      ```python
       ---
       {{...}}
       Manifests:
@@ -233,7 +233,7 @@ If you use GDK CLI version 1.0.0 on a Windows device, the component folder and z
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
      "RecipeFormatVersion": "2020-01-25",
      "ComponentName": "{COMPONENT_NAME}",
@@ -267,7 +267,7 @@ If you use GDK CLI version 1.0.0 on a Windows device, the component folder and z
 ------
 #### [ YAML ]
 
-   ```
+   ```python
    ---
    RecipeFormatVersion: "2020-01-25"
    ComponentName: "{COMPONENT_NAME}"
@@ -291,7 +291,7 @@ If you use GDK CLI version 1.0.0 on a Windows device, the component folder and z
 
 1. Develop and build the Greengrass component. The [component build](greengrass-development-kit-cli-component.md#greengrass-development-kit-cli-component-build) command produces a recipe and artifacts in the `greengrass-build` folder in the component folder. Run the following command.
 
-   ```
+   ```bash
    gdk component build
    ```
 
@@ -309,7 +309,7 @@ Follow instructions in this section to create recipe and artifact folders that c
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    mkdir -p {{~/greengrassv2}}/{recipes,artifacts}
    cd {{~/greengrassv2}}
    ```
@@ -317,7 +317,7 @@ Follow instructions in this section to create recipe and artifact folders that c
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    mkdir {{%USERPROFILE%\greengrassv2}}\\recipes, {{%USERPROFILE%\greengrassv2}}\\artifacts
    cd {{%USERPROFILE%\greengrassv2}}
    ```
@@ -325,7 +325,7 @@ Follow instructions in this section to create recipe and artifact folders that c
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    mkdir {{~/greengrassv2}}/recipes, {{~/greengrassv2}}/artifacts
    cd {{~/greengrassv2}}
    ```
@@ -339,14 +339,14 @@ Follow instructions in this section to create recipe and artifact folders that c
 ------
 #### [ JSON ]
 
-   ```
+   ```bash
    nano recipes/{{com.example.HelloWorld}}-{{1.0.0}}.json
    ```
 
 ------
 #### [ YAML ]
 
-   ```
+   ```bash
    nano recipes/{{com.example.HelloWorld}}-{{1.0.0}}.yaml
    ```
 
@@ -361,7 +361,7 @@ Follow instructions in this section to create recipe and artifact folders that c
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
      "RecipeFormatVersion": "2020-01-25",
      "ComponentName": "com.example.HelloWorld",
@@ -397,7 +397,7 @@ Follow instructions in this section to create recipe and artifact folders that c
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    ---
    RecipeFormatVersion: '2020-01-25'
    ComponentName: com.example.HelloWorld
@@ -424,7 +424,7 @@ Follow instructions in this section to create recipe and artifact folders that c
 
    This recipe runs a Hello World Python script, which might look similar to the following example script.
 
-   ```
+   ```python
    import sys
 
    message = "Hello, %s!" % sys.argv[1]
@@ -438,21 +438,21 @@ Follow instructions in this section to create recipe and artifact folders that c
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    mkdir -p artifacts/{{com.example.HelloWorld}}/{{1.0.0}}
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    mkdir artifacts/{{com.example.HelloWorld}}/{{1.0.0}}
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    mkdir artifacts/{{com.example.HelloWorld}}/{{1.0.0}}
    ```
 

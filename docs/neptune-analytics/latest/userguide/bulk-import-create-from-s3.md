@@ -69,7 +69,7 @@ aws s3 cp datafile.txt s3://examplebucket/mydirectory/datafile.txt
 
 ****
 
-   ```
+   ```json
    {
          "Version":"2012-10-17",
          "Statement": [

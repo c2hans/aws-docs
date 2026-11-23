@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-dotnet-
 
 Project File:
 
-```
+```csharp
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
@@ -41,7 +41,7 @@ Project File:
 
 Example Program:
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Net.WebSockets;

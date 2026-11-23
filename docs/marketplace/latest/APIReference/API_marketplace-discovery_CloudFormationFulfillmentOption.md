@@ -33,9 +33,19 @@ Type: String
 Valid Values: `AMAZON_MACHINE_IMAGE | API | CLOUDFORMATION_TEMPLATE | CONTAINER | HELM | EKS_ADD_ON | EC2_IMAGE_BUILDER_COMPONENT | DATA_EXCHANGE | PROFESSIONAL_SERVICES | SAAS | SAGEMAKER_ALGORITHM | SAGEMAKER_MODEL`
 Required: Yes
 
+ ** architectureDiagramUrl **   <a name="AWSMarketplaceService-Type-marketplace-discovery_CloudFormationFulfillmentOption-architectureDiagramUrl"></a>
+The URL of the architecture diagram for the CloudFormation template.
+Type: String
+Required: No
+
  ** availableFromTime **   <a name="AWSMarketplaceService-Type-marketplace-discovery_CloudFormationFulfillmentOption-availableFromTime"></a>
 The date and time when the CloudFormation fulfillment option became available for fulfillment.
 Type: Timestamp
+Required: No
+
+ ** deploymentTemplateUrl **   <a name="AWSMarketplaceService-Type-marketplace-discovery_CloudFormationFulfillmentOption-deploymentTemplateUrl"></a>
+The URL of the CloudFormation template.
+Type: String
 Required: No
 
  ** fulfillmentOptionVersion **   <a name="AWSMarketplaceService-Type-marketplace-discovery_CloudFormationFulfillmentOption-fulfillmentOptionVersion"></a>
@@ -50,7 +60,7 @@ Length Constraints: Minimum length of 0. Maximum length of 8192.
 Required: No
 
  ** releaseNotes **   <a name="AWSMarketplaceService-Type-marketplace-discovery_CloudFormationFulfillmentOption-releaseNotes"></a>
-Release notes describing changes in this version of the fulfillment option.
+Release notes that describe the changes in this version of the fulfillment option.
 Type: String
 Required: No
 

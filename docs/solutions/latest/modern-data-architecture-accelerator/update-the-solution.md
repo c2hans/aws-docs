@@ -13,13 +13,13 @@ MDAA follows semantic versioning. Minor releases (for example, 1.6.0 to 1.7.0) a
 
 1. Run `diff` to preview the CloudFormation changes the upgrade will introduce. To diff against the latest published version:
 
-   ```
+   ```bash
    npx @aws-mdaa/cli diff -c ./mdaa.yaml
    ```
 
    To diff against a specific version:
 
-   ```
+   ```bash
    npx @aws-mdaa/cli@1.7.0 --mdaa-version 1.7.0 diff -c ./mdaa.yaml
    ```
 
@@ -33,7 +33,7 @@ For breaking changes, deprecations, and other notable behavior changes in each r
 
 Starting with MDAA 1.8.0, the CLI has an `upgrade` action. Run it from the project root, the directory that holds `mdaa.yaml`:
 
-```
+```bash
 npx @aws-mdaa/cli@1.8.0 upgrade
 ```
 
@@ -41,13 +41,13 @@ npx @aws-mdaa/cli@1.8.0 upgrade
 
 The version argument has to match the CLI that runs, because the schemas and documentation are generated from the installed CLI. Omit it to upgrade the project to the CLI version already installed:
 
-```
+```bash
 mdaa upgrade
 ```
 
 Then deploy with the same version. To deploy the latest published version, run the CLI without specifying a version or `--mdaa-version`:
 
-```
+```bash
 npx @aws-mdaa/cli deploy -c ./mdaa.yaml
 ```
 
@@ -56,7 +56,7 @@ npx @aws-mdaa/cli deploy -c ./mdaa.yaml
 
 To upgrade to a specific version, specify the target version when running the CLI:
 
-```
+```bash
 npx @aws-mdaa/cli@1.7.0 --mdaa-version 1.7.0 deploy -c ./mdaa.yaml
 ```
 
@@ -67,7 +67,7 @@ The `--mdaa-version` flag controls which version of the MDAA module packages are
 
 For a more controlled rollout, you can pin specific MDAA versions at different levels in your `mdaa.yaml` configuration. This allows you to upgrade and validate modules individually before upgrading the rest.
 
-```
+```yaml
 # Pin version globally
 mdaa_version: '1.6.0'
 
@@ -87,7 +87,7 @@ Version resolution follows a hierarchy: module overrides environment, environmen
 
 You can also use the `-d`, `-e`, and `-m` CLI flags to target specific domains, environments, or modules during an upgrade:
 
-```
+```bash
 npx @aws-mdaa/cli@1.7.0 --mdaa-version 1.7.0 deploy -c ./mdaa.yaml -m audit
 ```
 
@@ -96,7 +96,7 @@ npx @aws-mdaa/cli@1.7.0 --mdaa-version 1.7.0 deploy -c ./mdaa.yaml -m audit
 
 Starting with MDAA 1.5.0, you can compare synthesized templates against a stored baseline without requiring a deployed stack. This is useful for CI/CD pipelines or for validating upgrades in a non-deployed environment:
 
-```
+```bash
 # Synthesize and store templates from the current version
 npx @aws-mdaa/cli@1.6.0 --mdaa-version 1.6.0 synth -c ./mdaa.yaml --cdk-out ./baseline
 

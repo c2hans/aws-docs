@@ -70,7 +70,7 @@ A price update notification for Amazon Relational Database Service (Amazon RDS) 
 **Example: Notification message**
 If you subscribed to AWS services such as Amazon SQS, Lambda, or other services, the structure of the pricing update notification message body looks like the following.
 
-```
+```json
 {
     "formatVersion":"v1.0",
     "offerCode":"{{<serviceCode>}}",
@@ -162,7 +162,7 @@ A subject line for Savings Plan looks like the following.
 **Example: Notification message**
 If you subscribed to AWS services such as Amazon SQS, Lambda, or other services, the structure of the pricing update notification message body looks like the following,
 
-```
+```json
 {
   "version":"<Version number of this new price list>",
   "offerCode":"<savingsPlanCode which can be used as input to API calls>",

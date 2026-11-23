@@ -53,6 +53,6 @@ You need to embed a script into your website so the URL of the page can be expos
 
 1. Replace the following placeholder `${endpoint}` with the value from previous step. Copy the entire code snippet and paste it on the top level of your website.
 
-   ```
+   ```json
    <script type="text/javascript" src='${endpoint}/amazon-connect-url-restriction.js'></script>
    ```

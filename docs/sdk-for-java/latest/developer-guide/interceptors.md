@@ -31,7 +31,7 @@ The `ExecutionInterceptor` interface provides methods that are called at specifi
 
 Register interceptors when you build a service client using the `overrideConfiguration` method. You can register multiple interceptors, and they execute in the order you register them.
 
-```
+```java
 // Register a single interceptor.
 SqsClient client = SqsClient.builder()
     .overrideConfiguration(c -> c.addExecutionInterceptor(new LoggingInterceptor()))
@@ -56,7 +56,7 @@ This example shows you how to register multiple interceptors on an S3 client and
 ### Imports
 <a name="interceptor-example-imports"></a>
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.awscore.exception.AwsServiceException;

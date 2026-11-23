@@ -15,7 +15,7 @@ Following are the prerequisites to enable Amazon S3 table integration with AWS G
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -100,7 +100,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of DeleteAgent.
 
-```
+```json
 DELETE /agents/ABCDEFGHIJ/ HTTP/1.1
 ```
 

@@ -91,7 +91,7 @@ You can add up to 30 denied topics to your guardrail by using the AWS Management
 
 Add denied topics to your guardrail by sending a [CreateGuardrail](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateGuardrail.html) request. Here's what the request format looks like:
 
-```
+```json
 POST /guardrails HTTP/1.1
 Content-type: application/json
 
@@ -137,7 +137,7 @@ Content-type: application/json
 
 The response format looks like this:
 
-```
+```json
 HTTP/1.1 202
 Content-type: application/json
 

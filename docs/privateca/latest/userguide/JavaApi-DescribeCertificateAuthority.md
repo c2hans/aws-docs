@@ -15,7 +15,7 @@ The operation lists information about your private certificate authority (CA). Y
 + `FAILED` – Your private CA cannot be created.
 + `DELETED` – Your private CA is within the restoration period, after which it will be permanently deleted.
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.auth.AWSCredentials;

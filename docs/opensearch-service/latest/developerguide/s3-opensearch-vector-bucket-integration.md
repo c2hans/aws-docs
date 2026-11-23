@@ -85,7 +85,7 @@ If you choose to specify an existing role, verify that the role has the followin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -126,7 +126,7 @@ If you choose to specify an existing role, verify that the role has the followin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -151,7 +151,7 @@ If you choose to specify an existing role, verify that the role has the followin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -179,7 +179,7 @@ If you choose to specify an existing role, verify that the role has the followin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

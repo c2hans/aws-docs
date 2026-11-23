@@ -21,7 +21,7 @@ The following policy grants access to reboot/start/stop an instance, manage inst
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -117,7 +117,7 @@ The following policy grants access to reboot/start/stop and update a specific da
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

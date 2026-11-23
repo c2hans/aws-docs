@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeTa
 
 # ChangeTagsForResource
 
-Adds, edits, or deletes tags for a health check or a hosted zone.
+Adds, edits, or deletes tags for a health check, a health check source, or a hosted zone.
 
 For information about using tags for cost allocation, see [Using Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in the * AWS Billing and Cost Management User Guide*.
 
@@ -40,8 +40,9 @@ Required: Yes
  ** [ResourceType](#API_ChangeTagsForResource_RequestSyntax) **   <a name="Route53-ChangeTagsForResource-request-uri-ResourceType"></a>
 The type of the resource.
 + The resource type for health checks is `healthcheck`.
++ The resource type for health check sources is `healthchecksource`.
 + The resource type for hosted zones is `hostedzone`.
-Valid Values: `healthcheck | hostedzone`
+Valid Values: `healthcheck | hostedzone | healthchecksource`
 Required: Yes
 
 ## Request Body
@@ -54,8 +55,8 @@ Root level tag for the ChangeTagsForResourceRequest parameters.
 Required: Yes
 
  ** [AddTags](#API_ChangeTagsForResource_RequestSyntax) **   <a name="Route53-ChangeTagsForResource-request-AddTags"></a>
-A complex type that contains a list of the tags that you want to add to the specified health check or hosted zone and/or the tags that you want to edit `Value` for.
-You can add a maximum of 10 tags to a health check or a hosted zone.
+A complex type that contains a list of the tags that you want to add to the specified health check, health check source, or hosted zone and/or the tags that you want to edit `Value` for.
+You can add a maximum of 10 tags to a health check, a health check source, or a hosted zone.
 Type: Array of [Tag](API_Tag.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
@@ -94,6 +95,10 @@ HTTP Status Code: 400
 No health check exists with the specified ID.
  ** message **
 
+HTTP Status Code: 404
+
+ ** NoSuchHealthCheckSource **
+No health check source exists with the specified ID. Verify that the ID is correct and that the health check source hasn't been deleted.
 HTTP Status Code: 404
 
  ** NoSuchHostedZone **

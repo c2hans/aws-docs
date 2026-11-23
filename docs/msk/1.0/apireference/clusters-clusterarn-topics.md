@@ -101,7 +101,7 @@ Enable CORS by returning correct headers
 #### POST schema
 <a name="clusters-clusterarn-topics-request-body-post-example"></a>
 
-```
+```json
 {
   "partitionCount": integer,
   "configs": "string",
@@ -118,7 +118,7 @@ Enable CORS by returning correct headers
 #### ListTopicsResponse schema
 <a name="clusters-clusterarn-topics-response-body-listtopicsresponse-example"></a>
 
-```
+```json
 {
   "topics": [
     {
@@ -126,7 +126,10 @@ Enable CORS by returning correct headers
       "replicationFactor": number,
       "topicName": "string",
       "topicArn": "string",
-      "outOfSyncReplicaCount": number
+      "outOfSyncReplicaCount": number,
+      "replicaIds": [
+        integer
+      ]
     }
   ],
   "nextToken": "string"
@@ -136,7 +139,7 @@ Enable CORS by returning correct headers
 #### CreateTopicResponse schema
 <a name="clusters-clusterarn-topics-response-body-createtopicresponse-example"></a>
 
-```
+```json
 {
   "topicName": "string",
   "topicArn": "string",
@@ -147,7 +150,7 @@ Enable CORS by returning correct headers
 #### Error schema
 <a name="clusters-clusterarn-topics-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"
@@ -210,6 +213,7 @@ Includes identification info about the topic.
 | --- |--- |--- |--- |
 | outOfSyncReplicaCount | number | False | Number of out of sync replica for topic |
 | partitionCount | number | False | Partition count for a topic |
+| replicaIds | Array of type integer | False | The IDs of the brokers that host the replicas of this topic's partitions, as a single set across every partition. While a cluster is in mixed mode, these IDs tell you whether the topic is still on the Standard brokers or has moved to the Express brokers; match them against the `brokerNodeType` values that `ListNodes` reports.<br />For replica assignments partition by partition, use `DescribeTopicPartitions`. |
 | replicationFactor | number | False | Replication factor for a topic |
 | topicArn | string | False | ARN of the topic. |
 | topicName | string | False | Name for a topic. |

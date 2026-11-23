@@ -36,7 +36,7 @@ When a DataBrew profile job completes, DataBrew sends an Amazon CloudWatch event
 
  Following is an example of a DataBrew Validation Result event:
 
-```
+```json
 {
   "version": "0",
   "id": "fb27348b-112d-e7c2-560d-85e7c2c09964",
@@ -59,7 +59,7 @@ When a DataBrew profile job completes, DataBrew sends an Amazon CloudWatch event
 
 You can use attributes of events such as `detail-type`, `source` and nested properties of the `detail` attribute to [create event patterns](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html#eb-create-pattern) in Amazon Eventbridge. For example an event pattern to match all failed validations from any DataBrew job would look like this:
 
-```
+```json
 {
   "source": ["aws.databrew"],
   "detail-type": ["DataBrew Ruleset Validation Result"],

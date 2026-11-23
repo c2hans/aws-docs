@@ -27,7 +27,7 @@ Amazon Glacier is a secure cloud storage service for data archiving and long-ter
 
 The following example uses the Amazon Glacier[CreateVault](https://docs.aws.amazon.com/sdk-for-go/api/service/glacier/#Glacier.CreateVault) operation to create a vault named `YOUR_VAULT_NAME`.
 
-```
+```go
 import (
     "log"
 
@@ -66,7 +66,7 @@ func main() {
 
 The following example assumes you have a vault named `YOUR_VAULT_NAME`. It uses the Amazon Glacier[UploadArchive](https://docs.aws.amazon.com/sdk-for-go/api/service/glacier/#Glacier.UploadArchive) operation to upload a single reader object as an entire archive. The AWS SDK for Go automatically computes the tree hash checksum for the data to be uploaded.
 
-```
+```go
 import (
     "bytes"
     "log"

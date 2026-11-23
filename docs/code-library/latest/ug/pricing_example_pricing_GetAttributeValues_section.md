@@ -45,7 +45,7 @@ For more information, see [Finding services and products using AWS Price List Qu
 **Tools for PowerShell V4**
 **Example 1: Returns the values for the attribute 'volumeType' for Amazon EC2 in the us-east-1 region.**
 
-```
+```powershell
 Get-PLSAttributeValue -ServiceCode AmazonEC2 -AttributeName "volumeType" -region us-east-1
 ```
 **Output:**
@@ -64,7 +64,7 @@ Throughput Optimized HDD
 **Tools for PowerShell V5**
 **Example 1: Returns the values for the attribute 'volumeType' for Amazon EC2 in the us-east-1 region.**
 
-```
+```powershell
 Get-PLSAttributeValue -ServiceCode AmazonEC2 -AttributeName "volumeType" -region us-east-1
 ```
 **Output:**

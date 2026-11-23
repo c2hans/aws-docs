@@ -58,7 +58,7 @@ To view a code example for using the `$search` command, choose the tab for the l
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function findWithText() {
@@ -80,7 +80,7 @@ findWithText();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def find_with_text():

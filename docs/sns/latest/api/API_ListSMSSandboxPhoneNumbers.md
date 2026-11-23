@@ -77,7 +77,7 @@ This example illustrates one usage of ListSMSSandboxPhoneNumbers.
 #### Sample Request
 <a name="API_ListSMSSandboxPhoneNumbers_Example_1_Request"></a>
 
-```
+```xml
 https://sns.us-west-2.amazonaws.com/?Action=ListSMSSandboxPhoneNumbers
 &NextToken=eyJBd3NBY2NvdW50SWQiOnsicyI6IjU3MjQ1OTY4NzAxNCJ9LCJEZXN0aW5hdGlvblBob25lTnVtYmVyIjp7InMiOiIrMTc3ODI1NTM4NSJ9fQ%3D%3D
 &MaxResults=2
@@ -88,7 +88,7 @@ https://sns.us-west-2.amazonaws.com/?Action=ListSMSSandboxPhoneNumbers
 #### Sample Response
 <a name="API_ListSMSSandboxPhoneNumbers_Example_1_Response"></a>
 
-```
+```xml
 <ListSMSSandboxPhoneNumbersResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ListSMSSandboxPhoneNumbersResult>
            <NextToken>eyJBd3NBY2NvdW50SWQiOnsicyI6IjU3MjQ1OTY4NzAxNCJ9LCJEZXN0aW5hdGlvblBob25lTnVtYmVyIjp7InMiOiIrMTc3ODk4NjU0MjkifX0=</NextToken>

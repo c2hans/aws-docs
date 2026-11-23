@@ -18,7 +18,7 @@ Follow these instructions to implement this pattern:
 
 1. Update the trust policy of the `AcceleratorPipelineDeploymentRole` to allow access from the pipeline deployment account:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -46,7 +46,7 @@ By default, AWS IAM roles with prefix AcceleratorQualifier in the pipeline accou
 **Using the CLI with an external pipeline deployment**
 To use the Landing Zone Accelerator on AWS CLI with an external pipeline deployment, authenticate to the pipeline deployment account. Then export the following three environment variables. With these variables set, the toolkit assumes the `AcceleratorPipelineDeploymentRole` in the management account instead of treating your local credentials as the management account.
 
-```
+```bash
 export MANAGEMENT_ACCOUNT_ID="management-account-id"
 export MANAGEMENT_ACCOUNT_ROLE_NAME="management-account-role-name"
 export PIPELINE_ACCOUNT_ID="pipeline-deployment-account-id"
@@ -57,7 +57,7 @@ With the preceding trust policy, you can assume the `AcceleratorPipelineDeployme
 
 1. Add the following statement to the trust policy of the `AcceleratorPipelineDeploymentRole`. Replace *pipeline-deployment-account-id* with the ID of the pipeline deployment account. Replace *cli-role-name* with the name of the IAM role that you run the CLI with.
 
-   ```
+   ```json
    {
      "Effect": "Allow",
      "Principal": {
@@ -87,25 +87,25 @@ After you create the IAM role in the management account, synthesize the Landing 
 
 1. Navigate to the `source` folder:
 
-   ```
+   ```bash
    cd landing-zone-accelerator-on-aws/source
    ```
 
 1. Install dependencies and build the source code:
 
-   ```
+   ```bash
    yarn install && yarn build
    ```
 
 1. Navigate to the installer folder:
 
-   ```
+   ```bash
    cd packages/\@aws-accelerator/installer/
    ```
 
 1. Synthesize the installer template by running:
 
-   ```
+   ```bash
    cdk synth --context use-external-pipeline-account=true
    ```
 

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-mtrl
 
 The following example demonstrates the complete workflow for multi-turn RL: training an agent, evaluating its performance, and deploying the trained model.
 
-```
+```python
 from sagemaker.train.multi_turn_rl_trainer import MultiTurnRLTrainer
 from sagemaker.train.evaluate import MultiTurnRLEvaluator
 from sagemaker.serve import ModelBuilder

@@ -30,7 +30,7 @@ You can delete entries from a list in the Amazon Fraud Detector console, using t
 
 In the following example the [UpdateList](https://docs.aws.amazon.com/frauddetector/latest/api/API_UpdateList.html) API operation deletes entries from `allow_email_ids` list.
 
-```
+```python
 import boto3
                         fraudDetector = boto3.client('frauddetector')
 fraudDetector.update_list(

@@ -42,7 +42,7 @@ For more information, see [Attach an Amazon EBS volume to an Amazon EC2 instance
 **Tools for PowerShell V4**
 **Example 1: This example attaches the specified volume to the specified instance and exposes it with the specified device name.**
 
-```
+```powershell
 Add-EC2Volume -VolumeId vol-12345678 -InstanceId i-1a2b3c4d -Device /dev/sdh
 ```
 **Output:**
@@ -60,7 +60,7 @@ VolumeId            : vol-12345678
 **Tools for PowerShell V5**
 **Example 1: This example attaches the specified volume to the specified instance and exposes it with the specified device name.**
 
-```
+```powershell
 Add-EC2Volume -VolumeId vol-12345678 -InstanceId i-1a2b3c4d -Device /dev/sdh
 ```
 **Output:**

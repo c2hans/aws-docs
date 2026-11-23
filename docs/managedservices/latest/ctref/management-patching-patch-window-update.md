@@ -166,7 +166,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-patching-patch-window-update-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-UpdateMaintenanceWindow",
   "Region": "us-east-1",
@@ -182,7 +182,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-patching-patch-window-update-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-UpdateMaintenanceWindow",
   "Region": "us-east-1",

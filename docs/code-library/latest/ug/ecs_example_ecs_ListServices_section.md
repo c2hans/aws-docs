@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/ECS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List service ARNs available.
     /// </summary>
@@ -82,12 +82,12 @@ For more information, see [Amazon ECS services](https://docs.aws.amazon.com/Amaz
 **Tools for PowerShell V4**
 **Example 1: This example lists all services running in your default cluster.**
 
-```
+```powershell
 Get-ECSClusterService
 ```
 **Example 2: This example lists all services running in the specified cluster.**
 
-```
+```powershell
 Get-ECSClusterService -Cluster myCluster
 ```
 +  For API details, see [ListServices](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -95,12 +95,12 @@ Get-ECSClusterService -Cluster myCluster
 **Tools for PowerShell V5**
 **Example 1: This example lists all services running in your default cluster.**
 
-```
+```powershell
 Get-ECSClusterService
 ```
 **Example 2: This example lists all services running in the specified cluster.**
 
-```
+```powershell
 Get-ECSClusterService -Cluster myCluster
 ```
 +  For API details, see [ListServices](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

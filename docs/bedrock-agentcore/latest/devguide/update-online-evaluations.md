@@ -28,7 +28,7 @@ The following code samples demonstrate how to update online evaluation configura
 
    For a configuration created outside a project, update it by ID. Run `agentcore eval online-eval list` to find the configuration ID.
 
-   ```
+   ```bash
    agentcore eval online-eval update \
      --id <ONLINE_EVAL_ID> \
      --sampling-rate 5 \
@@ -37,7 +37,7 @@ The following code samples demonstrate how to update online evaluation configura
 
    To control whether the evaluation job of a configuration created outside a project is running (`ENABLED` or `DISABLED`), pause and resume it by ID:
 
-   ```
+   ```bash
    # Pause a running online evaluation
    agentcore eval online-eval pause --id <ONLINE_EVAL_ID>
 
@@ -49,7 +49,7 @@ The configuration must be in `ACTIVE`, `UPDATE_FAILED`, or `ERROR` lifecycle sta
 
 1.
 
-   ```
+   ```python
    from bedrock_agentcore_starter_toolkit import Evaluation
 
    # Initialize the evaluation client
@@ -67,7 +67,7 @@ The configuration must be in `ACTIVE`, `UPDATE_FAILED`, or `ERROR` lifecycle sta
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client('bedrock-agentcore-control')
@@ -80,7 +80,7 @@ The configuration must be in `ACTIVE`, `UPDATE_FAILED`, or `ERROR` lifecycle sta
 
 1.
 
-   ```
+   ```bash
    aws bedrock-agentcore-control update-online-evaluation-config \
        --online-evaluation-config-id your_config_id \
        --description "Updated description for online evaluation"

@@ -45,13 +45,13 @@ To use the AWS CRT-based S3 client, add the following two dependencies to your M
 
  Create an instance of the AWS CRT-based S3 client with default settings as shown in the following code snippet.
 
-```
+```java
 S3AsyncClient s3AsyncClient = S3AsyncClient.crtCreate();
 ```
 
 To configure the client, use the AWS CRT client builder. You can switch from the standard S3 asynchronous client to AWS CRT-based client by changing the builder method.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3AsyncClient;
@@ -73,7 +73,7 @@ Some of the settings in the standard builder might not be currently supported in
 
 Use the AWS CRT-based S3 client to call Amazon S3 API operations. The following example demonstrates the [PutObject](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3AsyncClient.html#putObject(java.util.function.Consumer,software.amazon.awssdk.core.async.AsyncRequestBody)) and [GetObject](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3AsyncClient.html#getObject(java.util.function.Consumer,software.amazon.awssdk.core.async.AsyncResponseTransformer)) operations available through the AWS SDK for Java.
 
-```
+```java
 import software.amazon.awssdk.core.async.AsyncRequestBody;
 import software.amazon.awssdk.core.async.AsyncResponseTransformer;
 import software.amazon.awssdk.services.s3.S3AsyncClient;
@@ -102,7 +102,7 @@ GetObjectResponse getObjectResponse =
 
 One significant advantage of the AWS AWS CRT-based S3 client is its ability to handle input streams of unknown size efficiently. This is particularly useful when you need to upload data from a source where the total size cannot be determined in advance.
 
-```
+```java
 public PutObjectResponse crtClient_stream_unknown_size(String bucketName, String key, InputStream inputStream) {
 
     S3AsyncClient s3AsyncClient = S3AsyncClient.crtCreate();

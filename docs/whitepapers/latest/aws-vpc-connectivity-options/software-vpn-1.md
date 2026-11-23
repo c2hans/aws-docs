@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
 ![Diagram showing an internet gateway attached to each VPC.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/software-site-to-site-vpn-vpc-to-vpc-routing.png)
 
+Software Site-to-Site VPN VPC-to-VPC Routing
+
  You can choose from an ecosystem of multiple partners and open source communities that have produced software VPN appliances that run on Amazon EC2. Along with this choice comes the responsibility for you to manage the software appliance including configuration, patches, and upgrades.
 
  Note that this design introduces a potential single point of failure into the network design as the software VPN appliance runs on a single Amazon EC2 instance. For additional information, see [Appendix A: High-Level HA architecture for software VPN instances](appendix-a-high-level-ha-architecture-for-software-vpn-instances.md).

@@ -60,7 +60,7 @@ In the **Actions** dropdown, choose **Recommendation feedback**. Select **Useful
 **API**
 Use the `PutAgentRecommendationFeedback` API to submit feedback programmatically:
 
-  ```
+  ```bash
   aws wellarchitected put-agent-recommendation-feedback \
       --profile-arn "arn:aws:wellarchitected:{{us-east-1}}:{{111122223333}}:agent-profile/{{my-profile}}" \
       --recommendation-id "{{rec-id}}" \
@@ -74,14 +74,14 @@ Use the `PutAgentRecommendationFeedback` API to submit feedback programmatically
 
 To list all active recommendations for a profile:
 
-```
+```bash
 aws wellarchitected list-agent-recommendations \
     --profile-arn "{{arn:aws:wellarchitected:us-east-1:111122223333:agent-profile/my-profile}}"
 ```
 
 To list suppressed recommendations for a profile:
 
-```
+```bash
 aws wellarchitected list-agent-recommendations \
     --profile-arn "{{arn:aws:wellarchitected:us-east-1:111122223333:agent-profile/my-profile}}" \
     --state CLOSED
@@ -89,14 +89,14 @@ aws wellarchitected list-agent-recommendations \
 
 To get the full details of a specific recommendation:
 
-```
+```bash
 aws wellarchitected get-agent-recommendation \
     --recommendation-arn "{{arn:aws:wellarchitected:us-east-1:111122223333:agent-profile/my-profile/recommendation/rec-id}}"
 ```
 
 To list the individual items (affected resources) for a recommendation:
 
-```
+```bash
 aws wellarchitected list-agent-recommendation-items \
     --recommendation-arn "{{arn:aws:wellarchitected:us-east-1:111122223333:agent-profile/my-profile/recommendation/rec-id}}"
 ```

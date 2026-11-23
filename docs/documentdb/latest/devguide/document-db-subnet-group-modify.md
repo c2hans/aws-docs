@@ -71,7 +71,7 @@ aws docdb modify-db-subnet-group ^
 ```
 Output from this operation looks something like the following (JSON format). Notice that this is the same subnet group that was created in the [Creating an Amazon DocumentDB subnet group](document-db-subnet-group-create.md) section. However, the subnets in the subnet group are replaced with those listed in the `modify-db-subnet-group` operation.
 
-```
+```json
 {
     "DBSubnetGroup": {
         "DBSubnetGroupArn": "arn:aws:rds:us-east-1:123SAMPLE012:subgrp:sample-subnet-group",

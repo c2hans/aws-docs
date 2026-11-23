@@ -24,7 +24,7 @@ Currently, CloudFormation supports template fragments written in JSON or YAML.
 
 For example, the following template fragment creates an S3 bucket resource, and sets the `AccessControl` property to `Private` and the resource `DeletionPolicy` to `Retain`. In addition, the template fragment defines a module-level parameter, `VersioningConfigurationParam`, whose values is used to set the `VersioningConfiguration` status of the S3 bucket.
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "A sample S3 Bucket module (AWS::SampleS3::Bucket::MODULE)",
@@ -142,7 +142,7 @@ To generate the module schema, use the `[validate](https://docs.aws.amazon.com/c
 
 For example, suppose you created a module package and used the template fragment above. The `validate` command would result in the following module schema:
 
-```
+```json
 {
   "typeName": "AWS::SampleS3::Bucket::MODULE",
   "properties": {
@@ -197,7 +197,7 @@ For any third-party public resources you include in your public module, you must
 
 For example, the following module snippet adds a resource to the module. The module uses a type alias, `Module::DDB::Table`, for the resource type, but also includes the original type name, `Mongodb::DDB::Table`, so that CloudFormation can determine if the resource type is enabled in the user's account. The snippet also includes publisher ID information, in case multiple publishers have published public resource types of the same name, in addition to which major versions of the resource type that the module supports.
 
-```
+```yaml
 Resources:
   SampleDDB:
     Type: Module::DDB::Table

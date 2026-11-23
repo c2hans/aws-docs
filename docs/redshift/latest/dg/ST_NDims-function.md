@@ -41,7 +41,7 @@ The values returned are as follows.
 
 The following SQL returns the number of dimensions of a 2D linestring.
 
-```
+```sql
 SELECT ST_NDims(ST_GeomFromText('LINESTRING(0 0,1 1,2 2,0 0)'));
 ```
 
@@ -53,7 +53,7 @@ st_ndims
 
 The following SQL returns the number of dimensions of a 3DZ linestring.
 
-```
+```sql
 SELECT ST_NDims(ST_GeomFromText('LINESTRING Z(0 0 3,1 1 3,2 2 3,0 0 3)'));
 ```
 
@@ -65,7 +65,7 @@ st_ndims
 
 The following SQL returns the number of dimensions of a 3DM linestring.
 
-```
+```sql
 SELECT ST_NDims(ST_GeomFromText('LINESTRING M(0 0 4,1 1 4,2 2 4,0 0 4)'));
 ```
 
@@ -77,7 +77,7 @@ st_ndims
 
 The following SQL returns the number of dimensions of a 4D linestring.
 
-```
+```sql
 SELECT ST_NDims(ST_GeomFromText('LINESTRING ZM(0 0 3 4,1 1 3 4,2 2 3 4,0 0 3 4)'));
 ```
 

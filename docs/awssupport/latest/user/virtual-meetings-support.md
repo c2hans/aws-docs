@@ -48,7 +48,7 @@ Virtual meetings are recorded for quality assurance and training purposes. Don't
 
 To join virtual meetings, your IAM user or role must have the following permission:
 
-```
+```json
  {
      "Version": "2012-10-17",
      "Statement": [{

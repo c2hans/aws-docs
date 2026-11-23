@@ -33,7 +33,7 @@ Use the metadata utility in your handler:
 
 **Example Retrieving AZ ID with Powertools (Python)**
 
-```
+```python
 from aws_lambda_powertools.utilities.lambda_metadata import get_lambda_metadata
 
 def handler(event, context):
@@ -56,7 +56,7 @@ Use the metadata utility in your handler:
 
 **Example Retrieving AZ ID with Powertools (TypeScript)**
 
-```
+```javascript
 import { getMetadata } from '@aws-lambda-powertools/commons/utils/metadata';
 
 const metadata = await getMetadata();
@@ -72,7 +72,7 @@ export const handler = async () => {
 
 Add the Powertools dependency to your `pom.xml`:
 
-```
+```xml
 <dependencies>
     <dependency>
         <groupId>software.amazon.lambda</groupId>
@@ -86,7 +86,7 @@ Use the metadata client in your handler:
 
 **Example Retrieving AZ ID with Powertools (Java)**
 
-```
+```java
 import software.amazon.lambda.powertools.metadata.LambdaMetadata;
 import software.amazon.lambda.powertools.metadata.LambdaMetadataClient;
 
@@ -115,7 +115,7 @@ Use the metadata class in your handler:
 
 **Example Retrieving AZ ID with Powertools (.NET)**
 
-```
+```csharp
 using AWS.Lambda.Powertools.Metadata;
 
 public class Function
@@ -135,7 +135,7 @@ All Lambda runtimes support the metadata endpoint, including custom runtimes and
 
 **Example Accessing the metadata endpoint directly**
 
-```
+```bash
 # Variables are automatically set by Lambda
 METADATA_ENDPOINT="http://${AWS_LAMBDA_METADATA_API}/2026-01-15/metadata/execution-environment"
 
@@ -193,7 +193,7 @@ The response is immutable within an execution environment. Clients should cache 
 
 **Body:**
 
-```
+```json
 {
   "AvailabilityZoneID": "use1-az1"
 }

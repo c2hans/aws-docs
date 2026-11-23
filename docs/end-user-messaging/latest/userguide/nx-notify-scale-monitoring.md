@@ -56,7 +56,7 @@ With CloudWatch, you can also create alarms that trigger based on metric thresho
 
 Use the [put-metric-alarm](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html) command. The following example alarms on Notify spend and notifies an Amazon SNS topic.
 
-```
+```bsh
 $ aws cloudwatch put-metric-alarm \
 > --alarm-name {{HighNotifySpend}} \
 > --namespace AWS/SMSVoice \

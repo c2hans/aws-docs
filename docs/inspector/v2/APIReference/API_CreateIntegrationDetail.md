@@ -12,6 +12,11 @@ Contains details required to create a code security integration with a specific 
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** githubEnterprise **   <a name="inspector2-Type-CreateIntegrationDetail-githubEnterprise"></a>
+Details specific to creating an integration with a GitHub Enterprise Server instance.
+Type: [CreateGitHubEnterpriseIntegrationDetail](API_CreateGitHubEnterpriseIntegrationDetail.md) object
+Required: No
+
  ** gitlabSelfManaged **   <a name="inspector2-Type-CreateIntegrationDetail-gitlabSelfManaged"></a>
 Details specific to creating an integration with a self-managed GitLab instance.
 Type: [CreateGitLabSelfManagedIntegrationDetail](API_CreateGitLabSelfManagedIntegrationDetail.md) object

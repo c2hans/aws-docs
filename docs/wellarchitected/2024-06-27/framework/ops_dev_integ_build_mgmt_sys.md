@@ -34,6 +34,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Diagram showing a CI/CD pipeline using AWS CodePipeline and related services](https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/images/deployment-pipeline-tooling.png)
 
+*Diagram showing a CI/CD pipeline using AWS CodePipeline and related services*
+
 1.  Use AWS CodeCommit to version control, store, and manage assets (such as documents, source code, and binary files).
 
 1.  Use CodeBuild to compile your source code, runs unit tests, and produces artifacts that are ready to deploy.

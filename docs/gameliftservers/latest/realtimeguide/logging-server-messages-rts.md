@@ -16,13 +16,13 @@ You can output custom messages in the [script for your Amazon GameLift Servers 
 
 1. Create a variable to hold the reference to the logger object.
 
-   ```
+   ```javascript
    var logger;
    ```
 
 1. In the `init()` function, get the logger from the session object and assign it to your logger variable.
 
-   ```
+   ```javascript
    function init(rtSession) {
        session = rtSession;
        logger = session.getLogger();
@@ -33,37 +33,37 @@ You can output custom messages in the [script for your Amazon GameLift Servers 
 
    **Debug messages**
 
-   ```
+   ```javascript
    logger.debug("This is my debug message...");
    ```
 
    **Informational messages**
 
-   ```
+   ```javascript
    logger.info("This is my info message...");
    ```
 
    **Warning messages**
 
-   ```
+   ```javascript
    logger.warn("This is my warn message...");
    ```
 
    **Error messages**
 
-   ```
+   ```javascript
    logger.error("This is my error message...");
    ```
 
    **Fatal error messages**
 
-   ```
+   ```javascript
    logger.fatal("This is my fatal error message...");
    ```
 
    **Customer experience fatal error messages**
 
-   ```
+   ```javascript
    logger.cxfatal("This is my customer experience fatal error message...");
    ```
 
@@ -112,7 +112,7 @@ Follow the instructions at [Create a hosting fleet for Amazon GameLift Servers 
 Follow the instructions at [Create a hosting fleet for Amazon GameLift Servers Realtime](realtime-fleets-creating.md) to create your fleet, with the following addition:
 + In the argument to the `--runtime-configuration` parameter for `[create-fleet](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-fleet.html)`, provide the logging level key-value pair (such as `loggingLevel:error`) as a value for `Parameters`. Use a non-alphanumeric character (except comma) to separate the logging level from any additional parameters. See the following example:
 
-```
+```javascript
 --runtime-configuration "GameSessionActivationTimeoutSeconds=60,
                     MaxConcurrentGameSessionActivations=2,
                     ServerProcesses=[{LaunchPath=/local/game/myRealtimeLaunchScript.js,
@@ -128,7 +128,7 @@ Follow the instructions at [ Update an Amazon GameLift Servers fleet configurati
 Follow the instructions at [ Update an Amazon GameLift Servers fleet configuration ](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/fleets-editing) to update your fleet using the AWS CLI, with the following addition:
 + In the argument to the `--runtime-configuration` parameter for `[update-runtime-configuration](https://docs.aws.amazon.com/cli/latest/reference/gamelift/update-runtime-configuration.html)`, provide the logging level key-value pair (such as `loggingLevel:error`) as a value for `Parameters`. Use a non-alphanumeric character (except comma) to separate the logging level from any additional parameters. See the following example:
 
-```
+```javascript
 --runtime-configuration "GameSessionActivationTimeoutSeconds=60,
                     MaxConcurrentGameSessionActivations=2,
                     ServerProcesses=[{LaunchPath=/local/game/myRealtimeLaunchScript.js,

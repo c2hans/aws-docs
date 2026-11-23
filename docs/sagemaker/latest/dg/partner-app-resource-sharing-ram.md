@@ -81,7 +81,7 @@ The account with which an Amazon SageMaker Partner AI App is shared needs to hav
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [

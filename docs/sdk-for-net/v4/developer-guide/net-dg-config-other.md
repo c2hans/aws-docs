@@ -35,7 +35,7 @@ For more information about use of the `<aws>` element as described later in this
 
 Configures how the SDK should log events, if at all. For example, the recommended approach is to use the `<logging>` element, which is a child element of the `<aws>` element:
 
-```
+```xml
 <aws>
   <logging logTo="Log4Net"/>
 </aws>
@@ -43,7 +43,7 @@ Configures how the SDK should log events, if at all. For example, the recommende
 
 Alternatively:
 
-```
+```xml
 <add key="AWSLogging" value="log4net"/>
 ```
 
@@ -60,19 +60,19 @@ Log using the `System.Diagnostics` class.
 
 You can set multiple values for the `logTo` attribute, separated by commas. The following example sets both `log4net` and `System.Diagnostics` logging in the `.config` file:
 
-```
+```xml
 <logging logTo="Log4Net, SystemDiagnostics"/>
 ```
 
 Alternatively:
 
-```
+```xml
 <add key="AWSLogging" value="log4net, SystemDiagnostics"/>
 ```
 
 Alternatively, using the AWS SDK for .NET API, combine the values of the [LoggingOptions](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TLoggingOptions.html) enumeration and set the [AWSConfigs.Logging](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TAWSConfigs.html) property:
 
-```
+```csharp
 AWSConfigs.Logging = LoggingOptions.Log4Net | LoggingOptions.SystemDiagnostics;
 ```
 
@@ -83,7 +83,7 @@ Changes to this setting take effect only for new AWS client instances.
 
 Specifies whether or not the SDK should log performance metrics. To set the metrics logging configuration in the `.config` file, set the `logMetrics` attribute value in the `<logging>` element, which is a child element of the `<aws>` element:
 
-```
+```xml
 <aws>
   <logging logMetrics="true"/>
 </aws>
@@ -91,13 +91,13 @@ Specifies whether or not the SDK should log performance metrics. To set the metr
 
 Alternatively, set the `AWSLogMetrics` key in the `<appSettings>` section:
 
-```
+```xml
 <add key="AWSLogMetrics" value="true">
 ```
 
 Alternatively, to set metrics logging with the AWS SDK for .NET API, set the [AWSConfigs.LogMetrics](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TAWSConfigs.html) property:
 
-```
+```csharp
 AWSConfigs.LogMetrics = true;
 ```
 
@@ -108,19 +108,19 @@ This setting configures the default `LogMetrics` property for all clients/config
 
 Configures the default AWS region for clients that have not explicitly specified a region. To set the region in the `.config` file, the recommended approach is to set the `region` attribute value in the `aws` element:
 
-```
+```xml
 <aws region="us-west-2"/>
 ```
 
 Alternatively, set the *AWSRegion* key in the `<appSettings>` section:
 
-```
+```xml
 <add key="AWSRegion" value="us-west-2"/>
 ```
 
 Alternatively, to set the region with the AWS SDK for .NET API, set the [AWSConfigs.AWSRegion](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TAWSConfigs.html) property:
 
-```
+```csharp
 AWSConfigs.AWSRegion = "us-west-2";
 ```
 
@@ -142,7 +142,7 @@ Only log service responses when an error occurs.
 
 To set the service logging configuration in the `.config` file, the recommended approach is to set the `logResponses` attribute value in the `<logging>` element, which is a child element of the `<aws>` element:
 
-```
+```xml
 <aws>
   <logging logResponses="OnError"/>
 </aws>
@@ -150,13 +150,13 @@ To set the service logging configuration in the `.config` file, the recommended 
 
 Alternatively, set the *AWSResponseLogging* key in the `<appSettings>` section:
 
-```
+```xml
 <add key="AWSResponseLogging" value="OnError"/>
 ```
 
 Alternatively, to set service logging with the AWS SDK for .NET API, set the [AWSConfigs.ResponseLogging](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TAWSConfigs.html) property to one of the values of the [ResponseLoggingOption](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TResponseLoggingOption.html) enumeration:
 
-```
+```csharp
 AWSConfigs.ResponseLogging = ResponseLoggingOption.OnError;
 ```
 
@@ -169,19 +169,19 @@ Configures the default `TableNamePrefix` the `DynamoDBContext` will use if not m
 
 To set the table name prefix in the `.config` file, the recommended approach is to set the `tableNamePrefix` attribute value in the `<dynamoDBContext>` element, which is a child element of the `<dynamoDB>` element, which itself is a child element of the `<aws>` element:
 
-```
+```xml
 <dynamoDBContext tableNamePrefix="Test-"/>
 ```
 
 Alternatively, set the `AWS.DynamoDBContext.TableNamePrefix` key in the `<appSettings>` section:
 
-```
+```xml
 <add key="AWS.DynamoDBContext.TableNamePrefix" value="Test-"/>
 ```
 
 Alternatively, to set the table name prefix with the AWS SDK for .NET API, set the [AWSConfigs.DynamoDBContextTableNamePrefix](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TAWSConfigs.html) property:
 
-```
+```csharp
 AWSConfigs.DynamoDBContextTableNamePrefix = "Test-";
 ```
 
@@ -194,7 +194,7 @@ Configures whether or not the Amazon S3 client should use signature version 4 si
 
 To set signature version 4 signing for Amazon S3 in the `.config` file, the recommended approach is to set the `useSignatureVersion4` attribute of the `<s3>` element, which is a child element of the `<aws>` element:
 
-```
+```xml
 <aws>
   <s3 useSignatureVersion4="true"/>
 </aws>
@@ -202,13 +202,13 @@ To set signature version 4 signing for Amazon S3 in the `.config` file, the reco
 
 Alternatively, set the `AWS.S3.UseSignatureVersion4` key to `true` in the `<appSettings>` section:
 
-```
+```xml
 <add key="AWS.S3.UseSignatureVersion4" value="true"/>
 ```
 
 Alternatively, to set signature version 4 signing with the AWS SDK for .NET API, set the [AWSConfigs.S3UseSignatureVersion4](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TAWSConfigs.html) property to `true`:
 
-```
+```csharp
 AWSConfigs.S3UseSignatureVersion4 = true;
 ```
 
@@ -221,19 +221,19 @@ Configures whether the SDK should use a custom configuration file that defines t
 
 To set the endpoint definition file in the `.config` file, we recommend setting the `endpointDefinition` attribute value in the `<aws>` element.
 
-```
+```xml
 <aws endpointDefinition="c:\config\endpoints.json"/>
 ```
 
 Alternatively, you can set the *AWSEndpointDefinition* key in the `<appSettings>` section:
 
-```
+```xml
 <add key="AWSEndpointDefinition" value="c:\config\endpoints.json"/>
 ```
 
 Alternatively, to set the endpoint definition file with the AWS SDK for .NET API, set the [AWSConfigs.EndpointDefinition](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TAWSConfigs.html) property:
 
-```
+```csharp
 AWSConfigs.EndpointDefinition = @"c:\config\endpoints.json";
 ```
 
@@ -249,7 +249,7 @@ Some AWS services generate their own endpoints instead of consuming a region end
 
 The Amazon CloudSearch client is used for accessing the Amazon CloudSearch configuration service. You use the Amazon CloudSearch configuration service to create, configure, and manage search domains. To create a search domain, create a [CreateDomainRequest](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/CloudSearch/TCreateDomainRequest.html) object and provide the `DomainName` property. Create an [AmazonCloudSearchClient](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/CloudSearch/TCloudSearchClient.html) object by using the request object. Call the [CreateDomain](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/CloudSearch/MCloudSearchCreateDomainCreateDomainRequest.html) method. The [CreateDomainResponse](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/CloudSearch/TCreateDomainResponse.html) object returned from the call contains a `DomainStatus` property that has both the `DocService` and `SearchService` endpoints. Create an [AmazonCloudSearchDomainConfig](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/CloudSearchDomain/TCloudSearchDomainConfig.html) object and use it to initialize `DocService` and `SearchService` instances of the [AmazonCloudSearchDomainClient](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/CloudSearchDomain/TCloudSearchDomainClient.html) class.
 
-```
+```csharp
 // Create domain and retrieve DocService and SearchService endpoints
 DomainStatus domainStatus;
 using (var searchClient = new AmazonCloudSearchClient())
@@ -308,7 +308,7 @@ using (var domainSearchService = new AmazonCloudSearchDomainClient(searchService
 
 To obtain the endpoint for AWS IoT, create an [AmazonIoTClient](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/IoT/TIoTClient.html) object and call the [DescribeEndPoint](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/IoT/MIoTDescribeEndpointDescribeEndpointRequest.html) method. The returned [DescribeEndPointResponse](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/IoT/TDescribeEndpointResponse.html) object contains the `EndpointAddress`. Create an [AmazonIotDataConfig](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/IotData/TIotDataConfig.html) object, set the `ServiceURL` property, and use the object to instantiate the [AmazonIotDataClient](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/IotData/TIotDataClient.html) class.
 
-```
+```csharp
 string iotEndpointAddress;
 using (var iotClient = new AmazonIoTClient())
 {

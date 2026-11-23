@@ -6,6 +6,9 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/v
 
 After you create your firewall, you reroute your VPC network traffic through the firewall endpoints so they can start filtering traffic. Perform the following steps:
 
+**Note**
+For a NAT/Proxy firewall, clients that use the explicit proxy don't need route table changes. You configure their proxy settings instead. Route only the traffic that doesn't use the explicit proxy to the firewall endpoint in the same Availability Zone. For information about configuring workloads to use the proxy, see [Configuring workloads to use the proxy](nfw-proxy-client-config.md).
+
 1. Review the route table configurations in your VPC Availability Zones for the subnets that you want to protect and for any location that sends traffic to the subnets or receives traffic from them.
 
 1. Determine which traffic you want the firewall to filter and insert your firewall endpoints into the traffic flow. Network Firewall supports up to 100 Gbps of network traffic per Availability Zone. The 100 Gbps bandwidth is shared across all associated VPC endpoints. Update the route tables for both directions of traffic flow, if you want to filter incoming and outgoing traffic.

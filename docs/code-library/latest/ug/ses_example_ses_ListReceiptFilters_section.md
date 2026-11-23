@@ -14,7 +14,7 @@ The following code examples show how to use `ListReceiptFilters`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! List the receipt filters associated with this account.
 /*!
   \param filters; A vector of "ReceiptFilter" to receive the retrieved filters.
@@ -52,7 +52,7 @@ AwsDoc::SES::listReceiptFilters(Aws::Vector<Aws::SES::Model::ReceiptFilter> &fil
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { ListReceiptFiltersCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 
@@ -72,7 +72,7 @@ const run = async () => {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesReceiptHandler:
     """Encapsulates Amazon SES receipt handling functions."""
 
@@ -108,7 +108,7 @@ class SesReceiptHandler:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_ses->listreceiptfilters( ).
         ot_filters = lo_result->get_filters( ).

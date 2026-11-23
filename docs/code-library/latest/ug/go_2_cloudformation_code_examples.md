@@ -26,7 +26,7 @@ The following code example shows how to use `DescribeStacks`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/user_pools_and_lambda_triggers#code-examples).
 
-```
+```go
 import (
 	"context"
 	"log"

@@ -125,7 +125,7 @@ The following examples show how to use JSON Schema output format with structured
 ##### View example
 <a name="w2aac15c15c39c17b3b5b3b1"></a>
 
-```
+```json
 {
   "messages": [
     {
@@ -161,7 +161,7 @@ The following examples show how to use JSON Schema output format with structured
 ##### View example
 <a name="w2aac15c15c39c17b3b7b3b1"></a>
 
-```
+```json
 {
   "anthropic_version": "bedrock-2023-05-31",
   "messages": [
@@ -218,7 +218,7 @@ The following examples show how to use JSON Schema output format with structured
 ##### View example
 <a name="w2aac15c15c39c17b3b9b3b1"></a>
 
-```
+```json
 {
   "messages": [
     {
@@ -277,7 +277,7 @@ The following examples show how to use the strict field with tool use.
 ##### View example
 <a name="w2aac15c15c39c17b5b5b3b1"></a>
 
-```
+```json
 {
   "messages": [
     {
@@ -333,7 +333,7 @@ The following examples show how to use the strict field with tool use.
 ##### View example
 <a name="w2aac15c15c39c17b5b7b3b1"></a>
 
-```
+```json
 {
   "anthropic_version": "bedrock-2023-05-31",
   "messages": [
@@ -387,7 +387,7 @@ The following examples show how to use the strict field with tool use.
 ##### View example
 <a name="w2aac15c15c39c17b5b9b3b1"></a>
 
-```
+```json
 {
   "messages": [
     {

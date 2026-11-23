@@ -52,7 +52,7 @@ CodeCatalyst supports the following devfile features on version 2.0.0. For more 
 
 The following is an example of a simple devfile.
 
-```
+```yaml
 schemaVersion: 2.0.0
 metadata:
   name: al2
@@ -91,7 +91,7 @@ Devfile startup, command, and event logs are captured and stored in `/aws/mde/lo
 
 If there's a problem starting your devfile, it will enter recovery mode so that you can still connect to your environment and fix your devfile. While in recovery mode, running `/aws/mde/mde status` won’t contain the location of your devfile.
 
-```
+```yaml
 {
             "status": "STABLE"
         }

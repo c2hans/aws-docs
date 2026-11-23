@@ -40,7 +40,7 @@ To resolve cross-region transfer permission issues:
 1. Ensure your IAM role has permissions for both source and destination buckets:
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

@@ -19,7 +19,7 @@ Use the `VersionKey` operation to rotate your active branch key. When you rotate
 ------
 #### [ Java ]
 
-```
+```java
 keystore.VersionKey(
     VersionKeyInput.builder()
         .branchKeyIdentifier("{{branch-key-id}}")
@@ -30,14 +30,14 @@ keystore.VersionKey(
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
  keystore.VersionKey(new VersionKeyInput{BranchKeyIdentifier = branchKeyId});
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 keystore.version_key(
     VersionKeyInput(
         branch_key_identifier={{branch_key_id}}
@@ -48,7 +48,7 @@ keystore.version_key(
 ------
 #### [ Rust ]
 
-```
+```rs
 keystore.version_key()
         .branch_key_identifier(branch_key_id)
         .send()
@@ -58,7 +58,7 @@ keystore.version_key()
 ------
 #### [ Go ]
 
-```
+```go
 _, err = keyStore.VersionKey(context.Background(), keystoretypes.VersionKeyInput{
     BranchKeyIdentifier: branchKeyId,
 })

@@ -31,7 +31,7 @@ The following code example shows how to get started using Amazon SNS.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/TopicsAndQueues#code-examples).
 
-```
+```csharp
 using Amazon.SimpleNotificationService;
 using Amazon.SimpleNotificationService.Model;
 
@@ -72,7 +72,7 @@ The following code example shows how to use `CheckIfPhoneNumberIsOptedOut`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SNS#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.SimpleNotificationService;
@@ -135,7 +135,7 @@ The following code example shows how to use `CreateTopic`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SNS#code-examples).
 Create a topic with a specific name.
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.SimpleNotificationService;
@@ -179,7 +179,7 @@ Create a topic with a specific name.
 ```
 Create a new topic with a name and specific FIFO and de-duplication attributes.
 
-```
+```csharp
     /// <summary>
     /// Create a new topic with a name and specific FIFO and de-duplication attributes.
     /// </summary>
@@ -228,7 +228,7 @@ The following code example shows how to use `DeleteTopic`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/TopicsAndQueues#code-examples).
 Delete a topic by its topic ARN.
 
-```
+```csharp
     /// <summary>
     /// Delete a topic by its topic ARN.
     /// </summary>
@@ -254,7 +254,7 @@ The following code example shows how to use `GetTopicAttributes`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SNS#code-examples).
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -317,7 +317,7 @@ The following code example shows how to use `ListSubscriptions`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SNS#code-examples).
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -412,7 +412,7 @@ The following code example shows how to use `ListTopics`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SNS#code-examples).
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -478,7 +478,7 @@ The following code example shows how to use `Publish`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SNS#code-examples).
 Publish a message to a topic.
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.SimpleNotificationService;
@@ -526,7 +526,7 @@ Publish a message to a topic.
 ```
 Publish a message to a topic with group, duplication, and attribute options.
 
-```
+```csharp
     /// <summary>
     /// Publish messages using user settings.
     /// </summary>
@@ -590,7 +590,7 @@ Publish a message to a topic with group, duplication, and attribute options.
 ```
 Apply the user's selections to the publish action.
 
-```
+```csharp
     /// <summary>
     /// Publish a message to a topic with an attribute and optional deduplication and group IDs.
     /// </summary>
@@ -642,7 +642,7 @@ The following code example shows how to use `Subscribe`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SNS#code-examples).
 Subscribe an email address to a topic.
 
-```
+```csharp
         /// <summary>
         /// Creates a new subscription to a topic.
         /// </summary>
@@ -670,7 +670,7 @@ Subscribe an email address to a topic.
 ```
 Subscribe a queue to a topic with optional filters.
 
-```
+```csharp
     /// <summary>
     /// Subscribe a queue to a topic with optional filters.
     /// </summary>
@@ -707,7 +707,7 @@ The following code example shows how to use `Unsubscribe`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/TopicsAndQueues#code-examples).
 Unsubscribe from a topic by a subscription ARN.
 
-```
+```csharp
     /// <summary>
     /// Unsubscribe from a topic by a subscription ARN.
     /// </summary>
@@ -767,7 +767,7 @@ The following code example shows how to publish SMS messages using Amazon SNS.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SNS#code-examples).
 
-```
+```csharp
 namespace SNSMessageExample
 {
     using System;
@@ -842,7 +842,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/TopicsAndQueues#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 /// <summary>
 /// Console application to run a feature scenario for topics and queues.
 /// </summary>
@@ -1337,7 +1337,7 @@ public static class TopicsAndQueues
 ```
 Create a class that wraps Amazon SQS operations.
 
-```
+```csharp
 /// <summary>
 /// Wrapper for Amazon Simple Queue Service (SQS) operations.
 /// </summary>
@@ -1516,7 +1516,7 @@ public class SQSWrapper
 ```
 Create a class that wraps Amazon SNS operations.
 
-```
+```csharp
 /// <summary>
 /// Wrapper for Amazon Simple Notification Service (SNS) operations.
 /// </summary>
@@ -1691,7 +1691,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sns-to-lambda) repository.
 Consuming an SNS event with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 using Amazon.Lambda.Core;

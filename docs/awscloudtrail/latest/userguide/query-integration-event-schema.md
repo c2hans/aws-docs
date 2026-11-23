@@ -55,7 +55,7 @@ The following fields are provided by customer events:
 
 The following example shows the hierarchy of schema elements that match those in CloudTrail event records.
 
-```
+```JSON
 {
     "eventVersion": String,
     "eventCategory": String,

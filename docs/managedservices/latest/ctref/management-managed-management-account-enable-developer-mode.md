@@ -138,7 +138,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-management-account-enable-developer-mode-ex-min"></a>
 
-```
+```json
 {
   "ApplicationAccountId": "123456789012"
 }
@@ -147,6 +147,6 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-managed-management-account-enable-developer-mode-ex-max"></a>
 
-```
+```json
 Example not available.
 ```

@@ -30,7 +30,7 @@ The following code example shows how to get started using AWS IoT Greengrass V2.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
 def hello_greengrassv2() -> None:
     """
     Lists Greengrass core devices to verify connectivity to the service.
@@ -97,7 +97,7 @@ The following code example shows how to learn core operations of AWS IoT Greengr
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class GreengrassV2Scenario:
     """Runs an interactive scenario demonstrating Greengrass V2 operations."""
 
@@ -576,7 +576,7 @@ if __name__ == "__main__":
 ```
 Create a class that wraps AWS IoT Greengrass V2 operations.
 
-```
+```python
 class GreengrassV2Wrapper:
     """Encapsulates AWS IoT Greengrass V2 operations."""
 
@@ -643,7 +643,7 @@ The following code example shows how to use `CancelDeployment`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
     def cancel_deployment(self, deployment_id: str) -> dict[str, Any]:
         """
         Cancels an active deployment.
@@ -674,7 +674,7 @@ The following code example shows how to use `CreateComponentVersion`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
     def create_component_version(
         self, recipe: dict[str, Any], tags: Optional[dict[str, str]] = None
     ) -> dict[str, Any]:
@@ -717,7 +717,7 @@ The following code example shows how to use `CreateDeployment`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
     def create_deployment(
         self,
         target_arn: str,
@@ -767,7 +767,7 @@ The following code example shows how to use `DeleteComponent`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
     def delete_component(self, component_version_arn: str) -> None:
         """
         Deletes a specific version of a component.
@@ -796,7 +796,7 @@ The following code example shows how to use `DescribeComponent`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
     def describe_component(self, component_version_arn: str) -> dict[str, Any]:
         """
         Retrieves metadata for a specific component version.
@@ -830,7 +830,7 @@ The following code example shows how to use `GetComponent`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
     def get_component(
         self, component_version_arn: str, recipe_output_format: str = "JSON"
     ) -> dict[str, Any]:
@@ -866,7 +866,7 @@ The following code example shows how to use `GetDeployment`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
     def get_deployment(self, deployment_id: str) -> dict[str, Any]:
         """
         Gets the full details of a deployment.
@@ -900,7 +900,7 @@ The following code example shows how to use `ListComponentVersions`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
     def list_component_versions(self, component_arn: str) -> list[dict[str, Any]]:
         """
         Lists all versions of a component. Uses a paginator to retrieve all pages.
@@ -937,7 +937,7 @@ The following code example shows how to use `ListCoreDevices`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
     def list_core_devices(self, status: Optional[str] = None) -> list[dict[str, Any]]:
         """
         Lists Greengrass core devices registered in the account.
@@ -975,7 +975,7 @@ The following code example shows how to use `ListDeployments`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
     def list_deployments(
         self,
         target_arn: Optional[str] = None,

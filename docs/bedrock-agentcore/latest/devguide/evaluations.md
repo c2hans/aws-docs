@@ -34,6 +34,7 @@ By default, you can create up to 1,000 evaluation configurations per AWS Region 
 + [On-demand evaluation](on-demand-evaluations.md)
 + [Batch evaluation](batch-evaluations.md)
 + [Dataset evaluation](dataset-evaluations.md)
++ [Dataset generation](dataset-generation.md)
 + [Simulation](simulation.md)
 + [Diagnose AgentCore Evaluation issues with an AI coding assistant](diagnose-evaluation-issues.md)
 + [Encryption at rest for AgentCore Evaluations](evaluations-encryption.md)

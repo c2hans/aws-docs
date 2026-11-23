@@ -32,7 +32,7 @@ The following code example shows how to get started using DynamoDB.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 require 'aws-sdk-dynamodb'
 require 'logger'
 
@@ -92,7 +92,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 Create a class that encapsulates a DynamoDB table.
 
-```
+```ruby
   # Creates an Amazon DynamoDB table that can be used to store movie data.
   # The table uses the release year of the movie as the partition key and the
   # title as the sort key.
@@ -121,7 +121,7 @@ Create a class that encapsulates a DynamoDB table.
 ```
 Create a helper function to download and extract the sample JSON file.
 
-```
+```ruby
   # Gets sample movie data, either from a local file or by first downloading it from
   # the Amazon DynamoDB Developer Guide.
   #
@@ -152,7 +152,7 @@ Create a helper function to download and extract the sample JSON file.
 ```
 Run an interactive scenario to create the table and perform actions on it.
 
-```
+```ruby
   table_name = "doc-example-table-movies-#{rand(10**4)}"
   scaffold = Scaffold.new(table_name)
   dynamodb_wrapper = DynamoDBBasics.new(table_name)
@@ -281,7 +281,7 @@ The following code example shows how to use `BatchExecuteStatement`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 Read a batch of items using PartiQL.
 
-```
+```ruby
 class DynamoDBPartiQLBatch
   attr_reader :dynamo_resource, :table
 
@@ -307,7 +307,7 @@ class DynamoDBPartiQLBatch
 ```
 Delete a batch of items using PartiQL.
 
-```
+```ruby
 class DynamoDBPartiQLBatch
   attr_reader :dynamo_resource, :table
 
@@ -341,7 +341,7 @@ The following code example shows how to use `BatchWriteItem`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 class DynamoDBBasics
   attr_reader :dynamo_resource, :table
 
@@ -386,7 +386,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 # Encapsulates an Amazon DynamoDB table of movie data.
 class Scaffold
   attr_reader :dynamo_resource, :table_name, :table
@@ -436,7 +436,7 @@ The following code example shows how to use `DeleteItem`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 class DynamoDBBasics
   attr_reader :dynamo_resource, :table
 
@@ -468,7 +468,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 # Encapsulates an Amazon DynamoDB table of movie data.
 class Scaffold
   attr_reader :dynamo_resource, :table_name, :table
@@ -502,7 +502,7 @@ The following code example shows how to use `DescribeTable`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 # Encapsulates an Amazon DynamoDB table of movie data.
 class Scaffold
   attr_reader :dynamo_resource, :table_name, :table
@@ -544,7 +544,7 @@ The following code example shows how to use `ExecuteStatement`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 Select a single item using PartiQL.
 
-```
+```ruby
 class DynamoDBPartiQLSingle
   attr_reader :dynamo_resource, :table
 
@@ -570,7 +570,7 @@ class DynamoDBPartiQLSingle
 ```
 Update a single item using PartiQL.
 
-```
+```ruby
 class DynamoDBPartiQLSingle
   attr_reader :dynamo_resource, :table
 
@@ -596,7 +596,7 @@ class DynamoDBPartiQLSingle
 ```
 Add a single item using PartiQL.
 
-```
+```ruby
 class DynamoDBPartiQLSingle
   attr_reader :dynamo_resource, :table
 
@@ -623,7 +623,7 @@ class DynamoDBPartiQLSingle
 ```
 Delete a single item using PartiQL.
 
-```
+```ruby
 class DynamoDBPartiQLSingle
   attr_reader :dynamo_resource, :table
 
@@ -656,7 +656,7 @@ The following code example shows how to use `GetItem`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 class DynamoDBBasics
   attr_reader :dynamo_resource, :table
 
@@ -690,7 +690,7 @@ The following code example shows how to use `ListTables`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 Determine whether a table exists.
 
-```
+```ruby
 # Encapsulates an Amazon DynamoDB table of movie data.
 class Scaffold
   attr_reader :dynamo_resource, :table_name, :table
@@ -731,7 +731,7 @@ The following code example shows how to use `PutItem`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 class DynamoDBBasics
   attr_reader :dynamo_resource, :table
 
@@ -768,7 +768,7 @@ The following code example shows how to use `Query`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 class DynamoDBBasics
   attr_reader :dynamo_resource, :table
 
@@ -806,7 +806,7 @@ The following code example shows how to use `Scan`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 class DynamoDBBasics
   attr_reader :dynamo_resource, :table
 
@@ -858,7 +858,7 @@ The following code example shows how to use `UpdateItem`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 class DynamoDBBasics
   attr_reader :dynamo_resource, :table
 
@@ -904,7 +904,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 Run a scenario that creates a table and runs batch PartiQL queries.
 
-```
+```ruby
   table_name = "doc-example-table-movies-partiql-#{rand(10**4)}"
   scaffold = Scaffold.new(table_name)
   sdk = DynamoDBPartiQLBatch.new(table_name)
@@ -956,7 +956,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 Run a scenario that creates a table and runs PartiQL queries.
 
-```
+```ruby
   table_name = "doc-example-table-movies-partiql-#{rand(10**8)}"
   scaffold = Scaffold.new(table_name)
   sdk = DynamoDBPartiQLSingle.new(table_name)
@@ -1018,7 +1018,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using Ruby.
 
-```
+```ruby
 def lambda_handler(event:, context:)
     return 'received empty event' if event['Records'].empty?
 
@@ -1045,7 +1045,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using Ruby.
 
-```
+```ruby
 def lambda_handler(event:, context:)
     records = event["Records"]
     cur_record_sequence_number = ""

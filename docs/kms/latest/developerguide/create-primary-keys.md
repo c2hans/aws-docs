@@ -100,7 +100,7 @@ The response includes the `MultiRegion` element and the `MultiRegionConfiguratio
 **Important**
 Do not include confidential or sensitive information in the `Description` or `Tags` fields. These fields may appear in plain text in CloudTrail logs and other output.
 
-```
+```bash
 $ aws kms create-key --multi-region
 {
     "KeyMetadata": {

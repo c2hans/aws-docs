@@ -34,7 +34,7 @@ This code creates a table with one attribute that is the table's simple primary 
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.core.waiters.WaiterResponse;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.CreateTableRequest;
@@ -54,7 +54,7 @@ import software.amazon.awssdk.services.dynamodb.waiters.DynamoDbWaiter;
 
  **Code**
 
-```
+```java
     public static String createTable(DynamoDbClient ddb, String tableName, String key) {
 
         DynamoDbWaiter dbWaiter = ddb.waiter();
@@ -105,7 +105,7 @@ The following example creates a table with two attributes. Both attributes are u
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.model.AttributeDefinition;
@@ -120,7 +120,7 @@ import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 
  **Code**
 
-```
+```java
     public static String createTableComKey(DynamoDbClient ddb, String tableName) {
         CreateTableRequest request = CreateTableRequest.builder()
                 .attributeDefinitions(
@@ -174,7 +174,7 @@ If the named table doesn’t exist for your account and Region, a [`ResourceNotF
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.model.ListTablesResponse;
@@ -185,7 +185,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
     public static void listAllTables(DynamoDbClient ddb){
 
         boolean moreTables = true;
@@ -241,7 +241,7 @@ If the named table doesn’t exist for your account and Region, a [`ResourceNotF
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -254,7 +254,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
     public static void describeDymamoDBTable(DynamoDbClient ddb,String tableName ) {
 
         DescribeTableRequest request = DescribeTableRequest.builder()
@@ -314,7 +314,7 @@ If the named table doesn’t exist for your account and Region, a [ResourceNotFo
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.ProvisionedThroughput;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -324,7 +324,7 @@ import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 
  **Code**
 
-```
+```java
     public static void updateDynamoDBTable(DynamoDbClient ddb,
                                            String tableName,
                                            Long readCapacity,
@@ -369,7 +369,7 @@ If the named table doesn’t exist for your account and Region, a [ResourceNotFo
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -378,7 +378,7 @@ import software.amazon.awssdk.services.dynamodb.model.DeleteTableRequest;
 
  **Code**
 
-```
+```java
     public static void deleteDynamoDBTable(DynamoDbClient ddb, String tableName) {
 
         DeleteTableRequest request = DeleteTableRequest.builder()

@@ -12,7 +12,7 @@ Well-formed data on a contact, used by agents to complete a contact request. You
  ** Type **   <a name="connect-Type-Reference-Type"></a>
 The type of the reference. `DATE` must be of type Epoch timestamp.
 Type: String
-Valid Values: `URL | ATTACHMENT | CONTACT_ANALYSIS | NUMBER | STRING | DATE | EMAIL | EMAIL_MESSAGE | EMAIL_MESSAGE_PLAIN_TEXT | EMAIL_MESSAGE_PLAIN_TEXT_REDACTED | EMAIL_MESSAGE_REDACTED`
+Valid Values: `URL | ATTACHMENT | CONTACT_ANALYSIS | NUMBER | STRING | DATE | EMAIL | EMAIL_MESSAGE | EMAIL_MESSAGE_PLAIN_TEXT | EMAIL_MESSAGE_PLAIN_TEXT_REDACTED | EMAIL_MESSAGE_REDACTED | VOICEMAIL_RECORDING | VOICEMAIL_RECORDING_REDACTED | VOICEMAIL_ANALYSIS | VOICEMAIL_ANALYSIS_REDACTED`
 Required: Yes
 
  ** Arn **   <a name="connect-Type-Reference-Arn"></a>

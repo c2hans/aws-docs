@@ -29,7 +29,7 @@ If you apply a tag with the key `aws-control-tower` to an AWS Backup resource cr
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

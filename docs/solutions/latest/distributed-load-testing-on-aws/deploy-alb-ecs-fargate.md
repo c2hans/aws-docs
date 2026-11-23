@@ -80,7 +80,7 @@ After the stack creation completes, you must configure DNS to point your custom 
 
 1. Wait for DNS propagation to complete. You can verify with:
 
-   ```
+   ```bash
    $ dig dlt.example.com
    ```
 

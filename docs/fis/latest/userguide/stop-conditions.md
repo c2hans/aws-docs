@@ -15,7 +15,7 @@ Your account has a quota on the number of stop conditions that you can specify i
 
 When you create an experiment template, you specify one or more stop conditions by specifying the CloudWatch alarms that you created.
 
-```
+```json
 {
     "stopConditions": [
         {
@@ -28,7 +28,7 @@ When you create an experiment template, you specify one or more stop conditions 
 
 The following example indicates that the experiment template does not specify a stop condition.
 
-```
+```json
 {
     "stopConditions": [
         {

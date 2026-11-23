@@ -62,7 +62,7 @@ You can switch between the **Visual** and **JSON** editor options anytime. Howev
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -111,7 +111,7 @@ If you're using Amazon GameLift Servers managed containers, you need to create a
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -134,7 +134,7 @@ If you're using Amazon GameLift Servers managed containers, you need to create a
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [

@@ -19,7 +19,7 @@ This policy includes the following permissions:
 + `CloudWatch` – Allows principals to put metric data.
 + `Kinesis` - Allows principals to describe a summary of Kinesis data streams and put records into Kinesis data streams for user access logging. For more information, see [Setting up user activity logging in Amazon WorkSpaces Secure Browser](user-logging.md).
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

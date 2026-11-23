@@ -57,7 +57,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Create and invoke a managed prompt.
 
-```
+```python
 import argparse
 import boto3
 import logging
@@ -260,7 +260,7 @@ The following code example shows how to build a typical interaction between an a
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 The primary execution script of the demo. This script orchestrates the conversation between the user, the Amazon Bedrock Converse API, and a weather tool.
 
-```
+```python
 """
 This demo illustrates a tool use scenario using Amazon Bedrock's Converse API and a weather tool.
 The script interacts with a foundation model on Amazon Bedrock to provide weather information based on user
@@ -513,7 +513,7 @@ if __name__ == "__main__":
 ```
 The weather tool used by the demo. This script defines the tool specification and implements the logic to retrieve weather data using from the Open-Meteo API.
 
-```
+```python
 import requests
 from requests.exceptions import RequestException
 
@@ -585,7 +585,7 @@ The following code example shows how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova, using Bedrock's Converse API.
 
-```
+```python
 # Use the Conversation API to send a text message to Amazon Nova.
 
 import boto3
@@ -633,7 +633,7 @@ The following code example shows how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```python
 # Use the Conversation API to send a text message to Amazon Nova Text
 # and print the response stream.
 
@@ -684,7 +684,7 @@ The following code example shows how to send and process a document with Amazon 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send and process a document with Amazon Nova on Amazon Bedrock.
 
-```
+```python
 # Send and process a document with Amazon Nova on Amazon Bedrock.
 
 import boto3
@@ -748,7 +748,7 @@ The following code example shows how to invoke Amazon Nova Canvas on Amazon Bedr
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Create an image with the Amazon Nova Canvas.
 
-```
+```python
 # Use the native inference API to create an image with Amazon Nova Canvas
 
 import base64
@@ -824,7 +824,7 @@ The following code example shows how to use Amazon Nova Reel to generate a video
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Use Amazon Nova Reel to generate a video from a text prompt.
 
-```
+```python
 """
 This example demonstrates how to use Amazon Nova Reel to generate a video from a text prompt.
 
@@ -958,7 +958,7 @@ The following code example shows how to invoke Amazon Titan Image on Amazon Bedr
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Create an image with the Amazon Titan Image Generator.
 
-```
+```python
 # Use the native inference API to create an image with Amazon Titan Image Generator
 
 import base64
@@ -1034,7 +1034,7 @@ The following code example shows how to send a text message to Amazon Titan Text
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Use the Invoke Model API to send a text message.
 
-```
+```python
 # Use the native inference API to send a text message to Amazon Titan Text.
 
 import boto3
@@ -1094,7 +1094,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Create your first embedding with Amazon Titan Text Embeddings.
 
-```
+```python
 # Generate and print an embedding with Amazon Titan Text Embeddings V2.
 
 import boto3
@@ -1146,7 +1146,7 @@ The following code example shows how to send a text message to Anthropic Claude,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API.
 
-```
+```python
 # Use the Conversation API to send a text message to Anthropic Claude.
 
 import boto3
@@ -1196,7 +1196,7 @@ The following code example shows how to send a text message to Anthropic Claude,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```python
 # Use the Conversation API to send a text message to Anthropic Claude
 # and print the response stream.
 
@@ -1249,7 +1249,7 @@ The following code example shows how to send and process a document with Anthrop
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send and process a document with Anthropic Claude on Amazon Bedrock.
 
-```
+```python
 # Send and process a document with Anthropic Claude on Amazon Bedrock.
 
 import boto3
@@ -1312,7 +1312,7 @@ The following code example shows how to build a typical interaction between an a
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 The primary execution script of the demo. This script orchestrates the conversation between the user, the Amazon Bedrock Converse API, and a weather tool.
 
-```
+```python
 """
 This demo illustrates a tool use scenario using Amazon Bedrock's Converse API and a weather tool.
 The script interacts with a foundation model on Amazon Bedrock to provide weather information based on user
@@ -1565,7 +1565,7 @@ if __name__ == "__main__":
 ```
 The weather tool used by the demo. This script defines the tool specification and implements the logic to retrieve weather data using from the Open-Meteo API.
 
-```
+```python
 import requests
 from requests.exceptions import RequestException
 
@@ -1637,7 +1637,7 @@ The following code example shows how to send and process a document with DeepSee
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send and process a document with DeepSeek on Amazon Bedrock.
 
-```
+```python
 # Send and process a document with DeepSeek on Amazon Bedrock.
 
 import boto3
@@ -1709,7 +1709,7 @@ The following code example shows how to send a text message to Meta Llama, using
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send a text message to Meta Llama, using Bedrock's Converse API.
 
-```
+```python
 # Use the Conversation API to send a text message to Meta Llama.
 
 import boto3
@@ -1757,7 +1757,7 @@ The following code example shows how to send a text message to Meta Llama, using
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send a text message to Meta Llama, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```python
 # Use the Conversation API to send a text message to Meta Llama
 # and print the response stream.
 
@@ -1808,7 +1808,7 @@ The following code example shows how to send and process a document with Llama o
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send and process a document with Llama on Amazon Bedrock.
 
-```
+```python
 # Send and process a document with Llama on Amazon Bedrock.
 
 import boto3
@@ -1872,7 +1872,7 @@ The following code example shows how to send a text message to Mistral, using Be
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send a text message to Mistral, using Bedrock's Converse API.
 
-```
+```python
 # Use the Conversation API to send a text message to Mistral.
 
 import boto3
@@ -1920,7 +1920,7 @@ The following code example shows how to send a text message to Mistral, using Be
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send a text message to Mistral, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```python
 # Use the Conversation API to send a text message to Mistral
 # and print the response stream.
 
@@ -1971,7 +1971,7 @@ The following code example shows how to send and process a document with Mistral
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send and process a document with Mistral models on Amazon Bedrock.
 
-```
+```python
 # Send and process a document with Mistral models on Amazon Bedrock.
 
 import boto3
@@ -2035,7 +2035,7 @@ The following code example shows how to invoke Stability.ai Stable Image Core on
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Create an image with Stable Diffusion.
 
-```
+```python
 # Use the native inference API to create an image with Stability AI Stable Image Core
 
 import base64

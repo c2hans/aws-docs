@@ -146,7 +146,7 @@ In addition to the runtime, the console creates your first runtime version. If y
 
 1. To create the runtime, run the `create-runtime` command. The following example creates a runtime named `companyphp8` with a description, license information, and two tags.
 
-   ```
+   ```bash
    aws lambda-core create-runtime \
      --name {{companyphp8}} \
      --description "{{PHP 8 runtime with company-approved extensions}}" \
@@ -156,7 +156,7 @@ In addition to the runtime, the console creates your first runtime version. If y
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "Arn": "arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8",
        "Name": "companyphp8",
@@ -175,7 +175,7 @@ In addition to the runtime, the console creates your first runtime version. If y
 
 1. To verify the runtime, run the `get-runtime` command. You can specify the runtime name or the runtime ARN.
 
-   ```
+   ```bash
    aws lambda-core get-runtime --runtime-name {{companyphp8}}
    ```
 
@@ -183,13 +183,13 @@ In addition to the runtime, the console creates your first runtime version. If y
 
 1. (Optional) To list all runtimes in your account in the current Region, run the `list-runtimes` command.
 
-   ```
+   ```bash
    aws lambda-core list-runtimes
    ```
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "Items": [
            {
@@ -239,7 +239,7 @@ The **Runtime configuration** panel shows the updated runtime description and li
 
 1. To update the runtime, run the `update-runtime` command. The following example changes the description of the `companyphp8` runtime. The license information doesn't change. The example doesn't include the `--release-lifecycle` option, so it also clears any lifecycle on the runtime. To keep the lifecycle, run the `get-runtime` command to get the current lifecycle. Then pass the complete lifecycle in the `--release-lifecycle` option.
 
-   ```
+   ```bash
    aws lambda-core update-runtime \
      --runtime-name {{companyphp8}} \
      --description "{{PHP 8 runtime with company-approved extensions and monitoring agent}}"
@@ -247,7 +247,7 @@ The **Runtime configuration** panel shows the updated runtime description and li
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "Arn": "arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8",
        "Name": "companyphp8",
@@ -262,7 +262,7 @@ The **Runtime configuration** panel shows the updated runtime description and li
 
 1. To verify the change, run the `get-runtime` command and check the updated property and the `LastModified` value.
 
-   ```
+   ```bash
    aws lambda-core get-runtime --runtime-name {{companyphp8}}
    ```
 
@@ -275,7 +275,7 @@ To add, view, and remove tags on an existing runtime, use the Lambda tagging com
 
 1. To add or change tags, run the `tag-resource` command.
 
-   ```
+   ```bash
    aws lambda tag-resource \
      --resource {{arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8}} \
      --tags {{CostCenter=1234}}
@@ -285,14 +285,14 @@ To add, view, and remove tags on an existing runtime, use the Lambda tagging com
 
 1. To view the tags on the runtime, run the `list-tags` command.
 
-   ```
+   ```bash
    aws lambda list-tags \
      --resource {{arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8}}
    ```
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "Tags": {
            "Team": "platform",
@@ -304,7 +304,7 @@ To add, view, and remove tags on an existing runtime, use the Lambda tagging com
 
 1. To remove tags, run the `untag-resource` command with the keys of the tags to remove.
 
-   ```
+   ```bash
    aws lambda untag-resource \
      --resource {{arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8}} \
      --tag-keys {{CostCenter}}

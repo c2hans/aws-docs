@@ -27,6 +27,7 @@ The following steps guide you through configuring a core network for a policy ve
    1.  The **Version** choose any of the following:
       + **2021.12** this version does not support routing policies or bgp community tag propagation through your core network
       + **2025.11** this version enables support for routing policies and bgp community tag propagation through your core network
+      + **2026.10** this version includes everything in 2025.11, and breaks ties between equivalent cross-Region routes. Updating to this version can shift traffic to a different Region. For more information, see the `version` parameter in [Core network policy version parameters in AWS Cloud WAN](cloudwan-policies-json.md).
 
    1.  Choose any of the following:
       +  **VPN ECMP support** if the core network should forward traffic over multiple-cost routes using VPN.

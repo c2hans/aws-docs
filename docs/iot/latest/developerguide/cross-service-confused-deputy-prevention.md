@@ -14,7 +14,7 @@ The following example shows how to prevent the confused deputy problem by using 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -57,7 +57,7 @@ The role with the following trust policy can only be assumed by the IoT principa
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -99,7 +99,7 @@ The role with the following trust policy can only be assumed by the IoT principa
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -139,7 +139,7 @@ The role with the following trust policy can only be assumed by the principal of
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

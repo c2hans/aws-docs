@@ -34,7 +34,7 @@ The following code example shows how to get started using Amazon RDS.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 """
 Purpose
 
@@ -94,7 +94,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class RdsInstanceScenario:
     """Runs a scenario that shows how to get started using Amazon RDS DB instances."""
 
@@ -354,7 +354,7 @@ if __name__ == "__main__":
 ```
 Define functions that are called by the scenario to manage Amazon RDS actions.
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -738,7 +738,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -819,7 +819,7 @@ The following code example shows how to use `CreateDBParameterGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -877,7 +877,7 @@ The following code example shows how to use `CreateDBSnapshot`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -929,7 +929,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -982,7 +982,7 @@ The following code example shows how to use `DeleteDBParameterGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -1030,7 +1030,7 @@ The following code example shows how to use `DescribeDBEngineVersions`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -1086,7 +1086,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -1140,7 +1140,7 @@ The following code example shows how to use `DescribeDBParameterGroups`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -1194,7 +1194,7 @@ The following code example shows how to use `DescribeDBParameters`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -1257,7 +1257,7 @@ The following code example shows how to use `DescribeDBSnapshots`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -1308,7 +1308,7 @@ The following code example shows how to use `DescribeOrderableDBInstanceOptions`
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -1364,7 +1364,7 @@ The following code example shows how to use `ModifyDBParameterGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -1441,7 +1441,7 @@ The following code example shows how to implement a Lambda function that connect
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-connect-rds-iam) repository.
 Connecting to an Amazon RDS database in a Lambda function using Python.
 
-```
+```python
 import json
 import os
 import boto3

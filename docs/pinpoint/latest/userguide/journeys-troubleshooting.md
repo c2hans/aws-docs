@@ -24,7 +24,7 @@ Verify that logging is turned on to assist in identifying the cause of failure. 
 + Event-driven journeys are not conducive to Contact Center use cases because of the limited life span for dial operations is 3 minutes.
 + You can use the following example request to activate a journey using “TestEvent” as the entry condition.
 
-  ```
+  ```JSON
   aws pinpoint put-events --application-id 7149cbb8XXXXXXXX --events-request file://PutEvents.json
   file://PutEvents.json
   {

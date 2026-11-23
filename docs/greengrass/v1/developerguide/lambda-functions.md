@@ -104,7 +104,7 @@ The AWS IoT Greengrass Core SDK follows the AWS SDK programming model, which mak
 
 For example, the following Python Lambda function uses the AWS SDK for Python (Boto3) to publish a message to the topic `some/topic` in the cloud:
 
-```
+```python
 import boto3
 
 iot_client = boto3.client("iot-data")
@@ -115,7 +115,7 @@ response = iot_client.publish(
 
 To port the function for an AWS IoT Greengrass core, in the `import` statement and `client` initialization, change the `boto3` module name to `greengrasssdk`, as shown in the following example:
 
-```
+```python
 import greengrasssdk
 
 iot_client = greengrasssdk.client("iot-data")
@@ -180,7 +180,7 @@ The following example shows how a Lambda function can get the input topic from t
 **Note**
 In the AWS IoT Greengrass API, the topic of a [subscription](https://docs.aws.amazon.com/greengrass/v1/apireference/definitions-subscription.html) is represented by the `subject` property.
 
-```
+```python
 import greengrasssdk
 import logging
 
@@ -231,7 +231,7 @@ After the deployment is completed, invoke the function.
 
 1. Publish a message to the `test/input_message` topic by selecting the **Publish to a topic** tab. For this example, you must include the `test-key` property in the JSON messsage.
 
-   ```
+   ```json
    {
      "test-key": "Some string value"
    }
@@ -281,7 +281,7 @@ Lambda executables must implement certain calls and programming patterns in thei
 
 The following snippet is the `main` method from the [simple\_handler.c](https://github.com/aws/aws-greengrass-core-sdk-c/blob/master/aws-greengrass-core-sdk-c-example/simple_handler.c) code example on GitHub.
 
-```
+```c
 int main() {
     gg_error err = GGE_SUCCESS;
 

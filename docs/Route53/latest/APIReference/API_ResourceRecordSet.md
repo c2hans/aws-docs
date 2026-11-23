@@ -54,6 +54,12 @@ If you're creating resource records sets for a private hosted zone, note the fol
 Type: [AliasTarget](API_AliasTarget.md) object
 Required: No
 
+ ** AZAffinity **   <a name="Route53-Type-ResourceRecordSet-AZAffinity"></a>
+ *AZ-affinity resource record sets only:* The location that this resource record set answers DNS queries from, such as an Availability Zone (AZ) or an AWS Region. For each query, Route 53 starts with the most specific location that the query matches and falls back to a less specific location when there's no record for that location or the record is unhealthy (its health check fails or, for an alias record that has `EvaluateTargetHealth` set to `true`, its target is unhealthy). You must also specify `SetIdentifier`, and you can't specify another routing policy element, such as `Weight`, in the same resource record set.
+For more information, see [AZ-affinity routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-azaffinity.html) in the *Amazon Route 53 Developer Guide*.
+Type: [AZAffinity](API_AZAffinity.md) object
+Required: No
+
  ** CidrRoutingConfig **   <a name="Route53-Type-ResourceRecordSet-CidrRoutingConfig"></a>
 The object that is specified in resource record set object when you are linking a resource record set to a CIDR location.
 A `LocationName` with an asterisk “\*” can be used to create a default CIDR record. `CollectionId` is still required for default record.

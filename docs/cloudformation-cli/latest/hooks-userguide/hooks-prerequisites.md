@@ -39,7 +39,7 @@ To develop Hooks, you should be familiar with [CloudFormation templates](https:/
 
 1. Install the the CloudFormation CLI with `pip`, the Python package manager.
 
-   ```
+   ```bash
    pip3 install cloudformation-cli
    ```
 
@@ -48,14 +48,14 @@ To develop Hooks, you should be familiar with [CloudFormation templates](https:/
 ------
 #### [ Python ]
 
-   ```
+   ```bash
    pip3 install cloudformation-cli-python-plugin
    ```
 
 ------
 #### [ Java ]
 
-   ```
+   ```bash
    pip3 install cloudformation-cli-java-plugin
    ```
 
@@ -66,14 +66,14 @@ To upgrade the CloudFormation CLI and the plugin, you can use the upgrade option
 ------
 #### [ Python ]
 
-```
+```bash
 pip3 install --upgrade cloudformation-cli cloudformation-cli-python-plugin
 ```
 
 ------
 #### [ Java ]
 
-```
+```bash
 pip3 install --upgrade cloudformation-cli cloudformation-cli-java-plugin
 ```
 

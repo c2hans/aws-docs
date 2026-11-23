@@ -13,7 +13,7 @@ The following examples demonstrate basic usage of the ALTER TABLE command.
 
 The following command renames the USERS table to USERS\_BKUP:
 
-```
+```sql
 alter table users
 rename to users_bkup;
 ```
@@ -25,14 +25,14 @@ rename to users_bkup;
 
 The following command changes the VENUE table owner to the user DWUSER:
 
-```
+```sql
 alter table venue
 owner to dwuser;
 ```
 
 The following commands create a view, then change its owner:
 
-```
+```sql
 create view vdate as select * from date;
 alter table vdate owner to vuser;
 ```
@@ -42,7 +42,7 @@ alter table vdate owner to vuser;
 
 The following command renames the VENUESEATS column in the VENUE table to VENUESIZE:
 
-```
+```sql
 alter table venue
 rename column venueseats to venuesize;
 ```
@@ -52,7 +52,7 @@ rename column venueseats to venuesize;
 
 To drop a table constraint, such as a primary key, foreign key, or unique constraint, first find the internal name of the constraint. Then specify the constraint name in the ALTER TABLE command. The following example finds the constraints for the CATEGORY table, then drops the primary key with the name `category_pkey`.
 
-```
+```sql
 select constraint_name, constraint_type
 from information_schema.table_constraints
 where constraint_schema ='public'
@@ -73,7 +73,7 @@ To conserve storage, you can define a table initially with VARCHAR columns with 
 
 The following example increases the size of the EVENTNAME column to VARCHAR(300).
 
-```
+```sql
 alter table event alter column eventname type varchar(300);
 ```
 
@@ -84,7 +84,7 @@ To conserve storage, you can define a table initially with VARBYTE columns with 
 
 The following example increases the size of the EVENTNAME column to VARBYTE(300).
 
-```
+```sql
 alter table event alter column eventname type varbyte(300);
 ```
 
@@ -93,31 +93,31 @@ alter table event alter column eventname type varbyte(300);
 
 You can alter the compression encoding of a column. Below, you can find a set of examples demonstrating this approach. The table definition for these examples is as follows.
 
-```
+```sql
 create table t1(c0 int encode lzo, c1 bigint encode zstd, c2 varchar(16) encode lzo, c3 varchar(32) encode zstd);
 ```
 
 The following statement alters the compression encoding for column c0 from LZO encoding to AZ64 encoding.
 
-```
+```sql
 alter table t1 alter column c0 encode az64;
 ```
 
 The following statement alters the compression encoding for column c1 from Zstandard encoding to AZ64 encoding.
 
-```
+```sql
 alter table t1 alter column c1 encode az64;
 ```
 
 The following statement alters the compression encoding for column c2 from LZO encoding to Byte-dictionary encoding.
 
-```
+```sql
 alter table t1 alter column c2 encode bytedict;
 ```
 
 The following statement alters the compression encoding for column c3 from Zstandard encoding to Runlength encoding.
 
-```
+```sql
 alter table t1 alter column c3 encode runlength;
 ```
 
@@ -128,7 +128,7 @@ The following examples show how to change the DISTSTYLE and DISTKEY of a table.
 
 Create a table with an EVEN distribution style. The SVV\_TABLE\_INFO view shows that the DISTSTYLE is EVEN.
 
-```
+```sql
 create table inventory(
   inv_date_sk int4 not null ,
   inv_item_sk int4 not null ,
@@ -147,7 +147,7 @@ select "table", "diststyle" from svv_table_info;
 
 Alter the table DISTKEY to `inv_warehouse_sk`. The SVV\_TABLE\_INFO view shows the `inv_warehouse_sk` column as the resulting distribution key.
 
-```
+```sql
 alter table inventory alter diststyle key distkey inv_warehouse_sk;
 
 select "table", "diststyle" from svv_table_info;
@@ -159,7 +159,7 @@ select "table", "diststyle" from svv_table_info;
 
 Alter the table DISTKEY to `inv_item_sk`. The SVV\_TABLE\_INFO view shows the `inv_item_sk` column as the resulting distribution key.
 
-```
+```sql
 alter table inventory alter distkey inv_item_sk;
 
 select "table", "diststyle" from svv_table_info;
@@ -176,7 +176,7 @@ The following examples show how to change a table to DISTSTYLE ALL.
 
 Create a table with an EVEN distribution style. The SVV\_TABLE\_INFO view shows that the DISTSTYLE is EVEN.
 
-```
+```sql
 create table inventory(
   inv_date_sk int4 not null ,
   inv_item_sk int4 not null ,
@@ -195,7 +195,7 @@ select "table", "diststyle" from svv_table_info;
 
 Alter the table DISTSTYLE to ALL. The SVV\_TABLE\_INFO view shows the changed DISTSYTLE.
 
-```
+```sql
 alter table inventory alter diststyle all;
 
 select "table", "diststyle" from svv_table_info;
@@ -212,31 +212,31 @@ You can alter a table to have a compound sort key or no sort key.
 
 In the following table definition, table `t1` is defined with an interleaved sortkey.
 
-```
+```sql
 create table t1 (c0 int, c1 int) interleaved sortkey(c0, c1);
 ```
 
 The following command alters the table from an interleaved sort key to a compound sort key.
 
-```
+```SQL
 alter table t1 alter sortkey(c0, c1);
 ```
 
 The following command alters the table to remove the interleaved sort key.
 
-```
+```SQL
 alter table t1 alter sortkey none;
 ```
 
 In the following table definition, table `t1` is defined with column `c0` as a sortkey.
 
-```
+```sql
 create table t1 (c0 int, c1 int) sortkey(c0);
 ```
 
 The following command alters the table `t1` to a compound sort key.
 
-```
+```SQL
 alter table t1 alter sortkey(c0, c1);
 ```
 
@@ -247,13 +247,13 @@ The following example shows how to alter a table to ENCODE AUTO.
 
 The table definition for this example follows. Column `c0` is defined with the encoding type AZ64, and column `c1` is defined with the encoding type LZO.
 
-```
+```sql
 create table t1(c0 int encode AZ64, c1 varchar encode LZO);
 ```
 
 For this table, the following statement alters the encoding to AUTO.
 
-```
+```sql
 alter table t1 alter encode auto;
 ```
 
@@ -261,13 +261,13 @@ The following example shows how to alter a table to remove the ENCODE AUTO setti
 
 The table definition for this example follows. The table columns are defined without encoding. In this case, the encoding defaults to ENCODE AUTO.
 
-```
+```sql
 create table t2(c0 int, c1 varchar);
 ```
 
 For this table, the following statement alters the encoding of column c0 to LZO. The table encoding is no longer set to ENCODE AUTO.
 
-```
+```sql
 alter table t2 alter column c0 encode lzo;;
 ```
 
@@ -276,26 +276,26 @@ alter table t2 alter column c0 encode lzo;;
 
 The following command turns RLS off for the table:
 
-```
+```sql
 ALTER TABLE tickit_category_redshift ROW LEVEL SECURITY OFF;
 ```
 
 The following command turns RLS on for the table:
 
-```
+```sql
 ALTER TABLE tickit_category_redshift ROW LEVEL SECURITY ON;
 ```
 
 The following command turns RLS on for the table and makes it accessible over datashares:
 
-```
+```sql
 ALTER TABLE tickit_category_redshift ROW LEVEL SECURITY ON;
 ALTER TABLE tickit_category_redshift ROW LEVEL SECURITY FOR DATASHARES OFF;
 ```
 
 The following command turns RLS on for the table and makes it inaccessible over datashares:
 
-```
+```sql
 ALTER TABLE tickit_category_redshift ROW LEVEL SECURITY ON;
 ALTER TABLE tickit_category_redshift ROW LEVEL SECURITY FOR DATASHARES ON;
 ```

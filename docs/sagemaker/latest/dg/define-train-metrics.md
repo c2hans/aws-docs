@@ -14,13 +14,13 @@ If you are using your own algorithm, do the following:
 
 For example, suppose your algorithm emits the following metrics for training error and validation error:
 
-```
+```bash
 Train_error=0.138318;  Valid_error=0.324557;
 ```
 
 If you want to monitor both of those metrics in CloudWatch, the dictionary for the metric definitions should look like the following example:
 
-```
+```python
 [
     {
         "Name": "train:error",
@@ -40,7 +40,7 @@ In the regex for the `train:error` metric defined in the preceding example, the 
 
 Define the metrics that you want to send to CloudWatch by specifying a list of metric definitions in the `AlgorithmSpecification` when you create a `TrainingJob` using `sagemaker-core`. For example, if you want to monitor both the `train:error` and `validation:error` metrics in CloudWatch, your `TrainingJob.create()` call would look like the following example:
 
-```
+```python
 from sagemaker.core.resources import TrainingJob
 from sagemaker.core.shapes import (
     AlgorithmSpecification,
@@ -85,7 +85,7 @@ If you choose the **Your own algorithm container in ECR** option as your algorit
 
 Define the metrics that you want to send to CloudWatch by specifying a list of metric names and regular expressions in the `MetricDefinitions` field of the [`AlgorithmSpecification`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AlgorithmSpecification.html) input parameter that you pass to the [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) operation. For example, if you want to monitor both the `train:error` and `validation:error` metrics in CloudWatch, your `AlgorithmSpecification` would look like the following example:
 
-```
+```json
 "AlgorithmSpecification": {
     "TrainingImage": {{your-own-image-uri}},
     "TrainingInputMode": "File",

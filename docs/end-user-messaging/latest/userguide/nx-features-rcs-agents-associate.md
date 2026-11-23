@@ -10,7 +10,7 @@ An AWS RCS Agent is gated by a registration. After you create the agent and crea
 
 1. Create the registration. For a testing agent, use the testing registration type.
 
-   ```
+   ```bash
    $ aws pinpoint-sms-voice-v2 create-registration \
    > --registration-type {{TEST_RCS_LAUNCH_REGISTRATION}}
    ```
@@ -19,7 +19,7 @@ An AWS RCS Agent is gated by a registration. After you create the agent and crea
 
 1. Associate the registration with the agent, replacing {{registrationId}} and {{rcs-agentId}} with your values.
 
-   ```
+   ```bash
    $ aws pinpoint-sms-voice-v2 create-registration-association \
    > --registration-id {{registrationId}} \
    > --resource-id {{rcs-agentId}}

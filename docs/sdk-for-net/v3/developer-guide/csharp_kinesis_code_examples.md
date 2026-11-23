@@ -29,7 +29,7 @@ The following code example shows how to use `AddTagsToStream`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Kinesis#code-examples).
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -102,7 +102,7 @@ The following code example shows how to use `CreateStream`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Kinesis#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Kinesis;
@@ -161,7 +161,7 @@ The following code example shows how to use `DeleteStream`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Kinesis#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Kinesis;
@@ -223,7 +223,7 @@ The following code example shows how to use `DeregisterStreamConsumer`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Kinesis#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Kinesis;
@@ -291,7 +291,7 @@ The following code example shows how to use `ListStreamConsumers`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Kinesis#code-examples).
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -355,7 +355,7 @@ The following code example shows how to use `ListStreams`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Kinesis#code-examples).
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -396,7 +396,7 @@ The following code example shows how to use `ListTagsForStream`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Kinesis#code-examples).
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -462,7 +462,7 @@ The following code example shows how to use `RegisterStreamConsumer`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Kinesis#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Kinesis;
@@ -522,7 +522,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda) repository.
 Consuming a Kinesis event with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 ﻿using System.Text;
@@ -585,7 +585,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda-with-batch-item-handling) repository.
 Reporting Kinesis batch item failures with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 ﻿using System.Text;

@@ -130,7 +130,7 @@ META_STOP
 
  Below is an example of uploading an OEM ephemeris file from an S3 bucket
 
-```
+```python
 import boto3
 from datetime import datetime, timedelta, timezone
 
@@ -197,7 +197,7 @@ print(f"Created OEM ephemeris with ID: {s3_oem_ephemeris['ephemerisId']}")
 
  Below is an example returned data from the [DescribeEphemeris](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_DescribeEphemeris.html) action being called for the OEM ephemeris uploaded in the previous block of example code.
 
-```
+```json
 {
   "creationTime": 1620254718.765,
   "enabled": true,

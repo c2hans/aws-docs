@@ -16,7 +16,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-httpapi-lambdaauthorizer-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizerPayloadFormatVersion](#sam-httpapi-lambdaauthorizer-authorizerpayloadformatversion): {{String}}
   EnableFunctionDefaultPermissions: {{Boolean}}
   [EnableSimpleResponses](#sam-httpapi-lambdaauthorizer-enablesimpleresponses): {{Boolean}}
@@ -83,7 +83,7 @@ LambdaAuthorizer example
 #### YAML
 <a name="sam-property-httpapi-lambdaauthorizer--examples--lambdaauthorizer--yaml"></a>
 
-```
+```yaml
 Auth:
   Authorizers:
     MyLambdaAuthorizer:

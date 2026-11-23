@@ -90,7 +90,7 @@ Create the experiment template using the AWS FIS console. In the template, you s
 
    1. For **Action parameters**, **Document parameters**, enter the following:
 
-      ```
+      ```json
       {"DurationSeconds":"120"}
       ```
 
@@ -129,7 +129,7 @@ Create the experiment template using the AWS FIS console. In the template, you s
 **(Optional) To view the experiment template JSON**
 Choose the **Export** tab. The following is an example of the JSON created by the preceding console procedure.
 
-```
+```json
 {
     "description": "Test CPU stress predefined SSM document",
     "targets": {

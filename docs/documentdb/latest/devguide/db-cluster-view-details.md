@@ -45,7 +45,7 @@ aws docdb describe-db-clusters --filter Name=engine,Values=docdb
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 {
     "DBClusters": [
         {
@@ -110,7 +110,7 @@ aws docdb describe-db-clusters ^
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 {
     "DBClusters": [
         {
@@ -203,7 +203,7 @@ aws docdb describe-db-clusters ^
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 [
     [
         [

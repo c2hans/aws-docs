@@ -41,7 +41,7 @@ BOOLEAN
 
 The following query confirms that the user `reg_user1` has the privilege for the `Redshift-S3-Read` role to run the COPY command.
 
-```
+```sql
 select has_assumerole_privilege('reg_user1', 'arn:aws:iam::123456789012:role/Redshift-S3-Read', 'copy');
 ```
 

@@ -26,7 +26,7 @@ If you plan to launch complex topologies of AWS Marketplace products through AWS
 
 For more information, see [Product categories in AWS Marketplace](buyer-product-categories.md).
 
-Each major software category contains more specific subcategories. For example, the Infrastructure software category contains subcategories such as Application Development, Databases & Caching, and Operating Systems. Software is available as one of seven different product types, including Amazon Machine Images (AMIs) and software as a service (SaaS). For information about the different software types, see [Product types available in AWS Marketplace](buyer-product-types.md).
+Each major software category contains more specific subcategories. For example, the Infrastructure software category contains subcategories such as Application Development, Databases & Caching, and Operating Systems. Software is available as several different product types, including Amazon Machine Images (AMIs), software as a service (SaaS), and modules for AWS RTB Fabric. For information about the different software types, see [Product types available in AWS Marketplace](buyer-product-types.md).
 
  To aid you in choosing the software you need, AWS Marketplace provides the following information:
 +  Seller details

@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::SourceEndpoint RtpStandardSourceEndpointConfiguration
 
-<a name="aws-properties-mediaconnect-sourceendpoint-rtpstandardsourceendpointconfiguration-description"></a>The `RtpStandardSourceEndpointConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::SourceEndpoint](aws-resource-mediaconnect-sourceendpoint.md).
+The configuration settings for a source endpoint that uses the RTP protocol.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-rtpstandardsourceendpointconfiguration-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-rtpstandardsourceendpointconfiguration-properties"></a>
 
 `DestinationIngestPort`  <a name="cfn-mediaconnect-sourceendpoint-rtpstandardsourceendpointconfiguration-destinationingestport"></a>
-Property description not available.
+The port on the destination that receives the content. The valid range is 3000 to 30000.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `3000`
@@ -43,7 +43,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ForwardErrorCorrectionState`  <a name="cfn-mediaconnect-sourceendpoint-rtpstandardsourceendpointconfiguration-forwarderrorcorrectionstate"></a>
-Property description not available.
+Indicates whether forward error correction (FEC) is enabled for the source endpoint.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `ENABLED | DISABLED`

@@ -42,7 +42,7 @@ Show command reference information for the `cdk synthesize` command.<a name="ref
 Do not output the CloudFormation template to `stdout`.
 This option can be configured in the CDK project’s `cdk.json` file. The following is an example:
 
-```
+```json
 {
    "quiet": true
 }

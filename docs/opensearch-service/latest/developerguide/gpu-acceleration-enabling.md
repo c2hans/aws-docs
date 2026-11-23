@@ -63,7 +63,7 @@ To create an OpenSearch Serverless collection with GPU-acceleration enabled, see
 
 The following AWS CLI example creates an OpenSearch domain with GPU-acceleration enabled in US East (N. Virginia). Replace the {{text}} with that of your own configuration.
 
-```
+```bash
 aws opensearch create-domain \
     --domain-name {{my-domain}} \
     --engine-version {{OpenSearch_3.1}} \
@@ -102,7 +102,7 @@ aws opensearch create-domain \
 
 The following AWS CLI example enables GPU-acceleration for an existing OpenSearch domain. Replace the {{text}} with that of your own configuration.
 
-```
+```bash
 aws opensearch update-domain-config \
     --domain-name {{my-domain}} \
     --cluster-config InstanceType={{r7g.16xlarge.search}},InstanceCount={{3}} \
@@ -114,7 +114,7 @@ aws opensearch update-domain-config \
 
 The following AWS CLI example creates an OpenSearch Serverless collection with GPU-acceleration enabled in US East (N. Virginia). Replace the {{text}} with that of your own configuration.
 
-```
+```shell
 aws opensearchserverless create-collection \
     --name "{{my-collection}}" \
     --type "VECTORSEARCH" \
@@ -128,7 +128,7 @@ aws opensearchserverless create-collection \
 
 The following AWS CLI example enables GPU-acceleration for an existing OpenSearch Serverless collection. Replace the {{text}} with that of your own configuration.
 
-```
+```bash
 aws opensearchserverless update-collection \
     --id {{07tjusf2h91cunochc}} \
     --vector-options '{"ServerlessVectorAcceleration": "{{ENABLED}}"}' \

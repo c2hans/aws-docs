@@ -43,6 +43,8 @@ Implement a standardized process across your organization to identify and remove
 
 ![Flow chart depicting the steps of decommissioning a resource.](https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/decommissioning-process-flowchart.png)
 
+*Resource decommissioning flow.*
+
 ## Resources
 <a name="resources"></a>
 

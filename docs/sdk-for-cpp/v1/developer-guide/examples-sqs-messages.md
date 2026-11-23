@@ -22,7 +22,7 @@ You can add a single message to an Amazon SQS queue by calling the SQSClient cla
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/sqs/SQSClient.h>
 #include <aws/sqs/model/SendMessageRequest.h>
@@ -31,7 +31,7 @@ You can add a single message to an Amazon SQS queue by calling the SQSClient cla
 
  **Code**
 
-```
+```cpp
     Aws::SQS::SQSClient sqsClient(clientConfiguration);
 
     Aws::SQS::Model::SendMessageRequest request;
@@ -58,7 +58,7 @@ Retrieve any messages that are currently in the queue by calling the SQSClient c
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/sqs/SQSClient.h>
 #include <aws/sqs/model/ReceiveMessageRequest.h>
@@ -67,7 +67,7 @@ Retrieve any messages that are currently in the queue by calling the SQSClient c
 
  **Code**
 
-```
+```cpp
     Aws::SQS::SQSClient sqsClient(clientConfiguration);
 
     Aws::SQS::Model::ReceiveMessageRequest request;
@@ -108,7 +108,7 @@ After receiving a message and processing its contents, delete the message from t
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/sqs/SQSClient.h>
 #include <aws/sqs/model/DeleteMessageRequest.h>
@@ -117,7 +117,7 @@ After receiving a message and processing its contents, delete the message from t
 
  **Code**
 
-```
+```cpp
     Aws::SQS::Model::DeleteMessageRequest request;
     request.SetQueueUrl(queueUrl);
     request.SetReceiptHandle(messageReceiptHandle);

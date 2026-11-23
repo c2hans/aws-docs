@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Start execution of an AWS Step Functions state machine.
     /// </summary>
@@ -48,7 +48,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static String startWorkflow(SfnClient sfnClient, String stateMachineArn, String jsonEx) {
         UUID uuid = UUID.randomUUID();
         String uuidValue = uuid.toString();
@@ -77,7 +77,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sfn#code-examples).
 
-```
+```javascript
 import { SFNClient, StartExecutionCommand } from "@aws-sdk/client-sfn";
 
 /**
@@ -120,7 +120,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun startWorkflow(
     stateMachineArnVal: String?,
     jsonEx: String?,
@@ -147,7 +147,7 @@ suspend fun startWorkflow(
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 class StateMachine:
     """Encapsulates Step Functions state machine actions."""
 
@@ -190,7 +190,7 @@ class StateMachine:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sfn#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_sfn->startexecution(
           iv_statemachinearn = iv_state_machine_arn

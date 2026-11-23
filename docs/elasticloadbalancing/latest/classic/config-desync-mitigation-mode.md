@@ -94,7 +94,7 @@ aws elb modify-load-balancer-attributes --load-balancer-name {{my-load-balancer}
 
 The following is the contents of `attribute.json`.
 
-```
+```json
 {
     "AdditionalAttributes": [
         {

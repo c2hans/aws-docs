@@ -32,7 +32,7 @@ You can view capability health and status issues in the EKS console or using the
 
  ** AWS CLI**:
 
-```
+```bash
 # View capability status and health
 aws eks describe-capability \
   --region region-code \
@@ -50,7 +50,7 @@ aws eks describe-capability \
 
  **Verify RBAC permissions**:
 
-```
+```bash
 # Check if capability has cluster admin policy
 kubectl get accessentry -A | grep kro
 ```
@@ -59,7 +59,7 @@ If the capability doesn’t have the required permissions, associate the `Amazon
 
  **Check ResourceGraphDefinition status**:
 
-```
+```bash
 # List all RGDs
 kubectl get resourcegraphdefinition
 
@@ -84,7 +84,7 @@ If custom resource instances exist but the underlying Kubernetes resources (Depl
 
  **Check instance status**:
 
-```
+```bash
 # Describe the instance (replace with your custom resource kind and name)
 kubectl describe {{custom-kind my-instance}}
 
@@ -117,7 +117,7 @@ Focus on the `Ready` condition to determine instance health. If `Ready` is `Fals
 
 The kro capability needs permissions to create the underlying Kubernetes resources defined in your ResourceGraphDefinitions.
 
-```
+```bash
 # Check if the capability has the AmazonEKSClusterAdminPolicy
 kubectl get accessentry -A | grep kro
 ```
@@ -137,7 +137,7 @@ CEL expression errors are caught at ResourceGraphDefinition creation time, not w
 
  **Check RGD validation status**:
 
-```
+```bash
 # Check if RGD was accepted
 kubectl get resourcegraphdefinition {{my-rgd}} -o jsonpath='{.status.conditions[?(@.type=="ResourceGraphAccepted")]}'
 
@@ -149,7 +149,7 @@ If `ResourceGraphAccepted` is `False`, the condition message contains the valida
 
  **Example valid CEL expressions**:
 
-```
+```yaml
 # Reference schema field
 ${schema.spec.appName}
 
@@ -176,7 +176,7 @@ kro automatically infers dependencies from CEL expressions and creates resources
 
  **View computed creation order**:
 
-```
+```bash
 # See the order kro will create resources
 kubectl get resourcegraphdefinition {{my-rgd}} -o jsonpath='{.status.topologicalOrder}'
 ```
@@ -185,7 +185,7 @@ This shows the computed order based on CEL expression references between resourc
 
  **Check resource readiness**:
 
-```
+```bash
 # View instance status to see which resources are ready
 kubectl get {{custom-kind my-instance}} -o jsonpath='{.status}'
 
@@ -197,7 +197,7 @@ kubectl get deployment {{my-deployment}} -o jsonpath='{.status.conditions}'
 
 The `readyWhen` field is optional. If not specified, resources are considered ready immediately after creation. If you’ve defined `readyWhen` conditions, verify they correctly check for resource readiness:
 
-```
+```yaml
 resources:
   - id: deployment
     readyWhen:
@@ -206,7 +206,7 @@ resources:
 
  **Check resource events**:
 
-```
+```bash
 # View events for the underlying resources
 kubectl get events -n {{namespace}} --sort-by='.lastTimestamp'
 ```
@@ -218,7 +218,7 @@ If instances fail to create due to schema validation errors, verify the instance
 
  **Check validation errors**:
 
-```
+```bash
 # Attempt to create instance and view error
 kubectl apply -f instance.yaml
 
@@ -234,7 +234,7 @@ kubectl describe {{custom-kind my-instance}} | grep -A 5 "Validation"
 
  **Review RGD schema**:
 
-```
+```bash
 # View the schema definition
 kubectl get resourcegraphdefinition {{my-rgd}} -o jsonpath='{.spec.schema}'
 ```

@@ -14,7 +14,7 @@ You can also use the AWS Management Console to view the policy.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

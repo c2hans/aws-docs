@@ -118,7 +118,7 @@ You can use the Amazon Pinpoint API in your Java applications by using the clien
 To export endpoints from an Amazon Pinpoint project, initialize a `CreateExportJobRequest` object. Then, pass this object to the `createExportJob` method of the `AmazonPinpoint` client.
 To download the exported endpoints from Amazon Pinpoint, use the `getObject` method of the `AmazonS3` client.
 
-```
+```java
 import software.amazon.awssdk.core.ResponseBytes;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
@@ -147,7 +147,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 ```
 
-```
+```java
 import software.amazon.awssdk.core.ResponseBytes;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
@@ -377,7 +377,7 @@ You can use Amazon Pinpoint by making HTTP requests directly to the REST API.
 **Example POST export job request**
 To export the endpoints in your Amazon Pinpoint project, issue a `POST` request to the [Export jobs](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-jobs-export.html) resource:
 
-```
+```http
 POST /v1/apps/{{application_id}}/jobs/export HTTP/1.1
 Content-Type: application/json
 Accept: application/json
@@ -414,7 +414,7 @@ The response provides the job ID with the `Id` attribute. You can use this ID to
 **Example GET export job request**
 To check the current status of an export job, issue a `GET` request to the [Export job](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-jobs-export-job-id.html) resource:
 
-```
+```http
 GET /v1/apps/{{application_id}}/jobs/export/{{job_id}} HTTP/1.1
 Content-Type: application/json
 Accept: application/json

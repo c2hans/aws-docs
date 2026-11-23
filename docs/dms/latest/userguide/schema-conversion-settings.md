@@ -96,7 +96,7 @@ You can pass the conversion configuration to `--conversion-configuration` in the
 
 The full JSON structure looks like this:
 
-```
+```json
 {
   "Common project settings": {
     "ShowSeverityLevelInSql": "CRITICAL",

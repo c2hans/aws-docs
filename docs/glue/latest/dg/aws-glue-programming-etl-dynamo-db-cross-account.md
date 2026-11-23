@@ -23,7 +23,7 @@ Follow [step 2 in the tutorial](https://docs.aws.amazon.com/IAM/latest/UserGuide
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

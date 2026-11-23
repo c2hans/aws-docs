@@ -54,7 +54,7 @@ aws docdb describe-db-cluster-parameters ^
 ```
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 [
     [
         "audit_logs",
@@ -131,7 +131,7 @@ The following example changes the `tls` parameter.
 
    Output from this operation looks something like the following (JSON format).
 
-   ```
+   ```json
    {
        "Parameters": [
            {
@@ -180,7 +180,7 @@ The following example changes the `tls` parameter.
 
    Output from this operation looks something like the following (JSON format).
 
-   ```
+   ```json
    {
        "DBClusterParameterGroupName": "sample-parameter-group"
    }
@@ -206,7 +206,7 @@ The following example changes the `tls` parameter.
 
    Output from this operation looks something like the following (JSON format).
 
-   ```
+   ```json
    {
        "Parameters": [
            {

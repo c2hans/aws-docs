@@ -13,7 +13,7 @@ aws arc-zonal-shift cancel-practice-run \
    --zonal-shift-id="="arn:aws:testservice::111122223333:ExampleALB123456890"
 ```
 
-```
+```json
 {
     "zonalShiftId": "2222222-3333-444-1111",
     "resourceIdentifier": "arn:aws:testservice::111122223333:ExampleALB123456890",

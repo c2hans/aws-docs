@@ -27,7 +27,7 @@ The following example policy allows the user to copy the specified image to the 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -52,7 +52,7 @@ If you are creating an IAM policy for copying shared images for accounts that do
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

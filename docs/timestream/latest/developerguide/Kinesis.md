@@ -75,7 +75,7 @@ Here is an example of how to configure an EventBridge Pipe to stream data from a
 **Example IAM policy updates for Timestream**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -101,7 +101,7 @@ Here is an example of how to configure an EventBridge Pipe to stream data from a
 
 **Example Kinesis stream configuration**  <a name="kinesis-stream-config.example"></a>
 
-```
+```json
 {
   "Source": "arn:aws:kinesis:us-east-1:123456789012:stream/my-kinesis-stream",
   "SourceParameters": {
@@ -122,7 +122,7 @@ Here is an example of how to configure an EventBridge Pipe to stream data from a
 
 **Example Timestream target configuration**  <a name="kinesis-stream-config.example"></a>
 
-```
+```json
 {
     "Target": "arn:aws:timestream:us-east-1:123456789012:database/my-database/table/my-table",
     "TargetParameters": {

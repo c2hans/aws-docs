@@ -280,7 +280,7 @@ Default: `localhost`
 **Example: Configuration merge update**
 The following example configuration specifies to open the local debug console on non-default ports and disable HTTPS.
 
-```
+```json
 {
   "httpsEnabled": false,
   "port": "10441",
@@ -307,7 +307,7 @@ Default: `localhost`
 **Example: Configuration merge update**
 The following example configuration specifies to open the local debug console on non-default ports.
 
-```
+```json
 {
   "port": "10441",
   "websocketPort": "10442"
@@ -334,7 +334,7 @@ You can disable HTTPS. For more information, see [Local debug console configurat
 
 1. <a name="local-debug-console-component-usage-forward-port"></a>(Optional) To view the local debug console on your development computer, you can forward the console's port over SSH. However, you must first enable the `AllowTcpForwarding` option in your core device's SSH configuration file. This option is enabled by default. Run the following command on your development computer to view the dashboard at `localhost:1441` on your development computer.
 
-   ```
+   ```bash
    ssh -L 1441:localhost:1441 -L 1442:localhost:1442 {{username}}@{{core-device-ip-address}}
    ```
 **Note**
@@ -347,14 +347,14 @@ You can change the default ports from `1441` and `1442`. For more information, s
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo {{/greengrass/v2}}/bin/greengrass-cli get-debug-password
    ```
 
 ------
 #### [ Windows ]
 
-   ```
+   ```cmd
    {{C:\greengrass\v2}}\bin\greengrass-cli get-debug-password
    ```
 
@@ -422,7 +422,7 @@ If the certificate fingerprint doesn't match, go to [Step 2](#local-debug-consol
 
 1. <a name="local-debug-console-component-usage-forward-port"></a>(Optional) To view the local debug console on your development computer, you can forward the console's port over SSH. However, you must first enable the `AllowTcpForwarding` option in your core device's SSH configuration file. This option is enabled by default. Run the following command on your development computer to view the dashboard at `localhost:1441` on your development computer.
 
-   ```
+   ```bash
    ssh -L 1441:localhost:1441 -L 1442:localhost:1442 {{username}}@{{core-device-ip-address}}
    ```
 **Note**
@@ -435,14 +435,14 @@ You can change the default ports from `1441` and `1442`. For more information, s
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo {{/greengrass/v2}}/bin/greengrass-cli get-debug-password
    ```
 
 ------
 #### [ Windows ]
 
-   ```
+   ```cmd
    {{C:\greengrass\v2}}\bin\greengrass-cli get-debug-password
    ```
 
@@ -493,14 +493,14 @@ This component uses the same log file as the [Greengrass nucleus](greengrass-nuc
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
   ```
 

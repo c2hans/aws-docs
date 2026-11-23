@@ -31,7 +31,7 @@ The following code example shows how to get started using Amazon SNS.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sns/hello_sns#code-examples).
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -73,7 +73,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the hello\_sns.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/sns/SNSClient.h>
 #include <aws/sns/model/ListTopicsRequest.h>
@@ -159,7 +159,7 @@ The following code example shows how to use `CreateTopic`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sns#code-examples).
 
-```
+```cpp
 //! Create an Amazon Simple Notification Service (Amazon SNS) topic.
 /*!
   \param topicName: An Amazon SNS topic name.
@@ -203,7 +203,7 @@ The following code example shows how to use `DeleteTopic`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sns#code-examples).
 
-```
+```cpp
 //! Delete an Amazon Simple Notification Service (Amazon SNS) topic.
 /*!
   \param topicARN: The Amazon Resource Name (ARN) for an Amazon SNS topic.
@@ -240,7 +240,7 @@ The following code example shows how to use `GetSMSAttributes`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sns#code-examples).
 
-```
+```cpp
 //! Retrieve the default settings for sending SMS messages from your AWS account by using
 //! Amazon Simple Notification Service (Amazon SNS).
 /*!
@@ -292,7 +292,7 @@ The following code example shows how to use `GetTopicAttributes`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sns#code-examples).
 
-```
+```cpp
 //! Retrieve the properties of an Amazon Simple Notification Service (Amazon SNS) topic.
 /*!
   \param topicARN: The Amazon Resource Name (ARN) for an Amazon SNS topic.
@@ -334,7 +334,7 @@ The following code example shows how to use `ListSubscriptions`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sns#code-examples).
 
-```
+```cpp
 //! Retrieve a list of Amazon Simple Notification Service (Amazon SNS) subscriptions.
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -399,7 +399,7 @@ The following code example shows how to use `ListTopics`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sns#code-examples).
 
-```
+```cpp
 //! Retrieve a list of Amazon Simple Notification Service (Amazon SNS) topics.
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -450,7 +450,7 @@ The following code example shows how to use `Publish`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sns#code-examples).
 
-```
+```cpp
 //! Send a message to an Amazon Simple Notification Service (Amazon SNS) topic.
 /*!
   \param message: The message to publish.
@@ -484,7 +484,7 @@ bool AwsDoc::SNS::publishToTopic(const Aws::String &message,
 ```
 Publish a message with an attribute.
 
-```
+```cpp
         static const Aws::String TONE_ATTRIBUTE("tone");
         static const Aws::Vector<Aws::String> TONES = {"cheerful", "funny", "serious",
                                                        "sincere"};
@@ -544,7 +544,7 @@ The following code example shows how to use `SetSMSAttributes`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sns#code-examples).
 How to use Amazon SNS to set the DefaultSMSType attribute.
 
-```
+```cpp
 //! Set the default settings for sending SMS messages.
 /*!
   \param smsType: The type of SMS message that you will send by default.
@@ -584,7 +584,7 @@ The following code example shows how to use `Subscribe`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```cpp
 //! Subscribe to an Amazon Simple Notification Service (Amazon SNS) topic with delivery to an email address.
 /*!
   \param topicARN: An SNS topic Amazon Resource Name (ARN).
@@ -619,7 +619,7 @@ bool AwsDoc::SNS::subscribeEmail(const Aws::String &topicARN,
 ```
 Subscribe a mobile application to a topic.
 
-```
+```cpp
 //! Subscribe to an Amazon Simple Notification Service (Amazon SNS) topic with delivery to a mobile app.
 /*!
   \param topicARN: The Amazon Resource Name (ARN) for an Amazon SNS topic.
@@ -655,7 +655,7 @@ AwsDoc::SNS::subscribeApp(const Aws::String &topicARN,
 ```
 Subscribe a Lambda function to a topic.
 
-```
+```cpp
 //! Subscribe to an Amazon Simple Notification Service (Amazon SNS) topic with delivery to an AWS Lambda function.
 /*!
   \param topicARN: The Amazon Resource Name (ARN) for an Amazon SNS topic.
@@ -690,7 +690,7 @@ bool AwsDoc::SNS::subscribeLambda(const Aws::String &topicARN,
 ```
 Subscribe an SQS queue to a topic.
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -729,7 +729,7 @@ Subscribe an SQS queue to a topic.
 ```
 Subscribe with a filter to a topic.
 
-```
+```cpp
         static const Aws::String TONE_ATTRIBUTE("tone");
         static const Aws::Vector<Aws::String> TONES = {"cheerful", "funny", "serious",
                                                        "sincere"};
@@ -869,7 +869,7 @@ The following code example shows how to use `Unsubscribe`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sns#code-examples).
 
-```
+```cpp
 //! Delete a subscription to an Amazon Simple Notification Service (Amazon SNS) topic.
 /*!
   \param subscriptionARN: The Amazon Resource Name (ARN) for an Amazon SNS topic subscription.
@@ -927,7 +927,7 @@ The following code example shows how to publish SMS messages using Amazon SNS.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sns#code-examples).
 
-```
+```cpp
 /**
  * Publish SMS: use Amazon Simple Notification Service (Amazon SNS) to send an SMS text message to a phone number.
  * Note: This requires additional AWS configuration prior to running example.
@@ -989,7 +989,7 @@ The following code example shows how to:
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cross-service/topics_and_queues#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";

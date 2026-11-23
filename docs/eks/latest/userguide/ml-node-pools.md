@@ -94,7 +94,7 @@ The following examples show common scheduling patterns:
 
  **Pin a Pod to one specific reservation (no fallback):**
 
-```
+```yaml
 spec:
   nodeSelector:
     karpenter.sh/capacity-type: reserved
@@ -103,7 +103,7 @@ spec:
 
  **Target ODCR nodes only (any ODCR, not Capacity Blocks):**
 
-```
+```yaml
 spec:
   nodeSelector:
     karpenter.sh/capacity-type: reserved
@@ -112,7 +112,7 @@ spec:
 
  **Target any reserved capacity (ODCR or Capacity Block):**
 
-```
+```yaml
 spec:
   nodeSelector:
     karpenter.sh/capacity-type: reserved
@@ -120,7 +120,7 @@ spec:
 
  **Prefer reserved but fall back to Spot or On-Demand if unavailable:**
 
-```
+```yaml
 spec:
   affinity:
     nodeAffinity:
@@ -168,7 +168,7 @@ Static capacity is configured by setting the `replicas` field on the NodePool.
 
 The example below shows a static capacity NodePool that uses the default EKS Auto Mode NodeClass and creates a static NodePool with 4 nodes (`replicas`) that can be at most 6 nodes (`limits.nodes`).
 
-```
+```yaml
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:
@@ -204,7 +204,7 @@ spec:
 
 With self-managed Karpenter, static capacity is gated by the alpha `StaticCapacity` feature (launched in Karpenter version v1.8), which must be enabled in the Helm values:
 
-```
+```yaml
 settings:
   featureGates:
     staticCapacity: true
@@ -212,7 +212,7 @@ settings:
 
 The NodePool references a custom `EC2NodeClass` named `my-nodeclass` and creates a static NodePool with 4 nodes (`replicas`) that can be at most 6 nodes (`limits.nodes`).
 
-```
+```yaml
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:
@@ -261,7 +261,7 @@ Create a `NodeClass` that references your Capacity Block reservation, then creat
 
 With `consolidateAfter: Never` set, Karpenter will not attempt to replace, merge, or terminate nodes to reduce cost or pack workloads more efficiently. This is recommended for Capacity Blocks because the capacity is already pre-paid.
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1
 kind: NodeClass
 metadata:
@@ -308,7 +308,7 @@ Create an `EC2NodeClass` that includes AMI, subnet, and security group selectors
 
 With `consolidateAfter: Never` set, Karpenter will not attempt to replace, merge, or terminate nodes to reduce cost or pack workloads more efficiently. This is recommended for Capacity Blocks because the capacity is already pre-paid.
 
-```
+```yaml
 apiVersion: karpenter.k8s.aws/v1
 kind: EC2NodeClass
 metadata:
@@ -374,7 +374,7 @@ For more examples, see the [Karpenter documentation](https://karpenter.sh/docs/c
 
 Create a `NodeClass` with `capacityReservationSelectorTerms` and a NodePool that prioritizes `reserved` with `on-demand` fallback. Pin `topology.kubernetes.io/zone` to the ODCR’s AZ:
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1
 kind: NodeClass
 metadata:
@@ -422,7 +422,7 @@ spec:
 
 Create an `EC2NodeClass` with AMI, subnet, and security group selectors in addition to `capacityReservationSelectorTerms`, then create the NodePool:
 
-```
+```yaml
 apiVersion: karpenter.k8s.aws/v1
 kind: EC2NodeClass
 metadata:
@@ -479,7 +479,7 @@ On-Demand is the default capacity type and can be used with static or dynamic pr
 ------
 #### [ EKS Auto Mode ]
 
-```
+```yaml
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:
@@ -510,7 +510,7 @@ spec:
 ------
 #### [ Self-managed Karpenter ]
 
-```
+```yaml
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:
@@ -564,7 +564,7 @@ You can explicitly request Spot instances by setting `karpenter.sh/capacity-type
 
 EKS Auto Mode handles Spot interruptions natively. No SQS queue or Node Termination Handler is required.
 
-```
+```yaml
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:
@@ -607,7 +607,7 @@ Self-managed Karpenter requires you to enable native interruption handling on th
 
 If you install Karpenter directly with Helm, set `settings.interruptionQueue` in your `values.yaml`:
 
-```
+```yaml
 # karpenter values.yaml (Helm)
 settings:
   clusterName: my-cluster
@@ -616,7 +616,7 @@ settings:
 
 If you bootstrap Karpenter with `eksctl`, set `withSpotInterruptionQueue: true` in your cluster config file. `eksctl` creates the SQS queue and EventBridge rules and configures the Karpenter controller to use them.
 
-```
+```yaml
 # eksctl ClusterConfig
 karpenter:
   version: "${KARPENTER_VERSION}"
@@ -625,7 +625,7 @@ karpenter:
 
 Once the controller is set up to use your queue, no extra configuration is needed on individual NodePool resources. The interruption handling applies cluster-wide.
 
-```
+```yaml
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:

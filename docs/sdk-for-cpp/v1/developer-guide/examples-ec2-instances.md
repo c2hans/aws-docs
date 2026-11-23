@@ -20,7 +20,7 @@ Create a new Amazon EC2 instance by calling the EC2Client’s `RunInstances` fun
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/RunInstancesRequest.h>
@@ -29,7 +29,7 @@ Create a new Amazon EC2 instance by calling the EC2Client’s `RunInstances` fun
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
 
     Aws::EC2::Model::RunInstancesRequest runRequest;
@@ -65,14 +65,14 @@ To start an Amazon EC2 instance, call the EC2Client’s `StartInstances` functio
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/StartInstancesRequest.h>
 ```
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
 
     Aws::EC2::Model::StartInstancesRequest startRequest;
@@ -113,13 +113,13 @@ To stop an Amazon EC2 instance, call the EC2Client’s `StopInstances` function,
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/model/StopInstancesRequest.h>
 ```
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
     Aws::EC2::Model::StopInstancesRequest request;
     request.AddInstanceIds(instanceId);
@@ -158,7 +158,7 @@ To reboot an Amazon EC2 instance, call the EC2Client’s `RebootInstances` funct
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/RebootInstancesRequest.h>
 #include <iostream>
@@ -166,7 +166,7 @@ To reboot an Amazon EC2 instance, call the EC2Client’s `RebootInstances` funct
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
 
     Aws::EC2::Model::RebootInstancesRequest request;
@@ -209,7 +209,7 @@ Instances are grouped by *reservation*. Each reservation corresponds to the call
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/DescribeInstancesRequest.h>
 #include <aws/ec2/model/DescribeInstancesResponse.h>
@@ -219,7 +219,7 @@ Instances are grouped by *reservation*. Each reservation corresponds to the call
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
     Aws::EC2::Model::DescribeInstancesRequest request;
     bool header = false;
@@ -302,7 +302,7 @@ To start monitoring an instance, you must create a [MonitorInstancesRequest](htt
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/MonitorInstancesRequest.h>
 #include <aws/ec2/model/UnmonitorInstancesRequest.h>
@@ -311,7 +311,7 @@ To start monitoring an instance, you must create a [MonitorInstancesRequest](htt
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
     Aws::EC2::Model::MonitorInstancesRequest request;
     request.AddInstanceIds(instanceId);
@@ -353,7 +353,7 @@ To stop monitoring an instance, create an [UnmonitorInstancesRequest](https://do
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/MonitorInstancesRequest.h>
 #include <aws/ec2/model/UnmonitorInstancesRequest.h>
@@ -362,7 +362,7 @@ To stop monitoring an instance, create an [UnmonitorInstancesRequest](https://do
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
     Aws::EC2::Model::UnmonitorInstancesRequest unrequest;
     unrequest.AddInstanceIds(instanceId);

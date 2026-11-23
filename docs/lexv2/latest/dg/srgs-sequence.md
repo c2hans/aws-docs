@@ -8,7 +8,7 @@ The following example shows the supported sequences. For more information, see [
 
 **Example**
 
-```
+```xml
 <!-- sequence of tokens -->
 this is a test
 

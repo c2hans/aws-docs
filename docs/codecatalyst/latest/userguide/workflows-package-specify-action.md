@@ -72,7 +72,7 @@ Use the following instructions to specify a package configuration to use with a 
 
 1. In a **Build** or **Test** action, add code similar to the following:
 
-   ```
+   ```yaml
    {{action-name}}:
     Configuration:
        Packages:

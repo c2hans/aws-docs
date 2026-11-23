@@ -25,7 +25,7 @@ The `MessageThread` class is suitable to use as a data class for the [example Th
 #### Imports
 <a name="ddb-en-client-use-secindex-classimports"></a>
 
-```
+```java
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbBean;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbPartitionKey;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbSecondaryPartitionKey;
@@ -35,7 +35,7 @@ import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbSortK
 import java.util.List;
 ```
 
-```
+```java
 @DynamoDbBean
 public class MessageThread {
     private String ForumName;
@@ -163,7 +163,7 @@ However, if you use an SDK version prior to 2.20.86, you need to build the index
 
 This code configures all of the table attributes to end up in both indexes after comment lines 3 and 4. More information about [attribute projections](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LSI.html#LSI.Projections) is available in the *Amazon DynamoDB Developer Guide*.
 
-```
+```java
     public static void createMessageThreadTable(DynamoDbTable<MessageThread> messageThreadDynamoDbTable, DynamoDbClient dynamoDbClient) {
         messageThreadDynamoDbTable.createTable(b -> b
                 // 1. Generate the GSI.
@@ -194,7 +194,7 @@ You also configure the query to return three attribute values as shown after com
 
 Following comment line 6, iterate through the results and log each item returned by the query and also store it in the list to return to the caller.
 
-```
+```java
 public class IndexScanExamples {
     private static Logger logger = LoggerFactory.getLogger(IndexScanExamples.class);
 
@@ -270,7 +270,7 @@ The following example models an order table. The base table uses `orderId` as th
 #### Imports
 <a name="ddb-en-client-use-secindex-composite-annoimports"></a>
 
-```
+```java
 import software.amazon.awssdk.enhanced.dynamodb.mapper.Order;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbBean;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbPartitionKey;
@@ -278,7 +278,7 @@ import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbSecon
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbSecondarySortKey;
 ```
 
-```
+```java
 @DynamoDbBean
 public class OrderItem {
     private String orderId;
@@ -342,7 +342,7 @@ You create a [QueryConditional](https://sdk.amazonaws.com/java/api/latest/softwa
 
 The following examples query the *OrdersByStatusDateAmount* GSI, progressively adding sort keys to narrow the results.
 
-```
+```java
 DynamoDbIndex<OrderItem> index = orderTable.index("OrdersByStatusDateAmount");
 
 // All PENDING orders for customer-123.

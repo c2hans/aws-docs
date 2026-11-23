@@ -32,7 +32,7 @@ Data events are *not* logged by CloudTrail trails by default. To activate loggin
 
  The following is an example CloudTrail event for a `PutRecord` API call:
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

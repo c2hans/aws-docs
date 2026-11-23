@@ -6,7 +6,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
 # GetServiceRoleForAccountResponse
 
-```
+```json
 {
 "AssociatedAt": "string",
 "RoleArn": "string"

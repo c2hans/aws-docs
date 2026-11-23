@@ -20,7 +20,7 @@ For more information on using vector search with the AWS Management Console, see
 
 To create a vector search enabled MemoryDB cluster, you can use the MemoryDB [create-cluster](https://docs.aws.amazon.com/cli/latest/reference/memorydb/create-cluster.html) command by passing an immutable parameter group `default.memorydb-redis7.search` to enable the vector search capabilities.
 
-```
+```text
 aws memorydb create-cluster \
   --cluster-name {{<value>}} \
   --node-type {{<value>}} \

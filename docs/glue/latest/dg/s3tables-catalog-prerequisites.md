@@ -37,7 +37,7 @@ Your IAM principal needs the following permissions to enable S3 Tables integrati
 
 The following IAM policy provides the minimum permissions required to enable S3 Tables integration with the Data Catalog in IAM mode:
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [

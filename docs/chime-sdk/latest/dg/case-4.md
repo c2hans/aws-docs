@@ -8,7 +8,7 @@ You use the `ReceiveDigits` action to collect inbound DTMF digits and match them
 
 For example:
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": 4,
@@ -46,7 +46,7 @@ For example:
 
 Once the caller enters digits that match your regular expression pattern, the SIP media application invokes an AWS Lambda function that returns the following type of payload:
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": 5,

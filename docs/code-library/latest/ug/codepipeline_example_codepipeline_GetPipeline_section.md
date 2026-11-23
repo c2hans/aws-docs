@@ -95,7 +95,7 @@ For more information, see [View pipeline details and history (CLI)](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example gets general information about the specified pipeline.**
 
-```
+```powershell
 Get-CPPipeline -Name CodePipelineDemo -Version 1
 ```
 **Output:**
@@ -109,7 +109,7 @@ Version       : 1
 ```
 **Example 2: This example gets detailed information about the specified pipeline.**
 
-```
+```powershell
 $pipeline = Get-CPPipeline -Name CodePipelineDemo
 Write-Output ("Name = " + $pipeline.Name)
 Write-Output ("RoleArn = " + $pipeline.RoleArn)
@@ -212,7 +212,7 @@ Stages:
 **Tools for PowerShell V5**
 **Example 1: This example gets general information about the specified pipeline.**
 
-```
+```powershell
 Get-CPPipeline -Name CodePipelineDemo -Version 1
 ```
 **Output:**
@@ -226,7 +226,7 @@ Version       : 1
 ```
 **Example 2: This example gets detailed information about the specified pipeline.**
 
-```
+```powershell
 $pipeline = Get-CPPipeline -Name CodePipelineDemo
 Write-Output ("Name = " + $pipeline.Name)
 Write-Output ("RoleArn = " + $pipeline.RoleArn)

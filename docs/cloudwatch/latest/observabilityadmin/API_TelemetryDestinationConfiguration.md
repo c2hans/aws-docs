@@ -38,7 +38,7 @@ Pattern: `arn:aws[a-zA-Z-]*:kms:[a-z0-9-]+:\d{12}:key/(mrk-)?[a-f0-9-]+`
 Required: No
 
  ** LogDeliveryParameters **   <a name="cwoa-Type-TelemetryDestinationConfiguration-LogDeliveryParameters"></a>
-The configuration parameters for log delivery when the resource type supports configurable log types, such as Amazon Bedrock Knowledge Bases or Elastic Load Balancing Application Load Balancers.
+The configuration parameters for log delivery when the resource type supports configurable log types, such as Amazon Bedrock Knowledge Bases, Amazon Bedrock AgentCore payment managers, or Elastic Load Balancing Application Load Balancers.
 Type: [LogDeliveryParameters](API_LogDeliveryParameters.md) object
 Required: No
 

@@ -8,7 +8,7 @@ If you set up your gateway target with an authorization code grant (for more inf
 
 You can use the `_meta` field in the `params` object of the request body to modify default configurations. With 3LO authentication, you map the `_meta` field to the following object:
 
-```
+```json
 {
     "aws.bedrock-agentcore.gateway/credentialProviderConfiguration": {
         "oauthCredentialProvider": {
@@ -25,7 +25,7 @@ You can do the following:
 
 For example, the following request would call the `LinkedIn3LO___gateUserInfo` tool through the gateway target, force the user to authenticate with a new authorization URL, and redirect the user to `https://your-public-domain.com/callback` after authentication:
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "id": 24,

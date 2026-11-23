@@ -59,7 +59,7 @@ The diagonal line in the matrix (A:A, B:B, X:X, and Y:Y) shows the accurate pred
 
 The classifier returns the confusion matrix as a file in JSON format. The following JSON file represents the matrix for the previous example.
 
-```
+```json
 {
  "type": "multi_class",
  "confusion_matrix": [
@@ -101,7 +101,7 @@ In this case, the model accurately predicted `Comedy` labels 80% of the time (TP
 
 The classifier returns the confusion matrix as a file in JSON format. The following JSON file represents the matrix for the previous example.
 
-```
+```json
 {
 "type": "multi_label",
 "confusion_matrix": [

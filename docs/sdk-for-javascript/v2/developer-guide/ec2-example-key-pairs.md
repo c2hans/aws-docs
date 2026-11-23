@@ -37,7 +37,7 @@ To set up and run this example, first complete these tasks:
 
 Create a Node.js module with the file name `ec2_describekeypairs.js`. Be sure to configure the SDK as previously shown. To access Amazon EC2, create an `AWS.EC2` service object. Create an empty JSON object to hold the parameters needed by the `describeKeyPairs` method to return descriptions for all your key pairs. You can also provide an array of names of key pairs in the `KeyName` portion of the parameters in the JSON file to the `describeKeyPairs` method.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -58,7 +58,7 @@ ec2.describeKeyPairs(function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```sh
 node ec2_describekeypairs.js
 ```
 
@@ -69,7 +69,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Each key pair requires a name. Amazon EC2 associates the public key with the name that you specify as the key name. Create a Node.js module with the file name `ec2_createkeypair.js`. Be sure to configure the SDK as previously shown. To access Amazon EC2, create an `AWS.EC2` service object. Create the JSON parameters to specify the name of the key pair, then pass them to call the `createKeyPair` method.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -94,7 +94,7 @@ ec2.createKeyPair(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```sh
 node ec2_createkeypair.js
 ```
 
@@ -105,7 +105,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `ec2_deletekeypair.js`. Be sure to configure the SDK as previously shown. To access Amazon EC2, create an `AWS.EC2` service object. Create the JSON parameters to specify the name of the key pair you want to delete. Then call the `deleteKeyPair` method.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -130,7 +130,7 @@ ec2.deleteKeyPair(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```sh
 node ec2_deletekeypair.js
 ```
 

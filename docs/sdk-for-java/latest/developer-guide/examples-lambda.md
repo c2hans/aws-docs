@@ -20,7 +20,7 @@ To pass payload data to a function, create a [`SdkBytes`](https://sdk.amazonaws.
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.services.lambda.LambdaClient;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.lambda.model.InvokeRequest;
@@ -33,7 +33,7 @@ import software.amazon.awssdk.services.lambda.model.LambdaException;
 
 The following code example demonstrates how to invoke a Lambda function.
 
-```
+```java
     public static void invokeFunction(LambdaClient awsLambda, String functionName) {
 
          InvokeResponse res = null ;
@@ -68,7 +68,7 @@ Build a `[LambdaClient](https://sdk.amazonaws.com/java/api/latest/software/amazo
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.lambda.LambdaClient;
 import software.amazon.awssdk.services.lambda.model.LambdaException;
@@ -81,7 +81,7 @@ import java.util.List;
 
 The following Java code example demonstrates how to retrieve a list of function names.
 
-```
+```java
     public static void listFunctions(LambdaClient awsLambda) {
 
         try {
@@ -108,7 +108,7 @@ Build a [`LambdaClient`](https://sdk.amazonaws.com/java/api/latest/software/amaz
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.services.lambda.LambdaClient;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.lambda.model.DeleteFunctionRequest;
@@ -119,7 +119,7 @@ import software.amazon.awssdk.services.lambda.model.LambdaException;
 
 The following Java code demonstrates how to delete a Lambda function.
 
-```
+```java
     public static void deleteLambdaFunction(LambdaClient awsLambda, String functionName ) {
         try {
             DeleteFunctionRequest request = DeleteFunctionRequest.builder()

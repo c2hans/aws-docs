@@ -23,7 +23,7 @@ You upload objects to Amazon S3 by using the [PutObject](https://docs.aws.amazon
 
 The following code snippet shows a request to upload an object with a CRC-32 checksum. When the SDK sends the request, it calculates the CRC-32 checksum and uploads the object. Amazon S3 stores the checksum with the object.
 
-```
+```javascript
 import { ChecksumAlgorithm, S3 } from "@aws-sdk/client-s3";
 
 const client = new S3();
@@ -53,7 +53,7 @@ A pre-calculated checksum value provided with the request disables automatic com
 
 The following example shows a request with a pre-calculated SHA-256 checksum.
 
-```
+```javascript
 import { S3 } from "@aws-sdk/client-s3";
 import { createHash } from "node:crypto";
 
@@ -77,7 +77,7 @@ If Amazon S3 determines the checksum value is incorrect for the specified algori
 
 You can also use checksums with multipart uploads. The AWS SDK for JavaScript can use the `Upload` library options to from `@aws-sdk/lib-storage` to use checksums with multipart uploads.
 
-```
+```javascript
 import { ChecksumAlgorithm, S3 } from "@aws-sdk/client-s3";
 import { Upload } from "@aws-sdk/lib-storage";
 import { createReadStream } from "node:fs";

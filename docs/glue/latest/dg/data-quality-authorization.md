@@ -76,7 +76,7 @@ The AWS Glue and AWS EventBridge Scheduler services need to be listed in the tru
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -119,7 +119,7 @@ The following identity-based policy allows a user to manage evaluation configura
 + `iam:PassRole` for the configuration's role. You need this permission whenever you specify the role in a create or update request.
 + Actions to read evaluation runs and results.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -182,7 +182,7 @@ If you use your own rulesets, also allow `glue:CreateDataQualityRuleset` and `gl
 
 If a configuration applies to an Amazon S3 Tables catalog, also allow `lakeformation:GetDataAccess`, and add the Amazon S3 Tables forms of the catalog, database, and table ARNs to the `DescribeConfigurationTargets` statement. For example, for every table bucket in the account, add the following resources:
 
-```
+```JSON
 "arn:aws:glue:{{us-east-1}}:111122223333:catalog/s3tablescatalog",
 "arn:aws:glue:{{us-east-1}}:111122223333:catalog/s3tablescatalog/*",
 "arn:aws:glue:{{us-east-1}}:111122223333:database/s3tablescatalog/*",
@@ -198,7 +198,7 @@ AWS Glue assumes the configuration's role to find tables and to start each evalu
 
 AWS Glue sets [aws:SourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) to your catalog's ARN or a table's ARN, and [aws:SourceAccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount) to your account ID. The trust policy must allow both ARN forms. When you create or update a configuration, AWS Glue checks that it can assume the role with each form.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -235,7 +235,7 @@ The configuration's role needs permissions for each of the following tasks:
 
 Attach the following permissions policy to the role. Replace the bucket with the locations of your tables' data.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -333,7 +333,7 @@ This example policy includes the permissions you need in order to generate recom
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -394,7 +394,7 @@ Use this trust policy to allow AWS Glue to assume the recommendation role for yo
 
 Set [aws:SourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) to the full source table ARN. Use the account ID from that ARN for [aws:SourceAccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount).
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -428,7 +428,7 @@ For subsequent runs, AWS Glue reuses the existing workgroup and bucket. For deta
 
 Attach the following permissions policy to your recommendation role.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -509,7 +509,7 @@ If a condition in this list applies, add the related permissions to your recomme
 + If you specify `CreatedRulesetName`, add `glue:CreateDataQualityRuleset` permission.
 + If you specify a data quality security configuration with a customer managed key, add the following statement for that key.
 
-  ```
+  ```JSON
   {
     "Sid": "AllowDataQualityEncryption",
     "Effect": "Allow",
@@ -527,7 +527,7 @@ If a condition in this list applies, add the related permissions to your recomme
   Your recommendation role needs these actions for query result encryption and AWS Glue Data Quality asset encryption. The key policy must also allow these actions for your role. For details, see [Key policy](data-quality-encryption.md#data-quality-encryption-customer-managed-key-policy).
 + If the source objects use SSE-KMS, add the following statement.
 
-  ```
+  ```JSON
   {
     "Sid": "AllowSourceDataDecryption",
     "Effect": "Allow",
@@ -552,7 +552,7 @@ The following policy statements are optional, depending on your use case:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -629,7 +629,7 @@ The following policy statements are optional, depending on your use case:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

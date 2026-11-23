@@ -29,7 +29,7 @@ There are two kinds of skills:
 ### Step 1: Create the skill
 <a name="catalog-skill-assets-create-skill"></a>
 
-```
+```bash
 aws glue put-asset \
     --asset-type-id "amazon::Skill" \
     --identifier "sales-table-skill" \
@@ -40,7 +40,7 @@ aws glue put-asset \
 ### Step 2: Associate the skill with a table
 <a name="catalog-skill-assets-create-associate"></a>
 
-```
+```bash
 aws glue put-attachment \
     --asset-identifier "arn:aws:glue:us-east-1:123456789012:table/mydb/sales_transactions" \
     --attachment-name relatedTo \
@@ -53,7 +53,7 @@ aws glue put-attachment \
 
 Relationships use the built-in `amazon::RelatedTo` form. A relation declared on either asset surfaces symmetrically for both in relationship-based search.
 
-```
+```json
 { "assetIdentifiers": ["<related-asset-id>"] }
 ```
 
@@ -62,7 +62,7 @@ Attach inline when creating the asset (`PutAsset --forms`) or afterward (`PutAtt
 ## Searching for skill assets
 <a name="catalog-skill-assets-list"></a>
 
-```
+```bash
 aws glue search-assets \
     --filter-clause '{"AttributeFilter":{"Attribute":"type","Operator":"equals","Value":{"StringValue":"Skill"}}}' \
     --max-results 20
@@ -79,7 +79,7 @@ Reference the following Amazon-owned skills by ID:
 ## Deleting a skill asset
 <a name="catalog-skill-assets-delete"></a>
 
-```
+```bash
 aws glue delete-asset \
     --identifier {{skill-asset-id}}
 ```

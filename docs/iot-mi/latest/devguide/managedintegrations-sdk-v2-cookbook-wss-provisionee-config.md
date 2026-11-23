@@ -99,7 +99,7 @@ Enable WSS for devices using CreateManagedThing API during account linking.
 ### Device registration
 <a name="managedintegrations-sdk-v2-cookbook-wss-device-registration"></a>
 
-```
+```json
 {
   "role": "DEVICE",
   "credentialLockerId": "ad5cdc9f786b4dbe9490e57c0b1d900e",
@@ -125,7 +125,7 @@ Enable WSS for devices using CreateManagedThing API during account linking.
 
 Use UpdateManagedThing to retry after initial failure:
 
-```
+```json
 {
   "managedThingId": "existing-device-id",
   "wiFiSimpleSetupConfiguration": {
@@ -179,7 +179,7 @@ Cloud processing automatically:
 
 **GetManagedThing response example:**
 
-```
+```json
 {
   "managedThingId": "device-id",
   "role": "DEVICE",
@@ -263,7 +263,7 @@ If initial WSS setup fails, retry using UpdateManagedThing API.
 
 **Step 2: Retry via UpdateManagedThing**
 
-```
+```json
 {
   "managedThingId": "device-managed-thing-id",
   "wiFiSimpleSetupConfiguration": {
@@ -301,7 +301,7 @@ Disable or permanently remove WSS for a provisionee device.
 ### Using UpdateManagedThing API
 <a name="managedintegrations-sdk-v2-cookbook-wss-using-update"></a>
 
-```
+```json
 {
   "managedThingId": "device-managed-thing-id",
   "wiFiSimpleSetupConfiguration": {
@@ -313,7 +313,7 @@ Disable or permanently remove WSS for a provisionee device.
 ### Using DeleteManagedThing API
 <a name="managedintegrations-sdk-v2-cookbook-wss-using-delete"></a>
 
-```
+```json
 {
   "managedThingId": "device-managed-thing-id"
 }

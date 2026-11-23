@@ -14,7 +14,7 @@ Once the user provides the feedback, the feedback is stored in an S3 bucket part
 
 The user feedback is sent as an API request containing a minimal set of information:
 
-```
+```json
 {
   "useCaseRecordKey": "a1b2c3d4-e5f6g7h8",
   "conversationId": "12345678-1234-1234-1234-123456789012",
@@ -34,7 +34,7 @@ The user feedback is sent as an API request containing a minimal set of informat
 
 This payload is then processed by a lambda using the `useCaseRecordKey` which identifies the correct configuration of a usecase at the time of deployment. This configuration is used to get specific details for the feedback such as the ConversationTable’s name (contains all the conversations and human and AI message sequences) which is further used to retrieve the the actual `userInput` and `llmResponse`. Additional details are also attached to this feedback record such as the `agentId` and `agentAliasId` for a Bedrock Agent usecase, and `modelProvider`, `bedrockModelId`, etc. for a Text usecase using this configuration. For details on how to access this configuration, see [Custom Feedback Mappings](#custom-feedback-mappings) section below. Each incoming feedback request is stored as a JSON object and a sample feedback record can look like this for a Text usecase:
 
-```
+```json
 {
    "useCaseId": "12345678-1234-1234-1234-123456789012",
    "useCaseRecordKey": "c07a2e3b-2f31b1e0",
@@ -60,7 +60,7 @@ This payload is then processed by a lambda using the `useCaseRecordKey` which id
 
 or like this for a Bedrock Agent usecase:
 
-```
+```json
 {
    "useCaseId": "12345678-1234-1234-1234-123456789012",
    "useCaseRecordKey": "c07a2e3b-2f31b1e0",
@@ -89,7 +89,7 @@ This feedback can then be used for further processing, analyzing and model re-tr
 
 The Deployment Dashboard contains a `LLMConfigTable` which can be found in the stack outputs of the Deployment Dashboard stack with the key `LLMConfigTableName`. `LLMConfigTable` contains the configurations for each usecase based on the settings selected by the admin while deploying the usecase through the Deployment Dashboard wizard. Each usecase configuration is identified by its `useCaseRecordKey`. Here is a sample usecase configuration record in the `LLMConfigTable`:
 
-```
+```json
 {
    "key": "2dd76cfa-bc1a14da",
    "config": {

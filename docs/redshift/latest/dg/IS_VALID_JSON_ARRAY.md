@@ -37,7 +37,7 @@ A string or expression that evaluates to a JSON array.
 
 To create a table and insert JSON strings for testing, use the following example.
 
-```
+```sql
 CREATE TABLE test_json_arrays(id int IDENTITY(0,1), json_arrays VARCHAR);
 
 -- Insert valid JSON array strings --
@@ -55,7 +55,7 @@ VALUES('{"a":1}'),
 
 To validate the strings in the preceding example, use the following example.
 
-```
+```sql
 SELECT json_arrays, IS_VALID_JSON_ARRAY(json_arrays)
 FROM test_json_arrays ORDER BY id;
 

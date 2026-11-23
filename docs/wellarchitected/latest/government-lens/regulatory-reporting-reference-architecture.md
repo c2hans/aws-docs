@@ -13,3 +13,5 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/r
 +  They use data catalogs with fine-grained access control and entitlements.
 
 ![Reference architecture diagram showing a regulatory reporting solution regulatory reporting solution to provide structured output data from a variety of disparate sources. The architecture describes ingesting files and data from on-premises and external sources.](https://docs.aws.amazon.com/wellarchitected/latest/government-lens/images/reg-reporting.png)
+
+*Figure 3: Reference architecture for a regulatory reporting solution*

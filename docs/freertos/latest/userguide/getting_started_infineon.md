@@ -195,13 +195,13 @@ On the final page of the installation wizard, select **Add path to environment v
 
 1. Change directories to your FreeRTOS download directory (`{{freertos}}`), and use the following command to generate the build files:
 
-   ```
+   ```bash
    cmake -DVENDOR=infineon -DBOARD=xmc4800_iotkit -DCOMPILER=arm-gcc -S . -B {{build-folder}} -G "MinGW Makefiles" -DAFR_ENABLE_TESTS=0
    ```
 
 1. Change directories to the build directory ({{build-folder}}), and use the following command to build the binary:
 
-   ```
+   ```bash
    cmake --build . --parallel 8
    ```
 
@@ -211,25 +211,25 @@ On the final page of the installation wizard, select **Add path to environment v
 
    1. From the build directory ({{build-folder}}), use the following commands to create a flash script:
 
-      ```
+      ```bash
       echo loadfile aws_demos.hex > flash.jlink
       ```
 
-      ```
+      ```bash
       echo r >> flash.jlink
       ```
 
-      ```
+      ```bash
       echo g >> flash.jlink
       ```
 
-      ```
+      ```bash
       echo q >> flash.jlink
       ```
 
    1. Flash the image using the JLNIK executable.
 
-      ```
+      ```bash
       {{JLINK_PATH}}\JLink.exe  -device XMC4800-2048 -if SWD -speed auto -CommanderScript flash.jlink
       ```
 

@@ -10,7 +10,7 @@ You can save time on large data file compression by uploading model and data out
 
 The following code example shows how to create a training job in uncompressed upload mode when using the AWS CLI. To enable uncompressed upload mode, set `CompressionType` field in the `OutputDataConfig` API to **NONE**.
 
-```
+```json
 {
    "TrainingJobName": "{{uncompressed_model_upload}}",
    ...
@@ -24,7 +24,7 @@ The following code example shows how to create a training job in uncompressed up
 
 The following code example shows you how to create a training job in uncompressed upload mode using the SageMaker Python SDK.
 
-```
+```py
 from sagemaker.train import ModelTrainer
 from sagemaker.train.configs import Compute
 from sagemaker.core.helper.session_helper import Session, get_execution_role

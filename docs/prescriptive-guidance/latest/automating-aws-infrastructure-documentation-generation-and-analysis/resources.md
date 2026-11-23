@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automating-
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS resources
 <a name="9999999999999999aws--resources.943bc210-9c52-501b-b72b-f8a843d4e02b"></a>

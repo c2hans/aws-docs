@@ -39,7 +39,7 @@ Known issue resolution provides instructions to mitigate known errors. If these 
 + Modify the user profile name in datascience-team.yaml
 + Change the <my-own-data-science-profile-name> to something custom that you can identify
 
-```
+```yaml
      userProfiles:
               # The key/name of the user profile should be specified as follows:
               # If the Domain is in SSO auth mode, this should map to an SSO User ID.
@@ -73,7 +73,7 @@ Error: ENOENT: no such file or directory
 
 1. Add the sample configuration values as below:
 
-```
+```yaml
 # List of roles which will be provided admin access to the team resources
 dataAdminRoles:
 - id: generated-role-id:data-admin
@@ -133,7 +133,7 @@ at /Users/xxxx/Documents/MDAA/packages/utilities/mdaa-config/lib/config.ts:165:3
 
 1. Run the deployment again after the values are changed
 
-```
+```yaml
 # Set a unique organization name, for example: acme-datalake
 # Failure to do so may result in global naming conflicts.
 organization: trial-datalake-lk

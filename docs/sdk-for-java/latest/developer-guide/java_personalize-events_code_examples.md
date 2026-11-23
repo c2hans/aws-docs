@@ -24,7 +24,7 @@ The following code example shows how to use `PutEvents`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
         public static int putItems(PersonalizeEventsClient personalizeEventsClient,
                         String datasetArn,
                         String item1Id,
@@ -79,7 +79,7 @@ The following code example shows how to use `PutUsers`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
         public static int putUsers(PersonalizeEventsClient personalizeEventsClient,
                         String datasetArn,
                         String user1Id,

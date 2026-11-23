@@ -12,6 +12,8 @@ This shared model can help relieve the customer’s operational burden as AWS op
 
 ![A diagram depicting the AWS Shared Responsibility Model.](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/images/figure-3.png)
 
+**AWS Shared Responsibility Model**
+
 For DevOps, assign permissions based on the [least-privilege permissions](https://aws.amazon.com/blogs/security/how-to-define-least-privileged-permissions-for-actions-called-by-aws-services/) model. This model states that “a user (or service)**should have the exact access rights necessary to complete their role's responsibilities—no more, no less. ”.
 
 Permissions are maintained in IAM. You can use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.

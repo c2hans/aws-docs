@@ -117,7 +117,7 @@ You can use an existing manifest file, such as the output from an [SageMaker AI 
    + `bucket` — the bucket that contains the manifest file for the dataset.
    + `manifest_file` — the path and file name of the manifest file.
 
-   ```
+   ```python
    #Copyright 2023 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    #PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-custom-labels-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -258,7 +258,7 @@ You can use an existing manifest file, such as the output from an [SageMaker AI 
    + `bucket` — the bucket that contains the manifest file for the dataset.
    + `manifest_file` — the path and file name of the manifest file.
 
-   ```
+   ```java
    /*
       Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
       SPDX-License-Identifier: Apache-2.0

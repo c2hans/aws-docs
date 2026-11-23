@@ -126,6 +126,7 @@ A setting for records that determines how Route 53 responds to DNS queries. Rou
 + **IP-based routing policy** – Use when you want to route traffic based on the location of your users, and have the IP addresses that the traffic originates from.
 + **Multivalue answer routing policy** – Use when you want Route 53 to respond to DNS queries with up to eight healthy records selected at random.
 + **Weighted routing policy** – Use to route traffic to multiple resources in proportions that you specify.
++ **AZ-affinity routing policy** – Use when you want to route traffic to resources in the same Availability Zone (AZ), Zone Group, or AWS Region that the query comes from, with automatic fallback to a less specific location.
 For more information, see [Choosing a routing policy](routing-policy.md).
 
 **subdomain**

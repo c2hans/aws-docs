@@ -27,7 +27,7 @@ If you are unfamiliar with using CORS configuration with an Amazon S3 bucket, it
 
 Create a new Go file named `s3_set_cors.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "flag"
     "fmt"
@@ -44,7 +44,7 @@ This routine configures CORS rules for a bucket by setting the allowed HTTP meth
 
 It requires the bucket name and can also take a space-separated list of HTTP methods. Using the Go Language’s `flag` package, it parses the input and validates the bucket name.
 
-```
+```go
 bucketPtr := flag.String("b", "", "Bucket to set CORS on, (required)")
 
 flag.Parse()
@@ -58,7 +58,7 @@ methods := filterMethods(flag.Args())
 
 Notice the helper method, `filterMethods`, which ensures the methods passed in are uppercase.
 
-```
+```go
 func filterMethods(methods []string) []string {
     filtered := make([]string, 0, len(methods))
     for _, m := range methods {
@@ -75,7 +75,7 @@ func filterMethods(methods []string) []string {
 
 Initialize a session that the SDK will use to load credentials, from the shared credentials file, `~/.aws/credentials`, and create a new S3 service client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -85,7 +85,7 @@ svc := s3.New(sess)
 
 Create a new [CORSRule](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#CORSRule) to set up the CORS configuration.
 
-```
+```go
 rule := s3.CORSRule{
     AllowedHeaders: aws.StringSlice([]string{"Authorization"}),
     AllowedOrigins: aws.StringSlice([]string{"*"}),
@@ -98,7 +98,7 @@ rule := s3.CORSRule{
 
 Add the `CORSRule` to the `PutBucketCorsInput` structure, call `PutBucketCors` with that structure, and print a success or error message.
 
-```
+```go
 params := s3.PutBucketCorsInput{
     Bucket: bucketPtr,
     CORSConfiguration: &s3.CORSConfiguration{
@@ -118,7 +118,7 @@ fmt.Printf("Updated bucket %q CORS for %v\n", *bucketPtr, methods)
 
 The example uses the following error function.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)

@@ -33,7 +33,7 @@ To create a static provider, supply an encryption key or key pair and a signing 
 ------
 #### [ Java ]
 
-```
+```java
 // To encrypt
 SecretKey cek = ...;        // Encryption key
 SecretKey macKey =  ...;    // Signing key
@@ -48,7 +48,7 @@ EncryptionMaterialsProvider provider = new SymmetricStaticProvider(cek, macKey);
 ------
 #### [ Python ]
 
-```
+```python
 # You can provide encryption materials, decryption materials, or both
 encrypt_keys = EncryptionMaterials(
     encryption_key = ...,

@@ -12,7 +12,7 @@ The AWS SDK for Python v4 doesn't provide presigned URLs, paginators, waiters, o
 
 Install the Amazon S3 client package.
 
-```
+```bash
 python -m pip install aws-sdk-s3
 ```
 
@@ -27,13 +27,13 @@ For Amazon S3-specific endpoint settings, such as `force_path_style`, see [Amazo
 
  **Imports**
 
-```
+```python
 from aws_sdk_s3 import S3Client, S3Config
 ```
 
  **Code**
 
-```
+```python
 def create_client() -> S3Client:
     config = S3Config.resolve()
     return S3Client(config=config)

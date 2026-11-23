@@ -16,7 +16,7 @@ This configuration requires a [NAT gateway](https://docs.aws.amazon.com/vpc/late
 
  The configuration to use an existing private subnet for compute instances requires the following settings:
 
-```
+```yaml
 # Note that all values are only provided as examples
 HeadNode:
   ...

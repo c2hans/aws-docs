@@ -13,7 +13,7 @@ The IAM policy that's attached to your IAM role must include at least the follow
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -41,7 +41,7 @@ Ensure that your role has the following trust policy, which allows the flow logs
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -100,7 +100,7 @@ You can update an existing role as described above. Alternatively, you can use t
 
 1. For **Trusted entity type**, choose **Custom trust policy**. For **Custom trust policy**, replace `"Principal": {},` with the following, then and choose **Next**.
 
-   ```
+   ```json
    "Principal": {
       "Service": "vpc-flow-logs.amazonaws.com"
    },

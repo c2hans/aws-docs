@@ -122,7 +122,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of GetAgentAlias.
 
-```
+```json
 GET /agents/ABCDEFGHIJ/agentaliases/ABCDEFGHIJ/ HTTP/1.1
 ```
 

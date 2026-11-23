@@ -11,7 +11,7 @@ S3 Transfer Manager provides built-in progress tracking capabilities.
 
 You can enable tracking for all operations (file and directory) by setting `track_progress` to `true` on the `S3TransferManager` instance.
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\S3TransferManager;
@@ -34,7 +34,7 @@ With this setting, the SDK uses the built-in `SingleProgressTracker`{{<add link>
 If you didn't enable progress tracking on the transfer manager, you can enable tracking on an individual method in two ways.
 Set `track_progress` to `true` in the `$config` array for a specific file operation.
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\UploadDirectoryRequest;
@@ -61,7 +61,7 @@ $uploadDirPromise = $transferManager->uploadDirectory(
 
 Create a new `SingleProgressTracker` instance or provide a custom implementation of `AbstractTransferListener`. Pass your tracker to the file operations as the `$progressTracker` parameter.
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\UploadRequest;
@@ -99,7 +99,7 @@ If you didn't enable progress tracking on the transfer manager, you can enable i
 
 Set 'track\_progress' to `true` in the method's `$config` array argument.
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\UploadDirectoryRequest;
@@ -126,7 +126,7 @@ $uploadDirPromise = $transferManager->uploadDirectory(
 
 Create a new `MultiProgressTracker` instance and pass it to the directory operations as the `$progressTracker` parameter.
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\UploadDirectoryRequest;
@@ -164,7 +164,7 @@ You can implement your own progress tracking for file operations. Create a class
 
 The following implementation displays progress information in text format for a single file operation:
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\UploadRequest;
@@ -253,7 +253,7 @@ The example changes:
 + the character from the default "\#" to "="
 + bar width from the default of 50 to 100
 
-```
+```php
 <?php
 
 use Aws\S3\S3Client;
@@ -305,7 +305,7 @@ The example changes:
 + bar width from the default of 50 to 25
 + the default `progressBarFormat` instance from `ColoredTransferProgressBarFormat` to `PlainProgressBarFormat`
 
-```
+```php
 <?php
 
 use Aws\S3\S3Client;
@@ -353,7 +353,7 @@ The following image shows console output for a customized built-in `ConsoleProgr
 
 The following example customizes the default progress bar by using a new bar format (extending `ProgressBarFormat`{{<add link>}}) instead of customizing a built-in format.
 
-```
+```php
 <?php
 
 use Aws\S3\S3Client;
@@ -435,6 +435,6 @@ A custom bar format accepts several parameters:
 
 You can combine the delimited (pipe character) parameter names to customize the output. The example uses the following template. The `getFormatTemplate` method of the `PercentBarFormat` class returns this template:
 
-```
+```php
 "|object_name| - |percent|% [|transferred| |unit|ytes]"
 ```

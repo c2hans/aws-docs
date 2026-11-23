@@ -8,14 +8,14 @@ To check which record distribution strategy a stream is currently using, call th
 
 **Example Check record distribution strategy (AWS CLI)**
 
-```
+```bash
 aws kinesis describe-stream-summary \
     --stream-arn arn:aws:kinesis:us-east-1:111122223333:stream/my-telemetry-stream
 ```
 
 The response includes:
 
-```
+```json
 {
     "StreamDescriptionSummary": {
         "StreamName": "my-telemetry-stream",

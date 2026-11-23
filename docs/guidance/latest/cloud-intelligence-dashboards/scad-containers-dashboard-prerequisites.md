@@ -77,7 +77,7 @@ To validate that the new Split Cost Allocation Data columns exist in CUR:
 Run the following Athena query against the CUR 2.0 table:
 EKS cost allocation tags columns (relevant only if you’re using EKS):
 
-```
+```sql
 SELECT DISTINCT "key"
 FROM "<table_name>"
 CROSS JOIN UNNEST(MAP_KEYS("resource_tags")) AS "t"("key")
@@ -85,7 +85,7 @@ WHERE "key" LIKE 'aws_eks%'
 ```
 Expected result:
 
-```
+```bash
 +---+-----------------------+
 | # |          key          |
 +---+-----------------------+
@@ -99,7 +99,7 @@ Expected result:
 ```
 ECS cost allocation tags columns (relevant only if you’re using ECS):
 
-```
+```sql
 SELECT DISTINCT "key"
 FROM "<table_name>"
 CROSS JOIN UNNEST(MAP_KEYS("resource_tags")) AS "t"("key")
@@ -107,7 +107,7 @@ WHERE "key" LIKE 'aws_ecs%'
 ```
 Expected result:
 
-```
+```bash
 +---+----------------------+
 | # |         key          |
 +---+----------------------+
@@ -117,7 +117,7 @@ Expected result:
 ```
 AWS Batch cost allocation tags columns (relevant only if you’re using AWS Batch on ECS):
 
-```
+```sql
 SELECT DISTINCT "key"
 FROM "<table_name>"
 CROSS JOIN UNNEST(MAP_KEYS("resource_tags")) AS "t"("key")
@@ -125,7 +125,7 @@ WHERE "key" LIKE 'aws_batch%'
 ```
 Expected result:
 
-```
+```bash
 +---+-------------------------------+
 | # |              key              |
 +---+-------------------------------+

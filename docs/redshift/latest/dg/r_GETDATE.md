@@ -27,7 +27,7 @@ TIMESTAMP
 
 The following example uses the GETDATE function to return the full timestamp for the current date.
 
-```
+```sql
 select getdate();
 
 timestamp
@@ -37,7 +37,7 @@ timestamp
 
 The following example uses the GETDATE function inside the TRUNC function to return the current date without the time.
 
-```
+```sql
 select trunc(getdate());
 
 trunc

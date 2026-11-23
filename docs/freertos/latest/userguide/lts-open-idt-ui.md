@@ -12,7 +12,7 @@ This topic explains how to open the IDT for FreeRTOS UI to use the FreeRTOS qual
 
 1. Navigate to the IDT for FreeRTOS installation directory:
 
-   ```
+   ```bash
    cd {{devicetester-extract-location}}/bin
    ```
 
@@ -21,21 +21,21 @@ This topic explains how to open the IDT for FreeRTOS UI to use the FreeRTOS qual
 ------
 #### [ Linux ]
 
-   ```
+   ```bash
    .devicetester_ui_linux_x86-64
    ```
 
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    ./devicetester_ui_win_x64-64
    ```
 
 ------
 #### [ macOS ]
 
-   ```
+   ```bash
    ./devicetester_ui_mac_x86-64
    ```
 

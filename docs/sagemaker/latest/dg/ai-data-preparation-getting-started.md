@@ -20,13 +20,13 @@ Before you run a job, you need the following:
 
 SageMaker AI Data Preparation requires version 3.30.0 or later of the Amazon SageMaker Python SDK (`sagemaker` on PyPI), which requires Python 3.10 or later. Jobs are also submitted through `botocore`, which must be recent enough to include the data preparation APIs. To install or upgrade both, run the following command in the Python environment that you run jobs from:
 
-```
+```bash
 python -m pip install -U 'sagemaker>=3.30.0,<4.0' boto3
 ```
 
 To check the installed version, run the following command:
 
-```
+```bash
 python -c "from importlib.metadata import version; print(version('sagemaker'))"
 ```
 
@@ -35,7 +35,7 @@ python -c "from importlib.metadata import version; print(version('sagemaker'))"
 
 Jobs read their execution role and default Amazon S3 bucket from the SDK configuration file, so you don't pass them in every job. On Linux, including Studio, create `~/.config/sagemaker/config.yaml` with the following content:
 
-```
+```yaml
 SageMaker:
   PythonSDK:
     Modules:
@@ -59,7 +59,7 @@ Jobs run by assuming the execution role in your account. The role needs a trust 
 
 The trust policy must trust the SageMaker AI service principal, `sagemaker.amazonaws.com`:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -76,7 +76,7 @@ The trust policy must trust the SageMaker AI service principal, `sagemaker.amazo
 
 The following permissions policy grants what jobs need. Replace the bucket, Region, account ID, and hub name with your own:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -128,7 +128,7 @@ Human-in-the-loop annotation uses its own permissions for the labeling space. Fo
 
 Each job is configured with a `DatasetJobConfig`. To list every field that a job type accepts, run `print_schema()` with its job category. The schema comes from the service, so it lists the fields that the service currently accepts:
 
-```
+```python
 from sagemaker.ai_registry import DatasetJobConfig, JobCategory
 
 DatasetJobConfig.print_schema(JobCategory.SYNTHETIC_DATA_GENERATION)
@@ -138,7 +138,7 @@ DatasetJobConfig.print_schema(JobCategory.DATA_TRANSFORMATION)
 
 To start from a configuration with the required fields marked, use `from_template()`. Required top-level fields that you still need to set show as `<SET_ME>`:
 
-```
+```python
 config = DatasetJobConfig.from_template(JobCategory.SYNTHETIC_DATA_GENERATION)
 print(config)
 ```

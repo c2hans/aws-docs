@@ -216,13 +216,13 @@ Learn how to configure your IAM roles for OpenSearch access control. With IAM ro
 
 Request:
 
-```
+```sh
 GET _plugins/_security/api/roles/alice-group
 ```
 
 Result:
 
-```
+```json
 {
   "alice-group": {
     "reserved": false,
@@ -263,13 +263,13 @@ Result:
 
 Request:
 
-```
+```sh
 GET _plugins/_security/api/roles/bob-group
 ```
 
 Result:
 
-```
+```json
 {
   "bob-group": {
     "reserved": false,
@@ -309,7 +309,7 @@ Result:
 
 You can map the Amazon OpenSearch Service domain roles to IAM roles using backend roles mapping, as demonstrated in the following example:
 
-```
+```json
 {
   "bob-group": {
     "hosts": [],
@@ -350,13 +350,13 @@ You can also verify the fine-grained access control permissions for the user by 
 
 Request:
 
-```
+```sh
 GET _plugins/_security/api/account
 ```
 
 Result:
 
-```
+```json
 {
   "user_name": "arn:aws:iam::XXXXXXXXXXXX:role/bob-group",
   "is_reserved": false,
@@ -382,13 +382,13 @@ Result:
 
 Request:
 
-```
+```sh
 GET bob-test/_search
 ```
 
 Result:
 
-```
+```json
 {
   "took": 390,
   "timed_out": false,
@@ -424,13 +424,13 @@ Result:
 
 Request:
 
-```
+```sh
 GET alice-test
 ```
 
 Result:
 
-```
+```json
 {
   "error": {
     "root_cause": [

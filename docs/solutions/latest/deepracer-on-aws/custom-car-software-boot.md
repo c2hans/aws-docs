@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/custom
 
 1. Connect to the Raspberry Pi via SSH and wait for any automatic OS updates to finish before proceeding.
 
-```
+```bash
 ssh deepracer@deepracer.local
 sudo apt-get update && sudo apt-get upgrade -y
 sudo reboot

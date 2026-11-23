@@ -41,13 +41,13 @@ No root privileges are required to run queries.
 
 Install the plugin.
 
-```
+```sh
 $ sudo dnf install dnf-plugin-support-info
 ```
 
 Query a package to verify the installation.
 
-```
+```sh
 $ dnf supportinfo --pkg glibc
 ```
 
@@ -68,13 +68,13 @@ Package Note                 : Amazon Linux will support this package until the 
 
 Pass `--pkg` with one or more package names to show their support details.
 
-```
+```sh
 $ dnf supportinfo --pkg {{package}} [{{package}} ...]
 ```
 
 To query multiple packages in one command:
 
-```
+```sh
 $ dnf supportinfo --pkg glibc bash openssl-libs
 ```
 
@@ -83,7 +83,7 @@ $ dnf supportinfo --pkg glibc bash openssl-libs
 
 The `--show` flag filters packages by state, support level, or both.
 
-```
+```sh
 $ dnf supportinfo --show {{filter}} [{{filter}} ...]
 ```
 
@@ -98,7 +98,7 @@ Multiple filters of the same type combine with OR. Filters of different types co
 
 Run `--list-filters` to see all valid filter values grouped by category:
 
-```
+```sh
 $ dnf supportinfo --list-filters
 ```
 
@@ -116,7 +116,7 @@ Support level filters:
 
 To list the support information for all installed packages:
 
-```
+```sh
 $ dnf supportinfo --show installed
 ```
 
@@ -131,7 +131,7 @@ audit-libs                       4.1.3-1.amzn2027.0.1               installed   
 
 To use the prefix syntax:
 
-```
+```sh
 $ dnf supportinfo --show state:installed support:full_support
 ```
 
@@ -142,7 +142,7 @@ For scripts and automation, `--showjson` and `--showxml` produce machine-readabl
 
 To get JSON output:
 
-```
+```sh
 $ dnf supportinfo --pkg bash --showjson
 ```
 
@@ -175,7 +175,7 @@ The output contains the package's phases, origin, and timeline with support leve
 
 To get XML output:
 
-```
+```sh
 $ dnf supportinfo --pkg bash --showxml
 ```
 
@@ -188,7 +188,7 @@ Your queries use a local cache of the support data, which avoids unnecessary net
 
 To download and cache the latest support data, for example in automation that needs fresh data without a full query:
 
-```
+```sh
 $ dnf supportinfo --sync
 ```
 
@@ -198,7 +198,7 @@ Support info sync complete
 
 To clear the cache:
 
-```
+```sh
 $ dnf supportinfo --clean-cache
 ```
 
@@ -247,13 +247,13 @@ The `--pkg` output contains the following fields:
 
 If query results look stale, sync the cache manually:
 
-```
+```sh
 $ dnf supportinfo --sync
 ```
 
 If the issue persists, clear the cache and sync again:
 
-```
+```sh
 $ dnf supportinfo --clean-cache
 dnf supportinfo --sync
 ```

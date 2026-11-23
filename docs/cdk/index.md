@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/cdk/index.html
 title: 'AWS Cloud Development Kit Documentation'
 canonical_url: https://docs.aws.amazon.com/cdk/
 source: aws-documentation
-generated_on: 2026-11-18
+generated_on: 2026-11-21
 ---
 
 # AWS Cloud Development Kit Documentation
@@ -22,6 +22,11 @@ The AWS Cloud Development Kit (AWS CDK) is a framework for defining cloud infras
 
 - [Developer Guide](/cdk/v1/guide/): Provides a conceptual overview and practical examples to help you understand the features provided by the AWS CDK (v1) and how to use them.
 - [API Reference](/cdk/api/v1/): Describes the APIs in the AWS Construct Library for AWS CDK (v1) and language-specific implementations.
+
+## AWS CDK Blocks
+
+- [Developer Guide](/cdk/blocks/devguide/): Explains how to build applications on AWS with AWS CDK Blocks, an expansion of the AWS Cloud Development Kit (AWS CDK), where each Block packages a AWS CDK construct along with the connecting code applications need to use that infrastructure.
+- [GitHub Repository](https://github.com/aws/cdk-blocks): Read the source, file an issue, or contribute to AWS CDK Blocks.
 
 ## Learn and explore
 

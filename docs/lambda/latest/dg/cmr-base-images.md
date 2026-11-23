@@ -50,7 +50,7 @@ Lambda base images set `ENTRYPOINT` to `/lambda-entrypoint.sh` and don't set a `
 
 For example, a Python function might have the handler `lambda_function.lambda_handler`. Lambda runs a command similar to the following:
 
-```
+```bash
 /lambda-entrypoint.sh lambda_function.lambda_handler
 ```
 
@@ -141,7 +141,7 @@ The following examples show Dockerfiles for runtime images that start from a Lam
 
 The following Dockerfile starts from the Python 3.14 base image. The Dockerfile installs an organization SDK from a wheel file, and adds a private certificate authority (CA) certificate to the trust store. The `--mount` option makes the wheel file available during the build without copying the wheel file into the runtime image.
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/python:3.14
 
 # Install the organization SDK into the runtime's site-packages directory.
@@ -166,7 +166,7 @@ The `--mount` option requires BuildKit, which is the default builder in current 
 
 The following Dockerfile starts from the Node.js 24 base image and adds a runtime-level extension. The Dockerfile uses the `TARGETARCH` build argument to copy the extension binary file for each architecture. With this approach, you can build a multi-architecture runtime image from one Dockerfile.
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/nodejs:24
 
 # Docker sets TARGETARCH to amd64 or arm64 for each platform in the build.
@@ -199,7 +199,7 @@ The examples use account `123456789012`, the `us-east-1` Region, and an Amazon E
 
 1. To authenticate Docker to your Amazon ECR registry, run the following command:
 
-   ```
+   ```bash
    aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 123456789012.dkr.ecr.us-east-1.amazonaws.com
    ```
 
@@ -207,7 +207,7 @@ The examples use account `123456789012`, the `us-east-1` Region, and an Amazon E
 
    To build a single-architecture runtime image, specify one platform:
 
-   ```
+   ```bash
    docker buildx build \
      --platform linux/arm64 \
      --tag 123456789012.dkr.ecr.us-east-1.amazonaws.com/companypython:2026-10-08.1 \
@@ -216,7 +216,7 @@ The examples use account `123456789012`, the `us-east-1` Region, and an Amazon E
 
    To build a multi-architecture runtime image, specify both platforms:
 
-   ```
+   ```bash
    docker buildx build \
      --platform linux/amd64,linux/arm64 \
      --tag 123456789012.dkr.ecr.us-east-1.amazonaws.com/companypython:2026-10-08.1 \
@@ -225,7 +225,7 @@ The examples use account `123456789012`, the `us-east-1` Region, and an Amazon E
 
 1. To confirm that Amazon ECR has the runtime image, run the **describe-images** command:
 
-   ```
+   ```bash
    aws ecr describe-images \
      --repository-name companypython \
      --image-ids imageTag=2026-10-08.1 \
@@ -245,7 +245,7 @@ Lambda base images include the runtime interface emulator (RIE). When you run th
 
 1. In an empty directory, create a file named `lambda_function.py` with sample function code. The following example imports the organization SDK from the Python example Dockerfile:
 
-   ```
+   ```python
    import my_org_sdk
 
    def lambda_handler(event, context):
@@ -254,7 +254,7 @@ Lambda base images include the runtime interface emulator (RIE). When you run th
 
 1. From the same directory, run the following command. The command mounts the directory as read-only `/var/task`, and passes the handler as the command argument.
 
-   ```
+   ```bash
    docker run --rm --platform linux/arm64 -p 9000:8080 \
      -v "$PWD":/var/task:ro \
      123456789012.dkr.ecr.us-east-1.amazonaws.com/companypython:2026-10-08.1 \
@@ -265,13 +265,13 @@ Lambda base images include the runtime interface emulator (RIE). When you run th
 
 1. From a new terminal window, invoke the function with **curl**:
 
-   ```
+   ```bash
    curl "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{}'
    ```
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {"sdkVersion": "2.4.0"}
    ```
 

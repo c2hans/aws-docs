@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/graph
 
 **Delete a snapshot**
 
-```
+```bash
 aws neptune-graph delete-graph-snapshot \
 --snapshot-id <SNAPSHOT_ID>
 ```

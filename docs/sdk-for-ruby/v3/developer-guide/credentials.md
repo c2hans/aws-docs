@@ -49,7 +49,7 @@ The AWS SDK for Ruby does not need additional gems (such as `aws-sdk-sso` and `a
 
 Before running an application that accesses AWS services, you need an active AWS access portal session for the SDK to use IAM Identity Center authentication to resolve credentials. Depending on your configured session lengths, your access will eventually expire and the SDK will encounter an authentication error. To sign in to the AWS access portal, run the following command in the AWS CLI.
 
-```
+```bash
 aws sso login
 ```
 
@@ -57,7 +57,7 @@ If you followed the guidance and have a default profile setup, you do not need t
 
 To optionally test if you already have an active session, run the following AWS CLI command.
 
-```
+```bash
 aws sts get-caller-identity
 ```
 

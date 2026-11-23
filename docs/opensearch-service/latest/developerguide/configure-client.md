@@ -35,7 +35,7 @@ For example, the following AWS Identity and Access Management (IAM) policy allow
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -72,7 +72,7 @@ You might need to ingest data into a pipeline from a different AWS account, such
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [{
@@ -96,7 +96,7 @@ You might need to ingest data into a pipeline from a different AWS account, such
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

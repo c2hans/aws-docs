@@ -34,7 +34,7 @@ When using the EKS capability for Argo CD, you can choose to use AWS CodeConnect
 
 1. Ensure the Argo CD capability role has permissions to use the connection with a resource-based policy:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [

@@ -146,13 +146,13 @@ Valid values include the following:
 
   For example, this code is formatted as so:
 
-  ```
+  ```javascript
   for (var i = 0; i < 10; i++) { if (i == 5) { console.log("Halfway done.") }}
   ```
 
   Turns into this code when the file is saved:
 
-  ```
+  ```javascript
   for (var i = 0; i < 10; i++) {
      if (i == 5) {
         console.log("Halfway done.")
@@ -163,13 +163,13 @@ Valid values include the following:
 
   For example, this code is formatted as so:
 
-  ```
+  ```javascript
   for (var i = 0; i < 10; i++) { if (i == 5) { console.log("Halfway done.") }}
   ```
 
   Turns into this code when the file is saved:
 
-  ```
+  ```javascript
   for (var i = 0; i < 10; i++) {if (i == 5)
     {
        console.log("Halfway done.")
@@ -180,7 +180,7 @@ Valid values include the following:
 
   For example, this code is formatted as so:
 
-  ```
+  ```javascript
   for (var i = 0; i < 10; i++) {
     if (i == 5) { console.log("Halfway done.") }
   }
@@ -188,7 +188,7 @@ Valid values include the following:
 
   Turns into this code when the file is saved:
 
-  ```
+  ```javascript
   for (var i = 0; i < 10; i++) {
      if (i == 5) {
         console.log("Halfway done.")

@@ -37,7 +37,7 @@ In the Toolkit for VS Code you must have a credentials profile that contains the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -29,7 +29,7 @@ The IAM role would have permissions to the Amazon Chime SDK messaging action you
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -90,7 +90,7 @@ The [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeR
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -117,7 +117,7 @@ You need to set up the `ChimeMessagingSampleAppUserRole` with a trust policy tha
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

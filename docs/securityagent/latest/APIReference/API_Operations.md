@@ -79,6 +79,7 @@ The following actions are supported:
 +  [ListThreatModelJobTasks](API_ListThreatModelJobTasks.md)
 +  [ListThreatModels](API_ListThreatModels.md)
 +  [ListThreats](API_ListThreats.md)
++  [ResumePentestJob](API_ResumePentestJob.md)
 +  [StartCodeRemediation](API_StartCodeRemediation.md)
 +  [StartCodeReviewJob](API_StartCodeReviewJob.md)
 +  [StartPentestJob](API_StartPentestJob.md)

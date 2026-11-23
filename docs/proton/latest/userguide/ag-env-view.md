@@ -26,14 +26,14 @@ You can view environment detail data using either the AWS Proton console or the 
 
 Run the following command:
 
-```
+```sh
 $ aws proton get-environment \
     --name "{{MySimpleEnv}}"
 ```
 
 Response:
 
-```
+```json
 {
     "environment": {
         "arn": "arn:aws:proton:region-id:123456789012:environment/MySimpleEnv",

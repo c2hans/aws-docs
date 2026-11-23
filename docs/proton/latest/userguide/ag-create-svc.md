@@ -108,7 +108,7 @@ If you want to use a service template that has `pipelineProvisioning: "CUSTOMER_
 
    Command:
 
-   ```
+   ```sh
    $ aws proton update-account-settings \
            --pipeline-service-role-arn "arn:aws:iam::{{123456789012}}:role/{{AWSProtonServiceRole}}"
    ```
@@ -117,7 +117,7 @@ If you want to use a service template that has `pipelineProvisioning: "CUSTOMER_
 
    Spec:
 
-   ```
+   ```yaml
    proton: ServiceSpec
 
    pipeline:
@@ -136,7 +136,7 @@ If you want to use a service template that has `pipelineProvisioning: "CUSTOMER_
 
    Command:
 
-   ```
+   ```sh
    $ aws proton create-service \
            --name "{{MySimpleService}}" \
            --branch-name "{{mainline}}" \
@@ -149,7 +149,7 @@ If you want to use a service template that has `pipelineProvisioning: "CUSTOMER_
 
    Response:
 
-   ```
+   ```json
    {
        "service": {
            "arn": "arn:aws:proton:region-id:123456789012:service/MySimpleService",
@@ -170,7 +170,7 @@ The following shows an example spec that *doesn't* include service pipeline inpu
 
 Spec:
 
-```
+```yaml
 proton: ServiceSpec
 
 instances:
@@ -185,7 +185,7 @@ instances:
 
 Command:
 
-```
+```sh
 $ aws proton create-service \
         --name "{{MySimpleServiceNoPipeline}}" \
         --template-major-version "{{1}}" \
@@ -195,7 +195,7 @@ $ aws proton create-service \
 
 Response:
 
-```
+```json
 {
     "service": {
         "arn": "arn:aws:proton:region-id:123456789012:service/MySimpleServiceNoPipeline",

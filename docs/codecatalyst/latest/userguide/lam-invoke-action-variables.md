@@ -10,7 +10,7 @@ By default, the **AWS Lambda invoke** action produces one variable per top-level
 
 For example, if the response payload looks like this:
 
-```
+```json
 responsePayload = {
   "name": "Saanvi",
   "location": "Seattle",

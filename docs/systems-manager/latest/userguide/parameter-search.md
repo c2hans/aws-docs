@@ -48,7 +48,7 @@ The following examples demonstrate various options you can use to view informati
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm describe-parameters \
        --parameter-filters "Key=Name,Values={{MyParameterName}}"
    ```
@@ -56,7 +56,7 @@ The following examples demonstrate various options you can use to view informati
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm describe-parameters ^
        --parameter-filters "Key=Name,Values={{MyParameterName}}"
    ```
@@ -65,32 +65,32 @@ The following examples demonstrate various options you can use to view informati
 **Note**
 For `describe-parameters`, the default search type for `Name` is `Equals`. In your parameter filters, specifying `"Key=Name,Values={{MyParameterName}}"` is the same as specifying `"Key=Name,Option=Equals,Values={{MyParameterName}}"`.
 
-   ```
+   ```bash
    aws ssm describe-parameters \
        --parameter-filters "Key=Name,Option=Contains,Values={{Product}}"
    ```
 
-   ```
+   ```bash
    aws ssm describe-parameters \
        --parameter-filters "Key=Type,Values=String"
    ```
 
-   ```
+   ```bash
    aws ssm describe-parameters \
        --parameter-filters "Key=Path,Values={{/Production/West}}"
    ```
 
-   ```
+   ```bash
    aws ssm describe-parameters \
        --parameter-filters "Key=Tier,Values=Standard"
    ```
 
-   ```
+   ```bash
    aws ssm describe-parameters \
        --parameter-filters "Key=tag:{{tag-key}},Values={{tag-value}}"
    ```
 
-   ```
+   ```bash
    aws ssm describe-parameters \
        --parameter-filters "Key=KeyId,Values={{key-id}}"
    ```
@@ -99,7 +99,7 @@ In the last example, {{key-id}} represents the ID of an AWS Key Management Servi
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
        "Parameters": [
            {

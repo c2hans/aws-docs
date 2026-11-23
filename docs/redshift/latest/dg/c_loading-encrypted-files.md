@@ -26,7 +26,7 @@ The COPY command automatically recognizes and loads files encrypted using SSE-S3
 
 To load client-side encrypted data files, provide the root key value using the MASTER\_SYMMETRIC\_KEY parameter and include the ENCRYPTED option.
 
-```
+```sql
 COPY customer FROM 's3://amzn-s3-demo-bucket/encrypted/customer'
 IAM_ROLE 'arn:aws:iam::0123456789012:role/MyRedshiftRole'
 MASTER_SYMMETRIC_KEY '{{<root_key>}}'

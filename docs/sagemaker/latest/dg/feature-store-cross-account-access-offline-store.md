@@ -22,7 +22,7 @@ First, set up a role for Amazon SageMaker Feature Store to write the data into t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -54,7 +54,7 @@ Additionally, this role must have AWS KMS permissions attached. At a minimum, it
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -86,7 +86,7 @@ This document refers to the following example bucket policy as `Account-B-Offlin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -128,7 +128,7 @@ This document refers to the following example key policy as `Account-A-Offline-F
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "key-consolepolicy-3",

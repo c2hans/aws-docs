@@ -58,7 +58,7 @@ Each event pattern is a JSON object that contains:
 
 For example, the following event pattern would select all Support Case Update events from AWS Support:
 
-```
+```java
 {
   "source": ["aws.support"],
   "detail-type": ["Support Case Update"]
@@ -67,7 +67,7 @@ For example, the following event pattern would select all Support Case Update ev
 
 You can get more specific in your event selection by including values in the event itself. For example, the following event pattern matches Support Case Update events that represent a case being reopened:
 
-```
+```java
 {
   "source": ["aws.support"],
   "detail-type": ["Support Case Update"],

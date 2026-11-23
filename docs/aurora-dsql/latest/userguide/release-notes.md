@@ -13,6 +13,11 @@ This page describes new features, service launches, and important updates for Au
 <a name="release-notes-2026-11"></a>
 
 November 19, 2026
+✨ *Feature* — **Higher write throughput** — With upgrades to its storage layer, Aurora DSQL now delivers up to 50% higher write throughput for many transactional workloads. Data loads also finish sooner.
+Tables whose primary key always increases see larger gains. Examples include tables keyed by a timestamp or by a time-ordered ID. Time-ordered IDs include Universally Unique Lexicographically Sortable Identifiers (ULIDs) and version 7 universally unique identifiers (UUIDv7). In internal testing, an audit log table keyed by event time accepted up to 200% more inserts per second.
+The improvement applies automatically to new and existing clusters at no additional cost. For more information about choosing a primary key, see [Guidelines for choosing a primary key](working-with-primary-keys.html#dsql-primary-key-guidelines).
+
+November 19, 2026
 🐘 *PostgreSQL Compatibility* — ** PL/pgSQL** — Aurora DSQL now supports PL/pgSQL, the procedural language for PostgreSQL. You can create functions and procedures with `CREATE FUNCTION` and `CREATE PROCEDURE`, invoke procedures with `CALL`, and run anonymous code blocks with `DO`. For more information about supported statements and Aurora DSQL-specific considerations, see [PL/pgSQL in Aurora DSQL](working-with-plpgsql.html).
 
 November 18, 2026

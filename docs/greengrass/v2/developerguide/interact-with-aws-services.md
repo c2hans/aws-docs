@@ -25,7 +25,7 @@ To run this example component, your device must have the `s3:ListAllMyBuckets` p
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.ListS3Buckets",
@@ -64,7 +64,7 @@ To run this example component, your device must have the `s3:ListAllMyBuckets` p
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.ListS3Buckets
@@ -96,7 +96,7 @@ Manifests:
 
 This example component runs the following Python script, `list_s3_buckets.py` that lists Amazon S3 buckets.
 
-```
+```python
 import boto3
 import os
 

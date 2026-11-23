@@ -15,11 +15,11 @@ Type: String
 Valid Values: `AWS | Sandbox`
 Required: Yes
 
- ** ProductId **
-The AWS Marketplace product identifier for the parent revenue share.
+ ** MarketplaceRevenueShareIdentifier **
+The identifier of the parent marketplace revenue share whose marketplace revenue share allocations to list, as an ID (for example, mrs-0a1b2c3d4e5f6) or ARN.
 Type: String
-Length Constraints: Fixed length of 18.
-Pattern: `prod-[a-z0-9]{13}`
+Length Constraints: Minimum length of 17. Maximum length of 1011.
+Pattern: `(arn:[a-z-]+:partnercentral:[a-z0-9-]+:[0-9]{12}:catalog/[a-zA-Z]+/marketplace-revenue-share/mrs-[a-z0-9]{13}|mrs-[a-z0-9]{13})`
 Required: Yes
 
  ** AfterEffectiveFrom **
@@ -29,8 +29,22 @@ Length Constraints: Fixed length of 10.
 Pattern: `\d{4}-\d{2}-\d{2}`
 Required: No
 
+ ** AfterEffectiveUntil **
+Filters results to marketplace revenue share allocations with an effective end date on or after this date (inclusive).
+Type: String
+Length Constraints: Fixed length of 10.
+Pattern: `\d{4}-\d{2}-\d{2}`
+Required: No
+
  ** BeforeEffectiveFrom **
 Exclusive upper bound for EffectiveFrom date filter (half-open range).
+Type: String
+Length Constraints: Fixed length of 10.
+Pattern: `\d{4}-\d{2}-\d{2}`
+Required: No
+
+ ** BeforeEffectiveUntil **
+Filters results to marketplace revenue share allocations with an effective end date before this date (exclusive).
 Type: String
 Length Constraints: Fixed length of 10.
 Pattern: `\d{4}-\d{2}-\d{2}`
@@ -63,13 +77,13 @@ Valid Values: `EffectiveFrom`
 Required: No
 
  ** SortOrder **
-The direction to sort results. Defaults to DESCENDING.
+The direction to sort results. Defaults to ASCENDING.
 Type: String
 Valid Values: `ASCENDING | DESCENDING`
 Required: No
 
- ** Status **
-Filter by allocation status.
+ ** StatusFilter **
+Filters results to marketplace revenue share allocations with the specified status.
 Type: String
 Valid Values: `ACTIVE | INACTIVE`
 Required: No
@@ -96,22 +110,30 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 The request was denied due to insufficient permissions.
+ ** Message **
+A message that describes why access was denied.
  ** Reason **
 The reason for the access denial.
 HTTP Status Code: 403
 
  ** InternalServerException **
 An internal server error occurred. Retry your request.
+ ** Message **
+A message that describes the internal server error.
 HTTP Status Code: 500
 
  ** ResourceNotFoundException **
 The specified resource was not found.
+ ** Message **
+A message that describes which resource was not found.
  ** Reason **
 The reason the resource was not found.
 HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was throttled due to too many requests. Retry your request.
+ ** Message **
+A message that indicates the request rate limit was exceeded.
  ** QuotaCode **
 The quota code associated with the throttling error.
  ** ServiceCode **
@@ -122,6 +144,8 @@ HTTP Status Code: 429
 The request failed validation due to invalid input parameters.
  ** FieldList **
 A list of fields that failed validation.
+ ** Message **
+A message that describes the validation failure.
  ** Reason **
 The reason for the validation failure.
 HTTP Status Code: 400

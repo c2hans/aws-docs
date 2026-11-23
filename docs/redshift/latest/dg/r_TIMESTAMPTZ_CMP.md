@@ -34,7 +34,7 @@ INTEGER
 
 The following example compares timestamps with time zones and shows the results of the comparison.
 
-```
+```sql
 SELECT TIMESTAMPTZ_CMP('2008-01-24 06:43:29+00', '2008-01-24 06:43:29+00'), TIMESTAMPTZ_CMP('2008-01-24 06:43:29+00', '2008-02-18 02:36:48+00'), TIMESTAMPTZ_CMP('2008-02-18 02:36:48+00', '2008-01-24 06:43:29+00');
 
 timestamptz_cmp  | timestamptz_cmp | timestamptz_cmp

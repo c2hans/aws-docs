@@ -62,7 +62,7 @@ In the AWS CLI, you can use an AMI's SSM parameter value to launch a new instanc
 **Note**
 Each of the {{italic}} items is an example parameter. Replace them with your own information.
 
-```
+```sh
 $ aws ec2 run-instances \
   --image-id \
     resolve:ssm:/aws/service/ami-amazon-linux-latest/{{al2023-ami-kernel-default-x86_64}} \
@@ -97,7 +97,7 @@ The `x86_64` and `Arm64` AMIs each require different instance types. For more in
 
 `JSON` template:
 
-```
+```json
 {
   "Parameters": {
     "LatestAmiId": {
@@ -121,7 +121,7 @@ The `x86_64` and `Arm64` AMIs each require different instance types. For more in
 
 `YAML` template:
 
-```
+```yaml
 Parameters:
   LatestAmiId:
     Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'

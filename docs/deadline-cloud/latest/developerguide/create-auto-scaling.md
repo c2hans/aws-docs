@@ -16,7 +16,7 @@ For a complete explanation of the resources and parameters used in the CloudForm
 
 1. Use the following example to create a CloudFormation template that defines the `FarmID`, `FleetID`, and `AMIId` parameters. Save the template to a `.YAML` file on your local computer.
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: 2010-09-09
    Description: Amazon Deadline Cloud customer-managed fleet
    Parameters:
@@ -249,7 +249,7 @@ The following is an example of `configuration.json` used in the CLI commands abo
 
  After you configure the fleet mode, Deadline Cloud starts emitting fleet size recommendation events for that fleet.
 
-```
+```json
 {
     "customerManaged": {
         "mode": "EVENT_BASED_AUTO_SCALING",
@@ -274,7 +274,7 @@ The following is an example of `configuration.json` used in the CLI commands abo
 
 You can set up an EventBridge rule to filter events, a Lambda to consume the events and control Auto Scaling, and an SQS queue to store unprocessed events. Use the following CloudFormation template to deploy everything in a stack. After you deploy the resources successfully, you can submit a job and the fleet will automatically scale up.
 
-```
+```yaml
 Resources:
   AutoScalingLambda:
     Type: 'AWS::Lambda::Function'

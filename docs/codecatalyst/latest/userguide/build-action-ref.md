@@ -16,7 +16,7 @@ Choose a YAML property in the following code to see a description if it.
 **Note**
 Most of the YAML properties that follow have corresponding UI elements in the visual editor. To look up a UI element, use **Ctrl\+F**. The element will be listed with its associated YAML property.
 
-```
+```yaml
 # The workflow definition starts here.
 # See Top-level properties for details.
 
@@ -915,7 +915,7 @@ Specify the shell commands that you want to run during the action to install, co
 
 Here is an example of how to build an npm project:
 
-```
+```yaml
 Steps:
   - Run: npm install
   - Run: npm run build
@@ -923,7 +923,7 @@ Steps:
 
 Here is an example of how to specify file paths:
 
-```
+```yaml
 Steps:
   - Run: cd $ACTION_BUILD_SOURCE_PATH_WorkflowSource/app  && cat file2.txt
   - Run: cd $ACTION_BUILD_SOURCE_PATH_MyBuildArtifact/build-output/  && cat file.txt

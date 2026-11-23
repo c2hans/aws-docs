@@ -17,7 +17,7 @@ The following example shows how to tag an Amazon Machine Image (AMI) and an inst
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: createTags
 action: aws:createTags
 maxAttempts: 3
@@ -37,7 +37,7 @@ inputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "createTags",
     "action": "aws:createTags",

@@ -29,7 +29,7 @@ The following code example shows how to use `CreateReceiptFilter`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Create an Amazon Simple Email Service (Amazon SES) receipt filter..
 /*!
   \param receiptFilterName: The name for the receipt filter.
@@ -74,7 +74,7 @@ The following code example shows how to use `CreateReceiptRule`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Create an Amazon Simple Email Service (Amazon SES) receipt rule.
 /*!
   \param receiptRuleName: The name for the receipt rule.
@@ -136,7 +136,7 @@ The following code example shows how to use `CreateReceiptRuleSet`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Create an Amazon Simple Email Service (Amazon SES) receipt rule set.
 /*!
   \param ruleSetName: The name of the rule set.
@@ -176,7 +176,7 @@ The following code example shows how to use `CreateTemplate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Create an Amazon Simple Email Service (Amazon SES) template.
 /*!
   \param templateName: The name of the template.
@@ -228,7 +228,7 @@ The following code example shows how to use `DeleteIdentity`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Delete the specified identity (an email address or a domain).
 /*!
   \param identity: The identity to delete.
@@ -267,7 +267,7 @@ The following code example shows how to use `DeleteReceiptFilter`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Delete an Amazon Simple Email Service (Amazon SES) receipt filter.
 /*!
   \param receiptFilterName: The name for the receipt filter.
@@ -307,7 +307,7 @@ The following code example shows how to use `DeleteReceiptRule`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Delete an Amazon Simple Email Service (Amazon SES) receipt rule.
 /*!
   \param receiptRuleName: The name for the receipt rule.
@@ -349,7 +349,7 @@ The following code example shows how to use `DeleteReceiptRuleSet`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Delete an Amazon Simple Email Service (Amazon SES) receipt rule set.
 /*!
   \param receiptRuleSetName: The name for the receipt rule set.
@@ -390,7 +390,7 @@ The following code example shows how to use `DeleteTemplate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Delete an Amazon Simple Email Service (Amazon SES) template.
 /*!
   \param templateName: The name for the template.
@@ -429,7 +429,7 @@ The following code example shows how to use `GetTemplate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Get a template's attributes.
 /*!
   \param templateName: The name for the template.
@@ -469,7 +469,7 @@ The following code example shows how to use `ListIdentities`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! List the identities associated with this account.
 /*!
   \param identityType: The identity type enum. "NOT_SET" is a valid option.
@@ -524,7 +524,7 @@ The following code example shows how to use `ListReceiptFilters`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! List the receipt filters associated with this account.
 /*!
   \param filters; A vector of "ReceiptFilter" to receive the retrieved filters.
@@ -564,7 +564,7 @@ The following code example shows how to use `SendEmail`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Send an email to a list of recipients.
 /*!
   \param recipients; Vector of recipient email addresses.
@@ -646,7 +646,7 @@ The following code example shows how to use `SendTemplatedEmail`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Send a templated email to a list of recipients.
 /*!
   \param recipients; Vector of recipient email addresses.
@@ -726,7 +726,7 @@ The following code example shows how to use `UpdateTemplate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Update an Amazon Simple Email Service (Amazon SES) template.
 /*!
   \param templateName: The name of the template.
@@ -775,7 +775,7 @@ The following code example shows how to use `VerifyEmailIdentity`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Add an email address to the list of identities associated with this account and
 //! initiate verification.
 /*!

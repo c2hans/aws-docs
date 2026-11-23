@@ -58,7 +58,7 @@ User: arn:aws:iam::123456789012:assumed-role/MyConsoleRole/user is not authorize
 To resolve this issue, do one of the following:
 +  **Add an inline policy:** Add a policy to your IAM user or role that grants the necessary permissions for the console to create execution roles on your behalf:
 
-  ```
+  ```json
   {
   "Version": "2012-10-17",
     "Statement": [

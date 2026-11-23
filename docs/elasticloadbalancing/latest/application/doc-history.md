@@ -8,6 +8,7 @@ The following table describes the releases for Application Load Balancers.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [CNSA 2.0 security policies](doc-history.md) | This release adds security policies that support post-quantum key exchange (ML-KEM-1024) to help you transition from CNSA 1.0 (RFC 9151) to CNSA 2.0. | November 17, 2026 |
 | [Access token validation](doc-history.md) | This release adds support for the load balancer to validate JSON Web Tokens (JWT) provided by clients for secure service-to-service (S2S) or machine-to-machine (M2M) communications. | November 21, 2025 |
 | [Transforms](doc-history.md) | This release adds support to transform host headers and URLs for incoming requests before the load balancer routes the traffic to a target. | October 15, 2025 |
 | [Bucket policies for access logs and connection logs](doc-history.md) | Prior to this release, the bucket policy that you used depended on whether the Region was available before or after August 2022. With this release, the newer bucket policy is supported in all Regions. Note that the legacy bucket policy is still supported. | September 10, 2025 |

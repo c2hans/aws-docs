@@ -154,7 +154,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-aws-backup-plan-update-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "BackupPlanName": "MyCustomBackupPlan",
   "BackupRuleName": "BackupRule",
@@ -165,7 +165,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-aws-backup-plan-update-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "BackupPlanName": "MyCustomBackupPlan",
   "ResourceTagKey": "custom_backup_test",

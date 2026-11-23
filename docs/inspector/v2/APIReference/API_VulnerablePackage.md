@@ -50,6 +50,12 @@ Type: String
 Valid Values: `BUNDLER | CARGO | COMPOSER | NPM | NUGET | PIPENV | POETRY | YARN | GOBINARY | GOMOD | JAR | OS | PIP | PYTHONPKG | NODEPKG | POM | GEMSPEC | DOTNET_CORE`
 Required: No
 
+ ** purl **   <a name="inspector2-Type-VulnerablePackage-purl"></a>
+The package URL (purl) of the vulnerable package.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Required: No
+
  ** release **   <a name="inspector2-Type-VulnerablePackage-release"></a>
 The release of the vulnerable package.
 Type: String
@@ -60,6 +66,18 @@ Required: No
 The code to run in your environment to update packages with a fix available.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
+Required: No
+
+ ** runtimeReachability **   <a name="inspector2-Type-VulnerablePackage-runtimeReachability"></a>
+The runtime reachability status of the vulnerable package. For more information, see [Understanding runtime reachability](https://docs.aws.amazon.com/inspector/latest/user/findings-understanding-runtime-reachability.html) in the Amazon Inspector user guide.
+Type: String
+Valid Values: `REACHABLE | NOT_REACHABLE | UNKNOWN`
+Required: No
+
+ ** runtimeReachabilityReason **   <a name="inspector2-Type-VulnerablePackage-runtimeReachabilityReason"></a>
+The reason for the runtime reachability status of the vulnerable package. For more information, see [Understanding runtime reachability](https://docs.aws.amazon.com/inspector/latest/user/findings-understanding-runtime-reachability.html) in the Amazon Inspector user guide.
+Type: String
+Valid Values: `PACKAGE_IN_DOCKERFILE_WORKLOAD_PATH | PACKAGE_NOT_IN_DOCKERFILE_WORKLOAD_PATH | PROCESS_OBSERVED_IN_EC2_RUNTIME | PROCESS_NOT_OBSERVED_IN_EC2_RUNTIME`
 Required: No
 
  ** sourceLambdaLayerArn **   <a name="inspector2-Type-VulnerablePackage-sourceLambdaLayerArn"></a>

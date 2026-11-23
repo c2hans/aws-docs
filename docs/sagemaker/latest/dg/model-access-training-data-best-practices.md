@@ -28,7 +28,7 @@ If your dataset size is small (less than 50-100 GB), but is made up of many smal
 
 For larger datasets with larger files (more than 50 MB per file), the first option is to try fast file mode, which is more straightforward to use than FSx for Lustre because it doesn't require creating a file system, or connecting to a VPC. Fast file mode is ideal for large file containers (more than 150 MB), and might also do well with files more than 50 MB. Because fast file mode provides a POSIX interface, it supports random reads (reading non-sequential byte-ranges). However, this is not the ideal use case, and your throughput might be lower than with the sequential reads. However, if you have a relatively large and computationally intensive ML model, fast file mode might still be able to saturate the effective bandwidth of the training pipeline and not result in an IO bottleneck. You'll need to experiment and see. To switch from file mode to fast file mode (and back), just add (or remove) the `input_mode='FastFile'` parameter while defining your input channel using the SageMaker Python SDK:
 
-```
+```py
 from sagemaker.train.configs import InputData, OutputDataConfig, CheckpointConfig
 from sagemaker.core.shapes import Channel, DataSource, S3DataSource
 Channel(

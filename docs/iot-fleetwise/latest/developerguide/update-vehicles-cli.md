@@ -12,13 +12,13 @@ To update multiple vehicles, run the following command.
 
 Replace {{file-name}} with the name of the .json file that contains the configurations of multiple vehicles.
 
-```
+```bash
 aws iotfleetwise batch-update-vehicle --cli-input-json file://{{file-name}}.json
 ```
 
 **Example – vehicle configurations**
 
-```
+```json
 {
    "vehicles": [
       {
@@ -52,7 +52,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

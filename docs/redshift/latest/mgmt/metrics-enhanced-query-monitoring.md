@@ -43,7 +43,7 @@ To update the IAM role used for query monitoring, do the following:
 
 To add database credentials to a user, run the following command:
 
-```
+```sql
 grant role sys:monitor to {{<username>}}
 ```
 

@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/opensearch#code-examples).
 
-```
+```java
     /**
      * Creates a new OpenSearch domain asynchronously.
      * @param domainName the name of the new OpenSearch domain to create
@@ -70,7 +70,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/opensearch#code-examples).
 
-```
+```kotlin
 suspend fun createNewDomain(domainNameVal: String?) {
     val clusterConfigOb =
         ClusterConfig {

@@ -63,7 +63,7 @@ This configures your device to meet the Python requirement for AWS IoT Greengras
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -98,7 +98,7 @@ This configures your device to meet the Python requirement for AWS IoT Greengras
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -251,7 +251,7 @@ The following CLI commands create a `ConnectorDefinition` with an initial versio
 **Example: CPU Instance**
 This example creates an instance of the ML Image Classification Armv7l connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -274,7 +274,7 @@ aws greengrass create-connector-definition --name MyGreengrassConnectors --initi
 **Example: GPU Instance**
 This example creates an instance of the ML Image Classification Aarch64 JTX2 connector, which supports GPU acceleration on an NVIDIA Jetson TX2 board.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -333,7 +333,7 @@ The example initializes an SDK client and synchronously calls the SDK's `invoke_
 ------
 #### [ Python 3.7 ]
 
-```
+```python
 import logging
 from threading import Timer
 
@@ -391,7 +391,7 @@ def function_handler(event, context):
 ------
 #### [ Python 2.7 ]
 
-```
+```python
 import logging
 from threading import Timer
 

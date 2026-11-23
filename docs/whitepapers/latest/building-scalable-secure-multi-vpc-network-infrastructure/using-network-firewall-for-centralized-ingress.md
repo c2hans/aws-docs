@@ -8,6 +8,8 @@ In this architecture, ingress traffic is inspected by AWS Network Firewall befor
 
 ![A diagram depicting ingress traffic inspection using AWS Network Firewall](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/ingress-inspection-using-aws-nf.png)
 
+**Ingress traffic inspection using AWS Network Firewall**
+
  To simplify deployment and management of AWS Network Firewall in this model, AWS Firewall Manager can be used. Firewall Manager allows you to centrally administer your different firewalls by automatically applying protection you create in the centralized location to multiple accounts. Firewall Manager supports both distributed and centralized deployment models for Network Firewall. The blog post [How to deploy AWS Network Firewall by using AWS Firewall Manager](https://aws.amazon.com/blogs/security/how-to-deploy-aws-network-firewall-by-using-aws-firewall-manager/) provides more details on the model.
 
 ## Deep Packet Inspection (DPI) with AWS Network Firewall

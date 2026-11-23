@@ -31,7 +31,7 @@ A `SUPER` expression or column.
 
 To check if `t` is a `CHAR` using the IS\_CHAR function, use the following example.
 
-```
+```sql
 CREATE TABLE t(s SUPER);
 
 INSERT INTO t VALUES ('t');

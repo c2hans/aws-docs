@@ -25,6 +25,8 @@ When you architect your solutions, a best practice is to seek to place computing
 
 ![Chart showing different Regions with compliance, latency, cost, and services and features.](https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/region-feature-matrix.png)
 
+*Region feature matrix table*
+
  The preceding matrix table shows us that Region 6 is the best option for this given scenario because latency is low compared to other Regions, service is available, and it is the least expensive Region.
 
 ## Implementation steps

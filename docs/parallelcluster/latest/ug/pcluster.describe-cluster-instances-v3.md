@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Describe the instances in a cluster.
 
-```
+```sh
 pcluster describe-cluster-instances [-h]
                  --cluster-name {{CLUSTER_NAME}}
                 [--debug]

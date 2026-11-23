@@ -9,7 +9,7 @@ This action is a combination of a "Dequeue" action and a "TransferContactToQueue
 ## Parameter object
 <a name="dequeuecontactandtransfertoqueue-parameter"></a>
 
-```
+```json
 {
     "QueueId": [Optional] A queue ID or queue ARN. If AgentId is specified, this may not be specified. Must be either fully statically defined or a single, valid JSONPath identifier.
     "AgentId": [Optional] An agent ID or agent ARN, representing an agent queue. If QueueId is specified, this may not be specified. Must be either fully statically defined or a single, valid JSONPath identifier.

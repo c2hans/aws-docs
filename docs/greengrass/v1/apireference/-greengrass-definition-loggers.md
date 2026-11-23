@@ -33,7 +33,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-loggers-get-cli"></a>
 
-```
+```bash
 aws greengrass list-logger-definitions \
   [--max-results <value>] \
   [--next-token <value>]  \
@@ -43,7 +43,7 @@ aws greengrass list-logger-definitions \
 
 cli-input-json format:
 
-```
+```json
 {
 "MaxResults": "integer",
 "NextToken": "string"
@@ -57,7 +57,7 @@ cli-input-json format:
 
  [ ListDefinitionsResponse](definitions-listdefinitionsresponse.md)
 
-```
+```json
 {
 "Definitions": [
   {
@@ -135,7 +135,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "Name": "string",
 "InitialVersion": {
@@ -201,7 +201,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-loggers-post-cli"></a>
 
-```
+```bash
 aws greengrass create-logger-definition \
   [--name <value>] \
   [--initial-version <value>] \
@@ -213,7 +213,7 @@ aws greengrass create-logger-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "Name": "string",
 "InitialVersion": {
@@ -243,7 +243,7 @@ cli-input-json format:
 
  [ DefinitionInformation](definitions-definitioninformation.md)
 
-```
+```json
 {
 "Name": "string",
 "Id": "string",
@@ -283,7 +283,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

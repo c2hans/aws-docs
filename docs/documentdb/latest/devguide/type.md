@@ -55,7 +55,7 @@ To view a code example for using the `$type` command, choose the tab for the lan
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function findByType() {
@@ -81,7 +81,7 @@ findByType();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def find_by_type():

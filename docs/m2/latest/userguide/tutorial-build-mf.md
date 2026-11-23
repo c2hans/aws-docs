@@ -78,7 +78,7 @@ In this step, you create a build spec file,. This file provides build commands a
 
 1. Add the following content to the file and save. No changes are required for this file.
 
-   ```
+   ```yaml
    version: 0.2
    env:
      exported-variables:
@@ -151,7 +151,7 @@ To learn about creating an IAM policy, see [Editing IAM policies](https://docs.a
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -220,7 +220,7 @@ For information about creating a service role, see [Creating a Role to Delegate 
 
 ****
 
-   ```
+   ```json
    {
              "Version":"2012-10-17",
              "Statement": [

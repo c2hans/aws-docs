@@ -25,7 +25,7 @@ The following code example shows how to get started using AWS Key Management Ser
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kms->listkeys( ).
         MESSAGE 'Retrieved KMS keys list.' TYPE 'I'.
@@ -46,7 +46,7 @@ The following code example shows how to use `CreateAlias`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_alias_name = 'alias/my-key-alias'
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
@@ -75,7 +75,7 @@ The following code example shows how to use `CreateGrant`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         " iv_grantee_principal = 'arn:aws:iam::123456789012:role/my-role'
@@ -104,7 +104,7 @@ The following code example shows how to use `CreateKey`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_description = 'Created by the AWS SDK for SAP ABAP'
         oo_result = lo_kms->createkey( iv_description = iv_description ).
@@ -125,7 +125,7 @@ The following code example shows how to use `Decrypt`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         " iv_ciphertext_blob contains the encrypted data
@@ -154,7 +154,7 @@ The following code example shows how to use `DeleteAlias`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_alias_name = 'alias/my-key-alias'
         lo_kms->deletealias( iv_aliasname = iv_alias_name ).
@@ -175,7 +175,7 @@ The following code example shows how to use `DescribeKey`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         oo_result = lo_kms->describekey( iv_keyid = iv_key_id ).
@@ -197,7 +197,7 @@ The following code example shows how to use `DisableKey`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         lo_kms->disablekey( iv_keyid = iv_key_id ).
@@ -218,7 +218,7 @@ The following code example shows how to use `EnableKey`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         lo_kms->enablekey( iv_keyid = iv_key_id ).
@@ -239,7 +239,7 @@ The following code example shows how to use `EnableKeyRotation`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         lo_kms->enablekeyrotation( iv_keyid = iv_key_id ).
@@ -264,7 +264,7 @@ The following code example shows how to use `Encrypt`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         " iv_plaintext contains the data to encrypt
@@ -291,7 +291,7 @@ The following code example shows how to use `GenerateDataKey`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         " iv_keyspec = 'AES_256'
@@ -318,7 +318,7 @@ The following code example shows how to use `GetKeyPolicy`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         oo_result = lo_kms->getkeypolicy(
@@ -342,7 +342,7 @@ The following code example shows how to use `ListAliases`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kms->listaliases( ).
         MESSAGE 'Retrieved KMS aliases list.' TYPE 'I'.
@@ -360,7 +360,7 @@ The following code example shows how to use `ListGrants`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         oo_result = lo_kms->listgrants( iv_keyid = iv_key_id ).
@@ -381,7 +381,7 @@ The following code example shows how to use `ListKeyPolicies`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         oo_result = lo_kms->listkeypolicies( iv_keyid = iv_key_id ).
@@ -402,7 +402,7 @@ The following code example shows how to use `ListKeys`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kms->listkeys( ).
         MESSAGE 'Retrieved KMS keys list.' TYPE 'I'.
@@ -420,7 +420,7 @@ The following code example shows how to use `PutKeyPolicy`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         " iv_policy = '{"Version":"2012-10-17",		 	 	  "Statement": [...]}'
@@ -448,7 +448,7 @@ The following code example shows how to use `ReEncrypt`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_source_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         " iv_destination_key_id = 'arn:aws:kms:us-east-1:123456789012:key/5678dcba-56cd-78ef-90ab-5678901234cd'
@@ -479,7 +479,7 @@ The following code example shows how to use `RetireGrant`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_grant_token = 'AQpAM2RhZ...'
         lo_kms->retiregrant( iv_granttoken = iv_grant_token ).
@@ -502,7 +502,7 @@ The following code example shows how to use `RevokeGrant`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         " iv_grant_id = '1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p'
@@ -529,7 +529,7 @@ The following code example shows how to use `ScheduleKeyDeletion`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         " iv_pending_window_days = 7
@@ -554,7 +554,7 @@ The following code example shows how to use `Sign`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab' (asymmetric key)
         " iv_message contains the message to sign
@@ -585,7 +585,7 @@ The following code example shows how to use `TagResource`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     DATA lt_tags TYPE /aws1/cl_kmstag=>tt_taglist.
 
     TRY.
@@ -620,7 +620,7 @@ The following code example shows how to use `UpdateAlias`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_alias_name = 'alias/my-key-alias'
         " iv_target_key_id = 'arn:aws:kms:us-east-1:123456789012:key/5678dcba-56cd-78ef-90ab-5678901234cd'
@@ -645,7 +645,7 @@ The following code example shows how to use `Verify`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab' (asymmetric key)
         " iv_message contains the original message

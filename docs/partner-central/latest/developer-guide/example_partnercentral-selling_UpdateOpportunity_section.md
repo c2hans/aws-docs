@@ -14,7 +14,7 @@ The following code examples show how to use `UpdateOpportunity`.
 **SDK for Java 2.x**
 Update an opportunity.
 
-```
+```java
 package org.example;
 
 import java.time.Instant;
@@ -231,7 +231,7 @@ public class UpdateOpportunity {
 **SDK for Python (Boto3)**
 Update an opportunity.
 
-```
+```python
 #!/usr/bin/env python
 
 """

@@ -2460,7 +2460,7 @@ To see which AWS data source integrations support this SQL command, see [Support
 
 **Examples**
 
-```
+```SQL
 -- from_json
 SELECT from_json('{"a":1, "b":0.8}', 'a INT, b DOUBLE');
 +---------------------------+
@@ -4550,7 +4550,7 @@ To see which AWS data source integrations support these SQL functions, see [Supp
 
 **Examples**
 
-```
+```SQL
 -- explode
 SELECT explode(array(10, 20));
 +---+
@@ -4673,7 +4673,7 @@ OpenSearch SQL supports a `SELECT` statement used for retrieving result sets fro
 
 **Syntax**
 
-```
+```SQL
 select_statement
 [ { UNION | INTERSECT | EXCEPT } [ ALL | DISTINCT ] select_statement, ... ]
 [ ORDER BY
@@ -4799,7 +4799,7 @@ The `WHERE` clause is used to limit the results of the `FROM` clause of a query 
 
 **Syntax**
 
-```
+```SQL
 WHERE boolean_expression
 ```
 
@@ -4812,7 +4812,7 @@ WHERE boolean_expression
 
 **Examples**
 
-```
+```SQL
 CREATE TABLE person (id INT, name STRING, age INT);
 INSERT INTO person VALUES
 (100, 'John', 30),
@@ -4898,14 +4898,14 @@ When a `FILTER` clause is attached to an aggregate function, only the matching r
 
 **Syntax**
 
-```
+```SQL
 GROUP BY group_expression [ , group_expression [ , ... ] ] [ WITH { ROLLUP | CUBE } ]
 GROUP BY { group_expression | { ROLLUP | CUBE | GROUPING SETS } (grouping_set [ , ...]) } [ , ... ]
 ```
 
 While aggregate functions are defined as:
 
-```
+```SQL
 aggregate_name ( [ DISTINCT ] expression [ , ... ] ) [ FILTER ( WHERE boolean_expression ) ]
 ```
 
@@ -5241,7 +5241,7 @@ The `ORDER BY` clause is used to return the result rows in a sorted manner in th
 
 **Syntax**
 
-```
+```SQL
 ORDER BY { expression [ sort_direction | nulls_sort_order ] [ , ... ] }
 ```
 
@@ -5272,7 +5272,7 @@ ORDER BY { expression [ sort_direction | nulls_sort_order ] [ , ... ] }
 
 **Examples**
 
-```
+```SQL
 CREATE TABLE person (id INT, name STRING, age INT);
 INSERT INTO person VALUES
 (100, 'John', 30),
@@ -5491,7 +5491,7 @@ LIMIT { ALL | integer_expression }
 
 **Examples**
 
-```
+```SQL
 CREATE TABLE person (name STRING, age INT);
 INSERT INTO person VALUES
 ('Jane Doe', 25),
@@ -5694,7 +5694,7 @@ The `EXPLAIN` statement is used to provide logical/physical plans for an input s
 
 **Syntax**
 
-```
+```SQL
 EXPLAIN [ EXTENDED | CODEGEN | COST | FORMATTED ] statement
 ```
 
@@ -5723,7 +5723,7 @@ EXPLAIN [ EXTENDED | CODEGEN | COST | FORMATTED ] statement
 
 **Examples**
 
-```
+```SQL
 -- Default Output
 EXPLAIN select k, sum(v) from values (1, 2), (1, 3) t(k, v) group by k;
 +----------------------------------------------------+
@@ -5801,7 +5801,7 @@ To see which AWS data source integrations support this SQL command, see [Support
 
 **Syntax**
 
-```
+```SQL
 [ LATERAL ] primary_relation [ join_relation ]
 ```
 
@@ -5879,7 +5879,7 @@ LATERAL VIEW [ OUTER ] generator_function ( expression [ , ... ] ) [ table_alias
 
 **Examples**
 
-```
+```SQL
 CREATE TABLE person (id INT, name STRING, age INT, class INT, address STRING);
 INSERT INTO person VALUES
 (100, 'John', 30, 1, 'Street 1'),
@@ -6149,7 +6149,7 @@ The `PIVOT` clause is used for data perspective. We can get the aggregated value
 
 **Syntax**
 
-```
+```SQL
 PIVOT ( { aggregate_expression [ AS aggregate_expression_alias ] } [ , ... ] FOR column_list IN ( expression_list ) )
 ```
 
@@ -6169,7 +6169,7 @@ PIVOT ( { aggregate_expression [ AS aggregate_expression_alias ] } [ , ... ] FOR
 
 **Examples**
 
-```
+```SQL
 CREATE TABLE person (id INT, name STRING, age INT, class INT, address STRING);
 INSERT INTO person VALUES
 (100, 'John', 30, 1, 'Street 1'),
@@ -6295,7 +6295,7 @@ SELECT c FROM table1 MINUS ALL (SELECT c FROM table2);
 
 **Examples**
 
-```
+```SQL
 (SELECT c FROM table1) INTERSECT (SELECT c FROM table2);
 +---+
 |  c|
@@ -6380,7 +6380,7 @@ The `SORT BY` clause is used to return the result rows sorted within each partit
 
 **Syntax**
 
-```
+```SQL
 SORT BY { expression [ sort_direction | nulls_sort_order ] [ , ... ] }
 ```
 
@@ -6411,7 +6411,7 @@ SORT BY { expression [ sort_direction | nulls_sort_order ] [ , ... ] }
 
 **Examples**
 
-```
+```SQL
 CREATE TABLE person (zip_code INT, name STRING, age INT);
 INSERT INTO person VALUES
 (94588, 'Shirley Rodriguez', 50),
@@ -6517,7 +6517,7 @@ The `UNPIVOT` clause transforms multiple columns into multiple rows used in `SEL
 
 **Syntax**
 
-```
+```SQL
 UNPIVOT [ { INCLUDE | EXCLUDE } NULLS ] (
     { single_value_column_unpivot | multi_value_column_unpivot }
 ) [[AS] alias]
@@ -6546,7 +6546,7 @@ multi_value_column_unpivot:
 
 **Examples**
 
-```
+```SQL
 CREATE TABLE sales_quarterly (year INT, q1 INT, q2 INT, q3 INT, q4 INT);
 INSERT INTO sales_quarterly VALUES
 (2020, null, 1000, 2000, 2500),

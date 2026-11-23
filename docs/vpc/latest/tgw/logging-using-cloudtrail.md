@@ -46,7 +46,7 @@ The following is an example CloudTrail log record for the transit gateway API fo
 
 **Example: CreateTransitGateway**
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

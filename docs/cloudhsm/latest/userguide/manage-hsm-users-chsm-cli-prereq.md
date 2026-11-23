@@ -28,7 +28,7 @@ Before you use CloudHSM CLI to manage hardware security modules (HSM) users in A
 **To get an IP address for an HSM (AWS CLI)**
 + Get the IP address of an HSM by using the **[describe-clusters](https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/describe-clusters.html)** command from the AWS CLI. In the output from the command, the IP address of the HSMs are the values of `EniIp` and `EniIpV6` (if it is a dual-stack cluster).
 
-  ```
+  ```bash
   $ aws cloudhsmv2 describe-clusters
   {
       "Clusters": [

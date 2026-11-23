@@ -574,7 +574,7 @@ If you use single-database mode, you don't need to use a transformation rule to 
 
 The following transformation rule example shows how to rename the schema name from `mydb_dbo` back to `dbo`:
 
-```
+```json
 {
     "rules": [
         {

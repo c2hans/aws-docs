@@ -19,12 +19,12 @@ See [below](#non-file-IP) for IP address ranges for the Asia Pacific (Hong Kong)
  To find the IP ranges in the `ip-ranges.json` file:
 + For Windows, using the AWS Tools for Windows PowerShell, run the following command.
 
-  ```
+  ```powershell
   Get-AWSPublicIpAddressRange -ServiceKey CLOUD9
   ```
 + For Linux, download the [ip-ranges.json](https://ip-ranges.amazonaws.com/ip-ranges.json) file. Then, you can query it by using a tool such as ** `jq` ** by running the following command.
 
-  ```
+  ```sh
   jq '.prefixes[] | select(.service=="CLOUD9")' < ip-ranges.json
   ```
 

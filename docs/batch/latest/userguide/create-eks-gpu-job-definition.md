@@ -8,7 +8,7 @@ Only `nvidia.com/gpu` is supported at this time and resource value that you set 
 
 To register a GPU job definition for Amazon EKS, run the following commands.
 
-```
+```sh
 $ cat <<EOF > ./batch-eks-gpu-jd.json
 {
     "jobDefinitionName": "MyGPUJobOnEks_Smi",

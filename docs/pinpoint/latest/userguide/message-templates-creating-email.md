@@ -62,7 +62,7 @@ To test the template before you use it in an email message that you send to user
 
 Including an unsubscribe link in your email is a best practice, and in some countries it's a legal requirement. In your unsubscribe links, you can include a special attribute, `ses:tags="unsubscribeLinkTag:{{value}}"`, where {{value}} is any value that you define. If a recipient clicks a link that contains this special attribute, Amazon Pinpoint counts it as an opt-out event for analytics purposes (for example, in the Opt-out rate metric on the [Analytics overview page](analytics-overview.md)). The following example shows the syntax for this type of link:
 
-```
+```html
 <a ses:tags="unsubscribeLinkTag:optout" href="https://www.example.com/preferences">Unsubscribe</a>
 ```
 

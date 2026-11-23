@@ -46,7 +46,7 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
  If you don't have an existing document repository, a version control repository is a great place to start building your runbook library. You can build your runbooks using Markdown. We have provided an example runbook template that you can use to start building runbooks.
 
-```
+```markdown
 # Runbook Title
 ## Runbook Info
 | Runbook ID | Description | Tools Used | Special Permissions | Runbook Author | Last Updated | Escalation POC |

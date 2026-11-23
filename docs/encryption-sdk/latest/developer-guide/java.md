@@ -54,7 +54,7 @@ To install the AWS Encryption SDK for Java, clone or download the [aws-encryptio
 **Using Apache Maven**
 The AWS Encryption SDK for Java is available through [Apache Maven](https://maven.apache.org/) with the following dependency definition.
 
-```
+```xml
 <dependency>
   <groupId>com.amazonaws</groupId>
   <artifactId>aws-encryption-sdk-java</artifactId>

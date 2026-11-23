@@ -23,7 +23,7 @@ Some variables in these examples have been deliberately obfuscated. Replace them
 
 To make AMB Query API requests, you must use the user credentials (AWS\_ACCESS\_KEY\_ID and AWS\_SECRET\_ACCESS\_KEY) that have the appropriate IAM permissions for Amazon Managed Blockchain (AMB) Query. In a terminal with the AWS CLI installed, run the following command to create an IAM policy to access AMB Query API operations:
 
-```
+```json
 cat <<EOT > ~/{{amb-query-access-policy.json}}
 {
     "Version": "2012-10-17",
@@ -59,7 +59,7 @@ The following examples use the `ListTransactions` and the `GetTransaction` API a
 **Example — Make the `ListTransactions` API action using Go**
 Copy the following code to a file named `listTransactions.go` in the *ListTransactions* directory.
 
-```
+```go
 package main
 
 import (
@@ -121,7 +121,7 @@ After you save the file, run the code by using the following command inside the 
 
 The output that follows resembles the following:
 
-```
+```json
 {
   Transactions: [
     {
@@ -149,7 +149,7 @@ The output that follows resembles the following:
 **Example — Make the `GetTransaction` API action by using Go**
 This example uses a transaction hash from the previous output. Copy the following code to a file named `GetTransaction.go` in the *GetTransaction* directory.
 
-```
+```Go
 package main
 
 import (
@@ -194,7 +194,7 @@ func main() {
 After you save the file, run the code by using the following command inside the *GetTransaction* directory: `go run GetTransaction.go`.
 The output that follows resembles the following:
 
-```
+```json
 {
   Transaction: {
     BlockHash: "0x000005c6a71d1afbc005a652b6ceca71cd516d97b0fc514c2a1d0f2ca3912345",
@@ -223,7 +223,7 @@ The `GetTokenBalance` API provides a way for you to get the balance of native to
 **Example — Use the `GetTokenBalance` API action to get the balance of a native token in Go**
 In the following example, you use the `GetTokenBalance` API to get an address Ether (ETH) balance on the Ethereum Mainnet. Copy the following code to a file named `GetTokenBalanceEth.go` in the *GetTokenBalance* directory.
 
-```
+```Go
 package main
 
 import (
@@ -271,7 +271,7 @@ func main() {
 After you save the file, run the code by using the following command inside the *GetTokenBalance* directory: `go run GetTokenBalanceEth.go`.
 The output that follows resembles the following:
 
-```
+```json
 {
   AtBlockchainInstant: {
     Time: 2020-12-05 11:51:01 +0000 UTC
@@ -314,7 +314,7 @@ The following example shows you how to make AMB Query API requests by using Axio
 
 Copy the following `package.json` file into your local environment's working directory:
 
-```
+```json
 {
   "name": "{{amb-query-examples}}",
   "version": "1.0.0",
@@ -339,7 +339,7 @@ Copy the following `package.json` file into your local environment's working dir
 You can use the `GetTokenBalance` API to get the balance of various tokens (for example, ERC20, ERC721, and ERC1155) and native coins (for example, ETH and BTC), which you can use to get the current balance of an externally owned account (EOA) based on a historical `timestamp` (Unix timestamp - seconds). In this example, you use the [`GetTokenBalance`](https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIReference/GetTokenBalance.html) API to get an address balance of an ERC20 token, USDC, on the Ethereum Mainnet.
 To test the `GetTokenBalance` API, copy the following code into a file named `token-balance.js`, and save the file into the same working directory:
 
-```
+```JavaScript
 const axios = require('axios').default;
 const SHA256 = require('@aws-crypto/sha256-js').Sha256
 const defaultProvider = require('@aws-sdk/credential-provider-node').defaultProvider
@@ -415,7 +415,7 @@ node token-balance.js
 ```
  This command runs the script, passing in the arguments defined in the code to request the ERC20 USDC balance of the EOA listed on the Ethereum Mainnet. The response is similar to the following:
 
-```
+```json
  {
   atBlockchainInstant: { time: 1688076218 },
   balance: '140386693440144',
@@ -444,7 +444,7 @@ The following Python example uses modules from boto3 to send requests affixed wi
 
 Copy the following `list-transaction-events.py` file into your local environment's working directory:
 
-```
+```python
 import json
 from botocore.auth import SigV4Auth
 from botocore.awsrequest import AWSRequest
@@ -482,7 +482,7 @@ print(json.loads({{listTransactionEvents}}.content.decode('utf-8')))
 
 To run the sample code to `ListTransactionEvents`, save the file in your working directory and then run the command `python3 list-transaction-events.py`. This command runs the script, passing in the arguments defined in the code to request the events associated with the given transaction hash on the Ethereum Mainnet. The response is similar to the following:
 
-```
+```json
 {
  'events':
  [

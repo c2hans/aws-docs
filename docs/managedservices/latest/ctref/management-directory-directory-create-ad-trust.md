@@ -152,7 +152,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-directory-directory-create-ad-trust-ex-min"></a>
 
-```
+```json
 {
     "DocumentName": "AWSManagedServices-CreateADTrust",
     "Region": "us-east-1",
@@ -169,7 +169,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-directory-directory-create-ad-trust-ex-max"></a>
 
-```
+```json
 {
     "DocumentName": "AWSManagedServices-CreateADTrust",
     "Region": "us-east-1",

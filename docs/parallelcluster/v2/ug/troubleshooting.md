@@ -154,12 +154,12 @@ This section continues to explore how you can troubleshoot node related issues, 
     + Submit a job to let Slurm spin up a new node.
     + After the node starts, enable termination protection using this command.
 
-      ```
+      ```bash
       aws ec2 modify-instance-attribute --instance-id i-xyz --disable-api-termination
       ```
     + Retrieve the console output from the node with this command.
 
-      ```
+      ```bash
       aws ec2 get-console-output --instance-id i-xyz --output text
       ```
 
@@ -364,7 +364,7 @@ This section is relevant to cluster resources when they fail to create.
 
 When a resource fails to create, ParallelCluster returns an error message like the following.
 
-```
+```bash
 pcluster create -c config {{my-cluster}}
 Beginning cluster creation for cluster: my-cluster
 WARNING: The instance type 'p4d.24xlarge' cannot take public IPs. Please make sure that the subnet with
@@ -404,7 +404,7 @@ View CloudFormation error messages from the console.
 
 1. An example of a AWS CloudFormation error message:
 
-   ```
+   ```bash
    2022-02-07 11:59:14 UTC-0800	MasterServerSubstack	CREATE_FAILED	Embedded stack
    arn:aws:cloudformation:region-id:123456789012:stack/parallelcluster-my-cluster-MasterServerSubstack-ABCDEFGHIJKL/a1234567-b321-c765-d432-dcba98766789
    was not successfully created: The following resource(s) failed to create: [MasterServer].

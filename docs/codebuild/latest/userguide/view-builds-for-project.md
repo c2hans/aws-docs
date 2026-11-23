@@ -29,7 +29,7 @@ For more information about using the AWS CLI with AWS CodeBuild, see the [Comman
 
 Run the **list-builds-for-project** command, as follows:
 
-```
+```bash
 aws codebuild list-builds-for-project --project-name {{project-name}} --sort-order {{sort-order}} --next-token {{next-token}}
 ```
 
@@ -40,13 +40,13 @@ In the preceding command, replace the following placeholders:
 
 For example, if you run a command similar to this:
 
-```
+```bash
 aws codebuild list-builds-for-project --project-name codebuild-demo-project --sort-order ASCENDING
 ```
 
 A result like the following might appear in the output:
 
-```
+```json
 {
   "nextToken": "4AEA6u7J{{...The full token has been omitted for brevity...}}MzY2OA==",
   "ids": [
@@ -60,13 +60,13 @@ A result like the following might appear in the output:
 
 If you run this command again:
 
-```
+```bash
 aws codebuild list-builds-for-project --project-name codebuild-demo-project --sort-order ASCENDING --next-token 4AEA6u7J{{...The full token has been omitted for brevity...}}MzY2OA==
 ```
 
 You might see a result like the following in the output:
 
-```
+```json
 {
   "ids": [
     "codebuild-demo-project:98253670-7a8a-4546-b908-dc890EXAMPLE"
@@ -84,7 +84,7 @@ For more information about using the AWS CLI with AWS CodeBuild, see the [Comman
 
 Run the **list-build-batches-for-project** command, as follows:
 
-```
+```bash
 aws codebuild list-build-batches-for-project --project-name {{project-name}} --sort-order {{sort-order}} --next-token {{next-token}}
 ```
 
@@ -95,13 +95,13 @@ In the preceding command, replace the following placeholders:
 
 For example, if you run a command similar to this:
 
-```
+```bash
 aws codebuild list-build-batches-for-project --project-name codebuild-demo-project --sort-order ASCENDING
 ```
 
 A result like the following might appear in the output:
 
-```
+```json
 {
   "nextToken": "4AEA6u7J{{...The full token has been omitted for brevity...}}MzY2OA==",
   "ids": [
@@ -115,13 +115,13 @@ A result like the following might appear in the output:
 
 If you run this command again:
 
-```
+```bash
 aws codebuild list-build-batches-for-project --project-name codebuild-demo-project --sort-order ASCENDING --next-token 4AEA6u7J{{...The full token has been omitted for brevity...}}MzY2OA==
 ```
 
 You might see a result like the following in the output:
 
-```
+```json
 {
   "ids": [
     "codebuild-demo-project:98253670-7a8a-4546-b908-dc890EXAMPLE"

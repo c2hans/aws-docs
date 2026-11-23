@@ -35,7 +35,7 @@ For more information, see [Tutorial: Getting started with AWS Glue Studio](https
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
 namespace Glue;
 
 use Aws\Glue\GlueClient;
@@ -373,7 +373,7 @@ The following code example shows how to use `CreateCrawler`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         $crawlerName = "example-crawler-test-" . $uniqid;
 
         $role = $iamService->getRole("AWSGlueServiceRole-DocExample");
@@ -408,7 +408,7 @@ The following code example shows how to use `CreateJob`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         $role = $iamService->getRole("AWSGlueServiceRole-DocExample");
 
         $jobName = 'test-job-' . $uniqid;
@@ -440,7 +440,7 @@ The following code example shows how to use `DeleteCrawler`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         echo "Delete the crawler.\n";
         $glueClient->deleteCrawler([
             'Name' => $crawlerName,
@@ -463,7 +463,7 @@ The following code example shows how to use `DeleteDatabase`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         echo "Delete the databases.\n";
         $glueClient->deleteDatabase([
             'Name' => $databaseName,
@@ -486,7 +486,7 @@ The following code example shows how to use `DeleteJob`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         echo "Delete the job.\n";
         $glueClient->deleteJob([
             'JobName' => $job['Name'],
@@ -509,7 +509,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         echo "Delete the tables.\n";
         foreach ($tables['TableList'] as $table) {
             $glueService->deleteTable($table['Name'], $databaseName);
@@ -533,7 +533,7 @@ The following code example shows how to use `GetCrawler`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         echo "Waiting for crawler";
         do {
             $crawler = $glueService->getCrawler($crawlerName);
@@ -561,7 +561,7 @@ The following code example shows how to use `GetDatabase`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         $databaseName = "doc-example-database-$uniqid";
 
         $database = $glueService->getDatabase($databaseName);
@@ -586,7 +586,7 @@ The following code example shows how to use `GetJobRun`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         $jobName = 'test-job-' . $uniqid;
 
         $outputBucketUrl = "s3://$bucketName";
@@ -619,7 +619,7 @@ The following code example shows how to use `GetJobRuns`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         $jobName = 'test-job-' . $uniqid;
 
         $jobRuns = $glueService->getJobRuns($jobName);
@@ -646,7 +646,7 @@ The following code example shows how to use `GetTables`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         $databaseName = "doc-example-database-$uniqid";
 
         $tables = $glueService->getTables($databaseName);
@@ -668,7 +668,7 @@ The following code example shows how to use `ListJobs`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         $jobs = $glueService->listJobs();
         echo "Current jobs:\n";
         foreach ($jobs['JobNames'] as $jobsName) {
@@ -700,7 +700,7 @@ The following code example shows how to use `StartCrawler`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         $crawlerName = "example-crawler-test-" . $uniqid;
 
         $databaseName = "doc-example-database-$uniqid";
@@ -724,7 +724,7 @@ The following code example shows how to use `StartJobRun`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         $jobName = 'test-job-' . $uniqid;
 
         $databaseName = "doc-example-database-$uniqid";

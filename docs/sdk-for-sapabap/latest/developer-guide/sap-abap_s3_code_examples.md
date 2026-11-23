@@ -35,7 +35,7 @@ The following code example shows how to:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     DATA(lo_session) = /aws1/cl_rt_session_aws=>create( cv_pfl ).
     DATA(lo_s3) = /aws1/cl_s3_factory=>create( lo_session ).
 
@@ -163,7 +163,7 @@ The following code example shows how to use `CopyObject`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_s3->copyobject(
           iv_bucket = iv_dest_bucket
@@ -186,7 +186,7 @@ The following code example shows how to use `CreateBucket`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         " determine our region from our session
         DATA(lv_region) = CONV /aws1/s3_bucketlocationcnstrnt( lo_session->get_region( ) ).
@@ -219,7 +219,7 @@ The following code example shows how to use `DeleteBucket`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
 
         lo_s3->deletebucket(
@@ -239,7 +239,7 @@ The following code example shows how to use `DeleteBucketCors`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_s3->deletebucketcors(
           iv_bucket = iv_bucket_name ).
@@ -258,7 +258,7 @@ The following code example shows how to use `DeleteBucketLifecycle`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_s3->deletebucketlifecycle(
           iv_bucket = iv_bucket_name ).
@@ -277,7 +277,7 @@ The following code example shows how to use `DeleteBucketPolicy`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_s3->deletebucketpolicy(
           iv_bucket = iv_bucket_name ).
@@ -296,7 +296,7 @@ The following code example shows how to use `DeleteObject`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_s3->deleteobject(
             iv_bucket = iv_bucket_name
@@ -316,7 +316,7 @@ The following code example shows how to use `DeleteObjects`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->deleteobjects(         " oo_result is returned for testing purposes. "
           iv_bucket = iv_bucket_name
@@ -336,7 +336,7 @@ The following code example shows how to use `GetBucketAcl`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->getbucketacl(         " oo_result is returned for testing purposes. "
           iv_bucket = iv_bucket_name ).
@@ -355,7 +355,7 @@ The following code example shows how to use `GetBucketCors`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->getbucketcors(         " oo_result is returned for testing purposes. "
           iv_bucket = iv_bucket_name ).
@@ -374,7 +374,7 @@ The following code example shows how to use `GetBucketLifecycleConfiguration`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->getbucketlifecycleconf(         " oo_result is returned for testing purposes. "
           iv_bucket = iv_bucket_name ).
@@ -393,7 +393,7 @@ The following code example shows how to use `GetBucketPolicy`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->getbucketpolicy(         " oo_result is returned for testing purposes. "
           iv_bucket = iv_bucket_name ).
@@ -413,7 +413,7 @@ The following code example shows how to use `GetObject`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->getobject(           " oo_result is returned for testing purposes. "
                   iv_bucket = iv_bucket_name
@@ -436,7 +436,7 @@ The following code example shows how to use `GetObjectAcl`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->getobjectacl(         " oo_result is returned for testing purposes. "
           iv_bucket = iv_bucket_name
@@ -458,7 +458,7 @@ The following code example shows how to use `GetObjectLegalHold`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->getobjectlegalhold(         " oo_result is returned for testing purposes. "
           iv_bucket = iv_bucket_name
@@ -480,7 +480,7 @@ The following code example shows how to use `GetObjectLockConfiguration`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->getobjectlockconfiguration(         " oo_result is returned for testing purposes. "
           iv_bucket = iv_bucket_name ).
@@ -499,7 +499,7 @@ The following code example shows how to use `HeadBucket`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->headbucket(         " oo_result is returned for testing purposes. "
           iv_bucket = iv_bucket_name ).
@@ -518,7 +518,7 @@ The following code example shows how to use `ListBuckets`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->listbuckets(         " oo_result is returned for testing purposes. "
         ).
@@ -538,7 +538,7 @@ The following code example shows how to use `ListObjectVersions`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->listobjectversions(         " oo_result is returned for testing purposes. "
           iv_bucket = iv_bucket_name
@@ -558,7 +558,7 @@ The following code example shows how to use `ListObjectsV2`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->listobjectsv2(         " oo_result is returned for testing purposes. "
           iv_bucket = iv_bucket_name ).
@@ -577,7 +577,7 @@ The following code example shows how to use `PutBucketAcl`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example: Grant log delivery access to a bucket
         " iv_grantwrite = 'uri=http://acs.amazonaws.com/groups/s3/LogDelivery'
@@ -599,7 +599,7 @@ The following code example shows how to use `PutBucketCors`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example: Allow PUT, POST, DELETE methods from http://www.example.com
         lo_s3->putbucketcors(
@@ -621,7 +621,7 @@ The following code example shows how to use `PutBucketLifecycleConfiguration`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example: Expire objects with prefix 'logs/' after 30 days
         lo_s3->putbucketlifecycleconf(
@@ -643,7 +643,7 @@ The following code example shows how to use `PutBucketPolicy`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example policy JSON string
         " iv_policy = '{"Version":"2012-10-17",		 	 	 "Statement":[{"Effect":"Allow","Principal":{"AWS":"arn:aws:iam::123456789012:user/user"},"Action":["s3:GetObject"],"Resource":["arn:aws:s3:::bucketname/*"]}]}'
@@ -665,7 +665,7 @@ The following code example shows how to use `PutBucketVersioning`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example: Enable versioning on a bucket
         " iv_status = 'Enabled'
@@ -688,7 +688,7 @@ The following code example shows how to use `PutObject`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     "Get contents of file from application server."
     DATA lv_body TYPE xstring.
     OPEN DATASET iv_file_name FOR INPUT IN BINARY MODE.
@@ -716,7 +716,7 @@ The following code example shows how to use `PutObjectAcl`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example: Grant read access to an AWS user
         " iv_grantread = 'emailAddress=user@example.com'
@@ -741,7 +741,7 @@ The following code example shows how to use `PutObjectLegalHold`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example: Set legal hold status to ON
         " iv_status = 'ON'
@@ -767,7 +767,7 @@ The following code example shows how to use `PutObjectLockConfiguration`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example: Enable object lock with default retention
         " iv_enabled = 'Enabled'
@@ -790,7 +790,7 @@ The following code example shows how to use `PutObjectRetention`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example: Set retention mode to GOVERNANCE for 30 days
         " iv_mode = 'GOVERNANCE'
@@ -823,7 +823,7 @@ The following code example shows how to create a presigned URL for Amazon S3 and
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 Create presigned requests to GET S3 objects.
 
-```
+```sap-abap
     " iv_bucket_name is the bucket name
     " iv_key is the object name like "myfile.txt"
 

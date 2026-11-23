@@ -15,7 +15,7 @@ To learn more about the Document Model, see [.NET Document Model](https://docs.a
 
 To create a DynamoDB client:
 
-```
+```csharp
 var client = new AmazonDynamoDBClient(credentials,region);
 DynamoDBContext context = new DynamoDBContext(client);
 ```
@@ -28,7 +28,7 @@ DynamoDBContext context = new DynamoDBContext(client);
 
 Create an item:
 
-```
+```csharp
 Table table = Table.LoadTable(client, "Books");
 id = Guid.NewGuid().ToString();
 var books = new Document();
@@ -41,7 +41,7 @@ books["Price"] = "10";
 
 Save an item to a DynamoDB table:
 
-```
+```csharp
 var book = await table.PutItemAsync(books);
 ```
 
@@ -50,7 +50,7 @@ var book = await table.PutItemAsync(books);
 
 To retrieve an item:
 
-```
+```csharp
 public async Task GetItemAsync(AWSCredentials credentials, RegionEndpoint region)
 {
       var client = new AmazonDynamoDBClient(credentials, region);
@@ -64,7 +64,7 @@ public async Task GetItemAsync(AWSCredentials credentials, RegionEndpoint region
 
 To update an item:
 
-```
+```csharp
 public async Task UpdateItemAttributesAsync(AWSCredentials credentials, RegionEndpoint region)
 {
       var book = new Document();
@@ -78,7 +78,7 @@ public async Task UpdateItemAttributesAsync(AWSCredentials credentials, RegionEn
 
 To update an item conditionally:
 
-```
+```csharp
 public async Task UpdateItemConditionallyAsync(AWSCredentials credentials, RegionEndpoint region) {
       var book = new Document();
       book["Id"] = id;
@@ -101,7 +101,7 @@ public async Task UpdateItemConditionallyAsync(AWSCredentials credentials, Regio
 
 To delete an item:
 
-```
+```csharp
 public async Task DeleteItemAsync(AWSCredentials credentials, RegionEndpoint region)
 {
   var client = new AmazonDynamoDBClient(credentials, region);
@@ -115,7 +115,7 @@ public async Task DeleteItemAsync(AWSCredentials credentials, RegionEndpoint reg
 
 To query and retrieve all books whose author is “Mark Twain”:
 
-```
+```csharp
 public async Task QueryAsync(AWSCredentials credentials, RegionEndpoint region) {
   var client = new AmazonDynamoDBClient(credentials, region);
   Table books = Table.LoadTable(client, "Books");
@@ -133,7 +133,7 @@ public async Task QueryAsync(AWSCredentials credentials, RegionEndpoint region) 
 
 The scan example code below returns all books in our table:
 
-```
+```csharp
 public async Task ScanAsync(AWSCredentials credentials, RegionEndpoint region) {
       var client = new AmazonDynamoDBClient(credentials, region);
       Table books = Table.LoadTable(client, "Books");

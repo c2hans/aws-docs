@@ -21,11 +21,15 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
 ![Diagram showing the OUs and accounts created by AWS Control Tower](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/ous-accounts-by-control-tower.png)
 
+*OUs and accounts created by AWS Control Tower*
+
  **AWS Control Tower allows you to create, register, and manage additional OUs to expand the initial environment to implement the guidance.**
 
  The following diagram shows the OUs initially deployed by AWS Control Tower. You can expand your AWS environment to implement any of the recommended OUs included in the diagram, to meet your requirements.
 
 ![Diagram showing OUs initially deployed by AWS Control Tower](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/initial-ous-by-control-tower.png)
+
+*OUs initially deployed by AWS Control Tower*
 
 ## Next steps for setting up your multi-account environment
 <a name="next-steps-for-setting-up-your-multi-account-environment"></a>

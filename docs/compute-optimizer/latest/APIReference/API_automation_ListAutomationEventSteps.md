@@ -31,7 +31,7 @@ Pattern: `[0-9A-Za-z]{16}`
 Required: Yes
 
  ** [maxResults](#API_automation_ListAutomationEventSteps_RequestSyntax) **   <a name="computeoptimizer-automation_ListAutomationEventSteps-request-maxResults"></a>
-The maximum number of automation event steps to return in a single response. Valid range is 1-1000.
+The maximum number of automation event steps to return in a single response. If you don't specify a value, the default is 100.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
@@ -91,11 +91,11 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
  You do not have sufficient permissions to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ForbiddenException **
  You are not authorized to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** InternalServerException **
  An internal error occurred while processing the request.
@@ -107,19 +107,19 @@ HTTP Status Code: 400
 
  ** OptInRequiredException **
  The account must be opted in to Compute Optimizer Automation before performing this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ResourceNotFoundException **
  The specified resource was not found.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ServiceUnavailableException **
  The service is temporarily unavailable.
-HTTP Status Code: 500
+HTTP Status Code: 503
 
  ** ThrottlingException **
  The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_automation_ListAutomationEventSteps_SeeAlso"></a>

@@ -14,7 +14,7 @@ This section describes how to configure AWS Health integration in ServiceNow.
 
 1. Set up an Amazon EventBridge rule to detect **Health Event** changes and push them to the queue. For more information, refer to [Getting started with Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html). The rule should have the following event pattern and point to the Amazon SQS queue from step 1:
 
-```
+```json
 "EventPattern":
 {
     "source":

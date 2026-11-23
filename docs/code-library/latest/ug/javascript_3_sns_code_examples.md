@@ -32,7 +32,7 @@ The following code example shows how to get started using Amazon SNS.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Initialize an SNS client and and list topics in your account.
 
-```
+```javascript
 import { SNSClient, paginateListTopics } from "@aws-sdk/client-sns";
 
 export const helloSns = async () => {
@@ -74,7 +74,7 @@ The following code example shows how to use `CheckIfPhoneNumberIsOptedOut`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -83,7 +83,7 @@ export const snsClient = new SNSClient({});
 ```
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { CheckIfPhoneNumberIsOptedOutCommand } from "@aws-sdk/client-sns";
 
 import { snsClient } from "../libs/snsClient.js";
@@ -123,7 +123,7 @@ The following code example shows how to use `ConfirmSubscription`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -132,7 +132,7 @@ export const snsClient = new SNSClient({});
 ```
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { ConfirmSubscriptionCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -182,7 +182,7 @@ The following code example shows how to use `CreateTopic`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -191,7 +191,7 @@ export const snsClient = new SNSClient({});
 ```
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { CreateTopicCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -229,7 +229,7 @@ The following code example shows how to use `DeleteTopic`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -238,7 +238,7 @@ export const snsClient = new SNSClient({});
 ```
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { DeleteTopicCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -274,7 +274,7 @@ The following code example shows how to use `GetSMSAttributes`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -283,7 +283,7 @@ export const snsClient = new SNSClient({});
 ```
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { GetSMSAttributesCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -322,7 +322,7 @@ The following code example shows how to use `GetTopicAttributes`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -331,7 +331,7 @@ export const snsClient = new SNSClient({});
 ```
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { GetTopicAttributesCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -381,7 +381,7 @@ The following code example shows how to use `ListSubscriptions`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -390,7 +390,7 @@ export const snsClient = new SNSClient({});
 ```
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { ListSubscriptionsByTopicCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -437,7 +437,7 @@ The following code example shows how to use `ListTopics`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -446,7 +446,7 @@ export const snsClient = new SNSClient({});
 ```
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { ListTopicsCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -479,7 +479,7 @@ The following code example shows how to use `Publish`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -488,7 +488,7 @@ export const snsClient = new SNSClient({});
 ```
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { PublishCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -524,7 +524,7 @@ export const publish = async (
 ```
 Publish a message to a topic with group, duplication, and attribute options.
 
-```
+```javascript
   async publishMessages() {
     const message = await this.prompter.input({
       message: MESSAGES.publishMessagePrompt,
@@ -601,7 +601,7 @@ The following code example shows how to use `SetSMSAttributes`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -610,7 +610,7 @@ export const snsClient = new SNSClient({});
 ```
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { SetSMSAttributesCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -654,7 +654,7 @@ The following code example shows how to use `SetTopicAttributes`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -663,7 +663,7 @@ export const snsClient = new SNSClient({});
 ```
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { SetTopicAttributesCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -705,7 +705,7 @@ The following code example shows how to use `Subscribe`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -714,7 +714,7 @@ export const snsClient = new SNSClient({});
 ```
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { SubscribeCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -749,7 +749,7 @@ export const subscribeEmail = async (
 ```
 Subscribe a mobile application to a topic.
 
-```
+```javascript
 import { SubscribeCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -786,7 +786,7 @@ export const subscribeApp = async (
 ```
 Subscribe a Lambda function to a topic.
 
-```
+```javascript
 import { SubscribeCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -822,7 +822,7 @@ export const subscribeLambda = async (
 ```
 Subscribe an SQS queue to a topic.
 
-```
+```javascript
 import { SubscribeCommand, SNSClient } from "@aws-sdk/client-sns";
 
 const client = new SNSClient({});
@@ -855,7 +855,7 @@ export const subscribeQueue = async (
 ```
 Subscribe with a filter to a topic.
 
-```
+```javascript
 import { SubscribeCommand, SNSClient } from "@aws-sdk/client-sns";
 
 const client = new SNSClient({});
@@ -905,7 +905,7 @@ The following code example shows how to use `Unsubscribe`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -914,7 +914,7 @@ export const snsClient = new SNSClient({});
 ```
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { UnsubscribeCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -1010,7 +1010,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-topics-queues#code-examples).
 This is the entry point for this scenario.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 import { SQSClient } from "@aws-sdk/client-sqs";
 
@@ -1030,7 +1030,7 @@ export const startSnsWorkflow = () => {
 ```
 The preceding code provides the necessary dependencies and starts the scenario. The next section contains the bulk of the example.
 
-```
+```javascript
 const toneChoices = [
   { name: "cheerful", value: "cheerful" },
   { name: "funny", value: "funny" },
@@ -1489,7 +1489,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/blob/main/integration-sns-to-lambda) repository.
 Consuming an SNS event with Lambda using JavaScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 exports.handler = async (event, context) => {
@@ -1512,7 +1512,7 @@ async function processMessageAsync(record) {
 ```
 Consuming an SNS event with Lambda using TypeScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import { SNSEvent, Context, SNSHandler, SNSEventRecord } from "aws-lambda";

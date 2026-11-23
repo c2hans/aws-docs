@@ -18,7 +18,7 @@ You can set `spark.sql.parquet.fs.optimized.committer.optimization-enabled` to `
 
 The following example shows how to enable the committer while running a spark-sql command.
 
-```
+```bash,sh,zsh
 spark-sql \
   --conf spark.sql.parquet.fs.optimized.committer.optimization-enabled=true \
   -e "INSERT OVERWRITE TABLE target_table SELECT * FROM source_table;"

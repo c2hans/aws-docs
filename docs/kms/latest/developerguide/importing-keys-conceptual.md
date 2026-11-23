@@ -33,7 +33,7 @@ To create KMS keys with imported key material, the principal needs the following
 + [kms:CreateKey](customer-managed-policies.md#iam-policy-example-create-key) (IAM policy)
   + To limit this permission to KMS keys with imported key material, use the [kms:KeyOrigin](conditions-kms.md#conditions-kms-key-origin) policy condition with a value of `EXTERNAL`.
 
-    ```
+    ```json
     {
       "Sid": "CreateKMSKeysWithoutKeyMaterial",
       "Effect": "Allow",
@@ -57,7 +57,7 @@ To delete imported key material, the principal needs [kms:DeleteImportedKeyMater
 
 For example, to give the example `KMSAdminRole` permission to manage all aspects of a KMS key with imported key material, include a key policy statement like the following one in the key policy of the KMS key.
 
-```
+```json
 {
   "Sid": "Manage KMS keys with imported key material",
   "Effect": "Allow",

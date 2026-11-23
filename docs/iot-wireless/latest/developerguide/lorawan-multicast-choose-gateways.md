@@ -55,7 +55,7 @@ The following shows the contents of the {{`input.json`}} file.
 
 **Contents of {{`input.json`}}**
 
-```
+```JSON
 {
     "LoRaWAN": {
     "DlClass": "ClassB",

@@ -15,7 +15,7 @@ Use the following steps to install the Kubernetes operator for Apache Spark.
 
 1. Authenticate your Helm client to the Amazon ECR registry. In the following command, replace the {{region-id}} values with your preferred AWS Region, and the corresponding {{ECR-registry-account}} value for the Region from the [Amazon ECR registry accounts by Region](docker-custom-images-tag.md#docker-custom-images-ECR) page.
 
-   ```
+   ```bash,sh,zsh
    aws ecr get-login-password \
    --region {{region-id}} | helm registry login \
    --username AWS \
@@ -26,7 +26,7 @@ Use the following steps to install the Kubernetes operator for Apache Spark.
 
    For the Helm chart `--version` parameter, use your Amazon EMR release label with the `emr-` prefix and date suffix removed. For example, with the `emr-6.12.0-java17-latest` release, specify `6.12.0-java17`. The example in the following command uses the `emr-7.13.0-latest` release, so it specifies `7.13.0` for the Helm chart `--version`.
 
-   ```
+   ```bash,sh,zsh
    helm install spark-operator-demo \
      oci://895885662937.dkr.ecr.{{region-id}}.amazonaws.com/spark-operator \
      --set emrContainers.awsRegion={{region-id}} \
@@ -37,19 +37,19 @@ Use the following steps to install the Kubernetes operator for Apache Spark.
 
    By default, the command creates service account `emr-containers-sa-spark-operator` for the Spark operator. To use a different service account, provide the argument `serviceAccounts.sparkoperator.name`. For example:
 
-   ```
+   ```bash,sh,zsh
    --set serviceAccounts.sparkoperator.name {{my-service-account-for-spark-operator}}
    ```
 
    If you want to [use vertical autoscaling with the Spark operator](), add the following line to the installation command to allow webhooks for the operator:
 
-   ```
+   ```bash,sh,zsh
    --set webhook.enable=true
    ```
 
 1. Verify that you installed the Helm chart with the `helm list` command:
 
-   ```
+   ```bash,sh,zsh
    helm list --namespace spark-operator -o yaml
    ```
 
@@ -76,7 +76,7 @@ The Spark operator is supported with Amazon EMR 6.10.0 or higher. When you insta
 
 1. Create a `SparkApplication` definition file `spark-pi.yaml` with the following example contents:
 
-   ```
+   ```yaml
    apiVersion: "sparkoperator.k8s.io/v1beta2"
    kind: SparkApplication
    metadata:
@@ -120,13 +120,13 @@ The Spark operator is supported with Amazon EMR 6.10.0 or higher. When you insta
 
 1. Now, submit the Spark application with the following command. This will also create a `SparkApplication` object named `spark-pi`:
 
-   ```
+   ```bash,sh,zsh
    kubectl apply -f spark-pi.yaml
    ```
 
 1. Check events for the `SparkApplication` object with the following command:
 
-   ```
+   ```bash,sh,zsh
    kubectl describe sparkapplication spark-pi --namespace spark-operator
    ```
 
@@ -137,7 +137,7 @@ For more information on submitting applications to Spark through the Spark opera
 
 To use Amazon S3 as your file storage option, add the following configurations to your YAML file.
 
-```
+```bash,sh,zsh
 hadoopConf:
 # EMRFS filesystem
   fs.s3.customAWSCredentialsProvider: com.amazonaws.auth.WebIdentityTokenCredentialsProvider

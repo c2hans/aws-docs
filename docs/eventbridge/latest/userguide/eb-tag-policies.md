@@ -13,7 +13,7 @@ For example, you could restrict access to resources that include a tag with the 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

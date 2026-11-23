@@ -28,6 +28,7 @@ Used to dynamically select a set of devices for a test run. A filter is made up 
   + INSTANCE\_ARN: The Amazon Resource Name (ARN) of the device instance.
   + INSTANCE\_LABELS: The label of the device instance.
   + FLEET\_TYPE: The fleet type. Valid values are PUBLIC or PRIVATE.
+  + DEVICE\_TYPE: The device type. Valid values are PHYSICAL or VIRTUAL.
 +  **Operator**
 
   The filter operator.
@@ -48,6 +49,7 @@ Used to dynamically select a set of devices for a test run. A filter is made up 
   + The AVAILABILITY attribute can be set to AVAILABLE, HIGHLY\_AVAILABLE, BUSY, or TEMPORARY\_NOT\_AVAILABLE.
   + The FORM\_FACTOR attribute can be set to PHONE or TABLET.
   + The FLEET\_TYPE attribute can be set to PUBLIC or PRIVATE.
+  + The DEVICE\_TYPE attribute can be set to PHYSICAL or VIRTUAL.
 Type: Array of [DeviceFilter](API_DeviceFilter.md) objects
 Required: Yes
 

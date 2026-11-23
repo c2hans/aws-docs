@@ -12,7 +12,7 @@ This Java sample shows how to activate a subordinate CA using the following AWS 
 + [GetCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_GetCertificate.html)
 + [ImportCertificateAuthorityCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_ImportCertificateAuthorityCertificate.html)
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.auth.AWSCredentials;

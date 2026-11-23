@@ -48,7 +48,7 @@ CloudTrail log files can contain one or more log entries. Each entry lists multi
 
  A log entry created by `[GetAuthorizationToken](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_GetAuthorizationToken.html)` includes the domain name in the `requestParameters` field.
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -97,7 +97,7 @@ CloudTrail log files can contain one or more log entries. Each entry lists multi
 
 Requests made by all package manager clients, including the ** `npm` ** client, have additional data logged including the domain name, repository name, and package name in the `requestParameters` field. The URL path and HTTP method are logged in the `additionalEventData` field.
 
-```
+```json
 {
    "eventVersion": "1.05",
    "userIdentity": {

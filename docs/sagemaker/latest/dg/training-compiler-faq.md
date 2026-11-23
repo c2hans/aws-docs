@@ -14,13 +14,13 @@ Use the following FAQ items to find answers to commonly asked questions about Sa
 If you successfully launched your training job with SageMaker Training Compiler, you receive the following log messages:
 + With `TrainingCompilerConfig(debug=False)`
 
-  ```
+  ```txt
   Found configuration for Training Compiler
   Configuring SM Training Compiler...
   ```
 + With `TrainingCompilerConfig(debug=True)`
 
-  ```
+  ```txt
   Found configuration for Training Compiler
   Configuring SM Training Compiler...
   Training Compiler set to debug mode

@@ -137,7 +137,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-kms-key-delete-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "KeyName": "kms_key_name",
   "Operation": "Delete",
@@ -148,7 +148,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-kms-key-delete-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "KeyName": "kms_key_name",
   "Operation": "Delete",

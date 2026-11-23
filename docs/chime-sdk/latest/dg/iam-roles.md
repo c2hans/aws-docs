@@ -15,7 +15,7 @@ This example shows a policy for developers building applications using Amazon Ch
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -67,7 +67,7 @@ This example shows a policy that allows users to access the Amazon Chime SDK use
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -131,7 +131,7 @@ This example shows a policy that gives users minimal access to Amazon Chime SDK 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -172,7 +172,7 @@ This example shows a policy for establishing a WebSocket connection for an `AppI
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

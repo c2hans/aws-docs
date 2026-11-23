@@ -93,7 +93,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of ListTagsForResource.
 
-```
+```json
 GET /tags/arn:aws:bedrock:us-west-2:123456789012:agent/ABCDEFGHIJ HTTP/1.1
 ```
 

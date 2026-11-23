@@ -52,7 +52,7 @@ You can also create an AWS RCS Agent using the AWS CLI. First, create the agent,
 
 Create the AWS RCS Agent:
 
-```
+```bash
 aws pinpoint-sms-voice-v2 create-rcs-agent \
     --deletion-protection-enabled
 ```

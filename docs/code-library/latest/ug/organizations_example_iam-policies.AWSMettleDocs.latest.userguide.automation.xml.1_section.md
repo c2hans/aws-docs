@@ -13,7 +13,7 @@ The following code example shows how to This permission-based policy enablesAuto
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

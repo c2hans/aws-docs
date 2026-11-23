@@ -24,7 +24,7 @@ aws sagemaker create-workforce --cognito-config '{"ClientId": "{{app-client-id}}
 
 Describe the workforce and make sure the status is `Initializing`.
 
-```
+```json
 aws sagemaker describe-workforce --workforce-name {{workforce-name}}
 {
     "Workforce": {

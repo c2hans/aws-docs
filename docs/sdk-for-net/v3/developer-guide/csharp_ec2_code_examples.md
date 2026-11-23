@@ -40,7 +40,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 Run a scenario at a command prompt.
 
-```
+```csharp
 /// <summary>
 /// Show Amazon Elastic Compute Cloud (Amazon EC2) Basics actions.
 /// </summary>
@@ -359,7 +359,7 @@ public class EC2Basics
 ```
 Define a class that wraps EC2 actions.
 
-```
+```csharp
 /// <summary>
 /// Methods of this class perform Amazon Elastic Compute Cloud (Amazon EC2).
 /// </summary>
@@ -1366,7 +1366,7 @@ The following code example shows how to use `AllocateAddress`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Allocates an Elastic IP address that can be associated with an Amazon EC2
     // instance. By using an Elastic IP address, you can keep the public IP address
@@ -1411,7 +1411,7 @@ The following code example shows how to use `AssociateAddress`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Associates an Elastic IP address with an instance. When this association is
     /// created, the Elastic IP's public IP address is immediately used as the public
@@ -1463,7 +1463,7 @@ The following code example shows how to use `AuthorizeSecurityGroupIngress`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Authorize the local computer ingress to EC2 instances associated
     /// with the virtual private cloud (VPC) security group.
@@ -1535,7 +1535,7 @@ The following code example shows how to use `CreateKeyPair`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an Amazon EC2 key pair with a specified name.
     /// </summary>
@@ -1616,7 +1616,7 @@ The following code example shows how to use `CreateLaunchTemplate`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/AutoScalerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Creates an Amazon EC2 launch template to use with Amazon EC2 Auto Scaling.
     /// The launch template specifies a Bash script in its user data field that runs after
@@ -1687,7 +1687,7 @@ The following code example shows how to use `CreateSecurityGroup`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an Amazon EC2 security group with a specified name and description.
     /// </summary>
@@ -1744,7 +1744,7 @@ The following code example shows how to use `DeleteKeyPair`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an Amazon EC2 key pair.
     /// </summary>
@@ -1795,7 +1795,7 @@ The following code example shows how to use `DeleteLaunchTemplate`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/AutoScalerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a launch template by name.
     /// </summary>
@@ -1838,7 +1838,7 @@ The following code example shows how to use `DeleteSecurityGroup`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an Amazon EC2 security group.
     /// </summary>
@@ -1880,7 +1880,7 @@ The following code example shows how to use `DescribeAvailabilityZones`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/AutoScalerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of Availability Zones in the AWS Region of the Amazon EC2 Client.
     /// </summary>
@@ -1915,7 +1915,7 @@ The following code example shows how to use `DescribeIamInstanceProfileAssociati
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/AutoScalerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the instance profile association data for an instance.
     /// </summary>
@@ -1961,7 +1961,7 @@ The following code example shows how to use `DescribeInstanceTypes`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Describe the instance types available.
     /// </summary>
@@ -2017,7 +2017,7 @@ The following code example shows how to use `DescribeInstances`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information about EC2 instances with a particular state.
     /// </summary>
@@ -2083,7 +2083,7 @@ The following code example shows how to use `DescribeKeyPairs`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information about an Amazon EC2 key pair.
     /// </summary>
@@ -2133,7 +2133,7 @@ The following code example shows how to use `DescribeSecurityGroups`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Retrieve information for one or all Amazon EC2 security group.
     /// </summary>
@@ -2235,7 +2235,7 @@ The following code example shows how to use `DescribeSubnets`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/AutoScalerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get all the subnets for a Vpc in a set of availability zones.
     /// </summary>
@@ -2292,7 +2292,7 @@ The following code example shows how to use `DescribeVpcs`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/AutoScalerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the default VPC for the account.
     /// </summary>
@@ -2337,7 +2337,7 @@ The following code example shows how to use `DisassociateAddress`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Disassociate an Elastic IP address from an EC2 instance.
     /// </summary>
@@ -2380,7 +2380,7 @@ The following code example shows how to use `RebootInstances`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 Reboot an instance by its Id.
 
-```
+```csharp
     /// <summary>
     /// Reboot a specific EC2 instance.
     /// </summary>
@@ -2452,7 +2452,7 @@ Reboot an instance by its Id.
 ```
 Replace the profile for an instance, reboot, and restart a web server.
 
-```
+```csharp
     /// <summary>
     /// Replace the profile associated with a running instance. After the profile is replaced, the instance
     /// is rebooted to ensure that it uses the new profile. When the instance is ready, Systems Manager is
@@ -2543,7 +2543,7 @@ The following code example shows how to use `ReleaseAddress`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Release an Elastic IP address. After the Elastic IP address is released,
     /// it can no longer be used.
@@ -2587,7 +2587,7 @@ The following code example shows how to use `ReplaceIamInstanceProfileAssociatio
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/AutoScalerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Replace the profile associated with a running instance. After the profile is replaced, the instance
     /// is rebooted to ensure that it uses the new profile. When the instance is ready, Systems Manager is
@@ -2678,7 +2678,7 @@ The following code example shows how to use `RunInstances`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create and run an EC2 instance.
     /// </summary>
@@ -2739,7 +2739,7 @@ The following code example shows how to use `StartInstances`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Start an EC2 instance.
     /// </summary>
@@ -2818,7 +2818,7 @@ The following code example shows how to use `StopInstances`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Stop an EC2 instance.
     /// </summary>
@@ -2898,7 +2898,7 @@ The following code example shows how to use `TerminateInstances`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Terminate an EC2 instance.
     /// </summary>
@@ -2989,7 +2989,7 @@ The following code example shows how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```csharp
     static async Task Main(string[] args)
     {
         _configuration = new ConfigurationBuilder()
@@ -3386,7 +3386,7 @@ Run the interactive scenario at a command prompt.
 ```
 Create a class that wraps Auto Scaling and Amazon EC2 actions.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates Amazon EC2 Auto Scaling and EC2 management methods.
 /// </summary>
@@ -4275,7 +4275,7 @@ public class AutoScalerWrapper
 ```
 Create a class that wraps Elastic Load Balancing actions.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates Elastic Load Balancer actions.
 /// </summary>
@@ -4569,7 +4569,7 @@ public class ElasticLoadBalancerWrapper
 ```
 Create a class that uses DynamoDB to simulate a recommendation service.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates a DynamoDB table to use as a service that recommends books, movies, and songs.
 /// </summary>
@@ -4712,7 +4712,7 @@ public class Recommendations
 ```
 Create a class that wraps Systems Manager actions.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates Systems Manager parameter operations. This example uses these parameters
 /// to drive the demonstration of resilient architecture, such as failure of a dependency or

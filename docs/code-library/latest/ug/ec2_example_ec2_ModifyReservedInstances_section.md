@@ -68,7 +68,7 @@ For more information, see [Modify Reserved Instances](https://docs.aws.amazon.co
 **Tools for PowerShell V4**
 **Example 1: This example modifies the Availability Zone, instance count, and platform for the specified Reserved instances.**
 
-```
+```powershell
 $config = New-Object Amazon.EC2.Model.ReservedInstancesConfiguration
 $config.AvailabilityZone = "us-west-2a"
 $config.InstanceCount = 1
@@ -83,7 +83,7 @@ Edit-EC2ReservedInstance `
 **Tools for PowerShell V5**
 **Example 1: This example modifies the Availability Zone, instance count, and platform for the specified Reserved instances.**
 
-```
+```powershell
 $config = New-Object Amazon.EC2.Model.ReservedInstancesConfiguration
 $config.AvailabilityZone = "us-west-2a"
 $config.InstanceCount = 1

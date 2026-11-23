@@ -9,11 +9,11 @@ An empty fair-share scheduling policy template is shown below. You can use this 
 **Note**
 You can generate a job queue template with the following AWS CLI command.
 
-```
+```sh
 $ aws batch create-scheduling-policy --generate-cli-skeleton
 ```
 
-```
+```json
 {
     "name": "",
     "fairsharePolicy": {

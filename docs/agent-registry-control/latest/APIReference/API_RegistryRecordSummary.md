@@ -38,7 +38,7 @@ Required: Yes
  ** recordType **   <a name="agentregistrycontrol-Type-RegistryRecordSummary-recordType"></a>
 The type of the registry record, such as MCP, AGENT, SKILL, or CUSTOM.
 Type: String
-Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY`
+Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY | WEB_BOT`
 Required: Yes
 
  ** recordVersion **   <a name="agentregistrycontrol-Type-RegistryRecordSummary-recordVersion"></a>

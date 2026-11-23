@@ -14,7 +14,7 @@ Now the fun begins. As you develop your application, you can refer to the [AWS S
 
 Whenever you run a program that accesses AWS services, you need an active AWS access portal session. You do this by running the following command.
 
-```
+```bash
 aws sso login
 ```
 
@@ -22,7 +22,7 @@ Since you have a default profile setup, you do not need to call the command with
 
 To test if you already have an active session, run the following AWS CLI command.
 
-```
+```bash
 aws sts get-caller-identity
 ```
 

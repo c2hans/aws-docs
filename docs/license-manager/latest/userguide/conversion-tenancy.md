@@ -42,28 +42,28 @@ aws ec2 modify-instance-placement --instance-id {{<instance_id>}} \
 
 `dedicated`
 
-```
+```sh
 aws ec2 modify-instance-placement --instance-id {{<instance_id>}} \
   --tenancy dedicated
 ```
 
 To change an instance from any tenancy to `host` tenancy with auto-placement, run the following command:
 
-```
+```sh
 aws ec2 modify-instance-placement --instance-id {{<instance_id>}} \
   --tenancy host --affinity default
 ```
 
 To change an instance from any tenancy to `host` tenancy, targeting a specific Dedicated Host, run the following command:
 
-```
+```sh
 aws ec2 modify-instance-placement --instance-id {{<instance_id>}} \
   --tenancy host --affinity host --host-id {{<host_id>}}
 ```
 
 To change an instance from any tenancy to `host` tenancy using a Host Resource Group, run the following command:
 
-```
+```sh
 aws ec2 modify-instance-placement --instance-id {{<instance_id>}} \
   --tenancy host --host-resource-group-arn {{<host_resource_group_arn>}}
 ```

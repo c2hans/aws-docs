@@ -72,21 +72,21 @@ starttime          | sequence |              rtrim
 
 To reconstruct the SQL stored in the `text` column of STL\_UTILITYTEXT, run a SELECT statement to create SQL from 1 or more parts in the `text` column. Before running the reconstructed SQL, replace any (`\n`) special characters with a new line. The result of the following SELECT statement is rows of reconstructed SQL in the `query_statement` field.
 
-```
+```sql
 SELECT LISTAGG(CASE WHEN LEN(RTRIM(text)) = 0 THEN text ELSE RTRIM(text) END) WITHIN GROUP (ORDER BY sequence) as query_statement
 FROM stl_utilitytext GROUP BY xid order by xid;
 ```
 
 For example, the following query sets the query\_group to a string of zeros. The query itself is longer than 200 characters and is stored in parts in STL\_UTILITYTEXT.
 
-```
+```sql
 set query_group to '00000000000000000000000000000000000000000000000000000000000000000000000000000000
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000                  000000';
 ```
 
 In this example, the query is stored in 2 parts (rows) in the `text` column of STL\_UTILITYTEXT.
 
-```
+```sql
 select query, sequence, text
 from stl_utilitytext where query=pg_last_query_id() order by query desc, sequence limit 10;
 ```

@@ -45,7 +45,7 @@ To maintain cluster stability, version downgrades aren't supported.
 
    The output of this command includes a list of the Apache Kafka versions to which you can upgrade the cluster. It looks like the following example.
 
-   ```
+   ```JSON
    {
        "CompatibleKafkaVersions": [
            {
@@ -73,7 +73,7 @@ Cluster versions aren't simple integers. To find the current version of the clus
 
    The output of the previous command looks like the following JSON.
 
-   ```
+   ```JSON
    {
 
        "ClusterArn": "arn:aws:kafka:us-east-1:012345678012:cluster/exampleClusterName/abcdefab-1234-abcd-5678-cdef0123ab01-2",
@@ -89,7 +89,7 @@ Cluster versions aren't simple integers. To find the current version of the clus
 
    The output of this `describe-cluster-operation` command looks like the following JSON example.
 
-   ```
+   ```JSON
    {
        "ClusterOperationInfo": {
            "ClientRequestId": "62cd41d2-1206-4ebf-85a8-dbb2ba0fe259",

@@ -134,7 +134,7 @@ Both endpoint types populate the `aws:SourceVpc` attribute with the VPC ID, so b
 
 VPC endpoint policies control which Amazon S3 resources can be accessed through the endpoint. By default, a VPC endpoint allows all Amazon S3 actions on all resources. You can scope the endpoint policy to allow only specific access points:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -196,7 +196,7 @@ The VPC origin configuration effectively denies requests where `aws:SourceVpc` d
 
 **Example access point policy (VPC origin):** With VPC origin, the network restriction is built in. The access point policy only needs to grant the desired permissions.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -225,7 +225,7 @@ With internet origin, you restrict access to the VPC using `aws:SourceVpc` condi
 
 **Example access point policy (internet origin):** The policy includes both an Allow with a VPC condition and a Deny for requests not from the VPC.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

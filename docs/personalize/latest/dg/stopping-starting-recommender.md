@@ -47,7 +47,7 @@ You can stop a recommender from the details page for the recommender in the Amaz
 
 To stop an active recommender with the AWS CLI, use the `stop-recommender` command, which uses the [StopRecommender](API_StopRecommender.md) API operation, and provide the Amazon Resource Name (ARN) for the recommender. To restart it, you can use `start-recommender` command, which use the [StartRecommender](API_StartRecommender.md). The following code shows how to stop a recommender:
 
-```
+```cmd
 aws personalize stop-recommender --recommender-arn "{{recommender arn}}"
 ```
 
@@ -61,7 +61,7 @@ To stop an active recommender with the AWS SDKs, use the [StopRecommender](API_S
 
 To stop an active recommender with the SDK for Python (Boto3), use the `stop_recommender` method and provide the Amazon Resource Name (ARN) for the recommender as follows.
 
-```
+```python
 import boto3
 personalize = boto3.client('personalize')
 
@@ -76,7 +76,7 @@ print(stop_recommender_response)
 
 To stop an active recommender with the SDK for Java 2.x, use the `stopRecommender` method and provide the ARN for the recommender as follows.
 
-```
+```java
 public static void stopRecommender(PersonalizeClient personalizeClient,
                                               String datasetGroupArn) {
 
@@ -96,7 +96,7 @@ public static void stopRecommender(PersonalizeClient personalizeClient,
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 // Get service clients and commands using ES6 syntax.
 import { StopRecommenderCommand, PersonalizeClient } from
   "@aws-sdk/client-personalize";

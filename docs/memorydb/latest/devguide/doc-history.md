@@ -8,6 +8,7 @@ The following table describes the documentation releases for MemoryDB.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Added FAQ page for supported protocols](doc-history.md) | Added a new FAQ page with answers to common questions about the AWS JSON and Smithy RPC v2 CBOR wire protocols. For more information, see [ FAQs on supported protocols](https://docs.aws.amazon.com/memorydb/latest/devguide/cbor-faq.html). | November 10, 2026 |
 | [MemoryDB Multi-Region launched.](doc-history.md) | MemoryDB Multi-Region launched. | December 1, 2024 |
 | [IAM and security policy update for MemoryDB Multi-Region.](doc-history.md) | IAM and security policy updated. For more information see [Using service linked roles](https://docs.aws.amazon.com/memorydb/latest/devguide/using-service-linked-roles.html) and [Using service linked roles](https://docs.aws.amazon.com/memorydb/latest/devguide/security-iam-awsmanpol.html). | December 1, 2024 |
 | [MemoryDB now supports Valkey.](doc-history.md) | MemoryDB now supports Valkey. | October 8, 2024 |

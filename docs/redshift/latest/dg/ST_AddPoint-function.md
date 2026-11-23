@@ -55,7 +55,7 @@ If *index* is out of range, then an error is returned. Valid values for the inde
 
 The following SQL adds a point to a linestring to make it a closed linestring.
 
-```
+```sql
 WITH tmp(g) AS (SELECT ST_GeomFromText('LINESTRING(0 0,10 0,10 10,5 5,0 5)',4326))
 SELECT ST_AsEWKT(ST_AddPoint(g, ST_StartPoint(g))) FROM tmp;
 ```
@@ -68,7 +68,7 @@ SELECT ST_AsEWKT(ST_AddPoint(g, ST_StartPoint(g))) FROM tmp;
 
 The following SQL adds a point to a specific position in a linestring.
 
-```
+```sql
 WITH tmp(g) AS (SELECT ST_GeomFromText('LINESTRING(0 0,10 0,10 10,5 5,0 5)',4326))
 SELECT ST_AsEWKT(ST_AddPoint(g, ST_SetSRID(ST_Point(5, 10), 4326), 3)) FROM tmp;
 ```

@@ -29,7 +29,7 @@ To invoke your Amazon API Gateway endpoint by using a EventBridge rule, add the 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

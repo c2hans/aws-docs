@@ -29,7 +29,7 @@ RES has the ability to mount buckets from other AWS accounts, provided these buc
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -82,7 +82,7 @@ RES has the ability to mount buckets from other AWS accounts, provided these buc
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -154,7 +154,7 @@ RES has the ability to mount buckets from other AWS accounts, provided these buc
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

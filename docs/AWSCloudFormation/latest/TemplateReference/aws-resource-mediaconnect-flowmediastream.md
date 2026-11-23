@@ -56,57 +56,58 @@ Properties:
 <a name="aws-resource-mediaconnect-flowmediastream-properties"></a>
 
 `Attributes`  <a name="cfn-mediaconnect-flowmediastream-attributes"></a>
-Property description not available.
+ The attributes that you want to assign to the new media stream.
 *Required*: No
 *Type*: [MediaStreamAttributes](aws-properties-mediaconnect-flowmediastream-mediastreamattributes.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ClockRate`  <a name="cfn-mediaconnect-flowmediastream-clockrate"></a>
-Property description not available.
+ The sample rate (in Hz) for the stream. If the media stream type is video or ancillary data, set this value to 90000. If the media stream type is audio, set this value to either 48000 or 96000.
 *Required*: No
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Description`  <a name="cfn-mediaconnect-flowmediastream-description"></a>
-Property description not available.
+ A description that can help you quickly identify what your media stream is used for.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FlowArn`  <a name="cfn-mediaconnect-flowmediastream-flowarn"></a>
-Property description not available.
+ The Amazon Resource Name (ARN) of the flow.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:flow:[a-zA-Z0-9-]+:[a-zA-Z0-9_-]+$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `MediaStreamId`  <a name="cfn-mediaconnect-flowmediastream-mediastreamid"></a>
-Property description not available.
+ A unique identifier for the media stream.
 *Required*: Yes
 *Type*: Integer
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `MediaStreamName`  <a name="cfn-mediaconnect-flowmediastream-mediastreamname"></a>
-Property description not available.
+ A name that helps you distinguish one media stream from another.
 *Required*: Yes
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `MediaStreamType`  <a name="cfn-mediaconnect-flowmediastream-mediastreamtype"></a>
-Property description not available.
+ The type of media stream.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `video | audio | ancillary-data`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-mediaconnect-flowmediastream-tags"></a>
-Property description not available.
+An array of key-value pairs to apply to this resource.
+For more information, see [Resource tags](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html).
 *Required*: No
 *Type*: Array of [Tag](aws-properties-mediaconnect-flowmediastream-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VideoFormat`  <a name="cfn-mediaconnect-flowmediastream-videoformat"></a>
-Property description not available.
+ The resolution of the video.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -117,6 +118,12 @@ Property description not available.
 ### Ref
 <a name="aws-resource-mediaconnect-flowmediastream-return-values-ref"></a>
 
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the media stream ARN. For example:
+
+ `{ "Ref": "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballGame/mediaStream/Video1" }`
+
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+
 ### Fn::GetAtt
 <a name="aws-resource-mediaconnect-flowmediastream-return-values-fn--getatt"></a>
 
@@ -124,7 +131,7 @@ Property description not available.
 <a name="aws-resource-mediaconnect-flowmediastream-return-values-fn--getatt-fn--getatt"></a>
 
 `Arn`  <a name="Arn-fn::getatt"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the media stream.
 
 `Fmt`  <a name="Fmt-fn::getatt"></a>
-Property description not available.
+ The format type number (sometimes referred to as RTP payload type) of the media stream. MediaConnect assigns this value to the media stream. For ST 2110 JPEG XS outputs, you need to provide this value to the receiver.

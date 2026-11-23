@@ -8,7 +8,7 @@ AWS End User Messaging supports making calls to all of its API actions through t
 
 A VPC endpoint policy is an IAM resource that you attach to an interface endpoint to control which principals can perform which AWS End User Messaging actions on which resources through the endpoint. The following example endpoint policy grants access to the listed actions for all principals on all resources. Use the `sms-voice` actions for the SMS, MMS, voice, and RCS channels, and the `social-messaging` actions for the WhatsApp channel.
 
-```
+```json
 {
     "Statement": [
         {

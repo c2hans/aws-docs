@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-httpapi-route53configuration-syntax.yaml"></a>
 
-```
+```yaml
   [DistributionDomainName](#sam-httpapi-route53configuration-distributiondomainname): {{String}}
   [EvaluateTargetHealth](#sam-httpapi-route53configuration-evaluatetargethealth): {{Boolean}}
   [HostedZoneId](#sam-httpapi-route53configuration-hostedzoneid): {{String}}
@@ -92,7 +92,7 @@ This example shows how to configure Route 53.
 #### YAML
 <a name="sam-property-httpapi-route53configuration--examples--route-53-configuration-example--yaml"></a>
 
-```
+```yaml
 Domain:
   DomainName: www.example.com
   CertificateArn: arn-example

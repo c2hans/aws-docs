@@ -8,7 +8,7 @@ Credential providers are simply functions that when invoked return a promise (`G
 
 A best practice for creating providers is to create a function that is invoked to create the actual credential provider. As an example, here’s the source of the `env` provider (slightly modified for example purposes). Notice that it is a function that returns the actual provider function. This allows you to easily compose credential providers and pass them around as values.
 
-```
+```php
 use GuzzleHttp\Promise;
 use GuzzleHttp\Promise\RejectedPromise;
 

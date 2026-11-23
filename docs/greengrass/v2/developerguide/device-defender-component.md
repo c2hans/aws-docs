@@ -97,7 +97,7 @@ You can set the `UseInstaller` configuration to `true` to install these librarie
 ------
 #### [ Legacy subscription router v2.1.x ]
 
-  ```
+  ```json
   {
     "subscriptions": {
       "aws-greengrass-device-defender": {
@@ -113,7 +113,7 @@ You can set the `UseInstaller` configuration to `true` to install these librarie
 ------
 #### [ Legacy subscription router v2.0.x ]
 
-  ```
+  ```json
   {
     "subscriptions": {
       "aws-greengrass-device-defender": {
@@ -377,7 +377,7 @@ Default: `PUB_SUB`
 
 **Example: Configuration merge update (container mode)**
 
-```
+```json
 {
   "lambdaExecutionParameters": {
     "EnvironmentVariables": {
@@ -390,7 +390,7 @@ Default: `PUB_SUB`
 
 **Example: Configuration merge update (no container mode)**
 
-```
+```json
 {
   "lambdaExecutionParameters": {
     "EnvironmentVariables": {
@@ -417,7 +417,7 @@ This component publishes security metrics to the following reserved topic for AW
 
 **Example output**
 
-```
+```json
 {
   "header": {
     "report_id": 1529963534,
@@ -510,14 +510,14 @@ This component uses the following log file.
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.greengrass.DeviceDefender.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\aws.greengrass.DeviceDefender.log -Tail 10 -Wait
   ```
 

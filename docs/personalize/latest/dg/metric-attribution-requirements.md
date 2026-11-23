@@ -41,7 +41,7 @@ To give Amazon Personalize access to CloudWatch, attach a new AWS Identity and A
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -69,7 +69,7 @@ To give Amazon Personalize access to CloudWatch, attach a new AWS Identity and A
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Id": "PersonalizeS3BucketAccessPolicy",
@@ -99,7 +99,7 @@ To give Amazon Personalize access to CloudWatch, attach a new AWS Identity and A
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Id": "PersonalizeS3BucketAccessPolicy",

@@ -99,7 +99,7 @@ You can view your Amazon Keyspaces table's current warm throughput values using 
 **Read the pre-warming settings of a table using the SDK for Java.**
 + Read the warm-throughput values of a table using `get-table`. The following code example is an example of this.
 
-  ```
+  ```java
   import software.amazon.awssdk.services.keyspaces.KeyspacesClient;
   import software.amazon.awssdk.services.keyspaces.model.*;
 

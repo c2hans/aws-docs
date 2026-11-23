@@ -134,7 +134,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of BatchGetField.
 
-```
+```json
 {
    "fields":[
    {
@@ -150,7 +150,7 @@ This example illustrates one usage of BatchGetField.
 }
 ```
 
-```
+```json
 {
    "errors":[
      ],

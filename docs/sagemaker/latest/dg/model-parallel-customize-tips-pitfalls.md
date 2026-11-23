@@ -48,7 +48,7 @@ with smp.delay_param_initialization(enabled=True):
   +  `smp.pp_size() * smp.tp_size() * smp.rdp_size() == smp.size()`
 + Since the `smp.DistributedModel` wrapper modifies the model parameters when tensor parallelism is enabled, the optimizer should be created after calling `smp.DistributedModel`, with the distributed parameters. For example, the following does not work:
 
-  ```
+  ```py
   ## WRONG
   model = MyModel()
   optimizer = SomeOptimizer(model.parameters())
@@ -57,7 +57,7 @@ with smp.delay_param_initialization(enabled=True):
 
   Instead, the optimizer should be created with the parameters of the `smp.DistributedModel` as follows:
 
-  ```
+  ```py
   ## CORRECT
   model = smp.DistributedModel(MyModel())
   optimizer = SomeOptimizer(model.optimizers())
@@ -65,7 +65,7 @@ with smp.delay_param_initialization(enabled=True):
 + When a module is replaced with its distributed counterpart through tensor parallelism, the distributed module does not inherit its weights from the original module, and initializes new weights. This means that, for instance, if the weights need to be initialized in a particular call (for example, through a `load_state_dict` call), this needs to happen after the `smp.DistributedModel` call, once the module distribution takes place.
 + When accessing the parameters of distributed modules directly, note that the weight does not have the same shape as the original module. For instance,
 
-  ```
+  ```py
   with smp.tensor_parallelism():
       linear = nn.Linear(60, 60)
 

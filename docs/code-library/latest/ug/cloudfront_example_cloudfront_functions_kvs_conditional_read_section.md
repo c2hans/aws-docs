@@ -14,7 +14,7 @@ The following code example shows how to rewrite a request URI based on KeyValueS
 **JavaScript runtime 2.0 for CloudFront Functions**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [CloudFront Functions examples](https://github.com/aws-samples/amazon-cloudfront-functions/tree/main/kvs-conditional-read) repository.
 
-```
+```javascript
 import cf from 'cloudfront';
 
 // (Optional) Replace KVS_ID with actual KVS ID

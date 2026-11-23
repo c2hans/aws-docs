@@ -44,13 +44,13 @@ Complete the prerequisites in Getting started. In addition, grant your AWS Ident
 
 Install the `aws-data-analytics` plugin for your assistant. For example, in Claude Code, run the following command:
 
-```
+```bash
 /plugin install aws-data-analytics@claude-plugins-official
 ```
 
 For Kiro, Codex, Cursor, and other assistants, install the `aws-data-analytics` plugin or its skills as described in Getting started. To install the skills directly from the repository, run the following command:
 
-```
+```bash
 npx skills add aws/agent-toolkit-for-aws/skills
 ```
 

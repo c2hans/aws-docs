@@ -84,7 +84,7 @@ The Python client is easier to automate than a simple HTTP request and has bette
 
 Update the following variables in the sample code: `host`, `region`, `path`, and `payload`.
 
-```
+```python
 import boto3
 import requests
 from requests_aws4auth import AWS4Auth

@@ -36,7 +36,7 @@ This example demonstrates how to create an Amazon Redshift cluster using the AWS
 
 Create a `libs` directory, and create a Node.js module with the file name `redshiftClient.js`. Copy and paste the code below into it, which creates the Amazon Redshift client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import  { RedshiftClient }  from  "@aws-sdk/client-redshift";
 // Set the AWS Region.
 const REGION = "REGION"; //e.g. "us-east-1"
@@ -52,7 +52,7 @@ Create a Node.js module with the file name `redshift-create-cluster.js`. Make su
 **Note**
 Replace {{CLUSTER\_NAME}} with the name of the cluster. For {{NODE\_TYPE}} specify the node type to be provisioned, such as 'dc2.large', for example. {{MASTER\_USERNAME}} and {{MASTER\_USER\_PASSWORD}} are the sign-in credentials of the master user of your DB instance in the cluster. For {{CLUSTER\_TYPE}}, enter the type of cluster. If you specify `single-node`, you do not require the `NumberOfNodes` parameter. The remaining parameters are optional.
 
-```
+```javascript
 // Import required AWS SDK clients and commands for Node.js
 import { CreateClusterCommand } from "@aws-sdk/client-redshift";
 import { redshiftClient } from "./libs/redshiftClient.js";
@@ -85,7 +85,7 @@ run();
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node redshift-create-cluster.js
 ```
 
@@ -98,7 +98,7 @@ This example shows how to modify the master user password of an Amazon Redshift 
 
 Create a `libs` directory, and create a Node.js module with the file name `redshiftClient.js`. Copy and paste the code below into it, which creates the Amazon Redshift client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import  { RedshiftClient }  from  "@aws-sdk/client-redshift";
 // Set the AWS Region.
 const REGION = "REGION"; //e.g. "us-east-1"
@@ -114,7 +114,7 @@ Create a Node.js module with the file name `redshift-modify-cluster.js`. Make su
 **Note**
 Replace {{CLUSTER\_NAME}} with the name of the cluster, and {{MASTER\_USER\_PASSWORD}} with the new master user password.
 
-```
+```javascript
 // Import required AWS SDK clients and commands for Node.js
 import { ModifyClusterCommand } from "@aws-sdk/client-redshift";
 import { redshiftClient } from "./libs/redshiftClient.js";
@@ -139,7 +139,7 @@ run();
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node redshift-modify-cluster.js
 ```
 
@@ -152,7 +152,7 @@ This example shows how to view the details of an Amazon Redshift cluster using t
 
 Create a `libs` directory, and create a Node.js module with the file name `redshiftClient.js`. Copy and paste the code below into it, which creates the Amazon Redshift client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import  { RedshiftClient }  from  "@aws-sdk/client-redshift";
 // Set the AWS Region.
 const REGION = "REGION"; //e.g. "us-east-1"
@@ -168,7 +168,7 @@ Create a Node.js module with the file name `redshift-describe-clusters.js`. Make
 **Note**
 Replace {{CLUSTER\_NAME}} with the name of the cluster.
 
-```
+```javascript
 // Import required AWS SDK clients and commands for Node.js
 import { DescribeClustersCommand } from "@aws-sdk/client-redshift";
 import { redshiftClient } from "./libs/redshiftClient.js";
@@ -191,7 +191,7 @@ run();
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node redshift-describe-clusters.js
 ```
 
@@ -204,7 +204,7 @@ This example shows how to view the details of an Amazon Redshift cluster using t
 
 Create a `libs` directory, and create a Node.js module with the file name `redshiftClient.js`. Copy and paste the code below into it, which creates the Amazon Redshift client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import  { RedshiftClient }  from  "@aws-sdk/client-redshift";
 // Set the AWS Region.
 const REGION = "REGION"; //e.g. "us-east-1"
@@ -220,7 +220,7 @@ Create a Node.js module with the file named `redshift-delete-clusters.js`. Make 
 **Note**
 Replace {{CLUSTER\_NAME}} with the name of the cluster. For the {{SkipFinalClusterSnapshot}}, specify whether to create a final snapshot of the cluster before deleting it. If you specify 'false', specify the id of the final cluster snapshot in {{CLUSTER\_SNAPSHOT\_ID}}. You can get this ID by clicking the link in the **Snapshots** column for the cluster on the **Clusters** dashboard, and scrolling down to the **Snapshots** pane. Note that the stem `rs:` is not part of the snapshot ID.
 
-```
+```javascript
 // Import required AWS SDK clients and commands for Node.js
 import { DeleteClusterCommand } from "@aws-sdk/client-redshift";
 import { redshiftClient } from "./libs/redshiftClient.js";
@@ -245,7 +245,7 @@ run();
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node redshift-delete-cluster.js
 ```
 

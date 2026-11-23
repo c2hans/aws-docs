@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 
 ![Diagram of a representative healthcare analytics environment architecture.](https://docs.aws.amazon.com/wellarchitected/latest/healthcare-industry-lens/images/representative-healthcare-analytics-environment.png)
 
+*A representative healthcare analytics environment.*
+
 +  The analytics platform must support the wide variety of communication protocols used by healthcare systems including bulk data feeds and real-time data streams. Examples include bulk data transfers using secure FTP, HL7v2 over MLLP and standard FHIR web services. Legacy protocols that don’t support encryption must run over an encrypted channel such as a Site-to-Site VPN.
 +  Store raw data in a durable, highly available, and secure object store such as Amazon S3. Enable default encryption to verify that all objects are encrypted at rest. Lifecycle policies can be set up to reduce costs based on your access requirements. Many AWS and third party services provide direct integrations with Amazon S3 for data integration and backup. AWS Lake Formation provides a framework to organize and secure the data within the Amazon S3 data lake.
 +  For high volume message ingestion, batch messages through services such as Amazon Kinesis to reduce the number of actions taken to store the data. This can reduce the overall cost of data ingestion. Prevent data integrity issues by ensuring the batching process aligns with the requirements of the data pipeline.

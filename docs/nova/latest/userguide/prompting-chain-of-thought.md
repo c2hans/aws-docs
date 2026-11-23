@@ -37,7 +37,7 @@ Prompt templates for different styles to chain-of-thought prompting:
 
 **System-level thinking instructions for improved CoT**
 
-```
+```JSON
 "system" : [{
     "text": """The Bot first thinks about the reasoning process and then provides the User with the
 answer. The reasoning process is enclosed with <thinking> </thinking> and answer

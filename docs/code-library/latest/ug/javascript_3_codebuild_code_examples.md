@@ -27,7 +27,7 @@ The following code example shows how to use `CreateProject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/codebuild#code-examples).
 Create a project.
 
-```
+```javascript
 import {
   ArtifactsType,
   CodeBuildClient,

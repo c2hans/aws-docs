@@ -15,7 +15,7 @@ Choose a YAML property in the following code to see a description if it.
 **Note**
 Most of the YAML properties that follow have corresponding UI elements in the visual editor. To look up a UI element, use **Ctrl\+F**. The element will be listed with its associated YAML property.
 
-```
+```yaml
 # The workflow definition starts here.
 # See Top-level properties for details.
 
@@ -640,7 +640,7 @@ Specify your GitHub Action code as it appears on the action's details page in [G
 
    GitHub code to paste:
 
-   ```
+   ```yaml
    - name: Lint Code Base
      uses: github/super-linter@v4
      env:
@@ -653,7 +653,7 @@ Specify your GitHub Action code as it appears on the action's details page in [G
 
    CodeCatalyst workflow yaml:
 
-   ```
+   ```yaml
    Steps:
       - name: Lint Code Base
         uses: github/super-linter@v4
@@ -667,7 +667,7 @@ Specify your GitHub Action code as it appears on the action's details page in [G
 
 Here is an example of how to specify file paths in a **GitHub Actions** action:
 
-```
+```yaml
 Steps:
   - name: Lint Code Base
     uses: github/super-linter@v4

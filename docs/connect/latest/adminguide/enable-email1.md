@@ -95,7 +95,7 @@ To allow customers and agents to upload and download files, update your cross-or
 
      Your CORS policy might look similar to the following example:
 
-     ```
+     ```json
      [
          {
              "AllowedHeaders": [
@@ -117,7 +117,7 @@ To allow customers and agents to upload and download files, update your cross-or
 
      Your CORS policy might look similar to the following example:
 
-     ```
+     ```json
      [
          {
              "AllowedMethods": [

@@ -147,13 +147,13 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-monitoring-guardduty-suppression-rules-create-managed-automation-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-monitoring-guardduty-suppression-rules-create-managed-automation-ex-max"></a>
 
-```
+```json
 Example not available.
 ```

@@ -91,7 +91,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of TagResource.
 
-```
+```json
 {
   "tags": {
   "some_key": "some_value"
@@ -99,7 +99,7 @@ This example illustrates one usage of TagResource.
 }
 ```
 
-```
+```json
 { }
 ```
 

@@ -37,7 +37,7 @@ Pattern: `[\w\-]+`
 Required: Yes
 
  ** [locale](#API_marketplace-discovery_GetProduct_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetProduct-request-locale"></a>
-A BCP 47 language tag or comma-separated priority list specifying the preferred locale for response content. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If omitted, the service returns content in the default locale.
+The preferred locale for response content, as a Best Current Practice 47 (BCP 47) language tag or a comma-separated priority list of language tags. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If you omit this field, the service returns content in the default locale.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
@@ -79,6 +79,11 @@ Content-type: application/json
    "promotionalMedia": [
       { ... }
    ],
+   "purchaseIndicators": [
+      {
+         "indicatorType": "string"
+      }
+   ],
    "resources": [
       {
          "contentType": "string",
@@ -112,17 +117,17 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\w\-]+`
 
  ** [categories](#API_marketplace-discovery_GetProduct_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetProduct-response-categories"></a>
-The categories used to classify this product into logical groups.
+The categories that classify this product into logical groups.
 Type: Array of [Category](API_marketplace-discovery_Category.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 30 items.
 
  ** [deployedOnAws](#API_marketplace-discovery_GetProduct_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetProduct-response-deployedOnAws"></a>
-Indicates whether the product is deployed on AWS infrastructure.
+Specifies whether the product is deployed on AWS infrastructure.
 Type: String
 Valid Values: `DEPLOYED | NOT_DEPLOYED | NOT_APPLICABLE`
 
  ** [fulfillmentOptionSummaries](#API_marketplace-discovery_GetProduct_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetProduct-response-fulfillmentOptionSummaries"></a>
-A summary of fulfillment options available for deploying or accessing the product, such as AMI, SaaS, or Container.
+A summary of fulfillment options available for deploying or accessing the product, such as Amazon Machine Image (AMI), Software as a Service (SaaS), or Container.
 Type: Array of [FulfillmentOptionSummary](API_marketplace-discovery_FulfillmentOptionSummary.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
 
@@ -172,13 +177,18 @@ Embedded promotional media provided by the creator of the product, such as image
 Type: Array of [PromotionalMedia](API_marketplace-discovery_PromotionalMedia.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
+ ** [purchaseIndicators](#API_marketplace-discovery_GetProduct_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetProduct-response-purchaseIndicators"></a>
+Indicators describing purchase characteristics of this product, such as whether you can subscribe to it or use it without a subscription. The list is empty when no special purchase conditions apply.
+Type: Array of [PurchaseIndicator](API_marketplace-discovery_PurchaseIndicator.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 20 items.
+
  ** [resources](#API_marketplace-discovery_GetProduct_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetProduct-response-resources"></a>
 Resources that provide further information about using the product or requesting support, such as documentation links, support contacts, and usage instructions.
 Type: Array of [Resource](API_marketplace-discovery_Resource.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
  ** [sellerEngagements](#API_marketplace-discovery_GetProduct_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetProduct-response-sellerEngagements"></a>
-Engagement options available to potential buyers, such as requesting a private offer or requesting a demo.
+The engagement options available to you, such as buying now, requesting a private offer, or requesting a demo.
 Type: Array of [SellerEngagement](API_marketplace-discovery_SellerEngagement.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
@@ -189,7 +199,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `.*\S.*`
 
  ** [locale](#API_marketplace-discovery_GetProduct_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetProduct-response-locale"></a>
-The locale of the returned content. Indicates whether the response contains content in the requested locale, or fell back to the default locale. See `Locale` for details.
+The locale of the returned content. This value indicates whether the response contains content in the requested locale or fell back to the default locale. See `Locale` for details.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
@@ -200,7 +210,7 @@ Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-You don't have sufficient access to perform this action.
+You don't have sufficient access to perform this operation. For the permissions that each operation requires, see [Access control for the AWS Marketplace Discovery API](https://docs.aws.amazon.com/marketplace/latest/developerguide/discovery-api-access-control.html) in the *AWS Marketplace Developer Guide*.
 HTTP Status Code: 403
 
  ** InternalServerException **
@@ -208,17 +218,23 @@ Unexpected error during processing of the request.
 HTTP Status Code: 500
 
  ** ResourceNotFoundException **
-The specified resource doesn't exist.
+The specified resource doesn't exist. Verify that the identifier is correct.
 HTTP Status Code: 404
 
  ** ThrottlingException **
-The request was denied due to request throttling.
+The request was denied due to request throttling. Reduce the frequency of your requests and retry.
 HTTP Status Code: 429
 
  ** ValidationException **
-The input fails to satisfy the constraints specified by the service.
+The input fails to satisfy the constraints specified by the service. Check the `reason` field for the constraint that failed.
  ** reason **
-The reason that the input fails to satisfy the constraints specified by the service.
+The reason that the input fails to satisfy the constraints that the Discovery API specifies. This field has one of the following values:
+INVALID\_PAGINATION\_TOKEN
+The `nextToken` value is malformed, expired, or belongs to a different request. Start the pagination again from the first page.
+MALFORMED\_REQUEST\_PARAMETERS
+One or more request parameters have an invalid value. Correct the parameters that you specified, and then resubmit your request.
+PAGINATION\_LIMIT\_EXCEEDED
+The request asks for results beyond the deepest page that the operation returns. Narrow your request with filters or a more specific search.
 HTTP Status Code: 400
 
 ## See Also

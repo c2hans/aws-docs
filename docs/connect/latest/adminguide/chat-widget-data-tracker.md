@@ -35,7 +35,7 @@ The web data tracker captures how visitors interact with your website – items 
 
 Embed the widget snippet in your website's HTML. After the snippet loads, initialize the tracker after you have obtained visitor consent.
 
-```
+```javascript
 // Start tracking visitor behavior (after obtaining consent)
 await window.amazon_connect.Web.ClickStream.init();
 
@@ -60,7 +60,7 @@ If you plan to use the data tracker with recommenders requiring Item Contexts su
 ### Method Signature
 <a name="chat-widget-track-business-events-method"></a>
 
-```
+```javascript
 await amazon_connect.Web.ClickStream.recordBusinessMetric(eventType, eventPayload)
 ```
 
@@ -94,7 +94,7 @@ After calling `amazon_connect.Web.ClickStream.init()`, add `recordBusinessMetric
 
 **Example – Add to Cart**
 
-```
+```javascript
 await amazon_connect.Web.ClickStream.recordBusinessMetric('add_to_cart', {
     item: {
         item_id: 'prod-123',
@@ -108,7 +108,7 @@ await amazon_connect.Web.ClickStream.recordBusinessMetric('add_to_cart', {
 
 **Example – View Items**
 
-```
+```javascript
 await amazon_connect.Web.ClickStream.recordBusinessMetric('view_items', {
     item_list: [
         {
@@ -142,7 +142,7 @@ Beyond the reserved event types, you can define any custom event type string (fo
 + You can use any combination of fields from the Object Schemas above to fit your use case.
 + Use field names exactly as shown (for example, `cart_id`, not `cartId`).
 
-```
+```javascript
 await amazon_connect.Web.ClickStream.recordBusinessMetric('clear_cart', {
     cart_id: 'cart-123',
     item_list: [
@@ -166,7 +166,7 @@ Clickstream data captured by the web data tracker is continuously streamed to Cu
 
 To associate tracking with a known profile, set `profileKeys` in your JWT claims to search for and associate with an existing profile at connection time, and the service uses these keys to find a matching profile through the `SearchProfiles` API. This requires security to be enabled on your Communications widget. For setup details, see [Step 3: Confirm and copy communications widget code and security keys](add-chat-to-website.md#confirm-and-copy-chat-widget-script).
 
-```
+```javascript
 {
   "sub": "<widgetId>",
   "iat": 1234567890,
@@ -196,7 +196,7 @@ To provide a custom identifier, set the `customerId` field in your JWT claims. Y
 
 The following example shows a JWT payload with the `customerId` field:
 
-```
+```javascript
 {
   "sub": "<widgetId>",
   "iat": 1234567890,

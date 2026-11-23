@@ -33,7 +33,7 @@ Use the following procedure to create the **PatchAMIAndUpdateASG** runbook that 
 
 1. In the **Document editor** field, paste the following YAML sample runbook content.
 
-   ```
+   ```yaml
    ---
    description: Systems Manager Automation Demo - Patch AMI and Update ASG
    schemaVersion: '0.3'

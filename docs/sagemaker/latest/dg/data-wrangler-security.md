@@ -39,7 +39,7 @@ Use the following procedure to create an S3 bucket policy that you can add to re
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -113,7 +113,7 @@ The following policy assumes that the IAM role has permission to access the unde
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -197,7 +197,7 @@ The following policy grants permission to set up an Amazon Redshift connection t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -240,7 +240,7 @@ If your dataset is stored in Amazon S3, you can grant an IAM role permission to 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -279,7 +279,7 @@ Use a policy similar to the following to grant the permissions described in the 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -327,7 +327,7 @@ You can also access data in your Amazon S3 bucket from another AWS account by sp
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -367,7 +367,7 @@ The user that is accessing the bucket (not the bucket owner) must add a policy s
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -412,7 +412,7 @@ Use a policy like to the following to create an IAM execution role that can be u
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -502,7 +502,7 @@ If you're transferring data to Amazon S3, you must also attach the following pol
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -558,7 +558,7 @@ Amazon AppFlow needs to access AWS Glue and Data Wrangler for you to import the 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -585,7 +585,7 @@ To display the Amazon AppFlow data in Data Wrangler, add the following policy to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -41,7 +41,7 @@ The `FlinkKinesisFirehoseProducer` is a reliable, scalable Apache Flink sink for
 
 The following code example demonstrates creating a `FlinkKinesisFirehoseProducer`:
 
-```
+```java
 Properties outputProperties = new Properties();
 outputProperties.setProperty(ConsumerConfigConstants.AWS_REGION, region);
 
@@ -53,7 +53,7 @@ FlinkKinesisFirehoseProducer<String> sink = new FlinkKinesisFirehoseProducer<>(o
 
 The following code example demonstrates how to create and configure a `FlinkKinesisFirehoseProducer` and send data from an Apache Flink data stream to the Firehose service.
 
-```
+```java
 
 package com.amazonaws.services.kinesisanalytics;
 

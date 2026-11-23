@@ -83,7 +83,7 @@ For more information, see [View instance details with CodeDeploy](https://docs.a
 **Tools for PowerShell V4**
 **Example 1: This example gets information about the specified instance for the specified deployment.**
 
-```
+```powershell
 Get-CDDeploymentInstance -DeploymentId d-QZMRGSTEX -InstanceId i-254e22EX
 ```
 **Output:**
@@ -100,7 +100,7 @@ Status          : Succeeded
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified instance for the specified deployment.**
 
-```
+```powershell
 Get-CDDeploymentInstance -DeploymentId d-QZMRGSTEX -InstanceId i-254e22EX
 ```
 **Output:**

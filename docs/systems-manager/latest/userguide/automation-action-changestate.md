@@ -19,7 +19,7 @@ The `aws:changeInstanceState` action supports automatic throttling retry. For mo
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: startMyInstance
 action: aws:changeInstanceState
 maxAttempts: 3
@@ -36,7 +36,7 @@ inputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name":"startMyInstance",
     "action": "aws:changeInstanceState",

@@ -50,7 +50,7 @@ After you create a migration project, use one of the following methods to run an
 
 The following example uses [start-metadata-model-assessment](https://docs.aws.amazon.com/cli/latest/reference/dms/start-metadata-model-assessment.html) to queue an assessment of the conversion complexity for all objects in the {{ExampleSchema}} schema.
 
-```
+```bash
 aws dms start-metadata-model-assessment \
         --migration-project-identifier "{{arn:aws:dms:us-east-1:111122223333:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}}" \
         --selection-rules '{"rules": [{"rule-type": "selection", "rule-id": "1", "rule-name": "1", "object-locator": {"server-name": "{{source-server}}", "schema-name": "{{ExampleSchema}}"}, "rule-action": "explicit"}]}'
@@ -61,7 +61,7 @@ The `--selection-rules` parameter takes a JSON string that specifies which datab
 
 The response contains a `RequestIdentifier` that identifies the assessment request.
 
-```
+```json
 {
     "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
@@ -69,7 +69,7 @@ The response contains a `RequestIdentifier` that identifies the assessment reque
 
 Because an assessment runs asynchronously, use [aws dms wait metadata-model-assessed](https://docs.aws.amazon.com/cli/latest/reference/dms/wait/metadata-model-assessed.html) to block until the assessment completes before proceeding.
 
-```
+```bash
 aws dms wait metadata-model-assessed \
         --migration-project-identifier "{{arn:aws:dms:us-east-1:111122223333:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}}"
 ```
@@ -125,7 +125,7 @@ The CSV archive contains at least three files organized under a two-level direct
 
 The following example uses [export-metadata-model-assessment](https://docs.aws.amazon.com/cli/latest/reference/dms/export-metadata-model-assessment.html) to export the conversion assessment report for a migration project as both a PDF file and a CSV archive to your Amazon S3 bucket.
 
-```
+```bash
 aws dms export-metadata-model-assessment \
         --migration-project-identifier "{{arn:aws:dms:us-east-1:111122223333:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}}" \
         --selection-rules '{"rules":[{"rule-type":"selection","rule-id":"1","rule-name":"1","rule-action":"explicit","object-locator":{"server-name":"{{source-server}}","schema-name":"{{ExampleSchema}}"}}]}' \
@@ -139,7 +139,7 @@ The response contains the Amazon S3 object key and download URL for each report 
 
 When you do not specify `--file-name`, files are stored under a folder matching your migration project name, using a timestamp as the file name: `{{project-name}}/{{YYYY-MM-DD-HH-MM-SS}}.pdf` and `{{project-name}}/{{YYYY-MM-DD-HH-MM-SS}}.zip` — for example, `sqlserver-pg-pma/2026-07-15-10-08-12.zip`. Specify `--file-name` to override the timestamp prefix within that folder.
 
-```
+```json
 {
     "PdfReport": {
         "S3ObjectKey": "{{project-name}}/{{YYYY-MM-DD-HH-MM-SS}}.pdf",

@@ -24,7 +24,7 @@ The following data protection policy instructs the Amazon SNS topic to detect pa
 
 1. Refer to the following custom data identifier in a policy statement.
 
-   ```
+   ```json
     {
      "Name": "__example_data_protection_policy",
      "Description": "Example data protection policy",

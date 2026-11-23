@@ -48,7 +48,7 @@ The resources you create in this tutorial, including EKS clusters, GPU instances
 
 Verify your `eksctl` version:
 
-```
+```bash
 eksctl version
 ```
 
@@ -59,7 +59,7 @@ If you are on a version older than 0.227.0, follow the [eksctl installation guid
 
 Keep the following cluster name and AWS Region consistent throughout these steps. Changing it might cause subsequent commands to target the wrong EKS cluster.
 
-```
+```bash
 export CLUSTER_NAME=ai-eks-docs
 export AWS_REGION=us-east-2
 ```
@@ -69,7 +69,7 @@ Use a cluster name that no other cluster in the Region is already using, includi
 
 Using all available AZs improves fault tolerance and increases the chances of obtaining GPU capacity:
 
-```
+```bash
 export AZS=$(aws ec2 describe-availability-zones \
   --region ${AWS_REGION} \
   --query "AvailabilityZones[?ZoneId!='use1-az3' && ZoneId!='usw1-az2' && ZoneId!='cac1-az3'].ZoneName" \
@@ -82,7 +82,7 @@ The Availability Zones `use1-az3`, `usw1-az2`, and `cac1-az3` are excluded becau
 
 Expected output:
 
-```
+```bash
 us-east-2a,us-east-2b,us-east-2c
 ```
 
@@ -110,7 +110,7 @@ With self-managed Karpenter, the `eksctl create cluster` command provisions the 
 
  **Create EKS Auto Mode cluster**
 
-```
+```bash
 eksctl create cluster \
   --name=$CLUSTER_NAME \
   --region=$AWS_REGION \
@@ -121,13 +121,13 @@ eksctl create cluster \
 
 This command takes a few minutes to complete. After completion, `eksctl` automatically updates your kubeconfig file to work with the newly provisioned cluster. Verify the cluster is operational:
 
-```
+```bash
 kubectl get pods --all-namespaces
 ```
 
 Expected output:
 
-```
+```bash
 NAMESPACE     NAME                              READY   STATUS    RESTARTS   AGE
 kube-system   metrics-server-55cf976ddd-cz2mw   1/1     Running   0          3m
 kube-system   metrics-server-55cf976ddd-wrjvv   1/1     Running   0          3m
@@ -139,7 +139,7 @@ In EKS Auto Mode, the VPC CNI, kube-proxy, and CoreDNS run as managed components
 
 GPU workloads often need persistent storage, for example to cache model weights so Kubernetes does not re-download them on every pod restart. EKS Auto Mode includes a built-in block storage capability, so you do not install the Amazon EBS CSI driver. Create a `StorageClass` that references the Auto Mode provisioner:
 
-```
+```yaml
 cat << EOF | kubectl apply -f -
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
@@ -164,7 +164,7 @@ This command creates a `gp3` `StorageClass` and marks it as the cluster default 
 
  `eksctl` pulls the Karpenter Helm chart from Amazon Public ECR. Authenticate before creating the cluster to avoid a 403 error at the Helm install step:
 
-```
+```bash
 aws ecr-public get-login-password --region us-east-1 \
   | helm registry login --username AWS --password-stdin public.ecr.aws
 ```
@@ -177,13 +177,13 @@ Expected output: `Login Succeeded`
 
 Store your Karpenter version in an environment variable for later use. For the latest Karpenter versions, see the [Karpenter releases](https://github.com/aws/karpenter-provider-aws/releases) on GitHub.
 
-```
+```bash
 export KARPENTER_VERSION=1.15.0
 ```
 
 **Example Cluster config YAML**
 
-```
+```yaml
 cat << EOF > /tmp/cluster-karpenter.yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
@@ -229,7 +229,7 @@ The `system` managed node group lists several instance types of the same size (8
 
 Create the cluster with the config file:
 
-```
+```bash
 eksctl create cluster -f /tmp/cluster-karpenter.yaml
 ```
 
@@ -239,13 +239,13 @@ The cluster also gets the [EKS Pod Identity Agent](https://docs.aws.amazon.com/e
 
 Verify the cluster is operational:
 
-```
+```bash
 kubectl get pods --all-namespaces
 ```
 
 Expected output includes Karpenter, CoreDNS, kube-proxy, aws-node (VPC CNI), the Amazon EBS CSI driver, the EKS Pod Identity Agent, and the EKS node monitoring agent.
 
-```
+```bash
 NAMESPACE     NAME                                  READY   STATUS    RESTARTS   AGE
 karpenter     karpenter-567547464c-s6vkx            1/1     Running   0          3m40s
 karpenter     karpenter-567547464c-x7gmw            1/1     Running   0          3m40s
@@ -271,20 +271,20 @@ kube-system   metrics-server-5b966ff79c-szs2d       1/1     Running   0         
 
 EKS Auto Mode enables automatic node repair and static capacity by default. On self-managed Karpenter, you must explicitly enable the `NodeRepair` feature gate, and the `StaticCapacity` gate for static NodePools, which maintain a fixed node count through `spec.replicas` instead of scaling in response to pending pods. Both gates are Alpha and off by default in Karpenter. The following command patches the Karpenter deployment to enable both gates. Updating the deployment environment triggers a rollout of the Karpenter pods:
 
-```
+```bash
 kubectl set env deployment/karpenter -n karpenter \
   FEATURE_GATES=NodeRepair=true,StaticCapacity=true
 ```
 
 Expected output:
 
-```
+```bash
 deployment.apps/karpenter env updated
 ```
 
 Wait for the Karpenter pods to roll out:
 
-```
+```bash
 kubectl rollout status deployment/karpenter -n karpenter
 ```
 
@@ -292,12 +292,12 @@ kubectl rollout status deployment/karpenter -n karpenter
 
 The EKS-optimized AL2023 AMI does not include the [NVIDIA device plugin](https://github.com/NVIDIA/k8s-device-plugin) (unlike the Bottlerocket AMI used by EKS Auto Mode). Install it by using Helm to make GPU resources usable with Pods on the cluster.
 
-```
+```bash
 helm repo add nvdp https://nvidia.github.io/k8s-device-plugin
 helm repo update
 ```
 
-```
+```yaml
 cat << 'EOF' > /tmp/nvdp-values.yaml
 mofedEnabled: false
 nodeSelector:
@@ -311,7 +311,7 @@ nfd:
 EOF
 ```
 
-```
+```bash
 helm install nvidia-device-plugin nvdp/nvidia-device-plugin \
   --namespace kube-system \
   -f /tmp/nvdp-values.yaml
@@ -324,13 +324,13 @@ Because `gfd.enabled` is `true`, the chart also deploys Node Feature Discovery i
 
 Verify the NVIDIA device plugin is installed. The expectation is that there are zero device plugin Pods until a GPU NodePool with the matching label is provisioned.
 
-```
+```bash
 kubectl get daemonset nvidia-device-plugin -n kube-system
 ```
 
 Expected output:
 
-```
+```bash
 NAME                   DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR      AGE
 nvidia-device-plugin   0         0         0       0            0           amiFamily=al2023   2m5s
 ```
@@ -339,7 +339,7 @@ Next, create a general-purpose NodePool. The `system` managed node group runs th
 
 <a name="cluster-setup-cli-step1-karpenter-general-nodepool-yaml"></a> **General-purpose EC2NodeClass and NodePool YAML**
 
-```
+```yaml
 cat << EOF | kubectl apply -f -
 apiVersion: karpenter.k8s.aws/v1
 kind: EC2NodeClass
@@ -394,7 +394,7 @@ This NodePool has no taints, so any Pod that does not tolerate the GPU taint can
 
 GPU workloads often need persistent storage, for example to cache model weights so Kubernetes does not re-download them on every pod restart. The Amazon EBS CSI driver is already installed by the `addons:` block in the cluster config earlier in this step, so you only need to create the `StorageClass`:
 
-```
+```yaml
 cat << EOF | kubectl apply -f -
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
@@ -431,7 +431,7 @@ The rest of the setup differs by path. EKS Auto Mode includes a built-in ALB con
 
 EKS Auto Mode includes a built-in ALB controller, so you do not install any additional components. Create an `IngressClass` named `alb` that points at the built-in controller. Each `Ingress` you create later references this class by name and sets its own scheme and other options through annotations.
 
-```
+```yaml
 cat << EOF | kubectl apply -f -
 apiVersion: networking.k8s.io/v1
 kind: IngressClass
@@ -451,13 +451,13 @@ The AWS Load Balancer Controller is not an EKS-managed add-on, so it cannot go i
 
 The controller needs IAM permissions to create and manage ALBs. Download the official IAM policy JSON:
 
-```
+```bash
 curl -o iam_policy.json https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
 ```
 
 Create the IAM policy:
 
-```
+```bash
 aws iam create-policy \
   --policy-name AWSLoadBalancerControllerIAMPolicy \
   --policy-document file://iam_policy.json
@@ -470,7 +470,7 @@ IAM policy names are unique per AWS account, not per cluster or Region. If a clu
 
 The cluster already installs the `eks-pod-identity-agent` add-on when you [create the EKS cluster](#cluster-setup-cli-create), so EKS Pod Identity is available. Create a Pod Identity association that binds the IAM policy to the controller’s service account:
 
-```
+```bash
 eksctl create podidentityassociation \
   --cluster ${CLUSTER_NAME} \
   --region ${AWS_REGION} \
@@ -483,14 +483,14 @@ eksctl create podidentityassociation \
 
 Add the EKS charts Helm repository:
 
-```
+```bash
 helm repo add eks https://aws.github.io/eks-charts
 helm repo update
 ```
 
 Look up your cluster’s VPC ID. The Helm values need it so the controller can discover subnets:
 
-```
+```bash
 VPC_ID=$(aws eks describe-cluster \
   --name ${CLUSTER_NAME} \
   --region ${AWS_REGION} \
@@ -500,7 +500,7 @@ VPC_ID=$(aws eks describe-cluster \
 
 Install the controller. The `nodeSelector` and toleration place the controller on the `system` managed node group alongside cluster-critical infrastructure, rather than competing with GPU or general-purpose Karpenter-launched nodes for capacity:
 
-```
+```bash
 helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
   --namespace kube-system \
   --version 3.4.2 \
@@ -516,7 +516,7 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
 
 Verify the controller is running. It should report two available replicas:
 
-```
+```bash
 kubectl get deployment aws-load-balancer-controller -n kube-system
 ```
 
@@ -524,13 +524,13 @@ kubectl get deployment aws-load-balancer-controller -n kube-system
 
 The Helm chart creates an `IngressClass` named `alb` as part of the controller install, pointing at the self-managed controller `ingress.k8s.aws/alb`. You do not need to create it manually. Confirm it exists:
 
-```
+```bash
 kubectl get ingressclass alb
 ```
 
 Expected output:
 
-```
+```bash
 NAME   CONTROLLER            PARAMETERS   AGE
 alb    ingress.k8s.aws/alb   <none>       22s
 ```
@@ -548,7 +548,7 @@ Prometheus, Grafana, and the operator land on non-GPU nodes by default because G
 
 If you opened a new terminal, set the cluster name and region:
 
-```
+```bash
 export CLUSTER_NAME=ai-eks-docs
 export AWS_REGION=us-east-2
 ```
@@ -558,7 +558,7 @@ export AWS_REGION=us-east-2
 
 Create an AMP workspace to store metrics:
 
-```
+```bash
 aws amp create-workspace \
   --alias "amp-ws-${CLUSTER_NAME}" \
   --region ${AWS_REGION}
@@ -566,7 +566,7 @@ aws amp create-workspace \
 
 Get the workspace ID:
 
-```
+```bash
 AMP_WORKSPACE_ID=$(aws amp list-workspaces \
   --alias "amp-ws-${CLUSTER_NAME}" \
   --query 'workspaces[0].workspaceId' \
@@ -578,7 +578,7 @@ echo "AMP Workspace ID: ${AMP_WORKSPACE_ID}"
 
 Get the remote-write endpoint:
 
-```
+```bash
 AMP_ENDPOINT=$(aws amp describe-workspace \
   --workspace-id ${AMP_WORKSPACE_ID} \
   --query 'workspace.prometheusEndpoint' \
@@ -593,7 +593,7 @@ echo "AMP Endpoint: ${AMP_ENDPOINT}"
 
 Create an IAM policy that allows Prometheus to remote-write metrics and Grafana to query them:
 
-```
+```bash
 ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 
 AMP_POLICY_ARN=$(aws iam create-policy \
@@ -607,14 +607,14 @@ echo "AMP Policy ARN: ${AMP_POLICY_ARN}"
 
 Create the monitoring namespace and the service account for Grafana. The kube-prometheus-stack chart creates the Prometheus service account when you install it:
 
-```
+```bash
 kubectl create namespace monitoring
 kubectl create serviceaccount grafana-sa -n monitoring
 ```
 
 Create EKS Pod Identity Associations to link the service accounts to the IAM policy:
 
-```
+```bash
 eksctl create podidentityassociation \
   --cluster ${CLUSTER_NAME} \
   --namespace monitoring \
@@ -634,7 +634,7 @@ eksctl create podidentityassociation \
 
 Verify both EKS Pod Identity associations were created:
 
-```
+```bash
 eksctl get podidentityassociation --cluster ${CLUSTER_NAME} --region ${AWS_REGION}
 ```
 
@@ -645,7 +645,7 @@ Expected output should include both `amp-iamproxy-ingest-service-account` and `g
 
 Add the Helm repo:
 
-```
+```bash
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 ```
@@ -659,7 +659,7 @@ Grafana includes default admin credentials and provides full administrative acce
 
 Find your public IP address and store it as a `/32` CIDR. The values file reads this from the `MY_CIDR` environment variable:
 
-```
+```bash
 export MY_CIDR="$(curl -s https://checkip.amazonaws.com)/32"
 echo $MY_CIDR
 ```
@@ -670,7 +670,7 @@ Create the values file:
 
 **Example kube-prometheus-stack values file**
 
-```
+```yaml
 cat << EOF > /tmp/kube-prometheus-values.yaml
 alertmanager:
   enabled: false
@@ -809,7 +809,7 @@ EOF
 
 Validate the variables were populated correctly:
 
-```
+```bash
 grep -E "url:|region:" /tmp/kube-prometheus-values.yaml
 ```
 
@@ -817,7 +817,7 @@ You should see the full AMP endpoint URL (starting with `https://aps-workspaces�
 
 Install the chart:
 
-```
+```bash
 helm install kube-prometheus-stack prometheus-community/kube-prometheus-stack \
   --namespace monitoring \
   -f /tmp/kube-prometheus-values.yaml
@@ -825,7 +825,7 @@ helm install kube-prometheus-stack prometheus-community/kube-prometheus-stack \
 
 Verify the pods are running:
 
-```
+```bash
 kubectl get pods -n monitoring
 ```
 
@@ -862,13 +862,13 @@ The `alb.ingress.kubernetes.io/healthcheck-path` annotation in the values file p
 
 Print the load balancer URL. The load balancer is created asynchronously, so allow a minute or two:
 
-```
+```bash
 echo "http://$(kubectl get ingress kube-prometheus-stack-grafana -n monitoring -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')"
 ```
 
 Open the URL in your browser. Log in with username `admin` and the password from the following command:
 
-```
+```bash
 kubectl --namespace monitoring get secrets kube-prometheus-stack-grafana -o jsonpath="{.data.admin-password}" | base64 -d ; echo
 ```
 
@@ -891,7 +891,7 @@ If `up` shows results, the pipeline (cluster → Prometheus → AMP → Grafana)
 
 The kube-prometheus-stack collects node-level CPU and memory metrics but not GPU metrics. The NVIDIA DCGM Exporter adds GPU utilization, memory usage, temperature, power draw, NVLink bandwidth, and tensor activity.
 
-```
+```bash
 helm repo add gpu-helm-charts https://nvidia.github.io/dcgm-exporter/helm-charts
 helm repo update
 ```
@@ -901,14 +901,14 @@ Set the GPU node selector key for your path. EKS Auto Mode and self-managed Karp
 ------
 #### [ EKS Auto Mode ]
 
-```
+```bash
 GPU_NODE_SELECTOR_KEY="eks.amazonaws.com/instance-gpu-manufacturer"
 ```
 
 ------
 #### [ Self-managed Karpenter ]
 
-```
+```bash
 GPU_NODE_SELECTOR_KEY="karpenter.k8s.aws/instance-gpu-manufacturer"
 ```
 
@@ -918,7 +918,7 @@ Create the DCGM exporter values file:
 
 **Example dcgm-exporter values file**
 
-```
+```yaml
 cat << EOF > /tmp/dcgm-exporter-values.yaml
 resources:
   requests:
@@ -1009,14 +1009,14 @@ The `customMetrics` field overrides the DCGM exporter’s default metric set wit
 **Note**
 The metric list covers GPUs across instance families, so it includes metrics that a given GPU does not expose. Once the exporter runs on a GPU node, its logs report each one it skips with a `metric not enabled` warning:
 
-```
+```bash
 level=WARN msg="Skipping line 27 ('DCGM_FI_PROF_NVLINK_TX_BYTES'): metric not enabled"
 ```
 For example, an NVIDIA L4 GPU on a G6 instance has no NVLink, so the NVLink metrics are skipped. These warnings are expected and the remaining metrics are still collected.
 
 Install the DCGM exporter:
 
-```
+```bash
 helm install dcgm-exporter gpu-helm-charts/dcgm-exporter \
   --namespace monitoring \
   -f /tmp/dcgm-exporter-values.yaml
@@ -1026,13 +1026,13 @@ The `tolerations` allow the exporter to run on the GPU-tainted nodes provisioned
 
 Verify the DCGM exporter DaemonSet. Because the exporter selects GPU nodes and none exist yet, the expectation is that there are zero DCGM exporter Pods:
 
-```
+```bash
 kubectl get daemonset dcgm-exporter -n monitoring
 ```
 
 Expected output:
 
-```
+```bash
 NAME            DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR                                        AGE
 dcgm-exporter   0         0         0       0            0           eks.amazonaws.com/instance-gpu-manufacturer=nvidia   30s
 ```
@@ -1058,7 +1058,7 @@ Create an Amazon S3 bucket for storing model weights and configure an EKS Pod Id
 
 If you opened a new terminal, set the cluster name and region:
 
-```
+```bash
 export CLUSTER_NAME=ai-eks-docs
 export AWS_REGION=us-east-2
 ```
@@ -1068,7 +1068,7 @@ export AWS_REGION=us-east-2
 
 Create the bucket with a random suffix to avoid name collisions:
 
-```
+```bash
 BUCKET_SUFFIX=$(head -c 4 /dev/urandom | od -An -tx1 | tr -d ' \n')
 MODEL_BUCKET="${CLUSTER_NAME}-models-${BUCKET_SUFFIX}"
 
@@ -1082,13 +1082,13 @@ S3 buckets created after January 2023 have server-side encryption (AES256) and p
 
 Create a `model-storage-sa` ServiceAccount in the `default` namespace, an IAM policy scoped to the model bucket, and an EKS Pod Identity Association that links them. Workload pods that set `serviceAccountName: model-storage-sa` will be able to read and write to the bucket.
 
-```
+```bash
 kubectl create serviceaccount model-storage-sa
 ```
 
 Create the IAM policy:
 
-```
+```bash
 POLICY_ARN=$(aws iam create-policy \
   --policy-name "${CLUSTER_NAME}-model-storage-policy" \
   --policy-document "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Effect\": \"Allow\", \"Action\": [\"s3:GetObject\", \"s3:PutObject\", \"s3:ListBucket\", \"s3:DeleteObject\"], \"Resource\": [\"arn:aws:s3:::${MODEL_BUCKET}\", \"arn:aws:s3:::${MODEL_BUCKET}/*\"]}]}" \
@@ -1103,7 +1103,7 @@ This policy grants `s3:DeleteObject` and `s3:PutObject` for the validation step.
 
 Create the EKS Pod Identity Association. `eksctl` creates the IAM role with the correct trust policy and links it to the ServiceAccount:
 
-```
+```bash
 eksctl create podidentityassociation \
   --cluster ${CLUSTER_NAME} \
   --namespace default \
@@ -1115,7 +1115,7 @@ eksctl create podidentityassociation \
 
 Verify the association:
 
-```
+```bash
 eksctl get podidentityassociation --cluster ${CLUSTER_NAME} --region ${AWS_REGION}
 ```
 
@@ -1126,7 +1126,7 @@ The output should include the `model-storage-sa` association in the `default` na
 
 Run a one-off Pod with the AWS CLI image, using the `model-storage-sa` ServiceAccount, to confirm EKS Pod Identity is wired up and S3 access works:
 
-```
+```yaml
 cat << EOF | kubectl apply -f -
 apiVersion: v1
 kind: Pod
@@ -1160,7 +1160,7 @@ EOF
 
 Wait for the Pod to complete and check the logs:
 
-```
+```bash
 kubectl wait --for=jsonpath='{.status.phase}'=Succeeded pod/s3-test --timeout=300s
 kubectl logs s3-test
 ```
@@ -1188,7 +1188,7 @@ The caller identity confirms the Pod assumed the `${CLUSTER_NAME}-model-storage-
 
 Clean up the test Pod:
 
-```
+```bash
 kubectl delete pod s3-test
 ```
 
@@ -1206,7 +1206,7 @@ If you plan to continue with the next sections of this guide, skip the full clea
 **Important**
 If you created a GPU NodePool, run [Clean up the GPU NodePool](ml-inference-gpu-nodepool-cli.md#gpu-nodepool-cli-cleanup) first. Deleting the cluster does not cancel an On-Demand Capacity Reservation (ODCR), which keeps billing until you cancel it explicitly.
 
-```
+```bash
 export CLUSTER_NAME=ai-eks-docs
 export AWS_REGION=us-east-2
 ```
@@ -1216,7 +1216,7 @@ export AWS_REGION=us-east-2
 
 Look up the IAM policy ARN:
 
-```
+```bash
 AMP_POLICY_ARN=$(aws iam list-policies \
   --scope Local \
   --query "Policies[?PolicyName=='${CLUSTER_NAME}-amp-grafana-policy'].Arn" \
@@ -1226,7 +1226,7 @@ echo "AMP Policy ARN: ${AMP_POLICY_ARN}"
 
 Look up the AMP workspace ID:
 
-```
+```bash
 AMP_WORKSPACE_ID=$(aws amp list-workspaces \
   --alias "amp-ws-${CLUSTER_NAME}" \
   --query 'workspaces[0].workspaceId' \
@@ -1237,19 +1237,19 @@ echo "AMP Workspace ID: ${AMP_WORKSPACE_ID}"
 
 Uninstall the DCGM exporter Helm release:
 
-```
+```bash
 helm uninstall dcgm-exporter -n monitoring
 ```
 
 Uninstall the kube-prometheus-stack Helm release:
 
-```
+```bash
 helm uninstall kube-prometheus-stack -n monitoring
 ```
 
 Delete the EKS Pod Identity association for the Prometheus ingest service account:
 
-```
+```bash
 eksctl delete podidentityassociation \
   --cluster ${CLUSTER_NAME} \
   --namespace monitoring \
@@ -1259,7 +1259,7 @@ eksctl delete podidentityassociation \
 
 Delete the EKS Pod Identity association for the Grafana service account:
 
-```
+```bash
 eksctl delete podidentityassociation \
   --cluster ${CLUSTER_NAME} \
   --namespace monitoring \
@@ -1269,19 +1269,19 @@ eksctl delete podidentityassociation \
 
 Delete the IAM policy used by Prometheus and Grafana:
 
-```
+```bash
 aws iam delete-policy --policy-arn ${AMP_POLICY_ARN}
 ```
 
 Delete the AMP workspace:
 
-```
+```bash
 aws amp delete-workspace --workspace-id ${AMP_WORKSPACE_ID} --region ${AWS_REGION}
 ```
 
 Delete the monitoring namespace:
 
-```
+```bash
 kubectl delete namespace monitoring
 ```
 
@@ -1290,7 +1290,7 @@ kubectl delete namespace monitoring
 
 Look up the model bucket name:
 
-```
+```bash
 MODEL_BUCKET=$(aws s3api list-buckets \
   --query "Buckets[?starts_with(Name, '${CLUSTER_NAME}-models-')].Name | [0]" \
   --output text)
@@ -1299,7 +1299,7 @@ echo "Model bucket: ${MODEL_BUCKET}"
 
 Look up the IAM policy ARN:
 
-```
+```bash
 POLICY_ARN=$(aws iam list-policies \
   --scope Local \
   --query "Policies[?PolicyName=='${CLUSTER_NAME}-model-storage-policy'].Arn" \
@@ -1309,13 +1309,13 @@ echo "Policy ARN: ${POLICY_ARN}"
 
 Delete the S3 model bucket and all of its objects:
 
-```
+```bash
 aws s3 rb s3://${MODEL_BUCKET} --force
 ```
 
 Delete the EKS Pod Identity association:
 
-```
+```bash
 eksctl delete podidentityassociation \
   --cluster ${CLUSTER_NAME} \
   --namespace default \
@@ -1325,13 +1325,13 @@ eksctl delete podidentityassociation \
 
 Delete the IAM policy:
 
-```
+```bash
 aws iam delete-policy --policy-arn ${POLICY_ARN}
 ```
 
 Delete the Kubernetes ServiceAccount:
 
-```
+```bash
 kubectl delete serviceaccount model-storage-sa
 ```
 
@@ -1342,7 +1342,7 @@ On the self-managed Karpenter path, first delete every Karpenter `NodePool` and 
 
 Karpenter creates an EC2 instance profile for each `EC2NodeClass` and removes it when you delete that `EC2NodeClass`. If an `EC2NodeClass` still exists when `eksctl` removes Karpenter, nothing is left to delete the instance profile. The stack that owns the Karpenter node IAM role then cannot be deleted:
 
-```
+```bash
 kubectl delete nodepool --all
 kubectl delete ec2nodeclass --all
 kubectl get nodeclaims
@@ -1350,13 +1350,13 @@ kubectl get nodeclaims
 
 Wait until `kubectl get nodeclaims` returns `No resources found`, then delete the cluster:
 
-```
+```bash
 eksctl delete cluster --name=$CLUSTER_NAME --region=$AWS_REGION
 ```
 
  `eksctl` deletes the cluster AWS CloudFormation stack asynchronously. The command prints `all cluster resources were deleted` and returns before deletion finishes, so wait a few minutes and then confirm the cluster, its nodes, and its stack are gone:
 
-```
+```bash
 aws eks list-clusters --region $AWS_REGION
 
 aws ec2 describe-instances \
@@ -1377,7 +1377,7 @@ The cluster name should be absent from the first command’s output, the second 
 
 If a stack reports `DELETE_FAILED`, list the resources that blocked deletion, remove them, and delete the stack again. The following command prints the reason for each failure, for either of the two stacks that can fail here:
 
-```
+```bash
 aws cloudformation describe-stack-events \
   --region $AWS_REGION \
   --stack-name [.replaceable]`stack-name` \
@@ -1388,7 +1388,7 @@ aws cloudformation describe-stack-events \
 Two failures are common on the self-managed Karpenter path:
 +  `eksctl-{{cluster-name}}-karpenter` fails with `KarpenterNodeRole …​ Cannot delete entity, must remove roles from instance profile first`. An instance profile that Karpenter created still references the node role, which happens when an `EC2NodeClass` outlived Karpenter. Detach and delete the instance profile, then delete the stack again:
 
-  ```
+  ```bash
   aws iam list-instance-profiles-for-role \
     --role-name eksctl-KarpenterNodeRole-${CLUSTER_NAME} \
     --query 'InstanceProfiles[].InstanceProfileName' \
@@ -1404,7 +1404,7 @@ Two failures are common on the self-managed Karpenter path:
   ```
 +  `eksctl-{{cluster-name}}-cluster` fails on `ControlPlaneSecurityGroup`, `ClusterSharedNodeSecurityGroup`, or the private subnets. Each reports a dependent object error. The EKS-managed cluster security group `eks-cluster-sg-{{cluster-name}}-*` can outlive the control plane and hold the subnets. Confirm no network interfaces remain in the VPC, delete that security group, and delete the stack again:
 
-  ```
+  ```bash
   aws ec2 describe-security-groups \
     --region $AWS_REGION \
     --filters "Name=group-name,Values=eks-cluster-sg-${CLUSTER_NAME}-*" \

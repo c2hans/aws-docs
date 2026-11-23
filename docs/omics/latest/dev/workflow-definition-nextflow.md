@@ -554,7 +554,7 @@ Nextflow v26.04.0 and later use the strict (v2) syntax parser by default. This i
 
 To run a workflow authored against the legacy (v1) parser, set `engineSettings.syntaxVersion` to `v1` in the **StartRun** request:
 
-```
+```json
 {
   "engineSettings": {
     "syntaxVersion": "v1"

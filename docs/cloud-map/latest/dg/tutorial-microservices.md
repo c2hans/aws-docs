@@ -116,7 +116,7 @@ For information about creating a Lambda function, see [Create a Lambda function 
 
 After you create the function, update the example code to reflect the following Python code, and then deploy the function. Note that you're specifying the `datatable` custom attribute you associated with the AWS Cloud Map service instance you created for the DynamoDB table. The function generates a key that is a random number between 1 and 100 and associates it with a value that is passed to the function when it is called.
 
-```
+```python
 import json
 import boto3
 import random
@@ -194,7 +194,7 @@ For information about creating a Lambda function, see [Create a Lambda function 
 
 After you create the function, update the example code to reflect the following Python code, and then deploy the function. The function scans the table amd returns all items.
 
-```
+```python
 import json
 import boto3
 
@@ -259,7 +259,7 @@ You can create and run client applications in AWS CloudShell that use code to di
 
 1. In the `writeclient.py` file, enter insert mode by pressing the `i` button. Then, copy and paste the following code. This code discovers the Lambda function to write data by searching for the custom attribute `name=writeservice` in the `app-service` service. The name of the Lambda function responsible for writing data to the DynamoDB table is returned. Then the Lambda function is invoked, passing a sample payload that is written to the table as a value.
 
-   ```
+   ```python
    import boto3
 
    serviceclient = boto3.client('servicediscovery')
@@ -299,7 +299,7 @@ You can create and run client applications in AWS CloudShell that use code to di
 
    1. In the `readclient.py` file, press the `i` button to enter insert mode. Then, copy and paste the following code. This code scans the table and will return the value that you wrote to the table in the previous step.
 
-      ```
+      ```python
       import boto3
 
       serviceclient = boto3.client('servicediscovery')

@@ -317,7 +317,7 @@ aws docdb create-db-cluster ^
 
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "DBCluster": {
         "StorageEncrypted": false,

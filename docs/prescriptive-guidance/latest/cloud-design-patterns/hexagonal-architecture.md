@@ -240,4 +240,6 @@ For a complete implementation of the sample architecture for this pattern, see t
 
 The following video (in Japanese) discusses the use of hexagonal architecture in the implementation of a domain model by using a Lambda function.
 
+[![AWS Videos](https://img.youtube.com/vi/whQ-P05QeDQ/0.jpg)](https://www.youtube.com/watch?v=whQ-P05QeDQ)
+
 [https://www.youtube-nocookie.com/embed/whQ-P05QeDQ?controls=0&rel=1](https://www.youtube-nocookie.com/embed/whQ-P05QeDQ?controls=0&rel=1)

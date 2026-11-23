@@ -32,7 +32,7 @@ The request that Amazon Cognito passes to this Lambda function is a combination 
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "userName": "{{string}}",
     "request": {
@@ -122,7 +122,7 @@ This example Lambda function migrates the user with an existing password and sup
 ------
 #### [ Node.js ]
 
-```
+```javascript
 exports.handler = (event, context, callback) => {
   var user;
 

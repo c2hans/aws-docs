@@ -21,7 +21,7 @@ The `ContentType` and `Accept` parameters of the `InvokeEndpoint` API are requir
 
 Use the `sagemaker_runtime_client` to send a request to the endpoint, as follows:
 
-```
+```JMESPath
 response = sagemaker_runtime_client.invoke_endpoint(
     EndpointName='name-of-your-endpoint',
     EnableExplanations='`true`',

@@ -45,13 +45,13 @@ Consult the table of supported locations in [Supported AWS locations](gamelift-r
 
 **Example**
 
-```
+```bash
 aws gamelift list-locations --region ap-northeast-2
 ```
 
 This AWS Region supports multi-location fleets, therefore multiple locations will be returned. Here is an example of one of the return values:
 
-```
+```json
 [...]
 {
     "LocationName": "ap-northeast-1",
@@ -321,7 +321,7 @@ class UdpLatencyTest
 ------
 #### [ Python ]
 
-```
+```Python
 import socket
 import time
 import statistics

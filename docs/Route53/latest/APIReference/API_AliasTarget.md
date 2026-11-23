@@ -58,7 +58,7 @@ Length Constraints: Maximum length of 1024.
 Required: Yes
 
  ** EvaluateTargetHealth **   <a name="Route53-Type-AliasTarget-EvaluateTargetHealth"></a>
- *Applies only to alias, failover alias, geolocation alias, latency alias, and weighted alias resource record sets:* When `EvaluateTargetHealth` is `true`, an alias resource record set inherits the health of the referenced AWS resource, such as an ELB load balancer or another resource record set in the hosted zone.
+ *Applies only to alias, az-affinity alias, failover alias, geolocation alias, latency alias, and weighted alias resource record sets:* When `EvaluateTargetHealth` is `true`, an alias resource record set inherits the health of the referenced AWS resource, such as an ELB load balancer or another resource record set in the hosted zone.
 Note the following:
 CloudFront distributions
 You can't set `EvaluateTargetHealth` to `true` when the alias target is a CloudFront distribution.

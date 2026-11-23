@@ -26,13 +26,13 @@ Follow the instructions in Step 1 of [Sending Amazon SNS Messages to HTTP/HTTPS 
 
 Create an SNS client, passing your credentials object and the region of your identity pool:
 
-```
+```csharp
 var snsClient = new AmazonSimpleNotificationServiceClient(credentials, region);
 ```
 
 To send messages to an HTTP or HTTPS endpoint through a topic, you must subscribe the endpoint to the Amazon SNS topic. You specify the endpoint using its URL:
 
-```
+```csharp
 var response = await snsClient.SubscribeAsync(
   "topicArn",
   "http",  /* "http" or "https" */
@@ -52,6 +52,6 @@ Amazon SNS will not send messages to the endpoint until the subscription is conf
 
 You can send a message to a topic’s subscriptions by publishing to the topic. Invoke `PublishAsync` and pass it the topic ARN and your message.
 
-```
+```csharp
 var response = await snsClient.PublishAsync(topicArn, "This is your message");
 ```

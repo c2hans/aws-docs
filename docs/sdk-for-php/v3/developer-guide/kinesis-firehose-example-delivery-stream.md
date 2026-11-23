@@ -31,7 +31,7 @@ This enables developers to migrate existing Kinesis services to Firehose.
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -39,7 +39,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $firehoseClient = new Aws\Firehose\FirehoseClient([
     'profile' => 'default',
     'version' => '2015-08-04',
@@ -77,7 +77,7 @@ Provide the destination parameters, as described in [Destination Parameters](htt
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -85,7 +85,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $firehoseClient = new Aws\Firehose\FirehoseClient([
     'profile' => 'default',
     'version' => '2015-08-04',
@@ -126,7 +126,7 @@ Provide the destination parameters, as described in [Destination Parameters](htt
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -134,7 +134,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $firehoseClient = new Aws\Firehose\FirehoseClient([
     'profile' => 'default',
     'version' => '2015-08-04',
@@ -183,7 +183,7 @@ To get the details about an existing Firehose delivery stream, use the [Describe
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -191,7 +191,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $firehoseClient = new Aws\Firehose\FirehoseClient([
     'profile' => 'default',
     'version' => '2015-08-04',
@@ -219,7 +219,7 @@ To list all the existing Firehose delivery streams sending data to Kinesis Data 
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -227,7 +227,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $firehoseClient = new Aws\Firehose\FirehoseClient([
     'profile' => 'default',
     'version' => '2015-08-04',
@@ -253,7 +253,7 @@ To list all the existing Firehose delivery streams sending data to Amazon S3, Op
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -261,7 +261,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $firehoseClient = new Aws\Firehose\FirehoseClient([
     'profile' => 'default',
     'version' => '2015-08-04',
@@ -289,7 +289,7 @@ Before sending data to a Firehose delivery stream, use `DescribeDeliveryStream` 
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -297,7 +297,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $firehoseClient = new Aws\Firehose\FirehoseClient([
     'profile' => 'default',
     'version' => '2015-08-04',
@@ -329,7 +329,7 @@ To delete a Firehose delivery stream, use the [DeleteDeliveryStreams](https://do
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -337,7 +337,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $firehoseClient = new Aws\Firehose\FirehoseClient([
     'profile' => 'default',
     'version' => '2015-08-04',

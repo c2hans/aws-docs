@@ -84,7 +84,7 @@ The following example endpoint policy for Image Builder denies permission to del
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -117,7 +117,7 @@ The following example endpoint policy shows how to restrict access to identities
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -168,7 +168,7 @@ To ensure that Image Builder can bootstrap the build and test instances, add the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

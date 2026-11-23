@@ -237,7 +237,7 @@ For more information, see [AWS Fargate profile - Creating a Fargate profile](htt
 **Tools for PowerShell V4**
 **Example 1: This cmdlet creates an AWS Fargate profile for your Amazon EKS cluster. You must have at least one Fargate profile in a cluster to be able to schedule pods on Fargate infrastructure. **
 
-```
+```powershell
 New-EKSFargateProfile -FargateProfileName EKSFargateProfile -ClusterName TEST -Subnet "subnet-02f6ff500ff2067a0", "subnet-0cd976f08d5fbfaae" -PodExecutionRoleArn arn:aws:iam::012345678912:role/AmazonEKSFargatePodExecutionRole -Selector @{Namespace="default"}
 ```
 **Output:**
@@ -258,7 +258,7 @@ Tags                : {}
 **Tools for PowerShell V5**
 **Example 1: This cmdlet creates an AWS Fargate profile for your Amazon EKS cluster. You must have at least one Fargate profile in a cluster to be able to schedule pods on Fargate infrastructure. **
 
-```
+```powershell
 New-EKSFargateProfile -FargateProfileName EKSFargateProfile -ClusterName TEST -Subnet "subnet-02f6ff500ff2067a0", "subnet-0cd976f08d5fbfaae" -PodExecutionRoleArn arn:aws:iam::012345678912:role/AmazonEKSFargatePodExecutionRole -Selector @{Namespace="default"}
 ```
 **Output:**

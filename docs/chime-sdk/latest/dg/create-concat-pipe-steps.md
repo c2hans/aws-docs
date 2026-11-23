@@ -15,7 +15,7 @@ You follow a multi-step process to create an Amazon Chime SDK media concatenatio
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "AWSChimeMediaCaptureBucketPolicy",
@@ -62,7 +62,7 @@ You follow a multi-step process to create an Amazon Chime SDK media concatenatio
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "AWSChimeMediaConcatenationBucketPolicy",
@@ -110,7 +110,7 @@ You can use a single Amazon S3 bucket for media capture and media concatenation 
 **Note**
 You must use a `MediaPipelineArn` created within the last 30 days.
 
-   ```
+   ```json
    {
        "Sources": [
            {

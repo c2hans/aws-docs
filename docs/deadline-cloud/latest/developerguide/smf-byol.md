@@ -46,7 +46,7 @@ For information about configuring license environment variables, see [Step 3: Co
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -91,7 +91,7 @@ For information about configuring license environment variables, see [Step 3: Co
 ------
 #### [ Windows ]
 
-   ```
+   ```yaml
    specificationVersion: "environment-2023-09"
    parameterDefinitions:
     - name: LicenseInstanceId
@@ -244,7 +244,7 @@ For information about configuring license environment variables, see [Step 3: Co
 ------
 #### [ Linux ]
 
-   ```
+   ```yaml
    specificationVersion: "environment-2023-09"
    parameterDefinitions:
     - name: LicenseInstanceId
@@ -416,7 +416,7 @@ To set up a license proxy instance for Deadline Cloud, follow the steps in this 
 
 1. To install the HAProxy package, enter
 
-   ```
+   ```bash
    sudo yum install haproxy
    ```
 
@@ -426,7 +426,7 @@ To set up a license proxy instance for Deadline Cloud, follow the steps in this 
 
    1. Replace **LicenseServerHost** with the host name or IP address of the license server.
 
-   ```
+   ```bash
    global
        log         127.0.0.1 local2
        chroot      /var/lib/haproxy
@@ -449,7 +449,7 @@ To set up a license proxy instance for Deadline Cloud, follow the steps in this 
 
 1. To enable and start the HAProxy service, run the following commands:
 
-   ```
+   ```bash
    sudo systemctl enable haproxy
    sudo service haproxy start
    ```
@@ -465,7 +465,7 @@ You can use a CloudFormation template to configure an entire farm to use your ow
 
 1. Use the following CloudFormation template.
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: 2010-09-09
    Description: "Create Deadline Cloud resources for BYOL"
 

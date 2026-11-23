@@ -56,7 +56,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 **Example : Log entry for CreateCase**
 The following example shows a CloudTrail log entry for the [CreateCase](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_CreateCase.html) operation.
 
-```
+```json
 {
    "Records": [
       {
@@ -105,7 +105,7 @@ The following example shows a CloudTrail log entry for the [CreateCase](https://
 **Example : Log entry for RefreshTrustedAdvisorCheck**
 The following example shows a CloudTrail log entry for the [RefreshTrustedAdvisorCheck](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_RefreshTrustedAdvisorCheck.html) operation.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

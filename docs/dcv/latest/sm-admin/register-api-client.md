@@ -54,7 +54,7 @@ sudo -u root dcv-session-manager-broker register-api-client --client-name my-sm-
 
 **Output**
 
-```
+```json
 client-id: 21cfe9cf-61d7-4c53-b1b6-cf248EXAMPLE
 client-password: NjVmZDRlN2ItNjNmYS00M2QxLWFlZmMtZmNmMDNkMEXAMPLE
 ```

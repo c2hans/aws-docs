@@ -194,7 +194,7 @@ Retrieves information about the communication requirements and options that are 
 #### POST schema
 <a name="templates-template-name-sms-request-body-post-example"></a>
 
-```
+```json
 {
   "TemplateDescription": "string",
   "DefaultSubstitutions": "string",
@@ -208,7 +208,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="templates-template-name-sms-request-body-put-example"></a>
 
-```
+```json
 {
   "TemplateDescription": "string",
   "DefaultSubstitutions": "string",
@@ -225,7 +225,7 @@ Retrieves information about the communication requirements and options that are 
 #### SMSTemplateResponse schema
 <a name="templates-template-name-sms-response-body-smstemplateresponse-example"></a>
 
-```
+```json
 {
   "CreationDate": "string",
   "LastModifiedDate": "string",
@@ -245,7 +245,7 @@ Retrieves information about the communication requirements and options that are 
 #### CreateTemplateMessageBody schema
 <a name="templates-template-name-sms-response-body-createtemplatemessagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string",
@@ -256,7 +256,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="templates-template-name-sms-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

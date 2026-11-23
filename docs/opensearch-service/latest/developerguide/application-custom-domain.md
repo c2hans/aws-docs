@@ -34,7 +34,7 @@ Use the following procedure to deploy the friendly URL redirect infrastructure w
 
 1. Create a JSON file that maps your friendly names to application URLs. Each key becomes a subdomain (for example, key `prod` becomes `https://prod.example.com`).
 
-   ```
+   ```json
    {
      "data": [
        {"key": "prod", "value": "https://application-prod-abc123.us-west-2.opensearch.amazonaws.com"},
@@ -48,14 +48,14 @@ Use the following procedure to deploy the friendly URL redirect infrastructure w
 
 1. Upload the mappings file to an Amazon S3 bucket in your account:
 
-   ```
+   ```bash
    aws s3 cp opensearch-ui-friendly-url-app-mappings-v1.json \
      s3://{{your-bucket-name}}/opensearch-ui-friendly-url-app-mappings-v1.json
    ```
 
 1. Grant CloudFront permission to read the mappings file by adding a bucket policy. Replace {{your-bucket-name}} and {{your-account-id}} with your values:
 
-   ```
+   ```bash
    aws s3api put-bucket-policy \
      --bucket {{your-bucket-name}} \
      --policy '{
@@ -87,7 +87,7 @@ This bucket policy allows CloudFront to read the mappings file during KeyValueSt
 
    Replace the placeholder values with your own:
 
-   ```
+   ```bash
    aws cloudformation create-stack \
      --stack-name opensearch-ui-friendly-url \
      --template-url https://opensearch-ui-quickstart-sample-cfn-templates.s3.us-west-2.amazonaws.com/opensearch-ui-friendly-url/main.yaml \
@@ -104,7 +104,7 @@ This bucket policy allows CloudFront to read the mappings file during KeyValueSt
 
 1. Wait for the stack to complete (approximately 15 minutes). You can monitor progress:
 
-   ```
+   ```bash
    aws cloudformation wait stack-create-complete \
      --stack-name opensearch-ui-friendly-url \
      --region us-east-1
@@ -114,7 +114,7 @@ This bucket policy allows CloudFront to read the mappings file during KeyValueSt
 
    You can also verify with `curl`:
 
-   ```
+   ```bash
    curl -I https://{{prod}}.{{your-domain.com}}
    # Expected: HTTP/2 302
    # location: https://application-prod-abc123.us-west-2.opensearch.amazonaws.com
@@ -125,7 +125,7 @@ This bucket policy allows CloudFront to read the mappings file during KeyValueSt
 
 The following is the full CloudFormation template used by the Launch Stack link and CLI command above. You can also download it directly from `https://opensearch-ui-quickstart-sample-cfn-templates.s3.us-west-2.amazonaws.com/opensearch-ui-friendly-url/main.yaml`.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Metadata:
   TemplateVersion: '1.0.0'
@@ -308,7 +308,7 @@ To add, update, or remove application mappings, create a new version of your S3 
 
 1. Upload the new version to S3:
 
-   ```
+   ```bash
    aws s3 cp opensearch-ui-friendly-url-app-mappings-v2.json \
      s3://{{your-bucket-name}}/opensearch-ui-friendly-url-app-mappings-v2.json
    ```
@@ -319,7 +319,7 @@ To add, update, or remove application mappings, create a new version of your S3 
 
    **Using the AWS CLI:**
 
-   ```
+   ```bash
    aws cloudformation update-stack \
      --stack-name opensearch-ui-friendly-url \
      --use-previous-template \
@@ -341,7 +341,7 @@ To roll back to a previous version, update the stack pointing to the earlier fil
 
 **Using the AWS CLI:**
 
-```
+```bash
 aws cloudformation update-stack \
   --stack-name opensearch-ui-friendly-url \
   --use-previous-template \
@@ -413,7 +413,7 @@ If your domain is managed by a DNS provider other than Route 53, you can set up
 
    1. Replace the function code with the following:
 
-      ```
+      ```javascript
       import cf from 'cloudfront';
 
       const kvsHandle = cf.kvs("{{YOUR_KVS_ID}}");
@@ -507,7 +507,7 @@ The new friendly URL is available immediately after saving.
 
 To remove the friendly URL redirect infrastructure, run the following command:
 
-```
+```bash
 aws cloudformation delete-stack \
   --stack-name opensearch-ui-friendly-url \
   --region us-east-1

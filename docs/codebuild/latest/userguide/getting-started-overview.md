@@ -58,7 +58,7 @@ In this step, you create the source code that you want CodeBuild to build to the
 
 1. Using a text editor of your choice, create this file, name it `MessageUtil.java`, and then save it in the `src/main/java` directory.
 
-   ```
+   ```java
    public class MessageUtil {
      private String message;
 
@@ -83,7 +83,7 @@ In this step, you create the source code that you want CodeBuild to build to the
 
 1. Create this file, name it `TestMessageUtil.java`, and then save it in the `/src/test/java` directory.
 
-   ```
+   ```java
    import org.junit.Test;
    import org.junit.Ignore;
    import static org.junit.Assert.assertEquals;
@@ -112,7 +112,7 @@ In this step, you create the source code that you want CodeBuild to build to the
 
 1. Create this file, name it `pom.xml`, and then save it in the root (top level) directory.
 
-   ```
+   ```xml
    <project xmlns="http://maven.apache.org/POM/4.0.0"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -167,7 +167,7 @@ In this step, you create a build specification (build spec) file. A *buildspec* 
 
 Create this file, name it `buildspec.yml`, and then save it in the root (top level) directory.
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -431,7 +431,7 @@ The ellipses (...) in this statement are used for brevity. Do not remove any sta
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -499,7 +499,7 @@ In this step, you create the source code that you want CodeBuild to build to the
 
 1. Using a text editor of your choice, create this file, name it `MessageUtil.java`, and then save it in the `src/main/java` directory.
 
-   ```
+   ```java
    public class MessageUtil {
      private String message;
 
@@ -524,7 +524,7 @@ In this step, you create the source code that you want CodeBuild to build to the
 
 1. Create this file, name it `TestMessageUtil.java`, and then save it in the `/src/test/java` directory.
 
-   ```
+   ```java
    import org.junit.Test;
    import org.junit.Ignore;
    import static org.junit.Assert.assertEquals;
@@ -553,7 +553,7 @@ In this step, you create the source code that you want CodeBuild to build to the
 
 1. Create this file, name it `pom.xml`, and then save it in the root (top level) directory.
 
-   ```
+   ```xml
    <project xmlns="http://maven.apache.org/POM/4.0.0"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -608,7 +608,7 @@ In this step, you create a build specification (build spec) file. A *buildspec* 
 
 Create this file, name it `buildspec.yml`, and then save it in the root (top level) directory.
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -725,7 +725,7 @@ For this build environment, you instruct CodeBuild to use a Docker image that co
 
 1. Use the AWS CLI to run the **create-project** command:
 
-   ```
+   ```shell
    aws codebuild create-project --generate-cli-skeleton
    ```
 
@@ -733,7 +733,7 @@ For this build environment, you instruct CodeBuild to use a Docker image that co
 
    Modify the copied data to follow this format, and then save your results:
 
-   ```
+   ```json
    {
      "name": "codebuild-demo-project",
      "source": {
@@ -771,13 +771,13 @@ Other available values in the original JSON-formatted data, such as `description
 
 1. Switch to the directory that contains the file you just saved, and then run the **create-project** command again.
 
-   ```
+   ```shell
    aws codebuild create-project --cli-input-json file://create-project.json
    ```
 
    If successful, data similar to this appears in the output.
 
-   ```
+   ```json
    {
      "project": {
        "name": "codebuild-demo-project",
@@ -833,7 +833,7 @@ In this step, you instruct AWS CodeBuild to run the build with the settings in t
 
 1. Use the AWS CLI to run the **start-build** command:
 
-   ```
+   ```shell
    aws codebuild start-build --project-name {{project-name}}
    ```
 
@@ -841,7 +841,7 @@ In this step, you instruct AWS CodeBuild to run the build with the settings in t
 
 1. If successful, data similar to the following appears in the output:
 
-   ```
+   ```json
    {
      "build": {
        "buildComplete": false,
@@ -892,7 +892,7 @@ In this step, you view summarized information about the status of your build.<a 
 **To view summarized build information**
 + Use the AWS CLI to run the **batch-get-builds** command.
 
-  ```
+  ```shell
   aws codebuild batch-get-builds --ids {{id}}
   ```
 
@@ -900,7 +900,7 @@ In this step, you view summarized information about the status of your build.<a 
 
   If successful, data similar to this appears in the output.
 
-  ```
+  ```json
   {
     "buildsNotFound": [],
     "builds": [
@@ -1082,7 +1082,7 @@ The ellipses (...) in this statement are used for brevity. Do not remove any sta
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

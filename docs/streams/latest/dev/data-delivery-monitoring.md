@@ -79,7 +79,7 @@ The following table lists recommended CloudWatch alarms for deliveries.
 
  Enable CloudWatch Logs when creating or updating a delivery using the AWS CLI:
 
-```
+```bash
 aws kinesis create-channel \
     --channel-name "my-channel" \
     --service-execution-role-arn "arn:aws:iam::111122223333:role/my-channel-role" \
@@ -122,7 +122,7 @@ aws kinesis create-channel \
 
  All delivery API calls are recorded by AWS CloudTrail. The following is an example AWS CloudTrail event for a `CreateChannel` call:
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

@@ -32,7 +32,7 @@ The following code example shows how to add a dimension to an existing AMI produ
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -97,7 +97,7 @@ The following code example shows how to add a dimension to an existing AMI produ
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -132,7 +132,7 @@ The following code example shows how to add a region where an AMI product is dep
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -154,7 +154,7 @@ The following code example shows how to add a region where an AMI product is dep
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -198,7 +198,7 @@ The following code example shows how to create a public or limited AMI product a
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -458,7 +458,7 @@ The following code example shows how to create a public or limited AMI product a
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -502,7 +502,7 @@ The following code example shows how to create a public or limited AMI product a
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -747,7 +747,7 @@ The following code example shows how to create a public or limited AMI product a
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -786,7 +786,7 @@ The following code example shows how to create a public or limited AMI product a
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1025,7 +1025,7 @@ The following code example shows how to create a public or limited AMI product a
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1069,7 +1069,7 @@ The following code example shows how to create an draft AMI product with a draft
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1097,7 +1097,7 @@ The following code example shows how to create an draft AMI product with a draft
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1141,7 +1141,7 @@ The following code example shows how to restrict a region where an AMI product i
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1162,7 +1162,7 @@ The following code example shows how to restrict a region where an AMI product i
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1206,7 +1206,7 @@ The following code example shows how to restrict product visibility.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1225,7 +1225,7 @@ The following code example shows how to restrict product visibility.
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1260,7 +1260,7 @@ The following code example shows how to specify whether AMI assets are deployed 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1283,7 +1283,7 @@ The following code example shows how to specify whether AMI assets are deployed 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1321,7 +1321,7 @@ The following code example shows how to create a draft CPPO for any product type
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1340,7 +1340,7 @@ The following code example shows how to create a draft CPPO for any product type
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1376,7 +1376,7 @@ The following code example shows how to create a resale authorization replacemen
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1505,7 +1505,7 @@ The following code example shows how to create a resale authorization replacemen
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1549,7 +1549,7 @@ The following code example shows how to list all CPPOs created by a channel part
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1676,7 +1676,7 @@ The following code example shows how to list all shared resale authorizations av
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1748,7 +1748,7 @@ The following code example shows how to publish a CPPO and append a buyer EULA.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1834,7 +1834,7 @@ The following code example shows how to publish a CPPO and append a buyer EULA.
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1877,7 +1877,7 @@ The following code example shows how to publish a CPPO using one-time resale aut
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1947,7 +1947,7 @@ The following code example shows how to publish a CPPO using one-time resale aut
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1991,7 +1991,7 @@ The following code example shows how to publish a draft CPPO and update price ma
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -2076,7 +2076,7 @@ The following code example shows how to publish a draft CPPO and update price ma
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -2120,7 +2120,7 @@ The following code example shows how to update the expiration date of a CPPO to 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -2139,7 +2139,7 @@ The following code example shows how to update the expiration date of a CPPO to 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -2185,7 +2185,7 @@ The following code example shows how to create a draft container product with a 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog":"AWSMarketplace",
     "ChangeSet":[
@@ -2213,7 +2213,7 @@ The following code example shows how to create a draft container product with a 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -2257,7 +2257,7 @@ The following code example shows how to create a limited container product with 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -2467,7 +2467,7 @@ The following code example shows how to create a limited container product with 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -2514,7 +2514,7 @@ The following code example shows how to describe all entities in a single call.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 """
 Purpose
 Shows how to use the AWS SDK for Python (Boto3) to describe for multiple entities information in the AWS Marketplace Catalog
@@ -2587,7 +2587,7 @@ The following code example shows how to list and describe all offers associated 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 """
 Purpose
 Shows how to use the AWS SDK for Python (Boto3) to retrieve all offer information
@@ -2735,7 +2735,7 @@ The following code example shows how to add a free trial to the public offer of 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -2786,7 +2786,7 @@ The following code example shows how to add a free trial to the public offer of 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -2832,7 +2832,7 @@ The following code example shows how to create a custom dimension for a SaaS pro
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -2967,7 +2967,7 @@ The following code example shows how to create a custom dimension for a SaaS pro
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -3004,7 +3004,7 @@ The following code example shows how to create a draft private offer for an AMI 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -3023,7 +3023,7 @@ The following code example shows how to create a draft private offer for an AMI 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -3060,7 +3060,7 @@ The following code example shows how to create a private offer with contract and
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -3199,7 +3199,7 @@ The following code example shows how to create a private offer with contract and
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -3237,7 +3237,7 @@ The following code example shows how to create a private offer with contract pri
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -3397,7 +3397,7 @@ The following code example shows how to create a private offer with contract pri
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -3446,7 +3446,7 @@ The following code example shows how to create a private offer with contract pri
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -3562,7 +3562,7 @@ The following code example shows how to create a private offer with contract pri
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -3606,7 +3606,7 @@ The following code example shows how to create a private offer with contract pri
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -3723,7 +3723,7 @@ The following code example shows how to create a private offer with contract pri
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -3760,7 +3760,7 @@ The following code example shows how to create a private offer with hourly annua
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -3921,7 +3921,7 @@ The following code example shows how to create a private offer with hourly annua
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -3959,7 +3959,7 @@ The following code example shows how to create a private offer with hourly annua
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4105,7 +4105,7 @@ The following code example shows how to create a private offer with hourly annua
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -4142,7 +4142,7 @@ The following code example shows how to create a private offer with hourly prici
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4266,7 +4266,7 @@ The following code example shows how to create a private offer with hourly prici
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -4303,7 +4303,7 @@ The following code example shows how to create a private offer with subscription
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4431,7 +4431,7 @@ The following code example shows how to create a private offer with subscription
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -4468,7 +4468,7 @@ The following code example shows how to create a private offer with tiered contr
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4589,7 +4589,7 @@ The following code example shows how to create a private offer with tiered contr
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -4627,7 +4627,7 @@ The following code example shows how to create a replacement private offer from 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4754,7 +4754,7 @@ The following code example shows how to create a replacement private offer from 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -4798,7 +4798,7 @@ The following code example shows how to create a public free trial offer with su
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4880,7 +4880,7 @@ The following code example shows how to create a public free trial offer with su
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -4920,7 +4920,7 @@ The following code example shows how to describe a public offer.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -4988,7 +4988,7 @@ The following code example shows how to replace the standalone free trial offer 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5049,7 +5049,7 @@ The following code example shows how to replace the standalone free trial offer 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -5099,7 +5099,7 @@ The following code example shows how to set the expiration date of a private off
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5118,7 +5118,7 @@ The following code example shows how to set the expiration date of a private off
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -5155,7 +5155,7 @@ The following code example shows how to list all private offers.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -5281,7 +5281,7 @@ The following code example shows how to update an offer to apply a contract with
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5346,7 +5346,7 @@ The following code example shows how to update an offer to apply a contract with
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -5381,7 +5381,7 @@ The following code example shows how to update an offer to apply hourly annual p
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5438,7 +5438,7 @@ The following code example shows how to update an offer to apply hourly annual p
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -5473,7 +5473,7 @@ The following code example shows how to update an offer to apply targeting to sp
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5499,7 +5499,7 @@ The following code example shows how to update an offer to apply targeting to sp
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -5534,7 +5534,7 @@ The following code example shows how to update name and description of a public 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5554,7 +5554,7 @@ The following code example shows how to update name and description of a public 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -5589,7 +5589,7 @@ The following code example shows how to update the EULA of an offer.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5618,7 +5618,7 @@ The following code example shows how to update the EULA of an offer.
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -5653,7 +5653,7 @@ The following code example shows how to update the expiration date of a private 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5672,7 +5672,7 @@ The following code example shows how to update the expiration date of a private 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -5707,7 +5707,7 @@ The following code example shows how to update the free trial duration of a publ
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5758,7 +5758,7 @@ The following code example shows how to update the free trial duration of a publ
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -5796,7 +5796,7 @@ The following code example shows how to update the refund policy of an offer.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5820,7 +5820,7 @@ The following code example shows how to update the refund policy of an offer.
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -5858,7 +5858,7 @@ The following code example shows how to describe an AMI, SaaS, or Container prod
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 """
 Purpose
 Shows how to use the AWS SDK for Python (Boto3) search for product information in the AWS Marketplace Catalog
@@ -5924,7 +5924,7 @@ The following code example shows how to list all AMI, SaaS, or Container product
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 """
 Purpose
 Shows how to use the AWS SDK for Python (Boto3) to display information about AMI products and their associated offers in the AWS Marketplace Catalog
@@ -6098,7 +6098,7 @@ The following code example shows how to create draft resale authorization for an
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6120,7 +6120,7 @@ The following code example shows how to create draft resale authorization for an
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -6155,7 +6155,7 @@ The following code example shows how to describe a resale authorization.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -6222,7 +6222,7 @@ The following code example shows how to publish a one-time resale authorization 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6316,7 +6316,7 @@ The following code example shows how to publish a one-time resale authorization 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -6359,7 +6359,7 @@ The following code example shows how to publish multi-use resale authorization w
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6453,7 +6453,7 @@ The following code example shows how to publish multi-use resale authorization w
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -6488,7 +6488,7 @@ The following code example shows how to publish multi-use resale authorization w
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6582,7 +6582,7 @@ The following code example shows how to publish multi-use resale authorization w
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -6617,7 +6617,7 @@ The following code example shows how to publish multi-use resale authorization w
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6711,7 +6711,7 @@ The following code example shows how to publish multi-use resale authorization w
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -6760,7 +6760,7 @@ The following code example shows how to publish multi-use resale authorization w
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6873,7 +6873,7 @@ The following code example shows how to publish multi-use resale authorization w
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -6911,7 +6911,7 @@ The following code example shows how to publish multi-use resale authorization w
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6995,7 +6995,7 @@ The following code example shows how to publish multi-use resale authorization w
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -7030,7 +7030,7 @@ The following code example shows how to publish multi-use resale authorization w
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -7114,7 +7114,7 @@ The following code example shows how to publish multi-use resale authorization w
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -7151,7 +7151,7 @@ The following code example shows how to publish multi-use resale authorization w
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -7244,7 +7244,7 @@ The following code example shows how to publish multi-use resale authorization w
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -7281,7 +7281,7 @@ The following code example shows how to publish multi-use resale authorization w
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -7384,7 +7384,7 @@ The following code example shows how to publish multi-use resale authorization w
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -7422,7 +7422,7 @@ The following code example shows how to publish one-time resale authorization fo
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -7532,7 +7532,7 @@ The following code example shows how to publish one-time resale authorization fo
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -7567,7 +7567,7 @@ The following code example shows how to publish one-time resale authorization fo
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -7661,7 +7661,7 @@ The following code example shows how to publish one-time resale authorization fo
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -7695,7 +7695,7 @@ The following code example shows how to publish one-time resale authorization fo
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -7808,7 +7808,7 @@ The following code example shows how to publish one-time resale authorization fo
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -7843,7 +7843,7 @@ The following code example shows how to publish one-time resale authorization fo
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -7946,7 +7946,7 @@ The following code example shows how to publish one-time resale authorization fo
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -7981,7 +7981,7 @@ The following code example shows how to publish one-time resale authorization fo
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -8047,7 +8047,7 @@ The following code example shows how to publish one-time resale authorization fo
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -8088,7 +8088,7 @@ The following code example shows how to restrict resale authorization.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -8105,7 +8105,7 @@ The following code example shows how to restrict resale authorization.
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -8140,7 +8140,7 @@ The following code example shows how to update name and description of one-time 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -8160,7 +8160,7 @@ The following code example shows how to update name and description of one-time 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -8201,7 +8201,7 @@ The following code example shows how to create a draft SaaS product with a draft
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog":"AWSMarketplace",
     "ChangeSet":[
@@ -8229,7 +8229,7 @@ The following code example shows how to create a draft SaaS product with a draft
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -8273,7 +8273,7 @@ The following code example shows how to create a public or limited SaaS product 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -8520,7 +8520,7 @@ The following code example shows how to create a public or limited SaaS product 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -8559,7 +8559,7 @@ The following code example shows how to create a public or limited SaaS product 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -8822,7 +8822,7 @@ The following code example shows how to create a public or limited SaaS product 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -8861,7 +8861,7 @@ The following code example shows how to create a public or limited SaaS product 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -9066,7 +9066,7 @@ The following code example shows how to create a public or limited SaaS product 
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -9102,7 +9102,7 @@ The following code example shows how to publish a SaaS product and associated pu
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog":"AWSMarketplace",
     "ChangeSet":[
@@ -9334,7 +9334,7 @@ The following code example shows how to publish a SaaS product and associated pu
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -9377,7 +9377,7 @@ The following code example shows how to update dimensions on an AMI or SaaS prod
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -9403,7 +9403,7 @@ The following code example shows how to update dimensions on an AMI or SaaS prod
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -9450,7 +9450,7 @@ The following code example shows how to define utilities to start a changeset.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 Utility to start a changeset.
 
-```
+```python
 """
 Purpose:
 
@@ -9501,7 +9501,7 @@ def usage_demo(change_set, change_set_name):
 ```
 Utility to load a changeset from a JSON file.
 
-```
+```python
 """
 Purpose:
 

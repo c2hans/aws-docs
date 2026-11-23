@@ -75,7 +75,7 @@ Updates a routing control. You can only update the name of the routing control. 
 #### POST schema
 <a name="routingcontrol-request-body-post-example"></a>
 
-```
+```json
 {
   "ClusterArn": "string",
   "RoutingControlName": "string",
@@ -87,7 +87,7 @@ Updates a routing control. You can only update the name of the routing control. 
 #### PUT schema
 <a name="routingcontrol-request-body-put-example"></a>
 
-```
+```json
 {
   "RoutingControlName": "string",
   "RoutingControlArn": "string"
@@ -100,7 +100,7 @@ Updates a routing control. You can only update the name of the routing control. 
 #### CreateRoutingControlResponse schema
 <a name="routingcontrol-response-body-createroutingcontrolresponse-example"></a>
 
-```
+```json
 {
   "RoutingControl": {
     "Status": enum,
@@ -115,7 +115,7 @@ Updates a routing control. You can only update the name of the routing control. 
 #### UpdateRoutingControlResponse schema
 <a name="routingcontrol-response-body-updateroutingcontrolresponse-example"></a>
 
-```
+```json
 {
   "RoutingControl": {
     "Status": enum,
@@ -130,7 +130,7 @@ Updates a routing control. You can only update the name of the routing control. 
 #### ValidationException schema
 <a name="routingcontrol-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -139,7 +139,7 @@ Updates a routing control. You can only update the name of the routing control. 
 #### ServiceQuotaExceededException schema
 <a name="routingcontrol-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -148,7 +148,7 @@ Updates a routing control. You can only update the name of the routing control. 
 #### AccessDeniedException schema
 <a name="routingcontrol-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -157,7 +157,7 @@ Updates a routing control. You can only update the name of the routing control. 
 #### ResourceNotFoundException schema
 <a name="routingcontrol-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -166,7 +166,7 @@ Updates a routing control. You can only update the name of the routing control. 
 #### ConflictException schema
 <a name="routingcontrol-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -175,7 +175,7 @@ Updates a routing control. You can only update the name of the routing control. 
 #### ThrottlingException schema
 <a name="routingcontrol-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -184,7 +184,7 @@ Updates a routing control. You can only update the name of the routing control. 
 #### InternalServerException schema
 <a name="routingcontrol-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

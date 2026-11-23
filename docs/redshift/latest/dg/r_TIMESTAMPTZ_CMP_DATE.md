@@ -34,7 +34,7 @@ INTEGER
 
 The following example compares LISTTIME as a timestamp with time zone to the date `2008-06-18`. Listings made after this date return `1`; listings made before this date return `-1`.
 
-```
+```sql
 select listid, CAST(listtime as timestamptz) as tstz,
 timestamp_cmp_date(tstz, '2008-06-18')
 from listing

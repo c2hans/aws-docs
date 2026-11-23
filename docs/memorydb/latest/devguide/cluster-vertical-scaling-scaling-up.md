@@ -55,7 +55,7 @@ The following procedure describes how to scale up a MemoryDB cluster using the A
 
    Output from the above command looks something like this (JSON format).
 
-   ```
+   ```json
    {
    	    "ScaleUpNodeTypes": [
    	        "db.r6g.2xlarge",

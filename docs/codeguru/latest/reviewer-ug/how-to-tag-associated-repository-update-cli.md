@@ -35,7 +35,7 @@ Follow these steps to use the AWS CLI and the **tag-resource** command to add or
 
    The output is a [`RepositoryAssociation`](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html) object that includes an array with the 3 added or updated tags.
 
-   ```
+   ```json
    {
        "RepositoryAssociation": {
            "AssociationId": "repository-association-uuid",

@@ -98,7 +98,7 @@ The IAM principal that creates the flow log must have the following permissions,
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -130,7 +130,7 @@ Otherwise, the bucket owner must add this policy to the bucket, specifying the A
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -203,7 +203,7 @@ When you use SSE-KMS with a customer managed key, you must add the following to 
 **Note**
 Using S3 Bucket Keys allows you to save on AWS Key Management Service (AWS KMS) request costs by decreasing your requests to AWS KMS for Encrypt, GenerateDataKey, and Decrypt operations through the use of a bucket-level key. By design, subsequent requests that take advantage of this bucket-level key do not result in AWS KMS API requests or validate access against the AWS KMS key policy.
 
-```
+```json
 {
     "Sid": "Allow Transit Gateway Flow Logs to use the key",
     "Effect": "Allow",

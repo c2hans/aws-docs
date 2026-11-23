@@ -34,7 +34,7 @@ For more information about the configuration object, see [`Class: AWS.Config`](h
 
 You must set the Region and the credentials in `AWS.Config`. You can set these properties as part of the `AWS.Config` constructor, as shown in the following browser script example:
 
-```
+```javascript
 var myCredentials = new AWS.CognitoIdentityCredentials({IdentityPoolId:'{{IDENTITY_POOL_ID}}'});
 var myConfig = new AWS.Config({
   credentials: myCredentials, region: 'us-west-2'
@@ -43,14 +43,14 @@ var myConfig = new AWS.Config({
 
 You can also set these properties after creating `AWS.Config` using the `update` method, as shown in the following example that updates the Region:
 
-```
+```javascript
 myConfig = new AWS.Config();
 myConfig.update({region: 'us-east-1'});
 ```
 
 You can get your default credentials by calling the static ` getCredentials` method of `AWS.config`:
 
-```
+```javascript
 var AWS = require("aws-sdk");
 
 AWS.config.getCredentials(function(err) {
@@ -64,7 +64,7 @@ AWS.config.getCredentials(function(err) {
 
 Similarly, if you have set your region correctly in your `config` file, you get that value by setting the `AWS_SDK_LOAD_CONFIG` environment variable is set to any value and calling the static `region` property of `AWS.config`:
 
-```
+```javascript
 var AWS = require("aws-sdk");
 
 console.log("Region: ", AWS.config.region);
@@ -77,7 +77,7 @@ Each service that you use in the SDK for JavaScript is accessed through a servic
 
 For example, if you need to access Amazon EC2 objects in multiple Regions, create an Amazon EC2 service object for each Region and then set the Region configuration of each service object accordingly.
 
-```
+```javascript
 var ec2_regionA = new AWS.EC2({region: 'ap-southeast-2', maxRetries: 15, apiVersion: '2014-10-01'});
 var ec2_regionB = new AWS.EC2({region: 'us-east-1', maxRetries: 15, apiVersion: '2014-10-01'});
 ```
@@ -91,6 +91,6 @@ Global configuration changes apply to requests for all newly created service obj
 
 Existing service objects must be manually updated with new configuration data or you must create and use a new service object that has the new configuration data. The following example creates a new Amazon S3 service object with new configuration data:
 
-```
+```javascript
 s3 = new AWS.S3(s3.config);
 ```

@@ -45,7 +45,7 @@ The following permissions policy enables the role to publish data records to you
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -80,7 +80,7 @@ The following trust policy enables Amazon SES to assume the role.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -28,7 +28,7 @@ Replace each {{example resource placeholder}} with your own information:
 **Note**
 You can use `aws:SourceOrgID` in the policy instead of `aws:SourceAccount` if the account belongs to an organization in AWS Organizations.
 
-```
+```json
 {
     "Sid": "Allow the GUI Connect service principal to access S3",
     "Effect": "Allow",
@@ -79,7 +79,7 @@ To store your connection recordings, you must first create an S3 bucket and add 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

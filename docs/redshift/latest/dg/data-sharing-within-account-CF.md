@@ -64,7 +64,7 @@ To use the following procedure, make sure that you have the required permissions
 
 1. Query for datashares.
 
-   ```
+   ```sql
    SHOW DATASHARES;
 
    +------------------+-------------+-----------------+-------------------+------------+------------+---------------------+-----------+------------------+--------------------------------------+
@@ -80,7 +80,7 @@ To use the following procedure, make sure that you have the required permissions
 
 1. Describe objects in the datashare.
 
-   ```
+   ```sql
    DESC DATASHARE myproducer_share;
 
    +------------------+--------------------------------------+------------+------------------+-------------+-------------------------------------+-------------+
@@ -112,7 +112,7 @@ To use the following procedure, make sure that you have the required permissions
 
 1. You can query tables in the datashare by specifying the datashare's database and schema. For more information, see [Cross-database query examples](cross-database_example.md). The following queries return sales and seller data from the SALES table in the TICKIT sample database. For more information, see [Sample database](c_sampledb.md).
 
-   ```
+   ```sql
    SELECT * FROM myconsumer_db.myproducer_schema.tickit_sales_view;
 
    +---------+--------+----------+---------+---------+--------+---------+-----------+------------+---------------------+
@@ -130,7 +130,7 @@ The query runs against the view in the shared schema. You can't connect directly
 
 1. To run a query that includes aggregations, use the following example.
 
-   ```
+   ```sql
    SELECT * FROM myconsumer_db.myproducer_schema.tickit_sales ORDER BY 1,2 LIMIT 5;
 
    +---------+--------+----------+---------+---------+--------+---------+-----------+------------+---------------------+

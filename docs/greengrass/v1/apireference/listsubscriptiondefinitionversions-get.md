@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="listsubscriptiondefinitionversions-get-cli"></a>
 
-```
+```bash
 aws greengrass list-subscription-definition-versions \
   --subscription-definition-id <value> \
   [--next-token <value>] \
@@ -26,7 +26,7 @@ aws greengrass list-subscription-definition-versions \
 
 cli-input-json format:
 
-```
+```json
 {
 "SubscriptionDefinitionId": "string",
 "NextToken": "string",
@@ -59,7 +59,7 @@ type: integer
 
  [ ListVersionsResponse](definitions-listversionsresponse.md)
 
-```
+```json
 {
 "Versions": [
   {
@@ -102,7 +102,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

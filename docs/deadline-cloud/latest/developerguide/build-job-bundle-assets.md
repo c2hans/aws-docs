@@ -12,7 +12,7 @@ You can define the job template in either YAML format (`asset_references.yaml`) 
 
 In YAML, the format of the file is:
 
-```
+```yaml
 assetReferences:
     inputs:
         # Filenames on the submitting workstation whose file contents are needed as

@@ -140,7 +140,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-network-firewall-manage-firewall-rules-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "SourceIP": "10.0.0.0/24",
   "Destination": "203.0.113.0/24",
@@ -155,7 +155,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-managed-network-firewall-manage-firewall-rules-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "SourceIP": "192.168.1.0/24",
   "Destination": "example.com",

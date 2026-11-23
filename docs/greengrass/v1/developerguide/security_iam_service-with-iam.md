@@ -36,7 +36,7 @@ Policy actions for AWS IoT Greengrass use the `greengrass:` prefix before the ac
 
 To specify multiple actions in a single statement, list them between brackets (`[` `]`) and separate them with commas, as follows:
 
-```
+```json
 "Action": [
     "greengrass:{{action1}}",
     "greengrass:{{action2}}",
@@ -46,7 +46,7 @@ To specify multiple actions in a single statement, list them between brackets (`
 
 You can use wildcards (`*`) to specify multiple actions. For example, to specify all actions that begin with the word `List`, include the following action:
 
-```
+```json
 "Action": "greengrass:List*"
 ```
 
@@ -93,25 +93,25 @@ The following table contains the AWS IoT Greengrass resource ARNs that can be us
 
 The following example `Resource` element specifies the ARN of a group in the US West (Oregon) Region in the AWS account `123456789012`:
 
-```
+```json
 "Resource": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
 ```
 
 Or, to specify all groups that belong to an AWS account in a specific AWS Region, use the wildcard in place of the group ID:
 
-```
+```json
 "Resource": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/*"
 ```
 
 Some AWS IoT Greengrass actions (for example, some list operations), cannot be performed on a specific resource. In those cases, you must use the wildcard alone.
 
-```
+```json
 "Resource": "*"
 ```
 
 To specify multiple resource ARNs in a statement, list them between brackets (`[` `]`) and separate them with commas, as follows:
 
-```
+```json
 "Resource": [
     "{{resource-arn1}}",
     "{{resource-arn2}}",

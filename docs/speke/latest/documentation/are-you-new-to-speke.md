@@ -8,7 +8,7 @@ This section provides introductory information for readers who are new to Secure
 
 For an introduction to SPEKE, watch the following webcast:
 
-[![AWS Videos](https://img.youtube.com/vi/cKznVRH2s1w?rel=0/0.jpg)](https://www.youtube.com/watch?v=cKznVRH2s1w?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/cKznVRH2s1w/0.jpg)](https://www.youtube.com/watch?v=cKznVRH2s1w)
 
 ## Related service information and specifications
 <a name="related-services-and-specifications"></a>

@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
 ![Diagram showing securely accessing resources.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/software-client-vpn-remote-access.png)
 
+Software Client VPN Remote Access
+
  Remote-access solutions range in complexity, support multiple client authentication options (including multifactor authentication) and can be integrated with either Amazon VPC or remotely hosted identity and access management solutions (leveraging one of the network-to-Amazon VPC options) like Microsoft Active Directory or other LDAP/multifactor authentication solutions.
 
  You are responsible for managing the remote access software including user management, configuration, patches and upgrades. This design introduces a potential single point of failure into the network design as the remote access server runs on a single Amazon EC2 instance. For additional information, see [Appendix A: High-Level HA architecture for software VPN instances](appendix-a-high-level-ha-architecture-for-software-vpn-instances.md).

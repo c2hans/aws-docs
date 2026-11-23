@@ -44,7 +44,7 @@ If an `export-rdf` job is regularly failing with a `Tag mismatch!` `QueryEvaluat
 
 You can avoid getting this error by scaling up to a larger Neptune instance or by configuring the job to export from a large cloned cluster, like this:
 
-```
+```json
 '{
   "command": "export-rdf",
   "outputS3Path": "s3://{{(your Amazon S3 bucket)}}/neptune-export",

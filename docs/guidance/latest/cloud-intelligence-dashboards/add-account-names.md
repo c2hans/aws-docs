@@ -25,7 +25,7 @@ You will need to go through an additional Lab for this. This can collect multipl
 
 After successful deployment create or update your account\_map view by running the following query in Athena Query Editor.
 
-```
+```sql
 CREATE OR REPLACE VIEW account_map AS
 SELECT DISTINCT
     "id" "account_id",
@@ -84,7 +84,7 @@ On line 8, replace **(database).(tablename)** with your CUR database and table n
 
 Run the query after the modification. Your account\_map view will now have account names from the cost category created.
 
-```
+```sql
 CREATE OR REPLACE VIEW "account_map" AS
 SELECT DISTINCT
 line_item_usage_account_id "account_id"
@@ -166,7 +166,7 @@ This example will show you how to create using a sample account\_map csv file
 **Note**
 Validate rows **2-5** match your csv columns. If you removed one of the fields in the csv you will need to remove it in the query. If you added any additional fields you will need to add the attribute to the query.\*
 
-```
+```sql
 CREATE EXTERNAL TABLE +account_mapping+(
     +account_id+ string,
     +account_name+ string,
@@ -200,7 +200,7 @@ Modify the following query with your table names:
 
 1. Replace **(database).(tablename)** in line 23 with your account\_mapping database and table name (e.g. cid\_cur.account\_mapping)
 
-```
+```sql
 CREATE OR REPLACE VIEW account_map AS
 SELECT DISTINCT
 a.line_item_usage_account_id "account_id"

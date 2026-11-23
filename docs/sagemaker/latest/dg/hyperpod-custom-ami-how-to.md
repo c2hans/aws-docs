@@ -37,14 +37,14 @@ The following example shows how to retrieve the latest AMI ID using the AWS CLI:
 
 ```
 aws ssm get-parameter \
-  --name "/aws/service/sagemaker-hyperpod/ami/x86_64/eks-1.31-amazon-linux-2/latest/ami-id" \
+  --name "/aws/service/sagemaker-hyperpod/ami/x86_64/eks-1.36-amazon-linux-2023/latest/ami-id" \
   --region {{us-east-1}} \
   --query "Parameter.Value" \
   --output text
 ```
 
 **Note**
-Replace the parameter name with the corresponding Kubernetes version or Slurm base OS as required. For example, for Kubernetes 1.30, use `/aws/service/sagemaker-hyperpod/ami/x86_64/eks-1.30-amazon-linux-2/latest/ami-id`. For Slurm on Ubuntu 22.04, use `/aws/service/sagemaker-hyperpod/ami/x86_64/slurm-ubuntu-22.04/latest/ami-id`.
+Replace the parameter name with the corresponding Kubernetes version or Slurm base OS as required. For example, for Kubernetes 1.35, use `/aws/service/sagemaker-hyperpod/ami/x86_64/eks-1.35-amazon-linux-2023/latest/ami-id`. For Slurm on Ubuntu 22.04, use `/aws/service/sagemaker-hyperpod/ami/x86_64/slurm-ubuntu-22.04/latest/ami-id`.
 
 ## Build your custom AMI
 <a name="hyperpod-custom-ami-build"></a>

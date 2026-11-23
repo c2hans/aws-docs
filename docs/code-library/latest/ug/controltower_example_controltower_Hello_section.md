@@ -14,7 +14,7 @@ The following code examples show how to get started using AWS Control Tower.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
 using Amazon.ControlTower;
 using Amazon.ControlTower.Model;
 using Microsoft.Extensions.DependencyInjection;
@@ -92,7 +92,7 @@ public class HelloControlTower
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
 public class HelloControlTower {
 
     public static void main(String[] args) {
@@ -149,7 +149,7 @@ public class HelloControlTower {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/controltower#code-examples).
 
-```
+```python
 import boto3
 from typing import Any, List
 

@@ -71,7 +71,7 @@ Use the following AWS CLI commands or API operations to enable trusted service a
 
   Run the following command to enable AWS Security Incident Response as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations enable-aws-service-access \
       --service-principal security-ir.amazonaws.com
   ```
@@ -116,7 +116,7 @@ You can use the following AWS CLI commands or API operations to disable trusted 
 
   Run the following command to disable AWS Security Incident Response as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations disable-aws-service-access \
       --service-principal security-ir.amazonaws.com
   ```
@@ -142,7 +142,7 @@ To learn how to configure a delegated administrator through the Security Inciden
 If you want to configure a delegated administrator account using the AWS CLI or one of the AWS SDKs, you can use the following commands:
 + AWS CLI:
 
-  ```
+  ```bash
   $ aws organizations register-delegated-administrator \
       --account-id 123456789012 \
       --service-principal security-ir.amazonaws.com

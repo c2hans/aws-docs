@@ -25,6 +25,8 @@ Enter a name for the Cloud Connector.
 (Optional) Enter a description for the Cloud Connector.
 **Azure federation role**
 Choose the recommended auto-created service role, or choose an existing role that you provide. For details about the roles the console creates, see [IAM roles created by the Systems Manager console](cloud-connector-console-iam-roles.md).
+**Additional trusted roles**
+(Optional) Appears when you choose **Create an Azure federation role with recommended permissions**. Choose up to five IAM roles that the federation role also trusts, such as roles that run your Automation runbooks. Long role paths can lower this number. Anyone who can assume one of these roles can get credentials for the connector's Azure subscriptions, so the list shows only roles that only Systems Manager can assume. For the trust policy, and how to change these roles later, see [Azure federation role](cloud-connector-azure-federation-role.md). For the permissions that Automation needs from each role, see [Use another role](automation-cloud-connector-permissions.md#automation-cloud-connector-permissions-other-role).
 **Tenant ID**
 Enter your Microsoft Entra ID tenant UUID.
 **Tenant name**

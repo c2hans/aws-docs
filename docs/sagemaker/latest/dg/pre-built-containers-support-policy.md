@@ -41,7 +41,7 @@ The SageMaker AI ML Framework Containers are a set of Docker images for training
 
 To retrieve the latest image version for XGBoost 3.2-0 in framework mode, use the following SageMaker Python SDK commands:
 
-```
+```python
 from sagemaker import image_uris
 image_uris.retrieve(framework='xgboost',region='us-east-1',version='3.2-0')
 ```

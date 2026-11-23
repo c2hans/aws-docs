@@ -39,7 +39,7 @@ If your organization requires all compute traffic to stay within the Amazon VPC,
 
   The following IAM policy denies this action for all Amazon Athena workgroups.
 
-  ```
+  ```json
   {
       "Version": "2012-10-17",
       "Statement": [
@@ -119,7 +119,7 @@ This policy denies the Amazon SageMaker Unified Studio portal's access to all AW
 
 This policy may need to be modified if the domain execution role credentials are used in other contexts, or if this policy is applied to a role other than the domain execution role.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -148,7 +148,7 @@ This policy may need to be modified if the domain execution role credentials are
 
 The following are details about the policy conditions:
 
-```
+```json
 "StringNotEquals": {
     "aws:SourceVpc": [
         "vpc-1234567890abcdef0"
@@ -158,13 +158,13 @@ The following are details about the policy conditions:
 
 This condition evaluates to `true` when the API call originates from a network location other than a VPC endpoint deployed in one of the allowed source Amazon VPC IDs.
 
-```
+```json
 "StringLike": { "aws:userid": "*:user-*" }
 ```
 
 This condition evaluates to `true` for the domain execution role credentials issued to the Amazon SageMaker Unified Studio portal, so that the `Deny` policy is only applied for portal users. For example, the condition evaluates to `false` and the `Deny` policy is not applied when the Amazon SageMaker Unified Studio catalog service executes tasks that use the domain execution role.
 
-```
+```json
 "BoolIfExists": { "aws:ViaAWSService": "false" }
 ```
 

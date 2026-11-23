@@ -8,7 +8,7 @@ To query asset property notifications, create AWS IoT Core rules made up of SQL 
 
 AWS IoT SiteWise publishes asset property data updates to AWS IoT Core in the following format.
 
-```
+```json
 {
   "type": "PropertyValueUpdate",
   "payload": {
@@ -57,7 +57,7 @@ To parse values out of the `values` array, you need to use complex nested object
 **Example query to extract the array of values**
 The following statement demonstrates how to query the array of updated property values for a specific double-type property on all assets with that property.
 
-```
+```sql
 SELECT
   (SELECT VALUE (value.doubleValue) FROM payload.values) AS windspeed
 FROM
@@ -67,7 +67,7 @@ WHERE
 ```
 The previous rule query statement outputs data in the following format.
 
-```
+```json
 {
   "windspeed": [
     26.32020195042838,
@@ -87,7 +87,7 @@ The previous rule query statement outputs data in the following format.
 **Example query to extract a single value**
 The following statement demonstrates how to query the first value from the array of property values for a specific double-type property on all assets with that property.
 
-```
+```sql
 SELECT
   get((SELECT VALUE (value.doubleValue) FROM payload.values), 0) AS windspeed
 FROM
@@ -98,7 +98,7 @@ WHERE
 
 The previous rule query statement outputs data in the following format.
 
-```
+```json
 {
   "windspeed": 26.32020195042838
 }

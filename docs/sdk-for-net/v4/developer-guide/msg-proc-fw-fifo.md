@@ -17,7 +17,7 @@ For use cases where message ordering and message deduplication are critical, the
 
 When publishing messages to a FIFO queue or topic, you must set the message group ID, which specifies the group that the message belongs to. Messages within a group are processed in order. You can set this on the SQS-specific and SNS-specific message publishers.
 
-```
+```csharp
 await _sqsPublisher.PublishAsync(message, new SQSOptions
 {
     MessageDeduplicationId = <message-deduplication-id>,
@@ -30,7 +30,7 @@ await _sqsPublisher.PublishAsync(message, new SQSOptions
 
 When handling messages from a FIFO queue, the framework handles messages within a given message group in the order in which they were received for each `ReceiveMessages` call. The framework enters this mode of operation automatically when configured with a queue ending in `.fifo`.
 
-```
+```csharp
 await Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {

@@ -91,7 +91,7 @@ For more information, see [Analyzing Document Text with Amazon Textract](https:/
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/textract#code-examples).
 
-```
+```java
 import software.amazon.awssdk.core.SdkBytes;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.textract.TextractClient;
@@ -187,7 +187,7 @@ public class AnalyzeDocument {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/textract#code-examples).
 
-```
+```python
 class TextractWrapper:
     """Encapsulates Textract functions."""
 
@@ -237,7 +237,7 @@ class TextractWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tex#code-examples).
 
-```
+```sap-abap
     "Detects text and additional elements, such as forms or tables,"
     "in a local image file or from in-memory byte data."
     "The image must be in PNG or JPG format."

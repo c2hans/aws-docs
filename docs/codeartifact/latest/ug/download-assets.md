@@ -19,7 +19,7 @@ aws codeartifact get-package-version-asset --domain {{my_domain}} --domain-owner
 
 The output of the command will be:
 
-```
+```json
 {
     "assetName": "guava-27.1-jre.jar",
     "packageVersion": "27.1-jre",

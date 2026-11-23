@@ -14,7 +14,7 @@ Amazon OpenSearch Service provides a unified observability solution by collectin
 + **Traces** – End-to-end journey of requests through distributed services.
 + **Metrics** – Time-series data representing system health, through the Amazon Managed Service for Prometheus direct query integration.
 
-By bringing these together in a single interface, Amazon OpenSearch Service helps operations teams, SREs, and developers detect, diagnose, and resolve issues faster.
+By bringing these together in a single interface, Amazon OpenSearch Service helps operations teams, and developers detect, diagnose, and resolve issues faster.
 
 ## The Amazon OpenSearch Service approach to observability
 <a name="observability-approach"></a>

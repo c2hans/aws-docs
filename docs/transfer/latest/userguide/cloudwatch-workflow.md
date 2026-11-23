@@ -60,7 +60,7 @@ The **Log events** page for a workflow log stream contains the details for the w
 
  The following is a sample log stream for `mary.w-abcdef01234567890.021345abcdef6789`, based on a workflow (`w-abcdef01234567890`) that contains a copy step.
 
-```
+```json
 {
     "type": "ExecutionStarted",
     "details": {

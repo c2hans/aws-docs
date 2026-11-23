@@ -33,7 +33,7 @@ If *geom* is null, then null is returned.
 
 The following SQL checks if the polygon is a collection.
 
-```
+```sql
 SELECT ST_IsCollection(ST_GeomFromText('POLYGON((0 2,1 1,0 -1,0 2))'));
 ```
 

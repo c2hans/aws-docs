@@ -29,7 +29,7 @@ You can reset only an entire list to its default values. You can't use reset upd
 
 To reset a component's entire configuration to its default values, specify a single empty string as the reset update.
 
-```
+```json
 "reset": [""]
 ```
 
@@ -58,7 +58,7 @@ If you set the Greengrass nucleus' [interpolateComponentConfiguration](greengras
 
 The following example demonstrates configuration updates for a dashboard component that has the following default configuration. This example component displays information about industrial equipment.
 
-```
+```json
 {
   "name": null,
   "mode": "REQUEST",
@@ -79,7 +79,7 @@ The following example demonstrates configuration updates for a dashboard compone
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.IndustrialDashboard",
@@ -124,7 +124,7 @@ The following example demonstrates configuration updates for a dashboard compone
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.IndustrialDashboard
@@ -160,7 +160,7 @@ Manifests:
 You create a deployment that applies the following configuration update, which specifies a merge update but not a reset update. This configuration update tells the component to display the dashboard on HTTP port 8080 with data from two boilers.
 **Configuration to merge**
 
-```
+```json
 {
   "name": "Factory 2A",
   "network": {
@@ -179,12 +179,12 @@ You create a deployment that applies the following configuration update, which s
 ```
 The following command creates a deployment to a core device.
 
-```
+```bash
 aws greengrassv2 create-deployment --cli-input-json file://dashboard-deployment.json
 ```
 The `dashboard-deployment.json` file contains the following JSON document.
 
-```
+```json
 {
   "targetArn": "arn:aws:iot:us-west-2:123456789012:thing/MyGreengrassCore",
   "deploymentName": "Deployment for MyGreengrassCore",
@@ -200,7 +200,7 @@ The `dashboard-deployment.json` file contains the following JSON document.
 ```
 The following [Greengrass CLI](greengrass-cli-component.md) command creates a local deployment on a core device.
 
-```
+```bash
 sudo greengrass-cli deployment create \
   --recipeDir recipes \
   --artifactDir artifacts \
@@ -209,7 +209,7 @@ sudo greengrass-cli deployment create \
 ```
 The `dashboard-configuration.json` file contains the following JSON document.
 
-```
+```json
 {
   "com.example.IndustrialDashboard": {
     "MERGE": {
@@ -232,7 +232,7 @@ The `dashboard-configuration.json` file contains the following JSON document.
 ```
 After this update, the dashboard component has the following configuration.
 
-```
+```json
 {
   "name": "Factory 2A",
   "mode": "REQUEST",
@@ -256,7 +256,7 @@ After this update, the dashboard component has the following configuration.
 Then, you create a deployment that applies the following configuration update, which specifies a reset update and a merge update. These updates specify to display the dashboard on the default HTTPS port with data from different boilers. These updates modify the configuration that results from the configuration updates in the previous example.
 **Reset paths**
 
-```
+```json
 [
   "/network/useHttps",
   "/tags"
@@ -264,7 +264,7 @@ Then, you create a deployment that applies the following configuration update, w
 ```
 **Configuration to merge**
 
-```
+```json
 {
   "tags": [
     "/boiler/3/temperature",
@@ -276,12 +276,12 @@ Then, you create a deployment that applies the following configuration update, w
 ```
 The following command creates a deployment to a core device.
 
-```
+```bash
 aws greengrassv2 create-deployment --cli-input-json file://dashboard-deployment2.json
 ```
 The `dashboard-deployment2.json` file contains the following JSON document.
 
-```
+```json
 {
   "targetArn": "arn:aws:iot:us-west-2:123456789012:thing/MyGreengrassCore",
   "deploymentName": "Deployment for MyGreengrassCore",
@@ -301,7 +301,7 @@ The `dashboard-deployment2.json` file contains the following JSON document.
 ```
 The following [Greengrass CLI](greengrass-cli-component.md) command creates a local deployment on a core device.
 
-```
+```bash
 sudo greengrass-cli deployment create \
   --recipeDir recipes \
   --artifactDir artifacts \
@@ -310,7 +310,7 @@ sudo greengrass-cli deployment create \
 ```
 The `dashboard-configuration2.json` file contains the following JSON document.
 
-```
+```json
 {
   "com.example.IndustrialDashboard": {
     "RESET": [
@@ -330,7 +330,7 @@ The `dashboard-configuration2.json` file contains the following JSON document.
 ```
 After this update, the dashboard component has the following configuration.
 
-```
+```json
 {
   "name": "Factory 2A",
   "mode": "REQUEST",

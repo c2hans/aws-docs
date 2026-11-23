@@ -29,7 +29,7 @@ SYS\_QUERY\_TEXT is visible to all users. Superusers can see all rows; regular u
 
 The following query returns running and queued queries.
 
-```
+```sql
 SELECT user_id,
  query_id,
  transaction_id,
@@ -49,7 +49,7 @@ _time > '2023-04-28 16:44:55.922705+00:00'::timestamp order by sequence;
 
 The following query returns the permissions that have been granted or revoked from groups in your database.
 
-```
+```sql
 SELECT
     SPLIT_PART(text, ' ', 1) as grantrevoke,
     SPLIT_PART((SUBSTRING(text, STRPOS(UPPER(text), 'GROUP'))), ' ', 2) as group,

@@ -12,13 +12,13 @@ If this error happened when you were editing a custom SQL query in preview, veri
 
 For example, the following statement works.
 
-```
+```sql
 select from my_schema.my_table
 ```
 
 The following statement fails because it's missing the schema.
 
-```
+```sql
 select from my_table
 ```
 

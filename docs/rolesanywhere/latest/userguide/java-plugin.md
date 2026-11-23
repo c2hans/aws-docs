@@ -26,7 +26,7 @@ Artifact ID
 
  Add the plugin to any AWS SDK for Java v2 service client builder using `addPlugin`. The plugin resolves IAM Roles Anywhere credentials using the trust anchor, profile, and role you configure, and supplies them to the client for the lifetime of the client.
 
-```
+```java
     S3Client s3 = S3Client.builder()
         .addPlugin(RolesAnywherePlugin.builder()
             .trustAnchorArn("arn:aws:rolesanywhere:us-east-1:123456789012:trust-anchor/example")

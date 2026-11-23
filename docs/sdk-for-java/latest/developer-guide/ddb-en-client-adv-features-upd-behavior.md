@@ -10,7 +10,7 @@ For example, imagine that you want to store a *created on* timestamp on your rec
 
 The following example shows the annotation that adds the behavior to the `createdOn` attribute.
 
-```
+```java
 @DynamoDbBean
 public class Customer extends GenericRecord {
     private String id;
@@ -28,7 +28,7 @@ public class Customer extends GenericRecord {
 
 You can declare the same update behavior when you build a static table schema as shown in the following example after comment line 1.
 
-```
+```java
 static final TableSchema<Customer> CUSTOMER_TABLE_SCHEMA =
      TableSchema.builder(Customer.class)
        .newItemSupplier(Customer::new)

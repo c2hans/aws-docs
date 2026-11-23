@@ -30,7 +30,7 @@ We strongly recommend the use of multi-factor authentication (MFA) any time you 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -55,7 +55,7 @@ We strongly recommend the use of multi-factor authentication (MFA) any time you 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":{
@@ -78,7 +78,7 @@ The following policy allows a user to import a private CA certificate.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":{
@@ -101,7 +101,7 @@ The following policy allows a user to delete a specific private CA.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":{
@@ -123,7 +123,7 @@ The following policy allows a user to apply tags during CA creation.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -151,7 +151,7 @@ The following tag-on-create policy *prevents* use of the key-value pair Environm
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -188,7 +188,7 @@ The following policy allows access only to CAs with the key-value pair Environme
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -222,7 +222,7 @@ The following policy allows access only to CAs with the key-value pair Environme
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":{
@@ -253,7 +253,7 @@ The following policy allows access only to CAs with the key-value pair Environme
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

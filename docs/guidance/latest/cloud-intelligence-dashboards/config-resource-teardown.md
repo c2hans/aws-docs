@@ -18,7 +18,7 @@ Follow these steps to remove the dashboard.
 
 1. Execute the following command to delete the dashboard:
 
-```
+```bash
 cid-cmd delete --resources 'https://raw.githubusercontent.com/aws-samples/config-resource-compliance-dashboard/refs/heads/main/dashboard_template/cid-crcd.yaml'
 ```
 

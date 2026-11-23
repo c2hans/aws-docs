@@ -49,10 +49,9 @@ Before enabling public endpoints on a Neptune instance, ensure your cluster supp
 ```
 aws neptune modify-db-cluster \
   --region us-west-2 \
-  --engine graphdb \
-  --engine-version 1.4.6.x \
   --db-cluster-identifier neptune-public-endpoint \
-  --enable-iam-database-authentication
+  --enable-iam-database-authentication \
+  --apply-immediately
 ```
 
 ### Network settings
@@ -83,8 +82,9 @@ Using the AWS CLI:
 ```
 aws neptune create-db-instance \
   --region us-west-2 \
-  --engine graphdb \
-  --engine-version 1.4.6.x \
+  --engine neptune \
+  --db-instance-identifier neptune-public-endpoint-instance \
+  --db-instance-class db.t3.medium \
   --db-cluster-identifier neptune-public-endpoint \
   --publicly-accessible
 ```
@@ -97,9 +97,7 @@ To modify an existing Neptune instance to enable public access:
 ```
 aws neptune modify-db-instance \
   --region us-west-2 \
-  --engine graphdb \
-  --engine-version 1.4.6.x \
-  --db-instance-identifier neptune-public-endpoint \
+  --db-instance-identifier neptune-public-endpoint-instance \
   --publicly-accessible
 ```
 
@@ -362,7 +360,7 @@ You can use IAM policies to restrict who can create or modify Neptune clusters w
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

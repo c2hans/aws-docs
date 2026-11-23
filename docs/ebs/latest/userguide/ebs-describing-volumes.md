@@ -61,13 +61,13 @@ You can use [Amazon EC2 Global View](https://docs.aws.amazon.com/AWSEC2/latest/U
 **To view information about an EBS volume**
 Use the [describe-volumes](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-volumes.html) command. The following example counts the volumes in the current Region.
 
-```
+```bash
 aws ec2 describe-volumes --query "length(Volumes[*])"
 ```
 
 The following example lists the volumes attached to the specified instance.
 
-```
+```bash
 aws ec2 describe-volumes \
     --filters "Name=attachment.instance-id,Values={{i-1234567890abcdef0}}" \
     --query Volumes[*].VolumeId \
@@ -76,13 +76,13 @@ aws ec2 describe-volumes \
 
 The following example describes the specified volume.
 
-```
+```bash
 aws ec2 describe-volumes --volume-ids {{vol-01234567890abcdef}}
 ```
 
 The following is example output.
 
-```
+```json
 {
     "Volumes": [
         {
@@ -121,20 +121,20 @@ The following is example output.
 **To view information about an EBS volume**
 Use the [Get-EC2Volume](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Volume.html) cmdlet. The following example counts the volumes in the current Region.
 
-```
+```powershell
 (Get-EC2Volume).Count
 ```
 
 The following example lists the volumes attached to the specified instance.
 
-```
+```powershell
 (Get-EC2Volume `
     -Filters @{Name="attachment.instance-id";Values="{{i-1234567890abcdef0}}"}).VolumeId
 ```
 
 The following example describes the specified volume.
 
-```
+```powershell
 Get-EC2Volume -VolumeId {{vol-01234567890abcdef}}
 ```
 
@@ -200,7 +200,7 @@ You can get additional information about your EBS volumes, such as how much disk
 
 Use the **df -hT** command and specify the device name:
 
-```
+```bash
 [ec2-user ~]$ df -hT {{/dev/xvda1}}
 Filesystem     Type      Size  Used Avail Use% Mounted on
 /dev/xvda1     xfs       8.0G  1.2G  6.9G  15% /
@@ -213,7 +213,7 @@ You can view the free disk space by opening File Explorer and selecting **This P
 
 You can also view the free disk space using the following `dir` command and examining the last line of the output:
 
-```
+```bash
 C:\> dir C:
  Volume in drive C has no label.
  Volume Serial Number is 68C3-8081
@@ -239,7 +239,7 @@ C:\> dir C:
 
 You can also view the free disk space using the following `fsutil` command:
 
-```
+```bash
 C:\> fsutil volume diskfree C:
 Total # of free bytes        : 18113204224
 Total # of bytes             : 32210153472

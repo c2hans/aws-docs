@@ -100,7 +100,7 @@ For the `CodeDeployToECS` action (blue/green deployments), the following are the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -182,7 +182,7 @@ You can also add `ecs-tasks.amazonaws.com` to the list of services under the `ia
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: Deploy
 Actions:
   - Name: Deploy
@@ -212,7 +212,7 @@ Actions:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "Deploy",
     "Actions": [

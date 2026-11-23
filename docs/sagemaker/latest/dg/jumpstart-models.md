@@ -10,7 +10,7 @@ You can search and browse models from the JumpStart landing page in Studio or St
 
 You can also programmatically utilize models with the [SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/). To list all available models, use `list_jumpstart_models()` from the SDK:
 
-```
+```python
 from sagemaker.core.jumpstart.notebook_utils import list_jumpstart_models
 
 # List every available JumpStart model ID.

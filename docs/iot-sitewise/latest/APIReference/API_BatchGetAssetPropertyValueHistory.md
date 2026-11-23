@@ -175,7 +175,7 @@ The following example uses the AWS Command Line Interface (AWS CLI) to retrieve 
 aws iotsitewise batch-get-asset-property-value-history --cli-input-json file://batch-get-asset-property-value-history.json
 ```
 
-```
+```json
 {
    "entries":[
       {

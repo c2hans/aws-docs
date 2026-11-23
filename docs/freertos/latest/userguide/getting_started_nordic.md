@@ -104,7 +104,7 @@ In this way, Windows can properly create symbolic links when it extracts the arc
 If you use Git under Windows, you must enable Developer Mode or you must:
 Set `core.symlinks` to true with the following command:
 
-    ```
+    ```bash
     git config --global core.symlinks true
     ```
 Use a console that is elevated as administrator whenever you use a git command that writes to the system (for example, **git pull**, **git clone**, and **git submodule update --init --recursive**).
@@ -134,7 +134,7 @@ To enable the demo, you need to configure your project to work with AWS IoT. To 
 
 1. Open `vendors/nordic/boards/nrf52840-dk/aws_demos/config_files/aws_demo_config.h`, and define either `CONFIG_OTA_MQTT_BLE_TRANSPORT_DEMO_ENABLED` or `CONFIG_OTA_HTTP_BLE_TRANSPORT_DEMO_ENABLED` as in this example.
 
-   ```
+   ```c
    /* To run a particular demo you need to define one of these.
     * Only one demo can be configured at a time
     *

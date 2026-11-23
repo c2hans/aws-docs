@@ -46,7 +46,7 @@ The following example policy provides read-only access to the Amazon Pinpoint co
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -93,7 +93,7 @@ You can also create read-only policies that only provide access to specific proj
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -146,7 +146,7 @@ In addition to granting permissions for `mobiletargeting:Get` and `mobiletargeti
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -201,7 +201,7 @@ You can use conditions in an identity-based policy to control access to Amazon P
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -239,7 +239,7 @@ You can attach this type of policy to the IAM users in your account. If a user n
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -289,7 +289,7 @@ The following example policy allows you read-only access to all the resources in
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -320,7 +320,7 @@ The following example policy allows you full access to all Amazon Pinpoint actio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -355,7 +355,7 @@ The following example policy allows you read-only access to all Amazon Pinpoint 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -385,7 +385,7 @@ The following example policy allows you full access to all Amazon Pinpoint SMS a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -416,7 +416,7 @@ The condition in this statement identifies the `54.240.143.*` range of allowed I
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "AMZPinpointPolicyId1",
@@ -453,7 +453,7 @@ The `Condition` block uses the `StringEquals` condition and the `aws:ResourceTag
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -487,7 +487,7 @@ The following example policy grants Amazon Pinpoint permission to send email usi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -521,7 +521,7 @@ If you use Amazon Pinpoint in the AWS GovCloud (US-West) Region, use the followi
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

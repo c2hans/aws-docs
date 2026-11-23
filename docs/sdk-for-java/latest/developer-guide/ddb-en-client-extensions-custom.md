@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 
 You can create custom extensions by implementing the `DynamoDbEnhancedClientExtension` interface. The following custom extension class shows a `beforeWrite()` method that uses an update expression to set a `registrationDate` attribute if the item in the database doesn't already have one.
 
-```
+```java
 public final class CustomExtension implements DynamoDbEnhancedClientExtension {
 
     // 1. In a custom extension, use an UpdateExpression to define what action to take before

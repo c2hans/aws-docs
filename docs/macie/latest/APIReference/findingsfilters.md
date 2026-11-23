@@ -72,7 +72,7 @@ Creates and defines the criteria and other settings for a findings filter.
 #### POST schema
 <a name="findingsfilters-request-body-post-example"></a>
 
-```
+```json
 {
   "action": enum,
   "clientToken": "string",
@@ -94,7 +94,7 @@ Creates and defines the criteria and other settings for a findings filter.
 #### ListFindingsFiltersResponse schema
 <a name="findingsfilters-response-body-listfindingsfiltersresponse-example"></a>
 
-```
+```json
 {
   "findingsFilterListItems": [
     {
@@ -113,7 +113,7 @@ Creates and defines the criteria and other settings for a findings filter.
 #### CreateFindingsFilterResponse schema
 <a name="findingsfilters-response-body-createfindingsfilterresponse-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "id": "string"
@@ -123,7 +123,7 @@ Creates and defines the criteria and other settings for a findings filter.
 #### ValidationException schema
 <a name="findingsfilters-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -132,7 +132,7 @@ Creates and defines the criteria and other settings for a findings filter.
 #### ServiceQuotaExceededException schema
 <a name="findingsfilters-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -141,7 +141,7 @@ Creates and defines the criteria and other settings for a findings filter.
 #### AccessDeniedException schema
 <a name="findingsfilters-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -150,7 +150,7 @@ Creates and defines the criteria and other settings for a findings filter.
 #### ResourceNotFoundException schema
 <a name="findingsfilters-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -159,7 +159,7 @@ Creates and defines the criteria and other settings for a findings filter.
 #### ConflictException schema
 <a name="findingsfilters-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -168,7 +168,7 @@ Creates and defines the criteria and other settings for a findings filter.
 #### ThrottlingException schema
 <a name="findingsfilters-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -177,7 +177,7 @@ Creates and defines the criteria and other settings for a findings filter.
 #### InternalServerException schema
 <a name="findingsfilters-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

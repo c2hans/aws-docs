@@ -20,6 +20,8 @@ Ingesting and processing real-time streaming data requires scalability and low l
 
 ![Reference architecture diagram showing stream processing](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/reference-architecture-for-stream-processing.png)
 
+*Figure 5: Reference architecture for stream processing*
+
 1.  **Data producers** use the Amazon Kinesis Producer Library (KPL) to send social media streaming data to a Kinesis stream. Amazon Kinesis Agent and custom data producers that leverage the Kinesis API can also be used.
 
 1.  An **Amazon Kinesis stream** collects, processes, and analyzes real-time streaming data produced by data producers. Data ingested into the stream can be processed by a consumer, which, in this case, is Lambda.

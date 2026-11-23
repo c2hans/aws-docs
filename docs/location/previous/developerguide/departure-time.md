@@ -13,7 +13,7 @@ You can set a specific a departure time to use live and predictive traffic condi
 **Example**
 The following `[CalculateRoute](https://docs.aws.amazon.com/location/previous/APIReference/API_CalculateRoute.html)` request sets the departure time to July 2, 2024, at 12:15:20 UTC.
 
-```
+```json
 POST /routes/v0/calculators/ExampleCalculator/calculate/route
 Content-type: application/json
 {

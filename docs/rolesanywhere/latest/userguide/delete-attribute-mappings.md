@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/delete-at
 
  To delete a mapping rule, using the following command:
 
-```
+```bash
 $aws rolesanywhere delete-attribute-mapping \
         --certificate-field {{CERTIFICATE_FIELD}} \
         --specifiers {{SPECIFIERS}} \
@@ -22,7 +22,7 @@ $aws rolesanywhere delete-attribute-mapping \
 
 For example, to delete mapping rules for `x509Subject/CN` and `x509Subject/OU`, use the following command:
 
-```
+```bash
 $aws rolesanywhere delete-attribute-mapping \
         --certificate-field x509Subject \
         --specifiers CN OU \

@@ -17,7 +17,7 @@ This procedure explains how to update a zonal shift using the Amazon EC2 console
 
 1. On the navigation pane, under **Load Balancing**, choose **Load Balancers**.
 
-1. Select an Application Load Balancer with an active zonal shift.
+1. Select a Network Load Balancer with an active zonal shift.
 
 1. On the **Integrations** tab, expand **Amazon Application Recovery Controller (ARC)** and choose **Update zonal shift**.
 

@@ -36,7 +36,7 @@ This policy grants full access permissions to all HealthOmics actions. When you 
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -86,7 +86,7 @@ You can attach the `AWSOmicsReadOnlyAccess` policy to your IAM identities when y
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -87,7 +87,7 @@ Open the AWS Command Line Interface (AWS CLI) or AWS Tools for Windows PowerShel
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm update-service-setting  \
     --setting-id /ssm/documents/console/public-sharing-permission \
     --setting-value Disable \
@@ -97,7 +97,7 @@ aws ssm update-service-setting  \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm update-service-setting ^
     --setting-id /ssm/documents/console/public-sharing-permission ^
     --setting-value Disable ^
@@ -107,7 +107,7 @@ aws ssm update-service-setting ^
 ------
 #### [ PowerShell ]
 
-```
+```ps
 Update-SSMServiceSetting `
     -SettingId /ssm/documents/console/public-sharing-permission `
     -SettingValue Disable `
@@ -121,7 +121,7 @@ Confirm the setting value was updated using the following command.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm get-service-setting   \
     --setting-id /ssm/documents/console/public-sharing-permission \
     --region {{The AWS Region you blocked public sharing in}}
@@ -130,7 +130,7 @@ aws ssm get-service-setting   \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm get-service-setting  ^
     --setting-id /ssm/documents/console/public-sharing-permission ^
     --region "{{The AWS Region you blocked public sharing in}}"
@@ -139,7 +139,7 @@ aws ssm get-service-setting  ^
 ------
 #### [ PowerShell ]
 
-```
+```ps
 Get-SSMServiceSetting `
     -SettingId /ssm/documents/console/public-sharing-permission `
     -Region {{The AWS Region you blocked public sharing in}}
@@ -159,7 +159,7 @@ The following is an example of an IAM policy that prevents users from updating t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -224,7 +224,7 @@ Open the AWS Command Line Interface (AWS CLI) or AWS Tools for Windows PowerShel
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ram create-resource-share \
     --name {{MyDocumentShare}} \
     --resource-arns arn:aws:ssm:{{region}}:{{account-id}}:document/{{document-name}} \
@@ -234,7 +234,7 @@ aws ram create-resource-share \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ram create-resource-share ^
     --name {{MyDocumentShare}} ^
     --resource-arns arn:aws:ssm:{{region}}:{{account-id}}:document/{{document-name}} ^
@@ -321,7 +321,7 @@ The following procedure requires that you specify an AWS Region for your command
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws config
 
    AWS Access Key ID: [{{your key}}]
@@ -333,7 +333,7 @@ The following procedure requires that you specify an AWS Region for your command
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws config
 
    AWS Access Key ID: [{{your key}}]
@@ -345,7 +345,7 @@ The following procedure requires that you specify an AWS Region for your command
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Set-AWSCredentials –AccessKey {{your key}} –SecretKey {{your key}}
    Set-DefaultAWSRegion -Region {{region}}
    ```
@@ -357,7 +357,7 @@ The following procedure requires that you specify an AWS Region for your command
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm describe-document-permission \
        --name {{document name}} \
        --permission-type Share
@@ -366,7 +366,7 @@ The following procedure requires that you specify an AWS Region for your command
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm describe-document-permission ^
        --name {{document name}} ^
        --permission-type Share
@@ -375,7 +375,7 @@ The following procedure requires that you specify an AWS Region for your command
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Get-SSMDocumentPermission `
        –Name {{document name}} `
        -PermissionType Share
@@ -388,7 +388,7 @@ The following procedure requires that you specify an AWS Region for your command
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm modify-document-permission \
        --name {{document name}} \
        --permission-type Share \
@@ -398,7 +398,7 @@ The following procedure requires that you specify an AWS Region for your command
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm modify-document-permission ^
        --name {{document name}} ^
        --permission-type Share ^
@@ -408,7 +408,7 @@ The following procedure requires that you specify an AWS Region for your command
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Edit-SSMDocumentPermission `
        –Name {{document name}} `
        -PermissionType Share `
@@ -424,7 +424,7 @@ If you share a document publicly (with `all`), all versions of the specified doc
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm modify-document-permission \
        --name {{document name}} \
        --permission-type Share \
@@ -434,7 +434,7 @@ If you share a document publicly (with `all`), all versions of the specified doc
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm modify-document-permission ^
        --name {{document name}} ^
        --permission-type Share ^
@@ -444,7 +444,7 @@ If you share a document publicly (with `all`), all versions of the specified doc
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Edit-SSMDocumentPermission `
        -Name {{document name}} `
        -PermissionType Share `
@@ -484,7 +484,7 @@ Open the AWS CLI or AWS Tools for Windows PowerShell on your local computer and 
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm modify-document-permission \
     --name {{document name}} \
     --permission-type Share \
@@ -494,7 +494,7 @@ aws ssm modify-document-permission \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm modify-document-permission ^
     --name {{document name}} ^
     --permission-type Share ^
@@ -504,7 +504,7 @@ aws ssm modify-document-permission ^
 ------
 #### [ PowerShell ]
 
-```
+```ps
 Edit-SSMDocumentPermission `
     -Name {{document name}} `
     -PermissionType Share `
@@ -529,7 +529,7 @@ You aren't required to specify ARNs for AWS public documents (documents that beg
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm list-documents \
     --filters Key=Owner,Values=Public
 ```
@@ -537,7 +537,7 @@ aws ssm list-documents \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm list-documents ^
     --filters Key=Owner,Values=Public
 ```
@@ -545,7 +545,7 @@ aws ssm list-documents ^
 ------
 #### [ PowerShell ]
 
-```
+```ps
 $filter = New-Object Amazon.SimpleSystemsManagement.Model.DocumentKeyValuesFilter
 $filter.Key = "Owner"
 $filter.Values = "Public"
@@ -561,7 +561,7 @@ Get-SSMDocumentList `
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm list-documents \
     --filters Key=Owner,Values=Private
 ```
@@ -569,7 +569,7 @@ aws ssm list-documents \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm list-documents ^
     --filters Key=Owner,Values=Private
 ```
@@ -577,7 +577,7 @@ aws ssm list-documents ^
 ------
 #### [ PowerShell ]
 
-```
+```ps
 $filter = New-Object Amazon.SimpleSystemsManagement.Model.DocumentKeyValuesFilter
 $filter.Key = "Owner"
 $filter.Values = "Private"
@@ -593,21 +593,21 @@ Get-SSMDocumentList `
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm list-documents
 ```
 
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm list-documents
 ```
 
 ------
 #### [ PowerShell ]
 
-```
+```ps
 Get-SSMDocumentList
 ```
 
@@ -618,7 +618,7 @@ Get-SSMDocumentList
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm describe-document \
     --name {{arn:aws:ssm:us-east-2:12345678912:document/documentName}}
 ```
@@ -626,7 +626,7 @@ aws ssm describe-document \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm describe-document ^
     --name {{arn:aws:ssm:us-east-2:12345678912:document/documentName}}
 ```
@@ -634,7 +634,7 @@ aws ssm describe-document ^
 ------
 #### [ PowerShell ]
 
-```
+```powershell
 Get-SSMDocumentDescription `
     –Name {{arn:aws:ssm:us-east-2:12345678912:document/documentName}}
 ```
@@ -646,7 +646,7 @@ Get-SSMDocumentDescription `
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{arn:aws:ssm:us-east-2:12345678912:document/documentName}} \
     --instance-ids {{ID}}
@@ -655,7 +655,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{arn:aws:ssm:us-east-2:12345678912:document/documentName}} ^
     --instance-ids {{ID}}
@@ -664,7 +664,7 @@ aws ssm send-command ^
 ------
 #### [ PowerShell ]
 
-```
+```ps
 Send-SSMCommand `
     –DocumentName {{arn:aws:ssm:us-east-2:12345678912:document/documentName}} `
     –InstanceIds {{ID}}

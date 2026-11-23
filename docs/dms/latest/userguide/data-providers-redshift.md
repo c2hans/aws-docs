@@ -18,7 +18,7 @@ Using Amazon Redshift as a target for DMS Schema Conversion requires the followi
 
 You can use the following code example to create a database user and grant it permissions. Replace the example values with your values.
 
-```
+```sql
 CREATE USER {{user_name}} PASSWORD {{your_password}};
 GRANT CREATE ON DATABASE {{db_name}} TO {{user_name}};
 GRANT CREATE ON SCHEMA {{schema_name}} TO {{user_name}};

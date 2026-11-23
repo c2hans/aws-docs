@@ -24,7 +24,7 @@ Geocode in Brussels, with time zone request.
 ------
 #### [ Sample request ]
 
-```
+```json
 {
   "QueryText": "Brussels",
   "Filter" : {
@@ -39,7 +39,7 @@ Geocode in Brussels, with time zone request.
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -94,7 +94,7 @@ Geocode in Brussels, with time zone request.
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -112,7 +112,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places geocode --key ${YourKey} --query-text "Brussels" \
 --filter '{"IncludePlaceTypes": ["Locality"]}' \
 --additional-features "TimeZone"

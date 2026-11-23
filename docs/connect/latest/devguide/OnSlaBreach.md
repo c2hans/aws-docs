@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnSlaBreach.html
 + ComparisonValue – "$.RelatedItem.SlaConfiguration.Name"
 + Negate - false
 
-```
+```json
 {
 "Operator": "CONTAINS_ANY",
 "Operands": ["highPrioritySla"],

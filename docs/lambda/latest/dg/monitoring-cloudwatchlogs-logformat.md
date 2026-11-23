@@ -69,7 +69,7 @@ For comparison, the following two examples show the same log output in both plai
 
 **Example structured JSON:**
 
-```
+```JSON
 {
   "time": "2024-03-13T18:56:24.046Z",
   "type": "platform.initStart",
@@ -109,7 +109,7 @@ For comparison, the following two examples show the same log output in both plai
 
 **Example structured JSON:**
 
-```
+```JSON
 {
     "timestamp":"2024-10-27T19:17:45.586Z",
     "level":"INFO",

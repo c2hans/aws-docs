@@ -94,7 +94,7 @@ For more information, see [Block device mappings for volumes on Amazon EC2 insta
 **Tools for PowerShell V4**
 **Example 1: This example describes the instance type of the specified instance.**
 
-```
+```powershell
 Get-EC2InstanceAttribute -InstanceId i-12345678 -Attribute instanceType
 ```
 **Output:**
@@ -104,7 +104,7 @@ InstanceType                      : t2.micro
 ```
 **Example 2: This example describes whether enhanced networking is enabled for the specified instance.**
 
-```
+```powershell
 Get-EC2InstanceAttribute -InstanceId i-12345678 -Attribute sriovNetSupport
 ```
 **Output:**
@@ -114,7 +114,7 @@ SriovNetSupport                   : simple
 ```
 **Example 3: This example describes the security groups for the specified instance.**
 
-```
+```powershell
 (Get-EC2InstanceAttribute -InstanceId i-12345678 -Attribute groupSet).Groups
 ```
 **Output:**
@@ -127,7 +127,7 @@ sg-45678901
 ```
 **Example 4: This example describes whether EBS optimization is enabled for the specified instance.**
 
-```
+```powershell
 Get-EC2InstanceAttribute -InstanceId i-12345678 -Attribute ebsOptimized
 ```
 **Output:**
@@ -137,7 +137,7 @@ EbsOptimized                      : False
 ```
 **Example 5: This example describes the 'disableApiTermination' attribute of the specified instance.**
 
-```
+```powershell
 Get-EC2InstanceAttribute -InstanceId i-12345678 -Attribute disableApiTermination
 ```
 **Output:**
@@ -147,7 +147,7 @@ DisableApiTermination             : False
 ```
 **Example 6: This example describes the 'instanceInitiatedShutdownBehavior' attribute of the specified instance.**
 
-```
+```powershell
 Get-EC2InstanceAttribute -InstanceId i-12345678 -Attribute instanceInitiatedShutdownBehavior
 ```
 **Output:**
@@ -160,7 +160,7 @@ InstanceInitiatedShutdownBehavior : stop
 **Tools for PowerShell V5**
 **Example 1: This example describes the instance type of the specified instance.**
 
-```
+```powershell
 Get-EC2InstanceAttribute -InstanceId i-12345678 -Attribute instanceType
 ```
 **Output:**
@@ -170,7 +170,7 @@ InstanceType                      : t2.micro
 ```
 **Example 2: This example describes whether enhanced networking is enabled for the specified instance.**
 
-```
+```powershell
 Get-EC2InstanceAttribute -InstanceId i-12345678 -Attribute sriovNetSupport
 ```
 **Output:**
@@ -180,7 +180,7 @@ SriovNetSupport                   : simple
 ```
 **Example 3: This example describes the security groups for the specified instance.**
 
-```
+```powershell
 (Get-EC2InstanceAttribute -InstanceId i-12345678 -Attribute groupSet).Groups
 ```
 **Output:**
@@ -193,7 +193,7 @@ sg-45678901
 ```
 **Example 4: This example describes whether EBS optimization is enabled for the specified instance.**
 
-```
+```powershell
 Get-EC2InstanceAttribute -InstanceId i-12345678 -Attribute ebsOptimized
 ```
 **Output:**
@@ -203,7 +203,7 @@ EbsOptimized                      : False
 ```
 **Example 5: This example describes the 'disableApiTermination' attribute of the specified instance.**
 
-```
+```powershell
 Get-EC2InstanceAttribute -InstanceId i-12345678 -Attribute disableApiTermination
 ```
 **Output:**
@@ -213,7 +213,7 @@ DisableApiTermination             : False
 ```
 **Example 6: This example describes the 'instanceInitiatedShutdownBehavior' attribute of the specified instance.**
 
-```
+```powershell
 Get-EC2InstanceAttribute -InstanceId i-12345678 -Attribute instanceInitiatedShutdownBehavior
 ```
 **Output:**

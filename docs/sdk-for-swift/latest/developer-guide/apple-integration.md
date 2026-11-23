@@ -113,7 +113,7 @@ Next, open the [IAM Management Console](https://console.aws.amazon.com/iam) to c
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -157,7 +157,7 @@ Next, open the [IAM Management Console](https://console.aws.amazon.com/iam) to c
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -195,14 +195,14 @@ This section explains how an application can provide a Sign In With Apple option
 
 To include a Sign In With Apple button, the `AuthenticationServices` module needs to be imported along with SwiftUI:
 
-```
+```swift
 import SwiftUI
 import AuthenticationServices
 ```
 
 In your SwiftUI sign-in view, embed a Sign In With Apple button. The `[SignInWithAppleButton](https://developer.apple.com/documentation/authenticationservices/signinwithapplebutton/)` is used to trigger and manage the Sign In With Apple process. This button calls a completion handler with a `Result` object, which indicates whether or not a valid Apple ID was authenticated:
 
-```
+```swift
                     // Show the "Sign In With Apple" button, using the
                     // `.continue` mode, which allows the user to create
                     // a new ID if they don't already have one. When SIWA
@@ -239,7 +239,7 @@ By default, the token returned by Sign In With Apple expires one day from its cr
 
 A number of variables are used by the example application to store information related to the user and their sign-in session:
 
-```
+```swift
     /// The unique string assigned by Sign In With Apple for this login
     /// session. This ID is valid across application launches until it
     /// is signed out from Sign In With Apple.
@@ -282,7 +282,7 @@ These are used to record the AWS account information (the AWS account number and
 
 The `handleSignInResult()` function looks like this:
 
-```
+```swift
     /// Called by the Sign In With Apple button when a JWT token has
     /// been returned by the Sign In With Apple service. This function
     /// in turn handles fetching AWS credentials using that token.
@@ -360,7 +360,7 @@ The `authenticate(withWebIdentity: region:)` function performs credential identi
 
 After authenticating with Sign In With Apple, a function named `saveUserData()` is called to securely store the user's information in the Keychain. This lets the sign in screen automatically fill in the form fields, and lets the application remember the user's email address and name if available.
 
-```
+```swift
     /// Convert the given JWT identity token string into the temporary
     /// AWS credentials needed to allow this application to operate, as
     /// specified using the Apple Developer portal and the AWS Identity
@@ -425,7 +425,7 @@ The token is written to disk since the SDK expects to load the token from a file
 
 To access an AWS service, create a client configuration object that includes the `awsCredentialIdentityResolver` property. This property's value should be the web identity credential identity resolver created by the `authorize(withWebIdentity: region:)` function:
 
-```
+```swift
     /// Fetches a list of the user's Amazon S3 buckets.
     ///
     /// The bucket names are stored in the view model's `bucketList`

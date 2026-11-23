@@ -13,7 +13,7 @@ For example, you can create a policy that allows a user to have full access to a
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -41,7 +41,7 @@ The following example shows how to create a policy to allow creating and deletin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

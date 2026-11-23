@@ -12,7 +12,7 @@ The following table lists the supported source load balancers and their configur
 
 | Source load balancer | Configuration file |
 | --- | --- |
-| [F5 BIG-IP](#transform-vmware-lb-f5) | bigip.conf, or an archive of the configuration files |
+| [F5 BIG-IP Local Traffic Manager (LTM)](#transform-vmware-lb-f5) | bigip.conf, or an archive of the configuration files |
 
 You can include one source load balancer in a job.
 
@@ -100,8 +100,10 @@ When the deployment succeeds, AWS Transform lists the deployed load balancers an
 
 Each source load balancer has its own configuration file, terminology, behavior changes, and virtual servers that don't migrate.
 
-### F5 BIG-IP
+### F5 BIG-IP Local Traffic Manager (LTM)
 <a name="transform-vmware-lb-f5"></a>
+
+AWS Transform migrates the Local Traffic Manager (LTM) module of F5 BIG-IP: its virtual servers, with their pools and monitors. AWS Transform doesn't migrate other BIG-IP modules.
 
 **Configuration file:** Provide the `bigip.conf` configuration file that you export from your F5 BIG-IP system, or an archive (zip or tar) of the configuration files, including `bigip_base.conf` and partition files. F5 calls each entry that receives client traffic a virtual server, identified by a VIP.
 

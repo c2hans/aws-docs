@@ -35,7 +35,7 @@ For Voice Connector SIPREC, we rely on the SIPREC metadata. In most cases, the s
 
 The following example shows Kinesis Video Stream input for one dual-channel audio stream.
 
-```
+```json
 "StreamChannelDefinition" : {
     "NumberOfChannels" : 2
     "ChannelDefinitions": [
@@ -53,7 +53,7 @@ The following example shows Kinesis Video Stream input for one dual-channel audi
 
  In contrast, the following example shows two mono inputs from two different Kinesis Video streams.
 
-```
+```json
 KVS-1:
     "StreamChannelDefinition" : {
         "NumberOfChannels"  : 1
@@ -83,7 +83,7 @@ KVS-2:
 
 The following example shows one-time metadata output format for Amazon Transcribe.
 
-```
+```json
 {
     "time": "{{string}}", // ISO8601 format
     "service-type": "CallAnalytics",
@@ -122,7 +122,7 @@ The following example shows one-time metadata output format for Amazon Transcrib
 
  The following example shows the Amazon Transcribe Call Analytics output format.
 
-```
+```json
 {
     "time": "{{string}}", // ISO8601 format
     "service-type": "CallAnalytics",
@@ -189,7 +189,7 @@ If the call analytics configuration is associated with an Amazon Chime SDK Voice
 
 The following example shows an update metadata format for Amazon Transcribe processor and Transcribe Call Analytics processor.
 
-```
+```json
 {
     "time": "{{string}}", // ISO8601 format
     "service-type": "CallAnalytics",
@@ -224,7 +224,7 @@ The following example shows an update metadata format for Amazon Transcribe proc
 
 The following example shows an update metadata format for Call Analytics Amazon S3 Recording.
 
-```
+```jsoin
 {
     "time": "{{string}}", // ISO8601 format
     "service-type": "CallAnalytics",
@@ -262,7 +262,7 @@ The following example shows an update metadata format for Call Analytics Amazon 
 
 The following examples show the metadata for recording a SIP call between two people, Alice and Bob. Both participants send and receive audio and video. For simplicity, the example only has snippets of SIP and SDP, and SRC records the streams of each participant to SRS without mixing.
 
-```
+```xml
 INVITE sip:recorder@example.com SIP/2.0
    Via: SIP/2.0/TCP src.example.com;branch=z9hG4bKdf6b622b648d9
    From: <sip:2000@example.com>;tag=35e195d2-947d-4585-946f-09839247
@@ -400,7 +400,7 @@ Content-Disposition: recording-session
 
 The following example shows the updated metadata when one call participant puts the other on hold. In this case, `participant_id srfBElmCRp2QB23b7Mpk0w==` only receives media streams and does not send any media, so the `send` XML element is omitted. In contrast, `participant_id zSfPoSvdSDCmU3A3TRDxAw==` sends media to, but does not receive media from, the other participant, so the `recv` XML element is omitted.
 
-```
+```xml
 INVITE sip:recorder@example.com SIP/2.0
             Via: SIP/2.0/TCP src.example.com;branch=z9hG4bKdf6b622b648d9
       From: <sip:2000@example.com>;tag=35e195d2-947d-4585-946f-09839247
@@ -461,7 +461,7 @@ INVITE sip:recorder@example.com SIP/2.0
 
 The following example shows the metadata update when the call resumes. The payload now has the `send` and `recv` XML elements.
 
-```
+```json
 INVITE sip:recorder@example.com SIP/2.0
       Via: SIP/2.0/TCP src.example.com;branch=z9hG4bKdf6b622b648d9
       From: <sip:2000@example.com>;tag=35e195d2-947d-4585-946f-09839247
@@ -540,7 +540,7 @@ Call analytics session with Amazon Transcribe takes audio data input from Kinesi
 + (Optional) KVS `FragmentNumber` - Starts a call analytics job with the chunk after a specific fragment. If not provided, it will use the latest available chunk on the Kinesis Video Stream.
 + `StreamChannelDefinition` Amazon Transcribe currently supports audio with two channels. You have to specify the `NumberOfChannels` in the runtime `StreamChannelDefinition`. Additionally, you must pass the `ChannelId` if you send mono audio in two separate channels. In your transcript, channels are assigned the labels `ch_0` and `ch_1`. The following example shows the KVS input for one mono audio channel stream.
 
-```
+```json
 "StreamChannelDefinition" : {"
     NumberOfChannels" : 1
 }
@@ -548,7 +548,7 @@ Call analytics session with Amazon Transcribe takes audio data input from Kinesi
 
  The following example shows the KVS input for two mono audio inputs in two different streams.
 
-```
+```json
 KVS-1:
     "StreamChannelDefinition" : {
         "NumberOfChannels"  : 1
@@ -579,7 +579,7 @@ For the Amazon Transcribe and Amazon Transcribe call analytics processors, if yo
 
 The following example shows a one-time metadata output format for Amazon Transcribe.
 
-```
+```json
 {
     "time": "{{string}}", // ISO8601 format
     "service-type": "CallAnalytics",
@@ -614,7 +614,7 @@ The following example shows a one-time metadata output format for Amazon Transcr
 
 The following example shows the Amazon Transcribe output format.
 
-```
+```json
 {
     "time": "{{string}}", // ISO8601 format
     "service-type": "CallAnalytics",
@@ -709,13 +709,13 @@ Like any other call analytics processor, you need to first create a configuratio
 
  Run the following command:
 
-```
+```json
 aws chime-sdk-media-pipeline create-media-insights-pipeline-configuration --cli-input-json file://configuration.json
 ```
 
  The following example shows a configuration JSON file with only recording enabled:
 
-```
+```json
 {
     "MediaInsightsPipelineConfigurationName": configuration_name,
     "ResourceAccessRoleArn": {{role_arn}},
@@ -747,7 +747,7 @@ Remember the following:
 
 The following example shows metadata output format for call analytics Amazon S3 recording.
 
-```
+```json
 {
     "time": "{{string}}", // ISO8601 format
     "service-type": "CallAnalytics",
@@ -791,7 +791,7 @@ To enable voice enhancement, include a `VoiceEnhancementSinkConfiguration` eleme
 
 This example shows a typical element.
 
-```
+```json
 {
   "Type":"VoiceEnhancementSink",
   "VoiceEnhancementSinkConfiguration": {
@@ -803,7 +803,7 @@ To update a configuration, add the `VoiceEnhancementSinkConfiguration` element t
 
 This example request shows how to enable Voice Enhancement and Amazon S3 recording.
 
-```
+```json
 POST /media-insights-pipeline-configurations HTTP/1.1
 Content-type: application/json
 

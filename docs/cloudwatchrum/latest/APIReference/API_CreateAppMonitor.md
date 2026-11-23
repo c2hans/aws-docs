@@ -207,7 +207,7 @@ The following example creates an app monitor.
 #### Sample Request
 <a name="API_CreateAppMonitor_Example_1_Request"></a>
 
-```
+```json
 {
     "AppMonitorConfiguration": {
         "AllowCookies": true,

@@ -37,7 +37,7 @@ To get started, create a new Go file named `regions_and_availability.go`.
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -50,7 +50,7 @@ import (
 
 In the `main` function, create a session with credentials from the shared credentials file, `~/.aws/credentials`, and create a new EC2 client.
 
-```
+```go
 func main() {
     // Load session from shared config
     sess := session.Must(session.NewSessionWithOptions(session.Options{
@@ -63,7 +63,7 @@ func main() {
 
 Print out the list of regions that work with Amazon EC2 that are returned by calling `DescribeRegions`.
 
-```
+```go
     resultRegions, err := svc.DescribeRegions(nil)
     if err != nil {
         fmt.Println("Error", err)
@@ -73,7 +73,7 @@ Print out the list of regions that work with Amazon EC2 that are returned by cal
 
 Add a call that retrieves Availability Zones only for the region of the EC2 service object.
 
-```
+```go
     resultAvalZones, err := svc.DescribeAvailabilityZones(nil)
     if err != nil {
         fmt.Println("Error", err)

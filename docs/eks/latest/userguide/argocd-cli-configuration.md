@@ -22,7 +22,7 @@ Configure the CLI using environment variables:
 
 1. Get the Argo CD server URL from the Amazon EKS console (under your cluster’s **Capabilities** page), or using the AWS CLI. The `https://` prefix must be removed:
 
-   ```
+   ```bash
    export ARGOCD_SERVER=$(aws eks describe-capability \
      --cluster-name {{my-cluster}} \
      --capability-name {{my-argocd}} \
@@ -33,7 +33,7 @@ Configure the CLI using environment variables:
 
 1. Generate an account token from the Argo CD UI (**Settings** → **Accounts** → **admin** → **Generate New Token**), then set it as an environment variable:
 
-   ```
+   ```bash
    export ARGOCD_AUTH_TOKEN="your-token-here"
    ```
 **Important**
@@ -41,7 +41,7 @@ This configuration uses the admin account token for initial setup and developmen
 
 1. Set the required gRPC option:
 
-   ```
+   ```bash
    export ARGOCD_OPTS="--grpc-web"
    ```
 
@@ -60,7 +60,7 @@ The managed capability has the following CLI limitations:
 
 Register an EKS cluster for application deployment:
 
-```
+```bash
 # Get the cluster ARN
 CLUSTER_ARN=$(aws eks describe-cluster \
   --name {{my-cluster}} \

@@ -28,6 +28,9 @@ You deduplicate either by setting `DeduplicationType=CONTENT_BASED` on the reque
 + Set `--deduplication-configuration DeduplicationType=CONTENT_BASED` on the request. EventBridge hashes the content of each entry and suppresses an entry whose hash it has already accepted.
 + Omit `DeduplicationConfiguration` and set `SystemMetadata.DeduplicationId` on each entry to a key that you already have, such as an idempotency key from your producer.
 
+**Important**
+Content-based deduplication treats two entries as duplicates only when their `Data` payload and their customer `Metadata` map are both identical, not the payload alone. A `Metadata` value that differs on any entry, such as an offset or timestamp for each record, makes every entry unique. Content-based deduplication then never finds a match, and suppresses nothing. When you rely on content-based deduplication, put in `Metadata` only values that are equal across true duplicates. To key deduplication on something other than the full content, set `SystemMetadata.DeduplicationId` instead.
+
 EventBridge suppresses a duplicate that arrives within 5 minutes (300 seconds) of the entry it repeats. The check is scoped to your account, and to the event group when the entry carries an `EventGroupId`: an entry with the same key from another account, or in another group, is a different event. An entry without an `EventGroupId` is still deduplicated, across all of your account's ungrouped entries on that bus.
 
 Together, this gives exactly-once ingestion: a duplicate publish within the window is suppressed at the bus, and a FIFO subscriber then hands each accepted event to its target once, in order, within its group.

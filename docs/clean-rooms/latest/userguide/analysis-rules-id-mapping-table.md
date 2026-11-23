@@ -28,7 +28,7 @@ With the ID mapping table analysis rule, AWS Clean Rooms enforces an overlap on 
 
   A protected column is an ID mapping table column that, by default, you can use only in JOIN statements. For example, the following queries aren't supported:
 
-  ```
+  ```sql
   -- Not supported: the ID mapping table is joined in the same FROM clause
   SELECT provider.data_col
   FROM provider
@@ -43,7 +43,7 @@ With the ID mapping table analysis rule, AWS Clean Rooms enforces an overlap on 
 
   To use a LEFT SEMI JOIN or LEFT ANTI JOIN with mapped IDs, join your table to the ID mapping table in a subquery or common table expression (CTE) that respects the overlap and returns only unprotected columns. Then use the result in the LEFT SEMI JOIN or LEFT ANTI JOIN. For example:
 
-  ```
+  ```sql
   WITH matched AS (
     SELECT provider.id, provider.data_col
     FROM provider

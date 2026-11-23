@@ -140,7 +140,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-kms-key-create-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "KeyDescription": "Exmample description of the key to be created.",
   "KeyPermissions": "KMS Key permissions to add: kms:Get",
@@ -151,7 +151,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-kms-key-create-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "KeyDescription": "Exmample description of the key to be created.",
   "AliasName": "testkmskey",

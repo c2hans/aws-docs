@@ -41,7 +41,7 @@ In this example, use a Node.js module to list all subscriptions to an Amazon SNS
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -58,7 +58,7 @@ Create an object containing the `TopicArn` parameter for the topic whose subscri
 **Note**
 Replace {{TOPIC\_ARN}} with the Amazon Resource Name (ARN) for the topic whose subscriptions you want to list .
 
-```
+```javascript
 import { ListSubscriptionsByTopicCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -96,7 +96,7 @@ export const listSubscriptionsByTopic = async (topicArn = "TOPIC_ARN") => {
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node list-subscriptions-by-topic.js
 ```
 
@@ -109,7 +109,7 @@ In this example, use a Node.js module to subscribe an email address so that it r
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -128,7 +128,7 @@ To call the `SubscribeCommand` method, create an asynchronous function invoking 
 **Note**
 Replace {{TOPIC\_ARN}} with the Amazon Resource Name (ARN) for the topic, and {{EMAIL\_ADDRESS}} with the email address to subscribe to.
 
-```
+```javascript
 import { SubscribeCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -164,7 +164,7 @@ export const subscribeEmail = async (
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node subscribe-email.js
 ```
 
@@ -177,7 +177,7 @@ In this example, use a Node.js module to verify an endpoint owner's intent to re
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -200,7 +200,7 @@ To call the `ConfirmSubscriptionCommand` method, create an asynchronous function
 **Note**
 Replace {{TOPIC\_ARN}} with the Amazon Resource Name (ARN) for the topic, {{TOKEN}} with the token value from the URL sent to the endpoint owner in a previous `Subscribe` action, and define {{AuthenticateOnUnsubscribe}}. with a value of `TRUE` or `FALSE`.
 
-```
+```javascript
 import { ConfirmSubscriptionCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -241,7 +241,7 @@ export const confirmSubscription = async (
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node confirm-subscription.js
 ```
 
@@ -254,7 +254,7 @@ In this example, use a Node.js module to subscribe a mobile application endpoint
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -273,7 +273,7 @@ To call the `SubscribeCommand` method, create an asynchronous function invoking 
 **Note**
 Replace {{TOPIC\_ARN}} with the Amazon Resource Name (ARN) for the topic, and {{MOBILE\_ENDPOINT\_ARN}} with the endpoint you are subscribing to the topic.
 
-```
+```javascript
 import { SubscribeCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -311,7 +311,7 @@ export const subscribeApp = async (
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node subscribe-app.js
 ```
 
@@ -324,7 +324,7 @@ In this example, use a Node.js module to subscribe an AWS Lambda function so it 
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -343,7 +343,7 @@ To call the `SubscribeCommand` method, create an asynchronous function invoking 
 **Note**
 Replace {{TOPIC\_ARN}} with the Amazon Resource Name (ARN) for the topic, and {{LAMBDA\_FUNCTION\_ARN}} with the Amazon Resource Name (ARN) of the Lambda function.
 
-```
+```javascript
 import { SubscribeCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -380,7 +380,7 @@ export const subscribeLambda = async (
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node subscribe-lambda.js
 ```
 
@@ -393,7 +393,7 @@ In this example, use a Node.js module to unsubscribe an Amazon SNS topic subscri
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -412,7 +412,7 @@ To call the `UnsubscribeCommand` method, create an asynchronous function invokin
 **Note**
 Replace {{TOPIC\_SUBSCRIPTION\_ARN}} with the Amazon Resource Name (ARN) of the subscription to unsubscribe.
 
-```
+```javascript
 import { UnsubscribeCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -444,7 +444,7 @@ const unsubscribe = async (
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node unsubscribe.js
 ```
 

@@ -11,7 +11,7 @@ To generate a self-signed CA and client certificate, save the following script a
 ./generate-fsx-mgn-certs.sh "{{YourOrg}}" "{{US}}"
 ```
 
-```
+```bash
 #!/bin/bash
 set -e
 ORG="${1:-YourOrg}"

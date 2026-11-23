@@ -11,7 +11,7 @@ The following is a partial example of sending an SMS with message feedback enabl
 **Sending an SMS message with message feedback enabled with the API**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   aws pinpoint-sms-voice-v2 --region '{{us-east-1}}' send-text-message --destination-phone-number {{+12065550150}} --origination-identity {{+14255550120}} --message-body '{{text body}}' --message-feedback-enabled
   ```
 
@@ -27,7 +27,7 @@ The following is a partial example of sending an SMS with message feedback enabl
 **Example of sending an SMS message with message feedback with a configuration set**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   aws pinpoint-sms-voice-v2 --region '{{us-east-1}}' send-text-message --destination-phone-number {{+12065550150}} --origination-identity {{+14255550120}} --message-body '{{text body}}' --configuration-set-name {{ConfigSetName}}
   ```
 
@@ -40,7 +40,7 @@ The following is a partial example of sending an SMS with message feedback enabl
 
 If AWS End User Messaging SMS accepts the command you will receive the `MessageId`. This only means the command was successfully received and not that the destination device has received the message yet.
 
-```
+```json
 {
    "MessageId": "string"
 }

@@ -18,7 +18,7 @@ The default `AmazonSageMakerManageAccess-<region>-<domainId>` role has the follo
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -46,7 +46,7 @@ The default `AmazonSageMakerManageAccess-<region>-<domainId>` role has the follo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

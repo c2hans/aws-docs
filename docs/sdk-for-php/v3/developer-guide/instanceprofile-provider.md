@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/instancep
 
  `Aws\Credentials\CredentialProvider::instanceProfile` attempts to load credentials for an IAM role specified in an Amazon EC2 instance profile.
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 use Aws\S3\S3Client;
 
@@ -23,7 +23,7 @@ $client = new S3Client([
 
 By default, the provider retries fetching credentials up to three times. The number of retries can be set with the `retries` option, and disabled entirely by setting the option to `0` as shown in the following code.
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 
 $provider = CredentialProvider::instanceProfile([

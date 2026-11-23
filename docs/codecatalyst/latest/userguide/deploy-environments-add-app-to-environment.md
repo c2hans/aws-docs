@@ -79,7 +79,7 @@ Use caution when updating the default IAM role. Changing the role might lead to 
 
 1. In the workflow action that you want to associate with an environment, add code similar to the following:
 
-   ```
+   ```yaml
    {{action-name}}:
      Environment:
        Name: {{environment-name}}

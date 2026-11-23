@@ -409,7 +409,7 @@ Default: `120`
 **Example: Configuration merge update (using a restrictive policy)**  <a name="client-device-auth-component-configuration-example-restrictive"></a>
 The following example configuration specifies to allow client devices whose names start with `MyClientDevice` to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -457,7 +457,7 @@ The following example configuration specifies to allow client devices whose name
 **Example: Configuration merge update (using a permissive policy)**  <a name="client-device-auth-component-configuration-example-permissive"></a>
 The following example configuration specifies to allow all client devices to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -487,7 +487,7 @@ The following example configuration specifies to allow all client devices to con
 **Example: Configuration merge update (using a thing name policy)**  <a name="client-device-auth-component-configuration-example-mythingname"></a>
 The following example configuration enables client devices to publish on topics that begin with the client device's thing name and end with the string `topic`.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -658,7 +658,7 @@ Default: `120`
 **Example: Configuration merge update (using a restrictive policy)**  <a name="client-device-auth-component-configuration-example-restrictive"></a>
 The following example configuration specifies to allow client devices whose names start with `MyClientDevice` to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -706,7 +706,7 @@ The following example configuration specifies to allow client devices whose name
 **Example: Configuration merge update (using a permissive policy)**  <a name="client-device-auth-component-configuration-example-permissive"></a>
 The following example configuration specifies to allow all client devices to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -870,7 +870,7 @@ Default: `120`
 **Example: Configuration merge update (using a restrictive policy)**  <a name="client-device-auth-component-configuration-example-restrictive"></a>
 The following example configuration specifies to allow client devices whose names start with `MyClientDevice` to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -918,7 +918,7 @@ The following example configuration specifies to allow client devices whose name
 **Example: Configuration merge update (using a permissive policy)**  <a name="client-device-auth-component-configuration-example-permissive"></a>
 The following example configuration specifies to allow all client devices to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -1076,7 +1076,7 @@ Default: `3600`
 **Example: Configuration merge update (using a restrictive policy)**  <a name="client-device-auth-component-configuration-example-restrictive"></a>
 The following example configuration specifies to allow client devices whose names start with `MyClientDevice` to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -1124,7 +1124,7 @@ The following example configuration specifies to allow client devices whose name
 **Example: Configuration merge update (using a permissive policy)**  <a name="client-device-auth-component-configuration-example-permissive"></a>
 The following example configuration specifies to allow all client devices to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -1272,7 +1272,7 @@ The duration in minutes that the authentication information of a client device c
 **Example: Configuration merge update (using a restrictive policy)**  <a name="client-device-auth-component-configuration-example-restrictive"></a>
 The following example configuration specifies to allow client devices whose names start with `MyClientDevice` to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -1320,7 +1320,7 @@ The following example configuration specifies to allow client devices whose name
 **Example: Configuration merge update (using a permissive policy)**  <a name="client-device-auth-component-configuration-example-permissive"></a>
 The following example configuration specifies to allow all client devices to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -1454,7 +1454,7 @@ Default: `1`
 **Example: Configuration merge update (using a restrictive policy)**  <a name="client-device-auth-component-configuration-example-restrictive"></a>
 The following example configuration specifies to allow client devices whose names start with `MyClientDevice` to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -1502,7 +1502,7 @@ The following example configuration specifies to allow client devices whose name
 **Example: Configuration merge update (using a permissive policy)**  <a name="client-device-auth-component-configuration-example-permissive"></a>
 The following example configuration specifies to allow all client devices to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -1624,7 +1624,7 @@ Maximum value: `864000` (10 days)
 **Example: Configuration merge update (using a restrictive policy)**  <a name="client-device-auth-component-configuration-example-restrictive"></a>
 The following example configuration specifies to allow client devices whose names start with `MyClientDevice` to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -1672,7 +1672,7 @@ The following example configuration specifies to allow client devices whose name
 **Example: Configuration merge update (using a permissive policy)**  <a name="client-device-auth-component-configuration-example-permissive"></a>
 The following example configuration specifies to allow all client devices to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -1785,7 +1785,7 @@ You can specify the `*` wildcard to allow access to all resources. You can't use
 **Example: Configuration merge update (using a restrictive policy)**  <a name="client-device-auth-component-configuration-example-restrictive"></a>
 The following example configuration specifies to allow client devices whose names start with `MyClientDevice` to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -1833,7 +1833,7 @@ The following example configuration specifies to allow client devices whose name
 **Example: Configuration merge update (using a permissive policy)**  <a name="client-device-auth-component-configuration-example-permissive"></a>
 The following example configuration specifies to allow all client devices to connect and publish/subscribe on all topics.
 
-```
+```json
 {
   "deviceGroups": {
     "formatVersion": "2021-03-05",
@@ -1889,14 +1889,14 @@ This component uses the same log file as the [Greengrass nucleus](greengrass-nuc
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
   ```
 

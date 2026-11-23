@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-c
 
 **Syntax**
 
-```
+```text
 FT.INFO <index-name>
 ```
 

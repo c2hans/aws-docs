@@ -16,7 +16,7 @@ To clone the example repository to SageMaker Studio, follow the instructions at 
 **Important**
 To use the new Debugger features, you need to upgrade the SageMaker Python SDK and the `SMDebug` client library. In your iPython kernel, Jupyter Notebook, or JupyterLab environment, run the following code to install the latest versions of the libraries and restart the kernel.
 
-```
+```py
 import sys
 import IPython
 !{sys.executable} -m pip install -U sagemaker smdebug

@@ -24,7 +24,7 @@ You can create a client by passing an associative array of options to a client�
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\S3\S3Client;
@@ -33,7 +33,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 //Create an S3Client
 $s3 = new Aws\S3\S3Client([
     'region' => 'us-east-2'  // Since version 3.277.10 of the SDK,
@@ -55,7 +55,7 @@ You can make service requests by calling the method of the same name on a client
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\S3\S3Client;
@@ -63,7 +63,7 @@ use Aws\S3\S3Client;
 
  **Sample Code**
 
-```
+```php
 // Use the us-east-2 region and latest version of each client.
 $sharedConfig = [
     'profile' => 'default',
@@ -102,7 +102,7 @@ Operation methods like `putObject()` all accept a single argument, an associativ
 
 You can also fine-tune how the underlying HTTP handler executes the request by using the special `@http` parameter. The options you can include in the `@http` parameter are the same as the ones you can set when you instantiate the client with the [“http” client option](guide_configuration.md#config-http).
 
-```
+```php
 // Send the request through a proxy
 $result = $s3Client->putObject([
     'Bucket' => 'amzn-s3-demo-bucket',
@@ -123,7 +123,7 @@ You can access data from the `AWS\Result` object like an associative PHP array.
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 use Aws\S3\S3Client;
 use Aws\Exception\AwsException;
@@ -131,7 +131,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 // Use the us-east-2 region and latest version of each client.
 $sharedConfig = [
     'profile' => 'default',
@@ -158,11 +158,11 @@ The SDK is integrated with [JMESPath](http://jmespath.org/), a [DSL](http://en.w
 
  **Sample Code**
 
-```
+```php
 $s3 = $sdk->createS3();
 $result = $s3->listBuckets();
 ```
 
-```
+```php
 $names = $result->search('Buckets[].Name');
 ```

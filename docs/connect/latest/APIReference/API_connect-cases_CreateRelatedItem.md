@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 
 Creates a related item (comments, tasks, and contacts) and associates it with a case.
 
-There's a quota for the number of fields allowed in a Custom type related item. See [Connect Customer Cases quotas](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-service-limits.html#cases-quotas).
+There are quotas for the number of fields that you can add to a Custom type related item and for the number of service level agreements (SLAs) that you can attach to a case. See [Connect Customer Cases quotas](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-service-limits.html#cases-quotas).
 
  **Use cases**
 
@@ -158,7 +158,7 @@ This section provides examples for supported related item types.
 
 Request:
 
-```
+```json
 {
   "content": {
     "comment": {
@@ -174,13 +174,13 @@ Request:
 <a name="API_connect-cases_CreateRelatedItem_Example_2"></a>
 
 Request:
-+  `name` is the descriptive name for the SLA
-+  `targetSlaMinutes` is the time in minutes within which the SLA must be met
-+  `type` only supports "CaseField"
-+  `fieldId` only supports "status" field
++  `name` is the descriptive name for the SLA.
++  `targetSlaMinutes` is the time in minutes, counted from when the SLA is created, within which the SLA must be met.
++  `type` only supports `CaseField`.
++  `fieldId` is the ID of a single-select case field. You can use `status` or any custom single-select field.
 +  `targetFieldValues` is the value that the field must reach for the SLA to be met and only supports one value.
 
-```
+```json
 {
   "content": {
     "sla": {
@@ -206,7 +206,7 @@ Request:
 
 Request:
 
-```
+```json
 {
   "content": {
     "file": {
@@ -222,7 +222,7 @@ Request:
 
 Request to associate a customer contact with a case:
 
-```
+```json
 {
   "content": {
     "contact": {
@@ -241,7 +241,7 @@ Request to associate a custom defined related item with a case:
 **Note**
  [System case fields](https://docs.aws.amazon.com/connect/latest/adminguide/case-fields.html#system-case-fields) cannot be used in a custom related item.
 
-```
+```json
 {
   "content": {
     "custom": {
@@ -270,7 +270,7 @@ Request to associate a custom defined related item with a case:
 
 Request to associate another Connect Customer case with a case:
 
-```
+```json
 {
   "content": {
     "connectCase": {
@@ -286,7 +286,7 @@ Request to associate another Connect Customer case with a case:
 
 All successful CreateRelatedItem requests return the same response structure:
 
-```
+```json
 {
   "relatedItemArn": "arn:aws:cases:us-west-2:[account_id]:domain/[domain_id]/case/[case_id]/related-item/[related_item_id]",
   "relatedItemId": "[related_item_id]"

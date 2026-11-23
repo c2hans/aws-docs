@@ -230,7 +230,7 @@ The following example shows an IAM policy designed for standard `SecureString` p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -261,7 +261,7 @@ The next example shows an IAM policy that is designed for advanced `SecureString
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -292,7 +292,7 @@ The final example also shows an IAM policy that can be used for standard or adva
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -360,7 +360,7 @@ Before using a policy statement like this one, replace the {{example ARNs}} with
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

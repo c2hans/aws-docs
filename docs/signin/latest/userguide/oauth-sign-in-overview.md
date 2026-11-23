@@ -11,7 +11,7 @@ With AWS Sign-In industry-standard OAuth 2.0 support, agents and applications ca
 
 OAuth integrates with your existing AWS identities and authorization model. Applications obtain short-lived OAuth tokens through AWS Sign-In. OAuth tokens work with your existing IAM identities, policies, service control policies (SCPs), resource control policies (RCPs), and other AWS authorization controls. OAuth introduces a standards-based authorization model without changing how access to AWS resources is governed.
 
-With AWS Sign-In, you can authorize applications through a browser (interactive), or applications with existing AWS credentials can obtain OAuth access tokens programmatically (non-interactive).
+With AWS Sign-In, you can authorize applications interactively, programmatically, or through enterprise-managed authorization controlled by your organization's existing identity provider policies. For more information, see [Authorization models](#oauth-sign-in-authorization-models).
 
 ## Supported capabilities
 <a name="oauth-sign-in-capabilities"></a>
@@ -89,6 +89,15 @@ The token exchange grant issues only access tokens (no refresh tokens). Request 
 
 For a walkthrough of connecting an external integration partner using token exchange, see [Configure OAuth access to AWS Glue Iceberg REST Catalog](configure-oauth-glue-iceberg-rest.md).
 
+#### Enterprise-managed authorization
+<a name="oauth-sign-in-non-interactive-ema"></a>
+
+With enterprise-managed authorization (EMA), organizations can authorize AI agents and applications through their existing enterprise identity providers, such as Okta, without requiring additional interactive authorization. EMA uses the Identity Assertion JSON Web Token (JWT) Authorization Grant (ID-JAG) so enterprise identity providers can evaluate access policies and issue short-lived, signed assertions for approved applications and resources.
+
+Applications exchange these assertions at the AWS Sign-In OAuth token endpoint for short-lived OAuth access tokens associated with IAM roles. Enterprise identity provider policies control which applications can request access, while IAM permissions govern the AWS operations those applications can perform.
+
+For setup steps for the identity provider and for each agent, see [Enterprise-managed authorization](enterprise-managed-authorization.md).
+
 ## Security model
 <a name="oauth-sign-in-security-model"></a>
 
@@ -124,6 +133,7 @@ Use this regional endpoint for the OAuth flow at `https://{region}.oauth.signin.
 ## Related topics
 <a name="oauth-sign-in-related"></a>
 + [AWS MCP Server](aws-mcp-server.md)
++ [Enterprise-managed authorization](enterprise-managed-authorization.md)
 + [OAuth condition keys](reference-signin-condition-keys.md#reference-signin-condition-keys-oauth)
 + [AWS Sign-In API Reference](https://docs.aws.amazon.com/signin/latest/APIReference/API_Operations.html)
 + [Actions, resources, and condition keys for AWS Sign-In](https://docs.aws.amazon.com/service-authorization/latest/reference/list_signin.html)

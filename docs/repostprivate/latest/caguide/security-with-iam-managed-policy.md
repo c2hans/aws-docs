@@ -27,7 +27,7 @@ This policy allows the AWS re:Post Private service to create, manage, and resolv
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -60,7 +60,7 @@ This policy allows the re:Post Private service to publish data to CloudWatch.
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

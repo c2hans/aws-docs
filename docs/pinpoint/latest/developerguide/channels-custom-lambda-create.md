@@ -15,7 +15,7 @@ For an introduction to creating Lambda functions, see [Building Lambda functions
 
 The following code example processes the payload and logs the number of endpoints of each endpoint type in CloudWatch.
 
-```
+```python
 import boto3
 import random
 import pprint

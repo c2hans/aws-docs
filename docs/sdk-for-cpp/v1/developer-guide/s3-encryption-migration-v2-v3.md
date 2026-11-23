@@ -82,13 +82,13 @@ If your application uses [Vcpkg](https://github.com/microsoft/vcpkg) to track SD
 
 You can run the following command to upgrade package `aws-sdk-cpp`:
 
-```
+```cpp
 vcpkg upgrade aws-sdk-cpp
 ```
 
 And verify the version of package `aws-sdk-cpp`:
 
-```
+```cpp
 vcpkg list aws-sdk-cpp
 ```
 
@@ -122,7 +122,7 @@ V3 introduces the `S3EncryptionClientV3` class and `CryptoConfigurationV3` to re
 
  *Pre-migration (V2)*
 
-```
+```cpp
 // Create encryption materials
 auto materials = Aws::MakeShared<KMSWithContextEncryptionMaterials>("s3EncryptionV2", CUSTOMER_MASTER_KEY_ID);
 
@@ -154,7 +154,7 @@ auto getOutcome = encryptionClient.GetObject(getObjectRequest, encryptionContext
 
  *During migration (V3 with backward compatibility)*
 
-```
+```cpp
 // Create encryption materials
 auto materials = Aws::MakeShared<KMSWithContextEncryptionMaterials>("s3EncryptionV3", CUSTOMER_MASTER_KEY_ID);
 
@@ -190,7 +190,7 @@ auto getOutcome = encryptionClient.GetObject(getObjectRequest, encryptionContext
 
  *Post-migration (V3 with key commitment)*
 
-```
+```cpp
 // Create encryption materials
 auto materials = Aws::MakeShared<KMSWithContextEncryptionMaterials>("s3EncryptionV3", CUSTOMER_MASTER_KEY_ID);
 
@@ -244,7 +244,7 @@ Legacy support should only be enabled temporarily during migration. Once all V1 
 
 **Example: Enabling Legacy Support**
 
-```
+```cpp
 // Create encryption materials
 auto materials = Aws::MakeShared<KMSWithContextEncryptionMaterials>("s3EncryptionV3", CUSTOMER_MASTER_KEY_ID);
 
@@ -286,7 +286,7 @@ Encryption metadata is stored in a separate S3 object (the Instruction File) wit
 
 **Example: Configuring Storage Method**
 
-```
+```cpp
 // Create encryption materials
 auto materials = Aws::MakeShared<KMSWithContextEncryptionMaterials>("s3EncryptionV3", CUSTOMER_MASTER_KEY_ID);
 

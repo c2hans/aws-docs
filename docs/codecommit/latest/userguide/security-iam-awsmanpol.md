@@ -34,7 +34,7 @@ The AWSCodeCommitFullAccess policy contains the following policy statement:
 
 ****
 
-```
+```json
     {
       "Version":"2012-10-17",
       "Statement": [
@@ -245,7 +245,7 @@ The AWSCodeCommitPowerUser policy contains the following policy statement:
 
 ****
 
-```
+```json
     {
       "Version":"2012-10-17",
       "Statement": [
@@ -465,7 +465,7 @@ The AWSCodeCommitReadOnly policy contains the following policy statement:
 
 ****
 
-```
+```json
     {
        "Version":"2012-10-17",
        "Statement":[

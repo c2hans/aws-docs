@@ -39,7 +39,7 @@ Bucket-level actions, such as `GetBucketCors` and `GetBucketLocation`, should be
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -82,7 +82,7 @@ Admins must also turn off **Block all public access** under the bucket **Permiss
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -138,7 +138,7 @@ The following procedure shows you how to grant the necessary permissions so that
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -190,7 +190,7 @@ The following procedure shows you how to grant the necessary permissions so that
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -225,7 +225,7 @@ The following procedure shows you how to grant the necessary permissions so that
 
    The following example is a key policy that you attach to the KMS key `s3KmsInAccountA` in Account A to grant `roleB` access. For more information about how to create and attach a key policy statement, see [Creating a key policy](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-overview.html) in the *AWS KMS Developer Guide*.
 
-   ```
+   ```json
    {
      "Sid": "Allow use of the key",
      "Effect": "Allow",

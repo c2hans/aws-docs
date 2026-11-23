@@ -12,7 +12,7 @@ The toolkit's deployment wizard focuses on deploying a single project. To take a
 
 The deployment section in the manifest has two children: an array of ASP.NET Core web applications to deploy, and an array of msdeploy archives to deploy. For each application, you set the IIS path and the location of the application’s bits relative to the manifest.
 
-```
+```json
 {
   "manifestVersion": 1,
   "deployments": {
@@ -50,7 +50,7 @@ With the manifest written, you’ll use Windows PowerShell to create the applica
 
 The first thing you need to do in the script is setup a workspace folder in which to create the application bundle.
 
-```
+```ps1con
 $publishFolder = "c:\temp\publish"
 
 $publishWorkspace = [System.IO.Path]::Combine($publishFolder, "workspace")
@@ -66,7 +66,7 @@ If (Test-Path $appBundle){
 
 Once you've created the folder, it is time to get the frontend ready. As with the deployment wizard, use the dotnet CLI to publish the application.
 
-```
+```ps1con
 Write-Host 'Publish the ASP.NET Core frontend'
 $publishFrontendFolder = [System.IO.Path]::Combine($publishWorkspace, "frontend")
 dotnet publish .\src\AmazingFrontend\project.json -o $publishFrontendFolder -c Release -f netcoreapp1.0
@@ -74,7 +74,7 @@ dotnet publish .\src\AmazingFrontend\project.json -o $publishFrontendFolder -c R
 
 Notice that the subfolder "frontend" was used for the output folder, matching the folder you set in the manifest. Now you need to do the same for the Web API project.
 
-```
+```ps1con
 Write-Host 'Publish the ASP.NET Core extensibility API'
 $publishExtAPIFolder = [System.IO.Path]::Combine($publishWorkspace, "ext-api")
 dotnet publish .\src\AmazingExtensibleAPI\project.json -o $publishExtAPIFolder -c Release -f netcoreapp1.0
@@ -82,7 +82,7 @@ dotnet publish .\src\AmazingExtensibleAPI\project.json -o $publishExtAPIFolder -
 
 The admin site is a traditional ASP.NET application, so you can't use the dotnet CLI. For the admin application, you should use msbuild, passing in the build target package to create the msdeploy archive. By default the package target creates the msdeploy archive under the `obj\Release\Package` folder, so you will need to copy the archive to the publish workspace.
 
-```
+```ps1con
 Write-Host 'Create msdeploy archive for admin site'
 msbuild .\src\AmazingAdmin\AmazingAdmin.csproj /t:package /p:Configuration=Release
 Copy-Item .\src\AmazingAdmin\obj\Release\Package\AmazingAdmin.zip $publishWorkspace
@@ -90,7 +90,7 @@ Copy-Item .\src\AmazingAdmin\obj\Release\Package\AmazingAdmin.zip $publishWorksp
 
 To tell the Elastic Beanstalk environment what to do with all these applications, copy the manifest from your solution to the publish workspace and then zip up the folder.
 
-```
+```ps1con
 Write-Host 'Copy deployment manifest'
 Copy-Item .\aws-windows-deployment-manifest.json $publishWorkspace
 
@@ -101,7 +101,7 @@ Add-Type -assembly "system.io.compression.filesystem"
 
 Now that you have the application bundle, you could go to the web console and upload the archive to a Elastic Beanstalk environment. Alternatively, you can continue to use the AWS PowerShell cmdlets to update the Elastic Beanstalk environment with the application bundle. Make sure you have set the current profile and region to the profile and region that contains your Elastic Beanstalk environment by using `Set-AWSCredentials` and `Set-DefaultAWSRegion` cmdlets.
 
-```
+```ps1con
 Write-Host 'Write application bundle to S3'
 # Determine S3 bucket to store application bundle
 $s3Bucket = New-EBStorageLocation

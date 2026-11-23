@@ -21,7 +21,7 @@ The `IIoHost` interface consists of two primary methods:
 
 1.  `requestResponse`: Handles interactive requests that require a response.
 
-```
+```typescript
 import { IoMessage, IoRequest } from '@aws-cdk/toolkit-lib';
 
 interface IIoHost {
@@ -59,7 +59,7 @@ The CDK Toolkit sends requests when it needs input or confirmation from the user
 
 Here’s a simple example of implementing a custom io host:
 
-```
+```typescript
 import { Toolkit } from '@aws-cdk/toolkit-lib';
 
 // Create a toolkit with custom message handling
@@ -125,7 +125,7 @@ For more complex scenarios, we recommend extending the `NonInteractiveIoHost` cl
 
 Here’s an example of a custom io host that extends the base implementation:
 
-```
+```typescript
 import { NonInteractiveIoHost } from '@aws-cdk/toolkit-lib';
 
 class MyCustomIoHost extends NonInteractiveIoHost {
@@ -165,7 +165,7 @@ This approach is more maintainable than implementing the entire `IIoHost` interf
 ### Web application integration
 <a name="_web_application_integration"></a>
 
-```
+```typescript
 import { Toolkit } from '@aws-cdk/toolkit-lib';
 
 // Example for integrating with a web application
@@ -209,7 +209,7 @@ const toolkit = new Toolkit({
 ### CI/CD environment integration
 <a name="_cicd_environment_integration"></a>
 
-```
+```typescript
 import { Toolkit } from '@aws-cdk/toolkit-lib';
 
 // Example for CI/CD environments (non-interactive)
@@ -250,7 +250,7 @@ When implementing a custom io host, consider these best practices:
 
 The following example demonstrates these best practices by implementing a custom io host with error handling, timeouts for user interactions, and proper logging. This implementation is suitable for interactive applications where you need to balance user responsiveness with reliable operation:
 
-```
+```typescript
 import { Toolkit } from '@aws-cdk/toolkit-lib';
 
 // Example with error handling and timeouts
@@ -294,7 +294,7 @@ Considerations when implementing a custom io host:
 
 The following example demonstrates a robust approach to handling message levels, including graceful handling of unknown message types that might be introduced in future CDK versions. This implementation ensures your io host remains compatible with CDK updates while maintaining proper logging:
 
-```
+```typescript
 import { Toolkit } from '@aws-cdk/toolkit-lib';
 
 // Example of handling unknown message levels

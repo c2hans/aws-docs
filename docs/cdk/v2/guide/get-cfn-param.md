@@ -18,31 +18,31 @@ You can define parameters in any scope. However, we recommend defining parameter
 
 **Example**
 
-```
+```javascript
 const uploadBucketName = new CfnParameter(this, "uploadBucketName", {
   type: "String",
   description: "The name of the Amazon S3 bucket where uploaded files will be stored."});
 ```
 
-```
+```javascript
 const uploadBucketName = new CfnParameter(this, "uploadBucketName", {
   type: "String",
   description: "The name of the Amazon S3 bucket where uploaded files will be stored."});
 ```
 
-```
+```python
 upload_bucket_name = CfnParameter(self, "uploadBucketName", type="String",
     description="The name of the Amazon S3 bucket where uploaded files will be stored.")
 ```
 
-```
+```java
 CfnParameter uploadBucketName = CfnParameter.Builder.create(this, "uploadBucketName")
         .type("String")
         .description("The name of the Amazon S3 bucket where uploaded files will be stored")
         .build();
 ```
 
-```
+```csharp
 var uploadBucketName = new CfnParameter(this, "uploadBucketName", new CfnParameterProps
 {
     Type = "String",
@@ -98,28 +98,28 @@ For example, to use a parameter in a `Bucket` definition:
 
 **Example**
 
-```
+```javascript
 const bucket = new Bucket(this, "amzn-s3-demo-bucket",
   { bucketName: uploadBucketName.valueAsString});
 ```
 
-```
+```javascript
 const bucket = new Bucket(this, "amzn-s3-demo-bucket",
   { bucketName: uploadBucketName.valueAsString});
 ```
 
-```
+```python
 bucket = Bucket(self, "amzn-s3-demo-bucket",
     bucket_name=upload_bucket_name.value_as_string)
 ```
 
-```
+```java
 Bucket bucket = Bucket.Builder.create(this, "amzn-s3-demo-bucket")
         .bucketName(uploadBucketName.getValueAsString())
         .build();
 ```
 
-```
+```csharp
 var bucket = new Bucket(this, "amzn-s3-demo-bucket")
 {
     BucketName = uploadBucketName.ValueAsString
@@ -155,7 +155,7 @@ $ cdk deploy --parameters <uploadBucketName>=<uploadbucket>
 
 The following is an example CDK application in TypeScript that contains two CDK stacks. Each stack contains an Amazon S3 bucket instance and a parameter to set the Amazon S3 bucket name:
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as s3 from 'aws-cdk-lib/aws-s3';

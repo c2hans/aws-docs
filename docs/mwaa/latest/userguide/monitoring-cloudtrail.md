@@ -61,7 +61,7 @@ The following example is a `CheckAuthorization` log entry for an authorization c
 + `requestParameters` shows the Apache Airflow resource and action that Amazon MWAA checked. Optional elements, such as `ResourceId`, `DagAccessEntity`, and `TeamNames`, appear only when the check includes them.
 + `sourceIPAddress` and `userAgent` belong to the Amazon MWAA web server that makes the call, not to the user's browser. The source IP address is the web server's NAT gateway IP address, and the user agent is the web server's HTTP client.
 
-```
+```json
 {
   "eventVersion": "1.11",
   "userIdentity": {
@@ -127,7 +127,7 @@ The following example is a `CheckAuthorization` log entry for an authorization c
 
 If the user's Permission Set doesn't allow the action, CloudTrail records the call as denied. A denied `CheckAuthorization` event doesn't contain `Decision`. Instead, it contains an `errorCode` element, and the `responseElements` element contains the IAM error message. The following example shows the elements that differ from the previous example:
 
-```
+```json
 {
   "eventName": "CheckAuthorization",
   "errorCode": "AccessDenied",
@@ -170,7 +170,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 CloudTrail log files contain one or more log entries. An event represents a single request from any source and includes information about the requested action, such as the date and time of the action, or request parameters. CloudTrail log files are not an ordered stack trace of the public API calls, and aren't listed in any specific order. The following example is a log entry for the `CreateEnvironment` action that is denied due to lacking permissions. The values in `AirflowConfigurationOptions` have been redacted for privacy.
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -236,7 +236,7 @@ The following is a complete log entry example for the `InvokeRestApi` action. Cl
 **Use temporary credentials in production**
 This example shows temporary credentials from an assumed role, which is the recommended approach. For production workloads, use temporary credentials from or AWS Security Token Service (AWS STS) instead of long-term access keys.
 
-```
+```json
 {
   "eventVersion": "1.09",
   "userIdentity": {

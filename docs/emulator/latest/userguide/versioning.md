@@ -23,7 +23,7 @@ We aim to keep breaking changes rare, so that your tests keep working when you u
 
 To see your version, run the following command.
 
-```
+```bash
 aws-emulator -v
 ```
 

@@ -221,7 +221,7 @@ If you experience any of the following symptoms, set the S3A read policy to `seq
 
 Specify the following configuration when you create your cluster:
 
-```
+```json
 [
   {
     "Classification": "hbase-site",
@@ -244,7 +244,7 @@ If you need to improve only bulk load performance without changing the cluster-w
 
 To use the sequential read policy for a single bulk load operation:
 
-```
+```bash
 sudo -u hbase hbase completebulkload \
   -Dfs.s3a.experimental.input.fadvise=sequential \
   s3://amzn-s3-demo-bucket/path/to/hfiles table_name
@@ -252,7 +252,7 @@ sudo -u hbase hbase completebulkload \
 
 Alternatively, you can use EMRFS for the bulk load operation:
 
-```
+```bash
 sudo -u hbase hbase completebulkload \
   -Dfs.s3.impl=com.amazon.ws.emr.hadoop.fs.EmrFileSystem \
   s3://amzn-s3-demo-bucket/path/to/hfiles table_name

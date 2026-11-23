@@ -72,7 +72,7 @@ nitro-cli describe-enclaves
 
 **Output**
 
-```
+```json
 [
     {
         "EnclaveName": "my_enclave",

@@ -66,7 +66,7 @@ Since users can create their clusters with any networking configuration they lik
 
 This means that in order to create nodegroups or managed nodegroups on a cluster which was not created by `eksctl`, a config file containing VPC details must be provided. At a minimum:
 
-```
+```yaml
 ---
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig

@@ -50,7 +50,7 @@ This section provides examples you can follow to create target filters for Cloud
 
 To create a basic target filter that focuses on specific resource types, use the `TargetFilters` object with the `Actions` array. The following target filter configuration will invoke the Hook on all `Create`, `Update`, and `Delete` actions for the specified target operations (in this case, both `RESOURCE` and `STACK` operations).
 
-```
+```json
 {
   "CloudFormationConfiguration": {
     "HookConfiguration": {
@@ -78,7 +78,7 @@ To create a basic target filter that focuses on specific resource types, use the
 
 For more advanced filters, you can use the `Targets` object array to list specific target, action, and invocation point combinations. This following target filter configuration will invoke the Hook before `CREATE` and `UPDATE` actions on S3 buckets and DynamoDB tables. It applies to both `STACK` and `RESOURCE` operations.
 
-```
+```json
 {
   "CloudFormationConfiguration": {
     "HookConfiguration": {

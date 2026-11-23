@@ -21,7 +21,7 @@ Represents an Amazon MSK cluster.
 
 Returns a description of the MSK cluster whose Amazon Resource Name (ARN) is specified in the request. The following is a Python 3.6 example of how to use this operation. Before you run this Python script, replace the example cluster Amazon Resource Name (ARN) with the ARN of the cluster you want to describe. If you don't know the ARN of the cluster, you can use the `ListClusters` operation to list all the clusters and see their ARNs and full descriptions.
 
-```
+```PYTHON
 import boto3
 
 client = boto3.client('kafka')
@@ -112,7 +112,7 @@ Enable CORS by returning the correct headers.
 #### DescribeClusterResponse schema
 <a name="clusters-clusterarn-response-body-describeclusterresponse-example"></a>
 
-```
+```json
 {
   "clusterInfo": {
     "encryptionInfo": {
@@ -261,7 +261,7 @@ Enable CORS by returning the correct headers.
 #### DeleteClusterResponse schema
 <a name="clusters-clusterarn-response-body-deleteclusterresponse-example"></a>
 
-```
+```json
 {
   "clusterArn": "string",
   "state": enum
@@ -271,7 +271,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="clusters-clusterarn-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

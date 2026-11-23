@@ -15,7 +15,7 @@ The following example allows the principal `arn:aws:iam::111111111111:role/Admin
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":[

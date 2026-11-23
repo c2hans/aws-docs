@@ -8,7 +8,7 @@ The [gui\_control\_showcase job bundle](https://github.com/aws-deadline/deadline
 
 Open the GUI submitter to see every control:
 
-```
+```bash
 deadline bundle gui-submit job_bundles/gui_control_showcase
 ```
 

@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-lam
 
 1.  Save `myDateTimeFunction.js`. It should look like the following:
 
-   ```
+   ```java
    'use strict';
 
    exports.handler = function(event, context, callback) {

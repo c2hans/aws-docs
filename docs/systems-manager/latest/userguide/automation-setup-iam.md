@@ -52,7 +52,7 @@ The following example shows how you can use the `aws:SourceArn` and `aws:SourceA
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -123,7 +123,7 @@ If you run an automation that invokes other AWS services by using an IAM service
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -148,7 +148,7 @@ If you run an automation that invokes other AWS services by using an IAM service
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[

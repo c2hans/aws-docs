@@ -51,7 +51,7 @@ The following procedure walks you through how to set up a multiplexed tunnel for
 
    Running this command generates the source and destination access tokens which you'll use to run the local proxy.
 
-   ```
+   ```JSON
    {
    	"tunnelId": "{{b2de92a3-b8ff-46c0-b0f2-afa28b00cecd}}",
    	"tunnelArn": "arn:aws:iot:{{us-west-2}}:{{431600097591}}:tunnel/{{b2de92a3-b8ff-46c0-b0f2-afa28b00cecd}}",
@@ -88,7 +88,7 @@ On your source device, if you don't use any configuration files or specify the p
 
    Run the following commands to run the local proxy in the source and destination modes by specifying the port mappings explicitly using the CLI.
 
-   ```
+   ```bash
    // ----------------- Start the destination local proxy -----------------------------------
    ./localproxy -r {{us-east-1}} -d HTTP1={{80}},SSH1={{22}} -t {{destination_client_access_token}}
 

@@ -34,7 +34,7 @@ After you create your Amazon RDS for PostgreSQL database, configure a new databa
 
 You can use the following code example to create a database user with the required permissions.
 
-```
+```sql
 CREATE USER your_user WITH LOGIN PASSWORD 'your_password';
 GRANT USAGE ON SCHEMA schema_name TO your_user;
 GRANT CONNECT ON DATABASE db_name to your_user;

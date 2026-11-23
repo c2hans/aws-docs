@@ -83,7 +83,7 @@ To create a forward action that distributes traffic between two target groups, u
 **To create an HTTP listener**
 Define a resource of type [AWS::ElasticLoadBalancingV2::Listener](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-listener.html). The following example creates an HTTP listener with a default rule that forwards traffic to the specified target group.
 
-```
+```yaml
 Resources:
   myHTTPlistener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
@@ -98,7 +98,7 @@ Resources:
 
 To create a forward action that distributes traffic between multiple target groups, use the `ForwardConfig` property. When specifying multiple target groups, you must provide a weight for each target group.
 
-```
+```yaml
 Resources:
   myHTTPlistener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'

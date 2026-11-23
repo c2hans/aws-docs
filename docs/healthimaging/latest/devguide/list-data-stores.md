@@ -23,7 +23,7 @@ Choose a menu based on your access preference to AWS HealthImaging.
 
 **AWS CLI with Bash script**
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -124,7 +124,7 @@ Output:
 
 **SDK for Java 2.x**
 
-```
+```java
     public static List<DatastoreSummary> listMedicalImagingDatastores(MedicalImagingClient medicalImagingClient) {
         try {
             ListDatastoresRequest datastoreRequest = ListDatastoresRequest.builder()
@@ -151,7 +151,7 @@ Output:
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { paginateListDatastores } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -206,7 +206,7 @@ export const listDatastores = async () => {
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -235,7 +235,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -247,7 +247,7 @@ The following code instantiates the MedicalImagingWrapper object.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         oo_result = lo_mig->listdatastores( ).
         DATA(lt_datastores) = oo_result->get_datastoresummaries( ).

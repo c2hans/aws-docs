@@ -16,13 +16,21 @@ Valid Values: `AWS | Sandbox`
 Required: Yes
 
  ** CreatedAfter **
-Filter results to only include marketplace revenue shares created after this timestamp.
+Filters results to marketplace revenue shares created at or after this timestamp (inclusive).
 Type: Timestamp
 Required: No
 
  ** CreatedBefore **
-Filter results to only include marketplace revenue shares created before this timestamp.
+Filters results to marketplace revenue shares created before this timestamp (exclusive).
 Type: Timestamp
+Required: No
+
+ ** Identifiers **
+Filters results to the specified marketplace revenue shares, by ID or ARN. Specify 1 to 100 identifiers. When you specify multiple filters, a marketplace revenue share must match all of them.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 100 items.
+Length Constraints: Minimum length of 17. Maximum length of 1011.
+Pattern: `(arn:[a-z-]+:partnercentral:[a-z0-9-]+:[0-9]{12}:catalog/[a-zA-Z]+/marketplace-revenue-share/mrs-[a-z0-9]{13}|mrs-[a-z0-9]{13})`
 Required: No
 
  ** MaxResults **
@@ -39,17 +47,19 @@ Pattern: `[\S]+`
 Required: No
 
  ** ProductCodes **
-Filter results to only include shares with these product codes.
+Filters results to marketplace revenue shares that contain an AWS Marketplace product with any of the specified product codes. Specify 1 to 10 product codes.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[A-Za-z0-9]+`
 Required: No
 
  ** ProductIds **
-Filter results to only include shares with these product identifiers.
+Filters results to marketplace revenue shares that contain any of the specified AWS Marketplace products. Specify 1 to 10 AWS Marketplace product IDs or product ARNs. Only marketplace revenue shares that you own are returned.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
-Length Constraints: Fixed length of 18.
-Pattern: `prod-[a-z0-9]{13}`
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\w\-:/.]+`
 Required: No
 
  ** SortBy **
@@ -86,16 +96,30 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 The request was denied due to insufficient permissions.
+ ** Message **
+A message that describes why access was denied.
  ** Reason **
 The reason for the access denial.
 HTTP Status Code: 403
 
  ** InternalServerException **
 An internal server error occurred. Retry your request.
+ ** Message **
+A message that describes the internal server error.
 HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The specified resource was not found.
+ ** Message **
+A message that describes which resource was not found.
+ ** Reason **
+The reason the resource was not found.
+HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was throttled due to too many requests. Retry your request.
+ ** Message **
+A message that indicates the request rate limit was exceeded.
  ** QuotaCode **
 The quota code associated with the throttling error.
  ** ServiceCode **
@@ -106,6 +130,8 @@ HTTP Status Code: 429
 The request failed validation due to invalid input parameters.
  ** FieldList **
 A list of fields that failed validation.
+ ** Message **
+A message that describes the validation failure.
  ** Reason **
 The reason for the validation failure.
 HTTP Status Code: 400

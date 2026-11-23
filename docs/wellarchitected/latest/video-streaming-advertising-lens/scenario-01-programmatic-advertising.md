@@ -21,6 +21,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
 ![Ad serving architecture on AWS showing the publisher ad request path through SSP, ad exchange, and supporting data stores connected through AWS RTB Fabric, with Kinesis for event capture, ElastiCache for user profiles, and DynamoDB for campaign data](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-01a-ad-serving.jpg)
 
+*Ad serving architecture on AWS*
+
  The architecture consists of the following components:
 
 1.  **Publisher ad request**: A viewer loads a page or starts a video stream. The publisher's ad server detects an ad opportunity and initiates a programmatic auction.
@@ -49,6 +51,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
 ![Realtime bidder architecture on AWS showing the DSP bid evaluation tier on Compute Optimized EC2 or EKS with Karpenter, colocated ElastiCache for sub-millisecond reads, and AWS RTB Fabric Managed Endpoints routing bid traffic directly to bidder pod IPs](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-01b-realtime-bidder.jpg)
 
+*Realtime bidder architecture on AWS*
+
  Deploy bid evaluation on Compute Optimized EC2 instances (C7i Intel, C7g Graviton) with ElastiCache Redis colocate in the same Availability Zone. Implement fast-fail patterns with no exponential backoff on the bid path. Use AWS RTB Fabric for partner connectivity to replace per-GB NAT Gateway charges with per-transaction pricing.
 
  Use AWS RTB Fabric Managed Endpoints to route bid traffic directly from responder gateways to individual bidder pod IPs on EKS, removing the NLB and ingress controller layers from the critical path. This reduces network hops and avoids TCP-level head-of-line blocking risk from intermediate load balancers.
@@ -62,6 +66,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 <a name="traffic-filtering"></a><a name="scenario-01-fig3"></a>
 
 ![AdTech private network on AWS showing the AWS RTB Fabric connecting SSP and DSP partners over a purpose-built private network with OpenRTB Filter and Rate Limiter modules replacing public internet routing and NAT Gateway charges](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-01c-adtech-private-network.jpg)
+
+*AdTech private network on AWS*
 
  Configure RTB Fabric OpenRTB Filter to reject malformed requests, unsupported protocols, and floor-price-mismatched inventory at the network layer before they consume application compute. Build per-DSP bid rate profiles segmented by inventory type, geo, device type, and time of day. Suppress low-probability requests before sending using holdback-tested filter rules.
 

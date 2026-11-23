@@ -15,6 +15,6 @@ If your AWS CDK application uses functions with the image type, run `cdk synth` 
 
 Running the following command from the AWS CDK project root directory builds the application.
 
-```
+```bash
 $ sam build -t <./cdk.out/CdkSamExampleStack.template.json>
 ```

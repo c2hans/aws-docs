@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/bitbucket-web
 +  The second filter group specifies push requests are created on branches with Git reference names that match the regular expression `^refs/heads/.*`.
 + The third filter group specifies a push request with a head commit message matching the regular expression `\[CodeBuild\]`.
 
-```
+```yaml
 CodeBuildProject:
   Type: AWS::CodeBuild::Project
   Properties:

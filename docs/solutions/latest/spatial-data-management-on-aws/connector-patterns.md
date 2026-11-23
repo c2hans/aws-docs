@@ -24,7 +24,7 @@ An Amazon SageMaker asynchronous inference endpoint suits models that take minut
 
 The following connector runs a segmentation model on each uploaded `.las` file. It ingests the model’s output point cloud as a derived file and records the model’s summary on the source file.
 
-```
+```json
 {
   "schemaVersion": "1.0.0",
   "name": "Point cloud segmentation (SageMaker async)",
@@ -172,7 +172,7 @@ The following example analyzes a point cloud in five stages. Stage 1 has a `file
 | 4. Instance segmentation | SageMaker asynchronous endpoint |  `vegetation.laz`  | An instance point cloud, one ID for each object |
 | 5. Fusion | AWS Deadline Cloud | The instance point cloud | A report that combines stages 1 and 4 with terrain data from another connector |
 
-```
+```text
 upload .las ──> 1 segmentation ──> 2 conversion ──> 3 filter ──> 4 instances ──> 5 fusion
                      │                 │                │              │              │
                      └─────────────────┴── derived files of the .las ──┴──────────────┘
@@ -194,7 +194,7 @@ An AWS Deadline Cloud job receives these without extra configuration. SDMA attac
 
 Find the other inputs by name or pattern, not by a fixed path. The layout of derived files on the worker is not part of the connector contract, so a path that works today might not work after an update. For example, a job script can search the staged files:
 
-```
+```python
 import subprocess
 
 def find(pattern):
@@ -221,7 +221,7 @@ Training is long-running work that consumes one asset, a dataset, and produces a
 
 The following connector starts an Amazon SageMaker pipeline on a dataset asset that the caller names. The pipeline writes the trained model’s files and a completion summary to Amazon S3. When the summary appears, SDMA creates the model asset. For more information about pipelines, see [Pipelines](https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines.html) in the *Amazon SageMaker AI Developer Guide*.
 
-```
+```json
 {
   "schemaVersion": "1.0.0",
   "name": "Train a model",

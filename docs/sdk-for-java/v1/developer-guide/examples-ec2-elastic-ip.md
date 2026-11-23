@@ -23,7 +23,7 @@ The returned [AllocateAddressResult](https://docs.aws.amazon.com/sdk-for-java/v1
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.AllocateAddressRequest;
@@ -35,7 +35,7 @@ import com.amazonaws.services.ec2.model.DomainType;
 
  **Code**
 
-```
+```java
 final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
 AllocateAddressRequest allocate_request = new AllocateAddressRequest()
@@ -64,7 +64,7 @@ To list the Elastic IP addresses assigned to your account, call the AmazonEC2Cli
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.Address;
@@ -73,7 +73,7 @@ import com.amazonaws.services.ec2.model.DescribeAddressesResult;
 
  **Code**
 
-```
+```java
 final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
 DescribeAddressesResult response = ec2.describeAddresses();
@@ -100,7 +100,7 @@ To release an Elastic IP address, call the AmazonEC2Client’s `releaseAddress` 
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.ReleaseAddressRequest;
@@ -109,7 +109,7 @@ import com.amazonaws.services.ec2.model.ReleaseAddressResult;
 
  **Code**
 
-```
+```java
 final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
 ReleaseAddressRequest request = new ReleaseAddressRequest()

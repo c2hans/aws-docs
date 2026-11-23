@@ -35,7 +35,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateApplication` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

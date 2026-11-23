@@ -38,7 +38,7 @@ If you haven't already enabled Application Signals, follow the instructions in [
 
    1. Select the check box for **Amazon CloudWatch Observability** and choose **Next**.
 
-      The CloudWatch Observability EKS add-on enables both Application Signals and CloudWatch Container Insights with enhanced observability for Amazon EKS. For more information about Container Insights, see [Container Insights](ContainerInsights.md).
+      The CloudWatch Observability EKS add-on enables both Application Signals and CloudWatch Container Insights with enhanced observability for Amazon EKS. For more information about Container Insights, see [Container Insights for Amazon EKS](ContainerInsights.md).
 
    1. Select the most recent version of the add-on to install.
 

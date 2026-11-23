@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```JSON
 "AwsEfsAccessPoint": {
 	"AccessPointId": "fsap-05c4c0e79ba0b118a",
 	"Arn": "arn:aws:elasticfilesystem:us-east-1:863155670886:access-point/fsap-05c4c0e79ba0b118a",

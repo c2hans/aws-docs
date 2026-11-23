@@ -28,7 +28,7 @@ For more information, see [Best practices: moving a cluster to a new AWS Paralle
 
 The format is `[fsx {{fsx-name}}]`. {{fsx-name}} must start with a letter, contain no more than 30 characters, and only contain letters, numbers, hyphens (-), and underscores (\_).
 
-```
+```ini
 [fsx fs]
 shared_dir = /fsx
 fsx_fs_id = {{fs-073c3803dca3e28a6}}
@@ -36,7 +36,7 @@ fsx_fs_id = {{fs-073c3803dca3e28a6}}
 
 To create and configure a new file system, use the following parameters:
 
-```
+```ini
 [fsx fs]
 shared_dir = /fsx
 storage_capacity = 3600
@@ -81,7 +81,7 @@ This corresponds to the [AutoImportPolicy](https://docs.aws.amazon.com/AWSCloudF
 
 If the `auto_import_policy` setting isn't specified, automatic imports are disabled. FSx for Lustre only updates file and directory listings from the linked S3 bucket when the file system is created.
 
-```
+```ini
 auto_import_policy = NEW_CHANGED
 ```
 
@@ -97,7 +97,7 @@ Support for [`auto_import_policy`](#fsx-auto-import-policy) was added in AWS Par
 
 The default value is 0. This setting disables automatic backups. The possible values are integers between 0 and 35, inclusive.
 
-```
+```ini
 automatic_backup_retention_days = 35
 ```
 
@@ -113,7 +113,7 @@ Support for [`automatic_backup_retention_days`](#fsx-automatic-backup-retention-
 
 The default value is `false`.
 
-```
+```ini
 copy_tags_to_backups = true
 ```
 
@@ -129,7 +129,7 @@ Support for [`copy_tags_to_backups`](#fsx-copy-tags-to-backups) was added in AWS
 
 The format is `HH:MM`, where `HH` is the zero-padded hour of the day (0-23), and `MM` is the zero-padded minute of the hour. For example, 1:03 A.M. UTC is the following.
 
-```
+```ini
 daily_automatic_backup_start_time = 01:03
 ```
 
@@ -147,7 +147,7 @@ Support for [`daily_automatic_backup_start_time`](#fsx-daily-automatic-backup-st
 
 The only valid value is `LZ4`. To disable data compression, remove the [`data_compression_type`](#fsx-data-compression-type) parameter.
 
-```
+```ini
 data_compression_type = LZ4
 ```
 
@@ -174,7 +174,7 @@ Designed for longer-term storage. The file servers are highly available and the 
 
 The default value is `SCRATCH_1`.
 
-```
+```ini
 deployment_type = SCRATCH_2
 ```
 
@@ -190,7 +190,7 @@ Support for [`deployment_type`](#fsx-deployment-type) was added in AWS ParallelC
 
 The only valid value is `READ`. To disable the SSD drive cache, don’t specify the `drive_cache_type` setting.
 
-```
+```ini
 drive_cache_type = READ
 ```
 
@@ -206,7 +206,7 @@ Support for [`drive_cache_type`](#fsx-drive-cache-type) was added in AWS Paralle
 
 The default value is `s3://{{import-bucket}}/FSxLustre{{[creation-timestamp]}}`, where `{{import-bucket}}` is the bucket provided in the [`import_path`](#fsx-import-path) parameter.
 
-```
+```ini
 export_path = s3://{{bucket/folder}}
 ```
 
@@ -219,7 +219,7 @@ export_path = s3://{{bucket/folder}}
 
 This corresponds to the [BackupId](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-backupid) property.
 
-```
+```ini
 fsx_backup_id = backup-fedcba98
 ```
 
@@ -235,7 +235,7 @@ Support for [`fsx_backup_id`](#fsx-backup-id) was added in AWS ParallelCluster v
 
 If this option is specified, only the [`shared_dir`](#fsx-shared-dir) and [`fsx_fs_id`](#fsx-fs-id) settings in the [`[fsx]` section](fsx-section.md) are used and any other settings in the [`[fsx]` section](fsx-section.md) are ignored.
 
-```
+```ini
 fsx_fs_id = fs-073c3803dca3e28a6
 ```
 
@@ -250,7 +250,7 @@ This key is used to encrypt the data in your file system at rest.
 
 This must be used with a custom [`ec2_iam_role`](cluster-definition.md#ec2-iam-role). For more information, see [Disk encryption with a custom KMS Key](tutorials_04_encrypted_kms_fs.md). This corresponds to the [KmsKeyId](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystem.html#FSx-CreateFileSystem-request-KmsKeyId) parameter in the *Amazon FSx API Reference*.
 
-```
+```ini
 fsx_kms_key_id = {{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}}
 ```
 
@@ -268,7 +268,7 @@ Import occurs on cluster creation. For more information, see [Importing data fro
 
 If a value isn't provided, the file system is empty.
 
-```
+```ini
 import_path =  s3://{{bucket}}
 ```
 
@@ -281,7 +281,7 @@ import_path =  s3://{{bucket}}
 
 The chunk size default is `1024` (1 GiB), and it can go as high as 512,000 MiB (500 GiB). Amazon S3 objects have a maximum size of 5 TB.
 
-```
+```ini
 imported_file_chunk_size = 1024
 ```
 
@@ -300,7 +300,7 @@ The possible values are 50, 100, 200.
 `storage\_type = HDD`
 The possible values are 12, 40.
 
-```
+```ini
 per_unit_storage_throughput = 200
 ```
 
@@ -318,7 +318,7 @@ Don't use `NONE` or `/NONE` as the shared directory.
 
 The following example mounts the file system at `/fsx`.
 
-```
+```ini
 shared_dir = /fsx
 ```
 
@@ -348,7 +348,7 @@ The possible values are any multiple of 6000.
 `per\_unit\_storage\_throughput = 40`
 The possible values are any multiple of 1800.
 
-```
+```ini
 storage_capacity = 7200
 ```
 
@@ -396,7 +396,7 @@ This setting must be specified. The possible values vary based on the [`per_unit
 `storage_capacity = 40`
 [`storage_capacity`](#fsx-storage-capacity) can be any multiple of 1800.
 
-```
+```ini
 storage_type = SSD
 ```
 
@@ -412,7 +412,7 @@ Support for the [`storage_type`](#fsx-storage-type) setting was added in AWS Par
 
 The format is [day of week]:[hour of day]:[minute of hour]. For example, Monday at Midnight is as follows.
 
-```
+```ini
 weekly_maintenance_start_time = 1:00:00
 ```
 

@@ -30,7 +30,7 @@ For more information, see [Manage subnet route tables](https://docs.aws.amazon.c
 **Tools for PowerShell V4**
 **Example 1: This example enables the specified VGW to propagate routes automatically to the specified routing table.**
 
-```
+```powershell
 Enable-EC2VgwRoutePropagation -RouteTableId rtb-12345678 -GatewayId vgw-1a2b3c4d
 ```
 +  For API details, see [EnableVgwRoutePropagation](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -38,7 +38,7 @@ Enable-EC2VgwRoutePropagation -RouteTableId rtb-12345678 -GatewayId vgw-1a2b3c4d
 **Tools for PowerShell V5**
 **Example 1: This example enables the specified VGW to propagate routes automatically to the specified routing table.**
 
-```
+```powershell
 Enable-EC2VgwRoutePropagation -RouteTableId rtb-12345678 -GatewayId vgw-1a2b3c4d
 ```
 +  For API details, see [EnableVgwRoutePropagation](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

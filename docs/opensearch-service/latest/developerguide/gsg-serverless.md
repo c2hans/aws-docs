@@ -35,7 +35,7 @@ To complete this tutorial, you must have the correct IAM permissions. Your user 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -124,7 +124,7 @@ In this tutorial, you provide a single user the permissions required to index da
 
    Replace the principal ARN with the ARN of the account that you use to log in to OpenSearch Dashboards and index data.
 
-   ```
+   ```json
    [
       {
          "Rules":[

@@ -31,7 +31,7 @@ The following code example shows how to get started using IAM.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam/hello_iam#code-examples).
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -73,7 +73,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the iam.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/iam/IAMClient.h>
 #include <aws/iam/model/ListPoliciesRequest.h>
@@ -166,7 +166,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 namespace AwsDoc {
     namespace IAM {
 
@@ -577,7 +577,7 @@ The following code example shows how to use `AttachRolePolicy`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::attachRolePolicy(const Aws::String &roleName,
                                    const Aws::String &policyArn,
                                    const Aws::Client::ClientConfiguration &clientConfig) {
@@ -637,7 +637,7 @@ The following code example shows how to use `CreateAccessKey`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 Aws::String AwsDoc::IAM::createAccessKey(const Aws::String &userName,
                                          const Aws::Client::ClientConfiguration &clientConfig) {
     Aws::IAM::IAMClient iam(clientConfig);
@@ -674,7 +674,7 @@ The following code example shows how to use `CreateAccountAlias`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::createAccountAlias(const Aws::String &aliasName,
                                      const Aws::Client::ClientConfiguration &clientConfig) {
     Aws::IAM::IAMClient iam(clientConfig);
@@ -705,7 +705,7 @@ The following code example shows how to use `CreatePolicy`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 Aws::String AwsDoc::IAM::createPolicy(const Aws::String &policyName,
                                       const Aws::String &rsrcArn,
                                       const Aws::Client::ClientConfiguration &clientConfig) {
@@ -771,7 +771,7 @@ The following code example shows how to use `CreateRole`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::createIamRole(
         const Aws::String &roleName,
         const Aws::String &policy,
@@ -807,7 +807,7 @@ The following code example shows how to use `CreateUser`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
     Aws::IAM::IAMClient iam(clientConfig);
 
     Aws::IAM::Model::CreateUserRequest create_request;
@@ -834,7 +834,7 @@ The following code example shows how to use `DeleteAccessKey`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::deleteAccessKey(const Aws::String &userName,
                                   const Aws::String &accessKeyID,
                                   const Aws::Client::ClientConfiguration &clientConfig) {
@@ -869,7 +869,7 @@ The following code example shows how to use `DeleteAccountAlias`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::deleteAccountAlias(const Aws::String &accountAlias,
                                      const Aws::Client::ClientConfiguration &clientConfig) {
     Aws::IAM::IAMClient iam(clientConfig);
@@ -900,7 +900,7 @@ The following code example shows how to use `DeletePolicy`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::deletePolicy(const Aws::String &policyArn,
                                const Aws::Client::ClientConfiguration &clientConfig) {
     Aws::IAM::IAMClient iam(clientConfig);
@@ -930,7 +930,7 @@ The following code example shows how to use `DeleteServerCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::deleteServerCertificate(const Aws::String &certificateName,
                                           const Aws::Client::ClientConfiguration &clientConfig) {
     Aws::IAM::IAMClient iam(clientConfig);
@@ -968,7 +968,7 @@ The following code example shows how to use `DeleteUser`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
     Aws::IAM::IAMClient iam(clientConfig);
 
     Aws::IAM::Model::DeleteUserRequest request;
@@ -994,7 +994,7 @@ The following code example shows how to use `DetachRolePolicy`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
     Aws::IAM::IAMClient iam(clientConfig);
 
     Aws::IAM::Model::DetachRolePolicyRequest detachRequest;
@@ -1024,7 +1024,7 @@ The following code example shows how to use `GetAccessKeyLastUsed`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::accessKeyLastUsed(const Aws::String &secretKeyID,
                                     const Aws::Client::ClientConfiguration &clientConfig) {
     Aws::IAM::IAMClient iam(clientConfig);
@@ -1062,7 +1062,7 @@ The following code example shows how to use `GetPolicy`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::getPolicy(const Aws::String &policyArn,
                             const Aws::Client::ClientConfiguration &clientConfig) {
     Aws::IAM::IAMClient iam(clientConfig);
@@ -1097,7 +1097,7 @@ The following code example shows how to use `GetServerCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::getServerCertificate(const Aws::String &certificateName,
                                        const Aws::Client::ClientConfiguration &clientConfig) {
     Aws::IAM::IAMClient iam(clientConfig);
@@ -1139,7 +1139,7 @@ The following code example shows how to use `ListAccessKeys`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::listAccessKeys(const Aws::String &userName,
                                  const Aws::Client::ClientConfiguration &clientConfig) {
     Aws::IAM::IAMClient iam(clientConfig);
@@ -1197,7 +1197,7 @@ The following code example shows how to use `ListAccountAliases`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool
 AwsDoc::IAM::listAccountAliases(const Aws::Client::ClientConfiguration &clientConfig) {
     Aws::IAM::IAMClient iam(clientConfig);
@@ -1248,7 +1248,7 @@ The following code example shows how to use `ListPolicies`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::listPolicies(const Aws::Client::ClientConfiguration &clientConfig) {
     const Aws::String DATE_FORMAT("%Y-%m-%d");
     Aws::IAM::IAMClient iam(clientConfig);
@@ -1303,7 +1303,7 @@ The following code example shows how to use `ListServerCertificates`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::listServerCertificates(
         const Aws::Client::ClientConfiguration &clientConfig) {
     const Aws::String DATE_FORMAT = "%Y-%m-%d";
@@ -1364,7 +1364,7 @@ The following code example shows how to use `ListUsers`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::listUsers(const Aws::Client::ClientConfiguration &clientConfig) {
     const Aws::String DATE_FORMAT = "%Y-%m-%d";
     Aws::IAM::IAMClient iam(clientConfig);
@@ -1417,7 +1417,7 @@ The following code example shows how to use `PutRolePolicy`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::putRolePolicy(
         const Aws::String &roleName,
         const Aws::String &policyName,
@@ -1452,7 +1452,7 @@ The following code example shows how to use `UpdateAccessKey`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::updateAccessKey(const Aws::String &userName,
                                   const Aws::String &accessKeyID,
                                   Aws::IAM::Model::StatusType status,
@@ -1487,7 +1487,7 @@ The following code example shows how to use `UpdateServerCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::updateServerCertificate(const Aws::String &currentCertificateName,
                                           const Aws::String &newCertificateName,
                                           const Aws::Client::ClientConfiguration &clientConfig) {
@@ -1529,7 +1529,7 @@ The following code example shows how to use `UpdateUser`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::updateUser(const Aws::String &currentUserName,
                              const Aws::String &newUserName,
                              const Aws::Client::ClientConfiguration &clientConfig) {

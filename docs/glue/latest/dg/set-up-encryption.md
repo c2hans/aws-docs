@@ -25,7 +25,7 @@ The following example workflow highlights the options to configure when you use 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": {
@@ -87,7 +87,7 @@ The following example workflow highlights the options to configure when you use 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": {

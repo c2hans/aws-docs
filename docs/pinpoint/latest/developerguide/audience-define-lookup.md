@@ -95,7 +95,7 @@ You can use the Amazon Pinpoint API in your Java applications by using the clien
 **Example Code**
 To look up an endpoint, initialize a `GetEndpointRequest` object. Then, pass this object to the `getEndpoint` method of the `AmazonPinpoint` client:
 
-```
+```java
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -107,7 +107,7 @@ import software.amazon.awssdk.services.pinpoint.model.PinpointException;
 import software.amazon.awssdk.services.pinpoint.model.GetEndpointRequest;
 ```
 
-```
+```java
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -190,7 +190,7 @@ You can use Amazon Pinpoint by making HTTP requests directly to the REST API.
 **Example GET endpoint request**
 To look up an endpoint, issue a `GET` request to the [Endpoint](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints-endpoint-id.html) resource:
 
-```
+```http
 GET /v1/apps/{{application_id}}/endpoints/{{endpoint_id}} HTTP/1.1
 Host: pinpoint.us-east-1.amazonaws.com
 Content-Type: application/json

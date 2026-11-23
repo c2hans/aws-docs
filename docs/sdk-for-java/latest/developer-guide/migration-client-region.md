@@ -11,7 +11,7 @@ This section describes the changes implemented in the AWS SDK for Java 2.x for u
 + Some AWS services don’t have Region specific endpoints. When using those services, you must set the Region as `Region.AWS_GLOBAL` or `Region.AWS_CN_GLOBAL`.
 **Example**
 
-  ```
+  ```java
   Region region = Region.AWS_GLOBAL;
   ```
 +  `com.amazonaws.regions.Regions` and `com.amazonaws.regions.Region` classes are now combined into one class, `software.amazon.awssdk.regions.Region`.
@@ -23,7 +23,7 @@ The following tables map Region related classes between versions 1.x and 2.x of 
 
 **Example**
 
-```
+```java
 RegionMetadata regionMetadata = RegionMetadata.of(Region.US_EAST_1);
 ```
 

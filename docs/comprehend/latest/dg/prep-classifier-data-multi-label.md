@@ -45,7 +45,7 @@ For general information about using augmented manifest files for training classi
 
 For plain-text documents, each line of the augmented manifest file is a complete JSON object. It contains a training document, class names, and other metadata from Ground Truth. The following example is an augmented manifest file for training a custom classifier to detect genres in movie abstracts:
 
-```
+```json
 {"source":"Document 1 text", "MultiLabelJob":[0,4], "MultiLabelJob-metadata":{"job-name":"labeling-job/multilabeljob", "class-map":{"0":"action", "4":"drama"}, "human-annotated":"yes", "creation-date":"2020-05-21T19:02:21.521882", "confidence-map":{"0":0.66}, "type":"groundtruth/text-classification-multilabel"}}
 {"source":"Document 2 text", "MultiLabelJob":[3,6], "MultiLabelJob-metadata":{"job-name":"labeling-job/multilabeljob", "class-map":{"3":"comedy", "6":"horror"}, "human-annotated":"yes", "creation-date":"2020-05-21T19:00:01.291202", "confidence-map":{"1":0.61,"0":0.61}, "type":"groundtruth/text-classification-multilabel"}}
 {"source":"Document 3 text", "MultiLabelJob":[1], "MultiLabelJob-metadata":{"job-name":"labeling-job/multilabeljob", "class-map":{"1":"action"}, "human-annotated":"yes", "creation-date":"2020-05-21T18:58:51.662050", "confidence-map":{"1":0.68}, "type":"groundtruth/text-classification-multilabel"}}
@@ -53,7 +53,7 @@ For plain-text documents, each line of the augmented manifest file is a complete
 
  The following example shows one JSON object from the augmented manifest file, formatted for readability:
 
-```
+```json
 {
       "source": "A band of misfit teens become unlikely detectives when
                    they discover troubling clues about their high school English teacher.

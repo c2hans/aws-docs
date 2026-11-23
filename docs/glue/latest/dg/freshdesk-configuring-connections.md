@@ -21,7 +21,7 @@ The following are the steps to configure Freshdesk connection:
 
 ****
 
-    ```
+    ```json
     {
       "Version":"2012-10-17",
       "Statement": [

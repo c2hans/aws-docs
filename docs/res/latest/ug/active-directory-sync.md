@@ -101,7 +101,7 @@ The Active Directory synchronization process has been moved from the Cluster Man
 
 1. In the **Event JSON** enter the following:
 
-   ```
+   ```JSON
    {
        "detail-type": "Scheduled Event"
    }

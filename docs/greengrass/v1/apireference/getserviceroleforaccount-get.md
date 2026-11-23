@@ -13,7 +13,7 @@ URI: `GET /greengrass/servicerole`
 ## CLI:
 <a name="getserviceroleforaccount-get-cli"></a>
 
-```
+```bash
 aws greengrass get-service-role-for-account  \
   [--cli-input-json <value>] \
   [--generate-cli-skeleton]
@@ -26,7 +26,7 @@ aws greengrass get-service-role-for-account  \
 Success.
  [ GetServiceRoleForAccountResponse](definitions-getserviceroleforaccountresponse.md)
 
-```
+```json
 {
 "AssociatedAt": "string",
 "RoleArn": "string"
@@ -45,7 +45,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

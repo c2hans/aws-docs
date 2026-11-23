@@ -36,7 +36,7 @@ Next, you must give your IAM user permission to use timed metadata. Follow these
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [

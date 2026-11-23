@@ -41,6 +41,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Diagram showing this formula: Resources provisioned per unit of work = proxy metric for provisioned resource / business metric for outcome](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/images/key-performance-indicators-formula.png)
 
+*KPI formula*
+
  Use your resources per unit of work as your KPIs. Establish baselines based on provisioned resources as the basis for comparisons.
 
 |  **Resource**  |  **Example KPIs**  |  **Improvement goals**  |

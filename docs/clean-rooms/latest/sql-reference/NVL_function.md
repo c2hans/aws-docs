@@ -41,7 +41,7 @@ AWS Clean Rooms determines the data type of the returned value based on the inpu
 
 If the list contains integer expressions, the function returns an integer.
 
-```
+```sql
 SELECT COALESCE(NULL, 12, NULL);
 
 coalesce
@@ -51,7 +51,7 @@ coalesce
 
 This example, which is the same as the previous example, except that it uses NVL, returns the same result.
 
-```
+```sql
 SELECT NVL(NULL, 12, NULL);
 
 coalesce
@@ -61,7 +61,7 @@ coalesce
 
 The following example returns a string type.
 
-```
+```sql
 SELECT COALESCE(NULL, 'AWS Clean Rooms', NULL);
 
 coalesce
@@ -71,7 +71,7 @@ AWS Clean Rooms
 
 The following example results in an error because the data types vary in the expression list. In this case, there is both a string type and a number type in the list.
 
-```
+```sql
 SELECT COALESCE(NULL, 'AWS Clean Rooms', 12);
 ERROR: invalid input syntax for integer: "AWS Clean Rooms"
 ```

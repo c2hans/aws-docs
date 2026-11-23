@@ -71,7 +71,7 @@ aws docdb create-db-cluster-parameter-group ^
 ```
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "DBClusterParameterGroup": {
         "DBClusterParameterGroupName": "{{sample-parameter-group}}",

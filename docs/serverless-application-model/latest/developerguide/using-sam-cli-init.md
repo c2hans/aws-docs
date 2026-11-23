@@ -221,7 +221,7 @@ You can choose to activate AWS X-Ray tracing. To learn more, see [What is AWS X-
 
 If you activate, the AWS SAM CLI configures your AWS SAM template. The following is an example:
 
-```
+```yaml
 Globals:
   Function:
     ...
@@ -237,7 +237,7 @@ You can choose to activate monitoring using Amazon CloudWatch Application Insigh
 
 If you activate, the AWS SAM CLI configures your AWS SAM template. The following is an example:
 
-```
+```yaml
 Resources:
   ApplicationResourceGroup:
     Type: AWS::ResourceGroups::Group

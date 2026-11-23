@@ -64,7 +64,7 @@ Because cache refresh can block directory access operations, we recommend config
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -94,7 +94,7 @@ Because cache refresh can block directory access operations, we recommend config
 
 1. Use the following function for your Lambda task.
 
-   ```
+   ```python
    import json
    import boto3
    client = boto3.client('storagegateway')

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-trigge
 
 To enable customization triggers, set the `aft_customization_triggers` variable in your AFT deployment module:
 
-```
+```hcl
 module "aft" {
   source = "github.com/aws-ia/terraform-aws-control_tower_account_factory"
 

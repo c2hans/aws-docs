@@ -21,7 +21,7 @@ To determine whether SFT is a good fit for your use case, see [Supervised fine-t
 
 Below is a sample recipe for SFT. You can find this recipe and others in the [SageMaker HyperPod recipes](https://github.com/aws/sagemaker-hyperpod-recipes/tree/main/recipes_collection/recipes/fine-tuning/nova) repository on GitHub.
 
-```
+```yaml
 run:
   name: my-full-rank-sft-run
   model_type: amazon.nova-2-lite-v1:0:256k

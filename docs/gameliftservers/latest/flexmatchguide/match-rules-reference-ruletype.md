@@ -122,7 +122,7 @@ You can't expand a compound rule using [expansion rules](match-rulesets-componen
 **Example**
 The following example matches players of varying skill levels based on the game mode that they select.
 
-```
+```json
 {
     "name": "CompoundRuleExample",
     "type": "compound",

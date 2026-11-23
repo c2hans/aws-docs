@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 
 # Direct Connect with AWS Transit Gateway over transit VIF
 
-The following diagram shows how you can connect VPCs from multiple AWS Regions to an on-premises environment by using Direct Connect and AWS Transit Gateway over a transit VIF.
+The following diagram shows how you can connect virtual private clouds (VPCs) from multiple AWS Regions to an on-premises environment by using Direct Connect and AWS Transit Gateway over a transit virtual interface (VIF).
 
 ![Connecting VPCs from multiple Regions to on premises.](https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-control-tower-landing-zone/images/guide-img/156d118c-ed00-4c5b-9a02-63c2673a3342/images/61ab0e94-aa26-4cbc-920a-a375dcb70048.png)
 

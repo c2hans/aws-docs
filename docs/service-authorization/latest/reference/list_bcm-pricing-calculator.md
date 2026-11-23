@@ -125,6 +125,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetUsageLinesEstimatedCost  **
+  - **IAM action:**  [bcm-pricing-calculator:GetUsageLinesEstimatedCost](#list_bcm-pricing-calculator-action-GetUsageLinesEstimatedCost)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetWorkloadEstimate  **
   - **IAM action:**  [bcm-pricing-calculator:GetWorkloadEstimate](#list_bcm-pricing-calculator-action-GetWorkloadEstimate)
   - **Condition key:**
@@ -277,7 +283,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [DeleteBillEstimate](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_DeleteBillEstimate.html)  **
   - **Description:** Grants permission to delete bill estimate
   - **Resource types (\*required):** [bill-estimate\*](#list_bcm-pricing-calculator-resource-bill-estimate)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bcm-pricing-calculator-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteBillScenario](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_DeleteBillScenario.html)  **
@@ -313,7 +319,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [GetBillEstimate](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_GetBillEstimate.html)  **
   - **Description:** Grants permission to retrieve details of a bill estimate including estimated cost
   - **Resource types (\*required):** [bill-estimate\*](#list_bcm-pricing-calculator-resource-bill-estimate)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bcm-pricing-calculator-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetBillScenario](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_GetBillScenario.html)  **
@@ -328,6 +334,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [GetUsageLinesEstimatedCost](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_GetUsageLinesEstimatedCost.html)  **
+  - **Description:** Grants permission to estimate cost for usage lines per the requested rate type
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [GetWorkloadEstimate](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_GetWorkloadEstimate.html)  **
   - **Description:** Grants permission to retrieve information associated with a workload estimate
   - **Resource types (\*required):** [workload-estimate\*](#list_bcm-pricing-calculator-resource-workload-estimate)
@@ -337,25 +349,25 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [ListBillEstimateCommitments](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_ListBillEstimateCommitments.html)  **
   - **Description:** Grants permission to list commitments associated with the specified bill estimate
   - **Resource types (\*required):** [bill-estimate\*](#list_bcm-pricing-calculator-resource-bill-estimate)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bcm-pricing-calculator-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
 - **   [ListBillEstimateInputCommitmentModifications](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_ListBillEstimateInputCommitmentModifications.html)  **
   - **Description:** Grants permission to list added or removed commitments for a specified bill estimate
   - **Resource types (\*required):** [bill-estimate\*](#list_bcm-pricing-calculator-resource-bill-estimate)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bcm-pricing-calculator-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
 - **   [ListBillEstimateInputUsageModifications](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_ListBillEstimateInputUsageModifications.html)  **
   - **Description:** Grants permission to list added or modified usage for a specified bill estimate
   - **Resource types (\*required):** [bill-estimate\*](#list_bcm-pricing-calculator-resource-bill-estimate)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bcm-pricing-calculator-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
 - **   [ListBillEstimateLineItems](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_ListBillEstimateLineItems.html)  **
   - **Description:** Grants permission to list result line items for a specified bill estimate
   - **Resource types (\*required):** [bill-estimate\*](#list_bcm-pricing-calculator-resource-bill-estimate)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bcm-pricing-calculator-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
 - **   [ListBillEstimates](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_ListBillEstimates.html)  **
@@ -415,7 +427,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [UpdateBillEstimate](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_UpdateBillEstimate.html)  **
   - **Description:** Grants permission to update bill estimate name and expiration date time
   - **Resource types (\*required):** [bill-estimate\*](#list_bcm-pricing-calculator-resource-bill-estimate)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bcm-pricing-calculator-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [UpdateBillScenario](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_UpdateBillScenario.html)  **
@@ -461,7 +473,7 @@ The following resource types are defined by this service and can be used in the 
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
-|  [bill-estimate](https://docs.aws.amazon.com/cost-management/latest/userguide/pc-bill-estimate.html)  | arn:${Partition}:bcm-pricing-calculator::${Account}:bill-estimate/${BillEstimateId} |   |
+|  [bill-estimate](https://docs.aws.amazon.com/cost-management/latest/userguide/pc-bill-estimate.html)  | arn:${Partition}:bcm-pricing-calculator::${Account}:bill-estimate/${BillEstimateId} | [aws:ResourceTag/${TagKey}](#list_bcm-pricing-calculator-aws_ResourceTag___TagKey_) |
 |  [bill-scenario](https://docs.aws.amazon.com/cost-management/latest/userguide/pc-bill-scenario.html)  | arn:${Partition}:bcm-pricing-calculator::${Account}:bill-scenario/${BillScenarioId} | [aws:ResourceTag/${TagKey}](#list_bcm-pricing-calculator-aws_ResourceTag___TagKey_) |
 |  [workload-estimate](https://docs.aws.amazon.com/cost-management/latest/userguide/pc-workload-estimate.html)  | arn:${Partition}:bcm-pricing-calculator::${Account}:workload-estimate/${WorkloadEstimateId} | [aws:ResourceTag/${TagKey}](#list_bcm-pricing-calculator-aws_ResourceTag___TagKey_) |
 

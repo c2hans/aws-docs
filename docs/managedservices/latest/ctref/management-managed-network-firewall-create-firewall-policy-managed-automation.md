@@ -135,7 +135,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-network-firewall-create-firewall-policy-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "FirewallPolicyName": "MyFirewallPolicy",
   "StatelessDefaultActions": [
@@ -150,7 +150,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-managed-network-firewall-create-firewall-policy-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "FirewallPolicyName": "ComprehensiveFirewallPolicy",
   "Description": "Complete network firewall policy with all parameters configured.",

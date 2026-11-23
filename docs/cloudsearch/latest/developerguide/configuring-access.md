@@ -143,7 +143,7 @@ This topic provides an example of the second option, adding a resource-based pol
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

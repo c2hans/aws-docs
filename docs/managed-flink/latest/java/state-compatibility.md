@@ -108,7 +108,7 @@ If your application can rebuild state from source data:
 
 1. Allow application to rebuild state
 
-```
+```bash
 aws kinesisanalyticsv2 start-application \
     --application-name MyApplication \
     --run-configuration '{

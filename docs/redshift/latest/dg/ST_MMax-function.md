@@ -37,7 +37,7 @@ If *geom* is a 2D or 3DZ geometry, then null is returned.
 
 The following SQL returns the largest `m` coordinate of a linestring in a 3DM geometry.
 
-```
+```sql
 SELECT ST_MMax(ST_GeomFromEWKT('LINESTRING M (0 1 2, 3 4 5, 6 7 8)'));
 ```
 
@@ -49,7 +49,7 @@ st_mmax
 
 The following SQL returns the largest `m` coordinate of a linestring in a 4D geometry.
 
-```
+```sql
 SELECT ST_MMax(ST_GeomFromEWKT('LINESTRING ZM (0 1 2 3, 4 5 6 7, 8 9 10 11)'));
 ```
 

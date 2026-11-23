@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { LambdaToStepfunctions } from '@aws-solutions-constructs/aws-lambda-stepfunctions';
@@ -46,7 +46,7 @@ new LambdaToStepfunctions(this, 'LambdaToStepfunctionsPattern', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_lambda_stepfunctions import LambdaToStepfunctions
 from aws_cdk import (
     aws_lambda as _lambda,
@@ -69,7 +69,7 @@ LambdaToStepfunctions(
 )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

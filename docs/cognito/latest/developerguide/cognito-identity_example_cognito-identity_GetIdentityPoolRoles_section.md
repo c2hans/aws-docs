@@ -37,7 +37,7 @@ For more information, see [IAM roles](https://docs.aws.amazon.com/cognito/latest
 **Tools for PowerShell V4**
 **Example 1: Gets the information about roles for a specific Identity Pool.**
 
-```
+```powershell
 Get-CGIIdentityPoolRole -IdentityPoolId us-east-1:0de2af35-2988-4d0b-b22d-EXAMPLEGUID1
 ```
 **Output:**
@@ -55,7 +55,7 @@ HttpStatusCode   : OK
 **Tools for PowerShell V5**
 **Example 1: Gets the information about roles for a specific Identity Pool.**
 
-```
+```powershell
 Get-CGIIdentityPoolRole -IdentityPoolId us-east-1:0de2af35-2988-4d0b-b22d-EXAMPLEGUID1
 ```
 **Output:**

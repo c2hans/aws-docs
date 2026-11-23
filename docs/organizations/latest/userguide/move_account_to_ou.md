@@ -35,7 +35,7 @@ You can use one of the following commands to move an account:
 
   The following example moves an AWS account from the root to an OU. Note that you must specify the IDs of both the source and destination containers.
 
-  ```
+  ```bash
   $ aws organizations move-account \
       --account-id 111122223333 \
       --source-parent-id r-a1b2 \

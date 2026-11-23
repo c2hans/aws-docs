@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { FargateToKinesisFirehoseProps } from '@aws-solutions-constructs/aws-fargate-kinesisfirehose';
@@ -42,7 +42,7 @@ new FargateToKinesisFirehose(this, 'FargateToKinesisFirehose', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_fargate_kinesisfirehose import FargateToKinesisFirehose
 from aws_cdk import (
     aws_fargate as _fargate,
@@ -61,7 +61,7 @@ FargateToKinesisFirehose(self, 'FargateToKinesisFirehose',
                        )
 ```
 
-```
+```java
 import software.constructs.Construct;
 import software.amazon.awscdk.Stack;
 import software.amazon.awscdk.StackProps;

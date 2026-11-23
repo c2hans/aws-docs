@@ -23,18 +23,35 @@ The following table describes the concepts that apply to multipath resilience in
 
 The following JSON block enables multipath resilience for all eligible edge sets in the core network:
 
-```
-"multipath-resilience": {}
+```json
+"core-network-configuration": {
+  "multipath-resilience": {
+    "mode": "best-effort"
+  }
+}
 ```
 
 The following JSON block enables multipath resilience and scopes coverage to specific edge sets:
 
-```
-"multipath-resilience": {
-  "edge-sets": [
-    ["us-east-1", "us-east-2"],
-    ["us-west-2", "eu-west-1"]
-  ]
+```json
+"core-network-configuration": {
+  "multipath-resilience": {
+    "mode": "best-effort",
+    "edge-sets": [
+      {
+        "edge-locations": [
+          "us-east-1",
+          "us-east-2"
+        ]
+      },
+      {
+        "edge-locations": [
+          "us-west-2",
+          "eu-west-1"
+        ]
+      }
+    ]
+  }
 }
 ```
 

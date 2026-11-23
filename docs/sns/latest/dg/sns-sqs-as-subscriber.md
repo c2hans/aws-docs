@@ -12,7 +12,7 @@ When you use Amazon SNS and Amazon SQS together, messages reach applications tha
 
 When you subscribe an Amazon SQS queue to an Amazon SNS topic, you can publish a message to the topic and Amazon SNS sends an Amazon SQS message to the subscribed queue. The Amazon SQS message contains the subject and message that were published to the topic along with metadata about the message in a JSON document. The Amazon SQS message will look similar to the following JSON document.
 
-```
+```json
 {
    "Type" : "Notification",
    "MessageId" : "63a3f6b6-d533-4a47-aef9-fcf5cf758c76",

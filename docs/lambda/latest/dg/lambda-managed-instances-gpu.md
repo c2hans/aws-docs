@@ -17,9 +17,9 @@ GPU-accelerated Lambda Event Functions provide the following capabilities:
 + **GPU-based scaling** – Capacity providers with GPU instance types scale on GPU utilization in addition to CPU utilization and concurrency. To avoid paying for idle GPU capacity, you can enable [scaling to zero](lambda-managed-instances-scaling.md#lambda-managed-instances-scale-to-zero). For more information, see [How scaling works for GPU-accelerated Event Functions](lambda-managed-instances-gpu-scaling.md).
 + **Concurrency within an execution environment** – Each execution environment processes several invocations at the same time. You control this with the `PerExecutionEnvironmentMaxConcurrency` setting. For more information, see [How concurrency works for GPU-accelerated Event Functions](lambda-managed-instances-gpu-scaling.md#lambda-managed-instances-gpu-scaling-concurrency).
 + **Larger images and ephemeral storage** – GPU-accelerated functions support larger container images and ephemeral storage than other Event Functions. For values, see [Limits](#lambda-managed-instances-gpu-limits).
-+ **Optimizing execution environment startup** – To lower startup time with large images, use lazy loading with Seekable OCI (SOCI), and load model weights from Amazon S3 with the Amazon S3 Connector for PyTorch or the Run:ai Model Streamer included in the base images. The Lambda GPU base images include a prebuilt SOCI index, so lazy loading works without additional setup. For more information, see [Optimizing startup time](lambda-managed-instances-gpu-startup.md).
++ **Optimizing execution environment startup** – To lower startup time with large images, use lazy loading with Seekable OCI (SOCI), and load model weights from Amazon S3 with the Amazon S3 Connector for PyTorch or the Run:ai Model Streamer included in the base images. The Lambda GPU base images with the `-soci` tag suffix (for example, `base:cuda-v1-soci`) include a prebuilt SOCI index, so lazy loading works without additional setup. For more information, see [Optimizing startup time](lambda-managed-instances-gpu-startup.md).
 + **Event-driven GPU compute** – GPU-accelerated functions support the same event sources as x86 and Arm-based Event Functions. For more information about event sources, see [Invoking Lambda with events from other AWS services](lambda-services.md).
-+ **Built-in GPU observability** – Lambda publishes GPU utilization, GPU memory utilization, and GPU power utilization metrics to Amazon CloudWatch Metrics and displays them in the Lambda console, at both the capacity provider and function level. For more information, see [Monitoring GPU-accelerated functions](lambda-managed-instances-gpu-monitoring.md).
++ **Built-in GPU observability** – Lambda publishes GPU utilization, GPU memory utilization, GPU memory used, and GPU power utilization metrics to Amazon CloudWatch Metrics and displays them in the Lambda console, at both the capacity provider and function level. For more information, see [Monitoring GPU-accelerated functions](lambda-managed-instances-gpu-monitoring.md).
 + **EC2 pricing model** – GPU-accelerated functions use the same pricing model as other functions on Lambda Managed Instances. For details, see [AWS Lambda pricing](https://aws.amazon.com/lambda/pricing/).
 
 ## When to use GPU-accelerated functions
@@ -86,7 +86,7 @@ To ensure you have sufficient GPU capacity for your workload, you can purchase E
 
 You specify the accelerator memory (GPU VRAM) your function needs with the `AcceleratorMemorySize` field of `AcceleratorConfig`. Because each execution environment runs on exactly one GPU, or one GPU fraction on fractional GPU instances, Lambda picks an instance type from your provided GPU instance type list such that an instance's GPU memory satisfies your function's specified accelerator memory.
 
-You set `AcceleratorMemorySize` in `AcceleratorConfig` when you create the function.
+You set `AcceleratorMemorySize` in `AcceleratorConfig` when you create or update the function.
 + Valid values: 3, 6, 12, 16, 24, 48 (GB)
 + `AcceleratorMemorySize` is a minimum. Lambda launches instances whose accelerator has at least this much memory and, when several instance types in your capacity provider qualify, chooses the latest generation with the lowest GPU memory that satisfies your function's GPU memory requirement.
 + When your capacity provider includes multiple instance types and the best-fit type has insufficient capacity, Lambda falls back to another allowed instance type. During instance fallback, Lambda can place the execution environment on a GPU with more memory than you requested. For more information, see [Instance type selection](lambda-managed-instances-gpu-scaling.md#lambda-managed-instances-gpu-scaling-instance-selection).
@@ -97,7 +97,7 @@ You set `AcceleratorMemorySize` in `AcceleratorConfig` when you create the funct
 
 Two controls govern GPU instance usage:
 + **EC2 On-Demand vCPU quota** – GPU-accelerated functions run on EC2 On-Demand GPU instances in your account. The EC2 service quota Running On-Demand G and VT instances controls how many vCPUs of G-family instances your account can run. The default value for this quota is 0 vCPUs for On-Demand G and VT instances, so you must request a quota increase before you can deploy GPU-accelerated functions. To request an increase, open the [Service Quotas console for Amazon EC2](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/) and submit a request for the Running On-Demand G and VT instances quota. For more information about On-Demand Instance quotas, see [Amazon EC2 On-Demand Instance quotas](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html#ec2-on-demand-instances-limits).
-+ **Capacity provider MaxVCpus (optional)** – To limit GPU usage for a specific capacity provider, set `MaxVCpus` to restrict the total vCPUs Lambda can launch. Each GPU instance type consumes a fixed number of vCPUs (for example, `g6.4xlarge` uses 16 vCPUs), so this setting controls how many instances can run within a capacity provider.
++ **Capacity provider MaxVCpuCount (optional)** – To limit GPU usage for a specific capacity provider, set `MaxVCpuCount` to restrict the total vCPUs Lambda can launch. Each GPU instance type consumes a fixed number of vCPUs (for example, `g6.4xlarge` uses 16 vCPUs), so this setting controls how many instances can run within a capacity provider.
 
 The following table compares the function limits for GPU-accelerated functions with those for other Event Functions on Lambda Managed Instances.
 
@@ -111,4 +111,5 @@ The following table compares the function limits for GPU-accelerated functions w
 | MemorySize | 2,048 MB to 32,768 MB | 2,048 MB to 32,768 MB |
 | AcceleratorMemorySize | 3 GB to 48 GB (valid values: 3, 6, 12, 16, 24, 48) | Not applicable |
 | PerExecutionEnvironmentMaxConcurrency | Default 4, maximum 48 | See the runtime guides in [Lambda Managed Instances runtimes](lambda-managed-instances-runtimes.md) |
+| Default MinExecutionEnvironments | 1 | 3 |
 | GPUs per execution environment | 1 | Not applicable |

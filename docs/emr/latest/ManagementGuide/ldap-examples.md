@@ -12,7 +12,7 @@ Once you [provision an EMR cluster that uses LDAP](ldap-setup-launch.md) integra
 **Example - Apache Hive**
 The following example command starts an Apache Hive session through HiveServer2 and Beeline:
 
-```
+```bash,sh,zsh
 beeline -u "jdbc:hive2://{{$HOSTNAME}}:10000/default;ssl=true;sslTrustStore=${{TRUSTSTORE_PATH}};trustStorePassword=${{TRUSTSTORE_PASS}}"  -n {{LDAP_USERNAME}} -p {{LDAP_PASSWORD}}
 ```
 
@@ -22,7 +22,7 @@ beeline -u "jdbc:hive2://{{$HOSTNAME}}:10000/default;ssl=true;sslTrustStore=${{T
 **Example - Apache Livy**
 The following example command starts a Livy session through cURL. Replace `{{ENCODED-KEYPAIR}}` with a Base64-encoded string for `username:password`.
 
-```
+```bash,sh,zsh
 curl -X POST --data '{"proxyUser":"{{LDAP_USERNAME}}","kind": "pyspark"}' -H "Content-Type: application/json" -H "Authorization: Basic {{ENCODED-KEYPAIR}}" {{DNS_OF_PRIMARY_NODE}}:8998/sessions
 ```
 
@@ -32,7 +32,7 @@ curl -X POST --data '{"proxyUser":"{{LDAP_USERNAME}}","kind": "pyspark"}' -H "Co
 **Example - Presto**
 The following example command starts a Presto session through the Presto CLI:
 
-```
+```bash,sh,zsh
 presto-cli --user "{{LDAP_USERNAME}}" --password --catalog hive
 ```
 After you run this command, enter the LDAP password at the prompt.
@@ -43,7 +43,7 @@ After you run this command, enter the LDAP password at the prompt.
 **Example - Trino**
 The following example command starts a Trino session through the Trino CLI:
 
-```
+```bash,sh,zsh
 trino-cli --user "{{LDAP_USERNAME}}" --password --catalog hive
 ```
 After you run this command, enter the LDAP password at the prompt.

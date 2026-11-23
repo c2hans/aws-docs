@@ -34,7 +34,7 @@ The following code example shows how to get started using Amazon RDS.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.rds.RdsClient;
 import software.amazon.awssdk.services.rds.model.DescribeDbInstancesResponse;
@@ -97,7 +97,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 Run multiple operations.
 
-```
+```java
 import com.google.gson.Gson;
 import software.amazon.awssdk.auth.credentials.EnvironmentVariableCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
@@ -687,7 +687,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
 import com.google.gson.Gson;
 import software.amazon.awssdk.auth.credentials.EnvironmentVariableCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
@@ -844,7 +844,7 @@ The following code example shows how to use `CreateDBParameterGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void createDBParameterGroup(RdsClient rdsClient, String dbGroupName, String dbParameterGroupFamily) {
         try {
             CreateDbParameterGroupRequest groupRequest = CreateDbParameterGroupRequest.builder()
@@ -872,7 +872,7 @@ The following code example shows how to use `CreateDBSnapshot`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     // Create an Amazon RDS snapshot.
     public static void createSnapshot(RdsClient rdsClient, String dbInstanceIdentifier, String dbSnapshotIdentifier) {
         try {
@@ -900,7 +900,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.rds.RdsClient;
 import software.amazon.awssdk.services.rds.model.DeleteDbInstanceRequest;
@@ -969,7 +969,7 @@ The following code example shows how to use `DeleteDBParameterGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     // Delete the parameter group after database has been deleted.
     // An exception is thrown if you attempt to delete the para group while database
     // exists.
@@ -1026,7 +1026,7 @@ The following code example shows how to use `DescribeAccountAttributes`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.rds.RdsClient;
 import software.amazon.awssdk.services.rds.model.AccountQuota;
@@ -1079,7 +1079,7 @@ The following code example shows how to use `DescribeDBEngineVersions`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void describeDBEngines(RdsClient rdsClient) {
         try {
             DescribeDbEngineVersionsRequest engineVersionsRequest = DescribeDbEngineVersionsRequest.builder()
@@ -1115,7 +1115,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.rds.RdsClient;
 import software.amazon.awssdk.services.rds.model.DescribeDbInstancesResponse;
@@ -1170,7 +1170,7 @@ The following code example shows how to use `DescribeDBParameterGroups`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void describeDbParameterGroups(RdsClient rdsClient, String dbGroupName) {
         try {
             DescribeDbParameterGroupsRequest groupsRequest = DescribeDbParameterGroupsRequest.builder()
@@ -1201,7 +1201,7 @@ The following code example shows how to use `DescribeDBParameters`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     // Retrieve parameters in the group.
     public static void describeDbParameters(RdsClient rdsClient, String dbGroupName, int flag) {
         try {
@@ -1250,7 +1250,7 @@ The following code example shows how to use `ModifyDBInstance`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.rds.RdsClient;
 import software.amazon.awssdk.services.rds.model.ModifyDbInstanceRequest;
@@ -1320,7 +1320,7 @@ The following code example shows how to use `ModifyDBParameterGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     // Modify auto_increment_offset and auto_increment_increment parameters.
     public static void modifyDBParas(RdsClient rdsClient, String dbGroupName) {
         try {
@@ -1356,7 +1356,7 @@ The following code example shows how to use `RebootDBInstance`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.rds.RdsClient;
 import software.amazon.awssdk.services.rds.model.RebootDbInstanceRequest;
@@ -1424,7 +1424,7 @@ The following code example shows how to use `Utilities`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 Returns a RdsUtilities object that generates the authentication token.
 
-```
+```java
 public class GenerateRDSAuthToken {
     public static void main(String[] args) {
         final String usage = """
@@ -1507,7 +1507,7 @@ The following code example shows how to implement a Lambda function that connect
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-connect-rds-iam) repository.
 Connecting to an Amazon RDS database in a Lambda function using Java.
 
-```
+```java
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyRequestEvent;

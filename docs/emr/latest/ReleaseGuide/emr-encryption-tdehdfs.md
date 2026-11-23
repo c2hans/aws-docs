@@ -35,7 +35,7 @@ For more information about the REST APIs, see the respective documentation for H
 The `hdfs-encryption-zones` classification in the configuration API operation allows you to specify a key name and an encryption zone when you create a cluster. Amazon EMR creates this key in Hadoop KMS on your cluster and configures the encryption zone.
 + Create a cluster with the following command.
 
-  ```
+  ```bash,sh,zsh
   aws emr create-cluster --release-label {{emr-7.14.0}} --instance-type m5.xlarge --instance-count 2 \
   --applications Name={{App1}} Name={{App2}} --configurations https://s3.amazonaws.com/amzn-s3-demo-bucket/myfolder/myConfig.json
   ```
@@ -44,7 +44,7 @@ Linux line continuation characters (\\) are included for readability. They can b
 
   `myConfig.json`:
 
-  ```
+  ```json
   [
   	{
   		"Classification": "hdfs-encryption-zones",
@@ -64,7 +64,7 @@ Linux line continuation characters (\\) are included for readability. They can b
 
 1. Create a key within Hadoop KMS.
 
-   ```
+   ```bash,sh,zsh
    $ hadoop key create path2_key
    path2_key has been successfully created with options Options{cipher='AES/CTR/NoPadding', bitLength=256, description='null', attributes=null}.
    KMSClientProvider[http://ip-x-x-x-x.ec2.internal:16000/kms/v1/] has been updated.
@@ -74,13 +74,13 @@ Hadoop KMS requires your key names to be lowercase. If you use a key that has up
 
 1. Create the encryption zone path in HDFS.
 
-   ```
+   ```bash,sh,zsh
    $ hadoop fs -mkdir /myHDFSPath2
    ```
 
 1. Make the HDFS path an encryption zone using the key that you created.
 
-   ```
+   ```bash,sh,zsh
    $ hdfs crypto -createZone -keyName path2_key -path /myHDFSPath2
    Added encryption zone /myHDFSPath2
    ```
@@ -88,7 +88,7 @@ Hadoop KMS requires your key names to be lowercase. If you use a key that has up
 **To create encryption zones and their keys manually using the AWS CLI**
 + Add steps to create the KMS keys and encryption zones manually with the following command.
 
-  ```
+  ```bash,sh,zsh
   aws emr add-steps --cluster-id j-2AXXXXXXGAPLF --steps Type=CUSTOM_JAR,Name="Create First Hadoop KMS Key",Jar="command-runner.jar",ActionOnFailure=CONTINUE,Args=[/bin/bash,-c,"\"hadoop key create path1_key\""] \
   Type=CUSTOM_JAR,Name="Create First Hadoop HDFS Path",Jar="command-runner.jar",ActionOnFailure=CONTINUE,Args=[/bin/bash,-c,"\"hadoop fs -mkdir /myHDFSPath1\""] \
   Type=CUSTOM_JAR,Name="Create First Encryption Zone",Jar="command-runner.jar",ActionOnFailure=CONTINUE,Args=[/bin/bash,-c,"\"hdfs crypto -createZone -keyName path1_key -path /myHDFSPath1\""] \

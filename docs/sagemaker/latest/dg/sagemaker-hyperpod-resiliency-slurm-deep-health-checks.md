@@ -49,7 +49,7 @@ To enable on-start deep health checks, specify the `OnStartDeepHealthChecks` par
 
 **Example: Create a cluster with on-start deep health checks**
 
-```
+```sh
 aws sagemaker create-cluster \
   --cluster-name {{my-slurm-cluster}} \
   --instance-groups '[
@@ -110,7 +110,7 @@ You can monitor the status of on-start deep health checks using the Amazon SageM
 
 **Check node status using the AWS Command Line Interface**
 
-```
+```sh
 aws sagemaker list-cluster-nodes \
   --cluster-name {{my-slurm-cluster}}
 ```
@@ -119,7 +119,7 @@ Nodes undergoing deep health checks show `InstanceStatus.Status` as `DeepHealthC
 
 **Check Slurm state via SSM on the controller node**
 
-```
+```sh
 # View node states
 sinfo -a -N -l
 
@@ -137,7 +137,7 @@ Nodes under deep health check appear in the `hyperpod-deep-health-check` reserva
 
 When you scale up a cluster that has `OnStartDeepHealthChecks` configured, new nodes automatically go through deep health checks before accepting workloads. Existing nodes and running jobs are not affected.
 
-```
+```sh
 aws sagemaker update-cluster \
   --cluster-name {{my-slurm-cluster}} \
   --instance-groups '[
@@ -178,7 +178,7 @@ Each on-demand deep health check creates a cluster operation of type `DeepHealth
 
 In the following command, replace {{operation-id}} with the ID of the operation whose events you want to see.
 
-```
+```bash
 aws sagemaker list-cluster-events \
     --cluster-name my-cluster \
     --operation-id {{operation-id}}
@@ -218,7 +218,7 @@ A success banner confirms that the checks were initiated. Instances are unavaila
 
 You can specify which instance groups and which checks to run. Only one on-demand deep health check request can be active per cluster at a time.
 
-```
+```sh
 aws sagemaker start-cluster-health-check \
   --cluster-name {{my-slurm-cluster}} \
   --deep-health-check-configurations '[
@@ -254,20 +254,20 @@ On each node, deep health check logs are stored at `/var/log/aws/clusters/sagema
 
 You can access the log via SSM:
 
-```
+```sh
 aws ssm start-session \
   --target "sagemaker-cluster:{{<cluster_id>}}_{{<instance_group>}}-{{<instance_id>}}"
 ```
 
 Then view the log:
 
-```
+```sh
 cat /var/log/aws/clusters/sagemaker-deep-health-check.log
 ```
 
 **Example HARDWARE\_CHECK output**
 
-```
+```txt
 2026-03-29T18:03:14Z  info  Executing Hardware stress check with command: stress-ng
 2026-03-29T18:04:20Z  info  stress-ng success
 2026-03-29T18:04:20Z  info  GpuPci Count check success
@@ -275,7 +275,7 @@ cat /var/log/aws/clusters/sagemaker-deep-health-check.log
 
 **Example DCGM output**
 
-```
+```txt
 2026-03-29T18:35:02Z  info  DCGM diagnostic health summary: dcgmCheckLevel: 4
   dcgmVersion: 3.3.7 gpuDriverVersion: 535.183.01
   gpuDeviceIds: [2237] replacementRequired: false rebootRequired: false
@@ -283,14 +283,14 @@ cat /var/log/aws/clusters/sagemaker-deep-health-check.log
 
 **Example EFA output**
 
-```
+```txt
 2026-03-29T18:36:28Z  info  EFA Loopback check passed for device: rdmap0s29
   MaxBw: 58.59, AvgBw: 32.42, MaxTypicalLat: 30.87, AvgLat: 21.63
 ```
 
 **Example deep health check failure output**
 
-```
+```json
 {
     "level": "error",
     "ts": "2026-03-29T19:15:22Z",

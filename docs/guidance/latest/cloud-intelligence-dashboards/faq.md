@@ -115,7 +115,7 @@ In order to create an analysis from any of the Dashboards, Go edit the newly cre
 
 You can see this video below
 
-[![AWS Videos](https://img.youtube.com/vi/YNQBBM5RQtc?rel=0/0.jpg)](https://www.youtube.com/watch?v=YNQBBM5RQtc?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/YNQBBM5RQtc/0.jpg)](https://www.youtube.com/watch?v=YNQBBM5RQtc)
 
 See more in [customizations](customizations.md) section.
 
@@ -259,7 +259,7 @@ Athena may face processing limitations if the CUR has a significant volume. To o
 This Athena issue can happen if the CUR table changes a lot. Please check following resources:
 + https://repost.aws/knowledge-center/athena-view-is-stale-error
 
-[![AWS Videos](https://img.youtube.com/vi/7GpIgSaVYoI?rel=0/0.jpg)](https://www.youtube.com/watch?v=7GpIgSaVYoI?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/7GpIgSaVYoI/0.jpg)](https://www.youtube.com/watch?v=7GpIgSaVYoI)
 
 #### I see this error Error: CUR not detected and we have AWS Lake Formation activated
 <a name="i-see-this-error-error-cur-not-detected-and-we-have-aws-lake-formation-activated"></a>
@@ -376,7 +376,7 @@ Refer to the [Add organizational taxonomy](add-org-taxonomy.md) section.
 
 Step by step can be found on the video below
 
-[![AWS Videos](https://img.youtube.com/vi/dzRKDSXCtAs?rel=0/0.jpg)](https://www.youtube.com/watch?v=dzRKDSXCtAs?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/dzRKDSXCtAs/0.jpg)](https://www.youtube.com/watch?v=dzRKDSXCtAs)
 
 ### Can I translate Dashboards to another language?
 <a name="can-i-translate-dashboards-to-another-language"></a>
@@ -410,7 +410,7 @@ Set up CID in the Organization and use Athena command [UNLOAD](https://docs.aws.
 #### Click to display SQL query using UNLOAD
 <a name="collapsible-section-id-faq-10"></a>
 
-```
+```sql
 UNLOAD (
           SELECT
          , "identity_line_item_id"
@@ -447,7 +447,7 @@ You can also use Athena command [CTAS](https://docs.aws.amazon.com/athena/latest
 ##### Click to display SQL query using CTAS for Legacy CUR
 <a name="collapsible-section-id-faq-11"></a>
 
-```
+```sql
 CREATE TABLE (database).temp_table
 WITH (
       format = 'Parquet',
@@ -462,7 +462,7 @@ WHERE line_item_usage_account_id IN( '(account ID)', '(account ID)', '(account I
 ##### Click to display SQL query using CTAS for CUR 2.0
 <a name="collapsible-section-id-faq-12"></a>
 
-```
+```sql
 CREATE TABLE (database).temp_table
 WITH (
       format = 'Parquet',
@@ -524,7 +524,7 @@ Assumptions:
 
 1. Rename file export
 
-```
+```bash
 cd /tmp
 mkdir cur_mig
 cd cur_mig
@@ -541,7 +541,7 @@ mv cost_report_001 cid
 
 1. Copy to new bucket
 
-```
+```bash
 With AWS Credentials with sufficient permissions to copy cid-111112222233-shared data
 aws s3 cp --recursive ./ s3://NewOrgBucket/cur/FromOrgAccountId/cid/cid
 
@@ -565,7 +565,7 @@ Do you want to give access to the dashboards to someone within your organization
 
 Step by step can be found on the video below
 
-[![AWS Videos](https://img.youtube.com/vi/EFyWEyeXQlE?rel=0/0.jpg)](https://www.youtube.com/watch?v=EFyWEyeXQlE?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/EFyWEyeXQlE/0.jpg)](https://www.youtube.com/watch?v=EFyWEyeXQlE)
 
 See more in [Row Level Security](row-level-security.md) section.
 

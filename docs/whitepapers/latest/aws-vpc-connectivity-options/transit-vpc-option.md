@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
 ![Diagram showing a transit VPC structure.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/transit-vpc.png)
 
+Transit VPC
+
  Along with providing direct network routing between VPCs and on-premises networks, this design also enables the transit VPC to implement more complex routing rules, such as network address translation between overlapping network ranges, or to add additional network-level packet filtering or inspection. The transit VPC design can be used to support important use cases like, private networking, shared connectivity and cross account AWS usage.
 
 ## Additional resources

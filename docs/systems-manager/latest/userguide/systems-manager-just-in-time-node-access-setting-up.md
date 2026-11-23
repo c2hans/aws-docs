@@ -30,7 +30,7 @@ The following IAM policies outline the permissions needed to administer and allo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -292,7 +292,7 @@ The following IAM policies outline the permissions needed to administer and allo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -640,7 +640,7 @@ The following IAM policies outline the permissions needed to administer and allo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -753,7 +753,7 @@ The following IAM policies outline the permissions needed to administer and allo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

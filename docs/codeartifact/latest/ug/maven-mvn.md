@@ -22,7 +22,7 @@ To configure `mvn` to fetch dependencies from a CodeArtifact repository, you mus
 
 1. In `settings.xml` (typically found at `~/.m2/settings.xml`), add a `<servers>` section with a reference to the `CODEARTIFACT_AUTH_TOKEN` environment variable so that Maven passes the token in HTTP requests.
 
-   ```
+   ```xml
    <settings>
    ...
        <servers>
@@ -48,7 +48,7 @@ To configure `mvn` to fetch dependencies from a CodeArtifact repository, you mus
 
    The `get-repository-endpoint` command will return the repository endpoint:
 
-   ```
+   ```json
    url 'https://{{my_domain}}-{{111122223333}}.d.codeartifact.{{us-west-2}}.amazonaws.com/maven/{{my_repo}}/'
    ```
 **Note**
@@ -56,7 +56,7 @@ To use a dualstack endpoint, use the `codeartifact.{{region}}.on.aws` endpoint.
 
    Add the repository endpoint to `settings.xml` as follows.
 
-   ```
+   ```xml
    <settings>
    ...
        <profiles>
@@ -79,7 +79,7 @@ To use a dualstack endpoint, use the `codeartifact.{{region}}.on.aws` endpoint.
 
    Or, you can add the `<repositories>` section to a project POM file to use CodeArtifact for that project only.
 
-   ```
+   ```xml
    <project>
    ...
        <repositories>
@@ -126,7 +126,7 @@ To publish a Maven artifact with `mvn` to a CodeArtifact repository, you must al
 
 1. Add a `<servers>` section to `settings.xml` with a reference to the `CODEARTIFACT_AUTH_TOKEN` environment variable so that Maven passes the token in HTTP requests.
 
-   ```
+   ```xml
    <settings>
    ...
        <servers>
@@ -142,7 +142,7 @@ To publish a Maven artifact with `mvn` to a CodeArtifact repository, you must al
 
 1. Add a `<distributionManagement>` section to your project's `pom.xml`.
 
-   ```
+   ```xml
    <project>
    ...
         <distributionManagement>
@@ -171,7 +171,7 @@ aws codeartifact list-package-versions --domain {{my_domain}} --domain-owner {{1
 
 Sample output:
 
-```
+```json
 {
     "defaultDisplayVersion": null,
     "format": "{{maven}}",
@@ -233,7 +233,7 @@ These instructions are based on examples in the [Guide to deploying 3rd party JA
 
  If a package cannot be fetched from a configured repository, by default, the `mvn` command fetches it from Maven Central. Add the `mirrors` element to `settings.xml` to make `mvn` always use your CodeArtifact repository.
 
-```
+```xml
 <settings>
   ...
     <mirrors>
@@ -250,7 +250,7 @@ These instructions are based on examples in the [Guide to deploying 3rd party JA
 
 If you add a `mirrors` element, you must also have a `pluginRepository` element in your `settings.xml` or `pom.xml`. The following example fetches application dependencies and Maven plugins from a CodeArtifact repository.
 
-```
+```xml
 <settings>
 ...
   <profiles>
@@ -276,7 +276,7 @@ If you add a `mirrors` element, you must also have a `pluginRepository` element 
 
 The following example fetches application dependencies from a CodeArtifact repository and fetches Maven plugins from Maven Central.
 
-```
+```xml
 <profiles>
    <profile>
      <id>default</id>

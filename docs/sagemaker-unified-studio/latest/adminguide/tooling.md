@@ -39,4 +39,6 @@ Enable the managed Tooling blueprint for your domain on the Blueprints page. Too
 **Topics**
 + [Custom blueprints as Tooling](tooling-custom-blueprints.md)
 + [Tooling capabilities](tooling-capabilities.md)
++ [Enable Tooling blueprint](enable-tooling-blueprint.md)
++ [Manage Tooling blueprint parameters](manage-tooling-blueprint.md)
 + [Compatibility with managed blueprints](tooling-managed-compatibility.md)

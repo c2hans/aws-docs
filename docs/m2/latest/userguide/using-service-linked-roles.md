@@ -35,7 +35,7 @@ The role permissions policy named AWSM2ServicePolicy allows AWS Mainframe Modern
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

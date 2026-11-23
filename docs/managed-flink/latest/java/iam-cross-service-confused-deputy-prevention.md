@@ -41,7 +41,7 @@ In order to protect against the confused deputy problem, carry out the following
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[

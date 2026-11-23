@@ -28,7 +28,7 @@ You can use the standard `NetworkPolicy` to segment pod-to-pod traffic in the cl
 
 In the policy below, egress traffic from the *webapp* pods in the *sun* namespace is restricted.
 
-```
+```yaml
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
@@ -86,7 +86,7 @@ You can use the `ClusterNetworkPolicy` to enforce a network security standard th
 
 In the policy below, you can explicitly block cluster traffic from other namespaces to prevent network access to a sensitive workload namespace.
 
-```
+```yaml
 apiVersion: networking.k8s.aws/v1alpha1
 kind: ClusterNetworkPolicy
 metadata:

@@ -46,7 +46,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/ios-hos
 
    1.  Set `ios_test_host` to the test host that fits your test requirements. For example:
 
-      ```
+      ```yaml
       ios_test_host: macos_tahoe
       ```
 
@@ -67,7 +67,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/ios-hos
 
  For example, add the following line to use JDK 25 in your test environment:
 
-```
+```yaml
 - devicefarm-cli use java 25
 ```
 
@@ -78,7 +78,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/ios-hos
 
  Explicitly select the Appium version using the `devicefarm-cli`. On the `macos_tahoe` test host, Appium 3 is the default version:
 
-```
+```yaml
 - devicefarm-cli use appium 3 # Selects the version
 - appium --version            # Prints the version
 ```

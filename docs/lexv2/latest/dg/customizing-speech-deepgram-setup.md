@@ -79,7 +79,7 @@ To allow Amazon Lex V2 to retrieve your Deepgram API key, you need to attach a r
 
 The following is a sample resource policy that allows Amazon Lex V2 to retrieve the secret:
 
-```
+```json
 {
   "Version": "2012-10-17"		 	 	 ,
   "Statement": [

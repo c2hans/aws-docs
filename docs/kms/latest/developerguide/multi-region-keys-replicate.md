@@ -132,7 +132,7 @@ The response describes the new replica key. It includes fields for shared proper
 
 The response also includes the key ARN and region of the primary key and all of its replica keys, including the one that was just created in the ap-southeast-2 Region. In this example, the `ReplicaKey` element shows that this primary key was already replicated in the Europe (Ireland) Region (eu-west-1).
 
-```
+```bash
 $ aws kms replicate-key \
     --key-id arn:aws:kms:us-east-1:111122223333:key/mrk-1234abcd12ab34cd56ef1234567890ab \
     --replica-region ap-southeast-2

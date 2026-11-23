@@ -160,7 +160,7 @@ You should also see a `Request ID` in the response. The `Request ID` can be help
 
 The following Java code snippet attempts to detect objects in an image and performs rudimentary error handling. (In this case, it informs the user that the request failed.)
 
-```
+```java
 try {
     DetectLabelsResult result = rekognitionClient.detectLabels(request);
     List <Label> labels = result.getLabels();

@@ -12,7 +12,7 @@ This section provides an API reference for the MCS solution.
 ### Body parameter schema
 <a name="body-parameter-schema"></a>
 
-```
+```json
 {
  "module_name": "string"
 }

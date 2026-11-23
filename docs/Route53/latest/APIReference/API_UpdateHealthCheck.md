@@ -26,6 +26,7 @@ POST /2013-04-01/healthcheck/{{HealthCheckId}} HTTP/1.1
    <EnableSNI>{{boolean}}</EnableSNI>
    <FailureThreshold>{{integer}}</FailureThreshold>
    <FullyQualifiedDomainName>{{string}}</FullyQualifiedDomainName>
+   <HealthCheckSourceId>{{string}}</HealthCheckSourceId>
    <HealthCheckVersion>{{long}}</HealthCheckVersion>
    <HealthThreshold>{{integer}}</HealthThreshold>
    <InsufficientDataHealthStatus>{{string}}</InsufficientDataHealthStatus>
@@ -119,6 +120,13 @@ Type: String
 Length Constraints: Maximum length of 255.
 Required: No
 
+ ** [HealthCheckSourceId](#API_UpdateHealthCheck_RequestSyntax) **   <a name="Route53-UpdateHealthCheck-request-HealthCheckSourceId"></a>
+The ID of the health check source from which Route 53 sends requests to the endpoint. Applies only to health checks that have an `EndpointType` of `PRIVATE`. The health check source must be in the same account and have a status of `CREATE_COMPLETED`.
+Each health check source supports a limited number of active health checks. If you reach that limit, specify a different health check source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Required: No
+
  ** [HealthCheckVersion](#API_UpdateHealthCheck_RequestSyntax) **   <a name="Route53-UpdateHealthCheck-request-HealthCheckVersion"></a>
 A sequential counter that Amazon Route 53 sets to `1` when you create a health check and increments by 1 each time you update settings for the health check.
 We recommend that you use `GetHealthCheck` or `ListHealthChecks` to get the current value of `HealthCheckVersion` for the health check that you want to update, and that you include that value in your `UpdateHealthCheck` request. This prevents Route 53 from overwriting an intervening update:
@@ -156,15 +164,16 @@ The IPv4 or IPv6 IP address for the endpoint that you want Amazon Route 53 to pe
 Use one of the following formats for the value of `IPAddress`:
 +  **IPv4 address**: four values between 0 and 255, separated by periods (.), for example, `192.0.2.44`.
 +  **IPv6 address**: eight groups of four hexadecimal values, separated by colons (:), for example, `2001:0db8:85a3:0000:0000:abcd:0001:2345`. You can also shorten IPv6 addresses as described in RFC 5952, for example, `2001:db8:85a3::abcd:1:2345`.
-If the endpoint is an EC2 instance, we recommend that you create an Elastic IP address, associate it with your EC2 instance, and specify the Elastic IP address for `IPAddress`. This ensures that the IP address of your instance never changes. For more information, see the applicable documentation:
+For a public health check, if the endpoint is an EC2 instance, we recommend that you create an Elastic IP address, associate it with your EC2 instance, and specify the Elastic IP address for `IPAddress`. This ensures that the IP address of your instance never changes. For more information, see the applicable documentation:
 + Linux: [Elastic IP Addresses (EIP)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide for Linux Instances*
 + Windows: [Elastic IP Addresses (EIP)](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide for Windows Instances*
 If a health check already has a value for `IPAddress`, you can change the value. However, you can't update an existing health check to add or remove the value of `IPAddress`.
 For more information, see [FullyQualifiedDomainName](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateHealthCheck.html#Route53-UpdateHealthCheck-request-FullyQualifiedDomainName).
-Constraints: Route 53 can't check the health of endpoints for which the IP address is in local, private, non-routable, or multicast ranges. For more information about IP addresses for which you can't create health checks, see the following documents:
+Constraints: For a public health check (`EndpointType` of `PUBLIC`, the default), Route 53 can't check the health of endpoints for which the IP address is in local, private, non-routable, or multicast ranges. For more information about IP addresses for which you can't create public health checks, see the following documents:
 +  [RFC 5735, Special Use IPv4 Addresses](https://tools.ietf.org/html/rfc5735)
 +  [RFC 6598, IANA-Reserved IPv4 Prefix for Shared Address Space](https://tools.ietf.org/html/rfc6598)
 +  [RFC 5156, Special-Use IPv6 Addresses](https://tools.ietf.org/html/rfc5156)
+For a private endpoint health check (`EndpointType` of `PRIVATE`), if you specify `IPAddress`, it must be a private IPv4 or IPv6 address. Route 53 sends health checks to it from the health check source that you specify in `HealthCheckSourceId`.
 Type: String
 Length Constraints: Maximum length of 45.
 Pattern: `(^((([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]))$|^(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))$)`
@@ -244,8 +253,10 @@ HTTP/1.1 200
          </ChildHealthChecks>
          <Disabled>boolean</Disabled>
          <EnableSNI>boolean</EnableSNI>
+         <EndpointType>string</EndpointType>
          <FailureThreshold>integer</FailureThreshold>
          <FullyQualifiedDomainName>string</FullyQualifiedDomainName>
+         <HealthCheckSourceId>string</HealthCheckSourceId>
          <HealthThreshold>integer</HealthThreshold>
          <InsufficientDataHealthStatus>string</InsufficientDataHealthStatus>
          <Inverted>boolean</Inverted>

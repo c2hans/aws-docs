@@ -44,7 +44,7 @@ Here's an example of a *trusted policy* that shows how you can use `aws:SourceAr
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":[

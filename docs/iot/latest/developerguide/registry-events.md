@@ -23,7 +23,7 @@ The registry publishes the following event messages when things are created, upd
 
 The messages contain the following example payload:
 
-```
+```JSON
 {
     "eventType" : "THING_EVENT",
     "eventId" : "f5ae9b94-8b8e-4d8e-8c8f-b3266dd89853",
@@ -94,7 +94,7 @@ The registry publishes the following event messages when thing types are created
 
 The message contains the following example payload:
 
-```
+```JSON
 {
     "eventType" : "THING_TYPE_EVENT",
     "eventId" : "8827376c-4b05-49a3-9b3b-733729df7ed5",
@@ -170,7 +170,7 @@ The registry publishes the following event messages when a thing type is associa
 
 The following is an example of an `added` payload. Payloads for `removed` messages are similar.
 
-```
+```JSON
 {
     "eventId" : "87f8e095-531c-47b3-aab5-5171364d138d",
     "eventType" : "THING_TYPE_ASSOCIATION_EVENT",
@@ -225,7 +225,7 @@ The registry publishes the following event messages when a thing group is create
 
 The following is an example of an `updated` payload. Payloads for `created` and `deleted` messages are similar.
 
-```
+```JSON
 {
   "eventType": "THING_GROUP_EVENT",
   "eventId": "8b9ea8626aeaa1e42100f3f32b975899",
@@ -322,7 +322,7 @@ The registry publishes the following event messages when a thing is added to or 
 
 The messages contain the following example payload:
 
-```
+```JSON
 {
     "eventType" : "THING_GROUP_MEMBERSHIP_EVENT",
     "eventId" : "d684bd5f-6f6e-48e1-950c-766ac7f02fd1",
@@ -378,7 +378,7 @@ The registry publishes the following event messages when a thing group is added 
 
 The message contains the following example payload:
 
-```
+```JSON
 {
     "eventType" : "THING_GROUP_HIERARCHY_EVENT",
     "eventId" : "264192c7-b573-46ef-ab7b-489fcd47da41",

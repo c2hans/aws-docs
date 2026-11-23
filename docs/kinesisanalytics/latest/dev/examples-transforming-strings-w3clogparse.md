@@ -48,7 +48,7 @@ Create an Amazon Kinesis data stream, and populate the log records as follows:
 
 1. Run the following Python code to populate the sample log records. This simple code continuously writes the same log record to the stream.
 
-   ```
+   ```python
 
    import json
    import boto3

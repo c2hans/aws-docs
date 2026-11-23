@@ -128,7 +128,7 @@ List all Trusted Advisor recommendations associated with an AWS resource by its 
 #### Sample Request
 <a name="API_ListRecommendationsForResource_Example_1_Request"></a>
 
-```
+```json
 {
                     "awsResourceArn": "arn:aws:ec2:us-east-1:000000000000:instance/i-0abcd1234efgh5678"
                     }
@@ -137,7 +137,7 @@ List all Trusted Advisor recommendations associated with an AWS resource by its 
 #### Sample Response
 <a name="API_ListRecommendationsForResource_Example_1_Response"></a>
 
-```
+```json
 {
                     "recommendationForResourceSummaries": [
                     {

@@ -26,7 +26,7 @@ The following code example shows how to use `GetRoutingControlState`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53recoverycluster#code-examples).
 
-```
+```java
     public static GetRoutingControlStateResponse getRoutingControlState(List<ClusterEndpoint> clusterEndpoints,
             String routingControlArn) {
         // As a best practice, we recommend choosing a random cluster endpoint to get or
@@ -60,7 +60,7 @@ The following code example shows how to use `UpdateRoutingControlState`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53recoverycluster#code-examples).
 
-```
+```java
     public static UpdateRoutingControlStateResponse updateRoutingControlState(List<ClusterEndpoint> clusterEndpoints,
             String routingControlArn,
             String routingControlState) {

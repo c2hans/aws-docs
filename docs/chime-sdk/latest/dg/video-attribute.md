@@ -14,7 +14,7 @@ The following image shows a video tile with a border color and corner radius app
 
 The following example shows how to use each attribute. In this case, video tiles have rounded corners with a five-pixel radius. The tiles have a green border, also five pixels wide. When the speaker talks, the `HighlightColor` attribute changes the border color to red.
 
-```
+```json
 {
    "CompositedVideo":{
       "Layout":"GridView",

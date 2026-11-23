@@ -55,7 +55,7 @@ For more information, see [Create a network ACL for your VPC](https://docs.aws.a
 **Tools for PowerShell V4**
 **Example 1: This example creates a network ACL for the specified VPC.**
 
-```
+```powershell
 New-EC2NetworkAcl -VpcId vpc-12345678
 ```
 **Output:**
@@ -73,7 +73,7 @@ VpcId        : vpc-12345678
 **Tools for PowerShell V5**
 **Example 1: This example creates a network ACL for the specified VPC.**
 
-```
+```powershell
 New-EC2NetworkAcl -VpcId vpc-12345678
 ```
 **Output:**

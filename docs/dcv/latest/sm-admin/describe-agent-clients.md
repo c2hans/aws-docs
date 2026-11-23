@@ -43,7 +43,7 @@ sudo -u root dcv-session-manager-broker describe-agent-clients
 
 **Output**
 
-```
+```json
 Session manager agent clients
 [ {
 "name" : "test",

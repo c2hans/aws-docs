@@ -25,7 +25,7 @@ You can also edit or delete a delivery from the list page by selecting the deliv
 
  Use the `update-channel` command to change the data freshness interval. The following command updates a delivery to a data freshness interval of 600 seconds:
 
-```
+```bash
 aws kinesis update-channel \
     --channel-arn "arn:aws:kinesis:us-east-1:111122223333:channel/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111" \
     --s3-destination-configuration '{

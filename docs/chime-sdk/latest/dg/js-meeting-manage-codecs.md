@@ -23,7 +23,7 @@ When providing multiple codec preferences, the service automatically selects the
 
 The following example shows how to set a video codec preference for VP9 with a fallback option of VP8:
 
-```
+```javascript
 // A meeting session has already been created and stored in `this.meetingSession`
 this.meetingSession.audioVideo.setVideoCodecSendPreferences(
 	[
@@ -43,7 +43,7 @@ To set preferences for content sharing, use the [ ContentShareControllerFacade.s
 
  The following example sets a content video codec preference for VP9 with a fallback option of VP8.
 
-```
+```javascript
 // A meeting session has already been created and stored in `this.meetingSession`
     this.meetingSession.audioVideo.setContentShareVideoCodecPreferences(
 	[

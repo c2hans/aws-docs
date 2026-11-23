@@ -94,7 +94,7 @@ my_package.zip/
 
 If your code requires third-party libraries, stage your source files and their dependencies together in a single directory, then create the zip from the contents of that directory. You don't need to bundle packages that are already pre-installed. For the list, see [Pre-installed packages](#operators-python-bash-preinstalled).
 
-```
+```bash
 # Stage your source files and dependencies in one directory
 mkdir my_package
 cp my_module.py my_package/
@@ -135,7 +135,7 @@ Install the provider into your staging directory with the same platform flags as
 
 In the following command, replace `apache-airflow-providers-http` with the provider package that you need. If needed, update the Apache Airflow and Python versions in the constraints URL to match the pre-installed versions listed in [Pre-installed packages](#operators-python-bash-preinstalled).
 
-```
+```bash
 pip install apache-airflow-providers-http --target my_package \
     --platform manylinux2014_x86_64 \
     --python-version 3.12 \
@@ -215,7 +215,7 @@ For more information about the YAML workflow definition format, see [YAML suppor
        --region {{us-east-1}}
    ```
 
-   ```
+   ```json
    {
        "RunId": "abc123XYZ",
        "RunType": "ON_DEMAND",
@@ -252,7 +252,7 @@ The following examples start with the simplest case and build up. Each example u
 
 The following module defines a Python callable. Save it as `my_module.py`, and zip it with `zip my_package.zip my_module.py`.
 
-```
+```python
 # my_module.py
 def hello_world():
     print("Hello from Python")
@@ -261,7 +261,7 @@ def hello_world():
 
 The following workflow definition runs the callable with `PythonOperator` and a command with `BashOperator`:
 
-```
+```yaml
 my_dag:
   start_date: "2024-01-01"
   schedule: null
@@ -291,7 +291,7 @@ This example uses only a custom operator, with no connections, variables, or thi
 
 1. Add the operator to `my_operators/greeting.py`. It takes a `name` argument, logs a greeting, and returns the greeting to XCom.
 
-   ```
+   ```python
    # my_operators/greeting.py
    try:
        from airflow.sdk import BaseOperator  # Apache Airflow 3
@@ -324,7 +324,7 @@ This example uses only a custom operator, with no connections, variables, or thi
 
 1. Create a workflow definition named `greeting_dag.yaml`. The `operator` key includes the folder name, and the `name` key is passed to the operator's `__init__` method.
 
-   ```
+   ```yaml
    greeting_dag:
      start_date: "2024-01-01"
      schedule: null
@@ -345,7 +345,7 @@ This example uses only a custom operator, with no connections, variables, or thi
 
 This example runs the `HttpOperator` from the `apache-airflow-providers-http` provider. Install the provider into your code package as described in [Adding Apache Airflow provider packages](#operators-provider-packages), then reference the operator by its full class path:
 
-```
+```yaml
 http_dag:
   start_date: "2024-01-01"
   schedule: null
@@ -369,7 +369,7 @@ Because this operator calls an external endpoint, create the workflow with a Ama
 
 The following operator reads an Apache Airflow connection and a variable in its `execute` method, prints the connection fields, and returns a result to XCom. If the connection or variable doesn't exist, the operator fails the task with a message that names the missing key. Save it as `backend_conn_operator.py`.
 
-```
+```python
 # backend_conn_operator.py
 from airflow.exceptions import AirflowException, AirflowNotFoundException
 
@@ -409,7 +409,7 @@ The operator accepts the following arguments:
 
 The following workflow definition runs the operator. Save it as `backend_conn_dag.yaml`.
 
-```
+```yaml
 backend_conn_dag:
   start_date: "2024-01-01"
   schedule: null

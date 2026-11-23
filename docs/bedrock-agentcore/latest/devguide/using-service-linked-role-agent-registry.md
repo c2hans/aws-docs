@@ -103,7 +103,7 @@ If you delete this service-linked role and then need to create it again, you can
 
 You can also use the IAM console to create a service-linked role with the ** AWS Agent Registry** use case. In the AWS CLI or the AWS API, create a service-linked role with the `agent-registry.amazonaws.com` service name:
 
-```
+```bash
 aws iam create-service-linked-role --aws-service-name "agent-registry.amazonaws.com"
 ```
 

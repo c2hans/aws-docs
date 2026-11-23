@@ -41,6 +41,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 
 ![Hosting game servers with multiple EC2 pricing options](https://docs.aws.amazon.com/wellarchitected/latest/games-industry-lens/images/image10.jpeg)
 
+*Hosting game servers with multiple EC2 pricing options*
+
  In the diagram, the player concurrency fluctuates over time which makes it difficult to manage utilization and achieve cost optimization. To address this fluctuation, consider adopting a mixture of different compute pricing options, using Savings Plans for EC2 to meet the needs of your minimum usage requirements while relying on EC2 On-Demand and EC2 Spot Instances to meet the needs of your player demand.
 
 ### Implementation steps

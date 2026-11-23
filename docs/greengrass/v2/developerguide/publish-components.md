@@ -30,7 +30,7 @@ Core device roles don't allow access to S3 buckets by default. If this is your f
 
 1. If you haven't already, build the Greengrass component. The [component build](greengrass-development-kit-cli-component.md#greengrass-development-kit-cli-component-build) command produces a recipe and artifacts in the `greengrass-build` folder in the component folder. Run the following command.
 
-   ```
+   ```bash
    gdk component build
    ```
 
@@ -42,7 +42,7 @@ AWS IoT Greengrass computes the digest of each artifact when you create the comp
 
    Run the following command.
 
-   ```
+   ```bash
    gdk component publish
    ```
 
@@ -80,13 +80,13 @@ We recommend that you include the component name and version in the path to the 
 
       Run the following command to publish an artifact file to an S3 bucket. Replace amzn-s3-demo-bucket with the name of the bucket, and replace {{artifacts/com.example.HelloWorld/1.0.0/artifact.py}} with the path to the artifact file.
 
-      ```
+      ```bash
       aws s3 cp {{artifacts/com.example.HelloWorld/1.0.0/artifact.py}} s3://amzn-s3-demo-bucket/{{artifacts/com.example.HelloWorld/1.0.0/artifact.py}}
       ```
 **Tip**
 To speed up component creation for large artifacts, consider uploading your artifacts to S3 as a single-part upload with SHA-256 checksums enabled. Use the `--checksum-algorithm SHA256` option with the AWS CLI, and set `s3.multipart_threshold` higher than your file size to prevent multipart upload. For example, to upload a 2 GB artifact:
 
-      ```
+      ```bash
       aws configure set s3.multipart_threshold 5GB
       aws s3 cp {{artifacts/com.example.HelloWorld/1.0.0/artifact.bin}} s3://amzn-s3-demo-bucket/{{artifacts/com.example.HelloWorld/1.0.0/artifact.bin}} --checksum-algorithm SHA256
       ```
@@ -107,7 +107,7 @@ Core device roles don't allow access to S3 buckets by default. If this is your f
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
      {{...}}
      "Manifests": [
@@ -132,7 +132,7 @@ You can add the `"Unarchive": "ZIP"` option for a ZIP artifact to configure the 
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    {{...}}
    Manifests:
      - Lifecycle:
@@ -153,7 +153,7 @@ You can use the `Unarchive: ZIP` option to configure the AWS IoT Greengrass Core
 
    Run the following command to create the component from a recipe file. This command creates the component and publishes it as a private AWS IoT Greengrass component in your AWS account. Replace {{path/to/recipeFile}} with the path to the recipe file.
 
-   ```
+   ```bash
    aws greengrassv2 create-component-version --inline-recipe fileb://{{path/to/recipeFile}}
    ```
 
@@ -163,7 +163,7 @@ AWS IoT Greengrass computes the digest of each artifact when you create the comp
 
 1. Each component in the AWS IoT Greengrass service has a state. Run the following command to confirm the state of the component version that you publish in this procedure. Replace {{com.example.HelloWorld}} and {{1.0.0}} with the component version to query. Replace the `arn` with the ARN from the previous step.
 
-   ```
+   ```bash
    aws greengrassv2 describe-component --arn "arn:aws:greengrass:{{region}}:{{account-id}}:components:{{com.example.HelloWorld}}:versions:{{1.0.0}}"
    ```
 

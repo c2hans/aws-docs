@@ -25,7 +25,7 @@ You can create these streams using either the Amazon Kinesis console or the foll
 
 1. To create the first stream (`ExampleInputStream`), use the following Amazon Kinesis `create-stream` AWS CLI command.
 
-   ```
+   ```bash
    $ aws kinesis create-stream \
    --stream-name ExampleInputStream \
    --shard-count 1 \
@@ -35,7 +35,7 @@ You can create these streams using either the Amazon Kinesis console or the foll
 
 1. To create the second stream that the application uses to write output, run the same command, changing the stream name to `ExampleOutputStream`.
 
-   ```
+   ```bash
    $ aws kinesis create-stream \
    --stream-name ExampleOutputStream \
    --shard-count 1 \
@@ -53,7 +53,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Create a file named `stock.py` with the following contents:
 
-   ```
+   ```python
 
    import datetime
    import json
@@ -83,7 +83,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Later in the tutorial, you run the `stock.py` script to send data to the application.
 
-   ```
+   ```bash
    $ python stock.py
    ```
 
@@ -128,7 +128,7 @@ Your Java application requires the following components:
 
 1. Use the following code for a file named `StreamingJob.java`.
 
-   ```
+   ```java
 
    package com.amazonaws.services.kinesisanalytics;
 
@@ -219,7 +219,7 @@ Your Java application requires the following components:
 1. To use your application code, you compile and package it into a JAR file. You can compile and package your code in one of two ways:
    + Use the command line Maven tool. Create your JAR file by running the following command in the directory that contains the `pom.xml` file:
 
-     ```
+     ```bash
      mvn package
      ```
    + Use your development environment. See your development environment documentation for details.
@@ -317,7 +317,7 @@ Edit the IAM policy to add permissions to access the Kinesis data streams.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -453,7 +453,7 @@ Use the following code to create the `KAReadSourceStreamWriteSinkStream` permiss
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -537,7 +537,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 1. Save the following JSON code to a file named `create_request.json`. Replace the sample role ARN with the ARN for the role that you created previously. Replace the bucket ARN suffix (`{{username}}`) with the suffix that you chose in the previous section. Replace the sample account ID (`{{012345678901}}`) in the service execution role with your account ID.
 
-   ```
+   ```json
    {
        "ApplicationName": "test",
        "ApplicationDescription": "my java test app",
@@ -577,7 +577,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 1. Execute the [`CreateApplication`](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 create-application --cli-input-json file://create_request.json
    ```
 
@@ -592,7 +592,7 @@ In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/ki
 
 1. Save the following JSON code to a file named `start_request.json`.
 
-   ```
+   ```json
    {
        "ApplicationName": "test",
        "RunConfiguration": {
@@ -605,7 +605,7 @@ In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/ki
 
 1. Execute the [`StartApplication`](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 start-application --cli-input-json file://start_request.json
    ```
 
@@ -620,14 +620,14 @@ In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/kin
 
 1. Save the following JSON code to a file named `stop_request.json`.
 
-   ```
+   ```json
    {"ApplicationName": "test"
    }
    ```
 
 1. Execute the [`StopApplication`](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 stop-application --cli-input-json file://stop_request.json
    ```
 

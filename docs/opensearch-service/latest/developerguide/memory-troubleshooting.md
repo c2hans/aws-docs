@@ -16,7 +16,6 @@ This topic describes problems that you might encounter when you use Amazon OpenS
 + [A search fails with ValidationException](#memory-troubleshooting-search-validation)
 + [Requests fail with ConflictException](#memory-troubleshooting-conflict)
 + [Requests fail for a space with a customer managed key](#memory-troubleshooting-cmk)
-+ [A blob event fails](#memory-troubleshooting-blob)
 
 ## I can't send events to a space I just created
 <a name="memory-troubleshooting-new-space"></a>
@@ -53,7 +52,7 @@ This topic describes problems that you might encounter when you use Amazon OpenS
 
 1. **The space's customer managed key is unavailable.** Extraction stops while the key is disabled or pending deletion. Check the key's state in AWS KMS.
 
-To confirm that extraction is running, look for `ExtractMemories` service events in CloudTrail. For more information, see [Service events](memory-monitoring.md#memory-cloudtrail-service).
+To confirm that extraction is running, look for `ExtractMemories` service events in CloudTrail. For more information, see [Service events](memory-cloudtrail.md#memory-cloudtrail-service).
 
 ## Memories duplicate or contradict each other
 <a name="memory-troubleshooting-duplicates"></a>
@@ -132,14 +131,3 @@ For more information, see [Idempotent requests](memory-errors.md#memory-errors-i
 | AccessDeniedException on event or memory operations | The caller can't use the key. | Grant the AWS KMS actions the operation needs. See [Permissions required for a customer managed key](memory-data-protection.md#memory-encryption-permissions). |
 | ValidationException mentioning the key | The key is disabled, pending deletion, or deleted. | Enable the key or cancel its deletion. |
 | ThrottlingException | AWS KMS throttled the request. | Retry with backoff, or request a higher AWS KMS request quota. |
-
-## A blob event fails
-<a name="memory-troubleshooting-blob"></a>
-
-**Problem**: A `CreateEvent` request with a `blob` payload fails.
-
-**Cause and resolution**: Check the following:
-+ `contentType` is `application/pdf`, `image/png`, or `image/jpeg`. Other values fail with `ValidationException`.
-+ `source.s3Location.uri` is a valid Amazon S3 URI, such as `s3://amzn-s3-demo-bucket/reports/q3.pdf`.
-+ The bucket is in the same Region as the space.
-+ The caller has `s3:GetObject` on the object, and `kms:Decrypt` on the object's key if the object uses SSE-KMS. OpenSearch Memory reads the object with the caller's credentials when you call `CreateEvent`.

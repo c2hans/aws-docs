@@ -107,7 +107,7 @@ Removes tags from a resource.
 #### POST schema
 <a name="tags-resource-arn-request-body-post-example"></a>
 
-```
+```json
 {
   "tags": {
   }
@@ -120,7 +120,7 @@ Removes tags from a resource.
 #### ListTagsForResourceOutput schema
 <a name="tags-resource-arn-response-body-listtagsforresourceoutput-example"></a>
 
-```
+```json
 {
   "tags": {
   }
@@ -130,7 +130,7 @@ Removes tags from a resource.
 #### ErrorOutput schema
 <a name="tags-resource-arn-response-body-erroroutput-example"></a>
 
-```
+```json
 {
   "Message": "string",
   "Code": "string"

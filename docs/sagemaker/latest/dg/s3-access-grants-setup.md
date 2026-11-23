@@ -16,7 +16,7 @@ After Amazon S3 Access Grants is set up, [add the following permissions](https:/
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -49,7 +49,7 @@ Ensure that your Amazon S3 Access Grants role's trust policy allows the `sts:Set
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -82,7 +82,7 @@ Ensure that your Amazon S3 Access Grants role's trust policy allows the `sts:Set
 
 The following is an example Python script showing how Amazon S3 Access Grants can be used to call Amazon S3. This assumes you have already successfully set up trusted identity propagation with SageMaker AI.
 
-```
+```python
 import boto3
 from botocore.config import Config
 

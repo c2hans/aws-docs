@@ -58,7 +58,7 @@ If your application needs to perform cleanup during shutdown, handle `SIGTERM`. 
 
 The following example handles `SIGTERM`:
 
-```
+```javascript
 process.on('SIGTERM', () => {
   // Finish short cleanup, such as flushing buffered logs, within 1 second.
   process.exit(0);

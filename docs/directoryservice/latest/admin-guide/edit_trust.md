@@ -28,7 +28,7 @@ You only need to establish this trust relationship for IAM roles that are not cr
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

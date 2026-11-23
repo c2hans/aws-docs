@@ -13,7 +13,7 @@ URI: `GET /greengrass/groups/{{GroupId}}/role`
 ## CLI:
 <a name="getassociatedrole-get-cli"></a>
 
-```
+```bash
 aws greengrass get-associated-role \
   --group-id <value>  \
   [--cli-input-json <value>] \
@@ -22,7 +22,7 @@ aws greengrass get-associated-role \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string"
 }
@@ -43,7 +43,7 @@ type: string
 Success.
  [ GetAssociatedRoleResponse](definitions-getassociatedroleresponse.md)
 
-```
+```json
 {
 "AssociatedAt": "string",
 "RoleArn": "string"
@@ -62,7 +62,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -98,7 +98,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

@@ -51,7 +51,7 @@ You can retrieve it from the AWS CloudFormation console:
 
 Alternatively, if you have AWS CLI access:
 
-```
+```bash
 # Replace <stack-name> with your CloudFormation stack name
 aws cloudformation describe-stacks --stack-name $(aws cloudformation list-stack-resources --stack-name <stack-name> --query 'StackResourceSummaries[?starts_with(LogicalResourceId, `PortalStackNested`)].PhysicalResourceId' --output text) --query 'Stacks[0].Outputs[?OutputKey==`PortalCloudFrontDistributionUrl`].OutputValue' --output text
 ```
@@ -118,14 +118,14 @@ Download the appropriate installer for your platform.
 
 1. Make executable and run:
 
-   ```
+   ```bash
    chmod +x spatial-data-portal_0.2.7_amd64.AppImage
    ./spatial-data-portal_0.2.7_amd64.AppImage
    ```
 
 1. (Optional) Integrate with system:
 
-   ```
+   ```bash
    # Move to applications directory
    sudo mkdir -p /opt/spatial-data-management
    sudo mv spatial-data-portal_0.2.7_amd64.AppImage /opt/spatial-data-management/
@@ -143,14 +143,14 @@ Download the appropriate installer for your platform.
 
  **Option 2: DEB Package (Ubuntu/Debian)**
 
-```
+```bash
 sudo dpkg -i spatial-data-portal_0.2.7_amd64.deb
 sudo apt-get install -f  # Fix any dependency issues if needed
 ```
 
  **Option 3: RPM Package (Red Hat/Fedora/SUSE)**
 
-```
+```bash
 # Red Hat/CentOS
 sudo rpm -i spatial-data-portal-0.2.7-1.x86_64.rpm
 
@@ -184,7 +184,7 @@ The CLI/SDK can be installed independently for automation and scripting workflow
 ### Verify Python installation
 <a name="verify-python-installation"></a>
 
-```
+```bash
 # Check Python version
 python --version
 # or
@@ -218,7 +218,7 @@ Verify the downloaded file using the SHA256 checksum:
 
  **Windows (PowerShell):**
 
-```
+```powershell
 # Calculate SHA256 hash (replace <filename> with your downloaded file)
 $hash = Get-FileHash -Algorithm SHA256 <filename>.whl
 
@@ -234,7 +234,7 @@ if ($hash.Hash -eq $expectedHash.Split()[0]) {
 
  **macOS and Linux:**
 
-```
+```bash
 # Verify checksum (replace <filename> with your downloaded file)
 sha256sum -c <filename>.whl.sha256
 
@@ -248,7 +248,7 @@ sha256sum -c <filename>.whl.sha256
 
  **Windows:**
 
-```
+```bash
 # Install CLI (replace <filename> with your downloaded file)
 pip install <filename>.whl
 
@@ -258,7 +258,7 @@ spatial-data-mgmt -h
 
  **macOS and Linux:**
 
-```
+```bash
 # Install CLI (replace <filename> with your downloaded file)
 pip3 install <filename>.whl
 
@@ -274,7 +274,7 @@ spatial-data-mgmt -h
 
 To update to a newer version:
 
-```
+```bash
 # Uninstall current version
 pip uninstall amzn-spatial-data-mgmt
 
@@ -288,7 +288,7 @@ spatial-data-mgmt -h
 ### Uninstall CLI/SDK
 <a name="uninstall-cli"></a>
 
-```
+```bash
 # Uninstall CLI
 pip uninstall amzn-spatial-data-mgmt
 
@@ -352,7 +352,7 @@ This section provides solutions to common issues you might encounter when settin
 + Verify the URL is correct from your IT Administrator
 + If you have AWS CLI access, retrieve the portal URL from AWS CloudFormation:
 
-  ```
+  ```bash
   aws cloudformation describe-stacks --stack-name $(aws cloudformation list-stack-resources --stack-name <YOUR STACK> --query 'StackResourceSummaries[?starts_with(LogicalResourceId, `PortalStackNested`)].PhysicalResourceId' --output text) --query 'Stacks[0].Outputs[?OutputKey==`PortalCloudFrontDistributionUrl`].OutputValue' --output text
   ```
 + Check network connectivity and VPN if required

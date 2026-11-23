@@ -64,6 +64,11 @@ The status of the connection group.
 Type: String
 Required: No
 
+ ** ViewerFallback **   <a name="cloudfront-Type-ConnectionGroupSummary-ViewerFallback"></a>
+The distribution whose certificate CloudFront uses for viewer requests that arrive on the connection group's Anycast static IPs without Server Name Indication (SNI).
+Type: [ViewerFallback](API_ViewerFallback.md) object
+Required: No
+
 ## See Also
 <a name="API_ConnectionGroupSummary_SeeAlso"></a>
 

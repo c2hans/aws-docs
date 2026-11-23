@@ -127,7 +127,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of CreateBotReplica.
 
-```
+```json
 PUT https://models-v2-lex.us-east-1.amazonaws.com/bots/BOT1234567/replicas
 {
     "replicaRegion": "us-west-2"
@@ -139,7 +139,7 @@ PUT https://models-v2-lex.us-east-1.amazonaws.com/bots/BOT1234567/replicas
 
 This example illustrates one usage of CreateBotReplica.
 
-```
+```json
 {
     "botId": "BOT1234567",
     "botReplicaStatus": "Enabling",

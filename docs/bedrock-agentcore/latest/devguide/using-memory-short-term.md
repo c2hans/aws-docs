@@ -13,7 +13,7 @@ The following section discusses short-term memory with the AWS SDK. For examples
 
 The AgentCore CLI provides commands for inspecting deployed memories and their data. Use event commands for short-term memory and record commands for long-term memory.
 
-```
+```bash
 # List memories and inspect one memory
 agentcore memory list
 

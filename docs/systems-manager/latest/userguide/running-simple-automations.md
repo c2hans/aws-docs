@@ -88,7 +88,7 @@ The following procedure describes how to use the AWS CLI (on Linux or Windows) o
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Start-SSMAutomationExecution `
      -DocumentName {{runbook name}} `
      -Parameter {{runbook parameters}}
@@ -119,7 +119,7 @@ The following procedure describes how to use the AWS CLI (on Linux or Windows) o
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Start-SSMAutomationExecution `
      -DocumentName AWS-RestartEC2Instance `
      -Parameter @{"InstanceId"="i-02573cafcfEXAMPLE"}
@@ -177,7 +177,7 @@ The following procedure describes how to use the AWS CLI (on Linux or Windows) o
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Get-SSMAutomationExecutionList | `
      Where {$_.AutomationExecutionId -eq "4105a4fc-f944-11e6-9d32-0123456789ab"}
    ```

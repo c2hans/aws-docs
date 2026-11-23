@@ -22,7 +22,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 Create functions that wrap IAM user actions.
 
-```
+```python
 import logging
 import time
 
@@ -129,7 +129,7 @@ def detach_policy(user_name, policy_arn):
 ```
 Create functions that wrap IAM policy actions.
 
-```
+```python
 import json
 import logging
 import operator
@@ -188,7 +188,7 @@ def delete_policy(policy_arn):
 ```
 Create functions that wrap IAM access key actions.
 
-```
+```python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -236,7 +236,7 @@ def delete_key(user_name, key_id):
 ```
 Use the wrapper functions to create users with differing policies and use their credentials to access an Amazon S3 bucket.
 
-```
+```python
 def usage_demo():
     """
     Shows how to manage users, keys, and policies.

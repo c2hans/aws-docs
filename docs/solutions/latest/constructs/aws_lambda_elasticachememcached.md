@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition :
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { LambdaToElasticachememcached } from '@aws-solutions-constructs/aws-lambda-elasticachememcached';
@@ -40,7 +40,7 @@ new LambdaToElasticachememcached(this, 'LambdaToElasticachememcachedPattern', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_lambda_elasticachememcached import LambdaToElasticachememcached
 from aws_cdk import (
     aws_lambda as _lambda,
@@ -57,7 +57,7 @@ LambdaToElasticachememcached(self, 'LambdaToCachePattern',
         )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

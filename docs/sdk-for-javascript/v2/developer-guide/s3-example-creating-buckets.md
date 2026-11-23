@@ -35,7 +35,7 @@ To set up and run this example, you must first complete these tasks:
 
 Configure the SDK for JavaScript by creating a global configuration object then setting the Region for your code. In this example, the Region is set to `us-west-2`.
 
-```
+```javascript
 // Load the SDK for JavaScript
 var AWS = require('aws-sdk');
 // Set the Region
@@ -47,7 +47,7 @@ AWS.config.update({region: 'us-west-2'});
 
 Create a Node.js module with the file name `s3_listbuckets.js`. Make sure to configure the SDK as previously shown. To access Amazon Simple Storage Service, create an `AWS.S3` service object. Call the `listBuckets` method of the Amazon S3 service object to retrieve a list of your buckets. The `data` parameter of the callback function has a `Buckets` property containing an array of maps to represent the buckets. Display the bucket list by logging it to the console.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -68,7 +68,7 @@ s3.listBuckets(function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node s3_listbuckets.js
 ```
 
@@ -81,7 +81,7 @@ Create a Node.js module with the file name `s3_createbucket.js`. Make sure to co
 
 Add a variable to hold the parameters used to call the `createBucket` method of the Amazon S3 service object, including the name for the newly created bucket. The callback function logs the new bucket's location to the console after Amazon S3 successfully creates it.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -120,7 +120,7 @@ Create a Node.js module with the file name `s3_upload.js`. Make sure to configur
 
 Create a variable with the parameters needed to call the `upload` method of the Amazon S3 service object. Provide the name of the target bucket in the `Bucket` parameter. The `Key` parameter is set to the name of the selected file, which you can obtain using the Node.js `path` module. The `Body` parameter is set to the contents of the file, which you can obtain using `createReadStream` from the Node.js `fs` module.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -169,7 +169,7 @@ Create a Node.js module with the file name `s3_listobjects.js`. Make sure to con
 
 Add a variable to hold the parameters used to call the `listObjects` method of the Amazon S3 service object, including the name of the bucket to read. The callback function logs a list of objects (files) or a failure message.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -195,7 +195,7 @@ s3.listObjects(bucketParams, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node s3_listobjects.js
 ```
 
@@ -208,7 +208,7 @@ Create a Node.js module with the file name `s3_deletebucket.js`. Make sure to co
 
 Add a variable to hold the parameters used to call the `createBucket` method of the Amazon S3 service object, including the name of the bucket to delete. The bucket must be empty in order to delete it. The callback function logs a success or failure message.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -234,7 +234,7 @@ s3.deleteBucket(bucketParams, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node s3_deletebucket.js
 ```
 

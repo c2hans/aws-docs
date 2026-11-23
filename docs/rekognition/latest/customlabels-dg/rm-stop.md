@@ -93,7 +93,7 @@ A model might take a while to stop. To check the current status, use `DescribePr
    + `project_arn` – the ARN of the project that contains the model that you want to stop.
    + `model_arn` – the ARN of the model that you want to stop.
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
 
@@ -233,7 +233,7 @@ A model might take a while to stop. To check the current status, use `DescribePr
    + `project_arn` – the ARN of the project that contains the model that you want to stop.
    + `model_arn` – the ARN of the model that you want to stop.
 
-   ```
+   ```java
    /*
       Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
       SPDX-License-Identifier: Apache-2.0

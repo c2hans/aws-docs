@@ -39,7 +39,7 @@ This section provides you with instructions on how to opt out of external metric
    + Replace {{myRegion}} with the source AWS Region.
    + Replace {{123456789012}} with your account ID.
 
-   ```
+   ```bash
    aws compute-optimizer delete-recommendation-preferences --region {{myRegion}} --resource-type=Ec2Instance --recommendation-preference-names='["ExternalMetricsPreference"]' --scope='{"name":"AccountId", "value":"{{123456789012}}"}'
    ```
 

@@ -44,7 +44,7 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/vmware-guestinfo.html
 
 1.  Convert the configuration files into formats usable by VMware `guestinfo`.
 
-   ```
+   ```sh
    # 'meta-data', `user-data` and `network-config` are the configuration
    # files in the same format that would be used by a NoCloud (seed.iso)
    # data source, read-them and convert them to VMware guestinfo

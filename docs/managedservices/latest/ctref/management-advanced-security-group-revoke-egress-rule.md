@@ -143,14 +143,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-security-group-revoke-egress-rule-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-advanced-security-group-revoke-egress-rule-ex-max"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-RevokeSecurityGroupEgressRule",
   "Region" : "us-east-1",

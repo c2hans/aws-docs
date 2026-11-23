@@ -210,7 +210,7 @@ For more information about the certificate and certificate chain data, see [GetC
 ### Example
 <a name="integration-server-sdk-csharp-ref-getinstancecertificate-example"></a>
 
-```
+```cpp
 var getInstanceCertificateOutcome = GameLiftServerAPI.GetInstanceCertificate();
 ```
 

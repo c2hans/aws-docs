@@ -44,7 +44,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### POST schema
 <a name="inputs-inputid-partners-request-body-post-example"></a>
 
-```
+```json
 {
   "requestId": "string",
   "tags": {
@@ -58,7 +58,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### CreatePartnerInputResultModel schema
 <a name="inputs-inputid-partners-response-body-createpartnerinputresultmodel-example"></a>
 
-```
+```json
 {
   "input": {
     "arn": "string",
@@ -115,7 +115,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### InvalidRequest schema
 <a name="inputs-inputid-partners-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -124,7 +124,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### AccessDenied schema
 <a name="inputs-inputid-partners-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -133,7 +133,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### LimitExceeded schema
 <a name="inputs-inputid-partners-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -142,7 +142,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### InternalServiceError schema
 <a name="inputs-inputid-partners-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -151,7 +151,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### BadGatewayException schema
 <a name="inputs-inputid-partners-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -160,7 +160,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### GatewayTimeoutException schema
 <a name="inputs-inputid-partners-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

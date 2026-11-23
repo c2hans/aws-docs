@@ -45,11 +45,11 @@ To install the AWS Encryption SDK for Rust, clone or download the [aws-encryptio
 **Using Crates.io**
 Run the following Cargo command in your project directory:
 
-```
+```rust
 cargo add aws-esdk
 ```
 Or add the following line to your Cargo.toml:
 
-```
+```rust
 aws-esdk = "{{<version>}}"
 ```

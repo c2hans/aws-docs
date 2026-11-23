@@ -11,7 +11,7 @@ When you launch a new Amazon EC2instance, the Amazon EC2 service attempts to pla
 ## Syntax
 <a name="node-compute-placement-group-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Compute.PlacementGroup
   properties:
     strategy: String
@@ -46,7 +46,7 @@ Type: List
 ## Example
 <a name="node-compute-placement-group-example"></a>
 
-```
+```yaml
 ExamplePlacementGroup:
   type: tosca.nodes.AWS.Compute.PlacementGroup
   properties:

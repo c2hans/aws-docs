@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/bulk-opera
 
 Use the AWS IoT SiteWise metadata transfer job schema for reference when performing your own bulk import and export operations:
 
-```
+```json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "IoTSiteWise",

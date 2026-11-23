@@ -18,6 +18,7 @@ GPT-6.2 Sol is the next generation of GPT-6.1 Sol, a fast, versatile model for e
 +  **Model lifecycle:** Active
 +  **Context window:** 1,050,000 tokens
 +  **Max output tokens:** 128,000 tokens
++  **Marketplace product ID:** `prod-vznp63pbdpexe`
 
 | **Input Modalities** | **Output Modalities** |
 | --- | --- |
@@ -99,7 +100,7 @@ Use an object schema. Put all fields in `required`. Set `additionalProperties` t
 **Important**
 For JSON Schema output with Converse and ConverseStream, you must set `additionalModelRequestFields.text.format.strict` to `true`, in addition to specifying the schema in `outputConfig`. Include the following field in your request.
 
-```
+```json
 {
   "additionalModelRequestFields": {
     "text": {
@@ -120,11 +121,7 @@ All prices are in USD per 1 million tokens for the Standard tier.
 
 The **Input — 30-minute cache write** column is the price per 1 million tokens written to the prompt cache. The 30-minute figure is how long a cached prompt prefix is retained, not a quantity of tokens. For more information, see [prompt caching](prompt-caching.md).
 
-Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need to add this fee.
-
 Long-context rates apply to the full request when input exceeds 272,000 tokens.
-
-*Priority and Flex tiers are not supported for this model.*
 
 ### Standard — Commercial Regions, short context (272K input tokens or fewer)
 <a name="model-card-openai-gpt-6-2-sol-pricing-short"></a>
@@ -254,7 +251,7 @@ The output-token burndown rate is 10: each output token consumes 10 tokens of qu
 
 **Step 3 - Get the SDK:** You must have Python installed to use this guide. Then install the OpenAI SDK.
 
-```
+```bash
 python3 -m pip install openai
 ```
 
@@ -266,7 +263,7 @@ Set up your environment to use the API key for authentication.
 ------
 #### [ bedrock-mantle ]
 
-```
+```bash
 export OPENAI_API_KEY="<provide your Bedrock API key>"
 export OPENAI_BASE_URL="https://bedrock-mantle.us-east-1.api.aws/openai/v1"
 ```
@@ -274,7 +271,7 @@ export OPENAI_BASE_URL="https://bedrock-mantle.us-east-1.api.aws/openai/v1"
 ------
 #### [ bedrock-runtime ]
 
-```
+```bash
 export OPENAI_API_KEY="<provide your Bedrock API key>"
 export OPENAI_BASE_URL="https://bedrock-runtime.us-east-1.amazonaws.com/openai/v1"
 ```
@@ -297,7 +294,7 @@ Use the settings from [Step 4 - Set environment variables](#model-card-openai-gp
 ------
 #### [ Responses API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -313,7 +310,7 @@ print(response.output_text)
 ------
 #### [ Chat ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -335,7 +332,7 @@ Use the settings from [Step 4 - Set environment variables](#model-card-openai-gp
 ------
 #### [ Responses API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()

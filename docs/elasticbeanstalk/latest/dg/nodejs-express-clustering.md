@@ -587,7 +587,7 @@ YAML relies on consistent indentation. Match the indentation level when replacin
 
 1. On your local computer, update `package.json` with the following contents:
 
-   ```
+   ```json
      "dependencies": {
        "cookie-parser": "~1.4.4",
        "debug": "~2.6.9",

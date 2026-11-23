@@ -134,7 +134,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-s3-storage-delete-policy-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "BucketName": "examplebucketname",
   "Operation": "Delete policy"
@@ -144,7 +144,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-s3-storage-delete-policy-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "BucketName": "examplebucketname",
   "Operation": "Delete policy",

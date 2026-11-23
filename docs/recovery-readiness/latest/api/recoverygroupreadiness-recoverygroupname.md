@@ -69,7 +69,7 @@ Enable CORS by returning correct headers
 #### GetRecoveryGroupReadinessSummaryOutput schema
 <a name="recoverygroupreadiness-recoverygroupname-response-body-getrecoverygroupreadinesssummaryoutput-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "readiness": enum,

@@ -12,7 +12,7 @@ Verify that your AWS Account has a role that includes the permissions needed to 
 
 Set up your AWS credentials. For more information, see [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) in the *AWS CLI user guide*.
 
-```
+```sh
 $ aws configure
   AWS Access Key ID [None]: {{AKIAIOSFODNN7EXAMPLE}}
 AWS Secret Access Key [None]: {{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
@@ -22,7 +22,7 @@ Default output format [None]:
 
 The AWS Region where the cluster is launched must have at least one Amazon EC2 key pair. For more information, see [Amazon EC2 key pairs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html) in the *Amazon EC2 User Guide*.
 
-```
+```sh
 $ pcluster configure
 ```
 
@@ -265,7 +265,7 @@ When you have completed the preceding steps, a simple cluster launches into a VP
 
 When all settings contain valid values, you can launch the cluster by running the create command.
 
-```
+```sh
 $ pcluster create {{mycluster}}
 ```
 
@@ -279,7 +279,7 @@ $ pcluster delete --region {{us-east-1}} {{mycluster}}
 
 To delete the network resources in the VPC, you can delete the CloudFormation networking stack. The stack name starts with "parallelclusternetworking-" and contains the creation time in "YYYYMMDDHHMMSS" format. You can list the stacks using the [list-stacks](https://docs.aws.amazon.com/goto/aws-cli/cloudformation-2010-05-15/ListStacks) command.
 
-```
+```bash
 $ aws --region {{us-east-1}} cloudformation list-stacks \
    --stack-status-filter "CREATE_COMPLETE" \
    --query "StackSummaries[].StackName" | \
@@ -289,7 +289,7 @@ $ aws --region {{us-east-1}} cloudformation list-stacks \
 
 The stack can be deleted using the [delete-stack](https://docs.aws.amazon.com/goto/aws-cli/cloudformation-2010-05-15/DeleteStack) command.
 
-```
+```bash
 $ aws --region {{us-east-1}} cloudformation delete-stack \
    --stack-name {{parallelclusternetworking-pubpriv-20191029205804}}
 ```

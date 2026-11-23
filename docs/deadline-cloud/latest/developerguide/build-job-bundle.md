@@ -19,7 +19,7 @@ The only required file is either `template.yaml` or `template.json`. You can als
 
 Use a job bundle for custom job submissions with the Deadline Cloud CLI and a job attachment, or you can use an graphical submission interface. For example, the following is the Blender sample from the [deadline-cloud-samples repository](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles) on the GitHub website. To run the sample, use the following command in the Blender sample directory:
 
-```
+```bash
 deadline bundle gui-submit blender_render
 ```
 

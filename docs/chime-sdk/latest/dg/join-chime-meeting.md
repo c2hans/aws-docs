@@ -9,7 +9,7 @@ Join an Amazon Chime SDK meeting by providing the attendee join token. To do thi
 **Note**
 You can't run this action on a bridged call.
 
-```
+```json
 {
     "Type": "JoinChimeMeeting",
     "Parameters": {
@@ -47,7 +47,7 @@ You can't run this action on a bridged call.
 
 The SIP media application always invokes an AWS Lambda function after running this action. It returns either the `ACTION_SUCCESSFUL` or `ACTION_FAILED` invocation event types. The following example shows a successful invocation event structure.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{4}},
@@ -76,7 +76,7 @@ When a validation error occurs while bridging a meeting, the SIP application cal
 
 The following example shows a typical failure event.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{3}},

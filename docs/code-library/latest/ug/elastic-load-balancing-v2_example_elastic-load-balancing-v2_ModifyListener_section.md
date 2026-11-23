@@ -118,7 +118,7 @@ For more information, see [Listener rules](https://docs.aws.amazon.com/elasticlo
 **Tools for PowerShell V4**
 **Example 1: This example modifes the specified listeners default action to fixed-response.**
 
-```
+```powershell
 $newDefaultAction = [Amazon.ElasticLoadBalancingV2.Model.Action]@{
     "FixedResponseConfig" = @{
     "ContentType" = "text/plain"
@@ -146,7 +146,7 @@ SslPolicy       :
 **Tools for PowerShell V5**
 **Example 1: This example modifes the specified listeners default action to fixed-response.**
 
-```
+```powershell
 $newDefaultAction = [Amazon.ElasticLoadBalancingV2.Model.Action]@{
     "FixedResponseConfig" = @{
     "ContentType" = "text/plain"

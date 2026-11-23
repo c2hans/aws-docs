@@ -19,6 +19,8 @@ Building serverless microservices on AWS enables you to not only take advantage 
 
 ![Reference architecture diagram for RESTful microservices](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/reference-architecture-for-restful-microservices.png)
 
+*Figure 1: Reference architecture for RESTful microservices*
+
 1.  **Customers** leverage your microservices by making HTTP API calls. Ideally, your consumers should have a tightly bound service contract to your API to achieve consistent expectations of service levels and change control.
 
 1.  **Amazon API Gateway** hosts RESTful HTTP requests and responses to customers. In this scenario, API Gateway provides built-in authorization, throttling, security, fault tolerance, request and response mapping, and performance optimizations.

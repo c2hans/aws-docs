@@ -115,7 +115,7 @@ If a policy is already attached to your Amazon S3 bucket, choose **Edit bucket p
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": {
@@ -162,7 +162,7 @@ These policies are specific to setting up CodeDeploy resources to be used in a p
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [
@@ -201,7 +201,7 @@ These policies are specific to setting up CodeDeploy resources to be used in a p
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -259,7 +259,7 @@ This is not the policy you will use. You must choose a policy to complete the wi
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -293,7 +293,7 @@ This is not the policy you will use. You must choose a policy to complete the wi
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [

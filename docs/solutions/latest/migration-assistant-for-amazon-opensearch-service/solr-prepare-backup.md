@@ -24,7 +24,7 @@ The workflow-managed path currently backs up every collection or core it discove
 
 If you create the backup yourself, trigger an asynchronous collection backup with the Collections API, then poll for completion with the `REQUESTSTATUS` action:
 
-```
+```bash
 # Start the backup (asynchronous)
 curl "http://SOLR_HOST:8983/solr/admin/collections?action=BACKUP\
 name=SNAPSHOT_NAME\
@@ -45,7 +45,7 @@ For a SolrCloud source with multiple collections, create each collection backup 
 
 If you create the backup yourself for standalone Solr, trigger the backup with the replication handler, then check status with the `details` command. Monitor `details.backup.status` until it reports `success`:
 
-```
+```bash
 # Start the backup
 curl "http://SOLR_HOST:8983/solr/CORE_NAME/replication?command=backup\
 repository=s3\
@@ -61,7 +61,7 @@ curl "http://SOLR_HOST:8983/solr/CORE_NAME/replication?command=detailswt=json"
 
 For externally managed backups, if you back up to a local path instead of directly to Amazon S3, copy the completed backup to your Amazon S3 bucket so the backfill workers can read it. Sync the parent directory that contains the `SNAPSHOT_NAME` backup directory:
 
-```
+```bash
 aws s3 sync LOCAL_BACKUP_PATH s3://BUCKET/SUBPATH/
 ```
 
@@ -72,7 +72,7 @@ Record the resulting `s3://BUCKET/SUBPATH` parent location — you reference it 
 
 For Solr backfill, the workflow treats `s3RepoPathUri` as the repository parent and appends the generated snapshot name or `externallyManagedSnapshotName`. The Solr reader then discovers collections or cores under:
 
-```
+```text
 s3://BUCKET/SUBPATH/SNAPSHOT_NAME/
 ```
 

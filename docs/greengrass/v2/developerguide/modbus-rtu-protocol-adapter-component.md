@@ -56,7 +56,7 @@ This component has the following requirements:
 ------
 #### [ Legacy subscription router v2.1.x ]
 
-  ```
+  ```json
   {
     "subscriptions": {
       "aws-greengrass-modbus": {
@@ -72,7 +72,7 @@ This component has the following requirements:
 ------
 #### [ Legacy subscription router v2.0.x ]
 
-  ```
+  ```json
   {
     "subscriptions": {
       "aws-greengrass-modbus": {
@@ -375,7 +375,7 @@ Default: `PUB_SUB`
 
 **Example: Configuration merge update (container mode)**  <a name="modbus-rtu-protocol-adapter-configuration-example-container-mode"></a>
 
-```
+```json
 {
   "lambdaExecutionParameters": {
     "EnvironmentVariables": {
@@ -397,7 +397,7 @@ Default: `PUB_SUB`
 
 **Example: Configuration merge update (no container mode)**  <a name="modbus-rtu-protocol-adapter-configuration-example-no-container-mode"></a>
 
-```
+```json
 {
   "lambdaExecutionParameters": {
     "EnvironmentVariables": {
@@ -464,7 +464,7 @@ Default: `PUB_SUB`
 
 **Example: Configuration merge update (container mode)**  <a name="modbus-rtu-protocol-adapter-configuration-example-container-mode"></a>
 
-```
+```json
 {
   "lambdaExecutionParameters": {
     "EnvironmentVariables": {
@@ -486,7 +486,7 @@ Default: `PUB_SUB`
 
 **Example: Configuration merge update (no container mode)**  <a name="modbus-rtu-protocol-adapter-configuration-example-no-container-mode"></a>
 
-```
+```json
 {
   "lambdaExecutionParameters": {
     "EnvironmentVariables": {
@@ -528,7 +528,7 @@ Type: `string`
 
 **Example input: Read coils request**
 
-```
+```json
 {
   "request": {
     "operation": "ReadCoilsRequest",
@@ -574,7 +574,7 @@ A response for a write operation is simply an echo of the request. Although writ
 
 **Example output: Success**
 
-```
+```json
 {
   "response" : {
     "status" : "success",
@@ -591,7 +591,7 @@ A response for a write operation is simply an echo of the request. Although writ
 
 **Example output: Failure**
 
-```
+```json
 {
   "response" : {
     "status" : "fail",
@@ -638,7 +638,7 @@ The following are example requests and responses for supported operations.
 Read coils
 **Request example:**
 
-```
+```json
 {
   "request": {
     "operation": "ReadCoilsRequest",
@@ -651,7 +651,7 @@ Read coils
 ```
 **Response example:**
 
-```
+```json
 {
   "response": {
     "status": "success",
@@ -669,7 +669,7 @@ Read coils
 Read discrete inputs
 **Request example:**
 
-```
+```json
 {
   "request": {
     "operation": "ReadDiscreteInputsRequest",
@@ -682,7 +682,7 @@ Read discrete inputs
 ```
 **Response example:**
 
-```
+```json
 {
   "response": {
     "status": "success",
@@ -700,7 +700,7 @@ Read discrete inputs
 Read holding registers
 **Request example:**
 
-```
+```json
 {
   "request": {
     "operation": "ReadHoldingRegistersRequest",
@@ -713,7 +713,7 @@ Read holding registers
 ```
 **Response example:**
 
-```
+```json
 {
   "response": {
     "status": "success",
@@ -731,7 +731,7 @@ Read holding registers
 Read input registers
 **Request example:**
 
-```
+```json
 {
   "request": {
     "operation": "ReadInputRegistersRequest",
@@ -746,7 +746,7 @@ Read input registers
 Write single coil
 **Request example:**
 
-```
+```json
 {
   "request": {
     "operation": "WriteSingleCoilRequest",
@@ -759,7 +759,7 @@ Write single coil
 ```
 **Response example:**
 
-```
+```json
 {
   "response": {
     "status": "success",
@@ -778,7 +778,7 @@ Write single coil
 Write single register
 **Request example:**
 
-```
+```json
 {
   "request": {
     "operation": "WriteSingleRegisterRequest",
@@ -793,7 +793,7 @@ Write single register
 Write multiple coils
 **Request example:**
 
-```
+```json
 {
   "request": {
     "operation": "WriteMultipleCoilsRequest",
@@ -806,7 +806,7 @@ Write multiple coils
 ```
 **Response example:**
 
-```
+```json
 {
   "response": {
     "status": "success",
@@ -825,7 +825,7 @@ Write multiple coils
 Write multiple registers
 **Request example:**
 
-```
+```json
 {
   "request": {
     "operation": "WriteMultipleRegistersRequest",
@@ -838,7 +838,7 @@ Write multiple registers
 ```
 **Response example:**
 
-```
+```json
 {
   "response": {
     "status": "success",
@@ -857,7 +857,7 @@ Write multiple registers
 Mask write register
 **Request example:**
 
-```
+```json
 {
   "request": {
     "operation": "MaskWriteRegisterRequest",
@@ -871,7 +871,7 @@ Mask write register
 ```
 **Response example:**
 
-```
+```json
 {
   "response": {
     "status": "success",
@@ -890,7 +890,7 @@ Mask write register
 Read write multiple registers
 **Request example:**
 
-```
+```json
 {
   "request": {
     "operation": "ReadWriteMultipleRegistersRequest",
@@ -905,7 +905,7 @@ Read write multiple registers
 ```
 **Response example:**
 
-```
+```json
 {
   "response": {
     "status": "success",
@@ -931,7 +931,7 @@ Exceptions can occur when the request format is valid, but the request is not co
 
 **Example:**
 
-```
+```json
 {
   "response": {
     "status": "fail",
@@ -958,7 +958,7 @@ This connector performs validation checks on the Modbus request. For example, it
 
 **Examples:**
 
-```
+```json
 {
   "response": {
     "status": "fail",
@@ -976,7 +976,7 @@ This connector performs validation checks on the Modbus request. For example, it
 
 If the request targets a nonexistent device or if the Modbus RTU network is not working, you might get a `ModbusIOException`, which uses the No Response format.
 
-```
+```json
 {
   "response": {
     "status": "fail",
@@ -1004,7 +1004,7 @@ This component uses the following log file.
 **To view this component's logs**
 + Run the following command on the core device to view this component's log file in real time. Replace `{{/greengrass/v2}}` with the path to the AWS IoT Greengrass root folder.
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.greengrass.Modbus.log
   ```
 

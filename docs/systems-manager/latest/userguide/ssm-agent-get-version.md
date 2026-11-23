@@ -31,7 +31,7 @@ This command varies depending on the package manager for your operating system.
 
 1. Run the following command.
 
-   ```
+   ```bash
    yum info amazon-ssm-agent
    ```
 
@@ -52,7 +52,7 @@ This command varies depending on the package manager for your operating system.
 
 1. Run the following command.
 
-   ```
+   ```bash
    apt list amazon-ssm-agent
    ```
 
@@ -73,7 +73,7 @@ This command varies depending on the package manager for your operating system.
 
 1. Run the following command.
 
-   ```
+   ```bash
    pkgutil --pkg-info com.amazon.aws.ssm
    ```
 
@@ -84,7 +84,7 @@ This command varies depending on the package manager for your operating system.
 
 1. Run the following command for RHEL 7, 8, 9, and 10.
 
-   ```
+   ```bash
    yum info amazon-ssm-agent
    ```
 
@@ -100,7 +100,7 @@ This command varies depending on the package manager for your operating system.
 
    Run the following command for the DNF package utility.
 
-   ```
+   ```bash
    dnf info amazon-ssm-agent
    ```
 
@@ -111,7 +111,7 @@ This command varies depending on the package manager for your operating system.
 
 1. Run the following command for SLES 15.*x*.
 
-   ```
+   ```bash
    zypper info amazon-ssm-agent
    ```
 
@@ -134,7 +134,7 @@ This command varies depending on the package manager for your operating system.
 
 1. Run the following command for Ubuntu Server 18.04, 20.04, 22.04 LTS, 23.10, 24.04 LTS, 24.0, and 25.04.
 
-   ```
+   ```bash
    sudo snap list amazon-ssm-agent
    ```
 
@@ -155,7 +155,7 @@ This command varies depending on the package manager for your operating system.
 
 1. Run the following PowerShell command.
 
-   ```
+   ```ps
    & "C:\Program Files\Amazon\SSM\amazon-ssm-agent.exe" -version
    ```
 

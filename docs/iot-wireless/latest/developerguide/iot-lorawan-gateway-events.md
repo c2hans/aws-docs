@@ -51,7 +51,7 @@ For more information about using the `+` wildcard when subscribing to topics, se
 
 The following shows the message payload for the connection status event.
 
-```
+```JSON
 {
  // General fields
     "eventId": "string",

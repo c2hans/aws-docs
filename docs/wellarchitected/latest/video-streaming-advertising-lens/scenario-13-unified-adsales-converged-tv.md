@@ -20,6 +20,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
 ![Unified AdSales for converged television architecture on AWS showing the data convergence layer, unified campaign management system, cross-platform measurement infrastructure, and single-pane-of-glass observability across linear and digital advertising operations](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-13-unified-adsales-converged-tv.jpg)
 
+*Unified AdSales for converged television architecture on AWS showing the data convergence layer, unified campaign management system, cross-platform measurement infrastructure, and single-pane-of-glass observability across linear and digital advertising operations*
+
  The architecture consists of the following components:
 
 1.  **Linear broadcast logs ingestion**: AWS DataSync or AWS Transfer Family ingests linear traffic logs (spot schedules, delivery confirmations, makegood records) from broadcast traffic systems. AWS Glue ETL transforms these batch files into the unified schema. Dead-letter prefix in S3 handles malformed files without blocking digital pipeline processing.

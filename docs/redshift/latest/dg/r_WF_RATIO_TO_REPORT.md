@@ -56,7 +56,7 @@ The following examples use the WINSALES table. For a information about how to cr
 
 The following example calculates the ratio-to-report value of each row of a seller's quantity to the total of all seller's quantities.
 
-```
+```sql
 select sellerid, qty, ratio_to_report(qty)
 over()
 from winsales
@@ -79,7 +79,7 @@ sellerid  qty    ratio_to_report
 
 The following example calculates the ratios of the sales quantities for each seller by partition.
 
-```
+```sql
 select sellerid, qty, ratio_to_report(qty)
 over(partition by sellerid)
 from winsales;

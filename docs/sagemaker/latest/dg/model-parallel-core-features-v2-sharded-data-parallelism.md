@@ -12,13 +12,13 @@ The following code snippets show how to add the SMP initialization module `torch
 
 **SMP configuration dictionary**
 
-```
+```json
 { "hybrid_shard_degree": 16 }
 ```
 
 **In training script**
 
-```
+```py
 import torch.sagemaker as tsm
 tsm.init()
 

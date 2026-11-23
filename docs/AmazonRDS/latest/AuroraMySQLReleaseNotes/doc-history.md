@@ -8,6 +8,7 @@ The following table describes the documentation releases for Aurora MySQL Releas
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Aurora MySQL version 8.4.12](AuroraMySQL.Updates.8412.md) | Aurora MySQL version 8.4.12 is available. This version is compatible with MySQL 8.4.12. | November 20, 2026 |
 | [Aurora MySQL version 8.4.7.1](AuroraMySQL.Updates.847.md) | Aurora MySQL version 8.4.7.1 is available. This patch for Aurora MySQL version 8.4.7 includes security and stability fixes. | November 9, 2026 |
 | [Aurora MySQL version 8.4.10](AuroraMySQL.Updates.8410.md) | Aurora MySQL version 8.4.10 is available. This version is compatible with MySQL 8.4.10. | October 26, 2026 |
 | [Aurora MySQL version 3.14.0, compatible with MySQL 8.0.46](AuroraMySQL.Updates.3140.md) | Aurora MySQL version 3.14.0 is available. This version is compatible with MySQL 8.0.46. For more information about this release, see [Aurora MySQL database engine updates 2026-10-26 (version 3.14.0, compatible with MySQL 8.0.46)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.3140.html). | October 26, 2026 |

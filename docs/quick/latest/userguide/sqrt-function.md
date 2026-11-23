@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sqrt-function.htm
 ## Syntax
 <a name="sqrt-function-syntax"></a>
 
-```
+```sql
 sqrt({{expression}})
 ```
 

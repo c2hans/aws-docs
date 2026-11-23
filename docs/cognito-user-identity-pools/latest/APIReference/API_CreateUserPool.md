@@ -49,6 +49,13 @@ Amazon Cognito evaluates AWS Identity and Access Management (IAM) policies in re
    },
    "AliasAttributes": [ "{{string}}" ],
    "AutoVerifiedAttributes": [ "{{string}}" ],
+   "DcrConfiguration": {
+      "AllowedScopes": [ "{{string}}" ],
+      "AuthenticatedGrantTypes": [ "{{string}}" ],
+      "EnableStatus": "{{string}}",
+      "OpenDcrEnabled": {{boolean}},
+      "OpenDcrGrantTypes": [ "{{string}}" ]
+   },
    "DeletionProtection": "{{string}}",
    "DeviceConfiguration": {
       "ChallengeRequiredOnNewDevice": {{boolean}},
@@ -213,6 +220,11 @@ Required: No
 The attributes that you want your user pool to automatically verify. For more information, see [Verifying contact information at sign-up](https://docs.aws.amazon.com/cognito/latest/developerguide/signing-up-users-in-your-app.html#allowing-users-to-sign-up-and-confirm-themselves).
 Type: Array of strings
 Valid Values: `phone_number | email`
+Required: No
+
+ ** [DcrConfiguration](#API_CreateUserPool_RequestSyntax) **   <a name="CognitoUserPools-CreateUserPool-request-DcrConfiguration"></a>
+The dynamic client registration configuration for the user pool. With dynamic client registration, applications can register their own app clients at runtime through the registration endpoint of your user pool domain. To activate this setting, your user pool must be in the [ Essentials tier](https://docs.aws.amazon.com/cognito/latest/developerguide/feature-plans-features-essentials.html) or higher.
+Type: [DcrConfigurationType](API_DcrConfigurationType.md) object
 Required: No
 
  ** [DeletionProtection](#API_CreateUserPool_RequestSyntax) **   <a name="CognitoUserPools-CreateUserPool-request-DeletionProtection"></a>
@@ -389,6 +401,13 @@ Required: No
       "AutoVerifiedAttributes": [ "string" ],
       "CreationDate": number,
       "CustomDomain": "string",
+      "DcrConfiguration": {
+         "AllowedScopes": [ "string" ],
+         "AuthenticatedGrantTypes": [ "string" ],
+         "EnableStatus": "string",
+         "OpenDcrEnabled": boolean,
+         "OpenDcrGrantTypes": [ "string" ]
+      },
       "DeletionProtection": "string",
       "DeviceConfiguration": {
          "ChallengeRequiredOnNewDevice": boolean,
@@ -616,7 +635,7 @@ The following example creates a user pool with all configurable properties set t
 #### Sample Request
 <a name="API_CreateUserPool_Example_1_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-east-1.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -757,7 +776,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_CreateUserPool_Example_1_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0

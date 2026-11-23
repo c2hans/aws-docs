@@ -28,3 +28,5 @@ You can pass the following trace header information through EventBridge:
 The trace header doesn't count towards the `PutEventsRequestEntry` event size. For more information, see [Calculating PutEvents event entry size](eb-putevents.md#eb-putevent-size).
 
  The following video demonstrates the use of X-Ray and EventBridge together:
+
+[![AWS Videos](https://img.youtube.com/vi/C1-nLxlkp-0/0.jpg)](https://www.youtube.com/watch?v=C1-nLxlkp-0)

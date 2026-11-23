@@ -21,7 +21,7 @@ You can run an action only once during an experiment. To run the same AWS FIS ac
 
 The following is the syntax for an action.
 
-```
+```json
 {
     "actions": {
         "{{action_name}}": {
@@ -94,7 +94,7 @@ Where possible, you can input a rollback configuration (also referred to as a *p
 
 An action runs on the target resources that you specify. After you define a target, you can specify its name when you define an action.
 
-```
+```json
 "targets": {
     "{{ResourceType}}": "{{resource_name}}"
 }
@@ -150,7 +150,7 @@ The following are example actions.
 **Example: Stop EC2 instances**
 The following action stops the EC2 instances identified using the target named {{targetInstances}}. After two minutes, it restarts the target instances.
 
-```
+```json
 "actions": {
     "{{stopInstances}}": {
         "actionId": "aws:ec2:stop-instances",
@@ -167,7 +167,7 @@ The following action stops the EC2 instances identified using the target named {
 **Example: Interrupt Spot Instances**
 The following action stops the Spot Instances identified using the target named {{targetSpotInstances}}. It waits two minutes before interrupting the Spot Instance.
 
-```
+```json
 "actions": {
     "{{interruptSpotInstances}}": {
         "actionId": "aws:ec2:send-spot-instance-interruptions",
@@ -184,7 +184,7 @@ The following action stops the Spot Instances identified using the target named 
 **Example: Disrupt network traffic**
 The following action denies traffic between the target subnets and subnets in other Availability Zones.
 
-```
+```json
 "actions": {
     "{{disruptAZConnectivity}}": {
         "actionId": "aws:network:disrupt-connectivity",
@@ -202,7 +202,7 @@ The following action denies traffic between the target subnets and subnets in ot
 **Example: Terminate EKS workers**
 The following action terminates 50% of the EC2 instances in the EKS cluster identified using the target named {{targetNodeGroups}}.
 
-```
+```json
 "actions": {
     "{{terminateWorkers}}": {
         "actionId": "aws:eks:terminate-nodegroup-instances",
@@ -219,7 +219,7 @@ The following action terminates 50% of the EC2 instances in the EKS cluster iden
 **Example: Start ARC zonal autoshift**
 The following action starts an ARC Zonal autoshift that shifts managed resources away from {{az-in-parameters}} for {{duration-in-parameteres}}. The resource type `ManagedResources` is used as a key for the target name in AWS FIS experiment template.
 
-```
+```json
 {
     "description": "aaa",
     "targets": {

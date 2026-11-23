@@ -179,7 +179,7 @@ CPU,Core,Socket,Node,,L1d,L1i,L2,L3
 ## Appendix: `lscpu -p` output (full) for c5.24xlarge
 <a name="agent-cpu-planning-appendix-lscpu-full"></a>
 
-```
+```bash
 > lscpu -p
 # The following is the parsable format, which can be fed to other
 # programs. Each different item in every column has an unique ID

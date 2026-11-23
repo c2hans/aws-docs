@@ -26,7 +26,7 @@ The following examples show the command format when using Run Command from the A
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --targets Key=tag:{{tag-name}},Values={{tag-value}} \
@@ -36,7 +36,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --targets Key=tag:{{tag-name}},Values={{tag-value}} ^
@@ -55,7 +55,7 @@ To send commands that target a resource group, you must have been granted AWS Id
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --targets Key=resource-groups:Name,Values={{resource-group-name}} \
@@ -65,7 +65,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --targets Key=resource-groups:Name,Values={{resource-group-name}} ^
@@ -84,7 +84,7 @@ To send commands that target a resource group, you must have been granted IAM pe
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --targets Key=resource-groups:ResourceTypeFilters,Values={{resource-type-1}},{{resource-type-2}} \
@@ -94,7 +94,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --targets Key=resource-groups:ResourceTypeFilters,Values={{resource-type-1}},{{resource-type-2}} ^
@@ -110,7 +110,7 @@ The following examples show how to target managed nodes by using the `instanceid
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --targets Key=instanceids,Values={{instance-ID-1}},{{instance-ID-2}},{{instance-ID-3}} \
@@ -120,7 +120,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --targets Key=instanceids,Values={{instance-ID-1}},{{instance-ID-2}},{{instance-ID-3}} ^
@@ -134,7 +134,7 @@ If you tagged managed nodes for different environments using a `Key` named `Envi
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --targets Key=tag:{{Environment}},Values={{Development}} \
@@ -144,7 +144,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --targets Key=tag:{{Environment}},Values={{Development}} ^
@@ -158,7 +158,7 @@ You could target additional managed nodes in other environments by adding to the
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --targets Key=tag:{{Environment}},Values={{Development}},{{Test}},{{Pre-production}} \
@@ -168,7 +168,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --targets Key=tag:{{Environment}},Values={{Development}},{{Test}},{{Pre-production}} ^
@@ -184,7 +184,7 @@ You can refine the number of targets for your command by including multiple `Key
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --targets Key=tag:{{Department}},Values={{Finance}} Key=tag:{{ServerRole}},Values={{Database}} \
@@ -194,7 +194,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --targets Key=tag:{{Department}},Values={{Finance}} Key=tag:{{ServerRole}},Values={{Database}} ^
@@ -210,7 +210,7 @@ Expanding on the previous example, you can target multiple departments and multi
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --targets Key=tag:{{Department}},Values={{Finance}},{{Marketing}} Key=tag:{{ServerRole}},Values={{WebServer}},{{Database}} \
@@ -220,7 +220,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --targets Key=tag:{{Department}},Values={{Finance}},{{Marketing}} Key=tag:{{ServerRole}},Values={{WebServer}},{{Database}} ^
@@ -236,7 +236,7 @@ If you tagged managed nodes for different environments using a `Key` named `Depa
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --targets Key=tag:{{Department}},Values={{Sales,Finance}} \
@@ -246,7 +246,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --targets Key=tag:{{Department}},Values={{Sales,Finance}} ^
@@ -264,7 +264,7 @@ If either a tag key (the tag name) or a tag value includes spaces, enclose the t
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --targets Key=tag:{{OS}},Values="{{Windows Server 2016"}} \
@@ -274,7 +274,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --targets Key=tag:{{OS}},Values="{{Windows Server 2016"}} ^
@@ -288,7 +288,7 @@ aws ssm send-command ^
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --targets Key="tag:{{Operating System}}",Values="{{Windows Server 2016"}} \
@@ -298,7 +298,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --targets Key="tag:{{Operating System}}",Values="{{Windows Server 2016"}} ^
@@ -312,7 +312,7 @@ aws ssm send-command ^
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --targets Key=tag:{{Department}},Values={{"Sales","Finance","Systems Mgmt"}} \
@@ -322,7 +322,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --targets Key=tag:{{Department}},Values={{"Sales","Finance","Systems Mgmt"}} ^
@@ -344,7 +344,7 @@ You can control the number of managed nodes that run a command simultaneously by
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --max-concurrency {{10}} \
@@ -352,7 +352,7 @@ aws ssm send-command \
     [...]
 ```
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --max-concurrency {{10}}% \
@@ -363,7 +363,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --max-concurrency {{10}} ^
@@ -371,7 +371,7 @@ aws ssm send-command ^
     [...]
 ```
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --max-concurrency {{10}}% ^
@@ -391,7 +391,7 @@ Invocations that are already running a command when `max-errors` is reached are 
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --max-errors {{10}} \
@@ -399,7 +399,7 @@ aws ssm send-command \
     [...]
 ```
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --max-errors {{10}}% \
@@ -407,7 +407,7 @@ aws ssm send-command \
     [...]
 ```
 
-```
+```sh
 aws ssm send-command \
     --document-name {{document-name}} \
     --max-concurrency {{1}} \
@@ -419,7 +419,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --max-errors {{10}} ^
@@ -427,7 +427,7 @@ aws ssm send-command ^
     [...]
 ```
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --max-errors {{10}}% ^
@@ -435,7 +435,7 @@ aws ssm send-command ^
     [...]
 ```
 
-```
+```sh
 aws ssm send-command ^
     --document-name {{document-name}} ^
     --max-concurrency {{1}} ^

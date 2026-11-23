@@ -6,11 +6,11 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/rest-op-createper
 
 Adds a block of time that is your own, rather than a session — travel, a meeting, a break. You must sign in.
 
-```
+```http
 POST /v1/events/{eventId}/personal-time
 ```
 
-```
+```bash
 curl -X POST https://api.awsevents.com/v1/events/reinvent2026/personal-time \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H "Content-Type: application/json" \

@@ -17,7 +17,7 @@ This solution includes a set of functional tests against the deployed solution t
 
 1. Run the following command. Replace the ` <stack-name> ` and ` <profile-name> ` variables with name of the stack deployed in step 1 and profile name of AWS CLI credentials, respectively. Replace the ` <in-venv-flag> ` with 1 if the tests are running in an existing Python virtual environment or with 0 if not. See the [README.md](https://github.com/aws-solutions-library-samples/prebid-server-deployment-on-aws/blob/main/source/tests/functional_tests/README.md) file of functional tests on the GitHub repository for further details.
 
-   ```
+   ```bash
    $ sh run-functional-tests.sh [-h] [-v] [--test-file-name] [--extras] [--region] --stack-name <stack-name> --profile <profile-name> --in-venv <in-venv-flag>
    ```
 

@@ -36,7 +36,7 @@ For more information, see [Update the IP address types for your Application Load
 **Tools for PowerShell V4**
 **Example 1: This example changes Load balancer IP address type from 'IPv4' to 'DualStack'.**
 
-```
+```powershell
 Set-ELB2IpAddressType -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -IpAddressType dualstack
 ```
 **Output:**
@@ -51,7 +51,7 @@ dualstack
 **Tools for PowerShell V5**
 **Example 1: This example changes Load balancer IP address type from 'IPv4' to 'DualStack'.**
 
-```
+```powershell
 Set-ELB2IpAddressType -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -IpAddressType dualstack
 ```
 **Output:**

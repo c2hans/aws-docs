@@ -43,7 +43,7 @@ For more information, see [View CodeCommit repository details](https://docs.aws.
 **Tools for PowerShell V4**
 **Example 1: This example lists all repositories in ascending order by repository name.**
 
-```
+```powershell
 Get-CCRepositoryList -Order Ascending -SortBy RepositoryName
 ```
 **Output:**
@@ -59,7 +59,7 @@ c7d0d2b0-ce40-4303-b4c3-38529EXAMPLE    MyDemoRepo
 **Tools for PowerShell V5**
 **Example 1: This example lists all repositories in ascending order by repository name.**
 
-```
+```powershell
 Get-CCRepositoryList -Order Ascending -SortBy RepositoryName
 ```
 **Output:**

@@ -87,7 +87,7 @@ The **End User Advisor** column in the **Self-service permissions** section show
 
 To turn End User Advisor off (AWS CLI), run the following command:
 
-```
+```bash
 aws workspaces modify-selfservice-permissions \
     --resource-id d-1234567890 \
     --selfservice-permissions EnableEndUserAdvisor=DISABLED

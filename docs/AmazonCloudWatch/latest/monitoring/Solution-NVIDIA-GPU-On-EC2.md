@@ -6,6 +6,9 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Solut
 
 This solution helps you configure out-of-the-box metric collection using CloudWatch agents for NVIDIA GPU workloads running on EC2 instances. Additionally, it helps you set up a pre-configured CloudWatch dashboard. For general information about all CloudWatch observability solutions, see [CloudWatch observability solutions](Monitoring-Solutions.md).
 
+**Note**
+To publish NVIDIA GPU metrics as OpenTelemetry metrics to the CloudWatch OpenTelemetry Protocol (OTLP) endpoint instead of as CloudWatch metrics in a namespace, you can scrape the NVIDIA DCGM exporter with the agent's OpenTelemetry support. This path does not include the pre-configured dashboard that this solution provides. For more information, see [Example: Send NVIDIA GPU (DCGM) metrics to OpenTelemetry](CloudWatch-Agent-appending-OpenTelemetry-config-dcgm.md).
+
 **Topics**
 + [Requirements](#Solution-NVIDIA-GPU-On-EC2-Requirements)
 + [Benefits](#Solution-NVIDIA-GPU-On-EC2-Benefits)

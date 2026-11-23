@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Create an alias for an Amazon Bedrock flow.
 
-```
+```python
 def create_flow_alias(client, flow_id, flow_version, name, description):
     """
     Creates an alias for an Amazon Bedrock flow.

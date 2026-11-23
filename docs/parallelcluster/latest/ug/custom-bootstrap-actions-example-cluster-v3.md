@@ -30,7 +30,7 @@ If the script was edited on Windows, line endings must be changed from CRLF to L
 
 1. Update the AWS ParallelCluster configuration to include the new `OnNodeConfigured` action.
 
-   ```
+   ```yaml
    CustomActions:
      OnNodeConfigured:
        Script: https://{{<amzn-s3-demo-bucket>}}.s3.{{<region>}}.amazonaws.com/{{myscript.sh}}
@@ -42,7 +42,7 @@ If the script was edited on Windows, line endings must be changed from CRLF to L
 
    If the bucket doesn't have public-read permission, use `s3` as the URL protocol.
 
-   ```
+   ```yaml
    CustomActions:
      OnNodeConfigured:
        Script: s3://{{amzn-s3-demo-bucket}}/{{myscript.sh}}

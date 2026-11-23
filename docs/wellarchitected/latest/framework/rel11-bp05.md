@@ -33,6 +33,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel11-b
 
 ![Architecture diagram showing enough compute instances provisioned in each Availability Zone that the healthy zones can carry full load if one zone fails.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/static-stability.png)
 
+*Static stability for compute with pre-provisioned capacity across Availability Zones*
+
  Holding idle capacity to survive a zone or Region loss is more expensive than provisioning to demand and adding capacity when a failure occurs. The cheaper approach is also the less reliable one, because it leans on the operations most likely to be impaired at the worst time. Weigh the two approaches against the business value of keeping the workload available in every failure case. One way to reduce the cost is to spread across more zones. With more zones sharing the load, the extra capacity each zone must reserve for static stability shrinks.
 
  Bimodal behavior also appears in software. Consider a network timeout that prompts a component to refresh the entire configuration state of the system. That refresh adds sudden load to another component, which might then fail, which triggers more refreshes, forming a negative feedback loop that degrades the whole workload. A statically stable design avoids this by doing constant work. It refreshes state on a fixed cadence regardless of failures, and when a call fails it uses the last cached value and raises an alarm. Letting clients bypass a cache during failures is the same trap in another form. Removing the cache changes the load profile when the workload can least absorb it.

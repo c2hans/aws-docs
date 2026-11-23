@@ -60,7 +60,7 @@ For more information, see [Get information about multiple on-premises instances]
 **Tools for PowerShell V4**
 **Example 1: This example gets information about the specified on-premises instances.**
 
-```
+```powershell
 Get-CDOnPremiseInstanceBatch -InstanceName AssetTag12010298EX, AssetTag12010298EX-2
 ```
 **Output:**
@@ -85,7 +85,7 @@ Tags           : {Name}
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified on-premises instances.**
 
-```
+```powershell
 Get-CDOnPremiseInstanceBatch -InstanceName AssetTag12010298EX, AssetTag12010298EX-2
 ```
 **Output:**

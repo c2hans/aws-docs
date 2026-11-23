@@ -34,7 +34,7 @@ aws_secret_access_key = {{<your_secret_access_key>}}
 
 To configure IDT for AWS IoT Greengrass to use AWS credentials from your `credentials` file, edit your `config.json` file as follows:
 
-```
+```json
 {
 	"awsRegion": "us-west-2",
 	"auth": {
@@ -70,7 +70,7 @@ set AWS_SECRET_ACCESS_KEY={{<your_secret_access_key>}}
 
 To configure IDT to use the environment variables, edit the `auth` section in your `config.json` file. Here is an example:
 
-```
+```json
 {
 	"awsRegion": "us-west-2",
 	"auth": {
@@ -89,7 +89,7 @@ You must provide this information using the `device.json` template located in `{
 ------
 #### [ Physical device ]
 
-```
+```json
 [
   {
     "id": "{{<pool-id>}}",
@@ -192,7 +192,7 @@ Specify `password` only if `method` is set to `password`.
 ------
 #### [ Docker container ]
 
-```
+```json
 [
   {
     "id": "{{<pool-id>}}",
@@ -397,7 +397,7 @@ For information about device configuration properties that don't apply to ML qua
 The ML frameworks that your board supports. <a name="idt-version-ml-qualification"></a>This property requires IDT v3.1.0 or later.
 + If your board supports only one framework, specify the framework. For example:
 
-  ```
+  ```json
   {
       "name": "ml",
       "value": "mxnet"
@@ -405,7 +405,7 @@ The ML frameworks that your board supports. <a name="idt-version-ml-qualificatio
   ```
 + If your board supports multiple frameworks, specify the frameworks as a comma-separated list. For example:
 
-  ```
+  ```json
   {
       "name": "ml",
       "value": "mxnet,tensorflow"
@@ -431,7 +431,7 @@ The following is an example path on macOS: `/Users/{{<user>}}/Downloads/resnet18
 `environmentVariables`
 An array of key-value pairs that can dynamically pass settings to ML inference tests. Optional for CPU devices. You can use this section to add framework-specific environment variables required by your device type. For information about these requirements, see the official website of the framework or the device. For example, to run MXNet inference tests on some devices, the following environment variables might be required.
 
-```
+```json
 "environmentVariables": [
     ...
     {
@@ -449,7 +449,7 @@ The `value` field might vary based on your MXNet installation.
 If you're testing Lambda functions that run with [containerization](lambda-group-config.md#lambda-containerization-considerations) on GPU devices, add environment variables for the GPU library. This makes it possible for the GPU to perform computations. To use different GPU libraries, see the official documentation for the library or device.
 Configure the following keys if the `mlLambdaContainerizationMode` feature is set to `container` or `both`.
 
-```
+```json
 "environmentVariables": [
     {
         "key": "PATH",

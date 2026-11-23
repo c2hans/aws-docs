@@ -8,7 +8,7 @@ This guide documents the new AWS Wickr administration console, released on March
 
 AWS Wickr displays verification messages when a client verifies another client whose account might have become unverified.
 
-```
+```json
 {
   "keyverify": {
     "msgtype": 3,

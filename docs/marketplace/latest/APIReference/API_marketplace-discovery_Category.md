@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # Category
 
-A category used to classify a listing or product into a logical group.
+A category that classifies a listing or product into a logical group.
 
 ## Contents
 <a name="API_marketplace-discovery_Category_Contents"></a>

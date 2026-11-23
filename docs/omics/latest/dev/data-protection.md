@@ -87,7 +87,7 @@ The following example shows a policy statement that allows a service principal t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -117,7 +117,7 @@ The following example shows a policy that creates permissions for a data store t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -228,7 +228,7 @@ The following also shows how to use CreateGrant to allow HealthOmics analytics t
 
 You aren't required to create your own grants. HealthOmics creates a grant on your behalf by sending a CreateGrant request to AWS KMS. Grants in AWS KMS are used to give HealthOmics access to a AWS KMS key in a customer account.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -292,7 +292,7 @@ You aren't required to create your own grants. HealthOmics creates a grant on yo
 
 The following example shows how to use GenerateDataKey to ensure the user has the necessary permissions to encrypt data before storing it.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

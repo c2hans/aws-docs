@@ -38,7 +38,7 @@ For more information, see [Creating OpenID Connect (OIDC) identity providers](ht
 **Tools for PowerShell V4**
 **Example 1: This example returns a list of ARNS of all the OpenID Connect providers that are defined in the current AWS account.**
 
-```
+```powershell
 Get-IAMOpenIDConnectProviderList
 ```
 **Output:**
@@ -54,7 +54,7 @@ arn:aws:iam::123456789012:oidc-provider/another.provider.com
 **Tools for PowerShell V5**
 **Example 1: This example returns a list of ARNS of all the OpenID Connect providers that are defined in the current AWS account.**
 
-```
+```powershell
 Get-IAMOpenIDConnectProviderList
 ```
 **Output:**

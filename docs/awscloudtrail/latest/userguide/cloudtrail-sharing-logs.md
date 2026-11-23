@@ -72,7 +72,7 @@ For example, to share account B's log files with account B but not with account 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -100,7 +100,7 @@ You must ensure that the prefix in the access policy is exactly the same as the 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -144,7 +144,7 @@ For example, the trust relationship created by AWS specifies that the third-part
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -171,7 +171,7 @@ For more information, see [How to use an external ID when granting access to you
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -193,7 +193,7 @@ You must also create an access policy for your account to specify that the third
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -247,7 +247,7 @@ To perform the actions permitted by a role, the IAM user must have permission to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -303,7 +303,7 @@ The AssumeRole API returns temporary credentials to use to access resources in o
 
 The following Python example (using the [AWS SDK for Python (Boto)](https://aws.amazon.com/developer/tools/)) shows how to call `AssumeRole` and how to use the temporary security credentials returned to list all Amazon S3 buckets controlled by Account A.
 
-```
+```python
 def list_buckets_from_assumed_role(user_key, assume_role_arn, session_name):
     """
     Assumes a role that grants permission to list the Amazon S3 buckets in the account.

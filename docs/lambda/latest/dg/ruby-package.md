@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/ruby-package.html
 
 The example commands in the following sections use the [Bundler](https://bundler.io/) utility to add dependencies to your deployment package. To install bundler, run the following command.
 
-```
+```bash
 gem install bundler
 ```
 
@@ -53,20 +53,20 @@ Suppose your function code is saved in a file named `lambda_function.rb` in your
 
 1. In your project directory, create a `Gemfile` to specify your dependencies in.
 
-   ```
+   ```bash
    bundle init
    ```
 
 1. Using your preferred text editor, edit the `Gemfile` to specify your function's dependencies. For example, to use the TZInfo gem, edit your `Gemfile` to look like the following.
 
-   ```
+   ```ruby
    source "https://rubygems.org"
    gem "tzinfo"
    ```
 
 1. Run the following command to install the gems specified in your `Gemfile` in your project directory. This command sets `vendor/bundle` as the default path for gem installations.
 
-   ```
+   ```bash
    bundle config set --local path 'vendor/bundle' && bundle install
    ```
 
@@ -83,13 +83,13 @@ Suppose your function code is saved in a file named `lambda_function.rb` in your
 **Note**
 To install gems globally again later, run the following command.
 
-   ```
+   ```bash
    bundle config set --local system 'true'
    ```
 
 1. Create a .zip file archive containing the `lambda_function.rb` file with your function's handler code and the dependencies you installed in the previous step.
 
-   ```
+   ```bash
    zip -r my_deployment_package.zip lambda_function.rb vendor
    ```
 
@@ -125,7 +125,7 @@ To create a .zip deployment package containing gems with native extensions witho
 
 1. Create a folder on your local build machine to save your container in. Inside that folder, create a file named `dockerfile` and paste the following code into it.
 
-   ```
+   ```dockerfile
    FROM public.ecr.aws/sam/build-ruby3.2:latest-x86_64
    RUN gem update bundler
    CMD "/bin/bash"
@@ -133,7 +133,7 @@ To create a .zip deployment package containing gems with native extensions witho
 
 1. Inside the folder you created your `dockerfile` in, run the following command to create the Docker container.
 
-   ```
+   ```bash
    docker build -t awsruby32 .
    ```
 
@@ -142,7 +142,7 @@ To create a .zip deployment package containing gems with native extensions witho
 ------
 #### [ Linux/MacOS ]
 
-   ```
+   ```bash
    docker run --rm -it -v $PWD:/var/task -w /var/task awsruby32
    ```
 
@@ -152,7 +152,7 @@ In MacOS, you might see a warning informing you that the requested image's platf
 ------
 #### [ Windows PowerShell ]
 
-   ```
+   ```powershell
    docker run --rm -it -v ${pwd}:/var/task -w /var/task awsruby32
    ```
 
@@ -166,19 +166,19 @@ In MacOS, you might see a warning informing you that the requested image's platf
 
 1. Configure the bundle utility to install the gems specified in your `Gemfile` in a local `vendor/bundle` directory and install your dependencies.
 
-   ```
+   ```bash
    bash-4.2# bundle config set --local path 'vendor/bundle' && bundle install
    ```
 
 1. Create the .zip deployment package with your function code and its dependencies. In this example, the file containing your function's handler code is named `lambda_function.rb`.
 
-   ```
+   ```bash
    bash-4.2# zip -r my_deployment_package.zip lambda_function.rb vendor
    ```
 
 1. Exit the container and return to your local project directory.
 
-   ```
+   ```bash
    bash-4.2# exit
    ```
 

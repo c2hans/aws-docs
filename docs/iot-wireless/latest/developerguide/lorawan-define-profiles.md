@@ -44,7 +44,7 @@ aws iotwireless create-device-profile
 
 Running this command automatically creates a device profile with an ID that you can use when creating the wireless device. You can now create the service profile using the following API and then create the wireless device by using the device and service profiles.
 
-```
+```JSON
 {
     "Arn": "arn:aws:iotwireless:us-east-1:123456789012:DeviceProfile/12345678-a1b2-3c45-67d8-e90fa1b2c34d",
     "Id": "12345678-a1b2-3c45-67d8-e90fa1b2c34d"
@@ -92,7 +92,7 @@ aws iotwireless create-service-profile
 
 Running this command automatically creates a service profile with an ID that you can use when creating the wireless device. You can now create the wireless device by using the device and service profiles.
 
-```
+```JSON
 {
     "Arn": "arn:aws:iotwireless:us-east-1:123456789012:ServiceProfile/12345678-a1b2-3c45-67d8-e90fa1b2c34d",
     "Id": "12345678-a1b2-3c45-67d8-e90fa1b2c34d"

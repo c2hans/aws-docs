@@ -38,7 +38,7 @@ You can skip this step if you're already using a more broad identity-based polic
 
    To start, create an AWS Identity and Access Management policy with the minimum required permissions to perform the steps in this tutorial. Name the policy `TutorialPolicy`:
 
-   ```
+   ```json
    aws iam create-policy \
      --policy-name TutorialPolicy \
      --policy-document "{\"Version\": \"2012-10-17\",\"Statement\": [{\"Action\": [\"aoss:ListCollections\",\"aoss:BatchGetCollection\",\"aoss:CreateCollection\",\"aoss:CreateSecurityPolicy\",\"aoss:GetSecurityPolicy\",\"aoss:ListSecurityPolicies\",\"aoss:CreateAccessPolicy\",\"aoss:GetAccessPolicy\",\"aoss:ListAccessPolicies\"],\"Effect\": \"Allow\",\"Resource\": \"*\"}]}"
@@ -46,7 +46,7 @@ You can skip this step if you're already using a more broad identity-based polic
 
    **Sample response**
 
-   ```
+   ```json
    {
        "Policy": {
            "PolicyName": "TutorialPolicy",
@@ -91,7 +91,7 @@ You can skip this step if you're already using a more broad identity-based polic
 
    **Sample response**
 
-   ```
+   ```json
    {
        "securityPolicyDetail": {
            "type": "encryption",
@@ -123,7 +123,7 @@ You can skip this step if you're already using a more broad identity-based polic
 
    **Sample response**
 
-   ```
+   ```json
    {
        "securityPolicyDetail": {
            "type": "network",
@@ -163,7 +163,7 @@ You can skip this step if you're already using a more broad identity-based polic
 
    **Sample response**
 
-   ```
+   ```json
    {
        "createCollectionDetail": {
            "id": "8kw362bpwg4gx9b2f6e0",
@@ -189,7 +189,7 @@ You can skip this step if you're already using a more broad identity-based polic
 
    **Sample response**
 
-   ```
+   ```json
    {
        "accessPolicyDetail": {
            "type": "data",
@@ -234,7 +234,7 @@ You can skip this step if you're already using a more broad identity-based polic
 
    **Sample response**
 
-   ```
+   ```json
    {
        "collectionDetails": [
            {
@@ -270,7 +270,7 @@ The collection endpoint isn't available until the collection status changes to `
 
    **Sample response**
 
-   ```
+   ```json
    {
      "_index" : "books-index",
      "_id" : "1",
@@ -294,7 +294,7 @@ The collection endpoint isn't available until the collection status changes to `
 
    **Sample response**
 
-   ```
+   ```json
    {
        "took": 405,
        "timed_out": false,

@@ -59,7 +59,7 @@ It can take up to 30 minutes to see the effects of your thesaurus file.
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 import pprint
@@ -119,7 +119,7 @@ print("Program ends.")
 ------
 #### [ Java ]
 
-```
+```java
 package com.amazonaws.kendra;
 
 import software.amazon.awssdk.services.kendra.KendraClient;

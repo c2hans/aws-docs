@@ -36,7 +36,7 @@ When connecting with SSH, use the `ubuntu` user instead of `root`.
 
 1. Check that the TPM device is present and working by running the following command:
 
-   ```
+   ```bash
    ls -la /dev/tpm*
    ```
 
@@ -148,7 +148,7 @@ In this step, you'll use the TPM2-protected private key to generate a Certificat
 
 1. Use the CSR file to create and download the certificate for the AWS IoT thing to your development computer.
 
-   ```
+   ```bash
    aws iot create-certificate-from-csr \
      --set-as-active \
      --certificate-signing-request file://{{path_to_device.csr}} \
@@ -188,7 +188,7 @@ To enable TPM support in Greengrass Nucleus Lite, make the following changes:
 
 1. Configure user permissions by adding the `ggcore` user to the `tss` group for TPM access:
 
-   ```
+   ```bash
    sudo usermod -a -G tss ggcore
    ```
 
@@ -199,7 +199,7 @@ To enable TPM support in Greengrass Nucleus Lite, make the following changes:
 
 1. Edit `config.yaml` with the following TPM-specific configuration:
 
-   ```
+   ```bash
    system:
        privateKeyPath: "handle:0x81000002" # Use your chosen handle
        certificateFilePath: "" # Replace with the path of device.pem.crt
@@ -208,7 +208,7 @@ To enable TPM support in Greengrass Nucleus Lite, make the following changes:
 
 1. Reboot your Greengrass Nucleus Lite by running the following command:
 
-   ```
+   ```bash
    systemctl restart greengrass-lite.target
    ```
 
@@ -235,7 +235,7 @@ If you encounter TPM access errors, do the following:
 
 1. Check the TPM device's permissions using the following command:
 
-   ```
+   ```bash
    ls -l /dev/tpm*
    ```
 
@@ -249,7 +249,7 @@ If TPM provider is not found, do the following:
 
 1. Check provider installation by running the following command:
 
-   ```
+   ```bash
    openssl list -providers
    ```
 

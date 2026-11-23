@@ -27,7 +27,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { LambdaToBedrockInferenceProfile } from "@aws-solutions-constructs/aws-lambda-bedrockinferenceprofile";
@@ -43,7 +43,7 @@ new LambdaToBedrockInferenceProfile(this, 'LambdaToBedrockPattern', {
 });
 ```
 
-```
+```python
 from constructs import Construct
 from aws_cdk import (
     aws_lambda as _lambda,
@@ -65,7 +65,7 @@ lambda_bedrock.LambdaToBedrockinferenceprofile(
 )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

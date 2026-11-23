@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "accountSid": "{{AC followed by 32 hexadecimal characters}}",
   "apiKeySid": "{{SK followed by 32 hexadecimal characters}}",
@@ -36,7 +36,7 @@ This field is required for a Restricted key. A Restricted key can call only the 
 
 The following are the metadata fields for Twilio API Key:
 
-```
+```json
 {
   "adminSecretArn": "arn:aws:secretsmanager:us-east-1:111122223333:secret:{{TwilioMainApiKey}}",
   "retainPreviousKey": "{{false}}",

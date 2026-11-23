@@ -42,6 +42,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel10-b
 
 ![Architecture diagram of a three-tier workload spanning three Availability Zones, with a load balancer across the zones and managed data services that replicate automatically.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/multi-tier-architecture.png)
 
+*Three-tier workload across three Availability Zones*
+
  Consider a secondary Region even when you don't need it for everyday availability. A warm standby or pilot light configuration gives you a disaster recovery target. Replicate baseline infrastructure and keep variable components at a minimal size. If the primary becomes unavailable, scale out the secondary and promote it.
 
 ### Implementation steps

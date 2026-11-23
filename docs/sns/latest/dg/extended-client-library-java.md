@@ -22,7 +22,7 @@ The Amazon SNS Extended Client library uses the Payload Offloading Java Common L
 + **Custom message sizes threshold** – Messages with payloads and attributes that exceed this size are automatically stored in Amazon S3.
 + **`alwaysThroughS3` flag** – Set this value to `true` to force all message payloads to be stored in Amazon S3. For example:
 
-  ```
+  ```java
   SNSExtendedClientConfiguration snsExtendedClientConfiguration = new
   SNSExtendedClientConfiguration() .withPayloadSupportEnabled(s3Client, BUCKET_NAME).withAlwaysThroughS3(true);
   ```
@@ -43,7 +43,7 @@ The message payload is stored in Amazon S3 and the reference to it is published.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/java/example_code/sns#code-examples).
 To publish a large message, use the Amazon SNS Extended Client Library for Java. The message that you send references an Amazon S3 object containing the actual message content.
 
-```
+```java
 import com.amazon.sqs.javamessaging.AmazonSQSExtendedClient;
 import com.amazon.sqs.javamessaging.ExtendedClientConfiguration;
 import com.amazonaws.regions.Region;
@@ -136,7 +136,7 @@ Both the Amazon SNS and Amazon SQS libraries use the [Payload Offloading Java Co
 
 Endpoints that can't use the Payload Offloading Java Common Library for AWS can still publish messages with payloads stored in Amazon S3. The following is an example of an Amazon S3 reference that is published by the above code example:
 
-```
+```json
 [
   "software.amazon.payloadoffloading.PayloadS3Pointer",
   {

@@ -46,7 +46,7 @@ Follow the [Amazon Kinesis Video Streams with WebRTC SDK in C for embedded devic
 
 1. Setup your environment with your AWS account credentials:
 
-   ```
+   ```bash
    export AWS_ACCESS_KEY_ID={{YourAccessKey}}
    export AWS_SECRET_ACCESS_KEY={{YourSecretKey}}
    export AWS_DEFAULT_REGION={{YourAWSRegion}}
@@ -54,7 +54,7 @@ Follow the [Amazon Kinesis Video Streams with WebRTC SDK in C for embedded devic
 
    If you're using temporary AWS credentials, also export your session token:
 
-   ```
+   ```bash
    export AWS_SESSION_TOKEN={{YourSessionToken}}
    ```
 
@@ -64,7 +64,7 @@ Follow the [Amazon Kinesis Video Streams with WebRTC SDK in C for embedded devic
 
    Navigate to the `build` folder and use "1" as the second argument. Type:
 
-   ```
+   ```bash
    ./samples/kvsWebrtcClientMaster {{channel-name}} 1
    ```
 
@@ -72,7 +72,7 @@ Follow the [Amazon Kinesis Video Streams with WebRTC SDK in C for embedded devic
 
    Navigate to the `build` folder and use "audio-video-storage" as the second argument. Type:
 
-   ```
+   ```bash
    ./samples/kvsWebrtcClientMasterGstSample {{channel-name}} audio-video-storage {{testsrc}}
    ```
 

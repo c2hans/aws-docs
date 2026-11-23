@@ -45,7 +45,7 @@ Use this policy because it grants access only to the datasets that you specify. 
 
 In each dataset ARN, the final Dataset/ segment matches the dashboard name. Include the ARN for each dashboard whose data the agent needs.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -87,7 +87,7 @@ The Attributed Revenue dataset currently returns no rows.
 
 This policy grants access to all current and future datasets by using a wildcard resource.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

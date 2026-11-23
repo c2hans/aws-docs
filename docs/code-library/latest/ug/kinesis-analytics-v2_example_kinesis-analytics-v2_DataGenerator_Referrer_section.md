@@ -14,7 +14,7 @@ The following code example shows how to generate a Kinesis stream with a referre
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 import json
 import boto3
 

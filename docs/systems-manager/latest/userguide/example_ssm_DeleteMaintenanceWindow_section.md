@@ -36,7 +36,7 @@ For more information, see [Delete a Maintenance Window (AWS CLI)](https://docs.a
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
     /**
      * Deletes an AWS SSM Maintenance Window asynchronously.
      *
@@ -82,7 +82,7 @@ For more information, see [Delete a Maintenance Window (AWS CLI)](https://docs.a
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import { DeleteMaintenanceWindowCommand, SSMClient } from "@aws-sdk/client-ssm";
 import { parseArgs } from "node:util";
 
@@ -115,7 +115,7 @@ export const main = async ({ windowId }) => {
 **Tools for PowerShell V4**
 **Example 1: This example removes a maintenance window.**
 
-```
+```powershell
 Remove-SSMMaintenanceWindow -WindowId "mw-06d59c1a07c022145"
 ```
 **Output:**
@@ -128,7 +128,7 @@ mw-06d59c1a07c022145
 **Tools for PowerShell V5**
 **Example 1: This example removes a maintenance window.**
 
-```
+```powershell
 Remove-SSMMaintenanceWindow -WindowId "mw-06d59c1a07c022145"
 ```
 **Output:**
@@ -144,7 +144,7 @@ mw-06d59c1a07c022145
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class MaintenanceWindowWrapper:
     """Encapsulates AWS Systems Manager maintenance window actions."""
 
@@ -190,7 +190,7 @@ class MaintenanceWindowWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ssm->deletemaintenancewindow( iv_windowid = iv_window_id ).
         MESSAGE 'Maintenance window deleted.' TYPE 'I'.

@@ -64,11 +64,11 @@ For the add-on `version`, if you choose **v1.5.0 or above**, Runtime Monitoring 
     You can use the following AWS CLI example when using configurable values supported for add-on versions `v1.5.0` or above. Make sure to replace the placeholder values highlighted in red and the associated `Example.json` with the configured values.
 
     ```
-    aws eks create-addon --region {{us-east-1}} --cluster-name {{myClusterName}} --addon-name aws-guardduty-agent --addon-version {{v1.17.3-eksbuild.2}} --configuration-values {{'file://example.json'}}
+    aws eks create-addon --region {{us-east-1}} --cluster-name {{myClusterName}} --addon-name aws-guardduty-agent --addon-version {{v1.17.4-eksbuild.2}} --configuration-values {{'file://example.json'}}
     ```
 **Example.json**
 
-    ```
+    ```json
     {
     	"priorityClassName": "aws-guardduty-agent.priorityclass-high",
     	"dnsPolicy": "Default",

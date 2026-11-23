@@ -10,19 +10,19 @@ Messages support variable interpolation. The built-in variable `${eventName}` re
 
 Example:
 
-```
+```json
 "messages": ["${asset.assetName} - ${eventName}"]
 ```
 
 Multiple messages are concatenated with newlines in the notification body:
 
-```
+```json
 "messages": ["Asset ${asset.assetName} — ${eventName}", "Project: ${project.projectName}"]
 ```
 
 You can also define different messages per resource type using an object format. When an event occurs, SDMA uses the array that matches the resource type. If no array matches, SDMA uses the `"default"` key:
 
-```
+```json
 "messages": {
   "asset": ["Asset ${asset.assetName} (${asset.assetId}) — ${eventName}"],
   "project": ["Project ${project.projectName} — ${eventName}"],

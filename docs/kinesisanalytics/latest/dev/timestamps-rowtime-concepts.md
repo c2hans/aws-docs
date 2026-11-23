@@ -51,7 +51,7 @@ The advantage of this strategy is that it can use a time that represents when th
 
 Consider the following query against the demo stream used in the [Getting Started Exercise](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/get-started-exercise.html). The query uses the `GROUP BY` clause and emits a ticker count in a one-minute tumbling window.
 
-```
+```sql
 CREATE OR REPLACE STREAM "DESTINATION_SQL_STREAM"
     ("ingest_time"    timestamp,
     "APPROXIMATE_ARRIVAL_TIME" timestamp,

@@ -4,13 +4,28 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 
 # ListDatasetExamples
 
- Returns paginated examples from the dataset. The server embeds the resolved version in the pagination token. Once pagination begins, all subsequent pages are pinned to that version regardless of concurrent mutations.
+ Returns paginated examples from the dataset. The server embeds the resolved version in the pagination token. Once pagination begins, all subsequent pages are pinned to that version regardless of concurrent mutations. A request with a pagination token can omit `datasetVersion`. If it sets a version that differs from the token's version, the request fails with a `ValidationException`.
 
 ## Request Syntax
 <a name="API_ListDatasetExamples_RequestSyntax"></a>
 
 ```
-GET /datasets/{{datasetId}}/examples?datasetVersion={{datasetVersion}}&maxResults={{maxResults}}&nextToken={{nextToken}} HTTP/1.1
+POST /datasets/{{datasetId}}/examples/list HTTP/1.1
+Content-type: application/json
+
+{
+   "datasetVersion": "{{string}}",
+   "filter": {
+      "exampleFields": [
+         {
+            "anyOf": [ "{{string}}" ]
+         }
+      ],
+      "generationIds": [ "{{string}}" ]
+   },
+   "maxResults": {{number}},
+   "nextToken": "{{string}}"
+}
 ```
 
 ## URI Request Parameters
@@ -23,22 +38,33 @@ The request uses the following URI parameters.
 Pattern: `[a-zA-Z0-9_-]{1,110}`
 Required: Yes
 
- ** [datasetVersion](#API_ListDatasetExamples_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasetExamples-request-uri-datasetVersion"></a>
- Version to paginate: "DRAFT" or a version number. Defaults to DRAFT if absent. Only used on the first request; for subsequent pages, the version is extracted from the pagination token.
-Pattern: `(DRAFT|[0-9]+)`
-
- ** [maxResults](#API_ListDatasetExamples_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasetExamples-request-uri-maxResults"></a>
- Maximum number of examples to return per page.
-Valid Range: Minimum value of 1. Maximum value of 1000.
-
- ** [nextToken](#API_ListDatasetExamples_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasetExamples-request-uri-nextToken"></a>
- The token for the next page of results.
-Length Constraints: Minimum length of 0. Maximum length of 2048.
-
 ## Request Body
 <a name="API_ListDatasetExamples_RequestBody"></a>
 
-The request does not have a request body.
+The request accepts the following data in JSON format.
+
+ ** [datasetVersion](#API_ListDatasetExamples_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasetExamples-request-datasetVersion"></a>
+ Version to paginate: "DRAFT" or a version number. Defaults to DRAFT if absent on the first request. With a pagination token, the version comes from the token: you can omit this member, and a value that differs from the token's version is rejected with a `ValidationException`.
+Type: String
+Pattern: `(DRAFT|[0-9]+)`
+Required: No
+
+ ** [filter](#API_ListDatasetExamples_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasetExamples-request-filter"></a>
+ A filter to apply to the examples.
+Type: [ListDatasetExamplesFilter](API_ListDatasetExamplesFilter.md) object
+Required: No
+
+ ** [maxResults](#API_ListDatasetExamples_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasetExamples-request-maxResults"></a>
+ Maximum number of examples to return per page.
+Type: Integer
+Valid Range: Minimum value of 1. Maximum value of 1000.
+Required: No
+
+ ** [nextToken](#API_ListDatasetExamples_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasetExamples-request-nextToken"></a>
+ The token for the next page of results.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Required: No
 
 ## Response Syntax
 <a name="API_ListDatasetExamples_ResponseSyntax"></a>

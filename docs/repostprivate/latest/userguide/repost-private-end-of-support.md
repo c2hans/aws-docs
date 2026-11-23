@@ -84,7 +84,7 @@ Your exported data will be available in one of two formats, based on your prefer
 
 1. Update your S3 bucket policy to grant `s3:PutObject` and `s3:PutObjectAcl` permissions to the provided principal. Example bucket policy statement:
 
-   ```
+   ```JSON
    {
      "Sid": "AllowRePostDataEgress",
      "Effect": "Allow",

@@ -39,6 +39,6 @@ sudo -u root dcv-session-manager-broker unregister-agent-client --client-id 3b0d
 
 **Output**
 
-```
+```json
 agent client 3b0d7b1d-78c7-4e79-b2e1-b976dEXAMPLE unregistered
 ```

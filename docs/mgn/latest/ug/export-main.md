@@ -47,7 +47,7 @@ The following is an example of an Amazon S3 bucket policy in the target account:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
    "Statement": [

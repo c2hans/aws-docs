@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 
 All APIs return structured error responses:
 
-```
+```json
 {
   "errorCode": "POLICY_NOT_FOUND",
   "message": "Policy with ID 550e8400-e29b-41d4-a716-446655440000 not found"

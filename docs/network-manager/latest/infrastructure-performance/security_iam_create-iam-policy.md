@@ -33,7 +33,7 @@ Create a policy that provides users full access to Infrastructure Performance. T
 
 ****
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
        "Statement": [

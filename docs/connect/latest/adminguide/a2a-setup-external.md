@@ -58,7 +58,7 @@ Your external agent authenticates inbound requests with an API key. Connect Cust
 
 1. **Create a customer managed KMS key** whose key policy lets Connect Customer decrypt the secret. This is required. Connect Customer cannot read a secret encrypted with the default `aws/secretsmanager` key. Add the following statement to the key policy, alongside your account's existing administrator statements. Connect Customer needs only `kms:Decrypt`, and only through AWS Secrets Manager.
 
-   ```
+   ```json
    {
      "Sid": "AllowConnectToDecryptSecret",
      "Effect": "Allow",
@@ -75,7 +75,7 @@ Your external agent authenticates inbound requests with an API key. Connect Cust
 
 1. **Attach a resource policy** to the secret with `PutResourcePolicy`. The policy lets Connect Customer read the secret with `secretsmanager:GetSecretValue`:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -104,7 +104,7 @@ Do not use the default AWS managed key (`aws/secretsmanager`). AWS managed keys 
 
 Register the external agent's endpoint as an AppIntegrations application. The `ApplicationType` must be `A2A_SERVER`, and `AuthConfig` is required.
 
-```
+```bash
 aws appintegrations create-application \
   --name my-agent \
   --namespace my-agent-ns \
@@ -117,7 +117,7 @@ aws appintegrations create-application \
 
 The response contains the application ID and ARN:
 
-```
+```json
 {"Id": "APPLICATION_ID", "Arn": "APPLICATION_ARN"}
 ```
 
@@ -134,7 +134,7 @@ Record the returned `Id` (referenced from your Connect AI agent configuration) a
 
 To make the application available to your instance, run the following command:
 
-```
+```bash
 aws connect create-integration-association \
   --instance-id INSTANCE_ID \
   --integration-type APPLICATION \
@@ -151,7 +151,7 @@ Create your Connect AI agent through the qconnect API to reference the external 
 
 Save the request body to a file (for example, `create-ai-agent.json`) and send it:
 
-```
+```bash
 aws qconnect create-ai-agent \
   --cli-input-json file://create-ai-agent.json \
   --region REGION
@@ -164,7 +164,7 @@ For a comparison of the collaboration modes, see [Compare collaboration modes](a
 
 Use `delegateAgentConfiguration` when the external agent performs work and returns a result, while your Connect AI agent continues talking to the customer. The customer does not interact with the collaborator. When your Connect AI agent decides to invoke the collaborator, it builds a text message for it.
 
-```
+```json
 {
   "assistantId": "YOUR_ASSISTANT_ID",
   "name": "my-orchestrator",
@@ -202,7 +202,7 @@ Set `audioStreamingEnabled` to `false` when the external agent works with text.
 
 On voice contacts, Connect Customer converts the caller's speech to text, sends text to the collaborator, receives text responses, and converts them to speech. If you omit the field, the default is `false`.
 
-```
+```json
 {
   "assistantId": "YOUR_ASSISTANT_ID",
   "name": "my-orchestrator",
@@ -242,7 +242,7 @@ When the external agent finishes, it sends a `COMPLETE` or `ESCALATE` finish typ
 
 Set `audioStreamingEnabled` to `true` when the external agent has its own speech capabilities and you want it to handle the caller's audio directly. Connect Customer streams the caller's audio to the collaborator's endpoint, and the collaborator streams audio back.
 
-```
+```json
 {
   "assistantId": "YOUR_ASSISTANT_ID",
   "name": "my-orchestrator",
@@ -288,7 +288,7 @@ For audio streaming, work with your AWS account team or Solutions Architect to v
 
 The security profile attached to your Connect AI agent must explicitly allow the third-party application, or collaboration fails at runtime. Update the security profile to include the application ARN with type `THIRD_PARTY` in its allowed AI agents.
 
-```
+```bash
 aws connect update-security-profile \
   --instance-id INSTANCE_ID \
   --security-profile-id SECURITY_PROFILE_ID \
@@ -298,7 +298,7 @@ aws connect update-security-profile \
 
 Then associate the security profile with your Connect AI agent. Run the following command once for each agent ARN: once with the unversioned ARN, and once with the versioned ARN.
 
-```
+```bash
 aws connect associate-security-profiles \
   --instance-id INSTANCE_ID \
   --entity-arn YOUR_ORCHESTRATING_AGENT_ARN \
@@ -313,7 +313,7 @@ aws connect associate-security-profiles \
 
 Create a new version to make the change live. Changes to your Connect AI agent configuration do not take effect until you publish a version.
 
-```
+```bash
 aws qconnect create-ai-agent-version \
   --assistant-id YOUR_ASSISTANT_ID \
   --ai-agent-id YOUR_ORCHESTRATING_AGENT_ID

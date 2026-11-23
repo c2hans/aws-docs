@@ -60,7 +60,7 @@ To make your visualizations work as they did before, you might have to do some m
 
  The following code example shows creating a specific MySQL user with restricted permissions.
 
-```
+```sql
  CREATE USER 'grafanaReader' IDENTIFIED BY 'password';
  GRANT SELECT ON mydatabase.mytable TO 'grafanaReader';
 ```
@@ -154,7 +154,7 @@ To make your visualizations work as they did before, you might have to do some m
 
  The following code shows an example query.
 
-```
+```sql
 SELECT
   title as 'Title',
   user.login as 'Created By' ,
@@ -175,7 +175,7 @@ WHERE $__timeFilter(dashboard.created)
 
  The following code example shows the `metric` column.
 
-```
+```sql
 SELECT
   $__timeGroup(time_date_time,'5m'),
   min(value_double),
@@ -188,7 +188,7 @@ ORDER BY time
 
  The following code example shows using the fill parameter in the $\_\_timeGroup macro to convert null values to be zero instead.
 
-```
+```sql
 SELECT
   $__timeGroup(createdAt,'5m',0),
   sum(value_double) as value,
@@ -202,7 +202,7 @@ ORDER BY time
 
  The following code example shows multiple columns.
 
-```
+```sql
 SELECT
   $__timeGroup(time_date_time,'5m'),
   min(value_double) as min_value,
@@ -229,19 +229,19 @@ There is no support for a dynamic group by time based on time range and panel wi
 
  For example, you can have a variable that contains all values for the `hostname` column in a table if you specify a query such as this in the templating variable *Query* setting.
 
-```
+```sql
 SELECT hostname FROM my_host
 ```
 
  A query can return multiple columns and Grafana will automatically create a list from them. For example, the following query will return a list with values from `hostname` and `hostname2`.
 
-```
+```sql
 SELECT my_host.hostname, my_other_host.hostname2 FROM my_host JOIN my_other_host ON my_host.city = my_other_host.city
 ```
 
  To use time range dependent macros such as `$__timeFilter(column)` in your query, the refresh mode of the template variable must be set to *On Time Range Change*.
 
-```
+```sql
 SELECT event_name FROM event_log WHERE $__timeFilter(time_column)
 ```
 
@@ -249,13 +249,13 @@ SELECT event_name FROM event_log WHERE $__timeFilter(time_column)
 
 The following code example shows a query with `hostname` as the text and `id` as the value.
 
-```
+```sql
 SELECT hostname AS __text, id AS __value FROM my_host
 ```
 
  You can also create nested variables. For example, if you had another variable named `region`. Then you could have the hosts variable show only hosts from the current selected region with a query such as this (if `region` is a multi-value variable then use the `IN` comparison operator rather than `=` to match against multiple values).
 
-```
+```sql
 SELECT hostname FROM my_host  WHERE region IN($region)
 ```
 
@@ -269,7 +269,7 @@ SELECT hostname FROM my_host  WHERE region IN($region)
 
  The following example shows how to use `__searchFilter` as part of the query field to enable searching for `hostname` while the user types in the dropdown select box.
 
-```
+```sql
 SELECT hostname FROM my_host  WHERE hostname LIKE '$__searchFilter'
 ```
 
@@ -286,7 +286,7 @@ SELECT hostname FROM my_host  WHERE hostname LIKE '$__searchFilter'
 
  `$<varname>` Example with a template variable named `hostname`:
 
-```
+```sql
 SELECT
   UNIX_TIMESTAMP(atimestamp) as time,
   aint as value,
@@ -298,7 +298,7 @@ ORDER BY atimestamp ASC
 
  `[[varname]]` Example with a template variable named `hostname`:
 
-```
+```sql
 SELECT
   UNIX_TIMESTAMP(atimestamp) as time,
   aint as value,
@@ -324,7 +324,7 @@ ORDER BY atimestamp ASC
 
  The following example code shows a query using a time column with epoch values.
 
-```
+```sql
 SELECT
   epoch_time as time,
   metric1 as text,
@@ -340,7 +340,7 @@ The following example code shows a region query using time and timeend columns w
 **Note**
  Available only in Grafana v6.6\+.
 
-```
+```sql
 SELECT
   epoch_time as time,
   epoch_timeend as timeend,
@@ -354,7 +354,7 @@ WHERE
 
  The following example code shows a query using a time column of native SQL date/time data type.
 
-```
+```sql
 SELECT
   native_date_time as time,
   metric1 as text,

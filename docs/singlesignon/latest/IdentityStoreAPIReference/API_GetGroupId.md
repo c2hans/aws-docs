@@ -138,7 +138,7 @@ This example retrieves the group ID for the Developers group using the display n
 #### Sample Request
 <a name="API_GetGroupId_Example_1_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "AlternateIdentifier": {
@@ -153,7 +153,7 @@ This example retrieves the group ID for the Developers group using the display n
 #### Sample Response
 <a name="API_GetGroupId_Example_1_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "GroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",

@@ -14,7 +14,7 @@ To combine multiple expressions together you use a pipe separator (`|`). Use a c
 
 The following example shows how to combine two expressions that use `INCLUDE`. The first expression includes only items with a category or categories that you specify when you get recommendations using the `$CATEGORY` parameter. The second expression includes items the user has marked as a `favorite`. Recommendations will include only items with the category you specify along with items that the user has marked as a favorite.
 
-```
+```sql
 INCLUDE ItemID WHERE Items.CATEGORY IN ($CATEGORY) | INCLUDE ItemID WHERE Interactions.EVENT_TYPE IN ("favorite")
 ```
 
@@ -28,6 +28,6 @@ Expression order does not matter: If the EXCLUDE expression comes before the INC
 
 The following example shows how to combine an `INCLUDE` expression and a `EXCLUDE` expression. The first expression includes only items with a genre or genres that you specify when you get recommendations using the `$GENRE` parameter. The second expression excludes items that the user has clicked or streamed. Recommendations will include only items with a genre that you specify that have not have been clicked or streamed.
 
-```
+```sql
 INCLUDE ItemID WHERE Items.GENRE IN ($GENRE) | EXCLUDE ItemID WHERE Interactions.EVENT_TYPE IN ("click", "stream")
 ```

@@ -13,7 +13,7 @@ To use EventBridge global endpoints with the SDK for PHP, your PHP environment m
 
 The following example uses the [PutEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-eventbridge-2015-10-07.html#putevents) method of the `EventBridgeClient` to send a single event to an EventBridge global endpoint.
 
-```
+```php
 <?php
 /* Send a single event to an existing Amazon EventBridge global endpoint. */
 require '../vendor/autoload.php';

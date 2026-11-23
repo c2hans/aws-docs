@@ -26,7 +26,7 @@ The **AWSDataLifecycleManagerServiceRole** policy provides appropriate permissio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -88,7 +88,7 @@ The **AWSDataLifecycleManagerServiceRoleForAMIManagement** policy provides appro
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -154,7 +154,7 @@ The policy uses the `aws:ResourceTag` condition key to restrict access to specif
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

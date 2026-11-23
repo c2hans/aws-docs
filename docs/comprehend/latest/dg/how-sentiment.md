@@ -25,7 +25,7 @@ The `DetectSentiment` operation returns an object that contains the detected sen
 
 The following example is the response from the `DetectSentiment` operation.
 
-```
+```json
 {
 "SentimentScore": {
         "Mixed": 0.030585512690246105,

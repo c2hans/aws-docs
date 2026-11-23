@@ -28,7 +28,7 @@ If your principal is a SageMaker AI domain execution role, the HyperPod console 
 
 The following manifest creates a head pod and a GPU worker group on HyperPod nodes.
 
-```
+```yaml
 apiVersion: ray.io/v1
 kind: RayCluster
 metadata:
@@ -66,7 +66,7 @@ spec:
                 requests: { cpu: "4", memory: "16Gi", nvidia.com/gpu: "1" }
 ```
 
-```
+```bash
 kubectl apply -f my-cluster.yaml -n {{my-namespace}}
 kubectl get raycluster {{my-cluster}} -n {{my-namespace}}
 ```

@@ -240,7 +240,7 @@ This example lists the users in the specified identity store.
 #### Sample Request
 <a name="API_ListUsers_Example_1_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "MaxResults": 100,
@@ -251,7 +251,7 @@ This example lists the users in the specified identity store.
 #### Sample Response
 <a name="API_ListUsers_Example_1_Response"></a>
 
-```
+```json
 {
         "Users": [
         {
@@ -289,7 +289,7 @@ This example lists users with extensions in the specified identity store.
 #### Sample Request
 <a name="API_ListUsers_Example_2_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "Extensions": ["aws:identitystore:enterprise"],
@@ -301,7 +301,7 @@ This example lists users with extensions in the specified identity store.
 #### Sample Response
 <a name="API_ListUsers_Example_2_Response"></a>
 
-```
+```json
 {
         "Users": [
         {

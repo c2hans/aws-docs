@@ -40,11 +40,11 @@ The Snowball Edge client is only supported on 64-bit Linux distributions.
 
 1. Run the following commands to configure the folders.
 
-   ```
+   ```bash,sh,zsh
      chmod u+x {{snowball-client-linux-build_number}}/bin/snowballEdge
    ```
 
-   ```
+   ```bash,sh,zsh
      chmod u+x {{snowball-client-linux-build_number}}/jre/bin/java
    ```
 
@@ -57,11 +57,11 @@ The Snowball Edge client is only supported on 64-bit Linux distributions.
 
 1. Run the following commands to configure the folders.
 
-   ```
+   ```bash,sh,zsh
      chmod u+x {{snowball-client-mac-build_number}}/bin/snowballEdge
    ```
 
-   ```
+   ```bash,sh,zsh
      chmod u+x {{snowball-client-mac-build_number}}/jre/bin/java
    ```
 
@@ -88,7 +88,7 @@ You can also use AWS OpsHub to create a profile. Profiles created in AWS OpsHub 
 
 1. Enter the command in the command line interface for your operating system. The value of the `profile-name` parameter is the name of the profile. You will provide it in the future when running Snowball Edge Client commands.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge configure --profile profile-name
    ```
 
@@ -97,7 +97,7 @@ You can also use AWS OpsHub to create a profile. Profiles created in AWS OpsHub 
 The value of the `endpoint` parameter is the IP address of the Snowball Edge, prefaced by `https://`. You can locate the IP address for the Snowball Edge device on the LCD screen on the front of the device.
 **Example output of `configure` command**
 
-   ```
+   ```bash,sh,zsh
    Configuration will stored at home directory\.aws\snowball\config\snowball-edge.config
    Snowball Edge Manifest Path: /Path/to/manifest/file
    Unlock Code: 29 character unlock code
@@ -113,7 +113,7 @@ If you are using multiple, standalone Snowball Edge, you can create a profile fo
 **Example `snowball-edge.config` file**
 This example shows a profile file containing three profiles—`SnowDevice1profile`, `SnowDevice2profile`, and `SnowDevice3profile`.
 
-```
+```JSON
 {"version":1,"profiles":
     {
     "SnowDevice1profile":
@@ -179,13 +179,13 @@ Use the `version` command to see the version of the Snowball Edge command line i
 
 **Usage**
 
-```
+```bash,sh,zsh
     snowballEdge version
 ```
 
 **Example output**
 
-```
+```bash,sh,zsh
     Snowball Edge client version: 1.2.0  Build 661
 ```
 
@@ -232,7 +232,7 @@ Snowball Edge devices support multiple services. These include compute instances
 
 Before you run this command, create a single virtual network interface to bind to the service that you're starting. For more information, see [Creating a Virtual Network Interface on a Snowball Edge](using-ec2-edge-client.md#ec2-edge-create-vnic).
 
-```
+```bash,sh,vsh
 snowballEdge start-service --service-id {{service_id}} --virtual-network-interface-arns {{virtual-network-interface-arn}} --profile profile-name
 ```
 
@@ -255,7 +255,7 @@ Data loss can occur if the Network File System (NFS) service is stopped before r
 **Note**
 Stopping the Amazon S3 compatible storage on Snowball Edge service disables access to the data stored in your S3 buckets on the device or cluster. Access is restored when the Amazon S3 compatible storage on Snowball Edge is started again. For devices enabled with Amazon S3 compatible storage on Snowball Edge, it is recommended to start the service after the Snowball Edge device is powered up. See [Setting up Snowball Edge](https://docs.aws.amazon.com/snowball/latest/developer-guide/s3compatible-on-snow.html#setting-up-s3-on-snow-cluster) in this guide.
 
-```
+```bahs,sh,zsh
 snowballEdge stop-service --service-id {{service_id}} --profile profile-name
 ```
 
@@ -275,12 +275,12 @@ There are three commands related to logs:
 
   **Usage**
 
-  ```
+  ```bash,sh,zsh
   snowballEdge list-logs --profile profile-name
   ```
 **Example output of the `list-logs` command**
 
-  ```
+  ```JSON
   {
     "Logs" : [ {
       "LogArn" : "arn:aws:snowball-device:::log/s3-storage-JIEXAMPLE2f-1234-4953-a7c4-dfEXAMPLE709",
@@ -299,7 +299,7 @@ There are three commands related to logs:
 
   **Usage**
 
-  ```
+  ```bash,sh,zsh
   snowballEdge get-log --log-arn arn:aws:snowball-device:::log/fileinterface-JIDEXAMPLEf-1234-4953-a7c4-dfEXAMPLE709 --profile profile-name
   ```
 **Example output of `get-log` command**
@@ -311,7 +311,7 @@ There are three commands related to logs:
 
   **Usage**
 
-  ```
+  ```bash,sh,zsh
   snowballEdge get-support-logs --profile profile-name
   ```
 **Example output of `get-support-logs` command**
@@ -328,13 +328,13 @@ There are three commands related to logs:
 
 You can determine the status and general health of Snowball Edge with the `describe-device` command.
 
-```
+```bash,sh,zsh
 snowballEdge describe-device --profile profile-name
 ```
 
 **Example output of `describe-device` command**
 
-```
+```JSON
                             {
   "DeviceId": "JID-EXAMPLE12345-123-456-7-890",
   "UnlockStatus": {
@@ -383,12 +383,12 @@ You can determine the status and general health of the services running on Snowb
 
   **Usage**
 
-  ```
+  ```bash,sh,zsh
   snowballEdge list-services --profile profile-name
   ```
 **Example output of `list-services` command**
 
-  ```
+  ```JSON
   {
     "ServiceIds" : [ "greengrass", "fileinterface", "s3", "ec2", "s3-snow" ]
   }
@@ -409,7 +409,7 @@ You can determine the status and general health of the services running on Snowb
   ```
 **Example output of `describe-service` command**
 
-  ```
+  ```JSON
   {
     "ServiceId": "s3",
     "Status": {
@@ -440,7 +440,7 @@ You can determine the status and general health of the services running on Snowb
 
   The `describe-service` command provides the following output for the {{s3-snow}} value of the `service-id` parameter.
 
-  ```
+  ```JSON
   {
     "ServiceId" : "s3-snow",
     "Autostart" : false,
@@ -589,13 +589,13 @@ To list the status of features available on a Snowball Edge use the `describe-fe
 
 **Usage**
 
-```
+```bash,sh,zsh
 snowballEdge describe-features --profile profile-name
 ```
 
 **Example output of `describe-features` command**
 
-```
+```JSON
 {
   "RemoteManagementState" : String
 }
@@ -613,7 +613,7 @@ It is your responsibility to provide a secure NTP time server. To set which NTP 
 
 To see which NTP time sources the device are currently connected to, use the `describe-time-sources` command.
 
-```
+```bash,sh,zsh
 snowballEdge describe-time-sources --profile profile-name
 ```
 
@@ -668,7 +668,7 @@ An NTP time source can either be a server or a peer. A server can be set by the 
 
 Use the `update-time-servers` command and the time server address to configure the Snowball Edge to use an NTP server or peer for NTP.
 
-```
+```bash,sh,zsh
 snowballEdge update-time-servers time-server-address --profile profile-name
 ```
 
@@ -712,13 +712,13 @@ You can use the `descibe-direct-network-interface` and `describe-virtual-network
 
 **Usage**
 
-```
+```bash,sh,zsh
 snowballEdge update-mtu-size --physical-network-interface-id {{physical-network-interface-id}} --mtu-size {{size-in-bytes}} --profile profile-name
 ```
 
 **Example of `update-mtu-size` output**
 
-```
+```JSON
 {
     "PhysicalNetworkInterface": {
         "PhysicalNetworkInterfaceId": "s.ni-8c1f891d7f5b87cfe",

@@ -42,7 +42,7 @@ If *index* is out of range, then an error is returned.
 
 The following SQL returns the geometries in a geometry collection.
 
-```
+```sql
 WITH tmp1(idx) AS (SELECT 1 UNION SELECT 2),
 tmp2(g) AS (SELECT ST_GeomFromText('GEOMETRYCOLLECTION(POLYGON((0 0,10 0,0 10,0 0)),LINESTRING(20 10,20 0,10 0))'))
 SELECT idx, ST_AsEWKT(ST_GeometryN(g, idx)) FROM tmp1, tmp2 ORDER BY idx;

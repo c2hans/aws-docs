@@ -29,7 +29,7 @@ Make sure your Lambda runtimes are up-to-date to avoid using a deprecated versio
 
 Add your own Hook handler runtime code to the handlers that you choose to implement. For example, you can add the following code for logging.
 
-```
+```python
 LOG.setLevel(logging.INFO)
 LOG.info("Internal testing Hook triggered for target: " + request.hookContext.targetName);
 ```
@@ -38,7 +38,7 @@ The CloudFormation CLI generates the `src/models.py` file from the [Hook configu
 
 **Example models.py**
 
-```
+```python
 import sys
 from dataclasses import dataclass
 from inspect import getmembers, isclass
@@ -140,7 +140,7 @@ Implement a `preDelete` handler, which initiates before the delete operations fo
 1. Replace the entire contents of the `handlers.py` file with the following code.
 **Example handlers.py**
 
-   ```
+   ```python
    import logging
    from typing import Any, MutableMapping, Optional
    import botocore

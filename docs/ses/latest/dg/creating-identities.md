@@ -372,7 +372,7 @@ To complete the procedure in this section, you must use version 1.14.6 or later 
 
 1. In a text editor, create a new file. Paste the following content into the editor:
 
-   ```
+   ```json
    {
      "TemplateName": "{{SampleTemplate}}",
      "FromEmailAddress": "{{sender@example.com}}",

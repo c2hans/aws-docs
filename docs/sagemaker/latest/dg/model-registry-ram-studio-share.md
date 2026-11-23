@@ -21,7 +21,7 @@ To share model groups you will first need to make sure that you have the followi
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

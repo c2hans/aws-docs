@@ -47,7 +47,7 @@ Note the following in this example:
 + The `MyEnvParameterValue` output exposes the same input parameter concatenation as an output parameter. Three additional output parameters also expose the input parameters individually.
 + Six additional output parameters expose resources that the environment provisions.
 
-```
+```yaml
 Resources:
   StoreInputValue:
     Type: AWS::SSM::Parameter
@@ -90,7 +90,7 @@ Outputs:
 **Example Service CloudFormation IaC file**
 The `environment.outputs.` namespace refers to environment outputs from an environment IaC file. For example, the name `environment.outputs.ClusterName` reads the value of the `ClusterName` environment output parameter.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Deploy a service on AWS Fargate, hosted in a public subnet, and accessible via a public load balancer.
 Mappings:

@@ -22,6 +22,8 @@ Sharing VPCs is useful when network isolation between teams does not need to be 
 
 ![A diagram depicting an example setup for shared VPC](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/example-setup-shared-vpc.png)
 
+**Example setup – shared VPC **
+
 **Note**
  VPC sharing participants cannot create all AWS resources in a shared subnet. For more information, refer to the [Limitations](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-share-limitations) section in the VPC Sharing documentation.
 For more information about the key considerations and best practices for VPC sharing, refer to the [VPC sharing: key considerations and best practices](https://aws.amazon.com/blogs/networking-and-content-delivery/vpc-sharing-key-considerations-and-best-practices/) blog post.

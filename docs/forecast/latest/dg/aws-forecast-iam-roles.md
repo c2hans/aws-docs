@@ -45,7 +45,7 @@ You can use the AWS IAM console to do the following:
 
 ****
 
-      ```
+      ```json
       {
          "Version":"2012-10-17",
          "Statement":[
@@ -107,7 +107,7 @@ You can use the AWS CLI to do the following:
 
 1.  Create an IAM role with Amazon Forecast as a trusted entity that can assume the role for you:
 
-   ```
+   ```json
    aws iam create-role \
     --role-name {{ForecastRole}} \
     --assume-role-policy-document '{
@@ -137,7 +137,7 @@ You can use the AWS CLI to do the following:
 
    If the command successfully creates the role, it returns it as output, which should look similar to the following:
 
-   ```
+   ```json
    {
        "Role": {
            "Path": "/",
@@ -174,7 +174,7 @@ You can use the AWS CLI to do the following:
 
 1. Create an IAM policy with permissions to list, read, and write data in Amazon S3, and attach it to the IAM role that you created in Step 1:
 
-   ```
+   ```json
    aws iam put-role-policy \
      --role-name {{ForecastRole}} \
      --policy-name {{ForecastBucketAccessPolicy}} \
@@ -199,7 +199,7 @@ You can use the AWS CLI to do the following:
 
 1. **[OPTIONAL]** When using a KMS key to enable encryption, attach the KMS key and ARN:
 
-   ```
+   ```json
    aws iam put-role-policy \
      --role-name {{ForecastRole}} \
      --policy-name {{ForecastBucketAccessPolicy}} \

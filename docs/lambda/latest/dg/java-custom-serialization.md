@@ -20,7 +20,7 @@ You can also use your own objects to represent the event JSON that you pass to y
 
 For example, assume that your function handler expects a `Vehicle` class as input, with the following structure:
 
-```
+```java
 public class Vehicle {
     private String vehicleType;
     private long vehicleId;
@@ -29,7 +29,7 @@ public class Vehicle {
 
 However, the JSON event payload looks like this:
 
-```
+```JSON
 {
     "vehicle-type": "car",
     "vehicleID": 123

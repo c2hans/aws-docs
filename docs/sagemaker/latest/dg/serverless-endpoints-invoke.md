@@ -16,7 +16,7 @@ The following example uses the [AWS SDK for Python (Boto3)](https://boto3.amazon
 + For `content_type`, specify the MIME type of your input data in the request body (for example, `application/json`).
 + For `payload`, use your request payload for inference. Your payload should be in bytes or a file-like object.
 
-```
+```python
 runtime = boto3.client("sagemaker-runtime")
 
 endpoint_name = "{{<your-endpoint-name>}}"

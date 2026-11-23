@@ -100,7 +100,7 @@ The following permissions policy only allows users to view and accept requests f
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -133,7 +133,7 @@ The following permissions policy allows users to manage connections between Code
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -190,7 +190,7 @@ The following permissions policy denies users any ability to manage connections 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

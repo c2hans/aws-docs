@@ -16,7 +16,7 @@ The Amazon Resource Name (ARN) of the connection. The ARN is used as the connect
 The ARN is never reused if the connection is deleted.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `arn:aws(-[\w]+)*:.+:.+:[0-9]{12}:.+`
+Pattern: `arn:aws(-[\w]+)*:(codestar-connections|codeconnections):[a-z0-9\-]+:[0-9]{12}:connection\/[\w\-]+`
 Required: No
 
  ** ConnectionName **   <a name="codeconnections-Type-Connection-ConnectionName"></a>
@@ -46,10 +46,17 @@ Length Constraints: Fixed length of 12.
 Pattern: `[0-9]{12}`
 Required: No
 
+ ** ProviderEndpoint **   <a name="codeconnections-Type-Connection-ProviderEndpoint"></a>
+The endpoint of the ghe.com tenant where your organization resides. This value is populated only for a connection with a `ProviderType` of `GitHubEnterpriseCloudDataResidency`. It is empty for all other provider types.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `.*`
+Required: No
+
  ** ProviderType **   <a name="codeconnections-Type-Connection-ProviderType"></a>
 The name of the external provider where your third-party code repository is configured.
 Type: String
-Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps`
+Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps | GitHubEnterpriseCloudDataResidency`
 Required: No
 
 ## See Also

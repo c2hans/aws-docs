@@ -309,6 +309,18 @@ Creates a [RuleGroup](API_RuleGroup.md) per the specifications provided.
                            }
                         }
                      },
+                     "AWSManagedRulesAISecurityRuleSet": {
+                        "BedrockGuardrails": {
+                           "Disable": {
+                           },
+                           "ProtectRequestAndResponse": {
+                              "RoleArn": "{{string}}"
+                           },
+                           "ProtectRequestOnly": {
+                              "RoleArn": "{{string}}"
+                           }
+                        }
+                     },
                      "AWSManagedRulesAntiDDoSRuleSet": {
                         "ClientSideActionConfig": {
                            "Challenge": {

@@ -28,15 +28,17 @@ You create a PaymentManager with the [CreatePaymentManager](payments-create-mana
 ## PaymentConnector
 <a name="payments-how-it-works-payment-connector"></a>
 
-A PaymentConnector integrates your PaymentManager with an external payment provider such as Coinbase or Stripe (Privy). Each connector references a credential provider stored in AgentCore Identity, using existing secure connection and storage for your API keys and secrets.
+Use a PaymentConnector to integrate your PaymentManager with a payment provider such as Coinbase, Stripe (Privy), or AWS Billing. Each wallet connector, Coinbase CDP or Stripe (Privy), references a credential provider stored in AgentCore Identity, using existing secure connection and storage for your API keys and secrets. An AWS Billing connector doesn’t use a credential provider. Instead, it uses the AWS Marketplace service-linked role in your account to make AWS Marketplace purchases on your behalf.
 
 AgentCore payments supports the following connector types:
 +  [CoinbaseCDP](https://docs.cdp.coinbase.com/embedded-wallets/welcome) — Connects to the Coinbase Developer Platform for crypto wallet operations.
 +  [StripePrivy](https://docs.privy.io/basics/get-started/organization) — Connects to Stripe with Privy wallet infrastructure.
++ AwsBilling — Pays AWS Marketplace sellers and bills the charges to your AWS account. For more information, see [Pay with AWS Billing](payments-process-payment.md#payments-process-payment-aws-billing).
 
 Key connector characteristics:
 + Each PaymentConnector belongs to exactly one PaymentManager
-+ Credentials are stored in AWS Secrets Manager through AgentCore Identity and referenced by ARN
++ For wallet connectors, credentials are stored in AWS Secrets Manager through AgentCore Identity and referenced by ARN
++ A PaymentManager can have at most one AWS Billing connector
 + Connectors share the base lifecycle states with PaymentManagers (`CREATING`, `READY`, `UPDATING`, `CREATE_FAILED`, `UPDATE_FAILED`, `DELETE_FAILED`). Coinbase Quick create connectors can also report additional states (`PENDING_AUTHENTICATION`, `PROVISIONING`, `AUTHENTICATION_EXPIRED`, `AUTHENTICATION_FAILED`) — see the following section.
 
 You create a connector with the [CreatePaymentConnector](payments-create-manager.md#payments-create-manager-create) operation. For the complete list of connector operations, see the [Payments API reference](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreatePaymentConnector.html).

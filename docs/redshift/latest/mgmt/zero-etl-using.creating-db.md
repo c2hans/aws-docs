@@ -43,7 +43,7 @@ Before you can start replicating data from your source into Amazon Redshift, cre
 
    Alternatively, run the following command to get the `integration_id` value:
 
-   ```
+   ```sql
    SELECT integration_id FROM SVV_INTEGRATION;
    ```
 
@@ -51,13 +51,13 @@ Before you can start replicating data from your source into Amazon Redshift, cre
 
    Substitute `integration_id` with the value returned by the previous command.
 
-   ```
+   ```sql
    CREATE DATABASE {{destination_db_name}} FROM INTEGRATION '{{integration_id}}';
    ```
 
    For Aurora PostgreSQL, RDS for PostgreSQL, RDS for Oracle, or Oracle Database@AWS sources, you must also include a reference to the named database within the source instance or cluster that you specified when you created the integration. For example:
 
-   ```
+   ```sql
    CREATE DATABASE {{"destination_db_name"}} FROM INTEGRATION '{{integration_id}}' DATABASE {{"named_db"}};
    ```
 

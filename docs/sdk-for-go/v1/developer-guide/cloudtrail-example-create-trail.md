@@ -12,7 +12,7 @@ Choose `Copy` to save the code locally.
 
 Create the file *create\_trail.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -28,7 +28,7 @@ import (
 
 Get the names of the trail and bucket, and whether to attach the policy to the bucket. If either the trail name or bucket name is missing, display an error message and exit.
 
-```
+```go
 trailNamePtr := flag.String("n", "", "The name of the trail")
 bucketNamePtr := flag.String("b", "", "the name of the bucket to which the trails are uploaded")
 addPolicyPtr := flag.Bool("p", false, "Whether to add the CloudTrail policy to the bucket")
@@ -43,7 +43,7 @@ if *trailNamePtr == "" || *bucketNamePtr == "" {
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `.aws/credentials` in your home folder.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -51,7 +51,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 If the **-p** flag was specfied, add a policy to the bucket.
 
-```
+```go
 if *addPolicyPtr {
     svc := sts.New(sess)
     input := &sts.GetCallerIdentityInput{}
@@ -120,7 +120,7 @@ if *addPolicyPtr {
 
 Create the CloudTrail client, the input for **CreateTrail**, and call **CreateTrail**. If an error occurs, print the error and exit. If no error occurs, print a success message.
 
-```
+```go
 svc := cloudtrail.New(sess)
 
 input := &cloudtrail.CreateTrailInput{

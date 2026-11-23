@@ -32,7 +32,7 @@ You can create and submit a template from the AWS End User Messaging Social cons
 
 Use the `create-whatsapp-message-template` command. Pass the WABA ID and a template definition that sets the name, language, category, and components. The following example creates a basic English utility template with variable placeholders in the body.
 
-```
+```bsh
 aws socialmessaging create-whatsapp-message-template --region {{us-east-1}} \\
 --id {{WABA_ID}} \\
 --template-definition '{

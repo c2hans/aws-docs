@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Starts the compute fleet for a cluster that has been stopped.
 
-```
+```sh
 pcluster start [ -h ] [ -c {{CONFIG_FILE}} ] [ -r {{REGION}} ] {{cluster_name}}
 ```
 

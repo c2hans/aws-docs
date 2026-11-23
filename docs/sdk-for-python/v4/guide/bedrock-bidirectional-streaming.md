@@ -16,13 +16,13 @@ For request and response details, see the [invoke\_model\_with\_bidirectional\_s
 
 Bidirectional streaming requires the AWS Common Runtime (CRT) HTTP client. Install the client's `awscrt` extra. Then pass `transport=AWSCRTHTTPClient()` when you resolve the configuration. For this reason, the example creates its own client instead of calling `create_async_client`. For more information, see [Use the AWS CRT client for bidirectional streaming](http-configuration.md#http-crt-streaming).
 
-```
+```bash
 python -m pip install "aws-sdk-bedrock-runtime[awscrt]"
 ```
 
  **Imports**
 
-```
+```python
 import asyncio
 import base64
 import json
@@ -43,7 +43,7 @@ from aws_sdk_bedrock_runtime.models import (
 
 The program sends the audio in 512-byte chunks and sleeps 0.016 seconds after each chunk to match the pace of live audio. The first four constants control the chunk size, the trailing silence, and the timing. `DEFAULT_SYSTEM_PROMPT` is the system instruction that the session sends before the audio. The validation helper rejects a missing or empty audio file before any network call.
 
-```
+```python
 CHUNK_SIZE = 512
 SILENCE_CHUNKS = 125
 CHUNK_INTERVAL_SECONDS = 0.016
@@ -55,7 +55,7 @@ DEFAULT_SYSTEM_PROMPT = (
 )
 ```
 
-```
+```python
 def validate_audio_input(audio_file: Path) -> None:
     """Require a nonempty audio file supplied by the caller."""
     if not audio_file.is_file() or audio_file.stat().st_size == 0:
@@ -67,7 +67,7 @@ def validate_audio_input(audio_file: Path) -> None:
 
 Nova 2 Sonic input events are JSON documents. The session nests three scopes. An event pair opens and closes each scope: `sessionStart` and `sessionEnd` for the connection, `promptStart` and `promptEnd` for one prompt, and `contentStart` and `contentEnd` for each content block inside the prompt. A content block carries either text or audio. More than one content block opens and closes on the same stream, so each event carries the `promptName` and `contentName` of the scope it belongs to. The templates leave those values as `%s` placeholders. The following templates define every event that this example sends.
 
-```
+```python
 START_SESSION_EVENT = """{
     "event": {
         "sessionStart": {
@@ -181,7 +181,7 @@ SESSION_END_EVENT = """{
 
 The following function encodes one filled-in template and wraps it in the generated input union before sending it to the stream. Unlike operation arguments, input stream events must be generated model objects. The stream doesn't accept dictionaries.
 
-```
+```python
 async def send_event(stream: Any, event_json: str) -> None:
     """Send one JSON input event to the stream."""
     await stream.input_stream.send(
@@ -196,7 +196,7 @@ async def send_event(stream: Any, event_json: str) -> None:
 
 Read 512-byte chunks, encode them as base64, and wait `CHUNK_INTERVAL_SECONDS` after each chunk to keep the real-time pacing. After the file, the function sends two seconds of silence, waits three seconds for the model to respond, then closes the audio content, prompt, and session in order.
 
-```
+```python
 async def publish_audio(
     stream: Any,
     prompt_name: str,
@@ -237,7 +237,7 @@ async def publish_audio(
 
 Call `await_output` to get the output stream before you iterate it. Narrow every generated output event, decode its JSON payload, collect text, and record audio output. Stop when the model sends `completionEnd`. A modeled error event makes the `async for` loop raise the generated exception.
 
-```
+```python
 async def receive_events(stream: Any) -> tuple[list[str], bool, bool]:
     """Receive narrowed output events until the model signals completion."""
     _, output_stream = await stream.await_output()
@@ -274,7 +274,7 @@ async def receive_events(stream: Any) -> tuple[list[str], bool, bool]:
 
 Pass the model ID as the `model_id` keyword argument to open the stream. Then send the `init_events` list in protocol order: start the session and the prompt, send the system instruction as a complete text content block, and open the user audio content block. After that, run the publisher and receiver concurrently, so the program keeps sending audio while it receives output. Verify that the stream completed and produced both text and audio before accepting the result.
 
-```
+```python
 async def invoke_model_with_bidirectional_stream(
     client: AsyncBedrockRuntimeClient,
     audio_file: Path,
@@ -320,7 +320,7 @@ async def invoke_model_with_bidirectional_stream(
 
 The entry point creates an asynchronous client with the CRT HTTP client and runs the streaming session. Run the program with `python invoke_model_with_bidirectional_stream.py`.
 
-```
+```python
 async def main() -> None:
     """Create a client that uses the CRT HTTP client and run the example."""
     # Load the input audio (headerless, 16 kHz, signed 16-bit, mono PCM).

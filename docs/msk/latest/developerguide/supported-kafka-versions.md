@@ -50,10 +50,7 @@ Amazon Managed Streaming for Apache Kafka (Amazon MSK) now supports Apache Kafka
 
 For more details and a complete list of improvements and bug fixes, see the [Apache Kafka release notes for version 4.2](https://archive.apache.org/dist/kafka/4.2.0/RELEASE_NOTES.html).
 
-To start using Apache Kafka 4.2 on Amazon MSK, choose version 4.2.x when creating a new cluster with Express brokers through the AWS Management Console, AWS CLI, or AWS SDKs. You can also upgrade existing MSK Express clusters with an in-place rolling update. Amazon MSK orchestrates broker restarts to maintain availability and protect your data during the upgrade. Kafka version 4.2 support is available on MSK Express brokers across all AWS Regions where Amazon MSK is offered.
-
-**Note**
-Apache Kafka version 4.2 is currently available on MSK Express brokers only.
+To start using Apache Kafka 4.2 on Amazon MSK, choose version 4.2.x when creating a new cluster with Standard or Express brokers through the AWS Management Console, AWS CLI, or AWS SDKs. You can also upgrade existing Standard or Express clusters with an in-place rolling update. Amazon MSK orchestrates broker restarts to maintain availability and protect your data during the upgrade. Kafka version 4.2 support is available on MSK Standard and Express brokers across all AWS Regions where Amazon MSK is offered.
 
 **Note**
 KIP-932: Queues for Kafka is not yet supported on MSK Express brokers.

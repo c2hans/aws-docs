@@ -27,7 +27,7 @@ The second statement grants users permission to create the VPC peering connectio
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":[
@@ -59,7 +59,7 @@ The following policy grants users in the specified AWS account permission to cre
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -94,7 +94,7 @@ The following policy grants users permission to accept VPC peering connection re
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":[
@@ -126,7 +126,7 @@ The following policy grants users permission to accept VPC peering requests if t
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":[
@@ -161,7 +161,7 @@ The following policy grants users in the specified account permission to delete 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -198,7 +198,7 @@ The third statement uses a \* wildcard as part of the `Action` element to grant 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -244,7 +244,7 @@ The following policy grants users permission to view VPC peering connections, an
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

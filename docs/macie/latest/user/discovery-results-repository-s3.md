@@ -106,7 +106,7 @@ After you determine which KMS key you want Macie to use, give Macie permission t
 
 1. Copy the following statement to your clipboard, and then add it to the policy:
 
-   ```
+   ```JSON
    {
        "Sid": "Allow Macie to use the key",
        "Effect": "Allow",
@@ -141,7 +141,7 @@ When you add the statement to the policy, make sure that the syntax is valid. Po
 
        If you use Macie in multiple Regions and want to allow Macie to use the key in additional Regions, add `aws:SourceArn` conditions for each additional Region. For example:
 
-       ```
+       ```JSON
        "aws:SourceArn": [
            "arn:aws:macie2:us-east-1:111122223333:export-configuration:*",
            "arn:aws:macie2:us-east-1:111122223333:classification-job/*",
@@ -152,7 +152,7 @@ When you add the statement to the policy, make sure that the syntax is valid. Po
 
        Alternatively, you can allow Macie to use the key in all Regions. To do this, replace the placeholder value with the wildcard character (`*`). For example:
 
-       ```
+       ```JSON
        "aws:SourceArn": [
            "arn:aws:macie2:*:111122223333:export-configuration:*",
            "arn:aws:macie2:*:111122223333:classification-job/*"
@@ -167,14 +167,14 @@ When you add the statement to the policy, make sure that the syntax is valid. Po
 
      To allow Macie to perform the specified actions for additional accounts, add the account ID for each additional account to this condition. For example:
 
-     ```
+     ```JSON
      "aws:SourceAccount": [111122223333,444455556666]
      ```
    + [aws:SourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) – This condition prevents other AWS services from performing the specified actions. It also prevents Macie from using the key while performing other actions for your account. In other words, it allows Macie to encrypt S3 objects with the key only if: the objects are sensitive data discovery results, and the results are for automated sensitive data discovery or sensitive data discovery jobs created by the specified account in the specified Region.
 
      To allow Macie to perform the specified actions for additional accounts, add ARNs for each additional account to this condition. For example:
 
-     ```
+     ```JSON
      "aws:SourceArn": [
          "arn:aws:macie2:us-east-1:111122223333:export-configuration:*",
          "arn:aws:macie2:us-east-1:111122223333:classification-job/*",
@@ -264,7 +264,7 @@ After you create the bucket, update the bucket's policy to allow Macie to retrie
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -368,7 +368,7 @@ After you create the bucket, update the bucket's policy to allow Macie to retrie
 
        If you use Macie in multiple Regions and want to allow Macie to add results to the bucket for additional Regions, add `aws:SourceArn` conditions for each additional Region. For example:
 
-       ```
+       ```JSON
        "aws:SourceArn": [
            "arn:aws:macie2:us-east-1:111122223333:export-configuration:*",
            "arn:aws:macie2:us-east-1:111122223333:classification-job/*",
@@ -379,7 +379,7 @@ After you create the bucket, update the bucket's policy to allow Macie to retrie
 
        Alternatively, you can allow Macie to add results to the bucket for all Regions in which you use Macie. To do this, replace the placeholder value with the wildcard character (`*`). For example:
 
-       ```
+       ```JSON
        "aws:SourceArn": [
            "arn:aws:macie2:*:111122223333:export-configuration:*",
            "arn:aws:macie2:*:111122223333:classification-job/*"
@@ -394,14 +394,14 @@ After you create the bucket, update the bucket's policy to allow Macie to retrie
 
      To store results for additional accounts in the bucket, add the account ID for each additional account to this condition. For example:
 
-     ```
+     ```JSON
      "aws:SourceAccount": [111122223333,444455556666]
      ```
    + [aws:SourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) – This condition restricts access to the bucket based on the source of the objects that are being added to the bucket. It prevents other AWS services from adding objects to the bucket. It also prevents Macie from adding objects to the bucket while performing other actions for your account. More specifically, the condition allows Macie to add objects to the bucket only if: the objects are sensitive data discovery results, and the results are for automated sensitive data discovery or sensitive data discovery jobs created by the specified account in the specified Region.
 
      To allow Macie to perform the specified actions for additional accounts, add ARNs for each additional account to this condition. For example:
 
-     ```
+     ```JSON
      "aws:SourceArn": [
          "arn:aws:macie2:us-east-1:111122223333:export-configuration:*",
          "arn:aws:macie2:us-east-1:111122223333:classification-job/*",

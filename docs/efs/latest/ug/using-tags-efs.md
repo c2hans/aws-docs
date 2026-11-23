@@ -28,7 +28,7 @@ In the IAM policy definition for the `elasticfilesystem:TagResource` action, use
 **Example policy: Allow adding tags to file systems only at the time of creation**
 The following example policy allows users to create file systems and apply tags to them only during creation. Users are not permitted to tag any existing resources (they cannot call the `elasticfilesystem:TagResource` action directly).
 
-```
+```json
 {
   "Statement": [
     {
@@ -97,7 +97,7 @@ The following example policy allows a user to delete only file systems that are 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

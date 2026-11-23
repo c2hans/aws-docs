@@ -13,7 +13,7 @@ With Basic authentication (`BASIC`), you create a secret containing a username (
 
 Store the credentials in an AWS Secrets Manager secret with the following key-value pairs:
 
-```
+```json
 {
     "username": "{{your-confluence-username}}",
     "password": "{{your-confluence-password}}"
@@ -34,7 +34,7 @@ With personal access token authentication (`PERSONAL_TOKEN`), you create a secre
 
 Store the token in an AWS Secrets Manager secret with the following key-value pair:
 
-```
+```json
 {
     "patToken": "{{your-confluence-data-center-personal-access-token}}"
 }

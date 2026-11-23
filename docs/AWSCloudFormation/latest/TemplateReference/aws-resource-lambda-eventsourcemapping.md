@@ -125,7 +125,7 @@ Specific configuration settings for an Amazon Managed Streaming for Apache Kafka
 The maximum number of records in each batch that Lambda pulls from your stream or queue and sends to your function. Lambda passes all of the records in the batch to the function in a single call, up to the payload limit for synchronous invocation (6 MB).
 + **Amazon Kinesis** – Default 100. Max 10,000.
 + **Amazon DynamoDB Streams** – Default 100. Max 10,000.
-+ **Amazon Simple Queue Service** – Default 10. For standard queues the max is 10,000. For FIFO queues the max is 10.
++ **Amazon Simple Queue Service** – Default 10. For standard queues the max is 10,000. For FIFO queues, the max is 10,000 if the event source mapping uses provisioned mode. Otherwise, the max is 10.
 + **Amazon Managed Streaming for Apache Kafka** – Default 100. Max 10,000.
 + **Self-managed Apache Kafka** – Default 100. Max 10,000.
 + **Amazon MQ (ActiveMQ and RabbitMQ)** – Default 100. Max 10,000.
@@ -227,6 +227,7 @@ The maximum amount of time, in seconds, that Lambda spends gathering records bef
 **Default (Kinesis, DynamoDB, Amazon SQS event sources)**: 0
 **Default (Amazon MSK, Kafka, Amazon MQ, Amazon DocumentDB event sources)**: 500 ms
 **Related setting: ** For Amazon SQS event sources, when you set `BatchSize` to a value greater than 10, you must set `MaximumBatchingWindowInSeconds` to at least 1.
+For Amazon SQS FIFO queues, you can set a batching window greater than 0 seconds only if the event source mapping uses provisioned mode (`ProvisionedPollerConfig`).
 *Required*: No
 *Type*: Integer
 *Minimum*: `0`

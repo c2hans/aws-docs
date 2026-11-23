@@ -16,7 +16,7 @@ This section defines the attributes for the custom lens itself. This is its name
 + `name`: Name of the lens. The name can be up to 128 characters.
 + `description`: Text description of the lens. This text is displayed when selecting lenses to add during workload creation, or when selecting a lens to apply to an existing workload later. The description can be up to 2048 characters.
 
-```
+```json
     "schemaVersion": "2021-11-01",
     "name": "{{Company Policy ABC}}",
     "description": "{{This lens provides a set of specific questions to assess compliance with company policy ABC-2021 as revised on 2021/09/01.}}",
@@ -39,7 +39,7 @@ You can define up to 10 pillars in a custom lens.
   + `sustainability`
 + `name`: Name of the pillar. The name can be up to 128 characters.
 
-```
+```json
      "pillars": [
         {
             "id": "{{company_Privacy}}",
@@ -74,7 +74,7 @@ You can define up to 20 questions in a pillar in a custom lens.
  When syncing a custom lens workload to Jira, questions display both the "id" and "title" of the question.
  The format used in Jira tickets is `[ QuestionID ] QuestionTitle`.
 
-```
+```json
 "questions": [
     {
         "id": "{{privacy01}}",
@@ -124,7 +124,7 @@ You can define up to 15 choices for a question in a custom lens.
  When syncing a custom lens workload to Jira, choices display the "id" of the question and choice, as well as the "title" of the choice.
  The format used is `[ QuestionID | ChoiceID ] ChoiceTitle`.
 
-```
+```json
     "choices": [
          {
              "id": "{{choice_1}}",
@@ -208,7 +208,7 @@ The order of your risk rules is significant. The first `condition` that evaluate
 
 For example:
 
-```
+```json
  "riskRules": [
        {
          "condition": "{{choice_1 && choice_2 && choice_3}}",

@@ -40,7 +40,7 @@ Both roles must have the following trust policy, which allows your Cognito ident
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{
@@ -71,7 +71,7 @@ Replace `identity-pool-id` with the unique identifier of your Amazon Cognito ide
 
 Both roles also need an identity-based permissions policy that allows access to the OpenSearch domain. Attach the following policy to both `MasterUserRole` and `LimitedUserRole`:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -96,7 +96,7 @@ Navigate to the Amazon OpenSearch Service console at [https://console.aws.amazon
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -145,7 +145,7 @@ Now that your users are configured, you can sign in to OpenSearch Dashboards as 
 
 1. For **Document level security**, specify the following query:
 
-   ```
+   ```json
    {
      "match": {
        "FlightDelay": true
@@ -172,7 +172,7 @@ When your roles are mapped correctly, you can sign in as the limited user and te
 
 1. Go to **Dev Tools** and run the default search:
 
-   ```
+   ```json
    GET _search
    {
      "query": {
@@ -185,7 +185,7 @@ When your roles are mapped correctly, you can sign in as the limited user and te
 
 1. Run another search:
 
-   ```
+   ```json
    GET opensearch_dashboards_sample_data_flights/_search
    {
      "query": {

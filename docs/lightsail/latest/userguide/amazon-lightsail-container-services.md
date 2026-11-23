@@ -4,6 +4,9 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 
 # Deploy and manage containers on Amazon Lightsail
 
+**Did you know?**
+ Lightsail publishes an agent skill that deploys a container image to a container service and finds why a deployment isn't serving traffic. For more information, see [ Set up an AI agent for Amazon Lightsail ](https://docs.aws.amazon.com/lightsail/latest/userguide/agent-setup-guide.html) .
+
 An Amazon Lightsail container service is a highly scalable compute and networking resource on which you can deploy, run, and manage containers. A container is a standard unit of software that packages code and its dependencies together so the application runs quickly and reliably from one computing environment to another.
 
 You can think of your Lightsail container service as a computing environment that lets you run containers on AWS infrastructure by using images that you create on your local machine and push to your service, or images from an online repository, like Amazon ECR Public Gallery.
@@ -25,6 +28,7 @@ You can also run containers locally, on your local machine, by installing softwa
   + [Container logs](#container-services-container-logs)
   + [Metrics](#container-services-metrics)
 + [Use Lightsail container services](#using-lightsail-container-services)
++ [Use with AI agents](#container-services-agent-skills)
 
 ## Containers
 <a name="understanding-containers"></a>
@@ -195,3 +199,8 @@ The following are the general steps to manage your Lightsail container service a
 1. (Optional) Scale the capacity of your container service vertically, by increasing its power specification, and horizontally, by increasing its scale specification. For more information, see [Change the capacity of your Lightsail container services](amazon-lightsail-changing-container-service-capacity.md).
 
 1. Delete your container service if you're not using it to avoid incurring monthly charges. For more information, see [Delete Lightsail container services](amazon-lightsail-deleting-container-services.md).
+
+## Use with AI agents
+<a name="container-services-agent-skills"></a>
+
+An AI agent can deploy a container image to a Lightsail container service and find why a deployment isn't serving traffic, using the `deploying-containers-to-amazon-lightsail` skill from the Agent Toolkit for AWS. For instructions, see [Set up an AI agent for Amazon Lightsail](agent-setup-guide.md).

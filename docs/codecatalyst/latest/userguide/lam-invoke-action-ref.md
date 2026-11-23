@@ -13,7 +13,7 @@ This action definition exists as a section within a broader workflow definition 
 **Note**
 Most of the YAML properties that follow have corresponding UI elements in the visual editor. To look up a UI element, use **Ctrl\+F**. The element will be listed with its associated YAML property.
 
-```
+```yaml
 # The workflow definition starts here.
 # See Top-level properties for details.
 
@@ -348,7 +348,7 @@ If you want to pass a request payload to the **AWS Lambda invoke** action, speci
 
 Example request payload:
 
-```
+```json
 '{ "key": "value" }'
 ```
 
@@ -424,7 +424,7 @@ Specify which keys in the Lambda response payload you want to convert to output 
 
 For example, if your response payload looks like this:
 
-```
+```json
 responsePayload = {
   "name": "Saanvi",
   "location": "Seattle",
@@ -437,7 +437,7 @@ responsePayload = {
 
 ...and your response filters look like this:
 
-```
+```yaml
 Configuration:
   ...
   ResponseFilters: '{"name": ".name", "company": ".department.company"}'

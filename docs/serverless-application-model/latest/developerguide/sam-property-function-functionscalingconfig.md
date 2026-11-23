@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-functionscalingconfig-syntax.yaml"></a>
 
-```
+```yaml
 [MinExecutionEnvironments](#sam-function-functionscalingconfig-minexecutionenvironments): {{Integer}}
 [MaxExecutionEnvironments](#sam-function-functionscalingconfig-maxexecutionenvironments): {{Integer}}
 ```
@@ -46,7 +46,7 @@ The maximum number of execution environments that can be created for the functio
 
 The following example shows a function scaling configuration with minimum and maximum execution environments.
 
-```
+```yaml
 FunctionScalingConfig:
   MinExecutionEnvironments: 5
   MaxExecutionEnvironments: 100

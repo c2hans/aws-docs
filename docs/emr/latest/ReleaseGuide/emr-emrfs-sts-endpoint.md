@@ -10,7 +10,7 @@ When you use Amazon EMR release versions 5.31.0 and 6.1.0 and later, you can ove
 
 The following AWS CLI example sets the default AWS STS endpoint used by EMRFS to the global endpoint.
 
-```
+```bash
 aws emr create-cluster --release-label {{<emr-5.33.0>}} --instance-type m5.xlarge \
 --emrfs Args=[fs.s3.sts.endpoint={{https://sts.amazonaws.com}}]
 ```
@@ -20,7 +20,7 @@ Linux line continuation characters (\\) are included for readability. They can b
 
 Alternatively, you can create a JSON configuration file using the following example, and specify it using the `--configurations` argument of `emr create-cluster`. For more information about using `--configurations,` see the [*AWS CLI Command Reference*.](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/create-cluster.html)
 
-```
+```json
 [
   {
     "classification": "emrfs-site",

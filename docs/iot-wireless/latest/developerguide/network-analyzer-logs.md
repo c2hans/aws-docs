@@ -58,7 +58,7 @@ The following shows examples of the trace message.
 
 The following example shows a sample trace message received using network analyzer if your devices connect to AWS IoT Core for LoRaWAN using your own private LoRaWAN gateways. The metadata consists of the ID of the gateway and it's EUI, and the SNR and RSSI values. These values can help you determine the strength of your gateway channel and whether to switch to a stronger channel. For more information about the public network, see [Managing LoRaWAN traffic from public networks (Everynet)](iot-lorawan-roaming.md).
 
-```
+```JSON
 {
     "resource_id": "d05bef08-cab2-41bf-b69e-ce306b9a5f81",
     "frame_type": "LoRa",
@@ -97,7 +97,7 @@ The following example shows a sample trace message received using network analyz
 **Note**
 The uplink message will mention `public_lorawan_gateways` to indicate that it's received from the public network and not a private LoRaWAN gateway.
 
-```
+```JSON
 {
     "resource_id": "d05bef08-cab2-41bf-b69e-ce306b9a5f81",
     "frame_type": "LoRa",
@@ -137,7 +137,7 @@ If you want to exclude the gateway metadata information from your trace message,
 
 The following example shows a trace message with the `lora_frame` and `customer_log` information and doesn't contain any gateway information.
 
-```
+```JSON
 {
     "resource_id": "d05bef08-cab2-41bf-b69e-ce306b9a5f81",
     "frame_type": "LoRa",

@@ -11,7 +11,7 @@ To create an alarm based on a CloudWatch metric, call the CloudWatchClient’s `
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cloudwatch.CloudWatchClient;
 import software.amazon.awssdk.services.cloudwatch.model.Dimension;
@@ -24,7 +24,7 @@ import software.amazon.awssdk.services.cloudwatch.model.CloudWatchException;
 
  **Code**
 
-```
+```java
     public static void putMetricAlarm(CloudWatchClient cw, String alarmName, String instanceId) {
 
         try {
@@ -69,7 +69,7 @@ To list the CloudWatch alarms that you have created, call the CloudWatchClient�
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cloudwatch.CloudWatchClient;
 import software.amazon.awssdk.services.cloudwatch.model.CloudWatchException;
@@ -80,7 +80,7 @@ import software.amazon.awssdk.services.cloudwatch.model.MetricAlarm;
 
  **Code**
 
-```
+```java
     public static void desCWAlarms( CloudWatchClient cw) {
 
         try {
@@ -136,7 +136,7 @@ To delete CloudWatch alarms, call the CloudWatchClient’s `deleteAlarms` method
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cloudwatch.CloudWatchClient;
 import software.amazon.awssdk.services.cloudwatch.model.CloudWatchException;
@@ -145,7 +145,7 @@ import software.amazon.awssdk.services.cloudwatch.model.DeleteAlarmsRequest;
 
  **Code**
 
-```
+```java
     public static void deleteCWAlarm(CloudWatchClient cw, String alarmName) {
 
         try {

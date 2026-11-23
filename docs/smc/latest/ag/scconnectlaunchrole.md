@@ -21,7 +21,7 @@ This section describes how to create the `SCConnectLaunch` role. This role place
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -65,7 +65,7 @@ This section describes how to create the `SCConnectLaunch` role. This role place
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -112,7 +112,7 @@ This section describes how to create the `SCConnectLaunch` role. This role place
 
 ****
 
-   ```
+   ```json
                                {
              "Version":"2012-10-17",
              "Statement": [

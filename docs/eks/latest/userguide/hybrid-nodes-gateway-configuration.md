@@ -32,7 +32,7 @@ The following table lists all values in the `eks-hybrid-nodes-gateway` Helm char
 
  **EKS Auto Mode** (default):
 
-```
+```bash
 helm install eks-hybrid-nodes-gateway oci://public.ecr.aws/eks/eks-hybrid-nodes-gateway \
   --version 1.0.0 \
   --namespace eks-hybrid-nodes-gateway \
@@ -44,7 +44,7 @@ helm install eks-hybrid-nodes-gateway oci://public.ecr.aws/eks/eks-hybrid-nodes-
 
  **Managed node groups or self-managed nodes**:
 
-```
+```bash
 helm install eks-hybrid-nodes-gateway oci://public.ecr.aws/eks/eks-hybrid-nodes-gateway \
   --version 1.0.0 \
   --namespace eks-hybrid-nodes-gateway \

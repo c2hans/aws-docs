@@ -82,6 +82,10 @@ You can work with snapshots on your instance's management page on the **Snapshot
 ------
 #### [ Bitnami ]
 
+**This blueprint packaged by Bitnami was deprecated on November 19, 2026**
+You can no longer create new instances with this blueprint. Existing instances and snapshots are not affected; you can keep using them and can still create new instances from snapshots. You are responsible for keeping the software on these instances up to date. When creating new instances, we recommend using the equivalent blueprint packaged by Lightsail if available. [Learn more](amazon-lightsail-faq-bitnami-blueprints.md)
+If you have an existing instance that uses a blueprint packaged by Bitnami and want to migrate to a blueprint packaged by Lightsail, see [Migrating from Bitnami blueprints to Lightsail blueprints](migrate-from-bitnami-to-lightsail-blueprints.md).
+
 <a name="amazon-lightsail-nodejs-attach-static-ip"></a>**Step 1: Attach a static IP address to your Node.js instance**
 
 The default dynamic public IP address attached to your instance changes every time you stop and start the instance. You can create a static IP address and attach it to your instance to keep the public IP address from changing. Later, when you use your domain name with your instance, you don’t have to update your domain’s DNS records each time you stop and start the instance. You can attach only one static IP address to each instance.

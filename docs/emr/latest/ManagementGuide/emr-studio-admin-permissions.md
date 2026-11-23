@@ -50,7 +50,7 @@ You only need IAM Identity Center and Studio `SessionMapping` actions when you u
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -100,7 +100,7 @@ Identity Center and Identity Center directory APIs don't support specifying an A
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

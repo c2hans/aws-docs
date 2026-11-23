@@ -101,7 +101,7 @@ Here is an example of a policy that could be granted for the `AutomationAssumeRo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

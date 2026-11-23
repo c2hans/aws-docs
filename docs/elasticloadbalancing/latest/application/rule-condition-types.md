@@ -59,7 +59,7 @@ The rule \*.example.com matches test.example.com but doesn't match example.com.
 **Example host header condition**
 You can specify conditions when you create or modify a rule. For more information, see the [create-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/create-rule.html) and [modify-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/modify-rule.html) commands.
 
-```
+```json
 [
   {
       "Field": "host-header",
@@ -70,7 +70,7 @@ You can specify conditions when you create or modify a rule. For more informatio
 ]
 ```
 
-```
+```json
 [
   {
       "Field": "host-header",
@@ -91,7 +91,7 @@ When the Application Load Balancer attribute `routing.http.drop_invalid_header_f
 **Example HTTP header condition**
 You can specify conditions when you create or modify a rule. For more information, see the [create-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/create-rule.html) and [modify-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/modify-rule.html) commands. The following condition is satisfied by requests with a User-Agent header that matches one of the specified strings.
 
-```
+```json
 [
   {
       "Field": "http-header",
@@ -103,7 +103,7 @@ You can specify conditions when you create or modify a rule. For more informatio
 ]
 ```
 
-```
+```json
 [
   {
       "Field": "http-header",
@@ -125,7 +125,7 @@ We recommend that you route GET and HEAD requests in the same way, because the r
 **Example HTTP method condition**
 You can specify conditions when you create or modify a rule. For more information, see the [create-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/create-rule.html) and [modify-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/modify-rule.html) commands. The following condition is satisfied by requests that use the specified method.
 
-```
+```json
 [
   {
       "Field": "http-request-method",
@@ -168,7 +168,7 @@ The path pattern is used to route requests but does not alter them. For example,
 **Example path pattern condition**
 You can specify conditions when you create or modify a rule. For more information, see the [create-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/create-rule.html) and [modify-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/modify-rule.html) commands. The following condition is satisfied by requests with a URL that contains the specified string.
 
-```
+```json
 [
   {
       "Field": "path-pattern",
@@ -179,7 +179,7 @@ You can specify conditions when you create or modify a rule. For more informatio
 ]
 ```
 
-```
+```json
 [
   {
       "Field": "path-pattern",
@@ -198,7 +198,7 @@ You can use query string conditions to configure rules that route requests based
 **Example query string condition**
 You can specify conditions when you create or modify a rule. For more information, see the [create-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/create-rule.html) and [modify-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/modify-rule.html) commands. The following condition is satisfied by requests with a query string that includes either a key/value pair of "version=v1" or any key set to "example".
 
-```
+```json
 [
   {
       "Field": "query-string",
@@ -229,7 +229,7 @@ This condition is not satisfied by the addresses in the X-Forwarded-For header. 
 **Example source IP condition**
 You can specify conditions when you create or modify a rule. For more information, see the [create-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/create-rule.html) and [modify-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/modify-rule.html) commands. The following condition is satisfied by requests with a source IP address in one of the specified CIDR blocks.
 
-```
+```json
 [
   {
       "Field": "source-ip",

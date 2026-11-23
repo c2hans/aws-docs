@@ -41,7 +41,7 @@ To create entitlements in the Amazon EVS console or with the AWS CLI, choose the
 
 1. Create the entitlements. The following command is an example. Replace the values in angle brackets with your own values. Replace the example VM IDs with your own values.
 
-   ```
+   ```bash
    aws evs create-entitlement \
        --environment-id <environment-id> \
        --connector-id <connector-id> \
@@ -51,7 +51,7 @@ To create entitlements in the Amazon EVS console or with the AWS CLI, choose the
 
 1. To verify, list the entitlements of the environment and check that the entitlement status is Created. Replace the values in angle brackets with your own values.
 
-   ```
+   ```bash
    aws evs list-vm-entitlements \
        --environment-id <environment-id> \
        --connector-id <connector-id> \

@@ -47,7 +47,7 @@ To ensure that users and roles can still use the AMB Access Ethereum console, al
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -96,7 +96,7 @@ This example shows how you grant users AWS account access in the `us-east-1` Reg
 If you want to grant access across all Regions, replace `us-east-1` with `*`.
 You must specify the AWS account ID of the node and accessor resources in the policy that you want to enforce.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -185,7 +185,7 @@ This topic includes examples of policy statements with a `Deny` effect. These po
 The following identity-based policy statement denies the IAM principal the ability to retrieve or view network information if the network has a tag with the tag key of `restricted`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -214,7 +214,7 @@ The following identity-based policy statement denies the IAM principal the abili
 The following identity-based policy statement denies the IAM principal the ability to create a node on an Ethereum public network tagged in the AWS account with the tag key of `department` and the value `accounting`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -243,7 +243,7 @@ The following identity-based policy statement denies the IAM principal the abili
 The following identity-based policy statements allow an IAM principal to create a node for the AWS account 111122223333 only if a key with the tag key of `department` and a value of `accounting` is added during creation.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -282,7 +282,7 @@ The following identity-based policy statements allow an IAM principal to create 
 The following identity-based policy statement denies the IAM principal the ability to list nodes on an Ethereum public network tagged in the AWS account with the tag key of `department` and the value `accounting`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -311,7 +311,7 @@ The following identity-based policy statement denies the IAM principal the abili
 The following identity-based policy statement denies the IAM principal the ability to view node information for nodes that have a tag with the tag key of `department` and the value `accounting`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

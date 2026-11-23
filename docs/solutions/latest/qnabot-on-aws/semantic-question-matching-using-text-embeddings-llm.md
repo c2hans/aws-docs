@@ -80,7 +80,7 @@ Lambda event input:
 
 Expected Lambda JSON return object:
 
-```
+```JSON
 {"embedding": [...] }
 ```
 

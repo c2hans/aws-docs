@@ -20,7 +20,7 @@ Create an ACK capability on your Amazon EKS cluster using the AWS CLI. This proc
 
 Create a trust policy file:
 
-```
+```bash
 cat > ack-trust-policy.json << 'EOF'
 {
   "Version": "2012-10-17",
@@ -42,7 +42,7 @@ EOF
 
 Create the IAM role:
 
-```
+```bash
 aws iam create-role \
   --role-name ACKCapabilityRole \
   --assume-role-policy-document file://ack-trust-policy.json
@@ -50,7 +50,7 @@ aws iam create-role \
 
 Attach the `AdministratorAccess` managed policy to the role:
 
-```
+```bash
 aws iam attach-role-policy \
   --role-name ACKCapabilityRole \
   --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
@@ -64,7 +64,7 @@ The suggested `AdministratorAccess` policy grants broad permissions and is inten
 
 Create the ACK capability resource on your cluster. Replace {{region-code}} with the AWS Region that your cluster is in and replace {{my-cluster}} with the name of your cluster.
 
-```
+```bash
 aws eks create-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \
@@ -89,7 +89,7 @@ To enable cross-namespace references or turn off specific ACK service controller
 
 If you already created the capability, don’t run `create-capability` again. Change the configuration with `update-capability` instead, as described in [Update ACK capability configuration](working-with-capabilities.md#ack-update-configuration).
 
-```
+```bash
 aws eks create-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \
@@ -110,7 +110,7 @@ aws eks create-capability \
 
 Wait for the capability to become active. Replace {{region-code}} with the AWS Region that your cluster is in and replace {{my-cluster}} with the name of your cluster.
 
-```
+```bash
 aws eks describe-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \
@@ -123,7 +123,7 @@ The capability is ready when the status shows `ACTIVE`. Don’t continue to the 
 
 You can also view the full capability details:
 
-```
+```bash
 aws eks describe-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \
@@ -135,7 +135,7 @@ aws eks describe-capability \
 
 After the capability is active, verify that ACK custom resources are available in your cluster:
 
-```
+```bash
 kubectl api-resources | grep services.k8s.aws
 ```
 

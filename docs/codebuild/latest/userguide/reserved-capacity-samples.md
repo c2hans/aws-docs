@@ -16,7 +16,7 @@ A cache can store reusable pieces of your build environment and use them across 
 
 You can start by specifying one or more cache modes in your project settings:
 
-```
+```yaml
 Cache:
         Type: LOCAL
         Modes:
@@ -30,7 +30,7 @@ Make sure to enable privileged mode in order to use Docker layer cache.
 
 Your project buildspec settings should look like the following:
 
-```
+```yaml
 version: 0.2
       phases:
         build:
@@ -57,7 +57,7 @@ version: 0.2
 
 You can start by running a build with the new project to seed the cache. Once that's complete, you should start another build with an overriding buildspec, similar to the following:
 
-```
+```yaml
 version: 0.2
       phases:
         build:

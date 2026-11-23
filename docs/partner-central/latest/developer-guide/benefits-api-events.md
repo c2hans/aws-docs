@@ -53,7 +53,7 @@ To set up an EventBridge rule using the AWS Management Console, follow the steps
 
 Following is an example of an event rule:
 
-```
+```json
 {
     "source": ["aws.partnercentral-benefits"],
     "detail": {
@@ -69,7 +69,7 @@ You can use the AWS SDKs to create and manage EventBridge rules programmatically
 
 The following example uses the AWS SDK for Python (Boto3):
 
-```
+```python
 # Requires the AWS SDK for Python (Boto3)
 import boto3
 
@@ -146,7 +146,7 @@ The owning account will receive the event for the Benefit Allocation.
 ##### Example
 <a name="benefit-application-created-example"></a>
 
-```
+```json
 {
   "id": "7gh88765-k0jh-d08g-i292-2ff1796m030n",
   "detail-type": "Benefit Application Created",
@@ -195,7 +195,7 @@ The owning account will receive the event for the Benefit Allocation.
 ##### Example
 <a name="benefit-application-in-review-example"></a>
 
-```
+```json
 {
   "id": "8hi99876-l1ki-e19h-j303-3gg2807n141o",
   "detail-type": "Benefit Application In Review",
@@ -242,7 +242,7 @@ The owning account will receive the event for the Benefit Allocation
 ##### Example
 <a name="benefit-application-action-required-example"></a>
 
-```
+```json
 {
   "id": "9ij00987-m2lj-f20i-k414-4hh3918o252p",
   "detail-type": "Benefit Application Action Required",
@@ -289,7 +289,7 @@ The owning account will receive the event for the Benefit Allocation.
 ##### Example
 <a name="benefit-application-rejected-example"></a>
 
-```
+```json
 {
   "id": "0kl11098-n3mk-g31j-l525-5ii4029p363q",
   "detail-type": "Benefit Application Rejected",
@@ -335,7 +335,7 @@ The owning account will receive the event for the Benefit Allocation.
 ##### Example
 <a name="benefit-application-approved-example"></a>
 
-```
+```json
 {
   "id": "1lm22109-o4nl-h42k-m636-6jj5130q474r",
   "detail-type": "Benefit Application Approved",
@@ -381,7 +381,7 @@ The owning account will receive the event for the Benefit Allocation.
 ##### Example
 <a name="benefit-application-stage-changed-example"></a>
 
-```
+```json
 {
   "id": "2mn33210-p5om-i53l-n747-7kk6241r585s",
   "detail-type": "Benefit Application Stage Changed",
@@ -428,7 +428,7 @@ The AWS Account belonging to the Partner will receive the message. In other word
 ##### Sample Event
 <a name="benefit-allocation-activated-example"></a>
 
-```
+```json
 {
   "id": "3no44321-q6pn-j64m-o858-8ll7352s696t",
   "detail-type": "Benefit Allocation Activated",
@@ -476,7 +476,7 @@ The AWS Account belonging to the Partner will receive the message. In other word
 ##### Sample Event
 <a name="benefit-allocation-inactivated-example"></a>
 
-```
+```json
 {
   "id": "4op55432-r7qo-k75n-p969-9mm8463t707u",
   "detail-type": "Benefit Allocation Inactivated",
@@ -524,7 +524,7 @@ The AWS Account belonging to the Partner will receive the message. In other word
 ##### Sample Event
 <a name="benefit-allocation-fulfilled-example"></a>
 
-```
+```json
 {
   "id": "5pq66543-s8rp-l86o-q070-0nn9574u818v",
   "detail-type": "Benefit Allocation Fulfilled",

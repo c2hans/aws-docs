@@ -31,7 +31,7 @@ You can modify the domain name specified in the host header.
 **Example host header transform**
 You can specify a transform when you create or modify a rule. For more information, see the [create-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/create-rule.html) and [modify-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/modify-rule.html) commands. The following is an example host header transform. It transforms the host header to an internal endpoint.
 
-```
+```json
 [
   {
       "Type": "host-header-rewrite",
@@ -58,7 +58,7 @@ Note that you can't modify the protocol or port of the URL, only the path and th
 **Example URL rewrite transform**
 You can specify a transform when you create or modify a rule. For more information, see the [create-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/create-rule.html) and [modify-rule](https://docs.aws.amazon.com/cli/latest/reference/elbv2/modify-rule.html) commands. The following is an example URL rewrite transform. It transforms the directory structure to a query string.
 
-```
+```json
 [
   {
       "Type": "url-rewrite",

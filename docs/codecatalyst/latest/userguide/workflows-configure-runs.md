@@ -141,7 +141,7 @@ When you change the run mode from parallel to queued or superseded, CodeCatalyst
 
 1. Add the `RunMode` property, like this:
 
-   ```
+   ```yaml
    Name: Workflow_6d39
    SchemaVersion: "1.0"
    RunMode: {{QUEUED|SUPERSEDED|PARALLEL}}

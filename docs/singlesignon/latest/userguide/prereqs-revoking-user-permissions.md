@@ -21,7 +21,7 @@ You can use a Deny policy with a condition that matches to the user’s `UserID`
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

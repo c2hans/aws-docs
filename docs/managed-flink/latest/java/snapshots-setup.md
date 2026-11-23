@@ -88,7 +88,7 @@ To create an application in enhanced snapshot mode, set `SnapshotMode` to `ENHAN
 
 1. Save the following JSON request as `create-application.json`.
 
-   ```
+   ```json
    {
      "ApplicationName": "MyApplication",
      "RuntimeEnvironment": "FLINK-1_20",
@@ -115,19 +115,19 @@ To create an application in enhanced snapshot mode, set `SnapshotMode` to `ENHAN
 
 1. Run the following AWS CLI command in the terminal to send the request.
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 create-application --cli-input-json file://create-application.json
    ```
 
 1. Run the following AWS CLI command in the terminal to describe the application.
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 describe-application --application-name MyApplication
    ```
 
 1. Confirm that `ApplicationDetail.ApplicationConfigurationDescription.ApplicationSnapshotConfigurationDescription.SnapshotMode` is `ENHANCED_SNAPSHOTS` in the [`DescribeApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DescribeApplication.html) response.
 
-   ```
+   ```json
    {
      "ApplicationSnapshotConfigurationDescription": {
        "SnapshotsEnabled": true,
@@ -145,7 +145,7 @@ After the application reaches the `RUNNING` status, create an enhanced snapshot 
 
 1. Run the following AWS CLI command in the terminal to start the application with [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html).
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 start-application --application-name MyApplication
    ```
 
@@ -153,7 +153,7 @@ After the application reaches the `RUNNING` status, create an enhanced snapshot 
 
 1. Send a JSON `CreateSnapshot` request with the application name and a snapshot name. The snapshot name must be unique in the account and Region.
 
-   ```
+   ```json
    {
      "ApplicationName": "MyApplication",
      "SnapshotName": "MyApplication-snapshot-1"
@@ -162,7 +162,7 @@ After the application reaches the `RUNNING` status, create an enhanced snapshot 
 
    Run the following AWS CLI command to send the same request:
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 create-snapshot \
        --application-name MyApplication \
        --snapshot-name MyApplication-snapshot-1
@@ -178,7 +178,7 @@ After the application reaches the `RUNNING` status, create an enhanced snapshot 
 
 1. Call [`DescribeSnapshot`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DescribeSnapshot.html) in the terminal with the snapshot name. Repeat the call until `SnapshotStatus` is `READY` or `FAILED`. This process might take several minutes.
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 describe-snapshot --snapshot-name MyApplication-snapshot-1
    ```
 
@@ -186,7 +186,7 @@ After the application reaches the `RUNNING` status, create an enhanced snapshot 
 
 1. Call [`DescribeSnapshotOperation`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DescribeSnapshotOperation.html) if `SnapshotStatus` is `FAILED`. Use the `SnapshotOperationId` from the `CreateSnapshot` response. The following example shell script checks the status and prints the failure details:
 
-   ```
+   ```bash
    PROMPT> STATUS=$(aws kinesisanalyticsv2 describe-snapshot \
        --snapshot-name MyApplication-snapshot-1 \
        --query 'SnapshotInfoDetails.SnapshotStatus' \

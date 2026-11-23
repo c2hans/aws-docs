@@ -31,7 +31,7 @@ The following policy example grants access to the S3 buckets where your model ev
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement": [
@@ -75,7 +75,7 @@ To allow Amazon Bedrock to invoke the model you plan to specify in the automatic
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -119,7 +119,7 @@ You also must create a policy that allows Amazon Bedrock to create resources rel
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement": [
@@ -149,7 +149,7 @@ You must also specify a trust policy that defines Amazon Bedrock as the service 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -183,7 +183,7 @@ You must also specify a trust policy that defines Amazon Bedrock as the service 
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement": [

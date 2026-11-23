@@ -32,7 +32,7 @@ To run this procedure, you must have the following permissions:
 **To delete a view**
 Run the following command to delete the view with the specified Amazon Resource Name (ARN).
 
-```
+```bash
 $ aws resource-explorer-2 delete-view \
     --view-arn arn:aws:resource-explorer-2:us-east-1:123456789012:view/MyViewName/1a2b3c4d-5d6e-7f8a-9b0c-abcd11111111
 {

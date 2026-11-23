@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::BedrockAgentCore::Dataset DataSourceType
 
- Source of examples to add to the dataset.
+<a name="aws-properties-bedrockagentcore-dataset-datasourcetype-description"></a>The `DataSourceType` property type specifies Property description not available. for an [AWS::BedrockAgentCore::Dataset](aws-resource-bedrockagentcore-dataset.md).
 
 ## Syntax
 <a name="aws-properties-bedrockagentcore-dataset-datasourcetype-syntax"></a>
@@ -37,13 +37,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-dataset-datasourcetype-properties"></a>
 
 `InlineExamples`  <a name="cfn-bedrockagentcore-dataset-datasourcetype-inlineexamples"></a>
- Inline examples provided directly in the request body.
+Property description not available.
 *Required*: No
 *Type*: [InlineExamplesSource](aws-properties-bedrockagentcore-dataset-inlineexamplessource.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `S3Source`  <a name="cfn-bedrockagentcore-dataset-datasourcetype-s3source"></a>
- Amazon S3 URI pointing to a JSONL file in the customer's bucket.
+Property description not available.
 *Required*: No
 *Type*: [S3Source](aws-properties-bedrockagentcore-dataset-s3source.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

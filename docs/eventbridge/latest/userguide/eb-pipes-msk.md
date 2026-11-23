@@ -102,7 +102,7 @@ To allow EventBridge to connect to the MSK cluster, read records, and perform ot
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

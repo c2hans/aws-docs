@@ -8,7 +8,7 @@ This guide documents the new AWS Wickr administration console, released on March
 
 Wickr generates this message when a file is saved, renamed, moved, or deleted in a room's Saved Items (File Vault). The **filevaultinfo** object describes the action taken.
 
-```
+```json
 {
   "control": {
     "bor": 0,

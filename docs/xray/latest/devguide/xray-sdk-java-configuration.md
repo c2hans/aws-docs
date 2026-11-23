@@ -34,7 +34,7 @@ To use a plugin, call `withPlugin` on your `AWSXRayRecorderBuilder`.
 
 **Example src/main/java/scorekeep/WebConfig.java - recorder**
 
-```
+```java
 import [com.amazonaws.xray.AWSXRay](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/AWSXRay.html);
 import [com.amazonaws.xray.AWSXRayRecorderBuilder](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/AWSXRayRecorderBuilder.html);
 import [com.amazonaws.xray.plugins.EC2Plugin](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/plugins/EC2Plugin.html);

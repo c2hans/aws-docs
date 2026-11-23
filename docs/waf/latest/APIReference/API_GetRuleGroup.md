@@ -371,6 +371,18 @@ Required: No
                               }
                            }
                         },
+                        "AWSManagedRulesAISecurityRuleSet": {
+                           "BedrockGuardrails": {
+                              "Disable": {
+                              },
+                              "ProtectRequestAndResponse": {
+                                 "RoleArn": "string"
+                              },
+                              "ProtectRequestOnly": {
+                                 "RoleArn": "string"
+                              }
+                           }
+                        },
                         "AWSManagedRulesAntiDDoSRuleSet": {
                            "ClientSideActionConfig": {
                               "Challenge": {

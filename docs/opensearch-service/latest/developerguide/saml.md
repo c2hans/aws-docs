@@ -49,7 +49,7 @@ We recommend the following [domain access policy](ac.md#ac-types-resource), whic
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -74,7 +74,7 @@ To make the policy more restrictive, you can add an IP address condition to the 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -259,7 +259,7 @@ For example, you might map your trusted colleague `jroe` to the `all_access` and
 
 If you prefer to use the API rather than OpenSearch Dashboards, see the following sample request:
 
-```
+```json
 PATCH _plugins/_security/api/rolesmapping
 [
   {
@@ -295,7 +295,7 @@ If you want to configure both SP- and IdP-initiated authentication, you must do 
 
 The following AWS CLI command enables SAML authentication for OpenSearch Dashboards on an existing domain:
 
-```
+```bash
 aws opensearch update-domain-config \
   --domain-name {{my-domain}} \
   --advanced-security-options '{"SAMLOptions":{"Enabled":{{true}},"MasterUserName":"{{my-idp-user}}","MasterBackendRole":"{{my-idp-group-or-role}}","Idp":{"EntityId":"{{entity-id}}","MetadataContent":"{{metadata-content-with-quotes-escaped}}"},"RolesKey":"{{optional-roles-key}}","SessionTimeoutMinutes":{{180}},"SubjectKey":"{{optional-subject-key}}"}}'
@@ -308,7 +308,7 @@ You must escape all quotes and newline characters in the metadata XML. For examp
 
 The following request to the configuration API enables SAML authentication for OpenSearch Dashboards on an existing domain:
 
-```
+```json
 POST https://es.{{us-east-1}}.amazonaws.com/2021-01-01/opensearch/domain/{{my-domain}}/config
 {
   "AdvancedSecurityOptions": {

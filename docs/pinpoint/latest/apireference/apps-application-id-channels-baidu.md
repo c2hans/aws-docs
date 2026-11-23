@@ -140,7 +140,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="apps-application-id-channels-baidu-request-body-put-example"></a>
 
-```
+```json
 {
   "ApiKey": "string",
   "SecretKey": "string",
@@ -154,7 +154,7 @@ Retrieves information about the communication requirements and options that are 
 #### BaiduChannelResponse schema
 <a name="apps-application-id-channels-baidu-response-body-baiduchannelresponse-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "IsArchived": boolean,
@@ -173,7 +173,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-channels-baidu-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

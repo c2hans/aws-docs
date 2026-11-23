@@ -34,7 +34,7 @@ The following sections describe changes to version 3 of the AWS SDK for .NET.
 
 The `Amazon.AWSClientFactory` class was removed. Now, to create a service client, use the constructor of the service client. For example, to create an `AmazonEC2Client`:
 
-```
+```csharp
 var ec2Client = new Amazon.EC2.AmazonEC2Client();
 ```
 

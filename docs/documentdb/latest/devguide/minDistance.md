@@ -85,7 +85,7 @@ To view a code example for using the `$minDistance` command, choose the tab for 
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function findRestaurantsNearby() {
@@ -118,7 +118,7 @@ findRestaurantsNearby();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def find_restaurants_nearby():

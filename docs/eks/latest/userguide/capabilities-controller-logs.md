@@ -68,7 +68,7 @@ Setting up logging requires three steps:
 
 You can retrieve the capability ARN using the `describe-capability` command:
 
-```
+```bash
 aws eks describe-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \
@@ -88,7 +88,7 @@ Depending on the destination selected, you might need to configure IAM policies 
 
 To view error logs across all controllers:
 
-```
+```sql
 fields @timestamp, controller, message, error
 | filter level = "error"
 | sort @timestamp desc

@@ -32,7 +32,7 @@ Although you can revoke Amazon Cognito tokens before they expire, JWTs are consi
 
 This following example shows how you might create a policy that references some of the Amazon Cognito user pools claims associated with a principal.
 
-```
+```cedar
 permit(
      principal,
      action,
@@ -46,7 +46,7 @@ when {
 
 This following example shows how you might create a policy that references a principal that's a user in a Cognito user pool. Note that the principal ID takes the form of `"<userpool-id>|<sub>"`.
 
-```
+```cedar
 permit(
      principal == ExampleCo::User::"us-east-1_example|a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
      action,

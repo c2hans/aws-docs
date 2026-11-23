@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 With the policies in place, create the vector-search collection:
 
-```
+```bash
 aws opensearchserverless create-collection \
   --name vector-search \
   --type VECTORSEARCH \
@@ -15,7 +15,7 @@ aws opensearchserverless create-collection \
 
 A new collection takes several minutes to become active. Poll its status with `batch-get-collection` until `status` reports `ACTIVE`:
 
-```
+```bash
 aws opensearchserverless batch-get-collection --names vector-search \
   --query 'collectionDetails[0].{status:status,endpoint:collectionEndpoint}'
 ```

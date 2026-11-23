@@ -59,7 +59,7 @@ For more information, see [Managing passwords for IAM users](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: This example creates a (temporary) password for the IAM user named Bob, and sets the flag that requires the user to change the password the next time `Bob` signs in.**
 
-```
+```powershell
 New-IAMLoginProfile -UserName Bob -Password P@ssw0rd -PasswordResetRequired $true
 ```
 **Output:**
@@ -74,7 +74,7 @@ CreateDate                    PasswordResetRequired                UserName
 **Tools for PowerShell V5**
 **Example 1: This example creates a (temporary) password for the IAM user named Bob, and sets the flag that requires the user to change the password the next time `Bob` signs in.**
 
-```
+```powershell
 New-IAMLoginProfile -UserName Bob -Password P@ssw0rd -PasswordResetRequired $true
 ```
 **Output:**

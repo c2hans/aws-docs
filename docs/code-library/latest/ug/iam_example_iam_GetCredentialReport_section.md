@@ -38,7 +38,7 @@ For more information, see [Getting credential reports for your AWS account](http
 **Tools for PowerShell V4**
 **Example 1: This example opens the returned report and outputs it to the pipeline as an array of text lines. The first line is the header with comma-separated column names. Each successive row is the detail row for one user, with each field separated by commas. Before you can view the report, you must generate it with the `Request-IAMCredentialReport` cmdlet. To retrieve the report as a single string, use `-Raw` instead of `-AsTextArray`. The alias `-SplitLines` is also accepted for the `-AsTextArray` switch. For the full list of columns in the output consult the service API reference. Note that if you do not use `-AsTextArray` or `-SplitLines`, then you must extract the text from the `.Content` property using the .NET `StreamReader` class.**
 
-```
+```powershell
 Request-IAMCredentialReport
 ```
 **Output:**
@@ -49,7 +49,7 @@ Description                                                         State
 No report exists. Starting a new report generation task             STARTED
 ```
 
-```
+```powershell
 Get-IAMCredentialReport -AsTextArray
 ```
 **Output:**
@@ -64,7 +64,7 @@ Bill,arn:aws:iam::123456789012:user/Bill,2015-04-15T18:27:44+00:00,false,N/A,N/A
 **Tools for PowerShell V5**
 **Example 1: This example opens the returned report and outputs it to the pipeline as an array of text lines. The first line is the header with comma-separated column names. Each successive row is the detail row for one user, with each field separated by commas. Before you can view the report, you must generate it with the `Request-IAMCredentialReport` cmdlet. To retrieve the report as a single string, use `-Raw` instead of `-AsTextArray`. The alias `-SplitLines` is also accepted for the `-AsTextArray` switch. For the full list of columns in the output consult the service API reference. Note that if you do not use `-AsTextArray` or `-SplitLines`, then you must extract the text from the `.Content` property using the .NET `StreamReader` class.**
 
-```
+```powershell
 Request-IAMCredentialReport
 ```
 **Output:**
@@ -75,7 +75,7 @@ Description                                                         State
 No report exists. Starting a new report generation task             STARTED
 ```
 
-```
+```powershell
 Get-IAMCredentialReport -AsTextArray
 ```
 **Output:**
@@ -93,7 +93,7 @@ Bill,arn:aws:iam::123456789012:user/Bill,2015-04-15T18:27:44+00:00,false,N/A,N/A
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def get_credential_report():
     """
     Gets the most recently generated credentials report about the current account.
@@ -117,7 +117,7 @@ def get_credential_report():
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_iam->getcredentialreport( ).
         MESSAGE 'Retrieved credential report.' TYPE 'I'.

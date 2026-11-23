@@ -129,7 +129,7 @@ The following is a key policy for an example AWS managed key for Secrets Manager
 
 ****
 
-```
+```json
 {
   "Id": "auto-secretsmanager-2",
   "Version":"2012-10-17",

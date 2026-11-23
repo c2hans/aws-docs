@@ -49,7 +49,7 @@ To place an outbound call to a customer and run the specified flow, use the foll
 
 In the following command, replace `{{instance-id}}`, `{{contact-flow-id}}`, the phone number values, and `{{aws-region}}` with your own values. The `--source-phone-number` parameter is optional if you specify a queue in the flow.
 
-```
+```bash
 aws connect start-outbound-voice-contact \
     --instance-id "{{instance-id}}" \
     --contact-flow-id "{{contact-flow-id}}" \
@@ -60,7 +60,7 @@ aws connect start-outbound-voice-contact \
 
 On success, the command returns the `ContactId` of the new contact:
 
-```
+```json
 {
     "ContactId": "00000000-0000-0000-0000-000000000000"
 }

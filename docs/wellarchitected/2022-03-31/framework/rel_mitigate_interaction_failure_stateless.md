@@ -12,6 +12,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![In this stateless web application, session state is offloaded to Amazon ElastiCache.](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/stateless-webapp.png)
 
+*Figure 7: In this stateless web application, session state is offloaded to Amazon ElastiCache.*
+
  When users or services interact with an application, they often perform a series of interactions that form a session. A session is unique data for users that persists between requests while they use the application. A stateless application is an application that does not need knowledge of previous interactions and does not store session information.
 
  Once designed to be stateless, you can then use serverless compute services, such as AWS Lambda or AWS Fargate.

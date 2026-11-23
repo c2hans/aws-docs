@@ -30,7 +30,7 @@ The following policy contains the minimum set of IAM actions and resources in Am
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

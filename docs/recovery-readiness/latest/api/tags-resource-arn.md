@@ -95,7 +95,7 @@ Removes a tag from a resource.
 #### POST schema
 <a name="tags-resource-arn-request-body-post-example"></a>
 
-```
+```json
 {
   "tags": {
   }
@@ -108,7 +108,7 @@ Removes a tag from a resource.
 #### tagsModel schema
 <a name="tags-resource-arn-response-body-tagsmodel-example"></a>
 
-```
+```json
 {
   "tags": {
   }

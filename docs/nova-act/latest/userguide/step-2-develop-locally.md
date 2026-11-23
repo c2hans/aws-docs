@@ -61,7 +61,7 @@ With API key authentication, you can develop Nova Act workflows using either the
 
 Example script with API key authentication:
 
-```
+```python
 from nova_act import NovaAct
 import os
 
@@ -105,7 +105,7 @@ To develop workflows locally using AWS IAM authentication:
 
  **Example script with AWS IAM authentication (using workflow context manager)**
 
-```
+```python
 import os
 from nova_act import NovaAct, Workflow
 
@@ -128,7 +128,7 @@ if __name__ == "__main__":
 
  **Example script with AWS IAM authentication (using @workflow Python decorator to wrap your function)**
 
-```
+```python
 from nova_act import NovaAct, workflow
 
 @workflow(workflow_definition_name="<your-workflow-name>", model_id="nova-act-latest")

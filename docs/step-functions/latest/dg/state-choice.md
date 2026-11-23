@@ -68,7 +68,7 @@ The following example checks whether the string is not null.
 
 The following example shows a `Choice` state with per-rule `Assign` blocks that set different variables based on the matched condition:
 
-```
+```json
 {
   "Type": "Choice",
   "Choices": [

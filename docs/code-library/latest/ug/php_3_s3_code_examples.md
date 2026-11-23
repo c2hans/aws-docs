@@ -34,7 +34,7 @@ The following code example shows how to get started using Amazon S3.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 
-```
+```php
 use Aws\S3\S3Client;
 
 $client = new S3Client(['region' => 'us-west-2']);
@@ -59,7 +59,7 @@ The following code example shows how to:
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 
-```
+```php
         echo("\n");
         echo("--------------------------------------\n");
         print("Welcome to the Amazon S3 getting started demo using PHP!\n");
@@ -197,7 +197,7 @@ The following code example shows how to use `CopyObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 Simple copy of an object.
 
-```
+```php
         $s3client = new Aws\S3\S3Client(['region' => 'us-west-2']);
 
         try {
@@ -224,7 +224,7 @@ The following code example shows how to use `CreateBucket`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 Create a bucket.
 
-```
+```php
         $s3client = new Aws\S3\S3Client(['region' => 'us-west-2']);
 
         try {
@@ -249,7 +249,7 @@ The following code example shows how to use `DeleteBucket`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 Delete an empty bucket.
 
-```
+```php
         $s3client = new Aws\S3\S3Client(['region' => 'us-west-2']);
 
         try {
@@ -272,7 +272,7 @@ The following code example shows how to use `DeleteObject`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 
-```
+```php
     public function deleteObject(string $bucketName, string $fileName, array $args = [])
     {
         $parameters = array_merge(['Bucket' => $bucketName, 'Key' => $fileName], $args);
@@ -301,7 +301,7 @@ The following code example shows how to use `DeleteObjects`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 Delete a set of objects from a list of keys.
 
-```
+```php
         $s3client = new Aws\S3\S3Client(['region' => 'us-west-2']);
 
         try {
@@ -340,7 +340,7 @@ The following code example shows how to use `GetObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 Get an object.
 
-```
+```php
         $s3client = new Aws\S3\S3Client(['region' => 'us-west-2']);
 
         try {
@@ -367,7 +367,7 @@ The following code example shows how to use `ListObjectsV2`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 List objects in a bucket.
 
-```
+```php
         $s3client = new Aws\S3\S3Client(['region' => 'us-west-2']);
 
         try {
@@ -394,7 +394,7 @@ The following code example shows how to use `PutObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 Upload an object to a bucket.
 
-```
+```php
         $s3client = new Aws\S3\S3Client(['region' => 'us-west-2']);
 
         $fileName = __DIR__ . "/local-file-" . uniqid();
@@ -423,7 +423,7 @@ The following code example shows how to create a presigned URL for Amazon S3 and
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 
-```
+```php
 namespace S3;
 use Aws\Exception\AwsException;
 use AwsUtilities\PrintableLineBreak;
@@ -783,7 +783,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using PHP.
 
-```
+```php
 <?php
 
 use Bref\Context\Context;

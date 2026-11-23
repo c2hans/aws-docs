@@ -16,7 +16,7 @@ For supplemental information about creating CloudFormation stacks, see [CreateSt
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: makeStack
 action: aws:createStack
 maxAttempts: 1
@@ -37,7 +37,7 @@ inputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "makeStack",
     "action": "aws:createStack",
@@ -232,7 +232,7 @@ Before you can use the `aws:createStack` action, you must assign the following p
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

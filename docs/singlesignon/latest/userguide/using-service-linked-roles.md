@@ -61,7 +61,7 @@ For more information on updates to the AWSSSOServiceRolePolicy service-linked ro
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

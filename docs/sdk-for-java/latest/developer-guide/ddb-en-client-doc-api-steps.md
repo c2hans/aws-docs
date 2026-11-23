@@ -19,7 +19,7 @@ The builder for a [DocumentTableSchema](https://sdk.amazonaws.com/java/api/lates
 
 The following code snippet shows the code that generates the client-side representation of a DynamoDB `person` table that stores schemaless `EnhancedDocument` objects.
 
-```
+```java
 DynamoDbTable<EnhancedDocument> documentDynamoDbTable =
                 enhancedClient.table("person",
                         TableSchema.documentSchemaBuilder()
@@ -39,7 +39,7 @@ The following shows the JSON representation of a `person` object that is used th
 ### JSON `person` object
 <a name="ddb-en-client-doc-api-steps-createschema-obj"></a>
 
-```
+```json
 {
   "id": 1,
   "firstName": "Richard",

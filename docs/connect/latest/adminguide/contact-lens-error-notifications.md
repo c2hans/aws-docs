@@ -19,7 +19,7 @@ You can also add to the pattern to be notified when a specific event code occurs
 
 The format of a notification looks like the following sample:
 
-```
+```JSON
 {
     "version": "0", // set by CloudWatch Events
     "id": "55555555-1111-1111-1111-111111111111", // set by CloudWatch Events

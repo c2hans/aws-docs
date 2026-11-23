@@ -23,13 +23,13 @@ For optional integrity detection, you can download the SHA256 checksum of the in
 
 To use the checksum file, calculate the SHA256 on your downloaded `.exe` file to compare against the output of the following PowerShell command:
 
-```
+```powershell
 Get-FileHash -Algorithm SHA256 Service-Extract.exe
 ```
 
 You can verify the authenticity of the signatures of the Microservice Extractor `.exe` file by running the following command, which verifies that a valid certificate is contained in the file.
 
-```
+```powershell
 Get-AuthenticodeSignature <file-name>
 ```
 

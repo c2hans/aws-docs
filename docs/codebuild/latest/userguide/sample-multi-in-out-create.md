@@ -18,7 +18,7 @@ Use the following procedure to create a build project with multiple inputs and o
 
 1.  If you use the AWS CLI to create the build project, the JSON-formatted input to the `create-project` command might look similar to the following:
 
-   ```
+   ```json
    {
      "name": "sample-project",
      "source": {
@@ -70,7 +70,7 @@ Use the following procedure to create a build project with multiple inputs and o
 
  Using the preceding JSON-formatted input, the buildspec file for the project might look like:
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -102,7 +102,7 @@ artifacts:
 
  The JSON-formatted input to the `start-build` command in the AWS CLI might look like:
 
-```
+```json
 {
    "projectName": "sample-project",
    "secondarySourcesVersionOverride": [

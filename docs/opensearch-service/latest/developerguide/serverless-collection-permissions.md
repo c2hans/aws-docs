@@ -13,7 +13,7 @@ OpenSearch Serverless uses the following AWS Identity and Access Management (IAM
 
 The following sample identity-based access policy provides the minimum permissions necessary for a user to manage a single collection named `Logs`:
 
-```
+```json
 [
    {
       "Sid":"Allows managing logs collections",

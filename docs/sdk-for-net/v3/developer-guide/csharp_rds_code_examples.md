@@ -36,7 +36,7 @@ The following code example shows how to get started using Amazon RDS.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using Amazon.RDS;
@@ -89,7 +89,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 /// <summary>
 /// Scenario for RDS DB instance example.
 /// </summary>
@@ -561,7 +561,7 @@ public class RDSInstanceScenario
 ```
 Wrapper methods used by the scenario for DB instance actions.
 
-```
+```csharp
 /// <summary>
 /// Wrapper methods to use Amazon Relational Database Service (Amazon RDS) with DB instance operations.
 /// </summary>
@@ -692,7 +692,7 @@ public partial class RDSWrapper
 ```
 Wrapper methods used by the scenario for DB parameter groups.
 
-```
+```csharp
 /// <summary>
 /// Wrapper methods to use Amazon Relational Database Service (Amazon RDS) with parameter groups.
 /// </summary>
@@ -795,7 +795,7 @@ public partial class RDSWrapper
 ```
 Wrapper methods used by the scenario for DB snapshot actions.
 
-```
+```csharp
 /// <summary>
 /// Wrapper methods to use Amazon Relational Database Service (Amazon RDS) with snapshots.
 /// </summary>
@@ -867,7 +867,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an RDS DB instance with a particular set of properties. Use the action DescribeDBInstancesAsync
     /// to determine when the DB instance is ready to use.
@@ -913,7 +913,7 @@ The following code example shows how to use `CreateDBParameterGroup`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a new DB parameter group. Use the action DescribeDBParameterGroupsAsync
     /// to determine when the DB parameter group is ready to use.
@@ -945,7 +945,7 @@ The following code example shows how to use `CreateDBSnapshot`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a snapshot of a DB instance.
     /// </summary>
@@ -974,7 +974,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a particular DB instance.
     /// </summary>
@@ -1003,7 +1003,7 @@ The following code example shows how to use `DeleteDBParameterGroup`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a DB parameter group. The group cannot be a default DB parameter group
     /// or be associated with any DB instances.
@@ -1030,7 +1030,7 @@ The following code example shows how to use `DescribeDBEngineVersions`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of DB engine versions for a particular DB engine.
     /// </summary>
@@ -1059,7 +1059,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Returns a list of DB instances.
     /// </summary>
@@ -1091,7 +1091,7 @@ The following code example shows how to use `DescribeDBParameterGroups`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get descriptions of DB parameter groups.
     /// </summary>
@@ -1117,7 +1117,7 @@ The following code example shows how to use `DescribeDBParameters`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of DB parameters from a specific parameter group.
     /// </summary>
@@ -1151,7 +1151,7 @@ The following code example shows how to use `DescribeDBSnapshots`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Return a list of DB snapshots for a particular DB instance.
     /// </summary>
@@ -1184,7 +1184,7 @@ The following code example shows how to use `DescribeOrderableDBInstanceOptions`
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of orderable DB instance options for a specific
     /// engine and engine version.
@@ -1220,7 +1220,7 @@ The following code example shows how to use `ModifyDBParameterGroup`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Update a DB parameter group. Use the action DescribeDBParameterGroupsAsync
     /// to determine when the DB parameter group is ready to use.
@@ -1276,7 +1276,7 @@ The following code example shows how to implement a Lambda function that connect
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-connect-rds-iam) repository.
 Connecting to an Amazon RDS database in a Lambda function using .NET.
 
-```
+```csharp
 using System.Data;
 using System.Text.Json;
 using Amazon.Lambda.APIGatewayEvents;

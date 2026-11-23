@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 The custom resource provider stack is formatted as shown in the following CloudFormation template snippet:
 
-```
+```yaml
 PclusterClusterProvider:
   Type: AWS::CloudFormation::Stack
   Properties:

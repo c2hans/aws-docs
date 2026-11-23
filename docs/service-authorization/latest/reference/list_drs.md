@@ -86,6 +86,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DeleteRecoveryPlanExecution  **
+  - **IAM action:**  [drs:DeleteRecoveryPlanExecution](#list_drs-action-DeleteRecoveryPlanExecution)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteRecoveryPlanStep  **
   - **IAM action:**  [drs:DeleteRecoveryPlanStep](#list_drs-action-DeleteRecoveryPlanStep)
   - **Condition key:**
@@ -196,6 +202,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   GetRecoveryPlanExecution  **
   - **IAM action:**  [drs:GetRecoveryPlanExecution](#list_drs-action-GetRecoveryPlanExecution)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetRecoveryPlanExecutionStep  **
+  - **IAM action:**  [drs:GetRecoveryPlanExecutionStep](#list_drs-action-GetRecoveryPlanExecutionStep)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read

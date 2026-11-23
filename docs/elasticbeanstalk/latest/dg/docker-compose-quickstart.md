@@ -96,7 +96,7 @@ First, create the main `docker-compose.yml` file that defines the services and t
 
 **Example `~/eb-docker-compose-flask/docker-compose.yml`**
 
-```
+```yaml
 services:
   web:
     build: ./web
@@ -117,7 +117,7 @@ Create the Flask web application in the `web` directory. Add the following conte
 
 **Example `~/eb-docker-compose-flask/web/app.py`**
 
-```
+```python
 from flask import Flask
 app = Flask(__name__)
 @app.route('/')
@@ -129,7 +129,7 @@ Add the following contents to your web service `Dockerfile`.
 
 **Example `~/eb-docker-compose-flask/web/Dockerfile`**
 
-```
+```dockerfile
 FROM public.ecr.aws/docker/library/python:3.12
 COPY . /app
 WORKDIR /app
@@ -144,7 +144,7 @@ This configuration includes health monitoring setup that allows Elastic Beanstal
 
 **Example `~/eb-docker-compose-flask/proxy/nginx.conf`**
 
-```
+```nginx
 events {
     worker_connections 1024;
 }
@@ -198,7 +198,7 @@ Add the following contents to your proxy service `Dockerfile`.
 
 **Example `~/eb-docker-compose-flask/proxy/Dockerfile`**
 
-```
+```dockerfile
 FROM public.ecr.aws/nginx/nginx:alpine
 COPY nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80
@@ -208,7 +208,7 @@ Finally, create a platform hook script to set up the necessary log directories a
 
 **Example `~/eb-docker-compose-flask/.platform/hooks/postdeploy/01_setup_healthd_permissions.sh`**
 
-```
+```bash
 #!/bin/bash
 set -ex
 

@@ -31,7 +31,7 @@ For more information, see [Control access to VPC endpoints using endpoint polici
 
 The following example shows a VPC endpoint policy that denies everyone permission to create an EFS file system through the endpoint. The example policy also grants everyone permission to perform all other actions.
 
-```
+```json
 {
    "Statement": [
         {

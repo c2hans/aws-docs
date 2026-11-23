@@ -39,7 +39,7 @@ The following is an example trust policy for AWS Config roles:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -78,7 +78,7 @@ The following example policy grants AWS Config permission to access your S3 buck
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":[
@@ -120,7 +120,7 @@ The following example policy grants AWS Config permission to use KMS-based encry
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -148,7 +148,7 @@ The following example policy grants AWS Config permission to access your SNS top
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":

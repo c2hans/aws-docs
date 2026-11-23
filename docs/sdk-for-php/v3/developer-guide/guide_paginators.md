@@ -8,7 +8,7 @@ Some AWS service operations are paginated and respond with truncated results. Fo
 
  **Paginators** are a feature of the AWS SDK for PHP that act as an abstraction over this process to make it easier for developers to use paginated APIs. A paginator is essentially an iterator of results. They are created via the `getPaginator()` method of the client. When you call `getPaginator()`, you must provide the name of the operation and the operation’s arguments (in the same way you do when you execute an operation). You can iterate over a paginator object using `foreach` to get individual `Aws\Result` objects.
 
-```
+```php
 $results = $s3Client->getPaginator('ListObjects', [
     'Bucket' => 'amzn-s3-demo-bucket'
 ]);
@@ -34,7 +34,7 @@ Paginator objects have a method named `search()`, which allows you to create ite
 
 The following example is equivalent to the preceding code example, but uses the `ResultPaginator::search()` method to be more concise.
 
-```
+```php
 $results = $s3Client->getPaginator('ListObjects', [
     'Bucket' => 'amzn-s3-demo-bucket'
 ]);
@@ -46,7 +46,7 @@ foreach ($results->search('Contents[].Key') as $key) {
 
 JMESPath expressions enable you to do fairly complex things. For example, if you wanted to print all of the object keys and common prefixes (i.e., do an `ls` of a bucket), you could do the following.
 
-```
+```php
 // List all prefixes ("directories") and objects ("files") in the bucket
 $results = $s3Client->getPaginator('ListObjects', [
     'Bucket'    => 'amzn-s3-demo-bucket',
@@ -64,7 +64,7 @@ foreach ($results->search($expression) as $item) {
 
 You can iterate over the results of a paginator asynchronously by providing a callback for the `each()` method of an `Aws\ResultPaginator`. The callback is invoked for each value that is yielded by the paginator.
 
-```
+```php
 $results = $s3Client->getPaginator('ListObjects', [
     'Bucket' => 'amzn-s3-demo-bucket'
 ]);
@@ -79,7 +79,7 @@ Using the `each()` method allows you to paginate over the results of an API oper
 
 A non-null return value from the callback will be yielded by the underlying coroutine-based promise. This means that you can return promises from the callback that must be resolved before continuing iteration over the remaining items, essentially merging in other promises to the iteration. The last non-null value returned by the callback is the result that fulfills the promise to any downstream promises. If the last return value is a promise, the resolution of that promise is the result that fulfills or rejects downstream promises.
 
-```
+```php
 // Delete all keys that end with "Foo"
 $promise = $results->each(function ($result) use ($s3Client) {
     if (substr($result['Key'], -3) === 'Foo') {

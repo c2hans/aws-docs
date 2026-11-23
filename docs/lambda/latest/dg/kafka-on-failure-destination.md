@@ -100,7 +100,7 @@ When Lambda sends failed records to a Kafka topic, each message contains both me
 
 The metadata includes information about why the record failed and details about the original batch:
 
-```
+```json
 {
   "requestContext": {
     "requestId": "e4b46cbf-b738-xmpl-8880-a18cdf61200e",
@@ -158,7 +158,7 @@ Lambda uses the same partition key from the original record when producing to th
 + **Same cluster only** – The destination topic must exist in the same Kafka cluster as your source topics.
 + **Topic permissions** – Your event source mapping must have write permissions to the destination topic. Example:
 
-  ```
+  ```json
   {
       "Version": "2012-10-17",
       "Statement": [

@@ -154,7 +154,7 @@ Complete the following procedure to create a SAML 2.0 federation IAM role in the
 
 ****
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

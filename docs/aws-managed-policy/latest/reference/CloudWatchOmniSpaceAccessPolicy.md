@@ -17,20 +17,20 @@ You can attach `CloudWatchOmniSpaceAccessPolicy` to your users, groups, and role
 <a name="CloudWatchOmniSpaceAccessPolicy-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: September 22, 2026, 01:47 UTC
-+ **Edited time:** November 17, 2026, 16:37 UTC
++ **Edited time:** November 19, 2026, 23:37 UTC
 + **ARN**: `arn:aws:iam::aws:policy/CloudWatchOmniSpaceAccessPolicy`
 
 ## Policy version
 <a name="CloudWatchOmniSpaceAccessPolicy-version"></a>
 
-**Policy version:** v4 (default)
+**Policy version:** v5 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
 ## JSON policy document
 <a name="CloudWatchOmniSpaceAccessPolicy-json"></a>
 
-```
+```json
 {
   "Version" : "2012-10-17",
   "Statement" : [
@@ -53,6 +53,7 @@ The policy's default version is the version that defines the permissions for the
         "cloudwatch:StopTelemetryQuery",
         "cloudwatch:GetTelemetryQueryResults",
         "cloudwatch:GetRecords",
+        "cloudwatch:GetProfileRecords",
         "cloudwatch:GetMetricData",
         "cloudwatch:ListMetrics",
         "cloudwatch:GetContextGraph",
@@ -85,6 +86,11 @@ The policy's default version is the version that defines the permissions for the
         "cloudwatch:ListOmniThreads",
         "cloudwatch:DeleteOmniThread",
         "cloudwatch:StartOmniThreadSession",
+        "cloudwatch:CreateOmniAgentAsset",
+        "cloudwatch:GetOmniAgentAsset",
+        "cloudwatch:UpdateOmniAgentAsset",
+        "cloudwatch:ListOmniAgentAssets",
+        "cloudwatch:DeleteOmniAgentAsset",
         "cloudwatch:SubmitFeedback",
         "cloudwatch:CreateIntegration",
         "cloudwatch:UpdateIntegration",
@@ -94,6 +100,7 @@ The policy's default version is the version that defines the permissions for the
         "cloudwatch:InvokeIntegration",
         "cloudwatch:GetIntelligenceConfiguration",
         "cloudwatch:PutIntelligenceConfiguration",
+        "cloudwatch:PutRecords",
         "cloudwatch:TagResource",
         "cloudwatch:UntagResource",
         "cloudwatch:ListTagsForResource",
@@ -125,7 +132,8 @@ The policy's default version is the version that defines the permissions for the
         "arn:aws:cloudwatch:*:*:alert/*",
         "arn:aws:cloudwatch:*:*:view/*",
         "arn:aws:cloudwatch:*:*:integration/*",
-        "arn:aws:cloudwatch:*:*:dataset/*"
+        "arn:aws:cloudwatch:*:*:dataset/*",
+        "arn:aws:cloudwatch:*:*:omni-agent-asset/*"
       ]
     },
     {
@@ -804,6 +812,85 @@ The policy's default version is the version that defines the permissions for the
       "Effect" : "Allow",
       "Action" : "sns:ListTopics",
       "Resource" : "*"
+    },
+    {
+      "Sid" : "PartnerIntegrationRoleFromTemplate",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateRole",
+        "iam:PutRolePolicy"
+      ],
+      "Resource" : "arn:aws:iam::*:role/service-role/CloudWatchExternalAgentIntegration-*",
+      "Condition" : {
+        "ArnLike" : {
+          "iam:RoleTemplateARN" : "arn:aws:iam::aws:role-template/cloudwatch.amazonaws.com/CloudWatchExternalAgentIntegrationRoleTemplate:*"
+        },
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : "cloudwatch.amazonaws.com"
+        },
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      }
+    },
+    {
+      "Sid" : "PartnerIntegrationRoleTemplateRead",
+      "Effect" : "Allow",
+      "Action" : "iam:GetRoleTemplateVersion",
+      "Resource" : "arn:aws:iam::aws:role-template/cloudwatch.amazonaws.com/CloudWatchExternalAgentIntegrationRoleTemplate:*",
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : "cloudwatch.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid" : "DevOpsAgentInvestigationRoleFromTemplate",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateRole",
+      "Resource" : "arn:aws:iam::*:role/service-role/CloudWatchOmniDevOpsAgentInvestigationRole-*",
+      "Condition" : {
+        "ArnLike" : {
+          "iam:RoleTemplateARN" : "arn:aws:iam::aws:role-template/cloudwatch.amazonaws.com/CloudWatchOmniDevOpsAgentInvestigationAccessRoleTemplate:*"
+        },
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : "cloudwatch.amazonaws.com"
+        },
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      }
+    },
+    {
+      "Sid" : "DevOpsAgentInvestigationPolicyFromTemplate",
+      "Effect" : "Allow",
+      "Action" : "iam:AttachRolePolicy",
+      "Resource" : "arn:aws:iam::*:role/service-role/CloudWatchOmniDevOpsAgentInvestigationRole-*",
+      "Condition" : {
+        "ArnEquals" : {
+          "iam:PolicyARN" : "arn:aws:iam::aws:policy/service-role/CloudWatchOmniDevOpsAgentInvestigationServiceRolePolicy"
+        },
+        "ArnLike" : {
+          "iam:RoleTemplateARN" : "arn:aws:iam::aws:role-template/cloudwatch.amazonaws.com/CloudWatchOmniDevOpsAgentInvestigationAccessRoleTemplate:*"
+        },
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : "cloudwatch.amazonaws.com"
+        },
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      }
+    },
+    {
+      "Sid" : "DevOpsAgentInvestigationRoleTemplateRead",
+      "Effect" : "Allow",
+      "Action" : "iam:GetRoleTemplateVersion",
+      "Resource" : "arn:aws:iam::aws:role-template/cloudwatch.amazonaws.com/CloudWatchOmniDevOpsAgentInvestigationAccessRoleTemplate:*",
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : "cloudwatch.amazonaws.com"
+        }
+      }
     }
   ]
 }

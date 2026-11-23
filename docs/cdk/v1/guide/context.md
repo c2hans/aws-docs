@@ -148,7 +148,7 @@ Below is an example of referencing an existing Amazon VPC using AWS CDK context.
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as cdk from '@aws-cdk/core';
 import * as ec2 from '@aws-cdk/aws-ec2';
 
@@ -175,7 +175,7 @@ export class ExistsVpcStack extends cdk.Stack {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const cdk = require('@aws-cdk/core');
 const ec2 = require('@aws-cdk/aws-ec2');
 
@@ -204,7 +204,7 @@ module.exports = { ExistsVpcStack }
 ------
 #### [ Python ]
 
-```
+```python
 import aws_cdk.core as cdk
 import aws_cdk.aws_ec2 as ec2
 
@@ -226,7 +226,7 @@ class ExistsVpcStack(cdk.Stack):
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awscdk.core.CfnOutput;
 
 import software.amazon.awscdk.services.ec2.Vpc;
@@ -259,7 +259,7 @@ public class ExistsVpcStack extends Stack {
 ------
 #### [ C\# ]
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.EC2;
 

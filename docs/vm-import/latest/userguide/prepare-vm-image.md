@@ -54,7 +54,7 @@ The following configurations should be made in your Windows VM before you export
 
   1. Copy the following sample file below and set the **processorArchitecture** parameter to **x86** or **amd64**, depending on your operating system architecture:
 
-     ```
+     ```xml
      <?xml version='1.0' encoding='UTF-8'?>
      <unattend xmlns:wcm='https://schemas.microsoft.com/WMIConfig/2002/State' xmlns='urn:schemas-microsoft-com:unattend'>
       <settings pass='oobeSystem'>

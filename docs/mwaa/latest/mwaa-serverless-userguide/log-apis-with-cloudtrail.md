@@ -44,7 +44,7 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/lo
 ------
 #### [ CLI ]
 
-```
+```json
 {
   "eventVersion": "1.11",
   "userIdentity": {

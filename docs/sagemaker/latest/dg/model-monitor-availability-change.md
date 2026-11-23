@@ -38,7 +38,7 @@ Monitoring schedules spin up Processing Job instances (example: `ml.m5.xlarge`) 
 
 **Using the SageMaker Python SDK:**
 
-```
+```python
 import sagemaker
 from sagemaker.model_monitor import DefaultModelMonitor
 
@@ -56,7 +56,7 @@ for schedule in schedules['MonitoringScheduleSummaries']:
 
 **Using the AWS CLI:**
 
-```
+```bash
 # List all monitoring schedules
 aws sagemaker list-monitoring-schedules
 # Delete a specific monitoring schedule
@@ -102,7 +102,7 @@ To scale, deploy the two Docker-based Lambda functions (data drift and model qua
 
 Enable S3 EventBridge notifications on the bucket and add S3 triggers: data drift on `s3:ObjectCreated:*` under `${PREFIX}/data-capture/`, model quality under `${PREFIX}/data/ground_truth/`.
 
-```
+```bash
 aws s3api put-bucket-notification-configuration \
   --bucket <your-sagemaker-bucket> \
   --notification-configuration '{"EventBridgeConfiguration": {}}'

@@ -43,7 +43,7 @@ For data streams, this means metadata migration does not create the target data 
 
 Before migrating, preview what will be migrated. In the workflow, this is the `evaluateMetadata` step. To run it manually from the Migration Console pod:
 
-```
+```bash
 console metadata evaluate
 ```
 
@@ -51,7 +51,7 @@ This scans the source cluster, applies filtering and modifications, and produces
 
 Example output:
 
-```
+```text
 Starting Metadata Evaluation
 Clusters:
    Source:
@@ -82,7 +82,7 @@ Results:
 
 The migrate step applies all evaluated items to the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection. In the workflow, this is the `migrateMetadata` step. To run it manually:
 
-```
+```bash
 console metadata migrate
 ```
 
@@ -90,7 +90,7 @@ If you run the workflow more than once, target indexes that already exist are re
 
 Example output:
 
-```
+```text
 Starting Metadata Migration
 
 Clusters:
@@ -151,7 +151,7 @@ The approval gates are the right place to decide whether this is acceptable for 
 
 Before proceeding to backfill, confirm the target details. Depending on your configuration, check the sharding strategy or verify that index mappings are correctly defined:
 
-```
+```bash
 console clusters curl target /<index>/_mapping?pretty
 console clusters curl target /<index>/_settings?pretty
 ```
@@ -183,7 +183,7 @@ Whenever you change the transformation configuration for a workflow-managed run,
 
 For workflow-managed metadata migrations on Amazon EKS, use the workflow logs and managed output artifacts instead of looking for files on the Migration Console filesystem:
 
-```
+```bash
 workflow log resource snapshotmigration.<NAME> -- --tail=200
 workflow show snapshotmigration.<NAME> evaluatemetadata
 workflow show snapshotmigration.<NAME> migratemetadata

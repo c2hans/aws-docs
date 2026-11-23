@@ -26,7 +26,7 @@ GPU-accelerated functions support container images up to 32 GB, compared with 10
 + **Start from the smallest base image that works for you.** – Choose the smallest Lambda base image that works for your application. For the list of available images, see [GPU base images](lambda-managed-instances-gpu-base-images.md).
 + **Spread content across layers.** – Lambda downloads several image layers concurrently and unpacks each layer, a CPU-heavy step, as soon as its download completes. An image whose content is concentrated in a single very large layer pulls more slowly than the same content split across several layers. This is because the large layer must finish downloading before its unpacking can begin, and no other layer unpacks in the meantime. Every `COPY`, `ADD`, and `RUN` instruction in a Dockerfile produces one layer, so split large instructions rather than combining them. For example, if you package sharded model weights, copy each shard with its own instruction instead of copying the directory in one instruction:
 
-  ```
+  ```dockerfile
   # One layer that holds every shard
   COPY models/ /opt/models/
 
@@ -51,7 +51,7 @@ You configure the size of `/tmp` with the `EphemeralStorage` setting of your fun
 
 The Lambda PyTorch base image sets `TORCH_HOME` to a path under `/tmp` so that PyTorch's default model cache works without code changes. If you use a different framework or a different base image, set the framework's cache directory yourself. For example:
 
-```
+```dockerfile
 ENV TORCH_HOME=/tmp/torch
 ```
 
@@ -67,7 +67,7 @@ Downloading an artifact to `/tmp` and then loading it into memory adds the write
 + **Use the S3 connector for PyTorch.** – The Lambda PyTorch base image includes `s3torchconnector`, which streams weights from Amazon S3 into CPU memory using the AWS Common Runtime, with no intermediate write to `/tmp`.
 
 Use streaming when:
-+ **Your model is larger than about 1 GB.** – Streaming avoids the local storage overhead of the download-then-load pattern. The benefit grows with model size.
++ **Your model is large.** – Streaming avoids the local storage overhead of the download-then-load pattern. The benefit grows with model size.
 + **Your model is larger than your configured `/tmp`.** – Streaming is the only option when the weights do not fit on disk.
 
 ### Example: stream model weights at initialization
@@ -75,7 +75,7 @@ Use streaming when:
 
 The following example loads a PyTorch state dictionary from Amazon S3 in the initialization code, outside the handler, and moves the model to the GPU there. Each worker process in the execution environment runs the initialization code and holds its own copy of the model. As a result, the S3 read happens once per worker process rather than on every invocation. For more information, see [Concurrency within an execution environment](lambda-managed-instances-gpu-scaling.md#lambda-managed-instances-gpu-scaling-concurrency).
 
-```
+```python
 import os
 import torch
 from s3torchconnector import S3Checkpoint
@@ -99,7 +99,7 @@ def handler(event, context):
 
 For comparison, the download-then-load pattern looks like this:
 
-```
+```python
 import boto3, torch
 
 s3 = boto3.client("s3", region_name="us-west-2")
@@ -112,7 +112,7 @@ Place the S3 bucket in the same AWS Region as your function to minimize network 
 
 Stage the model in S3 as safetensors. Put the \*.safetensors shards, `config.json`, and the tokenizer files under an S3 prefix in the same Region as the function:
 
-```
+```bash
 huggingface-cli download Qwen/Qwen2.5-1.5B-Instruct --local-dir ./model
 aws s3 sync ./model s3://amzn-s3-demo-bucket/models/Qwen2.5-1.5B-Instruct/
 ```

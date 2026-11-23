@@ -40,7 +40,7 @@ You can associate the VLAN subnets in the Amazon VPC console or with the AWS CLI
 
 1. Identify the Amazon EVS VLAN subnet IDs in your VPC. If `$VPC_ID` isn’t set in your shell, replace it in the following commands with the ID of your VPC.
 
-   ```
+   ```bash
    aws ec2 describe-subnets \
      --filters Name=vpc-id,Values=$VPC_ID \
      --query 'Subnets[].[SubnetId,CidrBlock]' \
@@ -49,7 +49,7 @@ You can associate the VLAN subnets in the Amazon VPC console or with the AWS CLI
 
 1. Associate each VLAN subnet with the route table. If you created a public HCX VLAN, associate the HCX public VLAN subnet with a public route table that routes to an internet gateway. Replace the example route table ID and subnet ID with your own values.
 
-   ```
+   ```bash
    aws ec2 associate-route-table \
      --route-table-id rtb-0123456789abcdef0 \
      --subnet-id subnet-01234a1b2cde1234f
@@ -57,7 +57,7 @@ You can associate the VLAN subnets in the Amazon VPC console or with the AWS CLI
 
 1. Verify the associations.
 
-   ```
+   ```bash
    aws ec2 describe-route-tables \
      --route-table-ids rtb-0123456789abcdef0 \
      --query 'RouteTables[0].Associations[].SubnetId'

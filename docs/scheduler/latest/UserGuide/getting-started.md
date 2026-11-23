@@ -9,7 +9,7 @@ This topic describes creating a new EventBridge Scheduler schedule. You use the 
 **Note**
 To follow this guide, we recommend that you set up IAM users with the minimum required permissions described in [Using identity-based policies in EventBridge Scheduler](security_iam_id-based-policy-examples.md). After you create and configure a user, run the following command to set your access credentials. You'll need your access key ID and secret access key to configure the AWS CLI.
 
-```
+```bash
 $ aws configure
 AWS Access Key ID [None]: {{AKIAIOSFODNN7EXAMPLE}}
 AWS Secret Access Key [None]: {{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
@@ -130,7 +130,7 @@ The following example shows how to use the AWS CLI command [`create-schedule`](h
 + **Arn** – Enter the ARN for the target. In this case, the target is an Amazon SQS queue.
 + **Input** – Enter a message that EventBridge Scheduler delivers to the target queue.
 
-```
+```bash
 $ aws scheduler create-schedule --name {{sqs-templated-schedule}} --schedule-expression 'rate(5 minutes)' \
 --target '{"RoleArn": "{{ROLE_ARN}}", "Arn": "{{QUEUE_ARN}}", "Input": "{{TEST_PAYLOAD}}" }' \
 --flexible-time-window '{ "Mode": "OFF"}'
@@ -143,7 +143,7 @@ In the following example, you use the EventBridge Scheduler SDKs to create a Eve
 
 **Example Python SDK**
 
-```
+```python
 import boto3
 scheduler = boto3.client('scheduler')
 
@@ -164,7 +164,7 @@ scheduler.create_schedule(
 
 **Example Java SDK**
 
-```
+```java
 package com.example;
 
 import software.amazon.awssdk.regions.Region;

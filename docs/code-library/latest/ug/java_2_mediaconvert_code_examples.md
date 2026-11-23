@@ -26,7 +26,7 @@ The following code example shows how to use `CreateJob`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/mediaconvert#code-examples).
 
-```
+```java
 package com.example.mediaconvert;
 
 import java.net.URI;
@@ -520,7 +520,7 @@ The following code example shows how to use `GetJob`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/mediaconvert#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.mediaconvert.model.DescribeEndpointsResponse;
 import software.amazon.awssdk.services.mediaconvert.model.GetJobRequest;
@@ -588,7 +588,7 @@ The following code example shows how to use `ListJobs`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/mediaconvert#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.mediaconvert.MediaConvertClient;
 import software.amazon.awssdk.services.mediaconvert.model.ListJobsRequest;

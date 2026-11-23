@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-DetectAno
 
 **Syntax**
 
-```
+```json
        DetectAnomalies {{<RULE_NAME>}} {{<RULE_PARAMETERS>}}
 ```
 
@@ -34,7 +34,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-DetectAno
 
 For example, if we want to detect RowCount anomalies, we provide RowCount as a rule name.
 
-```
+```json
 DetectAnomalies "RowCount"
 ```
 
@@ -42,6 +42,6 @@ DetectAnomalies "RowCount"
 
 For example, if we want to detect ColumnLength anomalies, we provide ColumnLength as a rule name and the column name.
 
-```
+```json
 DetectAnomalies "ColumnLength" "id"
 ```

@@ -36,13 +36,13 @@ In AWS IoT, a thing is a representation of a specific device or logical entity. 
 
 1. The following example command creates a thing type `kvs_example_camera`:
 
-   ```
+   ```bash
    aws --profile default iot create-thing-type --thing-type-name kvs_example_camera > iot-thing-type.json
    ```
 
 1. This example command creates the `kvs_example_camera_stream` thing of the `kvs_example_camera` thing type:
 
-   ```
+   ```bash
    aws --profile default  iot create-thing --thing-name kvs_example_camera_stream --thing-type-name kvs_example_camera > iot-thing.json
    ```
 
@@ -59,7 +59,7 @@ Perform the following steps to create and configure this IAM role:
 
    The following example command creates an IAM role called `KVSCameraCertificateBasedIAMRole`:
 
-   ```
+   ```bash
    aws --profile default iam create-role --role-name KVSCameraCertificateBasedIAMRole --assume-role-policy-document 'file://iam-policy-document.json' > iam-role.json
    ```
 
@@ -70,7 +70,7 @@ Perform the following steps to create and configure this IAM role:
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -89,7 +89,7 @@ Perform the following steps to create and configure this IAM role:
 
 1. Next, attach a permissions policy to the IAM role that you previously created. This permissions policy allows selective access control (a subset of supported operations) for an AWS resource. In this case, the AWS resource is the video stream that you want your camera to send data. In other words, once all the configuration steps are complete, this camera will be able to send data only to this video stream.
 
-   ```
+   ```bash
    aws --profile default iam put-role-policy --role-name KVSCameraCertificateBasedIAMRole --policy-name KVSCameraIAMPolicy --policy-document 'file://iam-permission-document.json'
    ```
 
@@ -100,7 +100,7 @@ Perform the following steps to create and configure this IAM role:
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -126,7 +126,7 @@ Perform the following steps to create and configure this IAM role:
 
    The following sample command creates a role alias called `KvsCameraIoTRoleAlias`,
 
-   ```
+   ```bash
    aws --profile default iot create-role-alias --role-alias KvsCameraIoTRoleAlias --role-arn $(jq --raw-output '.Role.Arn' iam-role.json) --credential-duration-seconds 3600 > iot-role-alias.json
    ```
 
@@ -134,13 +134,13 @@ Perform the following steps to create and configure this IAM role:
 
    The following sample command creates a policy for AWS IoT called `KvsCameraIoTPolicy`.
 
-   ```
+   ```bash
    aws --profile default iot create-policy --policy-name KvsCameraIoTPolicy --policy-document 'file://iot-policy-document.json'
    ```
 
    You can use the following command to create the `iot-policy-document.json` document JSON:
 
-   ```
+   ```bash
    cat > iot-policy-document.json <<EOF
    {
        "Version": "2012-10-17",
@@ -164,31 +164,31 @@ Communication between a device (your video stream) and AWS IoT is protected thro
 
 1. Create the certificate to which you must attach the policy for AWS IoT that you previously created.
 
-   ```
+   ```bash
    aws --profile default iot create-keys-and-certificate --set-as-active --certificate-pem-outfile certificate.pem --public-key-outfile public.pem.key --private-key-outfile private.pem.key > certificate
    ```
 
 1. Attach the policy for AWS IoT (`KvsCameraIoTPolicy` created previously) to this certificate.
 
-   ```
+   ```bash
    aws --profile default iot attach-policy --policy-name KvsCameraIoTPolicy --target $(jq --raw-output '.certificateArn' certificate)
    ```
 
 1. Attach your AWS IoT thing (`kvs_example_camera_stream`) to the certificate you just created:
 
-   ```
+   ```bash
    aws --profile default iot attach-thing-principal --thing-name kvs_example_camera_stream --principal $(jq --raw-output '.certificateArn' certificate)
    ```
 
 1. To authorize requests through the AWS IoT credentials provider, you need the AWS IoT credentials endpoint, which is unique to your AWS account ID. You can use the following command to get the AWS IoT credentials endpoint.
 
-   ```
+   ```bash
    aws --profile default iot describe-endpoint --endpoint-type iot:CredentialProvider --output text > iot-credential-provider.txt
    ```
 
 1. In addition to the X.509 certificate created previously, you must also have a CA certificate to establish trust with the backend service through TLS. You can get the CA certificate using the following command:
 
-   ```
+   ```bash
    curl --silent 'https://www.amazontrust.com/repository/SFSRootCAG2.pem' --output cacert.pem
    ```
 
@@ -201,19 +201,19 @@ Now you can test the AWS IoT credentials that you've set up so far.
 **Important**
 Create a video stream with a name that is identical to the AWS IoT thing name that you created in the previous step (`kvs_example_camera_stream`).
 
-   ```
+   ```bash
    aws kinesisvideo create-stream --data-retention-in-hours 24 --stream-name kvs_example_camera_stream
    ```
 
 1. Next, call the AWS IoT credentials provider to get the temporary credentials:
 
-   ```
+   ```bash
    curl --silent -H "x-amzn-iot-thingname:kvs_example_camera_stream" --cert certificate.pem --key private.pem.key https://IOT_GET_CREDENTIAL_ENDPOINT/role-aliases/KvsCameraIoTRoleAlias/credentials --cacert ./cacert.pem > token.json
    ```
 **Note**
 You can use the following command to get the `IOT_GET_CREDENTIAL_ENDPOINT`:
 
-   ```
+   ```bash
    IOT_GET_CREDENTIAL_ENDPOINT=`cat iot-credential-provider.txt`
    ```
 
@@ -221,7 +221,7 @@ You can use the following command to get the `IOT_GET_CREDENTIAL_ENDPOINT`:
 
 1. For your test, you can use these credentials to invoke the Kinesis Video Streams `DescribeStream` API for the sample `kvs_example_camera_stream` video stream.
 
-   ```
+   ```bash
    AWS_ACCESS_KEY_ID=$(jq --raw-output '.credentials.accessKeyId' token.json) AWS_SECRET_ACCESS_KEY=$(jq --raw-output '.credentials.secretAccessKey' token.json) AWS_SESSION_TOKEN=$(jq --raw-output '.credentials.sessionToken' token.json) aws kinesisvideo describe-stream --stream-name kvs_example_camera_stream
    ```
 
@@ -235,7 +235,7 @@ The steps in this section describe sending media to a Kinesis video stream from 
 
 1. The following sample command uses AWS IoT certificate authorization to send video to Kinesis Video Streams:
 
-   ```
+   ```bash
    gst-launch-1.0 rtspsrc location=rtsp://{{YourCameraRtspUrl}} short-header=TRUE ! rtph264depay ! video/x-h264,format=avc,alignment=au ! h264parse ! kvssink stream-name="kvs_example_camera_stream" aws-region="{{YourAWSRegion}}" iot-certificate="iot-certificate,endpoint={{credential-account-specific-prefix}}.credentials.iot.{{aws-region}}.amazonaws.com,cert-path=/path/to/certificate.pem,key-path=/path/to/private.pem.key,ca-path={{/path/to/cacert.pem}},role-aliases=KvsCameraIoTRoleAlias"
    ```
 
@@ -250,7 +250,7 @@ To represent your device (for example, your camera) through an AWS IoT thing, bu
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -272,17 +272,17 @@ To represent your device (for example, your camera) through an AWS IoT thing, bu
 **Note**
 The resource ARN uses certificate ID as the placeholder for the stream name. The IAM permission will work when you use the certificate ID as the stream name. Get the certificate ID from the certificate so that you can use that as stream name in the following describe stream API call.
 
-  ```
+  ```bash
   export CERTIFICATE_ID=`cat certificate | jq --raw-output '.certificateId'`
   ```
 + Verify this change using the Kinesis Video Streams describe-stream CLI command:
 
-  ```
+  ```bash
   AWS_ACCESS_KEY_ID=$(jq --raw-output '.credentials.accessKeyId' token.json) AWS_SECRET_ACCESS_KEY=$(jq --raw-output '.credentials.secretAccessKey' token.json) AWS_SESSION_TOKEN=$(jq --raw-output '.credentials.sessionToken' token.json) aws kinesisvideo describe-stream --stream-name ${CERTIFICATE_ID}
   ```
 + Pass the certificateId to the AWS IoT credentials provider in the [sample application](https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-cpp/blob/master/samples/kvs_gstreamer_sample.cpp) in the Kinesis Video Streams C\+\+ SDK:
 
-  ```
+  ```cpp
   credential_provider = make_unique<IotCertCredentialProvider>(iot_get_credential_endpoint,
           cert_path,
           private_key_path,
@@ -305,7 +305,7 @@ Modify the permissions policy to your IAM role (`iam-permission-document.json`) 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -331,6 +331,6 @@ Specify the paths for where these files are stored, the role alias name, the AWS
 
 The following sample command uses AWS IoT certificate authorization to send video to Amazon Kinesis Video Streams:
 
-```
+```bash
 gst-launch-1.0 rtspsrc location=rtsp://{{YourCameraRtspUrl}} short-header=TRUE ! rtph264depay ! video/x-h264,format=avc,alignment=au ! h264parse ! kvssink stream-name="{{YourStreamName}}" aws-region="{{YourAWSRegion}}" iot-certificate="iot-certificate,endpoint={{credential-account-specific-prefix}}.credentials.iot.{{aws-region}}.amazonaws.com,cert-path=/path/to/certificate.pem,key-path=/path/to/private.pem.key,ca-path={{/path/to/cacert.pem}},role-aliases=KvsCameraIoTRoleAlias,iot-thing-name={{YourThingName}}"
 ```

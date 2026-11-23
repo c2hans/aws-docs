@@ -108,7 +108,7 @@ You have four ways to specify a strategy for your service client. If you don't s
 
 When you build a client, you can configure a lambda expression with a retry strategy. The following snippet configures a standard retry strategy that uses default values on a DynamoDB service client.
 
-```
+```java
 DynamoDbClient client = DynamoDbClient.builder()
         .overrideConfiguration(o -> o.retryStrategy(RetryMode.STANDARD))
         .build();
@@ -136,13 +136,13 @@ You can configure a retry stategy for all service clients, unless overridden in 
 
 Use the `-D` switch when you invoke Java as shown in the following command.
 
-```
+```bash
 java -Daws.retryMode=standard ...
 ```
 
 Alternatively, set the system property in the code *before* creating any client as shown in the following snippet.
 
-```
+```java
 public void main(String[] args) {
     // Set the property BEFORE any AWS service clients are created.
     System.setProperty("aws.retryMode", "standard");
@@ -157,7 +157,7 @@ You can also use the `AWS_RETRY_MODE` environment variable with a value of `stan
 
 The following command sets the retry mode to `standard` for the current shell session.
 
-```
+```bash
 export AWS_RETRY_MODE=standard
 ```
 
@@ -171,7 +171,7 @@ You can customize any retry strategy by setting the maximum attempts, backoff st
 
 You can configure the maximum number of attempts during client construction as shown in the following statement. The following statement customizes the default retry strategy for the client to a maximum of 5 attempt--a first attempt plus 4 retries.
 
-```
+```java
 DynamoDbClient client = DynamoDbClient.builder()
         .overrideConfiguration(o -> o.retryStrategy(b -> b.maxAttempts(5)))
         .build();
@@ -179,7 +179,7 @@ DynamoDbClient client = DynamoDbClient.builder()
 
 Alternatively, you can build the strategy and provide it to the client as in the following code example. The following code replaces the standard 3 maximum attempts with 10 and configures a DynamoDB client with the customized strategy.
 
-```
+```java
 StandardRetryStrategy strategy = AwsRetryStrategy.standardRetryStrategy()
          .toBuilder()
          .maxAttempts(10)
@@ -207,7 +207,7 @@ The `retryOnExceptionOrCause` method adds a retryable exception if the SDK throw
 
 The following code snippet shows the methods you use to customize the retry exceptions--`retryOnException` and `retryOnExceptionOrCause`. The `retryOnExceptionOrCause` methods adds a retryable exception if the SDK throws the direct exception or if the exception is wrapped.
 
-```
+```java
 DynamoDbClient client = DynamoDbClient.builder()
         .overrideConfiguration(o -> o.retryStrategy(
                  b -> b.retryOnException(EdgeCaseException.class)
@@ -225,7 +225,7 @@ You can use the `[RetryStrategy.Builder](https://sdk.amazonaws.com/java/api/late
 
 The condition receives a `[RefreshRetryTokenRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/api/RefreshRetryTokenRequest.html)` that describes the failed attempt. Its `operationName` method returns the operation name from the service model, such as `SendMessage`. The following code snippet configures an Amazon SQS client that never retries the `SendMessage` operation, so a retry can't send the same message twice.
 
-```
+```java
 SqsClient client = SqsClient.builder()
         .overrideConfiguration(o -> o.retryStrategy(
                  b -> b.doNotRetryWhen(request -> request.operationName()
@@ -243,7 +243,7 @@ You can build the backoff strategy and supply it to the client.
 
 The following code builds a `BackoffStrategy` that replaces the default, standard strategy's exponential delay backoff strategy.
 
-```
+```java
 BackoffStrategy backoffStrategy =
         BackoffStrategy.exponentialDelay(Duration.ofMillis(150),  // The base delay.
                                          Duration.ofSeconds(15)); // The maximum delay.

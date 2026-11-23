@@ -11,6 +11,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.h
 + [Invoke models for real-time inference](realtime-endpoints-test-endpoints.md)
 + [Invoke endpoints with OpenAI-compatible APIs](realtime-endpoints-openai-compatible.md)
 + [Endpoints](realtime-endpoints-manage.md)
++ [Monitor endpoints with inference recommendations](realtime-endpoints-improvement-notifications.md)
 + [Hosting options](realtime-endpoints-options.md)
 + [Automatic scaling of Amazon SageMaker AI models](endpoint-auto-scaling.md)
 + [Instance storage volumes](host-instance-storage.md)

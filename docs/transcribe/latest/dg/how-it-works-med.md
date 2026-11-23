@@ -16,7 +16,7 @@ To store the output of your transcription job, select an Amazon S3 bucket that y
 
 The following are the minimum number of request parameters to enter in the sample JSON.
 
-```
+```json
 {
    "MedicalTranscriptionJobName": "{{my-first-transcription-job}}",
    "LanguageCode": "en-US",

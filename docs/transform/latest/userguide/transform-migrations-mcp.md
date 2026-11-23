@@ -25,7 +25,7 @@ You can install the AWS Transform MCP server from PyPI as `awslabs.aws-transform
 
 **Claude Code**
 
-```
+```bash
 claude mcp add awslabs.aws-transform-mcp-server -- uvx awslabs.aws-transform-mcp-server@latest
 ```
 
@@ -33,7 +33,7 @@ claude mcp add awslabs.aws-transform-mcp-server -- uvx awslabs.aws-transform-mcp
 
 Add the following to your client's MCP configuration file. For Kiro, use `~/.kiro/settings/mcp.json`.
 
-```
+```json
 {
   "mcpServers": {
     "awslabs.aws-transform-mcp-server": {
@@ -50,7 +50,7 @@ Add the following to your client's MCP configuration file. For Kiro, use `~/.kir
 
 **Windows**
 
-```
+```json
 {
   "mcpServers": {
     "awslabs.aws-transform-mcp-server": {

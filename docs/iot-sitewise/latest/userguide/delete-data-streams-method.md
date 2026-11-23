@@ -31,7 +31,7 @@ Use the AWS IoT SiteWise console to disassociate your data stream from an asset 
 
  Use the [ DeleteTimeSeries](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DeleteTimeSeries.html) API to delete a specific data stream, by its alias.
 
-```
+```JSON
     aws iotsitewise delete-time-series \
         --alias <data-stream-alias>
 ```

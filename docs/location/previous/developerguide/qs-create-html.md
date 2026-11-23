@@ -14,7 +14,7 @@ First, let's create the HTML and CSS framework that will be used for the applica
 
 1. Edit the file in the text editor or environment of your choice. Add the following HTML to the file.
 
-   ```
+   ```html
    <!DOCTYPE html>
    <html>
      <head>
@@ -56,7 +56,7 @@ Now add the CSS for the webpage. This will set the style of the text and placeho
 
 1. Edit the file in whatever editor that you want to use. Add the following text to the file.
 
-   ```
+   ```css
    * {
      box-sizing: border-box;
      font-family: Arial, Helvetica, sans-serif;

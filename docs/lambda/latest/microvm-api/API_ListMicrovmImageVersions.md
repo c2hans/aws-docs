@@ -82,6 +82,7 @@ Content-type: application/json
          },
          "imageArn": "string",
          "imageVersion": "string",
+         "kmsKeyIdentifier": "string",
          "logging": { ... },
          "resources": [
             {

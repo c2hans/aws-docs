@@ -58,7 +58,7 @@ The following YAML workflow definition has one task that runs two statements. Th
 
 Save the following YAML workflow definition as `duckdb_in_memory.yaml`:
 
-```
+```yaml
 duckdb_in_memory:
   default_args:
     retries: 0
@@ -107,7 +107,7 @@ aws s3 rm s3://{{amzn-s3-demo-bucket}}/duckdb-sample/ --recursive
 
 Before you run the example, add a policy to your workflow execution role. For instructions on adding a policy, see [Update an execution role](get-started-execution-role.md#execution-role-update). In the following JSON policy, replace `{{amzn-s3-demo-bucket}}` with the name of your data bucket:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -137,7 +137,7 @@ If your bucket uses an AWS KMS key for encryption, the role also needs `kms:Decr
 
 In the following YAML workflow definition, replace `{{amzn-s3-demo-bucket}}` with the name of your data bucket. Then save the definition as `duckdb_s3.yaml`:
 
-```
+```yaml
 duckdb_s3:
   default_args:
     retries: 0

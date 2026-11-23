@@ -27,7 +27,7 @@ The following code example shows how to use `DescribeVoices`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/polly#code-examples).
 
-```
+```rust
 async fn list_voices(client: &Client) -> Result<(), Error> {
     let resp = client.describe_voices().send().await?;
 
@@ -59,7 +59,7 @@ The following code example shows how to use `ListLexicons`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/polly#code-examples).
 
-```
+```rust
 async fn show_lexicons(client: &Client) -> Result<(), Error> {
     let resp = client.list_lexicons().send().await?;
 
@@ -99,7 +99,7 @@ The following code example shows how to use `PutLexicon`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/polly#code-examples).
 
-```
+```rust
 async fn make_lexicon(client: &Client, name: &str, from: &str, to: &str) -> Result<(), Error> {
     let content = format!("<?xml version=\"1.0\" encoding=\"UTF-8\"?>
     <lexicon version=\"1.0\" xmlns=\"http://www.w3.org/2005/01/pronunciation-lexicon\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
@@ -130,7 +130,7 @@ The following code example shows how to use `SynthesizeSpeech`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/polly#code-examples).
 
-```
+```rust
 async fn synthesize(client: &Client, filename: &str) -> Result<(), Error> {
     let content = fs::read_to_string(filename);
 

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-Google-Cloud.html
 ---
 
-# Install the CloudWatch agent on Google Cloud
+# Install the CloudWatch agent on Google Cloud (GCP)
 
 You can run the Amazon CloudWatch agent on Google Cloud to collect metrics, logs, and traces. The agent sends this telemetry to Amazon CloudWatch in your AWS account. This page covers two environments:
 + Google Compute Engine (GCE) – You install the agent package directly on the instance.
@@ -123,7 +123,7 @@ If you reuse an existing role, merge this policy with the role's existing trust 
 
 1. Download and install the agent on the instance, in the same way as on an on-premises server. See [Install the CloudWatch agent on on-premises servers](install-CloudWatch-Agent-on-premise.md).
 
-1. Set the AWS Region and the ARN of the role to assume, then start the agent with the default OpenTelemetry configuration (`default:otel`). The default OpenTelemetry configuration reads the role ARN from the `CWAGENT_ROLE_ARN` environment variable.
+1. Set the AWS Region and the ARN of the role to assume, then start the agent with the default OpenTelemetry configuration (`default:otel`), which requires agent version 1.300070.0 or later. The default OpenTelemetry configuration reads the role ARN from the `CWAGENT_ROLE_ARN` environment variable.
 
    ```
    sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a set-env -e AWS_REGION={{region}}
@@ -235,7 +235,7 @@ If you reuse an existing role, merge this policy with the role's existing trust 
    gcloud container clusters get-credentials {{cluster-name}} --location {{location}}
    ```
 
-1. Add the Amazon CloudWatch Observability Helm chart repository and install the chart. Set `k8sMode`, `roleArn`, `region`, and `clusterName`. Enable OTel Container Insights and assign the default OpenTelemetry configuration to the node agent.
+1. Add the Amazon CloudWatch Observability Helm chart repository and install the chart. Set `k8sMode`, `roleArn`, `region`, and `clusterName`, and enable OTel Container Insights. In chart version 8.0.0 and later, the node agent also serves an OTLP endpoint by default, so you don't need to assign it the `default:otel` configuration. For more information, see [OTLP ingestion](eks-observability-addon-otlp-endpoint.md).
 
    ```
    helm repo add aws-observability https://aws-observability.github.io/helm-charts
@@ -250,12 +250,5 @@ If you reuse an existing role, merge this policy with the role's existing trust 
      --set containerLogs.enabled=false \
      --set otelContainerInsights.enabled=true \
      --set otelContainerInsights.logs.enabled=true \
-     --set-string 'agents[0].name=cloudwatch-agent' \
-     --set-string 'agents[0].config=default:otel' \
-     --set-string 'agents[1].name=cloudwatch-agent-cluster-scraper' \
-     --set-string 'agents[1].mode=deployment' \
-     --set-string 'agents[1].config=default' \
      --namespace amazon-cloudwatch --create-namespace
    ```
-
-1. List every `agents[]` entry as shown. The Helm `--set` flag replaces a whole list element, so if you omit the cluster-scraper entry, you remove it.

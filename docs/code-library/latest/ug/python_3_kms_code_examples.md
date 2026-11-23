@@ -36,7 +36,7 @@ The following code example shows how to:
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KMSScenario:
     """Runs an interactive scenario that shows how to get started with KMS."""
 
@@ -379,7 +379,7 @@ if __name__ == "__main__":
 ```
 Wrapper class and methods for KMS key management.
 
-```
+```python
 class KeyManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -513,7 +513,7 @@ class KeyManager:
 ```
 Wrapper class and methods for KMS key aliases.
 
-```
+```python
 class AliasManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -595,7 +595,7 @@ class AliasManager:
 ```
 Wrapper class and methods for KMS key encryption.
 
-```
+```python
 class KeyEncrypt:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -707,7 +707,7 @@ class KeyEncrypt:
 ```
 Wrapper class and methods for KMS key grants.
 
-```
+```python
 class GrantManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -792,7 +792,7 @@ class GrantManager:
 ```
 Wrapper class and methods for KMS key policies.
 
-```
+```python
 class KeyPolicy:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -883,7 +883,7 @@ The following code example shows how to use `CreateAlias`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class AliasManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -930,7 +930,7 @@ The following code example shows how to use `CreateGrant`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class GrantManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -981,7 +981,7 @@ The following code example shows how to use `CreateKey`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1025,7 +1025,7 @@ The following code example shows how to use `Decrypt`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyEncrypt:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1069,7 +1069,7 @@ The following code example shows how to use `DeleteAlias`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class AliasManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1111,7 +1111,7 @@ The following code example shows how to use `DescribeKey`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1156,7 +1156,7 @@ The following code example shows how to use `DisableKey`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1193,7 +1193,7 @@ The following code example shows how to use `EnableKey`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1235,7 +1235,7 @@ The following code example shows how to use `EnableKeyRotation`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1277,7 +1277,7 @@ The following code example shows how to use `Encrypt`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyEncrypt:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1328,7 +1328,7 @@ The following code example shows how to use `GenerateDataKey`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1375,7 +1375,7 @@ The following code example shows how to use `GetKeyPolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyPolicy:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1426,7 +1426,7 @@ The following code example shows how to use `ListAliases`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class AliasManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1479,7 +1479,7 @@ The following code example shows how to use `ListGrants`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class GrantManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1529,7 +1529,7 @@ The following code example shows how to use `ListKeyPolicies`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyPolicy:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1574,7 +1574,7 @@ The following code example shows how to use `ListKeys`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1625,7 +1625,7 @@ The following code example shows how to use `PutKeyPolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyPolicy:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1695,7 +1695,7 @@ The following code example shows how to use `ReEncrypt`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyEncrypt:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1752,7 +1752,7 @@ The following code example shows how to use `RetireGrant`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class GrantManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1794,7 +1794,7 @@ The following code example shows how to use `RevokeGrant`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class GrantManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1836,7 +1836,7 @@ The following code example shows how to use `ScheduleKeyDeletion`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1886,7 +1886,7 @@ The following code example shows how to use `Sign`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyEncrypt:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1932,7 +1932,7 @@ The following code example shows how to use `TagResource`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -1978,7 +1978,7 @@ The following code example shows how to use `UpdateAlias`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class AliasManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -2030,7 +2030,7 @@ The following code example shows how to use `Verify`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyEncrypt:
     def __init__(self, kms_client):
         self.kms_client = kms_client

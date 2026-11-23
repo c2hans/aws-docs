@@ -28,7 +28,7 @@ You can use either of the following methods:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

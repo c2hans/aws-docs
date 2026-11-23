@@ -30,6 +30,8 @@ Pairs of objects are passed through independent, customizable encoders that are 
 
 ![Architecture of the Object2Vec Algorithm from Data Inputs to Scores.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/object2vec-training-image.png)
 
+Architecture of the Object2Vec Algorithm from Data Inputs to Scores
+
 ## Step 3: Produce Inferences
 <a name="object2vec-step-3-inference"></a>
 

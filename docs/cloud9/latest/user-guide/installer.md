@@ -19,7 +19,7 @@ This topic describes how to download and run this installer script on the target
 
 1. While you are connected to the instance or server, run one of the following commands on that instance or server. You will need to install `gcc` before running one of the commands.
 
-   ```
+   ```sh
    curl -L https://d3kgj69l4ph6w4.cloudfront.net/static/c9-install-2.0.0.sh | bash
    wget -O - https://d3kgj69l4ph6w4.cloudfront.net/static/c9-install-2.0.0.sh | bash
    ```

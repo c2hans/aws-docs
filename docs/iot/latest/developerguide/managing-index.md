@@ -222,7 +222,7 @@ aws iot describe-index --index-name "AWS_Things"
 
 The output of the **describe-index** command looks like the following:
 
-```
+```json
 {
     "indexName": "AWS_Things",
     "indexStatus": "ACTIVE",
@@ -241,7 +241,7 @@ aws iot get-indexing-configuration
 
 The output of the **get-indexing-configuration** command looks like the following:
 
-```
+```json
 {
     "thingIndexingConfiguration": {
         "thingIndexingMode": "REGISTRY_AND_SHADOW",
@@ -406,7 +406,7 @@ aws iot describe-index --index-name "AWS_Things"
 
 The response of the command can look like the following:
 
-```
+```JSON
 {
     "indexName": "AWS_Things",
     "indexStatus": "BUILDING",
@@ -439,7 +439,7 @@ aws iot search-index --index-name "AWS_Things" --query-string
           "thingName:mything*"
 ```
 
-```
+```JSON
 {
   "things": [
     {
@@ -511,7 +511,7 @@ aws iot search-index --index-name "AWS_Things" --query-string
 
 In the JSON response, `"connectivity"` (as enabled by the `thingConnectivityIndexingMode=STATUS` setting) provides the connection status, timestamp, disconnect reason, client ID, keep-alive duration, clean session flag, and session expiry for the device. The device `"mything1"` disconnected (`false`) at POSIX time `1556649874716` due to `CONNECTION_LOST`. For more information about disconnect reasons, see [Lifecycle events](life-cycle-events.md).
 
-```
+```JSON
 "connectivity": {
   "connected": false,
   "timestamp": 1556649874716,
@@ -525,7 +525,7 @@ In the JSON response, `"connectivity"` (as enabled by the `thingConnectivityInde
 
 The device `"mything2"` connected (`true`) at POSIX time `1556649855046`:
 
-```
+```JSON
 "connectivity": {
   "connected": true,
   "timestamp": 1556649855046,
@@ -548,7 +548,7 @@ These are the restrictions and limitations for `AWS_Things`.
 **Shadow fields with complex types**
 A shadow field is indexed only if the value of the field is a simple type, such as a JSON object that doesn't contain an array, or an array that consists entirely of simple types. Simple type means a string, number, or one of the literals `true` or `false`. For example, given the following shadow state, the value of field `"palette"` isn't indexed because it's an array that contains items of complex types. The value of field `"colors"` is indexed because each value in the array is a string.
 
-```
+```JSON
 {
     "state": {
         "reported": {
@@ -576,7 +576,7 @@ A shadow field is indexed only if the value of the field is a simple type, such 
 **Nested shadow field names**
 The names of nested shadow fields are stored as a period (.) delimited string. For example, given a shadow document:
 
-```
+```json
 {
   "state": {
     "desired": {
@@ -591,7 +591,7 @@ The names of nested shadow fields are stored as a period (.) delimited string. F
 ```
 The name of field `three` is stored as `desired.one.two.three`. If you also have a shadow document, it's stored like this:
 
-```
+```json
 {
   "state": {
     "desired": {

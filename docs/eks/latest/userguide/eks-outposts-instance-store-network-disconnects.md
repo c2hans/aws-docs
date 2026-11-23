@@ -34,18 +34,18 @@ To create an admin certificate:
 
 1. Generate a private key and certificate signing request (CSR):
 
-   ```
+   ```bash
    openssl req -new -newkey rsa:4096 -nodes \
        -keyout admin.key -out admin.csr -subj "/CN=admin"
    ```
 
 1. Create a Kubernetes `CertificateSigningRequest` resource and approve it:
 
-   ```
+   ```bash
    cat admin.csr | base64 | tr -d '\n' > admin.csr.b64
    ```
 
-   ```
+   ```bash
    apiVersion: certificates.k8s.io/v1
    kind: CertificateSigningRequest
    metadata:
@@ -57,27 +57,27 @@ To create an admin certificate:
        - client auth
    ```
 
-   ```
+   ```bash
    kubectl apply -f admin-csr.yaml
    kubectl certificate approve admin-csr
    ```
 
 1. Retrieve the signed certificate:
 
-   ```
+   ```bash
    kubectl get csr admin-csr -o jsonpath='{.status.certificate}' | base64 --decode > admin.crt
    ```
 
 1. Create a `ClusterRoleBinding` to grant admin access:
 
-   ```
+   ```bash
    kubectl create clusterrolebinding admin --clusterrole=cluster-admin \
        --user=admin --group=system:masters
    ```
 
 1. Build a `kubeconfig` that uses the certificate:
 
-   ```
+   ```bash
    kubectl config --kubeconfig admin.kubeconfig set-cluster my-cluster \
        --certificate-authority=ca.crt --server $APISERVER_ENDPOINT --embed-certs
    kubectl config --kubeconfig admin.kubeconfig set-credentials admin \
@@ -122,7 +122,7 @@ To prevent DNS failures during disconnected operation, configure your worker nod
 
 The following example shows worker node userdata:
 
-```
+```yaml
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="BOUNDARY"
 
@@ -192,7 +192,7 @@ Before you go into production with your local cluster, simulate a disconnect to 
 
 1. Test the connection to your local cluster using the x.509 certificate you created:
 
-   ```
+   ```bash
    kubectl --kubeconfig admin.kubeconfig get nodes
    ```
 

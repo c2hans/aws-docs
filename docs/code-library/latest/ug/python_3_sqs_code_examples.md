@@ -30,7 +30,7 @@ The following code example shows how to use `CreateQueue`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sqs#code-examples).
 
-```
+```python
 def create_queue(name, attributes=None):
     """
     Creates an Amazon SQS queue.
@@ -54,7 +54,7 @@ def create_queue(name, attributes=None):
         return queue
 ```
 
-```
+```python
 class SqsWrapper:
     """Wrapper class for managing Amazon SQS operations."""
 
@@ -118,7 +118,7 @@ The following code example shows how to use `DeleteMessage`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sqs#code-examples).
 
-```
+```python
 def delete_message(message):
     """
     Delete a message from a queue. Clients must delete messages after they
@@ -145,7 +145,7 @@ The following code example shows how to use `DeleteMessageBatch`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sqs#code-examples).
 
-```
+```python
 def delete_messages(queue, messages):
     """
     Delete a batch of messages from a queue in a single request.
@@ -175,7 +175,7 @@ def delete_messages(queue, messages):
         return response
 ```
 
-```
+```python
 class SqsWrapper:
     """Wrapper class for managing Amazon SQS operations."""
 
@@ -251,7 +251,7 @@ The following code example shows how to use `DeleteQueue`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sqs#code-examples).
 
-```
+```python
 def remove_queue(queue):
     """
     Removes an SQS queue. When run against an AWS account, it can take up to
@@ -268,7 +268,7 @@ def remove_queue(queue):
         raise error
 ```
 
-```
+```python
 class SqsWrapper:
     """Wrapper class for managing Amazon SQS operations."""
 
@@ -324,7 +324,7 @@ The following code example shows how to use `GetQueueAttributes`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/cross_service/topics_and_queues#code-examples).
 
-```
+```python
 class SqsWrapper:
     """Wrapper class for managing Amazon SQS operations."""
 
@@ -379,7 +379,7 @@ The following code example shows how to use `GetQueueUrl`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sqs#code-examples).
 
-```
+```python
 def get_queue(name):
     """
     Gets an SQS queue by name.
@@ -406,7 +406,7 @@ The following code example shows how to use `ListQueues`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sqs#code-examples).
 
-```
+```python
 def get_queues(prefix=None):
     """
     Gets a list of SQS queues. When a prefix is specified, only queues with names
@@ -436,7 +436,7 @@ The following code example shows how to use `ReceiveMessage`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sqs#code-examples).
 
-```
+```python
 def receive_messages(queue, max_number, wait_time):
     """
     Receive a batch of messages in a single request from an SQS queue.
@@ -465,7 +465,7 @@ def receive_messages(queue, max_number, wait_time):
         return messages
 ```
 
-```
+```python
 class SqsWrapper:
     """Wrapper class for managing Amazon SQS operations."""
 
@@ -526,7 +526,7 @@ The following code example shows how to use `SendMessage`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sqs#code-examples).
 
-```
+```python
 def send_message(queue, message_body, message_attributes=None):
     """
     Send a message to an Amazon SQS queue.
@@ -560,7 +560,7 @@ The following code example shows how to use `SendMessageBatch`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sqs#code-examples).
 
-```
+```python
 def send_messages(queue, messages):
     """
     Send a batch of messages in a single request to an SQS queue.
@@ -615,7 +615,7 @@ The following code example shows how to use `SetQueueAttributes`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/cross_service/topics_and_queues#code-examples).
 Set the policy attribute of a queue for a topic.
 
-```
+```python
 class SqsWrapper:
     """Wrapper class for managing Amazon SQS operations."""
 
@@ -736,7 +736,7 @@ The following code example shows how to create and publish to a FIFO Amazon SNS 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sns#code-examples).
 Create an Amazon SNS FIFO topic, subscribe Amazon SQS FIFO and standard queues to the topic, and publish a message to the topic.
 
-```
+```python
 def usage_demo():
     """Shows how to subscribe queues to a FIFO topic."""
     print("-" * 88)
@@ -989,7 +989,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/cross_service/topics_and_queues#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class TopicsAndQueuesScenario:
     """Manages the Topics and Queues feature scenario."""
 
@@ -1336,7 +1336,7 @@ class TopicsAndQueuesScenario:
 ```
 Create classes that wrap Amazon SNS and Amazon SQS operations for use in the scenario.
 
-```
+```python
 class SnsWrapper:
     """Wrapper class for managing Amazon SNS operations."""
 
@@ -1862,7 +1862,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sqs#code-examples).
 Create functions to wrap Amazon SQS message functions.
 
-```
+```python
 import logging
 import sys
 
@@ -1974,7 +1974,7 @@ def delete_messages(queue, messages):
 ```
 Use the wrapper functions to send and receive messages in batches.
 
-```
+```python
 def usage_demo():
     """
     Shows how to:
@@ -2070,7 +2070,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda) repository.
 Consuming an SQS event with Lambda using Python.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 def lambda_handler(event, context):
@@ -2096,7 +2096,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using Python.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 

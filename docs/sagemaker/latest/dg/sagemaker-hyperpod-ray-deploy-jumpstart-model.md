@@ -19,7 +19,7 @@ Before you begin, make sure that you have the following:
 
 The `JumpStartModelLoaderCallback` calls the SageMaker AI API to retrieve presigned URLs for downloading model artifacts. Your Ray Serve pods need an IAM role with the following permissions.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -34,7 +34,7 @@ The `JumpStartModelLoaderCallback` calls the SageMaker AI API to retrieve presig
 
 Create a Pod Identity association that maps a Kubernetes service account to this IAM role. For more information, see [Configuring a Kubernetes service account to assume an IAM role with EKS Pod Identity](https://docs.aws.amazon.com/eks/latest/userguide/pod-id-association.html) in the *Amazon EKS User Guide*.
 
-```
+```bash
 aws eks create-pod-identity-association \
   --cluster-name {{eks-cluster-name}} \
   --namespace {{namespace}} \
@@ -49,7 +49,7 @@ Reference this service account in your `RayService` manifest using the `serviceA
 
 The following example deploys a JumpStart model using Ray Serve's `LLMConfig` with the `JumpStartModelLoaderCallback`. The callback downloads model artifacts from JumpStart using presigned URLs when the serve replica starts and loads them into the serving engine (vLLM), exposing an OpenAI-compatible API.
 
-```
+```python
 from ray.serve.llm import LLMConfig, build_openai_app
 from ray.llm._internal.common.callbacks.base import CallbackConfig
 from toolkit_for_ray_on_sagemaker_ai import JumpStartModelLoaderCallback
@@ -83,13 +83,13 @@ For information about model licensing and EULA requirements, see [Choose a found
 
 The deployment exposes an OpenAI-compatible chat completions API on port 8000 through the KubeRay service created for the `RayService`. For quick testing, use `kubectl port-forward`:
 
-```
+```bash
 kubectl port-forward svc/{{ray-service-head-svc}} 8000:8000
 ```
 
 Then send requests to `http://localhost:8000`:
 
-```
+```bash
 curl http://localhost:8000/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{

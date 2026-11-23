@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-
 
  For example, to configure our clients to use our `applicationLogger`:
 
-```
+```go
 cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithLogger(applicationLogger))
 ```
 
@@ -35,7 +35,7 @@ cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithLogger(applicati
 
  For example, to enable logging of HTTP requests and retries:
 
-```
+```go
 cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithClientLogMode(aws.LogRetries | aws.LogRequest))
 ```
 

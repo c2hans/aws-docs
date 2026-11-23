@@ -35,7 +35,7 @@ The code uses these methods of the Amazon SQS client class:
 
 Create a new Go file named `ListQueues.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "fmt"
 
@@ -46,7 +46,7 @@ import (
 
 Initialize a session that the SDK uses to load credentials from the shared credentials file, `~/.aws/credentials` and the default region from `~/.aws/config`.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -54,7 +54,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Create a service client and call `ListQueues`, passing in `nil` to return all queues.
 
-```
+```go
 svc := sqs.New(sess)
 
 result, err := svc.ListQueues(nil)
@@ -62,7 +62,7 @@ result, err := svc.ListQueues(nil)
 
 Loop through the queue URLs to print them.
 
-```
+```go
 for i, url := range result.QueueUrls {
     fmt.Printf("%d: %s\n", i, *url)
 }
@@ -75,7 +75,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 
 Create a new Go file named `CreateQueue.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "flag"
     "fmt"
@@ -88,7 +88,7 @@ import (
 
 Get the queue name from the command line.
 
-```
+```go
 queue := flag.String("q", "", "The name of the queue")
 flag.Parse()
 
@@ -100,7 +100,7 @@ if *queue == "" {
 
 Initialize a session that the SDK uses to load credentials from the shared credentials file, `~/.aws/credentials` and the default region from `~/.aws/config`.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -108,7 +108,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Create a service client and call `CreateQueue`, passing in the queue name and queue attributes.
 
-```
+```go
 svc := sqs.New(sess)
 
 result, err := svc.CreateQueue(&sqs.CreateQueueInput{
@@ -122,7 +122,7 @@ result, err := svc.CreateQueue(&sqs.CreateQueueInput{
 
 Display the queue URL.
 
-```
+```go
 fmt.Println("URL: " + *result.QueueUrl)
 ```
 
@@ -133,7 +133,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 
 Create a new Go file named `GetQueueUrl.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "flag"
     "fmt"
@@ -145,7 +145,7 @@ import (
 
 Get the name of the queue from the command line.
 
-```
+```go
 queue := flag.String("q", "", "The name of the queue")
 flag.Parse()
 
@@ -157,7 +157,7 @@ if *queue == "" {
 
 Initialize a session that the SDK uses to load credentials from the shared credentials file, `~/.aws/credentials` and the default region from `~/.aws/config`.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -165,7 +165,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Create a service client and call `GetQueueUrl`, passing in the queue name.
 
-```
+```go
 svc := sqs.New(sess)
 
 result, err := svc.GetQueueUrl(&sqs.GetQueueUrlInput{
@@ -175,7 +175,7 @@ result, err := svc.GetQueueUrl(&sqs.GetQueueUrlInput{
 
 Display the URL of the queue.
 
-```
+```go
 fmt.Println("URL: " + *result.QueueUrl)
 ```
 
@@ -186,7 +186,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 
 Create a new Go file named `DeleteQueue.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "flag"
     "fmt"
@@ -198,7 +198,7 @@ import (
 
 Get the name of the queue from the command line.
 
-```
+```go
 queue := flag.String("q", "", "The name of the queue")
 flag.Parse()
 
@@ -210,7 +210,7 @@ if *queue == "" {
 
 Initialize a session that the SDK uses to load credentials from the shared credentials file, `~/.aws/credentials` and the default region from `~/.aws/config`.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -218,7 +218,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Create a service client and all `DeleteQueue` passing in the queue name.
 
-```
+```go
 svc := sqs.New(sess)
 
 result, err := svc.GetQueueUrl(&sqs.GetQueueUrlInput{

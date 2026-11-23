@@ -60,7 +60,7 @@ Enable CORS by returning the correct headers.
 #### GetCompatibleKafkaVersionsResponse schema
 <a name="compatible-kafka-versions-response-body-getcompatiblekafkaversionsresponse-example"></a>
 
-```
+```json
 {
   "compatibleKafkaVersions": [
     {
@@ -76,7 +76,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="compatible-kafka-versions-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

@@ -33,7 +33,7 @@ For example, you could use the following policy to deny users the ability to add
 
 ****
 
-```
+```json
 { "Version":"2012-10-17",
   "Statement":[
     { "Sid": "DenyTagUpdates",

@@ -174,7 +174,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of CreateAgentAlias.
 
-```
+```json
 PUT /agents/ABCDEFGHIJ/agentaliases/ HTTP/1.1
 Content-type: application/json
 

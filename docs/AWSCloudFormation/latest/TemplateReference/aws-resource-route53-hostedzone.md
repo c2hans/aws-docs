@@ -84,8 +84,8 @@ If you are using a reusable delegation set to create a public hosted zone for a 
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `HostedZoneConfig`  <a name="cfn-route53-hostedzone-hostedzoneconfig"></a>
-A complex type that contains an optional comment.
-If you don't want to specify a comment, omit the `HostedZoneConfig` and `Comment` elements.
+A complex type that contains an optional comment about the hosted zone and the hosted zone's service tier.
+If you don't want to specify a comment or a service tier, omit the `HostedZoneConfig` element and its child elements.
 *Required*: No
 *Type*: [HostedZoneConfig](aws-properties-route53-hostedzone-hostedzoneconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -97,7 +97,7 @@ The features configuration for the hosted zone, including accelerated recovery s
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HostedZoneTags`  <a name="cfn-route53-hostedzone-hostedzonetags"></a>
-Adds, edits, or deletes tags for a health check or a hosted zone.
+Adds, edits, or deletes tags for a health check, a health check source, or a hosted zone.
 For information about using tags for cost allocation, see [Using Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in the *AWS Billing and Cost Management User Guide*.
 *Required*: No
 *Type*: Array of [HostedZoneTag](aws-properties-route53-hostedzone-hostedzonetag.md)

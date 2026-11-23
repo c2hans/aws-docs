@@ -29,7 +29,7 @@ aws ssm create-maintenance-window \
 ```
 In the following command, the cron expression schedules an association to run the second Thursday of each month. However, because the schedule offset is `3`, the assocation won't run until the next Sunday, three days later.
 
-```
+```sh
 aws ssm create-association \
     --name "AWS-UpdateSSMAgent" \
     --targets "Key=instanceids,Values=i-0cb2b964d3e14fd9f" \

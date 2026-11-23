@@ -39,7 +39,7 @@ To use this code example with Apache Airflow v2 and later, no additional depende
 
 The following sample code takes three inputs: your Amazon MWAA environment name (in `mwaa_env`), the AWS Region of your environment (in `aws_region`), and the local file that contains the variables you want to import (in `var_file`).
 
-```
+```python
 import boto3
 import json
 import requests

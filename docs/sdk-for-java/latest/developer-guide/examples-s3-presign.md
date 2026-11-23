@@ -23,7 +23,7 @@ Alice already has an object in an S3 bucket. She uses the following code to gene
 #### Imports
 <a name="get-presigned-example-imports"></a>
 
-```
+```java
 import com.example.s3.util.PresignUrlUtils;
 import org.slf4j.Logger;
 import software.amazon.awssdk.http.HttpExecuteRequest;
@@ -55,7 +55,7 @@ import java.time.Duration;
 import java.util.UUID;
 ```
 
-```
+```java
     /* Create a pre-signed URL to download an object in a subsequent GET request. */
     public String createPresignedGetUrl(String bucketName, String keyName) {
         try (S3Presigner presigner = S3Presigner.create()) {
@@ -87,7 +87,7 @@ Bob uses one of the following code options to download the object. Alternatively
 #### Use JDK `HttpURLConnection` (since v1.1)
 <a name="get-presigned-example-useHttpUrlConnection"></a>
 
-```
+```java
     /* Use the JDK HttpURLConnection (since v1.1) class to do the download. */
     public byte[] useHttpUrlConnectionToGet(String presignedUrlString) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(); // Capture the response body to a byte array.
@@ -112,7 +112,7 @@ Bob uses one of the following code options to download the object. Alternatively
 #### Use JDK `HttpClient` (since v11)
 <a name="get-presigned-example-useHttpClient"></a>
 
-```
+```java
     /* Use the JDK HttpClient (since v11) class to do the download. */
     public byte[] useHttpClientToGet(String presignedUrlString) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(); // Capture the response body to a byte array.
@@ -141,7 +141,7 @@ Bob uses one of the following code options to download the object. Alternatively
 #### Use `SdkHttpClient` from the SDK for Java
 <a name="get-presigned-example-useSdkHttpClient"></a>
 
-```
+```java
     /* Use the AWS SDK for Java SdkHttpClient class to do the download. */
     public byte[] useSdkHttpClientToGet(String presignedUrlString) {
 
@@ -192,7 +192,7 @@ To validate data integrity, set `checksumMode(ChecksumMode.ENABLED)` on the `Get
 ##### Imports
 <a name="get-presigned-s3async-imports"></a>
 
-```
+```java
 import java.nio.file.Paths;
 import software.amazon.awssdk.core.ResponseBytes;
 import software.amazon.awssdk.core.async.AsyncResponseTransformer;
@@ -208,7 +208,7 @@ import software.amazon.awssdk.services.s3.presignedurl.model.PresignedUrlDownloa
 ------
 #### [ Download to file ]
 
-```
+```java
 S3AsyncClient s3AsyncClient = S3AsyncClient.builder()
         .region(Region.US_EAST_1)
         .build();
@@ -232,7 +232,7 @@ GetObjectResponse response = s3AsyncClient.presignedUrlExtension()
 ------
 #### [ Download to bytes ]
 
-```
+```java
 S3AsyncClient s3AsyncClient = S3AsyncClient.builder()
         .region(Region.US_EAST_1)
         .build();
@@ -263,7 +263,7 @@ To download large objects in parallel, set `multipartEnabled(true)` on the clien
 ------
 #### [ Download to file ]
 
-```
+```java
 S3AsyncClient multipartClient = S3AsyncClient.builder()
         .region(Region.US_EAST_1)
         .multipartEnabled(true)
@@ -282,7 +282,7 @@ GetObjectResponse response = multipartClient.presignedUrlExtension()
 ------
 #### [ Download to bytes ]
 
-```
+```java
 S3AsyncClient multipartClient = S3AsyncClient.builder()
         .region(Region.US_EAST_1)
         .multipartEnabled(true)
@@ -307,7 +307,7 @@ With the [Amazon S3 Transfer Manager](transfer-manager.md), you can download obj
 
 Add the `s3-transfer-manager` artifact to your project:
 
-```
+```xml
 <dependencyManagement>
     <dependencies>
         <dependency>
@@ -332,7 +332,7 @@ Add the `s3-transfer-manager` artifact to your project:
 ##### Imports
 <a name="get-presigned-tm-imports"></a>
 
-```
+```java
 import java.nio.file.Paths;
 import software.amazon.awssdk.core.ResponseBytes;
 import software.amazon.awssdk.core.async.AsyncResponseTransformer;
@@ -350,7 +350,7 @@ import software.amazon.awssdk.transfer.s3.progress.LoggingTransferListener;
 ------
 #### [ Download to file ]
 
-```
+```java
 S3TransferManager transferManager = S3TransferManager.create();
 
 PresignedFileDownload fileDownload = transferManager.downloadFileWithPresignedUrl(
@@ -368,7 +368,7 @@ CompletedFileDownload completed = fileDownload.completionFuture().join();
 ------
 #### [ Download to bytes ]
 
-```
+```java
 S3TransferManager transferManager = S3TransferManager.create();
 
 Download<ResponseBytes<GetObjectResponse>> bytesDownload =
@@ -409,7 +409,7 @@ Alice already has an S3 bucket. She uses the following code to generate a URL st
 #### Imports
 <a name="put-presigned-example-imports"></a>
 
-```
+```java
 import com.example.s3.util.PresignUrlUtils;
 import org.slf4j.Logger;
 import software.amazon.awssdk.core.internal.sync.FileContentStreamProvider;
@@ -445,7 +445,7 @@ import java.util.Map;
 import java.util.UUID;
 ```
 
-```
+```java
     /* Create a presigned URL to use in a subsequent PUT request */
     public String createPresignedUrl(String bucketName, String keyName, Map<String, String> metadata) {
         try (S3Presigner presigner = S3Presigner.create()) {
@@ -479,7 +479,7 @@ Bob uses one of the following three code options to upload a file.
 #### Use JDK `HttpURLConnection` (since v1.1)
 <a name="put-presigned-example-useHttpUrlConnection"></a>
 
-```
+```java
     /* Use the JDK HttpURLConnection (since v1.1) class to do the upload. */
     public void useHttpUrlConnectionToPut(String presignedUrlString, File fileToPut, Map<String, String> metadata) {
         logger.info("Begin [{}] upload", fileToPut.toString());
@@ -519,7 +519,7 @@ Bob uses one of the following three code options to upload a file.
 #### Use JDK `HttpClient` (since v11)
 <a name="put-presigned-example-useHttpClient"></a>
 
-```
+```java
     /* Use the JDK HttpClient (since v11) class to do the upload. */
     public void useHttpClientToPut(String presignedUrlString, File fileToPut, Map<String, String> metadata) {
         logger.info("Begin [{}] upload", fileToPut.toString());
@@ -546,7 +546,7 @@ Bob uses one of the following three code options to upload a file.
 #### Use `SdkHttpClient` from the SDK for Java
 <a name="put-presigned-example-useSdkHttpClient"></a>
 
-```
+```java
     /* Use the AWS SDK for Java V2 SdkHttpClient class to do the upload. */
     public void useSdkHttpClientToPut(String presignedUrlString, File fileToPut, Map<String, String> metadata) {
         logger.info("Begin [{}] upload", fileToPut.toString());
@@ -593,7 +593,7 @@ To make the URL work without extra headers, pass the value as a signed query par
 
 The following example generates a pre-signed URL for a `GetObjectRequest` with the requester-pays setting. Because the value is a query parameter, any caller can use the URL without sending an `x-amz-request-payer` header.
 
-```
+```java
 try (S3Presigner presigner = S3Presigner.create()) {
     GetObjectRequest getObjectRequest = GetObjectRequest.builder()
             .bucket("amzn-s3-demo-bucket")
@@ -619,7 +619,7 @@ try (S3Presigner presigner = S3Presigner.create()) {
 
 The following example generates a pre-signed URL for a `PutObjectRequest` with two metadata values as signed query parameters. Because the values are query parameters, any caller can use the URL without sending `x-amz-meta-*` headers.
 
-```
+```java
 try (S3Presigner presigner = S3Presigner.create()) {
     PutObjectRequest putObjectRequest = PutObjectRequest.builder()
             .bucket("amzn-s3-demo-bucket")
@@ -650,7 +650,7 @@ The following example shows the full workflow: a method that pre-signs a PUT req
 #### Imports
 <a name="presign-query-parameters-helper-imports"></a>
 
-```
+```java
 import com.example.s3.util.PresignUrlUtils;
 import org.slf4j.Logger;
 import software.amazon.awssdk.awscore.AwsRequestOverrideConfiguration;
@@ -679,7 +679,7 @@ import java.util.UUID;
 
 Generate the URL.
 
-```
+```java
     /**
      *  Creates a presigned URL to use in a subsequent HTTP PUT request. The code adds query parameters
      *  to the request instead of using headers. By using query parameters, you do not need to add the
@@ -720,7 +720,7 @@ Generate the URL.
 
 Upload the file with `SdkHttpClient`.
 
-```
+```java
     /**
      * Use the AWS SDK for Java V2 SdkHttpClient class to execute the PUT request. Since the
      * URL contains the query parameters, no headers are needed for metadata, SSE settings, or ACL settings.

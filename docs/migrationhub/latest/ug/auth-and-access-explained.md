@@ -124,7 +124,7 @@ The following shows an example of a permissions policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -150,7 +150,7 @@ Next, you must define a trust policy that authorizes the migration tool, in this
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

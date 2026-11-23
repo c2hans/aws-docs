@@ -34,7 +34,7 @@ The following code example shows how to get started using Aurora.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
 using Amazon.RDS;
 using Amazon.RDS.Model;
 using Microsoft.Extensions.DependencyInjection;
@@ -93,7 +93,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 using Amazon.RDS;
 using Amazon.RDS.Model;
 using AuroraActions;
@@ -650,7 +650,7 @@ public class AuroraScenario
 ```
 Wrapper methods that are called by the scenario to manage Aurora actions.
 
-```
+```csharp
 using Amazon.RDS;
 using Amazon.RDS.Model;
 
@@ -1053,7 +1053,7 @@ The following code example shows how to use `CreateDBCluster`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a new cluster and database.
     /// </summary>
@@ -1099,7 +1099,7 @@ The following code example shows how to use `CreateDBClusterParameterGroup`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a custom cluster parameter group.
     /// </summary>
@@ -1133,7 +1133,7 @@ The following code example shows how to use `CreateDBClusterSnapshot`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a snapshot of a cluster.
     /// </summary>
@@ -1162,7 +1162,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an Amazon Relational Database Service (Amazon RDS) DB instance
     /// with a particular set of properties. Use the action DescribeDBInstancesAsync
@@ -1205,7 +1205,7 @@ The following code example shows how to use `DeleteDBCluster`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a particular DB cluster.
     /// </summary>
@@ -1233,7 +1233,7 @@ The following code example shows how to use `DeleteDBClusterParameterGroup`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a particular parameter group by name.
     /// </summary>
@@ -1260,7 +1260,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a particular DB instance.
     /// </summary>
@@ -1289,7 +1289,7 @@ The following code example shows how to use `DescribeDBClusterParameterGroups`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the description of a DB cluster parameter group by name.
     /// </summary>
@@ -1315,7 +1315,7 @@ The following code example shows how to use `DescribeDBClusterParameters`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Describe the cluster parameters in a parameter group.
     /// </summary>
@@ -1356,7 +1356,7 @@ The following code example shows how to use `DescribeDBClusterSnapshots`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Return a list of DB snapshots for a particular DB cluster.
     /// </summary>
@@ -1392,7 +1392,7 @@ The following code example shows how to use `DescribeDBClusters`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Returns a list of DB clusters.
     /// </summary>
@@ -1431,7 +1431,7 @@ The following code example shows how to use `DescribeDBEngineVersions`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of DB engine versions for a particular DB engine.
     /// </summary>
@@ -1460,7 +1460,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Returns a list of DB instances.
     /// </summary>
@@ -1492,7 +1492,7 @@ The following code example shows how to use `DescribeOrderableDBInstanceOptions`
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of orderable DB instance options for a specific
     /// engine and engine version.
@@ -1528,7 +1528,7 @@ The following code example shows how to use `ModifyDBClusterParameterGroup`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Modify the specified integer parameters with new values from user input.
     /// </summary>

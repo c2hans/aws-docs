@@ -19,7 +19,7 @@ Retrieve the version, status, and configuration of one component.
 
 **Synopsis**
 
-```
+```bash
 greengrass-cli component details --name {{<component-name>}}
 ```
 
@@ -45,7 +45,7 @@ Retrieve the name, version, status, and configuration of each component installe
 
 **Synopsis**
 
-```
+```bash
 greengrass-cli component list
 ```
 
@@ -92,7 +92,7 @@ Restart components.
 
 **Synopsis**
 
-```
+```bash
 greengrass-cli component restart --names {{<component-name>}},...
 ```
 
@@ -109,7 +109,7 @@ Stop running components.
 
 **Synopsis**
 
-```
+```bash
 greengrass-cli component stop --names {{<component-name>}},...
 ```
 

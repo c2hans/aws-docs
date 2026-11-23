@@ -36,7 +36,7 @@ Before beginning this tutorial, must have an AWS FIS experiment template that yo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -64,7 +64,7 @@ Before beginning this tutorial, must have an AWS FIS experiment template that yo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -89,7 +89,7 @@ Before beginning this tutorial, must have an AWS FIS experiment template that yo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

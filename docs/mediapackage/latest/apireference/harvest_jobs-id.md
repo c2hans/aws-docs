@@ -65,7 +65,7 @@ Enable CORS by returning correct headers.
 #### HarvestJob schema
 <a name="harvest_jobs-id-response-body-harvestjob-example"></a>
 
-```
+```json
 {
   "createdAt": "string",
   "s3Destination": {

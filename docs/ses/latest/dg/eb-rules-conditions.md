@@ -31,7 +31,7 @@ Values: Invoice overdue, Payment failed
 
 The same expression in JSON is as follows.
 
-```
+```json
 {
   "StringExpression": {
     "Evaluate": {"Attribute": "SUBJECT"},
@@ -51,7 +51,7 @@ Condition 2: SPF EQUALS PASS
 
 The same `Conditions` list in JSON is as follows.
 
-```
+```json
 {
   "Conditions": [
     {
@@ -84,7 +84,7 @@ Unless 2: RECIPIENT EQUALS archive@example.com
 
 The same `Conditions` and `Unless` lists in JSON are as follows.
 
-```
+```json
 {
   "Conditions": [
     {
@@ -172,7 +172,7 @@ Each condition uses one of the expression types in the following lists. Place th
 Recipient address
 Use a [string expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_RuleStringExpression.html) with `RECIPIENT` to check one SMTP envelope recipient at a time. String operators are `EQUALS`, `NOT_EQUALS`, `STARTS_WITH`, `ENDS_WITH`, and `CONTAINS`. The following condition matches recipients in the `example.com` domain.
 
-```
+```json
 {
   "StringExpression": {
     "Evaluate": {"Attribute": "RECIPIENT"},
@@ -185,7 +185,7 @@ Use a [string expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIR
 SMTP envelope sender and sending server
 Use a [string expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_RuleStringExpression.html) with `MAIL_FROM` to check the SMTP envelope sender. Use `HELO` to check the server name supplied when the sending mail server introduces itself. The following condition matches an SMTP envelope sender in the `mailer.example` domain.
 
-```
+```json
 {
   "StringExpression": {
     "Evaluate": {"Attribute": "MAIL_FROM"},
@@ -198,7 +198,7 @@ Use a [string expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIR
 Source IP address
 Use an [IP expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_RuleIpExpression.html) with `SOURCE_IP`. The supported operators are `CIDR_MATCHES` and `NOT_CIDR_MATCHES`. The following condition matches source IP addresses in `192.0.2.0/24`.
 
-```
+```json
 {
   "IpExpression": {
     "Evaluate": {"Attribute": "SOURCE_IP"},
@@ -211,7 +211,7 @@ Use an [IP expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIRefe
 TLS protection
 Use a [boolean expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_RuleBooleanExpression.html) with `IS_TRUE` or `IS_FALSE`. `TLS` checks whether the connection uses TLS, including a connection upgraded with `STARTTLS`. `TLS_WRAPPED` checks whether the connection starts with TLS instead of upgrading with `STARTTLS`. The following condition matches a connection that uses TLS.
 
-```
+```json
 {
   "BooleanExpression": {
     "Evaluate": {"Attribute": "TLS"},
@@ -223,7 +223,7 @@ Use a [boolean expression](https://docs.aws.amazon.com/sesmailmanager/latest/API
 Client certificate values
 For an mTLS ingress endpoint, use a [string expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_RuleStringExpression.html) to check `CN`, `SERIAL_NUMBER`, or a supported subject alternative name: `SAN_RFC822_NAME`, `SAN_DNS_NAME`, `SAN_DIRECTORY_NAME`, `SAN_UNIFORM_RESOURCE_IDENTIFIER`, `SAN_IP_ADDRESS`, or `SAN_REGISTERED_ID`. The following condition checks the certificate common name.
 
-```
+```json
 {
   "StringExpression": {
     "Evaluate": {"ClientCertificateAttribute": "CN"},
@@ -239,7 +239,7 @@ For an mTLS ingress endpoint, use a [string expression](https://docs.aws.amazon.
 From and Sender headers
 Use a [string expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_RuleStringExpression.html) with `FROM` to check the email's `From` header. Use `SENDER` to check the `Sender` header when present, or the `From` header when no `Sender` header is present. The following condition matches a visible `From` address.
 
-```
+```json
 {
   "StringExpression": {
     "Evaluate": {"Attribute": "FROM"},
@@ -252,7 +252,7 @@ Use a [string expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIR
 To and CC headers
 Use a [string expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_RuleStringExpression.html) with `TO` or `CC` to check addresses in the corresponding message header. The following condition matches a `To` header that contains an address in the `example.com` domain.
 
-```
+```json
 {
   "StringExpression": {
     "Evaluate": {"Attribute": "TO"},
@@ -265,7 +265,7 @@ Use a [string expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIR
 Subject
 Use a [string expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_RuleStringExpression.html) with `SUBJECT`. The following condition matches either listed subject.
 
-```
+```json
 {
   "StringExpression": {
     "Evaluate": {"Attribute": "SUBJECT"},
@@ -278,7 +278,7 @@ Use a [string expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIR
 Custom message header
 Use a [string expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_RuleStringExpression.html) with `MimeHeaderAttribute` to check a custom header whose name starts with `X-`. The following condition checks an `X-Message-Type` header.
 
-```
+```json
 {
   "StringExpression": {
     "Evaluate": {"MimeHeaderAttribute": "X-Message-Type"},
@@ -291,7 +291,7 @@ Use a [string expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIR
 Read-receipt request
 Use a [boolean expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_RuleBooleanExpression.html) with `READ_RECEIPT_REQUESTED`. The following condition matches an email that requests a read receipt.
 
-```
+```json
 {
   "BooleanExpression": {
     "Evaluate": {"Attribute": "READ_RECEIPT_REQUESTED"},
@@ -303,7 +303,7 @@ Use a [boolean expression](https://docs.aws.amazon.com/sesmailmanager/latest/API
 Message size
 Use a [number expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_RuleNumberExpression.html) with `MESSAGE_SIZE`. The value is the message size in bytes. Supported operators are `EQUALS`, `NOT_EQUALS`, `LESS_THAN`, `GREATER_THAN`, `LESS_THAN_OR_EQUAL`, and `GREATER_THAN_OR_EQUAL`. The following condition matches an email larger than 1,048,576 bytes.
 
-```
+```json
 {
   "NumberExpression": {
     "Evaluate": {"Attribute": "MESSAGE_SIZE"},
@@ -319,7 +319,7 @@ Use a [number expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIR
 SPF and DKIM verdicts
 Use a [verdict expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_RuleVerdictExpression.html) with `SPF` or `DKIM`. Supported values are `PASS`, `FAIL`, `GRAY`, and `PROCESSING_FAILED`. Supported operators are `EQUALS` and `NOT_EQUALS`. The following condition matches an email that passes SPF.
 
-```
+```json
 {
   "VerdictExpression": {
     "Evaluate": {"Attribute": "SPF"},
@@ -332,7 +332,7 @@ Use a [verdict expression](https://docs.aws.amazon.com/sesmailmanager/latest/API
 DMARC policy
 Use a [DMARC expression](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_RuleDmarcExpression.html) to compare the published DMARC policy with `NONE`, `QUARANTINE`, or `REJECT`. Supported operators are `EQUALS` and `NOT_EQUALS`. The following condition matches a published `REJECT` policy.
 
-```
+```json
 {
   "DmarcExpression": {
     "Operator": "EQUALS",
@@ -348,7 +348,7 @@ Use `IsInAddressList` in a [boolean expression](https://docs.aws.amazon.com/sesm
 
 For instructions on creating and maintaining address lists, see [Address Lists](eb-addlist.md). In the following example, replace the AWS Region, account ID, and address list ID with your own values. The condition checks whether each SMTP envelope recipient is in the address list.
 
-```
+```json
 {
   "BooleanExpression": {
     "Evaluate": {
@@ -374,7 +374,7 @@ Use an `Analysis` operand to compare an Email Add On result. The result field co
 
 Available result fields depend on the Email Add On. For supported fields, see [Email Add Ons](eb-addons.md). In the following example, replace the AWS Region, account ID, and add-on instance ID with your own values. The condition checks a boolean `isListed` result.
 
-```
+```json
 {
   "BooleanExpression": {
     "Evaluate": {

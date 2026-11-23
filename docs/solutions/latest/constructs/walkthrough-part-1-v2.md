@@ -29,19 +29,19 @@ Create a directory for your CDK app, and then create a AWS CDK app in that direc
 
 **Example**
 
-```
+```typescript
 mkdir hello-constructs
 cd hello-constructs
 cdk init --language typescript
 ```
 
-```
+```python
 mkdir hello-constructs
 cd hello-constructs
 cdk init --language python
 ```
 
-```
+```java
 mkdir hello-constructs
 cd hello-constructs
 cdk init --language java
@@ -60,16 +60,16 @@ Install the projects base dependencies.
 
 **Example**
 
-```
+```typescript
 npm install
 ```
 
-```
+```python
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-```
+```java
 mvn install
 ```
 
@@ -77,16 +77,16 @@ Build and run the app and confirm that it creates an empty stack.
 
 **Example**
 
-```
+```typescript
 npm run build
 cdk synth
 ```
 
-```
+```python
 cdk synth
 ```
 
-```
+```java
 mvn package
 cdk synth
 ```
@@ -95,7 +95,7 @@ You should see a stack like the following, where `CDK-VERSION` is the version of
 
 **Example**
 
-```
+```python
 Resources:
   CDKMetadata:
     Type: AWS::CDK::Metadata
@@ -103,7 +103,7 @@ Resources:
           Modules: aws-cdk=CDK-VERSION,@aws-cdk/core=VERSION_NUMBER,@aws-cdk/cx-api=VERSION_NUMBER,jsii-runtime=node.js/VERSION_NUMBER
 ```
 
-```
+```python
 Resources:
   CDKMetadata:
     Type: AWS::CDK::Metadata
@@ -112,7 +112,7 @@ Resources:
 ```
 \*
 
-```
+```python
 Resources:
   CDKMetadata:
     Type: AWS::CDK::Metadata
@@ -130,7 +130,7 @@ Create a directory `lambda` in the root of your project tree.
 **Example**
 + Add a file called `lambda/hello.js` with the following contents:
 
-  ```
+  ```typescript
   exports.handler = async function(event) {
     console.log("request:", JSON.stringify(event, null, 2));
     return {
@@ -142,7 +142,7 @@ Create a directory `lambda` in the root of your project tree.
   ```
 + Add a file called `lambda/hello.py` with the following contents:
 
-  ```
+  ```python
   import json
 
   def handler(event, context):
@@ -157,7 +157,7 @@ Create a directory `lambda` in the root of your project tree.
   ```
 + Add a file called `lambda/hello.js` with the following contents:
 
-  ```
+  ```typescript
   exports.handler = async function(event) {
     console.log("request:", JSON.stringify(event, null, 2));
     return {
@@ -183,18 +183,18 @@ Install the AWS Solutions Constructs `aws-apigateway-lambda` module and all its 
 
 **Example**
 
-```
+```python
 npm install -s @aws-solutions-constructs/aws-apigateway-lambda
 ```
 
-```
+```python
 pip install aws_solutions_constructs.aws_apigateway_lambda
 ```
 + Edit the `pom.xml` file with the following information:
 **Note**
 2.5.0 was the latest version of AWS Solutions Constructs at this writing. To find the latest version of AWS Solutions Constructs (and any other dependencies), use the command `mvn versions:display-dependency-updates` and update the pom.xml file.
 
-  ```
+  ```xml
   <properties>
     <solutionconstructs.version>2.5.0</solutionconstructs.version>
   </properties>
@@ -208,7 +208,7 @@ pip install aws_solutions_constructs.aws_apigateway_lambda
 
   Run the command:
 
-  ```
+  ```java
   mvn install
   ```
 
@@ -220,7 +220,7 @@ Now, let’s define the AWS Solutions Constructs pattern for implementing an Ama
 **Example**
 + Replace the code in `lib/hello-constructs-stack.ts` with the following:
 
-  ```
+  ```typescript
   import { Construct } from 'constructs';
   import { Stack, StackProps } from 'aws-cdk-lib';
   import * as lambda from 'aws-cdk-lib/aws-lambda';
@@ -251,7 +251,7 @@ Now, let’s define the AWS Solutions Constructs pattern for implementing an Ama
   ```
 + Replace the code in `hello_constructs/hello_constructs_stack.py` with the following:
 
-  ```
+  ```python
   from constructs import Construct
   from aws_cdk import (
       aws_lambda as _lambda,
@@ -287,7 +287,7 @@ Now, let’s define the AWS Solutions Constructs pattern for implementing an Ama
   ```
 + Replace the code in `HelloConstructsStack.java` with the following:
 
-  ```
+  ```java
   package com.myorg;
 
   import software.constructs.Construct;
@@ -331,7 +331,7 @@ That’s it. This is all you need to do in order to define an API Gateway which 
 ------
 #### [ Typescript ]
 
-```
+```typescript
 npm run build
 cdk diff
 ```
@@ -339,14 +339,14 @@ cdk diff
 ------
 #### [ Python ]
 
-```
+```python
 cdk diff
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 mvn package
 cdk diff
 ```
@@ -522,7 +522,7 @@ This is a stack output that’s automatically added by the AWS Solutions Constru
 
 Let’s try to hit this endpoint with `curl` . Copy the URL and execute (your prefix and Region will likely be different).
 
-```
+```bash
 curl https://
    xxxxxxxxxx
     .execute-api.us-east-1.amazonaws.com/prod/

@@ -98,7 +98,8 @@ Required: No
             "resolution": {
                "height": number,
                "width": number
-            }
+            },
+            "type": "string"
          },
          "deviceMinutes": {
             "metered": number,

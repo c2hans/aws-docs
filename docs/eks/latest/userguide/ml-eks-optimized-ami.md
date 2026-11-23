@@ -67,7 +67,7 @@ The AMI includes only the kernel driver, not the GDRCopy userspace library (`lib
 
 To confirm the driver is active on a node, check that the module is loaded and the device node exists:
 
-```
+```bash
 lsmod | grep gdrdrv
 ls -l /dev/gdrdrv
 ```
@@ -138,7 +138,7 @@ In addition to the standard EKS AMI components, the EKS-optimized Bottlerocket N
 
 When using the EKS-optimized Bottlerocket AMIs with Neuron instances, the following must be configured in the Bottlerocket user-data. This setting allows the container to take ownership of the mounted Neuron device based on the `runAsUser` and `runAsGroup` values provided in the workload specification. For more information on Neuron support in Bottlerocket, see the [Quickstart on EKS readme](https://github.com/bottlerocket-os/bottlerocket/blob/develop/QUICKSTART-EKS.md#neuron-support) on GitHub.
 
-```
+```toml
 [settings]
 [settings.kubernetes]
 device-ownership-from-security-context = true

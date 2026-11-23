@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Displays the AWS ParallelCluster version.
 
-```
+```sh
 pcluster version [ -h ]
 ```
 

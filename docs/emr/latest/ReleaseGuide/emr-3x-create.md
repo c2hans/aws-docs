@@ -25,7 +25,7 @@ Name={{"Configuring infinite JVM reuse"}},Args=[{{"-m","mapred.job.reuse.jvm.num
 
 Programmatically, all Amazon EMR release versions use the `RunJobFlowRequest` action in the EMR API to create clusters. The following example Java code creates a cluster using AMI release version 3.11.0.
 
-```
+```java
 RunJobFlowRequest request = new RunJobFlowRequest()
 			.withName("AmiVersion Cluster")
 			.withAmiVersion("3.11.0")
@@ -39,7 +39,7 @@ RunJobFlowRequest request = new RunJobFlowRequest()
 
 The following `RunJobFlowRequest` call uses a release label instead:
 
-```
+```java
 RunJobFlowRequest request = new RunJobFlowRequest()
 			.withName("ReleaseLabel Cluster")
 			.withReleaseLabel("{{emr-7.14.0}}")

@@ -43,7 +43,7 @@ Connect your board to AWS IoT and configure your FreeRTOS demo.
 
    1. In the **Add statements** section, choose **Advanced mode**. Copy and paste the following JSON into the policy editor window:
 
-      ```
+      ```json
       {
             "Effect": "Allow",
             "Action": [

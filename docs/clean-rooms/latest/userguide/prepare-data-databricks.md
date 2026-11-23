@@ -68,7 +68,7 @@ In Databricks, enable Delta Sharing, create a recipient that trusts your AWS ide
 
 1. Create a share, add your table to it, and grant the recipient access. Run the following commands in the Databricks SQL editor, replacing the placeholder names with your own.
 
-   ```
+   ```sql
    CREATE SHARE my_share;
    ALTER SHARE my_share ADD TABLE my_catalog.my_schema.my_table;
    GRANT SELECT ON SHARE my_share TO RECIPIENT my_recipient;

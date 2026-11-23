@@ -138,7 +138,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-s3-storage-update-policy-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "BucketName": "examplebucketname",
   "BucketPolicy": "Example bucket permissions",
@@ -150,7 +150,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-s3-storage-update-policy-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "BucketName": "examplebucketname",
   "BucketPolicy": "Example bucket permissions",

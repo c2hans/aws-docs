@@ -26,7 +26,7 @@ Content-type: application/json
 
 From `text`, Amazon Lex V2 detects the user's intent, to order flowers. Amazon Lex V2 chooses one of the intent's slots (`FlowerType`) and one of the prompts for the slot, and then sends the following response to the client application. The client displays the response to the user.
 
-```
+```json
 {
     "interpretations": [
         {
@@ -83,7 +83,7 @@ From `text`, Amazon Lex V2 detects the user's intent, to order flowers. Amazon L
 
 In turn 2, the user responds to the prompt from the Amazon Lex V2 bot in turn 1 with a value that fills the `FlowerType` slot.
 
-```
+```json
 {
     "text": "1 dozen roses"
 }
@@ -91,7 +91,7 @@ In turn 2, the user responds to the prompt from the Amazon Lex V2 bot in turn 1 
 
 The response for turn 2 shows the `FlowerType` slot filled and provides a prompt to elicit the next slot value.
 
-```
+```json
 {
     "interpretations": [
         {
@@ -160,7 +160,7 @@ The response for turn 2 shows the `FlowerType` slot filled and provides a prompt
 
 In turn 3, the user responds to the prompt from the Amazon Lex V2 bot in turn 2 with a value that fills the `PickupDate` slot.
 
-```
+```json
 {
     "text": "next monday"
 }
@@ -168,7 +168,7 @@ In turn 3, the user responds to the prompt from the Amazon Lex V2 bot in turn 2 
 
 The response for turn 3 both the `FlowerType` and `PickupDate` slots filled and provides a prompt to elicit the last slot value.
 
-```
+```json
 {
     "interpretations": [
         {
@@ -254,7 +254,7 @@ The response for turn 3 both the `FlowerType` and `PickupDate` slots filled and 
 
 In turn 4, the user provides the final slot value for the intent, the time that the flowers are picked up.
 
-```
+```json
 {
     "text": "5 in the evening"
 }
@@ -262,7 +262,7 @@ In turn 4, the user provides the final slot value for the intent, the time that 
 
 In the response, Amazon Lex V2 sends a confirmation prompt to the user to confirm that the order is correct. The `dialogAction` is set to `ConfirmIntent` and the `confirmationState` is `None`.
 
-```
+```json
 {
     "interpretations": [
         {
@@ -362,7 +362,7 @@ In the response, Amazon Lex V2 sends a confirmation prompt to the user to confir
 
 In the final turn, the user responds with to the confirmation prompt.
 
-```
+```json
 {
     "text": "yes"
 }
@@ -370,7 +370,7 @@ In the final turn, the user responds with to the confirmation prompt.
 
 In the response, Amazon Lex V2 sends indicates that the intent has been fulfilled by setting the `confirmationState` to `Confirmed` and the `dialogAction` to close. All of the slot values are available to the client application.
 
-```
+```json
 {
     "interpretations": [
         {

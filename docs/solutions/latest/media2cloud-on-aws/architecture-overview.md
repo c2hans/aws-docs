@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/arch
 
 ![Media2Cloud on AWS architecture on AWS](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-architecture-diagram.png)
 
+***Media2Cloud on AWS architecture on AWS***
+
  The AWS CloudFormation template deploys the following infrastructure:
 
 1.  An [Amazon Cognito](https://aws.amazon.com/cognito/) user pool to provide a user directory.

@@ -141,7 +141,7 @@ Third party tools like [kubecost](https://kubecost.com/) can also be deployed on
 
 Deploying kubecost using Helm 3:
 
-```
+```console
 $ curl -sSL https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 $ helm version --short
 v3.2.1+gfe51cd1

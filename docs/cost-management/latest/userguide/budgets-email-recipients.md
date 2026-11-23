@@ -20,6 +20,18 @@ If the recipient address is already verified for the same AWS account through an
 
 Every email address is verified in an AWS account. If the same email address is a recipient on multiple budgets in the same account, one verification covers every budget. If the same email address is used across budgets in different AWS accounts (for example, a central FinOps address subscribed in linked accounts across an organization), each account requires its own verification, and the recipient must sign in to each account to complete verification. For scenarios where a single verification for many recipients is preferred, add an email distribution list as the recipient and manage list membership separately.
 
+## Required permissions
+<a name="budgets-email-recipients-permissions"></a>
+
+Email verification calls the AWS User Notifications contacts API. Your IAM policies and service control policies (SCPs) must allow the following actions:
++ `notifications-contacts:CreateEmailContact`
++ `notifications-contacts:SendActivationCode`
++ `notifications-contacts:ListEmailContacts`
++ `notifications-contacts:ActivateEmailContact`
+
+**Important**
+If an IAM policy or SCP denies any of these actions, the recipient address stays in Pending status and does not receive budget notifications. Ask your AWS Organizations administrator to allow these actions. Then choose **Resend verification** on the budget.
+
 ## Verification status
 <a name="budgets-email-recipients-status"></a>
 
@@ -67,6 +79,9 @@ Verified recipients begin receiving budget notifications on the next scheduled e
 
 **The recipient did not receive the verification email**
 Ask the recipient to check the spam folder. Verification emails come from an `@aws.com` sender address. If your organization uses an email allow list, add the `@aws.com` domain. If the email is not there, verify the address is correct in the AWS Budgets console. Choose **Resend verification** to try again. Verification emails are subject to a short cooldown between sends to protect email deliverability.
+
+**The recipient's status stays Pending**
+An IAM policy or SCP in your account might deny the actions that email verification requires. Ask your AWS Organizations administrator to allow the actions listed in [Required permissions](#budgets-email-recipients-permissions). Then choose **Resend verification**.
 
 **The verification link has expired**
 Verification links expire 12 hours after send. Choose **Resend verification** to send a new link.

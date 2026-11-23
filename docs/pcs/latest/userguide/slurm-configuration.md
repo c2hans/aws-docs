@@ -17,7 +17,7 @@ Slurm caches the files that it fetches on the node, and creates a symbolic link 
 
 To review the configuration that a node runs with, use the following command on the node.
 
-```
+```sh
 scontrol show config
 ```
 

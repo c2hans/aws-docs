@@ -83,14 +83,14 @@ When using functions such as DATE\_TRUNC, EXTRACT, DATEDIFF, TO\_CHAR, CONVERT\_
 
 For example, the following query allows predicate pushdown because the datepart argument is a constant:
 
-```
+```sql
 SELECT * FROM rls_protected_table
 WHERE DATE_TRUNC('month', event_date) = '2024-01-01';
 ```
 
 The following query prevents predicate pushdown because the datepart argument is a column reference:
 
-```
+```sql
 SELECT * FROM rls_protected_table
 WHERE DATE_TRUNC(datepart_col, event_date) = '2024-01-01';
 ```

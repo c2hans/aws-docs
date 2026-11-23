@@ -20,7 +20,7 @@ The following code samples show how to enable the option to include item metadat
 
 If you have an Items dataset and want the option to include metadata when you get recommendations, set `enableMetadataWithRecommendations` to `true` in the `recommender-config`.
 
-```
+```cmd
 aws personalize create-recommender \
 --name {{recommender name}} \
 --dataset-group-arn {{dataset group}} \
@@ -33,7 +33,7 @@ aws personalize create-recommender \
 
 If you have an Items dataset and want the option to include metadata when you get recommendations, set `enableMetadataWithRecommendations` to `true` in the `recommender-config`.
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')

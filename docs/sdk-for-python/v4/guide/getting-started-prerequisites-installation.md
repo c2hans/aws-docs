@@ -14,20 +14,20 @@ Before you begin:
 
 Confirm that Python and **pip** are available:
 
-```
+```bash
 python --version
 python -m pip --version
 ```
 
 Create a virtual environment to keep this project's packages separate from other Python projects:
 
-```
+```bash
 python -m venv .venv
 ```
 
 Activate the virtual environment on macOS or Linux:
 
-```
+```bash
 source .venv/bin/activate
 ```
 
@@ -39,7 +39,7 @@ On Windows, activate it with the following command instead:
 
 Then update **pip**:
 
-```
+```bash
 python -m pip install --upgrade pip
 ```
 
@@ -47,13 +47,13 @@ The preceding steps are the standard setup for most SDK projects. The packages t
 
 The SDK publishes a separate package for each AWS service client. Each package includes the synchronous and asynchronous clients for its service. Install the Amazon DynamoDB and Amazon Transcribe client packages:
 
-```
+```bash
 python -m pip install aws-sdk-dynamodb aws-sdk-transcribe-streaming
 ```
 
 Alternatively, install the same clients as optional dependencies of the `aws-sdk-python` meta-package:
 
-```
+```bash
 python -m pip install "aws-sdk-python[dynamodb, transcribe_streaming]"
 ```
 

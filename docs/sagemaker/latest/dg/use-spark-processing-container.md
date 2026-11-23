@@ -14,7 +14,7 @@ A code repository that contains the source code and Dockerfiles for the Spark im
 
  The following code example shows how to run a processing job that invokes your PySpark script `preprocess.py`.
 
-```
+```python
 from sagemaker.core.spark.processing import PySparkProcessor
 
 spark_processor = PySparkProcessor(

@@ -27,7 +27,7 @@ Node.js 12.0.0 and later use a minimum version of OpenSSL 1.1.1b, which supports
 
 To get the version of OpenSSL used by Node.js on your computer, run the following command.
 
-```
+```sh
 node -p process.versions
 ```
 
@@ -39,7 +39,7 @@ openssl: '1.1.1b'
 
 To get the version of TLS used by Node.js on your computer, start the Node shell and run the following commands, in order.
 
-```
+```javascript
 > var tls = require("tls");
 > var tlsSocket = new tls.TLSSocket();
 > tlsSocket.getProtocol();
@@ -58,7 +58,7 @@ Node.js defaults to use this version of TLS, and tries to negotiate another vers
 
 Developers can check the minimum and maximum supported TLS versions in Node.js using the following script:
 
-```
+```javascript
 var tls = require("tls");
 console.log("Supported TLS versions:", tls.DEFAULT_MIN_VERSION + " to " + tls.DEFAULT_MAX_VERSION);
 ```
@@ -76,7 +76,7 @@ Node.js negotiates a version of TLS when a call fails. You can enforce the minim
 
 To specify the minimum TLS version from the command line, you must use Node.js version 11.4.0 or later. To install a specific Node.js version, first install Node Version Manager (nvm) using the steps found at [Node Version Manager Installing and Updating](https://github.com/nvm-sh/nvm#installing-and-updating). Then run the following commands to install and use a specific version of Node.js.
 
-```
+```sh
 nvm install 11
 nvm use 11
 ```
@@ -86,13 +86,13 @@ nvm use 11
 
 To enforce that TLS 1.2 is the minimum allowable version, specify the `--tls-min-v1.2` argument when running your script, as shown in the following example.
 
-```
+```sh
 node --tls-min-v1.2 {{yourScript}}.js
 ```
 
 To specify the minimum allowable TLS version for a specific request in your JavaScript code, use the `httpOptions` parameter to specify the protocol, as shown in the following example.
 
-```
+```javascript
 const https = require("https");
 const {NodeHttpHandler} = require("@aws-sdk/node-http-handler");
 const {DynamoDBClient} = require("@aws-sdk/client-dynamodb");
@@ -114,13 +114,13 @@ const client = new DynamoDBClient({
 
 To enforce that TLS 1.3 is the minimum allowable version, specify the `--tls-min-v1.3` argument when running your script, as shown in the following example.
 
-```
+```sh
 node --tls-min-v1.3 {{yourScript}}.js
 ```
 
 To specify the minimum allowable TLS version for a specific request in your JavaScript code, use the `httpOptions` parameter to specify the protocol, as shown in the following example.
 
-```
+```javascript
 const https = require("https");
 const {NodeHttpHandler} = require("@aws-sdk/node-http-handler");
 const {DynamoDBClient} = require("@aws-sdk/client-dynamodb");

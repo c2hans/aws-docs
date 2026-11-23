@@ -19,7 +19,7 @@ If you used the bulk data on the previous page, try searching for *rebel* instea
 
 You should see a response similar to the following:
 
-```
+```json
 {
   "took" : 5,
   "timed_out" : false,

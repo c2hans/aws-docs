@@ -46,7 +46,7 @@ For Windows operating systems, format the value of the `uri` parameter as follow
 1. You can check the status of this download with the `snowballEdge describe-device-software` command. While an update is downloading, you display the status using this command.
 **Example output of `describe-device-software` command**
 
-   ```
+   ```bash,sh,zsh
    Install State: Downloading
    ```
 
@@ -56,14 +56,14 @@ For Windows operating systems, format the value of the `uri` parameter as follow
 
 1. When all of the devices in the cluster are unlocked, for each device in the cluster, run the `check-for-updates` command. This command returns the latest available version of the Snowball Edge software, and also the current version installed on the device.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge check-for-updates --unlock-code {{29-character-unlock-code}} --manifest-file {{path/to/manifest/file.bin}} --endpoint https://{{ip-address-of-snow-device}}
    ```
 **Note**
 The unlock code and manifest file are the same for all devices in the cluster.
 **Example of `check-for-updates` command**
 
-   ```
+   ```JSON
    {
    "InstalledVersion" : "118",
    "LatestVersion" : "119"
@@ -74,7 +74,7 @@ The unlock code and manifest file are the same for all devices in the cluster.
 
 1. For each device in the cluster, use the `download-updates` command to download the update.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge download-updates --uri {{file:///tmp/local-update}}
    ```
 **Note**
@@ -86,12 +86,12 @@ For Windows operating systems, format the value of the `uri` parameter as follow
 
 1. To check the status of this download for each device in the cluster, use the `describe-device-software` command.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge describe-device-software --unlock-code {{29-character-unlock-code}} --manifest-file {{path/to/manifest/file.bin}} --endpoint https://{{ip-address-of-snow-device}}
    ```
 **Example of output of the `describe-device-software` command**
 
-   ```
+   ```JSON
    {
    "InstalledVersion" : "118",
    "InstallingVersion" : "119",

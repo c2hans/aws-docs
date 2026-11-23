@@ -58,7 +58,7 @@ You can use the IDE to work with a set of files in the next several sections in 
 
 Next, copy the following text into the `Untitled1` editor tab.
 
-```
+```text
 fish.txt
 --------
 A fish is any member of a group of organisms that consist of
@@ -73,7 +73,7 @@ To save the file, choose **File**, **Save**. Name the file `fish.txt`, and then 
 
 Repeat these instructions, saving the second file as `cat.txt`, with the following contents.
 
-```
+```text
 cat.txt
 -------
 The domestic cat is a small, typically furry, carnivorous mammal.
@@ -200,7 +200,7 @@ To show or hide the **Outline** window and the **Outline** button, choose **Wind
 
 To see how the **Outline** window works, create a file named `hello.rb`. Copy the following code into the file and save it.
 
-```
+```rb
 def say_hello(i)
   puts "Hello!"
   puts "i is #{i}"
@@ -259,7 +259,7 @@ The **Immediate** tab enables you to test small snippets of JavaScript code. To 
 
 1. Run some code in the **Immediate** tab. To try this, type the following code into the window, pressing `Shift-Enter` after typing line 1 and again after line 2. Press `Enter` after line 3. (If you press `Enter` instead of `Shift-Enter` after you type line 1 or line 2, the code will run earlier than you want it to.)
 
-   ```
+   ```js
    for (i = 0; i <= 10; i++) { // Press Shift-Enter after typing this line.
      console.log(i)            // Press Shift-Enter after typing this line.
    }                           // Press Enter after typing this line. The numbers 0 to 10 will be printed.
@@ -326,14 +326,14 @@ For this tutorial, you can experiment with the **Debugger** window and some Java
 
       For Amazon Linux:
 
-      ```
+      ```sh
       sudo yum -y update
       curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
       ```
 
       For Ubuntu Server:
 
-      ```
+      ```sh
       sudo apt update
       curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
       ```
@@ -346,14 +346,14 @@ For this tutorial, you can experiment with the **Debugger** window and some Java
 
       For Amazon Linux:
 
-      ```
+      ```sh
       export NVM_DIR="/home/ec2-user/.nvm"
       [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm.
       ```
 
       For Ubuntu Server:
 
-      ```
+      ```sh
       export NVM_DIR="/home/ubuntu/.nvm"
       [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm.
       ```
@@ -362,13 +362,13 @@ For this tutorial, you can experiment with the **Debugger** window and some Java
 
    1. Close that terminal session and start a new one. Then run the following command to install the latest version of Node.js.
 
-      ```
+      ```sh
       nvm install node
       ```
 
 1. Write some JavaScript code to debug. For example, create a file, add the following code to the file, and save it as `hello.js`.
 
-   ```
+   ```js
    var i;
 
    i = 10;

@@ -52,7 +52,7 @@ If the instance is in a Region, the **Snapshot destination** does not appear. Th
 **To create multi-volume snapshots**
 Use the [ create-snapshots](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-snapshots.html) command.
 
-```
+```bash
 aws ec2 create-snapshots \
     --instance-specification InstanceId={{i-1234567890abcdef0}} \
     --description "from a multi-volume snapshot of i-1234567890abcdef0"
@@ -76,7 +76,7 @@ ExcludeDataVolumeIds={{vol-01234567890abcdef}}
 **To create multi-volume snapshots**
 Use the [New-EC2SnapshotBatch](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2SnapshotBatch.html) cmdlet.
 
-```
+```powershell
 New-EC2SnapshotBatch `
     -InstanceSpecification_InstanceId {{i-1234567890abcdef0}} `
     -Description "from a multi-volume snapshot of i-1234567890abcdef0"
@@ -84,13 +84,13 @@ New-EC2SnapshotBatch `
 
 To exclude the root volume, add the following parameter.
 
-```
+```powershell
 -InstanceSpecification_ExcludeBootVolume $true
 ```
 
 To exclude data volumes, add the following parameter.
 
-```
+```powershell
 -InstanceSpecification_ExcludeDataVolumes "{{vol-01234567890abcdef}}"
 ```
 

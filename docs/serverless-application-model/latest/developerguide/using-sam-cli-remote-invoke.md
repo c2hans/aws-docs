@@ -665,7 +665,7 @@ lambda-streaming-nodejs-app
 
 The following is an example of our Lambda function code:
 
-```
+```javascript
 exports.handler = awslambda.streamifyResponse(
 	  async (event, responseStream, context) => {
 	    const httpResponseMetadata = {
@@ -703,7 +703,7 @@ exports.handler = awslambda.streamifyResponse(
 
 The following is an example of our `template.yaml` file. Response streaming for our Lambda function is configured using the `FunctionUrlConfig` property.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 	Transform: AWS::Serverless-2016-10-31
 

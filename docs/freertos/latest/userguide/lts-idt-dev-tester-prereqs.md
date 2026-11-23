@@ -89,7 +89,7 @@ The following steps are to create and configure your AWS account.
 
 ****
 
-         ```
+         ```json
          {
              "Version":"2012-10-17",
              "Statement": [

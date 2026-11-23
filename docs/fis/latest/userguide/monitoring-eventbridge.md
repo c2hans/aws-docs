@@ -12,7 +12,7 @@ For more information about EventBridge, see [Getting started with Amazon EventBr
 
 The following is the syntax of an experiment state change event:
 
-```
+```json
 {
     "version": "0",
     "id": "{{12345678-1234-1234-1234-123456789012}}",

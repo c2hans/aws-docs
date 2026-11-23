@@ -16,7 +16,7 @@ The AWS SDK for Swift provides functions that create presigned URLs or requests 
 
 For example, to create a presigned request for the Amazon S3 action `GetObject`:
 
-```
+```swift
         let getInput = GetObjectInput(
             bucket: bucket,
             key: key
@@ -42,7 +42,7 @@ The SDK's input structs used to pass options into presignable operations have tw
 
 In this example, the `[AsyncHTTPClient](https://github.com/swift-server/async-http-client)` package from Apple's `swift-server` project is used to create an `HTTPClientRequest`, which in turn is used to send the file to Amazon S3. A custom configuration is created that lets the SDK make up to six attempts to send an object to Amazon S3:
 
-```
+```swift
         let fileData = try Data(contentsOf: fileURL)
         let dataStream = ByteStream.data(fileData)
         let presignedURL: URL

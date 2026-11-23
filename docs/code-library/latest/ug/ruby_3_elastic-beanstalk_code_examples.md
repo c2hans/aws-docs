@@ -26,7 +26,7 @@ The following code example shows how to use `DescribeApplications`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/elasticbeanstalk#code-examples).
 
-```
+```ruby
 # Class to manage Elastic Beanstalk applications
 class ElasticBeanstalkManager
   def initialize(eb_client, logger: Logger.new($stdout))
@@ -74,7 +74,7 @@ The following code example shows how to use `ListAvailableSolutionStacks`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/elasticbeanstalk#code-examples).
 
-```
+```ruby
 # Manages listing of AWS Elastic Beanstalk solution stacks
 # @param [Aws::ElasticBeanstalk::Client] eb_client
 # @param [String] filter - Returns subset of results based on match
@@ -127,7 +127,7 @@ The following code example shows how to use `UpdateApplication`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/elasticbeanstalk#code-examples).
 
-```
+```ruby
 # Manages deployment of Rails applications to AWS Elastic Beanstalk
 class RailsAppDeployer
   def initialize(eb_client, s3_client, app_name, logger: Logger.new($stdout))

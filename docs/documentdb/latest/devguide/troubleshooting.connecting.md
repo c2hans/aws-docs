@@ -65,7 +65,7 @@ aws docdb describe-db-clusters \
 
 Output from this operation looks something like the following.
 
-```
+```json
 [
     "sample-cluster.node.us-east-1.docdb.amazonaws.com"
 ]
@@ -80,7 +80,7 @@ To verify the Region of your EC2 instance, run the following command.
 
 Output from this operation looks something like the following.
 
-```
+```json
 [
     [
         "us-east-1a"

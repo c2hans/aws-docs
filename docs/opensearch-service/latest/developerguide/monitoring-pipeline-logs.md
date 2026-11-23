@@ -20,7 +20,7 @@ You need the following CloudWatch Logs permissions in order to create and update
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

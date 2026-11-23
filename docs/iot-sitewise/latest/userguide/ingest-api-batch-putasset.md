@@ -19,13 +19,13 @@ To identify an asset property, specify one of the following:
 
 The following example demonstrates how to send a wind turbine's temperature and rotations per minute (RPM) readings from a payload stored in a JSON file.
 
-```
+```bash
 aws iotsitewise batch-put-asset-property-value --cli-input-json file://batch-put-payload.json
 ```
 
 The example payload in `batch-put-payload.json` has the following content.
 
-```
+```json
 {
   "enablePartialEntryProcessing": true,
   "entries": [

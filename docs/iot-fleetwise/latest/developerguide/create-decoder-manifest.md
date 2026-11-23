@@ -102,7 +102,7 @@ To create a decoder manifest, run the following command.
 
 Replace {{decoder-manifest-configuration}} with the name of the .json file that contains the configuration.
 
-```
+```bash
 aws iotfleetwise create-decoder-manifest --cli-input-json file://{{decoder-manifest-configuration}}.json
 ```
 
@@ -114,7 +114,7 @@ aws iotfleetwise create-decoder-manifest --cli-input-json file://{{decoder-manif
 
 For more information about how to configure branches, attributes, sensors, and actuators, see [Configure AWS IoT FleetWise network interfaces and decoder signals](configure-network-interfaces-decoder-signals.md).
 
-```
+```json
 {
     "name": "{{decoder-manifest-name}}",
     "modelManifestArn": "{{vehicle-model-arn}}",
@@ -173,7 +173,7 @@ For more information about how to configure branches, attributes, sensors, and a
 
 The order of property nodes within a structure (struct) must remain consistent as defined in the signal catalog and vehicle model (model manifest). For more information about how to configure branches, attributes, sensors, and actuators, see [Configure AWS IoT FleetWise network interfaces and decoder signals](configure-network-interfaces-decoder-signals.md).
 
-```
+```json
 {
 	"name": "{{decoder-manifest-name}}",
 	"modelManifestArn": "{{vehicle-model-arn}}",
@@ -316,7 +316,7 @@ The order of property nodes within a structure (struct) must remain consistent a
 
 For more information about how to configure branches, attributes, sensors, and actuators, see [Configure AWS IoT FleetWise network interfaces and decoder signals](configure-network-interfaces-decoder-signals.md).
 
-```
+```json
 {
 	"name": "{{decoder-manifest-name}}",
 	"modelManifestArn": "{{vehicle-model-arn}}",
@@ -366,7 +366,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -9,7 +9,7 @@ In the following sample agent event stream, the agent is assigned to a routing p
 **Note**
 For how many chats and tasks an agent can take concurrently, see [Connect Customer service quotas](amazon-connect-service-limits.md).
 
-```
+```json
 {
     "AWSAccountId": "012345678901",
     "AgentARN": "arn:aws:connect:us-west-2:012345678901:instance/aaaaaaaa-bbbb-cccc-dddd-111111111111/agent/agent-ARN",

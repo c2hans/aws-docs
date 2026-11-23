@@ -27,7 +27,7 @@ Node recovery restores the node, but your training run must be told to retry. Ra
 
 Be liberal with retries. Hardware faults are routine at cluster scale, and a retry resumes from your latest checkpoint rather than starting over. The following example uses 20, a deliberately high value.
 
-```
+```python
 from ray.train import FailureConfig, RunConfig, ScalingConfig
 from ray.train.torch import TorchTrainer
 

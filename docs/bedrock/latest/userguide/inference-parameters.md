@@ -46,7 +46,7 @@ The following table summarizes the effects of these parameters.
 
 As an example to understand these parameters, consider the example prompt **I hear the hoof beats of "**. Let's say that the model determines the following three words to be candidates for the next token. The model also assigns a probability for each word.
 
-```
+```json
 {
     "horses": 0.7,
     "zebras": 0.2,

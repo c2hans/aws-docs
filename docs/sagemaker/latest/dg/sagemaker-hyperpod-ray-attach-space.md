@@ -48,7 +48,7 @@ Replace the following values in both commands:
 
 Leave `ray-integration` and `jupyter-k8s-system` as they are. They identify the integration template the add-on installs.
 
-```
+```bash
 kubectl patch workspace {{my-workspace}} -n {{my-namespace}} --type=merge -p '{
   "spec": {
     "integrationTemplateRefs": [
@@ -66,7 +66,7 @@ kubectl patch workspace {{my-workspace}} -n {{my-namespace}} --type=merge -p '{
 
 To detach the space from its cluster, clear the integration references.
 
-```
+```bash
 kubectl patch workspace {{my-workspace}} -n {{my-namespace}} --type=merge -p '{"spec":{"integrationTemplateRefs":[]}}'
 ```
 

@@ -41,6 +41,7 @@ HTTP/1.1 200
    <NumberOfCaCertificates>integer</NumberOfCaCertificates>
    <Reason>string</Reason>
    <Status>string</Status>
+   <UseClientCertificateOCSPEndpoint>boolean</UseClientCertificateOCSPEndpoint>
 </TrustStore>
 ```
 
@@ -83,6 +84,10 @@ Type: String
 The trust store's status.
 Type: String
 Valid Values: `pending | active | failed`
+
+ ** [UseClientCertificateOCSPEndpoint](#API_GetTrustStore_ResponseSyntax) **   <a name="cloudfront-GetTrustStore-response-UseClientCertificateOCSPEndpoint"></a>
+A boolean. When true, performs real-time certificate revocation checks by querying the OCSP endpoint specified within the client certificate.
+Type: Boolean
 
 ## Errors
 <a name="API_GetTrustStore_Errors"></a>

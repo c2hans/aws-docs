@@ -75,7 +75,7 @@ The Python code in this example performs the following actions:
 
 Save the code to a file (example.py) and run it.
 
-```
+```python
 """Getting Started Example for Python 2.7+/3.3+"""
 from boto3 import Session
 from botocore.exceptions import BotoCoreError, ClientError

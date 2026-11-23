@@ -9,7 +9,7 @@ AWS IoT Greengrass stream manager allows you to send data to the following AWS C
 **Example : Data stream message structure**
 The following example shows the required data stream message structure transmitted by the AWS IoT Greengrass stream manager.
 
-```
+```json
 {
    "assetId": "string",
    "propertyAlias": "string",

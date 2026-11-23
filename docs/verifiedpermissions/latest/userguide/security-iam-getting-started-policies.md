@@ -47,7 +47,7 @@ Example IAM policy for permission to the CreatePolicy action:
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [

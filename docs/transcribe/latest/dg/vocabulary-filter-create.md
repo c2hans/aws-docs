@@ -85,7 +85,7 @@ The file *my-first-vocab-filter.json* contains the following request body.
 
 **Option 1**: You can include your list of words to your request using the `Words` parameter.
 
-```
+```json
 {
   "VocabularyFilterName": "{{my-first-vocabulary-filter}}",
   "LanguageCode": "{{en-US}}",
@@ -97,7 +97,7 @@ The file *my-first-vocab-filter.json* contains the following request body.
 
 **Option 2**: You can save your list of words as a text file and upload it to an Amazon S3 bucket, then include the file's URI in your request using the `VocabularyFilterFileUri` parameter.
 
-```
+```json
 {
   "VocabularyFilterName": "{{my-first-vocabulary-filter}}",
   "LanguageCode": "{{en-US}}",
@@ -117,7 +117,7 @@ For additional examples using the AWS SDKs, including feature-specific, scenario
 
 **Option 1**: You can include your list of words to your request using the `Words` parameter.
 
-```
+```python
 from __future__ import print_function
 import time
 import boto3
@@ -134,7 +134,7 @@ response = transcribe.create_vocabulary_filter(
 
 **Option 2**: You can save your list of words as a text file and upload it to an Amazon S3 bucket, then include the file's URI in your request using the `VocabularyFilterFileUri` parameter.
 
-```
+```python
 from __future__ import print_function
 import time
 import boto3

@@ -14,7 +14,7 @@ The following code examples show how to use `RunJobFlow`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/emr#code-examples).
 
-```
+```python
 def run_job_flow(
     name,
     log_uri,
@@ -105,7 +105,7 @@ def run_job_flow(
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/emr#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create instances configuration
         DATA(lo_instances) = NEW /aws1/cl_emrjobflowinstsconfig(

@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 
 ![Lifecycle data with data processing sub-phases included.](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/images/ml-lifecycle-phases.png)
 
+*Figure 3: Lifecycle data with data processing sub-phases included*
+
  Figure 4 illustrates the details of the ML lifecycle phases that occur following the problem framing phase and shows how the data-processing sub-phases interact with the subsequent phases, that is, the *model development phase*, the *model deployment phase*, and the *model monitoring phase*.
 
  The model development phase includes training, tuning, and evaluation. The model deployment phase includes the staging environment for model validation for security and robustness. Monitoring is key in timely detection and mitigation of drifts. Feedback loops across the ML lifecycle phases are key enablers for monitoring. Feature stores (both online and offline) provide consistent and reusable features across model development and deployment phases. The model registry enables the version control and lineage tracking for model and data components. This figure also emphasizes the lineage tracking and its components that are discussed in this section in more detail.
@@ -19,6 +21,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 +  Architecture diagram components are color-coded for ease of communication across this document.
 
 ![ML lifecycle with detailed phases and extended components](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/images/ml-lifecycle-phases-and-expanded-components.png)
+
+*Figure 4: ML lifecycle with detailed phases and extended components*
 
  The components of the sub-phases of the ML lifecycle shown in Figure 4 are as follows:
 +  **Online/offline feature store:** Reduces duplication and the need to rerun feature engineering code across teams and projects. An online store with low-latency retrieval capabilities is ideal for real-time inference. On the other hand, an offline store is designed for maintaining a history of feature values and is suited for training and batch scoring.
@@ -40,6 +44,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
  Figure 5 includes machine learning components and their information that the lineage tracker collects across different releases. The collected information enables going back to a specific point-in-time release and re-creating it.
 
 ![Lineage tracker diagram](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/images/lineage-tracker.png)
+
+*Figure 5: Lineage tracker*
 
  Lineage tracker components include:
 +  **Infrastructure as code (IaC):** Modeling, provisioning, and managing cloud computing resources (compute, storage, network, and application services) can be automated using infrastructure as code. Cloud computing takes advantage of virtualization to enable the on-demand provisioning of resources. IaC avoids configuration drift through automation, while increasing the speed and agility of infrastructure deployments. IaC code changes are committed to version-controlled repository.

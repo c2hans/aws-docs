@@ -9,7 +9,7 @@ There are several ways to detect features. You can write your own feature detect
 **Test for Feature Support**
 The following code detects support for the HTML5 canvas element by testing one of the element's attributes (`getContext`). The attribute test is important because browsers can create elements that they don't actually support. If we can interact with an attribute, that gives us more information.
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <body>

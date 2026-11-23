@@ -20,6 +20,7 @@ After adding Availability Zones, you must update your transit gateway route tabl
    ],
    "FirewallArn": "{{string}}",
    "FirewallName": "{{string}}",
+   "FirewallType": "{{string}}",
    "UpdateToken": "{{string}}"
 }
 ```
@@ -50,6 +51,15 @@ You must specify the ARN or the name, and you can specify both.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `^[a-zA-Z0-9-]+$`
+Required: No
+
+ ** [FirewallType](#API_AssociateAvailabilityZones_RequestSyntax) **   <a name="networkfirewall-AssociateAvailabilityZones-request-FirewallType"></a>
+The type of firewall that the request targets. Network Firewall supports the following firewall types:
++  `IGW_FIREWALL` - An internet gateway firewall, which AWS Network Security Manager creates and manages for a VPC.
++  `FIREWALL` - A standard Network Firewall firewall.
+If you specify the firewall ARN, the type must match the resource type in the ARN. If you specify only the firewall name, Network Firewall uses this value to identify the firewall. If you don't specify a type, the default is `FIREWALL`.
+Type: String
+Valid Values: `FIREWALL | IGW_FIREWALL`
 Required: No
 
  ** [UpdateToken](#API_AssociateAvailabilityZones_RequestSyntax) **   <a name="networkfirewall-AssociateAvailabilityZones-request-UpdateToken"></a>

@@ -45,7 +45,7 @@ For more information, see [Processing Documents Asynchronously](https://docs.aws
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/textract#code-examples).
 Start an asynchronous job to detect text in a document.
 
-```
+```python
 class TextractWrapper:
     """Encapsulates Textract functions."""
 
@@ -105,7 +105,7 @@ class TextractWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tex#code-examples).
 
-```
+```sap-abap
     "Starts the asynchronous detection of text in a document."
     "Amazon Textract can detect lines of text and the words that make up a line of text."
 

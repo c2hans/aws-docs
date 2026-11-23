@@ -18,7 +18,7 @@ An application inference profile is a resource that references a specific Amazon
 
 The following example shows how to use an application inference profile ARN instead of a model ID when calling the Converse API:
 
-```
+```python
 import boto3
 
 client = boto3.client("bedrock-runtime")

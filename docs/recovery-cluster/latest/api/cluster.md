@@ -92,7 +92,7 @@ Create a new cluster. A cluster is a set of redundant Regional endpoints against
 #### POST schema
 <a name="cluster-request-body-post-example"></a>
 
-```
+```json
 {
   "UseRoute53GammaHealthChecks": boolean,
   "NetworkType": enum,
@@ -106,7 +106,7 @@ Create a new cluster. A cluster is a set of redundant Regional endpoints against
 #### PUT schema
 <a name="cluster-request-body-put-example"></a>
 
-```
+```json
 {
   "ClusterArn": "string",
   "NetworkType": enum
@@ -119,7 +119,7 @@ Create a new cluster. A cluster is a set of redundant Regional endpoints against
 #### ListClustersResponse schema
 <a name="cluster-response-body-listclustersresponse-example"></a>
 
-```
+```json
 {
   "NextToken": "string",
   "Clusters": [
@@ -143,7 +143,7 @@ Create a new cluster. A cluster is a set of redundant Regional endpoints against
 #### CreateClusterResponse schema
 <a name="cluster-response-body-createclusterresponse-example"></a>
 
-```
+```json
 {
   "Cluster": {
     "ClusterArn": "string",
@@ -164,7 +164,7 @@ Create a new cluster. A cluster is a set of redundant Regional endpoints against
 #### UpdateClusterResponse schema
 <a name="cluster-response-body-updateclusterresponse-example"></a>
 
-```
+```json
 {
   "Cluster": {
     "ClusterArn": "string",
@@ -185,7 +185,7 @@ Create a new cluster. A cluster is a set of redundant Regional endpoints against
 #### ValidationException schema
 <a name="cluster-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -194,7 +194,7 @@ Create a new cluster. A cluster is a set of redundant Regional endpoints against
 #### ServiceQuotaExceededException schema
 <a name="cluster-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -203,7 +203,7 @@ Create a new cluster. A cluster is a set of redundant Regional endpoints against
 #### AccessDeniedException schema
 <a name="cluster-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -212,7 +212,7 @@ Create a new cluster. A cluster is a set of redundant Regional endpoints against
 #### ResourceNotFoundException schema
 <a name="cluster-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -221,7 +221,7 @@ Create a new cluster. A cluster is a set of redundant Regional endpoints against
 #### ConflictException schema
 <a name="cluster-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -230,7 +230,7 @@ Create a new cluster. A cluster is a set of redundant Regional endpoints against
 #### ThrottlingException schema
 <a name="cluster-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -239,7 +239,7 @@ Create a new cluster. A cluster is a set of redundant Regional endpoints against
 #### InternalServerException schema
 <a name="cluster-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

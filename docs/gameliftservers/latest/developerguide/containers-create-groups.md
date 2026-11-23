@@ -106,7 +106,7 @@ When you create a container group definition, you also define the containers for
 
 1. Create and open a new `.JSON` file. For example:
 
-   ```
+   ```zsh
    [~/work/glc]$ vim SimpleServer.json
    ```
 
@@ -120,7 +120,7 @@ When you create a container group definition, you also define the containers for
 **Example**
 This example describes the essential container for your game server container group. The essential replica container includes your game server application, the Amazon GameLift Servers Agent, and can include other supporting software for your game hosting. The definition must include a name, image URI, and a port configuration. This example also sets some container-specific resource limits.
 
-```
+```JSON
   {
     "ContainerName": "MyAdventureGameServer",
     "ImageUri": "111122223333.dkr.ecr.us-east-1.amazonaws.com/gl-containers:myadventuregame-server",

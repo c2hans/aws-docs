@@ -64,7 +64,7 @@ An event represents a single request from any source and includes information ab
 **Example 1: `DeleteDocument`**
 The following example shows a CloudTrail event that demonstrates the `DeleteDocument` operation on a document named `example-Document` in the US East (Ohio) Region (us-east-2).
 
-```
+```json
 {
     "eventVersion": "1.04",
     "userIdentity": {
@@ -114,7 +114,7 @@ The following example shows a CloudTrail event that demonstrates the `DeleteDocu
 **Example 2: `StartConnection`**
 The following example shows a CloudTrail event for a user who starts an RDP connection using Fleet Manager in the US East (Ohio) Region (us-east-2). The underlying API action is `StartConnection`.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -172,7 +172,7 @@ The following example shows a CloudTrail event for a user who starts an RDP conn
 **Example 1: `CreateControlChannel`**
 The following example shows a CloudTrail event that demonstrates the `CreateControlChannel` operation.
 
-```
+```JSON
 {
   "eventVersion":"1.08",
   "userIdentity":{
@@ -232,7 +232,7 @@ The following example shows a CloudTrail event that demonstrates the `CreateCont
 **Example 2: `RequestManagedInstanceRoleToken`**
 The following example shows a CloudTrail event that demonstrates the `RequestManagedInstanceRoleToken` operation.
 
-```
+```JSON
 {
     "eventVersion": "1.08",
     "userIdentity": {

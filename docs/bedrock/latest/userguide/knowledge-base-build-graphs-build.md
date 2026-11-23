@@ -77,7 +77,7 @@ Once your knowledge base is ready and available, sync your data source for the f
 
    The following code shows the contents of the `input.json` file.
 
-   ```
+   ```json
    {
        "dataSourceConfiguration": {
            "s3Configuration": {
@@ -117,7 +117,7 @@ Some models are supported only through cross-Region inference profiles. When you
 
    The following shows the contents of the `input.json` file.
 
-   ```
+   ```json
    {
        "storageConfiguration": {
            "type": "NEPTUNE_ANALYTICS"

@@ -10,9 +10,9 @@ An expression that defines a basic building block of conditional enablement.
 <a name="API_EvaluationFormItemEnablementExpression_Contents"></a>
 
  ** Comparator **   <a name="connect-Type-EvaluationFormItemEnablementExpression-Comparator"></a>
-A comparator to be used against list of values.
+A comparator to be used against a list of values. `IN`, `NOT_IN`, `ALL_IN`, and `EXACT` compare sets of values. `GREATER_THAN`, `LESS_THAN`, `GREATER_THAN_OR_EQUAL_TO`, and `LESS_THAN_OR_EQUAL_TO` compare a single numeric or date and time value. `EQUAL_TO` and `NOT_EQUAL_TO` compare a single value.
 Type: String
-Valid Values: `IN | NOT_IN | ALL_IN | EXACT`
+Valid Values: `IN | NOT_IN | ALL_IN | EXACT | GREATER_THAN | LESS_THAN | GREATER_THAN_OR_EQUAL_TO | LESS_THAN_OR_EQUAL_TO | EQUAL_TO | NOT_EQUAL_TO`
 Required: Yes
 
  ** Source **   <a name="connect-Type-EvaluationFormItemEnablementExpression-Source"></a>

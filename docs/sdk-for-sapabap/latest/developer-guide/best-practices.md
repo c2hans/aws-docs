@@ -26,7 +26,7 @@ The Amazon EC2 instance on which your SAP system runs has a set of authorization
 
 ****
 
-```
+```json
 {
  "Version":"2012-10-17",
  "Statement": [
@@ -93,7 +93,7 @@ The following are some examples of the most common SAP scenarios.
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -118,7 +118,7 @@ The following are some examples of the most common SAP scenarios.
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -145,7 +145,7 @@ The following are some examples of the most common SAP scenarios.
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

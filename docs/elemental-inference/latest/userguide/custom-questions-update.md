@@ -37,7 +37,7 @@ aws elemental-inference update-question-set \
 
 The response describes the updated `DRAFT`, with a new `sha256` value. The following example omits the question lists for brevity.
 
-```
+```json
 {
   "arn": "arn:aws:elemental-inference:us-west-2:111122223333:question-set/abcd1234efgh5678ijk",
   "id": "abcd1234efgh5678ijk",

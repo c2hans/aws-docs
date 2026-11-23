@@ -20,4 +20,4 @@ You can access your tax documents, such as 1099 forms, from AWS Partner Central.
 Tax documents are only available after you have completed sales transactions and the relevant tax reporting periods have ended. Forms are typically available for download during tax season.
 
 **Sellers in India**
-Sellers in India receive GST tax invoices and Seller Listing Fee tax invoices via email from AWS Marketplace Operations usually within 2 weeks of the transaction. For questions, contact [AWS Marketplace support](https://aws.amazon.com/marketplace/management/contact-us/).
+AWS Marketplace Operations emails GST tax invoices and Seller Listing Fee tax invoices to sellers in India, usually within 2 weeks of the transaction. For questions, contact the AWS Marketplace support team on the [AWS Partner Central and Marketplace Support page](https://us-east-1.console.aws.amazon.com/partnercentral/support?region=us-east-1) in the AWS Partner Central console.

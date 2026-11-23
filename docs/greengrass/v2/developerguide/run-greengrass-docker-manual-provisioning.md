@@ -36,13 +36,13 @@ Get the AWS IoT endpoints for your AWS account, and save them to use later. Your
 
 1. Get the AWS IoT data endpoint for your AWS account.
 
-   ```
+   ```bash
    aws iot describe-endpoint --endpoint-type iot:Data-ATS
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "endpointAddress": "{{device-data-prefix}}-ats.iot.us-west-2.amazonaws.com"
    }
@@ -50,13 +50,13 @@ Get the AWS IoT endpoints for your AWS account, and save them to use later. Your
 
 1. Get the AWS IoT credentials endpoint for your AWS account.
 
-   ```
+   ```bash
    aws iot describe-endpoint --endpoint-type iot:CredentialProvider
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "endpointAddress": "{{device-credentials-prefix}}.credentials.iot.us-west-2.amazonaws.com"
    }
@@ -76,13 +76,13 @@ In this section, you create an AWS IoT thing that represents your device.
 **Note**  <a name="install-argument-thing-name-constraint"></a>
 The thing name can't contain colon (`:`) characters.
 
-   ```
+   ```bash
    aws iot create-thing --thing-name {{MyGreengrassCore}}
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "thingName": "MyGreengrassCore",
      "thingArn": "arn:aws:iot:us-west-2:123456789012:thing/MyGreengrassCore",
@@ -97,13 +97,13 @@ The thing name can't contain colon (`:`) characters.
 **Note**  <a name="install-argument-thing-group-name-constraint"></a>
 The thing group name can't contain colon (`:`) characters.
 
-      ```
+      ```bash
       aws iot create-thing-group --thing-group-name {{MyGreengrassCoreGroup}}
       ```
 
       The response looks similar to the following example, if the request succeeds.
 
-      ```
+      ```json
       {
         "thingGroupName": "MyGreengrassCoreGroup",
         "thingGroupArn": "arn:aws:iot:us-west-2:123456789012:thinggroup/MyGreengrassCoreGroup",
@@ -115,7 +115,7 @@ The thing group name can't contain colon (`:`) characters.
       + Replace {{MyGreengrassCore}} with the name of your AWS IoT thing.
       + Replace {{MyGreengrassCoreGroup}} with the name of the thing group.
 
-      ```
+      ```bash
       aws iot add-thing-to-thing-group --thing-name {{MyGreengrassCore}} --thing-group-name {{MyGreengrassCoreGroup}}
       ```
 
@@ -132,19 +132,19 @@ The thing group name can't contain colon (`:`) characters.
 
 1. Create a folder where you download the certificates for the AWS IoT thing.
 
-   ```
+   ```bash
    mkdir greengrass-v2-certs
    ```
 
 1. Create and download the certificates for the AWS IoT thing.
 
-   ```
+   ```bash
    aws iot create-keys-and-certificate --set-as-active --certificate-pem-outfile greengrass-v2-certs/device.pem.crt --public-key-outfile greengrass-v2-certs/public.pem.key --private-key-outfile greengrass-v2-certs/private.pem.key
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "certificateArn": "arn:aws:iot:us-west-2:123456789012:cert/aa0b7958770878eabe251d8a7ddd547f4889c524c9b574ab9fbf65f32248b1d4",
      "certificateId": "aa0b7958770878eabe251d8a7ddd547f4889c524c9b574ab9fbf65f32248b1d4",
@@ -203,13 +203,13 @@ In this section, you create a token exchange IAM role and an AWS IoT role alias 
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano device-role-trust-policy.json
       ```
 
       Copy the following JSON into the file.
 
-      ```
+      ```json
       {
         "Version": "2012-10-17",
         "Statement": [
@@ -227,13 +227,13 @@ In this section, you create a token exchange IAM role and an AWS IoT role alias 
    1. Create the token exchange role with the trust policy document.
       + Replace {{GreengrassV2TokenExchangeRole}} with the name of the IAM role to create.
 
-      ```
+      ```bash
       aws iam create-role --role-name {{GreengrassV2TokenExchangeRole}} --assume-role-policy-document file://device-role-trust-policy.json
       ```
 
       The response looks similar to the following example, if the request succeeds.
 
-      ```
+      ```json
       {
         "Role": {
           "Path": "/",
@@ -260,13 +260,13 @@ In this section, you create a token exchange IAM role and an AWS IoT role alias 
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano device-role-access-policy.json
       ```
 
       Copy the following JSON into the file.
 
-      ```
+      ```json
       {
         "Version": "2012-10-17",
         "Statement": [
@@ -291,13 +291,13 @@ If you don't yet have an S3 bucket for component artifacts, you can add these pe
    1. Create the IAM policy from the policy document.
       + Replace {{GreengrassV2TokenExchangeRoleAccess}} with the name of the IAM policy to create.
 
-      ```
+      ```bash
       aws iam create-policy --policy-name {{GreengrassV2TokenExchangeRoleAccess}} --policy-document file://device-role-access-policy.json
       ```
 
       The response looks similar to the following example, if the request succeeds.
 
-      ```
+      ```json
       {
         "Policy": {
           "PolicyName": "GreengrassV2TokenExchangeRoleAccess",
@@ -318,7 +318,7 @@ If you don't yet have an S3 bucket for component artifacts, you can add these pe
       + Replace {{GreengrassV2TokenExchangeRole}} with the name of the IAM role.
       + Replace the policy ARN with the ARN of the IAM policy that you created in the previous step.
 
-      ```
+      ```bash
       aws iam attach-role-policy --role-name {{GreengrassV2TokenExchangeRole}} --policy-arn {{arn:aws:iam::123456789012:policy/GreengrassV2TokenExchangeRoleAccess}}
       ```
 
@@ -328,13 +328,13 @@ If you don't yet have an S3 bucket for component artifacts, you can add these pe
    + Replace {{GreengrassCoreTokenExchangeRoleAlias}} with the name of the role alias to create.
    + Replace the role ARN with the ARN of the IAM role that you created in the previous step.
 
-   ```
+   ```bash
    aws iot create-role-alias --role-alias {{GreengrassCoreTokenExchangeRoleAlias}} --role-arn {{arn:aws:iam::123456789012:role/GreengrassV2TokenExchangeRole}}
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "roleAlias": "GreengrassCoreTokenExchangeRoleAlias",
      "roleAliasArn": "arn:aws:iot:us-west-2:123456789012:rolealias/GreengrassCoreTokenExchangeRoleAlias"
@@ -349,14 +349,14 @@ To create a role alias, you must have permission to pass the token exchange IAM 
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano greengrass-v2-iot-role-alias-policy.json
       ```
 
       Copy the following JSON into the file.
       + Replace the resource ARN with the ARN of your role alias.
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -372,13 +372,13 @@ To create a role alias, you must have permission to pass the token exchange IAM 
    1. Create an AWS IoT policy from the policy document.
       + Replace {{GreengrassCoreTokenExchangeRoleAliasPolicy}} with the name of the AWS IoT policy to create.
 
-      ```
+      ```bash
       aws iot create-policy --policy-name {{GreengrassCoreTokenExchangeRoleAliasPolicy}} --policy-document file://greengrass-v2-iot-role-alias-policy.json
       ```
 
       The response looks similar to the following example, if the request succeeds.
 
-      ```
+      ```json
       {
         "policyName": "GreengrassCoreTokenExchangeRoleAliasPolicy",
         "policyArn": "arn:aws:iot:us-west-2:123456789012:policy/GreengrassCoreTokenExchangeRoleAliasPolicy",
@@ -400,7 +400,7 @@ To create a role alias, you must have permission to pass the token exchange IAM 
       + Replace {{GreengrassCoreTokenExchangeRoleAliasPolicy}} with the name of the role alias AWS IoT policy.
       + Replace the target ARN with the ARN of the certificate for your AWS IoT thing.
 
-      ```
+      ```bash
       aws iot attach-policy --policy-name {{GreengrassCoreTokenExchangeRoleAliasPolicy}} --target {{arn:aws:iot:us-west-2:123456789012:cert/aa0b7958770878eabe251d8a7ddd547f4889c524c9b574ab9fbf65f32248b1d4}}
       ```
 
@@ -418,21 +418,21 @@ Earlier, you downloaded your device's certificate to your development computer. 
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo curl -o ./greengrass-v2-certs/AmazonRootCA1.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```bash
    curl -o .\greengrass-v2-certs\AmazonRootCA1.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```bash
    iwr -Uri https://www.amazontrust.com/repository/AmazonRootCA1.pem -OutFile .\greengrass-v2-certs\AmazonRootCA1.pem
    ```
 
@@ -440,7 +440,7 @@ Earlier, you downloaded your device's certificate to your development computer. 
 
 1. If you plan to run the AWS IoT Greengrass Core software in Docker on a different device than your development computer, copy the certificates to the host computer. If SSH and SCP are enabled on the development computer and the host computer, you can use the `scp` command on your development computer to transfer the certificates. Replace {{device-ip-address}} with the IP address of your host computer.
 
-   ```
+   ```bash
    scp -r greengrass-v2-certs/ {{device-ip-address}}:~
    ```
 
@@ -449,7 +449,7 @@ Earlier, you downloaded your device's certificate to your development computer. 
 
 1. On the host computer, create a folder where you place your configuration file.
 
-   ```
+   ```bash
    mkdir ./greengrass-v2-config
    ```
 
@@ -457,13 +457,13 @@ Earlier, you downloaded your device's certificate to your development computer. 
 
    For example, you can run the following command to use GNU nano to create the `config.yaml`.
 
-   ```
+   ```bash
    nano ./greengrass-v2-config/config.yaml
    ```
 
 1. Copy the following YAML content into the file. This partial configuration file specifies system parameters and Greengrass nucleus parameters.
 
-   ```
+   ```yaml
    ---
    system:
      certificateFilePath: "{{/tmp/certs}}/device.pem.crt"
@@ -501,7 +501,7 @@ This tutorial uses an environment file to set the environment variables that wil
 
    For example, on a Linux-based system, you can run the following command to use GNU nano to create the `.env` in the current directory.
 
-   ```
+   ```bash
    nano .env
    ```
 
@@ -531,7 +531,7 @@ This tutorial shows you how to start the Docker image that you built in a Docker
 #### [ Docker ]
 + This tutorial shows you how to start the Docker image that you built in a the Docker container.
 
-  ```
+  ```bash
   docker run --rm --init -it --name {{docker-image}} \
    -v {{path/to/}}greengrass-v2-config:{{/tmp/config/}}:ro \
    -v {{path/to/}}greengrass-v2-certs:{{/tmp/certs}}:ro \
@@ -560,7 +560,7 @@ To run your Docker container with increased security, you can use the `--cap-dro
 
    For example, on a Linux-based system, you can run the following command to use GNU nano to create the `docker-compose.yml` in the current directory.
 
-   ```
+   ```bash
    nano docker-compose.yml
    ```
 **Note**
@@ -568,7 +568,7 @@ You can also download and use the latest version of the AWS-provided Compose fil
 
 1. Add the following content to the Compose file. Your file should look similar to the following example. Replace {{your-container-name:version}} with the name of your Docker image.
 
-   ```
+   ```yaml
    version: '3.7'
 
    services:
@@ -594,7 +594,7 @@ To run your Docker container with increased security, you can use `cap_drop` and
 
 1. Run the following command to start the container.
 
-   ```
+   ```bash
    docker-compose -f docker-compose.yml up
    ```
 

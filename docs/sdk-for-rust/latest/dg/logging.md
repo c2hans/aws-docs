@@ -11,7 +11,7 @@ The AWS SDK for Rust uses the [tracing](http://tracing.rs/) framework for loggin
 
 1. In a command prompt for your project directory, add the [tracing-subscriber](https://crates.io/crates/tracing-subscriber) crate as a dependency:
 
-   ```
+   ```sh
    $ cargo add tracing-subscriber --features tracing-subscriber/env-filter
    ```
 
@@ -19,7 +19,7 @@ The AWS SDK for Rust uses the [tracing](http://tracing.rs/) framework for loggin
 
 1. Initialize the subscriber. Usually this is done early in the `main` function before calling any SDK for Rust operation:
 
-   ```
+   ```rust
    use aws_config::BehaviorVersion;
 
    type BoxError = Box<dyn Error + Send + Sync>;
@@ -47,7 +47,7 @@ The AWS SDK for Rust uses the [tracing](http://tracing.rs/) framework for loggin
 ------
 #### [ Linux/macOS ]
 
-   ```
+   ```sh
    $ RUST_LOG={{debug}}
    ```
 
@@ -56,14 +56,14 @@ The AWS SDK for Rust uses the [tracing](http://tracing.rs/) framework for loggin
 
    If you're using VSCode, the terminal window often defaults to PowerShell. Verify the type of prompt you are using.
 
-   ```
+   ```cmd
    C:\> set RUST_LOG={{debug}}
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    PS C:\> $ENV:RUST_LOG="debug"
    ```
 
@@ -71,7 +71,7 @@ The AWS SDK for Rust uses the [tracing](http://tracing.rs/) framework for loggin
 
 1. Run the program:
 
-   ```
+   ```sh
    $ cargo run
    ```
 
@@ -112,19 +112,19 @@ If you use a crate that supports an environment filtering, such as `tracing_subs
 
 You can turn on the same logging level for every module. The following sets the logging level to `trace` for every module:
 
-```
+```sh
 $ RUST_LOG={{trace}} cargo run
 ```
 
 You can turn on trace-level logging for a specific module. In the following example, only logs coming from `aws_smithy_runtime` will come in at `trace` level.
 
-```
+```sh
 $ RUST_LOG={{aws_smithy_runtime}}={{trace}}
 ```
 
 You can specify a different log level for multiple modules by separating them with commas. The following example sets the `aws_config` module to `trace` level logging, and the `aws_smithy_runtime` module to `debug` level logging.
 
-```
+```sh
 $ RUST_LOG={{aws_config}}={{trace}},{{aws_smithy_runtime}}={{debug}} cargo run
 ```
 

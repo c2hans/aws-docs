@@ -52,7 +52,7 @@ If you want to prevent API-based mutations, attach a service control policy (SCP
 
 The following example SCP denies all mutating Identity Store actions:
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [

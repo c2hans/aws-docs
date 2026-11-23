@@ -13,7 +13,7 @@ The following example Java code sends two identical events to EventBridge.
 ------
 #### [ AWS SDK for Java Version 2.x ]
 
-```
+```java
 EventBridgeClient eventBridgeClient =
     EventBridgeClient.builder().build();
 
@@ -47,7 +47,7 @@ for (PutEventsResultEntry resultEntry: result.entries()) {
 ------
 #### [ AWS SDK for Java Version 1.0 ]
 
-```
+```java
 EventBridgeClient eventBridgeClient =
     EventBridgeClient.builder().build();
 
@@ -105,7 +105,7 @@ If you use `PutEvents` to publish an event to an event bus that does not exist, 
 
 You can include entries that are unsuccessful in subsequent `PutEvents` requests. First, to find out if there are failed entries in the request, check the `FailedRecordCount` parameter in `PutEventsResult`. If it isn't zero, then you can add each `Entry` that has an `ErrorCode` that is not null to a subsequent request. The following example shows a failure handler.
 
-```
+```java
 PutEventsRequestEntry requestEntry = new PutEventsRequestEntry()
         .withTime(new Date())
         .withSource("com.mycompany.myapp")
@@ -187,7 +187,7 @@ EventBridge calculates the `PutEventsRequestEntry` size as follows:
 
 The following example Java code calculates the size of a given `PutEventsRequestEntry` object. In order to verify the 1MB limit is not violated, you need to perform the calculation for all events in a request.
 
-```
+```java
 int getSize(PutEventsRequestEntry entry) {
     int size = 0;
     if (entry.getTime() != null) {

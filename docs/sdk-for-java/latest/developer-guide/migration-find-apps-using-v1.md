@@ -27,7 +27,7 @@ fields userIdentity.type, userIdentity.arn, eventSource, awsRegion,
 
 SQL query:
 
-```
+```sql
 SELECT `userIdentity.type`,
        `userIdentity.arn`,
        eventSource,
@@ -86,7 +86,7 @@ The trailing `...` indicates that the warning message continues with additional 
 
 The following example demonstrates searching for this warning using `grep`:
 
-```
+```bash
 grep -r "The AWS SDK for Java 1.x" /path/to/your/application/logs/
 ```
 
@@ -101,7 +101,7 @@ The following examples demonstrate using `grep` to search for `com.amazonaws` re
 
 **Example: Search Java source files for SDK for Java 1.x imports (run from project root directory)**
 
-```
+```bash
 grep -r "import com.amazonaws" --include="*.java" .
 ```
 
@@ -116,7 +116,7 @@ The `com.amazonaws` package is also used by libraries that are not part of the S
 
 **Example: Search Maven `pom.xml` files for SDK for Java 1.x dependencies (run from project root directory)**
 
-```
+```bash
 grep -r "com.amazonaws" --include="pom.xml" .
 ```
 
@@ -128,7 +128,7 @@ pom.xml:    <groupId>com.amazonaws</groupId>
 
 **Example: Search Gradle build files for SDK for Java 1.x dependencies (run from project root directory)**
 
-```
+```bash
 grep -r "com.amazonaws:aws-java-sdk" --include="*.gradle" .
 ```
 
@@ -142,7 +142,7 @@ The preceding `grep` commands identify SDK for Java 1.x references declared dire
 
 **Example: Use Maven to find all transitive SDK for Java 1.x dependencies (run from project root directory)**
 
-```
+```bash
 mvn dependency:tree -Dincludes=com.amazonaws
 ```
 
@@ -160,7 +160,7 @@ The `-Dincludes=com.amazonaws` flag filters the tree to show only SDK for Java 1
 
 **Example: Use Gradle to find all transitive SDK for Java 1.x dependencies (run from project root directory)**
 
-```
+```bash
 gradle dependencies --configuration runtimeClasspath | grep "com.amazonaws"
 ```
 
@@ -186,7 +186,7 @@ For uber-jars where all dependency classes are merged at the top level, list the
 
 In the following examples, replace `myapp.jar` with the path to your application's JAR file.
 
-```
+```bash
 jar -tf myapp.jar | grep 'versionInfo.properties'
 ```
 
@@ -198,13 +198,13 @@ com/amazonaws/sdk/versionInfo.properties
 
 If the `jar` command is not available in your environment (for example, JRE-only or minimal container images), you can use `unzip -l` instead:
 
-```
+```bash
 unzip -l myapp.jar | grep 'versionInfo.properties'
 ```
 
 To print the version:
 
-```
+```bash
 unzip -p myapp.jar com/amazonaws/sdk/versionInfo.properties
 ```
 
@@ -236,7 +236,7 @@ The *userAgent* field in each record contains the SDK version that made the requ
 
 The following sample query finds all requests from user applications and third-party tools made with SDK for Java 1.x starting from June 17, 2025, for an EventDatastoreID `sample-Data-Store-Id`:
 
-```
+```sql
 select userIdentity, eventSource, awsRegion,
     eventName, eventType, eventTime, userAgent,
     requestParameters, sourceIPAddress

@@ -17,7 +17,7 @@ You can use spatial functions to add ([AddBBox](AddBBox-function.md)), drop ([Dr
 
 The following example shows how to update existing geometries in a table to store them with a bounding box. If your cluster is at cluster version 1.0.26809 or later, then all new geometries are created with a precomputed bounding box by default.
 
-```
+```sql
 UPDATE my_table SET geom = AddBBox(geom) WHERE SupportsBBox(geom) = false;
 ```
 

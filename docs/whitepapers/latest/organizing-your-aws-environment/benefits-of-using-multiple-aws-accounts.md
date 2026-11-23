@@ -68,6 +68,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
 ![Diagram showing example operating models](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-operating-models.png)
 
+*Example operating models*
+
 + In the *Traditional Ops* model, teams who own custom and commercial off-the-shelf (COTS) applications are responsible for engineering their applications, but not for their production operations. A cloud platform engineering team is responsible for engineering the underlying platform capabilities. A separate cloud operations team is responsible for the operations of both applications and platform.
 + In the *CloudOps model*, application teams are also responsible for production operations of their applications. In this model, a common cloud platform engineering team is responsible for both engineering and operations of the underlying platform capabilities.
 + In the *DevOps model*, the application teams take on the additional responsibilities of engineering and operating platform capabilities that are specific to their applications. A cloud platform engineering team is responsible for engineering and operations of shared platform capabilities that are used by multiple applications.

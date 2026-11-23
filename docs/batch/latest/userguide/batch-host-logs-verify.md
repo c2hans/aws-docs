@@ -23,7 +23,7 @@ To test log collection before a full rollout, set `minvCpus` to a non-zero value
 
 Run the following command to list uploaded log objects:
 
-```
+```bash
 aws s3 ls s3://{{host-level-logs-bucket}}/ecs-logs/ --recursive
 ```
 

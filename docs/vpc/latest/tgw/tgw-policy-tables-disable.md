@@ -24,14 +24,14 @@ Before deleting a policy table, disassociate all attachments from it. Any attach
 **To delete a transit gateway policy table using the AWS CLI**
 Use the [delete-transit-gateway-policy-table](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-transit-gateway-policy-table.html) command.
 
-```
+```bash
 aws ec2 delete-transit-gateway-policy-table \
     --transit-gateway-policy-table-id tgw-ptb-0ca78a549EXAMPLE
 ```
 
 Example response. The table transitions to the `deleting` state:
 
-```
+```json
 {
     "TransitGatewayPolicyTable": {
         "TransitGatewayPolicyTableId": "tgw-ptb-0ca78a549EXAMPLE",

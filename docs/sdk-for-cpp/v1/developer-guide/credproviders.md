@@ -82,7 +82,7 @@ Instead of relying on the credential provider chain to detect your authenticatio
 
 The following example creates an Amazon Simple Storage Service client by directly providing temporary access credentials instead of using the chain.
 
-```
+```cpp
     SDKOptions options;
     Aws::InitAPI(options);
     {

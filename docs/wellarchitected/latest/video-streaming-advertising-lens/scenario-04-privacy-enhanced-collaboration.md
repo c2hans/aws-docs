@@ -21,6 +21,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
 ![Privacy-enhanced collaboration architecture on AWS showing publisher and advertiser data connecting through AWS Clean Rooms for privacy-preserved analysis, with Nitro Enclaves for computations requiring cryptographic isolation and AWS Entity Resolution for cross-platform identity resolution](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-04a-cdp-datalake-cleanrooms.jpg)
 
+*Privacy-enhanced collaboration architecture on AWS showing publisher and advertiser data connecting through AWS Clean Rooms for privacy-preserved analysis, with Nitro Enclaves for computations requiring cryptographic isolation and AWS Entity Resolution for cross-platform identity resolution*
+
  The architecture consists of the following components:
 
 1.  **Customer Data Platforms (publisher \+ advertiser)**: Each party's first-party data, managed within their own AWS account. Data is stored in Amazon S3 with SSE-KMS encryption using per-party customer-managed keys.

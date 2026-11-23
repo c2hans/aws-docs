@@ -32,13 +32,13 @@ To delete an alias, use the [DeleteAlias](https://docs.aws.amazon.com/kms/latest
 
 For example, the following command deletes the `test-key` alias. This command does not return any output.
 
-```
+```bash
 $ aws kms delete-alias --alias-name alias/test-key
 ```
 
 To verify that the alias is deleted, use the [ListAliases](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListAliases.html) operation. The following command uses the `--query` parameter in the AWS CLI to get only the `test-key` alias. The empty brackets in the response indicate that the `ListAliases` response didn't include a `test-key` alias. To eliminate the brackets, use the `--output text` parameter and value.
 
-```
+```bash
 $ aws kms list-aliases --query 'Aliases[?AliasName==`alias/test-key`]'
 []
 ```

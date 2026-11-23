@@ -62,7 +62,7 @@ Use the `[CreatePlaceIndex](https://docs.aws.amazon.com/location/previous/APIRef
 
 The following example is an API request to create a place index resource called {{ExamplePlaceIndex}} using the data provider {{Esri}}.
 
-```
+```json
 POST /places/v0/indexes
 Content-type: application/json
 

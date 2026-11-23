@@ -59,7 +59,7 @@ If S3 buckets are used as a temporary storage for migration, we recommend enabli
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

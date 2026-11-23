@@ -276,6 +276,11 @@ Type: Integer
 Valid Range: Minimum value of 0.
 Required: No
 
+ ** VoicemailInfo **   <a name="connect-Type-Contact-VoicemailInfo"></a>
+If one or more voicemails were recorded for the contact, this contains information about the voicemails.
+Type: [VoicemailInfo](API_VoicemailInfo.md) object
+Required: No
+
  ** WisdomInfo **   <a name="connect-Type-Contact-WisdomInfo"></a>
 Information about Connect Customer Wisdom.
 Type: [WisdomInfo](API_WisdomInfo.md) object

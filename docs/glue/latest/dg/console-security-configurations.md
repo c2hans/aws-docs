@@ -47,7 +47,7 @@ You can enable at-rest encryption for metadata stored in the Data Catalog in Ama
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

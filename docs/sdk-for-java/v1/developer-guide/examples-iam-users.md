@@ -13,7 +13,7 @@ Create a new IAM user by providing the user name to the AmazonIdentityManagement
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.CreateUserRequest;
@@ -22,7 +22,7 @@ import com.amazonaws.services.identitymanagement.model.CreateUserResult;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -43,7 +43,7 @@ The list of users returned by `listUsers` is paged. You can check to see there a
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.ListUsersRequest;
@@ -53,7 +53,7 @@ import com.amazonaws.services.identitymanagement.model.User;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -84,7 +84,7 @@ To update a user, call the AmazonIdentityManagementClient object’s `updateUser
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.UpdateUserRequest;
@@ -93,7 +93,7 @@ import com.amazonaws.services.identitymanagement.model.UpdateUserResult;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -113,7 +113,7 @@ To delete a user, call the AmazonIdentityManagementClient’s `deleteUser` reque
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.DeleteConflictException;
@@ -122,7 +122,7 @@ import com.amazonaws.services.identitymanagement.model.DeleteUserRequest;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 

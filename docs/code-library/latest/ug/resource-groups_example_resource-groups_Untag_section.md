@@ -39,7 +39,7 @@ For more information, see [Manage tags](https://docs.aws.amazon.com/ARG/latest/u
 **Tools for PowerShell V4**
 **Example 1: This example removes mentioned tag from the resource group**
 
-```
+```powershell
 Remove-RGResourceTag -Arn arn:aws:resource-groups:eu-west-1:123456789012:group/workboxes -Key Instances
 ```
 **Output:**
@@ -59,7 +59,7 @@ arn:aws:resource-groups:eu-west-1:123456789012:group/workboxes {Instances}
 **Tools for PowerShell V5**
 **Example 1: This example removes mentioned tag from the resource group**
 
-```
+```powershell
 Remove-RGResourceTag -Arn arn:aws:resource-groups:eu-west-1:123456789012:group/workboxes -Key Instances
 ```
 **Output:**

@@ -48,7 +48,7 @@ when {
 };
 ```
 
-```
+```bash
 $ aws verifiedpermissions update-policy-template \
     --policy-template-id PTEXAMPLEabcdefg111111 \
     --description "My updated template description" \
@@ -65,7 +65,7 @@ $ aws verifiedpermissions update-policy-template \
 **To update the name of a policy template**
 You can set or update a policy template name when updating a policy template. The name must be unique for all policy templates within the policy store and prefixed with `name/`. If you don't include the name field in the update request, the existing name is unchanged. To remove a name, set it to an empty string.
 
-```
+```bash
 $ aws verifiedpermissions update-policy-template \
     --policy-template-id PTEXAMPLEabcdefg111111 \
     --statement file://template1.txt \

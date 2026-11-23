@@ -21,7 +21,7 @@ For conversational applications, we recommend that you use the Converse API. The
 
 The Cohere Command models have the following inference parameters.
 
-```
+```json
 {
     "message": string,
     "chat_history": [
@@ -91,7 +91,7 @@ The following are optional parameters.
 
   The following is example JSON for the `chat_history` field
 
-  ```
+  ```json
   "chat_history": [
   {"role": "USER", "message": "Who discovered gravity?"},
   {"role": "CHATBOT", "message": "The man who is widely credited with discovering gravity is Sir Isaac Newton"}
@@ -101,7 +101,7 @@ The following are optional parameters.
 
   The following is example JSON for the `documents` field.
 
-  ```
+  ```json
   "documents": [
   {"title": "Tall penguins", "snippet": "Emperor penguins are the tallest."},
   {"title": "Penguin habitats", "snippet": "Emperor penguins only live in Antarctica."}
@@ -176,7 +176,7 @@ We recommend that you use the Responses API or Messages API for integrating tool
 
   The following is example JSON for the `tools` field.
 
-  ```
+  ```json
   [
       {
           "name": "top_song",
@@ -199,7 +199,7 @@ We recommend that you use the Responses API or Messages API for integrating tool
 
   The following is example JSON for the `tools_results` field.
 
-  ```
+  ```json
   [
       {
           "call": {
@@ -224,7 +224,7 @@ We recommend that you use the Responses API or Messages API for integrating tool
 
 The response has the following possible fields:
 
-```
+```json
 {
     "response_id": string,
     "text": string,
@@ -284,7 +284,7 @@ We recommend that you use the Responses API or Messages API for integrating tool
 
   The following is example JSON for the `tool_calls` field.
 
-  ```
+  ```json
   [
           {
               "name": "top_song",
@@ -307,7 +307,7 @@ We recommend that you use the Responses API or Messages API for integrating tool
 
 This examples shows how to call the *Cohere Command R* model.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """

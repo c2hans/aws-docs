@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference
 You must add your batch inference data to an S3 location that you'll choose or specify when submitting a model invocation job. The S3 location must contain the following items:
 + At least one JSONL file that defines the model inputs. A JSONL contains rows of JSON objects. Your JSONL file must end in the extension .jsonl and be in the following format:
 
-  ```
+  ```json
   { "recordId" : "{{string}}", "modelInput" : {{{JSON body}}} }
   ...
   ```
@@ -35,7 +35,7 @@ To better understand how to set up your batch inference inputs, see the followin
 
 If you plan to run batch inference using the [Messages API](model-parameters-anthropic-claude-messages.md) format for the Anthropic Claude 3 Haiku model, you might provide a JSONL file containing the following JSON object as one of the lines:
 
-```
+```json
 {
     "recordId": "CALL0000001",
     "modelInput": {
@@ -61,7 +61,7 @@ If you plan to run batch inference using the [Messages API](model-parameters-ant
 
 If you plan to run batch inference on video inputs using the Amazon Nova Lite or Amazon Nova Pro models, you have the option of defining the video in bytes or as an S3 location in the JSONL file. For example, you might have an S3 bucket whose path is `s3://batch-inference-input-bucket` and contains the following files:
 
-```
+```json
 s3://batch-inference-input-bucket/
 ├── videos/
 │   ├── video1.mp4
@@ -73,7 +73,7 @@ s3://batch-inference-input-bucket/
 
 A sample record from the `input.jsonl` file would be the following:
 
-```
+```JSON
 {
     "recordId": "RECORD01",
     "modelInput": {
@@ -113,7 +113,7 @@ The following resources provide more information about submitting video inputs f
 
 If you set the model invocation type to `Converse` when creating the batch inference job, the `modelInput` field must use the Converse API request format. The following example shows a JSONL record for a Converse batch inference job:
 
-```
+```json
 {
     "recordId": "CALL0000001",
     "modelInput": {

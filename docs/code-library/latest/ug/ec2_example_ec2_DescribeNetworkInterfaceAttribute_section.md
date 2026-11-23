@@ -105,7 +105,7 @@ For more information, see [Modify network interface attributes](https://docs.aws
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified network interface.**
 
-```
+```powershell
 Get-EC2NetworkInterfaceAttribute -NetworkInterfaceId eni-12345678 -Attribute Attachment
 ```
 **Output:**
@@ -115,7 +115,7 @@ Attachment         : Amazon.EC2.Model.NetworkInterfaceAttachment
 ```
 **Example 2: This example describes the specified network interface.**
 
-```
+```powershell
 Get-EC2NetworkInterfaceAttribute -NetworkInterfaceId eni-12345678 -Attribute Description
 ```
 **Output:**
@@ -125,7 +125,7 @@ Description        : My description
 ```
 **Example 3: This example describes the specified network interface.**
 
-```
+```powershell
 Get-EC2NetworkInterfaceAttribute -NetworkInterfaceId eni-12345678 -Attribute GroupSet
 ```
 **Output:**
@@ -135,7 +135,7 @@ Groups             : {my-security-group}
 ```
 **Example 4: This example describes the specified network interface.**
 
-```
+```powershell
 Get-EC2NetworkInterfaceAttribute -NetworkInterfaceId eni-12345678 -Attribute SourceDestCheck
 ```
 **Output:**
@@ -148,7 +148,7 @@ SourceDestCheck    : True
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified network interface.**
 
-```
+```powershell
 Get-EC2NetworkInterfaceAttribute -NetworkInterfaceId eni-12345678 -Attribute Attachment
 ```
 **Output:**
@@ -158,7 +158,7 @@ Attachment         : Amazon.EC2.Model.NetworkInterfaceAttachment
 ```
 **Example 2: This example describes the specified network interface.**
 
-```
+```powershell
 Get-EC2NetworkInterfaceAttribute -NetworkInterfaceId eni-12345678 -Attribute Description
 ```
 **Output:**
@@ -168,7 +168,7 @@ Description        : My description
 ```
 **Example 3: This example describes the specified network interface.**
 
-```
+```powershell
 Get-EC2NetworkInterfaceAttribute -NetworkInterfaceId eni-12345678 -Attribute GroupSet
 ```
 **Output:**
@@ -178,7 +178,7 @@ Groups             : {my-security-group}
 ```
 **Example 4: This example describes the specified network interface.**
 
-```
+```powershell
 Get-EC2NetworkInterfaceAttribute -NetworkInterfaceId eni-12345678 -Attribute SourceDestCheck
 ```
 **Output:**

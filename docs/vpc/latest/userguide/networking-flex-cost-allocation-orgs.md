@@ -61,7 +61,7 @@ aws organizations create-policy \
 
 The following is the policy document for `example-networking-flexible-cost-allocation-ec2-policy-content.json`:
 
-```
+```json
 {
   "ec2_attributes": {
     "networking_flex_cost_allocation": {

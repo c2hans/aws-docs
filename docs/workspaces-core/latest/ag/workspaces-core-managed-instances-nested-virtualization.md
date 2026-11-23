@@ -37,7 +37,7 @@ Unlike Amazon EC2, Amazon WorkSpaces Core Managed Instances do **not** support m
 
 Save the following to a file (for example, `/tmp/create-nv.json`):
 
-```
+```json
 {
   "ManagedInstance": {
     "ImageId": "ami-0abcdef1234567890",
@@ -65,7 +65,7 @@ Save the following to a file (for example, `/tmp/create-nv.json`):
 ### AWS CLI
 <a name="nv-enable-nested-virtualization-cli"></a>
 
-```
+```bash
 aws workspaces-instances create-workspace-instance \
   --region us-west-2 \
   --cli-input-json file:///tmp/create-nv.json
@@ -76,7 +76,7 @@ aws workspaces-instances create-workspace-instance \
 
 After the instance reaches the `ALLOCATED` state, use `GetWorkspaceInstance` to confirm:
 
-```
+```bash
 aws workspaces-instances get-workspace-instance \
   --region us-west-2 \
   --workspace-instance-id wsi-0example1234
@@ -84,7 +84,7 @@ aws workspaces-instances get-workspace-instance \
 
 The response includes:
 
-```
+```json
 {
   "CpuOptions": {
     "NestedVirtualization": "enabled"
@@ -131,7 +131,7 @@ Not all instance types that Amazon WorkSpaces Core Managed Instances support als
 
 To list the Amazon EC2 instance types that support nested virtualization in a Region, use the following command:
 
-```
+```bash
 aws ec2 describe-instance-types \
   --region us-west-2 \
   --filters Name=processor-info.supported-features,Values=nested-virtualization \
@@ -180,7 +180,7 @@ The following sections describe common issues and their resolutions.
 
 **Resolution:** Call `GetWorkspaceInstance` and check the `EC2InstanceErrors` field. The error message from Amazon EC2 (typically `InvalidParameterCombination`) indicates the instance type does not support nested virtualization. Recreate the instance with a supported instance type.
 
-```
+```bash
 aws workspaces-instances get-workspace-instance \
   --region us-west-2 \
   --workspace-instance-id wsi-0example1234

@@ -75,7 +75,7 @@ You can use the following DDL example in Athena to create a table suitable for s
 
 Create your own values for DATABASE\_NAME and TABLE\_NAME when you create the table.
 
-```
+```ddl
  CREATE TABLE <DATABASE_NAME>. <TABLE_NAME> (
   sample_name string,
   variant_name string COMMENT 'The ID field in VCF files, '.' indicates no name',
@@ -102,7 +102,7 @@ TBLPROPERTIES (
 
 The following Python code example shows how to create the tables without using Athena.
 
-```
+```python
  import boto3
 from pyiceberg.catalog import Catalog, load_catalog
 from pyiceberg.schema import Schema

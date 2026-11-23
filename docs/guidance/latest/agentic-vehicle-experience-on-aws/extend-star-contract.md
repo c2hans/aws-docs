@@ -11,7 +11,7 @@ Every booking-shaped artifact AVX produces — service request tickets, appointm
 
 Every STAR-JSON message shares a common outer envelope:
 
-```
+```json
 {
   "schemaVersion": "1.0.0",
   "messageType": "ServiceRequestAdd",
@@ -58,7 +58,7 @@ The `book()` tool creates a `ServiceRequestAdd` envelope with the triage classif
 
 STAR-JSON messages are delivered to the tenant’s configured sink. Tenants that process STAR XML can enable the converter:
 
-```
+```json
 {
   "booking": {
     "starXmlConversion": true,
@@ -81,7 +81,7 @@ The full field reference for all three message types, including the `ServiceRequ
 
 If a custom tool needs to produce a STAR message — for example, a partner DMS tool that generates a repair order — it should call the `book()` tool rather than constructing the envelope directly. Pass the structured service request data and let `book()` assign the `messageId`, `sessionId`, and `signature`:
 
-```
+```python
 # Inside a custom partner-DMS tool
 from agents.supervisor.tools.book import make_book_tool
 

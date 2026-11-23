@@ -25,7 +25,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information about EC2 instances with a particular state.
     /// </summary>
@@ -89,7 +89,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_describe_instances
 #
@@ -167,7 +167,7 @@ function ec2_describe_instances() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -219,7 +219,7 @@ function aws_cli_error_log() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Describe all Amazon Elastic Compute Cloud (Amazon EC2) instances associated with an account.
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -1659,7 +1659,7 @@ For more information, see [Work with instance tags in instance metadata](https:/
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Asynchronously describes the state of an EC2 instance.
      * The paginator helps you iterate over multiple pages of results.
@@ -1700,7 +1700,7 @@ For more information, see [Work with instance tags in instance metadata](https:/
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { EC2Client, paginateDescribeInstances } from "@aws-sdk/client-ec2";
 
 /**
@@ -1764,7 +1764,7 @@ export const main = async ({ pageSize, architectures }) => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun describeEC2Instances() {
     val request =
         DescribeInstancesRequest {
@@ -1793,7 +1793,7 @@ suspend fun describeEC2Instances() {
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified instance.**
 
-```
+```powershell
 (Get-EC2Instance -InstanceId i-12345678).Instances
 ```
 **Output:**
@@ -1839,7 +1839,7 @@ VpcId                 : vpc-12345678
 ```
 **Example 2: This example describes all your instances in the current region, grouped by reservation. To see the instance details expand the Instances collection within each reservation object.**
 
-```
+```powershell
 Get-EC2Instance
 ```
 **Output:**
@@ -1862,7 +1862,7 @@ ReservationId : r-63e65bab
 ```
 **Example 3: This example illustrates using a filter to query for EC2 instances in a specific subnet of a VPC.**
 
-```
+```powershell
 (Get-EC2Instance -Filter @{Name="vpc-id";Values="vpc-1a2bc34d"},@{Name="subnet-id";Values="subnet-1a2b3c4d"}).Instances
 ```
 **Output:**
@@ -1875,7 +1875,7 @@ i-0374...7e9d5b0c45 t2.xlarge    Windows  10.0.0.53                        ...  
 ```
 **Example 4: This example illustrates using a filter with multiple values to query for EC2 instances that are both running and stopped**
 
-```
+```powershell
 $InstanceParams = @{
     Filter = @(
         @{'Name' = 'instance-state-name';'Values' = @("running","stopped")}
@@ -1898,7 +1898,7 @@ i-0a68...274cc5043b t3.medium    Windows  10.0.1.6                         ...  
 ```
 **Example 5: This example illustrates using a filter with multiple values to query for EC2 instances that are both running and stopped and using the Select-Object cmdlet for choosing specific values to output.**
 
-```
+```powershell
 $InstanceParams = @{
     Filter = @(
         @{'Name' = 'instance-state-name';'Values' = @("running","stopped")}
@@ -1933,7 +1933,7 @@ i-0a68...274cc5043b t3.medium    Windows  10.0.1.6         ec2-name-06  stopped
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified instance.**
 
-```
+```powershell
 (Get-EC2Instance -InstanceId i-12345678).Instances
 ```
 **Output:**
@@ -1979,7 +1979,7 @@ VpcId                 : vpc-12345678
 ```
 **Example 2: This example describes all your instances in the current region, grouped by reservation. To see the instance details expand the Instances collection within each reservation object.**
 
-```
+```powershell
 Get-EC2Instance
 ```
 **Output:**
@@ -2002,7 +2002,7 @@ ReservationId : r-63e65bab
 ```
 **Example 3: This example illustrates using a filter to query for EC2 instances in a specific subnet of a VPC.**
 
-```
+```powershell
 (Get-EC2Instance -Filter @{Name="vpc-id";Values="vpc-1a2bc34d"},@{Name="subnet-id";Values="subnet-1a2b3c4d"}).Instances
 ```
 **Output:**
@@ -2015,7 +2015,7 @@ i-0374...7e9d5b0c45 t2.xlarge    Windows  10.0.0.53                        ...  
 ```
 **Example 4: This example illustrates using a filter with multiple values to query for EC2 instances that are both running and stopped**
 
-```
+```powershell
 $InstanceParams = @{
     Filter = @(
         @{'Name' = 'instance-state-name';'Values' = @("running","stopped")}
@@ -2038,7 +2038,7 @@ i-0a68...274cc5043b t3.medium    Windows  10.0.1.6                         ...  
 ```
 **Example 5: This example illustrates using a filter with multiple values to query for EC2 instances that are both running and stopped and using the Select-Object cmdlet for choosing specific values to output.**
 
-```
+```powershell
 $InstanceParams = @{
     Filter = @(
         @{'Name' = 'instance-state-name';'Values' = @("running","stopped")}
@@ -2070,7 +2070,7 @@ i-0a68...274cc5043b t3.medium    Windows  10.0.1.6         ec2-name-06  stopped
 ```
 **Example 6: This example validates permissions for getting EC2 instances using the DryRun parameter without actually fetching them. Note: This throws an exception if succeeded which is the expected behavior.**
 
-```
+```powershell
 Get-EC2Tag -DryRun $true
 ```
 **Output:**
@@ -2086,7 +2086,7 @@ Get-EC2Instance: Request would have succeeded, but DryRun flag is set.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ec2#code-examples).
 
-```
+```python
 class EC2InstanceWrapper:
     """Encapsulates Amazon Elastic Compute Cloud (Amazon EC2) instance actions using the client interface."""
 
@@ -2171,7 +2171,7 @@ class EC2InstanceWrapper:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ec2'
 
 # @param ec2_resource [Aws::EC2::Resource] An initialized EC2 resource object.
@@ -2223,7 +2223,7 @@ run_me if $PROGRAM_NAME == __FILE__
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 Retrieve details for an EC2 Instance.
 
-```
+```rust
     pub async fn describe_instance(&self, instance_id: &str) -> Result<Instance, EC2Error> {
         let response = self
             .client
@@ -2247,7 +2247,7 @@ Retrieve details for an EC2 Instance.
 ```
 After creating an EC2 instance, retrieve and store its details.
 
-```
+```rust
     /// Create an EC2 instance with the given ID on a given type, using a
     /// generated KeyPair and applying a list of security groups.
     pub async fn create(
@@ -2274,7 +2274,7 @@ After creating an EC2 instance, retrieve and store its details.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->describeinstances( ).                        " oo_result is returned for testing purposes. "
 

@@ -9,7 +9,7 @@ The AES\_DECRYPT function is used for decrypting data using the Advanced Encrypt
 ## Syntax
 <a name="AES_DECRYPT-syntax"></a>
 
-```
+```SQL
 aes_decrypt(expr, key[, mode[, padding[, aad]]])
 ```
 

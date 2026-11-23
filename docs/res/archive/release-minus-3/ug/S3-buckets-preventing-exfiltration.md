@@ -43,7 +43,7 @@ To prevent users from exfiltrating data from secure S3 buckets into their own S3
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

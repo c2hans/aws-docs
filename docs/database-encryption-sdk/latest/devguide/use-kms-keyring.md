@@ -71,7 +71,7 @@ The following examples use the `CreateAwsKmsMrkMultiKeyring` method to create an
 ------
 #### [ Java ]
 
-```
+```java
 final MaterialProviders matProv = MaterialProviders.builder()
         .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
         .build();
@@ -84,7 +84,7 @@ final IKeyring kmsKeyring = matProv.CreateAwsKmsMrkMultiKeyring(keyringInput);
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var matProv = new MaterialProviders(new MaterialProvidersConfig());
 var createAwsKmsMrkMultiKeyringInput = new CreateAwsKmsMrkMultiKeyringInput
 {
@@ -96,7 +96,7 @@ var awsKmsMrkMultiKeyring = matProv.CreateAwsKmsMrkMultiKeyring(createAwsKmsMrkM
 ------
 #### [ Rust ]
 
-```
+```rs
 let provider_config = MaterialProvidersConfig::builder().build()?;
 let mat_prov = client::Client::from_conf(provider_config)?;
 let kms_keyring = mat_prov
@@ -117,7 +117,7 @@ The following examples use the `CreateAwsKmsRsaKeyring` method to create an AWS 
 ------
 #### [ Java ]
 
-```
+```java
  final MaterialProviders matProv = MaterialProviders.builder()
     .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
     .build();
@@ -134,7 +134,7 @@ IKeyring awsKmsRsaKeyring = matProv.CreateAwsKmsRsaKeyring(createAwsKmsRsaKeyrin
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var matProv = new MaterialProviders(new MaterialProvidersConfig());
 var createAwsKmsRsaKeyringInput = new CreateAwsKmsRsaKeyringInput
 {
@@ -149,7 +149,7 @@ IKeyring awsKmsRsaKeyring = matProv.CreateAwsKmsRsaKeyring(createAwsKmsRsaKeyrin
 ------
 #### [ Rust ]
 
-```
+```rust
 let mpl_config = MaterialProvidersConfig::builder().build()?;
 let mpl = mpl_client::Client::from_conf(mpl_config)?;
 let sdk_config = aws_config::load_defaults(aws_config::BehaviorVersion::latest()).await;
@@ -183,7 +183,7 @@ The following examples create an AWS KMS keyring with a multi-Region KMS key. Th
 ------
 #### [ Java ]
 
-```
+```java
 final MaterialProviders matProv = MaterialProviders.builder()
         .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
         .build();
@@ -198,7 +198,7 @@ IKeyring awsKmsMrkMultiKeyring = matProv.CreateAwsKmsMrkMultiKeyring(createAwsKm
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var matProv = new MaterialProviders(new MaterialProvidersConfig());
 var createAwsKmsMrkMultiKeyringInput = new CreateAwsKmsMrkMultiKeyringInput
 {
@@ -211,7 +211,7 @@ var awsKmsMrkMultiKeyring = matProv.CreateAwsKmsMrkMultiKeyring(createAwsKmsMrkM
 ------
 #### [ Rust ]
 
-```
+```rust
 let mpl_config = MaterialProvidersConfig::builder().build()?;
 let mpl = mpl_client::Client::from_conf(mpl_config)?;
 
@@ -260,7 +260,7 @@ Before using this code, replace the example AWS account and partition values wit
 ------
 #### [ Java ]
 
-```
+```java
 // Create discovery filter
 DiscoveryFilter discoveryFilter = DiscoveryFilter.builder()
         .partition("{{aws}}")
@@ -276,7 +276,7 @@ IKeyring decryptKeyring = matProv.CreateAwsKmsMrkDiscoveryMultiKeyring(createAws
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 // Create discovery filter
 var discoveryFilter = new DiscoveryFilter
 {
@@ -294,7 +294,7 @@ var decryptKeyring = matProv.CreateAwsKmsMrkDiscoveryMultiKeyring(createAwsKmsMr
 ------
 #### [ Rust ]
 
-```
+```rust
 // Create discovery filter
 let discovery_filter = DiscoveryFilter::builder()
     .partition("{{aws}}")
@@ -332,7 +332,7 @@ For example, the following code creates an AWS KMS regional discovery keyring wi
 ------
 #### [ Java ]
 
-```
+```java
 // Create the discovery filter
 DiscoveryFilter discoveryFilter = DiscoveryFilter.builder()
         .partition("{{aws}}")
@@ -349,7 +349,7 @@ IKeyring decryptKeyring = matProv.CreateAwsKmsMrkDiscoveryMultiKeyring(createAws
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 // Create discovery filter
 var discoveryFilter = new DiscoveryFilter
 {
@@ -368,7 +368,7 @@ var decryptKeyring = matProv.CreateAwsKmsMrkDiscoveryMultiKeyring(createAwsKmsMr
 ------
 #### [ Rust ]
 
-```
+```rust
 // Create discovery filter
 let discovery_filter = DiscoveryFilter::builder()
     .partition("{{aws}}")

@@ -45,7 +45,7 @@ For more information on the Object Persistence model, see [.NET Object Persisten
 
 To create a DynamoDB client:
 
-```
+```csharp
 var client = new AmazonDynamoDBClient(credentials,region);
 DynamoDBContext context = new DynamoDBContext(client);
 ```
@@ -58,7 +58,7 @@ DynamoDBContext context = new DynamoDBContext(client);
 
 Create an object:
 
-```
+```csharp
 [DynamoDBTable("Books")]
 public class Book {
   [DynamoDBHashKey] // Hash key.
@@ -105,7 +105,7 @@ Book myBook = new Book
 
 Save an object to a DynamoDB table:
 
-```
+```csharp
 context.Save(myBook);
 ```
 
@@ -114,7 +114,7 @@ context.Save(myBook);
 
 To retrieve an object:
 
-```
+```csharp
 Book retrievedBook = context.Load<Book>(1);
 ```
 
@@ -123,7 +123,7 @@ Book retrievedBook = context.Load<Book>(1);
 
 To update an object:
 
-```
+```csharp
 Book retrievedBook = context.Load<Book>(1);
 retrievedBook.ISBN = "111-1111111001";
 context.Save(retrievedBook);
@@ -134,7 +134,7 @@ context.Save(retrievedBook);
 
 To delete an object:
 
-```
+```csharp
 Book retrievedBook = context.Load<Book>(1);
 context.Delete(retrievedBook);
 ```
@@ -144,7 +144,7 @@ context.Delete(retrievedBook);
 
 To query and retrieve all books whose author is “Charles Dickens”:
 
-```
+```csharp
 public async Task QueryAsync(AWSCredentials credentials, RegionEndpoint region) {
   var client = new AmazonDynamoDBClient(credentials, region);
   DynamoDBContext context = new DynamoDBContext(client);
@@ -165,7 +165,7 @@ public async Task QueryAsync(AWSCredentials credentials, RegionEndpoint region) 
 
 The scan example code below returns all books in our table:
 
-```
+```csharp
 public async Task ScanAsync(AWSCredentials credentials, RegionEndpoint region) {
   var client = new AmazonDynamoDBClient(credentials, region);
   DynamoDBContext context = new DynamoDBContext(client);

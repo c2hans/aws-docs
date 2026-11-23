@@ -30,7 +30,7 @@ Invocation errors coming from both the old fleet and new fleet contribute to the
 **Note**
 For this alarm type, if your old fleet trips the alarm during the deployment, SageMaker AI terminates your deployment. Therefore, if your current production fleet already causes errors, consider using or modifying one of the following examples that only monitors the new fleet for errors.
 
-```
+```json
 #Applied deployment type: all types
 {
     "AlarmName": "EndToEndDeploymentHighErrorRateAlarm",
@@ -75,7 +75,7 @@ CloudWatch publishes the metrics with the dimension `EndpointConfigName:{New-Ep-
 
 You can use the following alarm example with any deployment type.
 
-```
+```json
 #Applied deployment type: all types
 {
     "AlarmName": "NewEndpointConfigVersionHighModelLatencyAlarm",

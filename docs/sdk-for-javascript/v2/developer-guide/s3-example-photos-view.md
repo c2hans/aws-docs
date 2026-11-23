@@ -61,7 +61,7 @@ To allow viewing of albums and photos, you have to add permissions to an IAM rol
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [
@@ -103,7 +103,7 @@ In the new S3 console, the CORS configuration must be JSON.
 ------
 #### [ JSON ]
 
-```
+```javascript
 [
     {
         "AllowedHeaders": [
@@ -123,7 +123,7 @@ In the new S3 console, the CORS configuration must be JSON.
 ------
 #### [ XML ]
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
     <CORSRule>
@@ -168,7 +168,7 @@ The HTML for the photo-viewing application consists of a `<div>` element in whic
 
 For this example, the file is named `PhotoViewer.js`, and is located in the same folder as the HTML file. To find the current SDK\_VERSION\_NUMBER, see the API Reference for the SDK for JavaScript at [AWS SDK for JavaScript API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/).
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -190,7 +190,7 @@ For this example, the file is named `PhotoViewer.js`, and is located in the same
 
 Obtain the credentials you need to configure the SDK by calling the `CognitoIdentityCredentials` method. You need to provide the Amazon Cognito identity pool ID. Then create an `AWS.S3` service object.
 
-```
+```javascript
 // **DO THIS**:
 //   Replace BUCKET_NAME with the bucket name.
 //
@@ -229,7 +229,7 @@ To list all of the existing albums in the bucket, the application's `listAlbums`
 
 The rest of the function takes the list of albums from the Amazon S3 bucket and generates the HTML needed to display the album list on the webpage.
 
-```
+```javascript
 // List the photo albums that exist in the bucket.
 function listAlbums() {
   s3.listObjects({ Delimiter: "/" }, function (err, data) {
@@ -272,7 +272,7 @@ To display the contents of an album in the Amazon S3 bucket, the application's `
 
 The rest of the function takes the list of objects that are in the album and generates the HTML needed to display the photos on the webpage.
 
-```
+```javascript
 // Show the photos that exist in an album.
 function viewAlbum(albumName) {
   var albumPhotosKey = encodeURIComponent(albumName) + "/";

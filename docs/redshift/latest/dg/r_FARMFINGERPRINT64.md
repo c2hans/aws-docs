@@ -31,7 +31,7 @@ The `farmFingerprint64` function returns a `BIGINT`.
 
 The following example returns the `farmFingerprint64` value of `Amazon Redshift` that is input as a `VARCHAR` data type.
 
-```
+```sql
 SELECT farmFingerprint64('Amazon Redshift');
 ```
 
@@ -44,7 +44,7 @@ SELECT farmFingerprint64('Amazon Redshift');
 
 The following example returns the `farmFingerprint64` value of `Amazon Redshift` that is input as a `VARBYTE` data type.
 
-```
+```sql
 SELECT farmFingerprint64('Amazon Redshift'::varbyte);
 ```
 

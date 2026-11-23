@@ -12,7 +12,7 @@ This example of the Amazon EMR cluster uses Amazon EBS volumes for its master, t
 These configurations are optional. You can use them in any pipeline that uses an `EmrCluster` object.
 In the pipeline, click the `EmrCluster` object configuration, choose **Master EBS Configuration**, **Core EBS Configuration**, or **Task EBS Configuration**, and enter the configuration details similar to the following example.
 
-```
+```json
 {
   "objects": [
     {

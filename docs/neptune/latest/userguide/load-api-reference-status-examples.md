@@ -25,7 +25,7 @@ For more information, see [get-loader-job-status](https://docs.aws.amazon.com/cl
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -51,8 +51,7 @@ awscurl 'https://{{your-neptune-endpoint}}:{{port}}/loader/{{loadId (a UUID)}}' 
   --service neptune-db
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -60,6 +59,8 @@ This example assumes that your AWS credentials are configured in your environmen
 ```
 curl -X GET 'https://{{your-neptune-endpoint}}:{{port}}/loader/{{loadId (a UUID)}}'
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -109,7 +110,7 @@ For more information, see [list-loader-jobs](https://docs.aws.amazon.com/cli/lat
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -135,8 +136,7 @@ awscurl 'https://{{your-neptune-endpoint}}:{{port}}/loader?limit=3' \
   --service neptune-db
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -144,6 +144,8 @@ This example assumes that your AWS credentials are configured in your environmen
 ```
 curl -X GET 'https://{{your-neptune-endpoint}}:{{port}}/loader?limit=3'
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -182,7 +184,7 @@ For more information, see [get-loader-job-status](https://docs.aws.amazon.com/cl
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -209,8 +211,7 @@ awscurl 'https://{{your-neptune-endpoint}}:{{port}}/loader/{{loadId (a UUID)}}?d
   --service neptune-db
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -218,6 +219,8 @@ This example assumes that your AWS credentials are configured in your environmen
 ```
 curl -X GET 'https://{{your-neptune-endpoint}}:{{port}}/loader/{{loadId (a UUID)}}?details=true'
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 

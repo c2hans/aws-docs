@@ -28,7 +28,7 @@ You can follow the steps in [Create an AWS IoT policy](https://docs.aws.amazon.c
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -85,7 +85,7 @@ The policy supporting those two permissions is shown below:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

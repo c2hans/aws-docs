@@ -29,7 +29,7 @@ Array Members: Minimum number of 0 items. Maximum number of 15 items.
 Required: No
 
  ** ReplacementTags **   <a name="SES-Type-BulkEmailEntry-ReplacementTags"></a>
-A list of tags, in the form of name/value pairs, to apply to an email that you send using the `SendBulkTemplatedEmail` operation. Tags correspond to characteristics of the email that you define, so that you can publish email sending events.
+A list of tags, in the form of name/value pairs, to apply to an email that you send using the `SendBulkEmail` operation. Tags correspond to characteristics of the email that you define, so that you can publish email sending events.
 Type: Array of [MessageTag](API_MessageTag.md) objects
 Required: No
 

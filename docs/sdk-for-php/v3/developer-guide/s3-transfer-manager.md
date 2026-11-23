@@ -29,7 +29,7 @@ The S3 Transfer Manager is included in the AWS SDK for PHP Version 3. You don't 
 
 To install using Composer, run the following command:
 
-```
+```bash
 composer require aws/aws-sdk-php
 ```
 

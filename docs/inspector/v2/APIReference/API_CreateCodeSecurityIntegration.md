@@ -58,7 +58,7 @@ Required: No
  ** [type](#API_CreateCodeSecurityIntegration_RequestSyntax) **   <a name="inspector2-CreateCodeSecurityIntegration-request-type"></a>
 The type of repository provider for the integration.
 Type: String
-Valid Values: `GITLAB_SELF_MANAGED | GITHUB`
+Valid Values: `GITLAB_SELF_MANAGED | GITHUB | GITHUB_ENTERPRISE_SERVER`
 Required: Yes
 
 ## Response Syntax
@@ -94,7 +94,7 @@ Pattern: `arn:(aws[a-zA-Z-]*)?:inspector2:[a-z]{2}(-gov)?-[a-z]+-\d{1}:\d{12}:co
  ** [status](#API_CreateCodeSecurityIntegration_ResponseSyntax) **   <a name="inspector2-CreateCodeSecurityIntegration-response-status"></a>
 The current status of the code security integration.
 Type: String
-Valid Values: `PENDING | IN_PROGRESS | ACTIVE | INACTIVE | DISABLING`
+Valid Values: `PENDING | IN_PROGRESS | ACTIVE | INACTIVE | DISABLING | ESTABLISHING_CONNECTION_IN_PROGRESS | ESTABLISHING_CONNECTION_COMPLETED | ESTABLISHING_CONNECTION_FAILED | PENDING_MANIFEST_CODE | DELETE_IN_PROGRESS | DELETE_FAILED`
 
 ## Errors
 <a name="API_CreateCodeSecurityIntegration_Errors"></a>

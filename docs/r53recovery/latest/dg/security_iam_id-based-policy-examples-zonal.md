@@ -41,7 +41,7 @@ To give users full access to use zonal shift in the AWS Management Console, atta
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -80,7 +80,7 @@ To ensure that a user can use zonal shift API actions, attach a policy that corr
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

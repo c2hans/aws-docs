@@ -47,7 +47,7 @@ For example, the following policy grants permission to create a pipeline:
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -89,7 +89,7 @@ For more information about each permission, see [Actions, resources, and conditi
 
 When you create a pipeline using the configuration editor, you must specify the major [version of Data Prepper](https://github.com/opensearch-project/data-prepper/releases) that the pipeline will run. To specify the version, include the `version` option in your pipeline configuration:
 
-```
+```yaml
 {{version: "2"}}
 log-pipeline:
   source:
@@ -216,7 +216,7 @@ The following sample command creates a pipeline with the following configuration
 + Provisioned within a virtual private cloud (VPC)
 + Log publishing enabled
 
-```
+```bash
 aws osis create-pipeline \
   --pipeline-name {{my-pipeline}} \
   --min-units 4 \

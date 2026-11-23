@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Deletes a cluster.
 
-```
+```sh
 pcluster delete [ -h ] [ -c {{CONFIG_FILE}} ] [ -r {{REGION}} ] [ -nw ] {{cluster_name}}
 ```
 
@@ -48,7 +48,7 @@ Cluster deleted successfully.
 
 To delete the network resources in the VPC, you can delete the CloudFormation networking stack. The stack name starts with "parallelclusternetworking-" and contains the creation time in "YYYYMMDDHHMMSS" format. You can list the stacks using the [list-stacks](https://docs.aws.amazon.com/goto/aws-cli/cloudformation-2010-05-15/ListStacks) command.
 
-```
+```bash
 $ aws --region {{us-east-1}} cloudformation list-stacks \
    --stack-status-filter "CREATE_COMPLETE" \
    --query "StackSummaries[].StackName" | \
@@ -58,7 +58,7 @@ $ aws --region {{us-east-1}} cloudformation list-stacks \
 
 The stack can be deleted using the [delete-stack](https://docs.aws.amazon.com/goto/aws-cli/cloudformation-2010-05-15/DeleteStack) command.
 
-```
+```bash
 $ aws --region {{us-east-1}} cloudformation delete-stack \
    --stack-name {{parallelclusternetworking-pubpriv-20191029205804}}
 ```

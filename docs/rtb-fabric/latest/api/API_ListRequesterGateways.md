@@ -71,7 +71,7 @@ The request could not be completed because of an internal server error. Try your
 HTTP Status Code: 500
 
  ** ValidationException **
-The request could not be completed because it fails satisfy the constraints specified by the service.
+The request could not be completed because it fails to satisfy the constraints specified by the service.
 HTTP Status Code: 400
 
 ## See Also

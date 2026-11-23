@@ -175,7 +175,7 @@ All of the examples use the following `ca_config.txt` configuration file unless 
 
 **File: ca\_config.txt**
 
-```
+```json
 {
    "KeyAlgorithm":"RSA_2048",
    "SigningAlgorithm":"SHA256WITHRSA",
@@ -197,7 +197,7 @@ In this example, the revocation file enables default OCSP support, which uses th
 
 **File: revoke\_config.txt for OCSP**
 
-```
+```json
 {
    "OcspConfiguration":{
       "Enabled":true
@@ -218,7 +218,7 @@ $ aws acm-pca create-certificate-authority \
 
 If successful, this command outputs the Amazon Resource Name (ARN) of the new CA.
 
-```
+```json
 {
 	"CertificateAuthorityArn":"arn:aws:acm-pca:{{region}}:{{account}}:
        certificate-authority/{{CA_ID}}"
@@ -254,7 +254,7 @@ $ aws acm-pca describe-certificate-authority \
 
 This description should contain the following section.
 
-```
+```json
 "RevocationConfiguration": {
    ...
    "OcspConfiguration": {
@@ -287,7 +287,7 @@ The value of the CNAME must not include a protocol prefix such as "http://" or "
 
 **File: revoke\_config.txt for OCSP**
 
-```
+```json
 {
    "OcspConfiguration":{
       "Enabled":true,
@@ -309,7 +309,7 @@ $ aws acm-pca create-certificate-authority \
 
 If successful, this command outputs the Amazon Resource Name (ARN) of the CA.
 
-```
+```json
 {
     "CertificateAuthorityArn":"arn:{{aws}}:acm-pca:{{us-east-1}}:{{111122223333}}:certificate-authority/{{11223344-1234-1122-2233-112233445566}}"
 }
@@ -325,7 +325,7 @@ $ aws acm-pca describe-certificate-authority \
 
 This description should contain the following section.
 
-```
+```json
 "RevocationConfiguration": {
    ...
    "OcspConfiguration": {
@@ -343,7 +343,7 @@ In this example, the revocation configuration defines CRL parameters.
 
 **File: revoke\_config.txt**
 
-```
+```json
 {
    "CrlConfiguration":{
       "Enabled":true,
@@ -366,7 +366,7 @@ $ aws acm-pca create-certificate-authority \
 
 If successful, this command outputs the Amazon Resource Name (ARN) of the CA.
 
-```
+```json
 {
     "CertificateAuthorityArn":"arn:{{aws}}:acm-pca:{{us-east-1}}:{{111122223333}}:certificate-authority/{{11223344-1234-1122-2233-112233445566}}"
 }
@@ -382,7 +382,7 @@ $ aws acm-pca describe-certificate-authority \
 
 This description should contain the following section.
 
-```
+```json
 "RevocationConfiguration": {
    ...
    "CrlConfiguration": {
@@ -401,7 +401,7 @@ In this example, the revocation configuration defines CRL parameters that includ
 
 **File: revoke\_config.txt**
 
-```
+```json
 {
    "CrlConfiguration":{
       "Enabled":true,
@@ -441,7 +441,7 @@ $ aws acm-pca describe-certificate-authority \
 
 This description should contain the following section.
 
-```
+```json
 "RevocationConfiguration": {
    ...
    "CrlConfiguration": {
@@ -521,7 +521,7 @@ This example uses the following `ca_config_AD.txt` configuration file.
 
 **File: ca\_config\_AD.txt**
 
-```
+```json
 {
    "KeyAlgorithm":"RSA_2048",
    "SigningAlgorithm":"SHA256WITHRSA",
@@ -555,7 +555,7 @@ $ aws acm-pca create-certificate-authority \
 
 If successful, this command outputs the Amazon Resource Name (ARN) of the CA.
 
-```
+```json
 {
 	"CertificateAuthorityArn":"arn:{{aws}}:acm-pca:{{us-east-1}}:{{111122223333}}:certificate-authority/{{11223344-1234-1122-2233-112233445566}}"
 	}
@@ -600,7 +600,7 @@ You can create a private CA suitable for issuing certificates for the Matter sma
 
 **File: ca\_config\_PAA.txt**
 
-```
+```json
 {
    "KeyAlgorithm":"EC_prime256v1",
    "SigningAlgorithm":"SHA256WITHECDSA",
@@ -625,7 +625,7 @@ The revocation configuration enables CRLs, and configures the CA to omit the def
 
 **File: revoke\_config.txt**
 
-```
+```json
 {
    "CrlConfiguration":{
       "Enabled":true,
@@ -651,7 +651,7 @@ $ aws acm-pca create-certificate-authority \
 
 If successful, this command outputs the Amazon Resource Name (ARN) of the CA.
 
-```
+```json
 {
     "CertificateAuthorityArn":"arn:{{aws}}:acm-pca:{{us-east-1}}:{{111122223333}}:certificate-authority/{{11223344-1234-1122-2233-112233445566}}"
 }
@@ -667,7 +667,7 @@ $ aws acm-pca describe-certificate-authority \
 
 This description should contain the following section.
 
-```
+```json
 "RevocationConfiguration": {
    ...
    "CrlConfiguration": {

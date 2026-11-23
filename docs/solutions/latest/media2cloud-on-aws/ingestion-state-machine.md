@@ -19,6 +19,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inge
 
 ![Ingestion state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-ingestion-state-machine.png)
 
+***Ingestion state machine workflow***
+
 ## Ingestion fixity sub-state machine
 <a name="ingestion-fixity-sub-state-machine"></a>
 
@@ -29,6 +31,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inge
 
 ![Ingestion fixity sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-ingestion-fixity-sub-state-machine.png)
 
+***Ingestion fixity sub-state machine workflow***
+
 ## Video ingestion sub-state machine
 <a name="video-ingestion-sub-state-machine"></a>
 
@@ -38,6 +42,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inge
 
 ![Video ingestion sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-video-ingestion-sub-state-machine.png)
 
+***Video ingestion sub-state machine workflow***
+
 ## Image ingestion sub-state machine
 <a name="image-ingestion-sub-state-machine"></a>
 
@@ -45,6 +51,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inge
 +  **Run imageinfo** - Runs [exiftool](https://exiftool.org/) to extract EXIF information from the image file, generates an image proxy file, and stores the proxies to an S3 proxy bucket.
 
 ![Image ingestion sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-image-ingestion-sub-state-machine.png)
+
+***Image ingestion sub-state machine workflow***
 
 ## Audio ingestion sub-state machine
 <a name="audio-ingestion-sub-state-machine"></a>
@@ -55,6 +63,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inge
 
 ![Audio ingestion sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-audio-ingestion-sub-state-machine.png)
 
+***Audio ingestion sub-state machine workflow** *
+
 ## Document ingestion sub-state machine
 <a name="document-ingestion-sub-state-machine"></a>
 
@@ -62,3 +72,5 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inge
 +  **Run PDFinfo and extract pages** – Runs the PDF.JS tool to extract document metadata and converts pages to PNG image proxies. The PNG image proxies are stored in an S3 proxy bucket.
 
 ![Document ingestion sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-document-ingestion-sub-state-machine.png)
+
+***Document ingestion sub-state machine workflow***

@@ -33,7 +33,7 @@ For more information, see [Running SQL Queries Using Amazon Athena](https://docs
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 
-```
+```python
     def delete_named_query(self, named_query_id: str) -> None:
         """
         Deletes a named query by its ID.

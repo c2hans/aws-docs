@@ -10,7 +10,7 @@ You can create custom parameter groups using the AWS CLI to configure your Influ
 
 Example: Creating an Enterprise parameter group with custom query settings:
 
-```
+```python
 aws timestream-influxdb create-db-parameter-group \
   --name "my-enterprise-pg" \
   --description "Custom Enterprise parameter group" \
@@ -24,7 +24,7 @@ aws timestream-influxdb create-db-parameter-group \
 
 Example: Creating a Core parameter group with custom DataFusion threading:
 
-```
+```python
 aws timestream-influxdb create-db-parameter-group \
   --name "my-core-pg" \
   --description "Custom Core parameter group" \
@@ -40,7 +40,7 @@ aws timestream-influxdb create-db-parameter-group \
 
 **Verifying your current running configuration:** You can check the effective parameter values on a running cluster by querying the `_internal` database's `nodes` table:
 
-```
+```python
 SELECT * FROM _internal.nodes
 ```
 

@@ -8,6 +8,9 @@ The following table describes the documentation for releases of Amazon Linux 202
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [AL2023 2023.12.20261120 released](relnotes-2023.12.20261120.md#release-summary-2023.12.20261120) |  [ AL2023 release notes](https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html)  | November 20, 2026 |
+| [AL2023 2023.12.20261119 released](relnotes-2023.12.20261119.md#release-summary-2023.12.20261119) |  [ AL2023 release notes](https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html)  | November 19, 2026 |
+| [AL2023 2023.12.20261118 released](relnotes-2023.12.20261118.md#release-summary-2023.12.20261118) |  [ AL2023 release notes](https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html)  | November 18, 2026 |
 | [AL2023 2023.12.20261117 released](relnotes-2023.12.20261117.md#release-summary-2023.12.20261117) |  [ AL2023 release notes](https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html)  | November 17, 2026 |
 | [AL2023 2023.12.20261112 released](relnotes-2023.12.20261112.md#release-summary-2023.12.20261112) |  [ AL2023 release notes](https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html)  | November 12, 2026 |
 | [AL2023 2023.12.20261109 released](relnotes-2023.12.20261109.md#release-summary-2023.12.20261109) |  [ AL2023 release notes](https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html)  | November 9, 2026 |

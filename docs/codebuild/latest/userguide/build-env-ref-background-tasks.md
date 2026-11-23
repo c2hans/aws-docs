@@ -9,7 +9,7 @@ You can run background tasks in build environments. To do this, in your buildspe
 **Examples:**
 + Start a background process and wait for it to complete later:
 
-  ```
+  ```bash
   |
   nohup sleep 30 & echo $! > pidfile
   …
@@ -17,13 +17,13 @@ You can run background tasks in build environments. To do this, in your buildspe
   ```
 +  Start a background process and do not wait for it to ever complete:
 
-  ```
+  ```bash
   |
   nohup sleep 30 & disown $!
   ```
 +  Start a background process and kill it later:
 
-  ```
+  ```bash
   |
   nohup sleep 30 & echo $! > pidfile
   …

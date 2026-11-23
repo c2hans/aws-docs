@@ -28,7 +28,7 @@ The following snippet deletes the queue identified by the given queue URL.
 
 The example [at the end of this topic](#DeleteSqsQueue-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to delete an SQS queue
     private static async Task DeleteQueue(IAmazonSQS sqsClient, string qUrl)
@@ -46,7 +46,7 @@ The following snippet waits for the deletion process to finish, which might take
 
 The example [at the end of this topic](#DeleteSqsQueue-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to wait up to a given number of seconds
     private static async Task Wait(
@@ -83,7 +83,7 @@ The following snippet shows a list of the existing queues in the SQS client's re
 
 The example [at the end of this topic](#DeleteSqsQueue-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to show a list of the existing queues
     private static async Task ListQueues(IAmazonSQS sqsClient)
@@ -117,7 +117,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c25c21c25b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Threading;
 using System.Threading.Tasks;

@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Return a list of DB snapshots for a particular DB cluster.
     /// </summary>
@@ -51,7 +51,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/aurora#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -84,7 +84,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -121,7 +121,7 @@ func (clusters *DbClusters) GetClusterSnapshot(ctx context.Context, snapshotName
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void waitForSnapshotReady(RdsClient rdsClient, String dbSnapshotIdentifier,
             String dbInstanceClusterIdentifier) {
         try {
@@ -164,7 +164,7 @@ func (clusters *DbClusters) GetClusterSnapshot(ctx context.Context, snapshotName
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun waitSnapshotReady(
     dbSnapshotIdentifier: String?,
     dbInstanceClusterIdentifier: String?,
@@ -207,7 +207,7 @@ suspend fun waitSnapshotReady(
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 

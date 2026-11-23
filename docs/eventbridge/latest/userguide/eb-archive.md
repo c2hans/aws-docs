@@ -84,3 +84,5 @@ Keep the following considerations in mind when replaying events from an archive:
 + Events are replayed based on, but separate from, the `PutEvents` transactions per second limit for the AWS account. You can request an increase to the limit for PutEvents. For more information, see [ Amazon EventBridge Quotas](https://docs.aws.amazon.com/eventbridge/latest/userguide/cloudwatch-limits-eventbridge.html).
 
  The following video demonstrates the use of archive and replay:
+
+[![AWS Videos](https://img.youtube.com/vi/s37BMCIGLC0/0.jpg)](https://www.youtube.com/watch?v=s37BMCIGLC0)

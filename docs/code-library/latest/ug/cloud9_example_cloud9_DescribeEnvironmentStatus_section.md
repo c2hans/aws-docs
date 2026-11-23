@@ -36,7 +36,7 @@ For more information, see [Working with environments in AWS Cloud9](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example gets status information for the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Get-C9EnvironmentStatus -EnvironmentId 349c86d4579e4e7298d500ff57a6b2EX
 ```
 **Output:**
@@ -51,7 +51,7 @@ Environment is ready to use ready
 **Tools for PowerShell V5**
 **Example 1: This example gets status information for the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Get-C9EnvironmentStatus -EnvironmentId 349c86d4579e4e7298d500ff57a6b2EX
 ```
 **Output:**

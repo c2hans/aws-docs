@@ -59,12 +59,14 @@ For **Arguments**, provide any arguments separated by a comma.
 
 ![Example of a project configuration](https://docs.aws.amazon.com/res/latest/ug/images/res-projectconfigexample.png)
 
+*Example of a project configuration*
+
 Example templates for launch scripts.
 
 ------
 #### [ Linux ]
 
-```
+```YAML
 #  Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 #
 #  Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance
@@ -89,7 +91,7 @@ echo "end of start_script.sh" >> /test_scripts
 ------
 #### [ Windows ]
 
-```
+```powershell
 #  Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 #
 #  Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance

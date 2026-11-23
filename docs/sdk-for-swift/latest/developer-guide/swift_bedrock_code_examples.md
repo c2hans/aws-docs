@@ -25,7 +25,7 @@ The following code example shows how to get started using Amazon Bedrock.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/bedrock#code-examples).
 
-```
+```swift
 import ArgumentParser
 import AWSClientRuntime
 import Foundation
@@ -176,7 +176,7 @@ The following code example shows how to use `ListFoundationModels`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/bedrock#code-examples).
 
-```
+```swift
 import AWSBedrock
 
         // Always use the Region "us-east-1" to have access to the most models.

@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_RelatedIte
 
 # RelatedItemUpdateContent
 
-Represents the content of a related item to be updated. This is a union type that can contain either comment content or custom content.
+Represents the content of a related item to be updated. This is a union type that can contain comment content, custom content, or SLA content.
 
 ## Contents
 <a name="API_connect-cases_RelatedItemUpdateContent_Contents"></a>
@@ -20,6 +20,12 @@ Required: No
  ** custom **   <a name="connect-Type-connect-cases_RelatedItemUpdateContent-custom"></a>
 Represents the updated content of a `Custom` related item.
 Type: [CustomUpdateContent](API_connect-cases_CustomUpdateContent.md) object
+Required: No
+
+ ** sla **   <a name="connect-Type-connect-cases_RelatedItemUpdateContent-sla"></a>
+Represents the content of an SLA to be updated.
+Type: [SlaUpdateContent](API_connect-cases_SlaUpdateContent.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
 ## See Also

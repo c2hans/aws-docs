@@ -22,7 +22,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb#code-examples).
 Use an INSERT statement to add an item.
 
-```
+```csharp
         /// <summary>
         /// Inserts a single movie into the movies table.
         /// </summary>
@@ -50,7 +50,7 @@ Use an INSERT statement to add an item.
 ```
 Use a SELECT statement to get an item.
 
-```
+```csharp
         /// <summary>
         /// Uses a PartiQL SELECT statement to retrieve a single movie from the
         /// movie database.
@@ -78,7 +78,7 @@ Use a SELECT statement to get an item.
 ```
 Use a SELECT statement to get a list of items.
 
-```
+```csharp
         /// <summary>
         /// Retrieve multiple movies by year using a SELECT statement.
         /// </summary>
@@ -104,7 +104,7 @@ Use a SELECT statement to get a list of items.
 ```
 Use an UPDATE statement to update an item.
 
-```
+```csharp
         /// <summary>
         /// Updates a single movie in the table, adding information for the
         /// producer.
@@ -135,7 +135,7 @@ Use an UPDATE statement to update an item.
 ```
 Use a DELETE statement to delete a single movie.
 
-```
+```csharp
         /// <summary>
         /// Deletes a single movie from the table.
         /// </summary>
@@ -170,7 +170,7 @@ Use a DELETE statement to delete a single movie.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 Use an INSERT statement to add an item.
 
-```
+```cpp
     Aws::DynamoDB::DynamoDBClient dynamoClient(clientConfiguration);
 
     // 2. Add a new movie using an "Insert" statement. (ExecuteStatement)
@@ -225,7 +225,7 @@ Use an INSERT statement to add an item.
 ```
 Use a SELECT statement to get an item.
 
-```
+```cpp
     //  3. Get the data for the movie using a "Select" statement. (ExecuteStatement)
     {
         Aws::DynamoDB::Model::ExecuteStatementRequest request;
@@ -266,7 +266,7 @@ Use a SELECT statement to get an item.
 ```
 Use an UPDATE statement to update an item.
 
-```
+```cpp
     //  4. Update the data for the movie using an "Update" statement. (ExecuteStatement)
     {
         rating = askQuestionForFloatRange(
@@ -301,7 +301,7 @@ Use an UPDATE statement to update an item.
 ```
 Use a DELETE statement to delete an item.
 
-```
+```cpp
     // 6. Delete the movie using a "Delete" statement. (ExecuteStatement)
     {
         Aws::DynamoDB::Model::ExecuteStatementRequest request;
@@ -334,7 +334,7 @@ Use a DELETE statement to delete an item.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 Define a function receiver struct for the example.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -356,7 +356,7 @@ type PartiQLRunner struct {
 ```
 Use an INSERT statement to add an item.
 
-```
+```go
 // AddMovie runs a PartiQL INSERT statement to add a movie to the DynamoDB table.
 func (runner PartiQLRunner) AddMovie(ctx context.Context, movie Movie) error {
 	params, err := attributevalue.MarshalList([]interface{}{movie.Title, movie.Year, movie.Info})
@@ -377,7 +377,7 @@ func (runner PartiQLRunner) AddMovie(ctx context.Context, movie Movie) error {
 ```
 Use a SELECT statement to get an item.
 
-```
+```go
 // GetMovie runs a PartiQL SELECT statement to get a movie from the DynamoDB table by
 // title and year.
 func (runner PartiQLRunner) GetMovie(ctx context.Context, title string, year int) (Movie, error) {
@@ -405,7 +405,7 @@ func (runner PartiQLRunner) GetMovie(ctx context.Context, title string, year int
 ```
 Use a SELECT statement to get a list of items and project the results.
 
-```
+```go
 // GetAllMovies runs a PartiQL SELECT statement to get all movies from the DynamoDB table.
 // pageSize is not typically required and is used to show how to paginate the results.
 // The results are projected to return only the title and rating of each movie.
@@ -442,7 +442,7 @@ func (runner PartiQLRunner) GetAllMovies(ctx context.Context, pageSize int32) ([
 ```
 Use an UPDATE statement to update an item.
 
-```
+```go
 // UpdateMovie runs a PartiQL UPDATE statement to update the rating of a movie that
 // already exists in the DynamoDB table.
 func (runner PartiQLRunner) UpdateMovie(ctx context.Context, movie Movie, rating float64) error {
@@ -464,7 +464,7 @@ func (runner PartiQLRunner) UpdateMovie(ctx context.Context, movie Movie, rating
 ```
 Use a DELETE statement to delete an item.
 
-```
+```go
 // DeleteMovie runs a PartiQL DELETE statement to remove a movie from the DynamoDB table.
 func (runner PartiQLRunner) DeleteMovie(ctx context.Context, movie Movie) error {
 	params, err := attributevalue.MarshalList([]interface{}{movie.Title, movie.Year})
@@ -485,7 +485,7 @@ func (runner PartiQLRunner) DeleteMovie(ctx context.Context, movie Movie) error 
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -537,7 +537,7 @@ func (movie Movie) String() string {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 Create an item using PartiQL.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -561,7 +561,7 @@ export const main = async () => {
 ```
 Get an item using PartiQL.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -586,7 +586,7 @@ export const main = async () => {
 ```
 Update an item using PartiQL.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -610,7 +610,7 @@ export const main = async () => {
 ```
 Delete an item using PartiQL.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -640,7 +640,7 @@ export const main = async () => {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
     public function insertItemByPartiQL(string $statement, array $parameters)
     {
         $this->dynamoDbClient->executeStatement([
@@ -683,7 +683,7 @@ export const main = async () => {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class PartiQLWrapper:
     """
     Encapsulates a DynamoDB resource to run PartiQL statements.
@@ -738,7 +738,7 @@ class PartiQLWrapper:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 Select a single item using PartiQL.
 
-```
+```ruby
 class DynamoDBPartiQLSingle
   attr_reader :dynamo_resource, :table
 
@@ -764,7 +764,7 @@ class DynamoDBPartiQLSingle
 ```
 Update a single item using PartiQL.
 
-```
+```ruby
 class DynamoDBPartiQLSingle
   attr_reader :dynamo_resource, :table
 
@@ -790,7 +790,7 @@ class DynamoDBPartiQLSingle
 ```
 Add a single item using PartiQL.
 
-```
+```ruby
 class DynamoDBPartiQLSingle
   attr_reader :dynamo_resource, :table
 
@@ -817,7 +817,7 @@ class DynamoDBPartiQLSingle
 ```
 Delete a single item using PartiQL.
 
-```
+```ruby
 class DynamoDBPartiQLSingle
   attr_reader :dynamo_resource, :table
 

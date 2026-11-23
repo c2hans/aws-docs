@@ -67,7 +67,7 @@ Updates the Amazon Macie configuration settings for an organization in AWS Organ
 #### PATCH schema
 <a name="admin-configuration-request-body-patch-example"></a>
 
-```
+```json
 {
   "autoEnable": boolean
 }
@@ -79,7 +79,7 @@ Updates the Amazon Macie configuration settings for an organization in AWS Organ
 #### DescribeOrganizationConfigurationResponse schema
 <a name="admin-configuration-response-body-describeorganizationconfigurationresponse-example"></a>
 
-```
+```json
 {
   "autoEnable": boolean,
   "maxAccountLimitReached": boolean
@@ -89,7 +89,7 @@ Updates the Amazon Macie configuration settings for an organization in AWS Organ
 #### Empty Schema schema
 <a name="admin-configuration-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -97,7 +97,7 @@ Updates the Amazon Macie configuration settings for an organization in AWS Organ
 #### ValidationException schema
 <a name="admin-configuration-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -106,7 +106,7 @@ Updates the Amazon Macie configuration settings for an organization in AWS Organ
 #### ServiceQuotaExceededException schema
 <a name="admin-configuration-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -115,7 +115,7 @@ Updates the Amazon Macie configuration settings for an organization in AWS Organ
 #### AccessDeniedException schema
 <a name="admin-configuration-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -124,7 +124,7 @@ Updates the Amazon Macie configuration settings for an organization in AWS Organ
 #### ResourceNotFoundException schema
 <a name="admin-configuration-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -133,7 +133,7 @@ Updates the Amazon Macie configuration settings for an organization in AWS Organ
 #### ConflictException schema
 <a name="admin-configuration-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -142,7 +142,7 @@ Updates the Amazon Macie configuration settings for an organization in AWS Organ
 #### ThrottlingException schema
 <a name="admin-configuration-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -151,7 +151,7 @@ Updates the Amazon Macie configuration settings for an organization in AWS Organ
 #### InternalServerException schema
 <a name="admin-configuration-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

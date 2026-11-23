@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List enabled controls for a target organizational unit.
     /// </summary>
@@ -107,7 +107,7 @@ For more information, see [About controls in AWS Control Tower](https://docs.aws
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Lists all enabled controls for a specific target using pagination.
      *
@@ -181,7 +181,7 @@ For more information, see [About controls in AWS Control Tower](https://docs.aws
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/controltower#code-examples).
 
-```
+```python
 class ControlTowerWrapper:
     """Encapsulates AWS Control Tower and Control Catalog functionality."""
 
@@ -246,7 +246,7 @@ class ControlTowerWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     DATA lt_enabled_controls TYPE /aws1/cl_cttenabledcontrolsumm=>tt_enabledcontrols.
     DATA lv_nexttoken TYPE /aws1/cttstring.
 

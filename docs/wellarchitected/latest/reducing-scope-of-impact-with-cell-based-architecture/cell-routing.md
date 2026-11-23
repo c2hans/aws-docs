@@ -12,6 +12,8 @@ For the router layer, it's recommended that you distribute requests to individua
 
 ![Diagram showing how to avoid multi-cell impacts](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/avoid-multi-cell-impacts.jpg)
 
+*Avoiding multi-cell impacts*
+
  Cell router features to keep in mind:
 +  Be simple as possible, but not simpler.
 +  Have request dispatching isolation between cells.

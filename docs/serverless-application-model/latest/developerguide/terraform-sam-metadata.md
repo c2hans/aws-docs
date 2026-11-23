@@ -34,7 +34,7 @@ This page contains reference information for the **sam metadata resource** resou
 ### sam metadata resource referencing a Lambda Event Function using the ZIP package type
 <a name="terraform-sam-metadata-examples-example1"></a>
 
-```
+```python.py
 # Lambda function resource
 resource "aws_lambda_function" "tf_lambda_func" {
   filename = "${path.module}/python/hello-world.zip"
@@ -64,7 +64,7 @@ resource "null_resource" "sam_metadata_function_example" {
 ### sam metadata resource referencing a Lambda Event Function using the image package type
 <a name="terraform-sam-metadata-examples-example2"></a>
 
-```
+```python.py
 resource "null_resource" "sam_metadata_function {
   triggers = {
     resource_name = "aws_lambda_function.image_function"
@@ -80,7 +80,7 @@ resource "null_resource" "sam_metadata_function {
 ### sam metadata resource referencing a Lambda layer
 <a name="terraform-sam-metadata-examples-example3"></a>
 
-```
+```python.py
 resource "null_resource" "sam_metadata_layer1" {
   triggers = {
     resource_name = "aws_lambda_layer_version.layer"

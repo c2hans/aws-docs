@@ -35,7 +35,7 @@ In the policy, we recommend using the IAM JSON policy element [Resource](https:/
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

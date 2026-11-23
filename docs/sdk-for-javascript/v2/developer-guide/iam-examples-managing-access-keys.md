@@ -37,7 +37,7 @@ To set up and run this example, you must first complete these tasks:
 
 Create a Node.js module with the file name `iam_createaccesskeys.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create a JSON object containing the parameters needed to create new access keys, which includes IAM user's name. Call the `createAccessKey` method of the `AWS.IAM` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -68,7 +68,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `iam_listaccesskeys.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create a JSON object containing the parameters needed to retrieve the user's access keys, which includes IAM user's name and optionally the maximum number of access key pairs you want listed. Call the `listAccessKeys` method of the `AWS.IAM` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -93,7 +93,7 @@ iam.listAccessKeys(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node iam_listaccesskeys.js
 ```
 
@@ -104,7 +104,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `iam_accesskeylastused.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create a JSON object containing the parameters needed to create new access keys, which is the access key ID for which you want the last use information. Call the `getAccessKeyLastUsed` method of the `AWS.IAM` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -127,7 +127,7 @@ iam.getAccessKeyLastUsed(
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node iam_accesskeylastused.js
 ```
 
@@ -138,7 +138,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `iam_updateaccesskey.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create a JSON object containing the parameters needed to update the status of an access keys, which includes the access key ID and the updated status. The status can be `Active` or `Inactive`. Call the `updateAccessKey` method of the `AWS.IAM` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -164,7 +164,7 @@ iam.updateAccessKey(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node iam_updateaccesskey.js
 ```
 
@@ -175,7 +175,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `iam_deleteaccesskey.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create a JSON object containing the parameters needed to delete access keys, which includes the access key ID and the name of the user. Call the `deleteAccessKey` method of the `AWS.IAM` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -200,7 +200,7 @@ iam.deleteAccessKey(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node iam_deleteaccesskey.js
 ```
 

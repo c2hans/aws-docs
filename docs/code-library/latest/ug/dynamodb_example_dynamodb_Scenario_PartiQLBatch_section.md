@@ -18,7 +18,7 @@ The following code examples show how to:
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb#code-examples).
 
-```
+```csharp
 // Before you run this example, download 'movies.json' from
 // https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Js.02.html,
 // and put it in the same folder as the example.
@@ -427,7 +427,7 @@ void WaitForEnter()
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         //  1. Create a table. (CreateTable)
         if (AwsDoc::DynamoDB::createMoviesDynamoDBTable(clientConfig)) {
@@ -851,7 +851,7 @@ bool AwsDoc::DynamoDB::waitTableActive(const Aws::String &tableName,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 Run a scenario that creates a table and runs batches of PartiQL queries.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -984,7 +984,7 @@ func RunPartiQLBatchScenario(ctx context.Context, sdkConfig aws.Config, tableNam
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -1029,7 +1029,7 @@ func (movie Movie) String() string {
 ```
 Create a struct and methods that run PartiQL statements.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -1202,7 +1202,7 @@ func (runner PartiQLRunner) DeleteMovieBatch(ctx context.Context, movies []Movie
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 
-```
+```java
 public class ScenarioPartiQLBatch {
     public static void main(String[] args) throws IOException {
         String tableName = "MoviesPartiQBatch";
@@ -1613,7 +1613,7 @@ public class ScenarioPartiQLBatch {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 Execute batch PartiQL statements.
 
-```
+```javascript
 import {
   BillingMode,
   CreateTableCommand,
@@ -1813,7 +1813,7 @@ this table, the scenario cannot continue. Delete it?`,
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun main() {
     val ddb = DynamoDbClient.fromEnvironment { region = "us-east-1" }
     val tableName = "MoviesPartiQBatch"
@@ -2041,7 +2041,7 @@ suspend fun deleteTablePartiQLBatch(tableNameVal: String) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
 namespace DynamoDb\PartiQL_Basics;
 
 use Aws\DynamoDb\Marshaler;
@@ -2249,7 +2249,7 @@ class GettingStartedWithPartiQLBatch
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 Create a class that can run batches of PartiQL statements.
 
-```
+```python
 from datetime import datetime
 from decimal import Decimal
 import logging
@@ -2312,7 +2312,7 @@ class PartiQLBatchWrapper:
 ```
 Run a scenario that creates a table and runs PartiQL queries in batches.
 
-```
+```python
 def run_scenario(scaffold, wrapper, table_name):
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
@@ -2425,7 +2425,7 @@ if __name__ == "__main__":
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 Run a scenario that creates a table and runs batch PartiQL queries.
 
-```
+```ruby
   table_name = "doc-example-table-movies-partiql-#{rand(10**4)}"
   scaffold = Scaffold.new(table_name)
   sdk = DynamoDBPartiQLBatch.new(table_name)

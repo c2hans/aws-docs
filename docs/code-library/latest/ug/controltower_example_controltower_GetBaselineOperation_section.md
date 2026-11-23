@@ -14,7 +14,7 @@ The following code examples show how to use `GetBaselineOperation`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the status of a baseline operation.
     /// </summary>
@@ -80,7 +80,7 @@ For more information, see [Types of baselines](https://docs.aws.amazon.com/contr
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Gets the status of a baseline operation.
      *
@@ -150,7 +150,7 @@ For more information, see [Types of baselines](https://docs.aws.amazon.com/contr
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/controltower#code-examples).
 
-```
+```python
 class ControlTowerWrapper:
     """Encapsulates AWS Control Tower and Control Catalog functionality."""
 
@@ -202,7 +202,7 @@ class ControlTowerWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     DATA(lo_output) = io_ctt->getbaselineoperation(
       iv_operationidentifier = iv_operation_id
     ).

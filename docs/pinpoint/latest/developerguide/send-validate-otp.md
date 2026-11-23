@@ -77,7 +77,7 @@ In the preceding command, do the following:
 
 When you successfully send an OTP message, you receive a response that resembles the following example:
 
-```
+```json
 {
     "MessageResponse": {
         "ApplicationId": "7353f53e6885409fa32d07cedexample",

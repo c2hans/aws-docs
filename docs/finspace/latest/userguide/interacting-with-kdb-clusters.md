@@ -75,7 +75,7 @@ Next, using their IAM credentials, connecting users will request a SigV4 signed 
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -102,7 +102,7 @@ Next, using their IAM credentials, connecting users will request a SigV4 signed 
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

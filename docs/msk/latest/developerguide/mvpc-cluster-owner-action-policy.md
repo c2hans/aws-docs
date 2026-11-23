@@ -16,7 +16,7 @@ The cluster owner must attach a cluster policy to the MSK cluster that authorize
 For reference, the following is an example of the JSON for a basic cluster policy, similar to the default policy shown in the MSK console IAM policy editor. The following policy grants permissions for cluster, topic, and group-level access.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

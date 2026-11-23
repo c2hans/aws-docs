@@ -11,7 +11,7 @@ The following is a policy template with all of the video permissions you need fo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -89,7 +89,7 @@ You can scope down the access of your Amazon Kinesis Video Streams and AWS IoT S
 
 You can then add this condition to the kinesisvideo and iotsitewise statements in the `{{YourWorkspaceId}}DashboardPolicy`:
 
-```
+```json
 "Condition": {
   "StringLike": {
     "aws:ResourceTag/EdgeConnectorForKVS": "*{{workspaceId}}*"
@@ -106,7 +106,7 @@ You can achieve this permission separation by tagging groups of cameras based on
 
 To amend the `{{YourWorkspaceId}}DashboardPolicy`, use the following policy statements:
 
-```
+```json
 ...,
 {
   "Effect": "Allow",
@@ -146,7 +146,7 @@ Providing this permission turns on the [video upload request feature in the Vide
 
 To give iotsitewise:BatchPutAssetPropertyValue permissions, use the default policy:
 
-```
+```json
 ...,
 {
   "Effect": "Allow",
@@ -165,7 +165,7 @@ To give iotsitewise:BatchPutAssetPropertyValue permissions, use the default poli
 
 By using this policy, users can call BatchPutAssetPropertyValue for any property on the AWS IoT SiteWise camera asset. You can restrict authorization for a specific propertyId by specifying it in the statement’s condition.
 
-```
+```json
 {
   ...
   "Condition": {
@@ -179,7 +179,7 @@ By using this policy, users can call BatchPutAssetPropertyValue for any property
 
 The Video Player panel in Grafana ingests data into the measurement property, named VideoUploadRequest, to initiate the uploading of video from the edge cache to Kinesis Video Streams. Find the propertyId of this property in the AWS IoT SiteWise Console. To amend the `{{YourWorkspaceId}}DashboardPolicy`, use the following policy statement:
 
-```
+```json
 ...,
 {
   "Effect": "Allow",

@@ -17,7 +17,7 @@ You can specify either a batch transform input or an endpoint input, but not bot
 
 To schedule a data quality monitor for a real-time endpoint, pass your `EndpointInput` instance to the `endpoint_input` argument of your `DefaultModelMonitor` instance, as shown in the following code sample:
 
-```
+```py
 from sagemaker.model_monitor import CronExpressionGenerator
 
 data_quality_model_monitor = DefaultModelMonitor(
@@ -46,7 +46,7 @@ schedule = data_quality_model_monitor.create_monitoring_schedule(
 
 To schedule a data quality monitor for a batch transform job, pass your `BatchTransformInput` instance to the `batch_transform_input` argument of your `DefaultModelMonitor` instance, as shown in the following code sample:
 
-```
+```py
 from sagemaker.model_monitor import CronExpressionGenerator
 
 data_quality_model_monitor = DefaultModelMonitor(

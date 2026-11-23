@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::SourceEndpoint SrtCallerStandardSourceEndpointConfiguration
 
-<a name="aws-properties-mediaconnect-sourceendpoint-srtcallerstandardsourceendpointconfiguration-description"></a>The `SrtCallerStandardSourceEndpointConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::SourceEndpoint](aws-resource-mediaconnect-sourceendpoint.md).
+The configuration settings for a source endpoint that uses SRT in caller mode.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-srtcallerstandardsourceendpointconfiguration-syntax"></a>
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-srtcallerstandardsourceendpointconfiguration-properties"></a>
 
 `DestinationIngestPort`  <a name="cfn-mediaconnect-sourceendpoint-srtcallerstandardsourceendpointconfiguration-destinationingestport"></a>
-Property description not available.
+The port on which the destination listens for the connection. The valid range is 3000 to 30000.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `3000`
@@ -46,13 +46,13 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EncryptionPassphrase`  <a name="cfn-mediaconnect-sourceendpoint-srtcallerstandardsourceendpointconfiguration-encryptionpassphrase"></a>
-Property description not available.
+The configuration for the AWS Secrets Manager secret that holds the key or passphrase used to encrypt an endpoint connection.
 *Required*: No
 *Type*: [EndpointEncryptionSecretConfiguration](aws-properties-mediaconnect-sourceendpoint-endpointencryptionsecretconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MinimumLatencyMilliseconds`  <a name="cfn-mediaconnect-sourceendpoint-srtcallerstandardsourceendpointconfiguration-minimumlatencymilliseconds"></a>
-Property description not available.
+The minimum latency, in milliseconds, for the SRT connection. The valid range is 10 to 10000.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `10`

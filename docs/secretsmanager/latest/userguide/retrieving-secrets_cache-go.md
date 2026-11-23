@@ -31,7 +31,7 @@ For more information, see [Permissions reference](auth-and-access.md#reference_i
 **Example Retrieve a secret**
 The following code example shows a Lambda function that retrieves a secret.
 
-```
+```go
 package main
 
 import (

@@ -20,7 +20,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch-logs/scenarios/syslog_ingestion#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class SyslogIngestionScenario:
     """Interactive scenario demonstrating CloudWatch Logs syslog ingestion."""
 
@@ -428,7 +428,7 @@ class SyslogIngestionScenario:
 ```
 Create a class that wraps CloudWatch Logs operations.
 
-```
+```python
 class CloudWatchLogsWrapper:
     """Encapsulates Amazon CloudWatch Logs actions."""
 

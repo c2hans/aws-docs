@@ -38,7 +38,7 @@ For more information, see [Using dead-letter queues in Amazon SQS](https://docs.
 **Tools for PowerShell V4**
 **Example 1: This example lists the URLs of any queues that rely on the specified queue as their dead letter queue.**
 
-```
+```powershell
 Get-SQSDeadLetterSourceQueue -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyDeadLetterQueue
 ```
 **Output:**
@@ -52,7 +52,7 @@ https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyOtherQueue
 **Tools for PowerShell V5**
 **Example 1: This example lists the URLs of any queues that rely on the specified queue as their dead letter queue.**
 
-```
+```powershell
 Get-SQSDeadLetterSourceQueue -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyDeadLetterQueue
 ```
 **Output:**

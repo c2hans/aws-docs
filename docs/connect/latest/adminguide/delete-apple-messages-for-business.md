@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/delete-apple-m
 
 1. In the **Use case description** box, copy and paste the following template to indicate this is an **delete** request:
 
-   ```
+   ```json
    Subject: Delete Apple Messages for Business Integration
    Body:
      Apple Messages for Business Account ID (required): {{enter your account ID}}

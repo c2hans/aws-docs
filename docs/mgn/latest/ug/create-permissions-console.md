@@ -37,7 +37,7 @@ The **AWSApplicationMigrationConnectorManagementRole** role is the role that is 
 
 The role is created with the following trust relationship:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -60,7 +60,7 @@ The following policies are attached to the role:
 
 The **MgnConnectorPolicy** inline policy contains the following permissions. In the example, replace {{111122223333}} with the ID of the account in which the role is created, and {{us-east-1}} with the Region in which you added the connector:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -139,7 +139,7 @@ MGN supports cross-account scenarios: the role must exist in *every* account tha
 
 The role is created with the following trust relationship, where *management-account-id* is the account in which the connector was added:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

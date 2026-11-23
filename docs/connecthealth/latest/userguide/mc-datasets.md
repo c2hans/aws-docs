@@ -88,7 +88,7 @@ The `config` object accepts one feature member. For medical coding, that member 
 
 The following example shows a `CreateDataset` request body:
 
-```
+```json
 {
   "name": "family-medicine-2025",
   "config": {
@@ -147,7 +147,7 @@ To produce the scores, the service sets aside 10 percent of your encounters, up 
 
 The following example shows the `artifacts` object in a `GetDataset` response:
 
-```
+```json
 {
   "artifacts": {
     "medicalCoding": {
@@ -185,7 +185,7 @@ To code against a dataset, include its `datasetId` in the `StartMedicalCodingJob
 
 The following example request body uses synthetic clinical text and codes against a dataset.
 
-```
+```json
 {
   "clientToken": "encounter-20260311-000456",
   "datasetId": "a1b2c3d4e5f6g7h8i9j0k",

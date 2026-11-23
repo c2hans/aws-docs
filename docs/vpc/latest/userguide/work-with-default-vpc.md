@@ -71,7 +71,7 @@ aws ec2 create-default-vpc
 
 The following is example output.
 
-```
+```json
 {
     "Vpc": {
         "VpcId": "vpc-3f139646",
@@ -115,7 +115,7 @@ aws ec2 create-default-subnet --availability-zone us-east-2a
 
 The following is example output.
 
-```
+```json
 {
     "Subnet": {
         "AvailabilityZone": "us-east-2a",

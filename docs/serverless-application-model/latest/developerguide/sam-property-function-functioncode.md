@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-functioncode-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#sam-function-functioncode-bucket): {{String}}
   [Key](#sam-function-functioncode-key): {{String}}
   [StorageMode](#sam-function-functioncode-storagemode): {{String}}
@@ -64,7 +64,7 @@ For versioned objects, the version of the deployment package object to use.
 #### YAML
 <a name="sam-property-function-functioncode--examples--functioncode--yaml"></a>
 
-```
+```yaml
 CodeUri:
   Bucket: sam-s3-demo-bucket-name
   Key: mykey-name
@@ -79,7 +79,7 @@ The following `CodeUri` references the deployment package from your own Amazon S
 #### YAML
 <a name="sam-property-function-functioncode--examples--storagemode--yaml"></a>
 
-```
+```yaml
 CodeUri:
   Bucket: amzn-s3-demo-bucket-name
   Key: mykey-name

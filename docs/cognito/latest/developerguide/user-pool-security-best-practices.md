@@ -80,7 +80,7 @@ You can limit levels of user pool administration with least-privilege `Action` l
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -130,7 +130,7 @@ The following example policy grants user and group management and authentication
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -24,8 +24,9 @@ Pattern: `[\w+=,.@-]+`
 Required: Yes
 
  ** MaxSigninSessionDuration **
-The maximum duration (in seconds) of an AWS Sign-In session for the user.
-This member is omitted when the setting is unset. In that case, no default value is returned and the existing sign-in session behavior applies.
+The maximum duration (in seconds) of an AWS Sign-In session that uses this login profile (the user name and password).
+This setting applies only to sessions created through OAuth-based flows (`signin:CreateOAuth2Token`). It does not affect AWS Management Console browser sessions or traditional STS sessions.
+If no value is configured, the existing sign-in session behavior applies.
 Type: Integer
 Valid Range: Minimum value of 3600. Maximum value of 7776000.
 Required: No

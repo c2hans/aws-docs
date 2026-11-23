@@ -33,7 +33,7 @@ If deletion protection is enabled, you'll need to disable it before you can choo
 **To delete a policy store**
 You can delete a policy store by using the `delete-policy-store` operation, replacing `{{PSEXAMPLEabcdefg111111}}` with the policy store ID you want to delete.
 
-```
+```bash
 $ aws verifiedpermissions delete-policy-store \
     --policy-store-id {{PSEXAMPLEabcdefg111111}}
 ```

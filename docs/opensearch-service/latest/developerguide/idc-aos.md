@@ -32,7 +32,7 @@ Before you configure IAM Identity Center, you must update the domain access poli
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -76,7 +76,7 @@ Amazon OpenSearch Service can support up to **100 groups** for a single user. If
 ## Configuring IAM Identity Center authentication and authorization (CLI)
 <a name="idc-configure-cli"></a>
 
-```
+```bash
 	 aws opensearch update-domain-config \
 	     --domain-name {{my-domain}} \
 	     --identity-center-options '{"EnabledAPIAccess": {{true}}, "IdentityCenterInstanceARN": "{{instance arn}}",  "SubjectKey": "{{UserId/UserName/UserEmail}}" , "RolesKey": "{{GroupId/GroupName}}"}'
@@ -97,7 +97,7 @@ To disable IAM Identity Center on your OpenSearch domain:
 
 To disable IAM Identity Center through CLI, you can use following
 
-```
+```bash
 	 aws opensearch update-domain-config \
 	     --domain-name {{my-domain}} \
 	     --identity-center-options '{"EnabledAPIAccess": {{false}}}'

@@ -9,6 +9,8 @@ Step Functions recently added variables and JSONata to manage state and transfor
 Learn more in the blog post [Simplifying developer experience with variables and JSONata in AWS Step Functions](https://aws.amazon.com/blogs/compute/simplifying-developer-experience-with-variables-and-jsonata-in-aws-step-functions/)
  The following video describes variables and JSONata in Step Functions with a DynamoDB example:
 
+[![AWS Videos](https://img.youtube.com/vi/aoKt7Aw2a1I/0.jpg)](https://www.youtube.com/watch?v=aoKt7Aw2a1I)
+
  With variables and state output, you can pass data between the steps of your workflow.
 
  Using workflow variables, you can store data in a step and retrieve that data in future steps. For example, you could store an API response that contains data you might need later. Conversely, state output can only be used as input to the very next step.
@@ -32,7 +34,7 @@ Learn more in the blog post [Simplifying developer experience with variables and
 
  To set a variable, provide a JSON object with variable names and values:
 
-```
+```json
 "Assign": {
   "productName": "product1",
   "count" : 42,
@@ -47,7 +49,7 @@ Learn more in the blog post [Simplifying developer experience with variables and
 
  Step Functions defines a single reserved variable called **`$states`**. In JSONata states, the following structures are assigned to `$states` for use in JSONata expressions:
 
-```
+```text
 # Reserved $states variable in JSONata states
 $states = {
   "input":       // Original input to the state
@@ -98,7 +100,7 @@ Workflow-local scope includes all states inside a state machine's **States** fie
 
  The `Assign` field in ASL is used to assign values to one or more variables. The `Assign` field is available at the top level of each state (except `Succeed` and `Fail`), inside `Choice` state rules, and inside `Catch` fields. For example:
 
-```
+```json
 # Example of Assign with JSONata
 "Store inputs": {
     "Type": "Pass",
@@ -119,7 +121,7 @@ Workflow-local scope includes all states inside a state machine's **States** fie
 
  The following JSONata example retrieves `order.product` from the state input. The variable `currentPrice` is set to a value from the result of the task.
 
-```
+```json
 # Example of Task with JSONata assignment from result
 {
    "Type": "Task",
@@ -141,7 +143,7 @@ All variable references in Step Functions states use the values as they were on 
 
 The previous fact is important to understand how the `Assign` field assigns values to one or more variables. First, new values are calculated, then Step Functions assigns the new values to the variables. The new variable values will be available starting with the **next **state. For example, consider the following `Assign` field:
 
-```
+```json
 # Starting values: $x=3, $a=6
 
 "Assign": {
@@ -202,7 +204,7 @@ Let's go through the example in detail. Assume that in a previous state, `$x` wa
 
  JSONPath variable assignments behave similarly to payload templates. Fields that end with `.$` indicate the value is a JSONPath expression which Step Functions evaluates to a value during state machine execution (for example: `$.order..product` and `$.order.total`).
 
-```
+```json
 # Example of Assign with JSONPath
 {
   "Type": "Task",
@@ -219,7 +221,7 @@ Let's go through the example in detail. Assume that in a previous state, `$x` wa
 
  The following JSONPath example assigns a JSON object to the `details` variable, the result of the JSONPath expression `$.result.code` to `resultCode`, and the result of the JSONPath expression `States.Format('Hello {}', $customer.name)` to `message`. If this was in a `Task` state, then `$` in `$.order.items` and `$.result.code` refers to the API result. The `startTime` variable is assigned with a value from the Context object, `$$.Execution.StartTime`.
 
-```
+```json
 "Assign": {
    "details": {
       "status": "SUCCESS",

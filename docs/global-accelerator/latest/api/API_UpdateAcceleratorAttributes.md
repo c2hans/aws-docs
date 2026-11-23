@@ -117,7 +117,7 @@ aws globalaccelerator update-accelerator-attributes \
        --region us-west-2
 ```
 
-```
+```json
 {
     "AcceleratorAttributes": {
         "FlowLogsEnabled": true,

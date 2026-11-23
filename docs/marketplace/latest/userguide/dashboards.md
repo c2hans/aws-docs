@@ -45,7 +45,7 @@ The following example provides access to current and future AWS Marketplace reso
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -71,7 +71,7 @@ You can also provide access to one or more dashboards by including their ARNs. T
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -14,7 +14,7 @@ To learn about the list of available instances supported by SageMaker training p
 
 The following example uses an AWS CLI command to request training plan offerings with a specified instance type, count, and time information.
 
-```
+```sh
 # List training plan offerings with instance type, instance count, duration in hours, start time after, and end time before.
 aws sagemaker search-training-plan-offerings \
 --target-resources "{{training-job}}" \
@@ -27,7 +27,7 @@ aws sagemaker search-training-plan-offerings \
 
 This JSON document is a sample response from the SageMaker training plans API. The response provides information about multiple available training plan offerings that match the specified capacity requirements. It includes three distinct offerings with varying durations, upfront fees, and start/end times, all using the same instance type and targeting training jobs.
 
-```
+```JSON
 {
     "TrainingPlanOfferings": [
         {
@@ -112,7 +112,7 @@ aws sagemaker search-training-plan-offerings \
 --end-time-before "1737657600"
 ```
 
-```
+```JSON
 {
     "TrainingPlanOfferings": [
         {

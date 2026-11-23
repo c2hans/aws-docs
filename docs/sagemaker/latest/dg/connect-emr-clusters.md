@@ -134,7 +134,7 @@ For self-signed or local Certificate Authority (CA) signed certificates, you can
 
 1. Enable the validation of the certificate by providing the path to your certificate in the `--verify-certificate` argument of your connection command.
 
-   ```
+   ```bash
    %sm_analytics emr connect --cluster-id {{cluster_id}} \
    --verify-certificate {{/home/user/certificateKey.pem}} ...
    ```

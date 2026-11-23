@@ -24,7 +24,7 @@ The following code example shows how to use `CreateVocabulary`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tnb#code-examples).
 
-```
+```sap-abap
     TRY.
         IF it_phrases IS NOT INITIAL.
           oo_result = lo_tnb->createvocabulary(
@@ -62,7 +62,7 @@ The following code example shows how to use `DeleteTranscriptionJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tnb#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_tnb->deletetranscriptionjob( iv_job_name ).
         MESSAGE 'Transcription job deleted.' TYPE 'I'.
@@ -87,7 +87,7 @@ The following code example shows how to use `DeleteVocabulary`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tnb#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_tnb->deletevocabulary( iv_vocabulary_name ).
         MESSAGE 'Vocabulary deleted.' TYPE 'I'.
@@ -113,7 +113,7 @@ The following code example shows how to use `GetTranscriptionJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tnb#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_tnb->gettranscriptionjob( iv_job_name ).
         DATA(lo_job) = oo_result->get_transcriptionjob( ).
@@ -139,7 +139,7 @@ The following code example shows how to use `GetVocabulary`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tnb#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_tnb->getvocabulary( iv_vocabulary_name ).
         MESSAGE 'Retrieved vocabulary details.' TYPE 'I'.
@@ -164,7 +164,7 @@ The following code example shows how to use `ListTranscriptionJobs`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tnb#code-examples).
 
-```
+```sap-abap
     TRY.
         IF iv_job_filter IS NOT INITIAL.
           oo_result = lo_tnb->listtranscriptionjobs( iv_jobnamecontains = iv_job_filter ).
@@ -190,7 +190,7 @@ The following code example shows how to use `ListVocabularies`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tnb#code-examples).
 
-```
+```sap-abap
     TRY.
         IF iv_vocab_filter IS NOT INITIAL.
           oo_result = lo_tnb->listvocabularies( iv_namecontains = iv_vocab_filter ).
@@ -216,7 +216,7 @@ The following code example shows how to use `StartTranscriptionJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tnb#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_media) = NEW /aws1/cl_tnbmedia( iv_mediafileuri = iv_media_uri ).
         DATA(lo_settings) = NEW /aws1/cl_tnbsettings( ).
@@ -256,7 +256,7 @@ The following code example shows how to use `UpdateVocabulary`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tnb#code-examples).
 
-```
+```sap-abap
     TRY.
         IF it_phrases IS NOT INITIAL.
           oo_result = lo_tnb->updatevocabulary(

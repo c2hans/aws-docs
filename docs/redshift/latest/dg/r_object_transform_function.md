@@ -61,7 +61,7 @@ If *input* isn’t a SUPER type *object*, OBJECT\_TRANSFORM returns *input*, reg
 
 The following example transforms a SUPER object into another SUPER object.
 
-```
+```sql
 CREATE TABLE employees (
     col_person SUPER
 );

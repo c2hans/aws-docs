@@ -17,7 +17,7 @@ FFmpeg is not available from the `deadline-cloud` conda channel. To run this bun
 
 Submit the bundle:
 
-```
+```bash
 deadline bundle submit ffmpeg_encode_video/ \
   -p InputDir={{path-to-frames}} \
   -p InputFilePattern="render.####.png" \

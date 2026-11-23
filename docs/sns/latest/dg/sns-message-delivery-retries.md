@@ -92,7 +92,7 @@ When the publishing (inbound) traffic exceeds the delivery (outbound) rate, it c
 
 The following delivery policy example overrides the default content type for HTTP/S notification to `application/json`.
 
-```
+```json
 {
     "healthyRetryPolicy": {
         "minDelayTarget": 1,

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/bitbucket-web
 
  To create a webhook filter that triggers a build for pull requests only, insert the following into the request syntax:
 
-```
+```json
 "filterGroups": [
   [
     {
@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/bitbucket-web
 + The first filter group specifies pull requests that are created or updated on branches with Git reference names that match the regular expression `^refs/heads/main$` and head references that match `^refs/heads/myBranch$`.
 + The second filter group specifies push requests on branches with Git reference names that match the regular expression `^refs/heads/myBranch$`.
 
-```
+```json
 "filterGroups": [
   [
     {
@@ -54,7 +54,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/bitbucket-web
 
  You can use the `excludeMatchedPattern` parameter to specify which events do not trigger a build. In this example, a build is triggered for all requests except tag events.
 
-```
+```json
 "filterGroups": [
   [
     {
@@ -75,7 +75,7 @@ You can create a filter that triggers a build only when a change is made by a Bi
 **Note**
  For information about how to find your Bitbucket account ID, see https://api.bitbucket.org/2.0/users/{{user-name}}, where {{user-name}} is your Bitbucket user name.
 
-```
+```json
 "filterGroups": [
   [
     {
@@ -92,7 +92,7 @@ You can create a filter that triggers a build only when a change is made by a Bi
 
 You can create a filter that triggers a build only when files with names that match the regular expression in the `pattern` argument change. In this example, the filter group specifies that a build is triggered only when files with a name that matches the regular expression `^buildspec.*` change.
 
-```
+```json
 "filterGroups": [
   [
     {
@@ -109,7 +109,7 @@ You can create a filter that triggers a build only when files with names that ma
 
 In this example, the filter group specifies that a build is triggered only when files are changed in `src` or `test` folders.
 
-```
+```json
 "filterGroups": [
     [
         {
@@ -126,7 +126,7 @@ In this example, the filter group specifies that a build is triggered only when 
 
 You can create a filter that triggers a build only when the head commit message matches the regular expression in the pattern argument. In this example, the filter group specifies that a build is triggered only when the head commit message of the push event matches the regular expression `\[CodeBuild\]`.
 
-```
+```json
   "filterGroups": [
     [
       {

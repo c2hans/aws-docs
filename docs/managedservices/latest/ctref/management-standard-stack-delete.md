@@ -127,14 +127,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-standard-stack-delete-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-standard-stack-delete-ex-max"></a>
 
-```
+```json
 {
   "StackId": "stack-a1b2c3d4e5f67890e",
   "TimeoutInMinutes": 720

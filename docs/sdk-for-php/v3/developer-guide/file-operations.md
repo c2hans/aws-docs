@@ -11,7 +11,7 @@ S3 Transfer Manager provides methods for uploading and downloading individual fi
 
 To upload a file to Amazon S3, use the `upload` {{<add link>}} method.
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\UploadRequest;
@@ -96,7 +96,7 @@ When the `upload` method runs successfully, it returns an `UploadResult` {{<add 
 
 To download an object from Amazon S3, use the `download` {{<add link>}} method.
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\DownloadRequest;
@@ -176,7 +176,7 @@ When the `download` method runs successfully, it returns an `DownloadResult` {{<
 
 To download an S3 object directly to a local file, use the `downloadFile` method:
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\DownloadFileRequest;

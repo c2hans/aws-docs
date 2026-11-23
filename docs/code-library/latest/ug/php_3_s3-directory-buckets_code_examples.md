@@ -35,7 +35,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3/express#code-examples).
 Run a scenario demonstrating the basics of Amazon S3 directory buckets and S3 Express One Zone.
 
-```
+```php
         echo "\n";
         echo "--------------------------------------\n";
         echo "Welcome to the Amazon S3 Express Basics demo using PHP!\n";

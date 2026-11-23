@@ -51,7 +51,7 @@ If *geom1* and *geom2* don't have the same value for the spatial reference syste
 
 The following SQL returns a new linestring where the second point of the input linestring is set to the specified point.
 
-```
+```sql
 SELECT ST_AsText(ST_SetPoint(ST_GeomFromText('LINESTRING(1 2, 3 2, 5 2, 1 2)'), 2, ST_GeomFromText('POINT(7 9)')));
 ```
 
@@ -63,7 +63,7 @@ st_astext
 
 The following SQL example returns a new linestring where the third point from the right (the index is negative) of the linestring is set to the specified point.
 
-```
+```sql
 SELECT ST_AsText(ST_SetPoint(ST_GeomFromText('LINESTRING(1 2, 3 2, 5 2, 1 2)'), -3, ST_GeomFromText('POINT(7 9)')));
 ```
 

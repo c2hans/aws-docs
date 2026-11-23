@@ -13,7 +13,7 @@ aws elemental-inference list-question-set-versions \
 
 The following example shows a response.
 
-```
+```json
 {
   "versions": [
     {

@@ -90,7 +90,7 @@ For more information, see [Edit attributes for your Application Load Balancer](h
 **Tools for PowerShell V4**
 **Example 1: This command describes the attributes of given Load balancer.**
 
-```
+```powershell
 Get-ELB2LoadBalancerAttribute -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/net/test-elb/238d34ad8d94bc2e'
 ```
 **Output:**
@@ -109,7 +109,7 @@ access_logs.s3.bucket
 **Tools for PowerShell V5**
 **Example 1: This command describes the attributes of given Load balancer.**
 
-```
+```powershell
 Get-ELB2LoadBalancerAttribute -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/net/test-elb/238d34ad8d94bc2e'
 ```
 **Output:**

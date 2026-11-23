@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="tagresource-post-cli"></a>
 
-```
+```bash
 aws greengrass tag-resource \
   --resource-arn <value> \
   [--tags <value>]  \
@@ -25,7 +25,7 @@ aws greengrass tag-resource \
 
 cli-input-json format:
 
-```
+```json
 {
 "tags": {
   "keyName0": "string",
@@ -58,7 +58,7 @@ HTTP Status Code 204: Successful response.
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

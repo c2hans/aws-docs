@@ -39,7 +39,7 @@ You can create an SSM document using the empty SSM document template below and a
 It is your responsibility to make sure that the SSM document performs the correct and required actions for your workload.
 The SSM document must include required fields for `allowedValues`, including `pre-script`, `post-script`, and `dry-run`. Amazon Data Lifecycle Manager will execute commands on your instance based on the contents of those sections. If your SSM document does not have those sections, then Amazon Data Lifecycle Manager will treat it as a failed execution.
 
-```
+```yaml
 ###===============================================================================###
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
@@ -187,7 +187,7 @@ Use one of the following methods to add the **AWSDataLifecycleManagerSSMFullAcce
 **To attach the managed policy to your custom role**
 Use the [ attach-role-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html) command. For `---role-name`, specify the name of your custom role. For `--policy-arn`, specify `arn:aws:iam::aws:policy/AWSDataLifecycleManagerSSMFullAccess`.
 
-```
+```bash
 $ aws iam attach-role-policy \
 --policy-arn arn:aws:iam::aws:policy/AWSDataLifecycleManagerSSMFullAccess \
 --role-name {{your_role_name}}
@@ -242,7 +242,7 @@ If you get the `Role with name AWSDataLifecycleManagerDefaultRole already exists
 **To create the snapshot lifecycle policy**
 Use the [ create-lifecycle-policy](https://docs.aws.amazon.com/cli/latest/reference/dlm/create-lifecycle-policy.html) command, and include the `Scripts` parameters in `CreateRule`. For more information about the parameters, see the [*Amazon Data Lifecycle Manager API Reference*](https://docs.aws.amazon.com/dlm/latest/APIReference/API_Script.html).
 
-```
+```bash
 $ aws dlm create-lifecycle-policy \
 --description "{{policy_description}}" \
 --state ENABLED \
@@ -252,7 +252,7 @@ $ aws dlm create-lifecycle-policy \
 
 Where `policyDetails.json` includes the following.
 
-```
+```json
 {
     "PolicyType": "EBS_SNAPSHOT_MANAGEMENT",
     "ResourceTypes": [

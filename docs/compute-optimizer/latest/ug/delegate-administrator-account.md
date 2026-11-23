@@ -55,7 +55,7 @@ Use the following procedures to register, update, or remove a delegated administ
 
 1. Call the following API operation. Replace {{123456789012}} with your account ID.
 
-   ```
+   ```bash
    aws organizations register-delegated-administrator \
                                            --account-id {{123456789012}} \
                                            --service-principal compute-optimizer.amazonaws.com
@@ -92,7 +92,7 @@ Use the following procedures to register, update, or remove a delegated administ
 
 1. Call the following API operation. Replace {{123456789012}} with your account ID.
 
-   ```
+   ```bash
    aws organizations deregister-delegated-administrator \
                                            --account-id {{123456789012}} \
                                            --service-principal compute-optimizer.amazonaws.com

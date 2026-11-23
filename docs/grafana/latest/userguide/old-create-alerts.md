@@ -59,7 +59,7 @@ Do not use `For` with the `If no data or all values are null` setting set to `No
 #### Query condition example
 <a name="old-query-condition-example"></a>
 
-```
+```sql
 avg() OF query(A, 15m, now) IS BELOW 14
 ```
 +  `avg()` Controls how the values for **each** series should be reduced to a value that can be compared against the threshold. Choose the function to change it to another aggregation function.

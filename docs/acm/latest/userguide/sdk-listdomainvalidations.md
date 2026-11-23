@@ -3,11 +3,10 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-listdomainvalid
 ---
 
 # Listing domain validation status
-<a name="sdk-listdomainvalidations"></a>
 
 The following example shows how to use the [ListCertificateDomainValidations](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListCertificateDomainValidations.html) function. The function returns a list of domain validation summaries—one for each domain on the certificate. Each summary contains the active validation configuration and (during a migration) the requested validation configuration with the CNAME record to add to your DNS configuration. The example shows how to handle pagination with `NextToken`.
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.services.certificatemanager.AWSCertificateManagerClientBuilder;
@@ -72,7 +71,3 @@ public class ListCertificateDomainValidations {
    }
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

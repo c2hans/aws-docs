@@ -54,7 +54,7 @@ To view a code example for using the `$push` command, choose the tab for the lan
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function updateDocument() {
@@ -77,7 +77,7 @@ updateDocument();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def update_document():

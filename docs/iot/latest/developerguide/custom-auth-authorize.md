@@ -10,7 +10,7 @@ In this section, you'll grant the permission of the custom authorizer resource t
 
 1. After inserting your values, enter the following command. Note that the `statement-id` value must be unique. Replace `{{Id-1234}}` with the exact value you have, otherwise, you might get a `ResourceConflictException` error.
 
-   ```
+   ```bash
    aws lambda add-permission  \
    --function-name "custom-auth-function" \
    --principal "iot.amazonaws.com" \
@@ -21,7 +21,7 @@ In this section, you'll grant the permission of the custom authorizer resource t
 
 1. If the command succeeds, it returns a permission statement, such as this example. You can continue to the next section to test the custom authorizer.
 
-   ```
+   ```json
    {
        "Statement": "{\"Sid\":\"{{Id-1234}}\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"iot.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:{{Region}}:57EXAMPLE833:function:custom-auth-function\",\"Condition\":{\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:lambda:{{Region}}:57EXAMPLE833:function:custom-auth-function\"}}}"
    }

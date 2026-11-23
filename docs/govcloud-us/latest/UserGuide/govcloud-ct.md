@@ -37,7 +37,7 @@ The following differences apply to AWS CloudTrail:
 **Warning**
 If the bucket already has one or more policies attached, add the statements for CloudTrail access to that policy or policies. We recommend that you evaluate the resulting set of permissions to be sure they are appropriate for the users who will be accessing the bucket.
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

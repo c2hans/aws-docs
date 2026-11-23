@@ -40,7 +40,7 @@ If *srid* is negative, then an error is returned.
 
 The following SQL sets the SRID value of a linestring.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_SetSRID(ST_GeomFromText('LINESTRING(77.29 29.07,77.42 29.26,77.27 29.31,77.29 29.07)'),50));
 ```
 

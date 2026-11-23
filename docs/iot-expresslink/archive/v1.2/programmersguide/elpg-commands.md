@@ -197,7 +197,7 @@ By sending only the 'AT' (attention) command, the host can verify the presence a
 
 Example:
 
-```
+```bash
 AT{EOL}    # request the module's attention
 ```Returns:
 

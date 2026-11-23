@@ -10,7 +10,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 **From your local machine, delete the cluster.**
 
-   ```
+   ```bash
    $ pcluster delete-cluster --cluster-name {{"ad-cluster"}} --region {{"region-id"}}
    {
      "cluster": {
@@ -28,7 +28,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 **Check the progress of the cluster being deleted.**
 
-   ```
+   ```bash
    $ pcluster describe-cluster --cluster-name {{"ad-cluster"}} --region {{"region-id"}} --query "clusterStatus"
    "DELETE_IN_PROGRESS"
    ```
@@ -67,7 +67,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
    1. Create a `recordset-delete.json` with the following content. In this example, HostedZoneId is the canonical hosted zone ID of the load balancer.
 
-      ```
+      ```json
       {
         "Changes": [
           {
@@ -90,7 +90,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
    1. Submit the recordset change to the hosted zone using the hosted zone ID.
 
-      ```
+      ```bash
       $ aws route53 change-resource-record-sets --hosted-zone-id {{Z09020002B5MZQNXMSJUB}} \
         --change-batch file://recordset-delete.json
       {
@@ -104,7 +104,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
    1. Delete the hosted zone.
 
-      ```
+      ```bash
       $ aws route53 delete-hosted-zone --id {{Z09020002B5MZQNXMSJUB}}
       {
        "ChangeInfo": {
@@ -119,7 +119,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 **Delete the LB listener.**
 
-   ```
+   ```bash
    $ aws elbv2 delete-listener \
      --listener-arn arn:aws:elasticloadbalancing:{{region-id}}:{{123456789012}}:listener/net/CorpExampleCom-NLB{{/3afe296bf4ba80d4/a8f9d97318743d4b}} --region {{region-id}}
    ```
@@ -128,7 +128,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 **Delete the target group.**
 
-   ```
+   ```bash
    $ aws elbv2 delete-target-group \
      --target-group-arn arn:aws:elasticloadbalancing:{{region-id}}:{{123456789012}}:targetgroup/CorpExampleCom-Targets/{{44577c583b695e81}} --region {{region-id}}
    ```
@@ -137,7 +137,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 **Delete the load balancer.**
 
-   ```
+   ```bash
    $ aws elbv2 delete-load-balancer \
      --load-balancer-arn arn:aws:elasticloadbalancing:{{region-id}}:{{123456789012}}:loadbalancer/net/CorpExampleCom-NLB/{{3afe296bf4ba80d4}} --region {{region-id}}
    ```
@@ -146,7 +146,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 **Delete the policy that the cluster uses to read the certificate from Secrets Manager.**
 
-   ```
+   ```bash
    $ aws iam delete-policy --policy-arn arn:aws:iam::{{123456789012}}:policy/ReadCertExample
    ```
 
@@ -154,7 +154,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 **Delete the secret that contains the domain certificate.**
 
-   ```
+   ```bash
    $ aws secretsmanager delete-secret \
      --secret-id arn:aws:secretsmanager:{{region-id}}:{{123456789012}}:secret:example-cert-{{123abc}} \
      --region {{region-id}}
@@ -169,7 +169,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 **Delete the certificate from ACM.**
 
-   ```
+   ```bash
    $ aws acm delete-certificate \
      --certificate-arn arn:aws:acm:{{region-id}}:{{123456789012}}:certificate/{{343db133-490f-4077-b8d4-3da5bfd89e72}} --region {{region-id}}
    ```
@@ -185,7 +185,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
    1. Delete the directory by running the following command.
 
-      ```
+      ```bash
       $ aws ds delete-directory --directory-id {{d-abcdef0123456789}} --region {{region-id}}
       {
          "DirectoryId": "d-abcdef0123456789"
@@ -194,29 +194,29 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
    1. List the security groups in the VPC.
 
-      ```
+      ```bash
       $ aws ec2 describe-security-groups --filters '[{"Name":"vpc-id","Values":["vpc-07614ade95ebad1bc"]}]' --region {{region-id}}
       ```
 
    1. Delete the custom security group.
 
-      ```
+      ```bash
       $ aws ec2 delete-security-group --group-id {{sg-021345abcdef6789}} --region {{region-id}}
       ```
 
    1. Delete the subnets.
 
-      ```
+      ```bash
       $ aws ec2 delete-subnet --subnet-id {{subnet-1234567890abcdef}} --region {{region-id}}
       ```
 
-      ```
+      ```bash
       $ aws ec2 delete-subnet --subnet-id {{subnet-021345abcdef6789}} --region {{region-id}}
       ```
 
    1. Describe internet gateway.
 
-      ```
+      ```bash
       $ aws ec2 describe-internet-gateways \
         --filters Name=attachment.vpc-id,Values={{vpc-021345abcdef6789}} \
         --region {{region-id}}
@@ -239,7 +239,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
    1. Detach the internet gateway.
 
-      ```
+      ```bash
       $ aws ec2 detach-internet-gateway \
         --internet-gateway-id {{igw-1234567890abcdef}} \
         --vpc-id {{vpc-021345abcdef6789}} \
@@ -248,7 +248,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
    1. Delete the internet gateway.
 
-      ```
+      ```bash
       $ aws ec2 delete-internet-gateway \
         --internet-gateway-id {{igw-1234567890abcdef}} \
         --region {{region-id}}
@@ -256,7 +256,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
    1. Delete the VPC.
 
-      ```
+      ```bash
       $ aws ec2 delete-vpc \
         --vpc-id {{vpc-021345abcdef6789}} \
         --region {{region-id}}
@@ -264,7 +264,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
    1. Delete the secret that contains the `ReadOnlyUser` password.
 
-      ```
+      ```bash
       $ aws secretsmanager delete-secret \
         --secret-id arn:aws:secretsmanager:{{region-id}}:{{123456789012}}:secret:ADSecretPassword-{{1234}}" \
         --region {{region-id}}

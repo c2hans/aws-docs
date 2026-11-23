@@ -28,7 +28,7 @@ The following code example shows how to get started using Support.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/support#code-examples).
 
-```
+```kotlin
 /**
 Before running this Kotlin code example, set up your development environment,
 including your credentials.
@@ -97,7 +97,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/support#code-examples).
 
-```
+```kotlin
 /**
 Before running this Kotlin code example, set up your development environment,
 including your credentials.
@@ -411,7 +411,7 @@ The following code example shows how to use `AddAttachmentsToSet`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/support#code-examples).
 
-```
+```kotlin
 suspend fun addAttachment(fileAttachment: String): String? {
     val myFile = File(fileAttachment)
     val sourceBytes = (File(fileAttachment).readBytes())
@@ -442,7 +442,7 @@ The following code example shows how to use `AddCommunicationToCase`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/support#code-examples).
 
-```
+```kotlin
 suspend fun addAttachSupportCase(
     caseIdVal: String?,
     attachmentSetIdVal: String?,
@@ -474,7 +474,7 @@ The following code example shows how to use `CreateCase`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/support#code-examples).
 
-```
+```kotlin
 suspend fun createSupportCase(
     sevCatListVal: List<String>,
     sevLevelVal: String,
@@ -508,7 +508,7 @@ The following code example shows how to use `DescribeAttachment`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/support#code-examples).
 
-```
+```kotlin
 suspend fun describeAttachment(attachId: String?) {
     val attachmentRequest =
         DescribeAttachmentRequest {
@@ -531,7 +531,7 @@ The following code example shows how to use `DescribeCases`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/support#code-examples).
 
-```
+```kotlin
 suspend fun getOpenCase() {
     // Specify the start and end time.
     val now = Instant.now()
@@ -564,7 +564,7 @@ The following code example shows how to use `DescribeCommunications`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/support#code-examples).
 
-```
+```kotlin
 suspend fun listCommunications(caseIdVal: String?): String? {
     val communicationsRequest =
         DescribeCommunicationsRequest {
@@ -594,7 +594,7 @@ The following code example shows how to use `DescribeServices`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/support#code-examples).
 
-```
+```kotlin
 // Return a List that contains a Service name and Category name.
 suspend fun displayServices(): List<String> {
     var serviceCode = ""
@@ -647,7 +647,7 @@ The following code example shows how to use `DescribeSeverityLevels`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/support#code-examples).
 
-```
+```kotlin
 suspend fun displaySevLevels(): String {
     var levelName = ""
     val severityLevelsRequest =
@@ -677,7 +677,7 @@ The following code example shows how to use `ResolveCase`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/support#code-examples).
 
-```
+```kotlin
 suspend fun resolveSupportCase(caseIdVal: String) {
     val caseRequest =
         ResolveCaseRequest {

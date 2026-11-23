@@ -464,7 +464,7 @@ The following example signs in the user `mytestuser` with analytics data, client
 #### Sample Request
 <a name="API_InitiateAuth_Example_3_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -497,7 +497,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_InitiateAuth_Example_3_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0
@@ -523,7 +523,7 @@ The following example exchanges a refresh token for access and ID tokens.
 #### Sample Request
 <a name="API_InitiateAuth_Example_4_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -545,7 +545,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_InitiateAuth_Example_4_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0

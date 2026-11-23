@@ -199,7 +199,7 @@ The following image shows IP ranges for .
 
       Following is an example of what the confirmation message looks like.
 
-      ```
+      ```json
       {
               "component": "softphone",
               "level": "LOG",

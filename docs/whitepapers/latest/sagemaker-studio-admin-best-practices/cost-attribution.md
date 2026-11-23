@@ -24,9 +24,13 @@ To use the attached tags for cost analysis, they must first be activated in the 
 
 ![A diagram that shows a space ARN enabled as cost allocation tags on Cost Explorer.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/space-arn.png)
 
+*Space ARN enabled as cost allocation tags on Cost Explorer*
+
 After you have enabled a cost allocation tag, AWS will begin tracking your tagged resources, and after 24-48 hours, the tags will show up as selectable filters in cost explorer.
 
 ![A diagram that shows costs grouped by shared space for a sample domain.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/costs-grouped-by-shared-space.png)
+
+*Costs grouped by shared space for a sample domain*
 
 ## Cost control
 <a name="cost-control"></a>

@@ -44,7 +44,7 @@ For more information, see [Configuring Vault Notifications Using the AWS Command
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 

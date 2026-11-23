@@ -51,7 +51,7 @@ If you use a different Region than `us-east-1`, ensure that you change all refer
 
     Replace the value `RegionToMonitor` with the Region that you want to run this function in.
 
-   ```
+   ```javascript
    // Set the following line to specify which Region's instances you want to monitor
    // Only instances in this Region are succesfully stopped on a match
 
@@ -195,7 +195,7 @@ For more information about creating Amazon EC2 specific IAM policies, see [Amazo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -241,7 +241,7 @@ In this step, you submit a test event to your function. The Lambda test function
 
 1. In the **Event JSON**, replace the text with the sample event shown in the following example text. You don't need to modify the accounts, Region, or instance ID for this test event to work correctly.
 
-   ```
+   ```json
    {
      "version": "0",
      "id": "bddcf1d6-0251-35a1-aab0-adc1fb47c11c",
@@ -273,7 +273,7 @@ In this step, you submit a test event to your function. The Lambda test function
 
    You should see the following error in the **Execution results** tab under **Response**.
 
-   ```
+   ```json
    {
      "errorType": "InvalidInstanceID.NotFound",
      "errorMessage": "The instance ID 'i-0000000aaaaaaaaaa' does not exist",
@@ -332,7 +332,7 @@ Now you can create an EventBridge rule that matches the event and points to your
 
 1. In the editing box, paste the following pattern text, and then choose **Next**.
 
-   ```
+   ```json
    {
      "source": [
        "aws.tag"

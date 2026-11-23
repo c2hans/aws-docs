@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # SageMakerModelRecommendation
 
-Recommended instance types for inference with a SageMaker model.
+The recommended instance types for inference with a SageMaker model.
 
 ## Contents
 <a name="API_marketplace-discovery_SageMakerModelRecommendation_Contents"></a>
@@ -13,12 +13,12 @@ Recommended instance types for inference with a SageMaker model.
 In the following list, the required parameters are described first.
 
  ** recommendedBatchTransformInstanceType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SageMakerModelRecommendation-recommendedBatchTransformInstanceType"></a>
-The recommended instance type for batch inference.
+The instance type that the seller recommends for batch transform jobs with this model package.
 Type: String
 Required: Yes
 
  ** recommendedRealtimeInferenceInstanceType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SageMakerModelRecommendation-recommendedRealtimeInferenceInstanceType"></a>
-The recommended instance type for real-time inference.
+The instance type that the seller recommends for real-time inference endpoints with this model package.
 Type: String
 Required: No
 

@@ -14,7 +14,7 @@ The following code examples show how to use `StartBuild`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/codebuild#code-examples).
 
-```
+```cpp
 //! Start an AWS CodeBuild project build.
 /*!
   \param projectName: A CodeBuild project name.

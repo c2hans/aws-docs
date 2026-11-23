@@ -51,7 +51,7 @@ To create a code signing certificate, install [ OpenSSL](https://www.openssl.org
 
 1. Create a private key and certificate signing request (CSR):
 
-   ```
+   ```bash
    openssl req -config cert_config.txt -extensions my_exts -nodes -days 365 -newkey rsa:2048 -keyout tisigner.key -out tisigner.csr
    ```
 
@@ -63,7 +63,7 @@ To create a code signing certificate, install [ OpenSSL](https://www.openssl.org
 
    `/Applications/Ti/simplelink_cc32xx_sdk_{{version}}/tools/cc32xx_tools/certificate-playground/dummy-root-ca-cert-key` (macOS)
 
-   ```
+   ```bash
    openssl rsa -inform DER -in dummy-root-ca-cert-key -out dummy-root-ca-cert-key.pem
    ```
 
@@ -75,19 +75,19 @@ To create a code signing certificate, install [ OpenSSL](https://www.openssl.org
 
    `/Applications/Ti/simplelink_cc32xx_sdk_{{version}}/tools/cc32xx_tools/certificate-playground/dummy-root-ca-cert` (macOS)
 
-   ```
+   ```bash
    openssl x509 -inform DER -in dummy-root-ca-cert -out dummy-root-ca-cert.pem
    ```
 
 1. Sign the CSR with the Texas Instruments root CA:
 
-   ```
+   ```bash
    openssl x509 -extfile cert_config.txt -extensions my_exts  -req -days 365 -in tisigner.csr -CA dummy-root-ca-cert.pem -CAkey dummy-root-ca-cert-key.pem -set_serial 01 -out tisigner.crt.pem -sha1
    ```
 
 1. Convert your code-signing certificate (`tisigner.crt.pem`) to DER format:
 
-   ```
+   ```bash
    openssl x509 -in tisigner.crt.pem -out tisigner.crt.der -outform DER
    ```
 **Note**
@@ -95,7 +95,7 @@ You write the `tisigner.crt.der` certificate onto the TI development board later
 
 1. Import the code-signing certificate, private key, and certificate chain into AWS Certificate Manager:
 
-   ```
+   ```bash
    aws acm import-certificate --certificate fileb://tisigner.crt.pem --private-key fileb://tisigner.key --certificate-chain fileb://dummy-root-ca-cert.pem
    ```
 

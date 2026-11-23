@@ -83,6 +83,7 @@ The following actions are supported:
 +  [ListTenantResources](API_ListTenantResources.md)
 +  [ListTenants](API_ListTenants.md)
 +  [PutAccountDedicatedIpWarmupAttributes](API_PutAccountDedicatedIpWarmupAttributes.md)
++  [PutAccountDeliveryAttributes](API_PutAccountDeliveryAttributes.md)
 +  [PutAccountDetails](API_PutAccountDetails.md)
 +  [PutAccountPricingAttributes](API_PutAccountPricingAttributes.md)
 +  [PutAccountSendingAttributes](API_PutAccountSendingAttributes.md)

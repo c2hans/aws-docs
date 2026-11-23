@@ -33,7 +33,7 @@ You can now use the updated experience to access AWS WAF functionality anywhere 
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -57,7 +57,7 @@ You can now use the updated experience to access AWS WAF functionality anywhere 
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [

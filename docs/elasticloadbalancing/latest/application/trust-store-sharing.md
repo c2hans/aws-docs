@@ -107,7 +107,7 @@ You can share a trust store that you own using the Amazon EC2 console, AWS RAM c
 1. Select **Share trust store**.
 
 **To share a trust store that you own using the AWS RAM console**
-See [Creating a Resource Share](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing.html#working-with-sharing-create) in the *AWS RAM User Guide*.
+See [Creating a Resource Share](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-create.html) in the *AWS RAM User Guide*.
 
 **To share a trust store that you own using the AWS CLI**
 Use the [create-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html) command.
@@ -135,7 +135,7 @@ You can stop sharing a trust store using the Amazon EC2 console, AWS RAM console
 1. Choose **Remove**.
 
 **To stop sharing a trust store that you own using the AWS RAM console**
-See [Updating a Resource Share](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing.html#working-with-sharing-update) in the *AWS RAM User Guide*.
+See [Updating a Resource Share](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-update.html) in the *AWS RAM User Guide*.
 
 **To stop sharing a trust store that you own using the AWS CLI**
 Use the [disassociate-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/disassociate-resource-share.html) command.

@@ -6,11 +6,11 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 After the pilot validates cleanly, widen the configuration to cover all indexes by setting `indexAllowlist` to an empty array, then submit again. An empty allowlist means all eligible indexes are migrated.
 
-```
+```bash
 workflow configure edit
 ```
 
-```
+```json
 {
   "snapshotMigrationConfigs": [
     {
@@ -35,14 +35,14 @@ workflow configure edit
 }
 ```
 
-```
+```bash
 workflow submit
 workflow manage
 ```
 
 Approve the metadata gates again as in [Step 8](pb-es68-submit-pilot.md). To speed up the full backfill, increase `documentBackfillConfig.podReplicas` in the workflow configuration and resubmit. Each RFS worker processes one shard at a time from the snapshot in Amazon S3, so scaling up does not add live read load to the source cluster:
 
-```
+```bash
 workflow configure edit
 workflow submit
 ```

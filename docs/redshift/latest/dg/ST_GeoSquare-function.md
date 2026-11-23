@@ -54,7 +54,7 @@ If the input *max\_depth* is out of range, the function returns an error.
 
 The following SQL returns a geosquare from an input point.
 
-```
+```sql
 SELECT ST_GeoSquare(ST_Point(13.5, 52.5));
 ```
 
@@ -66,7 +66,7 @@ SELECT ST_GeoSquare(ST_Point(13.5, 52.5));
 
 The following SQL returns a geosquare from an input point with a maximum depth of `10`.
 
-```
+```sql
 SELECT ST_GeoSquare(ST_Point(13.5, 52.5), 10);
 ```
 

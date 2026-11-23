@@ -26,7 +26,7 @@ The following code example shows how to use `Get-MLBatchPrediction`.
 **Tools for PowerShell V4**
 **Example 1: Returns the detailed metadata for a batch prediction with id ID.**
 
-```
+```powershell
 Get-MLBatchPrediction -BatchPredictionId ID
 ```
 +  For API details, see [GetBatchPrediction](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -39,12 +39,12 @@ The following code example shows how to use `Get-MLBatchPredictionList`.
 **Tools for PowerShell V4**
 **Example 1: Returns a list of all BatchPredictions and their associated data records that match the search criterion given in the request.**
 
-```
+```powershell
 Get-MLBatchPredictionList
 ```
 **Example 2: Returns a list of all BatchPredictions with a status of COMPLETED.**
 
-```
+```powershell
 Get-MLBatchPredictionList -FilterVariable Status -EQ COMPLETED
 ```
 +  For API details, see [DescribeBatchPredictions](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -57,7 +57,7 @@ The following code example shows how to use `Get-MLDataSource`.
 **Tools for PowerShell V4**
 **Example 1: Returns the metadata, status, and data file information for a DataSource with the id ID**
 
-```
+```powershell
 Get-MLDataSource -DataSourceId ID
 ```
 +  For API details, see [GetDataSource](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -70,12 +70,12 @@ The following code example shows how to use `Get-MLDataSourceList`.
 **Tools for PowerShell V4**
 **Example 1: Returns a list of all DataSources and their associated data records.**
 
-```
+```powershell
 Get-MLDataSourceList
 ```
 **Example 2: Returns a list of all DataSources with a status of COMPLETED.**
 
-```
+```powershell
 Get-MLDataDourceList -FilterVariable Status -EQ COMPLETED
 ```
 +  For API details, see [DescribeDataSources](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -88,7 +88,7 @@ The following code example shows how to use `Get-MLEvaluation`.
 **Tools for PowerShell V4**
 **Example 1: Returns metadata and status for an Evaluation with id ID.**
 
-```
+```powershell
 Get-MLEvaluation -EvaluationId ID
 ```
 +  For API details, see [GetEvaluation](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -101,12 +101,12 @@ The following code example shows how to use `Get-MLEvaluationList`.
 **Tools for PowerShell V4**
 **Example 1: Returns a list of all Evaluation resources**
 
-```
+```powershell
 Get-MLEvaluationList
 ```
 **Example 2: Returns a list of all Evaulations with a status of COMPLETED.**
 
-```
+```powershell
 Get-MLEvaluationList -FilterVariable Status -EQ COMPLETED
 ```
 +  For API details, see [DescribeEvaluations](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -119,7 +119,7 @@ The following code example shows how to use `Get-MLModel`.
 **Tools for PowerShell V4**
 **Example 1: Returns the detail metadata, status, schema, and data file information for a MLModel with id ID.**
 
-```
+```powershell
 Get-MLModel -ModelId ID
 ```
 +  For API details, see [GetMLModel](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -132,12 +132,12 @@ The following code example shows how to use `Get-MLModelList`.
 **Tools for PowerShell V4**
 **Example 1: Returns a list of all Models and their associated data records. **
 
-```
+```powershell
 Get-MLModelList
 ```
 **Example 2: Returns a list of all Models with a status of COMPLETED.**
 
-```
+```powershell
 Get-MLModelList -FilterVariable Status -EQ COMPLETED
 ```
 +  For API details, see [DescribeMLModels](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -150,7 +150,7 @@ The following code example shows how to use `Get-MLPrediction`.
 **Tools for PowerShell V4**
 **Example 1: Send a record to the realtime prediction endpoint URL for Model with id ID.**
 
-```
+```powershell
 Get-MLPrediction -ModelId ID -PredictEndpoint URL -Record @{"A" = "B"; "C" = "D";}
 ```
 +  For API details, see [Predict](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -163,7 +163,7 @@ The following code example shows how to use `New-MLBatchPrediction`.
 **Tools for PowerShell V4**
 **Example 1: Create a new batch prediction request for model with id ID and put the output at the specified S3 location.**
 
-```
+```powershell
 New-MLBatchPrediction -ModelId ID -Name NAME -OutputURI s3://...
 ```
 +  For API details, see [CreateBatchPrediction](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -176,7 +176,7 @@ The following code example shows how to use `New-MLDataSourceFromS3`.
 **Tools for PowerShell V4**
 **Example 1: Create a data source with data for an S3 location, with a name of NAME and a schema of SCHEMA.**
 
-```
+```powershell
 New-MLDataSourceFromS3 -Name NAME -ComputeStatistics $true -DataSpec_DataLocationS3 "s3://BUCKET/KEY" -DataSchema SCHEMA
 ```
 +  For API details, see [CreateDataSourceFromS3](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -189,7 +189,7 @@ The following code example shows how to use `New-MLEvaluation`.
 **Tools for PowerShell V4**
 **Example 1: Create an evaluation for a given data source id and model id**
 
-```
+```powershell
 New-MLEvaluation -Name NAME -DataSourceId DSID -ModelId MID
 ```
 +  For API details, see [CreateEvaluation](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -202,7 +202,7 @@ The following code example shows how to use `New-MLModel`.
 **Tools for PowerShell V4**
 **Example 1: Create a new model with training data.**
 
-```
+```powershell
 New-MLModel -Name NAME -ModelType BINARY -Parameter @{...} -TrainingDataSourceId ID
 ```
 +  For API details, see [CreateMLModel](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -215,7 +215,7 @@ The following code example shows how to use `New-MLRealtimeEndpoint`.
 **Tools for PowerShell V4**
 **Example 1: Create a new realtime prediction endpoint for the given model id.**
 
-```
+```powershell
 New-MLRealtimeEndpoint -ModelId ID
 ```
 +  For API details, see [CreateRealtimeEndpoint](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.

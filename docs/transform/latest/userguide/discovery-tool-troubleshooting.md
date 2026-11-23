@@ -40,7 +40,7 @@ If the discovery tool VM runs out of memory, check whether the `sssd-kcm` servic
 
 1. Access the discovery tool VM, and check which processes are using the most memory. For more information, see [Accessing the discovery tool VM](discovery-tool-configure.md#discovery-tool-vm-access).
 
-   ```
+   ```bash
    ps aux --sort=-rss | head
    ```
 
@@ -48,7 +48,7 @@ If the discovery tool VM runs out of memory, check whether the `sssd-kcm` servic
 
    If the VM already ran out of memory, you can also check the kernel log:
 
-   ```
+   ```bash
    sudo dmesg | grep -i -E "out of memory|oom-kill"
    ```
    + If the `oom-kill` line contains `global_oom`, the whole VM ran out of memory. The process that the kernel stopped, often `discovery_tool`, isn't necessarily the one using the most memory. Check `sssd_kcm` with the `ps` command above, and if it's large, continue with the next step.
@@ -56,13 +56,13 @@ If the discovery tool VM runs out of memory, check whether the `sssd-kcm` servic
 
 1. Stop and disable `sssd-kcm`.
 
-   ```
+   ```bash
    sudo systemctl disable --now sssd-kcm sssd-kcm.socket
    ```
 
 1. Confirm that the service is stopped.
 
-   ```
+   ```bash
    systemctl status sssd-kcm
    ```
 

@@ -15,7 +15,7 @@ The following code example shows how to use `ListFlowVersions`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 List the versions of an Amazon Bedrock flow.
 
-```
+```python
 def list_flow_versions(client, flow_id):
     """
     Lists the versions of an Amazon Bedrock flow.

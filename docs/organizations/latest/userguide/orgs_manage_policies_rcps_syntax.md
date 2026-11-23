@@ -146,7 +146,7 @@ For more information, see [IAM JSON Policy Elements: Resource](https://docs.aws.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

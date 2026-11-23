@@ -42,7 +42,7 @@ When you detach an image from a domain, all versions of the image are detached. 
 
 1. Delete the `RSessionAppSettings` custom images and then save the file. Do not modify the `KernelGatewayAppSettings` custom images.
 
-   ```
+   ```json
    {
        "DomainId": "d-xxxxxxxxxxxx",
        "DefaultUserSettings": {
@@ -64,7 +64,7 @@ When you detach an image from a domain, all versions of the image are detached. 
 
 1. Use the domain ID and default user settings file to update your domain.
 
-   ```
+   ```cmd
    aws sagemaker update-domain \
        --domain-id {{<d-xxxxxxxxxxxx>}} \
        --cli-input-json file://update-domain-input.json
@@ -72,7 +72,7 @@ When you detach an image from a domain, all versions of the image are detached. 
 
    Response:
 
-   ```
+   ```json
    {
        "DomainArn": "arn:aws:sagemaker:us-east-2:acct-id:domain/d-xxxxxxxxxxxx"
    }
@@ -80,14 +80,14 @@ When you detach an image from a domain, all versions of the image are detached. 
 
 1. Delete the app image config.
 
-   ```
+   ```cmd
    aws sagemaker delete-app-image-config \
        --app-image-config-name rstudio-image-config
    ```
 
 1. Delete the SageMaker image, which also deletes all image versions. The container images in Amazon ECR that are represented by the image versions are not deleted.
 
-   ```
+   ```cmd
    aws sagemaker delete-image \
        --image-name rstudio-image
    ```

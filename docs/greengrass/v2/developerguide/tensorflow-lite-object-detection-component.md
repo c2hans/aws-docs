@@ -45,13 +45,13 @@ This component has the following requirements:<a name="ml-component-requirements
 + On Greengrass core devices running Amazon Linux 2 or Ubuntu 18.04, [GNU C Library](https://www.gnu.org/software/libc/) (glibc) version 2.27 or later installed on the device.
 + On Armv7l devices, such as Raspberry Pi, dependencies for OpenCV-Python installed on the device. Run the following command to install the dependencies.
 
-  ```
+  ```bash
   sudo apt-get install libopenjp2-7 libilmbase23 libopenexr-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libgtk-3-0 libwebp-dev
   ```
 + Raspberry Pi devices that run Raspberry Pi OS Bullseye must meet the following requirements:
   + NumPy 1.22.4 or later installed on the device. Raspberry Pi OS Bullseye includes an earlier version of NumPy, so you can run the following command to upgrade NumPy on the device.
 
-    ```
+    ```bash
     pip3 install --upgrade numpy
     ```
   + The legacy camera stack enabled on the device. Raspberry Pi OS Bullseye includes a new camera stack that is enabled by default and isn't compatible, so you must enable the legacy camera stack.<a name="raspberry-pi-bullseye-enable-legacy-camera-stack"></a>
@@ -60,7 +60,7 @@ This component has the following requirements:<a name="ml-component-requirements
 
     1. Run the following command to open the Raspberry Pi configuration tool.
 
-       ```
+       ```bash
        sudo raspi-config
        ```
 
@@ -218,7 +218,7 @@ This component provides the following configuration parameters that you can cust
 <a name="ml-config-accesscontrol-desc"></a>(Optional) The object that contains the [authorization policy](interprocess-communication.md#ipc-authorization-policies) that allows the component to publish messages to the default notifications topic.
 Default:
 
-```
+```json
 {
    "aws.greengrass.ipc.mqttproxy": {
       "aws.greengrass.TensorFlowLiteObjectDetection:mqttproxy:1": {
@@ -261,7 +261,7 @@ Default: `3600`
 <a name="ml-config-modelresourcekey-desc"></a>(Optional) The models that are used in the dependent public model component. Modify this parameter only if you override the public model component with a custom component.
 Default:
 
-```
+```json
 {
     "model": "TensorFlowLite-SSD"
 }
@@ -305,14 +305,14 @@ This component uses the following log file.
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.greengrass.TensorFlowLiteObjectDetection.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\aws.greengrass.TensorFlowLiteObjectDetection.log -Tail 10 -Wait
   ```
 

@@ -48,6 +48,7 @@ The following are examples of the temporary inconsistencies that you might notic
 + [Editing a protection pack (web ACL) in AWS WAF](web-acl-editing.md)
 + [Managing rule group behavior](web-acl-rule-group-settings.md)
 + [Associating or disassociating protection with an AWS resource](web-acl-associating-aws-resource.md)
++ [Enabling security analytics for a protection pack (web ACL)](web-acl-security-analytics-enabling.md)
 + [Using protection packs (web ACLs) with rules and rule groups in AWS WAF](web-acl-processing.md)
 + [Setting the protection pack (web ACL) default action in AWS WAF](web-acl-default-action.md)
 + [Considerations for managing body inspection in AWS WAF](web-acl-setting-body-inspection-limit.md)

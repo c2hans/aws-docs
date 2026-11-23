@@ -21,7 +21,7 @@ If an exception is raised within the Lambda function, the Task will fail. For a 
 
 The following includes a `Task` state that invokes a Lambda function.
 
-```
+```json
 {
    "StartAt":"CallLambda",
    "States":{
@@ -39,7 +39,7 @@ The following includes a `Task` state that invokes a Lambda function.
 
 The following includes a `Task` state that implements the [callback](connect-to-resource.md#connect-wait-token) service integration pattern.
 
-```
+```json
 {
    "StartAt":"GetManualReview",
    "States":{
@@ -64,7 +64,7 @@ When you invoke a Lambda function, the execution will wait for the function to c
 
 It is also possible to call Lambda asynchronously using the `InvocationType` parameter, as seen in the following example:
 
-```
+```json
 {
 
   "Comment": "A Hello World example of the Amazon States Language using Pass states",
@@ -88,7 +88,7 @@ For asynchronous invocations of Lambda functions, the heartbeat timeout period s
 
  When the `Task` result is returned, the function output is nested inside a dictionary of metadata. For example:
 
-```
+```json
 {
 
    "ExecutedVersion":"$LATEST",
@@ -118,7 +118,7 @@ For asynchronous invocations of Lambda functions, the heartbeat timeout period s
 
 Alternatively, you can invoke a Lambda function by specifying a function ARN directly in the "Resource" field. When you invoke a Lambda function in this way, you can't specify `.waitForTaskToken`, and the task result contains only the function output.
 
-```
+```json
 {
    "StartAt":"CallFunction",
    "States":{
@@ -146,7 +146,7 @@ In the following example, a state machine with two AWS Lambda task states which 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -167,7 +167,7 @@ In the following example, a state machine with two AWS Lambda task states which 
 **Note**
 If you use the `Qualifier` parameter or specify a function version or alias in `FunctionName`, you must include the qualifier in the IAM policy resource ARN. Use `:*` to allow any version or alias:
 
-```
+```json
 "arn:aws:lambda:{{us-east-1}}:{{123456789012}}:function:{{myFn1}}:*"
 ```
 An unqualified ARN (without the `:*` suffix) does not grant permission to invoke a specific version or alias, and the invocation will fail with an Access Denied error.

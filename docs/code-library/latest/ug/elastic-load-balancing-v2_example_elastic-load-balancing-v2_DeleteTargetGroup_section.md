@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/ElasticLoadBalancerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a TargetGroup by its specified name.
     /// </summary>
@@ -81,7 +81,7 @@ For more information, see [Delete a load balancer](https://docs.aws.amazon.com/e
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 
-```
+```java
     // Deletes the target group.
     public void deleteTargetGroup(String targetGroupName) {
         try {
@@ -103,7 +103,7 @@ For more information, see [Delete a load balancer](https://docs.aws.amazon.com/e
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
     const client = new ElasticLoadBalancingV2Client({});
     try {
       const { TargetGroups } = await client.send(
@@ -131,7 +131,7 @@ For more information, see [Delete a load balancer](https://docs.aws.amazon.com/e
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified Target Group.**
 
-```
+```powershell
 Remove-ELB2TargetGroup -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/testsssss/4e0b6076bc6483a7'
 ```
 **Output:**
@@ -147,7 +147,7 @@ Performing the operation "Remove-ELB2TargetGroup (DeleteTargetGroup)" on target 
 **Tools for PowerShell V5**
 **Example 1: This example removes the specified Target Group.**
 
-```
+```powershell
 Remove-ELB2TargetGroup -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/testsssss/4e0b6076bc6483a7'
 ```
 **Output:**
@@ -166,7 +166,7 @@ Performing the operation "Remove-ELB2TargetGroup (DeleteTargetGroup)" on target 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/elastic-load-balancing#code-examples).
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 

@@ -13,7 +13,7 @@ Returns the tags associated with the specified resource.
 The Amazon Resource Name (ARN) of the resource to list tags for.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1011.
-Pattern: `arn:aws:partnercentral:[a-z0-9-]+:[0-9]{12}:catalog/[a-zA-Z]+/(revenue-attribution/[a-zA-Z0-9-]+|marketplace-revenue-share/prod-[a-z0-9]{13})`
+Pattern: `arn:aws:partnercentral:[a-z0-9-]+:[0-9]{12}:catalog/[a-zA-Z]+/(revenue-attribution/[a-zA-Z0-9-]+|marketplace-revenue-share/mrs-[a-z0-9]{13})`
 Required: Yes
 
 ## Response Elements
@@ -33,22 +33,30 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 The request was denied due to insufficient permissions.
+ ** Message **
+A message that describes why access was denied.
  ** Reason **
 The reason for the access denial.
 HTTP Status Code: 403
 
  ** InternalServerException **
 An internal server error occurred. Retry your request.
+ ** Message **
+A message that describes the internal server error.
 HTTP Status Code: 500
 
  ** ResourceNotFoundException **
 The specified resource was not found.
+ ** Message **
+A message that describes which resource was not found.
  ** Reason **
 The reason the resource was not found.
 HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was throttled due to too many requests. Retry your request.
+ ** Message **
+A message that indicates the request rate limit was exceeded.
  ** QuotaCode **
 The quota code associated with the throttling error.
  ** ServiceCode **
@@ -59,6 +67,8 @@ HTTP Status Code: 429
 The request failed validation due to invalid input parameters.
  ** FieldList **
 A list of fields that failed validation.
+ ** Message **
+A message that describes the validation failure.
  ** Reason **
 The reason for the validation failure.
 HTTP Status Code: 400

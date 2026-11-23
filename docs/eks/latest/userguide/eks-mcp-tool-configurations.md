@@ -16,7 +16,7 @@ The Amazon EKS MCP Server is in preview release for Amazon EKS and is subject to
 ## Example
 <a name="_example"></a>
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp": {

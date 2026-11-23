@@ -30,14 +30,14 @@ To build the SDK for JavaScript using the AWS CLI, you first need to clone the G
 
 First, clone the repository from GitHub and change directory into the directory:
 
-```
+```sh
 git clone https://github.com/aws/aws-sdk-js.git
 cd aws-sdk-js
 ```
 
 After you clone the repository, download the dependency modules for both the SDK and build tool:
 
-```
+```sh
 npm install
 ```
 
@@ -48,7 +48,7 @@ You can now build a packaged version of the SDK.
 
 The builder tool is in `dist-tools/browser-builder.js`. Run this script by typing:
 
-```
+```sh
 node dist-tools/browser-builder.js > aws-sdk.js
 ```
 
@@ -59,7 +59,7 @@ This command builds the aws-sdk.js file. This file is uncompressed. By default t
 
 To reduce the amount of data on the network, JavaScript files can be compressed through a process called *minification*. Minification strips comments, unnecessary spaces, and other characters that aid in human readability but that do not impact execution of the code. The builder tool can produce uncompressed or minified output. To minify your build output, set the `MINIFY` environment variable:
 
-```
+```sh
 MINIFY=1 node dist-tools/browser-builder.js > aws-sdk.js
 ```
 
@@ -68,13 +68,13 @@ MINIFY=1 node dist-tools/browser-builder.js > aws-sdk.js
 
 You can select which services to build into the SDK. To select services, specify the service names, delimited by commas, as parameters. For example, to build only Amazon S3 and Amazon EC2, use the following command:
 
-```
+```sh
 node dist-tools/browser-builder.js s3,ec2 > aws-sdk-s3-ec2.js
 ```
 
 You can also select specific API versions of the services build by adding the version name after the service name. For example, to build both API versions of Amazon DynamoDB, use the following command:
 
-```
+```sh
 node dist-tools/browser-builder.js dynamodb-2011-12-05,dynamodb-2012-08-10
 ```
 
@@ -85,7 +85,7 @@ Service identifiers and API versions are available in the service-specific confi
 
 You can build all services and API versions by including the `all` parameter:
 
-```
+```sh
 node dist-tools/browser-builder.js all > aws-sdk-full.js
 ```
 
@@ -94,7 +94,7 @@ node dist-tools/browser-builder.js all > aws-sdk-full.js
 
 To customize the selected set of services included in the build, pass the ` AWS_SERVICES` environment variable to the Browserify command that contains the list of services you want. The following example builds the Amazon EC2, Amazon S3, and DynamoDB services.
 
-```
+```sh
 $ AWS_SERVICES=ec2,s3,dynamodb browserify index.js > browser-app.js
 ```
 
@@ -105,7 +105,7 @@ Node.js has a module-based mechanism for including code and functionality from t
 
 You can build the SDK as a library dependency for any browser script by using Browserify. For example, the following Node.js code requires the SDK:
 
-```
+```javascript
 var AWS = require('aws-sdk');
 var s3 = new AWS.S3();
 s3.listBuckets(function(err, data) { console.log(err, data); });
@@ -113,7 +113,7 @@ s3.listBuckets(function(err, data) { console.log(err, data); });
 
 This example code can be compiled into a browser-compatible version using Browserify:
 
-```
+```sh
 $ browserify index.js > browser-app.js
 ```
 

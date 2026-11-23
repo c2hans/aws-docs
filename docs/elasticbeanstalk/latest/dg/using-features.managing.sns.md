@@ -64,7 +64,7 @@ AWS Lambda notifications aren't supported.
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -119,7 +119,7 @@ However, if you provided a custom service role when you created your environment
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -150,7 +150,7 @@ If you provide a custom service role for your environment, make sure that your c
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

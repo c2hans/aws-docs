@@ -85,7 +85,7 @@ cat AmazonRootCA1.pem \
 
 1. Add the following sample code to the cqlapp.go file.
 
-   ```
+   ```golang
    package main
 
    import (
@@ -169,7 +169,7 @@ $ go get github.com/aws/aws-sigv4-auth-cassandra-gocql-driver-plugin
 
 In this code example, the Amazon Keyspaces endpoint is represented by the `Cluster` class. It uses the `AwsAuthenticator` for the authenticator property of the cluster to obtain credentials.
 
-```
+```go
 package main
 
 import (

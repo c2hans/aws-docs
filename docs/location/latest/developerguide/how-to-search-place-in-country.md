@@ -24,7 +24,7 @@ In this example, the bias position is near the USA and Canada border. Without sp
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryText": "Starbucks",
     "BiasPosition": [
@@ -37,7 +37,7 @@ In this example, the bias position is near the USA and Canada border. Without sp
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -149,7 +149,7 @@ In this example, the bias position is near the USA and Canada border. Without sp
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/search-text?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -165,7 +165,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places search-text --key ${YourKey} --query-text "Starbucks" --bias-position -122.741803 49.002478
 ```
 

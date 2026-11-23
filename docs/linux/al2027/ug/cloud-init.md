@@ -31,7 +31,7 @@ AL2027 uses the cloud-init actions in `/etc/cloud/cloud.cfg.d` and `/etc/cloud/c
     For more information about the module, see [Disk Setup](https://docs.cloud-init.io/en/26.1/reference/modules.html#disk-setup) on the cloud-init website.
   + You can use the `mounts` module to mount instance store volumes by device name. On AL2027 instances, instance store volumes are exposed as NVMe block devices. For example, the following cloud-config directive mounts the instance store volume at `/dev/nvme1n1` to `/mnt`:
 
-    ```
+    ```yaml
     #cloud-config
     mounts:
      - [ /dev/nvme1n1, /mnt ]

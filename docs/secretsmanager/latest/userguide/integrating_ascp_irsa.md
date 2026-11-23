@@ -20,6 +20,8 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrat
 
 The ASCP retrieves the Amazon EKS Pod Identity and exchanges it for an IAM role. You set permissions in an IAM policy for that IAM role. When the ASCP assumes the IAM role, it gets access to the secrets you authorized. Other containers can't access the secrets unless you also associate them with the IAM role.
 
+If the secrets belong to another account, the ASCP can assume a role in that account instead of using the service account's role directly. For more information, see [Assume an IAM role to retrieve secrets with the ASCP](integrating_ascp_assume_role.md).
+
 **To grant your Amazon EKS Pod access to secrets in Secrets Manager**
 
 1. Create a permissions policy that grants `secretsmanager:GetSecretValue` and `secretsmanager:DescribeSecret` permission to the secrets that the Pod needs to access. For an example policy, see [Example: Permission to read and describe individual secrets](auth-and-access_iam-policies.md#auth-and-access_examples-read-and-describe).

@@ -56,7 +56,7 @@ The valid values of the `PolicyName` parameter are `default` and `AWS_RAM`. If y
 
 Before running this command, replace the example key ID with a valid one from your account.
 
-```
+```bash
 $ aws kms get-key-policy --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} --policy-name default --query Policy --output text
 ```
 
@@ -67,7 +67,7 @@ The response should be similar to the following one, which returns the [default 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id" : "key-consolepolicy-3",
@@ -87,7 +87,7 @@ The response should be similar to the following one, which returns the [default 
 
 To find out whether a KMS key has an `AWS_RAM` key policy, use the [list-key-policies](https://docs.aws.amazon.com/cli/latest/reference/kms/list-key-policies.html) command. It returns `default` and, when the KMS key has one, `AWS_RAM`.
 
-```
+```bash
 $ aws kms list-key-policies --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
 ```
 
@@ -96,7 +96,7 @@ Replace the following value:
 
 For a KMS key that you share through AWS RAM, the output shows both key policies.
 
-```
+```json
 {
     "PolicyNames": [
         "AWS_RAM",
@@ -107,7 +107,7 @@ For a KMS key that you share through AWS RAM, the output shows both key policies
 
 To view the `AWS_RAM` key policy, set the `--policy-name` parameter to `AWS_RAM`. If the KMS key doesn't have an `AWS_RAM` key policy, GetKeyPolicy returns a `NotFoundException` with the message `No such policy exists`. For an example of an `AWS_RAM` key policy, see [How managed permissions are shown in KMS keys](key-sharing-ram.md#key-sharing-ram-policy).
 
-```
+```bash
 $ aws kms get-key-policy --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} --policy-name AWS_RAM --query Policy --output text
 ```
 

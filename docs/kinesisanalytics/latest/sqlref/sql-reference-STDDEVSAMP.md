@@ -44,7 +44,7 @@ The examples following are based on the sample stock dataset that is part of the
 
 The sample stock dataset has the schema following.
 
-```
+```sql
 (ticker_symbol  VARCHAR(4),
 sector          VARCHAR(16),
 change          REAL,
@@ -56,7 +56,7 @@ price           REAL)
 
 The following example demonstrates how to use the `STDDEV_SAMP` function to determine the standard deviation of the values in a tumbling window of the PRICE column of the example dataset. `DISTINCT` is not specified, so duplicate values are included in the calculation.
 
-```
+```sql
 CREATE OR REPLACE STREAM "DESTINATION_SQL_STREAM" (ticker_symbol VARCHAR(4), stddev_samp_price REAL);
 
 CREATE OR REPLACE  PUMP "STREAM_PUMP" AS INSERT INTO "DESTINATION_SQL_STREAM"
@@ -78,7 +78,7 @@ The preceding examples output a stream similar to the following:
 
 The following example demonstrates how to use the `STDDEV_SAMP` function to determine the standard deviation of the values in a sliding window of the PRICE column of the example dataset. `DISTINCT` is not specified, so duplicate values are included in the calculation.
 
-```
+```sql
 CREATE OR REPLACE STREAM "DESTINATION_SQL_STREAM" (ticker_symbol VARCHAR(4), stddev_samp_price REAL);
 
 CREATE OR REPLACE PUMP "STREAM_PUMP" AS INSERT INTO "DESTINATION_SQL_STREAM"

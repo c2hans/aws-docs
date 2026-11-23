@@ -13,7 +13,7 @@ You can compare metrics such as model training accuracy across multiple pipeline
 
 The following sample shows the relevant parameters of the [Pipeline](https://github.com/aws/sagemaker-python-sdk/blob/v2.41.0/src/sagemaker/workflow/pipeline.py) class in the [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable).
 
-```
+```py
 Pipeline(
     name="MyPipeline",
     parameters=[...],

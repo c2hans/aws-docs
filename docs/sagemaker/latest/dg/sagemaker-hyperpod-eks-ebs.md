@@ -91,7 +91,7 @@ To set up the Amazon EBS CSI driver add-on, follow the instructions in [Use Kube
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -137,7 +137,7 @@ As an alternative, you can use the [AttachClusterNodeVolume](https://docs.aws.am
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -181,7 +181,7 @@ As an alternative, you can use the [AttachClusterNodeVolume](https://docs.aws.am
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -227,7 +227,7 @@ Add the following AWS KMS permissions only if you're using customer managed KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "key-default-1",

@@ -34,7 +34,7 @@ Use the [get-resource-shares](https://docs.aws.amazon.com/cli/latest/reference/r
 
 The following example shows the list of resource shares shared in the specified AWS Region with the calling account by other AWS accounts.
 
-```
+```bash
 $ aws ram get-resource-shares \
     --region us-east-1 \
     --resource-owner OTHER-ACCOUNTS

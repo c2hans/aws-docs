@@ -27,7 +27,7 @@ To get the names of key policies for a KMS key, use the `ListKeyPolicies` operat
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -35,7 +35,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -67,7 +67,7 @@ To get the key policy for a KMS key, use the `GetKeyPolicy` operation.
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -75,7 +75,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -107,7 +107,7 @@ To establish or change a key policy for a KMS key, use the `PutKeyPolicy` operat
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -115,7 +115,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',

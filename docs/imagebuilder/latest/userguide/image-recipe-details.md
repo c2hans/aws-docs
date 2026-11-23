@@ -40,7 +40,7 @@ aws imagebuilder list-image-recipes
 
 The command returns a summary for each image recipe, shown in the following example output.
 
-```
+```json
 {
     "requestId": "{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}",
     "imageRecipeSummaryList": [
@@ -61,13 +61,13 @@ The command returns a summary for each image recipe, shown in the following exam
 
 The following example lists only the recipes that you own:
 
-```
+```sh
 aws imagebuilder list-image-recipes --owner Self
 ```
 
 The following example lists the recipes that other accounts have shared with you:
 
-```
+```sh
 aws imagebuilder list-image-recipes --owner Shared
 ```
 
@@ -76,19 +76,19 @@ aws imagebuilder list-image-recipes --owner Shared
 
 The following example shows how to use the [Get-EC2IBImageRecipeList](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBImageRecipeList.html) cmdlet to list all of your image recipes:
 
-```
+```ps
 Get-EC2IBImageRecipeList
 ```
 
 The following example lists only the recipes that you own:
 
-```
+```ps
 Get-EC2IBImageRecipeList -Owner Self
 ```
 
 The following example lists the recipes that other accounts have shared with you:
 
-```
+```ps
 Get-EC2IBImageRecipeList -Owner Shared
 ```
 
@@ -120,7 +120,7 @@ aws imagebuilder get-image-recipe --image-recipe-arn arn:aws:imagebuilder:{{us-w
 
 The command returns the full image recipe, shown in the following example output.
 
-```
+```json
 {
     "requestId": "{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}",
     "imageRecipe": {
@@ -147,7 +147,7 @@ The command returns the full image recipe, shown in the following example output
 
 The following example shows how to use the [Get-EC2IBImageRecipe](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBImageRecipe.html) cmdlet to get the details of an image recipe by specifying its Amazon Resource Name (ARN):
 
-```
+```ps
 Get-EC2IBImageRecipe -ImageRecipeArn arn:aws:imagebuilder:{{us-west-2}}:{{123456789012}}:image-recipe/{{my-recipe}}/1.0.0
 ```
 
@@ -175,7 +175,7 @@ aws imagebuilder get-image-recipe-policy --image-recipe-arn arn:aws:imagebuilder
 
 The following example shows how to use the [Get-EC2IBImageRecipePolicy](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBImageRecipePolicy.html) cmdlet to get the details of an image recipe policy by specifying its ARN:
 
-```
+```ps
 Get-EC2IBImageRecipePolicy -ImageRecipeArn arn:aws:imagebuilder:{{us-west-2}}:{{123456789012}}:image-recipe/{{my-recipe}}/1.0.0
 ```
 

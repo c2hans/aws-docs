@@ -41,6 +41,8 @@ Your function also prints the calculated area, along with the name of its CloudW
 
 In addition to a simple function that returns the message `Hello from Lambda!`, Lambda also creates an [execution role](lambda-intro-execution-role.md) for your function. An execution role is an AWS Identity and Access Management (IAM) role that grants a Lambda function permission to access AWS services and resources. For your function, the role that Lambda creates grants basic permissions to write to CloudWatch Logs.
 
+When you create a function, Lambda sends a state change event to Amazon EventBridge each time the function version changes state, for example when it becomes `Active` and is ready to invoke. You don't need to turn anything on. To act on these events, create an EventBridge rule on your AWS account's default event bus. For more information, see [Lambda Function state events in Amazon EventBridge](monitoring-eventbridge-function-state.md).
+
 Use the console's built-in code editor to replace the Hello world code that Lambda created with your own function code.
 
 ------
@@ -55,7 +57,7 @@ Use the console's built-in code editor to replace the Hello world code that Lamb
 
 1. Paste the following code into the **index.mjs** tab, replacing the code that Lambda created.
 
-   ```
+   ```javascript
    export const handler = async (event, context) => {
 
      const length = event.length;
@@ -120,7 +122,7 @@ Before you move to the next step, let's take a moment to look at the function co
 
 1. Paste the following code into the **lambda\_function.py** tab, replacing the code that Lambda created.
 
-   ```
+   ```python
    import json
    import logging
 
@@ -195,7 +197,7 @@ To invoke your function using the Lambda console code editor, create a test even
 
 1. In the **Event JSON** section, replace the default JSON with the following:
 
-   ```
+   ```json
    {
      "length": 6,
      "width": 7

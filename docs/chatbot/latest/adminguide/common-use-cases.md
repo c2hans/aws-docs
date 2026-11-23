@@ -44,7 +44,7 @@ The following example shows how CLI commands can be used to run an Automation ru
 
 The code example in this section demonstrates how you can use a Lambda function to perform activities, spefically how you can manually approve a pipeline action. This function enables you to approve or reject a pipeline action from your chat channel by entering the status and a summary. The function gets the required token using the get\_pipeline\_status method. It then uses the token value when applying the approval decision by using the put\_approval\_result method. For more information about these methods, see the [CodePipeline section](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html) of the *Boto3 docs 1.14.10 documentation*. The Lambda code uses Python 3.8.
 
-```
+```python
 import boto3
 
 def lambda_handler(event, context):

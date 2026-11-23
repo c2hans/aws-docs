@@ -215,7 +215,7 @@ CLI_JSON=$(aws mwaa --region $AWS_REGION create-cli-token --name $1) \
 
 You can use the following sample code with Apache Airflow v2 to add a configuration when triggering a DAG, such as `airflow dags trigger 'dag_name' --conf '{"key":"value"}'`.
 
-```
+```pyton
 import boto3
 import json
 import requests

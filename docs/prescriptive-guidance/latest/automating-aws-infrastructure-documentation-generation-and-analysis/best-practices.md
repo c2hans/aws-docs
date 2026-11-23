@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automating-
 ---
 
 # Best practices for using the Infrastructure Documentation Generator
-<a name="best-practices"></a>
 
 This section outlines best practices and key considerations for using the Infrastructure Documentation Generator responsibly and effectively. By following these practices, you can support secure handling of AWS credentials, generate accurate and meaningful infrastructure insights, and collaborate more effectively with your team. This approach helps you leverage the system for security, cost, and performance optimization. At the same time, you can respect organizational policies, protect sensitive data, and maximize the value of the generated documentation and visualizations.
 

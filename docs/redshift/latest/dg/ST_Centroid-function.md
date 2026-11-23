@@ -39,7 +39,7 @@ If *geom* is empty, then null is returned.
 
 The following SQL returns central point of an input linestring.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Centroid(ST_GeomFromText('LINESTRING(110 40, 2 3, -10 80, -7 9, -22 -33)', 4326)))
 ```
 

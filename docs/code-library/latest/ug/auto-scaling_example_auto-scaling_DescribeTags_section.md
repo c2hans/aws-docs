@@ -110,7 +110,7 @@ For more information, see [Tagging Auto Scaling groups and instances](https://do
 **Tools for PowerShell V4**
 **Example 1: This example describes the tags with a key value of either 'myTag' or 'myTag2'. The possible values for the filter name are 'auto-scaling-group', 'key', 'value', and 'propagate-at-launch'. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Get-ASTag -Filter @( @{ Name="key"; Values=@("myTag", "myTag2") } )
 ```
 **Output:**
@@ -130,7 +130,7 @@ Value             : myTagValue
 ```
 **Example 2: With PowerShell version 2, you must use New-Object to create the filter for the Filter parameter.**
 
-```
+```powershell
 $keys = New-Object string[] 2
 $keys[0] = "myTag"
 $keys[1] = "myTag2"
@@ -141,7 +141,7 @@ Get-ASTag -Filter @( $filter )
 ```
 **Example 3: This example describes all tags for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASTag
 ```
 +  For API details, see [DescribeTags](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -149,7 +149,7 @@ Get-ASTag
 **Tools for PowerShell V5**
 **Example 1: This example describes the tags with a key value of either 'myTag' or 'myTag2'. The possible values for the filter name are 'auto-scaling-group', 'key', 'value', and 'propagate-at-launch'. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Get-ASTag -Filter @( @{ Name="key"; Values=@("myTag", "myTag2") } )
 ```
 **Output:**
@@ -169,7 +169,7 @@ Value             : myTagValue
 ```
 **Example 2: With PowerShell version 2, you must use New-Object to create the filter for the Filter parameter.**
 
-```
+```powershell
 $keys = New-Object string[] 2
 $keys[0] = "myTag"
 $keys[1] = "myTag2"
@@ -180,7 +180,7 @@ Get-ASTag -Filter @( $filter )
 ```
 **Example 3: This example describes all tags for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASTag
 ```
 +  For API details, see [DescribeTags](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

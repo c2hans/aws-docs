@@ -73,7 +73,7 @@ aws configure
 
 1. Create a file named `stock.py` with the following contents:
 
-   ```
+   ```python
    import datetime
    import json
    import random
@@ -102,7 +102,7 @@ aws configure
 
 1. Run the `stock.py` script:
 
-   ```
+   ```bash
    $ python stock.py
    ```
 
@@ -128,7 +128,7 @@ Note the following about the application code:
 + The `BasicStreamingJob.scala` file contains the main method that defines the application's functionality.
 + The application uses a Kinesis source to read from the source stream. The following snippet creates the Kinesis source:
 
-  ```
+  ```python
   private def createSource: FlinkKinesisConsumer[String] = {
     val applicationProperties = KinesisAnalyticsRuntime.getApplicationProperties
     val inputProperties = applicationProperties.get("ConsumerConfigProperties")
@@ -140,7 +140,7 @@ Note the following about the application code:
 
   The application also uses a Kinesis sink to write into the result stream. The following snippet creates the Kinesis sink:
 
-  ```
+  ```python
   private def createSink: KinesisStreamsSink[String] = {
     val applicationProperties = KinesisAnalyticsRuntime.getApplicationProperties
     val outputProperties = applicationProperties.get("ProducerConfigProperties")

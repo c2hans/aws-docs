@@ -104,7 +104,7 @@ Batch update one or more exclusion status for a list of recommendation resources
 #### Sample Request
 <a name="API_BatchUpdateRecommendationResourceExclusion_Example_1_Request"></a>
 
-```
+```json
 {
                     "recommendationResourceExclusions": [
                     {
@@ -118,7 +118,7 @@ Batch update one or more exclusion status for a list of recommendation resources
 #### Sample Response
 <a name="API_BatchUpdateRecommendationResourceExclusion_Example_1_Response"></a>
 
-```
+```json
 {
                     "batchUpdateRecommendationResourceExclusionErrors": [
                     {

@@ -46,7 +46,7 @@ The following example SCP prevents the creation of public AWS Transfer Family se
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

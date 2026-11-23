@@ -52,7 +52,7 @@ The example uses the file `definition.txt` to contain the policy definition.
 
 The following command references that file.
 
-```
+```bash
 $ aws verifiedpermissions create-policy \
     --definition file://definition.txt \
     --policy-store-id PSEXAMPLEabcdefg111111
@@ -77,7 +77,7 @@ $ aws verifiedpermissions create-policy \
 **To update the name of a policy**
 You can set or update a policy name when updating a policy. The name must be unique for all policies within the policy store and prefixed with `name/`. If you don't include the name field in the update request, the existing name is unchanged. To remove a name, set it to an empty string.
 
-```
+```bash
 $ aws verifiedpermissions update-policy \
     --policy-id SPEXAMPLEabcdefg111111 \
     --policy-store-id PSEXAMPLEabcdefg111111 \

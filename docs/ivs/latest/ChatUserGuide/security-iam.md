@@ -101,7 +101,7 @@ The parts of the following policy provide access to:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -152,7 +152,7 @@ To control access to your lambda resource, you can use conditions based on:
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

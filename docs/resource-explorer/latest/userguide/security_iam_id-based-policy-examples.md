@@ -57,7 +57,7 @@ In this example, you want to grant access to a Resource Explorer view in your AW
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -96,7 +96,7 @@ Now you're ready to grant permissions to create a view. You can add the statemen
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -122,7 +122,7 @@ Now you're ready to grant permissions to create a view. You can add the statemen
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

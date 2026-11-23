@@ -40,7 +40,7 @@ For more information, see [Describe a Spot Fleet request, its instances, and eve
 **Tools for PowerShell V4**
 **Example 1: This example describes the instances associated with the specified Spot fleet request.**
 
-```
+```powershell
 Get-EC2SpotFleetInstance -SpotFleetRequestId sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE
 ```
 **Output:**
@@ -56,7 +56,7 @@ i-7e8b24a4    c3.large        sir-87654321
 **Tools for PowerShell V5**
 **Example 1: This example describes the instances associated with the specified Spot fleet request.**
 
-```
+```powershell
 Get-EC2SpotFleetInstance -SpotFleetRequestId sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE
 ```
 **Output:**

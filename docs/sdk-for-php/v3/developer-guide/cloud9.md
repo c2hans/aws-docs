@@ -76,7 +76,7 @@ Installing Composer creates several folders and files in your environment. The p
 
 To utilize the AWS SDK for PHP in your scripts, include the autoloader in your scripts, as follows.
 
-```
+```php
 <?php
    require '/path/to/vendor/autoload.php';
 ?>
@@ -89,7 +89,7 @@ Use the terminal window to download example code for the AWS SDK for PHP into th
 
 To download a copy of all the code examples used in the official AWS SDK documentation into your environment’s root directory, run the following command:
 
-```
+```sh
 $ git clone https://github.com/awsdocs/aws-doc-sdk-examples.git
 ```
 

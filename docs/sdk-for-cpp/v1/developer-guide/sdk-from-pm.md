@@ -12,7 +12,7 @@ To set up the AWS SDK for C\+\+, you can either build the SDK yourself directly 
 
 The SDK source is separated into individual packages by service. Installing the entire SDK can take up to an hour. Installing only the specific subset of services that your program uses decreases installation time and also reduces size on disk. To choose which services to install, you need to know the package name of each service your program uses. You can see the list of package directories at [`aws/aws-sdk-cpp`](https://github.com/aws/aws-sdk-cpp) on GitHub. The package name is the suffix of the directory name for the service.
 
-```
+```sh
 aws-sdk-cpp\aws-cpp-sdk-{{<packageName>}}   # Repo directory name and packageName
 aws-sdk-cpp\aws-cpp-sdk-s3              # Example: Package name is s3
 ```

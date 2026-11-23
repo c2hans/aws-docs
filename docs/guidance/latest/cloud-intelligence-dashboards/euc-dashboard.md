@@ -110,13 +110,13 @@ An alternative method to install dashboards is the [cid-cmd](https://github.com/
 
 1. In your command-line interface run the following command to download and install the CID CLI tool:
 
-   ```
+   ```bash
    pip3 install --upgrade cid-cmd
    ```
 
 1. In your command-line interface run the following command to deploy the dashboard:
 
-   ```
+   ```bash
    cid-cmd deploy --dashboard-id euc-dashboard
    ```
 
@@ -140,7 +140,7 @@ In the EUC Dashboard, to view the WorkSpaces Cloudwatch metrics in the **WorkSpa
 ### Expand SQL Query
 <a name="collapsible-section-id-euc-code"></a>
 
-```
+```sql
 CREATE OR REPLACE VIEW "euc_metrics_view" AS
 WITH
   workspace_metrics AS (
@@ -235,7 +235,7 @@ GROUP BY 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 
 
 Please note that dashboards are not updated with an update of the CloudFormation Stack. When a new version of the dashboard template is released, you can update your dashboard by running the following command in your command-line interface:
 
-```
+```bash
 cid-cmd update --dashboard-id euc-dashboard
 ```
 

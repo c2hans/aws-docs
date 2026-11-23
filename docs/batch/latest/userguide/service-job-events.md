@@ -13,7 +13,7 @@ Events aren't created for the initial job submission.
 Service job state change events are delivered in the following format. The `detail` section resembles the response that's returned from a [DescribeServiceJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeServiceJob.html) API operation in the *AWS Batch API Reference*. For more information about EventBridge parameters, see [Events and Event Patterns](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events.html) in the *Amazon EventBridge User Guide*.
 The `tags` and `serviceRequestPayload` fields are not included in the event `detail`.
 
-```
+```json
 {
   "version": "0",
   "id": "c8f9c4b5-76e5-d76a-f980-7011e206042b",

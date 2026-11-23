@@ -14,7 +14,7 @@ $ aws iot create-thing-type
 
 The **CreateThingType** command returns a response that contains the thing type and its ARN:
 
-```
+```JSON
 {
     "thingTypeName": "LightBulb",
     "thingTypeId": "df9c2d8c-894d-46a9-8192-9068d01b2886",

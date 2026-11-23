@@ -11,7 +11,7 @@ You cannot remove system-defined tags. You can only remove already existing user
 ## Parameter object
 <a name="untagcontact-parameter"></a>
 
-```
+```json
 {
 "TagKeys": [ an Object that holds the tag-keys for the tags to be removed.
      "Key1" Key(s) can only be set statically.

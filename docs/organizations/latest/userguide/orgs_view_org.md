@@ -28,7 +28,7 @@ You can use one of the following commands to view details of an organization:
 
   The following example shows the information included in the output of this command.
 
-  ```
+  ```bash
   $ aws organizations describe-organization
   {
       "Organization": {

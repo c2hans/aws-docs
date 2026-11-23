@@ -12,7 +12,7 @@ FortiSASE creates this secret for you. When you connect your AWS account in the 
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "apiKey": "{{FortiSASE API key value}}",
   "apiBaseUrl": "{{FortiSASE API endpoint URL}}"

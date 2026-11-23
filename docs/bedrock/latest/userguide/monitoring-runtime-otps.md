@@ -97,7 +97,7 @@ Use an anomaly detection alarm when workload patterns vary over time and you wan
 
 The following Python example uses the AWS SDK for Python (Boto3) to create the static threshold alarm described in the preceding section. Replace `MODEL_ID`, `OTPS_THRESHOLD`, and `AlarmActions` with values appropriate for your environment.
 
-```
+```python
 import boto3
 
 cw = boto3.client("cloudwatch", region_name="us-east-1")

@@ -39,7 +39,7 @@ Create a Node.js module with the file name `iam_createuser.js`. Be sure to confi
 
 Call the `getUser` method of the `AWS.IAM` service object to see if the user name already exists. If the user name does not currently exist, call the `createUser` method to create it. If the name already exists, write a message to that effect to the console.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -83,7 +83,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `iam_listusers.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create a JSON object containing the parameters needed to list your users, limiting the number returned by setting the `MaxItems` parameter to 10. Call the `listUsers` method of the `AWS.IAM` service object. Write the first user's name and creation date to the console.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -110,7 +110,7 @@ iam.listUsers(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node iam_listusers.js
 ```
 
@@ -121,7 +121,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `iam_updateuser.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create a JSON object containing the parameters needed to list your users, specifying both the current and new user names as command-line parameters. Call the `updateUser` method of the `AWS.IAM` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -159,7 +159,7 @@ Create a Node.js module with the file name `iam_deleteuser.js`. Be sure to confi
 
 Call the `getUser` method of the `AWS.IAM` service object to see if the user name already exists. If the user name does not currently exist, write a message to that effect to the console. If the user exists, call the `deleteUser` method to delete it.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region

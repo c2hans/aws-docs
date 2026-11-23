@@ -67,7 +67,7 @@ If you specify any `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` attributes, then the
 
    For more information on the DynamoDB Enhanced Client, see [create an enhanced client](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-getting-started-dynamodbTable.html#ddb-en-client-getting-started-dynamodbTable-eclient).
 
-```
+```java
 public class MigrationExampleStep1 {
 
     public static void MigrationStep1(String kmsKeyId, String ddbTableName, int sortReadValue) {
@@ -187,7 +187,7 @@ The following procedures provide an overview of the steps demonstrated in the co
 
    For more information on the DynamoDB Enhanced Client, see [create an enhanced client](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-getting-started-dynamodbTable.html#ddb-en-client-getting-started-dynamodbTable-eclient).
 
-```
+```java
 public class MigrationExampleStep2 {
 
     public static void MigrationStep2(String kmsKeyId, String ddbTableName, int sortReadValue) {
@@ -284,7 +284,7 @@ The following procedures provide an overview of the steps demonstrated in the co
 
    For more information on the DynamoDB Enhanced Client, see [create an enhanced client](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-getting-started-dynamodbTable.html#ddb-en-client-getting-started-dynamodbTable-eclient).
 
-```
+```java
 public class MigrationExampleStep3 {
 
     public static void MigrationStep3(String kmsKeyId, String ddbTableName, int sortReadValue) {

@@ -83,7 +83,7 @@ The following scripts demonstrate:
 
 Use the following script to show that a script is running with `root` privileges:
 
-```
+```bash
 # Print environment variables
 set
 # Check AWS Credentials
@@ -95,7 +95,7 @@ aws sts get-caller-identity
 
 Use the following PowerShell script to show that a script is running with Administrator privileges:
 
-```
+```powershell
 Get-ChildItem env: | ForEach-Object { "$($_.Name)=$($_.Value)" }
 aws sts get-caller-identity
 function Test-AdminPrivileges {

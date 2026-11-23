@@ -30,7 +30,7 @@ You can use the [list-principals](https://docs.aws.amazon.com/cli/latest/referen
 
 The following example lists the principals that have access to shares created in the default Region for the calling account. In this example, the principals are the calling account's organization and a separate AWS account, as part of two different resource shares. You must use the service endpoint for the AWS Region that contains the resource share.
 
-```
+```bash
 $ aws ram list-principals \
     --region us-east-1 \
     --resource-owner SELF

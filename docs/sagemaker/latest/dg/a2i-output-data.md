@@ -49,7 +49,7 @@ To learn more about the parameters you see in the block object, refer to [Block]
 
 The following is an example of the output data from an Amazon A2I human review of Amazon Textract document analysis inferences.
 
-```
+```python
 {
     "awsManagedHumanLoopRequestSource": "AWS/Textract/AnalyzeDocument/Forms/V1",
     "flowDefinitionArn": "arn:aws:sagemaker:us-west-2:{{111122223333}}:flow-definition/{{flow-definition-name}}",
@@ -157,7 +157,7 @@ To learn more about the parameters you see in the block object, refer to [Modera
 
 The following is an example of the output data from an Amazon A2I human review of Amazon Rekognition image moderation inferences.
 
-```
+```python
 {
     "awsManagedHumanLoopRequestSource": "AWS/Rekognition/DetectModerationLabels/Image/V3",
     "flowDefinitionArn": "arn:aws:sagemaker:us-west-2:{{111122223333}}:flow-definition/{{flow-definition-name}}",

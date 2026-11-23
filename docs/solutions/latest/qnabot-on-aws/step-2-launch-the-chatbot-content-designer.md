@@ -38,7 +38,7 @@ To reset the user password using the **Forgot your password** option on the sign
 
 To verify email, run:
 
-```
+```bash
 aws cognito-idp admin-update-user-attributes \
  --user-pool-id <qnabot user pool id> \
  --username <username> \
@@ -47,6 +47,6 @@ aws cognito-idp admin-update-user-attributes \
 
 To get the user pool ID, run:
 
-```
+```bash
 aws cognito-idp list-user-pools --max-results 10
 ```

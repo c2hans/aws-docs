@@ -27,7 +27,7 @@ The following example [customer-managed policy](https://docs.aws.amazon.com/IAM/
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[

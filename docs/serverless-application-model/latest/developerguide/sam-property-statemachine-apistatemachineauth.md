@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-statemachine-apistatemachineauth-syntax.yaml"></a>
 
-```
+```yaml
   [ApiKeyRequired](#sam-statemachine-apistatemachineauth-apikeyrequired): {{Boolean}}
   [AuthorizationScopes](#sam-statemachine-apistatemachineauth-authorizationscopes): {{List}}
   [Authorizer](#sam-statemachine-apistatemachineauth-authorizer): {{String}}
@@ -61,7 +61,7 @@ The following example specifies authorization at the state machine level.
 #### YAML
 <a name="sam-property-statemachine-apistatemachineauth--examples--statemachine-auth--yaml"></a>
 
-```
+```yaml
 Auth:
   ApiKeyRequired: true
   Authorizer: NONE

@@ -206,6 +206,7 @@ Nitro Enclaves has the following requirements:
   <tr><td>F2</td><td>All instance types.</td></tr>
   <tr><td>G4dn</td><td>All instance types, <b>except</b>: <code>g4dn.metal</code></td></tr>
   <tr><td>G5</td><td>All instance types.</td></tr>
+  <tr><td>G5g</td><td>All instance types, <b>except</b>: <code>g5g.metal</code></td></tr>
   <tr><td>G6</td><td>All instance types.</td></tr>
   <tr><td>G6e</td><td>All instance types.</td></tr>
   <tr><td>G6f</td><td>All instance types, <b>except</b>: <code>g6f.large</code></td></tr>

@@ -47,7 +47,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### PUT schema
 <a name="channels-channelid-channelclass-request-body-put-example"></a>
 
-```
+```json
 {
   "channelClass": enum,
   "destinations": [
@@ -104,7 +104,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### UpdateChannelResultModel schema
 <a name="channels-channelid-channelclass-response-body-updatechannelresultmodel-example"></a>
 
-```
+```json
 {
   "channel": {
     "arn": "string",
@@ -1691,7 +1691,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### InvalidRequest schema
 <a name="channels-channelid-channelclass-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -1700,7 +1700,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### AccessDenied schema
 <a name="channels-channelid-channelclass-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -1709,7 +1709,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### ResourceNotFound schema
 <a name="channels-channelid-channelclass-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -1718,7 +1718,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### ResourceConflict schema
 <a name="channels-channelid-channelclass-response-body-resourceconflict-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -1727,7 +1727,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### ChannelConfigurationValidationError schema
 <a name="channels-channelid-channelclass-response-body-channelconfigurationvalidationerror-example"></a>
 
-```
+```json
 {
   "message": "string",
   "validationErrors": [
@@ -1742,7 +1742,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### LimitExceeded schema
 <a name="channels-channelid-channelclass-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -1751,7 +1751,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### InternalServiceError schema
 <a name="channels-channelid-channelclass-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -1760,7 +1760,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### BadGatewayException schema
 <a name="channels-channelid-channelclass-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -1769,7 +1769,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### GatewayTimeoutException schema
 <a name="channels-channelid-channelclass-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

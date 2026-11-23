@@ -10,7 +10,7 @@ The promise is fulfilled with the result object on success or rejected with an e
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 use Aws\S3\S3Client;
 use Aws\Exception\AwsException;
@@ -18,7 +18,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 // Create an SDK class used to share configuration across clients.
 $sdk = new Aws\Sdk([
     'region'   => 'us-west-2'
@@ -37,7 +37,7 @@ When using the SDK with an event loop library, don’t block on results. Instead
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 use Aws\S3\S3Client;
 use Aws\Exception\AwsException;
@@ -45,7 +45,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 // Create an SDK class used to share configuration across clients.
 $sdk = new Aws\Sdk([
     'region'   => 'us-west-2'
@@ -54,7 +54,7 @@ $sdk = new Aws\Sdk([
 $s3Client = $sdk->createS3();
 ```
 
-```
+```php
 $promise = $s3Client->listBucketsAsync();
 $promise
     ->then(function ($result) {

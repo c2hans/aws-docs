@@ -54,7 +54,7 @@ To override this, specify the `customAmi` object in the `cdk.json` file. This ob
 **Note**
 The guidance has been tested with Amazon Linux, Ubuntu 20.04 LTS and Ubuntu 22.04 LTS.
 
-```
+```json
 "customAmi": {
     "arm64": {
         "name": "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-arm64-server*",
@@ -74,7 +74,7 @@ By default, all the guidance data (S3 buckets, Aurora DB instances, Aurora DB sn
 
 To remove this data, in the configuration file, set the retainData flag to false. You are liable for the service charges when guidance data is retained in the default configuration.
 
-```
+```json
 "retainData": false,
 ```
 
@@ -84,12 +84,12 @@ To remove this data, in the configuration file, set the retainData flag to false
  **Virtual Private Cloud (VPC)**
 + VPC CIDR Range: By default, the guidance creates a new VPC for deployment with 10.120.0.0/16 as the default CIDR range. You can override this using this configuration:
 
-```
+```json
 "vpcCidr": "x.x.x.x/x",
 ```
 + VPC ID: You can deploy to an existing VPC. To do this, use the following configuration option:
 
-```
+```json
 "vpcId": "vpc-xxxxxxxxxxxxxxxxx"
 ```
 
@@ -97,7 +97,7 @@ To remove this data, in the configuration file, set the retainData flag to false
 
 The guidance will provision an ALB to route requests to Druid query instances. It supports both internet facing and private options as follows.
 
-```
+```json
 "internetFacing": true,
 ```
 
@@ -107,7 +107,7 @@ The default setting creates a private Application Load Balancer (ALB). To access
 
 You can launch a bastion host in the public subnet using this configuration, which facilitates the access to the hosts and services running in private and isolated subnets.
 
-```
+```json
 "bastionHost": true,
 ```
 
@@ -119,14 +119,14 @@ This guidance can integrate with Amazon Route 53 to automate the creation of dom
 With the following Route 53 configuration, this guidance automatically creates a Route53 domain using the specified druidDomain in the supplied hosted zone. Additionally, this guidance creates a certificate in the AWS Certificate Manager (ACM) and associates it with the Application Load Balancer (ALB) to enable secure HTTPS communication.
 + Route 53 hosted zone configuration
 
-```
+```json
 "route53HostedZoneName": "<The hosted zone name in Route 53. eg. example.com>",
 
 "route53HostedZoneId": "<The hosted zone ID in Route 53. eg. Z03935053V8YUTYYYEXXX>",
 ```
 + Druid domain configuration
 
-```
+```json
 "druidDomain": "<A full domain address. eg. druid.example.com>"
 ```
 
@@ -134,7 +134,7 @@ With the following Route 53 configuration, this guidance automatically creates a
 If none of these configurations are set up, the guidance assigns a generic Application Load Balancer (ALB) domain name for your Druid cluster which will expose HTTP protocol only. You have the flexibility to set up the domain outside of the guidance. In such a case, you must configure the TLS certificate and the `druidDomain` to facilitate secure HTTPS access to the Druid cluster after the domain has been successfully set up.
 + TLS certificate configuration
 
-```
+```json
 "tlsCertificateArn": "<The ARN of ACM certificate>"
 ```
 
@@ -148,7 +148,7 @@ FIPSEndpoints are only available in North American (NA) Regions.
 
 If you want to use FIPS 140-2 validated cryptographic modules, you can set this using this configuration:
 
-```
+```json
 "useFipsEndpoint": true,
 ```
 
@@ -157,7 +157,7 @@ If you want to use FIPS 140-2 validated cryptographic modules, you can set this 
 
 By default, this guidance activates basic authentication, enabling access to the Druid web console and API through a username and password. Additionally, you can use user access federation through a third-party identity provider (IdP) that supports OpenID Connect (OIDC) authentication. If you have an existing enterprise Identity Provider, you can integrate it using this CDK configuration.
 
-```
+```json
 "oidcIdpConfig": {
     "clientId": "<OIDC IDP client ID>",
     "clientSecretArn": "<The ARN of the secret in AWS secret manager which stores the client secret and cookiePassphrase.>",
@@ -179,7 +179,7 @@ The client secret consists of the following two fields:
 
 Example: Identity provider configuration to federate through Amazon Cognito.
 
-```
+```json
 "oidcIdpConfig": {
      "clientId": "<OIDC IDP client ID>",
      "clientSecretArn": "arn:aws:secretsmanager:<region>:<account>:secret:<secret-name>-<random-6-characters>",
@@ -203,7 +203,7 @@ You must configure the redirect URI on the IDP side as `https://<druid_domain>/d
 
 Apache Druid release version (eg. 30.0.0) that you want to run. We recommend using the latest stable [Druid version](https://code.amazon.com/packages/Apjsb-druid-swift/trees/mainline#https://druid.apache).
 
-```
+```json
 "druidVersion": "30.0.0",
 ```
 
@@ -212,7 +212,7 @@ Apache Druid release version (eg. 30.0.0) that you want to run. We recommend usi
 
 A sequence of ASCII characters that uniquely identifies each Druid cluster. If there are multiple deployments, make sure that you have an unique cluster name for each cluster. The cluster name is appended to the CloudFormation stack name.
 
-```
+```json
 "druidClusterName": "dev",
 ```
 
@@ -222,7 +222,7 @@ A sequence of ASCII characters that uniquely identifies each Druid cluster. If t
 The intended computing service for hosting a Druid cluster currently has two options available:
 + EC2: The guidance will be deployed on Amazon EC2 hosts. For more information on how to configure Druid EC2, refer to the [Druid EC2 configuration](#druid-ec2-configuration) section.
 
-```
+```json
 "druidOperationPlatform": "ec2",
 ```
 + EKS: The guidance will be deployed on Amazon EKS.
@@ -232,7 +232,7 @@ The intended computing service for hosting a Druid cluster currently has two opt
 
 By default, this guidance creates an IAM role that gives Druid components the minimum permissions to function. You can extend this role with additional permissions by using the following configuration:
 
-```
+```json
 "druidInstanceIamPolicyArns": ["The ARN of custom IAM policy"...]
 ```
 
@@ -245,7 +245,7 @@ The maximum number of concurrent queries that the Druid cluster can handle. The 
 
 To customize this default configuration, you can override the values using the following configuration:
 
-```
+```json
 "druidConcurrentQueryLimit": number
 ```
 
@@ -267,7 +267,7 @@ To load any custom extensions that you have developed in-house, make sure that t
 
  **Druid extensions example**
 
-```
+```json
 "druidExtensions": [
     "druid-hdfs-storage",
     "druid-kafka-indexing-service",
@@ -286,7 +286,7 @@ By default, the guidance features a common.runtime.properties file located withi
 
 Druid common runtime customization configuration example:
 
-```
+```json
 "druidCommonRuntimeConfig": {
      "druid.startup.logging.logProperties": false
      }
@@ -301,7 +301,7 @@ Alternatively, you can use the Druid API or the Druid Web Console to configure t
 
  **Druid retention rules example**
 
-```
+```json
 "druidRetentionRules": [
           {
           "type": "loadByPeriod",
@@ -327,7 +327,7 @@ Alternatively, you can use the Druid API or the Druid Web Console to configure t
 
 In the default configuration, this guidance sets up an Amazon Aurora Serverless v1 cluster, using the PostgreSQL-compatible engine as the metadata store for Druid. If you prefer to use an Amazon Aurora cluster as the metadata store, connect to an existing PostgreSQL database, or create the metadata store from a snapshot, you can customize the configuration by applying the following settings:
 
-```
+```json
 "druidMetadataStoreConfig": {
         // Metadata store type. Acceptable values include aurora, aurora_serverless, or custom.
         "metadataStoreType": "<aurora | aurora_serverless | custom>",
@@ -353,7 +353,7 @@ In the default configuration, this guidance sets up an Amazon Aurora Serverless 
 
 This section provides instructions for creating a new Aurora metadata store.
 
-```
+```json
 "druidMetadataStoreConfig": {
       "metadataStoreType": "aurora",
       "metadataStoreConfig": {
@@ -371,7 +371,7 @@ This section provides instructions for creating a new Aurora metadata store.
 
 Example configuration to create a new Aurora metadata store:
 
-```
+```json
 "druidMetadataStoreConfig": {
      "metadataStoreType": "aurora",
      "metadataStoreConfig": {
@@ -392,7 +392,7 @@ This section provides instructions on how to create a new Aurora metadata store 
 **Note**
 The guidance will try to create two magic users, specifically `admin` and `druid_system`, to run internal operations if these users don’t exist in the snapshot. If these users already exist in the snapshot, generate a secret in AWS Secrets Manager that includes both the username and password, and then proceed to integrate it into the metadata store configuration. If the secrets are encrypted by a KMS key, ensure that the KMS key permits access from AWS Secrets Manager to enable decryption of the secret.
 
-```
+```json
 "druidMetadataStoreConfig": {
     "metadataStoreType": "aurora",
     "metadataStoreConfig": {
@@ -425,7 +425,7 @@ The guidance will try to create two magic users, specifically `admin` and `druid
 
 Example configuration to create a metadata store from snapshot:
 
-```
+```json
 "druidMetadataStoreConfig": {
     "metadataStoreType": "aurora",
     "metadataStoreConfig": {
@@ -449,7 +449,7 @@ This section explains how to use your own PostgreSQL database for the metadata s
 **Note**
 By default, this guidance will enforce TLS for the database connectivity. If you’re using non-public certificates, you must ensure the non-public certificates can be validated by the Druid system.
 
-```
+```json
 "druidMetadataStoreConfig": {
     "metadataStoreType": "custom",
     "metadataStoreConfig": {
@@ -471,7 +471,7 @@ By default, this guidance will enforce TLS for the database connectivity. If you
 
 Example configuration to connect to an external metadata store:
 
-```
+```json
 "druidMetadataStoreConfig": {
     "metadataStoreType": "custom",
     "metadataStoreConfig": {
@@ -488,7 +488,7 @@ Example configuration to connect to an external metadata store:
 
 By default, this guidance will set up a bucket in Amazon S3 for deep storage. To use your own bucket for deep storage, you can override this default configuration using the following configuration:
 
-```
+```json
 "druidDeepStorageConfig": {
     // The ARN of S3 bucket to be used as deep storage
     "bucketArn": string,
@@ -501,7 +501,7 @@ By default, this guidance will set up a bucket in Amazon S3 for deep storage. To
 
 Example deep storage configuration:
 
-```
+```json
 "druidDeepStorageConfig": {
     "bucketArn": "arn:aws:s3:::<bucket-id>",
     "bucketPrefix": "druid/segments",
@@ -521,7 +521,7 @@ This guidance also fully supports the [service tiering](https://druid.apache.org
 
 It covers the following fields for each node type:
 
-```
+```json
 // Druid node type. Valid values include data, master, query, and zookeeper. In case of service tiering, it also supports data_<tier>, historical_<tier>, middleManager_<tier>
 
 "<Druid node type>": {
@@ -556,7 +556,7 @@ Once the new instance is confirmed to be in a healthy state, the process proceed
 
 You can customize and override the batch size using the following configuration:
 
-```
+```json
 // Optional. The rollingUpdatePolicy defines how an Auto Scaling group resource is updated.
 "rollingUpdatePolicy": {
     // Optional. Number of instances that is going to be replaced in each batch. Default 1.
@@ -569,7 +569,7 @@ You can customize and override the batch size using the following configuration:
 
 An Auto scaling policy consists of predefined rules and parameters that dictate how the scaling process should occur. These rules are defined by the user based on specific metrics, such as CPU utilization, network traffic, or application-specific performance metrics. In addition to dynamic auto scaling based on Scalable metrics, it also offers schedule-based auto scaling.
 
-```
+```json
 "autoScalingPolicy": {
     "cpuUtilisationPercent": number between [1, 100],
     "schedulePolicies": [
@@ -589,7 +589,7 @@ An Auto scaling policy consists of predefined rules and parameters that dictate 
 
 The guidance comes pre-configured with Druid, which suits most use cases. You can customize the Druid configuration (runtime.properties) using the following settings:
 
-```
+```json
 "runtimeConfig": {
     // Druid process type depending on the node type. Valid values include coordinator, overlord, middleManager, historical, router, and broker.
     "<Druid process type>": {
@@ -602,7 +602,7 @@ The guidance comes pre-configured with Druid, which suits most use cases. You ca
 
 Runtime configuration customization example:
 
-```
+```json
 "runtimeConfig": {
     "historical": {
         "druid.server.http.numThreads": 300
@@ -615,7 +615,7 @@ Runtime configuration customization example:
 
 Druid EC2 configuration example
 
-```
+```json
 "druidEc2Config": {
     "master": {
         "minNodes": 2,
@@ -650,7 +650,7 @@ Druid EC2 configuration example
 
 Example: Druid deployment using EC2 for a medium profile
 
-```
+```json
 {
     "vpcCidr": "xx.xxx.0.0/16",
     "route53HostedZoneName": "<route53 hosted zone name>",
@@ -725,7 +725,7 @@ This section provides instructions on the configuration for the EKS cluster, inc
 ### EKS cluster configuration
 <a name="eks-cluster-configuration"></a>
 
-```
+```json
 "druidEksConfig": {
     // Kubernetes API server endpoint access. Valid values include PUBLIC, PRIVATE, and PUBLIC_AND_PRIVATE
     "endpointAccess": "PUBLIC",
@@ -747,7 +747,7 @@ This section provides instructions on the configuration for the EKS cluster, inc
 
 This is required if `capacityProviderType` is ec2.
 
-```
+```json
 // Node group name, valid values include master, query, data, and zookeeper. In case of service tiering, data_<tier> is also supported.
 
 "<nodeGroupName>": {
@@ -776,7 +776,7 @@ This is required if `capacityProviderType` is ec2.
 
 This is required if `capacityProviderType` is Fargate.
 
-```
+```json
 // Druid process name, valid values include coordinator, overlord, middleManager, historical, router, broker, and zookeeper.
 
 "<druidProcessName>": {
@@ -796,7 +796,7 @@ This is required if `capacityProviderType` is Fargate.
 
  **Druid EKS configuration example (EC2 capacity provider)**
 
-```
+```json
 "druidEksConfig": {
     "endpointAccess": "PUBLIC",
     "clusterMasterPrincipalArn": "arn:aws:iam::<account id>:role/<role name>",
@@ -834,7 +834,7 @@ This is required if `capacityProviderType` is Fargate.
 
 Example: Druid deployment using EKS for a medium profile
 
-```
+```json
 {
     "vpcCidr": "xx.xxx.0.0/16",
     "route53HostedZoneName": "<route53 hosted zone name>",
@@ -903,7 +903,7 @@ Example: Druid deployment using EKS for a medium profile
 
 Example: Druid configuration using EKS and Fargate, for a medium profile
 
-```
+```json
 {
     "vpcCidr": "xx.xxx.0.0/16",
     "route53HostedZoneName": "<route53 hosted zone name>",

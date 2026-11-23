@@ -8,7 +8,7 @@ The Amazon Personalize Search Ranking plugin rearranges search results based on 
 
 To understand how results are ranked, you can run queries with and without personalization, and compare the results. You can use the following Python code to run two different queries and output the results to two JSON files. The first method runs a query that uses the plugin to re-rank results. The second runs a method that generates results without personalization.
 
-```
+```python
 import json
 import requests
 from requests_auth_aws_sigv4 import AWSSigV4

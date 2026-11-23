@@ -10,6 +10,7 @@ In this topic, you learn how to use Oracle SQL Developer or SQL\*Plus to connect
 
 **Topics**
 + [Finding the endpoint of your RDS for Oracle DB instance](USER_Endpoint.md)
++ [Using the Primary Endpoint for Amazon RDS for Oracle](oracle-primary-endpoint.md)
 + [Connecting to your DB instance using Oracle SQL developer](USER_ConnectToOracleInstance.SQLDeveloper.md)
 + [Connecting to your DB instance using SQL\*Plus](USER_ConnectToOracleInstance.SQLPlus.md)
 + [Considerations for security groups](USER_ConnectToOracleInstance.Security.md)

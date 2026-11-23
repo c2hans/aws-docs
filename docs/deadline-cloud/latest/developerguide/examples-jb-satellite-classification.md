@@ -14,13 +14,13 @@ The bundle requires a farm with a conda queue environment that has `conda-forge`
 
 Submit with the sample tiles:
 
-```
+```bash
 deadline bundle submit job_bundles/satellite_classification/
 ```
 
 To classify your own tiles, point `TilesDir` at a local directory of 4-band `.tif` files:
 
-```
+```bash
 deadline bundle submit job_bundles/satellite_classification/ \
   -p TilesDir={{path-to-tiles}}
 ```

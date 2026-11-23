@@ -58,7 +58,7 @@ For more information, see [Monitor stack progress](https://docs.aws.amazon.com/A
 **Tools for PowerShell V4**
 **Example 1: Returns all stack related events for the specified stack.**
 
-```
+```powershell
 Get-CFNStackEvent -StackName "myStack"
 ```
 +  For API details, see [DescribeStackEvents](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -66,7 +66,7 @@ Get-CFNStackEvent -StackName "myStack"
 **Tools for PowerShell V5**
 **Example 1: Returns all stack related events for the specified stack.**
 
-```
+```powershell
 Get-CFNStackEvent -StackName "myStack"
 ```
 +  For API details, see [DescribeStackEvents](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

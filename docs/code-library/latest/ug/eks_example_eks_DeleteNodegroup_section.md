@@ -86,7 +86,7 @@ For more information, see [Delete a managed node group from your cluster](https:
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deletes an Amazon EKS node group for a cluster.**
 
-```
+```powershell
 Remove-EKSNodegroup -NodegroupName "ProdEKSNodeGroup" -ClusterName "PROD"
 ```
 **Output:**
@@ -122,7 +122,7 @@ Version        : 1.14
 **Tools for PowerShell V5**
 **Example 1: This cmdlet deletes an Amazon EKS node group for a cluster.**
 
-```
+```powershell
 Remove-EKSNodegroup -NodegroupName "ProdEKSNodeGroup" -ClusterName "PROD"
 ```
 **Output:**

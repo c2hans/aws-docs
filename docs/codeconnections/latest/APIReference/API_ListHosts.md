@@ -32,7 +32,7 @@ Required: No
  ** [NextToken](#API_ListHosts_RequestSyntax) **   <a name="codeconnections-ListHosts-request-NextToken"></a>
 The token that was returned from the previous `ListHosts` call, which can be used to return the next set of hosts in the list.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 1024.
+Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `.*`
 Required: No
 
@@ -75,7 +75,7 @@ Type: Array of [Host](API_Host.md) objects
  ** [NextToken](#API_ListHosts_ResponseSyntax) **   <a name="codeconnections-ListHosts-response-NextToken"></a>
 A token that can be used in the next `ListHosts` call. To view all items in the list, continue to call this operation with each subsequent token until no more `nextToken` values are returned.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 1024.
+Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `.*`
 
 ## Errors

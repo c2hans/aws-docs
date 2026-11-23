@@ -92,7 +92,7 @@ Creates a new quota on a folder. A quota limits the amount of data that users ca
 
  **1. Create a hard 5GB quota without using a quota template.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     New-FSxFSRMQuota -Folder "share\test" -Size 5GB
 }
@@ -100,7 +100,7 @@ Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationN
 
  **2. Create soft quota with a threshold notification**
 
-```
+```powershell
 $thresholds = [System.Collections.ArrayList]@()
 $warning = @{
     ThresholdPercentage = 75
@@ -133,7 +133,7 @@ Retrieves one or more quotas from your file system. The command returns details 
 
  **1. Get all existing quotas on the file system.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Get-FSxFSRMQuota
 }
@@ -152,7 +152,7 @@ Removes a quota from a specified folder on your file system.
 
  **1. Remove a quota.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Remove-FSxFSRMQuota -Folder "share\test" -PassThru
 }
@@ -185,7 +185,7 @@ Modifies the configuration of an existing quota.
 
  **1. Modify quota size and description.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Set-FSxFSRMQuota 	-Folder "share\department" 	-Size 2GB 	-Description "Updated quota for department share"
 }
@@ -193,7 +193,7 @@ Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationN
 
  **2. Disable a Quota**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Set-FSxFSRMQuota -Folder "share\department" -Disabled:$true
 }
@@ -212,7 +212,7 @@ Recalculates the current usage statistics for a quota by scanning the folder to 
 
  **1. Recalculates the current usage statistics for a specified quota.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Update-FSxFSRMQuota -Folder "share\department" -PassThru
 }
@@ -246,7 +246,7 @@ Creates a new quota template that defines a reusable configuration for quotas.
 
  **1. Create hard 1 GB limit template.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     New-FSxFSRMQuotaTemplate -Name "1GB Hard Limit" -Size 1GB -Description "Standard 1GB hard limit template"
 }
@@ -254,7 +254,7 @@ Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationN
 
  **2. Create a 5 GB soft limit template with a warning threshold at 90% usage**
 
-```
+```powershell
 $threshold = @{
     ThresholdPercentage = 90
     Action = @(
@@ -288,7 +288,7 @@ Retrieves one or more quota templates from your file system.
 
  **1. Retrieve all quota templates on the file system.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Get-FSxFSRMQuotaTemplate
 }
@@ -322,7 +322,7 @@ Modifies the properties of a quota template.
 
  **1. Modifies the size and description of a quota template.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Set-FSxFSRMQuotaTemplate -Name "5GB Soft Limit" -Size 10GB -Description "Updated to 10GB soft limit"
 }
@@ -330,7 +330,7 @@ Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationN
 
  **2. Modifies a quota template and updates all quotas that were created from the template.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Set-FSxFSRMQuotaTemplate -Name "1GB Hard Limit" -Size 2GB -UpdateDerived
 }
@@ -351,7 +351,7 @@ Resets a quota to match the settings of a specified template.
 
  **Examples: Reset a quota to match the settings defined in a quota template.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Reset-FSxFSRMQuota -Folder "share\department" -Template "1GB Hard Limit"
 }
@@ -376,7 +376,7 @@ The `New-FSxFSRMAutoQuota` command creates an auto apply quota on a specified fo
 
  **1. Create an auto apply quota that automatically applies a specified template to all subfolders.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     New-FSxFSRMAutoQuota -Folder "share\department" -Template "250 MB Extended Limit"
 }
@@ -398,7 +398,7 @@ If you don't specify a folder path, the command returns all auto apply quotas on
 
  **1. Retrieve all auto apply quotas on the file system.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Get-FSxFSRMAutoQuota
 }
@@ -419,7 +419,7 @@ The `Remove-FSxFSRMAutoQuota` command removes an auto-apply quota from a specifi
 
  **1. Remove an auto apply quota from a specific folder.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Remove-FSxFSRMAutoQuota -Folder "share\department" -PassThru
 }
@@ -444,7 +444,7 @@ The `Set-FSxFSRMAutoQuota` command modifies the configuration settings of an aut
 
  **1. Change the quota template used by an auto apply quota.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Set-FSxFSRMAutoQuota -Folder "share\department" -Template "100 MB Limit"
 }
@@ -452,7 +452,7 @@ Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationN
 
  **2. Disable an auto apply quota and update all quotas that were derived from it.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Set-FSxFSRMAutoQuota -Folder "share\department" -Disabled:$true -UpdateDerived
 }
@@ -473,7 +473,7 @@ The `Update-FSxFSRMAutoQuota` command recalculates the properties of an auto app
 
  **1. Recalculate the usage statistics and return the updated auto apply quota object.**
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Update-FSxFSRMAutoQuota -Folder "share\department" -PassThru
 }

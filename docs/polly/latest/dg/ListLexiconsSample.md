@@ -8,7 +8,7 @@ The following Java code sample shows how to use Java-based applications to produ
 
 For more information on this operation, see the reference for the [`ListLexicons`](https://docs.aws.amazon.com/polly/latest/APIReference/API_ListLexicons.html) API.
 
-```
+```java
 package com.amazonaws.polly.samples;
 
 import com.amazonaws.services.polly.AmazonPolly;

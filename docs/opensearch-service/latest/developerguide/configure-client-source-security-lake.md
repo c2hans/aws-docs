@@ -36,7 +36,7 @@ Create a new permissions policy in IAM that combines only the required permissio
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -74,7 +74,7 @@ Security Lake doesn’t manage the pipeline role policy for you. If you add or r
 
 You must attach these permissions to the IAM role that you specify in the `sts_role_arn` option within the S3 source plugin configuration, under `sqs`.
 
-```
+```yaml
 version: "2"
 source:
   s3:

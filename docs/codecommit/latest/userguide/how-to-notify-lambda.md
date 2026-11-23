@@ -42,7 +42,7 @@ When you use the Lambda console to create the function, you can also create a Co
 
    For Node.js:
 
-   ```
+   ```nodejs
    import {
      CodeCommitClient,
      GetRepositoryCommand,
@@ -81,7 +81,7 @@ When you use the Lambda console to create the function, you can also create a Co
 
    For Python:
 
-   ```
+   ```python
    import json
    import boto3
 

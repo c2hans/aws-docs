@@ -51,7 +51,7 @@ RES versions 2024.12 and 2024.12.01
 
    1. Configure the AWS CLI for the account and region where RES is deployed, and make sure that you have S3 permissions to write to the bucket created by RES.
 
-   ```
+   ```bash
    OUTPUT_DIRECTORY=<output-directory>
    ENVIRONMENT_NAME=<environment-name>
    RES_VERSION=<res-version> # either 2024.12 or 2024.12.01
@@ -63,13 +63,13 @@ RES versions 2024.12 and 2024.12.01
 
 1. Navigate to the directory where the patch script and patch file were downloaded. Run the following patch command:
 
-   ```
+   ```bash
    python3 ${OUTPUT_DIRECTORY}/patch.py --environment-name ${ENVIRONMENT_NAME} --res-version ${RES_VERSION} --module cluster-manager --patch ${OUTPUT_DIRECTORY}/cognito_sign_up_email_fix.patch
    ```
 
 1. Restart the Cluster Manager instance for your environment. You may also terminate the instance from the Amazon EC2 Management Console.
 
-   ```
+   ```bash
    INSTANCE_ID=$(aws ec2 describe-instances \
        --filters \
        Name=tag:Name,Values=${ENVIRONMENT_NAME}-cluster-manager \
@@ -91,7 +91,7 @@ RES versions 2024.12 and 2024.12.01
 
 When you deploy the [External Resources recipe](create-external-resources.md) and RES with a custom portal domain name, CertificateRenewalNode fails to refresh the TLS certificate for VDI connection with the following error in `/var/log/user-data.log`:
 
-```
+```JSON
 {
   "type": "urn:ietf:params:acme:error:unauthorized",
   "detail": "Error finalizing order :: OCSP must-staple extension is no longer available: see https://letsencrypt.org/2024/12/05/ending-ocsp",
@@ -144,7 +144,7 @@ The Python application that runs on the Bastion Host fails to launch the SSSD se
 
 1. Run the following commands on the instance:
 
-   ```
+   ```bash
    source /etc/environment
    sudo service supervisord restart
    sudo systemctl restart supervisord
@@ -196,7 +196,7 @@ All RES versions 2024.10 or earlier.
 
    1. Configure the AWS CLI for the account and region where RES is deployed, and make sure that you have S3 permissions to write to the bucket created by RES.
 
-   ```
+   ```bash
    OUTPUT_DIRECTORY=<output-directory>
    ENVIRONMENT_NAME=<environment-name>
 
@@ -207,13 +207,13 @@ All RES versions 2024.10 or earlier.
 
 1. Navigate to the directory where the patch script and patch file were downloaded. Run the following patch command:
 
-   ```
+   ```bash
    python3 ${OUTPUT_DIRECTORY}/patch.py --environment-name ${ENVIRONMENT_NAME} --res-version 2024.10 --module virtual-desktop-controller --patch ${OUTPUT_DIRECTORY}/graphic_enhanced_instance_types_fix.patch
    ```
 
 1. To terminate the Virtual Desktop Controller (vdc-controller) instance for your environment, run the following commands, replacing the name of your RES environment where shown.
 
-   ```
+   ```bash
    INSTANCE_ID=$(aws ec2 describe-instances \
        --filters \
        Name=tag:Name,Values=${ENVIRONMENT_NAME}-vdc-controller \
@@ -308,13 +308,13 @@ After you provision a VDI instance, the specified mount directory for that S3 bu
 
 1. Navigate to the directory where the patch script and patch file are downloaded. Run the following patch command:
 
-   ```
+   ```bash
    python3 ${OUTPUT_DIRECTORY}/patch.py --environment-name ${ENVIRONMENT_NAME} --res-version 2024.08 --module virtual-desktop-controller --patch ${OUTPUT_DIRECTORY}/s3_mount_custom_prefix_fix.patch
    ```
 
 1. To terminate the Virtual Desktop Controller (vdc-controller) instance for your environment, run the following commands. (You already set the `ENVIRONMENT_NAME` variable to the name of your RES environment in the first step.)
 
-   ```
+   ```bash
    INSTANCE_ID=$(aws ec2 describe-instances \
        --filters \
        Name=tag:Name,Values=${ENVIRONMENT_NAME}-vdc-controller \
@@ -363,7 +363,7 @@ The error results from RES only accepting group names that meet the following re
 
    1. Configure the AWS CLI for the account and region where RES is deployed, and make sure that you have S3 permissions to write to the bucket created by RES:
 
-      ```
+      ```bash
       OUTPUT_DIRECTORY={{<output-directory>}}
       ENVIRONMENT_NAME={{<environment-name>}}
 
@@ -374,13 +374,13 @@ The error results from RES only accepting group names that meet the following re
 
 1. Navigate to the directory where the patch script and patch file are downloaded. Run the following patch command:
 
-   ```
+   ```bash
    python3 patch.py --environment-name ${ENVIRONMENT_NAME} --res-version 2024.06 --module cluster-manager --patch ${OUTPUT_DIRECTORY}/groupname_regex.patch
    ```
 
 1. To restart the Cluster Manager instance for your environment, run the following commands: You may also terminate the instance from the Amazon EC2 Management Console.
 
-   ```
+   ```bash
    INSTANCE_ID=$(aws ec2 describe-instances \
        --filters \
        Name=tag:Name,Values=${ENVIRONMENT_NAME}-cluster-manager \
@@ -423,7 +423,7 @@ Patch download link: [ 2024.04.02\_group\_member\_sync\_bug\_fix.patch](https://
 RES Version: RES 2024.06
 Patch download link: [ 2024.06\_group\_member\_sync\_bug\_fix.patch](https://research-engineering-studio-us-east-1.s3.amazonaws.com/releases/2024.06/patch_scripts/patches/2024.06_group_member_sync_bug_fix.patch)
 
-   ```
+   ```bash
    OUTPUT_DIRECTORY={{<output-directory>}}
    RES_VERSION={{<res_version>}}
    mkdir -p ${OUTPUT_DIRECTORY}
@@ -435,7 +435,7 @@ Patch download link: [ 2024.06\_group\_member\_sync\_bug\_fix.patch](https://res
 
 1. Navigate to the directory where the patch script and patch file are downloaded. Run the following patch command, replacing `<environment-name>` with the name of your RES environment:
 
-   ```
+   ```bash
    cd ${OUTPUT_DIRECTORY}
    ENVIRONMENT_NAME={{<environment-name>}}
 
@@ -444,7 +444,7 @@ Patch download link: [ 2024.06\_group\_member\_sync\_bug\_fix.patch](https://res
 
 1. To restart the cluster-manager instance for your environment, run the following commands:
 
-   ```
+   ```bash
    INSTANCE_ID=$(aws ec2 describe-instances \
        --filters \
        Name=tag:Name,Values=${ENVIRONMENT_NAME}-cluster-manager \
@@ -488,7 +488,7 @@ If you have existing RHEL9 or Ubuntu VDIs, we recommend following the **PATCH EX
 
    1. Configure the AWS CLI for the account and region where RES is deployed, and make sure that you have AWS Systems Manager permissions to send a Systems Manager Run Command.
 
-      ```
+      ```bash
       aws ssm send-command \
           --document-name "AWS-RunRemoteScript" \
           --targets "Key=tag:res:NodeType,Values=virtual-desktop-dcv-host" \
@@ -505,7 +505,7 @@ The patch only applies to RES 2024.06.
 The patch script requires [AWS CLI v2](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)), Python 3.9.16 or above, and [Boto3](https://aws.amazon.com/sdk-for-python/).
 Configure your copy of the AWS CLI for the account and region where RES is deployed, and make sure that you have S3 permissions to write to the bucket created by RES.
 
-   ```
+   ```bash
    OUTPUT_DIRECTORY={{<output-directory>}}
    ENVIRONMENT_NAME={{<environment-name>}}
 
@@ -516,13 +516,13 @@ Configure your copy of the AWS CLI for the account and region where RES is deplo
 
 1. Run the following patch command:
 
-   ```
+   ```bash
    python3 ${OUTPUT_DIRECTORY}/patch.py --environment-name ${ENVIRONMENT_NAME} --res-version 2024.06 --module virtual-desktop-controller --patch ${OUTPUT_DIRECTORY}/update_openssh.patch
    ```
 
 1. Restart the VDC Controller instance for your environment with the following commands:
 
-   ```
+   ```bash
    INSTANCE_ID=$(aws ec2 describe-instances \
        --filters \
        Name=tag:Name,Values=${ENVIRONMENT_NAME}-vdc-controller \
@@ -561,7 +561,7 @@ Follow these steps to allow VDIs to properly inherit the permissions boundary as
 
    1. Configure the AWS CLI for the account and region where RES is deployed, and make sure that you have S3 permissions to write to the bucket created by RES.
 
-   ```
+   ```bash
    OUTPUT_DIRECTORY={{<output-directory>}}
 
    curl https://research-engineering-studio-us-east-1.s3.amazonaws.com/releases/2024.04.02/patch_scripts/patch.py --output ${OUTPUT_DIRECTORY}/patch.py
@@ -571,13 +571,13 @@ Follow these steps to allow VDIs to properly inherit the permissions boundary as
 
 1. Navigate to the directory where the patch script and patch file are downloaded. Run the following patch command, replacing `<environment-name>` with the name of your RES environment:
 
-   ```
+   ```bash
    python3 patch.py --environment-name {{<environment-name>}} --res-version 2024.04.02 --module cluster-manager --patch vdi_host_role_permission_boundary.patch
    ```
 
 1. Restart the cluster-manager instance in your environment by running this command, replacing `<environment-name>` with the name of your RES environment. You may also terminate the instance from the Amazon EC2 Management Console.
 
-   ```
+   ```bash
    ENVIRONMENT_NAME={{<environment-name>}}
 
    INSTANCE_ID=$(aws ec2 describe-instances \
@@ -687,7 +687,7 @@ To recover the virtual desktops that are stuck in the "RESUMING" state:
 
 1. Run the following commands on the instance:
 
-   ```
+   ```bash
    sudo su -
    /bin/bash /root/bootstrap/latest/virtual-desktop-host-linux/configure_post_reboot.sh
    sudo reboot
@@ -703,7 +703,7 @@ The patch only applies to RES 2024.04.02.
 The patch script requires [AWS CLI v2](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html), Python 3.9.16 or above, and [Boto3](https://aws.amazon.com/sdk-for-python/).
 Configure the AWS CLI for the account and region where RES is deployed, and make sure that you have S3 permissions to write to the bucket created by RES.
 
-   ```
+   ```bash
    OUTPUT_DIRECTORY={{<output-directory>}}
 
    curl https://research-engineering-studio-us-east-1.s3.amazonaws.com/releases/2024.04.02/patch_scripts/patch.py --output ${OUTPUT_DIRECTORY}/patch.py
@@ -713,13 +713,13 @@ Configure the AWS CLI for the account and region where RES is deployed, and make
 
 1. Navigate to the directory where the patch script and patch file are downloaded. Run the following patch command, replacing `<environment-name>` with the name of your RES environment and `<aws-region>` with the region where RES is deployed:
 
-   ```
+   ```bash
    python3 patch.py --environment-name {{<environment-name>}} --res-version 2024.04.02 --module virtual-desktop-controller --patch vdi_stuck_in_resuming_status.patch --region {{<aws-region>}}
    ```
 
 1. To restart the VDC Controller instance for your environment, run the following commands, replacing `<environment-name>` with the name of your RES environment:
 
-   ```
+   ```bash
    ENVIRONMENT_NAME={{<environment-name>}}
 
    INSTANCE_ID=$(aws ec2 describe-instances \
@@ -762,7 +762,7 @@ The patch only applies to RES 2024.04.02.
 The patch script requires [AWS CLI v2](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html), Python 3.9.16 or above, and [Boto3](https://aws.amazon.com/sdk-for-python/).
 Configure the AWS CLI for the account and region where RES is deployed, and make sure that you have S3 permissions to write to the bucket created by RES.
 
-   ```
+   ```bash
    OUTPUT_DIRECTORY={{<output-directory>}}
 
    curl https://research-engineering-studio-us-east-1.s3.amazonaws.com/releases/2024.04.02/patch_scripts/patch.py --output ${OUTPUT_DIRECTORY}/patch.py
@@ -772,13 +772,13 @@ Configure the AWS CLI for the account and region where RES is deployed, and make
 
 1. Navigate to the directory where the patch script and patch file are downloaded. Run the following patch command, replacing `<environment-name>` with the name of your RES environment:
 
-   ```
+   ```bash
    python3 patch.py --environment-name {{<environment-name>}} --res-version 2024.04.02 --module cluster-manager --patch samaccountname_regex.patch
    ```
 
 1. To restart the Cluster Manager instance for your environment, run the following commands, replacing `<environment-name>` with the name of your RES environment. You may also terminate the instance from the Amazon EC2 Management Console.
 
-   ```
+   ```bash
    ENVIRONMENT_NAME={{<environment-name>}}
 
    INSTANCE_ID=$(aws ec2 describe-instances \

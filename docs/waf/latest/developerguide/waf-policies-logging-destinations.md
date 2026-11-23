@@ -60,7 +60,7 @@ Configuring web ACL traffic logging for an Amazon S3 bucket in an AWS WAF policy
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "AWSLogDeliveryForFirewallManager",
@@ -105,7 +105,7 @@ The following example shows how to prevent the confused deputy problem by using 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Id":"AWSLogDeliveryForFirewallManager",
@@ -168,7 +168,7 @@ The following example shows how to prevent the confused deputy problem by using 
 
 You can enable Amazon S3 server-side encryption or use a AWS Key Management Service customer managed key on your S3 bucket. If you choose to use the default Amazon S3 encryption on your Amazon S3 bucket for AWS WAF logs, you don't need to take any special action. However, if you choose to use a customer-provided encryption key to encrypt your Amazon S3 data at rest, you must add the following permission statement to your AWS Key Management Service key policy:
 
-```
+```json
 {
             "Sid": "Allow Logs Delivery to use the key",
             "Effect": "Allow",

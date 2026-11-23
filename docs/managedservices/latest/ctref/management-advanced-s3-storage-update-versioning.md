@@ -140,14 +140,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-s3-storage-update-versioning-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-advanced-s3-storage-update-versioning-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-UpdateBucketVersioning",
   "Region": "us-east-1",

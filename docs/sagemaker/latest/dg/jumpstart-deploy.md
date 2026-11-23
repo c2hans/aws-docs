@@ -170,7 +170,7 @@ By default, the SageMaker Python SDK uses two configuration files: one for the a
 
 The following code sample lists the default locations of the configuration files when using the SageMaker Python SDK in Amazon SageMaker Studio Classic.
 
-```
+```bash
 # Location of the admin config file
 /etc/xdg/sagemaker/config.yaml
 
@@ -187,7 +187,7 @@ Administrators can optionally set configuration defaults for JumpStart model tra
 
 Your configuration file should adhere to the SageMaker Python SDK [configuration file structure](https://sagemaker.readthedocs.io/en/stable/). Note that specific fields in the `TrainingJob`, `Model`, and `EndpointConfig` configurations apply to JumpStart model training and deployment default values.
 
-```
+```yaml
 SchemaVersion: '1.0'
 SageMaker:
   TrainingJob:

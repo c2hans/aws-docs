@@ -16,7 +16,7 @@ aws chime-sdk-messaging list-channel-messages \
 
 Success responses from an AppInstanceBot take the following format.
 
-```
+```json
 {
     "MessageId": "{{messageId}}",
     "Content": "*{\"{{Messages}}\":[{\"...\"}]}*",
@@ -55,7 +55,7 @@ Success responses from an AppInstanceBot take the following format.
 The `Content` field contains a list of messages originating from the Amazon Lex V2 bot. For more information about those messages, refer to [ messages](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_RecognizeText.html#lexv2-runtime_RecognizeText-response-messages) in the Amazon Lex V2 `RecognizeText` API.
 The following example shows how to use the `Content` field in a welcome message.
 
-```
+```json
 {
     "Messages":
     [

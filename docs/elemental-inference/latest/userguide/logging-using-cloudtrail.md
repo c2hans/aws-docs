@@ -33,7 +33,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry. The example shows the entry for one API call. The call is made by the identity specified in `userIdentity`, in this case a user who has assumed the Administrator role with the session name `santosp`. The call was a `CreateFeed` operation coming from the AWS CLI (as specified in `userAgent`) running on a computer with the IP address 203.0.113.33
 
-```
+```json
 {
   "eventVersion": "1.09",
   "userIdentity": {

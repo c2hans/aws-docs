@@ -32,7 +32,7 @@ For information about other services that support service-linked roles, see [AWS
 
 ****
 
-```
+```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -70,7 +70,7 @@ For information about other services that support service-linked roles, see [AWS
 
 ****
 
-```
+```json
   {
     "Version":"2012-10-17",
     "Statement": [

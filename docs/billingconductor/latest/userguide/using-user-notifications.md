@@ -23,7 +23,7 @@ The following table lists the AWS Billing Conductor event types supported by AWS
 
 The following is an example of a `Billing Group Configuration Recommended for Billing Transfer` event from AWS Billing Conductor. This event is emitted to Amazon EventBridge with the source `aws.billingconductor`.
 
-```
+```JSON
 {
   "account": "<account ID>", // 12-digit account ID
   "region": "us-east-1", // Currently only us-east-1 is supported

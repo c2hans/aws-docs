@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
 The utility function for searching image sets.
 
-```
+```cpp
 //! Routine which searches for image sets based on defined input attributes.
 /*!
   \param dataStoreID: The HealthImaging data store ID.
@@ -60,7 +60,7 @@ bool AwsDoc::Medical_Imaging::searchImageSets(const Aws::String &dataStoreID,
 ```
 Use case \#1: EQUAL operator.
 
-```
+```cpp
         Aws::Vector<Aws::String> imageIDsForPatientID;
         Aws::MedicalImaging::Model::SearchCriteria searchCriteriaEqualsPatientID;
         Aws::Vector<Aws::MedicalImaging::Model::SearchFilter> patientIDSearchFilters = {
@@ -83,7 +83,7 @@ Use case \#1: EQUAL operator.
 ```
 Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 
-```
+```cpp
          Aws::MedicalImaging::Model::SearchByAttributeValue useCase2StartDate;
         useCase2StartDate.SetDICOMStudyDateAndTime(Aws::MedicalImaging::Model::DICOMStudyDateAndTime()
         .WithDICOMStudyDate("19990101")
@@ -116,7 +116,7 @@ Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 ```
 Use case \#3: BETWEEN operator using createdAt. Time studies were previously persisted.
 
-```
+```cpp
         Aws::MedicalImaging::Model::SearchByAttributeValue useCase3StartDate;
         useCase3StartDate.SetCreatedAt(Aws::Utils::DateTime("20231130T000000000Z",Aws::Utils::DateFormat::ISO_8601_BASIC));
 
@@ -145,7 +145,7 @@ Use case \#3: BETWEEN operator using createdAt. Time studies were previously per
 ```
 Use case \#4: EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt and sort response in ASC order on updatedAt field.
 
-```
+```cpp
         Aws::MedicalImaging::Model::SearchByAttributeValue useCase4StartDate;
         useCase4StartDate.SetUpdatedAt(Aws::Utils::DateTime("20231130T000000000Z",Aws::Utils::DateFormat::ISO_8601_BASIC));
 
@@ -406,7 +406,7 @@ Output:
 **SDK for Java 2.x**
 The utility function for searching image sets.
 
-```
+```java
     public static List<ImageSetsMetadataSummary> searchMedicalImagingImageSets(
             MedicalImagingClient medicalImagingClient,
             String datastoreId, SearchCriteria searchCriteria) {
@@ -433,7 +433,7 @@ The utility function for searching image sets.
 ```
 Use case \#1: EQUAL operator.
 
-```
+```java
         List<SearchFilter> searchFilters = Collections.singletonList(SearchFilter.builder()
                 .operator(Operator.EQUAL)
                 .values(SearchByAttributeValue.builder()
@@ -456,7 +456,7 @@ Use case \#1: EQUAL operator.
 ```
 Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 
-```
+```java
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
         searchFilters = Collections.singletonList(SearchFilter.builder()
                 .operator(Operator.BETWEEN)
@@ -491,7 +491,7 @@ Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 ```
 Use case \#3: BETWEEN operator using createdAt. Time studies were previously persisted.
 
-```
+```java
         searchFilters = Collections.singletonList(SearchFilter.builder()
                 .operator(Operator.BETWEEN)
                 .values(SearchByAttributeValue.builder()
@@ -515,7 +515,7 @@ Use case \#3: BETWEEN operator using createdAt. Time studies were previously per
 ```
 Use case \#4: EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt and sort response in ASC order on updatedAt field.
 
-```
+```java
         Instant startDate = Instant.parse("1985-04-12T23:20:50.52Z");
         Instant endDate = Instant.now();
 
@@ -558,7 +558,7 @@ Use case \#4: EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt 
 **SDK for JavaScript (v3)**
 The utility function for searching image sets.
 
-```
+```javascript
 import { paginateSearchImageSets } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -613,7 +613,7 @@ export const searchImageSets = async (
 ```
 Use case \#1: EQUAL operator.
 
-```
+```javascript
   const datastoreId = "12345678901234567890123456789012";
 
   try {
@@ -633,7 +633,7 @@ Use case \#1: EQUAL operator.
 ```
 Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 
-```
+```javascript
   const datastoreId = "12345678901234567890123456789012";
 
   try {
@@ -666,7 +666,7 @@ Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 ```
 Use case \#3: BETWEEN operator using createdAt. Time studies were previously persisted.
 
-```
+```javascript
   const datastoreId = "12345678901234567890123456789012";
 
   try {
@@ -689,7 +689,7 @@ Use case \#3: BETWEEN operator using createdAt. Time studies were previously per
 ```
 Use case \#4: EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt and sort response in ASC order on updatedAt field.
 
-```
+```javascript
   const datastoreId = "12345678901234567890123456789012";
 
   try {
@@ -732,7 +732,7 @@ Use case \#4: EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt 
 **SDK for Python (Boto3)**
 The utility function for searching image sets.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -766,7 +766,7 @@ class MedicalImagingWrapper:
 ```
 Use case \#1: EQUAL operator.
 
-```
+```python
         search_filter = {
             "filters": [
                 {"operator": "EQUAL", "values": [{"DICOMPatientId": patient_id}]}
@@ -778,7 +778,7 @@ Use case \#1: EQUAL operator.
 ```
 Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 
-```
+```python
         search_filter = {
             "filters": [
                 {
@@ -808,7 +808,7 @@ Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 ```
 Use case \#3: BETWEEN operator using createdAt. Time studies were previously persisted.
 
-```
+```python
         search_filter = {
             "filters": [
                 {
@@ -835,7 +835,7 @@ Use case \#3: BETWEEN operator using createdAt. Time studies were previously per
 ```
 Use case \#4: EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt and sort response in ASC order on updatedAt field.
 
-```
+```python
         search_filter = {
             "filters": [
                 {
@@ -871,7 +871,7 @@ Use case \#4: EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt 
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -883,7 +883,7 @@ The following code instantiates the MedicalImagingWrapper object.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         oo_result = lo_mig->searchimagesets(

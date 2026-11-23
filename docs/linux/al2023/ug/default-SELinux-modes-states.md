@@ -12,7 +12,7 @@ With the default status set to `enabled` and `permissive`, the **getenforce** co
 
 The **sestatus** command returns the SELinux status and the current SELinux policy as shown in the following example:
 
-```
+```sh
 $ sestatus
 SELinux status:                 enabled
   SELinuxfs mount:                /sys/fs/selinux

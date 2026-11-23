@@ -41,7 +41,7 @@ The permission is required even if your template doesn't specify tags. CloudForm
 
 Add the following statement to the policy of the identity that CloudFormation uses:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "geo:TagResource",

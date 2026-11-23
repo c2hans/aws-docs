@@ -75,7 +75,7 @@ For Amazon ECS, the following are the minimum permissions needed to create pipel
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -150,7 +150,7 @@ You must add the `iam:PassRole` permissions to use IAM roles for tasks. For more
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: DeployECS
 ActionTypeId:
   Category: Deploy
@@ -171,7 +171,7 @@ InputArtifacts:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "DeployECS",
     "ActionTypeId": {

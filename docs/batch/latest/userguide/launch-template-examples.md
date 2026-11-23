@@ -83,7 +83,7 @@ runcmd:
 ```
 In the [volumes](https://docs.aws.amazon.com/batch/latest/APIReference/API_ContainerProperties.html#Batch-Type-ContainerProperties-volumes) and [mountPoints](https://docs.aws.amazon.com/batch/latest/APIReference/API_ContainerProperties.html#Batch-Type-ContainerProperties-mountPoints) members of the container properties the mount points must be mapped into the container.
 
-```
+```json
 {
     "volumes": [
         {

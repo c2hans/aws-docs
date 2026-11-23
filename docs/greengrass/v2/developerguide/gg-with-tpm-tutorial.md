@@ -38,7 +38,7 @@ In this step, you install the necessary TPM2 software tools and libraries.
 
 1. Update your package manager and install the TPM2 tools and dependencies by running the following command.
 
-   ```
+   ```bash
    sudo apt-get update && sudo apt-get install tpm2-tools \
    tpm2-abrmd \
    tpm2-tss-engine-tools \
@@ -53,7 +53,7 @@ In this step, you install the necessary TPM2 software tools and libraries.
 
 1. Install the OpenSSL TPM2 provider packages on Ubuntu 24.04 that use OpenSSL engine 3.
 
-   ```
+   ```bash
    sudo apt-get install tpm2-openssl
    ```
 
@@ -62,19 +62,19 @@ In this step, you install the necessary TPM2 software tools and libraries.
 
 1. Create a directory to store data.
 
-   ```
+   ```bash
    sudo mkdir -p /etc/tpm2_pkcs11
    ```
 
 1. Set the storage location as an environment variable. For more information about the store hierarchy, see [Initialization](https://github.com/tpm2-software/tpm2-pkcs11/blob/master/docs/INITIALIZING.md#initialization).
 
-   ```
+   ```bash
    export TPM2_PKCS11_STORE=/etc/tpm2_store
    ```
 
 1. Initialize the TPM2 token with the primary object.
 
-   ```
+   ```bash
    sudo tpm2_ptool init
    ```
 
@@ -98,7 +98,7 @@ The location of the store directory. If specified, the directory must exist. If 
 
 1. Create a PKCS\#11 token.
 
-   ```
+   ```bash
    sudo tpm2_ptool addtoken —pid=1 —userpin={{USERPIN}} —sopin={{SOPIN}} —label=greengrass
    ```
 
@@ -115,7 +115,7 @@ A unique label to identify the profile in use, must be unique.
 
 1. Create an ECC key object.
 
-   ```
+   ```bash
    sudo tpm2_ptool addkey —algorithm=ecc256 —label=greengrass —userpin=****** —key-label=greenkey
    ```
 `--label LABEL`
@@ -138,13 +138,13 @@ The User pin.
 
 1. Export the TPM2-TSS object from the token to capture the authentication data.
 
-   ```
+   ```bash
    yaml_ecc0=$(sudo tpm2_ptool export —label="greengrass" —key-label="greenkey" —userpin="******")
    ```
 
    Example output:
 
-   ```
+   ```bash
    > echo $yaml_ecc0
    object-auth: 706c1cad8a5238871b30149705255926
    primary-object:
@@ -157,7 +157,7 @@ You will also find a file named `greenkey.pem` which is the TSS2 Private Key in 
 
 1. Capture the authentication data for the TSS private key.
 
-   ```
+   ```bash
    auth_ecc0=$(echo "$yaml_ecc0" | grep "object-auth" | cut -d' ' -f2-)
    ```
 
@@ -168,7 +168,7 @@ In this step, you'll use the TPM2-protected private key to generate a CSR.
 
 1. Generate a CSR using the TPM2 provider.
 
-   ```
+   ```bash
    sudo openssl req -new -provider tpm2 -provider base -key greenkey.pem -passin "pass:$auth_ecc0" -out "$H"$HOSTNAME".csr
    ```
 
@@ -197,7 +197,7 @@ Create an AWS IoT thing certificate. For more information about how to create a 
 
 1. Add the thing certificate to the Greengrass token.
 
-   ```
+   ```bash
    sudo tpm2_ptool addcert --label=greengrass --key-label=greenkey device.pem.crt
    ```
 
@@ -220,19 +220,19 @@ We will use the `p11tool` provided from the `gnutls-bin` package to get the PKCS
 
 1. Capture the token URL for the Greengrass token.
 
-   ```
+   ```bash
    TOKEN=sudo p11tool --list-token-urls | grep "token=greengrass"
    ```
 
 1. Get the object URLs for the Greengrass token. Use the same pin you used in Step 3.
 
-   ```
+   ```bash
    sudo p11tool --login --list-all "${TOKEN}"
    ```
 
    Example output:
 
-   ```
+   ```bash
    Token 'greengrass' with URL 'pkcs11:model=SLB9672%00%00%00%00%00%00%00%00%00;manufacturer=Infineon;serial=0000000000000000;token=greengrass' requires user PIN
    Enter PIN:
    WARNING: Needed CKA_VALUE but didn't find encrypted blob
@@ -270,13 +270,13 @@ We will use the `p11tool` provided from the `gnutls-bin` package to get the PKCS
 
 1. Use a text editor to create a configuration file named `config.yaml` to provide to the installer. For example, on a Linux-based system, you can run the following command to use GNU `nano` to create the file.
 
-   ```
+   ```bash
    nano GreengrassInstaller/config.yaml
    ```
 
 1. Copy the following YAML content into the file. This partial configuration file specifies system parameters, Greengrass nucleus parameters, and PKCS\#11 provider parameters.
 
-   ```
+   ```bash
    ---
    system:
      certificateFilePath: "pkcs11:model=SW%20%20%20TPM%00%00%00%00%00%00%00%00;manufacturer=IBM;serial=0000000000000000;token=greengrass;id=%34%35;object=greenkey;type=cert"
@@ -320,13 +320,13 @@ In this step, you'll verify that Greengrass is running properly with TPM2 integr
 
 1. Check the Greengrass service status.
 
-   ```
+   ```bash
    sudo systemctl status greengrass.service
    ```
 
 1. View the Greengrass logs to ensure there are no errors.
 
-   ```
+   ```bash
    sudo tail -f /greengrass/v2/logs/greengrass.log
    ```
 
@@ -344,27 +344,27 @@ In this step, you'll verify that Greengrass is running properly with TPM2 integr
 If you encounter issues during the setup or operation of your TPM2-enabled Greengrass device, try the following troubleshooting steps.
 + Check the main Greengrass log file.
 
-  ```
+  ```bash
   sudo tail -f /greengrass/v2/logs/greengrass.log
   ```
 + Verify PKCS\#11 provider configuration.
 
-  ```
+  ```bash
   sudo cat /greengrass/v2/config/effectiveConfig.yaml
   ```
 + Ensure the TPM2 service is running.
 
-  ```
+  ```bash
   sudo systemctl status tpm2-abrmd.service
   ```
 + Verify that the TPM2 key is accessible.
 
-  ```
+  ```bash
   sudo pkcs11-tool —module /usr/lib/x86_64-linux-gnu/pkcs11/libtpm2_pkcs11.so -l -p 123456 —list-objects
   ```
 + If your OS is set up with full disk encryption with TPM2 storage root keys such as Clevis or systemd-cryptenroll, verify you aren't using the same persistent handle used by these tools. Using the same persistent handle might affect your disk encryption mechanism. To check all created and used persistent handles, run the following command
 
-  ```
+  ```bash
   sudo tpm2_getcap handles-persistent
   ```
 

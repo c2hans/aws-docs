@@ -80,7 +80,7 @@ aws osis get-pipeline --pipeline-name "{{my-pipeline}}"
 
 The request returns configuration information for the specified pipeline:
 
-```
+```json
 {
     "Pipeline": {
         "PipelineName": "my-pipeline",

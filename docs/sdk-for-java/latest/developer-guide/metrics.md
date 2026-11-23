@@ -32,7 +32,7 @@ Here's what enabling metrics looks like for each use case:
 
 **Long-running applications:**
 
-```
+```java
 MetricPublisher metricsPub = CloudWatchMetricPublisher.create();
 DynamoDbClient ddb = DynamoDbClient.builder()
     .overrideConfiguration(c -> c.addMetricPublisher(metricsPub))
@@ -41,7 +41,7 @@ DynamoDbClient ddb = DynamoDbClient.builder()
 
 **Lambda functions:**
 
-```
+```java
 EmfMetricLoggingPublisher emfPublisher = EmfMetricLoggingPublisher.builder()
     .namespace("MyApp")
     .build();
@@ -52,7 +52,7 @@ DynamoDbClient dynamoDb = DynamoDbClient.builder()
 
 **Development and debugging:**
 
-```
+```java
 MetricPublisher loggingPublisher = LoggingMetricPublisher.create();
 S3Client s3 = S3Client.builder()
     .overrideConfiguration(c -> c.addMetricPublisher(loggingPublisher))
@@ -69,7 +69,7 @@ Metric publishing requires version `0.48.5` or later of the `aws-crt` dependency
 
 To publish metrics for every request made by a client, add a publisher when you create the client:
 
-```
+```java
 import software.amazon.awssdk.metrics.LoggingMetricPublisher;
 import software.amazon.awssdk.metrics.MetricPublisher;
 import software.amazon.awssdk.regions.Region;
@@ -86,7 +86,7 @@ S3AsyncClient s3AsyncClient =
 
 To publish metrics for an individual request, add a publisher to the request's `overrideConfiguration`. Request-level publishers replace the client-level publishers for that request:
 
-```
+```java
 import software.amazon.awssdk.services.s3.model.GetObjectRequest;
 
 GetObjectRequest request =

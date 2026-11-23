@@ -37,7 +37,7 @@ Displays ALTER TABLE statements to add partitions to the table definition.
 
 The following examples are based on an external table defined as follows:
 
-```
+```sql
 CREATE EXTERNAL TABLE my_schema.alldatatypes_parquet_test_partitioned (
      csmallint smallint,
      cint int,
@@ -59,7 +59,7 @@ LOCATION 's3://amzn-s3-demo-bucket/alldatatypes_parquet_partitioned';
 
 Following is an example of the SHOW EXTERNAL TABLE command and output for the table `my_schema.alldatatypes_parquet_test_partitioned`.
 
-```
+```sql
 SHOW EXTERNAL TABLE my_schema.alldatatypes_parquet_test_partitioned;
 ```
 
@@ -87,7 +87,7 @@ LOCATION 's3://amzn-s3-demo-bucket/alldatatypes_parquet_partitioned';"
 
 Following is an example of the SHOW EXTERNAL TABLE command and output for the same table, but with the database also specified in the parameter.
 
-```
+```sql
 SHOW EXTERNAL TABLE my_database.my_schema.alldatatypes_parquet_test_partitioned;
 ```
 
@@ -115,7 +115,7 @@ LOCATION 's3://amzn-s3-demo-bucket/alldatatypes_parquet_partitioned';"
 
 Following is an example of the SHOW EXTERNAL TABLE command and output when using the `PARTITION` parameter. The output contains ALTER TABLE statements to add partitions to the table definition.
 
-```
+```sql
 SHOW EXTERNAL TABLE my_schema.alldatatypes_parquet_test_partitioned PARTITION;
 ```
 

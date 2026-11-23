@@ -17,7 +17,7 @@ Each trace event includes the name of the node that either received an input or 
 
 This type of trace identifies which conditions are satisfied for a condition node and helps you identify the branch or branches of the flow that are activated during the invocation. The following JSON object shows what a [FlowTraceEvent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowTraceEvent.html) looks like for the result of a condition node:
 
-```
+```json
 {
     "trace": {
         "conditionNodeOutputTrace": {
@@ -39,7 +39,7 @@ This type of trace identifies which conditions are satisfied for a condition nod
 
 This type of trace displays the input that was sent to a node. If the event is downstream from an iterator node but upstream from a collector node, the `iterationIndex` field indicates the index of the item in the array that the input is from. The following JSON object shows what a [FlowTraceEvent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowTraceEvent.html) looks like for the input into a node.
 
-```
+```json
 {
     "trace": {
         "nodeInputTrace": {
@@ -65,7 +65,7 @@ This type of trace displays the input that was sent to a node. If the event is d
 
 This type of trace displays the output that was produced by a node. If the event is downstream from an iterator node but upstream from a collector node, the `iterationIndex` field indicates the index of the item in the array that the output is from. The following JSON object shows what a [FlowTraceEvent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowTraceEvent.html) looks like for the output from a node.
 
-```
+```json
 {
     "trace": {
         "nodeOutputTrace": {

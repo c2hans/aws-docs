@@ -29,7 +29,7 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
    +  **Role name** must start with `SpatialDataManagementContentPublisher-`.
    +  **Trust policy** must allow the SDMA connector invocation Lambda to assume it:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -51,7 +51,7 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
 
      If you have AWS CLI access, you can find these values by running:
 
-     ```
+     ```bash
      aws lambda get-function \
        --function-name SpatialDataManagement-ConnectorInvocationFunction \
        --query 'Configuration.Role' --output text
@@ -64,7 +64,7 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
      Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
    +  **Permissions policy** must grant `events:PutEvents` on the target event bus:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -83,7 +83,7 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
 ### Example – publish asset events to an event bus
 <a name="_example-publish-asset-events-to-an-event-bus"></a>
 
-```
+```json
 {
   "securityConfig": {
     "type": "AssumeRole",
@@ -120,7 +120,7 @@ Downstream consumers create EventBridge rules that match on `source` and `detail
 
 The `eventBridgePutEvents` step type can appear in multi-step triggers. A common pattern is to write metadata to S3, invoke a Lambda function, and then publish a notification event:
 
-```
+```json
 "steps": [
   {
     "stepType": "s3PutObject",

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-videofxproces
 
 When creating the `VideoFxProcessor` object, AWS servers download the runtime assets, or a browser cache loads the assets. If network or CSP configurations prevent access to the assets, the `VideoFx.create` operation throws an exception. The resulting VideoFxProcessor is configured as a no-op processor, which won’t affect the video stream.
 
-```
+```javascript
 let videoFxProcessor: VideoFxProcessor | undefined = undefined;
 try {
   videoFxProcessor = await VideoFxProcessor.create(logger, videoFxConfig);

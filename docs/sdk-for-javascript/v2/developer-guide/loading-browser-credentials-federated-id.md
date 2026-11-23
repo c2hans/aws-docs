@@ -15,7 +15,7 @@ You must first register your application with the providers that your applicatio
 
 After you have both an IAM role with configured privileges and an application registered with your chosen identity providers, you can set up the SDK to get credentials for the IAM role using helper code, as follows:
 
-```
+```javascript
 AWS.config.credentials = new AWS.WebIdentityCredentials({
    RoleArn: 'arn:aws:iam::{{<AWS_ACCOUNT_ID>}}/:role/{{<WEB_IDENTITY_ROLE_NAME>}}',
    ProviderId: 'graph.facebook.com|www.amazon.com', // this is null for Google
@@ -73,7 +73,7 @@ Set up the login action for your application by using the identity provider's SD
 
 After your application, roles, and resource permissions are configured, add the code to your application to obtain temporary credentials. These credentials are provided through the AWS Security Token Service using web identity federation. Users log in to the identity provider, which returns an access token. Set up the `AWS.WebIdentityCredentials` object using the ARN for the IAM role you created for this identity provider:
 
-```
+```javascript
 AWS.config.credentials = new AWS.WebIdentityCredentials({
     RoleArn: 'arn:aws:iam::{{<AWS_ACCOUNT_ID>}}:role/{{<WEB_IDENTITY_ROLE_NAME>}}',
     ProviderId: 'graph.facebook.com|www.amazon.com', // Omit this for Google
@@ -85,7 +85,7 @@ Service objects that are created subsequently will have the proper credentials. 
 
 You can also create `AWS.WebIdentityCredentials` before retrieving the access token. This allows you to create service objects that depend on credentials before loading the access token. To do this, create the credentials object without the `WebIdentityToken` parameter:
 
-```
+```javascript
 AWS.config.credentials = new AWS.WebIdentityCredentials({
   RoleArn: 'arn:aws:iam::{{<AWS_ACCOUNT_ID>}}:role/{{<WEB_IDENTITY_ROLE_NAME>}}',
   ProviderId: 'graph.facebook.com|www.amazon.com' // Omit this for Google
@@ -97,6 +97,6 @@ var s3 = new AWS.S3;
 
 Then set `WebIdentityToken` in the callback from the identity provider SDK that contains the access token:
 
-```
+```javascript
 AWS.config.credentials.params.WebIdentityToken = accessToken;
 ```

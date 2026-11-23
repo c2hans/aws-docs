@@ -14,7 +14,7 @@ The default model list is a small, ungated, fast-loading mix that fits on a sing
 
 The default benchmarks form a commonsense reasoning suite: `hellaswag,arc_easy,arc_challenge,winogrande`. Override at submit time:
 
-```
+```bash
 deadline bundle submit ./job_bundles/vllm_lm_eval_leaderboard/ \
   --parameter Benchmarks="hellaswag,mmlu,gsm8k"
 ```

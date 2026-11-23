@@ -51,7 +51,7 @@ Also ensure that the policy allows the appropriate `macie2:List` actions for res
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -100,7 +100,7 @@ The second statement in the example allows the user to create, configure, and re
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -144,7 +144,7 @@ The first statement in the example grants `macie2:DescribeClassificationJob` and
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -171,7 +171,7 @@ The first statement in the example grants `macie2:DescribeClassificationJob` and
 
 You might also allow the user to access logging data (*log events*) that Macie publishes to Amazon CloudWatch Logs for the job. To do this, you can add statements that grant permissions to perform CloudWatch Logs (`logs`) actions on the log group and stream for the job. For example:
 
-```
+```json
 {
     "Sid": "AccessLogGroupForMacieJobs",
     "Effect": "Allow",
@@ -206,7 +206,7 @@ In this example, the `macie2:GetFindings` and `macie2:GetFindingStatistics` perm
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -233,7 +233,7 @@ You might also allow the user to create and manage filter rules and suppression 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -280,7 +280,7 @@ In identity-based policies, you can use conditions to control access to Amazon M
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

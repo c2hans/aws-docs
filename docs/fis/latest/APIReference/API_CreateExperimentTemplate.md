@@ -309,7 +309,7 @@ The following example terminates three instances in the specified VPC with the t
 #### Sample Request
 <a name="API_CreateExperimentTemplate_Example_1_Request"></a>
 
-```
+```json
 {
     "description": "Test instance termination",
     "targets": {

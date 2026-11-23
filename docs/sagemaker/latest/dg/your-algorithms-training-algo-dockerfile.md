@@ -197,7 +197,7 @@ Next, you must set the configuration of the input data channel to run a training
 
 To configure your input data channel with a JSON file, use AWS CLI as shown in the following code structure. Ensure that all of the following fields use the request syntax defined in the [CreateTrainingJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html#API_CreateTrainingJob_RequestSyntax) API.
 
-```
+```json
 // run-my-training-job.json
 {
  "[AlgorithmSpecification](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html#sagemaker-CreateTrainingJob-request-AlgorithmSpecification)": {

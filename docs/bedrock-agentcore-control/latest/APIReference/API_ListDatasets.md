@@ -10,26 +10,50 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 <a name="API_ListDatasets_RequestSyntax"></a>
 
 ```
-GET /datasets?maxResults={{maxResults}}&nextToken={{nextToken}} HTTP/1.1
+POST /datasets/list HTTP/1.1
+Content-type: application/json
+
+{
+   "filter": {
+      "exampleCountByField": [
+         {
+            "anyOf": [ "{{string}}" ],
+            "max": {{number}},
+            "min": {{number}}
+         }
+      ]
+   },
+   "maxResults": {{number}},
+   "nextToken": "{{string}}"
+}
 ```
 
 ## URI Request Parameters
 <a name="API_ListDatasets_RequestParameters"></a>
 
-The request uses the following URI parameters.
-
- ** [maxResults](#API_ListDatasets_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasets-request-uri-maxResults"></a>
- The maximum number of datasets to return per page.
-Valid Range: Minimum value of 1. Maximum value of 100.
-
- ** [nextToken](#API_ListDatasets_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasets-request-uri-nextToken"></a>
- The token for the next page of results.
-Length Constraints: Minimum length of 0. Maximum length of 2048.
+The request does not use any URI parameters.
 
 ## Request Body
 <a name="API_ListDatasets_RequestBody"></a>
 
-The request does not have a request body.
+The request accepts the following data in JSON format.
+
+ ** [filter](#API_ListDatasets_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasets-request-filter"></a>
+ A filter to apply to the datasets.
+Type: [ListDatasetsFilter](API_ListDatasetsFilter.md) object
+Required: No
+
+ ** [maxResults](#API_ListDatasets_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasets-request-maxResults"></a>
+ The maximum number of datasets to return per page.
+Type: Integer
+Valid Range: Minimum value of 1. Maximum value of 100.
+Required: No
+
+ ** [nextToken](#API_ListDatasets_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasets-request-nextToken"></a>
+ The token for the next page of results.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Required: No
 
 ## Response Syntax
 <a name="API_ListDatasets_ResponseSyntax"></a>
@@ -48,6 +72,11 @@ Content-type: application/json
          "description": "string",
          "draftStatus": "string",
          "exampleCount": number,
+         "exampleCountByField": {
+            "actorProfile": number,
+            "input": number,
+            "turns": number
+         },
          "schemaType": "string",
          "status": "string",
          "updatedAt": number

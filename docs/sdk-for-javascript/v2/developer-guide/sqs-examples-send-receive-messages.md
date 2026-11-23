@@ -38,7 +38,7 @@ Create a Node.js module with the file name `sqs_sendmessage.js`. Be sure to conf
 
 Call the `sendMessage` method. The callback returns the unique ID of the message.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -82,7 +82,7 @@ sqs.sendMessage(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sqs_sendmessage.js
 ```
 
@@ -95,7 +95,7 @@ Create a Node.js module with the file name `sqs_receivemessage.js`. Be sure to c
 
 Call the `receiveMessage` method. The callback returns an array of `Message` objects from which you can retrieve `ReceiptHandle` for each message that you use to later delete that message. Create another JSON object containing the parameters needed to delete the message, which are the URL of the queue and the `ReceiptHandle` value. Call the `deleteMessage` method to delete the message you received.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -136,7 +136,7 @@ sqs.receiveMessage(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sqs_receivemessage.js
 ```
 

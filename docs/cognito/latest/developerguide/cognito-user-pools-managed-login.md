@@ -108,7 +108,7 @@ To configure terms documents for your app client, navigate to the **Managed logi
 
 The following is an example [CreateTerms](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateTerms.html) request body. It causes the sign-up page for app client `1example23456789` to render links for a French-language and a Portuguese-language (Brazil) version of the privacy policy when managed login is localized to that language. A separate request is required to set URLs for `terms-of-use` before managed login renders links at the sign-up page.
 
-```
+```json
 {
    "ClientId": "1example23456789",
    "Enforcement": "NONE",
@@ -190,7 +190,7 @@ When you navigate to the `/oauth2/authorize` endpoint with your custom parameter
 **Example request for an implicit grant**
 You can view your sign-in webpage with the following URL for the implicit code grant where `response_type=token`. After a successful sign-in, Amazon Cognito returns user pool tokens to your web browser's address bar.
 
-```
+```http
             https://{{mydomain.auth.us-east-1.amazoncognito.com}}/authorize?response_type=token&client_id={{1example23456789}}&redirect_uri={{https://mydomain.example.com}}
 ```
 

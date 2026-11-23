@@ -8,13 +8,13 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 
 You can load configuration and credentials from a JSON document on disk using `AWS.config.loadFromPath`. The path specified is relative to the current working directory of your process. For example, to load credentials from a `'config.json'` file with the following content:
 
-```
+```javascript
 { "accessKeyId": {{<YOUR_ACCESS_KEY_ID>}}, "secretAccessKey": {{<YOUR_SECRET_ACCESS_KEY>}}, "region": "us-east-1" }
 ```
 
 Then use the following code:
 
-```
+```javascript
 var AWS = require("aws-sdk");
 AWS.config.loadFromPath('./config.json');
 ```

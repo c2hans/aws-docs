@@ -31,7 +31,7 @@ For example:
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm create-maintenance-window \
     --name "My-LAX-Maintenance-Window" \
     --allow-unassociated-targets \
@@ -45,7 +45,7 @@ aws ssm create-maintenance-window \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm create-maintenance-window ^
     --name "My-LAX-Maintenance-Window" ^
     --allow-unassociated-targets ^
@@ -74,7 +74,7 @@ For example:
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm create-maintenance-window \
     --name "My-NRT-Maintenance-Window" \
     --allow-unassociated-targets \
@@ -89,7 +89,7 @@ aws ssm create-maintenance-window \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm create-maintenance-window ^
     --name "My-NRT-Maintenance-Window" ^
     --allow-unassociated-targets ^
@@ -116,7 +116,7 @@ For example:
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm create-maintenance-window \
     --name "My-One-Time-Maintenance-Window" \
     --schedule "at(2020-07-07T15:55:00)" \
@@ -128,7 +128,7 @@ aws ssm create-maintenance-window \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm create-maintenance-window ^
     --name "My-One-Time-Maintenance-Window" ^
     --schedule "at(2020-07-07T15:55:00)" ^
@@ -155,7 +155,7 @@ For example:
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm create-maintenance-window \
     --name "My-Cron-Offset-Maintenance-Window" \
     --schedule "cron(0 30 23 ? * TUE#3 *)" \
@@ -168,7 +168,7 @@ aws ssm create-maintenance-window \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm create-maintenance-window ^
     --name "My-Cron-Offset-Maintenance-Window" ^
     --schedule "cron(0 30 23 ? * TUE#3 *)" ^

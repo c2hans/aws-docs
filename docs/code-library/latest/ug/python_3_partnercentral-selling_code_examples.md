@@ -29,7 +29,7 @@ The following code example shows how to use `AssignOpportunity`.
 **SDK for Python (Boto3)**
 Reassign an existing Opportunity to another user.
 
-```
+```python
 #!/usr/bin/env python
 
 """
@@ -94,7 +94,7 @@ The following code example shows how to use `AssociateOpportunity`.
 **SDK for Python (Boto3)**
 Create a formal association between an Opportunity and various related entities.
 
-```
+```python
 #!/usr/bin/env python
 
 """
@@ -160,7 +160,7 @@ The following code example shows how to use `CreateOpportunity`.
 **SDK for Python (Boto3)**
 Create an opportunity.
 
-```
+```python
 #!/usr/bin/env python
 import boto3
 import logging
@@ -220,7 +220,7 @@ The following code example shows how to use `DisassociateOpportunity`.
 **SDK for Python (Boto3)**
 Remove an existing association between an Opportunity and related entities.
 
-```
+```python
 #!/usr/bin/env python
 
 """
@@ -286,7 +286,7 @@ The following code example shows how to use `GetAwsOpportunitySummary`.
 **SDK for Python (Boto3)**
 Retrieves a summary of an AWS Opportunity.
 
-```
+```python
 #!/usr/bin/env python
 
 """
@@ -345,7 +345,7 @@ The following code example shows how to use `GetEngagementInvitation`.
 **SDK for Python (Boto3)**
 Retrieves the details of an engagement invitation shared by AWS with a partner.
 
-```
+```python
 #!/usr/bin/env python
 
 """
@@ -406,7 +406,7 @@ The following code example shows how to use `GetOpportunity`.
 **SDK for Python (Boto3)**
 Get an opportunity.
 
-```
+```python
 #!/usr/bin/env python
 
 """
@@ -465,7 +465,7 @@ The following code example shows how to use `ListEngagementInvitations`.
 **SDK for Python (Boto3)**
 Retrieves a list of engagement invitations sent to the partner.
 
-```
+```python
 #!/usr/bin/env python
 
 """
@@ -523,7 +523,7 @@ The following code example shows how to use `ListOpportunities`.
 **SDK for Python (Boto3)**
 List opportunities.
 
-```
+```python
 #!/usr/bin/env python
 
 """
@@ -590,7 +590,7 @@ The following code example shows how to use `ListSolutions`.
 **SDK for Python (Boto3)**
 Retrieves a list of Partner Solutions that the partner registered on Partner Central.
 
-```
+```python
 #!/usr/bin/env python
 
 """
@@ -647,7 +647,7 @@ The following code example shows how to use `RejectEngagementInvitation`.
 **SDK for Python (Boto3)**
 Rejects an EngagementInvitation that AWS shared.
 
-```
+```python
 #!/usr/bin/env python
 
 """
@@ -712,7 +712,7 @@ The following code example shows how to use `StartEngagementByAcceptingInvitatio
 **SDK for Python (Boto3)**
 Starts the engagement by accepting an EngagementInvitation.
 
-```
+```python
 #!/usr/bin/env python
 
 """
@@ -794,7 +794,7 @@ The following code example shows how to use `StartEngagementFromOpportunityTask`
 **SDK for Python (Boto3)**
 Initiates the engagement process from an existing opportunity by accepting the engagement invitation and creating a corresponding opportunity in the partner’s system.
 
-```
+```python
 #!/usr/bin/env python
 
 """
@@ -862,7 +862,7 @@ The following code example shows how to use `UpdateOpportunity`.
 **SDK for Python (Boto3)**
 Update an opportunity.
 
-```
+```python
 #!/usr/bin/env python
 
 """
@@ -950,7 +950,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/partner-central-api-sample-codes/python_preview/#code-examples).
 Update Associated Entity of an opportunity
 
-```
+```python
 #!/usr/bin/env python
 
 """

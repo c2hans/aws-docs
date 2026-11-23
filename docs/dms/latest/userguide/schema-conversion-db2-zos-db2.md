@@ -44,7 +44,7 @@ You configure these settings with the JSON format that the API and AWS CLI requi
 
 The following example sets `SchemaNameTemplate` for the `DB2ZOS_TO_DB2LUW` section.
 
-```
+```json
 {
   "DB2ZOS_TO_DB2LUW": {
     "SchemaNameTemplate": "SCHEMA"

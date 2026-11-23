@@ -43,7 +43,7 @@ The following AWS Glue ETL script demonstrates how to write a Delta Lake table t
 ------
 #### [ Python ]
 
-```
+```python
 # Example: Create a Delta Lake table from a DataFrame
 # and register the table to Glue Data Catalog
 
@@ -61,7 +61,7 @@ dataFrame.write \
 ------
 #### [ Scala ]
 
-```
+```scala
 // Example: Example: Create a Delta Lake table from a DataFrame
 // and register the table to Glue Data Catalog
 
@@ -87,7 +87,7 @@ The following AWS Glue ETL script reads the Delta Lake table that you created in
 
 For this example, use the [create\_data\_frame.from\_catalog](aws-glue-api-crawler-pyspark-extensions-glue-context.md#aws-glue-api-crawler-pyspark-extensions-glue-context-create-dataframe-from-catalog) method.
 
-```
+```python
 # Example: Read a Delta Lake table from Glue Data Catalog
 
 from awsglue.context import GlueContext
@@ -108,7 +108,7 @@ df = glueContext.create_data_frame.from_catalog(
 
 For this example, use the [getCatalogSource](glue-etl-scala-apis-glue-gluecontext.md#glue-etl-scala-apis-glue-gluecontext-defs-getCatalogSource) method.
 
-```
+```scala
 // Example: Read a Delta Lake table from Glue Data Catalog
 
 import com.amazonaws.services.glue.GlueContext
@@ -140,7 +140,7 @@ This example requires you to set the `--enable-glue-datacatalog` job parameter i
 
 For this example, use the [write\_data\_frame.from\_catalog](aws-glue-api-crawler-pyspark-extensions-glue-context.md#aws-glue-api-crawler-pyspark-extensions-glue-context-write_data_frame_from_catalog) method.
 
-```
+```python
 # Example: Insert into a Delta Lake table in S3 using Glue Data Catalog
 
 from awsglue.context import GlueContext
@@ -162,7 +162,7 @@ glueContext.write_data_frame.from_catalog(
 
 For this example, use the [getCatalogSink](glue-etl-scala-apis-glue-gluecontext.md#glue-etl-scala-apis-glue-gluecontext-defs-getCatalogSink) method.
 
-```
+```scala
 // Example: Insert into a Delta Lake table in S3 using Glue Data Catalog
 
 import com.amazonaws.services.glue.GlueContext
@@ -189,7 +189,7 @@ This example reads a Delta Lake table from Amazon S3 using the Spark API.
 ------
 #### [ Python ]
 
-```
+```python
 # Example: Read a Delta Lake table from S3 using a Spark DataFrame
 
 dataFrame = spark.read.format("delta").load("s3://{{<s3path/>}}")
@@ -198,7 +198,7 @@ dataFrame = spark.read.format("delta").load("s3://{{<s3path/>}}")
 ------
 #### [ Scala ]
 
-```
+```scala
 // Example: Read a Delta Lake table from S3 using a Spark DataFrame
 
 val dataFrame = spark.read.format("delta").load("s3://{{<s3path/>}}")
@@ -214,7 +214,7 @@ This example writes a Delta Lake table to Amazon S3 using Spark.
 ------
 #### [ Python ]
 
-```
+```python
 # Example: Write a Delta Lake table to S3 using a Spark DataFrame
 
 dataFrame.write.format("delta") \
@@ -227,7 +227,7 @@ dataFrame.write.format("delta") \
 ------
 #### [ Scala ]
 
-```
+```scala
 // Example: Write a Delta Lake table to S3 using a Spark DataFrame
 
 dataFrame.write.format("delta")

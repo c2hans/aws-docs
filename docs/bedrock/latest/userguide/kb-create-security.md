@@ -24,7 +24,7 @@ To restrict access to the OpenSearch Serverless collection to the knowledge base
 
 Use the following data access policy, specifying the OpenSearch Serverless collection and your service role:
 
-```
+```json
 [
     {
         "Description": "{{${data access policy description}}}",
@@ -58,7 +58,7 @@ To integrate a Pinecone, Redis Enterprise Cloud, MongoDB Atlas vector index, att
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -114,7 +114,7 @@ To allow an Amazon Bedrock knowledge base to access a private OpenSearch Serverl
      1. Unselect **Enable access to OpenSearch Dashboards.**
    + Choose **JSON** and paste the following policy in the **JSON editor**.
 
-     ```
+     ```json
      [
          {
              "AllowFromPublic": false,
@@ -157,7 +157,7 @@ To edit the network access policy for your OpenSearch Serverless collection, do 
 </tbody>
 </table>
 
-   ```
+   ```json
    [
        {
            "AllowFromPublic": false,

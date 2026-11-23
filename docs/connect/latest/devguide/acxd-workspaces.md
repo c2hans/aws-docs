@@ -30,14 +30,14 @@ Lists all workspaces in the account.
 ### Sample Request
 <a name="acxd-workspaces-listworkspaces-sample-request"></a>
 
-```
+```typescript
 await client.send(new ListWorkspacesCommand({}));
 ```
 
 ### Output
 <a name="acxd-workspaces-listworkspaces-output"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -74,7 +74,7 @@ Creates a new workspace.
 ### Sample Request
 <a name="acxd-workspaces-createworkspace-sample-request"></a>
 
-```
+```typescript
 await client.send(new CreateWorkspaceCommand({
   name: "SDK Test Workspace",
   tags: ["testing", "sdk"],
@@ -84,7 +84,7 @@ await client.send(new CreateWorkspaceCommand({
 ### Output
 <a name="acxd-workspaces-createworkspace-output"></a>
 
-```
+```json
 {
   "workspaceId": "67898477-f36f-4b06-bdca-0d9a1f2eb9cc",
   "name": "SDK Test Workspace",
@@ -116,7 +116,7 @@ Gets a single workspace by ID.
 ### Sample Request
 <a name="acxd-workspaces-getworkspace-sample-request"></a>
 
-```
+```typescript
 await client.send(new GetWorkspaceCommand({
   workspaceId: "67898477-f36f-4b06-bdca-0d9a1f2eb9cc",
 }));
@@ -125,7 +125,7 @@ await client.send(new GetWorkspaceCommand({
 ### Output
 <a name="acxd-workspaces-getworkspace-output"></a>
 
-```
+```json
 {
   "workspaceId": "67898477-f36f-4b06-bdca-0d9a1f2eb9cc",
   "name": "SDK Test Workspace",
@@ -159,7 +159,7 @@ Updates a workspace.
 ### Sample Request
 <a name="acxd-workspaces-updateworkspace-sample-request"></a>
 
-```
+```typescript
 await client.send(new UpdateWorkspaceCommand({
   workspaceId: "67898477-f36f-4b06-bdca-0d9a1f2eb9cc",
   name: "SDK Test Workspace Updated",
@@ -170,7 +170,7 @@ await client.send(new UpdateWorkspaceCommand({
 ### Output
 <a name="acxd-workspaces-updateworkspace-output"></a>
 
-```
+```json
 {
   "workspaceId": "67898477-f36f-4b06-bdca-0d9a1f2eb9cc",
   "name": "SDK Test Workspace Updated",
@@ -202,7 +202,7 @@ Deletes a workspace and all its resources.
 ### Sample Request
 <a name="acxd-workspaces-deleteworkspace-sample-request"></a>
 
-```
+```typescript
 await client.send(new DeleteWorkspaceCommand({
   workspaceId: "67898477-f36f-4b06-bdca-0d9a1f2eb9cc",
 }));

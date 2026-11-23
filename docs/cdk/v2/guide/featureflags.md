@@ -35,7 +35,7 @@ If set to `false`, the CDK includes metadata when detecting whether a Lambda fun
 
 The syntax for reverting these flags in `cdk.json` is shown here.
 
-```
+```json
 {
   "context": {
     "@aws-cdk/core:newStyleStackSynthesis": false,

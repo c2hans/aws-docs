@@ -16,7 +16,7 @@ You can queue import jobs. The asynchronous import jobs are processed in a FIFO 
 
 HealthLake generates a `manifest.json` file for each FHIR import job. The file describes both the successes and failures of a FHIR import job. HealthLake outputs the `manifest.json` file to the Amazon S3 bucket specified when starting a FHIR import job. Log files are organized into two folders, named `SUCCESS` and `FAILURE`. Use the `manifest.json` file as the first step in troubleshooting a failed import job, as it provides details on each file.
 
-```
+```json
 {
     "inputDataConfig": {
         "s3Uri": "s3://{{amzn-s3-demo-source-bucket}}/healthlake-input/invalidInput/"

@@ -35,7 +35,7 @@ For more information, see [Update or Delete a Patch Baseline (Console)](https://
 **Tools for PowerShell V4**
 **Example 1: This example deletes a patch baseline.**
 
-```
+```powershell
 Remove-SSMPatchBaseline -BaselineId "pb-045f10b4f382baeda"
 ```
 **Output:**
@@ -48,7 +48,7 @@ pb-045f10b4f382baeda
 **Tools for PowerShell V5**
 **Example 1: This example deletes a patch baseline.**
 
-```
+```powershell
 Remove-SSMPatchBaseline -BaselineId "pb-045f10b4f382baeda"
 ```
 **Output:**

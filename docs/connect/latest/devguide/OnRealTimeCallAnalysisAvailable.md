@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnRealTimeCallAn
 + ComparisonValue – "$.ContactLens.RealTimeCall.ExactMatch.Transcript"
 + FilterClause –
 
-  ```
+  ```json
   {
       "LogicOperator": "AND", // Only "AND" is supported
       "Filters": [
@@ -35,7 +35,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnRealTimeCallAn
 + ComparisonValue – "$.ContactLens.RealTimeCall.PatternMatch.Transcript"
 + FilterClause –
 
-  ```
+  ```json
   {
       "LogicOperator": "AND", // Only "AND" is supported
       "Filters": [
@@ -88,7 +88,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnRealTimeCallAn
 + ComparisonValue – "$.ContactLens.RealTimeCall.Sentiment.State"
 + FilterClause –
 
-  ```
+  ```json
   {
       "LogicOperator": "AND", // Only "AND" is supported
       "Filters": [

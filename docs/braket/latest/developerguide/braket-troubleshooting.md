@@ -40,13 +40,13 @@ Your Python version must be 3.10 or above. For Amazon Braket Hybrid Jobs, we rec
 
 Verify your SDK and schemas are up-to-date. To update the SDK from the notebook or your python editor, run the following command:
 
-```
+```python
 pip install amazon-braket-sdk --upgrade --upgrade-strategy eager
 ```
 
 To update the schemas, run the following command:
 
-```
+```python
 pip install amazon-braket-schemas --upgrade
 ```
 
@@ -61,7 +61,7 @@ A hybrid job running quantum tasks against the Amazon Braket simulators can fail
 
 To see the number of concurrent quantum tasks against a specific simulator device, use the `search-quantum-tasks` API, as shown in the following code example.
 
-```
+```python
 DEVICE_ARN=arn:aws:braket:::device/quantum-simulator/amazon/sv1
 task_list=""
 for status_value in "CREATED" "QUEUED" "RUNNING" "CANCELLING"; do

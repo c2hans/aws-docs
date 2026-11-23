@@ -47,7 +47,7 @@ These parameters are quite detailed. You can use the [AWS Elemental MediaConvert
 **Note**
 Replace {{JOB\_QUEUE\_ARN}} with the MediaConvert job queue, {{IAM\_ROLE\_ARN}} with the Amazon Resource Name (ARN) of the IAM role, {{OUTPUT\_BUCKET\_NAME}} with the destination bucket name - for example, "s3://OUTPUT\_BUCKET\_NAME/", and {{INPUT\_BUCKET\_AND\_FILENAME}} with the input bucket and filename - for example, "s3://INPUT\_BUCKET/FILE\_NAME".
 
-```
+```javascript
 const params = {
   Queue: "JOB_QUEUE_ARN", //JOB_QUEUE_ARN
   UserMetadata: {
@@ -184,7 +184,7 @@ const params = {
 
 After creating the job parameters JSON, call the asynchronous `run` method to invoke a `MediaConvert` client service object, passing the parameters. The ID of the job created is returned in the response `data`.
 
-```
+```javascript
 const run = async () => {
   try {
     const data = await emcClient.send(new CreateJobCommand(params));
@@ -199,7 +199,7 @@ run();
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node emc_createjob.js
 ```
 
@@ -213,7 +213,7 @@ Create a Node.js module with the file name `emc_canceljob.js`. Be sure to config
 **Note**
 Replace {{JOB\_ID}} with the ID of the job to cancel.
 
-```
+```javascript
 // Import required AWS-SDK clients and commands for Node.js
 import { CancelJobCommand } from "@aws-sdk/client-mediaconvert";
 import { emcClient } from "./libs/emcClient.js";
@@ -235,7 +235,7 @@ run();
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node ec2_canceljob.js
 ```
 
@@ -251,7 +251,7 @@ Create the parameters JSON, including values to specify whether to sort the list
 **Note**
 Replace {{QUEUE\_ARN}} with the Amazon Resource Name (ARN) of the job queue to check, and {{STATUS}} with the status of the queue.
 
-```
+```javascript
 // Import required AWS-SDK clients and commands for Node.js
 import { ListJobsCommand } from "@aws-sdk/client-mediaconvert";
 import { emcClient } from "./libs/emcClient.js";
@@ -277,7 +277,7 @@ run();
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node emc_listjobs.js
 ```
 

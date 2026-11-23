@@ -34,7 +34,7 @@ TIMESTAMP
 
 The following query uses the ADD\_MONTHS function inside a TRUNC function. The TRUNC function removes the time of day from the result of ADD\_MONTHS. The ADD\_MONTHS function adds 12 months to each value from the CALDATE column. The values in the CALDATE column are dates.
 
-```
+```sql
 select distinct trunc(add_months(caldate, 12)) as calplus12,
 trunc(caldate) as cal
 from date
@@ -51,7 +51,7 @@ order by 1 asc;
 
 The following example uses the ADD\_MONTHS function to add 1 month to a *timestamp*.
 
-```
+```sql
 select add_months('2008-01-01 05:07:30', 1);
 
 add_months
@@ -61,7 +61,7 @@ add_months
 
 The following examples demonstrate the behavior when the ADD\_MONTHS function operates on dates with months that have different numbers of days. This example shows how the function handles adding 1 month to March 31 and adding 1 month to April 30. April has 30 days, so adding 1 month to March 31 results in April 30. May has 31 days, so adding 1 month to April 30 results in May 31.
 
-```
+```sql
 select add_months('2008-03-31',1);
 
 add_months

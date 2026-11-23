@@ -108,7 +108,7 @@ The error message might be truncated due to the limit on message length. To retr
 
 The following example queries SVL\_S3LOG for the last query completed.
 
-```
+```sql
 select message
 from svl_s3log
 where query = pg_last_query_id()

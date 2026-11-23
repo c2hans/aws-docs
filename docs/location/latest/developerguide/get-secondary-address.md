@@ -28,7 +28,7 @@ AUS, AUT, BRA, CAN, ESP, FRA, GBR, HKG, IDN, IND, NZL, TUR, TWN, USA
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryText":"910 Beach Avenue, Vancouver",
     "AdditionalFeatures": ["SecondaryAddresses"]
@@ -38,7 +38,7 @@ AUS, AUT, BRA, CAN, ESP, FRA, GBR, HKG, IDN, IND, NZL, TUR, TWN, USA
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -169,7 +169,7 @@ AUS, AUT, BRA, CAN, ESP, FRA, GBR, HKG, IDN, IND, NZL, TUR, TWN, USA
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -182,7 +182,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places geocode --key ${YourKey} --query-text "910 Beach Avenue, Vancouver" --additional-features "SecondaryAddresses"
 ```
 
@@ -196,7 +196,7 @@ Coverage for this functionality is available in the following countries: AUS, AU
 ------
 #### [ Sample request ]
 
-```
+```json
 {
   "QueryText": "101-910 Beach Avenue, Vancouver"
 }
@@ -205,7 +205,7 @@ Coverage for this functionality is available in the following countries: AUS, AU
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -330,7 +330,7 @@ Coverage for this functionality is available in the following countries: AUS, AU
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -342,7 +342,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places geocode --key ${YourKey} --query-text "101-910 Beach Avenue, Vancouver"
 ```
 

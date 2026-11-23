@@ -33,7 +33,7 @@ Use the following procedure to run the sample that publishes a Docker image to A
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -61,7 +61,7 @@ The IAM entity that modifies this policy must have permission in IAM to modify p
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

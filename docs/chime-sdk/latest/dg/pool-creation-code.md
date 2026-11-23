@@ -9,7 +9,7 @@ The following examples show how to create, update, get, list, and delete Kinesis
 ## Imports and common variables
 <a name="imports-variables"></a>
 
-```
+```json
 '''
 Define imports and common variables
 '''
@@ -28,7 +28,7 @@ def pretty_print_json(obj):
 ## CreateMediaPipelineKinesisVideoStreamPool
 <a name="create-stream-sample"></a>
 
-```
+```json
 response = client.create_media_pipeline_kinesis_video_stream_pool(
         StreamConfiguration={
             'Region': '{{us-east-1}}',
@@ -49,7 +49,7 @@ pretty_print_json(response['KinesisVideoStreamPoolConfiguration']){{}}
 
 **Output**:
 
-```
+```json
 {
     "PoolArn": "arn:aws:chime:{{us-east-1}}:{{account-ID}}:media-pipeline-kinesis-video-stream-pool/{{MyDemoKvsPool}}",
     "PoolName": "{{MyDemoKvsPool}}",
@@ -67,7 +67,7 @@ pretty_print_json(response['KinesisVideoStreamPoolConfiguration']){{}}
 ## GetMediaPipelineKinesisVideoStream
 <a name="get-stream-sample"></a>
 
-```
+```json
 response = client.get_media_pipeline_kinesis_video_stream_pool(
         Identifier={{pool_name}}
 )
@@ -77,7 +77,7 @@ pretty_print_json(response['KinesisVideoStreamPoolConfiguration'])
 
 **Output**:
 
-```
+```json
 {
     "PoolArn": "arn:aws:chime:{{us-east-1}}:{{account-ID}}:media-pipeline-kinesis-video-stream-pool/{{MyDemoKvsPool}}",
     "PoolName": "{{MyDemoKvsPool}}",
@@ -95,7 +95,7 @@ pretty_print_json(response['KinesisVideoStreamPoolConfiguration'])
 ## UpdateMediaPipelineKinesisVideoStream
 <a name="update-stream-sample"></a>
 
-```
+```json
 response = client.update_media_pipeline_kinesis_video_stream_pool(
     Identifier={{pool_name}},
     StreamConfiguration={
@@ -107,7 +107,7 @@ pretty_print_json(response['KinesisVideoStreamPoolConfiguration'])
 
 **Output**:
 
-```
+```json
 {
     "PoolArn": "arn:aws:chime:{{us-east-1}}:{{account-ID}}:media-pipeline-kinesis-video-stream-pool/{{MyDemoKvsPool}}",
     "PoolName": "{{MyDemoKvsPool}}",
@@ -126,7 +126,7 @@ pretty_print_json(response['KinesisVideoStreamPoolConfiguration'])
 ## ListMediaPipelineKinesisVideoStream
 <a name="list-stream-sample"></a>
 
-```
+```json
 list_of_pools = []
 max_results = {{100}}
 next_token = None
@@ -150,7 +150,7 @@ pretty_print_json(list_of_pools)
 
 **Output**:
 
-```
+```json
 [
     {
         "PoolName": "{{MyDemoKvsPool}}",
@@ -163,7 +163,7 @@ pretty_print_json(list_of_pools)
 ## DeleteMediaPipelineKinesisVideoStream
 <a name="delete-stream-sample"></a>
 
-```
+```json
 client.delete_media_pipeline_kinesis_video_stream_pool(
     Identifier={{pool_name}}
 )

@@ -43,7 +43,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 
 **Example**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -65,7 +65,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 
 **Example**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

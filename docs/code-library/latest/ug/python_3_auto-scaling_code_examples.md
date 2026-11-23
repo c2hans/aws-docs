@@ -33,7 +33,7 @@ The following code example shows how to get started using Auto Scaling.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 import boto3
 
 def hello_autoscaling(autoscaling_client):
@@ -79,7 +79,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 def run_scenario(as_wrapper: AutoScalingWrapper, svc_helper: ServiceHelper) -> None:
     """
     Runs the scenario demonstrating the management of Auto Scaling groups and instances.
@@ -295,7 +295,7 @@ if __name__ == "__main__":
 ```
 Define functions that are called by the scenario to manage launch templates and metrics. These functions wrap Amazon EC2 and CloudWatch actions.
 
-```
+```python
 class ServiceHelper:
     """Encapsulates Amazon EC2 and CloudWatch actions for the example."""
 
@@ -553,7 +553,7 @@ The following code example shows how to use `AttachLoadBalancerTargetGroups`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """
     Encapsulates Amazon EC2 Auto Scaling and EC2 management actions.
@@ -650,7 +650,7 @@ The following code example shows how to use `CreateAutoScalingGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -729,7 +729,7 @@ The following code example shows how to use `DeleteAutoScalingGroup`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 Update the minimum size of an Auto Scaling group to zero, terminate all instances in the group, and delete the group.
 
-```
+```python
 class AutoScalingWrapper:
     """
     Encapsulates Amazon EC2 Auto Scaling and EC2 management actions.
@@ -831,7 +831,7 @@ The following code example shows how to use `DescribeAutoScalingGroups`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -885,7 +885,7 @@ The following code example shows how to use `DescribeAutoScalingInstances`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -935,7 +935,7 @@ The following code example shows how to use `DescribeScalingActivities`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -994,7 +994,7 @@ The following code example shows how to use `DisableMetricsCollection`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -1043,7 +1043,7 @@ The following code example shows how to use `EnableMetricsCollection`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -1100,7 +1100,7 @@ The following code example shows how to use `SetDesiredCapacity`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -1153,7 +1153,7 @@ The following code example shows how to use `TerminateInstanceInAutoScalingGroup
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -1214,7 +1214,7 @@ The following code example shows how to use `UpdateAutoScalingGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -1275,7 +1275,7 @@ The following code example shows how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/cross_service/resilient_service#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```python
 class Runner:
     """
     Manages the deployment, demonstration, and destruction of resources for the resilient service.
@@ -1632,7 +1632,7 @@ if __name__ == "__main__":
 ```
 Create a class that wraps Auto Scaling and Amazon EC2 actions.
 
-```
+```python
 class AutoScalingWrapper:
     """
     Encapsulates Amazon EC2 Auto Scaling and EC2 management actions.
@@ -2427,7 +2427,7 @@ class AutoScalingWrapper:
 ```
 Create a class that wraps Elastic Load Balancing actions.
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 
@@ -2762,7 +2762,7 @@ class ElasticLoadBalancerWrapper:
 ```
 Create a class that uses DynamoDB to simulate a recommendation service.
 
-```
+```python
 class RecommendationService:
     """
     Encapsulates a DynamoDB table to use as a service that recommends books, movies,
@@ -2858,7 +2858,7 @@ class RecommendationService:
 ```
 Create a class that wraps Systems Manager actions.
 
-```
+```python
 class ParameterHelper:
     """
     Encapsulates Systems Manager parameters. This example uses these parameters to drive

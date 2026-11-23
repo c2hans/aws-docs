@@ -53,7 +53,7 @@ A dataset that contains image-level labels, needs at least two labels defined. E
 
 You can use the `UpdateDatasetEntries` API to add or update the image-level labels that are assigned to an image. `UpdateDatasetEntries` takes one or more JSON lines. Each JSON Line represents a single image. For an image with an image-level label, the JSON Line looks similar to the following.
 
-```
+```json
 {"source-ref":"s3://custom-labels-console-us-east-1-nnnnnnnnnn/gt-job/manifest/IMG_1133.png","TestCLConsoleBucket":0,"TestCLConsoleBucket-metadata":{"confidence":0.95,"job-name":"labeling-job/testclconsolebucket","class-name":"Echo Dot","human-annotated":"yes","creation-date":"2020-04-15T20:17:23.433061","type":"groundtruth/image-classification"}}
 ```
 

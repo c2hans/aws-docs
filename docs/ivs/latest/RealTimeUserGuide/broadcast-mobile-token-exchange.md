@@ -35,7 +35,7 @@ The remaining fields can be changed, including:
 ### iOS
 <a name="broadcast-mobile-token-exchange-exchanging-tokens-ios"></a>
 
-```
+```swift
 let stage = try IVSStage(token: originalToken, strategy: self)
 stage.join()
 stage.exchangeToken(newToken)
@@ -44,7 +44,7 @@ stage.exchangeToken(newToken)
 ### Android
 <a name="broadcast-mobile-token-exchange-exchanging-tokens-android"></a>
 
-```
+```kotlin
 val stage = Stage(context, originalToken, strategy)
 stage.join()
 stage.exchangeToken(newToken)
@@ -53,7 +53,7 @@ stage.exchangeToken(newToken)
 ### Web
 <a name="broadcast-web-token-exchange-exchanging-tokens"></a>
 
-```
+```Typescript
 const stage = new Stage(originalToken, strategy);
 await stage.join();
 await stage.exchangeToken(newToken);
@@ -67,7 +67,7 @@ A function in `StageRenderer` / `IVSStageRenderer` receives updates about alread
 ### iOS
 <a name="broadcast-mobile-token-exchange-receiving-updates-ios"></a>
 
-```
+```swift
 class MyStageRenderer: NSObject, IVSStageRenderer {
     func stage(_ stage: IVSStage, participantMetadataDidUpdate participant: IVSParticipantInfo) {
         // participant will be a new IVSParticipantInfo instance with updated properties.
@@ -78,7 +78,7 @@ class MyStageRenderer: NSObject, IVSStageRenderer {
 ### Android
 <a name="broadcast-mobile-token-exchange-receiving-updates-android"></a>
 
-```
+```kotlin
 private val stageRenderer = object : StageRenderer {
     override fun onParticipantMetadataUpdated(stage: Stage, participantInfo: ParticipantInfo) {
         // participantInfo will be a new ParticipantInfo instance with updated properties.
@@ -89,7 +89,7 @@ private val stageRenderer = object : StageRenderer {
 ### Web
 <a name="broadcast-web-token-exchange-receiving-updates"></a>
 
-```
+```Transcript
 stage.on(StageEvents.STAGE_PARTICIPANT_METADATA_CHANGED, (participantInfo: StageParticipantInfo) => {
     // participantInfo properties will be updated with the changed properties
     }

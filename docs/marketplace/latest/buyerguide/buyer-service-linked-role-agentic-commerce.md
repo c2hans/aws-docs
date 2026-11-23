@@ -42,7 +42,7 @@ You must configure permissions to allow your users, groups, or roles to create, 
 
 You create this role when you set up AgentCore payments in the Amazon Bedrock AgentCore console. To create the role by using the AWS CLI, run the following command:
 
-```
+```bash
 aws iam create-service-linked-role --aws-service-name agentcore-payments.marketplace.amazonaws.com
 ```
 
@@ -53,7 +53,7 @@ For more information, see [Create a service-linked role](https://docs.aws.amazon
 
 To delete the role by using the AWS CLI, run the following command:
 
-```
+```bash
 aws iam delete-service-linked-role --role-name AWSServiceRoleForMarketplaceAgenticCommerce
 ```
 

@@ -54,7 +54,7 @@ For more information, see [View deployment group details with CodeDeploy](https:
 **Tools for PowerShell V4**
 **Example 1: This example gets information about the specified deployment group.**
 
-```
+```powershell
 Get-CDDeploymentGroup -ApplicationName CodeDeployDemoApplication -DeploymentGroupName CodeDeployDemoFleet
 ```
 **Output:**
@@ -75,7 +75,7 @@ TargetRevision               : Amazon.CodeDeploy.Model.RevisionLocation
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified deployment group.**
 
-```
+```powershell
 Get-CDDeploymentGroup -ApplicationName CodeDeployDemoApplication -DeploymentGroupName CodeDeployDemoFleet
 ```
 **Output:**

@@ -82,6 +82,7 @@ Content-type: application/json
    "scopeDescription": "string",
    "scopeId": "string",
    "scopeName": "string",
+   "specializedScopeType": "string",
    "status": "string",
    "updatedAt": "string",
    "updateToken": "string",
@@ -131,6 +132,11 @@ The name of the scope.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9 _.:/=+\-@]*`
+
+ ** [specializedScopeType](#API_CreateScopeSnapshot_ResponseSyntax) **   <a name="networksecuritymanager-CreateScopeSnapshot-response-specializedScopeType"></a>
+The specialized type of the scope, if the scope is built for one specific purpose. A scope with no `specializedScopeType` is a standard scope that you can associate with a deployment. A specialized scope can be used only for the purpose that its type defines and can't be associated with a deployment. This value is set when the scope is created and can't be changed.
+Type: String
+Valid Values: `IGW_FIREWALL_SUBNET_CONNECTIVITY_OVERRIDE`
 
  ** [status](#API_CreateScopeSnapshot_ResponseSyntax) **   <a name="networksecuritymanager-CreateScopeSnapshot-response-status"></a>
 The current status of the resource: `DRAFT` (unpublished, editable) or `ACTIVE` (published, in use).

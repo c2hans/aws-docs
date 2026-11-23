@@ -31,7 +31,7 @@ When you use the AWS Management Console to create or modify a DB cluster, you ca
 
 When you use the AWS Command Line Interface (AWS CLI) to create a DB cluster, set the `--network-type` option to `DUAL` to use dual-stack mode:
 
-```
+```bash
 aws neptune create-db-cluster \
     --db-cluster-identifier my-dual-stack-cluster \
     --engine neptune \
@@ -41,7 +41,7 @@ aws neptune create-db-cluster \
 
 When you use the AWS CLI to modify an existing DB cluster to use dual-stack mode:
 
-```
+```bash
 aws neptune modify-db-cluster \
     --db-cluster-identifier my-cluster \
     --network-type DUAL \
@@ -69,7 +69,7 @@ Before modifying a DB cluster to use dual-stack mode, ensure that its DB subnet 
 
 1. Modify the DB cluster to use dual-stack mode. Using the AWS CLI:
 
-   ```
+   ```bash
    aws neptune modify-db-cluster \
        --db-cluster-identifier my-cluster \
        --network-type DUAL \

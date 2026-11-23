@@ -68,7 +68,7 @@ To deploy a custom model for on-demand inference, use the [CreateCustomModelDepl
 
 The following code shows how to use the AWS SDK for Python (Boto3) to deploy a custom model.
 
-```
+```python
 def create_custom_model_deployment(bedrock_client):
     """Create a custom model deployment
     Args:

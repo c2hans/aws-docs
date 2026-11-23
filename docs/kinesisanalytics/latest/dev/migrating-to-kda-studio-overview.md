@@ -44,7 +44,7 @@ The following options provide translations of common SQL-based Kinesis Data Anal
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "IN_APP_STREAM_001" (
    ingest_time TIMESTAMP,
@@ -99,7 +99,7 @@ INSERT INTO
 ------
 #### [ Managed Service for Apache Flink Studio ]
 
-```
+```SQL
 Query 1 - % flink.ssql DROP TABLE IF EXISTS SOURCE_SQL_STREAM_001;
 
 CREATE TABLE SOURCE_SQL_STREAM_001 (TICKER_SYMBOL VARCHAR(4),
@@ -214,7 +214,7 @@ update
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "DESTINATION_SQL_STREAM" (
    TICKER VARCHAR(4),
@@ -244,7 +244,7 @@ INSERT INTO
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 Query 1 - % flink.ssql(type =
 update
 ) CREATE TABLE DESTINATION_SQL_STREAM (
@@ -286,7 +286,7 @@ Query 2 - % flink.ssql(type =
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "DESTINATION_SQL_STREAM"(
    ticker_symbol VARCHAR(4),
@@ -313,7 +313,7 @@ WHERE
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 Query 1 - % flink.ssql(type =
 update
 ) DROP TABLE IF EXISTS DESTINATION_SQL_STREAM;
@@ -356,7 +356,7 @@ update
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "CHANGE_STREAM"(
    ticker_symbol VARCHAR(4),
@@ -411,7 +411,7 @@ WHERE
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 Query 1 - % flink.ssql(type =
 update
 ) DROP TABLE IF EXISTS DESTINATION_SQL_STREAM;
@@ -480,7 +480,7 @@ update
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "CALC_COUNT_SQL_STREAM"(
    TICKER VARCHAR(4),
@@ -531,7 +531,7 @@ INSERT INTO
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 Query 1 - % flink.ssql(type =
 update
 ) DROP TABLE IF EXISTS SOURCE_SQL_STREAM_001;
@@ -640,7 +640,7 @@ update
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM for cleaned up referrerCREATE
 OR REPLACE STREAM "DESTINATION_SQL_STREAM" ( "ingest_time" TIMESTAMP, "referrer" VARCHAR(32));
@@ -660,7 +660,7 @@ FROM
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 Query 1 - % flink.ssql(type =
 update
 ) CREATE TABLE DESTINATION_SQL_STREAM (
@@ -692,7 +692,7 @@ Query 2 - % flink.ssql(type =
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM for cleaned up referrerCREATE
 OR REPLACE STREAM "DESTINATION_SQL_STREAM" ( "ingest_time" TIMESTAMP, "referrer" VARCHAR(32));
@@ -708,7 +708,7 @@ FROM
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 Query 1 - % flink.ssql(type =
 update
 ) CREATE TABLE DESTINATION_SQL_STREAM (
@@ -740,7 +740,7 @@ Query 2 - % flink.ssql(type =
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "DESTINATION_SQL_STREAM"(
    sector VARCHAR(24),
@@ -768,7 +768,7 @@ INSERT INTO
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 Query 1 - % flink.ssql(type =
 update
 ) CREATE TABLE DESTINATION_SQL_STREAM (
@@ -810,7 +810,7 @@ WHERE
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "DESTINATION_SQL_STREAM" (
    TICKER VARCHAR(4),
@@ -839,7 +839,7 @@ INSERT INTO
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 Query 1 - % flink.ssql(type =
 update
 ) CREATE TABLE DESTINATION_SQL_STREAM (
@@ -881,7 +881,7 @@ Query 2 - % flink.ssql(type =
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "DESTINATION_SQL_STREAM" (
    event_time TIMESTAMP,
@@ -904,7 +904,7 @@ INSERT INTO
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 Query 1 - % flink.ssql(type =
 update
 ) CREATE TABLE DESTINATION_SQL_STREAM (
@@ -941,7 +941,7 @@ Query 2 - % flink.ssql(type =
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "DESTINATION_SQL_STREAM"(
    TICKER VARCHAR(4),
@@ -966,7 +966,7 @@ INSERT INTO
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 Query 1 - % flink.ssql(type =
 update
 ) CREATE TABLE DESTINATION_SQL_STREAM (
@@ -1004,7 +1004,7 @@ Query 2 - % flink.ssql(type =
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "CALC_COUNT_SQL_STREAM"(TICKER VARCHAR(4),
    TRADETIME TIMESTAMP,
@@ -1048,7 +1048,7 @@ FROM
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 Query 1 - % flink.ssql(type =
 update
 ) DROP TABLE IF EXISTS DESTINATION_SQL_STREAM;
@@ -1094,7 +1094,7 @@ update
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "DESTINATION_SQL_STREAM" (ITEM VARCHAR(1024), ITEM_COUNT DOUBLE);
 CREATE
@@ -1115,7 +1115,7 @@ INSERT INTO
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 %flinkssql
 DROP TABLE IF EXISTS SOURCE_SQL_STREAM_001
 CREATE TABLE SOURCE_SQL_STREAM_001 ( TS TIMESTAMP(3), WATERMARK FOR TS as TS - INTERVAL '5' SECOND, ITEM VARCHAR(1024),
@@ -1166,7 +1166,7 @@ where
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "DESTINATION_SQL_STREAM" ( column1 VARCHAR(16),
    column2 VARCHAR(16),
@@ -1198,7 +1198,7 @@ FROM
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 %flink.ssql(type=update)
 DROP TABLE IF EXISTS SOURCE_SQL_STREAM_001 CREATE TABLE SOURCE_SQL_STREAM_001 ( log VARCHAR(1024))
    WITH ( 'connector' = 'kinesis',
@@ -1229,7 +1229,7 @@ DROP TABLE IF EXISTS SOURCE_SQL_STREAM_001 CREATE TABLE SOURCE_SQL_STREAM_001 ( 
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "DESTINATION_SQL_STREAM"( "column_A" VARCHAR(16),
    "column_B" VARCHAR(16),
@@ -1265,7 +1265,7 @@ FROM
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 %flink.ssql(type=update)
 DROP TABLE IF EXISTS SOURCE_SQL_STREAM_001 CREATE TABLE SOURCE_SQL_STREAM_001 ( log VARCHAR(1024))
    WITH ( 'connector' = 'kinesis',
@@ -1296,7 +1296,7 @@ from
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "DESTINATION_SQL_STREAM" (
    ticker_symbol VARCHAR(4),
@@ -1322,7 +1322,7 @@ INSERT INTO
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 Query 1 - % flink.ssql(type =
 update
 ) CREATE TABLE DESTINATION_SQL_STREAM (
@@ -1369,7 +1369,7 @@ update
 ------
 #### [ SQL-based Kinesis Data Analytics application  ]
 
-```
+```SQL
 SELECT
    STREAM ticker_symbol,
    sector,
@@ -1385,7 +1385,7 @@ WHERE
 ------
 #### [ Managed Service for Apache Flink Studio  ]
 
-```
+```SQL
 Query 1 - % flink.ssql(type =
 update
 ) DROP TABLE IF EXISTS DESTINATION_SQL_STREAM;
@@ -1472,7 +1472,7 @@ Following is a sample payload using Amazon Kinesis Data Generator. The data gene
 
 The following JSON is used to generate a random series of trade time and date, stock ticker, and stock price:
 
-```
+```json
 date.now(YYYY-MM-DD HH:mm:ss.SSS),
 "random.arrayElement(["AAPL","AMZN","MSFT","META","GOOGL"])",
 random.number(2000)
@@ -1486,7 +1486,7 @@ Amazon Kinesis Data Analytics-SQL legacy code is based on an extension of SQL St
 
 You use the following query in Amazon Kinesis Data Analytics-SQL. You first create a destination stream for the query output. Then, you would use `PUMP`, which is an Amazon Kinesis Data Analytics Repository Object (an extension of the SQL Standard) that provides a continuously running `INSERT INTO stream SELECT ... FROM` query functionality, thereby enabling the results of a query to be continuously entered into a named stream.
 
-```
+```SQL
 CREATE
 OR REPLACE STREAM "DESTINATION_SQL_STREAM" (EVENT_TIME TIMESTAMP,
 INGEST_TIME TIMESTAMP,

@@ -61,7 +61,7 @@ For more information about entity limitations, see [IAM and AWS STS quotas](http
 **Tools for PowerShell V4**
 **Example 1: This example returns information about the current IAM entity usage and current IAM entity quotas in the AWS account.**
 
-```
+```powershell
 Get-IAMAccountSummary
 ```
 **Output:**
@@ -107,7 +107,7 @@ InstanceProfiles                           1
 **Tools for PowerShell V5**
 **Example 1: This example returns information about the current IAM entity usage and current IAM entity quotas in the AWS account.**
 
-```
+```powershell
 Get-IAMAccountSummary
 ```
 **Output:**
@@ -156,7 +156,7 @@ InstanceProfiles                           1
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def get_summary():
     """
     Gets a summary of account usage.
@@ -180,7 +180,7 @@ def get_summary():
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_iam->getaccountsummary( ).
         MESSAGE 'Retrieved account summary.' TYPE 'I'.

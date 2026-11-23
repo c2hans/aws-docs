@@ -47,7 +47,7 @@ Before deploying, ensure you have the following prerequisites installed and conf
 
  **Installation commands for Amazon Linux 2023:**
 
-```
+```bash
 # Install Node.js
 sudo dnf install -y nodejs npm
 
@@ -71,7 +71,7 @@ cdk --version
 
  **Installation commands for macOS:**
 
-```
+```bash
 # Install Homebrew (if not already installed)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -90,7 +90,7 @@ cdk --version
 
 Clone the repository from GitHub:
 
-```
+```bash
 git clone https://github.com/aws-solutions-library-samples/guidance-for-connected-mobility-on-aws.git
 cd guidance-for-connected-mobility-on-aws
 ```
@@ -103,7 +103,7 @@ Set environment variables for your deployment:
 **Note**
 This guidance now ships as a single-environment deployment. The former `cms-prod- ` stack lineage in `us-east-1` was removed as part of the v0.4.0 release; `staging` is the canonical deploy target and its stacks (`cms-staging-`) are what the Makefile targets described below act on. See the CMS `CHANGELOG.md` v0.4.0 "Breaking" entry for the env-collapse background.
 
-```
+```bash
 # Set deployment stage (staging is the canonical target)
 export DEPLOYMENT_STAGE=staging
 
@@ -132,7 +132,7 @@ Three CDK context flags control optional demo-permissive behavior. All three def
 
 To opt in for a demonstration deployment, pass context overrides at synth or deploy time:
 
-```
+```bash
 # Example: enable self-signup and anonymous map for a demo
 cdk synth \
   --context cms.allow_self_signup=true \
@@ -143,7 +143,7 @@ Or persist the overrides in your local `cdk.context.json` (this file is gitignor
 
 You can also create a `.env` file in the deployment directory:
 
-```
+```bash
 cd deployment
 cat > .env << EOF
 DEPLOYMENT_STAGE=staging
@@ -157,7 +157,7 @@ EOF
 
 Install Python and Node.js dependencies:
 
-```
+```bash
 cd deployment
 
 # Install Python dependencies
@@ -174,7 +174,7 @@ make install
 
 Bootstrap your AWS account for CDK deployment (required once per account/region):
 
-```
+```bash
 make bootstrap
 
 # Or manually:
@@ -196,7 +196,7 @@ You have two deployment options:
 
 Deploy all phases interactively with prompts:
 
-```
+```bash
 make deploy
 ```
 
@@ -217,13 +217,13 @@ This command will:
 
 Deploy all phases automatically without prompts:
 
-```
+```bash
 make deploy-all
 ```
 
 For the environment-specific wrapper with pre-flight checks:
 
-```
+```bash
 # Staging (us-west-2)
 export CMS_DEMO_DEFAULT_PASSWORD='your-staging-password'
 make -C deployment staging-deploy
@@ -237,7 +237,7 @@ This will deploy all stacks without confirmation prompts. Ensure you have review
 
 Deploy using the grouped phase targets that reflect the current Makefile structure:
 
-```
+```bash
 # Phase group 1: Foundation — data-processing + storage + iot + ui + msk + telemetry-integration
 make phase-foundation
 
@@ -253,7 +253,7 @@ make phase-services
 
 Or deploy individual stacks for finer control:
 
-```
+```bash
 # Data Processing: Signal Catalog + Transform Manifests (2-3 minutes)
 make data-processing
 
@@ -293,7 +293,7 @@ make deploy-commands
 
 Or deploy everything at once (recommended):
 
-```
+```bash
 make deploy-all
 ```
 
@@ -480,7 +480,7 @@ After deployment completes, verify the installation:
 ### Check stack status
 <a name="check-stack-status"></a>
 
-```
+```bash
 # Check all stack statuses
 make status
 
@@ -497,7 +497,7 @@ All stacks should show `CREATE_COMPLETE` or `UPDATE_COMPLETE` status.
 
 1. Get the CloudFront URL from stack outputs:
 
-   ```
+   ```bash
    aws cloudformation describe-stacks \
      --stack-name cms-staging-ui \
      --query 'Stacks[0].Outputs[?OutputKey==`CloudFrontURL`].OutputValue' \
@@ -523,7 +523,7 @@ The UI stack seeds one Amazon Cognito user so that a fresh deployment is reachab
 
 The password is generated server-side, 24 characters with mixed character types, and **never appears in the CloudFormation template**. Retrieve it with:
 
-```
+```bash
 aws secretsmanager get-secret-value \
   --secret-id cms-<stage>-demo-user-password \
   --query SecretString \
@@ -543,7 +543,7 @@ Authority comes from group membership rather than from having an account, so any
 
 1. Get IoT endpoint:
 
-   ```
+   ```bash
    aws iot describe-endpoint --endpoint-type iot:Data-ATS
    ```
 
@@ -552,7 +552,7 @@ Authority comes from group membership rather than from having an account, so any
 ### Verify Flink applications
 <a name="verify-flink-applications"></a>
 
-```
+```bash
 # List Kinesis Data Analytics applications
 aws kinesisanalyticsv2 list-applications
 
@@ -583,7 +583,7 @@ After successful deployment, the following outputs are available:
 
 View all outputs:
 
-```
+```bash
 # View outputs for a specific stack
 aws cloudformation describe-stacks \
   --stack-name cms-staging-ui \
@@ -601,7 +601,7 @@ cdk outputs --all
 
 Edit the CDK application file to customize resources:
 
-```
+```bash
 # Edit main CDK app
 vi deployment/app.py
 
@@ -616,7 +616,7 @@ vi deployment/stacks/msk_stack.py
 
 Deploy to different environments:
 
-```
+```bash
 # Deploy to staging (canonical target)
 DEPLOYMENT_STAGE=staging make deploy
 ```
@@ -629,7 +629,7 @@ This guidance now ships as a single-environment deployment. If you need multiple
 
 To use an existing VPC instead of creating a new one:
 
-```
+```bash
 # Set VPC ID environment variable
 export VPC_ID=vpc-xxxxx
 
@@ -642,7 +642,7 @@ make deploy
 
 To use an existing MSK cluster:
 
-```
+```bash
 # Set MSK cluster ARN
 export MSK_CLUSTER_ARN=arn:aws:kafka:region:account:cluster/name/uuid
 
@@ -655,14 +655,14 @@ make deploy
 
 The simulation service uses two ARM64 container images (`cms-sim-service` and `cms-fwe-agent`). By default, `make deploy-simulation` pulls pre-built published images from public ECR — no local container builder is required. The v0.4.0 release republished both images at tag `v0.4.0`; `cms-sim-service:v0.4.0` is rebuilt from this release and carries the vehicle-side SOVD handlers, while `cms-fwe-agent:v0.4.0` is content-identical to `v0.3.2` (AWS IoT FleetWise Edge Agent v1.3.2). The pinned tag lives in `deployment/stacks/_sim_image_config.py`.
 
-```
+```bash
 # Default: uses published images from public ECR (no local Docker needed)
 make -C deployment deploy-simulation DEPLOYMENT_STAGE=staging AWS_REGION=us-west-2
 ```
 
 To use images from your own registry, set `PUBLIC_ECR_REGISTRY` and `PUBLIC_ECR_TAG`:
 
-```
+```bash
 # Point to a custom registry and tag
 PUBLIC_ECR_REGISTRY=<account-id>.dkr.ecr.<region>.amazonaws.com \
 PUBLIC_ECR_TAG=v0.4.0 \
@@ -671,7 +671,7 @@ PUBLIC_ECR_TAG=v0.4.0 \
 
 For local development builds (when actively modifying simulation Dockerfiles), use `SIM_IMAGE_MODE=asset` to build images locally instead of pulling from a registry. This requires a local container builder such as Docker, Finch, or Podman.
 
-```
+```bash
 # Build images locally (requires Docker, Finch, or Podman)
 SIM_IMAGE_MODE=asset CDK_DOCKER=finch \
   make -C deployment deploy-simulation DEPLOYMENT_STAGE=staging AWS_REGION=us-west-2
@@ -703,7 +703,7 @@ See [Conversational fleet assistant](fip-architecture-details.md#bedrock-agents-
 
  **Solution:**
 
-```
+```bash
 # Verify AWS credentials
 aws sts get-caller-identity
 
@@ -721,7 +721,7 @@ cdk bootstrap aws://ACCOUNT-ID/REGION
 
 1. Check CloudFormation events:
 
-   ```
+   ```bash
    aws cloudformation describe-stack-events \
      --stack-name cms-staging-storage \
      --max-items 20
@@ -733,7 +733,7 @@ cdk bootstrap aws://ACCOUNT-ID/REGION
 
 1. Delete failed stack and retry:
 
-   ```
+   ```bash
    aws cloudformation delete-stack --stack-name cms-staging-storage
    make phase-foundation
    ```
@@ -748,7 +748,7 @@ cdk bootstrap aws://ACCOUNT-ID/REGION
 + Wait for completion before proceeding to Phase 4
 + Check cluster status:
 
-  ```
+  ```bash
   aws kafka describe-cluster --cluster-arn CLUSTER-ARN
   ```
 
@@ -761,7 +761,7 @@ cdk bootstrap aws://ACCOUNT-ID/REGION
 
 1. Check CloudWatch Logs for error messages:
 
-   ```
+   ```bash
    aws logs tail /aws/kinesis-analytics/cms-staging-trip-detection --follow
    ```
 
@@ -771,7 +771,7 @@ cdk bootstrap aws://ACCOUNT-ID/REGION
 
 1. Restart application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 start-application \
      --application-name cms-staging-trip-detection
    ```

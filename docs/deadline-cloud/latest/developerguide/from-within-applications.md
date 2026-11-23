@@ -15,13 +15,13 @@ This example demonstrates submitting job bundles that you make available in the 
 
  The following script enables a user to select the job bundle:
 
-```
+```bash
 deadline bundle gui-submit --install-gui
 ```
 
  To use a specific job bundle in a menu item instead, use the following:
 
-```
+```bash
 deadline bundle gui-submit {{</path/to/job/bundle>}} --install-gui
 ```
 

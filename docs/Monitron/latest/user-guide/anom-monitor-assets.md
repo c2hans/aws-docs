@@ -30,7 +30,7 @@ When you open the Amazon Monitron mobile app, it displays the list of assets ass
 
 <table>
 <tbody>
-  <tr><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/mobile-understand-sensor-measurement.png" alt="Vibration monitoring dashboard showing total and single axis vibration graphs with ISO alarm threshold exceeded on Dec 15." /> </td><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/web-understand-sensor-measurement.png" alt="Vibration monitoring dashboard showing total and single axis vibration graphs with ISO alarm threshold exceeded." /> </td></tr>
+  <tr><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/mobile-understand-sensor-measurement.png" alt="Vibration monitoring dashboard showing total and single axis vibration graphs with ISO alarm threshold exceeded on Dec 15." /><br />the assets list in the mobile app </td><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/web-understand-sensor-measurement.png" alt="Vibration monitoring dashboard showing total and single axis vibration graphs with ISO alarm threshold exceeded." /><br />the assets list in the web app </td></tr>
 </tbody>
 </table>
 
@@ -72,4 +72,4 @@ Choosing the notification icon opens the **Notifications** page, which lists all
 
 |  |  |
 | --- |--- |
-|  ![Notifications list showing alarm and warning entries with position names, vibration and temperature detection details.](https://docs.aws.amazon.com/Monitron/latest/user-guide/images/mobileapp_notification.png)  |  ![Notifications panel showing alarms and warnings for positions with vibration and temperature alerts.](https://docs.aws.amazon.com/Monitron/latest/user-guide/images/webapp_notification.png)  |
+|  ![Notifications list showing alarm and warning entries with position names, vibration and temperature detection details.](https://docs.aws.amazon.com/Monitron/latest/user-guide/images/mobileapp_notification.png)<br />a notification in the mobile app  |  ![Notifications panel showing alarms and warnings for positions with vibration and temperature alerts.](https://docs.aws.amazon.com/Monitron/latest/user-guide/images/webapp_notification.png)<br />a notification in the web app  |

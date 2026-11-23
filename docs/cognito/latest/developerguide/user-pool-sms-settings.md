@@ -137,7 +137,7 @@ These trust policy conditions apply to both the Amazon SNS path and the AWS End 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -185,7 +185,7 @@ Use the following procedure to configure your user pool to send SMS messages dir
 
 1. <a name="sms-setup-eums-permissions-policy"></a>Attach the following identity (permissions) policy to the role. This policy grants Amazon Cognito permission to call `sms-voice:SendTextMessage` on the origination identity that your user pool sends from. Scope the `Resource` element to the ARN of your phone number, phone pool, or sender ID as a least-privilege practice. Replace the example ARN with the ARN of your origination identity.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -213,7 +213,7 @@ When your policy scopes the `Resource` element to an origination identity ARN, s
 
 1. Set the `EumsSms` object on your user pool. You can set this configuration in a [CreateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPool.html), [UpdateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPool.html), or [SetUserPoolMfaConfig](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SetUserPoolMfaConfig.html) request. The `CallerArn` parameter is required. The following example shows the minimum `EumsSms` configuration:
 
-   ```
+   ```json
    "EumsSms": {
        "CallerArn": "arn:aws:iam::123456789012:role/service-role/CognitoEumsSmsRole",
        "ExternalId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"

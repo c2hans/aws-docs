@@ -20,7 +20,7 @@ Your firewall policy is removed from the list in the **Firewall policies** page.
 
 To delete the policy with the AWS CLI, use `delete-firewall-policy-v2`:
 
-```
+```sh
 aws network-firewall delete-firewall-policy-v2 \
 --firewall-policy-v2-name example-policy \
 --region us-west-2

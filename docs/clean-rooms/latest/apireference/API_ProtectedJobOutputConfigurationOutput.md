@@ -12,6 +12,11 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** intermediateTable **   <a name="API-Type-ProtectedJobOutputConfigurationOutput-intermediateTable"></a>
+Specifies the intermediate table that the protected job populated, identified by its ID, Amazon Resource Name (ARN), and name. This field is present when the protected job was triggered by a `PopulateIntermediateTable` operation.
+Type: [IntermediateTableOutputConfiguration](API_IntermediateTableOutputConfiguration.md) object
+Required: No
+
  ** member **   <a name="API-Type-ProtectedJobOutputConfigurationOutput-member"></a>
  The member output configuration for a protected job.
 Type: [ProtectedJobMemberOutputConfigurationOutput](API_ProtectedJobMemberOutputConfigurationOutput.md) object

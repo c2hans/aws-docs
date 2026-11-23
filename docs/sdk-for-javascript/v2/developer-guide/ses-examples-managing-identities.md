@@ -39,7 +39,7 @@ To set up and run this example, you must first complete these tasks:
 
 Configure the SDK for JavaScript by creating a global configuration object then setting the Region for your code. In this example, the Region is set to `us-west-2`.
 
-```
+```javascript
 // Load the SDK for JavaScript
 var AWS = require('aws-sdk');
 
@@ -56,7 +56,7 @@ Create an object to pass the `IdentityType` and other parameters for the `listId
 
 Then handle the `response` in the promise callback. The `data` returned by the promise contains an array of domain identities as specified by the `IdentityType` parameter.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -85,7 +85,7 @@ listIDsPromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ses_listidentities.js
 ```
 
@@ -98,7 +98,7 @@ In this example, use a Node.js module to verify email senders to use with Amazon
 
 Create an object to pass the `EmailAddress` parameter for the `verifyEmailIdentity` method of the `AWS.SES` client class. To call the `verifyEmailIdentity` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -121,7 +121,7 @@ verifyEmailPromise
 
 To run the example, type the following at the command line. The domain is added to Amazon SES to be verified.
 
-```
+```javascript
 node ses_verifyemailidentity.js
 ```
 
@@ -134,7 +134,7 @@ In this example, use a Node.js module to verify email domains to use with Amazon
 
 Create an object to pass the `Domain` parameter for the `verifyDomainIdentity` method of the `AWS.SES` client class. To call the `verifyDomainIdentity` method, create a promise for invoking an Amazon SES service object, passing the parameters object. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -157,7 +157,7 @@ verifyDomainPromise
 
 To run the example, type the following at the command line. The domain is added to Amazon SES to be verified.
 
-```
+```javascript
 node ses_verifydomainidentity.js
 ```
 
@@ -170,7 +170,7 @@ In this example, use a Node.js module to delete email addresses or domains used 
 
 Create an object to pass the `Identity` parameter for the `deleteIdentity` method of the `AWS.SES` client class. To call the `deleteIdentity` method, create a `request` for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback..
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -193,7 +193,7 @@ deletePromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ses_deleteidentity.js
 ```
 

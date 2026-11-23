@@ -51,7 +51,7 @@ To create the new host in the Amazon EVS console or with the AWS CLI, use the fo
 
 1. Run the `create-environment-host` command. The following example adds a host that runs ESX 8.0 U3g. Replace the example environment ID, host name, and key pair name with your own values.
 
-   ```
+   ```bash
    aws evs create-environment-host \
        --environment-id "env-abcde12345" \
        --esx-version "ESXi-8.0U3g-24859861" \
@@ -64,7 +64,7 @@ To create the new host in the Amazon EVS console or with the AWS CLI, use the fo
 
 1. To verify completion, check that the state of the new host is `CREATED`. Replace the example environment ID with your own value.
 
-   ```
+   ```bash
    aws evs list-environment-hosts \
        --environment-id "env-abcde12345"
    ```
@@ -100,7 +100,7 @@ To delete the old host in the Amazon EVS console or with the AWS CLI, use the fo
 
 1. Run the `delete-environment-host` command. Replace the example environment ID and host name with your own values.
 
-   ```
+   ```bash
    aws evs delete-environment-host \
        --environment-id "env-abcde12345" \
        --host-name "esxi-host-01"
@@ -108,7 +108,7 @@ To delete the old host in the Amazon EVS console or with the AWS CLI, use the fo
 
 1. To verify completion, list the hosts and confirm that the old host is no longer listed or is in the `DELETED` state.
 
-   ```
+   ```bash
    aws evs list-environment-hosts \
        --environment-id "env-abcde12345"
    ```

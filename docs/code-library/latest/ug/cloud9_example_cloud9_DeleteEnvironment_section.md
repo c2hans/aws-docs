@@ -29,7 +29,7 @@ For more information, see [Deleting an environment in AWS Cloud9](https://docs.a
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified AWS Cloud9 development environment. If an Amazon EC2 instance is connected to the environment, also terminates the instance.**
 
-```
+```powershell
 Remove-C9Environment -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX
 ```
 +  For API details, see [DeleteEnvironment](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -37,7 +37,7 @@ Remove-C9Environment -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified AWS Cloud9 development environment. If an Amazon EC2 instance is connected to the environment, also terminates the instance.**
 
-```
+```powershell
 Remove-C9Environment -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX
 ```
 +  For API details, see [DeleteEnvironment](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

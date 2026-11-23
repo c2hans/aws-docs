@@ -80,7 +80,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="apps-application-id-attributes-attribute-type-request-body-put-example"></a>
 
-```
+```json
 {
   "Blacklist": [
     "string"
@@ -94,7 +94,7 @@ Retrieves information about the communication requirements and options that are 
 #### AttributesResource schema
 <a name="apps-application-id-attributes-attribute-type-response-body-attributesresource-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "AttributeType": "string",
@@ -107,7 +107,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-attributes-attribute-type-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

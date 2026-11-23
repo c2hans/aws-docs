@@ -20,7 +20,7 @@ By default, `init` generates the extension project in the current directory.
 ## Synopsis
 <a name="resource-type-cli-init-synopsis"></a>
 
-```
+```sh
 $ cfn init [--force]
 ```
 
@@ -36,7 +36,7 @@ Force project files to be overwritten.
 
 The `init` command launches a wizard that walks you through setting up the project, including specifying the extension name.
 
-```
+```text
 Initializing new project
 Do you want to develop a new resource(r) or a module(m) or a hook(h)?
 ```

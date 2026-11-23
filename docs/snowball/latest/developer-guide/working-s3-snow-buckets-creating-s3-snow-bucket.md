@@ -12,10 +12,10 @@ The following example creates an Amazon S3 bucket for a Snowball Edge device usi
 
 **Example of creating an S3 bucket**
 
-```
+```bash,sh,zsh
 aws s3api create-bucket --bucket {{your-snow-bucket}} --endpoint-url https://{{s3api-endpoint-ip}} --profile {{your-profile}}
 ```
 
-```
+```bash,sh,zsh
 aws s3control create-bucket --bucket {{your-snow-bucket}} --endpoint-url https://{{s3ctrlapi-endpoint-ip}} --profile {{your-profile}}
 ```

@@ -40,7 +40,7 @@ After you enable fast snapshot restore for a snapshot, it enters the `optimizing
 **To enable fast snapshot restore**
 Use the [enable-fast-snapshot-restores](https://docs.aws.amazon.com/cli/latest/reference/ec2/enable-fast-snapshot-restores.html) command.
 
-```
+```bash
 aws ec2 enable-fast-snapshot-restores \
     --availability-zones {{us-east-1a}} {{us-east-1b}} \
     --source-snapshot-ids {{snap-0abcdef1234567890}}
@@ -49,7 +49,7 @@ aws ec2 enable-fast-snapshot-restores \
 **To disable fast snapshot restore**
 Use the [disable-fast-snapshot-restores](https://docs.aws.amazon.com/cli/latest/reference/ec2/disable-fast-snapshot-restores.html) command.
 
-```
+```bash
 aws ec2 disable-fast-snapshot-restores \
     --availability-zones {{us-east-1a}} \
     --source-snapshot-ids {{snap-0abcdef1234567890}}
@@ -57,7 +57,7 @@ aws ec2 disable-fast-snapshot-restores \
 
 The following example uses the [describe-fast-snapshot-restores](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-fast-snapshot-restores.html) command to describe your disabled fast snapshot restores.
 
-```
+```bash
 aws ec2 describe-fast-snapshot-restores \
     --filters Name=state,Values=disabled
 ```
@@ -68,7 +68,7 @@ aws ec2 describe-fast-snapshot-restores \
 **To enable fast snapshot restore**
 Use the [Enable-EC2FastSnapshotRestore](https://docs.aws.amazon.com/powershell/latest/reference/items/Enable-EC2FastSnapshotRestore.html) cmdlet.
 
-```
+```powershell
 Enable-EC2FastSnapshotRestore `
     -AvailabilityZone {{us-east-1a}} {{us-east-1b}} `
     -SourceSnapshotId {{snap-0abcdef1234567890}}
@@ -77,7 +77,7 @@ Enable-EC2FastSnapshotRestore `
 **To disable fast snapshot restore**
 Use the [Disable-EC2FastSnapshotRestore](https://docs.aws.amazon.com/powershell/latest/reference/items/Disable-EC2FastSnapshotRestore.html) cmdlet.
 
-```
+```powershell
 Disable-EC2FastSnapshotRestore `
     -AvailabilityZone {{us-east-1a}} `
     -SourceSnapshotId {{snap-0abcdef1234567890}}
@@ -85,7 +85,7 @@ Disable-EC2FastSnapshotRestore `
 
 The following example uses the [Get-EC2FastSnapshotRestore](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2FastSnapshotRestore.html) cmdlet to describe your disabled fast snapshot restores.
 
-```
+```powershell
 Get-EC2FastSnapshotRestore `
     -Filter @{Name="state"; Values="disabled"}
 ```

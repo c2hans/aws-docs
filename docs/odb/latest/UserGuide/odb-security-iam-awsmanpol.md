@@ -244,7 +244,7 @@ The managed policies on this page deliberately omit several permissions. These p
 
 You need the following permissions when you share Oracle Exadata infrastructure or ODB networks across AWS accounts using AWS Resource Access Manager (AWS RAM). The Oracle Database@AWS managed policies do not include these permissions.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -284,7 +284,7 @@ The managed policies do not grant these actions. Add them through your own custo
 
 To harden this policy, you can restrict `ec2:CreateVpcEndpoint` and `ec2:DeleteVpcEndpoints` to requests that VPC Lattice makes on the principal's behalf. The `aws:CalledVia` condition with the `vpc-lattice.amazonaws.com` service principal allows VPC Lattice to manage the endpoint for the principal while preventing the principal from creating or deleting the endpoint directly. The remaining tagging and describe actions stay unconditional.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -342,7 +342,7 @@ In Availability Zones that support managed cluster placement groups, Oracle Data
 
 No managed policy grants the placement group actions. Add them through your own customer managed policy. Without them, Oracle Database@AWS cannot create resources in any Availability Zone that supports managed cluster placement groups.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -370,7 +370,7 @@ You must pass the encryption role to Oracle Database@AWS and describe the KMS ke
 
 When you update the encryption key, Oracle Database@AWS resolves the VPC Lattice service network association for your ODB network on your behalf. This operation requires `vpc-lattice:GetServiceNetworkResourceAssociation`. Add these permissions through your own customer managed policy.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -412,7 +412,7 @@ You must also pass the IAM role that you supply with the secret. Scope `iam:Pass
 
 The following example policy grants only these two actions. For a broader identity-based policy that already includes the `AllowSecretsManagerAccess` statement, see [Allow users to provision Oracle Database@AWS resources](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-full-access).
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -444,7 +444,7 @@ You need the following caller permission when you associate an IAM role with an 
 
 The VM cluster administrator policies and the `AmazonODBFullAccess` policy already grant the `odb:AssociateIamRoleToResource` actions. They don't grant `iam:PassRole`. You must pass the IAM role to Oracle Database@AWS for association, so add this action through your own customer managed policy. Scope it to the role ARNs that you choose, and constrain it with the `iam:PassedToService` condition set to `odb.amazonaws.com`. Without this action, requests to associate an IAM role fail. Disassociating an IAM role doesn't require this action.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -468,7 +468,7 @@ The VM cluster administrator policies and the `AmazonODBFullAccess` policy alrea
 
 You need the following permissions when you set up Amazon EC2 networking for ODB peering and DNS resolution. The Oracle Database@AWS managed policies do not include these permissions.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

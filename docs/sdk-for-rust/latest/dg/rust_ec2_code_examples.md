@@ -28,7 +28,7 @@ The following code example shows how to get started using Amazon EC2.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
 async fn show_security_groups(client: &aws_sdk_ec2::Client, group_ids: Vec<String>) {
     let response = client
         .describe_security_groups()
@@ -77,7 +77,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 The EC2InstanceScenario implementation contains logic to run the example as a whole.
 
-```
+```rust
 //! Scenario that uses the AWS SDK for Rust (the SDK) with Amazon Elastic Compute Cloud
 //! (Amazon EC2) to do the following:
 //!
@@ -432,7 +432,7 @@ pub async fn run(mut scenario: Ec2InstanceScenario) {
 ```
 The EC2Impl struct serves as a an automock point for testing, and its functions wrap the EC2 SDK calls.
 
-```
+```rust
 use std::{net::Ipv4Addr, time::Duration};
 
 use aws_sdk_ec2::{
@@ -917,7 +917,7 @@ impl std::fmt::Display for EC2Error {
 ```
 The SSM struct serves as a an automock point for testing, and its functions wraps SSM SDK calls.
 
-```
+```rust
 use aws_sdk_ssm::{types::Parameter, Client};
 use aws_smithy_async::future::pagination_stream::TryFlatMap;
 
@@ -963,7 +963,7 @@ impl SSMImpl {
 ```
 The scenario uses several "Manager"-style structs to handle access to resources that are created and deleted throughout the scenario.
 
-```
+```rust
 use aws_sdk_ec2::operation::{
     allocate_address::AllocateAddressOutput, associate_address::AssociateAddressOutput,
 };
@@ -1357,7 +1357,7 @@ impl std::fmt::Display for SecurityGroupManager {
 ```
 The main entry point for the scenario.
 
-```
+```rust
 use ec2_code_examples::{
     ec2::EC2,
     getting_started::{
@@ -1410,7 +1410,7 @@ The following code example shows how to use `AllocateAddress`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     pub async fn allocate_ip_address(&self) -> Result<AllocateAddressOutput, EC2Error> {
         self.client
             .allocate_address()
@@ -1430,7 +1430,7 @@ The following code example shows how to use `AssociateAddress`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     pub async fn associate_ip_address(
         &self,
         allocation_id: &str,
@@ -1456,7 +1456,7 @@ The following code example shows how to use `AuthorizeSecurityGroupIngress`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     /// Add an ingress rule to a security group explicitly allowing IPv4 address
     /// as {ip}/32 over TCP port 22.
     pub async fn authorize_security_group_ssh_ingress(
@@ -1497,7 +1497,7 @@ The following code example shows how to use `CreateKeyPair`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 Rust implementation that calls the EC2 Client's create\_key\_pair and extracts the returned material.
 
-```
+```rust
     pub async fn create_key_pair(&self, name: String) -> Result<(KeyPairInfo, String), EC2Error> {
         tracing::info!("Creating key pair {name}");
         let output = self.client.create_key_pair().key_name(name).send().await?;
@@ -1514,7 +1514,7 @@ Rust implementation that calls the EC2 Client's create\_key\_pair and extracts t
 ```
 A function that calls the create\_key impl and securely saves the PEM private key.
 
-```
+```rust
     /// Creates a key pair that can be used to securely connect to an EC2 instance.
     /// The returned key pair contains private key information that cannot be retrieved
     /// again. The private key data is stored as a .pem file.
@@ -1552,7 +1552,7 @@ The following code example shows how to use `CreateSecurityGroup`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     pub async fn create_security_group(
         &self,
         name: &str,
@@ -1595,7 +1595,7 @@ The following code example shows how to use `CreateTags`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 This example applies the Name tag After creating an instance.
 
-```
+```rust
     pub async fn create_instance<'a>(
         &self,
         image_id: &'a str,
@@ -1666,7 +1666,7 @@ The following code example shows how to use `DeleteKeyPair`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 Wrapper around delete\_key that also removes the backing private PEM key.
 
-```
+```rust
     pub async fn delete(self, ec2: &EC2, util: &Util) -> Result<(), EC2Error> {
         if let Some(key_name) = self.key_pair.key_name() {
             ec2.delete_key_pair(key_name).await?;
@@ -1680,7 +1680,7 @@ Wrapper around delete\_key that also removes the backing private PEM key.
     }
 ```
 
-```
+```rust
     pub async fn delete_key_pair(&self, key_name: &str) -> Result<(), EC2Error> {
         let key_name: String = key_name.into();
         tracing::info!("Deleting key pair {key_name}");
@@ -1702,7 +1702,7 @@ The following code example shows how to use `DeleteSecurityGroup`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     pub async fn delete_security_group(&self, group_id: &str) -> Result<(), EC2Error> {
         tracing::info!("Deleting security group {group_id}");
         self.client
@@ -1723,7 +1723,7 @@ The following code example shows how to use `DeleteSnapshot`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ebs#code-examples).
 
-```
+```rust
 async fn delete_snapshot(client: &Client, id: &str) -> Result<(), Error> {
     client.delete_snapshot().snapshot_id(id).send().await?;
 
@@ -1742,7 +1742,7 @@ The following code example shows how to use `DescribeImages`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     pub async fn list_images(&self, ids: Vec<Parameter>) -> Result<Vec<Image>, EC2Error> {
         let image_ids = ids.into_iter().filter_map(|p| p.value).collect();
         let output = self
@@ -1762,7 +1762,7 @@ The following code example shows how to use `DescribeImages`.
 ```
 Using the list\_images function with SSM to limit based on your environment. For more details on SSM, see https://docs.aws.amazon.com/systems-manager/latest/userguide/example\_ssm\_GetParameters\_section.html.
 
-```
+```rust
     async fn find_image(&mut self) -> Result<ScenarioImage, EC2Error> {
         let params: Vec<Parameter> = self
             .ssm
@@ -1795,7 +1795,7 @@ The following code example shows how to use `DescribeInstanceStatus`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
 async fn show_all_events(client: &Client) -> Result<(), Error> {
     let resp = client.describe_regions().send().await.unwrap();
 
@@ -1837,7 +1837,7 @@ The following code example shows how to use `DescribeInstanceTypes`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     /// List instance types that match an image's architecture and are free tier eligible.
     pub async fn list_instance_types(&self, image: &Image) -> Result<Vec<InstanceType>, EC2Error> {
         let architecture = format!(
@@ -1882,7 +1882,7 @@ The following code example shows how to use `DescribeInstances`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 Retrieve details for an EC2 Instance.
 
-```
+```rust
     pub async fn describe_instance(&self, instance_id: &str) -> Result<Instance, EC2Error> {
         let response = self
             .client
@@ -1906,7 +1906,7 @@ Retrieve details for an EC2 Instance.
 ```
 After creating an EC2 instance, retrieve and store its details.
 
-```
+```rust
     /// Create an EC2 instance with the given ID on a given type, using a
     /// generated KeyPair and applying a list of security groups.
     pub async fn create(
@@ -1935,7 +1935,7 @@ The following code example shows how to use `DescribeKeyPairs`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     pub async fn list_key_pair(&self) -> Result<Vec<KeyPairInfo>, EC2Error> {
         let output = self.client.describe_key_pairs().send().await?;
         Ok(output.key_pairs.unwrap_or_default())
@@ -1951,7 +1951,7 @@ The following code example shows how to use `DescribeRegions`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
 async fn show_regions(client: &Client) -> Result<(), Error> {
     let rsp = client.describe_regions().send().await?;
 
@@ -1973,7 +1973,7 @@ The following code example shows how to use `DescribeSecurityGroups`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
 async fn show_security_groups(client: &aws_sdk_ec2::Client, group_ids: Vec<String>) {
     let response = client
         .describe_security_groups()
@@ -2014,7 +2014,7 @@ The following code example shows how to use `DescribeSnapshots`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ebs#code-examples).
 Shows the state of a snapshot.
 
-```
+```rust
 async fn show_state(client: &Client, id: &str) -> Result<(), Error> {
     let resp = client
         .describe_snapshots()
@@ -2031,7 +2031,7 @@ async fn show_state(client: &Client, id: &str) -> Result<(), Error> {
 }
 ```
 
-```
+```rust
 async fn show_snapshots(client: &Client) -> Result<(), Error> {
     // "self" represents your account ID.
     // You can list the snapshots for any account by replacing
@@ -2070,7 +2070,7 @@ The following code example shows how to use `DisassociateAddress`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     pub async fn disassociate_ip_address(&self, association_id: &str) -> Result<(), EC2Error> {
         self.client
             .disassociate_address()
@@ -2090,7 +2090,7 @@ The following code example shows how to use `RebootInstances`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     pub async fn reboot(&self, ec2: &EC2) -> Result<(), EC2Error> {
         if self.instance.is_some() {
             ec2.reboot_instance(self.instance_id()).await?;
@@ -2103,7 +2103,7 @@ The following code example shows how to use `RebootInstances`.
     }
 ```
 
-```
+```rust
     pub async fn reboot_instance(&self, instance_id: &str) -> Result<(), EC2Error> {
         tracing::info!("Rebooting instance {instance_id}");
 
@@ -2118,7 +2118,7 @@ The following code example shows how to use `RebootInstances`.
 ```
 Waiters for instance to be in the stopped and ready states, using the Waiters API. Using the Waiters API requires `use aws\_sdk\_ec2::client::Waiters` in the rust file.
 
-```
+```rust
     /// Wait for an instance to be ready and status ok (default wait 60 seconds)
     pub async fn wait_for_instance_ready(
         &self,
@@ -2170,7 +2170,7 @@ The following code example shows how to use `ReleaseAddress`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     pub async fn deallocate_ip_address(&self, allocation_id: &str) -> Result<(), EC2Error> {
         self.client
             .release_address()
@@ -2190,7 +2190,7 @@ The following code example shows how to use `RunInstances`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     pub async fn create_instance<'a>(
         &self,
         image_id: &'a str,
@@ -2261,7 +2261,7 @@ The following code example shows how to use `StartInstances`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 Start an EC2 Instance by instance ID.
 
-```
+```rust
     pub async fn start_instance(&self, instance_id: &str) -> Result<(), EC2Error> {
         tracing::info!("Starting instance {instance_id}");
 
@@ -2278,7 +2278,7 @@ Start an EC2 Instance by instance ID.
 ```
 Wait for an instance to be in the ready and status ok states, using the Waiters API. Using the Waiters API requires `use aws\_sdk\_ec2::client::Waiters` in the rust file.
 
-```
+```rust
     /// Wait for an instance to be ready and status ok (default wait 60 seconds)
     pub async fn wait_for_instance_ready(
         &self,
@@ -2310,7 +2310,7 @@ The following code example shows how to use `StopInstances`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     pub async fn stop_instance(&self, instance_id: &str) -> Result<(), EC2Error> {
         tracing::info!("Stopping instance {instance_id}");
 
@@ -2329,7 +2329,7 @@ The following code example shows how to use `StopInstances`.
 ```
 Wait for an instance to be in the stopped state, using the Waiters API. Using the Waiters API requires `use aws\_sdk\_ec2::client::Waiters` in the rust file.
 
-```
+```rust
     pub async fn stop_instance(&self, instance_id: &str) -> Result<(), EC2Error> {
         tracing::info!("Stopping instance {instance_id}");
 
@@ -2356,7 +2356,7 @@ The following code example shows how to use `TerminateInstances`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     pub async fn delete_instance(&self, instance_id: &str) -> Result<(), EC2Error> {
         tracing::info!("Deleting instance with id {instance_id}");
         self.stop_instance(instance_id).await?;
@@ -2372,7 +2372,7 @@ The following code example shows how to use `TerminateInstances`.
 ```
 Wait for an instance to be in the terminted state, using the Waiters API. Using the Waiters API requires `use aws\_sdk\_ec2::client::Waiters` in the rust file.
 
-```
+```rust
     async fn wait_for_instance_terminated(&self, instance_id: &str) -> Result<(), EC2Error> {
         self.client
             .wait_until_instance_terminated()

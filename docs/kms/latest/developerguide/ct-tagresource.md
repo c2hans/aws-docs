@@ -8,7 +8,7 @@ The following example shows an AWS CloudTrail log entry of a call to the [TagRes
 
 For an example of an `UntagResource` CloudTrail log entry that is written when the key is rotated, see [UntagResource](ct-untagresource.md). For information about tagging AWS KMS keys, see [Tags in AWS KMS](tagging-keys.md).
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

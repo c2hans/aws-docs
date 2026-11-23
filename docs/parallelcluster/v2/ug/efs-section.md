@@ -18,7 +18,7 @@ For more information, see [Best practices: moving a cluster to a new AWS Paralle
 
 The format is `[efs {{efs-name}}]`. {{efs-name}} must start with a letter, contain no more than 30 characters, and only contain letters, numbers, hyphens (-), and underscores (\_).
 
-```
+```ini
 [efs customfs]
 shared_dir = efs
 encrypted = false
@@ -59,7 +59,7 @@ When you set a mount target with inbound and outbound NFS traffic allowed from `
 
 There is no default value.
 
-```
+```ini
 efs_fs_id = fs-12345
 ```
 
@@ -72,7 +72,7 @@ efs_fs_id = fs-12345
 
 There is no default value.
 
-```
+```ini
 efs_kms_key_id = 1234abcd-12ab-34cd-56ef-1234567890ab
 ```
 
@@ -85,7 +85,7 @@ efs_kms_key_id = 1234abcd-12ab-34cd-56ef-1234567890ab
 
 The default value is `false`.
 
-```
+```ini
 encrypted = true
 ```
 
@@ -110,7 +110,7 @@ After the file system is created, this parameter can't be changed.
 
 The default value is `generalPurpose`.
 
-```
+```ini
 performance_mode = generalPurpose
 ```
 
@@ -127,7 +127,7 @@ The quota on throughput is `1024` MiB/s. To request a quota increase, contact Su
 
 The minimum value is `0.0` MiB/s.
 
-```
+```ini
 provisioned_throughput = 1024
 ```
 
@@ -144,7 +144,7 @@ Don't use `NONE` or `/NONE` as the shared directory.
 
 The following example mounts Amazon EFS at `/efs`.
 
-```
+```ini
 shared_dir = efs
 ```
 
@@ -161,7 +161,7 @@ Valid options are the following values:
 
 The default value is `bursting`.
 
-```
+```ini
 throughput_mode = provisioned
 ```
 

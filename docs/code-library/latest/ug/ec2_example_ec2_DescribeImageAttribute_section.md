@@ -58,7 +58,7 @@ For more information, see [Paid AMIs in the AWS Marketplace for Amazon EC2 insta
 **Tools for PowerShell V4**
 **Example 1: This example gets the description for the specified AMI.**
 
-```
+```powershell
 Get-EC2ImageAttribute -ImageId ami-12345678 -Attribute description
 ```
 **Output:**
@@ -75,7 +75,7 @@ SriovNetSupport     :
 ```
 **Example 2: This example gets the launch permissions for the specified AMI.**
 
-```
+```powershell
 Get-EC2ImageAttribute -ImageId ami-12345678 -Attribute launchPermission
 ```
 **Output:**
@@ -92,7 +92,7 @@ SriovNetSupport     :
 ```
 **Example 3: This example test whether enhanced networking is enabled.**
 
-```
+```powershell
 Get-EC2ImageAttribute -ImageId ami-12345678 -Attribute sriovNetSupport
 ```
 **Output:**
@@ -112,7 +112,7 @@ SriovNetSupport     : simple
 **Tools for PowerShell V5**
 **Example 1: This example gets the description for the specified AMI.**
 
-```
+```powershell
 Get-EC2ImageAttribute -ImageId ami-12345678 -Attribute description
 ```
 **Output:**
@@ -129,7 +129,7 @@ SriovNetSupport     :
 ```
 **Example 2: This example gets the launch permissions for the specified AMI.**
 
-```
+```powershell
 Get-EC2ImageAttribute -ImageId ami-12345678 -Attribute launchPermission
 ```
 **Output:**
@@ -146,7 +146,7 @@ SriovNetSupport     :
 ```
 **Example 3: This example test whether enhanced networking is enabled.**
 
-```
+```powershell
 Get-EC2ImageAttribute -ImageId ami-12345678 -Attribute sriovNetSupport
 ```
 **Output:**

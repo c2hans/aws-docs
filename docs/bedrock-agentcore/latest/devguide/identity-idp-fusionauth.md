@@ -40,7 +40,7 @@ For more details, refer to [FusionAuth’s OAuth documentation](https://fusionau
 
 To configure FusionAuth as an outbound resource provider, use the following:
 
-```
+```json
 {
   "name": "FusionAuth",
   "credentialProviderVendor": "FusionAuthOauth2",

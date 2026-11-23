@@ -150,7 +150,7 @@ The AWS CLI responds with the following results:
 
 The following example demonstrates how to detect toxic content using Python:
 
-```
+```python
 import boto3
 client = boto3.client(
     service_name='comprehend',
@@ -226,7 +226,7 @@ ap-southeast-2
 
 The following example demonstrates how to use the prompt safety classifier with Python:
 
-```
+```python
 import boto3
 client = boto3.client(service_name='comprehend', region_name='us-west-2')
 

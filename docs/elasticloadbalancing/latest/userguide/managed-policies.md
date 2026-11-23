@@ -47,6 +47,9 @@ View details about updates to AWS managed policies for Elastic Load Balancing si
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [ElasticLoadBalancingFullAccess](#ElasticLoadBalancingFullAccess) - Update to an existing policy | Added the `ec2:ValidateSecurityGroupQuotasForInterface` action to grant permissions to validate security group quotas for a network interface during input validation. | October 7, 2026 |
+| [AWSElasticLoadBalancingServiceRolePolicy](#AWSElasticLoadBalancingServiceRolePolicy) - Update to an existing policy | Added the `ec2:ValidateSecurityGroupQuotasForInterface` action to grant permissions to validate security group quotas for a network interface during input validation. | October 8, 2026 |
+| [AWSElasticLoadBalancingClassicServiceRolePolicy](#AWSElasticLoadBalancingClassicServiceRolePolicy) - Update to an existing policy | Added the `ec2:ValidateSecurityGroupQuotasForInterface` action to grant permissions to validate security group quotas for a network interface during input validation. | October 9, 2026 |
 | [ElasticLoadBalancingFullAccess](#ElasticLoadBalancingFullAccess) - Update to an existing policy | Added the `ec2:DescribeAvailityZones` action to grant permissions to describe Availability Zones during input validation. | February 23, 2026 |
 | [AWSElasticLoadBalancingServiceRolePolicy](#AWSElasticLoadBalancingServiceRolePolicy) - Update to an existing policy | Added the `ec2:DescribeAvailityZones` action to grant permissions to describe Availability Zones during input validation. | November 21, 2025 |
 | [AWSElasticLoadBalancingServiceRolePolicy](#AWSElasticLoadBalancingServiceRolePolicy) - Update to an existing policy | Added the `ec2:AllocateIpamPoolCidr` action to grant permissions to allocate CIDR blocks from IPAM pools. | February 17, 2025 |

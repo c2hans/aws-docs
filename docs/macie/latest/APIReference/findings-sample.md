@@ -47,7 +47,7 @@ Creates sample findings.
 #### POST schema
 <a name="findings-sample-request-body-post-example"></a>
 
-```
+```json
 {
   "findingTypes": [
     enum
@@ -61,7 +61,7 @@ Creates sample findings.
 #### Empty Schema schema
 <a name="findings-sample-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -69,7 +69,7 @@ Creates sample findings.
 #### ValidationException schema
 <a name="findings-sample-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -78,7 +78,7 @@ Creates sample findings.
 #### ServiceQuotaExceededException schema
 <a name="findings-sample-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -87,7 +87,7 @@ Creates sample findings.
 #### AccessDeniedException schema
 <a name="findings-sample-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -96,7 +96,7 @@ Creates sample findings.
 #### ResourceNotFoundException schema
 <a name="findings-sample-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -105,7 +105,7 @@ Creates sample findings.
 #### ConflictException schema
 <a name="findings-sample-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -114,7 +114,7 @@ Creates sample findings.
 #### ThrottlingException schema
 <a name="findings-sample-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -123,7 +123,7 @@ Creates sample findings.
 #### InternalServerException schema
 <a name="findings-sample-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

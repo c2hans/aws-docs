@@ -35,7 +35,7 @@ This example gets the `DefaultSMSType` attribute. This attribute controls whethe
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -44,7 +44,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -71,7 +71,7 @@ This example sets the `DefaultSMSType` attribute to `Transactional`, which optim
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -80,7 +80,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -109,7 +109,7 @@ In this example, the phone number is in E.164 format, a standard for internation
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -118,7 +118,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -145,7 +145,7 @@ To retrieve a list of phone numbers where the owner has opted out of receiving S
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -154,7 +154,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -183,7 +183,7 @@ For more details on sending SMS messages, see [Sending an SMS Message](https://d
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -192,7 +192,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',

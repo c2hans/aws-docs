@@ -61,7 +61,7 @@ These requirements are shown in the examples below for creating the launch templ
 
    Replace the contents for `CapacityReservationId` and `InstanceType` with the values for your Capacity Block. For more information on the additional EC2 launch template fields, see [Customize managed nodes with launch templates](launch-templates.md) and [Use Capacity Blocks for machine learning workloads](https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-template-capacity-blocks.html).
 
-   ```
+   ```json
    {
      "LaunchTemplateData": {
        "InstanceMarketOptions": {
@@ -79,7 +79,7 @@ These requirements are shown in the examples below for creating the launch templ
 
 1. Create the launch template.
 
-   ```
+   ```bash
    aws ec2 create-launch-template \
        --launch-template-name EKS-Capacity-Block-Launch-Template \
        --launch-template-data file://eks-capacity-block-lt.json
@@ -122,7 +122,7 @@ These requirements are shown in the examples below for creating the launch templ
 
    Replace the contents for `IamInstanceProfile`, `ImageId`, `SecurityGroupIds`, `UserData`, `KeyName` with the values for your environment.
 
-   ```
+   ```json
    {
      "LaunchTemplateData": {
        "InstanceMarketOptions": {
@@ -148,7 +148,7 @@ These requirements are shown in the examples below for creating the launch templ
 
 1. Create the launch template.
 
-   ```
+   ```bash
    aws ec2 create-launch-template \
        --launch-template-name EKS-Capacity-Block-Launch-Template \
        --launch-template-data file://eks-capacity-block-lt.json

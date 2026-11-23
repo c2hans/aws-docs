@@ -12,6 +12,7 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ```
 {
    "lastUpdatedTimestamp": number,
+   "organizationEnrollmentConfigurationStatus": "string",
    "organizationRuleMode": "string",
    "status": "string",
    "statusReason": "string"
@@ -28,6 +29,11 @@ The following data is returned in JSON format by the service.
  ** [lastUpdatedTimestamp](#API_automation_GetEnrollmentConfiguration_ResponseSyntax) **   <a name="computeoptimizer-automation_GetEnrollmentConfiguration-response-lastUpdatedTimestamp"></a>
  The timestamp of the last update to the enrollment configuration.
 Type: Timestamp
+
+ ** [organizationEnrollmentConfigurationStatus](#API_automation_GetEnrollmentConfiguration_ResponseSyntax) **   <a name="computeoptimizer-automation_GetEnrollmentConfiguration-response-organizationEnrollmentConfigurationStatus"></a>
+ Specifies whether an organization enrollment configuration on your account, or inherited from a parent OU or the organization root, enables Automation for your member account. Associations made using `AssociateAccounts` don't affect this status. This field is returned for organization member accounts, including delegated administrators. It's omitted for management accounts and accounts that aren't in an organization.
+Type: String
+Valid Values: `Active | Inactive`
 
  ** [organizationRuleMode](#API_automation_GetEnrollmentConfiguration_ResponseSyntax) **   <a name="computeoptimizer-automation_GetEnrollmentConfiguration-response-organizationRuleMode"></a>
 Specifies whether the management account can create Automation rules that implement optimization actions for this account.
@@ -50,11 +56,11 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
  You do not have sufficient permissions to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ForbiddenException **
  You are not authorized to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** InternalServerException **
  An internal error occurred while processing the request.
@@ -66,19 +72,19 @@ HTTP Status Code: 400
 
  ** OptInRequiredException **
  The account must be opted in to Compute Optimizer Automation before performing this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ResourceNotFoundException **
  The specified resource was not found.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ServiceUnavailableException **
  The service is temporarily unavailable.
-HTTP Status Code: 500
+HTTP Status Code: 503
 
  ** ThrottlingException **
  The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_automation_GetEnrollmentConfiguration_SeeAlso"></a>

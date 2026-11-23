@@ -32,7 +32,7 @@ The sample code does the following:
 
 1. Replace any existing code in `main.rs` with the following code:
 
-   ```
+   ```rust
    use std::time::Duration;
    use std::thread::sleep;
    use aws_config::BehaviorVersion;
@@ -187,7 +187,7 @@ After you have finished exploring your policy store, delete it.
 **To delete a policy store**
 You can delete a policy store by using the `delete-policy-store` operation, replacing `{{PSEXAMPLEabcdefg111111}}` with the policy store ID you want to delete.
 
-```
+```bash
 $ aws verifiedpermissions delete-policy-store \
     --policy-store-id {{PSEXAMPLEabcdefg111111}}
 ```

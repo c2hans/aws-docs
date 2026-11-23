@@ -142,7 +142,7 @@ The sample response shows the result that the `ListCommonControls` operation mig
 #### Sample Request
 <a name="API_ListCommonControls_Example_1_Request"></a>
 
-```
+```json
 {
     "CommonControlFilter": {
         "Objectives": [{
@@ -155,7 +155,7 @@ The sample response shows the result that the `ListCommonControls` operation mig
 #### Sample Response
 <a name="API_ListCommonControls_Example_1_Response"></a>
 
-```
+```json
 {
     "CommonControls": [{
         "Arn": "arn:aws:controlcatalog:::common-control/d4s7ik8fgv8082v3x31hifzcc",

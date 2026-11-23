@@ -128,7 +128,7 @@ aws elbv2 modify-load-balancer-attributes \
 **To manage the X-Forwarded-For header**
 Update the [AWS::ElasticLoadBalancingV2::LoadBalancer](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-loadbalancer.html) resource to include the `routing.http.xff_header_processing.mode` attribute. The possible values are `append`, `preserve`, and `remove`. The default is `append`.
 
-```
+```yaml
 Resources:
   myLoadBalancer:
     Type: AWS::ElasticLoadBalancingV2::LoadBalancer

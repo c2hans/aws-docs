@@ -28,7 +28,7 @@ When implementing custom Lambda reward functions, your function must accept and 
 ------
 #### [ Input structure ]
 
-```
+```json
 [{
   "id": "123",
   "messages": [
@@ -54,7 +54,7 @@ When implementing custom Lambda reward functions, your function must accept and 
 ------
 #### [ Output structure ]
 
-```
+```json
 [{
   "id": "123",
   "aggregate_reward_score": 0.85,

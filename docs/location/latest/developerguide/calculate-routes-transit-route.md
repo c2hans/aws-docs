@@ -20,7 +20,7 @@ The CalculateRoutes API supports the `Transit` travel mode to calculate routes u
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "Origin": [
         -122.3331,
@@ -38,7 +38,7 @@ The CalculateRoutes API supports the `Transit` travel mode to calculate routes u
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "PricingBucket": "Core",
     "LegGeometryFormat": "FlexiblePolyline",
@@ -186,7 +186,7 @@ The CalculateRoutes API supports the `Transit` travel mode to calculate routes u
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.us-east-1.amazonaws.com/v2/routes?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -207,7 +207,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes calculate-routes \
 --origin -122.3331 47.6097 \
 --destination -122.3493 47.6205 \
@@ -223,7 +223,7 @@ aws geo-routes calculate-routes \
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "Origin": [
         -122.3331,
@@ -246,7 +246,7 @@ aws geo-routes calculate-routes \
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "LegGeometryFormat": "FlexiblePolyline",
     "Notices": [],
@@ -396,7 +396,7 @@ aws geo-routes calculate-routes \
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.us-east-1.amazonaws.com/v2/routes?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -422,7 +422,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes calculate-routes \
 --origin -122.3331 47.6097 \
 --destination -122.3493 47.6205 \

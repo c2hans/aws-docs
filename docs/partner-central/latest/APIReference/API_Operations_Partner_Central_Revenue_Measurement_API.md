@@ -21,5 +21,6 @@ The following actions are supported by Partner Central Revenue Measurement API:
 +  [StartRevenueAttributionAllocationsTask](API_prm_StartRevenueAttributionAllocationsTask.md)
 +  [TagResource](API_prm_TagResource.md)
 +  [UntagResource](API_prm_UntagResource.md)
++  [UpdateMarketplaceRevenueShare](API_prm_UpdateMarketplaceRevenueShare.md)
 +  [UpdateMarketplaceRevenueShareAllocation](API_prm_UpdateMarketplaceRevenueShareAllocation.md)
 +  [UpdateRevenueAttribution](API_prm_UpdateRevenueAttribution.md)

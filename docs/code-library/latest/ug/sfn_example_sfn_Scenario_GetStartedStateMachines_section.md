@@ -19,7 +19,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 global using System.Text.Json;
 global using Amazon.StepFunctions;
 global using Microsoft.Extensions.Configuration;
@@ -341,7 +341,7 @@ public class UiMethods
 ```
 Define a class that wraps state machine and activity actions.
 
-```
+```csharp
 namespace StepFunctionsActions;
 
 using Amazon.StepFunctions;
@@ -602,7 +602,7 @@ public class StepFunctionsWrapper
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
 /**
  * You can obtain the JSON file to create a state machine in the following
  * GitHub location.
@@ -970,7 +970,7 @@ public class StepFunctionsScenario {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.iam.IamClient
 import aws.sdk.kotlin.services.iam.model.CreateRoleRequest
 import aws.sdk.kotlin.services.sfn.SfnClient
@@ -1365,7 +1365,7 @@ suspend fun createActivity(activityName: String): String? {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class StateMachineScenario:
     """Runs an interactive scenario that shows how to get started using Step Functions."""
 
@@ -1615,7 +1615,7 @@ if __name__ == "__main__":
 ```
 Define a class that wraps state machine actions.
 
-```
+```python
 class StateMachine:
     """Encapsulates Step Functions state machine actions."""
 
@@ -1766,7 +1766,7 @@ class StateMachine:
 ```
 Define a class that wraps activity actions.
 
-```
+```python
 class Activity:
     """Encapsulates Step Function activity actions."""
 

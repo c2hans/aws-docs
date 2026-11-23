@@ -196,7 +196,7 @@ With AWS SDKs, your apps and compatible devices can call AWS IoT APIs and the AP
 
    This program displays the account's currently configured logging options. After you install the SDK and configure it for your account, you should be able to run this program.
 
-   ```
+   ```python
    import boto3
    import json
 

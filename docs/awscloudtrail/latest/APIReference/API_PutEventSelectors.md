@@ -243,7 +243,7 @@ HTTP Status Code: 400
 
 The following example shows how to use advanced event selectors to log all management events (both readOnly and writeOnly), include `PutObject` and `DeleteObject` data events for the S3 objects in two S3 bucket prefixes, and log network activity events for AWS KMS. As shown here, you can use advanced event selectors to select not only the S3 prefix names by ARN, but the names of the specific events that you want to log.
 
-```
+```JSON
 {
    "AdvancedEventSelectors": [
       {
@@ -279,7 +279,7 @@ The following example shows how to use advanced event selectors to log all manag
 
 The following example shows how to use advanced event selectors to log all data events for Amazon SNS topics and platform endpoints, and to log only `SendMessage` data events for Amazon SQS.
 
-```
+```JSON
 {
    "AdvancedEventSelectors": [
       {

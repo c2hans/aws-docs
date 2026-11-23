@@ -58,7 +58,7 @@ log.roll.ms = 604800000
 
 Now run the following Python 3.6 script in the folder where you saved `config-file.txt`. This script uses the properties specified in `config-file.txt` to create a configuration named `SalesClusterConfiguration`. This configuration can work with Apache Kafka versions 1.1.1 and 2.1.0.
 
-```
+```PYTHON
 import boto3
 
 client = boto3.client('kafka')
@@ -111,7 +111,7 @@ Enable CORS by returning the correct headers.
 #### POST schema
 <a name="configurations-request-body-post-example"></a>
 
-```
+```json
 {
   "name": "string",
   "description": "string",
@@ -128,7 +128,7 @@ Enable CORS by returning the correct headers.
 #### ListConfigurationsResponse schema
 <a name="configurations-response-body-listconfigurationsresponse-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "configurations": [
@@ -154,7 +154,7 @@ Enable CORS by returning the correct headers.
 #### CreateConfigurationResponse schema
 <a name="configurations-response-body-createconfigurationresponse-example"></a>
 
-```
+```json
 {
   "creationTime": "string",
   "name": "string",
@@ -171,7 +171,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="configurations-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

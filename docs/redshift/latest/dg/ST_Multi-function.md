@@ -35,7 +35,7 @@ If *geom* is null, then null is returned.
 
 The following SQL returns a multipoint from an input multipoint.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Multi(ST_GeomFromText('MULTIPOINT((1 2),(3 4))', 4326)));
 ```
 
@@ -47,7 +47,7 @@ SELECT ST_AsEWKT(ST_Multi(ST_GeomFromText('MULTIPOINT((1 2),(3 4))', 4326)));
 
 The following SQL returns a multipoint from an input point.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Multi(ST_GeomFromText('POINT(1 2)', 4326)));
 ```
 
@@ -59,7 +59,7 @@ SELECT ST_AsEWKT(ST_Multi(ST_GeomFromText('POINT(1 2)', 4326)));
 
 The following SQL returns a geometry collection from an input geometry collection.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Multi(ST_GeomFromText('GEOMETRYCOLLECTION(POINT(1 2),MULTIPOINT((1 2),(3 4)))', 4326)));
 ```
 

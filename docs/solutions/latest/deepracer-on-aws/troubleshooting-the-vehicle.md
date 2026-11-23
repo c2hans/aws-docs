@@ -230,7 +230,7 @@ Check the following to verify you have the valid Wi-Fi connection settings.
 + Verify that the USB drive has only one disk partition with only one `wifi-creds.txt` file on it. If multiple `wifi-creds.txt` files are found, all of them will be processed in the order they were found, which may lead to unpredictable behavior.
 + Verify the Wi-Fi network’s SSID and password are correctly specified in the `wifi-creds.txt` file. An example of this file is shown as follows:
 
-  ```
+  ```txt
   ###################################################################################
   #                                   AWS DeepRacer                                 #
   # File name: wifi-creds.txt                                                       #

@@ -53,7 +53,7 @@ To check the connection status using the console, navigate to the [**Gateways**]
 
 To check the connection status using the API, use the `GetWirelessGatewayStatistics` API. This API doesn't have a request body and only contains a response body that shows whether the gateway is connected and when the last uplink was received.
 
-```
+```JSON
 HTTP/1.1 200
 Content-type: application/json
 

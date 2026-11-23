@@ -114,6 +114,10 @@ HTTP/1.1 200
             <EvaluateTargetHealth>boolean</EvaluateTargetHealth>
             <HostedZoneId>string</HostedZoneId>
          </AliasTarget>
+         <AZAffinity>
+            <LocationId>string</LocationId>
+            <LocationType>string</LocationType>
+         </AZAffinity>
          <CidrRoutingConfig>
             <CollectionId>string</CollectionId>
             <LocationName>string</LocationName>

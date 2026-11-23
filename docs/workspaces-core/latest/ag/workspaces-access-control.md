@@ -37,7 +37,7 @@ The following example shows policy statements that you could use to grant access
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

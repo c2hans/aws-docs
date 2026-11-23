@@ -17,7 +17,7 @@ To use CloudFormation to create a rule, use the template snippet as shown here.
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      EventRole:
        Type: AWS::IAM::Role
        Properties:
@@ -46,7 +46,7 @@ To use CloudFormation to create a rule, use the template snippet as shown here.
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
        "EventRole": {
            "Type": "AWS::IAM::Role",
@@ -100,7 +100,7 @@ To use CloudFormation to create a rule, use the template snippet as shown here.
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    EventRule:
      Type: 'AWS::Events::Rule'
      Properties:
@@ -123,7 +123,7 @@ To use CloudFormation to create a rule, use the template snippet as shown here.
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
        "EventRule": {
            "Type": "AWS::Events::Rule",

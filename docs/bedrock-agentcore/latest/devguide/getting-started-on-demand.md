@@ -48,7 +48,7 @@ Invoke your agent using the following command and view the traces, sessions, and
 ### Example invoke\_agent.py
 <a name="example-invoke-agent"></a>
 
-```
+```python
 import boto3
 import json
 import uuid
@@ -104,7 +104,7 @@ The following code samples demonstrate how to run on-demand evaluations using di
 
 1.
 
-   ```
+   ```bash
    # Runs evaluation for the specified runtime and session.
    # It auto queries cloudwatch logs and orchestrates evaluation over multiple evaluators.
 
@@ -122,7 +122,7 @@ The following code samples demonstrate how to run on-demand evaluations using di
 
 1.
 
-   ```
+   ```python
    from bedrock_agentcore_starter_toolkit import Evaluation
 
    # Initialize the evaluation client
@@ -157,9 +157,9 @@ The following code samples demonstrate how to run on-demand evaluations using di
 
 Use `agentcore eval ondemand simulate` to invoke each example in a local JSONL file or an AgentCore dataset, wait for the resulting traces, and evaluate those sessions synchronously.
 
-The command replays only predefined scenarios that have scripted `turns`. It fails before it invokes the agent if any example contains `actor_profile`. To run simulated scenarios, use the AgentCore SDK as described in [User simulation](user-simulation.md).
+The command replays only fixed scenarios that have scripted `turns`. It fails before it invokes the agent if any example contains `actor_profile`. To run dynamic scenarios, use the AgentCore SDK as described in [User simulation](user-simulation.md).
 
-```
+```bash
 agentcore eval ondemand simulate \
   --runtime-id <runtime-id> \
   --payload-template '{"prompt":"{input}"}' \
@@ -186,7 +186,7 @@ Before calling the `Evaluate` API, you need to download the span logs from Cloud
 **Note**
 It takes a couple of minutes for logs to get populated in CloudWatch, so it’s possible that if you try running the below script "immediately" after agent invocation, the logs are empty or incomplete
 
-```
+```python
 import boto3
 import time
 import json
@@ -262,7 +262,7 @@ with open(session_span_logs_file_name, "w") as f:
 
 Once you have the input spans, you can invoke the `Evaluate` API. The response can take a few moments because a large language model scores your traces.
 
-```
+```python
 # initialise client
 ace_dp_client = boto3.client('bedrock-agentcore', region_name = region)
 
@@ -276,7 +276,7 @@ print(response["evaluationResults"])
 
 If you use above and dump the session-spans in a json file, you can also subsequently run evaluate as below
 
-```
+```python
 with open(session_span_logs_file_name, "r") as f:
     session_span_logs = json.load(f)
 
@@ -311,7 +311,7 @@ Since the service supports only one session per evaluation, you do not need to e
 
 For trace-level evaluators (such as `Builtin.Helpfulness` or `Builtin.Correctness` ), set the trace IDs in the `evaluationTarget` parameter:
 
-```
+```python
 response = ace_dp_client.evaluate(
     evaluatorId = "Builtin.Helpfulness",
     evaluationInput = {"sessionSpans": session_span_logs},
@@ -324,7 +324,7 @@ response = ace_dp_client.evaluate(
 
 For span-level evaluators (such as `Builtin.ToolSelectionAccuracy` ), set the span IDs in the `evaluationTarget` parameter:
 
-```
+```python
 response = ace_dp_client.evaluate(
     evaluatorId = "Builtin.ToolSelectionAccuracy",
     evaluationInput = {"sessionSpans": session_span_logs},
@@ -337,7 +337,7 @@ response = ace_dp_client.evaluate(
 
 Each `Evaluate` API call returns a response containing a list of evaluator results. Because a single session can include multiple traces and tool calls, these elements are evaluated as separate entities. Consequently, a single API call may return multiple evaluation results.
 
-```
+```json
 {
     "evaluationResults": [ {evaluation-result-1}, {evaluation-result_2},.... ]
 }
@@ -383,7 +383,7 @@ Each evaluator result has a `spanContext` field that identifies the entity evalu
 
 This is just one entry. If a session has multiple traces, you will see multiple such entries, one for each trace. Similarly for tool-level evaluators, if there are multiple tool calls and a tool evaluator (such as `Builtin.ToolSelectionAccuracy` ) is provided, there will be one result per tool span.
 
-```
+```json
 {
   "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
   "evaluatorId": "Builtin.Helpfulness",
@@ -408,7 +408,7 @@ This is just one entry. If a session has multiple traces, you will see multiple 
 ### Example failed result entry
 <a name="example-failed-result"></a>
 
-```
+```json
 {
     "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
     "evaluatorId": "Builtin.Helpfulness",

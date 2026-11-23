@@ -47,7 +47,7 @@ Inside the `Function.cs` file, the first segment of code is the assembly attribu
 
 The following is an example of the assembly attribute:
 
-```
+```C#
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 ```
@@ -56,7 +56,7 @@ The class has two constructors. The first is a default constructor that is used 
 
 The following is an example of the first class constructor in `Function.cs`:
 
-```
+```C#
 public Function()
 {
     this.S3Client = new AmazonS3Client();
@@ -85,7 +85,7 @@ public Function()
 
 The following example demonstrates how the second constructor can be utilized for testing. The test project configures its own S3 and Rekognition clients and passes them in:
 
-```
+```C#
 public Function(IAmazonS3 s3Client, IAmazonRekognition rekognitionClient, float minConfidence)
 {
     this.S3Client = s3Client;
@@ -96,7 +96,7 @@ public Function(IAmazonS3 s3Client, IAmazonRekognition rekognitionClient, float 
 
 The following is an example of the `FunctionHandler` method inside the `Function.cs` file.
 
-```
+```C#
 public async Task FunctionHandler(S3Event input, ILambdaContext context)
 {
     foreach(var record in input.Records)

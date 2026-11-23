@@ -26,7 +26,7 @@ The following code example shows how to use `CreateKeyspace`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kys#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kys->createkeyspace(
           iv_keyspacename = iv_keyspace_name ).
@@ -48,7 +48,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kys#code-examples).
 
-```
+```sap-abap
     TRY.
         " Define schema with columns
         DATA(lt_columns) = VALUE /aws1/cl_kyscolumndefinition=>tt_columndefinitionlist(
@@ -94,7 +94,7 @@ The following code example shows how to use `DeleteKeyspace`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kys#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_kys->deletekeyspace(
           iv_keyspacename = iv_keyspace_name ).
@@ -114,7 +114,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kys#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_kys->deletetable(
           iv_keyspacename = iv_keyspace_name
@@ -135,7 +135,7 @@ The following code example shows how to use `GetKeyspace`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kys#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kys->getkeyspace(
           iv_keyspacename = iv_keyspace_name ).
@@ -157,7 +157,7 @@ The following code example shows how to use `GetTable`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kys#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kys->gettable(
           iv_keyspacename = iv_keyspace_name
@@ -180,7 +180,7 @@ The following code example shows how to use `ListKeyspaces`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kys#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kys->listkeyspaces(
           iv_maxresults = iv_max_results ).
@@ -200,7 +200,7 @@ The following code example shows how to use `ListTables`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kys#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kys->listtables(
           iv_keyspacename = iv_keyspace_name ).
@@ -220,7 +220,7 @@ The following code example shows how to use `RestoreTable`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kys#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kys->restoretable(
           iv_sourcekeyspacename = iv_source_keyspace_name
@@ -244,7 +244,7 @@ The following code example shows how to use `UpdateTable`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kys#code-examples).
 
-```
+```sap-abap
     TRY.
         " Add a new column to track watched movies
         DATA(lt_add_columns) = VALUE /aws1/cl_kyscolumndefinition=>tt_columndefinitionlist(

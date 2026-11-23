@@ -35,7 +35,7 @@ The following code example shows how to:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     " Create an Amazon Dynamo DB table.
 
     TRY.
@@ -247,7 +247,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lt_keyschema) = VALUE /aws1/cl_dynkeyschemaelement=>tt_keyschema(
           ( NEW /aws1/cl_dynkeyschemaelement( iv_attributename = 'year'
@@ -290,7 +290,7 @@ The following code example shows how to use `DeleteItem`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_resp) = lo_dyn->deleteitem(
           iv_tablename                = iv_table_name
@@ -314,7 +314,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_dyn->deletetable( iv_tablename = iv_table_name ).
         " Wait till the table is actually deleted.
@@ -338,7 +338,7 @@ The following code example shows how to use `DescribeTable`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_dyn->describetable( iv_tablename = iv_table_name ).
         DATA(lv_tablename) = oo_result->get_table( )->ask_tablename( ).
@@ -363,7 +363,7 @@ The following code example shows how to use `GetItem`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_item = lo_dyn->getitem(
           iv_tablename                = iv_table_name
@@ -389,7 +389,7 @@ The following code example shows how to use `ListTables`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_dyn->listtables( ).
         " You can loop over the oo_result to get table properties like this.
@@ -413,7 +413,7 @@ The following code example shows how to use `PutItem`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_resp) = lo_dyn->putitem(
           iv_tablename = iv_table_name
@@ -437,7 +437,7 @@ The following code example shows how to use `Query`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     TRY.
         " Query movies for a given year .
         DATA(lt_attributelist) = VALUE /aws1/cl_dynattributevalue=>tt_attributevaluelist(
@@ -474,7 +474,7 @@ The following code example shows how to use `Scan`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     TRY.
         " Scan movies for rating greater than or equal to the rating specified
         DATA(lt_attributelist) = VALUE /aws1/cl_dynattributevalue=>tt_attributevaluelist(
@@ -510,7 +510,7 @@ The following code example shows how to use `UpdateItem`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_output = lo_dyn->updateitem(
           iv_tablename        = iv_table_name

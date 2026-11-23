@@ -35,7 +35,7 @@ aws transcribe update-vocabulary \
 
 The file *my-updated-vocab.json* contains the following request body.
 
-```
+```json
 {
   "VocabularyName": "{{my-first-vocabulary}}",
   "VocabularyFileUri": "s3://{{amzn-s3-demo-bucket}}/{{my-vocabularies}}/{{my-updated-vocabulary-file}}.txt",

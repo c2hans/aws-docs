@@ -67,7 +67,7 @@ set AWS_REGION=us-west-2
 
 Set the Region by adding a `region` value to the `Aws.config` hash. The following example updates the `Aws.config` hash to use the `us-west-1` Region.
 
-```
+```ruby
 Aws.config.update({region: 'us-west-1'})
 ```
 
@@ -78,6 +78,6 @@ Any clients or resources that you create later are bound to this Region.
 
 Set the Region when you create an AWS client or resource. The following example creates an Amazon S3 resource object in the `us-west-1` Region. Choose the correct Region for your AWS resources. A service client object is immutable, so you must create a new client for each service to which you make requests and for making requests to the same service using a different configuration.
 
-```
+```ruby
 s3 = Aws::S3::Resource.new(region: 'us-west-1')
 ```

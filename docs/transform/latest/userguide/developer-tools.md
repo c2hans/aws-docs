@@ -35,7 +35,7 @@ The plugin includes `.claude-plugin`, `.codex-plugin`, and `.mcp.json` configura
 
 Run the following commands:
 
-```
+```bash
 /plugin marketplace add awslabs/agent-plugins
 /plugin install aws-transform@agent-plugins-for-aws
 ```
@@ -63,7 +63,7 @@ Use the MCP server to integrate AWS Transform programmatically with any MCP-comp
 
 **Claude Code**
 
-```
+```bash
 claude mcp add awslabs.aws-transform-mcp-server -- uvx awslabs.aws-transform-mcp-server@latest
 ```
 
@@ -71,7 +71,7 @@ claude mcp add awslabs.aws-transform-mcp-server -- uvx awslabs.aws-transform-mcp
 
 Add to `~/.kiro/settings/mcp.json`:
 
-```
+```json
 {
   "mcpServers": {
     "awslabs.aws-transform-mcp-server": {

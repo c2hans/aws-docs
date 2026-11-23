@@ -50,7 +50,7 @@ A notify code configuration is a reusable passcode policy and message-template s
 
 1. The response resembles the following:
 
-   ```
+   ```json
    {
        "notifyCodeConfiguration": {
            "notifyCodeConfigurationId": "cc-3bnvvqhwq05xr3fkj",

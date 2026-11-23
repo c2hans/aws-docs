@@ -159,7 +159,7 @@ Valid pattern: `^$|\+[0-9]+`
 
 The following example CLI command creates a `ConnectorDefinition` with an initial version that contains the Twilio Notifications connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -230,7 +230,7 @@ Type: `string`
 Valid pattern: `.+`
 **Example input**
 
-```
+```json
 {
     "request": {
         "recipient": {
@@ -286,7 +286,7 @@ Type: `string`
 Valid pattern: `.+`
 **Example input**
 
-```
+```json
 {
     "request": {
         "recipient": {
@@ -311,7 +311,7 @@ This connector publishes status information as output data on an MQTT topic.
 
 **Example output: Success**
 
-```
+```json
 {
     "response": {
         "status": "success",
@@ -330,7 +330,7 @@ This connector publishes status information as output data on an MQTT topic.
 
 **Example output: Failure**
 
-```
+```json
 {
     "response": {
         "status": "fail",
@@ -344,7 +344,7 @@ This connector publishes status information as output data on an MQTT topic.
 ```
 The `payload` property in the output is the response from the Twilio API when the message is sent. If the connector detects that the input data is invalid (for example, it doesn't specify a required input field), the connector returns an error and sets the value to `None`. The following are example payloads:
 
-```
+```json
 {
     'from_number':'+19999999999',
     'messages': {
@@ -355,7 +355,7 @@ The `payload` property in the output is the response from the Twilio API when th
 }
 ```
 
-```
+```json
 {
     'from_number':'+19999999999',
     'messages': {
@@ -405,7 +405,7 @@ The [Getting started with Greengrass connectors (console)](connectors-console.md
 
 The following example Lambda function sends an input message to the connector. This example triggers a text message.
 
-```
+```python
 import greengrasssdk
 import json
 

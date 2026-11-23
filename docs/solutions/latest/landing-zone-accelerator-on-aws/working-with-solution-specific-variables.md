@@ -38,7 +38,7 @@ As of version 1.4.0 of this solution, the `ACCELERATOR_PREFIX` and associated va
 
 The following policy sample shows how you can implement the variables:
 
-```
+```yaml
 {
   "Version": "2012-10-17",
   "Statement": [

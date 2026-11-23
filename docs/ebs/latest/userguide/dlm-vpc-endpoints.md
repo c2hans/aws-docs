@@ -27,7 +27,7 @@ For more information, see [ Controlling access to services with VPC endpoints](h
 
 The following is an example of an endpoint policy for Amazon EBS. When attached to an endpoint, this policy grants all users permission to get summary information about Amazon Data Lifecycle Manager policies.
 
-```
+```json
 {
   "Statement": [{
     "Action": "dlm:GetLifecyclePolicies",

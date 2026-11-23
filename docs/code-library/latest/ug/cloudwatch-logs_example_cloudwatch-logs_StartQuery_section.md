@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatchLogs/LargeQuery#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Starts a CloudWatch Logs Insights query.
     /// </summary>
@@ -73,7 +73,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-logs#code-examples).
 
-```
+```javascript
   /**
    * Wrapper for the StartQueryCommand. Uses a static query string
    * for consistency.
@@ -113,7 +113,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch-logs#code-examples).
 
-```
+```python
     def perform_query(self, date_range):
         """
         Performs the actual CloudWatch log query.
@@ -193,7 +193,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwl#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_log_group_name = '/aws/lambda/my-function'
         " iv_query_string = 'fields @timestamp, @message | sort @timestamp desc | limit 20'

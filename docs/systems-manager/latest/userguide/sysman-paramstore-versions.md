@@ -82,7 +82,7 @@ Here is an example for specifying version 2 of a parameter named `MyRunCommandPa
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 schemaVersion: '2.2'
 description: Run a shell script or specify the commands to run.
@@ -103,7 +103,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "schemaVersion": "2.2",
     "description": "Run a shell script or specify the commands to run.",

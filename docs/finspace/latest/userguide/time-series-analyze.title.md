@@ -14,7 +14,7 @@ At this stage, a prepared dataset of features is ready for application of techni
 ## Acceleration bands (ABANDS)
 <a name="_acceleration_bands_abands"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.abands(tenor, time_col_name, price_col_name, high_col_name, low_col_name)
 ```
 
@@ -34,7 +34,7 @@ The Acceleration Bands (ABANDS) created by Price Headley plots upper and lower e
 ## Accumulation/Distribution (AD)
 <a name="_accumulationdistribution_ad"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.acc_dist_indicator(time_col_name,price_col_name, high_col_name, low_col_name, volume_col_name)
 ```
 
@@ -54,7 +54,7 @@ The Accumulation/Distribution (AD) study attempts to quantify the amount of volu
 ## Average directional movement index rating (ADXR)
 <a name="_average_directional_movement_index_rating_adxr"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.adrx_indicator(adx_period, period, time_col_name, price_col_name, high_col_name, low_col_name)
 ```
 
@@ -75,7 +75,7 @@ The Average Directional Movement Index Rating (ADXR) is an element of the Direct
 ## Average directional movement index (ADX)
 <a name="_average_directional_movement_index_adx"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.adx_indicator(tenor, time_col_name, price_col_name, high_col_name, low_col_name)
 ```
 
@@ -95,7 +95,7 @@ The Average Directional Movement Index (ADX) is designed to quantify trend stren
 ## Moving average convergence divergence (MACD)
 <a name="_moving_average_convergence_divergence_macd"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.apo_indicator(short_tenor, long_tenor, time_col_name, input_array_col_name)
 ```
 
@@ -114,7 +114,7 @@ The Moving Average Convergence Divergence (MACD) was developed by Gerald Appel, 
 ## Aroon down indicator
 <a name="_aroon_down_indicator"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.aroon_down_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -132,7 +132,7 @@ aws.finspace.timeseries.spark.analytics.aroon_down_indicator(tenor, time_col_nam
 ## Aroon oscillator
 <a name="_aroon_oscillator"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.aroon_oscillator(tenor, time_col_name, price_col_name)
 ```
 
@@ -150,7 +150,7 @@ The Aroon Oscillator is a trend-following indicator that uses aspects of the Aro
 ## Aroon up indicator
 <a name="_aroon_up_indicator"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.aroon_up_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -168,7 +168,7 @@ aws.finspace.timeseries.spark.analytics.aroon_up_indicator(tenor, time_col_name,
 ## Average true range (ATR)
 <a name="_average_true_range_atr"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.average_true_range(tenor, time_col_name, price_col_name, high_col_name, low_col_name)
 ```
 
@@ -186,7 +186,7 @@ The Average True Range (ATR) study measures the size of the period's range, and 
 ## Bollinger band (BBANDS)
 <a name="_bollinger_band_bbands"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.bollinger_bands(tenor, no_std, time_col_name, price_col_name, high_col_name, low_col_name)
 ```
 
@@ -207,7 +207,7 @@ The Bollinger Band (BBANDS) study created by John Bollinger plots upper and lowe
 ## Chaikin money flow
 <a name="_chaikin_money_flow"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.chaiken_money_flow_indicator(tenor, time_col_name, price_col_name, high_col_name, low_col_name, vol ume_col_name)
 ```
 
@@ -228,7 +228,7 @@ Developed by Marc Chaikin, Chaikin Money Flow measures the amount of Money Flow 
 ## Chaikens volatility indicator
 <a name="_chaikens_volatility_indicator"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.chaikens_volatility_indicator(tenor, time_col_name, high_col_name, low_col_name)
 ```
 
@@ -246,7 +246,7 @@ Marc Chaikin's Volatility indicator compares the spread between a security's hig
 ## Chande momentum indicator
 <a name="_chande_momentum_indicator"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.cmo_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -264,7 +264,7 @@ The Chande Momentum Oscillator (CMO) developed by Tushar Chande attempts to capt
 ## Commodity channel index (CCI)
 <a name="_commodity_channel_index_cci"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.commodity_channel_index(tenor, time_col_name, price_col_name, high_col_name, low_col_name)
 ```
 
@@ -284,7 +284,7 @@ The Commodity Channel Index (CCI) compares the current mean price with the avera
 ## Coppock curve
 <a name="_coppock_curve"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.coppock_curve_indicator(roc1_period, roc2_period, wma_period,  time_col_name, price_col_name)
 ```
 
@@ -304,7 +304,7 @@ The Coppock Curve is a long-term price momentum indicator used primarily to reco
 ## Debug UDF call
 <a name="_debug_udf_call"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.debug_udf_call(tenor, time_col_name, *kwargs)
 ```
 
@@ -313,7 +313,7 @@ aws.finspace.timeseries.spark.analytics.debug_udf_call(tenor, time_col_name, *kw
 ## Directional movement indicators (DMI)
 <a name="_directional_movement_indicators_dmi"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.dmi_indicator(tenor, time_col_name, price_col_name, high_col_name, low_col_name)
 ```
 
@@ -333,7 +333,7 @@ The Directional Movement Indicators (DMI) are components of the Directional Move
 ## Donchian channels
 <a name="_donchian_channels"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.donchian_channel_indicator(tenor, time_col_name, high_col_name, low_col_name)
 ```
 
@@ -352,7 +352,7 @@ Donchian Channels are three lines generated by moving average calculations that 
 ## Double exponential moving average (DEMA)
 <a name="_double_exponential_moving_average_dema"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.double_exponential_moving_average(tenor, time_col_name, price_col_name)
 ```
 
@@ -368,7 +368,7 @@ The Double Exponential Moving Average (DEMA) by Patrick Mulloy attempts to offer
 ## Detrended price oscillator (DPO)
 <a name="_detrended_price_oscillator_dpo"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.dpo_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -387,7 +387,7 @@ A detrended price oscillator is an oscillator that strips out price trends in an
 ## Ease of movement indicator
 <a name="_ease_of_movement_indicator"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.ease_of_movement_indicator(tenor, time_col_name, high_col_name, low_col_name, vol- ume_col_name, scale=1000000)
 ```
 
@@ -408,7 +408,7 @@ Richard ArmsÃ¢ÂÂ Ease of Movement indicator is a technical study that at
 ## Elder-ray index
 <a name="_elder_ray_index"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.elder_ray_index_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -426,7 +426,7 @@ The Elder-Ray Index is a technical indicator developed by Dr. Alexander Elder th
 ## Exponential moving average
 <a name="_exponential_moving_average"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.exponential_moving_average(tenor, time_col_name, input_array_col_name)
 ```
 
@@ -444,7 +444,7 @@ Compute exponential moving average on entire data set.
 ## Stochastic fast (StochF)
 <a name="_stochastic_fast_stochf"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.fast_stock_oscillator(tenor, time_col_name, price_col_name,  high_col_name, low_col_name)
 ```
 
@@ -464,7 +464,7 @@ The Stochastic Fast (StochF) normalizes price as a percentage between 0 and 100.
 ## Fisher transform
 <a name="_fisher_transform"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.fisher_transformation_indicator(tenor, time_col_name, high_col_name, low_col_name)
 ```
 
@@ -482,7 +482,7 @@ The Fisher Transform is a technical indicator created by J.F. Ehlers that conver
 ## Force index
 <a name="_force_index"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.force_index_indicator(tenor, time_col_name, price_col_name, volume_col_name)
 ```
 
@@ -501,7 +501,7 @@ The force index is a technical indicator that measures the amount of power used 
 ## Hull moving average (HMA)
 <a name="_hull_moving_average_hma"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.hull_moving_average_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -519,7 +519,7 @@ The Hull Moving Average (HMA) was developed by Alan Hull for the purpose of redu
 ## Ichimoku study
 <a name="_ichimoku_study"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.ichimoku_indicator(time_col_name, price_col_name, short_period=9, medium_period=26, long_period=52)
 ```
 
@@ -539,7 +539,7 @@ The Ichimoku study was developed by Goichi Hosoda pre-World War II as a forecast
 ## Kaufman adaptive moving average (KAMA)
 <a name="_kaufman_adaptive_moving_average_kama"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.kama_indicator(time_col_name, price_col_name, er_period=10, fast_ema_period=30, slow_ema_period=2)
 ```
 
@@ -559,7 +559,7 @@ Developed by Perry Kaufman, Kaufman's Adaptive Moving Average (KAMA) is a moving
 ## Keltner channel
 <a name="_keltner_channel"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.keltner_indicator(time_col_name, price_col_name, high_col_name, low_col_name, atr_factor=2, ewm_tenor=20, atr_tenor=20)
 ```
 
@@ -581,7 +581,7 @@ The Keltner Channel was introduced in 1960 by Chester W. Keltner in his book **H
 ## Klinger oscillator indicator
 <a name="_klinger_oscillator_indicator"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.klinger_oscillator_indicator(short_period, long_period, time_col_name, price_col_name, high_col_name, low_col_name, volume_col_name)
 ```
 
@@ -603,7 +603,7 @@ The indicator was developed by Stephen Klinger to determine the long-term trend 
 ## Linear regression
 <a name="_linear_regression"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.linear_regression(tenor, time_col_name, input1_col_name, input2_col_name)
 ```
 
@@ -622,7 +622,7 @@ Takes two arrays of asset prices and then produces slope and intercept, where in
 ## Linear weighted moving average
 <a name="_linear_weighted_moving_average"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.linear_weighted_moving_average(tenor, time_col_name, price_col_name)
 ```
 
@@ -640,7 +640,7 @@ Learn [more](https://www.investopedia.com/terms/l/linearlyweightedmovingaverage.
 ## Mass index
 <a name="_mass_index"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.mass_index_indicator(ema_period, sum_period, time_col_name, high_col_name, low_col_name)
 ```
 
@@ -658,7 +658,7 @@ Mass index is a form of technical analysis that examines the range between high 
 ## Max indicator
 <a name="_max_indicator"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.max_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -676,7 +676,7 @@ Compute max over look back period
 ## Money flow indicator
 <a name="_money_flow_indicator"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.mf_indicator(tenor, time_col_name, price_col_name, high_col_name, low_col_name, vol ume_col_name)
 ```
 
@@ -697,7 +697,7 @@ The Money Flow Index (MFI) was developed by Gene Quong and Avrum Soudack. It use
 ## MidPoint indicator
 <a name="_midpoint_indicator"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.midpoint_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -715,7 +715,7 @@ The Midpoint calculation is similar to the Midprice, except the highest and lowe
 ## MidPrice indicator
 <a name="_midprice_indicator"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.midprice_indicator(tenor, time_col_name, high_col_name, low_col_name)
 ```
 
@@ -734,7 +734,7 @@ The Midprice returns the midpoint value from two different input fields. The def
 ## Min
 <a name="_min"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.*min_indicator*(tenor, time_col_name, price_col_name)
 ```
 
@@ -752,7 +752,7 @@ Compute minimum value over look back period.
 ## Min and max over period
 <a name="_min_and_max_over_period"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.minmax_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -770,7 +770,7 @@ Min and Max over a tenor period.
 ## Momentum
 <a name="_momentum"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.momentum_indicator(tenor, time_col_name, input_array_col_name)
 ```
 
@@ -788,7 +788,7 @@ Compute momentum
 ## Moving average
 <a name="_moving_average"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.moving_average(tenor, time_col_name, input_array_col_name)
 ```
 
@@ -806,7 +806,7 @@ Compute moving average on window of tenor size utilizing function average\_at\_p
 ## Moving average convergence divergence (MACD)
 <a name="_moving_average_convergence_divergence_macd_2"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.moving_average_converge_diverge(short_tenor, long_tenor, time_col_name, input_array_col_name)
 ```
 
@@ -825,7 +825,7 @@ The Moving Average Convergence Divergence (MACD) was developed by Gerald Appel, 
 ## Moving average convergence divergence historical (MACD)
 <a name="_moving_average_convergence_divergence_historical_macd"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.moving_average_converge_diverge_hist(short_tenor, long_tenor, signal_line_tenor, time_col_name, input_array_col_name)
 ```
 
@@ -843,7 +843,7 @@ aws.finspace.timeseries.spark.analytics.moving_average_converge_diverge_hist(sho
 ## Normalized average true range (NATR)
 <a name="_normalized_average_true_range_natr"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.natr_indicator(tenor, time_col_name, price_col_name, high_col_name, low_col_name)
 ```
 
@@ -863,7 +863,7 @@ Normalized Average True Range (NATR) attempts to normalize the average true rang
 ## Directional movement (DM)
 <a name="_directional_movement_dm"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.neg_dm_indicator(time_col_name, high_col_name, low_col_name)
 ```
 
@@ -882,7 +882,7 @@ Directional Movement (DM) is defined as the largest part of the current period p
 ## Negative volume index (NVI)
 <a name="_negative_volume_index_nvi"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.negative_volume_indicator(period, time_col_name, price_col_name, volume_col_name)
 ```
 
@@ -901,7 +901,7 @@ The Negative Volume Index (NVI) is a cumulative indicator that uses the change i
 ## Balance volume (OBV)
 <a name="_balance_volume_obv"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.on_balance_volume(time_col_name, price_col_name, volume_col_name)
 ```
 
@@ -919,7 +919,7 @@ On Balance Volume (OBV) maintains a cumulative running total of the amount of vo
 ## Pairwise realized correlation
 <a name="_pairwise_realized_correlation"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.pairwise_realized_correlation(tenor, time_col_name, asset1_col_name,  asset2_col_name)
 ```
 
@@ -938,7 +938,7 @@ Takes two arrays of asset prices and then produces a pairwise correlation, retur
 ## Percent price oscillator (PPO)
 <a name="_percent_price_oscillator_ppo"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.percentage_price_oscillator(short_period, long_period,  signal_line_period, time_col_name, price_col_name)
 ```
 
@@ -958,7 +958,7 @@ Compute Percentage price oscillator. The Percent Price Oscillator (PPO) is based
 ## Directional movement (DM)
 <a name="_directional_movement_dm_2"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.pos_dm_indicator(time_col_name, high_col_name, low_col_name)
 ```
 
@@ -977,7 +977,7 @@ Directional Movement (DM) is defined as the largest part of the current period's
 ## Price channel
 <a name="_price_channel"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.price_channel_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -995,7 +995,7 @@ The Price Channel displays two lines, with the upper line representing the highe
 ## Price volume trend (PVT)
 <a name="_price_volume_trend_pvt"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.pvt_indicator(time_col_name, price_col_name, volume_col_name)
 ```
 
@@ -1013,7 +1013,7 @@ Compute price volume indicator. The Price Volume Trend (PVT) study attempts to q
 ## Realized correlation matrix
 <a name="_realized_correlation_matrix"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.realized_correlation_matrix(tenor, time_col_name, *kwargs)
 ```
 
@@ -1024,7 +1024,7 @@ aws.finspace.timeseries.spark.analytics.realized_correlation_matrix(tenor, time_
 ## Realized volatility
 <a name="_realized_volatility"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.realized_volatility(tenor, time_col_name, asset_price_col_name)
 ```
 
@@ -1042,7 +1042,7 @@ Takes in an array of asset prices and computes realized volatility. Learn [more]
 ## Realized volatiliy spread
 <a name="_realized_volatiliy_spread"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.realized_volatility_spread(tenor, time_col_name, asset1_col_name, asset2_col_name)
 ```
 
@@ -1061,7 +1061,7 @@ Compute realized volatility spread between two assets.
 ## Rate of change (ROC)
 <a name="_rate_of_change_roc"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.roc_indicator(tenor, time_col_name, input_array_col_name)
 ```
 
@@ -1079,7 +1079,7 @@ The Rate of Change (ROC) indicator compares the current price with the previous 
 ## Relative strength index (RSI)
 <a name="_relative_strength_index_rsi"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.rsi(tenor, time_col_name, input_array_col_name)
 ```
 
@@ -1097,7 +1097,7 @@ The Relative StrengthIndex (RSI) was published by J. Welles Wilder. The current 
 ## Parabolic stop and reverse (SAR)
 <a name="_parabolic_stop_and_reverse_sar"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.sar_indicator(time_col_name, price_col_name, high_col_name, low_col_name, period=2, af=0.02, sar_rising=True)
 ```
 
@@ -1117,7 +1117,7 @@ The Parabolic Stop and Reverse (SAR) calculates trailing stop points to use with
 ## Slow stock oscillator
 <a name="_slow_stock_oscillator"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.slow_stock_oscillator(tenor, time_col_name, price_col_name, high_col_name, low_col_name)
 ```
 
@@ -1137,7 +1137,7 @@ The Stochastic (Stoch) normalizes price as a percentage between 0 and 100. Norma
 ## Standard deviation indicator
 <a name="_standard_deviation_indicator"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.stddev_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -1155,7 +1155,7 @@ Compute standard deviation over a window.
 ## Stochastic RSI (StochRSI)
 <a name="_stochastic_rsi_stochrsi"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.stoch_rsi_indicator(rsi_tenor, tenor, time_col_name, price_col_name)
 ```
 
@@ -1174,7 +1174,7 @@ The Stochastic RSI (StochRSI) is an indicator used in technical analysis that ra
 ## Triple exponential moving average (T3)
 <a name="_triple_exponential_moving_average_t3"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.t3_ema_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -1196,7 +1196,7 @@ Where vFactor is a volume factor between 0 and 1 which determines how the moving
 ## Time series forecast (TSF)
 <a name="_time_series_forecast_tsf"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.time_series_forecast_indicator(tenor, scale, time_col_name, time_axis_col_name, price_col_name)
 ```
 
@@ -1216,7 +1216,7 @@ The Time Series Forecast (TSF) indicator displays the statistical trend of a sec
 ## True range
 <a name="_true_range"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.tr_indicator(time_col_name,  price_col_name, high_col_name, low_col_name)
 ```
 
@@ -1235,7 +1235,7 @@ Calculate True Range.
 ## Triangular simple moving average
 <a name="_triangular_simple_moving_average"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.trima_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -1253,7 +1253,7 @@ Triangular Simple Moving Average.
 ## Triple exponential moving average (TEMA)
 <a name="_triple_exponential_moving_average_tema"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.triple_exponential_moving_average(tenor,time_col_name, price_col_name)
 ```
 
@@ -1271,7 +1271,7 @@ The Triple Exponential Moving Average (TEMA) by Patrick Mulloy offers a moving a
 ## Triple exponential moving average oscillator (TRIX)
 <a name="_triple_exponential_moving_average_oscillator_trix"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.trix_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -1289,7 +1289,7 @@ The Triple Exponential Moving AverageOscillator (TRIX) by Jack Hutson is a momen
 ## Timeseries linear regression
 <a name="_timeseries_linear_regression"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.ts_linear_regression(tenor, scale, time_col_name, time_axis_col_name, value_axis_col_name)
 ```
 
@@ -1307,7 +1307,7 @@ Takes two arrays, the first is the time axis, and the second is the value axis a
 ## Typical price
 <a name="_typical_price"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.typical_price_indicator(tenor, time_col_name, price_col_name, high_col_name, low_col_name)
 ```
 
@@ -1327,7 +1327,7 @@ Typical Price calculation defined as `(High + Low + Close) / 3`.
 ## Ult oscillator
 <a name="_ult_oscillator"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.ult_osc_indicator(time_col_name, price_col_name, high_col_name, low_col_name)
 ```
 
@@ -1344,7 +1344,7 @@ aws.finspace.timeseries.spark.analytics.ult_osc_indicator(time_col_name, price_c
 ## Weighted close price
 <a name="_weighted_close_price"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.weighted_close_indicator(tenor, time_col_name, price_col_name, high_col_name, low_col_name)
 ```
 
@@ -1364,7 +1364,7 @@ Weighted Close Price calculation defined as `(High+ Low + 2*Close) / 4`
 ## Weighted linear regression
 <a name="_weighted_linear_regression"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.weighted_linear_regression(tenor, time_col_name, input_arr1_col_name_, input_arr2_col_name_, weights_col_name)
 ```
 
@@ -1384,7 +1384,7 @@ Takes three arrays, the first is the independent axis, and the second is the val
 ## Weighted TS linear regression
 <a name="_weighted_ts_linear_regression"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.weighted_ts_linear_regression(tenor, scale, time_col_name, time_axis_col_name, value_axis_col_name, weights_axis_col_name)
 ```
 
@@ -1405,7 +1405,7 @@ Takes three arrays, the first is the time axis, and the second is the value axis
 ## Welles wilder smoothing average (WWS)
 <a name="_welles_wilder_smoothing_average_wws"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.wilder_smoothing_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -1423,7 +1423,7 @@ The Welles Wilder's Smoothing Average (WWS) was developed by J. Welles Wilder, J
 ## %R
 <a name="_r"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.will_r_indicator(tenor, time_col_name, price_col_name, high_col_name, low_col_name)
 ```
 
@@ -1443,7 +1443,7 @@ Compute william %R indicator. The %R indicator was developed by Larry Williams a
 ## Rate of change (ROC100)
 <a name="_rate_of_change_roc100"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.ROC100_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -1461,7 +1461,7 @@ The Rate of Change (ROC100) indicator compares the current price with the previo
 ## Rate of change percentage (ROCP)
 <a name="_rate_of_change_percentage_rocp"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.ROCP_indicator(tenor, time_col_name, price_col_name)
 ```
 
@@ -1479,7 +1479,7 @@ The Rate of Change Percentage (ROCP) indicator compares the current price with t
 ## Rate of change rate (ROCR)
 <a name="_rate_of_change_rate_rocr"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.analytics.ROCR_indicator(tenor, time_col_name, price_col_name)
 ```
 

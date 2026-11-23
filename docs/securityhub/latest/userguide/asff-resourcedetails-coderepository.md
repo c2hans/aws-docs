@@ -10,7 +10,7 @@ The following example shows the AWS Security Finding Format (ASFF) syntax for th
 
 **Example**
 
-```
+```JSON
 "CodeRepository": {
     "ProviderType": "GITLAB_SELF_MANAGED",
     "ProjectName": "projectName",

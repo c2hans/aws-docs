@@ -26,7 +26,7 @@ The following code example shows how to use `Get-ECSClusterDetail`.
 **Tools for PowerShell V5**
 **Example 1: This cmdlet describes one or more of your ECS clusters.**
 
-```
+```powershell
 Get-ECSClusterDetail -Cluster "LAB-ECS-CL" -Include SETTINGS | Select-Object *
 ```
 **Output:**
@@ -49,7 +49,7 @@ The following code example shows how to use `Get-ECSClusterList`.
 **Tools for PowerShell V5**
 **Example 1: This cmdlet returns a list of existing ECS clusters.**
 
-```
+```powershell
 Get-ECSClusterList
 ```
 **Output:**
@@ -68,12 +68,12 @@ The following code example shows how to use `Get-ECSClusterService`.
 **Tools for PowerShell V5**
 **Example 1: This example lists all services running in your default cluster.**
 
-```
+```powershell
 Get-ECSClusterService
 ```
 **Example 2: This example lists all services running in the specified cluster.**
 
-```
+```powershell
 Get-ECSClusterService -Cluster myCluster
 ```
 +  For API details, see [ListServices](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -86,12 +86,12 @@ The following code example shows how to use `Get-ECSService`.
 **Tools for PowerShell V5**
 **Example 1: This example shows how to retrieve details of a specific service from your default cluster.**
 
-```
+```powershell
 Get-ECSService -Service my-hhtp-service
 ```
 **Example 2: This example shows how to retrieve details of a specific service running in the named cluster.**
 
-```
+```powershell
 Get-ECSService -Cluster myCluster -Service my-hhtp-service
 ```
 +  For API details, see [DescribeServices](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -104,7 +104,7 @@ The following code example shows how to use `New-ECSCluster`.
 **Tools for PowerShell V5**
 **Example 1: This cmdlet creates a new Amazon ECS cluster. **
 
-```
+```powershell
 New-ECSCluster -ClusterName "LAB-ECS-CL" -Setting @{Name="containerInsights"; Value="enabled"}
 ```
 **Output:**
@@ -135,12 +135,12 @@ The following code example shows how to use `New-ECSService`.
 **Tools for PowerShell V5**
 **Example 1: This example command creates a service in your default cluster called `ecs-simple-service`. The service uses the `ecs-demo` task definition and it maintains 10 instantiations of that task.**
 
-```
+```powershell
 New-ECSService -ServiceName ecs-simple-service -TaskDefinition ecs-demo -DesiredCount 10
 ```
 **Example 2: This example command creates a service behind a load balancer in your default cluster called `ecs-simple-service`. The service uses the `ecs-demo` task definition and it maintains 10 instantiations of that task.**
 
-```
+```powershell
 $lb = @{
     LoadBalancerName = "EC2Contai-EcsElast-S06278JGSJCM"
     ContainerName = "simple-demo"
@@ -158,7 +158,7 @@ The following code example shows how to use `Remove-ECSCluster`.
 **Tools for PowerShell V5**
 **Example 1: This cmdlet deletes the specified ECS cluster. You must deregister all container instances from this cluster before you may delete it. **
 
-```
+```powershell
 Remove-ECSCluster -Cluster "LAB-ECS"
 ```
 **Output:**
@@ -179,12 +179,12 @@ The following code example shows how to use `Remove-ECSService`.
 **Tools for PowerShell V5**
 **Example 1: Deletes the service named 'my-http-service' in the default cluster. The service must have a desired count and running count of 0 before you can delete it. You are prompted for confirmation before the command proceeds. To bypass the confirmation prompt add the -Force switch.**
 
-```
+```powershell
 Remove-ECSService -Service my-http-service
 ```
 **Example 2: Deletes the service named 'my-http-service' in the named cluster.**
 
-```
+```powershell
 Remove-ECSService -Cluster myCluster -Service my-http-service
 ```
 +  For API details, see [DeleteService](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -197,7 +197,7 @@ The following code example shows how to use `Update-ECSClusterSetting`.
 **Tools for PowerShell V5**
 **Example 1: This cmdlet modifies the settings to use for an ECS cluster.**
 
-```
+```powershell
 Update-ECSClusterSetting -Cluster "LAB-ECS-CL" -Setting @{Name="containerInsights"; Value="disabled"}
 ```
 **Output:**
@@ -228,12 +228,12 @@ The following code example shows how to use `Update-ECSService`.
 **Tools for PowerShell V5**
 **Example 1: This example command updates the `my-http-service` service to use the `amazon-ecs-sample` task definition.**
 
-```
+```powershell
 Update-ECSService -Service my-http-service -TaskDefinition amazon-ecs-sample
 ```
 **Example 2: This example command updates the desired count of the `my-http-service` service to 10.**
 
-```
+```powershell
 Update-ECSService -Service my-http-service -DesiredCount 10
 ```
 +  For API details, see [UpdateService](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

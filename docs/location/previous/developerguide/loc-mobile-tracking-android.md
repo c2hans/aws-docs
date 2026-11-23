@@ -22,7 +22,7 @@ This section covers the following topics for the Amazon Location mobile tracking
 
 To install the SDK, add the following lines to the dependencies section of your build.gradle file in Android Studio:
 
-```
+```js
 implementation("software.amazon.location:tracking:0.0.1")
 implementation("software.amazon.location:auth:0.0.1")
 implementation("com.amazonaws:aws-android-sdk-location:2.72.0")
@@ -38,7 +38,7 @@ This procedure assumes you have imported the library mentioned in the [Installat
 
 1. Import the following classes in your code:
 
-   ```
+   ```Kotlin
    import software.amazon.location.tracking.LocationTracker
    import software.amazon.location.tracking.config.LocationTrackerConfig
    import software.amazon.location.tracking.util.TrackingSdkLogLevel
@@ -49,7 +49,7 @@ This procedure assumes you have imported the library mentioned in the [Installat
 
 1. Next create an `AuthHelper`, since the `LocationCredentialsProvider` parameter is required for creating a `LocationTracker` object:
 
-   ```
+   ```Kotlin
    // Create an authentication helper using credentials from Cognito
    val authHelper = AuthHelper(applicationContext)
    val locationCredentialsProvider : LocationCredentialsProvider = authHelper.authenticateWithCognitoIdentityPool("My-Cognito-Identity-Pool-Id")
@@ -57,7 +57,7 @@ This procedure assumes you have imported the library mentioned in the [Installat
 
 1. Now, use the `LocationCredentialsProvider` and `LocationTrackerConfig` to create a `LocationTracker` object:
 
-   ```
+   ```Kotlin
    val config = LocationTrackerConfig(
        trackerName = "MY-TRACKER-NAME",
        logLevel = TrackingSdkLogLevel.DEBUG,
@@ -84,7 +84,7 @@ The Amazon Location mobile tracking Android SDK has three inbuilt location filte
 
 This example adds filters in the `LocationTracker` at the creation time:
 
-```
+```Kotlin
 val config = LocationTrackerConfig(
     trackerName = "MY-TRACKER-NAME",
     logLevel = TrackingSdkLogLevel.DEBUG,
@@ -104,7 +104,7 @@ locationTracker = LocationTracker(
 
 This example enables and disables filter at runtime with `LocationTracker`:
 
-```
+```Kotlin
 // To enable the filter
 locationTracker?.enableFilter(TimeLocationFilter())
 
@@ -196,7 +196,7 @@ The following code sample shows the mobile tracking SDK functionality.
 
 This example uses the `LocationTracker` to start and stop tracking in background:
 
-```
+```Kotlin
 // For starting the location tracking
 locationTracker?.startBackground(
 BackgroundTrackingMode.ACTIVE_TRACKING,

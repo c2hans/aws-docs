@@ -63,7 +63,7 @@ You can set the fragment length using either the console or the JSON job specifi
 **To find the **Fragment length** setting (JSON job specification)**
 + Find `FragmentLength` as a child of `OutputGroupSettings`, as in the following example.
 
-  ```
+  ```json
   {
     "Settings": {
       ...
@@ -104,7 +104,7 @@ Your ABR stack has multiple outputs. Make sure to set these values in each outpu
 
 Find `GopClosedCadence`, `GopSize`, `FramerateNumerator`, and `FramerateDenominator` as children of the codec settings, as in the following example. In this example, the codec is `H_264`, so the parent of the codec settings is `H264Settings`.
 
-  ```
+  ```json
   {
     "Settings": {
       ...

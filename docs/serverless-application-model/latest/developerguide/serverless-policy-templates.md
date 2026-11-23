@@ -22,7 +22,7 @@ For every policy template you specify in your AWS SAM template file, you must al
 ### YAML
 <a name="serverless-policy-template-syntax.yaml"></a>
 
-```
+```yaml
 MyFunction:
   Type: AWS::Serverless::Function
   Properties:

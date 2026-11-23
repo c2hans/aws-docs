@@ -47,7 +47,7 @@ aws emr create-cluster --use-default-roles --release-label emr-5.34.0 --instance
 
 The following program excerpt shows how to supply a configuration using the AWS SDK for Java.
 
-```
+```java
 Application hive = new Application().withName("Hive");
 
 Map<String,String> hiveProperties = new HashMap<String,String>();

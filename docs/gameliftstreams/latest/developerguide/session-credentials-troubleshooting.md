@@ -30,7 +30,7 @@ This might happen if you delete or modify the IAM role's trust policy while the 
 **"Access denied" on iam:PassRole**
 The IAM principal calling `StartStreamSession` does not have `iam:PassRole` permission for the specified role. Add the following statement to the caller's IAM policy:
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": "iam:PassRole",

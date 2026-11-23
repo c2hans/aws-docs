@@ -41,7 +41,7 @@ To give your application access to your Firehose stream, use a policy similar to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -87,7 +87,7 @@ If you choose Amazon MSK as the source for your Firehose stream, you must specif
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -113,7 +113,7 @@ Make sure that this role that grants Amazon Data Firehose permissions to ingest 
 
 If your Firehose stream performs data-format conversion, Amazon Data Firehose references table definitions stored in AWS Glue. To give Amazon Data Firehose the necessary access to AWS Glue, add the following statement to your policy. For information on how to find the ARN of the table, see [Specifying AWS Glue Resource ARNs](https://docs.aws.amazon.com/glue/latest/dg/glue-specifying-resource-arns.html).
 
-```
+```JSON
 {
     "Sid": "",
     "Effect": "Allow",
@@ -149,7 +149,7 @@ Use the following access policy to enable Amazon Data Firehose to access your S3
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -278,7 +278,7 @@ Sign in to the AWS Management Console and open the IAM console at [https://conso
 
 Create a policy and choose **JSON** in the policy editor. Add the following inline policy that grants the required permissions.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -415,7 +415,7 @@ Create a policy and choose **JSON** in the policy editor. Add the following inli
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -574,7 +574,7 @@ Use the following access policy to enable Amazon Data Firehose to access your S3
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement":
@@ -740,7 +740,7 @@ Use the following access policy to enable Amazon Data Firehose to access your S3
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -881,7 +881,7 @@ Use the following access policy to enable Amazon Data Firehose to access your S3
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -1029,7 +1029,7 @@ You must have an IAM role before you create a Firehose stream. Firehose assumes 
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement":
@@ -1155,7 +1155,7 @@ When you're creating a Firehose stream from your Firehose account (for example, 
 
    1. If the cluster already has a policy configured, add the following permissions to the existing policy:
 
-      ```
+      ```json
       {
             "Effect": "Allow",
             "Principal": {
@@ -1214,7 +1214,7 @@ In Account B when you're creating your Firehose stream, you must have an IAM rol
 
 The following is what gets configured by the AWS Management Console:
 
-```
+```json
 {
     "Sid": "",
     "Effect": "Allow",
@@ -1265,7 +1265,7 @@ The Amazon S3 bucket specified in the access policy is owned by account B in thi
 
 ****
 
-   ```
+   ```json
    {
 
        "Version":"2012-10-17",
@@ -1313,7 +1313,7 @@ You can use the AWS CLI or the Amazon Data Firehose APIs to create a Firehose st
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -1361,7 +1361,7 @@ For the `CreateDeliveryStream` operation, use the `aws:RequestTag` condition key
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -1392,7 +1392,7 @@ For the `TagDeliveryStream` operation, use the `aws:TagKeys` condition key. In t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1422,7 +1422,7 @@ For the `UntagDeliveryStream` operation, use the `aws:TagKeys` condition key. In
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

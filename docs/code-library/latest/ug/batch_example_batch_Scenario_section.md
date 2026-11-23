@@ -23,7 +23,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 Run an interactive scenario demonstrating AWS Batch features.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.batch.model.BatchException;
@@ -554,7 +554,7 @@ public class BatchScenario {
 ```
 A wrapper class for AWS Batch SDK methods.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.core.client.config.ClientOverrideConfiguration;
@@ -1152,7 +1152,7 @@ public class BatchActions {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class BatchScenario:
     """Runs the AWS Batch Basics scenario."""
 
@@ -1528,7 +1528,7 @@ class BatchScenario:
 ```
 Create a class that wraps Batch operations.
 
-```
+```python
 class BatchWrapper:
     """Encapsulates AWS Batch operations."""
 

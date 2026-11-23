@@ -28,7 +28,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-certificateauthorities-configuration-expiry-get-cli"></a>
 
-```
+```bash
 aws greengrass get-group-certificate-configuration \
   --group-id <value>  \
   [--cli-input-json <value>] \
@@ -37,7 +37,7 @@ aws greengrass get-group-certificate-configuration \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string"
 }
@@ -50,7 +50,7 @@ cli-input-json format:
 Success. The response body contains the PKI configuration.
  [ GroupCertificateConfiguration](definitions-groupcertificateconfiguration.md)
 
-```
+```json
 {
 "GroupId": "string",
 "CertificateAuthorityExpiryInMilliseconds": "string",
@@ -74,7 +74,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -110,7 +110,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -160,7 +160,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "CertificateExpiryInMilliseconds": "string"
 }
@@ -183,7 +183,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-certificateauthorities-configuration-expiry-put-cli"></a>
 
-```
+```bash
 aws greengrass update-group-certificate-configuration \
   --group-id <value> \
   [--certificate-expiry-in-milliseconds <value>]  \
@@ -193,7 +193,7 @@ aws greengrass update-group-certificate-configuration \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "CertificateExpiryInMilliseconds": "string"
@@ -207,7 +207,7 @@ cli-input-json format:
 Success. The response body contains the PKI configuration.
  [ GroupCertificateConfiguration](definitions-groupcertificateconfiguration.md)
 
-```
+```json
 {
 "GroupId": "string",
 "CertificateAuthorityExpiryInMilliseconds": "string",
@@ -231,7 +231,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -267,7 +267,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

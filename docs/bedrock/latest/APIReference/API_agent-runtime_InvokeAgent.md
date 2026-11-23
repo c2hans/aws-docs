@@ -515,7 +515,7 @@ HTTP Status Code: 400
 
 The following example inquires the agent to get the weather for Seattle.
 
-```
+```json
 POST https://bedrock-agent-runtime.us-east-1.amazonaws.com/agents/AGENT12345/agentAliases/TSTALIASID/sessions/abb/text
 
 {
@@ -531,7 +531,7 @@ The following example shows a response from an agent that has invoked an action 
 + Defined with an OpenAPI schema
 + Configured to return control to the agent developer
 
-```
+```json
 HTTP/1.1 200
 x-amzn-bedrock-agent-content-type: application/json
 x-amz-bedrock-agent-session-id: session0
@@ -570,7 +570,7 @@ The following example shows a request in which the results returned in the `Invo
 
 The `invocationId` must match the `invocationId` that was returned in the response.
 
-```
+```json
 POST https: //bedrock-agent-runtime.us-east-1.amazonaws.com/agents/AGENT12345/agentAliases/TSTALIASID/sessions/abb/text
 
 {
@@ -600,7 +600,7 @@ The following example shows a response from an agent that has invoked an action 
 + Defined with function details
 + Configured to return control to the agent developer
 
-```
+```json
 HTTP/1.1 200
 x-amzn-bedrock-agent-content-type: application/json
 x-amz-bedrock-agent-session-id: session0
@@ -638,7 +638,7 @@ The following example shows a request in which the results returned in the `Invo
 
 The `invocationId` must match the `invocationId` that was returned in the response.
 
-```
+```json
 POST https://bedrock-agent-runtime.us-east-1.amazonaws.com/agents/AGENT12345/agentAliases/TSTALIASID/sessions/abb/text
 
 {

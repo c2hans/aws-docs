@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
 ![A diagram depicting the classic model for packaging and delivering software solutions.](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/classic-model.png)
 
+*The classic model for packaging and delivering software solutions *
+
  In this diagram, we’ve described a collection of customer environments. These customers represent the different companies or entities that have purchased a vendor’s software. Each of these customers is essentially running in a standalone environment where they have installed a software provider’s product.
 
  In this mode, each customer’s installation is treated as a standalone environment that is dedicated to that customer. This means that customers view themselves as the owners of these environments, potentially requesting one-off customization or unique configurations that support their needs.

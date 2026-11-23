@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "clientId": "{{20 to 64 letters or digits}}",
   "clientSecret": "{{current client secret}}",
@@ -38,7 +38,7 @@ For self-rotation, this value must be the Management API of the tenant, `https:/
 
 The following are the metadata fields for Auth0 OAuth Client Secret:
 
-```
+```json
 {
   "adminSecretArn": "arn:aws:secretsmanager:us-east-1:111122223333:secret:{{Auth0AdminApplication}}"
 }

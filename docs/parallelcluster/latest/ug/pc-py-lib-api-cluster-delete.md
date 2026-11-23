@@ -6,7 +6,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 # `delete_cluster`
 
-```
+```python
 delete_cluster(cluster_name, region, wait)
 ```
 

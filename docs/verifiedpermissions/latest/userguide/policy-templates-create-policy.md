@@ -61,7 +61,7 @@ It also uses the following `definition.txt` file to supply the value for the `de
 
 The output shows both the resource, which it gets from the template, and the principal, which it gets from the definition parameter
 
-```
+```bash
 $ aws verifiedpermissions create-policy \
     --definition file://definition.txt
     --policy-store-id PSEXAMPLEabcdefg111111

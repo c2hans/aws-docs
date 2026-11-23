@@ -46,7 +46,7 @@ The following object model demonstrates how to specify `ENCRYPT_AND_SIGN`, `SIGN
 **Note**
 To use the `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` cryptographic action, you must use version 3.3 or later of the AWS Database Encryption SDK. Deploy the new version to all readers before [updating your data model](ddb-update-data-model.md) to include `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`.
 
-```
+```cs
 var attributeActionsOnEncrypt = new Dictionary<string, CryptoAction>
 {
     ["partition_key"] = CryptoAction.SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT, // The partition attribute must be signed
@@ -65,7 +65,7 @@ When you use the AWS Database Encryption SDK, you must explicitly define an encr
 
 The following snippet defines a DynamoDB table encryption configuration using the low-level AWS Database Encryption SDK for DynamoDB API and allowed unsigned attributes defined by a distinct prefix.
 
-```
+```cs
 Dictionary<String, DynamoDbTableEncryptionConfig> tableConfigs =
     new Dictionary<String, DynamoDbTableEncryptionConfig>();
 DynamoDbTableEncryptionConfig config = new DynamoDbTableEncryptionConfig
@@ -105,7 +105,7 @@ The `algorithmSuiteId` defines which algorithm suite the AWS Database Encryption
 Unless you explicitly specify an alternative algorithm suite, the AWS Database Encryption SDK uses the [default algorithm suite](supported-algorithms.md#recommended-algorithms). The default algorithm suite uses the AES-GCM algorithm with key derivation, [digital signatures](concepts.md#digital-sigs), and [key commitment](concepts.md#key-commitment). Although the default algorithm suite is likely to be suitable for most applications, you can choose an alternate algorithm suite. For example, some trust models would be satisfied by an algorithm suite without digital signatures. For information about the algorithm suites that the AWS Database Encryption SDK supports, see [Supported algorithm suites in the AWS Database Encryption SDK](supported-algorithms.md).
 To select the [AES-GCM algorithm suite without ECDSA digital signatures](supported-algorithms.md#other-algorithms), include the following snippet in your table encryption configuration.
 
-```
+```cs
 AlgorithmSuiteId = DBEAlgorithmSuiteId.ALG_AES_256_GCM_HKDF_SHA512_COMMIT_KEY_SYMSIG_HMAC_SHA384
 ```
 

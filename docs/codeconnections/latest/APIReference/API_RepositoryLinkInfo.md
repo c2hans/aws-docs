@@ -13,7 +13,7 @@ Information about the repository link resource, such as the repository link ARN,
 The Amazon Resource Name (ARN) of the connection associated with the repository link.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `arn:aws(-[\w]+)*:.+:.+:[0-9]{12}:.+`
+Pattern: `arn:aws(-[\w]+)*:(codestar-connections|codeconnections):[a-z0-9\-]+:[0-9]{12}:connection\/[\w\-]+`
 Required: Yes
 
  ** OwnerId **   <a name="codeconnections-Type-RepositoryLinkInfo-OwnerId"></a>
@@ -26,7 +26,7 @@ Required: Yes
  ** ProviderType **   <a name="codeconnections-Type-RepositoryLinkInfo-ProviderType"></a>
 The provider type for the connection, such as GitHub, associated with the repository link.
 Type: String
-Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps`
+Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps | GitHubEnterpriseCloudDataResidency`
 Required: Yes
 
  ** RepositoryLinkArn **   <a name="codeconnections-Type-RepositoryLinkInfo-RepositoryLinkArn"></a>

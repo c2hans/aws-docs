@@ -31,7 +31,7 @@ A `SUPER` expression or column.
 
 To check if `{"name": "Joe"}` is an object using the IS\_OBJECT function, use the following example.
 
-```
+```sql
 CREATE TABLE t(s super);
 
 INSERT INTO t VALUES (JSON_PARSE('{"name": "Joe"}'));

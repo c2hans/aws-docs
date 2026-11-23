@@ -24,14 +24,14 @@ For request and response details, see the [get\_object()](https://docs.aws.amazo
 
  **Imports**
 
-```
+```python
 from aws_sdk_s3 import S3Client
 from aws_sdk_s3.models import NoSuchKey
 ```
 
  **Code**
 
-```
+```python
 def read_object_if_exists(
     client: S3Client, bucket_name: str, key: str
 ) -> bytes | None:
@@ -53,14 +53,14 @@ For request and response details, see the [list\_objects\_v2()](https://docs.aws
 
  **Imports**
 
-```
+```python
 from aws_sdk_s3 import S3Client
 from aws_sdk_s3.models import NoSuchBucket
 ```
 
  **Code**
 
-```
+```python
 def first_keys(client: S3Client, bucket_name: str) -> list[str] | None:
     """Return up to 10 keys, or None if the bucket doesn't exist."""
     try:

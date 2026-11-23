@@ -15,7 +15,7 @@ Use the [CreateComponentVersion](https://docs.aws.amazon.com/greengrass/v2/APIRe
 
 1. Create a file called `lambda-function-component.json`, and then copy the following JSON object into the file. Replace the `lambdaArn` with the ARN of the Lambda function to import.
 
-   ```
+   ```json
    {
      "lambdaFunction": {
        "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1"
@@ -27,7 +27,7 @@ You must specify an ARN that includes the version of the function to import. You
 
 1. (Optional) Specify the name (`componentName`) of the component. If you omit this parameter, AWS IoT Greengrass creates the component with the name of the Lambda function.
 
-   ```
+   ```json
    {
      "lambdaFunction": {
        "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -41,7 +41,7 @@ You must specify an ARN that includes the version of the function to import. You
 <a name="component-version-uniqueness-para"></a>Each component version that you upload must be unique. Make sure that you upload the correct component version, because you can't edit it after you upload it.
 <a name="semver-para"></a>AWS IoT Greengrass uses semantic versions for components. Semantic versions follow a *major*.*minor*.*patch* number system. For example, version `1.0.0` represents the first major release for a component. For more information, see the [semantic version specification](https://semver.org/).
 
-   ```
+   ```json
    {
      "lambdaFunction": {
        "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -55,7 +55,7 @@ You must specify an ARN that includes the version of the function to import. You
 
    1. Add a list of platforms (`componentPlatforms`) to the Lambda function in `lambda-function-component.json`.
 
-      ```
+      ```json
       {
         "lambdaFunction": {
           "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -70,7 +70,7 @@ You must specify an ARN that includes the version of the function to import. You
 
    1. Add each supported platform to the list. Each platform has a friendly `name` to identify it and a map of attributes. The following example specifies that this function supports x86 devices that run Linux.
 
-      ```
+      ```json
       {
         "name": "{{Linux x86}}",
         "attributes": {
@@ -82,7 +82,7 @@ You must specify an ARN that includes the version of the function to import. You
 
       Your `lambda-function-component.json` might contain a document similar to the following example.
 
-      ```
+      ```json
       {
         "lambdaFunction": {
           "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -109,7 +109,7 @@ To import a Lambda function that you created to run on AWS IoT Greengrass V1, yo
 
    1. Add a map of component dependencies (`componentDependencies`) to the Lambda function in `lambda-function-component.json`.
 
-      ```
+      ```json
       {
         "lambdaFunction": {
           "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -141,7 +141,7 @@ To import a Lambda function that you created to run on AWS IoT Greengrass V1, yo
 
       The following example specifies that this Lambda function depends on any version in the first major version of the [stream manager component](stream-manager-component.md). The Lambda function component restarts when stream manager restarts or updates.
 
-      ```
+      ```json
       {
         "aws.greengrass.StreamManager": {
           "versionRequirement": "^1.0.0",
@@ -152,7 +152,7 @@ To import a Lambda function that you created to run on AWS IoT Greengrass V1, yo
 
       Your `lambda-function-component.json` might contain a document similar to the following example.
 
-      ```
+      ```json
       {
         "lambdaFunction": {
           "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -181,7 +181,7 @@ To import a Lambda function that you created to run on AWS IoT Greengrass V1, yo
 
    1. Add the Lambda parameters object (`componentLambdaParameters`) to the Lambda function in `lambda-function-component.json`.
 
-      ```
+      ```json
       {
         "lambdaFunction": {
           "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -217,7 +217,7 @@ To subscribe this function to messages from other Lambda functions or components
 
       1. Add the list of event sources (`eventSources`) to the Lambda function parameters.
 
-         ```
+         ```json
          {
            "lambdaFunction": {
              "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -259,7 +259,7 @@ To subscribe this function to messages from other Lambda functions or components
 
            The following example subscribes to AWS IoT Core MQTT on topics that match the `hello/world/+` topic filter.
 
-           ```
+           ```json
            {
              "topic": "hello/world/+",
              "type": "IOT_CORE"
@@ -268,7 +268,7 @@ To subscribe this function to messages from other Lambda functions or components
 
            Your `lambda-function-component.json` might look similar to the following example.
 
-           ```
+           ```json
            {
              "lambdaFunction": {
                "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -322,7 +322,7 @@ To subscribe this function to messages from other Lambda functions or components
 
       Your `lambda-function-component.json` might contain a document similar to the following example.
 
-      ```
+      ```json
       {
         "lambdaFunction": {
           "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -372,7 +372,7 @@ To subscribe this function to messages from other Lambda functions or components
 
       1. Add the Linux process parameters object (`linuxProcessParams`) to the Lambda parameters object in `lambda-function-component.json`.
 
-         ```
+         ```json
          {
            "lambdaFunction": {
              "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -431,7 +431,7 @@ To subscribe this function to messages from other Lambda functions or components
 
          1. Add the container parameters object (`containerParams`) to the Linux process parameters object in `lambda-function-component.json`.
 
-            ```
+            ```json
             {
               "lambdaFunction": {
                 "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -490,7 +490,7 @@ To subscribe this function to messages from other Lambda functions or components
 
             1. Add the list of volumes (`volumes`) to the container parameters.
 
-               ```
+               ```json
                {
                  "lambdaFunction": {
                    "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -557,7 +557,7 @@ To subscribe this function to messages from other Lambda functions or components
 
                Your `lambda-function-component.json` might contain a document similar to the following example.
 
-               ```
+               ```json
                {
                  "lambdaFunction": {
                    "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -621,7 +621,7 @@ To subscribe this function to messages from other Lambda functions or components
 
             1. Add the list of system devices (`devices`) to the container parameters.
 
-               ```
+               ```json
                {
                  "lambdaFunction": {
                    "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -695,7 +695,7 @@ To subscribe this function to messages from other Lambda functions or components
 
             Your `lambda-function-component.json` might contain a document similar to the following example.
 
-            ```
+            ```json
             {
               "lambdaFunction": {
                 "lambdaArn": "arn:aws:lambda:{{region}}:{{account-id}}:function:HelloWorld:1",
@@ -769,13 +769,13 @@ To subscribe this function to messages from other Lambda functions or components
 
 1. Run the following command to create the Lambda function component from `lambda-function-component.json`.
 
-   ```
+   ```bash
    aws greengrassv2 create-component-version --cli-input-json file://lambda-function-component.json
    ```
 
    The response looks similar to the following example if the request succeeds.
 
-   ```
+   ```json
    {
      "arn": "arn:aws:greengrass:{{region}}:{{123456789012}}:components:com.example.HelloWorldLambda:versions:1.0.0",
      "componentName": "com.example.HelloWorldLambda",
@@ -793,14 +793,14 @@ To subscribe this function to messages from other Lambda functions or components
 
 1. When you create a component, its state is `REQUESTED`. Then, AWS IoT Greengrass validates that the component is deployable. You can run the following command to query the component status and verify that your component is deployable. Replace the `arn` with the ARN from the previous step.
 
-   ```
+   ```bash
    aws greengrassv2 describe-component \
      --arn "arn:aws:greengrass:{{region}}:{{account-id}}:components:com.example.HelloWorldLambda:versions:1.0.0"
    ```
 
    If the component validates, the response indicates that the component state is `DEPLOYABLE`.
 
-   ```
+   ```json
    {
      "arn": "arn:aws:greengrass:{{region}}:{{account-id}}:components:com.example.HelloWorldLambda:versions:1.0.0",
      "componentName": "com.example.HelloWorldLambda",

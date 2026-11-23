@@ -56,7 +56,7 @@ These statements do not allow any actions. Use these statements in combination w
 
 The following statement explicitly denies access to all KMS permissions for requests originating from the `192.0.2.*` range of IPv4 addresses. Any IP addresses outside of this range are not explicitly denied KMS permissions. Since all IPv6 addresses are outside of the denied range, this statement does not explicitly deny KMS permissions for any IPv6 addresses.
 
-```
+```JSON
 {
      "Sid": "DenyKMSPermissions",
      "Effect": "Deny",
@@ -76,7 +76,7 @@ The following statement explicitly denies access to all KMS permissions for requ
 
 You can modify the `Condition` element to deny both IPv4 (`192.0.2.0/24`) and IPv6 (`2001:db8:1234::/32`) address ranges as shown in the following example.
 
-```
+```JSON
 {
     "Sid": "DenyKMSPermissions",
     "Effect": "Deny",
@@ -107,7 +107,7 @@ The cache lookup key implementation varies by service. Amazon SQS, DynamoDB, and
 
 Consider the following example key policy statements for a KMS key that encrypts an Amazon S3 bucket with S3 Bucket Key enabled. In this policy example, the `AllowedUser` session of the `ExampleRole` role can use the KMS key, but the `DeniedUser` session of the same role cannot.
 
-```
+```JSON
 {
     "Sid": "AllowSession",
     "Effect": "Allow",

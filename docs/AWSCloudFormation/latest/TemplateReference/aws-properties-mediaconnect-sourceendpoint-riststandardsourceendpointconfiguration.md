@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::SourceEndpoint RistStandardSourceEndpointConfiguration
 
-<a name="aws-properties-mediaconnect-sourceendpoint-riststandardsourceendpointconfiguration-description"></a>The `RistStandardSourceEndpointConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::SourceEndpoint](aws-resource-mediaconnect-sourceendpoint.md).
+The configuration settings for a source endpoint that uses the RIST protocol.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-riststandardsourceendpointconfiguration-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-riststandardsourceendpointconfiguration-properties"></a>
 
 `DestinationIngestPort`  <a name="cfn-mediaconnect-sourceendpoint-riststandardsourceendpointconfiguration-destinationingestport"></a>
-Property description not available.
+The port on the destination that receives the content. The valid range is 3000 to 30000.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `3000`
@@ -43,7 +43,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RecoveryLatencyMilliseconds`  <a name="cfn-mediaconnect-sourceendpoint-riststandardsourceendpointconfiguration-recoverylatencymilliseconds"></a>
-Property description not available.
+The amount of time, in milliseconds, that the source endpoint allows for recovering lost packets. The valid range is 10 to 10000.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `10`

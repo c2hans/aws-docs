@@ -36,7 +36,7 @@ You can use the [update-phone-number](https://docs.aws.amazon.com/cli/latest/ref
 
 At the command line, enter the following command:
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 update-phone-number --phone-number-id {{PhoneNumberid}} --opt-out-list-name {{OptOutListName}}
 ```
 

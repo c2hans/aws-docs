@@ -83,7 +83,7 @@ AWS IoT Device Defender uses the [AWS Security Finding Format (ASFF)](https://do
 
 The following example shows a typical finding from Security Hub CSPM for an audit finding. The `ReportType` in `ProductFields` is `AuditFinding`.
 
-```
+```JSON
   {
   "SchemaVersion": "2018-10-08",
   "Id": "336757784525/IOT_POLICY/policyexample/1/IOT_POLICY_OVERLY_PERMISSIVE_CHECK/ALLOWS_BROAD_ACCESS_TO_IOT_DATA_PLANE_ACTIONS",
@@ -152,7 +152,7 @@ The following example shows a typical finding from Security Hub CSPM for an audi
 
 The following example shows a finding from Security Hub CSPM for an audit check summary. The `ReportType` in `ProductFields` is `CheckSummary`.
 
-```
+```JSON
   {
   "SchemaVersion": "2018-10-08",
   "Id": "615243839755/SCHEDULED_AUDIT_TASK/daily_audit_schedule_checks/DEVICE_CERTIFICATE_KEY_QUALITY_CHECK",
@@ -213,7 +213,7 @@ The following example shows a finding from Security Hub CSPM for an audit check 
 
 The following example shows a typical finding from Security Hub CSPM for an AWS IoT Device Defender Detect violation.
 
-```
+```JSON
   {
   "SchemaVersion": "2018-10-08",
   "Id": "e92a782593c6f5b1fc7cb6a443dc1a12",

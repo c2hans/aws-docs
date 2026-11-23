@@ -32,7 +32,7 @@ You can use the [list-principals](https://docs.aws.amazon.com/cli/latest/referen
 
 The following example command displays details about the AWS account that shared a resource share with the account used to call the operation in the specified AWS Region.
 
-```
+```bash
 $  aws ram list-principals \
     --region us-east-1 \
     --resource-owner OTHER-ACCOUNTS

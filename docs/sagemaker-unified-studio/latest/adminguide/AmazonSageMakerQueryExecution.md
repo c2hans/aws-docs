@@ -15,7 +15,7 @@ The default `AmazonSageMakerQueryExecution` role has the following trust policy 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -48,7 +48,7 @@ If you are using your own query execution role (instead of this default AmazonSa
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

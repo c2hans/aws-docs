@@ -23,7 +23,7 @@ To use a policy like this one, replace the placeholder AWS account ID and VPC en
 
 ****
 
-```
+```json
 {
     "Id": "example-key-1",
     "Version":"2012-10-17",
@@ -70,7 +70,7 @@ To use a policy like this one, replace the placeholder AWS account ID and VPC en
 
 ****
 
-```
+```json
 {
     "Id": "example-key-2",
     "Version":"2012-10-17",

@@ -43,7 +43,7 @@ Establish a default data partition for a campaign by using `default` as the ID.
 
 1. Replace {{target-arn}} with the ARN of a fleet or vehicle that you created.
 
-```
+```json
 {
     "name": "{{campaign-name}}",
     "description": "Measurement of SOC, SOH, thermal, and power optimization for Fleet 2704",

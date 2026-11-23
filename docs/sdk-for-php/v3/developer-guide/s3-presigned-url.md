@@ -11,7 +11,7 @@ You can authenticate certain types of requests by passing the required informati
 
 The following code example shows how to create a pre-signed URL for an HTTP GET request by using the SDK for PHP.
 
-```
+```php
 <?php
 
 require 'vendor/autoload.php';
@@ -46,7 +46,7 @@ Someone else can use the `$presignedUrl` value to retrieve the object within the
 
 The following code example shows how to create a pre-signed URL for an HTTP PUT request by using the SDK for PHP.
 
-```
+```php
 <?php
 
 require 'vendor/autoload.php';
@@ -71,7 +71,7 @@ $presignedUrl = (string) $request->getUri();
 
 Someone else can now use the pre-signed URL in an HTTP PUT request to upload a file:
 
-```
+```php
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 

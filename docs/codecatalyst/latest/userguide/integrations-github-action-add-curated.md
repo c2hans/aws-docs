@@ -10,7 +10,7 @@ A *curated GitHub Action* is a GitHub Action that is made available in the CodeC
 
 Curated GitHub Actions are wrapped in the CodeCatalyst-authored [**GitHub Actions** action](integrations-github-action-add.md), identified by the `aws/github-actions-runner@v1` identifier. For example, here's what the curated GitHub Action, [TruffleHog OSS](https://github.com/marketplace/actions/trufflehog-oss), looks like:
 
-```
+```yaml
 Actions:
   TruffleHogOSS_e8:
     Identifier: aws/github-actions-runner@v1
@@ -31,7 +31,7 @@ In the previous code, the CodeCatalyst **GitHub Actions** action (identified by 
 
 To configure this action, you would replace the empty strings under `with:` with your own values. For example:
 
-```
+```yaml
 Actions:
   TruffleHogOSS_e8:
     Identifier: aws/github-actions-runner@v1

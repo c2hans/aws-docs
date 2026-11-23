@@ -40,7 +40,7 @@ To specify a KMS key, use its [key ID](concepts.md#key-id-key-id), [key ARN](con
 
 Before running this command, replace the example alias name with a valid identifier for the KMS key. To run this command, you must have `kms:GetPublicKey` permissions on the KMS key.
 
-```
+```bash
 $ aws kms get-public-key --key-id {{alias/example_RSA_3072}}
 
 {

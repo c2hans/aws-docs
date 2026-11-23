@@ -63,7 +63,7 @@ HTTP Status Code: 400
 
 All errors return a consistent JSON body:
 
-```
+```json
 {
     "type": "ResourceNotFoundException",
     "message": "Secret 'my-secret' not found.",

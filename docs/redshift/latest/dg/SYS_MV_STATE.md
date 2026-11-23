@@ -32,7 +32,7 @@ SYS\_MV\_STATE is visible to all users. Superusers can see all rows; regular use
 
 The following query shows the materialized view state.
 
-```
+```sql
 select * from sys_mv_state;
 ```
 

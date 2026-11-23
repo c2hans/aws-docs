@@ -45,7 +45,7 @@ Disassociates a member account from its Amazon Macie administrator account.
 #### Empty Schema schema
 <a name="administrator-disassociate-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -53,7 +53,7 @@ Disassociates a member account from its Amazon Macie administrator account.
 #### ValidationException schema
 <a name="administrator-disassociate-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -62,7 +62,7 @@ Disassociates a member account from its Amazon Macie administrator account.
 #### ServiceQuotaExceededException schema
 <a name="administrator-disassociate-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -71,7 +71,7 @@ Disassociates a member account from its Amazon Macie administrator account.
 #### AccessDeniedException schema
 <a name="administrator-disassociate-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -80,7 +80,7 @@ Disassociates a member account from its Amazon Macie administrator account.
 #### ResourceNotFoundException schema
 <a name="administrator-disassociate-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -89,7 +89,7 @@ Disassociates a member account from its Amazon Macie administrator account.
 #### ConflictException schema
 <a name="administrator-disassociate-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -98,7 +98,7 @@ Disassociates a member account from its Amazon Macie administrator account.
 #### ThrottlingException schema
 <a name="administrator-disassociate-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -107,7 +107,7 @@ Disassociates a member account from its Amazon Macie administrator account.
 #### InternalServerException schema
 <a name="administrator-disassociate-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

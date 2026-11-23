@@ -154,14 +154,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-security-group-associate-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-advanced-security-group-associate-ex-max"></a>
 
-```
+```json
 {
     "DocumentName": "AWSManagedServices-AttachSecurityGroupsV2",
     "Region": "us-east-1",

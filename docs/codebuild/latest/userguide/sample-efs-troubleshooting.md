@@ -16,7 +16,7 @@ The following are errors you might encounter when setting up Amazon EFS with Cod
 
 IAM authorization is not supported for mounting Amazon EFS with CodeBuild. If you are using a custom Amazon EFS file system policy, you will need to grant read and write access to all IAM principals. For example:
 
-```
+```json
 "Principal": {
   "AWS": "*"
 }

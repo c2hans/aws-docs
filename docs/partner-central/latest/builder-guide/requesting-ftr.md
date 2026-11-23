@@ -96,5 +96,5 @@ You can resubmit as many times as needed. Each submission is reviewed automatica
 ## Related resources
 <a name="ftr-related-resources"></a>
 + [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/userguide/waf.html)
-+ [Partner Revenue Measurement onboarding guide](https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/what-is-service.html)
++ [AWS Revenue Measurement onboarding guide](https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/what-is-service.html)
 + [Attributed revenue dashboard](https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-analytics-attributed-revenue.html)

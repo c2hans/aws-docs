@@ -31,7 +31,7 @@ For an identity to be able to create, manage, or use gateways, you need to attac
 
 For greater security and control, you can create your own custom policy by reducing the permissions in the full access policy. For example, the following policy allows an identity to perform actions related to AgentCore Gateway but not to other AgentCore services, such as AgentCore Runtime or AgentCore Browser:
 
-```
+```json
 {
 "Version":"2012-10-17",
   "Statement": [
@@ -52,7 +52,7 @@ For greater security and control, you can create your own custom policy by reduc
 
 The following custom policy is a more restrictive one that only allows read access to gateways, gateway targets, and rate limits:
 
-```
+```json
 {
 "Version":"2012-10-17",
   "Statement": [
@@ -74,7 +74,7 @@ The following custom policy is a more restrictive one that only allows read acce
 
 The following custom policy allows an identity to manage rate limits on a gateway without being able to modify the gateway or its targets:
 
-```
+```json
 {
 "Version":"2012-10-17",
   "Statement": [
@@ -120,7 +120,7 @@ A service role must have a [trust policy](https://docs.aws.amazon.com/IAM/latest
 
 The following is an example of a trust policy that you can use.
 
-```
+```json
 {
 "Version":"2012-10-17",
   "Statement": [
@@ -172,7 +172,7 @@ Select a topic to learn how to set up the permissions:
 
 To allow the gateway service role to access a Lambda target, attach the following identity-based policy to your AgentCore Gateway service role by choosing the topic at [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) that pertains to your use case and following the steps..
 
-```
+```json
 {
 "Version": "2012-10-17",
     "Statement": [{
@@ -194,7 +194,7 @@ Replace the ARN in the `Resource` field with the ARN of your Lambda function gat
 
 If the Lambda function target is in a different account from the gateway service role, you need to attach a resource-based policy to allow the gateway service role to access it. The following is an example policy that you can use:
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [
@@ -238,7 +238,7 @@ To learn how to attach a resource-based policy to the Lambda function that allow
 
    You can run the following code in a terminal to add permissions for your gateway service role to access the function in {{us-east-1}} :
 
-   ```
+   ```bash
    aws lambda add-permission \
      --function-name "MyFunction" \
      --statement-id "GatewayInvoke" \
@@ -265,7 +265,7 @@ You can add permissions to the service role by choosing the topic at [Adding and
 
 For example, if your Smithy model target accesses a DynamoDB table, you can attach the following policy to allow the service role to perform DynamoDB operations on the table:
 
-```
+```json
 {
 "Version":"2012-10-17",
   "Statement": [

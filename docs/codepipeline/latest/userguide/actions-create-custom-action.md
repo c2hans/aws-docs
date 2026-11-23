@@ -195,7 +195,7 @@ The following is an example policy you might create for use with your custom job
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -295,7 +295,7 @@ If you want your action to run in parallel with another action in that stage, ma
 
    For example, to modify the structure of a pipeline to add a stage named Build and to add a build custom action to that stage, you might modify the JSON to add the Build stage before a deployment stage as follows:
 
-   ```
+   ```json
    {{,
        {
          "name": "MyBuildStage",

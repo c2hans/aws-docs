@@ -264,7 +264,7 @@ The sample snippet shows:
 + How to verify the log file hashes.
 + A code structure for validating a chain of digest files.
 
-```
+```java
 import java.util.Arrays;
 import java.security.MessageDigest;
 import java.security.KeyFactory;

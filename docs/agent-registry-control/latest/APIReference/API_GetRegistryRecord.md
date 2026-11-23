@@ -154,6 +154,24 @@ Content-type: application/json
                "url": "string"
             }
          }
+      },
+      "signatureAgentCard": {
+         "additionalData": {
+            "category": "string"
+         },
+         "data": "string",
+         "dataSchemaVersion": "string",
+         "source": {
+            "fromUrl": {
+               "credentialProviderConfigurations": [
+                  {
+                     "credentialProvider": { ... },
+                     "credentialProviderType": "string"
+                  }
+               ],
+               "url": "string"
+            }
+         }
       }
    },
    "displayName": "string",
@@ -252,7 +270,7 @@ Pattern: `[a-zA-Z0-9]{12}`
  ** [recordType](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-recordType"></a>
 The type of the registry record, such as MCP, AGENT, SKILL, or CUSTOM.
 Type: String
-Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY`
+Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY | WEB_BOT`
 
  ** [recordVersion](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-recordVersion"></a>
 The version identifier of the registry record.

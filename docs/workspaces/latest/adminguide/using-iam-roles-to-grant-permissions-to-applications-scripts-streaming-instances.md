@@ -63,7 +63,7 @@ To perform the following steps, you must sign into the account as an IAM user wh
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

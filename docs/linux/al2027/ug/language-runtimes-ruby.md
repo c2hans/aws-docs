@@ -15,7 +15,7 @@ AL2027 is currently available for preview. It is intended for evaluation and tes
 
  After installing a Ruby version, the entries for companion tools may show as null in the *alternatives* configuration. This can be verified by running `alternatives --display ruby`. If entries appear as null, they must be registered manually using `alternatives --install`. For example, to register all companion tools for Ruby 3.4:
 
-```
+```sh
 sudo alternatives --install /usr/bin/gem gem /usr/bin/ruby3.4-gem 34
 sudo alternatives --install /usr/bin/bundle bundle /usr/bin/ruby3.4-bundle 34
 sudo alternatives --install /usr/bin/bundler bundler /usr/bin/ruby3.4-bundler 34
@@ -33,30 +33,30 @@ Use the following `alternatives` commands to manage the active Ruby version.
 
 List what `alternatives` manages
 
-```
+```sh
 alternatives --list
 ```
 
 Display the current `ruby` configuration
 
-```
+```sh
 alternatives --display ruby
 ```
 
 Change the Ruby version interactively
 
-```
+```sh
 alternatives --config ruby
 ```
 
 Select a specific version (manual mode)
 
-```
+```sh
 alternatives --set ruby /usr/bin/ruby{MAJOR.MINOR}
 ```
 
 Return to automatic version selection
 
-```
+```sh
 alternatives --auto ruby
 ```

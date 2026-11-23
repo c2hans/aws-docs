@@ -30,7 +30,7 @@ The following code example shows how to get started using AWS IoT SiteWise.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
 public class HelloSitewise {
     private static final Logger logger = LoggerFactory.getLogger(HelloSitewise.class);
     public static void main(String[] args) {
@@ -82,7 +82,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 Run an interactive scenario demonstrating AWS IoT SiteWise features.
 
-```
+```java
 public class SitewiseScenario {
 
     public static final String DASHES = new String(new char[80]).replace("\0", "-");
@@ -430,7 +430,7 @@ public class SitewiseScenario {
 ```
 A wrapper class for AWS IoT SiteWise SDK methods.
 
-```
+```java
 public class SitewiseActions {
 
     private static final Logger logger = LoggerFactory.getLogger(SitewiseActions.class);
@@ -857,7 +857,7 @@ The following code example shows how to use `BatchPutAssetPropertyValue`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
     /**
      * Sends data to the SiteWise service.
      *
@@ -930,7 +930,7 @@ The following code example shows how to use `CreateAsset`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
     /**
      * Creates an asset with the specified name and asset model Id.
      *
@@ -969,7 +969,7 @@ The following code example shows how to use `CreateAssetModel`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
     /**
      * Creates an asset model.
      *
@@ -1027,7 +1027,7 @@ The following code example shows how to use `CreateGateway`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
     /**
      * Creates a new IoT Sitewise gateway.
      *
@@ -1080,7 +1080,7 @@ The following code example shows how to use `DeleteAsset`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
     /**
      * Deletes an asset.
      *
@@ -1116,7 +1116,7 @@ The following code example shows how to use `DeleteAssetModel`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
     /**
      * Deletes an Asset Model with the specified ID.
      *
@@ -1152,7 +1152,7 @@ The following code example shows how to use `DeleteGateway`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
     /**
      * Deletes the specified gateway.
      *
@@ -1188,7 +1188,7 @@ The following code example shows how to use `DescribeAssetModel`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
     /**
      * Retrieves the property IDs associated with a specific asset model.
      *
@@ -1226,7 +1226,7 @@ The following code example shows how to use `DescribeGateway`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
     /**
      * Describes the specified gateway.
      *
@@ -1262,7 +1262,7 @@ The following code example shows how to use `GetAssetPropertyValue`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
     /**
      * Fetches the value of an asset property.
      *
@@ -1302,7 +1302,7 @@ The following code example shows how to use `ListAssetModels`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
     /**
      * Retrieves the asset model ID for the given asset model name.
      *

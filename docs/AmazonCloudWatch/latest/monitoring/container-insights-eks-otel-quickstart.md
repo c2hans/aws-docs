@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/container-insights-eks-otel-quickstart.html
 ---
 
-# Quick start: OTel Container Insights on Amazon EKS
+# Quick start
 
 This guide walks you through enabling OTel Container Insights on an existing Amazon EKS cluster. By the end of this procedure, your cluster sends infrastructure metrics and container logs to Amazon CloudWatch with Enhanced Observability enabled.
 
@@ -36,7 +36,7 @@ The AWS Management Console provides the fastest path to enable OTel Container In
 
 1. Choose **Enable Container Insights** and follow the on-screen instructions.
 
-For a detailed console walkthrough, see [Enable OTel Container Insights from the console](container-insights-eks-otel-console.md).
+For a detailed console walkthrough, see [Enable from the console](container-insights-eks-otel-console.md).
 
 ## Enable OTel Container Insights (AWS CLI)
 <a name="container-insights-eks-otel-quickstart-cli"></a>

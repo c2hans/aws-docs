@@ -118,11 +118,11 @@ HTTP Status Code: 400
 
 This example illustrates one usage of GetMergeCasesStatus.
 
-```
+```json
 { }
 ```
 
-```
+```json
 {
   "status": "IN_PROGRESS",
   "primaryCaseId": "[primary_case_id]",

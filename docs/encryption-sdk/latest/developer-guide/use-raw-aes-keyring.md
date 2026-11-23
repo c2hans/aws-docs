@@ -29,7 +29,7 @@ The following examples show how to create a Raw AES keyring. The `AESWrappingKey
 
 To instantiate a Raw AES keyring in the AWS Encryption SDK for C, use `aws_cryptosdk_raw_aes_keyring_new()`. For a complete example, see [raw\_aes\_keyring.c](https://github.com/aws/aws-encryption-sdk-c/blob/master/examples/raw_aes_keyring.c).
 
-```
+```cpp
 struct aws_allocator *alloc = aws_default_allocator();
 
 AWS_STATIC_STRING_FROM_LITERAL(wrapping_key_namespace, "HSM_01");
@@ -46,7 +46,7 @@ To create a Raw AES keyring in AWS Encryption SDK for .NET, use the `materialPro
 
 The following example uses version 4.*x* and later of the AWS Encryption SDK for .NET.
 
-```
+```csharp
 // Instantiate the AWS Encryption SDK and material providers
 var esdk =  new ESDK(new AwsEncryptionSdkConfig());
 var mpl = new MaterialProviders(new MaterialProvidersConfig());
@@ -79,7 +79,7 @@ Then, to instantiate a Raw AES keyring, use the `RawAesKeyringWebCrypto()` metho
 
 The following example uses the `buildClient` function to specify the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. You can also use the `buildClient` to limit the number of encrypted data keys in an encrypted message. For more information, see [Limiting encrypted data keys](configure.md#config-limit-keys).
 
-```
+```js
 import {
   RawAesWrappingSuiteIdentifier,
   RawAesKeyringWebCrypto,
@@ -119,7 +119,7 @@ To instantiate a Raw AES keyring in the AWS Encryption SDK for JavaScript for No
 
 The following example uses the `buildClient` function to specify the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. You can also use the `buildClient` to limit the number of encrypted data keys in an encrypted message. For more information, see [Limiting encrypted data keys](configure.md#config-limit-keys).
 
-```
+```js
 import {
   RawAesKeyringNode,
   buildClient,
@@ -150,7 +150,7 @@ const rawAesKeyring = new RawAesKeyringNode({
 
 To instantiate a Raw AES keyring in the AWS Encryption SDK for Java, use `matProv.CreateRawAesKeyring()`.
 
-```
+```java
 final CreateRawAesKeyringInput keyringInput = CreateRawAesKeyringInput.builder()
         .keyName("{{AES_256_012}}")
         .keyNamespace("{{HSM_01}}")
@@ -168,7 +168,7 @@ IKeyring rawAesKeyring = matProv.CreateRawAesKeyring(keyringInput);
 
 The following example instantiates the AWS Encryption SDK client with the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. For a complete example, see [raw\_aes\_keyring\_example.py](https://github.com/aws/aws-encryption-sdk-python/tree/master/examples/src/raw_aes_keyring_example.py) in the AWS Encryption SDK for Python repository in GitHub.
 
-```
+```python
 # Instantiate the AWS Encryption SDK client
 client = aws_encryption_sdk.EncryptionSDKClient(
     commitment_policy=CommitmentPolicy.{{REQUIRE_ENCRYPT_REQUIRE_DECRYPT}}
@@ -208,7 +208,7 @@ raw_aes_keyring: IKeyring = mat_prov.create_raw_aes_keyring(
 ------
 #### [ Rust ]
 
-```
+```rust
 // Instantiate the AWS Encryption SDK client
 let esdk_config = AwsEncryptionSdkConfig::builder().build()?;
 let esdk_client = esdk_client::Client::from_conf(esdk_config)?;
@@ -244,7 +244,7 @@ let raw_aes_keyring = mpl
 ------
 #### [ Go ]
 
-```
+```go
 import (
     mpl "aws/aws-cryptographic-material-providers-library/releases/go/mpl/awscryptographymaterialproviderssmithygenerated"
 	mpltypes "aws/aws-cryptographic-material-providers-library/releases/go/mpl/awscryptographymaterialproviderssmithygeneratedtypes"

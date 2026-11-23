@@ -62,7 +62,7 @@ Creates an application version.
 #### PUT schema
 <a name="applications-applicationid-versions-semanticversion-request-body-put-example"></a>
 
-```
+```json
 {
   "templateBody": "string",
   "templateUrl": "string",
@@ -77,7 +77,7 @@ Creates an application version.
 #### Version schema
 <a name="applications-applicationid-versions-semanticversion-response-body-version-example"></a>
 
-```
+```json
 {
   "applicationId": "string",
   "semanticVersion": "string",
@@ -116,7 +116,7 @@ Creates an application version.
 #### BadRequestException schema
 <a name="applications-applicationid-versions-semanticversion-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -126,7 +126,7 @@ Creates an application version.
 #### ForbiddenException schema
 <a name="applications-applicationid-versions-semanticversion-response-body-forbiddenexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -136,7 +136,7 @@ Creates an application version.
 #### ConflictException schema
 <a name="applications-applicationid-versions-semanticversion-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -146,7 +146,7 @@ Creates an application version.
 #### TooManyRequestsException schema
 <a name="applications-applicationid-versions-semanticversion-response-body-toomanyrequestsexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -156,7 +156,7 @@ Creates an application version.
 #### InternalServerErrorException schema
 <a name="applications-applicationid-versions-semanticversion-response-body-internalservererrorexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"

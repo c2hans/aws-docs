@@ -18,7 +18,7 @@ To get the current ACL for a bucket, call the AmazonS3’s `getBucketAcl` method
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -29,7 +29,7 @@ import com.amazonaws.services.s3.model.Grant;
 
  **Code**
 
-```
+```java
 final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.DEFAULT_REGION).build();
 try {
     AccessControlList acl = s3.getBucketAcl(bucket_name);
@@ -53,7 +53,7 @@ To add or modify permissions to an ACL for a bucket, call the AmazonS3’s `setB
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -64,7 +64,7 @@ import com.amazonaws.services.s3.model.EmailAddressGrantee;
 
  **Code**
 
-```
+```java
 final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.DEFAULT_REGION).build();
 try {
     // get the current ACL
@@ -92,7 +92,7 @@ To get the current ACL for an object, call the AmazonS3’s `getObjectAcl` metho
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -103,7 +103,7 @@ import com.amazonaws.services.s3.model.Grant;
 
  **Code**
 
-```
+```java
 try {
     AccessControlList acl = s3.getObjectAcl(bucket_name, object_key);
     List<Grant> grants = acl.getGrantsAsList();
@@ -126,7 +126,7 @@ To add or modify permissions to an ACL for an object, call the AmazonS3’s `set
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -137,7 +137,7 @@ import com.amazonaws.services.s3.model.EmailAddressGrantee;
 
  **Code**
 
-```
+```java
     try {
         // get the current ACL
         AccessControlList acl = s3.getObjectAcl(bucket_name, object_key);

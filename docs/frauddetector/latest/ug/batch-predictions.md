@@ -100,7 +100,7 @@ If you receive an error related to your IAM role, verify the following:
 
 The following example shows a sample request for the [CreateBatchPredictionJob](https://docs.aws.amazon.com/frauddetector/latest/api/API_CreateBatchPredictionJob.html) API. A batch prediction job must include the following existing resources: detector, detector version, and event type name. The following example assumes you have created an event type `sample_registration`, a detector `sample_detector`, and a detector version `1`.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

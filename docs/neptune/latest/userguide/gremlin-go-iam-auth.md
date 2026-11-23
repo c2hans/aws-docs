@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-go-iam-
 
  Use the following code example as guidance on how to establish a basic connection with IAM authentication using the Gremlin Go driver.
 
-```
+```go
 package main
 
 import (
@@ -111,7 +111,7 @@ func main() {
 
  Gremlin Go has DynamicAuth which allows the injection of a function pointer to retrieve credentials and generate the header, which prevents header expiry with long-running connections.
 
-```
+```go
 package main
 
 import (

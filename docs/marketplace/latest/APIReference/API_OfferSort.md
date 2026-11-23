@@ -15,7 +15,7 @@ In the following list, the required parameters are described first.
  ** SortBy **   <a name="AWSMarketplaceService-Type-OfferSort-SortBy"></a>
 Allows to sort offers.
 Type: String
-Valid Values: `EntityId | Name | ProductId | ResaleAuthorizationId | ReleaseDate | AvailabilityEndDate | BuyerAccounts | State | Targeting | LastModifiedDate | OfferSetId | TargetAgreementId | TargetAgreementIntent | CreatedBySource`
+Valid Values: `EntityId | Name | ProductId | ResaleAuthorizationId | SubsidiaryAuthorizationId | ReleaseDate | AvailabilityEndDate | BuyerAccounts | State | Targeting | LastModifiedDate | OfferSetId | TargetAgreementId | TargetAgreementIntent | CreatedBySource`
 Required: No
 
  ** SortOrder **   <a name="AWSMarketplaceService-Type-OfferSort-SortOrder"></a>

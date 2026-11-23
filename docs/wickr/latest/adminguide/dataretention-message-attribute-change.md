@@ -8,7 +8,7 @@ This guide documents the new AWS Wickr administration console, released on March
 
 These control messages show when a message is starred or unstarred.
 
-```
+```json
 {
   "control": {
     "attributes": [

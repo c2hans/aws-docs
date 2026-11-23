@@ -39,7 +39,7 @@ Any changes you make to the language or units setting will be saved locally in t
 
 <table>
 <tbody>
-  <tr><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/settings-menu-web.png" alt="General settings panel with Language dropdown showing English, Español, Français, and Português options." /> </td><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/settings-menu-mobile.png" alt="Settings screen showing language selector expanded with options including English, Español, Français, and Português." /> </td></tr>
+  <tr><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/settings-menu-web.png" alt="General settings panel with Language dropdown showing English, Español, Français, and Português options." /><br />a web app view </td><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/settings-menu-mobile.png" alt="Settings screen showing language selector expanded with options including English, Español, Français, and Português." /><br />a mobile app view </td></tr>
 </tbody>
 </table>
 
@@ -49,7 +49,7 @@ Any changes you make to the language or units setting will be saved locally in t
 
 <table>
 <tbody>
-  <tr><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/settings-menu-web-alert.png" alt="Settings page showing General section with language set to English (US) and Measurements section with vibration and temperature units." /> </td><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/settings-menu-mobile-alert.png" alt="Settings page showing language, vibration units, and temperature unit options with a success message." /> </td></tr>
+  <tr><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/settings-menu-web-alert.png" alt="Settings page showing General section with language set to English (US) and Measurements section with vibration and temperature units." /><br />a web app view </td><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/settings-menu-mobile-alert.png" alt="Settings page showing language, vibration units, and temperature unit options with a success message." /><br />a mobile app view </td></tr>
 </tbody>
 </table>
 
@@ -57,6 +57,6 @@ Any changes you make to the language or units setting will be saved locally in t
 
 <table>
 <tbody>
-  <tr><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/settings-menu-web-alert-unsaved.png" alt="Modal dialog warning about unsaved changes with Exit and Save buttons." /> </td><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/settings-menu-mobile-alert-unsaved.png" alt="Dialog box warning about unsaved changes with Exit and Save buttons." /> </td></tr>
+  <tr><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/settings-menu-web-alert-unsaved.png" alt="Modal dialog warning about unsaved changes with Exit and Save buttons." /><br />a web app view </td><td> <img src="https://docs.aws.amazon.com/Monitron/latest/user-guide/images/settings-menu-mobile-alert-unsaved.png" alt="Dialog box warning about unsaved changes with Exit and Save buttons." /><br />a mobile app view </td></tr>
 </tbody>
 </table>

@@ -23,7 +23,7 @@ The following example is a JSON input file generated during CodeBuild-based prov
 ### Example: using the AWS CDK with CodeBuild provisioning
 <a name="parameters-codebuild.example"></a>
 
-```
+```json
 {
   "service_instance": {
     "name": "my-service-staging",
@@ -50,7 +50,7 @@ The following example is a JSON input file generated during CodeBuild-based prov
 
 To communicate resource provisioning outputs back to AWS Proton, your provisioning code can generate a JSON file named `proton-outputs.json` with values for output parameters defined in your template's [schema file](ag-schema.md). For example, the `cdk deploy` command has the `--outputs-file` argument that instructs the AWS CDK to generate a JSON file with provisioning outputs. If your resource uses the AWS CDK, specify the following command in your CodeBuild template manifest:
 
-```
+```shell
 aws proton notify-resource-deployment-status-change
 ```
 

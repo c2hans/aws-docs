@@ -23,7 +23,7 @@ Create a security group that allows all traffic between cluster instances. For t
 **AWS Command Line Interface**
 + Create the security group.
 
-  ```
+  ```shell
   aws ec2 create-security-group \
     --group-name pacemaker-cluster-sg \
     --description "Security group for Pacemaker HA cluster" \
@@ -33,7 +33,7 @@ Create a security group that allows all traffic between cluster instances. For t
   Note the `GroupId` from the output (for example, `sg-0123456789abcdef0`).
 + Add an inbound rule to allow all traffic from instances in the same security group.
 
-  ```
+  ```shell
   aws ec2 authorize-security-group-ingress \
     --group-id {{security-group-id}} \
     --protocol all \
@@ -41,7 +41,7 @@ Create a security group that allows all traffic between cluster instances. For t
   ```
 + Add an inbound rule to allow SSH access from your IP address.
 
-  ```
+  ```shell
   aws ec2 authorize-security-group-ingress \
     --group-id {{security-group-id}} \
     --protocol tcp \
@@ -67,7 +67,7 @@ Save the private key file (`.pem`) in a secure location. You cannot download it 
 **AWS Command Line Interface**
 + Create the key pair.
 
-  ```
+  ```shell
   aws ec2 create-key-pair \
     --key-name {{key-name}} \
     --query 'KeyMaterial' \
@@ -75,7 +75,7 @@ Save the private key file (`.pem`) in a secure location. You cannot download it 
   ```
 + Set the correct permissions on the private key file.
 
-  ```
+  ```shell
   chmod 400 pacemaker-key.pem
   ```
 
@@ -98,7 +98,7 @@ Launch two Ubuntu Amazon EC2 instances in the security group you created. A smal
 **AWS Command Line Interface**
 + Launch an instance.
 
-  ```
+  ```shell
   aws ec2 run-instances \
     --image-id {{ubuntu-ami-id}} \
     --instance-type t3.small \
@@ -115,7 +115,7 @@ You need the private IP address of each instance for cluster configuration.
 + **Console:** In the Amazon EC2 console, select an instance and find the **Private IPv4 address** in the **Details** tab.
 + **AWS Command Line Interface:**
 
-  ```
+  ```shell
   aws ec2 describe-instances \
     --filters "Name=tag:Name,Values=pacemaker-instance-*" \
     --query "Reservations[*].Instances[*].[Tags[?Key=='Name'].Value|[0],PrivateIpAddress]" \
@@ -127,11 +127,11 @@ You need the private IP address of each instance for cluster configuration.
 
 SSH into each instance and install Pacemaker utilities.
 
-```
+```shell
 ssh -i pacemaker-key.pem ubuntu@{{instance-public-ip}}
 ```
 
-```
+```shell
 sudo apt update
 sudo apt install -y pacemaker pcs resource-agents-extra resource-agents-common resource-agents-base
 ```
@@ -141,13 +141,13 @@ sudo apt install -y pacemaker pcs resource-agents-extra resource-agents-common r
 
 1. **Test communication between instances.** On the destination instance, run the following command to listen for pings from the source instance.
 
-   ```
+   ```shell
    sudo tcpdump host {{source-instance-private-ip}}
    ```
 
    On the source instance, run the following command to ping the destination instance.
 
-   ```
+   ```shell
    ping -c 4 {{destination-instance-private-ip}}
    ```
 
@@ -155,7 +155,7 @@ sudo apt install -y pacemaker pcs resource-agents-extra resource-agents-common r
 
 1. **Disable cloud-init hostname management.** On Ubuntu Amazon EC2 instances, cloud-init can revert hostname and `/etc/hosts` changes on reboot. Run this on each instance to prevent that.
 
-   ```
+   ```shell
    sudo bash -c 'cat > /etc/cloud/cloud.cfg.d/99-preserve-hostconfig.cfg <<EOF
    preserve_hostname: true
    manage_etc_hosts: false
@@ -166,19 +166,19 @@ sudo apt install -y pacemaker pcs resource-agents-extra resource-agents-common r
 
    On instance 1:
 
-   ```
+   ```shell
    sudo hostnamectl set-hostname instance1
    ```
 
    On instance 2:
 
-   ```
+   ```shell
    sudo hostnamectl set-hostname instance2
    ```
 
 1. **Configure `/etc/hosts`.** On each instance, append the private IP and hostname pairs to `/etc/hosts`. This allows instances to resolve each other by hostname.
 
-   ```
+   ```shell
    sudo tee -a /etc/hosts <<EOF
    {{instance1-private-ip}} instance1
    {{instance2-private-ip}} instance2
@@ -190,20 +190,20 @@ sudo apt install -y pacemaker pcs resource-agents-extra resource-agents-common r
 
 1. **Start the pcs daemon** on each instance.
 
-   ```
+   ```shell
    sudo systemctl enable pcsd.service
    sudo systemctl start pcsd.service
    ```
 
 1. **Set the hacluster password.** The `hacluster` user is a system account created automatically when you install the `pcs` package. Pacemaker uses this account for cluster authentication between instances. Set the same password on each instance.
 
-   ```
+   ```shell
    sudo passwd hacluster
    ```
 
 1. **Authorize pcs hosts.** Authorize the cluster instances with each other. Run this on each instance.
 
-   ```
+   ```shell
    sudo pcs host auth instance1 instance2
    ```
 
@@ -211,20 +211,20 @@ sudo apt install -y pacemaker pcs resource-agents-extra resource-agents-common r
 
 1. **Set up the cluster.** Run this command on one instance only. The `--force` flag destroys any existing cluster on the device.
 
-   ```
+   ```shell
    sudo pcs cluster setup my-gg-cluster instance1 instance2 --force
    ```
 
 1. **Start the cluster.** Run this command on one instance only.
 
-   ```
+   ```shell
    sudo pcs cluster start --all
    sudo pcs cluster enable --all
    ```
 
 1. **Verify the cluster status** on either instance.
 
-   ```
+   ```shell
    sudo pcs status
    ```
 
@@ -246,7 +246,7 @@ sudo apt install -y pacemaker pcs resource-agents-extra resource-agents-common r
 **AWS Command Line Interface**
    + Create a volume in the same Availability Zone as your instance.
 
-     ```
+     ```shell
      aws ec2 create-volume \
        --volume-type gp3 \
        --size 8 \
@@ -256,7 +256,7 @@ sudo apt install -y pacemaker pcs resource-agents-extra resource-agents-common r
      Note the `VolumeId` from the output.
    + Attach the volume to an instance.
 
-     ```
+     ```shell
      aws ec2 attach-volume \
        --volume-id {{volume-id}} \
        --instance-id {{instance-id}} \
@@ -267,7 +267,7 @@ sudo apt install -y pacemaker pcs resource-agents-extra resource-agents-common r
 
 1. **Verify the volume.** SSH into each instance and verify the volume is attached by listing block devices.
 
-   ```
+   ```shell
    lsblk
    ```
 
@@ -275,13 +275,13 @@ sudo apt install -y pacemaker pcs resource-agents-extra resource-agents-common r
 
 1. **Install DRBD utilities** on each instance.
 
-   ```
+   ```shell
    sudo apt install -y drbd-utils
    ```
 
 1. **Configure the DRBD resource.** Create the DRBD resource configuration directory and file on both instances.
 
-   ```
+   ```shell
    sudo mkdir -p /etc/drbd.d
    sudo vi /etc/drbd.d/greengrass.res
    ```
@@ -310,7 +310,7 @@ sudo apt install -y pacemaker pcs resource-agents-extra resource-agents-common r
 
 1. **Create and start the DRBD resource.** Run on both instances.
 
-   ```
+   ```shell
    sudo drbdadm create-md greengrass
    sudo drbdadm up greengrass
    ```
@@ -319,7 +319,7 @@ sudo apt install -y pacemaker pcs resource-agents-extra resource-agents-common r
 
 1. **Set the primary instance.** Run the following commands on instance1 only to force it to be primary and wait for synchronization.
 
-   ```
+   ```shell
    sudo drbdadm -- --overwrite-data-of-peer primary greengrass
    sudo drbdadm status
    ```
@@ -330,25 +330,25 @@ sudo apt install -y pacemaker pcs resource-agents-extra resource-agents-common r
 
    On the primary instance only, format the DRBD device:
 
-   ```
+   ```shell
    sudo mkfs.ext4 /dev/drbd0
    ```
 
    On all instances, create the mount directory:
 
-   ```
+   ```shell
    sudo mkdir -p /greengrass/v2
    ```
 
    On the primary instance only, mount the DRBD device:
 
-   ```
+   ```shell
    sudo mount /dev/drbd0 /greengrass/v2
    ```
 
 1. **Verify DRBD sync status.**
 
-   ```
+   ```shell
    sudo drbdadm status
    mount | grep 'drbd'
    ```

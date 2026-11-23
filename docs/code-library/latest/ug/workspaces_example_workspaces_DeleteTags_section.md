@@ -30,7 +30,7 @@ For more information, see [Tag WorkSpaces resources](https://docs.aws.amazon.com
 **Tools for PowerShell V4**
 **Example 1: This sample removes the tag associated with the Workspace**
 
-```
+```powershell
 Remove-WKSTag -ResourceId ws-w10b3abcd -TagKey "Type"
 ```
 **Output:**
@@ -46,7 +46,7 @@ Performing the operation "Remove-WKSTag (DeleteTags)" on target "ws-w10b3abcd".
 **Tools for PowerShell V5**
 **Example 1: This sample removes the tag associated with the Workspace**
 
-```
+```powershell
 Remove-WKSTag -ResourceId ws-w10b3abcd -TagKey "Type"
 ```
 **Output:**

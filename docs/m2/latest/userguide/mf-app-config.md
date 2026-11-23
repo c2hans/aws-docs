@@ -28,7 +28,7 @@ A printer definition may define a custom or service-provided exit module for the
 
 1. Example of loading service provided binary.
 
-```
+```json
 ...
 {
     "name": "p1",
@@ -45,7 +45,7 @@ A printer definition may define a custom or service-provided exit module for the
 
 2. Example of providing binary from S3.
 
-```
+```json
 "exit-module": {
         "name": "s3Exit",
         "module": "${s3-source}/3pa/s3Exit.so"
@@ -57,7 +57,7 @@ A printer definition may define a custom or service-provided exit module for the
 **Note**
 To use EFS mount, it must be attached during the creation of the environment, along with some additional values to be set such as `program-path`.
 
-```
+```json
 ...
 "batch-settings": {
     "jes-printers": [
@@ -93,7 +93,7 @@ To use LRS queue, you must be using a Rocket Software engine that supports third
 
 Additionally, the LRSQ\_ADDRESS must be specified as part of the `runtime-settings ` field in the application definition.
 
-```
+```json
 "runtime-settings": {
     "environment-variables": {
         "LRSQ_ADDRESS": "<lrsq-address>"

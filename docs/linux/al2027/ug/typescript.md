@@ -40,30 +40,30 @@ Use the following `alternatives` commands to manage the active TypeScript compil
 
 List what `alternatives` manages
 
-```
+```sh
 alternatives --list
 ```
 
 Display the current `tsc` configuration
 
-```
+```sh
 alternatives --display tsc
 ```
 
 Change the `tsc` version interactively
 
-```
+```sh
 alternatives --config tsc
 ```
 
 Select a specific version (manual mode)
 
-```
+```sh
 alternatives --set tsc /usr/bin/tsc-{MAJOR_VERSION}
 ```
 
 Return to automatic version selection
 
-```
+```sh
 alternatives --auto tsc
 ```

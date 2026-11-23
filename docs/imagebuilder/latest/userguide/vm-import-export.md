@@ -119,7 +119,7 @@ To provide the data values as command line parameters, refer to the parameter na
 
    Save the file as `import-vm-image.json`, to use in the Image Builder **import-vm-image** command.
 
-   ```
+   ```json
    {
        "name": "example-request",
        "semanticVersion": "1.0.0",

@@ -55,7 +55,7 @@ To begin sending data collected by AWS IoT SiteWise to Lookout for Equipment, yo
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -124,7 +124,7 @@ To begin sending data collected by AWS IoT SiteWise to Lookout for Equipment, yo
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

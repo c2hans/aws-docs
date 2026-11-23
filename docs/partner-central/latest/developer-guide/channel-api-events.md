@@ -48,7 +48,7 @@ To set up an EventBridge rule using the AWS Management Console, follow the steps
 
 Following is an example of an event rule:
 
-```
+```json
 {
     "source": ["aws.partnercentral-channel"],
     "detail": {
@@ -64,7 +64,7 @@ You can use the AWS SDKs to create and manage EventBridge rules programmatically
 
 The following example uses the AWS SDK for Python (Boto3):
 
-```
+```python
 import boto3
 
 client = boto3.client('events', region_name='us-east-1')
@@ -102,7 +102,7 @@ The following examples show typical Channel Handshake Created events for differe
 
 **Start Service Period Handshake:**
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -139,7 +139,7 @@ The following examples show typical Channel Handshake Created events for differe
 
 **Revoke Service Period Handshake:**
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -176,7 +176,7 @@ The following examples show typical Channel Handshake Created events for differe
 
 **Program Management Account Handshake:**
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -214,7 +214,7 @@ The following examples show typical Channel Handshake Accepted events for differ
 
 **Start Service Period Handshake:**
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -251,7 +251,7 @@ The following examples show typical Channel Handshake Accepted events for differ
 
 **Revoke Service Period Handshake:**
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -288,7 +288,7 @@ The following examples show typical Channel Handshake Accepted events for differ
 
 **Program Management Account Handshake:**
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -326,7 +326,7 @@ The following examples show typical Channel Handshake Rejected events for differ
 
 **Start Service Period Handshake:**
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -363,7 +363,7 @@ The following examples show typical Channel Handshake Rejected events for differ
 
 **Revoke Service Period Handshake:**
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -400,7 +400,7 @@ The following examples show typical Channel Handshake Rejected events for differ
 
 **Program Management Account Handshake:**
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",

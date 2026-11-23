@@ -17,7 +17,7 @@ Initiate the forced termination of all cluster compute nodes. This action doesn'
 ## Request syntax
 <a name="delete-cluster-instances-request"></a>
 
-```
+```json
 DELETE /v3/clusters/{{{clusterName}}}/instances
 {
   "force": boolean,
@@ -56,7 +56,7 @@ None
 
 **Request**
 
-```
+```python
 $ delete_cluster_instances({{cluster_name_3x}})
 ```
 

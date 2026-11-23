@@ -22,7 +22,7 @@ When you declare a dependency on a service client in Maven, the SDK adds a *runt
 
 In the following XML snippet of a Maven `pom.xml` file, the dependency declared with `<artifactId>dynamodb-enhanced</artifactId>` transitively brings in the Netty-based HTTP client. You don't need to declare a dependency specifically for it.
 
-```
+```xml
 <dependencyManagement>
    <dependencies>
         <dependency>
@@ -51,7 +51,7 @@ To configure the `NettyNioAsyncHttpClient`, you need to add a dependency on the 
 
 Refer to the following example of a Maven `pom.xml` file to configure the `NettyNioAsyncHttpClient`.
 
-```
+```xml
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -93,7 +93,7 @@ The following example creates a `DynamoDbAsyncClient` instance that is used by a
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.EnvironmentVariableCredentialsProvider;
 import software.amazon.awssdk.awscore.defaultsmode.DefaultsMode;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedAsyncClient;
@@ -105,7 +105,7 @@ import java.time.Duration;
 
  **Code**
 
-```
+```java
 // DynamoDbAsyncClient is the lower-level client used by the enhanced client.
 DynamoDbAsyncClient dynamoDbAsyncClient =
     DynamoDbAsyncClient
@@ -153,7 +153,7 @@ import software.amazon.awssdk.services.s3.S3Client;
 
  **Code**
 
-```
+```java
 // Create a NettyNioAsyncHttpClient shared instance.
 SdkAsyncHttpClient nettyHttpClient = NettyNioAsyncHttpClient.builder().maxConcurrency(100).build();
 
@@ -191,7 +191,7 @@ ALPN (Application-Layer Protocol Negotiation) is a TLS extension that allows the
 
 To enable the Netty-based HTTP client to use ALPN, call the builder methods as shown in the following snippet:
 
-```
+```java
 import software.amazon.awssdk.http.Protocol;
 import software.amazon.awssdk.http.ProtocolNegotiation;
 import software.amazon.awssdk.http.async.SdkAsyncHttpClient;
@@ -216,7 +216,7 @@ ALPN protocol negotiation currently works with only with the HTTP/2 protocol as 
 
 The following code snippet uses the [proxy configuration builder for the Netty HTTP client](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/nio/netty/ProxyConfiguration.Builder.html).
 
-```
+```java
 SdkAsyncHttpClient nettyHttpClient = NettyNioAsyncHttpClient.builder()
     .proxyConfiguration(ProxyConfiguration.builder()
         .scheme("https")
@@ -241,7 +241,7 @@ To use any of the HTTPS proxy system properties, the `scheme` property must be s
 
 The equivalent setup that uses environment variables is:
 
-```
+```java
 // Set the following environment variables.
 // $ export HTTPS_PROXY="https://username:password@myproxy:1234"
 // $ export NO_PROXY="localhost|host.example.com"

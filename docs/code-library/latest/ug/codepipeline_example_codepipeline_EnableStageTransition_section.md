@@ -31,7 +31,7 @@ For more information, see [Working with stage transitions in CodePipeline](https
 **Tools for PowerShell V4**
 **Example 1: This example enables the inbound transition for the specified stage in the specified pipeline.**
 
-```
+```powershell
 Enable-CPStageTransition -PipelineName CodePipelineDemo -StageName Beta -TransitionType Inbound
 ```
 +  For API details, see [EnableStageTransition](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -39,7 +39,7 @@ Enable-CPStageTransition -PipelineName CodePipelineDemo -StageName Beta -Transit
 **Tools for PowerShell V5**
 **Example 1: This example enables the inbound transition for the specified stage in the specified pipeline.**
 
-```
+```powershell
 Enable-CPStageTransition -PipelineName CodePipelineDemo -StageName Beta -TransitionType Inbound
 ```
 +  For API details, see [EnableStageTransition](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -39,6 +39,11 @@ The VPC origin endpoint configuration.
 Type: [VpcOriginEndpointConfig](API_VpcOriginEndpointConfig.md) object
 Required: Yes
 
+ ** AccountId **   <a name="cloudfront-Type-VpcOrigin-AccountId"></a>
+The account ID of the AWS account that owns the VPC origin.
+Type: String
+Required: No
+
 ## See Also
 <a name="API_VpcOrigin_SeeAlso"></a>
 

@@ -27,7 +27,7 @@ To allow or block emails from a specific IP address, use the [CreateReceiptFilte
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -35,7 +35,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -70,7 +70,7 @@ To list the IP address filters associated with your AWS account in the current A
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -78,7 +78,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -104,7 +104,7 @@ If you need to change the range of addresses that are filtered, you can delete a
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -112,7 +112,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',

@@ -58,7 +58,7 @@ The following is the [Denies access to AWS based on the source IP](https://docs.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

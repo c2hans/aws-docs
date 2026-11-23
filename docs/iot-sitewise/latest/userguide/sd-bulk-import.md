@@ -19,7 +19,7 @@ Pass this role to AWS IoT SiteWise through the `jobRoleArn` parameter. AWS IoT S
 
 Trust policy — allow `iotsitewise.amazonaws.com` to assume the role:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -34,7 +34,7 @@ Trust policy — allow `iotsitewise.amazonaws.com` to assume the role:
 
 Permission policy — grant AWS IoT SiteWise S3 access:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -62,7 +62,7 @@ Your calling identity (user, role, or task role) needs permission to invoke the 
 
 Minimal caller permission policy:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -109,7 +109,7 @@ The `PassRoleToSiteWise` statement makes it safe for you to hand `jobRoleArn` to
 
 If your caller is an application role, pair the policy with this trust policy so an EC2, ECS, or Lambda workload can assume it:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -202,7 +202,7 @@ Set through the `File.alias` request field.
 
 Exactly one of `mp4`, `parquet`, or `annotation`:
 
-```
+```json
 { "fileFormat": { "mp4": {} } }
 { "fileFormat": { "parquet": {} } }
 { "fileFormat": { "annotation": {} } }
@@ -213,7 +213,7 @@ For mixed jobs that import multiple file types in a single request, each file ob
 ### Response
 <a name="sd-bulk-import-response"></a>
 
-```
+```json
 {
     "jobId": "string",
     "jobName": "string",
@@ -229,7 +229,7 @@ HTTP status on success: 202 Accepted.
 ### MP4 video
 <a name="sd-bulk-import-example-mp4"></a>
 
-```
+```json
 {
     "jobName": "car120-front-left-camera-2026-07-14",
     "jobRoleArn": "arn:aws:iam::123456789012:role/UATSiteWiseBulkImportRole",
@@ -257,7 +257,7 @@ HTTP status on success: 202 Accepted.
 ### Parquet telemetry
 <a name="sd-bulk-import-example-parquet"></a>
 
-```
+```json
 {
     "jobName": "car120-telemetry-2026-07-14",
     "jobRoleArn": "arn:aws:iam::123456789012:role/UATSiteWiseBulkImportRole",
@@ -289,7 +289,7 @@ Each row in the Parquet file contains: timestamp\_ns (nanoseconds), alias, value
 ### Annotation (OpenLABEL subset)
 <a name="sd-bulk-import-example-annotation"></a>
 
-```
+```json
 {
     "jobName": "car120-annotations-2026-07-14",
     "jobRoleArn": "arn:aws:iam::123456789012:role/UATSiteWiseBulkImportRole",
@@ -318,7 +318,7 @@ Each row in the Parquet file contains: timestamp\_ns (nanoseconds), alias, value
 
 Command (using an input file):
 
-```
+```bash
 aws iotsitewise create-bulk-import-job \
     --region us-east-1 \
     --cli-input-json file://bulk-import-request.json
@@ -326,7 +326,7 @@ aws iotsitewise create-bulk-import-job \
 
 Equivalent inline form (MP4 example):
 
-```
+```bash
 aws iotsitewise create-bulk-import-job \
     --region us-east-1 \
     --job-name car120-front-left-camera-2026-07-14 \
@@ -352,7 +352,7 @@ CLI-only flags:
 ### Code — MP4
 <a name="sd-bulk-import-boto3-mp4"></a>
 
-```
+```python
 import boto3
 
 client = boto3.client("iotsitewise", region_name="us-east-1")
@@ -386,7 +386,7 @@ print(response["jobId"], response["jobStatus"])
 ### Code — Parquet telemetry
 <a name="sd-bulk-import-boto3-parquet"></a>
 
-```
+```python
 response = client.create_bulk_import_job(
     jobName="car120-telemetry-2026-07-14",
     jobRoleArn="arn:aws:iam::123456789012:role/UATSiteWiseBulkImportRole",
@@ -407,7 +407,7 @@ response = client.create_bulk_import_job(
 ### Code — Annotation
 <a name="sd-bulk-import-boto3-annotation"></a>
 
-```
+```python
 response = client.create_bulk_import_job(
     jobName="car120-annotations-2026-07-14",
     jobRoleArn="arn:aws:iam::123456789012:role/UATSiteWiseBulkImportRole",
@@ -464,7 +464,7 @@ https://data.iotsitewise.<region>.amazonaws.com/jobs
 ### Recommended: awscurl
 <a name="sd-bulk-import-curl-awscurl"></a>
 
-```
+```bash
 awscurl \
     --service iotsitewise \
     --region us-east-1 \
@@ -477,7 +477,7 @@ awscurl \
 ### Plain curl — pre-signed request skeleton
 <a name="sd-bulk-import-curl-plain"></a>
 
-```
+```bash
 curl -v -X POST \
     "https://data.iotsitewise.us-east-1.amazonaws.com/jobs" \
     -H "Host: data.iotsitewise.us-east-1.amazonaws.com" \
@@ -496,7 +496,7 @@ See the AWS documentation on Signing AWS API requests for the full SigV4 derivat
 ## Verifying the job
 <a name="sd-bulk-import-verify"></a>
 
-```
+```bash
 aws iotsitewise describe-bulk-import-job \
     --region us-east-1 \
     --job-id d1e2f3a4-5678-90ab-cdef-1234567890ab

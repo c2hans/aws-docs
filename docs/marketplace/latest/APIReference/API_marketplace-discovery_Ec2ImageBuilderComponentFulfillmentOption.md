@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # Ec2ImageBuilderComponentFulfillmentOption
 
-Describes an EC2 Image Builder component fulfillment option.
+Describes an Amazon Elastic Compute Cloud (Amazon EC2) Image Builder component fulfillment option.
 
 ## Contents
 <a name="API_marketplace-discovery_Ec2ImageBuilderComponentFulfillmentOption_Contents"></a>
@@ -34,7 +34,7 @@ Valid Values: `AMAZON_MACHINE_IMAGE | API | CLOUDFORMATION_TEMPLATE | CONTAINER 
 Required: Yes
 
  ** awsSupportedServices **   <a name="AWSMarketplaceService-Type-marketplace-discovery_Ec2ImageBuilderComponentFulfillmentOption-awsSupportedServices"></a>
-The AWS services supported by this EC2 Image Builder component.
+The AWS services that this EC2 Image Builder component supports.
 Type: Array of [AwsSupportedService](API_marketplace-discovery_AwsSupportedService.md) objects
 Required: No
 
@@ -49,7 +49,7 @@ Type: Array of [ContainerOperatingSystem](API_marketplace-discovery_ContainerOpe
 Required: No
 
  ** releaseNotes **   <a name="AWSMarketplaceService-Type-marketplace-discovery_Ec2ImageBuilderComponentFulfillmentOption-releaseNotes"></a>
-Release notes describing changes in this version of the fulfillment option.
+Release notes that describe the changes in this version of the fulfillment option.
 Type: String
 Required: No
 

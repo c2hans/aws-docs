@@ -12,7 +12,7 @@ You can show the datashares that you've created on the producer cluster.
 
 1. Show the datashares. For example:
 
-   ```
+   ```SQL
    show datashares;
    ```
 

@@ -34,7 +34,7 @@ After you create segments, you can start sending campaigns to those segments. Wh
 
 For example, if you use the `GetEndpoint` API operation to retrieve information about an endpoint that was created using this solution, you see a section that resembles the following example:
 
-```
+```json
   ...
   "User": {
     "UserAttributes": {

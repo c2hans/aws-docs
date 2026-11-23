@@ -55,7 +55,7 @@ For more information about inclusion filters, document metadata fields, incremen
 
 You can include a separate file that specifies the document metadata fields/attributes for each file in your Amazon S3 data source and whether to include them in the embeddings when indexing the data source into the vector store. For example, you can create a file in the following format, name it {{fileName.extension.metadata.json}} and upload it to your S3 bucket.
 
-```
+```json
 {
   "metadataAttributes": {
     "company": {
@@ -98,7 +98,7 @@ The `includeForEmbedding` field controls whether a metadata attribute is include
 
 You can also use a simplified format for metadata attributes when you don't need to control embedding behavior:
 
-```
+```json
 {
     "metadataAttributes": {
         "tag": "value"

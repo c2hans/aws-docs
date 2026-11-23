@@ -26,7 +26,7 @@ If you plan to run a script stored in a private GitHub repository, create an AWS
    + In **Source Type**, select **GitHub**.
    + In the **Source Info** box, enter the required information to access the source in the following format.
 
-     ```
+     ```json
      {
        "owner": "{{owner_name}}",
        "repository": "{{repository_name}}",
@@ -38,7 +38,7 @@ If you plan to run a script stored in a private GitHub repository, create an AWS
 
      This example downloads a file named `webserver.yml`.
 
-     ```
+     ```json
      {
          "owner": "TestUser1",
          "repository": "GitHubPrivateTest",
@@ -90,7 +90,7 @@ The S3 permissions that grant the ability to write the data to an S3 bucket are 
 
 1. Run the following command to download and run a script from GitHub.
 
-   ```
+   ```sh
    aws ssm send-command \
        --document-name "AWS-RunRemoteScript" \
        --instance-ids "{{instance-IDs}}"\
@@ -99,7 +99,7 @@ The S3 permissions that grant the ability to write the data to an S3 bucket are 
 
    Here is an example command to run on a local Linux machine.
 
-   ```
+   ```sh
    aws ssm send-command \
        --document-name "AWS-RunRemoteScript" \
        --instance-ids "i-02573cafcfEXAMPLE" \

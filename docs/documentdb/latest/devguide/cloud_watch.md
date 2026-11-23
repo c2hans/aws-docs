@@ -307,7 +307,7 @@ aws cloudwatch get-metric-statistics ^
 ```
 Output from this operation look something like the following.
 
-```
+```json
 {
        "Label": "CPUUtilization",
        "Datapoints": [

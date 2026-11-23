@@ -330,7 +330,7 @@ To change the client routing policy of a responder gateway that already exists, 
 
 Use the following command to change the client routing policy with the AWS Command Line Interface (AWS CLI).
 
-```
+```bash
 $ aws rtbfabric update-responder-gateway \
 --gateway-id {{"rtb-gw-kasoi29asfdhn"}} \
 --client-routing-policy {{ANY_AVAILABILITY_ZONE}} \

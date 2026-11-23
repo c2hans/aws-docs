@@ -25,7 +25,7 @@ For more information about AWS IoT SiteWise supported actions, see [Actions defi
 The following policy allows AWS IoT SiteWise to send asset property values to any AWS IoT Events alarm models.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -54,7 +54,7 @@ The following policy allows AWS IoT SiteWise to send asset property values to an
 The following policy allows AWS IoT SiteWise to send values of a specified asset property to a specified AWS IoT Events alarm model.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -109,7 +109,7 @@ The following policy allows you to update and delete asset models, and use the `
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -138,7 +138,7 @@ If you want to use the alarms feature in SiteWise Monitor portals, you must upda
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

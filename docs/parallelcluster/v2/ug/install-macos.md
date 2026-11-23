@@ -17,7 +17,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Check your Python installation.
 
-```
+```sh
 $ python --version
 ```
 
@@ -28,7 +28,7 @@ If your computer doesn't already have Python installed, or if you want to instal
 
 You can also use `pip` directly to install AWS ParallelCluster. If you don't have `pip`, follow the instructions in the main [installation topic](install.md). Run `pip3 --version` to see if your version of macOS already includes Python and `pip3`.
 
-```
+```sh
 $ pip3 --version
 ```
 
@@ -38,20 +38,20 @@ $ pip3 --version
 
 1. Download and run the `pip3` installation script provided by the Python Packaging Authority.
 
-   ```
+   ```sh
    $ curl -O https://bootstrap.pypa.io/get-pip.py
    $ python3 get-pip.py --user
    ```
 
 1. Use your newly installed `pip3` to install AWS ParallelCluster. We recommend that if you use Python version 3\+, you use the `pip3` command.
 
-   ```
+   ```sh
    $ python3 -m pip install "aws-parallelcluster<3.0" --upgrade --user
    ```
 
 1. Verify that AWS ParallelCluster is installed correctly.
 
-   ```
+   ```sh
    $ pcluster version
    2.11.9
    ```
@@ -60,7 +60,7 @@ $ pip3 --version
 
 To upgrade to the latest version, run the installation command again.
 
-```
+```sh
 $ pip3 install "aws-parallelcluster<3.0" --upgrade --user
 ```
 
@@ -78,14 +78,14 @@ Substitute the version of Python that you have for the version in the preceding 
 
 If you don't know where Python is installed, run `which python`.
 
-```
+```sh
 $ which python3
 /usr/local/bin/python3
 ```
 
 The output might be the path to a symlink, not the path to the actual program. Run `ls -al` to see where it points.
 
-```
+```sh
 $ ls -al /usr/local/bin/python3
 lrwxr-xr-x  1 username  admin  36 Mar 12 12:47 /usr/local/bin/python3 -> ../Cellar/python/{{3.6.8}}/bin/python3
 ```
@@ -96,7 +96,7 @@ lrwxr-xr-x  1 username  admin  36 Mar 12 12:47 /usr/local/bin/python3 -> ../Cell
 
 1. Find your shell's profile script in your user folder. If you're not sure which shell you have, run `echo $SHELL`.
 
-   ```
+   ```sh
    $ ls -a ~
    .  ..  .bash_logout  .bash_profile  .bashrc  Desktop  Documents  Downloads
    ```
@@ -106,7 +106,7 @@ lrwxr-xr-x  1 username  admin  36 Mar 12 12:47 /usr/local/bin/python3 -> ../Cell
 
 1. Add an export command to your profile script.
 
-   ```
+   ```sh
    export PATH={{~/.local/bin}}:$PATH
    ```
 
@@ -114,6 +114,6 @@ lrwxr-xr-x  1 username  admin  36 Mar 12 12:47 /usr/local/bin/python3 -> ../Cell
 
 1. Load the profile into your current session.
 
-   ```
+   ```sh
    $ source ~/{{.bash_profile}}
    ```

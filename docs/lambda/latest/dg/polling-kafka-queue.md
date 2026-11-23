@@ -230,7 +230,7 @@ In provisioned mode, you can group multiple event source mappings within the sam
 
 When Lambda invokes your function with a Queue mode event source, the event payload is identical to a standard Kafka event. Each record includes the topic, partition, offset, timestamp, and base64-encoded key and value:
 
-```
+```json
 {
   "eventSource": "SelfManagedKafka",
   "bootstrapServers": "broker1.example.com:9092,broker2.example.com:9092",

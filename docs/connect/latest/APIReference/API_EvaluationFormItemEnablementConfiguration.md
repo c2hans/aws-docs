@@ -10,7 +10,7 @@ An item enablement configuration.
 <a name="API_EvaluationFormItemEnablementConfiguration_Contents"></a>
 
  ** Action **   <a name="connect-Type-EvaluationFormItemEnablementConfiguration-Action"></a>
-An enablement action that if condition is satisfied.
+The enablement action to apply if the condition is satisfied.
 Type: String
 Valid Values: `DISABLE | ENABLE`
 Required: Yes
@@ -21,7 +21,7 @@ Type: [EvaluationFormItemEnablementCondition](API_EvaluationFormItemEnablementCo
 Required: Yes
 
  ** DefaultAction **   <a name="connect-Type-EvaluationFormItemEnablementConfiguration-DefaultAction"></a>
-An enablement action that if condition is not satisfied.
+The enablement action to apply if the condition is not satisfied. This action is also applied when the condition depends on an external source that is still pending or could not be resolved.
 Type: String
 Valid Values: `DISABLE | ENABLE`
 Required: No

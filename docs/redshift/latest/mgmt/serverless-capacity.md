@@ -155,7 +155,7 @@ You can monitor AI-driven scaling and optimization in the following ways:
 
 Use the following example to query the `SYS_QUERY_HISTORY` view. Replace the sample value with your query text.
 
-```
+```sql
 select query_id,query_text,start_time,end_time, elapsed_time/1000000.0 duration_in_seconds
 from sys_query_history
 where query_text like '{{<query_text>}}'

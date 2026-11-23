@@ -13,7 +13,7 @@ It isn’t necessary to replace the version 1 or 2 of the AWS SDK for Ruby with 
 
 A quick example follows.
 
-```
+```ruby
 require 'aws-sdk-v1' # version 1
 require 'aws-sdk'    # version 2
 require 'aws-sdk-s3' # version 3
@@ -35,7 +35,7 @@ Version 2 differs from version 1 in several important ways.
 +  `Aws.config`– Now a vanilla Ruby hash, instead of a method.
 + Strict constructor options - When constructing a client or resource object in the version 1 SDK, unknown constructor options are ignored. In version 2, unknown constructor options trigger an `ArgumentError`. For example:
 
-  ```
+  ```ruby
   # version 1
   AWS::S3::Client.new(http_reed_timeout: 10)
   # oops, typo'd option is ignored
@@ -54,7 +54,7 @@ Between version 1 and version 2, the client classes have the fewest external dif
 +  `Aws::S3::Client` - The version 1 Amazon S3 client class was hand-coded. Version 2 is generated from a service model. Method names and inputs are very different in version 2.
 +  `Aws::EC2::Client`- Version 2 uses plural names for output lists, version 1 uses the suffix `_set`. For example:
 
-  ```
+  ```ruby
   # version 1
   resp = AWS::EC2::Client.new.describe_security_groups
   resp.security_group_set
@@ -87,7 +87,7 @@ There are no differences between the resource interfaces in version 2 and versio
 There are significant differences between the resource interfaces in version 1 and version 2. Version 1 was entirely hand-coded, where as version 2 resource interfaces are generated from a model. Version 2 resource interfaces are significantly more consistent. Some of the systemic differences include:
 + Separate resource class – In version 2, the service name is a module, not a class. In this module, it is the resource interface:
 
-  ```
+  ```ruby
   # version 1
   s3 = AWS::S3.new
 
@@ -96,7 +96,7 @@ There are significant differences between the resource interfaces in version 1 a
   ```
 + Referencing resources – The version 2 SDK separates collections and individual resource getters into two different methods:
 
-  ```
+  ```ruby
   # version 1
   s3.buckets['bucket-name'].objects['key'].delete
 

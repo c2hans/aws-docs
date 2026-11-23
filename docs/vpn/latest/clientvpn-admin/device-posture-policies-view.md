@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 
 To retrieve the authorization policy attached to an endpoint, use `get-client-vpn-endpoint-authorization-policy`.
 
-```
+```bash
 aws ec2 get-client-vpn-endpoint-authorization-policy \
   --client-vpn-endpoint-id cvpn-endpoint-EXAMPLE
 ```

@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-p
 
 This data feed provides information about all products you've created as the seller of record and all products you're authorized to resell.
 
+RTB Fabric module products appear in this data feed in the same way as SaaS products.
+
 Product data is mutable. This means that when you change the value for one of the following fields, a new record is created in the data feed with a different value for `valid_from` field. For more information about the data feed history columns, see [Historization of the data](data-feed-details.md#data-feed-historization).
 
 The product data feed is refreshed every 24 hours, so new data is available daily.

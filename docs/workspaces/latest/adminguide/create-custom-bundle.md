@@ -388,15 +388,15 @@ One or more AppX packages are in a staged state. This might cause a Sysprep erro
 
 1. In the Windows PowerShell window, enter the following commands to list all staged AppX packages, and press Enter after each one.
 
-   ```
+   ```powershell
    $workSpaceUserName = $env:username
    ```
 
-   ```
+   ```powershell
    $allAppxPackages = Get-AppxPackage -AllUsers
    ```
 
-   ```
+   ```powershell
    $packages = $allAppxPackages |    Where-Object { `
                                    (($_.PackageUserInformation -like "*S-1-5-18*" -and !($_.PackageUserInformation -like "*$workSpaceUserName*")) -and `
                                    ($_.PackageUserInformation -like "*Staged*" -or $_.PackageUserInformation -like "*Installed*")) -or `
@@ -407,13 +407,13 @@ One or more AppX packages are in a staged state. This might cause a Sysprep erro
 
 1. Execute the following command with elevated SYSTEM privileges to remove all staged AppX package provisioning entries, and press Enter.
 
-   ```
+   ```powershell
    $packages | Remove-AppxPackage -ErrorAction SilentlyContinue
    ```
 
 1. Run the Image Compatibility Checker again. If this test still fails, enter the following commands to remove all AppX packages, and press Enter after each one.
 
-   ```
+   ```powershell
    Get-AppxProvisionedPackage -Online | Remove-AppxProvisionedPackage -Online -ErrorAction SilentlyContinue
    ```
 
@@ -449,7 +449,7 @@ To reset the rearm count to a value other than 0, see [ Sysprep (Generalize) a W
 If no Image Compatibility Checker tests have a status of **FAILED**, but you are still unable to create an image from the WorkSpace, check for the following issues:
 + Make sure that the WorkSpace isn't assigned to a user within a **Domain Guests** group. To check if there are any domain accounts, run the following PowerShell command.
 
-  ```
+  ```powershell
   Get-WmiObject -Class Win32_Service | Where-Object { $_.StartName -like "*$env:USERDOMAIN*" }
   ```
 + For Windows 7 WorkSpaces only: If problems occur while the user profile is being copied during image creation, check for the following issues:

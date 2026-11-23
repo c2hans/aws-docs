@@ -76,7 +76,7 @@ Before deploying the DataZone Governed Lakehouse Starter Package using the CLI m
 
  **Step 1: Clone the MDAA repository**
 
-```
+```bash
 git clone https://github.com/aws/modern-data-architecture-accelerator.git &&
 cd modern-data-architecture-accelerator
 ```

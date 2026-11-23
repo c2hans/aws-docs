@@ -15,7 +15,7 @@ To monitor the type and number of events sent to Amazon Personalize, use Amazon 
 
  The following code shows how to provide an `eventAttributionSource` for an event in a PutEvents operation.
 
-```
+```py
 response = personalize_events.put_events(
     trackingId = '{{eventTrackerId}}',
     userId= '{{userId}}',
@@ -36,7 +36,7 @@ print(statusCode)
 
 The following code shows how to provide a `recommendationId` for an event in a PutEvents operation.
 
-```
+```py
 response = personalize_events.put_events(
     trackingId = '{{eventTrackerId}}',
     userId= '{{userId}}',

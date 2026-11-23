@@ -20,7 +20,7 @@ To create a fleet, run the following command.
   The description can have 1-2048 characters.
 + Replace {{signal-catalog-arn}} with the ARN of the signal catalog.
 
-```
+```bash
 aws iotfleetwise create-fleet \
    --fleet-id {{fleet-id}} \
    --description {{description}} \
@@ -34,7 +34,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

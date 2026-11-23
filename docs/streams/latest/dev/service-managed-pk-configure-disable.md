@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-co
 
 To switch a stream back to user-managed partition keys, call the `UpdateStreamRecordDistributionStrategy` API with `RecordDistributionStrategy` set to `USER_PARTITION_KEY`.
 
-```
+```bash
 aws kinesis update-stream-record-distribution-strategy \
     --stream-arn arn:aws:kinesis:us-east-1:111122223333:stream/my-telemetry-stream \
     --record-distribution-strategy USER_PARTITION_KEY

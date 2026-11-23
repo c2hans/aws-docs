@@ -53,7 +53,7 @@ To update the access URL by using the AWS CLI, call [UpdateApplication](https://
 
 The following AWS CLI command updates the access URL:
 
-```
+```bash
 aws appintegrations update-application \
     --region {{replica-region}} \
     --arn {{application-arn}} \
@@ -92,7 +92,7 @@ The following procedure shows you how to create an AgentCore gateway in the repl
    + Open the Connect Customer [console](https://console.aws.amazon.com/connect/) (https://console.aws.amazon.com/connect/) in the Region of your replica instance, choose **Integrations**, select the MCP server, and edit it. Under **Integration details**, select the gateway that you created in the replica Region, and save your changes.
    + Call UpdateApplication in the Region of your replica instance. Set the access URL to the URL of the new gateway. The following AWS CLI command points the MCP server to the new gateway. Replace the placeholder values as described after the command.
 
-     ```
+     ```bash
      aws appintegrations update-application \
          --region {{replica-region}} \
          --arn {{application-arn}} \

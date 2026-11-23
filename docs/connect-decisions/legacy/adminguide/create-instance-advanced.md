@@ -77,7 +77,7 @@ Using an AWS owned key is the recommended default setting for AWS Supply Chain i
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [

@@ -29,13 +29,13 @@ The name of the view to show.
 
  Following is the view definition for the view `LA_Venues_v`.
 
-```
+```sql
 create view LA_Venues_v as select * from venue where venuecity='Los Angeles';
 ```
 
 Following is an example of the SHOW VIEW command and output for the view defined preceding.
 
-```
+```sql
 show view LA_Venues_v;
 ```
 
@@ -50,13 +50,13 @@ FROM venue WHERE ((venue.venuecity)::text = 'Los Angeles'::text);
 
 Following is the view definition for the view `public.Sports_v` in the schema `public`.
 
-```
+```sql
 create view public.Sports_v as select * from category where catgroup='Sports';
 ```
 
 Following is an example of the SHOW VIEW command and output for the view defined preceding.
 
-```
+```sql
 show view public.Sports_v;
 ```
 

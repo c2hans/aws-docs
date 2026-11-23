@@ -46,7 +46,7 @@ The following example Go Lambda function code takes in information about an orde
 
 **Example `main.go` Lambda Event Function**
 
-```
+```go
 package main
 
 import (
@@ -322,7 +322,7 @@ In this example, we initialized our Amazon S3 client in the `init()` function to
 
 After you configure and initialize your SDK client, you can then use it to interact with other AWS services. The example code calls the Amazon S3 `PutObject` API as follows:
 
-```
+```go
 _, err = s3Client.PutObject(ctx, &s3.PutObjectInput{
     Bucket: &bucketName,
     Key:    &key,
@@ -335,7 +335,7 @@ _, err = s3Client.PutObject(ctx, &s3.PutObjectInput{
 
 In your handler code, you can reference any [environment variables](configuration-envvars.md) by using the `os.Getenv()` method. In this example, we reference the defined `RECEIPT_BUCKET` environment variable using the following line of code:
 
-```
+```go
 // Access environment variables
     bucketName := os.Getenv("RECEIPT_BUCKET")
     if bucketName == "" {

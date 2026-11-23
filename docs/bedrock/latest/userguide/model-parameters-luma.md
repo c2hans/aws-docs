@@ -20,7 +20,7 @@ For more information using the Luma AI models with the APIs, see [Video Generati
 
 Luma AI inference call.
 
-```
+```json
 POST /async-invoke HTTP/1.1
 Content-type: application/json
 {
@@ -56,7 +56,7 @@ Generate videos from text prompts using the Luma Ray 2 model. The model supports
 
 **Basic Text-to-Video Request**
 
-```
+```json
 {
   "modelId": "luma.ray-v2:0",
   "modelInput": {
@@ -72,7 +72,7 @@ Generate videos from text prompts using the Luma Ray 2 model. The model supports
 
 **Advanced Text-to-Video with Options**
 
-```
+```json
 {
   "modelId": "luma.ray-v2:0",
   "modelInput": {
@@ -94,7 +94,7 @@ Generate videos from text prompts using the Luma Ray 2 model. The model supports
 
 Example with resolution and duration parameters.
 
-```
+```json
 {
   "modelId": "luma.ray-v2:0",
   "modelInput": {
@@ -117,7 +117,7 @@ Transform static images into dynamic videos by providing keyframes. You can spec
 
 **Basic Image-to-Video with Start Frame**
 
-```
+```json
 {
   "modelId": "luma.ray-v2:0",
   "modelInput": {
@@ -143,7 +143,7 @@ Transform static images into dynamic videos by providing keyframes. You can spec
 
 **Image-to-Video with Start and End Frames**
 
-```
+```json
 {
   "modelId": "luma.ray-v2:0",
   "modelInput": {

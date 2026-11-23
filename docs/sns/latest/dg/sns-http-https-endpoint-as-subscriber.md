@@ -18,7 +18,7 @@ The request contains the subject and message that were published to the topic al
 **Note**
 Amazon SNS considers all 5XX errors and 429 (too many requests sent) errors as retryable. These errors are subject to the delivery policy. All other errors are considered as permanent failures and retries will not be attempted. However, messages that Amazon SNS self-throttles due to the `maxReceivesPerSecond` setting are not subject to the delivery retry policy. Self-throttled messages are re-queued and continue to be delivered as capacity allows, without consuming retry attempts.
 
-```
+```http
 POST / HTTP/1.1
     x-amz-sns-message-type: Notification
     x-amz-sns-message-id: da41e39f-ea4d-435a-b922-c6aae3915ebe

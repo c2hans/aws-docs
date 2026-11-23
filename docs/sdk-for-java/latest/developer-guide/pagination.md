@@ -24,7 +24,7 @@ The following imports apply to all examples in this synchronous pagination secti
 #### Imports
 <a name="synchronous-pagination-ex-import"></a>
 
-```
+```java
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.Random;
@@ -55,7 +55,7 @@ import software.amazon.awssdk.services.s3.model.HeadBucketRequest;
 import software.amazon.awssdk.services.s3.model.HeadBucketResponse;
 ```
 
-```
+```java
         ListObjectsV2Request listReq = ListObjectsV2Request.builder()
             .bucket(bucketName)
             .maxKeys(1)
@@ -81,7 +81,7 @@ The following examples show ways to iterate over the objects returned in the res
 
 The following snippet uses the `stream` method on the response content to iterate over the paginated item collection.
 
-```
+```java
         // Helper method to work with paginated collection of items directly.
         listRes.contents().stream()
             .forEach(content -> System.out
@@ -95,7 +95,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 
 Since `SdkIterable` extends the `Iterable` interface, you can process the contents like any `Iterable`. The following snippet uses standard `for-each` loop to iterate through the contents of the response.
 
-```
+```java
         for (S3Object content : listRes.contents()) {
             System.out.println(" Key: " + content.key() + " size = " + content.size());
         }
@@ -108,7 +108,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 
 If your use case requires it, manual pagination is still available. Use the next token in the response object for the subsequent requests. The following example uses a `while` loop.
 
-```
+```java
         ListObjectsV2Request listObjectsReqManual = ListObjectsV2Request.builder()
             .bucket(bucketName)
             .maxKeys(1)
@@ -145,7 +145,7 @@ The `items().stream()` method returns a standard Java `Stream`, so you can proce
 #### Imports
 <a name="pagination-limit-results-sync-import"></a>
 
-```
+```java
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -156,7 +156,7 @@ import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.QueryRequest;
 ```
 
-```
+```java
 DynamoDbClient dynamoDbClient = DynamoDbClient.create();
 
 QueryRequest request = QueryRequest.builder()
@@ -194,7 +194,7 @@ The following imports apply to all examples in this asynchronous pagination sect
 ##### Imports
 <a name="use-a-subscriber-ex-imports"></a>
 
-```
+```java
 import io.reactivex.rxjava3.core.Flowable;
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
@@ -212,7 +212,7 @@ import java.util.concurrent.ExecutionException;
 
 The following code acquires a `ListTablesPublisher` instance.
 
-```
+```java
         // Creates a default client with credentials and region loaded from the
         // environment.
         final DynamoDbAsyncClient asyncClient = DynamoDbAsyncClient.create();
@@ -229,7 +229,7 @@ The subscriber's `onNext` method processes a response page by accessing all the 
 
 The `onError` method is triggered if an error occurs while retrieving data. Finally, the `onComplete` method is called when all pages have been requested.
 
-```
+```java
         // A Subscription represents a one-to-one life-cycle of a Subscriber subscribing
         // to a Publisher.
         publisher.subscribe(new Subscriber<ListTablesResponse>() {
@@ -275,7 +275,7 @@ The `SdkPublisher` interface that `ListTablesPublisher` implements has a `subscr
 
 The `subscribe` method from this interface can be used for simple use cases when an `org.reactivestreams.Subscriber` might be too much overhead. As the code below consumes each page, it calls the `tableNames` method on each. The `tableNames` method returns a `java.util.List` of DynamoDB table names that are processed with the `forEach` method.
 
-```
+```java
         // Use a Consumer for simple use cases.
         CompletableFuture<Void> future = publisher.subscribe(
                 response -> response.tableNames()
@@ -294,7 +294,7 @@ The following examples show ways to iterate over the objects returned in the res
 
 The following code acquires an `SdkPublisher` of the underlying collection of table names.
 
-```
+```java
         // Create a default client with credentials and region loaded from the
         // environment.
         final DynamoDbAsyncClient asyncClient = DynamoDbAsyncClient.create();
@@ -308,7 +308,7 @@ The following code uses an anonymous implementation of `org.reactivestreams.Subs
 
 The subscriber's `onNext` method processes an individual element of the collection. In this case, it's a table name. After the table name is processed, another table name is requested from the publisher. This method that is called repeatedly until all table names are retrieved.
 
-```
+```java
         // Use a Subscriber.
         publisher.subscribe(new Subscriber<String>() {
             private Subscription subscription;
@@ -342,7 +342,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 
 The following example uses the `subscribe` method of `SdkPublisher` that takes a `Consumer` to process each item.
 
-```
+```java
         // Use a Consumer.
         CompletableFuture<Void> future = publisher.subscribe(System.out::println);
         future.get();
@@ -359,7 +359,7 @@ To use the library, add it as a dependency. If using Maven, the example shows th
 
  **POM Entry**
 
-```
+```xml
 <dependency>
       <groupId>io.reactivex.rxjava3</groupId>
       <artifactId>rxjava</artifactId>
@@ -369,7 +369,7 @@ To use the library, add it as a dependency. If using Maven, the example shows th
 
  **Code**
 
-```
+```java
         DynamoDbAsyncClient asyncClient = DynamoDbAsyncClient.create();
         ListTablesPublisher publisher = asyncClient.listTablesPaginator(ListTablesRequest.builder()
                 .build());
@@ -397,7 +397,7 @@ The `items()` method returns an `SdkPublisher`. The following example uses the `
 #### Imports
 <a name="pagination-limit-results-async-import"></a>
 
-```
+```java
 import java.util.Collections;
 import java.util.concurrent.CompletableFuture;
 
@@ -406,7 +406,7 @@ import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.QueryRequest;
 ```
 
-```
+```java
 DynamoDbAsyncClient dynamoDbAsyncClient = DynamoDbAsyncClient.create();
 
 QueryRequest request = QueryRequest.builder()

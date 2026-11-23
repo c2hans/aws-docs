@@ -57,7 +57,7 @@ We have taken pains to make AWS CDK app development in each language follow that
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const bucket = new s3.Bucket(this, 'amzn-s3-demo-bucket', {
   bucketName: 'my-bucket',
   versioned: true,
@@ -67,7 +67,7 @@ const bucket = new s3.Bucket(this, 'amzn-s3-demo-bucket', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const bucket = new s3.Bucket(this, 'amzn-s3-demo-bucket', {
   bucketName: 'my-bucket',
   versioned: true,
@@ -77,7 +77,7 @@ const bucket = new s3.Bucket(this, 'amzn-s3-demo-bucket', {
 ------
 #### [ Python ]
 
-```
+```python
 bucket = s3.Bucket("amzn-s3-demo-bucket", bucket_name="my-bucket", versioned=True,
             website_redirect=s3.RedirectTarget(host_name="aws.amazon.com"))
 ```
@@ -85,7 +85,7 @@ bucket = s3.Bucket("amzn-s3-demo-bucket", bucket_name="my-bucket", versioned=Tru
 ------
 #### [ Java ]
 
-```
+```java
 Bucket bucket = Bucket.Builder.create(self, "amzn-s3-demo-bucket")
                       .bucketName("my-bucket")
                       .versioned(true)
@@ -97,7 +97,7 @@ Bucket bucket = Bucket.Builder.create(self, "amzn-s3-demo-bucket")
 ------
 #### [ C\# ]
 
-```
+```csharp
 var bucket = new Bucket(this, "amzn-s3-demo-bucket", new BucketProps {
                       BucketName = "amzn-s3-demo-bucket",
                       Versioned  = true,
@@ -200,7 +200,7 @@ The recommended approach for new users developing locally, who are not given a m
 
 Before accessing AWS services, you need an active AWS access portal session for the AWS CDK to use IAM Identity Center authentication to resolve credentials. Depending on your configured session lengths, your access will eventually expire and the AWS CDK will encounter an authentication error. Run the following command in the AWS CLI to sign in to the AWS access portal.
 
-```
+```bash
 aws sso login
 ```
 
@@ -208,7 +208,7 @@ aws sso login
 
 To test if you already have an active session, run the following AWS CLI command.
 
-```
+```bash
 aws sts get-caller-identity
 ```
 

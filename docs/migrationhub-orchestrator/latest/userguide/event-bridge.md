@@ -38,7 +38,7 @@ Events in EventBridge are represented as JSON objects. The fields that are uniqu
 
 The following example shows a status change event for Migration Hub Orchestrator with the initial workflow status of `NOT_STARTED`:
 
-```
+```json
 {
   "version": "0",
   "id": "12345678-1234-1234-1234-123456789012",

@@ -30,7 +30,7 @@ Note that, if you don't want to specify all the callbacks, you can also use the 
 
 The `onSuccess()` callback is triggered when a dataset is successfully downloaded from the sync store.
 
-```
+```java
 @Override
 public void onSuccess(Dataset dataset, List<Record> newRecords) {
 }
@@ -40,7 +40,7 @@ public void onSuccess(Dataset dataset, List<Record> newRecords) {
 
 onFailure() is called if an exception occurs during synchronization.
 
-```
+```java
 @Override
 public void onFailure(DataStorageException dse) {
 }
@@ -50,7 +50,7 @@ public void onFailure(DataStorageException dse) {
 
 Conflicts may arise if the same key has been modified on the local store and in the sync store. The `onConflict()` method handles conflict resolution. If you don't implement this method, the Amazon Cognito Sync client defaults to using the most recent change.
 
-```
+```java
 @Override
 public boolean onConflict(Dataset dataset, final List<SyncConflict> conflicts) {
     List<Record> resolvedRecords = new ArrayList<Record>();
@@ -77,7 +77,7 @@ public boolean onConflict(Dataset dataset, final List<SyncConflict> conflicts) {
 
 When a dataset is deleted, the Amazon Cognito client uses the `SyncCallback` interface to confirm whether the local cached copy of the dataset should be deleted too. Implement the `onDatasetDeleted()` method to tell the client SDK what to do with the local data.
 
-```
+```java
 @Override
 public boolean onDatasetDeleted(Dataset dataset, String datasetName) {
     // return true to delete the local copy of the dataset
@@ -89,7 +89,7 @@ public boolean onDatasetDeleted(Dataset dataset, String datasetName) {
 
 When two previously unconnected identities are linked together, all of their datasets are merged. Applications are notified of the merge through the `onDatasetsMerged()` method:
 
-```
+```java
 @Override
 public boolean onDatasetsMerged(Dataset dataset, List<String> datasetNames) {
     // return false to handle Dataset merge outside the synchronization callback
@@ -104,7 +104,7 @@ public boolean onDatasetsMerged(Dataset dataset, List<String> datasetNames) {
 
 The Amazon Cognito client emits a number of `NSNotification` events during a synchronize call. You can register to monitor these notifications via the standard `NSNotificationCenter`:
 
-```
+```objectivec
 [NSNotificationCenter defaultCenter]
   addObserver:self
   selector:@selector(myNotificationHandler:)
@@ -142,7 +142,7 @@ By implementing and assigning an AWSCognitoRecordConflictHandler you can alter t
 
 You can set the conflict resolution handler at the client level:
 
-```
+```objectivec
 client.conflictHandler = ^AWSCognitoResolvedConflict* (NSString *datasetName, AWSCognitoConflict *conflict) {
     // always choose local changes
     return [conflict resolveWithLocalRecord];
@@ -151,7 +151,7 @@ client.conflictHandler = ^AWSCognitoResolvedConflict* (NSString *datasetName, AW
 
 Or at the dataset level:
 
-```
+```objectivec
 dataset.conflictHandler = ^AWSCognitoResolvedConflict* (NSString *datasetName, AWSCognitoConflict *conflict) {
     // override and always choose remote changes
     return [conflict resolveWithRemoteRecord];
@@ -164,7 +164,7 @@ When a dataset is deleted, the Amazon Cognito client uses the `AWSCognitoDataset
 
 You can set the dataset deleted handler at the client level:
 
-```
+```objectivec
 client.datasetDeletedHandler = ^BOOL (NSString *datasetName) {
     // make a backup of the data if you choose
     ...
@@ -175,7 +175,7 @@ client.datasetDeletedHandler = ^BOOL (NSString *datasetName) {
 
 Or at the dataset level:
 
-```
+```objectivec
 dataset.datasetDeletedHandler = ^BOOL (NSString *datasetName) {
     // override default and keep the local data
     return NO;
@@ -190,7 +190,7 @@ If no `DatasetMergeHandler` is implemented, these datasets are ignored, but cont
 
 You can set the dataset merge handler at the client level:
 
-```
+```objectivec
 client.datasetMergedHandler = ^(NSString *datasetName, NSArray *datasets) {
     // Blindly delete the datasets
     for (NSString *name in datasets) {
@@ -203,7 +203,7 @@ client.datasetMergedHandler = ^(NSString *datasetName, NSArray *datasets) {
 
 Or at the dataset level:
 
-```
+```objectivec
 dataset.datasetMergedHandler = ^(NSString *datasetName, NSArray *datasets) {
     // Blindly delete the datasets
     for (NSString *name in datasets) {
@@ -224,7 +224,7 @@ dataset.datasetMergedHandler = ^(NSString *datasetName, NSArray *datasets) {
 
 The Amazon Cognito client emits a number of `NSNotification` events during a synchronize call. You can register to monitor these notifications via the standard `NSNotificationCenter`:
 
-```
+```swift
 NSNotificationCenter.defaultCenter().addObserver(observer: self,
    selector: "myNotificationHandler",
    name:NOTIFICATION_TYPE,
@@ -261,7 +261,7 @@ By implementing and assigning an `AWSCognitoRecordConflictHandler` you can alter
 
 You can set the conflict resolution handler at the client level:
 
-```
+```swift
 client.conflictHandler = {
     (datasetName: String?, conflict: AWSCognitoConflict?) -> AWSCognitoResolvedConflict? in
     return conflict.resolveWithLocalRecord()
@@ -270,7 +270,7 @@ client.conflictHandler = {
 
 Or at the dataset level:
 
-```
+```swift
 dataset.conflictHandler = {
     (datasetName: String?, conflict: AWSCognitoConflict?) -> AWSCognitoResolvedConflict? in
     return conflict.resolveWithLocalRecord()
@@ -283,7 +283,7 @@ When a dataset is deleted, the Amazon Cognito client uses the `AWSCognitoDataset
 
 You can set the dataset deleted handler at the client level:
 
-```
+```swift
 client.datasetDeletedHandler = {
       (datasetName: String!) -> Bool in
       // make a backup of the data if you choose
@@ -295,7 +295,7 @@ client.datasetDeletedHandler = {
 
 Or at the dataset level:
 
-```
+```swift
 dataset.datasetDeletedHandler = {
       (datasetName: String!) -> Bool in
       // make a backup of the data if you choose
@@ -313,7 +313,7 @@ If no `DatasetMergeHandler` is implemented, these datasets are ignored, but cont
 
 You can set the dataset merge handler at the client level:
 
-```
+```swift
 client.datasetMergedHandler = {
     (datasetName: String!, datasets: [AnyObject]!) -> Void in
     for nameObject in datasets {
@@ -328,7 +328,7 @@ client.datasetMergedHandler = {
 
 Or at the dataset level:
 
-```
+```swift
 dataset.datasetMergedHandler = {
     (datasetName: String!, datasets: [AnyObject]!) -> Void in
     for nameObject in datasets {
@@ -351,7 +351,7 @@ dataset.datasetMergedHandler = {
 
 When performing a synchronize() on a dataset, you can optionally specify callbacks to handle each of the following states:
 
-```
+```javascript
 dataset.synchronize({
 
    onSuccess: function(dataset, newRecords) {
@@ -381,7 +381,7 @@ dataset.synchronize({
 
 The `onSuccess()` callback is triggered when a dataset is successfully updated from the sync store. If you do not define a callback, the synchronization will succeed silently.
 
-```
+```javascript
 onSuccess: function(dataset, newRecords) {
    console.log('Successfully synchronized ' + newRecords.length + ' new records.');
 }
@@ -391,7 +391,7 @@ onSuccess: function(dataset, newRecords) {
 
 `onFailure()` is called if an exception occurs during synchronization. If you do not define a callback, the synchronization will fail silently.
 
-```
+```javascript
 onFailure: function(err) {
    console.log('Synchronization failed.');
    console.log(err);
@@ -402,7 +402,7 @@ onFailure: function(err) {
 
 Conflicts may arise if the same key has been modified on the local store and in the sync store. The `onConflict()` method handles conflict resolution. If you don't implement this method, the synchronization will be aborted when there is a conflict.
 
-```
+```javascript
 onConflict: function(dataset, conflicts, callback) {
 
    var resolved = [];
@@ -435,7 +435,7 @@ onConflict: function(dataset, conflicts, callback) {
 
 When a dataset is deleted, the Amazon Cognito client uses the `onDatasetDeleted()` callback to decide whether the local cached copy of the dataset should be deleted too. By default, the dataset is not deleted.
 
-```
+```javascript
 onDatasetDeleted: function(dataset, datasetName, callback) {
 
    // Return true to delete the local copy of the dataset.
@@ -450,7 +450,7 @@ onDatasetDeleted: function(dataset, datasetName, callback) {
 
 When two previously unconnected identities are linked together, all of their datasets are merged. Applications are notified of the merge through the `onDatasetsMerged()` callback.
 
-```
+```javascript
 onDatasetMerged: function(dataset, datasetNames, callback) {
 
    // Return true to continue the synchronization process.
@@ -466,7 +466,7 @@ onDatasetMerged: function(dataset, datasetNames, callback) {
 
 After you open or create a dataset, you can set different callbacks to it that are triggered when you use the Synchronize method. This is the way to register your callbacks to them:
 
-```
+```csharp
 dataset.OnSyncSuccess += this.HandleSyncSuccess;
 dataset.OnSyncFailure += this.HandleSyncFailure;
 dataset.OnSyncConflict = this.HandleSyncConflict;
@@ -480,7 +480,7 @@ Note that `SyncSuccess` and `SyncFailure` use \+= instead of = so you can subscr
 
 The `OnSyncSuccess` callback is triggered when a dataset is successfully updated from the cloud. If you do not define a callback, the synchronization will succeed silently.
 
-```
+```csharp
 private void HandleSyncSuccess(object sender, SyncSuccessEvent e)
 {
     // Continue with your game flow, display the loaded data, etc.
@@ -491,7 +491,7 @@ private void HandleSyncSuccess(object sender, SyncSuccessEvent e)
 
 `OnSyncFailure` is called if an exception occurs during synchronization. If you do not define a callback, the synchronization will fail silently.
 
-```
+```csharp
 private void HandleSyncFailure(object sender, SyncFailureEvent e)
 {
     Dataset dataset = sender as Dataset;
@@ -509,7 +509,7 @@ private void HandleSyncFailure(object sender, SyncFailureEvent e)
 
 Conflicts may arise if the same key has been modified on the local store and in the sync store. The `OnSyncConflict` callback handles conflict resolution. If you don't implement this method, the synchronization will be aborted when there is a conflict.
 
-```
+```csharp
 private bool HandleSyncConflict(Dataset dataset, List < SyncConflict > conflicts)
 {
   if (dataset.Metadata != null) {
@@ -537,7 +537,7 @@ private bool HandleSyncConflict(Dataset dataset, List < SyncConflict > conflicts
 
 When a dataset is deleted, the Amazon Cognito client uses the `OnDatasetDeleted` callback to decide whether the local cached copy of the dataset should be deleted too. By default, the dataset is not deleted.
 
-```
+```csharp
 private bool HandleDatasetDeleted(Dataset dataset)
   {
       Debug.Log(dataset.Metadata.DatasetName + " Dataset has been deleted");
@@ -551,7 +551,7 @@ private bool HandleDatasetDeleted(Dataset dataset)
 
 When two previously unconnected identities are linked together, all of their datasets are merged. Applications are notified of the merge through the `OnDatasetsMerged` callback.
 
-```
+```csharp
 public bool HandleDatasetMerged(Dataset localDataset, List<string> mergedDatasetNames)
 {
     foreach (string name in mergedDatasetNames)
@@ -586,7 +586,7 @@ public bool HandleDatasetMerged(Dataset localDataset, List<string> mergedDataset
 
 After you open or create a dataset, you can set different callbacks to it that are triggered when you use the Synchronize method. This is the way to register your callbacks to them:
 
-```
+```csharp
 dataset.OnSyncSuccess += this.HandleSyncSuccess;
 dataset.OnSyncFailure += this.HandleSyncFailure;
 dataset.OnSyncConflict = this.HandleSyncConflict;
@@ -600,7 +600,7 @@ Note that `SyncSuccess` and `SyncFailure` use \+= instead of = so you can subscr
 
 The `OnSyncSuccess` callback is triggered when a dataset is successfully updated from the cloud. If you do not define a callback, the synchronization will succeed silently.
 
-```
+```csharp
 private void HandleSyncSuccess(object sender, SyncSuccessEventArgs e)
 {
     // Continue with your game flow, display the loaded data, etc.
@@ -611,7 +611,7 @@ private void HandleSyncSuccess(object sender, SyncSuccessEventArgs e)
 
 `OnSyncFailure` is called if an exception occurs during synchronization. If you do not define a callback, the synchronization will fail silently.
 
-```
+```csharp
 private void HandleSyncFailure(object sender, SyncFailureEventArgs e)
 {
     Dataset dataset = sender as Dataset;
@@ -627,7 +627,7 @@ private void HandleSyncFailure(object sender, SyncFailureEventArgs e)
 
 Conflicts may arise if the same key has been modified on the local store and in the sync store. The `OnSyncConflict` callback handles conflict resolution. If you don't implement this method, the synchronization will be aborted when there is a conflict.
 
-```
+```csharp
 private bool HandleSyncConflict(Dataset dataset, List < SyncConflict > conflicts)
 {
   if (dataset.Metadata != null) {
@@ -655,7 +655,7 @@ private bool HandleSyncConflict(Dataset dataset, List < SyncConflict > conflicts
 
 When a dataset is deleted, the Amazon Cognito client uses the `OnDatasetDeleted` callback to decide whether the local cached copy of the dataset should be deleted too. By default, the dataset is not deleted.
 
-```
+```csharp
 private bool HandleDatasetDeleted(Dataset dataset)
 {
     Console.WriteLine(dataset.Metadata.DatasetName + " Dataset has been deleted");
@@ -669,7 +669,7 @@ private bool HandleDatasetDeleted(Dataset dataset)
 
 When two previously unconnected identities are linked together, all of their datasets are merged. Applications are notified of the merge through the `OnDatasetsMerged` callback.
 
-```
+```csharp
 public bool HandleDatasetMerged(Dataset localDataset, List<string> mergedDatasetNames)
 {
     foreach (string name in mergedDatasetNames)

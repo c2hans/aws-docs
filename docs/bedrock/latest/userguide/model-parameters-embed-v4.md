@@ -27,7 +27,7 @@ The model ID for Cohere Embed v4 is `cohere.embed-v4`.
 
 Content type: application/json
 
-```
+```json
 {
   "input_type": "search_document | search_query | classification | clustering",
   "texts": ["..."],                      // optional; text-only
@@ -74,7 +74,7 @@ Content type: application/json
 
 If you requested a single embedding type (e.g., only `float`):
 
-```
+```json
 {
 "id": "string",
 "embeddings": [[ /* length = output_dimension */ ]],
@@ -86,7 +86,7 @@ If you requested a single embedding type (e.g., only `float`):
 
 If you requested multiple embedding types (e.g., `["float","int8"]`):
 
-```
+```json
 {
   "id": "string",
   "embeddings": {
@@ -110,7 +110,7 @@ If you requested multiple embedding types (e.g., `["float","int8"]`):
 
 **Request**
 
-```
+```json
 {
   "input_type": "search_document",
   "inputs": [
@@ -130,7 +130,7 @@ If you requested multiple embedding types (e.g., `["float","int8"]`):
 
 **Response (truncated)**
 
-```
+```json
 {
   "id": "836a33cc-61ec-4e65-afaf-c4628171a315",
   "embeddings": { "int8": [[ 7, -3, ... ]] },
@@ -148,7 +148,7 @@ If you requested multiple embedding types (e.g., `["float","int8"]`):
 
 **Request**
 
-```
+```json
 {
   "input_type": "search_document",
   "texts": [
@@ -160,7 +160,7 @@ If you requested multiple embedding types (e.g., `["float","int8"]`):
 
 **Response (sample)**
 
-```
+```json
 {
   "response_type": "embeddings_floats",
   "embeddings": [
@@ -176,7 +176,7 @@ If you requested multiple embedding types (e.g., `["float","int8"]`):
 ------
 #### [ Text input ]
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -277,7 +277,7 @@ if __name__ == "__main__":
 ------
 #### [ Mixed modalities ]
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """

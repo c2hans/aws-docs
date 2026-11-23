@@ -35,7 +35,7 @@ pip install strands-agents strands-agents-tools
 
 Run this example:
 
-```
+```Python
 import asyncio
 from strands.experimental.bidi.agent import BidiAgent
 from strands.experimental.bidi.io.audio import BidiAudioIO

@@ -30,7 +30,7 @@ The Windows variant gives the RDP user local Administrator access. It also adds 
 
 Submit the job:
 
-```
+```bash
 # Linux: 60-minute session
 ./submit.sh
 
@@ -43,6 +43,6 @@ Submit the job:
 
 After the job starts, find the managed node ID in the job log and connect:
 
-```
+```bash
 aws ssm start-session --target mi-{{XXXXXXXXX}} --region {{region}}
 ```

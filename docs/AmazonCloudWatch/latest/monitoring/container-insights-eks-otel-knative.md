@@ -22,7 +22,7 @@ Knative metrics collection is enabled by default when the following requirements
 + Amazon EKS cluster running Kubernetes 1.28 or later
 + Knative Serving installed and running in the cluster (default namespace: `knative-serving`)
 + On Knative Serving 1.19 and later, Knative configured to serve Prometheus metrics (see [Turning on metrics in Knative Serving 1.19 and later](#container-insights-eks-otel-knative-119))
-+ OTel Container Insights enabled on the cluster (see [Quick start: OTel Container Insights on Amazon EKS](container-insights-eks-otel-quickstart.md))
++ OTel Container Insights enabled on the cluster (see [Quick start](container-insights-eks-otel-quickstart.md))
 + The `amazon-cloudwatch-observability` add-on in `ACTIVE` status
 
 ## Configuring Knative metrics collection

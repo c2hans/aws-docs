@@ -174,7 +174,7 @@ For more information, see [Creating an Amazon ECS cluster for Fargate workloads]
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecs#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ecs.EcsClient;
 import software.amazon.awssdk.services.ecs.model.ExecuteCommandConfiguration;
@@ -253,7 +253,7 @@ public class CreateCluster {
 **Tools for PowerShell V4**
 **Example 1: This cmdlet creates a new Amazon ECS cluster. **
 
-```
+```powershell
 New-ECSCluster -ClusterName "LAB-ECS-CL" -Setting @{Name="containerInsights"; Value="enabled"}
 ```
 **Output:**
@@ -279,7 +279,7 @@ Tags                              : {}
 **Tools for PowerShell V5**
 **Example 1: This cmdlet creates a new Amazon ECS cluster. **
 
-```
+```powershell
 New-ECSCluster -ClusterName "LAB-ECS-CL" -Setting @{Name="containerInsights"; Value="enabled"}
 ```
 **Output:**
@@ -308,7 +308,7 @@ Tags                              : {}
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -368,7 +368,7 @@ class EcsWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ecs#code-examples).
 
-```
+```rust
 async fn make_cluster(client: &aws_sdk_ecs::Client, name: &str) -> Result<(), aws_sdk_ecs::Error> {
     let cluster = client.create_cluster().cluster_name(name).send().await?;
     println!("cluster created: {:?}", cluster);

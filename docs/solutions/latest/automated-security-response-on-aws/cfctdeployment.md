@@ -62,7 +62,7 @@ AWS Solutions use two buckets: a bucket for global access to templates, which is
 **1. Configure the S3 Bucket**
 Pick a unique bucket name, for example, asr-staging. Set two environment variables on your terminal, one should be the base bucket name with -reference as suffix, the other with your intended deployment region as suffix:
 
-```
+```js
 export BASE_BUCKET_NAME=asr-staging-$(date +%s)
 export TEMPLATE_BUCKET_NAME=$BASE_BUCKET_NAME-reference
 export REGION=us-east-1
@@ -83,7 +83,7 @@ When creating your buckets, ensure they are not publicly accessible. Use random 
 **3. S3 buckets policy setup**
 Update the $TEMPLATE\_BUCKET\_NAME S3 bucket policy to include PutObject permissions for the execute account ID. Assign this permission to an IAM role within the execute account that is authorized to write to the bucket. This setup allows you to avoid creating the bucket in the Management account.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -160,7 +160,7 @@ For correct deployment of the ASR solution, refer to the official AWS documentat
 
 The manifest for the ASR components looks like this:
 
-```
+```yaml
 region: us-east-1 #<HOME_REGION_NAME>
 version: 2021-03-15
 

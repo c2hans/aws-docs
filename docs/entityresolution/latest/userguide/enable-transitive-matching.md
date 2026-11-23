@@ -11,7 +11,7 @@ To use transitive matching, you must create a new matching workflow with the Adv
 
 Include the `matchingConfig` parameter with `enableTransitiveMatching` set to `true` in the request body. The following example shows a complete `CreateMatchingWorkflow` request body with transitive matching enabled:
 
-```
+```json
 {
    "workflowName": "{{my-transitive-workflow}}",
    "inputSourceConfig": [

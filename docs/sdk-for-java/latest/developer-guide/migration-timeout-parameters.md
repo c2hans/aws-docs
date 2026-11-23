@@ -10,7 +10,7 @@ You can convert numeric timeout values automatically using the [migration tool](
 
 **Example - Set a request timeout in version 1**
 
-```
+```java
 // Set request timeout in milliseconds
 ClientConfiguration clientConfiguration = new ClientConfiguration();
 clientConfiguration.setRequestTimeout(5000); // 5 seconds
@@ -18,7 +18,7 @@ clientConfiguration.setRequestTimeout(5000); // 5 seconds
 
 **Example - Set a request timeout in version 2**
 
-```
+```java
 // Set request timeout using Duration
 ClientConfiguration clientConfiguration = new ClientConfiguration();
 clientConfiguration.setRequestTimeout(Duration.ofMillis(5000)); // 5 seconds

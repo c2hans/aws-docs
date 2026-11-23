@@ -29,7 +29,7 @@ You can view and access the open source container definitions at [amazon-braket/
 
 The `image-uris` can also be retrieved using the `retrieve_image()` function in the Amazon Braket SDK. The following example shows how to retrieve them from the us-west-2 AWS Region.
 
-```
+```python
 from braket.jobs.image_uris import retrieve_image, Framework
 
 image_uri_base = retrieve_image(Framework.BASE, "us-west-2")

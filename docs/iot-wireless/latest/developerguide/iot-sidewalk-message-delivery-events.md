@@ -65,7 +65,7 @@ After you enable notifications for message delivery status events, event message
 **Success events**
 The following shows the payload format when the event is a success.
 
-```
+```JSON
 {
     "eventId": "string",
     "eventType": "success",
@@ -101,7 +101,7 @@ The Sidewalk wrapper that contains the status code for success messages, sequenc
 **Error events**
 The following shows the payload format when the event indicates that an error occurred.
 
-```
+```JSON
 {
     "eventId": "string",
     "eventType": "error" ,

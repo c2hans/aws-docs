@@ -47,7 +47,7 @@ You can use the `aws codeartifact describe-domain` command to fetch the Amazon S
 aws codeartifact describe-domain --domain {{mydomain}}
 ```
 
-```
+```json
 {
   "domain": {
     "name": "mydomain",

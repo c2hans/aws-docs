@@ -78,7 +78,7 @@ The following topic describes the prerequisites that you must complete before cr
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -111,7 +111,7 @@ The following topic describes the prerequisites that you must complete before cr
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -150,7 +150,7 @@ The following topic describes the prerequisites that you must complete before cr
 
    1. Note the topic Amazon Resource Name (ARN). The Amazon SNS topic you created is another resource in your AWS account, and it has a unique ARN. The ARN is in the following format:
 
-      ```
+      ```python
       arn:aws:sns:{{aws-region:account-id:topic-name}}
       ```
 

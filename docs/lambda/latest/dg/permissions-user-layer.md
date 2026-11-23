@@ -9,7 +9,7 @@ Use [identity-based policies](access-control-identity-based.md) to allow users, 
 **Example layer development policy**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -41,7 +41,7 @@ You can also enforce layer use during function creation and configuration with t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

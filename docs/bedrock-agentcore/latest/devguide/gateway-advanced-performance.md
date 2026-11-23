@@ -23,7 +23,7 @@ Well-designed tool schemas can improve the performance of your gateway:
  **Enable semantic search**
 Semantic search helps agents find the right tools for their tasks, improving the overall performance of your agent-gateway interactions. Enable semantic search when creating your gateway:
 
-```
+```python
 import boto3
 
 # Initialize the AgentCore control client

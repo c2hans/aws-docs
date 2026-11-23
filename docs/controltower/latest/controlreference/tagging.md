@@ -22,7 +22,7 @@ To tag a resource, update a tag, and enable proper drift reporting, three permis
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

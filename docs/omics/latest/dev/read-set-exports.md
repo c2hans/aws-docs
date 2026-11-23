@@ -11,7 +11,7 @@ You can export read sets as a batch export job to an Amazon S3 bucket. To do so,
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -37,7 +37,7 @@ You can export read sets as a batch export job to an Amazon S3 bucket. To do so,
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement": [
@@ -68,7 +68,7 @@ aws omics start-read-set-export-job
 
 You receive the following response with information on the origin sequence store and the destination Amazon S3 bucket.
 
-```
+```json
 {
 "id": <job-id>,
 "sequenceStoreId": <sequence-store-id>,
@@ -90,7 +90,7 @@ You can view all export jobs initialized for a sequence store by using the ** li
 aws omics list-read-set-export-jobs --sequence-store-id {{sequence store ID}}.
 ```
 
-```
+```json
 {
 "exportJobs": [
   {

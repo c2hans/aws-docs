@@ -8,10 +8,11 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 Configuration settings for connecting a router output to a MediaLive input.
 
-To connect the router output to the MediaLive input, provide both `mediaLiveInputArn` and `mediaLivePipelineId`. To disconnect it, call the update operation and omit both fields while keeping this configuration object.
+To connect the router output to the MediaLive input, specify both `MediaLiveInputArn` and `MediaLivePipelineId`. To disconnect it, update the stack without these properties and keep the `MediaLiveInput` configuration.
 
 **Note**
-You can't change `destinationTransitEncryption` while the router output is connected to a MediaLive input. To change it, first disconnect the router output, then update the encryption.
+The `EncryptionKeyType` of `DestinationTransitEncryption` must match the `EncryptionType` of the MediaLive input. If you change `DestinationTransitEncryption` while the router output is connected, CloudFormation temporarily disconnects the router output before it applies the update.
+To change the key type, create a MediaLive input (`AWS::MediaLive::Input`) with the new `EncryptionType` in its `RouterSettings`. Then update the router output with the new `DestinationTransitEncryption` and both properties, using the new input's ARN. This moves the connection to the new input in the same update.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-routeroutput-medialiveinputrouteroutputconfiguration-syntax"></a>

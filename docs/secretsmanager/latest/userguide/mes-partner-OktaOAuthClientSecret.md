@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "clientId": "{{0oa followed by 17 letters or digits}}",
   "clientSecret": "{{current client secret}}",
@@ -36,7 +36,7 @@ secretId
 
 The following are the metadata fields for Okta OAuth Client Secret:
 
-```
+```json
 {
   "adminSecretArn": "arn:aws:secretsmanager:us-east-1:111122223333:secret:{{OktaAdminJwtKey}}"
 }

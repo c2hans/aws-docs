@@ -15,7 +15,7 @@ The library works with browsers that support JavaScript version ES6/ES2015.
 
 In your client code that renders the Amazon Kendra search results, insert a <script> tag and add a reference to the JavaScript library:
 
-```
+```javascript
 <script>
  (function(w, d, s, c, g, n) {
    if(!w[n]) {
@@ -60,13 +60,13 @@ For example, if your index is in US East (N. Virginia), {{library download URL}}
 There are two optional settings that you can make for the Amazon Kendra JavaScript library:
 + `disableCookies` – By default, Amazon Kendra sets a cookie that uniquely identifies the user. Set this to `true` to disable the cookie.
 
-  ```
+  ```javascript
   kendraFeedback('disableCookie', '{{true}} | {{false}}');
   ```
 
   `searchDivClassName` – By default, Amazon Kendra monitors all links on your search results page for clicks. Set this to a `<div>` class name to monitor only links in the specified class.
 
-  ```
+  ```javascript
   kendraFeedback('searchDivClassName', '{{class name}}');
   ```
 
@@ -75,7 +75,7 @@ There are two optional settings that you can make for the Amazon Kendra JavaScri
 
 On your result page, add an HTML attribute called `data-kendra-token` to the anchor tag or immediate parent div tag that contains a link to the document from the query response. For example:
 
-```
+```javascript
 <a href="{{document location}}" data-kendra-token="{{feedback token value}}"></a>
 OR
 <div data-url="{{document location}}" data-kendra-token="{{feedback token value}}"></div>

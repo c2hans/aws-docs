@@ -31,7 +31,7 @@ A pipeline that appears stuck in the PENDING status indicates that a pipeline ha
 
 To view your pipeline definition on the screen using the CLI:
 
-```
+```bash
 aws datapipeline --get-pipeline-definition --pipeline-id {{df-EXAMPLE_PIPELINE_ID}}
 ```
 

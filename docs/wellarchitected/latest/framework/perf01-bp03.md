@@ -34,6 +34,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf01-
 
 ![Diagram showing how one or more raw metrics combine into a KPI that answers a business-oriented question.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/bp03.png)
 
+*Relationship between metrics and KPIs*
+
  An average can hide patterns - for example, a mean response time of 200 milliseconds can conceal that one user in twenty waits three seconds. Percentile-based indicators such as p95 and p99 help avoid this. A real-time web application depends on latency percentiles, a batch pipeline on completion time and throughput, and a machine learning inference service on both latency and cost per prediction.
 
  Each indicator needs a baseline from historical data, a target range tied to your performance requirements and any service-level agreements, and thresholds that separate acceptable performance from warning and critical states. Set these values with input from business stakeholders and, where relevant, external service providers.

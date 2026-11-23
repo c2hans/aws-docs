@@ -35,7 +35,7 @@ Add `Builtin.FailureAnalysis` to the `evaluators` list when you call `StartBatch
 **Example**
 The following AgentCore CLI command starts a batch evaluation with the failure analysis and goal success rate evaluators.
 
-```
+```bash
 agentcore eval batch-evaluation evaluate \
   --name "MyFailureAnalysis" \
   --evaluators Builtin.FailureAnalysis Builtin.GoalSuccessRate \
@@ -56,7 +56,7 @@ agentcore eval batch-evaluation evaluate \
 The response contains the `batchEvaluationId`. To read the sessions of a deployed agent without writing a data source configuration, pass `--agent` with the agent’s runtime ID instead of `--data-source-config`.
 The AgentCore SDK evaluates the sessions that it creates. `BatchEvaluationRunner` invokes your agent once for each scenario in a dataset, then starts a batch evaluation over those sessions, so you add `Builtin.FailureAnalysis` to `evaluator_ids` rather than selecting sessions by time range. To evaluate sessions that already exist, use the AgentCore CLI or `StartBatchEvaluation` instead. For the dataset format and the `agent_invoker` contract, see [Batch dataset evaluations](dataset-evaluations-batch.md).
 
-```
+```python
 from bedrock_agentcore.evaluation import (
     BatchEvaluationRunner,
     BatchEvaluationRunConfig,
@@ -95,7 +95,7 @@ print(f"Batch evaluation ID: {result.batch_evaluation_id}")
 ```
 The following AWS CLI command starts a batch evaluation with the failure analysis and goal success rate evaluators.
 
-```
+```bash
 aws bedrock-agentcore start-batch-evaluation \
   --batch-evaluation-name "MyFailureAnalysis" \
   --evaluators '[
@@ -118,7 +118,7 @@ aws bedrock-agentcore start-batch-evaluation \
 The response contains the `batchEvaluationId`. To select sessions by ID instead of by time range, use `"filterConfig": {"sessionIds": ["<session-id>"]}`.
 The following Python code starts a batch evaluation with the failure analysis and goal success rate evaluators.
 
-```
+```python
 import boto3
 
 client = boto3.client("bedrock-agentcore", region_name="us-west-2")
@@ -157,7 +157,7 @@ Poll `GetBatchEvaluation` until the status is `COMPLETED`, `COMPLETED_WITH_ERROR
 **Example**
 The following AgentCore CLI command gets a batch evaluation, including its `insightResults`. Replace `<batch-evaluation-id>` with your batch evaluation ID.
 
-```
+```bash
 agentcore eval batch-evaluation get \
   --id <batch-evaluation-id> \
   --region us-west-2 --json
@@ -165,7 +165,7 @@ agentcore eval batch-evaluation get \
 The command also reads the per-session results from CloudWatch Logs and returns them alongside the job. Pass `--disable-cw-results` to return only the job itself.
  `run_dataset_evaluation` polls until the job reaches a terminal state, so the insights are on the result that it returns. An empty `insight_results` list means that the analysis ran and found no failures, while `None` means that no insight-providing evaluator ran or that the service could not read its results, in which case `error_details` names the evaluator.
 
-```
+```python
 print("Status:", result.status)
 print("Errors:", result.error_details)
 
@@ -181,14 +181,14 @@ else:
 Call `fetch_evaluation_events` on the runner to read the per-session results from CloudWatch Logs.
 The following AWS CLI command gets a batch evaluation. Replace `<batch-evaluation-id>` with your batch evaluation ID.
 
-```
+```bash
 aws bedrock-agentcore get-batch-evaluation \
   --batch-evaluation-id <batch-evaluation-id> \
   --output json
 ```
 The following Python code polls a batch evaluation until it reaches a terminal state and then prints the insights. Replace `batch_eval_id` with your batch evaluation ID.
 
-```
+```python
 import time
 import boto3
 
@@ -217,7 +217,7 @@ for insight in job.get("insightResults", []):
 
 Enable the default Agent Insight Store before you run the batch evaluation. Then use `ListAgentInsights` with the batch evaluation ID to list Agent Insights generated from that evaluation:
 
-```
+```bash
 aws bedrock-agentcore list-agent-insights \
     --batch-evaluation-id <batch-evaluation-id> \
     --region us-west-2
@@ -249,7 +249,7 @@ Each root cause has a name, an explanation, a suggested fix, and up to 10 sample
 
 The following example shows part of a `GetBatchEvaluation` response for a batch evaluation that ran `Builtin.FailureAnalysis` and `Builtin.GoalSuccessRate`. The `insightResults` field is trimmed to one insight with one root cause.
 
-```
+```json
 {
     "batchEvaluationId": "MyFailureAnalysis-1a2b3c4d5e",
     "batchEvaluationName": "MyFailureAnalysis",

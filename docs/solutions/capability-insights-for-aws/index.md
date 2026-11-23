@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com/solutions/capability-insights-for-aws/in
 title: 'Guidance for Capability Insights for AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/capability-insights-for-aws/
 source: aws-documentation
-generated_on: 2026-11-18
+generated_on: 2026-11-20
 ---
 
 # Guidance for Capability Insights for AWS
 
 ## Overview
 
-This Guidance demonstrates how to deploy a private, self-hosted dashboard that provides real-time AWS service, feature, API, and AWS CloudFormation resource availability across all Regions. It helps enterprises accelerate global expansion by eliminating manual regional capability research, auto-generating Region-scoped AWS Identity and Access Management policies and SCPs for proactive governance, and personalizing the view to services your account actually uses via AWS CloudTrail and AWS CloudFormation analysis. The solution includes a conversational AI assistant for natural-language queries, runs entirely within your Amazon Virtual Private Cloud, and integrates directly into CI/CD pipelines—reducing deployment failures and cutting security research time by enabling teams to validate regional readiness before migration.
+This Guidance demonstrates how to deploy a private, self-hosted dashboard that provides real-time AWS service, feature, API, and AWS CloudFormation resource availability across all Regions. It helps enterprises accelerate global expansion by eliminating manual regional capability research, auto-generating Region-scoped AWS Identity and Access Management policies and SCPs for proactive governance, and personalizing the view to services your account actually uses via AWS CloudTrail and AWS CloudFormation analysis. The solution keeps the dashboard and its API reachable only through your Amazon Virtual Private Cloud (Amazon VPC), offers an optional conversational assistant powered by Amazon Bedrock for natural-language queries, and lets teams compare Regions side by side and export availability data to check regional readiness before they expand or migrate workloads.
 
 ## Benefits
 

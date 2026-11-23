@@ -13,7 +13,7 @@ The DIFFERENCE function compares the American Soundex codes of two strings. The 
 ## Syntax
 <a name="DIFFERENCE-synopsis"></a>
 
-```
+```sql
 DIFFERENCE(string1, string2)
 ```
 
@@ -37,7 +37,7 @@ The DIFFERENCE function returns an `INTEGER` value from 0–4 that counts the nu
 
 To compare the Soundex values of the strings `%` and `@`, use the following example. The function returns `1` because neither string contains valid characters.
 
-```
+```sql
 SELECT DIFFERENCE('%', '@');
 
 +------------+
@@ -49,7 +49,7 @@ SELECT DIFFERENCE('%', '@');
 
 To compare the Soundex values of `Amazon` and an empty string, use the following example. The function returns `0` because one of the two strings is empty.
 
-```
+```sql
 SELECT DIFFERENCE('Amazon', '');
 
 +------------+
@@ -61,7 +61,7 @@ SELECT DIFFERENCE('Amazon', '');
 
 To compare the Soundex values of the strings `Amazon` and `Ama`, use the following example. The function returns `2` because 2 characters of the strings' Soundex values are the same.
 
-```
+```sql
 SELECT DIFFERENCE('Amazon', 'Ama');
 
 +------------+
@@ -73,7 +73,7 @@ SELECT DIFFERENCE('Amazon', 'Ama');
 
 To compare the Soundex values of the strings `Amazon` and `+-*/%Amazon`, use the following example. The function returns `4` because all 4 characters of the strings' Soundex values are the same. Notice that the function ignores the invalid characters `+-*/%` in the second string.
 
-```
+```sql
 SELECT DIFFERENCE('Amazon', '+-*/%Amazon');
 
 +------------+
@@ -85,7 +85,7 @@ SELECT DIFFERENCE('Amazon', '+-*/%Amazon');
 
 To compare the Soundex values of the strings `AC/DC` and `Ay See Dee See`, use the following example. The function returns `4` because all 4 characters of the strings' Soundex values are the same.
 
-```
+```sql
 SELECT DIFFERENCE('AC/DC', 'Ay See Dee See');
 
 +------------+

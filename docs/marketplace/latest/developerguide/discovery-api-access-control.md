@@ -16,6 +16,7 @@ Users must have the following permissions to call Discovery API operations:
 + `GetOfferSet` – Grants permission to retrieve information about an offer set.
 + `ListPurchaseOptions` – Grants permission to list purchase options available to the buyer.
 + `ListFulfillmentOptions` – Grants permission to list fulfillment options for a product.
++ `ListListingAttributes` – Grants permission to list attributes of a listing.
 + `SearchListings` – Grants permission to search for product listings.
 + `SearchFacets` – Grants permission to retrieve facet values for filtering listings.
 
@@ -26,7 +27,7 @@ To call Discovery API operations, the IAM principal (user or role) must have the
 
 The following IAM policy grants access to all Discovery API operations with resource-level scoping:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -40,6 +41,7 @@ The following IAM policy grants access to all Discovery API operations with reso
                 "aws-marketplace:GetOfferSet",
                 "aws-marketplace:ListPurchaseOptions",
                 "aws-marketplace:ListFulfillmentOptions",
+                "aws-marketplace:ListListingAttributes",
                 "aws-marketplace:SearchFacets",
                 "aws-marketplace:SearchListings"
             ],
@@ -65,7 +67,7 @@ The following table shows the resource types and their ARN formats used by Disco
 | Resource type | ARN format | Used by |
 | --- | --- | --- |
 | Product | arn:aws:aws-marketplace:::catalog/{{catalog-name}}/product/{{product-id}} | GetProduct, ListFulfillmentOptions |
-| Listing | arn:aws:aws-marketplace:::catalog/{{catalog-name}}/listing/{{listing-id}} | GetListing, SearchListings, SearchFacets |
+| Listing | arn:aws:aws-marketplace:::catalog/{{catalog-name}}/listing/{{listing-id}} | GetListing, ListListingAttributes, SearchListings, SearchFacets |
 | Offer | arn:aws:aws-marketplace:::catalog/{{catalog-name}}/offer/{{offer-id}} | GetOffer, GetOfferTerms |
 | Offer Set | arn:aws:aws-marketplace:::catalog/{{catalog-name}}/offerSet/{{offerSet-id}} | GetOfferSet |
 | Purchase Option | arn:aws:aws-marketplace:::catalog/{{catalog-name}}/purchaseOption/{{purchaseOption-id}} | ListPurchaseOptions |
@@ -73,9 +75,9 @@ The following table shows the resource types and their ARN formats used by Disco
 ### Scoping operations to specific resources
 <a name="discovery-scoping-get-operations"></a>
 
-For Get operations (GetListing, GetProduct, GetOffer, GetOfferTerms, GetOfferSet) and the ListFulfillmentOptions operation, you can scope access down to specific resource IDs instead of using a wildcard. For example, to restrict access to a single listing:
+For Get operations (GetListing, GetProduct, GetOffer, GetOfferTerms, GetOfferSet) and the ListFulfillmentOptions and ListListingAttributes operations, you can scope access down to specific resource IDs instead of using a wildcard. For example, to restrict access to a single listing:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -88,7 +90,7 @@ For Get operations (GetListing, GetProduct, GetOffer, GetOfferTerms, GetOfferSet
 }
 ```
 
-This pattern works for any Get operation and ListFulfillmentOptions. Replace the resource type and ID accordingly:
+This pattern works for any Get operation, ListFulfillmentOptions, and ListListingAttributes. Replace the resource type and ID accordingly:
 + `arn:aws:aws-marketplace:::catalog/{{catalog-name}}/product/{{product-id}}`
 + `arn:aws:aws-marketplace:::catalog/{{catalog-name}}/listing/{{listing-id}}`
 + `arn:aws:aws-marketplace:::catalog/{{catalog-name}}/offer/{{offer-id}}`

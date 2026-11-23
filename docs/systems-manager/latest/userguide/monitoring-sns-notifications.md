@@ -110,7 +110,7 @@ Use the following procedure to create a custom AWS Identity and Access Managemen
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -141,7 +141,7 @@ Use the following procedure to create a custom AWS Identity and Access Managemen
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -242,7 +242,7 @@ For entities without administrator permissions, an administrator must grant the 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

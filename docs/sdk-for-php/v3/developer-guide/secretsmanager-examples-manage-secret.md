@@ -33,7 +33,7 @@ In this example, a user name and password are stored as a JSON string.
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 use Aws\SecretsManager\SecretsManagerClient;
 use Aws\Exception\AwsException;
@@ -41,7 +41,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $client = new SecretsManagerClient([
     'profile' => 'default',
     'version' => '2017-10-17',
@@ -82,7 +82,7 @@ Use `json_decode($secret, true)` to access the array values.
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\SecretsManager\SecretsManagerClient;
@@ -91,7 +91,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $client = new SecretsManagerClient([
     'profile' => 'default',
     'version' => '2017-10-17',
@@ -154,7 +154,7 @@ Get a list of all the secrets that are stored by Secrets Manager using the [List
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\SecretsManager\SecretsManagerClient;
@@ -163,7 +163,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $client = new SecretsManagerClient([
     'profile' => 'default',
     'version' => '2017-10-17',
@@ -188,7 +188,7 @@ Stored secrets contain metadata about rotation rules, when it was last accessed 
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\SecretsManager\SecretsManagerClient;
@@ -197,7 +197,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $client = new SecretsManagerClient([
     'profile' => 'default',
     'version' => '2017-10-17',
@@ -227,7 +227,7 @@ This creates a new version of the secret. If a version of the secret already exi
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 use Aws\SecretsManager\SecretsManagerClient;
 use Aws\Exception\AwsException;
@@ -235,7 +235,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $client = new SecretsManagerClient([
     'profile' => 'default',
     'version' => '2017-10-17',
@@ -273,7 +273,7 @@ After you set up your Lambda function, configure a new secret rotation.
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\SecretsManager\SecretsManagerClient;
@@ -282,7 +282,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $client = new SecretsManagerClient([
     'profile' => 'default',
     'version' => '2017-10-17',
@@ -311,7 +311,7 @@ When a rotation is configured, you can implement a rotation using the [RotateSec
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\SecretsManager\SecretsManagerClient;
@@ -320,7 +320,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $client = new SecretsManagerClient([
     'profile' => 'default',
     'version' => '2017-10-17',
@@ -348,7 +348,7 @@ To remove a specified secret from Secrets Manager, use the [DeleteSecret](https:
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\SecretsManager\SecretsManagerClient;
@@ -357,7 +357,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $client = new SecretsManagerClient([
     'profile' => 'default',
     'version' => '2017-10-17',

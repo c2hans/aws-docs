@@ -82,7 +82,7 @@ Supports CORS preflight requests.
 #### GET schema
 <a name="presets-request-body-get-example"></a>
 
-```
+```json
 {
   "listBy": enum,
   "category": "string",
@@ -95,7 +95,7 @@ Supports CORS preflight requests.
 #### POST schema
 <a name="presets-request-body-post-example"></a>
 
-```
+```json
 {
   "description": "string",
   "category": "string",
@@ -1027,7 +1027,7 @@ Supports CORS preflight requests.
 #### ListPresetsResponse schema
 <a name="presets-response-body-listpresetsresponse-example"></a>
 
-```
+```json
 {
   "presets": [
     {
@@ -1963,7 +1963,7 @@ Supports CORS preflight requests.
 #### CreatePresetResponse schema
 <a name="presets-response-body-createpresetresponse-example"></a>
 
-```
+```json
 {
   "preset": {
     "arn": "string",
@@ -2896,7 +2896,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="presets-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

@@ -14,7 +14,7 @@ This property can be used to specify an IdentitySource in an incoming request fo
 ### YAML
 <a name="sam-property-api-lambdatokenauthorizationidentity-syntax.yaml"></a>
 
-```
+```yaml
   [Header](#sam-api-lambdatokenauthorizationidentity-header): {{String}}
   [ReauthorizeEvery](#sam-api-lambdatokenauthorizationidentity-reauthorizeevery): {{Integer}}
   [ValidationExpression](#sam-api-lambdatokenauthorizationidentity-validationexpression): {{String}}
@@ -52,7 +52,7 @@ Specify a validation expression for validating the incoming Identity.
 #### YAML
 <a name="sam-property-api-lambdatokenauthorizationidentity--examples--lambdatokenidentity--yaml"></a>
 
-```
+```yaml
 Identity:
   Header: MyCustomAuthHeader
   ValidationExpression: Bearer.*

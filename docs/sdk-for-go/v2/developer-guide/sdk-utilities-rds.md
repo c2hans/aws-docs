@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/sdk-utilit
 
  The following example shows how to generate an authentication token to connect to an Amazon RDS database:
 
-```
+```go
 import "context"
 import "github.com/aws/aws-sdk-go-v2/config"
 import "github.com/aws/aws-sdk-go-v2/feature/rds/auth"

@@ -26,7 +26,7 @@ To create an opt-out list using the AWS End User Messaging SMS console, follow t
 
 At the command line, enter the following command:
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 create-opt-out-list \
 > --opt-out-list-name {{optOutListName}}
 ```

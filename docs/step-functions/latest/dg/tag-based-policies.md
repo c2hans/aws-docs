@@ -8,7 +8,7 @@ Step Functions supports policies based on tags. For example, you could restrict 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

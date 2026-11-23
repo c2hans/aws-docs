@@ -21,7 +21,7 @@ The following shows examples of data classes that have an inheritance relationsh
 ------
 #### [ Standard data class ]
 
-```
+```java
 @DynamoDbBean
 public class Customer extends GenericRecord {
     private String name;
@@ -49,7 +49,7 @@ public abstract class GenericRecord {
 
 Lombok's [`onMethod` option](https://projectlombok.org/features/experimental/onX) copies attribute-based DynamoDB annotations, such as `@DynamoDbPartitionKey`, onto the generated code.
 
-```
+```java
 @DynamoDbBean
 @Data
 @ToString(callSuper = true)
@@ -73,7 +73,7 @@ public abstract class GenericRecord {
 
 For the static schema approach, use the `extend()` method of the builder to collapse the attributes of the parent class onto the child class. This is shown after comment line 1 in the following example.
 
-```
+```java
         StaticTableSchema<org.example.tests.model.inheritance.stat.GenericRecord> GENERIC_RECORD_SCHEMA =
                 StaticTableSchema.builder(org.example.tests.model.inheritance.stat.GenericRecord.class)
                         // The partition key will be inherited by the top level mapper.
@@ -105,7 +105,7 @@ The previous static schema example uses the following data classes. Because the 
 ------
 #### [ Standard data class ]
 
-```
+```java
 public class Customer extends GenericRecord {
     private String name;
 
@@ -127,7 +127,7 @@ public abstract class GenericRecord {
 ------
 #### [ Lombok ]
 
-```
+```java
 @Data
 @ToString(callSuper = true)
 public class Customer extends GenericRecord{
@@ -158,7 +158,7 @@ The following data class examples use the `@DynamoDbFlatten` annotation to effec
 ------
 #### [ Standard data class ]
 
-```
+```java
 @DynamoDbBean
 public class Customer {
     private String name;
@@ -188,7 +188,7 @@ public class GenericRecord {
 ------
 #### [ Lombok ]
 
-```
+```java
 @Data
 @DynamoDbBean
 public class Customer {
@@ -217,7 +217,7 @@ You can use the flatten annotation to flatten as many different eligible classes
 
 When you build a static table schema, use the `flatten()` method of the builder. You also supply the getter and setter methods that identify the contained class.
 
-```
+```java
         StaticTableSchema<GenericRecord> GENERIC_RECORD_SCHEMA =
                 StaticTableSchema.builder(GenericRecord.class)
                         .newItemSupplier(GenericRecord::new)
@@ -250,7 +250,7 @@ The previous static schema example uses the following data classes.
 ------
 #### [ Standard data class ]
 
-```
+```java
 public class Customer {
     private String name;
     private GenericRecord record;
@@ -276,7 +276,7 @@ public class GenericRecord {
 ------
 #### [ Lombok ]
 
-```
+```java
 @Data
 public class Customer {
     private String name;

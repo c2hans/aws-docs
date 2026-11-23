@@ -142,7 +142,7 @@ The notebook deploys two models, `Llama 2` and `all-MiniLM-L6-v2 Models`, on `ml
 **Note**
 Ensure that the connection string to your Amazon EMR cluster has an authentication type set to `None`. This is illustrated by the value `--auth-type None` in the following example. You can modify the field if necessary.
 
-      ```
+      ```bash
       %load_ext sagemaker_studio_analytics_extension.magics
       %sm_analytics emr connect --verify-certificate False --cluster-id {{your-cluster-id}} --auth-type {{None}} --language python
       ```

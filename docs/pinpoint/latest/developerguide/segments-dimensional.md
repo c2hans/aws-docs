@@ -15,7 +15,7 @@ For more code examples, see [Code examples](https://docs.aws.amazon.com/pinpoint
 
 The following example demonstrates how to build a segment with the AWS SDK for Java. The example creates a segment of users who's team is the `Lakers` and have been active in the past 30 days. Once the segment has been built you can use it as part of a campaign or journey. For an example of using a segment with a campaign, see [Create Amazon Pinpoint campaigns programmatically](campaigns.md).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.AttributeDimension;
@@ -34,7 +34,7 @@ import java.util.HashMap;
 import java.util.Map;
 ```
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.AttributeDimension;

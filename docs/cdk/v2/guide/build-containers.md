@@ -45,13 +45,13 @@ COPY app/ /var/task/
  **Application code**
 In `lib/docker/app/index.js`:
 
-```
+```javascript
 console.log("Hello from inside the container!");
 ```
 
  **CDK stack**
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as ecr_assets from 'aws-cdk-lib/aws-ecr-assets';
@@ -75,7 +75,7 @@ export class MyStack extends cdk.Stack {
 
  **CDK app**
 
-```
+```javascript
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
 import { MyStack } from '../lib/my-stack';

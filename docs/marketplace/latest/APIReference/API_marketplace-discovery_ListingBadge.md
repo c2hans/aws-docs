@@ -13,7 +13,7 @@ A badge indicating a special attribute of a listing, such as free tier eligibili
 In the following list, the required parameters are described first.
 
  ** badgeType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_ListingBadge-badgeType"></a>
-The machine-readable type of the badge.
+The machine-readable type of the badge. See `ListingBadgeType` for the values.
 Type: String
 Valid Values: `AWS_FREE_TIER | FREE_TRIAL | DEPLOYED_ON_AWS | QUICK_LAUNCH | MULTI_PRODUCT`
 Required: Yes

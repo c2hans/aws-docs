@@ -16,7 +16,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-statemachine-statemachineschedule-syntax.yaml"></a>
 
-```
+```yaml
   [DeadLetterConfig](#sam-statemachine-statemachineschedule-deadletterconfig): {{DeadLetterConfig}}
   [Description](#sam-statemachine-statemachineschedule-description): {{String}}
   [Enabled](#sam-statemachine-statemachineschedule-enabled): {{Boolean}}
@@ -107,7 +107,7 @@ CloudWatch Schedule Event Example
 #### YAML
 <a name="sam-property-statemachine-statemachineschedule--examples--cloudwatch-schedule-event--yaml"></a>
 
-```
+```yaml
 CWSchedule:
   Type: Schedule
   Properties:

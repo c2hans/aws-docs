@@ -31,7 +31,7 @@ Create the ConfigMap with the following requirements:
 
 The following example shows the ConfigMap structure, with a setting that displays a banner across the Argo CD UI. Add other supported settings under `data` in the same way.
 
-```
+```yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -64,7 +64,7 @@ The **primary Argo CD namespace** is the `namespace` value in the capability’s
 
 Create an `argocd-cmd-params-cm` ConfigMap in the primary Argo CD namespace. This is a separate ConfigMap from the `argocd-cm` ConfigMap that you use for the settings in [Supported settings](#argocd-supported-settings). The following example enables both resource types in two team namespaces:
 
-```
+```yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -190,7 +190,7 @@ The Lua script has access to the resource object through the global `obj` variab
 
 The following example ConfigMap defines a health check for a `Database` Custom Resource. The script reports the resource as `Healthy` when its status phase is `Ready`, and as `Progressing` otherwise:
 
-```
+```yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:

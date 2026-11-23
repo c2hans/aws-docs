@@ -41,7 +41,7 @@ Note that device and partition naming differs for Xen instances and instances bu
 
       In the following example output, the root volume (`nvme0n1`) has two partitions (`nvme0n1p1` and `nvme0n1p128`), while the additional volume (`nvme1n1`) has no partitions.
 
-      ```
+      ```bash
       [ec2-user ~]$ sudo lsblk
       NAME          MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
       nvme1n1       259:0    0  30G  0 disk /data
@@ -55,7 +55,7 @@ Note that device and partition naming differs for Xen instances and instances bu
 
       In the following example output, the root volume (`xvda`) has a partition (`xvda1`), while the additional volume (`xvdf`) has no partition.
 
-      ```
+      ```bash
       [ec2-user ~]$ sudo lsblk
       NAME    MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
       xvda    202:0    0  16G  0 disk
@@ -87,7 +87,7 @@ If the volume still reflects the original size, [ confirm that the volume modifi
 **Important**
 Note the space between the device name (`nvme0n1`) and the partition number (`1`).
 
-      ```
+      ```bash
       [ec2-user ~]$ sudo growpart /dev/nvme0n1 1
       ```
 
@@ -101,7 +101,7 @@ Note the space between the device name (`nvme0n1`) and the partition number (`1`
 **Important**
 Note the space between the device name (`xvda`) and the partition number (`1`).
 
-      ```
+      ```bash
       [ec2-user ~]$ sudo growpart /dev/xvda 1
       ```
 
@@ -118,7 +118,7 @@ Note the space between the device name (`xvda`) and the partition number (`1`).
 
       The following example output shows that both the volume (`nvme0n1`) and the partition (`nvme0n1p1`) are the same size (`16 GB`).
 
-      ```
+      ```bash
       [ec2-user ~]$ sudo lsblk
       NAME          MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
       nvme1n1       259:0    0  30G  0 disk /data
@@ -132,7 +132,7 @@ Note the space between the device name (`xvda`) and the partition number (`1`).
 
       The following example output shows that both the volume (`xvda`) and the partition (`xvda1`) are the same size (`16 GB`).
 
-      ```
+      ```bash
       [ec2-user ~]$ sudo lsblk
       NAME    MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
       xvda    202:0    0  16G  0 disk
@@ -151,7 +151,7 @@ Note the space between the device name (`xvda`) and the partition number (`1`).
 
       The following example output for the **df -hT** command shows that the `/dev/nvme0n1p1` file system is 8 GB in size, its type is `xfs`, and its mount point is `/`.
 
-      ```
+      ```bash
       [ec2-user ~]$ df -hT
       Filesystem      Type  Size  Used Avail Use% Mounted on
       /dev/nvme0n1p1  xfs   8.0G  1.6G  6.5G  20% /
@@ -164,7 +164,7 @@ Note the space between the device name (`xvda`) and the partition number (`1`).
 
       The following example output for the **df -hT** command shows that the `/dev/xvda1` file system is 8 GB in size, its type is `ext4`, and its mount point is `/`.
 
-      ```
+      ```bash
       [ec2-user ~]$ df -hT
       Filesystem      Type   Size    Used   Avail   Use%   Mounted on
       /dev/xvda1      ext4   8.0G    1.9G   6.2G    24%    /
@@ -184,7 +184,7 @@ Note the space between the device name (`xvda`) and the partition number (`1`).
 
         For example, to extend a file system mounted on `/`, use the following command.
 
-        ```
+        ```bash
         [ec2-user ~]$ sudo xfs_growfs -d /
         ```
 
@@ -199,7 +199,7 @@ Note the space between the device name (`xvda`) and the partition number (`1`).
 
         For example, to extend a file system mounted named `/dev/nvme0n1p1`, use the following command.
 
-        ```
+        ```bash
         [ec2-user ~]$ sudo resize2fs /dev/nvme0n1p1
         ```
 
@@ -208,7 +208,7 @@ Note the space between the device name (`xvda`) and the partition number (`1`).
 
         For example, to extend a file system mounted named `/dev/xvda1`, use the following command.
 
-        ```
+        ```bash
         [ec2-user ~]$ sudo resize2fs /dev/xvda1
         ```
 
@@ -269,25 +269,25 @@ Use the following procedure to extend a Windows file system using PowerShell.
 
 1. Run the following command to rescan the disk.
 
-   ```
+   ```powershell
    "rescan" | diskpart
    ```
 
 1. Run the following command, using the drive letter you noted in step 4 in place of **<drive-letter>**. PowerShell returns the minimum and maximum size of the partition allowed, in bytes.
 
-   ```
+   ```powershell
    Get-PartitionSupportedSize -DriveLetter <drive-letter>
    ```
 
 1. To extend the partition to a specified amount, run the following command, entering the new size of the volume in place of **<size>**. You can enter the size in `KB`, `MB`, and `GB`; for example, `50GB`.
 
-   ```
+   ```powershell
    Resize-Partition -DriveLetter <drive-letter> -Size <size>
    ```
 
    To extend the partition to the maximum available size, run the following command.
 
-   ```
+   ```powershell
    Resize-Partition -DriveLetter <drive-letter> -Size $(Get-PartitionSupportedSize -DriveLetter <drive-letter>).SizeMax
    ```
 

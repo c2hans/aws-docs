@@ -39,7 +39,7 @@ The following example trust policy is attached to roles for EMRFS. The statement
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -64,7 +64,7 @@ In addition, the following example trust policy statement is added to the `EMR_E
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

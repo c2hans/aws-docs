@@ -13,7 +13,7 @@ By configuring service clients in code, you gain fine-grained control of the man
 
 For example, the following snippet sets the AWS Region to `EU_SOUTH_2` for an Amazon S3 service client in code:
 
-```
+```java
 S3Client s3Client = S3Client.builder()
         .region(Region.EU_SOUTH_2)
         .build();
@@ -26,7 +26,7 @@ The previous snippet shows the static factory method, `builder()`. The `builder(
 
 The following snippet shows additional configuration options:
 
-```
+```java
 ClientOverrideConfiguration clientOverrideConfiguration =
         ClientOverrideConfiguration.builder()
                 .apiCallAttemptTimeout(Duration.ofSeconds(1))
@@ -61,7 +61,7 @@ Instead of creating separate objects and then passing them to service client met
 
 The configuration of the S3 client shown earlier using this approach can be done in one block of code:
 
-```
+```java
 S3Client s3Client = S3Client.builder()
         .region(Region.EU_SOUTH_2)
         .credentialsProvider(EnvironmentVariableCredentialsProvider.create())

@@ -26,7 +26,7 @@ Tag keys and values can't contain the following characters: backtick (`), single
 + When `AWS-RunPatchBaselineAssociation` runs, the patch compliance data it collects is recorded using the `PutComplianceItems` API command instead of the `PutInventory` command, which is used by `AWS-RunPatchBaseline`. This difference means that the patch compliance information that is stored and reported per a specific *association*. Patch compliance data generated outside of this association isn't overwritten.
 + The patch compliance information reported after running `AWS-RunPatchBaselineAssociation` indicates whether an instance is in compliance. It doesn't include patch-level details, as demonstrated by the output of the following AWS Command Line Interface (AWS CLI) command. The command filters on `Association` as the compliance type:
 
-  ```
+  ```sh
   aws ssm list-compliance-items \
       --resource-ids "i-02573cafcfEXAMPLE" \
       --resource-types "ManagedInstance" \
@@ -124,7 +124,7 @@ If you use `AWS-RunPatchBaselineAssociation` in patching operations other than t
 **Note**
 Quick Setup and `AWS-RunPatchBaselineAssociation` don't support on-premises servers and virtual machines (VMs).
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -155,7 +155,7 @@ Replace {{patch-baseline-arn}} with the Amazon Resource Name (ARN) of the patch 
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm create-association \
     --name "AWS-RunPatchBaselineAssociation" \
     --association-name "MyPatchHostConfigAssociation" \
@@ -169,7 +169,7 @@ aws ssm create-association \
 ------
 #### [ Windows Server ]
 
-```
+```sh
 aws ssm create-association ^
     --name "AWS-RunPatchBaselineAssociation" ^
     --association-name "MyPatchHostConfigAssociation" ^
@@ -204,7 +204,7 @@ Be aware that compliance reports reflect patch states according to what’s spec
 If your file is stored in a publicly available bucket, you can specify either an https URL format or an Amazon S3 path-style URL. If your file is stored in a private bucket, you must specify an Amazon S3 path-style URL.
 + **https URL format example**:
 
-  ```
+  ```http
   https://s3.amazonaws.com/amzn-s3-demo-bucket/my-windows-override-list.yaml
   ```
 + **Amazon S3 path-style URL example**:
@@ -268,7 +268,7 @@ Any other fields you want to provide in a patch list for Linux are optional and 
 **Sample patch lists**
 + **Windows**
 
-  ```
+  ```yaml
   patches:
       -
           id: 'KB4284819'
@@ -285,7 +285,7 @@ Any other fields you want to provide in a patch list for Linux are optional and 
   ```
 + **APT**
 
-  ```
+  ```yaml
   patches:
       -
           id: 'apparmor.amd64'
@@ -305,7 +305,7 @@ Any other fields you want to provide in a patch list for Linux are optional and 
   ```
 + **Amazon Linux 2**
 
-  ```
+  ```yaml
   patches:
       -
           id: 'kernel.x86_64'
@@ -323,7 +323,7 @@ Any other fields you want to provide in a patch list for Linux are optional and 
   ```
 + **Red Hat Enterprise Linux (RHEL)**
 
-  ```
+  ```yaml
   patches:
       -
           id: 'NetworkManager.x86_64'
@@ -343,7 +343,7 @@ Any other fields you want to provide in a patch list for Linux are optional and 
   ```
 + **SUSE Linux Enterprise Server (SLES)**
 
-  ```
+  ```yaml
   patches:
       -
           id: 'amazon-ssm-agent.x86_64'
@@ -361,7 +361,7 @@ Any other fields you want to provide in a patch list for Linux are optional and 
   ```
 + **Ubuntu Server **
 
-  ```
+  ```yaml
   patches:
       -
           id: 'apparmor.amd64'
@@ -381,7 +381,7 @@ Any other fields you want to provide in a patch list for Linux are optional and 
   ```
 + **Windows**
 
-  ```
+  ```yaml
   patches:
       -
           id: 'KB4284819'

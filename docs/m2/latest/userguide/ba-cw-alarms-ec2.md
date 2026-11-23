@@ -15,7 +15,7 @@ You can set up CloudWatch to receive your application log and add an alarm to wa
 
 To enable CloudWatch logging, create a `logback-cloudwatch.xml` file in the config folder using the configuration template provided in the following section. Then, reference this file in the `application-main.yml` file by uncommenting the following lines:
 
-```
+```bash
 # logging:
 #  config: classpath:logback-cloudwatch.xml
 ```
@@ -27,7 +27,7 @@ To enable CloudWatch logging, create a `logback-cloudwatch.xml` file in the conf
 
 Use the following template to create the `logback-cloudwatch.xml` file:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration>
 <configuration>

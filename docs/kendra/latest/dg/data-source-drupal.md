@@ -186,7 +186,7 @@ You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/
 
   If you use basic authentication, the secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "username": {{"user name"}},
       "password": {{"password"}}
@@ -195,7 +195,7 @@ You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/
 
   If you use OAuth 2.0 authentication, the secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "username": {{"user name"}},
       "password": {{"password"}},

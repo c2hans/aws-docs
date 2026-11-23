@@ -23,7 +23,7 @@ Both runtimes share the same supervisor agent logic and tool catalog; the differ
 
 The AgentCore runtime is wired through the Strands `BedrockAgentCoreApp` decorator:
 
-```
+```python
 from bedrock_agentcore.runtime import BedrockAgentCoreApp
 
 app = BedrockAgentCoreApp()
@@ -67,7 +67,7 @@ Foundation-model ARNs carry no account ID (`arn:aws:bedrock:<region>::foundation
 
 AVX uses the `agentcore` CLI from the AgentCore starter toolkit:
 
-```
+```bash
 agentcore configure -e agents/supervisor/agentcore_app.py
 agentcore deploy --auto-update-on-conflict \
   --env CMS_STAGE=staging \

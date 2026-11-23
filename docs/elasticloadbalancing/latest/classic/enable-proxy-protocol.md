@@ -62,7 +62,7 @@ Use the following procedure to create a new policy for your load balancer of typ
 
    The response includes the names and descriptions of the supported policy types. The following shows the output for the `ProxyProtocolPolicyType` type:
 
-   ```
+   ```json
    {
        "PolicyTypeDescriptions": [
            ...
@@ -103,7 +103,7 @@ Use the following procedure to create a new policy for your load balancer of typ
 
    The response includes the following information, which shows that the `my-ProxyProtocol-policy` policy is associated with port `80`.
 
-   ```
+   ```json
    {
        "LoadBalancerDescriptions": [
            {
@@ -149,7 +149,7 @@ You can disable the policies associated with your instance and then enable them 
 
    The response includes the following information, which shows that no ports are associated with a policy.
 
-   ```
+   ```json
    {
        "LoadBalancerDescriptions": [
            {

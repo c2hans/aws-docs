@@ -25,7 +25,7 @@ The request that Amazon Cognito passes to this Lambda function is a combination 
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "request": {
         "userAttributes": {
@@ -101,7 +101,7 @@ After the user solves the CAPTCHA and answers the security question, this functi
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const handler = async (event) => {
   if (
     event.request.session.length === 1 &&

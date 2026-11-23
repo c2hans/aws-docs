@@ -344,7 +344,7 @@ To create an agreement, you need the following items:
 
 Save the following code into a file, for example, `agreementDetails.json`. Replace each `{{user input placeholder}}` with your own information.
 
-```
+```json
 {
     "Description": "{{ExampleAgreementName}}",
     "ServerId": "{{your-server-id}}",
@@ -394,7 +394,7 @@ aws transfer list-profiles
 
 When you create the connector, you must provide your partner's AS2 server URL. Copy the following text to a file named `testAS2Config.json`.
 
-```
+```json
 {
 "Compression": "ZLIB",
 "EncryptionAlgorithm": "AES256_CBC",

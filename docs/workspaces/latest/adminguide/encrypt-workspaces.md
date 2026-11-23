@@ -85,7 +85,7 @@ WorkSpaces doesn't use your KMS Key directly for cryptographic operations (such 
 
 The following example shows a JSON representation of the encryption context that Amazon EBS uses:
 
-```
+```json
 {
   "aws:workspaces:sid-directoryid": "[{{S-1-5-21-277731876-1789304096-451871588-1107}}]@[{{d-1234abcd01}}]",
   "aws:ebs:id": "{{vol-1234abcd}}"
@@ -151,7 +151,7 @@ If your WorkSpaces administrators use the AWS Management Console to create WorkS
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -215,7 +215,7 @@ The IAM policy for a user or role that is encrypting a WorkSpace must include us
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -248,7 +248,7 @@ The following IAM policy is required by the user for using AWS KMS. It gives the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -274,7 +274,7 @@ If you want to specify the KMS Key in your policy, use an IAM policy similar to 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

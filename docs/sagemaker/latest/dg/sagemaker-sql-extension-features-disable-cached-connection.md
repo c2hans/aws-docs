@@ -6,6 +6,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 
 To disable connection caching, run the following command:
 
-```
+```bash
 %sm_sql_manage --set-connection-reuse False
 ```

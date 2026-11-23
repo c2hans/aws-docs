@@ -140,7 +140,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-identity-and-access-management-iam-create-saml-identity-provider-ex-min"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-HandleCreateSamlProvider-Admin",
   "Region" : "us-east-1",
@@ -155,7 +155,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-identity-and-access-management-iam-create-saml-identity-provider-ex-max"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-HandleCreateSamlProvider-Admin",
   "Region" : "us-east-1",

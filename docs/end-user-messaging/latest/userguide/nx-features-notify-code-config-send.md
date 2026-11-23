@@ -50,7 +50,7 @@ Send a one-time passcode to a recipient over the text, voice, or WhatsApp channe
 
 1. The response resembles the following:
 
-   ```
+   ```json
    {
        "messageId": "sms-abc123",
        "verificationId": "ver-xyz789"

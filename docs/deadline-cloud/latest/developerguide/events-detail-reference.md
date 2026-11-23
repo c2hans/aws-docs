@@ -42,7 +42,7 @@ Below are the detail fields for the `Budget Threshold Reached` event.
 
 The `source` and `detail-type` fields are included below because they contain specific values for Deadline Cloud events. For definitions of the other metadata fields that are included in all events, see [Event structure reference](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events-structure.html) in the *Amazon EventBridge User Guide*.
 
-```
+```json
 {
     "version": "0",
     "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -90,7 +90,7 @@ Below are the detail fields for the `Fleet Size Recommendation Change` event.
 
 The `source` and `detail-type` fields are included below because they contain specific values for Deadline Cloud events. For definitions of the other metadata fields that are included in all events, see [Event structure reference](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events-structure.html) in the *Amazon EventBridge User Guide*.
 
-```
+```json
 {
     "version": "0",
     "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -139,7 +139,7 @@ Below are the detail fields for the `Job Lifecycle Status Change` event.
 
 The `source` and `detail-type` fields are included below because they contain specific values for Deadline Cloud events. For definitions of the other metadata fields that are included in all events, see [Event structure reference](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events-structure.html) in the *Amazon EventBridge User Guide*.
 
-```
+```json
 {
     "version": "0",
     "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -197,7 +197,7 @@ Below are the detail fields for the `Job Run Status Change` event.
 
 The `source` and `detail-type` fields are included below because they contain specific values for Deadline Cloud events. For definitions of the other metadata fields that are included in all events, see [Event structure reference](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events-structure.html) in the *Amazon EventBridge User Guide*.
 
-```
+```json
 {
     "version": "0",
     "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -270,7 +270,7 @@ Below are the detail fields for the `Step Lifecycle Status Change` event.
 
 The `source` and `detail-type` fields are included below because they contain specific values for Deadline Cloud events. For definitions of the other metadata fields that are included in all events, see [Event structure reference](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events-structure.html) in the *Amazon EventBridge User Guide*.
 
-```
+```json
 {
     "version": "0",
     "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -331,7 +331,7 @@ Below are the detail fields for the `Step Run Status Change` event.
 
 The `source` and `detail-type` fields are included below because they contain specific values for Deadline Cloud events. For definitions of the other metadata fields that are included in all events, see [Event structure reference](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events-structure.html) in the *Amazon EventBridge User Guide*.
 
-```
+```json
 {
     "version": "0",
     "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -405,7 +405,7 @@ Below are the detail fields for the `Task Run Status Change` event.
 
 The `source` and `detail-type` fields are included below because they contain specific values for Deadline Cloud events. For definitions of the other metadata fields that are included in all events, see [Event structure reference](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events-structure.html) in the *Amazon EventBridge User Guide*.
 
-```
+```json
 {
     "version": "0",
     "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",

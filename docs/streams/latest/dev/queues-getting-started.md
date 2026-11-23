@@ -15,7 +15,7 @@ A queue works only on an On-demand stream. Create an On-demand stream and add a 
 
 Create the stream:
 
-```
+```bash
 aws kinesis create-stream \
     --stream-name my-stream \
     --stream-mode-details StreamMode=ON_DEMAND
@@ -23,7 +23,7 @@ aws kinesis create-stream \
 
 Add a few records. To pass the record data as plain text and have the AWS CLI return binary values as base64, use `--cli-binary-format raw-in-base64-out` (or set `cli_binary_format = raw-in-base64-out` in your AWS CLI configuration file):
 
-```
+```bash
 aws kinesis put-record \
     --stream-name my-stream \
     --partition-key user-1 \
@@ -36,7 +36,7 @@ aws kinesis put-record \
 
 Create a queue with one `StreamConfigurationList` entry that associates the queue with your stream. The list must contain exactly one entry. Set the starting position in that entry, and set the queue default visibility timeout in `QueueAttributes`. The default starting position is `LATEST`.
 
-```
+```bash
 aws kinesis create-queue \
     --queue-name my-queue \
     --stream-configuration-list '[
@@ -50,7 +50,7 @@ aws kinesis create-queue \
 
 The response contains the queue description, including the generated queue ARN and the queue status. The queue starts in the `CREATING` state:
 
-```
+```json
 {
     "QueueDescription": {
         "QueueName": "my-queue",
@@ -84,12 +84,12 @@ If you omit `VisibilityTimeoutSeconds`, the queue uses the service default visib
 
 Creating a queue is asynchronous. Call `describe-queue` with the queue ARN and wait until `QueueStatus` is `ACTIVE` before you receive records:
 
-```
+```bash
 aws kinesis describe-queue \
     --queue-arn arn:aws:kinesis:us-west-2:111122223333:queue/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
 ```
 
-```
+```json
 {
     "QueueDescription": {
         "QueueName": "my-queue",
@@ -121,14 +121,14 @@ aws kinesis describe-queue \
 
 To find the queues on a stream, call `list-queues` with a `StreamFilter` entry for that stream:
 
-```
+```bash
 aws kinesis list-queues \
     --stream-filter '[
         { "StreamARN": "arn:aws:kinesis:us-west-2:111122223333:stream/my-stream" }
     ]'
 ```
 
-```
+```json
 {
     "QueueSummaries": [
         {
@@ -152,7 +152,7 @@ aws kinesis list-queues \
 
 Receive records with `receive-queue-records`. Set `--limit` to the number of records to return (1 to 10). Set `--wait-time-seconds` to how long the call waits for records to arrive, from 1 to 20 seconds. If you omit it, the call waits 9 seconds:
 
-```
+```bash
 aws kinesis receive-queue-records \
     --queue-arn arn:aws:kinesis:us-west-2:111122223333:queue/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --limit 10 \
@@ -161,7 +161,7 @@ aws kinesis receive-queue-records \
 
 Each returned record carries a receipt handle and delivery metadata in addition to the data and partition key. The record data is base64 encoded:
 
-```
+```json
 {
     "QueueRecords": [
         {
@@ -186,7 +186,7 @@ While a record is in flight, it is not visible to any queue consumer instance un
 
 If you need more time to process a record, extend its visibility timeout with `update-queue-records-visibility`. Each entry carries a `ReceiptHandle` and a `VisibilityTimeoutSeconds` value. There is no caller-supplied id:
 
-```
+```bash
 aws kinesis update-queue-records-visibility \
     --queue-arn arn:aws:kinesis:us-west-2:111122223333:queue/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --entries '[
@@ -199,7 +199,7 @@ aws kinesis update-queue-records-visibility \
 
 Results are returned in the `Successful` and `Failed` lists, correlated by `ReceiptHandle`:
 
-```
+```json
 {
     "Successful": [
         { "ReceiptHandle": "AQEBxyzReceiptHandleEXAMPLE1111==" }
@@ -215,7 +215,7 @@ To make a record visible immediately, set its `VisibilityTimeoutSeconds` to 0.
 
 To change the default visibility timeout for every record the queue delivers, call `update-queue` with the new value in `QueueAttributes`:
 
-```
+```bash
 aws kinesis update-queue \
     --queue-arn arn:aws:kinesis:us-west-2:111122223333:queue/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --queue-attributes '{ "VisibilityTimeoutSeconds": 60 }'
@@ -230,7 +230,7 @@ Updating a queue is asynchronous. The queue status moves to `UPDATING` and retur
 
 A queue consumer acknowledges the records it successfully processes, up to 10 per call. Call `acknowledge-queue-records` with one entry per record. Each entry carries a `ReceiptHandle` and nothing else. There is no caller-supplied id:
 
-```
+```bash
 aws kinesis acknowledge-queue-records \
     --queue-arn arn:aws:kinesis:us-west-2:111122223333:queue/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --entries '[
@@ -240,7 +240,7 @@ aws kinesis acknowledge-queue-records \
 
 Results are returned in the `Successful` and `Failed` lists, correlated by `ReceiptHandle`:
 
-```
+```json
 {
     "Successful": [
         { "ReceiptHandle": "AQEBxyzReceiptHandleEXAMPLE1111==" }
@@ -260,7 +260,7 @@ To avoid ongoing charges, delete the resources you created when you no longer ne
 
 Delete the queue:
 
-```
+```bash
 aws kinesis delete-queue \
     --queue-arn arn:aws:kinesis:us-west-2:111122223333:queue/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
 ```
@@ -269,7 +269,7 @@ Deleting a queue is asynchronous and does not delete the stream or its records. 
 
 After the queue is deleted, delete the stream:
 
-```
+```bash
 aws kinesis delete-stream \
     --stream-name my-stream
 ```

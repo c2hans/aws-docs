@@ -29,7 +29,7 @@ For more information, see [Continue rolling back an update](https://docs.aws.ama
 **Tools for PowerShell V4**
 **Example 1: Continues rollback of the named stack, which should be in the state 'UPDATE\_ROLLBACK\_FAILED'. If the continued rollback is successful, the stack will enter state 'UPDATE\_ROLLBACK\_COMPLETE'.**
 
-```
+```powershell
 Resume-CFNUpdateRollback -StackName "myStack"
 ```
 +  For API details, see [ContinueUpdateRollback](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -37,7 +37,7 @@ Resume-CFNUpdateRollback -StackName "myStack"
 **Tools for PowerShell V5**
 **Example 1: Continues rollback of the named stack, which should be in the state 'UPDATE\_ROLLBACK\_FAILED'. If the continued rollback is successful, the stack will enter state 'UPDATE\_ROLLBACK\_COMPLETE'.**
 
-```
+```powershell
 Resume-CFNUpdateRollback -StackName "myStack"
 ```
 +  For API details, see [ContinueUpdateRollback](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

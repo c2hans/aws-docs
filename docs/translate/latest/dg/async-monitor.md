@@ -14,7 +14,7 @@ $ aws translate describe-text-translation-job --job-id {{1c1838f470806ab9c3e0057
 ```
 This command returns the following output:
 
-```
+```json
 {
   "TextTranslationJobProperties": {
     "InputDataConfig": {
@@ -54,7 +54,7 @@ $ aws translate stop-text-translation-job --job-id {{5236d36ce5192abdb3e2519f3ab
 ```
 This command returns the following output:
 
-```
+```json
 {
   "TextTranslationJobProperties": {
     "InputDataConfig": {

@@ -42,7 +42,7 @@ For more information, see [Controlling access to services with VPC endpoints](ht
 **Example: VPC endpoint policy for Amazon Connect Customer Profiles actions**
 The following VPC endpoint policy grants access to the listed Amazon Connect Customer Profiles actions for all principals on all resources.
 
-```
+```json
 {
     "Statement":[
         {

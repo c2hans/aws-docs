@@ -37,7 +37,7 @@ The following firewall rule group allows HTTPS from application subnets to datab
 }
 ```
 
-```
+```sh
 aws network-firewall create-rule-group \
 --type FIREWALL --capacity 100 \
 --rule-group-name example-context-firewall-rule-group \

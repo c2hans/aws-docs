@@ -21,7 +21,7 @@ The Geocode API enables you to geocode a specific point address, interpolated ad
 ------
 #### [ Sample request ]
 
-```
+```json
 {
   "QueryText": "510 W Georgia St, Vancouver, BC"
 }
@@ -30,7 +30,7 @@ The Geocode API enables you to geocode a specific point address, interpolated ad
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -106,7 +106,7 @@ The Geocode API enables you to geocode a specific point address, interpolated ad
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -116,7 +116,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places geocode --key ${{{YourAPIKey}}} --query-text "510 W Georgia St, Vancouver, BC"
 ```
 
@@ -128,7 +128,7 @@ aws geo-places geocode --key ${{{YourAPIKey}}} --query-text "510 W Georgia St, V
 ------
 #### [ Sample request ]
 
-```
+```json
 {
   "QueryComponents": {
     "AddressNumber": "510",
@@ -143,7 +143,7 @@ aws geo-places geocode --key ${{{YourAPIKey}}} --query-text "510 W Georgia St, V
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -287,7 +287,7 @@ aws geo-places geocode --key ${{{YourAPIKey}}} --query-text "510 W Georgia St, V
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -297,7 +297,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 ./aws geo-places geocode --key ${{{YourAPIKey}}} --query-components '{
 "AddressNumber" : "510",
 "Locality": "vancouver",
@@ -314,7 +314,7 @@ curl --request POST \
 ------
 #### [ Sample request ]
 
-```
+```json
 {
   "QueryText": "W. 6th St",
   "QueryComponents": {
@@ -327,7 +327,7 @@ curl --request POST \
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -402,7 +402,7 @@ curl --request POST \
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -412,7 +412,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 ./aws geo-places geocode -key ${{{YourAPIKey}}} --query-text "W. 6th St" \
 --query-components '{"AddressNumber" : "415", "Locality": "Vancouver"}'
 ```
@@ -424,7 +424,7 @@ curl --request POST \
 
 Use filters like `IncludeCountries` and `IncludePlaceTypes` to obtain accurate results. For instance, if you need Vancouver from the USA, apply `"IncludeCountries": ["USA"]` to prioritize results in the USA. To learn more, see [How to geocode using filters](how-to-geocode-filters.md).
 
-```
+```json
 {
   "QueryText": "Vancouver",
   "Filter": {

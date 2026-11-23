@@ -95,6 +95,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DeleteDatasetGeneration  **
+  - **SDK client:** bedrock-agentcore
+  - **IAM action:**  [bedrock-agentcore:DeleteDatasetGeneration](#list_bedrock-agentcore-action-DeleteDatasetGeneration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteEvent  **
   - **SDK client:** bedrock-agentcore
   - **IAM action:**  [bedrock-agentcore:DeleteEvent](#list_bedrock-agentcore-action-DeleteEvent)
@@ -151,6 +158,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetAgentInsight  **
+  - **SDK client:** bedrock-agentcore
+  - **IAM action:**  [bedrock-agentcore:GetAgentInsight](#list_bedrock-agentcore-action-GetAgentInsight)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetBatchEvaluation  **
   - **SDK client:** bedrock-agentcore
   - **IAM action:**  [bedrock-agentcore:GetBatchEvaluation](#list_bedrock-agentcore-action-GetBatchEvaluation)
@@ -168,6 +182,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   GetCodeInterpreterSession  **
   - **SDK client:** bedrock-agentcore
   - **IAM action:**  [bedrock-agentcore:GetCodeInterpreterSession](#list_bedrock-agentcore-action-GetCodeInterpreterSession)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetDatasetGeneration  **
+  - **SDK client:** bedrock-agentcore
+  - **IAM action:**  [bedrock-agentcore:GetDatasetGeneration](#list_bedrock-agentcore-action-GetDatasetGeneration)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -327,6 +348,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListDatasetGenerations  **
+  - **SDK client:** bedrock-agentcore
+  - **IAM action:**  [bedrock-agentcore:ListDatasetGenerations](#list_bedrock-agentcore-action-ListDatasetGenerations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListEvents  **
   - **SDK client:** bedrock-agentcore
   - **IAM action:**  [bedrock-agentcore:ListEvents](#list_bedrock-agentcore-action-ListEvents)
@@ -471,6 +499,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **SDK client:** bedrock-agentcore
   - **IAM action:**  [bedrock-agentcore:UpdateABTest](#list_bedrock-agentcore-action-UpdateABTest)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** bedrock-agentcore.amazonaws.com / **Access level:** Write
+
+- **   UpdateAgentInsight  **
+  - **SDK client:** bedrock-agentcore
+  - **IAM action:**  [bedrock-agentcore:UpdateAgentInsight](#list_bedrock-agentcore-action-UpdateAgentInsight)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   UpdateBrowserStream  **
   - **SDK client:** bedrock-agentcore
@@ -1468,6 +1503,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
+- **   UpdateAgentInsightStore  **
+  - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:UpdateAgentInsightStore](#list_bedrock-agentcore-action-UpdateAgentInsightStore)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateAgentRuntime  **
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:PassCapacityProvider](#list_bedrock-agentcore-action-PassCapacityProvider)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -1983,6 +2025,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [DeleteDatasetGeneration](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_DeleteDatasetGeneration.html)  **
+  - **Description:** Grants permission to delete a dataset generation job record
+  - **Resource types (\*required):** [dataset\*](#list_bedrock-agentcore-resource-dataset)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [DeleteEvaluator](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_DeleteEvaluator.html)  **
   - **Description:** Grants permission to delete an evaluator
   - **Resource types (\*required):** [evaluator\*](#list_bedrock-agentcore-resource-evaluator)
@@ -2238,6 +2286,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [GetDataset](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_GetDataset.html)  **
   - **Description:** Grants permission to get details of a dataset
+  - **Resource types (\*required):** [dataset\*](#list_bedrock-agentcore-resource-dataset)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetDatasetGeneration](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_GetDatasetGeneration.html)  **
+  - **Description:** Grants permission to get details of a dataset generation job
   - **Resource types (\*required):** [dataset\*](#list_bedrock-agentcore-resource-dataset)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Access level:** Read
@@ -2645,6 +2699,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
+- **   [ListDatasetGenerations](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_ListDatasetGenerations.html)  **
+  - **Description:** Grants permission to list the dataset generation jobs of a dataset
+  - **Resource types (\*required):** [dataset\*](#list_bedrock-agentcore-resource-dataset)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Access level:** List
+
 - **   [ListDatasetVersions](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_ListDatasetVersions.html)  **
   - **Description:** Grants permission to list versions of a dataset
   - **Resource types (\*required):** [dataset\*](#list_bedrock-agentcore-resource-dataset)
@@ -2927,6 +2987,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to start a new code interpreter session
   - **Resource types (\*required):** [code-interpreter\*](#list_bedrock-agentcore-resource-code-interpreter) / **Condition keys:**
   - **Resource types (\*required):** [code-interpreter-custom\*](#list_bedrock-agentcore-resource-code-interpreter-custom) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [StartDatasetGeneration](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_StartDatasetGeneration.html)  **
+  - **Description:** Grants permission to start a dataset generation job that adds examples to a dataset from agent traces
+  - **Resource types (\*required):** [dataset\*](#list_bedrock-agentcore-resource-dataset)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [StartMemoryExtractionJob](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_StartMemoryExtractionJob.html)  **

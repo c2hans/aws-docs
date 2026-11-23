@@ -32,7 +32,7 @@ To avoid unreliable detection results, you might want to filter out the detectio
 
 For batch transform, the response is in JSON format, where the format is identical to the JSON format described above. The detection results of each image is represented as a JSON file. For example:
 
-```
+```json
 {"prediction": [[label_id, confidence_score, xmin, ymin, xmax, ymax], [label_id, confidence_score, xmin, ymin, xmax, ymax]]}
 ```
 

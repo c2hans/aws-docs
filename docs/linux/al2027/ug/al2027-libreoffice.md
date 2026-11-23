@@ -39,7 +39,7 @@ Completing this tutorial requires a running Amazon EC2 instance, which might res
 
 Run the following command to identify your processor architecture. This determines which RPM package to download.
 
-```
+```bash
 uname -m
 ```
 
@@ -63,7 +63,7 @@ The output is one of the following:
 
 1. Download the `.tar.gz` archive to your instance. You can use `wget` or `curl` to download directly from the terminal.
 
-   ```
+   ```bash
    cd ~/Downloads
    curl -OL {{TAR_DOWNLOAD_URL}}
    ```
@@ -73,7 +73,7 @@ The output is one of the following:
 
 Navigate to the directory where you downloaded the archive and extract it.
 
-```
+```bash
 cd ~/Downloads
 tar -xf LibreOffice_{{VERSION}}_Linux_{{ARCHITECTURE}}_rpm.tar.gz
 ```
@@ -87,19 +87,19 @@ This creates a directory with a name similar to `LibreOffice_{{VERSION}}_Linux_{
 
 1. Change to the `RPMS/` subdirectory inside the extracted folder.
 
-   ```
+   ```bash
    cd LibreOffice_{{VERSION}}_Linux_{{ARCHITECTURE}}_rpm/RPMS/
    ```
 
 1. Install all RPM packages using `sudo rpm`.
 
-   ```
+   ```bash
    sudo rpm -i *.rpm
    ```
 
    Alternatively, you can use `dnf` for dependency resolution:
 
-   ```
+   ```bash
    sudo dnf install -y *.rpm
    ```
 
@@ -108,7 +108,7 @@ This creates a directory with a name similar to `LibreOffice_{{VERSION}}_Linux_{
 
 Confirm that LibreOffice was installed successfully by checking the version.
 
-```
+```bash
 libreoffice --version
 ```
 
@@ -124,13 +124,13 @@ LibreOffice {{VERSION}} ...
 **From the terminal**
 Run the following command:
 
-```
+```bash
 libreoffice
 ```
 
 If the `libreoffice` command is not available, the binary may be versioned. You can launch it using the versioned name instead:
 
-```
+```bash
 libreoffice{{MAJOR_VERSION}}
 ```
 
@@ -138,7 +138,7 @@ For example, `libreoffice26.8`.
 
 To launch a specific application directly:
 
-```
+```bash
 libreoffice --writer    # Word processor
 libreoffice --calc      # Spreadsheet
 libreoffice --impress   # Presentations
@@ -155,7 +155,7 @@ After installation, LibreOffice applications appear in the desktop applications 
 
 To avoid incurring charges, uninstall LibreOffice by running the following command, or terminate the Amazon EC2 instance if it was created only for this tutorial.
 
-```
+```bash
 sudo dnf remove libreoffice*
 ```
 
@@ -169,7 +169,7 @@ The following section can help you troubleshoot common issues when installing or
 
 Some LibreOffice features (such as Base and certain extensions) require a Java Runtime Environment (JRE). If you see a warning about missing Java, install it:
 
-```
+```bash
 sudo dnf install -y java-25-amazon-corretto-headless
 ```
 
@@ -180,13 +180,13 @@ Then, in LibreOffice, go to **Tools** > **Options** > **LibreOffice** > **Advanc
 
 If the `libreoffice` command is not found after installation, the binary may be versioned. Try running:
 
-```
+```bash
 libreoffice{{MAJOR_VERSION}}
 ```
 
 For example, `libreoffice26.8`. You can also locate the binary:
 
-```
+```bash
 find /opt -name "soffice" 2>/dev/null
 ```
 

@@ -32,7 +32,7 @@ In the example, replace:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
 
@@ -88,7 +88,7 @@ The following shows an example of an AWS IoT Core policy that grants permission 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

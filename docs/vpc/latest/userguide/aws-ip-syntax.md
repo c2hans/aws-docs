@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-syntax.html
 
 AWS publishes its current IP address ranges in JSON format. To get the JSON file, see [Download the JSON file](aws-ip-ranges.md#aws-ip-download). The syntax of the JSON file is as follows.
 
-```
+```json
 {
   "syncToken": "{{0123456789}}",
   "createDate": "{{yyyy}}-{{mm}}-{{dd}}-{{hh}}-{{mm}}-{{ss}}",

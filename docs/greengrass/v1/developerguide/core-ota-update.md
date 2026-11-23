@@ -58,7 +58,7 @@ For role permissions, you can use the AWS managed policy or create a custom poli
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -87,7 +87,7 @@ For role permissions, you can use the AWS managed policy or create a custom poli
 The trust policy attached to the role must allow the `sts:AssumeRole` action and define `iot.amazonaws.com` as a principal. This allows AWS IoT Core to assume the role as a trusted entity. Here's an example policy document:
 ****
 
-```
+```json
 {
      "Version":"2012-10-17",
      "Statement": [
@@ -110,7 +110,7 @@ In addition, the user who initiates an OTA update must have permissions to use `
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -193,7 +193,7 @@ During an OTA update, the OTA update agent restarts binaries on the core device.
 
 To tell the OTA update agent to run these scripts, you must include the `"managedRespawn" : true` flag in the [config.json](gg-core.md#config-json) file. This setting is shown in the following excerpt:
 
-```
+```json
 {
    "coreThing": {
        …
@@ -282,7 +282,7 @@ For more information, see [Integration with init systems](#integration-with-init
 
 1. In a core device terminal, start the OTA update agent.
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ota/ota_agent
    sudo ./ggc-ota
    ```
@@ -300,7 +300,7 @@ For more information, see [Integration with init systems](#integration-with-init
 ------
 #### [ Linux or macOS terminal ]
 
-      ```
+      ```bash
       aws greengrass create-software-update-job \
       --update-targets-architecture x86_64 \
       --update-targets [\"arn:aws:iot:{{region}}:123456789012:thing/myCoreDevice\"] \
@@ -314,7 +314,7 @@ For more information, see [Integration with init systems](#integration-with-init
 ------
 #### [ Windows command prompt ]
 
-      ```
+      ```bash
       aws greengrass create-software-update-job ^
       --update-targets-architecture x86_64 ^
       --update-targets [\"arn:aws:iot:{{region}}:123456789012:thing/myCoreDevice\"] ^
@@ -329,7 +329,7 @@ For more information, see [Integration with init systems](#integration-with-init
 
       The command returns the following response.
 
-      ```
+      ```json
       {
           "IotJobId": "GreengrassUpdateJob_c3bd7f36-ee80-4d42-8321-a1da0EXAMPLE",
           "IotJobArn": "arn:aws:iot:{{region}}:123456789012:job/GreengrassUpdateJob_c3bd7f36-ee80-4d42-8321-a1da0EXAMPLE",
@@ -341,13 +341,13 @@ For more information, see [Integration with init systems](#integration-with-init
 
    1. Call [DescribeJob](https://docs.aws.amazon.com/iot/latest/developerguide/manage-job-cli.html#describe-job) in the AWS IoT Core API to see the job status. Replace the example value with your job ID and then run the command.
 
-      ```
+      ```bash
       aws iot describe-job --job-id GreengrassUpdateJob_c3bd7f36-ee80-4d42-8321-a1da0EXAMPLE
       ```
 
       The command returns a response object that contains information about the job, including `status` and `jobProcessDetails`.
 
-      ```
+      ```json
       {
           "job": {
               "jobArn": "arn:aws:iot:{{region}}:123456789012:job/GreengrassUpdateJob_c3bd7f36-ee80-4d42-8321-a1da0EXAMPLE",
@@ -389,7 +389,7 @@ You can use the `CreateSoftwareUpdateJob` API to update the AWS IoT Greengrass C
 
 The following example shows how to use the AWS CLI to create a job that updates the AWS IoT Greengrass Core software on a core device:
 
-```
+```bash
 aws greengrass create-software-update-job \
 --update-targets-architecture x86_64 \
 --update-targets [\"arn:aws:iot:{{region}}:123456789012:thing/myCoreDevice\"] \
@@ -402,7 +402,7 @@ aws greengrass create-software-update-job \
 
 The `create-software-update-job` command returns a JSON response that contains the job ID, job ARN, and software version that was installed by the update:
 
-```
+```json
 {
     "IotJobId": "GreengrassUpdateJob_c3bd7f36-ee80-4d42-8321-a1da0EXAMPLE",
     "IotJobArn": "arn:aws:iot:{{region}}:123456789012:job/GreengrassUpdateJob_c3bd7f36-ee80-4d42-8321-a1da0EXAMPLE",

@@ -18,7 +18,7 @@ In this exercise, you write application code to locate hotspots on your applicat
 
 1. **Set up a streaming source** – You set up a Kinesis stream and write sample coordinate data as shown following:
 
-   ```
+   ```json
    {"x": 7.921782426109737, "y": 8.746265312709893, "is_hot": "N"}
    {"x": 0.722248626528026, "y": 4.648868803193405, "is_hot": "Y"}
    ```

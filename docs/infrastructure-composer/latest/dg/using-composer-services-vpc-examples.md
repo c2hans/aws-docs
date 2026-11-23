@@ -26,7 +26,7 @@ Now that our Lambda function is configured with our VPC, the VPC tag is displaye
 
 Infrastructure Composer has created the infrastructure code to configure our Lambda function with the security group and subnet of the external VPC.
 
-```
+```yaml
 Transform: AWS::Serverless-2016-10-31
 Resources:
   Function:

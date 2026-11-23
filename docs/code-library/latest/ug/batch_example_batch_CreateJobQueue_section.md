@@ -90,7 +90,7 @@ For more information, see [Create a job queue](https://docs.aws.amazon.com/batch
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Creates a job queue asynchronously.
      *
@@ -134,7 +134,7 @@ For more information, see [Create a job queue](https://docs.aws.amazon.com/batch
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def create_job_queue(
         self,
         job_queue_name: str,

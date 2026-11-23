@@ -33,7 +33,7 @@ Create two policies for AWS Elemental MediaConnect: one to provide read/write ac
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -95,7 +95,7 @@ Create two policies for AWS Elemental MediaConnect: one to provide read/write ac
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

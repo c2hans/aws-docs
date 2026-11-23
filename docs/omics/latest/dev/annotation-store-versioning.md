@@ -11,7 +11,7 @@ You can create new versions of annotation stores to collect different versions o
 
 To create a new version of an existing annotation store, use the **create-annotation-store-version** API as shown in the following example.
 
-```
+```bash
 aws omics create-annotation-store-version \
      --name my_annotation_store \
      --version-name my_version
@@ -19,7 +19,7 @@ aws omics create-annotation-store-version \
 
 You will get the following response with the annotation store version ID, confirming that a new version of your annotation has been created.
 
-```
+```json
 {
      "creationTime": "2023-07-21T17:15:49.251040+00:00",
      "id": "3b93cdef69d2",
@@ -34,7 +34,7 @@ You will get the following response with the annotation store version ID, confir
 
 To update the description of an annotation store version, you can use **update-annotation-store-version** to add updates to an annotation store version.
 
-```
+```bash
 aws omics update-annotation-store-version \
     --name my_annotation_store \
     --version-name my_version \
@@ -43,7 +43,7 @@ aws omics update-annotation-store-version \
 
 You will receive the following response, confirming that the annotation store version has been updated.
 
-```
+```json
 {
      "storeId": "4934045d1c6d",
      "id": "2a3f4a44aa7b",
@@ -64,7 +64,7 @@ aws omics get-annotation-store-version --name my_annotation_store --version-name
 
 You will receive a response with the version name, status, and other details.
 
-```
+```json
 {
      "storeId": "4934045d1c6d",
      "id": "2a3f4a44aa7b",
@@ -87,7 +87,7 @@ aws omics list-annotation-store-versions --name my_annotation_store
 
 You will receive a response with the following information
 
-```
+```json
 {
   "annotationStoreVersions": [
     {
@@ -123,7 +123,7 @@ aws omics delete-annotation-store-versions --name my_annotation_store --versions
 
 If the store version is deleted without errors, you will receive the following response.
 
-```
+```json
 {
   "errors": []
 }
@@ -131,7 +131,7 @@ If the store version is deleted without errors, you will receive the following r
 
 If there are errors, you will receive a response with the details of the errors, as shown.
 
-```
+```json
 {
   "errors": [
     {
@@ -144,7 +144,7 @@ If there are errors, you will receive a response with the details of the errors,
 
 If you try to delete an annotation store version that has an active import job, you will receive a response with an error, as shown.
 
-```
+```json
 {
   "errors": [
     {
@@ -157,6 +157,6 @@ If you try to delete an annotation store version that has an active import job, 
 
 In this case, you can force deletion of the annotation store version, as shown in the following example.
 
-```
+```bash
 aws omics delete-annotation-store-versions --name my_annotation_store --versions my_version --force
 ```

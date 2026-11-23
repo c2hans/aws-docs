@@ -21,7 +21,7 @@ The following examples show how to output, input, and reference artifacts in the
 
 The following example shows how to output an artifact that includes two .jar files.
 
-```
+```yaml
 Actions:
   Build:
     Identifier: aws/build@v1
@@ -38,7 +38,7 @@ Actions:
 
 The following example shows you how to output an artifact called `ARTIFACT4` in `BuildActionA`, and input it into `BuildActionB`.
 
-```
+```yaml
 Actions:
   BuildActionA:
     Identifier: aws/build@v1
@@ -67,7 +67,7 @@ For more information on referencing files, see [Referencing files in an artifact
 **Note**
 Although the example shows the `$CATALYST_SOURCE_DIR_ART5` prefix being used, you could omit it. This is because `ART5` is the *primary input*. To learn more about the primary input, see [Referencing files in an artifact](workflows-working-artifacts-refer-files.md).
 
-```
+```yaml
 Actions:
   BuildActionC:
     Identifier: aws/build@v1
@@ -101,7 +101,7 @@ Notice how the reference does not require the `$CATALYST_SOURCE_DIR_`{{artifact-
 **Note**
 For more information on referencing files, see [Referencing files in an artifact](workflows-working-artifacts-refer-files.md).
 
-```
+```yaml
 Actions:
   BuildActionE:
     Identifier: aws/build@v1
@@ -130,7 +130,7 @@ Notice how the reference requires the `$CATALYST_SOURCE_DIR_`{{artifact-name}} p
 **Note**
 For more information on referencing files, see [Referencing files in an artifact](workflows-working-artifacts-refer-files.md).
 
-```
+```yaml
 Actions:
   BuildActionG:
     Identifier: aws/build@v1
@@ -158,7 +158,7 @@ The following example shows you how to output an artifact named `ART9` in `Actio
 
 For more information on referencing files, see [Referencing files in an artifact](workflows-working-artifacts-refer-files.md).
 
-```
+```yaml
 Actions:
   ActionGroup1:
     Actions:

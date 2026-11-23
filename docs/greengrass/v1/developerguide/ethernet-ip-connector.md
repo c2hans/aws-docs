@@ -66,7 +66,7 @@ Type: A well-formed JSON string that defines the set of supported feedback confi
 
  The following is an example of a `ProtocolAdapterConfiguration`:
 
-```
+```json
 {
     "sources": [
         {
@@ -108,7 +108,7 @@ Type: A well-formed JSON string that defines the set of supported feedback confi
 
 The following CLI command creates a `ConnectorDefinition` with an initial version that contains the IoT Ethernet IP Protocol Adapter connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version
 '{
     "Connectors": [
@@ -137,7 +137,7 @@ This connector doesn't accept MQTT messages as input data.
 
 This connector publishes data to `StreamManager`. You must configure the destination message stream. The output messages are of the following structure:
 
-```
+```json
 {
     "alias": "string",
     "messages": [

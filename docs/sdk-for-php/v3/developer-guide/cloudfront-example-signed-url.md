@@ -24,7 +24,7 @@ You can sign a URL using the CloudFront client in the SDK. First, you must creat
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\CloudFront\CloudFrontClient;
@@ -33,7 +33,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function signPrivateDistribution(
     $cloudFrontClient,
     $resourceKey,
@@ -88,7 +88,7 @@ To use a custom policy, provide the `policy` key instead of `expires`.
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\CloudFront\CloudFrontClient;
@@ -97,7 +97,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function signPrivateDistributionPolicy(
     $cloudFrontClient,
     $resourceKey,
@@ -165,7 +165,7 @@ The form of the signed URL differs, depending on whether the URL you are signing
 
 The following example shows how you could use the signed URL to construct a webpage that displays a video using [JWPlayer](http://www.longtailvideo.com/jw-player/). The same type of technique would apply to other players such as [FlowPlayer](http://flowplayer.org/), but require different client-side code.
 
-```
+```html
 <html>
 <head>
     <title>|CFlong| Streaming Example</title>
@@ -193,7 +193,7 @@ Creating a signed cookie is similar to creating a signed URL. The only differenc
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\CloudFront\CloudFrontClient;
@@ -202,7 +202,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function signCookie(
     $cloudFrontClient,
     $resourceKey,
@@ -268,7 +268,7 @@ As with `getSignedUrl`, you can provide a `'policy'` parameter instead of an `ex
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\CloudFront\CloudFrontClient;
@@ -277,7 +277,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function signCookiePolicy(
     $cloudFrontClient,
     $customPolicy,
@@ -349,7 +349,7 @@ POLICY;
 
 You can also pass these cookies to a `GuzzleHttp\Cookie\CookieJar` for use with a Guzzle client.
 
-```
+```php
 use GuzzleHttp\Client;
 use GuzzleHttp\Cookie\CookieJar;
 

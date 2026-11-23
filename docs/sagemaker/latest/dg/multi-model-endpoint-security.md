@@ -14,7 +14,7 @@ By default, an IAM principal with [`InvokeEndpoint`](https://docs.aws.amazon.com
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

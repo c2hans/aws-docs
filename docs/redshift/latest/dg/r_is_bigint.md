@@ -33,7 +33,7 @@ A `SUPER` expression or column.
 
 To check if `5` is a `BIGINT` using the IS\_BIGINT function, use the following example.
 
-```
+```sql
 CREATE TABLE t(s SUPER);
 
 INSERT INTO t VALUES (5);

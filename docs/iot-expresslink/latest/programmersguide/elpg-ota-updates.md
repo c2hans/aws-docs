@@ -71,7 +71,11 @@ The Host processor is not required to retrieve the entire payload at once, nor t
 
 <a name="elpg-figure3"></a>![Figure 3 - ExpressLink module OTA state diagrams](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/ota-states.png)
 
+Figure 3 - ExpressLink module OTA state diagrams
+
 <a name="elpg-figure4"></a>![Figure 4 - ExpressLink Host OTA state diagrams](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/hota-states.png)
+
+Figure 4 - ExpressLink Host OTA state diagrams
 
 The serial interface commands involved in the implementation of the OTA and Host OTA features are summarized here:
 

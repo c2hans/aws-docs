@@ -45,7 +45,7 @@ You now have the three values that the connector needs: your host URL, the Clien
 
 Store the credentials in an AWS Secrets Manager secret in the same AWS Region as your knowledge base with the following key-value pairs:
 
-```
+```json
 {
     "clientId": "{{your-client-id}}",
     "clientSecret": "{{your-client-secret}}",

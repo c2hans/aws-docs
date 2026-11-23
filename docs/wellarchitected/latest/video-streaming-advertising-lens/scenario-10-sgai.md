@@ -20,6 +20,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
 ![SGAI and SSAI parallel deployment architecture on AWS showing the shared MediaLive/MediaPackage origin, CloudFront CDN layer, and the divergent paths for SGAI players (cacheable manifests + client-side personalization) and SSAI players (personalized manifests + server-side stitching)](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-10-sgai-implementation.jpg)
 
+*SGAI and SSAI parallel deployment architecture on AWS showing the shared MediaLive/MediaPackage origin, CloudFront CDN layer, and the divergent paths for SGAI players (cacheable manifests \+ client-side personalization) and SSAI players (personalized manifests \+ server-side stitching)*
+
  The architecture consists of the following components:
 
 1.  **AWS Elemental MediaLive**: Encodes live streams and delivers compressed output to MediaPackage V2 for packaging. Outputs to a single MediaPackage Channel and Endpoint serving both SGAI and SSAI paths.

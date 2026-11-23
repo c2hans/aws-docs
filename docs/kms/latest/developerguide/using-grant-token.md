@@ -10,7 +10,7 @@ To use the permissions in a new grant immediately, use the [grant token](grants.
 
 The following example uses the `CreateGrant` operation to create a grant that allows the [GenerateDataKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) and [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) operations. It saves the grant token that `CreateGrant` returns in the `token` variable. Then, in a call to the `GenerateDataKey` operation, it uses the grant token in the `token` variable.
 
-```
+```json
 # Create a grant; save the grant token
 $ token=$(aws kms create-grant \
     --key-id 1234abcd-12ab-34cd-56ef-1234567890ab \
@@ -29,7 +29,7 @@ $ aws kms generate-data-key \
 
 Principals with permission can also use a grant token to retire a new grant even before the grant is available throughout AWS KMS. (The `RevokeGrant` operation doesn't accept a grant token.) For details, see [Retiring and revoking grants](grant-delete.md).
 
-```
+```bash
 # Retire the grant
 $ aws kms retire-grant --grant-token $token
 ```

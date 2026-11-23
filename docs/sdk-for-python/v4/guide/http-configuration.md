@@ -35,14 +35,14 @@ To use a different HTTP client, create an HTTP client and pass it as the `transp
 
  **Imports**
 
-```
+```python
 from aws_sdk_bedrock_runtime import BedrockRuntimeClient, BedrockRuntimeConfig
 from smithy_http.urllib3 import Urllib3HTTPClient
 ```
 
  **Code**
 
-```
+```python
 def create_client() -> BedrockRuntimeClient:
     config = BedrockRuntimeConfig.resolve(
         region="us-east-1",
@@ -56,14 +56,14 @@ def create_client() -> BedrockRuntimeClient:
 
  **Imports**
 
-```
+```python
 from aws_sdk_bedrock_runtime import AsyncBedrockRuntimeClient, AsyncBedrockRuntimeConfig
 from smithy_http.aio.aiohttp import AIOHTTPClient
 ```
 
  **Code**
 
-```
+```python
 async def create_client() -> AsyncBedrockRuntimeClient:
     config = await AsyncBedrockRuntimeConfig.resolve(
         region="us-east-1",
@@ -83,20 +83,20 @@ Some operations use bidirectional (duplex) event streams. These operations exist
 
 The `awscrt` extra installs a compatible version of the [awscrt library from PyPI](https://pypi.org/project/awscrt/). Install it as part of the client package:
 
-```
+```bash
 python -m pip install "aws-sdk-bedrock-runtime[awscrt]"
 ```
 
  **Imports**
 
-```
+```python
 from aws_sdk_bedrock_runtime import AsyncBedrockRuntimeClient, AsyncBedrockRuntimeConfig
 from smithy_http.aio.crt import AWSCRTHTTPClient
 ```
 
  **Code**
 
-```
+```python
 async def create_client() -> AsyncBedrockRuntimeClient:
     config = await AsyncBedrockRuntimeConfig.resolve(
         region="us-east-1",
@@ -123,7 +123,7 @@ Implement `smithy_http.interfaces.HTTPClient` with synchronous `send` and `close
 
  **Imports**
 
-```
+```python
 from smithy_http.interfaces import (
     HTTPClient,
     HTTPClientConfiguration,
@@ -135,7 +135,7 @@ from smithy_http.interfaces import (
 
  **Code**
 
-```
+```python
 class CustomHTTPClient(HTTPClient):
     # Exception types that your underlying HTTP client raises on timeouts.
     TIMEOUT_EXCEPTIONS = (TimeoutError,)
@@ -167,7 +167,7 @@ Implement `smithy_http.aio.interfaces.AsyncHTTPClient` with asynchronous `send` 
 
  **Imports**
 
-```
+```python
 from smithy_http.aio.interfaces import AsyncHTTPClient
 from smithy_http.interfaces import (
     HTTPClientConfiguration,
@@ -179,7 +179,7 @@ from smithy_http.interfaces import (
 
  **Code**
 
-```
+```python
 class CustomAsyncHTTPClient(AsyncHTTPClient):
     # Exception types that your underlying HTTP client raises on timeouts.
     TIMEOUT_EXCEPTIONS = (TimeoutError,)

@@ -17,7 +17,7 @@ Use the same source checkout, Region, environment variables, and AWS CLI profile
 
 1. From the `source/infra` directory, destroy the Spoke stack in each account where you deployed it.
 
-   ```
+   ```bash
    $ npm run cdk -- destroy account-assessment-for-aws-organizations-spoke \
        --profile "${PROFILE_SPOKE}"
    ```
@@ -26,14 +26,14 @@ Use the same source checkout, Region, environment variables, and AWS CLI profile
 
 1. Destroy the Org-Management stack.
 
-   ```
+   ```bash
    $ npm run cdk -- destroy account-assessment-for-aws-organizations-org-management \
        --profile "${PROFILE_ORG_MGMT}"
    ```
 
 1. Destroy the Hub stack.
 
-   ```
+   ```bash
    $ npm run cdk -- destroy account-assessment-for-aws-organizations-hub \
        --profile "${PROFILE_HUB}"
    ```
@@ -77,7 +77,7 @@ To prevent accidental data loss, this guidance retains the DynamoDB tables when 
 
 To delete a DynamoDB table using the AWS CLI, run the following command:
 
-```
+```bash
 $ aws dynamodb delete-table --table-name <TABLE_NAME>
 ```
 
@@ -111,6 +111,6 @@ To prevent accidental data loss, this guidance retains the Amazon S3 buckets tha
 
 To empty and delete a bucket using the AWS CLI, run the following command:
 
-```
+```bash
 $ aws s3 rb s3://<BUCKET_NAME> --force
 ```

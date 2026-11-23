@@ -50,7 +50,7 @@ If *geom1* and *geom2* have different dimensions, then an error is returned.
 
 The following SQL constructs a linestring from two input linestrings.
 
-```
+```sql
 SELECT ST_MakeLine(ST_GeomFromText('LINESTRING(77.29 29.07,77.42 29.26,77.27 29.31,77.29 29.07)'), ST_GeomFromText('LINESTRING(88.29 39.07,88.42 39.26,88.27 39.31,88.29 39.07)'));
 ```
 

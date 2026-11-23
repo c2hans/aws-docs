@@ -27,7 +27,7 @@ This permission level applies to all API actions that do **not** act on a specif
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -64,7 +64,7 @@ This permission level applies to all API actions that act on a specific state ma
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -94,7 +94,7 @@ This permission level applies to all the API actions that act on a specific exec
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -121,7 +121,7 @@ This permission level applies to all the API actions that act on a specific acti
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

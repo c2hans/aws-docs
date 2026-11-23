@@ -27,7 +27,7 @@ In your [PutInvocationStep](https://docs.aws.amazon.com/bedrock/latest/APIRefere
 
 The following code example shows how to add an invocation to an active session with the AWS SDK for Python (Boto3). For the `sessionIdentifier`, you can specify either the session's sessionId or its Amazon Resource Name (ARN). For more information about the API, see [CreateInvocation](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_CreateInvocation.html).
 
-```
+```python
 def create_invocation(session_identifier):
 try:
     invocationId = client.create_invocation(
@@ -46,7 +46,7 @@ except ClientError as e:
 
 The following code example shows how to add an invocation step to an active session with the AWS SDK for Python (Boto3). The code adds text and an image in from the working directory. For the `sessionIdentifier`, you can specify either the session's sessionId or its Amazon Resource Name (ARN). For the invocation identifier, specify the unique identifier (in UUID format) of the invocation to add the invocation step to. For more information about the API, see [PutInvocationStep](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PutInvocationStep.html).
 
-```
+```python
 def put_invocation_step(invocation_identifier, session_identifier):
 with open('weather.png', 'rb') as image_file:
     weather_image = image_file.read()

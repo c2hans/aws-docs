@@ -40,7 +40,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 Run an interactive scenario demonstrating the CloudWatch OpenTelemetry experience.
 
-```
+```python
 from collections import Counter
 from datetime import datetime, timedelta, timezone
 import json
@@ -526,7 +526,7 @@ if __name__ == "__main__":
 ```
 The class that wraps the CloudWatch OpenTelemetry operations the scenario calls.
 
-```
+```python
 import logging
 import time
 
@@ -818,7 +818,7 @@ class CloudWatchOTelWrapper:
 ```
 The metric, statistic, and dashboard operations the scenario calls.
 
-```
+```python
     def list_all_metrics(self):
         """
         Gets every metric in the account, without filtering by namespace or name. Use
@@ -949,7 +949,7 @@ The following code example shows how to use `DeleteAlarmMuteRule`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchOTelWrapper:
     """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
 
@@ -994,7 +994,7 @@ The following code example shows how to use `DeleteAlarms`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchWrapper:
     """Encapsulates Amazon CloudWatch functions."""
 
@@ -1035,7 +1035,7 @@ The following code example shows how to use `DescribeAlarmContributors`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchOTelWrapper:
     """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
 
@@ -1100,7 +1100,7 @@ The following code example shows how to use `DescribeAlarmsForMetric`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchWrapper:
     """Encapsulates Amazon CloudWatch functions."""
 
@@ -1133,7 +1133,7 @@ The following code example shows how to use `DisableAlarmActions`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchWrapper:
     """Encapsulates Amazon CloudWatch functions."""
 
@@ -1182,7 +1182,7 @@ The following code example shows how to use `EnableAlarmActions`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchWrapper:
     """Encapsulates Amazon CloudWatch functions."""
 
@@ -1231,7 +1231,7 @@ The following code example shows how to use `GetAlarmMuteRule`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchOTelWrapper:
     """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
 
@@ -1282,7 +1282,7 @@ The following code example shows how to use `GetMetricStatistics`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchWrapper:
     """Encapsulates Amazon CloudWatch functions."""
 
@@ -1334,7 +1334,7 @@ The following code example shows how to use `GetOTelEnrichment`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchOTelWrapper:
     """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
 
@@ -1382,7 +1382,7 @@ The following code example shows how to use `ListAlarmMuteRules`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchOTelWrapper:
     """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
 
@@ -1447,7 +1447,7 @@ The following code example shows how to use `ListMetrics`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchWrapper:
     """Encapsulates Amazon CloudWatch functions."""
 
@@ -1491,7 +1491,7 @@ The following code example shows how to use `PutAlarmMuteRule`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchOTelWrapper:
     """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
 
@@ -1575,7 +1575,7 @@ The following code example shows how to use `PutMetricAlarm`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 
-```
+```python
 class CloudWatchOTelWrapper:
     """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
 
@@ -1662,7 +1662,7 @@ class CloudWatchOTelWrapper:
 ```
 Create an alarm that evaluates a single CloudWatch metric.
 
-```
+```python
 class CloudWatchWrapper:
     """Encapsulates Amazon CloudWatch functions."""
 
@@ -1737,7 +1737,7 @@ The following code example shows how to use `PutMetricData`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchWrapper:
     """Encapsulates Amazon CloudWatch functions."""
 
@@ -1770,7 +1770,7 @@ class CloudWatchWrapper:
 ```
 Put a set of data into a CloudWatch metric.
 
-```
+```python
 class CloudWatchWrapper:
     """Encapsulates Amazon CloudWatch functions."""
 
@@ -1822,7 +1822,7 @@ The following code example shows how to use `StartOTelEnrichment`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchOTelWrapper:
     """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
 
@@ -1873,7 +1873,7 @@ The following code example shows how to use `StopOTelEnrichment`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchOTelWrapper:
     """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
 
@@ -1926,7 +1926,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 Create a class that wraps CloudWatch operations.
 
-```
+```python
 from datetime import datetime, timedelta, timezone
 import logging
 from pprint import pprint
@@ -2122,7 +2122,7 @@ class CloudWatchWrapper:
 ```
 Use the wrapper class to put data in a metric, trigger an alarm that watches the metric, and get data from the alarm.
 
-```
+```python
 def usage_demo():
     print("-" * 88)
     print("Welcome to the Amazon CloudWatch metrics and alarms demo!")
@@ -2247,7 +2247,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 Create a class that wraps the CloudWatch OpenTelemetry operations.
 
-```
+```python
 import logging
 import time
 
@@ -2552,7 +2552,7 @@ class CloudWatchOTelWrapper:
 ```
 Use the wrapper class to alarm on OpenTelemetry metrics with a PromQL query, inspect the contributors to the alarm, and mute it.
 
-```
+```python
 def usage_demo():
     """
     Walks through the OpenTelemetry metrics workflow in CloudWatch: turn on
@@ -2647,7 +2647,7 @@ def usage_demo():
 ```
 Configure an OpenTelemetry Collector to send the OTLP metrics that this example alarms on to the CloudWatch metrics endpoint. Metric ingestion over OTLP is not an AWS SDK operation, so this half of the example is collector configuration rather than SDK code.
 
-```
+```python
 # Purpose
 #
 # An OpenTelemetry Collector configuration that sends OTLP metrics to the Amazon

@@ -29,7 +29,7 @@ If the code fails, check that the user that you use has the correct permissions.
 ------
 #### [ Python ]
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
 
@@ -77,7 +77,7 @@ If the code fails, check that the user that you use has the correct permissions.
 ------
 #### [ Java V2 ]
 
-   ```
+   ```java
    /*
       Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
       SPDX-License-Identifier: Apache-2.0

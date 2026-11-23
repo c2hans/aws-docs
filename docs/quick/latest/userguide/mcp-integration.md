@@ -166,7 +166,7 @@ Use the following guidance to diagnose and resolve common issues when you create
 
   The following example shows the incorrect Draft 3 syntax:
 
-  ```
+  ```json
   {
     "type": "object",
     "properties": {
@@ -181,7 +181,7 @@ Use the following guidance to diagnose and resolve common issues when you create
 
   The following example shows the correct Draft 7 syntax:
 
-  ```
+  ```json
   {
     "type": "object",
     "properties": {

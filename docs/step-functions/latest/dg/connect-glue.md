@@ -14,7 +14,7 @@ The `JobName` field is extracted from the request and inserted into the response
 
 The following includes a `Task` state that starts an AWS Glue job.
 
-```
+```json
 "Glue StartJobRun": {
       "Type": "Task",
       "Resource": "arn:aws:states:::glue:startJobRun.sync",
@@ -44,7 +44,7 @@ AWS Glue does not have resource-based control.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -67,7 +67,7 @@ AWS Glue does not have resource-based control.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

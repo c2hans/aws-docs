@@ -36,7 +36,7 @@ The following tables summarize feature availability on mobile compared to deskto
 | Context meter | Not available |
 
 **Note**
-Branching conversations is available on Android only. See [Differences between iOS and Android](mobile-ios-android-differences.md). For how these chat capabilities work in detail, see [Working with chat](working-with-chat-desktop.md).
+Branching conversations is available on Android only. See [Differences between iOS and Android](mobile-ios-android-differences.md). For how these chat capabilities work in detail, see [Ask questions, explore data, and get insights with chat in AWS Quick](using-quick-chat.md).
 
 ## Creating documents and visuals
 <a name="mobile-availability-documents"></a>

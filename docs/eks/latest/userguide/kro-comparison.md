@@ -22,7 +22,7 @@ Before migrating, ensure your self-managed kro controller is running the same ve
 
 1. Update your self-managed kro controller to use `kube-system` for leader election leases:
 
-   ```
+   ```bash
    helm upgrade --install kro \
      oci://ghcr.io/awslabs/kro/kro-chart \
      --namespace kro \
@@ -37,7 +37,7 @@ Before migrating, ensure your self-managed kro controller is running the same ve
 
 1. Gradually scale down or remove self-managed kro deployments:
 
-   ```
+   ```bash
    helm uninstall kro --namespace kro
    ```
 

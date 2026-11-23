@@ -126,7 +126,7 @@ To view invocations for an individual runtime alias or runtime version, at step 
 
 To list the runtime metrics for the `companyphp8` runtime, run the following **list-metrics** command.
 
-```
+```bash
 aws cloudwatch list-metrics \
   --region us-east-1 \
   --namespace AWS/Lambda \
@@ -135,7 +135,7 @@ aws cloudwatch list-metrics \
 
 The output lists each metric and dimension combination that has data. The following example shows part of the output.
 
-```
+```json
 {
     "Metrics": [
         {
@@ -184,7 +184,7 @@ The output lists each metric and dimension combination that has data. The follow
 
 1. Save the following metric queries to a file named `queries.json`. The `errorRate` expression calculates the percentage of invocations of the `prod` alias that result in an error.
 
-   ```
+   ```json
    [
        {
            "Id": "invokes",
@@ -229,7 +229,7 @@ The output lists each metric and dimension combination that has data. The follow
 
 1. Run the following **get-metric-data** command.
 
-   ```
+   ```bash
    aws cloudwatch get-metric-data \
      --region us-east-1 \
      --metric-data-queries file://queries.json \
@@ -239,7 +239,7 @@ The output lists each metric and dimension combination that has data. The follow
 
    The following example shows part of the output. Each value is the error rate, as a percentage, for one minute.
 
-   ```
+   ```json
    {
        "MetricDataResults": [
            {
@@ -319,7 +319,7 @@ Repeat these steps for each alias, such as `dev` and `test`. For more informatio
 
 1. Save the following metric queries to a file named `alarm-metrics.json`.
 
-   ```
+   ```json
    [
        {
            "Id": "invokes",
@@ -364,7 +364,7 @@ Repeat these steps for each alias, such as `dev` and `test`. For more informatio
 
 1. Run the following **put-metric-alarm** command. Replace the example topic ARN with the Amazon Resource Name (ARN) of your Amazon SNS topic.
 
-   ```
+   ```bash
    aws cloudwatch put-metric-alarm \
      --region us-east-1 \
      --alarm-name {{companyphp8-prod-error-rate}} \
@@ -382,7 +382,7 @@ Repeat these steps for each alias, such as `dev` and `test`. For more informatio
 
 1. To check the state of the alarm, run the following **describe-alarms** command.
 
-   ```
+   ```bash
    aws cloudwatch describe-alarms \
      --region us-east-1 \
      --alarm-names {{companyphp8-prod-error-rate}} \
@@ -426,7 +426,7 @@ On the graph, compare the error rate expressions for the same time periods. To c
 
 1. Save the following metric queries to a file named `compare-versions.json`.
 
-   ```
+   ```json
    [
        {
            "Id": "invokesOld",
@@ -511,7 +511,7 @@ On the graph, compare the error rate expressions for the same time periods. To c
 
 1. Run the following **get-metric-data** command.
 
-   ```
+   ```bash
    aws cloudwatch get-metric-data \
      --region us-east-1 \
      --metric-data-queries file://compare-versions.json \
@@ -523,7 +523,7 @@ In the output, compare the `v8.3.1 error rate (%)` and `v8.3.2 error rate (%)` v
 
 To view the same comparison on a CloudWatch dashboard, you can use the **put-dashboard** command. The following dashboard body shows invocations and error rates for each version.
 
-```
+```json
 {
     "widgets": [
         {
@@ -572,7 +572,7 @@ To view the same comparison on a CloudWatch dashboard, you can use the **put-das
 
 To create the dashboard, save the dashboard body to a file named `dashboard.json`, and then run the following command.
 
-```
+```bash
 aws cloudwatch put-dashboard \
   --region us-east-1 \
   --dashboard-name {{companyphp8-rollout}} \
@@ -627,7 +627,7 @@ When you change the runtime alias of a function, the `UpdateFunctionConfiguratio
 
 The following example shows a `CreateFunction` event for a function that uses the `prod` alias of the `companyphp8` runtime. The example omits some fields.
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

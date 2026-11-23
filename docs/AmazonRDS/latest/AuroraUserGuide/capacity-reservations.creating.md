@@ -104,6 +104,8 @@ You can also specify the following optional parameters:
 
 To schedule a reservation to begin on a future date, provide a start date and a commitment duration. Amazon RDS assesses the request, and if it can deliver the capacity, moves the reservation to the `scheduled` state. No charges apply until the start date, when Amazon RDS activates the reservation.
 
+Make the request at least 56 days (8 weeks) before the start date to improve the chances that Amazon RDS can support your request.
+
 While assessing a request, Amazon RDS might determine that it can support a shorter commitment duration. In that case, Amazon RDS schedules the reservation with the shorter commitment duration, and you are committed to keeping the reservation for a shorter period than you requested. To see the commitment that applies, check `CommitmentInfo.CommitmentEndDate` in the output of `describe-db-capacity-reservations`.
 
 ### Console

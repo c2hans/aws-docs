@@ -56,6 +56,13 @@ Content-type: application/json
    },
    "connectivityType": "string",
    "createdAt": number,
+   "errorDetails": [
+      {
+         "code": "string",
+         "message": "string",
+         "resourceIds": [ "string" ]
+      }
+   ],
    "flowModules": [
       {
          "dependsOn": [ "string" ],
@@ -64,8 +71,15 @@ Content-type: application/json
          "version": "string"
       }
    ],
+   "flows": [
+      {
+         "name": "string",
+         "pipeline": { ... }
+      }
+   ],
    "gatewayId": "string",
    "linkId": "string",
+   "lockToken": "string",
    "logSettings": {
       "applicationLogs": {
          "sampling": {
@@ -111,9 +125,19 @@ Valid Values: `DEFAULT | PUBLIC_INGRESS | PUBLIC_EGRESS | EXTERNAL_INBOUND`
 The timestamp of when the outbound external link was created.
 Type: Timestamp
 
+ ** [errorDetails](#API_GetOutboundExternalLink_ResponseSyntax) **   <a name="rtbfabric-GetOutboundExternalLink-response-errorDetails"></a>
+The causes of the outbound external link's failure, such as a deleted subnet. Present only when the link is CREATE\_FAILED or DELETE\_FAILED.
+Type: Array of [ErrorDetail](API_ErrorDetail.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+
  ** [flowModules](#API_GetOutboundExternalLink_ResponseSyntax) **   <a name="rtbfabric-GetOutboundExternalLink-response-flowModules"></a>
 The configuration of flow modules.
 Type: Array of [ModuleConfiguration](API_ModuleConfiguration.md) objects
+
+ ** [flows](#API_GetOutboundExternalLink_ResponseSyntax) **   <a name="rtbfabric-GetOutboundExternalLink-response-flows"></a>
+The link's active flows. Empty when the link has no modules, and absent when its modules were set with UpdateLinkModuleFlow.
+Type: Array of [Flow](API_Flow.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 
  ** [gatewayId](#API_GetOutboundExternalLink_ResponseSyntax) **   <a name="rtbfabric-GetOutboundExternalLink-response-gatewayId"></a>
 The unique identifier of the gateway.
@@ -126,6 +150,11 @@ The unique identifier of the link.
 Type: String
 Length Constraints: Minimum length of 6. Maximum length of 30.
 Pattern: `link-[a-z0-9-]{1,25}`
+
+ ** [lockToken](#API_GetOutboundExternalLink_ResponseSyntax) **   <a name="rtbfabric-GetOutboundExternalLink-response-lockToken"></a>
+The link's concurrency token. It changes whenever the link does.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
 
  ** [logSettings](#API_GetOutboundExternalLink_ResponseSyntax) **   <a name="rtbfabric-GetOutboundExternalLink-response-logSettings"></a>
 Settings for the application logs.
@@ -142,9 +171,9 @@ Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(https|http)://.+`
 
  ** [status](#API_GetOutboundExternalLink_ResponseSyntax) **   <a name="rtbfabric-GetOutboundExternalLink-response-status"></a>
-The status of the request.
+The status of the outbound external link. After CREATE\_FAILED, delete the outbound external link and create it again. After DELETE\_FAILED, retry the delete. `errorDetails` gives the cause.
 Type: String
-Valid Values: `PENDING_CREATION | PENDING_REQUEST | REQUESTED | ACCEPTED | ACTIVE | REJECTED | FAILED | PENDING_DELETION | DELETED | PENDING_UPDATE | PENDING_ISOLATION | ISOLATED | PENDING_RESTORATION`
+Valid Values: `PENDING_CREATION | PENDING_REQUEST | REQUESTED | ACCEPTED | ACTIVE | REJECTED | FAILED | PENDING_DELETION | DELETED | PENDING_UPDATE | PENDING_ISOLATION | ISOLATED | PENDING_RESTORATION | CREATE_FAILED | DELETE_FAILED`
 
  ** [tags](#API_GetOutboundExternalLink_ResponseSyntax) **   <a name="rtbfabric-GetOutboundExternalLink-response-tags"></a>
 A map of the key-value pairs for the tag or tags assigned to the specified resource.
@@ -179,7 +208,7 @@ The request was denied due to request throttling.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request could not be completed because it fails satisfy the constraints specified by the service.
+The request could not be completed because it fails to satisfy the constraints specified by the service.
 HTTP Status Code: 400
 
 ## See Also

@@ -21,7 +21,7 @@ module-git                 modules                    openmpi/4.0.2
 intelmpi
 ```
 
-```
+```sh
 $ module load intelmpi
 ```
 

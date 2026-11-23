@@ -83,7 +83,7 @@ aws docdb failover-db-cluster ^
 ```
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "DBCluster": {
         "HostedZoneId": "Z2SUY0A1719RZT",

@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an Amazon S3 Glacier vault.
     /// </summary>
@@ -72,7 +72,7 @@ For more information, see [Creating a Vault in Amazon Glacier Using the AWS Comm
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glacier#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.glacier.GlacierClient;
 import software.amazon.awssdk.services.glacier.model.CreateVaultRequest;
@@ -137,7 +137,7 @@ public class CreateVault {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glacier#code-examples).
 Create the client.
 
-```
+```javascript
 const { GlacierClient } = require("@aws-sdk/client-glacier");
 // Set the AWS Region.
 const REGION = "REGION";
@@ -147,7 +147,7 @@ export { glacierClient };
 ```
 Create the vault.
 
-```
+```javascript
 // Load the SDK for JavaScript
 import { CreateVaultCommand } from "@aws-sdk/client-glacier";
 import { glacierClient } from "./libs/glacierClient.js";
@@ -173,7 +173,7 @@ run();
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/glacier#code-examples).
 
-```
+```javascript
 // Load the SDK for JavaScript
 var AWS = require("aws-sdk");
 // Set the region
@@ -197,7 +197,7 @@ glacier.createVault({ vaultName: "YOUR_VAULT_NAME" }, function (err) {
 **Tools for PowerShell V4**
 **Example 1: Creates a new vault for the user's account. As no value was supplied to the -AccountId parameter the cmdlets uses a default of "-" indicating the current account.**
 
-```
+```powershell
 New-GLCVault -VaultName myvault
 ```
 **Output:**
@@ -210,7 +210,7 @@ New-GLCVault -VaultName myvault
 **Tools for PowerShell V5**
 **Example 1: Creates a new vault for the user's account. As no value was supplied to the -AccountId parameter the cmdlets uses a default of "-" indicating the current account.**
 
-```
+```powershell
 New-GLCVault -VaultName myvault
 ```
 **Output:**
@@ -226,7 +226,7 @@ New-GLCVault -VaultName myvault
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 

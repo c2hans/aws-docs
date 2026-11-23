@@ -20,7 +20,7 @@ Source actions enable you to:
 Before you can create and execute source actions, ensure that you have the following:
 + AWS Transform MGN connector deployed and registered
   + Network connectivity from the connector to your on-premises machines via SSH (Linux) or WinRM (Windows)
-  + The connector role (`AWSApplicationMigrationConnectorManagementRole`) must allow the `mgn:VerifyClientRoleForMgn`, `mgn:SendClientLogsForMgn`, and `mgn:SendClientMetricsForMgn` actions. If you created the connector before source actions were available, update its role. Otherwise, every source action fails with an `Unsupported action` error. For more information, see [MGN connector permissions](mgn-connector-permissions.md)
+  + The connector role (`AWSApplicationMigrationConnectorManagementRole`) should allow the `mgn:SendClientLogsForMgn` and `mgn:SendClientMetricsForMgn` actions. If you created the connector before source actions were available, update its role. Without these actions, source actions still run, but the result includes a warning that AWS Transform MGN couldn't send logs or metrics. For more information, see [MGN connector permissions](mgn-connector-permissions.md)
   + We recommend that you provide the address that the connector uses to reach each machine (**FQDN for Action Framework**) in the [`mgn:server:fqdn-for-action-framework`](import-parameters.md) field of the inventory file when you import the source servers. If no address is set, MGN uses the source server's primary private IP address. For more information, see [Source actions after launching test or cutover instances](source-actions-execute.md#source-actions-after-launch)
 + Credentials registered for each machine. Source actions use the credentials secret that you registered for the source server. For more information, see [Register server credentials](connector-register-server-credentials.md)
   + On Windows, if the user isn't an administrator, the user must also have access to WinRM. For more information, see [Register server credentials](connector-register-server-credentials.md)
@@ -59,7 +59,7 @@ On Linux, scripts are executed as root using sudo under the configured user acco
 
 **Standard input:** The script's standard input is empty. Commands that read input (such as `read`) or expect interactive prompts (such as package manager confirmations) get end-of-input. Use non-interactive options where available, for example, `apt-get -y`.
 
-**Script output:** SSM captures at most 24,000 bytes of the script's standard output; longer output is truncated.
+**Script output:** SSM keeps the first 24,000 characters of the script's standard output and the first 8,000 characters of its standard error. Standard error also includes AWS Transform MGN's own progress messages and result summary, which count toward the 8,000 characters.
 
 **Script limitations:**
 + Maximum script size: 4096 characters for a standard SSM parameter, 8192 for an advanced parameter (SSM counts characters as UTF-16 code units, so emoji and characters outside the Basic Multilingual Plane count as two). For more information, see [Managing parameter tiers](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-advanced-parameters.html) in the *AWS Systems Manager User Guide*
@@ -76,7 +76,7 @@ On Windows, scripts run as Windows PowerShell scripts. There is no equivalent of
 
 **PowerShell language mode:** The script runs in Windows PowerShell FullLanguage mode. Constrained Language Mode is not supported; scripts fail with exit code 1 if the server is configured with Constrained Language Mode. To check your server, run `$ExecutionContext.SessionState.LanguageMode`; it must print `FullLanguage`.
 
-**Script output:** SSM captures at most 24,000 bytes of standard output; longer output is truncated. Progress output is suppressed (`$ProgressPreference = 'SilentlyContinue'`); if your script needs progress output, set `$ProgressPreference` explicitly.
+**Script output:** SSM keeps the first 24,000 characters of the script's standard output and the first 8,000 characters of its standard error. Standard error also includes AWS Transform MGN's own progress messages and result summary, which count toward the 8,000 characters. Progress output is suppressed (`$ProgressPreference = 'SilentlyContinue'`); if your script needs progress output, set `$ProgressPreference` explicitly.
 
 **Script paths:** `$PSCommandPath` and `$PSScriptRoot` are empty because the script does not run from a visible file path.
 
@@ -90,7 +90,6 @@ On Windows, scripts run as Windows PowerShell scripts. There is no equivalent of
 
 ### Common limitations for both platforms
 <a name="source-actions-common-limitations"></a>
-+ Output capture limit: 1 MB per stream (stdout and stderr)
 + Scripts must be stored in SSM Parameter Store
 
 ## Account ownership and multi-account migrations

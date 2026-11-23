@@ -37,7 +37,7 @@ The following are example CloudTrail log records for Direct Connect.
 
 **Example: CreateConnection**
 
-```
+```json
 {
     "Records": [
     {
@@ -84,7 +84,7 @@ The following are example CloudTrail log records for Direct Connect.
 
 **Example: CreatePrivateVirtualInterface**
 
-```
+```json
 {
     "Records": [
     {
@@ -146,7 +146,7 @@ The following are example CloudTrail log records for Direct Connect.
 
 **Example: DescribeConnections**
 
-```
+```json
 {
     "Records": [
     {
@@ -181,7 +181,7 @@ The following are example CloudTrail log records for Direct Connect.
 
 **Example: DescribeVirtualInterfaces**
 
-```
+```json
 {
     "Records": [
     {

@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 
  Lambda invocations response type differs in v2 and v3.
 
-```
+```javascript
 // v2
 import { Lambda } from "@aws-sdk/client-lambda";
 import AWS from "aws-sdk";
@@ -31,7 +31,7 @@ const payloadObject = JSON.parse(invoke.Payload);
 console.log("Invoke response object", payloadObject);
 ```
 
-```
+```javascript
 // v3
 const lambda = new Lambda({ {{REGION}} });
 const invoke = await lambda.invoke({
@@ -58,7 +58,7 @@ console.log("Invoke response object", payloadObject);
 
  To skip computation of MD5 checksums of message bodies, set `md5` to *false* on the configuration object. Otherwise, the SDK by default will calculate the checksum for sending messages, as well as validating the checksum for retrieved messages.
 
-```
+```javascript
 // Example: Skip MD5 checksum in Amazon SQS
 import { SQS } from "@aws-sdk/client-sqs";
 
@@ -74,7 +74,7 @@ When using a custom `QueueUrl` in Amazon SQS operations that have this as an inp
 
  You should use one client per region in v3. The AWS region is meant to be initialized at the client level and not changed between requests.
 
-```
+```typescript
 import { SQS } from "@aws-sdk/client-sqs";
 
 const sqsClients = {
@@ -101,7 +101,7 @@ for (const { region, url } of queues) {
 
  In v3, when using a custom endpoint, i.e. one that differs from the default public Amazon SQS endpoints, you should always set the endpoint on the Amazon SQS Client as well as the ` QueueUrl` field.
 
-```
+```typescript
 import { SQS } from "@aws-sdk/client-sqs";
 
 const sqs = new SQS({
@@ -119,7 +119,7 @@ await sqs.sendMessage({
 
  If you are not using a custom endpoint, then you do not need to set `endpoint` on the client.
 
-```
+```typescript
 import { SQS } from "@aws-sdk/client-sqs";
 
 const sqs = new SQS({

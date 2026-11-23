@@ -26,7 +26,7 @@ The following example shows how to configure this setting with the API or AWS CL
 
 The following example turns on `OpenDatasetsProcedures` for the `MSSQL_TO_MYSQL` section.
 
-```
+```json
 {
   "MSSQL_TO_MYSQL": {
     "OpenDatasetsProcedures": true

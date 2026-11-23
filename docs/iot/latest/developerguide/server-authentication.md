@@ -48,7 +48,7 @@ To create an `IotDataPlaneClient` that uses an `iot:Data-ATS` endpoint, you must
 
 The following example performs both of these operations.
 
-```
+```java
 public void setup() throws Exception {
         IotClient client = IotClient.builder().credentialsProvider(CREDENTIALS_PROVIDER_CHAIN).region(Region.US_EAST_1).build();
         String endpoint = client.describeEndpoint(r -> r.endpointType("iot:Data-ATS")).endpointAddress();

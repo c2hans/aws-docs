@@ -18,7 +18,7 @@ You must give Amazon Managed Service for Prometheus permission to send messages 
 
 1. Choose **Access policy** and add the following policy statement to the existing policy.
 
-   ```
+   ```json
    {
        "Sid": "Allow_Publish_Alarms",
        "Effect": "Allow",

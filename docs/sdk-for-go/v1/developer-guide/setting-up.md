@@ -18,13 +18,13 @@ To get started with AWS, you need an AWS account. There are two ways to sign up 
 
 To install the SDK and its dependencies, run the following Go command.
 
-```
+```go
 go get -u github.com/aws/aws-sdk-go/...
 ```
 
 If you set the [Go vendor experiment](https://github.com/aws/aws-sdk-go/blob/main/README.md#installing) environment variable to `1`, you can use the following command to get the SDK. The SDK's runtime dependencies are vendored in the `vendor/` folder.
 
-```
+```go
 go get -u github.com/aws/aws-sdk-go
 ```
 
@@ -33,7 +33,7 @@ go get -u github.com/aws/aws-sdk-go
 
 After you have installed the SDK, you import AWS packages into your Go applications to use the SDK, as shown in the following example, which imports the AWS, Session, and Amazon S3 libraries:
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"

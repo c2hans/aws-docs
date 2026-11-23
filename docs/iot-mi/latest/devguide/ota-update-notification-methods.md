@@ -16,7 +16,7 @@ When OTA notifications are enabled, update status events are automatically pushe
 
 You can use the [ListOtaTaskExecutions](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListOtaTaskExecutions.html) API to manually check the status of OTA updates for your managed things:
 
-```
+```bash
 aws iotmanagedintegrations list-ota-task-executions \
   --task-id "task-123456789" \
   --max-results 25
@@ -24,7 +24,7 @@ aws iotmanagedintegrations list-ota-task-executions \
 
 The response provides detailed execution status for each managed thing:
 
-```
+```json
 {
   "taskExecutionSummaries": [
     {

@@ -63,7 +63,7 @@ Set `thinking.type` to `"adaptive"` in your API request:
 ------
 #### [ CLI ]
 
-```
+```bash
 aws bedrock-runtime invoke-model \
 --model-id "global.anthropic.claude-opus-5-5" \
 --body '{
@@ -87,7 +87,7 @@ output.json && cat output.json | jq '.content[] | {type, thinking: .thinking[0:2
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 import json
 
@@ -124,7 +124,7 @@ for block in response_body["content"]:
 ------
 #### [ TypeScript ]
 
-```
+```typescript
 import { BedrockRuntimeClient, InvokeModelCommand } from "@aws-sdk/client-bedrock-runtime";
 
 async function main() {
@@ -185,7 +185,7 @@ The `effort` parameter must be placed inside a separate `output_config` object i
 
 The following example shows how to set the effort level when using the InvokeModel API:
 
-```
+```json
 {
     "anthropic_version": "bedrock-2023-05-31",
     "max_tokens": 16000,
@@ -207,7 +207,7 @@ The following example shows how to set the effort level when using the InvokeMod
 
 Claude Sonnet 5.5 rejects `"thinking": {"type": "disabled"}` with a 400 error. To turn off the thinking that Claude Sonnet 5.5 does before it responds, set `thinking.type` to `"between_tools"`. This is the lowest thinking setting on Claude Sonnet 5.5. The model doesn't think before responding, but it still returns short progress updates between tool calls.
 
-```
+```json
 {
     "anthropic_version": "bedrock-2023-05-31",
     "max_tokens": 4096,
@@ -238,7 +238,7 @@ Setting `summarized` doesn't guarantee that reasoning text is returned. Some mod
 
 The following example requests summarized reasoning when using the InvokeModel API:
 
-```
+```json
 {
     "anthropic_version": "bedrock-2023-05-31",
     "max_tokens": 16000,
@@ -258,7 +258,7 @@ The following example requests summarized reasoning when using the InvokeModel A
 
 Thinking tokens are billed as output tokens. To see how many output tokens were spent on thinking, read `usage.output_tokens_details.thinking_tokens` in the response. This value counts the full reasoning that the model generated, not the summarized text returned in the response, and is always less than or equal to `output_tokens`. It is `0` when the model skipped thinking. When streaming, the breakdown appears only in the final `message_delta` event.
 
-```
+```json
 "usage": {
     "input_tokens": 52,
     "output_tokens": 498,
@@ -275,7 +275,7 @@ Thinking tokens are billed as output tokens. To see how many output tokens were 
 
 When using the [Converse API](conversation-inference.md), pass the `thinking` and `effort` parameters inside `additionalModelRequestFields`. The following example shows adaptive thinking with the default effort level:
 
-```
+```python
 import boto3, json
 
 bedrock_runtime = boto3.client(service_name='bedrock-runtime', region_name='us-east-1')
@@ -298,7 +298,7 @@ print(json.dumps(response["output"], indent=2, default=str))
 
 To specify an effort level, add the `effort` field inside a separate `output_config` object in `additionalModelRequestFields`:
 
-```
+```python
 response = bedrock_runtime.converse(
     modelId="global.anthropic.claude-opus-5-5",
     messages=[{
@@ -323,7 +323,7 @@ This feature is a Beta Service as defined in the AWS Service Terms. On Claude Ha
 
 To use per-turn effort, include one of the following `anthropic_beta` values: `mid-conversation-output-config-2026-07-01`, `mid-conversation-effort-2026-08-01`, `per-turn-control-2026-07-01`, or `per-message-effort-2026-07-01`.
 
-```
+```json
 {
     "anthropic_version": "bedrock-2023-05-31",
     "anthropic_beta": ["mid-conversation-effort-2026-08-01"],

@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/re
 
 ![Diagram showing a batch data processing reference architecture](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/images/batch-data-processing-reference-architecture.png)
 
+*Figure 3: Batch data processing reference architecture *
+
 1.  Batch data processing systems typically require a persistent data store for source data. When developing batch data processing applications on AWS, you can use data from various sources, including your on-premises data stores, Amazon RDS, Amazon S3, DynamoDB, and any other databases that are accessible in the cloud.
 
 1.  Data processing jobs need access to a variety of data stores to read data. You can use AWS Glue connectors from the AWS Marketplace to connect to a variety of data stores, such as Google BigQuery, and SAP HANA. You also can connect to SaaS application providers, such as Salesforce, ServiceNow, and Google Analytics, using AWS Glue DataBrew and Amazon AppFlow. In addition, you can always rely on the custom JDBC capability in Apache Spark and connect to any JDBC-compliant data store from Amazon EMR or AWS Glue jobs.

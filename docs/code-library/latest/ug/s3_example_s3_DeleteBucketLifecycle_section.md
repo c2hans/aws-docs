@@ -14,7 +14,7 @@ The following code examples show how to use `DeleteBucketLifecycle`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
         /// <summary>
         /// This method removes the Lifecycle configuration from the named
         /// S3 bucket.
@@ -55,7 +55,7 @@ For more information, see [Managing the lifecycle of objects](https://docs.aws.a
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -91,7 +91,7 @@ class BucketWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_s3->deletebucketlifecycle(
           iv_bucket = iv_bucket_name ).

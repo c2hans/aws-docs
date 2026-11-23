@@ -23,33 +23,33 @@ The `aws:executeScript` action contains the following preinstalled PowerShell Co
 
 To use PowerShell Core modules that aren't preinstalled, your script must install the module with the `-Force` flag, as shown in the following command. The `AWSPowerShell.NetCore` module isn't supported. Replace {{ModuleName}} with the module you want to install.
 
-```
+```ps
 Install-Module {{ModuleName}} -Force
 ```
 
 To use PowerShell Core cmdlets in your script, we recommend using the `AWS.Tools` modules, as shown in the following commands. Replace each {{example resource placeholder}} with your own information.
 + Amazon S3 cmdlets.
 
-  ```
+  ```ps
   Install-Module AWS.Tools.S3 -Force
   Get-S3Bucket -BucketName {{amzn-s3-demo-bucket}}
   ```
 + Amazon EC2 cmdlets.
 
-  ```
+  ```ps
   Install-Module AWS.Tools.EC2 -Force
   Get-EC2InstanceStatus -InstanceId {{instance-id}}
   ```
 + Common, or service independent AWS Tools for Windows PowerShell cmdlets.
 
-  ```
+  ```ps
   Install-Module AWS.Tools.Common -Force
   Get-AWSRegion
   ```
 
 If your script initializes new objects in addition to using PowerShell Core cmdlets, you must also import the module as shown in the following command.
 
-```
+```ps
 Install-Module AWS.Tools.EC2 -Force
 Import-Module AWS.Tools.EC2
 
@@ -71,7 +71,7 @@ The attachment for a Python script can be a .py file or a .zip file that contain
 ------
 #### [ YAML ]
 
-```
+```yaml
 action: "aws:executeScript"
 inputs:
  Runtime: {{runtime}}
@@ -87,7 +87,7 @@ inputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "action": "aws:executeScript",
     "inputs": {
@@ -132,7 +132,7 @@ A JSON or YAML object that will be passed to the first parameter of the handler.
 Type: String
 Required: No
 
-```
+```yaml
 description: Tag an instance
 schemaVersion: '0.3'
 assumeRole: '{{AutomationAssumeRole}}'
@@ -176,7 +176,7 @@ outputs:
   - tagInstance.TagKey
 ```
 
-```
+```yaml
 description: Tag an instance
 schemaVersion: '0.3'
 assumeRole: '{{AutomationAssumeRole}}'
@@ -292,7 +292,7 @@ Follow these steps to create runbooks that use attachments:
 
    Upload your script file or zip package to an S3 bucket that your automation role can access. Note the S3 URI for use in the next step.
 
-   ```
+   ```bash
    aws s3 cp my-automation-package.zip s3://my-automation-bucket/scripts/
    ```
 
@@ -300,7 +300,7 @@ Follow these steps to create runbooks that use attachments:
 
    Calculate the SHA-256 checksum of your attachment file for security verification:
 
-   ```
+   ```bash
    # Linux/macOS
    shasum -a 256 my-automation-package.zip
 
@@ -312,7 +312,7 @@ Follow these steps to create runbooks that use attachments:
 
    Add a `files` section at the top level of your runbook to reference your attachment:
 
-   ```
+   ```yaml
    files:
      my-automation-package.zip:
        checksums:
@@ -323,7 +323,7 @@ Follow these steps to create runbooks that use attachments:
 
    Use the `Attachment` parameter to reference your uploaded file:
 
-   ```
+   ```yaml
    - name: runMyScript
      action: aws:executeScript
      inputs:
@@ -347,7 +347,7 @@ This example shows how to use a single Python file as an attachment to process E
 **Attachment file: process\_instance.py**
 Create a Python file with the following content:
 
-```
+```python
 import boto3
 import json
 
@@ -384,7 +384,7 @@ def process_instance_data(events, context):
 **Complete runbook**
 Here's the complete runbook that uses the single file attachment:
 
-```
+```yaml
 description: Process EC2 instance data using single file attachment
 schemaVersion: '0.3'
 assumeRole: '{{AutomationAssumeRole}}'
@@ -442,7 +442,7 @@ s3-operations.zip
 **main.py (entry point)**
 The main script that orchestrates the operations:
 
-```
+```python
 from utils.s3_helper import S3Operations
 from utils.validation import validate_bucket_name
 from config.settings import get_default_settings

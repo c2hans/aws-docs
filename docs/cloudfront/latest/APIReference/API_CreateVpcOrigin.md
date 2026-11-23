@@ -25,6 +25,7 @@ POST /2020-05-31/vpc-origin HTTP/1.1
       <Arn>{{string}}</Arn>
       <HTTPPort>{{integer}}</HTTPPort>
       <HTTPSPort>{{integer}}</HTTPSPort>
+      <IpAddressType>{{string}}</IpAddressType>
       <Name>{{string}}</Name>
       <OriginProtocolPolicy>{{string}}</OriginProtocolPolicy>
       <OriginSslProtocols>
@@ -68,6 +69,7 @@ Required: Yes
 HTTP/1.1 202
 <?xml version="1.0" encoding="UTF-8"?>
 <VpcOrigin>
+   <AccountId>string</AccountId>
    <Arn>string</Arn>
    <CreatedTime>timestamp</CreatedTime>
    <Id>string</Id>
@@ -77,6 +79,7 @@ HTTP/1.1 202
       <Arn>string</Arn>
       <HTTPPort>integer</HTTPPort>
       <HTTPSPort>integer</HTTPSPort>
+      <IpAddressType>string</IpAddressType>
       <Name>string</Name>
       <OriginProtocolPolicy>string</OriginProtocolPolicy>
       <OriginSslProtocols>
@@ -99,6 +102,10 @@ The following data is returned in XML format by the service.
  ** [VpcOrigin](#API_CreateVpcOrigin_ResponseSyntax) **   <a name="cloudfront-CreateVpcOrigin-response-VpcOrigin"></a>
 Root level tag for the VpcOrigin parameters.
 Required: Yes
+
+ ** [AccountId](#API_CreateVpcOrigin_ResponseSyntax) **   <a name="cloudfront-CreateVpcOrigin-response-AccountId"></a>
+The account ID of the AWS account that owns the VPC origin.
+Type: String
 
  ** [Arn](#API_CreateVpcOrigin_ResponseSyntax) **   <a name="cloudfront-CreateVpcOrigin-response-Arn"></a>
 The VPC origin ARN.

@@ -77,7 +77,7 @@ For more information, see [Assigning custom inventory metadata to a managed node
 **Tools for PowerShell V4**
 **Example 1: This example lists all the custom inventory entries for an instance.**
 
-```
+```powershell
 Get-SSMInventoryEntriesList -InstanceId "i-0cb2b964d3e14fd9f" -TypeName "Custom:RackInfo"
 ```
 **Output:**
@@ -92,7 +92,7 @@ TypeName      : Custom:RackInfo
 ```
 **Example 2: This example lists the details.**
 
-```
+```powershell
 (Get-SSMInventoryEntriesList -InstanceId "i-0cb2b964d3e14fd9f" -TypeName "Custom:RackInfo").Entries
 ```
 **Output:**
@@ -107,7 +107,7 @@ RackLocation Bay B/Row C/Rack D/Shelf E
 **Tools for PowerShell V5**
 **Example 1: This example lists all the custom inventory entries for an instance.**
 
-```
+```powershell
 Get-SSMInventoryEntriesList -InstanceId "i-0cb2b964d3e14fd9f" -TypeName "Custom:RackInfo"
 ```
 **Output:**
@@ -122,7 +122,7 @@ TypeName      : Custom:RackInfo
 ```
 **Example 2: This example lists the details.**
 
-```
+```powershell
 (Get-SSMInventoryEntriesList -InstanceId "i-0cb2b964d3e14fd9f" -TypeName "Custom:RackInfo").Entries
 ```
 **Output:**

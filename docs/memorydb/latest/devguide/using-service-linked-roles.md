@@ -38,7 +38,7 @@ The AWSServiceRoleForMemoryDB service-linked role permissions policy allows Memo
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -272,7 +272,7 @@ You can use the IAM API to edit a service-linked role description.
 1. (Optional) To view the current description for a role, use the IAM API operation [GetRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRole.html).
 **Example**
 
-   ```
+   ```http
    https://iam.amazonaws.com/
       ?Action=[GetRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRole.html)
       &RoleName={{AWSServiceRoleForMemoryDB}}
@@ -283,7 +283,7 @@ You can use the IAM API to edit a service-linked role description.
 1. To update a role's description, use the IAM API operation [UpdateRoleDescription](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateRoleDescription.html).
 **Example**
 
-   ```
+   ```http
    https://iam.amazonaws.com/
       ?Action=[UpdateRoleDescription](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateRoleDescription.html)
       &RoleName={{AWSServiceRoleForMemoryDB}}

@@ -40,7 +40,7 @@ Add the following additional permissions to the IAM policy for the Studio users:
 + **`iam:PassRole`** - Grants permission to access the IAM execution role that you plan to use when you attach to an application. The appropriate `PassRole`permission is required to attach to an EMR Serverless application from an EMR Studio Workspace.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

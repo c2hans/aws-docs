@@ -33,7 +33,7 @@ To modify the trust relationships, complete the following steps:
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -79,7 +79,7 @@ The following JSON snippet is an example policy that you should add to the Studi
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -235,7 +235,7 @@ If you want to use a custom KMS key, attach the following policy and supply your
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

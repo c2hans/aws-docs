@@ -13,7 +13,7 @@ The AWS account ID that the finding applies to.
 
 **Example**
 
-```
+```JSON
 "AwsAccountId": "111111111111"
 ```
 
@@ -24,7 +24,7 @@ Indicates when the potential security issue or event captured by a finding was c
 
 **Example**
 
-```
+```JSON
 "CreatedAt": "2017-03-22T13:22:13.933Z"
 ```
 
@@ -39,7 +39,7 @@ This field doesn't reference a standard if you turn on [consolidated control fin
 
 **Example**
 
-```
+```JSON
 "Description": "This AWS control checks whether AWS Config is enabled in the current account and Region."
 ```
 
@@ -52,7 +52,7 @@ For control findings that Security Hub CSPM generates, this field doesn't refere
 
 **Example**
 
-```
+```JSON
 "GeneratorId": "security-control/Config.1"
 ```
 
@@ -65,7 +65,7 @@ This field doesn't reference a standard if you turn on [consolidated control fin
 
 **Example**
 
-```
+```JSON
 "Id": "arn:aws:securityhub:eu-central-1:123456789012:security-control/iam.9/finding/ab6d6a26-a156-48f0-9403-115983e5a956"
 ```
 
@@ -81,7 +81,7 @@ The format of this field is `arn:{{partition}}:securityhub:{{region}}:{{account-
 
 **Example**
 
-```
+```JSON
 // Private ARN
     "ProductArn": "arn:aws:securityhub:us-east-1:111111111111:product/111111111111/default"
 
@@ -97,7 +97,7 @@ The `Resources` array of objects provides a set of resource data types that desc
 
 **Example**
 
-```
+```JSON
 "Resources": [
   {
     "ApplicationArn": "arn:aws:resource-groups:us-west-2:123456789012:group/SampleApp/1234567890abcdef0",
@@ -242,7 +242,7 @@ The schema version that a finding is formatted for. The value of this field must
 
 **Example**
 
-```
+```JSON
 "SchemaVersion": "2018-10-08"
 ```
 
@@ -269,7 +269,7 @@ We recommend using the following guidance when translating findings' native seve
 
 **Example**
 
-```
+```JSON
 "Severity": {
     "Label": "CRITICAL",
     "Normalized": 90,
@@ -286,7 +286,7 @@ For control findings, this field provides the title of the control. This field d
 
 **Example**
 
-```
+```JSON
 "Title": "AWS Config should be enabled"
 ```
 
@@ -381,7 +381,7 @@ The tactics, techniques, and procedures (TTPs) categories in the following list 
 
 **Example**
 
-```
+```JSON
 "Types": [
     "Software and Configuration Checks/Vulnerabilities/CVE"
 ]
@@ -400,6 +400,6 @@ Note that `UpdatedAt` cannot be updated by using the [`BatchUpdateFindings`](htt
 
 **Example**
 
-```
+```JSON
 "UpdatedAt": "2017-04-22T13:22:13.933Z"
 ```

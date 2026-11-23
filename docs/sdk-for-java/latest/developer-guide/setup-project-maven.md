@@ -18,7 +18,7 @@ To use the SDK for Java 2.x with Maven, you need the following:
 
 To create a Maven project from the command line, run the following command from a terminal or command prompt window````.
 
-```
+```sh
 mvn -B archetype:generate \
  -DarchetypeGroupId=software.amazon.awssdk \
  -DarchetypeArtifactId=archetype-lambda -Dservice=s3 -Dregion=US_WEST_2 \
@@ -42,7 +42,7 @@ If you created your project using the AWS Lambda project archetype as described 
 
 To verify that this configuration is present, start by opening the `pom.xml` file from the project folder you created (for example, `myapp`) when you executed the previous command. Look on lines 11 and 12 to see the Java compiler version setting for this Maven project, and the required inclusion of the Maven compiler plugin on lines 71-75.
 
-```
+```xml
 <project>
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -66,7 +66,7 @@ See the previous snippet for one way to configure these required settings.
 
 Alternatively, you can configure the compiler configuration inline with the plugin declaration, as follows.
 
-```
+```xml
 <project>
   <build>
     <plugins>
@@ -97,7 +97,7 @@ Always use the same version across all AWS SDK for Java 2.x dependencies. Mixed 
 
 If you created your Maven project in a different way, configure the latest version of the SDK for your project by ensuring that the `pom.xml` file contains the following.
 
-```
+```xml
 <project>
   <properties>
     <aws.java.sdk.version>{{2.X.X}}</aws.java.sdk.version>
@@ -128,7 +128,7 @@ Although you can specify the version number for each component, you don’t need
 
 If you created your project using the project archetype as described previously, your project is already configured with multiple dependencies. These include dependences for AWS Lambda function handlers and Amazon S3, as follows.
 
-```
+```xml
 <project>
     <dependencies>
         <dependency>
@@ -164,7 +164,7 @@ If you created your project using the project archetype as described previously,
 In the `pom.xml` example above, the dependencies are from different `groupId`s. The `s3` dependency is from `software.amazon.awssdk`, whereas the `aws-lambda-java-core` dependency is from `com.amazonaws`. The BOM dependency management configuration affects artifacts for `software.amazon.awssdk`, so a version is needed for the `aws-lambda-java-core` artifact.
 For the development of *Lambda function handlers* using the SDK for Java 2.x, `aws-lambda-java-core` is the correct dependency. However, if your application needs to manage Lambda resources, using operations such as `listFunctions`, `deleteFunction`, `invokeFunction`, and `createFunction`, your application requires the following dependency.
 
-```
+```xml
 <groupId>software.amazon.awssdk</groupId>
 <artifactId>lambda</artifactId>
 ```
@@ -182,7 +182,7 @@ You can look at the `pom.xml` file from a code example to determine which depend
 
 To optimize your application, we strongly recommend that you pull in only the components you need instead of the entire SDK. However, to build the entire AWS SDK for Java into your project, declare it in your `pom.xml` file, as follows.
 
-```
+```xml
 <project>
   <dependencies>
     <dependency>
@@ -203,7 +203,7 @@ To fail the build when SDK versions diverge, use the [Maven Enforcer Plugin](htt
 
 The following example adds the Maven Enforcer Plugin to the `<build>` section of your `pom.xml` file.
 
-```
+```xml
 <build>
   <plugins>
     <plugin>
@@ -244,7 +244,7 @@ After you configure the `pom.xml` file, you can use Maven to build your project.
 
 To build your Maven project from the command line, open a terminal or command prompt window, navigate to your project directory (for example, `myapp`), enter or paste the following command, then press Enter or Return.
 
-```
+```sh
 mvn package
 ```
 

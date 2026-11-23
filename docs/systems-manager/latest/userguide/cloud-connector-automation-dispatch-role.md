@@ -10,7 +10,7 @@ The automation dispatch role is the role State Manager uses when it starts an Au
 
 The trust policy lets the Systems Manager service principal assume the role, scoped to your AWS account. Replace `123456789012` with your AWS account ID.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -43,7 +43,7 @@ This policy includes the following permissions.
 + `ssm:StartAutomationExecution` – Allows State Manager to start an Automation execution of the `AWS-InstallSSMAgentOnAzure` runbook against the connector's targets.
 + `sts:AssumeRole` – Allows State Manager to assume the Azure federation role so it can authenticate to Azure when resolving the connector's targets.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -80,7 +80,7 @@ Use this configuration tab to transfer the contact to a queue. There are two pos
 
   The following code sample shows how this same configuration would be represented by the [TransferContactToQueue ](https://docs.aws.amazon.com/connect/latest/APIReference/contact-actions-transfercontacttoqueue.html) action in the Flow language:
 
-  ```
+  ```json
   {
            "Parameters": {},
            "Identifier": "a12c905c-84dd-45c1-8f53-4287d1752d59",
@@ -109,7 +109,7 @@ Use this configuration tab to transfer the contact to a queue. There are two pos
 
   The following code sample shows how this same configuration would be represented by the [DequeueContactAndTransferToQueue](https://docs.aws.amazon.com/connect/latest/APIReference/contact-actions-dequeuecontactandtransfertoqueue.html) action in the Flow language:
 
-  ```
+  ```json
   {
            "Parameters": {
                "QueueId": "arn:aws:connect:us-west-2:1111111111:instance/aaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/queue/abcdef-abcd-abcd-abcd-abcdefghijkl"

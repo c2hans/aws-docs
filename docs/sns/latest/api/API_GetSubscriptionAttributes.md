@@ -88,7 +88,7 @@ https://sns.us-east-2.amazonaws.com/?Action=GetSubscriptionAttributes
 #### Sample Response
 <a name="API_GetSubscriptionAttributes_Example_1_Response"></a>
 
-```
+```xml
 <GetSubscriptionAttributesResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <GetSubscriptionAttributesResult>
         <Attributes>

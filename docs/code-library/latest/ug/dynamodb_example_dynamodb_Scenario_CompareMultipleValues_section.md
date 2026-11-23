@@ -17,7 +17,7 @@ The following code examples show how to compare multiple values with a single at
 **SDK for Java 2.x**
 Compare multiple values with a single attribute in DynamoDB using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -292,7 +292,7 @@ import java.util.Map;
 ```
 Example usage of comparing multiple values with AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(DynamoDbClient dynamoDbClient, String tableName) {
         System.out.println("Demonstrating how to compare multiple values with a single attribute in DynamoDB");
 
@@ -385,7 +385,7 @@ Example usage of comparing multiple values with AWS SDK for Java 2.x.
 **SDK for JavaScript (v3)**
 Compare multiple values with a single attribute using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
   DynamoDBDocumentClient,
@@ -628,7 +628,7 @@ async function compareWithOrConditions(
 ```
 Example usage of comparing multiple values with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example of how to use the compareMultipleValues function.
  */
@@ -703,7 +703,7 @@ async function exampleUsage() {
 **SDK for Python (Boto3)**
 Compare multiple values with a single attribute using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 from typing import Any, Dict, List, Optional
@@ -835,7 +835,7 @@ def compare_with_or_conditions(
 ```
 Example usage of comparing multiple values with AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use the compare_multiple_values function."""
     # Example parameters

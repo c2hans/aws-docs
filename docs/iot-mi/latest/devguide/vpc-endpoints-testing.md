@@ -19,19 +19,19 @@ After you create your VPC endpoint, you can test the connection by making API ca
 
 1. Verify DNS resolution for the private DNS name:
 
-   ```
+   ```bash
    dig api.iotmanagedintegrations.region.api.aws
    ```
 
 1. Test HTTPS connectivity:
 
-   ```
+   ```bash
    curl -v https://api.iotmanagedintegrations.region.api.aws
    ```
 
 1. Make an AWS IoT Managed Integrations API call:
 
-   ```
+   ```bash
    aws iot-managed-integrations list-destinations \
      --region region \
      --endpoint-url https://api.iotmanagedintegrations.region.api.aws

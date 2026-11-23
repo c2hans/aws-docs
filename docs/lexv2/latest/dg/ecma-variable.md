@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/ecma-variable.html
 
 A variable statement defines one or more variables.
 
-```
+```javascript
 var x = 10;
 var x = 10, var y = <expression>;
 ```

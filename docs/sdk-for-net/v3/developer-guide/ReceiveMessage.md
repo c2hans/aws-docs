@@ -27,7 +27,7 @@ The following snippet receives a message from the queue identified by the given 
 
 The example [at the end of this topic](#ReceiveMessage-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to read a message from the given queue
     // In this example, it gets one message at a time
@@ -50,7 +50,7 @@ The following snippet deletes a message from the queue identified by the given q
 
 The example [at the end of this topic](#ReceiveMessage-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to delete a message from a queue
     private static async Task DeleteMessage(
@@ -85,7 +85,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c25c25c21b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using Amazon.SQS;

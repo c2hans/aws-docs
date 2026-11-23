@@ -12,7 +12,7 @@ To reference your schema defined AWS Proton variables in your infrastructure `.t
 
 The following example shows how to use namespaces to include AWS Proton parameters in an environment `.tf file`.
 
-```
+```json
 terraform {
   required_providers {
     aws = {

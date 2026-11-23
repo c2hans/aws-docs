@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-durableconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ExecutionTimeout](#sam-function-durableconfig-executiontimeout): {{Integer}}
   [RetentionPeriodInDays](#sam-function-durableconfig-retentionperiodindays): {{Integer}}
 ```
@@ -50,7 +50,7 @@ Durable configuration example for a function with a 1-hour execution timeout and
 #### YAML
 <a name="sam-property-function-durableconfig--examples--durableconfig--yaml"></a>
 
-```
+```yaml
 DurableConfig:
   ExecutionTimeout: 3600
   RetentionPeriodInDays: 7

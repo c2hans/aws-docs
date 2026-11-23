@@ -36,7 +36,7 @@ A data protection policy requires the following basic policy information for ide
 + **Version** – The policy language version. The current version is 2021-06-01.
 + **Statement** – A list of statements that specifies data protection policy actions.
 
-```
+```json
 {
   "Name": "basicPII-protection",
   "Description": "Protect basic types of sensitive data",
@@ -57,7 +57,7 @@ A policy statement sets the detection context for the data protection operation.
 + **Principal** – The IAM principal that is published to the topic, or the IAM principal that is subscribed to the topic.
 + **Operation** – The follow-on action, either **Audit**, **De-identify** (mask or redact), or **Deny** (block), which the Amazon SNS topic executes once it finds sensitive data.
 
-```
+```json
 {
     "Sid": "basicPII-inbound-protection",
     "DataDirection": "Inbound",
@@ -91,7 +91,7 @@ Message data protection uses two IAM principals that interact with Amazon SNS.
 
 The `SubscriptionPrincipal` is a publicly available Amazon SNS subscription property that can be retrieved from the `GetSubscriptionAttributes` API.
 
-```
+```json
 {
   "Attributes": {
     "SubscriptionPrincipal": "arn:aws:iam::123456789012:user/NoNameAccess",

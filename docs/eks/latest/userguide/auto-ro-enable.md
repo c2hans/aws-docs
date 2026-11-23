@@ -22,7 +22,7 @@ Complete the following steps to turn on resource optimization with default setti
 
 1. Save the following manifest as `ro-default-policy.yaml`.
 
-   ```
+   ```yaml
    apiVersion: eks.amazonaws.com/v1beta1
    kind: ClusterResourceOptimizationPolicy
    metadata:
@@ -34,19 +34,19 @@ Complete the following steps to turn on resource optimization with default setti
 
 1. Apply the manifest.
 
-   ```
+   ```bash
    kubectl apply -f ro-default-policy.yaml
    ```
 
 1. Confirm that the policy is ready.
 
-   ```
+   ```bash
    kubectl get crop
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    NAME      MODE        PROFILE    READY   SELECTED   AGE
    default   Recommend   Balanced   True    42         5m
    ```
@@ -55,13 +55,13 @@ Complete the following steps to turn on resource optimization with default setti
 
 1. View the per-workload objects that resource optimization creates.
 
-   ```
+   ```bash
    kubectl get ro --all-namespaces
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    NAMESPACE   NAME              KIND          TARGET     POLICY    MODE        AGE
    checkout    checkout-deploy   Deployment    checkout   default   Recommend   5m
    data        redis-sts         StatefulSet   redis      default   Recommend   5m
@@ -83,7 +83,7 @@ To use an example, save it to a file and run `kubectl apply -f` with the file na
 
 Kubernetes sets the `kubernetes.io/metadata.name` label on every namespace, so you can select or exclude a namespace by name without adding labels. The following policy produces recommendations for every namespace except `payments-prod`:
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1beta1
 kind: ClusterResourceOptimizationPolicy
 metadata:
@@ -103,7 +103,7 @@ Resource optimization doesn’t manage workloads in `payments-prod` unless anoth
 
 The following policy selects namespaces labeled `team: search`, narrows to workloads labeled `tier: stateless`, and sets `mode: Apply`:
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1beta1
 kind: ClusterResourceOptimizationPolicy
 metadata:
@@ -129,19 +129,19 @@ Complete the following steps to switch a policy to `Apply`:
 
 1. Patch the policy to set `mode: Apply`. Replace {{team-search}} with the name of your policy.
 
-   ```
+   ```bash
    kubectl patch crop {{team-search}} --type merge -p '{"spec":{"mode":"Apply"}}'
    ```
 
 1. Confirm the new mode.
 
-   ```
+   ```bash
    kubectl get crop {{team-search}}
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    NAME          MODE    PROFILE    READY   SELECTED   AGE
    team-search   Apply   Balanced   True    12         2d
    ```
@@ -163,13 +163,13 @@ Complete the following steps to opt out a workload with `kubectl`:
 
 1. Annotate the workload. Replace {{my-app}} and {{my-namespace}} with your values. For a StatefulSet, replace `deployment` with `statefulset`.
 
-   ```
+   ```bash
    kubectl annotate deployment {{my-app}} -n {{my-namespace}} optimization.eks.amazonaws.com/enabled="false"
    ```
 
 1. (Optional) Return the workload’s Pods to the CPU and memory in its Pod template. Resource optimization doesn’t revert values it already applied.
 
-   ```
+   ```bash
    kubectl rollout restart deployment {{my-app}} -n {{my-namespace}}
    ```
 
@@ -177,7 +177,7 @@ Complete the following steps to opt out a workload with `kubectl`:
 
 To manage the workload again, remove the annotation.
 
-```
+```bash
 kubectl annotate deployment {{my-app}} -n {{my-namespace}} optimization.eks.amazonaws.com/enabled-
 ```
 
@@ -186,7 +186,7 @@ kubectl annotate deployment {{my-app}} -n {{my-namespace}} optimization.eks.amaz
 
 To stop resource optimization from changing Pods while it continues to produce recommendations, set `mode: Recommend` on the policies that set `Apply`. Replace {{team-search}} with the name of your policy.
 
-```
+```bash
 kubectl patch crop {{team-search}} --type merge -p '{"spec":{"mode":"Recommend"}}'
 ```
 
@@ -201,19 +201,19 @@ Complete the following steps to turn off resource optimization for the whole clu
 
 1. List the policies in your cluster.
 
-   ```
+   ```bash
    kubectl get crop
    ```
 
 1. Delete each policy. Replace {{default}} with the name of each policy.
 
-   ```
+   ```bash
    kubectl delete crop {{default}}
    ```
 
 1. Confirm that resource optimization removed its per-workload objects.
 
-   ```
+   ```bash
    kubectl get ro --all-namespaces
    ```
 
@@ -221,7 +221,7 @@ Complete the following steps to turn off resource optimization for the whole clu
 
 1. (Optional) Restart workloads to return their Pods to the CPU and memory in their Pod templates. Running Pods keep the values that resource optimization last applied until they’re replaced. New Pods start at the size in the Pod template. Replace {{my-app}} and {{my-namespace}} with your values. For StatefulSets that use the `OnDelete` update strategy, see [Opt out a single workload](#auto-ro-enable-opt-out).
 
-   ```
+   ```bash
    kubectl rollout restart deployment {{my-app}} -n {{my-namespace}}
    ```
 

@@ -13,7 +13,7 @@ One common use case for temporary credentials is to grant mobile or client-side 
 
 AWS STS has several operations that return temporary credentials, but the `GetSessionToken` operation is the simplest to demonstrate. The following snippet retrieves temporary credentials by calling the `getSessionToken` method of the PHP SDK's STS client.
 
-```
+```php
 $sdk = new Aws\Sdk([
     'region'   => 'us-east-1',
 ]);
@@ -25,7 +25,7 @@ $result = $stsClient->getSessionToken();
 
 The result for `GetSessionToken` and the other AWS STS operations always contains a `'Credentials'` value. If you print the `$result` (for example by using `print_r($result)`), it looks like the following.
 
-```
+```php
 Array
 (
     ...
@@ -45,7 +45,7 @@ Array
 
 You can use temporary credentials with another AWS client by instantiating the client and passing in the values received from AWS STS directly.
 
-```
+```php
 use Aws\S3\S3Client;
 
 $result = $stsClient->getSessionToken();
@@ -63,7 +63,7 @@ $s3Client = new S3Client([
 
 You can also construct an `Aws\Credentials\Credentials` object and use that when instantiating the client.
 
-```
+```php
 use Aws\Credentials\Credentials;
 use Aws\S3\S3Client;
 
@@ -84,7 +84,7 @@ $s3Client = new S3Client([
 
 However, the *best* way to provide temporary credentials is to use the `createCredentials()` helper method included with the `StsClient`. This method extracts the data from an AWS STS result and creates the `Credentials` object for you.
 
-```
+```php
 $result = $stsClient->getSessionToken();
 $credentials = $stsClient->createCredentials($result);
 

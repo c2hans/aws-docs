@@ -30,7 +30,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [ResourceArn](#API_UntagResource_RequestSyntax) **   <a name="polly-UntagResource-request-ResourceArn"></a>
-The Amazon Resource Name (ARN) of the resource from which to remove tags. Currently, the only supported resource is an Amazon Polly lexicon.
+The Amazon Resource Name (ARN) of the resource to remove tags from. You can tag Amazon Polly lexicons and custom voices.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1011.
 Required: Yes
@@ -64,7 +64,7 @@ The resource ARN or a tag in the request isn't valid. Specify the ARN of a suppo
 HTTP Status Code: 400
 
  ** ResourceNotFoundException **
-Amazon Polly can't find the specified resource. Verify that the resource exists in the AWS account and Region of the request and that its ARN is spelled correctly, and then try again.
+Amazon Polly can't find the specified resource. Verify that the resource exists in the AWS account and Region of the request and that its ARN or ID is spelled correctly, and then try again.
  ** resourceId **
 The identifier of the resource that wasn't found.
  ** resourceType **
@@ -86,7 +86,11 @@ The input fails to satisfy the constraints specified by the service.
  ** fields **
 The fields that caused the validation error.
  ** reason **
-The reason the request failed validation.
+The reason the request failed validation. If Amazon Polly can't use the AWS KMS key that you specified in `CreateVoice`, `fields` names `CustomerManagedEncryption.KmsKeyArn` and the reason is one of the following:
+kmsKeyNotFound
+No key with the specified ARN exists.
+kmsKeyUnusable
+The key is disabled, scheduled for deletion, or missing its key material, or it isn't a symmetric encryption key.
 HTTP Status Code: 400
 
 ## See Also

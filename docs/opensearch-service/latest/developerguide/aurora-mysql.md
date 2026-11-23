@@ -48,7 +48,7 @@ Before you create your OpenSearch Ingestion pipeline, perform the following step
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -80,7 +80,7 @@ Before you create your OpenSearch Ingestion pipeline, perform the following step
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -111,7 +111,7 @@ After you have your Amazon Aurora pipeline prerequisites set up, [configure the 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -272,7 +272,7 @@ After you have your Amazon Aurora pipeline prerequisites set up, [configure the 
 
 Configure an OpenSearch Ingestion pipeline similar to the following. The example pipeline specifies an Amazon Aurora cluster as the source.
 
-```
+```YAML
 version: "2"
 aurora-mysql-pipeline:
   source:

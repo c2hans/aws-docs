@@ -79,7 +79,7 @@ Enable CORS by returning correct headers.
 #### POST schema
 <a name="channels-request-body-post-example"></a>
 
-```
+```json
 {
   "description": "string",
   "id": "string",
@@ -94,7 +94,7 @@ Enable CORS by returning correct headers.
 #### ChannelList schema
 <a name="channels-response-body-channellist-example"></a>
 
-```
+```json
 {
   "channels": [
     {
@@ -129,7 +129,7 @@ Enable CORS by returning correct headers.
 #### Channel schema
 <a name="channels-response-body-channel-example"></a>
 
-```
+```json
 {
   "createdAt": "string",
   "ingressAccessLogs": {

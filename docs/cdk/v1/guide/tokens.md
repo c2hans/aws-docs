@@ -19,7 +19,7 @@ You can pass this string around as if it was the name of the bucket, such as in 
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const bucket = new s3.Bucket(this, 'MyBucket');
 
 const fn = new lambda.Function(stack, 'MyLambda', {
@@ -33,7 +33,7 @@ const fn = new lambda.Function(stack, 'MyLambda', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const bucket = new s3.Bucket(this, 'MyBucket');
 
 const fn = new lambda.Function(stack, 'MyLambda', {
@@ -47,7 +47,7 @@ const fn = new lambda.Function(stack, 'MyLambda', {
 ------
 #### [ Python ]
 
-```
+```python
 bucket = s3.Bucket(self, "MyBucket")
 
 fn = lambda_.Function(stack, "MyLambda",
@@ -57,7 +57,7 @@ fn = lambda_.Function(stack, "MyLambda",
 ------
 #### [ Java ]
 
-```
+```java
 final Bucket bucket = new Bucket(this, "MyBucket");
 
 Function fn = Function.Builder.create(this, "MyLambda")
@@ -69,7 +69,7 @@ Function fn = Function.Builder.create(this, "MyLambda")
 ------
 #### [ C\# ]
 
-```
+```csharp
 var bucket = new s3.Bucket(this, "MyBucket");
 
 var fn = new Function(this, "MyLambda", new FunctionProps {
@@ -109,7 +109,7 @@ The following example validates that a string value, which could be a token, is 
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 if (!Token.isUnresolved(name) && name.length > 10) {
   throw new Error(`Maximum length for name is 10 characters`);
 }
@@ -118,7 +118,7 @@ if (!Token.isUnresolved(name) && name.length > 10) {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 if ( !Token.isUnresolved(name) && name.length > 10) {
   throw ( new Error(`Maximum length for name is 10 characters`));
 }
@@ -127,7 +127,7 @@ if ( !Token.isUnresolved(name) && name.length > 10) {
 ------
 #### [ Python ]
 
-```
+```python
 if not Token.is_unresolved(name) and len(name) > 10:
     raise ValueError("Maximum length for name is 10 characters")
 ```
@@ -135,7 +135,7 @@ if not Token.is_unresolved(name) and len(name) > 10:
 ------
 #### [ Java ]
 
-```
+```java
 if (!Token.isUnresolved(name) && name.length() > 10)
     throw new IllegalArgumentException("Maximum length for name is 10 characters");
 ```
@@ -143,7 +143,7 @@ if (!Token.isUnresolved(name) && name.length() > 10)
 ------
 #### [ C\# ]
 
-```
+```csharp
 if (!Token.IsUnresolved(name) && name.Length > 10)
     throw new ArgumentException("Maximum length for name is 10 characters");
 ```
@@ -169,35 +169,35 @@ They can be passed around like regular strings, and can be concatenated, as show
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const functionName = bucket.bucketName + 'Function';
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const functionName = bucket.bucketName + 'Function';
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 function_name = bucket.bucket_name + "Function"
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 String functionName = bucket.getBucketName().concat("Function");
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 string functionName = bucket.BucketName + "Function";
 ```
 
@@ -208,35 +208,35 @@ You can also use string interpolation, if your language supports it, as shown in
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const functionName = `${bucket.bucketName}Function`;
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const functionName = `${bucket.bucketName}Function`;
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 function_name = f"{bucket.bucket_name}Function"
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 String functionName = String.format("%sFunction". bucket.getBucketName());
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 string functionName = $"${bucket.bucketName}Function";
 ```
 
@@ -260,7 +260,7 @@ The only safe thing to do with these lists is pass them directly to other constr
 
 Number-encoded tokens are a set of tiny negative floating-point numbers that look like the following.
 
-```
+```javascript
 -1.8881545897087626e+289
 ```
 
@@ -278,7 +278,7 @@ The following example creates an Auto Scaling group whose capacity is determined
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 let actualValue: number;
 
 new AutoScalingGroup(this, 'Group', {
@@ -296,7 +296,7 @@ actualValue = 10;
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 let actualValue;
 
 new AutoScalingGroup(this, 'Group', {
@@ -314,7 +314,7 @@ actualValue = 10;
 ------
 #### [ Python ]
 
-```
+```python
 class Producer:
     def __init__(self, func):
         self.produce = func
@@ -332,7 +332,7 @@ actual_value = 10
 ------
 #### [ Java ]
 
-```
+```java
 double actualValue = 0;
 
 class ProduceActualValue implements INumberProducer {
@@ -353,7 +353,7 @@ actualValue = 10;
 ------
 #### [ C\# ]
 
-```
+```csharp
 public class NumberProducer : INumberProducer
 {
     Func<Double> function;
@@ -390,7 +390,7 @@ Sometimes you want to produce a JSON string of arbitrary data, and you may not k
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const stack = Stack.of(this);
 const str = stack.toJsonString({
   value: bucket.bucketName
@@ -400,7 +400,7 @@ const str = stack.toJsonString({
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const stack = Stack.of(this);
 const str = stack.toJsonString({
   value: bucket.bucketName
@@ -410,7 +410,7 @@ const str = stack.toJsonString({
 ------
 #### [ Python ]
 
-```
+```python
 stack = Stack.of(self)
 string = stack.to_json_string(dict(value=bucket.bucket_name))
 ```
@@ -418,7 +418,7 @@ string = stack.to_json_string(dict(value=bucket.bucket_name))
 ------
 #### [ Java ]
 
-```
+```java
 Stack stack = Stack.of(this);
 String stringVal = stack.toJsonString(java.util.Map.of(    // Map.of requires Java 9+
         "value", bucket.getBucketName()));
@@ -427,7 +427,7 @@ String stringVal = stack.toJsonString(java.util.Map.of(    // Map.of requires Ja
 ------
 #### [ C\# ]
 
-```
+```csharp
 var stack = Stack.Of(this);
 var stringVal = stack.ToJsonString(new Dictionary<string, string>
 {

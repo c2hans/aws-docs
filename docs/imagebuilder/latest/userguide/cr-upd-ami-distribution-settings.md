@@ -152,7 +152,7 @@ This example distributes an AMI to two Regions, and specifies AWS accounts that 
 
    The following example JSON file defines this distribution configuration:
 
-   ```
+   ```json
    {
    	"name": "my-example-account-distribution",
    	"description": "Copies AMI to eu-west-1, and specifies accounts that can launch instances in each Region.",
@@ -195,7 +195,7 @@ This example distributes an AMI to the source Region, and specifies organization
 
    The following example JSON file defines this distribution configuration:
 
-   ```
+   ```json
    {
    	"name": "my-example-aws-organization-distribution",
    	"description": "Shares AMI with the Organization and OU",
@@ -223,7 +223,7 @@ This example stores the output AMI ID in an AWS Systems Manager Parameter Store 
 
    The following example JSON file defines this distribution configuration:
 
-   ```
+   ```json
    {
    	"name": "{{ssm-parameter-output-ami}}",
    	"description": "{{Updates an SSM parameter with the output AMI ID for the distribution.}}",
@@ -250,7 +250,7 @@ This example assumes that you run the build in `us-west-2`. It copies the AMI to
 
    The following example JSON file defines this distribution configuration:
 
-   ```
+   ```json
    {
    	"name": "org-share-with-launch-template",
    	"description": "Shares the AMI with an OU and updates a launch template.",
@@ -312,7 +312,7 @@ This example distributes an AMI to two Regions, and specifies AWS accounts that 
 
 The following example creates this distribution configuration:
 
-```
+```ps
 Import-Module AWS.Tools.Imagebuilder
 $usWest2Tags = [System.Collections.Generic.Dictionary[string,string]]::new()
 $usWest2Tags["KeyName"] = "Some Value"
@@ -351,7 +351,7 @@ This example distributes an AMI to the source Region, and specifies organization
 
 The following example creates this distribution configuration:
 
-```
+```ps
 Import-Module AWS.Tools.Imagebuilder
 $distribution = [Amazon.Imagebuilder.Model.Distribution]@{
     Region = "us-west-2"
@@ -374,7 +374,7 @@ This example stores the output AMI ID in an AWS Systems Manager Parameter Store 
 
 The following example creates this distribution configuration:
 
-```
+```ps
 Import-Module AWS.Tools.Imagebuilder
 $distribution = [Amazon.Imagebuilder.Model.Distribution]@{
     Region = "{{us-west-2}}"
@@ -400,7 +400,7 @@ This example assumes that you run the build in `us-west-2`. It copies the AMI to
 
 The following example creates this distribution configuration:
 
-```
+```ps
 Import-Module AWS.Tools.Imagebuilder
 $usWest2 = [Amazon.Imagebuilder.Model.Distribution]@{
     Region = "us-west-2"
@@ -477,7 +477,7 @@ To prevent unintended removal of existing settings, use the **get-distribution-c
 
    Use a file-editing tool to create a JSON file with the keys shown in the following example, and values that are valid for your environment. This example uses a file named `update-ami-distribution-configuration.json`:
 
-   ```
+   ```json
    {
    	"distributionConfigurationArn": "arn:aws:imagebuilder:us-west-2:111122223333:distribution-configuration/update-ami-distribution-configuration",
    	"description": "Copies AMI to eu-west-2, and specifies accounts that can launch instances in each Region.",
@@ -536,7 +536,7 @@ To prevent unintended removal of existing settings, run the [Get-EC2IBDistributi
 
 The following example shows how to use the `Update-EC2IBDistributionConfiguration` cmdlet to update distribution settings for your AMI:
 
-```
+```ps
 Import-Module AWS.Tools.Imagebuilder
 $usWest2 = [Amazon.Imagebuilder.Model.Distribution]@{
     Region = "us-west-2"
@@ -596,7 +596,7 @@ The following example shows how to use the [create-distribution-configuration](h
 
    The following example JSON file defines these distribution settings:
 
-   ```
+   ```json
    {
    "name": "win-fast-launch-distribution",
    "description": "An example of Windows AMI EC2 Fast Launch settings in the distribution configuration.",
@@ -649,7 +649,7 @@ The following example uses the same settings as the AWS CLI example. Each top-le
 
 The following example shows how to use the [New-EC2IBDistributionConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2IBDistributionConfiguration.html) cmdlet to create distribution settings that have EC2 Fast Launch configured with a launch template:
 
-```
+```ps
 Import-Module AWS.Tools.Imagebuilder
 $amiTags = [System.Collections.Generic.Dictionary[string,string]]::new()
 $amiTags["KeyName"] = "Some Value"
@@ -717,7 +717,7 @@ To provide the data values as command line parameters, refer to the parameter na
 
    Save the following JSON as `export-vm-disks.json`, and use the file name in the **create-distribution-configuration** command:
 
-   ```
+   ```json
    {
    	"name": "example-distribution-configuration-with-vm-export",
    	"description": "example",
@@ -758,7 +758,7 @@ The following example uses the same settings as the AWS CLI example. Each top-le
 
 The following example shows how to use the [New-EC2IBDistributionConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2IBDistributionConfiguration.html) cmdlet to create distribution settings that export VM image disks to Amazon S3:
 
-```
+```ps
 Import-Module AWS.Tools.Imagebuilder
 $distribution = [Amazon.Imagebuilder.Model.Distribution]@{
     Region = "us-west-2"

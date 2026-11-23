@@ -84,7 +84,7 @@ The following JSON is an example IAM policy using MediaConvert condition keys th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -39,7 +39,7 @@ A *trail* is a configuration that enables delivery of events as log files to an 
 
 The following example shows a CloudTrail log entry that demonstrates the `TranslateText` action.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

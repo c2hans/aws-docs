@@ -59,7 +59,7 @@ If the stream uses server-side encryption, the cross-account principal also need
 
 In the following example, account {{444455556666}} owns a stream and its queue, and the role {{QueueConsumer}} in account {{111122223333}} consumes records through the queue. The queue owner attaches the following policy to the queue:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -82,7 +82,7 @@ In the following example, account {{444455556666}} owns a stream and its queue, 
 
 The {{QueueConsumer}} role also needs an identity-based policy that allows the same actions on the queue:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

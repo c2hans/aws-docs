@@ -33,7 +33,7 @@ If *geom* is null, then null is returned.
 
 The following SQL returns the hexadecimal EWKB representation of a polygon.
 
-```
+```sql
 SELECT ST_AsEWKB(ST_GeomFromText('POLYGON((0 0,0 1,1 1,1 0,0 0))',4326));
 ```
 

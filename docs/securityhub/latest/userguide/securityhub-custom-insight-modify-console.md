@@ -76,7 +76,7 @@ $ aws securityhub update-insight --insight-arn "{{arn:aws:securityhub:us-west-1:
 
 **Example**
 
-```
+```powershell
 $Filter = @{
     ResourceType = [Amazon.SecurityHub.Model.StringFilter]@{
         Comparison = "EQUALS"

@@ -19,6 +19,8 @@ Connect to data access integrations to make specific content accessible for AI a
 
 Use the Integrations tab in the AWS Quick console to create these connections. You can connect to Model Context Protocol (MCP) servers, Google Drive, Amazon S3, web crawlers, OneDrive, and other supported applications.
 
+Integrations you create are reachable wherever you use Quick. The same connectors and knowledge bases are available from the web, desktop, and mobile, so your agents and chats draw on the same connected applications on every surface.
+
 **Note**
 Not all applications support all integration types. Available options depend on each application's capabilities.
 
@@ -26,8 +28,8 @@ Not all applications support all integration types. Available options depend on 
 + [Supported integrations](supported-integrations.md)
 + [Set up integrations in the console](integration-console-setup-process.md)
 + [Integration workflows](integration-workflows.md)
-+ [Knowledge bases](knowledge-base-integrations.md)
-+ [Connectors](action-integrations.md)
++ [Connectors](integrations-connectors.md)
++ [Built-in system tools](system-tools.md)
 + [Integration-specific guides](integration-guides.md)
 + [Bring Your Own Amazon Q Business Index (BYOI)](quick-byoa.md)
 + [Bring your own Amazon Bedrock managed knowledge base](quick-byo-bedrock-kb.md)

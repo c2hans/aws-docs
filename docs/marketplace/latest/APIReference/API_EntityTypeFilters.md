@@ -30,6 +30,11 @@ A filter for data products.
 Type: [DataProductFilters](API_DataProductFilters.md) object
 Required: No
 
+ ** ExpressPrivateOfferConfigurationFilters **   <a name="AWSMarketplaceService-Type-EntityTypeFilters-ExpressPrivateOfferConfigurationFilters"></a>
+A filter for express private offer configurations.
+Type: [ExpressPrivateOfferConfigurationFilters](API_ExpressPrivateOfferConfigurationFilters.md) object
+Required: No
+
  ** MachineLearningProductFilters **   <a name="AWSMarketplaceService-Type-EntityTypeFilters-MachineLearningProductFilters"></a>
 The filters that you can use with the ListEntities operation to filter machine learning products. You can filter by `EntityId`, `astModifiedDate`, `ProductTitle`, and `Visibility`.
 Type: [MachineLearningProductFilters](API_MachineLearningProductFilters.md) object

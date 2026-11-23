@@ -15,7 +15,7 @@ In the following list, the required parameters are described first.
  ** BusinessTitle **   <a name="AWSPartnerCentral-Type-LeadContact-BusinessTitle"></a>
 The lead contact's business title or job role associated with the engagement.
 Type: String
-Length Constraints: Minimum length of 0. Maximum length of 255.
+Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
 
  ** Email **   <a name="AWSPartnerCentral-Type-LeadContact-Email"></a>

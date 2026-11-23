@@ -92,7 +92,7 @@ Replace https://s3.{{aws-api-domain}}/{{script path}} with the URL for your buck
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm send-command \
        --document-name "AWS-RunRemoteScript" \
        --output-s3-bucket-name "{{amzn-s3-demo-bucket}}" \
@@ -104,7 +104,7 @@ Replace https://s3.{{aws-api-domain}}/{{script path}} with the URL for your buck
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm send-command ^
        --document-name "AWS-RunRemoteScript" ^
        --output-s3-bucket-name "{{amzn-s3-demo-bucket}}" ^
@@ -116,7 +116,7 @@ Replace https://s3.{{aws-api-domain}}/{{script path}} with the URL for your buck
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Send-SSMCommand `
        -DocumentName "AWS-RunRemoteScript" `
        -OutputS3BucketName "{{amzn-s3-demo-bucket}}" `

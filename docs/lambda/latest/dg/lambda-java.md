@@ -31,7 +31,7 @@ Add these libraries to your build definition as follows:
 ------
 #### [ Gradle ]
 
-```
+```groovy
 dependencies {
     implementation 'com.amazonaws:aws-lambda-java-core:1.2.2'
     implementation 'com.amazonaws:aws-lambda-java-events:3.11.1'
@@ -43,7 +43,7 @@ dependencies {
 ------
 #### [ Maven ]
 
-```
+```xml
   <dependencies>
     <dependency>
       <groupId>com.amazonaws</groupId>

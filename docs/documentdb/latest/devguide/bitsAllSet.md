@@ -48,7 +48,7 @@ To view a code example for using the `$bitsAllSet` command, choose the tab for t
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function findWithBitsAllSet() {
@@ -68,7 +68,7 @@ findWithBitsAllSet();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def find_with_bits_all_set():

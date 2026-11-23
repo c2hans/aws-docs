@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kinesis-kpl-config.ht
 
 Although the default settings should work well for most use cases, you may want to change some of the default settings to tailor the behavior of the `KinesisProducer` to your needs. An instance of the `KinesisProducerConfiguration` class can be passed to the `KinesisProducer` constructor to do so, for example:
 
-```
+```java
 KinesisProducerConfiguration config = new KinesisProducerConfiguration()
         .setRecordMaxBufferedTime(3000)
         .setMaxConnections(1)
@@ -18,7 +18,7 @@ final KinesisProducer kinesisProducer = new KinesisProducer(config);
 
 You can also load a configuration from a properties file:
 
-```
+```java
 KinesisProducerConfiguration config = KinesisProducerConfiguration.fromPropertiesFile("default_config.properties");
 ```
 
@@ -26,7 +26,7 @@ You can substitute any path and file name that the user process has access to. Y
 
 The properties file should specify parameters using their names in PascalCase. The names match those used in the set methods in the `KinesisProducerConfiguration` class. For example:
 
-```
+```java
 RecordMaxBufferedTime = 100
 MaxConnections = 4
 RequestTimeout = 6000

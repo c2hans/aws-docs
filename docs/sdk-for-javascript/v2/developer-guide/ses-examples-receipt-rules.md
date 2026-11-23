@@ -43,7 +43,7 @@ In this example, use a Node.js module to create a receipt rule in Amazon SES to 
 
 Create a parameters object to pass the values needed to create for the receipt rule set. To call the `createReceiptRuleSet` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -89,7 +89,7 @@ newRulePromise
 
 To run the example, type the following at the command line. Amazon SES creates the receipt rule.
 
-```
+```javascript
 node ses_createreceiptrule.js
 ```
 
@@ -102,7 +102,7 @@ In this example, use a Node.js module to send email with Amazon SES. Create a No
 
 Create a parameters object to pass the name for the receipt rule to delete. To call the `deleteReceiptRule` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -131,7 +131,7 @@ newRulePromise
 
 To run the example, type the following at the command line. Amazon SES creates the receipt rule set list.
 
-```
+```javascript
 node ses_deletereceiptrule.js
 ```
 
@@ -144,7 +144,7 @@ In this example, use a Node.js module to send email with Amazon SES. Create a No
 
 Create a parameters object to pass the name for the new receipt rule set. To call the `createReceiptRuleSet` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -167,7 +167,7 @@ newRulePromise
 
 To run the example, type the following at the command line. Amazon SES creates the receipt rule set list.
 
-```
+```javascript
 node ses_createreceiptruleset.js
 ```
 
@@ -180,7 +180,7 @@ In this example, use a Node.js module to send email with Amazon SES. Create a No
 
 Create an object to pass the name for the receipt rule set to delete. To call the `deleeReceiptRuleSet` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -203,7 +203,7 @@ newRulePromise
 
 To run the example, type the following at the command line. Amazon SES creates the receipt rule set list.
 
-```
+```javascript
 node ses_deletereceiptruleset.js
 ```
 

@@ -54,7 +54,7 @@ When using a Custom Identity Provider, you can now specify a HomeDirectory in th
 
 Example Custom IDP response with HomeDirectory and LOGICAL HomeDirectoryType:
 
-```
+```json
 {
   "Role": "arn:aws:iam::123456789012:role/transfer-user-role",
   "HomeDirectoryType": "LOGICAL",

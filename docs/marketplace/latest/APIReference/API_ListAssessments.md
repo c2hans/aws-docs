@@ -20,7 +20,8 @@ Content-type: application/json
 {
    "AssessmentTargetFilter": {
       "ChangeSetId": "{{string}}",
-      "EntityId": "{{string}}"
+      "EntityId": "{{string}}",
+      "EntityIds": [ "{{string}}" ]
    },
    "Catalog": "{{string}}",
    "FrameworkFilters": { ... },
@@ -44,7 +45,7 @@ The request accepts the following data in JSON format.
 The catalog related to the request. Fixed value: `AWSMarketplace`
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[a-zA-Z]+$`
+Pattern: `^(?![.-])(?!.*[.-]{2})(?![0-9]+\.[0-9.]+$)[a-zA-Z0-9.-]{1,47}(?<![.-])$`
 Required: Yes
 
  ** [AssessmentTargetFilter](#API_ListAssessments_RequestSyntax) **   <a name="AWSMarketplaceService-ListAssessments-request-AssessmentTargetFilter"></a>
@@ -59,7 +60,7 @@ Type: [FrameworkFilters](API_FrameworkFilters.md) object
 Required: No
 
  ** [FrameworkId](#API_ListAssessments_RequestSyntax) **   <a name="AWSMarketplaceService-ListAssessments-request-FrameworkId"></a>
-The unique identifier of a framework. When specified, only assessments performed against this framework are returned. For example, `AMISecurity`.
+The unique identifier of a framework. When specified, only assessments performed against this framework are returned. For example, `AMISecurity`. Required when you use `EntityIds` in `AssessmentTargetFilter`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `^[\w\-@]+$`
@@ -145,6 +146,8 @@ HTTP Status Code: 429
  ** ValidationException **
 An error occurred during validation.
 HTTP status code: 422
+ ** ValidationExceptionFieldList **
+A list of detailed entries describing the request fields that failed validation. Present when the failure can be attributed to one or more specific fields.
 HTTP Status Code: 422
 
 ## See Also

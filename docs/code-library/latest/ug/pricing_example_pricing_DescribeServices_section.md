@@ -106,7 +106,7 @@ For more information, see [Finding services and products using AWS Price List Qu
 **Tools for PowerShell V4**
 **Example 1: Returns the metadata for all available service codes in the us-east-1 region.**
 
-```
+```powershell
 Get-PLSService -Region us-east-1
 ```
 **Output:**
@@ -124,7 +124,7 @@ AttributeNames                                                  ServiceCode
 ```
 **Example 2: Returns the metadata for the Amazon EC2 service in the us-east-1 region.**
 
-```
+```powershell
 Get-PLSService -ServiceCode AmazonEC2 -Region us-east-1
 ```
 **Output:**
@@ -139,7 +139,7 @@ AttributeNames                                                         ServiceCo
 **Tools for PowerShell V5**
 **Example 1: Returns the metadata for all available service codes in the us-east-1 region.**
 
-```
+```powershell
 Get-PLSService -Region us-east-1
 ```
 **Output:**
@@ -157,7 +157,7 @@ AttributeNames                                                  ServiceCode
 ```
 **Example 2: Returns the metadata for the Amazon EC2 service in the us-east-1 region.**
 
-```
+```powershell
 Get-PLSService -ServiceCode AmazonEC2 -Region us-east-1
 ```
 **Output:**

@@ -20,7 +20,7 @@ To delete a project version with the AWS CLI and SDK:
 ------
 #### [ CLI ]
 
-```
+```bash
 # Request
 aws rekognition delete-project-version
   --project-version-arn {{model_arn}} \

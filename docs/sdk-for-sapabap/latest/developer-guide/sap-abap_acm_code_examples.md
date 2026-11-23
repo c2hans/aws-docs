@@ -24,7 +24,7 @@ The following code example shows how to use `AddTagsToCertificate`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_certificate_arn = 'arn:aws:acm:region:123456789012:certificate/certificate-id'
         lo_acm->addtagstocertificate(
@@ -52,7 +52,7 @@ The following code example shows how to use `DeleteCertificate`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_certificate_arn = 'arn:aws:acm:region:123456789012:certificate/certificate-id'
         lo_acm->deletecertificate( iv_certificatearn = iv_certificate_arn ).
@@ -75,7 +75,7 @@ The following code example shows how to use `DescribeCertificate`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_certificate_arn = 'arn:aws:acm:region:123456789012:certificate/certificate-id'
         oo_result = lo_acm->describecertificate( iv_certificatearn = iv_certificate_arn ).
@@ -96,7 +96,7 @@ The following code example shows how to use `GetCertificate`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_certificate_arn = 'arn:aws:acm:region:123456789012:certificate/certificate-id'
         oo_result = lo_acm->getcertificate( iv_certificatearn = iv_certificate_arn ).
@@ -119,7 +119,7 @@ The following code example shows how to use `ImportCertificate`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         " Only pass certificate chain if it's provided (it's optional)
         IF iv_certificate_chain IS NOT INITIAL.
@@ -152,7 +152,7 @@ The following code example shows how to use `ListCertificates`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_acm->listcertificates(
           iv_maxitems = iv_max_items
@@ -176,7 +176,7 @@ The following code example shows how to use `ListTagsForCertificate`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_certificate_arn = 'arn:aws:acm:region:123456789012:certificate/certificate-id'
         DATA(lo_result) = lo_acm->listtagsforcertificate(
@@ -200,7 +200,7 @@ The following code example shows how to use `RemoveTagsFromCertificate`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_certificate_arn = 'arn:aws:acm:region:123456789012:certificate/certificate-id'
         lo_acm->removetagsfromcertificate(
@@ -226,7 +226,7 @@ The following code example shows how to use `RequestCertificate`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_domain_name = 'example.com'
         " iv_validation_method = 'DNS' or 'EMAIL'
@@ -256,7 +256,7 @@ The following code example shows how to use `ResendValidationEmail`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_certificate_arn = 'arn:aws:acm:region:123456789012:certificate/certificate-id'
         " iv_domain = 'example.com'

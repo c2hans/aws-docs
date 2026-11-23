@@ -24,7 +24,7 @@ You must either have administrator permissions on the managed node you want to c
 
    This command lists all of the documents available for your account based on IAM permissions.
 
-   ```
+   ```sh
    aws ssm list-documents
    ```
 
@@ -35,7 +35,7 @@ You must either have administrator permissions on the managed node you want to c
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm describe-instance-information \
        --output text --query "InstanceInformationList[*]"
    ```
@@ -43,7 +43,7 @@ You must either have administrator permissions on the managed node you want to c
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm describe-instance-information ^
        --output text --query "InstanceInformationList[*]"
    ```
@@ -57,7 +57,7 @@ To run the commands in this walkthrough, replace the instance and command IDs. F
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm describe-instance-information \
        --instance-information-filter-list key=InstanceIds,valueSet={{instance-ID}}
    ```
@@ -65,7 +65,7 @@ To run the commands in this walkthrough, replace the instance and command IDs. F
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm describe-instance-information ^
        --instance-information-filter-list key=InstanceIds,valueSet={{instance-ID}}
    ```
@@ -84,7 +84,7 @@ Run the following command to view a description of the Systems Manager JSON docu
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm describe-document \
     --name "AWS-RunShellScript" \
     --query "[Document.Name,Document.Description]"
@@ -93,7 +93,7 @@ aws ssm describe-document \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm describe-document ^
     --name "AWS-RunShellScript" ^
     --query "[Document.Name,Document.Description]"
@@ -106,7 +106,7 @@ Run the following command to view the available parameters and details about tho
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm describe-document \
     --name "AWS-RunShellScript" \
     --query "Document.Parameters[*]"
@@ -115,7 +115,7 @@ aws ssm describe-document \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm describe-document ^
     --name "AWS-RunShellScript" ^
     --query "Document.Parameters[*]"
@@ -133,7 +133,7 @@ If you're targeting a Windows Server managed node, change the `document-name` to
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --instance-ids "{{instance-ID}}" \
     --document-name "AWS-RunShellScript" \
@@ -145,7 +145,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --instance-ids "{{instance-ID}}" ^
     --document-name "AWS-RunShellScript" ^
@@ -162,7 +162,7 @@ The following command uses the Command ID that was returned from the previous co
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm list-command-invocations \
     --command-id ${{sh-command-id}} \
     --details
@@ -171,7 +171,7 @@ aws ssm list-command-invocations \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm list-command-invocations ^
     --command-id ${{sh-command-id}} ^
     --details
@@ -186,7 +186,7 @@ The following command displays the default user running the commands.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 sh_command_id=$(aws ssm send-command \
     --instance-ids "{{instance-ID}}" \
     --document-name "AWS-RunShellScript" \
@@ -204,7 +204,7 @@ The following command uses the Command ID to get the status of the command execu
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm list-commands \
     --command-id "{{command-ID}}"
 ```
@@ -212,7 +212,7 @@ aws ssm list-commands \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm list-commands ^
     --command-id "{{command-ID}}"
 ```
@@ -225,7 +225,7 @@ The following command uses the Command ID from the previous command to get the s
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm list-command-invocations \
     --command-id "{{command-ID}}" \
     --details
@@ -234,7 +234,7 @@ aws ssm list-command-invocations \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm list-command-invocations ^
     --command-id "{{command-ID}}" ^
     --details
@@ -248,7 +248,7 @@ The following command returns the output of the original `aws ssm send-command` 
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm list-command-invocations \
     --instance-id {{instance-ID}} \
     --command-id "{{command-ID}}" \
@@ -258,7 +258,7 @@ aws ssm list-command-invocations \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm list-command-invocations ^
     --instance-id {{instance-ID}} ^
     --command-id "{{command-ID}}" ^
@@ -274,7 +274,7 @@ The following command returns the version of Python running on a node.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 sh_command_id=$(aws ssm send-command \
     --instance-ids "{{instance-ID}}" \
     --document-name "AWS-RunShellScript" \
@@ -297,7 +297,7 @@ The following command runs a simple Python "Hello World" script using Run Comman
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 sh_command_id=$(aws ssm send-command \
     --instance-ids "{{instance-ID}}" \
     --document-name "AWS-RunShellScript" \
@@ -320,7 +320,7 @@ The examples in this section demonstrate how to run the following bash script us
 
 For examples of using Run Command to run scripts stored in remote locations, see [Running scripts from Amazon S3](integration-s3.md) and [Running scripts from GitHub](integration-remote-scripts.md).
 
-```
+```bash
 #!/bin/bash
 yum -y update
 yum install -y ruby
@@ -341,7 +341,7 @@ The following sample demonstrates how to include the bash script in a CLI comman
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name "AWS-RunShellScript" \
     --targets '[{"Key":"InstanceIds","Values":["{{instance-id}}"]}]' \
@@ -357,7 +357,7 @@ In the following example, the content of the bash script is stored in a JSON fil
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name "AWS-RunShellScript" \
     --targets "Key=InstanceIds,Values={{instance-id}}" \
@@ -367,7 +367,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name "AWS-RunShellScript" ^
     --targets "Key=InstanceIds,Values={{instance-id}}" ^
@@ -378,7 +378,7 @@ aws ssm send-command ^
 
 The contents of the referenced `installCodeDeployAgent.json` file is shown in the following example.
 
-```
+```json
 {
     "Parameters": {
         "commands": [

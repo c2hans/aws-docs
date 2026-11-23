@@ -60,7 +60,7 @@ This following policy enforces a complete denial of access to CloudShell and its
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -83,7 +83,7 @@ This following policy allows IAM users to access CloudShell but blocks them from
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -116,7 +116,7 @@ The following policy allows IAM users to access CloudShell. However, the policy 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -148,7 +148,7 @@ The following policy allows IAM users to create AWS CloudShell environments.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -198,7 +198,7 @@ The following example displays how to enable full permissions, including access 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -351,7 +351,7 @@ To deny users access to specific VPCs, use `StringEquals` to check the value of 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -389,7 +389,7 @@ To allow users access to specific VPCs, use `StringEquals` to check the value of
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -422,7 +422,7 @@ To allow users access to specific VPCs, use `StringEquals` to check the value of
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

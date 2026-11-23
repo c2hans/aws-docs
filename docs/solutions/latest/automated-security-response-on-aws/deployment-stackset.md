@@ -121,7 +121,7 @@ You can choose to use a Jira API key in place of your password by providing your
 
         Example configuration with custom fields:
 
-        ```
+        ```json
         {
           "reporter": {"accountId": "123456:494dcbff-1b80-482c-a89d-56ae81c145a4"},
           "priority": {"id": "1"},

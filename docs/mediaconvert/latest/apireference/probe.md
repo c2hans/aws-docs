@@ -53,7 +53,7 @@ Supports CORS preflight requests.
 #### POST schema
 <a name="probe-request-body-post-example"></a>
 
-```
+```json
 {
   "inputFiles": [
     {
@@ -69,7 +69,7 @@ Supports CORS preflight requests.
 #### ProbeResponse schema
 <a name="probe-response-body-proberesponse-example"></a>
 
-```
+```json
 {
   "probeResults": [
     {
@@ -208,7 +208,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="probe-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

@@ -26,7 +26,7 @@ For more information about how to map streaming data to your application's input
 
 Following, you can find how to use JSONPath expressions to access various elements in JSON-formatted data. For the examples in this section, assume that the source stream contains the following JSON record:
 
-```
+```xml
 {
   "customerName":"John Doe",
   "address":
@@ -52,19 +52,19 @@ Following, you can find how to use JSONPath expressions to access various elemen
 
 To query an element in JSON data using JSONPath, use the following syntax. Here, `$` represents the root of the data hierarchy and `elementName` is the name of the element node to query.
 
-```
+```xml
 $.{{elementName}}
 ```
 
 The following expression queries the `customerName` element in the preceding JSON example.
 
-```
+```xml
 $.customerName
 ```
 
 The preceding expression returns the following from the preceding JSON record.
 
-```
+```json
 John Doe
 ```
 

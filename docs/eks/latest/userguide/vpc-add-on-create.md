@@ -30,19 +30,19 @@ After you complete the prerequisites, use the following steps to create the add-
 
 1. See which version of the add-on is installed on your cluster.
 
-   ```
+   ```bash
    kubectl describe daemonset aws-node --namespace kube-system | grep amazon-k8s-cni: | cut -d : -f 3
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    v1.16.4-eksbuild.2
    ```
 
 1. See which type of the add-on is installed on your cluster. Depending on the tool that you created your cluster with, you might not currently have the Amazon EKS add-on type installed on your cluster. Replace {{my-cluster}} with the name of your cluster.
 
-   ```
+   ```bash
    aws eks describe-addon --cluster-name my-cluster --addon-name vpc-cni --query addon.addonVersion --output text
    ```
 
@@ -50,7 +50,7 @@ After you complete the prerequisites, use the following steps to create the add-
 
 1. Save the configuration of your currently installed add-on.
 
-   ```
+   ```bash
    kubectl get daemonset aws-node -n kube-system -o yaml > aws-k8s-cni-old.yaml
    ```
 
@@ -59,7 +59,7 @@ After you complete the prerequisites, use the following steps to create the add-
    + Replace {{v1.20.3-eksbuild.1}} with the latest version listed in the latest version table for your cluster version. For the latest version table, see [Amazon VPC CNI versions](managing-vpc-cni.md#vpc-cni-latest-available-version).
    + Replace {{111122223333}} with your account ID and {{AmazonEKSVPCCNIRole}} with the name of an [existing IAM role](cni-iam-role.md#cni-iam-role-create-role) that you’ve created. Specifying a role requires that you have an IAM OpenID Connect (OIDC) provider for your cluster. To determine whether you have one for your cluster, or to create one, see [Create an IAM OIDC provider for your cluster](enable-iam-roles-for-service-accounts.md).
 
-     ```
+     ```bash
      aws eks create-addon --cluster-name my-cluster --addon-name vpc-cni --addon-version v1.20.3-eksbuild.1 \
          --service-account-role-arn arn:aws:iam::111122223333:role/AmazonEKSVPCCNIRole
      ```
@@ -68,7 +68,7 @@ After you complete the prerequisites, use the following steps to create the add-
 
 1. Confirm that the latest version of the add-on for your cluster’s Kubernetes version was added to your cluster. Replace {{my-cluster}} with the name of your cluster.
 
-   ```
+   ```bash
    aws eks describe-addon --cluster-name my-cluster --addon-name vpc-cni --query addon.addonVersion --output text
    ```
 
@@ -76,7 +76,7 @@ After you complete the prerequisites, use the following steps to create the add-
 
    An example output is as follows.
 
-   ```
+   ```bash
    v1.20.3-eksbuild.1
    ```
 

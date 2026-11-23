@@ -10,7 +10,7 @@ To use the interactive wizard, run `agentcore add gateway` with no options. Ente
 
 Create a gateway without authorization:
 
-```
+```bash
 agentcore add gateway \
   --name MyGateway \
   --authorizer-type NONE
@@ -19,7 +19,7 @@ agentcore deploy
 
 Add a project Runtime as an HTTP target. Runtime targets need a gateway created without `--protocol-type MCP`. This example assumes that the project has a Runtime named `MyAgent`, for example one added with `agentcore add runtime --name MyAgent --language python --protocol HTTP`:
 
-```
+```bash
 agentcore add gateway-target \
   --gateway MyGateway \
   --name MyAgentTarget \
@@ -28,7 +28,7 @@ agentcore add gateway-target \
 
 Create a gateway with JWT authorization:
 
-```
+```bash
 agentcore add gateway \
   --name MyJwtGateway \
   --authorizer-type CUSTOM_JWT \
@@ -43,7 +43,7 @@ agentcore deploy
 
 Semantic search is disabled by default. To enable it for an MCP gateway, use both `--protocol-type MCP` and `--enable-semantic-search`. An MCP gateway accepts only MCP targets, so you can’t add a `--runtime` target to it:
 
-```
+```bash
 agentcore add gateway \
   --name MyMcpGateway \
   --protocol-type MCP \

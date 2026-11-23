@@ -40,7 +40,7 @@ For more information, see [Controlling access to services with VPC endpoints](ht
 
 The following endpoint policy grants access to the listed Amazon Q Developer in chat applications actions for all principals on all resources.
 
-```
+```JSON
 {
    "Statement":[
       {

@@ -31,7 +31,7 @@ demo
 
 Now, you can configure the external file on our local machine. Using our IDE, open the `api-spec.yaml` located in your project folder. Replace its contents with the following:
 
-```
+```yaml
 openapi: '3.0'
 info: {}
 paths:

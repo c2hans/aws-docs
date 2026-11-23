@@ -31,7 +31,7 @@ The following example shows the fields for the [ GetScalingConfigurationRecommen
   + `MinInvocationsPerMinute` – (Optional) The minimum number of expected requests to your endpoint per minute.
   + `MaxInvocationsPerMinute` – (Optional) The maximum number of expected requests to your endpoint per minute.
 
-```
+```json
 {
     "InferenceRecommendationsJobName": "{{string}}", // Required
     "RecommendationId": "{{string}}", // Optional, provide one of RecommendationId or EndpointName
@@ -51,7 +51,7 @@ After submitting your request, you’ll receive a response with autoscaling poli
 
 The following example shows the response from the [ GetScalingConfigurationRecommendation](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_GetScalingConfigurationRecommendation.html) API:
 
-```
+```json
 {
     "InferenceRecommendationsJobName": "string",
     "RecommendationId": "string", // One of RecommendationId or EndpointName is shown

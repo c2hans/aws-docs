@@ -12,7 +12,7 @@ If you use open source OpenSearch, you must be able to access your Amazon Person
 
   To manually add your AWS credentials to your OpenSearch keystore, run the following command where your OpenSearch cluster is running (such as a Docker container). Then provide each credential. If you don't use a session token, you can omit the final line in the command.
 
-  ```
+  ```json
   opensearch-keystore add \
   personalized_search_ranking.aws.access_key \
   personalized_search_ranking.aws.secret_key \
@@ -32,7 +32,7 @@ The following policy example grants a user or role the minimum permissions to ge
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -56,7 +56,7 @@ Additionally, if you run your OpenSearch cluster on an Amazon EC2 instance and g
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

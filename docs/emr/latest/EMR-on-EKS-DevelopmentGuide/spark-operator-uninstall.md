@@ -8,7 +8,7 @@ Use the following steps to uninstall the Spark operator.
 
 1. Delete the Spark operator using the correct namespace. For this example, the namespace is `spark-operator-demo`.
 
-   ```
+   ```bash,sh,zsh
    helm uninstall spark-operator-demo -n spark-operator
    ```
 

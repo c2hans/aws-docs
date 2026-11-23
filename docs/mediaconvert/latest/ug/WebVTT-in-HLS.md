@@ -23,7 +23,7 @@ Specify which captions group you want by providing an ISO 639-3 language code. T
 **In your JSON job specification**
 If you use the API or an SDK, you can find these settings in the JSON file of your job. These settings are under `Inputs`, as in the following example:
 
-```
+```json
 "Inputs": [
 
       {

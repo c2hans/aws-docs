@@ -24,7 +24,7 @@ Forecast uses a default time boundary based on your forecast frequency's unit of
 
 If you specify both a custom time boundary and a custom forecast frequency, Forecast aggregates your data within the forecast frequency and aligns it to the custom time boundary. The forecast frequency determines how often the data is aggregated while the custom time boundary determines where the alignment is located. For example, assume your data is collected daily and you want Amazon Forecast to generate quarterly forecasts on the 15th of the month for one year. To do so, set the forecast frequency to every 3 months and the custom time boundary to 15. See the following AWS Command Line Interface example.
 
-```
+```cmd
 aws forecast create-predictor \
 --predictor-name {{predictor_name}} \
 --data-config DatasetGroupArn="arn:aws:forecast:{{region}}:{{account}}:dataset-group/{{datasetGroupName}}" \
@@ -104,7 +104,7 @@ To specify a time alignment boundary for a predictor with the AWS CLI, use the `
 
 `DayOfWeek` and `DayOfMonth` values must be in all uppercase. For information on the different time boundary units and boundary values you can specify, see [TimeAlignmentBoundary](API_TimeAlignmentBoundary.md). For information on required and optional parameters, see [CreateAutoPredictor](API_CreateAutoPredictor.md).
 
-```
+```cmd
 aws forecast create-predictor \
 --predictor-name {{predictor_name}} \
 --data-config DatasetGroupArn="arn:aws:forecast:{{region}}:{{account}}:dataset-group/{{datasetGroupName}}" \
@@ -120,7 +120,7 @@ To specify a time alignment boundary for a predictor with the AWS SDK for Python
 
 `DayOfWeek` and `DayOfMonth` values must be in all uppercase. For information on the different time boundary units and boundary values you can specify, see [TimeAlignmentBoundary](API_TimeAlignmentBoundary.md). For information on required and optional parameters, see [CreateAutoPredictor](API_CreateAutoPredictor.md).
 
-```
+```python
 import boto3
 
 forecast = boto3.client('forecast')

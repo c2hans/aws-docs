@@ -15,7 +15,7 @@ You can use the returned `GetItemResponse` object’s `item()` method to retriev
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -28,7 +28,7 @@ import java.util.Set;
 
  **Code**
 
-```
+```java
     public static void getDynamoDBItem(DynamoDbClient ddb,String tableName,String key,String keyVal ) {
 
         HashMap<String,AttributeValue> keyToGet = new HashMap<String,AttributeValue>();
@@ -72,7 +72,7 @@ You can return a [Collection](https://docs.oracle.com/javase/8/docs/api/index.ht
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.GetItemRequest;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -86,7 +86,7 @@ import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 
  **Code**
 
-```
+```java
     public static void getItem(DynamoDbAsyncClient client, String tableName, String key,  String keyVal) {
 
         HashMap<String, AttributeValue> keyToGet =
@@ -131,7 +131,7 @@ If the named table doesn’t exist for your account and region, a [ResourceNotFo
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -143,7 +143,7 @@ import java.util.HashMap;
 
  **Code**
 
-```
+```java
     public static void putItemInTable(DynamoDbClient ddb,
                                       String tableName,
                                       String key,
@@ -195,7 +195,7 @@ If the named table doesn’t exist for your account and region, or if the item i
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.model.AttributeAction;
@@ -209,7 +209,7 @@ import java.util.HashMap;
 
  **Code**
 
-```
+```java
     public static void updateTableItem(DynamoDbClient ddb,
                                        String tableName,
                                        String key,
@@ -262,7 +262,7 @@ If the named table doesn’t exist for your account and region, or if the item i
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -273,7 +273,7 @@ import java.util.HashMap;
 
  **Code**
 
-```
+```java
   public static void deleteDynamoDBItem(DynamoDbClient ddb, String tableName, String key, String keyVal) {
 
         HashMap<String,AttributeValue> keyToGet =

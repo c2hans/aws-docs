@@ -30,7 +30,7 @@ For more information, see [Listeners for your Classic Load Balancer](https://doc
 **Tools for PowerShell V4**
 **Example 1: This example deletes the listener on port 80 for the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-ELBLoadBalancerListener -LoadBalancerName my-load-balancer -LoadBalancerPort 80
 ```
 **Output:**
@@ -46,7 +46,7 @@ Performing operation "Remove-ELBLoadBalancerListener (DeleteLoadBalancerListener
 **Tools for PowerShell V5**
 **Example 1: This example deletes the listener on port 80 for the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-ELBLoadBalancerListener -LoadBalancerName my-load-balancer -LoadBalancerPort 80
 ```
 **Output:**

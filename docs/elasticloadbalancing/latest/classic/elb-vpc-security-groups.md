@@ -82,7 +82,7 @@ aws elb apply-security-groups-to-load-balancer --load-balancer-name {{my-loadbal
 
 The following is an example response:
 
-```
+```json
 {
   "SecurityGroups": [
      "sg-53fae93f"

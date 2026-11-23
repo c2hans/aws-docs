@@ -33,7 +33,7 @@ The API response will be in the JSON format, conformant to the DICOMweb STOW-RS 
 
 **Example 1: To store a DICOM P10 file using the `StoreDICOM` action**
 
-```
+```sh
 curl -X POST -v \
   'https://dicom-medical-imaging.us-east-1.amazonaws.com/datastore/d9a2a515ab294163a2d2f4069eed584c/studies' \
   --aws-sigv4 "aws:amz:$AWS_REGION:medical-imaging" \
@@ -49,7 +49,7 @@ curl -X POST -v \
 **Example 2: To store a DICOM P10 file using the `StoreDICOMStudy` action**
 The only difference between StoreDICOM and StoreDICOMStudy is that a Study Instance UID is passed as a parameter to StoreDICOMStudy, and the uploaded instances must be members of the specified study.
 
-```
+```sh
 curl -X POST -v \
   'https://dicom-medical-imaging.us-east-1.amazonaws.com/datastore/d9a2a515ab294163a2d2f4069eed584c/studies/1.3.6.1.4.1.5962.1.2.4.20040826285059.5457' \
   --aws-sigv4 "aws:amz:$AWS_REGION:medical-imaging" \
@@ -65,7 +65,7 @@ curl -X POST -v \
 **Example 3: To store DICOM P10 files with a multi-part HTTP payload**
 Multiple P10 files can be uploaded with a single multi-part upload action. The following shell commands demonstrate how to assemble a multi-part payload containing two P10 files, and upload it with the `StoreDICOM` action.
 
-```
+```sh
 #!/bin/sh
 FILENAME=multipart.payload
 BOUNDARY=2a8a02b9-0ed3-c8a7-7ebd-232427531940

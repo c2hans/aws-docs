@@ -28,7 +28,7 @@ The following code example shows how to use `Add-EKSResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet associates the specified tags to a resource with the specified resourceArn. **
 
-```
+```powershell
 Add-EKSResourceTag -ResourceArn "arn:aws:eks:us-west-2:012345678912:cluster/PROD" -Tag @{Name = "EKSPRODCLUSTER"}
 ```
 +  For API details, see [TagResource](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -41,7 +41,7 @@ The following code example shows how to use `Get-EKSCluster`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet returns descriptive information about an Amazon EKS cluster.**
 
-```
+```powershell
 Get-EKSCluster -Name "PROD"
 ```
 **Output:**
@@ -72,7 +72,7 @@ The following code example shows how to use `Get-EKSClusterList`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet lists the Amazon EKS clusters in your AWS account in the specified Region.**
 
-```
+```powershell
 Get-EKSClusterList
 ```
 **Output:**
@@ -90,7 +90,7 @@ The following code example shows how to use `Get-EKSFargateProfile`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet returns descriptive information about an AWS Fargate profile.**
 
-```
+```powershell
 Get-EKSFargateProfile -FargateProfileName "EKSFargate" -ClusterName "TEST"
 ```
 **Output:**
@@ -116,7 +116,7 @@ The following code example shows how to use `Get-EKSFargateProfileList`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet lists the AWS Fargate profiles associated with the specified cluster in your AWS account in the specified Region.**
 
-```
+```powershell
 Get-EKSFargateProfileList -ClusterName "TEST"
 ```
 **Output:**
@@ -135,7 +135,7 @@ The following code example shows how to use `Get-EKSNodegroup`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet returns descriptive information about an Amazon EKS node group.**
 
-```
+```powershell
 Get-EKSNodegroup -NodegroupName "ProdEKSNodeGroup" -ClusterName "PROD"
 ```
 **Output:**
@@ -171,7 +171,7 @@ The following code example shows how to use `Get-EKSNodegroupList`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet lists the Amazon EKS node groups associated with the specified cluster in your AWS account in the specified Region. **
 
-```
+```powershell
 Get-EKSNodegroupList -ClusterName PROD
 ```
 **Output:**
@@ -189,7 +189,7 @@ The following code example shows how to use `Get-EKSResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet list the tags for an Amazon EKS resource. **
 
-```
+```powershell
 Get-EKSResourceTag -ResourceArn "arn:aws:eks:us-west-2:012345678912:cluster/PROD"
 ```
 **Output:**
@@ -209,7 +209,7 @@ The following code example shows how to use `Get-EKSUpdate`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet returns descriptive information about an update against your Amazon EKS cluster or associated managed node group. **
 
-```
+```powershell
 Get-EKSUpdate -Name "PROD" -UpdateId "ee708232-7d2e-4ed7-9270-d0b5176f0726"
 ```
 **Output:**
@@ -232,7 +232,7 @@ The following code example shows how to use `Get-EKSUpdateList`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet lists the updates associated with an Amazon EKS cluster or managed node group in your AWS account, in the specified Region.**
 
-```
+```powershell
 Get-EKSUpdateList -Name "PROD"
 ```
 **Output:**
@@ -250,7 +250,7 @@ The following code example shows how to use `New-EKSCluster`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new cluster called 'prod'.**
 
-```
+```powershell
 New-EKSCluster -Name prod -ResourcesVpcConfig @{SubnetIds=@("subnet-0a1b2c3d","subnet-3a2b1c0d");SecurityGroupIds="sg-6979fe18"} -RoleArn "arn:aws:iam::012345678901:role/eks-service-role"
 ```
 **Output:**
@@ -278,7 +278,7 @@ The following code example shows how to use `New-EKSFargateProfile`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet creates an AWS Fargate profile for your Amazon EKS cluster. You must have at least one Fargate profile in a cluster to be able to schedule pods on Fargate infrastructure. **
 
-```
+```powershell
 New-EKSFargateProfile -FargateProfileName EKSFargateProfile -ClusterName TEST -Subnet "subnet-02f6ff500ff2067a0", "subnet-0cd976f08d5fbfaae" -PodExecutionRoleArn arn:aws:iam::012345678912:role/AmazonEKSFargatePodExecutionRole -Selector @{Namespace="default"}
 ```
 **Output:**
@@ -304,7 +304,7 @@ The following code example shows how to use `New-EKSNodeGroup`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet creates a managed worker node group for an Amazon EKS cluster. You can only create a node group for your cluster that is equal to the current Kubernetes version for the cluster. All node groups are created with the latest AMI release version for the respective minor Kubernetes version of the cluster. **
 
-```
+```powershell
 New-EKSNodeGroup -NodeGroupName "ProdEKSNodeGroup" -AmiType "AL2_x86_64" -DiskSize 40 -ClusterName "PROD" -ScalingConfig_DesiredSize 2 -ScalingConfig_MinSize 2 -ScalingConfig_MaxSize 5 -InstanceType t3.large -NodeRole "arn:aws:iam::012345678912:role/NodeInstanceRole" -Subnet "subnet-0d1a9fff35efa7691","subnet-0a3f4928edbc224d4"
 ```
 **Output:**
@@ -340,7 +340,7 @@ The following code example shows how to use `Remove-EKSCluster`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deletes the Amazon EKS cluster control plane.**
 
-```
+```powershell
 Remove-EKSCluster -Name "DEV-KUBE-CL"
 ```
 **Output:**
@@ -376,7 +376,7 @@ The following code example shows how to use `Remove-EKSFargateProfile`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deletes an AWS Fargate profile. When you delete a Fargate profile, any pods running on Fargate that were created with the profile are deleted. **
 
-```
+```powershell
 Remove-EKSFargateProfile -FargateProfileName "EKSFargate" -ClusterName "TEST"
 ```
 **Output:**
@@ -407,7 +407,7 @@ The following code example shows how to use `Remove-EKSNodegroup`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deletes an Amazon EKS node group for a cluster.**
 
-```
+```powershell
 Remove-EKSNodegroup -NodegroupName "ProdEKSNodeGroup" -ClusterName "PROD"
 ```
 **Output:**
@@ -448,7 +448,7 @@ The following code example shows how to use `Remove-EKSResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deletes specified tags from an EKS resource.**
 
-```
+```powershell
 Remove-EKSResourceTag -ResourceArn "arn:aws:eks:us-west-2:012345678912:cluster/PROD" -TagKey "Name"
 ```
 **Output:**
@@ -469,7 +469,7 @@ The following code example shows how to use `Update-EKSClusterConfig`.
 **Tools for PowerShell V4**
 **Example 1: Updates an Amazon EKS cluster configuration. Your cluster continues to function during the update.**
 
-```
+```powershell
 Update-EKSClusterConfig -Name "PROD" -Logging_ClusterLogging @{Types="api","audit","authenticator","controllerManager","scheduler",Enabled="True"}
 ```
 **Output:**
@@ -492,7 +492,7 @@ The following code example shows how to use `Update-EKSClusterVersion`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update.**
 
-```
+```powershell
 Update-EKSClusterVersion -Name "PROD-KUBE-CL" -Version 1.14
 ```
 **Output:**

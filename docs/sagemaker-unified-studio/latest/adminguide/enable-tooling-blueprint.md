@@ -14,7 +14,7 @@ Before you begin, verify that you have the following:
 + Domain administrator access to the Amazon SageMaker Unified Studio domain
 + An AWS account with permissions to create IAM roles and manage resources
 
-1. Navigate to the Amazon SageMaker management console at [https://console.aws.amazon.com/datazone](https://console.aws.amazon.com/datazone) and use the region selector in the top navigation bar to choose the appropriate AWS Region.
+1. Navigate to the [Amazon SageMaker management console](https://console.aws.amazon.com/datazone), and use the region selector in the top navigation bar to choose the appropriate AWS Region.
 
 1. Choose **View domains** and choose the domain's name from the list. The name is a hyperlink.
 

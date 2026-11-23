@@ -26,7 +26,7 @@ The following example policy shows how you can make a view available to the prin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -59,7 +59,7 @@ The administrator in each of the specified accounts must now specify which roles
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

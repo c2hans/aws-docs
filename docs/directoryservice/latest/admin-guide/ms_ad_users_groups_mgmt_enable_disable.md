@@ -40,7 +40,7 @@ This command uses the [`aws ds`](https://docs.aws.amazon.com/cli/latest/referenc
 **To enable AWS Directory Service Data CLI**
 +  Open the AWS CLI, and run the following command with your Directory ID:
 
-```
+```bash
 aws ds enable-directory-data-access --directory-id {{d-1234567890}}
 ```
 
@@ -55,7 +55,7 @@ This command uses the [`AWS.Tools.DirectoryService`](https://docs.aws.amazon.com
 **To enable Directory Service Data with Tools for PowerShell**
 +  Open PowerShell, and run the following command with your Directory ID:
 
-```
+```ps
 Enable-DSDirectoryDataAccess -DirectoryId {{d-1234567890}}
 ```
 
@@ -92,7 +92,7 @@ This command uses the [`aws ds`](https://docs.aws.amazon.com/cli/latest/referenc
 **To disable AWS Directory Service Data CLI**
 +  Open the AWS CLI, and run the following command with your Directory ID:
 
-```
+```bash
 aws ds disable-directory-data-access --directory-id {{d-1234567890}}
 ```
 
@@ -107,7 +107,7 @@ This command uses the [`AWS.Tools.DirectoryService`](https://docs.aws.amazon.com
 **To disable Directory Service Data with Tools for PowerShell**
 +  Open PowerShell, and run the following command with your Directory ID:
 
-```
+```ps
 Disable-DSDirectoryDataAccess -DirectoryId {{d-123456789}}
 ```
 

@@ -16,7 +16,7 @@ For devices to be provisioned, your Lambda function must accept the input object
 
 AWS IoT sends this object to the Lambda function when a device registers with AWS IoT.
 
-```
+```json
 {
     "claimCertificateId" : "{{string}}",
     "certificateId" : "{{string}}",
@@ -39,7 +39,7 @@ The Lambda function must return a response that indicates whether it has authori
 
 The following is an example of a successful response from the pre-provisioning function.
 
-```
+```json
 {
     "allowProvisioning": true,
     "parameterOverrides" : {
@@ -64,7 +64,7 @@ The Lambda function must finish running and return within 5 seconds, otherwise t
 
 An example of a pre-provisioning hook Lambda in Python.
 
-```
+```python
 import json
 
 def pre_provisioning_hook(event, context):
@@ -85,7 +85,7 @@ An example of a pre-provisioning hook Lambda in Java.
 
 Handler class:
 
-```
+```java
 package example;
 
 import java.util.Map;
@@ -112,7 +112,7 @@ public class PreProvisioningHook implements RequestHandler<PreProvisioningHookRe
 
 Request class:
 
-```
+```java
 package example;
 
 import java.util.Map;
@@ -137,7 +137,7 @@ public class PreProvisioningHookRequest {
 
 Response class:
 
-```
+```java
 package example;
 
 import java.util.Map;
@@ -161,7 +161,7 @@ public class PreProvisioningHookResponse {
 
 An example of a pre-provisioning hook Lambda in JavaScript.
 
-```
+```javascript
 exports.handler = function(event, context, callback) {
     console.log(JSON.stringify(event, null, 2));
     var reply = {

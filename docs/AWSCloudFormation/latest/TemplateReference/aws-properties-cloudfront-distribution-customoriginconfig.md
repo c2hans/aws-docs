@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[HTTPPort](#cfn-cloudfront-distribution-customoriginconfig-httpport)" : {{Integer}},
   "[HTTPSPort](#cfn-cloudfront-distribution-customoriginconfig-httpsport)" : {{Integer}},
   "[IpAddressType](#cfn-cloudfront-distribution-customoriginconfig-ipaddresstype)" : {{String}},
+  "[OriginHttpVersion](#cfn-cloudfront-distribution-customoriginconfig-originhttpversion)" : {{String}},
   "[OriginKeepaliveTimeout](#cfn-cloudfront-distribution-customoriginconfig-originkeepalivetimeout)" : {{Integer}},
   "[OriginMtlsConfig](#cfn-cloudfront-distribution-customoriginconfig-originmtlsconfig)" : {{OriginMtlsConfig}},
   "[OriginProtocolPolicy](#cfn-cloudfront-distribution-customoriginconfig-originprotocolpolicy)" : {{String}},
@@ -36,6 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [HTTPPort](#cfn-cloudfront-distribution-customoriginconfig-httpport): {{Integer}}
   [HTTPSPort](#cfn-cloudfront-distribution-customoriginconfig-httpsport): {{Integer}}
   [IpAddressType](#cfn-cloudfront-distribution-customoriginconfig-ipaddresstype): {{String}}
+  [OriginHttpVersion](#cfn-cloudfront-distribution-customoriginconfig-originhttpversion): {{String}}
   [OriginKeepaliveTimeout](#cfn-cloudfront-distribution-customoriginconfig-originkeepalivetimeout): {{Integer}}
   [OriginMtlsConfig](#cfn-cloudfront-distribution-customoriginconfig-originmtlsconfig): {{
     OriginMtlsConfig}}
@@ -65,6 +67,13 @@ Specifies which IP protocol CloudFront uses when connecting to your origin. If y
 *Required*: No
 *Type*: String
 *Allowed values*: `ipv4 | ipv6 | dualstack`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`OriginHttpVersion`  <a name="cfn-cloudfront-distribution-customoriginconfig-originhttpversion"></a>
+The HTTP version that CloudFront uses for connections to your custom origin. Valid values are `http1.1` and `http2`. With `http2`, CloudFront negotiates HTTP/2 with the origin and falls back to HTTP/1.1 if the origin doesn't support HTTP/2. CloudFront uses HTTP/2 only over TLS 1.2 or later. If you don't specify a value, CloudFront uses HTTP/1.1.
+*Required*: No
+*Type*: String
+*Allowed values*: `http1.1 | http2`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `OriginKeepaliveTimeout`  <a name="cfn-cloudfront-distribution-customoriginconfig-originkeepalivetimeout"></a>

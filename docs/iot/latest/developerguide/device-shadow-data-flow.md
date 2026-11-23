@@ -46,7 +46,7 @@ Your app or service can update a shadow's state by using the [UpdateThingShadow]
 
 1. The client publishes a `$aws/things/{{thingName}}/shadow/name/{{shadowName}}/update` request topic with a state document that contains the desired state of the shadow. Only the properties to change need to be included in the document. This is an example of a document with the desired state.
 
-   ```
+   ```JSON
    {
      "state": {
        "desired": {
@@ -92,7 +92,7 @@ When the device receives the `/desired` state on the `/update/delta` topic, it m
 
 1. The device reports its current state by publishing a message to the `$aws/things/{{thingName}}/shadow/name/{{shadowName}}/update` topic that reports the current state, such as in this example.
 
-   ```
+   ```JSON
    {
        "state": {
            "reported" : {
@@ -126,7 +126,7 @@ For example:
 
 Initial document:
 
-```
+```JSON
 {
   "state": {
     "desired": {
@@ -143,7 +143,7 @@ Initial document:
 
 Update: (version doesn't match; this request will be rejected)
 
-```
+```JSON
 {
   "state": {
     "desired": {
@@ -158,7 +158,7 @@ Update: (version doesn't match; this request will be rejected)
 
 Result:
 
-```
+```JSON
 {
   "code": 409,
   "message": "Version conflict",
@@ -168,7 +168,7 @@ Result:
 
 Update: (version matches; this request will be accepted)
 
-```
+```JSON
 {
   "state": {
     "desired": {
@@ -183,7 +183,7 @@ Update: (version matches; this request will be accepted)
 
 Final state:
 
-```
+```JSON
 {
   "state": {
     "desired": {
@@ -244,7 +244,7 @@ Deleting a shadow doesn't reset its version number to zero at once. It will be r
 
 1. The device or client publishes a `$aws/things/{{thingName}}/shadow/name/{{shadowName}}/update` request topic with a state document that assigns `null` values to the properties of the shadow to delete. Only the properties to change need to be included in the document. This is an example of a document that deletes the `engine` property.
 
-   ```
+   ```JSON
    {
      "state": {
        "desired": {
@@ -262,7 +262,7 @@ Deleting a shadow doesn't reset its version number to zero at once. It will be r
 
 1. The device or client calls the `UpdateThingShadow` API with a [Request state document](device-shadow-document.md#device-shadow-example-request-json) that assigns `null` values to the properties of the shadow to delete. Include only the properties that you want to delete in the document. This is an example of a document that deletes the `engine` property.
 
-   ```
+   ```JSON
    {
      "state": {
        "desired": {
@@ -294,7 +294,7 @@ Following are some considerations when deleting a device's shadow.
 
 1. If the delete request is valid, AWS IoT deletes the shadow and publishes a messages with the `$aws/things/{{thingName}}/shadow/name/{{shadowName}}/delete/accepted` topic and an abbreviated [/accepted response state document](device-shadow-document.md#device-shadow-example-response-json-accepted) shadow document in the message body. This is an example of the accepted delete message:
 
-   ```
+   ```json
    {
      "version": 4,
      "timestamp": 1591057529
@@ -309,7 +309,7 @@ Following are some considerations when deleting a device's shadow.
 
 1. If the request was valid, AWS IoT returns an HTTP success response code and an [/accepted response state document](device-shadow-document.md#device-shadow-example-response-json-accepted) and an abbreviated [/accepted response state document](device-shadow-document.md#device-shadow-example-response-json-accepted) shadow document in the message body. This is an example of the accepted delete message:
 
-   ```
+   ```json
    {
      "version": 4,
      "timestamp": 1591057529

@@ -64,7 +64,7 @@ Grafana needs permissions granted through IAM to be able to read CloudWatch metr
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

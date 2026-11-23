@@ -25,7 +25,7 @@ Without an execution role, application stdout and stderr are not forwarded to Cl
 
 You can configure a custom log group and stream by using the `--logging` parameter on `run-microvm` or `create-microvm-image`:
 
-```
+```bash
 --logging '{"cloudWatch":{"logGroup":"/my-app/microvms","logStream":"custom-stream"}}'
 ```
 
@@ -33,7 +33,7 @@ If you omit `logStream`, it defaults to the MicroVM ID.
 
 You can explicitly disable logging by passing the following configuration:
 
-```
+```bash
 --logging '{"disabled":{}}'
 ```
 
@@ -86,7 +86,7 @@ The following Lambda MicroVMs actions are logged as data events:
 
 To log data events for all MicroVM images, use the following advanced event selector:
 
-```
+```json
 {
    "Name": "Log Lambda MicroVM data events",
    "FieldSelectors": [
@@ -101,7 +101,7 @@ To log data events for all MicroVM images, use the following advanced event sele
 
 To enable data event logging using the AWS CLI, run the `put-event-selectors` command with advanced event selectors:
 
-```
+```bash
 aws cloudtrail put-event-selectors \
    --trail-name my-trail \
    --advanced-event-selectors '[{
@@ -120,7 +120,7 @@ A CloudTrail trail delivers API activity records to an Amazon S3 bucket you spec
 
 The following example shows a CloudTrail log entry that demonstrates a data event for the `RunMicrovm` action:
 
-```
+```json
 {
   "eventVersion": "1.11",
   "userIdentity": {

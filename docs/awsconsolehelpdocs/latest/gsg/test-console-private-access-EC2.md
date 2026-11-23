@@ -15,7 +15,7 @@ Copy the following CloudFormation template and save it to a file that you will u
 ## AWS Management Console Private Access environment Amazon EC2 CloudFormation template
 <a name="private-access-environment-ec2-cloudformation-template"></a>
 
-```
+```yaml
 Description: |
   AWS Management Console Private Access.
 Parameters:

@@ -24,7 +24,7 @@ For more information on events and how EventBridge processes them, see [Amazon E
 
 Below is an example for the `AWS Supply Chain Data Integration Status Change event` event.
 
-```
+```json
 
 {
     "version": "0",

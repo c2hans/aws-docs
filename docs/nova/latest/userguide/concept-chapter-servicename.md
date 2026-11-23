@@ -10,7 +10,7 @@ The Nova Models leverage Constrained Decoding to ensure high model reliability i
 
 To leverage tool use with structured output, the primary step is define the JSON schema you require for the output. Below is an example of a JSON schema defined within a `tool_config` definition:
 
-```
+```json
   tool_config = {
   "tools": [
     {
@@ -71,7 +71,7 @@ To leverage tool use with structured output, the primary step is define the JSON
 
 When you call the tool later using the model, you will receive an output that responds in the schema format. For example, below is an example of calling the model in Python:
 
-```
+```python
   import boto3
 
 client = boto3.client("bedrock-runtime")
@@ -99,7 +99,7 @@ print(next(
 
 The output then appears like this:
 
-```
+```json
  {
   "toolUseId": "tooluse_hke1FUeuRbKXK8DPqIptVg",
   "name": "ProductAnalysis",

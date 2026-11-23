@@ -48,7 +48,7 @@ For more information, see [Controlling access to services with VPC endpoints](ht
 **Example: VPC endpoint policy for AWS IoT Greengrass actions**
 The following is an example of an endpoint policy for AWS IoT Greengrass. When attached to an endpoint, this policy grants access to the listed AWS IoT Greengrass actions for all principals on all resources.
 
-```
+```json
 {
     "Statement": [
         {
@@ -88,13 +88,13 @@ The VPC feature for automatically creating a DNS record is disabled for AWS IoT 
 
    1. Get the AWS IoT data endpoint for your AWS account.
 
-      ```
+      ```bash
       aws iot describe-endpoint --endpoint-type iot:Data-ATS
       ```
 
       The response looks similar to the following example, if the request succeeds.
 
-      ```
+      ```json
       {
         "endpointAddress": "{{device-data-prefix}}-ats.iot.us-west-2.amazonaws.com"
       }
@@ -102,13 +102,13 @@ The VPC feature for automatically creating a DNS record is disabled for AWS IoT 
 
    1. Get the AWS IoT credentials endpoint for your AWS account.
 
-      ```
+      ```bash
       aws iot describe-endpoint --endpoint-type iot:CredentialProvider
       ```
 
       The response looks similar to the following example, if the request succeeds.
 
-      ```
+      ```json
       {
         "endpointAddress": "{{device-credentials-prefix}}.credentials.iot.us-west-2.amazonaws.com"
       }
@@ -148,7 +148,7 @@ The service name for AWS IoT Core data plane in China Region will be of the form
 
 **Example: Component configuration**
 
-```
+```json
 {
 "aws.greengrass.Nucleus": {
    "configuration": {

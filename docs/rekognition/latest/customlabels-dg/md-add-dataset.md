@@ -84,7 +84,7 @@ You can add a train or test dataset to an existing project in the following ways
    + `project_arn` — the ARN of the project that you want to add the test dataset to.
    + `type` — the type of dataset that you want to create (train or test)
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
 
@@ -208,7 +208,7 @@ You can add a train or test dataset to an existing project in the following ways
    + `project_arn` — the ARN of the project that you want to add the test dataset to.
    + `type` — the type of dataset that you want to create (train or test)
 
-   ```
+   ```java
    /*
       Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
       SPDX-License-Identifier: Apache-2.0

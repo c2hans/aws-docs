@@ -60,7 +60,7 @@ The user, role, or group that you use to access the Amazon Lex V2 console must h
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement": [
@@ -96,7 +96,7 @@ The user, role, or group that you use to specify the runtime role must have the 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -167,19 +167,19 @@ To filter the response from Amazon Kendra to items related to current conversati
 
 The following is an example of a `queryFilterString` parameter that uses a string to filter the Amazon Kendra query.
 
-```
+```json
 "{"equalsTo": {"key": "City", "value": {"stringValue": "Seattle"}}}"
 ```
 
 The following is an example of a `queryFilterString` parameter that uses a session attribute called `"SourceURI"` to filter the Amazon Kendra query.
 
-```
+```json
 "{"equalsTo": {"key": "SourceURI","value": {"stringValue": "[FileURL]"}}}"
 ```
 
 The following is an example of a `queryFilterString` parameter that uses a request attribute called `"DepartmentName"` to filter the Amazon Kendra query.
 
-```
+```json
 "{"equalsTo": {"key": "Department","value": {"stringValue": "((DepartmentName))"}}}"
 ```
 
@@ -187,7 +187,7 @@ The `AMAZON.KendraSearchInteng` filters use the same format as the Amazon Kendra
 
 The query filter string used with the `AMAZON.KendraSearchIntent` must use lower-case letters for the first letter of each filter. For example, the following is a valid query filter for the `AMAZON.KendraSearchIntent`.
 
-```
+```json
 {
 "andAllFilters": [
     {

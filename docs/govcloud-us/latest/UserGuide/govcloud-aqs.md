@@ -11,14 +11,14 @@ With the supported Amazon Quick capabilities in AWS GovCloud (US), you can explo
 ## Region availability
 <a name="region-availability"></a>
 
-Amazon Quick is available in the following AWS GovCloud (US) Regions:
+ AWS Quick is available in the following AWS GovCloud (US) Regions:
 +  AWS GovCloud (US-East)
 +  AWS GovCloud (US-West)
 
-## How Amazon Quick differs
+## How AWS Quick differs
 <a name="feature-diffs"></a>
 
-The following differences apply to Amazon Quick:
+The following differences apply to AWS Quick:
 + Amazon Quick Automate is not available.
 + Amazon Quick Flows is not available.
 + Quick Agents is not available.

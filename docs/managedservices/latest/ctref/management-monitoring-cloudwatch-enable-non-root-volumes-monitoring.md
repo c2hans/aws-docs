@@ -141,7 +141,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-monitoring-cloudwatch-enable-non-root-volumes-monitoring-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-DeployNonRootVolumeMonitoring",
   "Region": "us-east-1",
@@ -156,7 +156,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-monitoring-cloudwatch-enable-non-root-volumes-monitoring-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-DeployNonRootVolumeMonitoring",
   "Region": "us-east-1",

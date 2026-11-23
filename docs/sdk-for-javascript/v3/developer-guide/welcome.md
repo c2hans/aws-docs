@@ -61,7 +61,7 @@ V3 enables you to bundle and include in the browser only the SDK for JavaScript 
 
 To use V3 of the SDK for JavaScript in your HTML pages, you must bundle the required client modules and all required JavaScript functions into a single JavaScript file using Webpack, and add it in a script tag in the `<head>` of your HTML pages. For example:
 
-```
+```html
 <script src="./main.js"></script>
 ```
 

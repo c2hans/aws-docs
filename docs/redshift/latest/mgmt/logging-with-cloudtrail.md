@@ -108,7 +108,7 @@ Amazon Redshift Serverless is integrated with AWS CloudTrail to provide a record
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateNamespace` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -172,7 +172,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 
 The following example shows a CloudTrail log entry that demonstrates the `ExecuteStatement` action.
 
-```
+```json
 {
     "eventVersion":"1.05",
     "userIdentity":{
@@ -212,7 +212,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Execut
 
 The following example shows a CloudTrail log entry that demonstrates the `ExecuteStatement` action showing the `clientToken` used for idempotency.
 
-```
+```json
 {
     "eventVersion":"1.05",
     "userIdentity":{
@@ -256,7 +256,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Execut
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateConnection` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

@@ -37,7 +37,7 @@ The following code example shows how to:
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3/basics#code-examples).
 
-```
+```swift
 import AWSS3
 
 import Foundation
@@ -320,7 +320,7 @@ public class ServiceHandler {
 }
 ```
 
-```
+```swift
 import AWSS3
 
 import Foundation
@@ -448,7 +448,7 @@ The following code example shows how to use `CopyObject`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3/basics#code-examples).
 
-```
+```swift
 import AWSS3
 
     public func copyFile(from sourceBucket: String, name: String, to destBucket: String) async throws {
@@ -478,7 +478,7 @@ The following code example shows how to use `CreateBucket`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3/basics#code-examples).
 
-```
+```swift
 import AWSS3
 
     public func createBucket(name: String) async throws {
@@ -518,7 +518,7 @@ The following code example shows how to use `DeleteBucket`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3/basics#code-examples).
 
-```
+```swift
 import AWSS3
 
     public func deleteBucket(name: String) async throws {
@@ -544,7 +544,7 @@ The following code example shows how to use `DeleteObject`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3/basics#code-examples).
 
-```
+```swift
 import AWSS3
 
     public func deleteFile(bucket: String, key: String) async throws {
@@ -572,7 +572,7 @@ The following code example shows how to use `DeleteObjects`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3/DeleteObjects#code-examples).
 
-```
+```swift
 import AWSS3
 
     public func deleteObjects(bucket: String, keys: [String]) async throws {
@@ -602,7 +602,7 @@ The following code example shows how to use `GetObject`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3/basics#code-examples).
 
-```
+```swift
 import AWSS3
 
     public func downloadFile(bucket: String, key: String, to: String) async throws {
@@ -632,7 +632,7 @@ import AWSS3
     }
 ```
 
-```
+```swift
 import AWSS3
 
     public func readFile(bucket: String, key: String) async throws -> Data {
@@ -669,7 +669,7 @@ The following code example shows how to use `ListBuckets`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3#code-examples).
 
-```
+```swift
 import AWSS3
 
     /// Return an array containing information about every available bucket.
@@ -690,7 +690,7 @@ The following code example shows how to use `ListObjectsV2`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3/basics#code-examples).
 
-```
+```swift
 import AWSS3
 
     public func listBucketFiles(bucket: String) async throws -> [String] {
@@ -735,7 +735,7 @@ The following code example shows how to use `PutObject`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3/basics#code-examples).
 
-```
+```swift
 import AWSS3
 import Smithy
 
@@ -760,7 +760,7 @@ import Smithy
     }
 ```
 
-```
+```swift
 import AWSS3
 import Smithy
 
@@ -795,7 +795,7 @@ The following code example shows how to download a stream of unknown size from a
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3/binary-streaming#code-examples).
 
-```
+```swift
 import ArgumentParser
 import AWSClientRuntime
 import AWSS3
@@ -910,7 +910,7 @@ The following code example shows how to upload a stream of unknown size to an Am
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3/binary-streaming#code-examples).
 
-```
+```swift
 import ArgumentParser
 import AWSClientRuntime
 import AWSS3

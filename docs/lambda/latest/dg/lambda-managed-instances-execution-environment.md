@@ -35,7 +35,7 @@ During the Init phase, Lambda performs the following steps:
 The Init phase is considered complete when extensions have initialized and at least one runtime worker has called `/runtime/invocation/next`. The function is then ready to process invocations.
 
 **Note**
-For Lambda Managed Instances functions, initialization can take up to 15 minutes. The timeout is the maximum of 130 seconds or the configured function timeout (up to 900 seconds).
+For Lambda Managed Instances functions, initialization can take up to 15 minutes. The timeout is the maximum of 130 seconds or the configured function timeout (up to 900 seconds, even if the function timeout is longer).
 
 ### Invoke phase
 <a name="lambda-managed-instances-invoke-phase"></a>

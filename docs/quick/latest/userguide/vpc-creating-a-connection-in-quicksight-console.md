@@ -26,7 +26,7 @@ To create a secure private connection to the Amazon VPC service from the AWS Qui
 
 ****
 
-    ```
+    ```json
     {
         "Version":"2012-10-17",
         "Statement": [
@@ -59,7 +59,7 @@ To create a secure private connection to the Amazon VPC service from the AWS Qui
 
 ****
 
-    ```
+    ```json
     {
         "Version":"2012-10-17",
         "Statement": [
@@ -87,7 +87,7 @@ To create a secure private connection to the Amazon VPC service from the AWS Qui
 
 ****
 
-    ```
+    ```json
     {
       "Version":"2012-10-17",
       "Statement": [

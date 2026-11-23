@@ -50,7 +50,7 @@ AmazonFSxServiceRolePolicy is used by all Amazon FSx file system types; some of 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

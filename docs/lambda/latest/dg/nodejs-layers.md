@@ -65,7 +65,7 @@ For more complex native dependencies, you might need to compile them in a Linux 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Compress-Archive -Path .\nodejs -DestinationPath .\layer.zip
    ```
 
@@ -113,7 +113,7 @@ The `package.json` and `package-lock.json` files in the `nodejs/` directory are 
 1. Create your JavaScript module file:
 **Example nodejs/node\_modules/validator/index.mjs**
 
-   ```
+   ```javascript
    export function validateOrder(orderData) {
      // Validates an order and returns formatted data
      const requiredFields = ['productId', 'quantity'];
@@ -159,7 +159,7 @@ The `package.json` and `package-lock.json` files in the `nodejs/` directory are 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Compress-Archive -Path .\nodejs -DestinationPath .\layer.zip
    ```
 
@@ -177,7 +177,7 @@ The `package.json` and `package-lock.json` files in the `nodejs/` directory are 
 
 1. In your function, import and use the modules. Example:
 
-   ```
+   ```javascript
    import { validateOrder, formatResponse } from 'validator';
 
    export const handler = async (event) => {
@@ -208,7 +208,7 @@ The `package.json` and `package-lock.json` files in the `nodejs/` directory are 
 
    You can use the following [test event](testing-functions.md#invoke-with-event) to invoke the function:
 
-   ```
+   ```json
    {
        "body": "{\"productId\": \"ABC123\", \"quantity\": 2, \"priority\": \"express\"}"
    }
@@ -216,7 +216,7 @@ The `package.json` and `package-lock.json` files in the `nodejs/` directory are 
 
    Expected response:
 
-   ```
+   ```json
    {
      "statusCode": 200,
      "body": "{\"message\":\"Order validated successfully\",\"order\":{\"productId\":\"ABC123\",\"quantity\":2,\"shippingPriority\":\"express\"}}"

@@ -19,7 +19,7 @@ For instructions on how to add an inline policy, see [ Adding IAM identity permi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

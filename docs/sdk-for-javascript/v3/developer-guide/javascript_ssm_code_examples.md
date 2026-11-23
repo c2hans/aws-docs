@@ -30,7 +30,7 @@ The following code example shows how to get started using Systems Manager.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import { paginateListDocuments, SSMClient } from "@aws-sdk/client-ssm";
 
 // Call ListDocuments and display the result.
@@ -82,7 +82,7 @@ The following code example shows how to:
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import {
   Scenario,
   ScenarioAction,
@@ -619,7 +619,7 @@ The following code example shows how to use `CreateDocument`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import { CreateDocumentCommand, SSMClient } from "@aws-sdk/client-ssm";
 import { parseArgs } from "node:util";
 
@@ -658,7 +658,7 @@ The following code example shows how to use `CreateMaintenanceWindow`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import { CreateMaintenanceWindowCommand, SSMClient } from "@aws-sdk/client-ssm";
 import { parseArgs } from "node:util";
 
@@ -708,7 +708,7 @@ The following code example shows how to use `CreateOpsItem`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import { CreateOpsItemCommand, SSMClient } from "@aws-sdk/client-ssm";
 import { parseArgs } from "node:util";
 
@@ -753,7 +753,7 @@ The following code example shows how to use `DeleteDocument`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import { DeleteDocumentCommand, SSMClient } from "@aws-sdk/client-ssm";
 import { parseArgs } from "node:util";
 
@@ -786,7 +786,7 @@ The following code example shows how to use `DeleteMaintenanceWindow`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import { DeleteMaintenanceWindowCommand, SSMClient } from "@aws-sdk/client-ssm";
 import { parseArgs } from "node:util";
 
@@ -821,7 +821,7 @@ The following code example shows how to use `DescribeOpsItems`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import {
   OpsItemFilterOperator,
   OpsItemFilterKey,
@@ -871,7 +871,7 @@ The following code example shows how to use `ListCommandInvocations`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import { paginateListCommandInvocations, SSMClient } from "@aws-sdk/client-ssm";
 import { parseArgs } from "node:util";
 
@@ -914,7 +914,7 @@ The following code example shows how to use `SendCommand`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import { SendCommandCommand, SSMClient } from "@aws-sdk/client-ssm";
 import { parseArgs } from "node:util";
 
@@ -951,7 +951,7 @@ The following code example shows how to use `UpdateMaintenanceWindow`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import { UpdateMaintenanceWindowCommand, SSMClient } from "@aws-sdk/client-ssm";
 import { parseArgs } from "node:util";
 
@@ -1000,7 +1000,7 @@ The following code example shows how to use `UpdateOpsItem`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import { UpdateOpsItemCommand, SSMClient } from "@aws-sdk/client-ssm";
 import { parseArgs } from "node:util";
 

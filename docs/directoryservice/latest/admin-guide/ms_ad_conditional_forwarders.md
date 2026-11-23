@@ -39,7 +39,7 @@ You can list conditional forwarders on your directory by using the AWS CLI or Po
 **To list conditional forwarders on your directory**
 + Run the following command, replacing the example value with your own:
 
-  ```
+  ```ps
   Get-DSConditionalForwarder `
     -DirectoryId {{d-123456abcd}}
   ```
@@ -74,7 +74,7 @@ You can create a conditional forwarder for your directory by using the AWS CLI o
 **To create a conditional forwarder for your directory**
 + Run the following command, replacing the example values with your own:
 
-  ```
+  ```ps
   New-DSConditionalForwarder `
     -DirectoryId {{d-123456abcd}} `
     -RemoteDomainName {{company.example.com}} `
@@ -111,7 +111,7 @@ To update the DNS servers for an existing conditional forwarder, use the same re
 **To update a conditional forwarder on your directory**
 + Run the following command, replacing the example values with your own:
 
-  ```
+  ```ps
   Update-DSConditionalForwarder `
     -DirectoryId {{d-123456abcd}} `
     -RemoteDomainName {{company.example.com}} `
@@ -147,7 +147,7 @@ You can remove a conditional forwarder from your directory by using the AWS CLI 
 **To remove a conditional forwarder from your directory**
 + Run the following command, replacing the example values with your own:
 
-  ```
+  ```ps
   Remove-DSConditionalForwarder `
     -DirectoryId {{d-123456abcd}} `
     -RemoteDomainName {{company.example.com}}

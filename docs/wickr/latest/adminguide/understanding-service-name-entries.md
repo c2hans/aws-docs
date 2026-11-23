@@ -10,7 +10,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateAdminSession` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -59,7 +59,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateNetwork` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -106,7 +106,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 
 The following example shows a CloudTrail log entry that demonstrates the `ListNetworks` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -150,7 +150,7 @@ The following example shows a CloudTrail log entry that demonstrates the `ListNe
 
 The following example shows a CloudTrail log entry that demonstrates the `UpdateNetworkdetails` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -197,7 +197,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Update
 
 The following example shows a CloudTrail log entry that demonstrates the `TagResource` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -246,7 +246,7 @@ The following example shows a CloudTrail log entry that demonstrates the `TagRes
 
 The following example shows a CloudTrail log entry that demonstrates the `ListTagsForResource` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

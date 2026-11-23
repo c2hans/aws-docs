@@ -33,7 +33,7 @@ Required: Yes
  ** firewallType **   <a name="networksecuritymanager-Type-RuleSummary-firewallType"></a>
 The firewall type associated with the resource.
 Type: String
-Valid Values: `WAF`
+Valid Values: `WAF | IGW_FIREWALL`
 Required: No
 
  ** hasPublishedVersion **   <a name="networksecuritymanager-Type-RuleSummary-hasPublishedVersion"></a>

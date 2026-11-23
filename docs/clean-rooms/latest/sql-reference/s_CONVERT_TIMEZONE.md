@@ -35,7 +35,7 @@ TIMESTAMP
 
 The following example converts the timestamp value from the default UTC time zone to PST.
 
-```
+```sql
 select convert_timezone('PST', '2008-08-21 07:23:54');
 
  convert_timezone
@@ -45,7 +45,7 @@ select convert_timezone('PST', '2008-08-21 07:23:54');
 
 The following example converts the timestamp value in the LISTTIME column from the default UTC time zone to PST. Though the timestamp is within the daylight time period, it's converted to standard time because the target time zone is specified as an abbreviation (PST).
 
-```
+```sql
 select listtime, convert_timezone('PST', listtime) from listing
 where listid = 16;
 
@@ -56,7 +56,7 @@ where listid = 16;
 
 The following example converts a timestamp LISTTIME column from the default UTC time zone to US/Pacific time zone. The target time zone uses a time zone name, and the timestamp is within the daylight time period, so the function returns the daylight time.
 
-```
+```sql
 select listtime, convert_timezone('US/Pacific', listtime) from listing
 where listid = 16;
 
@@ -67,7 +67,7 @@ where listid = 16;
 
 The following example converts a timestamp string from EST to PST:
 
-```
+```sql
 select convert_timezone('EST', 'PST', '20080305 12:25:29');
 
  convert_timezone
@@ -77,7 +77,7 @@ select convert_timezone('EST', 'PST', '20080305 12:25:29');
 
 The following example converts a timestamp to US Eastern Standard Time because the target time zone uses a time zone name (America/New\_York) and the timestamp is within the standard time period.
 
-```
+```sql
 select convert_timezone('America/New_York', '2013-02-01 08:00:00');
 
  convert_timezone
@@ -88,7 +88,7 @@ select convert_timezone('America/New_York', '2013-02-01 08:00:00');
 
 The following example converts the timestamp to US Eastern Daylight Time because the target time zone uses a time zone name (America/New\_York) and the timestamp is within the daylight time period.
 
-```
+```sql
 select convert_timezone('America/New_York', '2013-06-01 08:00:00');
 
  convert_timezone
@@ -99,7 +99,7 @@ select convert_timezone('America/New_York', '2013-06-01 08:00:00');
 
 The following example demonstrates the use of offsets.
 
-```
+```sql
 SELECT CONVERT_TIMEZONE('GMT','NEWZONE +2','2014-05-17 12:00:00') as newzone_plus_2,
 CONVERT_TIMEZONE('GMT','NEWZONE-2:15','2014-05-17 12:00:00') as newzone_minus_2_15,
 CONVERT_TIMEZONE('GMT','America/Los_Angeles+2','2014-05-17 12:00:00') as la_plus_2,

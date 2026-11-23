@@ -65,7 +65,7 @@ Security Lake can't delete or update existing crawlers in your account. If you d
 
 The Open Cybersecurity Schema Framework (OCSF) event classes describes the type of data that the custom source will send to Security Lake. The list of supported event classes are:
 
-```
+```json
 public enum OcsfEventClass {
     ACCOUNT_CHANGE,
     API_ACTIVITY,

@@ -30,7 +30,7 @@ Maven is the recommended way to manage dependencies when using the AWS SDK for J
 
 **Example**
 
-```
+```xml
 <dependencyManagement>
     <dependencies>
         <dependency>
@@ -60,7 +60,7 @@ Clients and operation request and response objects are now immutable and cannot 
 
 **Example of updating a request object in 1.x**
 
-```
+```java
 DescribeAlarmsRequest request = new DescribeAlarmsRequest();
 DescribeAlarmsResult response = cw.describeAlarms(request);
 
@@ -69,7 +69,7 @@ request.setNextToken(response.getNextToken());
 
 **Example of updating a request object in 2.x**
 
-```
+```java
 DescribeAlarmsRequest request = DescribeAlarmsRequest.builder().build();
 DescribeAlarmsResponse response = cw.describeAlarms(request);
 
@@ -87,7 +87,7 @@ Getter method names do not use the `get` prefix.
 
 **Example of using setter methods in 1.x**
 
-```
+```java
 AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard()
         		.withRegion("us-east-1")
         		.build();
@@ -95,7 +95,7 @@ AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard()
 
 **Example of using setter methods in 2.x**
 
-```
+```java
 DynamoDbClient client = DynamoDbClient.builder()
         		.region(Region.US_EAST_1)
         		.build();
@@ -103,13 +103,13 @@ DynamoDbClient client = DynamoDbClient.builder()
 
 **Example of using getter methods in 1.x**
 
-```
+```java
 String token = request.getNextToken();
 ```
 
 **Example of using getter methods in 2.x**
 
-```
+```java
 String token = request.nextToken();
 ```
 
@@ -120,14 +120,14 @@ Model class names that represent service responses end with `Response` in v2 ins
 
 **Example of class names that represent a response in v1**
 
-```
+```java
 CreateApiKeyResult
 AllocateAddressResult
 ```
 
 **Example of class names that represent a response in v2**
 
-```
+```java
 CreateApiKeyResponse
 AllocateAddressResponse
 ```

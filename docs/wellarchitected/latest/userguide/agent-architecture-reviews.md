@@ -74,7 +74,7 @@ The object version ID of the Amazon S3 object.
 `lensArns` (required)
 A list of lens ARNs to review against. Only the Well-Architected Framework lens (`arn:aws:wellarchitected::aws:lens/wellarchitected`) is supported for architecture reviews at this time.
 
-```
+```bash
 aws wellarchitected start-agent-recommendation-generation \
     --profile-arn "{{arn:aws:wellarchitected:us-east-1:111122223333:agent-profile/my-profile}}" \
     --types ARCHITECTURE \
@@ -91,7 +91,7 @@ aws wellarchitected start-agent-recommendation-generation \
 
 To monitor the status of an architecture review, use `GetAgentRecommendationGeneration` or `ListAgentRecommendationGenerations`:
 
-```
+```bash
 aws wellarchitected list-agent-recommendation-generations \
     --profile-arn "{{arn:aws:wellarchitected:us-east-1:111122223333:agent-profile/my-profile}}"
 ```

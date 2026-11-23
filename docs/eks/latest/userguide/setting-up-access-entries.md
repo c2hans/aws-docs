@@ -38,7 +38,7 @@ To begin using access entries, you must change the authentication mode of the cl
 
    Amazon EKS begins to update the cluster, the status of the cluster changes to UPDATING, and the change is recorded in the ** aws eks list-updates **.
 
-   ```
+   ```bash
    aws eks update-cluster-config --name my-cluster --access-config authenticationMode=API_AND_CONFIG_MAP
    ```
 

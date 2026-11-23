@@ -138,14 +138,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-developer-mode-enable-managed-automation-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-managed-developer-mode-enable-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "Enable": "Yes",
   "Priority": "Medium"

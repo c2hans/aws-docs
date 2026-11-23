@@ -32,7 +32,7 @@ For more information about `correlationId` and `statusResponse`, see [Asynchrono
 
 One common reason the storage session might reject the SDP answer is that the storage session wasn't able to accept codecs specified in the answer. A sample `statusResponse` may look like the following:
 
-```
+```bash
 {
   "correlationId": "1700186220273",
   "errorType": "InvalidArgumentException",
@@ -43,7 +43,7 @@ One common reason the storage session might reject the SDP answer is that the st
 
 As you review the SDP answer contents, review the lines starting with `a=rtpmap` and verify that the codecs match the storage session's supported codecs. Below is a snippet of a sample SDP answer containing opus audio and VP8 video.
 
-```
+```bash
 ...
 a=rtpmap:111 opus/48000/2
 ...
@@ -61,7 +61,7 @@ See [JoinStorageSession](https://docs.aws.amazon.com/kinesisvideostreams/latest/
 
 In the SDP answer, review the directionality of the video and audio transceivers. The lines in the SDP look like this:
 
-```
+```bash
 a=sendrecv
 a=recvonly
 ```

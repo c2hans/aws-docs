@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/getting-current
 ## Example [GetSatellite](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_GetSatellite.html) return for a satellite using a default ephemeris
 <a name="w2aac28c23c13"></a>
 
-```
+```json
 {
     "satelliteId": "e1cfe0c7-67f9-4d98-bad2-EXAMPLE",
     "satelliteArn": "arn:aws:groundstation::111122223333:satellite/e1cfe0c7-67f9-4d98-bad2-EXAMPLE",
@@ -37,7 +37,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/getting-current
 ## Example [GetSatellite](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_GetSatellite.html) for a satellite using a custom ephemeris
 <a name="w2aac28c23c15"></a>
 
-```
+```json
 {
       "satelliteId": "e1cfe0c7-67f9-4d98-bad2-EXAMPLE",
       "satelliteArn": "arn:aws:groundstation::111122223333:satellite/e1cfe0c7-67f9-4d98-bad2-EXAMPLE",
@@ -67,7 +67,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/getting-current
 
  Example [ListEphemerides](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ListEphemerides.html) response including an azimuth elevation ephemeris:
 
-```
+```json
 {
     "ephemerides": [
         {

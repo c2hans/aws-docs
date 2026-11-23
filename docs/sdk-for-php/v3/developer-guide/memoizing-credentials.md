@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/memoizing
 
 At times you might need to create a credential provider that remembers the previous return value. This can be useful for performance when loading credentials is an expensive operation or when using the `Aws\Sdk` class to share a credential provider across multiple clients. You can add memoization to a credential provider by wrapping the credential provider function in a `memoize` function.
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 
 $provider = CredentialProvider::instanceProfile();

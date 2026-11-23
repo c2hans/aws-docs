@@ -12,19 +12,19 @@ Create the CoreDNS Amazon EKS add-on. You must have a cluster before you create 
 
 1. See which version of the add-on is installed on your cluster.
 
-   ```
+   ```bash
    kubectl describe deployment coredns --namespace kube-system | grep coredns: | cut -d : -f 3
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    v1.10.1-eksbuild.13
    ```
 
 1. See which type of the add-on is installed on your cluster. Depending on the tool that you created your cluster with, you might not currently have the Amazon EKS add-on type installed on your cluster. Replace {{my-cluster}} with the name of your cluster.
 
-   ```
+   ```bash
    aws eks describe-addon --cluster-name my-cluster --addon-name coredns --query addon.addonVersion --output text
    ```
 
@@ -32,7 +32,7 @@ Create the CoreDNS Amazon EKS add-on. You must have a cluster before you create 
 
 1. Save the configuration of your currently installed add-on.
 
-   ```
+   ```bash
    kubectl get deployment coredns -n kube-system -o yaml > aws-k8s-coredns-old.yaml
    ```
 
@@ -40,7 +40,7 @@ Create the CoreDNS Amazon EKS add-on. You must have a cluster before you create 
    + Replace {{my-cluster}} with the name of your cluster.
    + Replace {{v1.11.3-eksbuild.1}} with the latest version listed in the [latest version table](managing-coredns.md#coredns-versions) for your cluster version.
 
-     ```
+     ```bash
      aws eks create-addon --cluster-name my-cluster --addon-name coredns --addon-version v1.11.3-eksbuild.1
      ```
 
@@ -48,7 +48,7 @@ Create the CoreDNS Amazon EKS add-on. You must have a cluster before you create 
 
 1. Confirm that the latest version of the add-on for your cluster’s Kubernetes version was added to your cluster. Replace {{my-cluster}} with the name of your cluster.
 
-   ```
+   ```bash
    aws eks describe-addon --cluster-name my-cluster --addon-name coredns --query addon.addonVersion --output text
    ```
 
@@ -56,7 +56,7 @@ Create the CoreDNS Amazon EKS add-on. You must have a cluster before you create 
 
    An example output is as follows.
 
-   ```
+   ```json
    v1.11.3-eksbuild.1
    ```
 

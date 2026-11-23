@@ -15,7 +15,7 @@ In the IAM policy definition for the `mgn:TagResource` action, use the Condition
 
 ****
 
-```
+```json
 {
         "Version":"2012-10-17",
         "Statement": [

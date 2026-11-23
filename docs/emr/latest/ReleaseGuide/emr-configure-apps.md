@@ -13,7 +13,7 @@ The configuration classifications that are available vary by Amazon EMR release 
 
 The following is example JSON file for a list of configurations.
 
-```
+```json
 [
   {
     "Classification": "core-site",
@@ -38,7 +38,7 @@ Another exception is `s3get`, which is used to place a customer `EncryptionMater
 
 The following is an example of the `hadoop-env` classification.
 
-```
+```json
 [
   {
     "Classification": "hadoop-env",
@@ -63,7 +63,7 @@ The following is an example of the `hadoop-env` classification.
 
 The following is an example of the yarn-env classification.
 
-```
+```json
 [
   {
     "Classification": "yarn-env",

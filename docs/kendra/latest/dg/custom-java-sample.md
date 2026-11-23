@@ -10,7 +10,7 @@ The following code provides a sample implementation of a custom data source usin
 
 The following code demonstrates creating and using a custom data source. When you use a custom data source in your application you don't need to create a new data source (one-off process) each time that you synchronize your index with your data source. You use the index ID and data source ID to synchronize your data.
 
-```
+```java
 package com.amazonaws.kendra;
 
 import java.util.concurrent.TimeUnit;

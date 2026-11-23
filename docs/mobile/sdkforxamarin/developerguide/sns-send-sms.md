@@ -30,7 +30,7 @@ To create a topic:
 
 1. Copy the topic ARN, as you will need it when you subscribe to a topic in the next step.
 
-   ```
+   ```csharp
    arn:aws:sns:us-west-2:111122223333:MyTopic
    ```
 
@@ -39,19 +39,19 @@ To create a topic:
 
 Create an SNS client, passing your credentials object and the region of your identity pool:
 
-```
+```csharp
 var snsClient = new AmazonSimpleNotificationServiceClient(credentials, region);
 ```
 
 To subscribe to a topic, invoke `SubscribeAsync` and pass it the ARN of the topic that you want to subscribe to, the protocol (“sms”), and the phone number:
 
-```
+```csharp
 var response = await snsClient.SubscribeAsync(topicArn, "sms", "1234567890");
 ```
 
 You will receive a subscribe arn in the subscribe response object. Your subscribe arn looks like this:
 
-```
+```csharp
 arn:aws:sns:us-west-2:123456789012:MyTopic:6b0e71bd-7e97-4d97-80ce-4a0994e55286
 ```
 

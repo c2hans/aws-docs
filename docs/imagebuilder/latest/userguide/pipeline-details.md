@@ -27,7 +27,7 @@ aws imagebuilder list-image-pipelines
 
 The following example shows how to use the [Get-EC2IBImagePipelineList](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBImagePipelineList.html) cmdlet to list all of your image pipelines:
 
-```
+```ps
 Get-EC2IBImagePipelineList
 ```
 
@@ -50,7 +50,7 @@ aws imagebuilder get-image-pipeline --image-pipeline-arn arn:aws:imagebuilder:{{
 
 The following example shows how to use the [Get-EC2IBImagePipeline](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBImagePipeline.html) cmdlet to get the details of an image pipeline by specifying its Amazon Resource Name (ARN):
 
-```
+```ps
 Get-EC2IBImagePipeline -ImagePipelineArn arn:aws:imagebuilder:{{us-west-2}}:{{123456789012}}:image-pipeline/{{my-example-pipeline}}
 ```
 

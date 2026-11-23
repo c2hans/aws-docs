@@ -22,7 +22,7 @@ This example illustrates a channel policy that permits MediaLive to ingest Media
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Id": "AllowMediaLiveChannelToIngestToEmpChannel",
@@ -56,7 +56,7 @@ If you provide Elemental Live with an access key ID and secret access key, it ca
 
 ****
 
-   ```
+   ```json
    {
    	"Version":"2012-10-17",
    	"Id": "AllowIamUser",

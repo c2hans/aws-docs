@@ -403,7 +403,7 @@ If you use an IAM user to associate or disassociate connection aliases, the user
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -428,7 +428,7 @@ If you are creating an IAM policy for associating or disassociating connection a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

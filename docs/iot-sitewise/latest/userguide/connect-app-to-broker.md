@@ -118,7 +118,7 @@ The broker's TLS server certificate updates automatically to include your new en
 
 1. Start a shell session on your gateway host.
 
-   ```
+   ```sh
    docker exec emqx openssl x509 -in ./data/cert.pem -text -noout | grep -A1 "Subject Alternative Name"
    ```
 
@@ -135,13 +135,13 @@ The broker's TLS server certificate updates automatically to include your new en
 
 1. Start a shell session on your gateway host.
 
-   ```
+   ```sh
    (Get-PfxCertificate -FilePath "C:\greengrass\v2\work\aws.greengrass.clientdevices.mqtt.EMQX\v2\data\cert.pem").Extensions | Where-Object { $_.Oid.FriendlyName -eq "Subject Alternative Name" } | ForEach-Object { "Subject Alternative Name:", ($_.Format($true) -split "`n")[0..1] }
    ```
 
 1. The command returns an output similar to the following:
 
-   ```
+   ```sh
    Subject Alternative Name:
    DNS Name={{your-endpoint}}
    DNS Name=localhost

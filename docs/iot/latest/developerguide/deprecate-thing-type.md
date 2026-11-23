@@ -18,7 +18,7 @@ You can use the **DescribeThingType** command to see the result:
 $ aws iot describe-thing-type --thing-type-name "StopLight":
 ```
 
-```
+```JSON
 {
     "thingTypeName": "StopLight",
     "thingTypeProperties": {
@@ -49,7 +49,7 @@ You can use the **DescribeThingType** CLI command to see the result:
 $ aws iot describe-thing-type --thing-type-name "StopLight":
 ```
 
-```
+```JSON
 {
     "thingTypeName": "StopLight",
     "thingTypeArn": "arn:aws:iot:us-east-1:123456789012:thingtype/StopLight",

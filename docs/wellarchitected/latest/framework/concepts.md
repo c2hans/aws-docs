@@ -201,6 +201,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/concept
 
 ![Timeline with a disaster event in the center, the recovery point (RPO) and the data-loss window before it, and the recovery time (RTO) and the downtime window after it.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/business-continuity.png)
 
+*The relationship of RPO (Recovery Point Objective), RTO (Recovery Time Objective), and the disaster event*
+
  RTO is similar to MTTR (Mean Time to Recovery) in that both measure the time between the start of an outage and workload recovery. However MTTR is a mean value taken over several availability impacting events over a period of time, while RTO is a target, or maximum value allowed, for a *single* availability impacting event.
 
 ## Availability
@@ -214,6 +216,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/concept
  This percentage is calculated over a period of time, such as a month, year, or trailing three years. Applying the strictest possible interpretation, availability is reduced anytime that the application isn't operating normally, including both scheduled and unscheduled interruptions. We define *availability* as follows:
 
 ![Formula defining availability as available-for-use time divided by total time.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/availability-formula.png)
+
+*Availability calculated from available time and total time*
 
 +  Availability is a percentage uptime (such as 99.9%) over a period of time (commonly a month or year)
 +  Common short-hand refers only to the "number of nines"; for example, "five nines" translates to being 99.999% available
@@ -233,6 +237,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/concept
 
 ![Formula defining availability as the number of successful responses divided by the number of valid requests.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/availability-formula-requests.png)
 
+*Availability calculated from successful responses and valid requests*
+
  This is often measured for one-minute or five-minute periods. Then a monthly uptime percentage (time-base availability measurement) can be calculated from the average of these periods. If no requests are received in a given period it is counted at 100% available for that time.
 
  **Calculating availability with hard dependencies.** Many systems have hard dependencies on other systems, where an interruption in a dependent system directly translates to an interruption of the invoking system. This is opposed to a soft dependency, where a failure of the dependent system is compensated for in the application. Where such hard dependencies occur, the invoking system's availability is the product of the dependent systems' availabilities. For example, if you have a system designed for 99.99% availability that has a hard dependency on two other independent systems that each are designed for 99.99% availability, the workload can theoretically achieve 99.97% availability:
@@ -247,6 +253,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/concept
 
 ![Diagram of two dependencies with the same availability arranged in parallel, so the combined component stays available if either path works.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/rel-availability-redundant.png)
 
+*Availability of two redundant dependencies in parallel*
+
  Availeffective = *Avail*MAX − ((100%−Availdependency)×(100%−Availdependency))
 
  99.9999% = 100% − (0.1%×0.1%)
@@ -256,6 +264,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/concept
  **Calculating dependency availability.** Some dependencies provide guidance on their availability, including availability design goals for many AWS services. But in cases where this isn't available (for example, a component where the manufacturer does not publish availability information), one way to estimate is to determine the **Mean Time Between Failure (MTBF)** and **Mean Time to Recover (MTTR)**. An availability estimate can be established by:
 
 ![Formula estimating availability as mean time between failures (MTBF) divided by the sum of MTBF and mean time to repair (MTTR).](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/avail-est-formula.png)
+
+*Estimated availability from MTBF and MTTR*
 
  For example, if the MTBF is 150 days and the MTTR is 1 hour, the availability estimate is 99.97%.
 

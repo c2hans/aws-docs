@@ -49,7 +49,7 @@ For more information, see [Analyzing an image with a trained model](detecting-cu
 
    If the model finds objects, scenes, and concepts, the JSON output from the AWS CLI command should look similar to the following. `Name` is the name of the image-level label that the model found. `Confidence` (0-100) is the model's confidence in the accuracy of the prediction.
 
-   ```
+   ```json
    {
        "CustomLabels": [
            {
@@ -62,7 +62,7 @@ For more information, see [Analyzing an image with a trained model](detecting-cu
 
    If the model finds object locations or finds brand, labeled bounding boxes are returned. `BoundingBox` contains the location of a box that surrounds the object. `Name` is the object that the model found in the bounding box. `Confidence` is the model's confidence that the bounding box contains the object.
 
-   ```
+   ```json
    {
        "CustomLabels": [
            {

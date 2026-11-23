@@ -16,13 +16,13 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hadoop-read-
 
 To read restored objects when you use Spark, use the following configuration:
 
-```
+```bash,sh,zsh
 --conf spark.hadoop.fs.s3a.glacier.read.restored.objects={{<value>}}
 ```
 
 If you use spark-sql, use the following configuration instead;
 
-```
+```bash,sh,zsh
 spark-sql --conf spark.hadoop.fs.s3a.glacier.read.restored.objects={{<value>}}
 ```
 
@@ -30,13 +30,13 @@ spark-sql --conf spark.hadoop.fs.s3a.glacier.read.restored.objects={{<value>}}
 
 If you use Flink, you can set the configuration in the `flink-conf.yaml` file
 
-```
+```bash,sh,zsh
 fs.s3a.glacier.read.restored.objects: {{<value>}}
 ```
 
 You can also set the `flink-conf` classification:
 
-```
+```bash,sh,zsh
 [
 	{
 		"Classification": "flink-conf",
@@ -51,7 +51,7 @@ You can also set the `flink-conf` classification:
 
 If you use Hive, set the configuration in the `hive-site.xml` file.
 
-```
+```bash,sh,zsh
 <property>
 	<name>fs.s3a.glacier.read.restored.objects</name>
 	<value>{{<value>}}</value>
@@ -60,7 +60,7 @@ If you use Hive, set the configuration in the `hive-site.xml` file.
 
 You can also use the Hive CLI to set the property `--hiveconf`:
 
-```
+```bash,sh,zsh
 hive --hiveconf fs.s3a.glacier.read.restored.objects={{<value>}}
 ```
 

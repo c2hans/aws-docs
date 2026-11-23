@@ -13,6 +13,7 @@ Creates a connection that can then be given to other AWS services like CodePipel
 {
    "ConnectionName": "{{string}}",
    "HostArn": "{{string}}",
+   "ProviderEndpoint": "{{string}}",
    "ProviderType": "{{string}}",
    "Tags": [
       {
@@ -44,10 +45,17 @@ Length Constraints: Minimum length of 0. Maximum length of 256.
 Pattern: `arn:aws(-[\w]+)*:(codestar-connections|codeconnections):.+:[0-9]{12}:host\/.+`
 Required: No
 
+ ** [ProviderEndpoint](#API_CreateConnection_RequestSyntax) **   <a name="codeconnections-CreateConnection-request-ProviderEndpoint"></a>
+The endpoint of the ghe.com tenant where your organization resides. Provide this parameter only when `ProviderType` is `GitHubEnterpriseCloudDataResidency`. Leave this parameter empty for all other provider types.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `.*`
+Required: No
+
  ** [ProviderType](#API_CreateConnection_RequestSyntax) **   <a name="codeconnections-CreateConnection-request-ProviderType"></a>
 The name of the external provider where your third-party code repository is configured.
 Type: String
-Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps`
+Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps | GitHubEnterpriseCloudDataResidency`
 Required: No
 
  ** [Tags](#API_CreateConnection_RequestSyntax) **   <a name="codeconnections-CreateConnection-request-Tags"></a>
@@ -83,7 +91,7 @@ The Amazon Resource Name (ARN) of the connection to be created. The ARN is used 
 The ARN is never reused if the connection is deleted.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `arn:aws(-[\w]+)*:.+:.+:[0-9]{12}:.+`
+Pattern: `arn:aws(-[\w]+)*:(codestar-connections|codeconnections):[a-z0-9\-]+:[0-9]{12}:connection\/[\w\-]+`
 
  ** [Tags](#API_CreateConnection_ResponseSyntax) **   <a name="codeconnections-CreateConnection-response-Tags"></a>
 Specifies the tags applied to the resource.
@@ -95,6 +103,10 @@ Array Members: Minimum number of 0 items. Maximum number of 200 items.
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** InvalidInputException **
+The input is not valid. Verify that the action is typed correctly.
+HTTP Status Code: 400
+
  ** LimitExceededException **
 Exceeded the maximum limit for connections.
 HTTP Status Code: 429
@@ -105,6 +117,10 @@ HTTP Status Code: 404
 
  ** ResourceUnavailableException **
 Resource not found. Verify the ARN for the host resource and try again.
+HTTP Status Code: 400
+
+ ** UnsupportedProviderTypeException **
+The specified provider type is not supported for connections.
 HTTP Status Code: 400
 
 ## See Also

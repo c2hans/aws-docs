@@ -178,7 +178,7 @@ You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/
 + (Optional–For Confluence Server only) **SSL certificate location**—Specificy the `S3bucketName` and `s3certificateName` you used to store your SSL certificate.
 + **Secret Amazon Resource Name (ARN)**—Provide the Amazon Resource Name (ARN) of a Secrets Manager secret that contains the authentication credentials you configured in Confluence. If you use basic authentication, the secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "username": "{{email ID or user name}}",
       "password": "{{Confluence API token}}"
@@ -187,7 +187,7 @@ You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/
 
   If you use OAuth 2.0 authentication, the secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "confluenceAppKey": "{{app key}}",
       "confluenceAppSecret": "{{app secret}}",
@@ -198,7 +198,7 @@ You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/
 
   (For Confluence Server only) If you use basic authentication, the secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "hostUrl": "{{Confluence Server host URL}}",
       "username": "{{Confluence Server user name}}",
@@ -208,7 +208,7 @@ You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/
 
   (For Confluence Server only) If you use Personal Access Token authentication, the secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "hostUrl": "{{Confluence Server host URL}}",
       "patToken": "{{personal access token}}"

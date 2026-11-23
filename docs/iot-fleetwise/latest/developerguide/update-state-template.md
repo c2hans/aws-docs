@@ -27,7 +27,7 @@ To update a state template, run the following command.
 
 Replace {{update-state-template}} with the name of the .json file that contains the configuration of the state template.
 
-```
+```bash
 aws iotfleetwise update-state-template \
     --cli-input-json file://{{update-state-template}}.json
 ```
@@ -36,7 +36,7 @@ aws iotfleetwise update-state-template \
 The `stateTemplateProperties` should contain the fully qualified names of the signals.
 The `dataExtraDimensions` and `metadataExtraDimensions` should contain the fully qualified names of the vehicle attributes.
 
-```
+```json
 {
     "identifier": "{{state-template-name}}",
     "stateTemplatePropertiesToAdd": [

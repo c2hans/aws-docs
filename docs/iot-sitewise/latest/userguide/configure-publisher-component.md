@@ -50,7 +50,7 @@ Set the `capabilityNamespace` parameter to `iotsitewise:publisher:2`.
 **Example : Publisher configuration for Classic Stream, V2 gateways**
 The publisher namespace: `iotsitewise:publisher:2`
 
-```
+```json
 {
     "SiteWisePublisherConfiguration": {
         "publishingOrder": "TIME_ORDER",

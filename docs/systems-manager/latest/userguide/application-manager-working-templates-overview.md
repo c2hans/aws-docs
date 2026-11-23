@@ -73,7 +73,7 @@ Install and configure the AWS CLI or the AWS Tools for PowerShell if you have no
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm create-document \
     --content file://{{path}}/{{to}}/{{template_in_json_or_yaml}} \
     --name "{{a_name_for_the_template}}" \
@@ -85,7 +85,7 @@ aws ssm create-document \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm create-document ^
     --content file://C:\{{path}}\{{to}}\{{template_in_json_or_yaml}} ^
     --name "{{a_name_for_the_template}}" ^
@@ -97,7 +97,7 @@ aws ssm create-document ^
 ------
 #### [ PowerShell ]
 
-```
+```ps
 $json = Get-Content -Path "C:\{{path}}\{{to}}\{{template_in_json_or_yaml}} | Out-String
 New-SSMDocument `
     -Content $json `

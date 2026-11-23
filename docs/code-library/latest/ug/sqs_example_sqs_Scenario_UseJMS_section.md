@@ -24,7 +24,7 @@ The following examples work with standard Amazon SQS queues and include:
 For more information on using JMS with Amazon SQS, see the [Amazon SQS Developer Guide](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-java-message-service-jms-client.html).
 Sending a text message.
 
-```
+```java
     /**
      * This method establishes a connection to a standard Amazon SQS queue using the Amazon SQS
      * Java Messaging Library and sends text messages to it. It uses JMS (Java Message Service) API
@@ -90,7 +90,7 @@ Sending a text message.
 ```
 Receiving messages synchronously.
 
-```
+```java
     /**
      * This method receives messages from a standard Amazon SQS queue using the Amazon SQS Java
      * Messaging Library. It creates a connection to the queue using JMS (Java Message Service),
@@ -152,7 +152,7 @@ Receiving messages synchronously.
 ```
 Receiving messages asynchronously.
 
-```
+```java
     /**
      * This method sets up automatic message handling for a standard Amazon SQS queue using the
      * Amazon SQS Java Messaging Library. It creates a listener that processes messages as soon
@@ -207,7 +207,7 @@ Receiving messages asynchronously.
 ```
 Receiving messages using CLIENT\_ACKNOWLEDGE mode.
 
-```
+```java
     /**
      * This method demonstrates how message acknowledgment affects message processing in a standard
      * Amazon SQS queue using the Amazon SQS Java Messaging Library. It sends messages to the queue,
@@ -311,7 +311,7 @@ Receiving messages using CLIENT\_ACKNOWLEDGE mode.
 ```
 Receiving messages using the UNORDERED\_ACKNOWLEDGE mode.
 
-```
+```java
     /**
      * Demonstrates message acknowledgment behavior in UNORDERED_ACKNOWLEDGE mode with Amazon SQS JMS.
      * In this mode, each message must be explicitly acknowledged regardless of receive order.
@@ -410,7 +410,7 @@ Receiving messages using the UNORDERED\_ACKNOWLEDGE mode.
 ```
 Using Spring to inject dependencies.
 
-```
+```java
 package com.example.sqs.jms.spring;
 
 import com.amazon.sqs.javamessaging.SQSConnection;
@@ -525,7 +525,7 @@ public class SpringExample {
 ```
 Spring bean definitions.
 
-```
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <beans
         xmlns="http://www.springframework.org/schema/beans"
@@ -574,7 +574,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 ```
 A utility class that provides common methods used by the other examples.
 
-```
+```java
 package com.example.sqs.jms;
 
 import com.amazon.sqs.javamessaging.AmazonSQSMessagingClientWrapper;

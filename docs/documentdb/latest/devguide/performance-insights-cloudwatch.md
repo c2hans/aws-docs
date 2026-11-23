@@ -33,7 +33,7 @@ aws cloudwatch get-metric-statistics \
 
 This example generates output similar to the following.
 
-```
+```json
 {
     "Datapoints": [
         {

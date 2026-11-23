@@ -16,7 +16,7 @@ The following video can help you understand the capabilities of AWS AppConfig.
 **Video: Introduction to AWS AppConfig**
 View a video introduction to AWS AppConfig capabilities.
 
-[![AWS Videos](https://img.youtube.com/vi/rL_e6W6SlMM?si=kmR92RLEuyhJP_hf/0.jpg)](https://www.youtube.com/watch?v=rL_e6W6SlMM?si=kmR92RLEuyhJP_hf)
+[![AWS Videos](https://img.youtube.com/vi/rL_e6W6SlMM/0.jpg)](https://www.youtube.com/watch?v=rL_e6W6SlMM)
 
 View more AWS videos on the [Amazon Web Services YouTube Channel](https://www.youtube.com/user/AmazonWebServices).
 

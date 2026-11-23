@@ -32,7 +32,7 @@ aws cloudtrail get-event-data-store \
 
 The following is an example response. Creation and last updated times are in `timestamp` format.
 
-```
+```JSON
 {
     "EventDataStoreARN": "arn:aws:cloudtrail:us-east-1:123456789012:eventdatastore/EXAMPLE-f852-4e8f-8bd1-bcf6cEXAMPLE",
     "Name": "s3-data-events-eds",
@@ -95,7 +95,7 @@ aws cloudtrail list-event-data-stores
 
 The following is an example response.
 
-```
+```JSON
 {
     "EventDataStores": [
         {
@@ -188,7 +188,7 @@ The following example attaches a resource-based policy to an event data store th
 
 ****
 
-```
+```json
 { "Version":"2012-10-17",		 	 	  "Statement": [{ "Sid": "EDSPolicy", "Effect":
     "Allow", "Principal": { "Service": "cloudtrail.amazonaws.com" }, "Resource":
     "{{arn:aws:cloudtrail:us-east-1:123456789012:eventdatastore/event_data_store_ID}}",
@@ -245,7 +245,7 @@ There is no response if the operation is successful.
 
 The following example AWS CLI **start-event-data-store-ingestion** command starts event ingestion on an event data store. To start ingestion, the event data store `Status` must be `STOPPED_INGESTION` and the `eventCategory` must be `Management`, `Data`, or `ConfigurationItem`. The event data store is specified by `--event-data-store`, which accepts an event data store ARN, or the ID suffix of the ARN. After you run **start-event-data-store-ingestion**, the state of the event data store changes to `ENABLED`.
 
-```
+```JSON
 aws cloudtrail start-event-data-store-ingestion --event-data-store arn:aws:cloudtrail:us-east-1:123456789012:eventdatastore/EXAMPLE-f852-4e8f-8bd1-bcf6cEXAMPLE
 ```
 
@@ -256,7 +256,7 @@ There is no response if the operation is successful.
 
 To enable federation, run the **aws cloudtrail enable-federation** command, providing the required `--event-data-store` and `--role` parameters. For `--event-data-store`, provide the event data store ARN (or the ID suffix of the ARN). For `--role`, provide the ARN for your federation role. The role must exist in your account and provide the [required minimum permissions](query-federation.md#query-federation-permissions-role).
 
-```
+```JSON
 aws cloudtrail enable-federation \
 --event-data-store arn:aws:cloudtrail:{{region}}:{{account-id}}:eventdatastore/{{eds-id}}
 --role arn:aws:iam::{{account-id}}:role/{{federation-role-name}}
@@ -264,7 +264,7 @@ aws cloudtrail enable-federation \
 
 This example shows how a delegated administrator can enable federation on an organization event data store by specifying the ARN of the event data store in the management account and the ARN of the federation role in the delegated administrator account.
 
-```
+```JSON
 aws cloudtrail enable-federation \
 --event-data-store arn:aws:cloudtrail:{{region}}:{{management-account-id}}:eventdatastore/{{eds-id}}
 --role arn:aws:iam::{{delegated-administrator-account-id}}:role/{{federation-role-name}}
@@ -275,7 +275,7 @@ aws cloudtrail enable-federation \
 
 To disable federation on the event data store, run the **aws cloudtrail disable-federation** command. The event data store is specified by `--event-data-store`, which accepts an event data store ARN or the ID suffix of the ARN.
 
-```
+```JSON
 aws cloudtrail disable-federation \
 --event-data-store arn:aws:cloudtrail:{{region}}:{{account-id}}:eventdatastore/{{eds-id}}
 ```
@@ -288,7 +288,7 @@ If this is an organization event data store, use the account ID for the manageme
 
 The following example AWS CLI **restore-event-data-store** command restores an event data store that is pending deletion. The event data store is specified by `--event-data-store`, which accepts an event data store ARN or the ID suffix of the ARN. You can only restore a deleted event data store within the seven-day wait period after deletion.
 
-```
+```JSON
 aws cloudtrail restore-event-data-store \
 --event-data-store EXAMPLE-f852-4e8f-8bd1-bcf6cEXAMPLE
 ```

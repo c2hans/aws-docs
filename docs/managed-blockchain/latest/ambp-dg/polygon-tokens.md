@@ -52,7 +52,7 @@ aws managedblockchain create-accessor --accessor-type BILLING_TOKEN --network-ty
 
 The previous command returns the `AccessorId` along with the `BillingToken`, as shown in the following example.
 
-```
+```json
 {
 "AccessorId": "ac-NGQ6QNKXLNEBXD3UI6********",
 "NetworkType": "POLYGON_MAINNET",
@@ -92,7 +92,7 @@ aws managedblockchain get-accessor --accessor-id {{ac-NGQ6QNKXLNEBXD3UI6********
 
  The `BillingToken` and other key properties are returned as shown in the following example. Some values in the example have been obfuscated for security reasons but appear fully in actual responses.
 
-```
+```json
 {
   "Accessor": {
   "Id": "ac-NGQ6QNKXLNEBXD3UI6********",

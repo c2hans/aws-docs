@@ -398,7 +398,7 @@ Identity crawler is available only when you set `crawlAcl` to `true`.
   If you use SharePoint Online, you can choose between Basic, OAuth 2.0, Azure AD App-only and SharePoint App Only authentication. The following are the minimum JSON structure that must be in your secret for each authentication option:
   + **Basic authentication**
 
-    ```
+    ```json
     {
         "userName": "{{SharePoint account user name}}",
         "password": "{{SharePoint account password}}"
@@ -406,7 +406,7 @@ Identity crawler is available only when you set `crawlAcl` to `true`.
     ```
   + **OAuth 2.0 authentication**
 
-    ```
+    ```json
     {
         "clientId": "{{client id generated when registering SharePoint with Azure AD}}",
         "clientSecret": "{{client secret generated when registering SharePoint with Azure AD}}",
@@ -416,7 +416,7 @@ Identity crawler is available only when you set `crawlAcl` to `true`.
     ```
   + **Azure AD App-Only authentication**
 
-    ```
+    ```json
     {
         "clientId": "{{client id generated when registering SharePoint with Azure AD}}",
         "privateKey": "{{private key to authorize connection with Azure AD}}"
@@ -424,7 +424,7 @@ Identity crawler is available only when you set `crawlAcl` to `true`.
     ```
   + **SharePoint App-Only authentication**
 
-    ```
+    ```json
     {
         "clientId": "{{client id generated when registering SharePoint for App Only at Tenant Level}}",
         "clientSecret": "{{client secret generated when registering SharePoint for App Only at Tenant Level}}",
@@ -434,7 +434,7 @@ Identity crawler is available only when you set `crawlAcl` to `true`.
     ```
   + **OAuth 2.0 refresh token authentication **
 
-    ```
+    ```json
     {
         "clientId": "{{client id generated when registering SharePoint with Azure AD}}",
         "clientSecret": "{{client secret generated when registering SharePoint with Azure AD}}",
@@ -445,7 +445,7 @@ Identity crawler is available only when you set `crawlAcl` to `true`.
   If you use SharePoint Server, you can choose between SharePoint App-Only authentication, NTLM authentication, and Kerberos authentication. The following are the minimum JSON structure that must be in your secret for each authentication option:
   + ** SharePoint App-Only authentication **
 
-    ```
+    ```json
     {
         "siteUrlsHash": "{{Hash representation of SharePoint site URLs}}",
         "clientId": "{{client id generated when registering SharePoint for App Only at Site Level}}",
@@ -454,7 +454,7 @@ Identity crawler is available only when you set `crawlAcl` to `true`.
     ```
   + ** SharePoint App-Only authentication with domain from IDP authorization**
 
-    ```
+    ```json
     {
         "siteUrlsHash": "{{Hash representation of SharePoint site URLs}}",
         "clientId": "{{client id generated when registering SharePoint for App Only at Site Level}}",
@@ -467,7 +467,7 @@ Identity crawler is available only when you set `crawlAcl` to `true`.
     ```
   + **(Server only) NTLM or Kerberos authentication **
 
-    ```
+    ```json
     {
         "siteUrlsHash": "{{Hash representation of SharePoint site URLs}}",
         "userName": "{{SharePoint account user name}}",
@@ -476,7 +476,7 @@ Identity crawler is available only when you set `crawlAcl` to `true`.
     ```
   + **(Server only) NTLM or Kerberos authentication with domain from IDP authorization**
 
-    ```
+    ```json
     {
         "siteUrlsHash": "{{Hash representation of SharePoint site URLs}}",
         "userName": "{{SharePoint account user name}}",

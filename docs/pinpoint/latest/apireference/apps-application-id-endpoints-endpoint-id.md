@@ -146,7 +146,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="apps-application-id-endpoints-endpoint-id-request-body-put-example"></a>
 
-```
+```json
 {
   "ChannelType": enum,
   "Address": "string",
@@ -190,7 +190,7 @@ Retrieves information about the communication requirements and options that are 
 #### EndpointResponse schema
 <a name="apps-application-id-endpoints-endpoint-id-response-body-endpointresponse-example"></a>
 
-```
+```json
 {
   "ChannelType": enum,
   "Address": "string",
@@ -235,7 +235,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-endpoints-endpoint-id-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

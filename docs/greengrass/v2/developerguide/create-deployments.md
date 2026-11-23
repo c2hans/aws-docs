@@ -21,7 +21,7 @@ The [CreateDeployment](https://docs.aws.amazon.com/greengrass/v2/APIReference/AP
    + Thing: `arn:aws:iot:{{region}}:{{account-id}}:thing/{{thingName}}`
    + Thing group: `arn:aws:iot:{{region}}:{{account-id}}:thinggroup/{{thingGroupName}}`
 
-   ```
+   ```json
    {
      "targetArn": "{{targetArn}}"
    }
@@ -31,7 +31,7 @@ The [CreateDeployment](https://docs.aws.amazon.com/greengrass/v2/APIReference/AP
 
    1. <a name="revise-deployment-list-deployments-intro"></a>Run the following command to list the deployments for the deployment target. Replace {{targetArn}} with the ARN of the target AWS IoT thing or thing group.
 
-      ```
+      ```bash
       aws greengrassv2 list-deployments --target-arn {{targetArn}}
       ```
 
@@ -41,7 +41,7 @@ You can also revise a deployment other than the latest revision for the target. 
 
    1. <a name="revise-deployment-get-deployment"></a>Run the following command to get the deployment's details. These details include metadata, components, and job configuration. Replace {{deploymentId}} with the ID from the previous step.
 
-      ```
+      ```bash
       aws greengrassv2 get-deployment --deployment-id {{deploymentId}}
       ```
 
@@ -56,7 +56,7 @@ You can also revise a deployment other than the latest revision for the target. 
 
 1. <a name="create-deployment-define-name-step"></a>(Optional) Define a name for the deployment. Replace {{deploymentName}} with the name of the deployment.
 
-   ```
+   ```json
    {
      "targetArn": "{{targetArn}}",
      "deploymentName": "{{deploymentName}}"
@@ -87,7 +87,7 @@ You can also revise a deployment other than the latest revision for the target. 
 
    The following example `components` object specifies to deploy a component, `com.example.PythonRuntime`, that expects a configuration parameter named `pythonVersion`.
 
-   ```
+   ```json
    {
      "targetArn": "{{targetArn}}",
      "deploymentName": "{{deploymentName}}",
@@ -105,7 +105,7 @@ You can also revise a deployment other than the latest revision for the target. 
 
    Consider an example industrial dashboard component, `com.example.IndustrialDashboard`, that has the following default configuration.
 
-   ```
+   ```json
    {
      "name": null,
      "mode": "REQUEST",
@@ -128,7 +128,7 @@ You can also revise a deployment other than the latest revision for the target. 
 
    1. Merge a list of industrial tags that identify temperature and pressure data streams for two boilers.
 
-   ```
+   ```json
    {
      "reset": [
        "/network/useHttps",
@@ -147,7 +147,7 @@ You can also revise a deployment other than the latest revision for the target. 
 
    The following example `components` object specifies to deploy this industrial dashboard component and configuration update.
 
-   ```
+   ```json
    {
      "targetArn": "{{targetArn}}",
      "deploymentName": "{{deploymentName}}",
@@ -197,7 +197,7 @@ The AWS IoT Greengrass Core software ignores the failure handling policy for boo
 
    Your deployment in `deployment.json` may look similar to the following example:
 
-   ```
+   ```json
    {
      "targetArn": "{{targetArn}}",
      "deploymentName": "{{deploymentName}}",
@@ -232,7 +232,7 @@ The AWS IoT Greengrass Core software ignores the failure handling policy for boo
 
    Your deployment in `deployment.json` may look similar to the following example:
 
-   ```
+   ```json
    {
      "targetArn": "{{targetArn}}",
      "deploymentName": "{{deploymentName}}",
@@ -291,7 +291,7 @@ The AWS IoT Greengrass Core software ignores the failure handling policy for boo
 
 1. Run the following command to create the deployment from `deployment.json`.
 
-   ```
+   ```bash
    aws greengrassv2 create-deployment --cli-input-json file://deployment.json
    ```
 

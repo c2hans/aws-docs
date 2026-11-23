@@ -28,7 +28,7 @@ Depending on how your compute environment is configured you can use one of the f
 **Upgrade using CloudFormation**
 + If you use CloudFormation to manage your compute environments, update your template to change the `ImageType` property in the `Ec2Configuration` from `ECS_AL2` to `ECS_AL2023` (or `ECS_AL2023_NVIDIA` when using GPU instances):
 
-  ```
+  ```yaml
   ComputeEnvironment:
     Type: AWS::Batch::ComputeEnvironment
     Properties:

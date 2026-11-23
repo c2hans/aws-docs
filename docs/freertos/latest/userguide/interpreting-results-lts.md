@@ -51,24 +51,24 @@ The version of the product being tested.
 ** `features` **
 The features validated. Features marked as `required` are required to submit your board for qualification. The following snippet shows how this appears in the `awsiotdevicetester_report.xml` file.
 
-```
+```xml
 <feature name="core-freertos" value="not-supported" type="required"></feature>
 ```
 Features marked as `optional` are not required for qualification. The following snippets show optional features.
 
-```
+```xml
 <feature name="ota-dataplane-mqtt" value="not-supported" type="optional"></feature>
   <feature name="ota-dataplane-http" value="not-supported" type="optional"></feature>
 ```
 If there are no test failures or errors for the required features, your device meets the technical requirements to run FreeRTOS and can interoperate with AWS IoT services. If you want to list your device in the [AWS Partner Device Catalog](https://partners.amazonaws.com/qualified-devices), you can use this report as qualification evidence.
 In the event of test failures or errors, you can identify the test that failed by reviewing the `<testsuites>` XML tags. The `<testsuite>` XML tags inside the `<testsuites>` tag show the test result summary for a test group. For example:
 
-```
+```xml
 <testsuite name="FreeRTOSVersion" package="" tests="1" failures="1" time="2" disabled="0" errors="0" skipped="0">
 ```
 The format is similar to the `<testsuites>` tag, but has a `skipped` attribute that is not used and can be ignored. Inside each `<testsuite>` XML tag, there are `<testcase>` tags for each executed test for a test group. For example:
 
-```
+```xml
 <testcase classname="FreeRTOSVersion" name="FreeRTOSVersion"></testcase>
 ```
 
@@ -82,7 +82,7 @@ The number of times IDT for FreeRTOS executed the test case.
 
 When a test fails or an error occurs, `<failure>` or `<error>` tags are added to the `<testcase>` tag with information for troubleshooting. For example:
 
-```
+```xml
 <testcase classname="FRQ FreeRTOSVersion" name="FreeRTOSVersion">
       <failure type="Failure">{{Reason for the test case failure}}</failure>
       <error>{{Reason for the test case execution error}}</error>

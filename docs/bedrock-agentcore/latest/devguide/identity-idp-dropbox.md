@@ -47,7 +47,7 @@ For more details, refer to [Dropbox’s OAuth implementation guide](https://deve
 
 To configure Dropbox as an outbound resource provider, use the following:
 
-```
+```json
 {
   "name": "DropBox",
   "credentialProviderVendor": "DropboxOauth2",

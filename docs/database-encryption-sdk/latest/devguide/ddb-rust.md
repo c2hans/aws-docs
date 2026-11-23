@@ -33,11 +33,11 @@ To install the Rust client-side encryption library for DynamoDB, clone or downlo
 **To install the latest version**
 Run the following Cargo command in your project directory:
 
-```
+```rust
 cargo add aws-db-esdk
 ```
 Or add the following line to your Cargo.toml:
 
-```
+```rust
 aws-db-esdk = "{{<version>}}"
 ```

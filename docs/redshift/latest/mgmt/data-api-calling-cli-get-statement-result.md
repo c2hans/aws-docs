@@ -26,7 +26,7 @@ aws redshift-data get-statement-result
 
 The following is an example of the response to a call to `get-statement-result` where the SQL result is returned in JSON format in the `Records` key of the response.
 
-```
+```json
 {
     "ColumnMetadata": [
         {
@@ -270,7 +270,7 @@ aws redshift-data get-statement-result
     --id d468d942-6df9-4f85-8ae3-bac01a61aec3
 ```
 
-```
+```json
 {
     "Records": [
         [
@@ -382,7 +382,7 @@ aws redshift-data get-statement-result-v2
     --id d468d942-6df9-4f85-8ae3-bac01a61aec3
 ```
 
-```
+```json
 {
     "Records": [
         {

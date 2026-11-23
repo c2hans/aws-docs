@@ -16,7 +16,7 @@ Advantages of system role prompting include the following:
 
 To give the model a customized role, you can set the `system` parameter in the API as below:
 
-```
+```JSON
 {
     "system": [
         {

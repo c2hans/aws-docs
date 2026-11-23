@@ -63,7 +63,7 @@ After enabling encryption for SNS topics that will receive notifications for Sno
 
 1. For the Snow service principal `"importexport.amazonaws.com"`, add the following policy statement for `"kms:Decrypt"` and `"kms:GenerateDataKey*"` actions:
 
-   ```
+   ```json
      {
 
        "Effect": "Allow",

@@ -14,7 +14,7 @@ Follow the instructions in this topic to create a new application, create a new 
 Before you publish an application to the AWS Serverless Application Repository using the AWS SAM CLI, you must have the following:
 + The AWS SAM CLI installed. For more information, see [Install the AWS SAM CLI](install-sam-cli.md). To determine whether the AWS SAM CLI is installed, run the following command:
 
-  ```
+  ```sh
   sam --version
   ```
 + A valid AWS SAM template.
@@ -41,7 +41,7 @@ Before you publish an application to the AWS Serverless Application Repository u
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [

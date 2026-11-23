@@ -116,7 +116,7 @@ The following example checks whether a specific user has access to a document in
 #### Sample Request
 <a name="API_agent-runtime_CheckIngestedDocumentAcl_Example_1_Request"></a>
 
-```
+```json
 POST /knowledgebases/KB12345678/datasources/DS12345678/check-ingested-document-acl HTTP/1.1
 Content-type: application/json
 

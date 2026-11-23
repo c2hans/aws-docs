@@ -38,6 +38,10 @@ Principals, including human users, workloads, federated users, and assumed roles
 
 By carefully crafting IAM policies, you can ensure that the permissions available to an IAM role allow access only to the resources needed to fulfill a task: a concept known as *least privilege*.
 
+[![AWS Videos](https://img.youtube.com/vi/oshxAJGrwMU/0.jpg)](https://www.youtube.com/watch?v=oshxAJGrwMU)
+
+The preceding video is from a re:Inforce 2024 session by Lucas Wagner, a senior applied science manager at AWS, and Sean McLaughlin, a principal applied scientist at AWS. They provide a quick overview of AWS authorization and how AWS Identity and Access Management works, in a roughly four-minute excerpt (08:35-12:30).
+
 ## Consider criteria for choosing an AWS identity service
 <a name="consider"></a>
 

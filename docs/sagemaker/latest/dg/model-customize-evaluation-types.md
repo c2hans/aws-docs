@@ -188,7 +188,7 @@ STRONG_REJECT_SUBTASKS = [
 ------
 #### [ SageMaker Python SDK ]
 
-```
+```python
 from sagemaker.train.evaluate import get_benchmarks
 from sagemaker.train.evaluate import BenchMarkEvaluator
 
@@ -232,7 +232,7 @@ You can use 2 different metric formats to define the evaluation:
 ------
 #### [ SageMaker Python SDK ]
 
-```
+```python
 from sagemaker.train.evaluate import LLMAsJudgeEvaluator
 
 evaluator = LLMAsJudgeEvaluator(
@@ -256,7 +256,7 @@ For more information on evaluation job submission through SageMaker Python SDK, 
 
 Define your custom metric(s):
 
-```
+```json
 {
     "customMetricDefinition": {
         "name": "PositiveSentiment",
@@ -292,7 +292,7 @@ For more information, see: [https://docs.aws.amazon.com/bedrock/latest/userguide
 ------
 #### [ SageMaker Python SDK ]
 
-```
+```python
 evaluator = LLMAsJudgeEvaluator(
     model="arn:aws:sagemaker:<region>:<account-id>:model-package/<model-package-name>/<version>",
     evaluator_model="<bedrock-judge-model-id>",
@@ -351,7 +351,7 @@ In Studio, upload your dataset using the dedicated Datasets page..
 
 In the SageMaker Python SDK, upload your dataset using the dedicated Datasets page..
 
-```
+```python
 from sagemaker.ai_registry.dataset import DataSet
 
 dataset = DataSet.create(
@@ -374,7 +374,7 @@ dataset.refresh()
 ------
 #### [ SageMaker Python SDK ]
 
-```
+```python
 from sagemaker.train.evaluate import CustomScorerEvaluator
 from sagemaker.train.evaluate import get_builtin_metrics
 
@@ -412,7 +412,7 @@ Define a custom reward function. For more information, see [Custom Scorers (Brin
 ------
 #### [ SageMaker Python SDK ]
 
-```
+```python
 from sagemaker.ai_registry.evaluator import Evaluator
 from sagemaker.ai_registry.air_constants import REWARD_FUNCTION
 
@@ -423,7 +423,7 @@ evaluator = Evaluator.create(
 )
 ```
 
-```
+```python
 evaluator = CustomScorerEvaluator(
     evaluator=evaluator,
     dataset="s3://<bucket-name>/<prefix>/<dataset-file>.jsonl",

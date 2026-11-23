@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { ApiGatewayToKinesisStreams, ApiGatewayToKinesisStreamsProps } from '@aws-solutions-constructs/aws-apigateway-kinesisstreams';
@@ -33,7 +33,7 @@ import { ApiGatewayToKinesisStreams, ApiGatewayToKinesisStreamsProps } from '@aw
 new ApiGatewayToKinesisStreams(this, 'test-apigw-kinesis', {});
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_apigateway_kinesisstreams import ApiGatewayToKinesisStreams
 from aws_cdk import Stack
 from constructs import Construct
@@ -41,7 +41,7 @@ from constructs import Construct
 ApiGatewayToKinesisStreams(self, 'test-apigw-kinesis')
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

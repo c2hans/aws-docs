@@ -23,7 +23,7 @@ The first step is to create an IPAM with operating regions. An IPAM helps you pl
 
 Create an IPAM with operating regions in us-east-1 and us-west-2:
 
-```
+```json
 aws ec2 create-ipam \
   --description "My IPAM" \
   --operating-regions RegionName=us-east-1 RegionName=us-west-2

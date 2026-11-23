@@ -33,7 +33,7 @@ The `aws-core` plugin bundles the AWS MCP Server configuration and a curated set
 **Kiro**
 Add the server to `.kiro/settings/mcp.json`:
 
-```
+```json
 {
   "mcpServers": {
     "aws": {

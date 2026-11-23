@@ -212,13 +212,13 @@ There are three formats supported:
 
 1. JSON format:
 
-   ```
+   ```json
    '{"/dev/xvdb":"/dev/sdb","/dev/xvdc":"/dev/sdc","recovery_device3":"local_device3"}'
    ```
 
 1. JSON list DRS API format:
 
-   ```
+   ```json
    '[{"recoveryInstanceDeviceName": "recovery_device1","failbackClientDeviceName": "local_device1"},{"recoveryInstanceDeviceName" . . .: }]'
    ```
 

@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/AutoScalerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the instance profile association data for an instance.
     /// </summary>
@@ -98,7 +98,7 @@ For more information, see [IAM roles for Amazon EC2](https://docs.aws.amazon.com
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
       const ec2Client = new EC2Client({});
       const { IamInstanceProfileAssociations } = await ec2Client.send(
         new DescribeIamInstanceProfileAssociationsCommand({
@@ -116,7 +116,7 @@ For more information, see [IAM roles for Amazon EC2](https://docs.aws.amazon.com
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ec2#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """
     Encapsulates Amazon EC2 Auto Scaling and EC2 management actions.

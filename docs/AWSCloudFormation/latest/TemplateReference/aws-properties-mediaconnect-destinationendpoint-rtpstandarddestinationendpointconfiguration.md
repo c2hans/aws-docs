@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::DestinationEndpoint RtpStandardDestinationEndpointConfiguration
 
-<a name="aws-properties-mediaconnect-destinationendpoint-rtpstandarddestinationendpointconfiguration-description"></a>The `RtpStandardDestinationEndpointConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::DestinationEndpoint](aws-resource-mediaconnect-destinationendpoint.md).
+The configuration settings for a destination endpoint that uses the RTP protocol.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-rtpstandarddestinationendpointconfiguration-syntax"></a>
@@ -37,13 +37,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-rtpstandarddestinationendpointconfiguration-properties"></a>
 
 `DestinationAddress`  <a name="cfn-mediaconnect-destinationendpoint-rtpstandarddestinationendpointconfiguration-destinationaddress"></a>
-Property description not available.
+The IP address on which the destination endpoint receives content.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DestinationIngestPort`  <a name="cfn-mediaconnect-destinationendpoint-rtpstandarddestinationendpointconfiguration-destinationingestport"></a>
-Property description not available.
+The port on which the destination endpoint receives content. The valid range is 1024 to 65531.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `1024`
@@ -51,7 +51,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ForwardErrorCorrectionState`  <a name="cfn-mediaconnect-destinationendpoint-rtpstandarddestinationendpointconfiguration-forwarderrorcorrectionstate"></a>
-Property description not available.
+Indicates whether forward error correction (FEC) is enabled for the destination endpoint.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `ENABLED | DISABLED`

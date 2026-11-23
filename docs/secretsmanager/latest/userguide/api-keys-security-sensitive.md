@@ -13,7 +13,7 @@ This section describes how to structure your API key secrets for optimal rotatio
 
 The following example shows a common JSON structure for third-party API key secrets. The actual fields depend on the requirements of your provider — review the provider's documentation for the specific credentials and metadata you need to store.
 
-```
+```json
 {
   "apiKey": "your-api-key-value",
   "apiKeyId": "key-identifier",
@@ -111,7 +111,7 @@ Secrets Manager provides caching clients for several languages, as well as a Lam
 
 For all access patterns, configure IAM policies that restrict `secretsmanager:GetSecretValue` to the specific secrets each application needs:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [{

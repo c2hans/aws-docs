@@ -45,7 +45,7 @@ The following section shows how to clean up resources from the AWS CLI.
 
 1. Delete the custom images and then save the file.
 
-   ```
+   ```json
    "DefaultUserSettings": {
      "KernelGatewayAppSettings": {
         "CustomImages": [
@@ -66,7 +66,7 @@ The following section shows how to clean up resources from the AWS CLI.
 
    The response should look similar to the following.
 
-   ```
+   ```json
    {
        "DomainArn": "arn:aws:sagemaker:us-east-2:acct-id:domain/d-xxxxxxxxxxxx"
    }

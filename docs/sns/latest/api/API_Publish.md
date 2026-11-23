@@ -219,7 +219,7 @@ https://sns.us-west-2.amazonaws.com/?Action=Publish
 #### Sample Response
 <a name="API_Publish_Example_1_Response"></a>
 
-```
+```xml
 <PublishResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <PublishResult>
         <MessageId>567910cd-659e-55d4-8ccb-5aaf14679dc0</MessageId>
@@ -237,7 +237,7 @@ The following example publishes a different messages to each protocol:
 
 The JSON format for `Message` is as follows:
 
-```
+```json
 {
     "default": "A message.",
     "email": "A message for email.",
@@ -263,7 +263,7 @@ https://sns.us-east-2.amazonaws.com/?Action=Publish
 #### Sample Response
 <a name="API_Publish_Example_2_Response"></a>
 
-```
+```xml
 <PublishResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <PublishResult>
         <MessageId>94f20ce6-13c5-43a0-9a9e-ca52d816e90b</MessageId>
@@ -315,7 +315,7 @@ https://sns.us-east-2.amazonaws.com/?Action=Publish
 #### Sample Response
 <a name="API_Publish_Example_3_Response"></a>
 
-```
+```xml
 <PublishResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
   <PublishResult>
     <MessageId>95df01b4-ee98-5cb9-9069-4b046b850ca6</MessageId>

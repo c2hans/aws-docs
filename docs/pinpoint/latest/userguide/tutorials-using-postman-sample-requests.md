@@ -60,7 +60,7 @@ Before you create segments and campaigns in Amazon Pinpoint, you first have to c
 
 1. Delete the comma after the campaign name, and then delete the entire `tags` object on lines 3 through 5. When you finish, your request should resemble the example that's shown in the following code snippet.
 
-   ```
+   ```json
    {
        "Name": "MySampleProject"
    }
@@ -70,7 +70,7 @@ Before you create segments and campaigns in Amazon Pinpoint, you first have to c
 
 1. Choose **Send**. If the campaign is created successfully, the response pane shows a status of `201 Created`.
 
-   ```
+   ```json
    {
        "Name": "MySampleProject"
        "Id": "12345678901234567890123456789012",
@@ -107,7 +107,7 @@ To complete the procedure in this section, you must verify and email address
 
 1. On the **Body** tab, delete the example request that's shown in the request editor. Paste the following code:
 
-   ```
+   ```json
    {
        "MessageConfiguration":{
            "EmailMessage":{
@@ -139,7 +139,7 @@ If your account is still in the Amazon Pinpoint email sandbox, you can only send
 
 1. Choose **Send**. If the message is sent successfully, the response pane shows a status of `200 OK`.
 
-   ```
+   ```json
    {
        "ApplicationId": "12345678901234567890123456789012",
        "RequestId": "<sampleValue>",

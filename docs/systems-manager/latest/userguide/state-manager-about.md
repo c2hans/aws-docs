@@ -88,7 +88,7 @@ To setup custom dispatch assume roles that State Manager assumes to perform acti
 
 Sample trust policy:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -113,7 +113,7 @@ To manage the usage of custom dispatch assume roles that State Manager assumes t
 
 In the following sample policy, the `"Allow"` statement grants permissions to association create and update APIs only when the `AssociationDispatchAssumeRole` parameter is specified. Without this parameter in API requests, the policy does not grant permission to create or update associations:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

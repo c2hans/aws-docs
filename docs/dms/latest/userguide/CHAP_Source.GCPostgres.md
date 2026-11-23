@@ -29,14 +29,14 @@ Note the following about using logical decoding with AWS DMS:
 
 1. To use logical decoding features, you create a PostgreSQL user with the `REPLICATION` attribute. When you are using the `pglogical` extension, the user must have the `cloudsqlsuperuser` role. To create a user with the `cloudsqlsuperuser` role, do the following:
 
-   ```
+   ```sql
    CREATE USER new_aws_dms_user WITH REPLICATION
    IN ROLE cloudsqlsuperuser LOGIN PASSWORD 'new_aws_dms_user_password';
    ```
 
    To set this attribue on an existing user, do the following:
 
-   ```
+   ```sql
    ALTER USER existing_user WITH REPLICATION;
    ```
 

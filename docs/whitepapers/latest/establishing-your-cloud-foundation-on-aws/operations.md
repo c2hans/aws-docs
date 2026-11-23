@@ -10,6 +10,8 @@ Enable your developers and operations teams to innovate faster, while ensuring t
 
 ![A chart showing which capabilities fall under each category.](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/operations-category.png)
 
+*Operations Category *
+
  Operations capabilities include:
 +  **Observability** enables you to gather and analyze operational data about system and application activities. This includes the analysis of data to identify anomalies, indicators of compromise, performance, and configuration changes.
 +  **Image Management ** enables you to manage compute images throughout their entire lifecycle. This can involve the creation, acquisition, distribution, and storage of the images.

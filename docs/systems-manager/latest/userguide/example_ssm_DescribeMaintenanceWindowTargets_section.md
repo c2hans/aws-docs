@@ -94,7 +94,7 @@ For more information, see [View Information About Maintenance Windows (AWS CLI)]
 **Tools for PowerShell V4**
 **Example 1: This example lists all of the targets for a maintenance window.**
 
-```
+```powershell
 Get-SSMMaintenanceWindowTarget -WindowId "mw-06cf17cbefcb4bf4f"
 ```
 **Output:**
@@ -117,7 +117,7 @@ WindowTargetId   : e078a987-2866-47be-bedd-d9cf49177d3a
 **Tools for PowerShell V5**
 **Example 1: This example lists all of the targets for a maintenance window.**
 
-```
+```powershell
 Get-SSMMaintenanceWindowTarget -WindowId "mw-06cf17cbefcb4bf4f"
 ```
 **Output:**

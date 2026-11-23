@@ -65,7 +65,7 @@ To create a what-if analysis, complete the following steps:
 
 Using the [CreateWhatIfAnalysis](API_CreateWhatIfAnalysis.md)operation, provide a unique name for WhatIfAnalysisName and provide the forecast ARN of the baseline forecast for ForecastArn. The example below shows a schema for time series using a combination of “item\_id” and the “store\_location” dimension. For more information, see [Specifying time series](forecast-explainability.md#forecast-explainability-time-series).
 
-```
+```json
 {
   "ForecastArn": "arn:aws:forecast:region:acctNumber:forecast/baselineForecast",
   "WhatIfAnalysisName": "unique_name",
@@ -123,7 +123,7 @@ To create a what-if forecast, complete the following steps:
 
 Using the [CreateWhatIfForecast](API_CreateWhatIfForecast.md) operation, provide a unique name for WhatIfAnalysisName and provide your forecast ARN for ForecastArn. The example below shows a schema for a transformation to "price" when the "store\_location" is not "tacoma".
 
-```
+```json
 {
   "WhatIfAnalysisArn": "arn:aws:forecast:us-west-2:666488130463:what-if-analysis/jan2020forecast/PromotionAnalysis_01G8MB3PZM89J9V1VEXCC0BS63",
   "WhatIfForecastName": "unique_name",
@@ -155,7 +155,7 @@ You can also specify a replacement dataset with the [TimeSeriesReplacementsDataS
 
 Using the [CreateWhatIfForecast](API_CreateWhatIfForecast.md) operation, provide a unique name for WhatIfAnalysisName and provide your forecast ARN for ForecastArn. The example below shows a schema for a replacement datasource.
 
-```
+```json
 {
   "WhatIfAnalysisArn": "arn:aws:forecast:us-west-2:666488130463:what-if-analysis/jan2020forecast/PromotionAnalysis_01G8MB3PZM89J9V1VEXCC0BS63",
   "WhatIfForecastName": "unique_name",
@@ -229,7 +229,7 @@ To export the what-if forecasts, complete the following steps:
 
 Using the [CreateWhatIfForecastExport](API_CreateWhatIfForecastExport.md) operation, configure the "Destination" to point at the Amazon S3 bucket that will contain the export. Specify which what-if forecasts to export, and provide a unique name for the export.
 
-```
+```json
 {
   "WhatIfForecastArns": [ "arn:aws:forecast:region:acctNumber:what-if-forecast/id1" , "arn:aws:forecast:region:acctNumber:what-if-forecast/id2" ],
   "WhatIfForecastExportName": "unique_export_name",
@@ -253,7 +253,7 @@ When you query a what-if forecast you must specify filtering criteria. A filter 
 
 For example, use this code to get the what-if forecast for `product_42`.
 
-```
+```json
 {
           "Filters": {
           "item_id" : "product_42"

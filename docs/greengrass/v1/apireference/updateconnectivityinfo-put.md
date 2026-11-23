@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="updateconnectivityinfo-put-cli"></a>
 
-```
+```bash
 aws greengrass update-connectivity-info \
   --thing-name <value> \
   [--connectivity-info <value>]  \
@@ -25,7 +25,7 @@ aws greengrass update-connectivity-info \
 
 cli-input-json format:
 
-```
+```json
 {
 "ThingName": "string",
 "ConnectivityInfo": [
@@ -51,7 +51,7 @@ type: string
 The connectivity information.
 where used: body; required:
 
-```
+```json
 {
 "ConnectivityInfo": [
   {
@@ -94,7 +94,7 @@ type: string
 Success.
  [ UpdateConnectivityInfoResponse](definitions-updateconnectivityinforesponse.md)
 
-```
+```json
 {
 "message": "string",
 "Version": "string"
@@ -111,7 +111,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -147,7 +147,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

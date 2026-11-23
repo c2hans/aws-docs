@@ -157,14 +157,14 @@ To resolve these errors, check the following:
 
    First, find your DMS Schema Conversion log group. The log group name starts with `dms-tasks-sct` and includes the last chunk of the ARN of your migration project:
 
-   ```
+   ```bash
    aws logs describe-log-groups \
      --log-group-name-prefix dms-tasks-sct
    ```
 
    Then, search for exceptions in the log group using the `filter-log-events` command:
 
-   ```
+   ```bash
    aws logs filter-log-events \
      --log-group-name {{dms-tasks-sct-your-migration-project}} \
      --filter-pattern "Exception" \

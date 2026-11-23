@@ -62,7 +62,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs.htm
 #### POST schema
 <a name="inputs-request-body-post-example"></a>
 
-```
+```json
 {
   "destinations": [
     {
@@ -187,7 +187,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs.htm
 #### ListInputsResultModel schema
 <a name="inputs-response-body-listinputsresultmodel-example"></a>
 
-```
+```json
 {
   "inputs": [
     {
@@ -247,7 +247,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs.htm
 #### CreateInputResultModel schema
 <a name="inputs-response-body-createinputresultmodel-example"></a>
 
-```
+```json
 {
   "input": {
     "arn": "string",
@@ -304,7 +304,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs.htm
 #### InvalidRequest schema
 <a name="inputs-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -313,7 +313,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs.htm
 #### AccessDenied schema
 <a name="inputs-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -322,7 +322,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs.htm
 #### LimitExceeded schema
 <a name="inputs-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -331,7 +331,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs.htm
 #### InternalServiceError schema
 <a name="inputs-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -340,7 +340,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs.htm
 #### BadGatewayException schema
 <a name="inputs-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -349,7 +349,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs.htm
 #### GatewayTimeoutException schema
 <a name="inputs-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

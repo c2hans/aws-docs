@@ -36,7 +36,7 @@ You can use the console or the AWS CLI to list and view template data.
 
 Run the following command:
 
-```
+```sh
 $ aws proton get-environment-template-version \
     --template-name "{{simple-env}}" \
     --major-version "{{1}}" \
@@ -45,7 +45,7 @@ $ aws proton get-environment-template-version \
 
 Response:
 
-```
+```json
 {
     "environmentTemplateVersion": {
         "arn": "arn:aws:proton:region-id:123456789012:environment-template/simple-env:1.0",
@@ -65,13 +65,13 @@ Response:
 
 Run the following command:
 
-```
+```sh
 $ aws proton list-environment-templates
 ```
 
 Response:
 
-```
+```json
 {
     "templates": [
         {
@@ -100,7 +100,7 @@ View a minor version of a service template.
 
 Run the following command:
 
-```
+```sh
 $ aws proton get-service-template-version \
     --template-name "{{fargate-service}}" \
     --major-version "{{1}}" \
@@ -109,7 +109,7 @@ $ aws proton get-service-template-version \
 
 Response:
 
-```
+```json
 {
     "serviceTemplateMinorVersion": {
         "arn": "arn:aws:proton:us-east-1:123456789012:service-template/fargate-service:1.0",
@@ -136,14 +136,14 @@ View a service template without a service pipeline as shown in the next example 
 
 Run the following command:
 
-```
+```sh
 $ aws proton get-service-template \
     --name "{{simple-svc-template-cli}}"
 ```
 
 Response:
 
-```
+```json
 {
     "serviceTemplate": {
         "arn": "arn:aws:proton:region-id:123456789012:service-template/simple-svc-template-cli",

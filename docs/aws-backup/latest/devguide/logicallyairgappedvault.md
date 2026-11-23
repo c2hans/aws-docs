@@ -49,7 +49,7 @@ A logically air-gapped vault is a secondary vault that serves as part of a data 
 
 **Considerations and limitations**
 + Cross-Region copy to or from a logically air-gapped vault is not currently available for backups that contain Amazon RDS DB instances.
-+ When you restore an Amazon RDS DB instance from a shared logically air-gapped vault encrypted with a customer managed key, the key policy must allow your restore role and your account's AWS Backup service-linked role to use the key. See [Key policy for CMK encrypted logically air-gapped vault creation](#key-policy-lag-vault-creation).
++ When you restore an Amazon RDS DB instance from a shared logically air-gapped vault encrypted with a customer managed key, the key policy must allow your restore role and your account's AWS Backup service-linked role to use the key. See [Key policy for CMK encrypted logically air-gapped vault](#key-policy-lag-vault-creation).
 + Unencrypted Amazon Aurora, Amazon DocumentDB, and Amazon Neptune clusters are not supported for logically air-gapped vault, as they do not support encryption of unencrypted DB cluster snapshots.
 + Amazon EC2 offers [EC2 Allowed AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-allowed-amis.html). If this setting is enabled in your account, add the alias `aws-backup-vault` to your allowlist.
 
@@ -256,7 +256,7 @@ You can copy a backup from one logically air-gapped vault to another logically a
 
 You can transition Amazon EBS backups in a logically air-gapped vault to Amazon EBS Snapshots Archive, a lower-cost storage tier for backups that you rarely access. In a backup rule that runs monthly or less often, add a copy action with a logically air-gapped vault as the destination. In the copy lifecycle, select Archive Amazon EBS snapshots, then set the time in warm storage and the total retention period. If you use a logically air-gapped vault as the primary backup target, select Archive Amazon EBS snapshots in the backup rule lifecycle instead. The backup transitions to the archive tier after it is copied to the vault. The total retention period must be at least 90 days longer than the time in warm storage, and it must fall within the minimum and maximum retention period of the vault.
 
-If the vault is encrypted with a customer managed key, update the key policy before you enable this option. For more information, see [Key policy for CMK encrypted logically air-gapped vault creation](#key-policy-lag-vault-creation).
+If the vault is encrypted with a customer managed key, update the key policy before you enable this option. For more information, see [Key policy for CMK encrypted logically air-gapped vault](#key-policy-lag-vault-creation).
 
 **On-demand backup copy to a logically air-gapped vault**
 
@@ -527,7 +527,7 @@ AWS Backup recommends using AWS owned keys with logically air-gapped vaults.
 If your organization policy requires using a customer managed key, AWS does not recommend using keys from the same account, except for testing. For production workloads, use a customer managed key from another account in a secondary organization dedicated to recovery as a best practice. You can reference the blog [ Encrypt AWS Backup logically air-gapped vaults with customer-managed keys](https://aws.amazon.com/blogs/storage/encrypt-aws-backup-logically-air-gapped-vaults-with-customer-managed-keys/) to gather more insights into setting up CMK based logically air-gapped vaults.
  You can only select an AWS KMS encryption key during vault creation. Once created, all backups contained in the vault will be encrypted with that key. You cannot change or migrate your vaults to use a different encryption key.
 
-### Key policy for CMK encrypted logically air-gapped vault creation
+### Key policy for CMK encrypted logically air-gapped vault
 <a name="key-policy-lag-vault-creation"></a>
 
 When creating a logically air-gapped vault with a customer managed key, you must apply the AWS-managed policy `AWSBackupFullAccess` to your account role. This policy includes `Allow` actions that enable AWS Backup to interact with AWS KMS for grant creation on KMS keys during backup, copy, and storage operations. Additionally, you must ensure your customer managed key (if used) policy includes specific required permissions.
@@ -914,7 +914,7 @@ This can similarly happen for copy jobs for other resources like Amazon FSx.
 + The vault was created using a customer managed key, but the assumed role does not have CreateGrant permission on the key policy required to use the key for vault creation
 
 **Resolution:**
-+ Grant the permissions specified in the [Key policy for CMK encrypted logically air-gapped vault creation](#key-policy-lag-vault-creation) section, then retry the vault creation workflow.
++ Grant the permissions specified in the [Key policy for CMK encrypted logically air-gapped vault](#key-policy-lag-vault-creation) section, then retry the vault creation workflow.
 
 ### Restore access backup vault in "FAILED" state cannot be removed
 <a name="w2aac15c13c31c17"></a>

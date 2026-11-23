@@ -12,7 +12,7 @@ Amazon Bedrock uses these permissions to generate encrypted data keys and then u
 
 Replace the `$region`, `account-id`, and `${caller-identity-role}` with appropriate values.
 
-```
+```json
 {
     "Version": "2012-10-17",
     {
@@ -85,7 +85,7 @@ Replace the `$region`, `account-id`, and `${key-id}` with appropriate values.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -30,7 +30,7 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/us
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

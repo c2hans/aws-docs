@@ -41,7 +41,7 @@ When you deploy with `deploy.sh --deploy-bidding-simulator --simulator-connectiv
 ### Script usage
 <a name="simulator-fabric-link-usage"></a>
 
-```
+```bash
 deployment/simulator-fabric-link.sh <subcommand> [options]
 ```
 
@@ -95,7 +95,7 @@ The `create` subcommand performs the following steps:
 
 1. Outputs the link URL to stdout.
 
-```
+```bash
 # Create a Fabric Link for the simulator
 deployment/simulator-fabric-link.sh create \
     --stack-name prebid-server-deployment-on-aws \
@@ -109,7 +109,7 @@ deployment/simulator-fabric-link.sh create \
 
 The `delete` subcommand reads the link ID from SSM Parameter Store and calls the RTB Fabric DeleteLink API. If no link exists, it exits cleanly with code 0.
 
-```
+```bash
 # Delete the Fabric Link
 deployment/simulator-fabric-link.sh delete \
     --stack-name prebid-server-deployment-on-aws \
@@ -125,7 +125,7 @@ The `delete` subcommand does not update the ECS task definition. The next `deplo
 
 The `status` subcommand retrieves the link ID from SSM Parameter Store and displays the current link state, URL, and gateway IDs.
 
-```
+```bash
 # Check link status
 deployment/simulator-fabric-link.sh status \
     --stack-name prebid-server-deployment-on-aws \
@@ -146,7 +146,7 @@ To onboard a partner bidder via RTB Fabric:
 
    Use the AWS CLI to create a link from your Requester Gateway to the partner’s Responder Gateway:
 
-   ```
+   ```bash
    aws rtbfabric create-link \
        --gateway-id <your-requester-gateway-id> \
        --peer-gateway-id <partner-responder-gateway-id> \
@@ -161,7 +161,7 @@ To onboard a partner bidder via RTB Fabric:
 
    The partner runs the following command from their AWS account:
 
-   ```
+   ```bash
    aws rtbfabric accept-link \
        --link-id <link-id> \
        --gateway-id <partner-responder-gateway-id> \
@@ -172,7 +172,7 @@ To onboard a partner bidder via RTB Fabric:
 
    After the link becomes active, retrieve the link URL and update `prebid-config.yaml` in the S3 configuration bucket:
 
-   ```
+   ```bash
    # Get the requester gateway domain
    DOMAIN=$(aws rtbfabric get-requester-gateway \
        --gateway-id <your-requester-gateway-id> \
@@ -190,7 +190,7 @@ To onboard a partner bidder via RTB Fabric:
 
    Trigger a rolling deployment so ECS tasks pick up the updated configuration:
 
-   ```
+   ```bash
    aws ecs update-service \
        --cluster <ecs-cluster-name> \
        --service <ecs-service-name> \
@@ -211,7 +211,7 @@ The solution supports three paths for providing the Prebid Server container imag
 
 The `prebid-server-deployment-on-aws.zip` asset on the [prebid-server-deployment-on-aws releases page](https://github.com/aws-solutions-library-samples/prebid-server-deployment-on-aws/releases) on the GitHub website contains the solution source code only. It doesn’t include a pre-built container image. To avoid rebuilding the image on every deployment, build the image once, save it as a `tar.gz` file, and pass the file to `deploy.sh`:
 
-```
+```bash
 # Build the image once with Docker (the image tag defaults to prebid-server)
 deployment/ecr/build-image.sh --base alpine
 
@@ -237,7 +237,7 @@ When no `--container-image` option is provided, the AWS CDK builds the container
 +  `alpine` (default for `deploy.sh`) — `deployment/ecr/prebid-server/Dockerfile.alpine`, a size-optimized Alpine image with a custom Java runtime built with `jlink`.
 +  `al2023` — `deployment/ecr/prebid-server/Dockerfile.al2023`, an Amazon Linux 2023 image.
 
-```
+```bash
 # Build from source on the default Alpine base (no --container-image flag)
 ./deploy.sh \
     --deploy-bidding-simulator \
@@ -258,7 +258,7 @@ This path requires a running container runtime (Docker or Finch). The Java and M
 
 If you maintain your own container registry or have a custom Prebid Server image, pass the full ECR URI directly:
 
-```
+```bash
 ./deploy.sh \
     --container-image 123456789012.dkr.ecr.us-east-1.amazonaws.com/prebid-server:latest \
     --profile my-profile \
@@ -277,7 +277,7 @@ After deploying the solution with RTB Fabric integration, you can verify that bi
 
 Use the `status` subcommand to check the link state:
 
-```
+```bash
 deployment/simulator-fabric-link.sh status \
     --stack-name prebid-server-deployment-on-aws \
     --profile my-profile \

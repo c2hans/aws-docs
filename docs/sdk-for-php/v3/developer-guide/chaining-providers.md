@@ -8,7 +8,7 @@ You can chain credential providers by using the `Aws\Credentials\CredentialProvi
 
 The `defaultProvider` uses this composition to check multiple providers before failing. The source of the `defaultProvider` demonstrates the use of the `chain` function.
 
-```
+```php
 // This function returns a provider
 public static function defaultProvider(array $config = [])
 {

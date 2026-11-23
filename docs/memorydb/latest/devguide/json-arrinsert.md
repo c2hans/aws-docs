@@ -8,7 +8,7 @@ Insert one or more values into the array values at path before the index.
 
 Syntax
 
-```
+```json
 JSON.ARRINSERT <key> <path> <index> <json> [json ...]
 ```
 + key (required) – key of JSON document type
@@ -33,7 +33,7 @@ If the path is restricted syntax:
 
  Enhanced path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 . '[[], ["a"], ["a", "b"]]'
 OK
 127.0.0.1:6379> JSON.ARRINSERT k1 $[*] 0 '"c"'
@@ -46,7 +46,7 @@ OK
 
  Restricted path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 . '[[], ["a"], ["a", "b"]]'
 OK
 127.0.0.1:6379> JSON.ARRINSERT k1 . 0 '"c"'

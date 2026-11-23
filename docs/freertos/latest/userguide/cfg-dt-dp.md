@@ -15,7 +15,7 @@ To enable parallel builds of the source code for different test groups, IDT for 
 
 The following is an example `device.json` file used to create a device pool with multiple devices.
 
-```
+```json
 [
     {
         "id": "{{pool-id}}",
@@ -144,7 +144,7 @@ dcb2 4e8d 75b3 2586 e2cc 0c
 If your public key is in .der format, you can hex encode the public key directly to generate the hex file.
 Example command for .der public key to generate hex file:
 
-```
+```bash
 xxd -p pubkey.der > outFile
 ```
 If your public key is in .pem format, you can extract the base64 encoded part, decode it into binary format, and then hex encode it to generate the hex file.
@@ -152,13 +152,13 @@ For example, use these commands to generate a hex file for a .pem public key:
 
 1. Take out the base64 encoded part of the key (strip the header and footer ) and store it in a file, for example name it `base64key`, run this command to convert it to .der format:
 
-   ```
+   ```bash
    base64 —decode base64key > pubkey.der
    ```
 
 1. Run the `xxd` command to convert it to hex format.
 
-   ```
+   ```bash
    xxd -p pubkey.der > outFile
    ```
 

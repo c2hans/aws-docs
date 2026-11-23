@@ -35,7 +35,7 @@ Each input message must be an object containing a role and content. Users may sp
 
 The following represents a single user message:
 
-```
+```JSON
 [{
   "role": "user",
   "content": [{"text":"Hello, Nova"}]
@@ -44,7 +44,7 @@ The following represents a single user message:
 
  Here is an example with multiple conversational turns:
 
-```
+```JSON
 [
   {"role": "user", "content": [{"text": "Hello there."}]},
   {"role": "assistant", "content": [{"text": "Hi, I'm Chatbot trained to answer your questions. How can I help you?"}]},
@@ -54,7 +54,7 @@ The following represents a single user message:
 
 Here is an example with a partially-filled response from Amazon Nova:
 
-```
+```JSON
 [
   {"role": "user", "content": [{"text":"Please describe yourself using only JSON"}]},
   {"role": "assistant", "content": [{"text":"Here is my JSON description:\n{"}]}
@@ -68,7 +68,7 @@ For information about creating prompts for Amazon Nova models, see [Text underst
 
 You can include a system prompt in the request. A system prompt lets you provide context and instructions to Amazon Nova, such as specifying a particular goal or role. Specify a system prompt in the `system` field, as shown in the following example:
 
-```
+```JSON
 [
    {"text": "You are an expert SaS analyst......"}
 ]

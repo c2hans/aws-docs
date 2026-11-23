@@ -43,7 +43,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 Run an interactive scenario to create the table and perform actions on it.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -243,7 +243,7 @@ func RunMovieScenario(
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -288,7 +288,7 @@ func (movie Movie) String() string {
 ```
 Create a struct and methods that call DynamoDB actions.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -617,7 +617,7 @@ The following code example shows how to use `BatchExecuteStatement`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 Define a function receiver struct for the example.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -639,7 +639,7 @@ type PartiQLRunner struct {
 ```
 Use batches of INSERT statements to add items.
 
-```
+```go
 // AddMovieBatch runs a batch of PartiQL INSERT statements to add multiple movies to the
 // DynamoDB table.
 func (runner PartiQLRunner) AddMovieBatch(ctx context.Context, movies []Movie) error {
@@ -667,7 +667,7 @@ func (runner PartiQLRunner) AddMovieBatch(ctx context.Context, movies []Movie) e
 ```
 Use batches of SELECT statements to get items.
 
-```
+```go
 // GetMovieBatch runs a batch of PartiQL SELECT statements to get multiple movies from
 // the DynamoDB table by title and year.
 func (runner PartiQLRunner) GetMovieBatch(ctx context.Context, movies []Movie) ([]Movie, error) {
@@ -706,7 +706,7 @@ func (runner PartiQLRunner) GetMovieBatch(ctx context.Context, movies []Movie) (
 ```
 Use batches of UPDATE statements to update items.
 
-```
+```go
 // UpdateMovieBatch runs a batch of PartiQL UPDATE statements to update the rating of
 // multiple movies that already exist in the DynamoDB table.
 func (runner PartiQLRunner) UpdateMovieBatch(ctx context.Context, movies []Movie, ratings []float64) error {
@@ -734,7 +734,7 @@ func (runner PartiQLRunner) UpdateMovieBatch(ctx context.Context, movies []Movie
 ```
 Use batches of DELETE statements to delete items.
 
-```
+```go
 // DeleteMovieBatch runs a batch of PartiQL DELETE statements to remove multiple movies
 // from the DynamoDB table.
 func (runner PartiQLRunner) DeleteMovieBatch(ctx context.Context, movies []Movie) error {
@@ -762,7 +762,7 @@ func (runner PartiQLRunner) DeleteMovieBatch(ctx context.Context, movies []Movie
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -815,7 +815,7 @@ The following code example shows how to use `BatchWriteItem`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -878,7 +878,7 @@ func (basics TableBasics) AddMovieBatch(ctx context.Context, movies []Movie, max
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -931,7 +931,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1001,7 +1001,7 @@ The following code example shows how to use `DeleteItem`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1035,7 +1035,7 @@ func (basics TableBasics) DeleteMovie(ctx context.Context, movie Movie) error {
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -1088,7 +1088,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1129,7 +1129,7 @@ The following code example shows how to use `DescribeTable`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1180,7 +1180,7 @@ The following code example shows how to use `ExecuteStatement`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 Define a function receiver struct for the example.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -1202,7 +1202,7 @@ type PartiQLRunner struct {
 ```
 Use an INSERT statement to add an item.
 
-```
+```go
 // AddMovie runs a PartiQL INSERT statement to add a movie to the DynamoDB table.
 func (runner PartiQLRunner) AddMovie(ctx context.Context, movie Movie) error {
 	params, err := attributevalue.MarshalList([]interface{}{movie.Title, movie.Year, movie.Info})
@@ -1223,7 +1223,7 @@ func (runner PartiQLRunner) AddMovie(ctx context.Context, movie Movie) error {
 ```
 Use a SELECT statement to get an item.
 
-```
+```go
 // GetMovie runs a PartiQL SELECT statement to get a movie from the DynamoDB table by
 // title and year.
 func (runner PartiQLRunner) GetMovie(ctx context.Context, title string, year int) (Movie, error) {
@@ -1251,7 +1251,7 @@ func (runner PartiQLRunner) GetMovie(ctx context.Context, title string, year int
 ```
 Use a SELECT statement to get a list of items and project the results.
 
-```
+```go
 // GetAllMovies runs a PartiQL SELECT statement to get all movies from the DynamoDB table.
 // pageSize is not typically required and is used to show how to paginate the results.
 // The results are projected to return only the title and rating of each movie.
@@ -1288,7 +1288,7 @@ func (runner PartiQLRunner) GetAllMovies(ctx context.Context, pageSize int32) ([
 ```
 Use an UPDATE statement to update an item.
 
-```
+```go
 // UpdateMovie runs a PartiQL UPDATE statement to update the rating of a movie that
 // already exists in the DynamoDB table.
 func (runner PartiQLRunner) UpdateMovie(ctx context.Context, movie Movie, rating float64) error {
@@ -1310,7 +1310,7 @@ func (runner PartiQLRunner) UpdateMovie(ctx context.Context, movie Movie, rating
 ```
 Use a DELETE statement to delete an item.
 
-```
+```go
 // DeleteMovie runs a PartiQL DELETE statement to remove a movie from the DynamoDB table.
 func (runner PartiQLRunner) DeleteMovie(ctx context.Context, movie Movie) error {
 	params, err := attributevalue.MarshalList([]interface{}{movie.Title, movie.Year})
@@ -1331,7 +1331,7 @@ func (runner PartiQLRunner) DeleteMovie(ctx context.Context, movie Movie) error 
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -1384,7 +1384,7 @@ The following code example shows how to use `GetItem`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1425,7 +1425,7 @@ func (basics TableBasics) GetMovie(ctx context.Context, title string, year int) 
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -1478,7 +1478,7 @@ The following code example shows how to use `ListTables`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1527,7 +1527,7 @@ The following code example shows how to use `PutItem`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1565,7 +1565,7 @@ func (basics TableBasics) AddMovie(ctx context.Context, movie Movie) error {
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -1618,7 +1618,7 @@ The following code example shows how to use `Query`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1679,7 +1679,7 @@ func (basics TableBasics) Query(ctx context.Context, releaseYear int) ([]Movie, 
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -1732,7 +1732,7 @@ The following code example shows how to use `Scan`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1798,7 +1798,7 @@ func (basics TableBasics) Scan(ctx context.Context, startYear int, endYear int) 
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -1851,7 +1851,7 @@ The following code example shows how to use `UpdateItem`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1907,7 +1907,7 @@ func (basics TableBasics) UpdateMovie(ctx context.Context, movie Movie) (map[str
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -1968,7 +1968,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 Run a scenario that creates a table and runs batches of PartiQL queries.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -2101,7 +2101,7 @@ func RunPartiQLBatchScenario(ctx context.Context, sdkConfig aws.Config, tableNam
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -2146,7 +2146,7 @@ func (movie Movie) String() string {
 ```
 Create a struct and methods that run PartiQL statements.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -2326,7 +2326,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 Run a scenario that creates a table and runs PartiQL queries.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -2442,7 +2442,7 @@ func RunPartiQLSingleScenario(ctx context.Context, sdkConfig aws.Config, tableNa
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -2487,7 +2487,7 @@ func (movie Movie) String() string {
 ```
 Create a struct and methods that run PartiQL statements.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -2601,7 +2601,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using Go.
 
-```
+```go
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 package main
@@ -2646,7 +2646,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using Go.
 
-```
+```go
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 package main

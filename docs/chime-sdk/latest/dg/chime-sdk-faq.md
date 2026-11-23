@@ -186,7 +186,7 @@ Yes. If you subscribe to `transcribeEvent`, every client receives that event, an
 
 The following example shows one way to subscribe to `transcribeEvent`.
 
-```
+```javascript
 useEffect(() => {
         if (audioVideo) {
             audioVideo.transcriptionController?.subscribeToTranscriptEvent((transcriptEvent) => {

@@ -73,7 +73,7 @@ Updates the status and configuration settings for retrieving occurrences of sens
 #### PUT schema
 <a name="reveal-configuration-request-body-put-example"></a>
 
-```
+```json
 {
   "configuration": {
     "kmsKeyId": "string",
@@ -92,7 +92,7 @@ Updates the status and configuration settings for retrieving occurrences of sens
 #### GetRevealConfigurationResponse schema
 <a name="reveal-configuration-response-body-getrevealconfigurationresponse-example"></a>
 
-```
+```json
 {
   "configuration": {
     "kmsKeyId": "string",
@@ -109,7 +109,7 @@ Updates the status and configuration settings for retrieving occurrences of sens
 #### UpdateRevealConfigurationResponse schema
 <a name="reveal-configuration-response-body-updaterevealconfigurationresponse-example"></a>
 
-```
+```json
 {
   "configuration": {
     "kmsKeyId": "string",
@@ -126,7 +126,7 @@ Updates the status and configuration settings for retrieving occurrences of sens
 #### ValidationException schema
 <a name="reveal-configuration-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -135,7 +135,7 @@ Updates the status and configuration settings for retrieving occurrences of sens
 #### AccessDeniedException schema
 <a name="reveal-configuration-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -144,7 +144,7 @@ Updates the status and configuration settings for retrieving occurrences of sens
 #### ThrottlingException schema
 <a name="reveal-configuration-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -153,7 +153,7 @@ Updates the status and configuration settings for retrieving occurrences of sens
 #### InternalServerException schema
 <a name="reveal-configuration-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

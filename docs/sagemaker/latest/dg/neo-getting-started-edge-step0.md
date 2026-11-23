@@ -13,14 +13,14 @@ SageMaker Neo is a capability that allows you to train machine learning models o
 ------
 #### [ Terminal ]
 
-   ```
+   ```bash
    pip install boto3
    ```
 
 ------
 #### [ Jupyter Notebook ]
 
-   ```
+   ```python
    !pip install boto3
    ```
 
@@ -32,7 +32,7 @@ SageMaker Neo is a capability that allows you to train machine learning models o
 
    In your terminal, run:
 
-   ```
+   ```bash
    $ more ~/.aws/credentials
 
    [default]
@@ -46,7 +46,7 @@ SageMaker Neo is a capability that allows you to train machine learning models o
 
    Neo needs access to your S3 bucket URI. Create an IAM role that can run SageMaker AI and has permission to access the S3 URI. You can create an IAM role either by using SDK for Python (Boto3), the console, or the AWS CLI. The following example illustrates how to create an IAM role using SDK for Python (Boto3):
 
-   ```
+   ```python
    import boto3
 
    AWS_REGION = {{'aws-region'}}
@@ -60,7 +60,7 @@ SageMaker Neo is a capability that allows you to train machine learning models o
 
     Create a dictionary describing the IAM policy you are attaching. This policy is used to create a new IAM role.
 
-   ```
+   ```python
    policy = {
        'Statement': [
            {
@@ -74,7 +74,7 @@ SageMaker Neo is a capability that allows you to train machine learning models o
 
    Create a new IAM role using the policy you defined above:
 
-   ```
+   ```python
    import json
 
    new_role = iam_client.create_role(
@@ -86,13 +86,13 @@ SageMaker Neo is a capability that allows you to train machine learning models o
 
    You need to know what your Amazon Resource Name (ARN) is when you create a compilation job in a later step, so store it in a variable as well.
 
-   ```
+   ```python
    role_arn = new_role['Role']['Arn']
    ```
 
     Now that you have created a new role, attach the permissions it needs to interact with Amazon SageMaker AI and Amazon S3:
 
-   ```
+   ```python
    iam_client.attach_role_policy(
        RoleName=role_name,
        PolicyArn='arn:aws:iam::aws:policy/AmazonSageMakerFullAccess'
@@ -111,7 +111,7 @@ SageMaker Neo is a capability that allows you to train machine learning models o
 ------
 #### [ Boto3 ]
 
-   ```
+   ```python
    # Create an S3 client
    s3_client = boto3.client('s3', region_name=AWS_REGION)
 
@@ -150,7 +150,7 @@ SageMaker Neo is a capability that allows you to train machine learning models o
 
    If you do not have a model yet, use the `curl` command to get a local copy of the `coco_ssd_mobilenet` model from TensorFlow’s website. The model you just copied is an object detection model trained from the [COCO dataset](https://cocodataset.org/#home). Type the following into your Jupyter notebook:
 
-   ```
+   ```python
    model_zip_filename = './coco_ssd_mobilenet_v1_1.0.zip'
    !curl http://storage.googleapis.com/download.tensorflow.org/models/tflite/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip \
        --output {model_zip_filename}
@@ -158,7 +158,7 @@ SageMaker Neo is a capability that allows you to train machine learning models o
 
    Note that this particular example was packaged in a .zip file. Unzip this file and repackage it as a compressed tarfile (`.tar.gz`) before using it in later steps. Type the following into your Jupyter notebook:
 
-   ```
+   ```python
    # Extract model from zip file
    !unzip -u {model_zip_filename}
 
@@ -177,7 +177,7 @@ SageMaker Neo is a capability that allows you to train machine learning models o
 ------
 #### [ Boto3 ]
 
-   ```
+   ```python
    # Upload model
    s3_client.upload_file(Filename=model_filename, Bucket=bucket, Key=model_filename)
    ```
@@ -187,7 +187,7 @@ SageMaker Neo is a capability that allows you to train machine learning models o
 
    Replace `your-model-filename` and `amzn-s3-demo-bucket` with the name of your S3 bucket.
 
-   ```
+   ```bash
    aws s3 cp {{your-model-filename}} s3://{{amzn-s3-demo-bucket}}
    ```
 

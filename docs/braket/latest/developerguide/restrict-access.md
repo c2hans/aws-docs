@@ -18,7 +18,7 @@ The following example restricts access to all QPUs for the AWS account `12345678
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

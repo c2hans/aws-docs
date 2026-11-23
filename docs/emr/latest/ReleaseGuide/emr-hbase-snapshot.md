@@ -23,7 +23,7 @@ Args=[ "hbase", "snapshot", "create","-n","{{snapshotName}}","-t","{{tableName}}
 
 AWS SDK for Java
 
-```
+```java
 HadoopJarStepConfig hbaseSnapshotConf = new HadoopJarStepConfig()
   .withJar("command-runner.jar")
   .withArgs("hbase","snapshot","create","-n","snapshotName","-t","tableName");
@@ -68,7 +68,7 @@ Args=[ "hbase", "snapshot", "export","-snapshot","{{snapshotName}}","-copy-to","
 
 AWS SDK for Java:
 
-```
+```java
 HadoopJarStepConfig hbaseImportSnapshotConf = new HadoopJarStepConfig()
   .withJar("command-runner.jar")
   .withArgs("hbase","snapshot","export",
@@ -102,7 +102,7 @@ Args=["sudo","-u","hbase","hbase snapshot export","-snapshot","{{snapshotName}}"
 
 AWS SDK for Java:
 
-```
+```java
 HadoopJarStepConfig hbaseImportSnapshotConf = new HadoopJarStepConfig()
   .withJar("command-runner.jar")
   .withArgs("sudo","-u","hbase","hbase","snapshot","export", "-D","hbase.rootdir=s3://path/to/snapshot",
@@ -153,7 +153,7 @@ aws emr add-steps --cluster-id j-2AXXXXXXGAPLF \
 
 AWS SDK for Java:
 
-```
+```java
 HadoopJarStepConfig hbaseRestoreSnapshotConf = new HadoopJarStepConfig()
   .withJar("command-runner.jar")
   .withArgs("bash","-c","echo $'disable \"tableName\"; restore_snapshot \"snapshotName\"; enable \"snapshotName\"' | hbase shell");

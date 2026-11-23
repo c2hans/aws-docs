@@ -17,7 +17,7 @@ The manifest file needs to adhere to the format and content shown in the followi
 
 With CloudFormation, you list a single file.
 
-```
+```yaml
 infrastructure:
   templates:
     - file: "cloudformation.yaml"
@@ -32,7 +32,7 @@ With terraform, you can explicitly list a single file or use the wildcard `*` to
 **Note**
 The wildcard only includes files whose names end with `.tf`. Other files are ignored.
 
-```
+```yaml
 infrastructure:
   templates:
     - file: "*"
@@ -51,7 +51,7 @@ The following example manifest uses CodeBuild-based provisioning to provision (*
 
 During provisioning, AWS Proton creates an input file with values for input parameters that you defined in the template's schema with the name `proton-input.json`.
 
-```
+```yaml
 infrastructure:
   templates:
     - rendering_engine: codebuild
@@ -92,7 +92,7 @@ For more information, see [Register and publish templates](template-create.md).
 
 CloudFormation environment template bundle directory structure:
 
-```
+```text
  /schema
    schema.yaml
  /infrastructure
@@ -102,7 +102,7 @@ CloudFormation environment template bundle directory structure:
 
 Terraform environment template bundle directory structure:
 
-```
+```text
  /schema
    schema.yaml
  /infrastructure
@@ -124,7 +124,7 @@ For more information, see [Register and publish templates](template-create.md).
 
 CloudFormation service template bundle directory structure:
 
-```
+```text
  /schema
    schema.yaml
  /instance_infrastructure
@@ -137,7 +137,7 @@ CloudFormation service template bundle directory structure:
 
 Terraform service template bundle directory structure:
 
-```
+```text
  /schema
    schema.yaml
  /instance_infrastructure

@@ -173,7 +173,7 @@ This example retrieves the member ID for the user and group ID for the group for
 #### Sample Request
 <a name="API_DescribeGroupMembership_Example_1_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "MembershipId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
@@ -183,7 +183,7 @@ This example retrieves the member ID for the user and group ID for the group for
 #### Sample Response
 <a name="API_DescribeGroupMembership_Example_1_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "MembershipId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",

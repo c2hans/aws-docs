@@ -9,7 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 *Alias records only:* Information about the AWS resource, such as a CloudFront distribution or an Amazon S3 bucket, that you want to route traffic to.
 
 When creating records for a private hosted zone, note the following:
-+ Creating geolocation alias and latency alias records in a private hosted zone is allowed but not supported.
++ You can create alias records in a private hosted zone with any routing policy that private hosted zones support. For the list of supported routing policies, see [Supported routing policies for records in a private hosted zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-private-considerations.html#hosted-zone-private-considerations-routing-policies).
 + For information about creating failover records in a private hosted zone, see [Configuring Failover in a Private Hosted Zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-private-hosted-zones.html).
 
 ## Syntax

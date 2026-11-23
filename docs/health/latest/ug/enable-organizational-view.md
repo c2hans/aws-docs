@@ -55,7 +55,7 @@ The following code examples call the [EnableHealthServiceAccessForOrganization](
 
 **Python**
 
-```
+```python
 import boto3
 
 client = boto3.client('health', region_name='us-east-1')
@@ -69,7 +69,7 @@ print(response)
 
 You can use the AWS SDK for version Java 2.0 for the following example.
 
-```
+```java
 import software.amazon.awssdk.services.health.HealthClient;
 import software.amazon.awssdk.services.health.HealthClientBuilder;
 

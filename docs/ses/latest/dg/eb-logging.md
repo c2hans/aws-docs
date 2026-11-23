@@ -47,7 +47,7 @@ In addition, Mail Manager requires the following user permissions to configure l
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

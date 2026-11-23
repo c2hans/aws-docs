@@ -21,7 +21,7 @@ To build an event-driven pipeline with Amazon S3, you edit the `PollForSourceCha
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -53,7 +53,7 @@ To build an event-driven pipeline with Amazon S3, you edit the `PollForSourceCha
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -110,7 +110,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 
    **Why am I making this change?** Setting this parameter to `false` turns off periodic checks so you can use event-based change detection only.
 
-   ```
+   ```json
    "configuration": {
        "S3Bucket": "amzn-s3-demo-source-bucket",
        {{"PollForSourceChanges": "false",}}

@@ -27,7 +27,7 @@ The following code example shows how to use `ListInputs`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/medialive#code-examples).
 List your MediaLive input names and ARNs in the Region.
 
-```
+```rust
 async fn show_inputs(client: &Client) -> Result<(), Error> {
     let input_list = client.list_inputs().send().await?;
 

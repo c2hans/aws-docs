@@ -67,7 +67,7 @@ The following patterns illustrate how to convert common enterprise data formats 
 **Pattern 1: Structured records to classification or lookup**
 When your source data is a table or database of records with fields such as `issue`, `cause`, and `resolution`, frame each record as a user question with the relevant input fields and the assistant response as the target output fields.
 
-```
+```JSON
 // train.jsonl
 {
   "schemaVersion": "bedrock-conversation-2024",
@@ -100,7 +100,7 @@ When your source data is a table or database of records with fields such as `iss
 **Pattern 2: Hierarchical or taxonomy data to structured Q&A**
 When your source data is a code hierarchy or taxonomy such as product category trees or classification systems, generate questions that ask the model to navigate the hierarchy. Include the classification context in the system prompt or user turn.
 
-```
+```JSON
 // train.jsonl
 {
   "schemaVersion": "bedrock-conversation-2024",
@@ -133,7 +133,7 @@ When your source data is a code hierarchy or taxonomy such as product category t
 **Pattern 3: Procedural documents to instructional dialog**
 When your source data consists of standard operating procedures, runbooks, or step-by-step guides, convert procedures into task-oriented questions. The user asks how to perform a task and the assistant provides the steps in a consistent format.
 
-```
+```JSON
 // train.jsonl
 {
   "schemaVersion": "bedrock-conversation-2024",
@@ -181,7 +181,7 @@ The following example dataset formats provide a guide for you to follow.
 
 The following example is for custom fine tuning over text only.
 
-```
+```JSON
 // train.jsonl
 {
   "schemaVersion": "bedrock-conversation-2024",
@@ -216,7 +216,7 @@ The following example is for custom fine tuning over text only.
 
 The following example is for custom fine tuning over text and a single image.
 
-```
+```JSON
 // train.jsonl{
     "schemaVersion": "bedrock-conversation-2024",
     "system": [{
@@ -255,7 +255,7 @@ The following example is for custom fine tuning over text and a single image.
 
 The following example is for custom fine tuning over text and video.
 
-```
+```JSON
 {
     "schemaVersion": "bedrock-conversation-2024",
     "system": [{

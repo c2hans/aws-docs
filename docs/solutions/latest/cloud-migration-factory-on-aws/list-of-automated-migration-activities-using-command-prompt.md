@@ -29,7 +29,7 @@ Use the following procedure while signed in to the migration automation server t
 
 1. Navigate to the `c:\migrations\scripts\script_mgn_0-Prerequisites-checks` folder and run the following Python command:
 
-```
+```bash
 python 0-Prerequisites-checks.py --Waveid <wave-id> --ReplicationServerIP <rep-server-ip>
 ```
 
@@ -72,7 +72,7 @@ Use the following procedure to automatically install the Replication agents in t
 
 1. Navigate to the `c:\migrations\scripts\script_mgn_1-AgentInstall` folder and run the following Python command:
 
-```
+```bash
 python 1-AgentInstall.py --Waveid <wave-id>
 ```
 
@@ -117,7 +117,7 @@ Use the following procedure from the migration automation server to push the pos
 
 1. Navigate to the `c:\migrations\scripts\script_mgn_1-FileCopy` folder and run the following Python command:
 
-```
+```bash
 python 1-FileCopy.py --Waveid <wave-id> --WindowsSource <file-path> --LinuxSource <file-path>
 ```
 
@@ -143,7 +143,7 @@ Use the following procedure from the migration automation server to verify the r
 
 1. Navigate to the `\migrations\scripts\script_mgn_2-Verify-replication` folder and run the following Python command:
 
-```
+```bash
 python 2-Verify-replication.py --Waveid <wave-id>
 ```
 
@@ -174,7 +174,7 @@ Use the following procedure from the migration automation server to verify the s
 
 1. Navigate to the `c:\migrations\scripts\script_mgn_3-Verify-instance-status` folder and run the following Python command:
 
-```
+```bash
 python 3-Verify-instance-status.py --Waveid <wave-id>
 ```
 
@@ -202,7 +202,7 @@ Use the following procedure from the migration automation server to shut down al
 
 1. Navigate to the `c:\migrations\scripts\script_mgn_3-Shutdown-all-servers` folder and run the following Python command:
 
-   ```
+   ```bash
    Python 3-Shutdown-all-servers.py -Waveid <wave-id>
    ```
 
@@ -223,7 +223,7 @@ Use the following procedure from the migration automation server to retrieve the
 
 1. Navigate to the `c:\migrations\scripts\script_mgn_4-Get-instance-IP` folder and run the following Python command:
 
-```
+```bash
 Python 4-Get-instance-IP.py --Waveid <wave-id>
 ```
 
@@ -248,7 +248,7 @@ Use the following procedure from the migration automation server to verify the c
 
 1. Navigate to the `c:\migrations\scripts\script_mgn_4-Verify-server-connection` folder and run the following Python command:
 
-```
+```bash
 Python 4-Verify-server-connection.py --Waveid <wave-id>
 ```
 

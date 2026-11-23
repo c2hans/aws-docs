@@ -13,7 +13,7 @@ You can use the following tests to determine if the policies attached to your de
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 1 minute. We recommend setting a timeout of at least 30 seconds.
 
-```
+```JSON
 "tests":[
    {
         "name":{{"my_security_device_policies"}},

@@ -115,7 +115,7 @@ Enable cross-origin resource sharing (CORS) by returning correct headers.
 #### PUT schema
 <a name="packaging_groups-id-request-body-put-example"></a>
 
-```
+```json
 {
   "authorization": {
     "cdnIdentifierSecret": "string",
@@ -130,7 +130,7 @@ Enable cross-origin resource sharing (CORS) by returning correct headers.
 #### PackagingGroup schema
 <a name="packaging_groups-id-response-body-packaginggroup-example"></a>
 
-```
+```json
 {
   "authorization": {
     "cdnIdentifierSecret": "string",

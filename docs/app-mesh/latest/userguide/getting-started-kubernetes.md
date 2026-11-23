@@ -206,6 +206,12 @@ When you deploy an application in Kubernetes, you also create the Kubernetes cus
 **Important**
 Once the controller has created an App Mesh resource, we recommend that you only make changes to or delete the App Mesh resource using the controller. If you make changes to or delete the resource using App Mesh, the controller won't change or recreate the changed or deleted App Mesh resource for ten hours, by default. You can configure this duration to be less. For more information, see [Configuration](https://github.com/aws/eks-charts/blob/master/stable/appmesh-controller/README.md#configuration) on GitHub.
 
+**Sharing a cluster, mesh, or AWS Cloud Map namespace**
+If workloads that don't trust each other share a cluster, mesh, or AWS Cloud Map namespace, we recommend that you add the following safety checks:
+Use an admission controller, such as Kyverno or OPA Gatekeeper, with a fail-closed policy. The policy validates create and update requests for `VirtualNode`, `VirtualService`, `VirtualRouter`, `VirtualGateway`, and `GatewayRoute` resources. Configure the policy to restrict which `namespaceName` and `serviceName` values in `awsCloudMap` each Kubernetes namespace can use in a `VirtualNode`. Require `awsName` to be unset or to include the resource's Kubernetes namespace, except for an approved list of names, such as custom host names. If you upgraded from an older controller, add your existing `awsName` values to this list. Apply this `awsName` rule in every cluster that manages the mesh.
+Put these workloads in separate meshes or AWS accounts, and don't share a AWS Cloud Map namespace between them.
+Run these workloads in separate clusters. Scope each cluster's controller IAM role to that cluster's App Mesh resource names. Also scope the role's `servicediscovery:RegisterInstance` and related permissions to that cluster's AWS Cloud Map namespaces.
+
 **To deploy App Mesh resources**
 
 1. Create a Kubernetes namespace to deploy App Mesh resources to.

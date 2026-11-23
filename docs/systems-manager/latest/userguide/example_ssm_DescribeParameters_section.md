@@ -109,7 +109,7 @@ For more information, see [Searching for Parameter Store parameters in Systems M
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ssm.SsmClient;
 import software.amazon.awssdk.services.ssm.model.GetParameterRequest;
@@ -174,7 +174,7 @@ public class GetParameter {
 **Tools for PowerShell V4**
 **Example 1: This example lists all parameters.**
 
-```
+```powershell
 Get-SSMParameterList
 ```
 **Output:**
@@ -192,7 +192,7 @@ Type             : String
 **Tools for PowerShell V5**
 **Example 1: This example lists all parameters.**
 
-```
+```powershell
 Get-SSMParameterList
 ```
 **Output:**
@@ -213,7 +213,7 @@ Type             : String
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ssm#code-examples).
 
-```
+```rust
 async fn show_parameters(client: &Client) -> Result<(), Error> {
     let resp = client.describe_parameters().send().await?;
 

@@ -25,7 +25,7 @@ To do that, it allows the `AcceptConnection` and `TagResource` actions if the re
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -63,7 +63,7 @@ To do that, it allows specific actions if the connection has a tag named `Projec
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

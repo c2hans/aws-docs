@@ -58,7 +58,7 @@ Use the following AWS CLI commands or API operations to enable trusted service a
 
   Run the following command to enable AWS Audit Manager as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations enable-aws-service-access \
       --service-principal auditmanager.amazonaws.com
   ```
@@ -88,7 +88,7 @@ Use the following AWS CLI commands or API operations to disable trusted service 
 
   Run the following command to disable AWS Audit Manager as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations disable-aws-service-access \
       --service-principal auditmanager.amazonaws.com
   ```
@@ -117,7 +117,7 @@ If you configure a delegated administrator using the AWS Audit Manager console, 
 If you want to configure a delegated administrator account using the AWS CLI or one of the AWS SDKs, you can use the following commands:
 + AWS CLI:
 
-  ```
+  ```bash
   $  aws audit-manager register-account \
       --delegated-admin-account 123456789012
   ```

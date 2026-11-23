@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::RouterInput DestinationEndpointRouterInputConfiguration
 
-<a name="aws-properties-mediaconnect-routerinput-destinationendpointrouterinputconfiguration-description"></a>The `DestinationEndpointRouterInputConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::RouterInput](aws-resource-mediaconnect-routerinput.md).
+Configuration settings for a router input that is represented by a destination endpoint.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-routerinput-destinationendpointrouterinputconfiguration-syntax"></a>
@@ -38,20 +38,24 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-routerinput-destinationendpointrouterinputconfiguration-properties"></a>
 
 `EndpointLifecycleManagement`  <a name="cfn-mediaconnect-routerinput-destinationendpointrouterinputconfiguration-endpointlifecyclemanagement"></a>
-Property description not available.
+The entity that manages the lifecycle of the associated destination endpoint. Valid values include the following:
++ `MANAGED` – MediaConnect manages the lifecycle of the associated destination endpoint.
++ `UNMANAGED` – You manage the lifecycle of the associated destination endpoint.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `MANAGED | UNMANAGED`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourceTransitDecryption`  <a name="cfn-mediaconnect-routerinput-destinationendpointrouterinputconfiguration-sourcetransitdecryption"></a>
-Property description not available.
+The encryption settings for an endpoint connection. This is a union type, so exactly one of its members is set: `secretsManager` when you store the encryption key or passphrase in AWS Secrets Manager, or `automatic` when you let MediaConnect determine the encryption key when the endpoint connects.
 *Required*: Yes
 *Type*: [EndpointEncryptionConfiguration](aws-properties-mediaconnect-routerinput-endpointencryptionconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourceTransitDecryptionType`  <a name="cfn-mediaconnect-routerinput-destinationendpointrouterinputconfiguration-sourcetransitdecryptiontype"></a>
-Property description not available.
+The type of transit decryption applied to the source content that this router input receives. Valid values include the following:
++ `SECRETS_MANAGER` – The decryption key or passphrase is stored in AWS Secrets Manager.
++ `AUTOMATIC` – MediaConnect determines the decryption key when the endpoint connects.
 *Required*: No
 *Type*: String
 *Allowed values*: `SECRETS_MANAGER | AUTOMATIC`

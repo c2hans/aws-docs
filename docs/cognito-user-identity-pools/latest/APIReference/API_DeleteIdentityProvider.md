@@ -105,7 +105,7 @@ The following example request deletes the IdP `MyIdP` in user pool `us-west-2_EX
 #### Sample Request
 <a name="API_DeleteIdentityProvider_Example_1_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z

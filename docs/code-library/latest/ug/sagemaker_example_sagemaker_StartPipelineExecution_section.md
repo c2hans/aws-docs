@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SageMaker#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Run a pipeline with input and output file locations.
     /// </summary>
@@ -90,7 +90,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```java
     // Start a pipeline run with job configurations.
     public static String executePipeline(SageMakerClient sageMakerClient, String bucketName, String queueUrl,
             String roleArn, String pipelineName) {
@@ -189,7 +189,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sagemaker#code-examples).
 Start a SageMaker AI pipeline execution.
 
-```
+```javascript
 /**
  * Start the execution of the Amazon SageMaker pipeline. Parameters that are
  * passed in are used in the AWS Lambda function.
@@ -281,7 +281,7 @@ export async function startPipelineExecution({
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```kotlin
 // Start a pipeline run with job configurations.
 suspend fun executePipeline(bucketName: String, queueUrl: String?, roleArn: String?, pipelineNameVal: String): String? {
     println("Starting pipeline execution.")

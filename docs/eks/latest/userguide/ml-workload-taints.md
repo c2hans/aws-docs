@@ -20,7 +20,7 @@ A taint is the complement of a node label. A label lets a workload opt *in* to a
 
 Any key works, but a consistent one is worth more than a descriptive one, because every workload and every add-on DaemonSet that needs an accelerated node has to spell the same key. The convention used throughout the Amazon EKS AI/ML guidance is to taint on the resource the node provides, with no value:
 
-```
+```yaml
 taints:
   - key: nvidia.com/gpu
     effect: NoSchedule
@@ -28,7 +28,7 @@ taints:
 
 Workloads then tolerate it with `operator: Exists`, which matches the key regardless of value:
 
-```
+```yaml
 tolerations:
   - key: nvidia.com/gpu
     operator: Exists
@@ -66,7 +66,7 @@ Where you declare the taint depends on how you provision nodes. In all three cas
 
 Declare the taint under `spec.template.spec.taints` on the NodePool. Every node the NodePool provisions carries it.
 
-```
+```yaml
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:
@@ -103,7 +103,7 @@ Apply the change with `kubectl apply`. Existing nodes are not retroactively tain
 
 The field is the same as for EKS Auto Mode, because both use the `karpenter.sh/v1` NodePool API. Only the `nodeClassRef` and the instance requirement label prefix differ.
 
-```
+```yaml
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:
@@ -140,7 +140,7 @@ Kubernetes node taints can be applied to new and existing managed node groups us
 
 Note the `NO_SCHEDULE` spelling. The Amazon EKS API uses uppercase, underscore-separated effects, unlike the Kubernetes `NoSchedule` form used in the NodePool examples.
 
-```
+```bash
 aws eks create-nodegroup \
  --cli-input-json '
 {
@@ -168,7 +168,7 @@ aws eks create-nodegroup \
 
 To add, remove, or replace taints on an existing node group, use the [aws eks update-nodegroup-config](https://docs.aws.amazon.com/cli/latest/reference/eks/update-nodegroup-config.html) command with `addOrUpdateTaints` or `removeTaints`. Unlike the NodePool paths, this updates the taint on nodes that are already running, without replacing them.
 
-```
+```bash
 aws eks update-nodegroup-config \
   --cluster-name my-cluster \
   --nodegroup-name gpu \
@@ -179,7 +179,7 @@ aws eks update-nodegroup-config \
 
 Confirm the taint reached the nodes:
 
-```
+```bash
 kubectl get nodes -o custom-columns='NODE:.metadata.name,TAINTS:.spec.taints[*].key'
 ```
 
@@ -188,7 +188,7 @@ kubectl get nodes -o custom-columns='NODE:.metadata.name,TAINTS:.spec.taints[*].
 
 A tainted node repels every Pod that does not tolerate it, including your own GPU workloads. Add the toleration to the Pod spec, and pair it with a node selector so the Pod is both *allowed* onto the accelerated nodes and *directed* to them.
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -228,7 +228,7 @@ Tainting accelerated nodes also repels the DaemonSets that have to run *on* thos
 
 EKS Auto Mode manages its own device plugins and tolerates its NodePool taints without configuration. For any component you install yourself, add the toleration to the chart values or the DaemonSet spec:
 
-```
+```yaml
 tolerations:
   - key: nvidia.com/gpu
     operator: Exists
@@ -237,7 +237,7 @@ tolerations:
 
 If workloads are `Pending` on a node that looks healthy, check whether the node advertises the resource at all:
 
-```
+```bash
 kubectl get node <node-name> -o jsonpath='{.status.allocatable}'
 ```
 

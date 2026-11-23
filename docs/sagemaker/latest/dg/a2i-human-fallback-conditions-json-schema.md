@@ -17,7 +17,7 @@ The following is the schema for the JSON. At the top level, the `HumanLoopActiva
 
 A member of the `Conditions` array can model a complex condition. This is accomplished by logically connecting simple conditions using the `And` and `Or` logical operators and nesting the underlying simple conditions. Up to two levels of nesting are supported.
 
-```
+```json
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "definitions": {

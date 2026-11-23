@@ -3,11 +3,10 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-update.html
 ---
 
 # Updating a certificate's validation method
-<a name="sdk-update"></a>
 
 The following example shows how to use the [UpdateCertificateOptions](https://docs.aws.amazon.com/acm/latest/APIReference/API_UpdateCertificateOptions.html) function with the `ValidationMethod` option to migrate an existing email-validated public certificate to DNS validation. The certificate ARN is preserved during migration. After you call this function, retrieve the CNAME records by calling the [ListCertificateDomainValidations](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListCertificateDomainValidations.html) function and add the records to your DNS configuration within 72 hours.
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.AmazonClientException;
@@ -98,7 +97,3 @@ public class UpdateCertificateOptions {
    }
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

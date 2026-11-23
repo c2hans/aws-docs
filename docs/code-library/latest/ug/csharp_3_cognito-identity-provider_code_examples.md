@@ -29,7 +29,7 @@ The following code example shows how to use `AdminGetUser`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the specified user from an Amazon Cognito user pool with administrator access.
     /// </summary>
@@ -60,7 +60,7 @@ The following code example shows how to use `AdminInitiateAuth`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Initiate an admin auth request.
     /// </summary>
@@ -97,7 +97,7 @@ The following code example shows how to use `AdminRespondToAuthChallenge`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Respond to an admin authentication challenge.
     /// </summary>
@@ -144,7 +144,7 @@ The following code example shows how to use `AssociateSoftwareToken`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get an MFA token to authenticate the user with the authenticator.
     /// </summary>
@@ -175,7 +175,7 @@ The following code example shows how to use `ConfirmDevice`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Initiates and confirms tracking of the device.
     /// </summary>
@@ -206,7 +206,7 @@ The following code example shows how to use `ConfirmSignUp`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Confirm that the user has signed up.
     /// </summary>
@@ -242,7 +242,7 @@ The following code example shows how to use `InitiateAuth`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Initiate authorization.
     /// </summary>
@@ -280,7 +280,7 @@ The following code example shows how to use `ListUsers`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of users for the Amazon Cognito user pool.
     /// </summary>
@@ -314,7 +314,7 @@ The following code example shows how to use `ResendConfirmationCode`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Send a new confirmation code to a user.
     /// </summary>
@@ -346,7 +346,7 @@ The following code example shows how to use `SignUp`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Sign up a new user.
     /// </summary>
@@ -389,7 +389,7 @@ The following code example shows how to use `VerifySoftwareToken`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Verify the TOTP and register for MFA.
     /// </summary>
@@ -425,7 +425,7 @@ The following code example shows how to:
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
 namespace CognitoBasics;
 
 public class CognitoBasics

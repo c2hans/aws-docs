@@ -243,7 +243,7 @@ Replace **latest** in the download URI with with the exact version number (for e
 `AddEnvironmentVariables` is optional, and you may remove it if you do not require custom environment variables in your infrastructure hosts.
 If you are setting up `http_proxy` and `https_proxy` environment variables, the `no_proxy` parameters are required to prevent the instance from using proxy to query localhost, instance metadata IP addresses, and the services that support VPC endpoints.
 
-         ```
+         ```YAML
          #  Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
          #
          #  Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance

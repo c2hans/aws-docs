@@ -47,7 +47,7 @@ If a statement includes multiple calls to sort-based aggregate functions (LISTAG
 
 For example, the following statement returns an error.
 
-```
+```sql
 SELECT TOP 10 salesid, SUM(pricepaid),
 PERCENTILE_CONT(0.6) WITHIN GROUP(ORDER BY salesid),
 MEDIAN(pricepaid)
@@ -66,7 +66,7 @@ ERROR: within group ORDER BY clauses for aggregate functions must be the same
 
 The following statement runs successfully.
 
-```
+```sql
 SELECT TOP 10 salesid, SUM(pricepaid),
 PERCENTILE_CONT(0.6) WITHIN GROUP(ORDER BY salesid),
 MEDIAN(salesid)
@@ -81,7 +81,7 @@ The following examples use the TICKIT sample database. For more information, see
 
 The following example shows that MEDIAN produces the same results as PERCENTILE\_CONT(0.5).
 
-```
+```sql
 SELECT TOP 10 DISTINCT sellerid, qtysold,
 PERCENTILE_CONT(0.5) WITHIN GROUP(ORDER BY qtysold),
 MEDIAN(qtysold)
@@ -106,7 +106,7 @@ GROUP BY sellerid, qtysold;
 
 The following example finds the median quantity sold for each sellerid.
 
-```
+```sql
 SELECT sellerid,
 MEDIAN(qtysold)
 FROM sales
@@ -132,7 +132,7 @@ LIMIT 10;
 
 To verify the results of the previous query for the first sellerid, use the following example.
 
-```
+```sql
 SELECT qtysold
 FROM sales
 WHERE sellerid=1;

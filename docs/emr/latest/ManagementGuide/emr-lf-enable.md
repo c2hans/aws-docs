@@ -99,7 +99,7 @@ Lake Formation permissions control access to AWS Glue Data Catalog resources, Am
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -136,7 +136,7 @@ You can now use runtime roles and Lake Formation to apply table and column level
 
 For each IAM role that you plan to use as a runtime role, set the following trust policy, replacing `EMR_EC2_DefaultRole` with your instance profile role. To modify the trust policy of an IAM role, see [Modifying a role trust policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/roles-managingrole-editing-console.html).
 
-```
+```json
 {
    "Sid":"AllowAssumeRole",
    "Effect":"Allow",

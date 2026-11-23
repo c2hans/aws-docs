@@ -165,7 +165,7 @@ You get a response that provides details about your task, including its schedule
 
 The example shows that the task's schedule is manually disabled. If the schedule is disabled by the DataSync `SERVICE`, you see an error message for `DisabledReason` to help you understand why the task keeps failing. For more information, see [Troubleshooting AWS DataSync issues](troubleshooting-datasync.md).
 
-```
+```json
 {
     "TaskArn": "arn:aws:datasync:us-east-1:123456789012:task/task-12345678abcdefgh",
     "Status": "AVAILABLE",

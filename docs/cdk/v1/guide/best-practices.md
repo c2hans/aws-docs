@@ -192,7 +192,7 @@ If you need some value (from AWS or elsewhere) for which there is no native CDK 
 
 One of the great features of the AWS CDK construct library is the `grant()` convenience methods that allow quick and simple creation of AWS Identity and Access Management roles granting access to one resource by another using minimally-scoped permissions. For example, consider a line like the following:
 
-```
+```javascript
 amzn-s3-demo-bucket.grantRead(myLambda)
 ```
 

@@ -21,7 +21,7 @@ Your IT Administrator should provide you with the portal URL. If you need to ret
 
 Alternatively, use the AWS CLI:
 
-```
+```bash
 aws cloudformation describe-stacks --stack-name $(aws cloudformation list-stack-resources --stack-name <YOUR STACK> --query 'StackResourceSummaries[?starts_with(LogicalResourceId, `PortalStackNested`)].PhysicalResourceId' --output text) --query 'Stacks[0].Outputs[?OutputKey==`PortalCloudFrontDistributionUrl`].OutputValue' --output text
 ```
 

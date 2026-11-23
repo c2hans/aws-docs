@@ -25,7 +25,7 @@ Before you connect to a private REST API through a VPC, ensure the following:
 
  Include `PhysicalConnectionRequirements` in the `CreateConnection` request:
 
-```
+```json
 {
     "ConnectionInput": {
         "Name": "{{connection-name}}",

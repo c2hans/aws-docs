@@ -12,7 +12,7 @@ To retrieve the metadata of a campaign, run the following command.
 
 Replace {{campaign-name}} with the name of the campaign to you want to retrieve.
 
-```
+```bash
 aws iotfleetwise get-campaign --name {{campaign-name}}
 ```
 
@@ -26,7 +26,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

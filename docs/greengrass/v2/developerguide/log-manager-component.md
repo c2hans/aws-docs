@@ -69,7 +69,7 @@ This component can be installed on core devices that run the following operating
 This component has the following requirements:
 + The [Greengrass device role](device-service-role.md) must allow the `logs:CreateLogGroup`, `logs:CreateLogStream`, `logs:PutLogEvents`, and `logs:DescribeLogStreams` actions, as shown in the following example IAM policy.
 
-  ```
+  ```json
   {
     "Version": "2012-10-17",
     "Statement": [
@@ -378,7 +378,7 @@ The default is `true`.
 **Example: Configuration merge update**
 The following example configuration specifies to upload system logs and `com.example.HelloWorld` component logs to CloudWatch Logs.
 
-```
+```json
 {
   "logsUploaderConfiguration": {
     "systemLogsConfiguration": {
@@ -405,7 +405,7 @@ The following example configuration specifies to upload system logs and `com.exa
 **Example: Configuration to upload multiple active log files using Log manager v2.3.1**
 The following example configuration is the recommended example if you want to target multiple active log files. This example configuration specifies what active log files you want to upload to CloudWatch. Using this configuration example configuration will also upload any rotated files that match the `logFileRegex`. This example configuration is supported on Log manager v2.3.1.
 
-```
+```json
 {
   "logsUploaderConfiguration": {
     "componentLogsConfigurationMap": {
@@ -509,7 +509,7 @@ The default is `true`.
 **Example: Configuration merge update**
 The following example configuration specifies to upload system logs and `com.example.HelloWorld` component logs to CloudWatch Logs.
 
-```
+```json
 {
   "logsUploaderConfiguration": {
     "systemLogsConfiguration": {
@@ -536,7 +536,7 @@ The following example configuration specifies to upload system logs and `com.exa
 **Example: Configuration to upload multiple active log files using Log manager v2.3.1**
 The following example configuration is the recommended example if you want to target multiple active log files. This example configuration specifies what active log files you want to upload to CloudWatch. Using this configuration example configuration will also upload any rotated files that match the `logFileRegex`. This example configuration is supported on Log manager v2.3.1.
 
-```
+```json
 {
   "logsUploaderConfiguration": {
     "componentLogsConfigurationMap": {
@@ -635,7 +635,7 @@ Minimum: `0.000001` (1 microsecond)
 **Example: Configuration merge update**
 The following example configuration specifies to upload system logs and `com.example.HelloWorld` component logs to CloudWatch Logs.
 
-```
+```json
 {
   "logsUploaderConfiguration": {
     "systemLogsConfiguration": {
@@ -661,7 +661,7 @@ The following example configuration specifies to upload system logs and `com.exa
 **Example: Configuration to upload multiple active log files using Log manager v2.3.1**
 The following example configuration is the recommended example if you want to target multiple active log files. This example configuration specifies what active log files you want to upload to CloudWatch. Using this configuration example configuration will also upload any rotated files that match the `logFileRegex`. This example configuration is supported on Log manager v2.3.1.
 
-```
+```json
 {
   "logsUploaderConfiguration": {
     "componentLogsConfigurationMap": {
@@ -759,7 +759,7 @@ Minimum: `0.000001` (1 microsecond)
 **Example: Configuration merge update**
 The following example configuration specifies to upload system logs and `com.example.HelloWorld` component logs to CloudWatch Logs.
 
-```
+```json
 {
   "logsUploaderConfiguration": {
     "systemLogsConfiguration": {
@@ -861,7 +861,7 @@ Minimum: `0.000001` (1 microsecond)
 **Example: Configuration merge update**
 The following example configuration specifies to upload system logs and `com.example.HelloWorld` component logs to CloudWatch Logs.
 
-```
+```json
 {
   "logsUploaderConfiguration": {
     "systemLogsConfiguration": {
@@ -961,7 +961,7 @@ Minimum: `0.000001` (1 microsecond)
 **Example: Configuration merge update**
 The following example configuration specifies to upload system logs and `com.example.HelloWorld` component logs to CloudWatch Logs.
 
-```
+```json
 {
   "logsUploaderConfiguration": {
     "systemLogsConfiguration": {
@@ -1070,7 +1070,7 @@ currentState=RUNNING}
 
 You should use the JSON format if you want to view logs with the [Greengrass CLI logs](https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-cli-logs.html) command or interact with logs programmatically. The following example outlines the JSON shape:
 
-```
+```json
 {
    "loggerName": <string>,
    "level": <"DEBUG" | "INFO" | "ERROR" | "TRACE" | "WARN">,
@@ -1112,14 +1112,14 @@ This component uses the same log file as the [Greengrass nucleus](greengrass-nuc
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
   ```
 

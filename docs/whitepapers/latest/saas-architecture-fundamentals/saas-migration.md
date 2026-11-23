@@ -45,6 +45,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
 ![A diagram that depcits migrating to SaaS.](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/migrating-to-saas.png)
 
+*Migrating to SaaS*
+
  This diagram represents the target experience for any migration path. It includes all the same shared services that were described previously. In the middle is a placeholder for your application.
 
  The key idea is that you can land any number of application models in the middle of this environment. Your first step in migration might have each tenant running in its own silo. Or, you may have some hybrid architecture where elements are siloed and other bits of functionality are addressed through a collection of modernized microservices.

@@ -49,7 +49,7 @@ MediaTailor does not currently support cross-opt-in-Region access (opt-in to dif
 
 The following example resource policy grants MediaTailor permission to call `GetMetadata` on a feed.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -79,7 +79,7 @@ The `aws:SourceAccount` condition ensures only MediaTailor operating on behalf o
 
 The following example shows a resource policy for an opt-in Region, where the service principal includes the Region name.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -179,7 +179,7 @@ For instructions on enabling contextual metadata enrichment on your MediaLive ch
 
 The following example shows a complete function configuration using SCTE-35 enrichment.
 
-```
+```JSON
 {
     "FunctionId": "eiContextualMetadata",
     "FunctionType": "AWS_SERVICE_REQUEST",
@@ -233,7 +233,7 @@ When `inference.enriched` is `false` or absent, the `inference.*` variables are 
 
 Use this configuration for testing only. Without SCTE-35 enrichment from MediaLive, you must determine PTS values manually and cannot benefit from dynamic timing alignment. This mode has limited functionality. We do not support it for production workflows.
 
-```
+```JSON
 {
     "FunctionId": "eiContextualMetadataManual",
     "FunctionType": "AWS_SERVICE_REQUEST",
@@ -269,7 +269,7 @@ Replace `abc123.elemental-inference-data.us-west-2.amazonaws.com`, `my-feed-id`,
 
 After creating the function, attach it to a playback configuration at the `PRE_ADS_REQUEST` lifecycle hook using the `PutPlaybackConfiguration` API. Include the function ID in the function mapping:
 
-```
+```JSON
 {
     "FunctionMappings": {
         "PRE_ADS_REQUEST": {
@@ -357,7 +357,7 @@ For more output expression recipes, see [Example 3: Contextual metadata](monetiz
 
 To combine the Elemental Inference call with other functions, wrap them in a `SEQUENTIAL_EXECUTOR`. The following example shows a pipeline where the second function only runs when Elemental Inference successfully returned categories.
 
-```
+```JSON
 {
     "FunctionId": "contextualAdPipeline",
     "FunctionType": "SEQUENTIAL_EXECUTOR",

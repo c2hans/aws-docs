@@ -128,13 +128,13 @@ Files may have been encrypted without specifying a recipient (anonymous encrypti
 
 Always encrypt files with a non-anonymous recipient using the `-r` parameter. For example:
 
-```
+```shell
 gpg -e -r {{user@example.com}} --openpgp file.txt
 ```
 
 To check if a file was encrypted with a specific recipient or anonymously, use the `--list-packets` command:
 
-```
+```shell
 gpg --list-packets file.txt.gpg
 ```
 

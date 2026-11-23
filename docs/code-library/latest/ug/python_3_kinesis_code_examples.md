@@ -31,7 +31,7 @@ The following code example shows how to get started using .
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 import logging
 
 import boto3
@@ -95,7 +95,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 Run the Kinesis Data Streams basics scenario.
 
-```
+```python
 def run_scenario(kinesis_wrapper):
     """
     Runs the Kinesis Data Streams basics scenario.
@@ -352,7 +352,7 @@ if __name__ == "__main__":
 ```
 Define a wrapper class that is called by the scenario to manage Kinesis actions.
 
-```
+```python
 class KinesisWrapper:
     """Encapsulates Amazon Kinesis Data Streams operations."""
 
@@ -661,7 +661,7 @@ The following code example shows how to use `AddTagsToStream`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
     def add_tags_to_stream(self, stream_name, tags):
         """
         Adds or updates tags for a Kinesis data stream.
@@ -687,7 +687,7 @@ The following code example shows how to use `CreateStream`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 class KinesisStream:
     """Encapsulates a Kinesis stream."""
 
@@ -730,7 +730,7 @@ The following code example shows how to use `DeleteStream`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 class KinesisStream:
     """Encapsulates a Kinesis stream."""
 
@@ -765,7 +765,7 @@ The following code example shows how to use `DeregisterStreamConsumer`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
     def deregister_stream_consumer(self, consumer_arn):
         """
         Deregisters an enhanced fan-out consumer.
@@ -792,7 +792,7 @@ The following code example shows how to use `DescribeStream`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 class KinesisStream:
     """Encapsulates a Kinesis stream."""
 
@@ -833,7 +833,7 @@ The following code example shows how to use `DescribeStreamSummary`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
     def describe_stream_summary(self, stream_name):
         """
         Provides a summarized description of a Kinesis data stream.
@@ -869,7 +869,7 @@ The following code example shows how to use `GetRecords`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 class KinesisStream:
     """Encapsulates a Kinesis stream."""
 
@@ -943,7 +943,7 @@ The following code example shows how to use `GetShardIterator`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
     def get_shard_iterator(self, stream_name, shard_id, iterator_type="TRIM_HORIZON"):
         """
         Gets a shard iterator for reading data records from a shard.
@@ -985,7 +985,7 @@ The following code example shows how to use `ListShards`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
     def list_shards(self, stream_name, max_wait=30, poll_interval=2):
         """
         Lists the shards in a Kinesis data stream.
@@ -1045,7 +1045,7 @@ The following code example shows how to use `ListStreams`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
     def list_streams(self, limit=100):
         """
         Lists Kinesis data streams in the account.
@@ -1085,7 +1085,7 @@ The following code example shows how to use `ListTagsForStream`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
     def list_tags_for_stream(self, stream_name):
         """
         Lists the tags for a Kinesis data stream.
@@ -1120,7 +1120,7 @@ The following code example shows how to use `PutRecord`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 class KinesisStream:
     """Encapsulates a Kinesis stream."""
 
@@ -1163,7 +1163,7 @@ The following code example shows how to use `PutRecords`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
     def put_records(self, stream_name, records):
         """
         Writes multiple data records into a Kinesis data stream in a single call.
@@ -1201,7 +1201,7 @@ The following code example shows how to use `RegisterStreamConsumer`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
     def register_stream_consumer(self, stream_arn, consumer_name):
         """
         Registers an enhanced fan-out consumer with a Kinesis data stream.
@@ -1239,7 +1239,7 @@ The following code example shows how to use `RemoveTagsFromStream`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
     def remove_tags_from_stream(self, stream_name, tag_keys):
         """
         Removes tags from a Kinesis data stream.
@@ -1271,7 +1271,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda) repository.
 Consuming a Kinesis event with Lambda using Python.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 import base64
@@ -1298,7 +1298,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda-with-batch-item-handling) repository.
 Reporting Kinesis batch item failures with Lambda using Python.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 def handler(event, context):

@@ -20,7 +20,7 @@ If you cannot or do not want to enable private DNS on your `com.amazonaws.{{regi
 
     The output looks like the following.
 
-   ```
+   ```json
    [
      [
        "vpce-0743fe535b883ffff-76ddffff.d.codeartifact.us-west-2.vpce.amazonaws.com"

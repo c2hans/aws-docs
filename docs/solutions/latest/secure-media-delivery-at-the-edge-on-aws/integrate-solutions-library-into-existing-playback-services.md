@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
 ![Diagram of integrating solution library into existing playback service.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image23.png)
 
+*** Integrate solution library into existing playback service ***
+
  **Integrating the library into generic environment**
 
  When integrating the solution’s library in your own generic compute environment in which you manage the application stack, complete the following steps to prepare your environment:

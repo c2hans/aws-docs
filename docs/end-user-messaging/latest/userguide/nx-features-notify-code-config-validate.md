@@ -42,7 +42,7 @@ Validate a passcode that a recipient submitted. Validation succeeds when the pas
 
 1. The response resembles the following:
 
-   ```
+   ```json
    {
        "status": "VALID"
    }

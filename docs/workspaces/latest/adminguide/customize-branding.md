@@ -61,7 +61,7 @@ aws workspaces import-client-branding \
 
 The import JSON file should look like the following sample code:
 
-```
+```JSON
 {
     "ResourceId": "<directory-id>",
     "DeviceTypeOsx": {
@@ -77,7 +77,7 @@ The import JSON file should look like the following sample code:
 
 The following sample Java code snippet converts the logo image into a base64-encoded string:
 
-```
+```java
 // Read image as BufferImage
 BufferedImage bi = ImageIO.read(new File("~/Downloads/logo.png"));
 
@@ -93,7 +93,7 @@ System.out.println(bytesBase64);
 
 The following sample Python code snippet converts the logo image into a base64-encoded string:
 
-```
+```python
 # Read logo into base64-encoded string
 with open("~/Downloads/logo.png", "rb") as image_file:
     f = image_file.read()
@@ -107,7 +107,7 @@ with open("~/Downloads/logo.png", "rb") as image_file:
 **Warning**
 Importing custom branding overwrites the attributes, within that platform, that you specify with your custom data. It also overwrites the attributes that you don't specify with default custom branding attribute values. You must include the data for any attribute that you don't want to overwrite.
 
-```
+```java
 // Create WS Client
 WorkSpacesClient client = WorkSpacesClient.builder().build();
 
@@ -144,7 +144,7 @@ ImportClientBrandingResponse response = client.importClientBranding(request);
 **Warning**
 Importing custom branding overwrites the attributes, within that platform, that you specify with your custom data. It also overwrites the attributes that you don't specify with default custom branding attribute values. You must include the data for any attribute that you don't want to overwrite.
 
-```
+```python
 import boto3
 
 # Read logo into bytearray
@@ -172,7 +172,7 @@ response = client.import_client_branding(
 ### PowerShell
 <a name="import-client-branding-powershell"></a>
 
-```
+```powershell
 #Requires -Modules @{ ModuleName="AWS.Tools.WorkSpaces"; ModuleVersion="4.1.56"}
 
 # Specify Image Path

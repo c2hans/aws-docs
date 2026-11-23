@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 
 OTel Container Insights collects and sends container logs to Amazon CloudWatch Logs by using the OpenTelemetry Collector's log pipeline. The Amazon CloudWatch Observability EKS add-on deploys an OpenTelemetry Collector as a DaemonSet that uses the filelog receiver to tail container log files, enrich them with Kubernetes metadata, and export them to CloudWatch Logs through the CloudWatch Logs exporter.
 
-No additional setup is required for basic log collection. Log collection is enabled by default when you follow the [Quick start: OTel Container Insights on Amazon EKS](container-insights-eks-otel-quickstart.md).
+No additional setup is required for basic log collection. Log collection is enabled by default when you follow the [Quick start](container-insights-eks-otel-quickstart.md).
 
 **Log collection costs**
 Enabling log collection ingests all container stdout and stderr from every pod in the cluster, which can significantly increase CloudWatch Logs costs. To control cost, filter logs before ingestion and set a retention policy on the log groups. For information about filtering, see [Log filtering](container-insights-eks-otel-advanced.md#container-insights-eks-otel-advanced-log-filtering). For information about retention policies, see [Set log retention](#container-insights-eks-otel-logs-retention).

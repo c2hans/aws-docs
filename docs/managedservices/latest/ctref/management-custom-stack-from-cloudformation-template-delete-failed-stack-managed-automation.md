@@ -143,7 +143,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-custom-stack-from-cloudformation-template-delete-failed-stack-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "StackId": "stack-a1b2c3d4e5f67890e",
   "Region": "us-east-1",
@@ -154,7 +154,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-custom-stack-from-cloudformation-template-delete-failed-stack-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "StackId": "stack-a1b2c3d4e5f67890e",
   "Region": "us-west-2",

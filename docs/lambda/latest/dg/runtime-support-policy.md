@@ -110,7 +110,7 @@ You can also list Event Functions that use a particular runtime using one of the
 
 **Example JavaScript code to list functions using a particular runtime**
 
-```
+```js
 import { LambdaClient, ListFunctionsCommand } from "@aws-sdk/client-lambda";
 const lambdaClient = new LambdaClient();
 
@@ -141,7 +141,7 @@ if ('NextMarker' in response){
 
 **Example Python code to list functions using a particular runtime**
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 
@@ -203,7 +203,7 @@ The following examples provide code snippets using the V3 AWS SDK for JavaScript
 
 **Example JavaScript code to find last invocation time for a function**
 
-```
+```js
 import { CloudWatchLogsClient, DescribeLogStreamsCommand } from "@aws-sdk/client-cloudwatch-logs";
 const cloudWatchLogsClient = new CloudWatchLogsClient();
 const command = new DescribeLogStreamsCommand({
@@ -231,7 +231,7 @@ try {
 
 **Example Python code to find last invocation time for a function**
 
-```
+```python
 import boto3
 from datetime import datetime
 
@@ -264,7 +264,7 @@ You can find your function's log group name using the [ListFunctions](https://do
 
 **Example JavaScript code to find number of invocations in last 14 days**
 
-```
+```js
 import { CloudWatchClient, GetMetricStatisticsCommand } from "@aws-sdk/client-cloudwatch";
 const cloudWatchClient = new CloudWatchClient();
 const command = new GetMetricStatisticsCommand({
@@ -291,7 +291,7 @@ console.log('Number of invocations: ' + invokesInLast14Days);
 
 **Example Python code to find number of invocations in last 14 days**
 
-```
+```python
 import boto3
 from datetime import datetime, timedelta
 

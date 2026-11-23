@@ -52,7 +52,7 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/elemental-inferen
 
  The following IAM policy outlines the additional permissions required to use Smart features. For more information about creating a MediaConvert IAM role, see the [Setting up IAM permissions](iam-role.md) guide.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [

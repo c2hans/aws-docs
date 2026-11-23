@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/outputs-cer-sync.ht
 
 If you input text using the `Text` parameter, the output consists of an array of entities that the analysis detected. The following example shows an analysis that detected two JUDGE entities.
 
-```
+```json
 {
         "Entities":
         [
@@ -45,7 +45,7 @@ For descriptions of these output fields, see [DetectEntities](https://docs.aws.a
 
 The following example shows the output for a one-page scanned PDF input document.
 
-```
+```json
 {
     "Entities": [{
         "Score": 0.9984670877456665,
@@ -129,7 +129,7 @@ The following example shows the output for analysis of a native PDF document.
 
 **Example output from a custom entity recognition analysis of a PDF document**
 
-```
+```json
 {
         "Blocks":
         [

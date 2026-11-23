@@ -49,7 +49,7 @@ AWS Glue Data Quality assumes the configuration's role to find the tables in sco
 
 1. Create the role. The examples in this topic use the role name `DataQualityEvaluationConfigRole`. If you choose another name, replace it in the commands and policies.
 
-   ```
+   ```bash
    aws iam create-role \
      --role-name {{DataQualityEvaluationConfigRole}} \
      --assume-role-policy-document file://trust-policy.json
@@ -57,7 +57,7 @@ AWS Glue Data Quality assumes the configuration's role to find the tables in sco
 
 1. Attach the permissions policy to the role. Replace `DataQualityEvaluationConfigPolicy` with a name for the policy.
 
-   ```
+   ```bash
    aws iam put-role-policy \
      --role-name {{DataQualityEvaluationConfigRole}} \
      --policy-name {{DataQualityEvaluationConfigPolicy}} \
@@ -71,7 +71,7 @@ AWS Glue Data Quality assumes the configuration's role to find the tables in sco
 
 The following command creates a configuration at the database level that gathers baseline statistics for every table in a database. It uses the default settings: the `SIMPLE` built-in ruleset and the `ONCE` trigger.
 
-```
+```bash
 aws glue create-data-quality-evaluation-config \
   --name {{my-database-config}} \
   --level DATABASE \
@@ -86,7 +86,7 @@ aws glue create-data-quality-evaluation-config \
 
 The response returns the name of the configuration.
 
-```
+```json
 {
     "Name": "my-database-config",
     "EvaluationRunMode": "EVALUATION_CONFIG"
@@ -97,11 +97,11 @@ When you create a configuration, AWS Glue checks that the catalog, database, or 
 
 To confirm the settings that the configuration uses, call `get-data-quality-evaluation-config`.
 
-```
+```bash
 aws glue get-data-quality-evaluation-config --name {{my-database-config}}
 ```
 
-```
+```json
 {
     "Name": "my-database-config",
     "EvaluationRunMode": "EVALUATION_CONFIG",
@@ -130,7 +130,7 @@ AWS Glue returns the role as a full ARN, even if you specified a role name.
 
 Each evaluation stores its results with the table. To list the results that your configuration produced for a table, filter `list-data-quality-results` on the table, the evaluation run mode, and the configuration name.
 
-```
+```bash
 aws glue list-data-quality-results \
   --filter '{
     "DataSource": {
@@ -146,7 +146,7 @@ aws glue list-data-quality-results \
 
 Each result in the response includes `EvaluationRunMode` and `DataQualityEvaluationConfig`, so you can tell results from your configurations apart from results of runs that you started yourself.
 
-```
+```json
 {
     "Results": [
         {
@@ -168,7 +168,7 @@ Each result in the response includes `EvaluationRunMode` and `DataQualityEvaluat
 
 A built-in ruleset gathers statistics rather than evaluating rules. To view the statistics, get the result's profile ID and list its statistics. In the second command, replace {{profile-id}} with the profile ID that the first command returns.
 
-```
+```bash
 aws glue get-data-quality-result \
   --result-id {{dqresult-a1b2c3d4e5f6EXAMPLE}} \
   --query ProfileId --output text
@@ -179,7 +179,7 @@ aws glue list-data-quality-statistics \
 
 You can also see each run in the list of evaluation runs for the table, including runs that failed.
 
-```
+```bash
 aws glue list-data-quality-ruleset-evaluation-runs \
   --filter '{
     "DataSource": {
@@ -203,7 +203,7 @@ The following examples show configurations for other levels, triggers, and rules
 
 The following configuration profiles every table in the account's default catalog every 24 hours, starting on December 1, 2026. A rate expression, such as `rate(24 hours)`, runs at a fixed interval. Because new tables are always evaluated, tables that you add to the catalog are also profiled when they are created.
 
-```
+```bash
 aws glue create-data-quality-evaluation-config \
   --name {{my-catalog-config}} \
   --level CATALOG \
@@ -222,7 +222,7 @@ To run at a specific time of day instead, use a cron expression. For example, `c
 
 The following configuration evaluates only the tables in a database whose names start with a prefix, every 12 hours, and whenever their metadata changes. It uses the `ADVANCED` built-in ruleset, which gathers more statistics for anomaly detection to learn from.
 
-```
+```bash
 aws glue create-data-quality-evaluation-config \
   --name {{my-pattern-config}} \
   --level DATABASE \
@@ -244,7 +244,7 @@ aws glue create-data-quality-evaluation-config \
 
 To hold a table to specific standards, create a ruleset with `create-data-quality-ruleset`, and then create a table-level configuration that uses it. For a `TABLE` configuration, set `TableNamePattern` to the table name. This configuration takes precedence over the database configuration from Step 2 for this table. It runs at the start of every hour.
 
-```
+```bash
 aws glue create-data-quality-ruleset \
   --name {{my-ruleset}} \
   --ruleset 'Rules = [
@@ -274,7 +274,7 @@ aws glue create-data-quality-evaluation-config \
 
 To evaluate a subset of each table, add a `PreProcessingQuery` to the data source. In catalog-level and database-level configurations, use the `{{DATABASE_NAME}}` and `{{TABLE_NAME}}` placeholders so that the query reads each table in scope. The following configuration evaluates the last seven days of data in each table of a database every day at 2:00 AM UTC. Each table in scope must have the column that the query filters on.
 
-```
+```bash
 aws glue create-data-quality-evaluation-config \
   --name {{my-recent-data-config}} \
   --level DATABASE \
@@ -295,7 +295,7 @@ aws glue create-data-quality-evaluation-config \
 
 For Amazon S3 Tables, set `CatalogId` to the Amazon S3 Tables catalog for your table bucket, and `DatabaseName` to the namespace. The following configuration profiles every table in a namespace every Monday at 3:00 AM UTC. You and the role also need Amazon S3 Tables permissions. For more information about these permissions, see [Permissions to manage evaluation configurations](data-quality-authorization.md#data-quality-authorization-evaluation-configs-caller) and [Permissions policy for the configuration role](data-quality-authorization.md#data-quality-authorization-evaluation-configs-permissions).
 
-```
+```bash
 aws glue create-data-quality-evaluation-config \
   --name {{my-s3-tables-config}} \
   --level DATABASE \
@@ -318,7 +318,7 @@ aws glue create-data-quality-evaluation-config \
 
 To list the configurations in your account and Region, call `list-data-quality-evaluation-configs`. You can filter by level.
 
-```
+```bash
 aws glue list-data-quality-evaluation-configs --level DATABASE
 ```
 
@@ -327,7 +327,7 @@ aws glue list-data-quality-evaluation-configs --level DATABASE
 
 Call `update-data-quality-evaluation-config` with the configuration name, the role, and the settings to change. Settings that you don't specify keep their current values. The following command changes the configuration from Step 2 to the `ADVANCED` ruleset and adds a schedule that runs every 24 hours.
 
-```
+```bash
 aws glue update-data-quality-evaluation-config \
   --name {{my-database-config}} \
   --managed-ruleset-name ADVANCED \
@@ -351,7 +351,7 @@ Keep the following in mind when you update a configuration:
 
 To pause a configuration that uses the `SCHEDULE` or `METADATA_CHANGE` trigger, set `PauseRuns` to `true`. While it is paused, the configuration evaluates nothing, including new tables. In the AWS CLI, `PauseRuns` is a Boolean flag: `--pause-runs` sets it to `true`, and `--no-pause-runs` sets it to `false`. The CLI doesn't accept a value after the flag.
 
-```
+```bash
 aws glue update-data-quality-evaluation-config \
   --name {{my-database-config}} \
   --pause-runs
@@ -359,7 +359,7 @@ aws glue update-data-quality-evaluation-config \
 
 To resume, set `PauseRuns` to `false`. The configuration continues with its existing triggers, and evaluations that were missed while it was paused aren't run later.
 
-```
+```bash
 aws glue update-data-quality-evaluation-config \
   --name {{my-database-config}} \
   --no-pause-runs
@@ -370,7 +370,7 @@ aws glue update-data-quality-evaluation-config \
 
 Deleting a configuration stops all future evaluations from it. Evaluation runs that have already started finish, and existing results remain with each table. The built-in rulesets that AWS Glue created in your account aren't deleted, because other configurations can use them.
 
-```
+```bash
 aws glue delete-data-quality-evaluation-config --name {{my-database-config}}
 ```
 
@@ -379,7 +379,7 @@ aws glue delete-data-quality-evaluation-config --name {{my-database-config}}
 
 The following Python example creates a configuration at the database level, waits for its evaluations to produce results, and prints the results for one table. Replace the configuration, database, table, and role names, and the account ID, with your own values.
 
-```
+```python
 import logging
 import time
 

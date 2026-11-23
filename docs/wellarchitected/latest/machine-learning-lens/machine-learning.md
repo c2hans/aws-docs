@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 
 ![Diagram of the phases of the machine learning lifecycle](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/images/ml-lifecycle-phases.png)
 
+*Figure 2: Machine learning lifecycle*
+
  The following sections describe Well-Architected machine learning for each of the lifecycle phases.
 
 **Topics**

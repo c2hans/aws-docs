@@ -38,13 +38,13 @@ You can use the AWS Management Console or AWS CLI to delete a cluster.
    +  Replace {{region-code}} with the AWS Region your cluster is in.
    +  Replace {{my-cluster}} with the name or ID of your cluster.
 
-   ```
+   ```cmd
    aws pcs delete-cluster --region {{region-code}} --cluster-identifier {{my-cluster}}
    ```
 
 1.  It can take several minutes to delete the cluster. You can check the status of your cluster with the following command.
 
-   ```
+   ```cmd
    aws pcs get-cluster --region {{region-code}} --cluster-identifier {{my-cluster}}
    ```
 

@@ -18,7 +18,7 @@ The following trust policy includes the [`aws:SourceArn`](https://docs.aws.amazo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -51,7 +51,7 @@ The contents of version 1 of `AmazonElasticMapReduceEditorsRole` are as follows.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -113,7 +113,7 @@ Following is the contents of the `S3FullAccessPolicy`. The `S3FullAccessPolicy` 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -160,7 +160,7 @@ When you link Git repositories to your notebook and need to create a secret for 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

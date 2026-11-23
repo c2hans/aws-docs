@@ -131,13 +131,13 @@ You can use the AWS CLI for the following role management tasks:
 Use the following procedure to find out if a Greengrass service role is associated with your AWS account in an AWS Region.
 + Get the service role. Replace {{region}} with your AWS Region (for example, `us-west-2`).
 
-  ```
+  ```bash
   aws greengrassv2 get-service-role-for-account --region {{region}}
   ```
 
   If a Greengrass service role is already associated with your account, the request returns the following role metadata.
 
-  ```
+  ```json
   {
     "associatedAt": "{{timestamp}}",
     "roleArn": "arn:aws:iam::{{account-id}}:role/{{path/role-name}}"
@@ -158,7 +158,7 @@ Use the following steps to create a role and associate it with your AWS account.
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    aws iam create-role --role-name Greengrass_ServiceRole --assume-role-policy-document '{
      "Version": "2012-10-17",
      "Statement": [
@@ -184,14 +184,14 @@ Use the following steps to create a role and associate it with your AWS account.
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    aws iam create-role --role-name Greengrass_ServiceRole --assume-role-policy-document "{\"Version\":\"2012-10-17\",		 	 	 \"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"greengrass.amazonaws.com\"},\"Action\":\"sts:AssumeRole\",\"Condition\":{\"ArnLike\":{\"aws:SourceArn\":\"arn:aws:greengrass:{{region}}:{{account-id}}:*\"},\"StringEquals\":{\"aws:SourceAccount\":\"{{account-id}}\"}}}]}"
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    aws iam create-role --role-name Greengrass_ServiceRole --assume-role-policy-document '{
      "Version": "2012-10-17",
      "Statement": [
@@ -220,20 +220,20 @@ Use the following steps to create a role and associate it with your AWS account.
 
 1. Attach the `AWSGreengrassResourceAccessRolePolicy` policy to the role.
 
-   ```
+   ```bash
    aws iam attach-role-policy --role-name Greengrass_ServiceRole --policy-arn arn:aws:iam::aws:policy/service-role/AWSGreengrassResourceAccessRolePolicy
    ```
 
 **To associate the service role with your AWS account**
 + Associate the role with your account. Replace {{role-arn}} with the service role ARN and {{region}} with your AWS Region (for example, `us-west-2`).
 
-  ```
+  ```bash
   aws greengrassv2 associate-service-role-to-account --role-arn {{role-arn}} --region {{region}}
   ```
 
   If successful, the request returns the following response.
 
-  ```
+  ```json
   {
     "associatedAt": "{{timestamp}}"
   }
@@ -245,13 +245,13 @@ Use the following steps to create a role and associate it with your AWS account.
 Use the following steps to disassociate the Greengrass service role from your AWS account.
 + Disassociate the service role from your account. Replace {{region}} with your AWS Region (for example, `us-west-2`).
 
-  ```
+  ```bash
   aws greengrassv2 disassociate-service-role-from-account --region {{region}}
   ```
 
   If successful, the following response is returned.
 
-  ```
+  ```json
   {
     "disassociatedAt": "{{timestamp}}"
   }

@@ -21,7 +21,7 @@ To use the S3 Transfer Manager with enhanced multipart performance, configure yo
 ------
 #### [ Use the AWS CRT-based S3 client ]
 
-```
+```xml
 <dependencyManagement>
     <dependencies>
         <dependency>
@@ -51,7 +51,7 @@ To use the S3 Transfer Manager with enhanced multipart performance, configure yo
 ------
 #### [ Use the Java-based S3 async client ]
 
-```
+```xml
 <dependencyManagement>
     <dependencies>
         <dependency>
@@ -83,7 +83,7 @@ To enable parallel transfer, you must pass in a AWS CRT-based S3 client OR a Jav
 ------
 #### [ Use the AWS CRT-based S3 client ]
 
-```
+```java
         S3AsyncClient s3AsyncClient = S3AsyncClient.builder()
                 .credentialsProvider(DefaultCredentialsProvider.create())
                 .region(Region.US_EAST_1)
@@ -103,7 +103,7 @@ If the `aws-crt` dependency is not included in the build file, the S3 Transfer M
 
 **Custom configuration of S3 client - requires multipart enabled**
 
-```
+```java
         S3AsyncClient s3AsyncClient = S3AsyncClient.builder()
                 .multipartEnabled(true)
                 .credentialsProvider(DefaultCredentialsProvider.create())
@@ -117,7 +117,7 @@ If the `aws-crt` dependency is not included in the build file, the S3 Transfer M
 
 **No configuration of S3 client - multipart support automatically enabled**
 
-```
+```java
 S3TransferManager transferManager = S3TransferManager.create();
 ```
 
@@ -132,7 +132,7 @@ To upload a file to Amazon S3 using the S3 Transfer Manager, pass an [`UploadFil
 
 The [FileUpload](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/model/FileUpload.html) object returned from the `uploadFile` method represents the upload process. After the request finishes, the [CompletedFileUpload](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/model/CompletedFileUpload.html) object contains information about the upload.
 
-```
+```java
     public void trackUploadFile(S3TransferManager transferManager, String bucketName,
                              String key, URI filePathURI) {
         UploadFileRequest uploadFileRequest = UploadFileRequest.builder()
@@ -177,7 +177,7 @@ The [FileUpload](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssd
 ### Imports
 <a name="transfer-manager-upload-imports"></a>
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.transfer.s3.S3TransferManager;
@@ -201,7 +201,7 @@ To download an object from an S3 bucket using the S3 Transfer Manager, build a [
 
 The [FileDownload](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/model/FileDownload.html) object returned by the `S3TransferManager`'s `downloadFile` method represents the file transfer. After the download completes, the [CompletedFileDownload](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/model/CompletedFileDownload.html) contains access to information about the download.
 
-```
+```java
     public void trackDownloadFile(S3TransferManager transferManager, String bucketName,
                              String key, String downloadedFileWithPath) {
         DownloadFileRequest downloadFileRequest = DownloadFileRequest.builder()
@@ -245,7 +245,7 @@ The [FileDownload](https://sdk.amazonaws.com/java/api/latest/software/amazon/aws
 ### Imports
 <a name="transfer-manager-download-import"></a>
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.core.exception.SdkException;
@@ -277,7 +277,7 @@ Next, wrap the basic `CopyObjectRequest` in a [CopyRequest](https://sdk.amazonaw
 
 The `Copy` object returned by the `S3TransferManager`'s `copy` method represents the copy process. After the copy process completes, the [CompletedCopy](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/model/CompletedCopy.html) object contains details about the response.
 
-```
+```java
     public String copyObject(S3TransferManager transferManager, String bucketName,
             String key, String destinationBucket, String destinationKey) {
         CopyObjectRequest copyObjectRequest = CopyObjectRequest.builder()
@@ -301,7 +301,7 @@ The `Copy` object returned by the `S3TransferManager`'s `copy` method represents
 **Note**
 To perform a cross-Region copy with the S3 Transfer Manager, enable `crossRegionAccessEnabled` on the AWS CRT-based S3 client builder as shown in the following snippet.
 
-```
+```java
 S3AsyncClient s3AsyncClient = S3AsyncClient.crtBuilder()
                 .crossRegionAccessEnabled(true)
                 .build();
@@ -314,7 +314,7 @@ S3TransferManager transferManager = S3TransferManager.builder()
 ### Imports
 <a name="transfer-manager-copy-import"></a>
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.core.sync.RequestBody;
@@ -336,7 +336,7 @@ Start by calling the [uploadDirectory](https://sdk.amazonaws.com/java/api/latest
 
 The [DirectoryUpload](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/model/DirectoryUpload.html) object represents the upload process, which generates a [CompletedDirectoryUpload](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/model/CompletedDirectoryUpload.html) when the request completes. The `CompleteDirectoryUpload` object contains information about the results of the transfer, including which files failed to transfer.
 
-```
+```java
     public Integer uploadDirectory(S3TransferManager transferManager,
             URI sourceDirectory, String bucketName) {
         DirectoryUpload directoryUpload = transferManager.uploadDirectory(UploadDirectoryRequest.builder()
@@ -354,7 +354,7 @@ The [DirectoryUpload](https://sdk.amazonaws.com/java/api/latest/software/amazon/
 ### Imports
 <a name="transfer-manager-upload_directory-import"></a>
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.s3.model.ObjectIdentifier;
@@ -378,7 +378,7 @@ To download the objects in an S3 bucket to a local directory, begin by calling t
 
 The [DirectoryDownload](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/model/DirectoryDownload.html) object represents the download process, which generates a [CompletedDirectoryDownload](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/model/CompletedDirectoryDownload.html) when the request completes. The `CompleteDirectoryDownload` object contains information about the results of the transfer, including which files failed to transfer.
 
-```
+```java
     public Integer downloadObjectsToDirectory(S3TransferManager transferManager,
             URI destinationPathURI, String bucketName) {
         DirectoryDownload directoryDownload = transferManager.downloadDirectory(DownloadDirectoryRequest.builder()
@@ -396,7 +396,7 @@ The [DirectoryDownload](https://sdk.amazonaws.com/java/api/latest/software/amazo
 ### Imports
 <a name="transfer-manager-download_directory-import"></a>
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.core.sync.RequestBody;
@@ -430,7 +430,7 @@ Pre-signed URL downloads require the standard Java-based `S3AsyncClient`. The AW
 
 Add the `s3-transfer-manager` artifact to your project if you haven't already:
 
-```
+```xml
 <dependencyManagement>
     <dependencies>
         <dependency>
@@ -455,7 +455,7 @@ Add the `s3-transfer-manager` artifact to your project if you haven't already:
 #### Imports
 <a name="transfer-manager-presigned-imports"></a>
 
-```
+```java
 import java.nio.file.Paths;
 import software.amazon.awssdk.core.ResponseBytes;
 import software.amazon.awssdk.core.async.AsyncResponseTransformer;
@@ -476,7 +476,7 @@ import software.amazon.awssdk.transfer.s3.progress.LoggingTransferListener;
 ------
 #### [ Download to file ]
 
-```
+```java
 S3TransferManager transferManager = S3TransferManager.create();
 
 PresignedFileDownload fileDownload = transferManager.downloadFileWithPresignedUrl(
@@ -494,7 +494,7 @@ CompletedFileDownload completed = fileDownload.completionFuture().join();
 ------
 #### [ Download to bytes ]
 
-```
+```java
 S3TransferManager transferManager = S3TransferManager.create();
 
 Download<ResponseBytes<GetObjectResponse>> bytesDownload =

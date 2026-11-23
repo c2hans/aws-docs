@@ -11,7 +11,7 @@ Use the [ListDataAutomationLibraryEntities](https://docs.aws.amazon.com/bedrock/
 
 **Request**
 
-```
+```bash
 aws bedrock-data-automation list-data-automation-library-entities \
     --library-arn "arn:aws:bedrock:us-east-1:123456789012:data-automation-library/healthcare-vocabulary" \
     --entity-type "VOCABULARY" \

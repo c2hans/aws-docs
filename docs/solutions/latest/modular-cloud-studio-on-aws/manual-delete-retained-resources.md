@@ -21,7 +21,7 @@ This solution is configured to retain the solution-created Amazon S3 bucket (for
 
 To delete the S3 bucket using AWS CLI, run the following command:
 
-```
+```bash
 $ aws s3 rb s3://<bucket-name> --force
 ```
 
@@ -55,7 +55,7 @@ This solution is configured to retain the Amazon EC2 AMIs if you enable and then
 
 To delete the DynamoDB tables using AWS CLI, run the following command:
 
-```
+```bash
 $ aws ec2 deregister-image --image-id <image-id>
 ```
 
@@ -72,7 +72,7 @@ This solution is configured to retain Systems Manager Parameters if you enable a
 
 To delete the Parameters tables using AWS CLI, run the following command:
 
-```
+```bash
 $ aws ssm delete-parameter --name <parameter-name>
 ```
 

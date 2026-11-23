@@ -14,7 +14,7 @@ When the Audio Service runs a `Hangup` action on a call leg:
 
 The following example shows a typical `Hangup` action.
 
-```
+```json
 {
     "Type": "Hangup",
     "Parameters": {

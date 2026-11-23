@@ -18,7 +18,7 @@ Collect, filter, and visualize Greengrass log files. This command supports only 
 
 **Synopsis**
 
-```
+```bash
 greengrass-cli logs get
     [--log-dir {{path/to/a/log/folder}}]
     [--log-file {{path/to/a/log/file}}]
@@ -90,7 +90,7 @@ Show suggested keywords that you can use to filter log files.
 
 **Synopsis**
 
-```
+```bash
 greengrass-cli logs list-keywords [arguments]
 ```
 
@@ -129,7 +129,7 @@ Show log files located in a specified directory.
 
 **Synopsis**
 
-```
+```bash
 greengrass-cli logs list-log-files [arguments]
 ```
 

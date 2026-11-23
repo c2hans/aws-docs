@@ -87,6 +87,7 @@ Amazon Cognito rejects an unusable scope rather than dropping it and returning a
 **`redirect_uri`**
 *Optional. Not required for client-credentials grants.*
 Must be the same `redirect_uri` that was used to get `authorization_code` in `/oauth2/authorize`.
+For loopback redirect URIs, this is the runtime value including its port (for example, `http://localhost:124/redirect`), not the registered URI.
 You must provide this parameter if `grant_type` is `authorization_code`.
 
 **`refresh_token`**
@@ -155,7 +156,7 @@ scope={{resourceServerIdentifier1}}%2F{{scope1}}%20{{resourceServerIdentifier2}}
 
 Amazon Cognito passes the following input event to the pre token generation Lambda trigger.
 
-```
+```json
 {
     version: '3',
     triggerSource: 'TokenGeneration_ClientCredentials',
@@ -220,7 +221,7 @@ aws_client_metadata={{%7B%22onBehalfOfToken%22%3A%22eyJra789ghiEXAMPLE%22,%20%22
 
 Amazon Cognito passes the following input event to the pre token generation Lambda trigger.
 
-```
+```json
 {
     version: '3',
     triggerSource: 'TokenGeneration_ClientCredentials',

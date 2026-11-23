@@ -57,7 +57,7 @@ List the registries.
 #### ListRegistriesOutput schema
 <a name="v1-registries-response-body-listregistriesoutput-example"></a>
 
-```
+```json
 {
   "NextToken": "string",
   "Registries": [
@@ -74,7 +74,7 @@ List the registries.
 #### ErrorOutput schema
 <a name="v1-registries-response-body-erroroutput-example"></a>
 
-```
+```json
 {
   "Message": "string",
   "Code": "string"

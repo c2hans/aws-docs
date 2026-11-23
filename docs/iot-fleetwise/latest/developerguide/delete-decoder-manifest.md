@@ -46,7 +46,7 @@ To delete a decoder manifest, run the following command.
 
 Replace {{decoder-manifest-name}} with the name of the decoder manifest that you're deleting.
 
-```
+```bash
 aws iotfleetwise delete-decoder-manifest --name {{decoder-manifest-name}}
 ```
 
@@ -57,7 +57,7 @@ You can use the [ListDecoderManifests](https://docs.aws.amazon.com/iot-fleetwise
 
 To retrieve a paginated list of summaries of all decoder manifests, run the following command.
 
-```
+```bash
 aws iotfleetwise list-decoder-manifests
 ```
 
@@ -68,7 +68,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

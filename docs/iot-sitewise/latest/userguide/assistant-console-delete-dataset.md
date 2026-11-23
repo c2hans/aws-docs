@@ -25,7 +25,7 @@ The SiteWise Monitor feature is no longer available to new customers. Existing c
 **Delete a dataset**
 + Delete the dataset with `datasetId`.
 
-  ```
+  ```json
   aws iotsitewise delete-dataset --region us-east-1 --dataset-id <UUID>
   ```
 

@@ -20,7 +20,7 @@ The following Amazon S3 bucket policy and IAM policy are required to allow AWS R
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [

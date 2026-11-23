@@ -87,7 +87,7 @@ Follow the procedure in the [Inbound](#identity-idp-okta-inbound) section to cre
 
 To configure Okta as an outbound resource provider in AgentCore Identity, use the following:
 
-```
+```json
 {
   "name": "Okta",
   "credentialProviderVendor": "OktaOauth2",
@@ -105,7 +105,7 @@ To configure Okta as an outbound resource provider in AgentCore Identity, use th
 
 To use [Okta OAuth 2.0 on-behalf-of token exchange](https://developer.okta.com/docs/guides/set-up-token-exchange/main/), use custom provider for advanced configuration. For details, see [On-behalf-of token exchange with AgentCore Identity](on-behalf-of-token-exchange.md).
 
-```
+```json
 {
   "name": "Okta",
   "credentialProviderVendor": "CustomOauth2",

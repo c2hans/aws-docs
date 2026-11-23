@@ -43,7 +43,7 @@ We highly recommended that you generate the CSV input files programmatically to 
 
 The following example uses Python to generate a CSV for the annotations shown earlier:
 
-```
+```python
 import csv
 with open("./annotations/annotations.csv", "w", encoding="utf-8") as csv_file:
     csv_writer = csv.writer(csv_file)

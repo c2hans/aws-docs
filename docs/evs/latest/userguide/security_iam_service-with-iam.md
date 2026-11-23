@@ -58,7 +58,7 @@ Policy actions in Amazon EVS use the following prefix before the action: `evs:`.
 
 To specify multiple actions in a single statement, separate them with commas as follows:
 
-```
+```json
 "Action": [
       "evs:action1",
       "evs:action2"
@@ -67,7 +67,7 @@ To specify multiple actions in a single statement, separate them with commas as 
 
 You can specify multiple actions using wildcards (\*). For example, to specify all actions that begin with the word `List`, include the following action:
 
-```
+```json
 "Action": "evs:List*"
 ```
 
@@ -86,7 +86,7 @@ The `Resource` JSON policy element specifies the object or objects to which the 
 
 For actions that don’t support resource-level permissions, such as listing operations, use a wildcard (\*) to indicate that the statement applies to all resources.
 
-```
+```json
 "Resource": "*"
 ```
 
@@ -94,7 +94,7 @@ To see a list of Amazon EVS resource types and their ARNs, see [Resources define
 
 Some Amazon EVS API actions support multiple resources. For example, multiple environments can be referenced when calling the `ListEnvironments` API action. To specify multiple resources in a single statement, separate the ARNs with commas.
 
-```
+```json
 "Resource": [
       "arn:aws:evs:region-code:111122223333:environment/my-environment-1",
       "arn:aws:evs:region-code:111122223333:environment/my-environment-2"
@@ -103,13 +103,13 @@ Some Amazon EVS API actions support multiple resources. For example, multiple en
 
 For example, the Amazon EVS environment resource has the following ARN:
 
-```
+```text
 arn:${Partition}:evs:${Region}:${Account}:environment/${EnvironmentId}
 ```
 
 To specify the environments `my-environment-1` and `my-environment-2` in your statement, use the following example ARNs. The examples use the `aws` partition. In other partitions, replace `aws` with the name of your partition.
 
-```
+```json
 "Resource": [
          "arn:aws:evs:region-code:111122223333:environment/my-environment-1",
          "arn:aws:evs:region-code:111122223333:environment/my-environment-2"
@@ -118,7 +118,7 @@ To specify the environments `my-environment-1` and `my-environment-2` in your st
 
 To specify all environments that belong to a specific account, use the wildcard (\*):
 
-```
+```json
 "Resource": "arn:aws:evs:region-code:111122223333:environment/*"
 ```
 

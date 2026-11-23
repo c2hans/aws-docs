@@ -40,7 +40,7 @@ Use the `ListDataCellsFilter` API and specify a table resource.
 
 The following example uses Python to list the first 20 data filters for the `myTable` table.
 
-```
+```py
 response = client.list_data_cells_filter(
     Table = {
         'CatalogId': '111122223333',

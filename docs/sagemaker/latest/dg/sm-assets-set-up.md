@@ -62,7 +62,7 @@ If your SageMaker AI users are SSO and your Amazon DataZone domain is SSO, you c
 
 To onboard existing SageMaker AI users, run the [Amazon DataZone Import SageMaker AI Domain](https://github.com/aws/amazon-sagemaker-examples/tree/default/%20%20%20ml_ops/sm-datazone_import) script in your environment. You must pass the name of your AWS Region and the AWS account ID of your Amazon SageMaker AI domain as arguments. The following is an example AWS CLI command that runs the script.
 
-```
+```bash
 python {{example-script}} {{AWS Region}} {{111122223333}}
 ```
 

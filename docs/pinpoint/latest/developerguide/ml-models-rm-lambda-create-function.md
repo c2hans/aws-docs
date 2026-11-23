@@ -17,7 +17,7 @@ The endpoint definitions use the structure defined by the [Endpoint](https://doc
 
 For example:
 
-```
+```json
 "Endpoints": {
     "endpointIDexample-1":{
         "ChannelType":"EMAIL",
@@ -114,7 +114,7 @@ Finally, we recommend that you reserve 256 concurrent executions for the functio
 
 Overall, your Lambda function should process the event data that's sent by Amazon Pinpoint and return modified endpoint definitions. It can do this by iterating through each endpoint in the `Endpoints` object and, for each endpoint, creating and setting values for the custom recommended attributes that you want to use. The following example handler, written in Python and continuing with the preceding example of input event data, shows this:
 
-```
+```python
 import json
 import string
 
@@ -170,7 +170,7 @@ In the preceding example, AWS Lambda passes the event data to the handler as the
 
 Continuing with the earlier example of input event data, the updated endpoint definitions are:
 
-```
+```json
 "Endpoints":{
     "endpointIDexample-1":{
         "ChannelType":"EMAIL",

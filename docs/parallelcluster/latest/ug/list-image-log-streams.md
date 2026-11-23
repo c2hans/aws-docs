@@ -18,7 +18,7 @@ Retrieve the list of log streams that's associated with an image.
 ## Request syntax
 <a name="list-image-log-streams-request"></a>
 
-```
+```json
 GET /v3/images/custom/{{{imageId}}}/logstreams
 {
   "nextToken": "string",
@@ -47,7 +47,7 @@ Required: No
 ## Response syntax
 <a name="list-image-log-streams-response"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "logStreams": [
@@ -103,13 +103,13 @@ Type: string
 
 **Request**
 
-```
+```python
 $ list_image_log_streams({{custom-image-id}})
 ```
 
 **200 Response**
 
-```
+```json
 {
   'log_streams': [
     {

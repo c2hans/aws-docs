@@ -114,7 +114,7 @@ For more information, see [Run AWS Lambda functions](https://docs.aws.amazon.com
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
     def create_component_version(
         self, recipe: dict[str, Any], tags: Optional[dict[str, str]] = None
     ) -> dict[str, Any]:

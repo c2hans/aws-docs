@@ -84,7 +84,7 @@ You can grant cross-account access for any memory data plane action. The followi
 
 The following example grants Account B (`<account-B-id>`) permission to call `BatchCreateMemoryRecords` on a memory resource in Account A (`<account-A-id>`):
 
-```
+```bash
 aws bedrock-agentcore-control put-resource-policy \
     --region us-east-1 \
     --resource-arn "arn:aws:bedrock-agentcore:us-east-1:<account-A-id>:memory/<memory-id>" \
@@ -109,7 +109,7 @@ aws bedrock-agentcore-control put-resource-policy \
 
 The following example grants Account B full read and write access to memory records and events:
 
-```
+```bash
 aws bedrock-agentcore-control put-resource-policy \
     --region us-east-1 \
     --resource-arn "arn:aws:bedrock-agentcore:us-east-1:<account-A-id>:memory/<memory-id>" \
@@ -147,7 +147,7 @@ aws bedrock-agentcore-control put-resource-policy \
 
 To follow the principle of least privilege, grant access to a specific role rather than the entire account:
 
-```
+```bash
 aws bedrock-agentcore-control put-resource-policy \
     --region us-east-1 \
     --resource-arn "arn:aws:bedrock-agentcore:us-east-1:<account-A-id>:memory/<memory-id>" \
@@ -176,7 +176,7 @@ aws bedrock-agentcore-control put-resource-policy \
 
 To revoke cross-account data plane access, delete the resource-based policy:
 
-```
+```bash
 aws bedrock-agentcore-control delete-resource-policy \
     --region us-east-1 \
     --resource-arn "arn:aws:bedrock-agentcore:us-east-1:<account-A-id>:memory/<memory-id>"
@@ -191,7 +191,7 @@ Once the resource-based policy is attached, a principal in Account B can call da
 
 Create memory records from Account B:
 
-```
+```bash
 aws bedrock-agentcore batch-create-memory-records \
     --region us-east-1 \
     --memory-id "arn:aws:bedrock-agentcore:us-east-1:<account-A-id>:memory/<memory-id>" \
@@ -207,7 +207,7 @@ aws bedrock-agentcore batch-create-memory-records \
 
 Retrieve memory records from Account B:
 
-```
+```bash
 aws bedrock-agentcore retrieve-memory-records \
     --region us-east-1 \
     --memory-id "arn:aws:bedrock-agentcore:us-east-1:<account-A-id>:memory/<memory-id>" \
@@ -218,7 +218,7 @@ aws bedrock-agentcore retrieve-memory-records \
 
 Create events from Account B:
 
-```
+```bash
 aws bedrock-agentcore create-event \
     --region us-east-1 \
     --memory-id "arn:aws:bedrock-agentcore:us-east-1:<account-A-id>:memory/<memory-id>" \
@@ -258,7 +258,7 @@ Create the memory execution role in Account A. The role requires a trust policy 
 
 Trust policy:
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -280,7 +280,7 @@ Trust policy:
 
 Permissions policy (include only the statements relevant to the resources you are using):
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -317,7 +317,7 @@ Permissions policy (include only the statements relevant to the resources you ar
 
 Add the following resource-based policy to the S3 bucket in Account B to allow the memory execution role in Account A to deliver payloads:
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -342,7 +342,7 @@ Add the following resource-based policy to the S3 bucket in Account B to allow t
 
 Add the following resource-based policy to the SNS topic in Account B to allow the memory execution role in Account A to publish notifications:
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -364,7 +364,7 @@ Add the following resource-based policy to the SNS topic in Account B to allow t
 
 Add the following resource-based policy to the Kinesis Data Stream in Account B to allow the memory execution role in Account A to stream events:
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -389,7 +389,7 @@ Add the following resource-based policy to the Kinesis Data Stream in Account B 
 
 After configuring the execution role and resource policies, create a memory in Account A that references the cross-account resources in Account B:
 
-```
+```bash
 aws bedrock-agentcore-control create-memory \
     --region us-east-1 \
     --name "cross-account-memory" \
@@ -420,7 +420,7 @@ aws bedrock-agentcore-control create-memory \
 ### Create a memory with cross-account Kinesis streaming
 <a name="memory-cross-account-access-create-memory-kinesis"></a>
 
-```
+```bash
 aws bedrock-agentcore-control create-memory \
     --region us-east-1 \
     --name "cross-account-streaming-memory" \

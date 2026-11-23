@@ -22,7 +22,7 @@ Every record in this registry needs an owner and can have a data classification.
 
 Common attributes:
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -35,7 +35,7 @@ Common attributes:
 
 Fields for `AGENT`:
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -88,7 +88,7 @@ In the API, the common attributes are `defaultSchema`, and each record type’s 
 
 Save the two schemas from the [example](#registry-custom-metadata-schema-example) as `common.json` and `agent.json`, then create the registry:
 
-```
+```bash
 jq -n --rawfile common common.json --rawfile agent agent.json \
   '{defaultSchema: $common, recordTypeSchemaOverrides: [{recordType: "AGENT", schema: $agent}]}' \
   > schema-config.json
@@ -101,7 +101,7 @@ aws agent-registry-control create-registry \
 
 To change the schema later, edit the schema files, rebuild the configuration, and send it wrapped in `optionalValue`. This example adds a `team` field to the common attributes:
 
-```
+```bash
 jq '.properties.team = {"type": "string"}' common.json > common.tmp && mv common.tmp common.json
 
 jq -n --rawfile common common.json --rawfile agent agent.json \
@@ -117,7 +117,7 @@ aws agent-registry-control update-registry \
 ### AWS SDK
 <a name="registry-custom-metadata-schema-define-sdk"></a>
 
-```
+```python
 import boto3
 import json
 
@@ -158,7 +158,7 @@ print(f"Registry ARN: {response['registryArn']}")
 
 To change the schema later, send the complete new configuration wrapped in `optionalValue`:
 
-```
+```python
 common_attributes["properties"]["team"] = {"type": "string"}
 
 client.update_registry(
@@ -203,7 +203,7 @@ Existing records aren’t changed when you update the schema. A record that no l
 
  ** AWS CLI**
 
-```
+```bash
 aws agent-registry-control get-registry \
   --registry-id "{{registryId}}" \
   --region us-east-1 \
@@ -212,7 +212,7 @@ aws agent-registry-control get-registry \
 
  ** AWS SDK**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')

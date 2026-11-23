@@ -8,7 +8,7 @@ The guidance supports [Speech Synthesis Markup Language](https://docs.aws.amazon
 
 1. From the content designer, edit item `AWS-QnABot001` ` "What is Q and A Bot" ` by selecting the **Advanced** section and entering the following text in the SSML Answer field:
 
-   ```
+   ```xml
    <speak>AWS <sub alias="Q and A">QnA</sub> Bot is <amazon:effect name="drc">great</amazon:effect>. <sub alias="Q and A">QnA</sub> Bot supports <sub alias="Speech Synthesis Markup Language ">SSML</sub> using Polly's neural voice. <prosody rate="150%">I can speak very fast</prosody>, <prosody rate="75%">or very slowly</prosody>. <prosody volume="-16dB">I can speak quietly</prosody>, <amazon:effect name="drc">or speak loud and clear</amazon:effect>. I can say <phoneme alphabet="ipa" ph="təˈmɑːtəʊ">tomato</phoneme> and tomato. Visit docs.aws.amazon.com/polly/latest/dg/supportedtags for more information.</speak>
    ```
 

@@ -18,7 +18,7 @@ We recommend that new users who are developing locally and are not given a metho
 
   The following sample `config` file shows a default profile set up with Login credentials provider configuration console session selected during the login workflow. The profile's `login_session` setting refers to the named console session selected during the workflow:
 
-  ```
+  ```ini
   [default]
   login_session = arn:aws:iam::{{0123456789012}}:user/{{username}}
   region = us-east-1

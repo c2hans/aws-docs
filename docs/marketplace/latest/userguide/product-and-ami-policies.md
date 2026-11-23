@@ -8,7 +8,7 @@ AWS Marketplace maintains the following policies for all Amazon Machine Image (A
 
 All products and their related metadata are reviewed when submitted to ensure they meet or exceed current AWS Marketplace policies. These policies are regularly updated to align with evolving security guidelines. AWS Marketplace continuously scans products to verify that existing listings continue to meet any changes to these requirements. If a product falls out of compliance, AWS Marketplace will contact the seller to update their product to meet new standards. In some cases, products might be temporarily made unavailable to new subscribers until issues are resolved. This process helps maintain the security and trustworthiness of the AWS Marketplace platform for all users.
 
-Before submitting your product, we strongly recommend using the [Test 'Add Version'](https://aws.amazon.com/marketplace/management/products/server) feature in the AWS Marketplace Management Portal to ensure compliance with current policies.
+Before you submit your product, we recommend that you scan your AMI with self-service scanning to check that it meets current policies. For more information, see [Scanning your AMI for publishing requirements](best-practices-for-building-your-amis.md#self-service-scanning).
 
 **Topics**
 + [AMI product seller policies](#ami-product-seller-policies)

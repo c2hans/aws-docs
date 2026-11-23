@@ -58,7 +58,7 @@ To view a code example for using the `$maxDistance` command, choose the tab for 
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function findCapitalsNearBoston() {
@@ -87,7 +87,7 @@ findCapitalsNearBoston();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def find_capitals_near_boston():

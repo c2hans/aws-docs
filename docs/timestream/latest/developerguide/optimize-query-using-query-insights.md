@@ -34,7 +34,7 @@ The `aggregate-metrics` table stores this data at an hourly granularity. The tab
 
 Say that you want to extract the total energy consumed in Washington over the last 24 hours. To find this data, you can leverage the strengths of both the tables: `raw-metrics` and `aggregate-metrics`. The `aggregate-metrics` table provides hourly energy consumption data for the last 23 hours, while the `raw-metrics` table offers minute-granular data for the last one hour. By querying across both tables, you can get a complete and accurate picture of energy consumption in Washington over the last 24 hours.
 
-```
+```sql
 SELECT am.time, am.state, am.total_energy_consumption,
 rm.time, rm.state, rm.device_id, rm.energy_consumption
 FROM
@@ -80,7 +80,7 @@ If your query accesses more than one table, query insights provides the metrics 
 
 Based on the query insights response, you can optimize the query for temporal range as shown in the following example.
 
-```
+```sql
 SELECT am.time, am.state, am.total_energy_consumption,
 rm.time, rm.state, rm.device_id, rm.energy_consumption
 FROM
@@ -121,7 +121,7 @@ This response shows that the spatial coverage for the `aggregate-metrics` table 
 
 Based on the query insights response, you can optimize the query for spatial coverage as shown in the following example.
 
-```
+```sql
 SELECT am.time, am.state, am.total_energy_consumption,
 rm.time, rm.state, rm.device_id, rm.energy_consumption
 FROM

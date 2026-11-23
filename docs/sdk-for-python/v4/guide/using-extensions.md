@@ -21,7 +21,7 @@ To define a plugin, write a callable that accepts the generated service configur
 
 The following example defines `use_region`, which returns a plugin that sets the Region in a `DynamoDBConfig`. Passing the plugin to the client sets the Region that the client uses.
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient, DynamoDBConfig
 from aws_sdk_dynamodb.config import Plugin
 
@@ -42,7 +42,7 @@ For an asynchronous client, write the plugin for `AsyncDynamoDBConfig` and impor
 
 Every operation accepts a `plugins` keyword argument. The following call passes another `use_region` plugin to `list_tables`. The SDK applies it to the operation's copy of the configuration, which changes the Region only for this call. Later calls continue to use the client's configured Region.
 
-```
+```python
 with client:
     response = client.list_tables(
         limit=25,
@@ -55,7 +55,7 @@ with client:
 
 An interceptor implements hook methods that the request pipeline calls at defined stages. The following interceptor logs when an SDK operation starts and whether the completed execution succeeded or failed. It supports every operation because it doesn't depend on a service-specific input or output type.
 
-```
+```python
 import logging
 from typing import Any
 
@@ -90,7 +90,7 @@ An asynchronous client calls the same hook methods on its event loop. A hook tha
 
 To run an interceptor for every operation invoked by a client, include the interceptor when you resolve the configuration.
 
-```
+```python
 config = DynamoDBConfig.resolve(
     region="us-east-1",
     interceptors=[ExecutionLogger()],
@@ -106,7 +106,7 @@ Every operation that the client invokes runs the registered interceptor, so an i
 
 An operation doesn't accept an `interceptors` argument. To register an interceptor for one invocation, define an operation plugin that adds the interceptor to the copied configuration that the invocation uses.
 
-```
+```python
 def add_execution_logger(config: DynamoDBConfig) -> None:
     config.interceptors.append(ExecutionLogger())
 

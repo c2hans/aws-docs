@@ -20,7 +20,7 @@ To consume events from the ISB event bus, create an Amazon EventBridge rule that
 
 All Innovation Sandbox events follow this standard EventBridge structure:
 
-```
+```json
 {
   "version": "0",
   "id": "event-id",
@@ -58,7 +58,7 @@ Published when a user submits a new lease request.
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "LeaseRequested",
   "detail": {
@@ -82,7 +82,7 @@ Published when a lease request is approved and the user gains access to their sa
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "LeaseApproved",
   "detail": {
@@ -102,7 +102,7 @@ Published when a lease request is denied by an approver.
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "LeaseDenied",
   "detail": {
@@ -122,7 +122,7 @@ Published when a lease is terminated for any reason. The reason field provides s
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "LeaseTerminated",
   "detail": {
@@ -156,7 +156,7 @@ Published when a lease’s spending reaches a configured budget threshold percen
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "LeaseBudgetThresholdAlert",
   "detail": {
@@ -182,7 +182,7 @@ Published when a lease’s spending exceeds the configured budget limit.
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "LeaseBudgetExceeded",
   "detail": {
@@ -206,7 +206,7 @@ Published when a lease reaches a configured duration threshold.
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "LeaseDurationThresholdAlert",
   "detail": {
@@ -231,7 +231,7 @@ Published when a lease reaches a threshold that triggers a freezing action. This
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "LeaseFreezingThresholdAlert",
   "detail": {
@@ -259,7 +259,7 @@ Published when a lease expires due to reaching its maximum duration.
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "LeaseExpired",
   "detail": {
@@ -282,7 +282,7 @@ Published when a lease is frozen (access suspended but not terminated).
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "LeaseFrozen",
   "detail": {
@@ -310,7 +310,7 @@ Published when a previously frozen lease is unfrozen and access is restored.
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "LeaseUnfrozen",
   "detail": {
@@ -342,7 +342,7 @@ Published when the desired assignments for a lease change (for example, when a u
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "AssignmentRequested",
   "detail": {
@@ -368,7 +368,7 @@ Published when a principal (user or group) is successfully granted access to a s
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "AssignmentCreated",
   "detail": {
@@ -394,7 +394,7 @@ Published when a principal’s access to a sandbox account is successfully remov
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "AssignmentRemoved",
   "detail": {
@@ -423,7 +423,7 @@ Published when an account cleanup process is initiated.
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "CleanAccountRequest",
   "detail": {
@@ -442,7 +442,7 @@ Published when an account cleanup process completes successfully.
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "AccountCleanupSucceeded",
   "detail": {
@@ -465,7 +465,7 @@ Published when an account cleanup process fails.
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "AccountCleanupFailed",
   "detail": {
@@ -488,7 +488,7 @@ Published when an account is quarantined because of cleanup failures, detected d
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "AccountQuarantined",
   "detail": {
@@ -507,7 +507,7 @@ Published when an account is detected to be in an unexpected organizational unit
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "AccountDriftDetected",
   "detail": {
@@ -530,7 +530,7 @@ Published when a cost report is successfully generated for a group of accounts.
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "GroupCostReportGenerated",
   "detail": {
@@ -551,7 +551,7 @@ Published when cost report generation fails.
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "GroupCostReportGeneratedFailure",
   "detail": {
@@ -573,7 +573,7 @@ Published when a lease with an attached blueprint is approved, triggering the bl
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "BlueprintDeploymentRequest",
   "detail": {
@@ -604,7 +604,7 @@ Published when a blueprint deployment completes successfully and the user can ac
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "BlueprintDeploymentSucceeded",
   "detail": {
@@ -629,7 +629,7 @@ Published when a blueprint deployment fails due to validation errors, deployment
 
  **Schema:**
 
-```
+```json
 {
   "detail-type": "BlueprintDeploymentFailed",
   "detail": {

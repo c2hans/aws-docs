@@ -28,6 +28,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 
 ![Vehicle provisioning reference architecture](https://docs.aws.amazon.com/wellarchitected/latest/connected-mobility-lens/images/vehicle-provisioning-reference-architecture.png)
 
+*Vehicle provisioning reference architecture*
+
 ** Figure 1: CM-S01-a: Vehicle provisioning reference architecture **
 
 1.  Embedded in-vehicle devices with a unique identity principal (X.509 certificate) publish telemetry via MQTT to AWS IoT Core. To minimize in-vehicle software, only libraries necessary to connect to AWS IoT Core are implemented. The certificate is pre-installed in the vehicle during the End of the Line process.
@@ -44,6 +46,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 
 1.  Encryption at rest on the server-side is available in all the services with encryption keys managed in AWS Key Management Service (AWS KMS).
 ![Reference architecture diagram for user provisioning](https://docs.aws.amazon.com/wellarchitected/latest/connected-mobility-lens/images/user-provisioning-reference-architecture.png)
+   *User provisioning reference architecture *
 
    ** Figure 2: CM-S01-b: User Provisioning reference architecture **
 

@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="listgroupcertificateauthorities-get-cli"></a>
 
-```
+```bash
 aws greengrass list-group-certificate-authorities \
   --group-id <value>  \
   [--cli-input-json <value>] \
@@ -24,7 +24,7 @@ aws greengrass list-group-certificate-authorities \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string"
 }
@@ -45,7 +45,7 @@ type: string
 Success. The response body contains the PKI configuration.
  [ ListGroupCertificateAuthoritiesResponse](definitions-listgroupcertificateauthoritiesresponse.md)
 
-```
+```json
 {
 "GroupCertificateAuthorities": [
   {
@@ -75,7 +75,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -111,7 +111,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

@@ -31,7 +31,7 @@ ABS returns the same data type as its argument.
 
 To calculate the absolute value of `-38`, use the following example.
 
-```
+```sql
 SELECT ABS(-38);
 
 +-----+
@@ -43,7 +43,7 @@ SELECT ABS(-38);
 
 To calculate the absolute value of `(14-76)`, use the following example.
 
-```
+```sql
 SELECT ABS(14-76);
 
 +-----+

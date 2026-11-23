@@ -26,7 +26,7 @@ You are limited to sending only a certain amount of messages in a single 24-hour
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -35,7 +35,7 @@ use Aws\Ses\SesClient;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -64,7 +64,7 @@ To retrieve metrics for messages you’ve sent in the past two weeks, use the [G
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -73,7 +73,7 @@ use Aws\Ses\SesClient;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',

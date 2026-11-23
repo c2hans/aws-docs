@@ -31,7 +31,7 @@ The Amazon Q Developer in chat applications Bedrock Agent connector requires the
 
 The following policy is a minimal policy statement with the permissions required to invoke a specific agent. This policy statement is added to the channel or user role used to run AWS SDK commands in your Amazon Q Developer in chat applications channel.
 
-```
+```JSON
 {
   "Sid": "AllowInvokeBedrockAgent",
   "Effect": "Allow",

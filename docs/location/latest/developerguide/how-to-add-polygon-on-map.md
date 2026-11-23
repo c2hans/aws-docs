@@ -17,7 +17,7 @@ In this example, you will add a polygon to the map and style it with a fill colo
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -82,7 +82,7 @@ In this example, you will add a polygon to the map and style it with a fill colo
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```
@@ -90,7 +90,7 @@ html, body, #map { height: 100%; }
 ------
 #### [ main.js ]
 
-```
+```javascript
 const barclayHeritageSquare = {
     "type": "FeatureCollection",
     "features": [

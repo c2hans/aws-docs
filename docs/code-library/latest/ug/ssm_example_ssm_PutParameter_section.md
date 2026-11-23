@@ -120,7 +120,7 @@ For more information, see [Create a Systems Manager parameter (AWS CLI)](https:/
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ssm.SsmClient;
 import software.amazon.awssdk.services.ssm.model.ParameterType;
@@ -182,12 +182,12 @@ public class PutParameter {
 **Tools for PowerShell V4**
 **Example 1: This example creates a parameter. There is no output if the command succeeds.**
 
-```
+```powershell
 Write-SSMParameter -Name "Welcome" -Type "String" -Value "helloWorld"
 ```
 **Example 2: This example changes a parameter. There is no output if the command succeeds.**
 
-```
+```powershell
 Write-SSMParameter -Name "Welcome" -Type "String" -Value "Good day, Sunshine!" -Overwrite $true
 ```
 +  For API details, see [PutParameter](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -195,12 +195,12 @@ Write-SSMParameter -Name "Welcome" -Type "String" -Value "Good day, Sunshine!" -
 **Tools for PowerShell V5**
 **Example 1: This example creates a parameter. There is no output if the command succeeds.**
 
-```
+```powershell
 Write-SSMParameter -Name "Welcome" -Type "String" -Value "helloWorld"
 ```
 **Example 2: This example changes a parameter. There is no output if the command succeeds.**
 
-```
+```powershell
 Write-SSMParameter -Name "Welcome" -Type "String" -Value "Good day, Sunshine!" -Overwrite $true
 ```
 +  For API details, see [PutParameter](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -211,7 +211,7 @@ Write-SSMParameter -Name "Welcome" -Type "String" -Value "Good day, Sunshine!" -
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ssm#code-examples).
 
-```
+```rust
 async fn make_parameter(
     client: &Client,
     name: &str,

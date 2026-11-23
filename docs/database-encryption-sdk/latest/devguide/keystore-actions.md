@@ -35,7 +35,7 @@ Carefully consider the KMS key ARN that you specify when statically configuring 
 ------
 #### [ Java ]
 
-```
+```java
 final KeyStore keystore = KeyStore.builder().KeyStoreConfig(
 	                 KeyStoreConfig.builder()
 	                         .ddbClient(DynamoDbClient.create())
@@ -51,7 +51,7 @@ final KeyStore keystore = KeyStore.builder().KeyStoreConfig(
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var kmsConfig = new KMSConfiguration { KmsKeyArn = {{kmsKeyArn}} };
 	 var keystoreConfig = new KeyStoreConfig
 	 {
@@ -67,7 +67,7 @@ var kmsConfig = new KMSConfiguration { KmsKeyArn = {{kmsKeyArn}} };
 ------
 #### [ Rust ]
 
-```
+```rust
 let sdk_config = aws_config::load_defaults(aws_config::BehaviorVersion::latest()).await;
 let key_store_config = KeyStoreConfig::builder()
     .kms_client(aws_sdk_kms::Client::new(&sdk_config))
@@ -90,7 +90,7 @@ The following example configures key store actions for discovery. You must speci
 ------
 #### [ Java ]
 
-```
+```java
 final KeyStore keystore = KeyStore.builder().KeyStoreConfig(
                  KeyStoreConfig.builder()
                          .ddbClient(DynamoDbClient.create())
@@ -106,7 +106,7 @@ final KeyStore keystore = KeyStore.builder().KeyStoreConfig(
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var keystoreConfig = new KeyStoreConfig
  {
      KmsClient = new AmazonKeyManagementServiceClient(),
@@ -121,7 +121,7 @@ var keystoreConfig = new KeyStoreConfig
 ------
 #### [ Rust ]
 
-```
+```rust
 let key_store_config = KeyStoreConfig::builder()
         .kms_client(kms_client)
         .ddb_client(ddb_client)

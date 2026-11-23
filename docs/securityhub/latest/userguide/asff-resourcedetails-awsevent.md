@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```JSON
 "AwsEventSchemasRegistry": {
     "Description": "This is an example event schema registry.",
     "RegistryArn": "arn:aws:schemas:us-east-1:123456789012:registry/schema-registry",
@@ -34,7 +34,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```JSON
 "AwsEventsEndpoint": {
     "Arn": "arn:aws:events:us-east-1:123456789012:endpoint/my-endpoint",
     "Description": "This is a sample endpoint.",
@@ -76,7 +76,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```JSON
 "AwsEventsEventbus":
     "Arn": "arn:aws:events:us-east-1:123456789012:event-bus/my-event-bus",
     "Name": "my-event-bus",

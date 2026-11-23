@@ -27,7 +27,7 @@ Follow this procedure to modify each role that you identified.
 
 ****
 
-   ```
+   ```json
    {
         "Version":"2012-10-17",
         "Statement": [

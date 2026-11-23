@@ -16,7 +16,7 @@ To make a request to an AWS service, you must first instantiate a service client
 
 As an example, the following code snippet instantiates an `Ec2Client` object as a service client for Amazon EC2.
 
-```
+```java
 Region region = Region.US_WEST_2;
 Ec2Client ec2Client = Ec2Client.builder()
         .region(region)
@@ -35,7 +35,7 @@ The client builders have another factory method named `create()`. This method cr
 
 For example, the following code snippet instantiates a `DynamoDbClient` object as a service client for Amazon DynamoDB:
 
-```
+```java
 DynamoDbClient dynamoDbClient = DynamoDbClient.create();
 ```
 
@@ -51,7 +51,7 @@ As a best practice, you should use a service clients for multiple API service ca
 
 Call the `close()` method when the service client is no longer needed to free up resources.
 
-```
+```java
 ec2Client.close();
 ```
 
@@ -59,7 +59,7 @@ If you need a service client for one-time use, you can instantiate the service c
 
 The following example demonstrates how to use a service client for a one-off call. The `StsClient` that calls the AWS Security Token Service is closed after it returns the account ID.
 
-```
+```java
 import software.amazon.awssdk.services.sts.StsClient;
 
 String getAccountID() {
@@ -76,7 +76,7 @@ Use the service client to make requests to the corresponding AWS service.
 
 For example, this code snippet shows how to create a `RunInstancesRequest` object to create a new Amazon EC2 instance:
 
-```
+```java
 // Create the request by using the fluid setter methods of the request builder.
 RunInstancesRequest runInstancesRequest = RunInstancesRequest.builder()
         .imageId(amiId)
@@ -93,7 +93,7 @@ Rather than create a request and pass in the instance, the SDK provides a fluent
 
 The following example rewrites the previous example by using the version of the `runInstances` [method that uses a builder](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/ec2/Ec2Client.html#runInstances(java.util.function.Consumer)) to create the request.
 
-```
+```java
 // Create the request by using a lambda expression.
 RunInstancesResponse response = ec2.runInstances(r -> r
                 .imageId(amiId)
@@ -114,7 +114,7 @@ Although a service client is immutable, you can override many of its settings at
 
 For an example of overriding a client setting with a request, assume that you have the following S3 client that uses default settings.
 
-```
+```java
 S3Client s3Client = S3Client.create();
 ```
 
@@ -123,7 +123,7 @@ You want to download a large file and want to be sure the request doesn't timeou
 ------
 #### [ Standard API ]
 
-```
+```java
 AwsRequestOverrideConfiguration overrideConfiguration = AwsRequestOverrideConfiguration.builder()
     .apiCallTimeout(Duration.ofSeconds(100L))
     .apiCallAttemptTimeout(Duration.ofSeconds(25L))
@@ -141,7 +141,7 @@ s3Client.getObject(request, myPath);
 ------
 #### [ Fluent API ]
 
-```
+```java
 s3Client.getObject(b -> b
         .bucket("amzn-s3-demo-bucket")
         .key("demo-key")
@@ -160,7 +160,7 @@ The SDK returns a response object for most service operations. Your code can pro
 
 For example, the following code snippet prints out the first instance id returned with the [`RunInstancesResponse`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/ec2/model/RunInstancesResponse.html) object from the previous request.
 
-```
+```java
 RunInstancesResponse runInstancesResponse = ec2Client.runInstances(runInstancesRequest);
 System.out.println(runInstancesResponse.instances().get(0).instanceId());
 ```
@@ -169,7 +169,7 @@ Not all operations return a response object with service-specific data, however.
 
 For example, the code in the following snippet checks the HTTP response to see if the [`DeleteContactList`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sesv2/SesV2Client.html#deleteContactList(software.amazon.awssdk.services.sesv2.model.DeleteContactListRequest)) operation of Amazon Simple Email Service was successful.
 
-```
+```java
 SesV2Client sesv2Client = SesV2Client.create();
 
 DeleteContactListRequest request = DeleteContactListRequest.builder()

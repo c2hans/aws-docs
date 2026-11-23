@@ -32,7 +32,7 @@ For more information about the legacy AWSPowerShell module, see [Installing on W
 
 When installing or updating the modularized version of the AWS Tools for PowerShell, called `AWS.Tools`, the `Install-AWSToolsModule` and `Update-AWSToolsModule` cmdlets will naturally use version 5 of `AWS.Tools` by default. If for some reason you need to install or update version 4 of `AWS.Tools` instead, you can do so by using the following commands, respectively:
 
-```
+```ps
 Install-AWSToolsModule -MaximumVersion '4.9.999'
 Update-AWSToolsModule -MaximumVersion '4.9.999'
 ```
@@ -51,7 +51,7 @@ The types adopted from the AWS SDK for .NET have been updated to use the SDK's n
 
 The following example demonstrates the behavior in V4 of the Tools for PowerShell. In this example, the `MissingMeta` property is set to 0 because that is the default value of type `int`.
 
-```
+```ps
 # In V4
 PS > Get-S3ObjectMetadata -BucketName {{amzn-s3-demo-bucket}}  -Key '{{test}}' |
 >> Select LastModified, MissingMeta, ObjectLockRetainUntilDate, BucketKeyEnabled
@@ -63,7 +63,7 @@ LastModified          MissingMeta ObjectLockRetainUntilDate BucketKeyEnabled
 
 The following example demonstrates the behavior in V5 of the Tools for PowerShell. In this example, the `MissingMeta` property is set to `$null`.
 
-```
+```ps
 # In V5
 PS > Get-S3ObjectMetadata -BucketName {{amzn-s3-demo-bucket}} -Key '{{test}}' |
 >> Select LastModified, MissingMeta, ObjectLockRetainUntilDate, BucketKeyEnabled
@@ -77,7 +77,7 @@ In most cases, no code change is necessary because PowerShell has implicit conve
 
 For some of these types, the following examples show how to update code written for V4 that checks if nothing was returned:
 
-```
+```ps
 #Type int:
 # In V4, if you were checking whether an int is 0...
 if($s3Metadata.MissingMeta -eq 0){}
@@ -193,14 +193,14 @@ The error message that the AWS Tools for PowerShell returns if it can't obtain a
 
 In v4 of the tools, the message was similar to the following:
 
-```
+```text
 Get-SFNExecutionList -Region us-west-2
 Get-SFNExecutionList: No credentials specified or obtained from persisted/shell defaults.
 ```
 
 In V5 of the tools, the message is similar to the following instead:
 
-```
+```test
 Get-SFNExecutionList -Region us-west-2
 Get-SFNExecutionList: Failed to resolve AWS credentials. The credential providers used to search for credentials returned the following errors:
 ... <list of specific exceptions>
@@ -239,7 +239,7 @@ This information applies to the following cmdlets:
 
 Interactive session capabilities have been added to the [Start-SSMSession](https://docs.aws.amazon.com/powershell/v5/reference/items/Start-SSMSession.html) cmdlet, which aligns with the AWS CLI behavior. For example:
 
-```
+```ps
 Start-SSMSession -Target 'i-1234567890abcdef0'
 ```
 
@@ -262,7 +262,7 @@ The `LoggedAt` output property has been removed. In V4 of the tools, this proper
 
 If you need to replicate the information that was provided by the `LoggedAt` output property, you can include something similar to the following in your scripts:
 
-```
+```ps
 $loggedAt = (Get-Date).ToUniversalTime().ToString('s')
 ```
 

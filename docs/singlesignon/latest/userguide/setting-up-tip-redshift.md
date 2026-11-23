@@ -33,7 +33,7 @@ The following tasks needed to be complete by the IAM Identity Center administrat
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -73,7 +73,7 @@ The following tasks needed to be complete by the IAM Identity Center administrat
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -113,7 +113,7 @@ The following tasks needed to be complete by the IAM Identity Center administrat
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

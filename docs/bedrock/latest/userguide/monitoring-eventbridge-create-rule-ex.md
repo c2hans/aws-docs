@@ -19,7 +19,7 @@ This example shows how to set up notification of Amazon Bedrock state change eve
      + In the **Creation method** section, choose **Use pattern from**. Then choose Amazon Bedrock as the **AWS service** and the **Event type** to capture. To learn how to define an event pattern, see [Amazon EventBridge event patterns](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html).
    + For example, use the following event pattern to capture when a batch inference job completes:
 
-     ```
+     ```json
      {
       "source": ["aws.bedrock"],
       "detail-type": ["Batch Inference Job State Change"],

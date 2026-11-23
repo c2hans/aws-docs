@@ -33,7 +33,7 @@ The metadata service is not available when `sandbox.amazonaws.com/network-isolat
 ## Pod Identity
 <a name="sandboxing-pod-identity"></a>
 
-Pods in Nitro Sandboxes access AWS credentials through EKS Pod Identity the same way as pods on standard nodes. The credential endpoint (`169.254.170.23:80`) is available inside the sandbox and returns temporary credentials for the IAM role associated with the pod’s service account.
+Pods in Nitro Sandboxes access AWS credentials through EKS Pod Identity the same way as pods on standard nodes. The credential endpoint (`169.254.170.23:80`, or `[fd00:ec2::23]:80` on IPv6 clusters) is available inside the sandbox and returns temporary credentials for the IAM role associated with the pod’s service account.
 
 If you attach a Cedar policy to the pod, generate it with `--with-pod-identity`, in both isolated and confidential mode. The EKS Pod Identity webhook injects the token volume after `eks-nitro-sandbox-genpolicy` (included in the signed runtime binaries; see [Download and verify the runtime binaries](sandboxing-download-binaries.md)) reads your manifest, so the tool cannot detect it. Without the flag, the pod starts but the token file is absent, and AWS SDK calls fail because they cannot read the file named by `AWS_CONTAINER_AUTHORIZATION_TOKEN_FILE`. Isolated pods without a policy need no additional configuration.
 
@@ -50,7 +50,7 @@ IRSA requires the `--with-irsa` flag when you generate a Cedar policy, in both i
 
 Without the flag, the policy has no permit allowing the token to be written into the sandbox. The pod still starts, but the token file is absent and every AWS SDK call fails with a missing credentials error:
 
-```
+```bash
 aws: [ERROR]: [Errno 2] No such file or directory: '/var/run/secrets/eks.amazonaws.com/serviceaccount/token'
 ```
 

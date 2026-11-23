@@ -112,7 +112,7 @@ AWS Sign-In logs policy evaluation events to CloudTrail. When a resource-based p
 
 The following example shows a CloudTrail event for a failed console login attempt denied by a resource-based policy:
 
-```
+```json
 {
   "eventVersion": "1.11",
   "userIdentity": {

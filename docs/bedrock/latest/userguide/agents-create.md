@@ -131,7 +131,7 @@ The following fields are optional:
 
 The response returns an [CreateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Agent.html) object that contains details about your newly created agent. If your agent fails to be created, the [CreateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Agent.html) object in the response returns a list of `failureReasons` and a list of `recommendedActions` for you to troubleshoot.
 
-```
+```python
     def create_agent(self, agent_name, foundation_model, role_arn, instruction):
         """
         Creates an agent that orchestrates interactions between foundation models,

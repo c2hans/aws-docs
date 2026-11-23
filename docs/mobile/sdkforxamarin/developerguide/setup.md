@@ -34,7 +34,7 @@ To make calls to AWS in your application, you must first obtain AWS credentials.
 
 To get started with Amazon Cognito, you need to create an identity pool. An identity pool is a store of information that is specific to your account and is identified by a unique identity pool ID that looks like the following.:
 
-```
+```csharp
 "us-east-1:00000000-0000-0000-0000-000000000000"
 ```
 
@@ -48,7 +48,7 @@ Typically, you will only use one identity pool per application.
 
 After you create your identity pool, you obtain AWS credentials by creating a `CognitoAWSCredentials` object (passing it your identity pool ID) and then passing it to the constructor of an AWS client as follows.:
 
-```
+```csharp
 CognitoAWSCredentials credentials = new CognitoAWSCredentials (
     "us-east-1:00000000-0000-0000-0000-000000000000", // Your identity pool ID
     RegionEndpoint.USEast1 // Region
@@ -71,7 +71,7 @@ When someone uses your application and makes calls to AWS, AWS assigns that user
 
 Every identity is associated with an AWS Identity and Access Management role. In Step 1, you created two IAM roles, one for authenticated users and one for unauthenticated users. Every IAM role has one or more policies attached to it that specify which AWS services the identities assigned to that role can access. For example, the following sample policy grants access to an Amazon S3 bucket.:
 
-```
+```csharp
 {
   "Statement": [
     {
@@ -124,7 +124,7 @@ The cross-platform commercial IDE [Rider](https://www.jetbrains.com/help/rider/X
 
 The AWS Mobile SDK for .NET and Xamarin consists a set of .NET assemblies. To install the AWS Mobile SDK for .NET and Xamarin, run the install-package command for each package in the Package Manager console. For example, to install Cognito Identity, run the following.:
 
-```
+```csharp
 Install-Package AWSSDK.CognitoIdentity
 ```
 
@@ -142,7 +142,7 @@ The AWS Core Runtime and Amazon Cognito Identity packages are required for all p
 
 To include a prerelease package, include the `-Pre` command line argument while installing the package as follows.:
 
-```
+```csharp
 Install-Package AWSSDK.CognitoSync -Pre
 ```
 
@@ -183,7 +183,7 @@ You set logging settings by using the `Amazon.AWSConfigs` class and the `Amazon.
 
 Configure logging settings as follows.:
 
-```
+```csharp
 var loggingConfig = AWSConfigs.LoggingConfig;
 loggingConfig.LogMetrics = true;
 loggingConfig.LogResponses = ResponseLoggingOption.Always;
@@ -200,13 +200,13 @@ You can also log performance metrics for HTTP requests by using the `LogMetrics`
 
 Configure the default region for all service clients as follows.:
 
-```
+```csharp
 AWSConfigs.AWSRegion="us-east-1";
 ```
 
 This sets the default region for all the service clients in the SDK. You can override this setting by explicitly specifying the region at the time of creating an instance of the service client, as follows.:
 
-```
+```csharp
 IAmazonS3 s3Client = new AmazonS3Client(credentials,RegionEndpoint.USEast1);
 ```
 
@@ -215,7 +215,7 @@ IAmazonS3 s3Client = new AmazonS3Client(credentials,RegionEndpoint.USEast1);
 
 If your network is behind a proxy, you can configure the proxy settings for the HTTP requests as follows.
 
-```
+```csharp
 var proxyConfig = AWSConfigs.ProxyConfig;
 proxyConfig.Host = "localhost";
 proxyConfig.Port = 80;
@@ -228,13 +228,13 @@ proxyConfig.Password = "<password>";
 
 This property determines if the SDK should correct for client clock skew by determining the correct server time and reissuing the request with the correct time.
 
-```
+```csharp
 AWSConfigs.CorrectForClockSkew = true;
 ```
 
 This field is set if a service call resulted in an exception and the SDK has determined that there is a difference between local and server times.
 
-```
+```csharp
 var offset = AWSConfigs.ClockOffset;
 ```
 

@@ -21,7 +21,7 @@ The following policy restricts users from creating new Lightsail resources unles
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -66,7 +66,7 @@ The following policy restricts users from changing the tag for resources that ha
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

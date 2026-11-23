@@ -16,13 +16,13 @@ The Amazon Linux container image is available on Amazon ECR Public. You can prov
 **Note**
 The **get-login-password** command is supported using the latest version of AWS CLI version 2. For more information, see [Installing the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) in the *AWS Command Line Interface User Guide*.
 
-   ```
+   ```sh
    $ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
    ```
 
    The output is as follows.
 
-   ```
+   ```sh
    Login succeeded
    ```
 
@@ -34,13 +34,13 @@ To get a specific version of AL2023, you can use the following format:
 `:2023.{{[0-7 release quarter]}}.{{[release date]}}.{{[build number]}}`
 The following examples use the tag `:2023` and pull the most recent available container image of AL2023.
 
-   ```
+   ```sh
    $ docker pull public.ecr.aws/amazonlinux/amazonlinux:2023
    ```
 
 1. (Optional) Run the container locally.
 
-   ```
+   ```sh
    $ docker run -it --security-opt seccomp=unconfined public.ecr.aws/amazonlinux/amazonlinux:2023 /bin/bash
    ```
 
@@ -48,13 +48,13 @@ The following examples use the tag `:2023` and pull the most recent available co
 
 1. Pull the AL2023 container image using the **docker pull** command.
 
-   ```
+   ```sh
    $ docker pull amazonlinux:2023
    ```
 
 1. (Optional) Run the container locally.
 
-   ```
+   ```sh
    $ docker run -it amazonlinux:2023 /bin/bash
    ```
 **Note**

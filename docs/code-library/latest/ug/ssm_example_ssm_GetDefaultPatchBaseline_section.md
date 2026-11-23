@@ -50,7 +50,7 @@ For more information, see About Predefined and Custom Patch Baselines <https://d
 **Tools for PowerShell V4**
 **Example 1: This example displays the default patch baseline.**
 
-```
+```powershell
 Get-SSMDefaultPatchBaseline
 ```
 **Output:**
@@ -63,7 +63,7 @@ arn:aws:ssm:us-west-2:123456789012:patchbaseline/pb-04fb4ae6142167966
 **Tools for PowerShell V5**
 **Example 1: This example displays the default patch baseline.**
 
-```
+```powershell
 Get-SSMDefaultPatchBaseline
 ```
 **Output:**

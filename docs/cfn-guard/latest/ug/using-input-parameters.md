@@ -47,7 +47,7 @@ AWS CloudFormation Guard allows you to use input parameters for dynamic data loo
 
 1. Create a failing data template (For example, `security_groups_fail.yaml`):
 
-   ```
+   ```yaml
    # ---
    # AWSTemplateFormatVersion: 2010-09-09
    # Description: CloudFormation - EC2 Security Group

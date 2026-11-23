@@ -16,7 +16,7 @@ For an example permissions policy, see [Example: Permission to retrieve a group 
 **Important**
 If you have a VPCE policy that denies permission to retrieve an individual secret in the group you are retrieving, `BatchGetSecretValue` will not return any secret values, and it will return an error.
 
-```
+```python
 class BatchGetSecretsWrapper:
     def __init__(self, secretsmanager_client):
         self.client = secretsmanager_client

@@ -13,7 +13,7 @@ The following example shows how to define the shared properties for an action de
 ------
 #### [ YAML ]
 
-```
+```yaml
 - name: verifyImageAvailability
   action: 'aws:waitForAwsResourceProperty'
   timeoutSeconds: 600
@@ -33,7 +33,7 @@ The following example shows how to define the shared properties for an action de
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "verifyImageAvailability",
     "action": "aws:waitForAwsResourceProperty",

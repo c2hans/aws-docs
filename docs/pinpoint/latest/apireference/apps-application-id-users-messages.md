@@ -80,7 +80,7 @@ Retrieves information about the communication requirements and options that are 
 #### POST schema
 <a name="apps-application-id-users-messages-request-body-post-example"></a>
 
-```
+```json
 {
   "TraceId": "string",
   "Context": {
@@ -271,7 +271,7 @@ Retrieves information about the communication requirements and options that are 
 #### SendUsersMessageResponse schema
 <a name="apps-application-id-users-messages-response-body-sendusersmessageresponse-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "RequestId": "string",
@@ -283,7 +283,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-users-messages-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

@@ -45,7 +45,7 @@ Retrieves the details of one or more findings.
 #### POST schema
 <a name="findings-describe-request-body-post-example"></a>
 
-```
+```json
 {
   "findingIds": [
     "string"
@@ -63,7 +63,7 @@ Retrieves the details of one or more findings.
 #### GetFindingsResponse schema
 <a name="findings-describe-response-body-getfindingsresponse-example"></a>
 
-```
+```json
 {
   "findings": [
     {
@@ -388,7 +388,7 @@ Retrieves the details of one or more findings.
 #### ValidationException schema
 <a name="findings-describe-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -397,7 +397,7 @@ Retrieves the details of one or more findings.
 #### ServiceQuotaExceededException schema
 <a name="findings-describe-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -406,7 +406,7 @@ Retrieves the details of one or more findings.
 #### AccessDeniedException schema
 <a name="findings-describe-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -415,7 +415,7 @@ Retrieves the details of one or more findings.
 #### ResourceNotFoundException schema
 <a name="findings-describe-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -424,7 +424,7 @@ Retrieves the details of one or more findings.
 #### ConflictException schema
 <a name="findings-describe-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -433,7 +433,7 @@ Retrieves the details of one or more findings.
 #### ThrottlingException schema
 <a name="findings-describe-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -442,7 +442,7 @@ Retrieves the details of one or more findings.
 #### InternalServerException schema
 <a name="findings-describe-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

@@ -48,7 +48,7 @@ To use fleet metrics, enable fleet indexing. To enable fleet indexing for your t
 
 1. Run the following bash script to create ten things and describe them.
 
-   ```
+   ```bash
    # Bash script. Type `bash` before running in other shells.
 
    Temperatures=(70 71 72 73 74 75 47 97 98 99)
@@ -77,7 +77,7 @@ To use fleet metrics, enable fleet indexing. To enable fleet indexing for your t
 
    The output of this script contains ten JSON files. One of the JSON file looks like the following:
 
-   ```
+   ```JSON
    {
        "version": 1,
        "thingName": "TempSensor0",

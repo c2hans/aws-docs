@@ -20,7 +20,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-schedule-syntax.yaml"></a>
 
-```
+```yaml
   [DeadLetterConfig](#sam-function-schedule-deadletterconfig): {{DeadLetterConfig}}
   [Description](#sam-function-schedule-description): {{String}}
   [Enabled](#sam-function-schedule-enabled): {{Boolean}}
@@ -98,7 +98,7 @@ CloudWatch Schedule Event Example
 #### YAML
 <a name="sam-property-function-schedule--examples--cloudwatch-schedule-event--yaml"></a>
 
-```
+```yaml
 CWSchedule:
   Type: Schedule
   Properties:

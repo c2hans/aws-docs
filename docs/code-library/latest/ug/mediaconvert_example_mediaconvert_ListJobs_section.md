@@ -15,7 +15,7 @@ The following code examples show how to use `ListJobs`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/MediaConvert#code-examples).
 Set up the file locations, client, and wrapper.
 
-```
+```csharp
         // MediaConvert role Amazon Resource Name (ARN).
         // For information on creating this role, see
         // https://docs.aws.amazon.com/mediaconvert/latest/ug/creating-the-iam-role-in-mediaconvert-configured.html.
@@ -31,7 +31,7 @@ Set up the file locations, client, and wrapper.
 ```
 List the jobs with a particular status.
 
-```
+```csharp
         Console.WriteLine(new string('-', 80));
         Console.WriteLine($"Listing all complete jobs.");
         var completeJobs = await wrapper.ListAllJobsByStatus(JobStatus.COMPLETE);
@@ -42,7 +42,7 @@ List the jobs with a particular status.
 ```
 List the jobs using a paginator.
 
-```
+```csharp
     /// <summary>
     /// List all of the jobs with a particular status using a paginator.
     /// </summary>
@@ -75,7 +75,7 @@ List the jobs using a paginator.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/mediaconvert#code-examples).
 
-```
+```cpp
 //! Retrieve a list of created jobs.
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -289,7 +289,7 @@ For more information, see [Working with jobs](https://docs.aws.amazon.com/mediac
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/mediaconvert#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.mediaconvert.MediaConvertClient;
 import software.amazon.awssdk.services.mediaconvert.model.ListJobsRequest;
@@ -350,7 +350,7 @@ public class ListJobs {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/mediaconvert#code-examples).
 
-```
+```kotlin
 suspend fun listCompleteJobs(mcClient: MediaConvertClient) {
     val describeEndpoints =
         DescribeEndpointsRequest {

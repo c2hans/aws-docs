@@ -16,7 +16,7 @@ A *user-defined request attribute* is data that you send to your bot in each req
 
 To send request attributes to Amazon Lex V2, you create a string-to-string map of the attributes. The following shows how to map request attributes:
 
-```
+```json
 {
    "attributeName": "attributeValue",
    "attributeName": "attributeValue"
@@ -25,7 +25,7 @@ To send request attributes to Amazon Lex V2, you create a string-to-string map o
 
 For the `PostText` operation, you insert the map into the body of the request using the `requestAttributes` field, as follows:
 
-```
+```json
 "requestAttributes": {
    "attributeName": "attributeValue",
    "attributeName": "attributeValue"

@@ -76,7 +76,7 @@ Additional custom claim validations applied to the inbound JWT.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DiscoveryUrl`  <a name="cfn-agentregistry-registry-customjwtauthorizerconfiguration-discoveryurl"></a>
-The OpenID Connect discovery URL used to retrieve the identity provider's metadata and signing keys.
+The OpenID Connect discovery or OAuth 2.0 authorization server metadata URL used to retrieve the identity provider's metadata and signing keys. The URL contains `/.well-known/openid-configuration` or `/.well-known/oauth-authorization-server`, respectively.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[^\s?#]+/\.well-known/(openid-configuration|oauth-authorization-server)(/[^\s?#]+)?$`

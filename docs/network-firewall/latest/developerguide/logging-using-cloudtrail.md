@@ -37,7 +37,7 @@ The following are examples of CloudTrail log entries for Network Firewall operat
 
 Example: CloudTrail log entry for `CreateFirewall`
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -108,7 +108,7 @@ Example: CloudTrail log entry for `CreateFirewall`
 
 Example: CloudTrail log entry for `ListFirewalls`
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -152,7 +152,7 @@ Example: CloudTrail log entry for `ListFirewalls`
 
 Example: CloudTrail log entry for `DeleteFirewall`
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

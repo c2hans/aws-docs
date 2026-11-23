@@ -16,7 +16,7 @@ There are no restrictions on MQTT topic structure, including the number of level
 **Example property alias**
 If the MQTT topic is `site1/line1/compressor1/temperature`, ensure the `propertyAlias` matches.
 
-```
+```json
 {
   "assetId": "compressor_asset_01",
   "propertyAlias": "site1/line1/compressor1/temperature",
@@ -41,7 +41,7 @@ If the MQTT topic is `site1/line1/compressor1/temperature`, ensure the `property
 
 The MQTT message payload are written in JSON and follow the `PutAssetPropertyValueEntry` message format defined in the [AWS IoT SiteWise API Reference](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_PutAssetPropertyValueEntry.html).
 
-```
+```json
 {
    "assetId": "string",
    "propertyAlias": "string",

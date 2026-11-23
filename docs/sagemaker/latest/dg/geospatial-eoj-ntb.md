@@ -21,7 +21,7 @@ Amazon SageMaker geospatial capabilities is no longer open to new customers. Off
 
 You can initiate an EOJ using a Amazon SageMaker Studio Classic notebook with a SageMaker geospatial image using the code provided below.
 
-```
+```py
 import boto3
 import sagemaker
 import sagemaker_geospatial_map
@@ -33,7 +33,7 @@ sg_client = session.client(service_name="sagemaker-geospatial")
 
 The following is an example showing how to create an EOJ in the in the US West (Oregon) Region.
 
-```
+```py
 #Query and Access Data
 search_rdc_args = {
     "Arn": "arn:aws:sagemaker-geospatial:us-west-2:378778860802:raster-data-collection/public/nmqj48dcu3g7ayw8",  # sentinel-2 L2A COG
@@ -121,7 +121,7 @@ After your EOJ is created, the `Arn` is returned to you. You use the `Arn` to id
 
 The following example shows how to query the status of an EOJ until it is completed.
 
-```
+```py
 eoj_arn = response["Arn"]
 job_details = sg_client.get_earth_observation_job(Arn=eoj_arn)
 {k: v for k, v in job_details.items() if k in ["Arn", "Status", "DurationInSeconds"]}
@@ -131,7 +131,7 @@ sg_client.list_earth_observation_jobs()["EarthObservationJobSummaries"]
 
 After the EOJ is completed, you can visualize the EOJ outputs directly in the notebook. The following example shows you how an interactive map can be rendered.
 
-```
+```py
 map = sagemaker_geospatial_map.create_map({
 'is_raster': True
 })
@@ -142,7 +142,7 @@ map.render()
 
 The following example shows how the map can be centered on an area of interest and the input and output of the EOJ can be rendered as separate layers within the map.
 
-```
+```py
 # visualize the area of interest
 config = {"label": "Lake Mead AOI"}
 aoi_layer = map.visualize_eoj_aoi(Arn=eoj_arn, config=config)
@@ -170,7 +170,7 @@ output_layer = map.visualize_eoj_output(
 
 You can use the `export_earth_observation_job` function to export the EOJ results to your Amazon S3 bucket. The export function makes it convenient to share results across teams. SageMaker AI also simplifies dataset management. We can simply share the EOJ results using the job ARN, instead of crawling thousands of files in the S3 bucket. Each EOJ becomes an asset in the data catalog, as results can be grouped by the job ARN. The following example shows how you can export the results of an EOJ.
 
-```
+```py
 sagemaker_session = Session()
 s3_bucket_name = sagemaker_session.default_bucket()  # Replace with your own bucket if needed
 s3_bucket = session.resource("s3").Bucket(s3_bucket_name)
@@ -188,7 +188,7 @@ export_response = sg_client.export_earth_observation_job(
 
 You can monitor the status of your export job using the following snippet.
 
-```
+```py
 # Monitor the export job status
 export_job_details = sg_client.get_earth_observation_job(Arn=export_response["Arn"])
 {k: v for k, v in export_job_details.items() if k in ["Arn", "Status", "DurationInSeconds"]}

@@ -33,7 +33,7 @@ This AWS managed policy includes the following permissions.
 
 **Example Permissions policy**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

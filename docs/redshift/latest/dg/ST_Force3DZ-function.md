@@ -37,7 +37,7 @@ If *geom* is empty, then an empty geometry is returned.
 
 The following SQL returns a 3DZ geometry from a 3DM geometry.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Force3DZ(ST_GeomFromText('MULTIPOINT M(0 1 2, EMPTY, 2 3 4, 5 6 7)')));
 ```
 

@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { LambdaToSsmstringparameterProps,  LambdaToSsmstringparameter } from '@aws-solutions-constructs/aws-lambda-ssmstringparameter';
@@ -43,7 +43,7 @@ const constructProps: LambdaToSsmstringparameterProps = {
 new LambdaToSsmstringparameter(this, 'test-lambda-ssmstringparameter-stack', constructProps);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_lambda_ssmstringparameter import LambdaToSsmstringparameter
 from aws_cdk import (
     aws_lambda as _lambda,
@@ -64,7 +64,7 @@ LambdaToSsmstringparameter(
 )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

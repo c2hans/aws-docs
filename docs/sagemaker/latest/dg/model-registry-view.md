@@ -16,7 +16,7 @@ You can view all of the model versions that are associated with a Model Group. I
 
 To view model versions associated with a Model Group by using Boto3, call the `list_model_packages` API operation, and pass the name of the Model Group as the value of the `ModelPackageGroupName` parameter. The following code lists the model versions associated with the Model Group you created in [Create a Model Group (Boto3)](model-registry-model-group.md#model-registry-package-group-api).
 
-```
+```python
 sm_client.list_model_packages(ModelPackageGroupName=model_package_group_name)
 ```
 

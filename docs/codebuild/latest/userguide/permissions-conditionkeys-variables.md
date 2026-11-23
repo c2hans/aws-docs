@@ -13,7 +13,7 @@ To use the `codebuild:buildArn` or `codebuild:projectArn` condition keys in your
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

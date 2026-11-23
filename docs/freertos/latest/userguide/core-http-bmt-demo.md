@@ -91,7 +91,7 @@ The demo defines the following structures to support multithreading.
 
 The following structures define a request item to place into the request queue. The request item is copied into the queue after the request task creates an HTTP request.
 
-```
+```c
 /**
  * @brief Data type for the request queue.
  *
@@ -110,7 +110,7 @@ typedef struct RequestItem
 
 The following structures define a response item to place into the response queue. The response item is copied into the queue after the main HTTP task receives a response over the network.
 
-```
+```c
 /**
  * @brief Data type for the response queue.
  *

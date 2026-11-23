@@ -29,7 +29,7 @@ The following example defines a deployment that configures the MQTT bridge compo
 ------
 #### [ Console ]
 
-```
+```json
 {
   "mqttTopicMapping": {
     "HelloWorldIotCore": {
@@ -44,7 +44,7 @@ The following example defines a deployment that configures the MQTT bridge compo
 ------
 #### [ AWS CLI ]
 
-```
+```json
 {
   "components": {
     "aws.greengrass.clientdevices.mqtt.Bridge": {
@@ -68,7 +68,7 @@ To relay MQTT messages between client devices and AWS IoT Core, [configure and d
 **Example: Relay messages on a topic from client devices to AWS IoT Core**
 The following MQTT bridge component configuration specifies relaying messages on topics that match the `clients/+/hello/world/event` topic filter from client devices to AWS IoT Core.
 
-```
+```json
 {
   "mqttTopicMapping": {
     "HelloWorldEvent": {
@@ -83,7 +83,7 @@ The following MQTT bridge component configuration specifies relaying messages on
 **Example: Relay messages on a topic from AWS IoT Core to client devices**
 The following MQTT bridge component configuration specifies relaying messages on topics that match the `clients/+/hello/world/event/response` topic filter from AWS IoT Core to client devices.
 
-```
+```json
 {
   "mqttTopicMapping": {
     "HelloWorldEventConfirmation": {

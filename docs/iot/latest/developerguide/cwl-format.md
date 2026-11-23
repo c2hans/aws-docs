@@ -47,7 +47,7 @@ The AWS IoT message broker generates a log entry with an `eventType` of `Connect
 #### Connect success log entry example
 <a name="log-mb-connect.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-08-10 15:37:23.476",
     "logLevel": "INFO",
@@ -66,7 +66,7 @@ The AWS IoT message broker generates a log entry with an `eventType` of `Connect
 #### Connect failure log entry example
 <a name="log-mb-connect.failure.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2026-07-09 23:26:48.827",
     "logLevel": "ERROR",
@@ -125,7 +125,7 @@ The AWS IoT message broker generates a log entry with an `eventType` of `Disconn
 #### Disconnect log entry example
 <a name="log-mb-disconnect.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-08-10 15:37:23.476",
     "logLevel": "INFO",
@@ -183,7 +183,7 @@ On success, the `logLevel` is `DEBUG` and the `status` is `Success`. On failure 
 #### Ping log entry example (success)
 <a name="log-mb-ping.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2025-10-31 15:37:23.476",
     "logLevel": "DEBUG",
@@ -205,7 +205,7 @@ On success, the `logLevel` is `DEBUG` and the `status` is `Success`. On failure 
 #### Ping log entry example (failure)
 <a name="log-mb-ping.example-failure"></a>
 
-```
+```JSON
 {
     "timestamp": "2025-10-31 15:37:23.476",
     "logLevel": "ERROR",
@@ -270,7 +270,7 @@ This log entry is published to the AWS account that owns the Server Name Indicat
 #### Connection.AuthNError log entry example
 <a name="log-mb-authn-error.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2025-10-31 15:37:23.476",
     "logLevel": "ERROR",
@@ -357,7 +357,7 @@ The AWS IoT message broker generates a log entry with an `eventType` of `DeleteC
 #### DeleteConnection log entry example
 <a name="log-mb-delete-connection.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2025-08-09 15:37:23.476",
     "logLevel": "INFO",
@@ -398,7 +398,7 @@ The AWS IoT message broker generates a log entry with an `eventType` of `GetReta
 #### GetRetainedMessage log entry example
 <a name="log-mb-get-retain-example"></a>
 
-```
+```json
 {
     "timestamp": "2017-08-07 18:47:56.664",
     "logLevel": "INFO",
@@ -435,7 +435,7 @@ The AWS IoT message broker generates a log entry with an `eventType` of `ListRet
 #### ListRetainedMessage log entry example
 <a name="log-mb-list-retain-example"></a>
 
-```
+```json
 {
     "timestamp": "2017-08-07 18:47:56.664",
     "logLevel": "INFO",
@@ -460,7 +460,7 @@ The AWS IoT message broker generates a log entry with an `eventType` of `ListSub
 #### ListSubscriptions log entry example
 <a name="log-mb-list-subscriptions.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2025-08-22 19:57:46.587",
     "logLevel": "INFO",
@@ -505,7 +505,7 @@ The AWS IoT message broker generates a log entry with an `eventType` of `GetConn
 #### GetConnection log entry example
 <a name="log-mb-get-connection.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2025-08-22 19:19:50.679",
     "logLevel": "INFO",
@@ -546,7 +546,7 @@ When the AWS IoT message broker receives an MQTT message, it generates a log ent
 #### Publish-In success log entry example
 <a name="log-mb-publish-in.example"></a>
 
-```
+```JSON
 {
         "timestamp": "2017-08-10 15:39:30.961",
         "logLevel": "INFO",
@@ -567,7 +567,7 @@ When the AWS IoT message broker receives an MQTT message, it generates a log ent
 #### Publish-In failure log entry example
 <a name="log-mb-publish-in.failure.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2026-07-09 22:01:12.858",
     "logLevel": "ERROR",
@@ -639,7 +639,7 @@ When the message broker publishes an MQTT message, it generates a log entry with
 #### Publish-Out success log entry example
 <a name="log-mb-publish-out.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-08-10 15:39:30.961",
     "logLevel": "INFO",
@@ -659,7 +659,7 @@ When the message broker publishes an MQTT message, it generates a log entry with
 #### Publish-Out failure log entry example
 <a name="log-mb-publish-out.failure.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2026-07-14 21:12:33.026",
     "logLevel": "ERROR",
@@ -723,7 +723,7 @@ When a device with a persistent session is disconnected, the MQTT message broker
 #### Queued server error log entry example
 <a name="log-mb-queued.server-error.example"></a>
 
-```
+```json
 {
     "timestamp": "2022-08-10 15:39:30.961",
     "logLevel": "ERROR",
@@ -760,7 +760,7 @@ The name of the subscribed topic.
 #### Queued success log entry example
 <a name="log-mb-queued.success.example"></a>
 
-```
+```json
 {
     "timestamp": "2022-08-10 15:39:30.961",
     "logLevel": "INFO",
@@ -792,7 +792,7 @@ The name of the subscribed topic.
 #### Queued throttled log entry example
 <a name="log-mb-queued.throttled.example"></a>
 
-```
+```json
 {
     "timestamp": "2022-08-10 15:39:30.961",
     "logLevel": "ERROR",
@@ -840,7 +840,7 @@ The AWS IoT message broker generates a log entry with an `eventType` of `Subscri
 #### MQTT 3 Subscribe success log entry example
 <a name="log-mb-connect.example.subscribe"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-08-10 15:39:04.413",
     "logLevel": "INFO",
@@ -860,7 +860,7 @@ The AWS IoT message broker generates a log entry with an `eventType` of `Subscri
 #### Subscribe failure log entry example
 <a name="log-mb-subscribe.failure.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2026-07-09 23:07:45.633",
     "logLevel": "ERROR",
@@ -908,7 +908,7 @@ A brief explanation of the error. This field is present only when the `status` i
 #### MQTT 5 Subscribe log entry example
 <a name="log-mb-connect.example.subscribe.mqtt5"></a>
 
-```
+```JSON
 {
 	"timestamp": "2022-11-30 16:24:15.628",
 	"logLevel": "INFO",
@@ -965,7 +965,7 @@ The AWS IoT message broker generates a log entry with an `eventType` of `Unsubsc
 #### Unsubscribe success log entry example
 <a name="log-mb-connect.example.unsubscribe"></a>
 
-```
+```JSON
 {
     "timestamp": "2024-08-20 22:53:32.844",
     "logLevel": "INFO",
@@ -984,7 +984,7 @@ The AWS IoT message broker generates a log entry with an `eventType` of `Unsubsc
 #### Unsubscribe failure log entry example
 <a name="log-mb-unsubscribe.failure.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2026-01-07 15:37:23.476",
     "logLevel": "ERROR",
@@ -1047,7 +1047,7 @@ AWS IoT Core logs SendDirectMessage events to CloudWatch Logs when you enable Io
 #### SendDirectMessage success log entry example
 <a name="log-mb-send-direct-message.success.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2026-01-20 20:44:00.123",
     "logLevel": "INFO",
@@ -1069,7 +1069,7 @@ AWS IoT Core logs SendDirectMessage events to CloudWatch Logs when you enable Io
 #### SendDirectMessage failure log entry example
 <a name="log-mb-send-direct-message.failure.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2026-01-15 20:30:00.123",
     "logLevel": "ERROR",
@@ -1163,7 +1163,7 @@ AWS IoT Core generates a log entry with an `eventType` of `RetrieveOCSPStapleDat
 
 The following is a log entry example of `Success`.
 
-```
+```JSON
 {
 	"timestamp": "2024-01-30 15:39:30.961",
 	"logLevel": "INFO",
@@ -1197,7 +1197,7 @@ The following is a log entry example of `Success`.
 
 The following is a log entry example of `Failure`.
 
-```
+```JSON
 {
 	"timestamp": "2024-01-30 15:39:30.961",
 	"logLevel": "ERROR",
@@ -1289,7 +1289,7 @@ AWS IoT Core generates a log entry with an `eventType` of `RetrieveOCSPStapleDat
 
 The following is a log entry example of `Success`.
 
-```
+```JSON
 {
 	"timestamp": "2024-01-30 15:39:30.961",
 	"logLevel": "INFO",
@@ -1323,7 +1323,7 @@ The following is a log entry example of `Success`.
 
 The following is a log entry example of `Failure`.
 
-```
+```JSON
 {
 	"timestamp": "2024-01-30 15:39:30.961",
 	"logLevel": "ERROR",
@@ -1377,7 +1377,7 @@ The Device Shadow service generates a log entry with an `eventType` of `DeleteTh
 #### DeleteThingShadow log entry example
 <a name="log-shadow-delete-thing-shadow.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-08-07 18:47:56.664",
     "logLevel": "INFO",
@@ -1410,7 +1410,7 @@ The Device Shadow service generates a log entry with an `eventType` of `GetThing
 #### GetThingShadow log entry example
 <a name="log-shadow-get-thing-shadow.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-08-09 17:56:30.941",
     "logLevel": "INFO",
@@ -1443,7 +1443,7 @@ The Device Shadow service generates a log entry with an `eventType` of `UpdateTh
 #### UpdateThingShadow log entry example
 <a name="log-shadow-update-thing-shadow.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-08-07 18:43:59.436",
     "logLevel": "INFO",
@@ -1490,7 +1490,7 @@ The rules engine generates a log entry with an `eventType` of `FunctionExecution
 #### FunctionExecution log entry example
 <a name="log-rules-fn-exec.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-07-13 18:33:51.903",
     "logLevel": "DEBUG",
@@ -1533,7 +1533,7 @@ When the AWS IoT rules engine triggers a rule's action, it generates a `RuleExec
 #### RuleExecution log entry example
 <a name="log-rules-rule-ex.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-08-10 16:32:46.070",
     "logLevel": "INFO",
@@ -1555,7 +1555,7 @@ When the AWS IoT rules engine triggers a rule's action, it generates a `RuleExec
 #### RuleExecution with batching log entry example
 <a name="log-rules-rule-ex-batching.example"></a>
 
-```
+```JSON
 {
     "logLevel": "INFO",
     "accountId": "123456789012",
@@ -1628,7 +1628,7 @@ The AWS IoT rules engine generates a log entry with an `eventType` of `RuleMatch
 #### RuleMatch log entry example
 <a name="log-rules-rule-match.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-08-10 16:32:46.002",
     "logLevel": "INFO",
@@ -1665,7 +1665,7 @@ When AWS IoT Rules Engine throttles a rule evaluation on the rule evaluations pe
 #### RuleEvaluation throttled log entry example
 <a name="log-rules-rule-eval-throttled.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2024-11-13 07:32:27.856",
     "logLevel": "ERROR",
@@ -1710,7 +1710,7 @@ When a rule evaluation is throttled by the rules engine because of malicious beh
 #### RuleExecutionThrottled log entry example
 <a name="log-rules-rule-msg-throttled.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-10-04 19:25:46.070",
     "logLevel": "ERROR",
@@ -1755,7 +1755,7 @@ When the AWS IoT rules engine cannot find a rule with a given name, it generates
 #### RuleNotFound log entry example
 <a name="log-rules-rule-not-found.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-10-04 19:25:46.070",
     "logLevel": "ERROR",
@@ -1800,7 +1800,7 @@ When the AWS IoT rules engine starts to trigger a rule's action, it generates a 
 #### StartingRuleExecution log entry example
 <a name="log-rules-start-rule-ex.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-08-10 16:32:46.002",
     "logLevel": "DEBUG",
@@ -1853,7 +1853,7 @@ The AWS IoT Jobs service generates a log entry with an `eventType` of `DescribeJ
 #### DescribeJobExecution log entry example
 <a name="log-job-describe-job-ex.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-08-10 19:13:22.841",
     "logLevel": "DEBUG",
@@ -1897,7 +1897,7 @@ The AWS IoT Jobs service generates a log entry with an `eventType` of `GetPendin
 #### GetPendingJobExecution log entry example
 <a name="log-job-get-pending-job-ex.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2018-06-13 17:45:17.197",
     "logLevel": "DEBUG",
@@ -1937,7 +1937,7 @@ The AWS IoT Jobs service generates a log entry with an `entryType` of `ReportFin
 #### ReportFinalJobExecutionCount log entry example
 <a name="log-job-report-final-job-ex-count.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-08-10 19:44:16.776",
     "logLevel": "INFO",
@@ -1965,7 +1965,7 @@ When it receives a request to start the next pending job execution, the AWS IoT 
 #### StartNextPendingJobExecution log entry example
 <a name="log-job-start-next-pending-job-ex.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2018-06-13 17:49:51.036",
     "logLevel": "DEBUG",
@@ -2005,7 +2005,7 @@ The AWS IoT Jobs service generates a log entry with an `eventType` of `UpdateJob
 #### UpdateJobExecution log entry example
 <a name="log-job-update-job-ex.example"></a>
 
-```
+```JSON
 {
     "timestamp": "2017-08-10 19:25:14.758",
     "logLevel": "DEBUG",
@@ -2062,7 +2062,7 @@ The AWS IoT Device Provisioning service generates a log entry with an `eventType
 #### GetDeviceCredentials log entry example
 <a name="log-provision-get-device-credentials.example"></a>
 
-```
+```JSON
 {
   "timestamp" : "2019-02-20 20:31:22.932",
   "logLevel" : "INFO",
@@ -2091,7 +2091,7 @@ The AWS IoT Device Provisioning service generates a log entry with an `eventType
 #### ProvisionDevice log entry example
 <a name="log-provision-provision-device.example"></a>
 
-```
+```JSON
 {
   "timestamp" : "2019-02-20 20:31:22.932",
   "logLevel" : "INFO",
@@ -2138,7 +2138,7 @@ For more information, see [Dynamic Thing Group Limitations and Conflicts](dynami
 
 This example shows the log entry of an `AddThingToDynamicThingGroupsFailed` error. In this example, *TestThing* met the criteria to be in the dynamic thing groups listed in `dynamicThingGroupNames`, but could not be added to those dynamic groups, as described in `reason`.
 
-```
+```JSON
 {
  "timestamp": "2020-03-16 22:24:43.804",
  "logLevel": "ERROR",
@@ -2186,7 +2186,7 @@ A maximum of 25 named shadows per thing are processed for query terms that are n
 
 This example shows the log entry of a `NamedShadowCountForDynamicGroupQueryLimitExceeded` error. In this example, all-values based `DynamicGroup` results can be inaccurate, as described in the `reason` field.
 
-```
+```JSON
 {
 "timestamp": "2020-03-16 22:24:43.804",
 "logLevel": "ERROR",

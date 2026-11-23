@@ -27,7 +27,7 @@ The following code example shows how to use `DescribeTextTranslationJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/xl8#code-examples).
 
-```
+```sap-abap
     "Gets the properties associated with an asynchronous batch translation job."
     "Includes properties such as name, ID, status, source and target languages, and input/output Amazon Simple Storage Service (Amazon S3) buckets."
     TRY.
@@ -52,7 +52,7 @@ The following code example shows how to use `ListTextTranslationJobs`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/xl8#code-examples).
 
-```
+```sap-abap
     "Gets a list of the batch translation jobs that you have submitted."
 
     DATA lo_filter TYPE REF TO /aws1/cl_xl8textxlationjobfilt.
@@ -84,7 +84,7 @@ The following code example shows how to use `StartTextTranslationJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/xl8#code-examples).
 
-```
+```sap-abap
     "Starts an asynchronous batch translation job."
     "Use batch translation jobs to translate large volumes of text across multiple documents at once."
 
@@ -137,7 +137,7 @@ The following code example shows how to use `StopTextTranslationJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/xl8#code-examples).
 
-```
+```sap-abap
     "Stops an asynchronous batch translation job that is in progress."
 
     TRY.
@@ -162,7 +162,7 @@ The following code example shows how to use `TranslateText`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/xl8#code-examples).
 
-```
+```sap-abap
     "Translates input text from the source language to the target language."
     TRY.
         oo_result = lo_xl8->translatetext(      "oo_result is returned for testing purposes."
@@ -204,7 +204,7 @@ The following code example shows how to:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/xl8#code-examples).
 
-```
+```sap-abap
     DATA lo_inputdataconfig  TYPE REF TO /aws1/cl_xl8inputdataconfig.
     DATA lo_outputdataconfig TYPE REF TO /aws1/cl_xl8outputdataconfig.
     DATA lt_targetlanguagecodes TYPE /aws1/cl_xl8tgtlanguagecodes00=>tt_targetlanguagecodestrlist.

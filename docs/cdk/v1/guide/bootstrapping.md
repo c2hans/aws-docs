@@ -180,7 +180,7 @@ cdk bootstrap aws://{{ACCOUNT-NUMBER}}/{{REGION}}
 
 The modern template is also selected when you issue **cdk bootstrap** in an AWS CDK app directory where the `@aws-cdk/core:newStyleStackSynthesis` feature flag is set in the app's `cdk.json` file.
 
-```
+```json
 {
   // ...
   "context": {
@@ -271,7 +271,7 @@ You can pass a stack synthesizer to a stack when you instantiate it using the `s
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 new MyStack(this, 'MyStack', {
   // stack properties
   synthesizer: new DefaultStackSynthesizer({
@@ -283,7 +283,7 @@ new MyStack(this, 'MyStack', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 new MyStack(this, 'MyStack', {
   // stack properties
   synthesizer: new DefaultStackSynthesizer({
@@ -295,7 +295,7 @@ new MyStack(this, 'MyStack', {
 ------
 #### [ Python ]
 
-```
+```python
 MyStack(self, "MyStack",
     # stack properties
     synthesizer=DefaultStackSynthesizer(
@@ -306,7 +306,7 @@ MyStack(self, "MyStack",
 ------
 #### [ Java ]
 
-```
+```java
 new MyStack(app, "MyStack", StackProps.builder()
     // stack properties
 		.synthesizer(DefaultStackSynthesizer.Builder.create()
@@ -318,7 +318,7 @@ new MyStack(app, "MyStack", StackProps.builder()
 ------
 #### [ C\# ]
 
-```
+```csharp
 new MyStack(app, "MyStack", new StackProps
 // stack properties
 {
@@ -362,7 +362,7 @@ To change the qualifier, configure the `DefaultStackSynthesizer` either by insta
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 new MyStack(this, 'MyStack', {
   synthesizer: new DefaultStackSynthesizer({
     qualifier: 'MYQUALIFIER',
@@ -373,7 +373,7 @@ new MyStack(this, 'MyStack', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 new MyStack(this, 'MyStack', {
   synthesizer: new DefaultStackSynthesizer({
     qualifier: 'MYQUALIFIER',
@@ -384,7 +384,7 @@ new MyStack(this, 'MyStack', {
 ------
 #### [ Python ]
 
-```
+```python
 MyStack(self, "MyStack",
     synthesizer=DefaultStackSynthesizer(
         qualifier="MYQUALIFIER"
@@ -394,7 +394,7 @@ MyStack(self, "MyStack",
 ------
 #### [ Java ]
 
-```
+```java
 new MyStack(app, "MyStack", StackProps.builder()
 		.synthesizer(DefaultStackSynthesizer.Builder.create()
 				.qualifier("MYQUALIFIER")
@@ -405,7 +405,7 @@ new MyStack(app, "MyStack", StackProps.builder()
 ------
 #### [ C\# ]
 
-```
+```csharp
 new MyStack(app, "MyStack", new StackProps
 {
     Synthesizer = new DefaultStackSynthesizer(new DefaultStackSynthesizerProps
@@ -419,7 +419,7 @@ new MyStack(app, "MyStack", new StackProps
 
 Or by configuring the qualifier as a context key in `cdk.json`.
 
-```
+```json
 {
   "app": "...",
   "context": {
@@ -440,7 +440,7 @@ The following example shows the most commonly-used properties for `DefaultStackS
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 new DefaultStackSynthesizer({
   // Name of the S3 bucket for file assets
   fileAssetsBucketName: 'cdk-${Qualifier}-assets-${AWS::AccountId}-${AWS::Region}',
@@ -480,7 +480,7 @@ new DefaultStackSynthesizer({
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 new DefaultStackSynthesizer({
   // Name of the S3 bucket for file assets
   fileAssetsBucketName: 'cdk-${Qualifier}-assets-${AWS::AccountId}-${AWS::Region}',
@@ -519,7 +519,7 @@ new DefaultStackSynthesizer({
 ------
 #### [ Python ]
 
-```
+```python
 DefaultStackSynthesizer(
   # Name of the S3 bucket for file assets
   file_assets_bucket_name="cdk-${Qualifier}-assets-${AWS::AccountId}-${AWS::Region}",
@@ -558,7 +558,7 @@ DefaultStackSynthesizer(
 ------
 #### [ Java ]
 
-```
+```java
 DefaultStackSynthesizer.Builder.create()
     // Name of the S3 bucket for file assets
     .fileAssetsBucketName("cdk-${Qualifier}-assets-${AWS::AccountId}-${AWS::Region}")
@@ -596,7 +596,7 @@ DefaultStackSynthesizer.Builder.create()
 ------
 #### [ C\# ]
 
-```
+```csharp
 new DefaultStackSynthesizer(new DefaultStackSynthesizerProps
 {
     // Name of the S3 bucket for file assets
@@ -644,7 +644,7 @@ The requirements of the bootstrapping stack depend on the stack synthesizer in u
 
 The template should contain a resource to create an SSM parameter with a well-known name and an output to reflect the template's version.
 
-```
+```yaml
 Resources:
   CdkBootstrapVersion:
     Type: AWS::SSM::Parameter

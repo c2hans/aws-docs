@@ -59,7 +59,7 @@ If you used the **Quick setup** option when creating your SageMaker AI domain, f
 
 ****
 
-           ```
+           ```json
            {
                "Version":"2012-10-17",
                "Statement": [
@@ -95,7 +95,7 @@ If you used the **Quick setup** option when creating your SageMaker AI domain, f
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -140,7 +140,7 @@ If you created or use a custom domain, follow steps 1-3 from Scenario 1, and the
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [{
@@ -179,7 +179,7 @@ If you created or use a custom domain, follow all steps from Scenario 2, then fo
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -210,7 +210,7 @@ If you created or use a custom domain, follow all steps from Scenario 2, then fo
 
    1. Use the following IAM policy to ensure that EMR Serverless applications can only create Amazon EC2 ENIs within the allowed subnets and security groups:
 
-      ```
+      ```json
       {
           "Sid": "AllowEC2ENICreationInSubnetAndSecurityGroupWithEMRTags",
           "Effect": "Allow",

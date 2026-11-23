@@ -27,7 +27,7 @@ The following policy provides permissions to all Fleet Manager features. This me
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -160,7 +160,7 @@ The following policy provides permissions to read-only Fleet Manager features. R
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

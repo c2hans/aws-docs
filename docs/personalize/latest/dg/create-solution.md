@@ -71,7 +71,7 @@ To create a solution with the AWS CLI, use the `create-solution` command. This c
 
 To use the code, update it to give the solution a name, specify the Amazon Resource Name (ARN) of your dataset group, optionally change the training frequency, and specify the ARN of the recipe to use. For information about recipes, see [Choosing a recipe](working-with-predefined-recipes.md).
 
-```
+```cmd
 aws personalize create-solution \
 --name {{solution name}} \
 --dataset-group-arn {{dataset group ARN}} \
@@ -102,7 +102,7 @@ To use the code, update it to give the solution a name, specify the Amazon Resou
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')
@@ -125,7 +125,7 @@ print('solution_arn: ', solution_arn)
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 import {
   CreateSolutionCommand,
   PersonalizeClient,
@@ -171,7 +171,7 @@ After you create the solution, record the solution ARN for future use. With auto
 
 You can use the following Python code to wait for automatic training to start. The `wait_for_training_to_start` method returns the ARN of the first solution version.
 
-```
+```py
 import time
 import boto3
 

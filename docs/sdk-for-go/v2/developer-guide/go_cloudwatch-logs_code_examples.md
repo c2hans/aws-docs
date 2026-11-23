@@ -24,7 +24,7 @@ The following code example shows how to use `StartLiveTail`.
 **SDK for Go V2**
 Include the required files.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -37,7 +37,7 @@ import (
 ```
 Handle the events from the Live Tail session.
 
-```
+```go
 func handleEventStreamAsync(stream *cloudwatchlogs.StartLiveTailEventStream) {
 	eventsChan := stream.Events()
 	for {
@@ -65,7 +65,7 @@ func handleEventStreamAsync(stream *cloudwatchlogs.StartLiveTailEventStream) {
 ```
 Start the Live Tail session.
 
-```
+```go
 	cfg, err := config.LoadDefaultConfig(context.TODO())
 	if err != nil {
 		panic("configuration error, " + err.Error())
@@ -90,7 +90,7 @@ Start the Live Tail session.
 ```
 Stop the Live Tail session after a period of time has elapsed.
 
-```
+```go
 	// Close the stream (which ends the session) after a timeout
 	time.Sleep(10 * time.Second)
 	stream.Close()

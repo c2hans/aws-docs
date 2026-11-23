@@ -8,6 +8,8 @@ Although an ExpressLink module operates as a state machine that moves through a 
 
 <a name="elpg-figure1"></a>![Figure 1 - ExpressLink internal states diagram (partial)](https://docs.aws.amazon.com/iot-expresslink/archive/v0.5/programmersguide/images/internal-states.png)
 
+Figure 1 - ExpressLink internal states diagram (partial)
+
 The application or host processor is presented with a small command set that is independent from the connectivity solution offered by the specific module (Ethernet, cellular, Wi-Fi, ...).
 
 The command interface is designed to be stateless, with all interactions initiated exclusively from the host side. When an asynchronous event occurs (a message is received or an internal error condition occurs), the ExpressLink module queues the event and flags its availability to the host. A host can choose to ignore most event notifications and only periodically poll the receive queue if desired. (See [6.1 Event handling commands](elpg-event-handling.md#elpg-event-handling-commands).)

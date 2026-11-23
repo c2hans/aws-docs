@@ -10,7 +10,7 @@ To improve endpoint availability and reduce insufficient capacity errors, you ca
 
 The following example shows how to create an endpoint configuration using AWS SDK for Python (Boto3):
 
-```
+```python
 import datetime
 from time import gmtime, strftime
 

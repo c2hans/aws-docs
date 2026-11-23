@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-graphqlapi-resolver-syntax-yaml"></a>
 
-```
+```yaml
 {{OperationType}}:
   {{LogicalId}}:
     Caching: {{[CachingConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-cachingconfig.html)}}
@@ -102,7 +102,7 @@ Specifies which Conflict Detection strategy and Resolution strategy to use when 
 
 Here is the GraphQL schema for our example:
 
-```
+```json
 schema {
   query: Query
   mutation: Mutation
@@ -126,7 +126,7 @@ type Post {
 
 Here is a snippet of our AWS SAM template:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...
@@ -153,7 +153,7 @@ Resources:
 
 In our AWS SAM template, we don’t specify `CodeUri` or `InlineCode`. At deployment, AWS SAM automatically generates the following inline code for our resolver:
 
-```
+```javascript
 export function request(ctx) {
   return {};
 }
@@ -167,7 +167,7 @@ This default resolver code redirects the request to the first pipeline function 
 
 In our first pipeline function, we can use the provided `args` field to parse the request object and create our variables. We can then use these variables within our function. Here is an example of our `preprocessPostItem` function:
 
-```
+```javascript
 import { util } from "@aws-appsync/utils";
 
 export function request(ctx) {

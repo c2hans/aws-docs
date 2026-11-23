@@ -38,7 +38,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a new IAM role.
     /// </summary>
@@ -66,7 +66,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -161,7 +161,7 @@ function iam_create_role() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::createIamRole(
         const Aws::String &roleName,
         const Aws::String &policy,
@@ -359,7 +359,7 @@ For more information, see [Tagging IAM roles](https://docs.aws.amazon.com/IAM/la
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -416,7 +416,7 @@ func (wrapper RoleWrapper) CreateRole(ctx context.Context, roleName string, trus
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import software.amazon.awssdk.services.iam.model.CreateRoleRequest;
@@ -501,7 +501,7 @@ public class CreateRole {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Create the role.
 
-```
+```javascript
 import { CreateRoleCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -538,7 +538,7 @@ export const createRole = (roleName) => {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -578,7 +578,7 @@ echo "Created role: {$assumeRoleRole['RoleName']}\n";
 **Tools for PowerShell V4**
 **Example 1: This example creates a new role named `MyNewRole` and attaches to it the policy found in the file `NewRoleTrustPolicy.json`. Note that you must use the `-Raw` switch parameter to successfully process the JSON policy file. The policy document displayed in the output is URL encoded. It is decoded in this example with the `UrlDecode` .NET method. **
 
-```
+```powershell
 $results = New-IAMRole -AssumeRolePolicyDocument (Get-Content -raw NewRoleTrustPolicy.json) -RoleName MyNewRole
 $results
 ```
@@ -619,7 +619,7 @@ RoleName                 : MyNewRole
 **Tools for PowerShell V5**
 **Example 1: This example creates a new role named `MyNewRole` and attaches to it the policy found in the file `NewRoleTrustPolicy.json`. Note that you must use the `-Raw` switch parameter to successfully process the JSON policy file. The policy document displayed in the output is URL encoded. It is decoded in this example with the `UrlDecode` .NET method. **
 
-```
+```powershell
 $results = New-IAMRole -AssumeRolePolicyDocument (Get-Content -raw NewRoleTrustPolicy.json) -RoleName MyNewRole
 $results
 ```
@@ -663,7 +663,7 @@ RoleName                 : MyNewRole
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def create_role(role_name, allowed_services):
     """
     Creates a role that lets a list of specified services assume the role.
@@ -703,7 +703,7 @@ def create_role(role_name, allowed_services):
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Creates a role and attaches policies to it.
   #
   # @param role_name [String] The name of the role.
@@ -738,7 +738,7 @@ def create_role(role_name, allowed_services):
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn create_role(
     client: &iamClient,
     role_name: &str,
@@ -767,7 +767,7 @@ pub async fn create_role(
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_iam->createrole(
           iv_rolename = iv_role_name
@@ -789,7 +789,7 @@ pub async fn create_role(
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/iam#code-examples).
 
-```
+```swift
 import AWSIAM
 import AWSS3
 

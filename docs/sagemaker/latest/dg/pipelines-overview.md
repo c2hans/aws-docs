@@ -37,6 +37,8 @@ The following topics describe fundamental Pipelines concepts. For a tutorial des
 + [Caching pipeline steps](pipelines-caching.md)
 + [Retry Policy for Pipeline Steps](pipelines-retry-policy.md)
 + [Selective execution of pipeline steps](pipelines-selective-ex.md)
++ [Pipeline version aliases](pipelines-version-aliases.md)
++ [AWS managed pipelines](pipelines-managed.md)
 + [Baseline calculation, drift detection and lifecycle with ClarifyCheck and QualityCheck steps in Amazon SageMaker Pipelines](pipelines-quality-clarify-baseline-lifecycle.md)
 + [Schedule Pipeline Runs](pipeline-eventbridge.md)
 + [Amazon SageMaker Experiments Integration](pipelines-experiments.md)

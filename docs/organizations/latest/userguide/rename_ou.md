@@ -33,7 +33,7 @@ You can use one of the following commands to rename an OU:
 
   The following example shows how to rename an OU.
 
-  ```
+  ```bash
   $ aws organizations update-organizational-unit \
       --organizational-unit-id ou-a1b2-f6g7h222 \
       --name "Renamed-OU"

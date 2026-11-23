@@ -15,7 +15,7 @@ The following is an example of a trust policy in an IAM role that allows the IAM
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

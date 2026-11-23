@@ -9,7 +9,7 @@ Returns whether the specified hours of operation object (or the hours of operati
 ## Parameter object
 <a name="checkhoursofoperation-parameter"></a>
 
-```
+```json
 {
   "HoursOfOperationId": [Optional] An hours of operation ID or hours of operation ARN. *Must be either fully static or fully dynamic*. If not specified, the TargetQueue's hours of operation for the contact are used
 }

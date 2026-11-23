@@ -245,7 +245,7 @@ Use the following procedure to import data from Snowflake to Amazon SageMaker Ca
 
      Your secret should have your Snowflake credentials stored in the following JSON format:
 
-     ```
+     ```json
      {"accountid": "{{ID}}",
      "username": "{{username}}",
      "password": "{{password}}"}

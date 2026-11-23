@@ -99,7 +99,7 @@ The following is an example of deprovisioning an address range, and the response
 aws globalaccelerator deprovision-byoip-cidr --cidr "198.51.100.0/24"
 ```
 
-```
+```json
 {
     "ByoipCidr": {
         "Cidr": "198.51.100.0/24",

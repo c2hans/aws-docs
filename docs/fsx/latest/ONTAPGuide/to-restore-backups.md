@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/to-restore-backups
 
 # Restoring a backup to a new volume
 
-The following procedures describe how to restore an FSx for ONTAP backup to a new volume using the AWS Management Console and AWS CLI. When restoring a volume to a second-generation file system, you can [monitor](monitor-backup-restore.md) the progress using the AWS Management Console, AWS CLI, and API.<a name="volume-restore-console"></a>
+The following procedures describe how to restore an FSx for ONTAP backup to a new volume using the AWS Management Console and AWS CLI. When restoring a volume to a second-generation or third-generation file system, you can [monitor](monitor-backup-restore.md) the progress using the AWS Management Console, AWS CLI, and API.<a name="volume-restore-console"></a>
 
 **To restore a volume backup to a new volume (Console)**
 
@@ -42,7 +42,7 @@ The following procedures describe how to restore an FSx for ONTAP backup to a ne
 
 1. Choose **Confirm** to create the volume.
 
-1. If you are restoring the backup to a second-generation file system, you can monitor the backup restore progress on the **Updates** tab on the **Volume** page. For more information, see [Monitoring progress when restoring a backup](monitor-backup-restore.md). <a name="volume-restore-cli"></a>
+1. If you are restoring the backup to a second-generation or third-generation file system, you can monitor the backup restore progress on the **Updates** tab on the **Volume** page. For more information, see [Monitoring progress when restoring a backup](monitor-backup-restore.md). <a name="volume-restore-cli"></a>
 
 **To restore a backup to a new volume (CLI)**
 
@@ -55,7 +55,7 @@ Use the [ create-volume-from-backup](https://docs.aws.amazon.com/cli/latest/refe
         StorageVirtualMachineId=svm-0f04a9c7c27e1908b,TieringPolicy={Name=ALL}
   ```
 
-  The system response for a successful restore request to restore a backup to a second-generation file system looks as follows. The response includes the `"AdministrativeActions"` object which provides status and progress information about request..
+  The system response for a successful restore request to restore a backup to a second-generation or third-generation file system looks as follows. The response includes the `"AdministrativeActions"` object which provides status and progress information about request..
 
   ```
   {
@@ -122,4 +122,4 @@ Use the [ create-volume-from-backup](https://docs.aws.amazon.com/cli/latest/refe
     }
   ```
 
-  When restoring a volume to a second-generation file system, you can [monitor the progress](monitor-backup-restore.md) using the AWS Management Console, AWS CLI, and API.
+  When restoring a volume to a second-generation or third-generation file system, you can [monitor the progress](monitor-backup-restore.md) using the AWS Management Console, AWS CLI, and API.

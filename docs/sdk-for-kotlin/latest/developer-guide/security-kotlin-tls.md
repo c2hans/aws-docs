@@ -18,12 +18,12 @@ TLS 1.2 is supported starting in Java 7. TLS 1.3 is supported starting in Java 1
 
 To check which TLS versions are supported in your Java virtual machine (JVM), you can use the following code.
 
-```
+```kotlin
 println(SSLContext.getDefault().supportedSSLParameters.protocols.joinToString(separator = ", "))
 ```
 
 To see the SSL handshake in action and what version of TLS is used, you can use the system property **javax.net.debug**.
 
-```
+```bash
 -Djavax.net.debug=ssl
 ```

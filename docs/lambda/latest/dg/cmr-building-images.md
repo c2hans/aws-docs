@@ -76,7 +76,7 @@ Lambda base images include all three paths. If you build from another base image
 
 Some base images don't include `/etc/hosts` or `/etc/resolv.conf` in the image itself. Docker adds these files only when a container runs. As a result, a file that you create with a `RUN` instruction doesn't persist in the image. Instead, use a `COPY` instruction to add each file to the image. The following Dockerfile instructions add the required paths. In this example, `hosts` and `resolv.conf` are files in the build context.
 
-```
+```dockerfile
 COPY hosts /etc/hosts
 COPY resolv.conf /etc/resolv.conf
 RUN mkdir -p /var/task
@@ -143,7 +143,7 @@ A function can use a runtime only if the runtime supports the function's archite
 
 To build a multi-architecture image, use the **docker buildx build** command and specify both platforms:
 
-```
+```bash
 docker buildx build \
   --platform linux/amd64,linux/arm64 \
   --tag 123456789012.dkr.ecr.us-east-1.amazonaws.com/companyphp8:v8.3.1 \
@@ -168,7 +168,7 @@ The integration model declares how the runtime connects to Lambda. The only supp
 
 If the image doesn't set this label, Lambda uses `RuntimeAPI`. For runtimes that Lambda Event Functions use, you don't need to set the label. To set it explicitly, add the following `LABEL` instruction:
 
-```
+```dockerfile
 LABEL com.amazonaws.lambda.feature.integrationmodel="RuntimeAPI"
 ```
 
@@ -183,7 +183,7 @@ Set the label to one of the following values:
 + `Supported` – Functions on Lambda Managed Instances can use the runtime.
 + `NotSupported` – Functions on Lambda Managed Instances can't use the runtime.
 
-```
+```dockerfile
 LABEL com.amazonaws.lambda.feature.managedinstances="Supported"
 ```
 
@@ -194,7 +194,7 @@ To support Lambda Managed Instances, set the label to `Supported`. The value isn
 
 The following Dockerfile sets the Lambda Managed Instances label on a runtime image that builds from a Lambda base image. The image doesn't set the integration model label, so Lambda uses `RuntimeAPI`.
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/python:3.14
 
 LABEL com.amazonaws.lambda.feature.managedinstances="Supported"
@@ -202,7 +202,7 @@ LABEL com.amazonaws.lambda.feature.managedinstances="Supported"
 
 You can also set several labels in a single `LABEL` instruction. The following example also sets the integration model explicitly:
 
-```
+```dockerfile
 LABEL com.amazonaws.lambda.feature.integrationmodel="RuntimeAPI" \
       com.amazonaws.lambda.feature.managedinstances="Supported"
 ```

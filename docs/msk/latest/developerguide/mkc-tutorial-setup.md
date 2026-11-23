@@ -70,7 +70,7 @@ In this step you create the following resources that you need for this getting-s
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -176,7 +176,7 @@ You can't edit the name of the role after it's created because other entities mi
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

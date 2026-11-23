@@ -12,7 +12,7 @@ AWS provides service principals with managed access to resources on your account
 
 The following example shows an S3 bucket policy that uses the `aws:SourceAccount` global condition context key in the configured `CallDetailRecords` S3 bucket to help prevent the confused deputy problem.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

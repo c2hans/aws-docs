@@ -16,6 +16,7 @@ Sellers in India have geographic restrictions and can only sell to buyers in Ind
 + **Amazon Machine Image (AMI)-based products**, including AMI products delivered with a CloudFormation template, and **EC2 Image Builder component products** – You choose the Regions where buyers can install and use your product. You can also turn on future Region support, which adds your product to new Regions as they launch. You can include all new Regions or only new US Regions. For steps, see [Managing AMI-based product availability by AWS Region and country](single-ami-regions.md) and [Managing EC2 Image Builder product availability by AWS Region and country](single-ib-regions.md).
 + **Container products** – You don't choose Regions. AWS Marketplace stores your container images and Helm charts in the US East (N. Virginia) Region. Buyers who subscribe can deploy your product in other Regions. They pull the image from the US East (N. Virginia) Region.
 + **Machine learning products** – You don't choose Regions. AWS Marketplace makes your product available in the Regions where it supports machine learning products. For the criteria, see [Supported AWS Regions for publishing](ml-service-restrictions-and-limits.md#ml-supported-aws-regions-for-publishing).
++ **RTB Fabric module products** – You don't choose a Region in AWS Marketplace for this product type. You choose the Region in the fulfilling service – the AWS RTB Fabric service.
 
  For more information about AWS Regions, see [AWS service endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) in the AWS General Reference.
 
@@ -31,3 +32,6 @@ Sellers in India have geographic restrictions and can only sell to buyers in Ind
 **Note**
 Customer eligibility is determined at an AWS linked account level. For more information, see [How does AWS determine the Location of your account?](https://aws.amazon.com/tax-help/location/)
 Customers that share their entitlement can only activate the entitlement in a region you have allowed. For more information about managing entitlements, see [Sharing subscriptions in an organization](https://docs.aws.amazon.com/marketplace/latest/buyerguide/organizations-sharing.html) in the *AWS Marketplace Buyer Guide*.
+
+**Note**
+[AWS Marketplace Express Checkout](saas-express-checkout.md) is available to buyers in the United States and Canada.

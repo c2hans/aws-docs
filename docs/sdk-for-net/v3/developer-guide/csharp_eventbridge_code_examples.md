@@ -32,7 +32,7 @@ The following code example shows how to get started using EventBridge.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 
-```
+```csharp
 using Amazon.EventBridge;
 using Amazon.EventBridge.Model;
 
@@ -83,7 +83,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 public class EventBridgeScenario
 {
     /*
@@ -680,7 +680,7 @@ public class EventBridgeScenario
 ```
 Create a class that wraps EventBridge operations.
 
-```
+```csharp
 /// <summary>
 /// Wrapper for Amazon EventBridge operations.
 /// </summary>
@@ -1115,7 +1115,7 @@ The following code example shows how to use `DeleteRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 Delete a rule by its name.
 
-```
+```csharp
     /// <summary>
     /// Delete an event rule by name.
     /// </summary>
@@ -1143,7 +1143,7 @@ The following code example shows how to use `DescribeRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 Get the state of a rule using the rule description.
 
-```
+```csharp
     /// <summary>
     /// Get the state for a rule by the rule name.
     /// </summary>
@@ -1172,7 +1172,7 @@ The following code example shows how to use `DisableRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 Disable a rule by its rule name.
 
-```
+```csharp
     /// <summary>
     /// Disable a particular rule on an event bus.
     /// </summary
@@ -1199,7 +1199,7 @@ The following code example shows how to use `EnableRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 Enable a rule by its rule name.
 
-```
+```csharp
     /// <summary>
     /// Enable a particular rule on an event bus.
     /// </summary>
@@ -1226,7 +1226,7 @@ The following code example shows how to use `ListRuleNamesByTarget`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 List all of the rule names using the target.
 
-```
+```csharp
     /// <summary>
     /// List names of all rules matching a target.
     /// </summary>
@@ -1262,7 +1262,7 @@ The following code example shows how to use `ListRules`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 List all of the rules for an event bus.
 
-```
+```csharp
     /// <summary>
     /// List the rules on an event bus.
     /// </summary>
@@ -1299,7 +1299,7 @@ The following code example shows how to use `ListTargetsByRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 List all of the targets for a rule using the rule name.
 
-```
+```csharp
     /// <summary>
     /// List all of the targets matching a rule by name.
     /// </summary>
@@ -1335,7 +1335,7 @@ The following code example shows how to use `PutEvents`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 Send an event that matches a custom pattern for a rule.
 
-```
+```csharp
     /// <summary>
     /// Add an event to the event bus that includes an email, message, and time.
     /// </summary>
@@ -1377,7 +1377,7 @@ The following code example shows how to use `PutRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 Create a rule that triggers when an object is added to an Amazon Simple Storage Service bucket.
 
-```
+```csharp
     /// <summary>
     /// Create a new event rule that triggers when an Amazon S3 object is created in a bucket.
     /// </summary>
@@ -1411,7 +1411,7 @@ Create a rule that triggers when an object is added to an Amazon Simple Storage 
 ```
 Create a rule that uses a custom pattern.
 
-```
+```csharp
     /// <summary>
     /// Update a rule to use a custom defined event pattern.
     /// </summary>
@@ -1446,7 +1446,7 @@ The following code example shows how to use `PutTargets`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 Add an Amazon SNS topic as a target for a rule.
 
-```
+```csharp
     /// <summary>
     /// Add an Amazon SNS target topic to a rule.
     /// </summary>
@@ -1491,7 +1491,7 @@ Add an Amazon SNS topic as a target for a rule.
 ```
 Add an input transformer to a target for a rule.
 
-```
+```csharp
     /// <summary>
     /// Update an Amazon S3 object created rule with a transform on the target.
     /// </summary>
@@ -1549,7 +1549,7 @@ The following code example shows how to use `RemoveTargets`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 Remove all of the targets for a rule using the rule name.
 
-```
+```csharp
     /// <summary>
     /// Delete an event rule by name.
     /// </summary>

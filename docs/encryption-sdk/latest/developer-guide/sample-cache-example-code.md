@@ -29,7 +29,7 @@ Because the call to the encrypt method specifies a caching CMM, instead of a reg
 
 The following example uses version 2.*x* of the AWS Encryption SDK for Java. Version 3.*x* of the AWS Encryption SDK for Java deprecates the data key caching CMM. With version 3.*x*, you can also use the [AWS KMS Hierarchical keyring](use-hierarchical-keyring.md), an alternative cryptographic materials caching solution.
 
-```
+```java
 /*
  * Copyright 2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -158,7 +158,7 @@ public class MultiRegionRecordPusher {
 ------
 #### [ Python ]
 
-```
+```python
 """
 Copyright 2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
@@ -258,7 +258,7 @@ The following example uses version 2.*x* of the AWS Encryption SDK for Java. Ver
 
 This code creates a master key provider for decrypting in strict mode. The AWS Encryption SDK can use only the AWS KMS keys you specify to decrypt your message.
 
-```
+```java
 /*
  * Copyright 2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -366,7 +366,7 @@ public class LambdaDecryptAndWrite {
 
 This Python code decrypts with a master key provider in discovery mode. It lets the AWS Encryption SDK use any wrapping key that encrypted a data key to decrypt it. Strict mode, in which you specify the wrapping keys that can be used for decryption, is a [best practice](best-practices.md#strict-discovery-mode).
 
-```
+```python
 """
 Copyright 2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 

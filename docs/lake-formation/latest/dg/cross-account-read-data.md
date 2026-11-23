@@ -20,7 +20,7 @@ Replace {{<table>}} with the name of the shared table.
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

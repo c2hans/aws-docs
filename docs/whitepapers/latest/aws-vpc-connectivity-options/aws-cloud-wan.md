@@ -24,6 +24,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
 ![Diagram showing AWS Cloud WAN.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/image26.png)
 
+AWS Cloud WAN
+
 ## Additional resources
 <a name="additional-resources-17"></a>
 +  [AWS Cloud WAN Documentation](https://docs.aws.amazon.com/vpc/latest/cloudwan/what-is-cloudwan.html)

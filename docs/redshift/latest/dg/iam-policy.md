@@ -19,7 +19,7 @@ You can deny authorizing or deauthorizing data sharing for any consumer that isn
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -50,7 +50,7 @@ You can allow a producer with a DataShareArn **testshare2** to explicitly share 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

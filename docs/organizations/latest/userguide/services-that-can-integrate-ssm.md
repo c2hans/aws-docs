@@ -69,7 +69,7 @@ Use the following AWS CLI commands or API operations to enable trusted service a
 
   Run the following command to enable AWS Systems Manager as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations enable-aws-service-access \
       --service-principal ssm.amazonaws.com
   ```
@@ -116,7 +116,7 @@ You can use the following AWS CLI commands or API operations to disable trusted 
 
   Run the following command to disable AWS Systems Manager as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations disable-aws-service-access \
       --service-principal ssm.amazonaws.com
   ```

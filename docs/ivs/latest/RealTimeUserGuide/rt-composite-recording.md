@@ -155,7 +155,7 @@ The example below shows an S3 bucket policy that allows IVS to write to the S3 b
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -474,7 +474,7 @@ The snippet below illustrates an S3 bucket policy that allows CloudFront to read
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

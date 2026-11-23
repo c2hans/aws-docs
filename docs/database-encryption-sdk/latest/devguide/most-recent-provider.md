@@ -42,7 +42,7 @@ Each Most Recent Provider has a name that identifies its CMPs in the MetaStore t
 ------
 #### [ Java ]
 
-```
+```java
 // Set the name for MetaStore's internal table
 final String keyTableName = 'metaStoreTable'
 
@@ -78,7 +78,7 @@ final CachingMostRecentProvider cmp = new CachingMostRecentProvider(metaStore, m
 ------
 #### [ Python ]
 
-```
+```python
 # Designate an AWS KMS key
 kms_key_id = 'arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab'
 

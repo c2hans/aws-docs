@@ -57,7 +57,7 @@ Creating and associating a policy changes how usage is itemized in your reports.
 
 1. Create a file named `policy-document.json` with the policy document. The following example allocates both NAT gateway dimensions and labels usage by source range.
 
-   ```
+   ```json
    {
      "ReportingGranularity": ["cidr"],
      "Dimensions": ["data-transfer", "data-processing"],
@@ -137,7 +137,7 @@ Creating and associating a policy changes how usage is itemized in your reports.
 
 The following template creates a NAT gateway policy and associates it with a NAT gateway that you specify. For the resource reference and more examples, see [Create Networking Flexible Cost Allocation resources with AWS CloudFormation](networking-flex-cost-allocation-cfn.md).
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Networking Flexible Cost Allocation policy for a NAT gateway
 Parameters:

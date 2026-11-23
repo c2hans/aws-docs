@@ -87,7 +87,7 @@ The following examples generate a text response to a text prompt using the Amazo
 
 Run the following command in a terminal and find the generated response in a file called {{invoke-model-output.txt}}.
 
-```
+```bash
 aws bedrock-runtime invoke-model \
     --model-id amazon.titan-text-premier-v1:0 \
     --body '{
@@ -106,7 +106,7 @@ aws bedrock-runtime invoke-model \
 
 Run the following Python code example to generate a text response:
 
-```
+```python
 # Use the native inference API to send a text message to Amazon Titan Text.
 
 import boto3
@@ -163,7 +163,7 @@ The following examples generate a text response to a text prompt using the OpenA
 
 Run the following command in a terminal and validate the service tier in the response.
 
-```
+```bash
 aws bedrock-runtime invoke-model \
     --model-id openai.gpt-oss-120b-1:0 \
     --body '{
@@ -187,7 +187,7 @@ aws bedrock-runtime invoke-model \
 
 Run the following Python code example to generate a text response with service tier:
 
-```
+```python
 import boto3
 import json
 
@@ -236,7 +236,7 @@ The following code examples generate an image using a text prompt with the Stabl
 
 Run the following command in a terminal and find the generated response in a file called {{invoke-model-output.txt}}. The bytes that represent the image can be found in the `base64` field in the response:
 
-```
+```bash
 aws bedrock-runtime invoke-model \
     --model-id stability.stable-image-core-v1:1 \
     --body '{
@@ -252,7 +252,7 @@ aws bedrock-runtime invoke-model \
 
 Run the following Python code example to generate an image and find the resulting {{stability\_1.png}} image file in a folder called {{output}}.
 
-```
+```python
 # Use the native inference API to create an image with Amazon Titan Image Generator
 
 import base64
@@ -327,7 +327,7 @@ The following examples use the Amazon Titan Text Embeddings V2 model to generate
 
 Run the following command in a terminal and find the generated response in a file called {{invoke-model-output.txt}}. The resulting embeddings are in the `binary` field.
 
-```
+```bash
 aws bedrock-runtime invoke-model \
     --model-id amazon.titan-embed-text-v2:0 \
     --body '{
@@ -343,7 +343,7 @@ aws bedrock-runtime invoke-model \
 
 Run the following Python code example to generate embeddings for the provided text:
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -436,13 +436,13 @@ Open a terminal and do the following:
 
 1. Convert an image titled {{image.png}} in your current folder into a base64-encoded string and write it to a file titled {{image.txt}} by running the following command:
 
-   ```
+   ```bash
    base64 -i {{image.png}} -o {{image.txt}}
    ```
 
 1. Create a JSON file called {{image-input-embeddings-output.json}} and paste the following JSON, replacing {{${image-base64}}} with the contents of the {{image.txt}} file (make sure there is no new line at the end of the string):
 
-   ```
+   ```json
    {
        "inputImage": "{{${image-base64}}}",
        "embeddingConfig": {
@@ -453,7 +453,7 @@ Open a terminal and do the following:
 
 1. Run the following command, specifying the {{image-input-embeddings-output.json}} file as the body.
 
-   ```
+   ```bash
    aws bedrock-runtime invoke-model \
        --model-id amazon.titan-embed-image-v1 \
        --body file://image-input-embeddings-output.json \
@@ -468,7 +468,7 @@ Open a terminal and do the following:
 
 In the following Python script, replace {{/path/to/image}} with the path to an actual image. Then run the script to generate embeddings:
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -582,13 +582,13 @@ The following example uses the Anthropic Claude 3 Haiku model to generate a resp
 
 1. Convert an image titled {{image.png}} in your current folder into a base64-encoded string and write it to a file titled {{image.txt}} by running the following command:
 
-   ```
+   ```bash
    base64 -i {{image.png}} -o {{image.txt}}
    ```
 
 1. Create a JSON file called {{image-text-input.json}} and paste the following JSON, replacing {{${image-base64}}} with the contents of the {{image.txt}} file (make sure there is no new line at the end of the string):
 
-   ```
+   ```json
    {
        "anthropic_version": "bedrock-2023-05-31",
        "max_tokens": 1000,
@@ -616,7 +616,7 @@ The following example uses the Anthropic Claude 3 Haiku model to generate a resp
 
 1. Run the following command to generate a text output, based on the image and the accompanying text prompt, to a file called {{invoke-model-output.txt}}:
 
-   ```
+   ```bash
    aws bedrock-runtime invoke-model \
        --model-id anthropic.claude-3-haiku-20240307-v1:0 \
        --body file://image-text-input.json \
@@ -631,7 +631,7 @@ The following example uses the Anthropic Claude 3 Haiku model to generate a resp
 
 In the following python script, replace {{/path/to/image.png}} with the actual path to the image before running the script:
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -743,7 +743,7 @@ Choose the tab for your preferred method, and then follow the steps:
 
 Open a terminal and run the following command, replacing {{s3://amzn-s3-demo-bucket/video.mp4}} with the actual S3 location of your video:
 
-```
+```bash
 aws bedrock-runtime invoke-model \
     --model-id amazon.nova-lite-v1:0 \
     --body '{
@@ -779,7 +779,7 @@ Find the output in the {{invoke-model-output.txt}} file in the current folder.
 
 In the following Python script, replace {{s3://amzn-s3-demo-bucket/video.mp4}} with the actual S3 location of your video. Then run the script:
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -887,13 +887,13 @@ Do the following:
 
 1. Convert a video titled {{video.mp4}} in your current folder into base64 by running the following command:
 
-   ```
+   ```bash
    base64 -i {{video.mp4}} -o video.txt
    ```
 
 1. Create a JSON file called {{video-text-input.json}} and paste the following JSON, replacing {{${video-base64}}} with the contents of the `video.txt` file (make sure there is no new line at the end):
 
-   ```
+   ```json
    {
        "messages": [
            {
@@ -918,7 +918,7 @@ Do the following:
 
 1. Run the following command to generate a text output based on the video and the accompanying text prompt to a file called {{invoke-model-output.txt}}:
 
-   ```
+   ```bash
    aws bedrock-runtime invoke-model \
        --model-id amazon.nova-lite-v1:0 \
        --body file://video-text-input.json \
@@ -933,7 +933,7 @@ Do the following:
 
 In the following Python script, replace {{/path/to/video.mp4}} with the actual path to the video. Then run the script:
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1039,7 +1039,7 @@ The AWS CLI does not support streaming.
 
 The following example shows how to use the [InvokeModelWithResponseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html) API to generate streaming text with Python using the prompt {{write an essay for living on mars in 1000 words}}.
 
-```
+```python
 import boto3
 import json
 

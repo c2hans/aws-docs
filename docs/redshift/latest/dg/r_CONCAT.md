@@ -37,7 +37,7 @@ If the input expressions are of different types, Amazon Redshift tries to implic
 
 The following example concatenates two character literals:
 
-```
+```sql
 SELECT CONCAT('December 25, ', '2008');
 
 concat
@@ -48,7 +48,7 @@ December 25, 2008
 
 The following query, using the `||` operator instead of CONCAT, produces the same result:
 
-```
+```sql
 SELECT 'December 25, '||'2008';
 
 ?column?
@@ -59,7 +59,7 @@ December 25, 2008
 
 The following example uses a nested CONCAT function inside another CONCAT function to concatenate three character strings:
 
-```
+```sql
 SELECT CONCAT('Thursday, ', CONCAT('December 25, ', '2008'));
 
 concat
@@ -70,7 +70,7 @@ Thursday, December 25, 2008
 
 To concatenate columns that might contain NULLs, use the [NVL and COALESCE functions](r_NVL_function.md), which returns a given value when it encounters NULL. The following example uses NVL to return a 0 whenever NULL is encountered.
 
-```
+```sql
 SELECT CONCAT(venuename, CONCAT(' seats ', NVL(venueseats, 0))) AS seating
 FROM venue WHERE venuestate = 'NV' OR venuestate = 'NC'
 ORDER BY 1
@@ -88,7 +88,7 @@ Harrahs Hotel seats 0
 
 The following query concatenates CITY and STATE values from the VENUE table:
 
-```
+```sql
 SELECT CONCAT(venuecity, venuestate)
 FROM venue
 WHERE venueseats > 75000
@@ -105,7 +105,7 @@ LandoverMD
 
 The following query uses nested CONCAT functions. The query concatenates CITY and STATE values from the VENUE table but delimits the resulting string with a comma and a space:
 
-```
+```sql
 SELECT CONCAT(CONCAT(venuecity,', '),venuestate)
 FROM venue
 WHERE venueseats > 75000
@@ -122,7 +122,7 @@ Landover, MD
 
 The following example concatenates two binary expressions. Where `abc` is a binary value (with a hexadecimal representation of `616263`) and `def` is a binary value (with hexadecimal representation of `646566`). The result is automatically shown as the hexadecimal representation of the binary value.
 
-```
+```sql
 SELECT CONCAT('abc'::VARBYTE, 'def'::VARBYTE);
 
 concat

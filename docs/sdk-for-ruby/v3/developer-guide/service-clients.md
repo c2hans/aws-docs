@@ -19,7 +19,7 @@ The SDK for Ruby includes client classes that provide interfaces to the AWS serv
 
 You can pass configuration options directly to Client and Resource constructors. These options take precedence over the environment and `Aws.config` defaults.
 
-```
+```ruby
 # using a credentials object
 ec2 = Aws::EC2::Client.new(region: 'us-west-2', credentials: credentials)
 ```

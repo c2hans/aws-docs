@@ -26,7 +26,7 @@ With Step Functions Workflow Studio in Infrastructure Composer, you can use the 
 
 When you connect tasks from your workflow to resources, Infrastructure Composer automatically creates the AWS Identity and Access Management (IAM) policies required to authorize the interaction between your resources. The following is an example:
 
-```
+```yaml
 Transform: AWS::Serverless-2016-10-31
 Resources:
   StockTradingStateMachine:
@@ -146,7 +146,7 @@ To create a connection, click and drag the port of a task to the left port of an
 
 Infrastructure Composer will automatically update your `DefinitionSubstitution` value to define your connection. The following is an example:
 
-```
+```yaml
 Transform: AWS::Serverless-2016-10-31
 Resources:
   StateMachine:

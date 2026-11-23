@@ -23,7 +23,7 @@ Each AWS PCS compute node group can launch EC2 instances with shared configurati
 
 1. Search for the instances with the following tag. Replace {{node-group-id}} with the **ID** (not the name) of your compute node group.
 
-   ```
+   ```txt
    aws:pcs:compute-node-group-id={{node-group-id}}
    ```
 
@@ -39,7 +39,7 @@ To find your node group instances, use the commands that follow. Before running 
 + Replace `{{node-group-id}}` with the **ID** (not the name) of your compute node group. To find the ID of a compute node group, see [Getting compute node group details in AWS PCS](working-with_cng_get-details.md).
 + Replace `running` with other instance states such as `pending` or `terminated` to find EC2 instances in other states.
 
-```
+```bash
 aws ec2 describe-instances \
      --region {{region-code}} --filters \
      "Name=tag:aws:pcs:compute-node-group-id,Values={{node-group-id}}" \

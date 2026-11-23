@@ -10,6 +10,8 @@ Create a secure, high-performing, and resilient foundation for your cloud enviro
 
 ![A chart showing which capabilities fall under each category.](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/security-category.png)
 
+*Security Category *
+
  Security capabilities include:
 +  **Identity Management & Access Control** helps you build and monitor permissions in your environment. Use this capability to structure access to your resources within defined isolated groups following the principal of least privilege (PoLP). This capability will help your team develop a framework to manage your environment and provide access to your services.
 +  **Data Isolation** enables you to limit access to data at rest and in transit so that data is only accessible to appropriate and authorized entities. This capability also includes the ability to detect misuse and/or unauthorized access, leak, and theft of data.

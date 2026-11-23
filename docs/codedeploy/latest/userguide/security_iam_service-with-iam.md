@@ -51,31 +51,31 @@ Administrators can use AWS JSON policies to specify who has access to what. That
 
 The `Resource` JSON policy element specifies the object or objects to which the action applies. As a best practice, specify a resource using its [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html). For actions that don't support resource-level permissions, use a wildcard (\*) to indicate that the statement applies to all resources.
 
-```
+```asciidoc perl powershell json bash xml gemspec
 "Resource": "*"
 ```
 
 For example, you can indicate a deployment group ({{myDeploymentGroup}}) in your statement using its ARN as follows:
 
-```
+```sh
 "Resource": "arn:aws:codedeploy:{{us-west-2}}:{{123456789012}}:deploymentgroup:{{myApplication}}/{{myDeploymentGroup}}"
 ```
 
 You can also specify all deployment groups that belong to an account by using the wildcard character (\*) as follows:
 
-```
+```sh
 "Resource": "arn:aws:codedeploy:{{us-west-2}}:{{123456789012}}:deploymentgroup:{{*}}"
 ```
 
 To specify all resources, or if an API action does not support ARNs, use the wildcard character (\*) in the `Resource` element as follows:
 
-```
+```sh
 "Resource": "{{*}}"
 ```
 
 Some CodeDeploy API actions accept multiple resources (for example, `BatchGetDeploymentGroups`). To specify multiple resources in a single statement, separate their ARNs with commas, as follows:
 
-```
+```sh
 "Resource": ["arn1", "arn2"]
 ```
 

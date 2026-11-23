@@ -34,7 +34,7 @@ An index number of the bit in the binary value that is returned. The binary valu
 
 To return the bit at index `2` of the binary value `from_hex('4d')`, use the following example. The binary representation of `'4d'` is `01001101`.
 
-```
+```sql
 SELECT GETBIT(FROM_HEX('4d'), 2);
 
 +--------+
@@ -46,7 +46,7 @@ SELECT GETBIT(FROM_HEX('4d'), 2);
 
 To return the bit at eight index locations of the binary value returned by `from_hex('4d')`, use the following example. The binary representation of `'4d'` is `01001101`.
 
-```
+```sql
 SELECT GETBIT(FROM_HEX('4d'), 7), GETBIT(FROM_HEX('4d'), 6),
   GETBIT(FROM_HEX('4d'), 5), GETBIT(FROM_HEX('4d'), 4),
   GETBIT(FROM_HEX('4d'), 3), GETBIT(FROM_HEX('4d'), 2),

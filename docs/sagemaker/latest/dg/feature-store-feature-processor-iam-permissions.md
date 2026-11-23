@@ -13,7 +13,7 @@ The trust policy of the role to which this policy is applied must allow the "sch
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

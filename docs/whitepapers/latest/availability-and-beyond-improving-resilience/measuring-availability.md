@@ -23,9 +23,13 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 
 ![Picture of equation: A = (Successfully Processing Units of Work) / (Total Valid Units of Work Received)](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/images/equation8.png)
 
+*Equation 8*
+
  For a request-based service, the unit of work is the request, like an HTTP request. For event-based or task-based services, the units of work are events or tasks, like processing a message off of a queue. This measure of availability is meaningful in short time intervals, like one-minute or five-minute windows. It is also best suited at a granular perspective, like at a per API level for a request-based service. The following figure provides a view of what availability over time might look like when calculated this way. Each data point on the graph is calculated using Equation *(8)* over a five-minute window (you can choose other time dimensions like one-minute or ten-minute intervals). For example, data point 10 shows 94.5% availability. That means during minutes t\+45 to t\+50 if the service received 1,000 requests, only 945 of them were processed successfully.
 
 ![Diagram showing an example of measuring availability over time for a single API](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/images/measuring-api-availability-over-time.png)
+
+*Example of measuring availability over time for a single API*
 
  The graph also shows the API's availability goal, 99.5% availability, the service-level agreement (SLA) it offers to customers, 99% availability, and the threshold for a high-severity alarm, 95%. Without the context of these different thresholds, a graph of availability might not provide significant insight to how your service is operating.
 

@@ -33,7 +33,7 @@ Amazon Translate supports the following formats for parallel data input files:
 **Example TMX input file**
 The following example TMX file defines parallel data in a format that Amazon Translate accepts. In this file, English (`en`) is the source language. Spanish (`es`) and Chinese (`zh`) are the target languages. As an input file for parallel data, it provides several examples that Amazon Translate can use to tailor the output of a batch job.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <tmx version="1.4">
     <header srclang="en"/>

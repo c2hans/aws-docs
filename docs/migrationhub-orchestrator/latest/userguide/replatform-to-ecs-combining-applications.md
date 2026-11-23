@@ -250,7 +250,7 @@ if __name__=="__main__":
 
 The following example demonstrates running the script with the required parameters:
 
-```
+```python
 python3 combine_applications.py --region {{us-west-2}} \
     --workflow_id {{mw-abc123}} \
     --s3_output_path s3://{{bucket-name}}/application-transformation/{{mw-abc123}}/CombinedApplications \

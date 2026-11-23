@@ -170,20 +170,20 @@ To take advantage of ESM patches offered by Ubuntu Pro, please follow the proced
 
 1. Log in to access the ECR repositories in your AWS account:
 
-   ```
+   ```bash
    aws ecr get-login-password --region $REGION | \
      docker login --username AWS --password-stdin $ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com
    ```
 
 1. Pull the image from the remote repository to your local machine:
 
-   ```
+   ```bash
    docker pull $ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/$REPOSITORY_NAME\:$IMAGE_VERSION
    ```
 
 1. Create a temporary Dockerfile with Ubuntu Pro activation commands:
 
-   ```
+   ```bash
    cat << EOF > Dockerfile.ubuntu-pro
    FROM $ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/$REPOSITORY_NAME\:$IMAGE_VERSION
 
@@ -200,13 +200,13 @@ To take advantage of ESM patches offered by Ubuntu Pro, please follow the proced
 
 1. Build a new image with Ubuntu Pro activated:
 
-   ```
+   ```bash
    docker build -t $ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/$REPOSITORY_NAME\:$IMAGE_VERSION -f Dockerfile.ubuntu-pro .
    ```
 
 1. Push the new image back to your ECR repository:
 
-   ```
+   ```bash
    docker push $ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/$REPOSITORY_NAME\:$IMAGE_VERSION
    ```
 

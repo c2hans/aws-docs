@@ -30,7 +30,7 @@ Both search operations take the following parameters:
 
 The following AWS CLI example searches one actor's memories in two strategies.
 
-```
+```bash
 aws opensearchmemory search-memories \
     --space-id sp-02864597b164 \
     --actor-id user-123 \
@@ -62,7 +62,7 @@ You can't refer to the actor or session fields in a query or sort. Scope a searc
 
 A `match` query finds text that contains the query's words. Use it when the user's words are likely to appear in the memory.
 
-```
+```json
 { "match": { "memory_text": "window seat" } }
 ```
 
@@ -71,7 +71,7 @@ A `match` query finds text that contains the query's words. Use it when the user
 
 A `neural` query finds text with a similar meaning, whether or not it shares words with the query. Give it the natural-language `query_text` and the number of nearest results, `k`, up to 100. OpenSearch Memory converts the query text to an embedding for you.
 
-```
+```json
 { "neural": { "memory_vector": { "query_text": "where does the user like to sit on a plane", "k": 10 } } }
 ```
 
@@ -80,7 +80,7 @@ A `neural` query finds text with a similar meaning, whether or not it shares wor
 
 A `hybrid` query combines a keyword query and a semantic query into one ranked list. It usually gives the best results for agent recall, because it finds both exact matches and paraphrases.
 
-```
+```json
 {
     "hybrid": {
         "queries": [
@@ -98,7 +98,7 @@ A query can contain only one distinct `neural` query text, and the text can be u
 
 Use a `bool` query to combine a relevance query with filters. Filters narrow the results without affecting the score. The following example finds memories about recipes that were created in the last 30 days and carry the tag `channel=web`.
 
-```
+```json
 {
     "bool": {
         "must": [
@@ -114,7 +114,7 @@ Use a `bool` query to combine a relevance query with filters. Filters narrow the
 
 To prefer recent memories without excluding older ones, use a `function_score` query with a decay function on a time field. To order results by time instead of relevance, use `sort`.
 
-```
+```json
 "sort": [ { "system_metadata.updated_at": { "order": "desc" } } ]
 ```
 

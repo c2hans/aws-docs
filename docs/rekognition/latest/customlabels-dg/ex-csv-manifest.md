@@ -67,7 +67,7 @@ The script records the first entry for each image in a deduplicated image CSV fi
    + `manifest_file` – The name of the manifest file that you want to create.
    + (Optional)`--s3_path {{s3://path_to_folder/}}` – The Amazon S3 path to add to the image file names (field 1). Use `--s3_path` if the images in field 1 don't already contain an S3 path.
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier:  Apache-2.0
 

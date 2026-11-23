@@ -61,7 +61,7 @@ Workloads scale from simple job bundles that users submit to a queue with either
     +  When running on Windows, watch for issues related to MinGW automatic path translation. For example, it transforms an AWS CLI command like `aws logs tail /aws/deadline/...` into a command similar to `aws logs tail "C:/Program Files/Git/aws/deadline/..."` and won't tail a log correctly. Set the variable `MSYS_NO_PATHCONV=1` to turn this behavior off.
     +  In most cases, the same code works on all operating systems. When the code needs to be different use an `if/else` construct to handle the cases.
 
-      ```
+      ```bash
       if [[ "$(uname)" == MINGW* || "$(uname -s)" == MSYS_NT* ]]; then
           : # Code for Windows
       elif [[ "$(uname)" == Darwin ]]; then

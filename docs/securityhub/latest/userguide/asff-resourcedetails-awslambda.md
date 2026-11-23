@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsL
 
 **Example**
 
-```
+```JSON
 "AwsLambdaFunction": {
     "Architectures": [
         "x86_64"
@@ -76,7 +76,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsL
 
 **Example**
 
-```
+```JSON
 "AwsLambdaLayerVersion": {
     "Version": 2,
     "CompatibleRuntimes": [

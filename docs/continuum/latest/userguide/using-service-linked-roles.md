@@ -51,7 +51,7 @@ If you monitor API calls, you might see calls to Tiros APIs. Tiros is a service 
 
 The role is configured with the following permissions policy.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

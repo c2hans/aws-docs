@@ -37,7 +37,7 @@ If *geom* is null, then null is returned.
 
 The following SQL reverses the order of the points in a linestring.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Reverse(ST_GeomFromText('LINESTRING(1 0,2 0,3 0,4 0)', 4326)));
 ```
 

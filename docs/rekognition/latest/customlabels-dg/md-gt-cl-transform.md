@@ -41,7 +41,7 @@ To run the code, you need Python version 3, or higher.<a name="md-procedure-mult
 
 1. Run the following python code. Supply the name of the manifest file that you created in [Getting the manifest file for a SageMaker AI Ground Truth job](#md-get-gt-manifest) as a command line argument.
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier:  Apache-2.0
    """

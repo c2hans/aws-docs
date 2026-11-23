@@ -72,7 +72,7 @@ Use the following AWS CLI commands or API operations to enable trusted service a
 
   Run the following command to enable AWS Well-Architected Tool as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations enable-aws-service-access \
       --service-principal wellarchitected.amazonaws.com
   ```
@@ -107,7 +107,7 @@ Use the following AWS CLI commands or API operations to disable trusted service 
 
   Run the following command to disable AWS Well-Architected Tool as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations disable-aws-service-access \
       --service-principal wellarchitected.amazonaws.com
   ```

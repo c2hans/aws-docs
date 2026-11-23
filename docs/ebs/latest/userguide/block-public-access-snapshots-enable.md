@@ -40,7 +40,7 @@ Use the [enable-snapshot-block-public-access](https://docs.aws.amazon.com/cli/la
 
 **To enable or modify block public access for snapshots for a specific Region**
 
-```
+```bash
 aws ec2 enable-snapshot-block-public-access \
     --state {{block-new-sharing}} \
     --region {{us-east-1}}
@@ -48,7 +48,7 @@ aws ec2 enable-snapshot-block-public-access \
 
 The following is example output.
 
-```
+```json
 {
     "State": "block-new-sharing"
 }
@@ -56,7 +56,7 @@ The following is example output.
 
 **To enable or modify block public access for snapshots for all Regions**
 
-```
+```bash
 echo -e "Region   \t Public Access State" ; \
 echo -e "-------------- \t ----------------------" ; \
 for region in $(
@@ -96,7 +96,7 @@ Use the [ Enable-EC2SnapshotBlockPublicAccess](https://docs.aws.amazon.com/power
 
 **To enable or modify block public access for snapshots for a specific Region**
 
-```
+```powershell
 Enable-EC2SnapshotBlockPublicAccess `
     -Region {{us-east-1}} `
     -State {{block-new-sharing}}
@@ -112,7 +112,7 @@ block-new-sharing
 
 **To enable or modify block public access for snapshots for all Regions**
 
-```
+```powershell
 (Get-EC2Region -Region {{us-east-1}}).RegionName | `
     ForEach-Object {
     [PSCustomObject]@{

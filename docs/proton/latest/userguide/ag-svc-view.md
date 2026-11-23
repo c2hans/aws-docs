@@ -26,14 +26,14 @@ You can view and list service detail data using the AWS Proton console or the AW
 
 Command:
 
-```
+```sh
 $ aws proton get-service \
     --name "{{simple-svc}}"
 ```
 
 Response:
 
-```
+```json
 {
     "service": {
         "arn": "arn:aws:proton:region-id:123456789012:service/simple-svc",
@@ -65,14 +65,14 @@ Response:
 
 Command:
 
-```
+```sh
 $ aws proton get-service \
     --name "{{simple-svc-no-pipeline}}"
 ```
 
 Response:
 
-```
+```json
 {
     "service": {
         "arn": "arn:aws:proton:region-id:123456789012:service/simple-svc-without-pipeline",

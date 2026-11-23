@@ -24,7 +24,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "Devices": [
   {
@@ -79,7 +79,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-devices-devicedefinitionid-versions-post-cli"></a>
 
-```
+```bash
 aws greengrass create-device-definition-version \
   --device-definition-id <value> \
   [--devices <value>] \
@@ -90,7 +90,7 @@ aws greengrass create-device-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "DeviceDefinitionId": "string",
 "Devices": [
@@ -112,7 +112,7 @@ cli-input-json format:
 
  [ VersionInformation](definitions-versioninformation.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -140,7 +140,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -207,7 +207,7 @@ type: integer
 ### CLI
 <a name="-greengrass-definition-devices-devicedefinitionid-versions-get-cli"></a>
 
-```
+```bash
 aws greengrass list-device-definition-versions \
   --device-definition-id <value> \
   [--next-token <value>] \
@@ -218,7 +218,7 @@ aws greengrass list-device-definition-versions \
 
 cli-input-json format:
 
-```
+```json
 {
 "DeviceDefinitionId": "string",
 "NextToken": "string",
@@ -233,7 +233,7 @@ cli-input-json format:
 
  [ ListVersionsResponse](definitions-listversionsresponse.md)
 
-```
+```json
 {
 "Versions": [
   {
@@ -276,7 +276,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

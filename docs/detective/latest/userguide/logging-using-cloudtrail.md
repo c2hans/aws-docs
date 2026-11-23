@@ -52,7 +52,7 @@ An event represents a single request from any source. Events include information
 
 The following example shows a CloudTrail log entry that demonstrates the `AcceptInvitation` action.
 
-```
+```json
       {
             "EventId": "f2545ee3-170f-4340-8af4-a983c669ce37",
             "Username": "JaneRoe",

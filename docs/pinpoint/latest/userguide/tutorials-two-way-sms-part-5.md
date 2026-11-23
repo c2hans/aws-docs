@@ -19,7 +19,7 @@ In this section, you create a JavaScript function that parses the content of the
 
 1. In the editor, paste the following code.
 
-   ```
+   ```js
    $(document).ready(function() {
 
      // Handle form submission.
@@ -101,7 +101,7 @@ When a user submits this form, it triggers a Lambda function that calls several 
 
 1. In the editor, paste the following code.
 
-   ```
+   ```html
    <!doctype html>
    <html lang="en">
 

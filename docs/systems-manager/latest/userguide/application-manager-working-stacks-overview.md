@@ -67,7 +67,7 @@ Install and configure the AWS CLI or the AWS Tools for PowerShell if you have no
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws cloudformation create-stack \
     --stack-name {{a_name_for_the_stack}} \
     --template-url "ssm-doc://arn:aws:ssm:{{Region}}:{{account_ID}}:document/{{template_name}}" \
@@ -76,7 +76,7 @@ aws cloudformation create-stack \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws cloudformation create-stack ^
      --stack-name {{a_name_for_the_stack}} ^
      --template-url "ssm-doc://arn:aws:ssm:{{Region}}:{{account_ID}}:document/{{template_name}}" ^
@@ -85,7 +85,7 @@ aws cloudformation create-stack ^
 ------
 #### [ PowerShell ]
 
-```
+```ps
 New-CFNStack `
     -StackName "{{a_name_for_the_stack}}" `
     -TemplateURL "ssm-doc://arn:aws:ssm:{{Region}}:{{account_ID}}:document/{{template_name}}" `

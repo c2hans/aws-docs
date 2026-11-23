@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { AlbToLambda, AlbToLambdaProps } from '@aws-solutions-constructs/aws-alb-lambda';
@@ -58,7 +58,7 @@ const constructProps: AlbToLambdaProps = {
 new AlbToLambda(this, 'new-construct', constructProps);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_alb_lambda import AlbToLambda, AlbToLambdaProps
 from aws_cdk import (
     aws_certificatemanager as acm,
@@ -91,7 +91,7 @@ AlbToLambda(self, 'new-construct',
             public_api=True)
 ```
 
-```
+```java
 import software.constructs.Construct;
 import java.util.List;
 

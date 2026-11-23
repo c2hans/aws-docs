@@ -39,7 +39,7 @@ For more information, see [What are resource groups?](https://docs.aws.amazon.co
 **Tools for PowerShell V4**
 **Example 1: This example retrieves resource group as per the group name**
 
-```
+```powershell
 Get-RGGroup -GroupName auto-no
 ```
 **Output:**
@@ -54,7 +54,7 @@ Description GroupArn                                                     Name
 **Tools for PowerShell V5**
 **Example 1: This example retrieves resource group as per the group name**
 
-```
+```powershell
 Get-RGGroup -GroupName auto-no
 ```
 **Output:**

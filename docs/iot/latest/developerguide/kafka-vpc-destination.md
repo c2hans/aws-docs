@@ -50,7 +50,7 @@ The Amazon Resource Name (ARN) of a role that has permission to create network i
 This ARN should have a policy attached to it that looks like the following example.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

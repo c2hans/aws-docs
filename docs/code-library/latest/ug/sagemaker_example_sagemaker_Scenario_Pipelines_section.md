@@ -23,7 +23,7 @@ For more information, see [Create and run SageMaker pipelines using AWS SDKs on 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SageMaker#code-examples).
 Create a class that wraps SageMaker AI operations.
 
-```
+```csharp
 using System.Text.Json;
 using Amazon.SageMaker;
 using Amazon.SageMaker.Model;
@@ -177,7 +177,7 @@ public class SageMakerWrapper
 ```
 Create a function that handles callbacks from the SageMaker AI pipeline.
 
-```
+```csharp
 using System.Text.Json;
 using Amazon.Lambda.Core;
 using Amazon.Lambda.SQSEvents;
@@ -344,7 +344,7 @@ public class SageMakerLambdaFunction
 ```
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 public static class PipelineWorkflow
 {
     public static IAmazonIdentityManagementService _iamClient = null!;
@@ -1065,7 +1065,7 @@ public static class PipelineWorkflow
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```java
 public class SagemakerWorkflow {
     public static final String DASHES = new String(new char[80]).replace("\0", "-");
     private static String eventSourceMapping = "";
@@ -1911,7 +1911,7 @@ public class SagemakerWorkflow {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sagemaker#code-examples).
 The following file excerpt contains functions that use the SageMaker AI client to manage a pipeline.
 
-```
+```javascript
 import { readFileSync } from "node:fs";
 
 import {
@@ -2749,7 +2749,7 @@ export async function getObject({ bucket, s3Client }) {
 ```
 This function is an excerpt from a file that uses the preceding library functions to set up a SageMaker AI pipeline, execute it, and delete all created resources.
 
-```
+```javascript
 import { retry, wait } from "@aws-doc-sdk-examples/lib/utils/util-timers.js";
 import {
   attachPolicy,
@@ -3150,7 +3150,7 @@ export class SageMakerPipelinesWkflw {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```kotlin
 val DASHES = String(CharArray(80)).replace("\u0000", "-")
 private var eventSourceMapping = ""
 

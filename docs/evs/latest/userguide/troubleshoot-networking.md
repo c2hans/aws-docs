@@ -108,7 +108,7 @@ Amazon EC2 security groups don’t function on elastic network interfaces that a
 
 1. Find the network ACL that a VLAN subnet uses. In the following command, replace `<subnet-id>` with the ID of the VLAN subnet.
 
-   ```
+   ```bash
    aws ec2 describe-network-acls \
      --filters Name=association.subnet-id,Values=<subnet-id> \
      --query 'NetworkAcls[0].NetworkAclId' \

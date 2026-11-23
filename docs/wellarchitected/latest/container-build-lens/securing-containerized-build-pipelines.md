@@ -16,6 +16,8 @@ All the security measures, controls, and tasks in this scenario come *in additio
 
 ![Reference architecture diagram of continuous integration pipeline for containerized applications](https://docs.aws.amazon.com/wellarchitected/latest/container-build-lens/images/continuous-integration-pipeline-containerized-apps.png)
 
+*Figure 2. Continuous integration pipeline for containerized applications*
+
 1.  Developers push a code change to the source code repository.
 
 1.  Static code analysis is triggered to identify potential misconfigurations, vulnerabilities of dependencies, ensure good coding practices, and more.

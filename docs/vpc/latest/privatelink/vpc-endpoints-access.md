@@ -31,7 +31,7 @@ An endpoint policy does not override or replace identity-based policies or resou
 
 The default endpoint policy grants full access to the endpoint.
 
-```
+```json
 {
     "Statement": [
         {
@@ -54,7 +54,7 @@ For example endpoint policies for AWS services, see [AWS services that integrate
 
 With gateway endpoints, the `Principal` element must be set to `*`. To specify a principal, use the `aws:PrincipalArn` condition key.
 
-```
+```json
 "Condition": {
     "StringEquals": {
         "aws:PrincipalArn": "{{arn:aws:iam::123456789012:user/endpointuser}}"
@@ -64,7 +64,7 @@ With gateway endpoints, the `Principal` element must be set to `*`. To specify a
 
 If you specify the principal in the following format, access is granted to the AWS account root user only, not all users and roles for the account.
 
-```
+```json
 "AWS": "{{account_id}}"
 ```
 

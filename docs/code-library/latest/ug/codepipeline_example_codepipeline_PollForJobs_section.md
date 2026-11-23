@@ -97,7 +97,7 @@ For more information, see [Create and add a custom action in CodePipeline](https
 **Tools for PowerShell V4**
 **Example 1: This example gets information about all actionable jobs for the specified action category, owner, provider, version, and query parameters.**
 
-```
+```powershell
 Get-CPActionableJobList -ActionTypeId_Category Build -ActionTypeId_Owner Custom -ActionTypeId_Provider MyCustomProviderName -ActionTypeId_Version 1 -QueryParam @{"ProjectName" = "MyProjectName"}
 ```
 **Output:**
@@ -112,7 +112,7 @@ AccountId       Data                                 Id                         
 **Tools for PowerShell V5**
 **Example 1: This example gets information about all actionable jobs for the specified action category, owner, provider, version, and query parameters.**
 
-```
+```powershell
 Get-CPActionableJobList -ActionTypeId_Category Build -ActionTypeId_Owner Custom -ActionTypeId_Provider MyCustomProviderName -ActionTypeId_Version 1 -QueryParam @{"ProjectName" = "MyProjectName"}
 ```
 **Output:**

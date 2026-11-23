@@ -125,7 +125,7 @@ The `Resource` uses the `*` wildcard. We recommend that you update it to include
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

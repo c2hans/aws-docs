@@ -25,7 +25,7 @@ The following is an example policy that grants users full permissions to create,
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

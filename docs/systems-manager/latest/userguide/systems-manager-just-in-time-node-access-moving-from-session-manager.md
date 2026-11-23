@@ -109,7 +109,7 @@ Original policy with Session Manager permissions:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -135,7 +135,7 @@ Modified policy for just-in-time node access:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

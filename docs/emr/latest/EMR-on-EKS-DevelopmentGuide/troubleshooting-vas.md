@@ -29,7 +29,7 @@ FATA[0020] Failed to run bundle: create catalog: error creating catalog source: 
 
 If the namespace that you specify doesn't exist, OLM won't install the vertical autoscaling operator. To resolve this issue, use the following command to create the namespace. Then, try the installation again.
 
-```
+```shell
 kubectl create namespace {{NAME}}
 ```
 

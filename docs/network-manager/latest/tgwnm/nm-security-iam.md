@@ -84,7 +84,7 @@ The following IAM policy grants full access to the Amazon EC2, global networks, 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -132,7 +132,7 @@ The following IAM policy grants read-only access to the Amazon EC2, global netwo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -199,7 +199,7 @@ The following IAM policy grants read-only access to the Amazon EC2, global netwo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -252,7 +252,7 @@ The policy uses the `networkmanager:tgwArn` and `networkmanager:cgwArn` conditio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

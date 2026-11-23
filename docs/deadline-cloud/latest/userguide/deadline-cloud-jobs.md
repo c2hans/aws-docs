@@ -38,7 +38,7 @@ Use job-level controls to limit how much fleet capacity one job can use and to d
 Maximum worker count
 Limits the number of workers that can process a job at the same time. Other jobs can use the remaining workers in the fleet. Set this value when you submit the job or change it later in the Deadline Cloud monitor.
 
-```
+```bash
 deadline bundle submit my_job --max-worker-count 50
 ```
 

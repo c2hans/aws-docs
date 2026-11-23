@@ -11,7 +11,7 @@ The test host uses a standardized version management tool called ` devicefarm-cl
 
 The snippet below shows the `help` page of `devicefarm-cli`:
 
-```
+```YAML
 $ devicefarm-cli help
  Usage: devicefarm-cli COMMAND [ARGS]
 
@@ -25,7 +25,7 @@ $ devicefarm-cli help
 
 Let's review a couple of examples using `devicefarm-cli`. To use the tool to change the Python version from {{3.10}} to {{3.9}} in your test spec file, run the following commands:
 
-```
+```YAML
 $ python --version
 Python 3.10.12
 $ devicefarm-cli use python 3.9
@@ -35,7 +35,7 @@ Python 3.9.17
 
 To change the Appium version from {{1}} to {{2}} :
 
-```
+```YAML
 $ appium --version
 1.22.3
 $ devicefarm-cli use appium 2

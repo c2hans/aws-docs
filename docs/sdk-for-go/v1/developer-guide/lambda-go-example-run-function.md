@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 The following example runs the Lambda function `MyGetitemsFunction` in the `us-west-2` region. This Node.js function returns a list of items from a database. The input JSON looks like the following.
 
-```
+```json
 {
    "SortBy": "name|time",
    "SortOrder": "ascending|descending",
@@ -23,7 +23,7 @@ Where:
 
 The output JSON looks like the following when the function succeeds and two items are returned.
 
-```
+```json
 {
    "statusCode": 200,
    "body": {
@@ -51,7 +51,7 @@ Where:
 
 The first step is to import the packages we use.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -66,7 +66,7 @@ import (
 
 Next create session and Lambda client we use to invoke the Lambda function.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -76,7 +76,7 @@ client := lambda.New(sess, &aws.Config{Region: aws.String("us-west-2")})
 
 Next, create the request and payload, and call `MyGetItemsFunction`. If there is an error, display a message and quit.
 
-```
+```go
 request := getItemsRequest{"time", "descending", 10}
 
 payload, err := json.Marshal(request)
@@ -94,7 +94,7 @@ if err != nil {
 
 Finally, parse the response, and if successful, print out the items.
 
-```
+```go
 var resp getItemsResponse
 
 err = json.Unmarshal(result.Payload, &resp)

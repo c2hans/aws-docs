@@ -174,7 +174,7 @@ You can also manually edit the GraphQL source schema and run the utility again u
 
 Finally, you can put your changes in a file using this JSON format:
 
-```
+```json
 [
   {
     "type": "{{(GraphQL type name)}}",
@@ -187,7 +187,7 @@ Finally, you can put your changes in a file using this JSON format:
 
 For example:
 
-```
+```json
 [
   {
     "type": "Airport",

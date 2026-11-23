@@ -150,7 +150,7 @@ Each override requires all of the following fields:
 
 The following AWS CLI example creates a node group with custom repair settings.
 
-```
+```bash
 aws eks create-nodegroup \
   --cluster-name my-cluster \
   --nodegroup-name my-nodegroup \

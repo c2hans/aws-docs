@@ -32,7 +32,7 @@ Use the following procedure to customize Landing Zone Accelerator on AWS to fit 
 **Note**
 The `aws-accelerator-config.zip` file contains all of the files at the root of the zip archive file. The following is an example of using the `tree` command to list the contents:
 
-   ```
+   ```bash
                  > tree -a .
                  .
                  ├── accounts-config.yaml

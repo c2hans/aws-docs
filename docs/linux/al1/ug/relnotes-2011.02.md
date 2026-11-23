@@ -26,25 +26,25 @@ This topic includes Amazon Linux 1 (AL1) release notes updates for the 2011.02 (
 
 For the 2011.x Amazon Linux AMI releases we have changed the layout of the Yum repositories to make it easier to manage updates. Due to this change, upgrading from older Amazon Linux 2010.x releases is handled by an upgrade script provided in the latest version of the system-release-2010.11 package. To get the script, please first upgrade to the latest version of the system-release package:
 
-```
+```sh
 $ sudo yum upgrade system-release
 ```
 
 This command will upgrade your system-release package (or tell you if you already have the latest version). This should give you access to the upgrade script, which is located in /usr/sbin/distro-upgrade.sh. To upgrade your Amazon Linux AMI to the latest package set, you will need to run this script and reboot your instance afterwards. To run the script, please use:
 
-```
+```sh
 $ sudo /usr/sbin/distro-upgrade.sh
 ```
 
 This command will attempt to check whether your system can be upgraded and report back to you a list of changes that are about to be performed. Please inspect the list of changes, and if you don't notice any particular problems, run the script again by giving it the `--I-agree` flag, so it can proceed with the system upgrade:
 
-```
+```sh
 $ sudo /usr/sbin/distro-upgrade.sh --I-agree
 ```
 
 This will upgrade your existing package set to the latest versions and prepare your system to boot into the new kernel, once you issue a reboot command. The 2011.x series of Amazon Linux 1 (AL1) introduce updated versions of system libraries and a new init subsystem. Since the old init and reboot binaries are no longer available after the upgrade, in order to reboot the instance you will need to use the `/sbin/reboot -f` command:
 
-```
+```sh
 $ sudo /sbin/reboot -f
 ```
 

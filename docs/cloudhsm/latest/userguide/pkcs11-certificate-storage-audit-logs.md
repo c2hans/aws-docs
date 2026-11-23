@@ -40,7 +40,7 @@ The time when the operation occurred, in milliseconds since the Unix epoch.
 ### CreateObject example
 <a name="pkcs11-certificate-storage-audit-logs-examples-create"></a>
 
-```
+```json
 {
     "object_handle": 463180677312929947,
     "op_code": "CreateObject",
@@ -53,7 +53,7 @@ The time when the operation occurred, in milliseconds since the Unix epoch.
 ### DestroyObject example
 <a name="pkcs11-certificate-storage-audit-logs-examples-delete"></a>
 
-```
+```json
 {
     "object_handle": 463180677312929947,
     "op_code": "DestroyObject",
@@ -66,7 +66,7 @@ The time when the operation occurred, in milliseconds since the Unix epoch.
 ### SetAttributeValues example
 <a name="pkcs11-certificate-storage-audit-logs-examples-set"></a>
 
-```
+```json
 {
     "object_handle": 463180678453346687,
     "op_code": "SetAttributeValues",
@@ -81,7 +81,7 @@ The time when the operation occurred, in milliseconds since the Unix epoch.
 ### Unsuccessful CreateObject example
 <a name="pkcs11-certificate-storage-audit-logs-examples-error"></a>
 
-```
+```json
 {
     "object_handle": null,
     "op_code": "CreateObject",

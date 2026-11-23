@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Stops the compute fleet, leaving the head node running.
 
-```
+```sh
 pcluster stop [ -h ] [ -c {{CONFIG_FILE}} ] [ -r {{REGION}} ] {{cluster_name}}
 ```
 

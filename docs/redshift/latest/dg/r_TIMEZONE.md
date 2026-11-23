@@ -50,7 +50,7 @@ TIMESTAMP when used with a TIMESTAMPTZ expression.
 
 The following returns a timestamp for the UTC time zone using the timestamp `2008-06-17 09:44:54` from the PST timezone.
 
-```
+```sql
 SELECT TIMEZONE('PST', '2008-06-17 09:44:54');
 
 timezone
@@ -60,7 +60,7 @@ timezone
 
 The following returns a timestamp for the PST time zone using the timestamp with UTC time zone `2008-06-17 09:44:54+00`.
 
-```
+```sql
 SELECT TIMEZONE('PST', timestamptz('2008-06-17 09:44:54+00'));
 
 timezone

@@ -74,7 +74,7 @@ Enable CORS by returning correct headers
 #### POST schema
 <a name="resourcesets-request-body-post-example"></a>
 
-```
+```json
 {
   "resourceSetType": "string",
   "resourceSetName": "string",
@@ -113,7 +113,7 @@ Enable CORS by returning correct headers
 #### ListResourceSetsResult schema
 <a name="resourcesets-response-body-listresourcesetsresult-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "resourceSets": [
@@ -155,7 +155,7 @@ Enable CORS by returning correct headers
 #### ResourceSetOutput schema
 <a name="resourcesets-response-body-resourcesetoutput-example"></a>
 
-```
+```json
 {
   "resourceSetType": "string",
   "resourceSetName": "string",

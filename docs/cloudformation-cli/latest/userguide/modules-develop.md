@@ -10,7 +10,7 @@ Follow these basic steps to develop and register a module project.
 
    Follow the prompts. Specify that you want to create a **module(m)**, and enter the module name.
 
-   ```
+   ```sh
    $ cfn init
    Initializing new project
    Do you want to develop a new resource(r) a module(m) or a hook(h)?

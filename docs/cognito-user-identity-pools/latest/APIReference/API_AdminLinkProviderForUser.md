@@ -146,7 +146,7 @@ The following example links a Facebook user to the user pool user "adminlink-tes
 #### Sample Request
 <a name="API_AdminLinkProviderForUser_Example_1_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -171,7 +171,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_AdminLinkProviderForUser_Example_1_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0
@@ -189,7 +189,7 @@ The following example links a Google user to the user pool user "adminlink-testu
 #### Sample Request
 <a name="API_AdminLinkProviderForUser_Example_2_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -215,7 +215,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_AdminLinkProviderForUser_Example_2_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0
@@ -233,7 +233,7 @@ The following example links a Login With Amazon user to the user pool user "admi
 #### Sample Request
 <a name="API_AdminLinkProviderForUser_Example_3_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -259,7 +259,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_AdminLinkProviderForUser_Example_3_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0
@@ -277,7 +277,7 @@ The following example links a Sign In With Apple user to the user pool user "adm
 #### Sample Request
 <a name="API_AdminLinkProviderForUser_Example_4_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -303,7 +303,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_AdminLinkProviderForUser_Example_4_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0
@@ -321,7 +321,7 @@ The following example links a user from OIDC provider "MyOIDCProvider" to the us
 #### Sample Request
 <a name="API_AdminLinkProviderForUser_Example_5_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -347,7 +347,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_AdminLinkProviderForUser_Example_5_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0
@@ -365,7 +365,7 @@ The following example links a user from SAML 2.0 provider "MySAMLProvider" to th
 #### Sample Request
 <a name="API_AdminLinkProviderForUser_Example_6_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -391,7 +391,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_AdminLinkProviderForUser_Example_6_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0

@@ -29,7 +29,7 @@ You cannot update the source topic, input format, schema, destination configurat
 
 Use the update field that matches the Channel's destination type — `--iceberg-destination-update` for an Iceberg destination.
 
-```
+```bash
 aws kafka update-channel \
     --cluster-arn "arn:aws:kafka:us-east-1:123456789012:cluster/my-express-cluster/abc123" \
     --channel-arn "arn:aws:kafka:us-east-1:123456789012:channel/my-express-cluster/abc123/orders-channel" \
@@ -40,7 +40,7 @@ aws kafka update-channel \
 
 Response:
 
-```
+```json
 {
     "ChannelArn": "arn:aws:kafka:us-east-1:123456789012:channel/my-express-cluster/abc123/orders-channel",
     "ClusterOperationArn": "arn:aws:kafka:us-east-1:123456789012:cluster-operation/my-express-cluster/abc123/..."

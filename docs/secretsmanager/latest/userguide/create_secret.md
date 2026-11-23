@@ -114,7 +114,7 @@ aws secretsmanager create-secret \
 ```
 Contents of mycreds.json:
 
-```
+```json
 {
     "engine": "mysql",
     "username": "saanvis",

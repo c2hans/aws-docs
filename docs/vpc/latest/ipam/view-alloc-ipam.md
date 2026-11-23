@@ -40,13 +40,13 @@ Use [get-ipam-pool-allocations](https://docs.aws.amazon.com/cli/latest/reference
 
 1. View allocations in the pool: [get-ipam-pool-allocations](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-ipam-pool-allocations.html).
 
-   ```
+   ```bash
    aws ec2 get-ipam-pool-allocations --ipam-pool-id {{ipam-pool-0533048da7eba92f6}}
    ```
 
 1. (Optional) View a specific allocation in the pool:
 
-   ```
+   ```bash
    aws ec2 get-ipam-pool-allocations --ipam-pool-id {{ipam-pool-0533048da7eba92f6}} --ipam-pool-allocation-id {{ipam-pool-alloc-0e6186d73999e1f12}}
    ```
 
@@ -58,19 +58,19 @@ Use [describe-ipam-pool-allocations](https://docs.aws.amazon.com/cli/latest/refe
 
 1. View all of your allocations:
 
-   ```
+   ```bash
    aws ec2 describe-ipam-pool-allocations
    ```
 
 1. (Optional) View specific allocations by ID:
 
-   ```
+   ```bash
    aws ec2 describe-ipam-pool-allocations --ipam-pool-allocation-ids {{ipam-pool-alloc-0e6186d73999e1f12}}
    ```
 
 1. (Optional) Filter by tag:
 
-   ```
+   ```bash
    aws ec2 describe-ipam-pool-allocations --filters Name=tag:{{Environment}},Values={{Production}}
    ```
 

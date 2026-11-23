@@ -38,7 +38,7 @@ After you've successfully configured Amazon Cognito streams, all subsequent upda
 
 Each record sent to the stream represents a single synchronization. Here is an example of a record sent to the stream:
 
-```
+```json
 {
     "identityPoolId": "Pool Id",
     "identityId": "Identity Id",

@@ -28,7 +28,7 @@ Delivery is at-least-once, so the same event can be delivered more than once. Ea
 
 The following example shows a time off event payload:
 
-```
+```json
 {
     "version": "0",
     "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",

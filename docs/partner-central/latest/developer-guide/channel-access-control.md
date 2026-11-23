@@ -29,7 +29,7 @@ For each AWS account type, you will need to associate different IAM roles with s
 Within the AWS Partner Central linked AWS account, create an IAM role to manage channel resources, which will be granted to Partner Central users. This IAM role allows users to view and manage channel management resources on AWS Partner Central. The role name must start with `PartnerCentralRoleFor`, and the recommended name is `PartnerCentralRoleForChannel`. To configure the role, complete the following:
 + Add the following custom trust policy to allow AWS Partner Central cloud admins and alliance leads to [map IAM roles to Partner Central users](https://docs.aws.amazon.com/partner-central/latest/getting-started/channel-management-user-mapping.html):
 
-  ```
+  ```json
   {
     "Version": "2012-10-17",
     "Statement": [
@@ -54,7 +54,7 @@ Within each AWS account reported as a program management account in AWS Partner 
   + <a name="billing-readonly-trust-policy"></a>Trust policy:
     + Within the JSON below, replace the `{PartnerCentralLinkedAccountID}` with your actual AWS Partner Central linked AWS account 12-digit ID when creating the role.
 
-      ```
+      ```json
       {
         "Version": "2012-10-17",
         "Statement": [
@@ -70,7 +70,7 @@ Within each AWS account reported as a program management account in AWS Partner 
       ```
   + <a name="billing-readonly-permission-policy"></a>Permission policy:
 
-    ```
+    ```json
     {
       "Version": "2012-10-17",
       "Statement": [
@@ -92,7 +92,7 @@ Within each AWS account reported as a program management account in AWS Partner 
   + <a name="billing-management-trust-policy"></a>Trust policy:
     + Within the JSON below, replace the `{PartnerCentralLinkedAccountID}` with your actual AWS Partner Central linked AWS account 12-digit ID when creating the role.
 
-      ```
+      ```json
       {
         "Version": "2012-10-17",
         "Statement": [
@@ -108,7 +108,7 @@ Within each AWS account reported as a program management account in AWS Partner 
       ```
   + <a name="billing-management-permission-policy"></a>Permission policy:
 
-    ```
+    ```json
     {
       "Version": "2012-10-17",
       "Statement": [

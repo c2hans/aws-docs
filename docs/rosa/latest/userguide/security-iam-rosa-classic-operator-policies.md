@@ -18,7 +18,7 @@ You can attach `[Prefix]-openshift-ingress-operator-cloud-credentials` to your I
 
 Permissions defined in this policy document specify which actions are allowed or denied.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -47,7 +47,7 @@ You can attach `[Prefix]-openshift-cluster-csi-drivers-ebs-cloud-credentials` to
 
 Permissions defined in this policy document specify which actions are allowed or denied.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -87,7 +87,7 @@ You can attach `[Prefix]-openshift-machine-api-aws-cloud-credentials` to your IA
 
 Permissions defined in this policy document specify which actions are allowed or denied.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -156,7 +156,7 @@ You can attach `[Prefix]-openshift-cloud-credential-operator-cloud-credentials` 
 
 Permissions defined in this policy document specify which actions are allowed or denied.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -183,7 +183,7 @@ You can attach `[Prefix]-openshift-image-registry-installer-cloud-credentials` t
 
 Permissions defined in this policy document specify which actions are allowed or denied.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -225,7 +225,7 @@ You can attach `[Prefix]-openshift-cloud-network-config-controller-cloud-cr` to 
 
 Permissions defined in this policy document specify which actions are allowed or denied.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

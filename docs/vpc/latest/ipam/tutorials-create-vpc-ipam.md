@@ -45,7 +45,7 @@ aws ec2 enable-ipam-organization-admin-account --region us-east-1 --delegated-ad
 
 You should see the following output, indicating that enabling was successful.
 
-```
+```json
 {
     "Success": true
 }
@@ -71,7 +71,7 @@ The operating Regions option determines which AWS Regions the IPAM pools can be 
    + Returns a globally unique resource ID (`IpamId`) for the IPAM.
    + Creates a default public scope (`PublicDefaultScopeId`) and a default private scope (`PrivateDefaultScopeId`).
 
-   ```
+   ```json
    {
        "Ipam": {
            "OwnerId": "123456789012",
@@ -102,7 +102,7 @@ The operating Regions option determines which AWS Regions the IPAM pools can be 
 
    In the output, you see the available scopes. You'll use the private scope ID in the next step.
 
-   ```
+   ```json
    {
        "IpamScopes": [
            {
@@ -145,7 +145,7 @@ You won't use the `--locale` option on this top-level pool. You will set the loc
 
    In the output, you'll see a state of `create-in-progress` for the pool.
 
-   ```
+   ```json
    {
        "IpamPool": {
            "OwnerId": "123456789012",
@@ -173,7 +173,7 @@ You won't use the `--locale` option on this top-level pool. You will set the loc
 
    The following example output shows the correct state.
 
-   ```
+   ```json
    {
        "IpamPools": [
            {
@@ -209,7 +209,7 @@ Follow the steps in this section to provision a CIDR to the top-level pool, and 
 
    In the output, you can verify the state of the provisioning.
 
-   ```
+   ```json
    {
        "IpamPoolCidr": {
            "Cidr": "10.0.0.0/8",
@@ -226,7 +226,7 @@ Follow the steps in this section to provision a CIDR to the top-level pool, and 
 
    The following example output shows the correct state.
 
-   ```
+   ```json
    {
        "IpamPoolCidrs": [
            {
@@ -253,7 +253,7 @@ When you create an IPAM pool, the pool belongs to the AWS Region of the IPAM by 
 
    In the output, you'll see the ID of the pool that you created. You'll need this ID in the next step.
 
-   ```
+   ```json
    {
        "IpamPool": {
            "OwnerId": "123456789012",
@@ -282,7 +282,7 @@ When you create an IPAM pool, the pool belongs to the AWS Region of the IPAM by 
 
    In the output, you see the pools that you have in your IPAM. In this tutorial, we created a top-level and a Regional pool, so you'll see them both.
 
-   ```
+   ```json
    {
        "IpamPools": [
            {
@@ -333,7 +333,7 @@ Follow the steps in this section to assign a CIDR block to the pool, and validat
 
    In the output, you see the state of the pool.
 
-   ```
+   ```json
    {
        "IpamPoolCidr": {
            "Cidr": "10.0.0.0/16",
@@ -350,7 +350,7 @@ Follow the steps in this section to assign a CIDR block to the pool, and validat
 
    The following example output shows the correct state.
 
-   ```
+   ```json
    {
        "IpamPoolCidrs": [
            {
@@ -369,7 +369,7 @@ Follow the steps in this section to assign a CIDR block to the pool, and validat
 
    In the output, you see the Regional pool as an allocation in the top-level pool.
 
-   ```
+   ```json
    {
        "IpamPoolAllocations": [
            {
@@ -398,7 +398,7 @@ aws ram create-resource-share --region us-east-1 --name pool_share --resource-ar
 
 The output shows that the pool was created.
 
-```
+```json
 {
     "resourceShare": {
         "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/3ab63985-99d9-1cd2-7d24-75e93EXAMPLE",
@@ -423,7 +423,7 @@ aws ec2 create-vpc --region us-east-1 --ipv4-ipam-pool-id ipam-pool-04111dca0d96
 
 The output shows that the VPC was created.
 
-```
+```json
 {
     "Vpc": {
         "CidrBlock": "10.0.0.0/24",

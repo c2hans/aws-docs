@@ -20,7 +20,7 @@ The code examples in this section show how to construct a SageMaker AI estimator
 **Note**
 The following code examples are templates for constructing the SageMaker AI framework estimators and not directly executable. You need to proceed to the next sections and configure the Debugger-specific parameters.
 
-```
+```py
 # An example of creating a training job with debugger configuration
 import boto3
 from sagemaker.core import image_uris

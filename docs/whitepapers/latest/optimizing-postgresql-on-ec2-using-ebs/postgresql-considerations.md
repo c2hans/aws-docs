@@ -29,9 +29,13 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql
 
 ![Diagram that illustrates how PostgreSQL performs streaming replication.](https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image1.png)
 
+*PostgreSQL streaming replication*
+
  In PostgreSQL, logical replication is a method of replicating data objects and their changes, based upon their replication identity, usually a primary key. Unlike physical replication which uses exact block addresses and byte-by-byte replication, logical replication uses a *publish* and *subscribe* model with one or more *subscribers* subscribing to one or more *publications* on a *publisher* node. Subscribers pull data from the publications they subscribe to and might subsequently re-publish data to allow cascading replication or more complex configurations. Logical replication of a table typically starts with taking a snapshot of the data on the publisher database and copying that to the subscriber. Once that is done, the changes on the publisher are sent to the subscriber as they occur in real-time. The subscriber applies the data in the same order as the publisher so that transactional consistency is guaranteed for publications within a single subscription. This method of data replication is sometimes referred to as transactional replication. The following diagram represents the data flow for initial data copy and synchronization.
 
 ![Diagram that represents the data flow for initial data copy and synchronization.](https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image2.png)
+
+*Data flow for initial data copy and synchronization*
 
  *PostgreSQL logical replication*
 

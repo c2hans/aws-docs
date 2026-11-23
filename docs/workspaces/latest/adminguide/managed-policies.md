@@ -25,7 +25,7 @@ This policy provides access to Amazon WorkSpaces administrative actions. It prov
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -87,7 +87,7 @@ This managed policy provides access to AWS Certificate Manager Private Certifica
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -122,7 +122,7 @@ This policy provides access to the Amazon WorkSpaces service to perform WorkSpac
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -152,7 +152,7 @@ This policy provides customer account access to the Amazon WorkSpaces service fo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -188,7 +188,7 @@ The following policy JSON applies to the commercial AWS Regions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -252,7 +252,7 @@ The following policy JSON applies to the commercial AWS GovCloud (US) Regions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

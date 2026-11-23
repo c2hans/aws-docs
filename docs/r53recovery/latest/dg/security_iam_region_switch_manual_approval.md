@@ -11,7 +11,7 @@ The following is a sample policy to attach if you add execution blocks to a Regi
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

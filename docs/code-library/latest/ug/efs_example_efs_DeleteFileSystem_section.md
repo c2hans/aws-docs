@@ -29,7 +29,7 @@ For more information, see [Deleting an Amazon EFS file system](https://docs.aws.
 **Tools for PowerShell V4**
 **Example 1: Deletes the specified file system that is no longer in use (if the file system has mount targets they must be removed first). You are prompted for confirmation before the cmdlet proceeds - to suppress confirmation, use the `-Force` switch.**
 
-```
+```powershell
 Remove-EFSFileSystem -FileSystemId fs-1a2b3c4d
 ```
 +  For API details, see [DeleteFileSystem](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -37,7 +37,7 @@ Remove-EFSFileSystem -FileSystemId fs-1a2b3c4d
 **Tools for PowerShell V5**
 **Example 1: Deletes the specified file system that is no longer in use (if the file system has mount targets they must be removed first). You are prompted for confirmation before the cmdlet proceeds - to suppress confirmation, use the `-Force` switch.**
 
-```
+```powershell
 Remove-EFSFileSystem -FileSystemId fs-1a2b3c4d
 ```
 +  For API details, see [DeleteFileSystem](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

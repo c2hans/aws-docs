@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/scenarios/S3ObjectLockScenario#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Set or modify a retention period on an object in an S3 bucket.
     /// </summary>
@@ -78,7 +78,7 @@ For more information, see [Locking objects with Object Lock](https://docs.aws.am
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/s3_object_lock#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -132,7 +132,7 @@ func (actor S3Actions) PutObjectRetention(ctx context.Context, bucket string, ke
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/s3#code-examples).
 
-```
+```java
     // Set or modify a retention period on an object in an S3 bucket.
     public void modifyObjectRetentionPeriod(String bucketName, String objectKey) {
         // Calculate the instant one day from now.
@@ -172,7 +172,7 @@ func (actor S3Actions) PutObjectRetention(ctx context.Context, bucket string, ke
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 
-```
+```javascript
 import {
   PutObjectRetentionCommand,
   S3Client,
@@ -261,7 +261,7 @@ if (isMain(import.meta.url)) {
 **Tools for PowerShell V4**
 **Example 1: The command enables governance retention mode untill the date '31st Dec 2019 00:00:00' for 'testfile.txt' object in the given S3 bucket.**
 
-```
+```powershell
 Write-S3ObjectRetention -BucketName 'amzn-s3-demo-bucket' -Key 'testfile.txt' -Retention_Mode GOVERNANCE -Retention_RetainUntilDate "2019-12-31T00:00:00"
 ```
 +  For API details, see [PutObjectRetention](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -269,7 +269,7 @@ Write-S3ObjectRetention -BucketName 'amzn-s3-demo-bucket' -Key 'testfile.txt' -R
 **Tools for PowerShell V5**
 **Example 1: The command enables governance retention mode untill the date '31st Dec 2019 00:00:00' for 'testfile.txt' object in the given S3 bucket.**
 
-```
+```powershell
 Write-S3ObjectRetention -BucketName 'amzn-s3-demo-bucket' -Key 'testfile.txt' -Retention_Mode GOVERNANCE -Retention_RetainUntilDate "2019-12-31T00:00:00"
 ```
 +  For API details, see [PutObjectRetention](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -281,7 +281,7 @@ Write-S3ObjectRetention -BucketName 'amzn-s3-demo-bucket' -Key 'testfile.txt' -R
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object-locking#code-examples).
 Put an object retention.
 
-```
+```python
             s3_client.put_object_retention(
                 Bucket=bucket,
                 Key=key,
@@ -298,7 +298,7 @@ Put an object retention.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example: Set retention mode to GOVERNANCE for 30 days
         " iv_mode = 'GOVERNANCE'

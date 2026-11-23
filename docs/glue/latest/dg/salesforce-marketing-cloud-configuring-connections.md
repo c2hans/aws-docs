@@ -31,7 +31,7 @@ To configure a Salesforce Marketing Cloud connection:
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

@@ -64,7 +64,7 @@ Use one of the following procedures to enable Transaction Search.
 
    For clarity, the inline JSON policy in this command is shown expanded in the following example:
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
        "Statement": [
@@ -310,7 +310,7 @@ If you set `OTEL_EXPORTER_OTLP_TRACES_HEADERS` to deliver spans to your own log 
 
 To propagate session ID, you need to invoke using session identifier in the OTEL baggage:
 
-```
+```python
 from opentelemetry import baggage
 
 ctx = baggage.set_baggage("session.id", session_id) # Set the session.id in baggage
@@ -506,7 +506,7 @@ You must have [CloudWatch Transaction Search](#observability-configure-builtin-c
  **To configure a delivery source for logs and traces (SDK)**
 + Run the following Python code to configure CloudWatch for your memory, gateway, and built-in tool resources. Note that delivery sources and destinations for tracing are only applicable for memory and gateway resources.
 
-```
+```python
 import boto3
 
 def enable_observability_for_resource(resource_arn, resource_id, account_id, region='us-east-1'):
@@ -582,7 +582,7 @@ You can invoke your agent with additional HTTP headers to provide enhanced obser
 
  **Example Boto3 invocation**
 
-```
+```python
 def invoke_agent(agent_id, payload, session_id=None):
     client = boto3.client("bedrock-agentcore", region="us-west-2")
     response = client.invoke_agent_runtime(

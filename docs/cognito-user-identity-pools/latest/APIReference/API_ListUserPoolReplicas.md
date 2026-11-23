@@ -128,7 +128,7 @@ The following example request lists all replicas for user pool us-east-1\_EXAMPL
 #### Sample Request
 <a name="API_ListUserPoolReplicas_Example_1_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-east-1.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -146,7 +146,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_ListUserPoolReplicas_Example_1_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0

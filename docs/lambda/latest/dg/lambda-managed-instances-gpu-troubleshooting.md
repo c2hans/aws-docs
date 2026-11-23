@@ -8,7 +8,7 @@ This page describes issues that are specific to GPU-accelerated functions. For i
 
 Issues caused by an invalid configuration of a GPU-accelerated function are reported when you publish a function version. The state reason of that version identifies the cause. To view the state and state reason of a version, use the following command:
 
-```
+```bash
 aws lambda get-function-configuration \
   --function-name my-gpu-function:1 \
   --query '[State,StateReasonCode,StateReason]'
@@ -38,7 +38,7 @@ aws lambda get-function-configuration \
 **Solutions:**
 + **Raise the memory to vCPU ratio:** Increase `ExecutionEnvironmentMemoryGiBPerVCpu` so that the same `MemorySize` needs fewer vCPUs. At 4 GiB per vCPU, 16,384 MB needs 4 vCPUs and fits on a `g6.2xlarge`.
 
-  ```
+  ```bash
   aws lambda update-function-configuration \
     --function-name my-gpu-function \
     --capacity-provider-config '{
@@ -79,7 +79,7 @@ aws lambda get-function-configuration \
 **Solutions:**
 + **Raise MemorySize:** Give the execution environment enough memory for every worker process to initialize at once.
 
-  ```
+  ```bash
   aws lambda update-function-configuration \
     --function-name my-gpu-function \
     --memory-size 16384

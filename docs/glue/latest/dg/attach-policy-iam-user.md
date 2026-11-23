@@ -41,7 +41,7 @@ In this step, you create a policy that is similar to `AWSGlueConsoleFullAccess`.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

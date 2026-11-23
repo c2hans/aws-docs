@@ -64,7 +64,7 @@ After the delivery is created, CloudWatch Logs writes a single record to a strea
 
 To set up log delivery for RTB Fabric, you need the following IAM permissions:
 
-```
+```json
 {
    "Sid": "AllowLogDeliveryCreation",
    "Effect": "Allow",
@@ -79,7 +79,7 @@ To set up log delivery for RTB Fabric, you need the following IAM permissions:
 
 Additionally, you need service-level permissions for the specific link resource:
 
-```
+```json
 {
    "Sid": "ServiceLevelAccessForLogDelivery",
    "Effect": "Allow",

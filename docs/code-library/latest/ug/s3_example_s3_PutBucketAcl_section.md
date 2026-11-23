@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
         /// <summary>
         /// Creates an Amazon S3 bucket with an ACL to control access to the
         /// bucket and the objects stored in it.
@@ -60,7 +60,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::putBucketAcl(const Aws::String &bucketName, const Aws::String &ownerID,
                               const Aws::String &granteePermission,
                               const Aws::String &granteeType, const Aws::String &granteeID,
@@ -178,7 +178,7 @@ For more information, see [Configuring ACLs](https://docs.aws.amazon.com/AmazonS
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/s3#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.AccessControlPolicy;
@@ -277,7 +277,7 @@ public class SetAcl {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Put the bucket ACL.
 
-```
+```javascript
 import {
   PutBucketAclCommand,
   S3Client,
@@ -352,7 +352,7 @@ export const main = async ({
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 
-```
+```kotlin
 suspend fun setBucketAcl(
     bucketName: String,
     idVal: String,
@@ -403,7 +403,7 @@ suspend fun setBucketAcl(
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -449,7 +449,7 @@ class BucketWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example: Grant log delivery access to a bucket
         " iv_grantwrite = 'uri=http://acs.amazonaws.com/groups/s3/LogDelivery'

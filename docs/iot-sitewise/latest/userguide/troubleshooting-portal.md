@@ -23,7 +23,7 @@ Any attached IAM policies that include a `"Condition"` element will cause a logi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -54,7 +54,7 @@ Any attached IAM policies that include a `"Condition"` element will cause a logi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

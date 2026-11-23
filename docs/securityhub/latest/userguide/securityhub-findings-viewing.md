@@ -103,7 +103,7 @@ Use the `Get-SHUBFinding` cmdlet. Optionally populate the `Filter` parameter to 
 
 For example, the following cmdlet retrieves the findings that match the specified filters.
 
-```
+```powershell
 Get-SHUBFinding -Filter @{AwsAccountId = [Amazon.SecurityHub.Model.StringFilter]@{Comparison = "EQUALS"; Value = "XXX"};ComplianceStatus = [Amazon.SecurityHub.Model.StringFilter]@{Comparison = "EQUALS"; Value = 'FAILED'}}
 ```
 

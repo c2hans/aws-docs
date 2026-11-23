@@ -12,7 +12,7 @@ The `generate` command generates code based on the project and appropriate exten
 ## Synopsis
 <a name="resource-type-cli-generate-synopsis"></a>
 
-```
+```sh
 $ cfn generate
 ```
 
@@ -21,7 +21,7 @@ $ cfn generate
 
 The following command submits the resource to the registry in your CloudFormation account.
 
-```
+```sh
 $ cfn generate && cfn submit --set-default --region us-east-1
 ```
 

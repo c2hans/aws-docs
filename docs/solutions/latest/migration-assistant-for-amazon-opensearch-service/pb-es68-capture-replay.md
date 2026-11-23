@@ -11,7 +11,7 @@ Capture and replay are supported for Elasticsearch 6.8 and for Apache Solr sourc
 
 Add a `traffic` section that defines the capture proxy under `traffic.proxies` and the Traffic Replayer under `traffic.replayers`. Set `fromCapturedTraffic` to the proxy name when replaying live captured traffic. The proxy’s listen port and pod count go under `proxyConfig`, and the replayer’s tuning goes under `replayerConfig`. Listing the source snapshot in `dependsOnSnapshotMigrations` (an array of `{source, snapshot}` references, not a boolean) ensures the replayer starts only after that snapshot’s backfill completes:
 
-```
+```json
 {
   "traffic": {
     "proxies": {

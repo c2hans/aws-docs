@@ -159,7 +159,7 @@ For more information about this action, see [`ECRBuildAndPublish` build action r
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: ECRBuild
 actionTypeId:
   category: Build
@@ -179,7 +179,7 @@ namespace: BuildVariables
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "ECRBuild",
     "actionTypeId": {

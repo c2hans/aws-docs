@@ -19,7 +19,7 @@ Use the following instructions to export a GitHub output parameter from a GitHub
 
 1. In the **GitHub Actions** action that generates the output parameter that you want to export, add an `Outputs` section with an underlying `Variables` property that looks like this:
 
-   ```
+   ```yaml
    Actions:
      MyGitHubAction:
        Identifier: aws/github-actions-runner@v1
@@ -35,7 +35,7 @@ Use the following instructions to export a GitHub output parameter from a GitHub
 **Example**
 The following example shows you how to export a GitHub output parameter called `SELECTEDCOLOR`.
 
-   ```
+   ```yaml
    Actions:
      MyGitHubAction:
        Identifier: aws/github-actions-runner@v1

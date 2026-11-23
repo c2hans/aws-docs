@@ -37,7 +37,7 @@ For more information, see [Systems Manager Maintenance Windows Tutorials (AWS CL
 **Tools for PowerShell V4**
 **Example 1: This example removes a task from a maintenance window.**
 
-```
+```powershell
 Unregister-SSMTaskFromMaintenanceWindow -WindowTaskId "f34a2c47-ddfd-4c85-a88d-72366b69af1b" -WindowId "mw-03a342e62c96d31b0"
 ```
 **Output:**
@@ -52,7 +52,7 @@ mw-03a342e62c96d31b0 f34a2c47-ddfd-4c85-a88d-72366b69af1b
 **Tools for PowerShell V5**
 **Example 1: This example removes a task from a maintenance window.**
 
-```
+```powershell
 Unregister-SSMTaskFromMaintenanceWindow -WindowTaskId "f34a2c47-ddfd-4c85-a88d-72366b69af1b" -WindowId "mw-03a342e62c96d31b0"
 ```
 **Output:**

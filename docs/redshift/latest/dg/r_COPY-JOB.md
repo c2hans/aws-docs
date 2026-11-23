@@ -106,7 +106,7 @@ COPY JOBS are not supported on zero-ETL databases as they operate in read-only m
 
 The following example shows creating a COPY JOB to load data from an Amazon S3 bucket.
 
-```
+```sql
 COPY public.target_table
 FROM 's3://amzn-s3-demo-bucket/staging-folder'
 IAM_ROLE 'arn:aws:iam::123456789012:role/MyLoadRoleName'

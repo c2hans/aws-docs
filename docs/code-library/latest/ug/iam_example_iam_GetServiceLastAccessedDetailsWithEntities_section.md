@@ -60,7 +60,7 @@ For more information, see [Refining permissions in AWS using last accessed infor
 **Tools for PowerShell V4**
 **Example 1: This example provides the last accessed timestamp for the service in the request by that respective IAM entity.**
 
-```
+```powershell
 $results = Get-IAMServiceLastAccessedDetailWithEntity -JobId f0b7a819-eab0-929b-dc26-ca598911cb9f -ServiceNamespace ec2
 $results
 ```
@@ -76,7 +76,7 @@ JobStatus         : COMPLETED
 Marker            :
 ```
 
-```
+```powershell
 $results.EntityDetailsList
 ```
 **Output:**
@@ -87,7 +87,7 @@ EntityInfo                                 LastAuthenticated
 Amazon.IdentityManagement.Model.EntityInfo 11/16/19 3:47:00 PM
 ```
 
-```
+```powershell
 $results.EntityInfo
 ```
 **Output:**
@@ -104,7 +104,7 @@ Type : USER
 **Tools for PowerShell V5**
 **Example 1: This example provides the last accessed timestamp for the service in the request by that respective IAM entity.**
 
-```
+```powershell
 $results = Get-IAMServiceLastAccessedDetailWithEntity -JobId f0b7a819-eab0-929b-dc26-ca598911cb9f -ServiceNamespace ec2
 $results
 ```
@@ -120,7 +120,7 @@ JobStatus         : COMPLETED
 Marker            :
 ```
 
-```
+```powershell
 $results.EntityDetailsList
 ```
 **Output:**
@@ -131,7 +131,7 @@ EntityInfo                                 LastAuthenticated
 Amazon.IdentityManagement.Model.EntityInfo 11/16/19 3:47:00 PM
 ```
 
-```
+```powershell
 $results.EntityInfo
 ```
 **Output:**

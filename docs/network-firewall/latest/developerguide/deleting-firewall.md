@@ -17,6 +17,10 @@ The procedure for deleting a firewall has the following prerequisites:
 
 1. In the **Firewalls** page, select the firewall that you want to delete.
 
-1. Choose **Delete**, and then confirm your request.
+1. Choose **Delete**. If delete protection is turned on, choose **Disable delete protection** first.
+
+1. For a NAT/Proxy firewall, to delete the NAT gateways that Network Firewall created along with the firewall, select **Also delete the NAT gateways this firewall created**. If you leave this cleared, the NAT gateways keep working as regular NAT gateways, and you must delete them separately in the Amazon VPC console. For information, see [NAT gateways that Network Firewall creates for a NAT/Proxy firewall](nfw-proxy-nat-gateways.md).
+
+1. Confirm your request.
 
 Your firewall is removed from the list in the **Firewalls** page. The removal can take a few minutes to complete.

@@ -48,4 +48,4 @@ If you need help, contact your AWS administrator. Your administrator is the pers
 ## I want to allow people outside of my AWS account to access my AWS FinOps Agent resources
 <a name="security_iam_troubleshoot-cross-account-access"></a>
 
-During preview, AWS FinOps Agent does not support cross-account access through resource-based policies. Adding a resource-based policy or another policy to the agent role does not grant a different AWS account access to an agent or its data. To analyze organization-wide cost data, deploy AWS FinOps Agent in your organization's management account (the payer account), where Cost Explorer provides organization-wide visibility subject to the IAM permissions you configure.
+AWS FinOps Agent does not support cross-account access through resource-based policies. Adding a resource-based policy or another policy to the agent role does not grant a different AWS account access to an agent or its data. For organization-wide cost analysis, see [AWS Organizations and delegated administrators](setting-up-organization-access.md).

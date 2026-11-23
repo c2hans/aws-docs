@@ -18,7 +18,7 @@ Create a managed cluster in an AWS Region.
 ## Request syntax
 <a name="create-cluster-request"></a>
 
-```
+```json
 POST /v3/clusters
 {
   "clusterName": "string",
@@ -75,7 +75,7 @@ Required: No
 ## Response syntax
 <a name="create-cluster-response"></a>
 
-```
+```json
 {
   "cluster": {
     "clusterName": "string",
@@ -166,13 +166,13 @@ Type: string
 
 **Request**
 
-```
+```python
 $ create_cluster({{cluster_name_3x}}, {{cluster-config.yaml}})
 ```
 
 **200 Response**
 
-```
+```json
 {
   "cluster": {
     "cloudformation_stack_arn": "arn:aws:cloudformation:us-east-1:123456789012:stack/cluster-3x/e0462730-50b5-11ed-99a3-0a5ddc4a34c7",

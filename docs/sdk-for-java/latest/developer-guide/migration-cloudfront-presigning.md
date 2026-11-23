@@ -32,7 +32,7 @@ This topic details the changes in the Amazon CloudFront from version 1 (v1) to v
 
 In Java v1, the Java SDK delivers cookie headers as a `Map.Entry<String, String>`.
 
-```
+```java
 Map.Entry<String, String> signatureMap = cookies.getSignature();
 String signatureKey = signatureMap.getKey(); // "CloudFront-Signature"
 String signatureValue = signatureMap.getValue(); // "[SIGNATURE_VALUE]"
@@ -40,6 +40,6 @@ String signatureValue = signatureMap.getValue(); // "[SIGNATURE_VALUE]"
 
 The Java v2 SDK delivers the entire header as a single `String`.
 
-```
+```java
 String signatureHeaderValue = cookies.signatureHeaderValue(); // "CloudFront-Signature=[SIGNATURE_VALUE]"
 ```

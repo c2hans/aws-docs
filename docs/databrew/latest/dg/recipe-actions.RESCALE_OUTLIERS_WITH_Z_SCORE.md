@@ -24,7 +24,7 @@ The following shows an example `RecipeAction` to use as member of an example `Re
 
 **Example in JSON**
 
-```
+```json
 {
     "Action": {
         "Operation": "RESCALE_OUTLIERS_WITH_Z_SCORE",
@@ -47,7 +47,7 @@ The following shows an example `RecipeAction` to use as member of an example `Re
 
 **Example in YAML**
 
-```
+```yaml
 - Action:
   Operation: REMOVE_OUTLIERS
   Parameters:

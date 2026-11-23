@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/sdk-utilit
 
  The following example uses the Amazon S3 `Uploader` to upload a file. Using `Uploader` is similar to the `s3.PutObject()` operation.
 
-```
+```go
 import "context"
 import "github.com/aws/aws-sdk-go-v2/config"
 import "github.com/aws/aws-sdk-go-v2/service/s3"
@@ -57,7 +57,7 @@ result, err := uploader.Upload(context.TODO(), &s3.PutObjectInput{
 
  Below is an example to set the default part size during `Uploader` creation:
 
-```
+```go
 uploader := manager.NewUploader(client, func(u *Uploader) {
     u.PartSize = 10 * 1024 * 1024, // 10 MiB
 })
@@ -70,7 +70,7 @@ uploader := manager.NewUploader(client, func(u *Uploader) {
 
  The `Body` field of the `s3.PutObjectInput` struct is an `io.Reader` type. However, this field can be populated with a type that satisfies both the `io.ReadSeeker` and `io.ReaderAt` interface to improve application resource utilization of the host environment. The following example creates the type `ReadSeekerAt` that satisfies both interfaces:
 
-```
+```go
 type ReadSeekerAt interface {
     io.ReadSeeker
     io.ReaderAt
@@ -90,7 +90,7 @@ type ReadSeekerAt interface {
 
  You can set `LeavePartsOnError` to true so that the `Uploader` doesn't delete successfully uploaded parts. This is useful for resuming partially completed uploads. To operate on uploaded parts, you must get the `UploadID` of the failed upload. The following example demonstrates how to use the `manager.MultiUploadFailure` error interface type to get the `UploadID`.
 
-```
+```go
 result, err := uploader.Upload(context.TODO(), &s3.PutObjectInput{
     Bucket: aws.String("{{amzn-s3-demo-bucket}}"),
     Key:    aws.String("{{my-object-key}}"),
@@ -116,7 +116,7 @@ if err != nil {
 
  You can override the `Uploader` options when calling `Upload` by providing one or more arguments to the method. These overrides are concurrency-safe modifications and do not affect ongoing uploads, or subsequent `Upload` calls to the manager. For example, to override the `PartSize` configuration for a specific upload request:
 
-```
+```go
 params := &s3.PutObjectInput{
     Bucket: aws.String("{{amzn-s3-demo-bucket}}"),
     Key:    aws.String("{{my-key}}"),
@@ -135,7 +135,7 @@ resp, err := uploader.Upload(context.TODO(), params, func(u *manager.Uploader) {
 
  The following example uses the `path/filepath` package to recursively gather a list of files and upload them to the specified Amazon S3 bucket. The keys of the Amazon S3 objects are prefixed with the file's relative path.
 
-```
+```go
 package main
 
 import (
@@ -228,7 +228,7 @@ func (f fileWalk) Walk(path string, info os.FileInfo, err error) error {
 
  The following example uses the Amazon S3 `Downloader` to download a file. Using `Downloader` is similar to the [s3.GetObject](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/s3#Client.GetObject) operation.
 
-```
+```go
 import "context"
 import "github.com/aws/aws-sdk-go-v2/aws"
 import "github.com/aws/aws-sdk-go-v2/config"
@@ -275,7 +275,7 @@ numBytes, err := downloader.Download(context.TODO(), downloadFile, &s3.GetObject
 
  You can override the `Downloader` options when calling `Download` by providing one or more functional arguments to the method. These overrides are concurrency safe modifications and do not affect ongoing uploads, or subsequent `Download` calls to the manager. For example, to override the `PartSize` configuration for a specific upload request:
 
-```
+```go
 params := &s3.GetObjectInput{
     Bucket: aws.String("{{amzn-s3-demo-bucket}}"),
     Key:    aws.String("{{my-key}}"),
@@ -293,7 +293,7 @@ resp, err := downloader.Download(context.TODO(), targetWriter, params, func(u *m
 
  The following example uses pagination to gather a list of objects from an Amazon S3 bucket. Then it downloads each object to a local file.
 
-```
+```go
 package main
 
 import (
@@ -371,7 +371,7 @@ func downloadToFile(downloader *manager.Downloader, targetDirectory, bucket, key
 
  For example, to find the Region for the Bucket `{{amzn-s3-demo-bucket}}`:
 
-```
+```go
 cfg, err := config.LoadDefaultConfig(context.TODO())
 if err != nil {
     log.Println("error:", err)
@@ -406,7 +406,7 @@ body to start, request stream is not seekable
 
  You can change this behavior by modifying the operation method's [Middleware](middleware.md) using functional options. The [WithAPIOptions](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/s3#WithAPIOptions) helper returns a functional option for zero or more middleware mutators. To disable the client computing the payload hash and use [Unsigned Payload](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-header-based-auth.html) request signature add [v4.SwapComputePayloadSHA256ForUnsignedPayloadMiddleware](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/aws/signer/v4#SwapComputePayloadSHA256ForUnsignedPayloadMiddleware).
 
-```
+```go
 resp, err := client.PutObject(context.TODO(), &s3.PutObjectInput{
     Bucket: &bucketName,
     Key: &objectName,

@@ -228,7 +228,7 @@ HTTP Status Code: 400
 
 The following example provides two functions, one to compress a string with gzip and then base64 encode it and one to decode and decompress a string.
 
-```
+```java
 package com.amazonaws.deepsense.util;
 
 import com.amazonaws.deepsense.runtime.conversation.serialize.RuntimeSdkSerializer;

@@ -92,7 +92,7 @@ Secrets are automatically removed from a data source when the data source is alt
 
 AWS Quick requires the following JSON format to access your secret:
 
-```
+```JSON
 {
   "username": "{{username}}",
   "password": "{{password}}"

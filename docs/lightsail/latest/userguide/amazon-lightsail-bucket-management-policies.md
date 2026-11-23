@@ -14,7 +14,7 @@ Users who don't have this policy will experience errors when viewing the **Objec
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

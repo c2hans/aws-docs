@@ -40,7 +40,7 @@ For more information, see [Register targets with your Application Load Balancer 
 **Tools for PowerShell V4**
 **Example 1: This example deregisters instance 'i-0672a4c4cdeae3111' from the specified Target group.**
 
-```
+```powershell
 $targetDescription = New-Object Amazon.ElasticLoadBalancingV2.Model.TargetDescription
 $targetDescription.Id = 'i-0672a4c4cdeae3111'
 Unregister-ELB2Target -Target $targetDescription -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970'
@@ -50,7 +50,7 @@ Unregister-ELB2Target -Target $targetDescription -TargetGroupArn 'arn:aws:elasti
 **Tools for PowerShell V5**
 **Example 1: This example deregisters instance 'i-0672a4c4cdeae3111' from the specified Target group.**
 
-```
+```powershell
 $targetDescription = New-Object Amazon.ElasticLoadBalancingV2.Model.TargetDescription
 $targetDescription.Id = 'i-0672a4c4cdeae3111'
 Unregister-ELB2Target -Target $targetDescription -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970'

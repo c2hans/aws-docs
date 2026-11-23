@@ -31,7 +31,7 @@ Create a profile with your execution role, target pillars, and account configura
 **Note**
  You can choose a common access role name or enter an access role name per account. This is only available in the API version of onboarding, not in the console.
 
-   ```
+   ```bash
    aws wellarchitected create-agent-profile \
        --name "my-production-profile" \
        --execution-role-arn "arn:aws:iam::{{111122223333}}:role/service-role/ExecutionRoleForWellArchitectedAgent" \
@@ -49,7 +49,7 @@ Add a goal to drive recommendation prioritization. Each goal is associated with 
 **To add a goal (CLI)**
 + Run the following command. Replace the profile ARN with the value from Step 1.
 
-  ```
+  ```bash
   aws wellarchitected create-agent-goal \
       --profile-arn "arn:aws:wellarchitected:{{us-east-1}}:{{111122223333}}:agent-profile/{{my-production-profile}}" \
       --title "Reduce EC2 spend by 20% by Q4 through rightsizing and Reserved Instance coverage" \
@@ -64,7 +64,7 @@ Provide application metadata so AWS WA Agent can generate more relevant, persona
 **To add application context (CLI)**
 + Run the following command. Replace the profile ARN and content fields with your application details.
 
-  ```
+  ```bash
   aws wellarchitected create-agent-context \
       --profile-arn "arn:aws:wellarchitected:{{us-east-1}}:{{111122223333}}:agent-profile/{{my-production-profile}}" \
       --title "Payment processing service" \
@@ -81,7 +81,7 @@ Check that your profile is valid and eligible for recommendation generation.
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws wellarchitected get-agent-profile \
        --profile-arn "arn:aws:wellarchitected:{{us-east-1}}:{{111122223333}}:agent-profile/{{my-production-profile}}" \
        --query '{eligible: eligibleForScheduledGeneration, errors: fieldErrors}'

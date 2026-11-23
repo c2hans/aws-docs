@@ -50,7 +50,7 @@ This component has the following requirements:
   When you deploy this component, you must specify this role's name for the `SSMRegistrationRole` configuration parameter.
 + The [Greengrass device role](device-service-role.md) must allow the `ssm:AddTagsToResource` and `ssm:RegisterManagedInstance` actions. The device role must also allow the `iam:PassRole` action for the IAM service role that fulfills the previous requirement. The following example IAM policy grants these permissions.
 
-  ```
+  ```json
   {
     "Version": "2012-10-17",
     "Statement": [
@@ -78,7 +78,7 @@ This component has the following requirements:
 
   1. Download the snap and its assertion from an internet-connected machine that has the same architecture as the target device:
 
-     ```
+     ```bash
      snap download core22
      ```
 
@@ -86,13 +86,13 @@ This component has the following requirements:
 
   1. Acknowledge the assertion on the target device:
 
-     ```
+     ```bash
      sudo snap ack {{core22.assert}}
      ```
 
   1. Install the snap on the target device:
 
-     ```
+     ```bash
      sudo snap install {{core22.snap}}
      ```
 
@@ -139,7 +139,7 @@ Default: `false`
 (Optional) The tags to add to the Systems Manager managed node that this component creates for the core device. You can use these tags to manage groups of core devices with Systems Manager. For example, you can run a command on all devices that have a tag that you specify.
 Specify a list where each tag is an object with a `Key` and a `Value`. For example, the following value for `SSMResourceTags` instructs this component to set the **Owner** tag to **richard-roe** on the core device's managed node.
 
-```
+```json
 [
   {
     "Key": "Owner",
@@ -152,7 +152,7 @@ This component ignores these tags if the managed node already exists and `SSMOve
 **Example: Configuration merge update**
 The following example configuration specifies to use a service role named `SSMServiceRole` to allow the core device to register and communicate with Systems Manager.
 
-```
+```json
 {
   "SSMRegistrationRole": "SSMServiceRole",
   "SSMOverrideExistingRegistration": false,
@@ -183,7 +183,7 @@ The Systems Manager Agent component uses shell scripts to install, start, and st
 **To view this component's logs**
 + Run the following command on the core device to view this component's log file in real time. Replace `{{/greengrass/v2}}` with the path to the AWS IoT Greengrass root folder.
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.greengrass.SystemsManagerAgent.log
   ```
 

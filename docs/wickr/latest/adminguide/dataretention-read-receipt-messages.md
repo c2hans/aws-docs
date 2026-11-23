@@ -8,7 +8,7 @@ This guide documents the new AWS Wickr administration console, released on March
 
 Read receipts confirm that a user has read messages in a conversation. The **message\_timestamp\_secs** field indicates which message was read, and the **read\_receipt\_timestamp** field shows when it was read.
 
-```
+```json
 {
   "readreceipt": {
     "status": "READ",

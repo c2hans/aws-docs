@@ -155,14 +155,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-network-load-balancer-create-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="deployment-advanced-network-load-balancer-create-ex-max"></a>
 
-```
+```json
 {
   "Description": "This is a test description",
   "Name": "Test Stack",

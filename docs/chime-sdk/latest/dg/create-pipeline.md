@@ -16,7 +16,7 @@ You follow a multi-step process to create an Amazon Chime SDK media pipeline, an
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

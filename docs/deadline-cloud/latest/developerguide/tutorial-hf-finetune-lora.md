@@ -69,7 +69,7 @@ The dataset is a JSONL file where each line is a JSON object with two text field
 
 The following lines are from the bundle's included Saffron Stack sample dataset:
 
-```
+```json
 {"instruction": "What is Saffron Stack's tagline?", "output": "Saffron Stack's tagline is 'Layered with love.'"}
 {"instruction": "How old is Saffron Stack?", "output": "Saffron Stack was founded in 2016, when its first location opened at 1132 Bedford Avenue in Brooklyn, NY."}
 ```
@@ -89,7 +89,7 @@ Deadline Cloud workers run jobs under the queue's session role. By default that 
 
 1. Create a policy document named `datasets-policy.json`, replacing the resource ARN with your actual bucket and prefix:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [{
@@ -106,7 +106,7 @@ Deadline Cloud workers run jobs under the queue's session role. By default that 
 
 1. Attach the policy to your queue role:
 
-   ```
+   ```bash
    QUEUE_ROLE=$(aws deadline get-queue --farm-id {{FARM-ID}} --queue-id {{QUEUE-ID}} \
      --query 'roleArn' --output text | awk -F/ '{print $NF}')
 
@@ -123,13 +123,13 @@ Alternatively, place your dataset under the queue's existing job-attachments buc
 
 To submit with the GUI submitter, run the following command, fill in the form, and choose **Submit**. The GUI is organized into collapsible sections: Model, Dataset, LoRA, Training, and Output.
 
-```
+```bash
 deadline bundle gui-submit /path/to/hf_finetune_lora
 ```
 
 Alternatively, submit with the CLI:
 
-```
+```bash
 deadline bundle submit /path/to/hf_finetune_lora \
   --queue-id {{gpu-queue-id}} \
   -p DatasetPath={{/path/to/your/data}} \
@@ -139,7 +139,7 @@ deadline bundle submit /path/to/hf_finetune_lora \
 
 The `BaseModel` parameter defaults to `Qwen/Qwen2.5-7B` and offers a dropdown of five public models: Qwen2.5 (0.5B, 1.5B, and 7B), Mistral-7B-v0.3, and Phi-3.5-mini-instruct. To fine-tune a model that isn't in the list, edit the `allowedValues` of the `BaseModel` parameter in the bundle's `template.yaml` file. The default hyperparameters are tuned for fact-memorization, which matches the bundled sample data. For style-transfer use cases, a lighter configuration trains faster:
 
-```
+```bash
 deadline bundle submit /path/to/hf_finetune_lora \
   --queue-id {{gpu-queue-id}} \
   -p BaseModel=Qwen/Qwen2.5-1.5B \
@@ -153,7 +153,7 @@ For the full list of parameters, including LoRA rank, learning rate, batch size,
 
 To wait for the job to complete, run the following command:
 
-```
+```bash
 deadline job wait --job-id {{job-id}} --timeout 3600
 ```
 
@@ -164,7 +164,7 @@ deadline job wait --job-id {{job-id}} --timeout 3600
 
 1. After the job completes, download the output:
 
-   ```
+   ```bash
    deadline job download-output --job-id {{job-id}}
    ```
 
@@ -172,7 +172,7 @@ deadline job wait --job-id {{job-id}} --timeout 3600
 
 1. Install the core inference stack on your local machine:
 
-   ```
+   ```bash
    pip install torch transformers peft
    ```
 
@@ -180,7 +180,7 @@ deadline job wait --job-id {{job-id}} --timeout 3600
 
 1. Test the adapter with the included interactive chat tool:
 
-   ```
+   ```bash
    python3 inference/chat.py --adapter-path {{/path/to/downloaded/my-adapter}}
    ```
 
@@ -188,7 +188,7 @@ deadline job wait --job-id {{job-id}} --timeout 3600
 
 1. For a more demo-friendly web UI with chat bubbles in your browser, install Gradio and run the web chat tool:
 
-   ```
+   ```bash
    pip install gradio
    python3 inference/gradio_chat.py --adapter-path {{/path/to/downloaded/my-adapter}}
    ```
@@ -214,7 +214,7 @@ To avoid ongoing charges, clean up the resources that you created for this tutor
 
 1. If you added the `ReadFineTuningDatasets` policy to your queue role and no longer need it, remove it:
 
-   ```
+   ```bash
    QUEUE_ROLE=$(aws deadline get-queue --farm-id {{FARM-ID}} --queue-id {{QUEUE-ID}} \
      --query 'roleArn' --output text | awk -F/ '{print $NF}')
 

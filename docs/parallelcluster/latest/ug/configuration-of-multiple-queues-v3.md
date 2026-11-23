@@ -25,7 +25,7 @@ Each compute resource in [`ComputeResources`](Scheduling-v3.md#Scheduling-v3-Slu
 
 The following is an example of a [Scheduling](Scheduling-v3.md) section for a cluster configuration file. In this configuration there are two queues named `queue1` and `queue2` and each of the queues has [`ComputeResources`](Scheduling-v3.md#Scheduling-v3-SlurmQueues-ComputeResources) with a specified [`MaxCount`](Scheduling-v3.md#yaml-Scheduling-SlurmQueues-ComputeResources-MaxCount).
 
-```
+```yaml
 Scheduling:
   Scheduler: slurm
   SlurmQueues:

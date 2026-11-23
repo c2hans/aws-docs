@@ -44,7 +44,7 @@ You install the SDK for JavaScript package using [npm (the Node.js package manag
 
 From the `awsnodesample` directory in the package, type the following at the command line.
 
-```
+```sh
 npm install aws-sdk
 ```
 
@@ -52,7 +52,7 @@ This command installs the SDK for JavaScript in your project, and updates `packa
 
 Next, install the `uuid` module to the project by typing the following at the command line, which installs the module and updates `package.json`. For more information about `uuid`, see the module's page at [https://www.npmjs.com/package/uuid](https://www.npmjs.com/package/uuid).
 
-```
+```sh
 npm install uuid
 ```
 
@@ -67,7 +67,7 @@ You need to provide credentials to AWS so that only your account and its resourc
 
 To hold this information, we recommend you create a shared credentials file. To learn how, see [Loading Credentials in Node.js from the Shared Credentials File](loading-node-credentials-shared.md). Your credentials file should resemble the following example.
 
-```
+```ini
 [default]
 aws_access_key_id = {{YOUR_ACCESS_KEY_ID}}
 aws_secret_access_key = {{YOUR_SECRET_ACCESS_KEY}}
@@ -75,7 +75,7 @@ aws_secret_access_key = {{YOUR_SECRET_ACCESS_KEY}}
 
 You can determine whether you have set your credentials correctly by executing the following code with Node.js:
 
-```
+```javascript
 var AWS = require("aws-sdk");
 
 AWS.config.getCredentials(function(err) {
@@ -89,7 +89,7 @@ AWS.config.getCredentials(function(err) {
 
 Similarly, if you have set your region correctly in your `config` file, you can display that value by setting the `AWS_SDK_LOAD_CONFIG` environment variable to any value and using the following code:
 
-```
+```javascript
 var AWS = require("aws-sdk");
 
 console.log("Region: ", AWS.config.region);
@@ -102,7 +102,7 @@ After you create the `awsnodesample` project directory, you create and add a `pa
 
 In the project directory, create a new file named `package.json`. Then add this JSON to the file.
 
-```
+```json
 {
   "dependencies": {},
   "name": "aws-nodejs-sample",
@@ -129,7 +129,7 @@ Build a unique bucket name that is used to create an Amazon S3 bucket by appendi
 
 Create a `promise` object to call the `createBucket` method of the `AWS.S3` service object. On a successful response, create the parameters needed to upload text to the newly created bucket. Using another promise, call the `putObject` method to upload the text object to the bucket.
 
-```
+```javascript
 // Load the SDK and UUID
 var AWS = require("aws-sdk");
 var uuid = require("uuid");
@@ -175,7 +175,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Type the following command to run the sample.
 
-```
+```sh
 node sample.js
 ```
 

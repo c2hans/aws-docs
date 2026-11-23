@@ -26,7 +26,7 @@ The following code example shows how to use `GetThingShadow`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Gets the Thing's shadow information.
     /// </summary>
@@ -70,7 +70,7 @@ The following code example shows how to use `UpdateThingShadow`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Updates the Thing's shadow with new state information.
     /// </summary>

@@ -18,7 +18,7 @@ The flow consists of three key components working together to ensure your data i
 + Configure the MQTT subscription client in Node-RED to receive data from the MQTT EMQX broker in AWS IoT SiteWise by importing the example below.
 **Example : MQTT in node**
 
-  ```
+  ```json
   [
       {
           "id": "string",
@@ -86,7 +86,7 @@ InfluxDB organizes data using [tags](https://docs.influxdata.com/influxdb/v1/con
 
 **Example : Function node of translating to an InfluxDB payload**
 
-```
+```json
 [
     {
         "id": "string",

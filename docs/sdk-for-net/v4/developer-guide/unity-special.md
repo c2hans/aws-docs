@@ -19,7 +19,7 @@ When using the AWS SDK for .NET and [.NET Standard 2.0](https://docs.microsoft.c
   + [System.Threading.Tasks.Extensions.dll](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/)
 + If you're using [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html) to build your Unity project, you must add a `link.xml` file to your Asset folder to prevent code stripping. The `link.xml` file must list all of the AWSSDK assemblies you are using, and each must include the `preserve="all"` attribute. The following snippet shows an example of this file.
 
-  ```
+  ```xml
   <linker>
       <assembly fullname="AWSSDK.Core" preserve="all"/>
       <assembly fullname="AWSSDK.DynamoDBv2" preserve="all"/>

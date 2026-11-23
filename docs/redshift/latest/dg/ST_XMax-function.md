@@ -35,7 +35,7 @@ If *geom* is null, then null is returned.
 
 The following SQL returns the largest first coordinate of a linestring.
 
-```
+```sql
 SELECT ST_XMax(ST_GeomFromText('LINESTRING(77.29 29.07,77.42 29.26,77.27 29.31,77.29 29.07)'));
 ```
 

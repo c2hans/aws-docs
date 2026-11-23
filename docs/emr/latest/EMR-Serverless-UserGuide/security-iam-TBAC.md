@@ -23,7 +23,7 @@ In the following policy example, the `StringEquals` condition operator tries to 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -50,7 +50,7 @@ In the following policy example, the `StringEquals` condition operator tries to 
 
 You can also specify multiple tag values using a condition operator. For example, to allow actions on applications where the `department` tag contains the value `dev` or `test`, replace the condition block in the earlier example with the following.
 
-```
+```json
 "Condition": {
         "StringEquals": {
           "aws:ResourceTag/department": ["dev", "test"]
@@ -68,7 +68,7 @@ In the example below, the tag needs to be applied when creating the application.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -100,7 +100,7 @@ The following policy statement allows a user to create an application only if th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -135,7 +135,7 @@ This policy prevents a user from adding or removing tags on EMR Serverless appli
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

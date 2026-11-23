@@ -44,7 +44,7 @@ If *geom1* or *geom2* is not a two-dimensional (2D) geometry, then an error is r
 
 The following SQL returns the non-empty geometry representing the intersection of two input geometries.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Intersection(ST_GeomFromText('polygon((0 0,100 100,0 200,0 0))'), ST_GeomFromText('polygon((0 0,10 0,0 10,0 0))')));
 ```
 
@@ -56,7 +56,7 @@ SELECT ST_AsEWKT(ST_Intersection(ST_GeomFromText('polygon((0 0,100 100,0 200,0 0
 
 The following SQL returns an empty geometry when passed disjoint (non-intersecting) input geometries.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Intersection(ST_GeomFromText('linestring(0 100,0 0)'), ST_GeomFromText('polygon((1 0,10 0,1 10,1 0))')));
 ```
 

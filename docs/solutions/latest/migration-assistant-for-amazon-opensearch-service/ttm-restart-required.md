@@ -9,7 +9,7 @@ Whenever you change the type-mapping transformer configuration for a workflow-ma
 
 To apply a configuration change cleanly, edit the workflow configuration, clear any affected data on the target when no workflow pod is writing to it, and resubmit:
 
-```
+```bash
 workflow configure edit
 console clusters clear-indices --cluster target --acknowledge-risk
 workflow submit

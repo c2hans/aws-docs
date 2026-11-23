@@ -24,14 +24,14 @@ The following examples show the use of this setting for file paths without space
 
 **No spaces in file path**
 
-```
+```sh
 [profile process-credential-profile]
 credential_process = /path/to/credential/file/credential_file.sh --custom-command custom_parameter
 ```
 
 **Spaces in file path**
 
-```
+```sh
 [profile process-credential-profile]
 credential_process = "/path/with/space to/credential/file/credential_file.sh" --custom-command custom_parameter
 ```
@@ -41,14 +41,14 @@ credential_process = "/path/with/space to/credential/file/credential_file.sh" --
 
 **No spaces in file path**
 
-```
+```sh
 [profile process-credential-profile]
 credential_process = C:\Path\To\credentials.cmd --custom_command custom_parameter
 ```
 
 **Spaces in file path**
 
-```
+```sh
 [profile process-credential-profile]
 credential_process = "C:\Path\With Space To\credentials.cmd" --custom_command custom_parameter
 ```
@@ -57,7 +57,7 @@ credential_process = "C:\Path\With Space To\credentials.cmd" --custom_command cu
 
 The following code snippet demonstrates how to build a service client that uses the temporary credentials defined as part of the profile named `process-credential-profile`.
 
-```
+```java
 Region region = Region.US_WEST_2;
 S3Client s3Client = S3Client.builder()
       .region(region)
@@ -79,7 +79,7 @@ The following examples show various versions of how to specify an external proce
 
 **No spaces in file path**
 
-```
+```java
 ProcessCredentialsProvider credentials =
     ProcessCredentialsProvider
         .builder()
@@ -94,7 +94,7 @@ S3Client s3 = S3Client.builder()
 
 **Spaces in file path**
 
-```
+```java
 ProcessCredentialsProvider credentials =
     ProcessCredentialsProvider
         .builder()
@@ -112,7 +112,7 @@ S3Client s3 = S3Client.builder()
 
 **No spaces in file path**
 
-```
+```java
 ProcessCredentialsProvider credentials =
     ProcessCredentialsProvider
         .builder()
@@ -127,7 +127,7 @@ S3Client s3 = S3Client.builder()
 
 **Spaces in file path**
 
-```
+```java
 ProcessCredentialsProvider credentials =
     ProcessCredentialsProvider
         .builder()
@@ -170,7 +170,7 @@ You need to replace the text shown in red with your values after you have assemb
 
 When you configure a service client to use the `roles_anywhere` profile—as shown in the following code—the SDK caches the temporary credentials and refreshes them before they expire:
 
-```
+```java
 S3Client s3Client = S3Client.builder()
     .credentialsProvider(ProfileCredentialsProvider.builder()
         .profileName("roles_anywhere").build())
@@ -182,7 +182,7 @@ S3Client s3Client = S3Client.builder()
 
 As shown next, you can use a code-only approach with the `ProcessCredentialsProvider` instead of using profile settings:
 
-```
+```java
 ProcessCredentialsProvider processCredentialsProvider = ProcessCredentialsProvider.builder()
     .command("""
             {{./}}aws_signing_helper credential-process \

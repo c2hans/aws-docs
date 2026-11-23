@@ -25,7 +25,7 @@ The following examples demonstrate what the header and payload for OIDC user cla
 
 Example header:
 
-```
+```json
 {
    "alg": "ES384",
    "kid": "12345678-1234-1234-1234-123456789012",
@@ -37,7 +37,7 @@ Example header:
 
 Example payload:
 
-```
+```json
 {
    "sub": "xyzsubject",
    "email": "xxx@amazon.com",
@@ -71,7 +71,7 @@ For IAM Identity Center, only user information will be included in the claims.
 
 Example header:
 
-```
+```json
 {
    "alg": "ES384",
    "kid": "12345678-1234-1234-1234-123456789012",
@@ -83,7 +83,7 @@ Example header:
 
 Example payload:
 
-```
+```json
 {
     "user": {
         "user_id": "f478d4c8-a001-7064-6ea6-12423523",
@@ -114,7 +114,7 @@ The endpoint for each AWS Region is as follows:
 
 The following code example shows how to get the key ID, public key, and payload in Python 3.9.
 
-```
+```python
 import jwt
 import requests
 import base64

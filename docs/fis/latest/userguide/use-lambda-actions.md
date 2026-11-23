@@ -34,7 +34,7 @@ Before using AWS FIS Lambda actions, ensure that you have completed these one-ti
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -67,7 +67,7 @@ Before using AWS FIS Lambda actions, ensure that you have completed these one-ti
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [

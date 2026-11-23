@@ -146,7 +146,7 @@ Amazon Pinpoint Endpoints can be modeled as Connect Customer Customer Profiles. 
 
 In case you want to aggregate endpoints under a single Customer Profile, you can parse the downloaded Amazon Pinpoint segment to collect the email addresses and phone numbers under a single profile. Here is a sample Python script to read the exported file in JSON format and created the Profiles which can be imported to Customer Profiles.
 
-```
+```python
 from collections import defaultdict
 import json
 

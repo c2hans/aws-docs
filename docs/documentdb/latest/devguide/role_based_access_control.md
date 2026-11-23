@@ -56,7 +56,7 @@ db.createUser({user: "sample-user", pwd: "abc123", roles: ["readWrite"]})
 
 Output from this operation looks something like the following.
 
-```
+```json
 {
    "user":"sample-user",
    "roles":[
@@ -99,7 +99,7 @@ db.createUser({user: "user1", pwd: "abc123", roles: [{role: "readWriteAnyDatabas
 
 Output from this operation looks something like the following.
 
-```
+```json
 {
    "user":"user1",
    "roles":[
@@ -119,7 +119,7 @@ db.createUser({user: "user2", pwd: "abc123", roles: [{role: "read", db: "sample-
 
 Output from this operation looks something like the following.
 
-```
+```json
 {
    "user":"user2",
    "roles":[
@@ -139,7 +139,7 @@ db.createUser({user: "user3", pwd: "abc123", roles: [{role: "readWrite", db: "sa
 
 Output from this operation looks something like the following.
 
-```
+```json
 {
    "user":"user3",
    "roles":[
@@ -172,7 +172,7 @@ show users
 
 Output from this operation looks something like the following.
 
-```
+```json
 {
    "_id":"serviceadmin",
    "user":"serviceadmin",
@@ -234,7 +234,7 @@ db.createUser(
 
 Output from this operation looks something like the following.
 
-```
+```Json
 {
    "user":"user1",
    "roles":[
@@ -263,7 +263,7 @@ db.createRole(
 
 Output from this operation looks something like the following.
 
-```
+```Json
 {
    "role":"findRole",
    "privileges":[
@@ -322,7 +322,7 @@ db.createRole(
 
 Output from this operation looks something like the following.
 
-```
+```Json
 {
    "role":"collectionRole",
    "privileges":[
@@ -366,7 +366,7 @@ show users
 
 Output from this operation looks something like the following.
 
-```
+```Json
 {
    "_id":"serviceadmin",
    "user":"serviceadmin",
@@ -497,7 +497,7 @@ db.createUser({user: "readInFooBar", pwd: "abc123", roles: [{role: "read", db: "
 
 Output from this operation looks something like the following.
 
-```
+```json
 {
    "user":"readInFooBar",
    "roles":[
@@ -517,7 +517,7 @@ db.createUser({user: "readAllDBs", pwd: "abc123", roles: [{role: "readAnyDatabas
 
 Output from this operation looks something like the following.
 
-```
+```json
 {
    "user":"readAllDBs",
    "roles":[
@@ -555,7 +555,7 @@ db.getRole("read", {showPrivileges:true})
 
 Output from this operation looks something like the following.
 
-```
+```Json
 {
    "role":"read",
    "db":"sample-database-1",
@@ -631,7 +631,7 @@ db.createRole(
 
 Output from this operation looks something like the following.
 
-```
+```Json
 {
    "role":"collectionRole",
    "privileges":[

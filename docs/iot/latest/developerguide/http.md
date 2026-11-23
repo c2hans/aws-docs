@@ -34,7 +34,7 @@ These are some examples of how to send an HTTPS message to AWS IoT.
 ------
 #### [ Python (port 8443) ]
 
-```
+```python
 import requests
 import argparse
 
@@ -70,7 +70,7 @@ if publish.status_code == 200:
 ------
 #### [ Python (port 443) ]
 
-```
+```python
 import requests
 import http.client
 import json

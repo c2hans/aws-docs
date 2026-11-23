@@ -38,7 +38,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ Linux or Unix ]
 
-           ```
+           ```bash
            export AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
            export AWS_SECRET_ACCESS_KEY={{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
            export AWS_SESSION_TOKEN={{AQoDYXdzEJr1K...o5OytwEXAMPLE=}}
@@ -47,7 +47,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-           ```
+           ```bash
            set AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
            set AWS_SECRET_ACCESS_KEY={{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
            set AWS_SESSION_TOKEN={{AQoDYXdzEJr1K...o5OytwEXAMPLE=}}
@@ -56,7 +56,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ PowerShell ]
 
-           ```
+           ```bash
            $env:AWS_ACCESS_KEY_ID="{{AKIAIOSFODNN7EXAMPLE}}"
            $env:AWS_SECRET_ACCESS_KEY="{{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}"
            $env:AWS_SESSION_TOKEN="{{AQoDYXdzEJr1K...o5OytwEXAMPLE=}}"
@@ -72,7 +72,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ Linux or Unix ]
 
-           ```
+           ```bash
            export AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
            export AWS_SECRET_ACCESS_KEY={{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
            export AWS_SESSION_TOKEN={{AQoDYXdzEJr1K...o5OytwEXAMPLE=}}
@@ -81,7 +81,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-           ```
+           ```bash
            set AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
            set AWS_SECRET_ACCESS_KEY={{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
            set AWS_SESSION_TOKEN={{AQoDYXdzEJr1K...o5OytwEXAMPLE=}}
@@ -90,7 +90,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ PowerShell ]
 
-           ```
+           ```bash
            $env:AWS_ACCESS_KEY_ID="{{AKIAIOSFODNN7EXAMPLE}}"
            $env:AWS_SECRET_ACCESS_KEY="{{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}"
            $env:AWS_SESSION_TOKEN="{{AQoDYXdzEJr1K...o5OytwEXAMPLE=}}"
@@ -106,7 +106,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ Linux or Unix ]
 
-           ```
+           ```bash
            export AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
            export AWS_SECRET_ACCESS_KEY={{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
            ```
@@ -114,7 +114,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-           ```
+           ```cmd
            set AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
            set AWS_SECRET_ACCESS_KEY={{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
            ```
@@ -122,7 +122,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ PowerShell ]
 
-           ```
+           ```ps
            $env:AWS_ACCESS_KEY_ID="{{AKIAIOSFODNN7EXAMPLE}}"
            $env:AWS_SECRET_ACCESS_KEY="{{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}"
            ```

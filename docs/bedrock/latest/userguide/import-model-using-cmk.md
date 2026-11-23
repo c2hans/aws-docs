@@ -37,7 +37,7 @@ The following is an example policy that you can attach to a key for a role that 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "KMS key policy for a key to encrypt an imported custom model",
@@ -71,7 +71,7 @@ If you're importing a custom model that has already been encrypted by another cu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "KMS key policy for a key that encrypted a custom imported model",

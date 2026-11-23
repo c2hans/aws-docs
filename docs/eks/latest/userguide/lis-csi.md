@@ -32,7 +32,7 @@ The Amazon EC2 Instance Store CSI driver will erase all data on ephemeral disks 
 Before you begin, make sure you have the following:
 + An existing Amazon EKS cluster. To see all available versions of the add-on, run the following AWS CLI command:
 
-  ```
+  ```bash
   aws eks describe-addon-versions --addon-name aws-ec2-local-instance-store-csi-driver
   ```
 
@@ -74,7 +74,7 @@ The following table shows how the StorageClass parameter and PVC annotation inte
 
 To disable throttling for all volumes in a StorageClass:
 
-```
+```yaml
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
@@ -90,7 +90,7 @@ volumeBindingMode: WaitForFirstConsumer
 
 To disable throttling on an individual PVC while using a throttled StorageClass:
 
-```
+```yaml
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -141,7 +141,7 @@ All updated values conform to the NVMe specification.
 
 These changes apply exclusively to EC2 local instance storage. Amazon EBS volumes are not affected. To distinguish between EBS volumes and local instance storage, run the following command:
 
-```
+```bash
 sudo nvme list
 ```
 
@@ -154,7 +154,7 @@ In the output:
 
 To query these values using `nvme-cli`:
 
-```
+```bash
 # Identify Controller
 sudo nvme id-ctrl /dev/nvme1
 

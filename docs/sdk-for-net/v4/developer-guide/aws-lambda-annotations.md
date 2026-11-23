@@ -16,7 +16,7 @@ As an example of the benefit of using the Lambda Annotations framework, consider
 
 **Without Lambda Annotations**
 
-```
+```cs
 public class Functions
 {
     public APIGatewayProxyResponse LambdaMathPlus(APIGatewayProxyRequest request, ILambdaContext context)
@@ -51,7 +51,7 @@ public class Functions
 
 **With Lambda Annotations**
 
-```
+```cs
 public class Functions
 {
     [LambdaFunction]

@@ -33,7 +33,7 @@ aws cloudtrail update-trail --name {{my-trail}} --is-multi-region-trail
 
 To confirm that the trail is now a multi-Region trail, verify that the `IsMultiRegionTrail` element in the output shows `true`.
 
-```
+```JSON
 {
     "IncludeGlobalServiceEvents": true,
     "Name": "{{my-trail}}",
@@ -56,7 +56,7 @@ aws cloudtrail update-trail --name {{my-trail}} --no-is-multi-region-trail
 
 To confirm that the trail now applies to a single Region, the `IsMultiRegionTrail` element in the output shows `false`.
 
-```
+```JSON
 {
     "IncludeGlobalServiceEvents": true,
     "Name": "{{my-trail}}",
@@ -84,7 +84,7 @@ aws cloudtrail update-trail --name {{my-trail}} --no-include-global-service-even
 
 To confirm that the trail no longer logs global service events, the `IncludeGlobalServiceEvents` element in the output shows `false`.
 
-```
+```JSON
 {
     "IncludeGlobalServiceEvents": false,
     "Name": "{{my-trail}}",
@@ -121,7 +121,7 @@ aws cloudtrail update-trail --name {{my-trail}} --enable-log-file-validation
 
 To confirm that log file validation is enabled, the `LogFileValidationEnabled` element in the output shows `true`.
 
-```
+```JSON
 {
     "IncludeGlobalServiceEvents": true,
     "Name": "{{my-trail}}",
@@ -144,7 +144,7 @@ aws cloudtrail update-trail --name {{my-trail-name}} --no-enable-log-file-valida
 
 To confirm that log file validation is disabled, the `LogFileValidationEnabled` element in the output shows `false`.
 
-```
+```JSON
 {
     "IncludeGlobalServiceEvents": true,
     "Name": "{{my-trail}}",

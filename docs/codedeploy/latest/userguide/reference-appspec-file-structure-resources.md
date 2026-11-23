@@ -17,7 +17,7 @@ The `'resources'` section specifies the Lambda function to deploy and has the fo
 
 YAML:
 
-```
+```yaml
 resources:
   - {{name-of-function-to-deploy}}:
       type: "AWS::Lambda::Function"
@@ -30,7 +30,7 @@ resources:
 
 JSON:
 
-```
+```json
 "resources": [
     {
         "{{name-of-function-to-deploy}}" {
@@ -59,7 +59,7 @@ Each property is specified with a string.
 
 YAML:
 
-```
+```yaml
 Resources:
   - TargetService:
       Type: AWS::ECS::Service
@@ -86,7 +86,7 @@ Resources:
 
 JSON:
 
-```
+```json
 "Resources": [
     {
         "TargetService": {

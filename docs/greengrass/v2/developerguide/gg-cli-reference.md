@@ -14,7 +14,7 @@ By default, the `greengrass-cli` executable file in the `{{/greengrass/v2}}/bin/
 + Set the `GGC_ROOT_PATH` environment variable to `{{/greengrass/v2}}`.
 + Add the `--ggcRootPath {{/greengrass/v2}}` argument to your command as shown in the following example.
 
-  ```
+  ```bash
   greengrass-cli --ggcRootPath {{/greengrass/v2}} <command> <subcommand> [arguments]
   ```
 

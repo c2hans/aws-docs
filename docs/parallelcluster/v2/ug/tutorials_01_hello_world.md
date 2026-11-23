@@ -19,13 +19,13 @@ This tutorial walks you through running your first Hello World job on AWS Parall
 
 First, we verify that AWS ParallelCluster is correctly installed and configured.
 
-```
+```sh
 $ pcluster version
 ```
 
 This returns the running version of AWS ParallelCluster. If the output gives you a message about configuration, you need to run the following to configure AWS ParallelCluster:
 
-```
+```sh
 $ pcluster configure
 ```
 
@@ -36,7 +36,7 @@ Now it's time to create your first cluster. Because the workload for this tutori
 
 Let's call your cluster hello-world.
 
-```
+```sh
 $ pcluster create hello-world
 ```
 
@@ -59,13 +59,13 @@ The message `CREATE_COMPLETE` shows that the cluster created successfully. The o
 
 Use your OpenSSH pem file to log into your head node.
 
-```
+```sh
 pcluster ssh hello-world -i /path/to/keyfile.pem
 ```
 
 After you log in, run the command `qhost` to verify that your compute nodes are set up and configured.
 
-```
+```sh
 $ qhost
 HOSTNAME                ARCH         NCPU NSOC NCOR NTHR  LOAD  MEMTOT  MEMUSE  SWAPTO  SWAPUS
 ----------------------------------------------------------------------------------------------
@@ -86,7 +86,7 @@ Next, we create a job that sleeps for a little while and then outputs its own ho
 
 Create a file called `hellojob.sh`, with the following contents.
 
-```
+```bash
 #!/bin/bash
 sleep 30
 echo "Hello World from $(hostname)"
@@ -94,14 +94,14 @@ echo "Hello World from $(hostname)"
 
 Next, submit the job using `qsub`, and verify that it runs.
 
-```
+```sh
 $ qsub hellojob.sh
 Your job 1 ("hellojob.sh") has been submitted
 ```
 
 Now, you can view your queue and check the status of the job.
 
-```
+```sh
 $ qstat
 job-ID  prior   name       user         state submit/start at     queue                          slots ja-task-ID
 -----------------------------------------------------------------------------------------------------------------
@@ -110,14 +110,14 @@ job-ID  prior   name       user         state submit/start at     queue         
 
 The output shows that the job is currently in a running state. Wait 30 seconds for the job to finish, and then run `qstat` again.
 
-```
+```sh
 $ qstat
 $
 ```
 
 Now that there are no jobs in the queue, we can check for output in our current directory.
 
-```
+```sh
 $ ls -l
 total 8
 -rw-rw-r-- 1 ec2-user ec2-user 48 Mar 24 22:34 hellojob.sh
@@ -127,7 +127,7 @@ total 8
 
 In the output, we see an "`e1`" and "`o1`" file in our job script. Because the `e1` file is empty, there was no output to stderr. If we view the `o1` file, we can see output from our job.
 
-```
+```sh
 $ cat hellojob.sh.o1
 Hello World from ip-192-168-1-125
 ```

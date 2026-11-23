@@ -40,7 +40,7 @@ To set up and run this example, first complete these tasks:
 
 Create a Node.js module with the file name `ec2_describeinstances.js`. Be sure to configure the SDK as previously shown. To access Amazon EC2, create an `AWS.EC2` service object. Call the `describeInstances` method of the Amazon EC2 service object to retrieve a detailed description of your instances.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -65,7 +65,7 @@ ec2.describeInstances(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```sh
 node ec2_describeinstances.js
 ```
 
@@ -78,7 +78,7 @@ Create a Node.js module with the file name `ec2_monitorinstances.js`. Be sure to
 
 Based on the value of a command-line argument (`ON` or `OFF`), call either the `monitorInstances` method of the Amazon EC2 service object to begin detailed monitoring of the specified instances or call the `unmonitorInstances` method. Use the `DryRun` parameter to test whether you have permission to change instance monitoring before you attempt to change the monitoring of these instances.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -129,7 +129,7 @@ if (process.argv[2].toUpperCase() === "ON") {
 
 To run the example, type the following at the command line, specifying `ON` to begin detailed monitoring or `OFF` to discontinue monitoring.
 
-```
+```sh
 node ec2_monitorinstances.js {{ON}}
 ```
 
@@ -142,7 +142,7 @@ Create a Node.js module with the file name `ec2_startstopinstances.js`. Be sure 
 
 Based on the value of a command-line argument (`START` or `STOP`), call either the `startInstances` method of the Amazon EC2 service object to start the specified instances, or the `stopInstances` method to stop them. Use the `DryRun` parameter to test whether you have permission before actually attempting to start or stop the selected instances.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -193,7 +193,7 @@ if (process.argv[2].toUpperCase() === "START") {
 
 To run the example, type the following at the command line specifying `START` to start the instances or `STOP` to stop them.
 
-```
+```sh
 node ec2_startstopinstances.js {{START}} {{INSTANCE_ID}}
 ```
 
@@ -204,7 +204,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `ec2_rebootinstances.js`. Be sure to configure the SDK as previously shown. To access Amazon EC2, create an Amazon EC2 service object. Add the instance IDs of the instances you want to reboot. Call the `rebootInstances` method of the `AWS.EC2` service object to reboot the specified instances. Use the `DryRun` parameter to test whether you have permission to reboot these instances before actually attempting to reboot them.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -237,7 +237,7 @@ ec2.rebootInstances(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```sh
 node ec2_rebootinstances.js
 ```
 

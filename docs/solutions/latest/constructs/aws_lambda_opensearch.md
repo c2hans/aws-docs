@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps, Aws } from 'aws-cdk-lib';
 import { LambdaToOpenSearch } from '@aws-solutions-constructs/aws-lambda-opensearch';
@@ -45,7 +45,7 @@ new LambdaToOpenSearch(this, 'sample', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_lambda_opensearch import LambdaToOpenSearch
 from aws_cdk import (
     aws_lambda as _lambda,
@@ -68,7 +68,7 @@ LambdaToOpenSearch(self, 'sample',
                             )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

@@ -167,7 +167,7 @@ You must specify the following using the [TemplateConfiguration](https://docs.aw
   + `CHANGE_LOG` to index only new and modified content each time your data source syncs with your index. Amazon Kendra can use your data source’s mechanism for tracking content changes and index content that changed since the last sync.
 + **Secret Amazon Resource Name (ARN)**—Provide the Amazon Resource Name (ARN) of an Secrets Manager secret that contains the authentication credentials you created in your MySQL account. The secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "user name": {{"database user name"}},
       "password": {{"password"}}

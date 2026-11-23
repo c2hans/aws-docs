@@ -73,7 +73,7 @@ $ dcv describe-session {{session-id}} --json
 
 The following is example JSON output.
 
-```
+```json
 {
   "id" : "{{session-id}}",
   "owner" : "dcvuser",

@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 
 ![Diagram showing Multi-rack Outpost with redundant network attachments](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/multi-rack-outpost.png)
 
+* Multi-rack Outpost with redundant network attachments*
+
  The OND to CND links are always configured in a LAG – even if the physical connection is a single fiber optic cable. Configuring the links as LAG groups allow you to increase the link bandwidth by adding additional physical connections to the logical group. The LAG links are configured as IEEE 802.1q Ethernet trunks to enable segregated networking between the Outpost and the on-premises network.
 
  Every Outpost has at least two logically segregated networks that need to communicate with or across the customer network:
@@ -18,7 +20,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 
 ![Diagram showing service link peering](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/service-link-peering.png)
 
+*Service link peering*
+
 ![Diagram showing Local Gateway peering](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-20-local-gateway-peering.png)
+
+*Local Gateway peering*
 
  You should terminate the layer-2 LAG links (and their VLANs) on the directly attached CND switches and configure the IP interfaces and BGP peering on the CND switches. You should not bridge the LAG VLANs between your data center switches. For more information, see [Network layer connectivity](https://docs.aws.amazon.com/outposts/latest/userguide/local-network-connectivity.html#network-layer-connectivity) in the *AWS Outposts User Guide*.
 
@@ -50,6 +56,8 @@ Isolated network layers for Service Link and Local Gateway networks are still re
 
 ![Two-customer networking devices](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-22-two-customer-networking-devices.png)
 
+*Two-customer networking devices*
+
 + With this architecture, the customer should have two networking devices (CND) to interconnect the ACE networking devices, providing redundancy.
 + For each physical connections, you must enable a LAG (to increase the available bandwidth between the Outpost and the data center), even if it is a single physical port, and it will carry two network segments, having 2 point-to-point VLANs (/30 or /31), and eBGP configurations between ACEs and CNDs.
 + In a steady state the traffic is load balanced following Equal-cost multipath (ECMP) pattern to/from the customer network from the ACE layer, 25% traffic distribution across the ACE to customer. In order to allow this behavior, the eBGP peering’s between ACEs and CNDs must have BGP multipath/load-balancing enabled, and announced the customer prefixes with the same BGP metric on the 4 eBGP peering connections.
@@ -61,5 +69,7 @@ Isolated network layers for Service Link and Local Gateway networks are still re
 <a name="four-customer-devices"></a>
 
 ![Four-customer network devices](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-23-four-customer-networking-devices.png)
+
+*Four-customer network devices*
 
 With this architecture, the customer will have four networking devices (CND) to interconnect the ACE networking devices, providing redundancy and the same networking logic, including VLANs, eBGP, and ECMP applicable to a 2 CND architecture.

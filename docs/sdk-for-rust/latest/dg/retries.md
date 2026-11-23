@@ -32,7 +32,7 @@ You can customize the `standard` retry strategy by setting the maximum attempts,
 
 You can customize the maximum attempts in your code by supplying a modified [`RetryConfig`](https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html) to your `aws_config::defaults`:
 
-```
+```rust
 const CUSTOM_MAX_ATTEMPTS: u32 = 5;
 let retry_config = RetryConfig::standard()
     // Set max attempts. When max_attempts is 1, there are no retries.
@@ -55,7 +55,7 @@ Random jitter is applied to the delays between all attempts. The jitter helps mi
 
  You can customize the delay settings in your code by supplying a modified [`RetryConfig`](https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html) to your `aws_config::defaults`. The following code sets the configuration to delay the first retry attempt for up to 100 milliseconds and that the maximum amount of time between any retry attempt is 5 seconds.
 
-```
+```rust
 let retry_config = RetryConfig::standard()
     // Defaults to 1 second.
     .with_initial_backoff(Duration::from_millis(100))
@@ -82,7 +82,7 @@ The rate adapts in real time to changing service conditions and traffic patterns
 
 You can select the `adaptive` retry strategy in code by supplying a modified [`RetryConfig`](https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html):
 
-```
+```rust
 let config = aws_config::defaults(BehaviorVersion::latest())
     .retry_config(RetryConfig::adaptive())
     .load()

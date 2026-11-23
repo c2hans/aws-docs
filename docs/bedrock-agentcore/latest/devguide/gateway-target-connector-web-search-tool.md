@@ -134,14 +134,14 @@ To create the gateway and the Web Search Tool target, complete the following ste
 
 1. Create an AgentCore CLI project without an agent. Run the following AgentCore CLI commands:
 
-   ```
+   ```bash
    agentcore create --name WebSearchClaude --project-name WebSearchClaude --no-agent
    cd WebSearchClaude
    ```
 
 1. Add a gateway that uses your app client for JWT inbound authorization. In the following command, replace `<region>` with your Region code, `<user-pool-id>` with your user pool ID, and `<app-client-id>` with your app client ID. Then run the following AgentCore CLI command:
 
-   ```
+   ```bash
    agentcore add gateway --name web-search-claude --protocol-type MCP --authorizer-type CUSTOM_JWT \
      --discovery-url https://cognito-idp.<region>.amazonaws.com/<user-pool-id>/.well-known/openid-configuration \
      --allowed-clients <app-client-id> --no-semantic-search
@@ -151,7 +151,7 @@ To create the gateway and the Web Search Tool target, complete the following ste
 
 1. Add the Web Search Tool target. Run the following AgentCore CLI command:
 
-   ```
+   ```bash
    agentcore add gateway-target --name amazon-web-search --gateway web-search-claude --type connector --connector web-search
    ```
 
@@ -159,7 +159,7 @@ To create the gateway and the Web Search Tool target, complete the following ste
 
 1. Deploy the project. Run the following AgentCore CLI command:
 
-   ```
+   ```bash
    agentcore deploy -y
    ```
 
@@ -210,7 +210,7 @@ The Gateway needs a service role that allows the AgentCore service to perform ac
 
 The Web Search Tool accepts the following input schema when invoked through `tools/call`. The `filters` field is available only when the target is pinned to connector version `1.2.0` or later. On earlier versions, the schema exposes only `query` and `maxResults`.
 
-```
+```json
 {
   "inputSchema": {
     "type": "object",
@@ -280,7 +280,7 @@ The Web Search Tool accepts the following input schema when invoked through `too
 
 The Web Search Tool returns results in the following MCP-compliant format:
 
-```
+```json
 {
   "isError": false,
   "content": [

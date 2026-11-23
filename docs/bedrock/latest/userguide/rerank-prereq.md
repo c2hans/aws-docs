@@ -41,7 +41,7 @@ To use [Rerank](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agen
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -85,7 +85,7 @@ The user role needs permissions to use the `bedrock:Retrieve` action. To allow t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -116,7 +116,7 @@ The [Amazon Bedrock Knowledge Bases service role](kb-permissions.md) that the us
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -154,7 +154,7 @@ To use a reranker model when retrieving data from a knowledge base and subsequen
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

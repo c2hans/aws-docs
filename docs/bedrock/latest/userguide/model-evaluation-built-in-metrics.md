@@ -62,7 +62,7 @@ To create a job using the following instructions, you need a prompt dataset. If 
   aws bedrock create-evaluation-job --cli-input-json file://{{my_eval_job.json}}
   ```
 
-  ```
+  ```json
   {
       "jobName": {{"model-eval-llmaj"}},
       "roleArn": "arn:aws:iam::{{111122223333}}:role/Amazon-Bedrock-ModelAsAJudgeTest",
@@ -114,7 +114,7 @@ To create a job using the following instructions, you need a prompt dataset. If 
   aws bedrock create-evaluation-job --cli-input-json file://{{my_eval_job.json}}
   ```
 
-  ```
+  ```json
   {
       "jobName": {{"model-eval-llmaj"}},
       "roleArn": "arn:aws:iam::{{111122223333}}:role/Amazon-Bedrock-ModelAsAJudgeTest",

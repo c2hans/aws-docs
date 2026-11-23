@@ -11,7 +11,7 @@ Waiters are utility methods that poll for a particular state to occur on a clien
 
 To invoke a waiter, call `wait_until` on a service client. In the following example, a waiter waits until the instance `i-12345678` is running before continuing.
 
-```
+```ruby
 ec2 = Aws::EC2::Client.new
 
 begin
@@ -48,7 +48,7 @@ One of the wait states was exceeded or another failure occurred while waiting.
 
 All of these errors—except `NoSuchWaiterError`—are based on `WaiterFailed`. To catch errors in a waiter, use `WaiterFailed`, as shown in the following example.
 
-```
+```ruby
 rescue Aws::Waiters::Errors::WaiterFailed => error
   puts "failed waiting for instance running: #{error.message}"
 end
@@ -59,7 +59,7 @@ end
 
 Each waiter has a default polling interval and a maximum number of attempts it will make before returning control to your program. To set these values, use the `max_attempts` and `delay:` parameters in your `wait_until` call. The following example waits for up to 25 seconds, polling every five seconds.
 
-```
+```ruby
 # Poll for ~25 seconds
 client.wait_until(...) do |w|
   w.max_attempts = 5
@@ -76,7 +76,7 @@ To modify the behavior of waiters, you can register callbacks that are triggered
 
 The following example implements an exponential backoff in a waiter by doubling the amount of time to wait on every attempt.
 
-```
+```ruby
 ec2 = Aws::EC2::Client.new
 
 ec2.wait_until(:instance_running, instance_ids:['i-12345678']) do |w|
@@ -89,7 +89,7 @@ end
 
 The following example disables the maximum number of attempts, and instead waits for one hour (3600 seconds) before failing.
 
-```
+```ruby
 started_at = Time.now
 client.wait_until(...) do |w|
   # Disable max attempts

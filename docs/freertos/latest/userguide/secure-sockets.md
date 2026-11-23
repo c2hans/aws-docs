@@ -71,7 +71,7 @@ Server APIs are not supported by the FreeRTOS Secure Sockets library, except for
 
 To use the FreeRTOS Secure Sockets library, you need to initialize the library and its dependencies. To initialize the Secure Sockets library, use the following code in your application:
 
-```
+```C
 BaseType_t xResult = pdPASS;
 xResult = SOCKETS_Init();
 ```
@@ -88,7 +88,7 @@ For a full API reference, see [ Secure Sockets API Reference](https://docs.aws.a
 
 The following code connects a client to a server.
 
-```
+```C
 #include "aws_secure_sockets.h"
 
 #define configSERVER_ADDR0                     127

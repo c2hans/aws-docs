@@ -60,7 +60,7 @@ The following is an example of an endpoint policy for HealthOmics. When attached
 ------
 #### [ API ]
 
-```
+```json
 {
    "Statement":[
       {

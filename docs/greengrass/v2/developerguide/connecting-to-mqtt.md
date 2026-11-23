@@ -29,7 +29,7 @@ If you provide a core device CA, AWS IoT Greengrass registers the CA with the cl
 
 You can store your certificates in a hardware security module or on the file system. The following example shows a `certificateAuthority` configuration for a intermediate CA stored using HSM/TPM. Note that the certificate chain can only be stored on disk.
 
-```
+```json
   "certificateAuthority": {
       "certificateUri": "pkcs11:object={{CustomerIntermediateCA}};type=cert",
       "privateKeyUri": "pkcs11:object={{CustomerIntermediateCA}};type=private"
@@ -39,7 +39,7 @@ You can store your certificates in a hardware security module or on the file sys
 
 In this example, the `certificateAuthority` configuration parameter configures the client device auth component to use an intermediate CA from the file system:
 
-```
+```json
   "certificateAuthority": {
       "certificateUri": "file:///home/ec2-user/creds/{{intermediateCA.pem}}",
       "privateKeyUri": "file:///home/ec2-user/creds/{{intermediateCA.privateKey.pem}}",

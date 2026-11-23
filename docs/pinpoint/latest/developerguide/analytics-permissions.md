@@ -19,7 +19,7 @@ For example, the following policy allows programmatic access to all the analytic
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -56,7 +56,7 @@ However, as a best practice, you should create policies that follow the principl
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -96,7 +96,7 @@ Similarly, the following example policy allows programmatic access to the analyt
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -125,7 +125,7 @@ And the following example policy allows programmatic access to all the analytics
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

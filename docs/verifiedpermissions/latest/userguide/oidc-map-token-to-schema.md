@@ -30,7 +30,7 @@ For more information, see [Creating Verified Permissions policy stores](policy-s
 
 The following is an example schema for a policy store with an OIDC identity source.
 
-```
+```JSON
 "User": {
    "shape": {
       "type": "Record",
@@ -85,7 +85,7 @@ Most access tokens from external OIDC providers align closely with Amazon Cognit
 
 The following example shows how to reflect the attributes from the example access token in your Verified Permissions schema. For more information about editing your schema, see [Editing policy store schemas](schema-edit.md).
 
-```
+```JSON
 {
    "MyApplication": {
       "actions": {
@@ -166,7 +166,7 @@ Policies typically reference schema attributes in a format like `principal.usern
 
 A partial example schema for a principal attribute of this type looks like the following:
 
-```
+```json
 "User": {
    "shape": {
       "type": "Record",
@@ -190,7 +190,7 @@ A partial example schema for a principal attribute of this type looks like the f
 
 A partial example schema for a context attribute of this type looks like the following:
 
-```
+```json
 "GetOrder": {
    "memberOf": [],
    "appliesTo": {

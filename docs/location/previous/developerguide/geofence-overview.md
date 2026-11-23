@@ -55,7 +55,7 @@ A polygon is an array composed of 1 or more linear rings. Use a polygon when you
 Amazon Location Service doesn't support polygons with more than one ring. This includes holes, islands or multipolygons. Amazon Location also doesn't support polygons that are wound clockwise, or that cross the antimeridian.
 The following is an example of a single linear external ring:
 
-```
+```json
 [
   [
     [-5.716667, -15.933333],

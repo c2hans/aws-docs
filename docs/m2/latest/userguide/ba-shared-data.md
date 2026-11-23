@@ -51,7 +51,7 @@ For illustration purposes, here is an example COBOL data item, followed by the c
  02 F2     PIC X VALUE 'A'.
 ```
 
-```
+```java
 public class Tst2 extends RecordEntity {
 
 	   private final Group root = new Group(getData()).named("TST2");

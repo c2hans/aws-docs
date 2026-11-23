@@ -54,7 +54,7 @@ Before you create a revision, upload your .zip deployment package to a versioned
 
 1. Run the following command to create a new revision. Replace the S3 bucket, key, role ARN, and configuration values with your own.
 
-   ```
+   ```bash
    aws lambda-web create-web-function-revision \
        --function-name {{my-web-app}} \
        --build-config '{
@@ -79,7 +79,7 @@ Before you create a revision, upload your .zip deployment package to a versioned
 
 1. To confirm that the revision is **Active**, run the following command. Replace {{my-web-app}} with your function name and {{rev-a1b2c}} with the `revisionId` from the response.
 
-   ```
+   ```bash
    aws lambda-web get-web-function-revision \
        --function-name {{my-web-app}} \
        --revision-id {{rev-a1b2c}}
@@ -93,7 +93,7 @@ Before you create a revision, upload your .zip deployment package to a versioned
 
 1. To change configuration without changing code, specify the same code location with the new settings. The following example changes the timeout to 60 seconds and adds an environment variable.
 
-   ```
+   ```bash
    aws lambda-web create-web-function-revision \
        --function-name {{my-web-app}} \
        --build-config '{
@@ -118,7 +118,7 @@ Before you create a revision, upload your .zip deployment package to a versioned
 
 1. To confirm that the revision is **Active**, run the following command. Replace {{my-web-app}} with your function name and {{rev-a1b2c}} with the `revisionId` from the response.
 
-   ```
+   ```bash
    aws lambda-web get-web-function-revision \
        --function-name {{my-web-app}} \
        --revision-id {{rev-a1b2c}}
@@ -135,7 +135,7 @@ After creating the revision, how traffic reaches it depends on the endpoint's au
 
 To view all revisions for a Web Function, use the following command:
 
-```
+```bash
 aws lambda-web list-web-function-revisions \
     --function-name {{my-web-app}}
 ```
@@ -153,7 +153,7 @@ You cannot delete a revision that any endpoint routes traffic to (a revision wit
 **To delete a revision (AWS CLI)**
 + Run the following command to delete a specific revision.
 
-  ```
+  ```bash
   aws lambda-web delete-web-function-revision \
       --function-name {{my-web-app}} \
       --revision-id {{rev-a1b2c}}

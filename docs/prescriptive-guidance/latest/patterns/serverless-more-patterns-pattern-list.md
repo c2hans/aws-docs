@@ -12,6 +12,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Automatically detect changes and initiate different CodePipeline pipelines for a monorepo in CodeCommit](automatically-detect-changes-and-initiate-different-codepipeline-pipelines-for-a-monorepo-in-codecommit.md)
 + [Build an advanced mainframe file viewer in the AWS Cloud](build-an-advanced-mainframe-file-viewer-in-the-aws-cloud.md)
 + [Calculate value at risk (VaR) by using AWS services](calculate-value-at-risk-var-by-using-aws-services.md)
++ [Create dynamic CI pipelines for Java and Python projects automatically](create-dynamic-ci-pipelines-for-java-and-python-projects-automatically.md)
 + [Deploy an Amazon API Gateway API on an internal website using private endpoints and an Application Load Balancer](deploy-an-amazon-api-gateway-api-on-an-internal-website-using-private-endpoints-and-an-application-load-balancer.md)
 + [Dynamically generate an IAM policy with IAM Access Analyzer by using Step Functions](dynamically-generate-an-iam-policy-with-iam-access-analyzer-by-using-step-functions.md)
 + [Embed AWS Quick Sight visual components into web applications by using Amazon Cognito and IaC automation](embed-quick-sight-visual-components-into-web-apps-cognito-iac.md)

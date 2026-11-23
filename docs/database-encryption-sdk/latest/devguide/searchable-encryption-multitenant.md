@@ -17,7 +17,7 @@ If you configured any [signed beacons](configure.md#signed-beacons), they must b
 ------
 #### [ Java ]
 
-```
+```java
 List<BeaconVersion> beaconVersions = new ArrayList<>();
     beaconVersions.add(
         BeaconVersion.builder()
@@ -39,7 +39,7 @@ List<BeaconVersion> beaconVersions = new ArrayList<>();
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var beaconVersions = new List<BeaconVersion>
 {
     new BeaconVersion
@@ -66,7 +66,7 @@ var beaconVersions = new List<BeaconVersion>
 ------
 #### [ Rust ]
 
-```
+```rs
 let beacon_version = BeaconVersion::builder()
     .standard_beacons(standard_beacon_list)
     .compound_beacons(compound_beacon_list)

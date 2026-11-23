@@ -54,7 +54,7 @@ Malformed JSON can occur when provided by upstream services that do not use a ro
 
 Similarly, failing to check for ranges of values in the event payload can result in errors. This example shows a function that calculates a tax withholding:
 
-```
+```javascript
 exports.handler = async (event) => {
     let pct = event.taxPct
     let salary = event.salary

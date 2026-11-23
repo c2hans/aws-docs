@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/no-source.htm
 
  You can configure a CodeBuild project by choosing the **NO\_SOURCE** source type when you configure your source. When your source type is **NO\_SOURCE**, you cannot specify a buildspec file because your project does not have a source. Instead, you must specify a YAML-formatted buildspec string in the `buildspec` attribute of the JSON-formatted input to the `create-project` CLI command. It might look like this:
 
-```
+```json
 {
   "name": "project-name",
   "source": {

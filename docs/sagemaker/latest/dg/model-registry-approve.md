@@ -21,7 +21,7 @@ You can update the approval status of a model version by using the AWS SDK for P
 
 When you created the model version in [Register a Model Version](model-registry-version.md), you set the `ModelApprovalStatus` to `PendingManualApproval`. You update the approval status for the model by calling `update_model_package`. Note that you can automate this process by writing code that, for example, sets the approval status of a model depending on the result of an evaluation of some measure of the model's performance. You can also create a step in a pipeline that automatically deploys a new model version when it is approved. The following code snippet shows how to manually change the approval status to `Approved`.
 
-```
+```python
 model_package_update_input_dict = {
     "ModelPackageArn" : model_package_arn,
     "ModelApprovalStatus" : "Approved"

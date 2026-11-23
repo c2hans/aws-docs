@@ -37,6 +37,8 @@ The next section provides guidance on organizing your account structure for each
 
 ![A diagram depicting a centralized operating model account structure.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/com-account-structure.png)
 
+*Centralized operating model account structure*
+
 ### Decentralized model account structure
 <a name="decentralized-model-account-structure"></a>
 
@@ -44,12 +46,16 @@ The next section provides guidance on organizing your account structure for each
 
 ![A diagram that depicts a decentralized operating model account structure.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/decentralized-model.png)
 
+*Decentralized operating model account structure*
+
 ### Federated model account structure
 <a name="federated-model-account-structure"></a>
 
  This model is similar to the centralized model; however, the key difference is that each data science/ML team gets their own set of development/test/production workload accounts that enable robust physical isolation of their ML resources, and also enable each team to scale independently without impacting other teams.
 
 ![A document depicting a federated operating model account structure.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/fom-account-structure.png)
+
+*Federated operating model account structure*
 
 ## ML platform multitenancy
 <a name="ml-platform-multitenancy"></a>

@@ -14,7 +14,7 @@ Note that there are no specific optimizations for the [Request Response](connect
 
 The following shows an example `Task` state that submits an AWS Batch job and waits for it to complete. Many of the arguments shown are optional.
 
-```
+```json
 "Submit Batch Job": {
     "Type": "Task",
     "Resource": "arn:aws:states:::batch:submitJob.sync",
@@ -64,7 +64,7 @@ With `batch:submitJob.sync`, jobs that use `ecsProperties` or `eksProperties` ne
 
 For `ecsProperties` jobs, use the following minimal override:
 
-```
+```json
 "EcsPropertiesOverride": {
     "TaskProperties": [ {} ]
 }
@@ -72,7 +72,7 @@ For `ecsProperties` jobs, use the following minimal override:
 
 For `eksProperties` jobs, use the following minimal override:
 
-```
+```json
 "EksPropertiesOverride": {
     "PodProperties": {}
 }
@@ -83,7 +83,7 @@ For these jobs and for multi-node parallel jobs, Step Functions detects completi
 
 To report completion sooner, pass the task token to the job in `Parameters`. When the job finishes, call `SendTaskSuccess` or `SendTaskFailure` from the job with that token.
 
-```
+```json
 "Parameters": {
     "TaskToken": "{% $states.context.Task.Token %}"
 }
@@ -113,7 +113,7 @@ To add fine grained access to `SubmitJob` and `TerminateJob`, consider using tag
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -146,7 +146,7 @@ To add fine grained access to `SubmitJob` and `TerminateJob`, consider using tag
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

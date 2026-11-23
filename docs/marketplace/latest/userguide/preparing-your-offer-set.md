@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/preparing-y
 ## Getting Started
 <a name="getting-started"></a>
 
-1. Sign in to the [AWS Marketplace Management Portal](https://aws.amazon.com/marketplace/partners/management-tour).
+1. Sign in to the [AWS Partner Central console](https://us-east-1.console.aws.amazon.com/partnercentral/home).
 
 1. Go to **Private offers** → **Private Offer Sets**.
 

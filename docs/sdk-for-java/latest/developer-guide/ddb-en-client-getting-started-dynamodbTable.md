@@ -11,13 +11,13 @@ The [DynamoDbEnhancedClient](https://sdk.amazonaws.com/java/api/latest/software/
 
 The enhanced client requires a standard `[DynamoDbClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html)` to perform work. The API offers two ways to create a `DynamoDbEnhancedClient` instance. The first option, shown in the following snippet, creates a standard `DynamoDbClient` with default settings picked up from configuration settings.
 
-```
+```java
 DynamoDbEnhancedClient enhancedClient = DynamoDbEnhancedClient.create();
 ```
 
 If you want to configure the underlying standard client, you can supply it to the enhanced client's builder method as shown in the following snippet.
 
-```
+```java
 // Configure an instance of the standard DynamoDbClient.
 DynamoDbClient standardClient = DynamoDbClient.builder()
     .region(Region.US_EAST_1)

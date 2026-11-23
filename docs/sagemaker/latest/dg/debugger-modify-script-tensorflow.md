@@ -11,7 +11,7 @@ To start collecting model output tensors and debug training issues, make the fol
 
 **Create a hook for training jobs within SageMaker AI**
 
-```
+```py
 import smdebug.tensorflow as smd
 
 hook=smd.get_hook(hook_type="keras", create_if_not_exists=True)
@@ -25,7 +25,7 @@ If you run training jobs in local mode, directly on SageMaker Notebook instances
 
 If you want to create a manual hook, use the following code snippet with the logic to check if the hook returns `None` and create a manual hook using the `smd.Hook` class.
 
-```
+```py
 import smdebug.tensorflow as smd
 
 hook=smd.get_hook(hook_type="keras", create_if_not_exists=True)
@@ -51,7 +51,7 @@ The following precedure walks you through how to use the hook and its methods to
 
    The `hook.register_model()` method takes your model and iterates through each layer, looking for any tensors that match with regular expressions that you’ll provide through the configuration in [Launch training jobs with Debugger using the SageMaker Python SDK](debugger-configuration-for-debugging.md). The collectable tensors through this hook method are weights, biases, and activations.
 
-   ```
+   ```py
    model=tf.keras.Model(...)
    hook.register_model(model)
    ```
@@ -67,7 +67,7 @@ The following precedure walks you through how to use the hook and its methods to
 
    To collect tensors from the model, such as the input and output tensors of each layer, you must run the training in eager mode. Otherwise, SageMaker AI Debugger will not be able to collect the tensors. However, other tensors, such as model weights, biases, and the loss, can be collected without explicitly running in eager mode.
 
-   ```
+   ```py
    model.compile(
        loss="categorical_crossentropy",
        optimizer=optimizer,
@@ -81,7 +81,7 @@ The following precedure walks you through how to use the hook and its methods to
 
    To collect the tensors from the hooks that you registered, add `callbacks=[hook]` to the Keras `model.fit()` class method. This will pass the `sagemaker-debugger` hook as a Keras callback.
 
-   ```
+   ```py
    model.fit(
        X_train, Y_train,
        batch_size=batch_size,
@@ -94,7 +94,7 @@ The following precedure walks you through how to use the hook and its methods to
 
 1. TensorFlow 2.x provides only symbolic gradient variables that do not provide access to their values. To collect gradients, wrap `tf.GradientTape` by the [`hook.wrap_tape()`](https://sagemaker-debugger.readthedocs.io/en/website/hook-methods.html#tensorflow-specific-hook-api) method, which requires you to write your own training step as follows.
 
-   ```
+   ```py
    def training_step(model, dataset):
        with hook.wrap_tape(tf.GradientTape()) as tape:
            pred=model(data)

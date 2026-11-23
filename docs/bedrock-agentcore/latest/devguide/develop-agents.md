@@ -23,7 +23,7 @@ The [AgentCore CLI](https://github.com/aws/agentcore-cli) is a Node.js command-l
 
 Install the AgentCore CLI globally with npm:
 
-```
+```bash
 npm install -g @aws/agentcore
 ```
 

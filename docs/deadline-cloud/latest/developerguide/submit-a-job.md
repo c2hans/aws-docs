@@ -29,14 +29,14 @@ After you create a farm and run the worker agent, you can submit the simple\_job
 
 1. Download the sample from GitHub.
 
-   ```
+   ```bash
    cd ~
    git clone https://github.com/aws-deadline/deadline-cloud-samples.git
    ```
 
 1. Navigate to the job bundle samples directory.
 
-   ```
+   ```bash
    cd ~/deadline-cloud-samples/job_bundles/
    ```
 
@@ -48,7 +48,7 @@ After you create a farm and run the worker agent, you can submit the simple\_job
 
 1. Choose your second CloudShell tab to view the logging output about calling `BatchGetJobEntities`, getting a session, and running a session action.
 
-   ```
+   ```screen
    ...
    [2024-03-27 16:00:21,846][INFO    ] 🔷 Session.Starting 🔷 [session-053d77cef82648fe2] Starting new Session. [queue-3ba4ff683ff54db09b851a2ed8327d7b/job-d34cc98a6e234b6f82577940ab4f76c6]
    [2024-03-27 16:00:21,853][INFO    ] 📤 API.Req 📤 [deadline:BatchGetJobEntity] resource={'farm-id': 'farm-3e24cfc9bbcd423e9c1b6754bc1', 'fleet-id': 'fleet-246ee60f46d44559b6cce010d05', 'worker-id': 'worker-75e0fce9c3c344a69bff57fcd83'} params={'identifiers': [{'jobDetails': {'jobId': 'job-d34cc98a6e234b6f82577940ab4'}}]} request_url=https://scheduling.deadline.us-west-2.amazonaws.com/2023-10-12/farms/farm-3e24cfc9bbcd423e /fleets/fleet-246ee60f46d44559b1 /workers/worker- 75e0fce9c3c344a69b /batchGetJobEntity
@@ -67,14 +67,14 @@ Only the logging output from the worker agent is shown. There is a separate log 
 
    1. Navigate to the worker agent logs directory and view its contents.
 
-      ```
+      ```bash
       cd ~/demoenv-logs
       ls
       ```
 
    1. Print the first log file that the worker agent creates.
 
-      ```
+      ```bash
       cat worker-agent-bootstrap.log
       ```
 
@@ -82,7 +82,7 @@ Only the logging output from the worker agent is shown. There is a separate log 
 
    1. Print the log file output when the worker agent joins the fleet.
 
-      ```
+      ```bash
       cat worker-agent.log
       ```
 
@@ -90,13 +90,13 @@ Only the logging output from the worker agent is shown. There is a separate log 
 
    1. Print the log files for each session in a directory that is named the same as the queue resource id.
 
-      ```
+      ```bash
       cat $DEV_QUEUE_ID/session-*.log
       ```
 
       If the job is successful, the log file output will be similar to the following:
 
-      ```
+      ```screen
       cat $DEV_QUEUE_ID/$(ls -t $DEV_QUEUE_ID | head -1)
 
       2024-03-27 16:00:22,026 WARNING Session running with no AWS Credentials.
@@ -126,7 +126,7 @@ Only the logging output from the worker agent is shown. There is a separate log 
 
 1. Print information about the job.
 
-   ```
+   ```bash
    deadline job get
    ```
 
@@ -141,19 +141,19 @@ You can submit jobs with parameters. In the following procedure, you edit the si
 
 1. Select your first CloudShell tab, then navigate to the job bundle samples directory.
 
-   ```
+   ```bash
    cd ~/deadline-cloud-samples/job_bundles/
    ```
 
 1. Print the contents of the simple\_job template.
 
-   ```
+   ```bash
    cat simple_job/template.yaml
    ```
 
    The `parameterDefinitions` section with the `Message` parameter should look like the following:
 
-   ```
+   ```yaml
    parameterDefinitions:
    - name: Message
      type: STRING
@@ -162,14 +162,14 @@ You can submit jobs with parameters. In the following procedure, you edit the si
 
 1. Submit the simple\_job sample with a parameter value, then wait for the job to finish running.
 
-   ```
+   ```bash
    deadline bundle submit simple_job \
        -p "Message=Greetings from the developer getting started guide."
    ```
 
 1. To see the custom message, view the most recent session log file.
 
-   ```
+   ```bash
    cd ~/demoenv-logs
    cat $DEV_QUEUE_ID/$(ls -t $DEV_QUEUE_ID | head -1)
    ```
@@ -183,13 +183,13 @@ A render job needs to read the scene definition, render an image from it, and th
 
 1. Select your first CloudShell tab, then navigate to the job bundle samples directory.
 
-   ```
+   ```bash
    cd ~/deadline-cloud-samples/job_bundles/
    ```
 
 1. Make a copy of `simple_job` with the new name `simple_file_job`.
 
-   ```
+   ```bash
    cp -r simple_job simple_file_job
    ```
 
@@ -199,13 +199,13 @@ We recommend that you use nano for these steps. If you prefer to use Vim, you mu
 
    1. Open the template in a text editor.
 
-      ```
+      ```bash
       nano simple_file_job/template.yaml
       ```
 
    1. Add the following `type`, `objectType`, and `dataFlow` `parameterDefinitions`.
 
-      ```
+      ```yaml
       - name: InFile
         type: PATH
         objectType: FILE
@@ -225,7 +225,7 @@ We recommend that you use nano for these steps. If you prefer to use Vim, you mu
 
       The updated `template.yaml` should exactly match the following:
 
-      ```
+      ```yaml
       specificationVersion: 'jobtemplate-2023-09'
       name: Simple File Job Bundle Example
       parameterDefinitions:
@@ -264,7 +264,7 @@ If you want to adjust the spacing in the `template.yaml`, make sure that you use
 
 1. Provide parameter values for the input and output files to submit the simple\_file\_job.
 
-   ```
+   ```bash
    deadline bundle submit simple_file_job \
        -p "InFile=simple_job/template.yaml" \
        -p "OutFile=hash.txt"
@@ -272,12 +272,12 @@ If you want to adjust the spacing in the `template.yaml`, make sure that you use
 
 1. Print information about the job.
 
-   ```
+   ```bash
    deadline job get
    ```
    + You will see output such as the following:
 
-     ```
+     ```screen
      parameters:
        Message:
          string: Welcome to AWS Deadline Cloud!
@@ -289,13 +289,13 @@ If you want to adjust the spacing in the `template.yaml`, make sure that you use
    + Although you only provided relative paths, the parameters have the full path set. The AWS CLI joins the current working directory to any paths that are provided as parameters when the paths have the type `PATH`.
    + The worker agent running in the other terminal window picks up and runs the job. This action creates the `hash.txt` file, which you can view with the following command.
 
-     ```
+     ```bash
      cat hash.txt
      ```
 
      This command will print output similar to the following.
 
-     ```
+     ```screen
      eaa2df5d34b54be5ac34c56a24a8c237b8487231a607eaf530a04d76b89c9cd3 /local/home/cloudshell-user/BundleFiles/JobBundle-Examples/simple_job/template.yaml
      ```
 

@@ -71,7 +71,7 @@ If your software communicates with AWS through a proxy, you can specify credenti
 
 For [Amazon S3](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TS3Config.html), for example, you could use code similar to the following, where `SecurelyStoredUserName` and `SecurelyStoredPassword` are the proxy user name and password specified in a [NetworkCredential](https://learn.microsoft.com/en-us/dotnet/api/system.net.networkcredential) object.
 
-```
+```csharp
 AmazonS3Config config = new AmazonS3Config();
 config.ProxyCredentials = new NetworkCredential(SecurelyStoredUserName, SecurelyStoredPassword);
 ```

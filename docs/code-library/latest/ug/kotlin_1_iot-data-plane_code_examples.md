@@ -26,7 +26,7 @@ The following code example shows how to use `GetThingShadow`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun getPayload(thingNameVal: String?) {
     val getThingShadowRequest =
         GetThingShadowRequest {
@@ -51,7 +51,7 @@ The following code example shows how to use `UpdateThingShadow`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun updateShawdowThing(thingNameVal: String?) {
     // Create the thing shadow state document.
     val stateDocument = "{\"state\":{\"reported\":{\"temperature\":25, \"humidity\":50}}}"

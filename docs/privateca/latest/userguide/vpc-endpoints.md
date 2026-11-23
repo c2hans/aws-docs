@@ -80,10 +80,12 @@ You can create a policy for Amazon VPC endpoints for AWS Private CA to specify t
 
 For more information, see [Controlling Access to Services with VPC Endpoints](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html) in the *Amazon VPC Guide*.
 
+To restrict the certificates that can be requested through the endpoint, add X.509 certificate condition keys to the statement for `acm-pca:IssueCertificate`. For more information, see [Control certificate issuance with X.509 certificate condition keys](certguard-condition-keys.md).
+
 **Example – VPC endpoint policy for AWS Private CA actions**
 When attached to an endpoint, the following policy grants access for all principals to the AWS Private CA actions `IssueCertificate`, `DescribeCertificateAuthority`, `GetCertificate`, `GetCertificateAuthorityCertificate`, `ListPermissions`, and `ListTags`. The resource in each stanza is a private CA. The first stanza authorizes the creation of end-entity certificates using the specified private CA and certificate template. If you don't want to control the template being used, the `Condition` section is not needed. However, removing this allows all principals to create CA certificates as well as end-entity certificates.
 
-```
+```json
 {
       "Statement":[
          {

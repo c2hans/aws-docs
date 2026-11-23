@@ -136,7 +136,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-vpc-add-static-route-managed-automation-ex-min"></a>
 
-```
+```json
 {
     "RouteTableId": "rtb-01234567890abcdef",
     "Destination": "192.168.10.0/24",
@@ -147,7 +147,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-vpc-add-static-route-managed-automation-ex-max"></a>
 
-```
+```json
 {
     "RouteTableId": "rtb-01234567890abcdef",
     "Destination": "192.168.10.0/24",

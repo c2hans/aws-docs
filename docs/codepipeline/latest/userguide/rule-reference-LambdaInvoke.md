@@ -38,7 +38,7 @@ These are parameters that are provided as input for the function in key-value pa
 ------
 #### [ YAML ]
 
-```
+```yaml
 - name: MyLambdaRule
   ruleTypeId:
     category: Rule
@@ -55,7 +55,7 @@ These are parameters that are provided as input for the function in key-value pa
 ------
 #### [ JSON ]
 
-```
+```json
 [
     {
         "name": "MyLambdaRule",

@@ -35,7 +35,7 @@ The global Redis configuration is used if `redis` is specified as the caching me
 
 In the following example the Blusam datasets cache and JICS cache use the `gapwalk.redis` (`redis.server1`) configuration because their cache type is set to `redis`, and no implicit Redis properties are specified under [JICS resource definitions](#ba-runtime-redis-jics-cache) and [JICS resource definitions](#ba-runtime-redis-jics-cache). However, the Blusam locks cache will use a different Redis configuration (`redis.server2`) because its Redis properties are explicitly defined.
 
-```
+```yaml
 ...
 
  gapwalk:
@@ -62,7 +62,7 @@ In the following example the Blusam datasets cache and JICS cache use the `gapwa
 
  To enable the global Redis configuration, add the following configuration in `main-application.yml`.
 
-```
+```yaml
  gapwalk:
    redis:
      hostName: localhost
@@ -141,7 +141,7 @@ The following table shows the Redis properties that are supported for global and
 ### Redis Blusam cache
 <a name="ba-runtime-redis-blusam-cache"></a>
 
-```
+```yaml
 bluesam:
    cache: redis
  # If the following redis properties are not specified gapwalk.redis configuration will be used for this cache
@@ -179,7 +179,7 @@ bluesam:
 ### Redis Blusam cache
 <a name="ba-runtime-redis-blusame-locks"></a>
 
-```
+```yaml
 bluesam:
    locks:
      cache: redis
@@ -212,7 +212,7 @@ bluesam:
 ### Session cache
 <a name="ba-runtime-redis-session-cache"></a>
 
-```
+```yaml
  spring:
    session:
      store-type: redis
@@ -247,7 +247,7 @@ bluesam:
 ### JICS resource definitions
 <a name="ba-runtime-redis-jics-cache"></a>
 
-```
+```yaml
 jics:
    resource-definitions:
      store-type: redis
@@ -281,7 +281,7 @@ jics:
 ### JICS TS queues
 <a name="ba-runtime-jics-ts-queues"></a>
 
-```
+```yaml
 jics:
    parameters:
      tsqimpl: redis
@@ -317,7 +317,7 @@ jics:
 ### Session tracker
 <a name="ba-runtime-session-tracker"></a>
 
-```
+```yaml
 session-tracker:
    store-type: redis
  # If the following redis properties are not specified gapwalk.redis configuration will be used for this cache
@@ -350,7 +350,7 @@ session-tracker:
 ### JCL checkpoint
 <a name="ba-runtime-jcl-checkpoint"></a>
 
-```
+```yaml
 jcl:
    checkpoint:
      provider: redis
@@ -384,7 +384,7 @@ jcl:
 ### Gapwalk file locks
 <a name="ba-runtime-gapwalk-file-locks"></a>
 
-```
+```yaml
 filesLocks:
    enabled: true
    retryTime: 1000
@@ -421,7 +421,7 @@ filesLocks:
 ### Blu4iv locks
 <a name="ba-runtime-blu4iv-locks"></a>
 
-```
+```yaml
  blu4iv.lock: redis
  blu4iv.lock.timeout: 10 #(in millisecondes)
  	# If the following redis properties are not specified gapwalk.redis configuration will be used for this cache
@@ -454,7 +454,7 @@ filesLocks:
 ### Dataset catalog
 <a name="ba-runtime-dataset-catalog"></a>
 
-```
+```yaml
 datasimplifier:
    catalogImplementation: redis
    # If the following redis properties are not specified gapwalk.redis configuration will be used for this cache

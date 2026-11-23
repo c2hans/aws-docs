@@ -18,3 +18,5 @@ In 2006, Amazon Web Services (AWS) began offering IT infrastructure services to 
 Today, AWS provides a highly reliable, scalable, low-cost infrastructure platform in the cloud that powers hundreds of thousands of businesses in 190 countries around the world.
 
 [![AWS Videos](https://img.youtube.com/vi/a9__D53WsUs/0.jpg)](https://www.youtube.com/watch?v=a9__D53WsUs)
+
+This three and a half minute video explores how millions of customers use AWS to take advantage of the efficiencies of cloud computing.

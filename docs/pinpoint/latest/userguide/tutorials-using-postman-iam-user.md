@@ -31,7 +31,7 @@ Also, this policy includes permissions that permit you to interact with the `ses
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

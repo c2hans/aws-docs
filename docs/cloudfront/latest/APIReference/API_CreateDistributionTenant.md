@@ -33,6 +33,7 @@ POST /2020-05-31/distribution-tenant HTTP/1.1
    <Domains>
       <DomainItem>
          <Domain>{{string}}</Domain>
+         <ServeOn>{{string}}</ServeOn>
       </DomainItem>
    </Domains>
    <Enabled>{{boolean}}</Enabled>
@@ -42,6 +43,7 @@ POST /2020-05-31/distribution-tenant HTTP/1.1
       <ValidationTokenHost>{{string}}</ValidationTokenHost>
    </ManagedCertificateRequest>
    <Name>{{string}}</Name>
+   <OnDomainTakeover>{{string}}</OnDomainTakeover>
    <Parameters>
       <Parameter>
          <Name>{{string}}</Name>
@@ -110,6 +112,14 @@ Type: String
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9-.]{1,126}[a-zA-Z0-9]`
 Required: Yes
 
+ ** [OnDomainTakeover](#API_CreateDistributionTenant_RequestSyntax) **   <a name="cloudfront-CreateDistributionTenant-request-OnDomainTakeover"></a>
+Specifies whether CloudFront moves a domain in this request to this distribution tenant when the domain is already associated with another standard distribution or distribution tenant. Valid values are:
++  `allow` – CloudFront moves the domain to this distribution tenant when the domain's DNS points to this distribution tenant.
++  `reject` – CloudFront doesn't move the domain, and the request fails if the domain is associated with another resource. This is the default if you don't specify a value.
+Type: String
+Valid Values: `allow | reject`
+Required: No
+
  ** [Parameters](#API_CreateDistributionTenant_RequestSyntax) **   <a name="cloudfront-CreateDistributionTenant-request-Parameters"></a>
 A list of parameter values to add to the resource. A parameter is specified as a key-value pair. A valid parameter value must exist for any parameter that is marked as required in the multi-tenant distribution.
 Type: Array of [Parameter](API_Parameter.md) objects
@@ -149,6 +159,7 @@ HTTP/1.1 201
    <Domains>
       <DomainResult>
          <Domain>string</Domain>
+         <ServeOn>string</ServeOn>
          <Status>string</Status>
       </DomainResult>
    </Domains>

@@ -41,7 +41,7 @@ Examples of all the functions:
 
 **Example of the concatenation operator**
 
-```
+```SQL
 SELECT a.asset_name || ' - ' || p.property_name
   AS full_name
   FROM asset a, asset_property p

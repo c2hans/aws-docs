@@ -12,7 +12,7 @@ The procedure requires the following prerequisites:
 
 Add/update the following in your `buildspec.yml` file. This code runs the tests in the {{<test source directory>}} directory and exports the test reports to the file specified by {{<test report directory>}}/{{<report filename>}}. The report uses the `JunitXml` format.
 
-```
+```yaml
 version: 0.2
 
 phases:

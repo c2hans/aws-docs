@@ -21,6 +21,8 @@ Resources are provisioned in a planned manner. This can be demand-based, such as
 
 ![Diagram showing cost optimization using AWS Instance Scheduler.](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/instance-scheduler-diagram.png)
 
+*Cost optimization with AWS Instance Scheduler.*
+
 You can also easily configure schedules for your Amazon EC2 instances across your accounts and Regions with a simple user interface (UI) using AWS Systems Manager Quick Setup. You can schedule Amazon EC2 or Amazon RDS instances with AWS Instance Scheduler and you can stop and start existing instances. However, you cannot stop and start instances which are part of your Auto Scaling group (ASG) or that manage services such as Amazon Redshift or Amazon OpenSearch Service. Auto Scaling groups have their own scheduling for the instances in the group and these instances are created.
 
 [AWS Auto Scaling](https://aws.amazon.com/autoscaling/) helps you adjust your capacity to maintain steady, predictable performance at the lowest possible cost to meet changing demand. It is a fully managed and free service to scale the capacity of your application that integrates with Amazon EC2 instances and Spot Fleets, Amazon ECS, Amazon DynamoDB, and Amazon Aurora. Auto Scaling provides automatic resource discovery to help find resources in your workload that can be configured, it has built-in scaling strategies to optimize performance, costs, or a balance between the two, and provides predictive scaling to assist with regularly occurring spikes.
@@ -44,6 +46,8 @@ You can also easily configure schedules for your Amazon EC2 instances across you
 
 ![Diagram describing demand-based scaling policies like simple/step scaling and target tracking.](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/demand-based-supply.png)
 
+*Demand-based dynamic scaling policies*
+
 +  **Simple/Step Scaling:** Monitors metrics and adds/removes instances as per steps defined by the customers manually.
 +  **Target Tracking:** Thermostat-like control mechanism that automatically adds or removes instances to maintain metrics at a customer defined target.
 
@@ -52,6 +56,8 @@ When architecting with a demand-based approach keep in mind two key consideratio
 **Time-based supply:** A time-based approach aligns resource capacity to demand that is predictable or well-defined by time. This approach is typically not dependent upon utilization levels of the resources. A time-based approach ensures that resources are available at the specific time they are required and can be provided without any delays due to start-up procedures and system or consistency checks. Using a time-based approach, you can provide additional resources or increase capacity during busy periods.
 
 ![Diagram describing time-based scaling policies like scheduled and predictive scaling.](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/time-based-supply.png)
+
+*Time-based scaling policies*
 
 You can use scheduled or predictive auto scaling to implement a time-based approach. Workloads can be scheduled to scale out or in at defined times (for example, the start of business hours), making resources available when users arrive or demand increases. Predictive scaling uses patterns to scale out while scheduled scaling uses pre-defined times to scale out. You can also use [attribute-based instance type selection (ABS) strategy](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-asg-instance-type-requirements.html) in Auto Scaling groups, which lets you express your instance requirements as a set of attributes, such as vCPU, memory, and storage. This also allows you to automatically use newer generation instance types when they are released and access a broader range of capacity with Amazon EC2 Spot Instances. Amazon EC2 Fleet and Amazon EC2 Auto Scaling select and launch instances that fit the specified attributes, removing the need to manually pick instance types.
 

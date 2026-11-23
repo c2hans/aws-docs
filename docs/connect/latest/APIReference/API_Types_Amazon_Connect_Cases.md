@@ -93,6 +93,8 @@ The following data types are supported by Amazon Connect Cases:
 +  [SlaFilter](API_connect-cases_SlaFilter.md)
 +  [SlaInputConfiguration](API_connect-cases_SlaInputConfiguration.md)
 +  [SlaInputContent](API_connect-cases_SlaInputContent.md)
++  [SlaUpdateConfiguration](API_connect-cases_SlaUpdateConfiguration.md)
++  [SlaUpdateContent](API_connect-cases_SlaUpdateContent.md)
 +  [Sort](API_connect-cases_Sort.md)
 +  [TagFilter](API_connect-cases_TagFilter.md)
 +  [TagPropagationConfiguration](API_connect-cases_TagPropagationConfiguration.md)

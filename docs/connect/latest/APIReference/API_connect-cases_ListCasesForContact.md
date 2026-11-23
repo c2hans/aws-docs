@@ -127,14 +127,14 @@ HTTP Status Code: 400
 
 This example illustrates one usage of ListCasesForContact.
 
-```
+```json
 {
   "contactArn": "arn:aws:connect:us-west-2:[account_id]:instance/[connect_instance_id]/contact/[contact_id]",
   "maxResults": 10
 }
 ```
 
-```
+```json
 {
   "cases": [
     {

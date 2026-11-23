@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from "constructs";
 import { Stack, StackProps } from "aws-cdk-lib";
 import {
@@ -42,7 +42,7 @@ new WafwebaclToAppsync(this, "test-wafwebacl-appsync", {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_wafwebacl_appsync import WafwebaclToAppsyncProps, WafwebaclToAppsync
 from aws_cdk import (
     aws_route53 as route53,
@@ -59,7 +59,7 @@ WafwebaclToAppsync(self, 'test_wafwebacl_appsync',
                 )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

@@ -69,7 +69,7 @@ The JSON formatting of entities in Verified Permissions using the `entityList` p
 **Example - Lists**
 The following examples show how a list of entities is expressed in Cedar and Verified Permissions, respectively.
 
-```
+```JSON
 [
   {
     "number": 1
@@ -83,7 +83,7 @@ The following examples show how a list of entities is expressed in Cedar and Ver
 ]
 ```
 
-```
+```JSON
 {
   "Set": [
     {
@@ -114,7 +114,7 @@ The following examples show how a list of entities is expressed in Cedar and Ver
 **Example - Policy evaluation**
 The following examples shows how entities are formatted for evaluating a policy in an authorization request in Cedar and Verified Permissions, respectively.
 
-```
+```JSON
 [
     {
         "uid": {
@@ -172,7 +172,7 @@ The following examples shows how entities are formatted for evaluating a policy 
 ]
 ```
 
-```
+```JSON
 [
     {
         "Identifier": {

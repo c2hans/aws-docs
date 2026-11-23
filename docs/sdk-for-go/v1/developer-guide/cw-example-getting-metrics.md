@@ -35,7 +35,7 @@ Create the file `listing_metrics.go`.
 
 Import the packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -48,7 +48,7 @@ import (
 
 Get the metric name, namespace, and dimension name from the command line.
 
-```
+```go
 if len(os.Args) != 4 {
     fmt.Println("You must supply a metric name, namespace, and dimension name")
     os.Exit(1)
@@ -61,7 +61,7 @@ dimension := os.Args[3]
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials`, load your configuration from the shared configuration file `~/.aws/config`, and create a CloudWatch client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -72,7 +72,7 @@ svc := cloudwatch.New(sess)
 
 Call `ListMetrics`, supplying the metric name, namespace, and dimension name. Print the metrics returned in the result.
 
-```
+```go
 result, err := svc.ListMetrics(&cloudwatch.ListMetricsInput{
     MetricName: aws.String(metric),
     Namespace:  aws.String(namespace),
@@ -96,7 +96,7 @@ Create the file `custom_metrics.go`.
 
 Import the packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -108,7 +108,7 @@ import (
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials`, load your configuration from the shared configuration file `~/.aws/config`, and create a CloudWatch client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -119,7 +119,7 @@ svc := cloudwatch.New(sess)
 
 Call `PutMetricData` with the the custom namespace “Site/Traffic”. The namespace has two custom dimensions: “SiteName” and “PageURL”. “SiteName” has the value “example.com”, the “UniqueVisitors” value 5885 and the “UniqueVisits” value 8628. “PageURL” has the value “my-page.html”, and a “PageViews” value 18057.
 
-```
+```go
 _, err := svc.PutMetricData(&cloudwatch.PutMetricDataInput{
     Namespace: aws.String("Site/Traffic"),
     MetricData: []*cloudwatch.MetricDatum{
@@ -162,7 +162,7 @@ _, err := svc.PutMetricData(&cloudwatch.PutMetricDataInput{
 
 If there are any errors, print them out, otherwise list some information about the custom metrics.
 
-```
+```go
 if err != nil {
     fmt.Println("Error adding metrics:", err.Error())
     return

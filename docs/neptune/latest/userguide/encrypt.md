@@ -42,7 +42,7 @@ Here is an example (for `us-east-1` region) of a key policy that includes the ne
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "key-consolepolicy-3",
@@ -106,7 +106,7 @@ Here is an example (for `us-east-1` region) of a key policy that includes the ne
 
 You could also scope `createGrant` permissions down further by adding:
 
-```
+```json
 "Condition": {
   "Bool": {
     "kms:GrantIsForAWSResource": true

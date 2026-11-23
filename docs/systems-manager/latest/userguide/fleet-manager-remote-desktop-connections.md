@@ -84,7 +84,7 @@ The following are example IAM policies that you can attach to a user or role to 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -183,7 +183,7 @@ The `AccessTaggedInstances` section, which is located lower in the example polic
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -279,7 +279,7 @@ The `AccessTaggedInstances` section, which is located lower in the example polic
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -244,7 +244,7 @@ Next, define an Amazon S3 bucket in the stack using the [Bucket](https://docs.aw
 
 In `lib/hello-cdk-stack.ts`:
 
-```
+```javascript
 import * as cdk from '@aws-cdk/core';
 import * as s3 from '@aws-cdk/aws-s3';
 
@@ -264,7 +264,7 @@ export class HelloCdkStack extends cdk.Stack {
 
 In `lib/hello-cdk-stack.js`:
 
-```
+```javascript
 const cdk = require('@aws-cdk/core');
 const s3 = require('@aws-cdk/aws-s3');
 
@@ -286,13 +286,13 @@ module.exports = { HelloCdkStack }
 
 Add the following import statement in `hello_cdk/hello_cdk_stack.py` in the `hello_cdk` directory below the existing imports.
 
-```
+```python
 from aws_cdk import aws_s3 as s3
 ```
 
 Replace the comment with the following code.
 
-```
+```python
 bucket = s3.Bucket(self,
     "MyFirstBucket",
     versioned=True,)
@@ -303,7 +303,7 @@ bucket = s3.Bucket(self,
 
 In `src/main/java/com/myorg/HelloCdkStack.java`:
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.core.*;
@@ -328,7 +328,7 @@ public class HelloCdkStack extends Stack {
 
 In `src/HelloCdk/HelloCdkStack.cs`:
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.S3;
 
@@ -429,7 +429,7 @@ The AWS CDK can update your deployed resources after you modify your app. Let's 
 
 Update `lib/hello-cdk-stack.ts`.
 
-```
+```javascript
 new s3.Bucket(this, 'MyFirstBucket', {
   versioned: true,
   removalPolicy: cdk.RemovalPolicy.DESTROY,
@@ -442,7 +442,7 @@ new s3.Bucket(this, 'MyFirstBucket', {
 
 Update `lib/hello-cdk-stack.js`.
 
-```
+```javascript
 new s3.Bucket(this, 'MyFirstBucket', {
   versioned: true,
   removalPolicy: cdk.RemovalPolicy.DESTROY,
@@ -455,7 +455,7 @@ new s3.Bucket(this, 'MyFirstBucket', {
 
 Update `hello_cdk/hello_cdk_stack.py`.
 
-```
+```python
 bucket = s3.Bucket(self, "MyFirstBucket",
     versioned=True,
     removal_policy=core.RemovalPolicy.DESTROY,
@@ -467,11 +467,11 @@ bucket = s3.Bucket(self, "MyFirstBucket",
 
 Update `src/main/java/com/myorg/HelloCdkStack.java`, adding the new import and updating the bucket definition in the appropriate places.
 
-```
+```java
 import software.amazon.awscdk.core.RemovalPolicy;
 ```
 
-```
+```java
 Bucket.Builder.create(this, "MyFirstBucket")
         .versioned(true)
         .removalPolicy(RemovalPolicy.DESTROY)
@@ -484,7 +484,7 @@ Bucket.Builder.create(this, "MyFirstBucket")
 
 Update `src/HelloCdk/HelloCdkStack.cs`.
 
-```
+```csharp
 new Bucket(this, "MyFirstBucket", new BucketProps
 {
     Versioned = true,

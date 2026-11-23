@@ -43,7 +43,7 @@ The role uses the following permissions policy, which starts with **AWSIoTSiteWi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -155,7 +155,7 @@ The role uses the following permissions policy, which starts with **AWSIoTSiteWi
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -218,7 +218,7 @@ The role uses the following permissions policy, which starts with **IoTSiteWiseA
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -388,13 +388,13 @@ You can use the AWS CLI for the following portal service role management tasks:
 
 To find the service role attached to a SiteWise Monitor portal, run the following command to list all of your portals in the current Region.
 
-```
+```bash
 aws iotsitewise list-portals
 ```
 
 The operation returns a response that contains your portal summaries in the following format.
 
-```
+```json
 {
   "portalSummaries": [
     {
@@ -424,7 +424,7 @@ Use the following steps to create a new SiteWise Monitor service role.
 ------
 #### [ Linux, macOS, or Unix ]
 
-   ```
+   ```bash
    aws iam create-role --role-name MySiteWiseMonitorPortalRole --assume-role-policy-document '{
      "Version": "2012-10-17",
      "Statement": [
@@ -442,7 +442,7 @@ Use the following steps to create a new SiteWise Monitor service role.
 ------
 #### [ Windows command prompt ]
 
-   ```
+   ```bash
    aws iam create-role --role-name MySiteWiseMonitorPortalRole --assume-role-policy-document "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"monitor.iotsitewise.amazonaws.com\"},\"Action\":\"sts:AssumeRole\"}]}"
    ```
 
@@ -454,13 +454,13 @@ Use the following steps to create a new SiteWise Monitor service role.
 
    1. For the SiteWise Monitor (Classic) – Attach the `AWSIoTSiteWiseMonitorPortalAccess` policy to the role, or attach a policy that defines equivalent permissions.
 
-      ```
+      ```bash
       aws iam attach-role-policy --role-name MySiteWiseMonitorPortalRole --policy-arn arn:aws:iam::aws:policy/service-role/AWSIoTSiteWiseMonitorPortalAccess
       ```
 
    1. For the SiteWise Monitor (AI-aware) – Attach the `IoTSiteWiseAIPortalAccessPolicy` policy to the role, or attach a policy that defines equivalent permissions. For example, create a policy with portal access permissions. The following example creates a policy named `MySiteWiseMonitorPortalAccess`.
 
-      ```
+      ```bash
       aws iam create-policy \
           --policy-name MySiteWiseMonitorPortalAccess \
           --policy-document '{
@@ -521,13 +521,13 @@ Use the following steps to create a new SiteWise Monitor service role.
 
 1. To retrieve the portal's existing details, run the following command. Replace {{portal-id}} with the ID of the portal.
 
-   ```
+   ```bash
    aws iotsitewise describe-portal --portal-id {{portal-id}}
    ```
 
    The operation returns a response that contains the portal's details in the following format.
 
-   ```
+   ```json
    {
        "portalId": "a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE",
        "portalArn": "arn:aws:iotsitewise:{{region}}:{{account-id}}:portal/a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE",
@@ -547,7 +547,7 @@ Use the following steps to create a new SiteWise Monitor service role.
 
 1. To attach a service role to a portal, run the following command. Replace {{role-arn}} with the service role ARN, and replace the remaining parameters with the portal's existing values.
 
-   ```
+   ```bash
    aws iotsitewise update-portal \
      --portal-id {{portal-id}} \
      --role-arn {{role-arn}} \

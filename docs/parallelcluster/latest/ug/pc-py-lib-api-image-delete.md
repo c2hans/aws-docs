@@ -6,7 +6,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 # `delete_image`
 
-```
+```python
 delete_image(image_id, region, force)
 ```
 

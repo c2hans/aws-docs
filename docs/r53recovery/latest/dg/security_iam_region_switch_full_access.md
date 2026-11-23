@@ -11,7 +11,7 @@ The following IAM policy grants full access for all Region switch APIs:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

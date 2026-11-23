@@ -139,7 +139,7 @@ You can create a Amazon CloudWatch alarm that sends a notification when an RCS m
 
 Use the [put-metric-alarm](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html) command. The following example alarms when more than 100 RCS messages fall back to SMS in one hour and notifies an Amazon SNS topic.
 
-```
+```bsh
 $ aws cloudwatch put-metric-alarm \
 > --alarm-name {{HighRcsFallbackRate}} \
 > --namespace AWS/SMSVoice \
@@ -222,7 +222,7 @@ You report the outcome with the API or AWS CLI (`put-message-feedback`); there i
 
 To enable feedback for a single message, add `--message-feedback-enabled` to your send command. To enable it for every message instead, turn the setting on in a configuration set (see the Console tab) and send with that configuration set.
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 send-rcs-message \
 > --destination-phone-number {{+12065550150}} \
 > --origination-identity {{rcs-c020de2520714385964ebf7b095c4b60}} \
@@ -232,7 +232,7 @@ $ aws pinpoint-sms-voice-v2 send-rcs-message \
 
 When you have a signal that the customer received or acted on the message, report the outcome with the [put-message-feedback](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/put-message-feedback.html) command, using the message ID from the send response. Set the status to `RECEIVED` or `FAILED`.
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 put-message-feedback \
 > --message-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
 > --message-feedback-status {{RECEIVED}}

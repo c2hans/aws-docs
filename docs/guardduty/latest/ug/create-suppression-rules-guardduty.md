@@ -64,7 +64,7 @@ You can also create a suppression rule from an existing saved filter. For more i
 
    The following example adds a filter for low severity findings for lambda functions with function name prefix "MyFunc" and function tag with prefix not as "TestTag"
 
-   ```
+   ```JSON
    {
        "Criterion": {
            "service.action.dnsRequestAction.domain": {
@@ -85,7 +85,7 @@ You can also create a suppression rule from an existing saved filter. For more i
 
     You can create suppression rules using wildcard characters \* and ? . Wildcards in filters are supported using **Matches** and **NotMatches** operators only. To match any number of characters, you can use \* in the attribute value and to match a single character, you can use ? in the attribute value. Filters support a maximum of 5 attributes under a single wildcard condition and a maximum of 5 wildcard character within a single attribute. The following example adds a filter for Lambda name matching the prefix “MyFunc" but not Lambda functions with tags with "TestTag" as prefix followed by 0-2 characters.
 
-   ```
+   ```JSON
    {
        "Criterion": {
            "resource.lambdaDetails.functionName": {

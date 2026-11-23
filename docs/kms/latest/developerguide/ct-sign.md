@@ -8,7 +8,7 @@ These examples show AWS CloudTrail log entries for the [Sign](https://docs.aws.a
 
 The following example shows an CloudTrail log entry for a [Sign](https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html) operation that uses an asymmetric RSA KMS key to generate a digital signature for a file.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

@@ -19,7 +19,7 @@ To configure a customer managed key for use by CodeBuild, follow the instruction
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

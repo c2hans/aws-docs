@@ -15,6 +15,11 @@ In the following list, the required parameters are described first.
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** CustomerAccount **   <a name="AWSPartnerCentral-Type-EngagementContextPayload-CustomerAccount"></a>
+The customer account context for account planning. This field appears only when the context type is `CustomerAccount`.
+Type: [CustomerAccountContext](API_CustomerAccountContext.md) object
+Required: No
+
  ** CustomerProject **   <a name="AWSPartnerCentral-Type-EngagementContextPayload-CustomerProject"></a>
 Contains detailed information about a customer project when the context type is "CustomerProject". This field is present only when the Type in EngagementContextDetails is set to "CustomerProject".
 Type: [CustomerProjectsContext](API_CustomerProjectsContext.md) object

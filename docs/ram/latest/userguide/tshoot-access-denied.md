@@ -44,7 +44,7 @@ To **attach permissions** to a resource share, you need the following permission
 
 The following example shows what such an IAM permission policy might look like.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

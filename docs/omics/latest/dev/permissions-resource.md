@@ -28,7 +28,7 @@ HealthOmics Analytics auto accepts data if your service policy has the correct R
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

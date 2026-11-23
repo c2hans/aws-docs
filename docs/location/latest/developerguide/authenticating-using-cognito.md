@@ -189,7 +189,7 @@ The following example exchanges the unauthenticated identity pool that you creat
 
 This example uses the AWS SDK for JavaScript v3.
 
-```
+```js
 import { GeoRoutesClient, CalculateIsolinesCommand , } from "@aws-sdk/client-geo-routes"; // ES Modules import
 import { withIdentityPoolId } from "@aws/amazon-location-utilities-auth-helper";
 

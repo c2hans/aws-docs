@@ -17,13 +17,13 @@ The skill uses the same steps that this guide describes for the Linux package an
 
 1. Check that you have the AWS CLI version 2.35.0 or later.
 
-   ```
+   ```bash
    aws --version
    ```
 
 1. Install the skill. The following command installs it for all the AI coding agents that the AWS CLI finds on your machine, such as Kiro, Cursor, and Claude Code.
 
-   ```
+   ```bash
    aws agent-toolkit add-skill --skill-name aws-emulator --region us-east-1
    ```
 

@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 
 ![Diagram of a ship showing how a bulkhead isolates a failure.](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/failure-isolation-using-bulkheads.jpg)
 
+*Isolating failures using bulkheads*
+
  On a ship, bulkheads ensure that a hull breach is contained within one section of the ship. In complex systems, this pattern is often replicated to allow fault isolation. *Fault isolated boundaries* restrict the effect of a failure within a workload to a limited number of components. Components outside of the boundary are unaffected by the failure.
 
 Using multiple fault isolated boundaries, you can limit the impact on your workload. When provisioning a new customer or tenant, or applying a workload change, you can do this gradually, compartment by compartment, or in other words, isolation boundary by isolation boundary. This way, when a failure occurs, a smaller number of customers or resources will be impacted. On AWS, customers can use multiple Availability Zones and AWS Regions to provide fault isolation, but the concept of fault isolation can be extended to your workload's architecture as well.
@@ -25,12 +27,16 @@ Using multiple fault isolated boundaries, you can limit the impact on your workl
 
 ![A reference architecture diagram showing a typical workload.](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/typical-workload.jpg)
 
+*A typical workload*
+
 ## A workload with cell-based architecture
 <a name="a-workload-with-cell-based-architecture"></a>
 
  Rather than build out services as single-image systems, we propose a different approach: break your services down internally into cells and build thin layers to route traffic to the right cells. This type of architecture can be zonal, regional, or global.
 
 ![Reference architecture diagram showing a cell-based architecture.](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/cell-based-architecture.jpg)
+
+*A cell-based architecture*
 
  The cell-based architecture has the following components, which will be further explored later in this guidance:
 +  **Cell router** — We also refer to this layer as the *thinnest possible layer*, with the responsibility of routing requests to the right cell, and only that.

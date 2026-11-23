@@ -10,7 +10,7 @@ CloudTrail log entries for this operation recorded on or after December 2022 inc
 
 The following example shows a `CreateGrant` log entry for a grant with an encryption context constraint.
 
-```
+```json
 {
   "eventVersion": "1.02",
   "userIdentity": {
@@ -58,7 +58,7 @@ The following example shows a `CreateGrant` log entry for a grant with an encryp
 
 The following example shows a `CreateGrant` log entry for a service principal grant. This grant uses the `GranteeServicePrincipal` parameter to specify an AWS service principal as the grantee, and includes a `SourceArn` grant constraint.
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {

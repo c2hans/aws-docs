@@ -63,7 +63,7 @@ To determine the user ID for an agent so that you can use the value as an attrib
 
 In the following agent event data, the agent ID is **87654321-4321-4321-4321-123456789012**.
 
-```
+```json
 {
     "AWSAccountId": "123456789012",
     "AgentARN": "arn:aws:connect:us-west-2:123456789012:instance/12345678-1234-1234-1234-123456789012/agent/87654321-4321-4321-4321-123456789012",

@@ -20,7 +20,7 @@ If you're using a custom chat implementation:
 
 1. Add the `DisconnectOnCustomerExit` parameter to your [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) API request:
 
-   ```
+   ```json
    {
        "DisconnectOnCustomerExit": ["AGENT"],
        // ... other StartChatContact parameters
@@ -57,7 +57,7 @@ For supervisor barge-in scenarios, make sure you add a [Flow block in Connect Cu
 When a customer ends a chat session, Connect Customer sets `disconnectReason` to `CUSTOMER_DISCONNECT` in the [ContactTraceRecord](ctr-data-model.md#ctr-ContactTraceRecord). When `DisconnectOnCustomerExit` is configured, the system generates a new contact ID (`nextContactId`) and initiates the configured disconnect flow.
 Example:
 
-```
+```json
 {
     "contactId": "104c05e3-abscdfre",
     "nextContactId": "4cbae06d-ca5b-1234567",

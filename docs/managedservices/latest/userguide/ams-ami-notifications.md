@@ -81,7 +81,7 @@ To subscribe to AMS New AMI notifications using the Deployment \| Ingestion \| S
 
 1. To subscribe to the AmazonLinuxSubscription, create and save an execution parameters JSON file; this example names it CreateSubscribeAmiParams.json:
 
-   ```
+   ```json
    {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Resources": {

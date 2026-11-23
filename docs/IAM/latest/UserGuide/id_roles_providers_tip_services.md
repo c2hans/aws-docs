@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_
 
 # AWS services that support TIP
 
-The following AWS services have confirmed support for recording trusted identity propagation (TIP) context in AWS CloudTrail. Each listed service has at least one tested action, and every tested action recorded TIP context successfully. This list does not imply that every action for each service was tested.
+The following AWS services have confirmed support for recording trusted identity propagation (TIP) context in AWS CloudTrail.
 
 For CloudTrail event fields, request paths, recipient accounts, safeguards, and logging examples, see [Logging TIP activity with AWS CloudTrail](id_roles_providers_tip_cloudtrail.md).
 

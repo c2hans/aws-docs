@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-priv
 ## Changing a SaaS contract – upgrades and renewals
 <a name="changing-saas-contracts-upgrades-renewals"></a>
 
-This section applies to software as a service (SaaS) contract and SaaS contract with consumption products. If you have an active contract in place from a previous private offer and you want to accept a new private offer for the same product, the seller can upgrade or renew your existing agreement to modify the terms, pricing, or duration, or to renew your existing contract before it ends. This will result in a new private offer for you to accept, without needing to cancel your existing agreement first.
+This section applies to software as a service (SaaS) contract and SaaS contract with consumption products, and to RTB Fabric module contracts. If you have an active contract in place from a previous private offer and you want to accept a new private offer for the same product, the seller can upgrade or renew your existing agreement to modify the terms, pricing, or duration, or to renew your existing contract before it ends. This will result in a new private offer for you to accept, without needing to cancel your existing agreement first.
 
 **Note**
 Future-dated private offers are listed as **Early renewals**. For more information, see [Future dated agreements and private offers in AWS Marketplace](private-offers-buyer-future-dated-private-offers-and-agreements.md).
@@ -33,6 +33,8 @@ If you don't want to switch to invoicing, then you can take either of the follow
 If your active SaaS contract includes configurable upfront pricing terms, you can modify the quantity of units in your contract without needing a new private offer from your seller. This allows you to:
 + Increase the number of units in your contract
 + Scale your usage up based on business needs
+
+You can't modify the contract quantity yourself for RTB Fabric module contracts. To change the quantity, work with the seller for a new private offer.
 
 **To modify your current contract**
 

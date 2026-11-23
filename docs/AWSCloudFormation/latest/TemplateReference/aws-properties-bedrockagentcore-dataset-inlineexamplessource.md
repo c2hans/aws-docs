@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::BedrockAgentCore::Dataset InlineExamplesSource
 
- Inline examples provided directly in the request body.
+<a name="aws-properties-bedrockagentcore-dataset-inlineexamplessource-description"></a>The `InlineExamplesSource` property type specifies Property description not available. for an [AWS::BedrockAgentCore::Dataset](aws-resource-bedrockagentcore-dataset.md).
 
 ## Syntax
 <a name="aws-properties-bedrockagentcore-dataset-inlineexamplessource-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-dataset-inlineexamplessource-properties"></a>
 
 `Examples`  <a name="cfn-bedrockagentcore-dataset-inlineexamplessource-examples"></a>
- Examples to add. Each example is assigned an auto-generated UUID.
+Property description not available.
 *Required*: Yes
 *Type*: Array of Object
 *Minimum*: `1`

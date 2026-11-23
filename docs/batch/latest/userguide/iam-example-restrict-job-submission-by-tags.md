@@ -11,7 +11,7 @@ When submitting jobs with policies that evaluate job definition resource tags, y
 
 This policy uses two separate statements because it applies different tag conditions to different resource types. When scoping resource-level access for job submission, you must provide both job queue and job definition resource types.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

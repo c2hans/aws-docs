@@ -26,7 +26,7 @@ The following trust policy example grants `AssumeRole` permissions for OpenSearc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -54,7 +54,7 @@ The following policy example grants the role the minimum permissions to get a pe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

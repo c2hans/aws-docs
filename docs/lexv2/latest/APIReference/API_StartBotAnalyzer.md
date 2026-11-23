@@ -148,7 +148,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of StartBotAnalyzer.
 
-```
+```json
 POST https://models-v2-lex.us-east-1.amazonaws.com/bots/<BotId>/botanalyzer/
 
 Payload:
@@ -165,7 +165,7 @@ Payload:
 
 This example illustrates one usage of StartBotAnalyzer.
 
-```
+```json
 {
     "botId": "<BotId>",
     "botVersion": "DRAFT",

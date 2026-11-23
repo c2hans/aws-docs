@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { ApiGatewayToSqs, ApiGatewayToSqsProps } from "@aws-solutions-constructs/aws-apigateway-sqs";
@@ -33,7 +33,7 @@ import { ApiGatewayToSqs, ApiGatewayToSqsProps } from "@aws-solutions-constructs
 new ApiGatewayToSqs(this, 'ApiGatewayToSqsPattern', {});
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_apigateway_sqs import ApiGatewayToSqs
 from aws_cdk import Stack
 from constructs import Construct
@@ -41,7 +41,7 @@ from constructs import Construct
 ApiGatewayToSqs(self, 'ApiGatewayToSqsPattern')
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

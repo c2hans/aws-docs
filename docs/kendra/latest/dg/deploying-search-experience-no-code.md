@@ -123,7 +123,7 @@ aws kendra describe-experience \
 
 **To create an Amazon Kendra experience**
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 import pprint
@@ -186,7 +186,7 @@ print("Program ends.")
 
 **To create an Amazon Kendra**
 
-```
+```java
 package com.amazonaws.kendra;
 
 import java.util.concurrent.TimeUnit;

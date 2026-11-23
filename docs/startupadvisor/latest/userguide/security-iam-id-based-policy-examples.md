@@ -32,7 +32,7 @@ The `startups:GetSpendSummary` action does not support resource-level permission
 **Note**
 If your identity is missing one or more of the downstream permissions, the `startups:GetSpendSummary` operation still returns a successful response. However, one or more sections of the response contain an error with the code `ACCESS_DENIED` and a message from the downstream service. If the **Cost & Credits** view shows missing or empty sections, verify that your identity has all of the actions in the following policy.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

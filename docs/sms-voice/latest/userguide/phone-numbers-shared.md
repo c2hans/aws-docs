@@ -9,7 +9,7 @@ You can use the [describe-phone-numbers](https://docs.aws.amazon.com/cli/latest/
 **To list all of the phone numbers shared with your account using the AWS CLI**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 describe-phone-numbers --owner {{SHARED}}
   ```
 

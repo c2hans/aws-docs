@@ -24,7 +24,7 @@ The following code example shows how to use `CreateReceiptFilter`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     " iv_allow = abap_true means 'Allow', abap_false means 'Block'
     DATA(lv_policy) = COND /aws1/sesreceiptfilterpolicy(
       WHEN iv_allow = abap_true THEN 'Allow'
@@ -64,7 +64,7 @@ The following code example shows how to use `CreateReceiptRule`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     " Create S3 action for copying emails to S3
     DATA(lo_s3_action) = NEW /aws1/cl_sess3action(
       iv_bucketname = iv_bucket_name
@@ -114,7 +114,7 @@ The following code example shows how to use `CreateReceiptRuleSet`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ses->createreceiptruleset( iv_rulesetname = iv_rule_set_name ).
         MESSAGE 'Receipt rule set created successfully' TYPE 'I'.
@@ -138,7 +138,7 @@ The following code example shows how to use `CreateTemplate`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     DATA(lo_template) = NEW /aws1/cl_sestemplate(
       iv_templatename = iv_name
       iv_subjectpart = iv_subject
@@ -173,7 +173,7 @@ The following code example shows how to use `DeleteIdentity`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ses->deleteidentity( iv_identity = iv_identity ).
         MESSAGE 'Identity deleted successfully' TYPE 'I'.
@@ -193,7 +193,7 @@ The following code example shows how to use `DeleteReceiptFilter`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ses->deletereceiptfilter( iv_filtername = iv_filter_name ).
         MESSAGE 'Receipt filter deleted successfully' TYPE 'I'.
@@ -213,7 +213,7 @@ The following code example shows how to use `DeleteReceiptRule`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ses->deletereceiptrule(
           iv_rulesetname = iv_rule_set_name
@@ -240,7 +240,7 @@ The following code example shows how to use `DeleteReceiptRuleSet`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ses->deletereceiptruleset( iv_rulesetname = iv_rule_set_name ).
         MESSAGE 'Receipt rule set deleted successfully' TYPE 'I'.
@@ -264,7 +264,7 @@ The following code example shows how to use `DeleteTemplate`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ses->deletetemplate( iv_templatename = iv_template_name ).
         MESSAGE 'Template deleted successfully' TYPE 'I'.
@@ -284,7 +284,7 @@ The following code example shows how to use `DescribeReceiptRuleSet`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ses->describereceiptruleset(
           iv_rulesetname = iv_rule_set_name
@@ -310,7 +310,7 @@ The following code example shows how to use `GetIdentityVerificationAttributes`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     DATA lt_identities TYPE /aws1/cl_sesidentitylist_w=>tt_identitylist.
     APPEND NEW /aws1/cl_sesidentitylist_w( iv_value = iv_identity ) TO lt_identities.
 
@@ -344,7 +344,7 @@ The following code example shows how to use `GetTemplate`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_ses->gettemplate( iv_templatename = iv_template_name ).
         oo_template = lo_result->get_template( ).
@@ -369,7 +369,7 @@ The following code example shows how to use `ListIdentities`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_ses->listidentities(
           iv_identitytype = iv_identity_type
@@ -393,7 +393,7 @@ The following code example shows how to use `ListReceiptFilters`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_ses->listreceiptfilters( ).
         ot_filters = lo_result->get_filters( ).
@@ -414,7 +414,7 @@ The following code example shows how to use `ListTemplates`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_ses->listtemplates( iv_maxitems = iv_max_items ).
         ot_templates = lo_result->get_templatesmetadata( ).
@@ -435,7 +435,7 @@ The following code example shows how to use `SendEmail`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     " Create message object
     DATA(lo_subject) = NEW /aws1/cl_sescontent( iv_data = iv_subject ).
     DATA(lo_text_body) = NEW /aws1/cl_sescontent( iv_data = iv_text ).
@@ -483,7 +483,7 @@ The following code example shows how to use `SendTemplatedEmail`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         " Send templated email
         DATA(lo_result) = lo_ses->sendtemplatedemail(
@@ -515,7 +515,7 @@ The following code example shows how to use `UpdateTemplate`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     DATA(lo_template) = NEW /aws1/cl_sestemplate(
       iv_templatename = iv_name
       iv_subjectpart = iv_subject
@@ -550,7 +550,7 @@ The following code example shows how to use `VerifyDomainIdentity`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_ses->verifydomainidentity( iv_domain = iv_domain_name ).
         ov_token = lo_result->get_verificationtoken( ).
@@ -571,7 +571,7 @@ The following code example shows how to use `VerifyEmailIdentity`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ses->verifyemailidentity( iv_emailaddress = iv_email_address ).
         MESSAGE 'Email verification initiated' TYPE 'I'.

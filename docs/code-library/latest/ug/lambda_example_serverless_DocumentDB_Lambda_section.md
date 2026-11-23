@@ -15,7 +15,7 @@ The following code examples show how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using .NET.
 
-```
+```csharp
 using Amazon.Lambda.Core;
 using System.Text.Json;
 using System;
@@ -151,7 +151,7 @@ public class Function
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using Go.
 
-```
+```go
 package main
 
 import (
@@ -206,7 +206,7 @@ func logDocumentDBEvent(record Record) {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using Java.
 
-```
+```java
 import java.util.List;
 import java.util.Map;
 
@@ -253,7 +253,7 @@ public class Example implements RequestHandler<Map<String, Object>, String> {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using JavaScript.
 
-```
+```javascript
 console.log('Loading function');
 exports.handler = async (event, context) => {
     event.events.forEach(record => {
@@ -271,7 +271,7 @@ const logDocumentDBEvent = (record) => {
 ```
 Consuming a Amazon DocumentDB event with Lambda using TypeScript
 
-```
+```javascript
 import { DocumentDBEventRecord, DocumentDBEventSubscriptionContext } from 'aws-lambda';
 
 console.log('Loading function');
@@ -301,7 +301,7 @@ const logDocumentDBEvent = (record: DocumentDBEventRecord): void => {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using PHP.
 
-```
+```php
 <?php
 
 require __DIR__.'/vendor/autoload.php';
@@ -348,7 +348,7 @@ return new DocumentDBEventHandler();
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using Python.
 
-```
+```python
 import json
 
 def lambda_handler(event, context):
@@ -376,7 +376,7 @@ def log_document_db_event(record):
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using Ruby.
 
-```
+```ruby
 require 'json'
 
 def lambda_handler(event:, context:)
@@ -407,7 +407,7 @@ end
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using Rust.
 
-```
+```rust
 use lambda_runtime::{service_fn, tracing, Error, LambdaEvent};
 use aws_lambda_events::{
     event::documentdb::{DocumentDbEvent, DocumentDbInnerEvent},

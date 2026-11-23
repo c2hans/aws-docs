@@ -14,7 +14,7 @@ The following code examples show how to get started using Amazon S3.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/S3#code-examples).
 
-```
+```csharp
 /// <summary>
 /// Hello Amazon Simple Storage Service
 // (Amazon S3) example.
@@ -85,7 +85,7 @@ public class HelloS3
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3/hello_s3#code-examples).
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -127,7 +127,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the hello\_s3.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/s3/S3Client.h>
 #include <iostream>
@@ -190,7 +190,7 @@ int main(int argc, char **argv) {
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -248,7 +248,7 @@ func main() {
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/s3#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.Bucket;
@@ -302,7 +302,7 @@ public class HelloS3 {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 
-```
+```javascript
 import {
   paginateListBuckets,
   S3Client,
@@ -349,7 +349,7 @@ export const helloS3 = async () => {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 
-```
+```php
 use Aws\S3\S3Client;
 
 $client = new S3Client(['region' => 'us-west-2']);
@@ -364,7 +364,7 @@ var_dump($results);
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3#code-examples).
 
-```
+```python
 import boto3
 
 def hello_s3():
@@ -413,7 +413,7 @@ if __name__ == "__main__":
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 # frozen_string_literal: true
 
 # S3Manager is a class responsible for managing S3 operations
@@ -456,7 +456,7 @@ end
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 /// S3 Hello World Example using the AWS SDK for Rust.
 ///
 /// This example lists the objects in a bucket, uploads an object to that bucket,
@@ -532,7 +532,7 @@ async fn list_bucket_and_upload_object(
 ```
 S3ExampleError utilities.
 
-```
+```rust
 /// S3ExampleError provides a From<T: ProvideErrorMetadata> impl to extract
 /// client-specific error details. This serves as a consistent backup to handling
 /// specific service errors, depending on what is needed by the scenario.

@@ -21,7 +21,7 @@ Starting with version 2.11.5, AWS ParallelCluster doesn't support the use of SGE
 
 The following example launches a cluster with the `slurm` scheduler. The example configuration launches 1 cluster with 2 job queues. The first queue, `spot`, initially has 2 `t3.micro` Spot instances available. It can scale up to a maximum of 10 instances, and scale down to a minimum of 1 instance when no jobs have been run for 10 minutes (adjustable using the [`scaledown_idletime`](scaling-section.md#scaledown-idletime) setting). The second queue, `ondemand`, starts with no instances and can scale up to a maximum of 5 `t3.micro` On-Demand instances.
 
-```
+```ini
 [global]
 update_check = true
 sanity_check = true
@@ -67,7 +67,7 @@ This example only applies to AWS ParallelCluster versions up to and including ve
 
 The following example launches a cluster with the `torque` or `sge` scheduler. To use SGE, change `scheduler = torque` to `scheduler = sge`. The example configuration allows a maximum of 5 concurrent nodes, and scales down to two when no jobs have run for 10 minutes.
 
-```
+```ini
 [global]
 update_check = true
 sanity_check = true
@@ -101,7 +101,7 @@ The following example launches a cluster with the `awsbatch` scheduler. It's set
 
 The example configuration allows a maximum of 40 concurrent vCPUs, and scales down to zero when no jobs have run for 10 minutes (adjustable using the [`scaledown_idletime`](scaling-section.md#scaledown-idletime) setting).
 
-```
+```ini
 [global]
 update_check = true
 sanity_check = true

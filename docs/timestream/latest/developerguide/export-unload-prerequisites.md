@@ -17,7 +17,7 @@ Following are prerequisites for writing data to S3 using `UNLOAD` from Timestrea
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -56,7 +56,7 @@ For additional context on these S3 write permissions, refer to the [Amazon Simpl
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -46,7 +46,7 @@ For general information about using augmented manifest files for training classi
 
 For plain-text documents, each line of the augmented manifest file is a complete JSON object that contains a training document, a single class name, and other metadata from Ground Truth. The following example is an augmented manifest file for training a custom classifier to recognize spam email messages:
 
-```
+```json
 {"source":"Document 1 text", "MultiClassJob":0, "MultiClassJob-metadata":{"confidence":0.62, "job-name":"labeling-job/multiclassjob", "class-name":"not_spam", "human-annotated":"yes", "creation-date":"2020-05-21T17:36:45.814354", "type":"groundtruth/text-classification"}}
 {"source":"Document 2 text", "MultiClassJob":1, "MultiClassJob-metadata":{"confidence":0.81, "job-name":"labeling-job/multiclassjob", "class-name":"spam", "human-annotated":"yes", "creation-date":"2020-05-21T17:37:51.970530", "type":"groundtruth/text-classification"}}
 {"source":"Document 3 text", "MultiClassJob":1, "MultiClassJob-metadata":{"confidence":0.81, "job-name":"labeling-job/multiclassjob", "class-name":"spam", "human-annotated":"yes", "creation-date":"2020-05-21T17:37:51.970566", "type":"groundtruth/text-classification"}}
@@ -54,7 +54,7 @@ For plain-text documents, each line of the augmented manifest file is a complete
 
  The following example shows one JSON object from the augmented manifest file, formatted for readability:
 
-```
+```json
 {
    "source": "Paulo, your $1000 award is waiting for you! Claim it while you still can at http://example.com.",
    "MultiClassJob": 0,

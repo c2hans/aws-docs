@@ -16,6 +16,7 @@ A firewall policy defines how to monitor and manage your VPC network traffic, us
    "FirewallArn": "{{string}}",
    "FirewallName": "{{string}}",
    "FirewallPolicyArn": "{{string}}",
+   "FirewallType": "{{string}}",
    "UpdateToken": "{{string}}"
 }
 ```
@@ -49,6 +50,15 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `^arn:aws.*`
 Required: Yes
+
+ ** [FirewallType](#API_AssociateFirewallPolicy_RequestSyntax) **   <a name="networkfirewall-AssociateFirewallPolicy-request-FirewallType"></a>
+The type of firewall that the request targets. Network Firewall supports the following firewall types:
++  `IGW_FIREWALL` - An internet gateway firewall, which AWS Network Security Manager creates and manages for a VPC.
++  `FIREWALL` - A standard Network Firewall firewall.
+If you specify the firewall ARN, the type must match the resource type in the ARN. If you specify only the firewall name, Network Firewall uses this value to identify the firewall. If you don't specify a type, the default is `FIREWALL`.
+Type: String
+Valid Values: `FIREWALL | IGW_FIREWALL`
+Required: No
 
  ** [UpdateToken](#API_AssociateFirewallPolicy_RequestSyntax) **   <a name="networkfirewall-AssociateFirewallPolicy-request-UpdateToken"></a>
 An optional token that you can use for optimistic locking. Network Firewall returns a token to your requests that access the firewall. The token marks the state of the firewall resource at the time of the request.

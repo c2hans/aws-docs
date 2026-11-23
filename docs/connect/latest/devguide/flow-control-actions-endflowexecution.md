@@ -9,7 +9,7 @@ Finishes flow, but does not explicitly disconnect the participant. The participa
 ## Parameter object
 <a name="endflowexecution-parameter"></a>
 
-```
+```json
 {
 
 }

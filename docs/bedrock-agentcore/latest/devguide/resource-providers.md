@@ -15,7 +15,7 @@ Provider configurations in AgentCore Identity define the basic parameters needed
 
 If you are using the AgentCore CLI, you can create an OAuth 2.0 credential provider directly. The AgentCore CLI accepts the client secret from a file or standard input:
 
-```
+```bash
 printf '%s' "$CLIENT_SECRET" | agentcore identity oauth2-credential-provider create \
   --name my-oauth-provider \
   --vendor CustomOauth2 \
@@ -28,7 +28,7 @@ To manage a credential as part of an AgentCore project instead, use `agentcore a
 
 Alternatively, you can bring your own secret by providing a reference to a client secret already stored in AWS Secrets Manager. With the AgentCore CLI:
 
-```
+```bash
 agentcore identity oauth2-credential-provider create \
   --name github-provider \
   --vendor GithubOauth2 \
@@ -39,7 +39,7 @@ agentcore identity oauth2-credential-provider create \
 
 With the AWS CLI:
 
-```
+```bash
 aws bedrock-agentcore-control create-oauth2-credential-provider \
   --name "github-provider" \
   --credential-provider-vendor "GithubOauth2" \
@@ -58,7 +58,7 @@ aws bedrock-agentcore-control create-oauth2-credential-provider \
 
 Alternatively, you can use the AgentCore SDK to configure an OAuth 2.0 credential provider programmatically. The following example configures a provider for GitHub.
 
-```
+```python
 from bedrock_agentcore.services.identity import IdentityClient
 identity_client = IdentityClient("us-east-1")
 github_provider = identity_client.create_oauth2_credential_provider({
@@ -84,7 +84,7 @@ For services that use API keys for authentication rather than OAuth, AgentCore I
 
 If you are using the AgentCore CLI, you can store an API key with a single command:
 
-```
+```bash
 printf '%s' "$API_KEY" | agentcore identity api-key-credential-provider create \
   --name your-service-name \
   --api-key -
@@ -92,7 +92,7 @@ printf '%s' "$API_KEY" | agentcore identity api-key-credential-provider create \
 
 Alternatively, you can bring your own secret by providing a reference to an API key already stored in AWS Secrets Manager. With the AgentCore CLI:
 
-```
+```bash
 agentcore identity api-key-credential-provider create \
   --name your-service-name \
   --api-key-secret-reference '{"secretId": "arn:aws:secretsmanager:us-east-1:123456789012:secret:my-secret", "jsonKey": "api_key"}' \
@@ -101,7 +101,7 @@ agentcore identity api-key-credential-provider create \
 
 With the AWS CLI:
 
-```
+```bash
 aws bedrock-agentcore-control create-api-key-credential-provider \
   --name "your-service-name" \
   --api-key-secret-source EXTERNAL \
@@ -111,7 +111,7 @@ aws bedrock-agentcore-control create-api-key-credential-provider \
 
 Alternatively, you can use the AgentCore SDK to store an API key programmatically:
 
-```
+```python
 from bedrock_agentcore.services.identity import IdentityClient
 identity_client= IdentityClient("us-east-1")
 apikey_provider= identity_client.create_api_key_credential_provider({
@@ -130,7 +130,7 @@ Payment credential providers support two vendors: `CoinbaseCDP` and `StripePrivy
 **Example**
 In an AgentCore project, add a Coinbase CDP payment credential and deploy the project. The secrets must be your base64-encoded Coinbase CDP keys, from a file or standard input:
 
-```
+```bash
 printf '%s' "$API_KEY_SECRET" | agentcore add credentials payment \
   --name coinbase-provider \
   --provider CoinbaseCDP \
@@ -142,7 +142,7 @@ agentcore deploy
 To use the interactive wizard instead, run `agentcore add credentials payment` with no options.
 The following example creates a payment credential provider for Coinbase CDP:
 
-```
+```bash
 aws bedrock-agentcore-control create-payment-credential-provider \
   --name "coinbase-provider" \
   --credential-provider-vendor CoinbaseCDP \
@@ -157,7 +157,7 @@ aws bedrock-agentcore-control create-payment-credential-provider \
 ```
 The following example creates a Coinbase CDP payment credential provider with secrets stored in AWS Secrets Manager:
 
-```
+```bash
 aws bedrock-agentcore-control create-payment-credential-provider \
   --name "coinbase-provider" \
   --credential-provider-vendor "CoinbaseCDP" \
@@ -180,7 +180,7 @@ aws bedrock-agentcore-control create-payment-credential-provider \
 ```
 The following example creates a payment credential provider for Stripe Privy:
 
-```
+```bash
 aws bedrock-agentcore-control create-payment-credential-provider \
   --name "stripe-privy-provider" \
   --credential-provider-vendor StripePrivy \
@@ -196,7 +196,7 @@ aws bedrock-agentcore-control create-payment-credential-provider \
 ```
 The following example creates a Stripe Privy payment credential provider with secrets stored in AWS Secrets Manager:
 
-```
+```bash
 aws bedrock-agentcore-control create-payment-credential-provider \
   --name "stripe-privy-provider" \
   --credential-provider-vendor "StripePrivy" \
@@ -220,7 +220,7 @@ aws bedrock-agentcore-control create-payment-credential-provider \
 ```
 The following example configures a provider for Coinbase CDP:
 
-```
+```python
 import boto3
 
 client = boto3.client("bedrock-agentcore-control", region_name="us-east-1")
@@ -239,7 +239,7 @@ coinbase_provider = client.create_payment_credential_provider(
 ```
 The following example configures a Coinbase CDP provider with secrets stored in AWS Secrets Manager:
 
-```
+```python
 import boto3
 
 client = boto3.client("bedrock-agentcore-control", region_name="us-east-1")
@@ -266,7 +266,7 @@ coinbase_provider = client.create_payment_credential_provider(
 ```
 The following example configures a provider for Stripe Privy:
 
-```
+```python
 import boto3
 
 client = boto3.client("bedrock-agentcore-control", region_name="us-east-1")
@@ -286,7 +286,7 @@ stripe_privy_provider = client.create_payment_credential_provider(
 ```
 The following example configures a Stripe Privy provider with secrets stored in AWS Secrets Manager:
 
-```
+```python
 import boto3
 
 client = boto3.client("bedrock-agentcore-control", region_name="us-east-1")
@@ -314,7 +314,7 @@ stripe_privy_provider = client.create_payment_credential_provider(
 ```
 The following example configures a provider for Coinbase CDP:
 
-```
+```python
 from bedrock_agentcore.services.identity import IdentityClient
 
 identity_client = IdentityClient("us-east-1")
@@ -333,7 +333,7 @@ coinbase_provider = identity_client.create_payment_credential_provider(
 ```
 The following example configures a Coinbase CDP provider with secrets stored in AWS Secrets Manager:
 
-```
+```python
 from bedrock_agentcore.services.identity import IdentityClient
 
 identity_client = IdentityClient("us-east-1")
@@ -360,7 +360,7 @@ coinbase_provider = identity_client.create_payment_credential_provider(
 ```
 The following example configures a provider for Stripe Privy:
 
-```
+```python
 from bedrock_agentcore.services.identity import IdentityClient
 
 identity_client = IdentityClient("us-east-1")
@@ -380,7 +380,7 @@ stripe_privy_provider = identity_client.create_payment_credential_provider(
 ```
 The following example configures a Stripe Privy provider with secrets stored in AWS Secrets Manager:
 
-```
+```python
 from bedrock_agentcore.services.identity import IdentityClient
 
 identity_client = IdentityClient("us-east-1")

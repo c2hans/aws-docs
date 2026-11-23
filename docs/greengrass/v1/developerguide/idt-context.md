@@ -15,7 +15,7 @@ The IDT context can be considered a read-only JSON document. Test suites can ret
 
 The IDT context uses the following format:
 
-```
+```json
 {
     "config": {
         <config-json-content>

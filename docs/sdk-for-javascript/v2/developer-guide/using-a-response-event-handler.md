@@ -10,7 +10,7 @@ If you do not create and pass an anonymous callback function as a parameter when
 
 To process the response, you must create an event listener for the `AWS.Request` object to register a callback function for the method call. The following example shows how to create the `AWS.Request` object for calling a service object method and the event listener for the successful return.
 
-```
+```javascript
 // create the AWS.Request object
 var request = new AWS.EC2({apiVersion: '2014-10-01'}).describeInstances();
 
@@ -33,7 +33,7 @@ For more information about the `AWS.Request` object, see [`Class: AWS.Request`](
 
 You can register multiple callbacks on any request object. Multiple callbacks can be registered for different events or the same event. Also, you can chain callbacks as shown in the following example.
 
-```
+```javascript
 request.
   on('success', function(response) {
     console.log("Success!");
@@ -62,7 +62,7 @@ You can register a callback function in response to any of these events. For a c
 
 The `success` event is raised upon a successful response received from the service object. Here is how you register a callback function for this event.
 
-```
+```javascript
 request.on('success', function(response) {
   // event handler code
 });
@@ -70,7 +70,7 @@ request.on('success', function(response) {
 
 The response provides a `data` property that contains the serialized response data from the service. For example, the following call to the `listBuckets` method of the Amazon S3 service object
 
-```
+```javascript
 s3.listBuckets.on('success', function(response) {
   console.log(response.data);
 }).send();
@@ -91,7 +91,7 @@ returns the response and then prints the following `data` property contents to t
 
 The `error` event is raised upon an error response received from the service object. Here is how you register a callback function for this event.
 
-```
+```javascript
 request.on('error', function(error, response) {
   // event handling code
 });
@@ -99,7 +99,7 @@ request.on('error', function(error, response) {
 
 When the `error` event is raised, the value of the response's `data` property is `null` and the `error` property contains the error data. The associated `error` object is passed as the first parameter to the registered callback function. For example, the following code:
 
-```
+```javascript
 s3.config.credentials.accessKeyId = 'invalid';
 s3.listBuckets().on('error', function(error, response) {
   console.log(error);
@@ -117,7 +117,7 @@ returns the error and then prints the following error data to the console.
 
 The `complete` event is raised when a service object call has finished, regardless of whether the call results in success or error. Here is how you register a callback function for this event.
 
-```
+```javascript
 request.on('complete', function(response) {
   // event handler code
 });
@@ -125,7 +125,7 @@ request.on('complete', function(response) {
 
 Use the `complete` event callback to handle any request cleanup that must execute regardless of success or error. If you use response data inside a callback for the `complete` event, first check the `response.data` or `response.error` properties before attempting to access either one, as shown in the following example.
 
-```
+```javascript
 request.on('complete', function(response) {
   if (response.error) {
     // an error occurred, handle it
@@ -153,7 +153,7 @@ You can register a callback function in response to any of these events. For a c
 
 The `httpHeaders` event is raised when headers are sent by the remote server. Here is how you register a callback function for this event.
 
-```
+```javascript
 request.on('httpHeaders', function(statusCode, headers, response) {
   // event handling code
 });
@@ -166,7 +166,7 @@ The `statusCode` parameter to the callback function is the HTTP status code. The
 
 The `httpData` event is raised to stream response data packets from the service. Here is how you register a callback function for this event.
 
-```
+```javascript
 request.on('httpData', function(chunk, response) {
   // event handling code
 });
@@ -181,7 +181,7 @@ If you register a callback for the `httpData` event, the `data` property of the 
 
 The `httpUploadProgress` event is raised when the HTTP request has uploaded more data. Similarly, the `httpDownloadProgress` event is raised when the HTTP request has downloaded more data. Here is how you register a callback function for these events.
 
-```
+```javascript
 request.on('httpUploadProgress', function(progress, response) {
   // event handling code
 })
@@ -197,7 +197,7 @@ The `progress` parameter to the callback function contains an object with the lo
 
 The `httpError` event is raised when the HTTP request fails. Here is how you register a callback function for this event.
 
-```
+```javascript
 request.on('httpError', function(error, response) {
   // event handling code
 });
@@ -210,7 +210,7 @@ The `error` parameter to the callback function contains the error that was throw
 
 The `httpDone` event is raised when the server finishes sending data. Here is how you register a callback function for this event.
 
-```
+```javascript
 request.on('httpDone', function(response) {
   // event handling code
 });

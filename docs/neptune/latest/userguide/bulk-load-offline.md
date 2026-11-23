@@ -60,7 +60,7 @@ Use the same `/loader` endpoint as the standard bulk loader. Add `"loadType": "o
 
 The following example shows a request:
 
-```
+```json
 POST https://{{your-neptune-endpoint}}:{{port}}/loader
 Content-Type: application/json
 
@@ -86,7 +86,7 @@ The following standard loader parameters are *not* supported by the offline load
 
 The following example shows the response:
 
-```
+```json
 {
   "status": "200 OK",
   "payload": {
@@ -100,7 +100,7 @@ The following example shows the response:
 
 Use the same `GET /loader/{{loadId}}` endpoint as the standard bulk loader. While the load is in progress, the response includes an additional `progress` object that reports the current phase.
 
-```
+```json
 {
   "payload": {
     "overallStatus": {

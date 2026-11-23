@@ -32,7 +32,7 @@ When you register with the AWS Glue Data Catalog, the Amazon Redshift IAM Identi
 **To create the IAM Identity Center application with Lake Formation integration using the AWS CLI**
 + Add the `LakeFormation` integration when creating your Lakehouse IAM Identity Center application. Replace the placeholder values, such as {{your\_idc\_instance\_arn}} and {{idc\_carrier\_role\_arn}}, with your own values:
 
-  ```
+  ```bash
   aws redshift create-redshift-idc-application \
   --idc-instance-arn {{your_idc_instance_arn}} \
   --idc-display-name '{{name_of_idc_application_display_on_idc_console}}' \
@@ -64,7 +64,7 @@ When you register with the AWS Glue Data Catalog, the Amazon Redshift IAM Identi
 **To modify the IAM Identity Center application to enable Lake Formation integration using the AWS CLI**
 + Use the `modify-redshift-idc-application` command to enable both `LakeFormation:query` authorization and `Redshift:Connect` authorization. These integrations are essential for cross-service and cross-cluster IAM Identity Center identity propagation:
 
-  ```
+  ```bash
   aws redshift modify-redshift-idc-application \
   --redshift-idc-application-arn '{{arn_of_the_target_redshift_idc_application}}' \
   --service-integrations '[
@@ -95,7 +95,7 @@ Your Lake Formation service requires a dedicated IAM Identity Center application
 **To create the configuration using the AWS CLI**
 + Use the `create-lake-formation-identity-center-configuration` command to enable `Redshift:Connect` authorization. These integrations are essential for Lake Formation to propagate IAM Identity Center identity to Redshift clusters and Redshift Serverless namespaces:
 
-  ```
+  ```bash
   aws lakeformation  create-lake-formation-identity-center-configuration \
   --instance-arn {{your_idc_instance_arn}} \
   --service-integrations '[{
@@ -123,7 +123,7 @@ If you had configured Lake Formation IAM Identity Center application that doesn'
 **To update the configuration using the AWS CLI**
 + Use the `update-lake-formation-identity-center-configuration` command to enable `Redshift:Connect` authorization. These integrations are essential for cross-service and cross-cluster IAM Identity Center identity propagation:
 
-  ```
+  ```bash
   aws lakeformation update-lake-formation-identity-center-configuration \
   --service-integrations '[{
     "Redshift": [{
@@ -151,7 +151,7 @@ You need Lake Formation `CREATE_CATALOG` permissions to enable AWS Glue Data Cat
 
 1. If the account belongs to an existing Lake Formation customer, the Lake Formation administrator must explicitly grant `CREATE_CATALOG` permission to each cluster creator. Use the following sample CLI command. Replace {{my-principal-arn}} with the ARN of the principal to grant the permission to:
 
-   ```
+   ```bash
    aws lakeformation grant-permissions \
        --cli-input-json \
        '{
@@ -169,7 +169,7 @@ You need Lake Formation `CREATE_CATALOG` permissions to enable AWS Glue Data Cat
 
 1. If the account has never used Lake Formation, verify that **Catalog Creators** is set to `IAMAllowedPrincipals` on the **Administrative Roles and Tasks** page of the Lake Formation console. If not configured, set up a data lake administrator by following the [ Create a data lake administrator](https://docs.aws.amazon.com/lake-formation/latest/dg/initial-lf-config.html#create-data-lake-admin). Alternatively, you can create a data lake administrator with the minimum required policies if you only use AWS Glue Data Catalog with Amazon Redshift federated permissions:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

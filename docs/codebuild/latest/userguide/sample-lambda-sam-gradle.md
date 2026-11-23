@@ -68,7 +68,7 @@ Create an AWS CodeBuild Lambda Java project and set up the IAM permissions neede
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -103,7 +103,7 @@ In order to build, test, and deploy your Lambda function, CodeBuild reads and ex
 
 1. Delete the pre-filled build commands and paste in the following buildspec.
 
-   ```
+   ```yaml
    version: 0.2
    env:
      variables:

@@ -117,7 +117,7 @@ The following examples are common CLI commands for Amazon Pinpoint.
   + Replace {{UserId}} with the ID of the user.
 + Campaign Creation With [Amazon Pinpoint message templates](messages-templates.md) [create-campaign](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/create-campaign.html) CLI
 
-  ```
+  ```JSON
   aws pinpoint create-campaign —application-id {{AppId}} —write-campaign-request file://campaignclirequest.json
 
   file://campaignclirequest.json

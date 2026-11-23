@@ -14,6 +14,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Diagram showing static stability of EC2 instances across Availability Zones](https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/static-stability.png)
 
+*Figure 14: Static stability of EC2 instances across Availability Zones*
+
  After traffic has shifted, use AWS Auto Scaling to asynchronously replace instances from the failed zone and launch them in the healthy zones.
 
  Another example of bimodal behavior would be a network timeout that could cause a system to attempt to refresh the configuration state of the entire system. This would add unexpected load to another component, and might cause it to fail, resulting in other unexpected consequences. This negative feedback loop impacts availability of your workload. Instead, you should build systems that are statically stable and operate in only one mode. A statically stable design would be to do constant work, and always refresh the configuration state on a fixed cadence. When a call fails, the workload uses the previously cached value, and initiates an alarm.

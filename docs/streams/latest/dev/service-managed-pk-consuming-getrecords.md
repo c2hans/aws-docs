@@ -12,7 +12,7 @@ When reading records from a service-managed stream using the [GetRecords](https:
 
 **Example GetRecords response for a service-managed stream**
 
-```
+```json
 {
     "Records": [
         {

@@ -45,7 +45,7 @@ python generate_presigned_url.py
 
 The following shows the contents of the `generate_presigned_url.py` script.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 

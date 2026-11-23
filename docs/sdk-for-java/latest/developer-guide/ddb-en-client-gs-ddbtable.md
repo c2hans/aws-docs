@@ -15,7 +15,7 @@ This example creates a DynamoDB table with the name `Customer`—identical to th
 
 The Java lambda parameter, `builder`, passed to the `createTable` method lets you [customize the table](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/CreateTableEnhancedRequest.Builder.html). In this example, [provisioned throughput](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadWriteCapacityMode.html#HowItWorks.ProvisionedThroughput.Manual) is configured. If you want to use default settings when you create a table, skip the builder as shown in the following snippet.
 
-```
+```java
 customerTable.createTable();
 ```
 
@@ -26,7 +26,7 @@ The example also uses a `[DynamoDbWaiter](https://sdk.amazonaws.com/java/api/lat
 ### Imports
 <a name="ddb-en-client-gs-ddbtable-imports"></a>
 
-```
+```java
 import com.example.dynamodb.Customer;
 import software.amazon.awssdk.core.internal.waiters.ResponseOrException;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
@@ -40,7 +40,7 @@ import software.amazon.awssdk.services.dynamodb.waiters.DynamoDbWaiter;
 ### Code
 <a name="ddb-en-client-gs-ddbtable-code"></a>
 
-```
+```java
  public static void createCustomerTable(DynamoDbTable<Customer> customerTable, DynamoDbClient standardClient) {
      // Create the DynamoDB table using the 'customerTable' DynamoDbTable instance.
      customerTable.createTable(builder -> builder

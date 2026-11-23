@@ -35,7 +35,7 @@ For more information, see the [CloudTrail userIdentity element](https://docs.aws
 
 The following example shows a CloudTrail log entry with actions for the ListDatasetGroups API operation. Note that because the ListDatasetGroups API operation is an action that doesn't change state, the `responseElements` response is null. For more information about the body of CloudTrail records, see [CloudTrail record contents](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-record-contents.html).
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

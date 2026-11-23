@@ -9,7 +9,7 @@ Creates a new callback contact. If no customer number is specified, and this is 
 ## Parameter object
 <a name="createcallbackcontact-parameter"></a>
 
-```
+```json
 {
     "QueueId": [Optional] A queue ID or queue ARN. The callback contact is routed with this queue, or if this is not specified, the contact's current TargetQueue. Must be specified fully statically or with a single valid JSONPath identifier.
     "AgentId": [Optional] An agent ID or agent ARN, representing an agent queue. If QueueId is specified, this may not be specified. This must be either defined fully statically or as a single valid JSONPath identifier.

@@ -45,7 +45,7 @@ CloudTrail delivers events as log files that contain one or more log entries. An
 
 The following example CloudTrail log entry demonstrates the `CreateEnvironment` operation, which creates a new FinSpace environment.
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -85,7 +85,7 @@ The following example CloudTrail log entry demonstrates the `CreateEnvironment` 
 
 The following example CloudTrail log entry demonstrates the `GetEnvironment` operation, which describes a FinSpace environment.
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -120,7 +120,7 @@ The following example CloudTrail log entry demonstrates the `CreateUser` operati
 
 In this example, the value of the `principalId` element is the FinSpace user ID of the user who accesses the web application.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -163,7 +163,7 @@ The following example CloudTrail log entry demonstrates the `CreateDataset` even
 
 In this example, the value of the `principalId` element is the FinSpace user ID of the user who accesses the web application.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -233,7 +233,7 @@ The following example CloudTrail data event log entry demonstrates the event gen
 
 The `principalId` element contains details about the FinSpace user ID that accesses a given FinSpace dataset ID. In this example, the user ID is the string ***jmiupn9hiyavwdw6pwdyva*** with the prefix ***u\_*** and the dataset ID is the string ***64hzb00*** with the prefix ***ds\_***.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

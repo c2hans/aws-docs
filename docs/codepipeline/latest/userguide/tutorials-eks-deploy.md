@@ -148,7 +148,7 @@ Update your CodePipeline service role with the following steps.
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
 
@@ -186,7 +186,7 @@ Update your CodePipeline service role with the following steps.
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
 

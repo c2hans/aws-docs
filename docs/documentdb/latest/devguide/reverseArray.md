@@ -59,7 +59,7 @@ To view a code example for using the `$reverseArray` command, choose the tab for
 
 Here's an example of using the `$reverseArray` operator in a Node.js application:
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function reverseArray() {
@@ -90,7 +90,7 @@ reverseArray();
 
 Here's an example of using the `$reverseArray` operator in a Python application:
 
-```
+```python
 from pymongo import MongoClient
 
 def reverse_array():

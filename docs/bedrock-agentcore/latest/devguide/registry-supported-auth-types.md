@@ -38,7 +38,7 @@ IAM-based authorization uses the caller’s AWS IAM credentials (SigV4 signing) 
 
 **Example**
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [{
@@ -54,7 +54,7 @@ IAM-based authorization uses the caller’s AWS IAM credentials (SigV4 signing) 
 }
 ```
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [{

@@ -212,7 +212,7 @@ ERROR:  relation "holidays" does not exist
 
 The following is an example of a recursive CTE that returns the employees who report directly or indirectly to John. The recursive query contains a WHERE clause to limit the depth of recursion to less than 4 levels.
 
-```
+```sql
 --create and populate the sample table
   create table employee (
   id int,

@@ -61,7 +61,7 @@ If you configured your SageMaker AI environment by [creating a bucket](https://d
 Otherwise, you must grant AWS IoT Greengrass `read` permission to the bucket where your training job is stored. To do this, embed the following inline policy in the service role. You can list multiple bucket ARNs.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -94,7 +94,7 @@ To enable AWS IoT Greengrass to access models that are stored in Amazon S3 bucke
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

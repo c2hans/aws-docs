@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 
 When a remediation is initiated
 
-```
+```YAML
 {
  "severity": "INFO",
  "message": "00000000-0000-0000-0000-000000000000: Remediation queued for SC control RDS.13 in account 111111111111",
@@ -26,7 +26,7 @@ When a remediation is initiated
 
 When a remediation succeeds
 
-```
+```YAML
 {
  "severity": "INFO",
  "message": "00000000-0000-0000-0000-000000000000: Remediation succeeded for SC control RDS.13 in account 111111111111: See Automation Execution output for details (AwsRdsDbInstance arn:aws:rds:us-east-1:111111111111:db:database-1)",
@@ -46,7 +46,7 @@ When a remediation succeeds
 
 When a remediation fails
 
-```
+```YAML
 {
  "severity": "ERROR",
  "message": "00000000-0000-0000-0000-000000000000: Remediation failed for SC control RDS.13 in account 111111111111: See Automation Execution output for details (AwsRdsDbInstance arn:aws:rds:us-east-1:111111111111:db:database-1)",

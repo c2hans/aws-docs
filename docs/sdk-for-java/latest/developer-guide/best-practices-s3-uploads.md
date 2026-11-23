@@ -34,7 +34,7 @@ As you can see from the signature of the methods shown previously, most methods 
 
 If you know the content length in bytes, provide the exact value:
 
-```
+```java
 // Always provide the exact content length when it's available.
 long contentLength = 1024; // Exact size in bytes.
 s3Client.putObject(req -> req
@@ -72,7 +72,7 @@ Because the SDK buffers the entire stream in memory to calculate the content len
 ##### Upload a stream using the synchronous client API and multipart API
 <a name="sync-multipart-upload-stream"></a>
 
-```
+```java
 public static void uploadStreamToS3(String bucketName, String key, InputStream inputStream) {
     // Create S3 client
     S3Client s3Client = S3Client.create();

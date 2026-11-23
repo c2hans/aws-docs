@@ -11,7 +11,8 @@ Amazon S3 Vectors has certain limitations and restrictions that you should be aw
 + Dimension value per vector: 1 to 4,096
 + Total metadata per vector: Up to 100 KB on `ENHANCED` indexes, 40 KB on `CLASSIC` indexes
 + Total metadata keys per vector: Up to 50
-+ Filterable metadata per vector: Up to 2 KB
++ Filterable metadata per vector: Up to 40 KB on `ENHANCED` indexes, 2 KB on `CLASSIC` indexes
++ Filterable metadata string value: Up to 2 KB per value, including each element of a string list
 + Non-filterable metadata keys per vector index: Up to 10
 + Maximum size of a single non-filterable metadata field: Up to 100 KB on `ENHANCED` indexes, 40 KB on `CLASSIC` indexes
 + Full-text searchable metadata keys per index: Up to 10

@@ -37,7 +37,7 @@ Response:
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 import pprint
@@ -86,7 +86,7 @@ print("Program ends.")
 ------
 #### [ Java ]
 
-```
+```java
 import java.util.concurrent.TimeUnit;
 
 import software.amazon.awssdk.services.kendraranking.KendraRankingClient;
@@ -155,7 +155,7 @@ aws kendra-ranking update-rescore-execution-plan \
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 import pprint
@@ -199,7 +199,7 @@ print("Program ends.")
 ------
 #### [ Java ]
 
-```
+```java
 import java.util.concurrent.TimeUnit;
 
 import software.amazon.awssdk.services.kendraranking.KendraRankingClient;
@@ -268,7 +268,7 @@ aws kendra-ranking rescore \
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 import pprint
@@ -306,7 +306,7 @@ print("Program ends.")
 ------
 #### [ Java ]
 
-```
+```java
 import java.util.ArrayList;
 import java.util.List;
 

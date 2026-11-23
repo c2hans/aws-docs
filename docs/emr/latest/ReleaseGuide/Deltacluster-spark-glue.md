@@ -10,7 +10,7 @@ To use the AWS Glue Catalog as the Metastore for Delta Lake tables, create a clu
 
 1. Create a file, `configurations.json`, with the following content:
 
-   ```
+   ```json
    [{"Classification":"delta-defaults",
    "Properties":{"delta.enabled":"true"}},
    {"Classification":"spark-hive-site",
@@ -19,7 +19,7 @@ To use the AWS Glue Catalog as the Metastore for Delta Lake tables, create a clu
 
 1. Create a cluster with the following configuration, replacing the **example Amazon S3 bucket path** and the **subnet ID** with your own.
 
-   ```
+   ```bash,sh,zsh
    aws emr create-cluster
        --release-label  emr-6.9.0
        --applications Name=Spark

@@ -11,7 +11,7 @@ You can configure HTTP proxies by using code, by setting Java system properties,
 
 You configure proxies in code with a client-specific `ProxyConfiguration` builder when you build the service client. The following code shows an example proxy configuration for an Apache-based HTTP client that is used by an Amazon S3 service client.
 
-```
+```java
 SdkHttpClient httpClient1 = ApacheHttpClient.builder()
     .proxyConfiguration(ProxyConfiguration.builder()
         .endpoint(URI.create("http://proxy.example.com"))
@@ -91,7 +91,7 @@ You can use a combination of HTTP proxy settings in code, system properties, and
 
 **Example – configuration provided by a system property and by code**
 
-```
+```java
 // Command line with the proxy password set as a system property.
 $ java -Dhttp.proxyPassword=SYS_PROP_password -cp ... App
 
@@ -137,7 +137,7 @@ NO_PROXY="environmentnonproxy.host,environmentnonproxy2.host:1234"
 ```
 The service client is created with one of the following statements. None of the statements explicitly set a proxy setting.
 
-```
+```java
 DynamoDbClient client = DynamoDbClient.create();
 DynamoDbClient client = DynamoDbClient.builder().build();
 DynamoDbClient client = DynamoDbClient.builder()
@@ -159,7 +159,7 @@ Non ProxyHost = null
 Because the service client has default proxy settings, the SDK searches for system properties and then environment variables. Since system properties settings take precedence over environment variables, the SDK uses only system properties.
 If the use of system properties is changed to `false` as shown in the following code, the SDK resolves only the environment variables.
 
-```
+```java
 DynamoDbClient client = DynamoDbClient.builder()
     .httpClient(ApacheHttpClient.builder()
         .proxyConfiguration(ProxyConfiguration.builder()

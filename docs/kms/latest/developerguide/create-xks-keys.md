@@ -231,7 +231,7 @@ This example command uses the [CreateKey](https://docs.aws.amazon.com/kms/latest
 
 Before running this command, replace the example custom key store ID with a valid ID.
 
-```
+```bash
 $ aws kms create-key --origin EXTERNAL_KEY_STORE --custom-key-store-id {{cks-1234567890abcdef0}} --xks-key-id {{bb8562717f809024}}
 {
   "KeyMetadata": {

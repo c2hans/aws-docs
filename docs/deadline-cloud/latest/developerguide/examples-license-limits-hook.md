@@ -15,7 +15,7 @@ The Deadline Cloud Limits feature throttles task scheduling so that no more than
 
 1. Create a Limit on your farm with the AWS CLI:
 
-   ```
+   ```bash
    aws deadline create-limit \
        --farm-id {{farm-id}} \
        --display-name "VRay License" \
@@ -29,7 +29,7 @@ The Deadline Cloud Limits feature throttles task scheduling so that no more than
 
 1. On each artist workstation, enable environment hooks:
 
-   ```
+   ```bash
    deadline config set settings.allow_environment_hooks true
    ```
 

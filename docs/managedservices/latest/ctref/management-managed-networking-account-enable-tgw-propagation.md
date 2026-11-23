@@ -76,7 +76,7 @@ You can use any `CreateRfc` parameters with any RFC whether or not they are part
 
 Issue the create RFC command with execution parameters provided inline (escape quotes when providing execution parameters inline), and then submit the returned RFC ID. For example, you can replace the contents with something like this:
 
-```
+```json
 aws amscm create-rfc --change-type-id "ct-1f9hi4bephqa9" --change-type-version "1.0" --title "{{Enable Transit Gateway Propagation}}" --execution-parameters "{\"DocumentName\": \"AWSManagedServices-EnableTGWRouteTablePropagation\",\"Region\": \"{{us-east-1}}\",\"Parameters\": {\"TransitGatewayAttachmentId\": [\"{{tgw-attach-01234567890abcdef}}\"],\"TransitGatewayRouteTableId\": [\"{{tgw-rtb-01234567890abcdef}}\"]}}"
 ```
 
@@ -84,13 +84,13 @@ aws amscm create-rfc --change-type-id "ct-1f9hi4bephqa9" --change-type-version "
 
 1. Output the execution parameters JSON schema for this change type to a file; this example names it TgwPropagationEnableParams.json:
 
-   ```
+   ```json
    aws amscm get-change-type-version --change-type-id "ct-1f9hi4bephqa9" --query "ChangeTypeVersion.ExecutionInputSchema" --output text > TgwPropagationEnableParams.json
    ```
 
 1. Modify and save the TgwPropagationEnableParams file. For example, you can replace the contents with something like this:
 
-   ```
+   ```json
    {
      "DocumentName": "AWSManagedServices-EnableTGWRouteTablePropagation",
      "Region": "{{us-east-1}}",
@@ -103,13 +103,13 @@ aws amscm create-rfc --change-type-id "ct-1f9hi4bephqa9" --change-type-version "
 
 1. Output the RFC template JSON file to a file; this example names it TgwPropagationEnableRfc.json:
 
-   ```
+   ```json
    aws amscm create-rfc --generate-cli-skeleton > TgwPropagationEnableRfc.json
    ```
 
 1. Modify and save the TgwPropagationEnableRfc.json file. For example, you can replace the contents with something like this:
 
-   ```
+   ```json
    {
      "ChangeTypeVersion": "1.0",
      "ChangeTypeId": "ct-1f9hi4bephqa9",
@@ -141,7 +141,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-networking-account-enable-tgw-propagation-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-EnableTGWRouteTablePropagation",
   "Region": "us-east-1",
@@ -155,7 +155,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-managed-networking-account-enable-tgw-propagation-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-EnableTGWRouteTablePropagation",
   "Region": "us-east-1",

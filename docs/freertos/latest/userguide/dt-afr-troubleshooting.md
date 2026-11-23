@@ -25,7 +25,7 @@ We recommend the following workflow for troubleshooting:
    + Device tooling. Make sure that the toolchains for building and flashing the device are installed and configured correctly.
    + For FRQ 1.x.x make sure that a clean, cloned version of the FreeRTOS source code is available. FreeRTOS releases are tagged according to the FreeRTOS version. To clone a specific version of the code, use the following commands:
 
-     ```
+     ```bash
      git clone --branch {{version-number}} https://github.com/aws/amazon-freertos.git
      cd amazon-freertos
      git submodule update --checkout --init --recursive
@@ -71,7 +71,7 @@ Occasionally, a typo in a JSON configuration can lead to parsing errors. Most of
 
  In the above mentioned case, strange test case failure reasons like strings originating from unrelated device outputs are output. The IDT for FreeRTOS test case log file (which includes all the serial output IDT for FreeRTOS has received during the test) may show the following:
 
-```
+```JSON
 <unrelated device output>
 TEST(Full_PKCS11_Capabilities, PKCS11_Capabilities)<unrelated device output>
 <unrelated device output>
@@ -86,7 +86,7 @@ Check the following to ensure optimal testing.
 
  An IDT for FreeRTOS test case log would ideally show an uninterrupted test results output like below:
 
-```
+```json
 ---------STARTING TESTS---------
 TEST(Full_OTA_PAL, otaPal_CloseFile_ValidSignature) PASS
 TEST(Full_OTA_PAL, otaPal_CloseFile_InvalidSignatureBlockWritten) PASS
@@ -103,7 +103,7 @@ When you run the FreeRTOSIntegrity test group and you encounter failures, first 
 
 If you cloned the correct tagged branch of the `freertos` repo and still have issues, make sure you have also run the `submodule update` command. The clone workflow for the `freertos` repo is as follows.
 
-```
+```bash
 git clone --branch version-number https://github.com/aws/amazon-freertos.git
 cd amazon-freertos
 git submodule update --checkout —init —recursive
@@ -281,11 +281,11 @@ If you see timeout errors while running a test suite, increase the timeout by sp
 
 **Example**
 
-```
+```bash
 ./devicetester_linux run-suite --suite-id FRQ_1.0.1 --pool-id DevicePool1 --timeout-multiplier 2.5
 ```
 
-```
+```bash
 ./devicetester_linux run-suite --suite-id FRQ_1 --pool-id DevicePool1 --timeout-multiplier 2.5
 ```
 

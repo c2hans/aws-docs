@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="createresourcedefinitionversion-post-cli"></a>
 
-```
+```bash
 aws greengrass create-resource-definition-version \
   --resource-definition-id <value> \
   [--resources <value>] \
@@ -26,7 +26,7 @@ aws greengrass create-resource-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "ResourceDefinitionId": "string",
 "Resources": [
@@ -91,7 +91,7 @@ type: string
 Information about the resource definition version.
 where used: body; required: true
 
-```
+```json
 {
 "Resources": [
   {
@@ -258,7 +258,7 @@ type: string
 
  [ VersionInformation](definitions-versioninformation.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -286,7 +286,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

@@ -55,7 +55,7 @@ The role you create will require the following permissions to access the files r
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -51,7 +51,7 @@ Use the following AWS CLI commands or API operations to enable trusted service a
 
   Run the following command to enable AWS Resilience Hub as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations enable-aws-service-access \
       --service-principal resiliencehub.amazonaws.com
   ```
@@ -81,7 +81,7 @@ Use the following AWS CLI commands or API operations to disable trusted service 
 
   Run the following command to disable AWS Resilience Hub as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations disable-aws-service-access \
       --service-principal resiliencehub.amazonaws.com
   ```
@@ -109,7 +109,7 @@ For instructions on enabling a delegated administrator account for Resilience Hu
 To configure a delegated administrator account using the AWS CLI or one of the AWS SDKs, use the following commands:
 + AWS CLI:
 
-  ```
+  ```bash
   $ aws organizations register-delegated-administrator \
       --account-id 123456789012 \
       --service-principal resiliencehub.amazonaws.com
@@ -129,7 +129,7 @@ Only an administrator in the Organizations management account can remove a deleg
 To remove a delegated administrator account using the AWS CLI or one of the AWS SDKs, use the following commands:
 + AWS CLI:
 
-  ```
+  ```bash
   $ aws organizations deregister-delegated-administrator \
       --account-id 123456789012 \
       --service-principal resiliencehub.amazonaws.com

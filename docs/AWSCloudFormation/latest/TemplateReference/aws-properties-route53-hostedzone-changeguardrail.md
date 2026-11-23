@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::Route53::HostedZone ChangeGuardrail
 
-<a name="aws-properties-route53-hostedzone-changeguardrail-description"></a>The `ChangeGuardrail` property type specifies Property description not available. for an [AWS::Route53::HostedZone](aws-resource-route53-hostedzone.md).
+A Change Guardrail setting for a hosted zone. When a guardrail is enabled, Route 53 blocks the corresponding change.
 
 ## Syntax
 <a name="aws-properties-route53-hostedzone-changeguardrail-syntax"></a>
@@ -35,14 +35,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-route53-hostedzone-changeguardrail-properties"></a>
 
 `Name`  <a name="cfn-route53-hostedzone-changeguardrail-name"></a>
-Property description not available.
+The name of the Change Guardrail. Valid values are `NS_OCCLUSION_CHECK`, `ALIAS_TARGET_CHECK`, `ACTIVE_RECORD_CHECK`, and `ACTIVE_DELEGATION_CHECK`. `NS_OCCLUSION_CHECK` is available on both the standard and advanced tiers; the other values are available only on the advanced tier.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `NS_OCCLUSION_CHECK | ALIAS_TARGET_CHECK | ACTIVE_RECORD_CHECK | ACTIVE_DELEGATION_CHECK`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Status`  <a name="cfn-route53-hostedzone-changeguardrail-status"></a>
-Property description not available.
+The status of the Change Guardrail. `ENABLED` makes Route 53 block the corresponding change; `DISABLED` turns the guardrail off.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `ENABLED | DISABLED`

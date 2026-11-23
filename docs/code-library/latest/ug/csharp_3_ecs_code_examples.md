@@ -29,7 +29,7 @@ The following code example shows how to use `ListClusters`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/ECS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List cluster ARNs available.
     /// </summary>
@@ -78,7 +78,7 @@ The following code example shows how to use `ListServices`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/ECS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List service ARNs available.
     /// </summary>
@@ -121,7 +121,7 @@ The following code example shows how to use `ListTasks`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/ECS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List task ARNs available.
     /// </summary>
@@ -172,7 +172,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/ECS#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 using Amazon.ECS;
 using ECSActions;
 using Microsoft.Extensions.Hosting;
@@ -309,7 +309,7 @@ public class ECSScenario
 ```
 Wrapper methods that are called by the scenario to manage Amazon ECS actions.
 
-```
+```csharp
 using Amazon.ECS;
 using Amazon.ECS.Model;
 using Microsoft.Extensions.Logging;

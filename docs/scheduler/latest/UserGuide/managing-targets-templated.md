@@ -39,7 +39,7 @@ EventBridge Scheduler does not support cross-Region delivery when using EventBri
 **Example Permission policy for execution role**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -56,7 +56,7 @@ EventBridge Scheduler does not support cross-Region delivery when using EventBri
 
 **Example AWS CLI**
 
-```
+```bash
 $ aws scheduler create-schedule --name sqs-templated --schedule-expression 'rate(5 minutes)' \
 --target '{"RoleArn": "{{ROLE_ARN}}", "Arn":"{{QUEUE_ARN}}", "Input": "Message for scheduleArn: '<aws.scheduler.schedule-arn>', scheduledTime: '<aws.scheduler.scheduled-time>'" }' \
 --flexible-time-window '{ "Mode": "OFF"}'
@@ -64,7 +64,7 @@ $ aws scheduler create-schedule --name sqs-templated --schedule-expression 'rate
 
 **Example Python SDK**
 
-```
+```python
 import boto3
 scheduler = boto3.client('scheduler')
 
@@ -85,7 +85,7 @@ scheduler.create_schedule(
 
 **Example Java SDK**
 
-```
+```java
 package com.example;
 
 import software.amazon.awssdk.regions.Region;
@@ -127,7 +127,7 @@ public class MySchedulerApp {
 **Example Permission policy for execution role**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -144,7 +144,7 @@ public class MySchedulerApp {
 
 **Example AWS CLI**
 
-```
+```bash
 $ aws scheduler create-schedule --name lambda-templated-schedule --schedule-expression 'rate(5 minutes)' \
 --target '{"RoleArn": "{{ROLE_ARN}}", "Arn":"{{FUNCTION_ARN}}", "Input": "{ \"Payload\": \"TEST_PAYLOAD\" }" }' \
 --flexible-time-window '{ "Mode": "OFF"}'
@@ -152,7 +152,7 @@ $ aws scheduler create-schedule --name lambda-templated-schedule --schedule-expr
 
 **Example Python SDK**
 
-```
+```python
 import boto3
 scheduler = boto3.client('scheduler')
 
@@ -173,7 +173,7 @@ scheduler.create_schedule(
 
 **Example Java SDK**
 
-```
+```java
 package com.example;
 
 import software.amazon.awssdk.regions.Region;
@@ -216,7 +216,7 @@ public class MySchedulerApp {
 **Example Permission policy for execution role**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -233,7 +233,7 @@ public class MySchedulerApp {
 
 **Example AWS CLI**
 
-```
+```bash
 $ aws scheduler create-schedule --name sfn-templated-schedule --schedule-expression 'rate(5 minutes)' \
 --target '{"RoleArn": "{{ROLE_ARN}}", "Arn":"{{STATE_MACHINE_ARN}}", "Input": "{ \"Payload\": \"TEST_PAYLOAD\" }" }' \
 --flexible-time-window '{ "Mode": "OFF"}'
@@ -241,7 +241,7 @@ $ aws scheduler create-schedule --name sfn-templated-schedule --schedule-express
 
 **Example Python SDK**
 
-```
+```python
 import boto3
 scheduler = boto3.client('scheduler')
 
@@ -261,7 +261,7 @@ scheduler.create_schedule(Name="sfn-python-templated",
 
 **Example Java SDK**
 
-```
+```java
 package com.example;
 
 import software.amazon.awssdk.regions.Region;

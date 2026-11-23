@@ -112,7 +112,7 @@ TypeScript was the first language supported for developing AWS CDK applications.
 **Example**
 TypeScript supports importing either an entire namespace, or individual objects from a namespace. Each namespace includes constructs and other classes for use with a given AWS service.
 
-```
+```javascript
 // Import main CDK library as cdk
 import * as cdk from 'aws-cdk-lib';   // ES6 import preferred in TS
 const cdk = require('aws-cdk-lib');   // Node.js require() preferred in JS
@@ -140,7 +140,7 @@ const bucket = Bucket(...);
 ```
 Like TypeScript, Python supports namespaced module imports and selective imports. Namespaces in Python look like **aws\_cdk.** *xxx*, where *xxx* represents an AWS service name, such as **s3** for Amazon S3. (Amazon S3 is used in these examples).
 
-```
+```python
 # Import main CDK library as cdk
 import aws_cdk as cdk
 
@@ -162,7 +162,7 @@ bucket = Bucket(...)
 Java’s imports work differently from TypeScript’s. Each import statement imports either a single class name from a given package, or all classes defined in that package (using `\*`). Classes may be accessed using either the class name by itself if it has been imported, or the *qualified* class name including its package.
 Libraries are named like `software.amazon.awscdk.services.xxx` for the AWS Construct Library (the main library is `software.amazon.awscdk`). The Maven group ID for AWS CDK packages is `software.amazon.awscdk`.
 
-```
+```java
 // Make certain core classes available
 import software.amazon.awscdk.Stack;
 import software.amazon.awscdk.App;
@@ -192,7 +192,7 @@ var bucket =
 In C\#, you import types with the `using` directive. There are two styles. One gives you access to all the types in the specified namespace by using their plain names. With the other, you can refer to the namespace itself by using an alias.
 Packages are named like `Amazon.CDK.AWS.xxx` for AWS Construct Library packages. (The core module is `Amazon.CDK`.)
 
-```
+```csharp
 // Make CDK base classes available under cdk
 using cdk = Amazon.CDK;
 
@@ -214,7 +214,7 @@ var bucket = new Amazon.CDK.AWS.S3.Bucket(...);
 ```
 Each AWS Construct Library module is provided as a Go package.
 
-```
+```go
 import (
     "github.com/aws/aws-cdk-go/awscdk/v2"           // CDK core package
     "github.com/aws/aws-cdk-go/awscdk/v2/awss3"     // AWS S3 construct library module
@@ -241,7 +241,7 @@ The third argument to an AWS CDK construct is `props`, an object containing attr
 
 **Example**
 
-```
+```javascript
 // Instantiate default Bucket
 const bucket = new s3.Bucket(this, 'amzn-s3-demo-bucket');
 
@@ -259,7 +259,7 @@ Python doesn’t use a `new` keyword when instantiating a class. The properties 
 If a props value is itself a bundle of attributes, it is represented by a class named after the property, which accepts keyword arguments for the subproperties.
 In Python, the current instance is passed to methods as the first argument, which is named `self` by convention.
 
-```
+```python
 # Instantiate default Bucket
 bucket = s3.Bucket(self, "amzn-s3-demo-bucket")
 
@@ -274,7 +274,7 @@ In Java, the props argument is represented by a class named `XxxxProps` (for exa
 Each `XxxxProps` class has a builder. There is also a convenient builder for each construct that builds the props and the construct in one step, as shown in the following example.
 Props are named the same as in TypeScript, using `camelCase`.
 
-```
+```java
 // Instantiate default Bucket
 Bucket bucket = Bucket(self, "amzn-s3-demo-bucket");
 
@@ -293,7 +293,7 @@ In C\#, props are specified using an object initializer to a class named `XxxxPr
 Props are named similarly to TypeScript, except using `PascalCase`.
 It is convenient to use the `var` keyword when instantiating a construct, so you don’t need to type the class name twice. However, your local code style guide may vary.
 
-```
+```csharp
 // Instantiate default Bucket
 var bucket = Bucket(self, "amzn-s3-demo-bucket");
 
@@ -311,7 +311,7 @@ var bucket = Bucket(self, "amzn-s3-demo-bucket", new BucketProps {
 To create a construct in Go, call the function `NewXxxxxx` where `Xxxxxxx` is the name of the construct. The constructs' properties are defined as a struct.
 In Go, all construct parameters are pointers, including values like numbers, Booleans, and strings. Use the convenience functions like `jsii.String` to create these pointers.
 
-```
+```go
 	// Instantiate default Bucket
 	bucket := awss3.NewBucket(stack, jsii.String("amzn-s3-demo-bucket"), nil)
 
@@ -336,27 +336,27 @@ It is common to refer to attributes or properties of constructs and other AWS CD
 **Example**
 Names are `camelCase`.
 
-```
+```javascript
 bucket.bucketArn
 ```
 Names are `snake_case`.
 
-```
+```python
 bucket.bucket_arn
 ```
 A getter method is provided for each property; these names are `camelCase`.
 
-```
+```java
 bucket.getBucketArn()
 ```
 Names are `PascalCase`.
 
-```
+```javascript
 bucket.BucketArn
 ```
 Names are `PascalCase`.
 
-```
+```javascript
 bucket.BucketArn
 ```
 
@@ -365,13 +365,13 @@ bucket.BucketArn
 
 Enum constants are scoped to a class, and have uppercase names with underscores in all languages (sometimes referred to as `SCREAMING_SNAKE_CASE`). Since class names also use the same casing in all supported languages except Go, qualified enum names are also the same in these languages.
 
-```
+```javascript
 s3.BucketEncryption.KMS_MANAGED
 ```
 
 In Go, enum constants are attributes of the module namespace and are written as follows.
 
-```
+```javascript
 awss3.BucketEncryption_KMS_MANAGED
 ```
 
@@ -383,7 +383,7 @@ The AWS CDK uses TypeScript object interfaces to indicate that a class implement
 **Example**
 JavaScript doesn’t have an interface feature. You can ignore the `implements` keyword and the class names following it.
 
-```
+```javascript
 import { IAspect, IConstruct } from 'aws-cdk-lib';
 
 class MyAspect implements IAspect {
@@ -394,7 +394,7 @@ class MyAspect implements IAspect {
 ```
 Python doesn’t have an interface feature. However, for the AWS CDK you can indicate interface implementation by decorating your class with `@jsii.implements(interface)`.
 
-```
+```python
 from aws_cdk import IAspect, IConstruct
 import jsii
 
@@ -404,7 +404,7 @@ class MyAspect():
     print("Visited", node.node.path)
 ```
 
-```
+```java
 import software.amazon.awscdk.IAspect;
 import software.amazon.awscdk.IConstruct;
 
@@ -415,7 +415,7 @@ public class MyAspect implements IAspect {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 
 public class MyAspect : IAspect
@@ -428,7 +428,7 @@ public class MyAspect : IAspect
 ```
 Go structs do not need to explicitly declare which interfaces they implement. The Go compiler determines implementation based on the methods and properties available on the structure. For example, in the following code, `MyAspect` implements the `IAspect` interface because it provides a `Visit` method that takes a construct.
 
-```
+```go
 type MyAspect struct {
 }
 

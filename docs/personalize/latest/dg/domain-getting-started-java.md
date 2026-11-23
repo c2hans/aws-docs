@@ -27,7 +27,7 @@ After you complete the prerequisites, add Amazon Personalize dependencies to you
 
 1.  Add the following dependencies to your pom.xml file. The latest version numbers may be different than the example code.
 
-   ```
+   ```xml
    <dependency>
    	<groupId>software.amazon.awssdk</groupId>
    	<artifactId>personalize</artifactId>
@@ -47,7 +47,7 @@ After you complete the prerequisites, add Amazon Personalize dependencies to you
 
 1.  Add the following import statements to your project.
 
-   ```
+   ```java
    // import client packages
    import software.amazon.awssdk.services.personalize.PersonalizeClient;
    import software.amazon.awssdk.services.personalizeruntime.PersonalizeRuntimeClient;
@@ -82,7 +82,7 @@ After you complete the prerequisites, add Amazon Personalize dependencies to you
 
 After you add Amazon Personalize dependencies to your pom.xml file and import the required packages, create the following Amazon Personalize clients:
 
-```
+```java
 PersonalizeClient personalizeClient = PersonalizeClient.builder()
   .region({{region}})
   .build();
@@ -99,7 +99,7 @@ After you initialize your Amazon Personalize clients, import the historical data
 
 1.  Save the following Avro schema as a JSON file in your working directory. This schema matches the columns in the CSV file that you created when you completed the [Creating the training data (Domain dataset group)](gs-prerequisites.md#gs-data-prep-domain).
 
-   ```
+   ```json
    {
      "type": "record",
      "name": "Interactions",
@@ -128,7 +128,7 @@ After you initialize your Amazon Personalize clients, import the historical data
 
 1. Use the following `createDomainSchema` method to create a domain schema in Amazon Personalize. Pass the following as parameters: an Amazon Personalize service client, the name for your schema, `VIDEO_ON_DEMAND` for the domain, and the file path for the schema JSON file that you created in the previous step. The method returns the Amazon Resource Name (ARN) of your new schema. Store it for later use.
 
-   ```
+   ```java
        public static String createDomainSchema(PersonalizeClient personalizeClient, String schemaName, String domain,
                String filePath) {
 
@@ -162,7 +162,7 @@ After you initialize your Amazon Personalize clients, import the historical data
 
 1. Create a dataset group. Use the following `createDomainDatasetGroup` method to create a domain dataset group. Pass the following as parameters: an Amazon Personalize service client, a name for the dataset group, and pass `VIDEO_ON_DEMAND` for the domain. The method returns the ARN of your new dataset group. Store it for later use.
 
-   ```
+   ```java
        public static String createDomainDatasetGroup(PersonalizeClient personalizeClient,
                String datasetGroupName,
                String domain) {
@@ -182,7 +182,7 @@ After you initialize your Amazon Personalize clients, import the historical data
 
 1. Create an Item interactions dataset. Use the following `createDataset` method to create an Item interactions dataset. Pass the following as parameters: an Amazon Personalize service client, the name for your dataset, your schema's ARN, your dataset group's ARN, and `Interactions` for the dataset type. The method returns the ARN of your new dataset. Store it for later use.
 
-   ```
+   ```java
        public static String createDataset(PersonalizeClient personalizeClient,
                String datasetName,
                String datasetGroupArn,
@@ -213,7 +213,7 @@ After you initialize your Amazon Personalize clients, import the historical data
 
    Pass the following as parameters: an Amazon Personalize service client, a name for the job, and your Interactions dataset's ARN. Pass the Amazon S3 bucket path (`s3://{{bucket name}}/{{folder name}}/ratings.csv`) where you stored the training data, and your service role's ARN. You created this role as part of the [Getting started prerequisites](gs-prerequisites.md). The method returns the ARN of your dataset import job. Optionally store it for later use.
 
-   ```
+   ```java
        public static String createPersonalizeDatasetImportJob(PersonalizeClient personalizeClient,
                String jobName,
                String datasetArn,
@@ -276,7 +276,7 @@ After you initialize your Amazon Personalize clients, import the historical data
 
 After your dataset import job completes, you are ready create a recommender. Use the following `createRecommender` method to create a recommender. Pass the following as parameters: an Amazon Personalize service client, a name for the recommender, your dataset group's Amazon Resource Name (ARN), and `arn:aws:personalize:::recipe/aws-vod-top-picks` for the recipe ARN. The method returns the ARN of your new recommender. Store it for later use.
 
-```
+```java
     public static String createRecommender(PersonalizeClient personalizeClient,
             String name,
             String datasetGroupArn,
@@ -334,7 +334,7 @@ After your dataset import job completes, you are ready create a recommender. Use
 
 After you create a recommender, you use it to get recommendations. Use the following `getRecs` method to get recommendations for a user. Pass as parameters an Amazon Personalize runtime client, the Amazon Resource Name (ARN) of the recommender you created in the previous step, and a user ID (for example, `123`). The method prints the list of recommended items to the screen.
 
-```
+```java
     public static void getRecs(PersonalizeRuntimeClient personalizeRuntimeClient, String recommenderArn,
             String userId) {
 

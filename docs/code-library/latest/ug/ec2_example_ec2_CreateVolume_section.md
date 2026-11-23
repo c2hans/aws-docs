@@ -167,7 +167,7 @@ For more information, see [Create an Amazon EBS volume](https://docs.aws.amazon.
 **Tools for PowerShell V4**
 **Example 1: This example creates the specified volume.**
 
-```
+```powershell
 New-EC2Volume -Size 50 -AvailabilityZone us-west-2a -VolumeType gp2
 ```
 **Output:**
@@ -188,7 +188,7 @@ VolumeType       : gp2
 ```
 **Example 2: This example request creates a volume and applies a tag with a key of stack and a value of production.**
 
-```
+```powershell
 $tag = @{ Key="stack"; Value="production" }
 
 $tagspec = new-object Amazon.EC2.Model.TagSpecification
@@ -202,7 +202,7 @@ New-EC2Volume -Size 80 -AvailabilityZone "us-west-2a" -TagSpecification $tagspec
 **Tools for PowerShell V5**
 **Example 1: This example creates the specified volume.**
 
-```
+```powershell
 New-EC2Volume -Size 50 -AvailabilityZone us-west-2a -VolumeType gp2
 ```
 **Output:**
@@ -223,7 +223,7 @@ VolumeType       : gp2
 ```
 **Example 2: This example request creates a volume and applies a tag with a key of stack and a value of production.**
 
-```
+```powershell
 $tag = @{ Key="stack"; Value="production" }
 
 $tagspec = new-object Amazon.EC2.Model.TagSpecification

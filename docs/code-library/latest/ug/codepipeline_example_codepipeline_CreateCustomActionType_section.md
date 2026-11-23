@@ -98,7 +98,7 @@ For more information, see [Create and add a custom action in CodePipeline](https
 **Tools for PowerShell V4**
 **Example 1: This example creates a new custom action with the specified properties.**
 
-```
+```powershell
 New-CPCustomActionType -Category Build -ConfigurationProperty @{"Description" = "The name of the build project must be provided when this action is added to the pipeline."; "Key" = $True; "Name" = "ProjectName"; "Queryable" = $False; "Required" = $True; "Secret" = $False; "Type" = "String"} -Settings_EntityUrlTemplate "https://my-build-instance/job/{Config:ProjectName}/" -Settings_ExecutionUrlTemplate "https://my-build-instance/job/mybuildjob/lastSuccessfulBuild{ExternalExecutionId}/" -InputArtifactDetails_MaximumCount 1 -OutputArtifactDetails_MaximumCount 1 -InputArtifactDetails_MinimumCount 0 -OutputArtifactDetails_MinimumCount 0 -Provider "MyBuildProviderName" -Version 1
 ```
 **Output:**
@@ -115,7 +115,7 @@ Settings                      : Amazon.CodePipeline.Model.ActionTypeSettings
 **Tools for PowerShell V5**
 **Example 1: This example creates a new custom action with the specified properties.**
 
-```
+```powershell
 New-CPCustomActionType -Category Build -ConfigurationProperty @{"Description" = "The name of the build project must be provided when this action is added to the pipeline."; "Key" = $True; "Name" = "ProjectName"; "Queryable" = $False; "Required" = $True; "Secret" = $False; "Type" = "String"} -Settings_EntityUrlTemplate "https://my-build-instance/job/{Config:ProjectName}/" -Settings_ExecutionUrlTemplate "https://my-build-instance/job/mybuildjob/lastSuccessfulBuild{ExternalExecutionId}/" -InputArtifactDetails_MaximumCount 1 -OutputArtifactDetails_MaximumCount 1 -InputArtifactDetails_MinimumCount 0 -OutputArtifactDetails_MinimumCount 0 -Provider "MyBuildProviderName" -Version 1
 ```
 **Output:**

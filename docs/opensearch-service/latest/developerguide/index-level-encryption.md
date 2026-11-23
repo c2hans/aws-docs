@@ -95,7 +95,7 @@ To register AWS KMS keys, you need the following permissions:
 
 **For the IAM principal registering keys:**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -232,7 +232,7 @@ You can enable index level encryption using the AWS CLI or AWS SDKs through the 
 
 **For new domains (CreateDomain API):**
 
-```
+```json
 {
   "DomainName": "my-encrypted-domain",
   "EngineVersion": "OpenSearch_3.3",
@@ -300,7 +300,7 @@ A string of comma-separated key-value pairs in the format `key1=value1,key2=valu
 
 **Sample response:**
 
-```
+```json
 {
   "acknowledged": true,
   "status": "available",
@@ -342,7 +342,7 @@ PUT /logs-2025
 
 **Sample response:**
 
-```
+```json
 {
   "acknowledged": true,
   "shards_acknowledged": true,
@@ -576,7 +576,7 @@ When you register a key, OpenSearch Service creates an AWS KMS grant on that key
 
 **Example CloudTrail log entry for key registration:**
 
-```
+```json
 {
   "eventVersion": "1.11",
   "userIdentity": {
@@ -649,7 +649,7 @@ When creating an encrypted index, the response indicates whether the operation w
 
 When an encrypted index is created successfully with a registered key, the response shows:
 
-```
+```json
 {
   "acknowledged": true,
   "shards_acknowledged": true,
@@ -669,7 +669,7 @@ If OpenSearch Service can't use the AWS KMS key, the request fails with a `400` 
 
 **Request:**
 
-```
+```json
 PUT /my-index
 {
   "settings": {
@@ -687,7 +687,7 @@ PUT /my-index
 
 **Response:**
 
-```
+```json
 {
   "error": {
     "root_cause": [

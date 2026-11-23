@@ -20,7 +20,7 @@ This process requires the following items:
 For reference, the following is an example of the JSON for a basic client identity policy.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

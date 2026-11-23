@@ -56,7 +56,7 @@ We strongly recommend that you restrict access in the bucket policy with the `AW
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

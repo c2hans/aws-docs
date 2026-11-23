@@ -13,7 +13,7 @@ The following example declares a stack class named `MyFirstStack` that includes 
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 class MyFirstStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
@@ -26,7 +26,7 @@ class MyFirstStack extends Stack {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 class MyFirstStack extends Stack {
   constructor(scope, id, props) {
     super(scope, id, props);
@@ -39,7 +39,7 @@ class MyFirstStack extends Stack {
 ------
 #### [ Python ]
 
-```
+```python
 class MyFirstStack(Stack):
 
     def __init__(self, scope: Construct, id: str, **kwargs):
@@ -51,7 +51,7 @@ class MyFirstStack(Stack):
 ------
 #### [ Java ]
 
-```
+```java
 public class MyFirstStack extends Stack {
     public MyFirstStack(final Construct scope, final String id) {
         this(scope, id, null);
@@ -68,7 +68,7 @@ public class MyFirstStack extends Stack {
 ------
 #### [ C\# ]
 
-```
+```csharp
 public class MyFirstStack : Stack
 {
     public MyFirstStack(Stack scope, string id, StackProps props = null) : base(scope, id, props)
@@ -90,7 +90,7 @@ To define the previous stack within the scope of an application, use the [App](h
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const app = new App();
 new MyFirstStack(app, 'hello-cdk');
 app.synth();
@@ -99,7 +99,7 @@ app.synth();
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const app = new App();
 new MyFirstStack(app, 'hello-cdk');
 app.synth();
@@ -108,7 +108,7 @@ app.synth();
 ------
 #### [ Python ]
 
-```
+```python
 app = App()
 MyFirstStack(app, "hello-cdk")
 app.synth()
@@ -117,7 +117,7 @@ app.synth()
 ------
 #### [ Java ]
 
-```
+```java
 App app = new App();
 new MyFirstStack(app, "hello-cdk");
 app.synth();
@@ -126,7 +126,7 @@ app.synth();
 ------
 #### [ C\# ]
 
-```
+```csharp
 var app = new App();
 new MyFirstStack(app, "hello-cdk");
 app.Synth();
@@ -178,7 +178,7 @@ The CDK Toolkit needs to know how to execute your AWS CDK app. If you created th
 ------
 #### [ TypeScript ]
 
-```
+```json
 {
   "app": "npx ts-node --prefer-ts-exts bin/my-app.ts"
 }
@@ -187,7 +187,7 @@ The CDK Toolkit needs to know how to execute your AWS CDK app. If you created th
 ------
 #### [ JavaScript ]
 
-```
+```json
 {
   "app": "node bin/my-app.js"
 }
@@ -196,7 +196,7 @@ The CDK Toolkit needs to know how to execute your AWS CDK app. If you created th
 ------
 #### [ Python ]
 
-```
+```json
 {
     "app": "python app.py"
 }
@@ -205,7 +205,7 @@ The CDK Toolkit needs to know how to execute your AWS CDK app. If you created th
 ------
 #### [ Java ]
 
-```
+```json
 {
   "app": "mvn -e -q compile exec:java"
 }
@@ -214,7 +214,7 @@ The CDK Toolkit needs to know how to execute your AWS CDK app. If you created th
 ------
 #### [ C\# ]
 
-```
+```json
 {
   "app": "dotnet run -p src/MyApp/MyApp.csproj"
 }

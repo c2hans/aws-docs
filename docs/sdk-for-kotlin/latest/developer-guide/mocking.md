@@ -18,7 +18,7 @@ You must call `mockkStatic("<MODULE_CLASS_NAME>")` before setting up your mocks.
 
 For example, in the following test that includes mocking [`listBucketsPaginated`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3.paginators/list-buckets-paginated.html)—a paginator extenstion function—we add `mockkStatic("aws.sdk.kotlin.services.s3.paginators.PaginatorsKt")`:
 
-```
+```kotlin
     @Test
     fun testPaginatedListBuckets() = runTest {
 
@@ -42,7 +42,7 @@ For example, in the following test that includes mocking [`listBucketsPaginated`
 
 Without `mockkStatic`, you see the following error:
 
-```
+```text
 Missing mocked calls inside every { ... } block: make sure the object inside the block is a mock
 io.mockk.MockKException: Missing mocked calls inside every { ... } block: make sure the object inside the block is a mock
     at io.mockk.impl.recording.states.StubbingState.checkMissingCalls(StubbingState.kt:14)
@@ -56,7 +56,7 @@ io.mockk.MockKException: Missing mocked calls inside every { ... } block: make s
 
 In the case of a presigner extension function without `mockkStatic`, you might see:
 
-```
+```text
 key is bound to the URI and must not be null
 java.lang.IllegalArgumentException: key is bound to the URI and must not be null
     at aws.sdk.kotlin.services.s3.serde.GetObjectOperationSerializer.serialize(GetObjectOperationSerializer.kt:26)
@@ -71,7 +71,7 @@ java.lang.IllegalArgumentException: key is bound to the URI and must not be null
 #### Code under test
 <a name="mockk-example-code-under-test"></a>
 
-```
+```kotlin
 import aws.sdk.kotlin.services.s3.S3Client
 import aws.sdk.kotlin.services.s3.paginators.listBucketsPaginated
 import kotlinx.coroutines.flow.filter
@@ -113,7 +113,7 @@ class S3BucketLister(private val s3Client: S3Client) {
 #### Test class
 <a name="mockk-example-test-code"></a>
 
-```
+```kotlin
 import aws.sdk.kotlin.services.s3.S3Client
 import aws.sdk.kotlin.services.s3.model.Bucket
 import aws.sdk.kotlin.services.s3.model.ListBucketsResponse
@@ -153,7 +153,7 @@ class S3BucketListerTest {
 #### build.gradle.kts
 <a name="mockk-example-gradle-build"></a>
 
-```
+```kotlin
 plugins {
     kotlin("jvm") version "2.1.20"
     application
@@ -198,7 +198,7 @@ application {
 #### settings.gradle.kts
 <a name="mockk-example-settings-build"></a>
 
-```
+```kotlin
 plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.10.0"
 }

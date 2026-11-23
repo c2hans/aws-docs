@@ -30,6 +30,6 @@ sudo -u root dcv-session-manager-broker renew-auth-server-api-key
 
 **Output**
 
-```
+```json
 Keys renewed.
 ```

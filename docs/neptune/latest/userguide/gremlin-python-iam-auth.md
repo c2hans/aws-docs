@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-python-
 
  Use the following code example as guidance on how to establish basic connection with IAM authentication using the Gremlin Python driver.
 
-```
+```python
 from boto3 import Session
 from botocore.auth import SigV4Auth
 from botocore.awsrequest import AWSRequest

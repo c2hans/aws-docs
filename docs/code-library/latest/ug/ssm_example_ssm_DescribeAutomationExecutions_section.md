@@ -54,7 +54,7 @@ For more information, see [Running a Simple Automation Workflow](https://docs.aw
 **Tools for PowerShell V4**
 **Example 1: This example describes all active and terminated Automation Executions associated with your account.**
 
-```
+```powershell
 Get-SSMAutomationExecutionList
 ```
 **Output:**
@@ -72,7 +72,7 @@ Outputs                   : {[createImage.ImageId, Amazon.Runtime.Internal.Util.
 ```
 **Example 2: This example displays ExecutionID, document, execution start/end timestamp for executions with AutomationExecutionStatus other than 'Success'**
 
-```
+```powershell
 Get-SSMAutomationExecutionList | Where-Object AutomationExecutionStatus -ne "Success" | Select-Object AutomationExecutionId, DocumentName, AutomationExecutionStatus, ExecutionStartTime, ExecutionEndTime | Format-Table -AutoSize
 ```
 **Output:**
@@ -89,7 +89,7 @@ e1d2bad3-4567-8901-ae23-456c7c8901be AWS-UpdateWindowsAmi                    Can
 **Tools for PowerShell V5**
 **Example 1: This example describes all active and terminated Automation Executions associated with your account.**
 
-```
+```powershell
 Get-SSMAutomationExecutionList
 ```
 **Output:**
@@ -107,7 +107,7 @@ Outputs                   : {[createImage.ImageId, Amazon.Runtime.Internal.Util.
 ```
 **Example 2: This example displays ExecutionID, document, execution start/end timestamp for executions with AutomationExecutionStatus other than 'Success'**
 
-```
+```powershell
 Get-SSMAutomationExecutionList | Where-Object AutomationExecutionStatus -ne "Success" | Select-Object AutomationExecutionId, DocumentName, AutomationExecutionStatus, ExecutionStartTime, ExecutionEndTime | Format-Table -AutoSize
 ```
 **Output:**

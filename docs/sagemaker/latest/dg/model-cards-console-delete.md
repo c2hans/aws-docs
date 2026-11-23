@@ -18,6 +18,6 @@ You can also delete a model card when viewing the model card overview in the con
 
 Within the SageMaker Python SDK, you can permanently delete a model card with the following command:
 
-```
+```python
 {{my_card}}.delete()
 ```

@@ -32,7 +32,7 @@ The UI runs with the permissions of the IAM identity that opens it. It shows onl
 
 The following example JSON policy grants read access to all workflows in the account and lets the identity start runs. `CreateAirflowUiUrl` and `ListWorkflows` don't act on a specific workflow, so they use `"Resource": "*"`. The other actions are scoped to the account's workflows. Replace the Region, account ID, and log group with your own.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -87,13 +87,13 @@ You can open the UI from the console, or create a launch URL with the AWS CLI or
 
 Run `create-airflow-ui-url`, then open the `AuthorizedUrl` from the output in a browser before `UrlExpiresAt`.
 
-```
+```bash
 aws mwaa-serverless create-airflow-ui-url --region {{us-east-1}}
 ```
 
 Example output:
 
-```
+```json
 {
     "AuthorizedUrl": "https://a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4.airflowserverless.us-east-1.on.aws/launch?token=...",
     "SessionId": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4",
@@ -106,7 +106,7 @@ You can set two optional parameters:
 + `--expires-in-seconds`: how long the launch URL stays valid, from 5 to 300 seconds. The default is 300.
 + `--session-duration-in-seconds`: how long the UI session lasts, from 1 to 43,200 seconds (12 hours). The default is 43,200.
 
-```
+```bash
 aws mwaa-serverless create-airflow-ui-url --expires-in-seconds 60 --session-duration-in-seconds 3600 --region {{us-east-1}}
 ```
 
@@ -119,7 +119,7 @@ Call `CreateAirflowUiUrl`, then open the `AuthorizedUrl` from the response in a 
 
 The following example calls `CreateAirflowUiUrl` with curl, which signs the request with Signature Version 4 using the credentials in your environment. The `--aws-sigv4` option requires curl 7.75.0 or later. If you use long-term credentials, omit the `x-amz-security-token` header.
 
-```
+```bash
 curl --aws-sigv4 "aws:amz:{{us-east-1}}:airflow-serverless" \
   --user "$AWS_ACCESS_KEY_ID:$AWS_SECRET_ACCESS_KEY" \
   -H "x-amz-security-token: $AWS_SESSION_TOKEN" \
@@ -131,7 +131,7 @@ curl --aws-sigv4 "aws:amz:{{us-east-1}}:airflow-serverless" \
 
 Example response:
 
-```
+```json
 {
     "AuthorizedUrl": "https://a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4.airflowserverless.us-east-1.on.aws/launch?token=...",
     "SessionId": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4",

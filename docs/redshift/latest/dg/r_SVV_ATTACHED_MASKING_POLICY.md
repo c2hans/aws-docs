@@ -40,7 +40,7 @@ Get the highest priority policy that applies to a given column/role pair.
 #### Syntax
 <a name="r_SVV_ATTACHED_MASKING_POLICY-internal-functions-get-pol-role-syntax"></a>
 
-```
+```SQL
 mask_get_policy_for_role_on_column
                         (relschema,
                         relname,
@@ -71,7 +71,7 @@ Get the highest priority policy that applies to a given column/user pair.
 #### Syntax
 <a name="r_SVV_ATTACHED_MASKING_POLICY-internal-functions-get-pol-user-syntax"></a>
 
-```
+```SQL
 mask_get_policy_for_user_on_column
                         (relschema,
                         relname,

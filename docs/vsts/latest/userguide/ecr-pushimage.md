@@ -95,7 +95,7 @@ This task requires permissions to call the following AWS service APIs (depending
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

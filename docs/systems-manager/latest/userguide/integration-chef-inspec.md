@@ -70,7 +70,7 @@ This section includes information about how to run an InSpec compliance scan by 
 
    If you choose **GitHub**, then enter the path to an InSpec profile in either a public or private GitHub repository in the **Source Info** field. Here is an example path to a public profile provided by the Systems Manager team from the following location: [https://github.com/awslabs/amazon-ssm/tree/master/Compliance/InSpec/PortCheck](https://github.com/awslabs/amazon-ssm/tree/master/Compliance/InSpec/PortCheck).
 
-   ```
+   ```powershell
    {"owner":"awslabs","repository":"amazon-ssm","path":"Compliance/InSpec/PortCheck","getOptions":"branch:master"}
    ```
 
@@ -117,36 +117,36 @@ The S3 permissions that grant the ability to write the data to an S3 bucket are 
 
    **GitHub**
 
-   ```
+   ```sh
    aws ssm send-command --document-name "AWS-RunInspecChecks" --targets '[{"Key":"tag:{{tag_name}}","Values":["{{tag_value}}"]}]' --parameters '{"sourceType":["GitHub"],"sourceInfo":["{\"owner\":\"{{owner_name}}\", \"repository\":\"{{repository_name}}\", \"path\": \"{{Inspec.yml_file}}"}"]}'
    ```
 
    Here is an example.
 
-   ```
+   ```sh
    aws ssm send-command --document-name "AWS-RunInspecChecks" --targets '[{"Key":"tag:testEnvironment","Values":["webServers"]}]' --parameters '{"sourceType":["GitHub"],"getOptions":"branch:master","sourceInfo":["{\"owner\":\"awslabs\", \"repository\":\"amazon-ssm\", \"path\": \"Compliance/InSpec/PortCheck\"}"]}'
    ```
 
    **Amazon S3**
 
-   ```
+   ```sh
    aws ssm send-command --document-name "AWS-RunInspecChecks" --targets '[{"Key":"tag:{{tag_name}}","Values":["{{tag_value}}"]}]' --parameters'{"sourceType":["S3"],"sourceInfo":["{\"path\":\"https://s3.{{aws-api-domain}}/{{amzn-s3-demo-bucket}}/{{Inspec.yml_file}}\"}"]}'
    ```
 
    Here is an example.
 
-   ```
+   ```sh
    aws ssm send-command --document-name "AWS-RunInspecChecks" --targets '[{"Key":"tag:testEnvironment","Values":["webServers"]}]' --parameters'{"sourceType":["S3"],"sourceInfo":["{\"path\":\"https://s3.{{aws-api-domain}}/amzn-s3-demo-bucket/InSpec/PortCheck.yml\"}"]}'
    ```
 
 1. Run the following command to view a summary of the Compliance scan.
 
-   ```
+   ```sh
    aws ssm list-resource-compliance-summaries --filters Key=ComplianceType,Values=Custom:Inspec
    ```
 
 1. Run the following command to see details of a node that isn't compliant.
 
-   ```
+   ```sh
    aws ssm list-compliance-items --resource-ids {{node_ID}} --resource-type ManagedInstance --filters Key=DocumentName,Values=AWS-RunInspecChecks
    ```

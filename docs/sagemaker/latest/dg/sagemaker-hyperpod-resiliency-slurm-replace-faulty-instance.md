@@ -25,7 +25,7 @@ SageMaker HyperPod offers two methods for manual node recovery. The preferred ap
 
  Here is an example of running the reboot operation on two Instances of a cluster using the AWS Command Line Interface:
 
-```
+```sh
  aws sagemaker batch-reboot-cluster-nodes \
                 --cluster-name arn:aws:sagemaker:ap-northeast-1:123456789:cluster/test-cluster \
                 --node-ids i-0123456789abcdef0 i-0fedcba9876543210
@@ -38,7 +38,7 @@ SageMaker HyperPod offers two methods for manual node recovery. The preferred ap
 
  Here is an example of running the replace operation on two Instances of a cluster using the AWS Command Line Interface:
 
-```
+```sh
  aws sagemaker batch-replace-cluster-nodes \
                 --cluster-name arn:aws:sagemaker:ap-northeast-1:123456789:cluster/test-cluster \
                 --node-ids i-0123456789abcdef0 i-0fedcba9876543210
@@ -51,7 +51,7 @@ You can also use the scontrol Slurm commands to trigger node recovery. These com
 
 In the following command , replace <ip-ipv4> with the Slurm node name (host name) of the faulty instance you want to reboot.
 
-```
+```sh
 scontrol update node={{<ip-ipv4>}} state={{fail}} reason="Action:Reboot"
 ```
 
@@ -64,7 +64,7 @@ You can use the scontrol update command as follows to replace a node.
 
 In the following command, replace `{{<ip-ipv4>}}` with the Slurm node name (host name) of the faulty instance you want to replace.
 
-```
+```sh
 scontrol update node={{<ip-ipv4>}} state={{fail}} reason="Action:Replace"
 ```
 
@@ -78,6 +78,6 @@ If the faulty node is continuously stuck in the `fail` state, the last resort yo
 **Warning**
 Proceed carefully before you run the following command as it forces kill all jobs, and you might lose all unsaved work.
 
-```
+```sh
 scontrol update node={{<ip-ipv4>}} state={{down}} reason="Action:Replace"
 ```

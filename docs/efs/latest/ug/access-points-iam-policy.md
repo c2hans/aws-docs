@@ -13,7 +13,7 @@ Following is an example of a file system policy that allows the IAM role `app1` 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "MyFileSystemPolicy",

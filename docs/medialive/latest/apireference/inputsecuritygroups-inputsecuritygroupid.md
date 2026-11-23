@@ -93,7 +93,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### PUT schema
 <a name="inputsecuritygroups-inputsecuritygroupid-request-body-put-example"></a>
 
-```
+```json
 {
   "tags": {
   },
@@ -111,7 +111,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### Empty schema
 <a name="inputsecuritygroups-inputsecuritygroupid-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -119,7 +119,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### InputSecurityGroup schema
 <a name="inputsecuritygroups-inputsecuritygroupid-response-body-inputsecuritygroup-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "id": "string",
@@ -140,7 +140,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### UpdateInputSecurityGroupResultModel schema
 <a name="inputsecuritygroups-inputsecuritygroupid-response-body-updateinputsecuritygroupresultmodel-example"></a>
 
-```
+```json
 {
   "securityGroup": {
     "arn": "string",
@@ -163,7 +163,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### InvalidRequest schema
 <a name="inputsecuritygroups-inputsecuritygroupid-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -172,7 +172,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### AccessDenied schema
 <a name="inputsecuritygroups-inputsecuritygroupid-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -181,7 +181,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### ResourceNotFound schema
 <a name="inputsecuritygroups-inputsecuritygroupid-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -190,7 +190,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### ResourceConflict schema
 <a name="inputsecuritygroups-inputsecuritygroupid-response-body-resourceconflict-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -199,7 +199,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### LimitExceeded schema
 <a name="inputsecuritygroups-inputsecuritygroupid-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -208,7 +208,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### InternalServiceError schema
 <a name="inputsecuritygroups-inputsecuritygroupid-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -217,7 +217,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### BadGatewayException schema
 <a name="inputsecuritygroups-inputsecuritygroupid-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -226,7 +226,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### GatewayTimeoutException schema
 <a name="inputsecuritygroups-inputsecuritygroupid-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

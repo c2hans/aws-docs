@@ -30,7 +30,7 @@ For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified lifecycle hook for the specified Auto Scaling group. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASLifecycleHook -AutoScalingGroupName my-asg -LifecycleHookName myLifecycleHook
 ```
 **Output:**
@@ -43,7 +43,7 @@ Performing operation "Remove-ASLifecycleHook (DeleteLifecycleHook)" on Target "m
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASLifecycleHook -AutoScalingGroupName my-asg -LifecycleHookName myLifecycleHook -Force
 ```
 +  For API details, see [DeleteLifecycleHook](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -51,7 +51,7 @@ Remove-ASLifecycleHook -AutoScalingGroupName my-asg -LifecycleHookName myLifecyc
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified lifecycle hook for the specified Auto Scaling group. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASLifecycleHook -AutoScalingGroupName my-asg -LifecycleHookName myLifecycleHook
 ```
 **Output:**
@@ -64,7 +64,7 @@ Performing operation "Remove-ASLifecycleHook (DeleteLifecycleHook)" on Target "m
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASLifecycleHook -AutoScalingGroupName my-asg -LifecycleHookName myLifecycleHook -Force
 ```
 +  For API details, see [DeleteLifecycleHook](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

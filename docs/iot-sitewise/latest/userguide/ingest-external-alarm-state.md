@@ -10,7 +10,7 @@ Alarm state properties require a specific format for alarm state data values. Ea
 
 **Example alarm state data value (not serialized)**
 
-```
+```json
 {
   "stateName": "Active"
 }

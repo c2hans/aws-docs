@@ -24,9 +24,13 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 
 ![Reference architecture diagram for customer experience management.](https://docs.aws.amazon.com/wellarchitected/latest/connected-mobility-lens/images/customer-experience-refarch-a.png)
 
+*Customer experience management reference architecture*
+
 ** Figure 6: CM-S06-a Customer experience management reference architecture **
 
 ![Reference architecture diagram for customer experience management.](https://docs.aws.amazon.com/wellarchitected/latest/connected-mobility-lens/images/customer-experience-refarch-b.png)
+
+*Customer experience management reference architecture*
 
 ** Figure 7: CM-S06-b: Customer experience management reference architecture **
 

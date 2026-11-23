@@ -23,7 +23,7 @@ For source data files in comma-separated value (.csv) format, name them using th
 
  For example, suppose that your data files are in `amzn-s3-demo-bucket`, at the following Amazon S3 path.
 
-```
+```dos
 s3://amzn-s3-demo-bucket/hr/employee
 ```
 
@@ -31,7 +31,7 @@ At load time, AWS DMS assumes that the source schema name is `hr`, and that the 
 
 In addition to `bucketName` (which is required), you can optionally provide a `bucketFolder` parameter to specify where AWS DMS should look for data files in the Amazon S3 bucket. Continuing the previous example, if you set `bucketFolder` to `sourcedata`, then AWS DMS reads the data files at the following path.
 
-```
+```dos
 s3://amzn-s3-demo-bucket/sourcedata/hr/employee
 ```
 
@@ -192,13 +192,13 @@ To replicate CDC files in the change data folder successfully upload them in a l
 
 To indicate where AWS DMS can find the files, specify the `cdcPath` parameter. Continuing the previous example, if you set `cdcPath` to `{{changedata}}`, then AWS DMS reads the CDC files at the following path.
 
-```
+```dos
 s3://{{amzn-s3-demo-bucket}}/{{changedata}}
 ```
 
 If you set `cdcPath` to `{{changedata}}` and `bucketFolder` to `{{myFolder}}`, then AWS DMS reads the CDC files at the following path.
 
-```
+```dos
 s3://{{amzn-s3-demo-bucket}}/{{myFolder}}/{{changedata}}
 ```
 
@@ -233,7 +233,7 @@ The AWS Identity and Access Management (IAM) role assigned to the user account u
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -268,7 +268,7 @@ The AWS Identity and Access Management (IAM) role assigned to the user account u
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -56,7 +56,7 @@ The message was rejected due to a content policy violation. Alert your operation
 
 The following example shows a delivery event payload:
 
-```
+```json
 {
     "eventType": "RCS_DELIVERED",
     "eventVersion": "1.0",
@@ -94,7 +94,7 @@ The recipient viewed the message. A `RCS_DELIVERED` event is always sent before 
 
 The read event uses an `eventType` of `RCS_READ` with `messageStatus` set to `READ`:
 
-```
+```json
 {
     "eventType": "RCS_READ",
     "eventVersion": "1.0",
@@ -129,7 +129,7 @@ Typing indicator events signal that a participant is composing a message. These 
 
 The following example shows an inbound typing notification:
 
-```
+```json
 {
     "originationNumber": "12679164820",
     "destinationNumber": "rcs-cb1e6e519e9049fabf8c0ae38e4d876b",
@@ -176,7 +176,7 @@ Suggestion tap (postback) events are delivered only to your two-way Amazon SNS t
 
 The notification's `messageBody` contains a JSON object with a `type` of `SUGGESTION`, the display `text`, and the `postbackData` you set on the suggestion:
 
-```
+```json
 {
     "originationNumber": "12679164820",
     "destinationNumber": "rcs-cb1e6e519e9049fabf8c0ae38e4d876b",
@@ -211,7 +211,7 @@ The one-time session fee, in US dollars, charged once per 24-hour conversation s
 
 When a message is part of an active conversation session, its delivery event reports a `totalMessagePrice` and `totalCarrierFee` of `0.0`, because the session fee covers the message. The following example shows a delivery event for a message within an active conversation:
 
-```
+```json
 {
     "eventType": "RCS_DELIVERED",
     "eventVersion": "1.0",
@@ -265,7 +265,7 @@ The message ID that started the conversation.
 
 The following example shows a `CONVERSATION_STARTED` event:
 
-```
+```json
 {
     "originationNumber": "14376638816",
     "destinationNumber": "rcs-e138fa39eabf4d6d8e95546248c8dfa7",

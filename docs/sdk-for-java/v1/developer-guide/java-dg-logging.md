@@ -31,7 +31,7 @@ The log4j.properties configuration file specifies properties such as [logging le
 
 Both the Log4j JAR and the log4j.properties file must be located on your classpath. If you’re using [Apache Ant](http://ant.apache.org/manual/), set the classpath in the `path` element in your Ant file. The following example shows a path element from the Ant file for the Amazon S3 [example](https://github.com/aws/aws-sdk-java/blob/master/src/samples/AmazonS3/build.xml) included with the SDK.
 
-```
+```xml
 <path id="aws.java.sdk.classpath">
   <fileset dir="../../third-party" includes="**/*.jar"/>
   <fileset dir="../../lib" includes="**/*.jar"/>
@@ -48,7 +48,7 @@ We recommend that you always leave the "com.amazonaws" logger hierarchy set to "
 
 The following log4j.properties file sets the `rootLogger` to WARN, which causes warning and error messages from all loggers in the "com.amazonaws" hierarchy to be included. Alternatively, you can explicitly set the com.amazonaws logger to WARN.
 
-```
+```properties
 log4j.rootLogger=WARN, A1
 log4j.appender.A1=org.apache.log4j.ConsoleAppender
 log4j.appender.A1.layout=org.apache.log4j.PatternLayout
@@ -64,7 +64,7 @@ Every request to an AWS service generates a unique AWS request ID that is useful
 
 The following log4j.properties file enables a summary of requests and responses, including AWS request IDs.
 
-```
+```properties
 log4j.rootLogger=WARN, A1
 log4j.appender.A1=org.apache.log4j.ConsoleAppender
 log4j.appender.A1.layout=org.apache.log4j.PatternLayout
@@ -105,7 +105,7 @@ In some cases, it can be useful to see the exact requests and responses that the
 
 The following log4j.properties file turns on full wire logging in Apache HttpClient 4 and should only be turned on temporarily because it can have a significant performance impact on your application.
 
-```
+```properties
 log4j.rootLogger=WARN, A1
 log4j.appender.A1=org.apache.log4j.ConsoleAppender
 log4j.appender.A1.layout=org.apache.log4j.PatternLayout
@@ -124,7 +124,7 @@ If you are troubleshooting and want to see metrics such as which process is taki
 **Note**
 This logger is only available if SDK metrics is enabled. To learn more about the SDK metrics package, see [Enabling Metrics for the AWS SDK for Java](generating-sdk-metrics.md).
 
-```
+```properties
 log4j.rootLogger=WARN, A1
 log4j.appender.A1=org.apache.log4j.ConsoleAppender
 log4j.appender.A1.layout=org.apache.log4j.PatternLayout

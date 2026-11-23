@@ -48,7 +48,7 @@ aws memorydb update-subnet-group ^
 
 This command should produce output similar to the following:
 
-```
+```json
 {
     "SubnetGroup": {
         "VpcId": "vpc-73cd3c17",

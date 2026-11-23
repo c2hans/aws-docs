@@ -10,6 +10,8 @@ The following chart shows the cumulative performance gains when applying differe
 
 ![Performance enhancements for GPUs](https://docs.aws.amazon.com/dlami/latest/devguide/images/performance-enhancements.png)
 
+Example GPU performance optimizations. Chart source: [ Performance Tricks with MXNet Gluon]( https://github.com/ThomasDelteil/PerformanceTricksMXNetGluon)
+
 The following guides introduce options that will work with your DLAMI and help you boost GPU performance.
 
 **Topics**

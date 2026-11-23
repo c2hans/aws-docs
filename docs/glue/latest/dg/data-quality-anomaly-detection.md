@@ -138,7 +138,7 @@ aws glue start-data-quality-ruleset-evaluation-run \
 
 For AWS Glue ETL jobs, use the `observations.mode` option:
 
-```
+```python
 additional_options = {
     "observations.scope": "ALL",
     "observations.mode": "FIXED"

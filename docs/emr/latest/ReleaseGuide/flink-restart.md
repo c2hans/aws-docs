@@ -30,7 +30,7 @@ Our benchmark tests with sample jobs have shown that the recovery time has been 
 
 To enable task-local recovery, set the following configurations in your `flink-conf.yaml` file. Specify the checkpointing interval value in milliseconds.
 
-```
+```yaml
     state.backend.local-recovery: true
     state.backend: {{hasmap or rocksdb}}
     state.checkpoints.dir: s3://{{storage-location-bucket-path}}/checkpoint
@@ -84,7 +84,7 @@ Fine-grained recovery works only with perfectly parallel Flink jobs. It's not su
 
 To enable fine-grained recovery, set the following configurations in your `flink-conf.yaml` file.
 
-```
+```yaml
 jobmanager.execution.failover-strategy: region
 restart-strategy: {{exponential-delay or fixed-delay}}
 ```
@@ -103,7 +103,7 @@ With sample jobs, our benchmark tests have shown that this feature processes 10%
 
 To enable the combined restart mechanism, set the following configurations in your `flink-conf.yaml` file.
 
-```
+```yaml
 jobmanager.adaptive-scheduler.combined-restart.enabled: true
 jobmanager.adaptive-scheduler.combined-restart.window-interval: 1m
 ```

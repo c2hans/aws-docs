@@ -42,7 +42,7 @@ You can update a retention rule using one of the following methods.
 **To update a retention rule**
 Use the [update-rule](https://docs.aws.amazon.com/cli/latest/reference/rbin/update-rule.html) AWS CLI command. For `--identifier`, specify the ID of the retention rule to update For `--resource-types`, specify `EBS_VOLUME` for volumes, `EBS_SNAPSHOT` for snapshots, or `EC2_IMAGE` for AMIs.
 
-```
+```bash
 aws rbin update-rule \
 --identifier {{rule_ID}} \
 --retention-period RetentionPeriodValue={{number_of_days}},RetentionPeriodUnit=DAYS \
@@ -53,7 +53,7 @@ aws rbin update-rule \
 **Example**
 The following example command updates retention rule `6lsJ2Fa9nh9` to retain all snapshots for `7` days and updates its description.
 
-```
+```bash
 aws rbin update-rule \
 --identifier 6lsJ2Fa9nh9 \
 --retention-period RetentionPeriodValue=7,RetentionPeriodUnit=DAYS \

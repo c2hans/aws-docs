@@ -90,7 +90,7 @@ Type: JSON value
  ** [firewallType](#API_CreateRuleSnapshot_ResponseSyntax) **   <a name="networksecuritymanager-CreateRuleSnapshot-response-firewallType"></a>
 The firewall type associated with the resource.
 Type: String
-Valid Values: `WAF`
+Valid Values: `WAF | IGW_FIREWALL`
 
  ** [hasPublishedVersion](#API_CreateRuleSnapshot_ResponseSyntax) **   <a name="networksecuritymanager-CreateRuleSnapshot-response-hasPublishedVersion"></a>
 Specifies whether a published version of the resource exists.

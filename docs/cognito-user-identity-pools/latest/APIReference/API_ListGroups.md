@@ -140,7 +140,7 @@ The following example request lists two groups in a user pool that has a Faceboo
 #### Sample Request
 <a name="API_ListGroups_Example_1_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -158,7 +158,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_ListGroups_Example_1_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0

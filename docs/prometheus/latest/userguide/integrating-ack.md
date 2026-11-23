@@ -43,7 +43,7 @@ To deploy a new Amazon Managed Service for Prometheus workspace, you will instal
 
 1. Use the following commands to use Helm to install the Amazon Managed Service for Prometheus service controller. For more information see [Install an ACK Controller](https://aws-controllers-k8s.github.io/community/docs/user-docs/install/) in the AWS Controllers for Kubernetes documentation on GitHub. Use the correct {{region}} for your system, such as `us-east-1`.
 
-   ```
+   ```bash
    export SERVICE=prometheusservice
    export RELEASE_VERSION=`curl -sL https://api.github.com/repos/aws-controllers-k8s/$SERVICE-controller/releases/latest | jq -r '.tag_name | ltrimstr("v")'`
    export ACK_SYSTEM_NAMESPACE=ack-system
@@ -72,7 +72,7 @@ To deploy a new Amazon Managed Service for Prometheus workspace, you will instal
 
 1. Create a file called `workspace.yaml` with the following text. This will be used as configuration for the workspace you are creating.
 
-   ```
+   ```yaml
    apiVersion: prometheusservice.services.k8s.aws/v1alpha1
    kind: Workspace
    metadata:
@@ -85,7 +85,7 @@ To deploy a new Amazon Managed Service for Prometheus workspace, you will instal
 
 1. Run the following command to create your workspace (this command depends on the system variables that you set up in step 1).
 
-   ```
+   ```bash
    kubectl apply -f workspace.yaml -n $ACK_SYSTEM_NAMESPACE
    ```
 
@@ -93,7 +93,7 @@ To deploy a new Amazon Managed Service for Prometheus workspace, you will instal
 
    Running the following command to view the details and status of your workspace including the *workspace ID*. Alternately, you can view the new workspace in the [Amazon Managed Service for Prometheus console](https://console.aws.amazon.com/prometheus).
 
-   ```
+   ```bash
    kubectl describe workspace my-amp-workspace -n $ACK_SYSTEM_NAMESPACE
    ```
 **Note**
@@ -103,7 +103,7 @@ You can also [use an existing workspace](https://aws-controllers-k8s.github.io/c
 
    Save this configuration as `rulegroup.yaml`. Replace {{WORKSPACE-ID}} with the workspace ID from the previous step.
 
-   ```
+   ```yaml
    apiVersion: prometheusservice.services.k8s.aws/v1alpha1
    kind: RuleGroupsNamespace
    metadata:
@@ -137,7 +137,7 @@ You can also [use an existing workspace](https://aws-controllers-k8s.github.io/c
 
    Save the following configuration as `alertmanager.yaml`. Replace {{WORKSPACE-ID}} with the workspace ID from the previous step. Replace {{TOPIC-ARN}} with the ARN for the Amazon SNS topic to send notifications to, and {{REGION}} with the AWS Region you are using. Remember that Amazon Managed Service for Prometheus [must have permissions](AMP-alertmanager-receiver-AMPpermission.md) to the Amazon SNS topic.
 
-   ```
+   ```yaml
    apiVersion: prometheusservice.services.k8s.aws/v1alpha1
    kind: AlertManagerDefinition
    metadata:
@@ -163,7 +163,7 @@ To learn more about the formats of these configuration files, see [RuleGroupsNam
 
 1. Run the following commands to create your rule group and alert manager configuration (this command depends on the system variables that you set up in step 1).
 
-   ```
+   ```bash
    kubectl apply -f rulegroup.yaml -n $ACK_SYSTEM_NAMESPACE
    kubectl apply -f alertmanager.yaml -n $ACK_SYSTEM_NAMESPACE
    ```
@@ -190,7 +190,7 @@ For this procedure, you will need the name of the IAM role you have created to u
 
 1. Use the following command to get the `prometheusEndpoint` for your workspace. Replace {{WORKSPACE-ID}} with the workspace ID from the previous section.
 
-   ```
+   ```bash
    aws amp describe-workspace --workspace-id {{WORKSPACE-ID}}
    ```
 
@@ -204,7 +204,7 @@ For this procedure, you will need the name of the IAM role you have created to u
 
 1. Create a new file with the following text and call it `prometheus-config.yaml`. Replace {{account}} with your account ID, {{workspaceURL/}} with the URL you just found, and {{region}} with the appropriate AWS Region for your system.
 
-   ```
+   ```yaml
    serviceAccounts:
            server:
                name: "amp-iamproxy-ingest-service-account"
@@ -223,7 +223,7 @@ For this procedure, you will need the name of the IAM role you have created to u
 
 1. Find the Prometheus chart and namespace names as well as the chart version with the following Helm command.
 
-   ```
+   ```bash
    helm ls --all-namespaces
    ```
 
@@ -231,7 +231,7 @@ For this procedure, you will need the name of the IAM role you have created to u
 
 1. Run the following command, using the {{PrometheusChartName}}, {{PrometheusNamespace}}, and {{PrometheusChartVersion}} found in the previous step.
 
-   ```
+   ```bash
    helm upgrade {{PrometheusChartName}} prometheus-community/prometheus -n {{PrometheusNamespace}} -f prometheus-config.yaml --version {{PrometheusChartVersion}}
    ```
 
@@ -239,7 +239,7 @@ For this procedure, you will need the name of the IAM role you have created to u
 
 1. Optionally, validate that metrics are succesfully being sent by querying the Amazon Managed Service for Prometheus endpoint via `awscurl`. Replace {{Region}} with the AWS Region that you are using, and {{workspaceURL/}} with the URL you found in step 1.
 
-   ```
+   ```bash
    awscurl --service="aps" --region="{{Region}}" "{{workspaceURL/}}api/v1/query?query=node_cpu_seconds_total"
    ```
 

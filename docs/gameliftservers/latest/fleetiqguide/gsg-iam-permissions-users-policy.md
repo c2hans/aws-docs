@@ -11,7 +11,7 @@ The following is an example of the Amazon GameLift Servers FleetIQ\_policy for 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":

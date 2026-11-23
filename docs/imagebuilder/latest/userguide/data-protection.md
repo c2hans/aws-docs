@@ -113,7 +113,7 @@ For more information about customer managed keys, see [KMS key access and permis
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -161,7 +161,7 @@ Edit the policy for your workflow execution role to add the following policy sta
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -193,7 +193,7 @@ The following examples show typical AWS CloudTrail entries for encrypting and de
 **Example: GenerateDataKey**
 This example shows what a CloudTrail event might look like when Image Builder invokes the AWS KMS **GenerateDataKey** API action from the Image Builder **CreateWorkflow** API action. Image Builder must encrypt a new workflow before it creates the workflow resource.
 
-```
+```json
 {
 	"eventVersion": "1.08",
 	"userIdentity": {
@@ -253,7 +253,7 @@ This example shows what a CloudTrail event might look like when Image Builder in
 **Example: Decrypt**
 This example shows what a CloudTrail event might look like when Image Builder invokes the AWS KMS **Decrypt** API action from the Image Builder **GetWorkflow** API action. Image Builder pipelines need to decrypt a workflow resource before they can use it.
 
-```
+```json
 {
 	"eventVersion": "1.08",
 	"userIdentity": {

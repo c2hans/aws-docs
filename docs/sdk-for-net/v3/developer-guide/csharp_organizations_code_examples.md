@@ -28,7 +28,7 @@ The following code example shows how to use `AttachPolicy`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Organizations#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Organizations;
@@ -80,7 +80,7 @@ The following code example shows how to use `CreateAccount`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Organizations#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Organizations;
@@ -124,7 +124,7 @@ The following code example shows how to use `CreateOrganization`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Organizations#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Organizations;
@@ -165,7 +165,7 @@ The following code example shows how to use `CreateOrganizationalUnit`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Organizations#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Organizations;
@@ -219,7 +219,7 @@ The following code example shows how to use `CreatePolicy`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Organizations#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Organizations;
@@ -277,7 +277,7 @@ The following code example shows how to use `DeleteOrganization`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Organizations#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Organizations;
@@ -321,7 +321,7 @@ The following code example shows how to use `DeleteOrganizationalUnit`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Organizations#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Organizations;
@@ -372,7 +372,7 @@ The following code example shows how to use `DeletePolicy`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Organizations#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Organizations;
@@ -422,7 +422,7 @@ The following code example shows how to use `DetachPolicy`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Organizations#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Organizations;
@@ -475,7 +475,7 @@ The following code example shows how to use `ListAccounts`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Organizations#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Organizations;
@@ -544,7 +544,7 @@ The following code example shows how to use `ListOrganizationalUnitsForParent`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Organizations#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Organizations;
@@ -617,7 +617,7 @@ The following code example shows how to use `ListPolicies`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Organizations#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Organizations;

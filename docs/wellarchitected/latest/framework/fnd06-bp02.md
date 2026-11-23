@@ -46,6 +46,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd06-b
 
 ![Hierarchy for Team A branching into production, testing, and staging environments, each mapped to a separate account ID and tagged with the same cost allocation tags for project1 and project2.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/cost-usage-organization-chart.png)
 
+*Account and cost allocation tag structure for a team across environments*
+
 ### Implementation steps
 <a name="implementation-steps"></a>
 

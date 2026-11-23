@@ -47,7 +47,7 @@ Defaults to the name of the component that makes the request.
 `keyPath` (Python: `key_path`)
 The key path to the configuration value. Specify a list where each entry is the key for a single level in the configuration object. For example, specify `["mqtt", "port"]` to get the value of `port` in the following configuration.
 
-```
+```json
 {
   "mqtt": {
     "port": 443
@@ -77,7 +77,7 @@ The following examples demonstrate how to call this operation in custom componen
 
 **Example: Get configuration**
 
-```
+```rust
 use core::mem::MaybeUninit;
 use gg_sdk::{Sdk, UnpackedObject};
 
@@ -103,7 +103,7 @@ fn main() {
 
 **Example: Get configuration**
 
-```
+```c
 #include <gg/error.h>
 #include <gg/ipc/client.h>
 #include <gg/object.h>
@@ -152,7 +152,7 @@ int main(void) {
 
 **Example: Get configuration**
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <iostream>
 
@@ -194,7 +194,7 @@ This operation's request has the following parameters:
 `keyPath` (Python: `key_path`)
 (Optional) The key path to the container node (the object) to update. Specify a list where each entry is the key for a single level in the configuration object. For example, specify the key path `["mqtt"]` and the merge value `{ "port": 443 }` to set the value of `port` in the following configuration.
 
-```
+```json
 {
   "mqtt": {
     "port": 443
@@ -225,7 +225,7 @@ The following examples demonstrate how to call this operation in custom componen
 
 **Example: Update configuration**
 
-```
+```rust
 use gg_sdk::Sdk;
 
 fn main() {
@@ -245,7 +245,7 @@ fn main() {
 
 **Example: Update configuration**
 
-```
+```c
 #include <gg/error.h>
 #include <gg/ipc/client.h>
 #include <gg/object.h>
@@ -282,7 +282,7 @@ int main(void) {
 
 **Example: Update configuration**
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <iostream>
 
@@ -331,7 +331,7 @@ Defaults to the name of the component that makes the request.
 `keyPath` (Python: `key_path`)
 The key path to the configuration value for which to subscribe. Specify a list where each entry is the key for a single level in the configuration object. For example, specify `["mqtt", "port"]` to get the value of `port` in the following configuration.
 
-```
+```json
 {
   "mqtt": {
     "port": 443
@@ -364,7 +364,7 @@ The following examples demonstrate how to call this operation in custom componen
 
 **Example: Subscribe to configuration updates**
 
-```
+```rust
 use gg_sdk::Sdk;
 use std::{thread, time::Duration};
 
@@ -398,7 +398,7 @@ fn main() {
 
 **Example: Subscribe to configuration updates**
 
-```
+```c
 #include <gg/error.h>
 #include <gg/ipc/client.h>
 #include <gg/object.h>
@@ -476,7 +476,7 @@ int main(void) {
 
 **Example: Subscribe to configuration updates**
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <unistd.h>
 #include <iostream>

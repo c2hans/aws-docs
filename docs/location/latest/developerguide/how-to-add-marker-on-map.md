@@ -15,7 +15,7 @@ With Amazon Location, you can add both fixed and draggable markers, and you can 
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -54,7 +54,7 @@ With Amazon Location, you can add both fixed and draggable markers, and you can 
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```
@@ -70,7 +70,7 @@ html, body, #map { height: 100%; }
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -109,7 +109,7 @@ html, body, #map { height: 100%; }
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```
@@ -125,7 +125,7 @@ html, body, #map { height: 100%; }
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -164,7 +164,7 @@ html, body, #map { height: 100%; }
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```
@@ -180,7 +180,7 @@ html, body, #map { height: 100%; }
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -239,7 +239,7 @@ html, body, #map { height: 100%; }
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```

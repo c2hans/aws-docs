@@ -13,7 +13,7 @@ This guide shows you how to add your organization’s taxonomy to Cloud Intellig
 
 The following video introduces the concept of taxonomy in the context of AWS resource management. It will guide you through the main concepts using the example of Unicorn Rental Corporation.
 
-[![AWS Videos](https://img.youtube.com/vi/8-OMF9sca2E?rel=0/0.jpg)](https://www.youtube.com/watch?v=8-OMF9sca2E?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/8-OMF9sca2E/0.jpg)](https://www.youtube.com/watch?v=8-OMF9sca2E)
 
 ### Before you begin
 <a name="add-org-taxonomy-prerequisites"></a>
@@ -153,7 +153,7 @@ The `cid-cmd map` command automatically generates an `account_map` Athena view w
 
  **Basic usage:**
 
-```
+```bash
 # Interactive mode — prompts for data source selection
 cid-cmd map
 
@@ -172,7 +172,7 @@ cid-cmd map --file accounts_mapping.csv
 
  **Example workflow:**
 
-```
+```bash
 $ cid-cmd map --file accounts_mapping.csv
 
 ? Select account data source for taxonomy:
@@ -199,7 +199,7 @@ The following recording walks through a full `cid-cmd map --file accounts.csv` s
 #### Example of generated SQL (organization\_data mode)
 <a name="collapsible-section-id-add-org-taxonomy-2"></a>
 
-```
+```sql
 CREATE OR REPLACE VIEW "cid_cur"."account_map" AS
 SELECT
     -- Mandatory
@@ -241,7 +241,7 @@ As an alternative to the dynamic account map based on AWS Organizations data, yo
 
  **Using `cid-cmd map` with CSV file:**
 
-```
+```bash
 cid-cmd map --file my_accounts.csv
 # Select "CSV file only" when prompted
 ```
@@ -251,7 +251,7 @@ The CSV file should contain at minimum an `account_id` column. All other columns
 #### Example of resulting static account map generated with cid-cmd or created manually
 <a name="collapsible-section-id-add-org-taxonomy-3"></a>
 
-```
+```sql
 CREATE OR REPLACE VIEW account_map AS
 SELECT *
 FROM
@@ -417,13 +417,13 @@ To modify the taxonomy fields or update the set of Cost Allocation Tags, run the
 
 1. Install the tool
 
-   ```
+   ```bash
    pip3 install -U cid-cmd
    ```
 
 1. Update a dashboard and all dependency datasets
 
-   ```
+   ```bash
    cid-cmd update --force --recursive
    ```
 
@@ -436,7 +436,7 @@ See more in [update](update-dashboards.md) documentation.
 
 Following command can be used for deployment if the taxonomy fields are known. Parameters `--taxonomy` and `--resource-tags` are optional. If not provided the tool will discover and propose operator to choose them.
 
-```
+```bash
 cid-cmd update --force --recursive  --resource-tags 'tag_environment' --taxonomy 'company,business_unit,tag_environment'
 ```
 
@@ -497,7 +497,7 @@ The default account map view is based on CUR 2.0 data. You can use this query to
 #### Default account map query (CUR 2.0)
 <a name="collapsible-section-id-add-org-taxonomy-1"></a>
 
-```
+```sql
 CREATE OR REPLACE VIEW account_map AS
 SELECT DISTINCT
     line_item_usage_account_id                                        account_id,

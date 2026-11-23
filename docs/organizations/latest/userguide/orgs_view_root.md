@@ -33,7 +33,7 @@ You can use one of the following commands to view details of a root:
 
   The following example shows how to retrieve the details of the root, including which policy types are currently enabled in the organization:
 
-  ```
+  ```bash
   $ aws organizations list-roots
   {
       "Roots": [

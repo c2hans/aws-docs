@@ -138,7 +138,7 @@ The sample response shows the result that the `ListObjectives` operation might r
 #### Sample Request
 <a name="API_ListObjectives_Example_1_Request"></a>
 
-```
+```json
 {
     "ObjectiveFilter": {
         "Domains": [{
@@ -151,7 +151,7 @@ The sample response shows the result that the `ListObjectives` operation might r
 #### Sample Response
 <a name="API_ListObjectives_Example_1_Response"></a>
 
-```
+```json
 {
     "Objectives": [{
         "Arn": "arn:aws:controlcatalog:::objective/ad11p1961s8erra9m185wa1nn",

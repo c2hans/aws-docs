@@ -173,7 +173,7 @@ The following example uses the AWS Command Line Interface (AWS CLI) to retrieve 
 aws iotsitewise batch-get-asset-property-aggregates --cli-input-json file://batch-get-asset-property-aggregates.json
 ```
 
-```
+```json
 {
    "entries":[
       {

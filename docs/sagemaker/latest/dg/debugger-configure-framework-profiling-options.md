@@ -23,7 +23,7 @@ Enabling Python profiling might slow down the overall training time. cProfile pr
 
 The following example configuration shows the full structure when you use the different profiling options with specified values.
 
-```
+```py
 import time
 from sagemaker.core.debugger import (ProfilerConfig,
                                 FrameworkProfile,

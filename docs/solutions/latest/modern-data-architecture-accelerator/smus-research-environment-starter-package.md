@@ -61,7 +61,7 @@ If deploying to an account not part of an AWS Organization, you must deploy in t
 
  **Step 1: Clone the MDAA repository**
 
-```
+```bash
 git clone https://github.com/aws/modern-data-architecture-accelerator.git &&
 cd modern-data-architecture-accelerator
 ```
@@ -87,7 +87,7 @@ context:
 
  **Step 3: Deploy the solution**
 
-```
+```bash
 npx @aws-mdaa/cli ls
 npx @aws-mdaa/cli synth
 npx @aws-mdaa/cli deploy

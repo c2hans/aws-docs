@@ -33,7 +33,7 @@ Use the AWS End User Messaging SMS console to add, edit or delete a Tag.
 
 Use the AWS CLI to add or edit a Tag.
 
-```
+```shell
 $ aws pinpoint-sms-voice-v2 tag-resource \
   --resource-arn {{resource-arn}} \
   --tags tags={{{key1}}={{value1}},{{key2}}={{value2}}}
@@ -46,7 +46,7 @@ In the preceding example, do the following:
 
 Use the AWS CLI to delete a Tag.
 
-```
+```shell
 $ aws pinpoint-sms-voice-v2 untag-resource \
   --resource-arn {{resource-arn}} \
   --tag-keys tags={{{key1}}={{value1}},{{key2}}={{value2}}}

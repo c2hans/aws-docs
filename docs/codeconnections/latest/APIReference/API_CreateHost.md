@@ -56,7 +56,7 @@ Required: Yes
  ** [ProviderType](#API_CreateHost_RequestSyntax) **   <a name="codeconnections-CreateHost-request-ProviderType"></a>
 The name of the installed provider to be associated with your connection. The host resource represents the infrastructure where your provider type is installed. The valid provider type is GitHub Enterprise Server.
 Type: String
-Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps`
+Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps | GitHubEnterpriseCloudDataResidency`
 Required: Yes
 
  ** [Tags](#API_CreateHost_RequestSyntax) **   <a name="codeconnections-CreateHost-request-Tags"></a>

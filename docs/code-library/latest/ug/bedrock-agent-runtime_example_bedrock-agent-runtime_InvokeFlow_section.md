@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-agent-runtime#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 
 import {
@@ -125,7 +125,7 @@ if (isMain(import.meta.url)) {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent-runtime#code-examples).
 Invoke a flow.
 
-```
+```python
     def invoke_flow(self, flow_id, flow_alias_id, input_data, execution_id):
         """
         Invoke an Amazon Bedrock flow and handle the response stream.

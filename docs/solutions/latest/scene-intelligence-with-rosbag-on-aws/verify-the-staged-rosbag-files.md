@@ -14,7 +14,7 @@ Complete the following steps to verify that the rosbag files are staged.
 
    If the files aren’t in the bucket, run the following CLI commands to stage the files. Replace {{<hash>}} with the unique numbering for the S3 bucket.
 
-   ```
+   ```bash
    $ aws s3 cp s3://proserve-blocks-datasets-us-east-1/rosbag/test-vehicle-01/072021/small1__2020-11-19-16-21-22_4.bag \
    s3://addf-aws-solutions-raw-bucket-<hash>/rosbag-scene-detection/test-vehicle-01/072021/small1__2020-11-19-16-21-22_4.bag
    ```

@@ -8,6 +8,8 @@ AWS IoT Device Management Commands feature enables customers to send remote comm
 
 ![Sending commands to devices using AWS IoT Device Management Commands feature](https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/images/image4.png)
 
+*Sending commands to devices using AWS IoT Device Management Commands feature*
+
 1.  A device subscribes to the commands topic ` $aws/commands/things/<thingname>/executions/#/request ` or ` $aws/commands/clients/<clientId>/executions/#/request ` upon which IoT commands payload will be delivered.
 
 1.  Create pre-defined commands and store them in AWS IoT Device Management Commands for reusability.

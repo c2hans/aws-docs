@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-sche
 
 **Example AWS CLI**
 
-```
+```bash
 $ aws scheduler create-schedule --name {{your-schedule}} \
     --schedule-expression 'rate(5 minutes)' \
     --target '{"RoleArn": "{{ROLE_ARN}}", \
@@ -25,7 +25,7 @@ $ aws scheduler create-schedule --name {{your-schedule}} \
 
 **Example Python SDK**
 
-```
+```python
 import boto3
 scheduler = boto3.client('scheduler')
 

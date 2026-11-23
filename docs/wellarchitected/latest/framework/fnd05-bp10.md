@@ -42,6 +42,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd05-b
 
 ![AWS Organizations hierarchy with an organization root over two organizational units: a Security OU containing a security tooling account and a log archival account, and a Forensics OU containing forensics accounts for two Regions.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/region-account-structure.png)
 
+*Organization structure with separate security and forensics organizational units*
+
  Manual evidence collection is slow, error-prone, and can break chain of custody. Use [AWS Step Functions](https://aws.amazon.com/step-functions/), [AWS Lambda](https://aws.amazon.com/lambda/), and [AWS Systems Manager](https://aws.amazon.com/systems-manager/) to orchestrate collection workflows. When triggered, these workflows automatically capture logs, create snapshots, and perform memory dumps. For reference architectures, see [Automate incident response and forensics](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-incident-response-and-forensics.html) and [Automated Forensics Orchestrator for Amazon EC2](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/welcome.html).
 
 **Important**

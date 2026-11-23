@@ -32,7 +32,7 @@ aws-sdk-s3 = { version = "1", features = ["behavior-version-latest"] }
 
 Your code can change the behavior version as needed by specifying it when configuring the SDK or a client:
 
-```
+```rust
 let config = aws_config::load_defaults(BehaviorVersion::v2023_11_09()).await;
 ```
 

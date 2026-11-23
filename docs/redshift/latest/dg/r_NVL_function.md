@@ -43,7 +43,7 @@ Amazon Redshift determines the data type of the returned value based on the inpu
 
 If the list contains integer expressions, the function returns an integer.
 
-```
+```sql
 SELECT COALESCE(NULL, 12, NULL);
 
 coalesce
@@ -53,7 +53,7 @@ coalesce
 
 This example, which is the same as the previous example, except that it uses NVL, returns the same result.
 
-```
+```sql
 SELECT NVL(NULL, 12, NULL);
 
 coalesce
@@ -63,7 +63,7 @@ coalesce
 
 The following example returns a string type.
 
-```
+```sql
 SELECT COALESCE(NULL, 'Amazon Redshift', NULL);
 
 coalesce
@@ -73,21 +73,21 @@ Amazon Redshift
 
 The following example results in an error because the data types vary in the expression list. In this case, there is both a string type and a number type in the list.
 
-```
+```sql
 SELECT COALESCE(NULL, 'Amazon Redshift', 12);
 ERROR: invalid input syntax for integer: "Amazon Redshift"
 ```
 
 For this example, you create a table with START\_DATE and END\_DATE columns, insert rows that include null values, then apply an NVL expression to the two columns.
 
-```
+```sql
 create table datetable (start_date date, end_date date);
 insert into datetable values ('2008-06-01','2008-12-31');
 insert into datetable values (null,'2008-12-31');
 insert into datetable values ('2008-12-31',null);
 ```
 
-```
+```sql
 select nvl(start_date, end_date)
 from datetable
 order by 1;
@@ -101,7 +101,7 @@ coalesce
 
 The default column name for an NVL expression is COALESCE. The following query returns the same results:
 
-```
+```sql
 select coalesce(start_date, end_date)
 from datetable
 order by 1;
@@ -109,13 +109,13 @@ order by 1;
 
 For the following example queries, you create a table with sample hotel-booking information and insert several rows. Some records contain null values.
 
-```
+```sql
 create table booking_info (booking_id int, booking_code character(8), check_in date, check_out date, funds_collected numeric(12,2));
 ```
 
 Insert the following sample data. Some records don't have a `check_out` date or `funds_collected` amount.
 
-```
+```sql
 insert into booking_info values (1, 'OCEAN_WV', '2023-02-01','2023-02-03',100.00);
 insert into booking_info values (2, 'OCEAN_WV', '2023-04-22','2023-04-26',120.00);
 insert into booking_info values (3, 'DSRT_SUN', '2023-03-13','2023-03-16',125.00);
@@ -126,7 +126,7 @@ insert into booking_info values (6, 'OCEAN_WV', '2023-08-15',null,null);
 
 The following query returns a list of dates. If the `check_out` date isn't available, it lists the `check_in` date.
 
-```
+```sql
 select coalesce(check_out, check_in)
 from booking_info
 order by booking_id;
@@ -147,7 +147,7 @@ coalesce
 
 If you expect a query to return null values for certain functions or columns, you can use an NVL expression to replace the nulls with some other value. For example, aggregate functions, such as SUM, return null values instead of zeroes when they have no rows to evaluate. You can use an NVL expression to replace these null values with `700.0`. Instead of `485`, the result of summing the `funds_collected` is `1885` because two rows that have null are replaced with `700`.
 
-```
+```sql
 select sum(nvl(funds_collected, 700.0)) as sumresult from booking_info;
 
 sumresult

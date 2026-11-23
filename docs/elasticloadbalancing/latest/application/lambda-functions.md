@@ -111,7 +111,7 @@ aws elbv2 register-targets \
 **To create a target group and register the Lambda function**
 Define a resource of type [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html). If you aren't ready to register the Lambda function now, you can omit the `Targets` property and add it later on.
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
@@ -138,7 +138,7 @@ If the `content-encoding` header is not present, Base64 encoding depends on the 
 
 The following is an example event.
 
-```
+```json
 {
     "requestContext": {
         "elb": {
@@ -176,7 +176,7 @@ The load balancer does not honor hop-by-hop headers, such as `Connection` or `Tr
 
 The following is an example response from a **nodejs** based Lambda function.
 
-```
+```json
 {
     "isBase64Encoded": {{false}},
     "statusCode": {{200}},
@@ -217,26 +217,26 @@ http://www.example.com?&myKey=val1&myKey=val2
 
 With the default format, the load balancer uses the last value sent by the client and sends you an event that includes query string parameters using `queryStringParameters`. For example:
 
-```
+```json
 "queryStringParameters": { "myKey": "val2"},
 ```
 
 If you enable multi-value headers, the load balancer uses both key values sent by the client and sends you an event that includes query string parameters using `multiValueQueryStringParameters`. For example:
 
-```
+```json
 "multiValueQueryStringParameters": { "myKey": ["val1", "val2"] },
 ```
 
 Similarly, suppose that the client sends a request with two cookies in the header:
 
-```
+```json
 "cookie": "name1=value1",
 "cookie": "name2=value2",
 ```
 
 With the default format, the load balancer uses the last cookie sent by the client and sends you an event that includes headers using `headers`. For example:
 
-```
+```json
 "headers": {
     "cookie": "name2=value2",
     ...
@@ -245,7 +245,7 @@ With the default format, the load balancer uses the last cookie sent by the clie
 
 If you enable multi-value headers, the load balancer uses both cookies sent by the client and sends you an event that includes headers using `multiValueHeaders`. For example:
 
-```
+```json
 "multiValueHeaders": {
     "cookie": ["name1=value1", "name2=value2"],
     ...
@@ -261,7 +261,7 @@ The names of the fields used for headers differ depending on whether you enable 
 
 With the default format, you can specify a single cookie:
 
-```
+```json
 {
   "headers": {
       "Set-cookie": "cookie-name=cookie-value;Domain=myweb.com;Secure;HttpOnly",
@@ -272,7 +272,7 @@ With the default format, you can specify a single cookie:
 
 If you enable multi-value headers, you must specify multiple cookies as follows:
 
-```
+```json
 {
   "multiValueHeaders": {
       "Set-cookie": ["cookie-name=cookie-value;Domain=myweb.com;Secure;HttpOnly","cookie-name=cookie-value;Expires=May 8, 2019"],
@@ -323,7 +323,7 @@ aws elbv2 modify-target-group-attributes \
 **To enable multi-value headers**
 Update the [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html) resource to include the `lambda.multi_value_headers.enabled` attribute.
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
@@ -351,7 +351,7 @@ You are charged for health checks as you are for any Lambda function invocation.
 
 The following is the format of the health check event sent to your Lambda function. To check whether an event is a health check event, check the value of the user-agent field. The user agent for health checks is `ELB-HealthChecker/2.0`.
 
-```
+```json
 {
     "requestContext": {
         "elb": {
@@ -406,7 +406,7 @@ aws elbv2 modify-target-group \
 **To enable health checks for a lambda target group**
 Update the [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html) resource.
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
@@ -463,7 +463,7 @@ aws elbv2 register-targets \
 **To register a Lambda function**
 Update the [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html) resource.
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'

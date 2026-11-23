@@ -16,7 +16,7 @@ The following code example shows how to:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tex#code-examples).
 
-```
+```sap-abap
     "Create ABAP objects for feature type."
     "Add TABLES to return information about the tables."
     "Add FORMS to return detected form data."

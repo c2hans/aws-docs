@@ -29,7 +29,7 @@ You can use the Amazon Location APIs or the AWS CLI.
 
 The following example is a `[SearchPlaceIndexForSuggestions](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForSuggestions.html)` request to search the place index resource, {{ExamplePlaceIndex}}, for up to {{5}} suggestions based on the partial place name {{kamp}}.
 
-```
+```json
 POST /places/v0/indexes/{{ExamplePlaceIndex}}/search/suggestions
 Content-type: application/json
 
@@ -103,7 +103,7 @@ Data provider specified in the place index resource
 
 Typically, you use `GetPlace` with the Amazon Location APIs. The following example is a `[GetPlace](https://docs.aws.amazon.com/location/previous/APIReference/API_GetPlace.html)` request to find one of the suggestions from the previous section. This example is based on the partial place name {{kamp}}.
 
-```
+```json
 POST /places/v0/indexes/{{ExamplePlaceIndex}}/places/{{AQAAAIAADsn2T3KdrRWeaXLeVEyjNx_JfeTsMB0NVCEAnAZoJ-o3nqdlJZAdgcT2oWi1w9pS4wXXOk3O1vsKlGsPyHjV4EJxsu289i3hVO_BUPgP7SFoWAi8BW2v7LvAjQ5NfUPy7a1v9ajT3feIqcUZszWSTqKbJHFYvQqW7wdqhpQq3Wy-et39ZQDWSPLZUzgcjN-6VD2gyKkH0Po7gSm8YSJNSQ}}
 ```
 
@@ -115,7 +115,7 @@ POST /places/v0/indexes/{{ExamplePlaceIndex}}/places/{{AQAAAIAADsn2T3KdrRWeaXLeV
 
 The following example uses a `[SearchPlaceIndexForSuggestions](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForSuggestions.html)` request to search the place index resource {{ExamplePlaceIndex}} for place suggestions matching the partial query {{kamp}} near the position [{{32.5827}},{{0.3169}}].
 
-```
+```json
 POST /places/v0/indexes/ExamplePlaceIndex/search/suggestions
 Content-type: application/json
 
@@ -141,7 +141,7 @@ The following example uses a `[SearchPlaceIndexForSuggestions](https://docs.aws.
 + The longitude of the northeast corner of the bounding box is {{32.6129}}.
 + The latitude of the northeast corner of the bounding box is {{0.3502}}.
 
-```
+```json
 POST /places/v0/indexes/ExamplePlaceIndex/search/suggestions
 Content-type: application/json
 
@@ -164,7 +164,7 @@ You can narrow your autocomplete search to receive only suggestions for places w
 
  The following example uses a `[SearchPlaceIndexForSuggestions](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForSuggestions.html)` request to search the place index resource {{ExamplePlaceIndex}} for place suggestions matching the partial query {{kamp}} and which are contained within Uganda, Kenya, or Tanzania:
 
-```
+```json
 POST /places/v0/indexes/ExamplePlaceIndex/search/suggestions
 Content-type: application/json
 

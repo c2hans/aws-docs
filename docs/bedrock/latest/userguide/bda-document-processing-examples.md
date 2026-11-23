@@ -15,6 +15,8 @@ Choose the tab for your preferred method, and then follow the steps:
 
 ![Sample W2 form with standard fields, demonstrating layout and data fields that will be extracted.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/bda/W2.png)
 
+Sample passport containing personal identification information
+
 When processing a W2 form, an example schema would be the following:
 
 ```

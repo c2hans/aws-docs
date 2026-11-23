@@ -23,13 +23,13 @@ Set `ReceiveMessageWaitTimeSeconds` in the queue attributes to set the default w
 
  **Imports**
 
-```
+```python
 from aws_sdk_sqs import SQSClient
 ```
 
  **Code**
 
-```
+```python
 def create_long_polling_queue(
     client: SQSClient, queue_name: str, wait_time_seconds: int = 20
 ) -> str:
@@ -54,13 +54,13 @@ Use `set_queue_attributes` to change the default for an existing queue. Queue at
 
  **Imports**
 
-```
+```python
 from aws_sdk_sqs import SQSClient
 ```
 
  **Code**
 
-```
+```python
 def set_long_polling(
     client: SQSClient, queue_url: str, wait_time_seconds: int = 20
 ) -> None:
@@ -82,14 +82,14 @@ Set `wait_time_seconds` on `receive_message` to configure one request. An empty 
 
  **Imports**
 
-```
+```python
 from aws_sdk_sqs import SQSClient
 from aws_sdk_sqs.models import Message
 ```
 
  **Code**
 
-```
+```python
 def receive_with_long_polling(
     client: SQSClient, queue_url: str, wait_time_seconds: int = 20
 ) -> list[Message]:

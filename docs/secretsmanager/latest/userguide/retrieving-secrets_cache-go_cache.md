@@ -8,7 +8,7 @@ An in-memory cache for secrets requested from Secrets Manager. You use [GetSecre
 
 The following example shows how to configure the cache settings.
 
-```
+```go
 // Create a custom secretsmanager client
 client := getCustomClient()
 

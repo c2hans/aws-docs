@@ -147,7 +147,7 @@ For more information, see [Register a Task with the Maintenance Window (AWS CLI)
 **Tools for PowerShell V4**
 **Example 1: This example registers a task with a maintenance window using an instance ID. The output is the Task ID.**
 
-```
+```powershell
 $parameters = @{}
 $parameterValues = New-Object Amazon.SimpleSystemsManagement.Model.MaintenanceWindowTaskParameterValueExpression
 $parameterValues.Values = @("Install")
@@ -162,7 +162,7 @@ f34a2c47-ddfd-4c85-a88d-72366b69af1b
 ```
 **Example 2: This example registers a task with a maintenance window using a target ID. The output is the Task ID.**
 
-```
+```powershell
 $parameters = @{}
 $parameterValues = New-Object Amazon.SimpleSystemsManagement.Model.MaintenanceWindowTaskParameterValueExpression
 $parameterValues.Values = @("Install")
@@ -177,7 +177,7 @@ f34a2c47-ddfd-4c85-a88d-72366b69af1b
 ```
 **Example 3: This example creates a parameter object for the run command document `AWS-RunPowerShellScript` and creates a task with given maintenance window using target ID. The return output is the task ID.**
 
-```
+```powershell
 $parameters = [Collections.Generic.Dictionary[String,Collections.Generic.List[String]]]::new()
 $parameters.Add("commands",@("ipconfig","dir env:\computername"))
 $parameters.Add("executionTimeout",@(3600))
@@ -204,7 +204,7 @@ f1e2ef34-5678-12e3-456a-12334c5c6cbe
 ```
 **Example 4: This example registers an AWS Systems Manager Automation task by using a document named `Create-Snapshots`.**
 
-```
+```powershell
 $automationParameters = @{}
 $automationParameters.Add( "instanceId", @("{{ TARGET_ID }}") )
 $automationParameters.Add( "AutomationAssumeRole", @("{arn:aws:iam::111111111111:role/AutomationRole}") )
@@ -222,7 +222,7 @@ Register-SSMTaskWithMaintenanceWindow -WindowId mw-123EXAMPLE456`
 **Tools for PowerShell V5**
 **Example 1: This example registers a task with a maintenance window using an instance ID. The output is the Task ID.**
 
-```
+```powershell
 $parameters = @{}
 $parameterValues = New-Object Amazon.SimpleSystemsManagement.Model.MaintenanceWindowTaskParameterValueExpression
 $parameterValues.Values = @("Install")
@@ -237,7 +237,7 @@ f34a2c47-ddfd-4c85-a88d-72366b69af1b
 ```
 **Example 2: This example registers a task with a maintenance window using a target ID. The output is the Task ID.**
 
-```
+```powershell
 $parameters = @{}
 $parameterValues = New-Object Amazon.SimpleSystemsManagement.Model.MaintenanceWindowTaskParameterValueExpression
 $parameterValues.Values = @("Install")
@@ -252,7 +252,7 @@ f34a2c47-ddfd-4c85-a88d-72366b69af1b
 ```
 **Example 3: This example creates a parameter object for the run command document `AWS-RunPowerShellScript` and creates a task with given maintenance window using target ID. The return output is the task ID.**
 
-```
+```powershell
 $parameters = [Collections.Generic.Dictionary[String,Collections.Generic.List[String]]]::new()
 $parameters.Add("commands",@("ipconfig","dir env:\computername"))
 $parameters.Add("executionTimeout",@(3600))
@@ -279,7 +279,7 @@ f1e2ef34-5678-12e3-456a-12334c5c6cbe
 ```
 **Example 4: This example registers an AWS Systems Manager Automation task by using a document named `Create-Snapshots`.**
 
-```
+```powershell
 $automationParameters = @{}
 $automationParameters.Add( "instanceId", @("{{ TARGET_ID }}") )
 $automationParameters.Add( "AutomationAssumeRole", @("{arn:aws:iam::111111111111:role/AutomationRole}") )

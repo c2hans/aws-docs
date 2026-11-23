@@ -13,7 +13,7 @@ If you're using Lake Formation with EMR Serverless, mutual-TLS encryption is ena
 
 To enable mutual TLS encryption on your spark application, set `spark.ssl.internode.enabled` to true when [creating EMR Serverless application](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/getting-started.html#gs-cli). If you're using the AWS console to create an EMR Serverless application, choose **Use custom settings**, then expand **Application configuration**, and enter your `runtimeConfiguration`.
 
-```
+```bash,sh,zsh
 aws emr-serverless create-application \
 --release-label emr-6.15.0 \
 --runtime-configuration '{
@@ -25,6 +25,6 @@ aws emr-serverless create-application \
 
 If you want to enable mutual TLS encryption for individual spark job runs, set `spark.ssl.internode.enabled` to true when using `spark-submit`.
 
-```
+```bash,sh,zsh
 --conf spark.ssl.internode.enabled=true
 ```

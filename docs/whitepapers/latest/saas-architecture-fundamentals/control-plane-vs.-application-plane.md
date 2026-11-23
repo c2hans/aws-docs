@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
 ![A diagram depciting control plane vs. application plane.](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/control-vs-application.png)
 
+*Control plane vs. application plane*
+
  This control plane is foundational to any multi-tenant SaaS model. Every SaaS solution—regardless of application deployment and isolation scheme—must include those services that give you the ability to manage and operate your tenants through a single, unified experience.
 
  Within the control plane, we have further broken this down into two distinct elements. The core services here represent the collection of services that are used to orchestrate your multi-tenant experience. We’ve included some of the common examples of services that are typically part of the core, acknowledging that the core services could vary some for each SaaS solution.

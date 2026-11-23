@@ -145,7 +145,7 @@ The following example creates a local index in the AWS Region in which you call 
 #### Sample Request
 <a name="API_CreateIndex_Example_1_Request"></a>
 
-```
+```http
 POST /CreateIndex HTTP/1.1
 Host: resource-explorer-2.us-east-1.amazonaws.com
 X-Amz-Date: 20221101T200059Z
@@ -160,7 +160,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=<Credential>, SignedHeaders=<Headers>
 #### Sample Response
 <a name="API_CreateIndex_Example_1_Response"></a>
 
-```
+```http
 HTTP/1.1 200 OK
 Date: Tue, 01 Nov 2022 20:00:59 GMT
 Content-Type: application/json

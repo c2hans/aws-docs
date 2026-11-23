@@ -86,7 +86,7 @@ To ensure that invocation records from your Event Function can't be sent to an S
 
 The following example shows an IAM policy that limits your function's `s3:PutObject` permissions to buckets in your account. This policy also gives Lambda the `s3:ListBucket` permission it needs to use an S3 bucket as a destination.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -161,7 +161,7 @@ To add a permissions policy to your function's execution role using the AWS Mana
 
 The following example shows an invocation record Lambda sends to an SQS or SNS destination for a DynamoDB stream.
 
-```
+```json
 {
     "requestContext": {
         "requestId": "316aa6d0-8154-xmpl-9af7-85d5f4a6bc81",
@@ -195,7 +195,7 @@ You can use this information to retrieve the affected records from the stream fo
 
 The following example shows an invocation record Lambda sends to an S3 bucket for a DynamoDB stream. In addition to all of the fields from the previous example for SQS and SNS destinations, the `payload` field contains the original invocation record as an escaped JSON string.
 
-```
+```json
 {
     "requestContext": {
         "requestId": "316aa6d0-8154-xmpl-9af7-85d5f4a6bc81",

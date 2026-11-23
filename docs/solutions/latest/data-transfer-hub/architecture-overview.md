@@ -13,6 +13,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/archi
 
 ![Data Transfer Hub architecture on AWS](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/guidance-arch.png)
 
+***Data Transfer Hub architecture on AWS***
+
  The Guidance automatically deploys and configures a serverless architecture with the following services:
 
 1.  [Amazon Simple Storage Service](https://aws.amazon.com/s3/) stores static web assets (such as the frontend UI), which are made available through [Amazon CloudFront](https://aws.amazon.com/cloudfront/).
@@ -44,6 +46,8 @@ If you deploy this Guidance in AWS (Beijing) Region operated by Beijing Sinnet T
 
 ![Data Transfer Hub Amazon S3 plugin architecture](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/guidance-s3-plugin.png)
 
+***Data Transfer Hub Amazon S3 plugin architecture***
+
  The Amazon S3 plugin runs the following workflows:
 
 1.  A time-based EventBridge rule initiates the AWS Lambda function on an hourly basis.
@@ -72,6 +76,8 @@ If an object (or part of an object) transfer failed, the JobWorker releases th
  **Amazon ECR plugin**
 
 ![Data Transfer Hub Amazon ECR plugin architecture](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/guidance-ecr-plugin.png)
+
+***Data Transfer Hub Amazon ECR plugin architecture***
 
  The Amazon ECR plugin runs the following workflows:
 

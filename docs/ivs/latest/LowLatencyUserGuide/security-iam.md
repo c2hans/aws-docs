@@ -117,7 +117,7 @@ The parts of the following policy provide access to:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -185,7 +185,7 @@ This example shows a policy that allows IAM users to view the inline and managed
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -234,7 +234,7 @@ Here, you want to grant an IAM user in your AWS account access to one of your Am
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -283,7 +283,7 @@ You can use conditions in your identity-based policy to control access to Amazon
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

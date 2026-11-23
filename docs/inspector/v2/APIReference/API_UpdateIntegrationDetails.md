@@ -17,6 +17,12 @@ Details specific to updating an integration with GitHub.
 Type: [UpdateGitHubIntegrationDetail](API_UpdateGitHubIntegrationDetail.md) object
 Required: No
 
+ ** githubEnterpriseServer **   <a name="inspector2-Type-UpdateIntegrationDetails-githubEnterpriseServer"></a>
+Details specific to updating an integration with a GitHub Enterprise Server instance.
+Type: [UpdateGitHubEnterpriseServerIntegrationDetail](API_UpdateGitHubEnterpriseServerIntegrationDetail.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
+
  ** gitlabSelfManaged **   <a name="inspector2-Type-UpdateIntegrationDetails-gitlabSelfManaged"></a>
 Details specific to updating an integration with a self-managed GitLab instance.
 Type: [UpdateGitLabSelfManagedIntegrationDetail](API_UpdateGitLabSelfManagedIntegrationDetail.md) object

@@ -31,7 +31,7 @@ If we have the following policy stored in the `policy.json` file on the machine:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -119,7 +119,7 @@ Given the following execution IAM role policy:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -166,7 +166,7 @@ And the following inline IAM policy:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -206,7 +206,7 @@ The resulting permissions assumed by the JobRun is::
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

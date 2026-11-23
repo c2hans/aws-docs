@@ -10,7 +10,7 @@ When a JSONL line carries a `caption` field, or a `generated_text` field chained
 
 To run this bundle, you need a service-managed fleet with NVIDIA GPUs and at least 32 GB RAM, and a queue with a conda queue environment that reads `CondaPackages` and `CondaChannels` job parameters. From the `job_bundles` directory of the samples repository, submit the job:
 
-```
+```bash
 deadline bundle gui-submit text_to_image_batch
 ```
 

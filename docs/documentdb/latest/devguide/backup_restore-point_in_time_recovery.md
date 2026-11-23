@@ -149,7 +149,7 @@ aws docdb restore-db-cluster-to-point-in-time ^
 
 Output from this operation looks something like the following.
 
-```
+```json
 {
     "DBCluster": {
         "AvailabilityZones": [

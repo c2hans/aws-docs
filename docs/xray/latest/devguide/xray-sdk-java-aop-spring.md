@@ -92,7 +92,7 @@ public class WebConfig {
 
 For the filter classes, replace `javax` with `jakarta`. When configuring a segment naming strategy, add `jakarta` before the naming strategy class name, as in the following example:
 
-```
+```java
 package myapp;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Bean;

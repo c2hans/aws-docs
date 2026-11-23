@@ -35,7 +35,7 @@ HTTP is only supported for OTA data operations. For control operations, you must
 **ESP32**
 Due to a limited amount of RAM, you must turn off BLE when you enable HTTP as an OTA data protocol. In the [`vendors/espressif/boards/esp32/aws_demos/config_files/aws_iot_network_config.h`](https://github.com/aws/amazon-freertos/blob/main/vendors/espressif/boards/esp32/aws_demos/config_files/aws_iot_network_config.h) file, change `configENABLED_NETWORKS` to `AWSIOT_NETWORK_TYPE_WIFI` only.
 
-```
+```c
 /**
      * @brief Configuration flag which is used to enable one or more network interfaces for a board.
      *

@@ -206,7 +206,7 @@ This request adds a SAML IdP named `MySAMLIdP` to a user pool. The IdP is identi
 #### Sample Request
 <a name="API_CreateIdentityProvider_Example_1_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-east-1.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -238,7 +238,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_CreateIdentityProvider_Example_1_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0
@@ -279,7 +279,7 @@ This request adds an OIDC IdP named `MyOIDCIdP` to a user pool. In this request,
 #### Sample Request
 <a name="API_CreateIdentityProvider_Example_2_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-east-1.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -316,7 +316,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_CreateIdentityProvider_Example_2_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0

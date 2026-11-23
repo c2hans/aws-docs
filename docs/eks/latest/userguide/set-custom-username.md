@@ -42,7 +42,7 @@ Unless you have a specific reason for specifying your own username, we recommend
 
 When creating an access entry, you can specify a custom username using the `--username` parameter:
 
-```
+```bash
 aws eks create-access-entry --cluster-name <cluster-name> --principal-arn <iam-identity-arn> --type STANDARD --username <custom-username>
 ```
 

@@ -30,7 +30,7 @@ If you adapt this example for your use case, you must use a Dockerfile and infer
 
    1. Upload a Dockerfile text file into your new folder. The following is an example Dockerfile that creates a Docker container with a pre-trained [Named Entity Recognition (NER) model](https://spacy.io/universe/project/video-spacys-ner-model) from [spaCy](https://spacy.io/), the applications and environment variables needed to run the example:
 
-      ```
+      ```python
       FROM python:3.8
 
       RUN apt-get -y update && apt-get install -y --no-install-recommends \
@@ -69,7 +69,7 @@ If you copy your inference scripts into a notebook ending in `.ipynb`and rename 
 
    1. Upload a script to make your model available for inference. The following is an example script called `predictor.py` that uses Flask to provide the `/ping` and `/invocations` endpoints:
 
-      ```
+      ```python
       from flask import Flask
       import flask
       import spacy
@@ -115,7 +115,7 @@ If you copy your inference scripts into a notebook ending in `.ipynb`and rename 
 
    1. Upload a script to start an inference server. The following script example calls `serve` using Gunicorn as an application server, and Nginx as a web server:
 
-      ```
+      ```python
       #!/usr/bin/env python
 
       # This file implements the scoring service shell. You don't necessarily need to modify it for various
@@ -191,7 +191,7 @@ If you copy your inference scripts into a notebook ending in `.ipynb`and rename 
 
    1. Upload a script to configure your web server. The following script example called `nginx.conf`, configures a Nginx web server using Gunicorn as an application server to serve your model for inference:
 
-      ```
+      ```python
       worker_processes 1;
       daemon off; # Prevent forking
 
@@ -236,7 +236,7 @@ If you copy your inference scripts into a notebook ending in `.ipynb`and rename 
 
    1. Upload any other scripts needed to serve your model. This example needs the following example script called `wsgi.py` to help Gunicorn find your application:
 
-      ```
+      ```python
       import predictor as myapp
 
       # This is just a simple wrapper for gunicorn to find your app.
@@ -254,7 +254,7 @@ If you copy your inference scripts into a notebook ending in `.ipynb`and rename 
 
    From the folder `docker_test_folder`, build your Docker container. The following example command will build the Docker container that is configured in your Dockerfile:
 
-   ```
+   ```python
    ! docker build -t byo-container-test .
    ```
 
@@ -262,13 +262,13 @@ If you copy your inference scripts into a notebook ending in `.ipynb`and rename 
 **Note**
 If you get the following error message that Docker cannot find the Dockerfile, make sure the Dockerfile has the correct name and has been saved to the directory.
 
-   ```
+   ```python
    unable to prepare context: unable to evaluate symlinks in Dockerfile path:
    lstat /home/ec2-user/SageMaker/docker_test_folder/Dockerfile: no such file or directory
    ```
 Docker looks for a file specifically called Dockerfile without any extension within the current directory. If you named it something else, you can pass in the file name manually with the -f flag. For example, if you named your Dockerfile as Dockerfile-text.txt, build your Docker container using the `-f` flag followed by your file as follows:
 
-   ```
+   ```script
    ! docker build -t byo-container-test -f Dockerfile-text.txt .
    ```
 
@@ -324,7 +324,7 @@ Docker looks for a file specifically called Dockerfile without any extension wit
 
    If you want to use SageMaker AI hosting services for inference, you must [create a model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/create_model.html), create an [endpoint config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/create_endpoint_config.html#) and [create an endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/create_endpoint.html#). In order to get inferences from your endpoint, you can use the SageMaker AI boto3 Runtime client to invoke your endpoint. The following code shows you how to set up both the SageMaker AI client and the SageMaker Runtime client using the [SageMaker AI boto3 client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html):
 
-   ```
+   ```python
    import boto3
    from sagemaker.core.helper.session_helper import get_execution_role
 
@@ -349,7 +349,7 @@ Docker looks for a file specifically called Dockerfile without any extension wit
 
    If you want to use SageMaker AI hosting services for inference, you must create a model in SageMaker AI. The following code example shows you how to create the spaCy NER model inside of SageMaker AI:
 
-   ```
+   ```python
    from time import gmtime, strftime
 
    model_name = 'spacy-nermodel-' + strftime("%Y-%m-%d-%H-%M-%S", gmtime())
@@ -397,7 +397,7 @@ Docker looks for a file specifically called Dockerfile without any extension wit
 
       To use SageMaker AI hosting for inference, you must also configure and create an endpoint. SageMaker AI will use this endpoint for inference. The following configuration example shows how to generate and configure an endpoint with the instance type and model name that you defined previously:
 
-      ```
+      ```python
       endpoint_config_name = 'spacy-ner-config' + strftime("%Y-%m-%d-%H-%M-%S", gmtime())
       print('Endpoint config name: ' + endpoint_config_name)
 
@@ -430,7 +430,7 @@ Docker looks for a file specifically called Dockerfile without any extension wit
 
        The following code example creates the endpoint using the configuration from the previous configuration example and deploys the model:
 
-      ```
+      ```python
       %%time
 
       import time
@@ -458,7 +458,7 @@ Docker looks for a file specifically called Dockerfile without any extension wit
 
    Once your endpoint is in service, send an [invocation request](https://boto3.amazonaws.com/v1/documentation/api/1.9.42/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.invoke_endpoint) to your endpoint. The following code example shows how to send a test request to your endpoint:
 
-   ```
+   ```python
    import json
    content_type = "application/json"
    request_body = {"input": "This is a test with NER in America with \
@@ -495,7 +495,7 @@ Docker looks for a file specifically called Dockerfile without any extension wit
 
    After you have completed your invocations, delete your endpoint to conserve resources. The following code example shows you how to delete your endpoint:
 
-   ```
+   ```python
    sm_client.delete_endpoint(EndpointName=endpoint_name)
    sm_client.delete_endpoint_config(EndpointConfigName=endpoint_config_name)
    sm_client.delete_model(ModelName=model_name)

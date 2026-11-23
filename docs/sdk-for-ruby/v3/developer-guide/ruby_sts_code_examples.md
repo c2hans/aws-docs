@@ -24,7 +24,7 @@ The following code example shows how to use `AssumeRole`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Creates an AWS Security Token Service (AWS STS) client with specified credentials.
   # This is separated into a factory function so that it can be mocked for unit testing.
   #

@@ -33,7 +33,7 @@ For users who decide not to use CloudFront and AWS WAF with this solution, follo
 
 1. Set the CloudFormation parameter `SSLCertificateARN` to the ARN of your ACM certificate. For example, with the AWS CDK, run the following command. Replace `<your-certificate-arn>`, `<your-aws-cli-profile>`, and `<your-region>` with your own values:
 
-   ```
+   ```bash
    npx cdk deploy prebid-server-deployment-on-aws \
        --parameters prebid-server-deployment-on-aws:InstallCloudFrontAndWAF=No \
        --parameters prebid-server-deployment-on-aws:SSLCertificateARN=<your-certificate-arn> \
@@ -108,7 +108,7 @@ RTB Fabric provides a private, low-latency network for real-time bidding traffic
 
  **deploy.sh usage:**
 
-```
+```bash
 ./deploy.sh --deploy-bidding-simulator --simulator-connectivity rtb-fabric \
   --profile <profile> --region <region>
 ```
@@ -130,7 +130,7 @@ VPC peering provides direct network connectivity between the Prebid Server VPC a
 
  **deploy.sh usage:**
 
-```
+```bash
 ./deploy.sh --deploy-bidding-simulator --simulator-connectivity vpc-peering \
   --profile <profile> --region <region>
 ```
@@ -281,7 +281,7 @@ The solution includes a custom analytics adapter called `psdoaAnalytics` that pr
 
 By default, the analytics adapter is disabled. The configuration in `prebid-config.yaml` looks like this:
 
-```
+```yaml
 analytics:
   global:
     adapters: "psdoaAnalytics"

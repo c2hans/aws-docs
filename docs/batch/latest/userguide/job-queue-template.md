@@ -9,11 +9,11 @@ The following is an empty job queue template. You can use this template to creat
 **Note**
 You can generate a job queue template with the following AWS CLI command.
 
-```
+```sh
 $ aws batch create-job-queue --generate-cli-skeleton
 ```
 
-```
+```json
 {
    "computeEnvironmentOrder": [
       {

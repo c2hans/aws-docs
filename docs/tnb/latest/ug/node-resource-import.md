@@ -14,7 +14,7 @@ You can import the following AWS resources into AWS TNB:
 ## Syntax
 <a name="node-resource-import-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Resource.Import
   properties:
     resource\_type: String
@@ -37,7 +37,7 @@ Type: List
 ## Example
 <a name="node-resource-import-example"></a>
 
-```
+```yaml
 SampleImportedVPC:
   type: tosca.nodes.AWS.Resource.Import
   properties:

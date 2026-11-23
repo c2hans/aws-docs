@@ -32,7 +32,7 @@ Use the console to send a test message without writing code.
 
 Use the `send-whatsapp-message` command. Pass the originating phone number ID and a Meta-formatted message payload. The following example sends an approved template to a recipient.
 
-```
+```bsh
 aws socialmessaging send-whatsapp-message \
     --origination-phone-number-id {{phone-number-id-abc123}} \
     --meta-api-version {{v20.0}} \

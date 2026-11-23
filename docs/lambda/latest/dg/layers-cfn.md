@@ -10,7 +10,7 @@ In this example, the template specifies the Amazon Resource Name (ARN) of an exi
 
 Your Event Function doesn't need any special permissions to use layers.
 
-```
+```yaml
 ---
 Description: CloudFormation Template for Lambda Event Function with Lambda Layer
 Resources:

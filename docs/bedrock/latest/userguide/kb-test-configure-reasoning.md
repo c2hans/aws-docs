@@ -30,7 +30,7 @@ Model reasoning is always enabled for the DeepSeek-R1 model. The model does not 
 
 When using the Claude 3.7 Sonnet model, model reasoning can be enabled or disabled using the `additionalModelRequestFields` parameter of the [`RetrieveAndGenerate`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API. This parameter accepts any key-value pairs. For example, you can add a `reasoningConfig` field and use a `type` key to enable or disable reasoning, as shown below.
 
-```
+```JSON
 {
    "input": {
       "text": "string",
@@ -66,7 +66,7 @@ The following are some general considerations for using the reasoning models for
 The following are some considerations when using the [`RetrieveAndGenerate`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API for the reasoning models.
 + By default, when reasoning is disabled for all models including the Claude 3.7 Sonnet, the temperature is set to zero. When reasoning is enabled, the temperature must be set to one.
 
-  ```
+  ```json
   "inferenceConfig": {
       "textInferenceConfig": {
           "maxTokens": 8192,

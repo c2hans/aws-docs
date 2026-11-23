@@ -287,7 +287,7 @@ You must set this to `TLS1_2` to configure an access point, IAM role, or both wi
 
    If the command is successful, you get a response that shows you the ARN of the location that you created. For example:
 
-   ```
+   ```json
    {
        "LocationArn": "arn:aws:datasync:us-east-1:111222333444:location/loc-0b3017fc4ba4a2d8d"
    }

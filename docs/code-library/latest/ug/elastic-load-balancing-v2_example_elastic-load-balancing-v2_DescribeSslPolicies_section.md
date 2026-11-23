@@ -99,7 +99,7 @@ For more information, see [Security policies for your Application Load Balancer]
 **Tools for PowerShell V4**
 **Example 1: This examples lists all available listener policies for ElasticLoadBalancingV2.**
 
-```
+```powershell
 Get-ELB2SSLPolicy
 ```
 **Output:**
@@ -123,7 +123,7 @@ Ciphers                                                                         
 **Tools for PowerShell V5**
 **Example 1: This examples lists all available listener policies for ElasticLoadBalancingV2.**
 
-```
+```powershell
 Get-ELB2SSLPolicy
 ```
 **Output:**

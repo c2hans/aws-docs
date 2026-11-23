@@ -57,7 +57,7 @@ For an application with a customer managed key, the caller needs `kms:Decrypt` a
 
    In the following example, replace `MyApplication` with your application name and `MyApplication-snapshot-1` with your snapshot name. The following example JSON `CreateSnapshot` request adds a description and one tag.
 
-   ```
+   ```json
    {
      "ApplicationName": "MyApplication",
      "SnapshotName": "MyApplication-snapshot-1",
@@ -68,7 +68,7 @@ For an application with a customer managed key, the caller needs `kms:Decrypt` a
 
    Run the following AWS CLI command to send the same request:
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 create-snapshot \
        --application-name MyApplication \
        --snapshot-name MyApplication-snapshot-1 \
@@ -119,13 +119,13 @@ Use `DescribeSnapshot` to get the details of one enhanced snapshot. The only req
 
 The following example JSON request describes one enhanced snapshot. In the example, replace `MyApplication-snapshot-1` with your snapshot name.
 
-```
+```json
 { "SnapshotName": "MyApplication-snapshot-1" }
 ```
 
 Run the following AWS CLI command to send the same request:
 
-```
+```bash
 PROMPT> aws kinesisanalyticsv2 describe-snapshot --snapshot-name MyApplication-snapshot-1
 ```
 
@@ -170,13 +170,13 @@ Each entry in `SnapshotInfoList` holds the members in the following table.
 
 The following example JSON request lists the enhanced snapshots in the account and Region.
 
-```
+```json
 { "Limit": 50 }
 ```
 
 Run the following AWS CLI command to send the same request:
 
-```
+```bash
 PROMPT> aws kinesisanalyticsv2 list-snapshots \
     --limit 50
 ```
@@ -187,13 +187,13 @@ For an example response, see [List the enhanced snapshots in an account](snapsho
 
 The following example JSON request lists the failed enhanced snapshots in the account. The request passes a `NextToken` value from an earlier response. In the example, replace `token-from-previous-response` with the `NextToken` value from your earlier response.
 
-```
+```json
 { "SnapshotStatus": "FAILED", "Limit": 50, "NextToken": "token-from-previous-response" }
 ```
 
 Run the following AWS CLI command to send the same request:
 
-```
+```bash
 PROMPT> aws kinesisanalyticsv2 list-snapshots \
     --snapshot-status FAILED \
     --limit 50 \
@@ -235,7 +235,7 @@ You can delete an enhanced snapshot even if a later [`RollbackApplication`](http
 
    Run the following AWS CLI command to send the same request:
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 describe-snapshot \
        --snapshot-name MyApplication-snapshot-1 \
        --query 'SnapshotInfoDetails.SnapshotCreationTimestamp'
@@ -243,13 +243,13 @@ You can delete an enhanced snapshot even if a later [`RollbackApplication`](http
 
 1. Send a `DeleteSnapshot` request with the name and the timestamp for the same enhanced snapshot.
 
-   ```
+   ```json
    { "SnapshotName": "MyApplication-snapshot-1", "SnapshotCreationTimestamp": 1767225600 }
    ```
 
    Run the following AWS CLI command to send the same request:
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 delete-snapshot \
        --snapshot-name MyApplication-snapshot-1 \
        --snapshot-creation-timestamp 1767225600
@@ -290,7 +290,7 @@ If you change any of these properties, CloudFormation replaces the enhanced snap
 
 The following example template creates an enhanced snapshot of `MyApplication`. The template returns the ARN of the enhanced snapshot. Replace `MyApplication` and `MyApplication-snapshot-1` with your application name and snapshot name.
 
-```
+```yaml
 Resources:
   MySnapshot:
     Type: AWS::KinesisAnalyticsV2::Snapshot
@@ -306,7 +306,7 @@ Outputs:
 
 The following example template imports an enhanced snapshot from Amazon S3. Replace the role ARN, bucket ARN, and key prefix with your own values.
 
-```
+```yaml
 Resources:
   MyImportedSnapshot:
     Type: AWS::KinesisAnalyticsV2::Snapshot

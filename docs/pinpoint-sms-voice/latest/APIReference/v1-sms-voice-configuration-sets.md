@@ -77,7 +77,7 @@ Creates a new configuration set. After you create the configuration set, you can
 #### POST schema
 <a name="v1-sms-voice-configuration-sets-request-body-post-example"></a>
 
-```
+```json
 {
   "ConfigurationSetName": "string"
 }
@@ -89,7 +89,7 @@ Creates a new configuration set. After you create the configuration set, you can
 #### ListConfigurationSetsResponse schema
 <a name="v1-sms-voice-configuration-sets-response-body-listconfigurationsetsresponse-example"></a>
 
-```
+```json
 {
   "NextToken": "string",
   "ConfigurationSets": [
@@ -101,7 +101,7 @@ Creates a new configuration set. After you create the configuration set, you can
 #### CreateConfigurationSetResponse schema
 <a name="v1-sms-voice-configuration-sets-response-body-createconfigurationsetresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -109,7 +109,7 @@ Creates a new configuration set. After you create the configuration set, you can
 #### BadRequestException schema
 <a name="v1-sms-voice-configuration-sets-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -118,7 +118,7 @@ Creates a new configuration set. After you create the configuration set, you can
 #### AlreadyExistsException schema
 <a name="v1-sms-voice-configuration-sets-response-body-alreadyexistsexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -127,7 +127,7 @@ Creates a new configuration set. After you create the configuration set, you can
 #### LimitExceededException schema
 <a name="v1-sms-voice-configuration-sets-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -136,7 +136,7 @@ Creates a new configuration set. After you create the configuration set, you can
 #### TooManyRequestsException schema
 <a name="v1-sms-voice-configuration-sets-response-body-toomanyrequestsexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -145,7 +145,7 @@ Creates a new configuration set. After you create the configuration set, you can
 #### InternalServiceErrorException schema
 <a name="v1-sms-voice-configuration-sets-response-body-internalserviceerrorexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }

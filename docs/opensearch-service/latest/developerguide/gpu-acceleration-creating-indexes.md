@@ -14,7 +14,7 @@ When you create a domain with GPU-acceleration enabled, the `index.knn.remote_in
 
 The following example creates a vector index optimized for GPU processing. This index stores 768-dimensional vectors (common for text embeddings).
 
-```
+```json
 PUT my-vector-index
 {
   "settings": {
@@ -45,7 +45,7 @@ Key configuration elements:
 
 The following example creates a vector index where GPU processing is disabled. This index stores 768-dimensional vectors (common for text embeddings).
 
-```
+```json
 PUT my-vector-index
 {
   "settings": {

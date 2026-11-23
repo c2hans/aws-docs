@@ -15,7 +15,7 @@ Deadline Cloud also has an open-source Python library to interact with the servi
 
 The library is available on pypi via pip (`pip install deadline`). It's the same library used by the Deadline Cloud CLI tool:
 
-```
+```python
 from deadline.client import api
 
 job_bundle_path = "/path/to/job/bundle"
@@ -37,7 +37,7 @@ print(job_id)
 
  The following example starts a Qt application and shows the job bundle submitter:
 
-```
+```python
 # The GUI components must be installed with pip install "deadline[gui]"
 import sys
 from qtpy.QtWidgets import QApplication

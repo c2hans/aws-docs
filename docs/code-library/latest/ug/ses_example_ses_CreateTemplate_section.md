@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SES#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an email template.
     /// </summary>
@@ -61,7 +61,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Create an Amazon Simple Email Service (Amazon SES) template.
 /*!
   \param templateName: The name of the template.
@@ -111,7 +111,7 @@ bool AwsDoc::SES::createTemplate(const Aws::String &templateName,
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { CreateTemplateCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
@@ -158,7 +158,7 @@ const run = async () => {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesTemplate:
     """Encapsulates Amazon SES template functions."""
 
@@ -213,7 +213,7 @@ class SesTemplate:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     DATA(lo_template) = NEW /aws1/cl_sestemplate(
       iv_templatename = iv_name
       iv_subjectpart = iv_subject

@@ -33,7 +33,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-cores-get-cli"></a>
 
-```
+```bash
 aws greengrass list-core-definitions \
   [--max-results <value>] \
   [--next-token <value>]  \
@@ -43,7 +43,7 @@ aws greengrass list-core-definitions \
 
 cli-input-json format:
 
-```
+```json
 {
 "MaxResults": "integer",
 "NextToken": "string"
@@ -57,7 +57,7 @@ cli-input-json format:
 
  [ ListDefinitionsResponse](definitions-listdefinitionsresponse.md)
 
-```
+```json
 {
 "Definitions": [
   {
@@ -135,7 +135,7 @@ Produces: application/json
 Information required to create a core definition.
 where used: body; required: true
 
-```
+```json
 {
 "Name": "string",
 "InitialVersion": {
@@ -197,7 +197,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-cores-post-cli"></a>
 
-```
+```bash
 aws greengrass create-core-definition \
   [--name <value>] \
   [--initial-version <value>] \
@@ -209,7 +209,7 @@ aws greengrass create-core-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "Name": "string",
 "InitialVersion": {
@@ -238,7 +238,7 @@ cli-input-json format:
 
  [ DefinitionInformation](definitions-definitioninformation.md)
 
-```
+```json
 {
 "Name": "string",
 "Id": "string",
@@ -278,7 +278,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

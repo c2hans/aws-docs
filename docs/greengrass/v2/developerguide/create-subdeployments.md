@@ -15,7 +15,7 @@ Follow the steps in this section to create a subdeployment and check its status.
 
 1. <a name="create-subdeployments-step1"></a>Run the following command to retrieve the latest deployments for a thing group. Replace the ARN in the command with the ARN of the thing group to query. Set `--history-filter` to **LATEST\_ONLY** to see the latest deployment of that thing group.
 
-   ```
+   ```bash
    aws greengrassv2 list-deployments --target-arn arn:aws:iot:{{region}}:{{account-id}}:thinggroup/{{thingGroupName}} --history-filter LATEST_ONLY
    ```
 
@@ -23,7 +23,7 @@ Follow the steps in this section to create a subdeployment and check its status.
 
 1. Run the following command to retrieve the status of a deployment. Replace `{{deploymentId}}` with the ID of the deployment to query.
 
-   ```
+   ```bash
    aws greengrassv2 get-deployment --deployment-id {{deploymentId}}
    ```
 
@@ -39,7 +39,7 @@ Follow the steps in this section to create a subdeployment and check its status.
    + `REMOVED`
    + `CANCELED`
 
-   ```
+   ```bash
    aws iot list-job-executions-for-job --job-id {{jobID}} --status {{status}}
    ```
 
@@ -51,13 +51,13 @@ Follow the steps in this section to create a subdeployment and check its status.
 **Note**
 If a thing group for a subdeployment is used with one `parentTargetArn`, it can't be reused with a different parent fleet. If a thing group has already been used to create a subdeployment for another fleet, the API will return an error.
 
-      ```
+      ```bash
       aws iot create-thing-group --thing-group-name {{MyGreengrassCoreGroup}}
       ```
 
       If the request succeeds, the response looks similar to the following example:
 
-      ```
+      ```json
       {
         "thingGroupName": "MyGreengrassCoreGroup",
         "thingGroupArn": "arn:aws:iot:us-west-2:123456789012:thinggroup/{{MyGreengrassCoreGroup}}",
@@ -69,7 +69,7 @@ If a thing group for a subdeployment is used with one `parentTargetArn`, it can'
       + Replace {{MyGreengrassCore}} with the name of your provisioned Greengrass core.
       + Replace {{MyGreengrassCoreGroup}} with the name of your thing group.
 
-      ```
+      ```bash
       aws iot add-thing-to-thing-group --thing-name {{MyGreengrassCore}} --thing-group-name {{MyGreengrassCoreGroup}}
       ```
 
@@ -78,7 +78,7 @@ If a thing group for a subdeployment is used with one `parentTargetArn`, it can'
 1. Create a file called `deployment.json`, and then copy the following JSON object into the file. Replace {{targetArn}} with the ARN of the AWS IoT thing group to target for the subdeployment. A subdeployment target can only be a thing group. Thing group ARNs have the following format:
    + **Thing group** – `arn:aws:iot:{{region}}:{{account-id}}:thinggroup/{{thingGroupName}}`
 
-   ```
+   ```json
    {
      "targetArn": "{{targetArn}}"
    }
@@ -86,7 +86,7 @@ If a thing group for a subdeployment is used with one `parentTargetArn`, it can'
 
 1. Run the following command again to get the original deployment's details. These details include metadata, components, and job configuration. Replace {{deploymentId}} with the ID from [Step 1](#create-subdeployments-step1). You can use this deployment configuration to configure your subdeployment and make changes as needed.
 
-   ```
+   ```bash
    aws greengrassv2 get-deployment --deployment-id {{deploymentId}}
    ```
 
@@ -100,7 +100,7 @@ If a thing group for a subdeployment is used with one `parentTargetArn`, it can'
 
 1. Run the following command to create the subdeployment from `deployment.json`. Replace {{subdeploymentName}} with a name for the subdeployment.
 
-   ```
+   ```bash
    aws greengrassv2 create-deployment --deployment-name {{subdeploymentName}} --cli-input-json file://deployment.json
    ```
 
@@ -110,7 +110,7 @@ If a thing group for a subdeployment is used with one `parentTargetArn`, it can'
 **Note**
 If you create a new deployment revision of the parent fleet, it replaces all deployment revisions and subdeployments for that parent deployment. For more information, see [Revise deployments](https://docs.aws.amazon.com/greengrass/v2/developerguide/revise-deployments.html).
 
-   ```
+   ```bash
    aws greengrassv2 create-deployment --cli-input-json file://deployment.json
    ```
 

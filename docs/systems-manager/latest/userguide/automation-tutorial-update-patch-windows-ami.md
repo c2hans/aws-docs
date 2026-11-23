@@ -87,7 +87,7 @@ To solve this problem, you must make a copy of the `AWS-UpdateWindowsAmi` runboo
 
 1. Run the following command to run the `AWS-UpdateWindowsAmi` runbook. Replace each {{example resource placeholder}} with your own information. The example command below uses a recent Amazon EC2 AMI to minimize the number of patches that need to be applied. If you run this command more than once, you must specify a unique value for `targetAMIname`. AMI names must be unique.
 
-   ```
+   ```sh
    aws ssm start-automation-execution \
        --document-name="AWS-UpdateWindowsAmi" \
        --parameters SourceAmiId='{{AMI ID}}',IamInstanceProfileName='{{IAM instance profile}}',AutomationAssumeRole='arn:aws:iam::{{global:ACCOUNT_ID}}:role/{{AutomationServiceRole}}'
@@ -103,13 +103,13 @@ To solve this problem, you must make a copy of the `AWS-UpdateWindowsAmi` runboo
 
 1. To view the automation using the AWS CLI, run the following command:
 
-   ```
+   ```sh
    aws ssm describe-automation-executions
    ```
 
 1. To view details about the automation progress, run the following command.
 
-   ```
+   ```sh
    aws ssm get-automation-execution
        --automation-execution-id {{automation execution ID}}
    ```

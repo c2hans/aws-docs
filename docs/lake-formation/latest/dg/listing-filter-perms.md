@@ -34,7 +34,7 @@ To view permissions on a data filter, you must be a Data Lake administrator or h
 
   The following are the contents of file `grant-params.json`.
 
-  ```
+  ```json
   {
       "Principal": {"DataLakePrincipalIdentifier": "arn:aws:iam::111122223333:user/datalake_user1"},
       "Resource": {

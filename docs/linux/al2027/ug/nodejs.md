@@ -23,30 +23,30 @@ Use the following `alternatives` commands to manage the active Node.js version.
 
 List what `alternatives` manages
 
-```
+```sh
 alternatives --list
 ```
 
 Display the current `node` configuration
 
-```
+```sh
 alternatives --display node
 ```
 
 Change the Node.js version interactively
 
-```
+```sh
 alternatives --config node
 ```
 
 Select a specific version (manual mode)
 
-```
+```sh
 alternatives --set node /usr/bin/node-{MAJOR_VERSION}
 ```
 
 Return to automatic version selection
 
-```
+```sh
 alternatives --auto node
 ```

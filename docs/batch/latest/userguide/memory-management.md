@@ -15,7 +15,7 @@ The Amazon ECS container agent uses the Docker `ReadMemInfo()` function to query
 **Example - Determine Linux total memory**
 The **free** command returns the total memory that's recognized by the operating system.
 
-```
+```sh
 $ free -b
 ```
 The following is example output for an `m4.large` instance that's running the Amazon ECS-optimized Amazon Linux AMI.

@@ -43,7 +43,7 @@ An allowlist strategy takes advantage of the fact that access is denied by defau
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -62,7 +62,7 @@ Alternatively, you could use a denylist strategy that allows access to all resou
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -116,7 +116,7 @@ To add a policy for using AWS Resource Groups and Tag Editor to a role, do the f
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

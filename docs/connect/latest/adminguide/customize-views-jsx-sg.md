@@ -23,7 +23,7 @@ The following example uses HTML or JSX in a [Show view](show-view-block.md) bloc
 
    To use HTML:
 
-   ```
+   ```json
    {
    "TemplateString": "<TextContent>Steps:<ol><li>Customer provides incident information</li><li>Customer provides receipts and agrees with amount</li> <li>Customer receives reimbursement</li></ol></TextContent>"
    }
@@ -31,7 +31,7 @@ The following example uses HTML or JSX in a [Show view](show-view-block.md) bloc
 
    To use JSX:
 
-   ```
+   ```json
    {
    "TemplateString":
    "Please provide an introduction to the customers. Ask them how their day is going.

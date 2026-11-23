@@ -25,7 +25,7 @@ The validation performed by the AWS CDK at synthesis time is a best-effort valid
 
 Validation is performed by validation plugins. A default plugin that uses a comprehensive rule set for AWS resources is automatically added to your application, based on [@aws/cloudformation-validate](https://github.com/aws-cloudformation/cloudformation-validate). If you want to add additional plugins to your application, use the `Validations` class:
 
-```
+```javascript
 import { Validations } from 'aws-cdk-lib';
 import { CfnGuardValidator } from '@cdklabs/cdk-validator-cfnguard';
 
@@ -67,7 +67,7 @@ ERROR [CT.S3.PR.10]: Require an Amazon S3 bucket to have server-side encryption 
 
 By default, the report will be printed in a human readable format. If you want a report in JSON format, enable it using the `@aws-cdk/core:validationReportJson` via the CLI or passing it directly to the application:
 
-```
+```javascript
 const app = new App({
   context: { '@aws-cdk/core:validationReportJson': true },
 });
@@ -82,7 +82,7 @@ If you choose the JSON format, the AWS CDK will print the policy validation repo
 
 If you have evaluated a warning or error and deemed it to not apply for you, you can suppress it using the `acknowledge` method. Suppression is scope-based, and applies to all constructs under the given scope.
 
-```
+```javascript
 import { Validations } from 'aws-cdk-lib';
 
 Validations.of(myConstruct).acknowledge({
@@ -112,7 +112,7 @@ You can use [CDK Nag](https://github.com/cdklabs/cdk-nag) to check your infrastr
 
 The `Validations` class also provides methods to add custom warnings and errors to your constructs directly. You can use this mechanism to report misconfigurations directly on your construct without having to implement a validation plugin. The validations and errors you add this way will be reported along with the violations found by validation plugins.
 
-```
+```javascript
 import { Validations } from 'aws-cdk-lib';
 
 const bucket = new s3.Bucket(this, 'MyBucket');
@@ -136,7 +136,7 @@ The communication protocol between the AWS CDK core module and your policy tool 
 
 The framework will call `validate()`, passing an `IPolicyValidationContext` object. The location of the templates to be validated is given by `templatePaths`. The plugin should return an instance of `PolicyValidationPluginReport`. This object represents the report that the user wil receive at the end of the synthesis.
 
-```
+```javascript
 validate(context: IPolicyValidationContext): PolicyValidationPluginReport {
   // First read the templates using context.templatePaths...
   // ...then perform the validation, and then compose and return the report.

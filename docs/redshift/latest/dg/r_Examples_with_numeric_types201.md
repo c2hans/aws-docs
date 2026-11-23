@@ -78,7 +78,7 @@ DETAIL:  The absolute value is greater than or equal to 10^2 for field with prec
 
 The following example inserts variable-precision values into a REAL column.
 
-```
+```sql
 insert into film(replacement_cost) values(1999999.99);
 
 insert into film(replacement_cost) values(1999.99);

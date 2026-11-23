@@ -63,7 +63,7 @@ For more information, see [execute-gremlin-profile-query](https://docs.aws.amazo
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -94,10 +94,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/gremlin/profile \
   -d '{"gremlin":"g.V().hasLabel(\"airport\").has(\"code\", \"AUS\").emit().repeat(in().simplePath()).times(2).limit(100)", "profile.serializer":"application/vnd.gremlin-v3.0+json"}'
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
-
-For more information about using **awscurl** with IAM authentication, see [Using `awscurl` with temporary credentials to securely connect to a DB cluster with IAM authentication enabled](iam-auth-connect-command-line.md#iam-auth-connect-awscurl).
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -106,6 +103,8 @@ For more information about using **awscurl** with IAM authentication, see [Using
 curl -X POST https://{{your-neptune-endpoint}}:{{port}}/gremlin/profile \
   -d '{"gremlin":"g.V().hasLabel(\"airport\").has(\"code\", \"AUS\").emit().repeat(in().simplePath()).times(2).limit(100)", "profile.serializer":"application/vnd.gremlin-v3.0+json"}'
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -263,7 +262,7 @@ For more information, see [execute-gremlin-profile-query](https://docs.aws.amazo
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -293,10 +292,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/gremlin/profile \
   -d '{"gremlin":"g.withSideEffect('"'"'Neptune#useDFE'"'"', true).V().has('"'"'code'"'"', '"'"'ATL'"'"').out()"}'
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
-
-For more information about using **awscurl** with IAM authentication, see [Using `awscurl` with temporary credentials to securely connect to a DB cluster with IAM authentication enabled](iam-auth-connect-command-line.md#iam-auth-connect-awscurl).
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -305,6 +301,8 @@ For more information about using **awscurl** with IAM authentication, see [Using
 curl -X POST https://{{your-neptune-endpoint}}:{{port}}/gremlin/profile \
   -d '{"gremlin":"g.withSideEffect('"'"'Neptune#useDFE'"'"', true).V().has('"'"'code'"'"', '"'"'ATL'"'"').out()"}'
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 

@@ -92,7 +92,7 @@ Follow these steps to have AWS Config generate a configuration snapshot and visu
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws configservice describe-delivery-channels
    ```
 
@@ -117,7 +117,7 @@ Follow these steps to have AWS Config generate a configuration snapshot and visu
 
 1. Run this command to generate an AWS Config snapshot (replace `"YOUR-DELIVERY-CHANNEL-NAME"` with the name reported above):
 
-   ```
+   ```bash
    aws configservice deliver-config-snapshot --delivery-channel-name "YOUR-DELIVERY-CHANNEL-NAME"
    ```
 
@@ -127,7 +127,7 @@ Follow these steps to have AWS Config generate a configuration snapshot and visu
 
 1. Open Athena and query the table (or any view) to see if the data has been indexed. Mind that some dashboards elements will still need time to visualize your data.
 
-```
+```sql
 SELECT * FROM "cid_crcd_database"."cid_crcd_config" limit 10;
 ```
 

@@ -11,3 +11,5 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/c
 +  Inclusion of real-time and archival flows.
 
 ![A reference architecture diagram showing a citizen engagement solution to perform sentiment analysis on content posted to Twitter.](https://docs.aws.amazon.com/wellarchitected/latest/government-lens/images/citizen-engagement.jpg)
+
+*Figure 2: Reference architecture for a citizen engagement solution*

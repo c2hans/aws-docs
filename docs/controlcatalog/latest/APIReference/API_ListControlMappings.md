@@ -112,14 +112,14 @@ Use this operation to retrieve information about a control, including common con
 #### Sample Request
 <a name="API_ListControlMappings_Example_1_Request"></a>
 
-```
+```json
 aws controlcatalog list-control-mappings --filter "{\"ControlArns\":[\"arn:aws:controlcatalog:::control/br8o4lzgtvz3he7f8sxg76k7q\"],\"MappingTypes\": [\"FRAMEWORK\"]}" --max-results 2 --region us-east-1
 ```
 
 #### Sample Response
 <a name="API_ListControlMappings_Example_1_Response"></a>
 
-```
+```json
     {
         "ControlMappings": [
             {

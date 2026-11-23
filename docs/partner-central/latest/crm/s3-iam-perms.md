@@ -13,7 +13,7 @@ The following policy uses the ${amzn-s3-demo-bucket} fictitious name. Replace it
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
           "Statement": [

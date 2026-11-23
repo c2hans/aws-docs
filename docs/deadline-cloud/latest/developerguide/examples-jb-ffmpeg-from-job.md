@@ -12,7 +12,7 @@ A pre-submission hook (`inject_s3_settings.py`) runs at submission time on your 
 
 Bundle hooks are off by default. Enable them once before submitting:
 
-```
+```bash
 deadline config set settings.allow_bundle_hooks true
 ```
 
@@ -20,7 +20,7 @@ The job requires FFmpeg from the `conda-forge` conda channel. The source job and
 
 Submit with the source job's ID:
 
-```
+```bash
 deadline bundle submit ffmpeg_movie_from_job_output/ \
   -p SourceJobId={{job-id}} \
   -p FrameRate=30 \

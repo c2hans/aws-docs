@@ -16,7 +16,7 @@ The main differences between CfnCluster and AWS ParallelCluster are described in
 
 Clusters created with the `cfncluster` CLI can't be managed with the `pcluster` CLI. The following commands don't work on clusters created by CfnCluster:
 
-```
+```sh
 pcluster list
 pcluster update cluster_name
 pcluster start cluster_name
@@ -43,13 +43,13 @@ If you want to use an existing CfnCluster configuration file with AWS ParallelCl
 
 CfnCluster setting:
 
-```
+```ini
 extra_json = { "cfncluster" : { } }
 ```
 
 AWS ParallelCluster setting:
 
-```
+```ini
 extra_json = { "cluster" : { } }
 ```
 
@@ -59,7 +59,7 @@ In AWS ParallelCluster, ganglia is disabled by default. To enable ganglia, compl
 
 1. Set the [`extra_json`](cluster-definition.md#extra-json) parameter as shown:
 
-   ```
+   ```ini
    extra_json = { "cluster" : { "ganglia_enabled" : "yes" } }
    ```
 

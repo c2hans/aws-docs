@@ -11,7 +11,7 @@ Use the following example to create a policy for sending events to a Amazon Data
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -37,7 +37,7 @@ After you create the policy, create a new IAM role, and then attach the policy t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

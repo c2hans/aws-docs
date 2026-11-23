@@ -19,7 +19,7 @@ The following section describes how to create the AWS Connector sync user and as
 
 ****
 
-   ```
+   ```json
    {
 
        "Version":"2012-10-17",
@@ -64,7 +64,7 @@ The following section describes how to create the AWS Connector sync user and as
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -96,7 +96,7 @@ The following section describes how to create the AWS Connector sync user and as
 
 ****
 
-   ```
+   ```json
 
    {
        "Version":"2012-10-17",

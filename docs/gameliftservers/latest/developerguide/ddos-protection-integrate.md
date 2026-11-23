@@ -41,7 +41,7 @@ Your game client should be designed to handle both connection types.
 
 Example API call:
 
-```
+```cpp
 // C++ example using AWS SDK
 Aws::GameLift::GameLiftClient client;
 Aws::GameLift::Model::GetPlayerConnectionDetailsRequest request;

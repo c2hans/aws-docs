@@ -42,7 +42,7 @@ For more details, refer to [Zoom’s integration documentation](https://develope
 
 To configure Zoom as an outbound resource provider, use the following:
 
-```
+```json
 {
   "name": "Zoom",
   "credentialProviderVendor": "ZoomOauth2",

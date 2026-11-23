@@ -16,7 +16,7 @@ You can use the following code snippets to update a table with a partition key.
 ------
 #### [  Java  ]
 
-```
+```java
     public void updateTableCompositePartitionKeyEnforcement() {
         System.out.println("Updating table");
 
@@ -40,7 +40,7 @@ You can use the following code snippets to update a table with a partition key.
 ------
 #### [  Java v2  ]
 
-```
+```java
     public void updateTableCompositePartitionKeyEnforcement() {
         System.out.println("Updating table");
         // Can update enforcement level for dimension type partition key with OPTIONAL or REQUIRED enforcement
@@ -62,7 +62,7 @@ You can use the following code snippets to update a table with a partition key.
 ------
 #### [  Go v1 ]
 
-```
+```go
  // Update table partition key enforcement attribute
     updateTableInput := &timestreamwrite.UpdateTableInput{
          DatabaseName: aws.String(*databaseName),
@@ -90,7 +90,7 @@ You can use the following code snippets to update a table with a partition key.
 ------
 #### [  Go v2 ]
 
-```
+```go
  // Update table partition key enforcement attribute
          updateTableInput := &timestreamwrite.UpdateTableInput{
              DatabaseName: aws.String(*databaseName),
@@ -118,7 +118,7 @@ You can use the following code snippets to update a table with a partition key.
 ------
 #### [  Python  ]
 
-```
+```python
     def update_table(self):
         print('Updating table')
         try:

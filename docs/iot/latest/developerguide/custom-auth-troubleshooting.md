@@ -37,7 +37,7 @@ Perform the following steps to make sure that your devices’ connection attempt
    1. Find the **Resource-based Policy** section at the bottom of the page. If your Lambda function has the required permissions, the policy looks like the following example.
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Id": "default",

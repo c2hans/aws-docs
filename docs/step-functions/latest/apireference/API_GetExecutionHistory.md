@@ -338,7 +338,7 @@ The following shows example output from `GetExecutionHistory` for a simple `Hell
 #### Sample Response
 <a name="API_GetExecutionHistory_Example_1_Response"></a>
 
-```
+```json
 {
     "events": [
         {

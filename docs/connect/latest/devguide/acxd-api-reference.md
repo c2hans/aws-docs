@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-api-referen
 
 All operations follow the Command pattern. Import the client and the command, then call client.send(command).
 
-```
+```typescript
 import { AgenticCXDesignerClient, <CommandName> } from "amazon-connect-acxd-sdk";
 
 const client = new AgenticCXDesignerClient({
@@ -19,7 +19,7 @@ const response = await client.send(new <CommandName>({ ... }));
 
 Most List operations use token-based pagination:
 
-```
+```typescript
 const response = await client.send(new ListApplicationsCommand({
     maxResults: 50,
     nextToken: '...',

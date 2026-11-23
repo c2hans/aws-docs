@@ -145,7 +145,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-elastic-file-system-efs-create-from-backup-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-StartRestoreJobEFS",
   "Region": "us-east-1",
@@ -159,7 +159,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-elastic-file-system-efs-create-from-backup-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-StartRestoreJobEFS",
   "Region": "us-east-1",

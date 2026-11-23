@@ -23,7 +23,7 @@ To use your document to set preferences for sessions started from the AWS Comman
 
 1. Create a JSON file on your local machine with a name such as `SessionManagerRunShell.json`, and then paste the following content into it.
 
-   ```
+   ```json
    {
        "schemaVersion": "1.0",
        "description": "Document to hold regional settings for Session Manager",
@@ -50,7 +50,7 @@ To use your document to set preferences for sessions started from the AWS Comman
 
    You can also pass values to your session preferences using parameters instead of hardcoding the values as shown in the following example.
 
-   ```
+   ```json
    {
       "schemaVersion":"1.0",
       "description":"Session Document Parameter Example JSON Template",
@@ -90,7 +90,7 @@ To use your document to set preferences for sessions started from the AWS Comman
 
 1. Specify where you want to send session data. You can specify an S3 bucket name (with an optional prefix) or a CloudWatch Logs log group name. If you want to further encrypt data between local client and managed nodes, provide the KMS key to use for encryption. The following is an example.
 
-   ```
+   ```json
    {
      "schemaVersion": "1.0",
      "description": "Document to hold regional settings for Session Manager",
@@ -128,7 +128,7 @@ Add AWS KMS permissions for managed nodes in your account: [Step 2: Verify or ad
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm create-document \
        --name SSM-SessionManagerRunShell \
        --content "file://SessionManagerRunShell.json" \
@@ -139,7 +139,7 @@ Add AWS KMS permissions for managed nodes in your account: [Step 2: Verify or ad
 ------
 #### [  Windows  ]
 
-   ```
+   ```sh
    aws ssm create-document ^
        --name SSM-SessionManagerRunShell ^
        --content "file://SessionManagerRunShell.json" ^
@@ -150,7 +150,7 @@ Add AWS KMS permissions for managed nodes in your account: [Step 2: Verify or ad
 ------
 #### [   PowerShell   ]
 
-   ```
+   ```powershell
    New-SSMDocument `
        -Name "SSM-SessionManagerRunShell" `
        -Content (Get-Content -Raw SessionManagerRunShell.json) `

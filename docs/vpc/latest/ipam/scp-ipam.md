@@ -23,7 +23,7 @@ Follow the steps in this section to require members in your organization to use 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [{
@@ -57,7 +57,7 @@ Follow the steps in this section to require members in your organization to use 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [{
@@ -93,7 +93,7 @@ Follow the steps in this section to enforce IPAM for all but a given list of Org
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [{

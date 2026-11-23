@@ -8,7 +8,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 
 Here is the browser script code for the Kinesis capturing web page scroll progress example.
 
-```
+```javascript
 // Configure Credentials to use Cognito
 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
   IdentityPoolId: "IDENTITY_POOL_ID",

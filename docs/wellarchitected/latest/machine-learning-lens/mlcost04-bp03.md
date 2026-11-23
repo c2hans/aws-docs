@@ -38,7 +38,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 
 1.  **Set up Amazon SageMaker AI local mode**. When experimenting with small datasets, use Amazon SageMaker AI's local mode to train models directly on your notebook instance. This approach allows you to test and iterate on your code without provisioning separate training clusters. To implement local mode:
 
-   ```
+   ```python
    from sagemaker.estimator import Estimator
 
    estimator = Estimator(
@@ -53,7 +53,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 
 1.  **Use local development environment with SageMaker AI SDK**. For development outside of SageMaker AI notebooks, install the SageMaker AI Python SDK on your local machine. This allows you to develop and test locally while still having the ability to deploy models to AWS:
 
-   ```
+   ```bash
    pip install sagemaker
    ```
 

@@ -38,7 +38,7 @@ To allow managed integrations to retrieve the secret value from Secrets Manager,
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [ {
@@ -67,7 +67,7 @@ Add the following statement to the policy for your customer-managed AWS KMS key.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

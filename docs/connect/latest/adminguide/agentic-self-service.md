@@ -91,7 +91,7 @@ The following example shows how to replace the default Escalate tool with a cust
 
 First, remove the default Escalate tool from your AI agent. Then create a new Return to Control tool named **Escalate** with the following input schema:
 
-```
+```json
 {
     "type": "object",
     "properties": {

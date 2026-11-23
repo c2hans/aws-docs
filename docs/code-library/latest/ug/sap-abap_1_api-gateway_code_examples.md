@@ -26,7 +26,7 @@ The following code example shows how to use `CreateDeployment`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/agw#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_agw->createdeployment(
           iv_restapiid = iv_rest_api_id
@@ -55,7 +55,7 @@ The following code example shows how to use `CreateResource`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/agw#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_agw->createresource(
           iv_restapiid = iv_rest_api_id
@@ -84,7 +84,7 @@ The following code example shows how to use `CreateRestApi`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/agw#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_agw->createrestapi(
           iv_name = iv_api_name
@@ -112,7 +112,7 @@ The following code example shows how to use `DeleteRestApi`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/agw#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_agw->deleterestapi(
           iv_restapiid = iv_rest_api_id ).
@@ -138,7 +138,7 @@ The following code example shows how to use `GetResources`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/agw#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_agw->getresources(
           iv_restapiid = iv_rest_api_id ).
@@ -166,7 +166,7 @@ The following code example shows how to use `GetRestApis`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/agw#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_agw->getrestapis( ).
         DATA(lt_apis) = oo_result->get_items( ).
@@ -190,7 +190,7 @@ The following code example shows how to use `PutIntegration`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/agw#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_agw->putintegration(
           iv_restapiid = iv_rest_api_id
@@ -221,7 +221,7 @@ The following code example shows how to use `PutIntegrationResponse`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/agw#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_agw->putintegrationresponse(
           iv_restapiid = iv_rest_api_id
@@ -250,7 +250,7 @@ The following code example shows how to use `PutMethod`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/agw#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_agw->putmethod(
           iv_restapiid = iv_rest_api_id
@@ -279,7 +279,7 @@ The following code example shows how to use `PutMethodResponse`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/agw#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_agw->putmethodresponse(
           iv_restapiid = iv_rest_api_id

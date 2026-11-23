@@ -21,7 +21,7 @@ The options for monitoring an Amazon MSK cluster. You can specify which Apache K
 
 Updates the monitoring settings for the cluster. You can use this operation to specify which Apache Kafka metrics you want Amazon MSK to send to Amazon CloudWatch. You can also specify settings for open monitoring with Prometheus. The following Python 3.6 example enables open monitoring with the Node Exporter. It also sets enhanced monitoring to `PER_BROKER`. For more information about monitoring, see [Monitoring](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html).
 
-```
+```PYTHON
 import boto3
 import time
 
@@ -99,7 +99,7 @@ Enable CORS by returning the correct headers.
 #### PUT schema
 <a name="clusters-clusterarn-monitoring-request-body-put-example"></a>
 
-```
+```json
 {
   "enhancedMonitoring": enum,
   "loggingInfo": {
@@ -154,7 +154,7 @@ Enable CORS by returning the correct headers.
 #### UpdateMonitoringRequest schema
 <a name="clusters-clusterarn-monitoring-response-body-updatemonitoringresponse-example"></a>
 
-```
+```json
 {
   "clusterArn": "string",
   "clusterOperationArn": "string"
@@ -164,7 +164,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="clusters-clusterarn-monitoring-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

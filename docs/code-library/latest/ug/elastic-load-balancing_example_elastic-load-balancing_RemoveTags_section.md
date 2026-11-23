@@ -30,7 +30,7 @@ For more information, see [Tag your Classic Load Balancer](https://docs.aws.amaz
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified tag from the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Remove-ELBResourceTag -LoadBalancerName my-load-balancer -Tag @{ Key="project" }
 ```
 **Output:**
@@ -43,7 +43,7 @@ Performing the operation "Remove-ELBResourceTag (RemoveTags)" on target "Amazon.
 ```
 **Example 2: With Powershell version 2, you must use New-Object to create the tag for the Tag parameter.**
 
-```
+```powershell
 $tag = New-Object Amazon.ElasticLoadBalancing.Model.TagKeyOnly
 $tag.Key = "project"
 Remove-ELBResourceTag -Tag $tag -Force
@@ -53,7 +53,7 @@ Remove-ELBResourceTag -Tag $tag -Force
 **Tools for PowerShell V5**
 **Example 1: This example removes the specified tag from the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Remove-ELBResourceTag -LoadBalancerName my-load-balancer -Tag @{ Key="project" }
 ```
 **Output:**
@@ -66,7 +66,7 @@ Performing the operation "Remove-ELBResourceTag (RemoveTags)" on target "Amazon.
 ```
 **Example 2: With Powershell version 2, you must use New-Object to create the tag for the Tag parameter.**
 
-```
+```powershell
 $tag = New-Object Amazon.ElasticLoadBalancing.Model.TagKeyOnly
 $tag.Key = "project"
 Remove-ELBResourceTag -Tag $tag -Force

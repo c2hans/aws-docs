@@ -63,7 +63,7 @@ You can use the following AWS CLI commands or API operations to disable trusted 
 
   You can run the following command to disable AWS License Manager as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations disable-aws-service-access \
       --service-principal license-manager.amazonaws.com
   ```
@@ -72,7 +72,7 @@ You can use the following AWS CLI commands or API operations to disable trusted 
 
   To disable trusted access for Linux subscriptions use:
 
-  ```
+  ```bash
   $  aws organizations disable-aws-service-access \
       --service-principal license-manager-linux-subscriptions.amazonaws.com
   ```

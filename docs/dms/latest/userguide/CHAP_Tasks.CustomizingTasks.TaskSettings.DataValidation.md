@@ -39,7 +39,7 @@ The `ValidationOnly` setting is immutable. It can't be modified for a task after
 
 For example, the following JSON enables data validation with twice the default number of threads. It also accounts for differences in record order caused by column collation differences in PostgreSQL endpoints. Also, it provides a validation reporting delay to account for additional time to process any validation failures.
 
-```
+```json
 "ValidationSettings": {
      "EnableValidation": true,
      "ThreadCount": 10,
@@ -51,6 +51,6 @@ For example, the following JSON enables data validation with twice the default n
 **Note**
 For an Oracle endpoint, AWS DMS uses DBMS\_CRYPTO to validate BLOBs. If your Oracle endpoint uses BLOBs, grant the `execute` permission for DBMS\_CRYPTO to the user account that accesses the Oracle endpoint. To do this, run the following statement.
 
-```
+```sql
 grant execute on sys.dbms_crypto to {{dms_endpoint_user}};
 ```

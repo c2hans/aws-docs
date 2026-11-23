@@ -26,7 +26,7 @@ To declare this entity in your AWS SAM template, use the following syntax.
 ### YAML
 <a name="sam-property-function-mq-syntax.yaml"></a>
 
-```
+```yaml
   [BatchSize](#sam-function-mq-batchsize): {{Integer}}
   [Broker](#sam-function-mq-broker): {{String}}
   DynamicPolicyName: {{Boolean}}
@@ -122,7 +122,7 @@ The following is an example of an `MQ` event source type for an Amazon MQ broker
 #### YAML
 <a name="sam-property-function-mq--examples--amazon-mq-event-source--yaml"></a>
 
-```
+```yaml
 Events:
   MQEvent:
     Type: MQ

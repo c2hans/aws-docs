@@ -42,7 +42,7 @@ The wait time in minutes to allow for a state change before running the rule res
 ------
 #### [ YAML ]
 
-```
+```yaml
 rules:
     - name: MyMonitorRule
       ruleTypeId:
@@ -60,7 +60,7 @@ rules:
 ------
 #### [ JSON ]
 
-```
+```json
                             "rules": [
                                 {
                                     "name": "MyMonitorRule",

@@ -31,7 +31,7 @@ CloudTrail records the following key identifiers for a Web Function invocation:
 
 The following advanced event selector logs invocations for a single Web Function only.
 
-```
+```json
 [
     {
         "Name": "web-function-invokes",
@@ -52,7 +52,7 @@ To turn on data events on a trail, use the following procedure.
 
 1. Save the following advanced event selector as `web-function-data-events.json`. It records invocations for one Web Function. To record invocations for every Web Function in the account, remove the `resources.ARN` field selector.
 
-   ```
+   ```json
    [
      {
        "Name": "web-function-invocations",
@@ -78,7 +78,7 @@ To turn on data events on a trail, use the following procedure.
 
 1. Apply the selector to the trail:
 
-   ```
+   ```bash
    aws cloudtrail put-event-selectors \
        --trail-name {{my-trail}} \
        --advanced-event-selectors file://web-function-data-events.json
@@ -145,7 +145,7 @@ A successful invocation has no `errorCode` or `errorMessage`. Authorization deni
 
 The following example shows a successful invocation by an unauthenticated caller.
 
-```
+```json
 {
     "Records": [
         {
@@ -197,7 +197,7 @@ For an IAM-authenticated caller, the `userIdentity` field instead carries the ca
 
 Error events carry `errorCode` and `errorMessage`. The following example shows a denied invocation.
 
-```
+```json
 {
     "Records": [
         {

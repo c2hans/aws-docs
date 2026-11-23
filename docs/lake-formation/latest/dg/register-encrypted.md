@@ -91,7 +91,7 @@ If the Amazon S3 location is not in the same AWS account as the Data Catalog, fo
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

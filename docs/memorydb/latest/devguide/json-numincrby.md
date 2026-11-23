@@ -8,7 +8,7 @@ Increment the number values at the path by a given number.
 
 Syntax
 
-```
+```json
 JSON.NUMINCRBY <key> <path> <number>
 ```
 + key (required) – key of JSON document type
@@ -36,7 +36,7 @@ If the path is restricted syntax:
 
  Enhanced path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 . '{"a":[], "b":[1], "c":[1,2], "d":[1,2,3]}'
 OK
 127.0.0.1:6379> JSON.NUMINCRBY k1 $.d[*] 10
@@ -86,7 +86,7 @@ OK
 
  Restricted path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 . '{"a":[], "b":[1], "c":[1,2], "d":[1,2,3]}'
 OK
 127.0.0.1:6379> JSON.NUMINCRBY k1 .d[1] 10

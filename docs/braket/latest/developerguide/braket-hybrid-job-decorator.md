@@ -22,7 +22,7 @@ Only Python 3.12 is supported by default.
 
  You can use the `@hybrid_job` decorator to annotate a function. Braket transforms the code inside the decorator into a Braket hybrid job [algorithm script](braket-jobs-first.md). The hybrid job then invokes the function inside the decorator on an Amazon EC2 instance. You can monitor the progress of the job with `job.state()` or with the Braket console. The following code example shows how to run a sequence of five states on the State Vector Simulator (SV1) device.
 
-```
+```python
 from braket.aws import AwsDevice
 from braket.circuits import Circuit, FreeParameter, Observable
 from braket.devices import Devices
@@ -56,7 +56,7 @@ def run_hybrid_job(num_tasks=1):
 
 You create the hybrid job by invoking the function as you would normal Python functions. However, the decorator function returns the hybrid job handle rather than the result of the function. To retrieve the results after it has completed, use `job.result()`.
 
-```
+```python
 job = run_hybrid_job(num_tasks=1)
 result = job.result()
 ```
@@ -81,7 +81,7 @@ Within the `run_hybrid_job()` function, metrics from iterative algorithms are re
 
 After the hybrid job has completed, you use `job.result()` to retrieve the hybrid jobs results. Any objects in the return statement are automatically captured by Braket. Note that the objects returned by the function must be a tuple with each element being serializable. For example, the following code shows a working, and a failing example.
 
-```
+```python
 import numpy as np
 
 # Working example
@@ -100,7 +100,7 @@ def passing():
 
 By default, the name for this hybrid job is inferred from the function name. You may also specify a custom name up to 50 characters long. For example, in the following code the job name is "my-job-name".
 
-```
+```python
 @hybrid_job(device=Devices.Amazon.SV1, job_name="my-job-name")
 def function():
     pass
@@ -110,7 +110,7 @@ def function():
 
 [Local jobs](braket-jobs-local-mode.md) are be created by adding the argument `local=True` to the decorator. This runs the hybrid job in a containerized environment on your local compute environment, such as your laptop. Local jobs **do not** have priority queueing for quantum tasks. For advanced cases such as multi-node or MPI, local jobs may have access to the required Braket environment variables. The following code creates a local hybrid job with the device as the SV1 simulator.
 
-```
+```python
 @hybrid_job(device=Devices.Amazon.SV1, local=True)
 def run_hybrid_job(num_tasks=1):
     return ...
@@ -123,7 +123,7 @@ All other hybrid job options are supported. For a list of options see the [brake
 
 You can customize your runtime environment to use your preferred Python packages. You can use either a `requirements.txt` file, a list of package names, or [bring your own container (BYOC)](braket-jobs-byoc.md). For example, the `requirements.txt` file may include other packages to install.
 
-```
+```python
 qiskit
 pennylane >= 0.31
 mitiq == 0.29
@@ -131,7 +131,7 @@ mitiq == 0.29
 
 To customize a runtime environment using a `requirements.txt` file, refer to the following code example.
 
-```
+```python
 @hybrid_job(device=Devices.Amazon.SV1, dependencies="requirements.txt")
 def run_hybrid_job(num_tasks=1):
     return ...
@@ -139,7 +139,7 @@ def run_hybrid_job(num_tasks=1):
 
 Alternatively, you may supply the package names as a Python list as follows.
 
-```
+```python
 @hybrid_job(device=Devices.Amazon.SV1, dependencies=["qiskit", "pennylane>=0.31", "mitiq==0.29"])
 def run_hybrid_job(num_tasks=1):
     return ...
@@ -147,7 +147,7 @@ def run_hybrid_job(num_tasks=1):
 
 Additional source code can be specified either as a list of modules, or a single module as in the following code example.
 
-```
+```python
 @hybrid_job(device=Devices.Amazon.SV1, include_modules=["my_module1", "my_module2"])
 def run_hybrid_job(num_tasks=1):
     return ...
@@ -160,7 +160,7 @@ def run_hybrid_job(num_tasks=1):
 
 When you create a hybrid job, you may provide an input training datasets by specifying an Amazon Simple Storage Service (Amazon S3) bucket. You may also specify a local path, then Braket automatically uploads the data to Amazon S3 at `s3://<default_bucket_name>/jobs/<job_name>/<timestamp>/data/<channel_name>` . If you specify a local path, the channel name defaults to “input”. The following code shows a numpy file from the local path `data/file.npy`.
 
-```
+```python
 import numpy as np
 
 @hybrid_job(device=Devices.Amazon.SV1, input_data="data/file.npy")
@@ -171,7 +171,7 @@ def run_hybrid_job(num_tasks=1):
 
 For S3, you must use the `get_input_data_dir()` helper funciton.
 
-```
+```python
 import numpy as np
 from braket.jobs import get_input_data_dir
 
@@ -188,7 +188,7 @@ def job_s3_input_channel():
 
 You can specify multiple input data sources by providing a dictionary of channel values and S3 URIs or local paths.
 
-```
+```python
 import numpy as np
 from braket.jobs import get_input_data_dir
 
@@ -210,7 +210,7 @@ When the input data is large (>1GB), there is a long wait time before the job is
 
 To save results not included in the return statement of the decorated function, you must append the correct directory to all file writing operations. The following example, shows saving a numpy array and a matplotlib figure.
 
-```
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -235,7 +235,7 @@ For long-running hybrid jobs, its recommended to periodically save the intermedi
 
 The following is a minimal working example for saving and loading checkpoints with a hybrid job decorator:
 
-```
+```python
 from braket.jobs import save_job_checkpoint, load_job_checkpoint, hybrid_job
 
 @hybrid_job(device=None, wait_until_complete=True)

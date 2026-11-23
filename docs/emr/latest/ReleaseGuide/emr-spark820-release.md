@@ -98,7 +98,29 @@ The following release notes include information for Amazon EMR release 8.2.0 (em
 
 ### Known issues and limitations
 <a name="emrspark820-known-issues"></a>
-+ There are no known issues in this release.
++ **Unexpected error message when you lack AWS Lake Formation permissions in fine-grained access control mode** – On Amazon EMR on EC2 clusters that use Lake Formation fine-grained access control, you might not have access to a Lake Formation registered table. In this case, the query fails with the following error message:
+
+  ```
+  org.sparkproject.fgac.grpc.StatusRuntimeException: INTERNAL
+  ```
+
+  The expected error message is the following:
+
+  ```
+  org.apache.spark.fgac.error.AccessDeniedException: Unable to verify existence of default database: ... Insufficient Lake Formation permission(s): Required Describe on default
+  ```
++ **Iceberg catalogs defined in the cluster's spark-defaults classification fail** – On Amazon EMR on EC2 clusters that use Lake Formation fine-grained access control, every read through an Apache Iceberg catalog that you define in the cluster's `spark-defaults` classification fails during table resolution. This affects both a named `SparkCatalog` and the `spark_catalog` override that uses `SparkSessionCatalog`. The query fails with the following error message:
+
+  ```
+  SparkFGACException: Spark FGAC experienced an internal error
+  ```
+
+  The same catalog keys work when you pass them for each step with `--conf`.
+
+  Workaround: Remove `catalog-impl` from the cluster's `spark-defaults` classification.
++ **PySpark PyPI package import failures** – On Amazon EMR on EC2, `emr-spark-8.2.0` installs the Python 3.11 libraries (for example, `boto3` and `cycler`) outside the search path of `/usr/bin/python3.11`, so PySpark can't import them. Code that imports these libraries fails, and so do `sc.install_pypi_package` and Livy sessions that install PyPI packages, including Amazon SageMaker Unified Studio sessions that use Library Management. The failure shows an error such as `ModuleNotFoundError: No module named 'six'`. Amazon EMR Serverless and Amazon EMR on EKS aren't affected.
+
+  Workaround: When you create your cluster, add the `emr-8-2-pypi-ba.sh` bootstrap action from the [aws-emr-utilities](https://github.com/aws-samples/aws-emr-utilities/tree/main/utilities/emr-spark-8-2-0) repository on GitHub. The bootstrap action installs these libraries for `/usr/bin/python3.11` and keeps the versions that the release already ships.
 
 ## emr-spark-8.2.0 default Java versions
 <a name="emr-spark820-jdk"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/dracut-tpm2-tss.html
 
 When you rebuild the initramfs on AL2023 (for example, by running `sudo dracut --force` or as part of a kernel package installation), **dracut** might fail with the following error:
 
-```
+```sh
 $ sudo dracut --force
 dracut[E]: Module 'systemd-pcrphase' depends on 'tpm2-tss', which can't be installed
 ```
@@ -25,13 +25,13 @@ Install the missing tpm2 packages, and then rebuild the initramfs.
 
 1. Install the `tpm2-tss-fapi` and `tpm2-tools` packages:
 
-   ```
+   ```sh
    $ sudo dnf install tpm2-tss-fapi tpm2-tools
    ```
 
 1. Rebuild the initramfs. The command now completes without the `systemd-pcrphase` error:
 
-   ```
+   ```sh
    $ sudo dracut --force
    ```
 

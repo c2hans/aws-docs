@@ -38,7 +38,7 @@ To create your CloudWatch Events rules:
 
    1. To catch all events relating to a given source server:
 
-      ```
+      ```json
       {
         "source": ["aws.mgn"],
         "resources": [

@@ -26,7 +26,7 @@ Complete the following steps to create the IAM role by using the AWS Command Lin
 
 ****
 
-   ```
+   ```json
    {
         "Version":"2012-10-17",
         "Statement": [

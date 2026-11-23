@@ -33,7 +33,7 @@ The following example defines a deployment that configures the MQTT bridge compo
 ------
 #### [ Console ]
 
-```
+```json
 {
   "mqttTopicMapping": {
     "HelloWorldPubsub": {
@@ -48,7 +48,7 @@ The following example defines a deployment that configures the MQTT bridge compo
 ------
 #### [ AWS CLI ]
 
-```
+```json
 {
   "components": {
     "aws.greengrass.clientdevices.mqtt.Bridge": {

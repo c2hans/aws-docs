@@ -42,7 +42,7 @@ For more information, see [Tutorial: submit a job](https://docs.aws.amazon.com/b
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Submits a job asynchronously to the AWS Batch service.
      *
@@ -76,7 +76,7 @@ For more information, see [Tutorial: submit a job](https://docs.aws.amazon.com/b
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def submit_job(self, job_name: str, job_queue: str, job_definition: str) -> dict:
         """
         Submits a job to a job queue.

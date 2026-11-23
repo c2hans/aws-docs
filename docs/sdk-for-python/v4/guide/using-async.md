@@ -15,7 +15,7 @@ Calling an asynchronous operation creates a *coroutine*, an object that represen
 
 Calling an asynchronous client method creates a coroutine but doesn't send the request. Awaiting the coroutine starts the operation and pauses only the current coroutine until the response is ready. Other tasks on the event loop keep running.
 
-```
+```python
 from aws_sdk_dynamodb import AsyncDynamoDBClient
 
 async def table_names(
@@ -39,7 +39,7 @@ Starting a coroutine depends on who owns the application's event loop. A standal
 
 Call `asyncio.run()` once at the synchronous entry point of a script. Create the client inside the asynchronous application flow and await its operations. If a script doesn't otherwise use `asyncio`, the synchronous client is simpler.
 
-```
+```python
 import asyncio
 
 from aws_sdk_dynamodb import AsyncDynamoDBClient, AsyncDynamoDBConfig
@@ -59,7 +59,7 @@ if __name__ == "__main__":
 
 When an asynchronous framework invokes your handler, the framework already owns the event loop. Define an asynchronous handler and await SDK operations from it instead of calling `asyncio.run()` again.
 
-```
+```python
 async def handle_request(
     client: AsyncDynamoDBClient,
 ) -> dict[str, list[str]]:
@@ -77,7 +77,7 @@ Interactive environments such as Jupyter notebooks also provide an event loop an
 
 Await each coroutine that an SDK operation returns, or schedule it as a task that the application awaits later. Otherwise, the SDK doesn't send the request.
 
-```
+```python
 # Incorrect: the request is not sent.
 response = client.list_tables(limit=25)
 
@@ -90,7 +90,7 @@ response = await client.list_tables(limit=25)
 
 A blocking library call pauses every task on the event loop. A call on a synchronous SDK client also blocks, so use the asynchronous client in asynchronous code. When a library has no asynchronous alternative, move the blocking call to a worker thread with `asyncio.to_thread()`.
 
-```
+```python
 import asyncio
 from pathlib import Path
 

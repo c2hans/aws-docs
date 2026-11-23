@@ -67,7 +67,7 @@ You can wait for the next scheduled maintenance window time to run tasks on the 
 
   The following example command restarts Amazon Elastic Compute Cloud (Amazon EC2) instances that belong to the maintenance window target group with the ID e32eecb2-646c-4f4b-8ed1-205fbEXAMPLE.
 
-  ```
+  ```sh
   aws ssm register-task-with-maintenance-window \
       --window-id "mw-0c50858d01EXAMPLE" \
       --targets Key=WindowTargetIds,Values=e32eecb2-646c-4f4b-8ed1-205fbEXAMPLE \
@@ -82,7 +82,7 @@ You can wait for the next scheduled maintenance window time to run tasks on the 
 ------
 #### [ Windows ]
 
-  ```
+  ```sh
   aws ssm register-task-with-maintenance-window ^
       --window-id "mw-0c50858d01EXAMPLE" ^
       --targets Key=WindowTargetIds,Values=e32eecb2-646c-4f4b-8ed1-205fbEXAMPLE ^

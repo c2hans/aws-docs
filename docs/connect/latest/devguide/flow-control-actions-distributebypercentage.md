@@ -9,7 +9,7 @@ Returns a random number between 1 and 100 (inclusive) as its result, allowing co
 ## Parameter object
 <a name="distributebypercentage-parameter"></a>
 
-```
+```json
 {
 
 }

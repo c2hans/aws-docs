@@ -34,7 +34,7 @@ You can use the IAM console to create a service-linked role with the **AWSEndUse
 
 You can create the service-linked role for AWS End User Messaging Social with the following AWS CLI command:
 
-```
+```bsh
 aws iam create-service-linked-role --aws-service-name social-messaging.amazonaws.com
 ```
 

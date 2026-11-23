@@ -13,7 +13,7 @@ To get onboarded to Nova Forge, follow this 2-step process:
 
 To get the Nova Forge documents follow the below steps:
 
-```
+```bash
 mkdir NovaForgeHyperpodCLI
 cd NovaForgeHyperpodCLI
 aws s3 cp s3://nova-forge-c7363-206080352451-us-east-1/v1/ ./ --recursive
@@ -92,7 +92,7 @@ Flow: The account user must reach out to the account admin to request admin acce
 
 1. Under Permissions, add new permission: Add Permissions → Create inline policy → Add the following policy listed below
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

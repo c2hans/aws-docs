@@ -75,7 +75,7 @@ Most AWS SDKs and popular HTTP libraries provide built-in support for this patte
 
 **Example Retry configuration for `bedrock-runtime` (AWS SDK / boto3)**
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -85,7 +85,7 @@ client = boto3.client("bedrock-runtime", config=config)
 
 **Example Retry configuration for `bedrock-mantle` (OpenAI SDK)**
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI(
@@ -97,7 +97,7 @@ client = OpenAI(
 
 **Example Retry configuration for `bedrock-mantle` (Anthropic SDK)**
 
-```
+```python
 import anthropic
 
 client = anthropic.Anthropic(

@@ -89,7 +89,7 @@ Path to Aggregated JUnit Report: /path/to/MyTestSuite_Report.xml
 + The product version and the device features that were tested.
 + The aggregate summary of test results. This information is the same as that contained in the `{{suite-name}}_report.xml` file.
 
-```
+```xml
 <apnreport>
     <awsiotdevicetesterversion>{{idt-version}}</awsiotdevicetesterversion>
     <testsuiteversion>{{test-suite-version}}</testsuiteversion>
@@ -135,12 +135,12 @@ The version of the product being tested.
 `features`
 The features validated. Features marked as `required` are required for the test suite to validate the device. The following snippet shows how this information appears in the `awsiotdevicetester_report.xml` file.
 
-```
+```json
 <feature name="ssh" value="supported" type="required"></feature>
 ```
 Features marked as `optional` are not required for validation. The following snippets show optional features.
 
-```
+```json
 <feature name="hsi" value="supported" type="optional"></feature>
 <feature name="mqtt" value="not-supported" type="optional"></feature>
 ```
@@ -150,7 +150,7 @@ Features marked as `optional` are not required for validation. The following sni
 
 The `{{suite-name}}_Result.xml` report is in [JUnit XML format](https://llg.cubic.org/docs/junit/). You can integrate it into continuous integration and deployment platforms like [Jenkins](https://jenkins.io/), [Bamboo](https://www.atlassian.com/software/bamboo), and so on. The report contains an aggregate summary of test results.
 
-```
+```xml
 <testsuites name="{{<suite-name>}} results" time="{{<run-duration>}}" tests="{{<number-of-test>}}" failures="{{<number-of-tests>}}" skipped="{{<number-of-tests>}}" errors="{{<number-of-tests>}}" disabled="0">
     <testsuite name="{{<test-group-id>}}" package="" tests="{{<number-of-tests>}}" failures="{{<number-of-tests>}}" skipped="{{<number-of-tests>}}" errors="{{<number-of-tests>}}" disabled="0">
         <!--success-->
@@ -181,7 +181,7 @@ The report section in both the `awsiotdevicetester_report.xml` or `{{suite-name}
 
 The first XML tag `<testsuites>` contains the summary of the test execution. For example:
 
-```
+```xml
 <testsuites name="MyTestSuite results" time="2299" tests="28" failures="0" errors="0" disabled="0">
 ```Attributes used in the `<testsuites>` tag
 

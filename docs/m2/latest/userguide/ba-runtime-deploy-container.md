@@ -126,7 +126,7 @@ The contents of install-gapwalk.sh and install-app.sh scripts, which are used in
 
 1. Provide the connection information for the database that you created as part of the prerequisites in the following snippet in the `application-main.yml` file, which is located in the `{TOMCAT_GAPWALK_DIR}/config` folder. For more information see, [Creating and connecting to an Aurora PostgreSQL DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_GettingStartedAurora.CreatingConnecting.AuroraPostgreSQL.html#CHAP_GettingStarted.AuroraPostgreSQL.CreateDBCluster).
 
-   ```
+   ```yaml
    datasource:
       jicsDs:
         driver-class-name :

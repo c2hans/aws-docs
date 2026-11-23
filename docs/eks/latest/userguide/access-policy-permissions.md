@@ -15,7 +15,7 @@ Access policies include `rules` that contain Kubernetes `verbs` (permissions) an
 
 Use any one of the access policies listed on this page, or retrieve a list of all available access policies using the AWS CLI:
 
-```
+```bash
 aws eks list-access-policies
 ```
 

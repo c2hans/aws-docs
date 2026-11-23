@@ -31,7 +31,7 @@ The following code example shows how to get started using Amazon SNS.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sns/basics#code-examples).
 The Package.swift file.
 
-```
+```swift
 import PackageDescription
 
 let package = Package(
@@ -68,7 +68,7 @@ let package = Package(
 ```
 The main Swift program.
 
-```
+```swift
 import ArgumentParser
 import AWSClientRuntime
 import AWSSNS
@@ -152,7 +152,7 @@ The following code example shows how to use `CreateTopic`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sns#code-examples).
 
-```
+```swift
 import AWSSNS
 
         let config = try await SNSClient.SNSClientConfig(region: region)
@@ -177,7 +177,7 @@ The following code example shows how to use `DeleteTopic`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sns#code-examples).
 
-```
+```swift
 import AWSSNS
 
         let config = try await SNSClient.SNSClientConfig(region: region)
@@ -197,7 +197,7 @@ The following code example shows how to use `ListTopics`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sns/basics#code-examples).
 
-```
+```swift
 import AWSSNS
 
         let config = try await SNSClient.SNSClientConfig(region: region)
@@ -238,7 +238,7 @@ The following code example shows how to use `Publish`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sns#code-examples).
 
-```
+```swift
 import AWSSNS
 
         let config = try await SNSClient.SNSClientConfig(region: region)
@@ -269,7 +269,7 @@ The following code example shows how to use `Subscribe`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```swift
 import AWSSNS
 
         let config = try await SNSClient.SNSClientConfig(region: region)
@@ -293,7 +293,7 @@ import AWSSNS
 ```
 Subscribe a phone number to a topic to receive notifications by SMS.
 
-```
+```swift
 import AWSSNS
 
         let config = try await SNSClient.SNSClientConfig(region: region)
@@ -325,7 +325,7 @@ The following code example shows how to use `Unsubscribe`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sns#code-examples).
 
-```
+```swift
 import AWSSNS
 
         let config = try await SNSClient.SNSClientConfig(region: region)
@@ -356,7 +356,7 @@ The following code example shows how to:
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sqs/scenario#code-examples).
 
-```
+```swift
 import ArgumentParser
 import AWSClientRuntime
 import AWSSNS

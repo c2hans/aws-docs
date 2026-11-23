@@ -19,6 +19,9 @@ When you query a knowledge base, Amazon Bedrock returns up to five results in th
 **Note**
 The actual number of results in the response might be less than the specified `numberOfResults` value, since this parameter sets the maximum number of results to return. If you have configured hierarchical chunking for your chunking strategy, the `numberOfResults` parameter maps to the number of child chunks that the knowledge base will retrieve. Since child chunks that share the same parent chunk are replaced with the parent chunk in the final response, the number of results returned might be less than the requested amount.
 
+**Expanded retrieval**
+For top scoring chunks, Amazon Bedrock can expand them to a larger context window from the same document, so that the results include more of the surrounding content.
+
 To modify the maximum number of results to return, choose the tab for your preferred method, and then follow the steps:
 
 ------
@@ -33,7 +36,7 @@ When you make a [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReferen
 
 The following JSON object shows the minimal fields required in the [KnowledgeBaseRetrievalConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalConfiguration.html) object to set the maximum number of results to return:
 
-```
+```json
 "retrievalConfiguration": {
     "managedSearchConfiguration": {
         "numberOfResults": number
@@ -136,7 +139,7 @@ The following JSON objects show the minimal fields required in the [KnowledgeBas
 
 1. Use one filtering operator (see the **Filtering operators** table above).
 
-   ```
+   ```json
    "retrievalConfiguration": {
        "managedSearchConfiguration": {
            "filter": {
@@ -151,7 +154,7 @@ The following JSON objects show the minimal fields required in the [KnowledgeBas
 
 1. Use a logical operator (see the **Logical operators** table above) to combine up to 5.
 
-   ```
+   ```json
    "retrievalConfiguration": {
        "managedSearchConfiguration": {
            "filter": {
@@ -173,7 +176,7 @@ The following JSON objects show the minimal fields required in the [KnowledgeBas
 
 1. Use a logical operator to combine up to 5 filtering operators into a filter group, and a second logical operator to combine that filter group with another filtering operator.
 
-   ```
+   ```json
    "retrievalConfiguration": {
        "managedSearchConfiguration": {
            "filter": {
@@ -201,7 +204,7 @@ The following JSON objects show the minimal fields required in the [KnowledgeBas
 
 1. Combine up to 5 filter groups by embedding them within another logical operator. You can create one level of embedding.
 
-   ```
+   ```json
    "retrievalConfiguration": {
        "managedSearchConfiguration": {
            "filter": {
@@ -289,7 +292,7 @@ When you make a [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest
 
 The following JSON object shows the minimal fields required in the [GenerationConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GenerationConfiguration.html) to set the `guardrailConfiguration`:
 
-```
+```json
 "generationConfiguration": {
     "guardrailConfiguration": {
         "guardrailId": "{{string}}",

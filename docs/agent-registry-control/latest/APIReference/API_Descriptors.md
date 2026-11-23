@@ -39,6 +39,11 @@ The MCP server descriptor, populated when the record type is MCP.
 Type: [McpServerDescriptor](API_McpServerDescriptor.md) object
 Required: No
 
+ ** signatureAgentCard **   <a name="agentregistrycontrol-Type-Descriptors-signatureAgentCard"></a>
+The signature agent card descriptor, populated when the record type is WEB\_BOT.
+Type: [SignatureAgentCardDescriptor](API_SignatureAgentCardDescriptor.md) object
+Required: No
+
 ## See Also
 <a name="API_Descriptors_SeeAlso"></a>
 

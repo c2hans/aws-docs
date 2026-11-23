@@ -16,7 +16,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-dynamodb-syntax.yaml"></a>
 
-```
+```yaml
   [BatchSize](#sam-function-dynamodb-batchsize): {{Integer}}
   [BisectBatchOnFunctionError](#sam-function-dynamodb-bisectbatchonfunctionerror): {{Boolean}}
   [DestinationConfig](#sam-function-dynamodb-destinationconfig): {{[DestinationConfig](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-destinationconfig)}}
@@ -178,7 +178,7 @@ DynamoDB event source for a DynamoDB table that already exists in an AWS account
 #### YAML
 <a name="sam-property-function-dynamodb--examples--dynamodb-event-source-for-existing-dynamodb-table--yaml"></a>
 
-```
+```yaml
 Events:
   DDBEvent:
     Type: DynamoDB
@@ -197,7 +197,7 @@ DynamoDB Event for a DynamoDB table that is declared in the same template file.
 #### YAML
 <a name="sam-property-function-dynamodb--examples--dynamodb-event-for-dynamodb-table-declared-in-template--yaml"></a>
 
-```
+```yaml
 Events:
   DDBEvent:
     Type: DynamoDB

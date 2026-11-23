@@ -54,7 +54,7 @@ Fields like `imp.video.maxduration`, `imp.video.poddur`, `imp.video.maxseq`, `ap
 
 When passing US privacy signals to APS, use the Global Privacy Platform (GPP) fields instead of the older `us_privacy` string:
 
-```
+```JSON
 "regs": {
   "coppa": 0,
   "gpp": "DBABMA~1---",

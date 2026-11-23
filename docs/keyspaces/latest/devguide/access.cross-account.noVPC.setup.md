@@ -18,7 +18,7 @@ You can also access Amazon Keyspaces tables across different accounts without a 
 
 1. Create an IAM role in `Account A:111111111111` that has full access to the Amazon Keyspaces table and read access to the Amazon Keyspaces system tables.
 
-   ```
+   ```JSON
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -39,7 +39,7 @@ You can also access Amazon Keyspaces tables across different accounts without a 
 
 1. Configure a trust policy for the IAM role in `Account A:111111111111` so that principals in `Account B:222222222222` and `Account C:333333333333` can assume the role as trusted accounts. This is shown in the following example.
 
-   ```
+   ```JSON
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -62,7 +62,7 @@ You can also access Amazon Keyspaces tables across different accounts without a 
 
 1. Configure the VPC endpoint in `Account A:111111111111` and attach permissions to the endpoint that allow the roles from `Account B:222222222222` and `Account C:333333333333` to assume the role in `Account A` using the VPC endpoint. These permissions are valid for the VPC endpoint that they are attached to. For more information about VPC endpoint policies, see [Controlling access to interface VPC endpoints for Amazon Keyspaces](vpc-endpoints.md#interface-vpc-endpoints-policies).
 
-   ```
+   ```JSON
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -89,7 +89,7 @@ You can also access Amazon Keyspaces tables across different accounts without a 
 
 1. In `Account B:222222222222` and `Account C:333333333333`, create new roles and attach the following policy that allows the principal to assume the shared role created in `Account A:111111111111`.
 
-   ```
+   ```JSON
    {
        "Version": "2012-10-17",
        "Statement": {

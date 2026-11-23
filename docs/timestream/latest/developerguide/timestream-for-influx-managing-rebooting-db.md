@@ -26,7 +26,7 @@ To reboot a DB instance by using the AWS CLI, call the `reboot-db-instance` comm
 
 For Linux, macOS, or Unix:
 
-```
+```bash
 aws timestream-influxdb reboot-db-instance \
     --region YOUR_REGION \
     --identifier YOUR_INSTANCE_ID
@@ -34,7 +34,7 @@ aws timestream-influxdb reboot-db-instance \
 
 For Windows:
 
-```
+```bash
 aws timestream-influxdb reboot-db-instance ^
     --region YOUR_REGION ^
     --identifier YOUR_INSTANCE_ID

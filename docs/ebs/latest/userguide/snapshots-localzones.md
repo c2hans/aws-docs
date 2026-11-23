@@ -87,7 +87,7 @@ The following example policy restricts users to creating only Local snapshots in
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -154,7 +154,7 @@ The following example policy prevents all users from sharing Local snapshots in 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -195,7 +195,7 @@ The following example policy prevents all users from deleting Local snapshots in
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

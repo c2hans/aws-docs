@@ -116,7 +116,7 @@ Supports CORS preflight requests.
 #### GET schema
 <a name="jobtemplates-name-request-body-get-example"></a>
 
-```
+```json
 {
   "name": "string"
 }
@@ -125,7 +125,7 @@ Supports CORS preflight requests.
 #### PUT schema
 <a name="jobtemplates-name-request-body-put-example"></a>
 
-```
+```json
 {
   "description": "string",
   "category": "string",
@@ -1725,7 +1725,7 @@ Supports CORS preflight requests.
 #### DELETE schema
 <a name="jobtemplates-name-request-body-delete-example"></a>
 
-```
+```json
 {
   "name": "string"
 }
@@ -1737,7 +1737,7 @@ Supports CORS preflight requests.
 #### GetJobTemplateResponse schema
 <a name="jobtemplates-name-response-body-getjobtemplateresponse-example"></a>
 
-```
+```json
 {
   "jobTemplate": {
     "arn": "string",
@@ -3343,7 +3343,7 @@ Supports CORS preflight requests.
 #### UpdateJobTemplateResponse schema
 <a name="jobtemplates-name-response-body-updatejobtemplateresponse-example"></a>
 
-```
+```json
 {
   "jobTemplate": {
     "arn": "string",
@@ -4949,7 +4949,7 @@ Supports CORS preflight requests.
 #### DeleteJobTemplateResponse schema
 <a name="jobtemplates-name-response-body-deletejobtemplateresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -4957,7 +4957,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="jobtemplates-name-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

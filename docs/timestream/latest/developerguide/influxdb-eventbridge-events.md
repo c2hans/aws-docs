@@ -49,7 +49,7 @@ An event can belong to multiple categories. For example, a failed compute scalin
 
 Events are published with the following structure:
 
-```
+```json
 {
   "version": "0",
   "id": "12345678-1234-1234-1234-123456789012",
@@ -75,7 +75,7 @@ Events are published with the following structure:
 
 The following example shows a failure event, which includes additional diagnostic fields:
 
-```
+```json
 {
   "version": "0",
   "id": "87654321-4321-4321-4321-210987654321",
@@ -138,7 +138,7 @@ Choose **Custom pattern** and enter a pattern that matches the events you want.
 
 **Match all Amazon Timestream for InfluxDB events:**
 
-```
+```json
 {
     "source": ["aws.timestream-influxdb"],
     "detail-type": ["Timestream InfluxDB DB Instance Event", "Timestream InfluxDB DB Cluster Event"]
@@ -150,7 +150,7 @@ Filtering by `detail-type` is recommended. Using only `"source": ["aws.timestrea
 
 **Match only failure events:**
 
-```
+```json
 {
   "source": ["aws.timestream-influxdb"],
   "detail": {
@@ -161,7 +161,7 @@ Filtering by `detail-type` is recommended. Using only `"source": ["aws.timestrea
 
 **Match events for a specific production cluster:**
 
-```
+```json
 {
   "source": ["aws.timestream-influxdb"],
   "detail": {
@@ -172,7 +172,7 @@ Filtering by `detail-type` is recommended. Using only `"source": ["aws.timestrea
 
 **Match maintenance and failure events for a specific resource:**
 
-```
+```json
 {
   "source": ["aws.timestream-influxdb"],
   "detail": {
@@ -219,7 +219,7 @@ Review and choose **Create rule**. Events matching your pattern will be routed t
 
 Create an EventBridge rule that triggers a Step Functions state machine when a specific operation completes:
 
-```
+```json
 {
   "source": ["aws.timestream-influxdb"],
   "detail": {

@@ -18,7 +18,7 @@ Required: No
 The list of firewall types that the administrator can manage.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
-Valid Values: `WAF | SHIELD_ADVANCED`
+Valid Values: `WAF | SHIELD_ADVANCED | IGW_FIREWALL`
 Required: No
 
 ## See Also

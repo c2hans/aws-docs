@@ -48,7 +48,7 @@ You must have the following permissions settings to configure your firewall to s
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -113,7 +113,7 @@ The following view shows both standard CloudWatch permissions and the additional
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

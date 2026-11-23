@@ -32,7 +32,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/087-apigateway-lambda-integration) repository.
 
-```
+```bash
 #!/bin/bash
 
 set -euo pipefail
@@ -354,7 +354,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/031-cloudwatch-dynamicdash) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Script to create a CloudWatch dashboard with Lambda function name as a variable
@@ -766,7 +766,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/019-lambda-gettingstarted) repository.
 
-```
+```bash
 #!/bin/bash
 # AWS Lambda - Create Your First Function
 # This script creates a Lambda function, invokes it with a test event,
@@ -1247,7 +1247,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/032-cloudwatch-streams) repository.
 
-```
+```bash
 #!/bin/bash
 
 # CloudWatch Dashboard with Lambda Function Variable Script

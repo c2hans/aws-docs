@@ -145,7 +145,7 @@ AWS Mainframe Modernization requires `kms:CreateGrant` and `kms:DescribeKey` per
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -219,7 +219,7 @@ AWS Mainframe Modernization uses the same encryption context in all AWS KMS cryp
 
 **Example**
 
-```
+```json
 "encryptionContextSubset": {
         "aws:m2:app": "a1bc2defabc3defabc4defabcd"
 }
@@ -235,7 +235,7 @@ You can use the encryption context in key policies and IAM policies as `conditio
 
 AWS Mainframe Modernization uses an encryption context constraint in grants to control access to the customer managed key in your account or region. The grant constraint requires that the operations that the grant allows use the specified encryption context. The following example is a grant that AWS Mainframe Modernization leverages to encrypt application artifact when creating an application.
 
-```
+```json
 //This grant is retired immediately after create application finish
 {
    "grantee-principal": m2.us-west-2.amazonaws.com,

@@ -72,7 +72,7 @@ Besides the AWS APIs, the emulator serves one control route. It serves this rout
 
 The following example checks the health of an emulator on the default port. It uses the certificate that the emulator wrote for that port.
 
-```
+```bash
 curl --cacert ~/.aws/emulator/9297/ca.pem https://127.0.0.1:9297/__admin/health
 ```
 

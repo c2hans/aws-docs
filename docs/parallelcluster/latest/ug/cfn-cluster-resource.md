@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 The CloudFormation cluster resource is formatted as shown in the following CloudFormation template snippet:
 
-```
+```yaml
 PclusterCluster:
   Type: Custom::PclusterCluster
   Properties:
@@ -44,7 +44,7 @@ The name of the log group that's used for logging Lambda cluster operations. The
 
 **Example: **`Fn::GetAtt`:
 
-```
+```yaml
 # Provide the public IP address of the head node as an output of a stack
 Outputs:
   HeadNodeIp:
@@ -54,7 +54,7 @@ Outputs:
 
 **Example: **Simple, complete CloudFormation template with an AWS ParallelCluster custom resource:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: >
  AWS ParallelCluster CloudFormation Template

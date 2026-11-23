@@ -8,7 +8,7 @@ Get lengths of the JSON string values at the path.
 
 Syntax
 
-```
+```json
 JSON.STRLEN <key> [path]
 ```
 + key (required) – key of JSON document type
@@ -32,7 +32,7 @@ If the path is restricted syntax:
 
  Enhanced path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 $ '{"a":{"a":"a"}, "b":{"a":"a", "b":1}, "c":{"a":"a", "b":"bb"}, "d":{"a":1, "b":"b", "c":3}}'
 OK
 127.0.0.1:6379> JSON.STRLEN k1 $.a.a
@@ -52,7 +52,7 @@ OK
 
  Restricted path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 $ '{"a":{"a":"a"}, "b":{"a":"a", "b":1}, "c":{"a":"a", "b":"bb"}, "d":{"a":1, "b":"b", "c":3}}'
 OK
 127.0.0.1:6379> JSON.STRLEN k1 .a.a

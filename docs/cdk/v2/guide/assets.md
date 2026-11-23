@@ -8,7 +8,7 @@ Assets are local files, directories, or Docker images that can be bundled into A
 
 The following tutorial video provides a comprehensive overview of CDK assets, and explains how you can use them in your infrastructure as code (IaC).
 
-[![AWS Videos](https://img.youtube.com/vi/jHNtXQmkKfw?rel=0/0.jpg)](https://www.youtube.com/watch?v=jHNtXQmkKfw?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/jHNtXQmkKfw/0.jpg)](https://www.youtube.com/watch?v=jHNtXQmkKfw)
 
 You add assets through APIs that are exposed by specific AWS constructs. For example, when you define a [`lambda.Function`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html) construct, the [`code`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html#code) property lets you pass an [`asset`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Code.html#static-fromwbrassetpath-options) (directory). `Function` uses assets to bundle the contents of the directory and use it for the function’s code. Similarly, [`ecs.ContainerImage.fromAsset`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs.ContainerImage.html#static-fromwbrassetdirectory-props) uses a Docker image built from a local directory when defining an Amazon ECS task definition.
 
@@ -47,7 +47,7 @@ The following example defines a local directory asset and a file asset.
 
 **Example**
 
-```
+```javascript
 import { Asset } from 'aws-cdk-lib/aws-s3-assets';
 
 // Archived and uploaded to Amazon S3 as a .zip file
@@ -61,7 +61,7 @@ const fileAsset = new Asset(this, 'SampleSingleFileAsset', {
 });
 ```
 
-```
+```javascript
 const { Asset } = require('aws-cdk-lib/aws-s3-assets');
 
 // Archived and uploaded to Amazon S3 as a .zip file
@@ -75,7 +75,7 @@ const fileAsset = new Asset(this, 'SampleSingleFileAsset', {
 });
 ```
 
-```
+```python
 import os.path
 dirname = os.path.dirname(__file__)
 
@@ -92,7 +92,7 @@ file_asset = Asset(self, 'SampleSingleFileAsset',
 )
 ```
 
-```
+```java
 import java.io.File;
 
 import software.amazon.awscdk.services.s3.assets.Asset;
@@ -109,7 +109,7 @@ Asset fileAsset = Asset.Builder.create(this, "SampleSingleFileAsset")
                 .path(new File(startDir, "file-asset.txt").toString()).build();
 ```
 
-```
+```csharp
 using System.IO;
 using Amazon.CDK.AWS.S3.Assets;
 
@@ -126,7 +126,7 @@ var fileAsset = new Asset(this, "SampleSingleFileAsset", new AssetProps
 });
 ```
 
-```
+```go
 dirName, err := os.Getwd()
 if err != nil {
   panic(err)
@@ -150,7 +150,7 @@ A common use case is creating Lambda functions with the handler code as an Amazo
 
 The following example uses an Amazon S3 asset to define a Python handler in the local directory `handler`. It also creates a Lambda function with the local directory asset as the `code` property. Following is the Python code for the handler.
 
-```
+```python
 def lambda_handler(event, context):
   message = 'Hello World!'
   return {
@@ -162,7 +162,7 @@ The code for the main AWS CDK app should look like the following.
 
 **Example**
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Constructs } from 'constructs';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
@@ -181,7 +181,7 @@ export class HelloAssetStack extends cdk.Stack {
 }
 ```
 
-```
+```javascript
 const cdk = require('aws-cdk-lib');
 const lambda = require('aws-cdk-lib/aws-lambda');
 const path = require('path');
@@ -201,7 +201,7 @@ class HelloAssetStack extends cdk.Stack {
 module.exports = { HelloAssetStack }
 ```
 
-```
+```python
 from aws_cdk import Stack
 from constructs import Construct
 from aws_cdk import aws_lambda as lambda_
@@ -219,7 +219,7 @@ class HelloAssetStack(Stack):
             handler="index.lambda_handler")
 ```
 
-```
+```java
 import java.io.File;
 
 import software.amazon.awscdk.Stack;
@@ -246,7 +246,7 @@ public class HelloAssetStack extends Stack {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.Lambda;
 using System.IO;
@@ -265,7 +265,7 @@ public class HelloAssetStack : Stack
 }
 ```
 
-```
+```go
 import (
   "os"
   "path"
@@ -313,7 +313,7 @@ The following example uses deploy-time attributes to pass the location of an ima
 
 **Example**
 
-```
+```javascript
 import { Asset } from 'aws-cdk-lib/aws-s3-assets';
 import * as path from 'path';
 
@@ -333,7 +333,7 @@ new lambda.Function(this, "myLambdaFunction", {
 });
 ```
 
-```
+```javascript
 const { Asset } = require('aws-cdk-lib/aws-s3-assets');
 const path = require('path');
 
@@ -353,7 +353,7 @@ new lambda.Function(this, "myLambdaFunction", {
 });
 ```
 
-```
+```python
 import os.path
 
 import aws_cdk.aws_lambda as lambda_
@@ -374,7 +374,7 @@ lambda_.Function(self, "myLambdaFunction",
         S3_OBJECT_URL=image_asset.s3_object_url))
 ```
 
-```
+```java
 import java.io.File;
 
 import software.amazon.awscdk.Stack;
@@ -405,7 +405,7 @@ public class FunctionStack extends Stack {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.Lambda;
 using Amazon.CDK.AWS.S3.Assets;
@@ -431,7 +431,7 @@ new Function(this, "myLambdaFunction", new FunctionProps
 });
 ```
 
-```
+```go
 import (
   "os"
   "path"
@@ -471,7 +471,7 @@ The following example grants an IAM group read permissions on a file asset.
 
 **Example**
 
-```
+```javascript
 import { Asset } from 'aws-cdk-lib/aws-s3-assets';
 import * as path from 'path';
 
@@ -483,7 +483,7 @@ const group = new iam.Group(this, 'MyUserGroup');
 asset.grantRead(group);
 ```
 
-```
+```javascript
 const { Asset } = require('aws-cdk-lib/aws-s3-assets');
 const path = require('path');
 
@@ -495,7 +495,7 @@ const group = new iam.Group(this, 'MyUserGroup');
 asset.grantRead(group);
 ```
 
-```
+```python
 from aws_cdk.aws_s3_assets import Asset
 import aws_cdk.aws_iam as iam
 
@@ -509,7 +509,7 @@ dirname = os.path.dirname(__file__)
         asset.grant_read(group)
 ```
 
-```
+```java
 import java.io.File;
 
 import software.amazon.awscdk.Stack;
@@ -531,7 +531,7 @@ public class GrantStack extends Stack {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.IAM;
 using Amazon.CDK.AWS.S3.Assets;
@@ -545,7 +545,7 @@ var group = new Group(this, "MyUserGroup");
 asset.GrantRead(group);
 ```
 
-```
+```go
 import (
   "os"
   "path"
@@ -578,7 +578,7 @@ The following example defines a Docker image that is built locally and pushed to
 
 **Example**
 
-```
+```javascript
 import { DockerImageAsset } from 'aws-cdk-lib/aws-ecr-assets';
 
 const asset = new DockerImageAsset(this, 'MyBuildImage', {
@@ -586,7 +586,7 @@ const asset = new DockerImageAsset(this, 'MyBuildImage', {
 });
 ```
 
-```
+```javascript
 const { DockerImageAsset } = require('aws-cdk-lib/aws-ecr-assets');
 
 const asset = new DockerImageAsset(this, 'MyBuildImage', {
@@ -594,7 +594,7 @@ const asset = new DockerImageAsset(this, 'MyBuildImage', {
 });
 ```
 
-```
+```python
 from aws_cdk.aws_ecr_assets import DockerImageAsset
 
 import os.path
@@ -604,7 +604,7 @@ asset = DockerImageAsset(self, 'MyBuildImage',
     directory=os.path.join(dirname, 'my-image'))
 ```
 
-```
+```java
 import software.amazon.awscdk.services.ecr.assets.DockerImageAsset;
 
 File startDir = new File(System.getProperty("user.dir"));
@@ -613,7 +613,7 @@ DockerImageAsset asset = DockerImageAsset.Builder.create(this, "MyBuildImage")
             .directory(new File(startDir, "my-image").toString()).build();
 ```
 
-```
+```csharp
 using System.IO;
 using Amazon.CDK.AWS.ECR.Assets;
 
@@ -623,7 +623,7 @@ var asset = new DockerImageAsset(this, "MyBuildImage", new DockerImageAssetProps
 });
 ```
 
-```
+```go
 import (
   "os"
   "path"
@@ -651,7 +651,7 @@ A common use case is to create an Amazon ECS [`TaskDefinition`](https://docs.aws
 
 **Example**
 
-```
+```javascript
 import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as ecr_assets from 'aws-cdk-lib/aws-ecr-assets';
 import * as path from 'path';
@@ -670,7 +670,7 @@ taskDefinition.addContainer("my-other-container", {
 });
 ```
 
-```
+```javascript
 const ecs = require('aws-cdk-lib/aws-ecs');
 const ecr_assets = require('aws-cdk-lib/aws-ecr-assets');
 const path = require('path');
@@ -689,7 +689,7 @@ taskDefinition.addContainer("my-other-container", {
 });
 ```
 
-```
+```python
 import aws_cdk.aws_ecs as ecs
 import aws_cdk.aws_ecr_assets as ecr_assets
 
@@ -707,7 +707,7 @@ task_definition.add_container("my-other-container",
     image=ecs.ContainerImage.from_docker_image_asset(asset))
 ```
 
-```
+```java
 import java.io.File;
 
 import software.amazon.awscdk.services.ecs.FargateTaskDefinition;
@@ -731,7 +731,7 @@ taskDefinition.addContainer("my-other-container",
 )
 ```
 
-```
+```csharp
 using System.IO;
 using Amazon.CDK.AWS.ECS;
 using Amazon.CDK.AWS.Ecr.Assets;
@@ -753,7 +753,7 @@ taskDefinition.AddContainer("my-other-container", new ContainerDefinitionOptions
 });
 ```
 
-```
+```go
 import (
   "os"
   "path"
@@ -789,7 +789,7 @@ The following example shows how to use the deploy-time attributes `repository` a
 
 **Example**
 
-```
+```javascript
 import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as path from 'path';
 import { DockerImageAsset } from 'aws-cdk-lib/aws-ecr-assets';
@@ -808,7 +808,7 @@ taskDefinition.addContainer("my-other-container", {
 });
 ```
 
-```
+```javascript
 const ecs = require('aws-cdk-lib/aws-ecs');
 const path = require('path');
 const { DockerImageAsset } = require('aws-cdk-lib/aws-ecr-assets');
@@ -827,7 +827,7 @@ taskDefinition.addContainer("my-other-container", {
 });
 ```
 
-```
+```python
 import aws_cdk.aws_ecs as ecs
 from aws_cdk.aws_ecr_assets import DockerImageAsset
 
@@ -845,7 +845,7 @@ task_definition.add_container("my-other-container",
         asset.repository, asset.image_uri.rpartition(":")[-1]))
 ```
 
-```
+```java
 import java.io.File;
 
 import software.amazon.awscdk.services.ecr.assets.DockerImageAsset;
@@ -871,7 +871,7 @@ taskDefinition.addContainer("my-other-container",
                 asset.getRepository(), imageTag)).build());
 ```
 
-```
+```csharp
 using System.IO;
 using Amazon.CDK.AWS.ECS;
 using Amazon.CDK.AWS.ECR.Assets;
@@ -892,7 +892,7 @@ taskDefinition.AddContainer("my-other-container", new ContainerDefinitionOptions
 });
 ```
 
-```
+```go
 import (
   "os"
   "path"
@@ -928,7 +928,7 @@ You can provide customized build arguments for the Docker build step through the
 
 **Example**
 
-```
+```javascript
 const asset = new DockerImageAsset(this, 'MyBuildImage', {
   directory: path.join(__dirname, 'my-image'),
   buildArgs: {
@@ -937,7 +937,7 @@ const asset = new DockerImageAsset(this, 'MyBuildImage', {
 });
 ```
 
-```
+```javascript
 const asset = new DockerImageAsset(this, 'MyBuildImage', {
   directory: path.join(__dirname, 'my-image'),
   buildArgs: {
@@ -946,13 +946,13 @@ const asset = new DockerImageAsset(this, 'MyBuildImage', {
 });
 ```
 
-```
+```python
 asset = DockerImageAsset(self, "MyBuildImage",
     directory=os.path.join(dirname, "my-image"),
     build_args=dict(HTTP_PROXY="http://10.20.30.2:1234"))
 ```
 
-```
+```java
 DockerImageAsset asset = DockerImageAsset.Builder.create(this, "my-image"),
             .directory(new File(startDir, "my-image").toString())
             .buildArgs(java.util.Map.of(    // Java 9 or later
@@ -960,7 +960,7 @@ DockerImageAsset asset = DockerImageAsset.Builder.create(this, "my-image"),
             .build();
 ```
 
-```
+```csharp
 var asset = new DockerImageAsset(this, "MyBuildImage", new DockerImageAssetProps {
     Directory = Path.Combine(Directory.GetCurrentDirectory(), "my-image"),
     BuildArgs = new Dictionarystring, string
@@ -970,7 +970,7 @@ var asset = new DockerImageAsset(this, "MyBuildImage", new DockerImageAssetProps
 });
 ```
 
-```
+```go
 dirName, err := os.Getwd()
 if err != nil {
   panic(err)

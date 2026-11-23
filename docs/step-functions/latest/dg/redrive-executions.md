@@ -48,7 +48,7 @@ Step Functions needs appropriate permission to redrive an execution. The followi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

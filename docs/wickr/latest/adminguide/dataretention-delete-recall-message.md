@@ -8,7 +8,7 @@ This guide documents the new AWS Wickr administration console, released on March
 
 The **isrecall** field shows whether the message was recalled (visible to all participants) or only deleted locally.
 
-```
+```json
 {
   "control": {
     "isrecall": true,

@@ -22,7 +22,7 @@ In order to fine-tune a JumpStart model reference in your curated hub, do the fo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -42,7 +42,7 @@ If your curated hub is shared across accounts and the hub content is owned by an
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -76,13 +76,13 @@ The following procedure shows you how to fine-tune a model reference in your pri
 
 1. Make sure that you have the latest version (at least `3.0.0`) of the SageMaker Python SDK installed. For more information, see [ Use Version 3.x of the SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/) on the Read the Docs website.
 
-   ```
+   ```bash
    !pip install --upgrade sagemaker
    ```
 
 1. Import the AWS SDK for Python (Boto3) and the modules you need from the SageMaker Python SDK.
 
-   ```
+   ```python
    import boto3
    from sagemaker.train import ModelTrainer
    from sagemaker.train.configs import Compute, InputData
@@ -92,7 +92,7 @@ The following procedure shows you how to fine-tune a model reference in your pri
 
 1. Initialize a Boto3 session, a SageMaker AI client, and a SageMaker Python SDK session.
 
-   ```
+   ```python
    sagemaker_client = boto3.Session(region_name={{<AWS-region>}}).client("sagemaker")
    sm_session = Session(sagemaker_client=sagemaker_client)
    ```
@@ -103,7 +103,7 @@ The following procedure shows you how to fine-tune a model reference in your pri
 
    You can also optionally specify the `output_path` to the Amazon S3 location where you want to store the fine-tuned model weights. If you don't specify the `output_path`, then uses a default SageMaker AI Amazon S3 bucket for the region in your account, named with the following format: `sagemaker-{{<region>}}-{{<account-id>}}`.
 
-   ```
+   ```python
    jumpstart_config = JumpStartConfig(
        model_id="meta-textgeneration-llama-3-2-1b",
        hub_name={{<your-hub-name>}},
@@ -122,7 +122,7 @@ The following procedure shows you how to fine-tune a model reference in your pri
 
 1. Create an `InputData` object. Set `channel_name` to `train` and `data_source` to the location of your fine-tuning dataset. In the following example, replace `{{<your-fine-tuning-dataset>}}` with the Amazon S3 URI of your dataset. If you have additional considerations, such as using local mode or multiple training data channels, see [ SageMaker Train](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) in the SageMaker Python SDK documentation on the Read the Docs website.
 
-   ```
+   ```python
    training_input = InputData(
        channel_name="train",
        data_source="s3://{{<your-fine-tuning-dataset>}}",
@@ -133,7 +133,7 @@ The following procedure shows you how to fine-tune a model reference in your pri
 **Note**
 The preceding `JumpStartConfig` example sets `accept_eula=False`. For gated models, you must change the value to `True` to accept the EULA.
 
-   ```
+   ```python
    model_trainer.train(input_data_config=[training_input])
    ```
 

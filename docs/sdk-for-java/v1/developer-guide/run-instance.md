@@ -10,7 +10,7 @@ Use the following procedure to launch one or more identically configured EC2 ins
 
 1. Create and initialize a [RunInstancesRequest](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/RunInstancesRequest.html) instance. Make sure that the AMI, key pair, and security group that you specify exist in the region that you specified when you created the client object.
 
-   ```
+   ```java
    RunInstancesRequest runInstancesRequest =
       new RunInstancesRequest();
 
@@ -36,7 +36,7 @@ Use the following procedure to launch one or more identically configured EC2 ins
 
 1. Launch the instances by passing the request object to the [runInstances](http://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/AmazonEC2Client.html#runInstances-com.amazonaws.services.ec2.model.RunInstancesRequest-) method. The method returns a [RunInstancesResult](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/RunInstancesResult.html) object, as follows:
 
-   ```
+   ```java
    RunInstancesResult result = amazonEC2Client.runInstances(
                                  runInstancesRequest);
    ```

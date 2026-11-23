@@ -39,7 +39,7 @@ For more information about AWS KMS key policies, see [Using Key Policies in AWS 
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Asynchronously retrieves the key policy for the specified key ID and policy name.
      *
@@ -72,7 +72,7 @@ For more information about AWS KMS key policies, see [Using Key Policies in AWS 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyPolicy:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -115,7 +115,7 @@ class KeyPolicy:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         oo_result = lo_kms->listkeypolicies( iv_keyid = iv_key_id ).

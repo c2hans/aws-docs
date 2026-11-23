@@ -89,7 +89,7 @@ This is example Lambda trigger code. The pre sign-up trigger is invoked immediat
 ------
 #### [ Node.js ]
 
-```
+```javascript
 export const handler = async (event, context, callback) => {
   // Set the user pool autoConfirmUser flag after validating the email domain
   event.response.autoConfirmUser = false;
@@ -161,7 +161,7 @@ If an alias with the same phone number already exists, the alias is moved to the
 ------
 #### [ Node.js ]
 
-```
+```javascript
 exports.handler = (event, context, callback) => {
   // Confirm the user
   event.response.autoConfirmUser = true;
@@ -230,7 +230,7 @@ This example checks the length of the username in a sign-up request. The example
 ------
 #### [ Node.js ]
 
-```
+```javascript
 export const handler = (event, context, callback) => {
     // Impose a condition that the minimum length of the username is 5 is imposed on all user pools.
     if (event.userName.length < 5) {

@@ -76,7 +76,7 @@ You can select only roles registered here as an actor credential in the penetrat
 
 1.  **Configure the role’s trust policy** to allow AWS Security Agent to assume it. Use the following trust policy. Replace `<region>` and `<your-account-id>` with your own values:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [{
@@ -108,7 +108,7 @@ The agent retrieves the secret value directly from Secrets Manager. Use the **Ag
 
 For example, if the agent is to submit a username/password login form at https://example.com/login, you may format your secret as JSON with `username` and `password` fields. If the application requires TOTP-based 2FA, include a `totpSecret` field with either the TOTP secret directly or a full `otpauth://totp/` URI:
 
-```
+```json
 {
   "username": "test-user",
   "password": "secure-password-here",
@@ -138,7 +138,7 @@ The IAM role must have `lambda:InvokeFunction` permissions and the function must
 
 When the penetration test runs, AWS Security Agent invokes your AWS Lambda function synchronously and passes an event that identifies the penetration test and the specific credential being resolved:
 
-```
+```json
 {
   "pentest_arn": "arn:aws:securityagent:us-west-2:111122223333:pentest/pt-abcd1234-5678-90ab-cdef-EXAMPLE11111",
   "actor_identifier": "Credential1"
@@ -182,7 +182,7 @@ If you dismiss this display before you copy the address, you can retrieve it lat
 
 Set `enableEmailMfa` to `true` for the actor in the `assets` parameter of your `create-pentest` or `update-pentest` request. For example:
 
-```
+```bash
 aws securityagent create-pentest \
   --title "My penetration test" \
   --agent-space-id "your-agent-space-id" \
@@ -228,7 +228,7 @@ To view the messages in the console, open the penetration test and choose the **
 
 To view the messages with the AWS CLI, run `list-actor-messages`:
 
-```
+```bash
 aws securityagent list-actor-messages \
   --agent-space-id "your-agent-space-id" \
   --pentest-id "your-pentest-id" \

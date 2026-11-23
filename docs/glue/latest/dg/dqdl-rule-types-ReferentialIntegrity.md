@@ -8,7 +8,7 @@ Checks to what extent the values of a set of columns in the primary dataset are 
 
 **Syntax**
 
-```
+```json
 ReferentialIntegrity {{<PRIMARY_COLS>}} {{<REFERENCE_DATASET_COLS>}} {{<EXPRESSION>}}
 ```
 + **PRIMARY\_COLS** – A comma-separated list of column names in the primary dataset.
@@ -23,7 +23,7 @@ ReferentialIntegrity {{<PRIMARY_COLS>}} {{<REFERENCE_DATASET_COLS>}} {{<EXPRESSI
 
 The following example rule checks that more than 90% of the values in the `zipcode` column in the primary dataset, are present in the `zipcode` column in the `reference` dataset.
 
-```
+```json
 ReferentialIntegrity "zipcode" "reference.zipcode" >= 0.9
 ```
 
@@ -31,7 +31,7 @@ ReferentialIntegrity "zipcode" "reference.zipcode" >= 0.9
 
 In the following example, columns containing city and state information exist in the primary dataset and the reference dataset. The names of the columns are different in both datasets. The rule checks if the set of values of the columns in the primary dataset is exactly equal to the set of values of the columns in the reference dataset.
 
-```
+```json
 ReferentialIntegrity "city,state" "reference.{ref_city,ref_state}" = 1.0
 ```
 

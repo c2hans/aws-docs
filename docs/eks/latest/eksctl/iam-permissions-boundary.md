@@ -8,7 +8,7 @@ A [permissions boundary](https://docs.aws.amazon.com/IAM/latest/UserGuide/access
 
 You can provide your permissions boundary so that all identity-based entities created by eksctl are created within that boundary. This example demonstrates how a permissions boundary can be provided to the various identity-based entities that are created by eksctl:
 
-```
+```yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
@@ -42,7 +42,7 @@ It is not possible to provide both a role ARN and a permissions boundary.
 
 Please note that when you create a cluster with OIDC enabled eksctl will automatically create an `iamserviceaccount` for the VPC-CNI for [security reasons](security.md). If you would like to add a permission boundary to it then you must specify the `iamserviceaccount` in your config file manually:
 
-```
+```yaml
 iam:
   serviceAccounts:
     - metadata:

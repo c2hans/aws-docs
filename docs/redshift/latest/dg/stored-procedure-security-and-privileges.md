@@ -23,7 +23,7 @@ Because a SECURITY DEFINER procedure runs with the privileges of the user that o
 
 The following example sets `search_path` to `admin` to make sure that the `user_creds` table is accessed from the `admin` schema and not from public or any other schema in the caller's `search_path`.
 
-```
+```sql
 CREATE OR REPLACE PROCEDURE sp_get_credentials(userid int, o_creds OUT varchar)
 AS $$
 BEGIN

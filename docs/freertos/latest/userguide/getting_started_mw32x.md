@@ -63,13 +63,13 @@ Follow these steps to set up the GCC toolchain in Linux.
 
 1. Use the following command to untar the file.
 
-   ```
+   ```bash
    tar –vxf {{filename}}
    ```
 
 1. Add the path of the installed toolchain to the system PATH. For example, append the following line at the end of the `.profile` file located in `/home/{{user-name}}` directory.
 
-   ```
+   ```bash
    PATH=$PATH:{{path to gcc-arm-none-eabit-4_9_2015_q3/bin}}
    ```
 
@@ -87,7 +87,7 @@ Any modern Linux desktop distribution such as Ubuntu or Fedora can be used. Howe
 The SDK includes a script to enable quick setup of your development environment on a newly setup Linux machine. The script attempts to auto detect the machine type and install the appropriate software, including C libraries, USB library, FTDI library, ncurses, python, and latex. In this section, the generic directory name `{{amzsdk_bundle-x.y.z}}` indicates the AWS SDK root directory. The actual directory name might be different. You must have root privileges.
 + Navigate to the `{{amzsdk_bundle-x.y.z/}}` directory and run this command.
 
-  ```
+  ```bash
   ./lib/third_party/mcu_vendor/marvell/WMSDK/mw320/sdk/tools/bin/installpkgs.sh
   ```
 
@@ -98,7 +98,7 @@ In this guide, the `flashprog` operation uses the `flashprog.py` script to flash
 
 You can configure your Linux development host to perform the `flashprog` and `ramload` operations without requiring the `sudo` command each time. To do this, run the following command.
 
-```
+```bash
 ./lib/third_party/mcu_vendor/marvell/WMSDK/mw320/sdk/tools/bin/perm_fix.sh
 ```
 
@@ -125,7 +125,7 @@ Verify that two ttyUSB devices have been created. The second ttyUSB is the seria
 
 In this guide, we use minicom to see the serial console output. You might also use other serial programs such as `putty`. Run the following command to execute minicom in setup mode.
 
-```
+```bash
 minicom –s
 ```
 
@@ -157,7 +157,7 @@ OpenOCD version 0.9 is required. It's also required for Eclipse functionality. I
 
 Run the standard Linux command to install OpenOCD,
 
-```
+```bash
 apt-get install openocd
 ```
 
@@ -167,7 +167,7 @@ If the above command doesn't install version 0.9 or later, use the following pro
 
 1. Run the following command to install libusb-1.0.
 
-   ```
+   ```bash
    sudo apt-get install libusb-1.0
    ```
 
@@ -177,13 +177,13 @@ If the above command doesn't install version 0.9 or later, use the following pro
 
 1. Configure openocd with the following command.
 
-   ```
+   ```bash
    ./configure --enable-ftdi --enable-jlink
    ```
 
 1. Run the make utility to compile opencd.
 
-   ```
+   ```bash
    make install
    ```
 
@@ -219,7 +219,7 @@ This topic covers both options.
 
   For example:
 
-  ```
+  ```c
   #define clientcredentialWIFI_SSID "{{Wi-Fi SSID}}"
   #define clientcredentialWIFI_PASSWORD "{{Wi-Fi password}}"
   #define clientcredentialWIFI_SECURITY "{{Wi-Fi security}}"
@@ -236,7 +236,7 @@ The SSID and password should be enclosed in double quotes.
 
 1. Use the following command to start building the demo application.
 
-   ```
+   ```bash
    cmake -DVENDOR=marvell -DBOARD=mw320 -DCOMPILER=arm-gcc -S .  -Bbuild -DAFR_ENABLE_TESTS=0
    ```
 
@@ -245,13 +245,13 @@ The SSID and password should be enclosed in double quotes.
 
 1. Navigate to the build directory.
 
-   ```
+   ```bash
    cd build
    ```
 
 1. Run the make utility to build the application.
 
-   ```
+   ```bash
    make all -j4
    ```
 
@@ -260,7 +260,7 @@ The SSID and password should be enclosed in double quotes.
 
 1. Use the following commands to build a test application.
 
-   ```
+   ```bash
    cmake -DVENDOR=marvell -DBOARD=mw320 -DCOMPILER=arm-gcc -S .  -Bbuild -DAFR_ENABLE_TESTS=1
    cd build
    make all -j4
@@ -272,7 +272,7 @@ The SSID and password should be enclosed in double quotes.
 
    1. Before you flash the firmware image, prepare the development board's flash with the common components Layout and Boot2. Use the following commands.
 
-      ```
+      ```bash
       cd amzsdk_bundle-x.y.z
       ./vendors/marvell/WMSDK/mw320/sdk/tools/OpenOCD/flashprog.py -l ./vendors/marvell/WMSDK/mw320/sdk/tools/OpenOCD/mw300/layout.txt --boot2 ./vendors/marvell/WMSDK/mw320/boot2/bin/boot2.bin
       ```
@@ -284,7 +284,7 @@ The SSID and password should be enclosed in double quotes.
 
    1. The firmware uses the Wi-Fi chipset for its functionality, and the Wi-Fi chipset has its own firmware that must also be present in the flash. You use the `flashprog.py` utility to flash the Wi-Fi firmware in the same way that you did to flash the Boot2 boot-loader and the MCU firmware. Use the following commands to flash the Wi-Fi firmware.
 
-      ```
+      ```bash
       cd amzsdk_bundle-x.y.z
       ./vendors/marvell/WMSDK/mw320/sdk/tools/OpenOCD/flashprog.py --wififw ./vendors/marvell/WMSDK/mw320/wifi-firmware/mw30x/mw30x_uapsta_W14.88.36.p135.bin
       ```
@@ -294,7 +294,7 @@ The SSID and password should be enclosed in double quotes.
 
    1.  Use the following commands to flash the MCU firmware.
 
-      ```
+      ```bash
       cd amzsdk_bundle-x.y.z
       ./vendors/marvell/WMSDK/mw320/sdk/tools/OpenOCD/flashprog.py --mcufw build/cmake/vendors/marvell/mw300_rd/aws_demos.bin -r
       ```
@@ -303,7 +303,7 @@ The SSID and password should be enclosed in double quotes.
 
    1. To run the test app, flash the `aws_tests.bin` binary located at the same directory.
 
-      ```
+      ```bash
       cd amzsdk_bundle-x.y.z
       ./vendors/marvell/WMSDK/mw320/sdk/tools/OpenOCD/flashprog.py --mcufw build/cmake/vendors/marvell/mw300_rd/aws_tests.bin -r
       ```
@@ -320,7 +320,7 @@ The SSID and password should be enclosed in double quotes.
 
    Use the following commands to load the firmware into the SRAM.
 
-   ```
+   ```bash
    cd amzsdk_bundle-x.y.z
    ./lib/third_party/mcu_vendor/marvell/WMSDK/mw320/sdk/tools/OpenOCD/ramload.py build/cmake/vendors/marvell/mw300_rd/aws_demos.axf
    ```
@@ -336,13 +336,13 @@ The SSID and password should be enclosed in double quotes.
 
    Run the following command to work with the `aws_demos` Eclipse project.
 
-   ```
+   ```bash
    cmake -DVENDOR=marvell -DBOARD=mw320 -DCOMPILER=arm-gcc -S .  -Bbuild -DAFR_ENABLE_TESTS=0
    ```
 
    Run the following command to work with the `aws_tests` Eclipse project.
 
-   ```
+   ```bash
    cmake -DVENDOR=marvell -DBOARD=mw320 -DCOMPILER=arm-gcc -S .  -Bbuild -DAFR_ENABLE_TESTS=1
    ```
 **Tip**
@@ -366,7 +366,7 @@ Run the `cmake` command every time you switch between the `aws_demos` project an
 
    1. Before you flash the firmware image, prepare the development board's flash with the common components, Layout and Boot2. Use the following commands.
 
-      ```
+      ```bash
       cd amzsdk_bundle-x.y.z
       ./vendors/marvell/WMSDK/mw320/sdk/tools/OpenOCD/flashprog.py -l ./vendors/marvell/WMSDK/mw320/sdk/tools/OpenOCD/mw300/layout.txt --boot2 ./vendors/marvell/WMSDK/mw320/boot2/bin/boot2.bin
       ```
@@ -378,7 +378,7 @@ Run the `cmake` command every time you switch between the `aws_demos` project an
 
    1. The firmware uses the Wi-Fi chipset for its functionality, and the Wi-Fi chipset has its own firmware that must also be present in the flash. You use the `flashprog.py` utility to flash the Wi-Fi firmware in the same way that you did to flash the boot2 boot-loader and the MCU firmware. Use the following commands to flash the Wi-Fi firmware.
 
-      ```
+      ```bash
       cd amzsdk_bundle-x.y.z
       ./vendors/marvell/WMSDK/mw320/sdk/tools/OpenOCD/flashprog.py --wififw ./vendors/marvell/WMSDK/mw320/wifi-firmware/mw30x/mw30x_uapsta_W14.88.36.p135.bin
       ```
@@ -388,7 +388,7 @@ Run the `cmake` command every time you switch between the `aws_demos` project an
 
    1.  Use the following commands to flash the MCU firmware.
 
-      ```
+      ```bash
       cd amzsdk_bundle-x.y.z
       ./vendors/marvell/WMSDK/mw320/sdk/tools/OpenOCD/flashprog.py --mcufw build/cmake/vendors/marvell/mw300_rd/aws_demos.bin -r
       ```
@@ -397,7 +397,7 @@ Run the `cmake` command every time you switch between the `aws_demos` project an
 
    1. To run the test app, flash the `aws_tests.bin` binary located at the same directory.
 
-      ```
+      ```bash
       cd amzsdk_bundle-x.y.z
       ./vendors/marvell/WMSDK/mw320/sdk/tools/OpenOCD/flashprog.py --mcufw build/cmake/vendors/marvell/mw300_rd/aws_tests.bin -r
       ```
@@ -427,11 +427,11 @@ Check your network credentials. See "Provisioning" in [Build and run the FreeRTO
 **Using GDB**
 We recommend that you use the `arm-none-eabi-gdb` and `gdb` command files packaged along with the SDK. Navigate to the directory.
 
-```
+```bash
 cd {{freertos}}/lib/third_party/mcu_vendor/marvell/WMSDK/mw320
 ```
 Run the following command (on a single line) to connect to GDB.
 
-```
+```bash
 arm-none-eabi-gdb -x ./sdk/tools/OpenOCD/gdbinit ../../../../../../build/cmake/vendors/marvell/mw300 _rd/aws_demos.axf
 ```

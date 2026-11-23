@@ -10,7 +10,7 @@ This section describes how to use the command line `collector setup` commands to
 
 Before you can use `collector setup` commands, you must create a bash shell session in the collector Docker container using the following `docker exec` command.
 
-```
+```bash,sh,zsh
 docker exec -it application-data-collector bash
 ```
 
@@ -26,7 +26,7 @@ vCenter configuration setup is only available if the collector is hosted on vCen
 
 1. Enter the following command.
 
-   ```
+   ```bash,sh,zsh
    collector setup
    ```
 
@@ -343,7 +343,7 @@ Any WSMan Instance that has a HTTP listener is removed along with existing HTTPS
 
 1. Use the following command to check the version of PowerShell installed on your server.
 
-   ```
+   ```PowerShell
    $PSVersionTable
    ```
 
@@ -351,7 +351,7 @@ Any WSMan Instance that has a HTTP listener is removed along with existing HTTPS
 
 1. Use the following command in a new PowerShell window to ensure that PowerShell 5.1 is installed.
 
-   ```
+   ```PowerShell
    $PSVersionTable
    ```
 
@@ -369,7 +369,7 @@ Any WSMan Instance that has a HTTP listener is removed along with existing HTTPS
 
 1. To complete the setup, run the downloaded PowerShell script on all application servers.
 
-   ```
+   ```PowerShell
    .\WinRMSetup.ps1
    ```
 

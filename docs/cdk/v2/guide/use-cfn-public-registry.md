@@ -70,7 +70,7 @@ For example, suppose that there is a public resource named `MY::S5::UltimateBuck
 
 **Example**
 
-```
+```javascript
 const ubucket = new CfnResource(this, 'MyUltimateBucket', {
     type: 'MY::S5::UltimateBucket::MODULE',
     properties: {
@@ -79,7 +79,7 @@ const ubucket = new CfnResource(this, 'MyUltimateBucket', {
 });
 ```
 
-```
+```javascript
 const ubucket = new CfnResource(this, 'MyUltimateBucket', {
     type: 'MY::S5::UltimateBucket::MODULE',
     properties: {
@@ -88,14 +88,14 @@ const ubucket = new CfnResource(this, 'MyUltimateBucket', {
 });
 ```
 
-```
+```python
 ubucket = CfnResource(self, "MyUltimateBucket",
             type="MY::S5::UltimateBucket::MODULE",
             properties=dict(
                 BucketName="UltimateBucket"))
 ```
 
-```
+```java
 CfnResource.Builder.create(this, "MyUltimateBucket")
 	.type("MY::S5::UltimateBucket::MODULE")
 	.properties(java.util.Map.of(    // Map.of requires Java 9+
@@ -103,7 +103,7 @@ CfnResource.Builder.create(this, "MyUltimateBucket")
 	.build();
 ```
 
-```
+```csharp
 new CfnResource(this, "MyUltimateBucket", new CfnResourceProps
 {
     Type = "MY::S5::UltimateBucket::MODULE",

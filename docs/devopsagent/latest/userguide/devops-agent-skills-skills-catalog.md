@@ -23,13 +23,19 @@ You can search the Skills Catalog and read a skill's files before you add it.
 
 1. Next to **Add skill**, choose **Browse catalog**. The **Skills Catalog** tab opens.
 
-1. To find a skill, enter text in **Find skills**, or use the filters for agent type, AWS service, technical domain, and tag.
+1. To find a skill, enter text in **Find skills**, or filter by agent type, AWS service, technical domain, or tier.
 
 1. To see a skill's summary, agent types, and files, choose **Details**.
 
 1. To read a file, such as README.md, choose it under **Included files**. To browse all of the skill's files, choose **View all files**.
 
 You can also open the Skills Catalog by choosing **Add skill** and then **Browse catalog**.
+
+Each skill in the Skills Catalog shows its tier, which says who maintains the skill:
++ **Partner-managed** – A partner maintains the skill.
++ **Community** – A member of the community contributed the skill.
+
+Skills that don't specify a tier appear as **Community**. The tier filter lists only the tiers that skills in the Skills Catalog have.
 
 If your operator role doesn't have the catalog actions, the **Skills Catalog** tab shows **The Skills Catalog isn't available in this environment yet.**
 

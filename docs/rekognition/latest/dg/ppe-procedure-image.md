@@ -29,7 +29,7 @@ You can provide the input image as an image byte array (base64-encoded image byt
 
    Change the value of `amzn-s3-demo-bucket` to the name of the Amazon S3 bucket that contains your image. Change the value of `photo` to your image file name.
 
-   ```
+   ```java
    //Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    //PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -151,7 +151,7 @@ You can provide the input image as an image byte array (base64-encoded image byt
 
    This code is taken from the AWS Documentation SDK examples GitHub repository. See the full example [here](https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/javav2/example_code/rekognition/src/main/java/com/example/rekognition/DetectPPE.java).
 
-   ```
+   ```java
    //snippet-start:[rekognition.java2.detect_ppe.import]
    import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
    import software.amazon.awssdk.core.ResponseBytes;
@@ -355,7 +355,7 @@ You can provide the input image as an image byte array (base64-encoded image byt
 
    Change the value of `amzn-s3-demo-bucket` to the name of the Amazon S3 bucket that contains your image. Change the value of `photo` to your image file name. Replace the value of `profile_name` in the line that creates the Rekognition session with the name of your developer profile.
 
-   ```
+   ```python
    # Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 

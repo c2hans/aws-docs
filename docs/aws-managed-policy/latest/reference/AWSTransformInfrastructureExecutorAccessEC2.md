@@ -30,7 +30,7 @@ The policy's default version is the version that defines the permissions for the
 ## JSON policy document
 <a name="AWSTransformInfrastructureExecutorAccessEC2-json"></a>
 
-```
+```json
 {
   "Version" : "2012-10-17",
   "Statement" : [

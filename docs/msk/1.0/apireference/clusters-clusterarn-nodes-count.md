@@ -23,7 +23,7 @@ Updates the number of broker nodes in the cluster. You can use this operation to
 
 The following Python 3.6 example shows how you can increase the number of brokers in a cluster to 6 brokers. The update operation returns immediately, with a response that includes the Amazon Resource Name (ARN) that Amazon MSK assigns to this cluster operation. You can use that ARN to check the state of the operation. When the state changes from `PENDING` to `UPDATE_COMPLETE`, the operation is complete.
 
-```
+```PYTHON
 import boto3
 import time
 
@@ -100,7 +100,7 @@ Enable CORS by returning the correct headers.
 #### PUT schema
 <a name="clusters-clusterarn-nodes-count-request-body-put-example"></a>
 
-```
+```json
 {
   "targetNumberOfBrokerNodes": integer,
   "currentVersion": "string"
@@ -113,7 +113,7 @@ Enable CORS by returning the correct headers.
 #### UpdateBrokerCountResponse schema
 <a name="clusters-clusterarn-nodes-count-response-body-updatebrokercountresponse-example"></a>
 
-```
+```json
 {
   "clusterArn": "string",
   "clusterOperationArn": "string"
@@ -123,7 +123,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="clusters-clusterarn-nodes-count-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

@@ -14,7 +14,7 @@ $ aws iot create-thing \
 
 The **CreateThing** command displays the name and Amazon Resource Name (ARN) of your new thing:
 
-```
+```JSON
 {
     "thingArn": "arn:aws:iot:us-east-1:123456789012:thing/MyLightBulb",
     "thingName": "MyLightBulb",

@@ -165,7 +165,7 @@ aws bedrock-agent create-data-source \
 
 **Contents of `sharepoint-bedrock-connector-configuration.json`**
 
-```
+```JSON
 {
     "sharePointConfiguration": {
         "sourceConfiguration": {

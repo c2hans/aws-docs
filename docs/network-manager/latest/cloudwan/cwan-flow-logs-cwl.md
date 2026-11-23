@@ -28,7 +28,7 @@ The IAM role that's associated with your flow log must have sufficient permissio
 
 The IAM policy that's attached to your IAM role must include at least the following permissions.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -49,7 +49,7 @@ The IAM policy that's attached to your IAM role must include at least the follow
 
 Also ensure that your role has a trust relationship that allows the flow logs service to assume the role.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -82,7 +82,7 @@ We recommend that you use the `aws:SourceAccount` and `aws:SourceArn` condition 
 
 Users must also have permissions to use the `iam:PassRole` action for the IAM role that's associated with the flow log.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

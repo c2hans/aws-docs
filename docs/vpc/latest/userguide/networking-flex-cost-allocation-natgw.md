@@ -70,7 +70,7 @@ You create the following policy and associate it with the NAT gateway, using the
 
 Create a file named `nat-policy-document.json` with the policy document.
 
-```
+```json
 {
   "ReportingGranularity": ["cidr"],
   "Dimensions": ["data-transfer", "data-processing"],
@@ -105,7 +105,7 @@ aws ec2 associate-networking-flex-cost-allocation-policy \
 
 The following template creates the policy and associates it with the NAT gateway.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: FCA policy that labels NAT gateway costs by team CIDR range
 Parameters:
@@ -203,7 +203,7 @@ aws ec2 associate-networking-flex-cost-allocation-policy \
 
 The following template creates the policy and associates it with the NAT gateway.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: FCA policy that allocates a centralized NAT gateway to spoke VPCs
 Parameters:

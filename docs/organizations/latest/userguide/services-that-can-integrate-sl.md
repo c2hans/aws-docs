@@ -62,7 +62,7 @@ Use the following AWS CLI commands or API operations to enable trusted service a
 
   Run the following command to enable Amazon Security Lake as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations enable-aws-service-access \
       --service-principal securitylake.amazonaws.com
   ```
@@ -107,7 +107,7 @@ You can use the following AWS CLI commands or API operations to disable trusted 
 
   Run the following command to disable Amazon Security Lake as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations disable-aws-service-access \
       --service-principal securitylake.amazonaws.com
   ```
@@ -137,7 +137,7 @@ You can specify a delegated administrator account by using the Amazon Security L
 If you want to configure a delegated administrator account using the AWS CLI or one of the AWS SDKs, you can use the following commands:
 + AWS CLI:
 
-  ```
+  ```bash
   $  aws organizations register-delegated-administrator \
       --account-id 123456789012 \ --service-principal securitylake.amazonaws.com
   ```

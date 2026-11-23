@@ -27,7 +27,7 @@ The following code example shows how to use `CreateStream`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kinesis#code-examples).
 
-```
+```rust
 async fn make_stream(client: &Client, stream: &str) -> Result<(), Error> {
     client
         .create_stream()
@@ -51,7 +51,7 @@ The following code example shows how to use `DeleteStream`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kinesis#code-examples).
 
-```
+```rust
 async fn remove_stream(client: &Client, stream: &str) -> Result<(), Error> {
     client.delete_stream().stream_name(stream).send().await?;
 
@@ -70,7 +70,7 @@ The following code example shows how to use `DescribeStream`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kinesis#code-examples).
 
-```
+```rust
 async fn show_stream(client: &Client, stream: &str) -> Result<(), Error> {
     let resp = client.describe_stream().stream_name(stream).send().await?;
 
@@ -96,7 +96,7 @@ The following code example shows how to use `ListStreams`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kinesis#code-examples).
 
-```
+```rust
 async fn show_streams(client: &Client) -> Result<(), Error> {
     let resp = client.list_streams().send().await?;
 
@@ -122,7 +122,7 @@ The following code example shows how to use `PutRecord`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kinesis#code-examples).
 
-```
+```rust
 async fn add_record(client: &Client, stream: &str, key: &str, data: &str) -> Result<(), Error> {
     let blob = Blob::new(data);
 
@@ -153,7 +153,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda) repository.
 Consuming an Kinesis event with Lambda using Rust.
 
-```
+```rust
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 use aws_lambda_events::event::kinesis::KinesisEvent;
@@ -212,7 +212,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda-with-batch-item-handling) repository.
 Reporting Kinesis batch item failures with Lambda using Rust.
 
-```
+```rust
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 use aws_lambda_events::{

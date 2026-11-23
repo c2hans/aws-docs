@@ -14,7 +14,7 @@ A command was sent but never transitions to SUCCEEDED or FAILED.
 
 1. Verify the vehicle (or simulator) is connected and subscribed to the command request topic:
 
-   ```
+   ```bash
    # Test by publishing a message to the IoT Core MQTT test client
    # Topic: cms/commands/VEH-0049/request
    # The vehicle must be subscribed to this topic to receive commands
@@ -22,13 +22,13 @@ A command was sent but never transitions to SUCCEEDED or FAILED.
 
 1. Verify the Command Response Handler IoT Rule exists and is enabled:
 
-   ```
+   ```bash
    aws iot get-topic-rule --rule-name cms_dev_command_response_rule
    ```
 
 1. Check the Command Response Handler Lambda logs:
 
-   ```
+   ```bash
    aws logs tail /aws/lambda/cms-dev-commands-response-handler --since 30m
    ```
 
@@ -44,7 +44,7 @@ The `/api/commands/catalog` endpoint returns no actuatable signals.
 
 1. Verify the signal catalog table has entries with the `actuator` attribute:
 
-   ```
+   ```bash
    aws dynamodb scan --table-name cms-dev-signal-catalog \
      --filter-expression "attribute_exists(actuator)" \
      --select COUNT
@@ -52,7 +52,7 @@ The `/api/commands/catalog` endpoint returns no actuatable signals.
 
 1. If the count is zero, the signal catalog needs to be seeded. Run the data processing deployment:
 
-   ```
+   ```bash
    cd deployment && make data-processing
    ```
 
@@ -66,7 +66,7 @@ Geofences are created but no safety events are generated when vehicles cross bou
 
 1. Verify the GeofenceProcessor Flink application is running:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 describe-application \
      --application-name cms-dev-flink-geofence-processor \
      --query "ApplicationDetail.ApplicationStatus"
@@ -74,7 +74,7 @@ Geofences are created but no safety events are generated when vehicles cross bou
 
 1. Verify the geofence is active in DynamoDB:
 
-   ```
+   ```bash
    aws dynamodb scan --table-name cms-dev-storage-geofences \
      --filter-expression "active = :t" \
      --expression-attribute-values '{":t": {"BOOL": true}}'

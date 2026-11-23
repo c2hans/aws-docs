@@ -24,7 +24,7 @@ The inputText parameter is required. The normalize and dimensions parameters are
 + dimensions – (optional) The number of dimensions the output embedding should have. The following values are accepted: 1024 (default), 512, 256.
 + embeddingTypes – (optional) Accepts a list containing "float", "binary", or both. Defaults to `float`.
 
-```
+```json
 {
     "inputText": string,
     "dimensions": int,
@@ -43,7 +43,7 @@ The fields are described below.
   + Example: `"embeddingsByType": {"binary": [int,..], "float": [float,...]}`
   + This field will always appear. Even if you don't specify `embeddingTypes` in your input, there will still be “float”. Example: `"embeddingsByType": {"float": [float,...]}`
 
-```
+```json
 {
     "embedding": [float, float, ...],
     "inputTextTokenCount": int,
@@ -56,7 +56,7 @@ The fields are described below.
 
 The only available field is `inputText`, in which you can include text to convert into an embedding.
 
-```
+```json
 {
     "inputText": string
 }
@@ -67,7 +67,7 @@ The only available field is `inputText`, in which you can include text to conver
 
 The `body` of the response contains the following fields.
 
-```
+```json
 {
     "embedding": [float, float, ...],
     "inputTextTokenCount": int
@@ -90,7 +90,7 @@ The following examples show how to call the Amazon Titan Embeddings models to ge
 
 When using Titan Text Embeddings V2, the `embedding` field is not in the response if the `embeddingTypes` only contains `binary`.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -172,7 +172,7 @@ if __name__ == "__main__":
 ------
 #### [ Amazon Titan Embeddings G1 - Text ]
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """

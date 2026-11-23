@@ -23,25 +23,25 @@ Setting an Amazon S3 bucket in the migration’s `documentBackfillConfig` enable
 
 1. Choose a bucket. Either use the deployment’s default bucket, `migrations-default-<ACCOUNT_ID>-<STAGE>-<REGION>`, which Migration Assistant can already write to. The following command lists the default bucket for every Migration Assistant deployment in the account, so choose the one that matches your stage and Region:
 
-   ```
+   ```bash
    aws s3 ls | grep migrations-default
    ```
 
    Or create a bucket in the same AWS account and Region:
 
-   ```
+   ```bash
    aws s3 mb s3://<BUCKET_NAME> --region <REGION>
    ```
 
 1. Open the workflow configuration:
 
-   ```
+   ```bash
    workflow configure edit
    ```
 
 1. Add the bucket to each migration’s `documentBackfillConfig`, then save:
 
-   ```
+   ```yaml
    snapshotMigrationConfigs:
      - ...
        perSnapshotConfig:
@@ -52,13 +52,13 @@ Setting an Amazon S3 bucket in the migration’s `documentBackfillConfig` enable
 
 1. Submit the workflow:
 
-   ```
+   ```bash
    workflow submit
    ```
 
 1. After the backfill starts, confirm the stream location:
 
-   ```
+   ```bash
    console failed-document-stream location
    ```
 
@@ -79,13 +79,13 @@ In the following paths, replace the values in angle brackets with your own value
 
 The console reports the session root:
 
-```
+```text
 s3://<amzn-s3-demo-bucket>/<prefix>session=<migration-uid>/
 ```
 
 The individual gzip-compressed NDJSON objects are stored beneath that root:
 
-```
+```text
 s3://<amzn-s3-demo-bucket>/<prefix>session=<migration-uid>/index=<target-index>/worker=<worker-id>/failed-document-stream-<time-stamp>-<sequence>.ndjson.gz
 ```
 
@@ -94,11 +94,11 @@ s3://<amzn-s3-demo-bucket>/<prefix>session=<migration-uid>/index=<target-index>/
 
 After the backfill finishes, run the following commands from a Migration Console shell:
 
-```
+```bash
 workflow status
 ```
 
-```
+```bash
 console failed-document-stream count
 ```
 
@@ -112,7 +112,7 @@ If the stream is configured but cannot be read, for example, because of missing 
 
 Run the following commands from a Migration Console shell. When more than one migration exists, add `--migration <name>` to select one:
 
-```
+```bash
 # S3 location for the current session
 console failed-document-stream location
 
@@ -178,7 +178,7 @@ The `console --json failed-document-stream list` output contains each failed doc
 
 The Migration Console doesn’t provide a command to delete failed document records. To delete the current session’s records, remove the session location that `console failed-document-stream location` reports. Replace the values in angle brackets with your own values:
 
-```
+```bash
 aws s3 rm --recursive \
   s3://<amzn-s3-demo-bucket>/<prefix>session=<migration-uid>/
 ```

@@ -47,7 +47,7 @@ In this step, you add two client devices to your Greengrass group. This process 
 
 ****
 
-           ```
+           ```json
            {
              "Version":"2012-10-17",
              "Statement": [

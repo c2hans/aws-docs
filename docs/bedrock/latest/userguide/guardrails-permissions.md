@@ -21,7 +21,7 @@ If you pass tags when creating a guardrail (for example, by using the `tags` par
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -54,7 +54,7 @@ Append the following statement to the `Statement` field in the policy for the ro
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

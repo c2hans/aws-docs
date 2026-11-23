@@ -112,7 +112,7 @@ For more information, see [Amazon EKS cluster lifecycle and configuration](https
 **Tools for PowerShell V4**
 **Example 1: This cmdlet returns descriptive information about an Amazon EKS cluster.**
 
-```
+```powershell
 Get-EKSCluster -Name "PROD"
 ```
 **Output:**
@@ -138,7 +138,7 @@ Version              : 1.14
 **Tools for PowerShell V5**
 **Example 1: This cmdlet returns descriptive information about an Amazon EKS cluster.**
 
-```
+```powershell
 Get-EKSCluster -Name "PROD"
 ```
 **Output:**

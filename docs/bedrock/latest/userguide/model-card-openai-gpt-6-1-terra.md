@@ -92,7 +92,7 @@ Use an object schema. Put all fields in `required`. Set `additionalProperties` t
 **Important**
 For JSON Schema output with the Converse API, you must set `additionalModelRequestFields.text.format.strict` to `true`, in addition to specifying the schema in `outputConfig`. Include the following field in your request.
 
-```
+```json
 {
   "additionalModelRequestFields": {
     "text": {
@@ -252,7 +252,7 @@ For both APIs, choose the OpenAI SDK tab.
 ------
 #### [ OpenAI SDK ]
 
-```
+```bash
 pip install openai
 ```
 
@@ -266,7 +266,7 @@ Configure your environment to use the API key for authentication.
 ------
 #### [ bedrock-mantle ]
 
-```
+```bash
 OPENAI_API_KEY="<provide your Bedrock API key>"
 OPENAI_BASE_URL="https://bedrock-mantle.us-east-1.api.aws/openai/v1"
 ```
@@ -289,7 +289,7 @@ Use the settings from [Step 4 - Set environment variables](#model-card-openai-gp
 ------
 #### [ Responses API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -311,7 +311,7 @@ Use the settings from [Step 4 - Set environment variables](#model-card-openai-gp
 ------
 #### [ Responses API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()

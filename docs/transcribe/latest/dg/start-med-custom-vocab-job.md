@@ -49,7 +49,7 @@ Use the [`StartMedicalTranscriptionJob`](https://docs.aws.amazon.com/transcribe/
 
 The following request uses the AWS SDK for Python (Boto3) to start a batch transcription job with a custom vocabulary.
 
-```
+```python
 from __future__ import print_function
 import time
 import boto3

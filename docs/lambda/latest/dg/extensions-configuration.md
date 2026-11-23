@@ -41,7 +41,7 @@ An external extension runs in a separate process from the Lambda Event Function.
 
 **Example of adding an external extension to a Python base image**
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/python:3.11
 
 # Copy and install the app

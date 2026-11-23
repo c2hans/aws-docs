@@ -37,7 +37,7 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-emq
 ------
 #### [ Linux ]
 
-   ```
+   ```json
    {
        "emqxConfig": {
            "authorization": {
@@ -98,7 +98,7 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-emq
 ------
 #### [ Windows ]
 
-   ```
+   ```json
    {
        "emqxConfig": {
            "authorization": {

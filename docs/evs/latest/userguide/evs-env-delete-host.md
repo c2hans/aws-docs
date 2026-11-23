@@ -46,7 +46,7 @@ To delete the host in the Amazon EVS console or with the AWS CLI, use the follow
 
 1. Run the `delete-environment-host` command. Replace the example environment ID and host name with your own values.
 
-   ```
+   ```bash
    aws evs delete-environment-host \
        --environment-id env-abcde12345 \
        --host-name esxi-host-05
@@ -54,7 +54,7 @@ To delete the host in the Amazon EVS console or with the AWS CLI, use the follow
 
 1. To verify completion, list the hosts of the environment and confirm that the host is no longer listed or that its state is `DELETED`.
 
-   ```
+   ```bash
    aws evs list-environment-hosts \
        --environment-id env-abcde12345 \
        --query 'environmentHosts[].[hostName,hostState]' \

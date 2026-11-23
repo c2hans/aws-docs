@@ -70,7 +70,7 @@ Before you can enable multi-Region replication, ensure your user pool meets the 
 
 To create a replica user pool, use the [CreateUserPoolReplica](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPoolReplica.html) operation. The following example creates a replica in the `us-west-2` Region for a primary user pool in `us-east-1`.
 
-```
+```json
 {
  "UserPoolId": "{{us-east-1_EXAMPLE}}",
  "RegionName": "{{us-west-2}}",
@@ -83,7 +83,7 @@ To create a replica user pool, use the [CreateUserPoolReplica](https://docs.aws.
 
 The response includes the replica information:
 
-```
+```json
 {
  "Replica": {
     "RegionName": "{{us-west-2}}",
@@ -96,7 +96,7 @@ The response includes the replica information:
 
 You must also configure your domain for failover. Set up a health check in Route 53 and apply it to your domain in an [UpdateUserPoolDomain](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPoolDomain.html) request:
 
-```
+```json
 {
  "CustomDomainConfig": {
     "CertificateArn": "arn:aws:acm:us-east-1:{{111122223333}}:certificate/{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}"
@@ -115,7 +115,7 @@ You must also configure your domain for failover. Set up a health check in Route
 
 To activate the replica for production use, use the [UpdateUserPoolReplica](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPoolReplica.html) operation:
 
-```
+```json
 {
  "UserPoolId": "{{us-east-1_EXAMPLE}}",
  "RegionName": "{{us-west-2}}",
@@ -125,7 +125,7 @@ To activate the replica for production use, use the [UpdateUserPoolReplica](http
 
 The response confirms the updated replica status:
 
-```
+```json
 {
  "Replica": {
     "RegionName": "{{us-west-2}}",

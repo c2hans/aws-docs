@@ -56,7 +56,7 @@ When you configure a file system in the console, Lambda uses your permissions to
 
 The following example policy grants your function's execution role permissions to mount an Amazon S3 file system with read-write access and read directly from Amazon S3.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

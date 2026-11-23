@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/entityresolution#code-examples).
 
-```
+```java
     /**
      * Lists the schema mappings associated with the current AWS account. This method uses an asynchronous paginator to
      * retrieve the schema mappings, and prints the name of each schema mapping to the console.
@@ -47,7 +47,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/entityresolution#code-examples).
 
-```
+```javascript
 //The default inputs for this demo are read from the ../inputs.json.
 
 import { fileURLToPath } from "node:url";

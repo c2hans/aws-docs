@@ -42,7 +42,7 @@ To begin, start a multipart upload. You can do this by using the AWS CLI, as sho
 
    You get the `uploadID` and other metadata in the response. Use the `uploadID` for the next step of the upload process.
 
-   ```
+   ```json
    {
    "sequenceStoreId": "1504776472",
    "uploadId": "7640892890",
@@ -88,7 +88,7 @@ To begin, start a multipart upload. You can do this by using the AWS CLI, as sho
 
    The response returns the number of read sets, the size, and the timestamp for when it was most recently updated.
 
-   ```
+   ```json
    {
    "parts": [
        {
@@ -128,7 +128,7 @@ To begin, start a multipart upload. You can do this by using the AWS CLI, as sho
 
    This API only returns multipart read set uploads that are in progress. After the ingested read sets are `ACTIVE`, or if the upload has failed, the upload will not be returned in the response to the **list-multipart-read-set-uploads** API. To view active read sets, use the **list-read-sets** API. An example response for **list-multipart-read-set-uploads** is shown in the following.
 
-   ```
+   ```json
    {
    "uploads": [
        {
@@ -181,7 +181,7 @@ To begin, start a multipart upload. You can do this by using the AWS CLI, as sho
 
    The response for **complete-multipart-read-set-upload** is the read set IDs for your imported read sets.
 
-   ```
+   ```json
    {
    "readSetId": "0000000001"
    }

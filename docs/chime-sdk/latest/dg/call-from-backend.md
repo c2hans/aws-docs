@@ -34,7 +34,7 @@ The IAM permissions for Amazon Chime SDK messaging APIs require an `app-instance
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

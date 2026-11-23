@@ -17,7 +17,7 @@ http://sns.us-east-2.amazonaws.com/
 
 Use the following JSON format for the value of the `AttributeValue` parameter.
 
-```
+```json
 {
     "http" : {
         "defaultHealthyRetryPolicy" : {

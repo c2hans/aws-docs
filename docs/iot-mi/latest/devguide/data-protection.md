@@ -87,7 +87,7 @@ A key policy statement controls access to an AWS KMS key. Each AWS KMS key will 
 
 The following is an example of a key policy statement you can use for managing access and usage to AWS KMS keys stored in your AWS account for Managed Integrations:
 
-```
+```JSON
 {
    "Statement" : [
     {

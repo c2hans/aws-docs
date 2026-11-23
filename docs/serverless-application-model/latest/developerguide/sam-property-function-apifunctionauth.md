@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-apifunctionauth-syntax.yaml"></a>
 
-```
+```yaml
   [ApiKeyRequired](#sam-function-apifunctionauth-apikeyrequired): {{Boolean}}
   [AuthorizationScopes](#sam-function-apifunctionauth-authorizationscopes): {{List}}
   [Authorizer](#sam-function-apifunctionauth-authorizer): {{String}}
@@ -80,7 +80,7 @@ The following example specifies authorization at the function level.
 #### YAML
 <a name="sam-property-function-apifunctionauth--examples--function-auth--yaml"></a>
 
-```
+```yaml
 Auth:
   ApiKeyRequired: true
   Authorizer: NONE
@@ -91,7 +91,7 @@ Auth:
 
 You can specify a global authorizer for your `AWS::Serverless::Api` resource. The following is an example that configures a global default authorizer:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...
@@ -109,7 +109,7 @@ Resources:
 
 To override the default authorizer for your AWS Lambda Event Function, you can specify `Authorizer` as `NONE`. The following is an example:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...
@@ -134,7 +134,7 @@ Resources:
 
 When using the `DefinitionBody` property to describe your `AWS::Serverless::Api` resource, the previous override method does not work. The following is an example of using the `DefinitionBody` property for an `AWS::Serverless::Api` resource:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...
@@ -158,7 +158,7 @@ Resources:
 
 To override the global authorizer, use the `OverrideApiAuth` property. The following is an example that uses `OverrideApiAuth` to override the global authorizer with the value provided for `Authorizer`:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...

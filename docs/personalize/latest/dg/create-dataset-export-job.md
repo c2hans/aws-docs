@@ -64,7 +64,7 @@ Before you export a dataset, make sure that the Amazon Personalize service role 
 
  For more information, see [CreateDatasetExportJob](API_CreateDatasetExportJob.md).
 
-```
+```json
 aws personalize create-dataset-export-job \
   --job-name {{job name}} \
   --dataset-arn {{dataset ARN}} \
@@ -75,7 +75,7 @@ aws personalize create-dataset-export-job \
 
 The dataset export job ARN is displayed.
 
-```
+```json
 {
   "datasetExportJobArn": "arn:aws:personalize:us-west-2:acct-id:dataset-export-job/DatasetExportJobName"
 }
@@ -107,7 +107,7 @@ Use the following `create_dataset_export_job` to export the data in a dataset to
 + Specify `PUT` to export only data that you imported individually using the console or the `PutEvents`, PutUsers, or `PutItems` operations.
 + Specify `ALL` to export all of the data in the dataset.
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')
@@ -147,7 +147,7 @@ Use the following `createDatasetExportJob` method to create a dataset export job
 + Use `IngestionMode.PUT` to export only data that you imported individually using the console or the `PutEvents`, PutUsers, or `PutItems` operations.
 + Use `IngestionMode.ALL` to export all of the data in the dataset.
 
-```
+```java
 public static void createDatasetExportJob(PersonalizeClient personalizeClient,
                                         String jobName,
                                         String datasetArn,

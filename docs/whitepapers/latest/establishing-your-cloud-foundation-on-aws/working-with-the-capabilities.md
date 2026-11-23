@@ -12,9 +12,13 @@ There are functional areas within each capability to help identify owners and st
 
 ![A chart showing the six categories across the different stakeholders.](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/primary-functional-area.png)
 
+*Primary stakeholders across six categories diagram*
+
  The following graph shows a path that you can follow when planning your environment. It's based on dependencies between capabilities, and can be used to create a project plan for the implementation of capabilities in your environment. In addition to the dependencies shown (via the arrows), some capabilities apply to the overall environment (for example, Governance and Audit and Assessment).
 
 ![A chart showing a capability dependency guided path.](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/capability-dependency-guided-path.png)
+
+*Capability dependency guided path*
 
 The following foundational capabilities based on AWS best practices and guidance, can help you get started with building your environment.
 

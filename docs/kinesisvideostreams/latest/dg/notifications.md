@@ -153,7 +153,7 @@ The IAM role or user that calls the `PutMedia` API must have `sns:Publish` permi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -187,7 +187,7 @@ The Amazon SNS topic in the destination account must have a resource-based acces
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "__default_policy_ID",

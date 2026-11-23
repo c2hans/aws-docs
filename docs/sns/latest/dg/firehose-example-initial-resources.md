@@ -43,7 +43,7 @@ This topic describes how to create the resources needed for the [message archivi
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

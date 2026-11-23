@@ -246,7 +246,7 @@ The callback API is only available for 4.2\+ drivers.
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with Javascript.
 
-```
+```js
 // *** Transfer $500 from Alice to Bob inside a transaction: Success ***
 // Setup bank account for Alice and Bob. Each have $1000 in their account
 var databaseName = "bank";
@@ -288,7 +288,7 @@ accountColl.find();
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with Node.js.
 
-```
+```nodejs
 // Node.js callback API:
 
 const bankDB = await mongoclient.db("bank");
@@ -331,7 +331,7 @@ assert(newBobBalance == bobBalance.balance);
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with C\#.
 
-```
+```cs
 // C# Callback API
 
 var dbName = "bank";
@@ -385,7 +385,7 @@ using (var session = client.StartSession(new ClientSessionOptions{CausalConsiste
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with Ruby.
 
-```
+```ruby
 // Ruby Callback API
 
 dbName = "bank"
@@ -432,7 +432,7 @@ session.end_session
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with Go.
 
-```
+```go
 // Go - Callback API
 type Account struct {
     Name string
@@ -499,7 +499,7 @@ assert.Equal(t, bobNewBalance, 1500)
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with Java.
 
-```
+```java
 // Java (sync) - Callback API
 MongoDatabase bankDB = mongoClient.getDatabase("bank");
 MongoCollection accountColl = bankDB.getCollection("account");
@@ -558,7 +558,7 @@ try ( ClientSession clientSession = mongoClient.startSession(sessionOptions) ) {
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with C.
 
-```
+```cs
 // Sample Code for C with Callback
 
 #include <bson.h>
@@ -736,7 +736,7 @@ int main(int argc, char* argv[]) {
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with Python.
 
-```
+```python
 // Sample Python code with callback api
 
 import pymongo
@@ -789,7 +789,7 @@ assert updated_bob_balance == new_bob_balance
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with Javascript.
 
-```
+```js
 // *** Transfer $500 from Alice to Bob inside a transaction: Success ***
 // Setup bank account for Alice and Bob. Each have $1000 in their account
 var databaseName = "bank";
@@ -831,7 +831,7 @@ accountColl.find();
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with C\#.
 
-```
+```cs
 // C# Core API
 
 public void TransferMoneyWithRetry(IMongoCollection<bSondocument> accountColl, IClientSessionHandle session)
@@ -925,7 +925,7 @@ public void DoTransactionWithRetry(MongoClient client)
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with Ruby.
 
-```
+```ruby
 # Ruby Core API
 
 def transfer_money_w_retry(session, accountColl)
@@ -989,7 +989,7 @@ end
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with Go.
 
-```
+```go
 // Go - Core API
 type Account struct {
     Name string
@@ -1076,7 +1076,7 @@ func doTransactionWithRetry(t *testing.T) {
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with Java.
 
-```
+```java
 // Java (sync) - Core API
 
 public void transferMoneyWithRetry() {
@@ -1343,7 +1343,7 @@ public class SubscriberLatchWrapper<T> implements Subscriber<T> {
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with C.
 
-```
+```cs
 // Sample C code with core session
 
 bool core_session(mongoc_client_session_t *client_session, mongoc_collection_t* collection, bson_t *selector, int64_t balance){
@@ -1497,7 +1497,7 @@ int main(int argc, char* argv[]) {
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with Scala.
 
-```
+```scala
 // Scala Core API
 def transferMoneyWithRetry(sessionObservable: SingleObservable[ClientSession] , database: MongoDatabase ): Unit = {
     val accountColl = database.getCollection("account")
@@ -1572,7 +1572,7 @@ def doTransactionWithRetry(): Unit = {
 
 The following code demonstrates how to utilize the Amazon DocumentDB transaction API with Python.
 
-```
+```python
 // Sample Python code with Core api
 
 import pymongo

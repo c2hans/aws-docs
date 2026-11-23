@@ -66,7 +66,7 @@ This section provides details on the secret and connection properties in JSON de
 
 1. In the key-value pair, choose **Plaintext**, and then copy the following JSON content. Replace the `user`, `password`, and `account` by their values.
 
-   ```
+   ```JSON
    {
        "user":"{{snowflake_user}}",
        "password":"{{snowflake_password}}",

@@ -49,7 +49,7 @@ aws codeguruprofiler put-permission --action-group agentPermissions \
 
  The following is an example output that grants access to a profiling group named `my-profiling-group` to an AWS user specified using its ARN, `arn:aws:iam::123456789012:user/my-user-name`.
 
-```
+```json
 {
     "policy": "{\n  \"Version\" : \"2012-10-17\",		 	 	 \n  \"Statement\" : [ {\n    \"Sid\" : \"agentPermissions-statement\",\n    \"Effect\" : \"Allow\",\n    \"Principal\" : {\n      \"AWS\" : \"arn:aws:iam::{{123456789012}}:user/{{my-user-name}}\"\n    },\n    \"Action\" : [ \"codeguru-profiler:ConfigureAgent\", \"codeguru-profiler:PostAgentProfile\" ],\n    \"Resource\" : \"arn:aws:codeguru-profiler:us-west-2:{{123456789012}}:profilingGroup/{{my-profiling-group-name}}\"\n  } ]\n}",
     "revisionId": "125820ee-98c7-4df9-8739-442ffad7b3a0"

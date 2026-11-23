@@ -57,7 +57,7 @@ date_diff
 
 The following example finds the difference, in days, between two literal TIMESTAMETZ values.
 
-```
+```sql
 Select datediff(days, 'Jun 1,2008  09:59:59 EST', 'Jul 4,2008  09:59:59 EST')
 
 date_diff

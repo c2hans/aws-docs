@@ -38,7 +38,7 @@ The console returns the fully merged entry, reflecting both updated and retained
 **To modify a policy table entry using the AWS CLI**
 Use the [modify-transit-gateway-policy-table-entry](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-transit-gateway-policy-table-entry.html) command.
 
-```
+```bash
 aws ec2 modify-transit-gateway-policy-table-entry \
     --transit-gateway-policy-table-id tgw-ptb-0ca78a549EXAMPLE \
     --policy-rule-number 100 \
@@ -48,7 +48,7 @@ aws ec2 modify-transit-gateway-policy-table-entry \
 
 The response returns the fully merged entry. Only `SourceCidrBlock`, `Protocol`, and `TargetRouteTableId` were updated — `SourcePortRange`, `DestinationCidrBlock`, and `DestinationPortRange` retain their previous values unchanged:
 
-```
+```json
 {
     "TransitGatewayPolicyTableEntry": {
         "PolicyRuleNumber": "100",
@@ -68,14 +68,14 @@ The response returns the fully merged entry. Only `SourceCidrBlock`, `Protocol`,
 **Example: Reset a field to Any (match any)**
 To remove the destination port restriction set in the example above and allow any destination port, explicitly pass `*` for `DestinationPortRange`. Omitting the field would leave `443` in place.
 
-```
+```bash
 aws ec2 modify-transit-gateway-policy-table-entry \
     --transit-gateway-policy-table-id tgw-ptb-0ca78a549EXAMPLE \
     --policy-rule-number 100 \
     --policy-rule '{"DestinationPortRange":"*"}'
 ```
 
-```
+```json
 {
     "TransitGatewayPolicyTableEntry": {
         "PolicyRuleNumber": "100",

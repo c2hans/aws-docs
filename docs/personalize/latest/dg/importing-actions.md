@@ -45,7 +45,7 @@ Use the following `put-actions` command to add one or more actions with the AWS 
 
 For `properties`, for each field in your Actions dataset, replace the `propertyName` with the field name from your schema in camel case. For example, ACTION\_EXPIRATION\_TIMESTAMP would be `actionExpirationTimestamp` and CREATION\_TIMESTAMP would be creationTimestamp. Replace `property data` with the data for the property.
 
-```
+```cmd
 aws personalize-events put-actions \
   --dataset-arn {{dataset arn}} \
   --actions '[{
@@ -65,7 +65,7 @@ Add one or more actions to your Actions dataset using the PutActions operation. 
 
  The following code shows how to add one or more actions to your Actions dataset. For each action, specify the `actionId`. If an action with the same `actionId` is already in your Actions dataset, Amazon Personalize replaces it with the new one. For `properties`, for each additional field in your Actions dataset, replace the `propertyName` with the field name from your schema in camel case. For example, ACTION\_EXPIRATION\_TIMESTAMP would be `actionExpirationTimestamp` and CREATION\_TIMESTAMP would be creationTimestamp. Replace `property data` with the data for the property.
 
-```
+```py
 import boto3
 
 personalize_events = boto3.client(service_name='personalize-events')

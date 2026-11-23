@@ -20,7 +20,7 @@ This tutorial creates a web application that uses JavaScript to build a map on a
 Begin by creating an HTML page (`index.html`) that includes the map's container:
 + Enter a `div` element with an `id` of `map` to apply the map's dimensions to the map view. The dimensions are inherited from the viewport.
 
-```
+```html
 <html>
   <head>
     <style>
@@ -47,7 +47,7 @@ Add the following dependencies to your application:
 + MapLibre GL JS (v3.x), and its associated CSS.
 + The Amazon Location [JavaScript Authentication helper](loc-sdk-auth.md).
 
-```
+```js
 <!-- CSS dependencies -->
 <link
   href="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.css"
@@ -70,7 +70,7 @@ To configure your application using JavaScript:
 
 1. Enter the names and identifiers of your resources.
 
-   ```
+   ```js
    // Cognito Identity Pool ID
    const identityPoolId = "{{us-east-1:54f2ba88-9390-498d-aaa5-0d97fb7ca3bd}}";
    // Amazon Location Service Map name
@@ -79,7 +79,7 @@ To configure your application using JavaScript:
 
 1. Instantiate a credential provider using the unauthenticated identity pool you created in [Using maps - Step 2, Set up authentication](map-prerequisites.md#using-maps-set-up-authentication). We will put this in a function called `initializeMap`, that will also contain other map initialization code, added in the next step
 
-   ```
+   ```js
    // extract the Region from the Identity Pool ID; this will be used for both Amazon Cognito and Amazon Location
    AWS.config.region = identityPoolId.split(":")[0];
 
@@ -96,7 +96,7 @@ To configure your application using JavaScript:
 
 For the map to display after the page is loaded, you must initialize the map. You can adjust the initial map location, add additional controls, and overlay data.
 
-```
+```js
 async function initializeMap() {
   // Create an authentication helper instance using credentials from Cognito
   const authHelper = await amazonLocationAuthHelper.withIdentityPoolId(identityPoolId);
@@ -131,7 +131,7 @@ If the policy you created for your unauthenticated Amazon Cognito role includes 
 
 After completing the tutorial, the final application looks like the following example.
 
-```
+```html
 <!-- index.html -->
 <html>
   <head>

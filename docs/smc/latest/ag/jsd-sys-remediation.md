@@ -14,7 +14,7 @@ The **AWS Systems Manager Automation Suggested Remediation **field should be set
 
 For example, the following value would suggest the `AWS-DisableS3BucketPublicReadWrite` automation document, with a description to show in Jira, to apply in `eu-central-1`, using the account and end-user credentials that is specified in Jira for the AWS account identified in Jira as `MyAccount1`:
 
-```
+```json
                                [ { "documentName": "AWS-DisableS3BucketPublicReadWrite",
         "description": "This will make the bucket private, resolving the issue.",
         "accountName": "MyAccount1",
@@ -34,7 +34,7 @@ As an example, the following bash script using curl links the above-noted resour
 
 1. Set the field ID and edit the JSON record for an AWS Config resource to link.
 
-   ```
+   ```json
                              CUSTOM_FIELD_ID=customfield_10011
    cat > value.json  EOF
        [ { "resourceId": "my-bucket",
@@ -46,7 +46,7 @@ As an example, the following bash script using curl links the above-noted resour
 
 1. Define a helper function to escape the JSON.
 
-   ```
+   ```json
                            json_escape () {
        printf '%s' "$1" | python -c \
          'import json,sys; print(json.dumps(sys.stdin.read()))'
@@ -64,7 +64,7 @@ As an example, the following bash script using curl links the above-noted resour
 
 1. Set the field ID and edit the JSON record for a suggested remediation to attach.
 
-   ```
+   ```json
                            CUSTOM_FIELD_ID=customfield_10010
    cat > value.json  EOF
        [ { "documentName": "AWS-DisableS3BucketPublicReadWrite",

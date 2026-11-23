@@ -29,7 +29,7 @@ To use your customer managed KMS key with your HealthImaging resources, the foll
 
 The following is a policy statement example that allows a user to create and interact with a data store in HealthImaging which is encrypted by that key:
 
-```
+```json
 {
     "Sid": "Allow access to create data stores and perform CRUD and search in HealthImaging",
     "Effect": "Allow",
@@ -67,7 +67,7 @@ The IAM user, IAM role, or AWS account creating your repositories must have perm
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -106,7 +106,7 @@ The following shows how to use `CreateGrant` to allow HealthImaging to access a 
 
 Users are not required to create their own grants. HealthImaging creates a grant on your behalf by sending a `CreateGrant` request to AWS KMS. Grants in AWS KMS are used to give HealthImaging access to a AWS KMS key in a customer account.
 
-```
+```json
 {
             "KeyId": "arn:aws:kms:us-east-1:147997158357:key/8e1c34df-5fd2-49fa-8986-4618c9829a8c",
             "GrantId": "44e88bc45b769499ce5ec4abd5ecb27eeb3b178a4782452aae65fe885ee5ba20",
@@ -174,7 +174,7 @@ Users are not required to create their own grants. HealthImaging creates a grant
 
 The following examples shows how to use `GenerateDataKey` to ensure the user has necessary permissions to encrypt data before storing it.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -229,7 +229,7 @@ The following examples shows how to use `GenerateDataKey` to ensure the user has
 
 The following example shows how HealthImaging calls the `Decrypt` operation to use the stored encrypted data key to access the encrypted data.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -284,7 +284,7 @@ The following example shows how HealthImaging calls the `Decrypt` operation to u
 
 The following example shows how HealthImaging uses the `DescribeKey` operation to verify if the AWS KMS customer owned AWS KMS key is in a usable state and to help a user troubleshoot if it is not functional.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

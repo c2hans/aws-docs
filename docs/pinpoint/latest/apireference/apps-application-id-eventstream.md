@@ -140,7 +140,7 @@ Retrieves information about the communication requirements and options that are 
 #### POST schema
 <a name="apps-application-id-eventstream-request-body-post-example"></a>
 
-```
+```json
 {
   "DestinationStreamArn": "string",
   "RoleArn": "string"
@@ -153,7 +153,7 @@ Retrieves information about the communication requirements and options that are 
 #### EventStream schema
 <a name="apps-application-id-eventstream-response-body-eventstream-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "DestinationStreamArn": "string",
@@ -167,7 +167,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-eventstream-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

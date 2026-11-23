@@ -9,19 +9,19 @@ For Amazon EMR 6.9.0 releases and later, you can retrieve the base image from Am
 
 The base Docker images that you can select are stored in Amazon Elastic Container Registry (Amazon ECR). The image URI follows this format: `{{ECR-registry-account}}.dkr.ecr.{{Region}}.amazonaws.com/spark/{{container-image-tag}}`, as the following example demonstrates.
 
-```
+```http,https
 {{895885662937}}.dkr.ecr.{{us-west-2}}.amazonaws.com/spark/{{emr-7.13.0:latest}}
 ```
 
 The image URI for interactive endpoints follows this format: `{{ECR-registry-account}}.dkr.ecr.{{Region}}.amazonaws.com/notebook-spark/{{container-image-tag}}`, as the following example demonstrates. You need to use `notebook-spark` in the base image URI, instead of `spark`.
 
-```
+```http,https
 {{895885662937}}.dkr.ecr.{{us-west-2}}.amazonaws.com/notebook-spark/{{emr-7.13.0:latest}}
 ```
 
 Similarly, for non-Spark `python3` images for interactive endpoints, the image URI is `{{ECR-registry-account}}.dkr.ecr.{{Region}}.amazonaws.com/notebook-python/{{container-image-tag}}`. The following example URI is correctly formatted:
 
-```
+```http,https
 {{895885662937}}.dkr.ecr.{{us-west-2}}.amazonaws.com/notebook-python/{{emr-7.13.0:latest}}
 ```
 

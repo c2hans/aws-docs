@@ -23,7 +23,7 @@ The following code samples demonstrate how to list evaluators using different de
 
 1.
 
-   ```
+   ```python
    from bedrock_agentcore_starter_toolkit import Evaluation
 
    eval_client = Evaluation()
@@ -33,7 +33,7 @@ The following code samples demonstrate how to list evaluators using different de
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client('bedrock-agentcore-control')
@@ -43,7 +43,7 @@ The following code samples demonstrate how to list evaluators using different de
 
 1.
 
-   ```
+   ```bash
    aws bedrock-agentcore-control list-evaluators \
        --max-results 20
    ```

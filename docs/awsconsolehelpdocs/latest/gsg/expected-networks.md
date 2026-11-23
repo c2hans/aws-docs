@@ -27,7 +27,7 @@ You can restrict service access by network using the `aws:SourceVpc` condition k
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

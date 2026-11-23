@@ -147,7 +147,7 @@ aws docdb list-tags-for-resource ^
 
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "TagList": [
         {

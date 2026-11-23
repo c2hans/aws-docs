@@ -15,7 +15,7 @@ To allow the AWS Replication Agent installer to communicate with MGN, create an 
 
 If the AWS replication agents are installed with a principal using [ AWSApplicationMigrationAgentInstallationPolicy ](security-iam-awsmanpol-AWSApplicationMigrationAgentInstallationPolicy.md#security-iam-awsmanpol-AWSApplicationMigrationAgentInstallationPolicy.title) and a VPCE policy is used (to scope down access), add this statement to your policy:
 
-```
+```json
 {
        "Effect": "Allow",
        "Principal": "*",

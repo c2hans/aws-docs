@@ -30,7 +30,7 @@ The following code example shows how to get started using IAM.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -94,7 +94,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -434,7 +434,7 @@ func (helper ScenarioHelper) Pause(secs int) {
 ```
 Define a struct that wraps account actions.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -478,7 +478,7 @@ func (wrapper AccountWrapper) ListSAMLProviders(ctx context.Context) ([]types.SA
 ```
 Define a struct that wraps policy actions.
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -583,7 +583,7 @@ func (wrapper PolicyWrapper) DeletePolicy(ctx context.Context, policyArn string)
 ```
 Define a struct that wraps role actions.
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -752,7 +752,7 @@ func (wrapper RoleWrapper) DeleteRole(ctx context.Context, roleName string) erro
 ```
 Define a struct that wraps user actions.
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -954,7 +954,7 @@ The following code example shows how to use `AttachRolePolicy`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -994,7 +994,7 @@ The following code example shows how to use `CreateAccessKey`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1037,7 +1037,7 @@ The following code example shows how to use `CreatePolicy`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1111,7 +1111,7 @@ The following code example shows how to use `CreateRole`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1170,7 +1170,7 @@ The following code example shows how to use `CreateServiceLinkedRole`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1214,7 +1214,7 @@ The following code example shows how to use `CreateUser`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1257,7 +1257,7 @@ The following code example shows how to use `DeleteAccessKey`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1298,7 +1298,7 @@ The following code example shows how to use `DeletePolicy`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1337,7 +1337,7 @@ The following code example shows how to use `DeleteRole`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1377,7 +1377,7 @@ The following code example shows how to use `DeleteServiceLinkedRole`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1416,7 +1416,7 @@ The following code example shows how to use `DeleteUser`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1456,7 +1456,7 @@ The following code example shows how to use `DeleteUserPolicy`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1497,7 +1497,7 @@ The following code example shows how to use `DetachRolePolicy`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1537,7 +1537,7 @@ The following code example shows how to use `GetAccountPasswordPolicy`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -1577,7 +1577,7 @@ The following code example shows how to use `GetPolicy`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1619,7 +1619,7 @@ The following code example shows how to use `GetRole`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1660,7 +1660,7 @@ The following code example shows how to use `GetUser`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1712,7 +1712,7 @@ The following code example shows how to use `ListAccessKeys`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1755,7 +1755,7 @@ The following code example shows how to use `ListAttachedRolePolicies`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1797,7 +1797,7 @@ The following code example shows how to use `ListGroups`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -1838,7 +1838,7 @@ The following code example shows how to use `ListPolicies`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1880,7 +1880,7 @@ The following code example shows how to use `ListRolePolicies`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1922,7 +1922,7 @@ The following code example shows how to use `ListRoles`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1964,7 +1964,7 @@ The following code example shows how to use `ListSAMLProviders`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -2002,7 +2002,7 @@ The following code example shows how to use `ListUserPolicies`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -2045,7 +2045,7 @@ The following code example shows how to use `ListUsers`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -2088,7 +2088,7 @@ The following code example shows how to use `PutUserPolicy`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"

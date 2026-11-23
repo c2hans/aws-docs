@@ -12,19 +12,19 @@ We recommend applying *all* updates available in a new AL2027 release. Picking o
 
 To restrict an upgrade to packages that have a security advisory, use the `--security` option:
 
-```
+```bash
 sudo dnf upgrade --security --releasever=latest
 ```
 
 To apply only the updates from specific advisories, name them with the `--advisories` option. The advisory identifier in this example follows the Amazon Linux Security Advisory (ALAS) format:
 
-```
+```bash
 sudo dnf upgrade --releasever=latest --advisories=ALAS2027-2026-001
 ```
 
 This updates the packages mentioned in the advisory to the latest version available in the selected release, which might be newer than the version the advisory introduced. To update the affected packages only up to the lowest versions that fix the advisory, use `dnf upgrade-minimal` instead:
 
-```
+```bash
 sudo dnf upgrade-minimal --releasever=latest --advisories=ALAS2027-2026-001
 ```
 

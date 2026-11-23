@@ -130,7 +130,7 @@ To apply a condition, you add the condition information to the IAM policy statem
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -170,7 +170,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -212,7 +212,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -243,7 +243,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

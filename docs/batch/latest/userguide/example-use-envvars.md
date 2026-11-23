@@ -8,7 +8,7 @@ The following example job definition uses environment variables to specify a fil
 
 Even though the command and environment variables are hardcoded into the job definition in this example, you can specify command and environment variable overrides to make the job definition more versatile.
 
-```
+```json
 {
     "jobDefinitionName": "fetch_and_run",
     "type": "container",

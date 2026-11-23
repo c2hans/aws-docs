@@ -24,7 +24,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "CoreDefinitionVersionArn": "string",
 "DeviceDefinitionVersionArn": "string",
@@ -79,7 +79,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-versions-post-cli"></a>
 
-```
+```bash
 aws greengrass create-group-version \
   --group-id <value> \
   [--core-definition-version-arn <value>] \
@@ -96,7 +96,7 @@ aws greengrass create-group-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "CoreDefinitionVersionArn": "string",
@@ -117,7 +117,7 @@ cli-input-json format:
 Success. The response contains information about the group version.
  [ VersionInformation](definitions-versioninformation.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -145,7 +145,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -212,7 +212,7 @@ type: integer
 ### CLI
 <a name="-greengrass-groups-groupid-versions-get-cli"></a>
 
-```
+```bash
 aws greengrass list-group-versions \
   --group-id <value> \
   [--next-token <value>] \
@@ -223,7 +223,7 @@ aws greengrass list-group-versions \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "NextToken": "string",
@@ -238,7 +238,7 @@ cli-input-json format:
 Success. The response contains the list of versions and metadata for the given group.
  [ ListVersionsResponse](definitions-listversionsresponse.md)
 
-```
+```json
 {
 "Versions": [
   {
@@ -281,7 +281,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

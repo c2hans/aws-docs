@@ -103,7 +103,7 @@ In the commands, replace {{fleet-id}} with your fleet ID, {{deployment-id}} with
 
 1. Use the following AWS CLI command to get the version to return to:
 
-   ```
+   ```bash
    aws gamelift describe-fleet-deployment \
        --fleet-id {{fleet-id}} \
        --deployment-id {{deployment-id}} \
@@ -114,7 +114,7 @@ In the commands, replace {{fleet-id}} with your fleet ID, {{deployment-id}} with
 
 1. Use the following AWS CLI command to start a new deployment with that version. Replace {{rollback-game-server-cgd-arn}} with the `RollbackGameServerBinaryArn` value from step 1. If the fleet has a per-instance container group, also pass `--per-instance-container-group-definition-name` with the `RollbackPerInstanceBinaryArn` value.
 
-   ```
+   ```bash
    aws gamelift update-container-fleet \
        --fleet-id {{fleet-id}} \
        --game-server-container-group-definition-name {{rollback-game-server-cgd-arn}} \

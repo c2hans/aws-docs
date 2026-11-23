@@ -42,7 +42,7 @@ If you want to use an existing Amazon DataZone domain for this workflow, choose 
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [

@@ -204,7 +204,7 @@ Run the following commands in your computer terminal.
 
 1. <a name="docker-create-certs-folder"></a>Create a folder for the device's security resources, and move the certificate and keys into that folder. Run the following commands. Replace {{path-to-security-files}} with the path to the security resources, and replace {{certificateId}} with the certificate ID in the file names.
 
-   ```
+   ```bash
    mkdir /tmp/certs
    mv {{path-to-security-files}}/{{certificateId}}-certificate.pem.crt /tmp/certs
    mv {{path-to-security-files}}/{{certificateId}}-public.pem.key /tmp/certs
@@ -214,7 +214,7 @@ Run the following commands in your computer terminal.
 
 1. <a name="docker-create-config-folder"></a>Create a folder for the device's configuration, and move the AWS IoT Greengrass Core configuration file to that folder. Run the following commands. Replace {{path-to-config-file}} with the path to the configuration file.
 
-   ```
+   ```bash
    mkdir /tmp/config
    mv {{path-to-config-file}}/config.json /tmp/config
    ```
@@ -249,7 +249,7 @@ Run the following commands in your computer terminal.
 
 1. <a name="docker-create-certs-folder"></a>Create a folder for the device's security resources, and move the certificate and keys into that folder. Run the following commands. Replace {{path-to-security-files}} with the path to the security resources, and replace {{certificateId}} with the certificate ID in the file names.
 
-   ```
+   ```bash
    mkdir /tmp/certs
    mv {{path-to-security-files}}/{{certificateId}}-certificate.pem.crt /tmp/certs
    mv {{path-to-security-files}}/{{certificateId}}-public.pem.key /tmp/certs
@@ -259,7 +259,7 @@ Run the following commands in your computer terminal.
 
 1. <a name="docker-create-config-folder"></a>Create a folder for the device's configuration, and move the AWS IoT Greengrass Core configuration file to that folder. Run the following commands. Replace {{path-to-config-file}} with the path to the configuration file.
 
-   ```
+   ```bash
    mkdir /tmp/config
    mv {{path-to-config-file}}/config.json /tmp/config
    ```
@@ -292,7 +292,7 @@ Run the following commands in your computer terminal.
 
 1. Create a folder for the device's security resources, and move the certificate and keys into that folder. Run the following commands in a command prompt. Replace {{path-to-security-files}} with the path to the security resources, and replace {{certificateId}} with the certificate ID in the file names.
 
-   ```
+   ```cmd
    mkdir C:\Users\%USERNAME%\Downloads\certs
    move {{path-to-security-files}}\{{certificateId}}-certificate.pem.crt C:\Users\%USERNAME%\Downloads\certs
    move {{path-to-security-files}}\{{certificateId}}-public.pem.key C:\Users\%USERNAME%\Downloads\certs
@@ -302,7 +302,7 @@ Run the following commands in your computer terminal.
 
 1. Create a folder for the device's configuration, and move the AWS IoT Greengrass Core configuration file to that folder. Run the following commands in a command prompt. Replace {{path-to-config-file}} with the path to the configuration file.
 
-   ```
+   ```bash
    mkdir C:\Users\%USERNAME%\Downloads\config
    move {{path-to-config-file}}\config.json C:\Users\%USERNAME%\Downloads\config
    ```

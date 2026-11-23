@@ -30,7 +30,7 @@ To create the project for this tutorial, you run a Maven command that prompts yo
 
 1. Enter the following command at the terminal and press `Enter`.
 
-   ```
+   ```sh
    mvn archetype:generate \
      -DarchetypeGroupId=software.amazon.awssdk \
      -DarchetypeArtifactId=archetype-app-quickstart \
@@ -91,7 +91,7 @@ The following shows the contents of the `pom.xml` project file.
 
 The `dependencyManagement` section contains a dependency to the AWS SDK for Java 2.x and the `dependencies` section has a dependency for Amazon S3. The project uses Java 1.8 because of the `1.8` value in the `maven.compiler.source` and `maven.compiler.target` properties.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -211,7 +211,7 @@ The following code shows the `App` class created by Maven. The `main` method is 
 ### `App` class
 <a name="projectsetup-collapse2"></a>
 
-```
+```java
 package org.example;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -237,7 +237,7 @@ The `DependencyFactory` is shown in the following code.
 ### `DependencyFactory` class
 <a name="code-collapse2"></a>
 
-```
+```java
 package org.example;
 
 import software.amazon.awssdk.http.apache.ApacheHttpClient;
@@ -268,7 +268,7 @@ Maven generates the following `Handler` class with a `TODO` comment. The next st
 ### `Handler` class, Maven-generated
 <a name="code-collapsible3"></a>
 
-```
+```java
 package org.example;
 
 import software.amazon.awssdk.services.s3.S3Client;
@@ -297,7 +297,7 @@ After creating the bucket in the `createBucket()` method, the program uploads an
 
 Finally, the program deletes the object followed by the bucket in the `cleanUp` method.
 
-```
+```java
 package org.example;
 
 import software.amazon.awssdk.core.sync.RequestBody;
@@ -390,13 +390,13 @@ After the project is created and contains the complete `Handler` class, build an
 
 1. Use the following command to build your project:
 
-   ```
+   ```sh
    mvn clean package
    ```
 
 1. Use the following command to run the application.
 
-   ```
+   ```sh
    mvn exec:java -Dexec.mainClass="org.example.App"
    ```
 

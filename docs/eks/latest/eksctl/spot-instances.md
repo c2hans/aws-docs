@@ -11,19 +11,19 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/spot-instances.html
 
 To create a cluster with a managed nodegroup using Spot instances, pass the `--spot` flag and an optional list of instance types:
 
-```
+```console
 eksctl create cluster --spot --instance-types=c3.large,c4.large,c5.large
 ```
 
 To create a managed nodegroup using Spot instances on an existing cluster:
 
-```
+```console
 eksctl create nodegroup --cluster=<clusterName> --spot --instance-types=c3.large,c4.large,c5.large
 ```
 
 To create Spot instances using managed nodegroups via a config file:
 
-```
+```yaml
 # spot-cluster.yaml
 
 apiVersion: eksctl.io/v1alpha5
@@ -47,7 +47,7 @@ managedNodeGroups:
   instanceTypes: ["c3.large", "c4.large", "c5.large"]
 ```
 
-```
+```console
 eksctl create cluster -f spot-cluster.yaml
 ```
 
@@ -66,7 +66,7 @@ Unmanaged nodegroups do not support the `spot` and `instanceTypes` fields, inste
 
 Here is an example of a nodegroup that uses 50% spot instances and 50% on demand instances:
 
-```
+```yaml
 nodeGroups:
   - name: ng-1
     minSize: 2
@@ -83,7 +83,7 @@ Note that the `nodeGroups.X.instanceType` field shouldn’t be set when using th
 
 This example uses GPU instances:
 
-```
+```yaml
 nodeGroups:
   - name: ng-gpu
     instanceType: mixed
@@ -98,7 +98,7 @@ nodeGroups:
 
 This example uses the capacity-optimized spot allocation strategy:
 
-```
+```yaml
 nodeGroups:
   - name: ng-capacity-optimized
     minSize: 2
@@ -113,7 +113,7 @@ nodeGroups:
 
 This example uses the capacity-optimized-prioritized spot allocation strategy:
 
-```
+```yaml
 nodeGroups:
   - name: ng-capacity-optimized-prioritized
     minSize: 2
@@ -132,7 +132,7 @@ Note that the `spotInstancePools` field shouldn’t be set when using the `spotA
 
 Here is a minimal example:
 
-```
+```yaml
 nodeGroups:
   - name: ng-1
     instancesDistribution:

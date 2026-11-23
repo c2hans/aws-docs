@@ -185,7 +185,7 @@ For more information, see [Elastic network interfaces](https://docs.aws.amazon.c
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified network interface.**
 
-```
+```powershell
 Get-EC2NetworkInterface -NetworkInterfaceId eni-12345678
 ```
 **Output:**
@@ -212,7 +212,7 @@ VpcId              : vpc-12345678
 ```
 **Example 2: This example describes all your network interfaces.**
 
-```
+```powershell
 Get-EC2NetworkInterface
 ```
 +  For API details, see [DescribeNetworkInterfaces](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -220,7 +220,7 @@ Get-EC2NetworkInterface
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified network interface.**
 
-```
+```powershell
 Get-EC2NetworkInterface -NetworkInterfaceId eni-12345678
 ```
 **Output:**
@@ -247,7 +247,7 @@ VpcId              : vpc-12345678
 ```
 **Example 2: This example describes all your network interfaces.**
 
-```
+```powershell
 Get-EC2NetworkInterface
 ```
 +  For API details, see [DescribeNetworkInterfaces](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

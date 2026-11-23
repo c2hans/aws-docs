@@ -19,13 +19,13 @@ Send a message to a queue URL with `send_message`. Message attributes carry stru
 
  **Imports**
 
-```
+```python
 from aws_sdk_sqs import SQSClient
 ```
 
  **Code**
 
-```
+```python
 def send_message(
     client: SQSClient, queue_url: str, message_body: str
 ) -> str:
@@ -55,14 +55,14 @@ Receive up to 10 messages with `receive_message`. An empty response is valid, so
 
  **Imports**
 
-```
+```python
 from aws_sdk_sqs import SQSClient
 from aws_sdk_sqs.models import Message
 ```
 
  **Code**
 
-```
+```python
 def receive_messages(
     client: SQSClient, queue_url: str, attempts: int = 3
 ) -> list[Message]:
@@ -89,13 +89,13 @@ Receiving a message hides it for the visibility timeout but doesn't remove it fr
 
  **Imports**
 
-```
+```python
 from aws_sdk_sqs import SQSClient
 ```
 
  **Code**
 
-```
+```python
 def delete_message(
     client: SQSClient, queue_url: str, receipt_handle: str
 ) -> None:
@@ -115,13 +115,13 @@ Use `send_message_batch` to send up to 10 entries to one queue. Entry IDs must b
 
  **Imports**
 
-```
+```python
 from aws_sdk_sqs import SQSClient
 ```
 
  **Code**
 
-```
+```python
 def send_message_batch(
     client: SQSClient, queue_url: str, message_bodies: list[str]
 ) -> None:
@@ -146,13 +146,13 @@ After you process the messages, delete them with `delete_message_batch` by passi
 
  **Imports**
 
-```
+```python
 from aws_sdk_sqs import SQSClient
 ```
 
  **Code**
 
-```
+```python
 def delete_message_batch(
     client: SQSClient, queue_url: str, receipt_handles: list[str]
 ) -> None:

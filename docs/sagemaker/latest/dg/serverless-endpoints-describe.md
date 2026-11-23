@@ -11,7 +11,7 @@ You might want to retrieve information about your endpoint, including details su
 
 The following example uses the [AWS SDK for Python (Boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#id309) to call the [DescribeEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeEndpoint.html) API. For `EndpointName`, use the name of the endpoint you want to check.
 
-```
+```python
 response = client.describe_endpoint(
     EndpointName="{{<your-endpoint-name>}}",
 )

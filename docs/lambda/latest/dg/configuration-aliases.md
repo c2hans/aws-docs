@@ -34,7 +34,7 @@ You can create aliases for your Lambda function. A Lambda alias is a pointer to 
 
 To create an alias using the AWS Command Line Interface (AWS CLI), use the [create-alias](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/create-alias.html) command.
 
-```
+```bash
 aws lambda create-alias \
   --function-name {{my-function}} \
   --name {{alias-name}} \
@@ -44,7 +44,7 @@ aws lambda create-alias \
 
 To change an alias to point a new version of the function, use the [update-alias](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/update-alias.html) command.
 
-```
+```bash
 aws lambda update-alias \
   --function-name {{my-function}} \
   --name {{alias-name}} \
@@ -53,7 +53,7 @@ aws lambda update-alias \
 
 To delete an alias, use the [delete-alias](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/delete-alias.html) command.
 
-```
+```bash
 aws lambda delete-alias \
   --function-name {{my-function}} \
   --name {{alias-name}}

@@ -28,7 +28,7 @@ aws cloudwatch list-metrics --namespace "AWS/Polly"
 
 The preceding command returns a list of Amazon Polly metrics similar to the following. The `MetricName` element identifies what the metric is.
 
-```
+```json
 {
     "Metrics": [
         {

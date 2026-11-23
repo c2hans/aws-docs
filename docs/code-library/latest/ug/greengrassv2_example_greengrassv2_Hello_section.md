@@ -14,7 +14,7 @@ The following code example shows how to get started using AWS IoT Greengrass V2.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
 def hello_greengrassv2() -> None:
     """
     Lists Greengrass core devices to verify connectivity to the service.

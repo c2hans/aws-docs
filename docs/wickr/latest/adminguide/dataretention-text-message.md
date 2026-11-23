@@ -8,7 +8,7 @@ This guide documents the new AWS Wickr administration console, released on March
 
 The following is a text message in a one-to-one (DM) conversation.
 
-```
+```json
 {
   "message": "test message",
   "message_id": "a526085032fa11ee9a74053bb1017859",
@@ -28,7 +28,7 @@ The following shows a text message for a secure room conversation.
 **Note**
 The **vgroupid** for a secure room conversation starts with the **S** letter and begins with the **G** letter for group conversations.
 
-```
+```json
 {
   "message": "test message in a secure room",
   "message_id": "e2c5115032fb11ee9a74053bb1017859",

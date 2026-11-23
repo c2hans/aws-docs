@@ -54,7 +54,7 @@ Use the `SearchDICOMStudyInstances` API to search for all DICOM instances within
 ------
 #### [ curl ]
 
-   ```
+   ```sh
    curl --request GET \
      "https://dicom-medical-imaging.{{region}}.amazonaws.com/datastore/{{datastoreId}}/studies/{{StudyInstanceUID}}/instances[?query]" \
      --aws-sigv4 'aws:amz:{{region}}:medical-imaging' \

@@ -4,6 +4,10 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 
 # Certificate did not automatically renew
 
+**This blueprint packaged by Bitnami was deprecated on November 19, 2026**
+You can no longer create new instances with this blueprint. Existing instances and snapshots are not affected; you can keep using them and can still create new instances from snapshots. You are responsible for keeping the software on these instances up to date. When creating new instances, we recommend using the equivalent blueprint packaged by Lightsail if available. [Learn more](amazon-lightsail-faq-bitnami-blueprints.md)
+If you have an existing instance that uses a blueprint packaged by Bitnami and want to migrate to a blueprint packaged by Lightsail, see [Migrating from Bitnami blueprints to Lightsail blueprints](migrate-from-bitnami-to-lightsail-blueprints.md).
+
 The WordPress Lightsail Setup configures automatic renewal of your Let's Encrypt SSL/TLS certificate. The Bitnami blueprint uses a cron job that runs a Python script twice daily to check and renew the certificate. If your certificate expires despite automatic renewal being configured, use the following steps to diagnose and resolve the issue.
 
 ## Step 1: Check if your certificate has expired

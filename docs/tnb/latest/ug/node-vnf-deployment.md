@@ -9,7 +9,7 @@ NF deployments are modeled by providing the infrastructure and the application a
 ## Syntax
 <a name="node-vnf-deployment-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Deployment.VNFDeployment:
   requirements:
     deployment: String
@@ -60,7 +60,7 @@ Type: String
 ## Example
 <a name="node-vnf-deployment-example"></a>
 
-```
+```yaml
 SampleHelmDeploy:
   type: tosca.nodes.AWS.Deployment.VNFDeployment
   requirements:

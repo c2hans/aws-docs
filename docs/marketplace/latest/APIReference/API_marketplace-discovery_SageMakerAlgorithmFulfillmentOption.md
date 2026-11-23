@@ -34,12 +34,12 @@ Type: String
 Required: No
 
  ** recommendation **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SageMakerAlgorithmFulfillmentOption-recommendation"></a>
-Recommended instance types for training and inference with this algorithm.
+The recommended instance types for training and inference with this algorithm.
 Type: [SageMakerAlgorithmRecommendation](API_marketplace-discovery_SageMakerAlgorithmRecommendation.md) object
 Required: No
 
  ** releaseNotes **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SageMakerAlgorithmFulfillmentOption-releaseNotes"></a>
-Release notes describing changes in this version of the fulfillment option.
+Release notes that describe the changes in this version of the fulfillment option.
 Type: String
 Required: No
 

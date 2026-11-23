@@ -48,7 +48,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-st-crea
 
  Use the `create-channel` command to create a streaming table delivery. This configuration requires a schema from AWS Glue Schema Registry and a dead-letter queue:
 
-```
+```bash
 aws kinesis create-channel \
     --channel-name "my-iceberg-delivery" \
     --service-execution-role-arn "arn:aws:iam::111122223333:role/my-channel-role" \

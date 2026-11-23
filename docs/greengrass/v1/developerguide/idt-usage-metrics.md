@@ -50,7 +50,7 @@ Follow these steps to use the console to configure permissions for IDT for AWS I
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

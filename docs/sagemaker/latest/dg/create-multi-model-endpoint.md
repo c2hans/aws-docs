@@ -63,7 +63,7 @@ The following procedure outlines the key steps used in that sample to create a C
 
 1. Get an AWS SDK for Python (Boto3) SageMaker AI client and create the model that uses this container.
 
-   ```
+   ```python
    import boto3
    sagemaker_client = boto3.client('sagemaker')
    response = sagemaker_client.create_model(
@@ -74,7 +74,7 @@ The following procedure outlines the key steps used in that sample to create a C
 
 1. (Optional) If you are using a serial inference pipeline, get the additional container(s) to include in the pipeline, and include it in the `Containers` argument of `CreateModel`:
 
-   ```
+   ```python
    preprocessor_container = {
                   'Image': '{{<ACCOUNT_ID>}}.dkr.ecr.{{<REGION_NAME>}}.amazonaws.com/{{<PREPROCESSOR_IMAGE>}}:{{<TAG>}}'
                }
@@ -96,7 +96,7 @@ You can use only one multi-model-enabled endpoint in a serial inference pipeline
 
 1. (Optional) If your use case does not benefit from model caching, set the value of the `ModelCacheSetting` field of the `MultiModelConfig` parameter to `Disabled`, and include it in the `Container` argument of the call to `create_model`. The value of the `ModelCacheSetting` field is `Enabled` by default.
 
-   ```
+   ```python
    container = {
                    'Image': image,
                    'ModelDataUrl': 's3://{{<BUCKET_NAME>}}/{{<PATH_TO_ARTIFACTS>}}',
@@ -116,7 +116,7 @@ You can use only one multi-model-enabled endpoint in a serial inference pipeline
 
 1. Configure the multi-model endpoint for the model. We recommend configuring your endpoints with at least two instances. This allows SageMaker AI to provide a highly available set of predictions across multiple Availability Zones for the models.
 
-   ```
+   ```python
    response = sagemaker_client.create_endpoint_config(
                    EndpointConfigName = {{'<ENDPOINT_CONFIG_NAME>'}},
                    ProductionVariants=[
@@ -135,7 +135,7 @@ You can use only one multi-model-enabled endpoint in a serial inference pipeline
 
 1. Create the multi-model endpoint using the `EndpointName` and `EndpointConfigName` parameters.
 
-   ```
+   ```python
    response = sagemaker_client.create_endpoint(
                  EndpointName       = {{'<ENDPOINT_NAME>'}},
                  EndpointConfigName = {{'<ENDPOINT_CONFIG_NAME>'}})
@@ -154,7 +154,7 @@ The following procedure outlines the key steps to create a GPU backed multi-mode
 
 1. Define the container image. To create a multi-model endpoint with GPU support for ResNet models, define the container to use the [NVIDIA Triton Server image](https://docs.aws.amazon.com/sagemaker/latest/dg/triton.html). This container supports multi-model endpoints and is optimized for running on GPU instances. We call the [SageMaker AI Python SDK](https://sagemaker.readthedocs.io/en/stable/) utility function `image_uris.retrieve()` to get the address for the image. For example:
 
-   ```
+   ```python
    import sagemaker
    region = sagemaker_session.boto_region_name
 
@@ -176,7 +176,7 @@ The following procedure outlines the key steps to create a GPU backed multi-mode
 
 1. Get an AWS SDK for Python (Boto3) SageMaker AI client and create the model that uses this container.
 
-   ```
+   ```python
    import boto3
    sagemaker_client = boto3.client('sagemaker')
    response = sagemaker_client.create_model(
@@ -187,7 +187,7 @@ The following procedure outlines the key steps to create a GPU backed multi-mode
 
 1. (Optional) If you are using a serial inference pipeline, get the additional container(s) to include in the pipeline, and include it in the `Containers` argument of `CreateModel`:
 
-   ```
+   ```python
    preprocessor_container = {
                   'Image': '{{<ACCOUNT_ID>}}.dkr.ecr.{{<REGION_NAME>}}.amazonaws.com/{{<PREPROCESSOR_IMAGE>}}:{{<TAG>}}'
                }
@@ -209,7 +209,7 @@ You can use only one multi-model-enabled endpoint in a serial inference pipeline
 
 1. (Optional) If your use case does not benefit from model caching, set the value of the `ModelCacheSetting` field of the `MultiModelConfig` parameter to `Disabled`, and include it in the `Container` argument of the call to `create_model`. The value of the `ModelCacheSetting` field is `Enabled` by default.
 
-   ```
+   ```python
    container = {
                    'Image': image,
                    'ModelDataUrl': 's3://{{<BUCKET_NAME>}}/{{<PATH_TO_ARTIFACTS>}}',
@@ -229,7 +229,7 @@ You can use only one multi-model-enabled endpoint in a serial inference pipeline
 
 1. Configure the multi-model endpoint with GPU backed instances for the model. We recommend configuring your endpoints with more than one instance to allow for high availability and higher cache hits.
 
-   ```
+   ```python
    response = sagemaker_client.create_endpoint_config(
                    EndpointConfigName = {{'<ENDPOINT_CONFIG_NAME>'}},
                    ProductionVariants=[
@@ -246,7 +246,7 @@ You can use only one multi-model-enabled endpoint in a serial inference pipeline
 
 1. Create the multi-model endpoint using the `EndpointName` and `EndpointConfigName` parameters.
 
-   ```
+   ```python
    response = sagemaker_client.create_endpoint(
                  EndpointName       = {{'<ENDPOINT_NAME>'}},
                  EndpointConfigName = {{'<ENDPOINT_CONFIG_NAME>'}})

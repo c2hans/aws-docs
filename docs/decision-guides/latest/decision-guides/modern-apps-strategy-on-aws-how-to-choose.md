@@ -32,6 +32,8 @@ When you modernize existing applications, you can also use AI-assisted services 
 
 [![AWS Videos](https://img.youtube.com/vi/OJD3UMuU8Zk/0.jpg)](https://www.youtube.com/watch?v=OJD3UMuU8Zk)
 
+In this six-minute video, decision guide co-author Josh Kahn reflects on modern applications development strategy choices.
+
 ## Understand
 <a name="understand"></a>
 
@@ -40,6 +42,8 @@ Developers and data engineers might have different compute requirements. For exa
 Alternatively, a data engineer might choose an open-source framework like Kubeflow or Ray on [Amazon Elastic Kubernetes Service](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html) (Amazon EKS) because it simplifies deployment of machine-learning models but allows access to the right high-powered instances.
 
 [![AWS Videos](https://img.youtube.com/vi/1hN9SuRsnNQ/0.jpg)](https://www.youtube.com/watch?v=1hN9SuRsnNQ)
+
+In this three minute video, decision guide co-author Roland Barcia discusses the key criteria to consider in choosing your strategy.
 
 Each role tends to develop skills in technology stacks over time and has preferences about the tools they use. Both developers and data engineers look at their compute choice on a workload-by-workload basis, which means operational roles need to support a variety of workloads since they often work across teams. These roles include platform engineers, cloud administrators, or site reliability engineers (SREs).
 

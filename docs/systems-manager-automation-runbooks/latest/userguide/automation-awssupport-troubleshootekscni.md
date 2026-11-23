@@ -139,7 +139,7 @@ Because this runbook runs a child runbook under the same `AutomationAssumeRole`,
 
 The following example shows a least-privilege IAM policy for the actions that this runbook calls directly:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -55,43 +55,43 @@ Run the following commands in your Raspberry Pi terminal.
 
 1. Install updates to Raspbian.
 
-   ```
+   ```bash
    sudo apt-get update
    sudo apt-get dist-upgrade
    ```
 
 1. <a name="install-picamera-step"></a>Install the `picamera` interface for the camera module and other Python libraries that are required for this tutorial.
 
-   ```
+   ```bash
    sudo apt-get install -y python3-dev python3-setuptools python3-pip python3-picamera
    ```
 
    Validate the installation:
    + Make sure that your Python 3.7 installation includes pip.
 
-     ```
+     ```bash
      python3 -m pip
      ```
 
      If pip isn't installed, download it from the [pip website](https://pip.pypa.io/en/stable/installing/) and then run the following command.
 
-     ```
+     ```bash
      python3 get-pip.py
      ```
    + Make sure that your Python version is 3.7 or higher.
 
-     ```
+     ```bash
      python3 --version
      ```
 
      If the output lists an earlier version, run the following command.
 
-     ```
+     ```bash
      sudo apt-get install -y python3.7-dev
      ```
    + Make sure that Setuptools and Picamera installed successfully.
 
-     ```
+     ```bash
      sudo -u ggc_user bash -c 'python3 -c "import setuptools"'
      sudo -u ggc_user bash -c 'python3 -c "import picamera"'
      ```
@@ -102,13 +102,13 @@ If the Python executable installed on your device is `python3.7`, use `python3.7
 
 1. Reboot the Raspberry Pi.
 
-   ```
+   ```bash
    sudo reboot
    ```
 
 1. Open the Raspberry Pi configuration tool.
 
-   ```
+   ```bash
    sudo raspi-config
    ```
 
@@ -116,7 +116,7 @@ If the Python executable installed on your device is `python3.7`, use `python3.7
 
 1. Use the following command to test the camera setup.
 
-   ```
+   ```bash
    raspistill -v -o test.jpg
    ```
 
@@ -393,7 +393,7 @@ In this step, deploy the current version of the group definition to the Greengra
 
    1. To check whether the daemon is running:
 
-      ```
+      ```bash
       ps aux | grep -E 'greengrass.*daemon'
       ```
 
@@ -403,7 +403,7 @@ The version in the path depends on the AWS IoT Greengrass Core software version 
 
    1. To start the daemon:
 
-      ```
+      ```bash
       cd /greengrass/ggc/core/
       sudo ./greengrassd start
       ```

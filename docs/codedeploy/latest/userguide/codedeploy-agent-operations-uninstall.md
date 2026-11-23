@@ -11,7 +11,7 @@ You can remove the CodeDeploy agent from instances when it is no longer needed o
 
 To uninstall the CodeDeploy agent, sign in to the instance and run the following command:
 
-```
+```sh
 sudo yum erase codedeploy-agent
 ```
 
@@ -20,7 +20,7 @@ sudo yum erase codedeploy-agent
 
 To uninstall the CodeDeploy agent, sign in to the instance and run the following command:
 
-```
+```sh
 sudo dpkg --purge codedeploy-agent
 ```
 
@@ -51,6 +51,6 @@ You can also sign in to the instance, and in **Control Panel**, open **Programs 
 
 To uninstall the CodeDeploy agent, sign in to the instance and run the following command:
 
-```
+```sh
 sudo /opt/codedeploy-agent/bin/uninstall.sh
 ```

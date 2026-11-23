@@ -80,7 +80,7 @@ For more information, see [Getting Amazon SNS notifications when your Auto Scali
 **Tools for PowerShell V4**
 **Example 1: This example describes the notification actions associated with the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASNotificationConfiguration -AutoScalingGroupName my-asg | format-list
 ```
 **Output:**
@@ -96,7 +96,7 @@ TopicARN             : arn:aws:sns:us-west-2:123456789012:my-topic
 ```
 **Example 2: This example describes the notification actions associated with all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASNotificationConfiguration
 ```
 +  For API details, see [DescribeNotificationConfigurations](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -104,7 +104,7 @@ Get-ASNotificationConfiguration
 **Tools for PowerShell V5**
 **Example 1: This example describes the notification actions associated with the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASNotificationConfiguration -AutoScalingGroupName my-asg | format-list
 ```
 **Output:**
@@ -120,7 +120,7 @@ TopicARN             : arn:aws:sns:us-west-2:123456789012:my-topic
 ```
 **Example 2: This example describes the notification actions associated with all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASNotificationConfiguration
 ```
 +  For API details, see [DescribeNotificationConfigurations](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

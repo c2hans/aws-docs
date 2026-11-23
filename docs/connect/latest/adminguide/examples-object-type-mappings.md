@@ -18,7 +18,7 @@ This topic builds a mapping from the ground up. Each example builds on the one b
 
 Every mapping is a set of `Fields` and a set of `Keys`. Fields pull values out of the incoming object. Keys combine fields into identifiers that Customer Profiles uses to match and search.
 
-```
+```json
 {
     "Fields": {
         "{fieldName}": {                     <-- your name for this value
@@ -76,7 +76,7 @@ A mapping needs one `UNIQUE` key and one `PROFILE` key. Nothing else is required
 
 Incoming object:
 
-```
+```json
 {
   "customerId": "C-10045",
   "signupDate": "2025-01-14"
@@ -85,7 +85,7 @@ Incoming object:
 
 Mapping:
 
-```
+```json
 {
     "Fields": {
         "customerId": {
@@ -117,7 +117,7 @@ Adding a `Target` to a field writes its value onto the standard profile, where a
 
 Incoming object:
 
-```
+```json
 {
   "customerId": "C-10045",
   "email": "john@example.com",
@@ -134,7 +134,7 @@ Incoming object:
 
 Mapping:
 
-```
+```json
 {
     "Fields": {
         "customerId": {
@@ -229,7 +229,7 @@ When a record describes an asset, order, case, loyalty membership, or travel boo
 
 Incoming object:
 
-```
+```json
 {
   "customerEmail": "jane@example.com",
   "serialNumber": "SN-987654",
@@ -243,7 +243,7 @@ Incoming object:
 
 Mapping:
 
-```
+```json
 {
     "Fields": {
         "emailAddress": {
@@ -321,7 +321,7 @@ Key names are global to the domain. Two object types that use the same key name 
 
 Incoming object:
 
-```
+```json
 {
   "ticketId": "SR-55021",
   "customerEmail": "jane@example.com",
@@ -335,7 +335,7 @@ Incoming object:
 
 Mapping:
 
-```
+```json
 {
     "Fields": {
         "emailAddress": {

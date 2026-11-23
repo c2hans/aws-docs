@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/redshift#code-examples).
 Executes a SQL statement to create a database table.
 
-```
+```java
     /**
      * Creates an asynchronous task to execute a SQL statement for creating a new table.
      *
@@ -51,7 +51,7 @@ Executes a SQL statement to create a database table.
 ```
 Executes a SQL statement to insert data into a database table.
 
-```
+```java
     /**
      * Asynchronously pops a table from a JSON file.
      *
@@ -135,7 +135,7 @@ Executes a SQL statement to insert data into a database table.
 ```
 Executes a SQL statement to query a database table.
 
-```
+```java
     /**
      * Asynchronously queries movies by a given year from a Redshift database.
      *
@@ -185,7 +185,7 @@ Executes a SQL statement to query a database table.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rsd#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example values: iv_cluster_identifier = 'redshift-cluster-movies'
         " Example values: iv_database_name = 'dev'

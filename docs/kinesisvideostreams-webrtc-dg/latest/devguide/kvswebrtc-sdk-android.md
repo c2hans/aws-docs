@@ -14,7 +14,7 @@ Amazon Kinesis Video Streams doesn't support IPv6 addresses on Android. See more
 
 To download the WebRTC SDK in Android, run the following command:
 
-```
+```sh
 $ git clone https://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-android.git
 ```
 
@@ -31,7 +31,7 @@ To build the WebRTC SDK in Android, complete the following steps:
 
 1. In your Android IDE, open `awsconfiguration.json` (from `src/main/res/raw/`). The file looks like the following:
 
-   ```
+   ```json
    {
      "Version": "1.0",
      "CredentialsProvider": {
@@ -213,7 +213,7 @@ Use the search bar, if needed.
 
    1. Select the **JSON** tab and replace the policy with the following:
 
-      ```
+      ```JSON
       {
           "Version": "2012-10-17",
           "Statement": [

@@ -46,7 +46,7 @@ The Amazon Location GeoJSON conversion helpers include the following functions:
 
 This example uses AWS SDK for JavaScript v3.
 
-```
+```js
 import { placeToFeatureCollection } from '@aws/amazon-location-utility-datatypes';
 
 ...

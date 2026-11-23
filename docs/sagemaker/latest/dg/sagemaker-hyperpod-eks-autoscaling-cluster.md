@@ -152,7 +152,7 @@ In the following steps, you'll create a SageMaker HyperPod cluster with continuo
 
 1. Expected output:
 
-   ```
+   ```json
    {
        "Mode": "Enable",
        "AutoScalerType": "Karpenter",

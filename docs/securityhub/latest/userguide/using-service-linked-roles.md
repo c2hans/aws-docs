@@ -34,7 +34,7 @@ You must grant permissions to allow an IAM identity (such as a role, group, or u
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

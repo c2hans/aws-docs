@@ -90,7 +90,7 @@ Valid pattern: `\/[a-zA-Z0-9_-]+`
 
 The following CLI command creates a `ConnectorDefinition` with an initial version that contains the Device Defender connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -128,7 +128,7 @@ This is the topic syntax that AWS IoT Device Defender expects. The connector rep
 **Example output**
 For metrics reporting details, see [ Device metrics document specification](https://docs.aws.amazon.com/iot/latest/developerguide/device-defender-detect.html#DetectMetricsMessagesSpec) in the *AWS IoT Developer Guide*.
 
-```
+```json
 {
     "header": {
         "report_id": 1529963534,

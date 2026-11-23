@@ -29,7 +29,7 @@ This tutorial assumes that you have already launched an instance using AL2027 re
 
   To check the version of the package, you can use the following command.
 
-  ```
+  ```bash
   [ec2-user ~]$ rpm -qi system-release
   ```
 
@@ -48,7 +48,7 @@ Make sure to have the latest version of `system-release` installed. For more inf
 
 1. Install the `spal-release` package on your system. This adds the `.repo` configuration file and the GPG keys to your system.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo dnf install spal-release
    ```
 **Note**
@@ -56,7 +56,7 @@ Make sure to have the latest version of `system-release` installed. For more inf
 
 1. Verify the SPAL repository configuration was successfully added to your system.
 
-   ```
+   ```bash
    [ec2-user ~]$ cat /etc/yum.repos.d/amazonlinux-spal.repo
    ```
 
@@ -64,7 +64,7 @@ Make sure to have the latest version of `system-release` installed. For more inf
 
    You can also check the list of configured repositories by running `dnf repolist`.
 
-   ```
+   ```bash
    [ec2-user ~]$ dnf repolist --all
    ```
 **Note**
@@ -83,13 +83,13 @@ Make sure to have the latest version of `system-release` installed. For more inf
 <a name="configure-spal-install-pkgs"></a><a name="install-pkgs-spal"></a>
 + Install SPAL packages on your system by running `dnf install` command.
 
-  ```
+  ```bash
   [ec2-user ~]$ sudo dnf install {{package}}
   ```
 **Note**
  You can use `dnf list` to see a complete list of SPAL packages.
 
-  ```
+  ```bash
   [ec2-user ~]$ dnf list --repo=amazonlinux-spal
   ```
 **Note**
@@ -103,7 +103,7 @@ RPM source (SRPM) packages are primarily used by developers for building package
 
 To download the source RPM for an SPAL package, run the following command:
 
-```
+```bash
 [ec2-user ~]$ dnf download --source {{package}}
 ```
 
@@ -114,7 +114,7 @@ The debuginfo repository contains both debuginfo and debugsource packages. These
 
 To install debuginfo and debugsource packages for an SPAL package, run the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf debuginfo-install {{package}}
 ```
 
@@ -123,13 +123,13 @@ To install debuginfo and debugsource packages for an SPAL package, run the follo
 
 1. Remove the SPAL repository configuration using `dnf remove` command.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo dnf remove spal-release
    ```
 
 1. Verify the repository was removed by running `dnf repolist` command.
 
-   ```
+   ```bash
    [ec2-user ~]$ dnf repolist
    ```
 **Important**

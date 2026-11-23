@@ -21,3 +21,5 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/o
 <a name="conceptual-architecture-omni"></a>
 
 ![A diagram that demonstrates an omni-channel architectural framework for government services.](https://docs.aws.amazon.com/wellarchitected/latest/government-lens/images/omni-channel-concept.jpg)
+
+*Figure 5: The omni-channel architectural framework for government services*

@@ -31,7 +31,7 @@ Uploading an encrypted object in `S3EncryptionClientV3` takes four additional pa
 +  `@MaterialsProvider` is a provider which handles generating a cipher key and initialization vector, as well as encrypting your cipher key.
 +  `@CommitmentPolicy` is policy option that dictates how an object gets read either with key commitment or without key commitment and how an object gets written with key commitment or without key commitment.
 
-```
+```php
 use Aws\S3\S3Client;
 use Aws\S3\Crypto\S3EncryptionClientV3;
 use Aws\Kms\KmsClient;
@@ -98,7 +98,7 @@ cipher to use and keysize.
 ** `@CommitmentPolicy` policy option that dictates how an object gets read either with **
 key commitment or without key commitment and how an object gets written with key commitment or without key commitment.
 
-```
+```php
 $result = $encryptionClient->getObject([
     '@KmsAllowDecryptWithAnyCmk' => true,
     '@SecurityProfile' => 'V2_AND_LEGACY',
@@ -136,7 +136,7 @@ Additional authentication data is not supported by all AWS SDKs and as such othe
 
 You also have the option of providing an instance of a class that implements the `Aws\Crypto\MetadataStrategyInterface`. This simple interface handles saving and loading the `Aws\Crypto\MetadataEnvelope` that contains your envelope encryption materials. The SDK provides two classes that implement this: `Aws\S3\Crypto\HeadersMetadataStrategy` and `Aws\S3\Crypto\InstructionFileMetadataStrategy`. `HeadersMetadataStrategy` is used by default.
 
-```
+```php
 $strategy = new InstructionFileMetadataStrategy(
     $s3Client
 );
@@ -166,7 +166,7 @@ $result = $encryptionClient->getObject([
 
 Class name constants for the `HeadersMetadataStrategy` and `InstructionFileMetadataStrategy` can also be supplied by invoking *::class*.
 
-```
+```php
 $result = $encryptionClient->putObject([
     '@MaterialsProvider' => $materialsProvider,
     '@CommitmentPolicy' => 'REQUIRE_ENCRYPT_REQUIRE_DECRYPT',
@@ -186,7 +186,7 @@ If there is a failure after an instruction file is uploaded, it will not be auto
 
 Performing a multipart upload with client-side encryption is also possible. The `Aws\S3\Crypto\S3EncryptionMultipartUploaderV3` prepares the source stream for encryption before uploading. Creating one takes on a similar experience to using the `Aws\S3\MultipartUploader` and the `Aws\S3\Crypto\S3EncryptionClientV3`. The `S3EncryptionMultipartUploaderV3` can handle the same `'@MetadataStrategy'` option as the `S3EncryptionClientV3`, as well as all available `'@CipherOptions'` configurations.
 
-```
+```php
 $kmsKeyId = 'kms-key-id';
 $materialsProvider = new KmsMaterialsProviderV3(
     new KmsClient([

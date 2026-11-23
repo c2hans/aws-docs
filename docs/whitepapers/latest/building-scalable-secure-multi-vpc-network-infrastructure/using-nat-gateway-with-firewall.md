@@ -10,6 +10,8 @@ In the centralized egress architecture with inspection, the AWS Network Firewall
 
 ![A diagram depicting centralized egress with AWS Network Firewall and NAT gateway (route table design)](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/centralized-egress-rt.png)
 
+**Centralized egress with AWS Network Firewall and NAT gateway (route table design)**
+
 For centralized deployment model with Transit Gateway, AWS recommends deploying AWS Network Firewall endpoints in multiple Availability Zones. There should be one firewall endpoint in each Availability Zone the customer is running workloads in, as shown in the preceding diagram. As a best practice, the firewall subnet should not contain any other traffic because AWS Network Firewall is not able to inspect traffic from sources or destinations within a firewall subnet.
 
 Similar to the previous setup, spoke VPC attachments are associated with Route Table 1 (RT1) and are propagated to Route Table 2 (RT2). A Blackhole route is explicitly added to disallow the two VPCs from communicating with each other.

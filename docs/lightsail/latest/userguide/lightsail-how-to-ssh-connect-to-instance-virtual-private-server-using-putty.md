@@ -25,6 +25,7 @@ You can use the default private key that Lightsail provides, a new private key f
    + Lightsail packaged versions of WordPress, Nginx, WordPress Multisite, LAMP, Node.js instances: `admin`
    + Ruby on Rails instances: `ec2-user`
    + OpenClaw instances: `ubuntu`
+   + Kiro Crew instances: `ubuntu`
    + Plesk instances: `ubuntu`
    + cPanel & WHM (AlmaLinux) instances: `ec2-user`
    + cPanel & WHM (CentOS 7) instances: `centos`

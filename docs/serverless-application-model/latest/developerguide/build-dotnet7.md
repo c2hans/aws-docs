@@ -99,7 +99,7 @@ To define a .NET8 Lambda function in your AWS SAM template, do the following:
 **Install Docker**
 + Building with Native AOT, requires Docker to be installed. For installation instructions, see [Installing Docker to use with the AWS SAM CLI](install-docker.md).
 
-```
+```yaml
 Resources:
 HelloWorldFunction:
   Type: AWS::Serverless::Function

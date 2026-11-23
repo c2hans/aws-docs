@@ -22,7 +22,7 @@ To add permission to the ECS task role:
 
 1. In the IAM console, open that role and add an inline policy with a statement like the following, replacing the resource ARN with your specific model’s project and version ARN.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [

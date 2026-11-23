@@ -48,12 +48,12 @@ For more information, see [Manage your Amazon EC2 resources](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: This example enables the longer ID format for the specified resource type.**
 
-```
+```powershell
 Edit-EC2IdFormat -Resource instance -UseLongId $true
 ```
 **Example 2: This example disables the longer ID format for the specified resource type.**
 
-```
+```powershell
 Edit-EC2IdFormat -Resource instance -UseLongId $false
 ```
 +  For API details, see [ModifyIdFormat](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -61,12 +61,12 @@ Edit-EC2IdFormat -Resource instance -UseLongId $false
 **Tools for PowerShell V5**
 **Example 1: This example enables the longer ID format for the specified resource type.**
 
-```
+```powershell
 Edit-EC2IdFormat -Resource instance -UseLongId $true
 ```
 **Example 2: This example disables the longer ID format for the specified resource type.**
 
-```
+```powershell
 Edit-EC2IdFormat -Resource instance -UseLongId $false
 ```
 +  For API details, see [ModifyIdFormat](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

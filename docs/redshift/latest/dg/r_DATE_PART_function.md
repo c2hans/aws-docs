@@ -38,7 +38,7 @@ The default column name for the DATE\_PART function is `pgdate_part`.
 
 The following example finds the minute from a timestamp literal.
 
-```
+```sql
 SELECT DATE_PART(minute, timestamp '20230104 04:05:06.789');
 
 pgdate_part
@@ -48,7 +48,7 @@ pgdate_part
 
 The following example finds the week number from a timestamp literal. The week number calculation follows the ISO 8601 standard. For more information, see [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) in Wikipedia.
 
-```
+```sql
 SELECT DATE_PART(week, timestamp '20220502 04:05:06.789');
 
 pgdate_part
@@ -58,7 +58,7 @@ pgdate_part
 
 The following example finds the day of the month from a timestamp literal.
 
-```
+```sql
 SELECT DATE_PART(day, timestamp '20220502 04:05:06.789');
 
 pgdate_part
@@ -68,7 +68,7 @@ pgdate_part
 
 The following example finds the day of the week from a timestamp literal. The day of week number calculation is an integer from 0-6, starting with Sunday.
 
-```
+```sql
 SELECT DATE_PART(dayofweek, timestamp '20220502 04:05:06.789');
 
 pgdate_part
@@ -78,7 +78,7 @@ pgdate_part
 
 The following example finds the century from a timestamp literal. The century calculation follows the ISO 8601 standard. For more information, see [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) in Wikipedia.
 
-```
+```sql
 SELECT DATE_PART(century, timestamp '20220502 04:05:06.789');
 
 pgdate_part
@@ -88,7 +88,7 @@ pgdate_part
 
 The following example finds the millennium from a timestamp literal. The millennium calculation follows the ISO 8601 standard. For more information, see [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) in Wikipedia.
 
-```
+```sql
 SELECT DATE_PART(millennium, timestamp '20220502 04:05:06.789');
 
 pgdate_part
@@ -98,7 +98,7 @@ pgdate_part
 
 The following example finds the microseconds from a timestamp literal. The microseconds calculation follows the ISO 8601 standard. For more information, see [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) in Wikipedia.
 
-```
+```sql
 SELECT DATE_PART(microsecond, timestamp '20220502 04:05:06.789');
 
 pgdate_part
@@ -108,7 +108,7 @@ pgdate_part
 
 The following example finds the month from a date literal.
 
-```
+```sql
 SELECT DATE_PART(month, date '20220502');
 
 pgdate_part

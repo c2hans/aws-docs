@@ -37,7 +37,7 @@ IAM-based inbound authorization lets you use the gateway caller’s IAM credenti
 
 The following example shows a policy you could attach to an identity to allow it to invoke a gateway with the ID `my-gateway-12345`
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -83,7 +83,7 @@ Create an application and client with a supported identity provider. For an Amaz
 
 Run the following command in an AgentCore project directory:
 
-```
+```bash
 agentcore add gateway \
   --name MyGateway \
   --protocol-type MCP \
@@ -151,7 +151,7 @@ The following rules apply to the values:
 
 The following example configures a default public domain and one alternate domain:
 
-```
+```json
 {
   "domainOverride": {
     "default": "mcp.example.com",
@@ -210,7 +210,7 @@ The `privateEndpoint` applies to the domain in the `discoveryUrl`. If your ident
 
 The following example creates a gateway with a private identity provider using managed Lattice:
 
-```
+```json
 {
   "name": "my-private-idp-gateway",
   "protocolType": "MCP",
@@ -237,7 +237,7 @@ The following example creates a gateway with a private identity provider using m
 
 If your token or JWKS endpoints use a different domain than the discovery URL, add a `privateEndpointOverrides` entry for each additional domain. `privateEndpointOverrides` is supported only with self-managed Lattice resources:
 
-```
+```json
 {
   ...
   "authorizerConfiguration": {

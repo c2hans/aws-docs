@@ -13,7 +13,7 @@ This process describes how to list all Amazon MSK configurations in your account
 
   The following is an example of a successful response after you run this command.
 
-  ```
+  ```JSON
   {
       "Configurations": [
           {

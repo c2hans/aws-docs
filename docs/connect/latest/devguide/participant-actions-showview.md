@@ -9,7 +9,7 @@ Initiates a UI-based workflow that can be surfaced to users of front end applica
 ## Parameter object
 <a name="showview-parameter"></a>
 
-```
+```json
 {
     "ViewResource": {
         "Id": "{{Id of the View Resource that will be shown in the UI.}}",

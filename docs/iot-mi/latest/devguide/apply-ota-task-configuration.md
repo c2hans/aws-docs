@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/apply-ota-task-co
 
 Once the configuration is created, you'll receive a `taskConfigurationId` that is added to your `CreateOtaTask` request along with additional configurations:
 
-```
+```bash
 aws iotmanagedintegrations create-ota-task \
   --description "OTA with configuration" \
   --s3-url "s3://test-job-document-bucket/ota-job-document.json" \

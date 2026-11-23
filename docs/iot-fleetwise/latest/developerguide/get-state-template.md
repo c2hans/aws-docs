@@ -13,14 +13,14 @@ You can use the [GetStateTemplate](https://docs.aws.amazon.com/iot-fleetwise/lat
 
 Replace {{identifier}} with the name of the state template.
 
-```
+```bash
 aws iotfleetwise get-state-template \
     --identifier {{idenitfier}}
 ```
 
 You can use the [ListStateTemplates](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListStateTemplates.html) API operation to retrieve a list of your created state templates. The following example uses the AWS CLI.
 
-```
+```bash
 aws iotfleetwise list-state-templates
 ```
 
@@ -31,7 +31,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -28,7 +28,7 @@ The only parameter required is the name of the selected bucket. If the bucket cu
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -37,7 +37,7 @@ use Aws\S3\S3Client;
 
  **Sample Code**
 
-```
+```php
 $client = new S3Client([
     'profile' => 'default',
     'region' => 'us-west-2',
@@ -62,7 +62,7 @@ Create a PHP file with the following code. First create an AWS.S3 client service
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -71,7 +71,7 @@ use Aws\S3\S3Client;
 
  **Sample Code**
 
-```
+```php
 $client = new S3Client([
     'profile' => 'default',
     'region' => 'us-west-2',

@@ -13,7 +13,7 @@ You create an `EnhancedDocument` instance by using a builder that provides sever
 
 With a JSON string, you can build an `EnhancedDocument` in one method call. The following snippet creates an `EnhancedDocument` from a JSON string returned by the `jsonPerson()` helper method. The `jsonPerson()` method returns the JSON string version of the [person object](ddb-en-client-doc-api-steps.md#ddb-en-client-doc-api-steps-createschema-obj) shown previously.
 
-```
+```java
 EnhancedDocument document =
         EnhancedDocument.builder()
                         .json( jsonPerson() )
@@ -27,7 +27,7 @@ Alternatively, you can build an `EnhancedDocument` instance from individual comp
 
 The following example builds a `person` enhanced document similar to the enhanced document that is built from the JSON string in the previous example.
 
-```
+```java
         /* Define the shape of an address map whose JSON representation looks like the following.
            Use 'addressMapEnhancedType' in the following EnhancedDocument.builder() to simplify the code.
            "home": {

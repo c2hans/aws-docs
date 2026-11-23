@@ -39,7 +39,7 @@ For more information, see [Working with associations in Systems Manager](https:/
 **Tools for PowerShell V4**
 **Example 1: This example deletes the association between an instance and a document. There is no output if the command succeeds.**
 
-```
+```powershell
 Remove-SSMAssociation -InstanceId "i-0cb2b964d3e14fd9f" -Name "AWS-UpdateSSMAgent"
 ```
 +  For API details, see [DeleteAssociation](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -47,7 +47,7 @@ Remove-SSMAssociation -InstanceId "i-0cb2b964d3e14fd9f" -Name "AWS-UpdateSSMAgen
 **Tools for PowerShell V5**
 **Example 1: This example deletes the association between an instance and a document. There is no output if the command succeeds.**
 
-```
+```powershell
 Remove-SSMAssociation -InstanceId "i-0cb2b964d3e14fd9f" -Name "AWS-UpdateSSMAgent"
 ```
 +  For API details, see [DeleteAssociation](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

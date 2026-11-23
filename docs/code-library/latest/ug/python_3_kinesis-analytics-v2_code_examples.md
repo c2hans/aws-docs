@@ -27,7 +27,7 @@ The following code example shows how to use `AddApplicationInput`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis-analytics-v2#code-examples).
 
-```
+```python
 class KinesisAnalyticsApplicationV2:
     """Encapsulates Kinesis Data Analytics application functions."""
 
@@ -85,7 +85,7 @@ The following code example shows how to use `AddApplicationOutput`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis-analytics-v2#code-examples).
 
-```
+```python
 class KinesisAnalyticsApplicationV2:
     """Encapsulates Kinesis Data Analytics application functions."""
 
@@ -144,7 +144,7 @@ The following code example shows how to use `CreateApplication`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis-analytics-v2#code-examples).
 
-```
+```python
 class KinesisAnalyticsApplicationV2:
     """Encapsulates Kinesis Data Analytics application functions."""
 
@@ -194,7 +194,7 @@ The following code example shows how to use `DeleteApplication`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis-analytics-v2#code-examples).
 
-```
+```python
 class KinesisAnalyticsApplicationV2:
     """Encapsulates Kinesis Data Analytics application functions."""
 
@@ -231,7 +231,7 @@ The following code example shows how to use `DescribeApplication`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis-analytics-v2#code-examples).
 
-```
+```python
 class KinesisAnalyticsApplicationV2:
     """Encapsulates Kinesis Data Analytics application functions."""
 
@@ -273,7 +273,7 @@ The following code example shows how to use `DescribeApplicationSnapshot`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis-analytics-v2#code-examples).
 
-```
+```python
 class KinesisAnalyticsApplicationV2:
     """Encapsulates Kinesis Data Analytics application functions."""
 
@@ -325,7 +325,7 @@ The following code example shows how to use `DiscoverInputSchema`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis-analytics-v2#code-examples).
 
-```
+```python
 class KinesisAnalyticsApplicationV2:
     """Encapsulates Kinesis Data Analytics application functions."""
 
@@ -377,7 +377,7 @@ The following code example shows how to use `StartApplication`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis-analytics-v2#code-examples).
 
-```
+```python
 class KinesisAnalyticsApplicationV2:
     """Encapsulates Kinesis Data Analytics application functions."""
 
@@ -427,7 +427,7 @@ The following code example shows how to use `StopApplication`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis-analytics-v2#code-examples).
 
-```
+```python
 class KinesisAnalyticsApplicationV2:
     """Encapsulates Kinesis Data Analytics application functions."""
 
@@ -464,7 +464,7 @@ The following code example shows how to use `UpdateApplication`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis-analytics-v2#code-examples).
 This example updates the code that runs in an existing application.
 
-```
+```python
 class KinesisAnalyticsApplicationV2:
     """Encapsulates Kinesis Data Analytics application functions."""
 
@@ -521,7 +521,7 @@ The following code example shows how to generate a Kinesis stream with a referre
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 import json
 import boto3
 
@@ -550,7 +550,7 @@ The following code example shows how to generate a Kinesis stream with blood pre
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 from enum import Enum
 import json
 import random
@@ -608,7 +608,7 @@ The following code example shows how to generate a Kinesis stream with data in c
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 import json
 import boto3
 
@@ -637,7 +637,7 @@ The following code example shows how to generate a Kinesis stream with heart rat
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 from enum import Enum
 import json
 import random
@@ -683,7 +683,7 @@ The following code example shows how to generate a Kinesis stream with hotspots.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 import json
 from pprint import pprint
 import random
@@ -752,7 +752,7 @@ The following code example shows how to generate a Kinesis stream with log entri
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 import json
 import boto3
 
@@ -785,7 +785,7 @@ The following code example shows how to generate a Kinesis stream with stagger d
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 import datetime
 import json
 import random
@@ -826,7 +826,7 @@ The following code example shows how to generate a Kinesis stream with stock tic
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 import datetime
 import json
 import random
@@ -861,7 +861,7 @@ The following code example shows how to generate a Kinesis stream with two data 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 import json
 import random
 import boto3
@@ -918,7 +918,7 @@ The following code example shows how to generate a Kinesis stream with web log d
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 import json
 import boto3
 

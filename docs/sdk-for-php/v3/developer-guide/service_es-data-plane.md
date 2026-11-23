@@ -23,7 +23,7 @@ OpenSearch Service uses [Signature Version 4](https://docs.aws.amazon.com/genera
 
 You need to provide credentials, which you can do either with the SDK’s default provider chain or with any form of credentials described in [Credentials for the AWS SDK for PHP Version 3](guide_credentials.md). You’ll also need a [PSR-7 request](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.RequestInterface.html) (assumed in the code below to be named `$psr7Request`).
 
-```
+```php
 // Pull credentials from the default provider chain
 $provider = Aws\Credentials\CredentialProvider::defaultProvider();
 $credentials = call_user_func($provider)->wait();

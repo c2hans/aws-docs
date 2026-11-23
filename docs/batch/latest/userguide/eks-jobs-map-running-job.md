@@ -8,7 +8,7 @@ The `podProperties` of a running job have `podName` and `nodeName` parameters se
 
 The following is example output.
 
-```
+```sh
 $ aws batch describe-jobs --job 2d044787-c663-4ce6-a6fe-f2baf7e51b04
 {
  "jobs": [

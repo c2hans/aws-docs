@@ -13,6 +13,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
 ![Secure Media Delivery at the Edge on AWS architecture diagram](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image2.png)
 
+** * Secure Media Delivery at the Edge on AWS architecture * **
+
  **Base module**
 
 1.  An [Amazon CloudFront](https://aws.amazon.com/cloudfront/) Function that validates secure tokens, permitting or denying access to video content.

@@ -42,7 +42,7 @@ If *ewkt\_string* is not valid, then an error is returned.
 
 The following SQL constructs a multilinestring from an EWKT value and returns a geometry. It also returns the ST\_AsEWKT result of the geometry.
 
-```
+```sql
 SELECT ST_GeomFromEWKT('SRID=4326;MULTILINESTRING((1 0,1 0),(2 0,3 0),(4 0,5 0,6 0))') as geom, ST_AsEWKT(geom);
 ```
 

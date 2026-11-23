@@ -33,7 +33,7 @@ If *geom* is null, then null is returned.
 
 The following SQL returns a copy of an input polygon geometry that supports being encoded with a bounding box.
 
-```
+```sql
 SELECT ST_AsText(AddBBox(ST_GeomFromText('POLYGON((0 0,1 0,0 1,0 0))')));
 ```
 

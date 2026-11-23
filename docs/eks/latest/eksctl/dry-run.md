@@ -8,7 +8,7 @@ The dry-run feature allows you to inspect and change the instances matched by th
 
 When `eksctl create cluster` is called with the instance selector options and `--dry-run`, eksctl will output a ClusterConfig file containing a nodegroup representing the CLI options and the instance types set to the instances matched by the instance selector resource criteria.
 
-```
+```shell
 eksctl create cluster --name development --dry-run
 
 apiVersion: eksctl.io/v1alpha5
@@ -79,7 +79,7 @@ vpc:
 
 The generated ClusterConfig can then be passed to `eksctl create cluster`:
 
-```
+```console
 eksctl create cluster -f generated-cluster.yaml
 ```
 
@@ -92,13 +92,13 @@ There are certain one-off options that cannot be represented in the `ClusterConf
 
 It is expected that:
 
-```
+```bash
 eksctl create cluster --<options...> --dry-run > config.yaml
 ```
 
 followed by:
 
-```
+```bash
 eksctl create cluster -f config.yaml
 ```
 

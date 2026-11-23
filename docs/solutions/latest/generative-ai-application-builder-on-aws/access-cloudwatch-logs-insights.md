@@ -51,39 +51,39 @@ Use the following procedure to add CloudWatch Logs insights to this solution.
 
    1. To identify all client exceptions:
 
-      ```
+      ```sql
       fields @message
       |filter @message like /(?i)Exception/|stats count(*) as exceptionCount by @message
       ```
 
    1. To retrieve count of invocations by function name:
 
-      ```
+      ```sql
       stats count(*) by function_name
       ```
 
    1. To retrieve count of invocations over five-minute intervals:
 
-      ```
+      ```sql
       stats count(*) as invocations by bin(5m)
       ```
 
    1. To retrieve all [AWS X-Ray](https://aws.amazon.com/xray/) trace IDs:
 
-      ```
+      ```sql
       filter @message like "XRAY TraceId"
       |parse @message "XRAY TraceId: * " as traceId|stats count(*) by traceId
       ```
 
    1. To retrieve logs relating to a specific X-Ray Trace ID:
 
-      ```
+      ```sql
       filter @message like "your-traceid-here"
       ```
 
    1. To retrieve unauthorized WebSocket errors:
 
-      ```
+      ```sql
       fields
       @ingestionTime,
       @log,
@@ -98,7 +98,7 @@ Use the following procedure to add CloudWatch Logs insights to this solution.
 
    1. To retrieve count of metrics published:
 
-      ```
+      ```sql
       filter @message like "CloudWatchMetrics"
       |parse @message /"Metrics":\s*\[(?<metrics>.*?)\]/|stats count(*) as metric_count by metrics
       ```

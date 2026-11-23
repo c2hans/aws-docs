@@ -20,6 +20,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Diagram showing blue/green deployment with AWS Elastic Beanstalk and Amazon Route 53](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/blue-green-deployment.png)
 
+*Figure 8: Blue/green deployment with AWS Elastic Beanstalk and Amazon Route 53*
+
  Benefits of immutable infrastructure:
 +  **Reduction in configuration drifts:** By frequently replacing servers from a base, known and version-controlled configuration, the infrastructure is **reset** to a known state, avoiding configuration drifts.
 +  **Simplified deployments**: Deployments are simplified because they don’t need to support upgrades. Upgrades are just new deployments.

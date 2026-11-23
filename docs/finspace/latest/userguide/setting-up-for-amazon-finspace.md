@@ -36,7 +36,7 @@ To create a FinSpace environment, the user performing the actions must have IAM 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

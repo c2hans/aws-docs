@@ -64,7 +64,7 @@ The HTTPS port of the CloudFront VPC origin endpoint configuration. The default 
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `IpAddressType`  <a name="cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-ipaddresstype"></a>
-Property description not available.
+The IP address type of the CloudFront VPC origin endpoint configuration. Valid values are `ipv4` and `dualstack`. IPv6-only is not supported for VPC origins.
 *Required*: No
 *Type*: String
 *Allowed values*: `ipv4 | dualstack`

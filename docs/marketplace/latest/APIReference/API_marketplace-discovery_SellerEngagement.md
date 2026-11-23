@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # SellerEngagement
 
-An engagement option available to potential buyers of a product, such as requesting a private offer or a demo.
+A way you can engage with the seller of a product, such as requesting a private offer or a demo.
 
 ## Contents
 <a name="API_marketplace-discovery_SellerEngagement_Contents"></a>
@@ -19,9 +19,19 @@ Valid Values: `LINK`
 Required: Yes
 
  ** engagementType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SellerEngagement-engagementType"></a>
-The type of engagement, such as `REQUEST_FOR_PRIVATE_OFFER` or `REQUEST_FOR_DEMO`.
+The type of engagement. This field has one of the following values:
+BUY\_NOW
+The product is available for immediate purchase.
+EXPRESS\_PRIVATE\_OFFER
+You can request an express private offer and accept it immediately.
+REQUEST\_FOR\_DEMO
+You can request a demo from the seller.
+REQUEST\_FOR\_PRIVATE\_OFFER
+You can request a private offer from the seller.
+TRY\_FOR\_FREE
+The product offers a free trial.
 Type: String
-Valid Values: `REQUEST_FOR_PRIVATE_OFFER | REQUEST_FOR_DEMO`
+Valid Values: `REQUEST_FOR_PRIVATE_OFFER | REQUEST_FOR_DEMO | EXPRESS_PRIVATE_OFFER | BUY_NOW | TRY_FOR_FREE`
 Required: Yes
 
  ** value **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SellerEngagement-value"></a>

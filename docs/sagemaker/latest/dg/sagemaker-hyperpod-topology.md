@@ -72,7 +72,7 @@ SageMaker HyperPod automatically configures tree topology based on information p
 
 On Slurm 25.11 and later, HyperPod defines topology in `topology.yaml`, which is the source of truth. A tree topology entry maps nodes into a switch hierarchy that reflects the communication tiers of your hardware:
 
-```
+```yaml
 - topology: tree
   cluster_default: true
   tree:
@@ -132,7 +132,7 @@ TopologyPlugin=topology/block
 
 SageMaker HyperPod automatically configures block topology. On Slurm 25.11 and later, block topology is defined in `topology.yaml`, which is the source of truth. Block and tree topologies for a cluster are defined together in the same file. The following example shows a cluster with a P5 partition (tree) and an UltraServer partition (block):
 
-```
+```yaml
 - topology: tree
   cluster_default: true
   tree:

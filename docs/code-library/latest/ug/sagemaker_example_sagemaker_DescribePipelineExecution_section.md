@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SageMaker#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Check the status of a run.
     /// </summary>
@@ -42,7 +42,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```java
     // Check the status of a pipeline execution.
     public static void waitForPipelineExecution(SageMakerClient sageMakerClient, String executionArn)
             throws InterruptedException {
@@ -72,7 +72,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sagemaker#code-examples).
 Wait for a SageMaker AI pipeline execution to succeed, fail, or stop.
 
-```
+```javascript
 /**
  * Poll the executing pipeline until the status is 'SUCCEEDED', 'STOPPED', or 'FAILED'.
  * @param {{ arn: string, sagemakerClient: import('@aws-sdk/client-sagemaker').SageMakerClient, wait: (ms: number) => Promise<void>}} props
@@ -119,7 +119,7 @@ export async function waitForPipelineComplete({ arn, sagemakerClient, wait }) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```kotlin
 suspend fun waitForPipelineExecution(executionArn: String?) {
     var status: String
     var index = 0

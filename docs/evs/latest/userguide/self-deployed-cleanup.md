@@ -35,13 +35,13 @@ Delete all hosts before you delete the environment, because you can’t delete a
 
 1. Find the ID of the environment.
 
-   ```
+   ```bash
    aws evs list-environments
    ```
 
 1. Delete each host in the environment. Replace `<environment-id>` with the ID of your environment, and replace the example host name `esx01` with the name of the host.
 
-   ```
+   ```bash
    aws evs delete-environment-host \
        --environment-id <environment-id> \
        --host-name esx01
@@ -51,7 +51,7 @@ Delete all hosts before you delete the environment, because you can’t delete a
 
 1. Delete the environment.
 
-   ```
+   ```bash
    aws evs delete-environment --environment-id <environment-id>
    ```
 

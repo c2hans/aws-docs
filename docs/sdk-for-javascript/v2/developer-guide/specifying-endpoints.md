@@ -27,7 +27,7 @@ The `ap-northeast-3` Region in Japan is not returned by Region enumeration APIs,
 
 You need to create a custom endpoint to use with MediaConvert. Each customer account is assigned its own endpoint, which you must use. Here is an example of how to use a custom endpoint with MediaConvert.
 
-```
+```javascript
 // Create MediaConvert service object using custom endpoint
 var mcClient = new AWS.MediaConvert({endpoint: 'https://abcd1234.mediaconvert.us-west-1.amazonaws.com'});
 

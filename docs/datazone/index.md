@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/datazone/index.html
 title: 'Amazon DataZone Documentation'
 canonical_url: https://docs.aws.amazon.com/datazone/
 source: aws-documentation
-generated_on: 2026-11-18
+generated_on: 2026-11-21
 ---
 
 # Amazon DataZone Documentation

@@ -43,7 +43,7 @@ Before you can get started with this tutorial, you'll need to set up the followi
 
 ****
 
-         ```
+         ```json
          {
              "Version":"2012-10-17",
              "Statement": [
@@ -92,7 +92,7 @@ Before you can get started with this tutorial, you'll need to set up the followi
 
 ****
 
-         ```
+         ```json
          {
              "Version":"2012-10-17",
              "Statement": [

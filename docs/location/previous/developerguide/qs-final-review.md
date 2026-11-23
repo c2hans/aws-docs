@@ -23,7 +23,7 @@ The files are:
 
 The HTML framework for the quick start application.
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -55,7 +55,7 @@ The HTML framework for the quick start application.
 
 The stylesheet for the quick start application.
 
-```
+```css
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -117,7 +117,7 @@ footer {
 
 The code for the quick start application. The text in {{red}} should be replaced with the appropriate Amazon Location object names.
 
-```
+```js
 // Amazon Location Service resource names:
 const mapName = "{{explore.map}}";
 const placesName = "{{explore.place}}";

@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cognito/scenarios/client_token#code-examples).
 
-```
+```python
     def describe_terms_by_client(
         self, user_pool_id: str, client_id: str, terms_name: str
     ) -> dict[str, Any]:

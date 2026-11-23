@@ -121,7 +121,7 @@ IDT writes test results to the `awsiotdevicetester_report.xml` and the `{{suite-
 
 To populate the contents of the `{{suite-name}}_report.xml` file, you must use the `SendResult` command to report test results to IDT before the test execution finishes. If IDT cannot locate the results of a test, it issues an error for the test case. The following Python excerpt shows the commands to send a test result to IDT:
 
-```
+```python
 {{request-variable}} = SendResultRequest(TestResult({{result}}))
 client.send_result({{request-variable}})
 ```

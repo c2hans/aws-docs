@@ -27,13 +27,13 @@ To ensure that the cluster does not perform any unexpected actions during setup 
 
 Run the following command to put the cluster in maintenance mode:
 
-```
+```console
 # pcs property set maintenance-mode=true
 ```
 
 To verify the current maintenance state:
 
-```
+```console
 $ pcs status
 ```
 
@@ -44,7 +44,7 @@ Node-specific maintenance (set with `pcs node maintenance nodename`)
 Always use cluster-wide maintenance mode when making configuration changes. For node-specific operations like hardware maintenance, refer to the Operations section for proper procedures.
 To disable maintenance mode after configuration is complete:
 
-```
+```console
 # pcs property set maintenance-mode=false
 ```
 
@@ -56,7 +56,7 @@ To disable maintenance mode after configuration is complete:
 
 Configure cluster properties to establish fencing behavior and resource failover settings:
 
-```
+```console
 # pcs property set stonith-enabled="true"
 # pcs property set stonith-timeout="600"
 # pcs property set priority-fencing-delay="20"
@@ -65,7 +65,7 @@ Configure cluster properties to establish fencing behavior and resource failover
 
 To verify your cluster property settings:
 
-```
+```console
 # pcs property config
 # pcs property config <property_name>
 ```
@@ -78,7 +78,7 @@ Configure resource default behaviors:
 ------
 #### [ RHEL 8.4 and above ]
 
-```
+```console
 # pcs resource defaults update resource-stickiness="1"
 # pcs resource defaults update migration-threshold="3"
 # pcs resource defaults update failure-timeout="600s"
@@ -87,7 +87,7 @@ Configure resource default behaviors:
 ------
 #### [ RHEL 7.x and RHEL 8.0 to 8.3 ]
 
-```
+```console
 # pcs resource defaults resource-stickiness="1"
 # pcs resource defaults migration-threshold="3"
 # pcs resource defaults failure-timeout="600s"
@@ -102,21 +102,21 @@ Individual resources may override these defaults with their own defined values.
 
 To verify your resource default settings:
 
-```
+```console
 # pcs resource defaults
 ```
 
 ### Configure Operation Defaults
 <a name="_configure_operation_defaults"></a>
 
-```
+```console
 # pcs resource op defaults update timeout="600"
 ```
 + The **op\_defaults timeout** ensures all cluster operations have a reasonable default timeout of 600 seconds. Individual resources may override this with their own timeout values.
 
 To verify your operation default settings:
 
-```
+```console
 # pcs resource op defaults
 ```
 
@@ -127,7 +127,7 @@ An AWS STONITH resource is required for proper cluster fencing operations. The `
 
 Create the STONITH resource using resource agent ** `fence_aws` **:
 
-```
+```console
 # pcs stonith create <stonith_resource_name> fence_aws \
 pcmk_host_map="<hostname_1>:<instance_id_1>;<hostname_2>:<instance_id_2>" \
 region="<aws_region>" \
@@ -154,7 +154,7 @@ Details:
 
  *Example using values from [Parameter Reference](sap-nw-pacemaker-rhel-parameters.md) *:
 
-```
+```console
 # pcs stonith create rsc_fence_aws fence_aws \
 pcmk_host_map="rhxhost01:i-xxxxinstidforhost1;rhxhost02:i-xxxxinstidforhost2" \
 region="us-east-1" \
@@ -172,7 +172,7 @@ op monitor interval="180" timeout="60"
 
  *Example using values from [Parameter Reference](sap-nw-pacemaker-rhel-parameters.md) *:
 
-```
+```console
 # pcs stonith create rsc_fence_aws fence_aws \
 pcmk_host_map="rhxhost01:i-xxxxinstidforhost1;rhxhost02:i-xxxxinstidforhost2" \
 region="us-east-1" \
@@ -211,7 +211,7 @@ In classic configuration, the mounting and unmounting of file system resources t
 
 Create **ASCS** file system resources:
 
-```
+```console
 # pcs resource create rsc_fs_<SID>_ASCS<ascs_sys_nr> ocf:heartbeat:Filesystem \
 device="<nfs.fqdn>:/<SID>_ASCS<ascs_sys_nr>" \
 directory="/usr/sap/<SID>/ASCS<ascs_sys_nr>" \
@@ -227,7 +227,7 @@ op monitor interval="20" timeout="40" \
 
 Create **ERS** file system resources:
 
-```
+```console
 # pcs resource create rsc_fs_<SID>_ERS<ers_sys_nr> ocf:heartbeat:Filesystem \
 device="<nfs.fqdn>:/<SID>_ERS<ers_sys_nr>" \
 directory="/usr/sap/<SID>/ERS<ers_sys_nr>" \
@@ -242,7 +242,7 @@ op monitor interval="20" timeout="40" \
 ```
 +  *Example using values from [Parameter Reference](sap-nw-pacemaker-rhel-parameters.md) *:
 
-  ```
+  ```console
   # pcs resource create rsc_fs_RHX_ASCS00 ocf:heartbeat:Filesystem \
   device="fs-xxxxxxxxxxxxxefs1.efs.us-east-1.amazonaws.com:/RHX_ASCS00" \
   directory="/usr/sap/RHX/ASCS00" \
@@ -280,7 +280,7 @@ The IP resource provides the details necessary to update the route table entry f
 
 Create **ASCS** IP Resource:
 
-```
+```console
 # pcs resource create rsc_ip_<SID>_ASCS<ascs_sys_nr> ocf:heartbeat:aws-vpc-move-ip \
 ip="<ascs_overlayip>" \
 routing_table="<routetable_id>" \
@@ -294,7 +294,7 @@ op monitor interval="20" timeout="40"
 
 Create **ERS** IP Resource:
 
-```
+```console
 # pcs resource create rsc_ip_<SID>_ERS<ers_sys_nr> ocf:heartbeat:aws-vpc-move-ip \
 ip="<ers_overlayip>" \
 routing_table="<routetable_id>" \
@@ -307,7 +307,7 @@ op monitor interval="20" timeout="40" \
 ```
 +  *Example using values from [Parameter Reference](sap-nw-pacemaker-rhel-parameters.md) *:
 
-  ```
+  ```console
   # pcs resource create rsc_ip_RHX_ASCS00 ocf:heartbeat:aws-vpc-move-ip \
   ip="172.16.30.5" \
   routing_table="rtb-xxxxxroutetable1" \
@@ -329,7 +329,7 @@ op monitor interval="20" timeout="40" \
   ```
 +  *Example using values from [Parameter Reference](sap-nw-pacemaker-rhel-parameters.md) *:
 
-  ```
+  ```console
   # pcs resource create rsc_ip_RHX_ASCS00 ocf:heartbeat:aws-vpc-move-ip \
   ip="172.16.30.5" \
   routing_table="rtb-xxxxxroutetable1" \
@@ -365,7 +365,7 @@ Create **ASCS** SAPStartSrv Resource
 
 Use the following command to create an ASCS SAPStartSrv resource.
 
-```
+```console
 # pcs resource create rsc_sapstart_<SID>_ASCS<ascs_sys_nr> ocf:heartbeat:SAPStartSrv \
 InstanceName=<SID>_ASCS<ascs_sys_nr>_<ascs_virt_hostname>
 op monitor interval=0 timeout=20 enabled=0
@@ -376,7 +376,7 @@ Create **ERS** SAPStartSrv Resource
 
 Use the following command to create an ERS SAPStartSrv resource.
 
-```
+```console
 # pcs resource create rsc_sapstart_<SID>_ERS<ers_sys_nr> ocf:heartbeat:SAPStartSrv \
 InstanceName=<SID>_ERS<ers_sys_nr>_<ers_virt_hostname>
 op monitor interval=0 timeout=20 enabled=0
@@ -384,7 +384,7 @@ op monitor interval=0 timeout=20 enabled=0
 ```
 +  *Example using values from [Parameter Reference](sap-nw-pacemaker-rhel-parameters.md) *:
 
-  ```
+  ```console
   #crm configure primitive rsc_sapstart_RHX_ASCS00 ocf:heartbeat:SAPStartSrv \
   params \
   InstanceName=RHX_ASCS00_rhxascs \
@@ -408,7 +408,7 @@ The SAP instance is started and stopped using cluster resources.
 **Example**
 Create an **ASCS** SAP instance resource:
 
-```
+```console
 # pcs resource create rsc_sap_<SID>_ASCS<ascs_sys_nr> ocf:heartbeat:SAPInstance \
 InstanceName="<SID>_ASCS<ascs_sys_nr>_<ascs_virt_hostname>" \
 START_PROFILE="/usr/sap/<SID>/SYS/profile/<SID>_ASCS<ascs_sys_nr>_<ascs_virt_hostname>" \
@@ -424,7 +424,7 @@ meta priority="10"
 ```
 Create an **ERS** SAP instance resource:
 
-```
+```console
 # pcs resource create rsc_sap_<SID>_ERS<ers_sys_nr> ocf:heartbeat:SAPInstance \
 InstanceName="<SID>_ERS<ers_sys_nr>_<ers_virt_hostname>" \
 START_PROFILE="/usr/sap/<SID>/SYS/profile/<SID>_ERS<ers_sys_nr>_<ers_virt_hostname>" \
@@ -438,7 +438,7 @@ meta priority="1000"
 ```
 +  *Example using values from [Parameter Reference](sap-nw-pacemaker-rhel-parameters.md) *:
 
-  ```
+  ```console
   # pcs resource create rsc_sap_RHX_ASCS00 ocf:heartbeat:SAPInstance \
   InstanceName="RHX_ASCS00_rhxascs" \
   START_PROFILE="/usr/sap/RHX/SYS/profile/RHX_ASCS00_rhxascs" \
@@ -465,7 +465,7 @@ meta priority="1000"
   ```
 Create an **ASCS** SAP instance resource:
 
-```
+```console
 # pcs resource create rsc_sap_<SID>_ASCS<ascs_sys_nr> ocf:heartbeat:SAPInstance \
 InstanceName="<SID>_ASCS<ascs_sys_nr>_<ascs_virt_hostname>" \
 START_PROFILE="/usr/sap/<SID>/SYS/profile/<SID>_ASCS<ascs_sys_nr>_<ascs_virt_hostname>" \
@@ -479,7 +479,7 @@ meta priority="1000"
 ```
 Create an **ERS** SAP instance resource:
 
-```
+```console
 # pcs resource create rsc_sap_<SID>_ERS<ers_sys_nr> ocf:heartbeat:SAPInstance \
 InstanceName="<SID>_ERS<ers_sys_nr>_<ers_virt_hostname>" \
 START_PROFILE="/usr/sap/<SID>/SYS/profile/<SID>_ERS<ers_sys_nr>_<ers_virt_hostname>" \
@@ -491,7 +491,7 @@ op monitor interval="20" timeout="60" on-fail="restart"
 ```
 +  *Example using values from [Parameter Reference](sap-nw-pacemaker-rhel-parameters.md) *:
 
-  ```
+  ```console
   # pcs resource create rsc_sap_RHX_ASCS00 ocf:heartbeat:SAPInstance \
   InstanceName="RHX_ASCS00_rhxascs" \
   START_PROFILE="/usr/sap/RHX/SYS/profile/RHX_ASCS00_rhxascs" \
@@ -523,7 +523,7 @@ The SAP instance is started and stopped using cluster resources.
 **Example**
 Create an **ASCS** SAPInstance resource:
 
-```
+```console
 # pcs resource create rsc_sap_<SID>_ASCS<ascs_sys_nr> ocf:heartbeat:SAPInstance \
 InstanceName="<SID>_ASCS<ascs_sys_nr>_<ascs_virt_hostname>" \
 START_PROFILE="/usr/sap/<SID>/SYS/profile/<SID>_ASCS<ascs_sys_nr>_<ascs_virt_hostname>" \
@@ -539,7 +539,7 @@ meta priority="10" \
 ```
 Create an **ERS** SAPInstance resource:
 
-```
+```console
 # pcs resource create rsc_sap_<SID>_ERS<ers_sys_nr> ocf:heartbeat:SAPInstance \
 InstanceName="<SID>_ERS<ers_sys_nr>_<ers_virt_hostname>" \
 START_PROFILE="/usr/sap/<SID>/SYS/profile/<SID>_ERS<ers_sys_nr>_<ers_virt_hostname>" \
@@ -554,7 +554,7 @@ priority="1000"
 ```
 +  *Example using values from [Parameter Reference](sap-nw-pacemaker-rhel-parameters.md) *:
 
-  ```
+  ```console
   # pcs resource create rsc_sap_RHX_ASCS00 ocf:heartbeat:SAPInstance \
   InstanceName="RHX_ASCS00_rhxascs" \
   START_PROFILE="/usr/sap/RHX/SYS/profile/RHX_ASCS00_rhxascs" \
@@ -579,7 +579,7 @@ priority="1000"
   ```
 Create an **ASCS** SAPInstance resource:
 
-```
+```console
 # pcs resource create rsc_sap_<SID>_ASCS<ascs_sys_nr> ocf:heartbeat:SAPInstance \
 InstanceName="<SID>_ASCS<ascs_sys_nr>_<ascs_virt_hostname>" \
 START_PROFILE="/usr/sap/<SID>/SYS/profile/<SID>_ASCS<ascs_sys_nr>_<ascs_virt_hostname>" \
@@ -593,7 +593,7 @@ meta priority="1000" \
 ```
 Create an **ERS** SAP instance resource:
 
-```
+```console
 # pcs resource create rsc_sap_<SID>_ERS<ers_sys_nr> ocf:heartbeat:SAPInstance \
 InstanceName="<SID>_ERS<ers_sys_nr>_<ers_virt_hostname>" \
 START_PROFILE="/usr/sap/<SID>/SYS/profile/<SID>_ERS<ers_sys_nr>_<ers_virt_hostname>" \
@@ -606,7 +606,7 @@ op monitor interval="11" timeout="60" on-fail="restart" \
 ```
 +  *Example using values from [Parameter Reference](sap-nw-pacemaker-rhel-parameters.md) *:
 
-  ```
+  ```console
   # pcs resource create rsc_sap_RHX_ASCS00 ocf:heartbeat:SAPInstance \
   InstanceName="RHX_ASCS00_rhxascs" \
   START_PROFILE="/usr/sap/RHX/SYS/profile/RHX_ASCS00_rhxascs" \
@@ -634,7 +634,7 @@ The change between ENSA1 and ENSA2 allows the lock table to be consumed remotely
 
 A cluster resource group is a set of resources that need to be located together, start sequentially, and stopped in the reverse order.
 
-```
+```console
 # pcs resource meta grp_<SID>_ASCS<ascs_sys_nr> resource-stickiness=3000
 ```
 
@@ -650,12 +650,12 @@ Resource constraints are used to determine where resources run per the condition
 
 The negative score ensures that ASCS and ERS are run on separate nodes, wherever possible.
 
-```
+```console
 # pcs constraint colocation add grp_<SID>_ERS<ers_sys_nr> with grp_<SID>_ASCS<ascs_sys_nr> score=-5000
 ```
 +  *Example using values from [Parameter Reference](sap-nw-pacemaker-rhel-parameters.md) *:
 
-  ```
+  ```console
   # pcs constraint colocation add grp_RHX_ERS10 with grp_RHX_ASCS00 score=-5000
   ```
 
@@ -664,12 +664,12 @@ The negative score ensures that ASCS and ERS are run on separate nodes, wherever
 
 This constraint ensures the ASCS instance is started prior to stopping the ERS instance. This is necessary to consume the lock table.
 
-```
+```console
 # pcs constraint order start rsc_sap_<SID>_ASCS<ascs_sys_nr> then stop rsc_sap_<SID>_ERS<ers_sys_nr> kind=Optional symmetrical=false
 ```
 +  *Example using values from [Parameter Reference](sap-nw-pacemaker-rhel-parameters.md) *:
 
-  ```
+  ```console
   # pcs constraint order start rsc_sap_RHX_ASCS00 then stop rsc_sap_RHX_ERS10 kind=Optional symmetrical=false
   ```
 
@@ -678,12 +678,12 @@ This constraint ensures the ASCS instance is started prior to stopping the ERS i
 
 This constraint is only required for ENSA1. The lock table can be retrieved remotely for ENSA2, and as a result ASCS doesn’t failover to where ERS is running.
 
-```
+```console
 # pcs constraint location rsc_sap_<SID>_ASCS<ascs_sys_nr> rule score=2000 runs_ers_<SID> eq 1
 ```
 +  *Example using values from [Parameter Reference](sap-nw-pacemaker-rhel-parameters.md) *:
 
-  ```
+  ```console
   # pcs constraint location rsc_sap_RHX_ASCS00 rule score=2000 runs_ers_RHX eq 1
   ```
 
@@ -695,13 +695,13 @@ The following instructions help you reset the complete configuration. Run these 
 
 Run the following command to back up the current configuration for reference:
 
-```
+```console
 # pcs config > /tmp/pcsconfig_backup.txt
 ```
 
 Run the following command to clear the current configuration:
 
-```
+```console
 # pcs cluster cib-push --config /dev/null
 ```
 

@@ -145,7 +145,7 @@ aws lakeformation grant-permissions --cli-input-json file://grant-params.json
 ```
 The following are the contents of file `grant-params.json`.
 
-```
+```json
 {
     "Principal": {"DataLakePrincipalIdentifier": "arn:aws:iam::111122223333:user/datalake_user1"},
     "Resource": {

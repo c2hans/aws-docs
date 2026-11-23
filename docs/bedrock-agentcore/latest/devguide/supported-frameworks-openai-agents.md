@@ -45,7 +45,7 @@ opentelemetry-instrumentation-openai-agents>=0.61.0
 ```
  `pyproject.toml`:
 
-```
+```toml
 [project]
 dependencies = [
     "opentelemetry-instrumentation-openai-agents>=0.61.0",
@@ -60,7 +60,7 @@ openinference-instrumentation-openai-agents>=1.5.0
 ```
  `pyproject.toml`:
 
-```
+```toml
 [project]
 dependencies = [
     "openinference-instrumentation-openai-agents>=1.5.0",
@@ -140,7 +140,7 @@ These examples are not complete spans. They show representative data from a real
 **Example**
 The `gen_ai.operation.name` attribute (`invoke_agent`) identifies this as an invoke agent span.
 
-```
+```json
 {
   "traceId": "6a01eef11066751d68f90def0da1f80a",
   "spanId": "3a300b0b3fe650e4",
@@ -165,7 +165,7 @@ The `gen_ai.operation.name` attribute (`invoke_agent`) identifies this as an inv
 ```
 The correlated event record carries the conversation. Each message’s `content` is the OpenAI parts-format array; the user prompt is the text of the user message and the agent response is the text of the assistant message.
 
-```
+```json
 {
   "spanId": "3a300b0b3fe650e4",
   "traceId": "6a01eef11066751d68f90def0da1f80a",
@@ -194,7 +194,7 @@ The correlated event record carries the conversation. Each message’s `content`
 ```
 The `gen_ai.operation.name` attribute (`execute_tool`) identifies this as an execute tool span; `gen_ai.tool.name` holds the tool name. With the OpenTelemetry library, the tool arguments and result stay on the span attributes even with split telemetry.
 
-```
+```json
 {
   "traceId": "6a01eefa5c52f3d86a35038f35f5ba30",
   "spanId": "3cbc4ea5f73fef81",
@@ -219,7 +219,7 @@ The `gen_ai.operation.name` attribute (`execute_tool`) identifies this as an exe
 ```
 The `gen_ai.operation.name` attribute (`chat`) identifies this as an inference span. This span carries the model metadata and, in `gen_ai.tool.definitions`, the list of tools available to the agent. The conversation messages for the model call live in the correlated event record, in `body.input` and `body.output`.
 
-```
+```json
 {
   "traceId": "6a01eef11066751d68f90def0da1f80a",
   "spanId": "7c1f9a2b4d6e8a03",
@@ -245,7 +245,7 @@ The `gen_ai.operation.name` attribute (`chat`) identifies this as an inference s
 }
 ```
 
-```
+```json
 {
   "spanId": "7c1f9a2b4d6e8a03",
   "traceId": "6a01eef11066751d68f90def0da1f80a",
@@ -281,7 +281,7 @@ With the OpenInference library, the invoke agent (`AGENT`) span is an empty cont
 **Example**
 The `openinference.span.kind` attribute (`AGENT`) identifies this as an invoke agent span. The span carries no conversation content.
 
-```
+```json
 {
   "traceId": "6a387ee61078243c1cc455ed45c6c313",
   "spanId": "9a1c7dce81b692cd",
@@ -304,7 +304,7 @@ The `openinference.span.kind` attribute (`AGENT`) identifies this as an invoke a
 ```
 The `openinference.span.kind` attribute (`TOOL`) identifies this as an execute tool span; `tool.name` holds the tool name. The tool arguments and result live in the correlated event record.
 
-```
+```json
 {
   "traceId": "6a387ef07b8f4f3732fab45d3c0b51ff",
   "spanId": "b4e78cb0a06a6fe2",
@@ -327,7 +327,7 @@ The `openinference.span.kind` attribute (`TOOL`) identifies this as an execute t
 }
 ```
 
-```
+```json
 {
   "spanId": "b4e78cb0a06a6fe2",
   "traceId": "6a387ef07b8f4f3732fab45d3c0b51ff",
@@ -350,7 +350,7 @@ The `openinference.span.kind` attribute (`TOOL`) identifies this as an execute t
 ```
 The `openinference.span.kind` attribute (`LLM`) identifies this as an inference span. Message roles and tool definitions are on the span attributes; the message content lives in the correlated event record. ADOT flattens the input roles to `user`, so AgentCore Evaluations uses the last plain-text input message as the user prompt. The output message is the OpenAI Response object, from which AgentCore Evaluations reads the response text.
 
-```
+```json
 {
   "traceId": "6a387ee61078243c1cc455ed45c6c313",
   "spanId": "1221a062c7f90a8e",
@@ -375,7 +375,7 @@ The `openinference.span.kind` attribute (`LLM`) identifies this as an inference 
 }
 ```
 
-```
+```json
 {
   "spanId": "1221a062c7f90a8e",
   "traceId": "6a387ee61078243c1cc455ed45c6c313",
@@ -416,7 +416,7 @@ These examples are not complete spans. They show representative data from a real
 **Example**
 The `gen_ai.input.messages` attribute holds the user prompt, and the `gen_ai.output.messages` attribute holds the agent response. Both are OpenAI parts-format arrays.
 
-```
+```json
 {
   "traceId": "6a4de7b85e61747e6b568a1f4768e89d",
   "spanId": "50656fd77904d125",
@@ -441,7 +441,7 @@ The `gen_ai.input.messages` attribute holds the user prompt, and the `gen_ai.out
 ```
 The `gen_ai.tool.call.arguments` attribute holds the tool arguments, and the `gen_ai.tool.call.result` attribute holds the tool result.
 
-```
+```json
 {
   "traceId": "6a4de7c376913db82e6f0f336a16731d",
   "spanId": "8840e8e23724ebd7",
@@ -465,7 +465,7 @@ The `gen_ai.tool.call.arguments` attribute holds the tool arguments, and the `ge
 ```
 The `gen_ai.operation.name` attribute (`chat`) identifies this as an inference span. The model metadata and the `gen_ai.tool.definitions` attribute (the list of tools available to the agent) stay inline on the span.
 
-```
+```json
 {
   "traceId": "6a4de7b85e61747e6b568a1f4768e89d",
   "spanId": "9b2c1e5f7a3d0846",
@@ -497,7 +497,7 @@ The `gen_ai.operation.name` attribute (`chat`) identifies this as an inference s
 **Example**
 The `input.value` attribute holds the tool arguments, and the `output.value` attribute holds the tool result.
 
-```
+```json
 {
   "traceId": "6a387ef07b8f4f3732fab45d3c0b51ff",
   "spanId": "d5a1c9e70b46f312",
@@ -521,7 +521,7 @@ The `input.value` attribute holds the tool arguments, and the `output.value` att
 ```
 The message content is inline on the indexed attributes. The `llm.input_messages.*` attributes hold the system prompt and user prompt, and the `llm.output_messages.*` attributes hold the agent response. AgentCore Evaluations reconstructs the user prompt and agent response from this span and backfills the empty invoke agent (`AGENT`) span.
 
-```
+```json
 {
   "traceId": "6a387ee61078243c1cc455ed45c6c313",
   "spanId": "c9f0a2b41d773e88",
@@ -562,7 +562,7 @@ Add the instrumentation library for the convention you want to your TypeScript d
 For TypeScript agents on ADOT, add the AWS Distro Node autoinstrumentation package (`@aws/aws-distro-opentelemetry-node-autoinstrumentation`) to your dependencies. It includes the built-in OpenAI Agents instrumentation, which activates at startup and emits the scope name `@aws/aws-distro-opentelemetry-instrumentation-openai-agents`.
  `package.json`:
 
-```
+```json
 {
   "dependencies": {
     "@aws/aws-distro-opentelemetry-node-autoinstrumentation": "^0.12.0"
@@ -572,7 +572,7 @@ For TypeScript agents on ADOT, add the AWS Distro Node autoinstrumentation packa
 Add `@arizeai/openinference-instrumentation-openai-agents` to your dependencies. The scope name emitted is `@arizeai/openinference-instrumentation-openai-agents`.
  `package.json`:
 
-```
+```json
 {
   "dependencies": {
     "@arizeai/openinference-instrumentation-openai-agents": "^0.2.2"
@@ -609,7 +609,7 @@ With the ADOT-native library (from the AWS Distro Node autoinstrumentation packa
 **Example**
 The `gen_ai.operation.name` attribute (`invoke_agent`) identifies this as an invoke agent span. The span carries the agent name and tool list but no conversation content.
 
-```
+```json
 {
   "traceId": "6a6bc695459e41aa14a172bb41d3246d",
   "spanId": "9a1c7dce81b692cd",
@@ -633,7 +633,7 @@ The `gen_ai.operation.name` attribute (`invoke_agent`) identifies this as an inv
 ```
 The `gen_ai.operation.name` attribute (`execute_tool`) identifies this as an execute tool span; `gen_ai.tool.name` holds the tool name. The `gen_ai.tool.call.arguments` and `gen_ai.tool.call.result` attributes hold the tool arguments and result.
 
-```
+```json
 {
   "traceId": "6a6bc695459e41aa14a172bb41d3246d",
   "spanId": "3cbc4ea5f73fef81",
@@ -658,7 +658,7 @@ The `gen_ai.operation.name` attribute (`execute_tool`) identifies this as an exe
 ```
 The `gen_ai.operation.name` attribute (`chat`) identifies this as an inference span. The `gen_ai.input.messages` and `gen_ai.output.messages` attributes hold the conversation in the parts-format, `gen_ai.system_instructions` holds the system prompt, and `gen_ai.tool.definitions` lists the tools available to the agent.
 
-```
+```json
 {
   "traceId": "6a6bc695459e41aa14a172bb41d3246d",
   "spanId": "7c1f9a2b4d6e8a03",
@@ -694,7 +694,7 @@ With the OpenInference JS library, the invoke agent (`AGENT`) and turn (`CHAIN`)
 **Example**
 The `openinference.span.kind` attribute (`AGENT`) identifies this as an invoke agent span. The span carries no conversation content.
 
-```
+```json
 {
   "traceId": "6a6bc695459e41aa14a172bb41d3246d",
   "spanId": "9a1c7dce81b692cd",
@@ -717,7 +717,7 @@ The `openinference.span.kind` attribute (`AGENT`) identifies this as an invoke a
 ```
 The `openinference.span.kind` attribute (`TOOL`) identifies this as an execute tool span; `tool.name` holds the tool name. The `input.value` and `output.value` attributes hold the tool arguments and result.
 
-```
+```json
 {
   "traceId": "6a6bc695459e41aa14a172bb41d3246d",
   "spanId": "b4e78cb0a06a6fe2",
@@ -741,7 +741,7 @@ The `openinference.span.kind` attribute (`TOOL`) identifies this as an execute t
 ```
 The `openinference.span.kind` attribute (`LLM`) identifies this as an inference span. The `llm.input_messages.*` attributes hold the system prompt and user prompt, the `llm.output_messages.*` attributes hold the agent response, and the `llm.tools.*.tool.json_schema` attributes hold the tool definitions. AgentCore Evaluations reconstructs the user prompt and agent response from this span and backfills the empty invoke agent (`AGENT`) span.
 
-```
+```json
 {
   "traceId": "6a6bc695459e41aa14a172bb41d3246d",
   "spanId": "1221a062c7f90a8e",

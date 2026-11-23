@@ -69,7 +69,7 @@ aws ec2 associate-networking-flex-cost-allocation-policy \
 
 The following template creates the policy and associates it with instance A.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: FCA policy that allocates instance data transfer by peer instance
 Parameters:

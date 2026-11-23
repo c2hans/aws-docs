@@ -72,7 +72,7 @@ The selected collection ID is stored as the `stac_collection_id` metadata attrib
 
 The following is a complete, working STAC connector configuration. Replace the placeholder values with your environment-specific values.
 
-```
+```json
 {
   "resources": {
     "project": {

@@ -48,7 +48,7 @@ If you use Route 53 private hosted zones, create the records in the forward and
 
 Verify the records from an instance in your VPC, such as the instance in [Launch an instance to reach the VPC](network-dhcp-dns-ntp.md#network-access-instance). Query each DNS server in your DHCP option set for the forward and reverse record of every host and appliance. The following example verifies one host against two DNS servers.
 
-```
+```bash
 nslookup esx01.evs.example.com 10.10.200.100
 nslookup esx01.evs.example.com 10.10.200.101
 nslookup 10.10.0.11 10.10.200.100

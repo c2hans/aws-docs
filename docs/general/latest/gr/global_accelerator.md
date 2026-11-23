@@ -13,7 +13,7 @@ The following are the service endpoints and service quotas for this service.
 ## Service endpoint (global)
 <a name="global_accelerator_region"></a>
 
-| Region Name | Region | Endpoint | Protocol | Amazon Route 53 Hosted Zone ID\* |
+| Region Name | Region | Endpoint | Protocol | Amazon Route 53 Hosted Zone ID\* |
 | --- | --- | --- | --- | --- |
 | US West (Oregon) Region | us-west-2 | globalaccelerator.amazonaws.com | HTTPS | Z2BJ6XQ5FK7U4H |
 | US West (Oregon) Region | us-west-2 | globalaccelerator-fips.us-west-2.amazonaws.com | HTTPS | Z018824593QZ67JH632G |

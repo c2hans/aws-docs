@@ -29,7 +29,7 @@ You can delete a DB instance using the AWS Management Console, the AWS Command L
 
 To find the instance IDs of the DB instances in your account, call the `list-db-instances` command:
 
-```
+```bash
 aws timestream-influxdb list-db-instances \
 --endpoint-url YOUR_ENDPOINT \
 --region YOUR_REGION
@@ -37,7 +37,7 @@ aws timestream-influxdb list-db-instances \
 
 To delete a DB instance by using the AWS CLI, call the `delete-db-instance` command with the following options:
 
-```
+```bash
 aws timestream-influxdb list-db-instances \
 --identifier YOUR_DB_INSTANCE \
 ```
@@ -46,14 +46,14 @@ aws timestream-influxdb list-db-instances \
 
 For Linux, macOS, or Unix:
 
-```
+```bash
 aws timestream-influxdb delete-db-instance \
     --identifier mydbinstance
 ```
 
 For Windows:
 
-```
+```bash
 aws timestream-influxdb delete-db-instance ^
     --identifier mydbinstance
 ```

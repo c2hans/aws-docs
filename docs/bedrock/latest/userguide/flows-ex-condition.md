@@ -71,7 +71,7 @@ The following image shows a flow with one condition node returns one of three po
 
    1. The following object fulfills the first condition (the `retailPrice` is more than 10 and the `type` is "produce") and returns the first value in `action` ("don't buy"):
 
-      ```
+      ```json
       {
           "retailPrice": 11,
           "marketPrice": 12,
@@ -84,7 +84,7 @@ Even though both the first and second conditions are fulfilled, the first condit
 
    1. The following object fulfills the second condition (the `retailPrice` is less than the `marketPrice`) and returns the second value in `action` ("buy"):
 
-      ```
+      ```json
       {
           "retailPrice": 11,
           "marketPrice": 12,
@@ -95,7 +95,7 @@ Even though both the first and second conditions are fulfilled, the first condit
 
    1. The following object fulfills neither the first condition (the `retailPrice` is more than 10, but the `type` is not "produce") nor the second condition (the `retailPrice` isn't less than the `marketPrice`), so the third value in `action` ("undecided") is returned:
 
-      ```
+      ```json
       {
           "retailPrice": 11,
           "marketPrice": 11,

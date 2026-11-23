@@ -107,7 +107,7 @@ Update the lifecycle stage of an organization recommendation that is managed by 
 #### Sample Request
 <a name="API_UpdateOrganizationRecommendationLifecycle_Example_1_Request"></a>
 
-```
+```json
 {
                     "organizationRecommendationIdentifier": "arn:aws:trustedadvisor:::organization-recommendation/96b5e5ca-7930-444c-90c6-06d386128100",
                     "lifecycleStage": "dismissed",

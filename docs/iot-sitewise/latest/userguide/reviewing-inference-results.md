@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/reviewing-
 
 Run the following command to fetch the most recent inference result for an asset property. For more information, see [ get-asset-property-value](https://docs.aws.amazon.com/cli/latest/reference/iotsitewise/get-asset-property-value.html) in the *AWS CLI Command Reference Guide*.
 
-```
+```bash
 aws iotsitewise get-asset-property-value \
     —asset-id {{asset-id}} \
     —property-id {{result-property-id}}
@@ -23,7 +23,7 @@ aws iotsitewise get-asset-property-value \
 
 Run the following command to fetch the history of inference results for a specified time window. For more information, see [ get-asset-property-value-history](https://docs.aws.amazon.com/cli/latest/reference/iotsitewise/get-asset-property-value-history.html) in the *AWS CLI Command Reference Guide*.
 
-```
+```bash
 aws iotsitewise get-asset-property-value-history \
     —asset-id {{asset-id}} \
     —property-id {{result-property-id}} \
@@ -36,7 +36,7 @@ aws iotsitewise get-asset-property-value-history \
 
 **Example of an inference result response:**
 
-```
+```JSON
 {
   "value": {
     "stringValue": "{\"timestamp\": \"2025-02-10T22:42:00.000000\", \"prediction\": 0, \"prediction_reason\": \"NO_ANOMALY_DETECTED\", \"diagnostics\": [{\"name\": \"asset-id\\\\property-id\", \"value\": 0.53528}]}"
@@ -66,7 +66,7 @@ An inference result returned by AWS IoT SiteWise anomaly detection includes key 
 
 **Example of a detailed inference result:**
 
-```
+```JSON
 {
     "timestamp": "2021-03-11T22:25:00.000000",
     "prediction": 1,

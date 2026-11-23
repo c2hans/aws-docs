@@ -49,7 +49,7 @@ The fallback `MessageBody` limit is 1,600 characters. This is shorter than the 3
 
 The following JSON shows the structure of a `FallbackConfiguration` object for an SMS fallback:
 
-```
+```json
 {
     "Channel": "SMS",
     "MessageBody": "Your order has shipped. Track at https://example.com/track/12345",
@@ -59,7 +59,7 @@ The following JSON shows the structure of a `FallbackConfiguration` object for a
 
 The following JSON shows the structure for an MMS fallback:
 
-```
+```json
 {
     "Channel": "MMS",
     "MessageBody": "Your order has shipped.",
@@ -87,7 +87,7 @@ For more information about configuring message expiration, see [Configuring RCS 
 
 The following example sets a 60-second TTL with SMS fallback:
 
-```
+```json
 {
     "DestinationPhoneNumber": "+12065550100",
     "OriginationIdentity": "rcs-agent-1234567890",

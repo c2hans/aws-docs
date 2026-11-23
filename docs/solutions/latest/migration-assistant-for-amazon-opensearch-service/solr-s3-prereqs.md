@@ -8,13 +8,13 @@ To back up Solr directly to Amazon S3, configure the S3 backup repository on eve
 
 1.  **Install the S3 repository plugin.** Place the `solr-s3-repository` JAR in the shared library directory referenced by `sharedLib` on every node so Solr can load the `org.apache.solr.s3.S3BackupRepository` class:
 
-   ```
+   ```bash
    cp /opt/solr/dist/solr-s3-repository-*.jar /opt/solr/contrib/s3-repository/lib/
    ```
 
 1.  **Configure `solr.xml`.** Add a `backup` block with an S3 `repository` and point `sharedLib` at the plugin directory:
 
-   ```
+   ```xml
    str name="sharedLib"/opt/solr/contrib/s3-repository/lib/str
 
    backup
@@ -30,7 +30,7 @@ The repository `name` you set here (`s3`) is the value you reference as `repoNam
 
 1.  **Set `SOLR_OPTS`.** Supply the bucket, Region, and the security-manager flag that the S3 client requires:
 
-   ```
+   ```bash
    export SOLR_OPTS="-DS3_BUCKET_NAME=BUCKET \
                      -DS3_REGION=REGION \
                      -DSOLR_SECURITY_MANAGER_ENABLED=false"
@@ -47,7 +47,7 @@ The repository `name` you set here (`s3`) is the value you reference as `repoNam
 
 1.  **Publish `solr.xml` and restart.** For SolrCloud, upload `solr.xml` to ZooKeeper; for standalone, copy it into the Solr data directory. Then restart each node so it picks up the repository:
 
-   ```
+   ```bash
    # SolrCloud
    /opt/solr/bin/solr zk cp PATH_TO_SOLR_XML zk:/solr.xml -z ZK_HOST:2181
    /opt/solr/bin/solr restart -force

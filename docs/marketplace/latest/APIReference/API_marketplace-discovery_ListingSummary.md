@@ -32,7 +32,7 @@ Pattern: `[\w\-]+`
 Required: Yes
 
  ** categories **   <a name="AWSMarketplaceService-Type-marketplace-discovery_ListingSummary-categories"></a>
-The categories used to classify this listing into logical groups.
+The categories that classify this listing into logical groups.
 Type: Array of [Category](API_marketplace-discovery_Category.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 30 items.
 Required: Yes
@@ -92,6 +92,27 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `.*\S.*`
 Required: Yes
+
+ ** caseStudiesSummary **   <a name="AWSMarketplaceService-Type-marketplace-discovery_ListingSummary-caseStudiesSummary"></a>
+A summary of the case studies associated with the listing. Retrieve the case studies with `ListListingAttributes`.
+Type: [CaseStudiesSummary](API_marketplace-discovery_CaseStudiesSummary.md) object
+Required: No
+
+ ** sellerEngagements **   <a name="AWSMarketplaceService-Type-marketplace-discovery_ListingSummary-sellerEngagements"></a>
+The seller engagement options available for this listing, such as buying now, requesting a private offer, or requesting a demo.
+Type: Array of [SellerEngagement](API_marketplace-discovery_SellerEngagement.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 100 items.
+Required: No
+
+ ** trustCenterSummary **   <a name="AWSMarketplaceService-Type-marketplace-discovery_ListingSummary-trustCenterSummary"></a>
+A summary of trust center sources and certifications associated with the listing.
+Type: [TrustCenterSummary](API_marketplace-discovery_TrustCenterSummary.md) object
+Required: No
+
+ ** useCaseSummary **   <a name="AWSMarketplaceService-Type-marketplace-discovery_ListingSummary-useCaseSummary"></a>
+A summary of the use cases the listing is written for: the name and identifier of each, without descriptions. The summary is empty when the listing has none.
+Type: [UseCaseSummary](API_marketplace-discovery_UseCaseSummary.md) object
+Required: No
 
 ## See Also
 <a name="API_marketplace-discovery_ListingSummary_SeeAlso"></a>

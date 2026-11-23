@@ -51,7 +51,7 @@ The COUNT function returns BIGINT.
 
 Count all of the users from the state of Florida:
 
-```
+```sql
 select count(*) from users where state='FL';
 
 count
@@ -61,7 +61,7 @@ count
 
 Count all of the event names from the EVENT table:
 
-```
+```sql
 select count(eventname) from event;
 
 count
@@ -71,7 +71,7 @@ count
 
 Count all of the event names from the EVENT table:
 
-```
+```sql
 select count(all eventname) from event;
 
 count
@@ -81,7 +81,7 @@ count
 
 Count all of the unique venue IDs from the EVENT table:
 
-```
+```sql
 select count(distinct venueid) as venues from event;
 
 venues
@@ -91,7 +91,7 @@ venues
 
 Count the number of times each seller listed batches of more than four tickets for sale. Group the results by seller ID:
 
-```
+```sql
 select count(*), sellerid from listing
 where numtickets > 4
 group by sellerid
@@ -108,7 +108,7 @@ count | sellerid
 
 The following examples compare the return values and execution times for COUNT and APPROXIMATE COUNT.
 
-```
+```sql
 select  count(distinct pricepaid) from sales;
 
 count

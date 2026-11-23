@@ -70,7 +70,7 @@ Specifies the target ECMAScript version. The default value is `es2020`.
 
 The following example AWS SAM template snippet uses esbuild to create a Node.js Lambda function from TypeScript code in `hello-world/app.ts`.
 
-```
+```yaml
 Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function

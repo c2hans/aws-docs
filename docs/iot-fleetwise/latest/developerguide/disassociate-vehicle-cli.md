@@ -12,7 +12,7 @@ To disassociate a vehicle with a fleet, run the following command.
 + Replace {{fleet-id}} with the ID of the fleet.
 + Replace {{vehicle-name}} with the ID of the vehicle.
 
-```
+```bash
 aws iotfleetwise disassociate-vehicle-fleet --fleet-id {{fleet-id}} --vehicle-name {{vehicle-name}}
 ```
 
@@ -23,7 +23,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

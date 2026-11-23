@@ -19,7 +19,7 @@ You can use the AWS SDKs to call the `GetInAppMessages` operation. The following
 
 Create the client in a separate module and export it:
 
-```
+```js
 import { PinpointClient } from "@aws-sdk/client-pinpoint";
 const REGION = "us-east-1";
 const pinClient = new PinpointClient({ region: REGION });
@@ -28,7 +28,7 @@ export { pinClient };
 
 Retrieve in-app messages for an endpoint:
 
-```
+```js
 // Import required AWS SDK clients and commands for Node.js
 import { PinpointClient, GetInAppMessagesCommand } from "@aws-sdk/client-pinpoint";
 import { pinClient } from "./lib/pinClient.js";
@@ -61,7 +61,7 @@ run();
 ------
 #### [ Python ]
 
-```
+```python
 import logging
 import boto3
 from botocore.exceptions import ClientError

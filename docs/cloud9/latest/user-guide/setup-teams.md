@@ -61,7 +61,7 @@ You can also create your own customer managed policies. For more information, se
 
 1. Run the IAM `create-policy` command, specifying a name for the policy and the `policy.json` file.
 
-   ```
+   ```sh
    aws iam create-policy --policy-document file://policy.json --policy-name MyPolicy
    ```
 
@@ -98,7 +98,7 @@ If you're using [AWS managed temporary credentials](security-iam.md#auth-and-acc
 
 Run the IAM `attach-group-policy` command, specifying the group's name and the Amazon Resource Name (ARN) of the policy.
 
-```
+```sh
 aws iam attach-group-policy --group-name MyGroup --policy-arn arn:aws:iam::123456789012:policy/MyPolicy
 ```
 

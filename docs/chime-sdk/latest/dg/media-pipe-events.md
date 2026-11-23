@@ -19,7 +19,7 @@ The Amazon Chime SDK sends this event when the media pipeline is created.
 **Example: Event data**
  The following is example data for this event.
 
-```
+```json
 {
     "version": "0",
     "id": "5ee6265a-0a40-104e-d8fd-a3b4bdd78483",
@@ -49,7 +49,7 @@ The Amazon Chime SDK sends this event after the media pipeline stops successfull
 **Example: Event data**
 The following is example data for this event.
 
-```
+```json
 {
     "version": "0",
     "id": "9e11e429-97fd-9532-5670-fac3f7abc05f",
@@ -79,7 +79,7 @@ The Amazon Chime SDK sends this event when the media pipeline has a temporary fa
 **Example: Event data**
 The following is example data for this event.
 
-```
+```json
 {
     "version": "0",
     "id": "{{abc141e1-fc2e-65e8-5f18-ab5130f1035a}}",
@@ -109,7 +109,7 @@ The Amazon Chime SDK sends this event when the media pipeline begins capturing a
 **Example: Event data**
 The following is example data for this event.
 
-```
+```json
 {
     "version": "0",
     "id": "{{9e11e429-97fd-9532-5670-fac3f7abc05f}}",
@@ -139,7 +139,7 @@ The Amazon Chime SDK sends this event when a media pipeline fails permanently.
 **Example: Event data**
 The following is example data for this event.
 
-```
+```json
 {
     "version": "0",
     "id": "{{9e11e429-97fd-9532-5670-fac3f7abc05f}}",

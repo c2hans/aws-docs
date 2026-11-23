@@ -28,7 +28,7 @@ AWS Backup resources managed by AWS Control Tower should be modified using the A
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -72,7 +72,7 @@ If you want to omit the `ApprovalsRequired` property, remove the gate's `Configu
 
 1. Add an `Approval` section and underlying properties using the following example as a guide. For more information, see the ['Approval' gate YAML](approval-ref.md) in the [Workflow YAML definition](workflow-reference.md).
 
-   ```
+   ```yaml
    Actions:
      MyApproval_01:
        Identifier: aws/approval@v1

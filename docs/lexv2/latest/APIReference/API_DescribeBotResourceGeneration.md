@@ -159,7 +159,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of DescribeBotResourceGeneration.
 
-```
+```json
 GET https://models-v2-lex.us-east-1.amazonaws.com/bots/BOT1234567/botversions/DRAFT/botlocales/en_GB/generations/GEN1234567
 ```
 
@@ -168,7 +168,7 @@ GET https://models-v2-lex.us-east-1.amazonaws.com/bots/BOT1234567/botversions/DR
 
 This example illustrates one usage of DescribeBotResourceGeneration.
 
-```
+```json
 {
     "botId": "BOT1234567",
     "botVersion": "DRAFT",

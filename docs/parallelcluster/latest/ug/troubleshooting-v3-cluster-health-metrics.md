@@ -83,13 +83,13 @@ If you see a non-zero value in the `Instance Provisioning Errors` graph, then it
 
   For dynamic nodes, check the `clustermgtd` log (`/var/log/parallelcluster/clustermgtd`) for the compute node IP address and errors such as the following:
 
-  ```
+  ```bash
   Node bootstrap error: Resume timeout expires for node
   ```
 
   For static nodes, check the `clustermgtd` log (`/var/log/parallelcluster/clustermgtd`) for the compute node IP address and errors such as the following:
 
-  ```
+  ```bash
   Node bootstrap error: Replacement timeout expires for node ... in replacement.
   ```
 

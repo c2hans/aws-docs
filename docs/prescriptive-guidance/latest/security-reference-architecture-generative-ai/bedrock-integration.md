@@ -8,110 +8,239 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 | --- |
 | Influence the future of the AWS Security Reference Architecture (AWS SRA) by taking a [short survey](https://amazonmr.au1.qualtrics.com/jfe/form/SV_e3XI1t37KMHU2ua). |
 
-The scope of this use case is to demonstrate a traditional cloud workload that is integrated with Amazon Bedrock to take advantage of generative AI capabilities. The following diagram illustrates the Generative AI account in conjunction with an example application account.
+This example connects an existing business application to [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) across two production accounts: the **Application account** and the **AI inference account**. These are the accounts in the Production OU in [Account and trust boundaries](https://dp8l2mfblnx2f.cloudfront.net/architecture/). Training and customization remain in a separate training account within the production security boundary.
 
-![Integrating a traditional cloud workload with Amazon Bedrock.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/f90b502b-0043-4fe7-abb1-5ec0fb5b04b2.jpeg)
+## The account interaction
+<a name="the-account-interaction"></a>
 
-The *Generative AI account* provides generative AI functionality by using Amazon Bedrock. The *Application account* hosts an example workload. The AWS services that you use in this account depend on your requirements. Interactions between the Generative AI account and the Application account use the Amazon Bedrock APIs.
+The Application account runs the frontend and backend. Its backend assumes an approved invocation role in the AI inference account, then calls Bedrock using that role's temporary credentials. An [Amazon VPC endpoint](https://docs.aws.amazon.com/bedrock/latest/userguide/vpc-interface-endpoints.html) provides private connectivity to the service, and [IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) role trust and permissions authorize the cross-account request. The endpoint controls the network path, and the IAM role controls authorization. Configure each control separately.
 
-The *Application account* is separated from the Generative AI account to help[ group workloads based on business purposes and ownership](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/benefits-of-using-multiple-aws-accounts.html#group-workloads-based-on-business-purpose-and-ownership). This separation [constrains access to sensitive data](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/benefits-of-using-multiple-aws-accounts.html#constrain-access-to-sensitive-data) in the generative AI environment and supports the [application of distinct security controls by environment](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/benefits-of-using-multiple-aws-accounts.html#apply-distinct-security-controls-by-environment). Keeping the traditional cloud workload in a separate account also helps [limit the scope of impact of adverse events](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/benefits-of-using-multiple-aws-accounts.html#limit-scope-of-impact-from-adverse-events).
+The [Bedrock integration diagram](https://dp8l2mfblnx2f.cloudfront.net/images/bedrock-integration-accounts.png) shows the application backend, private service endpoint, and invocation role across the Application and AI inference accounts. Choose the components your application uses. A simple model call does not require a knowledge base, tool gateway, or agent runtime.
 
-You can build and scale enterprise generative AI applications around various use cases that are supported by Amazon Bedrock. Common use cases include text generation, virtual assistance, text and image search, text summarization, and image generation. Depending on your use case, your application component interacts with one or more Amazon Bedrockcapabilities such as foundation model (FM) inference, knowledge bases, agents, and model customization.
+![AWS SRA of AI Security AWS OU and account structure with AWS service reference - cross account AI application integration](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/37d6317e-f8d9-47cd-adc8-6ee8e6837d2d.png)
 
-## Application account
+***Fig 7:*** ***AWS SRA of AI Security AWS OU and account structure with AWS service reference - cross account AI application integration***
+
+This guidance follows the Bedrock path. For a workload using an [Amazon SageMaker AI endpoint](https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html), follow the [SageMaker AI inference guidance](https://dp8l2mfblnx2f.cloudfront.net/answers/model-inference/#amazon-sagemaker-ai-protect-hosted-endpoints) and use that service's invocation and network configuration.
+
+### Application account
 <a name="integration-app-account"></a>
 
-The Application account hosts the primary infrastructure and services to run and maintain an enterprise application. In this context, the Application account acts as the traditional cloud workload, which interacts with the Amazon Bedrock managed service in the Generative AI account. For general security best practices for securing this account, see [Workloads OU - Application account](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/application.html) in the *AWS SRA – core architecture guide*.
+The Application account hosts the web frontend, application backend, and application data stores. The application team manages user sessions and decides which requests may reach Bedrock. Apply the account's [shared security controls](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/introduction.html) to the application's use of Bedrock.
 
-### Identity propagation and access control
-<a name="identity-propagation-and-access-control.996f5500-76f6-5bf9-85d3-20cc2f0e4096"></a>
+#### Identity propagation and access control¶
+<a name="identity-propagation-and-access-control"></a>
 
-Implement identity propagation throughout your generative AI application architecture. When your application uses Retrieval Augmented Generation (RAG), propagate the user's identity from the application in the form of metadata to the knowledge base. The knowledge base enforces controls through metadata filtering, ensuring users only access data they are authorized to view.
+The backend uses an IAM role to call Bedrock in the AI inference account. Grant the application role `sts:AssumeRole` on the invocation role, and configure the invocation role's trust policy to trust that application role. Grant the invocation role only the Bedrock actions and model resources the application needs. The backend signs requests with the assumed role's temporary credentials. See [cross-account role access](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html) for the role configuration.
 
-For agentic applications, make sure every agent propagates the application user's identity to all systems it interacts with, including data sources, knowledge bases, and external APIs. Each system must understand the user identity, limit its responses to actions the user is authorized to perform, and respond with data the user is authorized to access. Use [Amazon Bedrock AgentCore Identity](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html) to manage authentication and authorization across the agent workflow, maintaining separation between ingress authentication (verifying user identity) and egress authorization (accessing tools and resources).
+The role authorizes the backend's use of AWS services. The application must also enforce each user's data permissions. For retrieval-augmented generation (RAG) with [Amazon Bedrock Knowledge Bases](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html), apply the user's permitted document scope in the backend before calling the knowledge base.
 
-### Application security
-<a name="application-security.52060d53-f610-587c-bcaa-8eb54b61444c"></a>
+Agents that call tools on behalf of users need the same connection between the authenticated user and downstream permissions. [Amazon Bedrock AgentCore Identity](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html) manages identities and credentials for these calls. Keep the incoming user's authentication separate from the credentials used to access each tool, and bind user-delegated credentials to a verified user identifier. Verify that the target data source or API enforces the user's permitted operations and data scope. Follow the [tool access guidance](https://dp8l2mfblnx2f.cloudfront.net/connects/tool-access/#preserve-user-authority-across-tool-calls) for this authorization path.
 
-Apply standard [application security best practices](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/application-security.html) as you would for other applications. Protect your web application infrastructure using [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html) to defend against common web exploits including SQL injection, cross-site scripting, and request floods. Configure rate limiting to prevent resource exhaustion and control costs, as application invocations trigger model inference API calls that incur charges.
+#### Restrict approved models and Regions¶
+<a name="restrict-approved-models-and-regions"></a>
 
-Restrict direct access to foundation model inference endpoints to control costs and monitor activity. Use AWS Identity and Access Management (IAM) policies to control permissions to invoke inference actions on Amazon Bedrock base models. Implement [least-privilege access](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) by granting only the minimum permissions required for your application to function.
+Use the [Bedrock model-selection service control policy (SCP) example](https://aws.amazon.com/blogs/security/implementing-least-privilege-access-for-amazon-bedrock/) to deny invocation of unapproved models. Replace its illustrative model ARNs with the approved resources and cover each API the application can call. For inference profiles, include the profile and model resources required by the [geographic and global profile configuration](https://dp8l2mfblnx2f.cloudfront.net/architecture/#review-cross-region-inference-permissions).
 
-### Prompt injection protection
-<a name="prompt-injection-protection.3c0d7ce0-a5c9-5c79-af0b-6cf3c37fe8be"></a>
+Apply the [Region-deny SCP example](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_syntax.html#scp-syntax-condition) using the organization's approved Regions. Preserve required global-service exceptions. For cross-Region inference, a source-Region allowance alone is insufficient.
 
-Traditional web application firewalls don't protect against prompt injection threats because these threats use natural language text rather than code patterns that firewalls detect. Implement [Amazon Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html) to protect against prompt injection attacks and ensure model safety. Configure guardrails with prompt attack detection enabled, set appropriate filter strength based on your risk tolerance, and deploy versioned guardrails to production.
+Test an approved model call, an unapproved model, and a call from a disallowed source Region. Expect the approved call to succeed and the other calls to fail with an access denied error. Test each approved inference profile separately, including its destination permissions.
 
-Add pre-processing validation through AWS Lambda functions that sanitize and validate input before passing it to foundation models or agents. This additional layer of defense detects malicious prompts that attempt to bypass guardrails or manipulate model behavior. Regularly test your applications for prompt attacks using adversarial testing techniques.
+#### Enforce retrieval scope in the backend¶
+<a name="enforce-retrieval-scope-in-the-backend"></a>
 
-### Data protection
-<a name="data-protection.311d70b7-9b9d-50a9-a0ae-be9e6c97d29e"></a>
+The knowledge base `filter`[ parameter](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseVectorSearchConfiguration.html) is optional. A caller with retrieval permission can omit it. Grant retrieval permission only to the trusted backend when users require different document scopes, and prevent direct calls that bypass its authorization.
 
-Encrypt data in transit between the Application account and Generative AI account by using TLS 1.2 or higher. Encrypt data at rest using AWS Key Management Service (AWS KMS) customer managed keys for application data stores, conversation logs, and any cached model responses.
+For a knowledge base partitioned by tenant, the backend can construct this part of a `Retrieve` request from the verified session. Replace the example value with the authorized tenant identifier; do not take it from user input or a model response.
 
-Implement data classification schemes to categorize data based on sensitivity and criticality. Use [Amazon Macie](https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html) to detect and classify sensitive data in Amazon S3 buckets that contain user prompts, conversation logs, and application data. Deploy Amazon Comprehend [personally identifiable information (PII) detection](https://docs.aws.amazon.com/comprehend/latest/dg/pii.html) or Amazon Bedrock Guardrails to detect and redact sensitive information in both model inputs and outputs before processing or storage.
+```
+{
+  "retrievalConfiguration": {
+    "vectorSearchConfiguration": {
+      "filter": {
+        "equals": {
+          "key": "tenant_id",
+          "value": "tenant-from-verified-session"
+        }
+      }
+    }
+  }
+}
+```
 
-### Network security
-<a name="network-security.978bd691-fe01-58ff-9d6c-3b447993de66"></a>
+Protect the document metadata during ingestion. Reject a request with missing or unauthorized tenant context before calling Bedrock. Test that changing a client-supplied tenant value cannot change the backend's filter. If permissions differ within a tenant, apply those document entitlements too; a tenant filter alone is insufficient.
 
-Deploy your application within a virtual private cloud (VPC) by using private subnets for application tiers that don't require direct internet access. Use VPC endpoints to establish private connectivity to Amazon Bedrock services, to help make sure traffic between your application and Amazon Bedrock doesn't traverse the public internet.
+#### Application security¶
+<a name="application-security"></a>
 
-Configure security groups with restrictive rules that allow only necessary traffic between application tiers. Implement network access control lists (network ACLs) as an additional defensive layer with explicit allow rules for required traffic and a default-deny posture. Deploy [AWS Network Firewall](https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html) for deep packet inspection of traffic between application tiers and to detect unusual request patterns that might indicate attacks.
+Requests to the web application can trigger billable model calls. Protect the web entry point with [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/how-aws-waf-works-resources.html) rules for common exploits, including SQL injection and cross-site scripting. Add a rate-based rule to limit excessive requests. Combine these request controls with authentication and IAM authorization to reduce unauthorized use and unexpected inference costs.
 
-### Logging and monitoring
-<a name="logging-and-monitoring.96b36d66-c8a0-59a9-ac42-7bcc57dabb35"></a>
+#### Prompt injection protection¶
+<a name="prompt-injection-protection"></a>
 
-Enable comprehensive logging and monitoring for your generative AI application. Configure [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) to log all API calls to Amazon Bedrock, capturing user identity, request parameters, and response metadata. Forward CloudTrail logs to the Log Archive account for centralized security analysis.
+Prompt injection can use natural-language instructions that web exploit rules do not detect. Assess prompt injection defenses separately from AWS WAF coverage.
 
-Configure CloudWatch to monitor application metrics including model invocation rates, response latencies, error rates, and token usage patterns. Create [CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) that trigger when metrics deviate from established baselines, indicating potential security issues, service degradation, or unexpected usage patterns.
+[Amazon Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html) can filter prompt attacks and harmful content. Enable prompt attack detection, select filter strengths based on the application's risks, and deploy a versioned guardrail to production.
 
-Monitor Amazon Bedrock Guardrails metrics to track how frequently content is filtered or blocked, providing visibility into potential security threats or policy violations. Analyze trends in guardrail activations to identify emerging attack patterns or areas where additional security controls might be needed.
+Use an [organization-enforced guardrail](https://dp8l2mfblnx2f.cloudfront.net/architecture/#set-organization-wide-controls) for the shared baseline. For an additional application guardrail, the `bedrock:GuardrailIdentifier` condition key can reject requests that omit or change the required guardrail; it does not attach one. Follow the documented API compatibility and version-qualified ARN examples for [requiring a specific guardrail](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-permissions-id.html).
 
-Implement centralized log aggregation using [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html) or integrate with third-party security information and event management (SIEM) platforms. Configure automated pattern analysis and threat detection to identify anomalous behavior including unusual traffic volumes, connections to unexpected destinations, or communication patterns that deviate from established baselines.
+|
+|
+| **Invocation path** | **Configure and test** |
+| --- |--- |
+| `InvokeModel`, `InvokeModelWithResponseStream`, `Converse`, `ConverseStream` | Supply the required guardrail identifier and version. Test that requests that omit or change them fail with an access denied error. |
+| Chat Completions on Bedrock Runtime | Supply the guardrail identifier and version through the [documented request headers](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-chat-completions.html). Test enforcement for this API separately. |
+| `RetrieveAndGenerate` | Set `generationConfiguration.guardrailConfiguration` for the knowledge base request. Guardrails do not evaluate retrieved references. |
+| `InvokeAgent` | [Associate the guardrail with the agent](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-guardrail.html) and test the deployed agent version. |
+| `InvokeFlow` | Configure guardrails on [supported prompt and knowledge base nodes](https://docs.aws.amazon.com/bedrock/latest/userguide/flows-guardrails.html). Knowledge base nodes require response generation. |
 
-## Generative AI account
-<a name="integration-gen-ai-account"></a>
+The IAM condition guidance explicitly covers `InvokeModel`, `InvokeModelWithResponseStream`, `Converse`, and `ConverseStream`. Higher-level operations can make internal model calls without guardrail parameters and fail under the same deny policy, even when a guardrail is configured for the operation. Test each path with its execution role and follow the documented limitations before sharing roles across these paths.
 
-Depending on the use case, the Generative AI account hosts all generative AI activities. These include model inference (Capability 1), model customization (Capability 2), Retrieval Augmented Generation (RAG) with knowledge bases (Capability 3), tool integration (Capability 4), autonomous agents (Capability 5), and end-user AI applications (Capability 6).
+Construct prompt tagging in the trusted backend. The condition does not prevent callers from using guardrail input tags to exclude prompt content from evaluation. Include attempts to alter that tagging in the application tests.
 
-### Foundation model inference
-<a name="foundation-model-inference.eefbada5-bdba-5099-8347-5217f0a1f1b5"></a>
+Review [guardrail coverage](https://dp8l2mfblnx2f.cloudfront.net/answers/model-inference/#amazon-bedrock-configure-and-test-inference-guardrails) when changing the invocation path.
 
-Implement the security controls described in Capability 1 for foundation model (FM) inference. Deploy AWS WAF as the first line of defense against malicious requests targeting your AI applications. Configure rate limiting to prevent resource exhaustion attacks and implement AWS Managed Rules for the [Core rule set managed rule group](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-baseline.html#aws-managed-rule-groups-baseline-crs) and the [Known bad inputs managed rule group](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-baseline.html#aws-managed-rule-groups-baseline-known-bad-inputs).
+Validate inputs in the application before passing them to a model or agent. [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) functions can perform this preprocessing. Test the validation and guardrail configuration with adversarial inputs, including attempts to bypass filters or manipulate model behavior.
 
-Use [Amazon Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html) to filter inputs and outputs across multiple harmful categories: hate, insults, sexual, violence, misconduct, and prompt attacks. Configure filter strength for each category based on your risk tolerance. Define restricted topics to prevent models from discussing sensitive subjects or internal systems.
+#### Data protection¶
+<a name="data-protection"></a>
 
-### Model customization
-<a name="model-customization.869af69a-aede-5c71-b4b5-35159899a803"></a>
+The application can retain sensitive information in prompts, conversation logs, and cached responses. Classify this data and define what the application may send to a model or store. Apply the [shared encryption and data controls](https://dp8l2mfblnx2f.cloudfront.net/architecture/#apply-shared-network-and-identity-controls) to application data stores, conversation logs, and caches. Redact information that the application is not permitted to send or retain before further processing or storage.
 
-If your use case requires model customization, implement the security controls described in Capability 2. Encrypt the model customization job, output files, and resulting custom model by using customer managed keys in [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html) (AWS KMS). Store training and validation data in Amazon S3 buckets with encryption, versioning, and access logging enabled.
+#### Network security¶
+<a name="network-security"></a>
 
-Use a virtual private cloud (VPC) with no internet access for model customization jobs. Create Amazon S3 VPC endpoints to allow customization jobs to access training data buckets without internet exposure. This approach helps to ensure that training data and model artifacts remain private throughout the customization process.
+The backend can reach Bedrock over a private network path from its virtual private cloud (VPC). Place application tiers that do not need internet access in private subnets. Create an interface endpoint for `bedrock-runtime` using [AWS PrivateLink](https://docs.aws.amazon.com/bedrock/latest/userguide/vpc-interface-endpoints.html). Apply the [shared network controls](https://dp8l2mfblnx2f.cloudfront.net/architecture/#apply-shared-network-and-identity-controls) to the application tiers.
 
-### Knowledge bases and RAG
-<a name="knowledge-bases-and-rag.555e376b-60b8-5fa0-8fb8-97b440c2d007"></a>
+**Restrict the endpoint.** The [Bedrock endpoint-policy example under Model adaptation](https://aws.amazon.com/blogs/security/implementing-least-privilege-access-for-amazon-bedrock/) restricts the principal and model resources. Substitute the assumed invocation role's account and role ARN, approved model ARNs, and required inference actions. Include the required profile resources for cross-Region inference. Test that the intended role can invoke the approved model through the endpoint and that another role or model is denied.
 
-For applications using RAG, implement the security controls described in Capability 3. Encrypt knowledge base data in transit and at rest using [customer managed AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html). Configure data ingestion jobs with customer managed keys and implement metadata filtering for secure retrieval based on user attributes.
+**Require the private path.** An endpoint policy does not restrict calls that bypass it. Adapt the [explicit-deny condition example](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html#example-bucket-policies-restrict-accesss-vpc-endpoint) for the invocation role: deny the selected Bedrock Runtime actions and resources when `aws:SourceVpce` does not equal the approved endpoint ID. That example is an S3 resource policy; replace its actions and resources and omit `Principal` when using a role policy. `aws:SourceVpce` is absent outside endpoint requests. Apply the documented service-principal and forward access session exceptions required by the workload. Test the approved endpoint, the public endpoint, and each required service integration; only the approved paths should succeed.
 
-Use [Amazon Macie](https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html) to detect and classify sensitive data in Amazon S3 buckets that contain knowledge base data sources. Implement input validation to protect knowledge bases from malicious content by scanning files for malware before uploading them to data sources. Use [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html) to detect and redact sensitive information in documents before indexing them in your knowledge base.
+#### Logging and monitoring¶
+<a name="logging-and-monitoring"></a>
 
-### Tool integration
-<a name="tool-integration.31db66ed-d75c-579c-affb-06ad75c4d7fb"></a>
+The response team needs records of who invoked the model and, where permitted, the content of those invocations. [AWS CloudTrail](https://docs.aws.amazon.com/bedrock/latest/userguide/logging-using-cloudtrail.html) records Bedrock API activity and available identity, request, and response metadata. Forward these logs to the Log Archive account for centralized analysis.
 
-For applications that extend AI capabilities through tool integration, implement the security controls described in Capability 4. Use [Amazon Bedrock AgentCore Gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html) to centralize tool discovery and invocation through the Model Context Protocol (MCP). Configure OAuth authorizers for gateway access and use [Amazon Bedrock AgentCore Identity](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html) to manage authentication credentials securely.
+Model invocation logging captures prompts and completions separately from CloudTrail. Configure it with `PutModelInvocationLoggingConfiguration`, selecting destinations in the invocation account and Region and the content types required for investigation.
 
-Deploy AI applications and AWS Lambda function tools within private subnets by using restrictive security groups. Create VPC endpoints for AgentCore Gateway and [Amazon Bedrock AgentCore Runtime](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agents-tools-runtime.html) to help make sure that tool integration occurs through private network paths. Apply rate limiting and resource quotas at the identity level to prevent resource exhaustion from excessive tool calls.
+|
+|
+| **Logging choice** | **Configuration** |
+| --- |--- |
+| [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) destination | `cloudWatchConfig` with `logGroupName` and `roleArn` |
+| [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) destination, alone or alongside CloudWatch Logs | `s3Config` with `bucketName` |
+| Content types to retain | Enable the required options: `textDataDeliveryEnabled`, `imageDataDeliveryEnabled`, `embeddingDataDeliveryEnabled`, `videoDataDeliveryEnabled`, and `audioDataDeliveryEnabled` |
 
-### Autonomous agents
-<a name="autonomous-agents.7100e918-9540-5982-8495-323ef55b207f"></a>
+For example, this request enables text logging to an existing S3 bucket. Replace the bucket name and configure the [destination permissions](https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html) before applying it. The setting applies across the account and Region.
 
-For agentic applications, implement the security controls described in Capability 5. Use Amazon Bedrock AgentCore Runtime to host agents with complete session isolation by using dedicated microVMs. Configure customer managed KMS keys for [Amazon Bedrock AgentCore Memory](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory.html) resources, AgentCore Identity [token vaults](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/key-features-and-benefits.html#secure-credential-storage), and AgentCore Gateway configuration.
+```
+{
+  "loggingConfig": {
+    "s3Config": {
+      "bucketName": "DOC-EXAMPLE-BUCKET",
+      "keyPrefix": "bedrock/"
+    },
+    "textDataDeliveryEnabled": true,
+    "imageDataDeliveryEnabled": false,
+    "embeddingDataDeliveryEnabled": false,
+    "videoDataDeliveryEnabled": false,
+    "audioDataDeliveryEnabled": false
+  }
+}
+```
 
-Implement authentication architecture that addresses user authentication to invoke the agent, agent authentication to access tools and resources, and tool authentication to access downstream systems. Assign IAM roles to agents that provide minimum permissions required for agent functions. Enable [Amazon Bedrock AgentCore Observability](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability.html) to trace, debug, and monitor agent activity.
+Invocation logs can contain sensitive user content. Encrypt the destination with a customer managed key and apply the access and retention controls defined for that data.
 
-### End-user AI applications
-<a name="end-user-ai-applications.981fd272-2170-5b5c-9a95-ca25bddb1b59"></a>
+Use [Amazon CloudWatch](https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring.html) to monitor invocation rates, response latency, errors, and token usage. Set alarms for changes from expected usage. Review Bedrock Guardrails metrics alongside these alarms to identify increases in guardrail interventions.
 
-For end-user AI applications described in Capability 6, implement appropriate authentication and authorization controls based on your user population. For internal applications, federate with your corporate identity provider. For external applications, use [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html) or another identity provider that meets your requirements.
+Enable [Amazon GuardDuty AI Protection](https://docs.aws.amazon.com/guardduty/latest/ug/ai-protection.html) in the AI inference account. It analyzes CloudTrail data events for Amazon Bedrock, Amazon Bedrock AgentCore, and Amazon SageMaker AI, together with management events. GuardDuty collects the data events through its own service-linked channel; you do not need to configure a trail for this analysis. Configure your own CloudTrail coverage separately for audit and investigation requirements.
 
-Implement user session management that maintains security boundaries between users. Use Amazon Bedrock Guardrails to filter content based on user context and persona. Monitor user interactions for anomalous patterns that might indicate account compromise or malicious activity.
+The security team can aggregate logs in [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html) or an existing security information and event management (SIEM) solution. Correlate model calls with application and network activity to investigate unexpected traffic volumes or destinations.
+
+For analysis across accounts and Regions, CloudWatch can normalize selected logs with its `parseToOCSF`[ transformation](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ParseToOCSF.html). Supported sources include CloudTrail, [Amazon VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html), [Amazon Route 53 Resolver query logs](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-query-logs.html), [Amazon EKS audit logs](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html), and AWS WAF logs. Configure the [Amazon S3 Tables integration](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/s3-tables-integration.html) and associate the required log sources to make newly ingested logs available in managed Apache Iceberg tables. The integration does not require every source to use Open Cybersecurity Schema Framework (OCSF). Bedrock model invocation logs are not a supported `parseToOCSF` source. Retain them as a separate stream and correlate records by request identifier.
+
+### AI inference account
+<a name="ai-inference-account"></a>
+
+The AI inference account owns production model access and the retrieval or agent resources assigned to this workload. Use separate roles for model invocation, retrieval, and tool execution.
+
+|
+|
+| **Component in this account** | **Apply this guidance** |
+| --- |--- |
+| Bedrock model inference | [Bedrock inference controls](https://dp8l2mfblnx2f.cloudfront.net/answers/model-inference/#amazon-bedrock-protect-managed-model-access) |
+| Knowledge bases and RAG | [Data and retrieval](https://dp8l2mfblnx2f.cloudfront.net/connects/data-and-retrieval/) |
+| Read-only tools | [Tool access and user authority](https://dp8l2mfblnx2f.cloudfront.net/connects/tool-access/) |
+| Agents | [Runtime isolation](https://dp8l2mfblnx2f.cloudfront.net/acts/agents/#isolate-agent-and-tool-execution); add [action controls](https://dp8l2mfblnx2f.cloudfront.net/acts/agents/#validate-actions-outside-the-model) when tools can change systems |
+| User access | [Custom application identity and authorization](https://dp8l2mfblnx2f.cloudfront.net/answers/ai-applications/#custom-applications-separate-user-sign-in-from-aws-access) |
+
+#### Foundation model inference
+<a name="foundation-model-inference"></a>
+
+The inference account owns the approved model access and guardrail configuration. Use Amazon Bedrock Guardrails to filter harmful input and output content, select filter strengths for the application's risks, and define restricted topics. The Application account helps protect the web entry point and invokes these approved resources through its assumed role.
+
+Apply the [Bedrock inference controls](https://dp8l2mfblnx2f.cloudfront.net/answers/model-inference/#amazon-bedrock-protect-managed-model-access) to this configuration.
+
+#### Knowledge bases and RAG
+<a name="knowledge-bases-and-rag"></a>
+
+A knowledge base adds a path from the user's request to organizational documents. Protect the source data and index with encryption at rest, using customer managed [AWS Key Management Service (AWS KMS)](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html) keys where supported, and use TLS for data in transit. Configure ingestion encryption and retrieval metadata filters for the user's authorized document scope.
+
+Validate documents before ingestion, including malware checks and required redaction. Optional components shown in the diagram include [Amazon Macie](https://docs.aws.amazon.com/macie/latest/user/discovery-asdd.html), [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/pii.html), and [Amazon OpenSearch Serverless](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless.html). The [data and retrieval guidance](https://dp8l2mfblnx2f.cloudfront.net/connects/data-and-retrieval/) covers source permissions, ingestion, and retrieval checks.
+
+#### Tool integration
+<a name="tool-integration"></a>
+
+Tools connect the application to data sources and business systems. [Amazon Bedrock AgentCore Gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html) centralizes tool discovery and invocation through the Model Context Protocol (MCP). Configure IAM or JSON Web Token (JWT) inbound authorization as described in [Set up inbound authorization](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-inbound-auth.html), and use AgentCore Identity to manage the credentials used for downstream access.
+
+For private application access, create [interface VPC endpoints for Gateway and Runtime](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/vpc.html) and restrict their security groups. Configure Gateway-to-target connectivity separately. [Connect a Lambda function to your VPC](https://docs.aws.amazon.com/lambda/latest/dg/configuration-vpc.html) when it needs private resources. This controls the function's network access; private access to the [Lambda invocation API](https://docs.aws.amazon.com/lambda/latest/dg/configuration-vpc-endpoints.html) requires its own interface endpoint.
+
+Identity-level rate limits and quotas help control excessive tool calls. [AgentCore Gateway rate limits](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-rate-limits.html) are fail-open by default: the gateway allows requests if the rate limit service is unavailable or a dimension cannot be resolved. Keep authorization that denies by default independent of these rate limits.
+
+Apply [agent execution controls](https://dp8l2mfblnx2f.cloudfront.net/acts/agents/) when an agent selects tools. Use [read-only tool access](https://dp8l2mfblnx2f.cloudfront.net/connects/tool-access/) for information requests and add approval and recovery controls when tools can change systems.
+
+#### Authorize a specific Gateway tool
+<a name="authorize-a-specific-gateway-tool"></a>
+
+Use [Policy in Amazon Bedrock AgentCore](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html) to authorize tool calls. Attach a policy engine to the gateway in `ENFORCE` mode and set required policies to `ACTIVE`. For a JWT-authorized gateway, this Cedar example permits one tool when the verified token contains the required role claim. Adapt the action name and gateway Amazon Resource Name (ARN) to the deployed target and use a claim controlled by the trusted identity provider.
+
+```
+permit(
+  principal is AgentCore::OAuthUser,
+  action == AgentCore::Action::"InsuranceAPI___get_contract",
+  resource == AgentCore::Gateway::"arn:aws:bedrock-agentcore:us-west-2:123456789012:gateway/insurance-gw-a1b2c3d4e5"
+)
+when {
+  principal.hasTag("role") &&
+  principal.getTag("role") == "claims-reader"
+};
+```
+
+The [principal policy examples](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/example-policies-principal.html) describe how JWT claims become principal tags. Review the complete policy set: another permit can grant additional access. Test a permitted caller, a missing claim, a different role, and a different tool. The tool must still enforce which contracts that caller may read. This policy does not replace downstream data authorization.
+
+#### Agent execution and permissions
+<a name="agent-execution-and-permissions"></a>
+
+Use the [central discovery catalog](https://dp8l2mfblnx2f.cloudfront.net/architecture/#catalog-approved-agents-and-tools) to review agents and tools before adoption. Apply the [agent controls](https://dp8l2mfblnx2f.cloudfront.net/acts/agents/) to the components you deploy, including optional [Amazon Bedrock AgentCore harness](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness-vs-runtime.html), [Amazon Bedrock AgentCore Code Interpreter](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-interpreter-tool.html), [Amazon Bedrock AgentCore Browser](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-tool.html), [Amazon Bedrock AgentCore payments](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/payments.html), [Amazon Bedrock AgentCore Evaluations](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evaluators.html), and [Amazon Bedrock AgentCore optimization](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/optimization.html).
+
+[Amazon Bedrock AgentCore Runtime](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-instances-how-it-works.html) isolates sessions in dedicated microVMs or, with the Instances compute type, Amazon EC2 instances. Within a session, agent code can use its assigned permissions. Restrict credentials and network destinations as described in [agent and tool execution controls](https://dp8l2mfblnx2f.cloudfront.net/acts/agents/#isolate-agent-and-tool-execution).
+
+Define authentication and authorization at each step: the user invokes the agent, the agent calls a tool, and the tool accesses a downstream system. Give each execution role the minimum permissions for its task. Enable [Amazon Bedrock AgentCore Observability](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability.html) to trace agent activity across these steps.
+
+Stored agent data also needs protection. Configure customer managed KMS keys for [Amazon Bedrock AgentCore Memory](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory-create-a-memory-store.html), Identity token vaults, and Gateway configuration where supported. Review the encryption settings and key requirements for [Memory](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory-create-a-memory-store.html), [Identity token vaults](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity-data-encryption.html), and [Gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-encryption.html).
+
+Apply [read-only tool controls](https://dp8l2mfblnx2f.cloudfront.net/connects/tool-access/) for retrieval. Add [action authorization and recovery](https://dp8l2mfblnx2f.cloudfront.net/acts/agents/) when the agent can change records, run code, or affect devices, including when those operations require human approval.
+
+#### End-user AI applications
+<a name="end-user-ai-applications"></a>
+
+User sign-in and session management remain part of the application design. Federate internal users with the corporate identity provider, using [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) where appropriate for the application. For external users, use [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools.html) or another identity provider that meets the application's requirements. Isolate each user's sessions and results, and monitor for unusual activity.
+
+The [custom application access guidance](https://dp8l2mfblnx2f.cloudfront.net/answers/ai-applications/#custom-applications-separate-user-sign-in-from-aws-access) describes how user authentication relates to backend authorization. Use the [four-step reading path](https://dp8l2mfblnx2f.cloudfront.net/#how-to-use-this-guide) to review the model, retrieval, and action controls for the components in this application.
+
+The diagram's other optional components are [Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-method-request-validation.html) for the application entry point, and [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html), [AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub-v2.html), and [Amazon S3 Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html) for the shared security and evidence architecture. Follow the [account controls](https://dp8l2mfblnx2f.cloudfront.net/architecture/) when adopting them.
+
+### Optional customization in the training account
+<a name="optional-customization-in-the-training-account"></a>
+
+If this application uses a customized model, run its governed customization workflow in the [training environment](https://dp8l2mfblnx2f.cloudfront.net/architecture/#training-account-and-model-promotion). Protect the datasets and artifacts, evaluate the resulting model, and promote it through an approved deployment path. Use [Bedrock customization guidance](https://dp8l2mfblnx2f.cloudfront.net/answers/model-customization/#amazon-bedrock-isolate-managed-customization-jobs) for the job and [inference controls](https://dp8l2mfblnx2f.cloudfront.net/answers/model-inference/) for production serving.

@@ -9,7 +9,7 @@ Within the Lambda response, there are a number of structures that recur. Details
 ## Intent
 <a name="lambda-intent"></a>
 
-```
+```json
 "intent": {
     "confirmationState": "Confirmed | Denied | None",
     "name": {{string}},
@@ -73,7 +73,7 @@ Contains information about the results of the Kendra search query. This field on
 
 The `slots` field exists within an `intent` structure and is mapped to a structure whose keys are the names of the slots for that intent. If the slot is not a multi-valued slot (see [Using multiple values in a slot](multi-valued-slots.md) for more details), it is mapped to a structure with the following format. Note that the `shape` is `Scalar`.
 
-```
+```json
 {
     {{slot name}}: {
         "shape": "Scalar",
@@ -91,7 +91,7 @@ The `slots` field exists within an `intent` structure and is mapped to a structu
 
 If the slot is a multi-valued slot, the object to which it is mapped contains another field called `values`, which is mapped to a list of structures, each containing information about a slot that makes up the multi-valued slot. The format of each object in the list matches that of the object to which a regular slot is mapped. Note that the `shape` is `List`, but the `shape` of the component slots under `values` is `Scalar`.
 
-```
+```json
 {
     {{slot name}}: {
     "shape": "List",
@@ -143,7 +143,7 @@ The shape of the slot. This value is `List` if there are multiple values in the 
 
 An object containing information about the value that the user provided for a slot and Amazon Lex V2's interpretation, in the following format:
 
-```
+```json
 {
     "originalValue": {{string}},
     "interpretedValue": {{string}},
@@ -164,7 +164,7 @@ The fields are described below:
 
 A list of objects containing information about the slots that make up the multi-value slot. The format of each object matches that of a normal slot, with the `shape` and `value` fields described above. `values` only appears if the slot consists of multiple values (see [Using multiple values in a slot](multi-valued-slots.md) for more details). The following JSON object shows two component slots:
 
-```
+```json
 "values": [
     {
         "shape": "Scalar",
@@ -197,7 +197,7 @@ A list of objects containing information about the slots that make up the multi-
 
 The `sessionState` field is mapped to an object containing information about the state of the conversation with the user. The actual fields that appear in the object depend on the type of dialog action. See [Required fields in the response](lambda-response-format.md#lambda-response-required) for the required fields in a Lambda response. The format of the `sessionState` object is as follows:
 
-```
+```json
 "sessionState": {
     "activeContexts": [
         {
@@ -251,7 +251,7 @@ The fields are described below:
 
 A list of objects containing information about a context that a user is using in a session. Use contexts to facilitate and control intent recognition. For more information about contexts, see [Setting intent context for your Lex V2 bot](context-mgmt-active-context.md). Each object is formatted as follows:
 
-```
+```json
 {
     "name": {{string}},
     "contextAttributes": {
@@ -276,7 +276,7 @@ The fields are described below:
 
 A map of key/value pairs representing session-specific context information. For more information, see [Setting session attributes for your Lex V2 bot](context-mgmt-session-attribs.md). The object is formatted as follows:
 
-```
+```json
 {
     {{string}}: {{string}},
     ...
@@ -288,7 +288,7 @@ A map of key/value pairs representing session-specific context information. For 
 
 Provides hints to the phrases that a customer is likely to use for a slot in order to improve audio recognition. The values that you provide in the hints boost audio recognition of those values over similar-sounding words. The format of the `runtimeHints` object is as follows:
 
-```
+```json
 {
     "slotHints": {
         {{intent name}}: {
@@ -314,7 +314,7 @@ The `slotHints` field maps to an object whose fields are the names of the intent
 
 Determines the next action for Amazon Lex V2 to take. The format of the object is as follows:
 
-```
+```json
 {
     "slotElicitationStyle": "Default | SpellByLetter | SpellByWord",
     "slotToElicit": {{string}},

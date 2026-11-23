@@ -68,7 +68,7 @@ The following is an example `appsettings.json` configuration file that demonstra
 
 In addition, there is an `appsettings.json` configuration file stored in the `mycompany` Amazon S3 bucket named `config/appsettings.json`. Approximately every 30 minutes, that file is compared against the current configuration file. If they are different, the updated configuration file is downloaded from Amazon S3 and installed to the typical local location for the `appsettings.json` configuration file.
 
-```
+```json
 {
   "Sources": [
     {

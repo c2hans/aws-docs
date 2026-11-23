@@ -17,7 +17,7 @@ If you don’t care about the results (only that an operation completed), you ca
 
 The following is an example of making concurrent requests to Amazon S3 using the [headObject](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/head-object.html) operation to get the content size of two keys:
 
-```
+```kotlin
 import kotlinx.coroutines.async
 import kotlinx.coroutines.runBlocking
 import kotlin.system.measureTimeMillis

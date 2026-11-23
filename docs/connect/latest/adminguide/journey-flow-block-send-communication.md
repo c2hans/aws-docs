@@ -111,7 +111,7 @@ You can use an **Invoke Lambda** block earlier in the journey flow to determine 
 
 1. The Lambda function runs and returns a JSON response that includes the source value in a key of your choice. The expected format depends on the channel: for a voice call, return the phone number address in E.164 format; for SMS or WhatsApp, return the phone number ARN; for email, return the email address. For example, for a voice call:
 
-   ```
+   ```json
    {
      "sourcePhoneNumber": "+12025551234"
    }
@@ -159,7 +159,7 @@ The following image shows the **Pass attribute to contact** options configured t
 
 If you create the campaign flow by using the API or AWS CLI, add the attributes to the `Attributes` map under `Parameters` in the `PutDialRequest` action. Each entry maps a key to a static value or a reference. For more information, see [Create a campaign flow](create-campaigns-api-cli.md#create-campaigns-api-cli-flows).
 
-```
+```json
 {
   "Identifier": "PutDialRequest",
   "Type": "PutDialRequest",

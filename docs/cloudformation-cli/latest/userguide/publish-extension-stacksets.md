@@ -33,7 +33,7 @@ The same publishing restrictions apply when you use StackSets to publish extensi
 
 The following example template publishes a resource type across Regions with StackSets.
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: Registers and sets a new default resource version, registers the account as a publisher, and publishes the resource to the public registry.
 Parameters:
@@ -66,7 +66,7 @@ Resources:
 
 The following example template publishes a module across Regions with StackSets.
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: Registers and sets a new default module version, registers the account as a publisher, and publishes the module to the public registry with the given public version.
 Parameters:

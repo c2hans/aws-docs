@@ -30,7 +30,7 @@ SYS\_COPY\_REPLACEMENTS is visible to all users. Superusers can see all rows; re
 
 The following example returns replacements for the most recent COPY operation.
 
-```
+```sql
 select query_idp, table_id, file_name, line_number, colname
 from sys_copy_replacements
 where query = pg_last_copy_id();

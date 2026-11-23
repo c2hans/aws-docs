@@ -46,7 +46,7 @@ You can specify an optional timeout for the presigned URL. For more information,
 1. On the **Trust Relationships** tab, choose **Edit Trust Relationship** and replace the policy document with the following JSON. Choose **Update Trust Policy**.
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -68,7 +68,7 @@ You can specify an optional timeout for the presigned URL. For more information,
 **Important**
 Your `aws:SourceArn` must comply with the format: `arn:aws:iot:{{region}}:{{account-id}}:*`. Make sure that {{region}} matches your AWS IoT Region and {{account-id}} matches your customer account ID. For more information, see [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md).
 
-   ```
+   ```JSON
    {
      "Effect": "Allow",
      "Statement": [
@@ -95,7 +95,7 @@ Your `aws:SourceArn` must comply with the format: `arn:aws:iot:{{region}}:{{acco
 1. If your job uses a job document that's an Amazon S3 object, choose **Permissions** and use the following JSON. This adds a policy that grants permission to download files from your Amazon S3 bucket:
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -113,7 +113,7 @@ Your `aws:SourceArn` must comply with the format: `arn:aws:iot:{{region}}:{{acco
 
 If your devices need to upload files to an Amazon S3 bucket during a job deployment, then you can include the following presigned URL placeholder in your job document:
 
-```
+```JSON
 ${aws:iot:s3-presigned-url-upload:https://s3.region.amazonaws.com/{{<bucket>}}/{{<key>}}}
 ```
 
@@ -138,7 +138,7 @@ Refer to the following examples for a before and during look of the Amazon S3 pr
 
 **Amazon S3 Presigned URL placeholder (Before Job Deployment)**
 
-```
+```JSON
 //Virtual-hosted style URL
 ${aws:iot:s3-presigned-url-v2:https://{{bucket-name}}.s3.{{region-code}}.amazonaws.com/{{key-name}}%3FversionId%3D{{version-id}}}
 
@@ -148,7 +148,7 @@ ${aws:iot:s3-presigned-url-v2:https://s3.{{region-code}}.amazonaws.com/{{bucket-
 
 **Amazon S3 Presigned URL (During Job Deployment)**
 
-```
+```JSON
 //Virtual-hosted style URL
 ${aws:iot:s3-presigned-url-v2:https://{{sample-bucket-name}}.s3.{{us-west-2}}.amazonaws.com/{{sample-code-file.png}}%3FversionId%3D{{version1}}}
 

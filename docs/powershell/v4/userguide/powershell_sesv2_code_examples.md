@@ -28,7 +28,7 @@ The following code example shows how to use `Send-SES2Email`.
 **Tools for PowerShell V4**
 **Example 1: This example shows how to send a standard email message.**
 
-```
+```powershell
 Send-SES2Email -FromEmailAddress "sender@example.com" -Destination_ToAddress "recipient@example.com" -Subject_Data "Email Subject" -Text_Data "Email Body"
 ```
 +  For API details, see [SendEmail](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.

@@ -51,7 +51,8 @@ Content-type: application/json
    ],
    "authorizerConfiguration": { ... },
    "capacityProviderConfiguration": {
-      "capacityProviderArn": "string"
+      "capacityProviderArn": "string",
+      "operatingSystemConfiguration": { ... }
    },
    "createdAt": "string",
    "description": "string",

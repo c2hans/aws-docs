@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/tool-use-results.h
 
 Once the tool has been invoked by the application, the final step is to provide the tool result to the model. This is done by returning a tool result with the ID of the tool call and the response content. This content follows the [ToolResultBlock](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ToolResultBlock.html) schema:
 
-```
+```JSON
 {
     "toolResult": {
         "toolUseId": tool['toolUseId'],
@@ -24,7 +24,7 @@ Refer to the [ToolResultContentBlock](https://docs.aws.amazon.com/bedrock/latest
 
 Here is an example of how to use the Converse API to return the tool results:
 
-```
+```JSON
 messages.append({
     "role": "user",
     "content": [

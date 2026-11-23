@@ -115,7 +115,7 @@ Retrieves information about the communication requirements and options that are 
 #### POST schema
 <a name="apps-application-id-campaigns-request-body-post-example"></a>
 
-```
+```json
 {
   "TreatmentName": "string",
   "TreatmentDescription": "string",
@@ -586,7 +586,7 @@ Retrieves information about the communication requirements and options that are 
 #### CampaignsResponse schema
 <a name="apps-application-id-campaigns-response-body-campaignsresponse-example"></a>
 
-```
+```json
 {
   "Item": [
     {
@@ -1075,7 +1075,7 @@ Retrieves information about the communication requirements and options that are 
 #### CampaignResponse schema
 <a name="apps-application-id-campaigns-response-body-campaignresponse-example"></a>
 
-```
+```json
 {
   "TreatmentName": "string",
   "TreatmentDescription": "string",
@@ -1559,7 +1559,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-campaigns-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

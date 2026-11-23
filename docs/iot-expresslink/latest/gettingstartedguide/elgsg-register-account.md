@@ -43,7 +43,7 @@ To create an AWS IoT thing and add it to your account you must retrieve the AWS 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

@@ -496,7 +496,20 @@ Content-type: application/json
                      "comparison": "string",
                      "value": "string"
                   },
+                  "purlQualifier": {
+                     "comparison": "string",
+                     "key": "string",
+                     "value": "string"
+                  },
                   "release": {
+                     "comparison": "string",
+                     "value": "string"
+                  },
+                  "runtimeReachability": {
+                     "comparison": "string",
+                     "value": "string"
+                  },
+                  "runtimeReachabilityReason": {
                      "comparison": "string",
                      "value": "string"
                   },

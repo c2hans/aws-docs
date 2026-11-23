@@ -52,7 +52,6 @@ Policy actions in OpenSearch Memory use the prefix `osm`. Each API operation has
 
 Some operations require more than one action:
 + [CreateSpace](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_CreateSpace.html) with tags also requires `osm:TagResource`.
-+ [CreateEvent](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_CreateEvent.html) with a `blob` payload also requires `s3:GetObject` on the object, and `kms:Decrypt` on the object's key if the object uses SSE-KMS. OpenSearch Memory reads the object with your credentials.
 + Operations on a space with a customer managed key also require AWS KMS permissions. For more information, see [Permissions required for a customer managed key](memory-data-protection.md#memory-encryption-permissions).
 
 ## Policy resources for OpenSearch Memory
@@ -96,7 +95,7 @@ The session IDs in the request. Operations: `CreateEvent`, [GetEvent](https://do
 `osm:strategyName`
 The memory strategy names in the request. Operations: [CreateMemory](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_CreateMemory.html), [GetMemory](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_GetMemory.html), [ListMemories](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_ListMemories.html), [SearchMemories](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_SearchMemories.html), [UpdateMemory](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_UpdateMemory.html), [DeleteMemory](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_DeleteMemory.html)
 
-These keys are multivalued. Use them with the `ForAllValues` or `ForAnyValue` set operators. If a request doesn't include a value for the key, a `ForAllValues` condition on that key matches, so a policy that must require the value also needs a `Null` condition. For an example, see [Limiting a principal to one actor's memories](#security_iam_id-based-policy-examples-memory-actor).
+These keys are multivalued. Use them with the `ForAllValues` or `ForAnyValue` set operators. When you use `osm:actorId`, `osm:sessionId`, or `osm:strategyName` in a policy, also add a `Null` condition that sets the key to `false`, for example `"Null": {"osm:actorId": "false"}`. Without it, requests that leave out the value get through. A `ForAllValues` condition on a missing key matches, so an `Allow` statement allows the request. A `ForAnyValue` condition on a missing key doesn't match, so a `Deny` statement doesn't deny it. For an example, see [Limiting a principal to one actor's memories](#security_iam_id-based-policy-examples-memory-actor).
 
 For the operations that act on one event or memory by ID, the condition keys come from the optional `actorId`, `sessionId`, and `strategyName` request parameters. OpenSearch Memory also checks that the stored record matches the values in the request and returns `ResourceNotFoundException` if it doesn't. For more information, see [Checking an event's owner](memory-events.md#memory-events-owner).
 
@@ -165,7 +164,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 The following policy grants the permissions that [Getting started with Amazon OpenSearch Memory](memory-getting-started.md) uses. Replace `us-east-1` and `111122223333` with your Region and account ID.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -188,7 +187,7 @@ The following policy grants the permissions that [Getting started with Amazon Op
 
 The following policy lets a user create, view, update, tag, and delete the spaces in one Region of your account. It doesn't grant access to the events and memories in the spaces.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -215,7 +214,7 @@ The following policy lets a user create, view, update, tag, and delete the space
 
 The following policy lets an application role send events and search memories in one space, but not change the space itself.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -236,7 +235,7 @@ The following policy lets an application role send events and search memories in
 
 The following policy lets a principal read only the memories of the actor `user-123` in one space. The `Null` condition makes the statement apply only to requests that specify an actor. Use this pattern when each end user of your application has their own credentials, for example through Amazon Cognito identity pools, with the actor ID taken from the user's identity.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -258,7 +257,7 @@ The following policy lets a principal read only the memories of the actor `user-
 
 The following policy lets a user create spaces only with the tag `team=search` and no other tags. Creating a space with tags requires both `osm:CreateSpace` and `osm:TagResource`.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/example-html-app.html
 
 This section provides the code for the HTML5 client described in [Python example (HTML5 Client and Python Server)](examples-python.md).
 
-```
+```html
 <html>
 
 <head>

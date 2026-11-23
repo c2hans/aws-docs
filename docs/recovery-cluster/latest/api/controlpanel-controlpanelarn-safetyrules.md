@@ -67,7 +67,7 @@ List the safety rules (the assertion rules and gating rules) that you've defined
 #### ListSafetyRulesResponse schema
 <a name="controlpanel-controlpanelarn-safetyrules-response-body-listsafetyrulesresponse-example"></a>
 
-```
+```json
 {
   "NextToken": "string",
   "SafetyRules": [
@@ -115,7 +115,7 @@ List the safety rules (the assertion rules and gating rules) that you've defined
 #### ValidationException schema
 <a name="controlpanel-controlpanelarn-safetyrules-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -124,7 +124,7 @@ List the safety rules (the assertion rules and gating rules) that you've defined
 #### AccessDeniedException schema
 <a name="controlpanel-controlpanelarn-safetyrules-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -133,7 +133,7 @@ List the safety rules (the assertion rules and gating rules) that you've defined
 #### ResourceNotFoundException schema
 <a name="controlpanel-controlpanelarn-safetyrules-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -142,7 +142,7 @@ List the safety rules (the assertion rules and gating rules) that you've defined
 #### ThrottlingException schema
 <a name="controlpanel-controlpanelarn-safetyrules-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -151,7 +151,7 @@ List the safety rules (the assertion rules and gating rules) that you've defined
 #### InternalServerException schema
 <a name="controlpanel-controlpanelarn-safetyrules-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

@@ -45,7 +45,7 @@ The values returned are as follows.
 
 The following SQL converts a well-known text (WKT) representation of a polygon and returns the `GEOMETRY` subtype as a string.
 
-```
+```sql
 SELECT GeometryType(ST_GeomFromText('POLYGON((0 2,1 1,0 -1,0 2))'));
 ```
 

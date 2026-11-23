@@ -6,7 +6,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
 # FunctionRunAsConfig
 
-```
+```json
 {
 "Uid": 1001,
 "Gid": 1002

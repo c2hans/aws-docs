@@ -59,7 +59,7 @@ To create an asset from an asset model, use the [CreateAsset](https://docs.aws.a
 **To create an asset (AWS CLI)**
 + Run the following command to create an asset. Replace {{asset-name}} with a name for the asset and {{asset-model-id}} with the ID or the external ID of the asset model.
 
-  ```
+  ```bash
   aws iotsitewise create-asset \
     --asset-name {{asset-name}} \
     --asset-model-id {{asset-model-id}}
@@ -67,7 +67,7 @@ To create an asset from an asset model, use the [CreateAsset](https://docs.aws.a
 
   The operation returns a response that contains your new asset's details and status in the following format.
 
-  ```
+  ```json
   {
     "assetId": "{{String}}",
     "assetArn": "{{String}}",

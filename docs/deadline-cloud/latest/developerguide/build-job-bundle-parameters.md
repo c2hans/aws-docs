@@ -10,7 +10,7 @@ You can define the job template in either YAML format (`parameter_values.yaml`) 
 
 In YAML, the format of the file is:
 
-```
+```yaml
 parameterValues:
 - name: <string>
   value: <integer>, <float>, or <string>
@@ -41,7 +41,7 @@ deadline bundle gui-submit blender_render/
 
 The new job bundle contains a `parameter_values.yaml` file that contains the specified parameters:
 
-```
+```yaml
 % cat ~/.deadline/job_history/\(default\)/2024-06/2024-06-20-01-JobBundle-Demo/parameter_values.yaml
 parameterValues:
 - name: deadline:targetTaskRunStatus

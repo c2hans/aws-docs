@@ -28,7 +28,7 @@ This policy grants full access to Partner Central opportunity management actions
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -101,7 +101,7 @@ If the managed policies don't meet your needs, create custom IAM policies that g
 **Example of custom policy**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -126,7 +126,7 @@ This policy provides broad access to Partner Central selling actions, including 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":

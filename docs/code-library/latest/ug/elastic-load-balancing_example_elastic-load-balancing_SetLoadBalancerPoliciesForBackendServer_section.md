@@ -43,12 +43,12 @@ For more information, see [Configure proxy protocol for your Classic Load Balanc
 **Tools for PowerShell V4**
 **Example 1: This example replaces the policies for the specified port with the specified policy.**
 
-```
+```powershell
 Set-ELBLoadBalancerPolicyForBackendServer -LoadBalancerName my-load-balancer -InstancePort 80 -PolicyName my-ProxyProtocol-policy
 ```
 **Example 2: This example removes all policies associated with the specified port.**
 
-```
+```powershell
 Set-ELBLoadBalancerPolicyForBackendServer -LoadBalancerName my-load-balancer -InstancePort 80
 ```
 +  For API details, see [SetLoadBalancerPoliciesForBackendServer](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -56,12 +56,12 @@ Set-ELBLoadBalancerPolicyForBackendServer -LoadBalancerName my-load-balancer -In
 **Tools for PowerShell V5**
 **Example 1: This example replaces the policies for the specified port with the specified policy.**
 
-```
+```powershell
 Set-ELBLoadBalancerPolicyForBackendServer -LoadBalancerName my-load-balancer -InstancePort 80 -PolicyName my-ProxyProtocol-policy
 ```
 **Example 2: This example removes all policies associated with the specified port.**
 
-```
+```powershell
 Set-ELBLoadBalancerPolicyForBackendServer -LoadBalancerName my-load-balancer -InstancePort 80
 ```
 +  For API details, see [SetLoadBalancerPoliciesForBackendServer](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

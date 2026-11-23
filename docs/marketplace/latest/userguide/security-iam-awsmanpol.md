@@ -90,6 +90,7 @@ This policy grants administrative permissions that allow full access to all sell
 
 This policy includes the following permissions:
 + `aws-marketplace` – Allows principals to manage change sets, entities, agreements, and seller dashboards.
++ `aws-marketplace` – Allows principals to create, retrieve, list, and delete data subscriptions that deliver seller insights datasets to an Amazon S3 bucket in their account.
 + `aws-marketplace` – Allows principals to search and view purchase agreements and their terms where the user is the seller.
 + `aws-marketplace` – Allows principals to view the contact information captured on purchase agreements.
 + `aws-marketplace` – Allows principals to send, retrieve, list, and cancel agreement payment requests for purchase agreements.
@@ -111,7 +112,8 @@ This policy includes the following permissions:
 + `vendor-insights` – Allows principals to retrieve and list data sources, security profiles, and snapshots.
 + `payments` – Allows principals to retrieve, create, and delete payment instruments.
 + `tax` – Allows principals to manage tax interviews, registrations, and retrieve tax documents.
-+ `support` – Allows principals to create support cases.
++ `support` – Allows principals to create, view, search, reply to, and resolve Support cases, and add attachments to them. This access applies to every Support case in the account, not only cases about AWS Marketplace.
++ `support-console` – Allows principals to view the Support Center console.
 + `q` – Allows principals to use Amazon Q Partner Assistant for conversations and requests.
 + `partnercentral` – Allows principals to start and retrieve seller verification status.
 + `partnercentral` – Grants permission to view the partner account connections for the principal's account, including subsidiary connections, so that a principal can select a subsidiary account when creating a subsidiary authorization. This permission is read-only: it doesn't grant permission to create, accept, reject, or cancel a connection or a connection invitation.
@@ -133,6 +135,8 @@ This policy grants `partnercentral` permission to view the partner account conne
 This policy also grants `aws-marketplace` permissions to publish, view, and tag the deployment configuration for products, and to view and list the jobs that publish it.
 
 This policy also grants `aws-marketplace` permission to start assessments of entities in AWS Marketplace catalogs.
+
+This policy also grants `support` permission to create, view, search, reply to, and resolve Support cases, and add attachments to them, and `support-console` permission to view the Support Center console. This access applies to every Support case in the account, not only cases about AWS Marketplace.
 
 To view the permissions for this policy, see [AWSMarketplaceSellerProductsFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerProductsFullAccess.html) in the *AWS Managed Policy Reference*.
 
@@ -166,6 +170,7 @@ This policy includes the following permissions:
 + `aws-marketplace` – Allows principals to view the contact information captured on purchase agreements.
 + `aws-marketplace` – Allows principals to track invoice line items, billing adjustments, and cancellation requests for purchase agreements.
 + `s3` – Allows principals to upload objects to the AWS Marketplace ephemeral file upload bucket scoped to the caller's account.
++ `support` and `support-console` – Allows principals to create, view, search, reply to, and resolve Support cases, add attachments to them, and view the Support Center console. This access applies to every Support case in the account, not only cases about AWS Marketplace.
 
 To view the permissions for this policy, see [AWSMarketplaceSellerOfferManagement](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerOfferManagement.html) in the *AWS Managed Policy Reference*.
 
@@ -196,6 +201,8 @@ You can attach the `AWSVendorInsightsVendorFullAccess` policy to your IAM identi
 
 This policy grants full access to create and manage all resources on AWS Marketplace Vendor Insights. In AWS Marketplace Vendor Insights, an assessor is equal to a buyer, and a vendor is equal to a seller for the purposes of this guide.
 
+This policy also grants `support` permission to create, view, search, reply to, and resolve Support cases, and add attachments to them, and `support-console` permission to view the Support Center console. This access applies to every Support case in the account, not only cases about AWS Marketplace Vendor Insights.
+
 To view the permissions for this policy, see [AWSVendorInsightsVendorFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSVendorInsightsVendorFullAccess.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSVendorInsightsVendorReadOnly
@@ -214,6 +221,7 @@ View details about updates to AWS managed policies for AWS Marketplace since thi
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [AWSMarketplaceSellerFullAccess](#security-iam-awsmanpol-awsmarketplacesellerfullaccess) – Update to an existing policy | AWS Marketplace added permissions to create, view, list, and delete data subscriptions (`aws-marketplace:CreateDataSubscription`, `aws-marketplace:GetDataSubscription`, `aws-marketplace:ListDataSubscriptions`, and `aws-marketplace:DeleteDataSubscription`) to the `MarketplaceManagement` statement. Data subscriptions deliver seller insights datasets to an Amazon S3 bucket in your account. | November 19, 2026 |
 | [AWSMarketplaceSellerFullAccess](#security-iam-awsmanpol-awsmarketplacesellerfullaccess) – Update to an existing policy | AWS Marketplace added permissions to publish and view product deployment configurations (`aws-marketplace:StartDeploymentConfigurationJob`, `GetDeploymentConfigurationJob`, `ListDeploymentConfigurationJobs`, and `GetDeploymentConfiguration`). Tag management now also applies to deployment configuration resources.<br />AWS Marketplace added the `aws-marketplace:GetAgreementContacts` read-only action to view contact information for purchase agreements.<br />AWS Marketplace added a new `MarketplaceStartAssessment` statement with `aws-marketplace:StartAssessment` permission to start assessments of entities in AWS Marketplace catalogs. | November 18, 2026 |
 | [AWSMarketplaceSellerProductsFullAccess](#security-iam-awsmanpol-awsmarketplacesellerproductsfullaccess) – Update to an existing policy | AWS Marketplace added permissions to publish and view product deployment configurations (`aws-marketplace:StartDeploymentConfigurationJob`, `GetDeploymentConfigurationJob`, `ListDeploymentConfigurationJobs`, and `GetDeploymentConfiguration`). Tag access now also applies to deployment configuration resources.<br />AWS Marketplace added `aws-marketplace:StartAssessment` to the `MarketplaceResourceAccess` statement to start assessments of entities in AWS Marketplace catalogs. | November 18, 2026 |
 | [AWSMarketplaceSellerProductsReadOnly](#security-iam-awsmanpol-awsmarketplacesellerproductsreadonly) – Update to an existing policy | AWS Marketplace added read-only permissions to view product deployment configurations and their publishing jobs (`aws-marketplace:GetDeploymentConfiguration`, `GetDeploymentConfigurationJob`, and `ListDeploymentConfigurationJobs`), and to list tags on deployment configuration resources. | November 18, 2026 |

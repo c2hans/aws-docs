@@ -9,7 +9,7 @@ These steps do not apply to nucleus lite.
 
 The Greengrass CLI can take up to a minute to deploy. Run the following command to check the status of the deployment. Replace {{MyGreengrassCore}} with the name of your core device.
 
-```
+```bash
 aws greengrassv2 list-effective-deployments --core-device-thing-name {{MyGreengrassCore}}
 ```
 
@@ -18,21 +18,21 @@ The `coreDeviceExecutionStatus` indicates the status of the deployment to the co
 ------
 #### [ Linux or Unix ]
 
-```
+```bash
 {{/greengrass/v2}}/bin/greengrass-cli help
 ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-```
+```cmd
 {{C:\greengrass\v2}}\bin\greengrass-cli help
 ```
 
 ------
 #### [ PowerShell ]
 
-```
+```ps
 {{C:\greengrass\v2}}\bin\greengrass-cli help
 ```
 
@@ -48,7 +48,7 @@ You can also run the following command to manually deploy the AWS IoT Greengrass
 ------
 #### [ Linux, macOS, or Unix ]
 
-```
+```bash
 aws greengrassv2 create-deployment \
   --target-arn "arn:aws:iot:{{region}}:{{account-id}}:thing/{{MyGreengrassCore}}" \
   --components '{
@@ -61,7 +61,7 @@ aws greengrassv2 create-deployment \
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-```
+```bash
 aws greengrassv2 create-deployment ^
   --target-arn "arn:aws:iot:{{region}}:{{account-id}}:thing/{{MyGreengrassCore}}" ^
   --components "{\"aws.greengrass.Cli\":{\"componentVersion\":\"2.18.4\"}}"
@@ -70,7 +70,7 @@ aws greengrassv2 create-deployment ^
 ------
 #### [ PowerShell ]
 
-```
+```bash
 aws greengrassv2 create-deployment `
   --target-arn "arn:aws:iot:{{region}}:{{account-id}}:thing/{{MyGreengrassCore}}" `
   --components '{\"aws.greengrass.Cli\":{\"componentVersion\":\"2.18.4\"}}'

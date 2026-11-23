@@ -53,7 +53,7 @@ Follow these instructions to create the read-only IAM role for Diagnostic Tools 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -276,7 +276,7 @@ Follow these instructions to create the read-only IAM role for Diagnostic Tools 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [{

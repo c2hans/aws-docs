@@ -8,14 +8,14 @@ Use the [`DescribeTrainingPlanExtensionHistory`](https://docs.aws.amazon.com/sag
 
 The following example uses an AWS CLI command to retrieve the extension history.
 
-```
+```sh
 aws sagemaker describe-training-plan-extension-history \
 --training-plan-arn "arn:aws:sagemaker:{{us-east-2}}:{{123456789012}}:training-plan/{{my-training-plan}}"
 ```
 
 This JSON document is a sample response from the SageMaker training plans API. The response includes a paginated list of all extensions for the training plan.
 
-```
+```JSON
 {
     "TrainingPlanExtensions": [
         {

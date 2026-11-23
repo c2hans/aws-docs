@@ -50,7 +50,7 @@ You can install version 4.*x* of the Java client-side encryption library for Dyn
 **Using Apache Maven**
 The Amazon DynamoDB Encryption Client for Java is available through [Apache Maven](https://maven.apache.org/) with the following dependency definition.
 
-```
+```xml
 <dependency>
   <groupId>software.amazon.cryptography</groupId>
   <artifactId>aws-database-encryption-sdk-dynamodb</artifactId>
@@ -61,7 +61,7 @@ The Amazon DynamoDB Encryption Client for Java is available through [Apache Mave
 **Using Gradle Kotlin**
 You can use [Gradle](https://gradle.org/) to declare a dependency on The Amazon DynamoDB Encryption Client for Java by adding the following to the *dependencies* section of your Gradle project.
 
-```
+```kotlin
 implementation("software.amazon.cryptography:aws-database-encryption-sdk-dynamodb:{{version-number}}")
 ```
 

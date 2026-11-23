@@ -8,7 +8,7 @@ The following example shows a simple rule that would be evaluated to `true` if "
 
 To learn how to use conditions correctly, we recommend creating a new rule in the Connect Customer console, and then calling the [DescribeRule](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeRule.html) API for it.
 
-```
+```json
 {
   "Version": "2022-11-25", // A string representing the version of the rule. Currently the only supported version is 2022-11-25.
   "RuleFunction": { // RuleFunction object body

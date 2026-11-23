@@ -250,7 +250,7 @@ Save the following JSON or YAML code as a separate file to use as the CloudForma
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
 
@@ -411,7 +411,7 @@ Save the following JSON or YAML code as a separate file to use as the CloudForma
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: '[AWSDocs] EventBridge: pipes-get-started'
 Parameters:

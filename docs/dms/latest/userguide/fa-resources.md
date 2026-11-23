@@ -156,7 +156,7 @@ To make sure that your data collector works correctly and uploads the collected 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -201,7 +201,7 @@ To make sure that your data collector works correctly and uploads the collected 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -269,7 +269,7 @@ To make sure that your data collector works correctly and uploads the collected 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -338,7 +338,7 @@ The minimum required permissions to create the service-linked role are specified
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

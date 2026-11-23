@@ -47,13 +47,13 @@ When we publish a new version of the AL2023 repositories, all previous versions 
 
 1. Discover available repository versions by running the following command.
 
-   ```
+   ```sh
    $ sudo dnf check-release-update
    ```
 
 1. Select a version by running the following command.
 
-   ```
+   ```sh
    $ sudo dnf upgrade --releasever={{version}}
    ```
 

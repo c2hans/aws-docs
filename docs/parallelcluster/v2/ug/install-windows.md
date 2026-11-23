@@ -37,7 +37,7 @@ If you use Python version 3\+, we recommend that you use the `pip3` command.
 
 1. Use the following commands to verify that Python and `pip` are both installed correctly.
 
-   ```
+   ```cmd
    C:\>py --version
    Python 3.8.11
    C:\>pip3 --version
@@ -46,20 +46,20 @@ If you use Python version 3\+, we recommend that you use the `pip3` command.
 
 1. Install AWS ParallelCluster using `pip`.
 
-   ```
+   ```cmd
    C:\>pip3 install "aws-parallelcluster<3.0"
    ```
 
 1. Verify that AWS ParallelCluster is installed correctly.
 
-   ```
+   ```cmd
    C:\>pcluster version
    2.11.9
    ```
 
 To upgrade to the latest version, run the installation command again.
 
-```
+```cmd
 C:\>pip3 install --user --upgrade "aws-parallelcluster<3.0"
 ```
 
@@ -70,7 +70,7 @@ After installing AWS ParallelCluster with `pip`, add the `pcluster` program to y
 
 You can find where the `pcluster` program is installed by running the following command.
 
-```
+```cmd
 C:\>where pcluster
 C:\Python38\Scripts\pcluster.exe
 ```

@@ -28,7 +28,7 @@ Use the following instructions to reference a GitHub output parameter.
 
    **Example**
 
-   ```
+   ```yaml
    BuildActionB:
      Identifier: aws/build@v1
      Configuration:
@@ -39,7 +39,7 @@ Use the following instructions to reference a GitHub output parameter.
 **Example with context**
 The following example shows you how to set a `SELECTEDCOLOR` variable in `GitHubActionA`, output it, and then refer to it in `BuildActionB`.
 
-   ```
+   ```yaml
    Actions:
      GitHubActionA:
        Identifier: aws/github-actions-runner@v1

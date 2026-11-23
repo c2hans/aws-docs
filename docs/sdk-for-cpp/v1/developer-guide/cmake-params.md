@@ -8,7 +8,7 @@ Use the [CMake](https://cmake.org/) parameters listed in this section to customi
 
 You can set these options with CMake GUI tools or the command line by using *-D*. For example:
 
-```
+```cpp
 cmake -DENABLE_UNITY_BUILD=ON -DREGENERATE_CLIENTS=1
 ```
 
@@ -67,7 +67,7 @@ Use these parameters when building the SDK source code for the SDK for C\+\+ its
 
 Builds any arbitrary clients based on the API definition. Place your definition in the `code-generation/api-definitions` folder, and then pass this argument to ** `cmake` **. The ** `cmake` ** configure step generates your client and includes it as a subdirectory in your build. This is particularly useful to generate a C\+\+ client for using one of your [API Gateway](https://aws.amazon.com/api-gateway) services. For example:
 
-```
+```cpp
 -DADD_CUSTOM_CLIENTS="serviceName=myCustomService,version=2015-12-21;serviceName=someOtherService,version=2015-08-15"
 ```
 
@@ -156,7 +156,7 @@ Default
 
 Builds only the clients you want to use. If set to a high-level SDK such as `aws-cpp-sdk-transfer`, *BUILD\_ONLY* resolves any low-level client dependencies. It also builds integration and unit tests related to the projects you select, if they exist. This is a list argument, with values separated by semicolon (`;`) characters. For example:
 
-```
+```cpp
 -DBUILD_ONLY="s3;cognito-identity"
 ```
 
@@ -380,7 +380,7 @@ Generates build artifacts, such as Visual Studio solutions and Xcode projects.
 
 For example, on Windows:
 
-```
+```cpp
 -G "Visual Studio 12 Win64"
 ```
 
@@ -424,7 +424,7 @@ Default
 
 If `ON`, this parameter deletes all generated code and generates the client directories from the `code-generation/api-definitions` folder. For example:
 
-```
+```cpp
 -DREGENERATE_CLIENTS=1
 ```
 
@@ -436,7 +436,7 @@ To use the `REGENERATE_CLIENTS` parameter, you must have [Python 2.7](https://ww
 
 If `ON`, this parameter deletes all generated defaults code and generates it again from the `code-generation/defaults` folder. For example:
 
-```
+```cpp
 -DREGENERATE_DEFAULTS=1
 ```
 

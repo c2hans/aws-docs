@@ -129,7 +129,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-stack-access-duration-override-managed-automation-ex-min"></a>
 
-```
+```json
 {
     "TimeRequestedInHours": 120
 }
@@ -138,7 +138,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-managed-stack-access-duration-override-managed-automation-ex-max"></a>
 
-```
+```json
 {
     "TimeRequestedInHours": 15,
     "Priority": "High"

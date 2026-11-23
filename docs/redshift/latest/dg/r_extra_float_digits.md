@@ -21,7 +21,7 @@ Sets the number of digits displayed for floating-point values, including float4 
 
 The following example sets `extra_float_digits` to `-2`. First, show the current parameter setting.
 
-```
+```sql
 show all;
       name                      | setting
 --------------------------+----------------
@@ -37,13 +37,13 @@ wlm_query_slot_count      | 1
 
 Then, set the new value to `-2`.
 
-```
+```sql
 set extra_float_digits to -2;
 ```
 
 Finally show the updated parameter setting.
 
-```
+```sql
 show all;
       name                      | setting
 --------------------------+----------------

@@ -95,7 +95,7 @@ If your destination bucket in Amazon S3 is set to require all data uploads to be
 
 ****
 
-```
+```json
 {
         "Version":"2012-10-17",
         "Id": "PutObjectPolicy",
@@ -287,7 +287,7 @@ This tutorial provides guidance for the backend-only version. For more details, 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

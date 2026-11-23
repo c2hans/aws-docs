@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 + **Monitor scaling metrics:** Examine the Throttle Reasons graph to understand the reason for throttles and capacity scaling issues. In the following example, high CPU is causing throttles.
 + **Review function configuration:** Ensure your function memory and vCPU settings support multi-concurrent executions. Increase function memory or vCPU allocation if needed. If `ExecutionEnvironmentVCPUUtilization` is high, try adding more vCPU per function.
 
-  ```
+  ```bash
   aws lambda update-function \
     --function-name my-function \
     ...
@@ -27,7 +27,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 
   If `ExecutionEnvironmentMemoryUtilization` is high, try adding more memory per vCPU:
 
-  ```
+  ```bash
   aws lambda update-function \
     --function-name my-function \
     --capacity-provider-config '{
@@ -47,7 +47,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 **Solutions:**
 + **Adjust target resource utilization:** If your workload has predictable traffic patterns, set a lower target resource utilization to maintain additional headroom for traffic bursts.
 
-  ```
+  ```bash
   aws lambda create-capacity-provider \
     --name my-capacity-provider \
     ...
@@ -63,7 +63,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
   ```
 + **Pre-warm capacity:** For planned traffic increases, use the `PutFunctionScalingConfig` API to pre-warm additional capacity.
 
-  ```
+  ```bash
   aws lambda put-function-scaling-config \
     --function-name my-function \
     --qualifier 1 \
@@ -102,7 +102,7 @@ For how to query these events, see [Autoscaling logs](lambda-managed-instances-m
 Check the `Autoscaling` warnings in the capacity provider system logs. Each warning names the limit that blocked scaling. For how to find these events, see [Autoscaling logs](lambda-managed-instances-monitoring-system-logs-usage.md#lambda-managed-instances-system-logs-usage-autoscaling). Then follow the guidance for the warning that you see:
 + `Scale-out blocked: function's maximum execution environments reached.` Increase the function version's maximum execution environments. In the following example, replace {{my-function}} and the qualifier with your function name and version, and set the minimum and maximum that you need:
 
-  ```
+  ```bash
   aws lambda put-function-scaling-config \
     --function-name my-function \
     --qualifier 1 \
@@ -114,7 +114,7 @@ Check the `Autoscaling` warnings in the capacity provider system logs. Each warn
 + `Scale-in blocked: function's minimum execution environments reached.` This is expected when traffic is low. To run fewer execution environments, lower the minimum.
 + `Scale-out blocked: capacity provider's maximum vCPU reached.` Increase `MaxVCpuCount` on the capacity provider, or move some functions to another capacity provider. In the following example, replace {{my-capacity-provider}} with the name of your capacity provider and {{800}} with the maximum number of vCPUs that you need:
 
-  ```
+  ```bash
   aws lambda update-capacity-provider \
     --capacity-provider-name my-capacity-provider \
     --capacity-provider-scaling-config ScalingMode=Auto,MaxVCpuCount=800
@@ -136,7 +136,7 @@ For more information about scaling controls, see [Scaling Lambda Managed Instanc
 **Solutions:**
 + **Increase maximum concurrency:** If your function invocations use very little CPU, increase the maximum concurrency setting up to 64 per vCPU.
 
-  ```
+  ```bash
   aws lambda update-function \
     --function-name ordering-api-backend \
     --capacity-provider-config '{

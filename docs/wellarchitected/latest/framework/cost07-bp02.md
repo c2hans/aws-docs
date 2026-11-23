@@ -37,6 +37,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost07-
 
 ![Comparison matrix scoring candidate AWS Regions across compliance, latency, service availability, and cost.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/region-feature-matrix.png)
 
+*Region comparison matrix across compliance, latency, service availability, and cost*
+
  In Figure 1, Region 6 is the strongest option because latency is low, the required service is available, and it is the cheapest qualifying Region.
 
 ### Implementation steps

@@ -60,7 +60,7 @@ For best practices information on configuring permissions to allow creation of s
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -121,7 +121,7 @@ For best practices information on configuring permissions to allow creation of s
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -237,7 +237,7 @@ Complete the following procedure to create a custom inline policy to have the ne
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

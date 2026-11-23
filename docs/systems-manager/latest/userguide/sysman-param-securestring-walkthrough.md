@@ -15,7 +15,7 @@ This walkthrough assumes that you already specified your domain name and DNS ser
 
    In the following commands, replace each {{user input placeholder}} with your own information.
 
-   ```
+   ```powershell
    Write-SSMParameter -Name "{{domainName}}" -Value "{{DOMAIN-NAME}}" -Type String
    Write-SSMParameter -Name "{{domainJoinUserName}}" -Value "{{DOMAIN\USERNAME}}" -Type String
    Write-SSMParameter -Name "{{domainJoinPassword}}" -Value "{{PASSWORD}}" -Type SecureString
@@ -44,7 +44,7 @@ Using CloudWatch and EventBridge features is optional, but we recommend setting 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -66,7 +66,7 @@ Using CloudWatch and EventBridge features is optional, but we recommend setting 
 
 1. Copy and paste the following json text into a text editor and save the file as `JoinInstanceToDomain.json` in the following location: `c:\temp\JoinInstanceToDomain.json`.
 
-   ```
+   ```json
    {
        "schemaVersion": "2.2",
        "description": "Run a PowerShell script to securely join a Windows Server instance to a domain",
@@ -98,14 +98,14 @@ Using CloudWatch and EventBridge features is optional, but we recommend setting 
 
 1. Run the following command in Tools for Windows PowerShell to create a new SSM document.
 
-   ```
+   ```powershell
    $json = Get-Content C:\temp\JoinInstanceToDomain | Out-String
    New-SSMDocument -Name JoinInstanceToDomain -Content $json -DocumentType Command
    ```
 
 1. Run the following command in Tools for Windows PowerShell to join the node to the domain.
 
-   ```
+   ```powershell
    Send-SSMCommand -InstanceId {{instance-id}} -DocumentName JoinInstanceToDomain
    ```
 

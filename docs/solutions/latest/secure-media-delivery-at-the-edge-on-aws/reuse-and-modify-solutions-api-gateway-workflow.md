@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
 ![Diagram of API Gateway workflow: Reuse and modify workflow.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image22.png)
 
+*** API Gateway workflow: Reuse and modify ***
+
  To integrate your existing playback services with the API module provided in the solution, review the following steps:
 
 1.  Configure your playback services to include additional step of retrieving the token before serving playback URL back to the viewer and revoking compromised sessions. This is done through REST API calls for the API Gateway towards `/tokengenerate` and `/sessionrevoke` paths respectively. Make sure that your services communicating with API Gateway have the adequate IAM permission to invoke mentioned resource paths for the API created by the solution. You can find API ID in the CloudFormation output tab under the key which starts with: **ApiEndpointsApiEndpoint**. The API ID is a first fragment of the API hostname visible for that output in the form of `[API_id].execute-api.[region].amazonaws.com`. Example policy statement which can be used when calling API:
@@ -17,7 +19,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

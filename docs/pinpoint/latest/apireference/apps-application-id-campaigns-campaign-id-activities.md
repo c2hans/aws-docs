@@ -85,7 +85,7 @@ Retrieves information about the communication requirements and options that are 
 #### ActivitiesResponse schema
 <a name="apps-application-id-campaigns-campaign-id-activities-response-body-activitiesresponse-example"></a>
 
-```
+```json
 {
   "NextToken": "string",
   "Item": [
@@ -113,7 +113,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-campaigns-campaign-id-activities-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

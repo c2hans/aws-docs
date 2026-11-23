@@ -13,7 +13,7 @@ From TensorFlow 2.4.1 and PyTorch 1.8.1, SageMaker AI framework DLCs supports EF
 
 For example, if you use PyTorch, your Dockerfile should contain a `FROM` statement similar to the following:
 
-```
+```docker
 # SageMaker AI PyTorch image
 FROM 763104351884.dkr.ecr.{{<aws-region>}}.amazonaws.com/pytorch-training:{{<image-tag>}}
 

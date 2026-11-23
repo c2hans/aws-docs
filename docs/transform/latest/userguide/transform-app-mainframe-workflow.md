@@ -146,7 +146,7 @@ In Regions where S3 vector buckets are available, AWS Transform will store searc
 
 After your connector is configured, add the following CORS policy to your S3 bucket so you can view and compare artifacts directly in the AWS Transform console. If this policy is not set up correctly, you might not be able to use the inline viewing or file comparison functionalities of AWS Transform.
 
-```
+```json
 [
     {
         "AllowedHeaders": [],

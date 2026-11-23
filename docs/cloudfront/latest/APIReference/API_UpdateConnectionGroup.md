@@ -17,6 +17,9 @@ If-Match: {{IfMatch}}
    <AnycastIpListId>{{string}}</AnycastIpListId>
    <Enabled>{{boolean}}</Enabled>
    <Ipv6Enabled>{{boolean}}</Ipv6Enabled>
+   <ViewerFallback>
+      <DistributionId>{{string}}</DistributionId>
+   </ViewerFallback>
 </UpdateConnectionGroupRequest>
 ```
 
@@ -58,6 +61,11 @@ Enable IPv6 for the connection group. For more information, see [Enable IPv6](ht
 Type: Boolean
 Required: No
 
+ ** [ViewerFallback](#API_UpdateConnectionGroup_RequestSyntax) **   <a name="cloudfront-UpdateConnectionGroup-request-ViewerFallback"></a>
+The distribution whose certificate CloudFront uses for viewer requests that arrive on the connection group's Anycast static IPs without Server Name Indication (SNI).
+Type: [ViewerFallback](API_ViewerFallback.md) object
+Required: No
+
 ## Response Syntax
 <a name="API_UpdateConnectionGroup_ResponseSyntax"></a>
 
@@ -84,6 +92,9 @@ HTTP/1.1 200
          </Tag>
       </Items>
    </Tags>
+   <ViewerFallback>
+      <DistributionId>string</DistributionId>
+   </ViewerFallback>
 </ConnectionGroup>
 ```
 
@@ -145,6 +156,10 @@ Type: String
  ** [Tags](#API_UpdateConnectionGroup_ResponseSyntax) **   <a name="cloudfront-UpdateConnectionGroup-response-Tags"></a>
 A complex type that contains zero or more `Tag` elements.
 Type: [Tags](API_Tags.md) object
+
+ ** [ViewerFallback](#API_UpdateConnectionGroup_ResponseSyntax) **   <a name="cloudfront-UpdateConnectionGroup-response-ViewerFallback"></a>
+The distribution whose certificate CloudFront uses for viewer requests that arrive on the connection group's Anycast static IPs without Server Name Indication (SNI).
+Type: [ViewerFallback](API_ViewerFallback.md) object
 
 ## Errors
 <a name="API_UpdateConnectionGroup_Errors"></a>

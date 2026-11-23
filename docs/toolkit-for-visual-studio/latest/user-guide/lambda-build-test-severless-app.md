@@ -53,7 +53,7 @@ A `serverless.template` file is an AWS CloudFormation template for declaring you
 
 The following is an example of a `serverless.template` file:
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::Serverless-2016-10-31",

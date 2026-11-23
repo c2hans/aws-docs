@@ -31,7 +31,7 @@ For more information, see [Replace the SSL certificate for your Classic Load Bal
 **Tools for PowerShell V4**
 **Example 1: This example replaces the certificate that terminates the SSL connections for the specified listener.**
 
-```
+```powershell
 Set-ELBLoadBalancerListenerSSLCertificate -LoadBalancerName my-load-balancer `
 >> -LoadBalancerPort 443 `
 >> -SSLCertificateId "arn:aws:iam::123456789012:server-certificate/new-server-cert"
@@ -41,7 +41,7 @@ Set-ELBLoadBalancerListenerSSLCertificate -LoadBalancerName my-load-balancer `
 **Tools for PowerShell V5**
 **Example 1: This example replaces the certificate that terminates the SSL connections for the specified listener.**
 
-```
+```powershell
 Set-ELBLoadBalancerListenerSSLCertificate -LoadBalancerName my-load-balancer `
 >> -LoadBalancerPort 443 `
 >> -SSLCertificateId "arn:aws:iam::123456789012:server-certificate/new-server-cert"

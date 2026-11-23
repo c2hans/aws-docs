@@ -11,7 +11,7 @@ The following sample policy describes the required AWS permissions for creating 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

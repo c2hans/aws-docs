@@ -21,7 +21,7 @@ To use Amazon SQS with AWS Config, you must configure a policy that grants permi
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "Queue1_Policy_UUID",
@@ -50,7 +50,7 @@ The account for the SNS topic and the SQS queue must be in the same region.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "SNStoSQS",

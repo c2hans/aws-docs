@@ -8,6 +8,8 @@ Customers use third-party next-generation firewalls (NGFW) and intrusion prevent
 
 ![A diagram depicting centralized ingress traffic inspection using firewall appliances with Gateway Load Balancer](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/ingress-inspection-fa.png)
 
+**Centralized ingress traffic inspection using firewall appliances with Gateway Load Balancer**
+
 In the preceding architecture, Gateway Load Balancer endpoints are deployed into each Availability Zone in a separate edge VPC. The next-generation firewalls, intrusion prevention systems etc. are deployed behind the Gateway Load Balancer in the centralized appliance VPC. This appliance VPC can be in the same AWS account as the spoke VPCs or different AWS account. Virtual appliances can be configured to use Auto Scaling groups and are registered automatically with the Gateway Load Balancer, allowing auto scaling of the security layer.
 
 These virtual appliances can be managed by accessing their management interfaces through an Internet Gateway (IGW) or using a bastion host setup in the appliance VPC.

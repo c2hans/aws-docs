@@ -20,7 +20,7 @@ Include `CrossReferences` in the `AdditionalFeatures` parameter to retrieve thir
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryText": "Starbucks downtown",
     "BiasPosition": [-122.3321, 47.6062],
@@ -31,7 +31,7 @@ Include `CrossReferences` in the `AdditionalFeatures` parameter to retrieve thir
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -55,7 +55,7 @@ Include `CrossReferences` in the `AdditionalFeatures` parameter to retrieve thir
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/suggest?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -69,7 +69,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places suggest --key ${YourKey} --query-text "Starbucks downtown" --bias-position -122.3321 47.6062 --additional-features CrossReferences
 ```
 

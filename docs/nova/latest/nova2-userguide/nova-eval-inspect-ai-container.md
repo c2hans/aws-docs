@@ -63,7 +63,7 @@ The SageMaker Training Job runs under an execution role that you provide. This r
 
 Save the following as `trust_policy.json`:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -80,7 +80,7 @@ Save the following as `trust_policy.json`:
 
 **1.2 Create the role**
 
-```
+```sh
 aws iam create-role \
   --role-name InspectLensEvalRole \
   --assume-role-policy-document file://trust_policy.json
@@ -93,7 +93,7 @@ Save the following as `eval_policy.json`, replacing all placeholder values (`REG
 **Scope down to resources in use**
 Scope down each resource ARN to only the resources you need. The policy below provides a starting template — restrict bucket names, endpoint ARNs, and other resources to match your environment.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -277,7 +277,7 @@ Scope down each resource ARN to only the resources you need. The policy below pr
 
 Attach the policy to the role:
 
-```
+```sh
 aws iam put-role-policy \
   --role-name InspectLensEvalRole \
   --policy-name InspectLensEvalPolicy \
@@ -299,7 +299,7 @@ For end-to-end examples, see the following notebooks in the [Amazon Nova Samples
 
 Use this option when you have a model already deployed on a SageMaker inference endpoint.
 
-```
+```yaml
 inference_provider:
   sagemaker_endpoint:
     endpoint_name: "my-existing-endpoint"
@@ -324,7 +324,7 @@ output:
 
 Use this option to have the container deploy a Amazon Nova base or fine-tuned model, run evaluations, and tear down the endpoint automatically. This is the recommended approach for one-off evaluation runs. Retrieve the latest SageMaker inference container from the [Amazon Nova SageMaker Inference container images](https://docs.aws.amazon.com/nova/latest/userguide/nova-model-sagemaker-inference.html#nova-sagemaker-inference-container-images) documentation.
 
-```
+```yaml
 inference_provider:
   sagemaker_endpoint:
     endpoint_name: null                 # null = create new endpoint
@@ -374,7 +374,7 @@ output:
 **Managed endpoint resources**
 Grant the following optional permission to your execution role so the container can tag managed inference resources with the originating training job name and ARN. Tagged resources include the endpoint, endpoint configuration, and model. This helps identify resources if cleanup is interrupted. The container only applies tags when running as a SageMaker Training Job.
 
-```
+```json
 {
   "Sid": "SageMakerTagManagedResources",
   "Effect": "Allow",
@@ -399,7 +399,7 @@ External sources can interrupt resource management during runtime. For informati
 
 Use this option to evaluate a model available through Amazon Bedrock Runtime without managing an endpoint. For more information about Amazon Bedrock endpoint options, see [Amazon Bedrock endpoints](https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html).
 
-```
+```yaml
 inference_provider:
   bedrock:
     model_id: amazon.nova-pro-v1:0
@@ -434,7 +434,7 @@ output:
 
 [Amazon Bedrock Mantle](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-chat-completions-mantle.html) provides an OpenAI-compatible inference endpoint for models available through Amazon Bedrock. This option does not require a stored credential. The container generates a short-lived bearer token from your execution role's IAM credentials and automatically refreshes it between benchmarks.
 
-```
+```yaml
 inference_provider:
   openai_compatible_endpoint:
     auth: "bedrock_mantle"
@@ -457,7 +457,7 @@ output:
 
 Add the following permission to your execution role (see [Step 1: Set up IAM permissions](#nova-eval-container-step1)):
 
-```
+```json
 {
   "Sid": "BedrockMantleInference",
   "Effect": "Allow",
@@ -487,7 +487,7 @@ HTTPS is required for all endpoints that use bearer token authentication. HTTP i
 
 [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) provides encrypted storage, access auditing through CloudTrail, and automatic rotation for API keys and other secrets. Store the API key in Secrets Manager and reference it by ARN in the recipe. The container fetches the key at runtime and auto-refreshes between benchmarks.
 
-```
+```yaml
 inference_provider:
   openai_compatible_endpoint:
     model_name: "my-model"
@@ -512,7 +512,7 @@ output:
 
 Add the following permission to your execution role (see [Step 1: Set up IAM permissions](#nova-eval-container-step1)):
 
-```
+```json
 {
   "Sid": "GetApiKeySecret",
   "Effect": "Allow",
@@ -526,7 +526,7 @@ Add the following permission to your execution role (see [Step 1: Set up IAM per
 
 The API key can be passed through the environment variable `INFERENCE_API_KEY`. Check with your runtime environment documentation for how environment variables are passed and the security implications. For SageMaker Training Jobs, environment variables are visible in [DescribeTrainingJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperParameterTrainingJobDefinition.html) API responses and limited to 512 characters. For more information, see [SageMaker Training Job environment variables](https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning-define-metrics-variables.html#automatic-model-tuning-define-variables).
 
-```
+```yaml
 inference_provider:
   openai_compatible_endpoint:
     model_name: "my-model"
@@ -550,7 +550,7 @@ output:
 
 For example, on SageMaker Training Jobs:
 
-```
+```sh
 aws sagemaker create-training-job \
     ...
     --environment '{"INFERENCE_API_KEY": "your-api-key"}'
@@ -614,7 +614,7 @@ The following output formats are available:
 
 Optionally, you can log evaluation metrics to an MLflow tracking server. Add the `tracking` section to your recipe:
 
-```
+```yaml
 tracking:
   mlflow_tracking_arn: null       # ARN of SageMaker MLflow tracking server
   mlflow_experiment_name: "inspectlens" # experiment name
@@ -633,7 +633,7 @@ tracking:
 
 The following example shows a complete recipe with all available configuration options:
 
-```
+```yaml
 inference_provider:
   sagemaker_endpoint:
     endpoint_name: my-nova-endpoint
@@ -690,7 +690,7 @@ Benchmarks are Python files that use the Inspect AI `@task` decorator to define 
 
 The following example shows a minimal benchmark that evaluates multiple-choice performance on a HuggingFace dataset:
 
-```
+```python
 from inspect_ai import task, Task
 from inspect_ai.dataset import hf_dataset
 from inspect_ai.scorer import choice
@@ -713,7 +713,7 @@ def my_benchmark():
 
 If your benchmark needs extra dependencies, include a `pyproject.toml` or `requirements.txt` in the same S3 directory:
 
-```
+```toml
 [project]
 name = "my-benchmark"
 version = "0.1.0"
@@ -753,7 +753,7 @@ The `tasks` field in your recipe controls which tasks within a benchmark file to
 
 The following structure is a recommendation for keeping configs, benchmarks, and results organized. You can point the container at any S3 location — the structure itself is not required.
 
-```
+```text
 s3://your-bucket/
 ├── config/
 │   └── inspect_config.yaml       # Your eval recipe
@@ -767,7 +767,7 @@ s3://your-bucket/
 
 Upload your files to S3:
 
-```
+```sh
 # Upload benchmark files
 aws s3 cp my_benchmarks/ s3://your-bucket/benchmarks/my_benchmarks/ --recursive
 
@@ -782,7 +782,7 @@ Submit a SageMaker Training Job to run your evaluation. You can use the AWS CLI 
 
 **Option A: AWS CLI**
 
-```
+```sh
 aws sagemaker create-training-job \
     --training-job-name inspect-eval-$(date +%Y%m%d-%H%M%S) \
     --algorithm-specification \
@@ -809,7 +809,7 @@ aws sagemaker create-training-job \
 
 **Option B: SageMaker Python SDK v3**
 
-```
+```python
 from sagemaker.train.evaluate import InspectAIEvaluator
 
 evaluator = InspectAIEvaluator(
@@ -850,7 +850,7 @@ The training job instance runs the evaluation orchestration logic, not the model
 
 You can pass environment variables to the container for authentication or configuration. Add the `--environment` parameter to the AWS CLI command:
 
-```
+```sh
 aws sagemaker create-training-job \
     ...
     --environment '{
@@ -866,7 +866,7 @@ After you submit the training job, you can monitor its progress through the AWS 
 
 **Check job status**
 
-```
+```sh
 aws sagemaker describe-training-job \
     --training-job-name your-job-name \
     --query "TrainingJobStatus" \
@@ -875,7 +875,7 @@ aws sagemaker describe-training-job \
 
 **Stream logs**
 
-```
+```sh
 aws logs tail /aws/sagemaker/TrainingJobs \
     --log-stream-name-prefix your-job-name \
     --follow
@@ -921,7 +921,7 @@ After the job completes, view your evaluation results.
 
 Use the Inspect AI viewer to interactively explore results directly from S3:
 
-```
+```sh
 inspect view --log-dir s3://your-bucket/eval-results/
 ```
 
@@ -931,7 +931,7 @@ This command opens a local web interface where you can browse scores, view indiv
 
 To download results locally:
 
-```
+```sh
 aws s3 cp s3://your-bucket/eval/output/ ./results/ --recursive
 
 INSPECT_LOG_DIR=./results inspect view
@@ -959,7 +959,7 @@ Each evaluation produces a `.eval` log file that contains the following sections
 
 If you configured MLflow in your recipe, generate a presigned URL to access the tracking server:
 
-```
+```sh
 aws sagemaker create-presigned-mlflow-tracking-server-url \
     --tracking-server-name my-server \
     --region us-west-2
@@ -1067,7 +1067,7 @@ With managed endpoints enabled, managed resource information is logged to CloudW
 
 Example log output:
 
-```
+```text
 [WARNING] [INFRA] Managed SMI resources created; auto-deleted on normal completion or stop.
 If this job is force-killed or stopped mid-creation, delete them manually:
   aws sagemaker delete-endpoint --endpoint-name inspectlens-ep-1787856688 --region us-east-1
@@ -1081,7 +1081,7 @@ Upon manual termination of the job through [stop-training-job](https://docs.aws.
 
 If benchmarks that download datasets from HuggingFace Hub time out, set the `HF_HUB_DOWNLOAD_TIMEOUT` environment variable to a higher value (in seconds):
 
-```
+```sh
 --environment '{"HF_HUB_DOWNLOAD_TIMEOUT": "600"}'
 ```
 

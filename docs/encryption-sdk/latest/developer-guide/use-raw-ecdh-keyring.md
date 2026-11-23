@@ -56,7 +56,7 @@ To initialize a Raw ECDH keyring with the `RawPrivateKeyToStaticPublicKey` key a
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 // Instantiate material providers
 var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 	    var BobPrivateKey = new MemoryStream(new byte[] { });
@@ -86,7 +86,7 @@ var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 
 The following Java example uses the `RawPrivateKeyToStaticPublicKey` key agreement schema to statically configure the sender's private key and the recipient's public key. Both key pairs are on the `ECC_NIST_P256` curve.
 
-```
+```java
 private static void StaticRawKeyring() {
     // Instantiate material providers
     final MaterialProviders materialProviders =
@@ -123,7 +123,7 @@ private static void StaticRawKeyring() {
 
 The following Python example uses the `RawEcdhStaticConfigurationsRawPrivateKeyToStaticPublicKey` key agreement schema to statically configure the sender's private key and the recipient's public key. Both key pairs are on the `ECC_NIST_P256` curve.
 
-```
+```python
 import boto3
 from aws_cryptographic_materialproviders.mpl.models import (
     CreateRawEcdhKeyringInput,
@@ -161,7 +161,7 @@ keyring = mat_prov.create_raw_ecdh_keyring(raw_keyring_input)
 
 The following Python example uses the `raw_ecdh_static_configuration` key agreement schema to statically configure the sender's private key and the recipient's public key. Both key pairs must be on the same curve.
 
-```
+```rust
 // Instantiate the AWS Encryption SDK client
 let esdk_config = AwsEncryptionSdkConfig::builder().build()?;
 let esdk_client = esdk_client::Client::from_conf(esdk_config)?;
@@ -202,7 +202,7 @@ let raw_ecdh_keyring = mpl
 ------
 #### [ Go ]
 
-```
+```go
 import (
     "context"
 
@@ -281,7 +281,7 @@ To initialize a Raw ECDH keyring with the `EphemeralPrivateKeyToStaticPublicKey`
 
 The following example creates a Raw ECDH keyring with the `EphemeralPrivateKeyToStaticPublicKey` key agreement schema. On encrypt, the keyring will create a new key pair locally on the specified `ECC_NIST_P256` curve.
 
-```
+```cs
 // Instantiate material providers
 var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 	    var AlicePublicKey = new MemoryStream(new byte[] { });
@@ -309,7 +309,7 @@ var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 
 The following example creates a Raw ECDH keyring with the `EphemeralPrivateKeyToStaticPublicKey` key agreement schema. On encrypt, the keyring will create a new key pair locally on the specified `ECC_NIST_P256` curve.
 
-```
+```java
 private static void EphemeralRawEcdhKeyring() {
     // Instantiate material providers
     final MaterialProviders materialProviders =
@@ -342,7 +342,7 @@ private static void EphemeralRawEcdhKeyring() {
 
 The following example creates a Raw ECDH keyring with the `RawEcdhStaticConfigurationsEphemeralPrivateKeyToStaticPublicKey` key agreement schema. On encrypt, the keyring will create a new key pair locally on the specified `ECC_NIST_P256` curve.
 
-```
+```python
 import boto3
 from aws_cryptographic_materialproviders.mpl.models import (
     CreateRawEcdhKeyringInput,
@@ -377,7 +377,7 @@ keyring = mat_prov.create_raw_ecdh_keyring(ephemeral_input)
 
 The following example creates a Raw ECDH keyring with the `ephemeral_raw_ecdh_static_configuration` key agreement schema. On encrypt, the keyring will create a new key pair locally on the specified curve.
 
-```
+```rs
 // Instantiate the AWS Encryption SDK client
 let esdk_config = AwsEncryptionSdkConfig::builder().build()?;
 let esdk_client = esdk_client::Client::from_conf(esdk_config)?;
@@ -422,7 +422,7 @@ let ephemeral_raw_ecdh_keyring = mpl
 ------
 #### [ Go ]
 
-```
+```go
 import (
     "context"
 
@@ -504,7 +504,7 @@ To initialize a Raw ECDH keyring with the `PublicKeyDiscovery` key agreement sch
 
 The following example creates a Raw ECDH keyring with the `PublicKeyDiscovery` key agreement schema. This keyring can decrypt any message where the public key of the specified private key matches the recipient's public key stored on the message ciphertext.
 
-```
+```cs
 // Instantiate material providers
 var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 	    var AlicePrivateKey = new MemoryStream(new byte[] { });
@@ -532,7 +532,7 @@ var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 
 The following example creates a Raw ECDH keyring with the `PublicKeyDiscovery` key agreement schema. This keyring can decrypt any message where the public key of the specified private key matches the recipient's public key stored on the message ciphertext.
 
-```
+```java
 private static void RawEcdhDiscovery() {
     // Instantiate material providers
     final MaterialProviders materialProviders =
@@ -566,7 +566,7 @@ private static void RawEcdhDiscovery() {
 
 The following example creates a Raw ECDH keyring with the `RawEcdhStaticConfigurationsPublicKeyDiscovery` key agreement schema. This keyring can decrypt any message where the public key of the specified private key matches the recipient's public key stored on the message ciphertext.
 
-```
+```python
 import boto3
 from aws_cryptographic_materialproviders.mpl.models import (
     CreateRawEcdhKeyringInput,
@@ -601,7 +601,7 @@ keyring = mat_prov.create_raw_ecdh_keyring(raw_keyring_input)
 
 The following example creates a Raw ECDH keyring with the `discovery_raw_ecdh_static_configuration` key agreement schema. This keyring can decrypt any message where the public key of the specified private key matches the recipient's public key stored on the message ciphertext.
 
-```
+```rs
 // Instantiate the AWS Encryption SDK client and material providers library
 let esdk_config = AwsEncryptionSdkConfig::builder().build()?;
 let esdk_client = esdk_client::Client::from_conf(esdk_config)?;
@@ -645,7 +645,7 @@ let discovery_raw_ecdh_keyring = mpl
 ------
 #### [ Go ]
 
-```
+```go
 import (
     "context"
 

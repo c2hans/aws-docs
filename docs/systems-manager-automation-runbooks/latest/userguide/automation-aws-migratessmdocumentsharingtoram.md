@@ -49,7 +49,7 @@ Amazon
 
 The `AutomationAssumeRole` parameter requires a trust policy and a permissions policy. Attach the following trust policy so that Systems Manager Automation can assume the role.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -66,7 +66,7 @@ The `AutomationAssumeRole` parameter requires a trust policy and a permissions p
 
 Attach the following permissions policy. The statements are organized into three groups so that you can grant only the permissions you need for your migration.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -160,7 +160,7 @@ The **Migrate to RAM** page sets the runbook parameters for you.
 
 **To run the automation (AWS CLI)**
 
-```
+```bash
 aws ssm start-automation-execution \
     --document-name AWS-MigrateSSMDocumentSharingToRAM \
     --parameters '{"DocumentName":["MyDocument"],"AutomationAssumeRole":["arn:aws:iam::ACCOUNT_ID:role/ROLE_NAME"]}'

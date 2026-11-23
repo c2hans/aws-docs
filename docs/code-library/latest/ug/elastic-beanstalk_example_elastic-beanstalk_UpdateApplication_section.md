@@ -49,7 +49,7 @@ For more information, see [Managing Elastic Beanstalk applications](https://docs
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/elasticbeanstalk#code-examples).
 
-```
+```ruby
 # Manages deployment of Rails applications to AWS Elastic Beanstalk
 class RailsAppDeployer
   def initialize(eb_client, s3_client, app_name, logger: Logger.new($stdout))

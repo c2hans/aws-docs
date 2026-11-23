@@ -24,7 +24,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "DeploymentType": "NewDeployment|Redeployment|ResetDeployment|ForceResetDeployment",
 "DeploymentId": "string",
@@ -65,7 +65,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-deployments-post-cli"></a>
 
-```
+```bash
 aws greengrass create-deployment \
   --group-id <value> \
   [--deployment-type <value>] \
@@ -78,7 +78,7 @@ aws greengrass create-deployment \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "DeploymentType": "NewDeployment|Redeployment|ResetDeployment|ForceResetDeployment",
@@ -95,7 +95,7 @@ cli-input-json format:
 Success. The group was deployed.
  [ CreateDeploymentResponse](definitions-createdeploymentresponse.md)
 
-```
+```json
 {
 "DeploymentArn": "string",
 "DeploymentId": "string"
@@ -114,7 +114,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -181,7 +181,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-deployments-get-cli"></a>
 
-```
+```bash
 aws greengrass list-deployments \
   --group-id <value> \
   [--max-results <value>] \
@@ -192,7 +192,7 @@ aws greengrass list-deployments \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "MaxResults": "integer",
@@ -207,7 +207,7 @@ cli-input-json format:
 Success. The response body contains the list of deployments for the given group.
  [ ListDeploymentsResponse](definitions-listdeploymentsresponse.md)
 
-```
+```json
 {
 "Deployments": [
   {
@@ -254,7 +254,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

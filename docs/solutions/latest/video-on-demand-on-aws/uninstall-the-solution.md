@@ -23,7 +23,7 @@ AWS CloudFormation StackSets are automatically deleted when you uninstall the so
 
 Determine whether the AWS Command Line Interface (AWS CLI) is available in your environment. For installation instructions, see [What Is the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS CLI User Guide*. After confirming that the AWS CLI is available, run the following command.
 
-```
+```bash
 $ aws cloudformation delete-stack --stack-name <installation-stack-name>
 ```
 
@@ -46,7 +46,7 @@ Repeat the steps until you have deleted all the {{<stack-name>}} Amazon S3 bucke
 
 To delete the S3 bucket using AWS CLI, run the following command:
 
-```
+```bash
 $ aws s3 rb s3://<bucket-name> --force
 ```
 
@@ -65,7 +65,7 @@ This solution is configured to retain the DynamoDB tables if you decide to delet
 
 To delete the DynamoDB tables using AWS CLI, run the following command:
 
-```
+```bash
 $ aws dynamodb delete-table <table-name>
 ```
 

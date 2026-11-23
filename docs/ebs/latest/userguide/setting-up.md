@@ -61,7 +61,7 @@ Use the [enable-snapshot-block-public-access](https://docs.aws.amazon.com/cli/la
 + `block-all-sharing` — To block all public sharing of your snapshots. Users in the account can't request new public sharing. Additionally, snapshots that were already publicly shared are treated as private and are no longer publicly available.
 + `block-new-sharing` — To block only new public sharing of your snapshots. Users in the account can't request new public sharing. However, snapshots that were already publicly shared, remain publicly available.
 
-```
+```bash
 aws ec2 enable-snapshot-block-public-access --state {{block-new-sharing}}
 ```
 
@@ -73,7 +73,7 @@ Use the [Enable-EC2SnapshotBlockPublicAccess](https://docs.aws.amazon.com/powers
 + `block-all-sharing` — To block all public sharing of your snapshots. Users in the account can't request new public sharing. Additionally, snapshots that were already publicly shared are treated as private and are no longer publicly available.
 + `block-new-sharing` — To block only new public sharing of your snapshots. Users in the account can't request new public sharing. However, snapshots that were already publicly shared, remain publicly available.
 
-```
+```powershell
 Enable-EC2SnapshotBlockPublicAccess -State {{block-new-sharing}}
 ```
 

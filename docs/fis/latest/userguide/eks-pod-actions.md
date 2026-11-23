@@ -74,7 +74,7 @@ Configure a Kubernetes service account to run experiments with targets in the sp
 
 1. Create a file named `rbac.yaml` and add the following.
 
-   ```
+   ```yaml
    kind: ServiceAccount
    apiVersion: v1
    metadata:
@@ -205,7 +205,7 @@ The Pod container image is also available in the [AWS ECR Public Gallery](https:
 
 The following is an example experiment template for the [aws:eks:pod-network-latency](fis-actions-reference.md#pod-network-latency) action.
 
-```
+```json
 {
     "description": "Add latency and jitter to the network interface for the target EKS Pods",
     "targets": {

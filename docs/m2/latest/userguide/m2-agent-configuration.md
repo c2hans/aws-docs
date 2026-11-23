@@ -93,7 +93,7 @@ Optionally, create a new target Amazon S3 bucket for the transferred data sets. 
 **Important**
 Add the statement to the existing statements. Don't replace what's already in the policy.
 
-   ```
+   ```json
    {
        "Sid" : "Enable AWS M2 File Transfer Permissions",
        "Effect" : "Allow",
@@ -142,7 +142,7 @@ Mainframe credentials are required to access the data sets to be transferred and
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement" : [ {
@@ -260,7 +260,7 @@ Save the IAM user ARN used to set up a trust relationship with an IAM role.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [ {

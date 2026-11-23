@@ -35,7 +35,7 @@ Use the `SearchDICOMSeries` API to search for DICOM series in a HealthImaging [d
 ------
 #### [ curl ]
 
-   ```
+   ```sh
    curl --request GET \
      "https://dicom-medical-imaging.us-east-1.amazonaws.com/datastore/{{datastoreId}}/studies/{{StudyInstanceUID}}/series[?query]"
      --aws-sigv4 'aws:amz:us-east-1:medical-imaging' \

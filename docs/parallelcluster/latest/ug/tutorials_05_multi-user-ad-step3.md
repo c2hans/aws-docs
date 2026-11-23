@@ -35,7 +35,7 @@ Notice that the certificate specified in `LdapTlsCaCert` must be accessible to a
 The certificate specified in `LdapTlsCaCert` must be accessible to all cluster nodes.
 A node without access to the certificate will not be able to resolve users from the directory.
 
-```
+```yaml
 Region: {{region-id}}
 Image:
   Os: alinux2023
@@ -111,7 +111,7 @@ aws secretsmanager get-secret-value --region $REGION --secret-id $CERTIFICATE_SE
 `PasswordSecretArn`: The Amazon Resource Name (ARN) of the secret that contains the password for the `DomainReadOnlyUser`.
 For better security posture, we suggest using the HeadNode/Ssh/AllowedIps configuration to limit the SSH access to the head node.
 
-```
+```yaml
 Region: {{region-id}}
 Image:
   Os: alinux2023
@@ -152,7 +152,7 @@ DirectoryService:
 `PasswordSecretArn`: The Amazon Resource Name (ARN) of the secret that contains the password for the `DomainReadOnlyUser`.
 For better security posture, we suggest using the HeadNode/Ssh/AllowedIps configuration to limit the SSH access to the head node.
 
-```
+```yaml
 Region: {{region-id}}
 Image:
   Os: alinux2023
@@ -185,7 +185,7 @@ DirectoryService:
 
 Create your cluster with the following command.
 
-```
+```bash
 $ pcluster create-cluster --cluster-name {{"ad-cluster"}} --cluster-configuration {{"./ldaps_config.yaml"}}
 {
   "cluster": {

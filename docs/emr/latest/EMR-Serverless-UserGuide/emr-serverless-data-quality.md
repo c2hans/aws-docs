@@ -23,7 +23,7 @@ The IAM job runtime role that your EMR Serverless application assumes (passed vi
 
 The following inline policy grants the minimum set of permissions required to publish Data Quality results from an EMR Serverless Spark application.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -47,7 +47,7 @@ The following inline policy grants the minimum set of permissions required to pu
 
    For example, to create a Spark application, run:
 
-   ```
+   ```bash
    aws emr-serverless create-application \
    --name My_Spark_DataQuality_Application \
    --release-label emr-spark-8.1.0 \
@@ -56,7 +56,7 @@ The following inline policy grants the minimum set of permissions required to pu
 
 1. **Define a ruleset and evaluate it.** The following PySpark script defines a ruleset in DQDL, evaluates it against a DataFrame, and prints the per-rule outcome.
 
-   ```
+   ```python
    from pyspark.sql import SparkSession
    from awsdataquality.transforms import EvaluateDataQuality
 
@@ -90,7 +90,7 @@ The following inline policy grants the minimum set of permissions required to pu
 
 1. **Submit the job run.** Submit the script as a job run against your application.
 
-   ```
+   ```bash
    aws emr-serverless start-job-run \
    --application-id {{<application-id>}} \
    --execution-role-arn {{<execution-role-arn>}} \
@@ -104,7 +104,7 @@ The following inline policy grants the minimum set of permissions required to pu
 
 1. **Retrieve the result.** After the job run finishes, list the run and fetch its detail with the AWS Glue Data Quality APIs or the AWS CLI. If your application also sets `publishToDataCatalogTarget` with a `DatabaseName` and `TableName`, the run appears on the *Data quality* tab of that catalog table in the AWS Glue console.
 
-   ```
+   ```bash
    aws glue list-data-quality-results-v2 --max-results 5
 
    aws glue get-data-quality-result-v2 --result-id {{<result-id>}}

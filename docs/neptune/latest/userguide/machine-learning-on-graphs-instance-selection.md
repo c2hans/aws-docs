@@ -20,7 +20,7 @@ Selecting the right instance type for [model training](https://docs.aws.amazon.c
 
 By default, Neptune ML chooses the smallest GPU instance with more memory than model training and model transform requires. You can find what that selection is in the `train_instance_recommendation.json` file, in the Amazon S3 data processing output location. Here is an example of the contents of a `train_instance_recommendation.json` file:
 
-```
+```json
 {
   "instance":     "{{(the recommended instance type for model training and transform)}}",
   "cpu_instance": "{{(the recommended instance type for base processing instance)}}",
@@ -39,7 +39,7 @@ If more than 384 GB of memory is needed, Neptune ML uses an `ml.r5d.24xlarge` in
 
 You can see what instance type Neptune ML recommends in the `infer_instance_recommendation.json` file located in the Amazon S3 location you are using for model training. Here is an example of that file's contents:
 
-```
+```json
 {
   "instance" :   "{{(the recommended instance type for an inference endpoint)}}",
   "disk_size" :  "{{(the estimated disk space required)}}",

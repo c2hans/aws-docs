@@ -62,7 +62,7 @@ The following code uses the [DescribeProjects](https://docs.aws.amazon.com/rekog
    + `project_name` – the name of the project you want to use. You can get the project name from the projects page in the Amazon Rekognition Custom Labels console.
    + `version_name` – the version of the model that you want to use. You can get the version name from the project details page in the Amazon Rekognition Custom Labels console.
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
 

@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/dcv-server-dns-mappi
 
 The mapping consists of a list of JSON objects with the following fields:
 
-```
+```json
 [
 	{
 		“ServerIdType”: "Ip",

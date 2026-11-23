@@ -121,7 +121,7 @@ To assign a level to logs you create using the `LambdaLogger` logger, you need t
 
 **Example Java logging code**
 
-```
+```Java
 LambdaLogger logger = context.getLogger();
 logger.log("This is a debug log", LogLevel.DEBUG);
 ```
@@ -130,7 +130,7 @@ This log output by this example code would be captured in CloudWatch Logs as fol
 
 **Example JSON log record**
 
-```
+```JSON
 {
     "timestamp":"2023-11-01T00:21:51.358Z",
     "level":"DEBUG",
@@ -214,7 +214,7 @@ In the following example code, the handler class uses SLF4J to retrieve a logger
 
 **Example [src/main/java/example/HandlerS3.java](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/java-events/src/main/java/example/HandlerS3.java) – Logging with SLF4J**
 
-```
+```java
 package example;
 
 import org.slf4j.Logger;
@@ -250,7 +250,7 @@ This code produces log outputs like the following:
 
 **Example log format**
 
-```
+```JSON
 {
     "timestamp": "2023-11-15T16:56:00.815Z",
     "level": "INFO",
@@ -418,7 +418,7 @@ For **HelloWorldFunction may not have authorization defined, Is this okay?**, ma
 
 Log groups aren't deleted automatically when you delete a function. To avoid storing logs indefinitely, delete the log group, or configure a retention period after which CloudWatch automatically deletes the logs. To set up log retention, add the following to your AWS SAM template:
 
-```
+```yaml
 Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function

@@ -13,7 +13,7 @@ The following policies give you permission to use the different features contain
 ## Permission policies for Ingress endpoint
 <a name="eb-policies-ingress"></a>
 
-Both of the polices in this section are required to create an ingress endpoint. To learn how to create an ingress endpoint and where to use these policies, see [Creating an ingress endpoint in the SES console](eb-ingress.md#eb-ingress-create-console).
+Both of the polices in this section are required to create an ingress endpoint. To learn how to create an ingress endpoint and where to use these policies, see [Creating and managing ingress points](eb-ingress.md#eb-ingress-create-console).
 
 ### Secrets Manager secrets resource permission policy for ingress endpoint
 <a name="eb-policies-ingress-secrets"></a>
@@ -25,7 +25,7 @@ The following Secrets Manager secrets resource permission policy is required to 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "Id",
@@ -57,7 +57,7 @@ The following Secrets Manager secrets resource permission policy is required to 
 
 It is required to use a customer managed key (CMK) for your secret. The following statement is required within your KMS key policy to allow SES to use your key for your secret.
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {
@@ -82,7 +82,7 @@ It is required to use a customer managed key (CMK) for your secret. The followin
 
 If you use a customer managed key (CMK) to encrypt your mTLS trust store, the following statement is required within your KMS key policy to allow SES to use your key.
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {
@@ -119,7 +119,7 @@ The following Secrets Manager secrets resource permission policy is required to 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -160,7 +160,7 @@ The following statement is required within your KMS key policy to allow SES to u
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -201,7 +201,7 @@ The IAM identity calling `StartArchiveExport` must have access to the destinatio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -236,7 +236,7 @@ This is the S3 bucket policy for the destination bucket:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -281,7 +281,7 @@ The IAM identity calling `CreateArchive` and `UpdateArchive` must have access to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -305,7 +305,7 @@ The following statements are required within your KMS key policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -358,7 +358,7 @@ Thus, the following trust policy is required *in addition to* the individual per
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -402,7 +402,7 @@ The following policy is required for your IAM role to use the **Write to S3** ru
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -439,7 +439,7 @@ If you're using AWS KMS customer managed key for an S3 bucket with server-side e
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -474,7 +474,7 @@ The following policy is required for your IAM role to use the **Deliver to mailb
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -502,7 +502,7 @@ If your SES identity is using a default configuration set, you'll need to also a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -532,7 +532,7 @@ IAM policy required for your role:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -559,7 +559,7 @@ Statement required within your KMS key policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -606,7 +606,7 @@ IAM policy required for your role:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -633,7 +633,7 @@ Statement required within your KMS key policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -673,7 +673,7 @@ For more information about attaching policies to AWS KMS keys, see [Using Key Po
 
 The following policy is required for your IAM role to use the **Bounce** rule action which bounces the email by returning a bounce response to the sender.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -701,7 +701,7 @@ The following policy is required for your IAM role to use the **Bounce** rule ac
 
 The following policy is required for your IAM role to use the **Invoke Lambda function** rule action which invokes an AWS Lambda function to process the email.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

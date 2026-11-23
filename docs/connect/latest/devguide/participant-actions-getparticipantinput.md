@@ -9,7 +9,7 @@ Gathers customer input (a DTMF collection for voice contacts, or an entered stri
 ## Parameter object
 <a name="getparticipantinput-parameter"></a>
 
-```
+```json
 {
     "PromptId": [Optional] A prompt ID or prompt ARN to play to the participant along with gathering input. May not be specified if Text or SSML is also specified. Must be either statically defined or a single valid JSONPath identifier.
     "Text":  An optional string that defines text to send to the participant along with gathering input. May not be specified if PromptId or SSML is also specified. May be defined statically or dynamically.

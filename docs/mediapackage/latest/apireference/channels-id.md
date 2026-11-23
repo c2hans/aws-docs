@@ -113,7 +113,7 @@ Enable CORS by returning correct headers.
 #### PUT schema
 <a name="channels-id-request-body-put-example"></a>
 
-```
+```json
 {
   "description": "string"
 }
@@ -125,7 +125,7 @@ Enable CORS by returning correct headers.
 #### Channel schema
 <a name="channels-id-response-body-channel-example"></a>
 
-```
+```json
 {
   "createdAt": "string",
   "ingressAccessLogs": {

@@ -189,7 +189,7 @@ DataSync provides JSON-structured logs for Enhanced mode tasks. Basic mode tasks
 ------
 #### [ Enhanced mode log example ]
 
-```
+```json
 {
     "Action": "VERIFY",
     "Source": {

@@ -122,6 +122,7 @@ Unlike standard distributions, you specify your domain name (alias) at the *dist
 + [AWS Identity and Access Management (IAM) server certificates](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_server-certs.html)
 + [Dedicated IP addresses](cnames-https-dedicated-ip-or-sni.md#cnames-https-dedicated-ip)
 + [Minimum Protocol Version SSLv3](DownloadDistValuesGeneral.md#DownloadDistValues-security-policy)
++ [Network calls](helper-functions-network-calls.md) from CloudFront Functions
 
 The following settings can't be configured in a multi-tenant distribution or distribution tenant. Instead, set the values that you want in a connection group. All distribution tenants associated in the connection group will use these settings. For more information, see [Create custom connection group (optional)](custom-connection-group.md).
 + [Enable IPv6 (viewer requests)](DownloadDistValuesGeneral.md#DownloadDistValuesEnableIPv6)

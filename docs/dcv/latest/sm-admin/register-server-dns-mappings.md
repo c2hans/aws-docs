@@ -34,6 +34,6 @@ sudo -u root dcv-session-manager-broker register-server-dns-mappings --file-path
 
 **Output**
 
-```
+```json
  Successfully loaded 2 server id - dns name mappings from file /tmp/mappings.json
 ```

@@ -61,7 +61,7 @@ You can use the `list-test-cases` command to list the test cases in a test group
 
 **Example**
 
-```
+```bash
 devicetester_{{[linux | mac | win_x86-64]}} run-suite --group-id FreeRTOSVersion --test-id FreeRTOSVersion
 ```
 
@@ -71,7 +71,7 @@ Use the help option to learn more about `run-suite` options.
 **Example**
 **Example**
 
-```
+```bash
 devicetester_{{[linux | mac | win_x86-64]}} run-suite -h
 ```
 

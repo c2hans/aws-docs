@@ -58,7 +58,7 @@ If *srid* is negative, then an error is returned.
 
 The following SQL returns a polygon representing an envelope defined by the four input coordinate values.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_MakeEnvelope(2,4,5,7));
 ```
 
@@ -70,7 +70,7 @@ SELECT ST_AsEWKT(ST_MakeEnvelope(2,4,5,7));
 
 The following SQL returns a polygon representing an envelope defined by the four input coordinate values and an SRID value.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_MakeEnvelope(2,4,5,7,4326));
 ```
 

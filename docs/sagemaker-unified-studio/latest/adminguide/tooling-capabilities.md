@@ -27,7 +27,7 @@ Provisions an Amazon Athena workgroup and a connection to it, so project members
 ------
 #### [ IAM-based domain ]
 
-```
+```yaml
 Resources:
   AthenaWorkGroup:
     Type: AWS::Athena::WorkGroup
@@ -83,7 +83,7 @@ Outputs:
 ------
 #### [ Identity Center-based domain ]
 
-```
+```yaml
 Resources:
   AthenaWorkGroup:
     Type: AWS::Athena::WorkGroup
@@ -146,7 +146,7 @@ Provisions an Amazon Athena Spark workgroup and a connection to it, which gives 
 ------
 #### [ IAM-based domain ]
 
-```
+```yaml
 Resources:
   AthenaSparkWorkGroup:
     Type: AWS::Athena::WorkGroup
@@ -194,7 +194,7 @@ Outputs:
 ------
 #### [ Identity Center-based domain ]
 
-```
+```yaml
 Resources:
   AthenaSparkWorkGroup:
     Type: AWS::Athena::WorkGroup
@@ -249,7 +249,7 @@ Declares the connection that gives project members the catalogs available in AWS
 ------
 #### [ IAM-based domain ]
 
-```
+```yaml
 Resources:
   DefaultCatalogConnection:
     Type: AWS::DataZone::Connection
@@ -270,7 +270,7 @@ Resources:
 ------
 #### [ Identity Center-based domain ]
 
-```
+```yaml
 Resources:
   DefaultCatalogConnection:
     Type: AWS::DataZone::Connection
@@ -296,7 +296,7 @@ Resources:
 
 Declares the schedule group that holds a project's schedules. Project members who schedule a notebook or a query create schedules inside this group, and a project without one cannot schedule work.
 
-```
+```yaml
 Resources:
   EventBridgeScheduleGroup:
     Type: AWS::Scheduler::ScheduleGroup
@@ -320,7 +320,7 @@ Declares the Spark connections that run AWS Glue ETL sessions. An IAM-based doma
 ------
 #### [ IAM-based domain ]
 
-```
+```yaml
 Parameters:
   sagemakerUnifiedStudioNetworkGlueConnectionNames:
     Type: String
@@ -361,7 +361,7 @@ Resources:
 ------
 #### [ Identity Center-based domain ]
 
-```
+```yaml
 Parameters:
   sagemakerUnifiedStudioNetworkSecurityGroupId:
     Type: String
@@ -452,7 +452,7 @@ Don't put this grant in your template. The project role in an IAM-based domain i
 
 Grant it yourself instead, once per project role.
 
-```
+```bash
 aws lakeformation grant-permissions \
   --catalog-id {{account-id}} \
   --principal DataLakePrincipalIdentifier={{project-role-arn}} \
@@ -467,7 +467,7 @@ An IAM-based domain registers no Amazon S3 location and grants no data location 
 ------
 #### [ Identity Center-based domain ]
 
-```
+```yaml
 Resources:
   ProjectS3LakeFormationResource:
     Type: AWS::LakeFormation::Resource
@@ -516,7 +516,7 @@ Declares the connection that runs a project's workflows on serverless Amazon Man
 ------
 #### [ IAM-based domain ]
 
-```
+```yaml
 Resources:
   WorkflowsServerlessConnection:
     Type: AWS::DataZone::Connection
@@ -537,7 +537,7 @@ Resources:
 ------
 #### [ Identity Center-based domain ]
 
-```
+```yaml
 Resources:
   WorkflowsServerlessConnection:
     Type: AWS::DataZone::Connection
@@ -565,7 +565,7 @@ Provisions an Amazon SageMaker AI domain, which backs the JupyterLab and Code Ed
 ------
 #### [ IAM-based domain ]
 
-```
+```yaml
 Parameters:
   datazoneEnvironmentDomainArn:
     Type: String
@@ -657,7 +657,7 @@ Outputs:
 **Note**
 Replace {{minute}} and {{hour}} on the data source schedule with a daily time of your choosing. A service-managed environment picks this time per data source so that scans don't all run at once. Avoid giving every project the same value. Copying the listing without substituting them leaves an invalid cron expression. The stack then fails validation before any resource is created.
 
-```
+```yaml
 Parameters:
   datazoneEnvironmentDomainArn:
     Type: String
@@ -792,7 +792,7 @@ Trusted identity propagation requires an IAM Identity Center instance attached t
 ------
 #### [ Identity Center-based domain ]
 
-```
+```yaml
 Parameters:
   enableTrustedIdentityPropagation:
     Type: String

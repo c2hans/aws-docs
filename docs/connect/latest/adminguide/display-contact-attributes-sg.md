@@ -46,7 +46,7 @@ The following image shows an example of a **Detail view**. It has a page heading
 
 **Input example**
 
-```
+```json
 {
   "AttributeBar": [
     {"Label": "Example", "Value": "Attribute"},
@@ -66,7 +66,7 @@ The following image shows an example of a **Detail view**. It has a page heading
 
 **Output example**
 
-```
+```json
 {
     "Action": "ActionSelected",
     "ViewResultData": {

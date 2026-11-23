@@ -83,7 +83,7 @@ Use the AWS Command Line Interface or an AWS SDK to create an AWS Quick Enterpri
 
 1. Run the following command. Replace the placeholder values with your own.
 
-   ```
+   ```bash
    aws quicksight create-account-subscription \
        --aws-account-id <ACCOUNT_ID> \
        --account-name "<ACCOUNT_NAME>" \
@@ -114,7 +114,7 @@ After the command completes, confirm that the subscription exists and is active.
 
 1. Run the following command to check the account status:
 
-   ```
+   ```bash
    aws quicksight describe-account-subscription \
        --aws-account-id <ACCOUNT_ID> \
        --region <TARGET_REGION>
@@ -124,7 +124,7 @@ After the command completes, confirm that the subscription exists and is active.
 
 1. Run the following command to verify the namespace and capacity Region:
 
-   ```
+   ```bash
    aws quicksight list-namespaces \
        --aws-account-id <ACCOUNT_ID> \
        --region <TARGET_REGION>

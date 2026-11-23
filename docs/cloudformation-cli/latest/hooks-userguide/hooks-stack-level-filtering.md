@@ -10,7 +10,7 @@ This section explains how these filters work and provides examples you can follo
 
 The basic structure of a Hook configuration without stack level filtering looks like this:
 
-```
+```json
 {
   "CloudFormationConfiguration": {
     "HookConfiguration": {
@@ -58,7 +58,7 @@ If you create a Hook that targets [Cloud Control API](https://docs.aws.amazon.co
 
 To specify one or more stack names as filters in your Hooks configuration, use the following JSON structure:
 
-```
+```json
 "StackNames": {
   "Include": [
     "string"
@@ -90,7 +90,7 @@ Each stack name in the `Include` and `Exclude` arrays must adhere to the followi
 
 To specify one or more [IAM roles](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-servicerole.html) as filters in your Hook configuration, use the following JSON structure:
 
-```
+```json
 "StackRoles": {
   "Include": [
     "string"
@@ -143,7 +143,7 @@ This section provides examples you can follow to create stack level filters for 
 
 The following example specifies an `Include` list. The Hook is only invoked on stacks named `stack-test-1`, `stack-test-2` and `stack-test-3`.
 
-```
+```json
 {
   "CloudFormationConfiguration": {
     "HookConfiguration": {
@@ -174,7 +174,7 @@ The following example specifies an `Include` list. The Hook is only invoked on s
 
 If the stack names are instead added to the `Exclude` list, the Hook is invoked on any stack that is *not* named `stack-test-1`, `stack-test-2` or `stack-test-3`.
 
-```
+```json
 {
   "CloudFormationConfiguration": {
     "HookConfiguration": {
@@ -205,7 +205,7 @@ If the stack names are instead added to the `Exclude` list, the Hook is invoked 
 
 If `Include` and `Exclude` lists aren't specified, the Hook is only invoked on the stacks in the `Include` that aren't in the `Exclude` list. In the following example, the Hook is only invoked on `stack-test-3`.
 
-```
+```json
 {
   "CloudFormationConfiguration": {
     "HookConfiguration": {
@@ -240,7 +240,7 @@ If `Include` and `Exclude` lists aren't specified, the Hook is only invoked on t
 
 The following Hook includes three stack names, and one stack role. Because the `FilteringCriteria` is specified as `ALL`, the Hook is only invoked for stack that have *both* a matching stack name *and* the matching stack role.
 
-```
+```json
 {
   "CloudFormationConfiguration": {
     "HookConfiguration": {
@@ -274,7 +274,7 @@ The following Hook includes three stack names, and one stack role. Because the `
 
 The following Hook includes three stack names, and one stack role. Because the `FilteringCriteria` is specified as `ANY`, the Hook is invoked for stack that have *either* a matching stack name *or* the matching stack role.
 
-```
+```json
 {
   "CloudFormationConfiguration": {
     "HookConfiguration": {

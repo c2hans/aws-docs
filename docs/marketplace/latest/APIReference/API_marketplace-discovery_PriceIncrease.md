@@ -4,7 +4,13 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # PriceIncrease
 
-The pricing adjustment that applies at each renewal cycle, expressed as either a fixed percentage or a percentage range. Exactly one variant is present.
+The pricing adjustment that applies at each renewal cycle, expressed as either a fixed percentage or a percentage range. Exactly one of the following members is present:
+
+fixedPercentage
+A single fixed percentage applied uniformly at every renewal cycle.
+
+percentageRange
+A percentage range with minimum, maximum, and default values that bound the price increase at each renewal cycle.
 
 ## Contents
 <a name="API_marketplace-discovery_PriceIncrease_Contents"></a>

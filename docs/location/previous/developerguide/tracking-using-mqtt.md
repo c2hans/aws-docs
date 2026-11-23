@@ -60,7 +60,7 @@ If no devices are currently publishing telemetry that includes location, you can
 
 1. Under **Publish to a topic**, set the **Topic name** to {{iot/topic}} (or the name of the topic that you set up in your AWS IoT Core rule, if different), and provide the following for the **Message payload**.
 
-   ```
+   ```json
    {
      "payload": {
        "deviceid": "thing123",

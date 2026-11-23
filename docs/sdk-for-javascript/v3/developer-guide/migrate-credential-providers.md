@@ -34,7 +34,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
    The original [`TemporaryCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/TemporaryCredentials.html) has been **deprecated** in favor of `ChainableTemporaryCredentials` in v2.
 +  **v3**: [`fromTemporaryCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromtemporarycredentials). You can call `fromTemporaryCredentials()` from the `@aws-sdk/credential-providers` package. Here's an example:
 
-  ```
+  ```javascript
   import { FooClient } from "@aws-sdk/client-foo";
   import { fromTemporaryCredentials } from "@aws-sdk/credential-providers"; // ES6 import
   // const { FooClient } = require("@aws-sdk/client-foo");
@@ -60,7 +60,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 
    The provider implements the "Simplified Flow" described in the [Amazon Cognito Developer Guide](https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html). The "Classic Flow" which involves calling `cognito:GetOpenIdToken` and then calling `sts:AssumeRoleWithWebIdentity` is *not* supported. Please open a [feature request](https://github.com/aws/aws-sdk-js-v3/issues/new?assignees=&labels=feature-request&template=---feature-request.md&title=) to us if you need it.
 
-  ```
+  ```javascript
   // fromCognitoIdentityPool example
   import { fromCognitoIdentityPool } from "@aws-sdk/credential-providers"; // ES6 import
   // const { fromCognitoIdentityPool } = require("@aws-sdk/credential-providers"); // CommonJS import
@@ -81,7 +81,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
   });
   ```
 
-  ```
+  ```javascript
   // fromCognitoIdentity example
   import { fromCognitoIdentity } from "@aws-sdk/credential-providers"; // ES6 import
   // const { fromCognitoIdentity } = require("@aws-sdk/credential-provider-cognito-identity"); // CommonJS import
@@ -109,7 +109,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 +  **v2**: [`EC2MetadataCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityCredentials.html)
 +  **v3**: [`fromInstanceMetadata`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromcontainermetadata-and-frominstancemetadata). Creates a credential provider that will source credentials from the Amazon EC2 Instance Metadata Service.
 
-  ```
+  ```javascript
   import { fromInstanceMetadata } from "@aws-sdk/credential-providers"; // ES6 import
   // const { fromInstanceMetadata } = require("@aws-sdk/credential-providers"); // CommonJS import
 
@@ -128,7 +128,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 +  **v2**: `ECSCredentials` or [`RemoteCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/RemoteCredentials.html)
 +  **v3**: [`fromContainerMetadata`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromcontainermetadata-and-frominstancemetadata). Creates a credential provider that will source credentials from the Amazon ECS Container Metadata Service.
 
-  ```
+  ```javascript
   import { fromContainerMetadata } from "@aws-sdk/credential-providers"; // ES6 import
 
   const client = new FooClient({
@@ -156,7 +156,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 +  **v2**: [`SharedIniFileCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SharedIniFileCredentials.html)
 +  **v3**: [`fromIni`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_credential_providers.html)
 
-  ```
+  ```javascript
   import { fromIni } from "@aws-sdk/credential-providers";
   // const { fromIni } from("@aws-sdk/credential-providers");
 
@@ -181,7 +181,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 +  **v2**: [`TokenFileWebIdentityCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/TokenFileWebIdentityCredentials.html)
 +  **v3**: [`fromTokenFile`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromtokenfile)
 
-  ```
+  ```javascript
   import { fromTokenFile } from "@aws-sdk/credential-providers"; // ES6 import
   // const { fromTokenFile } from("@aws-sdk/credential-providers"); // CommonJS import
 
@@ -204,7 +204,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 +  **v2**: [`WebIdentityCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/WebIdentityCredentials.html)
 +  **v3**: [`fromWebToken`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromwebtoken)
 
-  ```
+  ```javascript
   import { fromWebToken } from "@aws-sdk/credential-providers"; // ES6 import
   // const { fromWebToken } from("@aws-sdk/credential-providers"); // CommonJS import
 

@@ -11,7 +11,7 @@ When Migration Assistant encounters a `dense_vector` field in a source mapping, 
 
 The result is a complete, valid `knn_vector` mapping. A simplified example of the kind of mapping the transformation produces is:
 
-```
+```json
 {
   "properties": {
     "embedding": {

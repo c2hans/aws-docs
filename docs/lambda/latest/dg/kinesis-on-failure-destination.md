@@ -86,7 +86,7 @@ To ensure that invocation records from your Event Function can't be sent to an S
 
 The following example shows an IAM policy that limits your function's `s3:PutObject` permissions to buckets in your account. This policy also gives Lambda the `s3:ListBucket` permission it needs to use an S3 bucket as a destination.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -161,7 +161,7 @@ To add a permissions policy to your function's execution role using the AWS Mana
 
 The following example shows what Lambda sends to an SQS queue or SNS topic for a failed Kinesis event source invocation. Because Lambda sends only the metadata for these destination types, use the `streamArn`, `shardId`, `startSequenceNumber`, and `endSequenceNumber` fields to obtain the full original record. All of the fields shown in the `KinesisBatchInfo` property will always be present.
 
-```
+```json
 {
     "requestContext": {
         "requestId": "c9b8fa9f-5a7f-xmpl-af9c-0c604cde93a5",
@@ -195,7 +195,7 @@ You can use this information to retrieve the affected records from the stream fo
 
 The following example shows what Lambda sends to an Amazon S3 bucket for a failed Kinesis event source invocation. In addition to all of the fields from the previous example for SQS and SNS destinations, the `payload` field contains the original invocation record as an escaped JSON string.
 
-```
+```json
 {
     "requestContext": {
         "requestId": "c9b8fa9f-5a7f-xmpl-af9c-0c604cde93a5",

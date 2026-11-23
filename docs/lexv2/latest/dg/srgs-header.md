@@ -24,7 +24,7 @@ The following table shows the header declarations supported by the grammar slot 
 
 **Example**
 
-```
+```xml
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!DOCTYPE grammar PUBLIC "-//W3C//DTD GRAMMAR 1.0//EN"

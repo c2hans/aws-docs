@@ -18,7 +18,7 @@ Before you create an ID mapping workflow across two AWS accounts, you must first
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [{

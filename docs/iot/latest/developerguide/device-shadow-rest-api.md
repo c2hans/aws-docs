@@ -74,7 +74,7 @@ The following is an example policy that allows a caller to retrieve a device's s
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -125,7 +125,7 @@ The following is an example policy that allows a caller to update a device's sha
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -172,7 +172,7 @@ The following is an example policy that allows a caller to delete a device's sha
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -228,7 +228,7 @@ The following is an example policy that allows a caller to list a thing's named 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -45,7 +45,7 @@ Although these attributes are scoped with the `HostedWidget-` prefix, they are s
 
 The following example shows how to pass contact attributes directly from snippet code without enabling widget security.
 
-```
+```javascript
 <script type="text/javascript">
   (function(w, d, x, id){ /* ... */ })(window, document, 'amazon_connect', '{{widgetId}}');
   amazon_connect('snippetId', '{{snippetId}}');
@@ -93,7 +93,7 @@ When your customers interact with the start call icon on your website, the commu
 
 The following code snippet shows an example of how to generate a JWT in Python:
 
-```
+```json
 payload = {
 'sub': {{widgetId}}, // don't add single quotes, such as 'widgetId'
 'iat': datetime.utcnow(),

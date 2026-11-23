@@ -113,7 +113,7 @@ The encryption context that the AWS Encryption SDK uses consists of the encrypti
 
 The following example encryption context consists of two encryption context pairs specified in the request and the public key pair that the CMM adds.
 
-```
+```json
 "Purpose"="Test", "Department"="IT", aws-crypto-public-key={{<public key>}}
 ```
 

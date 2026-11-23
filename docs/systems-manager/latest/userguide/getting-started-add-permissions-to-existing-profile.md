@@ -33,7 +33,7 @@ If the `ssmmessages:OpenControlChannel` permission is removed from policies atta
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -71,7 +71,7 @@ If the `ssmmessages:OpenControlChannel` permission is removed from policies atta
 
    If you won't use AWS KMS encryption for your session data, you can remove the following content from the policy.
 
-   ```
+   ```json
    ,
            {
                "Effect": "Allow",

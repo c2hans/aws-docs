@@ -44,7 +44,7 @@ Alternately, you can specify a customer managed key and add the following IAM pe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -75,7 +75,7 @@ You can configure an OpenSearch Ingestion pipeline to *split* incoming events in
 
 The following example pipeline splits incoming events into two sub-pipelines. Each sub-pipeline uses its own processor to enrich and manipulate the data, and then sends the data to different OpenSearch indexes.
 
-```
+```yaml
 version: "2"
 log-pipeline:
   source:
@@ -123,7 +123,7 @@ You can *chain* multiple sub-pipelines together in order to perform data process
 
 In the following example, the `log_pipeline` sub-pipeline enriches an incoming log event with a set of processors, then sends the event to an OpenSearch index named `enriched_logs`. The pipeline sends the same event to the `log_advanced_pipeline` sub-pipeline, which processes it and sends it to a different OpenSearch index named `enriched_advanced_logs`.
 
-```
+```yaml
 version: "2"
 log-pipeline:
   source:
@@ -229,7 +229,7 @@ You can specify an index name in a pipeline sink and OpenSearch Ingestion create
 
 The following example sinks create two indexes when the pipeline is provisioned:
 
-```
+```yaml
 sink:
   - opensearch:
       index: apache_logs
@@ -244,7 +244,7 @@ You can generate dynamic index names by using variables from the fields of incom
 
 For example, the following pipeline selects the `metadataType` field from incoming events to generate index names.
 
-```
+```yaml
 pipeline:
   ...
   sink:
@@ -254,7 +254,7 @@ pipeline:
 
 The following configuration continues to generate a new index every day or every hour.
 
-```
+```yaml
 pipeline:
   ...
   sink:
@@ -279,7 +279,7 @@ A pipeline can generate a document ID while indexing documents to OpenSearch. It
 
 This example uses the `uuid` field from an incoming event to generate a document ID.
 
-```
+```yaml
 pipeline:
   ...
   sink:
@@ -293,7 +293,7 @@ In the following example, the [Add entries](https://opensearch.org/docs/latest/d
 
 The `create` action ensures that documents with identical IDs aren't overwritten. The pipeline drops duplicate documents without any retry or DLQ event. This is a reasonable expectation for pipeline authors who use this action, because the goals is to avoid updating existing documents.
 
-```
+```yaml
 pipeline:
   ...
   processor:
@@ -310,7 +310,7 @@ pipeline:
 
 You might want to set an event's document ID to a field from a sub-object. In the following example, the OpenSearch sink plugin uses the sub-object `info/id` to generate a document ID.
 
-```
+```yaml
 sink:
   - opensearch:
        ...
@@ -319,7 +319,7 @@ sink:
 
 Given the following event, the pipeline will generate a document with the `_id` field set to `json001`:
 
-```
+```json
 {
    "fieldA":"arbitrary value",
    "info":{
@@ -337,7 +337,7 @@ You can use the `routing_field` option within the OpenSearch sink plugin to set 
 
 Routing supports JSON pointer syntax, so nested fields also are available, not just top-level fields.
 
-```
+```yaml
 sink:
   - opensearch:
        ...
@@ -347,7 +347,7 @@ sink:
 
 Given the following event, the plugin generates a document with the `_routing` field set to `abcd`:
 
-```
+```json
 {
    "id":"123",
    "metadata":{

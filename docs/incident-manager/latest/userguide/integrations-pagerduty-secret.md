@@ -37,7 +37,7 @@ The user that is configuring the response plan must have permission for `kms:Gen
 The following policy demonstrates these permissions. Replace each {{user input placeholder}} with your own information.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "key-consolepolicy-3",
@@ -82,7 +82,7 @@ For information about creating a new customer managed key, see [Creating symmetr
 If an existing customer managed key meets all the previous requirements, you can edit its policy to add these permissions. For information about updating the policy in a customer managed key, see [Changing a key policy](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying.html) in the *AWS Key Management Service Developer Guide*.
 You can specify a condition key to limit access even further. For example, the following policy allows access through Secrets Manager in the US East (Ohio) Region (us-east-2) only:
 
-```
+```json
 {
     "Sid": "Enable IM Permissions",
     "Effect": "Allow",
@@ -110,7 +110,7 @@ The IAM identity (user, role, or group) that creates the response plan must have
    + Choose the **Plaintext** tab.
    + Replace the default contents of the box with the following JSON structure:
 
-     ```
+     ```json
      {
          "pagerDutyToken": "{{pagerduty-token}}",
          "pagerDutyServiceRegion": "{{pagerduty-region}}",
@@ -130,7 +130,7 @@ The IAM identity (user, role, or group) that creates the response plan must have
 
      The following example shows a completed JSON secret containing the required PagerDuty credentials:
 
-     ```
+     ```json
      {
          "pagerDutyToken": "y_NbAkKc66ryYEXAMPLE",
          "pagerDutyServiceRegion": "US",
@@ -145,7 +145,7 @@ The IAM identity (user, role, or group) that creates the response plan must have
    + Choose **Edit permissions**.
    + Replace the default contents of the policy box with the following JSON structure:
 
-     ```
+     ```json
      {
          "Effect": "Allow",
          "Principal": {

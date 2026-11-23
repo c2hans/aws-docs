@@ -18,7 +18,7 @@ Because the service includes automatic numbering in the frame capture file names
 
 The following is an EventBridge sample event for a job with a `COMPLETE` status. It includes output file path information for a file group with a frame capture output.
 
-```
+```JSON
 {
     "detail": {
         "status": "COMPLETE",

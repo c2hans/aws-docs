@@ -63,7 +63,7 @@ Replace {{inputs highlighted in red}}, such as {{keypair}}, with your own values
 
 1. Create a CloudFormation template named `cluster_template.yaml` with the following content:
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: '2010-09-09'
    Description: >
      AWSParallelCluster CloudFormation Template
@@ -134,7 +134,7 @@ Replace {{inputs highlighted in red}}, such as {{keypair}}, with your own values
 
 1. Run the following AWS CLI command to deploy the CloudFormation stack for cluster creation and management.
 
-   ```
+   ```bash
    $ aws cloudformation deploy --template-file {{./cluster_template.yaml}} \
      --stack-name {{mycluster}} \
      --parameter-overrides KeyName={{keypair}} \
@@ -163,7 +163,7 @@ Access the cluster.
 
 1. After the CloudFormation stack deployment is complete, obtain the IP address of the head node with the following command:
 
-   ```
+   ```bash
    $ HEAD_NODE_IP=$(aws cloudformation describe-stacks --stack-name={{mycluster}} --query "Stacks|[0].Outputs[?OutputKey=='HeadNodeIp']|[0].OutputValue" --output=text)
    ```
 
@@ -173,7 +173,7 @@ Access the cluster.
 
 1. Connect to the cluster head node by running the following command:
 
-   ```
+   ```bash
    $ ssh -i {{keyname.pem}} ec2-user@$HEAD_NODE_IP
    ```
 
@@ -184,12 +184,12 @@ Delete the cluster.
 
 1. Run the following AWS CLI command to delete the CloudFormation stack and cluster.
 
-   ```
+   ```bash
    $ aws cloudformation delete-stack --stack-name={{mycluster}}
    ```
 
 1. Check the stack delete status by running the following command.
 
-   ```
+   ```bash
    $ aws cloudformation describe-stacks --stack-name={{mycluster}}
    ```

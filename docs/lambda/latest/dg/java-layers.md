@@ -34,7 +34,7 @@ You can create layers that contain either third-party Java libraries or your own
    The following example includes [Jackson Databind](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind) for JSON processing. The `<build>` section uses the [maven-dependency-plugin](https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin) to create separate JAR files for each dependency instead of bundling them into a single uber-jar. If you want to create an uber-jar, use the [maven-shade-plugin](https://maven.apache.org/plugins/maven-shade-plugin/).
 **Example pom.xml**
 
-   ```
+   ```xml
    <dependencies>
        <dependency>
            <groupId>com.fasterxml.jackson.core</groupId>
@@ -107,7 +107,7 @@ You can create layers that contain either third-party Java libraries or your own
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Compress-Archive -Path .\java -DestinationPath .\layer.zip
    ```
 

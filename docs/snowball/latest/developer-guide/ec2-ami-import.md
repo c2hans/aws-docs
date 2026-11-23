@@ -42,7 +42,7 @@ When your snapshot is uploaded to Amazon S3, you can import it to your device. A
 
 This video shows how to import and register a snapshot as an Amazon EC2-compatible AMI, including creating a policy for an IAM user.
 
-[![AWS Videos](https://img.youtube.com/vi/GDDJgQCtPRg?start=192&end=348/0.jpg)](https://www.youtube.com/watch?v=GDDJgQCtPRg?start=192&end=348)
+[![AWS Videos](https://img.youtube.com/vi/GDDJgQCtPRg/0.jpg)](https://www.youtube.com/watch?v=GDDJgQCtPRg)
 
 **To import the snapshot to your device**
 
@@ -67,7 +67,7 @@ This video shows how to import and register a snapshot as an Amazon EC2-compatib
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -93,7 +93,7 @@ This video shows how to import and register a snapshot as an Amazon EC2-compatib
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -124,7 +124,7 @@ The process of creating an Amazon EC2-compatible AMI from an image imported as a
 
 This video shows how to register a snapshot as an Amazon EC2-compatible AMI.
 
-[![AWS Videos](https://img.youtube.com/vi/GDDJgQCtPRg?start=222&end=255/0.jpg)](https://www.youtube.com/watch?v=GDDJgQCtPRg?start=222&end=255)
+[![AWS Videos](https://img.youtube.com/vi/GDDJgQCtPRg/0.jpg)](https://www.youtube.com/watch?v=GDDJgQCtPRg)
 
 **To register an image imported as a snapshot**
 

@@ -31,7 +31,7 @@ A `SUPER` expression or column.
 
 To check if `TRUE` is a `BOOLEAN` using the IS\_BOOLEAN function, use the following example.
 
-```
+```sql
 CREATE TABLE t(s SUPER);
 
 INSERT INTO t VALUES (TRUE);

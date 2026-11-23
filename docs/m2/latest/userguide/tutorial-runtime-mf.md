@@ -171,7 +171,7 @@ To store credentials securely for the Amazon RDS instance, first create an AWS K
 
 1. On the review screen, edit the **Key policy**, then enter the following **inside the existing "Statement" array**:
 
-   ```
+   ```json
    {
         "Sid" : "Allow access for Mainframe Modernization Service",
         "Effect" : "Allow",
@@ -219,7 +219,7 @@ Now store the database credentials securely using the AWS Secrets Manager and AW
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -319,7 +319,7 @@ When you've created your environment, a banner appears that says `Environment na
 
    Enter the following application definition in the editor:
 
-   ```
+   ```json
    {
      "template-version": "2.0",
      "source-locations": [
@@ -434,7 +434,7 @@ When the CardDemo application deploys successfully, the status changes to **Read
 
 1. Copy and paste the following JSON but don't choose "Submit" yet. This JSON contains all the data sets required for the demo application but needs your Amazon S3 bucket details.
 
-   ```
+   ```json
    {
        "dataSets": [
            {

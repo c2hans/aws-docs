@@ -85,6 +85,10 @@ You can work with snapshots on your instance's management page on the **Snapshot
 ------
 #### [ Bitnami ]
 
+**This blueprint packaged by Bitnami was deprecated on November 19, 2026**
+You can no longer create new instances with this blueprint. Existing instances and snapshots are not affected; you can keep using them and can still create new instances from snapshots. You are responsible for keeping the software on these instances up to date. When creating new instances, we recommend using the equivalent blueprint packaged by Lightsail if available. [Learn more](amazon-lightsail-faq-bitnami-blueprints.md)
+If you have an existing instance that uses a blueprint packaged by Bitnami and want to migrate to a blueprint packaged by Lightsail, see [Migrating from Bitnami blueprints to Lightsail blueprints](migrate-from-bitnami-to-lightsail-blueprints.md).
+
 <a name="amazon-lightsail-nginx-get-the-default-user-password"></a>**Step 1: Get the default application password for your Nginx instance**
 
 You need the default application password to access pre-installed applications or services on your instance.

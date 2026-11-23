@@ -6,7 +6,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
 # tags
 
-```
+```json
 {
 "additionalProperty0": "string",
 "additionalProperty1": "string",

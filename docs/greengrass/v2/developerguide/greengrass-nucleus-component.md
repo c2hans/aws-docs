@@ -96,7 +96,7 @@ You can use AWS IoT Device Tester for AWS IoT Greengrass to verify that your dev
 On Ubuntu 25.10 and later, the default `sudo` implementation does not support the `-E` (preserve environment) flag. Without this flag, the system does not forward environment variables to components that run as a different system user. As a result, those components fail to start.
 To resolve this issue, switch to the classic `sudo` implementation (`sudo.ws`). You must make this change because AWS IoT Greengrass uses the `-E` flag to pass environment variables to component processes.
 
-```
+```bash
 sudo update-alternatives --set sudo /usr/bin/sudo.ws
 ```
 
@@ -476,7 +476,7 @@ This initial configuration is essential because devices process multiple deploym
 
 **Example: Configuration merge update**
 
-```
+```json
 {
   "iotRoleAlias": "GreengrassCoreTokenExchangeRoleAlias",
   "networkProxy": {
@@ -525,14 +525,14 @@ This component uses the following log file.
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
   ```
 

@@ -14,7 +14,7 @@ The following code examples show how to use `ListTagsForVault`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List tags for an Amazon S3 Glacier vault.
     /// </summary>

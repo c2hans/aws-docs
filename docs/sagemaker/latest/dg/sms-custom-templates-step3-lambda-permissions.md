@@ -37,7 +37,7 @@ Additionally, if you want the user to be able to access and deploy the Ground Tr
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -79,7 +79,7 @@ If the pre-annotation or post-annotation Lambda function names do not include on
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -119,7 +119,7 @@ To allow a Lambda function to assume a SageMaker AI execution role, you must att
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": {
@@ -139,7 +139,7 @@ To allow a Lambda function to assume a SageMaker AI execution role, you must att
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -165,7 +165,7 @@ You can add a policy similar to the following to the post-annotation Lambda func
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

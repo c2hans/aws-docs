@@ -44,7 +44,7 @@ The following Java example shows how to create a Raw RSA keyring with the public
 ------
 #### [ Java ]
 
-```
+```java
 final CreateRawRsaKeyringInput keyringInput = CreateRawRsaKeyringInput.builder()
         .keyName("{{RSA_2048_06}}")
         .keyNamespace("{{HSM_01}}")
@@ -61,7 +61,7 @@ IKeyring rawRsaKeyring = matProv.CreateRawRsaKeyring(keyringInput);
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var keyNamespace = "{{HSM_01}}";
 var keyName = "{{RSA_2048_06}}";
 
@@ -87,7 +87,7 @@ var rawRsaKeyring = matProv.CreateRawRsaKeyring(keyringInput);
 ------
 #### [ Rust ]
 
-```
+```rs
 let mpl_config = MaterialProvidersConfig::builder().build()?;
 let mpl = mpl_client::Client::from_conf(mpl_config)?;
 let raw_rsa_keyring = mpl

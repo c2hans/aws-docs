@@ -175,7 +175,7 @@ The remote commands system uses a request/response pattern over MQTT:
 
 When sending a command, the Lambda publishes the following JSON to the MQTT topic `cms/commands/{vehicleId}/request`:
 
-```
+```json
 {
   "commandId": "a1b2c3d4e5f6",
   "commandName": "lock_doors",
@@ -192,7 +192,7 @@ When sending a command, the Lambda publishes the following JSON to the MQTT topi
 
 The vehicle publishes a response to `cms/commands/{vehicleId}/response`:
 
-```
+```json
 {
   "commandId": "a1b2c3d4e5f6",
   "vehicleId": "VEH-0049",

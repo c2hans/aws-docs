@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/api-getsign
 
 The following Java example shows how to use the [`GetSigningPlatform`](https://docs.aws.amazon.com/signer/latest/api/API_GetSigningPlatform.html) operation.
 
-```
+```java
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.services.signer.AWSsigner;
 import com.amazonaws.services.signer.AWSsignerClient;

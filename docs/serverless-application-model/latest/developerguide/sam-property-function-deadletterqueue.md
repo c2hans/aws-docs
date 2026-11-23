@@ -16,7 +16,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-deadletterqueue-syntax.yaml"></a>
 
-```
+```yaml
   [TargetArn](#sam-function-deadletterqueue-targetarn): {{String}}
   [Type](#sam-function-deadletterqueue-type): {{String}}
 ```
@@ -48,7 +48,7 @@ Dead Letter Queue example for an SNS topic.
 #### YAML
 <a name="sam-property-function-deadletterqueue--examples--deadletterqueue--yaml"></a>
 
-```
+```yaml
 DeadLetterQueue:
   Type: SNS
   TargetArn: arn:aws:sns:us-east-2:123456789012:my-topic

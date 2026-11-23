@@ -72,7 +72,7 @@ To instrument AWS SDK clients, require the `aws-xray-sdk/lambda` module after cr
 
 **Example [blank-ruby/function/lambda\_function.rb](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/blank-ruby/function/lambda_function.rb) – Tracing an AWS SDK client**
 
-```
+```ruby
 # lambda_function.rb
 require 'logger'
 require 'json'

@@ -17,7 +17,7 @@ L2 constructs have a `grants` property for easy access. You can also create a Gr
 
 **Example**
 
-```
+```javascript
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
@@ -32,7 +32,7 @@ const l1Bucket = new s3.CfnBucket(this, 'L1Bucket');
 s3.BucketGrants.fromBucket(l1Bucket).read(myRole);
 ```
 
-```
+```javascript
 const s3 = require('aws-cdk-lib/aws-s3');
 const iam = require('aws-cdk-lib/aws-iam');
 
@@ -47,7 +47,7 @@ const l1Bucket = new s3.CfnBucket(this, 'L1Bucket');
 s3.BucketGrants.fromBucket(l1Bucket).read(myRole);
 ```
 
-```
+```python
 import aws_cdk.aws_s3 as s3
 import aws_cdk.aws_iam as iam
 
@@ -62,7 +62,7 @@ l1_bucket = s3.CfnBucket(self, "L1Bucket")
 s3.BucketGrants.from_bucket(l1_bucket).read(my_role)
 ```
 
-```
+```java
 import software.amazon.awscdk.services.s3.*;
 import software.amazon.awscdk.services.iam.*;
 
@@ -77,7 +77,7 @@ CfnBucket l1Bucket = new CfnBucket(this, "L1Bucket");
 BucketGrants.fromBucket(l1Bucket).read(myRole);
 ```
 
-```
+```csharp
 using Amazon.CDK.AWS.S3;
 using Amazon.CDK.AWS.IAM;
 
@@ -92,7 +92,7 @@ var l1Bucket = new CfnBucket(this, "L1Bucket");
 BucketGrants.FromBucket(l1Bucket).Read(myRole);
 ```
 
-```
+```go
 import (
 	"github.com/aws/jsii-runtime-go"
 	awss3 "github.com/aws/aws-cdk-go/awscdk/v2/awss3"
@@ -116,7 +116,7 @@ You can combine Facades with [Mixins](mixins.md) to get a full L2-like experienc
 
 **Example**
 
-```
+```javascript
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
@@ -132,7 +132,7 @@ const role = new iam.Role(this, 'MyRole', {
 s3.BucketGrants.fromBucket(bucket).read(role);
 ```
 
-```
+```javascript
 const s3 = require('aws-cdk-lib/aws-s3');
 const iam = require('aws-cdk-lib/aws-iam');
 
@@ -148,7 +148,7 @@ const role = new iam.Role(this, 'MyRole', {
 s3.BucketGrants.fromBucket(bucket).read(role);
 ```
 
-```
+```python
 import aws_cdk.aws_s3 as s3
 import aws_cdk.aws_iam as iam
 
@@ -164,7 +164,7 @@ role = iam.Role(self, "MyRole",
 s3.BucketGrants.from_bucket(bucket).read(role)
 ```
 
-```
+```java
 import software.amazon.awscdk.services.s3.*;
 import software.amazon.awscdk.services.iam.*;
 
@@ -180,7 +180,7 @@ Role role = Role.Builder.create(this, "MyRole")
 BucketGrants.fromBucket(bucket).read(role);
 ```
 
-```
+```csharp
 using Amazon.CDK.AWS.S3;
 using Amazon.CDK.AWS.IAM;
 
@@ -197,7 +197,7 @@ var role = new Role(this, "MyRole", new RoleProps
 BucketGrants.FromBucket(bucket).Read(role);
 ```
 
-```
+```go
 bucket := awss3.NewCfnBucket(stack, jsii.String("MyBucket"), nil)
 bucket.With(awss3.NewBucketVersioning())
 bucket.With(awss3.NewBucketBlockPublicAccess())

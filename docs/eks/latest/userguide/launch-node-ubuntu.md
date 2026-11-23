@@ -22,7 +22,7 @@ You can deploy to Amazon EC2 instances with `x86` or Arm processors. However, in
 
 This procedure requires `eksctl` version `0.215.0` or later. You can check your version with the following command:
 
-```
+```bash
 eksctl version
 ```
 
@@ -35,7 +35,7 @@ This procedure only works for clusters that were created with `eksctl`.
 **Important**
 To deploy a node group to AWS Outposts, AWS Wavelength, or AWS Local Zone subnets, don’t pass AWS Outposts, AWS Wavelength, or AWS Local Zone subnets when you create the cluster. You must specify the subnets in the following example. For more information see [Create a nodegroup from a config file](https://eksctl.io/usage/nodegroups/#creating-a-nodegroup-from-a-config-file) and [Config file schema](https://eksctl.io/usage/schema/) in the `eksctl` documentation. Replace {{region-code}} with the AWS Region that your cluster is in.
 
-   ```
+   ```yaml
    cat >ubuntu.yaml <<EOF
    ---
    apiVersion: eksctl.io/v1alpha5
@@ -70,7 +70,7 @@ To deploy a node group to AWS Outposts, AWS Wavelength, or AWS Local Zone subnet
 
 1. Deploy your nodes with the following command.
 
-   ```
+   ```bash
    eksctl create nodegroup --config-file=ubuntu.yaml
    ```
 
@@ -78,7 +78,7 @@ To deploy a node group to AWS Outposts, AWS Wavelength, or AWS Local Zone subnet
 
    Several lines are output while the nodes are created. One of the last lines of output is the following example line.
 
-   ```
+   ```bash
    [✔]  created 1 nodegroup(s) in cluster "my-cluster"
    ```
 

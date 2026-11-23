@@ -13,7 +13,7 @@ To configure automated Lambda function deployment, create a workflow file in you
 
 **Example GitHub Actions workflow for Lambda deployment**
 
-```
+```yaml
 name: Deploy AWS Lambda
 
 on:

@@ -22,7 +22,7 @@ The following customer managed policy, when attached to an AWS Cloud9 users grou
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -52,7 +52,7 @@ The following customer managed policy, when attached to an AWS Cloud9 users grou
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -83,7 +83,7 @@ For an AWS Cloud9 users group, detach the `AWSCloud9User` managed policy from th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -161,7 +161,7 @@ For an AWS Cloud9 users group, detach the `AWSCloud9User` managed policy from th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

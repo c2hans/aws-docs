@@ -69,7 +69,7 @@ To create the connector in the Amazon EVS console or with the AWS CLI, use the f
 
    The following example creates a vCenter connector. The example ARN uses the `aws` partition. In other partitions, replace `aws` with your partition. Replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws evs create-environment-connector \
        --environment-id env-abcde12345 \
        --type VCENTER \
@@ -79,7 +79,7 @@ To create the connector in the Amazon EVS console or with the AWS CLI, use the f
 
 1. To verify, run the `list-environment-connectors` command, and check that the connector state is `ACTIVE` and the reachability check result is `PASSED`.
 
-   ```
+   ```bash
    aws evs list-environment-connectors \
        --environment-id env-abcde12345
    ```

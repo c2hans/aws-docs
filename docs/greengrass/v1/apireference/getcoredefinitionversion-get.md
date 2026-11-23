@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="getcoredefinitionversion-get-cli"></a>
 
-```
+```bash
 aws greengrass get-core-definition-version \
   --core-definition-id <value> \
   --core-definition-version-id <value>  \
@@ -25,7 +25,7 @@ aws greengrass get-core-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "CoreDefinitionId": "string",
 "CoreDefinitionVersionId": "string"
@@ -52,7 +52,7 @@ type: string
 Success.
  [ GetCoreDefinitionVersionResponse](definitions-getcoredefinitionversionresponse.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -116,7 +116,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

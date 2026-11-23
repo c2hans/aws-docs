@@ -21,7 +21,7 @@ You can find the Amazon S3 prefix to the explainability artifacts generated for 
 
 The following is an example of analysis content that you could find in the explainability artifacts.
 
-```
+```JSON
 {
     "text": "It was a fantastic movie!",
     "predicted_label": 2,

@@ -18,6 +18,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 
 ![Insurance lake reference architecture diagram](https://docs.aws.amazon.com/wellarchitected/latest/financial-services-industry-lens/images/insurance-lake-reference-architecture.png)
 
+*Figure 6: Insurance data lake reference architecture*
+
  **Architecture description**
 
 1. Source data file is dropped into the Collect S3 bucket. Mapping file, transform file, and data quality file are present in the ETL-Scripts S3 bucket .

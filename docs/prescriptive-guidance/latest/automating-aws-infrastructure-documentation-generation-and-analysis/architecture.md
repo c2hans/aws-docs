@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automating-
 ---
 
 # Architecture of the Infrastructure Documentation Generator
-<a name="architecture"></a>
 
 The Infrastructure Documentation Generator is designed with a modular architecture. The system works in the following major phases:
 + Resource scanning –The initial process of querying AWS services to discover and inventory resources, collecting metadata and policies needed for further documentation and dependency analysis. The subsequent phases rely on the data collected in this phase.

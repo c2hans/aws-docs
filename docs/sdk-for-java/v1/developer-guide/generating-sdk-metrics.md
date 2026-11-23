@@ -16,7 +16,7 @@ The AWS SDK for Java can generate metrics for visualization and monitoring with 
 
 You need to add the following Maven dependency to enable the SDK to send metrics to CloudWatch.
 
-```
+```xml
 <dependencyManagement>
   <dependencies>
     <dependency>
@@ -42,7 +42,7 @@ You need to add the following Maven dependency to enable the SDK to send metrics
 
 AWS SDK for Java metrics are *disabled by default*. To enable it for your local development environment, include a system property that points to your AWS security credential file when starting up the JVM. For example:
 
-```
+```java
 -Dcom.amazonaws.sdk.enableDefaultMetrics=credentialFile=/path/aws.properties
 ```
 
@@ -51,13 +51,13 @@ You need to specify the path to your credential file so that the SDK can upload 
 **Note**
 If you are accessing AWS from an Amazon EC2 instance using the Amazon EC2 instance metadata service, you don’t need to specify a credential file. In this case, you need only specify:
 
-```
+```java
 -Dcom.amazonaws.sdk.enableDefaultMetrics
 ```
 
 All metrics captured by the AWS SDK for Java are under the namespace **AWSSDK/Java**, and are uploaded to the CloudWatch default region (*us-east-1*). To change the region, specify it by using the `cloudwatchRegion` attribute in the system property. For example, to set the CloudWatch region to *us-east-1*, use:
 
-```
+```java
 -Dcom.amazonaws.sdk.enableDefaultMetrics=credentialFile=/path/aws.properties,cloudwatchRegion={region_api_default}
 ```
 
@@ -82,7 +82,7 @@ Machine Metrics
 
   If you want to exclude Machine Metrics, add `excludeMachineMetrics` to the system property:
 
-  ```
+  ```java
   -Dcom.amazonaws.sdk.enableDefaultMetrics=credentialFile=/path/aws.properties,excludeMachineMetrics
   ```
 

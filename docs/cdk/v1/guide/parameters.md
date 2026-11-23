@@ -34,7 +34,7 @@ You can define parameters in any scope, but we recommend defining parameters at 
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const uploadBucketName = new CfnParameter(this, "uploadBucketName", {
   type: "String",
   description: "The name of the Amazon S3 bucket where uploaded files will be stored."});
@@ -43,7 +43,7 @@ const uploadBucketName = new CfnParameter(this, "uploadBucketName", {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const uploadBucketName = new CfnParameter(this, "uploadBucketName", {
   type: "String",
   description: "The name of the Amazon S3 bucket where uploaded files will be stored."});
@@ -52,7 +52,7 @@ const uploadBucketName = new CfnParameter(this, "uploadBucketName", {
 ------
 #### [ Python ]
 
-```
+```python
 upload_bucket_name = CfnParameter(self, "uploadBucketName", type="String",
     description="The name of the Amazon S3 bucket where uploaded files will be stored.")
 ```
@@ -60,7 +60,7 @@ upload_bucket_name = CfnParameter(self, "uploadBucketName", type="String",
 ------
 #### [ Java ]
 
-```
+```java
 CfnParameter uploadBucketName = CfnParameter.Builder.create(this, "uploadBucketName")
         .type("String")
         .description("The name of the Amazon S3 bucket where uploaded files will be stored")
@@ -70,7 +70,7 @@ CfnParameter uploadBucketName = CfnParameter.Builder.create(this, "uploadBucketN
 ------
 #### [ C\# ]
 
-```
+```csharp
 var uploadBucketName = new CfnParameter(this, "uploadBucketName", new CfnParameterProps
 {
     Type = "String",
@@ -144,7 +144,7 @@ For example, to use a parameter in a Bucket definition:
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const bucket = new Bucket(this, "myBucket",
   { bucketName: uploadBucketName.valueAsString});
 ```
@@ -152,7 +152,7 @@ const bucket = new Bucket(this, "myBucket",
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const bucket = new Bucket(this, "myBucket",
   { bucketName: uploadBucketName.valueAsString});
 ```
@@ -160,7 +160,7 @@ const bucket = new Bucket(this, "myBucket",
 ------
 #### [ Python ]
 
-```
+```python
 bucket = Bucket(self, "myBucket",
     bucket_name=upload_bucket_name.value_as_string)
 ```
@@ -168,7 +168,7 @@ bucket = Bucket(self, "myBucket",
 ------
 #### [ Java ]
 
-```
+```java
 Bucket bucket = Bucket.Builder.create(this, "myBucket")
         .bucketName(uploadBucketName.getValueAsString())
         .build();
@@ -177,7 +177,7 @@ Bucket bucket = Bucket.Builder.create(this, "myBucket")
 ------
 #### [ C\# ]
 
-```
+```csharp
 var bucket = new Bucket(this, "myBucket")
 {
     BucketName = uploadBucketName.ValueAsString

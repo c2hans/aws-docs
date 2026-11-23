@@ -1,0 +1,171 @@
+---
+source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateCIMDPolicy.html
+---
+
+# CreateCIMDPolicy
+
+Creates a Client ID Metadata Document (CIMD) policy for an app client. With a CIMD policy, OAuth clients can identify themselves to your user pool with an HTTPS URL as their client ID. Amazon Cognito retrieves the client metadata document from that URL and accepts the client only when the URL matches one of the URL patterns in the policy.
+
+**Note**
+Amazon Cognito evaluates AWS Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.
+ [Signing AWS API Requests](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html)
+ [Using the Amazon Cognito user pools API and user pool endpoints](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html)
+
+## Request Syntax
+<a name="API_CreateCIMDPolicy_RequestSyntax"></a>
+
+```
+{
+   "CacheDuration": {{number}},
+   "ClientId": "{{string}}",
+   "PolicyName": "{{string}}",
+   "URLPatterns": [ "{{string}}" ],
+   "UserPoolId": "{{string}}"
+}
+```
+
+## Request Parameters
+<a name="API_CreateCIMDPolicy_RequestParameters"></a>
+
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [CacheDuration](#API_CreateCIMDPolicy_RequestSyntax) **   <a name="CognitoUserPools-CreateCIMDPolicy-request-CacheDuration"></a>
+The length of time, in seconds, that Amazon Cognito caches a client metadata document when the document's `Cache-Control` header doesn't set a `max-age` between one day and one year. When the header sets a `max-age` in that range, Amazon Cognito uses the header value instead. The value must be between 86,400 seconds (one day) and 31,556,952 seconds (one year). If you don't set a value, the default is 86,400 seconds.
+Type: Integer
+Valid Range: Minimum value of 86400. Maximum value of 31556952.
+Required: No
+
+ ** [ClientId](#API_CreateCIMDPolicy_RequestSyntax) **   <a name="CognitoUserPools-CreateCIMDPolicy-request-ClientId"></a>
+The ID of the app client that you want to associate with the CIMD policy.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[\w+]+`
+Required: Yes
+
+ ** [PolicyName](#API_CreateCIMDPolicy_RequestSyntax) **   <a name="CognitoUserPools-CreateCIMDPolicy-request-PolicyName"></a>
+A friendly name for the CIMD policy.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 32.
+Pattern: `[\p{L}\p{M}\p{S}\p{N}\p{P}\p{Z}]+`
+Required: Yes
+
+ ** [URLPatterns](#API_CreateCIMDPolicy_RequestSyntax) **   <a name="CognitoUserPools-CreateCIMDPolicy-request-URLPatterns"></a>
+One to five HTTPS URL patterns. Amazon Cognito accepts a client ID metadata document URL only when it matches one of these patterns. Each pattern can contain at most one `*` wildcard, which must replace a whole domain label or path segment. For example, `https://*.example.com/client.json` or `https://client.example.com/cimd/*`.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 5 items.
+Length Constraints: Minimum length of 12. Maximum length of 256.
+Pattern: `^https://[!$-;=@-\[\]_a-z~]+$`
+Required: Yes
+
+ ** [UserPoolId](#API_CreateCIMDPolicy_RequestSyntax) **   <a name="CognitoUserPools-CreateCIMDPolicy-request-UserPoolId"></a>
+The ID of the user pool where you want to create the CIMD policy.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 55.
+Pattern: `[\w-]+_[0-9a-zA-Z]+`
+Required: Yes
+
+## Response Syntax
+<a name="API_CreateCIMDPolicy_ResponseSyntax"></a>
+
+```
+{
+   "CIMDPolicy": {
+      "CacheDuration": number,
+      "CIMDPolicyId": "string",
+      "ClientId": "string",
+      "CreationDate": number,
+      "LastModifiedDate": number,
+      "PolicyName": "string",
+      "URLPatterns": [ "string" ],
+      "UserPoolId": "string"
+   }
+}
+```
+
+## Response Elements
+<a name="API_CreateCIMDPolicy_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [CIMDPolicy](#API_CreateCIMDPolicy_ResponseSyntax) **   <a name="CognitoUserPools-CreateCIMDPolicy-response-CIMDPolicy"></a>
+The CIMD policy that you created.
+Type: [CIMDPolicyType](API_CIMDPolicyType.md) object
+
+## Errors
+<a name="API_CreateCIMDPolicy_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** ConcurrentModificationException **
+This exception is thrown if two or more modifications are happening concurrently.
+ ** message **
+The message provided when the concurrent exception is thrown.
+HTTP Status Code: 400
+
+ ** FeatureUnavailableInTierException **
+This exception is thrown when a feature that you attempted to use or configure isn't included in your user pool's current feature plan. This can occur when:
++ You configure a feature that your feature plan doesn't support.
++ You make a request that uses a feature that requires a higher feature plan.
+To resolve this issue, upgrade your user pool to a feature plan that includes the feature.
+HTTP Status Code: 400
+
+ ** InternalErrorException **
+This exception is thrown when Amazon Cognito encounters an internal error.
+ ** message **
+The message returned when Amazon Cognito throws an internal error exception.
+HTTP Status Code: 500
+
+ ** InvalidParameterException **
+This exception is thrown when the Amazon Cognito service encounters an invalid parameter.
+ ** message **
+The message returned when the Amazon Cognito service throws an invalid parameter exception.
+ ** reasonCode **
+The reason code of the exception.
+HTTP Status Code: 400
+
+ ** LimitExceededException **
+This exception is thrown when a user exceeds the limit for a requested AWS resource.
+ ** message **
+The message returned when Amazon Cognito throws a limit exceeded exception.
+HTTP Status Code: 400
+
+ ** NotAuthorizedException **
+This exception is thrown when a user isn't authorized.
+ ** message **
+The message returned when the Amazon Cognito service returns a not authorized exception.
+HTTP Status Code: 400
+
+ ** OperationNotEnabledException **
+This exception is thrown when an operation is not available in the current region or for the current user pool configuration. This can occur when attempting to perform operations that are not supported in secondary replica regions.
+HTTP Status Code: 400
+
+ ** ResourceNotFoundException **
+This exception is thrown when the Amazon Cognito service can't find the requested resource.
+ ** message **
+The message returned when the Amazon Cognito service returns a resource not found exception.
+HTTP Status Code: 400
+
+ ** TooManyRequestsException **
+This exception is thrown when the user has made too many requests for a given operation.
+ ** message **
+The message returned when the Amazon Cognito service returns a too many requests exception.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_CreateCIMDPolicy_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cognito-idp-2016-04-18/CreateCIMDPolicy)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cognito-idp-2016-04-18/CreateCIMDPolicy)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cognito-idp-2016-04-18/CreateCIMDPolicy)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cognito-idp-2016-04-18/CreateCIMDPolicy)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cognito-idp-2016-04-18/CreateCIMDPolicy)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cognito-idp-2016-04-18/CreateCIMDPolicy)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cognito-idp-2016-04-18/CreateCIMDPolicy)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cognito-idp-2016-04-18/CreateCIMDPolicy)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/cognito-idp-2016-04-18/CreateCIMDPolicy)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cognito-idp-2016-04-18/CreateCIMDPolicy)

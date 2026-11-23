@@ -12,7 +12,7 @@ A finding whose issue could not be created, with the cause of the failure.
  ** code **   <a name="securityagent-Type-BatchExportFindingError-code"></a>
 The machine-readable failure category.
 Type: String
-Valid Values: `CLIENT_ERROR | INTERNAL_ERROR | STOPPED_BY_USER`
+Valid Values: `CLIENT_ERROR | INTERNAL_ERROR | STOPPED_BY_USER | PAUSED_BY_USER`
 Required: Yes
 
  ** findingId **   <a name="securityagent-Type-BatchExportFindingError-findingId"></a>

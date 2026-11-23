@@ -30,7 +30,7 @@ The following code example shows how to use `Get-HLTHEvent`.
 **Tools for PowerShell V5**
 **Example 1: This command returns events from AWS Personal Health Dashboard. The user adds the -Region parameter to see events available to the service in the US East (N. Virginia) Region, but the -Filter\_Region parameter filters for events that are logged in the EU (London) and US West (Oregon) Regions (eu-west-2 and us-west-2). The -Filter\_StartTime parameter filters for a range of times that events can start, while the -Filter\_EndTime parameter filters for a range of times that events can end. The result is a scheduled maintenance event for RDS that starts within the specified -Filter\_StartTime range, and ends within the scheduled -Filter\_EndTime range.**
 
-```
+```powershell
 Get-HLTHEvent -Region us-east-1 -Filter_Region "eu-west-2","us-west-2" -Filter_StartTime @{from="3/14/2019 6:30:00AM";to="3/15/2019 5:00:00PM"} -Filter_EndTime @{from="3/21/2019 7:00:00AM";to="3/21/2019 5:00:00PM"}
 ```
 **Output:**

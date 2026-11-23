@@ -12,7 +12,7 @@ End of support notice: On May 20, 2026, AWS will end support for Amazon Connect 
 
 Following is the schema of the input manifest file for the Speaker Enrollment Job:
 
-```
+```json
 {
   "Version": "string",
   "SpeakerEnrollmentRequests": [
@@ -47,7 +47,7 @@ Following is a description of each attribute of the input schema.
 
 Following is the schema of the output file generated for the Speaker Enrollment Job:
 
-```
+```json
 {
   "Version": "string",
   "Errors": [

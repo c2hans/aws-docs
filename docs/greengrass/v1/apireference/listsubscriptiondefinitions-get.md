@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="listsubscriptiondefinitions-get-cli"></a>
 
-```
+```bash
 aws greengrass list-subscription-definitions \
   [--max-results <value>] \
   [--next-token <value>]  \
@@ -25,7 +25,7 @@ aws greengrass list-subscription-definitions \
 
 cli-input-json format:
 
-```
+```json
 {
 "MaxResults": "integer",
 "NextToken": "string"
@@ -52,7 +52,7 @@ type: string
 
  [ ListDefinitionsResponse](definitions-listdefinitionsresponse.md)
 
-```
+```json
 {
 "Definitions": [
   {

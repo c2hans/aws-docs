@@ -129,7 +129,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of ListAgentAliases.
 
-```
+```json
 POST /agents/ABCDEFGHIJ/agentaliases/ HTTP/1.1
 Content-type: application/json
 

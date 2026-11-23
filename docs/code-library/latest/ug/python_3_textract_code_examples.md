@@ -29,7 +29,7 @@ The following code example shows how to use `AnalyzeDocument`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/textract#code-examples).
 
-```
+```python
 class TextractWrapper:
     """Encapsulates Textract functions."""
 
@@ -81,7 +81,7 @@ The following code example shows how to use `DetectDocumentText`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/textract#code-examples).
 
-```
+```python
 class TextractWrapper:
     """Encapsulates Textract functions."""
 
@@ -129,7 +129,7 @@ The following code example shows how to use `GetDocumentAnalysis`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/textract#code-examples).
 
-```
+```python
 class TextractWrapper:
     """Encapsulates Textract functions."""
 
@@ -173,7 +173,7 @@ The following code example shows how to use `StartDocumentAnalysis`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/textract#code-examples).
 Start an asynchronous job to analyze a document.
 
-```
+```python
 class TextractWrapper:
     """Encapsulates Textract functions."""
 
@@ -243,7 +243,7 @@ The following code example shows how to use `StartDocumentTextDetection`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/textract#code-examples).
 Start an asynchronous job to detect text in a document.
 
-```
+```python
 class TextractWrapper:
     """Encapsulates Textract functions."""
 

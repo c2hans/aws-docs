@@ -52,7 +52,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### ThumbnailData schema
 <a name="inputdevices-inputdeviceid-thumbnaildata-response-body-thumbnaildata-example"></a>
 
-```
+```json
 {
   "body": "string"
 }
@@ -61,7 +61,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### InvalidRequest schema
 <a name="inputdevices-inputdeviceid-thumbnaildata-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -70,7 +70,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### AccessDenied schema
 <a name="inputdevices-inputdeviceid-thumbnaildata-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -79,7 +79,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### ResourceNotFound schema
 <a name="inputdevices-inputdeviceid-thumbnaildata-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -88,7 +88,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### LimitExceeded schema
 <a name="inputdevices-inputdeviceid-thumbnaildata-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -97,7 +97,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### InternalServiceError schema
 <a name="inputdevices-inputdeviceid-thumbnaildata-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -106,7 +106,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### BadGatewayException schema
 <a name="inputdevices-inputdeviceid-thumbnaildata-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -115,7 +115,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### GatewayTimeoutException schema
 <a name="inputdevices-inputdeviceid-thumbnaildata-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

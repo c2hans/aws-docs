@@ -27,7 +27,7 @@ The inference operator's execution role requires additional permissions for cust
 ### ACM and Amazon S3 permissions for custom certificates
 <a name="sagemaker-hyperpod-model-deployment-custom-certs-iam-acm"></a>
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -64,7 +64,7 @@ If your Amazon S3 bucket name starts with `hyperpod-tls`, the Amazon S3 permissi
 ### Route 53 permissions for DNS management
 <a name="sagemaker-hyperpod-model-deployment-custom-certs-iam-r53"></a>
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -105,7 +105,7 @@ Amazon S3 URI where the operator uploads the public certificate. Required unless
 
 The following is an example YAML file for creating an endpoint with a custom certificate.
 
-```
+```yaml
 apiVersion: inference.sagemaker.aws.amazon.com/v1
 kind: InferenceEndpointConfig
 metadata:
@@ -156,7 +156,7 @@ Route 53 DNS management requires a custom certificate to be configured and uses 
 
 To enable Route 53 DNS management, add the `dnsConfig` section to your spec:
 
-```
+```yaml
 spec:
   tlsConfig:
     customCertificateConfig:
@@ -191,14 +191,14 @@ To find the ALB hostname for your deployment, the ingress name depends on whethe
 
 **Without intelligent routing:** The ingress is named `alb-<deployment-name>` in your namespace.
 
-```
+```bash
 kubectl get ingress alb-<deployment-name> -n <namespace> \
   -o jsonpath='{.status.loadBalancer.ingress[0].hostname}'
 ```
 
 **With intelligent routing:** The ingress is named `alb-<deployment-name>-<namespace>` in the `hyperpod-inference-system` namespace.
 
-```
+```bash
 kubectl get ingress alb-<deployment-name>-<namespace> -n hyperpod-inference-system \
   -o jsonpath='{.status.loadBalancer.ingress[0].hostname}'
 ```
@@ -216,7 +216,7 @@ If the ALB is recreated (for example, after deleting and redeploying the endpoin
 ### Check the custom certificate status
 <a name="sagemaker-hyperpod-model-deployment-custom-certs-verify-cert"></a>
 
-```
+```bash
 kubectl describe InferenceEndpointConfig my-model -n my-namespace
 ```
 
@@ -264,7 +264,7 @@ DNS health values:
 
 If you configured Route 53 DNS management, invoke your endpoint using your custom domain after the DNS status shows `Active`. If you configured only a custom certificate without DNS management, use the ALB hostname from the ingress (see [Use a custom certificate without Route 53 DNS management](#sagemaker-hyperpod-model-deployment-custom-certs-no-dns)).
 
-```
+```bash
 curl -X POST https://api.example.com/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{"model": "my-llm", "messages": [{"role": "user", "content": "Hello"}]}'
@@ -273,7 +273,7 @@ curl -X POST https://api.example.com/v1/chat/completions \
 **Note**
 To invoke through the SageMaker AI endpoint, set `endpointName` in your `InferenceEndpointConfig` or `sageMakerEndpoint.name` in your `JumpStartModel` spec. If `endpointName` is not set, no SageMaker AI endpoint is created and only direct ALB invocation is available.
 
-```
+```bash
 aws sagemaker-runtime invoke-endpoint \
   --endpoint-name my-model \
   --content-type "application/json" \

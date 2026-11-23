@@ -73,7 +73,7 @@ The examples in this section use the following values:
 
 To share a runtime with specific accounts, list the accounts in the `Principal` element. The following policy lets accounts `111122223333` and `444455556666` use all aliases and versions of the `companyphp8` runtime. The second statement lets these accounts view details about the runtime and its aliases and versions.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -128,7 +128,7 @@ When you share with an account root principal, an administrator in that account 
 
 To share a runtime with all accounts in an organization, set `Principal` to `*` and add the `aws:PrincipalOrgID` condition key. The following policy lets all accounts in organization `o-a1b2c3d4e5` use all aliases and versions of the runtime.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -161,7 +161,7 @@ Accounts that join the organization later get access automatically. Accounts tha
 
 To share a runtime with the accounts in an OU, use the `aws:PrincipalOrgPaths` condition key. The following policy lets accounts in OU `ou-ab12-11111111` and its child OUs use all aliases and versions of the runtime.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -194,7 +194,7 @@ The OU path includes the organization ID, the root ID, and each OU ID in the pat
 
 To share a runtime with all AWS accounts, set `Principal` to `*` and don't add a condition. Third-party runtime publishers can use this approach to publish runtimes for any Lambda customer. The following policy lets any account use the `prod` alias of the runtime.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -223,7 +223,7 @@ You don't have to share all aliases of a runtime. For example, you might use the
 
 You can also limit which versions consumers can pin functions to. To do this, list the version ARNs for the `lambda:AssociateRuntimeVersion` action. The following policy lets accounts `111122223333` and `444455556666` use only the `prod` alias. It also lets them pin functions to versions `v8.3.0` and `v8.3.1`.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -267,7 +267,7 @@ A policy can have several statements. Each statement can grant different access 
 + All accounts in organization `o-a1b2c3d4e5` can use all aliases and versions.
 + Partner account `444455556666`, which is outside the organization, can use only the `prod` alias.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -331,7 +331,7 @@ When you attach a policy, the new policy replaces the runtime's existing policy.
 
 1. To attach the policy, run the following command. For `--resource-arn`, specify the runtime ARN. This command replaces any existing policy on the runtime.
 
-   ```
+   ```bash
    aws lambda put-resource-policy \
      --resource-arn arn:aws:lambda:{{us-east-1}}:{{123456789012}}:runtime/{{companyphp8}} \
      --policy file://policy.json
@@ -340,7 +340,7 @@ When you attach a policy, the new policy replaces the runtime's existing policy.
 **To view a runtime's resource-based policy (AWS CLI)**
 + Run the following command.
 
-  ```
+  ```bash
   aws lambda get-resource-policy \
     --resource-arn arn:aws:lambda:{{us-east-1}}:{{123456789012}}:runtime/{{companyphp8}}
   ```
@@ -348,7 +348,7 @@ When you attach a policy, the new policy replaces the runtime's existing policy.
 **To remove a runtime's resource-based policy (AWS CLI)**
 + Run the following command.
 
-  ```
+  ```bash
   aws lambda delete-resource-policy \
     --resource-arn arn:aws:lambda:{{us-east-1}}:{{123456789012}}:runtime/{{companyphp8}}
   ```
@@ -364,7 +364,7 @@ For runtime versions and aliases, `aws:ResourceTag` uses the tags on the runtime
 
 The following identity-based policy lets a principal use runtime aliases and runtime versions only from runtimes that have the tag `approved` with the value `true`.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -409,7 +409,7 @@ If the runtime is in another account, the runtime's resource-based policy isn't 
 
 The following identity-based policy is for a role in consumer account `111122223333`. It lets the role create and update functions that use the `prod` alias of the `companyphp8` runtime in publisher account `123456789012`. It also lets the role pin functions to a runtime version and pass an execution role to Lambda.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -474,7 +474,7 @@ Lambda checks the `Associate` actions only when a principal creates a function, 
 
 To find functions that use a customer-managed runtime, run the following command in each account and Region. The command lists the function ARN, runtime ARN, and runtime alias of each Event Function version, including `$LATEST` and published versions. The `list-functions` command doesn't return Lambda Web Functions, which can't use customer-managed runtimes.
 
-```
+```bash
 aws lambda list-functions --function-version ALL \
   --region {{us-east-1}} \
   --query "Functions[?Runtime=='custom'].[FunctionArn,RuntimeConfig.RuntimeArn,RuntimeConfig.RuntimeAlias]" \
@@ -490,7 +490,7 @@ If a function uses a runtime that you don't trust, work with the function owner 
 
 The following SCP stops principals in the affected accounts from using any customer-managed runtime in their functions.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -514,7 +514,7 @@ This policy applies only to customer-managed runtimes. It doesn't affect functio
 
 To allow only runtimes that accounts in your organization own, use the `aws:ResourceOrgID` condition key. The following SCP denies the `Associate` actions for runtimes that accounts outside organization `o-a1b2c3d4e5` own.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -543,7 +543,7 @@ For more information, see [aws:ResourceOrgID](https://docs.aws.amazon.com/IAM/la
 
 To allow only runtimes that specific accounts own, use the `aws:ResourceAccount` condition key. For example, you might allow only runtimes that your platform team publishes. The following SCP denies the `Associate` actions unless the runtime owner is account `123456789012` or `999988887777`.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -575,7 +575,7 @@ When you specify several values for `StringNotEquals`, the deny applies only if 
 
 To allow only specific runtimes, use the `NotResource` element in a deny statement. For example, you might approve one runtime from a trusted third-party publisher. The following SCP denies the `Associate` actions for all runtimes except the `thirdpartyruntime` runtime that account `999988887777` owns.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -599,7 +599,7 @@ The wildcard in the Region part of each ARN covers the runtime in every Region. 
 
 You can also combine this approach with an organization restriction. The following SCP allows runtimes that accounts in your organization own. It also allows the approved third-party `thirdpartyruntime` runtime. IAM applies the deny only if both conditions are true: the runtime isn't in the `NotResource` list, and the runtime owner is outside the organization.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -629,7 +629,7 @@ You can also combine this approach with an organization restriction. The followi
 
 You might need to let some roles use runtimes that the rest of your organization can't use. For example, a platform team might test new runtimes, or an emergency access (break-glass) role might need access during an incident. To do this, add the `aws:PrincipalArn` condition key with the `ArnNotLike` operator. The following SCP blocks all customer-managed runtimes, except for the `PlatformRuntimeAdmin` role in any account.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -663,7 +663,7 @@ In addition to controlling which runtimes functions can use, you can control how
 
 To stop principals from publishing their own runtimes, deny the `lambda:CreateRuntime` action. The following SCP denies this action for all principals except the `PlatformRuntimeAdmin` role.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -687,7 +687,7 @@ To stop principals from publishing their own runtimes, deny the `lambda:CreateRu
 
 To stop principals from sharing runtimes publicly or with external accounts, deny the `lambda:PutResourcePolicy` action on runtimes. The following SCP denies the `lambda:PutResourcePolicy` action on all runtimes for all principals except the `PlatformRuntimeAdmin` role.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

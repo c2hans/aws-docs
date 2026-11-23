@@ -49,7 +49,7 @@ This process shows an example of how you can use the AWS CLI to create a cluster
 
 1. Copy the following JSON and paste it into a file. Replace the subnet IDs and security group ID placeholders with values from your account. Name the file `cluster-creation.json` and save it.
 
-   ```
+   ```JSON
    {
        "Provisioned": {
            "BrokerNodeGroupInfo":{

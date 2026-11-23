@@ -47,7 +47,7 @@ For more information, refer to [Control access to services using endpoint polici
 **Example: VPC endpoint policy for Amazon MWAA Serverless actions**
 The following is an example of a custom endpoint policy. When you attach this policy to your interface endpoint, it grants access to the listed Amazon MWAA Serverless actions for all principals on all resources.
 
-```
+```json
 {
   "Statement": [
     {

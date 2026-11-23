@@ -12,12 +12,15 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 
   S3 Replication on Outposts also provides detailed metrics and notifications to monitor the status of your object replication. You can monitor replication progress by tracking bytes pending, operations pending, and replication latency between your source and destination Outposts buckets using Amazon CloudWatch. You can also set up Amazon EventBridge rules to receive replication failure events to quickly diagnose and correct configuration issues. See the [Amazon S3 Replication on Outposts](https://www.youtube.com/watch?v=Rt7VoQie7R4) YouTube video for additional details on how to configure.
 ![Reference architecture diagram showing using Amazon EventBridge and Amazon CloudWatch](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/s3-on-outposts-ha.png)
+  *Amazon S3 Replication on Outposts*
 
 **For S3 on Outposts buckets (non-data residency use cases) to AWS Regions:** You can use [AWS DataSync to automate Amazon S3 on Outposts](https://aws.amazon.com/blogs/storage/automate-data-synchronization-between-aws-outposts-racks-and-amazon-s3-with-aws-datasync/) data transfers between your Outpost and the Region. DataSync allows you to choose what to transfer, when to transfer, and how much bandwidth to use. Backing up your on-premises S3 on Outposts buckets to S3 buckets in the AWS Region allows you to leverage the 99.999999999% (11 9's) of data durability and additional storage tiers (Standard, Infrequent Access, and Glacier) for cost optimization available with the regional S3 service.
 
  **Instance replication:** You can use [use AWS Elastic Disaster Recovery (AWS DRS)](https://docs.aws.amazon.com/drs/latest/userguide/outposts.html) to replicate individual instances and attached block storage from on-premises systems to an Outpost, from an Outpost to the Region, from the Region to an Outpost, or from one Outpost to another Outpost. The [Architecting for Disaster Recovery on AWS Outposts Racks with AWS Elastic Disaster Recovery](https://aws.amazon.com/blogs/compute/architecting-for-disaster-recovery-on-aws-outposts-racks-with-aws-elastic-disaster-recovery/) blog post describes each of these scenarios and how to design a solution with AWS DRS.
 
 ![Diagram showing disaster recovery (DR) from an Outpost to the Region](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-43-dr-outpost-to-region.png)
+
+*Disaster recovery (DR) from an Outpost to the Region*
 
  Using AWS Outposts rack as an AWS DRS destination (replication target) requires S3 on Outposts storage, which is used for the purpose of storing replicated Amazon EBS snapshots. S3 on Outposts storage is also required on the source Outposts for failback. The Outposts rack must be using Direct VPC Routing (DVR) to use AWS DRS. AWS DRS cannot be used to protect managed service instances on Outposts, it is only supported for disaster recovery of EC2 instances and their attached EBS volumes.
 

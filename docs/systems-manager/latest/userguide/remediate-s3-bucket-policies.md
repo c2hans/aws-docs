@@ -19,7 +19,7 @@ The diagnosis bucket is created with the following default bucket policy when on
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -148,7 +148,7 @@ The diagnosis bucket is created with the following default bucket policy when on
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

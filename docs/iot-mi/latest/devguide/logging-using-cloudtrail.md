@@ -62,7 +62,7 @@ The following example shows a CloudTrail event that demonstrates a successful `C
 
 **Successful CloudTrail event with the `CreateCloudConnector` API operation.**
 
-```
+```JSON
 {
     "eventVersion": "1.09",
     "userIdentity": {
@@ -127,7 +127,7 @@ The following example shows a CloudTrail event that demonstrates a successful `L
 
 **Successful CloudTrail event with the `ListDiscoveredDevices` API operation.**
 
-```
+```JSON
 {
     "eventVersion": "1.09",
     "userIdentity": {

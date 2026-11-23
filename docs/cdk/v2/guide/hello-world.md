@@ -36,7 +36,7 @@ In this step, you create a new CDK project. A CDK project should be in its own d
 
 1. From a starting directory of your choice, create and navigate to a directory named `hello-cdk`:
 
-   ```
+   ```bash
    $ mkdir hello-cdk && cd hello-cdk
    ```
 **Important**
@@ -48,27 +48,27 @@ Be sure to name your project directory `hello-cdk`, *exactly as shown here*. The
 ------
 #### [ TypeScript ]
 
-   ```
+   ```bash
    $ cdk init app --language typescript
    ```
 
 ------
 #### [ JavaScript ]
 
-   ```
+   ```bash
    $ cdk init app --language javascript
    ```
 
 ------
 #### [ Python ]
 
-   ```
+   ```bash
    $ cdk init app --language python
    ```
 
    After the app has been created, also enter the following two commands. These activate the app’s Python virtual environment and installs the AWS CDK core dependencies.
 
-   ```
+   ```bash
    $ source .venv/bin/activate # On Windows, run `.\venv\Scripts\activate` instead
    $ python -m pip install -r requirements.txt
    ```
@@ -76,7 +76,7 @@ Be sure to name your project directory `hello-cdk`, *exactly as shown here*. The
 ------
 #### [ Java ]
 
-   ```
+   ```bash
    $ cdk init app --language java
    ```
 
@@ -85,7 +85,7 @@ Be sure to name your project directory `hello-cdk`, *exactly as shown here*. The
 ------
 #### [ C\# ]
 
-   ```
+   ```bash
    $ cdk init app --language csharp
    ```
 
@@ -94,13 +94,13 @@ Be sure to name your project directory `hello-cdk`, *exactly as shown here*. The
 ------
 #### [ Go ]
 
-   ```
+   ```bash
    $ cdk init app --language go
    ```
 
    After the app has been created, also enter the following command to install the AWS Construct Library modules that the app requires.
 
-   ```
+   ```bash
    $ go get
    ```
 
@@ -115,7 +115,7 @@ During project initialization, the CDK CLI creates a CDK app containing a single
 **Example**
 Located in `bin/hello-cdk.ts`:
 
-```
+```javascript
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
@@ -127,7 +127,7 @@ new HelloCdkStack(app, 'HelloCdkStack', {
 ```
 Located in `bin/hello-cdk.js`:
 
-```
+```javascript
 #!/usr/bin/env node
 
 const cdk = require('aws-cdk-lib');
@@ -139,7 +139,7 @@ new HelloCdkStack(app, 'HelloCdkStack', {
 ```
 Located in `app.py`:
 
-```
+```python
 #!/usr/bin/env python3
 import os
 
@@ -154,7 +154,7 @@ app.synth()
 ```
 Located in `src/main/java/…​/HelloCdkApp.java`:
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.App;
@@ -176,7 +176,7 @@ public class HelloCdkApp {
 ```
 Located in `src/HelloCdk/Program.cs`:
 
-```
+```csharp
 using Amazon.CDK;
 using System;
 using System.Collections.Generic;
@@ -198,7 +198,7 @@ namespace HelloCdk
 ```
 Located in `hello-cdk.go`:
 
-```
+```go
 package main
 
 import (
@@ -231,7 +231,7 @@ The CDK stack is created using the [`Stack`](https://docs.aws.amazon.com/cdk/api
 **Example**
 Located in `lib/hello-cdk-stack.ts`:
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 
@@ -246,7 +246,7 @@ export class HelloCdkStack extends cdk.Stack {
 ```
 Located in `lib/hello-cdk-stack.js`:
 
-```
+```javascript
 const { Stack } = require('aws-cdk-lib');
 
 class HelloCdkStack extends Stack {
@@ -262,7 +262,7 @@ module.exports = { HelloCdkStack }
 ```
 Located in `hello_cdk/hello_cdk_stack.py`:
 
-```
+```python
 from aws_cdk import (
   Stack,
 )
@@ -277,7 +277,7 @@ class HelloCdkStack(Stack):
 ```
 Located in `src/main/java/…​/HelloCdkStack.java`:
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -298,7 +298,7 @@ public class HelloCdkStack extends Stack {
 ```
 Located in `src/HelloCdk/HelloCdkStack.cs`:
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 
@@ -315,7 +315,7 @@ namespace HelloCdk
 ```
 Located in `hello-cdk.go`:
 
-```
+```go
 package main
 
 import (
@@ -354,13 +354,13 @@ When you use the AWS CLI to configure security credentials on your local machine
 
 1. Run the following AWS CLI command to get the AWS account ID for your `default` profile:
 
-   ```
+   ```bash
    $ aws sts get-caller-identity --query "Account" --output text
    ```
 
 1. If you prefer to use a named profile, provide the name of your profile using the `--profile` option:
 
-   ```
+   ```bash
    $ aws sts get-caller-identity --profile your-profile-name --query "Account" --output text
    ```
 
@@ -368,13 +368,13 @@ When you use the AWS CLI to configure security credentials on your local machine
 
 1. Run the following AWS CLI command to get the Region that you configured for your `default` profile:
 
-   ```
+   ```bash
    $ aws configure get region
    ```
 
 1. If you prefer to use a named profile, provide the name of your profile using the `--profile` option:
 
-   ```
+   ```bash
    $ aws configure get region --profile your-profile-name
    ```
 
@@ -390,7 +390,7 @@ Next, you will configure the AWS environment for your CDK stack by modifying the
 
    Located in `bin/hello-cdk.ts`:
 
-   ```
+   ```javascript
    #!/usr/bin/env node
    import 'source-map-support/register';
    import * as cdk from 'aws-cdk-lib';
@@ -407,7 +407,7 @@ Next, you will configure the AWS environment for your CDK stack by modifying the
 
    Located in `bin/hello-cdk.js`:
 
-   ```
+   ```javascript
    #!/usr/bin/env node
 
    const cdk = require('aws-cdk-lib');
@@ -424,7 +424,7 @@ Next, you will configure the AWS environment for your CDK stack by modifying the
 
    Located in `app.py`:
 
-   ```
+   ```python
    #!/usr/bin/env python3
    import os
 
@@ -445,7 +445,7 @@ Next, you will configure the AWS environment for your CDK stack by modifying the
 
    Located in `src/main/java/…​/HelloCdkApp.java`:
 
-   ```
+   ```java
    package com.myorg;
 
    import software.amazon.awscdk.App;
@@ -476,7 +476,7 @@ Next, you will configure the AWS environment for your CDK stack by modifying the
 
    Located in `src/HelloCdk/Program.cs`:
 
-   ```
+   ```csharp
    using Amazon.CDK;
    using System;
    using System.Collections.Generic;
@@ -508,7 +508,7 @@ Next, you will configure the AWS environment for your CDK stack by modifying the
 
    Located in `hello-cdk.go`:
 
-   ```
+   ```go
    package main
 
    import (
@@ -550,7 +550,7 @@ In this step, you bootstrap the AWS environment that you configured in the previ
 
 To bootstrap your environment, run the following from the root of your CDK project:
 
-```
+```bash
 $ cdk bootstrap
 ```
 
@@ -563,7 +563,7 @@ In most programming environments, you build or compile code after making changes
 
 **Example**
 
-```
+```bash
 $ npm run build
 
 > hello-cdk@0.1.0 build
@@ -572,17 +572,17 @@ $ npm run build
 No build step is necessary.
 No build step is necessary.
 
-```
+```bash
 $ mvn compile -q
 ```
 Or press `Control-B` in Eclipse (other Java IDEs may vary)
 
-```
+```bash
 $ dotnet build src
 ```
 Or press F6 in Visual Studio
 
-```
+```bash
 $ go build
 ```
 
@@ -591,7 +591,7 @@ $ go build
 
 At this point, you should have a CDK app containing a single CDK stack. To verify, use the CDK CLI `cdk list` command to display your stacks. The output should display a single stack named `HelloCdkStack`:
 
-```
+```bash
 $ cdk list
 HelloCdkStack
 ```
@@ -608,7 +608,7 @@ Modify your CDK stack file as follows:
 **Example**
 Located in `lib/hello-cdk-stack.ts`:
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 // Import the Lambda module
@@ -636,7 +636,7 @@ export class HelloCdkStack extends cdk.Stack {
 ```
 Located in `lib/hello-cdk-stack.js`:
 
-```
+```javascript
 const { Stack } = require('aws-cdk-lib');
 // Import the Lambda module
 const lambda = require('aws-cdk-lib/aws-lambda');
@@ -666,7 +666,7 @@ module.exports = { HelloCdkStack }
 ```
 Located in `hello_cdk/hello_cdk_stack.py`:
 
-```
+```python
 from aws_cdk import (
   Stack,
   aws_lambda as _lambda, # Import the Lambda module
@@ -697,7 +697,7 @@ class HelloCdkStack(Stack):
 ```
 Located in `src/main/java/…​/HelloCdkStack.java`:
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -734,7 +734,7 @@ public class HelloCdkStack extends Stack {
 ```
 Located in `src/main/java/…​/HelloCdkStack.java`:
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 // Import the Lambda module
@@ -766,7 +766,7 @@ namespace HelloCdk
 ```
 Located in `hello-cdk.go`:
 
-```
+```go
 package main
 
 import (
@@ -833,7 +833,7 @@ Add the following to your CDK stack file:
 **Example**
 Located in `lib/hello-cdk-stack.ts`:
 
-```
+```javascript
 // ...
 
 export class HelloCdkStack extends cdk.Stack {
@@ -858,7 +858,7 @@ export class HelloCdkStack extends cdk.Stack {
 ```
 Located in `lib/hello-cdk-stack.js`:
 
-```
+```javascript
 const { Stack, CfnOutput } = require('aws-cdk-lib');  // Import CfnOutput
 
 class HelloCdkStack extends Stack {
@@ -885,7 +885,7 @@ module.exports = { HelloCdkStack }
 ```
 Located in `hello_cdk/hello_cdk_stack.py`:
 
-```
+```python
 from aws_cdk import (
   # ...
   CfnOutput # Import CfnOutput
@@ -910,7 +910,7 @@ class HelloCdkStack(Stack):
 ```
 Located in `src/main/java/…​/HelloCdkStack.java`:
 
-```
+```java
 package com.myorg;
 
 // ...
@@ -946,7 +946,7 @@ public class HelloCdkStack extends Stack {
 ```
 Located in `src/main/java/…​/HelloCdkStack.java`:
 
-```
+```csharp
 // ...
 
 namespace HelloCdk
@@ -975,7 +975,7 @@ namespace HelloCdk
 ```
 Located in `hello-cdk.go`:
 
-```
+```go
 // ...
 
 func NewHelloCdkStack(scope constructs.Construct, id string, props *HelloCdkStackProps) awscdk.Stack {
@@ -1020,7 +1020,7 @@ Before synthesizing a template, you can optionally build your application to cat
 
 To synthesize a CloudFormation template, run the following from the root of your project:
 
-```
+```bash
 $ cdk synth
 ```
 
@@ -1038,7 +1038,7 @@ The following is an example output of the CloudFormation template:
 ### AWS CloudFormation template
 <a name="hello-world-synth-template"></a>
 
-```
+```yaml
 Resources:
   HelloWorldFunctionServiceRole<unique-identifier>:
     Type: AWS::IAM::Role
@@ -1154,7 +1154,7 @@ In this step, you use the CDK CLI `cdk deploy` command to deploy your CDK stack.
 
 From the root of your project, run the following. Confirm changes if prompted:
 
-```
+```bash
 $ cdk deploy
 
 ✨  Synthesis time: 2.69s
@@ -1215,7 +1215,7 @@ In this step, you interact with your application on AWS by invoking your Lambda 
 
 To invoke your function, access the function URL through your browser or from the command line. The following is an example:
 
-```
+```bash
 $ curl https://<api-id>.lambda-url.<Region>.on.aws/
 "Hello World!"%
 ```
@@ -1230,7 +1230,7 @@ Modify the `myFunction` instance in your CDK stack file as follows:
 **Example**
 Located in `lib/hello-cdk-stack.ts`:
 
-```
+```javascript
 // ...
 
 export class HelloCdkStack extends cdk.Stack {
@@ -1257,7 +1257,7 @@ export class HelloCdkStack extends cdk.Stack {
 ```
 Located in `lib/hello-cdk-stack.js`:
 
-```
+```javascript
 // ...
 
 class HelloCdkStack extends Stack {
@@ -1287,7 +1287,7 @@ module.exports = { HelloCdkStack }
 ```
 Located in `hello_cdk/hello_cdk_stack.py`:
 
-```
+```python
 # ...
 
 class HelloCdkStack(Stack):
@@ -1316,7 +1316,7 @@ class HelloCdkStack(Stack):
 ```
 Located in `src/main/java/…​/HelloCdkStack.java`:
 
-```
+```java
 // ...
 
 public class HelloCdkStack extends Stack {
@@ -1345,7 +1345,7 @@ public class HelloCdkStack extends Stack {
 }
 ```
 
-```
+```csharp
 // ...
 
 namespace HelloCdk
@@ -1375,7 +1375,7 @@ namespace HelloCdk
 }
 ```
 
-```
+```go
 // ...
 
 type HelloCdkStackProps struct {
@@ -1412,7 +1412,7 @@ Currently, your code changes have not made any direct updates to your deployed L
 
 To preview your changes, run the `cdk diff` command. The following is an example:
 
-```
+```bash
 $ cdk diff
 Stack HelloCdkStack
 Hold on while we create a read-only change set to get a diff with accurate replacement information (use --method=template to use a less accurate but faster template-only diff)
@@ -1443,7 +1443,7 @@ To create this diff, the CDK CLI queries your AWS account account for the latest
 
 To implement your changes, run the `cdk deploy` command. The following is an example:
 
-```
+```bash
 $ cdk deploy
 
 ✨  Synthesis time: 2.12s
@@ -1469,7 +1469,7 @@ arn:aws:cloudformation:<Region:account-id>:stack/HelloCdkStack/<unique-identifie
 
 To interact with your application, repeat [Step 10: Interact with your application on AWS](#hello-world-interact). The following is an example:
 
-```
+```bash
 $ curl https://<api-id>.lambda-url.<Region>.on.aws/
 "Hello CDK!"%
 ```
@@ -1481,7 +1481,7 @@ In this step, you use the CDK CLI `cdk destroy` command to delete your applicati
 
 To delete your application, run the `cdk destroy` command and confirm your request to delete the application. The following is an example:
 
-```
+```bash
 $ cdk destroy
 Are you sure you want to delete: HelloCdkStack (y/n)? y
 HelloCdkStack: destroying... [1/1]

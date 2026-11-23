@@ -66,7 +66,7 @@ The following is an example IAM policy that grants all dashboard permissions:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

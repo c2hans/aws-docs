@@ -19,13 +19,13 @@ Create a queue with `create_queue`. The response contains the queue URL. Message
 
  **Imports**
 
-```
+```python
 from aws_sdk_sqs import SQSClient
 ```
 
  **Code**
 
-```
+```python
 def create_queue(client: SQSClient, queue_name: str) -> str:
     """Create a queue and return its URL."""
     response = client.create_queue(queue_name=queue_name)
@@ -43,13 +43,13 @@ Use `list_queues` to find queues by name prefix. Pass the returned `next_token` 
 
  **Imports**
 
-```
+```python
 from aws_sdk_sqs import SQSClient
 ```
 
  **Code**
 
-```
+```python
 def list_queues(client: SQSClient, prefix: str) -> list[str]:
     """Return every queue URL whose queue name starts with the prefix."""
     queue_urls: list[str] = []
@@ -74,13 +74,13 @@ If you have a queue name instead of its URL, look up the URL with `get_queue_url
 
  **Imports**
 
-```
+```python
 from aws_sdk_sqs import SQSClient
 ```
 
  **Code**
 
-```
+```python
 def get_queue_url(client: SQSClient, queue_name: str) -> str:
     """Return the URL of an existing queue."""
     response = client.get_queue_url(queue_name=queue_name)
@@ -98,13 +98,13 @@ Message operations identify a queue by its URL. Resource policies and integratio
 
  **Imports**
 
-```
+```python
 from aws_sdk_sqs import SQSClient
 ```
 
  **Code**
 
-```
+```python
 def get_queue_arn(client: SQSClient, queue_url: str) -> str:
     """Return the ARN of an existing queue."""
     response = client.get_queue_attributes(
@@ -126,13 +126,13 @@ Delete a queue by its URL when you no longer need it. Deleting a queue also dele
 
  **Imports**
 
-```
+```python
 from aws_sdk_sqs import SQSClient
 ```
 
  **Code**
 
-```
+```python
 def delete_queue(client: SQSClient, queue_url: str) -> None:
     """Delete the queue at the specified URL."""
     client.delete_queue(queue_url=queue_url)

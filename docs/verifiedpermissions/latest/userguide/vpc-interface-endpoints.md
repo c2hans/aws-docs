@@ -47,7 +47,7 @@ For more information, see [Control access to services using endpoint policies](h
 **Example: VPC endpoint policy for Verified Permissions actions**
 The following is an example of a custom endpoint policy. When you attach this policy to your interface endpoint, it grants access to the listed Verified Permissions actions for all principals on all resources.
 
-```
+```json
 {
    "Statement": [
       {

@@ -33,7 +33,7 @@ The following code example shows how to get started using EventBridge.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -91,7 +91,7 @@ The following code example shows how to:
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -835,7 +835,7 @@ The following code example shows how to use `DeleteRule`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 
-```
+```java
     public static void deleteRuleByName(EventBridgeClient eventBrClient, String ruleName) {
         DeleteRuleRequest ruleRequest = DeleteRuleRequest.builder()
                 .name(ruleName)
@@ -855,7 +855,7 @@ The following code example shows how to use `DescribeRule`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 
-```
+```java
     public static void checkRule(EventBridgeClient eventBrClient, String eventRuleName) {
         try {
             DescribeRuleRequest ruleRequest = DescribeRuleRequest.builder()
@@ -882,7 +882,7 @@ The following code example shows how to use `DisableRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 Disable a rule by using its rule name.
 
-```
+```java
     public static void changeRuleState(EventBridgeClient eventBrClient, String eventRuleName, Boolean isEnabled) {
         try {
             if (!isEnabled) {
@@ -917,7 +917,7 @@ The following code example shows how to use `EnableRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 Enable a rule by using its rule name.
 
-```
+```java
     public static void changeRuleState(EventBridgeClient eventBrClient, String eventRuleName, Boolean isEnabled) {
         try {
             if (!isEnabled) {
@@ -952,7 +952,7 @@ The following code example shows how to use `ListRuleNamesByTarget`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 List all of the rule names by using the target.
 
-```
+```java
     public static void listTargetRules(EventBridgeClient eventBrClient, String topicArn) {
         ListRuleNamesByTargetRequest ruleNamesByTargetRequest = ListRuleNamesByTargetRequest.builder()
                 .targetArn(topicArn)
@@ -976,7 +976,7 @@ The following code example shows how to use `ListRules`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 Enable a rule by using its rule name.
 
-```
+```java
     public static void listRules(EventBridgeClient eventBrClient) {
         try {
             ListRulesRequest rulesRequest = ListRulesRequest.builder()
@@ -1009,7 +1009,7 @@ The following code example shows how to use `ListTargetsByRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 List all of the targets for a rule by using the rule name.
 
-```
+```java
     public static void listTargets(EventBridgeClient eventBrClient, String ruleName) {
         ListTargetsByRuleRequest ruleRequest = ListTargetsByRuleRequest.builder()
                 .rule(ruleName)
@@ -1032,7 +1032,7 @@ The following code example shows how to use `PutEvents`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 
-```
+```java
     public static void triggerCustomRule(EventBridgeClient eventBrClient, String email) {
         String json = "{" +
                 "\"UserEmail\": \"" + email + "\"," +
@@ -1064,7 +1064,7 @@ The following code example shows how to use `PutRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 Create a scheduled rule.
 
-```
+```java
     public static void createEBRule(EventBridgeClient eventBrClient, String ruleName, String cronExpression) {
         try {
             PutRuleRequest ruleRequest = PutRuleRequest.builder()
@@ -1086,7 +1086,7 @@ Create a scheduled rule.
 ```
 Create a rule that triggers when an object is added to an Amazon Simple Storage Service bucket.
 
-```
+```java
     // Create a new event rule that triggers when an Amazon S3 object is created in
     // a bucket.
     public static void addEventRule(EventBridgeClient eventBrClient, String roleArn, String bucketName,
@@ -1129,7 +1129,7 @@ The following code example shows how to use `PutTargets`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 Add an Amazon SNS topic as a target for a rule.
 
-```
+```java
     // Add a rule which triggers an SNS target when a file is uploaded to an S3
     // bucket.
     public static void addSnsEventRule(EventBridgeClient eventBrClient, String ruleName, String topicArn,
@@ -1155,7 +1155,7 @@ Add an Amazon SNS topic as a target for a rule.
 ```
 Add an input transformer to a target for a rule.
 
-```
+```java
     public static void updateCustomRuleTargetWithTransform(EventBridgeClient eventBrClient, String topicArn,
             String ruleName) {
         String targetId = java.util.UUID.randomUUID().toString();
@@ -1194,7 +1194,7 @@ The following code example shows how to use `RemoveTargets`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 Remove all of the targets for a rule by using the rule name.
 
-```
+```java
     public static void deleteTargetsFromRule(EventBridgeClient eventBrClient, String eventRuleName) {
         // First, get all targets that will be deleted.
         ListTargetsByRuleRequest request = ListTargetsByRuleRequest.builder()
@@ -1229,7 +1229,7 @@ The following code example shows how to enable a bucket to send S3 event notific
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/s3#code-examples).
 
-```
+```java
     /** This method configures a bucket to send events to AWS EventBridge and creates a rule
      * to route the S3 object created events to a topic and a queue.
      *

@@ -52,7 +52,7 @@ On the console, you can also review a list of recent findings for the control. T
 
    **Example request:**
 
-   ```
+   ```json
    {
        "StandardsArn": "arn:aws:securityhub:::{{standards/aws-foundational-security-best-practices/v/1.0.0}}"
    }
@@ -62,7 +62,7 @@ On the console, you can also review a list of recent findings for the control. T
 
    **Example request:**
 
-   ```
+   ```json
    {
        "SecurityControlIds": ["{{Config.1}}", "{{IAM.1}}"]
    }

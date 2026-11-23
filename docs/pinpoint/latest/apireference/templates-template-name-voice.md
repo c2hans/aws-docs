@@ -194,7 +194,7 @@ Retrieves information about the communication requirements and options that are 
 #### POST schema
 <a name="templates-template-name-voice-request-body-post-example"></a>
 
-```
+```json
 {
   "TemplateDescription": "string",
   "DefaultSubstitutions": "string",
@@ -209,7 +209,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="templates-template-name-voice-request-body-put-example"></a>
 
-```
+```json
 {
   "TemplateDescription": "string",
   "DefaultSubstitutions": "string",
@@ -227,7 +227,7 @@ Retrieves information about the communication requirements and options that are 
 #### VoiceTemplateResponse schema
 <a name="templates-template-name-voice-response-body-voicetemplateresponse-example"></a>
 
-```
+```json
 {
   "CreationDate": "string",
   "LastModifiedDate": "string",
@@ -248,7 +248,7 @@ Retrieves information about the communication requirements and options that are 
 #### CreateTemplateMessageBody schema
 <a name="templates-template-name-voice-response-body-createtemplatemessagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string",
@@ -259,7 +259,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="templates-template-name-voice-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

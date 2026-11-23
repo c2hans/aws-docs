@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/unit-testi
 
  In this example, `S3GetObjectAPI` is an interface that defines the set of Amazon S3 API operations required by the `GetObjectFromS3` function. `S3GetObjectAPI` is satisfied by the Amazon S3 client's [GetObject](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/s3#Client.GetObject) method.
 
-```
+```go
 import "context"
 import "github.com/aws/aws-sdk-go-v2/service/s3"
 
@@ -39,7 +39,7 @@ func GetObjectFromS3(ctx context.Context, api S3GetObjectAPI, bucket, key string
 
  To test the `GetObjectFromS3` function, use the `mockGetObjectAPI` to satisfy the `S3GetObjectAPI` interface definition. Then use the `mockGetObjectAPI` type to mock output and error responses returned from the service client.
 
-```
+```go
 import "testing"
 import "github.com/aws/aws-sdk-go-v2/service/s3"
 
@@ -108,7 +108,7 @@ func TestGetObjectFromS3(t *testing.T) {
 
  In the following example, `ListObjectsV2Pager` is an interface that defines the behaviors for the Amazon S3 [ListObjectsV2Paginator](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/s3#ListObjectsV2Paginator) required by `CountObjects` function.
 
-```
+```go
 import "context"
 import "github.com/aws/aws-sdk-go-v2/service/s3"
 
@@ -134,7 +134,7 @@ func CountObjects(ctx context.Context, pager ListObjectsV2Pager) (count int, err
 
  To test `CountObjects`, create the `mockListObjectsV2Pager` type to satisfy the `ListObjectsV2Pager` interface definition. Then use `mockListObjectsV2Pager` to replicate the paging behavior of output and error responses from the service operation paginator.
 
-```
+```go
 import "context"
 import  "fmt"
 import "testing"

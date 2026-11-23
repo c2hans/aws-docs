@@ -79,7 +79,7 @@ The CloudFormation template was generated using the AWS CDK available [here on G
 **Important**
 The stack name must be unique within an AWS Region and AWS account. You can specify up to 128 characters, and numbers and hyphens are allowed.
 
-   ```
+   ```javascript
    aws cloudformation create-stack --stack-name STACK_NAME --template-body file://setup.yaml --capabilities CAPABILITY_IAM
    ```
 
@@ -94,7 +94,7 @@ The stack name must be unique within an AWS Region and AWS account. You can spec
 
 To populate the table, first create a directory named `libs`, and in it create a file named `dynamoClient.js`, and paste the content below into it.
 
-```
+```javascript
 const { DynamoDBClient } = require( "@aws-sdk/client-dynamodb" );
 // Set the AWS Region.
 const REGION = "REGION"; // e.g. "us-east-1"
@@ -109,11 +109,11 @@ Next, create a file named `populate-table.js` in the root directory of your proj
 
 Run the following command from the command line.
 
-```
+```javascript
 node populate-table.js
 ```
 
-```
+```javascript
 const {
 BatchWriteItemCommand } = require( "aws-sdk/client-dynamodb" );
 const {dynamoClient} = require(  "./libs/dynamoClient" );
@@ -178,7 +178,7 @@ First import the required AWS SDK for JavaScript (v3) modules and commands: `Dyn
 
 The following code snippet shows this step. (See [Bundling the Lambda function](#scheduled-events-invoking-lambda-full) for the full example.)
 
-```
+```javascript
 "use strict";
 // Load the required clients and commands.
 const { DynamoDBClient, ScanCommand } = require("@aws-sdk/client-dynamodb");
@@ -215,7 +215,7 @@ First create an async/await function called `sendText` to publish a text message
 
 The following code snippet shows this step. (See [Bundling the Lambda function](#scheduled-events-invoking-lambda-full) for the full example.)
 
-```
+```javascript
 exports.handler = async (event, context, callback) => {
   // Helper function to send message using Amazon SNS.
   async function sendText(textParams) {
@@ -257,7 +257,7 @@ For information about*webpack*, see [Bundle applications with webpack](webpack.m
 
 1. Run the the following in the command line to bundle the JavaScript for this example into a file called `<index.js>` :
 
-   ```
+   ```javascript
    webpack mylamdbafunction.js --mode development --target node --devtool false --output-library-target umd -o index.js
    ```
 **Important**
@@ -269,7 +269,7 @@ Notice the output is named `index.js`. This is because Lambda functions must hav
 
 Here is the complete browser script code for `mylambdafunction.js`.
 
-```
+```javascript
 "use strict";
 // Load the required clients and commands.
 const { DynamoDBClient, ScanCommand } = require("@aws-sdk/client-dynamodb");
@@ -339,7 +339,7 @@ In the root of your project, create a `lambda-function-setup.js` file, and paste
 
 Replace {{BUCKET\_NAME}} with the name of the Amazon S3 bucket you uploaded the ZIP version of your Lambda function to. Replace {{ZIP\_FILE\_NAME}} with the name of name the ZIP version of your Lambda function. Replace {{IAM\_ROLE\_ARN}} with the Amazon Resource Number (ARN) of the IAM role you created in the [Create the AWS resources](#scheduled-events-invoking-lambda-provision-resources) topic of this tutorial. Replace {{LAMBDA\_FUNCTION\_NAME}} with a name for the Lambda function.
 
-```
+```javascript
 // Load the required Lambda client and commands.
 const {
    CreateFunctionCommand,
@@ -379,7 +379,7 @@ run();
 
 Enter the following at the command line to deploy the Lambda function.
 
-```
+```javascript
 node lambda-function-setup.js
 ```
 

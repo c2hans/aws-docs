@@ -106,7 +106,7 @@ aws sesv2 get-account --region {{your-region}}
 
 1.  Send a test request. After the Work plan emails the customer, reply to the email. Confirm that the reply appears on the same Resolutions Case and that the Work plan moves to the next Step.
 
-```
+```json
 {
   "Version": "2019-10-30",
   "StartAction": "3eab3bcf-82ac-40c2-a58c-945ab5ae951e",

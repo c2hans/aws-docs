@@ -35,7 +35,7 @@ You, or an administrator who manages your IAM permissions, must attach policies 
 
    1.  Copy the following example policy, and paste it in **Policy Document**:
 
-      ```
+      ```json
       {
           "Version": "2012-10-17",
           "Statement": [

@@ -28,7 +28,7 @@ For more information about using an Amazon S3 bucket as a static web host, see [
 
 Create a new Go file named `s3_get_bucket_website.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/awserr"
@@ -41,7 +41,7 @@ import (
 
 This routine requires you to pass in an argument containing the name of the bucket for which you want to get website configuration.
 
-```
+```go
 if len(os.Args) != 2 {
     exitErrorf("bucket name required\nUsage: %s bucket_name", os.Args[0])
 }
@@ -51,7 +51,7 @@ bucket := os.Args[1]
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file, `~/.aws/credentials`, and create a new S3 service client.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -62,7 +62,7 @@ svc := s3.New(sess)
 
 Call [GetBucketWebsite](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.GetBucketWebsite) to get the bucket configuration. You should check for the `NoSuchWebsiteConfiguration` error code, which tells you that the bucket doesn’t have a website configured.
 
-```
+```go
 result, err := svc.GetBucketWebsite(&s3.GetBucketWebsiteInput{
     Bucket: aws.String(bucket),
 })
@@ -78,7 +78,7 @@ if err != nil {
 
 Print the bucket’s website configuration.
 
-```
+```go
 fmt.Println("Bucket Website Configuration:")
 fmt.Println(result)
 ```
@@ -90,7 +90,7 @@ Create a Go file named `s3_set_bucket_website.go` and add the code below. The Am
 
 Create a new Go file named `s3_create_bucket.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -103,7 +103,7 @@ import (
 
 This routine requires you to pass in an argument containing the name of the bucket and the index suffix page.
 
-```
+```go
 if len(os.Args) != 4 {
     exitErrorf("bucket name and index suffix page required\nUsage: %s bucket_name index_page [error_page]",
         filepath.Base(os.Args[0]))
@@ -116,7 +116,7 @@ errorPage := fromArgs(os.Args, 3)
 
 Initialize a session that the SDK will use to load configuration, credentials, and region information from the shared credentials file, `~/.aws/credentials`, and create a new S3 service client.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -127,7 +127,7 @@ svc := s3.New(sess)
 
 Create the parameters to be passed in to [PutBucketWebsite](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutBucketWebsite), including the bucket name and index document details. If the user passed in an error page when calling the routine, also add that to the parameters.
 
-```
+```go
 params := s3.PutBucketWebsiteInput{
     Bucket: aws.String(bucket),
     WebsiteConfiguration: &s3.WebsiteConfiguration{
@@ -147,7 +147,7 @@ if len(errorPage) > 0 {
 
 Call `PutBucketWebsite`, passing in the parameters you just defined. If an error occurs, print the errordetails and exit the routine.
 
-```
+```go
 _, err = svc.PutBucketWebsite(&params)
 if err != nil {
     exitErrorf("Unable to set bucket %q website configuration, %v",
@@ -162,7 +162,7 @@ fmt.Printf("Successfully set bucket %q website configuration\n", bucket)
 
 Create a Go file named `s3_delete_bucket_website.go`. Import the relevant Go and AWS SDK for Go packages.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -175,7 +175,7 @@ import (
 
 This routine requires you to pass in the name of the bucket for which you want to delete the website configuration.
 
-```
+```go
 if len(os.Args) != 2 {
     exitErrorf("bucket name required\nUsage: %s bucket_name",
         filepath.Base(os.Args[0]))
@@ -186,7 +186,7 @@ bucket := os.Args[1]
 
 Initialize a session that the SDK will use to load configuration, credentials, and region information from the shared credentials file, `~/.aws/credentials`, and create a new S3 service client.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -197,7 +197,7 @@ svc := s3.New(sess)
 
 Call `DeleteBucketWebsite` and pass in the name of the bucket to complete the action.
 
-```
+```go
 _, err = svc.DeleteBucketWebsite(&s3.DeleteBucketWebsiteInput{
     Bucket: aws.String(bucket),
 })

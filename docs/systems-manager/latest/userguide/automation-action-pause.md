@@ -15,7 +15,7 @@ The input is as follows.
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: pauseThis
 action: aws:pause
 timeoutSeconds: 1209600
@@ -25,7 +25,7 @@ inputs: {}
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "pauseThis",
     "action": "aws:pause",

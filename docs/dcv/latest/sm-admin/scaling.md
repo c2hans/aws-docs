@@ -32,7 +32,7 @@ You must attach an instance profile to the Broker and Agent hosts that give them
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -56,7 +56,7 @@ You must attach an instance profile to the Broker and Agent hosts that give them
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

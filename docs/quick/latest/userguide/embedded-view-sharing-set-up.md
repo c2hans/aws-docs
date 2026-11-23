@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedded-view-sha
 
 When you create an the embedded instance with the AWS Quick Sight API, set the value of `SharedView` in the `FeatureConfigurations` payload to `true`, as shown in the example below. `SharedView` overrides the `StatePersistence` configurations for registered users who access embedded dashboards. If a dashboard user has `StatePersistence` disabled and `SharedView` enabled, their state will persist.
 
-```
+```json
 const generateNewEmbedUrl = async () => {
     const generateUrlPayload = {
         experienceConfiguration: {

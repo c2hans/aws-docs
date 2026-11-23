@@ -21,7 +21,7 @@ For AWS Service Catalog deployments completed prior to February 7, 2022, perform
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

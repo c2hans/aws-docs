@@ -8,7 +8,7 @@ While the default behavior is to use the pipeline name as the experiment name in
 
 **Create a pipeline**
 
-```
+```py
 pipeline_name = f"MyPipeline"
 pipeline = Pipeline(
     name=pipeline_name,
@@ -23,7 +23,7 @@ pipeline = Pipeline(
 
 **Pipeline definition file**
 
-```
+```json
 {
   ...,
   "PipelineExperimentConfig": {

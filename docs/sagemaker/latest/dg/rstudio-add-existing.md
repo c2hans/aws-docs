@@ -35,7 +35,7 @@ To add support for RStudio in your domain, SageMaker AI must update the underlyi
 
 1.  List all of the apps in the domain.
 
-   ```
+   ```bash
    aws sagemaker \
       list-apps \
       --domain-id-equals {{<DOMAIN_ID>}}
@@ -43,7 +43,7 @@ To add support for RStudio in your domain, SageMaker AI must update the underlyi
 
 1.  Delete each app for each user profile in the domain.
 
-   ```
+   ```bash
    // JupyterServer apps
    aws sagemaker \
        delete-app \
@@ -70,7 +70,7 @@ To add support for RStudio in your domain, SageMaker AI must update the underlyi
 The following requirement for `VPCOnly` mode outlined in [Connect Amazon SageMaker Studio Classic Notebooks in a VPC to External Resources](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-and-internet-access.html#studio-notebooks-and-internet-access-vpc-only) is no longer needed when adding RStudio support because `AppSecurityGroupManagement` is managed by the SageMaker AI service:
 “[TCP traffic within the security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html#sg-rules-other-instances). This is required for connectivity between the JupyterServer app and the KernelGateway apps. You must allow access to at least ports in the range `8192-65535`.”
 
-```
+```bash
 aws sagemaker \
     update-user-profile \
     --domain-id {{<DOMAIN_ID>}}\
@@ -84,7 +84,7 @@ aws sagemaker \
 1.  Call the [UpdateDomain](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateDomain.html) API to add support for RStudio on SageMaker AI. The `defaultusersettings` parameter is only needed if you have refactored the default security groups for your user profiles.
    +  For `VPCOnly` mode:
 
-     ```
+     ```bash
      aws sagemaker \
          update-domain \
          --domain-id {{<DOMAIN_ID>}} \
@@ -94,7 +94,7 @@ aws sagemaker \
      ```
    +  For `PublicInternetOnly` mode:
 
-     ```
+     ```bash
      aws sagemaker \
          update-domain \
          --domain-id {{<DOMAIN_ID>}} \
@@ -104,7 +104,7 @@ aws sagemaker \
 
 1. Verify that the domain status is `InService`. After the domain status is `InService`, support for RStudio on SageMaker AI is added.
 
-   ```
+   ```bash
    aws sagemaker \
        describe-domain \
        --domain-id {{<DOMAIN_ID>}}
@@ -112,7 +112,7 @@ aws sagemaker \
 
 1. Verify that the RStudioServerPro app’s status is `InService` using the following command.
 
-   ```
+   ```bash
    aws sagemaker list-apps --user-profile-name domain-shared
    ```
 
@@ -123,7 +123,7 @@ aws sagemaker \
 +  `AccessStatus` = `ENABLED`
 +  *Optional* - `UserGroup` = `R_STUDIO_USER` or `R_STUDIO_ADMIN`
 
-```
+```bash
 aws sagemaker \
     update-user-profile \
     --domain-id {{<DOMAIN_ID>}}\
@@ -139,7 +139,7 @@ By default, the number of users that can have access to RStudio is 60.
 
  Unless otherwise specified when calling `UpdateDomain`, RStudio support is added by default for all new user profiles created after you have added support for RStudio on SageMaker AI. To deactivate access for a new user profile, you must explicitly set the `AccessStatus` parameter to `DISABLED` as part of the `CreateUserProfile` API call. If the `AccessStatus` parameter is not specified as part of the `CreateUserProfile` API, the default access status is `ENABLED`.
 
-```
+```bash
 aws sagemaker \
     create-user-profile \
     --domain-id {{<DOMAIN_ID>}}\

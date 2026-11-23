@@ -35,7 +35,7 @@ The following are Livy connectivity issues that might occur while using Amazon E
 
   We recommend upgrading your extension `0.0.18` and sooner by running the following upgrade command.
 
-  ```
+  ```python
   pip install --upgrade sagemaker-studio-analytics-extension
   ```
 

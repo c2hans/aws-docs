@@ -771,7 +771,7 @@ For more information, see [Configure distributions](https://docs.aws.amazon.com/
 The following example uses an Amazon Simple Storage Service (Amazon S3) bucket as a content origin.
 After creating the distribution, the code creates a [CloudFrontWaiter](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudfront/waiters/CloudFrontWaiter.html) to wait until the distribution is deployed before returning the distribution.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.core.internal.waiters.ResponseOrException;
@@ -884,7 +884,7 @@ public class CreateDistribution {
 **Tools for PowerShell V4**
 **Example 1: Creates a basic CloudFront distribution, configured with logging and caching.**
 
-```
+```powershell
 $origin = New-Object Amazon.CloudFront.Model.Origin
 $origin.DomainName = "amzn-s3-demo-bucket.s3.amazonaws.com"
 $origin.Id = "UniqueOrigin1"
@@ -918,7 +918,7 @@ New-CFDistribution `
 **Tools for PowerShell V5**
 **Example 1: Creates a basic CloudFront distribution, configured with logging and caching.**
 
-```
+```powershell
 $origin = New-Object Amazon.CloudFront.Model.Origin
 $origin.DomainName = "amzn-s3-demo-bucket.s3.amazonaws.com"
 $origin.Id = "UniqueOrigin1"

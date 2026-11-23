@@ -153,7 +153,7 @@ The path to where stack outputs from deployments are written to.
 After deployment, stack outputs will be written to the specified output file in JSON format.
 You can configure this option in the project’s `cdk.json` file or at `~/.cdk.json` on your local development machine:
 
-```
+```json
 {
    "app": "npx ts-node bin/myproject.ts",
    // ...
@@ -183,7 +183,7 @@ Configure how the CDK CLI displays deployment progress.
 +  `events` – Provide a complete history, including all CloudFormation events.
 You can also configure this option in the project’s `cdk.json` file or at `~/.cdk.json` on your local development machine:
 
-```
+```json
 {
    "progress": "events"
 }
@@ -286,7 +286,7 @@ $ cdk deploy PipelineStack/Prod/**
 
 Define parameters in your CDK stack. The following is an example that creates a parameter named `TopicNameParam` for an Amazon SNS topic:
 
-```
+```javascript
 new sns.Topic(this, 'TopicParameter', {
     topicName: new cdk.CfnParameter(this, 'TopicNameParam').value.toString()
 });
@@ -309,7 +309,7 @@ $ cdk deploy --parameters "MyStackName:TopicNameParam=parameterName" --force
 
 Define outputs in your CDK stack file. The following is an example that creates an output for a function ARN:
 
-```
+```javascript
 const fn = new lambda.Function(this, "fn", {
   handler: "index.handler",
   code: lambda.Code.fromInline(`exports.handler = \${handler.toString()}`),
@@ -329,7 +329,7 @@ $ cdk deploy --outputs-file outputs.json
 
 The following is an example of `outputs.json` after deployment:
 
-```
+```json
 {
   "MyStack": {
     "FunctionArn": "arn:aws:lambda:us-east-1:123456789012:function:MyStack-fn5FF616E3-G632ITHSP5HK"
@@ -341,7 +341,7 @@ From this example, the key `FunctionArn` corresponds to the logical ID of the `C
 
 The following is an example of `outputs.json` after deployment when multiple stacks are deployed:
 
-```
+```json
 {
   "MyStack": {
     "FunctionArn": "arn:aws:lambda:us-east-1:123456789012:function:MyStack-fn5FF616E3-G632ITHSP5HK"

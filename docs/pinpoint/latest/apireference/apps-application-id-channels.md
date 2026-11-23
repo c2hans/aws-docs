@@ -76,7 +76,7 @@ Retrieves information about the communication requirements and options that are 
 #### ChannelsResponse schema
 <a name="apps-application-id-channels-response-body-channelsresponse-example"></a>
 
-```
+```json
 {
   "Channels": {
   }
@@ -86,7 +86,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-channels-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

@@ -131,7 +131,7 @@ For more information, see [Access logs for your Application Load Balancer](https
 **Tools for PowerShell V4**
 **Example 1: This example modifes the Attributes of the specified load balancer.**
 
-```
+```powershell
 Edit-ELB2LoadBalancerAttribute -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -Attribute @{Key = 'deletion_protection.enabled'; Value = 'true'}
 ```
 **Output:**
@@ -152,7 +152,7 @@ routing.http.drop_invalid_header_fields.enabled false
 **Tools for PowerShell V5**
 **Example 1: This example modifes the Attributes of the specified load balancer.**
 
-```
+```powershell
 Edit-ELB2LoadBalancerAttribute -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -Attribute @{Key = 'deletion_protection.enabled'; Value = 'true'}
 ```
 **Output:**

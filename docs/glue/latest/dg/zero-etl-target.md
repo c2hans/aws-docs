@@ -62,7 +62,7 @@ For cross-account integrations, both the user creating the integration role poli
 
 You can access the **Catalog settings** under **Data Catalog**. Then provide the following permissions and fill in the missing information.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -115,7 +115,7 @@ You can access the **Catalog settings** under **Data Catalog**. Then provide the
 
 Create a target IAM role with the following permissions and trust relationships:
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -188,7 +188,7 @@ Create a target IAM role with the following permissions and trust relationships:
 
 Add the following trust policy to allow the AWS Glue service to assume the role:
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -212,7 +212,7 @@ Associate the above target role with the target resource i.e. AWS Glue Database.
 
 Or using the AWS Glue CLI / API:
 
-```
+```bash
 aws glue create-integration-resource-property \
 --resource-arn arn:aws:glue:us-east-1:123456789012:database/{{database-name}} \
 --target-processing-properties '{"RoleArn": "arn:aws:iam::123456789012:role/{{gmi_target_role}}"}' \
@@ -266,7 +266,7 @@ A concurrent change means that another user updated the same output settings whi
 
 Using CLI or API:
 
-```
+```bash
 aws glue create-integration-table-properties \
 --resource-arn arn:aws:glue:us-east-1:123456789012:database/{{database-name}} \
 --table-name {{table-name}} \
@@ -318,7 +318,7 @@ Target AWS Glue Catalog resource policy needs to include AWS Glue Service permis
 **Note**
 For cross-account scenario, both source principal as well as target AWS Glue Catalog resource policy need to include `glue:CreateInboundIntegration` permissions on the resource.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -372,7 +372,7 @@ Replace `{{s3tablescatalog}}` with the parent catalog name of your S3 tables (if
 
 Create a target IAM role with the following permissions and trust relationships:
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -424,7 +424,7 @@ Create a target IAM role with the following permissions and trust relationships:
 
 Add the following trust policy in the target IAM role to allow AWS Glue Service to assume it:
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -449,7 +449,7 @@ Associate the above target role with the target resource. Optionally, KMS for en
 
 Using the AWS Glue CLI / API:
 
-```
+```bash
 aws glue create-integration-resource-property \
 --resource-arn arn:aws:glue:us-east-1:123456789012:catalog/s3tablescatalog/{{S3 table bucket name}} \
 --target-processing-properties '{
@@ -489,7 +489,7 @@ Optionally, target table properties can be configured for the target tables that
 
 Using CLI or API:
 
-```
+```bash
 aws glue create-integration-table-properties \
 --resource-arn arn:aws:glue:us-east-1:123456789012:catalog/s3tablescatalog/{{S3 table bucket name}} \
 --table-name {{table-name}} \

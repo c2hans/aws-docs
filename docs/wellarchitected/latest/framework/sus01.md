@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus01.h
 
 ![Formula dividing gigabytes of storage in Amazon S3 Standard by the number of active customers.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/sus01-storage-per-customer-formula.png)
 
+*Storage provisioned per active customer*
+
  Additionally, monitor your emissions in the [AWS Sustainability Console](https://aws.amazon.com/sustainability/tools/console/). This tool helps you track your historical emissions from AWS usage and includes [Greenhouse Gas Protocol](https://ghgprotocol.org/) Scope 1, 2 and 3 emissions, as explained in the [methodology document](https://sustainability.aboutamazon.com/aws-customer-carbon-footprint-methodology.pdf).
 
  The data in the AWS Sustainability service is is available through [Carbon emissions Data Exports](https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-carbon-emissions.html) and via [API](https://docs.aws.amazon.com/sustainability/latest/APIReference/Welcome.html) to simplify automation and integrating this data into dashboards.

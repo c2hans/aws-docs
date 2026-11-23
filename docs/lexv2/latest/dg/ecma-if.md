@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/ecma-if.html
 
 You can add if statements to perform functions in Amazon Lex V2. This example shows the syntax that can be used in SRGS expressions.
 
-```
+```javascript
 if (expressions) {
     statements;
 } else {

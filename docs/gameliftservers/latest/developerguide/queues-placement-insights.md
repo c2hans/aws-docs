@@ -50,7 +50,7 @@ The following example policy grants the permissions that Amazon GameLift Servers
 
 ****
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -32,7 +32,7 @@ You can check the status of the background task by viewing the list of indexes o
 **To demote an aggregator index to a local index**
 The following example demotes the specified aggregator index to a local index. You must call the operation in the AWS Region that currently contains the aggregator index.
 
-```
+```bash
 $ aws resource-explorer-2 update-index-type \
     --arn arn:aws:resource-explorer-2:us-east-1:123456789012:index/1a2b3c4d-5d6e-7f8a-9b0c-abcd11111111 \
     --type LOCAL \

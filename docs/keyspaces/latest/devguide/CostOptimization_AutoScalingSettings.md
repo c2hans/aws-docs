@@ -55,7 +55,7 @@ When you're using multi-Region tables in provisioned capacity mode with Amazon K
 
    The values for the Application Auto Scaling policies are highlighted below. You need to ensure that the target value is greater than 50% to avoid over-provisioning. You should obtain a result similar to the following:
 
-   ```
+   ```JSON
    {
        "ScalingPolicies": [
            {
@@ -172,7 +172,7 @@ You can use the AWS CLI to execute the following steps to create a scheduled aut
 
    You should get a result like this:
 
-   ```
+   ```json
    {
        "ScheduledActions": [
            {

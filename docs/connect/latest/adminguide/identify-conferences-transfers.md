@@ -52,7 +52,7 @@ The following sections explain how you can identify each of these types of calls
 
 Let's say customer calls Agent1. The agent doesn't transfer or consult with others. When call is disconnected, the contact record looks like the following sample (only the relevant fields are shown):
 
-```
+```json
 {
     "AWSAccountId": "{{account-id}}",
     "Agent": {
@@ -78,7 +78,7 @@ If Agent1 were to initiate a consultative call with another agent (Agent2), it b
  The following sample contact record shows how this would look for the initiating agent (Agent1) and the recipient agent (Agent2):
 + Initiating agent (Agent1)
 
-  ```
+  ```json
   {
       "Agent": {
           "ARN": "{{agent-arn}}"
@@ -96,7 +96,7 @@ If Agent1 were to initiate a consultative call with another agent (Agent2), it b
   ```
 + Recipient agent (Agent2)
 
-  ```
+  ```json
   {
       "Agent": {
           "ARN": "{{agent-arn}}",

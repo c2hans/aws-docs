@@ -27,7 +27,7 @@ When creating worker tasks using sequences of video frames, Ground Truth uses on
 
 For example, video frames might be in the following order in Amazon S3:
 
-```
+```json
 [0001.jpg, 0002.jpg, 0003.jpg, ..., 0011.jpg]
 ```
 
@@ -35,7 +35,7 @@ They are arranged in the same order in the worker’s task: `0001.jpg, 0002.jpg,
 
 Frames might also be ordered using a naming convention like the following:
 
-```
+```json
 [frame1.jpg, frame2.jpg, ..., frame11.jpg]
 ```
 

@@ -46,7 +46,7 @@ Use the following procedure to create an IAM service role for AWS Lambda. These 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -90,7 +90,7 @@ Use the following procedure to create an IAM service role for AWS Lambda. These 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -161,7 +161,7 @@ Use the following procedure to create a Lambda function that automatically updat
 
 1. In the **Code source** area, on the **lambda\_function** tab, delete the pre-populated code in the field, and then paste the following code sample.
 
-   ```
+   ```py
    from __future__ import print_function
 
    import json
@@ -225,7 +225,7 @@ Use the following procedure to create a Lambda function that automatically updat
 
 1. Replace the existing text with the following JSON. Replace {{AMI ID}} with your own information to set your `latestAmi` parameter value.
 
-   ```
+   ```json
    {
       "parameterName":"latestAmi",
       "parameterValue":"{{AMI ID}}"
@@ -257,7 +257,7 @@ Use the following procedure to create and run a runbook that patches the AMI you
 
 1. In the **Document editor** field, replace the default content with the following YAML sample runbook content.
 
-   ```
+   ```yaml
    ---
    description: Systems Manager Automation Demo - Patch AMI and Update ASG
    schemaVersion: '0.3'

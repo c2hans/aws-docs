@@ -46,14 +46,14 @@ npm install @aws/amazon-location-for-maplibre-gl-geocoder
 ```
 You can import into an HTML file for usage directly in the browser, with a script:
 
-```
+```html
 <script src="https://www.unpkg.com/@aws/amazon-location-for-maplibre-gl-geocoder@1">/script<
 ```
 
 Usage with Module
 This code sets up a Maplibre GL JavaScript map with Amazon Location geocoding capabilities. It uses authentication via Amazon Cognito Identity Pool to access Amazon Location resources. The map is rendered with a specified style and center coordinates, and allows to search for places on the map.
 
-```
+```js
 // Import MapLibre GL JS
 import maplibregl from "maplibre-gl";
 // Import from the AWS JavaScript SDK V3
@@ -97,7 +97,7 @@ This example uses the Amazon Location Client to make a request that authenticate
 Some of these example use the Amazon Location Client. The Amazon Location Client is based on the [AWS SDK for JavaScript V3](https://github.com/aws/aws-sdk-js-v3) and allows for making calls to Amazon Location through a script referenced in an HTML file.
 Include the following in an HTML file:
 
-```
+```html
 < Import the Amazon Location With Maplibre Geocoder>
 <script src="https://www.unpkg.com/@aws/amazon-location-with-maplibre-geocoder@1"></script>
 <Import the Amazon Location Client>
@@ -107,7 +107,7 @@ Include the following in an HTML file:
 ```
 Include the following in a JavaScript file:
 
-```
+```js
 const identityPoolId = "{{Identity Pool ID}}";
 const mapName = "{{Map Name}}";
 const region = "{{Region}}"; // region containing Amazon Location resource
@@ -136,14 +136,14 @@ Listed below are the functions, and commands used in the Amazon Location MapLibr
 
   This class creates an instance of the `AmazonLocationMaplibreGeocder` which is the entry point to the other all other calls:
 
-  ```
+  ```js
   const amazonLocationMaplibreGeocoder = buildAmazonLocationMaplibreGeocoder(client, placesIndex, {enableAll: true});
   ```
 + **`getPlacesGeocoder`**
 
   Returns a ready to use IControl object that can be added directly to a map.
 
-  ```
+  ```js
   const geocoder = getPlacesGeocoder();
 
   // Initialize map

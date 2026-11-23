@@ -25,7 +25,7 @@ AWS Entity Resolution uses a *workflow job role* to run a workflow. You can crea
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -61,7 +61,7 @@ You don't need to grant AWS KMS permissions if your data sources aren't encrypte
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

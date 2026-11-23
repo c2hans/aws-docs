@@ -45,7 +45,7 @@ Retrieves the count of Amazon Macie membership invitations that were received by
 #### GetInvitationsCountResponse schema
 <a name="invitations-count-response-body-getinvitationscountresponse-example"></a>
 
-```
+```json
 {
   "invitationsCount": integer
 }
@@ -54,7 +54,7 @@ Retrieves the count of Amazon Macie membership invitations that were received by
 #### ValidationException schema
 <a name="invitations-count-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -63,7 +63,7 @@ Retrieves the count of Amazon Macie membership invitations that were received by
 #### ServiceQuotaExceededException schema
 <a name="invitations-count-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -72,7 +72,7 @@ Retrieves the count of Amazon Macie membership invitations that were received by
 #### AccessDeniedException schema
 <a name="invitations-count-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -81,7 +81,7 @@ Retrieves the count of Amazon Macie membership invitations that were received by
 #### ResourceNotFoundException schema
 <a name="invitations-count-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -90,7 +90,7 @@ Retrieves the count of Amazon Macie membership invitations that were received by
 #### ConflictException schema
 <a name="invitations-count-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -99,7 +99,7 @@ Retrieves the count of Amazon Macie membership invitations that were received by
 #### ThrottlingException schema
 <a name="invitations-count-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -108,7 +108,7 @@ Retrieves the count of Amazon Macie membership invitations that were received by
 #### InternalServerException schema
 <a name="invitations-count-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

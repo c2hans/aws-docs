@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Import an AWS Certificate Manager (ACM) certificate.
 /*!
   \param certificateFile: Path to certificate to import.
@@ -153,7 +153,7 @@ For more information, see [Import certificates into AWS Certificate Manager](htt
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/acm#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -250,7 +250,7 @@ public class ImportCert {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -291,7 +291,7 @@ class AcmCertificate:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         " Only pass certificate chain if it's provided (it's optional)
         IF iv_certificate_chain IS NOT INITIAL.

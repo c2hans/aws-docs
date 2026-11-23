@@ -18,7 +18,7 @@ The following code example shows how to send emails with attachments using Amazo
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/attachments_scenario#code-examples).
 Run an interactive scenario demonstrating email attachments.
 
-```
+```python
 class SESv2EmailAttachmentsScenario:
     """
     Demonstrates sending emails with attachments using Amazon SESv2.
@@ -374,7 +374,7 @@ class SESv2EmailAttachmentsScenario:
 ```
 Create an SESv2 wrapper class to manage operations.
 
-```
+```python
 class SESv2Wrapper:
     """Encapsulates Amazon SESv2 email sending actions."""
 

@@ -20,7 +20,7 @@ If you encrypt sessions with your agent with a custom KMS key, you must set up t
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -51,7 +51,7 @@ If you encrypt sessions with your agent with a custom KMS key, you must set up t
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

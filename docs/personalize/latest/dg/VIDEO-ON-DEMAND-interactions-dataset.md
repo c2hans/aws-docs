@@ -30,7 +30,7 @@ For more information on minimum requirements and maximum data limits for an Item
 
  The following is the default VIDEO\_ON\_DEMAND domain schema for Item interactions datasets.
 
-```
+```json
 {
 
   "type": "record",

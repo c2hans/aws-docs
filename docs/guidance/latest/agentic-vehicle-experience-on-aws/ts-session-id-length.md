@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 
 1. Add a padding step in the assistant-chat Lambda handler that extends any session ID shorter than 33 characters to exactly 33 characters before passing it to `invoke_agent_runtime`. Use a deterministic pad (for example, appending `x` characters) so that the same browser session always maps to the same upstream AgentCore session, preserving AgentCore Memory continuity:
 
-   ```
+   ```python
    _MIN_RUNTIME_SESSION_LEN = 33
    runtime_session_id = session_id
    if len(runtime_session_id) < _MIN_RUNTIME_SESSION_LEN:

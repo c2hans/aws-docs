@@ -159,6 +159,13 @@ Content-type: application/json
                "monacoAdditionalInfo": {
                   "businessNumber": "string"
                },
+               "newZealandAdditionalInfo": {
+                  "peppolId": "string"
+               },
+               "norwayAdditionalInfo": {
+                  "peppolId": "string",
+                  "taxRegistrationNumberType": "string"
+               },
                "philippinesAdditionalInfo": {
                   "isVatRegistered": boolean
                },
@@ -190,6 +197,12 @@ Content-type: application/json
                "ukraineAdditionalInfo": {
                   "ukraineTrnType": "string"
                },
+               "unitedArabEmiratesAdditionalInfo": {
+                  "emiratesId": "string",
+                  "peppolId": "string",
+                  "taxRegistrationNumberType": "string",
+                  "tradeLicenseNumber": "string"
+               },
                "uzbekistanAdditionalInfo": {
                   "taxRegistrationNumberType": "string",
                   "vatRegistrationNumber": "string"
@@ -198,7 +211,8 @@ Content-type: application/json
                   "electronicTransactionCodeNumber": "string",
                   "enterpriseIdentificationNumber": "string",
                   "paymentVoucherNumber": "string",
-                  "paymentVoucherNumberDate": "string"
+                  "paymentVoucherNumberDate": "string",
+                  "vatCreditMethod": boolean
                }
             },
             "certifiedEmailId": "string",

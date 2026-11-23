@@ -25,7 +25,7 @@ Create a policy with strict validation that rejects policies with any findings:
 
 1. This example assumes an AgentCore project with a policy engine named `MyEngine` attached to a deployed gateway named `my-gateway`, for example from `agentcore add policy-engine --name MyEngine --attach-to-gateways my-gateway` followed by `agentcore deploy`. Save the statement to a file, for example `restrict_refunds.cedar`, and use that gatewayâ€™s ARN from `agentcore status --json` in it:
 
-   ```
+   ```cedar
    forbid (
      principal,
      action == AgentCore::Action::"RefundTool___process_refund",
@@ -38,7 +38,7 @@ Create a policy with strict validation that rejects policies with any findings:
 
 1. Add the policy and deploy:
 
-   ```
+   ```bash
    agentcore add policy --name RestrictRefunds \
      --engine MyEngine \
      --source restrict_refunds.cedar \
@@ -49,7 +49,7 @@ Create a policy with strict validation that rejects policies with any findings:
 
 1. Run the following code in a terminal to create the policy using the AWS CLI:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-policy \
      --policy-engine-id MyEngine-abc123defg \
      --name RestrictRefunds \
@@ -63,7 +63,7 @@ Create a policy with strict validation that rejects policies with any findings:
 
 1. Run the following code to create the policy using the AWS SDK for Python:
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client('bedrock-agentcore-control')
@@ -90,7 +90,7 @@ Create a policy with strict validation that rejects policies with any findings:
 
 The response indicates the policy is being created:
 
-```
+```json
 {
   "policyId": "RestrictRefunds-ghi789jklm",
   "status": "CREATING"
@@ -103,7 +103,7 @@ Check the policy status to confirm validation passed:
 
 1. Show the deployed state of the resources in the project:
 
-   ```
+   ```bash
    agentcore status
    ```
 
@@ -111,7 +111,7 @@ Check the policy status to confirm validation passed:
 
 1. Run the following code in a terminal to get the policy using the AWS CLI:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control get-policy \
      --policy-engine-id MyEngine-abc123defg \
      --policy-id RestrictRefunds-ghi789jklm
@@ -119,7 +119,7 @@ Check the policy status to confirm validation passed:
 
 1. Run the following code to wait for the policy to become active using the AWS SDK for Python:
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client('bedrock-agentcore-control')
@@ -138,7 +138,7 @@ Check the policy status to confirm validation passed:
 
 When validation passes, the policy becomes active:
 
-```
+```json
 {
   "policyId": "RestrictRefunds-ghi789jklm",
   "status": "ACTIVE",
@@ -155,7 +155,7 @@ If a policy references an action that doesnâ€™t exist in any associated gatewayâ
 
 1. A policy that fails validation fails the whole deploy, not just that resource:
 
-   ```
+   ```bash
    agentcore add policy --name InvalidPolicy \
      --engine MyEngine \
      --statement 'permit (principal, action == AgentCore::Action::"RefundTool___nonExistentTool", resource == AgentCore::Gateway::"arn:aws:bedrock-agentcore:us-west-2:123456789012:gateway/my-gateway-a1b2c3d4e5");'
@@ -167,7 +167,7 @@ If a policy references an action that doesnâ€™t exist in any associated gatewayâ
 
 1. Run the following code in a terminal to create a policy that references an undefined action:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-policy \
      --policy-engine-id MyEngine-abc123defg \
      --name InvalidPolicy \
@@ -181,7 +181,7 @@ If a policy references an action that doesnâ€™t exist in any associated gatewayâ
 
 1. Check the status to see the validation failure:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control get-policy \
      --policy-engine-id MyEngine-abc123defg \
      --policy-id InvalidPolicy-jkl012mnop
@@ -189,7 +189,7 @@ If a policy references an action that doesnâ€™t exist in any associated gatewayâ
 
 1. Run the following code to create the policy and read the failure reason using the AWS SDK for Python:
 
-   ```
+   ```python
    import time
    import boto3
 
@@ -225,7 +225,7 @@ If a policy references an action that doesnâ€™t exist in any associated gatewayâ
 
 When you check the policy status, the response shows the validation failure:
 
-```
+```json
 {
   "policyId": "InvalidPolicy-jkl012mnop",
   "status": "CREATE_FAILED",

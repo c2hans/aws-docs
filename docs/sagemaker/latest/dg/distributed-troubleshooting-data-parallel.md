@@ -52,7 +52,7 @@ This is due to an internal error between Debugger and checkpoints, which occurs 
 
 For PyTorch distributed training jobs, an unexpected prefix (`model` for example) might be attached to `state_dict` keys (model parameters). The SageMaker AI data parallel library does not directly alter or prepend any model parameter names when PyTorch training jobs save model artifacts. The PyTorch's distributed training changes the names in the `state_dict` to go over the network, prepending the prefix. If you encounter any model failure problem due to different parameter names while you are using the SageMaker AI data parallel library and checkpointing for PyTorch training, adapt the following example code to remove the prefix at the step you load checkpoints in your training script.
 
-```
+```py
 state_dict = {k.partition('{{model.}}')[2]:state_dict[k] for k in state_dict.keys()}
 ```
 

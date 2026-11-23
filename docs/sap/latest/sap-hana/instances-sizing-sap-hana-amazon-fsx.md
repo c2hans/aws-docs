@@ -67,7 +67,7 @@ To learn more about FSx for ONTAP performance, see [Performance details](https:/
 
 Set the following SAP HANA database parameters in the `global.ini` file.
 
-```
+```bash
 [fileio]
 max_parallel_io_requests=128
 async_read_submit=on
@@ -77,7 +77,7 @@ async_write_submit_blocks=all
 
 Use the following SQL commands to set these parameters on `SYSTEM` level.
 
-```
+```bash
 ALTER SYSTEM ALTER CONFIGURATION ('global.ini', 'SYSTEM') SET ('fileio', 'max_parallel_io_requests') = '128' WITH RECONFIGURE;
 ALTER SYSTEM ALTER CONFIGURATION ('global.ini', 'SYSTEM') SET ('fileio', 'async_read_submit') = 'on' WITH RECONFIGURE;
 ALTER SYSTEM ALTER CONFIGURATION ('global.ini', 'SYSTEM') SET ('fileio', 'async_write_submit_active') = 'on' WITH RECONFIGURE;

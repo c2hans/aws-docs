@@ -146,7 +146,7 @@ By default, the server returns only one prediction, the one with the highest pro
 
 For BlazingText, the` content-type` and `accept` parameters must be equal. For batch transform, they both need to be `application/jsonlines`. If they differ, the `Accept` field is ignored. The format for input follows:
 
-```
+```json
 content-type: application/jsonlines
 
 {"source": "source_0"}
@@ -160,7 +160,7 @@ if you need to pass the value of k for top-k, then you can do it in the followin
 
 The format for output follows:
 
-```
+```json
 accept: application/jsonlines
 
 {"prob": [prob_1], "label": ["__label__1"]}

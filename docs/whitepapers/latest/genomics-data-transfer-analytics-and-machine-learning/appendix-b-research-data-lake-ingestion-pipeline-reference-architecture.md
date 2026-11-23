@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
 
 ![Data pipeline using AWS Glue workflows](https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image7.png)
 
+Figure 6: Data pipeline using AWS Glue workflows
+
 1.  An AWS Glue trigger is run either on-demand or on a schedule.
 
 1.  The dataset is first copied to a quarantine bucket to be scanned for personal health information (PHI) or viruses.

@@ -28,7 +28,7 @@ From the console, follow these steps to update a run cache.
 
 Use the **update-run-cache** CLI command to update a run cache.
 
-```
+```bash
 aws omics update-run-cache \
       --name "workflow 123 run cache" \
       --id "workflow id" \

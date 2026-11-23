@@ -14,6 +14,12 @@ The VPC origin ID.
 Type: String
 Required: Yes
 
+ ** OriginHttpVersion **   <a name="cloudfront-Type-VpcOriginConfig-OriginHttpVersion"></a>
+The HTTP version that CloudFront uses for connections to your VPC origin. Valid values are `http1.1` and `http2`. With `http2`, CloudFront negotiates HTTP/2 with the origin and falls back to HTTP/1.1 if the origin doesn't support HTTP/2. CloudFront uses HTTP/2 only over TLS 1.2 or later. If you don't specify a value, CloudFront uses HTTP/1.1.
+Type: String
+Valid Values: `http1.1 | http2`
+Required: No
+
  ** OriginKeepaliveTimeout **   <a name="cloudfront-Type-VpcOriginConfig-OriginKeepaliveTimeout"></a>
 Specifies how long, in seconds, CloudFront persists its connection to the origin. The minimum timeout is 1 second, the maximum is 300 seconds, and the default (if you don't specify otherwise) is 5 seconds.
 For more information, see [Keep-alive timeout (custom origins only)](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistValuesOrigin.html#DownloadDistValuesOriginKeepaliveTimeout) in the *Amazon CloudFront Developer Guide*.
@@ -24,6 +30,11 @@ Required: No
 Specifies how long, in seconds, CloudFront waits for a response from the origin. This is also known as the *origin response timeout*. The minimum timeout is 1 second, the maximum is 120 seconds, and the default (if you don't specify otherwise) is 30 seconds.
 For more information, see [Response timeout](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistValuesOrigin.html#DownloadDistValuesOriginResponseTimeout) in the *Amazon CloudFront Developer Guide*.
 Type: Integer
+Required: No
+
+ ** OwnerAccountId **   <a name="cloudfront-Type-VpcOriginConfig-OwnerAccountId"></a>
+The account ID of the AWS account that owns the VPC origin.
+Type: String
 Required: No
 
 ## See Also

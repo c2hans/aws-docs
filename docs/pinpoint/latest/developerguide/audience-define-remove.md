@@ -39,7 +39,7 @@ You can use the Amazon Pinpoint API in your Java applications by using the clien
 **Example Code**
 To delete an endpoint, use the `deleteEndpoint` method of the `AmazonPinpoint` client. Provide a `DeleteEndpointRequest` object as the method argument:
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.DeleteEndpointRequest;
@@ -47,7 +47,7 @@ import software.amazon.awssdk.services.pinpoint.model.DeleteEndpointResponse;
 import software.amazon.awssdk.services.pinpoint.model.PinpointException;
 ```
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.DeleteEndpointRequest;
@@ -119,7 +119,7 @@ You can use Amazon Pinpoint by making HTTP requests directly to the REST API.
 **Example DELETE endpoint request**
 To delete an endpoint, issue a `DELETE` request to the [Endpoint](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints-endpoint-id.html) resource:
 
-```
+```http
 DELETE /v1/apps/{{application-id}}/endpoints/{{endpoint-id}} HTTP/1.1
 Host: pinpoint.us-east-1.amazonaws.com
 Content-Type: application/json

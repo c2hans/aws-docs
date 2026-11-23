@@ -12,7 +12,7 @@ If your event dataset is stored with Amazon Fraud Detector, you might need to ad
 
 The following AWS SDK for Python (Boto3) example code adds a label *fraud* that is associated with the event type *registration* using the `UpdateEventLabel` API.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

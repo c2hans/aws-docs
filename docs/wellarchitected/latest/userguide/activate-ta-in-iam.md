@@ -26,7 +26,7 @@ The owners of associated accounts for workloads that have activated Trusted Advi
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -56,7 +56,7 @@ The `aws:sourceArn` in the condition block of the preceeding custom trust policy
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -95,7 +95,7 @@ Additionally, you have the option to skip creating the permissions during the ro
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -128,7 +128,7 @@ Additionally, you have the option to skip creating the permissions during the ro
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

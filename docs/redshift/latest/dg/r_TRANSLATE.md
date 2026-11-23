@@ -41,7 +41,7 @@ VARCHAR
 
 To replace several characters in a string, use the following example.
 
-```
+```sql
 SELECT TRANSLATE('mint tea', 'inea', 'osin');
 
 +-----------+
@@ -55,7 +55,7 @@ The following examples use data from the USERS table in the TICKIT sample databa
 
 To replace the at sign (@) with a period for all values in a column, use the following example.
 
-```
+```sql
 SELECT email, TRANSLATE(email, '@', '.') as obfuscated_email
 FROM users LIMIT 10;
 
@@ -77,7 +77,7 @@ FROM users LIMIT 10;
 
  To replace spaces with underscores and strips out periods for all values in a column, use the following example.
 
-```
+```sql
 SELECT city, TRANSLATE(city, ' .', '_')
 FROM users
 WHERE city LIKE 'Sain%' OR city LIKE 'St%'

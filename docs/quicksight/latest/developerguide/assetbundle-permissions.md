@@ -15,7 +15,7 @@ The following example shows an IAM policy that you can add to an existing IAM ro
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -56,7 +56,7 @@ The following example shows an IAM policy that you can add to an existing IAM ro
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

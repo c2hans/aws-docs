@@ -86,7 +86,7 @@ The project might take a few moments to delete. During that time, the status of 
    Use the following code. Supply the following command line parameters:
    + `project_arn`— the ARN of the project that you want to delete.
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
 
@@ -214,7 +214,7 @@ The project might take a few moments to delete. During that time, the status of 
    Use the following code. Supply the following command line parameters:
    + `project_arn`— the ARN of the project that you want to delete.
 
-   ```
+   ```java
    /*
    Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    SPDX-License-Identifier: Apache-2.0

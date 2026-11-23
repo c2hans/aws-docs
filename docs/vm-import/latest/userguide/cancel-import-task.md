@@ -25,7 +25,7 @@ aws ec2 cancel-import-task \
 **To cancel an import snapshot task**
 Use the [Stop-EC2ImportTask](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2ImportTask.html) cmdlet.
 
-```
+```powershell
 Stop-EC2ImportTask `
     -ImportTaskId {{import-snap-1234567890abcdef0}}
 ```

@@ -104,7 +104,7 @@ The following example operation deletes a terms document with the specified Term
 #### Sample Request
 <a name="API_DeleteTerms_Example_1_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z

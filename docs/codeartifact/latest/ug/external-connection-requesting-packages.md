@@ -43,7 +43,7 @@ The following instructions use `npm`, to view configuration and usage instructio
 
    Example output:
 
-   ```
+   ```json
    {
        "packages": [
            {
@@ -62,7 +62,7 @@ The following instructions use `npm`, to view configuration and usage instructio
 
    Example output:
 
-   ```
+   ```json
    {
        "defaultDisplayVersion: "1.2.5"
        "format": "{{npm}}",

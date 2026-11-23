@@ -23,7 +23,7 @@ The following code example shows how to invoke Stability.ai Stable Image Core on
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/bdr#code-examples).
 Create an image with Stable Diffusion.
 
-```
+```sap-abap
     "Stable Image Core Input Parameters should be in a format like this:
 *   {
 *     "prompt": "Draw a dolphin with a mustache, photorealistic",
@@ -79,7 +79,7 @@ Create an image with Stable Diffusion.
 ```
 Invoke the Stability.ai Stable Image Core foundation model to generate images using L2 high level client.
 
-```
+```sap-abap
     TRY.
         DATA(lo_bdr_l2_sd) = /aws1/cl_bdr_l2_factory=>create_stable_diffusion_xl_1( lo_bdr ).
         " iv_prompt contains a prompt like 'Show me a picture of a unicorn reading an enterprise financial report'.

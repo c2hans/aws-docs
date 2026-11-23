@@ -26,7 +26,7 @@ The following code example shows how to use `ListBuilds`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/codebuild#code-examples).
 
-```
+```cpp
 //! List the CodeBuild builds.
 /*!
   \param sortType: 'SortOrderType' type.
@@ -104,7 +104,7 @@ The following code example shows how to use `ListProjects`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/codebuild#code-examples).
 
-```
+```cpp
 //! List the CodeBuild projects.
 /*!
   \param sortType: 'SortOrderType' type.
@@ -160,7 +160,7 @@ The following code example shows how to use `StartBuild`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/codebuild#code-examples).
 
-```
+```cpp
 //! Start an AWS CodeBuild project build.
 /*!
   \param projectName: A CodeBuild project name.

@@ -30,7 +30,7 @@ Managed policy contents change, so the policy shown here may be out-of-date. Vie
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

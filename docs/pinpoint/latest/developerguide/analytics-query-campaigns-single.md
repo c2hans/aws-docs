@@ -20,7 +20,7 @@ The following examples show how to query analytics data for a campaign by using 
 
 To query analytics data for a campaign by using the Amazon Pinpoint REST API, send an HTTP(S) GET request to the [Campaign Metrics](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-campaigns-campaign-id-kpis-daterange-kpi-name.html) URI. In the URI, specify the appropriate values for the required path parameters:
 
-```
+```HTTP
 https://{{endpoint}}/v1/apps/{{application-id}}/campaigns/{{campaign-id}}/kpis/daterange/{{kpi-name}}
 ```
 
@@ -36,7 +36,7 @@ To apply a filter that queries the data for a specific date range, append the `s
 
 For example, the following request retrieves the number of unique endpoints that messages were delivered to, by all runs of a campaign, from July 19, 2019 through July 26, 2019:
 
-```
+```HTTP
 https://pinpoint.us-east-1.amazonaws.com/v1/apps/1234567890123456789012345example/campaigns/80b8efd84042ff8d9c96ce2f8example/kpis/daterange/unique-deliveries?start-time=2019-07-19T00:00:00Z&end-time=2019-07-26T23:59:59Z
 ```
 
@@ -88,7 +88,7 @@ Where:
 
 To query analytics data for a campaign by using the AWS SDK for Java, use the **GetCampaignDateRangeKpiRequest** method of the [Campaign Metrics](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-campaigns-campaign-id-kpis-daterange-kpi-name.html) API. Specify the appropriate values for the required parameters:
 
-```
+```java
 GetCampaignDateRangeKpiRequest request = new GetCampaignDateRangeKpiRequest()
         .withApplicationId("{{applicationId}}")
         .withCampaignId("{{campaignId}}")
@@ -102,7 +102,7 @@ Where:
 
 To apply a filter that queries the data for a specific date range, include the `startTime` and `endTime` parameters and values in your query. By using these parameters, you can specify the first and last date and time, in extended ISO 8601 format, of an inclusive date range to retrieve the data for. For example, the following request retrieves the number of unique endpoints that messages were delivered to, by all runs of a campaign, from July 19, 2019 through July 26, 2019:
 
-```
+```java
 GetCampaignDateRangeKpiRequest request = new GetCampaignDateRangeKpiRequest()
         .withApplicationId("1234567890123456789012345example")
         .withCampaignId("80b8efd84042ff8d9c96ce2f8example")
@@ -122,7 +122,7 @@ Where:
 
 After you send your query, Amazon Pinpoint returns the query results in a JSON response. The structure of the results varies depending on the metric that you queried. Some metrics return only one value. For example, the *endpoint deliveries* (`unique-deliveries`) campaign metric, which is used in the preceding examples, returns one value—the number of unique endpoints that messages were delivered to, by all runs of a campaign. In this case, the JSON response is the following:
 
-```
+```json
 {
     "CampaignDateRangeKpiResponse":{
         "ApplicationId":"1234567890123456789012345example",

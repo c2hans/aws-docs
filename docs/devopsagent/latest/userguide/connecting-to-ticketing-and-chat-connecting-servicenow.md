@@ -245,3 +245,10 @@ This scenario can be accomplished in two ways. The webhook script itself can be 
 ![Business rule configuration form for sending events to Agent Space B.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/bc29e4db1a76.png)
 
 Now, when you create a new Incident that matches the condition specified, it will either trigger an investigation on DevOps Agent Space A or DevOps Agent Space B, providing you with fine grained control over incident routing.
+
+## (Optional) Permissions for directed actions
+<a name="optional-permissions-for-directed-actions"></a>
+
+To allow approved write actions on ServiceNow (directed actions), make sure the connection has the permissions below. Directed actions must also be enabled on the agent space, and you approve each action in chat before it runs. For more information, see [Working with directed actions](working-with-devops-agent-working-with-directed-actions.md).
+
+Assign the OAuth Application User (the user you set when you created the OAuth client) the `itil` role. Alternatively, use a custom role that grants create and write access to the Incident table and its journal fields (`comments` and `work_notes`). The write actions (create incident, update incident, and add incident note) all operate on the Incident table. If you set the Application User to Problem Administrator for incident-response setup, make sure that user also has the `itil` role.

@@ -20,7 +20,7 @@ A credential provider is a function that returns a `GuzzleHttp\Promise\PromiseIn
 
 Credential providers are passed into the `credentials` client constructor option. Credential providers are asynchronous, which forces them to be lazily evaluated each time an API operation is invoked. As such, passing in a credential provider function to an SDK client constructor doesn’t immediately validate the credentials. If the credential provider doesn’t return a credentials object, an API operation will be rejected with an `Aws\Exception\CredentialsException`.
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 use Aws\S3\S3Client;
 

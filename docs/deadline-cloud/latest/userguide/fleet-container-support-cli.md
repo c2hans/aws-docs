@@ -18,7 +18,7 @@ Before you begin, configure the AWS CLI with permission to create Deadline Cloud
 
 1. Set your farm, queue, and role values.
 
-   ```
+   ```bash
    FARM_ID={{farm-0123456789abcdef0123456789abcdef}}
    QUEUE_ID={{queue-0123456789abcdef0123456789abcdef}}
    FLEET_ROLE_ARN={{arn:aws:iam::111122223333:role/DeadlineFleetRole}}
@@ -36,7 +36,7 @@ Before you begin, configure the AWS CLI with permission to create Deadline Cloud
 
 1. Attach the Amazon ECR read-only policy to the queue role. The default Docker queue environment uses queue credentials to authenticate and pull the image.
 
-   ```
+   ```bash
    aws iam attach-role-policy \
        --role-name "$QUEUE_ROLE_NAME" \
        --policy-arn "$ECR_READ_ONLY_POLICY"
@@ -44,7 +44,7 @@ Before you begin, configure the AWS CLI with permission to create Deadline Cloud
 
 1. (Optional) Attach the same policy to the fleet role when host configuration actions or worker-side tools must pull images outside the queue session.
 
-   ```
+   ```bash
    aws iam attach-role-policy \
        --role-name "$FLEET_ROLE_NAME" \
        --policy-arn "$ECR_READ_ONLY_POLICY"
@@ -52,7 +52,7 @@ Before you begin, configure the AWS CLI with permission to create Deadline Cloud
 
 1. Create a file named `docker-fleet-configuration.json` with the following fleet configuration:
 
-   ```
+   ```json
    {
      "serviceManagedEc2": {
        "instanceCapabilities": {
@@ -81,7 +81,7 @@ Before you begin, configure the AWS CLI with permission to create Deadline Cloud
 
 1. Create the service-managed fleet and save its fleet ID.
 
-   ```
+   ```bash
    FLEET_ID=$(aws deadline create-fleet \
        --farm-id "$FARM_ID" \
        --display-name "Docker fleet" \
@@ -97,7 +97,7 @@ Before you begin, configure the AWS CLI with permission to create Deadline Cloud
 
 1. Associate the queue with the fleet.
 
-   ```
+   ```bash
    aws deadline create-queue-fleet-association \
        --farm-id "$FARM_ID" \
        --queue-id "$QUEUE_ID" \
@@ -111,7 +111,7 @@ Before you begin, configure the AWS CLI with permission to create Deadline Cloud
 
 1. Verify that the fleet configuration includes the Docker software add-on.
 
-   ```
+   ```bash
    aws deadline get-fleet \
        --farm-id "$FARM_ID" \
        --fleet-id "$FLEET_ID" \
@@ -122,7 +122,7 @@ Before you begin, configure the AWS CLI with permission to create Deadline Cloud
 
 1. Verify that the queue role has the Amazon ECR read-only policy.
 
-   ```
+   ```bash
    aws iam list-attached-role-policies \
        --role-name "$QUEUE_ROLE_NAME" \
        --query 'AttachedPolicies[?PolicyName==`AmazonEC2ContainerRegistryReadOnly`]'

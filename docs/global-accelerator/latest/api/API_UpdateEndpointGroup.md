@@ -187,7 +187,7 @@ aws globalaccelerator update-endpoint-group \
       EndpointId=arn:aws:elasticloadbalancing:us-east-1:000123456789:loadbalancer/net/NLBTesting/alb01234567890qrs,Weight=128
 ```
 
-```
+```json
 {
     "EndpointGroup": {
         "TrafficDialPercentage": 100,

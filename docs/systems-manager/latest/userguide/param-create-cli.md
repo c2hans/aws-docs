@@ -29,7 +29,7 @@ Parameters are only available in the AWS Region where they were created.
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm put-parameter \
        --name "{{parameter-name}}" \
        --value "{{parameter-value}}" \
@@ -40,7 +40,7 @@ Parameters are only available in the AWS Region where they were created.
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        --name "{{parameter-name}}" ^
        --value "{{parameter-value}}" ^
@@ -57,7 +57,7 @@ Parameters are only available in the AWS Region where they were created.
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm put-parameter \
        --name "{{parameter-name}}" \
        --value "{{an-AMI-id}}" \
@@ -69,7 +69,7 @@ Parameters are only available in the AWS Region where they were created.
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        --name "{{parameter-name}}" ^
        --value "{{an-AMI-id}}" ^
@@ -91,7 +91,7 @@ If successful, the command returns the version number of the parameter. **Except
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm put-parameter \
        --name {{parameter-name}} \
        --value "{{parameter-value}}" \
@@ -102,7 +102,7 @@ If successful, the command returns the version number of the parameter. **Except
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        --name {{parameter-name}} ^
        --value "{{parameter-value}}" ^
@@ -119,7 +119,7 @@ If successful, the command returns the version number of the parameter. **Except
 
    **Parameter not in a hierarchy**
 
-   ```
+   ```bash
    aws ssm put-parameter \
        --name "golden-ami" \
        --type "String" \
@@ -128,7 +128,7 @@ If successful, the command returns the version number of the parameter. **Except
 
    **Parameter in a hierarchy**
 
-   ```
+   ```bash
    aws ssm put-parameter \
        --name "/amis/linux/golden-ami" \
        --type "String" \
@@ -140,7 +140,7 @@ If successful, the command returns the version number of the parameter. **Except
 
    **Parameter not in a hierarchy**
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        --name "golden-ami" ^
        --type "String" ^
@@ -149,7 +149,7 @@ If successful, the command returns the version number of the parameter. **Except
 
    **Parameter in a hierarchy**
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        --name "/amis/windows/golden-ami" ^
        --type "String" ^
@@ -160,7 +160,7 @@ If successful, the command returns the version number of the parameter. **Except
 
 1. Run the following command to view the latest parameter value and verify the details of your new parameter.
 
-   ```
+   ```bash
    aws ssm get-parameters --names "/Test/IAD/helloWorld"
    ```
 
@@ -184,37 +184,37 @@ If successful, the command returns the version number of the parameter. **Except
 
 Run the following command to change the parameter value. It returns the version number of the parameter.
 
-```
+```bash
 aws ssm put-parameter --name "/Test/IAD/helloWorld" --value "My updated 1st parameter" --type String --overwrite
 ```
 
 Run the following command to view the parameter value history.
 
-```
+```bash
 aws ssm get-parameter-history --name "/Test/IAD/helloWorld"
 ```
 
 Run the following command to use this parameter in a command.
 
-```
+```bash
 aws ssm send-command --document-name "AWS-RunShellScript" --parameters '{"commands":["echo {{ssm:/Test/IAD/helloWorld}}"]}' --targets "Key=instanceids,Values={{instance-ids}}"
 ```
 
 Run the following command if you only want to retrieve the parameter Value.
 
-```
+```bash
 aws ssm get-parameter --name testDataTypeParameter --query "Parameter.Value"
 ```
 
 Run the following command if you only want to retrieve the parameter Value using `get-parameters`.
 
-```
+```bash
 aws ssm get-parameters --names "testDataTypeParameter" --query "Parameters[*].Value"
 ```
 
 Run the following command to view the parameter metadata.
 
-```
+```bash
 aws ssm describe-parameters --filters "Key=Name,Values=/Test/IAD/helloWorld"
 ```
 
@@ -251,7 +251,7 @@ The system returns information like the following.
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm put-parameter \
        --name "{{parameter-name}}" \
        --value "{{a-comma-separated-list-of-values}}" \
@@ -262,7 +262,7 @@ The system returns information like the following.
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        --name "{{parameter-name}}" ^
        --value "{{a-comma-separated-list-of-values}}" ^
@@ -281,7 +281,7 @@ If successful, the command returns the version number of the parameter.
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm put-parameter \
        --name /IAD/ERP/Oracle/addUsers \
        --value "Milana,Mariana,Mark,Miguel" \
@@ -291,7 +291,7 @@ If successful, the command returns the version number of the parameter.
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        --name /IAD/ERP/Oracle/addUsers ^
        --value "Milana,Mariana,Mark,Miguel" ^
@@ -304,7 +304,7 @@ Items in a `StringList` must be separated by a comma (,). You can't use other pu
 
 1. Run the `get-parameters` command to verify the details of the parameter. For example:
 
-   ```
+   ```bash
    aws ssm get-parameters --name "/IAD/ERP/Oracle/addUsers"
    ```
 
@@ -329,7 +329,7 @@ Parameter Store only supports [symmetric encryption KMS keys](https://docs.aws.a
 
    **Create a `SecureString` parameter using the default AWS managed key **
 
-   ```
+   ```bash
    aws ssm put-parameter \
        --name "{{parameter-name}}" \
        --value "{{parameter-value}}" \
@@ -338,7 +338,7 @@ Parameter Store only supports [symmetric encryption KMS keys](https://docs.aws.a
 
    **Create a `SecureString` parameter that uses a customer managed key**
 
-   ```
+   ```bash
    aws ssm put-parameter \
        --name "{{parameter-name}}" \
        --value "{{a-parameter-value, for example merchant-739482}}" \
@@ -348,7 +348,7 @@ Parameter Store only supports [symmetric encryption KMS keys](https://docs.aws.a
 
    **Create a `SecureString` parameter that uses a custom AWS KMS key**
 
-   ```
+   ```bash
    aws ssm put-parameter \
        --name "{{parameter-name}}" \
        --value "{{a-parameter-value, for example merchant-739482}}" \
@@ -362,7 +362,7 @@ Parameter Store only supports [symmetric encryption KMS keys](https://docs.aws.a
 
    **Create a `SecureString` parameter using the default AWS managed key**
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        --name "{{parameter-name}}" ^
        --value "{{parameter-value}}" ^
@@ -371,7 +371,7 @@ Parameter Store only supports [symmetric encryption KMS keys](https://docs.aws.a
 
    **Create a `SecureString` parameter that uses a customer managed key**
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        --name "{{parameter-name}}" ^
        --value "{{a-parameter-value, for example merchant-739482}}" ^
@@ -381,7 +381,7 @@ Parameter Store only supports [symmetric encryption KMS keys](https://docs.aws.a
 
    **Create a `SecureString` parameter that uses a custom AWS KMS key**
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        --name "{{parameter-name}}" ^
        --value "{{a-parameter-value, for example merchant-739482}}" ^
@@ -412,7 +412,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 
    You can create a customer managed key by using the AWS Management Console or the AWS KMS API. The following AWS CLI commands create a customer managed key in the current AWS Region of your AWS account.
 
-   ```
+   ```bash
    aws kms [create-key](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html)
    ```
 
@@ -423,7 +423,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm put-parameter \
        --name /myapp/prod/vendor/merchant-id \
        --value "merchant-739482" \
@@ -434,7 +434,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        --name /myapp/prod/vendor/merchant-id ^
        --value "merchant-739482" ^
@@ -451,7 +451,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm get-parameters \
        --name "{{the-parameter-name-you-specified}}" \
        --with-decryption
@@ -460,7 +460,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm get-parameters ^
        --name "{{the-parameter-name-you-specified}}" ^
        --with-decryption
@@ -473,7 +473,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm describe-parameters \
        --filters "Key=Name,Values={{the-name-that-you-specified}}"
    ```
@@ -481,7 +481,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm describe-parameters ^
        --filters "Key=Name,Values={{the-name-that-you-specified}}"
    ```
@@ -493,7 +493,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm put-parameter \
        --name "{{the-name-that-you-specified}}" \
        --value "{{a-new-parameter-value}}" \
@@ -504,7 +504,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        --name "{{the-name-that-you-specified}}" ^
        --value "{{a-new-parameter-value}}" ^
@@ -521,7 +521,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm put-parameter \
        --name "{{the-name-that-you-specified}}" \
        --value "{{a-new-parameter-value}}" \
@@ -530,7 +530,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
        --overwrite
    ```
 
-   ```
+   ```bash
    aws ssm put-parameter \
        --name "{{the-name-that-you-specified}}" \
        --value "{{a-new-parameter-value}}" \
@@ -542,7 +542,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        --name "{{the-name-that-you-specified}}" ^
        --value "{{a-new-parameter-value}}" ^
@@ -551,7 +551,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
        --overwrite
    ```
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        --name "{{the-name-that-you-specified}}" ^
        --value "{{a-new-parameter-value}}" ^
@@ -567,7 +567,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm get-parameters \
        --name "{{the-name-that-you-specified}}" \
        --with-decryption
@@ -576,7 +576,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm get-parameters ^
        --name "{{the-name-that-you-specified}}" ^
        --with-decryption
@@ -589,7 +589,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm get-parameter-history \
        --name "{{the-name-that-you-specified}}"
    ```
@@ -597,7 +597,7 @@ To use the AWS KMS key assigned to your AWS account and AWS Region, remove the `
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm get-parameter-history ^
        --name "{{the-name-that-you-specified}}"
    ```
@@ -626,7 +626,7 @@ You can use the AWS CLI to create a parameter with line breaks. Use line breaks 
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm put-parameter \
        ‐‐name "MultiLineParameter3" \
        ‐type String \
@@ -636,7 +636,7 @@ You can use the AWS CLI to create a parameter with line breaks. Use line breaks 
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm put-parameter ^
        ‐name "MultiLineParameter3" ^
        ‐type String ^
@@ -648,7 +648,7 @@ You can use the AWS CLI to create a parameter with line breaks. Use line breaks 
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm put-parameter \
        --name "MultiLineParameter" \
        --type String \
@@ -658,7 +658,7 @@ You can use the AWS CLI to create a parameter with line breaks. Use line breaks 
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm put-parameter ^
        --name "MultiLineParameter" ^
        --type String ^
@@ -669,7 +669,7 @@ You can use the AWS CLI to create a parameter with line breaks. Use line breaks 
 
    The following example shows the contents of the file `MultiLineParameter.json`.
 
-   ```
+   ```sh
    {
        "Value": "<para>Paragraph One</para>\n<para>Paragraph Two</para>\n<para>Paragraph Three</para>"
    }

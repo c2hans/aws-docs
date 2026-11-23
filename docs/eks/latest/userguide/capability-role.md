@@ -25,7 +25,7 @@ The capability role must meet the following requirements:
 
 All capability roles must include the following trust policy:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -71,7 +71,7 @@ ACK supports two permission models:
 
     Example Capability Role policy for IAM Role Selector approach:
 
-    ```
+    ```json
     {
       "Version": "2012-10-17",
       "Statement": [
@@ -97,7 +97,7 @@ No IAM permissions required by default. Optional permissions may be needed for:
 
   Example policy for Secrets Manager and CodeConnections:
 
-  ```
+  ```json
   {
     "Version": "2012-10-17",
     "Statement": [
@@ -175,7 +175,7 @@ You can use the AWS Management Console or the AWS CLI to create a capability rol
 
 1. Create the role. Replace `ACKCapabilityRole` with your desired role name.
 
-   ```
+   ```bash
    aws iam create-role \
      --role-name ACKCapabilityRole \
      --assume-role-policy-document file://capability-trust-policy.json
@@ -185,7 +185,7 @@ You can use the AWS Management Console or the AWS CLI to create a capability rol
 
    Example for ACK with S3 permissions:
 
-   ```
+   ```bash
    aws iam put-role-policy \
      --role-name ACKCapabilityRole \
      --policy-name S3Management \

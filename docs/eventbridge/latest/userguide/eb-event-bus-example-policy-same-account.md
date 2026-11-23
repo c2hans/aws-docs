@@ -11,7 +11,7 @@ The following example policy attached to an event bus named `CustomBus1` allows 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

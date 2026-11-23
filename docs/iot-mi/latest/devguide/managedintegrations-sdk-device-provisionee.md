@@ -49,13 +49,13 @@ $ export AWS_DEFAULT_REGION=YOUR-DEFAULT-REGION
 
 Use the [RegisterCustomEndpoint](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_RegisterCustomEndpoint.html) API command in your cloud environment to create a custom endpoint for device-to-cloud communication.
 
-```
+```JSON
 aws iot-managed-integrations register-custom-endpoint
 ```
 
 **Example response**
 
-```
+```JSON
 { "EndpointAddress":"{{[ACCOUNT-PREFIX]}}-ats.iot.{{AWS-REGION}}.amazonaws.com" }
 ```
 
@@ -75,7 +75,7 @@ aws iot-managed-integrations create-provisioning-profile \
 
 **Example response**
 
-```
+```JSON
 { "Arn":"arn:aws:iot-managed-integrations:AWS-REGION:YOUR-ACCOUNT-ID:provisioning-profile/PROFILE_NAME",
     "ClaimCertificate":"string",
     "ClaimCertificatePrivateKey":"string",
@@ -98,7 +98,7 @@ aws iot-managed-integrations create-managed-thing —role DEVICE \
 
 The following displays a sample API response.
 
-```
+```JSON
 {
    "Arn":"arn:aws:iot-managed-integrations:AWS-REGION:ACCOUNT-ID:managed-thing/59d3c90c55c4491192d841879192d33f",
    "CreatedAt":1.730960226491E9,

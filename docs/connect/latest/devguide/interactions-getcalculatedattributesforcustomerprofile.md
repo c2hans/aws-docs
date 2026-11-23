@@ -11,7 +11,7 @@ Retrieve calculated attributes for a customer profile. Customer Profiles must be
 
 A `ProfileId` must be present.
 
-```
+```json
 {
     "ProfileRequestData": {
         "ProfileId": Profile owning the calculated attribute

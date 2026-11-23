@@ -16,6 +16,13 @@ Content-type: application/json
 {
    "batchEvaluationName": "{{string}}",
    "clientToken": "{{string}}",
+   "datasetExecutionConfig": {
+      "agentInvocation": { ... },
+      "dataset": {
+         "datasetId": "{{string}}",
+         "datasetVersion": "{{string}}"
+      }
+   },
    "dataSourceConfig": { ... },
    "description": "{{string}}",
    "evaluationMetadata": { ... },
@@ -58,6 +65,11 @@ A unique, case-sensitive identifier to ensure that the API request completes no 
 Type: String
 Length Constraints: Minimum length of 33. Maximum length of 256.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,256}`
+Required: No
+
+ ** [datasetExecutionConfig](#API_StartBatchEvaluation_RequestSyntax) **   <a name="BedrockAgentCore-StartBatchEvaluation-request-datasetExecutionConfig"></a>
+The configuration for running the scenarios in a dataset against an agent before evaluating the resulting sessions. When you specify this field, the batch evaluation runs each scenario in the dataset against the agent. It then evaluates the sessions that the agent produces. You must also specify `evaluators` and a `dataSourceConfig` that uses `cloudWatchLogs`. Configure `cloudWatchLogs` with the service name and log groups that the agent uses for its traces. You can't specify `insights` or an `onlineEvaluationConfigSource` data source with this field.
+Type: [DatasetExecutionConfig](API_DatasetExecutionConfig.md) object
 Required: No
 
  ** [dataSourceConfig](#API_StartBatchEvaluation_RequestSyntax) **   <a name="BedrockAgentCore-StartBatchEvaluation-request-dataSourceConfig"></a>

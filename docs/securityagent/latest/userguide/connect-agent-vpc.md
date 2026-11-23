@@ -40,7 +40,7 @@ You can add up to 5 VPCs.
 
 To run a penetration test with a VPC, your Agent Space service role must include the following permissions:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -100,13 +100,13 @@ You can run penetration tests against VPC resources shared with your account usi
 
 1. (Optional) Enable automatic resource sharing for your AWS organization
 
-```
+```bash
 aws ram enable-sharing-with-aws-organization
 ```
 
 1. Using credentials from the AWS account that owns the VPC resources, share subnet and security group resources with the penetration test owner account
 
-```
+```bash
 aws ram create-resource-share \
     --name SharePentestResources \
     --resource-arns <subnet ARN> <security group ARN> \

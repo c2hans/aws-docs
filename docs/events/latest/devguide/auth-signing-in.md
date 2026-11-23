@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/auth-signing-in.h
 
 1. Redirect the attendee's browser to the authorization endpoint:
 
-   ```
+   ```text
    https://oauth.awsevents.com/oauth2/authorize
      ?response_type=code
      &client_id=7vmom55m1qstvq8i71ph127bfq
@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/auth-signing-in.h
 
 1.  Check that `state` matches what you stored, then exchange the code for tokens:
 
-   ```
+   ```bash
    curl -X POST https://oauth.awsevents.com/oauth2/token \
      -H "Content-Type: application/x-www-form-urlencoded" \
      -d "grant_type=authorization_code" \

@@ -48,7 +48,7 @@ Where:
 **Example Endpoint request file**
 The example `update-endpoint` command uses a JSON file as the argument for the `--endpoint-request` parameter. This file contains an endpoint definition like the following:
 
-```
+```json
 {
   "ChannelType": "APNS",
   "Address": "1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e2f",
@@ -92,7 +92,7 @@ You can use the Amazon Pinpoint API in your Java applications by using the clien
 **Example Code**
 To add an endpoint, initialize an [`EndpointRequest`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/pinpoint/model/EndpointRequest.html) object, and pass it to the [`updateEndpoint`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/pinpoint/model/UpdateEndpointRequest.html) method of the `AmazonPinpoint` client:
 
-```
+```java
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.pinpoint.AmazonPinpoint;
 import com.amazonaws.services.pinpoint.AmazonPinpointClientBuilder;
@@ -184,7 +184,7 @@ Where:
 + *endpoint-id* is the ID that you're assigning to a new endpoint, or it's the ID of an existing endpoint that you're updating.
 In your request, include the required headers, and provide the [EndpointRequest](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints-endpoint-id.html#apps-application-id-endpoints-endpoint-id-schemas) JSON as the body:
 
-```
+```http
 PUT /v1/apps/{{application_id}}/endpoints/{{example_endpoint}} HTTP/1.1
 Host: pinpoint.us-east-1.amazonaws.com
 X-Amz-Date: 20180415T182538Z

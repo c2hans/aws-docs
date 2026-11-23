@@ -13,6 +13,6 @@ To run this bundle, you need 3ds Max 2025 and V-Ray for 3ds Max 2025 installed o
 
 Before submitting the job, configure your scene to save raw VRIMG output to a local worker path (for example, `C:\Temp\output.vrimg`) and remove absolute output paths from each render element including the Denoiser. Then submit the bundle:
 
-```
+```bash
 deadline bundle gui-submit 3dsmax_vray_denoiser/
 ```

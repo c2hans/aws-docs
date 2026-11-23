@@ -13,7 +13,7 @@ All SageMaker HyperPod examples are available in the `3.test_cases` folder of th
 
 1. Clone the [Awsome Distributed Training GitHub repository](https://github.com/aws-samples/awsome-distributed-training/), and copy the training job examples to your Amazon FSx file system.
 
-   ```
+   ```sh
    $ TRAINING_DIR={{/fsx/users/my-user/fsdp}}
    $ git clone https://github.com/aws-samples/awsome-distributed-training/
    ```
@@ -22,13 +22,13 @@ All SageMaker HyperPod examples are available in the `3.test_cases` folder of th
 
 1. Build the virtual Conda environment by launching a single node slurm job as follows.
 
-   ```
+   ```sh
    $ srun -N 1 {{/path_to/create_conda_env.sh}}
    ```
 
 1. After the environment is built, you can launch a training job by pointing to the environment path on the shared volume. You can launch both single-node and multi-node training jobs with the same setup. To launch a job, create a job launcher script (also called an entry point script) as follows.
 
-   ```
+   ```sh
    #!/usr/bin/env bash
    set -ex
 
@@ -58,7 +58,7 @@ If you want to make your training job more resilient against hardware failures b
 
 1. With this script in the shared volume at `/fsx/users/my_user/train.sh`, run the following `srun` command to schedule the Slurm job.
 
-   ```
+   ```sh
    $ cd /fsx/users/my_user/
    $ srun -N 8 train.sh
    ```

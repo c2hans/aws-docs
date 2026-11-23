@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/governance-code-signing
 
 To set up code signing for your Lambda functions, start by creating an S3 bucket with versioning enabled. After that, create a signing profile with AWS Signer, specify Lambda as the platform and then specify a period of days in which the signing profile is valid. Example:
 
-```
+```yaml
   Signer:
     Type: AWS::Signer::SigningProfile
     Properties:
@@ -20,7 +20,7 @@ To set up code signing for your Lambda functions, start by creating an S3 bucket
 
 Then use the signing profile and create a signing configuration with Lambda. You have to specify what to do when the signing configuration sees an artifact that does not match a digital signature that it expected: warn (but allow the deployment) or enforce (and block the deployment). The example below is configured to enforce and block deployments.
 
-```
+```yaml
   SigningConfig:
     Type: AWS::Lambda::CodeSigningConfig
     Properties:
@@ -42,7 +42,7 @@ aws signer start-signing-job \
 
 You get an output as follows, where the `jobId` is the object that is created in the destination bucket and prefix and `jobOwner` is the 12-digit AWS account ID where the job was run.
 
-```
+```json
 {
     "jobId": "87a3522b-5c0b-4d7d-b4e0-4255a8e05388",
     "jobOwner": "111122223333"
@@ -51,7 +51,7 @@ You get an output as follows, where the `jobId` is the object that is created in
 
 And now you can deploy your function using the signed S3 object and the code signing configuration that you created.
 
-```
+```yaml
   Fn:
     Type: AWS::Serverless::Function
     Properties:

@@ -119,7 +119,7 @@ Enable CORS by returning the correct headers.
 #### PUT schema
 <a name="configurations-arn-request-body-put-example"></a>
 
-```
+```json
 {
   "description": "string",
   "serverProperties": "string"
@@ -132,7 +132,7 @@ Enable CORS by returning the correct headers.
 #### DescribeConfigurationResponse schema
 <a name="configurations-arn-response-body-describeconfigurationresponse-example"></a>
 
-```
+```json
 {
   "creationTime": "string",
   "name": "string",
@@ -153,7 +153,7 @@ Enable CORS by returning the correct headers.
 #### UpdateConfigurationResponse schema
 <a name="configurations-arn-response-body-updateconfigurationresponse-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "latestRevision": {
@@ -167,7 +167,7 @@ Enable CORS by returning the correct headers.
 #### DeleteConfigurationResponse schema
 <a name="configurations-arn-response-body-deleteconfigurationresponse-example"></a>
 
-```
+```json
 {
   "state": enum,
   "Arn": "string"
@@ -177,7 +177,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="configurations-arn-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

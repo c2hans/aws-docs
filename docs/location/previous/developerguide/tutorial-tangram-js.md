@@ -29,7 +29,7 @@ The application is an HTML page with JavaScript to build the map on your web app
 + Enter a `div` element with an `id` of map to apply the map's dimensions to the map view.
 + The dimensions are inherited from the viewport.
 
-```
+```html
 <html>
   <head>
     <style>
@@ -57,7 +57,7 @@ Add the following dependencies:
 + Tangram.
 + AWS SDK for JavaScript.
 
-```
+```html
 <!-- CSS dependencies -->
 <link
   rel="stylesheet"
@@ -83,7 +83,7 @@ To configure your application with your resources and credentials:
 
 1. Enter the names and identifiers of your resources.
 
-   ```
+   ```js
    // Cognito Identity Pool ID
    const identityPoolId = "{{us-east-1:54f2ba88-9390-498d-aaa5-0d97fb7ca3bd}}";
    // Amazon Location Service map name; must be HERE-backed
@@ -106,7 +106,7 @@ To configure your application with your resources and credentials:
 
    To work around this, override `sources.mapzen.url` to point to Amazon Location using a synthetic host name `amazon.location`, which will be handled by a [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API). The following is an example of scene configuration using [Bubble Wrap](https://github.com/tangrams/bubble-wrap):
 
-   ```
+   ```js
    const scene = {
      import: [
        // Bubble Wrap style
@@ -140,7 +140,7 @@ To register and initialize the service worker, create a `registerServiceWorker` 
 
 Credentials are loaded from Amazon Cognito and are passed into the service worker alongside the Region to provide information to sign tile requests with [Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html).
 
-```
+```js
 /**
  * Register a service worker that will rewrite and sign requests using Signature Version 4.
  */
@@ -179,7 +179,7 @@ async function registerServiceWorker() {
 
 The Service Worker implementation in `sw.js` listens for `message` events to pick up credential and Region configuration changes. It also acts as a proxy server by listening for `fetch` events. `fetch` events targeting the `amazon.location` synthetic host name will be rewritten to target the appropriate Amazon Location API and signed using Amplify Core's `Signer`.
 
-```
+```js
 // sw.js
 self.importScripts(
   "https://unpkg.com/@aws-amplify/core@3.7.0/dist/aws-amplify-core.min.js"
@@ -248,7 +248,7 @@ self.addEventListener("fetch", (event) => {
 
 To automatically renew credentials and send them to the service worker before they expire, use the following function within `index.html`:
 
-```
+```js
 async function refreshCredentials() {
   await credentials.refreshPromise();
 
@@ -280,7 +280,7 @@ For the map to display after the page is loaded, you must initialize the map. Yo
 You must provide word mark or text attribution for each data provider that you use, either on your application or your documentation. Attribution strings are included in the style descriptor response under the `sources.esri.attribution`, `sources.here.attribution`, and `source.grabmaptiles.attribution` keys.
 Because Tangram doesn't request these resources, and is only compatible with maps from HERE, use "© 2020 HERE". When using Amazon Location resources with [data providers](https://docs.aws.amazon.com/location/previous/developerguide/what-is-data-provider.html), make sure to read the [service terms and conditions](https://aws.amazon.com/service-terms/).
 
-```
+```js
 /**
  * Initialize a map.
  */
@@ -311,7 +311,7 @@ To use a local web server, you can use npx, because it's installed as a part of 
 
 The following is the `index.html` file:
 
-```
+```html
 <!-- index.html -->
 <html>
   <head>
@@ -435,7 +435,7 @@ The following is the `index.html` file:
 
 The following is the `sw.js` file:
 
-```
+```js
 // sw.js
 self.importScripts(
   "https://unpkg.com/@aws-amplify/core@3.7.0/dist/aws-amplify-core.min.js"

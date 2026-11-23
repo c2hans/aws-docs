@@ -49,7 +49,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-is-security.html
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -94,7 +94,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-is-security.html
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -122,7 +122,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-is-security.html
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -155,7 +155,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-is-security.html
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -199,7 +199,7 @@ You can attach the **AWSGlueSessionUserRestrictedPolicy** to IAM roles attached 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 
 The **Availability Zone: recovery** template runs AWS FIS actions against the following services: Amazon EC2, Amazon EBS, Amazon EC2 Auto Scaling, Amazon ElastiCache, Amazon RDS, network ACLs, and AWS Application Recovery Controller zonal shift. Attach the following permissions policy to the execution role.
 
-```
+```json
 {
   "Version": "2012-10-17"		 	 	 ,
   "Statement": [

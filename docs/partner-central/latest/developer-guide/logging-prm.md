@@ -44,7 +44,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateRevenueAttribution` action on AWS Partner Central Revenue Attribution:
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

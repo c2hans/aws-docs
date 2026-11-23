@@ -16,7 +16,7 @@ To access an object in a schema, qualify the object by using the `schema_name.ta
 
 The following example creates a schema named **SALES** for the user `GUEST`.
 
-```
+```sql
 CREATE SCHEMA SALES AUTHORIZATION GUEST;
 ```
 
@@ -24,7 +24,7 @@ For information about more command options, see [CREATE SCHEMA](https://docs.aws
 
 To view the list of schemas in your database, run the following command.
 
-```
+```sql
 select * from pg_namespace;
 ```
 
@@ -49,12 +49,12 @@ Use the GRANT statement to give permissions to users for the schemas.
 
 The following example grants privilege to the `GUEST` user to select data from all tables or views in the `SALES` schema using a SELECT statement.
 
-```
+```sql
 GRANT SELECT ON ALL TABLES IN SCHEMA SALES TO GUEST;
 ```
 
 The following example grants all available privileges at one time to the `GUEST` user.
 
-```
+```sql
 GRANT ALL ON SCHEMA SALES TO GUEST;
 ```

@@ -39,6 +39,8 @@ Ahead of a security incident, consider developing forensics capabilities to supp
 
 ![Flow diagram showing a per-Region account structure for incident response, forking into a security and forensics OU.](https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/region-account-structure.png)
 
+*Per-Region account structure for incident response*
+
  **Capture backups and snapshots**
 
  Setting up backups of key systems and databases are critical for recovering from a security incident and for forensics purposes. With backups in place, you can restore your systems to their previous safe state. On AWS, you can take snapshots of various resources. Snapshots provide you with point-in-time backups of those resources. There are many AWS services that can support you in backup and recovery. For detail on these services and approaches for backup and recovery, see [Backup and Recovery Prescriptive Guidance](https://docs.aws.amazon.com/prescriptive-guidance/latest/backup-recovery/services.html) and [Use backups to recover from security incidents](https://aws.amazon.com/blogs/security/use-backups-to-recover-from-security-incidents/).

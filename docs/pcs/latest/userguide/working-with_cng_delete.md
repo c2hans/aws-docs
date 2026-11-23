@@ -45,7 +45,7 @@ You can use commands native to your scheduler to confirm that the compute node g
   +  Replace {{my-node-group}} with the name or ID of your compute node group.
   +  Replace {{my-cluster}} with the name or ID of your cluster.
 
-  ```
+  ```cmd
   aws pcs delete-compute-node-group --region {{region-code}} \
          --compute-node-group-identifier {{my-node-group}} \
          --cluster-identifier {{my-cluster}}

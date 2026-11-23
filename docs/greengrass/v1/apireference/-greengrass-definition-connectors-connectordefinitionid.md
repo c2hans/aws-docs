@@ -28,7 +28,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-connectors-connectordefinitionid-get-cli"></a>
 
-```
+```bash
 aws greengrass get-connector-definition \
   --connector-definition-id <value>  \
   [--cli-input-json <value>] \
@@ -37,7 +37,7 @@ aws greengrass get-connector-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "ConnectorDefinitionId": "string"
 }
@@ -50,7 +50,7 @@ cli-input-json format:
 
  [ DefinitionInformation](definitions-definitioninformation.md)
 
-```
+```json
 {
 "Name": "string",
 "Id": "string",
@@ -99,7 +99,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -153,7 +153,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-connectors-connectordefinitionid-delete-cli"></a>
 
-```
+```bash
 aws greengrass delete-connector-definition \
   --connector-definition-id <value>  \
   [--cli-input-json <value>] \
@@ -162,7 +162,7 @@ aws greengrass delete-connector-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "ConnectorDefinitionId": "string"
 }
@@ -175,7 +175,7 @@ cli-input-json format:
 Success.
  [ Empty](definitions-empty.md)
 
-```
+```json
 {
 }
 ```
@@ -187,7 +187,7 @@ type: object
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -237,7 +237,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "Name": "string"
 }
@@ -258,7 +258,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-connectors-connectordefinitionid-put-cli"></a>
 
-```
+```bash
 aws greengrass update-connector-definition \
   --connector-definition-id <value> \
   [--name <value>]  \
@@ -268,7 +268,7 @@ aws greengrass update-connector-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "ConnectorDefinitionId": "string",
 "Name": "string"
@@ -282,7 +282,7 @@ cli-input-json format:
 Success.
  [ Empty](definitions-empty.md)
 
-```
+```json
 {
 }
 ```
@@ -294,7 +294,7 @@ type: object
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

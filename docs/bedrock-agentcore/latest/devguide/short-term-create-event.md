@@ -46,7 +46,7 @@ Because `payload` is a list, a single event can carry more than one payload item
 
  **Example – Multi-payload event request**
 
-```
+```json
 {
   "memoryId": "mem-12345abcdef",
   "actorId": "agent-support-123/customer-456",
@@ -88,7 +88,7 @@ A map of custom namespace variable keys to their values. If you defined [custom 
 
 The following example shows how to pass custom namespace variable values when creating an event:
 
-```
+```json
 {
   "memoryId": "mem-12345abcdef",
   "actorId": "user456",
@@ -129,7 +129,7 @@ The ID of the event from which the branch originates.
 
 Here’s an example of creating a branched event to represent an edited message:
 
-```
+```json
 {
   "memoryId": "mem-12345abcdef",
   "actorId": "agent-support-123/customer-456",

@@ -24,7 +24,7 @@ The following example shows how you can use [attribute-based access control (ABA
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

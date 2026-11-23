@@ -92,7 +92,7 @@ For more information, see [AWS Systems Manager Documents](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This creates a new version of a document with the updated contents of the json file you specify. The document must be in JSON format. You can obtain the document version with the "Get-SSMDocumentVersionList" cmdlet.**
 
-```
+```powershell
 Update-SSMDocument -Name RunShellScript -DocumentVersion "1" -Content (Get-Content -Raw "c:\temp\RunShellScript.json")
 ```
 **Output:**
@@ -119,7 +119,7 @@ Status          : Updating
 **Tools for PowerShell V5**
 **Example 1: This creates a new version of a document with the updated contents of the json file you specify. The document must be in JSON format. You can obtain the document version with the "Get-SSMDocumentVersionList" cmdlet.**
 
-```
+```powershell
 Update-SSMDocument -Name RunShellScript -DocumentVersion "1" -Content (Get-Content -Raw "c:\temp\RunShellScript.json")
 ```
 **Output:**

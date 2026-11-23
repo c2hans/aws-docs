@@ -28,7 +28,7 @@ When using the `update-resource` command, you can specify the patch document inl
 
 The following example updates the retention policy of an [`AWS::Logs::LogGroup`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html) resource named `CloudControlApiLogGroup` to 90 days.
 
-```
+```bash
 $ aws cloudcontrol update-resource --type-name AWS::Logs::LogGroup \
     --identifier CloudControlApiLogGroup \
     --patch-document '[{"op":"replace","path":"RetentionInDays","value":90}]'
@@ -51,7 +51,7 @@ To update a resource, Cloud Control API first retrieves the current state of the
 
 For example, consider the following patch document that is defined to update an [`AWS::Logs::LogGroup`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html) resource. The document contains two patch operations. The first operation is of type `test` and checks to see if the resource's retention policy is set to 3653 days. If that is the case, the resource passes the test and Cloud Control API proceeds to the next operation. This operation replaces the current retention policy value with 180 days. If the resource's retention policy is set to a value of other than 3653 days, the first `test` operation fails and Cloud Control API never runs the second `replace` operation.
 
-```
+```json
 [
   {
     "op": "test",

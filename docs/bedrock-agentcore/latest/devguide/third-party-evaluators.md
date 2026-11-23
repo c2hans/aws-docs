@@ -47,7 +47,7 @@ A managed third-party evaluator’s ID follows the `ThirdParty.<Provider>.<Metri
 
 Third-party evaluators are returned by the `ListEvaluators` API alongside first-party built-in evaluators and any custom evaluators in your account.
 
-```
+```json
 {
   "evaluators": [
     {
@@ -89,7 +89,7 @@ You can pass a managed third-party evaluator’s ID anywhere you would pass a bu
 
 The following example runs a managed third-party evaluator with the `Evaluate` API:
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore')
@@ -111,7 +111,7 @@ Use a custom derived evaluator to run an existing evaluator—a built-in or mana
 
 To create a custom derived evaluator, specify the `derived` member of `evaluatorConfig` with the ID of the base evaluator and your model configuration. Save the following as `derived_evaluator_config.json`:
 
-```
+```json
 {
     "derived": {
         "baseEvaluatorId": "ThirdParty.DeepEval.TaskCompletion",
@@ -133,7 +133,7 @@ You can also derive a custom evaluator from a built-in evaluator by setting `bas
 
 Create the evaluator with the AWS CLI:
 
-```
+```bash
 aws bedrock-agentcore-control create-evaluator \
     --evaluator-name 'my_task_completion' \
     --evaluator-config file://derived_evaluator_config.json

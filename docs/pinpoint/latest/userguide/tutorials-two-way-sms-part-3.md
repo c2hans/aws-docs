@@ -33,7 +33,7 @@ The first function takes input from your registration form, which it receives fr
 
 1. For **Code source** delete the sample function in the code editor, and then paste the following code:
 
-   ```
+   ```js
    import { PinpointClient, PhoneNumberValidateCommand, UpdateEndpointCommand, SendMessagesCommand } from "@aws-sdk/client-pinpoint"; // ES Modules import
    const pinClient = new PinpointClient({region: process.env.region});
 
@@ -187,7 +187,7 @@ After you create the function, you should test it to make sure that it's configu
    + For **Event name**, enter a name for the test event, such as **MyPhoneNumber**.
    + Erase the example code in the code editor. Paste the following code:
 
-     ```
+     ```json
      {
        "destinationNumber": "{{+12065550142}}",
        "firstName": "{{Carlos}}",
@@ -243,7 +243,7 @@ If the customer doesn't respond, or responds with anything other than the design
 
 1. Delete the sample function in the code editor, and then paste the following code:
 
-   ```
+   ```js
    import { PinpointClient, UpdateEndpointCommand } from "@aws-sdk/client-pinpoint"; // ES Modules import
 
    // Create a new Pinpoint client instance with the region specified in the environment variables
@@ -335,7 +335,7 @@ After you create the function, you should test it to make sure that it's configu
 
    1. Erase the example code in the code editor. Paste the following code:
 
-      ```
+      ```json
       {
         "Records":[
           {

@@ -54,7 +54,7 @@ This policy does not provide unrestricted S3 access. If you need to upload model
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -99,7 +99,7 @@ The following example gives an user in your AWS account full access to all Amazo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -142,7 +142,7 @@ The following example policy allows users to access all of Amazon Fraud Detector
 
 ****
 
-```
+```json
 {
  "Version":"2012-10-17",
  "Statement": [
@@ -199,7 +199,7 @@ The following is an example of a policy that denies specific actions on any Amaz
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

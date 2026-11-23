@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="getloggerdefinitionversion-get-cli"></a>
 
-```
+```bash
 aws greengrass get-logger-definition-version \
   --logger-definition-version-id <value> \
   --logger-definition-id <value> \
@@ -26,7 +26,7 @@ aws greengrass get-logger-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "LoggerDefinitionVersionId": "string",
 "LoggerDefinitionId": "string",
@@ -59,7 +59,7 @@ type: string
 Success.
  [ GetLoggerDefinitionVersionResponse](definitions-getloggerdefinitionversionresponse.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -124,7 +124,7 @@ type: integer
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

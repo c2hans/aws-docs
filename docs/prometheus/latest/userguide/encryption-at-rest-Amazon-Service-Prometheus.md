@@ -76,7 +76,7 @@ To use your customer managed key with your Amazon Managed Service for Prometheus
 
 The following are policy statement examples you can add for Amazon Managed Service for Prometheus:
 
-```
+```json
   "Statement" : [
     {
       "Sid" : "Allow access to Amazon Managed Service for Prometheus principal within your account",
@@ -155,7 +155,7 @@ Amazon Managed Service for Prometheus uses the same encryption context in all AW
 
 **Example**
 
-```
+```json
 "encryptionContext": {
     "aws:aps:arn": "arn:aws:aps:us-west-2:111122223333:workspace/ws-sample-1234-abcd-56ef-7890abcd12ef"
 }
@@ -174,7 +174,7 @@ Amazon Managed Service for Prometheus uses an encryption context constraint in g
 **Example**
 The following are example key policy statements to give access to a customer managed key for a specific encryption context. The condition in this policy statement requires that the grants have an encryption context constraint that specifies the encryption context.
 
-```
+```json
 {
     "Sid": "Enable DescribeKey",
     "Effect": "Allow",

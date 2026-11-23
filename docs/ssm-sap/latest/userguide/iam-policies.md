@@ -24,7 +24,7 @@ This policy includes the following permissions.
 +  `iam` – Allows a service-linked role to be created, which is a requirement for using Systems Manager for SAP.
 +  `ec2` – Allows Systems Manager for SAP to start or stop an Amazon EC2 instance, if that instance is tagged with the key value pair `SSMForSAPManaged=True`.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -81,7 +81,7 @@ The `AWSSystemsManagerForSAPReadOnlyAccess` policy grants read only access to th
 This policy includes the following permissions.
 +  `ssm-sap` – Allows principals read only access to Systems Manager for SAP.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

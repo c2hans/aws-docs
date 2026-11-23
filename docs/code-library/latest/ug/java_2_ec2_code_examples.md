@@ -33,7 +33,7 @@ The following code example shows how to get started using Amazon EC2.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Asynchronously describes the security groups for the specified group ID.
      *
@@ -86,7 +86,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 Run a scenario at a command prompt.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.ec2.model.CreateKeyPairResponse;
@@ -684,7 +684,7 @@ public class EC2Scenario {
 ```
 Define a class that wraps EC2 actions.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.core.client.config.ClientOverrideConfiguration;
@@ -1406,7 +1406,7 @@ The following code example shows how to use `AllocateAddress`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Allocates an Elastic IP address asynchronously in the VPC domain.
      *
@@ -1435,7 +1435,7 @@ The following code example shows how to use `AssociateAddress`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Associates an Elastic IP address with an EC2 instance asynchronously.
      *
@@ -1474,7 +1474,7 @@ The following code example shows how to use `AuthorizeSecurityGroupIngress`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Creates a new security group asynchronously with the specified group name, description, and VPC ID. It also
      * authorizes inbound traffic on ports 80 and 22 from the specified IP address.
@@ -1544,7 +1544,7 @@ The following code example shows how to use `CreateKeyPair`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Creates a new key pair asynchronously.
      *
@@ -1586,7 +1586,7 @@ The following code example shows how to use `CreateSecurityGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Creates a new security group asynchronously with the specified group name, description, and VPC ID. It also
      * authorizes inbound traffic on ports 80 and 22 from the specified IP address.
@@ -1656,7 +1656,7 @@ The following code example shows how to use `DeleteKeyPair`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Deletes a key pair asynchronously.
      *
@@ -1691,7 +1691,7 @@ The following code example shows how to use `DeleteSecurityGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Deletes an EC2 security group asynchronously.
      *
@@ -1723,7 +1723,7 @@ The following code example shows how to use `DescribeInstanceTypes`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Asynchronously retrieves the instance types available in the current AWS region.
      * <p>
@@ -1778,7 +1778,7 @@ The following code example shows how to use `DescribeInstances`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Asynchronously describes the state of an EC2 instance.
      * The paginator helps you iterate over multiple pages of results.
@@ -1821,7 +1821,7 @@ The following code example shows how to use `DescribeKeyPairs`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Asynchronously describes the key pairs associated with the current AWS account.
      *
@@ -1849,7 +1849,7 @@ The following code example shows how to use `DescribeSecurityGroups`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Asynchronously describes the security groups for the specified group ID.
      *
@@ -1893,7 +1893,7 @@ The following code example shows how to use `DisassociateAddress`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Disassociates an Elastic IP address from an instance asynchronously.
      *
@@ -1930,7 +1930,7 @@ The following code example shows how to use `GetPasswordData`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2AsyncClient;
 import software.amazon.awssdk.services.ec2.model.*;
@@ -2012,7 +2012,7 @@ The following code example shows how to use `ReleaseAddress`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Releases an Elastic IP address asynchronously.
      *
@@ -2044,7 +2044,7 @@ The following code example shows how to use `RunInstances`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Runs an EC2 instance asynchronously.
      *
@@ -2090,7 +2090,7 @@ The following code example shows how to use `StartInstances`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Starts an Amazon EC2 instance asynchronously and waits until it is in the "running" state.
      *
@@ -2136,7 +2136,7 @@ The following code example shows how to use `StopInstances`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Stops the EC2 instance with the specified ID asynchronously and waits for the instance to stop.
      *
@@ -2188,7 +2188,7 @@ The following code example shows how to use `TerminateInstances`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Terminates an EC2 instance asynchronously and waits for it to reach the terminated state.
      *
@@ -2236,7 +2236,7 @@ The following code example shows how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```java
 public class Main {
 
     public static final String fileName = "C:\\AWS\\resworkflow\\recommendations.json"; // Modify file location.
@@ -2670,7 +2670,7 @@ public class Main {
 ```
 Create a class that wraps Auto Scaling and Amazon EC2 actions.
 
-```
+```java
 public class AutoScaler {
 
     private static Ec2Client ec2Client;
@@ -3163,7 +3163,7 @@ public class AutoScaler {
 ```
 Create a class that wraps Elastic Load Balancing actions.
 
-```
+```java
 public class LoadBalancer {
     public ElasticLoadBalancingV2Client elasticLoadBalancingV2Client;
 
@@ -3357,7 +3357,7 @@ public class LoadBalancer {
 ```
 Create a class that uses DynamoDB to simulate a recommendation service.
 
-```
+```java
 public class Database {
 
     private static DynamoDbClient dynamoDbClient;
@@ -3487,7 +3487,7 @@ public class Database {
 ```
 Create a class that wraps Systems Manager actions.
 
-```
+```java
 public class ParameterHelper {
 
     String tableName = "doc-example-resilient-architecture-table";

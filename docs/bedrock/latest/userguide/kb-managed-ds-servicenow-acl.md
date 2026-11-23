@@ -45,7 +45,7 @@ When you create an ACL-enabled data source, use the following settings:
 
 The following example shows the `connectorParameters` configuration for an ACL-enabled ServiceNow data source:
 
-```
+```json
 "connectorParameters": {
     "type": "SERVICENOW",
     "connectorType": "SERVICENOW",

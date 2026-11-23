@@ -199,7 +199,7 @@ Valid pattern: `.+`
 
 The following CLI command creates a `ConnectorDefinition` with an initial version that contains the ServiceNow MetricBase Integration connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -262,7 +262,7 @@ Type: `string`
 
 **Example input**
 
-```
+```json
 {
     "request": {
         "subject":"ef43c6d40a0a0b5700c77f9bf387afe3",
@@ -284,7 +284,7 @@ This connector publishes status information as output data on an MQTT topic.
 
 **Example output: Success**
 
-```
+```json
 {
     "response": {
         "metric_name": "Errors",
@@ -308,7 +308,7 @@ This connector publishes status information as output data on an MQTT topic.
 
 **Example output: Failure**
 
-```
+```json
 {
     "response": {
         "error": "InvalidInputException",
@@ -359,7 +359,7 @@ The [Get started with connectors (console)](connectors-console.md) and [Get star
 
 The following example Lambda function sends an input message to the connector.
 
-```
+```python
 import greengrasssdk
 import json
 

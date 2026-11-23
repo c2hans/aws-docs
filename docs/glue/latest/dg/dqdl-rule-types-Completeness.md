@@ -8,7 +8,7 @@ Checks the percentage of complete (non-null) values in a column against a given 
 
 **Syntax**
 
-```
+```json
 Completeness {{<COL_NAME>}} {{<EXPRESSION>}}
 ```
 + **COL\_NAME** – The name of the column that you want to evaluate the data quality rule against.
@@ -20,7 +20,7 @@ Completeness {{<COL_NAME>}} {{<EXPRESSION>}}
 
 The following example rules check if more than 95 percent of the values in a column are complete.
 
-```
+```json
 Completeness "First_Name" > 0.95
 Completeness "First_Name" > 0.95 where "weightinkgs > 10"
 ```

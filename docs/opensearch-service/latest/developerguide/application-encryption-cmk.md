@@ -43,7 +43,7 @@ Before you can use a customer managed key to encrypt your OpenSearch UI applicat
 
 The key policy for your customer managed key must grant OpenSearch UI permission to use the key. Use the following key policy, replacing the {{placeholder values}} with your own information:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -121,7 +121,7 @@ If your key policy doesn't include the grant permission, creating the applicatio
 
 If your key policy already contains the other two statements shown in [Prerequisites for using customer managed keys](#application-encryption-cmk-prerequisites), add the following statement to the `Statement` array:
 
-```
+```json
 {
     "Sid": "AllowOpenSearchUIToCreateGrantForAIAssistantMemory",
     "Effect": "Allow",
@@ -189,7 +189,7 @@ To create an OpenSearch UI application with customer managed key encryption usin
 
 Replace the {{placeholder values}} with your own information.
 
-```
+```sh
 aws opensearch create-application \
     --name {{my-application}} \
     --kms-key-arn arn:aws:kms:{{us-east-1}}:{{123456789012}}:key/{{12345678-1234-1234-1234-123456789012}}

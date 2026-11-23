@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-sharin
 ## List the shares that you own
 <a name="custom-sharing-manage-list"></a>
 
-```
+```bash
 atx custom def share list --outgoing
 ```
 
@@ -26,7 +26,7 @@ The output is a table titled `Shares you own ({{Region}})`. For each share, it s
 ## Change a share's permission
 <a name="custom-sharing-manage-update"></a>
 
-```
+```bash
 atx custom def share update {{share-id}} --managed-policy ExecuteWithLearningsAndPackageDownload
 ```
 
@@ -40,7 +40,7 @@ If the share already has that permission, nothing changes.
 ## Revoke a share
 <a name="custom-sharing-manage-revoke"></a>
 
-```
+```bash
 atx custom def share revoke {{share-id}}        # asks you to confirm
 atx custom def share revoke {{share-id}} --yes  # no prompt
 ```

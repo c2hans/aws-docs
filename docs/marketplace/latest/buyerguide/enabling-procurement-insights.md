@@ -71,7 +71,7 @@ This example policy contains the permissions described in [Dashboard prerequisit
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

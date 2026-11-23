@@ -30,7 +30,7 @@ The following code example shows how to get started using Route 53 domain regis
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.route53domains.Route53DomainsClient;
 import software.amazon.awssdk.services.route53.model.Route53Exception;
@@ -130,7 +130,7 @@ The following code example shows how to:
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -491,7 +491,7 @@ The following code example shows how to use `CheckDomainAvailability`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
     public static void checkDomainAvailability(Route53DomainsClient route53DomainsClient, String domainSuggestion) {
         try {
             CheckDomainAvailabilityRequest availabilityRequest = CheckDomainAvailabilityRequest.builder()
@@ -518,7 +518,7 @@ The following code example shows how to use `CheckDomainTransferability`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
     public static void checkDomainTransferability(Route53DomainsClient route53DomainsClient, String domainSuggestion) {
         try {
             CheckDomainTransferabilityRequest transferabilityRequest = CheckDomainTransferabilityRequest.builder()
@@ -545,7 +545,7 @@ The following code example shows how to use `GetDomainDetail`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
     public static void getDomainDetails(Route53DomainsClient route53DomainsClient, String domainSuggestion) {
         try {
             GetDomainDetailRequest detailRequest = GetDomainDetailRequest.builder()
@@ -573,7 +573,7 @@ The following code example shows how to use `GetDomainSuggestions`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
     public static void listDomainSuggestions(Route53DomainsClient route53DomainsClient, String domainSuggestion) {
         try {
             GetDomainSuggestionsRequest suggestionsRequest = GetDomainSuggestionsRequest.builder()
@@ -606,7 +606,7 @@ The following code example shows how to use `GetOperationDetail`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
     public static void getOperationalDetail(Route53DomainsClient route53DomainsClient, String operationId) {
         try {
             GetOperationDetailRequest detailRequest = GetOperationDetailRequest.builder()
@@ -632,7 +632,7 @@ The following code example shows how to use `ListDomains`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
     public static void listDomains(Route53DomainsClient route53DomainsClient) {
         try {
             ListDomainsIterable listRes = route53DomainsClient.listDomainsPaginator();
@@ -656,7 +656,7 @@ The following code example shows how to use `ListOperations`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
     public static void listOperations(Route53DomainsClient route53DomainsClient) {
         try {
             Date currentDate = new Date();
@@ -692,7 +692,7 @@ The following code example shows how to use `ListPrices`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
     public static void listPrices(Route53DomainsClient route53DomainsClient, String domainType) {
         try {
             ListPricesRequest pricesRequest = ListPricesRequest.builder()
@@ -723,7 +723,7 @@ The following code example shows how to use `RegisterDomain`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
     public static String requestDomainRegistration(Route53DomainsClient route53DomainsClient,
             String domainSuggestion,
             String phoneNumber,
@@ -777,7 +777,7 @@ The following code example shows how to use `ViewBilling`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
     public static void listBillingRecords(Route53DomainsClient route53DomainsClient) {
         try {
             Date currentDate = new Date();

@@ -45,7 +45,7 @@ To change the training frequency, you can modify the `schedulingExpression` in t
 
 For a full explanation of the `create-solution` command, see [Creating a solution (AWS CLI)](create-solution.md#configure-solution-cli).
 
-```
+```cmd
 aws personalize create-solution \
 --name {{solution name}} \
 --dataset-group-arn {{dataset group ARN}} \
@@ -66,7 +66,7 @@ For a full explanation of the CreateSolution API operation, see [Creating a solu
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')
@@ -89,7 +89,7 @@ print('solution_arn: ', solution_arn)
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 import {
   CreateSolutionCommand,
   PersonalizeClient,
@@ -130,7 +130,7 @@ run();
 
 You can use the following Python code to wait for automatic training to start. The `wait_for_training_to_start` method returns the ARN of the first solution version.
 
-```
+```py
 import time
 import boto3
 

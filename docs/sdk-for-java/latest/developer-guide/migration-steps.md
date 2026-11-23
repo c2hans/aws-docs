@@ -21,7 +21,7 @@ By adding the Maven BOM (Bill of Materials) element for the SDK for Java 2.x to 
 #### SDK for Java 2.x BOM
 <a name="drt_b5n_q1c"></a>
 
-```
+```xml
 <dependencyManagement>
   <dependencies>
     <dependency>
@@ -77,7 +77,7 @@ In this example, we migrate an application that uses the SDK for Java v1 and acc
 
 Only the v1 SDK imports are listed below from the Java file.
 
-```
+```java
 import com.amazonaws.ClientConfiguration;
 import com.amazonaws.regions.Region;
 import com.amazonaws.regions.RegionUtils;
@@ -132,7 +132,7 @@ Add the Maven BOM for the SDK for Java 2.x to the POM along side any other depen
 #### POM Dependency management at outset
 <a name="migration-example-boms"></a>
 
-```
+```xml
 <dependencyManagement>
   <dependencies>
     <dependency>
@@ -171,7 +171,7 @@ For this example we use the [`ripgrep` (rg)](https://github.com/BurntSushi/ripgr
 
 From the root of your code base, execute the following `ripgrep` command. After `ripgrep` finds the import statements, they are piped to the `cut`, `sort`, and `uniq` commands to isolate the SERVICE\_IDs.
 
-```
+```bash
 rg --no-filename 'import\s+com\.amazonaws\.services' | cut -d '.' -f 4 | sort | uniq
 ```
 
@@ -214,7 +214,7 @@ The following table shows how we can determine the v2 dependencies.
 
 In step 3, we determined the four dependency blocks that need to be added to the POM file. We don't need to add a version because we have specified the BOM in step 1. After the imports are added, our POM file has the following dependency elements.
 
-```
+```xml
     ...
   <dependencies>
     ...
@@ -308,7 +308,7 @@ We see that the first parameter to the `describeRunningInstances` method is a v1
 
 After the change to the v2 `Ec2Client`, if we use an IDE, we see compilation errors in the following statement.
 
-```
+```java
                     result = ec2.describeInstances(request);
 ```
 
@@ -337,7 +337,7 @@ A consistent difference between v1 and v2 is that all [response objects in v2 en
 
 The following statement needs a few changes.
 
-```
+```java
 request.setNextToken(result.getNextToken());
 ```
 
@@ -447,7 +447,7 @@ For the snippet we have been migrating, we can optionally use a v2 paginator and
 
 We can replace the entire `do` clause with the following.
 
-```
+```java
                 DescribeInstancesIterable responses = ec2.describeInstancesPaginator(request);
 
                 responses.reservations().stream()

@@ -14,7 +14,7 @@ A trail is a configuration that enables delivery of events as log files to an S3
 
 The following example shows a CloudTrail log entry that demonstrates creating a build project in CodeBuild.
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {

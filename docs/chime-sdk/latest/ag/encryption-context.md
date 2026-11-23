@@ -12,7 +12,7 @@ Voice analytics uses the same encryption context in all AWS KMS cryptographic op
 
 The following example shows a typical encryption context.
 
-```
+```json
 "encryptionContext": {
     "aws:chime:voice-profile-domain:arn": "arn:aws:chime:us-west-2:{{111122223333}}:voice-profile-domain/{{sample-domain-id}}"
 }
@@ -29,7 +29,7 @@ Voice analytics uses an encryption context constraint in grants to control acces
 
 The following example key policy statements grant access to a customer managed key for a specific encryption context. The condition in the policy statement requires that the grants have an encryption context constraint that specifies the encryption context.
 
-```
+```json
 {
     "Sid": "Enable DescribeKey",
     "Effect": "Allow",

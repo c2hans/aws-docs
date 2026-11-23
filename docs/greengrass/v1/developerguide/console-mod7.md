@@ -27,7 +27,7 @@ Before you begin, run the [Greengrass Device Setup](quick-start.md) script, or m
 In this step, you install SoftHSM and the pkcs11 tools, which are used to manage your SoftHSM instance.
 + In a terminal on your AWS IoT Greengrass core device, run the following command:
 
-  ```
+  ```bash
   sudo apt-get install softhsm2 libsofthsm2-dev pkcs11-dump
   ```
 
@@ -155,7 +155,7 @@ The examples in this procedure are written with the assumption that the `config.
 
 1. In the `crypto.principals` object, insert the following MQTT server certificate object. Add a comma where needed to create a valid JSON file.
 
-   ```
+   ```json
      "MQTTServerCertificate": {
        "privateKeyPath": "path-to-private-key"
      }
@@ -163,7 +163,7 @@ The examples in this procedure are written with the assumption that the `config.
 
 1. In the `crypto` object, insert the following `PKCS11` object. Add a comma where needed to create a valid JSON file.
 
-   ```
+   ```json
      "PKCS11": {
        "P11Provider": "/path-to-pkcs11-provider-so",
        "slotLabel": "crypto-token-name",
@@ -173,7 +173,7 @@ The examples in this procedure are written with the assumption that the `config.
 
    Your file should look similar to the following:
 
-   ```
+   ```json
    {
      "coreThing" : {
        "caPath" : "root.ca.pem",
@@ -225,13 +225,13 @@ To use over-the-air (OTA) updates with hardware security, the `PKCS11` object mu
    1. Configure the private key paths in the `principals` object. Do not edit the `certificatePath` property.
       + For the `privateKeyPath` properties, enter the following RFC 7512 PKCS\#11 path (which specifies the key's label). Do this for the `IoTCertificate`, `SecretsManager`, and `MQTTServerCertificate` principals.
 
-        ```
+        ```json
         pkcs11:object=iotkey;type=private
         ```
 
    1. Check the `crypto` object. It should look similar to the following:
 
-      ```
+      ```json
         "crypto": {
           "PKCS11": {
             "P11Provider": "/usr/lib/x86_64-linux-gnu/softhsm/libsofthsm2.so",
@@ -256,7 +256,7 @@ To use over-the-air (OTA) updates with hardware security, the `PKCS11` object mu
 
 1. Remove the `caPath`, `certPath`, and `keyPath` values from the `coreThing` object. It should look similar to the following:
 
-   ```
+   ```json
    "coreThing" : {
      "thingArn" : "arn:{{partition}}:iot:{{region}}:{{account-id}}:thing/core-thing-name",
      "iotHost" : "{{host-prefix}}-ats.iot.{{region}}.amazonaws.com",

@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="createcoredefinitionversion-post-cli"></a>
 
-```
+```bash
 aws greengrass create-core-definition-version \
   --core-definition-id <value> \
   [--cores <value>] \
@@ -26,7 +26,7 @@ aws greengrass create-core-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "CoreDefinitionId": "string",
 "Cores": [
@@ -53,7 +53,7 @@ type: string
 
 where used: body; required: true
 
-```
+```json
 {
 "Cores": [
   {
@@ -102,7 +102,7 @@ type: string
 
  [ VersionInformation](definitions-versioninformation.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -130,7 +130,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

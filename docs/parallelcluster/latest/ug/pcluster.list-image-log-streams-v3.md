@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Retrieve the list of log streams associated with an image.
 
-```
+```sh
 pcluster list-image-log-streams [-h]
                  --image-id {{IMAGE_ID}}
                 [--next-token {{NEXT_TOKEN}}] [--debug]

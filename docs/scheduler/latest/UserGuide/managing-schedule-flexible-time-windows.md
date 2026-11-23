@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-sche
 
 **Example AWS CLI**
 
-```
+```bash
 $ aws scheduler update-schedule --name lambda-universal --schedule-expression 'rate(1 hour)' \
 --target '{"RoleArn": "{{ROLE_ARN}}", "Arn":"arn:aws:scheduler:::aws-sdk:lambda:invoke" "Input": "{\"FunctionName\":\"arn:aws:lambda:{{REGION}}:123456789012:function:HelloWorld\",\"InvocationType\":\"Event\",\"Payload\":\"{\\\"message\\\":\\\"testing function\\\"}\"}" }' \
 --flexible-time-window '{ "Mode": "FLEXIBLE", "MaximumWindowInMinutes": 15} \
@@ -27,7 +27,7 @@ $ aws scheduler update-schedule --name lambda-universal --schedule-expression 'r
 
 **Example Python SDK**
 
-```
+```python
 import boto3
 scheduler = boto3.client('scheduler')
 

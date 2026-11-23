@@ -29,7 +29,7 @@ The following table lists what the consumer account can do with each managed per
 | `AWSRAMEventBridgeEventBusV2EventSourceAccess` | Attach and update event sources, and describe the bus |
 | `AWSRAMEventBridgeEventBusV2FullAccess` | Publish with either API, describe the bus, and create, update, and delete its own subscribers and event sources |
 
-```
+```bash
 aws ram create-resource-share \
     --name orders-bus-share \
     --resource-arns arn:aws:events:us-east-1:111122223333:event-busv2/orders/EXAMPLE1234567890abcdef \
@@ -63,7 +63,7 @@ EventBridge evaluates both when it authorizes a caller from another account. An 
 
 The following `default` policy on the `orders` bus lets account `444455556666` attach subscribers and read the bus, and nothing else.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

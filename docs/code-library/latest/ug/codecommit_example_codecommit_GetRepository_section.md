@@ -46,7 +46,7 @@ For more information, see [View CodeCommit repository details](https://docs.aws.
 **Tools for PowerShell V4**
 **Example 1: This example gets information for the specified repository.**
 
-```
+```powershell
 Get-CCRepository -RepositoryName MyDemoRepo
 ```
 **Output:**
@@ -68,7 +68,7 @@ RepositoryName        : MyDemoRepo
 **Tools for PowerShell V5**
 **Example 1: This example gets information for the specified repository.**
 
-```
+```powershell
 Get-CCRepository -RepositoryName MyDemoRepo
 ```
 **Output:**

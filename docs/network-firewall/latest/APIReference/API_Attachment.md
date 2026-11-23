@@ -27,8 +27,9 @@ Required: No
  ** Status **   <a name="networkfirewall-Type-Attachment-Status"></a>
 The current status of the firewall endpoint instantiation in the subnet.
 When this value is `READY`, the endpoint is available to handle network traffic. Otherwise, this value reflects its state, for example `CREATING` or `DELETING`.
+For an internet gateway firewall, `STANDBY` indicates an Availability Zone that has no resources yet. Network Firewall provisions the endpoint there when the first resource is launched in that Availability Zone.
 Type: String
-Valid Values: `CREATING | DELETING | FAILED | ERROR | SCALING | READY`
+Valid Values: `CREATING | DELETING | FAILED | ERROR | SCALING | READY | STANDBY`
 Required: No
 
  ** StatusMessage **   <a name="networkfirewall-Type-Attachment-StatusMessage"></a>

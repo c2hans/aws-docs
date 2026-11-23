@@ -70,7 +70,7 @@ For more information, see [Working with parameter versions](https://docs.aws.ama
 **Tools for PowerShell V4**
 **Example 1: This example lists the value history for a parameter.**
 
-```
+```powershell
 Get-SSMParameterHistory -Name "Welcome"
 ```
 **Output:**
@@ -89,7 +89,7 @@ Value            : helloWorld
 **Tools for PowerShell V5**
 **Example 1: This example lists the value history for a parameter.**
 
-```
+```powershell
 Get-SSMParameterHistory -Name "Welcome"
 ```
 **Output:**

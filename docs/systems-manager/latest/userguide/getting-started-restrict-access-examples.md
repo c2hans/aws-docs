@@ -26,7 +26,7 @@ To use this policy, replace each {{example resource placeholder}} with your own 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -62,7 +62,7 @@ For federated users, see [Example 4: Allow users to resume and end only sessions
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -108,7 +108,7 @@ You can restrict access to managed nodes based on specific tags. In the followin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -164,7 +164,7 @@ You can create IAM policies that allow a user to start sessions to managed nodes
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -237,7 +237,7 @@ Session Manager doesn't support custom tags for this IAM access control policy. 
 With this tag key, you include the managed node ID as the value in the policy. In the following policy, the condition allows a user to resume and end only sessions to the node i-02573cafcfEXAMPLE.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -266,7 +266,7 @@ If a user tries to resume or end a session for which they haven't been granted p
 With this tag key, you allow a user to resume and end only the sessions that they started. The value of this tag is the user ID of the caller, which matches the `${aws:userid}` policy variable. Because `${aws:userid}` resolves to the correct value for both IAM users and role sessions, the following policy applies to both caller types, and you don't need to hardcode a user ID.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -290,7 +290,7 @@ With this tag key, you allow a user to resume and end only the sessions that the
 To grant permissions for a specific user instead, you can supply that user's ID as the value. In the following example, `AIDAJQABLZS4A3QDU576Q` represents the unique ID of a user in your AWS account. To retrieve the ID for a user, use the `aws sts get-caller-identity` command and refer to the `UserId` field, or use the IAM `get-user` command. For more information, see [get-user](https://docs.aws.amazon.com/IAM/latest/UserGuide/get-user.html) in the AWS Identity and Access Management section of the *IAM User Guide*.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -318,7 +318,7 @@ If a user tries to resume or end a session for which they haven't been granted p
 You can also create IAM policies that allow a user to resume and end sessions that are tagged with both system tags, as shown in the following example.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -357,7 +357,7 @@ The following IAM policy allows a user to view the IDs of all sessions in your a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -390,7 +390,7 @@ If your account grants access only to IAM users who sign in with long-term crede
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -450,7 +450,7 @@ The following IAM policy allows a user to fully interact with all managed nodes 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

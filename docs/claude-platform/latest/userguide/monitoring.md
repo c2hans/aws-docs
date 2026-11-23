@@ -17,7 +17,7 @@ Each response includes two request IDs in the response headers:
 
  **Python**
 
-```
+```python
 from anthropic import AnthropicAWS
 
 client = AnthropicAWS(aws_region="us-west-2")
@@ -37,7 +37,7 @@ print(message.content)
 
  **TypeScript**
 
-```
+```typescript
 import AnthropicAws from "@anthropic-ai/aws-sdk";
 
 const client = new AnthropicAws({ awsRegion: "us-west-2" });
@@ -57,7 +57,7 @@ console.log(message.content);
 
  **C\#**
 
-```
+```csharp
 using Anthropic;
 using Anthropic.Aws;
 
@@ -77,7 +77,7 @@ Console.WriteLine(response.Value.Content);
 
  **Go**
 
-```
+```go
 client, err := anthropicaws.NewClient(context.Background(), anthropicaws.ClientConfig{})
 if err != nil {
     panic(err)
@@ -106,7 +106,7 @@ fmt.Println(message.Content[0].Text)
 
  **Java**
 
-```
+```java
 import com.anthropic.aws.backends.AwsBackend;
 import com.anthropic.client.AnthropicClient;
 import com.anthropic.client.okhttp.AnthropicOkHttpClient;
@@ -134,7 +134,7 @@ IO.println(response.parse().content());
 
  **PHP**
 
-```
+```php
 use Anthropic\Aws\Client;
 
 $client = new Client();

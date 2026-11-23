@@ -56,6 +56,18 @@ Required: Yes
          "type": "string"
       }
    ],
+   "instanceHealthChecks": {
+      "deepHealthChecks": {
+         "onStart": {
+            "profile": "string",
+            "repairAction": "string"
+         }
+      },
+      "healthMonitoring": {
+         "mode": "string",
+         "repairAction": "string"
+      }
+   },
    "nodeID": "string",
    "nodeLifecycleActions": {
       "scriptCachingPolicy": "string",
@@ -115,6 +127,10 @@ Type: String
  ** [endpoints](#API_RegisterComputeNodeGroupInstance_ResponseSyntax) **   <a name="PCS-RegisterComputeNodeGroupInstance-response-endpoints"></a>
 The list of endpoints available for interaction with the scheduler.
 Type: Array of [Endpoint](API_Endpoint.md) objects
+
+ ** [instanceHealthChecks](#API_RegisterComputeNodeGroupInstance_ResponseSyntax) **   <a name="PCS-RegisterComputeNodeGroupInstance-response-instanceHealthChecks"></a>
+The instance health check settings configured for the compute node group that the compute node registered into. The compute node uses these settings to configure health monitoring and deep health checks.
+Type: [InstanceHealthChecks](API_InstanceHealthChecks.md) object
 
  ** [nodeID](#API_RegisterComputeNodeGroupInstance_ResponseSyntax) **   <a name="PCS-RegisterComputeNodeGroupInstance-response-nodeID"></a>
 The scheduler node ID for this instance.

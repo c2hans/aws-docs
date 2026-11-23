@@ -29,7 +29,7 @@ You can create a capacity provider using the AWS CLI, AWS Management Console, or
 
 **Using AWS CLI:**
 
-```
+```bash
 aws lambda create-capacity-provider \
   --capacity-provider-name my-capacity-provider \
   --vpc-config SubnetIds=subnet-12345,subnet-67890,subnet-11111,SecurityGroupIds=sg-12345 \
@@ -95,7 +95,7 @@ Configure tag propagation to automatically apply tags to managed resources (Amaz
 
 You can update certain properties of a capacity provider using the `UpdateCapacityProvider` API.
 
-```
+```bash
 aws lambda update-capacity-provider \
   --capacity-provider-name my-capacity-provider \
   --capacity-provider-scaling-config ScalingMode=Auto
@@ -106,7 +106,7 @@ aws lambda update-capacity-provider \
 
 You can delete a capacity provider when it's no longer needed using the `DeleteCapacityProvider` API.
 
-```
+```bash
 aws lambda delete-capacity-provider \
   --capacity-provider-name my-capacity-provider
 ```
@@ -118,7 +118,7 @@ aws lambda delete-capacity-provider \
 
 Retrieve information about a capacity provider using the `GetCapacityProvider` API.
 
-```
+```bash
 aws lambda get-capacity-provider \
   --capacity-provider-name my-capacity-provider
 ```

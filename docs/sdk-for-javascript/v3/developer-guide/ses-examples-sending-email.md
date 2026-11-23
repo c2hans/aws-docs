@@ -52,7 +52,7 @@ In this example, use a Node.js module to send email with Amazon SES.
 
 Create a `libs` directory, and create a Node.js module with the file name `sesClient.js`. Copy and paste the code below into it, which creates the Amazon SES client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SESClient } from "@aws-sdk/client-ses";
 // Set the AWS Region.
 const REGION = "us-east-1";
@@ -75,7 +75,7 @@ This example imports and uses the required AWS Service V3 package clients, V3 co
 **Note**
 Replace {{toAddress}} with the address to send the email to, and {{fromAddress}} with the email address to the send the email from.
 
-```
+```javascript
 import { SendEmailCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 
@@ -137,7 +137,7 @@ const run = async () => {
 
 To run the example, enter the following at the command prompt. The email is queued for sending by Amazon SES.
 
-```
+```javascript
 node ses_sendemail.js
 ```
 
@@ -156,7 +156,7 @@ This example imports and uses the required AWS Service V3 package clients, V3 co
 **Note**
 Replace {{REGION}} with your AWS Region, {{USER}} with the name and email address to send the email to, {{VERIFIED\_EMAIL}} with the email address to the send the email from, and {{TEMPLATE\_NAME}} with the name of the template.
 
-```
+```javascript
 import { SendTemplatedEmailCommand } from "@aws-sdk/client-ses";
 import {
   getUniqueName,
@@ -216,7 +216,7 @@ const run = async () => {
 
 To run the example, enter the following at the command prompt. The email is queued for sending by Amazon SES.
 
-```
+```javascript
 node ses_sendtemplatedemail.js
 ```
 
@@ -229,7 +229,7 @@ In this example, use a Node.js module to send email with Amazon SES.
 
 Create a `libs` directory, and create a Node.js module with the file name `sesClient.js`. Copy and paste the code below into it, which creates the Amazon SES client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SESClient } from "@aws-sdk/client-ses";
 // Set the AWS Region.
 const REGION = "us-east-1";
@@ -252,7 +252,7 @@ This example imports and uses the required AWS Service V3 package clients, V3 co
 **Note**
 Replace {{USERS}} with the names and email addresses to send the email to, {{VERIFIED\_EMAIL\_1}} with the email address to the send the email from, and {{TEMPLATE\_NAME}} with the name of the template.
 
-```
+```javascript
 import { SendBulkTemplatedEmailCommand } from "@aws-sdk/client-ses";
 import {
   getUniqueName,
@@ -323,7 +323,7 @@ const run = async () => {
 
 To run the example, enter the following at the command prompt. The email is queued for sending by Amazon SES.
 
-```
+```javascript
 node ses_sendbulktemplatedemail.js
 ```
 

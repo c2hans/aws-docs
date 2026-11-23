@@ -48,7 +48,7 @@ Training data for instruction-based fine-tuning must be provided in JSON Lines t
 
 The training folder can also include a template JSON file (`template.json`) that describes the input and output formats of your data. If no template file is provided, the following template file is used:
 
-```
+```json
 {
   "prompt": "Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.\n\n### Instruction:\n{instruction}\n\n### Input:\n{context}",
   "completion": "{response}"
@@ -59,7 +59,7 @@ According to the `template.json` file, each .jsonl entry of the training data mu
 
 If you provide a custom template JSON file, use the `"prompt"` and `"completion"` keys to define your own required fields. According to the following custom template JSON file, each .jsonl entry of the training data must include `{question}`, `{context}`, and `{answer}` fields:
 
-```
+```json
 {
   "prompt": "question: {question} context: {context}",
   "completion": "{answer}"
@@ -76,7 +76,7 @@ You can optionally provide another folder containing validation data. This folde
 
 Upload your prepared data to Amazon Simple Storage Service (Amazon S3) to use when fine-tuning a JumpStart foundation model. You can use the following commands to upload your data:
 
-```
+```python
 from sagemaker.s3 import S3Uploader
 import sagemaker
 import random

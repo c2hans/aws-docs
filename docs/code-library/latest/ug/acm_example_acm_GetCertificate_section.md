@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Get an AWS Certificate Manager (ACM) certificate.
 /*!
   \param certificateArn: The Amazon Resource Name (ARN) of a certificate.
@@ -83,7 +83,7 @@ For more information, see [View AWS Certificate Manager certificate details](htt
 **Tools for PowerShell V4**
 **Example 1: This example shows how to return a certificate and its chain using the ARN of the certificate.**
 
-```
+```powershell
 Get-ACMCertificate -CertificateArn "arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012"
 ```
 +  For API details, see [GetCertificate](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -91,7 +91,7 @@ Get-ACMCertificate -CertificateArn "arn:aws:acm:us-east-1:123456789012:certifica
 **Tools for PowerShell V5**
 **Example 1: This example shows how to return a certificate and its chain using the ARN of the certificate.**
 
-```
+```powershell
 Get-ACMCertificate -CertificateArn "arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012"
 ```
 +  For API details, see [GetCertificate](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -102,7 +102,7 @@ Get-ACMCertificate -CertificateArn "arn:aws:acm:us-east-1:123456789012:certifica
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -138,7 +138,7 @@ class AcmCertificate:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_certificate_arn = 'arn:aws:acm:region:123456789012:certificate/certificate-id'
         oo_result = lo_acm->getcertificate( iv_certificatearn = iv_certificate_arn ).

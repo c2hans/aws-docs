@@ -37,7 +37,7 @@ Response streaming works with these models. Tool use *within* a streaming reques
 
 The Llama 3 Instruct, Llama 3.1 Instruct, Llama 3.2 Instruct, and Llama 4 Instruct models have the following inference parameters:
 
-```
+```json
 {
     "prompt": string,
     "temperature": float,
@@ -126,7 +126,7 @@ The following are optional parameters:
 
 The Llama 3 Instruct models return the following fields for a text completion inference call.
 
-```
+```json
 {
     "generation": "\n\n{{<response>}}",
     "prompt_token_count": int,
@@ -150,7 +150,7 @@ More information about each field is provided below.
 
 This example shows how to call the *Llama 3 Instruct* model.
 
-```
+```python
 # Use the native inference API to send a text message to Meta Llama 3.
 
 import boto3

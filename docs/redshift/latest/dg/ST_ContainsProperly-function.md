@@ -40,7 +40,7 @@ If *geom1* or *geom2* is a geometry collection, then an error is returned.
 
 The following SQL returns the values of ST\_Contains and ST\_ContainsProperly where the input linestring intersects the interior and the boundary of the input polygon (but not its exterior). The polygon contains the linestring but doesn't properly contain the linestring.
 
-```
+```sql
 WITH tmp(g1, g2)
 AS (SELECT ST_GeomFromText('POLYGON((0 0,10 0,10 10,0 10,0 0))'), ST_GeomFromText('LINESTRING(5 5,10 5,10 6,5 5)')) SELECT ST_Contains(g1, g2), ST_ContainsProperly(g1, g2)
 FROM tmp;

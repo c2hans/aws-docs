@@ -27,7 +27,7 @@ The following code example shows how to get started using Amazon Bedrock Agents.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-agent#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 
 import {
@@ -115,7 +115,7 @@ The following code example shows how to use `CreateAgent`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-agent#code-examples).
 Create an agent.
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import { checkForPlaceholders } from "../lib/utils.js";
 
@@ -193,7 +193,7 @@ The following code example shows how to use `DeleteAgent`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-agent#code-examples).
 Delete an agent.
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import { checkForPlaceholders } from "../lib/utils.js";
 
@@ -243,7 +243,7 @@ The following code example shows how to use `GetAgent`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-agent#code-examples).
 Get an agent.
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import { checkForPlaceholders } from "../lib/utils.js";
 
@@ -295,7 +295,7 @@ The following code example shows how to use `ListAgentActionGroups`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-agent#code-examples).
 List the action groups for an agent.
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import { checkForPlaceholders } from "../lib/utils.js";
 
@@ -433,7 +433,7 @@ The following code example shows how to use `ListAgents`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-agent#code-examples).
 List the agents belonging to an account.
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 
 import {

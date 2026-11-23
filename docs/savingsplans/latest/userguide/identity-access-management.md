@@ -13,7 +13,7 @@ By default, users don't have permissions for Savings Plans resources and operati
 
 An IAM policy is a JSON document that consists of one or more statements. Each statement is structured as follows.
 
-```
+```json
 {
   "Statement":[{
     "Effect":"{{effect}}",

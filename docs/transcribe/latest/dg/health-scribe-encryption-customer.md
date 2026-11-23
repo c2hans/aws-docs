@@ -23,7 +23,7 @@ The following is an example key policy you can use to grant your ResourceAccessR
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -81,7 +81,7 @@ The following IAM policy example shows how to grant a ResourceAccessRole permiss
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -125,7 +125,7 @@ The following is trust policy example for the ResourceAccessRole. For DataAccess
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

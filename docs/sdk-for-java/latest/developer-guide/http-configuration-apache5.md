@@ -20,7 +20,7 @@ When you declare a dependency on a service client in Maven, the SDK adds a *runt
 
 In the following XML snippet of a Maven `pom.xml` file, the dependency declared with `<artifactId>s3</artifactId>` automatically brings in the Apache-based HTTP client. You don't need to declare a dependency specifically for it.
 
-```
+```xml
 <dependencyManagement>
    <dependencies>
         <dependency>
@@ -52,7 +52,7 @@ To configure the `Apache5HttpClient`, you need to add a dependency on the `apach
 
 Refer to the following example of a Maven `pom.xml` file to configure the `Apache5HttpClient`.
 
-```
+```xml
     <dependencyManagement>
 	        <dependencies>
 	            <dependency>
@@ -96,7 +96,7 @@ The following example creates an S3Client and configures the embedded instance o
 
 **Imports**
 
-```
+```java
 import software.amazon.awssdk.http.apache5.Apache5HttpClient;
 import software.amazon.awssdk.services.s3.S3Client;
 import java.time.Duration;
@@ -104,7 +104,7 @@ import java.time.Duration;
 
 **Code**
 
-```
+```java
 S3Client s3Client = S3Client   // Singleton: Use the s3Client for all requests.
     .builder()
     .httpClientBuilder(Apache5HttpClient.builder()
@@ -130,7 +130,7 @@ The following example configures an Apache-based HTTP client that is used by two
 
 **Imports**
 
-```
+```java
 import software.amazon.awssdk.http.SdkHttpClient;
 import software.amazon.awssdk.http.apache5.Apache5HttpClient;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -139,7 +139,7 @@ import software.amazon.awssdk.services.s3.S3Client;
 
 **Code**
 
-```
+```java
 SdkHttpClient apache5HttpClient = Apache5HttpClient.builder()
         .maxConnections(100).build();
 

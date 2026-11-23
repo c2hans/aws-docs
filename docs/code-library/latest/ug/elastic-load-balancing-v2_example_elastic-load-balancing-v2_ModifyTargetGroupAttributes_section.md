@@ -53,7 +53,7 @@ For more information, see [Edit target group attributes for your Application Loa
 **Tools for PowerShell V4**
 **Example 1: This example modifies the deregistration\_delay attribute of the specified Target Group.**
 
-```
+```powershell
 Edit-ELB2TargetGroupAttribute -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970' -Attribute @{Key = 'deregistration_delay.timeout_seconds'; Value = 600}
 ```
 **Output:**
@@ -73,7 +73,7 @@ load_balancing.algorithm.type         round_robin
 **Tools for PowerShell V5**
 **Example 1: This example modifies the deregistration\_delay attribute of the specified Target Group.**
 
-```
+```powershell
 Edit-ELB2TargetGroupAttribute -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970' -Attribute @{Key = 'deregistration_delay.timeout_seconds'; Value = 600}
 ```
 **Output:**

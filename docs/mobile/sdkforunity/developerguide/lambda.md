@@ -38,7 +38,7 @@ There are two types of permissions related to Lambda functions:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -88,7 +88,7 @@ This role applies to the Lambda function that you will create in the next step a
 ## Create a Lambda Client
 <a name="create-a-lambda-client"></a>
 
-```
+```csharp
 var credentials = new CognitoAWSCredentials(IDENTITY_POOL_ID, RegionEndpoint.USEast1);
 var Client = new AmazonLambdaClient(credentials, RegionEndpoint.USEast1);
 ```
@@ -98,7 +98,7 @@ var Client = new AmazonLambdaClient(credentials, RegionEndpoint.USEast1);
 
 Create a request object to specify the invocation type and the function name:
 
-```
+```csharp
 var request = new InvokeRequest()
 {
     FunctionName = "hello-world",
@@ -112,7 +112,7 @@ var request = new InvokeRequest()
 
 Call invoke, passing the request object:
 
-```
+```csharp
 Client.InvokeAsync(request, (result) =>
 {
     if (result.Exception == null)

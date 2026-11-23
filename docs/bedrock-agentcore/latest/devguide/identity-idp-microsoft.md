@@ -81,7 +81,7 @@ For more details, refer to [Quickstart: Register an application](https://learn.m
 
 To configure the outbound Microsoft resource provider, use the following:
 
-```
+```json
 {
         "name": "NAME",
         "credentialProviderVendor": "MicrosoftOAuth2",

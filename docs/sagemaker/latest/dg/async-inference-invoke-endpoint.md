@@ -21,7 +21,7 @@ Specify the following fields in your request:
 
 The following example sends the payload inline with the `Body` parameter, which does not require uploading the input to Amazon S3 first.
 
-```
+```python
 # Create a low-level client representing Amazon SageMaker Runtime
 sagemaker_runtime = boto3.client("sagemaker-runtime", region_name={{<aws_region>}})
 
@@ -43,7 +43,7 @@ response = sagemaker_runtime.invoke_endpoint_async(
 
 Alternatively, you can store the payload in Amazon S3 and pass its location with the `InputLocation` parameter. If you have not done so already, upload your inference data to Amazon S3 before invoking the endpoint.
 
-```
+```python
 # Create a low-level client representing Amazon SageMaker Runtime
 sagemaker_runtime = boto3.client("sagemaker-runtime", region_name={{<aws_region>}})
 

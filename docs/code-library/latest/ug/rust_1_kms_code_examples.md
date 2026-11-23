@@ -26,7 +26,7 @@ The following code example shows how to use `CreateKey`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kms#code-examples).
 
-```
+```rust
 async fn make_key(client: &Client) -> Result<(), Error> {
     let resp = client.create_key().send().await?;
 
@@ -47,7 +47,7 @@ The following code example shows how to use `Decrypt`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kms#code-examples).
 
-```
+```rust
 async fn decrypt_key(client: &Client, key: &str, filename: &str) -> Result<(), Error> {
     // Open input text file and get contents as a string
     // input is a base-64 encoded string, so decode it:
@@ -86,7 +86,7 @@ The following code example shows how to use `Encrypt`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kms#code-examples).
 
-```
+```rust
 async fn encrypt_string(
     verbose: bool,
     client: &Client,
@@ -125,7 +125,7 @@ The following code example shows how to use `GenerateDataKey`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kms#code-examples).
 
-```
+```rust
 async fn make_key(client: &Client, key: &str) -> Result<(), Error> {
     let resp = client
         .generate_data_key()
@@ -157,7 +157,7 @@ The following code example shows how to use `GenerateDataKeyWithoutPlaintext`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kms#code-examples).
 
-```
+```rust
 async fn make_key(client: &Client, key: &str) -> Result<(), Error> {
     let resp = client
         .generate_data_key_without_plaintext()
@@ -189,7 +189,7 @@ The following code example shows how to use `GenerateRandom`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kms#code-examples).
 
-```
+```rust
 async fn make_string(client: &Client, length: i32) -> Result<(), Error> {
     let resp = client
         .generate_random()
@@ -220,7 +220,7 @@ The following code example shows how to use `ListKeys`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kms#code-examples).
 
-```
+```rust
 async fn show_keys(client: &Client) -> Result<(), Error> {
     let resp = client.list_keys().send().await?;
 
@@ -248,7 +248,7 @@ The following code example shows how to use `ReEncrypt`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kms#code-examples).
 
-```
+```rust
 async fn reencrypt_string(
     verbose: bool,
     client: &Client,

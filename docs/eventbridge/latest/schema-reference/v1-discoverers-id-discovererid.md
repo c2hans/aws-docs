@@ -111,7 +111,7 @@ Deletes a discoverer.
 #### PUT schema
 <a name="v1-discoverers-id-discovererid-request-body-put-example"></a>
 
-```
+```json
 {
   "CrossAccount": boolean,
   "Description": "string"
@@ -124,7 +124,7 @@ Deletes a discoverer.
 #### DiscovererOutput schema
 <a name="v1-discoverers-id-discovererid-response-body-discovereroutput-example"></a>
 
-```
+```json
 {
   "DiscovererArn": "string",
   "DiscovererId": "string",
@@ -140,7 +140,7 @@ Deletes a discoverer.
 #### ErrorOutput schema
 <a name="v1-discoverers-id-discovererid-response-body-erroroutput-example"></a>
 
-```
+```json
 {
   "Message": "string",
   "Code": "string"

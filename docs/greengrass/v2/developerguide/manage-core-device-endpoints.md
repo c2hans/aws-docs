@@ -66,7 +66,7 @@ You can do either of the following to deploy the IP detector component:
 
       The configuration update might look similar to the following example.
 
-      ```
+      ```json
       {
         "defaultPort": "8883",
         "includeIPv4LoopbackAddrs": false,
@@ -98,7 +98,7 @@ You can specify any of the following options to configure the IP detector compon
 
 The following example partial deployment document specifies to report port 8883 as the MQTT broker port.
 
-```
+```json
 {
   {{...}},
   "components": {

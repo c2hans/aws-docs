@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/setting-up-
 
 **Recommended trust policy:**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -49,7 +49,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/setting-up-
 
 **Recommended permissions policy:**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

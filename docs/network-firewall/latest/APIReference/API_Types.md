@@ -12,6 +12,7 @@ The order of each element in a data type structure is not guaranteed. Applicatio
 The following data types are supported:
 +  [ActionDefinition](API_ActionDefinition.md)
 +  [Address](API_Address.md)
++  [AddressTranslations](API_AddressTranslations.md)
 +  [AnalysisReport](API_AnalysisReport.md)
 +  [AnalysisResult](API_AnalysisResult.md)
 +  [AnalysisTypeReportResult](API_AnalysisTypeReportResult.md)
@@ -55,6 +56,7 @@ The following data types are supported:
 +  [FlowTimeouts](API_FlowTimeouts.md)
 +  [Header](API_Header.md)
 +  [Hits](API_Hits.md)
++  [IgwFirewallConfiguration](API_IgwFirewallConfiguration.md)
 +  [IPSet](API_IPSet.md)
 +  [IPSetMetadata](API_IPSetMetadata.md)
 +  [IPSetReference](API_IPSetReference.md)

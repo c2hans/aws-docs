@@ -8,7 +8,7 @@ If your application requires non-blocking, asynchronous calls to DynamoDB, you c
 
 1. When you build the `DynamoDbEnhancedAsyncClient`, you must provide the asynchronous version of the standard client, `DynamoDbAsyncClient`, as shown in the following snippet.
 
-   ```
+   ```java
     DynamoDbEnhancedAsyncClient enhancedClient =
         DynamoDbEnhancedAsyncClient.builder()
                                    .dynamoDbClient(dynamoDbAsyncClient)
@@ -17,7 +17,7 @@ If your application requires non-blocking, asynchronous calls to DynamoDB, you c
 
 1. Methods that return a single data object return a `CompletableFuture` of the result instead of only the result. Your application can then do other work without having to block on the result. The following snippet shows the asynchronous `getItem()` method.
 
-   ```
+   ```java
    CompletableFuture<Customer> result = customerDynamoDbTable.getItem(customer);
    // Perform other work here.
    return result.join();   // Now block and wait for the result.
@@ -25,7 +25,7 @@ If your application requires non-blocking, asynchronous calls to DynamoDB, you c
 
 1. Methods that return paginated lists of results return an [`SdkPublisher`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/async/SdkPublisher.html) instead of an [`SdkIterable`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/pagination/sync/SdkIterable.html) that the synchronous `DynamoDbEnhanceClient` returns for the same methods. Your application can then subscribe a handler to that publisher to deal with the results asynchronously without having to block.
 
-   ```
+   ```java
    PagePublisher<Customer> results = customerDynamoDbTable.query(r -> r.queryConditional(keyEqualTo(k -> k.partitionValue("Smith"))));
    results.subscribe(myCustomerResultsProcessor);
    // Perform other work and let the processor handle the results asynchronously.

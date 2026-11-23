@@ -51,7 +51,7 @@ To authorize your SiteWise Edge gateway to interact with AWS Secrets Manager, th
 Replace {{secret-arn}} with the Amazon Resource Name (ARN) of the secret that you created in the previous step. For more information about how to get the ARN of a secret, see [Find secrets in AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/manage_search-secret.html) in the *AWS Secrets Manager User Guide*.
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement":[
@@ -99,7 +99,7 @@ You can use the AWS IoT SiteWise console to deploy secrets to your SiteWise Edge
 **Note**
 Replace {{secret-arn}} with the ARN of the secret that you created in the previous step. For more information about how to get the ARN of a secret, see [Find secrets in AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/manage_search-secret.html) in the *AWS Secrets Manager User Guide*.
 
-   ```
+   ```json
    {
    "cloudSecrets":[
      {

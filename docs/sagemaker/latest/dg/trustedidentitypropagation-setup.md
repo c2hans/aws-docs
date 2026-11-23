@@ -98,7 +98,7 @@ To enable trusted identity propagation for your Studio users, all trusted identi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -64,7 +64,7 @@ For more information, see [Managing Amazon Pinpoint projects](https://docs.aws.a
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/pinpoint#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.CreateAppRequest;
@@ -136,7 +136,7 @@ public class CreateApp {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/pinpoint#code-examples).
 
-```
+```kotlin
 suspend fun createApplication(applicationName: String?): String? {
     val createApplicationRequestOb =
         CreateApplicationRequest {

@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Shows the hosts that belong to the cluster’s compute environment.
 
-```
+```sh
 awsbhosts [ - h ] [ - c {{CLUSTER}} ] [ - d ] [ {{instance_ids}} [ {{instance_ids}} ... ]]
 ```
 

@@ -15,7 +15,7 @@ It was updated on 2022-07-21 to include permissions for global database actions.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

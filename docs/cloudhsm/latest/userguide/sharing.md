@@ -58,7 +58,7 @@ Use the [put-resource-policy](https://docs.aws.amazon.com/cli/latest/reference/c
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement":[
@@ -86,7 +86,7 @@ Use the [put-resource-policy](https://docs.aws.amazon.com/cli/latest/reference/c
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement":[
@@ -127,7 +127,7 @@ You can only grant permissions to DescribeBackups at the account level. When you
 
    This returns a response similar to this:
 
-   ```
+   ```json
    {
      "resources": [
        {

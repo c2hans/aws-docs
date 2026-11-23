@@ -42,7 +42,7 @@ You can grant CodeBuild project IAM role access to use the Bitbucket tokens vend
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -116,7 +116,7 @@ If you store Bitbucket OAuth credentials in Secrets Manager, add the `secretsman
 
 The following example IAM policy statement grants the required permission:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "secretsmanager:PutSecretValue",

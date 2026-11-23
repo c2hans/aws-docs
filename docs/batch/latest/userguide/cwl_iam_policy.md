@@ -28,7 +28,7 @@ If you aren't using the first-run wizard, you can specify the `ecsInstanceRole` 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

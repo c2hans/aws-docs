@@ -24,7 +24,7 @@ The following code example shows how to use `ListNotebookInstances`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/sagemaker#code-examples).
 
-```
+```rust
 async fn show_instances(client: &Client) -> Result<(), Error> {
     let notebooks = client.list_notebook_instances().send().await?;
 
@@ -54,7 +54,7 @@ The following code example shows how to use `ListTrainingJobs`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/sagemaker#code-examples).
 
-```
+```rust
 async fn show_jobs(client: &Client) -> Result<(), Error> {
     let job_details = client.list_training_jobs().send().await?;
 

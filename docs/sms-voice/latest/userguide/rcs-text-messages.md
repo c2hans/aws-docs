@@ -22,7 +22,7 @@ When you call `SendRcsMessage`, you pass the message payload as the `RcsMessageC
 
 The following JSON snippet shows the structure of `RcsMessageContent` for a text message with suggestions:
 
-```
+```json
 {
   "Content": {
     "TextMessage": {

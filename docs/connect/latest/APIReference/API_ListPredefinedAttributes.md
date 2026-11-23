@@ -118,7 +118,7 @@ HTTP Status Code: 429
 
 The following example shows a request and response.
 
-```
+```json
 GET https://connect.us-west-2.amazonaws.com/predefined-attributes/InstanceId?maxResults=MaxResults&nextToken=NextToken HTTP/1.1
 
 Response:

@@ -25,7 +25,7 @@ For more information, see [Managing a collection](managing-face-collections.md#m
 
    Change the value of `collectionId` to the name of the collection you want to create.
 
-   ```
+   ```java
    //Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    //PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -67,7 +67,7 @@ For more information, see [Managing a collection](managing-face-collections.md#m
 
     Replace the value of `profile_name` in the line that creates the Rekognition session with the name of your developer profile.
 
-   ```
+   ```java
    //snippet-start:[rekognition.java2.create_collection.import]
    import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
    import software.amazon.awssdk.regions.Region;
@@ -151,7 +151,7 @@ For more information, see [Managing a collection](managing-face-collections.md#m
 
    Change the value of `collection_id` to the name of collection you want to create. Replace the value of `profile_name` in the line that creates the Rekognition session with the name of your developer profile.
 
-   ```
+   ```python
    # Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -183,7 +183,7 @@ For more information, see [Managing a collection](managing-face-collections.md#m
 
    Change the value of `collectionId` to the name of collection you want to create.
 
-   ```
+   ```cs
    //Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    //PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -220,7 +220,7 @@ For more information, see [Managing a collection](managing-face-collections.md#m
 
     Replace the value of `profile_name` in the line that creates the Rekognition session with the name of your developer profile.
 
-   ```
+   ```javascript
    //Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    //PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 

@@ -164,7 +164,7 @@ Each lifecycle event includes the bucket name, object key, version ID, object si
 
 The following AWS CLI command configures a trail to log all data events for objects in general purpose buckets. The trail logs object API activity, lifecycle events, and authentication failure events.
 
-```
+```JSON
 aws cloudtrail put-event-selectors \
 --trail-name {{trailName}} \
 --advanced-event-selectors \
@@ -184,7 +184,7 @@ aws cloudtrail put-event-selectors \
 
 The following AWS CLI command configures a trail to log only Amazon S3 lifecycle events. You can use a dedicated trail that delivers to a separate S3 bucket to give auditors evidence of retention and deletion without giving them access to your other activity.
 
-```
+```JSON
 aws cloudtrail put-event-selectors \
 --trail-name {{trailName}} \
 --advanced-event-selectors \
@@ -205,7 +205,7 @@ aws cloudtrail put-event-selectors \
 
 The following AWS CLI command configures a trail to log only Amazon S3 authentication failure events. You can send these events to a trail that your security team monitors for credential misuse.
 
-```
+```JSON
 aws cloudtrail put-event-selectors \
 --trail-name {{trailName}} \
 --advanced-event-selectors \
@@ -226,7 +226,7 @@ aws cloudtrail put-event-selectors \
 
 The following AWS CLI command configures a trail to log lifecycle events for objects in one bucket. Replace {{amzn-s3-demo-bucket}} with the name of your bucket.
 
-```
+```JSON
 aws cloudtrail put-event-selectors \
 --trail-name {{trailName}} \
 --advanced-event-selectors \
@@ -260,7 +260,7 @@ If you don't need these events, you can exclude them to reduce costs while you c
 
 The following AWS CLI command configures a trail to log all CloudTrail S3 data events except lifecycle events. The trail continues to log all requests made by your principals.
 
-```
+```JSON
 aws cloudtrail put-event-selectors \
 --trail-name {{trailName}} \
 --advanced-event-selectors \
@@ -281,7 +281,7 @@ aws cloudtrail put-event-selectors \
 
 The following AWS CLI command configures a trail to log all CloudTrail S3 data events except authentication failure events. The trail continues to log all other CloudTrail S3 data events, including other failed requests such as `AccessDenied` errors.
 
-```
+```JSON
 aws cloudtrail put-event-selectors \
 --trail-name {{trailName}} \
 --advanced-event-selectors \
@@ -302,7 +302,7 @@ aws cloudtrail put-event-selectors \
 
 The following AWS CLI command configures a trail to log all CloudTrail S3 data events except lifecycle and authentication failure events.
 
-```
+```JSON
 aws cloudtrail put-event-selectors \
 --trail-name {{trailName}} \
 --advanced-event-selectors \
@@ -323,7 +323,7 @@ aws cloudtrail put-event-selectors \
 
 Storage class transitions are often the highest-volume lifecycle events. The following AWS CLI command logs all CloudTrail S3 data events, including lifecycle expirations, delete markers, and incomplete multipart upload cleanups, but excludes storage class transitions. The example uses two selectors: the first logs all non-lifecycle events, and the second logs lifecycle events whose names don't start with `Transition`.
 
-```
+```JSON
 aws cloudtrail put-event-selectors \
 --trail-name {{trailName}} \
 --advanced-event-selectors \

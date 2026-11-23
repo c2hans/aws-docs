@@ -22,14 +22,14 @@ You will receive a [DescribeRegionsResponse](https://docs.aws.amazon.com/sdk-for
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/DescribeRegionsRequest.h>
 ```
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
 
     Aws::EC2::Model::DescribeRegionsRequest request;
@@ -62,13 +62,13 @@ You will receive a [DescribeAvailabilityZonesResponse](https://docs.aws.amazon.c
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/model/DescribeAvailabilityZonesRequest.h>
 ```
 
  **Code**
 
-```
+```cpp
     Aws::EC2::Model::DescribeAvailabilityZonesRequest request;
     Aws::EC2::Model::DescribeAvailabilityZonesOutcome outcome = ec2Client.DescribeAvailabilityZones(request);
 

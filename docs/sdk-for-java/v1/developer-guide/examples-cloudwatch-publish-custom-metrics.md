@@ -18,7 +18,7 @@ You cannot specify a namespace that begins with " `AWS` ". Namespaces that begin
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.cloudwatch.AmazonCloudWatch;
 import com.amazonaws.services.cloudwatch.AmazonCloudWatchClientBuilder;
 import com.amazonaws.services.cloudwatch.model.Dimension;
@@ -30,7 +30,7 @@ import com.amazonaws.services.cloudwatch.model.StandardUnit;
 
  **Code**
 
-```
+```java
 final AmazonCloudWatch cw =
     AmazonCloudWatchClientBuilder.defaultClient();
 

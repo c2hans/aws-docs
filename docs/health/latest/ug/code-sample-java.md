@@ -13,7 +13,7 @@ Valid credentials are required to communicate with the AWS Health API. You can u
 
 Create and initialize an [AWSCredentials](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/AWSCredentials.html) instance:
 
-```
+```java
 AWSCredentials credentials = null;
 try {
        credentials = new ProfileCredentialsProvider("default").getCredentials();
@@ -30,7 +30,7 @@ throw new AmazonClientException(
 
 Use the initialized credentials object from the previous step to create an AWS Health client:
 
-```
+```java
 import com.amazonaws.services.health.AWSHealthClient;
 
 AWSHealth awsHealthClient = new AWSHealthClient(credentials);
@@ -41,7 +41,7 @@ AWSHealth awsHealthClient = new AWSHealthClient(credentials);
 
 **DescribeEvents**
 
-```
+```java
 import com.amazonaws.services.health.model.DescribeEventsRequest;
 import com.amazonaws.services.health.model.DescribeEventsResult;
 import com.amazonaws.services.health.model.Event;
@@ -73,7 +73,7 @@ for (Event event : resultEvents) {
 
 **DescribeEventAggregates**
 
-```
+```java
 import com.amazonaws.services.health.model.DescribeEventAggregatesRequest;
 import com.amazonaws.services.health.model.DescribeEventAggregatesResult;
 import com.amazonaws.services.health.model.EventAggregate;
@@ -99,7 +99,7 @@ for (EventAggregate aggregate: response.getEventAggregates()) {
 
 **DescribeEventDetails**
 
-```
+```java
 import com.amazonaws.services.health.model.DescribeEventDetailsRequest;
 import com.amazonaws.services.health.model.DescribeEventDetailsResult;
 import com.amazonaws.services.health.model.Event;
@@ -128,7 +128,7 @@ System.out.println(eventDetail.getEventDescription().getLatestDescription());
 
 **DescribeAffectedEntities**
 
-```
+```java
 import com.amazonaws.services.health.model.AffectedEntity;
 import com.amazonaws.services.health.model.DateTimeRange;
 import com.amazonaws.services.health.model.DescribeAffectedEntitiesRequest;
@@ -150,7 +150,7 @@ for (AffectedEntity affectedEntity: response.getEntities()) {
 
 **DescribeEntityAggregates**
 
-```
+```java
 import com.amazonaws.services.health.model.DescribeEntityAggregatesRequest;
 import com.amazonaws.services.health.model.DescribeEntityAggregatesResult;
 import com.amazonaws.services.health.model.EntityAggregate;

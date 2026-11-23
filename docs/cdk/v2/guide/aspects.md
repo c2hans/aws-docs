@@ -10,27 +10,27 @@ To apply an aspect to a construct and all constructs in the same scope, call ` [
 
 **Example**
 
-```
+```javascript
 Aspects.of(myConstruct).add(new SomeAspect(...));
 ```
 
-```
+```javascript
 Aspects.of(myConstruct).add(new SomeAspect(...));
 ```
 
-```
+```python
 Aspects.of(my_construct).add(SomeAspect(...))
 ```
 
-```
+```java
 Aspects.of(myConstruct).add(new SomeAspect(...));
 ```
 
-```
+```csharp
 Aspects.Of(myConstruct).add(new SomeAspect(...));
 ```
 
-```
+```go
 awscdk.Aspects_Of(stack).Add(awscdk.NewTag(...))
 ```
 
@@ -59,27 +59,27 @@ Aspects employ the [visitor pattern](https://en.wikipedia.org/wiki/Visitor_patte
 
 **Example**
 
-```
+```javascript
 interface IAspect {
    visit(node: IConstruct): void;}
 ```
 JavaScript doesn’t have interfaces as a language feature. Therefore, an aspect is simply an instance of a class having a `visit` method that accepts the node to be operated on.
 Python doesn’t have interfaces as a language feature. Therefore, an aspect is simply an instance of a class having a `visit` method that accepts the node to be operated on.
 
-```
+```java
 public interface IAspect {
     public void visit(Construct node);
 }
 ```
 
-```
+```csharp
 public interface IAspect
 {
     void Visit(IConstruct node);
 }
 ```
 
-```
+```go
 type IAspect interface {
   Visit(node constructs.IConstruct)
 }
@@ -100,7 +100,7 @@ The following example validates that all buckets created in the stack have versi
 
 **Example**
 
-```
+```javascript
 class BucketVersioningChecker implements IAspect {
   public visit(node: IConstruct): void {
     // See that we're dealing with a CfnBucket
@@ -121,7 +121,7 @@ class BucketVersioningChecker implements IAspect {
 Aspects.of(stack).add(new BucketVersioningChecker());
 ```
 
-```
+```javascript
 class BucketVersioningChecker {
    visit(node) {
     // See that we're dealing with a CfnBucket
@@ -142,7 +142,7 @@ class BucketVersioningChecker {
 Aspects.of(stack).add(new BucketVersioningChecker());
 ```
 
-```
+```python
 @jsii.implements(cdk.IAspect)
 class BucketVersioningChecker:
 
@@ -161,7 +161,7 @@ class BucketVersioningChecker:
 Aspects.of(stack).add(BucketVersioningChecker())
 ```
 
-```
+```java
 public class BucketVersioningChecker implements IAspect
 {
     @Override
@@ -184,7 +184,7 @@ public class BucketVersioningChecker implements IAspect
 Aspects.of(stack).add(new BucketVersioningChecker());
 ```
 
-```
+```csharp
 class BucketVersioningChecker : Amazon.Jsii.Runtime.Deputy.DeputyBase, IAspect
 {
     public void Visit(IConstruct node)

@@ -47,7 +47,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 **Note**
  The code snippet shown here is for illustration only and may not be accurate. Validate against your own environment and requirements unique to your workload.
 
-   ```
+   ```json
    {
    "Version": "2012-10-17",
    "Statement": [
@@ -84,7 +84,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 **Note**
  The code snippet shown here is for illustration only and may not be accurate. Validate against your own environment and requirements unique to your workload.
 
-   ```
+   ```json
    {
        "Effect": "Allow",
        "Principal": {

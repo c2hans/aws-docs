@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/silk/latest/developerguide/touch.html
 
 As you might expect, Amazon Silk is designed for touch interactions and fully supports [Touch Events](html5-apis.md#touch-events). In general, Amazon Silk and other touch browsers know how to apply touch interactions to click-based DOM events, even with no mouse involved. For example, Silk will fire the following `onclick` event in response to a tap.
 
-```
+```html
 <html>
   <body>
     <button onclick="testFunction()">Tap me</button>
@@ -42,7 +42,7 @@ Consider a few examples of DOM events specifically designed for touch. These exa
 **Note**
 This example includes the jQuery libraries from a content delivery network, so you should be able to paste the code below directly into a page and run it without downloading any additional resources.
 
-```
+```html
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">

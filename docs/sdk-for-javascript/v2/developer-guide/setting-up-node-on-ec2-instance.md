@@ -31,7 +31,7 @@ The following procedure helps you install Node.js on an Amazon Linux instance. Y
 **Warning**
 AWS does not control the following code. Before you run it, be sure to verify its authenticity and integrity. More information about this code can be found in the [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) GitHub repository.
 
-   ```
+   ```sh
    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
    ```
 
@@ -39,13 +39,13 @@ AWS does not control the following code. Before you run it, be sure to verify it
 
 1. Load `nvm` by typing the following at the command line.
 
-   ```
+   ```sh
    source ~/.bashrc
    ```
 
 1. Use nvm to install the latest LTS version of Node.js by typing the following at the command line.
 
-   ```
+   ```sh
    nvm install --lts
    ```
 
@@ -53,7 +53,7 @@ AWS does not control the following code. Before you run it, be sure to verify it
 
 1. Test that Node.js is installed and running correctly by typing the following at the command line.
 
-   ```
+   ```sh
    node -e "console.log('Running Node.js ' + process.version)"
    ```
 

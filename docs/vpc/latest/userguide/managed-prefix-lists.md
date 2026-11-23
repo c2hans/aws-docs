@@ -55,7 +55,7 @@ The following example policy allows users to view and work with prefix list `pl-
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -22,7 +22,7 @@ If you use the `alertTargets` parameter in [CreateSecurityProfile](https://docs.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -49,7 +49,7 @@ If you use the `alertTargets` parameter in [CreateSecurityProfile](https://docs.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -77,7 +77,7 @@ You also need an IAM permissions policy attached to the IAM user that allows the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

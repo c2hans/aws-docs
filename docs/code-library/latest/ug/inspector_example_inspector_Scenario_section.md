@@ -24,7 +24,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 Run an interactive scenario demonstrating features.
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -222,7 +222,7 @@ public class InspectorScenario {
 ```
 A wrapper class for SDK methods.
 
-```
+```java
 public class InspectorActions {
     private static Inspector2AsyncClient inspectorAsyncClient;
     private static final Logger logger = LoggerFactory.getLogger(InspectorActions.class);
@@ -929,7 +929,7 @@ public class InspectorActions {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 Run an interactive scenario demonstrating features.
 
-```
+```python
 class InspectorScenario:
     """Runs an interactive scenario that shows how to use Amazon Inspector."""
 
@@ -1221,7 +1221,7 @@ class InspectorScenario:
 ```
 A wrapper class for SDK methods.
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 

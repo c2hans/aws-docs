@@ -209,7 +209,7 @@ For containerized Lambda functions, the resource is mounted inside the Greengras
 
 To get the path to the downloaded artifacts of a machine learning resource, Lambda functions append the `AWS_GG_RESOURCE_PREFIX` environment variable to the local destination path defined for the resource. For containerized Lambda functions, the returned value is a single forward slash (`/`).
 
-```
+```python
 resourcePath = os.getenv("AWS_GG_RESOURCE_PREFIX") + "/{{destination-path}}"
 with open(resourcePath, 'r') as f:
     # load_model(f)
@@ -220,7 +220,7 @@ with open(resourcePath, 'r') as f:
 
 The downloaded artifacts of a machine learning resource are located in the local destination path defined for the resource. Only containerized Lambda functions can access machine learning resources in AWS IoT Greengrass Core v1.9 and earlier.
 
-```
+```python
 resourcePath = "/{{local-destination-path}}"
 with open(resourcePath, 'r') as f:
     # load_model(f)

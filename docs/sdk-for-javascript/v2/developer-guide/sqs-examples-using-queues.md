@@ -36,7 +36,7 @@ To set up and run this example, you must first complete these tasks:
 
 Create a Node.js module with the file name `sqs_listqueues.js`. Be sure to configure the SDK as previously shown. To access Amazon SQS, create an `AWS.SQS` service object. Create a JSON object containing the parameters needed to list your queues, which by default is an empty object. Call the `listQueues` method to retrieve the list of queues. The callback returns the URLs of all queues.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -58,7 +58,7 @@ sqs.listQueues(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sqs_listqueues.js
 ```
 
@@ -69,7 +69,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `sqs_createqueue.js`. Be sure to configure the SDK as previously shown. To access Amazon SQS, create an `AWS.SQS` service object. Create a JSON object containing the parameters needed to list your queues, which must include the name for the queue created. The parameters can also contain attributes for the queue, such as the number of seconds for which message delivery is delayed or the number of seconds to retain a received message. Call the `createQueue` method. The callback returns the URL of the created queue.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -97,7 +97,7 @@ sqs.createQueue(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sqs_createqueue.js
 ```
 
@@ -108,7 +108,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `sqs_getqueueurl.js`. Be sure to configure the SDK as previously shown. To access Amazon SQS, create an `AWS.SQS` service object. Create a JSON object containing the parameters needed to list your queues, which must include the name of the queue whose URL you want. Call the `getQueueUrl` method. The callback returns the URL of the specified queue.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -132,7 +132,7 @@ sqs.getQueueUrl(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sqs_getqueueurl.js
 ```
 
@@ -143,7 +143,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `sqs_deletequeue.js`. Be sure to configure the SDK as previously shown. To access Amazon SQS, create an `AWS.SQS` service object. Create a JSON object containing the parameters needed to delete a queue, which consists of the URL of the queue you want to delete. Call the `deleteQueue` method.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -167,7 +167,7 @@ sqs.deleteQueue(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sqs_deletequeue.js
 ```
 

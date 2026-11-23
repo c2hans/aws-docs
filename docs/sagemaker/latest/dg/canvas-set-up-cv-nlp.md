@@ -29,7 +29,7 @@ To add the permissions to the user's IAM role, do the following:
 
 ****
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
        "Statement": [

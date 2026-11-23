@@ -40,6 +40,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel08-b
 
 ![Architecture diagram of a blue/green deployment where two parallel environments run the application and DNS routing controls which environment receives traffic.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/blue-green-deployment.png)
 
+*Blue/green deployment with DNS-controlled traffic routing*
+
  *Drift* is any change that gives a resource a different state or configuration than its definition expects, and it undermines immutable infrastructure. A successful implementation detects drift and remediates it, either by correcting the resource or by redeploying from code. This keeps the deployed state aligned with the defined state.
 
 ### Implementation steps

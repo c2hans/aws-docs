@@ -749,7 +749,7 @@ print(resp['RuleResults'])
 
 To use data quality monitoring at the catalog and database level, create a data quality evaluation configuration. AWS Glue Data Quality then evaluates every table in scope without you starting runs yourself. The following Python example creates a configuration at the database level that profiles every table in a database every 24 hours with the `SIMPLE` built-in ruleset. Replace `my-database-config`, `111122223333`, `my_database`, and `DataQualityEvaluationConfigRole` with your own values.
 
-```
+```python
 import logging
 
 import boto3

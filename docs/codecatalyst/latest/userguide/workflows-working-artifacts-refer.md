@@ -70,7 +70,7 @@ If the **Artifacts - optional** drop-down list is unavailable (visual editor), o
 
 1. In the action where you want to specify the artifact as input, add code similar to the following:
 
-   ```
+   ```yaml
    {{action-name}}:
      Inputs:
        Artifacts:

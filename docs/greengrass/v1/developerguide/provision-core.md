@@ -51,7 +51,7 @@ In this section, you register your device as an AWS IoT thing to use it as a Gre
 
 ****
 
-           ```
+           ```json
            {
              "Version":"2012-10-17",
              "Statement": [

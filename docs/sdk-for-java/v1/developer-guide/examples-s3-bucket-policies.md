@@ -17,7 +17,7 @@ You can set the bucket policy for a particular S3 bucket by:
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.auth.policy.Policy;
 import com.amazonaws.auth.policy.Principal;
@@ -25,7 +25,7 @@ import com.amazonaws.auth.policy.Principal;
 
  **Code**
 
-```
+```java
     s3.setBucketPolicy(bucket_name, policy_text);
 } catch (AmazonServiceException e) {
     System.err.println(e.getErrorMessage());
@@ -44,7 +44,7 @@ By using the `Policy` class, you don’t have to be concerned about correctly fo
 
  **Imports**
 
-```
+```java
 import com.amazonaws.auth.policy.Resource;
 import com.amazonaws.auth.policy.Statement;
 import com.amazonaws.auth.policy.actions.S3Actions;
@@ -55,7 +55,7 @@ import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 
  **Code**
 
-```
+```java
         new Statement(Statement.Effect.Allow)
                 .withPrincipals(Principal.AllUsers)
                 .withActions(S3Actions.GetObject)
@@ -66,7 +66,7 @@ return bucket_policy.toJson();
 
 The `Policy` class also provides a `fromJson` method that can attempt to build a policy using a passed-in JSON string. The method validates it to ensure that the text can be transformed into a valid policy structure, and will fail with an `IllegalArgumentException` if the policy text is invalid.
 
-```
+```java
 Policy bucket_policy = null;
 try {
     bucket_policy = Policy.fromJson(file_text.toString());
@@ -88,7 +88,7 @@ To retrieve the policy for an Amazon S3 bucket, call the AmazonS3 client’s `ge
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -97,7 +97,7 @@ import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 
  **Code**
 
-```
+```java
   try {
       BucketPolicy bucket_policy = s3.getBucketPolicy(bucket_name);
       policy_text = bucket_policy.getPolicyText();
@@ -118,7 +118,7 @@ To delete a bucket policy, call the AmazonS3 client’s `deleteBucketPolicy`, pr
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -126,7 +126,7 @@ import com.amazonaws.services.s3.AmazonS3;
 
  **Code**
 
-```
+```java
   try {
       s3.deleteBucketPolicy(bucket_name);
   } catch (AmazonServiceException e) {

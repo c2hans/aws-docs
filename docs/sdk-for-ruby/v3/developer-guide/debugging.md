@@ -6,13 +6,13 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/debuggin
 
 You can get wire trace information from an AWS client by setting the `http_wire_trace` Boolean. Wire trace information helps differentiate client changes, service issues, and user errors. When `true`, the setting shows what is being sent on the wire. The following example creates an Amazon S3 client with wire tracing enabled at the time of client creation.
 
-```
+```ruby
 s3 = Aws::S3::Client.new(http_wire_trace: true)
 ```
 
 Given the following code and the argument `bucket_name`, the output displays a message that says whether a bucket with that name exists.
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 s3 = Aws::S3::Resource.new(client: Aws::S3::Client.new(http_wire_trace: true))
@@ -26,7 +26,7 @@ end
 
 If the bucket exists, the output is similar to the following. (Returns were added to the `HEAD` line for readability.)
 
-```
+```sh
 opening connection to bucket_name.s3-us-west-1.amazonaws.com:443...
 opened
 starting SSL for bucket_name.s3-us-west-1.amazonaws.com:443...
@@ -53,7 +53,7 @@ Bucket bucket_name exists
 
 You can also turn on wire tracing after client creation.
 
-```
+```ruby
 s3 = Aws::S3::Client.new
 s3.config.http_wire_trace = true
 ```

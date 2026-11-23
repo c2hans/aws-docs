@@ -120,7 +120,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of ListInvocationSteps.
 
-```
+```json
 POST bedrock-agent-runtime.us-east-1.amazonaws.com/sessions/12345abc-1234-abcd-1234-abcdef123456/invocationSteps/?maxResults=10&nextToken=abc123 HTTP/1.1
 Content-type: application/json
 

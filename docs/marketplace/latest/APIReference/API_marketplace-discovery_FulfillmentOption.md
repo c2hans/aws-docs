@@ -16,7 +16,7 @@ In the following list, the required parameters are described first.
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
  ** amazonMachineImageFulfillmentOption **   <a name="AWSMarketplaceService-Type-marketplace-discovery_FulfillmentOption-amazonMachineImageFulfillmentOption"></a>
-An Amazon Machine Image (AMI) fulfillment option for EC2 deployment.
+An Amazon Machine Image (AMI) fulfillment option for Amazon Elastic Compute Cloud (Amazon EC2) deployment.
 Type: [AmazonMachineImageFulfillmentOption](API_marketplace-discovery_AmazonMachineImageFulfillmentOption.md) object
 Required: No
 
@@ -41,7 +41,7 @@ Type: [DataExchangeFulfillmentOption](API_marketplace-discovery_DataExchangeFulf
 Required: No
 
  ** ec2ImageBuilderComponentFulfillmentOption **   <a name="AWSMarketplaceService-Type-marketplace-discovery_FulfillmentOption-ec2ImageBuilderComponentFulfillmentOption"></a>
-An EC2 Image Builder component fulfillment option.
+An Amazon Elastic Compute Cloud (Amazon EC2) Image Builder component fulfillment option.
 Type: [Ec2ImageBuilderComponentFulfillmentOption](API_marketplace-discovery_Ec2ImageBuilderComponentFulfillmentOption.md) object
 Required: No
 

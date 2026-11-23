@@ -42,13 +42,13 @@ Get the AWS IoT endpoints for your AWS account, and save them to use later. Your
 
 1. Get the AWS IoT data endpoint for your AWS account.
 
-   ```
+   ```bash
    aws iot describe-endpoint --endpoint-type iot:Data-ATS
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "endpointAddress": "{{device-data-prefix}}-ats.iot.us-west-2.amazonaws.com"
    }
@@ -56,13 +56,13 @@ Get the AWS IoT endpoints for your AWS account, and save them to use later. Your
 
 1. Get the AWS IoT credentials endpoint for your AWS account.
 
-   ```
+   ```bash
    aws iot describe-endpoint --endpoint-type iot:CredentialProvider
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "endpointAddress": "{{device-credentials-prefix}}.credentials.iot.us-west-2.amazonaws.com"
    }
@@ -81,7 +81,7 @@ To help you better manage the number of devices, and which devices, that registe
 
 1. Copy the claim certificate and private key to the device. If SSH and SCP are enabled on the development computer and the device, you can use the `scp` command on your development computer to transfer the claim certificate and private key. The following example command transfers these files a folder named `claim-certs` on your development computer to the device. Replace {{device-ip-address}} with the IP address of your device.
 
-   ```
+   ```bash
    scp -r claim-certs/ {{device-ip-address}}:~
    ```
 
@@ -93,7 +93,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 #### [ Linux or Unix ]
    + Replace `{{/greengrass/v2}}` with the folder to use.
 
-   ```
+   ```bash
    sudo mkdir -p {{/greengrass/v2}}
    ```
 
@@ -101,7 +101,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 #### [ Windows Command Prompt ]
    + Replace {{C:\\greengrass\\v2}} with the folder to use.
 
-   ```
+   ```cmd
    mkdir {{C:\greengrass\v2}}
    ```
 
@@ -109,7 +109,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 #### [ PowerShell ]
    + Replace {{C:\\greengrass\\v2}} with the folder to use.
 
-   ```
+   ```cmd
    mkdir {{C:\greengrass\v2}}
    ```
 
@@ -118,7 +118,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 1. <a name="installation-set-greengrass-root-folder-permissions"></a>(Linux only) Set the permissions of the parent of the Greengrass root folder.
    + Replace {{/greengrass}} with the parent of the root folder.
 
-   ```
+   ```bash
    sudo chmod 755 {{/greengrass}}
    ```
 
@@ -128,21 +128,21 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo mv ~/claim-certs {{/greengrass/v2}}
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    move %USERPROFILE%\claim-certs {{C:\greengrass\v2}}
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    mv -Path ~\claim-certs -Destination {{C:\greengrass\v2}}
    ```
 
@@ -153,21 +153,21 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo curl -o {{/greengrass/v2}}/AmazonRootCA1.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```bash
    curl -o {{C:\greengrass\v2}}\\AmazonRootCA1.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```bash
    iwr -Uri https://www.amazontrust.com/repository/AmazonRootCA1.pem -OutFile {{C:\greengrass\v2}}\\AmazonRootCA1.pem
    ```
 
@@ -186,28 +186,28 @@ Follow the steps in this section to set up a Linux or Windows device to use as y
 1. Install the Java runtime, which AWS IoT Greengrass Core software requires to run. We recommend that you use [Amazon Corretto](https://aws.amazon.com/corretto/) or [OpenJDK](https://openjdk.java.net/) long-term support versions. Version 8 or higher is required. The following commands show you how to install OpenJDK on your device.
    + For Debian-based or Ubuntu-based distributions:
 
-     ```
+     ```bash
      sudo apt install default-jdk
      ```
    + For Red Hat-based distributions:
 
-     ```
+     ```bash
      sudo yum install java-11-openjdk-devel
      ```
    + For Amazon Linux 2:
 
-     ```
+     ```bash
      sudo amazon-linux-extras install java-openjdk11
      ```
    + For Amazon Linux 2023:
 
-     ```
+     ```bash
      sudo dnf install java-11-amazon-corretto -y
      ```
 
    When the installation completes, run the following command to verify that Java runs on your Linux device.
 
-   ```
+   ```bash
    java -version
    ```
 
@@ -221,7 +221,7 @@ Follow the steps in this section to set up a Linux or Windows device to use as y
 
 1. (Optional) Create the default system user and group that runs components on the device. You can also choose to let the AWS IoT Greengrass Core software installer create this user and group during installation with the `--component-default-user` installer argument. For more information, see [Installer arguments](configure-installer.md).
 
-   ```
+   ```bash
    sudo useradd --system --create-home ggc_user
    sudo groupadd --system ggc_group
    ```
@@ -230,7 +230,7 @@ Follow the steps in this section to set up a Linux or Windows device to use as y
 
    1. Run the following command to open the `/etc/sudoers` file.
 
-      ```
+      ```bash
       sudo visudo
       ```
 
@@ -286,24 +286,24 @@ This feature is available for v2.5.0 and later of the [Greengrass nucleus compon
 
 1. <a name="set-up-windows-device-environment-create"></a>Create the default user in the LocalSystem account on the Windows device. Replace {{password}} with a secure password.
 
-   ```
+   ```cmd
    net user /add ggc_user {{password}}
    ```
 **Tip**  <a name="windows-password-expiration-tip"></a>
 Depending on your Windows configuration, the user's password might be set to expire at a date in the future. To ensure your Greengrass applications continue to operate, track when the password expires, and update it before it expires. You can also set the user's password to never expire.
 To check when a user and its password expire, run the following command.
 
-     ```
+     ```cmd
      net user {{ggc_user}} | findstr /C:expires
      ```
 To set a user's password to never expire, run the following command.
 
-     ```
+     ```cmd
      wmic UserAccount where "Name='{{ggc_user}}'" set PasswordExpires=False
      ```
 If you’re using Windows 10 or later where the [`wmic` command is deprecated](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmic), run the following PowerShell command.
 
-     ```
+     ```powershell
      Get-CimInstance -Query "SELECT * from Win32_UserAccount WHERE name = '{{ggc_user}}'" | Set-CimInstance -Property @{PasswordExpires="False"}
      ```
 
@@ -311,7 +311,7 @@ If you’re using Windows 10 or later where the [`wmic` command is deprecated](h
 
 1. <a name="set-up-windows-device-credentials"></a>Use the PsExec utility to store the user name and password for the default user in the Credential Manager instance for the LocalSystem account. Replace {{password}} with the user's password that you set earlier.
 
-   ```
+   ```cmd
    psexec -s cmd /c cmdkey /generic:ggc_user /user:ggc_user /pass:{{password}}
    ```
 
@@ -339,21 +339,21 @@ https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-{{version}}.zip
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip > greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip > greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    iwr -Uri https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip -OutFile greengrass-nucleus-latest.zip
    ```
 
@@ -370,7 +370,7 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       jarsigner -verify -certs -verbose greengrass-nucleus-latest.zip
       ```
 
@@ -379,7 +379,7 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 
       The file name might look different depending on the JDK version you install. Replace {{`jdk17.0.6_10`}} with the JDK version you installed.
 
-      ```
+      ```cmd
       "C:\\Program Files\\Amazon Corretto\\{{jdk17.0.6_10}}\\bin\\jarsigner.exe" -verify -certs -verbose greengrass-nucleus-latest.zip
       ```
 
@@ -388,7 +388,7 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 
       The file name might look different depending on the JDK version you install. Replace {{`jdk17.0.6_10`}} with the JDK version you installed.
 
-      ```
+      ```ps
       'C:\\Program Files\\Amazon Corretto\\{{jdk17.0.6_10}}\\bin\\jarsigner.exe' -verify -certs -verbose greengrass-nucleus-latest.zip
       ```
 
@@ -398,13 +398,13 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 
       1. If the Greengrass nucleus zip file is signed, the output contains the following statement:
 
-         ```
+         ```bash
          jar verified.
          ```
 
       1. If the Greengrass nucleus zip file isn't signed, the output contains the following statement:
 
-         ```
+         ```bash
          jar is unsigned.
          ```
 
@@ -415,21 +415,21 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    unzip greengrass-nucleus-latest.zip -d {{GreengrassInstaller}} && rm greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    mkdir {{GreengrassInstaller}} && tar -xf greengrass-nucleus-latest.zip -C {{GreengrassInstaller}} && del greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Expand-Archive -Path greengrass-nucleus-latest.zip -DestinationPath .\\{{GreengrassInstaller}}
    rm greengrass-nucleus-latest.zip
    ```
@@ -438,7 +438,7 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 
 1. (Optional) Run the following command to see the version of the AWS IoT Greengrass Core software.
 
-   ```
+   ```bash
    java -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar --version
    ```
 
@@ -467,21 +467,21 @@ The fleet provisioning plugin is open source. To view its source code, see the [
 ------
 #### [ Linux or Unix ]
 
-  ```
+  ```bash
   curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/aws-greengrass-FleetProvisioningByClaim/fleetprovisioningbyclaim-latest.jar > {{GreengrassInstaller}}/aws.greengrass.FleetProvisioningByClaim.jar
   ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-  ```
+  ```cmd
   curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/aws-greengrass-FleetProvisioningByClaim/fleetprovisioningbyclaim-latest.jar > {{GreengrassInstaller}}/aws.greengrass.FleetProvisioningByClaim.jar
   ```
 
 ------
 #### [ PowerShell ]
 
-  ```
+  ```ps
   iwr -Uri https://d2s8p88vqu9w66.cloudfront.net/releases/aws-greengrass-FleetProvisioningByClaim/fleetprovisioningbyclaim-latest.jar -OutFile {{GreengrassInstaller}}/aws.greengrass.FleetProvisioningByClaim.jar
   ```
 
@@ -509,7 +509,7 @@ For more information about the arguments that you can specify, see [Installer ar
 1. <a name="installer-check-greengrass-core-software-version"></a>Check the version of the AWS IoT Greengrass Core software.
    + Replace {{GreengrassInstaller}} with the path to the folder that contains the software.
 
-   ```
+   ```bash
    java -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar --version
    ```
 
@@ -517,7 +517,7 @@ For more information about the arguments that you can specify, see [Installer ar
 
    <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-   ```
+   ```bash
    nano {{GreengrassInstaller}}/config.yaml
    ```
 
@@ -526,7 +526,7 @@ For more information about the arguments that you can specify, see [Installer ar
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```yaml
    ---
    services:
      aws.greengrass.Nucleus:
@@ -550,7 +550,7 @@ For more information about the arguments that you can specify, see [Installer ar
 ------
 #### [ Windows ]
 
-   ```
+   ```yaml
    ---
    services:
      aws.greengrass.Nucleus:
@@ -589,7 +589,7 @@ On Windows devices, you must specify path separators as double backslashes (`\\`
 **Note**
 In this configuration file, you can customize other configuration options such as the ports and network proxy to use, as shown in the following example. For more information, see [Greengrass nucleus configuration](greengrass-nucleus-component.md#greengrass-nucleus-component-configuration).
 
-   ```
+   ```yaml
    ---
    services:
      aws.greengrass.Nucleus:
@@ -624,7 +624,7 @@ In this configuration file, you can customize other configuration options such a
          proxyPassword: "pass@word1357"
    ```
 
-   ```
+   ```yaml
    ---
    services:
      aws.greengrass.Nucleus:
@@ -660,7 +660,7 @@ In this configuration file, you can customize other configuration options such a
    ```
 To use an HTTPS proxy, you must use version 1.1.0 or later of the fleet provisioning plugin. You must additionally specify the `rootCaPath` under `system`, as shown in the following example.
 
-   ```
+   ```yaml
    ---
    system:
      rootCaPath: "{{/greengrass/v2}}/AmazonRootCA1.pem"
@@ -668,7 +668,7 @@ To use an HTTPS proxy, you must use version 1.1.0 or later of the fleet provisio
      {{...}}
    ```
 
-   ```
+   ```yaml
    ---
    system:
      rootCaPath: "{{C:\\greengrass\\v2}}\\AmazonRootCA1.pem"
@@ -683,7 +683,7 @@ To use an HTTPS proxy, you must use version 1.1.0 or later of the fleet provisio
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo -E java -Droot="{{/greengrass/v2}}" -Dlog.store=FILE \
      -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar \
      --trusted-plugin ./{{GreengrassInstaller}}/aws.greengrass.FleetProvisioningByClaim.jar \
@@ -695,7 +695,7 @@ To use an HTTPS proxy, you must use version 1.1.0 or later of the fleet provisio
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    java -Droot="{{C:\greengrass\v2}}" "-Dlog.store=FILE" ^
      -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar ^
      --trusted-plugin ./{{GreengrassInstaller}}/aws.greengrass.FleetProvisioningByClaim.jar ^
@@ -707,7 +707,7 @@ To use an HTTPS proxy, you must use version 1.1.0 or later of the fleet provisio
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    java -Droot="{{C:\greengrass\v2}}" "-Dlog.store=FILE" `
      -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar `
      --trusted-plugin ./{{GreengrassInstaller}}/aws.greengrass.FleetProvisioningByClaim.jar `
@@ -729,21 +729,21 @@ You can't use the `deploy-dev-tools` argument to deploy local development tools 
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    ls {{/greengrass/v2}}
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    dir {{C:\greengrass\v2}}
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    ls {{C:\greengrass\v2}}
    ```
 

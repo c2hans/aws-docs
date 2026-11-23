@@ -90,7 +90,7 @@ The `SecurityDetails` consists of the following:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -125,7 +125,7 @@ The `SecurityDetails` consists of the following:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

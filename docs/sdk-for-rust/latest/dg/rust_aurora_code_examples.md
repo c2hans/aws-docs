@@ -28,7 +28,7 @@ The following code example shows how to get started using Aurora.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
 use aws_sdk_rds::Client;
 
 #[derive(Debug)]
@@ -87,7 +87,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 A library containing the scenario-specific functions for the Aurora scenario.
 
-```
+```rust
 use phf::{phf_set, Set};
 use secrecy::SecretString;
 use std::{collections::HashMap, fmt::Display, time::Duration};
@@ -727,7 +727,7 @@ pub mod tests;
 ```
 Tests for the library using automocks around the RDS Client wrapper.
 
-```
+```rust
 use crate::rds::MockRdsImpl;
 
 use super::*;
@@ -1743,7 +1743,7 @@ async fn test_scenario_snapshot_invalid() {
 ```
 A binary to run the scenario from front to end, using inquirer so that the user can make some decisions.
 
-```
+```rust
 use std::fmt::Display;
 
 use anyhow::anyhow;
@@ -2019,7 +2019,7 @@ fn prompt_number_or_default(warnings: &mut Warnings, name: &str, default: u8) ->
 ```
 A wrapper around the Amazon RDS service that allows automocking for tests.
 
-```
+```rust
 use aws_sdk_rds::{
     error::SdkError,
     operation::{
@@ -2273,7 +2273,7 @@ impl RdsImpl {
 ```
 The Cargo.toml with dependencies used in this scenario.
 
-```
+```rust
 [package]
 name = "aurora-code-examples"
 authors = [
@@ -2328,7 +2328,7 @@ The following code example shows how to use `CreateDBCluster`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     // Get a list of allowed engine versions. rds.DescribeDbEngineVersions(Engine='aurora-mysql', DBParameterGroupFamily=<the family used to create your parameter group in step 2>)
     // Create an Aurora DB cluster database cluster that contains a MySql database and uses the parameter group you created.
     // Wait for DB cluster to be ready. Call rds.DescribeDBClusters and check for Status == 'available'.
@@ -2790,7 +2790,7 @@ The following code example shows how to use `CreateDBClusterParameterGroup`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     // Select an engine family and create a custom DB cluster parameter group. rds.CreateDbClusterParameterGroup(DBParameterGroupFamily='aurora-mysql8.0')
     pub async fn set_engine(&mut self, engine: &str, version: &str) -> Result<(), ScenarioError> {
         self.engine_family = Some(engine.to_string());
@@ -2926,7 +2926,7 @@ The following code example shows how to use `CreateDBClusterSnapshot`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     // Get a list of allowed engine versions. rds.DescribeDbEngineVersions(Engine='aurora-mysql', DBParameterGroupFamily=<the family used to create your parameter group in step 2>)
     // Create an Aurora DB cluster database cluster that contains a MySql database and uses the parameter group you created.
     // Wait for DB cluster to be ready. Call rds.DescribeDBClusters and check for Status == 'available'.
@@ -3380,7 +3380,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     // Get a list of allowed engine versions. rds.DescribeDbEngineVersions(Engine='aurora-mysql', DBParameterGroupFamily=<the family used to create your parameter group in step 2>)
     // Create an Aurora DB cluster database cluster that contains a MySql database and uses the parameter group you created.
     // Wait for DB cluster to be ready. Call rds.DescribeDBClusters and check for Status == 'available'.
@@ -3838,7 +3838,7 @@ The following code example shows how to use `DeleteDBCluster`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     pub async fn clean_up(self) -> Result<(), Vec<ScenarioError>> {
         let mut clean_up_errors: Vec<ScenarioError> = vec![];
 
@@ -4177,7 +4177,7 @@ The following code example shows how to use `DeleteDBClusterParameterGroup`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     pub async fn clean_up(self) -> Result<(), Vec<ScenarioError>> {
         let mut clean_up_errors: Vec<ScenarioError> = vec![];
 
@@ -4516,7 +4516,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     pub async fn clean_up(self) -> Result<(), Vec<ScenarioError>> {
         let mut clean_up_errors: Vec<ScenarioError> = vec![];
 
@@ -4855,7 +4855,7 @@ The following code example shows how to use `DescribeDBClusterParameters`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     // Get the parameter group. rds.DescribeDbClusterParameterGroups
     // Get parameters in the group. This is a long list so you will have to paginate. Find the auto_increment_offset and auto_increment_increment parameters (by ParameterName). rds.DescribeDbClusterParameters
     // Parse the ParameterName, Description, and AllowedValues values and display them.
@@ -4967,7 +4967,7 @@ The following code example shows how to use `DescribeDBClusters`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     // Get a list of allowed engine versions. rds.DescribeDbEngineVersions(Engine='aurora-mysql', DBParameterGroupFamily=<the family used to create your parameter group in step 2>)
     // Create an Aurora DB cluster database cluster that contains a MySql database and uses the parameter group you created.
     // Wait for DB cluster to be ready. Call rds.DescribeDBClusters and check for Status == 'available'.
@@ -5419,7 +5419,7 @@ The following code example shows how to use `DescribeDBEngineVersions`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     // Get available engine families for Aurora MySql. rds.DescribeDbEngineVersions(Engine='aurora-mysql') and build a set of the 'DBParameterGroupFamily' field values. I get {aurora-mysql8.0, aurora-mysql5.7}.
     pub async fn get_engines(&self) -> Result<HashMap<String, Vec<String>>, ScenarioError> {
         let describe_db_engine_versions = self.rds.describe_db_engine_versions(DB_ENGINE).await;
@@ -5546,7 +5546,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     pub async fn clean_up(self) -> Result<(), Vec<ScenarioError>> {
         let mut clean_up_errors: Vec<ScenarioError> = vec![];
 
@@ -5879,7 +5879,7 @@ The following code example shows how to use `DescribeOrderableDBInstanceOptions`
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     pub async fn get_instance_classes(&self) -> Result<Vec<String>, ScenarioError> {
         let describe_orderable_db_instance_options_items = self
             .rds
@@ -6009,7 +6009,7 @@ The following code example shows how to use `ModifyDBClusterParameterGroup`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     // Modify both the auto_increment_offset and auto_increment_increment parameters in one call in the custom parameter group. Set their ParameterValue fields to a new allowable value. rds.ModifyDbClusterParameterGroup.
     pub async fn update_auto_increment(
         &self,

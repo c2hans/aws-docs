@@ -149,14 +149,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-patching-on-demand-patching-run-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-patching-on-demand-patching-run-ex-max"></a>
 
-```
+```json
 {
   "Description": "description",
   "Name": "Test1",

@@ -15,6 +15,14 @@ If-Match: {{IfMatch}}
 <?xml version="1.0" encoding="UTF-8"?>
 <UpdateAnycastIpListRequest xmlns="http://cloudfront.amazonaws.com/doc/2020-05-31/">
    <IpAddressType>{{string}}</IpAddressType>
+   <IpamCidrConfigs>
+      <IpamCidrConfig>
+         <AnycastIp>{{string}}</AnycastIp>
+         <Cidr>{{string}}</Cidr>
+         <IpamPoolArn>{{string}}</IpamPoolArn>
+         <Status>{{string}}</Status>
+      </IpamCidrConfig>
+   </IpamCidrConfigs>
 </UpdateAnycastIpListRequest>
 ```
 
@@ -47,6 +55,11 @@ The IP address type for the Anycast static IP list. You can specify one of the f
 +  `dualstack` - Allocate a list of both IPv4 and IPv6 addresses
 Type: String
 Valid Values: `ipv4 | ipv6 | dualstack`
+Required: No
+
+ ** [IpamCidrConfigs](#API_UpdateAnycastIpList_RequestSyntax) **   <a name="cloudfront-UpdateAnycastIpList-request-IpamCidrConfigs"></a>
+A list of IPAM CIDR configurations that specify the IP address ranges and IPAM pool settings for updating the Anycast static IP list.
+Type: Array of [IpamCidrConfig](API_IpamCidrConfig.md) objects
 Required: No
 
 ## Response Syntax

@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[AdditionalDestinations](#cfn-medialive-channel-mediapackagev2groupsettings-additionaldestinations)" : {{[ AdditionalDestinations, ... ]}},
   "[CaptionLanguageMappings](#cfn-medialive-channel-mediapackagev2groupsettings-captionlanguagemappings)" : {{[ CaptionLanguageMapping, ... ]}},
+  "[CaptionLanguageSetting](#cfn-medialive-channel-mediapackagev2groupsettings-captionlanguagesetting)" : {{String}},
   "[Id3Behavior](#cfn-medialive-channel-mediapackagev2groupsettings-id3behavior)" : {{String}},
   "[KlvBehavior](#cfn-medialive-channel-mediapackagev2groupsettings-klvbehavior)" : {{String}},
   "[NielsenId3Behavior](#cfn-medialive-channel-mediapackagev2groupsettings-nielsenid3behavior)" : {{String}},
@@ -43,6 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
     - AdditionalDestinations}}
   [CaptionLanguageMappings](#cfn-medialive-channel-mediapackagev2groupsettings-captionlanguagemappings): {{
     - CaptionLanguageMapping}}
+  [CaptionLanguageSetting](#cfn-medialive-channel-mediapackagev2groupsettings-captionlanguagesetting): {{String}}
   [Id3Behavior](#cfn-medialive-channel-mediapackagev2groupsettings-id3behavior): {{String}}
   [KlvBehavior](#cfn-medialive-channel-mediapackagev2groupsettings-klvbehavior): {{String}}
   [NielsenId3Behavior](#cfn-medialive-channel-mediapackagev2groupsettings-nielsenid3behavior): {{String}}
@@ -69,6 +71,14 @@ Optional, an array of additional destination HTTP destinations for the output gr
 Mapping of up to 4 caption channels to caption languages. Each mapping maps a caption channel to an ISO 693-2 language code, with an optional description.
 *Required*: No
 *Type*: Array of [CaptionLanguageMapping](aws-properties-medialive-channel-captionlanguagemapping.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`CaptionLanguageSetting`  <a name="cfn-medialive-channel-mediapackagev2groupsettings-captionlanguagesetting"></a>
+Applies only to 608 Embedded output captions. Controls the CLOSED-CAPTIONS signaling that AWS Elemental MediaPackage V2 writes into the HLS manifest it delivers. Valid values:
++ `AUTO` – The default. If `captionLanguageMappings` is non-empty, the HLS manifest includes a CLOSED-CAPTIONS line for each mapped caption channel. If `captionLanguageMappings` is empty, the manifest omits the CLOSED-CAPTIONS line.
++ `NONE` – The HLS manifest carries CLOSED-CAPTIONS=NONE on each EXT-X-STREAM-INF tag. This signals to players that the stream has no closed captions, so players stop offering a CC track. You cannot combine `NONE` with a non-empty `captionLanguageMappings`.
+*Required*: No
+*Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Id3Behavior`  <a name="cfn-medialive-channel-mediapackagev2groupsettings-id3behavior"></a>

@@ -23,7 +23,7 @@ Singleton clients prevent resource exhaustion that can occur when you create man
 
 The following example shows how to create and use singleton service clients:
 
-```
+```java
 // Create one instance and use it throughout the application.
 public class ServiceClientSource {
     private static final S3Client s3Client = S3Client.create();
@@ -36,7 +36,7 @@ public class ServiceClientSource {
 
 Don't create new clients for each operation:
 
-```
+```java
 // This approach creates unnecessary overhead.
 public void badExample() {
     try (S3Client s3 = S3Client.create()) {

@@ -38,7 +38,7 @@ SYS\_USERLOG is visible only to superusers. For more information, see [Visibilit
 
 The following example performs four user actions, then queries the SYS\_USERLOG view.
 
-```
+```sql
 CREATE USER userlog1 password 'Userlog1';
 ALTER USER userlog1 createdb createuser;
 ALTER USER userlog1 rename  to userlog2;

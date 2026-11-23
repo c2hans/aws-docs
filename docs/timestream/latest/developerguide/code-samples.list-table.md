@@ -14,7 +14,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java  ]
 
-```
+```java
     public void listTables() {
         System.out.println("Listing tables");
         ListTablesRequest request = new ListTablesRequest();
@@ -42,7 +42,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java v2  ]
 
-```
+```java
     public void listTables() {
         System.out.println("Listing tables");
         ListTablesRequest request = ListTablesRequest.builder().databaseName(DATABASE_NAME).maxResults(2).build();
@@ -57,7 +57,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Go  ]
 
-```
+```go
 listTablesMaxResult := int64(15)
 
     listTablesInput := &timestreamwrite.ListTablesInput{
@@ -78,7 +78,7 @@ listTablesMaxResult := int64(15)
 ------
 #### [  Python  ]
 
-```
+```python
     def list_tables(self):
         print("Listing tables")
         try:
@@ -101,7 +101,7 @@ The following snippet uses AWS SDK for JavaScript v3. For more information about
 
 Also see [Class ListTablesCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-timestream-write/classes/listtablescommand.html) and [ListTables](https://docs.aws.amazon.com/timestream/latest/developerguide/API_ListTables.html).
 
-```
+```javascript
 import { TimestreamWriteClient, ListTablesCommand } from "@aws-sdk/client-timestream-write";
 const writeClient = new TimestreamWriteClient({ region: "us-east-1" });
 
@@ -137,7 +137,7 @@ async function getTablesList(nextToken) {
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/sample_apps/js).
 
-```
+```javascript
 async function listTables() {
     console.log("Listing tables:");
     const tables = await getTablesList(null);
@@ -175,7 +175,7 @@ function getTablesList(nextToken, tables = []) {
 ------
 #### [  .NET  ]
 
-```
+```cs
         public async Task ListTables()
         {
             Console.WriteLine("Listing Tables");

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 After metadata migration completes, confirm that the field types on the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection match what you expect. Use the Migration Console to retrieve the mapping for a migrated index directly from the target:
 
-```
+```bash
 console clusters curl target /<INDEX>/_mapping?pretty
 ```
 
@@ -17,7 +17,7 @@ Replace `<INDEX>` with the name of an index you migrated. Inspect the returned m
 
 You can also retrieve the index settings to confirm the sharding strategy and other index-level definitions migrated as expected:
 
-```
+```bash
 console clusters curl target /<INDEX>/_settings?pretty
 ```
 

@@ -21,7 +21,7 @@ The following simple example shows how SPARQL federated queries work.
 
 Suppose that a customer sends the following query to *Neptune-1* at `http://neptune-1:8182/sparql`.
 
-```
+```sql
 SELECT * WHERE {
    ?person rdf:type foaf:Person .
    SERVICE <http://neptune-2:8182/sparql> {

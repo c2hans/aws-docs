@@ -42,11 +42,11 @@ For a detailed overview of the exact changes in each pillar, see [Announcing upd
  The following table describes earlier updates to the framework.
 
  **Previous framework versions:**
-+  [2024-11-06 (v13)](https://alpha.www.docs.aws.a2z.com/wellarchitected/2024-11-06/framework/welcome.html)
-+  [2024-06-27 (v12)](https://alpha.www.docs.aws.a2z.com/wellarchitected/2024-06-27/framework/welcome.html)
-+  [2023-10-03 (v11)](https://alpha.www.docs.aws.a2z.com/wellarchitected/2023-10-03/framework/welcome.html)
-+  [2023-04-10 (v10)](https://alpha.www.docs.aws.a2z.com/wellarchitected/2023-04-10/framework/welcome.html)
-+  [2022-03-31 (v9)](https://alpha.www.docs.aws.a2z.com/wellarchitected/2022-03-31/framework/welcome.html)
++  [2024-11-06 (v13)](https://docs.aws.amazon.com/wellarchitected/2024-11-06/framework/welcome.html)
++  [2024-06-27 (v12)](https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/welcome.html)
++  [2023-10-03 (v11)](https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/welcome.html)
++  [2023-04-10 (v10)](https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/welcome.html)
++  [2022-03-31 (v9)](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/welcome.html)
 
 |  Change  |  Description  |  Date  |
 | --- | --- | --- |

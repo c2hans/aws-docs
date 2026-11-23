@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-al2-2026.ht
 The following are the release notes for Amazon Linux 2 for 2026.
 
 **Topics**
++ [2.0.20261120](relnotes-20261120.md)
 + [2.0.20261119](relnotes-20261119.md)
 + [2.0.20261118](relnotes-20261118.md)
 + [2.0.20261117](relnotes-20261117.md)

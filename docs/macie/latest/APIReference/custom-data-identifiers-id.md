@@ -83,7 +83,7 @@ Retrieves the criteria and other settings for a custom data identifier.
 #### Empty Schema schema
 <a name="custom-data-identifiers-id-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -91,7 +91,7 @@ Retrieves the criteria and other settings for a custom data identifier.
 #### GetCustomDataIdentifierResponse schema
 <a name="custom-data-identifiers-id-response-body-getcustomdataidentifierresponse-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "createdAt": "string",
@@ -121,7 +121,7 @@ Retrieves the criteria and other settings for a custom data identifier.
 #### ValidationException schema
 <a name="custom-data-identifiers-id-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -130,7 +130,7 @@ Retrieves the criteria and other settings for a custom data identifier.
 #### ServiceQuotaExceededException schema
 <a name="custom-data-identifiers-id-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -139,7 +139,7 @@ Retrieves the criteria and other settings for a custom data identifier.
 #### AccessDeniedException schema
 <a name="custom-data-identifiers-id-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -148,7 +148,7 @@ Retrieves the criteria and other settings for a custom data identifier.
 #### ResourceNotFoundException schema
 <a name="custom-data-identifiers-id-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -157,7 +157,7 @@ Retrieves the criteria and other settings for a custom data identifier.
 #### ConflictException schema
 <a name="custom-data-identifiers-id-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -166,7 +166,7 @@ Retrieves the criteria and other settings for a custom data identifier.
 #### ThrottlingException schema
 <a name="custom-data-identifiers-id-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -175,7 +175,7 @@ Retrieves the criteria and other settings for a custom data identifier.
 #### InternalServerException schema
 <a name="custom-data-identifiers-id-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

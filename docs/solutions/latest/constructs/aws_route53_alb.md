@@ -27,7 +27,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { Route53ToAlb } from '@aws-solutions-constructs/aws-route53-alb';
@@ -44,7 +44,7 @@ new Route53ToAlb(this, 'Route53ToAlbPattern', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_route53_alb import Route53ToAlb
 from aws_cdk import (
     aws_route53 as route53,
@@ -64,7 +64,7 @@ Route53ToAlb(self, 'Route53ToAlbPattern',
                 )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

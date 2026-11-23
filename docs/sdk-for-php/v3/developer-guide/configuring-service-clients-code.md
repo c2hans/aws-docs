@@ -13,7 +13,7 @@ By configuring service clients in code, you gain fine-grained control of the man
 
 You can create and configure a service client in code by passing an associative array of options to a client’s constructor. In the following example, the associative array contains only the "region" option that the client uses:
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\S3\S3Client;
@@ -38,7 +38,7 @@ The `Aws\Sdk` class acts as a client factory and is used to manage shared config
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\S3\S3Client;
@@ -47,7 +47,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 // The same options that can be provided to a specific client constructor can also be supplied to the Aws\Sdk class.
 // Use the us-west-2 region and latest version of each client.
 $sharedConfig = [
@@ -61,7 +61,7 @@ $client = $sdk->createS3();
 
 Options that are shared across all clients are placed in root-level key-value pairs. Service-specific configuration data can be provided in an associative array with a key that is the same as the namespace of a service (e.g., “S3”, “DynamoDb”, etc.).
 
-```
+```php
 $sdk = new Aws\Sdk([
     'region'   => 'us-west-2',
     'DynamoDb' => [

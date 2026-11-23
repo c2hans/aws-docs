@@ -9,7 +9,7 @@ Use the `CreateAnalysis` API operation to create an analysis in AWS Quick Sight 
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws quicksight create-analysis
     --aws-account-id {{AWSACCOUNTID}}
     --analysis-id {{ANALYSISID}}

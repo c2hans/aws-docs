@@ -41,7 +41,7 @@ An unmanaged Amazon EKS compute environment can coexist with an Amazon EKS clust
 After creating the unmanaged compute environment, you need to label your Amazon EKS nodes with the compute environment UUID.
 First, get the compute environment UUID from the `DescribeComputeEnvironments` API result:
 
-```
+```sh
 $ aws batch describe-compute-environments \
     --compute-environments {{unmanagedEksCE}} \
     --query "computeEnvironments[].{name: computeEnvironmentName, uuid: uuid}"

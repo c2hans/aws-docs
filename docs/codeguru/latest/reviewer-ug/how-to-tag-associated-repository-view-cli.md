@@ -27,7 +27,7 @@ Follow these steps to use the AWS CLI to view the AWS tags for an associated rep
 
 1. If successful, this command outputs a [`RepositoryAssociation`](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html) object that includes an array with its tags.
 
-   ```
+   ```json
    {
        "RepositoryAssociation": {
            "AssociationId": "repository-association-uuid",

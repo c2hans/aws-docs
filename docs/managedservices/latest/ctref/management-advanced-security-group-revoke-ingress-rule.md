@@ -152,7 +152,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-security-group-revoke-ingress-rule-ex-min"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-RevokeSecurityGroupIngressRuleV3",
   "Region" : "us-east-1",
@@ -179,7 +179,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-security-group-revoke-ingress-rule-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-RevokeSecurityGroupIngressRuleV3",
   "Region": "us-east-1",

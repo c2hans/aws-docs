@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/code-security-asse
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "key-policy",

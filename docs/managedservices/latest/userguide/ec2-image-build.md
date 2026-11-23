@@ -43,7 +43,7 @@ AMS does not currently support the creation of container recipes.
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

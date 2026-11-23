@@ -32,7 +32,7 @@ For more information about both types, see [.NET application publishing overview
 
 Runtime-dependent is the default publishing mode. To publish a runtime-dependent application that runs on both x86\_64 and arm64 instances, don't specify a runtime identifier (RID).
 
-```
+```bash
 ~/myapp$ dotnet publish -c Release
 ```
 
@@ -50,7 +50,7 @@ By default, .NET doesn't run an application on a different .NET major version th
 
 To publish a self-contained application, specify a Linux runtime identifier (RID) and the `--self-contained true` option. The following command publishes an application for instances with x86\_64 processors.
 
-```
+```bash
 ~/myapp$ dotnet publish -c Release -r linux-x64 --self-contained true
 ```
 

@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Pulls the current status of the cluster.
 
-```
+```sh
 pcluster status [ -h ] [ -c {{CONFIG_FILE}} ] [ -r {{REGION}} ] [ -nw ] {{cluster_name}}
 ```
 

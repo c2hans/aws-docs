@@ -13,6 +13,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 
 ![Guidance architecture diagram. Details are provided in the text that follows.](https://docs.aws.amazon.com/solutions/latest/centralized-network-inspection-on-aws/images/cross-network-traffic-inspection-with-aws-network-firewall.png)
 
+***Centralized Network Inspection on AWS architecture on AWS***
+
 **Note**
  [AWS CloudFormation](https://aws.amazon.com/cloudformation/) resources are created from [AWS Cloud Development Kit (AWS CDK)](https://aws.amazon.com/cdk/) (AWS CDK) constructs.
 

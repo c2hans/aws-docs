@@ -83,7 +83,7 @@ These examples are not complete spans. They show representative data from a real
 **Example**
 The `gen_ai.operation.name` attribute (`invoke_agent`) identifies this as an invoke agent span. The `gen_ai.agent.tools` attribute lists the tools available to the agent.
 
-```
+```json
 {
   "traceId": "69e9cc4771d7cabe0d8e8cea33b6b338",
   "spanId": "d24936b8989b6d42",
@@ -115,7 +115,7 @@ The `gen_ai.operation.name` attribute (`invoke_agent`) identifies this as an inv
 ```
 The correlated event record carries the conversation content. The user prompt is the user-role message in `input.messages`, and the agent response is the assistant-role message in `output.messages`.
 
-```
+```json
 {
   "spanId": "d24936b8989b6d42",
   "traceId": "69e9cc4771d7cabe0d8e8cea33b6b338",
@@ -147,7 +147,7 @@ The correlated event record carries the conversation content. The user prompt is
 ```
 The `gen_ai.operation.name` attribute (`execute_tool`) identifies this as an execute tool span. The `gen_ai.tool.name` attribute holds the tool name.
 
-```
+```json
 {
   "traceId": "69e9cc4d132b180909ba49f613f273dd",
   "spanId": "fff785ce12d6fda8",
@@ -176,7 +176,7 @@ The `gen_ai.operation.name` attribute (`execute_tool`) identifies this as an exe
 ```
 The correlated event record carries the tool input (arguments) and output (result).
 
-```
+```json
 {
   "spanId": "fff785ce12d6fda8",
   "traceId": "69e9cc4d132b180909ba49f613f273dd",
@@ -222,7 +222,7 @@ These examples are not complete spans. They show representative data from a real
 **Example**
 The `gen_ai.user.message` event holds the user prompt, and the `gen_ai.choice` event holds the agent response.
 
-```
+```json
 {
   "traceId": "69e9cc4771d7cabe0d8e8cea33b6b338",
   "spanId": "d2ee0e4765cc773e",
@@ -255,7 +255,7 @@ The `gen_ai.user.message` event holds the user prompt, and the `gen_ai.choice` e
 ```
 The `gen_ai.tool.message` event holds the tool arguments, and the `gen_ai.choice` event holds the tool result.
 
-```
+```json
 {
   "traceId": "69e9cc4d132b180909ba49f613f273dd",
   "spanId": "0a988e27758ebb53",
@@ -325,7 +325,7 @@ These examples are not complete spans. They show representative data from a real
 **Example**
 The `gen_ai.operation.name` attribute (`invoke_agent`) identifies this as an invoke agent span, and `gen_ai.agent.tools` lists the tools available to the agent. The `gen_ai.user.message` event holds the user prompt, and the `gen_ai.choice` event holds the agent response.
 
-```
+```json
 {
   "traceId": "6a6bc695459e41aa14a172bb41d3246d",
   "spanId": "c2c44e69bdab6ef1",
@@ -362,7 +362,7 @@ The `gen_ai.operation.name` attribute (`invoke_agent`) identifies this as an inv
 ```
 The `gen_ai.operation.name` attribute (`execute_tool`) identifies this as an execute tool span; `gen_ai.tool.name` holds the tool name. The `gen_ai.tool.message` event holds the tool arguments, and the `gen_ai.choice` event holds the tool result.
 
-```
+```json
 {
   "traceId": "6a6bc69e6eaa1e994481bef349f4c72e",
   "spanId": "4227ac5525f22dd2",

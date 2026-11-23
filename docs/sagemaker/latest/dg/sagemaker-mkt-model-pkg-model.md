@@ -52,7 +52,7 @@ After you create a deployable model, you can use it to set up an endpoint for re
 
 To use a model package to create a deployable model by using the SageMaker AI Python SDK, initialize a `ModelPackage` object, and pass the Amazon Resource Name (ARN) of the model package as the `model_package_arn` argument. For example:
 
-```
+```python
 from sagemaker import ModelPackage
 model = ModelPackage(role='SageMakerRole',
          model_package_arn='training-job-scikit-decision-trees-1542660466-6f92',

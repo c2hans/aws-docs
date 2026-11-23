@@ -285,7 +285,7 @@ The following example queries a knowledge base.
 #### Sample Request
 <a name="API_agent-runtime_Retrieve_Example_1_Request"></a>
 
-```
+```json
 POST /knowledgebases/KB12345678/retrieve HTTP/1.1
 Content-type: application/json
 
@@ -304,7 +304,7 @@ To include filters in a knowledge base query, at least one of the data source fi
 #### Sample Request
 <a name="API_agent-runtime_Retrieve_Example_2_Request"></a>
 
-```
+```json
 POST /knowledgebases/KB12345678/retrieve HTTP/1.1
 Content-type: application/json
 

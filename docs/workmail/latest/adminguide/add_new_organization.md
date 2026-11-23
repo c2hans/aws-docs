@@ -98,7 +98,7 @@ When using AWS Managed Active Directory with your Amazon WorkMail organization, 
 
 1. Ensure your IAM principal has the required permissions by attaching a policy with these actions:
 
-   ```
+   ```json
    ds:AccessDSData
    ds:ResetUserPassword
    ds-data:CreateGroup

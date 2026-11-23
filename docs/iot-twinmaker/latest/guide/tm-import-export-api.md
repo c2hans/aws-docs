@@ -36,7 +36,7 @@ The policy statements for AWS IoT TwinMaker, AWS IoT SiteWise and Amazon S3 are 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [{
@@ -82,7 +82,7 @@ The policy statements for AWS IoT TwinMaker, AWS IoT SiteWise and Amazon S3 are 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [{
@@ -133,7 +133,7 @@ The policy statements for AWS IoT TwinMaker, AWS IoT SiteWise and Amazon S3 are 
 ------
 + **Amazon S3 policy**:
 
-  ```
+  ```json
   {
       "Effect": "Allow",
       "Action": [
@@ -153,7 +153,7 @@ The policy statements for AWS IoT TwinMaker, AWS IoT SiteWise and Amazon S3 are 
 
   **Amazon S3 single bucket scoped policy**
 
-  ```
+  ```json
   {
       "Effect": "Allow",
       "Action": [
@@ -180,7 +180,7 @@ To control what kind of jobs a user can access, add the following IAM policy to 
 **Note**
 This policy only allows access to AWS IoT TwinMaker import and export jobs that transfer resources to and from Amazon S3.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -217,7 +217,7 @@ This section covers how to perform bulk import and export operations.
 
    The following is an example of a request body:
 
-   ```
+   ```json
    {
        "metadataTransferJobId": "{{your-transfer-job-Id}}",
        "sources": [{
@@ -239,7 +239,7 @@ This section covers how to perform bulk import and export operations.
 
 1. Run the following CLI command to invoke `CreateMetadataTransferJob` (replace the input-json file name with the name you gave your request body):
 
-   ```
+   ```terminal
    aws iottwinmaker create-metadata-transfer-job --region us-east-1 \
    --cli-input-json file://createMetadataTransferJobImport.json
    ```
@@ -250,7 +250,7 @@ This section covers how to perform bulk import and export operations.
 
 1. Create a JSON request body with the appropriate filters to choose the resources you want to export. For this example we use:
 
-   ```
+   ```json
    {
        "metadataTransferJobId": "{{your-transfer-job-Id}}",
        "sources": [{
@@ -289,7 +289,7 @@ This section covers how to perform bulk import and export operations.
 
 1. Run the following CLI command to invoke `CreateMetadataTransferJob` (replace the input-json file name with the name you gave your request body):
 
-   ```
+   ```ternimal
    aws iottwinmaker create-metadata-transfer-job --region us-east-1 \
    --cli-input-json file://createMetadataTransferJobExport.json
    ```
@@ -302,7 +302,7 @@ To check or update the status of a transfer job, use the following commands:
 
   Or, you can call GetMetadataTransferJob on an existing transfer job with the following CLI command:
 
-  ```
+  ```terminal
   aws iottwinmaker get-metadata-transfer-job --job-id {{ExistingJobId}}
   ```
 
@@ -311,7 +311,7 @@ To check or update the status of a transfer job, use the following commands:
 
   Here is a CLI example that calls ListMetadataTransferJobs with AWS IoT TwinMaker as the destinationType and `s3` as the sourceType:
 
-  ```
+  ```terminal
   aws iottwinmaker list-metadata-transfer-jobs --destination-type iottwinmaker --source-type s3
   ```
 **Note**
@@ -326,7 +326,7 @@ If you encounter any errors during the transfer job, see [Error handling](#tm-im
 
 After you create and run a transfer job, you can call GetMetadataTransferJob to diagnose any errors that occurred:
 
-```
+```terminal
 aws iottwinmaker get-metadata-transfer-job \
 --metadata-transfer-job-id {{your_metadata_transfer_job_id}} \
 --region us-east-1
@@ -350,7 +350,7 @@ You can import many components, componentTypes, or entities with a single bulk i
 
 Use the following template format for a job that imports entities:
 
-```
+```json
 {
   "entities": [
     {
@@ -402,7 +402,7 @@ Use the following template format for a job that imports entities:
 
 Use the following template format for a job that imports componentTypes:
 
-```
+```json
 {
   "componentTypes": [
     {
@@ -463,7 +463,7 @@ Use the following template format for a job that imports componentTypes:
 
 Use the following template format for a job that imports components:
 
-```
+```json
 {
   "entityComponents": [
     {
@@ -511,7 +511,7 @@ Use the following commands to manage your metadata transfers:
 
   CLI command example:
 
-  ```
+  ```terminal
   aws iottwinmaker create-metadata-transfer-job --region us-east-1 \
   --cli-input-json file://{{yourTransferFileName}}.json
   ```
@@ -519,7 +519,7 @@ Use the following commands to manage your metadata transfers:
 
   CLI command example:
 
-  ```
+  ```terminal
   aws iottwinmaker cancel-metadata-transfer-job
   --region us-east-1 \
   --metadata-transfer-job-id {{job-to-cancel-id}}
@@ -530,7 +530,7 @@ Use the following commands to manage your metadata transfers:
 
   CLI command example:
 
-  ```
+  ```terminal
   aws iottwinmaker get-metadata-transfer-job \
   --metadata-transfer-job-id {{your_metadata_transfer_job_id}} \
   --region us-east-1 \
@@ -541,7 +541,7 @@ Use the following commands to manage your metadata transfers:
 
   1. Create a CLI input JSON file to specify the filters you want to use:
 
-     ```
+     ```json
      {
          "sourceType": "s3",
          "destinationType": "iottwinmaker",
@@ -558,7 +558,7 @@ Use the following commands to manage your metadata transfers:
 
   1. Use the JSON file as an argument to the following CLI command:
 
-     ```
+     ```terminal
      aws iottwinmaker list-metadata-transfer-job --region us-east-1 \
      --cli-input-json file://ListMetadataTransferJobsExample.json
      ```

@@ -16,7 +16,7 @@ The following code examples show how to query a table with nested attributes.
 **SDK for Java 2.x**
 Query a DynamoDB table with nested attributes using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -96,7 +96,7 @@ import java.util.Map;
 ```
 Demonstrates how to query a DynamoDB table with nested attributes.
 
-```
+```java
     public static void main(String[] args) {
         final String usage =
             """
@@ -183,7 +183,7 @@ Demonstrates how to query a DynamoDB table with nested attributes.
 **SDK for JavaScript (v3)**
 Query a DynamoDB table with nested attributes using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -233,7 +233,7 @@ async function queryWithNestedAttribute(
 **SDK for Python (Boto3)**
 Query a DynamoDB table with nested attributes using AWS SDK for Python (Boto3).
 
-```
+```python
 from typing import Any, Dict, List
 
 import boto3

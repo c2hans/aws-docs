@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-graphqlapi-function-runtime-syntax-yaml"></a>
 
-```
+```yaml
 Name: {{String}}
 Version: {{String}}
 ```

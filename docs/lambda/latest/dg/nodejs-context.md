@@ -38,7 +38,7 @@ The following example function logs context information and returns the location
 
 **Example index.js file**
 
-```
+```javascript
 exports.handler = async function(event, context) {
   console.log('Remaining time: ', context.getRemainingTimeInMillis())
   console.log('Function name: ', context.functionName)

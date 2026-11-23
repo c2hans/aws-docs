@@ -214,7 +214,7 @@ Don't specify a path in the SVM's root volume. For more information, see [Managi
 
    You get a response that shows the location that you just created.
 
-   ```
+   ```json
    {
        "LocationArn": "arn:aws:datasync:us-west-2:123456789012:location/loc-abcdef01234567890"
    }

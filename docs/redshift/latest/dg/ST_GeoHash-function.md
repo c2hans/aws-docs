@@ -44,7 +44,7 @@ If the input geometry is not a point, the function returns an error.
 
 The following SQL returns the geohash representation of the input point.
 
-```
+```sql
 SELECT ST_GeoHash(ST_GeomFromText('POINT(45 -45)'), 25) AS geohash;
 ```
 
@@ -56,7 +56,7 @@ SELECT ST_GeoHash(ST_GeomFromText('POINT(45 -45)'), 25) AS geohash;
 
 The following SQL returns null because the input point is empty.
 
-```
+```sql
 SELECT ST_GeoHash(ST_GeomFromText('POINT EMPTY'), 10) IS NULL AS result;
 ```
 

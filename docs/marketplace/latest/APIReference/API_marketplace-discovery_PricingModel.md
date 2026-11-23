@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # PricingModel
 
-A pricing model that determines how buyers are charged for a listing, such as usage-based, contract, BYOL, or free.
+A pricing model that determines how you are charged for a listing, such as usage-based, contract, Bring Your Own License (BYOL), or free.
 
 ## Contents
 <a name="API_marketplace-discovery_PricingModel_Contents"></a>
@@ -20,7 +20,7 @@ Pattern: `.*\S.*`
 Required: Yes
 
  ** pricingModelType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_PricingModel-pricingModelType"></a>
-The machine-readable type of the pricing model.
+The machine-readable type of the pricing model. See `PricingModelType` for the values.
 Type: String
 Valid Values: `USAGE | CONTRACT | BYOL | FREE`
 Required: Yes

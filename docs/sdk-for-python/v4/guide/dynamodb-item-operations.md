@@ -21,13 +21,13 @@ Pass a complete map of typed attributes to `put_item`. A put replaces an existin
 
  **Imports**
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient
 ```
 
  **Code**
 
-```
+```python
 def put_item(client: DynamoDBClient, table_name: str) -> None:
     """Put a book item, replacing any item with the same primary key."""
     client.put_item(
@@ -50,14 +50,14 @@ Supply every primary-key attribute to `get_item`. This example requests a strong
 
  **Imports**
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient
 from aws_sdk_dynamodb.models import AttributeValue, AttributeValueS
 ```
 
  **Code**
 
-```
+```python
 def get_item(
     client: DynamoDBClient, table_name: str
 ) -> dict[str, AttributeValue] | None:
@@ -75,7 +75,7 @@ def get_item(
 
 Each returned attribute is a typed `AttributeValue` union. Narrow it to its concrete model before you read its `value`.
 
-```
+```python
 item = get_item(client, table_name)
 if item:
     title = item.get("title")
@@ -92,14 +92,14 @@ Use an update expression to change selected attributes. The `#copies` placeholde
 
  **Imports**
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient
 from aws_sdk_dynamodb.models import AttributeValue
 ```
 
  **Code**
 
-```
+```python
 def update_item(
     client: DynamoDBClient, table_name: str
 ) -> dict[str, AttributeValue]:
@@ -127,13 +127,13 @@ Delete one item by supplying its complete primary key.
 
  **Imports**
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient
 ```
 
  **Code**
 
-```
+```python
 def delete_item(client: DynamoDBClient, table_name: str) -> None:
     """Delete a book by its complete composite primary key."""
     client.delete_item(
@@ -154,14 +154,14 @@ DynamoDB evaluates a condition expression before it changes the item. This condi
 
  **Imports**
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient
 from aws_sdk_dynamodb.models import ConditionalCheckFailedException
 ```
 
  **Code**
 
-```
+```python
 def put_item_conditionally(
     client: DynamoDBClient, table_name: str
 ) -> bool:

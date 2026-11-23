@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "accountId": "{{Databricks account UUID}}",
   "servicePrincipalId": "{{Numeric service principal ID}}",
@@ -39,7 +39,7 @@ The Databricks ID of the current OAuth secret. Secrets Manager uses it to read t
 
 The following are the metadata fields for Databricks Service Principal OAuth Client Secret:
 
-```
+```json
 {
   "adminSecretArn": "arn:aws:secretsmanager:us-east-1:111122223333:secret:{{DatabricksAdminServicePrincipal}}",
   "secretLifetimeDays": "{{730}}"

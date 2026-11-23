@@ -71,7 +71,7 @@ Before you begin, identify which subnets are public (with Internet Gateway acces
 
 For public subnets:
 
-```
+```bash
 aws ec2 create-tags \
     --resources subnet-ID \
     --tags Key=kubernetes.io/role/elb,Value=1
@@ -79,7 +79,7 @@ aws ec2 create-tags \
 
 For private subnets:
 
-```
+```bash
 aws ec2 create-tags \
     --resources subnet-ID \
     --tags Key=kubernetes.io/role/internal-elb,Value=1

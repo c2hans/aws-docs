@@ -39,7 +39,7 @@ Use the following role policy when creating the IAM role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -72,7 +72,7 @@ Use the following role policy when creating the IAM role.
 
 Create a Node.js module with the file name `cwl_describesubscriptionfilters.js`. Be sure to configure the SDK as previously shown. To access CloudWatch Logs, create an `AWS.CloudWatchLogs` service object. Create a JSON object containing the parameters needed to describe your existing filters, including the name of the log group and the maximum number of filters you want described. Call the `describeSubscriptionFilters` method.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -97,7 +97,7 @@ cwl.describeSubscriptionFilters(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node cwl_describesubscriptionfilters.js
 ```
 
@@ -108,7 +108,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `cwl_putsubscriptionfilter.js`. Be sure to configure the SDK as previously shown. To access CloudWatch Logs, create an `AWS.CloudWatchLogs` service object. Create a JSON object containing the parameters needed to create a filter, including the ARN of the destination Lambda function, the name of the filter, the string pattern for filtering, and the name of the log group. Call the `putSubscriptionFilters` method.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -135,7 +135,7 @@ cwl.putSubscriptionFilter(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node cwl_putsubscriptionfilter.js
 ```
 
@@ -146,7 +146,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `cwl_deletesubscriptionfilters.js`. Be sure to configure the SDK as previously shown. To access CloudWatch Logs, create an `AWS.CloudWatchLogs` service object. Create a JSON object containing the parameters needed to delete a filter, including the names of the filter and the log group. Call the `deleteSubscriptionFilters` method.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -171,7 +171,7 @@ cwl.deleteSubscriptionFilter(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node cwl_deletesubscriptionfilter.js
 ```
 

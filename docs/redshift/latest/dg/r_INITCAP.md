@@ -44,7 +44,7 @@ The following examples use data from the CATEGORY and USERS tables in the TICKIT
 
 To capitalize the initials of each word in the CATDESC column, use the following example.
 
-```
+```sql
 SELECT catid, catdesc, INITCAP(catdesc)
 FROM category
 ORDER BY 1, 2, 3;
@@ -68,7 +68,7 @@ ORDER BY 1, 2, 3;
 
 To show that the INITCAP function does not preserve uppercase characters when they do not begin words, use the following example. For example, the string `MLB` becomes `Mlb`.
 
-```
+```sql
 SELECT INITCAP(catname)
 FROM category
 ORDER BY catname;
@@ -92,7 +92,7 @@ ORDER BY catname;
 
 To show that non-alphanumeric characters other than spaces function as word separators, use the following example. Several letters in each string will be capitalized.
 
-```
+```sql
 SELECT email, INITCAP(email)
 FROM users
 ORDER BY userid DESC LIMIT 5;

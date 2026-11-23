@@ -24,7 +24,7 @@ The Converse API provides a unified interface for interacting with Amazon Nova m
 
 A basic Converse API request includes the model ID and a list of messages:
 
-```
+```Python
 import boto3
 
 bedrock = boto3.client('bedrock-runtime', region_name='us-east-1')
@@ -51,7 +51,7 @@ if text is not None:
 
 System prompts provide context and instructions to the model:
 
-```
+```Python
 import boto3
 
 bedrock = boto3.client('bedrock-runtime', region_name='us-east-1')
@@ -87,7 +87,7 @@ Control the model's output using inference parameters. The following are availab
 
  Example:
 
-```
+```Python
 import boto3
 bedrock = boto3.client('bedrock-runtime', region_name='us-east-1')
 
@@ -134,7 +134,7 @@ The following examples show different reasoning effort levels:
 ------
 #### [ Low effort ]
 
-```
+```Python
 import boto3
 
 bedrock = boto3.client('bedrock-runtime', region_name='us-east-1')
@@ -173,7 +173,7 @@ Temperature, topP and topK cannot be used with `maxReasoningEffort` set to `high
 
 The response includes reasoning content:
 
-```
+```JSON
 {
     "output": {
         "message": {

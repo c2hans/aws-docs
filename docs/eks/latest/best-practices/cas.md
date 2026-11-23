@@ -51,7 +51,7 @@ When the [Auto Discovery](https://github.com/kubernetes/autoscaler/blob/master/c
 
 This will prevents a Cluster Autoscaler running in one cluster from modifying nodegroups in a different cluster even if the `--node-group-auto-discovery` argument wasn’t scoped down to the nodegroups of the cluster using tags (for example `k8s.io/cluster-autoscaler/<cluster-name>`).
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

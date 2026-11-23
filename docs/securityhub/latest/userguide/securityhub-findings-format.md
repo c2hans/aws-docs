@@ -10,7 +10,7 @@ This page provides a complete outline of the JSON for a finding in the AWS Secur
 
 For descriptions of individual ASFF attributes, see [Required top-level ASFF attributes](asff-required-attributes.md) and [Optional top-level ASFF attributes](asff-top-level-attributes.md).
 
-```
+```JSON
 "Findings": [
     {
     	"Action": {

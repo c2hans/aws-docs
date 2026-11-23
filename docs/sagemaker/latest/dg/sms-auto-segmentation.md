@@ -33,7 +33,7 @@ If you are creating a custom instance segmentation labeling job in the SageMaker
 
 The following is an example of a custom task template for a custom instance segmentation labeling job, which includes the `<crowd-instance-segmentation/>` tag and the `grant_read_access` Liquid filter.
 
-```
+```html
 <script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
 <crowd-form>
   <crowd-instance-segmentation

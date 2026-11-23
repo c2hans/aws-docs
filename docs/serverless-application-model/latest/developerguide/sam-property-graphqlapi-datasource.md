@@ -18,7 +18,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-graphqlapi-datasource-syntax-yaml"></a>
 
-```
+```yaml
 DynamoDb: {{DynamoDb}}
 Lambda: {{Lambda}}
 ```

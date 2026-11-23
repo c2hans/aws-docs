@@ -61,7 +61,7 @@ cat AmazonRootCA1.pem \
 
  Configure your driver to use the combined certificate file `keyspaces-bundle.pem` for TLS and authenticate using service-specific credentials. For example:
 
-```
+```nodejs
 const cassandra = require('cassandra-driver');
 const fs = require('fs');
 const auth = new cassandra.auth.PlainTextAuthProvider('{{ServiceUserName}}', '{{ServicePassword}}');
@@ -108,7 +108,7 @@ $ npm install aws-sigv4-auth-cassandra-plugin --save
 
 This code example shows how to set a Region-specific instance of `SigV4AuthProvider` as the authentication provider.
 
-```
+```nodejs
 const cassandra = require('cassandra-driver');
 const fs = require('fs');
 const sigV4 = require('aws-sigv4-auth-cassandra-plugin');

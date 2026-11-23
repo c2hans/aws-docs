@@ -17,7 +17,7 @@ Use OpenJD environments to provide new commands in an environment. First you cre
 
 1.  Use `git` to clone the [Deadline Cloud samples GitHub repository](https://github.com/aws-deadline/deadline-cloud-samples) on the GitHub website.
 
-   ```
+   ```bash
    git clone https://github.com/aws-deadline/deadline-cloud-samples.git
     Cloning into 'deadline-cloud-samples'...
     ...
@@ -29,7 +29,7 @@ Use OpenJD environments to provide new commands in an environment. First you cre
 
 1.  Use the Deadline Cloud CLI to submit the `job_env_with_new_command` sample.
 
-   ```
+   ```bash
     $ deadline bundle submit job_env_with_new_command
     Submitting to Queue: MySampleQueue
     ...
@@ -73,7 +73,7 @@ Open the file [job\_env\_with\_new\_command/template.yaml](https://github.com/aw
 
     The following lines from the job template specified this action.
 
-   ```
+   ```yaml
     jobEnvironments:
     - name: RandomSleepCommand
       description: Adds a command 'random-sleep' to the environment.
@@ -139,7 +139,7 @@ Open the file [job\_env\_with\_new\_command/template.yaml](https://github.com/aw
 
 1.  The following lines from the job template specified this action.
 
-   ```
+   ```yaml
     steps:
     - name: EnvWithCommand
       script:

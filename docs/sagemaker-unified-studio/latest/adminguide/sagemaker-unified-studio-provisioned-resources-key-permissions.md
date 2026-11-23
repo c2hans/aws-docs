@@ -11,7 +11,7 @@ You can encrypt the resources provisioned by Amazon SageMaker Unified Studio wit
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "key-policy-for-smus",

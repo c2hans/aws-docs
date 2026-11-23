@@ -17,7 +17,7 @@ To learn more about SageMaker geospatial specific IAM actions, resources, and co
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

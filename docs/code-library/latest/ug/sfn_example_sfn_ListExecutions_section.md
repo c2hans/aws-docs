@@ -14,7 +14,7 @@ The following code examples show how to use `ListExecutions`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Retrieve information about executions of a Step Functions
     /// state machine.
@@ -49,7 +49,7 @@ The following code examples show how to use `ListExecutions`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static void getExeHistory(SfnClient sfnClient, String exeARN) {
         try {
             GetExecutionHistoryRequest historyRequest = GetExecutionHistoryRequest.builder()
@@ -77,7 +77,7 @@ The following code examples show how to use `ListExecutions`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun getExeHistory(exeARN: String?) {
     val historyRequest =
         GetExecutionHistoryRequest {

@@ -14,7 +14,7 @@ When Jamf is configured as a trust provider, the following fields are available 
 
 The following example policy permits access when the reported risk is `LOW` or `SECURE`.
 
-```
+```text
 permit(principal, action, resource)
 when { ["LOW", "SECURE"].contains(context.jamf.risk) };
 ```

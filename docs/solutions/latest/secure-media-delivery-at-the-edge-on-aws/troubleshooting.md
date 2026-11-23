@@ -13,6 +13,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
 ![Screenshot of example monitoring dashboard.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image18.png)
 
+***Example monitoring dashboard***
+
  The metrics on the dashboard indicate if specific components and processes comprising the solution operate as expected, and if there are any anomalies that must be investigated. The metrics contained in the dashboard widgets indicate:
 +  Number of viewer tokens that CloudFront Function validation logic evaluated as valid and invalid.
 +  Number of key rotation procedure implemented in a given time frame and how many of the attempts ended successfully

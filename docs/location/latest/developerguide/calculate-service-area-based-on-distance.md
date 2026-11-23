@@ -19,7 +19,7 @@ The CalculateIsolines API allows you to determine reachable service areas within
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "Origin": [
         -123.11679620827039,
@@ -40,7 +40,7 @@ The CalculateIsolines API allows you to determine reachable service areas within
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "DepartureTime": "2024-10-28T14:27:56-07:00",
     "IsolineGeometryFormat": "FlexiblePolyline",
@@ -89,7 +89,7 @@ The CalculateIsolines API allows you to determine reachable service areas within
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.eu-central-1.amazonaws.com/v2/isolines?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -113,7 +113,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes calculate-isolines --key ${YourKey} \
 --origin -123.11679620827039 49.28147612192166 \
 --departure-time "2024-10-28T21:27:56Z" \

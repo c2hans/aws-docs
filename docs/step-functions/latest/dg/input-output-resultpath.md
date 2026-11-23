@@ -26,7 +26,7 @@ Use `ResultPath` to combine a task result with task input, or to select one of t
 
 If you do not specify a `ResultPath`, the default behavior is the same as `"ResultPath": "$"`. The state will replace the entire state input with the result from the task.
 
-```
+```json
 # State Input
 {
  "comment": "This is a test",
@@ -52,7 +52,7 @@ If you do not specify a `ResultPath`, the default behavior is the same as `"Resu
 
 If you set `ResultPath` to `null`, the state will pass the **original input** to the output. The state's input payload will be copied directly to the output, with no regard for the task result.
 
-```
+```json
 # State Input
 {
  "comment": "This is a test",
@@ -79,7 +79,7 @@ If you set `ResultPath` to `null`, the state will pass the **original input** to
 
 If you specify a path for ResultPath, the state output will combine the state input and task result:
 
-```
+```json
 # State Input
 {
  "comment": "This is a test",
@@ -104,13 +104,13 @@ If you specify a path for ResultPath, the state output will combine the state in
 
 You can also insert the result into a child node of the input. Set the `ResultPath` to the following.
 
-```
+```json
 "ResultPath": "$.strings.lambdaresult"
 ```
 
 Given the following input:
 
-```
+```json
 {
   "comment": "An input comment.",
   "strings": {
@@ -124,7 +124,7 @@ Given the following input:
 
 The task result would be inserted as a child of the `strings` node in the input.
 
-```
+```json
 {
   "comment": "An input comment.",
   "strings": {
@@ -144,7 +144,7 @@ The state output now includes the original input JSON with the result as a child
 
 If you specify an existing node for ResultPath, the task result will replace that existing node:
 
-```
+```json
 # State Input
 {
  "comment": "This is a test",
@@ -171,7 +171,7 @@ If you specify an existing node for ResultPath, the task result will replace tha
 
 In some cases, you might want to preserve the original input with the error. Use `ResultPath` in a `Catch` to include the error with the original input, instead of replacing it.
 
-```
+```json
 "Catch": [{
   "ErrorEquals": ["States.ALL"],
   "Next": "NextTask",
@@ -181,13 +181,13 @@ In some cases, you might want to preserve the original input with the error. Use
 
 If the previous `Catch` statement catches an error, it includes the result in an `error` node within the state input. For example, with the following input:
 
-```
+```json
 {"foo": "bar"}
 ```
 
 The state output when catching an error is the following.
 
-```
+```json
 {
   "foo": "bar",
   "error": {

@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { CloudFrontToApiGateway } from '@aws-solutions-constructs/aws-cloudfront-apigateway';
@@ -57,7 +57,7 @@ new CloudFrontToApiGateway(this, 'test-cloudfront-apigateway', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_cloudfront_apigateway import CloudFrontToApiGateway
 from aws_cdk import (
     aws_lambda as _lambda,
@@ -86,7 +86,7 @@ CloudFrontToApiGateway(self, 'test-cloudfront-apigateway',
                         )
 ```
 
-```
+```java
 import software.constructs.Construct;
 import java.util.List;
 

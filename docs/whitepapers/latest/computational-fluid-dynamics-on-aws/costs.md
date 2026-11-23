@@ -38,3 +38,5 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
 +  **Combined approach** — You can easily combine Spot Instances with On-Demand and RIs to further optimize workload cost with performance. For example, in the following figure, you could use Reserved Instances for your daily workloads, Spot Instances for component exploration, and On-Demand Instances for design review.
 
 ![A graph showing EC2 cost optimization for CFD cases.](https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/ec2-cost-optimization.png)
+
+*EC2 cost optimization for CFD cases *

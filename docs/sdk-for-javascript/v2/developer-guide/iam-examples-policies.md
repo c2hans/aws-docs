@@ -39,7 +39,7 @@ To set up and run this example, you must first complete these tasks:
 
 Create a Node.js module with the file name `iam_createpolicy.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create two JSON objects, one containing the policy document you want to create and the other containing the parameters needed to create the policy, which includes the policy JSON and the name you want to give the policy. Be sure to stringify the policy JSON object in the parameters. Call the `createPolicy` method of the `AWS.IAM` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -86,7 +86,7 @@ iam.createPolicy(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node iam_createpolicy.js
 ```
 
@@ -97,7 +97,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `iam_getpolicy.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create a JSON object containing the parameters needed retrieve a policy, which is the ARN of the policy you want to get. Call the `getPolicy` method of the `AWS.IAM` service object. Write the policy description to the console.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -121,7 +121,7 @@ iam.getPolicy(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node iam_getpolicy.js
 ```
 
@@ -134,7 +134,7 @@ Create a Node.js module with the file name `iam_attachrolepolicy.js`. Be sure to
 
 Check the array members to see if the policy you want to attach to the role is already attached. If the policy is not attached, call the `attachRolePolicy` method to attach it.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -188,7 +188,7 @@ Create a Node.js module with the file name `iam_detachrolepolicy.js`. Be sure to
 
 Check the array members to see if the policy you want to detach from the role is attached. If the policy is attached, call the `detachRolePolicy` method to detach it.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region

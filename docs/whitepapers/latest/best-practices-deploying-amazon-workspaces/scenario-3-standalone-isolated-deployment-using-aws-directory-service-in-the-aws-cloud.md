@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 
 ![Sample architecture showing AD DS deployed in the AWS Cloud in a standalone isolated environment.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/cloud-only-ad-microsoft.png)
 
+*Figure 8: Cloud only: AWS Directory Services (Microsoft AD)*
+
  As in scenario 2, the AD DS (Microsoft AD) is deployed into dedicated subnets that span two AZs, making AD DS highly available in the AWS Cloud. In addition to Microsoft AD, AD Connector (in all three scenarios) is deployed for WorkSpaces authentication or MFA. This ensures separation of roles or functions within the Amazon VPC, which is a standard best practice. For more information, refer to the [Design Considerations](using-multi-region-aws-managed-active-directory-with-amazon-workspaces.md) section of this document.
 
  Scenario 3 is a standard, all-in configuration that works well for customers who want to have AWS manage the deployment, patching, high availability, and monitoring of the AWS Directory Service. The scenario also works well for proof of concepts, lab, and production environments because of its isolation mode.

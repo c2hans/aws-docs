@@ -28,7 +28,7 @@ The following code example shows how to use `CopyImageSet`.
 
 **SDK for Java 2.x**
 
-```
+```java
     /**
      * Copy an AWS HealthImaging image set.
      *
@@ -93,7 +93,7 @@ The following code example shows how to use `CopyImageSet`.
 ```
 Utility function to create copiable attributes.
 
-```
+```java
     /**
      * Create a JSON string of copiable image instances.
      *
@@ -145,7 +145,7 @@ The following code example shows how to use `CreateDatastore`.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static String createMedicalImageDatastore(MedicalImagingClient medicalImagingClient,
             String datastoreName) {
         try {
@@ -172,7 +172,7 @@ The following code example shows how to use `DeleteDatastore`.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static void deleteMedicalImagingDatastore(MedicalImagingClient medicalImagingClient,
             String datastoreID) {
         try {
@@ -196,7 +196,7 @@ The following code example shows how to use `DeleteImageSet`.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static void deleteMedicalImageSet(MedicalImagingClient medicalImagingClient,
             String datastoreId,
             String imagesetId) {
@@ -225,7 +225,7 @@ The following code example shows how to use `GetDICOMImportJob`.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static DICOMImportJobProperties getDicomImportJob(MedicalImagingClient medicalImagingClient,
             String datastoreId,
             String jobId) {
@@ -255,7 +255,7 @@ The following code example shows how to use `GetDatastore`.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static DatastoreProperties getMedicalImageDatastore(MedicalImagingClient medicalImagingClient,
             String datastoreID) {
         try {
@@ -282,7 +282,7 @@ The following code example shows how to use `GetImageFrame`.
 
 **SDK for Java 2.x**
 
-```
+```java
         public static void getMedicalImageSetFrame(MedicalImagingClient medicalImagingClient,
                         String destinationPath,
                         String datastoreId,
@@ -317,7 +317,7 @@ The following code example shows how to use `GetImageSet`.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static GetImageSetResponse getMedicalImageSet(MedicalImagingClient medicalImagingClient,
             String datastoreId,
             String imagesetId,
@@ -350,7 +350,7 @@ The following code example shows how to use `GetImageSetMetadata`.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static void getMedicalImageSetMetadata(MedicalImagingClient medicalImagingClient,
             String destinationPath,
             String datastoreId,
@@ -386,7 +386,7 @@ The following code example shows how to use `ListDICOMImportJobs`.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static List<DICOMImportJobSummary> listDicomImportJobs(MedicalImagingClient medicalImagingClient,
             String datastoreId) {
 
@@ -414,7 +414,7 @@ The following code example shows how to use `ListDatastores`.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static List<DatastoreSummary> listMedicalImagingDatastores(MedicalImagingClient medicalImagingClient) {
         try {
             ListDatastoresRequest datastoreRequest = ListDatastoresRequest.builder()
@@ -443,7 +443,7 @@ The following code example shows how to use `ListImageSetVersions`.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static List<ImageSetProperties> listMedicalImageSetVersions(MedicalImagingClient medicalImagingClient,
             String datastoreId,
             String imagesetId) {
@@ -477,7 +477,7 @@ The following code example shows how to use `ListTagsForResource`.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static ListTagsForResourceResponse listMedicalImagingResourceTags(MedicalImagingClient medicalImagingClient,
             String resourceArn) {
         try {
@@ -505,7 +505,7 @@ The following code example shows how to use `SearchImageSets`.
 **SDK for Java 2.x**
 The utility function for searching image sets.
 
-```
+```java
     public static List<ImageSetsMetadataSummary> searchMedicalImagingImageSets(
             MedicalImagingClient medicalImagingClient,
             String datastoreId, SearchCriteria searchCriteria) {
@@ -532,7 +532,7 @@ The utility function for searching image sets.
 ```
 Use case \#1: EQUAL operator.
 
-```
+```java
         List<SearchFilter> searchFilters = Collections.singletonList(SearchFilter.builder()
                 .operator(Operator.EQUAL)
                 .values(SearchByAttributeValue.builder()
@@ -555,7 +555,7 @@ Use case \#1: EQUAL operator.
 ```
 Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 
-```
+```java
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
         searchFilters = Collections.singletonList(SearchFilter.builder()
                 .operator(Operator.BETWEEN)
@@ -590,7 +590,7 @@ Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 ```
 Use case \#3: BETWEEN operator using createdAt. Time studies were previously persisted.
 
-```
+```java
         searchFilters = Collections.singletonList(SearchFilter.builder()
                 .operator(Operator.BETWEEN)
                 .values(SearchByAttributeValue.builder()
@@ -614,7 +614,7 @@ Use case \#3: BETWEEN operator using createdAt. Time studies were previously per
 ```
 Use case \#4: EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt and sort response in ASC order on updatedAt field.
 
-```
+```java
         Instant startDate = Instant.parse("1985-04-12T23:20:50.52Z");
         Instant endDate = Instant.now();
 
@@ -658,7 +658,7 @@ The following code example shows how to use `StartDICOMImportJob`.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static String startDicomImportJob(MedicalImagingClient medicalImagingClient,
             String jobName,
             String datastoreId,
@@ -694,7 +694,7 @@ The following code example shows how to use `TagResource`.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static void tagMedicalImagingResource(MedicalImagingClient medicalImagingClient,
             String resourceArn,
             Map<String, String> tags) {
@@ -723,7 +723,7 @@ The following code example shows how to use `UntagResource`.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static void untagMedicalImagingResource(MedicalImagingClient medicalImagingClient,
             String resourceArn,
             Collection<String> tagKeys) {
@@ -752,7 +752,7 @@ The following code example shows how to use `UpdateImageSetMetadata`.
 
 **SDK for Java 2.x**
 
-```
+```java
     /**
      * Update the metadata of an AWS HealthImaging image set.
      *
@@ -791,7 +791,7 @@ The following code example shows how to use `UpdateImageSetMetadata`.
 ```
 Use case \#1: Insert or update an attribute.
 
-```
+```java
                 final String insertAttributes = """
                         {
                           "SchemaVersion": 1.1,
@@ -815,7 +815,7 @@ Use case \#1: Insert or update an attribute.
 ```
 Use case \#2: Remove an attribute.
 
-```
+```java
                 final String removeAttributes = """
                         {
                           "SchemaVersion": 1.1,
@@ -839,7 +839,7 @@ Use case \#2: Remove an attribute.
 ```
 Use case \#3: Remove an instance.
 
-```
+```java
                 final String removeInstance = """
                         {
                           "SchemaVersion": 1.1,
@@ -867,7 +867,7 @@ Use case \#3: Remove an instance.
 ```
 Use case \#4: Revert to a previous version.
 
-```
+```java
                 // In this case, revert to previous version.
                 String revertVersionId = Integer.toString(Integer.parseInt(versionid) - 1);
                 MetadataUpdates metadataRemoveUpdates = MetadataUpdates.builder()
@@ -890,7 +890,7 @@ The following code example shows how to tag a HealthImaging data store.
 **SDK for Java 2.x**
 To tag a data store.
 
-```
+```java
                 final String datastoreArn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012";
 
                 TagResource.tagMedicalImagingResource(medicalImagingClient, datastoreArn,
@@ -898,7 +898,7 @@ To tag a data store.
 ```
 The utility function for tagging a resource.
 
-```
+```java
     public static void tagMedicalImagingResource(MedicalImagingClient medicalImagingClient,
             String resourceArn,
             Map<String, String> tags) {
@@ -919,7 +919,7 @@ The utility function for tagging a resource.
 ```
 To list tags for a data store.
 
-```
+```java
                 final String datastoreArn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012";
 
                 ListTagsForResourceResponse result = ListTagsForResource.listMedicalImagingResourceTags(
@@ -931,7 +931,7 @@ To list tags for a data store.
 ```
 The utility function for listing a resource's tags.
 
-```
+```java
     public static ListTagsForResourceResponse listMedicalImagingResourceTags(MedicalImagingClient medicalImagingClient,
             String resourceArn) {
         try {
@@ -950,7 +950,7 @@ The utility function for listing a resource's tags.
 ```
 To untag a data store.
 
-```
+```java
                 final String datastoreArn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012";
 
                 UntagResource.untagMedicalImagingResource(medicalImagingClient, datastoreArn,
@@ -958,7 +958,7 @@ To untag a data store.
 ```
 The utility function for untagging a resource.
 
-```
+```java
     public static void untagMedicalImagingResource(MedicalImagingClient medicalImagingClient,
             String resourceArn,
             Collection<String> tagKeys) {
@@ -991,7 +991,7 @@ The following code example shows how to tag a HealthImaging image set.
 **SDK for Java 2.x**
 To tag an image set.
 
-```
+```java
                 final String imageSetArn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/12345678901234567890123456789012";
 
                 TagResource.tagMedicalImagingResource(medicalImagingClient, imageSetArn,
@@ -999,7 +999,7 @@ To tag an image set.
 ```
 The utility function for tagging a resource.
 
-```
+```java
     public static void tagMedicalImagingResource(MedicalImagingClient medicalImagingClient,
             String resourceArn,
             Map<String, String> tags) {
@@ -1020,7 +1020,7 @@ The utility function for tagging a resource.
 ```
 To list tags for an image set.
 
-```
+```java
                 final String imageSetArn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/12345678901234567890123456789012";
 
                 ListTagsForResourceResponse result = ListTagsForResource.listMedicalImagingResourceTags(
@@ -1032,7 +1032,7 @@ To list tags for an image set.
 ```
 The utility function for listing a resource's tags.
 
-```
+```java
     public static ListTagsForResourceResponse listMedicalImagingResourceTags(MedicalImagingClient medicalImagingClient,
             String resourceArn) {
         try {
@@ -1051,7 +1051,7 @@ The utility function for listing a resource's tags.
 ```
 To untag an image set.
 
-```
+```java
                 final String imageSetArn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/12345678901234567890123456789012";
 
                 UntagResource.untagMedicalImagingResource(medicalImagingClient, imageSetArn,
@@ -1059,7 +1059,7 @@ To untag an image set.
 ```
 The utility function for untagging a resource.
 
-```
+```java
     public static void untagMedicalImagingResource(MedicalImagingClient medicalImagingClient,
             String resourceArn,
             Collection<String> tagKeys) {

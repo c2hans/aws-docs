@@ -76,12 +76,12 @@ For more information about the JSON\_PARSE function, see [JSON\_PARSE function](
 
 The following example shows how to set the `json_parse_dedup_attributes` configuration option to the default behavior of returning an error for duplicate attributes.
 
-```
+```SQL
 SET json_parse_dedup_attributes=OFF;  --default behavior of returning error instead of de-duplicating attributes
 ```
 
 The following example shows how to set the `json_parse_truncate_strings` configuration option for the default behavior of returning an error for strings that are longer than this limit.
 
-```
+```SQL
 SET json_parse_truncate_strings=OFF;  --default behavior of returning error instead of truncating strings
 ```

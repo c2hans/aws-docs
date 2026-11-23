@@ -140,7 +140,7 @@ The /19 IP address range isn't shared with other services. It's for the exclusiv
 
 In the AWS ip-ranges.json file, you can see the same range listed twice. For example:
 
-```
+```json
 
                 { "ip_prefix": "15.193.0.0/19",
                 "region": "GLOBAL",

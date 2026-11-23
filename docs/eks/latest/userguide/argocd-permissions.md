@@ -102,7 +102,7 @@ Map AWS Identity Center users and groups to Argo CD roles when creating or updat
 
  **Example role mapping**:
 
-```
+```json
 {
   "rbacRoleMappings": {
     "ADMIN": ["AdminGroup", "alice@example.com"],
@@ -120,7 +120,7 @@ EKS Capabilities integration with AWS Identity Center supports up to 1,000 ident
 
  **Update role mappings**:
 
-```
+```bash
 aws eks update-capability \
   --region {{us-east-1}} \
   --cluster-name {{cluster}} \
@@ -184,7 +184,7 @@ Projects provide:
 
  **Example project for team isolation**:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
@@ -233,7 +233,7 @@ Keep AppProject resources in the capability’s primary Argo CD namespace. For l
 
 The following example permits resources in the primary `argocd` namespace and the additional `team-a-gitops` namespace to use the `team-a` project:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
@@ -267,7 +267,7 @@ ADMIN users have access to all Applications without needing project roles.
 
  **Example: Granting Application access to team members in an additional namespace**
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
@@ -330,7 +330,7 @@ Use Identity Center group IDs (not group names) in the `groups` field. You can a
 
  **Pattern 1: Admin team with full access**
 
-```
+```json
 {
   "rbacRoleMappings": {
     "ADMIN": ["PlatformTeam", "SRETeam"]
@@ -342,7 +342,7 @@ ADMIN users can see and manage all project-scoped resources without additional c
 
  **Pattern 2: Team leads manage projects, developers access via project roles**
 
-```
+```json
 {
   "rbacRoleMappings": {
     "ADMIN": ["PlatformTeam"],
@@ -366,7 +366,7 @@ ADMIN users can see and manage all project-scoped resources without additional c
 
 1. Team members only need VIEWER global role—project roles provide access to project resources and capabilities
 
-```
+```json
 {
   "rbacRoleMappings": {
     "ADMIN": ["PlatformTeam"],
@@ -398,7 +398,7 @@ To use AWS services directly in Application resources (without creating Reposito
 
  **ECR for Helm charts**:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -420,7 +420,7 @@ To use AWS services directly in Application resources (without creating Reposito
 
 In the following policy, replace `region`, `account-id`, and `repository-name` with your values.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -437,7 +437,7 @@ In the following policy, replace `region`, `account-id`, and `repository-name` w
 
 If you use the source hydrator to push rendered manifests to an AWS CodeCommit repository, also allow `codecommit:GitPush`. In the following policy, replace `region`, `account-id`, and `repository-name` with your values.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -457,7 +457,7 @@ For instructions on using the source hydrator, see [Push hydrated manifests with
 
  **CodeConnections (GitHub, GitLab, Bitbucket)**:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

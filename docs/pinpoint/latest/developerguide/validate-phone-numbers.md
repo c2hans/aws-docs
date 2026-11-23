@@ -52,7 +52,7 @@ The data that's provided by the phone number validation service is based on info
 **Valid mobile phone numbers**
 When you send a request to the phone number validation service, and the phone number is a valid mobile phone number, it returns information that resembles the following example:
 
-```
+```json
 {
     "NumberValidateResponse": {
         "Carrier": "ExampleCorp Mobile",
@@ -74,7 +74,7 @@ When you send a request to the phone number validation service, and the phone nu
 **Valid landline phone numbers**
 If your request contains a valid landline phone number, the phone number validation service returns information that resembles the following example:
 
-```
+```json
 {
     "CountryCodeIso2": "US",
     "CountryCodeNumeric": "1",
@@ -94,7 +94,7 @@ If your request contains a valid landline phone number, the phone number validat
 **Valid VoIP phone numbers**
 If your request contains a valid Voice over Internet Protocol (VoIP) phone number, the phone number validation service returns information that resembles the following example:
 
-```
+```json
 {
     "NumberValidateResponse": {
         "Carrier": "ExampleCorp",
@@ -114,7 +114,7 @@ If your request contains a valid Voice over Internet Protocol (VoIP) phone numbe
 **Invalid phone numbers**
 If your request contains an invalid phone number, the phone number validation service returns information that resembles the following example:
 
-```
+```json
 {
     "NumberValidateResponse": {
         "CleansedPhoneNumberE164": "+44163296076",
@@ -140,7 +140,7 @@ Occasionally, the response from the phone number validation service includes a `
 
 The following example shows the response that the phone number validation services provides when your request includes a fictitious North American phone number:
 
-```
+```json
 {
     "NumberValidateResponse": {
         "Carrier": "Multiple OCN Listing",
@@ -160,7 +160,7 @@ The following example shows the response that the phone number validation servic
 **Prepaid phone numbers**
 If your request contains a valid prepaid phone number, the phone number validation service returns information that resembles the following example:
 
-```
+```json
 {
     "NumberValidateResponse": {
         "Carrier": "ExampleCorp",

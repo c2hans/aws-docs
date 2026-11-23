@@ -38,7 +38,7 @@ The AWS CLI does not provide a way to create a NAT instance automatically and co
 After your VPC is configured, you can launch Amazon EMR clusters in it by using the `create-cluster` subcommand with the `--ec2-attributes` parameter. Use the `--ec2-attributes` parameter to specify the VPC subnet for your cluster.
 + To create a cluster in a specific subnet, type the following command, replace {{myKey}} with the name of your Amazon EC2 key pair, and replace {{77XXXX03}} with your subnet ID.
 
-  ```
+  ```bash
   aws emr create-cluster --name {{"Test cluster"}} --release-label {{emr-7.14.0}} --applications Name={{Hadoop}} Name={{Hive}} Name={{Pig}} --use-default-roles --ec2-attributes KeyName={{myKey}},SubnetId=subnet-{{77XXXX03}} --instance-type {{m5.xlarge}} --instance-count {{3}}
   ```
 

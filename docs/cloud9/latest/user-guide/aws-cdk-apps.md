@@ -33,7 +33,7 @@ You can run the commands that are provided in the tutorial, such as **`mkdir`** 
 
 1. In the AWS navigation pane, expand the **CDK ** heading. Your CDK applications and their associated resources are now displayed in the CDK Explorer tree view. You can also run the following commands in a terminal within AWS Cloud9 to confirm that the CDK feature is working:
 
-   ```
+   ```typescript
    mkdir mycdkapp
    cd mycdkapp
    cdk init app --language=typescript

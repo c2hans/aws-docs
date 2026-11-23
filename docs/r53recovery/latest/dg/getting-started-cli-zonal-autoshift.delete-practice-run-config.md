@@ -16,7 +16,7 @@ aws arc-zonal-shift update-zonal-autoshift-configuration \
       --zonal-autoshift-status="DISABLED"
 ```
 
-```
+```json
 {
    "resourceIdentifier": "arn:aws:elasticloadbalancing:us-west-2:111122223333:ExampleALB123456890",
    "zonalAutoshiftStatus": "DISABLED"
@@ -30,7 +30,7 @@ aws arc-zonal-shift delete-practice-run-configuration \
       --resource-identifier="arn:aws:elasticloadbalancing:{{Region}}:{{111122223333}}:{{ExampleALB123456890}}"
 ```
 
-```
+```json
 {
    "arn": "arn:aws:elasticloadbalancing:us-west-2:111122223333:ExampleALB123456890",
    "name": "TestResource",

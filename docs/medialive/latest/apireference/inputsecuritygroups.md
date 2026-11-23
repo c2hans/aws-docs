@@ -62,7 +62,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### POST schema
 <a name="inputsecuritygroups-request-body-post-example"></a>
 
-```
+```json
 {
   "tags": {
   },
@@ -80,7 +80,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### ListInputSecurityGroupsResultModel schema
 <a name="inputsecuritygroups-response-body-listinputsecuritygroupsresultmodel-example"></a>
 
-```
+```json
 {
   "inputSecurityGroups": [
     {
@@ -106,7 +106,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### CreateInputSecurityGroupResultModel schema
 <a name="inputsecuritygroups-response-body-createinputsecuritygroupresultmodel-example"></a>
 
-```
+```json
 {
   "securityGroup": {
     "arn": "string",
@@ -129,7 +129,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### InvalidRequest schema
 <a name="inputsecuritygroups-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -138,7 +138,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### AccessDenied schema
 <a name="inputsecuritygroups-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -147,7 +147,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### LimitExceeded schema
 <a name="inputsecuritygroups-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -156,7 +156,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### InternalServiceError schema
 <a name="inputsecuritygroups-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -165,7 +165,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### BadGatewayException schema
 <a name="inputsecuritygroups-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -174,7 +174,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 #### GatewayTimeoutException schema
 <a name="inputsecuritygroups-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

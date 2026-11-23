@@ -63,7 +63,7 @@ When registering instances, only use the provided download link provided for `ss
 ------
 #### [ 64-bit ]
 
-   ```
+   ```powershell
    [System.Net.ServicePointManager]::SecurityProtocol = 'TLS12'
    $code = "{{activation-code}}"
    $id = "{{activation-id}}"
@@ -143,7 +143,7 @@ You can reregister an on-premises server, edge device, or VM using the same acti
 
 1. Run the following command. Be sure to replace the placeholder values with the Activation Code and Activation ID generated when you created a hybrid activation, and with the identifier of the Region you want to download the SSM Agent from.
 
-   ```
+   ```sh
    $dir = $env:TEMP + "\ssm"
    cd $dir
    Start-Process ./ssm-setup-cli.exe -ArgumentList @(

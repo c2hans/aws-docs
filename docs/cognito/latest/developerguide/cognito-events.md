@@ -35,7 +35,7 @@ The following AWS Lambda resource-based policy grants Amazon Cognito a limited a
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "default",
@@ -85,7 +85,7 @@ Now, your Lambda function is executed each time a dataset is synchronized. The n
 
 Sync triggers follow the programming pattern that service provider interfaces use. Amazon Cognito provides input to your Lambda function in the following JSON format.
 
-```
+```json
 {
   "version": 2,
   "eventType": "SyncTrigger",
@@ -126,7 +126,7 @@ When you write functions for the Sync Trigger event, observe the following:
 
 The following sample Lambda function shows how to access, modify and remove the data.
 
-```
+```javascript
 console.log('Loading function');
 
 exports.handler = function(event, context) {

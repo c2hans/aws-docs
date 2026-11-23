@@ -122,11 +122,11 @@ HTTP Status Code: 400
 
 This example illustrates one usage of GetDomain.
 
-```
+```json
 { }
 ```
 
-```
+```json
 {
   "createdAt": "2021-03-05T21:25:30.261392Z",
   "domainArn": "arn:aws:cases:us-west-2:[account_id]:domain/[domain_id]",

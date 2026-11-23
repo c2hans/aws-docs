@@ -17,20 +17,20 @@ You can attach `AWSMarketplaceSellerFullAccess` to your users, groups, and roles
 <a name="AWSMarketplaceSellerFullAccess-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: July 02, 2019, 20:40 UTC
-+ **Edited time:** November 13, 2026, 18:47 UTC
++ **Edited time:** November 20, 2026, 05:27 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess`
 
 ## Policy version
 <a name="AWSMarketplaceSellerFullAccess-version"></a>
 
-**Policy version:** v36 (default)
+**Policy version:** v39 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
 ## JSON policy document
 <a name="AWSMarketplaceSellerFullAccess-json"></a>
 
-```
+```json
 {
   "Version" : "2012-10-17",
   "Statement" : [
@@ -49,6 +49,10 @@ The policy's default version is the version that defines the permissions for the
         "aws-marketplace:DescribeEntity",
         "aws-marketplace:GetSellerDashboard",
         "aws-marketplace:GetSellerReportingData",
+        "aws-marketplace:CreateDataSubscription",
+        "aws-marketplace:GetDataSubscription",
+        "aws-marketplace:ListDataSubscriptions",
+        "aws-marketplace:DeleteDataSubscription",
         "aws-marketplace:ListAssessments",
         "aws-marketplace:DescribeAssessment",
         "ec2:DescribeImages",
@@ -68,13 +72,13 @@ The policy's default version is the version that defines the permissions for the
       ],
       "Resource" : "*",
       "Condition" : {
-        "StringEquals" : {
-          "aws-marketplace:PartyType" : "Proposer"
-        },
         "ForAllValues:StringEquals" : {
           "aws-marketplace:AgreementType" : [
             "PurchaseAgreement"
           ]
+        },
+        "StringEquals" : {
+          "aws-marketplace:PartyType" : "Proposer"
         }
       }
     },
@@ -125,7 +129,8 @@ The policy's default version is the version that defines the permissions for the
         "arn:aws:aws-marketplace:*:*:catalog/AWSMarketplace*/*",
         "arn:aws:aws-marketplace:*:*:verification-type/*/verification-evidence/*",
         "arn:aws:aws-marketplace:*:*:tax-compliance-profile/*",
-        "arn:aws:aws-marketplace:*:*:tax-compliance-profile-change-task/*"
+        "arn:aws:aws-marketplace:*:*:tax-compliance-profile-change-task/*",
+        "arn:aws:aws-marketplace:*:*:DeploymentConfiguration:catalogs/AWSMarketplace/*"
       ]
     },
     {
@@ -201,14 +206,6 @@ The policy's default version is the version that defines the permissions for the
       ]
     },
     {
-      "Sid" : "Support",
-      "Effect" : "Allow",
-      "Action" : [
-        "support:CreateCase"
-      ],
-      "Resource" : "*"
-    },
-    {
       "Sid" : "ResourcePolicyManagement",
       "Effect" : "Allow",
       "Action" : [
@@ -243,13 +240,13 @@ The policy's default version is the version that defines the permissions for the
       ],
       "Resource" : "*",
       "Condition" : {
-        "StringEquals" : {
-          "aws-marketplace:PartyType" : "Proposer"
-        },
         "ForAllValues:StringEquals" : {
           "aws-marketplace:AgreementType" : [
             "PurchaseAgreement"
           ]
+        },
+        "StringEquals" : {
+          "aws-marketplace:PartyType" : "Proposer"
         }
       }
     },
@@ -297,13 +294,13 @@ The policy's default version is the version that defines the permissions for the
       ],
       "Resource" : "*",
       "Condition" : {
-        "StringEquals" : {
-          "aws-marketplace:PartyType" : "Proposer"
-        },
         "ForAllValues:StringEquals" : {
           "aws-marketplace:AgreementType" : [
             "PurchaseAgreement"
           ]
+        },
+        "StringEquals" : {
+          "aws-marketplace:PartyType" : "Proposer"
         }
       }
     },
@@ -366,6 +363,71 @@ The policy's default version is the version that defines the permissions for the
           ]
         }
       }
+    },
+    {
+      "Sid" : "DeploymentConfigurationManagement",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:StartDeploymentConfigurationJob",
+        "aws-marketplace:GetDeploymentConfigurationJob",
+        "aws-marketplace:ListDeploymentConfigurationJobs",
+        "aws-marketplace:GetDeploymentConfiguration"
+      ],
+      "Resource" : "arn:aws:aws-marketplace:*:*:DeploymentConfiguration:catalogs/AWSMarketplace/*"
+    },
+    {
+      "Sid" : "AWSMarketplaceAgreementContactsReadAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:GetAgreementContacts"
+      ],
+      "Resource" : "*",
+      "Condition" : {
+        "ForAllValues:StringEquals" : {
+          "aws-marketplace:AgreementType" : [
+            "PurchaseAgreement"
+          ]
+        },
+        "Null" : {
+          "aws-marketplace:AgreementType" : "false"
+        }
+      }
+    },
+    {
+      "Sid" : "MarketplaceStartAssessment",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:StartAssessment"
+      ],
+      "Resource" : "arn:aws:aws-marketplace:*:*:AWSMarketplace*/*"
+    },
+    {
+      "Sid" : "Support",
+      "Effect" : "Allow",
+      "Action" : [
+        "support:CreateCase",
+        "support:DescribeCases",
+        "support:DescribeCommunications",
+        "support:DescribeAttachment",
+        "support:AddCommunicationToCase",
+        "support:ResolveCase",
+        "support:AddAttachmentsToSet",
+        "support:SearchForCases",
+        "support:DescribeServices",
+        "support:DescribeCreateCaseOptions"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "SupportConsole",
+      "Effect" : "Allow",
+      "Action" : [
+        "support-console:GetAccountState",
+        "support-console:GetAccountGovCloudEnabled",
+        "support-console:CheckSubscription",
+        "support-console:GetBanner"
+      ],
+      "Resource" : "*"
     }
   ]
 }

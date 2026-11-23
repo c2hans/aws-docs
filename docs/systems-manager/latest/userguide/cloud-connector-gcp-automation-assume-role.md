@@ -10,7 +10,7 @@ The automation assume role is the role Automation assumes when it runs the runbo
 
 The trust policy lets the Systems Manager service principal assume the role, scoped to your AWS account. Replace `123456789012` with your AWS account ID.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -37,11 +37,11 @@ The permissions policy grants the actions Automation needs to execute the onboar
 This policy includes the following permissions:
 + `ssm` – Allows Automation to create, delete, and describe hybrid activations (`CreateActivation`, `DeleteActivation`, `DescribeActivations`); to register GCP virtual machines as managed nodes and read their status (`DescribeInstanceInformation`); to tag activations and managed instances (`AddTagsToResource`); to read the installation runbook and its child runbooks (`GetDocument`); and to read the Cloud Connector configuration (`GetCloudConnector`).
 + `iam:PassRole` – Allows Automation to pass the managed instance role to Systems Manager when registering a GCP virtual machine, and to pass the automation assume role to Automation when it starts a runbook execution. The `iam:PassedToService` condition restricts both passes to `ssm.amazonaws.com`. The `iam:AssociatedResourceARN` condition restricts the automation assume role pass to the `AWS-InstallSSMAgentOnGCP` runbook, its three child runbooks, and automation executions in the connector's AWS Region.
-+ `iam:ListRoleTags` – Allows Automation to read tags on the GCP federation role to confirm it belongs to the same Cloud Connector before assuming it.
++ `iam:ListRoleTags` – Allows Automation to read this role's own tags and add them to the web identity token that it exchanges for GCP credentials.
 + `sts:AssumeRole` – Allows Automation to assume the GCP federation role to obtain GCP credentials.
 + `ssm:StartAutomationExecution` and `ssm:GetAutomationExecution` – Allows Automation to start and monitor executions of the `AWS-InstallSSMAgentOnGCP` runbook and its three child runbooks (`AWS-InstallSSMAgentOnGCP-SetupAndActivation`, `AWS-InstallSSMAgentOnGCP-ApplyOSPolicy`, and `AWS-InstallSSMAgentOnGCP-VerifyVMStatus`) in the connector's AWS Region.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -252,7 +252,7 @@ Default: `43200` (12 hours)
 (Optional) The object that contains the [authorization policy](interprocess-communication.md#ipc-authorization-policies) that allows the component to subscribe to the secure tunneling notifications topic.
 Do not modify this configuration parameter if your deployment targets a thing group. If your deployment targets an individual core device, and you want to restrict its subscription to the device's topic, specify the core device's thing name. In the `resources` value in the device's authorization policy, replace the MQTT topic wildcard with the device's thing name.
 
-```
+```json
 {
   "aws.greengrass.ipc.mqttproxy": {
     "aws.greengrass.SecureTunneling:mqttproxy:1": {
@@ -271,7 +271,7 @@ Do not modify this configuration parameter if your deployment targets a thing gr
 **Example: Configuration merge update**
 The following example configuration specifies the maximum concurrent tunnels and timeout settings.
 
-```
+```json
 {
   "maxConcurrentTunnels": 20,
   "tunnelTimeoutSeconds": 43200,
@@ -303,7 +303,7 @@ Default: `auto`
 (Optional) The object that contains the [authorization policy](interprocess-communication.md#ipc-authorization-policies) that allows the component to subscribe to the secure tunneling notifications topic.
 Do not modify this configuration parameter if your deployment targets a thing group. If your deployment targets an individual core device, and you want to restrict its subscription to the device's topic, specify the core device's thing name. In the `resources` value in the device's authorization policy, replace the MQTT topic wildcard with the device's thing name.
 
-```
+```json
 {
   "aws.greengrass.ipc.mqttproxy": {
     "aws.iot.SecureTunneling:mqttproxy:1": {
@@ -322,7 +322,7 @@ Do not modify this configuration parameter if your deployment targets a thing gr
 **Example: Configuration merge update**
 The following example configuration specifies to allow this component to open secure tunnels on a core device named **MyGreengrassCore** that runs Ubuntu.
 
-```
+```json
 {
   "OS_DIST_INFO": "ubuntu",
   "accessControl": {
@@ -358,7 +358,7 @@ This component uses the following log file.
 **To view this component's logs**
 + Run the following command on the core device to view this component's log file in real time. Replace `{{/greengrass/v2}}` with the path to the AWS IoT Greengrass root folder.
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.greengrass.SecureTunneling.log
   ```
 
@@ -367,13 +367,13 @@ This component uses the following log file.
 
 Run the following command on the core device to view this component's logs.
 
-```
+```bash
 journalctl -xeau ggl.aws.greengrass.SecureTunneling.service
 ```
 
 Run the following command on the core device to view this component's logs in real time.
 
-```
+```bash
 journalctl -fau ggl.aws.greengrass.SecureTunneling.service
 ```
 

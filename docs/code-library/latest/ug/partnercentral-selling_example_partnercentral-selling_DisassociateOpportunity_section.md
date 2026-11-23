@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
 Remove an existing association between an Opportunity and related entities.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -84,7 +84,7 @@ public class DisassociateOpportunity {
 **SDK for Python (Boto3)**
 Remove an existing association between an Opportunity and related entities.
 
-```
+```python
 #!/usr/bin/env python
 
 """

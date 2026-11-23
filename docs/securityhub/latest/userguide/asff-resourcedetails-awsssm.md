@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsS
 
 **Example**
 
-```
+```json
 "AwsSsmPatchCompliance": {
     "Patch": {
         "ComplianceSummary": {

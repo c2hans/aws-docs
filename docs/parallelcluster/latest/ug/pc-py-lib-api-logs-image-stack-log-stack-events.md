@@ -6,7 +6,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 # `get_image_stack_events`
 
-```
+```python
 get_image_stack_events(image_id, region, next_token)
 ```
 

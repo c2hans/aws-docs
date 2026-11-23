@@ -64,7 +64,7 @@ Retrieves information about the communication requirements and options that are 
 #### POST schema
 <a name="phone-number-validate-request-body-post-example"></a>
 
-```
+```json
 {
   "PhoneNumber": "string",
   "IsoCountryCode": "string"
@@ -77,7 +77,7 @@ Retrieves information about the communication requirements and options that are 
 #### NumberValidateResponse schema
 <a name="phone-number-validate-response-body-numbervalidateresponse-example"></a>
 
-```
+```json
 {
   "CountryCodeIso2": "string",
   "CountryCodeNumeric": "string",
@@ -99,7 +99,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="phone-number-validate-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

@@ -115,7 +115,7 @@ Your app now includes a cloud configuration file that connects it to the backend
 
 1. In the `PinpointAnalytics` object, replace the value for `AppID` with the ID that you got from the Amazon Pinpoint console.
 
-   ```
+   ```json
    . . .
    "PinpointAnalytics": {
      "Default": {

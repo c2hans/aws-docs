@@ -15,7 +15,7 @@ The following code example shows a typical S3 bucket policy.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -48,7 +48,7 @@ The Audio Service reads and writes to your S3 bucket on behalf of your Sip Media
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -77,7 +77,7 @@ The Audio Service reads and writes to your S3 bucket on behalf of your Sip Media
 
 The following example shows a typical `PlayAudioAndGetDigits` action.
 
-```
+```json
 {
     "Type" : "PlayAudioAndGetDigits",
     "Parameters" : {
@@ -196,7 +196,7 @@ The following example shows a typical `PlayAudioAndGetDigits` action.
 
 The SIP media application always invokes its AWS Lambda function after running the `PlayAudioAndGetDigits` action, with an `ACTION_SUCCESSFUL` or `ACTION_FAILED` invocation event type. When the application successfully gathers digits, it sets the `ReceivedDigits` value in the `ActionData` object. The following example shows the invocation event structure of that AWS Lambda function.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": 3,
@@ -246,7 +246,7 @@ When a validation error occurs, the SIP media application calls the AWS Lambda f
 
 When the action fails to collect the number of specified digits due to a timeout or too many retries, the SIP media application invokes the AWS Lambda function with the `ACTION_FAILED` invocation event type.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{4}},

@@ -96,7 +96,7 @@ The following sample policy provides the required minimum permissions for creati
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -132,7 +132,7 @@ The following sample policy provides the required minimum permissions for updati
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -167,7 +167,7 @@ The following sample policy provides the required minimum permissions for refres
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -205,7 +205,7 @@ You can attach a resource-based policy using the CloudTrail console, the [AWS CL
 
 If an event data store being queried is encrypted with a KMS key, ensure the KMS key policy allows CloudTrail to decrypt the data in the event data store. The following example policy statement allows the CloudTrail service principal to decrypt the event data store.
 
-```
+```JSON
 {
       "Sid": "AllowCloudTrailDecryptAccess",
       "Effect": "Allow",

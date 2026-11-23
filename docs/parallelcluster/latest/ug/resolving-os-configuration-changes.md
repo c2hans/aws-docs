@@ -30,7 +30,7 @@ This typically occurs when:
 
 1. Check if you can switch to the pcluster-admin user:
 
-   ```
+   ```bash
    $ su - pcluster-admin
    ```
 
@@ -38,7 +38,7 @@ This typically occurs when:
 
 1. Check available locales:
 
-   ```
+   ```bash
    $ localedef --list
    ```
 
@@ -46,7 +46,7 @@ This typically occurs when:
 
 1. Check the last `yum` command:
 
-   ```
+   ```bash
    $ yum history
    $ yum history info #ID
    ```
@@ -58,13 +58,13 @@ This typically occurs when:
 
 Rebuild the locale by reinstalling the language packs:
 
-```
+```bash
 $ sudo yum reinstall glibc-all-langpacks
 ```
 
 After the rebuild, verify the issue is fixed by running:
 
-```
+```bash
 $ su - pcluster-admin
 ```
 
@@ -80,13 +80,13 @@ When installing custom packages or modifying system packages, conflicts can aris
 
 1. Check the chef-client log for package-related errors:
 
-   ```
+   ```bash
    $ less /var/log/chef-client.log
    ```
 
 1. Look for package dependency conflicts in the cfn-init log:
 
-   ```
+   ```bash
    $ less /var/log/cfn-init.log
    ```
 
@@ -95,13 +95,13 @@ When installing custom packages or modifying system packages, conflicts can aris
 
 1. If a specific package is causing issues, try reinstalling it:
 
-   ```
+   ```bash
    $ sudo yum reinstall package-name
    ```
 
 1. For dependency conflicts, you may need to remove conflicting packages:
 
-   ```
+   ```bash
    $ sudo yum remove conflicting-package
    ```
 
@@ -117,13 +117,13 @@ Modifying critical system configuration files can cause cluster failures, especi
 
 1. Check for errors in the chef-client log that mention specific configuration files:
 
-   ```
+   ```bash
    $ grep -i "config" /var/log/chef-client.log
    ```
 
 1. Look for permission or syntax errors in configuration files:
 
-   ```
+   ```bash
    $ less /var/log/cfn-init.log
    ```
 
@@ -132,13 +132,13 @@ Modifying critical system configuration files can cause cluster failures, especi
 
 1. Restore modified configuration files to their original state:
 
-   ```
+   ```bash
    $ sudo cp /etc/file.conf.bak /etc/file.conf
    ```
 
 1. If you need to make persistent changes to system configuration files, use custom bootstrap actions instead of directly modifying files:
 
-   ```
+   ```yaml
    HeadNode:
      CustomActions:
        OnNodeConfigured:
@@ -159,13 +159,13 @@ Kernel updates can cause compatibility issues with certain AWS services, particu
 
 1. Check if kernel updates have been applied:
 
-   ```
+   ```bash
    $ uname -r
    ```
 
 1. Look for Amazon FSx mount failures in the logs:
 
-   ```
+   ```bash
    $ grep -i "fsx" /var/log/chef-client.log
    ```
 
@@ -176,7 +176,7 @@ Kernel updates can cause compatibility issues with certain AWS services, particu
 
 1. If you've already updated the kernel and are experiencing issues, consider downgrading to a compatible kernel version:
 
-   ```
+   ```bash
    $ sudo apt install linux-image-previous-version
    ```
 
@@ -197,13 +197,13 @@ To minimize issues when making OS configuration changes:
 
 1. **Backup Configuration Files**: Before modifying any system configuration file, create a backup:
 
-   ```
+   ```bash
    $ sudo cp /etc/file.conf /etc/file.conf.bak
    ```
 
 1. **Check Logs After Changes**: After making OS configuration changes, check the logs for any errors:
 
-   ```
+   ```bash
    $ less /var/log/cfn-init.log
    $ less /var/log/chef-client.log
    ```

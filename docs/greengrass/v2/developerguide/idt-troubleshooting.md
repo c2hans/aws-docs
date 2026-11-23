@@ -122,7 +122,7 @@ When you run machine learning (ML) qualification tests, you might encounter qual
 
 If OTF tests fail to complete the deployment, a likely cause may be the permissions set for the parent folder of `TempResourcesDirOnDevice` and `InstallationDirRootOnDevice`. To set this folder's permissions correctly, run the following command. Replace `{{folder-name}}` with the name of the parent folder.
 
-```
+```bash
 sudo chmod 755 {{folder-name}}
 ```
 
@@ -218,7 +218,7 @@ For more information, run `run-suite --help`.
 Some timeout errors occur when IDT test cases can’t be completed because of configuration issues. You can’t resolve these errors by increasing the timeout multiplier. Use the logs from the test run to troubleshoot the underlying configuration issues.
 + If the MQTT or Lambda component logs contain `Access denied` errors, your Greengrass installation folder might not have the correct file permissions. Run the following command for each folder in the installation path that you defined in your `userdata.json` file.
 
-  ```
+  ```bash
   sudo chmod 755 {{folder-name}}
   ```
 + If the Greengrass logs indicate that the Greengrass CLI deployment isn't complete, do the following:

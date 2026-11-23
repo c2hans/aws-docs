@@ -28,7 +28,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-certificateauthorities-get-cli"></a>
 
-```
+```bash
 aws greengrass list-group-certificate-authorities \
   --group-id <value>  \
   [--cli-input-json <value>] \
@@ -37,7 +37,7 @@ aws greengrass list-group-certificate-authorities \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string"
 }
@@ -50,7 +50,7 @@ cli-input-json format:
 Success. The response body contains the PKI configuration.
  [ ListGroupCertificateAuthoritiesResponse](definitions-listgroupcertificateauthoritiesresponse.md)
 
-```
+```json
 {
 "GroupCertificateAuthorities": [
   {
@@ -80,7 +80,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -116,7 +116,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -178,7 +178,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-certificateauthorities-post-cli"></a>
 
-```
+```bash
 aws greengrass create-group-certificate-authority \
   --group-id <value> \
   [--amzn-client-token <value>]  \
@@ -188,7 +188,7 @@ aws greengrass create-group-certificate-authority \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "AmznClientToken": "string"
@@ -202,7 +202,7 @@ cli-input-json format:
 Success. The response body contains the new, active CA ARN.
  [ CreateGroupCertificateAuthorityResponse](definitions-creategroupcertificateauthorityresponse.md)
 
-```
+```json
 {
 "GroupCertificateAuthorityArn": "string"
 }
@@ -217,7 +217,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -253,7 +253,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

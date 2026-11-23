@@ -43,7 +43,7 @@ All dynamic variables that MediaTailor supports work in both locations. These in
 
 To serve language-specific ads, forward the viewer's language preference to your ADS. The following playback configuration passes the `Accept-Language` header (captured at session initialization) as an HTTP request header on every ADS call:
 
-```
+```json
 {
     "Name": "customerConfig",
     "VideoContentSourceUrl": "https://origin.example.com/",
@@ -70,7 +70,7 @@ The CloudFront managed policy `Managed-Elemental-MediaTailor-PersonalizedManifes
 
 The following playback configuration sends a `POST` request with a JSON body and a matching `Content-Type` header:
 
-```
+```json
 {
     "Name": "customerConfig",
     "VideoContentSourceUrl": "https://origin.example.com/",

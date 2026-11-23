@@ -50,7 +50,7 @@ To configure your application with your resources and AWS Region:
 
 1. Enter the names and identifiers of your resources, and also the AWS Region they were created in:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="identityPoolId">{{us-east-1:54f2ba88-9390-498d-aaa5-0d97fb7ca3bd}}</string>
@@ -74,7 +74,7 @@ This will also set the map's initial center point.
 You must provide word mark or text attribution for each data provider that you use, either on your application or your documentation. Attribution strings are included in the style descriptor response under the `sources.esri.attribution`, `sources.here.attribution`, and `source.grabmaptiles.attribution` keys.
 Because Tangram doesn't request these resources, and is only compatible with maps from HERE, use "© 2020 HERE". When using Amazon Location resources with [data providers](https://docs.aws.amazon.com/location/previous/developerguide/what-is-data-provider.html), make sure to read the [service terms and conditions](https://aws.amazon.com/service-terms/).
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -108,7 +108,7 @@ Because Tangram doesn't request these resources, and is only compatible with map
 
 Create a class named `SigV4Interceptor` to intercept AWS requests and sign them using [Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html). This will be registered with the HTTP client used to fetch map resources when the Main Activity is created.
 
-```
+```java
 package aws.location.demo.okhttp
 
 import com.amazonaws.DefaultRequest
@@ -226,7 +226,7 @@ The Main Activity is responsible for initializing the views that will be display
 
 `MainActivity` is also responsible for forwarding life cycle events to the map view.
 
-```
+```java
 package aws.location.demo.tangram
 
 import android.os.Bundle

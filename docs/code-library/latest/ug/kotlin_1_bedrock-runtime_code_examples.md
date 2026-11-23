@@ -25,7 +25,7 @@ The following code example shows how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova, using Bedrock's Converse API.
 
-```
+```kotlin
 import aws.sdk.kotlin.services.bedrockruntime.BedrockRuntimeClient
 import aws.sdk.kotlin.services.bedrockruntime.model.ContentBlock
 import aws.sdk.kotlin.services.bedrockruntime.model.ConversationRole
@@ -92,7 +92,7 @@ The following code example shows how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```kotlin
 import aws.sdk.kotlin.services.bedrockruntime.BedrockRuntimeClient
 import aws.sdk.kotlin.services.bedrockruntime.model.ContentBlock
 import aws.sdk.kotlin.services.bedrockruntime.model.ConversationRole

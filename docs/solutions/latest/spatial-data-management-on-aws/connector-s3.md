@@ -29,7 +29,7 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
    +  **Role name** must start with `SpatialDataManagementContentPublisher-` (publish connectors) or `SpatialDataManagementContentDerivation-` (derive connectors).
    +  **Trust policy** must allow the SDMA connector invocation Lambda to assume it:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -51,7 +51,7 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
 
      If you have AWS CLI access, you can find these values by running:
 
-     ```
+     ```bash
      aws lambda get-function \
        --function-name SpatialDataManagement-ConnectorInvocationFunction \
        --query 'Configuration.Role' --output text
@@ -74,7 +74,7 @@ A publish connector writes structured JSON to an S3 bucket when asset events occ
 ### Example – publish asset metadata to S3 on create or update
 <a name="_example-publish-asset-metadata-to-s3-on-create-or-update"></a>
 
-```
+```json
 {
   "s3Config": {
     "bucketName": "amzn-s3-demo-bucket",
@@ -122,7 +122,7 @@ An S3 derive connector reads a CSV or JSON file from S3 and matches records to S
 ### Example – enrich file metadata from a CSV
 <a name="_example-enrich-file-metadata-from-a-csv"></a>
 
-```
+```json
 {
   "s3Config": {
     "bucketName": "amzn-s3-demo-source-bucket",
@@ -176,7 +176,7 @@ This uses the connector-level `fieldMappings` \+ `s3Config` shorthand — no tri
 ### Example – serve site codes from a CSV for template authoring
 <a name="_example-serve-site-codes-from-a-csv-for-template-authoring"></a>
 
-```
+```json
 {
   "s3Config": {
     "bucketName": "amzn-s3-demo-source-bucket",
@@ -203,7 +203,7 @@ Field mappings can include an `options` object to declare cascading dependencies
 
 The `s3PutObject` and `s3DeleteObject` step types can participate in multi-step triggers alongside other step types. For example, a trigger might write metadata to S3, then invoke a Lambda function to post-process it:
 
-```
+```json
 "steps": [
   {
     "stepType": "s3PutObject",

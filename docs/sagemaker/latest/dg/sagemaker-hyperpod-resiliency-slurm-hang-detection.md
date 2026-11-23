@@ -20,13 +20,13 @@ The rules file must be readable from every compute node in the job. For multi-no
 
 1. Create a rules file that turns on hung job detection.
 
-   ```
+   ```sh
    echo '{"enabled": true}' > /fsx/my-project/rules.json
    ```
 
 1. When you submit the job, set the `HYPERPOD_HANG_RULES` environment variable to the path of the rules file.
 
-   ```
+   ```sh
    #SBATCH --export=ALL,HYPERPOD_HANG_RULES=/fsx/my-project/rules.json
    ```
 
@@ -57,7 +57,7 @@ HyperPod writes detection events from the controller node to your cluster's Clou
 
 Events for every job are written to this stream, whichever node the job ran on. Each event's `node` field shows the Slurm node where the hang was detected. To find the events for a job, filter the log group by its job ID:
 
-```
+```sh
 aws logs filter-log-events \
   --log-group-name /aws/sagemaker/Clusters/{{cluster-name}}/{{cluster-id}} \
   --log-stream-name-prefix SageMakerHangJobDetectionEvents/ \
@@ -66,7 +66,7 @@ aws logs filter-log-events \
 
 The following is an example `HANG_DETECTED` event.
 
-```
+```json
 {
   "event_type": "HANG_DETECTED",
   "job_id": "12345",
@@ -93,7 +93,7 @@ We recommend that you add at least one `log_pattern` rule that tracks your train
 
 A rules file is a JSON file. The following example watches for epoch completion and cancels the job if no epoch completes within 45 minutes, or as soon as an NCCL error appears.
 
-```
+```json
 {
   "enabled": true,
   "rules": [
@@ -155,7 +155,7 @@ To make sure a change to a rules file takes effect, cancel the job and submit it
 A job that doesn't set `HYPERPOD_HANG_RULES` isn't monitored. To turn off detection in other cases, do one of the following:
 + For one job, add `--no-hang-detection` to `srun`, or to `sbatch` to cover all steps in the job.
 
-  ```
+  ```sh
   srun --no-hang-detection python train.py
   ```
 + For all jobs that use a rules file, set `"enabled": false` in the file.
@@ -167,7 +167,7 @@ The agent applies the rules file that a job points to. It doesn't check who owns
 
 Keep each rules file, and the directory that contains it, writable only by its owner. For a rules file that a team shares, let the team read it and let only the person who maintains it write to it.
 
-```
+```sh
 # Rules file for your own jobs
 chmod 600 /fsx/my-project/rules.json
 

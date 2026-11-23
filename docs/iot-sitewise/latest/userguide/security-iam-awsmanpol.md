@@ -26,7 +26,7 @@ This policy provides read-only access to AWS IoT SiteWise, including permissions
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -110,7 +110,7 @@ This policy provides read-only access to AWS IoT SiteWise, including permissions
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -172,7 +172,7 @@ This policy provides read-only access to AWS IoT SiteWise, including permissions
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -234,7 +234,7 @@ This policy provides read-only access to AWS IoT SiteWise, including permissions
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

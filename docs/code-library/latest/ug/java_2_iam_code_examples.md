@@ -33,7 +33,7 @@ The following code example shows how to get started using IAM.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
 import software.amazon.awssdk.services.iam.model.ListPoliciesResponse;
@@ -88,7 +88,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 Create functions that wrap IAM user actions.
 
-```
+```java
 /*
   To run this Java V2 code example, set up your development environment, including your credentials.
 
@@ -477,7 +477,7 @@ The following code example shows how to use `AttachRolePolicy`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
 import software.amazon.awssdk.services.iam.model.IamException;
@@ -571,7 +571,7 @@ The following code example shows how to use `CreateAccessKey`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.CreateAccessKeyRequest;
 import software.amazon.awssdk.services.iam.model.CreateAccessKeyResponse;
 import software.amazon.awssdk.regions.Region;
@@ -640,7 +640,7 @@ The following code example shows how to use `CreateAccountAlias`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.CreateAccountAliasRequest;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
@@ -706,7 +706,7 @@ The following code example shows how to use `CreatePolicy`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.core.waiters.WaiterResponse;
 import software.amazon.awssdk.services.iam.model.CreatePolicyRequest;
 import software.amazon.awssdk.services.iam.model.CreatePolicyResponse;
@@ -809,7 +809,7 @@ The following code example shows how to use `CreateRole`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import software.amazon.awssdk.services.iam.model.CreateRoleRequest;
@@ -895,7 +895,7 @@ The following code example shows how to use `CreateUser`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.core.waiters.WaiterResponse;
 import software.amazon.awssdk.services.iam.model.CreateUserRequest;
 import software.amazon.awssdk.services.iam.model.CreateUserResponse;
@@ -979,7 +979,7 @@ The following code example shows how to use `DeleteAccessKey`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
 import software.amazon.awssdk.services.iam.model.DeleteAccessKeyRequest;
@@ -1048,7 +1048,7 @@ The following code example shows how to use `DeleteAccountAlias`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.DeleteAccountAliasRequest;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
@@ -1115,7 +1115,7 @@ The following code example shows how to use `DeletePolicy`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.DeletePolicyRequest;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
@@ -1182,7 +1182,7 @@ The following code example shows how to use `DeleteUser`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
 import software.amazon.awssdk.services.iam.model.DeleteUserRequest;
@@ -1249,7 +1249,7 @@ The following code example shows how to use `DetachRolePolicy`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.DetachRolePolicyRequest;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
@@ -1319,7 +1319,7 @@ The following code example shows how to use `ListAccessKeys`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.AccessKeyMetadata;
 import software.amazon.awssdk.services.iam.model.IamException;
 import software.amazon.awssdk.services.iam.model.ListAccessKeysRequest;
@@ -1414,7 +1414,7 @@ The following code example shows how to use `ListAccountAliases`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.IamException;
 import software.amazon.awssdk.services.iam.model.ListAccountAliasesResponse;
 import software.amazon.awssdk.regions.Region;
@@ -1464,7 +1464,7 @@ The following code example shows how to use `ListUsers`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.AttachedPermissionsBoundary;
 import software.amazon.awssdk.services.iam.model.IamException;
 import software.amazon.awssdk.services.iam.model.ListUsersRequest;
@@ -1542,7 +1542,7 @@ The following code example shows how to use `UpdateAccessKey`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.IamException;
 import software.amazon.awssdk.services.iam.model.StatusType;
 import software.amazon.awssdk.services.iam.model.UpdateAccessKeyRequest;
@@ -1628,7 +1628,7 @@ The following code example shows how to use `UpdateUser`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
 import software.amazon.awssdk.services.iam.model.IamException;
@@ -1708,7 +1708,7 @@ The following code example shows how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```java
 public class Main {
 
     public static final String fileName = "C:\\AWS\\resworkflow\\recommendations.json"; // Modify file location.
@@ -2142,7 +2142,7 @@ public class Main {
 ```
 Create a class that wraps Auto Scaling and Amazon EC2 actions.
 
-```
+```java
 public class AutoScaler {
 
     private static Ec2Client ec2Client;
@@ -2635,7 +2635,7 @@ public class AutoScaler {
 ```
 Create a class that wraps Elastic Load Balancing actions.
 
-```
+```java
 public class LoadBalancer {
     public ElasticLoadBalancingV2Client elasticLoadBalancingV2Client;
 
@@ -2829,7 +2829,7 @@ public class LoadBalancer {
 ```
 Create a class that uses DynamoDB to simulate a recommendation service.
 
-```
+```java
 public class Database {
 
     private static DynamoDbClient dynamoDbClient;
@@ -2959,7 +2959,7 @@ public class Database {
 ```
 Create a class that wraps Systems Manager actions.
 
-```
+```java
 public class ParameterHelper {
 
     String tableName = "doc-example-resilient-architecture-table";
@@ -3028,7 +3028,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 The examples use the following imports.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.policybuilder.iam.IamConditionOperator;
@@ -3052,7 +3052,7 @@ import java.util.List;
 ```
 Create a time-based policy.
 
-```
+```java
         public String timeBasedPolicyExample() {
                 IamPolicy policy = IamPolicy.builder()
                                 .addStatement(b -> b
@@ -3078,7 +3078,7 @@ Create a time-based policy.
 ```
 Create a policy with multiple conditions.
 
-```
+```java
         public String multipleConditionsExample() {
                 IamPolicy policy = IamPolicy.builder()
                                 .addStatement(b -> b
@@ -3108,7 +3108,7 @@ Create a policy with multiple conditions.
 ```
 Use principals in a policy.
 
-```
+```java
         public String specifyPrincipalsExample() {
                 IamPolicy policy = IamPolicy.builder()
                                 .addStatement(b -> b
@@ -3128,7 +3128,7 @@ Use principals in a policy.
 ```
 Allow cross-account access.
 
-```
+```java
         public String allowCrossAccountAccessExample() {
                 IamPolicy policy = IamPolicy.builder()
                                 .addStatement(b -> b
@@ -3147,7 +3147,7 @@ Allow cross-account access.
 ```
 Build and upload an `IamPolicy`.
 
-```
+```java
         public String createAndUploadPolicyExample(IamClient iam, String accountID, String policyName) {
                 // Build the policy.
                 IamPolicy policy = IamPolicy.builder() // 'version' defaults to "2012-10-17".
@@ -3165,7 +3165,7 @@ Build and upload an `IamPolicy`.
 ```
 Download and work with an `IamPolicy`.
 
-```
+```java
         public String createNewBasedOnExistingPolicyExample(IamClient iam, String accountID, String policyName,
                         String newPolicyName) {
 

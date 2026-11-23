@@ -232,7 +232,7 @@ In this next step we update the application to use Amazon RDS for MySQL.
 
 1.  Update the dependencies section in the `package.json` with the following contents:
 
-   ```
+   ```json
    "dependencies": {
        "async": "^3.2.4",
        "express": "4.18.2",

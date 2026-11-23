@@ -42,7 +42,7 @@ Operations offer several calling styles. The recommended default is the **DSL la
 
  **DSL lambda**: wrap each key value with `Key(…​)`:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.items.Key
 
 val order = ordersTable.getItem {
@@ -53,13 +53,13 @@ val order = ordersTable.getItem {
 
  **Literal key values**: pass the partition key, then the sort key:
 
-```
+```kotlin
 val order = ordersTable.getItem("customer-123", "ORDER#2026-06-25#0042").item
 ```
 
  **Explicit request object**: each operation has a corresponding request type (for example `GetItemRequest`, `PutItemRequest`, `QueryRequest`, `ScanRequest`) that you can build once and reuse, or use to set less-common request fields. The key-bearing request types come in `PartitionKey` and `CompositeKey` variants (matching the table’s key shape) and are parameterized by their key type(s). You construct one with the same DSL shown previously and pass it to the matching operation. For instance, a built `QueryRequest` is passed to [`queryPaginated(request)`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html). See the [API reference](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) for each request type’s exact shape.
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.operations.GetItemRequest
 
 val request = GetItemRequest.CompositeKey {
@@ -78,7 +78,7 @@ Many mapper request and response members mirror their low-level [`DynamoDbClient
 
  [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) and [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) can match more items than fit in a single low-level response. The paginating variants ([`queryPaginated`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) and [`scanPaginated`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html)) return a [`Flow`](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/) of response pages and fetch subsequent pages automatically as you collect them. They do not call DynamoDB until the flow is collected.
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.operations.scanPaginated
 
 ordersTable.scanPaginated { }.collect { response ->
@@ -90,7 +90,7 @@ ordersTable.scanPaginated { }.collect { response ->
 
 Usually a flow of objects is more useful than a flow of pages. Call `items()` on a paginated flow to flatten it into a `Flow` of your mapped type (for example, a `Flow<Order>` rather than a `Flow<ScanResponse<Order>>`):
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.operations.items
 import aws.sdk.kotlin.hll.dynamodbmapper.operations.scanPaginated
 
@@ -108,7 +108,7 @@ DynamoDB Mapper also exposes non-paginating [`query`](/sdk-for-kotlin/api/latest
 
 Because manual pagination is easy to use incorrectly, the non-paginating operations are gated behind the [`@ManualPagination`](ddb-mapper-anno-index.md#ddb-mapper-anno-index-optin) opt-in annotation. To call one, opt in at the call site:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.annotations.ManualPagination
 import aws.sdk.kotlin.hll.dynamodbmapper.expressions.KeyFilter
 

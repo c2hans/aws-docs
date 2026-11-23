@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_ec2-us
 
 The following example uses `/etc/profile.d` to set global variables on node group instances.
 
-```
+```txt
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="==MYBOUNDARY=="
 

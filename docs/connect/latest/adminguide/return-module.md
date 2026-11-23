@@ -81,7 +81,7 @@ The following image shows the **Properties** pane of the **Return** block.
 
 The following code shows how this same configuration is represented as an EndFlowModuleExecution action in the Connect Customer Flow Language.
 
-```
+```json
 {
       "Parameters": {},
       "Identifier": "{{the identifier of the Return block}}",
@@ -118,7 +118,7 @@ Because this is a terminal block there are no error scenarios that the flow migh
 ## What this block looks like in a flow log
 <a name="return-flowlogs"></a>
 
-```
+```json
 {
     "ContactId": "string",
     "ContactFlowId": "string",

@@ -63,7 +63,7 @@ The easiest way to build the documentation is using Apache’s [Maven](https://m
 
 1. On the command line, navigate to the directory where you unpacked the archive, and type the following.
 
-   ```
+   ```java
    mvn javadoc:javadoc
    ```
 

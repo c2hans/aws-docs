@@ -25,7 +25,7 @@ Tag propagation applies only to new managed resources provisioned after the conf
 
 **Create a capacity provider with tag propagation (AWS CLI):**
 
-```
+```bash
 aws lambda create-capacity-provider \
   --capacity-provider-name my-capacity-provider \
   --vpc-config SubnetIds=subnet-12345,subnet-67890,SecurityGroupIds=sg-12345 \
@@ -35,7 +35,7 @@ aws lambda create-capacity-provider \
 
 **Update an existing capacity provider to enable tag propagation:**
 
-```
+```bash
 aws lambda update-capacity-provider \
   --capacity-provider-name my-capacity-provider \
   --propagate-tags '{"Mode": "Explicit", "ExplicitTags": {"CostCenter": "12345", "Environment": "Production"}}'
@@ -43,7 +43,7 @@ aws lambda update-capacity-provider \
 
 **Disable tag propagation:**
 
-```
+```bash
 aws lambda update-capacity-provider \
   --capacity-provider-name my-capacity-provider \
   --propagate-tags '{"Mode": "None"}'

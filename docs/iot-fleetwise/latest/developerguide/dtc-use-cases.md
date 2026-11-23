@@ -18,7 +18,7 @@ Fetch a DTC collection at configured intervals.
 
 The following example is a campaign with periodic signal fetching of `Vehicle.DTC_INFO` for all DTCs with a status mask for all ECUs. There is a condition for data collected for `Vehicle.DTC_INFO`.
 
-```
+```json
 {
   "compression": "SNAPPY",
   "spoolingMode": "TO_DISK",
@@ -74,7 +74,7 @@ Fetch a DTC collection when a condition is met. For example, when the CAN signal
 
 The following example campaign has condition-driven signal fetching of `Vehicle.ECU1.DTC_INFO` to check whether the DTC ("AAA123") is pending with recordNumber 1 for ECU-1. This campaign has time-based data collection and upload.
 
-```
+```json
 {
   "compression": "SNAPPY",
   "spoolingMode": "TO_DISK",
@@ -127,7 +127,7 @@ Fetch a specific DTC for a fleet.
 For an on-demand use case, you can use the same campaign as defined in the periodic fetch. The on-demand effect is achieved by suspending the campaign shortly after the campaign is deployed using the AWS IoT FleetWise console or by running the following CLI command.
 + Replace {{command-name}} with the command name.
 
-```
+```bash
 aws iotfleetwise update-campaign \
     --name {{campaign-name}} \
     --action APPROVE
@@ -135,7 +135,7 @@ aws iotfleetwise update-campaign \
 
 Then, suspend the campaign after the DTC data arrives.
 
-```
+```bash
 aws iotfleetwise update-campaign \
     --name {{campaign-name}} \
     --action SUSPEND
@@ -143,7 +143,7 @@ aws iotfleetwise update-campaign \
 
 You can resume the campaign again for DTC data fetching.
 
-```
+```bash
 aws iotfleetwise update-campaign \
     --name {{campaign-name}} \
     --action RESUME

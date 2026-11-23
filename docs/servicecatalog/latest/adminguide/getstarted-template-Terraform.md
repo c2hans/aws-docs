@@ -16,7 +16,7 @@ AWS Service Catalog provides a sample [`simple-s3-bucket.tar.gz`](https://github
 
 The text of the sample configuration file follows:
 
-```
+```json
 variable "bucket_name" {
   type = string
 }

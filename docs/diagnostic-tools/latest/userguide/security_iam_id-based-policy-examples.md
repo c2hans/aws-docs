@@ -58,7 +58,7 @@ In this example, you want to grant an IAM user in your AWS account access to run
 
 ****
 
-```
+```json
    {
          "Version":"2012-10-17",
          "Statement": [

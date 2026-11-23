@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs
 
 To create a parametric circuit, you first need to provide parameters as inputs in your algorithm script. In this example, we use a small parametric circuit and ignore any classical processing between each iteration. For typical workloads, you would submit many circuits in batch and perform classical processing such as updating the parameters in each iteration.
 
-```
+```python
 import os
 
 from braket.aws import AwsDevice
@@ -32,7 +32,7 @@ def start_here():
 
 You can submit the algorithm script to run as a Hybrid Job with the following job script. When running the Hybrid Job on a QPU that supports parametric compilation, the circuit is compiled only on the first run. In following runs, the compiled circuit is reused, increasing the runtime performance of the Hybrid Job without any additional lines of code.
 
-```
+```python
 from braket.aws import AwsQuantumJob
 
 job = AwsQuantumJob.create(

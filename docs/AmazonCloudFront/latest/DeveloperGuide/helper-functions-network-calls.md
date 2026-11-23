@@ -319,6 +319,7 @@ In addition to the existing [Disallowed headers](edge-function-restrictions-all.
 ## Limitations
 <a name="network-calls-limitations"></a>
 + Distributions on the free pricing plan do not support network calls. `cf.fetch()` and `cf.beacon()` throw a `TypeError`, for example `"cloudfront.fetch" is not available on the free pricing plan`. For more information, see [CloudFront flat-rate pricing plans](flat-rate-pricing-plan.md).
++ Multi-tenant distributions and distribution tenants do not support network calls. For more information, see [Unsupported features](distribution-config-options.md#unsupported-saas).
 + Call `cf.fetch()` and `cf.beacon()` only inside the handler. They don't work from global scope.
 + Only one network call per invocation.
 + Network calls are not supported when you test a function with the `TestFunction` API or the **Test** tab in the CloudFront console. The call throws a `TypeError`.

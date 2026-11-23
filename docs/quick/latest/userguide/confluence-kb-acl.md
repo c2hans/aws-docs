@@ -88,7 +88,7 @@ Use the Atlassian Admin Workspace API to retrieve your Directory ID.
 
 1. Run the following command, replacing {{ORGANIZATION-ID}} with your Organization ID and {{API-KEY}} with your API key:
 
-   ```
+   ```bash
    curl --request POST \
      --url 'https://api.atlassian.com/admin/v2/orgs/{{ORGANIZATION-ID}}/workspaces' \
      --header 'Authorization: Bearer {{API-KEY}}' \

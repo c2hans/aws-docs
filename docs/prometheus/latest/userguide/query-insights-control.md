@@ -31,7 +31,7 @@ Make sure the `logGroup` is already created. The ID or role used to configure sh
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [

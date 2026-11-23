@@ -34,7 +34,7 @@ If the domain uses the `SageMakerFullAccess` policy, you do not need to perform 
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -173,7 +173,7 @@ Application type can be either `jupyterlab` or `codeeditor`.
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -525,7 +525,7 @@ Complete the following steps to attach the necessary permissions policies to you
 
    If this permissions policy is too permissive for your use case, you can create scoped-down policies that include at least the following permissions:
 
-   ```
+   ```Json
    {
        "Sid": "AllowStudioActions",
        "Effect": "Allow",
@@ -580,7 +580,7 @@ To enable AutoML capabilities in Canvas, add the following policies to your exec
 + AWS managed policy: [`CanvasFullAccess`.](https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanpol-canvas.html#security-iam-awsmanpol-AmazonSageMakerCanvasFullAccess)
 + Inline policy:
 
-  ```
+  ```Json
   {
       "Sid": "AllowAppActionsForUserProfile",
       "Effect": "Allow",

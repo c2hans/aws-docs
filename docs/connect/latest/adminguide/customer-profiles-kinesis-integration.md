@@ -46,7 +46,7 @@ A DLQ is an Amazon SQS queue where Customer Profiles reports errors from streame
 
 1.  Set the target input transformer as follows:
 
-```
+```json
 {
     "data": <$.data>
 }

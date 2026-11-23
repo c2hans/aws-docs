@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googleads-configuring-iam
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

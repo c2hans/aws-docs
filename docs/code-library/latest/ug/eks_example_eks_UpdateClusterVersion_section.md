@@ -52,7 +52,7 @@ For more information, see [Updating an Amazon EKS cluster Kubernetes version](ht
 **Tools for PowerShell V4**
 **Example 1: This cmdlet updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update.**
 
-```
+```powershell
 Update-EKSClusterVersion -Name "PROD-KUBE-CL" -Version 1.14
 ```
 **Output:**
@@ -70,7 +70,7 @@ Type      : VersionUpdate
 **Tools for PowerShell V5**
 **Example 1: This cmdlet updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update.**
 
-```
+```powershell
 Update-EKSClusterVersion -Name "PROD-KUBE-CL" -Version 1.14
 ```
 **Output:**

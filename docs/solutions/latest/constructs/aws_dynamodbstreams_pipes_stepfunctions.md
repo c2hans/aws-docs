@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import * as sfn from 'aws-cdk-lib/aws-stepfunctions';
@@ -40,7 +40,7 @@ import { DynamoDBStreamsToPipesToStepfunctions, DynamoDBStreamsToPipesToStepfunc
     });
 ```
 
-```
+```python
 from constructs import Construct
 from aws_cdk import (
     aws_stepfunctions as _sfn,
@@ -58,7 +58,7 @@ dynamodbstreams_pipes_stepfunctions.DynamoDBStreamsToPipesToStepfunctions(
 )
 ```
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;

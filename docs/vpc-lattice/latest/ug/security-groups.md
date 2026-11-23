@@ -119,7 +119,7 @@ Before you begin, confirm that you have created the security group in the same V
 **To add a security group when you create a VPC association using the AWS CLI**
 Use the [create-service-network-vpc-association](https://docs.aws.amazon.com/cli/latest/reference/vpc-lattice/create-service-network-vpc-association.html) command, specifying the ID of the VPC for the VPC association and the ID of the security groups to add.
 
-```
+```shell
 aws vpc-lattice create-service-network-vpc-association \
     --service-network-identifier {{sn-0123456789abcdef0}} \
     --vpc-identifier {{vpc-1a2b3c4d}} \
@@ -128,7 +128,7 @@ aws vpc-lattice create-service-network-vpc-association \
 
 If successful, the command returns output similar to the following.
 
-```
+```json
 {
   "arn": "{{arn}}",
   "createdBy": "464296918874",
@@ -141,7 +141,7 @@ If successful, the command returns output similar to the following.
 **To add or update security groups for an existing VPC association using the AWS CLI**
 Use the [update-service-network-vpc-association](https://docs.aws.amazon.com/cli/latest/reference/vpc-lattice/update-service-network-vpc-association.html) command, specifying the ID of the service network and the IDs of the security groups. These security groups override any previously associated security groups. Define at least one security group when updating the list.
 
-```
+```shell
 aws vpc-lattice update-service-network-vpc-association
     --service-network-vpc-association-identifier {{sn-903004f88example}} \
     --security-group-ids {{sg-7c2270198example}} {{sg-903004f88example}}

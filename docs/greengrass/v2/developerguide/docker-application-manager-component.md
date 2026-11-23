@@ -66,7 +66,7 @@ If you don't specify the image tag or image digest in the artifact URI for an im
 
   To add `ggc_user`, or the non-root user that you use to run Docker container components, to the `docker` group, run the following command.
 
-  ```
+  ```bash
   sudo usermod -aG docker {{ggc_user}}
   ```
 
@@ -77,7 +77,7 @@ If you don't specify the image tag or image digest in the artifact URI for an im
 
   To add `ggc_user`, or the user that you use to run Docker container components, to the `docker-users` group, run the following command as an administrator.
 
-  ```
+  ```cmd
   net localgroup docker-users {{ggc_user}} /add
   ```
 
@@ -86,7 +86,7 @@ If you don't specify the image tag or image digest in the artifact URI for an im
 
   To add `ggc_user`, or the user that you use to run Docker container components, to the `docker-users` group, run the following command as an administrator.
 
-  ```
+  ```ps
   Add-LocalGroupMember -Group docker-users -Member {{ggc_user}}
   ```
 
@@ -99,7 +99,7 @@ If you don't specify the image tag or image digest in the artifact URI for an im
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -120,7 +120,7 @@ If you don't specify the image tag or image digest in the artifact URI for an im
 
 ------
 
-  ```
+  ```json
   ```
 + The docker application manager component is supported to run in a VPC. To deploy this component in a VPC, the following is required.
   + The docker application manager component must have connectivity to download images. For example, if you use ECR, you must have connectivity to the following endpoints.
@@ -322,14 +322,14 @@ This component uses the same log file as the [Greengrass nucleus](greengrass-nuc
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
   ```
 

@@ -28,7 +28,7 @@ You start by creating [capacity reservations](https://docs.aws.amazon.com/AWSEC2
 
 After the capacity reservations and resource groups are created, specify them in [`SlurmQueues`](Scheduling-v3.md#Scheduling-v3-SlurmQueues) / [`CapacityReservationTarget`](Scheduling-v3.md#yaml-Scheduling-SlurmQueues-CapacityReservationTarget) or [`SlurmQueues`](Scheduling-v3.md#Scheduling-v3-SlurmQueues) / [`ComputeResources`](Scheduling-v3.md#Scheduling-v3-SlurmQueues-ComputeResources) / [`CapacityReservationTarget`](Scheduling-v3.md#yaml-Scheduling-SlurmQueues-ComputeResources-CapacityReservationTarget) as shown in the following example cluster configuration. Replace {{values}} highlighted in red with your valid values.
 
-```
+```yaml
 Image:
   Os: {{os}}
 HeadNode:
@@ -96,7 +96,7 @@ You can override Amazon EC2 `RunInstances` parameters for each compute resource 
 + `${compute_resource_name}` is the compute resource that you want to apply overrides to.
 + `${overrides}` is an arbitrary JSON object that contains a list of `RunInstances` overrides to use for the specific combination of queue and instance type. The overrides syntax needs to follow the same specifications that are documented in a [run\_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.run_instances) boto3 call.
 
-```
+```json
 {
     "${queue_name}": {
         "${compute_resource_name}": {
@@ -151,7 +151,7 @@ This method is not compatible with [Multiple instance type allocation with Slurm
 A resource group doesn't support resources that are shared by other accounts.
 If the target ODCR is shared by another account, you don't need to create a resource group. Use `CapacityReservationId` instead of a resource group in step 3.
 
-   ```
+   ```json
    #!/bin/bash
    set -e
 
@@ -180,7 +180,7 @@ If the target ODCR is shared by another account, you don't need to create a reso
 
    Create a policy document on your local computer. Replace `{{ACCOUNT_ID}}` with your account ID and `{{REGION_ID}}` with your AWS Region ID (for example, us-east-1).
 
-   ```
+   ```json
    cat > policy.json << EOF
    {
        "Version": "2012-10-17",
@@ -209,7 +209,7 @@ If the target ODCR is shared by another account, you don't need to create a reso
 
    Replace `{{ACCOUNT_ID}}` with your AWS account ID, and `{{REGION_ID}}` with your AWS Region ID (for example, us-east-1).
 
-   ```
+   ```json
    #!/bin/bash
    set -e
 
@@ -238,7 +238,7 @@ If the target ODCR is shared by another account, you don't need to create a reso
 
 1. **Create the local cluster configuration, replacing the placeholders with your own values.**
 
-   ```
+   ```yaml
    Region: {{REGION_ID}}
    Image:
      Os: alinux2023

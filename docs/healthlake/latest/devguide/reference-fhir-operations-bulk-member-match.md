@@ -63,7 +63,7 @@ HealthLake supports the following FHIR `$bulk-member-match` parameters:
 
 The following example shows a POST request to submit a bulk member match job. Each member is wrapped in a `MemberBundle` parameter containing the required `MemberPatient`, `CoverageToMatch`, and `Consent` resources, along with an optional `CoverageToLink`.
 
-```
+```json
 POST [base]/Group/$bulk-member-match
 Content-Type: application/fhir+json
 {
@@ -261,7 +261,7 @@ Content-Type: application/fhir+json
 
 When the job completes, the response includes job metadata and a FHIR Parameters resource containing three Group resources that categorize the match results.
 
-```
+```json
 {
   "datastoreId": "datastoreId",
   "jobId": "jobId",
@@ -667,7 +667,7 @@ The operation handles the following error conditions:
 + **422 Unprocessable Entity**: Processing errors during job execution.
 + **Individual member errors**: When a specific member fails to process, the operation continues with remaining members and includes error details with appropriate reason codes. For example, a `MemberBundle` with a Patient missing the `birthDate` parameter will return the following error:
 
-  ```
+  ```json
   "errors": [
     {
       "memberIndex": 1,

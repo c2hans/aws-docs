@@ -10,7 +10,7 @@ The default trust stores for Node.js include the certificates needed to access A
 
 In this example, a specific certificate on disk is used to create an ` https.Agent` that rejects connections unless the designated certificate is provided. The newly created `https.Agent` is then used to update the SDK configuration.
 
-```
+```javascript
 var fs = require('fs');
 var https = require('https');
 var certs = [

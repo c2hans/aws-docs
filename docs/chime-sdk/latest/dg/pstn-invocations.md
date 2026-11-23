@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/pstn-invocations.htm
 
 The Audio Service invokes your AWS AWS Lambda function when certain events occur during a call. The following example shows the events, and text after the example explains each event.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": 3,
@@ -90,7 +90,7 @@ A new outbound call has been made via the [CreateSipMediaApplicationCall](https:
 **ACTION\_SUCCESSFUL**
 An action returned from your AWS Lambda function has succeeded. Successful actions include `ActionData` that matches the successful action.
 
-```
+```json
     "ActionData": {
         // The previous successful action
     },
@@ -99,7 +99,7 @@ An action returned from your AWS Lambda function has succeeded. Successful actio
 **ACTION\_FAILED**
 An action returned from your AWS Lambda function did not succeed. Unsuccessful actions include `ActionData` that matches the failed action, an error type, and an error message that describes the failure:
 
-```
+```json
     "ActionData": {
         // The previous unsuccessful action
         "ErrorType": "{{error-type}}",
@@ -110,7 +110,7 @@ An action returned from your AWS Lambda function did not succeed. Unsuccessful a
 **ACTION\_INTERRUPTED**
 An action in the process of running was interrupted by an [ UpdateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html) API invocation. The `ActionData` includes the interrupted actions:
 
-```
+```json
 "ActionData": {
         // The action that was interrupted
     },
@@ -119,7 +119,7 @@ An action in the process of running was interrupted by an [ UpdateSipMediaApplic
 **HANGUP**
 A user or the application hung up a call leg. The `ActionData` includes these details about the event:
 
-```
+```json
    "ActionData": {
         "Type": "Hangup",
         "Parameters": {
@@ -146,7 +146,7 @@ The Audio Service answered an incoming call was answered. This event is returned
 **INVALID\_LAMBDA\_RESPONSE**
 The response provided to the last AWS Lambda invocation caused a problem. The `ActionData` includes these additional fields:
 
-```
+```json
     "ErrorType": "{{error-type-1}}",
     "ErrorMessage": "{{error-msg-1}}"
 ```
@@ -154,7 +154,7 @@ The response provided to the last AWS Lambda invocation caused a problem. The `A
 **DIGITS\_RECEIVED**
 The application received DTMF digits after completion of a `ReceiveDigits` action. The `ActionData` includes the received digits.
 
-```
+```json
     "ActionData": {
         "ReceivedDigits": {{###}}
         // The ReceiveDigits action data
@@ -164,7 +164,7 @@ The application received DTMF digits after completion of a `ReceiveDigits` actio
 **CALL\_UPDATE\_REQUESTED**
 The [UpdateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html) API was invoked. The `ActionData` includes information about the update request:
 
-```
+```json
     "ActionData": {
         "Type": "CallUpdateRequest",
         "Parameters": {

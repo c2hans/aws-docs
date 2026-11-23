@@ -58,7 +58,7 @@ then avoid the following cores:
 
 Check what affinity your service is currently configured to with command:
 
-```
+```bash
 systemctl show --property CPUAffinity <service name>
 ```
 
@@ -66,7 +66,7 @@ systemctl show --property CPUAffinity <service name>
 
 To override and set a specific affinity find the location of the service file by running:
 
-```
+```bash
 systemctl show -p FragmentPath <service name>
 ```
 
@@ -86,7 +86,7 @@ CPUAffinity=2,3
 
 Save the file and restart the service to apply the affinity with:
 
-```
+```bash
 systemctl daemon-reload
 systemctl restart <service name>
 
@@ -103,20 +103,20 @@ systemctl show --property CPUAffinity <service name>
 
 To avoid core conflicts for any running processes (such as python, bash scripts, etc.), launch the process with:
 
-```
+```bash
 taskset -c <core list> <command>
 # Example: taskset -c 8 ./bashScript.sh
 ```
 
  If the process is already running, use commands such as `pidof`, `top`, or `ps` to find the Process ID (PID) of the specific process. With the PID you can see current affinity with:
 
-```
+```bash
 taskset -p <pid>
 ```
 
  and can modify it with:
 
-```
+```bash
 taskset -p <core mask> <pid>
 # Example: taskset -p c 32392 (which sets it to cores 0xc -> 0b1100 -> cores 2,3)
 ```

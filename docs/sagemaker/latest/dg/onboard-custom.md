@@ -139,7 +139,7 @@ If the application has not been enabled, you receive a warning for that applicat
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [

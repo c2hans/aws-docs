@@ -11,7 +11,7 @@ Use the [ListDataAutomationLibraries](https://docs.aws.amazon.com/bedrock/latest
 
 **Request**
 
-```
+```bash
 aws bedrock-data-automation list-data-automation-libraries \
     --max-results 50
 ```

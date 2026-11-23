@@ -73,7 +73,7 @@ aws docdb describe-db-clusters ^
 
 Output from this operation looks something like the following.
 
-```
+```json
 [
     [
         "sample-cluster",

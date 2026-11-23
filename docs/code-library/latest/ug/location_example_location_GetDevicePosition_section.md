@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Retrieves the position of a device using the provided LocationClient.
      *
@@ -51,7 +51,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/actions#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import {
   GetDevicePositionCommand,
@@ -97,7 +97,7 @@ export const main = async () => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Retrieves the position of a device using the provided LocationClient.
  *

@@ -94,7 +94,7 @@ For more information, see [Use action types, custom actions, and approval action
 **Tools for PowerShell V4**
 **Example 1: This example gets information about all available actions for the specified owner.**
 
-```
+```powershell
 ForEach ($actionType in (Get-CPActionType -ActionOwnerFilter AWS)) {
   Write-Output ("For Category = " + $actionType.Id.Category + ", Owner = " + $actionType.Id.Owner + ", Provider = " + $actionType.Id.Provider + ", Version = " + $actionType.Id.Version + ":")
   Write-Output ("  ActionConfigurationProperties:")
@@ -172,7 +172,7 @@ For Category = Deploy, Owner = AWS, Provider = CodeDeploy, Version = 1:
 **Tools for PowerShell V5**
 **Example 1: This example gets information about all available actions for the specified owner.**
 
-```
+```powershell
 ForEach ($actionType in (Get-CPActionType -ActionOwnerFilter AWS)) {
   Write-Output ("For Category = " + $actionType.Id.Category + ", Owner = " + $actionType.Id.Owner + ", Provider = " + $actionType.Id.Provider + ", Version = " + $actionType.Id.Version + ":")
   Write-Output ("  ActionConfigurationProperties:")

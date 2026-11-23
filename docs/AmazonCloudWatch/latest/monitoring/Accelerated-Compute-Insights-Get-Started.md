@@ -26,7 +26,7 @@ Accelerator collection requires no per-accelerator configuration flags. A GPU no
 ## Enabling collection
 <a name="Accelerated-Compute-Insights-Get-Started-enable-addon"></a>
 
-Accelerated Compute Insights collects telemetry through the same `amazon-cloudwatch-observability` add-on that OTel Container Insights uses. If you have not installed the add-on yet, follow the setup in [Quick start: OTel Container Insights on Amazon EKS](container-insights-eks-otel-quickstart.md).
+Accelerated Compute Insights collects telemetry through the same `amazon-cloudwatch-observability` add-on that OTel Container Insights uses. If you have not installed the add-on yet, follow the setup in [OTel Container Insights quick start](container-insights-eks-otel-quickstart.md).
 
 For more information about the add-on and its configuration, see [OTel Container Insights (Recommended)](container-insights-eks-otel.md).
 

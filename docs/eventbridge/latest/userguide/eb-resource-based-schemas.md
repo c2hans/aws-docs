@@ -41,7 +41,7 @@ To grant a user access to all available APIs for EventBridge Schemas, use a poli
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -77,7 +77,7 @@ The following example grants access to an account for only the read-only APIs fo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -119,7 +119,7 @@ You can use resource-based policies with the EventBridge schema registry to gran
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

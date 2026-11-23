@@ -29,7 +29,7 @@ The following code samples demonstrate how to get online evaluation configuratio
 
 1.
 
-   ```
+   ```python
    from bedrock_agentcore_starter_toolkit import Evaluation
 
    # Initialize the evaluation client
@@ -47,7 +47,7 @@ The following code samples demonstrate how to get online evaluation configuratio
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client('bedrock-agentcore-control')
@@ -59,7 +59,7 @@ The following code samples demonstrate how to get online evaluation configuratio
 
 1.
 
-   ```
+   ```bash
    aws bedrock-agentcore-control get-online-evaluation-config \
        --online-evaluation-config-id your_config_id
    ```

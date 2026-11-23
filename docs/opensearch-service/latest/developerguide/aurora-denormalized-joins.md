@@ -28,7 +28,7 @@ This topic explains how to configure table joins in Aurora and Amazon RDS ingest
 
 The following YAML configuration shows how to define parent-child table relationships for the Aurora source plugin. This example configures a parent table with two child tables using different join types:
 
-```
+```YAML
 version: "2"
 aurora-joins-pipeline:
   source:
@@ -138,7 +138,7 @@ The OpenSearch document `_id` is set to the value of the parent table's primary 
 Version tracking
 The `version_field` (default: `__versions`) stores a map of per-table version counters:
 
-```
+```JSON
 "__versions": {
   "orders": 12345678901,
   "order_items": 12345678902,

@@ -25,7 +25,7 @@ aws ec2 cancel-export-task \
 **To cancel an export image task**
 Use the [Stop-EC2ExportTask](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2ExportTask.html) cmdlet.
 
-```
+```powershell
 Stop-EC2ExportTask `
     -ExportTaskId {{export-ami-1234567890abcdef0}}
 ```

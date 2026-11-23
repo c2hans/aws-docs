@@ -47,7 +47,7 @@ In the following policy, replace {{<s3-bucket-name>}} and {{<prefix>}} with the 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -96,7 +96,7 @@ In the following policy, replace {{<account-id>}} with a valid AWS account and r
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -151,7 +151,7 @@ In the following policy, replace {{<account-id>}} with a valid AWS account, and 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

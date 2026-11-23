@@ -19,7 +19,7 @@ For a tutorial that uses the AWS Management Console, see [How to configure local
 
 First, you use the `[CreateResourceDefinition](https://docs.aws.amazon.com/greengrass/v1/apireference/createresourcedefinition-post.html)` command to create a resource definition that specifies the resources to be accessed. In this example, we create two resources, `TestDirectory` and `TestCamera`:
 
-```
+```bash
 aws greengrass create-resource-definition  --cli-input-json '{
     "Name": "MyLocalVolumeResource",
     "InitialVersion": {
@@ -76,7 +76,7 @@ aws greengrass create-resource-definition  --cli-input-json '{
 
 A resource definition version ARN is returned by `[CreateResourceDefinition](https://docs.aws.amazon.com/greengrass/v1/apireference/createresourcedefinition-post.html)`. The ARN should be used when updating a group definition.
 
-```
+```json
 {
     "LatestVersionArn": "arn:aws:greengrass:us-west-2:012345678901:/greengrass/definition/resources/ab14d0b5-116e-4951-a322-9cde24a30373/versions/a4d9b882-d025-4760-9cfe-9d4fada5390d",
     "Name": "MyLocalVolumeResource",
@@ -93,7 +93,7 @@ A resource definition version ARN is returned by `[CreateResourceDefinition](htt
 
 After the resources are created, use the `[CreateFunctionDefinition](https://docs.aws.amazon.com/greengrass/v1/apireference/createfunctiondefinition-post.html)` command to create the Greengrass function and grant the function access to the resource:
 
-```
+```bash
 aws greengrass create-function-definition --cli-input-json '{
     "Name": "MyFunctionDefinition",
     "InitialVersion": {
@@ -133,7 +133,7 @@ aws greengrass create-function-definition --cli-input-json '{
 
 Again, `[CreateFunctionDefinition](https://docs.aws.amazon.com/greengrass/v1/apireference/createfunctiondefinition-post.html)` returns a function definition version ARN. The ARN should be used in your group definition version.
 
-```
+```json
 {
     "LatestVersionArn": "arn:aws:greengrass:us-west-2:012345678901:/greengrass/definition/functions/3c9b1685-634f-4592-8dfd-7ae1183c28ad/versions/37f0d50e-ef50-4faf-b125-ade8ed12336e",
     "Name": "MyFunctionDefinition",
@@ -150,7 +150,7 @@ Again, `[CreateFunctionDefinition](https://docs.aws.amazon.com/greengrass/v1/api
 
 Finally, use `[CreateGroupVersion](https://docs.aws.amazon.com/greengrass/v1/apireference/creategroupversion-post.html)` to add the function to the group. For example:
 
-```
+```bash
 aws greengrass create-group-version --group-id "b36a3aeb-3243-47ff-9fa4-7e8d98cd3cf5" \
 --resource-definition-version-arn "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/db6bf40b-29d3-4c4e-9574-21ab7d74316c/versions/31d0010f-e19a-4c4c-8098-68b79906fb87" \
 --core-definition-version-arn "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/adbf3475-f6f3-48e1-84d6-502f02729067/versions/297c419a-9deb-46dd-8ccc-341fc670138b" \
@@ -163,7 +163,7 @@ To learn how to get the group ID to use with this command, see [Getting the grou
 
 A new group version is returned:
 
-```
+```json
 {
     "Arn": "arn:aws:greengrass:us-west-2:012345678901:/greengrass/groups/b36a3aeb-3243-47ff-9fa4-7e8d98cd3cf5/versions/291917fb-ec54-4895-823e-27b52da25481",
     "Version": "291917fb-ec54-4895-823e-27b52da25481",
@@ -176,7 +176,7 @@ Your Greengrass group now contains the *lraTest* Lambda function that has access
 
 This example Lambda function, `lraTest.py`, written in Python, writes to the local volume resource:
 
-```
+```python
 # Demonstrates a simple use case of local resource access.
 # This Lambda function writes a file test to a volume mounted inside
 # the Lambda environment under destLRAtest. Then it reads the file and
@@ -225,7 +225,7 @@ These commands are provided by the Greengrass API to create and manage resource 
 <a name="lra-faqs"></a>
 + **Q:** Why does my Greengrass group deployment fail with an error similar to:
 
-  ```
+  ```bash
   group config is invalid:
       ggc_user or [ggc_group root tty] don't have ro permission on the file: /dev/tty0
   ```
@@ -233,7 +233,7 @@ These commands are provided by the Greengrass API to create and manage resource 
   **A:** This error indicates that the Lambda process doesn't have permission to access the specified resource. The solution is to change the file permission of the resource so that Lambda can access it. (See [Group owner file access permission](access-local-resources.md#lra-group-owner) for details).
 + **Q:** When I configure `/var/run` as a volume resource, why does the Lambda function fail to start with an error message in the runtime.log:
 
-  ```
+  ```bash
   [ERROR]-container_process.go:39,Runtime execution error: unable to start lambda container.
   container_linux.go:259: starting container process caused "process_linux.go:345:
   container init caused \"rootfs_linux.go:62: mounting \\\"/var/run\\\" to rootfs \\\"/greengrass/ggc/packages/1.3.0/rootfs_sys\\\" at \\\"/greengrass/ggc/packages/1.3.0/rootfs_sys/run\\\"
@@ -243,7 +243,7 @@ These commands are provided by the Greengrass API to create and manage resource 
   **A:** AWS IoT Greengrass core currently doesn't support the configuration of `/var`, `/var/run`, and `/var/lib` as volume resources. One workaround is to first mount `/var`, `/var/run` or `/var/lib` in a different folder and then configure the folder as a volume resource.
 + **Q:** When I configure `/dev/shm` as a volume resource with read-only permission, why does the Lambda function fail to start with an error in the runtime.log:
 
-  ```
+  ```bash
   [ERROR]-container_process.go:39,Runtime execution error: unable to start lambda container.
   container_linux.go:259: starting container process caused "process_linux.go:345:
   container init caused \"rootfs_linux.go:62: mounting \\\"/dev/shm\\\" to rootfs \\\"/greengrass/ggc/packages/1.3.0/rootfs_sys\\\" at \\\"/greengrass/ggc/packages/1.3.0/rootfs_sys/dev/shm\\\"

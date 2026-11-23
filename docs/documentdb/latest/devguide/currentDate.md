@@ -58,7 +58,7 @@ To view a code example for using the `$currentDate` command, choose the tab for 
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function updateUserWithCurrentDate() {
@@ -81,7 +81,7 @@ updateUserWithCurrentDate();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def update_user_with_current_date():

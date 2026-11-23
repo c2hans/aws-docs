@@ -140,13 +140,13 @@ Resolving this requires disconnecting and deleting the existing source server fr
 
 To test connectivity on Linux, run the following command on the source server:
 
-```
+```bash
 $ curl -v https://drs.{{region}}.amazonaws.com
 ```
 
 To test connectivity on Windows, run the following command on the source server:
 
-```
+```powershell
 Test-NetConnection drs.{{region}}.amazonaws.com -Port 443
 ```
 
@@ -236,7 +236,7 @@ AWS Elastic Disaster Recovery volume limits:
 
 **Resolution:** On Linux, run the installer with `sudo`:
 
-```
+```bash
 $ sudo ./aws-replication-installer-init
 ```
 

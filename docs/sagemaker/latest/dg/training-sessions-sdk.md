@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-sessions-sd
 
 Use the SDK for the training session APIs (`sagemaker.train.training_session`) to drive a training loop from your own Python process. Your code issues each step — a forward and backward pass, an optimizer step, sampling, saving or loading a checkpoint — and SageMaker AI manages the infrastructure and the base model. This page describes the behavior you need to write a correct loop.
 
-```
+```shell
 pip install sagemaker-train
 ```
 
 ## At a glance
 <a name="training-sessions-sdk-glance"></a>
 
-```
+```python
 from sagemaker.train.training_session import ServiceClient, AdamParams, Datum, ModelInput
 
 PAIRS = [
@@ -75,7 +75,7 @@ The following diagram shows which factory method creates each client:
 
 Each factory has an `*_async` twin that takes the same arguments and returns the same client. Creating a session waits for it to become ready, which takes from seconds to several minutes depending on the model. The `_async` form performs that wait without blocking the event loop.
 
-```
+```python
 tc = await svc.create_lora_training_client_async(base_model="...", rank=32)
 ```
 
@@ -92,7 +92,7 @@ The following diagram compares two ways to run `forward_backward` and `optim_ste
 
 The following loop uses the pipelined pattern.
 
-```
+```python
 for batch in data_loader:
     fwd_bwd = tc.forward_backward(batch, loss_fn="ppo")
     optim = tc.optim_step()
@@ -114,7 +114,7 @@ What an `*_async` method returns depends on whether the operation is ordered.
 
 Training operations run in the order you submit them, so the coroutine returns a future and you choose when to wait. Sampling operations are independent, so the coroutine returns the result directly.
 
-```
+```python
 # Training: two awaits
 fwd_bwd = await tc.forward_backward_async(batch, loss_fn="ppo")
 result = await fwd_bwd
@@ -128,7 +128,7 @@ response = await sc.sample_async(prompt, num_samples=4, sampling_params=params)
 
 Each `sample` call takes one prompt. `SamplingParams.max_tokens` defaults to 512, which is also the smallest value the service accepts. Sampling operations are independent, so keep many in flight to raise throughput.
 
-```
+```python
 results = await asyncio.gather(*(
     sc.sample_async(p, num_samples=4, sampling_params=params)
     for p in prompts
@@ -137,7 +137,7 @@ results = await asyncio.gather(*(
 
 Synchronous code achieves the same by submitting every call before collecting any:
 
-```
+```python
 ops = [sc.sample(p, num_samples=4, sampling_params=params) for p in prompts]
 results = [op.result() for op in ops]
 ```
@@ -177,7 +177,7 @@ The diagram shows the following paths:
 
 Restore with the method that names what you want:
 
-```
+```python
 tc.load_state(arn).result()                 # weights only; optimizer resets
 tc.load_state_with_optimizer(arn).result()  # weights and optimizer
 ```
@@ -187,7 +187,7 @@ tc.load_state_with_optimizer(arn).result()  # weights and optimizer
 
 A session is compute and cannot be reattached by name. The checkpoint is durable on its own, so checkpoint periodically and resume by starting a new session from the latest one.
 
-```
+```python
 if step % checkpoint_every == 0:
     tc.save_state(description=f"step {step}").result()
 
@@ -208,7 +208,7 @@ Each saved package consumes Amazon S3 storage until you remove it. `delete_model
 
 `forward_backward` accepts token ID lists or strings. For control over the loss, pass `Datum` objects.
 
-```
+```python
 from sagemaker.train.training_session import Datum, ModelInput, TensorData, TensorDtype
 
 # Prompt [101, 2023], response [3456, 7890]. Input drops the last token.
@@ -231,24 +231,69 @@ Each loss function requires specific `loss_fn_inputs` keys. Omitting one fails t
 | cross\_entropy | target\_tokens, weights |
 | ppo, importance\_sampling, cispo | target\_tokens, weights, logprobs, advantages |
 
-Two requirements apply to every value: the length matches the model input (provide one value per input token, with `0` at positions you do not want scored; a length that disagrees with the token count is rejected), and `weights` masks the prompt. `weights[i]` applies to `target_tokens[i]`, the token that follows position `i`. Use `0` where the target is a prompt token and `1` where it is a response token, so the loss counts only the response.
+Every value in `loss_fn_inputs` follows two rules:
++ **One value for each input token.** Use `0` at positions to skip.
++ **`weights` masks the prompt.** `weights[i]` scores `target_tokens[i]`, the token after position `i`. Use `0` for prompt targets and `1` for response targets.
 
-`TensorData` accepts torch tensors and numpy arrays and converts them when the operation is sent. To pass strings rather than token IDs, call `get_tokenizer()` on a `TrainingClient` or `SamplingClient`. This loads the base model HuggingFace tokenizer and requires the tokenizer extra: `pip install 'sagemaker-train[tokenizer]'`.
+`TensorData` takes torch tensors and numpy arrays. You can also pass strings instead of token IDs, and the SDK tokenizes them for you. This needs `pip install 'sagemaker-train[tokenizer]'`. To get token IDs yourself, call `get_tokenizer()`.
+
+For reinforcement learning, build one datum for each sampled response, adding the sampled `logprobs` and an advantage for each response token. The advantage here is each response's reward minus its group's mean, so swap in your own. The following Python example defines `build_batch`, which you can adapt:
+
+```python
+from sagemaker.train.training_session import Datum, ModelInput
+
+def build_batch(prompts, responses, rewards):
+    batch = []
+    for prompt, response, group_rewards in zip(prompts, responses, rewards):
+        baseline = sum(group_rewards) / len(group_rewards)
+        for seq, reward in zip(response.sequences, group_rewards):
+            tokens = prompt + seq.tokens
+            prompt_len = len(prompt)
+            response_len = len(tokens) - prompt_len
+            batch.append(Datum(
+                model_input=ModelInput.from_ints(tokens[:-1]),
+                loss_fn_inputs={
+                    "target_tokens": tokens[1:],
+                    "weights": [0.0] * (prompt_len - 1) + [1.0] * response_len,
+                    "logprobs": [0.0] * (prompt_len - 1) + list(seq.logprobs),
+                    "advantages": [0.0] * (prompt_len - 1) + [reward - baseline] * response_len,
+                },
+            ))
+    return batch
+```
 
 ## On-policy sampling
 <a name="training-sessions-sdk-on-policy"></a>
 
-A `SamplingClient` is bound to the weights that existed when you created it. A later `save_weights_for_sampler` does not change what it samples, and reusing it raises no error — rewards simply stop improving. Rebind after every update:
+A `SamplingClient` samples from the weights it was created with, so each client holds one fixed policy. To sample from the latest weights, call `save_weights_and_get_sampling_client()` after each update. It saves the weights and returns a client bound to them.
 
-```
+The following Python example runs the loop with `build_batch` from [Training data](#training-sessions-sdk-training-data). Each prompt is a list of token IDs built from your `questions`, and `answers` holds the expected answer for each question. `reward_fn` scores one response against its answer and returns a float. Replace it with your own check:
+
+```python
+from sagemaker.train.training_session import AdamParams, SamplingParams
+
+tok = tc.get_tokenizer()
+prompts = [tok.encode(q, add_special_tokens=False) for q in questions]
+params = SamplingParams(max_tokens=512)
+num_steps = 100
+
+def reward_fn(response_tokens, answer):
+    # 1.0 when the response ends with the expected answer, else 0.0.
+    text = tok.decode(response_tokens, skip_special_tokens=True)
+    return 1.0 if text.strip().endswith(answer) else 0.0
+
 sc = tc.create_sampling_client()
 for step in range(num_steps):
     ops = [sc.sample(p, num_samples=4, sampling_params=params) for p in prompts]
-    rollouts = [op.result() for op in ops]
-    tc.forward_backward(build_batch(rollouts), loss_fn="ppo").result()
+    responses = [op.result() for op in ops]
+    rewards = [[reward_fn(seq.tokens, a) for seq in response.sequences]
+               for a, response in zip(answers, responses)]
+    tc.forward_backward(build_batch(prompts, responses, rewards), loss_fn="ppo").result()
     tc.optim_step(AdamParams(learning_rate=1e-5)).result()
     sc = tc.save_weights_and_get_sampling_client()
 ```
+
+For more information about complete loops with evaluation and checkpointing, see [End-to-end examples](training-sessions-example.md).
 
 ## Sessions
 <a name="training-sessions-sdk-sessions"></a>

@@ -31,7 +31,7 @@ You need the model ID for the model that you want to use. To get the model ID, s
 
 Mistral AI Large (24.07) invoke model example.
 
-```
+```json
 import boto3
 import json
 
@@ -56,7 +56,7 @@ print(json.dumps(json.loads(response['body']), indent=4))
 
 Mistral AI Large (24.07) converse example.
 
-```
+```json
 import boto3
 import json
 
@@ -83,7 +83,7 @@ print(json.dumps(json.loads(response['body']), indent=4))
 
 Mistral AI Large (24.07) invoke\_model\_with\_response\_stream example.
 
-```
+```json
 import boto3
 import json
 
@@ -109,7 +109,7 @@ if stream:
 
 Mistral AI Large (24.07) converse\_stream example.
 
-```
+```json
 import boto3
 import json
 
@@ -152,7 +152,7 @@ mistral_params = {
 
 Mistral AI Large (24.07) JSON output example.
 
-```
+```json
 import boto3
 import json
 
@@ -174,7 +174,7 @@ print(json.loads(body))
 
 Mistral AI Large (24.07) tools example.
 
-```
+```json
 data = {
     'transaction_id': ['T1001', 'T1002', 'T1003', 'T1004', 'T1005'],
     'customer_id': ['C001', 'C002', 'C003', 'C002', 'C001'],

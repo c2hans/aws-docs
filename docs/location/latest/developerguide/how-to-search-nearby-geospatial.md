@@ -27,7 +27,7 @@ The following example demonstrates how to search for schools within a 1000-meter
 
 This request searches for schools within a 1000-meter (1-kilometer) radius.
 
-```
+```json
 {
     "QueryPosition": [
                  -122.741803,
@@ -44,7 +44,7 @@ This request searches for schools within a 1000-meter (1-kilometer) radius.
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -113,7 +113,7 @@ This request searches for schools within a 1000-meter (1-kilometer) radius.
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/search-nearby?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -132,7 +132,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places search-nearby --key ${YourKey} \
 --query-position -122.741803 49.002478 \
 --query-radius 1000 \

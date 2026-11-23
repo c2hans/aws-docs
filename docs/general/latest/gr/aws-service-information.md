@@ -9,6 +9,7 @@ The following pages describe the service endpoints and service quotas for AWS se
 Choose one of the following links to go to the page for that service. To view the service quotas for all AWS services in the documentation without switching pages, view the information in the [Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/aws-general.pdf#aws-service-information) page in the PDF instead.
 
 **Topics**
++ [AWS Abuse Signal API](abuse-signal.md)
 + [Account access management](account-access.md)
 + [Amazon AI Operations](aiops_region.md)
 + [Amplify](amplify.md)

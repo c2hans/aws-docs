@@ -25,7 +25,7 @@ The following example policy demonstrates how to customize and scope the permiss
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -56,7 +56,7 @@ To set up an EventBridge rule using the AWS Management Console, follow the steps
 
 Following is an example of an event rule:
 
-```
+```json
 {
     "source": ["aws.partnercentral-selling"],
     "detail": {
@@ -72,7 +72,7 @@ You can use the AWS SDKs to create and manage EventBridge rules programmatically
 
 The following example uses the AWS SDK for Python (Boto3):
 
-```
+```python
 import boto3
 
 client = boto3.client('events', region_name='us-east-1')
@@ -165,7 +165,7 @@ Partners use this event to:
 
 The following example shows a typical Opportunity Created event.
 
-```
+```json
 {
     "version": "1",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -193,7 +193,7 @@ Partners use this event to:
 
 The following example shows a typical Opportunity Updated event.
 
-```
+```json
 {
     "version": "1",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -221,7 +221,7 @@ Partners use this event to:
 
 The following example shows a typical Engagement Invitation Created event.
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -260,7 +260,7 @@ Partners use this event to:
 
 The following example shows a typical Engagement Invitation Accepted event.
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -295,7 +295,7 @@ Partners use this event to:
 
 The following example shows a typical Engagement Invitation Rejected event.
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -330,7 +330,7 @@ Partners use this event to:
 
 The following example shows a typical Engagement Invitation Expired event.
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -367,7 +367,7 @@ Partners use this event to:
 
 The following example shows a typical Engagement Member Added event.
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -407,7 +407,7 @@ Partners use this event to track changes to resources associated with an engagem
 
 The following example shows a typical Engagement Resource Snapshot Created event.
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -443,7 +443,7 @@ Partners use this event to:
 
 The following example shows a typical Engagement Created event.
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",
@@ -478,7 +478,7 @@ Partners use this event to:
 
 The following example shows a typical Engagement Updated event.
 
-```
+```json
 {
     "version": "0",
     "id": "01234567-0123-0123-0123-0123456789ab",

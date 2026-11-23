@@ -139,7 +139,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-directory-users-and-groups-add-group-to-group-ex-min"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-AddADGroupToADGroup-Admin",
   "Region" : "us-east-1",
@@ -154,7 +154,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-directory-users-and-groups-add-group-to-group-ex-max"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-AddADGroupToADGroup-Admin",
   "Region" : "us-east-1",

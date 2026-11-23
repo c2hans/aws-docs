@@ -83,7 +83,7 @@ To set up this account access, ensure that the IAM role used to create the targe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -395,7 +395,7 @@ The following procedures describe how to do this.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -472,7 +472,7 @@ When you create this key, you can only create a symmetric key, because all AWS s
 
 ****
 
-   ```
+   ```json
    {
        "Id": "key-consolepolicy-3",
        "Version":"2012-10-17",
@@ -741,7 +741,7 @@ For Amazon Athena to index your Amazon S3 data, and for you to query your data u
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

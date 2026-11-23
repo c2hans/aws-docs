@@ -145,7 +145,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-elastic-file-system-efs-create-ex-min"></a>
 
-```
+```json
 {
   "Description": "This is a test description",
   "Name": "Test Stack",
@@ -166,7 +166,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-elastic-file-system-efs-create-ex-max"></a>
 
-```
+```json
 {
   "Description": "This is a test description",
   "Name": "Test Stack",

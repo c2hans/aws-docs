@@ -70,7 +70,7 @@ You can attach the following example policy to your IAM role. This policy allows
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -123,7 +123,7 @@ After you create the policy, you must create an IAM role, and then attach the po
 
 ****
 
-   ```
+   ```json
    {
    	"Version":"2012-10-17",
    	"Statement": [

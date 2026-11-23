@@ -39,7 +39,7 @@ For information about SVL\_S3LIST, see [SVL\_S3LIST](r_SVL_S3LIST.md).
 
 The following example queries SVCS\_S3LIST for the last query performed.
 
-```
+```sql
 select *
 from svcs_s3list
 where query = pg_last_query_id()

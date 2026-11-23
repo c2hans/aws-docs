@@ -77,6 +77,7 @@ The following data types are supported:
 +  [GitLabRepositoryMetadata](API_GitLabRepositoryMetadata.md)
 +  [GitLabRepositoryResource](API_GitLabRepositoryResource.md)
 +  [GitLabResourceCapabilities](API_GitLabResourceCapabilities.md)
++  [GroupMetadata](API_GroupMetadata.md)
 +  [HttpVerification](API_HttpVerification.md)
 +  [IdCConfiguration](API_IdCConfiguration.md)
 +  [ImportSource](API_ImportSource.md)

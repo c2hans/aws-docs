@@ -8,7 +8,7 @@ The AWS IoT rules engine uses an SQL-like syntax to select data from MQTT messag
 
 The following JSON example shows you how to specify the SQL version using the `awsIotSqlVersion` property.
 
-```
+```JSON
 {
     "sql": "expression",
     "ruleDisabled": false,
@@ -40,7 +40,7 @@ AWS IoT currently supports the following SQL versions:
 
 This feature allows a rule to return an array as a top-level object. For example, given the following MQTT message:
 
-```
+```JSON
 {
     "a": {"b":"c"},
     "arr":[1,2,3,4]

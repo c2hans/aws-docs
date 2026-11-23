@@ -58,7 +58,7 @@ https://sns.us-west-2.amazonaws.com/?Action=DeleteEndpoint
 #### Sample Response
 <a name="API_DeleteEndpoint_Example_1_Response"></a>
 
-```
+```xml
 <DeleteEndpointResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ResponseMetadata>
         <RequestId>c1d2b191-353c-5a5f-8969-fbdd3900afa8</RequestId>

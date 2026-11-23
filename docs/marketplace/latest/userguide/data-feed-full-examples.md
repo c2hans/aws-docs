@@ -21,7 +21,7 @@ To find your agreement and renewal data, you can run a set of queries like the f
 
 Comments in the queries explain what the queries do, and how to modify them.
 
-```
+```sql
       Query currently under development.
 ```
 
@@ -32,7 +32,7 @@ To find your invoice data, you can run a set of queries like the following examp
 
 Comments in the queries explain what the queries do, and how to modify them.
 
-```
+```sql
 -- Billed revenue report
 
 -- General note: When executing this query we are assuming that the data ingested in the database uses
@@ -1725,7 +1725,7 @@ To find your uncollected or disbursed invoices, you can run a set of queries lik
 
 Comments in the queries explain what the queries do, and how to modify them.
 
-```
+```sql
 -- Collections and disbursements report
 
 -- General note: When running this query, we assume that the data ingested in the database uses
@@ -3716,7 +3716,7 @@ To find your taxed invoices, you can run a set of queries like the following exa
 
 The comments in the queries explain what the queries do, and how to modify them.
 
-```
+```sql
 -- Taxation report
 
 -- General note: When executing this query we are assuming that the data ingested in the database is using
@@ -4004,7 +4004,7 @@ Comments in the queries explain what the queries do, and how to modify them.
 **Note**
 When running this query, we assume that the data is ingested using two time axes, the `valid_from` and `update` columns. For more information about the axes, see [Storage and structure of AWS Marketplace data feeds](data-feed-details.md).
 
-```
+```sql
     -- Get all the products and keep the latest product_id, valid_from tuple
     with products_with_uni_temporal_data as (
       select
@@ -4299,7 +4299,7 @@ To find the billed revenue by customer, you can run a set of queries like the fo
 **Note**
 When running this query, we are assuming that the data ingested is using two time axes (the `valid_from` and `update` columns). For more information, see [Storage and structure of AWS Marketplace data feeds](data-feed-details.md).
 
-```
+```sql
     -- Gets all the products and keeps the latest product_id,
     -- valid_from tuple.
     with products_with_uni_temporal_data as (

@@ -133,14 +133,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-acm-delete-certificate-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-advanced-acm-delete-certificate-ex-max"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-DeleteACMCertificate",
   "Region" : "us-east-1",

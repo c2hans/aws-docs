@@ -56,7 +56,7 @@ This procedure assumes that you've already installed and configured the AWS CLI.
 
 1. In a text editor, create a new file and paste the following code customizing it as you need.
 
-   ```
+   ```json
    {
        "TemplateName": "MyTemplate",
        "TemplateContent": {
@@ -105,7 +105,7 @@ You can use the [`SendEmail`](https://docs.aws.amazon.com/ses/latest/APIReferenc
 
    Notice that the template you created in the previous step, *MyTemplate*, is being referenced as the value for the `TemplateName` parameter.
 
-   ```
+   ```json
    {
        "FromEmailAddress": "Mary Major <mary.major@example.com>",
        "Destination": {
@@ -195,7 +195,7 @@ You can use the [`SendBulkEmail`](https://docs.aws.amazon.com/ses/latest/APIRefe
 
    Notice that the template you created in the previous step, *MyTemplate*, is being referenced as the value for the `TemplateName` parameter.
 
-   ```
+   ```json
    {
        "FromEmailAddress": "Mary Major <mary.major@example.com>",
        "DefaultContent": {

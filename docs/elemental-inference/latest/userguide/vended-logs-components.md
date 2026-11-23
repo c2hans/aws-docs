@@ -23,7 +23,7 @@ Optional. Additional structured context for the event, such as a related resourc
 
 The following example shows an `ERROR` record that Elemental Inference emitted for a feed.
 
-```
+```json
 {
   "resource_arn": "arn:aws:elemental-inference:us-west-2:111122223333:feed/abc123example",
   "event_timestamp": 1786646699596,

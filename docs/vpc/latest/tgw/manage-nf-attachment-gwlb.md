@@ -19,7 +19,7 @@ Before you create the attachment, you must have a Gateway Load Balancer with hea
 
 If the transit gateway and endpoint service are in different AWS accounts, the endpoint service owner must allow the transit gateway owner's account to connect. Use the `modify-vpc-endpoint-service-permissions` command with the `transit-gateway-attachment` permission type. This permission type supports only an AWS account principal, specified using its root ARN. For more information, see [Manage permissions](https://docs.aws.amazon.com/vpc/latest/privatelink/configure-endpoint-service.html#add-remove-permissions) in the *AWS PrivateLink Guide*.
 
-```
+```bash
 aws ec2 modify-vpc-endpoint-service-permissions \
   --service-id <vpce-svc-id> \
   --permission-type transit-gateway-attachment \
@@ -62,7 +62,7 @@ Create the attachment by specifying the transit gateway, Gateway Load Balancer V
 **To create the attachment using the AWS CLI or API**
 Use `create-transit-gateway-network-function-attachment`. Specify Availability Zones by name with `--availability-zones`, by ID with `--availability-zone-ids`, or by using both options. The following example uses Availability Zone IDs.
 
-```
+```bash
 aws ec2 create-transit-gateway-network-function-attachment \
   --transit-gateway-id tgw-0123456789abcdef0 \
   --service-name <gwlb-endpoint-service-name> \
@@ -71,7 +71,7 @@ aws ec2 create-transit-gateway-network-function-attachment \
 
 To specify the Availability Zones by name, use `--availability-zones`.
 
-```
+```bash
 aws ec2 create-transit-gateway-network-function-attachment \
   --transit-gateway-id tgw-0123456789abcdef0 \
   --service-name <gwlb-endpoint-service-name> \
@@ -111,7 +111,7 @@ When you add an Availability Zone, Transit Gateway creates a Gateway Load Balanc
 **To modify the attachment using the AWS CLI or API**
 Use `modify-transit-gateway-network-function-attachment`. To add Availability Zones, use `--add-availability-zones` or `--add-availability-zone-ids`. To remove Availability Zones, use `--remove-availability-zones` or `--remove-availability-zone-ids`.
 
-```
+```bash
 aws ec2 modify-transit-gateway-network-function-attachment \
   --transit-gateway-attachment-id tgw-attach-0123456789abcdef0 \
   --add-availability-zone-ids <az-id-1> \
@@ -150,7 +150,7 @@ For an AWS Network Firewall attachment, don't delete the attachment from the tra
 **To delete the attachment using the AWS CLI or API**
 Use `delete-transit-gateway-network-function-attachment`.
 
-```
+```bash
 aws ec2 delete-transit-gateway-network-function-attachment \
   --transit-gateway-attachment-id <attachment-id>
 ```

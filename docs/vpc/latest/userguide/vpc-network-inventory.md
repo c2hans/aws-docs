@@ -406,7 +406,7 @@ aws ec2 describe-dhcp-options \
 
 The following is example output for a VPC that uses the default DHCP options.
 
-```
+```json
 {
     "DhcpOptions": [
         {

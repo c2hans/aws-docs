@@ -45,7 +45,7 @@ If you haven't already, install and configure the AWS Command Line Interface (AW
 ------
 #### [ Linux & macOS ]
 
-  ```
+  ```sh
   aws ssm put-parameter \
       --name "/d9d01087-4a3f-49e0-b0b4-d568d7826553/ssm/integrations/webhook/{{myWebhookIntegration}}" \
       --type "SecureString" \
@@ -56,7 +56,7 @@ If you haven't already, install and configure the AWS Command Line Interface (AW
 ------
 #### [ Windows ]
 
-  ```
+  ```sh
   aws ssm put-parameter ^
       --name "/d9d01087-4a3f-49e0-b0b4-d568d7826553/ssm/integrations/webhook/{{myWebhookIntegration}}" ^
       --type "SecureString" ^
@@ -67,7 +67,7 @@ If you haven't already, install and configure the AWS Command Line Interface (AW
 ------
 #### [ PowerShell ]
 
-  ```
+  ```ps
   Write-SSMParameter `
       -Name "/d9d01087-4a3f-49e0-b0b4-d568d7826553/ssm/integrations/webhook/{{myWebhookIntegration}}" `
       -Type "SecureString"

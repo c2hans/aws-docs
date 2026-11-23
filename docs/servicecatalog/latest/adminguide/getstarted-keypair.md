@@ -8,7 +8,7 @@ To enable your end users to launch the product that is based on the sample templ
 
 The CloudFormation template for this tutorial, `development-environment.template`, includes the `KeyName` parameter:
 
-```
+```json
 . . .
   "Parameters" : {
     "KeyName": {

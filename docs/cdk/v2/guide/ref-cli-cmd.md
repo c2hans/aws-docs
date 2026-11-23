@@ -168,7 +168,7 @@ Include `aws::cdk::path` AWS CloudFormation metadata for each resource.
 Name or path of a node package that extends CDK features. This option can be provided multiple times in a single command.
 You can configure this option in the project’s `cdk.json` file or at `~/.cdk.json` on your local development machine:
 
-```
+```json
 {
    // ...
    "plugin": [

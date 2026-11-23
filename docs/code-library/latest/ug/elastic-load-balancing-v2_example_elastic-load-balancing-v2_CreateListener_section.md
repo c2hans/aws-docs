@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/ElasticLoadBalancerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an Elastic Load Balancing load balancer that uses the specified subnets
     /// and forwards requests to the specified target group.
@@ -353,7 +353,7 @@ For more information, see [Getting started with Gateway Load Balancers using the
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 
-```
+```java
     /*
      * Creates an Elastic Load Balancing load balancer that uses the specified
      * subnets
@@ -425,7 +425,7 @@ For more information, see [Getting started with Gateway Load Balancers using the
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
     const client = new ElasticLoadBalancingV2Client({});
     const { Listeners } = await client.send(
       new CreateListenerCommand({
@@ -446,7 +446,7 @@ For more information, see [Getting started with Gateway Load Balancers using the
 **Tools for PowerShell V4**
 **Example 1: This example creates new ALB listener with the default action 'Forward' to send traffic to specified Target Group.**
 
-```
+```powershell
 $defaultAction = [Amazon.ElasticLoadBalancingV2.Model.Action]@{
   ForwardConfig = @{
     TargetGroups = @(
@@ -478,7 +478,7 @@ SslPolicy       :
 **Tools for PowerShell V5**
 **Example 1: This example creates new ALB listener with the default action 'Forward' to send traffic to specified Target Group.**
 
-```
+```powershell
 $defaultAction = [Amazon.ElasticLoadBalancingV2.Model.Action]@{
   ForwardConfig = @{
     TargetGroups = @(
@@ -513,7 +513,7 @@ SslPolicy       :
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/elastic-load-balancing#code-examples).
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 

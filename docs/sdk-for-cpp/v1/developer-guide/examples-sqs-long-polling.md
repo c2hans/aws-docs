@@ -24,7 +24,7 @@ To enable long polling when creating an Amazon SQS queue, set the `ReceiveMessag
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/sqs/SQSClient.h>
 #include <aws/sqs/model/CreateQueueRequest.h>
@@ -33,7 +33,7 @@ To enable long polling when creating an Amazon SQS queue, set the `ReceiveMessag
 
  **Code**
 
-```
+```cpp
     Aws::SQS::SQSClient sqsClient(clientConfiguration);
 
     Aws::SQS::Model::CreateQueueRequest request;
@@ -62,7 +62,7 @@ In addition to enabling long polling when creating a queue, you can also enable 
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/sqs/SQSClient.h>
 #include <aws/sqs/model/SetQueueAttributesRequest.h>
@@ -71,7 +71,7 @@ In addition to enabling long polling when creating a queue, you can also enable 
 
  **Code**
 
-```
+```cpp
     Aws::SQS::SQSClient sqsClient(clientConfiguration);
 
     Aws::SQS::Model::SetQueueAttributesRequest request;
@@ -105,7 +105,7 @@ You should make sure that the AWS client’s request timeout is larger than the 
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/sqs/SQSClient.h>
 #include <aws/sqs/model/ReceiveMessageRequest.h>
@@ -113,7 +113,7 @@ You should make sure that the AWS client’s request timeout is larger than the 
 
  **Code**
 
-```
+```cpp
     Aws::SQS::SQSClient sqsClient(customConfiguration);
 
     Aws::SQS::Model::ReceiveMessageRequest request;

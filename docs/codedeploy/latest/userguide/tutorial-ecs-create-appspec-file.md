@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-ecs
 ------
 #### [ JSON AppSpec ]
 
-   ```
+   ```json
    {
      "version": 0.0,
      "Resources": [

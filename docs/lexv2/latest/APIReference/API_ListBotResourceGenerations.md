@@ -150,7 +150,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of ListBotResourceGenerations.
 
-```
+```json
 POST https://models-v2-lex.us-east-1.amazonaws.com/bots/BOT1234567/botversions/DRAFT/botlocales/en_GB/generations
 
 Payload:
@@ -168,7 +168,7 @@ Payload:
 
 This example illustrates one usage of ListBotResourceGenerations.
 
-```
+```json
 {
     "botId": "BOT1234567",
     "botVersion": "DRAFT",

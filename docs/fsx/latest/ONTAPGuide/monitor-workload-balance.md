@@ -37,7 +37,7 @@ If you notice that your file server performance utilization is imbalanced—and 
 ## Mapping CloudWatch dimensions to ONTAP CLI and REST API resources
 <a name="map-dimensions-to-resources"></a>
 
-Your second-generation file system has Amazon CloudWatch metrics with the `FileServer` or `Aggregate` dimension. In order to further diagnose cases of imbalance, you need to map these dimension values to specific file servers (or *nodes*) and aggregates in the ONTAP CLI or REST API.
+Your second-generation or third-generation file system has Amazon CloudWatch metrics with the `FileServer` or `Aggregate` dimension. In order to further diagnose cases of imbalance, you need to map these dimension values to specific file servers (or *nodes*) and aggregates in the ONTAP CLI or REST API.
 + For file servers, each file server name maps to a file server (or node) name in ONTAP (for example, `FsxId01234567890abcdef-01`). Odd-numbered file servers are preferred file servers (that is, they service traffic unless the file system has failed over to the secondary file server), while even-numbered file servers are secondary file servers (that is, they serve traffic only when their partner is unavailable). Because of this, secondary file servers will typically show less utilization than preferred file servers.
 + For aggregates, each aggregate name maps to an aggregate in ONTAP (for example, `aggr1`). There is one aggregate for every HA pair, meaning aggregate `aggr1` is shared by file servers `FsxId01234567890abcdef-01` (the active file server) and `FsxId01234567890abcdef-02` (the secondary file server) in an HA pair, aggregate `aggr2` is shared by file servers `FsxId01234567890abcdef-03` and `FsxId01234567890abcdef-04`, and so on.
 

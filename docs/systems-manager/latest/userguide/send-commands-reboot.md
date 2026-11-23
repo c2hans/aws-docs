@@ -15,7 +15,7 @@ When developing scripts that reboot managed nodes, make the scripts idempotent s
 
 Here is an outline example of an idempotent script that reboots a managed node multiple times.
 
-```
+```ps
 $name = Get current computer name
 If ($name –ne $desiredName)
     {
@@ -44,7 +44,7 @@ The following script samples use exit codes to restart managed nodes. The Linux 
 ------
 #### [ Amazon Linux 2 ]
 
-```
+```bash
 #!/bin/bash
 yum -y update
 needs-restarting -r
@@ -59,7 +59,7 @@ fi
 ------
 #### [ Windows ]
 
-```
+```powershell
 $telnet = Get-WindowsFeature -Name Telnet-Client
 if (-not $telnet.Installed)
     {

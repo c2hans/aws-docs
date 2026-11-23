@@ -19,7 +19,7 @@ AWS Service Management Connector allows AWS Managed Services (AMS) Accelerate us
 
    The Amazon EventBridge rule should have the following event pattern and should point to the SQS queue created in Step 2.
 
-   ```
+   ```json
    EventPattern":{
       "source":[
          "aws.support"

@@ -9,6 +9,8 @@ The AWS Quick browser extension, Microsoft Outlook extension, Microsoft Word ext
 
 AWS Quick extensions enable you to optimize your daily tasks with assistance from an AI tool added to the tools you already use. Whether you're browsing the web, collaborating in team channels, managing emails, or creating documents, Quick extensions bring AI-powered assistance directly into your existing workflows without requiring you to switch between applications.
 
+Extensions are part of the same Quick runtime as the web, desktop, and mobile experiences. Your conversations, agents, and context are kept in your AWS Quick account, so you can start work in an extension and continue it on the web, desktop, or mobile without losing context.
+
 The following extension types are available:
 + **Browser Extension** - Enhance your web browsing experience with AI-powered page summarization, content analysis, and knowledge access across Google Chrome, Firefox, and Microsoft Edge browsers. No admin setup required.
 + **Microsoft Outlook extension** - Manage your entire inbox using natural language. Summarize unread messages, organize your inbox, schedule meetings, and draft contextual responses using your Quick enterprise data. No admin setup required.

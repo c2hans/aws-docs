@@ -79,7 +79,7 @@ Changes the status of automated sensitive data discovery for one or more account
 #### PATCH schema
 <a name="automated-discovery-accounts-request-body-patch-example"></a>
 
-```
+```json
 {
   "accounts": [
     {
@@ -96,7 +96,7 @@ Changes the status of automated sensitive data discovery for one or more account
 #### ListAutomatedDiscoveryAccountsResponse schema
 <a name="automated-discovery-accounts-response-body-listautomateddiscoveryaccountsresponse-example"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -111,7 +111,7 @@ Changes the status of automated sensitive data discovery for one or more account
 #### BatchUpdateAutomatedDiscoveryAccountsResponse schema
 <a name="automated-discovery-accounts-response-body-batchupdateautomateddiscoveryaccountsresponse-example"></a>
 
-```
+```json
 {
   "errors": [
     {
@@ -125,7 +125,7 @@ Changes the status of automated sensitive data discovery for one or more account
 #### ValidationException schema
 <a name="automated-discovery-accounts-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -134,7 +134,7 @@ Changes the status of automated sensitive data discovery for one or more account
 #### AccessDeniedException schema
 <a name="automated-discovery-accounts-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -143,7 +143,7 @@ Changes the status of automated sensitive data discovery for one or more account
 #### ResourceNotFoundException schema
 <a name="automated-discovery-accounts-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -152,7 +152,7 @@ Changes the status of automated sensitive data discovery for one or more account
 #### ConflictException schema
 <a name="automated-discovery-accounts-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -161,7 +161,7 @@ Changes the status of automated sensitive data discovery for one or more account
 #### ThrottlingException schema
 <a name="automated-discovery-accounts-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -170,7 +170,7 @@ Changes the status of automated sensitive data discovery for one or more account
 #### InternalServerException schema
 <a name="automated-discovery-accounts-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

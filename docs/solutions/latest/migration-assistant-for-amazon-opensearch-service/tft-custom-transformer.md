@@ -10,13 +10,13 @@ The following procedure runs from the Migration Console pod. It writes the trans
 
 1. Open a shell on the Migration Console pod:
 
-   ```
+   ```bash
    kubectl exec -it migration-console-0 -n ma -- /bin/bash
    ```
 
 1. Create the JavaScript transformer file. The following example walks the metadata tree and applies a small set of rules — here, mapping `string` to `text` and `flattened` to `flat_object` and removing the `index` property — but you can extend the `rules` array to handle any field type your source uses:
 
-   ```
+   ```bash
    cat > /tmp/field-type-converter.js << 'SCRIPT'
    function main(context) {
      const rules = [
@@ -70,14 +70,14 @@ The following procedure runs from the Migration Console pod. It writes the trans
 
 1. For a workflow run, create a ConfigMap from the transformer file:
 
-   ```
+   ```bash
    kubectl create configmap metadata-transforms -n ma \
      --from-file=field-type-converter.js=/tmp/field-type-converter.js
    ```
 
 1. Add the transform under `metadataMigrationConfig.metadataTransforms` in the workflow configuration:
 
-   ```
+   ```json
    {
      "snapshotMigrationConfigs": [
        {
@@ -110,7 +110,7 @@ The following procedure runs from the Migration Console pod. It writes the trans
 
 1. For a manual metadata run, create a transformer descriptor that points to the script. The `JsonJSTransformerProvider` loads your JavaScript from `initializationScriptFile`, and `bindingsObject` passes optional context to the script (use `"{}"` when you have no bindings):
 
-   ```
+   ```json
    [
      {
        "JsonJSTransformerProvider": {
@@ -125,7 +125,7 @@ The following procedure runs from the Migration Console pod. It writes the trans
 
 1. Run metadata migration with the descriptor applied:
 
-   ```
+   ```bash
    console metadata migrate --transformer-config-file /tmp/transformation.json
    ```
 

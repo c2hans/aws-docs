@@ -30,6 +30,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Tree diagram showing how to group multiple accounts under organizational units.](https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/images/aws-organizations-ou-grouping.png)
 
+*Example of grouping multiple AWS accounts under organizational units.*
+
  [AWS Control Tower](https://aws.amazon.com/controltower/) can quickly set up and configure multiple AWS accounts, ensuring that governance is aligned with your organization’s requirements.
 
 **Implementation steps**

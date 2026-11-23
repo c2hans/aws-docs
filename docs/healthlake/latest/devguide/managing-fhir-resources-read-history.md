@@ -41,7 +41,7 @@ You can opt out of `history` for specific FHIR resource types. To opt out, creat
 
    SigV4 authorization
 
-   ```
+   ```sh
    curl --request GET \
      'https://healthlake.{{region}}.amazonaws.com/datastore/{{datastore-id}}/r4/Patient/{{id}}/_history?_count=100' \
      --aws-sigv4 'aws:amz:region:healthlake' \
@@ -55,7 +55,7 @@ You can opt out of `history` for specific FHIR resource types. To opt out, creat
 
    SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
-   ```
+   ```json
    {
        "AuthorizationStrategy": "SMART_ON_FHIR",
        "FineGrainedAuthorizationEnabled": true,
@@ -108,7 +108,7 @@ When FHIR `history` interaction is enabled (by default for data stores created a
 
    SigV4 authorization
 
-   ```
+   ```sh
    curl --request GET \
      'https://healthlake.{{region}}.amazonaws.com/datastore/{{datastore-id}}/r4/Patient/{{id}}/_history/{{vid}}' \
      --aws-sigv4 'aws:amz:region:healthlake' \
@@ -122,7 +122,7 @@ When FHIR `history` interaction is enabled (by default for data stores created a
 
    SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
-   ```
+   ```json
    {
        "AuthorizationStrategy": "SMART_ON_FHIR",
        "FineGrainedAuthorizationEnabled": true,

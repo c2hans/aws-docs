@@ -32,7 +32,7 @@ To configure a Microsoft Dynamics 365 CRM connection:
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

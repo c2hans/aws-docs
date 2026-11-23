@@ -32,12 +32,14 @@ AWS Marketplace is a curated digital catalog that customers can use to find, buy
 ## AWS Marketplace Deployment Service
 <a name="Welcome_AWS_Marketplace_Deployment_Service"></a>
 
-The AWS Marketplace Deployment Service supports the Quick Launch experience, which is a deployment option for software as a service (SaaS) products. Quick Launch simplifies and reduces the time, resources, and steps required to configure, deploy, and launch a products. The AWS Marketplace Deployment Service provides sellers with a secure method for passing deployment parameters, such as API keys and external IDs, to buyers during the Quick Launch experience.
+The AWS Marketplace Deployment Service supports the Quick Launch experience, which is a deployment option for software as a service (SaaS) products. Quick Launch simplifies and reduces the time, resources, and steps required to configure, deploy, and launch a product. The AWS Marketplace Deployment Service provides sellers with a secure method for passing deployment parameters, such as API keys and external IDs, to buyers during the Quick Launch experience.
+
+You can also use the AWS Marketplace Deployment Service to publish deployment configurations. A deployment configuration defines how buyers access a product's delivery option after they subscribe. For example, for the Data as a Service delivery option, it specifies the seller's fulfillment URL.
 
 ## AWS Marketplace Discovery
 <a name="Welcome_AWS_Marketplace_Discovery"></a>
 
-The AWS Marketplace Discovery API provides programmatic access to the AWS Marketplace catalog, including searching and browsing listings, retrieving product details and fulfillment options, and accessing public and private offer pricing and terms.
+With the AWS Marketplace Discovery API (Discovery API), you have programmatic access to the AWS Marketplace catalog. You can search and browse listings, retrieve product details and fulfillment options, and access public and private offer pricing and terms. For more information, see [Using the AWS Marketplace Discovery API](https://docs.aws.amazon.com/marketplace/latest/developerguide/discovery-apis.html) in the *AWS Marketplace Developer Guide*.
 
 ## AWS Marketplace Reporting Service
 <a name="Welcome_AWS_Marketplace_Reporting_Service"></a>

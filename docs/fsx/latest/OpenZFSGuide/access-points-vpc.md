@@ -62,7 +62,7 @@ The following example policy statement configures an Amazon VPC endpoint to allo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

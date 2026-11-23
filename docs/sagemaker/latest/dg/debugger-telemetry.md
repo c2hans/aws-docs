@@ -23,7 +23,7 @@ To opt out, you need to add the following Debugger `ProfilerReport` rule configu
 ------
 #### [ SageMaker Python SDK ]
 
-```
+```py
 from sagemaker.train import ModelTrainer
 
 model_trainer=ModelTrainer(
@@ -39,7 +39,7 @@ model_trainer=ModelTrainer(
 ------
 #### [ AWS CLI ]
 
-```
+```json
 "ProfilerRuleConfigurations": [
     {
         "RuleConfigurationName": "{{ProfilerReport-1234567890}}",
@@ -55,7 +55,7 @@ model_trainer=ModelTrainer(
 ------
 #### [ AWS SDK for Python (Boto3) ]
 
-```
+```py
 ProfilerRuleConfigurations=[
     {
         'RuleConfigurationName': '{{ProfilerReport-1234567890}}',

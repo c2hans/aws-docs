@@ -110,7 +110,7 @@ For CodeBuild support, add the following to your policy statement:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -134,7 +134,7 @@ For CodeBuild support, add the following to your policy statement:
 
 If you use the `ServiceRoleArnOverride` parameter, add the following `iam:PassRole` permission to allow CodePipeline to pass the role to CodeBuild:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "iam:PassRole",
@@ -153,7 +153,7 @@ If you use the `ServiceRoleArnOverride` parameter, add the following `iam:PassRo
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: Build
 Actions:
   - Name: PackageExport
@@ -180,7 +180,7 @@ Actions:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "Build",
     "Actions": [

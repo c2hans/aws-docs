@@ -10,7 +10,7 @@ The current default behavior is that if a user accepts a model's EULA, then the 
 
 The following is an example AWS Identity and Access Management (IAM) policy that an administrator can add to a user's IAM role:
 
-```
+```json
 {
     "Effect": "Deny",
     "Action": "sagemaker:CreateTrainingJob",

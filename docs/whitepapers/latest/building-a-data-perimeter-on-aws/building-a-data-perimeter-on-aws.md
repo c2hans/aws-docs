@@ -31,3 +31,5 @@ In traditional, on-premises data center environments, a trusted network and stro
  This paper discusses the perimeter objectives and how the applied controls prevent unintended access patterns, particularly to data. It is designed to help customers understand how to create a complete AWS data perimeter as part of their responsibility in the AWS Shared Responsibility Model.
 
 ![A diagram showing an AWS perimeter.](https://docs.aws.amazon.com/whitepapers/latest/building-a-data-perimeter-on-aws/images/defining-aws-perimeter.png)
+
+*A high-level depiction of defining a perimeter around your AWS resources to prevent interaction with untrusted [AWS Identity and Access Management](https://aws.amazon.com/iam/?nc=sn&loc=0) (IAM) principals, untrusted resources, and unexpected networks *

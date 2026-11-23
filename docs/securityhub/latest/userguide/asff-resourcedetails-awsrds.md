@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsR
 
 **Example**
 
-```
+```JSON
 "AwsRdsDbCluster": {
     "ActivityStreamStatus": "stopped",
     "AllocatedStorage": 1,
@@ -96,7 +96,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsR
 
 **Example**
 
-```
+```JSON
 "AwsRdsDbClusterSnapshot": {
     "AllocatedStorage": 0,
     "AvailabilityZones": [
@@ -136,7 +136,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsR
 
 **Example**
 
-```
+```JSON
 "AwsRdsDbInstance": {
     "AllocatedStorage": 20,
     "AssociatedRoles": [],
@@ -265,7 +265,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsR
 
 **Example**
 
-```
+```JSON
 "AwsRdsDbSecurityGroup": {
     "DbSecurityGroupArn": "arn:aws:rds:us-west-1:111122223333:secgrp:default",
     "DbSecurityGroupDescription": "default",
@@ -298,7 +298,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsR
 
 **Example**
 
-```
+```JSON
 "AwsRdsDbSnapshot": {
     "DbSnapshotIdentifier": "rds:database-1-2020-06-22-17-41",
     "DbInstanceIdentifier": "database-1",
@@ -339,7 +339,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsR
 
 **Example**
 
-```
+```json
 "AwsRdsEventSubscription": {
     "CustSubscriptionId": "myawsuser-secgrp",
     "CustomerAwsId": "111111111111",

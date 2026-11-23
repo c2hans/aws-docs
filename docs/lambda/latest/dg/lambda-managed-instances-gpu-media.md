@@ -26,6 +26,9 @@ Use non-fractional GPU instance types for media and rendering functions. On frac
 
 In this example, you build a function that downloads a video file from Amazon S3, decodes it with NVDEC, re-encodes it to H.264 with NVENC, and uploads the result. The function runs FFmpeg, which performs the decoding and encoding with the GPU engines selected. The PyTorch base image includes FFmpeg built with NVIDIA hardware acceleration, so no installation is needed. The example expects H.264 or HEVC source video files. For a source codec that NVDEC does not decode, such as ProRes, FFmpeg decodes on the CPU and only the encode runs on the GPU, so the invocation takes longer. For the codecs each GPU decodes, see [the codec support table](#lambda-managed-instances-gpu-media-codec-table).
 
+**Note**
+The function reads from and writes to an Amazon S3 bucket in the same Region, so its execution role needs `s3:GetObject` on the input objects and `s3:PutObject` on the output prefix, and the capacity provider's subnets need a route to Amazon S3 through a gateway endpoint or a NAT gateway.
+
 ### Step 1: Build and push the image
 <a name="lambda-managed-instances-gpu-media-transcode-step1"></a>
 
@@ -33,7 +36,7 @@ Create a directory with the following two files.
 
 Dockerfile:
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/deep-learning-containers/pytorch:cuda-v1
 
 COPY handler.py /var/task/
@@ -42,7 +45,7 @@ CMD ["handler.handler"]
 
 handler.py:
 
-```
+```python
 import os
 import subprocess
 import tempfile
@@ -90,7 +93,7 @@ Build the image and push it to Amazon ECR.
 
 Using AWS CLI:
 
-```
+```bash
 aws ecr create-repository --repository-name my-transcode-function --region us-east-2
 
 aws ecr get-login-password --region us-east-2 | \
@@ -108,7 +111,7 @@ Create a function from the image you pushed that uses your GPU capacity provider
 
 Using AWS CLI:
 
-```
+```bash
 aws lambda create-function \
   --function-name my-transcode-function \
   --package-type Image \
@@ -128,7 +131,7 @@ Publish the function to `$LATEST.PUBLISHED` and wait for it to become `Active`.
 
 Using AWS CLI:
 
-```
+```bash
 aws lambda publish-version --function-name my-transcode-function --publish-to LATEST_PUBLISHED
 
 aws lambda get-function-configuration \
@@ -139,7 +142,7 @@ aws lambda get-function-configuration \
 
 When the state is Active, invoke the function with the bucket and key of your sample video.
 
-```
+```bash
 aws lambda invoke \
   --function-name my-transcode-function \
   --cli-binary-format raw-in-base64-out \
@@ -162,7 +165,7 @@ Raise `PerExecutionEnvironmentMaxConcurrency` to 4 and republish `$LATEST.PUBLIS
 
 Using AWS CLI:
 
-```
+```bash
 aws lambda update-function-configuration \
   --function-name my-transcode-function \
   --capacity-provider-config '{"LambdaManagedInstancesCapacityProviderConfig":{"CapacityProviderArn":"arn:aws:lambda:us-east-2:111122223333:capacity-provider:my-gpu-capacity-provider","PerExecutionEnvironmentMaxConcurrency":4,"ExecutionEnvironmentMemoryGiBPerVCpu":4}}'
@@ -181,7 +184,7 @@ Delete the function, then delete the capacity provider if you no longer need it.
 
 Using AWS CLI:
 
-```
+```bash
 aws lambda delete-function --function-name my-transcode-function
 aws lambda delete-capacity-provider --capacity-provider-name my-gpu-capacity-provider
 ```
@@ -198,7 +201,7 @@ Create a directory with the following two files. The image starts from the base 
 
 Dockerfile:
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/deep-learning-containers/base:cuda-v1
 
 RUN dnf install -y libglvnd-egl libglvnd-opengl libX11 && dnf clean all
@@ -214,7 +217,7 @@ CMD ["handler.handler"]
 
 handler.py:
 
-```
+```python
 import io
 import os
 
@@ -303,7 +306,7 @@ Build the image and push it to Amazon ECR.
 
 Using AWS CLI:
 
-```
+```bash
 aws ecr create-repository --repository-name my-render-function --region us-east-2
 
 aws ecr get-login-password --region us-east-2 | \
@@ -319,7 +322,7 @@ docker push 111122223333.dkr.ecr.us-east-2.amazonaws.com/my-render-function:v1
 
 Using AWS CLI:
 
-```
+```bash
 aws lambda create-function \
   --function-name my-render-function \
   --package-type Image \
@@ -336,7 +339,7 @@ aws lambda create-function \
 
 Using AWS CLI:
 
-```
+```bash
 aws lambda publish-version --function-name my-render-function --publish-to LATEST_PUBLISHED
 
 aws lambda get-function-configuration \
@@ -347,7 +350,7 @@ aws lambda get-function-configuration \
 
 When the state is Active, invoke the function and download the rendered frame.
 
-```
+```bash
 aws lambda invoke \
   --function-name my-render-function \
   --cli-binary-format raw-in-base64-out \
@@ -367,7 +370,7 @@ Delete the function, then delete the capacity provider if you no longer need it.
 
 Using AWS CLI:
 
-```
+```bash
 aws lambda delete-function --function-name my-render-function
 aws lambda delete-capacity-provider --capacity-provider-name my-gpu-capacity-provider
 ```

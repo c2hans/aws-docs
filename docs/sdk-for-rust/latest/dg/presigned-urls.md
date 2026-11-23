@@ -17,7 +17,7 @@ To learn more about presigned URLs in Amazon S3, see [Working with presigned URL
 
  The following example creates a presigned `GetObject` request for Amazon S3. The request is valid for 5 minutes after creation.
 
-```
+```rust
 use std::time::Duration;
 use aws_config::BehaviorVersion;
 use aws_sdk_s3::presigning::PresigningConfig;
@@ -57,7 +57,7 @@ aws-sdk-s3 = { version = "1", features = ["http-1x"] }
 
 Source file:
 
-```
+```rust
 let presigned = s3.put_object()
     .presigned(
         PresigningConfig::builder()
@@ -91,7 +91,7 @@ http = "1"
 
 Source file:
 
-```
+```rust
 use aws_smithy_runtime_api::client::identity::Identity;
 use aws_sigv4::http_request::{sign, SigningSettings, SigningParams, SignableRequest};
 use aws_sigv4::sign::v4;

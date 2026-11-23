@@ -17,7 +17,7 @@ When you create a Multi-Region Access Point, Amazon S3 generates an Amazon Resou
 
 You can use the generated ARN in place of a bucket name for `[getObject()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3-2006-03-01.html#getobject)` and `[putObject()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3-2006-03-01.html#putobject)` methods.
 
-```
+```php
 <?php
 require './vendor/autoload.php';
 

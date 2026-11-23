@@ -139,7 +139,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-rds-database-stack-update-maintenance-window-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "DBIdentifierArn": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance",
   "PreferredMaintenanceWindow": "Sun:05:00-Sun:05:30"
@@ -149,7 +149,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-rds-database-stack-update-maintenance-window-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "DBIdentifierArn": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance",
   "PreferredMaintenanceWindow": "Sun:05:00-Sun:05:30"

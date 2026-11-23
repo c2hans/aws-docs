@@ -125,7 +125,7 @@ Store the credentials in an AWS Secrets Manager secret with the following key-va
 + `clientSecret` — the client secret value from Step 3.
 + `refreshToken` — the refresh token from Step 4.
 
-```
+```json
 {
     "clientId": "{{your-client-id}}",
     "clientSecret": "{{your-client-secret}}",

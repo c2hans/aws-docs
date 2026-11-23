@@ -30,7 +30,7 @@ The following code example shows how to get started using AWS IoT.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 def hello_iot():
     """
     Use the AWS SDK for Python (Boto3) to create an AWS IoT client and list
@@ -84,7 +84,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 Create an IoT wrapper class to manage operations.
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -471,7 +471,7 @@ class IoTWrapper:
 ```
 Run an interactive scenario demonstrating IoT basics.
 
-```
+```python
 class IoTScenario:
     """Runs an interactive scenario that shows how to use AWS IoT."""
 
@@ -754,7 +754,7 @@ The following code example shows how to use `AttachThingPrincipal`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -805,7 +805,7 @@ The following code example shows how to use `CreateKeysAndCertificate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -855,7 +855,7 @@ The following code example shows how to use `CreateThing`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -907,7 +907,7 @@ The following code example shows how to use `CreateTopicRule`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -966,7 +966,7 @@ The following code example shows how to use `DeleteCertificate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -1017,7 +1017,7 @@ The following code example shows how to use `DeleteThing`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -1065,7 +1065,7 @@ The following code example shows how to use `DeleteTopicRule`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -1110,7 +1110,7 @@ The following code example shows how to use `DescribeEndpoint`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -1161,7 +1161,7 @@ The following code example shows how to use `DetachThingPrincipal`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -1212,7 +1212,7 @@ The following code example shows how to use `ListCertificates`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -1264,7 +1264,7 @@ The following code example shows how to use `ListThings`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -1316,7 +1316,7 @@ The following code example shows how to use `SearchIndex`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -1367,7 +1367,7 @@ The following code example shows how to use `UpdateIndexingConfiguration`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 

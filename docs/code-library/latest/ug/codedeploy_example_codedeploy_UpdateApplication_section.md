@@ -30,7 +30,7 @@ For more information, see [Rename a CodeDeploy application](https://docs.aws.ama
 **Tools for PowerShell V4**
 **Example 1: This example changes the name of the specified application.**
 
-```
+```powershell
 Update-CDApplication -ApplicationName MyNewApplication -NewApplicationName MyNewApplication-2
 ```
 +  For API details, see [UpdateApplication](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -38,7 +38,7 @@ Update-CDApplication -ApplicationName MyNewApplication -NewApplicationName MyNew
 **Tools for PowerShell V5**
 **Example 1: This example changes the name of the specified application.**
 
-```
+```powershell
 Update-CDApplication -ApplicationName MyNewApplication -NewApplicationName MyNewApplication-2
 ```
 +  For API details, see [UpdateApplication](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

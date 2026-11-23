@@ -10,7 +10,22 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 <a name="API_ListDatasetVersions_RequestSyntax"></a>
 
 ```
-GET /datasets/{{datasetId}}/versions?maxResults={{maxResults}}&nextToken={{nextToken}} HTTP/1.1
+POST /datasets/{{datasetId}}/versions/list HTTP/1.1
+Content-type: application/json
+
+{
+   "filter": {
+      "exampleCountByField": [
+         {
+            "anyOf": [ "{{string}}" ],
+            "max": {{number}},
+            "min": {{number}}
+         }
+      ]
+   },
+   "maxResults": {{number}},
+   "nextToken": "{{string}}"
+}
 ```
 
 ## URI Request Parameters
@@ -23,17 +38,27 @@ The request uses the following URI parameters.
 Pattern: `[a-zA-Z0-9_-]{1,110}`
 Required: Yes
 
- ** [maxResults](#API_ListDatasetVersions_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasetVersions-request-uri-maxResults"></a>
- The maximum number of versions to return per page.
-Valid Range: Minimum value of 1. Maximum value of 100.
-
- ** [nextToken](#API_ListDatasetVersions_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasetVersions-request-uri-nextToken"></a>
- The token for the next page of results.
-
 ## Request Body
 <a name="API_ListDatasetVersions_RequestBody"></a>
 
-The request does not have a request body.
+The request accepts the following data in JSON format.
+
+ ** [filter](#API_ListDatasetVersions_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasetVersions-request-filter"></a>
+ A filter to apply to the dataset versions.
+Type: [ListDatasetVersionsFilter](API_ListDatasetVersionsFilter.md) object
+Required: No
+
+ ** [maxResults](#API_ListDatasetVersions_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasetVersions-request-maxResults"></a>
+ The maximum number of versions to return per page.
+Type: Integer
+Valid Range: Minimum value of 1. Maximum value of 100.
+Required: No
+
+ ** [nextToken](#API_ListDatasetVersions_RequestSyntax) **   <a name="bedrockagentcorecontrol-ListDatasetVersions-request-nextToken"></a>
+ The token for the next page of results.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Required: No
 
 ## Response Syntax
 <a name="API_ListDatasetVersions_ResponseSyntax"></a>
@@ -48,7 +73,12 @@ Content-type: application/json
       {
          "createdAt": number,
          "datasetVersion": "string",
-         "exampleCount": number
+         "exampleCount": number,
+         "exampleCountByField": {
+            "actorProfile": number,
+            "input": number,
+            "turns": number
+         }
       }
    ]
 }

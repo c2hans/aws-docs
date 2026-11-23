@@ -13,6 +13,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 
 Follow a single processor:
 
-```
+```bash
 aws logs tail /aws/kinesis-analytics/cms-<stage>-flink-trip-processor --follow
 ```

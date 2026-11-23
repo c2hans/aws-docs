@@ -15,7 +15,7 @@ The examples on this page use the synchronous DynamoDB client. The asynchronous 
 
 Create the client with a configuration object that you resolve for the service. The following example resolves a DynamoDB configuration that sets the Region. The client gets credentials from the default credential resolver chain.
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient, DynamoDBConfig
 
 config = DynamoDBConfig.resolve(region="us-east-1")
@@ -28,14 +28,14 @@ Reuse a client for operations that use the same client-wide configuration. Creat
 
 The client holds network resources, such as HTTP connections. The client is a *context manager*, an object that a `with` statement opens and closes. Leaving the `with` block closes the client and releases those resources.
 
-```
+```python
 with DynamoDBClient(config=config) as client:
     response = client.list_tables(limit=25)
 ```
 
 When the client's lifetime doesn't match a single block, such as a client that the application creates at startup and shares across functions, call `client.close()` after the last operation. The following example closes the client in a `finally` block.
 
-```
+```python
 client = DynamoDBClient(config=config)
 try:
     response = client.list_tables(limit=25)
@@ -50,7 +50,7 @@ Calling an operation on a closed client raises a `RuntimeError`. Create a new cl
 
 Operations take keyword arguments that are named after the members of the operation's input. The names use Python snake case, such as `table_name` and `exclusive_start_table_name`. You can't pass individual members by position. To pass the whole request as one object instead, see [Passing a request object](#using-requests-request-object).
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient
 from aws_sdk_dynamodb.models import ListTablesOutput
 
@@ -84,7 +84,7 @@ A dictionary for a structure uses the structure's member names as keys. A dictio
 
 The following two calls send the same request.
 
-```
+```python
 from aws_sdk_dynamodb.models import AttributeValueS
 
 # Generated model objects
@@ -102,7 +102,7 @@ response = client.get_item(
 
 The following call mixes a model object with dictionaries in one item.
 
-```
+```python
 client.put_item(
     table_name="Books",
     item={
@@ -120,7 +120,7 @@ The client doesn't need to convert model objects, so they're the faster choice f
 
 Instead of keyword arguments, you can pass the whole request as a single positional argument. The request is either the operation's input model, such as `PutItemInput`, or a dictionary with the same members. Import the input model from the service's `models` module.
 
-```
+```python
 from aws_sdk_dynamodb.models import AttributeValueS, PutItemInput
 
 request = PutItemInput(
@@ -132,7 +132,7 @@ client.put_item(request)
 
 To type-check a request dictionary, annotate it with the operation's generated `TypedDict`. Its name is the input class name with a `Dict` suffix, such as `PutItemInputDict`. A type checker reports missing required keys and values of the wrong type. At runtime, the value is a plain `dict`.
 
-```
+```python
 from aws_sdk_dynamodb.models import PutItemInputDict
 
 params: PutItemInputDict = {
@@ -152,7 +152,7 @@ The client checks a request object the same way that it checks keyword arguments
 
 Each operation returns an instance of its generated output class. You read response members as attributes. A member is optional when the service can omit it. Check for `None`, or use an appropriate empty value, before you process the result.
 
-```
+```python
 page = list_table_page(client)
 for table_name in page.table_names or []:
     print(table_name)
@@ -166,7 +166,7 @@ if page.last_evaluated_table_name is not None:
 
 The AWS SDK for Python v4 doesn't provide paginators yet, so you request each page yourself. When a response includes a continuation member, pass it to the next call as the matching start argument. Continue until the response omits the continuation member.
 
-```
+```python
 from collections.abc import Iterator
 
 from aws_sdk_dynamodb import DynamoDBClient
@@ -198,7 +198,7 @@ Operation responses are instances of generated Python classes, not untyped dicti
 
 DynamoDB items are one example of a modeled map. Each item is a dictionary whose keys are attribute names. Each value is a generated class that identifies the DynamoDB attribute type, such as `AttributeValueS` for a string. The following example checks the value's class before it reads the value.
 
-```
+```python
 from aws_sdk_dynamodb.models import AttributeValueS
 
 response = client.get_item(
@@ -219,7 +219,7 @@ A union is a model member that holds exactly one of several possible variants. T
 
 Some responses nest unions inside unions. In the following Amazon Bedrock Runtime example, `response.output` can be one of several output variants. The function first checks for the message variant and then checks each content block for the text variant.
 
-```
+```python
 from aws_sdk_bedrock_runtime.models import (
     ContentBlockText,
     ConverseOperationOutput,

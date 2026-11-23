@@ -12,7 +12,7 @@ Observability is the extent to which a system's current state can be inferred fr
 
 The following code shows an example of how observability can be enabled in the AWS Tools for PowerShell.
 
-```
+```ps
 <#
     This is an example of generating telemetry for AWS Tools for PowerShell.
     Each cmdlet that interacts with an Amazon Web Service creates a trace containing spans

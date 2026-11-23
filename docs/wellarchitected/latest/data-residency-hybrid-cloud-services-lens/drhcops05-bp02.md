@@ -19,6 +19,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 
 ![Details the shared responsibility model for Outposts, which places software and hardware/global infrastructure responsibility with AWS.](https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hybrid-cloud-services-lens/images/outposts-responsibility-model.png)
 
+*Outposts shared responsibility model*
+
  Set up CloudWatch metrics, and enable cross-account observability where possible. Set up metrics to understand your connected status to the Region and traffic in and out. Implement capacity monitoring and follow [N\+1 capacity guidance](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/capacity-planning.html) which means you provision additional capacity for each instance family for redundant hardware. to follow N\+1 guidance. Consider VPC Flow Logs and ELB access logs. If further detail is required, AWS X-Ray is an additional option for a complete view of requests across your applications.
 
 ## Resources

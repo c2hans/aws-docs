@@ -36,14 +36,14 @@ This topic covers errors related to the replication server infrastructure, inclu
 
 Run the following command to check the instance type and subnet configured for replication:
 
-```
+```bash
 aws drs get-replication-configuration \
     --source-server-id {{SOURCE_SERVER_ID}}
 ```
 
 Run the following command to check the Amazon EC2 running instances quota:
 
-```
+```bash
 aws service-quotas get-service-quota \
     --service-code ec2 \
     --quota-code L-1216C47A

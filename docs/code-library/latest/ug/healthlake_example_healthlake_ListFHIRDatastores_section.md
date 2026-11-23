@@ -57,7 +57,7 @@ For more information, see [Listing HealthLake data stores](https://docs.aws.amaz
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """
@@ -105,7 +105,7 @@ For more information, see [Listing HealthLake data stores](https://docs.aws.amaz
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/hll#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_hll->listfhirdatastores( ).
         DATA(lt_datastores) = oo_result->get_datastorepropertieslist( ).

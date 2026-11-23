@@ -72,7 +72,7 @@ Creates an application, optionally including an AWS SAM file to create the first
 #### POST schema
 <a name="applications-request-body-post-example"></a>
 
-```
+```json
 {
   "name": "string",
   "description": "string",
@@ -100,7 +100,7 @@ Creates an application, optionally including an AWS SAM file to create the first
 #### ApplicationPage schema
 <a name="applications-response-body-applicationpage-example"></a>
 
-```
+```json
 {
   "applications": [
     {
@@ -123,7 +123,7 @@ Creates an application, optionally including an AWS SAM file to create the first
 #### Application schema
 <a name="applications-response-body-application-example"></a>
 
-```
+```json
 {
   "applicationId": "string",
   "name": "string",
@@ -178,7 +178,7 @@ Creates an application, optionally including an AWS SAM file to create the first
 #### BadRequestException schema
 <a name="applications-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -188,7 +188,7 @@ Creates an application, optionally including an AWS SAM file to create the first
 #### ForbiddenException schema
 <a name="applications-response-body-forbiddenexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -198,7 +198,7 @@ Creates an application, optionally including an AWS SAM file to create the first
 #### NotFoundException schema
 <a name="applications-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -208,7 +208,7 @@ Creates an application, optionally including an AWS SAM file to create the first
 #### ConflictException schema
 <a name="applications-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -218,7 +218,7 @@ Creates an application, optionally including an AWS SAM file to create the first
 #### TooManyRequestsException schema
 <a name="applications-response-body-toomanyrequestsexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -228,7 +228,7 @@ Creates an application, optionally including an AWS SAM file to create the first
 #### InternalServerErrorException schema
 <a name="applications-response-body-internalservererrorexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"

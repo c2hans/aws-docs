@@ -39,7 +39,7 @@ The setup for Nova 2.0 is largely the same as for Nova 1.0. Once the input data 
 
 **Sample Input **
 
-```
+```yaml
 run:
   name: {peft_recipe_job_name}
   model_type: amazon.nova-2-lite-v1:0:256k
@@ -85,7 +85,7 @@ The recipe also contains largely the same hyperparameters as Nova 1.0. The notab
 ### Start the training job
 <a name="nova-2-start-job"></a>
 
-```
+```python
 from sagemaker.pytorch import PyTorch
 
 # define OutputDataConfig path
@@ -126,7 +126,7 @@ print(f"\nsm_training_job_name:\n{sm_training_job_name}\n")
 print(f"output_path:\n{output_path}")
 ```
 
-```
+```python
 from sagemaker.inputs import TrainingInput
 
 train_input = TrainingInput(

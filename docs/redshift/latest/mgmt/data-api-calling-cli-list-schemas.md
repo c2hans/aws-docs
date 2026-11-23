@@ -19,7 +19,7 @@ aws redshift-data list-schemas
 
 The following is an example of the response.
 
-```
+```json
 {
     "Schemas": [
         "information_schema",
@@ -41,7 +41,7 @@ aws redshift-data list-schemas
 
 The following is an example of the response.
 
-```
+```json
 {
     "Schemas": [
         "information_schema",

@@ -19,19 +19,19 @@ Node conditions represent terminal issues requiring remediation actions like ins
 
  **To get conditions for all nodes:**
 
-```
+```bash
 kubectl get nodes -o 'custom-columns=NAME:.metadata.name,CONDITIONS:.status.conditions[*].type,STATUS:.status.conditions[*].status'
 ```
 
  **To get detailed conditions for a specific node**
 
-```
+```bash
 kubectl describe node {{node-name}}
 ```
 
  **Example condition output of a healthy node:**
 
-```
+```yaml
   - lastHeartbeatTime: "2024-11-21T19:07:40Z"
     lastTransitionTime: "2024-11-08T03:57:40Z"
     message: Monitoring for the Networking system is active
@@ -42,7 +42,7 @@ kubectl describe node {{node-name}}
 
  **Example condition of an unhealthy node with a networking problem:**
 
-```
+```yaml
   - lastHeartbeatTime: "2024-11-21T19:12:29Z"
     lastTransitionTime: "2024-11-08T17:04:17Z"
     message: IPAM-D has failed to connect to API Server which could be an issue with
@@ -61,38 +61,38 @@ Node events indicate temporary issues or sub-optimal configurations.
 
 When the node monitoring agent is available, you can run the following command.
 
-```
+```bash
 kubectl get events --field-selector=reportingComponent=eks-node-monitoring-agent
 ```
 
 Sample output:
 
-```
+```bash
 LAST SEEN   TYPE      REASON       OBJECT                                              MESSAGE
 4s          Warning   SoftLockup   node/ip-192-168-71-251.us-west-2.compute.internal   CPU stuck for 23s
 ```
 
  **To get events for all nodes**
 
-```
+```bash
 kubectl get events --field-selector involvedObject.kind=Node
 ```
 
  **To get events for a specific node**
 
-```
+```bash
 kubectl get events --field-selector involvedObject.kind=Node,involvedObject.name={{node-name}}
 ```
 
  **To watch events in real-time**
 
-```
+```bash
 kubectl get events -w --field-selector involvedObject.kind=Node
 ```
 
  **Example event output:**
 
-```
+```bash
 LAST SEEN   TYPE     REASON           OBJECT         MESSAGE
 2m          Warning  MemoryPressure   Node/node-1    Node experiencing memory pressure
 5m          Normal   NodeReady        Node/node-1    Node became ready
@@ -101,7 +101,7 @@ LAST SEEN   TYPE     REASON           OBJECT         MESSAGE
 ## Common troubleshooting commands
 <a name="status-node-troubleshooting"></a>
 
-```
+```bash
 # Get comprehensive node status
 kubectl get node {{node-name}} -o yaml
 

@@ -13,7 +13,7 @@ Identifies the Amazon Resource Name (ARN) of the application involved in the fin
 
 **Example**
 
-```
+```JSON
 "ApplicationArn": "arn:aws:resource-groups:us-west-2:123456789012:group/SampleApp/1234567890abcdef0"
 ```
 
@@ -24,7 +24,7 @@ Identifies the name of the application involved in the finding.
 
 **Example**
 
-```
+```JSON
 "ApplicationName": "SampleApp"
 ```
 
@@ -35,7 +35,7 @@ The [DataClassification](https://docs.aws.amazon.com/securityhub/1.0/APIReferenc
 
 **Example**
 
-```
+```JSON
 "DataClassification": {
     "DetailedResultsLocation": "Path_to_Folder_Or_File",
     "Result": {
@@ -151,7 +151,7 @@ The [`Other`](asff-resourcedetails-other.md) object allows you to provide custom
 
 **Example**
 
-```
+```JSON
 "Details": {
   "AwsEc2Instance": {
     "IamInstanceProfileArn": "arn:aws:iam::123456789012:role/IamInstanceProfileArn",
@@ -198,7 +198,7 @@ For non-AWS resources, this is a unique identifier that is associated with the r
 
 **Example**
 
-```
+```JSON
 "Id": "arn:aws:s3:::amzn-s3-demo-bucket"
 ```
 
@@ -214,7 +214,7 @@ The following partitions are supported:
 
 **Example**
 
-```
+```JSON
 "Partition": "aws"
 ```
 
@@ -225,7 +225,7 @@ The code for the AWS Region where this resource is located. For a list of Region
 
 **Example**
 
-```
+```JSON
 "Region": "us-west-2"
 ```
 
@@ -236,7 +236,7 @@ Identifies the role of the resource in the finding. A resource is either the tar
 
 **Example**
 
-```
+```JSON
 "ResourceRole": "target"
 ```
 
@@ -257,7 +257,7 @@ You can only provide tags that exist on an AWS resource in this field. To provid
 
 **Example**
 
-```
+```JSON
 "Tags": {
     "billingCode": "Lotus-1-2-3",
     "needsPatching": "true"
@@ -277,6 +277,6 @@ Supported values are listed under [Resources](asff-resources.md).
 
 **Example**
 
-```
+```JSON
 "Type": "AwsS3Bucket"
 ```

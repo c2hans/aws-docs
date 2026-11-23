@@ -14,7 +14,7 @@ When scoping resource-level access for job submission, you must provide both job
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -46,7 +46,7 @@ The following examples show how to use wildcards and revision numbers in resourc
 
 The following policy allows job submissions using only revision 1 of the specified job definition.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -66,7 +66,7 @@ The following policy allows job submissions using only revision 1 of the specifi
 
 The following policy allows job submissions using any revision of the specified job definition. The `:*` pattern matches any revision number.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

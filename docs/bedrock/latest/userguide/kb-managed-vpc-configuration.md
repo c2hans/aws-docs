@@ -154,7 +154,7 @@ Grant both `vpc-lattice:GetResourceGateway` and `vpc-lattice:GetResourceConfigur
 
 The following example policy grants the required permissions. Replace {{region}} and {{accountId}} with your values.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -58,7 +58,7 @@ GET _cat/indices?v
 
 Then run some searches to verify that the expected data is present. If it is, you can remove the read-only state using the following request:
 
-```
+```json
 PUT _cluster/settings
 {
   "persistent": {
@@ -340,7 +340,7 @@ Clone-based upgrades are different. You can cancel a clone-based upgrade any tim
 
 The following script uses the Amazon EC2 [describe-regions](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-regions.html) AWS CLI command to create a list of all Regions in which OpenSearch Service could be available. Then it calls [list-domain-names](https://docs.aws.amazon.com/cli/latest/reference/es/list-domain-names.html) for each Region:
 
-```
+```bash
 for region in `aws ec2 describe-regions --output text | cut -f4`
 do
     echo "\nListing domains in region '$region':"
@@ -350,7 +350,7 @@ done
 
 You receive the following output for each Region:
 
-```
+```json
 Listing domains in region:'us-west-2'...
 [
   {
@@ -444,7 +444,7 @@ For example, the following policy used to only deny access to the `CreateDomain`
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{
@@ -533,13 +533,13 @@ PluginValidationFailureReason : The provided plugin could not be loaded.
 
    **API request:**
 
-   ```
+   ```curl
    curl -X GET {{your-opensearch-endpoint}}/
    ```
 
    **Dev Tools console in dashboard:**
 
-   ```
+   ```curl
    GET /
    ```
 

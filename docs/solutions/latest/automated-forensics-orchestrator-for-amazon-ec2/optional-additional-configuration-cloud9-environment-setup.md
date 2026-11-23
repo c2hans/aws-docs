@@ -52,7 +52,7 @@ You can update this configuration based on the memory of the compromised instanc
 
 1.  [Download the CLI tool to manage a SIFT install](https://github.com/teamdfir/sift-cli/releases/download/v1.13.1/sift-cli-linux).
 
-   ```
+   ```bash
    wget link:https://github.com/teamdfir/sift-cli/releases/download/v1.13.1/sift-cli-linux
    wget link:https://github.com/teamdfir/sift-cli/releases/download/v1.13.1/sift-cli-linux.sig
    wget link:https://github.com/teamdfir/sift-cli/releases/download/v1.13.1/sift-cli.pub
@@ -62,7 +62,7 @@ You can update this configuration based on the memory of the compromised instanc
 
    Sample S3 command:
 
-   ```
+   ```bash
    aws s3 cp s3://mybucket/san-sift
    ```
 
@@ -83,13 +83,13 @@ You can update the memory acquisition step with other tools by updating the SSM 
 
 In SSM document `linux_lime-memory-acquisition.json`, change the following sample command from:
 
-```
+```bash
 git clone link:https://github.com/504ensicsLabs/LiME
 ```
 
 to:
 
-```
+```bash
 aws s3 cp s3://mybucket/Lime
 ```
 
@@ -102,13 +102,13 @@ For memory investigation, the Guidance provides a sample SSM document which leve
 
 In SSM document `lime-memory-load-investigation.json`, change the following command from:
 
-```
+```bash
 git clone link:https://github.com/volatilityfoundation/volatility.git
 ```
 
 to the sample command:
 
-```
+```bash
 aws s3 cp s3://mybucket/volatility
 ```
 

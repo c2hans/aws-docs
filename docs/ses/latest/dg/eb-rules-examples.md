@@ -38,7 +38,7 @@ The rule uses the following conditions and ordered actions.
 **Literal configuration**
 The following `Rules` list implements the pattern.
 
-```
+```json
 [
   {
     "Name": "archive-and-relay-orders",
@@ -120,7 +120,7 @@ The rule uses the following condition, exception, and ordered actions.
 **Literal configuration**
 The following `Rules` list implements the pattern.
 
-```
+```json
 [
   {
     "Name": "scan-and-isolate",
@@ -210,7 +210,7 @@ The rule uses the following condition, exception, and action.
 **Literal configuration**
 The following `Rules` list implements the pattern.
 
-```
+```json
 [
   {
     "Name": "process-acme-uploads",
@@ -288,7 +288,7 @@ The rule set uses the following rules.
 **Literal configuration**
 The following `Rules` list implements the pattern.
 
-```
+```json
 [
   {
     "Name": "route-sales",
@@ -402,7 +402,7 @@ The rule uses the following condition, exception, and ordered actions.
 **Literal configuration**
 The following `Rules` list implements the pattern.
 
-```
+```json
 [
   {
     "Name": "mark-and-route-orders",
@@ -493,7 +493,7 @@ The rule set uses the following rules.
 **Literal configuration**
 The following `Rules` list implements the pattern.
 
-```
+```json
 [
   {
     "Name": "replace-old-orders",

@@ -31,7 +31,7 @@ For more information, see [Permissions reference](auth-and-access.md#reference_i
 **Example Retrieve a secret**
 The following example shows how to get the secret value for a secret named {{MyTest}}.
 
-```
+```rust
 use aws_secretsmanager_caching::SecretsManagerCachingClient;
 use std::num::NonZeroUsize;
 use std::time::Duration;
@@ -57,7 +57,7 @@ let secret_string = match client.get_secret_value("MyTest", None, None).await {
 **Example Instantiating Cache with a custom configuration and a custom client**
 The following example shows how to configure the cache and then get the secret value for a secret named {{MyTest}}.
 
-```
+```rust
 let config = aws_config::load_defaults(BehaviorVersion::latest())
     .await
     .into_builder()

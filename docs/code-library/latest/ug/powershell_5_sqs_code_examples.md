@@ -26,7 +26,7 @@ The following code example shows how to use `Add-SQSPermission`.
 **Tools for PowerShell V5**
 **Example 1: This example allows the specified AWS account to send messages from the specified queue.**
 
-```
+```powershell
 Add-SQSPermission -Action SendMessage -AWSAccountId 80398EXAMPLE -Label SendMessagesFromMyQueue -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue
 ```
 +  For API details, see [AddPermission](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -39,7 +39,7 @@ The following code example shows how to use `Clear-SQSQueue`.
 **Tools for PowerShell V5**
 **Example 1: This example deletes all messages from the specified queue.**
 
-```
+```powershell
 Clear-SQSQueue -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue
 ```
 +  For API details, see [PurgeQueue](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -52,7 +52,7 @@ The following code example shows how to use `Edit-SQSMessageVisibility`.
 **Tools for PowerShell V5**
 **Example 1: This example changes the visibility timeout for the message with the specified receipt handle in the specified queue to 10 hours (10 hours \* 60 minutes \* 60 seconds = 36000 seconds).**
 
-```
+```powershell
 Edit-SQSMessageVisibility -QueueUrl https://sqs.us-east-1.amazonaws.com/8039EXAMPLE/MyQueue -ReceiptHandle AQEBgGDh...J/Iqww== -VisibilityTimeout 36000
 ```
 +  For API details, see [ChangeMessageVisibility](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -65,7 +65,7 @@ The following code example shows how to use `Edit-SQSMessageVisibilityBatch`.
 **Tools for PowerShell V5**
 **Example 1: This example changes the visibility timeout for 2 messages with the specified receipt handles in the specified queue. The first message's visibility timeout is changed to 10 hours (10 hours \* 60 minutes \* 60 seconds = 36000 seconds). The second message's visibility timeout is changed to 5 hours (5 hours \* 60 minutes \* 60 seconds = 18000 seconds).**
 
-```
+```powershell
 $changeVisibilityRequest1 = New-Object Amazon.SQS.Model.ChangeMessageVisibilityBatchRequestEntry
 $changeVisibilityRequest1.Id = "Request1"
 $changeVisibilityRequest1.ReceiptHandle = "AQEBd329...v6gl8Q=="
@@ -95,7 +95,7 @@ The following code example shows how to use `Get-SQSDeadLetterSourceQueue`.
 **Tools for PowerShell V5**
 **Example 1: This example lists the URLs of any queues that rely on the specified queue as their dead letter queue.**
 
-```
+```powershell
 Get-SQSDeadLetterSourceQueue -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyDeadLetterQueue
 ```
 **Output:**
@@ -114,7 +114,7 @@ The following code example shows how to use `Get-SQSQueue`.
 **Tools for PowerShell V5**
 **Example 1: This example lists all queues.**
 
-```
+```powershell
 Get-SQSQueue
 ```
 **Output:**
@@ -128,7 +128,7 @@ https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyDeadLetterQueue
 ```
 **Example 2: This example lists any queues that start with the specified name.**
 
-```
+```powershell
 Get-SQSQueue -QueueNamePrefix My
 ```
 **Output:**
@@ -148,7 +148,7 @@ The following code example shows how to use `Get-SQSQueueAttribute`.
 **Tools for PowerShell V5**
 **Example 1: This example lists all attributes for the specified queue.**
 
-```
+```powershell
 Get-SQSQueueAttribute -AttributeName All -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue
 ```
 **Output:**
@@ -174,7 +174,7 @@ Attributes                            : {[QueueArn, arn:aws:sqs:us-east-1:80398E
 ```
 **Example 2: This example lists separately only the specified attributes for the specified queue.**
 
-```
+```powershell
 Get-SQSQueueAttribute -AttributeName MaximumMessageSize, VisibilityTimeout -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue
 ```
 **Output:**
@@ -207,7 +207,7 @@ The following code example shows how to use `Get-SQSQueueUrl`.
 **Tools for PowerShell V5**
 **Example 1: This example lists the URL of the queue with the specified name.**
 
-```
+```powershell
 Get-SQSQueueUrl -QueueName MyQueue
 ```
 **Output:**
@@ -225,7 +225,7 @@ The following code example shows how to use `New-SQSQueue`.
 **Tools for PowerShell V5**
 **Example 1: This example creates a queue with the specified name.**
 
-```
+```powershell
 New-SQSQueue -QueueName MyQueue
 ```
 **Output:**
@@ -243,7 +243,7 @@ The following code example shows how to use `Receive-SQSMessage`.
 **Tools for PowerShell V5**
 **Example 1: This example lists information for up to the next 10 messages to be received for the specified queue. The information will contain values for the specified message attributes, if they exist.**
 
-```
+```powershell
 Receive-SQSMessage -AttributeName SenderId, SentTimestamp -MessageAttributeName StudentName, StudentGrade -MessageCount 10 -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue
 ```
 **Output:**
@@ -267,7 +267,7 @@ The following code example shows how to use `Remove-SQSMessage`.
 **Tools for PowerShell V5**
 **Example 1: This example deletes the message with the specified receipt handle from the specified queue.**
 
-```
+```powershell
 Remove-SQSMessage -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue -ReceiptHandle AQEBd329...v6gl8Q==
 ```
 +  For API details, see [DeleteMessage](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -280,7 +280,7 @@ The following code example shows how to use `Remove-SQSMessageBatch`.
 **Tools for PowerShell V5**
 **Example 1: This example deletes 2 messages with the specified receipt handles from the specified queue.**
 
-```
+```powershell
 $deleteMessageRequest1 = New-Object Amazon.SQS.Model.DeleteMessageBatchRequestEntry
 $deleteMessageRequest1.Id = "Request1"
 $deleteMessageRequest1.ReceiptHandle = "AQEBX2g4...wtJSQg=="
@@ -308,7 +308,7 @@ The following code example shows how to use `Remove-SQSPermission`.
 **Tools for PowerShell V5**
 **Example 1: This example removes the permission settings with the specified label from the specified queue.**
 
-```
+```powershell
 Remove-SQSPermission -Label SendMessagesFromMyQueue -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue
 ```
 +  For API details, see [RemovePermission](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -321,7 +321,7 @@ The following code example shows how to use `Remove-SQSQueue`.
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified queue.**
 
-```
+```powershell
 Remove-SQSQueue -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue
 ```
 +  For API details, see [DeleteQueue](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -334,7 +334,7 @@ The following code example shows how to use `Send-SQSMessage`.
 **Tools for PowerShell V5**
 **Example 1: This example sends a message with the specified attributes and message body to the specified queue with message delivery delayed for 10 seconds.**
 
-```
+```powershell
 $cityAttributeValue = New-Object Amazon.SQS.Model.MessageAttributeValue
 $cityAttributeValue.DataType = "String"
 $cityAttributeValue.StringValue = "AnyCity"
@@ -366,7 +366,7 @@ The following code example shows how to use `Send-SQSMessageBatch`.
 **Tools for PowerShell V5**
 **Example 1: This example sends 2 messages with the specified attributes and message bodies to the specified queue. Delivery is delayed for 15 seconds for the first message and 10 seconds for the second message.**
 
-```
+```powershell
 $student1NameAttributeValue = New-Object Amazon.SQS.Model.MessageAttributeValue
 $student1NameAttributeValue.DataType = "String"
 $student1NameAttributeValue.StringValue = "John Doe"
@@ -416,7 +416,7 @@ The following code example shows how to use `Set-SQSQueueAttribute`.
 **Tools for PowerShell V5**
 **Example 1: This example shows how to set a policy subscribing a queue to an SNS topic. When a message is published to the topic, a message is sent to the subscribed queue.**
 
-```
+```powershell
 # create the queue and topic to be associated
 $qurl = New-SQSQueue -QueueName "myQueue"
 $topicarn = New-SNSTopic -Name "myTopic"
@@ -453,7 +453,7 @@ Set-SQSQueueAttribute -QueueUrl $qurl -Attribute @{ Policy=$policy }
 ```
 **Example 2: This example sets the specified attributes for the specified queue.**
 
-```
+```powershell
 Set-SQSQueueAttribute -Attribute @{"DelaySeconds" = "10"; "MaximumMessageSize" = "131072"} -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue
 ```
 +  For API details, see [SetQueueAttributes](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

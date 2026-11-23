@@ -145,7 +145,7 @@ For more information, see [Listener rules for your Application Load Balancer](ht
 **Tools for PowerShell V4**
 **Example 1: This example describes the listener rules for the specified Listener ARN.**
 
-```
+```powershell
 Get-ELB2Rule -ListenerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener/app/test-alb/3651b4394dd9a24f/66e10e3aaf5b6d9b'
 ```
 **Output:**
@@ -174,7 +174,7 @@ RuleArn    : arn:aws:elasticloadbalancing:us-east-1:123456789012:listener-rule/a
 **Tools for PowerShell V5**
 **Example 1: This example describes the listener rules for the specified Listener ARN.**
 
-```
+```powershell
 Get-ELB2Rule -ListenerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener/app/test-alb/3651b4394dd9a24f/66e10e3aaf5b6d9b'
 ```
 **Output:**

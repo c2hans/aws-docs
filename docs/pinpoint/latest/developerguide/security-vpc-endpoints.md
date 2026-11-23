@@ -40,7 +40,7 @@ For more information, see [Control access to services using endpoint policies](h
 
 The following VPC endpoint policy grants access to the listed Amazon Pinpoint actions for all principals on all resources.
 
-```
+```JSON
 {
 "Statement": [
     {

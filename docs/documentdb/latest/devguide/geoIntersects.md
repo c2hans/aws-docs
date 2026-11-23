@@ -80,7 +80,7 @@ To view a code example for using the `$geoIntersects` command, choose the tab fo
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function findStateByGeoIntersects(longitude, latitude) {
@@ -119,7 +119,7 @@ async function findStateByGeoIntersects(longitude, latitude) {
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def find_state_by_geointersects(longitude, latitude):

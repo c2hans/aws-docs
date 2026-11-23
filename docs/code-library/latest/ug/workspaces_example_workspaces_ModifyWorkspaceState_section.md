@@ -30,7 +30,7 @@ For more information, see [WorkSpace maintenance](https://docs.aws.amazon.com/wo
 **Tools for PowerShell V4**
 **Example 1: This sample changes the state of the specified Workspace to Available**
 
-```
+```powershell
 Edit-WKSWorkspaceState -WorkspaceId ws-w361s100v -Region us-west-2 -WorkspaceState AVAILABLE
 ```
 +  For API details, see [ModifyWorkspaceState](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -38,7 +38,7 @@ Edit-WKSWorkspaceState -WorkspaceId ws-w361s100v -Region us-west-2 -WorkspaceSta
 **Tools for PowerShell V5**
 **Example 1: This sample changes the state of the specified Workspace to Available**
 
-```
+```powershell
 Edit-WKSWorkspaceState -WorkspaceId ws-w361s100v -Region us-west-2 -WorkspaceState AVAILABLE
 ```
 +  For API details, see [ModifyWorkspaceState](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

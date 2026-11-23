@@ -27,7 +27,7 @@ For more information about testing in Device Farm and how server-side works, see
 
  Device Farm comes pre-configured with different Appium server versions based on the test host. The host comes with tooling that enables the pre-configured version with the device platform's default driver (UiAutomator2 for Android, and XCUITest for iOS). For example, on the `macos_tahoe` test host, Appium 3 is the default version and comes preinstalled with a compatible XCUITest driver for iOS.
 
-```
+```yaml
 phases:
   install:
     commands:
@@ -42,7 +42,7 @@ phases:
 
  To select a custom version of Appium, use the `npm` command to install it. The following example shows how to install the latest version of Appium 2.
 
-```
+```yaml
 phases:
   install:
     commands:
@@ -55,7 +55,7 @@ phases:
 
  On the [Legacy iOS test host](custom-test-environments-hosts-ios.md#legacy-ios-host), you can choose specific Appium versions with `avm`. For example, to use the `avm` command to set the Appium server version to `2.1.2`, add these commands to your test spec YAML file.
 
-```
+```yaml
 phases:
   install:
     commands:
@@ -70,7 +70,7 @@ phases:
 
  The following code snippet can be used to select a WebDriverAgent version on Device Farm within your test spec file that is compatible with your XCTestUI Driver version..
 
-```
+```yaml
 phases:
   pre_test:
     commands:

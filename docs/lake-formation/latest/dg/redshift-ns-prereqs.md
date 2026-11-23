@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/redshift-ns-pre
 
 ****
 
-   ```
+   ```json
        {
        "Version":"2012-10-17",
        "Id": "glue-enable-datalake-access",
@@ -129,7 +129,7 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/redshift-ns-pre
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "glue-enable-datalake-access",
@@ -155,7 +155,7 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/redshift-ns-pre
 
 ****
 
-   ```
+   ```json
              {
        "Version":"2012-10-17",
        "Statement": [{
@@ -182,7 +182,7 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/redshift-ns-pre
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "auto-redshift-3",

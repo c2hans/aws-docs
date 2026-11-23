@@ -65,7 +65,7 @@ The following example shows a simple policy that allows AWS ID *123456789012* to
 
 ****
 
-```
+```json
 {
   "Id":"SampleAuthorizationPolicy",
   "Version":"2012-10-17",
@@ -102,7 +102,7 @@ The following example policy grants permission to two IAM users to send from ide
 
 ****
 
-```
+```json
 {
   "Id":"ExampleAuthorizationPolicy",
   "Version":"2012-10-17",
@@ -135,7 +135,7 @@ The following example policy grants permission to Amazon Cognito to send from id
 
 ****
 
-```
+```json
 {
   "Id":"ExampleAuthorizationPolicy",
   "Version":"2012-10-17",
@@ -173,7 +173,7 @@ The following example policy grants permission to all accounts within an AWS Org
 
 ****
 
-```
+```json
 {
   "Id":"ExampleAuthorizationPolicy",
   "Version":"2012-10-17",
@@ -209,7 +209,7 @@ If you use a verified domain, you may want to create a policy that allows only t
 
 ****
 
-```
+```json
 {
   "Id":"ExamplePolicy",
   "Version":"2012-10-17",
@@ -249,7 +249,7 @@ You can also configure your sender authorization policy so that a delegate sende
 
 ****
 
-```
+```json
 {
   "Id":"ExamplePolicy",
   "Version":"2012-10-17",
@@ -297,7 +297,7 @@ If your use case is such that you want to restrict the action, you can do so by 
 
 ****
 
-```
+```json
 {
   "Id":"ExamplePolicy",
   "Version":"2012-10-17",
@@ -331,7 +331,7 @@ Some email clients display the "friendly" name of the email sender (if the email
 
 ****
 
-```
+```json
 {
   "Id":"ExamplePolicy",
   "Version":"2012-10-17",

@@ -41,13 +41,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-route53-hostedzone-hostedzonefeatures-properties"></a>
 
 `ChangeGuardrails`  <a name="cfn-route53-hostedzone-hostedzonefeatures-changeguardrails"></a>
-Property description not available.
+The Change Guardrail settings for the hosted zone. When a guardrail is enabled, Route 53 blocks the corresponding change. `NS_OCCLUSION_CHECK` is available on both the standard and advanced tiers; the other guardrails are available only on the advanced tier.
 *Required*: No
 *Type*: Array of [ChangeGuardrail](aws-properties-route53-hostedzone-changeguardrail.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Minimum*: `1`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `ChangeHistory`  <a name="cfn-route53-hostedzone-hostedzonefeatures-changehistory"></a>
-Property description not available.
+The change history setting for the hosted zone. This property is read-only and reports whether change history is enabled for the hosted zone.
 *Required*: No
 *Type*: [ChangeHistory](aws-properties-route53-hostedzone-changehistory.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -59,7 +60,8 @@ Property description not available.
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `EnablePublicDNSFallback`  <a name="cfn-route53-hostedzone-hostedzonefeatures-enablepublicdnsfallback"></a>
-Property description not available.
+Enables public DNS fallback for a private hosted zone. When a query for a name in the private hosted zone matches no existing name, Route 53 falls back to public DNS instead of returning a negative response. Fallback does not occur when the name exists but has no record of the requested type.
+Supported on private hosted zones only, and only when the hosted zone is on the advanced tier.
 *Required*: No
 *Type*: Boolean
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

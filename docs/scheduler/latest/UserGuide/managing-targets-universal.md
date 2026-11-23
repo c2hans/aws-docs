@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-targ
 
  EventBridge Scheduler does not support read-only API actions, such as common `GET` operations, that begin with the following list of prefixes:
 
-```
+```text
 get
 describe
 list
@@ -90,7 +90,7 @@ exportDictionaryEntries
 
 **Example Lambda**
 
-```
+```bash
 $ aws scheduler create-schedule --name lambda-universal-schedule --schedule-expression 'rate(5 minutes)' \
 --target '{"RoleArn": "{{ROLE_ARN}}", "Arn":"arn:aws:scheduler:::aws-sdk:lambda:invoke" "Input": "{\"FunctionName\":\"arn:aws:lambda:{{REGION}}:123456789012:function:HelloWorld\",\"InvocationType\":\"Event\",\"Payload\":\"{\\\"message\\\":\\\"testing function\\\"}\"}" }' \
 --flexible-time-window '{ "Mode": "OFF"}'
@@ -98,7 +98,7 @@ $ aws scheduler create-schedule --name lambda-universal-schedule --schedule-expr
 
 **Example Amazon SQS**
 
-```
+```python
 import boto3
 scheduler = boto3.client('scheduler')
 
@@ -119,7 +119,7 @@ scheduler.create_schedule(
 
 **Example Step Functions**
 
-```
+```java
 package com.example;
 
 import software.amazon.awssdk.regions.Region;

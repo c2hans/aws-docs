@@ -10,7 +10,7 @@ As you apply the Amazon Personalize Search Ranking plugin to OpenSearch queries,
 
 You can use the following Python code to get metrics for all of your pipelines. For an example of pipeline metrics, see [Pipeline metrics example](monitor-response.md).
 
-```
+```py
 import requests
 from requests_auth_aws_sigv4 import AWSSigV4
 

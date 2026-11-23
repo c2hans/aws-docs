@@ -37,7 +37,7 @@ To use notebooks in AWS Glue, your role requires the following:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -64,7 +64,7 @@ To use notebooks in AWS Glue, your role requires the following:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -102,7 +102,7 @@ To use notebooks in AWS Glue, your role requires the following:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

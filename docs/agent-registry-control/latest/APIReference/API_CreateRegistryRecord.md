@@ -122,6 +122,24 @@ Content-type: application/json
                "url": "{{string}}"
             }
          }
+      },
+      "signatureAgentCard": {
+         "additionalData": {
+            "category": "{{string}}"
+         },
+         "data": "{{string}}",
+         "dataSchemaVersion": "{{string}}",
+         "source": {
+            "fromUrl": {
+               "credentialProviderConfigurations": [
+                  {
+                     "credentialProvider": { ... },
+                     "credentialProviderType": "{{string}}"
+                  }
+               ],
+               "url": "{{string}}"
+            }
+         }
       }
    },
    "displayName": "{{string}}",
@@ -208,7 +226,7 @@ Required: No
  ** [recordType](#API_CreateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistryRecord-request-recordType"></a>
 The type of the registry record, which determines the descriptor format
 Type: String
-Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY`
+Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY | WEB_BOT`
 Required: Yes
 
  ** [recordVersion](#API_CreateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistryRecord-request-recordVersion"></a>

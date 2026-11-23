@@ -21,7 +21,7 @@ For more information about minimum requirements and maximum data limits for an A
 
 The following example shows a schema for an Action interactions dataset with only the required fields. For information about general schema formatting requirements, see [Schema formatting requirements](how-it-works-dataset-schema.md#general-schema-requirements).
 
-```
+```json
 {
 
   "type": "record",

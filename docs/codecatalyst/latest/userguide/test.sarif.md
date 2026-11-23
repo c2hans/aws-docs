@@ -8,7 +8,7 @@ Amazon CodeCatalyst is no longer open to new customers. Existing customers can c
 
 Static Analysis Results Interchange Format (SARIF) is an output file format which is available in software composition analysis (SCA) and static analysis reports in Amazon CodeCatalyst. The following example shows how to manually configure SARIF in a static analysis report:
 
-```
+```yaml
 Reports:
 MySAReport:
 Format: SARIFSA

@@ -63,7 +63,7 @@ After you enable Multi-Attach for a volume, you can attach the volume to an inst
 **To enable Multi-Attach during volume creation**
 Use the [create-volume](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-volume.html) command with the `--multi-attach-enabled` option.
 
-```
+```bash
 aws ec2 create-volume \
     --volume-type io2 \
     --multi-attach-enabled \
@@ -76,7 +76,7 @@ aws ec2 create-volume \
 **To enable Multi-Attach after creation**
 Use the [modify-volume](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-volume.html) command with the `--multi-attach-enabled` option.
 
-```
+```bash
 aws ec2 modify-volume \
     --volume-id {{vol-01234567890abcdef}} \
     --multi-attach-enabled
@@ -88,7 +88,7 @@ aws ec2 modify-volume \
 **To enable Multi-Attach during volume creation**
 Use the [New-EC2Volume](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Volume.html) cmdlet with the `-MultiAttachEnabled` parameter.
 
-```
+```powershell
 New-EC2Volume `
     -VolumeType io2 `
     -MultiAttachEnabled $true `
@@ -101,7 +101,7 @@ New-EC2Volume `
 **To enable Multi-Attach after creation**
 Use the [Edit-EC2Volume](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2Volume.html) cmdlet with the `-MultiAttachEnabled` parameter.
 
-```
+```powershell
 Edit-EC2Volume `
     -VolumeId {{vol-01234567890abcdef}} `
     -MultiAttachEnabled $true

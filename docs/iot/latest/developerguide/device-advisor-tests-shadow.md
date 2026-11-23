@@ -16,7 +16,7 @@ Validates if a device can publish its state after it connects to AWS IoT Core
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 2 minutes.
 
-```
+```JSON
 "tests":[
    {
       "name":{{"my_shadow_publish_reported_state"}},
@@ -46,7 +46,7 @@ Validates if your device reads all update messages received and synchronizes the
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 2 minutes.
 
-```
+```JSON
 "tests":[
    {
       "name":{{"my_shadow_update_reported_state"}},

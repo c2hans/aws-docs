@@ -45,7 +45,7 @@ Failed extractions are displayed with dashed borders, transparent backgrounds, a
 
 Failed extractions appear under `JobDetails.SkippedAnalysis` with the feature `INFORMATION_EXTRACTION` and a reason code:
 
-```
+```json
 "SkippedAnalysis": [
     {
         "Feature": "INFORMATION_EXTRACTION",

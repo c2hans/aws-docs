@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="listfunctiondefinitions-get-cli"></a>
 
-```
+```bash
 aws greengrass list-function-definitions \
   [--max-results <value>] \
   [--next-token <value>]  \
@@ -25,7 +25,7 @@ aws greengrass list-function-definitions \
 
 cli-input-json format:
 
-```
+```json
 {
 "MaxResults": "integer",
 "NextToken": "string"
@@ -52,7 +52,7 @@ type: string
 Success. The response contains the IDs of all of the Greengrass Lambda function definitions in this account.
  [ ListDefinitionsResponse](definitions-listdefinitionsresponse.md)
 
-```
+```json
 {
 "Definitions": [
   {

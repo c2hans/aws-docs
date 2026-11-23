@@ -21,7 +21,7 @@ To set up sandbox access, complete the following steps in order:
 
 1. Check whether a `Sandbox` partner account already exists. Call the `ListPartners` API with `catalog` set to `Sandbox`. Use the following request body:
 
-   ```
+   ```json
    {
      "Catalog": "Sandbox"
    }
@@ -42,7 +42,7 @@ If you migrated from PC2.0 to PC3.0, you might already have a `Sandbox` partner 
 
 1. Register in the sandbox using the `CreatePartner` API. After you complete AWS catalog registration, call `CreatePartner` with `catalog` set to `Sandbox`. Use the following request body:
 
-   ```
+   ```json
    {
      "Catalog": "Sandbox",
      "ClientToken": "unique-idempotency-token",

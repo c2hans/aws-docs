@@ -27,7 +27,7 @@ You can provide an input image as an image byte array (base64-encoded image byte
 
    Replace the values of `amzn-s3-demo-bucket` and `photo` with the names of the S3 bucket and image that you used in step 2.
 
-   ```
+   ```java
    //Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    //PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -83,7 +83,7 @@ You can provide an input image as an image byte array (base64-encoded image byte
 
    This code is taken from the AWS Documentation SDK examples GitHub repository. See the full example [here](https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/javav2/example_code/rekognition/src/main/java/com/example/rekognition/DetectText.java).
 
-   ```
+   ```java
    /**
    *  To run this code example, ensure that you perform the Prerequisites as stated in the Amazon Rekognition Guide:
    *  https://docs.aws.amazon.com/rekognition/latest/dg/video-analyzing-with-sqs.html
@@ -204,7 +204,7 @@ You can provide an input image as an image byte array (base64-encoded image byte
 
    Replace the values of `amzn-s3-demo-bucket` and `photo` with the names of the S3 bucket and image that you used in step 2. Replace the value of `profile_name` in the line that creates the Rekognition session with the name of your developer profile.
 
-   ```
+   ```python
    # Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -246,7 +246,7 @@ You can provide an input image as an image byte array (base64-encoded image byte
 
    Replace the values of `amzn-s3-demo-bucket` and `photo` with the names of the S3 bucket and image that you used in step 2.
 
-   ```
+   ```cs
    //Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    //PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -303,7 +303,7 @@ You can provide an input image as an image byte array (base64-encoded image byte
 
    Replace the values of `amzn-s3-demo-bucket` and `photo` with the names of the S3 bucket and image that you used in step 2. Replace the value of `region` with the region found in your .aws credentials. Replace the value of `profile_name` in the line that creates the Rekognition session with the name of your developer profile.
 
-   ```
+   ```javascript
    var AWS = require('aws-sdk');
 
    const bucket = 'bucket' // the bucketname without s3://

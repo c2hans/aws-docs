@@ -35,6 +35,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost08-
 
 ![Chart showing a demand curve with two peaks and the capacity line provisioned to cover them, with the gap above the demand curve highlighted as waste.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/provisioned-capacity-1.png)
 
+*Provisioned capacity sized to cover demand peaks*
+
  The client's retry behavior decides which technique fits. When the source of a request can retry, throttling works. The workload declines a request it cannot serve now, and the client waits and tries again. When the source cannot retry, a declined request is lost, so a buffer holds the request until the workload can process it.
 
  Throttling caps resource use and cost. Throttled requests are delayed or declined, so an aggressive limit degrades legitimate traffic. Use [Amazon API Gateway](https://aws.amazon.com/api-gateway/) to throttle requests at the API layer. Set per-client limits to protect capacity and treat client tiers differently.

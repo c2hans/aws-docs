@@ -9,7 +9,7 @@ If you created an Amazon Route 53 hosted zone for your domain, you can use the 
 **Important**
 The tool doesn't submit queries to the Domain Name System, it only responds based on the settings in the records in the hosted zone. The tool returns the same information regardless of whether the hosted zone is currently being used to route traffic for the domain.
 
-The DNS checking tool works only for public hosted zones.
+The DNS checking tool works only for public hosted zones. The tool doesn't support AZ-affinity records. For information about how to test AZ-affinity records, see [Considerations for AZ-affinity routing](routing-policy-azaffinity.md#routing-policy-azaffinity-considerations).
 
 **Note**
 The DNS checking tool returns information similar to what you would expect from the answer section of the `dig` command. Therefore, if you query for the name servers of a subdomain that point to the parent name servers, those will not be returned.

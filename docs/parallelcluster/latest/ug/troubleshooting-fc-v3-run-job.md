@@ -37,7 +37,7 @@ Exceeding network limits is often a result of supporting too many NFS connection
 
 For example, the following output shows dropped packages:
 
-```
+```bash
 $ ethtool -S eth0 | grep exceeded
   bw_in_allowance_exceeded: 38750610
   bw_out_allowance_exceeded: 1165693

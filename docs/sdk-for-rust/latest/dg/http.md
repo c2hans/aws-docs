@@ -48,13 +48,13 @@ The following example shows how to use the `s2n-tls` TLS provider. However, a si
 
 To compile the example code, run the following command to add dependencies to your project:
 
-```
+```bash
 cargo add aws-smithy-http-client -F {{s2n-tls}}
 ```
 
 Example code:
 
-```
+```rust
 use aws_smithy_http_client::{tls, Builder};
 
 #[tokio::main]
@@ -85,13 +85,13 @@ FIPS support requires additional dependencies in your build environment. See the
 
 To compile the example code, run the following command to add dependencies to your project:
 
-```
+```bash
 cargo add aws-smithy-http-client -F rustls-aws-lc-fips
 ```
 
 The following example code enables FIPS support:
 
-```
+```rust
 // file: main.rs
 use aws_smithy_http_client::{
     tls::{self, rustls_provider::CryptoMode},
@@ -131,14 +131,14 @@ This will become the default in a future release.
 
 To compile the example code, run the following commands to add dependencies to your project:
 
-```
+```bash
 cargo add aws-smithy-http-client -F rustls-aws-lc
 cargo add aws-smithy-runtime-api -F client
 ```
 
 The following example code overrides the DNS resolver:
 
-```
+```rust
 use aws_smithy_http_client::{
     tls::{self, rustls_provider::CryptoMode},
     Builder
@@ -184,13 +184,13 @@ By default, the TLS provider loads the system native root certificates for the g
 
 To compile the example code, run the following commands to add dependencies to your project:
 
-```
+```bash
 cargo add aws-smithy-http-client -F rustls-aws-lc
 ```
 
 The following example uses `rustls` with `aws-lc` but will work for any supported TLS provider:
 
-```
+```rust
 use aws_smithy_http_client::{
     tls::{self, rustls_provider::CryptoMode},
     Builder

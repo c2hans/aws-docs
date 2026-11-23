@@ -18,7 +18,7 @@ The following policy gives access to use rules for all resources in your account
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

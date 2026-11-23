@@ -14,7 +14,7 @@ The following code examples show how to use `CreateSegment`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/pinpoint#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.AttributeDimension;
@@ -131,7 +131,7 @@ public class CreateSegment {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/pinpoint#code-examples).
 
-```
+```kotlin
 suspend fun createPinpointSegment(applicationIdVal: String?): String? {
     val segmentAttributes = mutableMapOf<String, AttributeDimension>()
     val myList = mutableListOf<String>()

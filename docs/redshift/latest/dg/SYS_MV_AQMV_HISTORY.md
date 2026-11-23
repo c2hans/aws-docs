@@ -54,7 +54,7 @@ Use `SVV_MV_INFO.autorewrite` and `SVV_MV_INFO.is_stale` together with `SYS_MV_A
 
 The following query displays decisions for a specific query.
 
-```
+```sql
 SELECT query_id,
        database_name,
        schema_name,

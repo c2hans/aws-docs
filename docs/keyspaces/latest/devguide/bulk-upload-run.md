@@ -10,7 +10,7 @@ To run the `cqlsh COPY FROM` command, complete the following steps.
 
 1. Choose your keyspace with the following code.
 
-   ```
+   ```SQL
    USE {{catalog}};
    ```
 

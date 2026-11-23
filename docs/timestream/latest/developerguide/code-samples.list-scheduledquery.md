@@ -11,7 +11,7 @@ You can use the following code snippets to list your scheduled queries.
 ------
 #### [  Java  ]
 
-```
+```java
 public void listScheduledQueries() {
     System.out.println("Listing Scheduled Query");
     try {
@@ -44,7 +44,7 @@ public void printScheduledQuery(List<ScheduledQuery> scheduledQueryList) {
 ------
 #### [  Java v2  ]
 
-```
+```java
 public void listScheduledQueries() {
     System.out.println("Listing Scheduled Query");
     try {
@@ -105,7 +105,7 @@ func (timestreamBuilder TimestreamBuilder) ListScheduledQueries() ([]*timestream
 ------
 #### [  Python  ]
 
-```
+```python
 def list_scheduled_queries(self):
     print("\nListing Scheduled Queries")
     try:
@@ -131,7 +131,7 @@ def print_scheduled_queries(scheduled_queries):
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/blob/mainline/sample_apps_reinvent2021/js/schedule-query-example.js).
 
-```
+```javascript
 async function listScheduledQueries() {
      console.log("Listing Scheduled Query");
      try {
@@ -161,7 +161,7 @@ async function listScheduledQueries() {
 ------
 #### [  .NET  ]
 
-```
+```cs
 private async Task ListScheduledQueries()
  {
      try

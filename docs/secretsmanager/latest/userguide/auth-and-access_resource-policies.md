@@ -59,7 +59,7 @@ aws secretsmanager put-resource-policy \
 Contents of `mypolicy.json`:
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -105,7 +105,7 @@ This example is useful when you want to grant access to a single secret to multi
 You can grant access to a secret by attaching the following policy to the secret.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -132,7 +132,7 @@ Make sure that requests to access the secret from other AWS services also come f
 The following policy allows a user to perform Secrets Manager operations only when the request comes through the VPC endpoint {{`vpce-1234a5678b9012c`}}.
 ****
 
-```
+```json
 {
 "Id": "example-policy-1",
 "Version":"2012-10-17",
@@ -157,7 +157,7 @@ The following policy allows a user to perform Secrets Manager operations only wh
 The following policy allows commands to create and manage secrets only when they come from {{`vpc-12345678`}}. In addition, the policy allows operations that use access the secret encrypted value only when the requests come from `vpc-2b2b2b2b`. You might use a policy like this one if you run an application in one VPC, but you use a second, isolated VPC for management functions.
 ****
 
-```
+```json
 {
 "Id": "example-policy-2",
 "Version":"2012-10-17",
@@ -214,7 +214,7 @@ Service principals are not typically used as principals in a policy attached to 
 **Example Allow a service to access a secret using a service principal**
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement": [

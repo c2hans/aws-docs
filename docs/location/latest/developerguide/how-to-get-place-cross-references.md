@@ -20,14 +20,14 @@ Use `CrossReferences` in the `AdditionalFeatures` parameter to retrieve third-pa
 ------
 #### [ Sample request ]
 
-```
+```http
 https://places.geo.eu-central-1.amazonaws.com/v2/place/YourPlaceId?additional-features=CrossReferences&key=Your_Key
 ```
 
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "PlaceId": "<Redacted>",
     "PlaceType": "PointOfInterest",
@@ -60,7 +60,7 @@ https://places.geo.eu-central-1.amazonaws.com/v2/place/YourPlaceId?additional-fe
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request GET \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/place/YourPlaceId?key=Your_Key&additional-features=CrossReferences'
 ```
@@ -68,7 +68,7 @@ curl --request GET \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places get-place --key ${YourKey} --place-id "YourPlaceId" --additional-features CrossReferences
 ```
 

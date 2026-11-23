@@ -23,7 +23,7 @@ When you upload an object with the `putObject` method and provide a checksum alg
 
 The following code snippet shows a request to upload an object with a `CRC32` checksum. When the SDK sends the request, it calculates the `CRC32` checksum and uploads the object. Amazon S3 validates the integrity of the content by calculating the checksum and comparing it to the checksum provided by the SDK. Amazon S3 then stores the checksum with the object.
 
-```
+```go
 out, err := s3Client.PutObject(context.Background(), &s3.PutObjectInput{
      Bucket:            aws.String("bucket"),
      Key:               aws.String("key"),
@@ -48,7 +48,7 @@ A pre-calculated checksum value provided with the request disables automatic com
 
 The following example shows a request with a pre-calculated SHA256 checksum.
 
-```
+```go
 out, err := s3Client.PutObject(context.Background(), &s3.PutObjectInput{
      Bucket:        aws.String("bucket"),
      Key:           aws.String("key"),
@@ -66,7 +66,7 @@ You can also use checksums with multipart uploads.
 
  The AWS SDK for Go provides two options to use checksums with multipart uploads. The first option uses the transfer manager that specifies the `CRC32` algorithm for the upload.
 
-```
+```go
 s3Client := s3.NewFromConfig(cfg)
      transferManager := manager.NewUploader(s3Client)
      out, err := transferManager.Upload(context.Background(), &s3.PutObjectInput{
@@ -81,7 +81,7 @@ If you don't provide a checksum algorithm when using the transfer manager for up
 
 The second option uses the [Amazon S3](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/s3) client to perform the multipart upload. If you specify a checksum with this approach, you must specify the algorithm to use on the initiation of the upload. You must also specify the algorithm for each part request and provide the checksum calculated for each part after it is uploaded.
 
-```
+```go
 s3Client := s3.NewFromConfig(cfg)
      createMultipartUploadOutput, err := s3Client.CreateMultipartUpload(context.Background(), &s3.CreateMultipartUploadInput{
              Bucket:            aws.String("bucket"),
@@ -136,7 +136,7 @@ When you use the [GetObject](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/ser
 
 The request in the following snippet directs the SDK to validate the checksum in the response by calculating the checksum and comparing the values.
 
-```
+```go
 out, err := s3Client.GetObject(context.Background(), &s3.GetObjectInput{
      Bucket:       aws.String("bucket"),
      Key:          aws.String("key"),

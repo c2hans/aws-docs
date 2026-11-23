@@ -11,7 +11,7 @@ To find out if a model supports streaming, call [GetFoundationModel](https://doc
 **Note**
 The AWS CLI doesn't support streaming operations in Amazon Bedrock, including `ConverseStream`.
 
-Amazon Bedrock doesn't store any text, images, or documents that you provide as content. The data is only used to generate the response.
+Data retention for this request depends on the applicable account or project configuration and the model's data retention policy.
 
 You can submit a prompt by including it in the `messages` field, specifying the `modelId` of a foundation model or inference profile to run inference on it, and including any other fields that are relevant to your use case.
 
@@ -21,7 +21,7 @@ For information about the Converse API, see [Use the Converse API](https://docs.
 
 For example code, see [Conversation streaming example](https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html#messages-streaming-inference-example).
 
-This operation requires permission for the `bedrock:InvokeModelWithResponseStream` action.
+This operation requires permission for the `bedrock:InvokeModelWithResponseStream` action on both the inference target and the project. If you omit `projectIdentifier` or specify `default`, this includes permission on the default project for your account.
 
 **Important**
 To deny all inference access to resources that you specify in the modelId field, you need to deny access to the `bedrock:InvokeModel` and `bedrock:InvokeModelWithResponseStream` actions. Doing this also denies access to the resource through the base inference actions ([InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html) and [InvokeModelWithResponseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)). For more information see [Deny access for inference on specific models](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-deny-inference).
@@ -59,6 +59,7 @@ Content-type: application/json
       }
    ],
    "outputConfig": {
+      "effort": "{{string}}",
       "textFormat": {
          "structure": { ... },
          "type": "{{string}}"
@@ -67,6 +68,7 @@ Content-type: application/json
    "performanceConfig": {
       "latency": "{{string}}"
    },
+   "projectIdentifier": "{{string}}",
    "promptVariables": {
       "{{string}}" : { ... }
    },
@@ -148,6 +150,14 @@ Required: No
  ** [performanceConfig](#API_runtime_ConverseStream_RequestSyntax) **   <a name="bedrock-runtime_ConverseStream-request-performanceConfig"></a>
 Model performance settings for the request.
 Type: [PerformanceConfiguration](API_runtime_PerformanceConfiguration.md) object
+Required: No
+
+ ** [projectIdentifier](#API_runtime_ConverseStream_RequestSyntax) **   <a name="bedrock-runtime_ConverseStream-request-projectIdentifier"></a>
+The ID or Amazon Resource Name (ARN) of the project to use for this invocation. The project must be active and belong to your AWS account and the AWS Region to which you send the request. Specify `default` or omit this field to use the default project for your account.
+For a non-default project, the inference target must resolve to a foundation model or system-defined inference profile. Application inference profiles don't support non-default projects.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `([a-zA-Z0-9_-]+|arn:aws(|-us-gov|-cn|-iso|-iso-b|-iso-f|-eusc):bedrock:[0-9a-z-]{1,20}:[0-9]{12}:project/[a-zA-Z0-9_-]+)`
 Required: No
 
  ** [promptVariables](#API_runtime_ConverseStream_RequestSyntax) **   <a name="bedrock-runtime_ConverseStream-request-promptVariables"></a>
@@ -583,7 +593,7 @@ Send a message to Anthropic Claude Sonnet with `ConverseStream` and stream the r
 #### Sample Request
 <a name="API_runtime_ConverseStream_Example_1_Request"></a>
 
-```
+```json
 POST /model/anthropic.claude-3-sonnet-20240229-v1:0/converse-stream HTTP/1.1
 {
     "messages": [

@@ -78,7 +78,13 @@ On Windows Server, you can download and install the CloudWatch agent using the c
    msiexec /i amazon-cloudwatch-agent.msi
    ```
 
-   This command also works from within PowerShell. For more information about MSI command options, see [Command-Line Options](https://docs.microsoft.com/en-us/windows/desktop/Msi/command-line-options) in the Microsoft Windows documentation.
+   To install without the installer user interface, for example from a script or Run Command, add the `/qn` option:
+
+   ```
+   msiexec /i amazon-cloudwatch-agent.msi /qn
+   ```
+
+   These commands also work from within PowerShell. For more information about MSI command options, see [Command-Line Options](https://docs.microsoft.com/en-us/windows/desktop/Msi/command-line-options) in the Microsoft Windows documentation.
 
 ## Installing on macOS
 <a name="macos-installation"></a>

@@ -54,7 +54,7 @@ Please see [Available properties for optional web applications](ba-runtime-key-v
 
 Here is a sample JCL usage of DNSTEP4:
 
-```
+```jcl
 //********************************************************************
 //* RETRIEVE DATA FROM TABLE AP_JBI7_INVOICE                      *
 //********************************************************************
@@ -68,7 +68,7 @@ Here is a sample JCL usage of DNSTEP4:
 
 and the matching modernized groovy script snippet:
 
-```
+```java
 def stepDSNTEP03(Object shell, Map params, Map programResults){
     shell.with {
         if (checkValidProgramResults(programResults)) {
@@ -144,7 +144,7 @@ Please see [Available properties for optional web applications](ba-runtime-key-v
 
 Here is a sample usage of DSNUTILB in a JCL script:
 
-```
+```jcl
 //********************************************************************
 //* LOAD DATA IN TABLE AP_JBI7_INVOICE.                           *
 //********************************************************************
@@ -181,7 +181,7 @@ with the commands card content (dsn01.card) -- used to load data into database, 
 
 and the matching groovy modernized script snippet:
 
-```
+```java
 // STEP DSN01 - PGM - DSNUTILB****************************************************
 def stepDSN01(Object shell, Map params, Map programResults){
     shell.with {
@@ -271,7 +271,7 @@ Please see [Available properties for optional web applications](ba-runtime-key-v
 
 Here is a sample legacy jcl script snippet:
 
-```
+```jcl
 //********************************************************************
 //* UNLOAD DATA FROM TABLE AP_JBI7_INVOICE.                       *
 //********************************************************************
@@ -285,7 +285,7 @@ Here is a sample legacy jcl script snippet:
 
 that uses the following commands card (inf12.card) to unload some data from the database (here, records are selected based on their date):
 
-```
+```sql
   UNLOAD
       SELECT * FROM BUR000.AP_JB17_INVOICE
       WHERE INVC_DAT >=
@@ -300,7 +300,7 @@ that uses the following commands card (inf12.card) to unload some data from the 
 
 and the matching groovy script snippet, result of the automated jcl modernization:
 
-```
+```java
 // STEP INF1 - PGM - INFUTILB*****************************************************
 def stepINF1(Object shell, Map params, Map programResults){
     shell.with {
@@ -376,7 +376,7 @@ For any of the following conditions, the program return code will be set to 8 an
 
 A sample JXHDBCLR usage with an inlined commands card:
 
-```
+```jcl
 //*******************************************************************
 //**  Step 1 - JXHDBCLR UTILITY - DBCLEAR TYPE=2/3
 //*******************************************************************
@@ -390,7 +390,7 @@ END
 
 and the matching modernized groovy script snippet:
 
-```
+```java
 // STEP STEP01 - PGM - JXHDBCLR***************************************************
 def stepSTEP01(Object shell, Map params, Map programResults){
  shell.with {

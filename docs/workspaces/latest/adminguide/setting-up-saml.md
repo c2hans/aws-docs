@@ -112,7 +112,7 @@ To create an IAM role for SAML IdP
 
 1. Add the `sts:TagSession` permission to your new IAM role's trust policy. For more information, see [Passing session tags in AWS STS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html). In your new IAM role's details, choose the **Trust relationships** tab, and then choose **Edit trust policy**. When the Edit trust policy editor opens, add the `sts:TagSession` permission so that the policy matches the following:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -159,7 +159,7 @@ IAM policies to manage access to AWS based on the source IP are not supported fo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

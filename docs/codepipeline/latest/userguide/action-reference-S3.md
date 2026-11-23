@@ -107,7 +107,7 @@ For S3 source action support, add the following to your policy statement:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -144,7 +144,7 @@ For S3 source action support, add the following to your policy statement:
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: Source
 Actions:
   - RunOrder: 1
@@ -167,7 +167,7 @@ Actions:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "Source",
     "Actions": [

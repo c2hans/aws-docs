@@ -11,7 +11,7 @@ When you create a cluster with JupyterHub on Amazon EMR, the default Python 3 ke
 
 Kernels are installed within the Docker container. The easiest way to accomplish this is to create a bash script with installation commands, save it to the master node, and then use the `sudo docker exec jupyterhub {{script_name}}` command to run the script within the `jupyterhub` container. The following example script installs the kernel, and then installs a few libraries for that kernel on the master node so that later you can import the libraries using the kernel in Jupyter.
 
-```
+```bash
 #!/bin/bash
 
 # Install Python 2 kernel
@@ -43,7 +43,7 @@ The bootstrap action and Python program examples shown in this section use a bas
 
 The script referenced in the following example uses `pip` to install paramiko, nltk, scipy, scikit-learn, and pandas for the Python 3 kernel:
 
-```
+```bash
 #!/bin/bash
 
 sudo python3 -m pip install boto3 paramiko nltk scipy scikit-learn pandas
@@ -87,7 +87,7 @@ Linux line continuation characters (\\) are included for readability. They can b
 **Example Installing libraries on core nodes of a running cluster**
 After you install libraries on the master node from within Jupyter, you can install libraries on running core nodes in various ways. The following example shows a Python program written to run on a local machine. When you run the Python program locally, it uses the `AWS-RunShellScript` of AWS Systems Manager to run the example script, shown earlier in this section, which installs libraries on the cluster's core nodes.
 
-```
+```python
 import argparse
 import time
 import boto3

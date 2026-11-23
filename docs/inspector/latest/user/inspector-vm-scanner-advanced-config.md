@@ -121,13 +121,13 @@ systemctl cat inspector-vm-scanner.timer
 
  The default interval is every 3 hours. To change it, run:
 
-```
+```bash
 sudo systemctl edit inspector-vm-scanner.timer
 ```
 
  In the editor that opens, add the following (this example sets the interval to 6 hours):
 
-```
+```ini
 [Timer]
 OnBootSec=
 OnUnitActiveSec=
@@ -137,7 +137,7 @@ OnUnitActiveSec=21600s
 
  The empty assignments clear the defaults before your values take effect. After saving, restart the timer:
 
-```
+```bash
 sudo systemctl daemon-reload
 sudo systemctl restart inspector-vm-scanner.timer
 ```
@@ -147,7 +147,7 @@ sudo systemctl restart inspector-vm-scanner.timer
 #### Enable or disable automatic execution
 <a name="inspector-vm-scanner-enable-disable"></a>
 
-```
+```bash
 sudo systemctl enable inspector-vm-scanner.timer   # Enable automatic runs.
 sudo systemctl disable inspector-vm-scanner.timer  # Disable automatic runs.
 ```

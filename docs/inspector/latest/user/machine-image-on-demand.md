@@ -55,7 +55,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
 
  Run the [StartOnDemandScan](https://docs.aws.amazon.com/inspector/v2/APIReference/API_StartOnDemandScan.html) API operation. In the request, provide the ID of the machine image as `resourceId`, and set `resourceType` to `AMI`.
 
-```
+```JSON
 {
     "resourceId": "ami-0abcdef1234567890",
     "resourceType": "AMI"
@@ -64,7 +64,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
 
  Amazon Inspector returns a `scanId` that uniquely identifies the scan. Store the `scanId`. You use it to check the status of the scan, and Amazon Inspector includes it in every EventBridge notification for the scan. If you don't have the `scanId`, you can find it by using the [ListOnDemandScans](https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListOnDemandScans.html) API operation.
 
-```
+```JSON
 {
     "scanId": "9f1c4b8d2e6a4f0b7c3d5e1a8b2f6c4d"
 }
@@ -123,7 +123,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
 
  The following example shows the scan complete event for a successful on-demand scan.
 
-```
+```JSON
 {
     "version": "0",
     "id": "7bf7f4b1-9f6c-4d3e-8a2b-5c1d0e9f3a44",
@@ -159,7 +159,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
 
  The following example shows the scan complete event for a failed on-demand scan.
 
-```
+```JSON
 {
     "version": "0",
     "id": "3c2e9a17-8b4d-4f61-9a0c-2d7e6f1b8c33",
@@ -187,7 +187,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
 
  The following example shows a findings event for a package vulnerability that Amazon Inspector detected in a machine image.
 
-```
+```JSON
 {
     "source": "aws.inspector2",
     "detail-type": "Inspector2 OnDemand Finding",

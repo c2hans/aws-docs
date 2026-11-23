@@ -86,7 +86,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `AutoAssociateAccount` action.
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {
@@ -127,7 +127,7 @@ The following example shows a CloudTrail log entry that demonstrates the `AutoAs
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateBillingGroup` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

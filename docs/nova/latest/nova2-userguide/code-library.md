@@ -17,7 +17,7 @@ Send a basic text request to Amazon Nova models using the Converse API.
 ------
 #### [ Non-streaming ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -62,7 +62,7 @@ for content in content_list:
 ------
 #### [ Streaming ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -115,7 +115,7 @@ Process multimodal content by embedding document, image, video, or audio data di
 ------
 #### [ Non-streaming ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -166,7 +166,7 @@ for content in content_list:
 ------
 #### [ Streaming ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -225,7 +225,7 @@ Process multimodal content by referencing documents, images, videos, or audio fi
 ------
 #### [ Non-streaming ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -274,7 +274,7 @@ for content in content_list:
 ------
 #### [ Streaming ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -331,7 +331,7 @@ Enable extended thinking for complex problem-solving tasks.
 ------
 #### [ Non-streaming ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -380,7 +380,7 @@ for content in content_list:
 ------
 #### [ Streaming ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -445,7 +445,7 @@ Use Nova Grounding to retrieve real-time information from the web with citations
 ------
 #### [ Non-streaming ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -493,7 +493,7 @@ print(output_with_citations)
 ------
 #### [ Streaming ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -545,7 +545,7 @@ Use the Code Interpreter tool to execute Python code for calculations and data a
 ------
 #### [ Non-streaming ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -591,7 +591,7 @@ for content in content_list:
 ------
 #### [ Streaming ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 import json
@@ -665,7 +665,7 @@ Define custom tools for the model to use during conversation.
 ------
 #### [ Non-streaming ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -783,7 +783,7 @@ else:
 ------
 #### [ Streaming ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 import json
@@ -936,7 +936,7 @@ Send a basic text request to Amazon Nova 2 models using the InvokeModel API.
 ------
 #### [ Non-streaming ]
 
-```
+```python
 import json
 
 import boto3
@@ -982,7 +982,7 @@ for content in content_list:
 ------
 #### [ Streaming ]
 
-```
+```python
 import json
 
 import boto3
@@ -1036,7 +1036,7 @@ Use the InvokeModel API with reasoning enabled for complex problem-solving.
 ------
 #### [ Non-streaming ]
 
-```
+```python
 import json
 
 import boto3
@@ -1088,7 +1088,7 @@ for content in content_list:
 ------
 #### [ Streaming ]
 
-```
+```python
 import json
 
 import boto3

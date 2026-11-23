@@ -11,7 +11,7 @@ This section covers advanced usage patterns and techniques for the S3 Transfer M
 
 S3 Transfer Manager automatically uses multipart uploads for large files. You can customize this behavior with configuration options.
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\UploadRequest;
@@ -45,7 +45,7 @@ $uploadPromise->wait();
 
 You can customize multipart download behavior.
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\AbstractMultipartDownloader;
@@ -84,7 +84,7 @@ You can use filter functions to selectively upload or download files for directo
 
 For more information about parameter information, see the [filter callable option](directory-operations.md#upload-directory-config-callables) of the `uploadDirectory` method.
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\UploadDirectoryRequest;
@@ -116,7 +116,7 @@ $uploadDirPromise->wait();
 
 For more information about parameter information, see the [filter callable option](directory-operations.md#download-dir-callable-options) of the `downloadDirectory` method.
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\DownloadDirectoryRequest;
@@ -151,7 +151,7 @@ You can modify request parameters for each file using pre-request callbacks. For
 
 **Example of a pre-request callback for the `uploadDirectory` method**
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\UploadDirectoryRequest;

@@ -42,7 +42,7 @@ For more details, refer to [Yandex’s OAuth documentation](https://yandex.com/d
 
 To configure Yandex as an outbound resource provider, use the following:
 
-```
+```json
 {
   "name": "Yandex",
   "credentialProviderVendor": "YandexOauth2",

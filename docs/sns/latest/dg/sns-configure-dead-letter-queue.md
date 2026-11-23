@@ -31,7 +31,7 @@ Before you configure a dead-letter queue, complete the following prerequisites:
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -98,7 +98,7 @@ The following code example shows how to use `SetSubscriptionAttributesRedrivePol
 **SDK for Java 1.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/java/example_code/sns#code-examples).
 
-```
+```java
 // Specify the ARN of the Amazon SNS subscription.
 String subscriptionArn =
     "arn:aws:sns:us-east-2:123456789012:MyEndpoint:1234a567-bc89-012d-3e45-6fg7h890123i";
@@ -127,7 +127,7 @@ Before your begin this tutorial, make sure you complete the [prerequisites](#dea
 
 1. Use the following command.
 
-   ```
+   ```bash
    aws sns set-subscription-attributes \
    --subscription-arn arn:aws:sns:{{us-east-2}}:{{123456789012}}:{{MyEndpoint}}:{{1234a567-bc89-012d-3e45-6fg7h890123i}}
    --attribute-name RedrivePolicy
@@ -141,7 +141,7 @@ Before your begin this tutorial, make sure you complete the [prerequisites](#dea
 
 1. Copy the following JSON code to a file named `MyDeadLetterQueue.json`.
 
-   ```
+   ```json
    {
      "Resources": {
        "mySubscription": {

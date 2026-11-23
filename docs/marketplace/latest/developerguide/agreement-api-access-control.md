@@ -57,7 +57,7 @@ You can also define a customer managed policy to control access to Agreement ser
 
 To access the AWS Marketplace Agreements API for managing the product subscriptions, you can create following policy to allow access.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -177,7 +177,7 @@ To access the AWS Marketplace Agreements API for managing the product subscripti
 
 Below statement limits the access to `UpdatePurchaseOrders` operation only for `PurchaseAgreement` agreement type.
 
-```
+```JSON
 {
   "Effect": "Allow",
   "Action": [
@@ -197,7 +197,7 @@ Below statement limits the access to `UpdatePurchaseOrders` operation only for `
 
 Below statement limits the access to `CreateAgreementRequest` and `AcceptAgreementRequest` to only specified AWS Marketplace product ids. You can include this statement to allow creating only pre-approved product ids, such as limiting to Bedrock foundational models.
 
-```
+```JSON
 {
   "Effect": "Allow",
   "Action": [
@@ -221,7 +221,7 @@ Below statement limits the access to `CreateAgreementRequest` and `AcceptAgreeme
 
 Below statement grants the access to read details of any agreement if the user is proposer of the agreement.
 
-```
+```JSON
 {
   "Effect": "Allow",
   "Action": [

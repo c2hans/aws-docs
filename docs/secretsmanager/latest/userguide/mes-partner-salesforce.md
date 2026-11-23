@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "consumerKey": "{{client ID}}",
   "consumerSecret": "{{client secret}}",
@@ -39,7 +39,7 @@ The consumer ID is the identifier for your Salesforce External Client Applicatio
 
 The following are the metadata fields required to rotate a secret held by Salesforce.
 
-```
+```json
 {
   "apiVersion": "{{v65.0}}",
   "adminSecretArn": "arn:aws:secretsmanager:us-east-1:111122223333:secret:{{SalesforceClientSecret}}"

@@ -10,7 +10,7 @@ The default credentials provider chain is implemented by the [DefaultCredentials
 
 To use the default credentials provider chain to supply temporary credentials, create a service client builder but don't specify a credentials provider. The following code snippet creates a `DynamoDbClient` that uses the default credentials provider chain to locate and retrieve configuration settings.
 
-```
+```java
 // Any external Region configuration is overridden.
 // The SDK uses the default credentials provider chain because no specific credentials provider is specified.
 Region region = Region.US_WEST_2;
@@ -87,7 +87,7 @@ The `credentials` and `config` files are shared by various AWS SDKs and Tools. F
 
 You can explicitly use the default credentials provider chain in your code. This is functionally equivalent to you not specifying a credentials provider at all, since the SDK uses `DefaultCredentialsProvider` by default. However, explicitly using it can make your code more readable and self-documenting. It clearly shows your intention to use the default credentials chain.
 
-```
+```code
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
@@ -112,7 +112,7 @@ public class ExplicitDefaultCredentialsExample {
 
 When you build the default credentials provider you can provide more configuration:
 
-```
+```java
 DefaultCredentialsProvider customizedProvider = DefaultCredentialsProvider.builder()
     .profileName("custom-profile")  // Use a specific profile if the chain gets to the `ProfileCredentialsProvider` stage.
     .asyncCredentialUpdateEnabled(true)  // Enable async credential updates.

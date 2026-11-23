@@ -36,7 +36,7 @@ ACL configuration is permanent. You cannot enable ACLs on a data source created 
 
 The AWS Secrets Manager secret must include `adminAccountEmail`, `clientEmail`, and `privateKey`. For step-by-step instructions to create the service account, configure domain-wide delegation, and obtain these values, see [Set up service account authentication for Google Drive](kb-managed-googledrive-service-account-setup.md).
 
-```
+```json
 "connectorParameters": {
     "type": "GOOGLEDRIVE",
     "version": "1",

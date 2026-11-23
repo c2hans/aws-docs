@@ -169,7 +169,7 @@ Edit the trust relationship and attach the following IAM role to your service ro
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

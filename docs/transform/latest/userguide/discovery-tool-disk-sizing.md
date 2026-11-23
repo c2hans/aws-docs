@@ -78,7 +78,7 @@ The discovery tool service is limited to 14 GB of memory by default, regardless 
 
 1. On the discovery tool VM, run the following commands. Replace {{28G}} with the limit that you chose.
 
-   ```
+   ```bash
    sudo mkdir -p /etc/systemd/system/discovery-tool.service.d
    printf '[Service]\nMemoryMax=28G\nMemoryLimit=28G\n' | sudo tee /etc/systemd/system/discovery-tool.service.d/memory.conf
    sudo systemctl daemon-reload
@@ -87,7 +87,7 @@ The discovery tool service is limited to 14 GB of memory by default, regardless 
 
 1. Verify the new limit.
 
-   ```
+   ```bash
    systemctl show discovery-tool -p MemoryMax -p MemoryLimit
    ```
 

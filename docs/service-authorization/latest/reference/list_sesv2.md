@@ -472,6 +472,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   PutAccountDeliveryAttributes  **
+  - **IAM action:**  [ses:PutAccountDeliveryAttributes](#list_sesv2-action-PutAccountDeliveryAttributes)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   PutAccountDetails  **
   - **IAM action:**  [ses:PutAccountDetails](#list_sesv2-action-PutAccountDetails)
   - **Condition key:**

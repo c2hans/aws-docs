@@ -94,12 +94,12 @@ For more information, see [Launch a virtual desktop](https://docs.aws.amazon.com
 **Tools for PowerShell V4**
 **Example 1: Create a WorkSpace for the supplied bundle, directory, and user.**
 
-```
+```powershell
 New-WKSWorkspace -Workspace @{"BundleID" = "wsb-1a2b3c4d"; "DirectoryId" = "d-1a2b3c4d"; "UserName" = "USERNAME"}
 ```
 **Example 2: This example creates multiple WorkSpaces**
 
-```
+```powershell
 New-WKSWorkspace -Workspace @{"BundleID" = "wsb-1a2b3c4d"; "DirectoryId" = "d-1a2b3c4d"; "UserName" = "USERNAME_1"},@{"BundleID" = "wsb-1a2b3c4d"; "DirectoryId" = "d-1a2b3c4d"; "UserName" = "USERNAME_2"}
 ```
 +  For API details, see [CreateWorkspaces](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -107,12 +107,12 @@ New-WKSWorkspace -Workspace @{"BundleID" = "wsb-1a2b3c4d"; "DirectoryId" = "d-1a
 **Tools for PowerShell V5**
 **Example 1: Create a WorkSpace for the supplied bundle, directory, and user.**
 
-```
+```powershell
 New-WKSWorkspace -Workspace @{"BundleID" = "wsb-1a2b3c4d"; "DirectoryId" = "d-1a2b3c4d"; "UserName" = "USERNAME"}
 ```
 **Example 2: This example creates multiple WorkSpaces**
 
-```
+```powershell
 New-WKSWorkspace -Workspace @{"BundleID" = "wsb-1a2b3c4d"; "DirectoryId" = "d-1a2b3c4d"; "UserName" = "USERNAME_1"},@{"BundleID" = "wsb-1a2b3c4d"; "DirectoryId" = "d-1a2b3c4d"; "UserName" = "USERNAME_2"}
 ```
 +  For API details, see [CreateWorkspaces](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

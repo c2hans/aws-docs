@@ -260,9 +260,12 @@ Usage type groups are available for DynamoDB, Amazon EC2, ElastiCache, Amazon RD
   + DedicatedUsage
   + HighUsage
   + InstanceUsage
+  + InstanceUsageIOOptimized
   + MirrorUsage
+  + Multi-AZClusterUsage
   + Multi-AZUsage
   + SpotUsage
+  + UnusedBox
 + **RDS: Data Transfer – CloudFront – In**
 
   Filters by the costs associated with how many GB are transferred into Amazon RDS from a CloudFront distribution.

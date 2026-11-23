@@ -258,7 +258,7 @@ Before your Java application can use an HSM, the HSM needs to first authenticate
   $ java -DHSM_USER={{<HSM user name>}} -DHSM_PASSWORD={{<password>}}
   ```
 
-  ```
+  ```java
   System.setProperty("HSM_USER","{{<HSM user name>}}");
   System.setProperty("HSM_PASSWORD","{{<password>}}");
   ```
@@ -270,7 +270,7 @@ Before your Java application can use an HSM, the HSM needs to first authenticate
   PS C:\> java -DHSM_USER={{<HSM user name>}} -DHSM_PASSWORD={{<password>}}
   ```
 
-  ```
+  ```java
   System.setProperty("HSM_USER","{{<HSM user name>}}");
   System.setProperty("HSM_PASSWORD","{{<password>}}");
   ```

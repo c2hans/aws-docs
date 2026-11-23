@@ -69,7 +69,7 @@ Enables CORS by returning correct headers.
 #### GetReadinessCheckStatusOutput schema
 <a name="readinesschecks-readinesscheckname-status-response-body-getreadinesscheckstatusoutput-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "readiness": enum,

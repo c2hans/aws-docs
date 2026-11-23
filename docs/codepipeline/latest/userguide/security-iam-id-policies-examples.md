@@ -23,7 +23,7 @@ The following shows an example of a permissions policy that grants permissions t
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [
@@ -50,7 +50,7 @@ The following example shows a policy in the 111222333444 account that allows use
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -130,7 +130,7 @@ After you create this policy, create the IAM role in the 111222333444 account an
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -154,7 +154,7 @@ The following example shows a policy created in the {{111111111111}} AWS account
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -113,7 +113,7 @@ In a rolling deployment, AWS SAM performs these tasks:
 
 The following example shows an [AWS SAM template](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-template-basics.html) for a simple rolling deployment.
 
-```
+```yaml
 AWSTemplateFormatVersion : '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: A sample SAM template for deploying Lambda functions

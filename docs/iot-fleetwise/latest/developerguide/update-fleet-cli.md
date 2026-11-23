@@ -14,7 +14,7 @@ To update a fleet, run the following command.
 
   The description can have 1-2048 characters.
 
-```
+```bash
 aws iotfleetwise update-fleet --fleet-id {{fleet-id}} --description {{description}}
 ```
 
@@ -25,7 +25,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

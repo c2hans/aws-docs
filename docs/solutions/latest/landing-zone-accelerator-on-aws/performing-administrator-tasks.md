@@ -229,7 +229,7 @@ We recommend creating a new directory in your **aws-accelerator-config** reposit
 
 1. Copy and paste the following policy into the blank box:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [

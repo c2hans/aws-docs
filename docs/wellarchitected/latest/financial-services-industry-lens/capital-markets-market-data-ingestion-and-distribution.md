@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 
 ![Market data ingestion and distribution reference architecture diagram](https://docs.aws.amazon.com/wellarchitected/latest/financial-services-industry-lens/images/capital-markets-reference-architecture.png)
 
+*Figure 7. Market data ingest and distribution *
+
  **Architecture description**
 
  The preceding architecture describes the extraction of market data from real-time and historical sources and provides a data ingestion, cataloging, and packaging workflow to provide access to market data based on customers' requests and preferences.

@@ -45,7 +45,7 @@ This configures your device to meet the Python requirement for AWS IoT Greengras
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -81,7 +81,7 @@ This configures your device to meet the Python requirement for AWS IoT Greengras
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -150,7 +150,7 @@ Valid pattern: `arn:aws:sns:([a-z]{2}-[a-z]+-\d{1}):(\d{12}):([a-zA-Z0-9-_]+)$`
 
 The following CLI command creates a `ConnectorDefinition` with an initial version that contains the SNS connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -214,7 +214,7 @@ The message size is bounded by a maximum SNS message size of 256 KB.
 **Example input: String message**  <a name="sns-connector-data-input-example"></a>
 This example sends a string message. It specifies the optional `sns_topic_arn` property, which overrides the default destination topic.
 
-```
+```json
 {
     "request": {
         "subject": "Message subject",
@@ -228,7 +228,7 @@ This example sends a string message. It specifies the optional `sns_topic_arn` p
 **Example input: JSON message**
 This example sends a message as a string encoded JSON object that includes the `default` key.
 
-```
+```json
 {
     "request": {
         "subject": "Message subject",
@@ -249,7 +249,7 @@ This connector publishes status information as output data on an MQTT topic.
 
 **Example output: Success**
 
-```
+```json
 {
     "response": {
         "sns_message_id": "f80a81bc-f44c-56f2-a0f0-d5af6a727c8a",
@@ -261,7 +261,7 @@ This connector publishes status information as output data on an MQTT topic.
 
 **Example output: Failure**
 
-```
+```json
 {
    "response" : {
         "error": "InvalidInputException",
@@ -312,7 +312,7 @@ The [Get started with connectors (console)](connectors-console.md) and [Get star
 
 The following example Lambda function sends an input message to the connector.
 
-```
+```python
 import greengrasssdk
 import time
 import json

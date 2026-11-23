@@ -9,7 +9,7 @@ Defines a network service descriptor (NSD) template.
 ## Syntax
 <a name="nsd-template-syntax"></a>
 
-```
+```yaml
 tosca_definitions_version: tnb_simple_yaml_1_0
 
 vnfds:

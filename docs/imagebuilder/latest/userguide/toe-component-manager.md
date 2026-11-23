@@ -172,7 +172,7 @@ Enables verbose logging to the console.
 
 The **run** command produces a JSON execution summary. The following example shows output from a successful execution.
 
-```
+```json
 {
     "executionId": "12345678-abcd-efgh-1234-example12345",
     "status": "success",
@@ -235,7 +235,7 @@ Enables verbose logging to the console.
 
 The **validate** command produces a JSON validation result. The following example shows output from a successful validation.
 
-```
+```json
 {
     "validationStatus": "success",
     "message": "Validation successful."
@@ -244,7 +244,7 @@ The **validate** command produces a JSON validation result. The following exampl
 
 The following example shows output when validation fails.
 
-```
+```json
 {
     "validationStatus": "failed",
     "message": "Document has 0 phases. Phases list must not be empty."

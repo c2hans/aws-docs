@@ -81,7 +81,7 @@ Example key policy for the [CreateKey](https://docs.aws.amazon.com/location/late
 #### CreateKey request for Address Form permissions
 <a name="createkey-example"></a>
 
-```
+```json
 {
   "KeyName": "ExampleKey",
   "ExpireTime": "YYYY-MM-DDThh:mm:ss.sss",
@@ -109,7 +109,7 @@ Example key policy for the [CreateKey](https://docs.aws.amazon.com/location/late
 
 Include the following CSS and JavaScript for the SDK in your HTML code
 
-```
+```html
 ...
 <head>
 ...
@@ -151,7 +151,7 @@ Use `"Storage"` if you need to store or cache the results. This ensures complian
 ------
 #### [ HTML/JavaScript ]
 
-```
+```html
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -210,7 +210,7 @@ script src="https://cdn.jsdelivr.net/npm/@aws/address-form-sdk-js/dist/standalon
 ------
 #### [ React ]
 
-```
+```javascript
 import React from 'react';
 import { AddressForm, Flex } from "@aws/address-form-sdk-js";
 

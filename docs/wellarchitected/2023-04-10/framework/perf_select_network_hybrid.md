@@ -45,6 +45,8 @@ Based on your bandwidth requirements, a single VPN or dedicated connection might
 
 ![A flowchart that describes the options you should consider when determining if you need deterministic performance in your networking or not.](https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/deterministic-performance-flowchart.png)
 
+*Deterministic performance flowchart.*
+
  **Level of effort for the implementation plan:** High. There is significant effort in evaluating workload needs for hybrid networks and implementing hybrid networking solutions.
 
 ## Resources

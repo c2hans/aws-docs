@@ -180,7 +180,7 @@ This example updates the display name of the specified group to "Engineers" and 
 #### Sample Request
 <a name="API_UpdateGroup_Example_1_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "GroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
@@ -197,7 +197,7 @@ This example updates the display name of the specified group to "Engineers" and 
 #### Sample Response
 <a name="API_UpdateGroup_Example_1_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "GroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
@@ -214,7 +214,7 @@ This example updates the description of the specified group to "Contains all eng
 #### Sample Request
 <a name="API_UpdateGroup_Example_2_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "GroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
@@ -230,7 +230,7 @@ This example updates the description of the specified group to "Contains all eng
 #### Sample Response
 <a name="API_UpdateGroup_Example_2_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "GroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
@@ -247,7 +247,7 @@ This example removes the description from the specified group.
 #### Sample Request
 <a name="API_UpdateGroup_Example_3_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "GroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
@@ -262,7 +262,7 @@ This example removes the description from the specified group.
 #### Sample Response
 <a name="API_UpdateGroup_Example_3_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "GroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",

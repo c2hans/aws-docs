@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Displays a list of stacks that are associated with AWS ParallelCluster.
 
-```
+```sh
 pcluster list [ -h ] [ -c {{CONFIG_FILE}} ] [ -r {{REGION}} ]
 ```
 

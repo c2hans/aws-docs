@@ -37,6 +37,8 @@ A distributed VPC endpoint approach that is, an endpoint per VPC allows you to a
 
 ![A diagram depicting centralizing interface VPC endpoints](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/centralizing-interface-vpc-endpoints.png)
 
+**Centralizing interface VPC endpoints**
+
 ## Cross Region endpoint access
 <a name="cross-region-endpoint-access"></a>
 
@@ -47,6 +49,8 @@ A distributed VPC endpoint approach that is, an endpoint per VPC allows you to a
 In this example, the Amazon EC2 instance in the VPC `us-west-1` Region will use the PHZ to get the private IP address of the endpoint in the `us-west-2` Region and route the traffic to the `us-west-2` Region VPC over the Transit Gateway peering or VPC peering. Using this architecture, the traffic remains within the AWS network, securely allowing the EC2 instance in `us-west-1` to access the VPC service in `us-west-2` without going over the internet.
 
 ![A diagram depicting multi-Region VPC endpoints](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/multi-region-vpc-endpoints.png)
+
+**Multi-Region VPC endpoints**
 
 **Note**
 Inter-Region data transfer charges do apply when accessing endpoints across Regions.
@@ -67,6 +71,8 @@ Inter-Region data transfer charges do apply when accessing endpoints across Regi
  The following diagram provides a high-level overview of Verified Access. Users send requests to access an application. Verified Access evaluates the request against the access policy for the group and any application-specific endpoint policies. If access is allowed, the request is sent to the application through the endpoint.
 
 ![A diagram depicting an overview of Verified Access](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/verified-access-diagram.png)
+
+**Verified Access overview**
 
  The main components in an AWS Verified Access architecture are:
 +  **Verified Access instances** – An instance evaluates application requests and grants access only when your security requirements are met.

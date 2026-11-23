@@ -29,7 +29,7 @@ The following code example shows how to use `CreateReceiptFilter`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesReceiptHandler:
     """Encapsulates Amazon SES receipt handling functions."""
 
@@ -80,7 +80,7 @@ The following code example shows how to use `CreateReceiptRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 Create an Amazon S3 bucket where Amazon SES can put copies of incoming emails and create a rule that copies incoming email to the bucket for a specific list of recipients.
 
-```
+```python
 class SesReceiptHandler:
     """Encapsulates Amazon SES receipt handling functions."""
 
@@ -185,7 +185,7 @@ The following code example shows how to use `CreateReceiptRuleSet`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesReceiptHandler:
     """Encapsulates Amazon SES receipt handling functions."""
 
@@ -221,7 +221,7 @@ The following code example shows how to use `CreateTemplate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesTemplate:
     """Encapsulates Amazon SES template functions."""
 
@@ -278,7 +278,7 @@ The following code example shows how to use `DeleteIdentity`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesIdentity:
     """Encapsulates Amazon SES identity functions."""
 
@@ -311,7 +311,7 @@ The following code example shows how to use `DeleteReceiptFilter`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesReceiptHandler:
     """Encapsulates Amazon SES receipt handling functions."""
 
@@ -346,7 +346,7 @@ The following code example shows how to use `DeleteReceiptRule`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesReceiptHandler:
     """Encapsulates Amazon SES receipt handling functions."""
 
@@ -386,7 +386,7 @@ The following code example shows how to use `DeleteReceiptRuleSet`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesReceiptHandler:
     """Encapsulates Amazon SES receipt handling functions."""
 
@@ -422,7 +422,7 @@ The following code example shows how to use `DeleteTemplate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesTemplate:
     """Encapsulates Amazon SES template functions."""
 
@@ -470,7 +470,7 @@ The following code example shows how to use `DescribeReceiptRuleSet`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesReceiptHandler:
     """Encapsulates Amazon SES receipt handling functions."""
 
@@ -510,7 +510,7 @@ The following code example shows how to use `GetIdentityVerificationAttributes`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesIdentity:
     """Encapsulates Amazon SES identity functions."""
 
@@ -552,7 +552,7 @@ The following code example shows how to use `GetTemplate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesTemplate:
     """Encapsulates Amazon SES template functions."""
 
@@ -607,7 +607,7 @@ The following code example shows how to use `ListIdentities`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesIdentity:
     """Encapsulates Amazon SES identity functions."""
 
@@ -647,7 +647,7 @@ The following code example shows how to use `ListReceiptFilters`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesReceiptHandler:
     """Encapsulates Amazon SES receipt handling functions."""
 
@@ -685,7 +685,7 @@ The following code example shows how to use `ListTemplates`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesTemplate:
     """Encapsulates Amazon SES template functions."""
 
@@ -734,7 +734,7 @@ The following code example shows how to use `SendEmail`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesMailSender:
     """Encapsulates functions to send emails with Amazon SES."""
 
@@ -794,7 +794,7 @@ The following code example shows how to use `SendTemplatedEmail`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesMailSender:
     """Encapsulates functions to send emails with Amazon SES."""
 
@@ -858,7 +858,7 @@ The following code example shows how to use `UpdateTemplate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesTemplate:
     """Encapsulates Amazon SES template functions."""
 
@@ -915,7 +915,7 @@ The following code example shows how to use `VerifyDomainIdentity`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesIdentity:
     """Encapsulates Amazon SES identity functions."""
 
@@ -957,7 +957,7 @@ The following code example shows how to use `VerifyEmailIdentity`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesIdentity:
     """Encapsulates Amazon SES identity functions."""
 
@@ -995,7 +995,7 @@ The following code example shows how to copy Amazon SES email and domain identit
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 import argparse
 import json
 import logging
@@ -1465,7 +1465,7 @@ The following code example shows how to generate credentials to connect to an Am
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 #!/usr/bin/env python3
 
 import hmac
@@ -1546,7 +1546,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 Verify an email address with Amazon SES and send messages.
 
-```
+```python
 def usage_demo():
     print("-" * 88)
     print("Welcome to the Amazon Simple Email Service (Amazon SES) email demo!")
@@ -1644,7 +1644,7 @@ This message is sent from the Amazon SES SMTP mail demo."""
 ```
 Create functions to wrap Amazon SES identity actions.
 
-```
+```python
 class SesIdentity:
     """Encapsulates Amazon SES identity functions."""
 
@@ -1763,7 +1763,7 @@ class SesIdentity:
 ```
 Create functions to wrap Amazon SES template actions.
 
-```
+```python
 class SesTemplate:
     """Encapsulates Amazon SES template functions."""
 
@@ -1889,7 +1889,7 @@ class SesTemplate:
 ```
 Create functions to wrap Amazon SES email actions.
 
-```
+```python
 class SesDestination:
     """Contains data about an email destination."""
 

@@ -30,7 +30,7 @@ The following code example shows how to get started using AWS Glue.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
 namespace GlueActions;
 
 public class HelloGlue
@@ -100,7 +100,7 @@ For more information, see [Tutorial: Getting started with AWS Glue Studio](https
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 Create a class that wraps AWS Glue functions that are used in the scenario.
 
-```
+```csharp
 using System.Net;
 
 namespace GlueActions;
@@ -431,7 +431,7 @@ public class GlueWrapper
 ```
 Create a class that runs the scenario.
 
-```
+```csharp
 global using Amazon.Glue;
 global using GlueActions;
 global using Microsoft.Extensions.Configuration;
@@ -731,7 +731,7 @@ The following code example shows how to use `CreateCrawler`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an AWS Glue crawler.
     /// </summary>
@@ -792,7 +792,7 @@ The following code example shows how to use `CreateJob`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an AWS Glue job.
     /// </summary>
@@ -844,7 +844,7 @@ The following code example shows how to use `DeleteCrawler`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an AWS Glue crawler.
     /// </summary>
@@ -866,7 +866,7 @@ The following code example shows how to use `DeleteDatabase`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete the AWS Glue database.
     /// </summary>
@@ -888,7 +888,7 @@ The following code example shows how to use `DeleteJob`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an AWS Glue job.
     /// </summary>
@@ -910,7 +910,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a table from an AWS Glue database.
     /// </summary>
@@ -932,7 +932,7 @@ The following code example shows how to use `GetCrawler`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information about an AWS Glue crawler.
     /// </summary>
@@ -967,7 +967,7 @@ The following code example shows how to use `GetDatabase`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information about an AWS Glue database.
     /// </summary>
@@ -994,7 +994,7 @@ The following code example shows how to use `GetJobRun`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information about a specific AWS Glue job run.
     /// </summary>
@@ -1017,7 +1017,7 @@ The following code example shows how to use `GetJobRuns`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information about all AWS Glue runs of a specific job.
     /// </summary>
@@ -1057,7 +1057,7 @@ The following code example shows how to use `GetTables`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of tables for an AWS Glue database.
     /// </summary>
@@ -1089,7 +1089,7 @@ The following code example shows how to use `ListJobs`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List AWS Glue jobs using a paginator.
     /// </summary>
@@ -1117,7 +1117,7 @@ The following code example shows how to use `StartCrawler`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Start an AWS Glue crawler.
     /// </summary>
@@ -1145,7 +1145,7 @@ The following code example shows how to use `StartJobRun`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Start an AWS Glue job run.
     /// </summary>

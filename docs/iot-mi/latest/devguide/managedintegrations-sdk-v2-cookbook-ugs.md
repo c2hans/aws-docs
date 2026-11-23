@@ -41,7 +41,7 @@ Start device discovery for your hub to obtain a discovery job ID which is used t
 
   **start-device-discovery example**
 
-  ```
+  ```JSON
   #For Zigbee
     aws iot-managed-integrations start-device-discovery --discovery-type ZIGBEE \
     --controller-identifier {{HUB_MANAGED_THING_ID}}
@@ -64,7 +64,7 @@ Start device discovery for your hub to obtain a discovery job ID which is used t
 
   **Response:**
 
-  ```
+  ```JSON
   {
         "Id": {{DISCOVERY_JOB_ID}},
         "StartedAt": "2025-06-03T14:43:12.726000-07:00"
@@ -83,13 +83,13 @@ Use the `list-discovered-devices` command to get the authentication material of 
 **To query your discovery job ID**
 + Use the discovery job ID with the list-discovered-devices command to get the authentication material of your device.
 
-  ```
+  ```JSON
   aws iot-managed-integrations list-discovered-devices --identifier {{DISCOVERY_JOB_ID}}
   ```
 
 **Response:**
 
-```
+```JSON
 "Items": [
     {
         "DeviceTypes": [],
@@ -110,7 +110,7 @@ Report the Basic Information cluster (cluster `0x0028`) on the device's root end
 
 The following example shows how to report the Basic Information cluster on the root endpoint:
 
-```
+```JSON
 "endpoints": [{
     "id": "0",
     "clusters": [{
@@ -138,7 +138,7 @@ Use the `create-managed-thing` command to create a managed thing for your device
 
   **create-managed-thing example**
 
-  ```
+  ```JSON
   aws iot-managed-integrations create-managed-thing \
     --role  DEVICE --authentication-material-type DISCOVERED_DEVICE \
     --authentication-material "{{AUTHENTICATION_MATERIAL}}"
@@ -146,7 +146,7 @@ Use the `create-managed-thing` command to create a managed thing for your device
 
   **Response:**
 
-  ```
+  ```JSON
   {
       "Id": "{{DEVICE_MANAGED_THING_ID}}"
       "Arn": "arn:aws:iotmanagedintegrations:{{AWS_REGION}}:{{AWS_ACCOUNT_ID}}:managed-thing/{{DEVICE_MANAGED_THING_ID}}"
@@ -166,14 +166,14 @@ You can check if a managed thing is activated by using the `get-managed-thing` c
 
   **get-managed-thing example**
 
-  ```
+  ```JSON
   aws iot-managed-integrations get-managed-thing \
     --identifier "{{DEVICE_MANAGED_THING_ID}}"
   ```
 
   **Response:**
 
-  ```
+  ```JSON
   {
         "Id": "{{DEVICE_MANAGED_THING_ID}}",
         "Arn": "arn:aws:iotmanagedintegrations:{{AWS_REGION}}:{{AWS_ACCOUNT_ID}}:managed-thing/{{DEVICE_MANAGED_THING_ID}},
@@ -199,14 +199,14 @@ You can view a list of a managed thing's available actions by using the `get-man
 
   **get-managed-thing-capabilities example**
 
-  ```
+  ```JSON
   aws iot-managed-integrations get-managed-thing-capabilities \
     --identifier "{{DEVICE_MANAGED_THING_ID}}"
   ```
 
   **Response:**
 
-  ```
+  ```JSON
   {
         "ManagedThingId": "{{DEVICE_MANAGED_THING_ID}}",
         "CapabilityReport": {
@@ -253,7 +253,7 @@ You can use the send-managed-thing-command command to send a toggle action comma
 
   **send-managed-thing-command example**
 
-  ```
+  ```JSON
   json=$(jq -cr '.|@json') <<EOF
     [
       {
@@ -282,7 +282,7 @@ This example uses jq cli to but you can also pass the entire `endpointId` string
 
   **Response:**
 
-  ```
+  ```JSON
   {
     "TraceId": {{TRACE_ID}}
     }
@@ -300,13 +300,13 @@ Check the managed thing's state to validate the toggle action succeeded.
 
   **get-managed-thing-state example**
 
-  ```
+  ```JSON
     aws iot-managed-integrations get-managed-thing-state --managed-thing-id {{DEVICE_MANAGED_THING_ID}}
   ```
 
   **Response:**
 
-  ```
+  ```JSON
   {
         "Endpoints": [
             {
@@ -344,7 +344,7 @@ Clean up your hub by removing the managed thing.
 
   **delete-managed-thing example**
 
-  ```
+  ```JSON
   aws iot-managed-integrations delete-managed-thing \
     --identifier {{MANAGED_THING_ID}}
   ```

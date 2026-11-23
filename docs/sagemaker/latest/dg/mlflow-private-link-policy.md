@@ -13,7 +13,7 @@ For more information, see [Controlling access to services with VPC endpoints](ht
 
 The following example of a VPC endpoint policy specifies that all users that have access to the endpoint are allowed to access to the MLflow tracking server that you specify. Access to other tracking servers is denied.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -29,7 +29,7 @@ The following example of a VPC endpoint policy specifies that all users that hav
 
 For an MLflow App, use the `sagemaker:CallMlflowAppApi` action and the MLflow App resource ARN. Use the following example to grant access to the MLflow App that you specify. The policy denies access to all other MLflow Apps.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

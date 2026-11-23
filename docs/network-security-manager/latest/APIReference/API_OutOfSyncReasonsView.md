@@ -21,7 +21,7 @@ Required: No
 The out-of-sync reasons, keyed by firewall type.
 Type: String to [FirewallSyncReason](API_FirewallSyncReason.md) object map
 Map Entries: Minimum number of 0 items. Maximum number of 10 items.
-Valid Keys: `WAF | SHIELD_ADVANCED`
+Valid Keys: `WAF | SHIELD_ADVANCED | IGW_FIREWALL`
 Required: No
 
 ## See Also

@@ -15,7 +15,7 @@ Use the `CancelJob` operation to cancel an existing job currently in Pending or 
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "JobId": "{{YOUR_JOB_ID}}"
 }
@@ -24,7 +24,7 @@ Use the `CancelJob` operation to cancel an existing job currently in Pending or 
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "JobArn": "arn:aws:geo:us-west-2:{{YOUR_ACCOUNT_ID}}:job/{{YOUR_JOB_ID}}",
     "JobId": "{{YOUR_JOB_ID}}",
@@ -35,7 +35,7 @@ Use the `CancelJob` operation to cancel an existing job currently in Pending or 
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws location cancel-job --job-id "{{YOUR_JOB_ID}}" --region us-west-2
 ```
 

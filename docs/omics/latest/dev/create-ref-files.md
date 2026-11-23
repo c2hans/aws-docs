@@ -37,7 +37,7 @@ omics://123456789012.storage.us-west-2.amazonaws.com/<sequence_store_id>/readSet
 
 The following is an example of an input JSON file that uses two Omics Storage URIs.
 
-```
+```json
 {
    "input_fasta": "omics://123456789012.storage.us-west-2.amazonaws.com/<reference_store_id>/reference/<id>",
    "input_cram": "omics://123456789012.storage.us-west-2.amazonaws.com/<sequence_store_id>/readSet/<id>"

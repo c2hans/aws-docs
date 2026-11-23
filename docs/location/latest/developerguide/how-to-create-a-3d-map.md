@@ -17,7 +17,7 @@ This example shows how to create a map with `Terrain3D` parameter.
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -50,7 +50,7 @@ This example shows how to create a map with `Terrain3D` parameter.
 ------
 #### [ style.css ]
 
-```
+```css
 body {
     margin: 0;
     padding: 0;
@@ -75,7 +75,7 @@ This example shows how to create a map with `Buildings3D` parameter.
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -109,7 +109,7 @@ This example shows how to create a map with `Buildings3D` parameter.
 ------
 #### [ style.css ]
 
-```
+```css
 body {
     margin: 0;
     padding: 0;
@@ -134,7 +134,7 @@ This example shows how to enable or disable the Globe view projection. By defaul
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -173,7 +173,7 @@ This example shows how to enable or disable the Globe view projection. By defaul
 ------
 #### [ style.css ]
 
-```
+```css
 body {
     margin: 0;
     padding: 0;

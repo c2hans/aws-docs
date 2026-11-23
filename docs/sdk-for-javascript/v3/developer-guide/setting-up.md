@@ -82,7 +82,7 @@ Not all services are immediately available in the SDK or in all AWS Regions.
 
 To install a service from the AWS SDK for JavaScript using [npm, the Node.js package manager](https://www.npmjs.com/), enter the following command at the command prompt, where {{SERVICE}} is the name of a service, such as `s3`.
 
-```
+```javascript
 npm install @aws-sdk/client-{{SERVICE}}
 ```
 
@@ -93,6 +93,6 @@ For a full list of the AWS SDK for JavaScript service client packages, see the [
 
 After you install the SDK, you can load a client package in your node application using `import`. For example, to load the Amazon S3 client and the Amazon S3 [ListBuckets](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBuckets.html) command, use the following.
 
-```
+```javascript
 import { S3Client, ListBucketsCommand } from "@aws-sdk/client-s3";
 ```

@@ -24,7 +24,7 @@ Produces: application/json
 Information about the function definition version.
 where used: body; required: true
 
-```
+```json
 {
 "DefaultConfig": {
   "Execution": {
@@ -177,7 +177,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-functions-functiondefinitionid-versions-post-cli"></a>
 
-```
+```bash
 aws greengrass create-function-definition-version \
   --function-definition-id <value> \
   [--default-config <value>] \
@@ -189,7 +189,7 @@ aws greengrass create-function-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "FunctionDefinitionId": "string",
 "DefaultConfig": {
@@ -247,7 +247,7 @@ cli-input-json format:
 
  [ VersionInformation](definitions-versioninformation.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -275,7 +275,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -342,7 +342,7 @@ type: integer
 ### CLI
 <a name="-greengrass-definition-functions-functiondefinitionid-versions-get-cli"></a>
 
-```
+```bash
 aws greengrass list-function-definition-versions \
   --function-definition-id <value> \
   [--next-token <value>] \
@@ -353,7 +353,7 @@ aws greengrass list-function-definition-versions \
 
 cli-input-json format:
 
-```
+```json
 {
 "FunctionDefinitionId": "string",
 "NextToken": "string",
@@ -368,7 +368,7 @@ cli-input-json format:
 
  [ ListVersionsResponse](definitions-listversionsresponse.md)
 
-```
+```json
 {
 "Versions": [
   {
@@ -411,7 +411,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

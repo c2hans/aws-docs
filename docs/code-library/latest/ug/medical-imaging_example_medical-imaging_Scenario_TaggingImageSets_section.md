@@ -14,7 +14,7 @@ The following code examples show how to tag a HealthImaging image set.
 **SDK for Java 2.x**
 To tag an image set.
 
-```
+```java
                 final String imageSetArn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/12345678901234567890123456789012";
 
                 TagResource.tagMedicalImagingResource(medicalImagingClient, imageSetArn,
@@ -22,7 +22,7 @@ To tag an image set.
 ```
 The utility function for tagging a resource.
 
-```
+```java
     public static void tagMedicalImagingResource(MedicalImagingClient medicalImagingClient,
             String resourceArn,
             Map<String, String> tags) {
@@ -43,7 +43,7 @@ The utility function for tagging a resource.
 ```
 To list tags for an image set.
 
-```
+```java
                 final String imageSetArn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/12345678901234567890123456789012";
 
                 ListTagsForResourceResponse result = ListTagsForResource.listMedicalImagingResourceTags(
@@ -55,7 +55,7 @@ To list tags for an image set.
 ```
 The utility function for listing a resource's tags.
 
-```
+```java
     public static ListTagsForResourceResponse listMedicalImagingResourceTags(MedicalImagingClient medicalImagingClient,
             String resourceArn) {
         try {
@@ -74,7 +74,7 @@ The utility function for listing a resource's tags.
 ```
 To untag an image set.
 
-```
+```java
                 final String imageSetArn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/12345678901234567890123456789012";
 
                 UntagResource.untagMedicalImagingResource(medicalImagingClient, imageSetArn,
@@ -82,7 +82,7 @@ To untag an image set.
 ```
 The utility function for untagging a resource.
 
-```
+```java
     public static void untagMedicalImagingResource(MedicalImagingClient medicalImagingClient,
             String resourceArn,
             Collection<String> tagKeys) {
@@ -113,7 +113,7 @@ The utility function for untagging a resource.
 **SDK for JavaScript (v3)**
 To tag an image set.
 
-```
+```javascript
   try {
     const imagesetArn =
       "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/12345678901234567890123456789012";
@@ -127,7 +127,7 @@ To tag an image set.
 ```
 The utility function for tagging a resource.
 
-```
+```javascript
 import { TagResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -160,7 +160,7 @@ export const tagResource = async (
 ```
 To list tags for an image set.
 
-```
+```javascript
   try {
     const imagesetArn =
       "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/12345678901234567890123456789012";
@@ -172,7 +172,7 @@ To list tags for an image set.
 ```
 The utility function for listing a resource's tags.
 
-```
+```javascript
 import { ListTagsForResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -203,7 +203,7 @@ export const listTagsForResource = async (
 ```
 To untag an image set.
 
-```
+```javascript
   try {
     const imagesetArn =
       "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/12345678901234567890123456789012";
@@ -215,7 +215,7 @@ To untag an image set.
 ```
 The utility function for untagging a resource.
 
-```
+```javascript
 import { UntagResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -257,7 +257,7 @@ export const untagResource = async (
 **SDK for Python (Boto3)**
 To tag an image set.
 
-```
+```python
     an_image_set_arn = (
         "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/"
         "imageset/12345678901234567890123456789012"
@@ -267,7 +267,7 @@ To tag an image set.
 ```
 The utility function for tagging a resource.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -291,7 +291,7 @@ class MedicalImagingWrapper:
 ```
 To list tags for an image set.
 
-```
+```python
     an_image_set_arn = (
         "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/"
         "imageset/12345678901234567890123456789012"
@@ -301,7 +301,7 @@ To list tags for an image set.
 ```
 The utility function for listing a resource's tags.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -329,7 +329,7 @@ class MedicalImagingWrapper:
 ```
 To untag an image set.
 
-```
+```python
     an_image_set_arn = (
         "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/"
         "imageset/12345678901234567890123456789012"
@@ -339,7 +339,7 @@ To untag an image set.
 ```
 The utility function for untagging a resource.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -365,7 +365,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```

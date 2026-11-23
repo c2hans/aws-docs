@@ -8,7 +8,7 @@ The following Python code example uses the AWS SDK for Python (Boto) to list the
 
 For more information, see the reference for [`StartSpeechSynthesisTask`](https://docs.aws.amazon.com/polly/latest/APIReference/API_StartSpeechSynthesisTask.html) API.
 
-```
+```python
 import boto3
 import time
 

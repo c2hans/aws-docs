@@ -27,7 +27,7 @@ A policy engine name must match `[A-Za-z][A-Za-z0-9_]*` and be at most 48 charac
 
 1. In an AgentCore project, add a policy engine to the project configuration:
 
-   ```
+   ```bash
    agentcore add policy-engine \
      --name my_policy_engine \
      --description "My Policy Engine" \
@@ -37,7 +37,7 @@ A policy engine name must match `[A-Za-z][A-Za-z0-9_]*` and be at most 48 charac
 
 1. Deploy the project to create it in your account:
 
-   ```
+   ```bash
    agentcore deploy
    ```
 
@@ -45,7 +45,7 @@ A policy engine name must match `[A-Za-z][A-Za-z0-9_]*` and be at most 48 charac
 
 1. Run the following code in a terminal to create a policy engine using the AWS CLI:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-policy-engine \
      --name my_policy_engine \
      --description "My Policy Engine"
@@ -55,7 +55,7 @@ A policy engine name must match `[A-Za-z][A-Za-z0-9_]*` and be at most 48 charac
 
 1. The following Python code shows how to create a policy engine using the AWS Python SDK (Boto3):
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client('bedrock-agentcore-control')

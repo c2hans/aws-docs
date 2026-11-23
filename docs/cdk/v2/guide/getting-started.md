@@ -18,13 +18,13 @@ We recommend that you have a basic understanding of what the AWS CDK is. For mor
 
 Use the Node Package Manager to install the CDK CLI. We recommend that you install it globally using the following command:
 
-```
+```bash
 $ npm install -g aws-cdk
 ```
 
 To install a specific version of the CDK CLI, use the following command structure:
 
-```
+```bash
 $ npm install -g aws-cdk@X.YY.Z
 ```
 
@@ -33,12 +33,12 @@ If you want to use multiple versions of the AWS CDK, consider installing a match
  **Troubleshoot a CDK CLI installation**
 If you get a permission error, and have administrator access on your system, run the following:
 
-```
+```bash
 $ sudo npm install -g aws-cdk
 ```
 If you receive an error message, try uninstalling the CDK CLI by running the following:
 
-```
+```bash
 $ npm uninstall -g aws-cdk
 ```
 Then, repeat steps to reinstall the CDK CLI.
@@ -48,7 +48,7 @@ Then, repeat steps to reinstall the CDK CLI.
 
 Run the following command to verify a successful installation. The AWS CDK CLI should output the version number:
 
-```
+```bash
 $ cdk --version
 ```
 

@@ -61,7 +61,7 @@ IAM best practices discourage the use of IAM users with long-term credentials. W
 
 1. On the **Review and edit key policy** page, add the following statement to the key policy, and then choose **Finish**.
 
-   ```
+   ```json
    {
        "Sid": "Allow Amazon SNS to use this key",
        "Effect": "Allow",

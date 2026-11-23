@@ -73,7 +73,7 @@ In the statement:
 
 The following is an example of the statement to add to the policy for an AWS KMS key.
 
-```
+```JSON
 {
     "Sid": "Allow the Macie service-linked role to use the key",
     "Effect": "Allow",
@@ -107,7 +107,7 @@ In the key policy, the key owner should ensure that the policy includes two stat
 
 In the first statement, the `Principal` element must specify the ARN of the bucket owner's account. The `Action` array must specify the `kms:Decrypt` action. This is the only AWS KMS action that Macie must be allowed to perform to decrypt an object that's encrypted with the key. The following is an example of this statement in the policy for an AWS KMS key.
 
-```
+```JSON
 {
     "Sid": "Allow account {{111122223333}} to use the key",
     "Effect": "Allow",
@@ -127,7 +127,7 @@ In the preceding example:
 
 The second statement in the key policy allows the bucket owner to create a grant for the Macie service-linked role for their account. In this statement, the `Principal` element must specify the ARN of the bucket's owner's account. The `Action` array must specify the `kms:CreateGrant` action. A `Condition` element can filter access to the `kms:CreateGrant` action specified in the statement. The following is an example of this statement in the policy for an AWS KMS key.
 
-```
+```JSON
 {
     "Sid": "Allow account {{111122223333}} to create a grant",
     "Effect": "Allow",

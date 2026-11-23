@@ -63,7 +63,7 @@ If metrics don't appear in your Amazon Managed Grafana dashboards, perform the f
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -100,6 +100,8 @@ If metrics don't appear in your Amazon Managed Grafana dashboards, perform the f
 
 ------
 
+   If you send metrics to Amazon CloudWatch, the role also needs the permissions in [Permissions for the observability add-on role](hyperpod-observability-addon-setup.md#hyperpod-observability-addon-setup-permissions).
+
 1. Ensure that the IAM role that is attached to this association has the following trust policy. Verify that the source ARN and source account are correct.
 
 ------
@@ -107,7 +109,7 @@ If metrics don't appear in your Amazon Managed Grafana dashboards, perform the f
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -185,7 +187,7 @@ If the observability add-on fails to install, use the following steps to diagnos
 
 1. Get the add-on manager pod:
 
-   ```
+   ```bash
    kubectl logs -n hyperpod-observability -l control-plane=hyperpod-observability-controller-manager
    ```
 
@@ -239,6 +241,14 @@ If you see that there are pods that are stuck in the `pending` status, make sure
 
 1. If there are no available pods, then you need a larger instance type.
 
+## Troubleshooting CloudWatch metrics
+<a name="troubleshooting-addon-cloudwatch-metrics"></a>
+
+Use the following checks if the add-on rejects your configuration values, or if metrics don't reach Amazon CloudWatch.
++ **The add-on rejects `metricsDestination`**—Versions earlier than `v1.5.0-eksbuild.1` don't accept `metricsDestination`. Specify a version that supports the key with the `--addon-version` option.
++ **The add-on rejects `ampWorkspace`**—When `metricsDestination` is `cloudwatch`, remove `ampWorkspace`. When `metricsDestination` is `amp`, specify `ampWorkspace.prometheusEndpoint`.
++ **Metrics don't appear in CloudWatch**—Make sure that the add-on role allows `cloudwatch:PutMetricData`. For more information, see [Verify Pod Identity association](#verify-pod-identity-association).
+
 For urgent issues, contact AWS Support.
 
 ## Troubleshooting observability on Restricted Instance Groups
@@ -251,7 +261,7 @@ Use the following guidance to resolve issues specific to clusters with Restricte
 
 If observability pods are not starting on restricted nodes, check the pod status and events:
 
-```
+```bash
 kubectl get pods -n hyperpod-observability -o wide
 kubectl describe pod {{pod-name}} -n hyperpod-observability
 ```
@@ -276,13 +286,13 @@ In hybrid clusters (clusters with both standard and restricted instance groups),
 
 **Resolution:** Set `internalTrafficPolicy: Local` on the `kube-dns` service so that pods only reach CoreDNS on their local node:
 
-```
+```bash
 kubectl patch svc kube-dns -n kube-system -p '{"spec":{"internalTrafficPolicy":"Local"}}'
 ```
 
 After applying this patch, restart the affected observability pods:
 
-```
+```bash
 kubectl delete pods -n hyperpod-observability -l app.kubernetes.io/name=hyperpod-node-collector
 ```
 
@@ -295,19 +305,19 @@ If metrics from restricted nodes are not appearing in your Amazon Managed Servic
 
 1. **Check the node collector pod status.** Run the following command and verify that node collector pods are running on restricted nodes:
 
-   ```
+   ```bash
    kubectl get pods -n hyperpod-observability | grep node-collector
    ```
 
 1. **Check the central collector deployments.** In clusters with restricted nodes, the add-on deploys one central collector per network boundary. Verify that a central collector exists for each boundary:
 
-   ```
+   ```bash
    kubectl get deployments -n hyperpod-observability | grep central-collector
    ```
 
 1. **Check pod events for errors.** Use `kubectl describe` on the collector pods to look for error events:
 
-   ```
+   ```bash
    kubectl describe pod {{collector-pod-name}} -n hyperpod-observability
    ```
 

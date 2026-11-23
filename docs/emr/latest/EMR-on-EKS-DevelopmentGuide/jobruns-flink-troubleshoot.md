@@ -27,7 +27,7 @@ ensure CRDs are installed first].
 
 To resolve this error, install cert-manager to enable adding the webhook component. You must install cert-manager to each Amazon EKS cluster that you use.
 
-```
+```bash,sh,zsh
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.0
 ```
 
@@ -43,7 +43,7 @@ If your `FlinkDeployment` stalls in an arrested state, use the following steps t
 
 1. Edit the deployment run.
 
-   ```
+   ```bash,sh,zsh
    kubectl edit -n {{Flink Namespace}} flinkdeployments/{{App Name}}
    ```
 
@@ -56,7 +56,7 @@ If your `FlinkDeployment` stalls in an arrested state, use the following steps t
 
 1. Delete the deployment.
 
-   ```
+   ```bash,sh,zsh
    kubectl delete -n {{Flink Namespace}} flinkdeployments/{{App Name}}
    ```
 
@@ -65,7 +65,7 @@ If your `FlinkDeployment` stalls in an arrested state, use the following steps t
 
 If you run a Flink application in an [opt-in AWS Region](https://docs.aws.amazon.com/controltower/latest/userguide/opt-in-region-considerations.html), you might see the following errors:
 
-```
+```bash,sh,zsh
 Caused by: org.apache.hadoop.fs.s3a.AWSBadRequestException: getFileStatus on
 s3://flink.txt: com.amazonaws.services.s3.model.AmazonS3Exception: Bad Request
 (Service: Amazon S3; Status Code: 400; Error Code: 400 Bad Request; Request ID: ABCDEFGHIJKL; S3 Extended Request ID:
@@ -73,7 +73,7 @@ ABCDEFGHIJKLMNOP=; Proxy: null), S3 Extended Request ID: ABCDEFGHIJKLMNOP=:400 B
 (Service: Amazon S3; Status Code: 400; Error Code: 400 Bad Request; Request ID: ABCDEFGHIJKL; S3 Extended Request ID: ABCDEFGHIJKLMNOP=; Proxy: null)
 ```
 
-```
+```bash,sh,zsh
 Caused by: org.apache.hadoop.fs.s3a.AWSBadRequestException: getS3Region on flink-application: software.amazon.awssdk.services.s3.model.S3Exception: null
 (Service: S3, Status Code: 400, Request ID: ABCDEFGHIJKLMNOP, Extended Request ID: ABCDEFGHIJKLMNOPQRST==):null: null
 (Service: S3, Status Code: 400, Request ID: ABCDEFGHIJKLMNOP, Extended Request ID: AHl42uDNaTUFOus/5IIVNvSakBcMjMCH7dd37ky0vE6jhABCDEFGHIJKLMNOPQRST==)
@@ -81,7 +81,7 @@ Caused by: org.apache.hadoop.fs.s3a.AWSBadRequestException: getS3Region on flink
 
 To fix these errors, use the following configuration in your `FlinkDeployment` definition file.
 
-```
+```yaml
 spec:
   flinkConfiguration:
     taskmanager.numberOfTaskSlots: "2"
@@ -90,7 +90,7 @@ spec:
 
 We also recommend that you use the SDKv2 credentials provider:
 
-```
+```yaml
 fs.s3a.aws.credentials.provider: software.amazon.awssdk.auth.credentials.WebIdentityTokenFileCredentialsProvider
 ```
 

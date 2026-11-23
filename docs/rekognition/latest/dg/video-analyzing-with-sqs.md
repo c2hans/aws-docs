@@ -44,7 +44,7 @@ The example code for this procedure is provided in Java and Python. You need to 
    + Replace `roleArn` with the ARN of the IAM service role that you created in step 7 of [To configure Amazon Rekognition Video](api-video-roles.md#configure-rekvid-procedure).
    + Replace the values of `amzn-s3-demo-bucket` and `video` with the bucket and video file name that you specified in step 2.
 
-   ```
+   ```java
    //Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    //PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -372,7 +372,7 @@ The example code for this procedure is provided in Java and Python. You need to 
 
    In the code example, place the following IAM policy within the quotations marks in the line `policy = """""".format(sqsQueueArn, self.snsTopicArn)`.
 
-   ```
+   ```python
    ## Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -611,7 +611,7 @@ The example code for this procedure is provided in Java and Python. You need to 
    +  Replace the value of `profile_name` in the line that creates the Rekognition session with the name of your developer profile.
    + Replace `roleArn` with the ARN of the IAM service role that you created in step 7 of [To configure Amazon Rekognition Video](api-video-roles.md#configure-rekvid-procedure).
 
-   ```
+   ```javascript
    import { CreateQueueCommand, GetQueueAttributesCommand, GetQueueUrlCommand,
      SetQueueAttributesCommand, DeleteQueueCommand, ReceiveMessageCommand, DeleteMessageCommand } from  "@aws-sdk/client-sqs";
    import {CreateTopicCommand, SubscribeCommand, DeleteTopicCommand } from "@aws-sdk/client-sns";
@@ -848,7 +848,7 @@ The example code for this procedure is provided in Java and Python. You need to 
 
    This code is taken from the AWS Documentation SDK examples GitHub repository. See the full example [here](https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/javav2/example_code/rekognition/src/main/java/com/example/rekognition/VideoDetect.java).
 
-   ```
+   ```java
    import com.fasterxml.jackson.core.JsonProcessingException;
    import com.fasterxml.jackson.databind.JsonMappingException;
    import com.fasterxml.jackson.databind.JsonNode;

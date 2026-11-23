@@ -52,7 +52,7 @@ You can delete a workflow using one of the SDKs.
 
 The following example shows how to delete a workflow using the Python SDK.
 
-```
+```python
 import boto3
 
 omics = boto3.client('omics')

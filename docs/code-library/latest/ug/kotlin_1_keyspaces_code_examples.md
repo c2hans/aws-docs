@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon Keyspaces.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/keyspaces#code-examples).
 
-```
+```kotlin
 /**
 Before running this Kotlin code example, set up your development environment, including your credentials.
 
@@ -75,7 +75,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/keyspaces#code-examples).
 
-```
+```kotlin
 /**
  Before running this Kotlin code example, set up your development environment, including your credentials.
 
@@ -662,7 +662,7 @@ The following code example shows how to use `CreateKeyspace`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/keyspaces#code-examples).
 
-```
+```kotlin
 suspend fun createKeySpace(keyspaceNameVal: String) {
     val keyspaceRequest =
         CreateKeyspaceRequest {
@@ -685,7 +685,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/keyspaces#code-examples).
 
-```
+```kotlin
 suspend fun createTable(
     keySpaceVal: String?,
     tableNameVal: String?,
@@ -771,7 +771,7 @@ The following code example shows how to use `DeleteKeyspace`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/keyspaces#code-examples).
 
-```
+```kotlin
 suspend fun deleteKeyspace(keyspaceNameVal: String?) {
     val deleteKeyspaceRequest =
         DeleteKeyspaceRequest {
@@ -793,7 +793,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/keyspaces#code-examples).
 
-```
+```kotlin
 suspend fun deleteTable(
     keyspaceNameVal: String?,
     tableNameVal: String?,
@@ -819,7 +819,7 @@ The following code example shows how to use `GetKeyspace`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/keyspaces#code-examples).
 
-```
+```kotlin
 suspend fun checkKeyspaceExistence(keyspaceNameVal: String?) {
     val keyspaceRequest =
         GetKeyspaceRequest {
@@ -842,7 +842,7 @@ The following code example shows how to use `GetTable`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/keyspaces#code-examples).
 
-```
+```kotlin
 suspend fun checkTable(
     keyspaceNameVal: String?,
     tableNameVal: String?,
@@ -886,7 +886,7 @@ The following code example shows how to use `ListKeyspaces`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/keyspaces#code-examples).
 
-```
+```kotlin
 suspend fun listKeyspacesPaginator() {
     KeyspacesClient.fromEnvironment { region = "us-east-1" }.use { keyClient ->
         keyClient
@@ -908,7 +908,7 @@ The following code example shows how to use `ListTables`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/keyspaces#code-examples).
 
-```
+```kotlin
 suspend fun listTables(keyspaceNameVal: String?) {
     val tablesRequest =
         ListTablesRequest {
@@ -935,7 +935,7 @@ The following code example shows how to use `RestoreTable`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/keyspaces#code-examples).
 
-```
+```kotlin
 suspend fun restoreTable(
     keyspaceName: String?,
     utc: ZonedDateTime,
@@ -969,7 +969,7 @@ The following code example shows how to use `UpdateTable`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/keyspaces#code-examples).
 
-```
+```kotlin
 suspend fun updateTable(
     keySpace: String?,
     tableNameVal: String?,

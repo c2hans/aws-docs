@@ -30,7 +30,7 @@ For more details, refer to Slack’s documentation [Sign in with Slack](https://
 
 To configure the outbound Slack resource provider, use the following:
 
-```
+```json
 {
         "name": "NAME",
         "credentialProviderVendor": "SlackOauth2",

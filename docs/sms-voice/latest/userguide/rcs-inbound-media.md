@@ -63,7 +63,7 @@ Create an IAM role that allows the AWS End User Messaging service to upload medi
 
 The following trust policy allows the AWS End User Messaging service principal to assume the role. Replace `123456789012` with your AWS account ID.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -88,7 +88,7 @@ The following trust policy allows the AWS End User Messaging service principal t
 
 The following permission policy grants the role access to write objects to your S3 bucket. Replace `my-rcs-media-bucket` with your bucket name.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -111,7 +111,7 @@ Scope the IAM role narrowly to `s3:PutObject` only. The service does not require
 
 The following AWS CLI command configures inbound media storage on an existing RCS agent:
 
-```
+```bash
 aws pinpoint-sms-voice-v2 update-rcs-agent \
     --rcs-agent-id rcs-agent-1234567890abcdef0 \
     --two-way-media-s3-bucket-name my-rcs-media-bucket \
@@ -127,7 +127,7 @@ When AWS End User Messaging receives a media file, it publishes a notification t
 
 The following example shows a successful inbound media notification:
 
-```
+```json
 {
     "originationNumber": "+14255551234",
     "destinationNumber": "rcs-cb1e6e519e9049fabf8c0ae38e4d876b",
@@ -183,7 +183,7 @@ If AWS End User Messaging cannot download or store media from the RCS provider, 
 
 For example, an IAM role assumption failure produces the following `messageBody` content:
 
-```
+```json
 {
     "mediaStatus": "ROLE_ASSUME_FAILED",
     "mediaStatusMessage": "Media received but could not assume the configured IAM role",

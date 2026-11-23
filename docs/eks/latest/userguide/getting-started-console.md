@@ -24,7 +24,7 @@ Before starting this tutorial, you must install and configure the following tool
 +  ** `kubectl` ** – A command line tool for working with Kubernetes clusters. For more information, see [Set up `kubectl` and `eksctl`](install-kubectl.md).
 +  **Required IAM permissions** – The IAM security principal that you’re using must have permissions to work with Amazon EKS IAM roles, service-linked roles, AWS CloudFormation, a VPC, and related resources. For more information, see [Actions](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelastickubernetesservice.html) and [Using service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html) in the IAM User Guide. You must complete all steps in this guide as the same user. To check the current user, run the following command:
 
-  ```
+  ```bash
   aws sts get-caller-identity
   ```
 
@@ -38,7 +38,7 @@ To get started as simply and quickly as possible, this topic includes steps to c
 
 1. Create an Amazon VPC with public and private subnets that meets Amazon EKS requirements. Replace {{region-code}} with any AWS Region that is supported by Amazon EKS. For a list of AWS Regions, see [Amazon EKS endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/eks.html) in the AWS General Reference guide. You can replace {{my-eks-vpc-stack}} with any name you choose.
 
-   ```
+   ```bash
    aws cloudformation create-stack \
      --region {{region-code}} \
      --stack-name my-eks-vpc-stack \
@@ -51,7 +51,7 @@ For a list of all the resources the previous command creates, open the AWS Cloud
 
    1. Copy the following contents to a file named {{eks-cluster-role-trust-policy.json}}.
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -68,7 +68,7 @@ For a list of all the resources the previous command creates, open the AWS Cloud
 
    1. Create the role.
 
-      ```
+      ```bash
       aws iam create-role \
         --role-name myAmazonEKSClusterRole \
         --assume-role-policy-document file://"eks-cluster-role-trust-policy.json"
@@ -76,7 +76,7 @@ For a list of all the resources the previous command creates, open the AWS Cloud
 
    1. Attach the required Amazon EKS managed IAM policy to the role.
 
-      ```
+      ```bash
       aws iam attach-role-policy \
         --policy-arn arn:aws:iam::aws:policy/AmazonEKSClusterPolicy \
         --role-name myAmazonEKSClusterRole
@@ -134,7 +134,7 @@ Before proceeding, be sure that your cluster creation completed successfully in 
 
 1. Create or update a `kubeconfig` file for your cluster. Replace {{region-code}} with the AWS Region that you created your cluster in. Replace {{my-cluster}} with the name of your cluster.
 
-   ```
+   ```bash
    aws eks update-kubeconfig --region {{region-code}} --name {{my-cluster}}
    ```
 
@@ -142,7 +142,7 @@ Before proceeding, be sure that your cluster creation completed successfully in 
 
 1. Test your configuration.
 
-   ```
+   ```bash
    kubectl get svc
    ```
 **Note**
@@ -150,7 +150,7 @@ If you receive any authorization or resource type errors, see [Unauthorized or a
 
    An example output is as follows.
 
-   ```
+   ```bash
    NAME             TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
    svc/kubernetes   ClusterIP   10.100.0.1   <none>        443/TCP   1m
    ```
@@ -166,7 +166,7 @@ Alternatively, you can connect directly from the console without any local setup
 
 1. Test your connection:
 
-   ```
+   ```bash
    kubectl get svc
    ```
 
@@ -188,7 +188,7 @@ To learn more about different ways to configure nodes in EKS, see [Manage comput
 
    1. Copy the following contents to a file named `node-role-trust-policy.json`.
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -205,7 +205,7 @@ To learn more about different ways to configure nodes in EKS, see [Manage comput
 
    1. Create the node IAM role.
 
-      ```
+      ```bash
       aws iam create-role \
         --role-name myAmazonEKSNodeRole \
         --assume-role-policy-document file://"node-role-trust-policy.json"
@@ -213,7 +213,7 @@ To learn more about different ways to configure nodes in EKS, see [Manage comput
 
    1. Attach the required managed IAM policies to the role.
 
-      ```
+      ```bash
       aws iam attach-role-policy \
         --policy-arn arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy \
         --role-name myAmazonEKSNodeRole

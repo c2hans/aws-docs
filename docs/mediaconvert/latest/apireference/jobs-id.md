@@ -90,7 +90,7 @@ Supports CORS preflight requests.
 #### GET schema
 <a name="jobs-id-request-body-get-example"></a>
 
-```
+```json
 {
   "id": "string"
 }
@@ -99,7 +99,7 @@ Supports CORS preflight requests.
 #### DELETE schema
 <a name="jobs-id-request-body-delete-example"></a>
 
-```
+```json
 {
   "id": "string"
 }
@@ -111,7 +111,7 @@ Supports CORS preflight requests.
 #### GetJobResponse schema
 <a name="jobs-id-response-body-getjobresponse-example"></a>
 
-```
+```json
 {
   "job": {
     "arn": "string",
@@ -1807,7 +1807,7 @@ Supports CORS preflight requests.
 #### CancelJobResponse schema
 <a name="jobs-id-response-body-canceljobresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -1815,7 +1815,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="jobs-id-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

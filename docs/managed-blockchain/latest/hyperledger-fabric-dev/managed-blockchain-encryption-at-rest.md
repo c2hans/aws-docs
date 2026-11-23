@@ -150,7 +150,7 @@ When you specify a customer managed key to protect your member, AMB Access sends
 The grants that AMB Access creates are specific to a member and its peer nodes. The principal in the `CreateGrant` request is the user who created the member or peer node.
 The event that records the `CreateGrant` operation is similar to the following example event. The parameters include the Amazon Resource Name (ARN) of the customer managed key, the grantee principal and retiring principal (the AMB Access service), and the operations that the grant covers.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

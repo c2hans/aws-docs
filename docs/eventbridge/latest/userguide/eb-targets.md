@@ -130,7 +130,7 @@ For example, the following policy defines permission to send messages to an Amaz
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -156,7 +156,7 @@ And the following trust policy enables EventBridge to assume the role:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -181,7 +181,7 @@ For more information, see [Sending and receiving events between AWS accounts in 
 
 If your target, such as an Amazon SQS queue, uses AWS Key Management Service (AWS KMS) encryption, you must include the following section in your KMS key policy:
 
-```
+```json
 {
   "Sid": "Allow EventBridge to use the key",
   "Effect": "Allow",
@@ -250,7 +250,7 @@ When you specify Systems Manager Run Command as a target, EventBridge calls the 
 
 To specify which SSM document to run and pass parameters to it, use the `Input` field on the [`Target`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Target.html) object. The `Input` value must be a JSON object with the following structure:
 
-```
+```json
 {
   "DocumentName": "{{document-name}}",
   "DocumentVersion": "{{version}}",
@@ -267,7 +267,7 @@ Where:
 
 For example, the following AWS CLI command creates a rule that runs the `AWS-RunShellScript` document on a specific instance when an EventBridge event matches:
 
-```
+```json
 aws events put-targets --rule "my-rule" --targets '[{
   "Id": "ssm-target-1",
   "Arn": "arn:aws:ssm:{{region}}:{{account-id}}:document/AWS-RunShellScript",

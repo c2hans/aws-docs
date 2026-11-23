@@ -66,7 +66,7 @@ For more information, see [Requesting a quota increase](https://docs.aws.amazon.
 
 Run the following command to view the default Amazon EVS quotas.
 
-```
+```bash
 aws service-quotas list-aws-default-service-quotas \
     --query 'Quotas[*].{Adjustable:Adjustable,Name:QuotaName,Value:Value,Code:QuotaCode}' \
     --service-code evs \

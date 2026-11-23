@@ -16,7 +16,7 @@ The following permissions policy grants your application the necessary permissio
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

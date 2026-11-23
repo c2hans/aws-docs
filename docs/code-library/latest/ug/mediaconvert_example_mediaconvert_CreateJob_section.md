@@ -15,7 +15,7 @@ The following code examples show how to use `CreateJob`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/MediaConvert#code-examples).
 Set up the file locations, client, and wrapper.
 
-```
+```csharp
         // MediaConvert role Amazon Resource Name (ARN).
         // For information on creating this role, see
         // https://docs.aws.amazon.com/mediaconvert/latest/ug/creating-the-iam-role-in-mediaconvert-configured.html.
@@ -30,7 +30,7 @@ Set up the file locations, client, and wrapper.
         var wrapper = new MediaConvertWrapper(mcClient);
 ```
 
-```
+```csharp
         Console.WriteLine(new string('-', 80));
         Console.WriteLine($"Creating job for input file {fileInput}.");
         var jobId = await wrapper.CreateJob(mediaConvertRole!, fileInput!, fileOutput!);
@@ -39,7 +39,7 @@ Set up the file locations, client, and wrapper.
 ```
 Create the job using the wrapper method and return the job ID.
 
-```
+```csharp
     /// <summary>
     /// Create a job to convert a media file.
     /// </summary>
@@ -247,7 +247,7 @@ Create the job using the wrapper method and return the job ID.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/mediaconvert#code-examples).
 
-```
+```cpp
 //! Create an AWS Elemental MediaConvert job.
 /*!
   \param mediaConvertRole: An Amazon Resource Name (ARN) for the AWS Identity and
@@ -633,7 +633,7 @@ For more information, see [Working with jobs](https://docs.aws.amazon.com/mediac
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/mediaconvert#code-examples).
 
-```
+```java
 package com.example.mediaconvert;
 
 import java.net.URI;
@@ -1125,7 +1125,7 @@ public class CreateJob {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/mediaconvert#code-examples).
 
-```
+```kotlin
 suspend fun createMediaJob(
     mcClient: MediaConvertClient,
     mcRoleARN: String,

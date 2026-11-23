@@ -24,7 +24,7 @@ The state machine for an IDT test suite must meet the following criteria:
 
 You can use the following template to configure your own `{{<custom-test-suite-folder>}}/suite/state_machine.json` file:
 
-```
+```json
 {
   "Comment": "{{<description>}}",
   "StartAt": "{{<state-name>}}",
@@ -78,7 +78,7 @@ This section describes the state definitions of all of the valid states that can
 
 The `RunTask` state runs test cases from a test group defined in the test suite.
 
-```
+```json
 {
     "Type": "RunTask",
     "Next": "{{<state-name>}}",
@@ -123,7 +123,7 @@ If any of the specified test groups or test case IDs are not valid, then this st
 
 The `Choice` state lets you dynamically set the next state to transition to based on user-defined conditions.
 
-```
+```json
 {
     "Type": "Choice",
     "Default": "{{<state-name>}}",
@@ -168,7 +168,7 @@ You cannot use a `Catch` block to handle errors in this state. If you want to st
 
 The `Parallel` state lets you define and run new state machines in parallel with each other.
 
-```
+```json
 {
     "Type": "Parallel",
     "Next": "{{<state-name>}}",
@@ -205,7 +205,7 @@ A product feature is user-defined information about specific criteria that a dev
 **Note**
 The `AddProductFeatures` state does not generate reports by itself. This state must transition to the [`Report` state](#state-report) to generate reports.
 
-```
+```json
 {
     "Type": "Parallel",
     "Next": "{{<state-name>}}",
@@ -243,7 +243,7 @@ The name of the feature
 Optional. The custom value to use in the report instead of `supported`. If this value is not specified, then based on test results, the feature value is set to `supported` or `not-supported`.
 If you use a custom value for `FeatureValue`, you can test the same feature with different conditions, and IDT concatenates the feature values for the supported conditions. For example, the following excerpt shows the `MyFeature` feature with two separate feature values:
 
-```
+```json
 ...
 {
     "Feature": "MyFeature",
@@ -289,7 +289,7 @@ If a group ID provided in this state is not a valid group ID, then this state re
 
 The `Report` state generates the `{{suite-name}}_Report.xml` and `awsiotdevicetester_report.xml` files. This state also streams the report to the console.
 
-```
+```json
 {
     "Type": "Report",
     "Next": "{{<state-name>}}"
@@ -312,7 +312,7 @@ If this state encounters issues with generating the reports, then it issues the 
 
 The `LogMessage` state generates the `test_manager.log` file and streams the log message to the console.
 
-```
+```json
 {
     "Type": "LogMessage",
     "Next": "{{<state-name>}}"
@@ -337,7 +337,7 @@ The message to log.
 
 The `SelectGroup` state updates the state machine context to indicate which groups are selected. The values set by this state are used by any subsequent `Choice` states.
 
-```
+```json
 {
     "Type": "SelectGroup",
     "Next": "{{<state-name>}}"
@@ -360,7 +360,7 @@ An array of test groups that will be marked as selected. For each test group ID 
 
 The `Fail` state indicates that the state machine did not execute correctly. This is an end state for the state machine, and each state machine definition must include this state.
 
-```
+```json
 {
     "Type": "Fail"
 }
@@ -371,7 +371,7 @@ The `Fail` state indicates that the state machine did not execute correctly. Thi
 
 The `Succeed` state indicates that the state machine executed correctly. This is an end state for the state machine, and each state machine definition must include this state.
 
-```
+```json
 {
     "Type": "Succeed"
 }
@@ -384,7 +384,7 @@ The state machine context is a read-only JSON document that contains data that i
 
 The state machine context uses the following format:
 
-```
+```json
 {
     "pool": {
         {{<device-json-pool-element>}}
@@ -451,7 +451,7 @@ You can use the following methods to handle execution errors:
 
 To use `Catch`, add the following to your state definition:
 
-```
+```json
 "Catch": [
     {
         "ErrorEquals": [
@@ -503,7 +503,7 @@ This state machine:
 + Checks for execution errors and transitions to `Fail` if any are found.
 + Generates a report and transitions to `Succeed` if there are no errors, and `Fail` otherwise.
 
-```
+```json
 {
     "Comment": "Runs a single group and then generates a report.",
     "StartAt": "RunGroupA",
@@ -555,7 +555,7 @@ This state machine:
   + Runs tests in test group `GroupA`.
   + Generates reports and exits.
 
-```
+```json
 {
     "Comment": "Runs specific groups if the test runner chose to do that, otherwise runs GroupA.",
     "StartAt": "SpecificGroupsCheck",
@@ -629,7 +629,7 @@ This state machine:
   + The feature is not marked optional in the report.
 + Generates a report and transitions to `Succeed` if there are no errors, and `Fail` otherwise
 
-```
+```json
 {
     "Comment": "Runs GroupA and adds product features based on GroupA",
     "StartAt": "RunGroupA",
@@ -696,7 +696,7 @@ This state machine:
 
 If two devices are configured in the device pool, both `GroupA` and `GroupB` can run at the same time. However, if either `GroupA` or `GroupB` has multiple tests in it, then both devices may be allocated to those tests. If only one device is configured, the test groups will run sequentially.
 
-```
+```json
 {
     "Comment": "Runs GroupA and GroupB in parallel",
     "StartAt": "RunGroupAAndB",

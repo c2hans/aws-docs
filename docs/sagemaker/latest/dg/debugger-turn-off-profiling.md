@@ -18,7 +18,7 @@ If you disable it, you won't be able to view the comprehensive Studio Debugger i
 **Warning**
 If you disable it, you won't be able to collect output tensors and cannot debug your model parameters.
 
-  ```
+  ```py
   estimator=Estimator(
       ...
       disable_profiler=True
@@ -31,7 +31,7 @@ If you disable it, you won't be able to collect output tensors and cannot debug 
 
   To disable both monitoring and profiling while your training job is running, use the following estimator classmethod:
 
-  ```
+  ```py
   estimator.disable_profiling()
   ```
 

@@ -33,7 +33,7 @@ Instead of implementing this event processing logic, the application owner can s
 
 The following JSON filter policy is set in the configuration for the Event Search and Analytics Pipeline. It matches only incoming orders in which the total amount is $100 or higher. For more information, see [Amazon SNS message filtering](sns-message-filtering.md).
 
-```
+```json
 {
    "amount": [{ "numeric": [ ">=", 100 ] }]
 }

@@ -32,7 +32,7 @@ The following example shows an IAM policy that grants permission to write to the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -84,7 +84,7 @@ You don’t have to use the `aws:SourceArn` and `aws:SourceAccount` conditions a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

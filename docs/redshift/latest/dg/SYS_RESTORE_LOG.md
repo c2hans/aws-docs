@@ -32,7 +32,7 @@ SYS\_RESTORE\_LOG is visible only to superusers.
 
 The following query calculates the throughput of data processing, using SYS\_RESTORE\_LOG.
 
-```
+```sql
 SELECT
     ROUND(sum(delta_data_processed) / 1024.0, 2) as data_processed_gb,
     ROUND(datediff(sec, min(event_time), max(event_time)) / 3600.0, 2) as duration_hr,

@@ -237,14 +237,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-ec2-instance-stack-gather-log4j-information-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-advanced-ec2-instance-stack-gather-log4j-information-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-GatherLog4jInformation",
   "Region": "us-east-1",

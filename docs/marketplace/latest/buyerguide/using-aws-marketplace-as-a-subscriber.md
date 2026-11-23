@@ -26,4 +26,6 @@ For more information about delivery methods for software products in AWS Marketp
 +  [Machine learning products in AWS Marketplace](product-types-machine-learning-products.md)
 +  [Purchasing professional services products in AWS Marketplace](buyer-proserv-products.md)
 +  [SaaS products through AWS Marketplace](buyer-saas-products.md)
++  [Products integrated with AWS services](buyer-integrated-products.md)
++  [DaaS products through AWS Marketplace](buyer-daas-products.md)
 + Data products – See [What is AWS Data Exchange?](https://docs.aws.amazon.com/data-exchange/latest/userguide/what-is.html) in the *AWS Data Exchange User Guide*

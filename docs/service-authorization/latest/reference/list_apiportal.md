@@ -13,9 +13,272 @@ References:
 + View the [programmatic service authorization reference](https://servicereference.us-east-1.amazonaws.com/v1/apiportal/apiportal.json) for this service.
 
 **Topics**
++ [API operations defined by AWS API Portal](#list_apiportal-operations)
 + [Actions defined by AWS API Portal](#list_apiportal-actions-as-permissions)
 + [Resource types defined by AWS API Portal](#list_apiportal-resources-for-iam-policies)
 + [Condition keys for AWS API Portal](#list_apiportal-policy-keys)
+
+## API operations defined by AWS API Portal
+<a name="list_apiportal-operations"></a>
+
+The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_apiportal-actions-as-permissions).
+
+- **   AssociateManagedApis  **
+  - **IAM action:**  [apiportal:AssociateManagedApis](#list_apiportal-action-AssociateManagedApis)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   CreateManagedApi  **
+  - **IAM action:**  [apiportal:CreateManagedApi](#list_apiportal-action-CreateManagedApi)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [apiportal:TagResource](#list_apiportal-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreatePortal  **
+  - **IAM action:**  [apiportal:CreatePortal](#list_apiportal-action-CreatePortal)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [apiportal:GetProduct](#list_apiportal-action-GetProduct)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [apiportal:TagResource](#list_apiportal-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreatePortalPreview  **
+  - **IAM action:**  [apiportal:CreatePortalPreview](#list_apiportal-action-CreatePortalPreview)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   CreateProduct  **
+  - **IAM action:**  [apiportal:CreateProduct](#list_apiportal-action-CreateProduct)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [apiportal:TagResource](#list_apiportal-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateProductApiPage  **
+  - **IAM action:**  [apiportal:CreateProductApiPage](#list_apiportal-action-CreateProductApiPage)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [apiportal:TagResource](#list_apiportal-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateProductPage  **
+  - **IAM action:**  [apiportal:CreateProductPage](#list_apiportal-action-CreateProductPage)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [apiportal:TagResource](#list_apiportal-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   DeleteDiscoveryConfiguration  **
+  - **IAM action:**  [apiportal:DeleteDiscoveryConfiguration](#list_apiportal-action-DeleteDiscoveryConfiguration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteManagedApi  **
+  - **IAM action:**  [apiportal:DeleteManagedApi](#list_apiportal-action-DeleteManagedApi)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteOrganizationDiscoveryConfiguration  **
+  - **IAM action:**  [apiportal:DeleteOrganizationDiscoveryConfiguration](#list_apiportal-action-DeleteOrganizationDiscoveryConfiguration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeletePortal  **
+  - **IAM action:**  [apiportal:DeletePortal](#list_apiportal-action-DeletePortal)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteProduct  **
+  - **IAM action:**  [apiportal:DeleteProduct](#list_apiportal-action-DeleteProduct)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteProductApiPage  **
+  - **IAM action:**  [apiportal:DeleteProductApiPage](#list_apiportal-action-DeleteProductApiPage)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteProductPage  **
+  - **IAM action:**  [apiportal:DeleteProductPage](#list_apiportal-action-DeleteProductPage)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteProductSharingPolicy  **
+  - **IAM action:**  [apiportal:DeleteProductSharingPolicy](#list_apiportal-action-DeleteProductSharingPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Permissions management, Write
+
+- **   DisassociateManagedApis  **
+  - **IAM action:**  [apiportal:DisassociateManagedApis](#list_apiportal-action-DisassociateManagedApis)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   GetApiInventoryItem  **
+  - **IAM action:**  [apiportal:GetApiInventoryItem](#list_apiportal-action-GetApiInventoryItem)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetDiscoveryConfiguration  **
+  - **IAM action:**  [apiportal:GetDiscoveryConfiguration](#list_apiportal-action-GetDiscoveryConfiguration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetManagedApi  **
+  - **IAM action:**  [apiportal:GetManagedApi](#list_apiportal-action-GetManagedApi)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetOrganizationDiscoveryConfiguration  **
+  - **IAM action:**  [apiportal:GetOrganizationDiscoveryConfiguration](#list_apiportal-action-GetOrganizationDiscoveryConfiguration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetPortal  **
+  - **IAM action:**  [apiportal:GetPortal](#list_apiportal-action-GetPortal)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetProduct  **
+  - **IAM action:**  [apiportal:GetProduct](#list_apiportal-action-GetProduct)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetProductApiPage  **
+  - **IAM action:**  [apiportal:GetProductApiPage](#list_apiportal-action-GetProductApiPage)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetProductPage  **
+  - **IAM action:**  [apiportal:GetProductPage](#list_apiportal-action-GetProductPage)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetProductSharingPolicy  **
+  - **IAM action:**  [apiportal:GetProductSharingPolicy](#list_apiportal-action-GetProductSharingPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   ListApiInventoryItems  **
+  - **IAM action:**  [apiportal:ListApiInventoryItems](#list_apiportal-action-ListApiInventoryItems)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListDiscoveryStatuses  **
+  - **IAM action:**  [apiportal:ListDiscoveryStatuses](#list_apiportal-action-ListDiscoveryStatuses)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListManagedApiEvents  **
+  - **IAM action:**  [apiportal:ListManagedApiEvents](#list_apiportal-action-ListManagedApiEvents)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListManagedApis  **
+  - **IAM action:**  [apiportal:ListManagedApis](#list_apiportal-action-ListManagedApis)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListPortals  **
+  - **IAM action:**  [apiportal:ListPortals](#list_apiportal-action-ListPortals)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListProductApiPages  **
+  - **IAM action:**  [apiportal:ListProductApiPages](#list_apiportal-action-ListProductApiPages)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListProductPages  **
+  - **IAM action:**  [apiportal:ListProductPages](#list_apiportal-action-ListProductPages)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListProducts  **
+  - **IAM action:**  [apiportal:ListProducts](#list_apiportal-action-ListProducts)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListTagsForResource  **
+  - **IAM action:**  [apiportal:ListTagsForResource](#list_apiportal-action-ListTagsForResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   PutDiscoveryConfiguration  **
+  - **IAM action:**  [apiportal:PutDiscoveryConfiguration](#list_apiportal-action-PutDiscoveryConfiguration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [apiportal:TagResource](#list_apiportal-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   PutOrganizationDiscoveryConfiguration  **
+  - **IAM action:**  [apiportal:PutOrganizationDiscoveryConfiguration](#list_apiportal-action-PutOrganizationDiscoveryConfiguration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [apiportal:TagResource](#list_apiportal-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   PutProductSharingPolicy  **
+  - **IAM action:**  [apiportal:PutProductSharingPolicy](#list_apiportal-action-PutProductSharingPolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
+  - **IAM action:**  [apiportal:TagResource](#list_apiportal-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   StartDiscovery  **
+  - **IAM action:**  [apiportal:StartDiscovery](#list_apiportal-action-StartDiscovery)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   StopDiscovery  **
+  - **IAM action:**  [apiportal:StopDiscovery](#list_apiportal-action-StopDiscovery)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   TagResource  **
+  - **IAM action:**  [apiportal:TagResource](#list_apiportal-action-TagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
+- **   UntagResource  **
+  - **IAM action:**  [apiportal:UntagResource](#list_apiportal-action-UntagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
+- **   UpdatePortal  **
+  - **IAM action:**  [apiportal:GetProduct](#list_apiportal-action-GetProduct)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [apiportal:UpdatePortal](#list_apiportal-action-UpdatePortal)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+
+- **   UpdatePortalPublishStatus  **
+  - **IAM action:**  [apiportal:GetProduct](#list_apiportal-action-GetProduct)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [apiportal:UpdatePortalPublishStatus](#list_apiportal-action-UpdatePortalPublishStatus)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+
+- **   UpdateProduct  **
+  - **IAM action:**  [apiportal:UpdateProduct](#list_apiportal-action-UpdateProduct)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateProductApiPage  **
+  - **IAM action:**  [apiportal:UpdateProductApiPage](#list_apiportal-action-UpdateProductApiPage)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateProductPage  **
+  - **IAM action:**  [apiportal:UpdateProductPage](#list_apiportal-action-UpdateProductPage)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 ## Actions defined by AWS API Portal
 <a name="list_apiportal-actions-as-permissions"></a>

@@ -13,7 +13,7 @@ Set up managed tiered checkpointing on the cluster first. It is a cluster-level 
 
 Then install the checkpointing package on the hosts that run your Ray workload.
 
-```
+```bash
 pip install amzn-sagemaker-checkpointing
 ```
 
@@ -24,7 +24,7 @@ Save checkpoints through `SageMakerTieredStorageWriter` instead of letting Ray u
 
 This example uses [asynchronous checkpoint uploading](https://docs.ray.io/en/latest/train/user-guides/checkpoints.html#asynchronous-checkpoint-uploading) in the Ray documentation, which lets Ray Train kick off a background thread to wait for the upload to complete while training continues on the next step. The `save_checkpoint` function stages the checkpoint to tiered storage and reports it to Ray Train with `CheckpointUploadMode.ASYNC`. `ray.train.report` records the checkpoint with Ray Train so it can track the best checkpoints, enforce `num_to_keep`, and restore from the latest checkpoint on failure. For more information about Ray Train checkpointing, see [Saving and loading checkpoints](https://docs.ray.io/en/latest/train/user-guides/checkpoints.html) in the Ray documentation.
 
-```
+```python
 import os
 import torch.distributed as dist
 from torch.distributed.checkpoint import async_save, load

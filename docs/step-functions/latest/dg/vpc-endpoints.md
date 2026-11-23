@@ -23,7 +23,7 @@ For information about creating and configuring an endpoint using the Amazon VPC 
 **Note**
 It's possible to use VPC Endpoints without overriding the endpoint in the SDK through [Private DNS](https://docs.aws.amazon.com/vpc/latest/privatelink/verify-domains.html). However, if you want to override the endpoint in the SDK for Synchronous Express Workflows, you need to set `DisableHostPrefixInjection` configuration to `true`. Example (Java SDK V2):
 
-```
+```java
 SfnClient.builder()
   .endpointOverride(URI.create("https://vpce-{vpceId}.sync-states.us-east-1.vpce.amazonaws.com"))
   .overrideConfiguration(ClientOverrideConfiguration.builder()
@@ -54,7 +54,7 @@ The following example shows an Amazon VPC endpoint policy that allows one user t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

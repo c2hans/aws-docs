@@ -33,7 +33,7 @@ In the following examples, the value of `'a'::VARBYTE` is `61` and the value of 
 
 To compare if `'a'` is less than `'b'` using the `<` operator, use the following example.
 
-```
+```sql
 SELECT 'a'::VARBYTE < 'b'::VARBYTE AS less_than;
 
 +-----------+
@@ -45,7 +45,7 @@ SELECT 'a'::VARBYTE < 'b'::VARBYTE AS less_than;
 
 To compare if `'a'` equals `'b'` using the `=` operator, use the following example.
 
-```
+```sql
 SELECT 'a'::VARBYTE = 'b'::VARBYTE AS equal;
 
 +-------+
@@ -57,7 +57,7 @@ SELECT 'a'::VARBYTE = 'b'::VARBYTE AS equal;
 
 To concatenate two binary values using the `||` operator, use the following example.
 
-```
+```sql
 SELECT 'a'::VARBYTE || 'b'::VARBYTE AS concat;
 
 +--------+
@@ -69,7 +69,7 @@ SELECT 'a'::VARBYTE || 'b'::VARBYTE AS concat;
 
 To concatenate two binary values using the `+` operator, use the following example.
 
-```
+```sql
 SELECT 'a'::VARBYTE + 'b'::VARBYTE AS concat;
 
 +--------+
@@ -81,7 +81,7 @@ SELECT 'a'::VARBYTE + 'b'::VARBYTE AS concat;
 
 To negate each bit of the input binary value using the FROM\_VARBYTE function, use the following example. The string `'a'` evaluates to `01100001`. For more information, see [FROM\_VARBYTE](r_FROM_VARBYTE.md).
 
-```
+```sql
 SELECT FROM_VARBYTE(~'a'::VARBYTE, 'binary');
 
 +--------------+
@@ -93,7 +93,7 @@ SELECT FROM_VARBYTE(~'a'::VARBYTE, 'binary');
 
 To apply the `&` operator on the two input binary values, use the following example. The string `'a'` evaluates to `01100001` and `'b'` evaluates to `01100010`.
 
-```
+```sql
 SELECT FROM_VARBYTE('a'::VARBYTE & 'b'::VARBYTE, 'binary');
 
 +--------------+

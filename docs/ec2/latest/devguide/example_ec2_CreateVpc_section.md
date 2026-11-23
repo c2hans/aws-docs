@@ -193,7 +193,7 @@ For more information, see [Create a VPC that uses an IPAM pool CIDR](https://doc
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/ec2#code-examples).
 
-```
+```php
     /**
      * @param string $cidr
      * @return array
@@ -219,7 +219,7 @@ For more information, see [Create a VPC that uses an IPAM pool CIDR](https://doc
 **Tools for PowerShell V4**
 **Example 1: This example creates a VPC with the specified CIDR. Amazon VPC also creates the following for the VPC: a default DHCP options set, a main route table, and a default network ACL.**
 
-```
+```powershell
 New-EC2VPC -CidrBlock 10.0.0.0/16
 ```
 **Output:**
@@ -238,7 +238,7 @@ VpcId           : vpc-12345678
 **Tools for PowerShell V5**
 **Example 1: This example creates a VPC with the specified CIDR. Amazon VPC also creates the following for the VPC: a default DHCP options set, a main route table, and a default network ACL.**
 
-```
+```powershell
 New-EC2VPC -CidrBlock 10.0.0.0/16
 ```
 **Output:**
@@ -260,7 +260,7 @@ VpcId           : vpc-12345678
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ec2#code-examples).
 
-```
+```python
 class VpcWrapper:
     """Encapsulates Amazon Elastic Compute Cloud (Amazon EC2) Amazon Virtual Private Cloud actions."""
 
@@ -312,7 +312,7 @@ class VpcWrapper:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ec2'
 
 # Creates a virtual private cloud (VPC) in
@@ -408,7 +408,7 @@ run_me if $PROGRAM_NAME == __FILE__
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     " iv_cidr_block = '10.0.0.0/16'
     TRY.
         oo_result = lo_ec2->createvpc( iv_cidrblock = iv_cidr_block ).             " oo_result is returned for testing purposes. "

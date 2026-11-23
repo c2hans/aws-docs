@@ -12,7 +12,7 @@ This template creates two IAM roles:
 
 These roles enable three containment actions: isolating Amazon EC2 instances from network traffic, revoking IAM principal access, and restricting Amazon S3 bucket access.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'Template for production SIR containment roles'
 

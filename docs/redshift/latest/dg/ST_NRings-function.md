@@ -41,7 +41,7 @@ The values returned are as follows.
 
 The following SQL returns the number of rings in a multipolygon.
 
-```
+```sql
 SELECT ST_NRings(ST_GeomFromText('MULTIPOLYGON(((0 0,10 0,0 10,0 0)),((0 0,-10 0,0 -10,0 0)))'));
 ```
 

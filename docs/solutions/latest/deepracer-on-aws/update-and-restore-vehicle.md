@@ -73,7 +73,7 @@ Follow the instructions here to use an Ubuntu computer, including your AWS DeepR
 
 1. Run the following commands to install and launch GParted.
 
-   ```
+   ```bash
    sudo apt-get update; sudo apt-get install gparted
    sudo gparted
    ```
@@ -129,7 +129,7 @@ Follow the instructions here to use an Ubuntu computer, including your AWS DeepR
 
    1. Use the following commands to navigate to the binary file location, give the file execute permission, and run UNetbootin. Make sure to adjust the file name in the commands if the version doesn’t match the one on your downloaded binary file.
 
-      ```
+      ```bash
       cd Downloads
       sudo chmod +x ./unetbootin-linux64-702.bin
       sudo ./unetbootin-linux64-702.bin
@@ -137,7 +137,7 @@ Follow the instructions here to use an Ubuntu computer, including your AWS DeepR
 
       If you’re using an older version of Ubuntu, install UNetbootin from its repository by running the following commands:
 
-      ```
+      ```bash
       sudo add-apt-repository ppa:gezakovacs/ppa
       sudo apt-get update; sudo apt-get install unetbootin
       sudo unetbootin
@@ -323,7 +323,7 @@ If the **Size** input box is grayed out after choosing MS-DOS (FAT) as the forma
 
    1. Enter the following command to install Rosetta 2:
 
-      ```
+      ```bash
       softwareupdate --install-rosetta
       ```
 

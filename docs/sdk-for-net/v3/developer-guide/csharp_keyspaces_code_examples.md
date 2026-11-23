@@ -32,7 +32,7 @@ The following code example shows how to get started using Amazon Keyspaces.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Keyspaces#code-examples).
 
-```
+```csharp
 namespace KeyspacesActions;
 
 public class HelloKeyspaces
@@ -82,7 +82,7 @@ The following code example shows how to:
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Keyspaces#code-examples).
 
-```
+```csharp
 global using System.Security.Cryptography.X509Certificates;
 global using Amazon.Keyspaces;
 global using Amazon.Keyspaces.Model;
@@ -373,7 +373,7 @@ public class KeyspacesBasics
 }
 ```
 
-```
+```csharp
 namespace KeyspacesActions;
 
 /// <summary>
@@ -552,7 +552,7 @@ public class KeyspacesWrapper
 }
 ```
 
-```
+```csharp
 using System.Net;
 using Cassandra;
 
@@ -775,7 +775,7 @@ The following code example shows how to use `CreateKeyspace`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Keyspaces#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a new keyspace.
     /// </summary>
@@ -799,7 +799,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Keyspaces#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a new Amazon Keyspaces table.
     /// </summary>
@@ -831,7 +831,7 @@ The following code example shows how to use `DeleteKeyspace`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Keyspaces#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an existing keyspace.
     /// </summary>
@@ -854,7 +854,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Keyspaces#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an Amazon Keyspaces table.
     /// </summary>
@@ -878,7 +878,7 @@ The following code example shows how to use `GetKeyspace`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Keyspaces#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get data about a keyspace.
     /// </summary>
@@ -901,7 +901,7 @@ The following code example shows how to use `GetTable`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Keyspaces#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information about an Amazon Keyspaces table.
     /// </summary>
@@ -925,7 +925,7 @@ The following code example shows how to use `ListKeyspaces`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Keyspaces#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Lists all keyspaces for the account.
     /// </summary>
@@ -952,7 +952,7 @@ The following code example shows how to use `ListTables`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Keyspaces#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Lists the Amazon Keyspaces tables in a keyspace.
     /// </summary>
@@ -979,7 +979,7 @@ The following code example shows how to use `RestoreTable`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Keyspaces#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Restores the specified table to the specified point in time.
     /// </summary>
@@ -1012,7 +1012,7 @@ The following code example shows how to use `UpdateTable`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Keyspaces#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Updates the movie table to add a boolean column named watched.
     /// </summary>

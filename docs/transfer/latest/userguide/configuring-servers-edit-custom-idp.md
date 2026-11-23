@@ -87,7 +87,7 @@ Example resource policy for direct Lambda integration:
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{

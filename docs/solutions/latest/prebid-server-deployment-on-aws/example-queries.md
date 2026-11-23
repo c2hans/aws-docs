@@ -11,7 +11,7 @@ The behavior of metric collection depends on the metric type. `counter` type met
 
 Create views for the various metrics types. Set up the following views for the `histogram`, `timer`, and `meter` tables. Replace the ` <table-name> ` variable for each table.
 
-```
+```sql
 CREATE VIEW <table-name>_current_data AS
 WITH timestamp_ranking AS (
 SELECT
@@ -31,7 +31,7 @@ WHERE "timestamp_rank" = 1
 
 1. Total number of bids received:
 
-   ```
+   ```sql
    SELECT
    "name",
    SUM("count") AS "total_bids_received"
@@ -42,7 +42,7 @@ WHERE "timestamp_rank" = 1
 
 1. Average bid price:
 
-   ```
+   ```sql
    WITH timestamp_ranking AS (
    SELECT
    *,
@@ -81,7 +81,7 @@ WHERE "timestamp_rank" = 1
 
 1. Win rate:
 
-   ```
+   ```sql
    WITH total_impressions AS (
        SELECT SUM("count") AS "total_impressions"
        FROM "prebid-server-us-east-1-metricsetl-database"."counter"
@@ -104,7 +104,7 @@ WHERE "timestamp_rank" = 1
 
 1. Bid rate:
 
-   ```
+   ```sql
    WITH request_per_adapter AS (
    SELECT
    SPLIT("name", '.')[2] AS "bid_adapter",
@@ -137,7 +137,7 @@ WHERE "timestamp_rank" = 1
 
 1. Bid request responses:
 
-   ```
+   ```sql
    WITH request_per_adapter AS (
    SELECT
    SPLIT("name", '.')[2] AS "bid_adapter",
@@ -165,7 +165,7 @@ WHERE "timestamp_rank" = 1
 
 1. Fill rate:
 
-   ```
+   ```sql
    WITH total_impressions AS (
    SELECT SUM("count") AS "total_impressions"
    FROM "prebid-server-us-east-1-metricsetl-database"."counter"
@@ -182,7 +182,7 @@ WHERE "timestamp_rank" = 1
 
 1. Average request time:
 
-   ```
+   ```sql
    WITH timestamp_ranking AS (
    SELECT
    *,
@@ -212,7 +212,7 @@ WHERE "timestamp_rank" = 1
 
 1. Sum of all impression types:
 
-   ```
+   ```sql
    SELECT
    "name",
    SUM("count")

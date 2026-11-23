@@ -39,7 +39,7 @@ When you write DataFrames from the connector, any column of type `MapType` (usin
 
 The following example demonstrates how to create a table with a SUPER data type that contains a struct
 
-```
+```sql
 create table contains_super (a super);
 ```
 

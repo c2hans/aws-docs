@@ -29,7 +29,7 @@ To allow Amazon Redshift to assume a role to interact with other services, add t
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -65,7 +65,7 @@ To invoke an Amazon Bedrock model from Amazon Redshift, you must first run the `
 
 The following code example shows a basic `CREATE EXTERNAL MODEL` command:
 
-```
+```sql
 CREATE EXTERNAL MODEL llm_claude
 FUNCTION llm_claude_func
 IAM_ROLE '{{<IAM role arn>}}'
@@ -79,7 +79,7 @@ The `CREATE EXTERNAL MODEL` command has a unified and consistent interface with 
 
 If an FM doesn't support messages, then you must set the `request_type` setting to `RAW`, as the following example demonstrates. When you set `request_type` to `RAW`, you must construct the request sent to Amazon Bedrock when using the inference function based on the selected FM. Make sure that you enable access to the Titan Text G1 – Express model in Amazon Bedrock before running the following example.
 
-```
+```sql
 CREATE EXTERNAL MODEL titan_raw
 FUNCTION func_titan_raw
 IAM_ROLE '{{<IAM role arn>}}'
@@ -92,7 +92,7 @@ SETTINGS (
 
 If you need more information about an input request such as total tokens, you can request the `RESPONSE_TYPE` to be `super` when you create the model.
 
-```
+```sql
 CREATE EXTERNAL MODEL patient_recommendations_v2
 FUNCTION patient_recommendations_func_v2
 IAM_ROLE '{{<IAM role arn>}}'
@@ -179,7 +179,7 @@ To use static prefix and suffix prompts for your external model, provide them us
 
 The following example shows how to add prefix and suffix prompts to an external model:
 
-```
+```sql
 CREATE EXTERNAL MODEL llm_claude
 FUNCTION llm_claude_func
 IAM_ROLE '{{<IAM role arn>}}'

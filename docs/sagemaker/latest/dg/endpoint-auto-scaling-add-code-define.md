@@ -21,7 +21,7 @@ This section shows you example policy configurations for target tracking scaling
 **Example**
 The following is an example target tracking policy configuration for a variant that keeps the average invocations per instance at 70. Save this configuration in a file named `config.json`.
 
-```
+```json
 {
     "TargetValue": {{70.0}},
     "PredefinedMetricSpecification":
@@ -49,7 +49,7 @@ As high-resolution metrics, they emit data more frequently than standard CloudWa
 
 The following is an example target tracking policy configuration that adds instances if the number of concurrent requests per model exceeds 5. Save this configuration in a file named `config.json`.
 
-```
+```json
 {
     "TargetValue": 5.0,
     "PredefinedMetricSpecification":
@@ -71,7 +71,7 @@ To create a target tracking scaling policy with a custom metric, specify the met
 **Example**
 The following example configuration shows a target tracking scaling policy with a custom metric. The policy scales the variant based on an average CPU utilization of 50 percent across all instances. Save this configuration in a file named `config.json`.
 
-```
+```json
 {
     "TargetValue": {{50.0}},
     "CustomizedMetricSpecification":
@@ -99,7 +99,7 @@ You can create multiple target tracking policies for a scalable target. Consider
 **Example**
 The following example configuration shows a target tracking scaling policy with a custom metric. The policy scale adjusts the number of variant instances so that each instance has an `ExplanationsPerInstance` metric of 20. Save this configuration in a file named `config.json`.
 
-```
+```python
 {
     "TargetValue": {{20.0}},
     "CustomizedMetricSpecification":
@@ -125,7 +125,7 @@ You can optionally define cooldown periods in your target tracking scaling polic
 **Example**
 The following is an example target tracking policy configuration for a variant that keeps the average invocations per instance at 70. The policy configuration provides a scale-in cooldown period of 10 minutes (600 seconds) and a scale-out cooldown period of 5 minutes (300 seconds). Save this configuration in a file named `config.json`.
 
-```
+```json
 {
     "TargetValue": {{70.0}},
     "PredefinedMetricSpecification":

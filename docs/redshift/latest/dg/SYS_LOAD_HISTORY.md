@@ -41,7 +41,7 @@ SYS\_LOAD\_HISTORY is visible to all users. Superusers can see all rows; regular
 
 The following query shows the loaded rows, bytes, tables, and datasource of specific copy commands.
 
-```
+```sql
 SELECT query_id,
        table_name,
        data_source,

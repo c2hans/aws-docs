@@ -21,20 +21,20 @@ You can retrieve the image ID of the latest recommended Amazon EKS optimized Win
 + Replace {{kubernetes-version}} with a supported [platform-version](https://docs.aws.amazon.com/eks/latest/userguide/platform-versions.html).
 + Replace {{region-code}} with an [Amazon EKS supported AWS Region](https://docs.aws.amazon.com/general/latest/gr/eks.html) for which you want the AMI ID.
 
-```
+```bash
 aws ssm get-parameter --name /aws/service/ami-windows-latest/Windows_Server-{{release}}-English-{{installation-option}}-EKS_Optimized-{{kubernetes-version}}/image_id \
     --region {{region-code}} --query "Parameter.Value" --output text
 ```
 
 Here’s an example command after placeholder replacements have been made.
 
-```
+```bash
 aws ssm get-parameter --name /aws/service/ami-windows-latest/Windows_Server-{{2022}}-English-{{Core}}-EKS_Optimized-{{k8s-n-2}}/image_id \
     --region {{us-west-2}} --query "Parameter.Value" --output text
 ```
 
 An example output is as follows.
 
-```
+```bash
 ami-{{1234567890abcdef0}}
 ```

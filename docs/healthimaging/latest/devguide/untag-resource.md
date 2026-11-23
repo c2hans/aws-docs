@@ -61,7 +61,7 @@ This command produces no output.
 
 **SDK for Java 2.x**
 
-```
+```java
     public static void untagMedicalImagingResource(MedicalImagingClient medicalImagingClient,
             String resourceArn,
             Collection<String> tagKeys) {
@@ -88,7 +88,7 @@ This command produces no output.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { UntagResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -126,7 +126,7 @@ export const untagResource = async (
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -152,7 +152,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -164,7 +164,7 @@ The following code instantiates the MedicalImagingWrapper object.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_resource_arn = 'arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012'
         lo_mig->untagresource(

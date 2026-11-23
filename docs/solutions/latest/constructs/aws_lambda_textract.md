@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { LambdaToTextract } from '@aws-solutions-constructs/aws-lambda-textract';
@@ -40,7 +40,7 @@ new LambdaToTextract(this, 'LambdaToTextractPattern', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_lambda_textract import LambdaToTextract
 from aws_cdk import (
     aws_lambda as _lambda,
@@ -57,7 +57,7 @@ LambdaToTextract(self, 'LambdaToTextractPattern',
         )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

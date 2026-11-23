@@ -40,7 +40,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `AttachPolicy` action.
 
-```
+```JSON
 {
     "timestamp":"1460159496",
     "AdditionalEventData":"",

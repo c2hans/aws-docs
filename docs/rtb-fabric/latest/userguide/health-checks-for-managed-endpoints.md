@@ -166,7 +166,7 @@ $ aws rtbfabric get-responder-gateway \
 
 If health checks are configured, the response includes a `healthCheckConfig` object within the `managedEndpointConfiguration`:
 
-```
+```json
 {
     "gatewayId": "rtb-gw-abc123def456",
     "managedEndpointConfiguration": {

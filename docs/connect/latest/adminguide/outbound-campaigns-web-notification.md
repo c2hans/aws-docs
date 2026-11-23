@@ -107,7 +107,7 @@ Web notifications are delivered through outbound campaigns. Create a campaign th
 
 After embedding the Communications widget snippet on your website, initialize web notifications by calling `Notification.init()` in your page JavaScript. Call this method only after the visitor has granted appropriate consent for personalized messaging.
 
-```
+```javascript
 await window.amazon_connect.Web.Notification.init();
 ```
 

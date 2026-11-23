@@ -87,7 +87,7 @@ The operation that you use to delete a resource depends on its resource type. Sp
 
 For example, to delete a predictor with the [DeletePredictor](API_DeletePredictor.md) operation, specify the value of `PredictorArn` to the ARN of the predictor that you want to delete.
 
-```
+```json
         {
             "PredictorArn": arn:{{partition:service:region:account-id:resource-id}}
         }
@@ -125,7 +125,7 @@ Deleting a resource tree deletes the parent resource and all associated child re
 
 To delete a resource tree, use the [DeleteResourceTree](API_DeleteResourceTree.md) operation. Set the value of `ResourceArn` to the Amazon Resource Name (ARN) of the parent resource.
 
-```
+```json
         {
             "ResourceArn": arn:{{partition:service:region:account-id:resource-id}}
         }

@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsB
 
 **Example**
 
-```
+```JSON
 "AwsBackupBackupPlan": {
     "BackupPlan": {
     	"AdvancedBackupSettings": [{
@@ -77,7 +77,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsB
 
 **Example**
 
-```
+```JSON
 "AwsBackupBackupVault": {
     "AccessPolicy": {
     	"Statement": [{
@@ -116,7 +116,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsB
 
 **Example**
 
-```
+```JSON
 "AwsBackupRecoveryPoint": {
     "BackupSizeInBytes": 0,
     "BackupVaultName": "aws/efs/automatic-backup-vault",

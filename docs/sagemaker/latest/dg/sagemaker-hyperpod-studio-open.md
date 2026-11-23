@@ -14,7 +14,7 @@ Alternatively, you can create a space and launch an IDE using the AWS CLI. Use t
 
 1. Create a space using the [`create-space`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/create-space.html) AWS CLI.
 
-   ```
+   ```python
    aws sagemaker create-space \
    --region {{your-region}} \
    --ownership-settings "OwnerUserProfileName={{user-profile-name}}" \
@@ -24,7 +24,7 @@ Alternatively, you can create a space and launch an IDE using the AWS CLI. Use t
 
 1. Create the app using the [`create-app`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/create-app.html) AWS CLI.
 
-   ```
+   ```python
    aws sagemaker create-app \
    --region {{your-region}} \
    --space-name {{space-name}} \

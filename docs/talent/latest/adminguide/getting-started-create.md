@@ -154,7 +154,7 @@ Complete the following high-level steps to enable SAML-based authentication:
 
 The following example shows an IAM policy that allows all users in a specific instance to federate into Amazon Connect Talent.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -169,7 +169,7 @@ The following example shows an IAM policy that allows all users in a specific in
 
 The following example uses an instance ID condition instead of a resource ARN.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

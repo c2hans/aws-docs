@@ -17,7 +17,7 @@ The following AWS CLI command lists the sessions that ran on a cluster:
 
 The following is an example of the response:
 
-```
+```json
 {
     "Sessions": [
         {
@@ -57,7 +57,7 @@ aws redshift-data list-sessions
 
 The following is an example of the response:
 
-```
+```json
 {
     "Sessions": [
         {

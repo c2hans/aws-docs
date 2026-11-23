@@ -49,7 +49,7 @@ If you have a policy statement you'd like to use, skip to **Step 8** and paste t
 **To create a static policy**
 You can create a static policy by using the [CreatePolicy](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_CreatePolicy.html) operation. The following example creates a simple static policy.
 
-```
+```bash
 $ aws verifiedpermissions create-policy \
     --definition "{ \"static\": { \"Description\": \"MyTestPolicy\", \"Statement\": \"permit(principal,action,resource) when {principal.owner == resource.owner};\"}}" \
     --policy-store-id PSEXAMPLEabcdefg111111
@@ -66,7 +66,7 @@ $ aws verifiedpermissions create-policy \
 **To create a policy with a policy name**
 You can optionally specify a policy name when creating a policy. The name must be unique for all policies within the policy store and prefixed with `name/`. You can use the name in place of the policy ID.
 
-```
+```bash
 $ aws verifiedpermissions create-policy \
     --definition "{ \"static\": { \"Statement\": \"permit(principal, action, resource in Album::\\\"public_folder\\\");\"}}" \
     --policy-store-id PSEXAMPLEabcdefg111111 \

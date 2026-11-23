@@ -16,7 +16,7 @@ MSK cluster creation typically takes 15-20 minutes. This is normal AWS behavior.
 
 1. Check the CloudFormation stack status:
 
-   ```
+   ```bash
    aws cloudformation describe-stacks --stack-name cms-dev-msk \
      --query "Stacks[0].StackStatus"
    ```
@@ -25,7 +25,7 @@ MSK cluster creation typically takes 15-20 minutes. This is normal AWS behavior.
 
 1. If the stack is in `ROLLBACK_COMPLETE`, delete it and retry:
 
-   ```
+   ```bash
    aws cloudformation delete-stack --stack-name cms-dev-msk
    # Wait for deletion, then redeploy
    cd deployment && make phase3
@@ -41,7 +41,7 @@ The TelemetryIntegrationStack fails when creating the IoT Rule VPC Destination.
 
 1. Verify the MSK cluster is in `ACTIVE` state:
 
-   ```
+   ```bash
    aws kafka list-clusters \
      --query "ClusterInfoList[?contains(ClusterName, 'cms-dev')].[ClusterName,State]" \
      --output table
@@ -53,7 +53,7 @@ The TelemetryIntegrationStack fails when creating the IoT Rule VPC Destination.
 
 1. Redeploy the integration stack:
 
-   ```
+   ```bash
    cd deployment && make phase3b
    ```
 
@@ -67,14 +67,14 @@ The FlinkStack deployment fails because the JAR file is not in S3.
 
 1. Build the Flink JAR:
 
-   ```
+   ```bash
    cd modules/flink
    mvn clean package -DskipTests
    ```
 
 1. Package and upload to S3:
 
-   ```
+   ```bash
    cd target
    zip -j /tmp/cms-telemetry-processor-1.0.0.zip \
      cms-telemetry-processor-1.0.0.jar
@@ -88,6 +88,6 @@ The FlinkStack deployment fails because the JAR file is not in S3.
 
 1. Redeploy the Flink stack:
 
-   ```
+   ```bash
    cd deployment && make phase4
    ```

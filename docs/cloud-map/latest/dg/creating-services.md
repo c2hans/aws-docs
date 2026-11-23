@@ -107,7 +107,7 @@ If you don't already have `Boto3` installed, you can find instructions for insta
 
 1. Import `Boto3` and use `servicediscovery` as your service.
 
-   ```
+   ```python
    import boto3
    client = boto3.client('servicediscovery')
    ```
@@ -133,7 +133,7 @@ If you don't already have `Boto3` installed, you can find instructions for insta
 
    Example response output
 
-   ```
+   ```json
    {
        'Service': {
            'Arn': 'arn:aws:servicediscovery:us-west-2:123456789012:service/srv-xxxxxxxxxxx',

@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Prepare an agent for internal testing.
 
-```
+```python
     def prepare_agent(self, agent_id):
         """
         Creates a DRAFT version of the agent that can be used for internal testing.

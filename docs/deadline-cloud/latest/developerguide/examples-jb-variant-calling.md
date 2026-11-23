@@ -13,7 +13,7 @@ The bundle demonstrates patterns that carry over to other scientific workloads:
 
 The bundle requires a farm with a Linux fleet, a conda queue environment with channels set to `conda-forge bioconda` in that order, and the Deadline Cloud CLI. Download the sample data (about 950 KB), then submit:
 
-```
+```bash
 python sample_inputs/fetch_test_data.py
 deadline bundle submit .
 ```

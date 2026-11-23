@@ -14,7 +14,7 @@ Java based Hooks projects rely on Maven's `pom.xml` file as a dependency. Expand
 ### Hook project dependencies (pom.xml)
 <a name="hook-java-dependencies"></a>
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project
     xmlns="http://maven.apache.org/POM/4.0.0"
@@ -445,7 +445,7 @@ Make sure your Lambda runtimes are up-to-date to avoid using a deprecated versio
 
 Add your own Hook handler runtime code to the handlers that you choose to implement. For example, you can add the following code for logging.
 
-```
+```java
 logger.log("Internal testing Hook triggered for target: " + request.getHookContext().getTargetName());
 ```
 
@@ -453,7 +453,7 @@ The CloudFormation CLI generates a Plain Old Java Objects (Java POJO). The follo
 
 **Example AwsS3BucketTargetModel.java**
 
-```
+```java
 package com.mycompany.testing.mytesthook.model.aws.s3.bucket;
 
 import...
@@ -490,7 +490,7 @@ public class AwsS3BucketTargetModel extends ResourceHookTargetModel<AwsS3Bucket>
 
 **Example AwsS3Bucket.java**
 
-```
+```java
 package com.mycompany.testing.mytesthook.model.aws.s3.bucket;
 
 import ...
@@ -609,7 +609,7 @@ public class AwsS3Bucket extends ResourceHookTarget {
 
 **Example BucketEncryption.java**
 
-```
+```java
 package software.amazon.testing.mytesthook.model.aws.s3.bucket;
 
 import ...
@@ -628,7 +628,7 @@ public class BucketEncryption {
 
 **Example ServerSideEncryptionRule.java**
 
-```
+```java
 package com.mycompany.testing.mytesthook.model.aws.s3.bucket;
 
 import ...
@@ -650,7 +650,7 @@ public class ServerSideEncryptionRule {
 
 **Example ServerSideEncryptionByDefault.java**
 
-```
+```java
 package com.mycompany.testing.mytesthook.model.aws.s3.bucket;
 
 import ...
@@ -698,7 +698,7 @@ With the POJOs generated, you can now write the handlers that actually implement
 1. Replace the entire contents of the `ClientBuilder.java` file with the following code.
 **Example ClientBuilder.java**
 
-   ```
+   ```java
    package com.awscommunity.kms.encryptionsettings;
 
    import software.amazon.awssdk.services.ec2.Ec2Client;
@@ -732,7 +732,7 @@ With the POJOs generated, you can now write the handlers that actually implement
 1. Replace the entire contents of the `Translator.java` file with the following code.
 **Example Translator.java**
 
-   ```
+   ```java
    package com.mycompany.testing.mytesthook;
 
    import software.amazon.awssdk.services.s3.model.GetBucketEncryptionRequest;
@@ -782,7 +782,7 @@ With the POJOs generated, you can now write the handlers that actually implement
 1. Replace the entire contents of the `AbstractTestBase.java` file with the following code.
 **Example Translator.java**
 
-   ```
+   ```java
    package com.mycompany.testing.mytesthook;
 
    import com.google.common.collect.ImmutableMap;
@@ -903,7 +903,7 @@ With the POJOs generated, you can now write the handlers that actually implement
 1. Replace the entire contents of the `BaseHookHandlerStd.java` file with the following code.
 **Example Translator.java**
 
-   ```
+   ```java
    package com.mycompany.testing.mytesthook;
 
    import com.mycompany.testing.mytesthook.model.aws.s3.bucket.AwsS3Bucket;
@@ -1014,7 +1014,7 @@ The `preCreate` handler verifies the server-side encryption settings for either 
 
 1. Replace the entire contents of the `PreCreateHookHandler.java` file with the following code.
 
-   ```
+   ```java
    package com.mycompany.testing.mytesthook;
 
    import com.mycompany.testing.mytesthook.model.aws.s3.bucket.AwsS3Bucket;
@@ -1158,7 +1158,7 @@ The `preCreate` handler verifies the server-side encryption settings for either 
 
 1. Replace the entire contents of `PreCreateHandlerTest.java` file with the following code.
 
-   ```
+   ```java
    package com.mycompany.testing.mytesthook;
 
    import com.google.common.collect.ImmutableMap;
@@ -1382,7 +1382,7 @@ Implement a `preUpdate` handler, which initiates before the update operations fo
 
 1. Replace the entire contents of the `PreUpdateHookHandler.java` file with the following code.
 
-   ```
+   ```java
    package com.mycompany.testing.mytesthook;
 
    import com.mycompany.testing.mytesthook.model.aws.s3.bucket.AwsS3Bucket;
@@ -1474,7 +1474,7 @@ Implement a `preUpdate` handler, which initiates before the update operations fo
 
 1. Replace the entire contents of the `PreUpdateHandlerTest.java` file with the following code.
 
-   ```
+   ```java
    package com.mycompany.testing.mytesthook;
 
    import com.google.common.collect.ImmutableMap;
@@ -1655,7 +1655,7 @@ Implement a `preDelete` handler, which initiates before the delete operations fo
 
 1. Replace the entire contents of the `PreDeleteHookHandler.java` file with the following code.
 
-   ```
+   ```java
    package com.mycompany.testing.mytesthook;
 
    import com.google.common.annotations.VisibleForTesting;
@@ -1881,7 +1881,7 @@ Implement a `preDelete` handler, which initiates before the delete operations fo
 
 1. Replace the entire contents of the `PreDeleteHookHandler.java` file with the following code.
 
-   ```
+   ```java
    package com.mycompany.testing.mytesthook;
 
    import com.google.common.collect.ImmutableList;

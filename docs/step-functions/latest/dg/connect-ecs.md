@@ -30,7 +30,7 @@ You can use `overrides` to override the default command for a container, and pas
 
 The following includes a `Task` state that runs an Amazon ECS task and waits for it to complete.
 
-```
+```json
 {
  "StartAt": "Run an ECS Task and wait for it to complete",
  "States": {
@@ -59,7 +59,7 @@ The `Command` line in `ContainerOverrides` passes the commands from the state in
 
 In the previous example state machine, given the following input, each of the commands would be passed as a container override:
 
-```
+```json
 {
   "commands": [
     "test command 1",
@@ -71,7 +71,7 @@ In the previous example state machine, given the following input, each of the co
 
 The following includes a `Task` state that runs an Amazon ECS task, and then waits for the task token to be returned. See [Wait for a Callback with Task Token](connect-to-resource.md#connect-wait-token).
 
-```
+```json
 {
    "StartAt":"Manage ECS task",
    "States":{
@@ -117,7 +117,7 @@ You can only stop Amazon Elastic Container Service (Amazon ECS) tasks that were 
 
 *Static resources*
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -155,7 +155,7 @@ You can only stop Amazon Elastic Container Service (Amazon ECS) tasks that were 
 
 *Dynamic resources*
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -188,7 +188,7 @@ You can only stop Amazon Elastic Container Service (Amazon ECS) tasks that were 
 
 *Static resources*
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -209,7 +209,7 @@ You can only stop Amazon Elastic Container Service (Amazon ECS) tasks that were 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

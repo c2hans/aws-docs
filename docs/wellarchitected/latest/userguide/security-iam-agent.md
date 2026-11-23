@@ -31,7 +31,7 @@ Each access role requires:
 
 Use the following trust policy template for your access roles:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -80,7 +80,7 @@ For more information, see [Send control plane logs to CloudWatch Logs](https://d
 **Tools for PowerShell V4**
 **Example 1: Updates an Amazon EKS cluster configuration. Your cluster continues to function during the update.**
 
-```
+```powershell
 Update-EKSClusterConfig -Name "PROD" -Logging_ClusterLogging @{Types="api","audit","authenticator","controllerManager","scheduler",Enabled="True"}
 ```
 **Output:**
@@ -98,7 +98,7 @@ Type      : LoggingUpdate
 **Tools for PowerShell V5**
 **Example 1: Updates an Amazon EKS cluster configuration. Your cluster continues to function during the update.**
 
-```
+```powershell
 Update-EKSClusterConfig -Name "PROD" -Logging_ClusterLogging @{Types="api","audit","authenticator","controllerManager","scheduler",Enabled="True"}
 ```
 **Output:**

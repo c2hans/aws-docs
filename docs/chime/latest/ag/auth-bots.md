@@ -24,7 +24,7 @@ If your chatbot is configured for Amazon Chime using an outbound HTTPS endpoint,
 
 The following code sample demonstrates how to generate a signature using Java.
 
-```
+```java
         private final String DELIMITER = "|";
         private final String HMAC_SHA_256 = "HmacSHA256";
 
@@ -56,7 +56,7 @@ If your chatbot is configured for Amazon Chime using a Lambda function ARN, use 
 
 1. Get the **Chime-Signature** and **Chime-Request-Timestamp** from the Lambda request **ClientContext**, in Base64 encoded JSON format.
 
-   ```
+   ```json
    {
    "Chime-Signature" : "1234567890",
    "Chime-Request-Timestamp" : "2019-04-04T21:30:43.181Z"

@@ -24,7 +24,7 @@ To view your conformance packs in the AWS Management Console, see [Aggregator Da
 
    **For individuals accounts**
 
-   ```
+   ```json
    {
        "ConfigurationAggregators": [
            {
@@ -51,7 +51,7 @@ To view your conformance packs in the AWS Management Console, see [Aggregator Da
 
    **For an organization**
 
-   ```
+   ```json
    {
        "ConfigurationAggregator": {
            "ConfigurationAggregatorArn": "arn:aws:config:{{Region}}:{{AccountID}}:config-aggregator/config-aggregator-floqpus3",

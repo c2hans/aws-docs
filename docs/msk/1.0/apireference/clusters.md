@@ -49,7 +49,7 @@ Returns a list of all the MSK clusters.
 
 Creates a new MSK cluster. The following Python 3.6 examples shows how you can create a cluster that's distributed over two Availability Zones. Before you run this Python script, replace the example subnet and security-group IDs with the IDs of your subnets and security group. When you create an MSK cluster, its brokers get evenly distributed over a number of Availability Zones that's equal to the number of subnets that you specify in the `BrokerNodeGroupInfo` parameter. In this example, you can add a third subnet to get a cluster that's distributed over three Availability Zones.
 
-```
+```PYTHON
 import boto3
 
 client = boto3.client('kafka')
@@ -115,7 +115,7 @@ Enable CORS by returning the correct headers.
 #### POST schema
 <a name="clusters-request-body-post-example"></a>
 
-```
+```json
 {
   "encryptionInfo": {
     "encryptionInTransit": {
@@ -253,7 +253,7 @@ Enable CORS by returning the correct headers.
 #### ListClustersResponse schema
 <a name="clusters-response-body-listclustersresponse-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "clusterInfoList": [
@@ -405,7 +405,7 @@ Enable CORS by returning the correct headers.
 #### CreateClusterResponse schema
 <a name="clusters-response-body-createclusterresponse-example"></a>
 
-```
+```json
 {
   "clusterArn": "string",
   "clusterName": "string",
@@ -416,7 +416,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="clusters-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

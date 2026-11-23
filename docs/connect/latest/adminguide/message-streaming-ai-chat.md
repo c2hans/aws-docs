@@ -22,7 +22,7 @@ Instances created starting December 2025 are automatically opted into this featu
 
 Use the [UpdateInstanceAttribute](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateInstanceAttribute.html) API to enable message streaming. Set the `MESSAGE_STREAMING` attribute to `true`.
 
-```
+```bash
 aws connect update-instance-attribute \
   --instance-id {{your-instance-id}} \
   --attribute-type MESSAGE_STREAMING \
@@ -68,7 +68,7 @@ You must update the resource-based policy for each Amazon Lex bot alias used by 
 ### Example snippet for Lex bot alias resource-based policy
 <a name="message-streaming-rbp-example"></a>
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

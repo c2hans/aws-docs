@@ -14,7 +14,7 @@ You must set the region to **AWS\_GLOBAL** for `IamClient` calls to work because
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.CreateAccessKeyRequest;
 import software.amazon.awssdk.services.iam.model.CreateAccessKeyResponse;
 import software.amazon.awssdk.regions.Region;
@@ -24,7 +24,7 @@ import software.amazon.awssdk.services.iam.model.IamException;
 
  **Code**
 
-```
+```java
     public static String createIAMAccessKey(IamClient iam,String user) {
 
         try {
@@ -55,7 +55,7 @@ If you do not supply a user name to `listAccessKeys`, it will attempt to list ac
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.AccessKeyMetadata;
 import software.amazon.awssdk.services.iam.model.IamException;
 import software.amazon.awssdk.services.iam.model.ListAccessKeysRequest;
@@ -66,7 +66,7 @@ import software.amazon.awssdk.services.iam.IamClient;
 
  **Code**
 
-```
+```java
     public static void listKeys( IamClient iam,String userName ){
 
         try {
@@ -120,7 +120,7 @@ You can then use the returned [`GetAccessKeyLastUsedResponse`](https://sdk.amazo
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
 import software.amazon.awssdk.services.iam.model.GetAccessKeyLastUsedRequest;
@@ -130,7 +130,7 @@ import software.amazon.awssdk.services.iam.model.IamException;
 
  **Code**
 
-```
+```java
     public static void getAccessKeyLastUsed(IamClient iam, String accessId ){
 
         try {
@@ -159,7 +159,7 @@ You can activate or deactivate an access key by creating an [`UpdateAccessKeyReq
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.IamException;
 import software.amazon.awssdk.services.iam.model.StatusType;
 import software.amazon.awssdk.services.iam.model.UpdateAccessKeyRequest;
@@ -169,7 +169,7 @@ import software.amazon.awssdk.services.iam.IamClient;
 
  **Code**
 
-```
+```java
        public static void updateKey(IamClient iam, String username, String accessId, String status ) {
 
           try {
@@ -211,7 +211,7 @@ Once deleted, a key can no longer be retrieved or used. To temporarily deactivat
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
 import software.amazon.awssdk.services.iam.model.DeleteAccessKeyRequest;
@@ -220,7 +220,7 @@ import software.amazon.awssdk.services.iam.model.IamException;
 
  **Code**
 
-```
+```java
     public static void deleteKey(IamClient iam ,String username, String accessKey ) {
 
         try {

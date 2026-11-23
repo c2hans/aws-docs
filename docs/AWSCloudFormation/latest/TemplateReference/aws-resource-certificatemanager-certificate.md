@@ -27,9 +27,11 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[CertificateAuthorityArn](#cfn-certificatemanager-certificate-certificateauthorityarn)" : {{String}},
       "[CertificateExport](#cfn-certificatemanager-certificate-certificateexport)" : {{String}},
       "[CertificateTransparencyLoggingPreference](#cfn-certificatemanager-certificate-certificatetransparencyloggingpreference)" : {{String}},
+      "[CertificateUsage](#cfn-certificatemanager-certificate-certificateusage)" : {{String}},
       "[DomainName](#cfn-certificatemanager-certificate-domainname)" : {{String}},
       "[DomainValidationOptions](#cfn-certificatemanager-certificate-domainvalidationoptions)" : {{[ DomainValidationOption, ... ]}},
       "[KeyAlgorithm](#cfn-certificatemanager-certificate-keyalgorithm)" : {{String}},
+      "[RootHierarchyType](#cfn-certificatemanager-certificate-roothierarchytype)" : {{String}},
       "[SubjectAlternativeNames](#cfn-certificatemanager-certificate-subjectalternativenames)" : {{[ String, ... ]}},
       "[Tags](#cfn-certificatemanager-certificate-tags)" : {{[ Tag, ... ]}},
       "[ValidationMethod](#cfn-certificatemanager-certificate-validationmethod)" : {{String}}
@@ -46,10 +48,12 @@ Properties:
   [CertificateAuthorityArn](#cfn-certificatemanager-certificate-certificateauthorityarn): {{String}}
   [CertificateExport](#cfn-certificatemanager-certificate-certificateexport): {{String}}
   [CertificateTransparencyLoggingPreference](#cfn-certificatemanager-certificate-certificatetransparencyloggingpreference): {{String}}
+  [CertificateUsage](#cfn-certificatemanager-certificate-certificateusage): {{String}}
   [DomainName](#cfn-certificatemanager-certificate-domainname): {{String}}
   [DomainValidationOptions](#cfn-certificatemanager-certificate-domainvalidationoptions): {{
     - DomainValidationOption}}
   [KeyAlgorithm](#cfn-certificatemanager-certificate-keyalgorithm): {{String}}
+  [RootHierarchyType](#cfn-certificatemanager-certificate-roothierarchytype): {{String}}
   [SubjectAlternativeNames](#cfn-certificatemanager-certificate-subjectalternativenames): {{
     - String}}
   [Tags](#cfn-certificatemanager-certificate-tags): {{
@@ -87,6 +91,13 @@ Changing the certificate transparency logging preference will update the existin
 *Allowed values*: `ENABLED | DISABLED`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`CertificateUsage`  <a name="cfn-certificatemanager-certificate-certificateusage"></a>
+The Extended Key Usage profile of the certificate. This value exists only for Amazon N2 certificates. If `CertificateUsage` was omitted from the request, this value is `CLIENT_AND_SERVER_AUTH`.
+*Required*: No
+*Type*: String
+*Allowed values*: `CLIENT_AND_SERVER_AUTH | CLIENT_AUTH_ONLY`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 `DomainName`  <a name="cfn-certificatemanager-certificate-domainname"></a>
 The fully qualified domain name (FQDN), such as www.example.com, with which you want to secure an ACM certificate. Use an asterisk (\*) to create a wildcard certificate that protects several sites in the same domain. For example, `*.example.com` protects `www.example.com`, `site.example.com`, and `images.example.com.`
 *Required*: Yes
@@ -117,6 +128,13 @@ Default: RSA\_2048
 *Required*: No
 *Type*: String
 *Allowed values*: `RSA_1024 | RSA_2048 | RSA_3072 | RSA_4096 | EC_prime256v1 | EC_secp384r1 | EC_secp521r1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`RootHierarchyType`  <a name="cfn-certificatemanager-certificate-roothierarchytype"></a>
+The root hierarchy from which the certificate was issued. This value exists only for Amazon N2 certificates, which have a `Type` of `AMAZON_ISSUED`.
+*Required*: No
+*Type*: String
+*Allowed values*: `N2_AMAZON_MANAGED | N2_SFG2_AMAZON_MANAGED`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SubjectAlternativeNames`  <a name="cfn-certificatemanager-certificate-subjectalternativenames"></a>

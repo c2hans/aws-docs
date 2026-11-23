@@ -42,7 +42,7 @@ If *geom* is null, then null is returned.
 
 The following SQL simplifies the input linestring using a Euclidean distance tolerance of 1 with the Ramer-Douglas-Peucker algorithm. The units of the distance are the same as those of the coordinates of the geometry.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Simplify(ST_GeomFromText('LINESTRING(0 0,1 2,1 1,2 2,2 1)'), 1));
 ```
 

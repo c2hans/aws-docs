@@ -62,7 +62,7 @@ Used by the Amazon Inspector VM Scanner agent running on Azure VMs to send scan 
 
 **Trust policy:**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -79,7 +79,7 @@ Used by the Amazon Inspector VM Scanner agent running on Azure VMs to send scan 
 
 **Permission policy (TelemetryPolicy):**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -101,7 +101,7 @@ Enables OIDC federation to Azure for secure cross-cloud authentication. This rol
 
 **Trust policy:**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -136,7 +136,7 @@ Enables OIDC federation to Azure for secure cross-cloud authentication. This rol
 
 **Permission policy (FederationPolicy):**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -169,7 +169,7 @@ Executes Amazon EC2 Systems Manager Automation to onboard Azure VMs as managed i
 
 **Trust policy:**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -191,7 +191,7 @@ Executes Amazon EC2 Systems Manager Automation to onboard Azure VMs as managed i
 
 **Permission policy (AssumeRolePolicy):**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -260,7 +260,7 @@ Resolves Azure VM targets and dispatches Amazon Inspector VM Scanner agent insta
 
 **Trust policy:**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -282,7 +282,7 @@ Resolves Azure VM targets and dispatches Amazon Inspector VM Scanner agent insta
 
 **Permission policy (DispatchPolicy):**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -46,7 +46,7 @@ For example, you can create a policy that allows a user to have full access to a
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -74,7 +74,7 @@ The following example shows how to create a policy to allow creating and deletin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -112,7 +112,7 @@ The following examples show how to add a tag to Forecast resources by using the 
 
 To add a tag when creating a new Forecast resource with the AWS CLI, use the appropriate `create` command for the resource and include the `tags` parameter and values. For example, the following command from the creates a new dataset group named `myDatasetGroup` for a CUSTOM domain, and adds the following tags: An `Environment` tag key with a `Test` tag value, and a `Owner` tag key and a `xyzCorp` value.
 
-```
+```cmd
 aws forecast create-dataset-group \
 --dataset-group-name myDatasetGroup \
 --dataset-arns arn:aws:forecast:{{region}}:{{acct-id}}:dataset/{{dataset_name}} \
@@ -124,7 +124,7 @@ For information about the commands that you can use to create a Forecast resourc
 
 To add a tag to an existing resource, use the `tag-resource` command and specify the ARN of the resource and provide the tag key and value in the `tags-model` parameter.
 
-```
+```cmd
 aws forecast tag-resource \
 --resource-arn {{resource ARN}} \
 --tags Key={{key}},Value={{value}}

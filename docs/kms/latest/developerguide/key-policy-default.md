@@ -33,7 +33,7 @@ The following default key policy statement is critical.
 
 The following key policy statement is the entire default key policy for KMS keys created programmatically. It's the first policy statement in the default key policy for KMS keys created in the AWS KMS console.
 
-```
+```json
 {
   "Sid": "Enable IAM User Permissions",
   "Effect": "Allow",
@@ -77,7 +77,7 @@ The following is an example key administrators statement in the policy view of t
 **Note**
 The AWS KMS console adds key administrators to the key policy under the statement identifier `"Allow access for Key Administrators"`. Modifying this statement identifier might impact how the console displays updates that you make to the statement.
 
-```
+```json
 {
   "Sid": "Allow access for Key Administrators",
   "Effect": "Allow",
@@ -188,7 +188,7 @@ When you use the AWS KMS console to create a KMS key, the console adds the users
 **Note**
 The AWS KMS console adds key users to the key policy under the statement identifiers `"Allow use of the key"` and `"Allow attachment of persistent resources"`. Modifying these statement identifiers might impact how the console displays updates that you make to the statement.
 
-```
+```json
 {
   "Sid": "Allow use of the key",
   "Effect": "Allow",
@@ -232,7 +232,7 @@ By default, the AWS KMS console adds key users statements like those in the foll
 **Symmetric encryption KMS keys**
 The console adds the following statement to the key policy for symmetric encryption KMS keys.
 
-```
+```json
 {
   "Sid": "Allow use of the key",
   "Effect": "Allow",
@@ -251,7 +251,7 @@ The console adds the following statement to the key policy for symmetric encrypt
 **HMAC KMS keys**
 The console adds the following statement to the key policy for HMAC KMS keys.
 
-```
+```json
 {
   "Sid": "Allow use of the key",
   "Effect": "Allow",
@@ -268,7 +268,7 @@ The console adds the following statement to the key policy for HMAC KMS keys.
 **Asymmetric KMS keys for public key encryption**
 The console adds the following statement to the key policy for asymmetric KMS keys with a key usage of **Encrypt and decrypt**.
 
-```
+```json
 {
   "Sid": "Allow use of the key",
   "Effect": "Allow",
@@ -289,7 +289,7 @@ The console adds the following statement to the key policy for asymmetric KMS ke
 **Asymmetric KMS keys for signing and verification**
 The console adds the following statement to the key policy for asymmetric KMS keys with a key usage of **Sign and verify**.
 
-```
+```json
 {
   "Sid": "Allow use of the key",
   "Effect": "Allow",
@@ -307,7 +307,7 @@ The console adds the following statement to the key policy for asymmetric KMS ke
 **Asymmetric KMS keys for deriving shared secrets**
 The console adds the following statement to the key policy for asymmetric KMS keys with a key usage of **Key agreement**.
 
-```
+```json
 {
   "Sid": "Allow use of the key",
   "Effect": "Allow",
@@ -324,7 +324,7 @@ The console adds the following statement to the key policy for asymmetric KMS ke
 **Asymmetric KMS keys for encapsulation and decapsulation**
 The console adds the following statement to the key policy for asymmetric KMS keys with a key usage of **Encapsulate and decapsulate**.
 
-```
+```json
 {
   "Sid": "Allow use of the key",
   "Effect": "Allow",
@@ -389,7 +389,7 @@ This key policy statement allows the key user to create, view, and revoke grants
 
 Key users require these grant permissions to use their KMS key with integrated services, but these permissions are not sufficient. Key users also need permission to use the integrated services. For details about giving users access to an AWS service that integrates with AWS KMS, consult the documentation for the integrated service.
 
-```
+```json
 {
   "Sid": "Allow attachment of persistent resources",
   "Effect": "Allow",

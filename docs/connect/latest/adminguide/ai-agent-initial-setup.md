@@ -141,7 +141,7 @@ The following example shows a typical policy.
 
 ****
 
-```
+```json
 {
     "Id": "{{key-consolepolicy-3}}",
     "Version":"2012-10-17",
@@ -194,7 +194,7 @@ To use agent assist with chats, tasks, and emails, modify the key policy to allo
 
 ****
 
-      ```
+      ```json
       {
           "Id": "key-consolepolicy-3",
           "Version":"2012-10-17",

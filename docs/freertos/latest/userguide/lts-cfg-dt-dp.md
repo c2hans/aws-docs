@@ -13,7 +13,7 @@ All devices in the same pool must be of the same technical specification and SKU
 
 The following is an example `device.json` file was used to create a device pool with multiple devices.
 
-```
+```json
 [
     {
         "id": "pool-id",
@@ -128,7 +128,7 @@ dcb2 4e8d 75b3 2586 e2cc 0c
 If your public key is in .der format, you can hex encode the public key directly to generate the hex file.
 To generate the hex file from a .der public key, enter the following **xxd** command:
 
-```
+```bash
 xxd -p pubkey.der > outFile
 ```
 If your public key is in .pem format, you can extract the base64 encoded headers and footers and decode it into binary format. Then, you hex encode the binary string to generate the hex file.
@@ -136,13 +136,13 @@ To generate a hex file for a .pem public key, do the following:
 
 1. Run the following **base64** command to remove the base64 header and footer from the public key. The decoded key, named `base64key`, is then output to the file `pubkey.der`:
 
-   ```
+   ```bash
    base64 —decode base64key > pubkey.der
    ```
 
 1. Run the following **xxd** command to convert `pubkey.der` to hex format. The resulting key is saved as `{{outFile}}`
 
-   ```
+   ```bash
    xxd -p pubkey.der > {{outFile}}
    ```
 

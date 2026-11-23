@@ -82,13 +82,13 @@ Follow these steps to use the AWS CLI to connect your project to Bitbucket using
 
 1. Run the **import-source-credentials** command:
 
-   ```
+   ```shell
    aws codebuild import-source-credentials --generate-cli-skeleton
    ```
 
    JSON-formatted data appears in the output. Copy the data to a file (for example, `{{import-source-credentials.json}}`) in a location on the local computer or instance where the AWS CLI is installed. Modify the copied data as follows, and save your results.
 
-   ```
+   ```JSON
    {
        "serverType": "BITBUCKET",
        "authType": "{{auth-type}}",
@@ -107,13 +107,13 @@ Follow these steps to use the AWS CLI to connect your project to Bitbucket using
 
 1. To connect your account with an app password, API token, or access token, switch to the directory that contains the `import-source-credentials.json` file you saved in step 1 and run the **import-source-credentials** command again.
 
-   ```
+   ```shell
    aws codebuild import-source-credentials --cli-input-json file://import-source-credentials.json
    ```
 
    JSON-formatted data appears in the output with an Amazon Resource Name (ARN).
 
-   ```
+   ```JSON
    {
        "arn": "arn:aws:codebuild:{{region}}:{{account-id}}:token/{{server-type}}"
        }
@@ -125,13 +125,13 @@ If you run the **import-source-credentials** command with the same server type a
 
 1. To view the connected app passwords or access tokens, run the **list-source-credentials** command.
 
-   ```
+   ```shell
    aws codebuild list-source-credentials
    ```
 
    A JSON-formatted `sourceCredentialsInfos` object appears in the output:
 
-   ```
+   ```JSON
    {
            "sourceCredentialsInfos": [
                {
@@ -150,13 +150,13 @@ If you run the **import-source-credentials** command with the same server type a
 
 1. To disconnect from a source provider and remove its app password or access tokens, run the **delete-source-credentials** command with its ARN.
 
-   ```
+   ```shell
    aws codebuild delete-source-credentials --arn {{arn-of-your-credentials}}
    ```
 
    JSON-formatted data is returned with an ARN of the deleted credentials.
 
-   ```
+   ```JSON
    {
        "arn": "arn:aws:codebuild:{{region}}:{{account-id}}:token/{{server-type}}"
        }

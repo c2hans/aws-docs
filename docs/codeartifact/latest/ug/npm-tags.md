@@ -66,6 +66,6 @@ When version 1.0.2 is published to R, npm updates the *latest* tag to 1.0.2.
 
 However, the npm client never sees this tag value because the value of *latest* in U is 1.0.1. Running `npm install` against repository R immediately after publishing 1.0.2 installs 1.0.1 instead of the version that was just published. To install the most recently published version, you must specify the exact package version, as follows.
 
-```
+```bash
 npm install web-helper@1.0.2
 ```

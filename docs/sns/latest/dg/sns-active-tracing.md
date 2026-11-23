@@ -52,7 +52,7 @@ Once you've enabled X-Ray for your Amazon SNS topic, you can use the [X-Ray serv
 
 The following code example shows how to enable active tracing on an Amazon SNS topic by using the AWS SDK for Java.
 
-```
+```java
 public static void enableActiveTracing(SnsClient snsClient, String topicArn) {
 
         try {

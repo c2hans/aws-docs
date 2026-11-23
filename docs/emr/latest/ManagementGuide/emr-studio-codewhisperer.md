@@ -29,7 +29,7 @@ To use CodeWhisperer, you must attach the following policy to your IAM user role
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

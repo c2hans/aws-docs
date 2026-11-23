@@ -59,6 +59,13 @@ Content-type: application/json
    "connectivityType": "string",
    "createdAt": number,
    "direction": "string",
+   "errorDetails": [
+      {
+         "code": "string",
+         "message": "string",
+         "resourceIds": [ "string" ]
+      }
+   ],
    "flowModules": [
       {
          "dependsOn": [ "string" ],
@@ -116,6 +123,11 @@ The direction of the link.
 Type: String
 Valid Values: `RESPONSE | REQUEST`
 
+ ** [errorDetails](#API_RejectLink_ResponseSyntax) **   <a name="rtbfabric-RejectLink-response-errorDetails"></a>
+The causes of the link's failure, such as a deleted subnet. Present only when the link is CREATE\_FAILED or DELETE\_FAILED.
+Type: Array of [ErrorDetail](API_ErrorDetail.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+
  ** [flowModules](#API_RejectLink_ResponseSyntax) **   <a name="rtbfabric-RejectLink-response-flowModules"></a>
 The configuration of flow modules.
 Type: Array of [ModuleConfiguration](API_ModuleConfiguration.md) objects
@@ -149,7 +161,7 @@ Type: Array of [ModuleConfiguration](API_ModuleConfiguration.md) objects
  ** [status](#API_RejectLink_ResponseSyntax) **   <a name="rtbfabric-RejectLink-response-status"></a>
 The status of the link.
 Type: String
-Valid Values: `PENDING_CREATION | PENDING_REQUEST | REQUESTED | ACCEPTED | ACTIVE | REJECTED | FAILED | PENDING_DELETION | DELETED | PENDING_UPDATE | PENDING_ISOLATION | ISOLATED | PENDING_RESTORATION`
+Valid Values: `PENDING_CREATION | PENDING_REQUEST | REQUESTED | ACCEPTED | ACTIVE | REJECTED | FAILED | PENDING_DELETION | DELETED | PENDING_UPDATE | PENDING_ISOLATION | ISOLATED | PENDING_RESTORATION | CREATE_FAILED | DELETE_FAILED`
 
  ** [updatedAt](#API_RejectLink_ResponseSyntax) **   <a name="rtbfabric-RejectLink-response-updatedAt"></a>
 The timestamp of when the link was updated.
@@ -181,7 +193,7 @@ The request was denied due to request throttling.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request could not be completed because it fails satisfy the constraints specified by the service.
+The request could not be completed because it fails to satisfy the constraints specified by the service.
 HTTP Status Code: 400
 
 ## See Also

@@ -34,7 +34,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 /**
 Before running this code example, set up your development environment, including your credentials.
 
@@ -510,7 +510,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun createDatabaseInstance(
     dbInstanceIdentifierVal: String?,
     dbNamedbVal: String?,
@@ -578,7 +578,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun deleteDatabaseInstance(dbInstanceIdentifierVal: String?) {
     val deleteDbInstanceRequest =
         DeleteDbInstanceRequest {
@@ -603,7 +603,7 @@ The following code example shows how to use `DescribeAccountAttributes`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun getAccountAttributes() {
     RdsClient.fromEnvironment { region = "us-west-2" }.use { rdsClient ->
         val response = rdsClient.describeAccountAttributes(DescribeAccountAttributesRequest {})
@@ -625,7 +625,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun describeInstances() {
     RdsClient.fromEnvironment { region = "us-west-2" }.use { rdsClient ->
         val response = rdsClient.describeDbInstances(DescribeDbInstancesRequest {})
@@ -647,7 +647,7 @@ The following code example shows how to use `ModifyDBInstance`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun updateIntance(
     dbInstanceIdentifierVal: String?,
     masterUserPasswordVal: String?,

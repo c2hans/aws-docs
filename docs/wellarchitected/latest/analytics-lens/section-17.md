@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/se
 
 ![Reference architecture diagram for operational analytics](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/images/operational-analytics-reference-architecture.png)
 
+*Figure 5: Operational analytics reference architecture*
+
  The reference architecture covers the data flow in an operational analytics use case. The Ingestion pipeline contains up to five stages as follows:
 
 1.  With your operational and business goal in mind, you should instrument your system/plate-form to ***produce*** the relevant type of signals such as *various* logs, traces, and metrics, and expose the data to a set of collectors. At this stage, you choose open-source instrumentation tools such as [Jaeger](https://www.jaegertracing.io/) or [Zipkin](https://zipkin.io/). And if you plan to generate different type of signals, we recommend that you include signal correlation beginning with the design step. Open-source tools such as [OpenTelemetry](https://opentelemetry.io/docs/) facilitate the context propagation by adding a Trace ID to all logs related to a specific request. This reduces the mean time to problem resolution by enhancing the observability of the system from multiple viewpoints.

@@ -8,7 +8,7 @@ You can use interceptors to hook into the execution of API requests and response
 
 The following example shows a simple interceptor that adds an additional header to all outgoing requests before the retry loop is entered.
 
-```
+```kotlin
 class AddHeader(
     private val key: String,
     private val value: String
@@ -33,7 +33,7 @@ You register interceptors when you construct a service client or when you overri
 
 The following code adds an `AddHeader` instance to the interceptors property of the builder. This addition adds the `x-foo-version` header to all operations before the retry loop is entered.
 
-```
+```kotlin
 val s3 = S3Client.fromEnvironment {
     interceptors += AddHeader("x-foo-version", "1.0")
 }
@@ -50,7 +50,7 @@ By using the `withConfig` extension, you can [override service client configurat
 
 The following example overrides the configuration of the `s3` instance for operations within the `use` extension. Operations called on `s3Scoped` contain both the `x-foo-version` and the `x-bar-version` headers.
 
-```
+```kotlin
 // 's3' instance created in the previous code snippet.
 s3.withConfig {
     interceptors += AddHeader("x-bar-version", "3.7")

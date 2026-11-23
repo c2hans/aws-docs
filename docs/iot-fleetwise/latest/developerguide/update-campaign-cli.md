@@ -18,7 +18,7 @@ You can use the [UpdateCampaign](https://docs.aws.amazon.com/iot-fleetwise/lates
   The description can have up to 2,048 characters.
 + Replace {{data-extra-dimensions}} with specified vehicle attributes to enrich data collected during the campaign. For example, you can add vehicle make and model to the campaign, and AWS IoT FleetWise will associate the data with those attributes as dimensions in Amazon Timestream. You can then query the data against vehicle make and model.
 
-```
+```bash
 aws iotfleetwise update-campaign \
             --name {{campaign-name}} \
             --action {{action}} \
@@ -33,7 +33,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -34,7 +34,7 @@ Don’t use the AWS standard account paired to AWS GovCloud (US) accounts to hos
 
 1. After successfully setting up Landing Zone Accelerator on AWS in your AWS standard account, update the `organization-config.yaml` file in the `aws-accelerator-config` CodeCommit repository to make the new OU visible to Landing Zone Accelerator on AWS. [Run](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-rerun-manually.html) the Landing Zone Accelerator on AWS pipeline with this change.
 
-```
+```yaml
 enable: true
 organizationalUnits:
   - name: Security
@@ -47,7 +47,7 @@ backupPolicies: []
 
 1. After the Landing Zone Accelerator on AWS pipeline completes, create new AWS GovCloud (US) accounts using the ` [enableGovCloud](https://awslabs.github.io/landing-zone-accelerator-on-aws/latest/typedocs/latest/classes/_aws_accelerator_config.GovCloudAccountConfig.html#enableGovCloud) ` field in the ` [workloadAccounts](https://awslabs.github.io/landing-zone-accelerator-on-aws/latest/typedocs/latest/classes/_aws_accelerator_config.AccountsConfig.html#workloadAccounts) ` definition. These are AWS GovCloud accounts paired to your AWS standard account. You must specify these under `workloadAccounts:`. The following is a sample account configuration.
 
-```
+```yaml
 # commercial accounts-config.yaml
 mandatoryAccounts:
   - name: Management
@@ -114,7 +114,7 @@ The role is defined as `managementAccountAccessRole` in the global-config.yaml c
 
 1. Using the AWS standard account, update the `accounts-config.yaml` file to have two new accounts with the `enableGovCloud` option, as shown in the following sample.
 
-   ```
+   ```yaml
    # commercial accounts-config.yaml
    mandatoryAccounts:
      - name: Management
@@ -171,7 +171,7 @@ The role is defined as `managementAccountAccessRole` in the global-config.yaml c
 
 1. Add the **SharedServices** and **Network** accounts as shown in the following sample.
 
-   ```
+   ```yaml
    # govCloud accounts-config.yaml
    mandatoryAccounts:
      - name: Management

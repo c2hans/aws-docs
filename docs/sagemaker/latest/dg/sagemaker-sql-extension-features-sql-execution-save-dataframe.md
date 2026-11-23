@@ -11,21 +11,21 @@ Alternatively, you can add the parameter `--output '{"format": "DATAFRAME", "dat
 For example, the following query extracts details of customers with the highest balance from the `Customer` table in Snowflake's `TPCH_SF1` database, using both pandas and SQL:
 + In this example, we extract all the data from the customer table and save then in a DataFrame named `all_customer_data`.
 
-  ```
+  ```SQL
   %%sm_sql --output '{"format": "DATAFRAME", "dataframe_name": "all_customer_data"}' --metastore-id {{snowflake-connection-name}} --metastore-type GLUE_CONNECTION
   SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.CUSTOMER
   ```
 
-  ```
+  ```bash
   Saved results to all_customer_data
   ```
 + Next, we extract the details of the highest account balance from the DataFrame.
 
-  ```
+  ```python
   all_customer_data.loc[all_customer_data['C_ACCTBAL'].idxmax()].values
   ```
 
-  ```
+  ```bash
   array([61453, 'Customer#000061453', 'RxNgWcyl5RZD4qOYnyT3', 15,
   '25-819-925-1077', Decimal('9999.99'), 'BUILDING','es. carefully regular requests among the blithely pending requests boost slyly alo'],
   dtype=object)

@@ -19,6 +19,12 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[\x21\x23-\x5B\x5D-\x7E]+`
 Required: No
 
+ ** ManagedBy **   <a name="CognitoUserPools-Type-ResourceServerType-ManagedBy"></a>
+This value is reserved for resource servers that Amazon Cognito manages. Resource servers that you create don't have this value.
+Type: String
+Valid Values: `COGNITO`
+Required: No
+
  ** Name **   <a name="CognitoUserPools-Type-ResourceServerType-Name"></a>
 The name of the resource server.
 Type: String

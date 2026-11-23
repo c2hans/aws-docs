@@ -19,7 +19,7 @@ aws resiliencehubv2 start-dependency-insights \
 
 The response returns the current generation `status`:
 
-```
+```json
 {
   "status": "IN_PROGRESS"
 }

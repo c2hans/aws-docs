@@ -87,7 +87,7 @@ http://sns.us-west-2.amazonaws.com/?&Action=TagResource
 #### Sample Response
 <a name="API_TagResource_Example_1_Response"></a>
 
-```
+```xml
 <TagResourceResponse>
     <TagResourceResult/>
     <ResponseMetadata>

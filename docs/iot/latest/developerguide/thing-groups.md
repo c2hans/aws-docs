@@ -52,7 +52,7 @@ $ aws iot create-thing-group --thing-group-name LightBulbs
 
 The **CreateThingGroup** command returns a response that contains the static thing group's name, ID, and ARN:
 
-```
+```JSON
 {
     "thingGroupName": "LightBulbs",
     "thingGroupId": "abcdefgh12345678ijklmnop12345678qrstuvwx",
@@ -71,7 +71,7 @@ $ aws iot create-thing-group --thing-group-name RedLights --parent-group-name Li
 
 As before, the **CreateThingGroup** command returns a response that contains the static thing group's name,, ID, and ARN:
 
-```
+```JSON
 {
     "thingGroupName": "RedLights",
     "thingGroupId": "abcdefgh12345678ijklmnop12345678qrstuvwx",
@@ -97,7 +97,7 @@ $ aws iot describe-thing-group --thing-group-name RedLights
 
 The **DescribeThingGroup** command returns information about the specified group:
 
-```
+```JSON
 {
     "thingGroupName": "RedLights",
     "thingGroupArn": "arn:aws:iot:us-west-2:123456789012:thinggroup/RedLights",
@@ -165,7 +165,7 @@ $ aws iot list-things-in-thing-group --thing-group-name LightBulbs
 
 The **ListThingsInThingGroup** command returns a list of the things in the given group:
 
-```
+```JSON
 {
     "things":[
         "TestThingA"
@@ -179,7 +179,7 @@ With the `--recursive` parameter, you can list things belonging to a group and t
 $ aws iot list-things-in-thing-group --thing-group-name LightBulbs --recursive
 ```
 
-```
+```JSON
 {
     "things":[
         "TestThingA",
@@ -202,7 +202,7 @@ $ aws iot list-thing-groups
 
 The **ListThingGroups** command returns a list of the thing groups in your AWS account:
 
-```
+```JSON
 {
     "thingGroups": [
         {
@@ -237,7 +237,7 @@ $ aws iot list-thing-groups --parent-group LightBulbs
 
 In this case, the **ListThingGroups** command returns a list of the direct child groups of the thing group defined in your AWS account:
 
-```
+```JSON
 {
     "childGroups":[
         {
@@ -256,7 +256,7 @@ $ aws iot list-thing-groups --parent-group LightBulbs --recursive
 
 The **ListThingGroups** command returns a list of all child groups of the thing group:
 
-```
+```JSON
 {
     "childGroups":[
         {
@@ -289,7 +289,7 @@ $ aws iot list-thing-groups-for-thing --thing-name MyLightBulb
 
 The **ListThingGroupsForThing** command returns a list of the direct thing groups that this thing belongs to:
 
-```
+```JSON
 {
     "thingGroups":[
         {
@@ -321,7 +321,7 @@ $ aws iot update-thing-group --thing-group-name "LightBulbs" --thing-group-prope
 
 The **UpdateThingGroup** command returns a response that contains the group's version number after the update:
 
-```
+```JSON
 {
     "version": 4
 }
@@ -401,7 +401,7 @@ Add the optional `--recursive` parameter to include all policies attached to the
 
 The **ListAttachedPolicies** command returns a list of policies:
 
-```
+```JSON
 {
     "policies": [
         "MyLightBulbPolicy"
@@ -423,7 +423,7 @@ Add the optional `--page-size {{number}}` parameter to specify the maximum numbe
 
 The **ListTargetsForPolicy** command returns a list of targets and the token to use to retrieve more results:
 
-```
+```JSON
 {
     "nextMarker": "string",
     "targets": [ "string" ... ]
@@ -447,7 +447,7 @@ The `--thing-name` parameter is optional and can be used instead of the `--princ
 
 The **GetEffectivePolicies** command returns a list of policies:
 
-```
+```JSON
 {
     "effectivePolicies": [
         {
@@ -481,7 +481,7 @@ You can use the optional `--client-id` parameter to further refine your results.
 
 The **TestAuthorization** command returns details on actions that were allowed or denied for each set of `--auth-infos` queries you specified:
 
-```
+```JSON
 {
     "authResults": [
         {

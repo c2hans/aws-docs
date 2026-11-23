@@ -33,7 +33,7 @@ Bearer token authentication has the following requirements and limitations:
    + **Recommended** – The `AWSXRayAPIKeyAccess` AWS managed policy. For more information, see [IAM managed policies for X-Ray](security_iam_id-based-policy-examples.md#xray-permissions-managedpolicies).
    + A customer managed policy with the same two permissions. `xray:CallWithBearerToken` allows the user to authenticate with an API key, and `xray:PutTraceSegments` is the action that authorizes sending spans to the OTLP traces endpoint.
 
-     ```
+     ```json
      {
          "Version": "2012-10-17",
          "Statement": [
@@ -57,7 +57,7 @@ To create the API key, use the IAM console or the [CreateServiceSpecificCredenti
 
 The following AWS CLI command creates an API key that expires after 30 days. Replace {{xray-traces-api-key-user}} with the name of your IAM user. You can set a credential age from 1 to 36,600 days. If you don't set one, the key doesn't expire.
 
-```
+```bash
 aws iam create-service-specific-credential \
     --user-name {{xray-traces-api-key-user}} \
     --service-name xray.amazonaws.com \
@@ -71,7 +71,7 @@ The `ServiceCredentialSecret` value in the response is your API key (bearer toke
 
 Send the API key in the `Authorization` header with the `Bearer` scheme. The endpoint accepts `application/x-protobuf` and `application/json` payloads. The following example sends an OTLP JSON payload to US East (N. Virginia).
 
-```
+```bash
 curl -X POST "https://xray.us-east-1.amazonaws.com/v1/traces" \
      -H "Content-Type: application/json" \
      -H "Authorization: Bearer ${{XRAY_API_KEY}}" \
@@ -80,7 +80,7 @@ curl -X POST "https://xray.us-east-1.amazonaws.com/v1/traces" \
 
 With the OpenTelemetry Collector, use the [bearertokenauth](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/extension/bearertokenauthextension) extension instead of `sigv4auth`, and read the key from a file or an environment variable.
 
-```
+```yaml
 extensions:
   bearertokenauth:
     filename: "/etc/otel/xray-api-key"
@@ -126,7 +126,7 @@ The `xray:CallWithBearerToken` action controls whether an IAM user's API keys ca
 
 The following policy allows creating X-Ray API keys only for a specific IAM user, and only if the keys expire within 90 days.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -149,7 +149,7 @@ The following policy allows creating X-Ray API keys only for a specific IAM user
 
 The following policy prevents an identity from using X-Ray API keys.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -171,7 +171,7 @@ To allow API keys to be used only from specific networks, add an `aws:SourceIp` 
 
 1. Create a second key for the same IAM user.
 
-   ```
+   ```bash
    aws iam create-service-specific-credential \
        --user-name {{xray-traces-api-key-user}} \
        --service-name xray.amazonaws.com \
@@ -182,7 +182,7 @@ To allow API keys to be used only from specific networks, add an `aws:SourceIp` 
 
 1. Set the old key to inactive and confirm that traces still arrive.
 
-   ```
+   ```bash
    aws iam update-service-specific-credential \
        --user-name {{xray-traces-api-key-user}} \
        --service-specific-credential-id {{ACCA1234EXAMPLE1234}} \
@@ -191,7 +191,7 @@ To allow API keys to be used only from specific networks, add an `aws:SourceIp` 
 
 1. Delete the old key.
 
-   ```
+   ```bash
    aws iam delete-service-specific-credential \
        --user-name {{xray-traces-api-key-user}} \
        --service-specific-credential-id {{ACCA1234EXAMPLE1234}}
@@ -208,7 +208,7 @@ CloudTrail records requests to the OTLP traces endpoint as `PutTraceSegments` da
 
 The following example shows the relevant fields of an event for a request made with an API key.
 
-```
+```json
 {
     "eventSource": "xray.amazonaws.com",
     "eventName": "PutTraceSegments",

@@ -19,28 +19,28 @@ When invoked, these commands execute the entire cell within the same Spark sessi
 
 The `%%pyspark` cell magic allows users to write PySpark code in all Spark kernels.
 
-```
+```bash,sh,zsh
 %%pyspark
 a = 1
 ```
 
 The `%%sql` cell magic allows users to execute Spark-SQL code in all Spark kernels.
 
-```
+```bash,sh,zsh
 %%sql
 SHOW TABLES
 ```
 
 The `%%rspark` cell magic allows users to execute SparkR code in all Spark kernels.
 
-```
+```bash,sh,zsh
 %%rspark
 a <- 1
 ```
 
 The `%%scalaspark` cell magic allows users to execute Spark Scala code in all Spark kernels.
 
-```
+```bash,sh,zsh
 %%scalaspark
 val a = 1
 ```
@@ -50,14 +50,14 @@ val a = 1
 
 You can also share data between language interpreters using temporary tables. The following example uses `%%pyspark` in one cell to create a temporary table in Python and uses `%%scalaspark` in the following cell to read data from that table in Scala.
 
-```
+```python
 %%pyspark
 df=spark.sql("SELECT * from nyc_top_trips_report LIMIT 20")
 # create a temporary table called nyc_top_trips_report_view in python
 df.createOrReplaceTempView("nyc_top_trips_report_view")
 ```
 
-```
+```scala
 %%scalaspark
 // read the temp table in scala
 val df=spark.sql("SELECT * from nyc_top_trips_report_view")

@@ -63,7 +63,7 @@ The input configuration file contains the following settings. To streamline your
 **Examples**
 The following example shows an input configuration file that runs the `build` and `test` phases for two component documents: `sampledoc.yaml`, and `conversation-intro.yaml`. Each component document has a parameter that applies only to itself, and both use one shared parameter. The `project` parameter applies to both component documents.
 
-```
+```json
 {
    "documents": [
      {

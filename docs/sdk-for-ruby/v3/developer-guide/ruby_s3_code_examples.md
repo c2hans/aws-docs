@@ -32,7 +32,7 @@ The following code example shows how to get started using Amazon S3.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 # frozen_string_literal: true
 
 # S3Manager is a class responsible for managing S3 operations
@@ -85,7 +85,7 @@ The following code example shows how to:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps the getting started scenario actions.
@@ -255,7 +255,7 @@ The following code example shows how to use `CopyObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 Copy an object.
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 object actions.
@@ -301,7 +301,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 ```
 Copy an object and add server-side encryption to the destination object.
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 object actions.
@@ -357,7 +357,7 @@ The following code example shows how to use `CreateBucket`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 bucket actions.
@@ -418,7 +418,7 @@ The following code example shows how to use `DeleteBucket`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
   # Deletes the objects in an Amazon S3 bucket and deletes the bucket.
   #
   # @param bucket [Aws::S3::Bucket] The bucket to empty and delete.
@@ -446,7 +446,7 @@ The following code example shows how to use `DeleteBucketCors`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 bucket CORS configuration.
@@ -481,7 +481,7 @@ The following code example shows how to use `DeleteBucketPolicy`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 # Wraps an Amazon S3 bucket policy.
 class BucketPolicyWrapper
   attr_reader :bucket_policy
@@ -511,7 +511,7 @@ The following code example shows how to use `DeleteObjects`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
   # Deletes the objects in an Amazon S3 bucket and deletes the bucket.
   #
   # @param bucket [Aws::S3::Bucket] The bucket to empty and delete.
@@ -539,7 +539,7 @@ The following code example shows how to use `GetBucketCors`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 bucket CORS configuration.
@@ -573,7 +573,7 @@ The following code example shows how to use `GetBucketPolicy`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 # Wraps an Amazon S3 bucket policy.
 class BucketPolicyWrapper
   attr_reader :bucket_policy
@@ -607,7 +607,7 @@ The following code example shows how to use `GetObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 Get an object.
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 object actions.
@@ -647,7 +647,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 ```
 Get an object and report its server-side encryption state.
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 object actions.
@@ -694,7 +694,7 @@ The following code example shows how to use `HeadObject`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 object actions.
@@ -740,7 +740,7 @@ The following code example shows how to use `ListBuckets`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 resource actions.
@@ -787,7 +787,7 @@ The following code example shows how to use `ListObjectsV2`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 bucket actions.
@@ -839,7 +839,7 @@ The following code example shows how to use `PutBucketCors`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 bucket CORS configuration.
@@ -887,7 +887,7 @@ The following code example shows how to use `PutBucketPolicy`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 # Wraps an Amazon S3 bucket policy.
 class BucketPolicyWrapper
   attr_reader :bucket_policy
@@ -919,7 +919,7 @@ The following code example shows how to use `PutBucketWebsite`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 bucket website actions.
@@ -975,7 +975,7 @@ The following code example shows how to use `PutObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 Upload a file using a managed uploader (Object.upload\_file).
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 object actions.
@@ -1016,7 +1016,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 ```
 Upload a file using Object.put.
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 object actions.
@@ -1056,7 +1056,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 ```
 Upload a file using Object.put and add server-side encryption.
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 object actions.
@@ -1105,7 +1105,7 @@ The following code example shows how to create a presigned URL for Amazon S3 and
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 require 'aws-sdk-s3'
 require 'net/http'
 
@@ -1159,7 +1159,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using Ruby.
 
-```
+```ruby
 require 'json'
 require 'uri'
 require 'aws-sdk'

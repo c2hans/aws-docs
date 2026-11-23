@@ -25,13 +25,13 @@ The `createWorkspace` command creates a new Amazon EMR WAL workspace.
 
 **Usage:**
 
-```
+```bash,sh,zsh
 emrwal createWorkspace [-tags <tags>] [-e {{{endpoint}}}] [-r {{{Region}}}] -w {{{workspacename}}} [-h]
 ```
 
 **Example:**
 
-```
+```bash,sh,zsh
 emrwal createWorkspace -w {{examplews}}
 ```
 
@@ -42,13 +42,13 @@ The `deleteWals` command deletes the Amazon EMR WAL that you specify.
 
 **Usage:**
 
-```
+```bash,sh,zsh
 emrwal deleteWal [-e {{{endpoint}}}] [-r {{{Region}}}] [-w {{{workspacename}}}] [-p <tablePrefix>] [-n <walName>] [-N <fullName>] [-R] [-m] [-h]
 ```
 
 **Example:**
 
-```
+```bash,sh,zsh
 emrwal deleteWal -w {{examplews}} -p hbasetable -n {{examplewal}}
 ```
 
@@ -59,13 +59,13 @@ The `deleteWorkspace` command deletes the Amazon EMR WAL workspace that you spec
 
 **Usage:**
 
-```
+```bash,sh,zsh
 emrwal deleteWorkspace [-e {{{endpoint}}}] [-r {{{Region}}}] -w {{{workspacename}}} [-h]
 ```
 
 **Example:**
 
-```
+```bash,sh,zsh
 emrwal deleteWorkspace -w {{examplews}}
 ```
 
@@ -76,13 +76,13 @@ The `listTagsForResource` command lists all of the key-value pair tags for the A
 
 **Usage:**
 
-```
+```bash,sh,zsh
 emrwal listTagsForResource -arn {{{resource-arn}}} [-e {{{endpoint}}}] [-r {{{Region}}}] [-h]
 ```
 
 **Example:**
 
-```
+```bash,sh,zsh
 emrwal listTagsForResource -arn arn:aws:emrwal::{{1234567891234}}:workspace/{{examplews}}
 ```
 
@@ -93,13 +93,13 @@ The `listWals` command lists all of the Amazon EMR WALs in the workspace that yo
 
 **Usage:**
 
-```
+```bash,sh,zsh
 emrwal listWals [-nextToken {{{token-string}}}] [-pageSize {{{integer}}}] [-e {{{endpoint}}}] [-r {{{Region}}}] [-w {{{workspacename}}}] [-p <tablePrefix>] [-M {{{integer}}}] [-h]
 ```
 
 **Example:**
 
-```
+```bash,sh,zsh
 emrwal listWals -w {{examplews}}
 ```
 
@@ -110,13 +110,13 @@ The `listWorkspaces` command lists all of the Amazon EMR WAL workspaces that are
 
 **Usage:**
 
-```
+```bash,sh,zsh
 emrwal listWorkspaces [-nextToken {{{token-string}}}] [-pageSize {{{integer}}}] [-e {{{endpoint}}}] [-r {{{Region}}}] [-M {{{integer}}}] [-h]
 ```
 
 **Example:**
 
-```
+```bash,sh,zsh
 emrwal listWorkspaces
 ```
 
@@ -127,13 +127,13 @@ The `tagResource` command assigns one or more key-value pair tags to the Amazon 
 
 **Usage:**
 
-```
+```bash,sh,zsh
 emrwal tagResource -arn {{{resource-arn}}} -tags <tags> [-e {{{endpoint}}}] [-r {{{Region}}}] [-h]
 ```
 
 **Example:**
 
-```
+```bash,sh,zsh
 emrwal tagResource -arn arn:aws:emrwal::{{1234567891234}}:workspace/{{examplews}} -tags {{tag_key}}={{tag_value}}
 ```
 
@@ -144,12 +144,12 @@ The `untagResource` command unassigns one or more key-value pair tags to the Ama
 
 **Usage:**
 
-```
+```bash,sh,zsh
 emrwal untagResource -arn {{{resource-arn}}} -tagKeys <tagKeys> [-e {{{endpoint}}}] [-r {{{Region}}}] [-h]
 ```
 
 **Example:**
 
-```
+```bash,sh,zsh
 emrwal untagResource -arn arn:aws:emrwal::{{1234567891234}}:workspace/{{examplews}} -tagKeys {{tag_key}}
 ```

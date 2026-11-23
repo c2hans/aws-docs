@@ -35,7 +35,7 @@ For more information, see [Delete an AWS CodeCommit repository](https://docs.aws
 **Tools for PowerShell V4**
 **Example 1: This example forcibly deletes the specified repository. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the repository without a prompt.**
 
-```
+```powershell
 Remove-CCRepository -RepositoryName MyDemoRepo
 ```
 **Output:**
@@ -48,7 +48,7 @@ Remove-CCRepository -RepositoryName MyDemoRepo
 **Tools for PowerShell V5**
 **Example 1: This example forcibly deletes the specified repository. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the repository without a prompt.**
 
-```
+```powershell
 Remove-CCRepository -RepositoryName MyDemoRepo
 ```
 **Output:**

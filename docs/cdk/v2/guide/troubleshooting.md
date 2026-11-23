@@ -79,7 +79,7 @@ You are deploying a stack that requires bootstrap resources, but are using an IA
 
 This message usually means that you aren’t in the main directory of your AWS CDK project when you issue `cdk synth`. The file `cdk.json` in this directory, created by the `cdk init` command, contains the command line needed to run (and thereby synthesize) your AWS CDK app. For a TypeScript app, for example, the default `cdk.json` looks something like this:
 
-```
+```json
 {
   "app": "npx ts-node bin/my-cdk-app.ts"
 }
@@ -116,7 +116,7 @@ Exceeding the AWS CloudFormation resource limit is an error during AWS CloudForm
 **Tip**
 You can get an exact count of the resources in your synthesized output using the following utility script. (Since every AWS CDK developer needs Node.js, the script is written in JavaScript.)
 
-```
+```javascript
 // rescount.js - count the resources defined in a stack
 // invoke with: node rescount.js <path-to-stack-json>
 // e.g. node rescount.js cdk.out/MyStack.template.json
@@ -156,7 +156,7 @@ If you set a resource’s removal policy to `DESTROY`, that resource will be del
 
 **Example**
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as s3 from 'aws-cdk-lib/aws-s3';
@@ -172,7 +172,7 @@ export class CdkTestStack extends cdk.Stack {
 }
 ```
 
-```
+```javascript
 const cdk = require('aws-cdk-lib');
 const s3 = require('aws-cdk-lib/aws-s3');
 
@@ -189,7 +189,7 @@ class CdkTestStack extends cdk.Stack {
 module.exports = { CdkTestStack }
 ```
 
-```
+```python
 import aws_cdk as cdk
 from constructs import Construct
 import aws_cdk.aws_s3 as s3
@@ -202,7 +202,7 @@ class CdkTestStack(cdk.stack):
             removal_policy=cdk.RemovalPolicy.DESTROY)
 ```
 
-```
+```java
 software.amazon.awscdk.*;
 import software.amazon.awscdk.services.s3.*;
 import software.constructs;
@@ -221,7 +221,7 @@ public class CdkTestStack extends Stack {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.S3;
 

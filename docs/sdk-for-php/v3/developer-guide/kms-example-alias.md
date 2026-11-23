@@ -28,7 +28,7 @@ To create an alias for a KMS key, use the [CreateAlias](https://docs.aws.amazon.
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -36,7 +36,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -66,7 +66,7 @@ To list all aliases in the caller's AWS account and AWS Region, use the [ListAli
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -74,7 +74,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -102,7 +102,7 @@ To associate an existing alias with a different KMS key, use the [UpdateAlias](h
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -110,7 +110,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -140,7 +140,7 @@ To delete an alias, use the [DeleteAlias](https://docs.aws.amazon.com/kms/latest
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -148,7 +148,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',

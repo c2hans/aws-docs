@@ -49,7 +49,7 @@ In order to avoid seeing issues after March 9, 2026 while continuing to use AWS 
 
 1. Update your trust policy to the following format, replacing **{{accountId}}** with your AWS account ID
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -110,7 +110,7 @@ In order to avoid seeing issues after March 9, 2026 while continuing to use AWS 
 
    1. Update your trust policy to the following format, replacing **{{accountId}}** with your AWS account ID
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

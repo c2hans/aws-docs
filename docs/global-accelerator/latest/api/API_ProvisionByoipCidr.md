@@ -110,7 +110,7 @@ aws globalaccelerator provision-byoip-cidr
     --cidr-authorization-context Message="$text_message",Signature="$signed_message"
 ```
 
-```
+```json
 {
     "ByoipCidr": {
         "Cidr": "203.0.113.25/24",

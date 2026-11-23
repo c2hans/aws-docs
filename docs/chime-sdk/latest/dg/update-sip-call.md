@@ -22,7 +22,7 @@ The [UpdateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest
 
 The following example shows the request syntax.
 
-```
+```json
 {
     "SipMediaApplicationId": "{{string}}",
     "TransactionId": "{{string}}",

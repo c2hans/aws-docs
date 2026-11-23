@@ -34,7 +34,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -79,7 +79,7 @@ In order to access the AMB Query to make API calls, you will need user credentia
 This example grants an IAM user in your AWS account access to all AMB Query APIs.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -100,7 +100,7 @@ This example grants an IAM user in your AWS account access to the AMB Query `Lis
 You can replace or add on the APIs in the example with other APIs to give access to other or more APIs. For a list of AMB Query APIs, see the *Amazon Managed Blockchain (AMB) Query API Reference Guide*.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

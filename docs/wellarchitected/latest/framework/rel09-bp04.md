@@ -39,6 +39,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel09-b
 
 ![Workflow diagram showing a scheduler triggering a backup restore, validation logic checking the recovered data, and a notification firing on failure or RTO breach.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/automated-backup-restore-process.png)
 
+*Automated backup restore and validation workflow*
+
  On AWS, [AWS Resilience Hub](https://docs.aws.amazon.com/resilience-hub/latest/userguide/create-policy.html) monitors your configuration against your RTO and RPO targets and alerts you when changes introduce posture drift. [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-a-backup.html) restores a backup into a new resource, and [AWS Elastic Disaster Recovery](https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html) launches recovery drills without redirecting traffic. [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) timestamps API calls so you can measure restore time, and [Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) delivers alerts on test failure.
 
 ### Implementation steps

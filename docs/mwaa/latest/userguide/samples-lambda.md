@@ -38,7 +38,7 @@ To use the code example on this page, your Amazon MWAA environment's execution r
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

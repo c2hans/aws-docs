@@ -114,7 +114,7 @@ The following example request deletes the user with the access token `eyJra456de
 #### Sample Request
 <a name="API_DeleteUser_Example_1_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z

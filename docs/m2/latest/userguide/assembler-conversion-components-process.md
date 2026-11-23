@@ -27,7 +27,7 @@ To use the images, you can follow either of the two options:
 + Use the latest tag when consuming the image via AWS CodeBuild. When using the image, you will use this path: `381492161314.dkr.ecr.us-east-1.amazonaws.com/aws-mlogica-codebuild-prod`. This means that AWS CodeBuild will pick up whichever was the last pushed image into the repository.
 + Listing the version and selecting from that. To do this use the following command via CLI to list the different versions in the repository:
 
-  ```
+  ```json
   aws ecr describe-images \
     --registry-id 381492161314 \
     --repository-name aws-mlogica-codebuild-prod \

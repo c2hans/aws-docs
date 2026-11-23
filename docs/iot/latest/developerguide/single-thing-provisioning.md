@@ -16,7 +16,7 @@ See [Provisioning templates](provision-template.md).
 
 [RegisterThing](https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterThing.html) or `register-thing` returns the ARNs for the resources and the text of the certificate it created:
 
-```
+```json
 {
     "certificatePem": "{{certificate-text}}",
     "resourceArns": {

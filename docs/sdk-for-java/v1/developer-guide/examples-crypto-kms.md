@@ -20,7 +20,7 @@ Import the following classes for these examples.
 
  **Imports**
 
-```
+```java
 import com.amazonaws.ClientConfiguration;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.kms.AWSKMS;
@@ -47,7 +47,7 @@ To use client-side authenticated encryption, you must include the latest [Bouncy
 
  **Code**
 
-```
+```java
 AmazonS3EncryptionV2 s3Encryption = AmazonS3EncryptionClientV2Builder.standard()
          .withRegion(Regions.US_WEST_2)
          .withCryptoConfiguration(new CryptoConfigurationV2().withCryptoMode((CryptoMode.StrictAuthenticatedEncryption)))
@@ -62,7 +62,7 @@ Call the `putObject` method on the Amazon S3 encryption client to upload objects
 
  **Code**
 
-```
+```java
 s3Encryption.putObject(bucket_name, ENCRYPTED_KEY3, "This is the 3rd content to encrypt with a key created in the {console}");
 ```
 
@@ -70,7 +70,7 @@ You can retrieve the object using the same client. This example calls the `getOb
 
  **Code**
 
-```
+```java
 System.out.println(s3Encryption.getObjectAsString(bucket_name, ENCRYPTED_KEY3));
 ```
 
@@ -86,7 +86,7 @@ To enable this mode, specify the `AuthenticatedEncryption` value in the `withCry
 
  **Code**
 
-```
+```java
 AmazonS3EncryptionV2 s3Encryption = AmazonS3EncryptionClientV2Builder.standard()
          .withRegion(Regions.US_WEST_2)
          .withCryptoConfiguration(new CryptoConfigurationV2().withCryptoMode((CryptoMode.AuthenticatedEncryption)))
@@ -103,7 +103,7 @@ To set the region for this automatically-created AWS KMS client, set the `awsKms
 
  **Code**
 
-```
+```java
 Region kmsRegion = Region.getRegion(Regions.AP_NORTHEAST_1);
 
 AmazonS3EncryptionV2 s3Encryption = AmazonS3EncryptionClientV2Builder.standard()
@@ -117,7 +117,7 @@ Alternatively, you can use your own AWS KMS client to initialize the encryption 
 
  **Code**
 
-```
+```java
 AWSKMS kmsClient = AWSKMSClientBuilder.standard()
         .withRegion(Regions.US_WEST_2);
         .build();

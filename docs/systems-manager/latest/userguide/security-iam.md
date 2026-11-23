@@ -96,7 +96,7 @@ Systems Manager supports several of its own condition keys. For more information
 
 If your policy must depend on a service principal name owned by the Systems Manager service, we recommend you check for its existence or non-existence using the `aws:PrincipalServiceNamesList` [multivalued condition key](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-single-vs-multi-valued-context-keys.html#reference_policies_condition-multi-valued-context-keys), rather than the `aws:PrincipalServiceName` condition key. The `aws:PrincipalServiceName` condition key contains only one entry from the list of service principal names and it may not always be the service principal name you expect. The following `Condition` block demonstrates checking for the existence of `ssm.amazonaws.com`.
 
-```
+```json
 {
     "Condition": {
         "ForAnyValue:StringEquals": {

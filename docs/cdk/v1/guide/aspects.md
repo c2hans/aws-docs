@@ -13,35 +13,35 @@ To apply an aspect to a construct and all constructs in the same scope, call [`A
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 Aspects.of(myConstruct).add(new SomeAspect(...));
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 Aspects.of(myConstruct).add(new SomeAspect(...));
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 Aspects.of(my_construct).add(SomeAspect(...))
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 Aspects.of(myConstruct).add(new SomeAspect(...));
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 Aspects.Of(myConstruct).add(new SomeAspect(...));
 ```
 
@@ -57,7 +57,7 @@ Aspects employ the [visitor pattern](https://en.wikipedia.org/wiki/Visitor_patte
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 interface IAspect {
    visit(node: IConstruct): void;}
 ```
@@ -75,7 +75,7 @@ Python doesn't have interfaces as a language feature, so an aspect is simply an 
 ------
 #### [ Java ]
 
-```
+```java
 public interface IAspect {
     public void visit(Construct node);
 }
@@ -84,7 +84,7 @@ public interface IAspect {
 ------
 #### [ C\# ]
 
-```
+```csharp
 public interface IAspect
 {
     void Visit(IConstruct node);
@@ -109,7 +109,7 @@ The following example validates that all buckets created in the stack have versi
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 class BucketVersioningChecker implements IAspect {
   public visit(node: IConstruct): void {
     // See that we're dealing with a CfnBucket
@@ -133,7 +133,7 @@ Aspects.of(stack).add(new BucketVersioningChecker());
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 class BucketVersioningChecker {
    visit(node) {
     // See that we're dealing with a CfnBucket
@@ -157,7 +157,7 @@ Aspects.of(stack).add(new BucketVersioningChecker());
 ------
 #### [ Python ]
 
-```
+```python
 @jsii.implements(core.IAspect)
 class BucketVersioningChecker:
 
@@ -179,7 +179,7 @@ Aspects.of(stack).add(BucketVersioningChecker())
 ------
 #### [ Java ]
 
-```
+```java
 public class BucketVersioningChecker implements IAspect
 {
     @Override
@@ -205,7 +205,7 @@ Aspects.of(stack).add(new BucketVersioningChecker());
 ------
 #### [ C\# ]
 
-```
+```csharp
 class BucketVersioningChecker : Amazon.Jsii.Runtime.Deputy.DeputyBase, IAspect
 {
     public void Visit(IConstruct node)

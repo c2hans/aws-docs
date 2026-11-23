@@ -155,7 +155,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of DescribeBotAnalyzerRecommendation.
 
-```
+```json
 POST https://models-v2-lex.us-east-1.amazonaws.com/bots/<BotId>/botanalyzer/describe/<RequestId>/
 
 Payload:
@@ -169,7 +169,7 @@ Payload:
 
 This example illustrates one usage of DescribeBotAnalyzerRecommendation.
 
-```
+```json
 {
     "botId": "<BotId>",
     "localeId": "en_US",

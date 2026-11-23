@@ -8,7 +8,7 @@ When you import an existing template with parameters defined for the security gr
 
 The following is an example of the `Parameters` section of an imported template:
 
-```
+```yaml
 ...
 Parameters:
   VPCSecurityGroups:
@@ -36,7 +36,7 @@ For more information on parameter lists type, see [Supported AWS-specific parame
 
 The following is an example of a template that defines `VPCSecurityGroups` as a list parameter type:
 
-```
+```yaml
 ...
 Parameters:
   VPCSecurityGroups:
@@ -53,7 +53,7 @@ This limitation occurs because the `SecurityGroupIds` and `SubnetIds` properties
 
 For list parameter types, the following is an example of how they are defined in the template when configured with a Lambda function:
 
-```
+```yaml
 ...
 Parameters:
   VPCSecurityGroups:

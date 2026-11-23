@@ -65,7 +65,7 @@ To create a job using the following instructions, you need a prompt dataset. If 
   aws bedrock create-evaluation-job --cli-input-json file://{{my_eval_job.json}}
   ```
 
-  ```
+  ```json
   {
       "jobName": {{"my_rag_eval"}},
       "roleArn": {{"arn:aws:iam::111122223333:role/service-role/Amazon-Bedrock-IAM-Role-Amazon-Bedrock-IAM-Role-20250218T063974"}},
@@ -142,7 +142,7 @@ To create a job using the following instructions, you need a prompt dataset. If 
   aws bedrock create-evaluation-job --cli-input-json file://{{my_eval_job.json}}
   ```
 
-  ```
+  ```json
   {
       "jobName": {{"my_rag_eval"}},
       "roleArn": {{"arn:aws:iam::111122223333:role/service-role/Amazon-Bedrock-IAM-Role-Amazon-Bedrock-IAM-Role-20250218T063974"}},
@@ -203,7 +203,7 @@ To create a job using the following instructions, you need a prompt dataset. If 
 
 The following python example demonstrates how to make a *Retrieve and generate* boto3 API request.
 
-```
+```python
 import boto3
 client = boto3.client('bedrock')
 

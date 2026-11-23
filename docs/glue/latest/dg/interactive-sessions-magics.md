@@ -69,7 +69,7 @@ select * from rds_tables.sales_table
 
  The `%%configure` magic is a json-formatted dictionary consisting of all configuration parameters for a session. Each parameter can be specified here or through individual magics. See below for examples for arguments supported by the `%%configure` cell magic. Use the `--` prefix for run arguments specified for the job. Example:
 
-```
+```json
 %%configure
 {
    "--user-jars-first": "true",

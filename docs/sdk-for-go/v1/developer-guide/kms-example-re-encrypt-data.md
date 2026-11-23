@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 The following example uses the AWS SDK for Go[ReEncrypt](https://docs.aws.amazon.com/sdk-for-go/api/service/kms/#KMS.ReEncrypt) method, which implements the [ReEncrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_ReEncrypt.html) operation, to decrypt encrypted data and then immediately re-encrypt data under a new customer master key (CMK). The operations are performed entirely on the server side within AWS KMS, so they never expose your plaintext outside of AWS KMS. The example displays a readable version of the resulting re-encrypted blob.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws/session"
     "github.com/aws/aws-sdk-go/service/kms"

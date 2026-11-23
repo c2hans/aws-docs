@@ -79,7 +79,7 @@ For token-based OAuth, storing these credentials in Secrets Manager is optional.
 
 After you create a secret in Secrets Manager that contains your Snowflake OAuth credentials and have connected your Quick account to Secrets Manager, you can establish a data source connection between Quick Sight and Snowflake with the Quick Sight APIs and SDK. The following example creates a Snowflake data source connection using token OAuth client credentials.
 
-```
+```json
 {
     "AwsAccountId": "{{AWSACCOUNTID}}",
     "DataSourceId": "{{UNIQUEDATASOURCEID}}",

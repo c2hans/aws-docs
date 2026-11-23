@@ -65,7 +65,7 @@ Returns an array of all Amazon Route 53 health checks associated with a specific
 #### ListAssociatedRoute53HealthChecksResponse schema
 <a name="routingcontrol-routingcontrolarn-associatedroute53healthchecks-response-body-listassociatedroute53healthchecksresponse-example"></a>
 
-```
+```json
 {
   "NextToken": "string",
   "HealthCheckIds": [
@@ -77,7 +77,7 @@ Returns an array of all Amazon Route 53 health checks associated with a specific
 #### ValidationException schema
 <a name="routingcontrol-routingcontrolarn-associatedroute53healthchecks-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -86,7 +86,7 @@ Returns an array of all Amazon Route 53 health checks associated with a specific
 #### ResourceNotFoundException schema
 <a name="routingcontrol-routingcontrolarn-associatedroute53healthchecks-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -95,7 +95,7 @@ Returns an array of all Amazon Route 53 health checks associated with a specific
 #### InternalServerException schema
 <a name="routingcontrol-routingcontrolarn-associatedroute53healthchecks-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

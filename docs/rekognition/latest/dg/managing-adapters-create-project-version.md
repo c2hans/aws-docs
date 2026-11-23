@@ -23,7 +23,7 @@ To create a project version with the AWS CLI and SDK:
 ------
 #### [ CLI ]
 
-```
+```bash
 # Request
 aws rekognition create-project-version \
  --project-arn {{project-arn}} \

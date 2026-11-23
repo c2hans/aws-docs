@@ -95,6 +95,8 @@ The [NodeClass](https://docs.aws.amazon.com/eks/latest/userguide/create-node-cla
 
 ![Node ENIs connecting to node and pod IPs, with security groups applied to primary and secondary ENIs.](https://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-eks-auto-mode/images/image5.png)
 
+Figure 4: NodeClass IP assignment settings
+
 If `podSubnetSelectorTerms` and `podSecurityGroupSelectorTerms` are also configured, then only the node's IP will come from the primary ENI. Pod IPs will come from secondary ENIs and use the specified security groups. This mode of operations allows segregating the node IP addresses from Pod IP addresses, primarily to allow using separate security groups to control traffic flow for nodes and Pods differently. Because the primary ENI is reserved for only the node IP address, when operating in this configuration the result is reduced Pod density on Auto Mode nodes.
 
 After being [enabled](https://docs.aws.amazon.com/eks/latest/userguide/auto-net-pol.html) on the cluster, Pod-to-Pod traffic can be controlled by using standard Kubernetes [NetworkPolicies](https://kubernetes.io/docs/concepts/services-networking/network-policies/). These policies are enforced by a networking component on the node using [eBPF](https://ebpf.foundation/).

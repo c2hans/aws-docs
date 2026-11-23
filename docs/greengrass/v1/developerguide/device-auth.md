@@ -129,7 +129,7 @@ The following example policy includes the minimum set of actions required to sup
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

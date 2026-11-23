@@ -86,7 +86,7 @@ This global condition also applies to the management account of an organization.
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -115,7 +115,7 @@ This global condition also applies to the management account of an organization.
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -184,7 +184,7 @@ The following are examples of policies that allows a user to perform the `Create
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -209,7 +209,7 @@ You can also provide a partial ARN in the `Resource` element of the policy to in
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -232,7 +232,7 @@ You can also deny the creation of accounts that do not include specific tags to 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

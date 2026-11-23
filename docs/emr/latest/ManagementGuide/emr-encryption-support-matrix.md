@@ -43,7 +43,7 @@ Use the following workaround:
 
 Example configuration:
 
-```
+```json
 [
                                {
                                  "Classification": "spark-defaults",

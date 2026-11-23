@@ -20,7 +20,7 @@ To create a key pair, call the EC2Client’s `CreateKeyPair` function with a [Cr
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/CreateKeyPairRequest.h>
 #include <iostream>
@@ -29,7 +29,7 @@ To create a key pair, call the EC2Client’s `CreateKeyPair` function with a [Cr
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
     Aws::EC2::Model::CreateKeyPairRequest request;
     request.SetKeyName(keyPairName);
@@ -63,7 +63,7 @@ You will receive a [DescribeKeyPairsResponse](https://docs.aws.amazon.com/sdk-fo
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/DescribeKeyPairsRequest.h>
 #include <aws/ec2/model/DescribeKeyPairsResponse.h>
@@ -73,7 +73,7 @@ You will receive a [DescribeKeyPairsResponse](https://docs.aws.amazon.com/sdk-fo
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
     Aws::EC2::Model::DescribeKeyPairsRequest request;
 
@@ -105,7 +105,7 @@ To delete a key pair, call the EC2Client’s `DeleteKeyPair` function, passing i
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/DeleteKeyPairRequest.h>
 #include <iostream>
@@ -113,7 +113,7 @@ To delete a key pair, call the EC2Client’s `DeleteKeyPair` function, passing i
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
     Aws::EC2::Model::DeleteKeyPairRequest request;
 

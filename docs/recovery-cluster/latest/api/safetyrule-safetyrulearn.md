@@ -79,7 +79,7 @@ Deletes a safety rule.
 #### DescribeSafetyRuleResponse schema
 <a name="safetyrule-safetyrulearn-response-body-describesafetyruleresponse-example"></a>
 
-```
+```json
 {
   "AssertionRule": {
     "Status": enum,
@@ -122,7 +122,7 @@ Deletes a safety rule.
 #### DeleteSafetyRuleResponse schema
 <a name="safetyrule-safetyrulearn-response-body-deletesafetyruleresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -130,7 +130,7 @@ Deletes a safety rule.
 #### ValidationException schema
 <a name="safetyrule-safetyrulearn-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -139,7 +139,7 @@ Deletes a safety rule.
 #### ResourceNotFoundException schema
 <a name="safetyrule-safetyrulearn-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -148,7 +148,7 @@ Deletes a safety rule.
 #### InternalServerException schema
 <a name="safetyrule-safetyrulearn-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

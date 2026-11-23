@@ -17,7 +17,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-resource-networkconnector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Serverless::NetworkConnector
 Properties:
   [ComputeTypes](#sam-networkconnector-computetypes): {{List}}
@@ -105,7 +105,7 @@ The current state of the network connector. Valid values are `PENDING`, `ACTIVE`
 
 The following example creates a VPC egress network connector. AWS SAM automatically generates the operator role.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 
@@ -130,7 +130,7 @@ Resources:
 
 The following example creates a network connector for Web Functions and uses it for a Web Function's outbound traffic.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 

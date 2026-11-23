@@ -14,7 +14,7 @@ Amazon Nova models support the functionality of *tool choice*. Tool choice allow
 
 Using `tool` as the tool choice allows you to control the specific tool that the model calls. The example below highlights this with a structured output use case where the response is required to be formatted in a consistent manner.
 
-```
+```JSON
 tool_config = {
     "toolChoice": {
         "tool": { "name" : "extract_recipe"}
@@ -58,7 +58,7 @@ tool_config = {
 
 Using `any` as the tool choice allows you to ensure that at least one tool is called each time. While the decision of which tool to call is left up to the model, there will always be a tool returned. The example below highlights using tool choice any for an API selection endpoint use case. This is one example of when it is helpful to require the model to return a specific tool.
 
-```
+```JSON
 tool_config = {
     "toolChoice": {
         "any": {}
@@ -120,7 +120,7 @@ The default behavior of Amazon Nova tool calling is to use chain-of-thought for 
 
 The following example highlights a chatbot use case where you might want to allow the model to search the internet for recent information or to respond directly to the user. This tool choice provides flexibility and will leave the reasoning to the model.
 
-```
+```JSON
 tool_config = {
     "toolChoice": {
         "auto": {}

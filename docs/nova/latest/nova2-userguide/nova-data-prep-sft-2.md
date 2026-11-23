@@ -44,7 +44,7 @@ A string specifying text content. Supported in both `user` and `assistant` turns
 
 The following shows an example message object with a `content` array containing only a `text` content block:
 
-```
+```json
 {
     "role": "user",
     "content": [
@@ -62,7 +62,7 @@ An image object specifying its format and S3 location. Supported only in `user` 
 
 The following shows an example message object with a content array containing only an image content block:
 
-```
+```json
 {
     "role": "user",
     "content": [
@@ -88,7 +88,7 @@ A video object specifying its format and S3 location. Supported only in `user` t
 
 The following shows an example message object with a content array containing only a video content block:
 
-```
+```json
 {
     "role": "user",
     "content": [
@@ -114,7 +114,7 @@ A document object specifying its format and S3 location. Supported only in `user
 
 The following shows an example message object with a content array containing only a document content block:
 
-```
+```json
 {
     "role": "user",
     "content": [
@@ -140,7 +140,7 @@ A reasoning trace object. Supported only in `assistant` turns. Only text-based r
 
 The following shows an example message object with a content array containing only a reasoning content block:
 
-```
+```json
 {
     "role": "assistant",
     "content": [
@@ -165,7 +165,7 @@ A tool invocation object. Supported only in `assistant` turns. The `toolUseId` m
 
 The following shows an example message object with a content array containing only a tool use content block:
 
-```
+```json
 {
     "role": "assistant",
     "content": [
@@ -187,7 +187,7 @@ A tool result object. Supported only in `user` turns. Each `toolUseId` must refe
 
 The following shows an example message object with a content array containing only a tool result content block:
 
-```
+```json
 {
     "role": "user",
     "content": [
@@ -212,7 +212,7 @@ The following shows an example message object with a content array containing on
 
 An optional array that defines a system prompt — instructions or context for the model about the task it should perform or the persona it should adopt. Use the same system prompt during both training and inference for best results.
 
-```
+```json
 "system": [
     {
         "text": "{{You are a helpful assistant.}}"
@@ -225,7 +225,7 @@ An optional array that defines a system prompt — instructions or context for t
 
 An optional object that defines the tools available for the model to use during the conversation. Each tool is defined with a name, description, and a JSON Schema for its input parameters.
 
-```
+```json
 "toolConfig": {
     "tools": [
         {
@@ -255,7 +255,7 @@ An optional object that defines the tools available for the model to use during 
 
 Required. A string field identifying the schema version. Can be any string value.
 
-```
+```json
 "schemaVersion": "bedrock-conversation-2024"
 ```
 
@@ -271,7 +271,7 @@ The following are complete example JSON objects showing how to combine the field
 ------
 #### [ Text-only (Nova 1.0 compatible) ]
 
-```
+```json
 {
     "schemaVersion": "bedrock-conversation-2024",
     "system": [
@@ -303,7 +303,7 @@ The following are complete example JSON objects showing how to combine the field
 ------
 #### [ Image \+ text input ]
 
-```
+```json
 {
     "schemaVersion": "bedrock-conversation-2024",
     "system": [
@@ -353,7 +353,7 @@ The following are complete example JSON objects showing how to combine the field
 ------
 #### [ Video \+ text input ]
 
-```
+```json
 {
     "schemaVersion": "bedrock-conversation-2024",
     "system": [
@@ -403,7 +403,7 @@ The following are complete example JSON objects showing how to combine the field
 ------
 #### [ Document \+ text input ]
 
-```
+```json
 {
     "schemaVersion": "bedrock-conversation-2024",
     "messages": [
@@ -448,7 +448,7 @@ The following are complete example JSON objects showing how to combine the field
 ------
 #### [ Text with tool calling ]
 
-```
+```json
 {
     "schemaVersion": "bedrock-conversation-2024",
     "system": [
@@ -548,7 +548,7 @@ The following are complete example JSON objects showing how to combine the field
 ------
 #### [ Text with reasoning ]
 
-```
+```json
 {
     "schemaVersion": "bedrock-conversation-2024",
     "system": [
@@ -633,7 +633,7 @@ This section summarizes the general constraints for preparing SFT on Amazon Nova
 ### Text-only sample
 <a name="sft-general-sample"></a>
 
-```
+```json
 {
   "schemaVersion": "bedrock-conversation-2024",
   "system": [
@@ -689,7 +689,7 @@ SFT supports training on image-based tasks, enabling your model to learn how to 
 ### Image \+ text sample
 <a name="sft-image-sample"></a>
 
-```
+```json
 {
   "schemaVersion": "bedrock-conversation-2024",
   "system": [
@@ -758,7 +758,7 @@ SFT supports training on video-based tasks, enabling your model to learn how to 
 ### Video \+ text sample
 <a name="sft-video-sample"></a>
 
-```
+```json
 {
   "schemaVersion": "bedrock-conversation-2024",
   "messages": [
@@ -819,7 +819,7 @@ SFT supports training on document-based tasks, enabling your model to learn how 
 ### Document \+ text sample
 <a name="sft-document-sample"></a>
 
-```
+```json
 {
   "schemaVersion": "bedrock-conversation-2024",
   "messages": [
@@ -881,7 +881,7 @@ SFT supports training models on tool calling patterns, enabling your model to le
 ### Text with tool calling sample
 <a name="sft-tool-sample"></a>
 
-```
+```json
 {
   "schemaVersion": "bedrock-conversation-2024",
   "system": [
@@ -996,7 +996,7 @@ Reasoning content (also called chain-of-thought) captures the model's intermedia
 ### Text with reasoning sample
 <a name="sft-reasoning-sample"></a>
 
-```
+```json
 {
   "schemaVersion": "bedrock-conversation-2024",
   "system": [
@@ -1069,7 +1069,7 @@ The following patterns illustrate how to convert common enterprise data formats 
 **Pattern 1: Structured records to classification or lookup**
 When your source data is a table or database of records with fields such as `issue`, `cause`, and `resolution`, frame each record as a user question with the relevant input fields and the assistant response as the target output fields.
 
-```
+```JSON
 // train.jsonl
 {
   "schemaVersion": "bedrock-conversation-2024",
@@ -1102,7 +1102,7 @@ When your source data is a table or database of records with fields such as `iss
 **Pattern 2: Hierarchical or taxonomy data to structured Q&A**
 When your source data is a code hierarchy or taxonomy such as product category trees or classification systems, generate questions that ask the model to navigate the hierarchy. Include the classification context in the system prompt or user turn.
 
-```
+```JSON
 // train.jsonl
 {
   "schemaVersion": "bedrock-conversation-2024",
@@ -1135,7 +1135,7 @@ When your source data is a code hierarchy or taxonomy such as product category t
 **Pattern 3: Procedural documents to instructional dialog**
 When your source data consists of standard operating procedures, runbooks, or step-by-step guides, convert procedures into task-oriented questions. The user asks how to perform a task and the assistant provides the steps in a consistent format.
 
-```
+```JSON
 // train.jsonl
 {
   "schemaVersion": "bedrock-conversation-2024",

@@ -22,7 +22,7 @@ The following key policy provides the minimum permissions required for configura
 +  **AllowCallerAccess** – Allows the IAM user or role to validate the key via `DescribeKey`.
 +  **AllowCallerCryptoOps** – Allows the IAM user or role to generate data keys, decrypt, and re-encrypt (for key rotation), scoped by encryption context.
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -66,7 +66,7 @@ The policy contains the following statements:
 
 You can use the encryption context to scope down access to the customer managed key. AgentCore optimizations includes the following encryption context in all KMS operations:
 
-```
+```json
 {
   "aws:bedrock-agentcore:configurationBundleArn": "arn:aws:bedrock-agentcore:us-east-1:111122223333:configuration-bundle/bundle-id"
 }
@@ -81,7 +81,7 @@ To encrypt a configuration bundle, specify the `kmsKeyArn` parameter when callin
 
 **Example**
 
-```
+```bash
 aws bedrock-agentcore-control create-configuration-bundle \
   --bundle-name "MyEncryptedBundle" \
   --kms-key-arn "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab" \
@@ -95,7 +95,7 @@ aws bedrock-agentcore-control create-configuration-bundle \
   }'
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control')

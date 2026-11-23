@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-api-lambdarequestauthorizationidentity-syntax.yaml"></a>
 
-```
+```yaml
   [Context](#sam-api-lambdarequestauthorizationidentity-context): {{List}}
   [Headers](#sam-api-lambdarequestauthorizationidentity-headers): {{List}}
   [QueryStrings](#sam-api-lambdarequestauthorizationidentity-querystrings): {{List}}
@@ -65,7 +65,7 @@ Converts the given stage variables to comma-separated string of mapping expressi
 #### YAML
 <a name="sam-property-api-lambdarequestauthorizationidentity--examples--lambdarequestidentity--yaml"></a>
 
-```
+```yaml
 Identity:
   QueryStrings:
     - auth

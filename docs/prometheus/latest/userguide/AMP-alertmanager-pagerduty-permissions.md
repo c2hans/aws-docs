@@ -39,7 +39,7 @@ You must grant Amazon Managed Service for Prometheus permission to access your s
 
    1. Add the following policy statement. In the statement, replace the {{highlighted values}} with your specific values.
 
-      ```
+      ```json
       {
         "Effect": "Allow",
         "Principal": {
@@ -68,7 +68,7 @@ You must grant Amazon Managed Service for Prometheus permission to access your s
 
    1. Add the following policy statement. In the statement, replace the {{highlighted values}} with your specific values.
 
-      ```
+      ```json
       {
         "Effect": "Allow",
         "Principal": {

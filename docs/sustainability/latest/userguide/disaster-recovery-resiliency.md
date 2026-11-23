@@ -10,7 +10,7 @@ For more information about AWS Regions and Availability Zones, see [AWS Global I
 
 In the case of a service disruption, AWS Sustainability will fail over to region `us-west-2`. When using the SDK, it is recommended to use the following authentication configuration in order to allow requests to fail over to the secondary region:
 
-```
+```bash
 export AWS_AUTH_SCHEME_PREFERENCE="sigv4a,sigv4"
 export AWS_SIGV4A_SIGNING_REGION_SET="*"
 ```

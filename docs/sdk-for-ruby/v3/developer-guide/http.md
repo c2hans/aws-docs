@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/http.htm
 
 The region is used to construct an SSL endpoint to use for AWS requests. If you need to use a nonstandard endpoint in the Region you’ve selected, add an `endpoint` entry to `Aws.config`. Alternatively, set the `endpoint:` when creating a service client or resource object. The following example creates an Amazon S3 resource object in the `other_endpoint` endpoint.
 
-```
+```ruby
 s3 = Aws::S3::Resource.new(endpoint: other_endpoint)
 ```
 

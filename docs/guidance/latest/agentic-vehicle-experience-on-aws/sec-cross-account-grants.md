@@ -26,7 +26,7 @@ To add a new ADP database to the cross-account share, the ADP CDK stack is updat
 
 The ADP-hosted vehicle Knowledge Base is accessed cross-account via a Bedrock KB resource policy that explicitly enumerates the AVX role ARN(s) permitted to call `bedrock-agent-runtime:Retrieve`:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

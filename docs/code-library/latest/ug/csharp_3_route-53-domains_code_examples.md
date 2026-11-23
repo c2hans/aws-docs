@@ -30,7 +30,7 @@ The following code example shows how to get started using Route 53 domain regis
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 
-```
+```csharp
 public static class HelloRoute53Domains
 {
     static async Task Main(string[] args)
@@ -78,7 +78,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 public static class Route53DomainScenario
 {
     /*
@@ -399,7 +399,7 @@ public static class Route53DomainScenario
 ```
 Wrapper methods used by the scenario for Route 53 domain registration actions.
 
-```
+```csharp
 public class Route53Wrapper
 {
     private readonly IAmazonRoute53Domains _amazonRoute53Domains;
@@ -660,7 +660,7 @@ The following code example shows how to use `CheckDomainAvailability`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Check the availability of a domain name.
     /// </summary>
@@ -687,7 +687,7 @@ The following code example shows how to use `CheckDomainTransferability`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Check the transferability of a domain name.
     /// </summary>
@@ -714,7 +714,7 @@ The following code example shows how to use `GetDomainDetail`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get details for a domain.
     /// </summary>
@@ -751,7 +751,7 @@ The following code example shows how to use `GetDomainSuggestions`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of suggestions for a given domain.
     /// </summary>
@@ -782,7 +782,7 @@ The following code example shows how to use `GetOperationDetail`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get details for a domain action operation.
     /// </summary>
@@ -825,7 +825,7 @@ The following code example shows how to use `ListDomains`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List the domains for the account.
     /// </summary>
@@ -854,7 +854,7 @@ The following code example shows how to use `ListOperations`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List operations for the account that are submitted after a specified date.
     /// </summary>
@@ -886,7 +886,7 @@ The following code example shows how to use `ListPrices`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List prices for domain type operations.
     /// </summary>
@@ -914,7 +914,7 @@ The following code example shows how to use `RegisterDomain`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Initiate a domain registration request.
     /// </summary>
@@ -961,7 +961,7 @@ The following code example shows how to use `ViewBilling`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 
-```
+```csharp
     /// <summary>
     /// View billing records for the account between a start and end date.
     /// </summary>

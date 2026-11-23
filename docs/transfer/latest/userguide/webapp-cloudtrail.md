@@ -147,7 +147,7 @@ CloudTrail logs authentication events for Transfer Family web apps, which can he
 
 The following example shows a CloudTrail log entry for a credential verification event that occurs during the authentication process.
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {
@@ -195,7 +195,7 @@ This event provides additional detail about the credential verification step in 
 
 The following example shows a CloudTrail log entry for a successful user authentication event during web app sign-in using IAM Identity Center.
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {
@@ -249,7 +249,7 @@ In this example, note the following important fields:
 
 The following example shows a CloudTrail log entry for a ListCallerAccessGrants event, which occurs when Transfer Family web app queries available access grants for a user.
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -327,7 +327,7 @@ This event helps track when Transfer Family web app queries what S3 resources a 
 
 The following example shows a CloudTrail log entry for a GetDataAccess event, which occurs when Transfer Family web app requests access permissions for S3 resources on behalf of a user.
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

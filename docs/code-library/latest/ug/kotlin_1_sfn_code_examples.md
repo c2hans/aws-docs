@@ -30,7 +30,7 @@ The following code example shows how to get started using Step Functions.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.sfn.SfnClient
 import aws.sdk.kotlin.services.sfn.model.ListStateMachinesRequest
 
@@ -78,7 +78,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.iam.IamClient
 import aws.sdk.kotlin.services.iam.model.CreateRoleRequest
 import aws.sdk.kotlin.services.sfn.SfnClient
@@ -477,7 +477,7 @@ The following code example shows how to use `CreateActivity`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun createActivity(activityName: String): String? {
     val activityRequest =
         CreateActivityRequest {
@@ -500,7 +500,7 @@ The following code example shows how to use `CreateStateMachine`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun createMachine(
     roleARNVal: String?,
     stateMachineName: String?,
@@ -530,7 +530,7 @@ The following code example shows how to use `DeleteActivity`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun deleteActivity(actArn: String?) {
     val activityRequest =
         DeleteActivityRequest {
@@ -553,7 +553,7 @@ The following code example shows how to use `DeleteStateMachine`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun deleteMachine(stateMachineArnVal: String?) {
     val deleteStateMachineRequest =
         DeleteStateMachineRequest {
@@ -576,7 +576,7 @@ The following code example shows how to use `DescribeExecution`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun describeExe(executionArnVal: String?) {
     val executionRequest =
         DescribeExecutionRequest {
@@ -613,7 +613,7 @@ The following code example shows how to use `DescribeStateMachine`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun describeStateMachine(stateMachineArnVal: String?) {
     val stateMachineRequest =
         DescribeStateMachineRequest {
@@ -638,7 +638,7 @@ The following code example shows how to use `GetActivityTask`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun getActivityTask(actArn: String?): List<String> {
     val myList: MutableList<String> = ArrayList()
     val getActivityTaskRequest =
@@ -663,7 +663,7 @@ The following code example shows how to use `ListActivities`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun listAllActivites() {
     val activitiesRequest =
         ListActivitiesRequest {
@@ -689,7 +689,7 @@ The following code example shows how to use `ListExecutions`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun getExeHistory(exeARN: String?) {
     val historyRequest =
         GetExecutionHistoryRequest {
@@ -715,7 +715,7 @@ The following code example shows how to use `ListStateMachines`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.sfn.SfnClient
 import aws.sdk.kotlin.services.sfn.model.ListStateMachinesRequest
 
@@ -756,7 +756,7 @@ The following code example shows how to use `SendTaskSuccess`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun sendTaskSuccess(
     token: String?,
     json: String?,
@@ -781,7 +781,7 @@ The following code example shows how to use `StartExecution`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun startWorkflow(
     stateMachineArnVal: String?,
     jsonEx: String?,

@@ -53,7 +53,7 @@ Use the `register-job-definition` command to create a job definition for Amazon 
 
 The following example creates a minimal job definition that runs a simple command.
 
-```
+```sh
 $ aws batch register-job-definition \
     --job-definition-name {{my-managed-instances-job-def}} \
     --type container \
@@ -79,7 +79,7 @@ $ aws batch register-job-definition \
 
 The following example creates a job definition that requests GPU resources.
 
-```
+```sh
 $ aws batch register-job-definition \
     --job-definition-name {{my-gpu-managed-instances-job-def}} \
     --type container \
@@ -106,7 +106,7 @@ $ aws batch register-job-definition \
 
 The following example creates a job definition with a main container and a sidecar logging container.
 
-```
+```sh
 $ aws batch register-job-definition \
     --job-definition-name {{my-sidecar-managed-instances-job-def}} \
     --type container \

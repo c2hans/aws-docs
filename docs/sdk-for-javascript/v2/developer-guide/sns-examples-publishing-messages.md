@@ -33,7 +33,7 @@ Create an object containing the parameters for publishing a message, including t
 
 Pass the parameters to the `publish` method of the `AWS.SNS` client class. Create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the response in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -65,7 +65,7 @@ publishTextPromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_publishtotopic.js
 ```
 

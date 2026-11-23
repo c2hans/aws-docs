@@ -37,13 +37,13 @@ The v2 plugin ships with `legacy = 1` in `/etc/dnf/plugins/supportinfo.conf`. In
 
 1. Install the plugin.
 
-   ```
+   ```bash
    sudo dnf install dnf-plugin-support-info
    ```
 
 1. Query a package to verify the installation.
 
-   ```
+   ```bash
    dnf supportinfo --pkg glibc
    ```
 
@@ -67,7 +67,7 @@ The v2 plugin ships with `legacy = 1` in `/etc/dnf/plugins/supportinfo.conf`. In
 
 Pass `--pkg` with one or more package names to display their support information.
 
-```
+```bash
 dnf supportinfo --pkg {{PACKAGE}} [{{PACKAGE}} ...]
 ```
 
@@ -76,7 +76,7 @@ dnf supportinfo --pkg {{PACKAGE}} [{{PACKAGE}} ...]
 
 The following `dnf supportinfo` example queries a package that has reached end of life:
 
-```
+```bash
 dnf supportinfo --pkg php8.1
 ```
 
@@ -96,7 +96,7 @@ Package Note                 : Upstream end-of-life for PHP 8.1 (php8.1) is 2025
 ### To Query Multiple Packages
 <a name="dnf-supportinfo-query-multiple"></a>
 
-```
+```bash
 dnf supportinfo --pkg glibc bash openssl
 ```
 
@@ -105,7 +105,7 @@ dnf supportinfo --pkg glibc bash openssl
 
 The `--show` flag filters packages by state, support level, or both.
 
-```
+```bash
 dnf supportinfo --show {{FILTER}} [{{FILTER}} ...]
 ```
 
@@ -134,7 +134,7 @@ If a filter name exists in both state and support level categories, the plugin m
 
 Run `--list-filters` to see all valid filter values grouped by category:
 
-```
+```bash
 dnf supportinfo --list-filters
 ```
 
@@ -155,7 +155,7 @@ Support level filters:
 ### To Filter Installed Packages
 <a name="dnf-supportinfo-filter-installed"></a>
 
-```
+```bash
 dnf supportinfo --show installed
 ```
 
@@ -172,14 +172,14 @@ glibc                            2.34-231.amzn2023.0.1              installed   
 ### To Filter Installed Packages at a Specific Support Level
 <a name="dnf-supportinfo-filter-installed-level"></a>
 
-```
+```bash
 dnf supportinfo --show installed eos
 ```
 
 ### To Use Prefix Syntax for Disambiguation
 <a name="dnf-supportinfo-filter-prefix"></a>
 
-```
+```bash
 dnf supportinfo --show state:installed support:full_support
 ```
 
@@ -191,13 +191,13 @@ For scripting and automation, `--showjson` and `--showxml` produce machine-reada
 ### To Get JSON Output
 <a name="dnf-supportinfo-json-output"></a>
 
-```
+```bash
 dnf supportinfo --pkg nodejs20 --showjson
 ```
 
 The output contains the package's current phase, origin, and full timeline with support level details:
 
-```
+```json
 {
   "name": "nodejs20",
   "version": "20.20.2-1.amzn2023.0.2",
@@ -226,7 +226,7 @@ The output contains the package's current phase, origin, and full timeline with 
 ### To Get XML Output
 <a name="dnf-supportinfo-xml-output"></a>
 
-```
+```bash
 dnf supportinfo --pkg nodejs20 --showxml
 ```
 
@@ -255,7 +255,7 @@ When the cache expires:
 
 Download and cache the latest support info data:
 
-```
+```bash
 dnf supportinfo --sync
 ```
 
@@ -264,7 +264,7 @@ Use this for automation and cron jobs that need up-to-date support data without 
 ### To Clear the Cache
 <a name="dnf-supportinfo-clean-cache"></a>
 
-```
+```bash
 dnf supportinfo --clean-cache
 ```
 
@@ -281,7 +281,7 @@ If you enable [legacy mode](#dnf-supportinfo-migration-from-legacy), run `sudo d
 
 The plugin reads configuration from `/etc/dnf/plugins/supportinfo.conf`. The following example shows the recommended configuration with legacy mode disabled:
 
-```
+```ini
 [main]
 # Required: URL to support info XML (DNF variables like $awsregion are resolved)
 baseurl = https://cdn.amazonlinux.com/al2023/core/AL2023-supportinfo-1.0.xml
@@ -347,13 +347,13 @@ To keep legacy behavior after the transition, set `legacy = 1` in `/etc/dnf/plug
 
 **Resolution:** Sync the cache manually:
 
-```
+```bash
 dnf supportinfo --sync
 ```
 
 If the issue persists, clear and re-sync:
 
-```
+```bash
 dnf supportinfo --clean-cache
 dnf supportinfo --sync
 ```
@@ -365,7 +365,7 @@ dnf supportinfo --sync
 
 **Resolution:** The plugin creates the legacy file only when you set `legacy = 1` and run `--sync` at least once:
 
-```
+```bash
 sudo dnf supportinfo --sync
 ```
 

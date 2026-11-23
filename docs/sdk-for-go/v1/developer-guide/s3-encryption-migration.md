@@ -29,13 +29,13 @@ If your applications use the Go module dependency system introduced in Go 1.11, 
 
 First, update your SDK module dependency.
 
-```
+```go
 $ go get github.com/aws/aws-sdk-go@latest
 ```
 
 Next, validate your dependency has correctly updated to the required minimum version.
 
-```
+```go
 $ go list -m github.com/aws/aws-sdk-go
 github.com/aws/aws-sdk-go v1.34.0
 ```
@@ -49,13 +49,13 @@ If your application uses `GOPATH` to manage its dependencies, you must take the 
 
 First, update your SDK `GOPATH` source code.
 
-```
+```go
 $ go get -u github.com/aws/aws-sdk-go
 ```
 
 Next, ensure the SDK source path to the release (v1.34.0) or later ([https://github.com/aws/aws-sdk-go/releases](https://github.com/aws/aws-sdk-go/releases)).
 
-```
+```go
 $ cd $GOPATH/src/github.com/aws/aws-sdk-go
 $ git fetch
 $ go checkout v1.34.0
@@ -77,7 +77,7 @@ Applications that use [NewKMSKeyGenerator](https://docs.aws.amazon.com/sdk-for-g
 
  *Pre-migration*
 
-```
+```go
 sess := session.Must(session.NewSession())
 kmsClient := kms.New(sess)
 cmkID := "1234abcd-12ab-34cd-56ef-1234567890ab"
@@ -87,7 +87,7 @@ cipherDataGenerator := s3crypto.NewKMSKeyGenerator(kmsClient, cmkID)
 
  *Post-migration*
 
-```
+```go
 sess := session.Must(session.NewSession())
 kmsClient := kms.New(sess)
 cmkID := "1234abcd-12ab-34cd-56ef-1234567890ab"
@@ -101,7 +101,7 @@ cipherDataGenerator := s3crypto.NewKMSContextKeyGenerator(kmsClient, cmkID, matD
 
  *Pre-migration*
 
-```
+```go
 sess := session.Must(session.NewSession())
 kmsClient := kms.New(sess)
 cmkID := "1234abcd-12ab-34cd-56ef-1234567890ab"
@@ -114,7 +114,7 @@ cipherDataGenerator := s3crypto.NewKMSKeyGeneratorWithMatDesc(kmsClient, cmkID, 
 
  *Post-migration*
 
-```
+```go
 sess := session.Must(session.NewSession())
 kmsClient := kms.New(sess)
 cmkID := "1234abcd-12ab-34cd-56ef-1234567890ab"
@@ -142,13 +142,13 @@ Due to limitations in the Go standard library, objects must be read into memory 
 
  *Pre-migration*
 
-```
+```go
 contentCipherBuilder := s3crypto.AESCBCContentCipherBuilder(cipherDataGenerator, s3crypto.AESCBCPadder)
 ```
 
  *Post-migration*
 
-```
+```go
 contentCipherBuilder := s3crypto.AESGCMContentCipherBuilderV2(cipherDataGenerator)
 ```
 
@@ -156,13 +156,13 @@ contentCipherBuilder := s3crypto.AESGCMContentCipherBuilderV2(cipherDataGenerato
 
  *Pre-migration*
 
-```
+```go
 contentCipherBuilder := s3crypto.AESGCMContentCipherBuilder(cipherDataGenerator, s3crypto.AESCBCPadder)
 ```
 
  *Post-migration*
 
-```
+```go
 contentCipherBuilder := s3crypto.AESGCMContentCipherBuilderV2(cipherDataGenerator)
 ```
 
@@ -175,13 +175,13 @@ The V2 encryption client constructor adds an error interface type as an addition
 
  *Pre-migration*
 
-```
+```go
 encryptionClient := s3crypto.NewEncryptionClient(sess, contentCipherBuilder)
 ```
 
  *Post-migration*
 
-```
+```go
 encryptionClient, err := s3crypto.NewEncryptionClientV2(sess, contentCipherBuilder)
 if err != nil {
     panic(err)
@@ -195,7 +195,7 @@ Clients that utilize custom client configuration options will be required to upd
 
  **Pre-migration**
 
-```
+```go
 // example setting an alternative SaveStrategy
 encryptionClient := s3crypto.NewEncryptionClient(cipherDataGenerator, contentCipherBuilder, func(o *s3crypto.EncryptionClient) {
     // Set Instruction File Save Strategy
@@ -205,7 +205,7 @@ encryptionClient := s3crypto.NewEncryptionClient(cipherDataGenerator, contentCip
 
  **Post-migration**
 
-```
+```go
 // example setting an alternative SaveStrategy
 encryptionClient, err := s3crypto.NewEncryptionClientV2(sess, contentCipherBuilder, func(o *s3crypto.EncryptionClientOptions) {
     // Set Instruction File Save Strategy
@@ -223,7 +223,7 @@ The V2 decryption client now requires that an application registers the content 
 
  **Step 1: Instantiate a CryptoRegistry**
 
-```
+```go
 registry := s3crypto.NewCryptoRegistry()
 ```
 
@@ -231,7 +231,7 @@ registry := s3crypto.NewCryptoRegistry()
 
  *To read content encrypted using V1 AESGCMContentCipherBuilder or V2 AESGCMContentCipherBuilderV2:*
 
-```
+```go
 if err := s3crypto.RegisterAESGCMContentCipher(registry); err != nil {
    panic(err)
 }
@@ -239,7 +239,7 @@ if err := s3crypto.RegisterAESGCMContentCipher(registry); err != nil {
 
  *To read content encrypted using V1 AESCBCContentCipherBuilder:*
 
-```
+```go
 padder := s3crypto.AESCBCPadder // Use the padder provided to AESCBCContentCipherBuilder
 
  if err := s3crypto.RegisterAESCBCContentCipher(registry, padder); err != nil {
@@ -251,7 +251,7 @@ padder := s3crypto.AESCBCPadder // Use the padder provided to AESCBCContentCiphe
 
 If your applications implements or uses a custom content cipher implementation, you may register that implementation using the CryptoRegistry’s [AddCEK](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3crypto/#CryptoRegistry.AddCEK) method. If you require custom padders for your cipher, they can be registered using [AddPadder](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3crypto/#CryptoRegistry.AddPadder).
 
-```
+```go
 if err := registry.AddCEK("CustomCEK", NewCustomCEK); err != nil {
     panic(err)
 }
@@ -267,7 +267,7 @@ if err := registry.AddPadder("CustomPadder", NewCustomPadder); err != nil {
 
 Your application can opt to limit the CMK that is used when calling the KMS `Decrypt` API. Two registration functions allow the selection of the desired behavior. [RegisterKMSContextWrapWithCMK](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3crypto/#RegisterKMSContextWrapWithCMK) and [RegisterKMSContextWrapWithAnyCMK](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3crypto/#RegisterKMSContextWrapWithAnyCMK). Only one of these two methods should be used, and attempting to use both functions with a single registry will result in a runtime error.
 
-```
+```go
 // Use RegisterKMSContextWrapWithCMK to limit the KMS Decrypt to a single CMK
 if err := s3crypto.RegisterKMSContextWrapWithCMK(registry, kms.New(sess), "key-id"); err != nil {
     panic(err)
@@ -283,7 +283,7 @@ if err := s3crypto.RegisterKMSContextWrapWithAnyCMK(registry, kms.New(sess)); er
 
 Your application can opt to limit the CMK that is used when calling the KMS Decrypt API. Two registration functions allow the selection of the desired behavior. [RegisterKMSWrapWithCMK](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3crypto/#RegisterKMSWrapWithCMK) and [RegisterKMSWrapWithAnyCMK](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3crypto/#RegisterKMSWrapWithAnyCMK). Use only one of these methods. Attempting to register both functions into the registry will result in a runtime error.
 
-```
+```go
 // Use RegisterKMSWrapWithCMK to limit the KMS Decrypt Call to a single CMK
 if err := s3crypto.RegisterKMSWrapWithCMK(registry, kms.New(sess), "key-id"); err != nil {
     panic(err)
@@ -299,7 +299,7 @@ if err := s3crypto.RegisterKMSWrapWithAnyCMK(registry, kms.New(sess)); err != ni
 
 If your applications implements or uses a custom key wrapping implementation, you may register that implementation using the CryptoRegistry’s [AddWrap](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3crypto/#CryptoRegistry.AddWrap) method.
 
-```
+```go
 if err := registry.AddWrap("CustomWrap", NewCustomWrap); err != nil {
     panic(err)
 }
@@ -309,7 +309,7 @@ if err := registry.AddWrap("CustomWrap", NewCustomWrap); err != nil {
 
 After registering your applications required content decryption and key wrapping algorithms to the CryptoRegistry, you can now construct a V2 decryption client using [NewDecryptionClientV2](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3crypto/#NewDecryptionClientV2).
 
-```
+```go
 decryptionClient, err := s3crypto.NewDecryptionClientV2(sess, registry)
 if err != nil {
     panic(err)
@@ -325,7 +325,7 @@ Clients that use custom client configuration options are required to update thei
 
  *Pre-migration*
 
-```
+```go
 // example setting an alternative LoadStrategy
 decryptionClient := s3crypto.NewDecryptionClient(sess, func(o *s3crypto.DecryptionClient) {
     // Set Instruction File Load Strategy
@@ -335,7 +335,7 @@ decryptionClient := s3crypto.NewDecryptionClient(sess, func(o *s3crypto.Decrypti
 
  *Post-migration*
 
-```
+```go
 // example setting an alternative LoadStrategy
 decryptionClient, err := s3crypto.NewDecryptionClientV2(sess, registry, func(o *s3crypto.DecryptionClientOptions) {
     // Set Instruction File Load Strategy

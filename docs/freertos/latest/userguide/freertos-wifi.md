@@ -83,7 +83,7 @@ Before you use the Wi-Fi library, you need to initialize some board-specific com
 
 1. Remove the sample Wi-Fi connection logic in `main.c` if your application handles Wi-Fi connections. Replace the following `DEMO_RUNNER_RunDemos()` function call:
 
-   ```
+   ```C
    if( SYSTEM_Init() == pdPASS )
        {
        ...
@@ -94,7 +94,7 @@ Before you use the Wi-Fi library, you need to initialize some board-specific com
 
    With a call to your own application:
 
-   ```
+   ```C
    if( SYSTEM_Init() == pdPASS )
        {
        ...
@@ -122,7 +122,7 @@ For a full API reference, see [Wi-Fi API Reference](https://docs.aws.amazon.com/
 ### Connecting to a known AP
 <a name="w2aac31b9c13c53c21b3"></a>
 
-```
+```C
 #define clientcredentialWIFI_SSID    "MyNetwork"
 #define clientcredentialWIFI_PASSWORD   "hunter2"
 
@@ -167,7 +167,7 @@ else
 ### Scanning for nearby APs
 <a name="w2aac31b9c13c53c21b5"></a>
 
-```
+```C
 WIFINetworkParams_t xNetworkParams;
 WIFIReturnCode_t xWifiStatus;
 

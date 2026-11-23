@@ -8,6 +8,8 @@ The Kubernetes control plane managed by Amazon EKS runs inside an EKS-managed VP
 
 ![EKS control plane architecture with API servers and etcd across three Availability Zones.](https://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-eks-auto-mode/images/image4.png)
 
+Figure 3: Amazon EKS high level architecture
+
 ## Kubernetes API data
 <a name="kubernetes-api-data"></a>
 

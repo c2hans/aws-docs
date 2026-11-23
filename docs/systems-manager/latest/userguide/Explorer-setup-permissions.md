@@ -19,7 +19,7 @@ If you configure Explorer to display data from multiple accounts and Regions by 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -71,7 +71,7 @@ If you prefer, you can specify read-only permission by adding the following inli
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -101,7 +101,7 @@ Create a permission using the following and add it to your users, groups, or rol
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -149,7 +149,7 @@ You can also restrict access to OpsItems by using an inline IAM policy that spec
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -175,7 +175,7 @@ Here is an example that specifies API operations for viewing and updating OpsIte
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

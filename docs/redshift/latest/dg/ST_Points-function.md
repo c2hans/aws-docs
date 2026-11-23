@@ -37,7 +37,7 @@ If *geom* is empty, then the empty multipoint is returned.
 
 The following SQL examples construct a multipoint geometry from the input geometry. The result is a multipoint geometry containing the nonempty points in the input geometry.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Points(ST_SetSRID(ST_GeomFromText('LINESTRING(1 0,2 0,3 0)'), 4326)));
 ```
 
@@ -47,7 +47,7 @@ st_asewkt
 SRID=4326;MULTIPOINT((1 0),(2 0),(3 0))
 ```
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Points(ST_SetSRID(ST_GeomFromText('MULTIPOLYGON(((0 0,1 0,0 1,0 0)))'), 4326)));
 ```
 

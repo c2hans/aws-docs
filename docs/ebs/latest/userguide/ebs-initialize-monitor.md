@@ -47,13 +47,13 @@ Use the [ describe-volume-status](https://docs.aws.amazon.com/cli/latest/referen
 
 For example, the following command checks the initialization status for volume `vol-11111111111111111`, which was created with an Amazon EBS Provisioned Rate for Volume Initialization.
 
-```
+```bash
 aws ec2 describe-volume-status --volume-ids {{vol-11111111111111111}}
 ```
 
 The following is example output.
 
-```
+```json
 {
     "VolumeStatuses": [
         {
@@ -96,7 +96,7 @@ Use the [Get-EC2VolumeStatus](https://docs.aws.amazon.com/powershell/latest/refe
 
 For example, the following command checks the initialization status for volume `vol-11111111111111111`, which was created with an Amazon EBS Provisioned Rate for Volume Initialization.
 
-```
+```powershell
 (Get-EC2VolumeStatus `
     -Region us-east-1 `
     -VolumeId vol-11111111111111111).InitializationStatusDetails |
@@ -143,7 +143,7 @@ For more information about the event, see [EBS volume initialization event](ebs-
 
    1. For **Event pattern**, add the following:
 
-      ```
+      ```json
       {
           "detail-type": ["EBS Volume Notification"],
           "source": ["aws.ec2"],

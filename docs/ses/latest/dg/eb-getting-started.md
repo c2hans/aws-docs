@@ -37,6 +37,6 @@ The following procedure shows you how to get started with Mail Manager using the
 
 1. Now that you've created your first traffic policy and rule set, you'll be able to create your first ingress endpoint. On the *Get set up* page, select **Create ingress endpoint** on the *Create an ingress endpoint* card.
 
-   1. Part of the workflow on the *Email ingress endpoint* page will be to assign the traffic policy and rule set you just created to the ingress endpoint. If you need additional information, see [Creating an ingress endpoint in the SES console](eb-ingress.md#eb-ingress-create-console).
+   1. Part of the workflow on the *Email ingress endpoint* page will be to assign the traffic policy and rule set you just created to the ingress endpoint. If you need additional information, see [Creating and managing ingress points](eb-ingress.md#eb-ingress-create-console).
 
 With your first ingress endpoint created, you can start using Mail Manager and utilize its other features such as SMTP relays and email archiving. You can also create additional ingress endpoints with unique traffic policies and rule sets to further customize how you manage all of your incoming email.

@@ -26,7 +26,7 @@ The following code example shows how to use `Get-ACMCertificate`.
 **Tools for PowerShell V5**
 **Example 1: This example shows how to return a certificate and its chain using the ARN of the certificate.**
 
-```
+```powershell
 Get-ACMCertificate -CertificateArn "arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012"
 ```
 +  For API details, see [GetCertificate](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -39,7 +39,7 @@ The following code example shows how to use `Get-ACMCertificateDetail`.
 **Tools for PowerShell V5**
 **Example 1: Returns details of the specified certificate.**
 
-```
+```powershell
 Get-ACMCertificateDetail -CertificateArn "arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012"
 ```
 **Output:**
@@ -73,7 +73,7 @@ The following code example shows how to use `Get-ACMCertificateList`.
 **Tools for PowerShell V5**
 **Example 1: Retrieves a list of all your certificate ARNs and the domain name for each. The cmdlet will automatically paginate to retrieve all the ARNs. To manually control pagination, use the -MaxItem parameter to control how many certificate ARNs are returned for each service call and the -NextToken parameter to indicate the starting point for each call.**
 
-```
+```powershell
 Get-ACMCertificateList
 ```
 **Output:**
@@ -85,12 +85,12 @@ arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789
 ```
 **Example 2: Retrieves a list of all your certificate ARNs where the certificate status matches on the supplied states.**
 
-```
+```powershell
 Get-ACMCertificateList -CertificateStatus "VALIDATION_TIMED_OUT","FAILED"
 ```
 **Example 3: This example returns a list of all certificates in the us-east-1 region that have a key type of RSA\_2048, and an extended key usage, or purpose, of CODE\_SIGNING. You can find the values for these filtering parameters in the ListCertificates Filters API reference topic: https://docs.aws.amazon.com/acm/latest/APIReference/API\_Filters.html.**
 
-```
+```powershell
 Get-ACMCertificateList -Region us-east-1 -Includes_KeyType RSA_2048 -Includes_ExtendedKeyUsage CODE_SIGNING
 ```
 **Output:**
@@ -117,7 +117,7 @@ The following code example shows how to use `New-ACMCertificate`.
 **Tools for PowerShell V5**
 **Example 1: Creates a new certificate. The service returns the ARN of the new certificate.**
 
-```
+```powershell
 New-ACMCertificate -DomainName "www.example.com"
 ```
 **Output:**
@@ -127,7 +127,7 @@ arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789
 ```
 **Example 2: Creates a new certificate. The service returns the ARN of the new certificate.**
 
-```
+```powershell
 New-ACMCertificate -DomainName "www.example.com" -SubjectAlternativeName "example.com","www.example.net"
 ```
 **Output:**
@@ -145,7 +145,7 @@ The following code example shows how to use `Remove-ACMCertificate`.
 **Tools for PowerShell V5**
 **Example 1: Deletes the certificate identified by the supplied ARN and the associated private key. The cmdlet will prompt for confirmation before proceeding; add the -Force switch to suppress confirmation.**
 
-```
+```powershell
 Remove-ACMCertificate -CertificateArn "arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012"
 ```
 +  For API details, see [DeleteCertificate](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -158,7 +158,7 @@ The following code example shows how to use `Send-ACMValidationEmail`.
 **Tools for PowerShell V5**
 **Example 1: Requests that the email to validate domain ownership for 'www.example.com' be sent. If your shell's $ConfirmPreference is set to 'Medium' or lower, the cmdlet will prompt for confirmation before proceeeding. Add the -Force switch to suppress confirmation prompts.**
 
-```
+```powershell
 $params = @{
     CertificateArn="arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012"
     Domain="www.example.com"

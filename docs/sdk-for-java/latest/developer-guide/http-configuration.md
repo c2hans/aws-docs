@@ -74,7 +74,7 @@ Following are four ways to set the defaults mode for your application.
 
 Use the service client builder to configure the defaults mode directly on the service client. The following example sets the defaults mode to `auto` for the `DynamoDbClient`.
 
-```
+```java
 DynamoDbClient ddbClient = DynamoDbClient.builder()
                             .defaultsMode(DefaultsMode.AUTO)
                             .build();
@@ -87,13 +87,13 @@ You can use the `aws.defaultsMode` system property to specify the defaults mode.
 
 The following example shows you how to set the defaults mode to `auto` using a system property set in Java.
 
-```
+```java
 System.setProperty("aws.defaultsMode", "auto");
 ```
 
 The following example demonstrates how you set the defaults mode to `auto` using a `-D` option of the `java` command.
 
-```
+```bash
 java -Daws.defaultsMode=auto
 ```
 

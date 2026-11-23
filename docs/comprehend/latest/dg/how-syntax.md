@@ -39,7 +39,7 @@ The operations return tokens that identify the word and the part of speech that 
 
 The following is the structure of the list of syntax tokens. One syntax token is generated for each word in the document.
 
-```
+```json
 {
    "SyntaxTokens": [
       {

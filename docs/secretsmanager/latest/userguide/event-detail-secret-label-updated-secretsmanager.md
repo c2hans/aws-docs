@@ -10,7 +10,7 @@ The following example shows the structure of the `Secret Label Updated` event. F
 
 The `source` and `detail-type` fields are included below because they contain specific values for Secrets Manager events. For definitions of the other metadata fields that are included in all events, see [Event structure](https://docs.aws.amazon.com/eventbridge/latest/ref/overview-event-structure.html) in the *Amazon EventBridge Events Reference*.
 
-```
+```json
 {
   "detail-type": "Secret Label Updated",
   "source": "aws.secretsmanager",
@@ -42,7 +42,7 @@ The unique identifier of the new version of the secret.
 **Example Secret Label Updated event**  <a name="event-detail-secret-label-updated.example"></a>
 The following example shows a `Secret Label Updated` event for a secret whose `AWSCURRENT` label moved to a new version.
 
-```
+```json
 {
   "version": "0",
   "id": "6a7e8feb-b491-4cf7-a9f1-bf3703467718",

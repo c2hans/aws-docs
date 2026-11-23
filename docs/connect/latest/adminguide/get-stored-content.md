@@ -67,7 +67,7 @@ You can configure the **Get stored content** block by using the Connect Customer
 
 The following code example shows how to use the `LoadContactContent` in the Connect Customer Flow language.
 
-```
+```json
 {
       "Parameters": {
         "ContentType": enum "EmailMessage"

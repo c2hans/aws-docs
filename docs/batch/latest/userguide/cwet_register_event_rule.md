@@ -33,7 +33,7 @@ If you use the AWS Management Console to create an event rule, the console autom
 
 1. Paste the following event pattern into the text area.
 
-   ```
+   ```json
    {
      "source": [
        "aws.batch"

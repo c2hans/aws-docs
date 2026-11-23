@@ -9,7 +9,7 @@ Invokes a flow module. *Flow modules* are reusable sections of a flow. You use t
 ## Parameter object
 <a name="invoke-flow-module-parameter-object"></a>
 
-```
+```json
 {
     "FlowModuleId": The flow module ID or flow module ARN to be invoked. May be defined statically or dynamically.
 }

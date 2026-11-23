@@ -34,7 +34,7 @@ INTEGER
 
 The following example compares timestamps and shows the results of the comparison.
 
-```
+```sql
 SELECT TIMESTAMP_CMP('2008-01-24 06:43:29', '2008-01-24 06:43:29'), TIMESTAMP_CMP('2008-01-24 06:43:29', '2008-02-18 02:36:48'), TIMESTAMP_CMP('2008-02-18 02:36:48', '2008-01-24 06:43:29');
 
 timestamp_cmp  | timestamp_cmp | timestamp_cmp
@@ -44,7 +44,7 @@ timestamp_cmp  | timestamp_cmp | timestamp_cmp
 
 The following example compares the LISTTIME and SALETIME for a listing. The value for TIMESTAMP\_CMP is `-1` for all listings because the timestamp for the sale is after the timestamp for the listing.
 
-```
+```sql
 select listing.listid, listing.listtime,
 sales.saletime, timestamp_cmp(listing.listtime, sales.saletime)
 from listing, sales
@@ -69,7 +69,7 @@ limit 10;
 
 This example shows that TIMESTAMP\_CMP returns a 0 for identical timestamps:
 
-```
+```sql
 select listid, timestamp_cmp(listtime, listtime)
 from listing
 order by 1 , 2

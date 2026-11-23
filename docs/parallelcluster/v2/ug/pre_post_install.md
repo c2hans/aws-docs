@@ -18,7 +18,7 @@ If a pre-install or post-install action fails, the instance bootstrap also fails
 
 You can differentiate between running head and compute nodes. Source the `/etc/parallelcluster/cfnconfig` file and evaluate the `cfn_node_type` environment variable that have a value of "`MasterServer`" and "`ComputeFleet`" for the head and compute nodes, respectively.
 
-```
+```bash
 #!/bin/bash
 
 . "/etc/parallelcluster/cfnconfig"
@@ -40,7 +40,7 @@ esac
 
 The following configuration settings are used to define pre-install and post-install actions and arguments.
 
-```
+```ini
 # URL to a preinstall script. This is run before any of the boot_as_* scripts are run
 # (no default)
 pre_install = https://{{<bucket-name>}}.s3.amazonaws.com/{{my-pre-install-script.sh}}
@@ -73,7 +73,7 @@ The following steps create a simple post-install script that installs the R pack
 
 1. Create a script.
 
-   ```
+   ```bash
    #!/bin/bash
 
    echo "post-install script has $# arguments"
@@ -87,7 +87,7 @@ The following steps create a simple post-install script that installs the R pack
 
 1. Upload the script with the correct permissions to Amazon S3. If public read permissions aren't appropriate for you, use either [`s3_read_resource`](cluster-definition.md#s3-read-resource) or [`s3_read_write_resource`](cluster-definition.md#s3-read-write-resource) parameters to grant access. For more information, see [Working with Amazon S3](s3_resources.md).
 
-   ```
+   ```sh
    $ aws s3 cp --acl public-read {{/path/to/myscript.sh}} s3://{{bucket-name/myscript.sh}}
    ```
 **Important**
@@ -95,7 +95,7 @@ If the script was edited on Windows, line endings must be changed from CRLF to L
 
 1. Update the AWS ParallelCluster configuration to include the new post-install action.
 
-   ```
+   ```ini
    [cluster default]
    ...
    post_install = https://{{bucket-name}}.s3.amazonaws.com/{{myscript.sh}}
@@ -104,7 +104,7 @@ If the script was edited on Windows, line endings must be changed from CRLF to L
 
    If the bucket doesn't have public-read permission, use `s3` as the URL protocol.
 
-   ```
+   ```ini
    [cluster default]
    ...
    post_install = s3://{{bucket-name}}/{{myscript.sh}}
@@ -113,13 +113,13 @@ If the script was edited on Windows, line endings must be changed from CRLF to L
 
 1. Launch the cluster.
 
-   ```
+   ```sh
    $ pcluster create mycluster
    ```
 
 1. Verify the output.
 
-   ```
+   ```sh
    $ less /var/log/cfn-init.log
    2019-04-11 10:43:54,588 [DEBUG] Command runpostinstall output: post-install script has 4 arguments
    arg: s3://{{bucket-name}}/test.sh

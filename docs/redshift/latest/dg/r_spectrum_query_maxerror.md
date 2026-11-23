@@ -31,7 +31,7 @@ ab
 
 The following commands set the maximum number of errors to 1 and perform the query.
 
-```
+```SQL
 set spectrum_query_maxerror to 1;
 SELECT my_string FROM orc_data;
 ```

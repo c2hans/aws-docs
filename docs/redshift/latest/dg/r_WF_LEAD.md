@@ -49,7 +49,7 @@ The LEAD window function supports expressions that use any of the Amazon Redshif
 
  The following example provides the commission for events in the SALES table for which tickets were sold on January 1, 2008 and January 2, 2008 and the commission paid for ticket sales for the subsequent sale. The following example uses the TICKIT sample database. For more information, see [Sample database](c_sampledb.md).
 
-```
+```sql
 SELECT eventid, commission, saletime, LEAD(commission, 1) over ( ORDER BY saletime ) AS next_comm
 FROM sales
 WHERE saletime BETWEEN '2008-01-09 00:00:00' AND '2008-01-10 12:59:59'
@@ -73,7 +73,7 @@ LIMIT 10;
 
  The following example provides the maximum difference for the commision for events in the SALES table for and the commission paid for ticket sales for the subsequent sale for the same event. This example shows how to use LEAD with a GROUP BY clause. Since window functions aren't allowed in aggregate clauses, this example uses a subquery. The following example uses the TICKIT sample database. For more information, see [Sample database](c_sampledb.md).
 
-```
+```sql
 SELECT eventid, eventname, max(next_comm_diff) as max_commission_difference
 FROM
 (

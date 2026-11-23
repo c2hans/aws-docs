@@ -12,7 +12,7 @@ If you try to override these resource requirements, you might see the following 
 
 To correct this, specify the memory and vCPU requirements in the [resourceRequirements](https://docs.aws.amazon.com/batch/latest/APIReference/API_ContainerOverrides.html#Batch-Type-ContainerOverrides-resourceRequirements) member of the [containerOverrides](https://docs.aws.amazon.com/batch/latest/APIReference/API_ContainerOverrides.html). For example, if your memory and vCPU overrides are specified in the following lines.
 
-```
+```json
 "containerOverrides": {
    "memory": {{8192}},
    "vcpus": {{4}}
@@ -21,7 +21,7 @@ To correct this, specify the memory and vCPU requirements in the [resourceRequir
 
 Change them to the following:
 
-```
+```json
 "containerOverrides": {
    "resourceRequirements": [
       {
@@ -38,7 +38,7 @@ Change them to the following:
 
 Do the same change to the memory and vCPU requirements that are specified in the [containerProperties](https://docs.aws.amazon.com/batch/latest/APIReference/API_ContainerProperties.html) object in the job definition. For example, if your memory and vCPU requirements are specified in the following lines.
 
-```
+```json
 {
    "containerProperties": {
       "memory": {{4096}},
@@ -48,7 +48,7 @@ Do the same change to the memory and vCPU requirements that are specified in the
 
 Change them to the following:
 
-```
+```json
 "containerProperties": {
    "resourceRequirements": [
       {

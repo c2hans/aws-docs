@@ -51,7 +51,7 @@ Each event pattern is a JSON object that contains:
 
 The following event pattern matches events when the `AWSCURRENT` label moves to a new version, which indicates the active secret value has changed:
 
-```
+```json
 {
   "source": ["aws.secretsmanager"],
   "detail-type": ["Secret Label Updated"],
@@ -63,7 +63,7 @@ The following event pattern matches events when the `AWSCURRENT` label moves to 
 
 The following event pattern matches label changes only for secrets whose names start with `MyTestSecret`:
 
-```
+```json
 {
   "source": ["aws.secretsmanager"],
   "detail-type": ["Secret Label Updated"],
@@ -75,7 +75,7 @@ The following event pattern matches label changes only for secrets whose names s
 
 The following event pattern combines filters to match only when `AWSCURRENT` changes on secrets with names starting with `prod/`:
 
-```
+```json
 {
   "source": ["aws.secretsmanager"],
   "detail-type": ["Secret Label Updated"],
@@ -88,7 +88,7 @@ The following event pattern combines filters to match only when `AWSCURRENT` cha
 
 If you use custom staging labels in your workflows, you can match events for those labels. The following example matches when a label named `MyLabel` is moved:
 
-```
+```json
 {
   "source": ["aws.secretsmanager"],
   "detail-type": ["Secret Label Updated"],

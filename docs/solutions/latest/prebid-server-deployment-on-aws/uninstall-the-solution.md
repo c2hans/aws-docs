@@ -14,7 +14,7 @@ The solution provides a `destroy.sh` script that automates the cleanup process a
 
 Run the destroy script from the solution root directory:
 
-```
+```bash
 ./destroy.sh --profile <your-aws-cli-profile> --region <your-region>
 ```
 
@@ -28,7 +28,7 @@ The script deletes the stacks with the AWS CLI (`aws cloudformation delete-stack
 
 To skip the confirmation prompts, add `--force`. With `--force`, the script starts deleting the stacks without asking you to confirm.
 
-```
+```bash
 ./destroy.sh --force --profile <your-aws-cli-profile> --region <your-region>
 ```
 
@@ -52,7 +52,7 @@ If the automatic Fabric Link cleanup fails (for example, if the link was already
 
 To see what would be destroyed without actually deleting resources:
 
-```
+```bash
 ./destroy.sh --dry-run --profile <your-aws-cli-profile> --region <your-region>
 ```
 
@@ -61,7 +61,7 @@ To see what would be destroyed without actually deleting resources:
 
 For all available options and usage details:
 
-```
+```bash
 ./destroy.sh --help
 ```
 
@@ -81,14 +81,14 @@ You can uninstall the Guidance for Deploying a Prebid Server on AWS solution fro
 
 If you deployed with RTB Fabric connectivity, delete the Fabric Link first, because it is not a CloudFormation resource:
 
-```
+```bash
 ./deployment/simulator-fabric-link.sh delete --stack-name prebid-server-deployment-on-aws \
     --profile <your-aws-cli-profile> --region <your-region>
 ```
 
 Then run the following commands from the `source/infrastructure` directory:
 
-```
+```bash
 npm ci && npm run build
 npx cdk destroy --all --profile <your-aws-cli-profile> --region <your-region>
 ```
@@ -121,7 +121,7 @@ Follow these steps to delete each Amazon S3 bucket.
 
 To delete the S3 bucket using AWS CLI, run the following command:
 
-```
+```bash
 $ aws s3 rb s3://<bucket-name> --force
 ```
 
@@ -138,14 +138,14 @@ In rare cases, RTB Fabric resources may become orphaned if the automatic cleanup
 
 Check for orphaned Fabric Links by listing links associated with your Requester Gateway:
 
-```
+```bash
 aws rtbfabric list-links --gateway-id <requester-gateway-id> \
     --profile <your-profile> --region <your-region>
 ```
 
 Check for orphaned SSM parameters:
 
-```
+```bash
 aws ssm get-parameter \
     --name "/<stack-name>/fabric-link/link-id" \
     --profile <your-profile> --region <your-region>
@@ -156,7 +156,7 @@ aws ssm get-parameter \
 
 If a Fabric Link exists but was not cleaned up automatically, delete it manually:
 
-```
+```bash
 # Get the link ID from SSM (if still present)
 LINK_ID=$(aws ssm get-parameter \
     --name "/prebid-server-deployment-on-aws/fabric-link/link-id" \
@@ -180,7 +180,7 @@ If the link is stuck in `PENDING` state and the `delete-link` command fails, wai
 
 After manually removing the Fabric Link, retry the stack deletion:
 
-```
+```bash
 aws cloudformation delete-stack \
     --stack-name prebid-server-deployment-on-aws \
     --profile <your-profile> --region <your-region>

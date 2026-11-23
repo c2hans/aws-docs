@@ -56,7 +56,7 @@ Copy the Cluster Endpoint Address shown in the output. You'll need this address 
 
 ****
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
        "Statement": [{
@@ -83,7 +83,7 @@ Copy the Cluster Endpoint Address shown in the output. You'll need this address 
 
 ****
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
      "Statement": [

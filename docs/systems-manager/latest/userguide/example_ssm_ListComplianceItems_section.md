@@ -136,7 +136,7 @@ For more information, see [Learn details about Compliance](https://docs.aws.amaz
 **Tools for PowerShell V4**
 **Example 1: This example lists compliance items list for the given resource id and type, filtering compliance-type being 'Association'**
 
-```
+```powershell
 Get-SSMComplianceItemList -ResourceId i-1a2caf345f67d0dc2 -ResourceType ManagedInstance -Filter @{Key="ComplianceType";Values="Association"}
 ```
 **Output:**
@@ -157,7 +157,7 @@ Title            :
 **Tools for PowerShell V5**
 **Example 1: This example lists compliance items list for the given resource id and type, filtering compliance-type being 'Association'**
 
-```
+```powershell
 Get-SSMComplianceItemList -ResourceId i-1a2caf345f67d0dc2 -ResourceType ManagedInstance -Filter @{Key="ComplianceType";Values="Association"}
 ```
 **Output:**

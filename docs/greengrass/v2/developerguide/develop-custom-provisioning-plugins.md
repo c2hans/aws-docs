@@ -36,7 +36,7 @@ To use the `com.aws.greengrass.provisioning.DeviceIdentityInterface` interface i
     You can find the Greengrass nucleus JAR file (`Greengrass.jar`) in the `lib` folder in the ZIP file. Add this JAR file to your project.
   + To consume the Greengrass nucleus in a Maven project, add a dependency the on the `nucleus` artifact in the `com.aws.greengrass` group. You must also add the `greengrass-common` repository, because the Greengrass nucleus isn't available in the Maven Central Repository.
 
-    ```
+    ```xml
     <project {{...}}>
         {{...}}
         <repositories>
@@ -66,7 +66,7 @@ The `com.aws.greengrass.provisioning.DeviceIdentityInterface` interface has the 
 **Note**
 You can also explore these classes in the [com.aws.greengrass.provisioning package](https://github.com/aws-greengrass/aws-greengrass-nucleus/tree/main/src/main/java/com/aws/greengrass/provisioning) of the [Greengrass nucleus source code](https://github.com/aws-greengrass/aws-greengrass-nucleus) on GitHub.
 
-```
+```java
 public interface com.aws.greengrass.provisioning.DeviceIdentityInterface {
     ProvisionConfiguration updateIdentityConfiguration(ProvisionContext context)
             throws RetryableProvisioningException, InterruptedException;

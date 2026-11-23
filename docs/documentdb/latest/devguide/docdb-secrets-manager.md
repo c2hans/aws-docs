@@ -46,7 +46,7 @@ You can use IAM condition keys to enforce Amazon DocumentDB management of the pr
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

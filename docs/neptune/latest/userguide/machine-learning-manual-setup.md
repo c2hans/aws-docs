@@ -37,7 +37,7 @@ Use the [IAM console](https://console.aws.amazon.com/iam/) to create a custom `N
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -182,7 +182,7 @@ While creating this role, edit the trust relationship so that it reads as follow
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

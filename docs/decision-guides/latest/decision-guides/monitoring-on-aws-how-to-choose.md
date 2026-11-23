@@ -9,23 +9,25 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/m
 |  |  |
 | --- |--- |
 | **Purpose** | Help determine which AWS monitoring and observability services are the best fit for your organization. |
-| **Last updated** | January 12, 2024 |
+| **Last updated** | November 20, 2026 |
 | **Covered services** |  +  [AWS CloudTrail](https://aws.amazon.com/cloudtrail/getting-started/) <br />+  [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/getting-started/) <br />+  [Amazon CloudWatch Application Signals](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html) <br />+  [AWS Config](https://aws.amazon.com/config/getting-started/) <br />+  [AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/getting-started-with-control-tower.html) <br />+  [Amazon Managed Grafana](https://docs.aws.amazon.com/grafana/latest/userguide/getting-started-with-AMG.html) <br />+  [Amazon Managed Service for Prometheus](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-getting-started.html) <br />+  [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/getting-started/) <br />+  [AWS Distro for OpenTelemetry](https://aws-otel.github.io/docs/getting-started/collector) <br />+  [AWS X-Ray](https://aws.amazon.com/xray/getting-started/)   |
 
 ## Introduction
 <a name="intro"></a>
 
 Monitoring and observability are critical components for ensuring the availability, performance, reliability, and security of your cloud-based workloads and data.
-+ Monitoring involves the systematic collection and analysis of data, such as metrics, logs, and traces, to track the health and efficiency of cloud resources as well as supporting reactive incident management.
-+ Observability focuses on understanding the internal state of a system through dynamic, real-time insights, allowing for proactive issue identification and resolution.
++ Monitoring is the systematic collection and analysis of data, such as metrics, logs, and traces. It tracks the health and efficiency of cloud resources and supports reactive incident management.
++ Observability focuses on understanding the internal state of a system through dynamic, real-time insights. This understanding helps you proactively identify and resolve issues.
 
-AWS offers a range of tools and services for both monitoring and observability. They can be used to collect data, analyze metrics, and create alarms to notify you of issues. In addition, they can provide logs and metrics that you can use to identify and troubleshoot the root cause of problems.
+AWS offers a range of tools and services for both monitoring and observability. You can use them to collect data, analyze metrics, and create alarms that notify you of issues. You can also use the logs and metrics they provide to identify and troubleshoot the root cause of problems.
 
- These services integrate with more than 120 other AWS services (including Amazon EC2, Amazon EKS, Amazon ECS, Lambda, and Amazon S3) and partners, and integrates with a wide range of third-party observability and cloud management tools that use near real-time feeds of AWS-native telemetry.
+These services integrate with more than 120 other AWS services (including Amazon EC2, Amazon EKS, Amazon ECS, Lambda, and Amazon S3) and partners. They also integrate with a wide range of third-party observability and cloud management tools that use near real-time feeds of AWS-native telemetry.
 
-This guide will help you select the AWS monitoring and observability services and tools that are the best fit for your needs and your organization.
+This guide helps you select the AWS monitoring and observability services and tools that are the best fit for your needs and your organization.
 
-[![AWS Videos](https://img.youtube.com/vi/7PQv9eYCJW8?start=104&end=338/0.jpg)](https://www.youtube.com/watch?v=7PQv9eYCJW8?start=104&end=338)
+[![AWS Videos](https://img.youtube.com/vi/7PQv9eYCJW8/0.jpg)](https://www.youtube.com/watch?v=7PQv9eYCJW8)
+
+In this four-minute clip from his re:Invent 2023 presentation, senior AWS worldwide specialist Toshal Dudhwala outlines how to build an observability strategy.
 
 ## Understand
 <a name="understand"></a>
@@ -34,22 +36,35 @@ To choose the right AWS monitoring and observability tools for your needs, it ma
 
 ![Diagram showing the available options for AWS monitoring and observability](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/monitoring-and-observability.png)
 
-Start with your three key data sources: logs, metrics, and traces. The data from those sources can be consumed using Amazon CloudWatch, AWS X-Ray, or AWS Distro for OpenTelemetry (ADOT) agents.
+Start with your three key data sources: logs, metrics, and traces. You can consume the data from those sources using Amazon CloudWatch, AWS X-Ray, or AWS Distro for OpenTelemetry (ADOT) agents.
 
 Here’s when you might use each of these data collection sources:
-+ Use Amazon CloudWatch to [collect custom metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html) from your own applications to monitor operational performance, troubleshoot issues, and spot trends. You can also use the CloudWatch agent for collecting log, metrics and traces.. In addition, you can use open source tools such as Fluent D or FluentBit to collect logs and send them to CloudWatch logs.
-+ Use AWS X-Ray to perform [distributed tracing across multiple applications](https://docs.aws.amazon.com/xray/latest/devguide/xray-services.html) and systems to help find latency in a system and target it for improvement. You can use the CloudWatch agent to collect traces and send them to X-Ray.
++ Use Amazon CloudWatch to [collect custom metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html) from your own applications to monitor operational performance, troubleshoot issues, and spot trends. You can also use the CloudWatch agent to collect logs, metrics, and traces. In addition, you can use open source tools such as Fluentd or Fluent Bit to collect logs and send them to CloudWatch logs.
++ Use AWS X-Ray to perform [distributed tracing across multiple applications](https://docs.aws.amazon.com/xray/latest/devguide/xray-services.html) and systems to help find latency in a system and target it for improvement. You can use the CloudWatch agent to collect traces and send them to X-Ray. You can also enable Transaction Search to analyze spans without sampling; see the Application Signals capabilities that follow.
 + Use AWS Distro for OpenTelemetry to collect metrics and traces.
 
 **Instrumentation**
 
-There are two major categories of instrumentation available within AWS monitoring and observability services: AWS Native Services and Open Source Managed Services.
+AWS monitoring and observability services offer two major categories of instrumentation: AWS Native Services and Open Source Managed Services.
 + AWS Native Services include Amazon CloudWatch and AWS X-Ray. CloudWatch offers these key features of [Container Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html), [Lambda Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambda-Insights.html), [Contributor Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContributorInsights.html), and [Application Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-application-insights.html), that contribute to how you contextualize your data for insights and analysis.
 + Open Source Managed Services include Amazon Managed Service for Prometheus (a managed monitoring service based on and compatible with the popular Prometheus open source monitoring and alerting solution), Amazon OpenSearch Service, and AWS Distro for OpenTelemetry (which not only supports AWS X-Ray, but also Jaeger and Zipkin Tracing).
 
+Amazon Managed Service for Prometheus is a fully managed, Prometheus-compatible service for monitoring container and application metrics at scale. Amazon Managed Service for Prometheus also provides anomaly detection that uses machine learning to identify unusual patterns in your metrics, support for native histograms, and out-of-order sample ingestion. Choose Amazon Managed Service for Prometheus when you need a managed, Prometheus-compatible service that can scale to a large number of active metrics and alerting rules in a single workspace.
+
+**Application performance monitoring**
+
+Amazon CloudWatch Application Signals is a managed application performance monitoring (APM) feature that automatically instruments your applications and discovers your services, their dependencies, and the connections between them. It presents an application map of your services, and you can create and track service level objectives (SLOs) for the operations that matter most to your business. Choose Amazon CloudWatch Application Signals when you need managed APM with an automatic service map and service level objectives.
+
+Application Signals includes the following capabilities:
++ With Transaction Search, you can ingest your application trace spans as structured logs in Amazon CloudWatch. This lets you search and analyze them without relying on sampling.
++ Service Events automatically captures errors, performance anomalies, and deployment events for the services that Application Signals monitors.
++ With Dynamic Instrumentation, you can capture runtime state, such as variable values and stack traces, from a live application without restarting or redeploying it.
+
+For applications that run on Amazon EKS, the Amazon CloudWatch Observability EKS add-on enables Application Signals by default, so that application performance telemetry is collected without additional configuration.
+
 **Visualization and analysis**
 
-The data you collect and ingest with these AWS services can be visualized and analysed using the [Amazon CloudWatch Service Map](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ServiceMap.html), the [AWS X-Ray trace map](https://docs.aws.amazon.com/xray/latest/devguide/xray-console-servicemap.html), Amazon Managed Grafana and [Amazon CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html).
+The data you collect and ingest with these AWS services can be visualized and analyzed using the [Amazon CloudWatch Service Map](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ServiceMap.html), the [AWS X-Ray trace map](https://docs.aws.amazon.com/xray/latest/devguide/xray-console-servicemap.html), Amazon Managed Grafana, and [Amazon CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html).
 
 **Other services**
 
@@ -155,7 +170,7 @@ Consider the ability to aggregate and analyze data from diverse geographical loc
 ## Choose
 <a name="choose"></a>
 
-Now that you know the criteria by which you will be evaluating your monitoring and observability options, you are ready to choose which AWS monitoring and observability services might be a good fit for your organizational requirements.
+Now that you know the criteria for evaluating your monitoring and observability options, you are ready to choose which AWS monitoring and observability services might be a good fit for your organizational requirements.
 
 The following table highlights which services are optimized for which circumstances. Use the table to help determine the service that is the best fit for your organization and use case.
 
@@ -165,12 +180,12 @@ The following table highlights which services are optimized for which circumstan
 |  Application performance monitoring  |  These services provide comprehensive insights into application behavior, offer tools for identifying and resolving performance bottlenecks, aid in efficient troubleshooting, and contribute to delivering modern user experiences across distributed and web applications.   |  [Amazon CloudWatch Application Signals](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html) [Amazon Managed Service for Prometheus](https://docs.aws.amazon.com/prometheus/latest/userguide/what-is-Amazon-Managed-Service-Prometheus.html) [AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html) [Amazon CloudWatch Synthetics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html)  |
 | --- |--- |--- |
 | Infrastructure observability | These services provide a holistic view of your cloud resources, helping you make more informed decisions about resource utilization, performance optimization, and cost-efficiency.  | [Amazon CloudWatch Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html)<br />[Amazon CloudWatch Container Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html) |
-|  Logging and analysis  |  These services help you efficiently manage and analyze log data, troubleshoot, detect anomalies, support security, meeting compliance requirements, and get actionable insights into your applications and infrastructure.   |  [Amazon Cloudwatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html) [Amazon CloudWatch Logs Anomaly Detection](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/LogsAnomalyDetection.html) [Amazon Managed Grafana](https://docs.aws.amazon.com/grafana/latest/userguide/what-is-Amazon-Managed-Service-Grafana.html) [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html) [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/introduction.html)  |
+|  Logging and analysis  |  These services help you efficiently manage and analyze log data, troubleshoot, detect anomalies, support security, meet compliance requirements, and get actionable insights into your applications and infrastructure.   |  [Amazon CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html) [Amazon CloudWatch Logs Anomaly Detection](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/LogsAnomalyDetection.html) [Amazon Managed Grafana](https://docs.aws.amazon.com/grafana/latest/userguide/what-is-Amazon-Managed-Service-Grafana.html) [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html) [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/introduction.html)  |
 | --- |--- |--- |
 | Security and compliance monitoring | Optimized to provide a robust security framework, enabling proactive threat detection, continuous monitoring, compliance tracking, and audit capabilities to help safeguard your AWS resources and maintain a secure and compliant environment.  | [Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html)<br />[AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html)<br />[AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) |
 |  Network monitoring  |  These services provide visibility into network traffic, enhance security by detecting and preventing threats, enable efficient network traffic management, and support incident response activities.   |  [Amazon CloudWatch Network Monitor](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/what-is-network-monitor.html) [Amazon CloudWatch Internet Monitor](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-InternetMonitor.html) [Amazon VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html) [AWS Network Firewall](https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html)  |
 | --- |--- |--- |
-| Distributed tracing | These services provide a comprehensive view of the interactions and dependencies within your distributed applications. They enable you to diagnose performance bottlenecks, optimize application performance, and support the smooth functioning of complex systems by offering insights into how different parts of your application communicate and interact.  | [AWS Distro for OpenTelemetry](https://aws-otel.github.io/docs/introduction)<br />[AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html)<br />[Amazon CloudWatch Application Signals (Preview)](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html) |
+| Distributed tracing | These services provide a comprehensive view of the interactions and dependencies within your distributed applications. They enable you to diagnose performance bottlenecks, optimize application performance, and support the smooth functioning of complex systems by offering insights into how different parts of your application communicate and interact.  | [AWS Distro for OpenTelemetry](https://aws-otel.github.io/docs/introduction)<br />[AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html)<br />[Amazon CloudWatch Application Signals](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html) |
 |  Hybrid and multicloud observability  |  Maintain reliable operations, provide modern digital experiences for your customers, and get help to meet service level objectives and performance commitments.   |  [Amazon CloudWatch (hybrid and multicloud support)](https://aws.amazon.com/about-aws/whats-new/2023/11/cloudwatch-hybrid-multicloud-metrics-querying-alarming/)  |
 | --- |--- |--- |
 
@@ -198,11 +213,6 @@ To explore how to use and learn more about each of the available AWS observabili
   Set up the Amazon CloudWatch Observability ESK add-on and ADTO on your EKS cluster to send metrics to CloudWatch. You will also learn how to set up Fluent Bit or Fluentd to send logs to CloudWatch Logs.
 
    [Explore the guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/deploy-container-insights-EKS.html)
-+  **Getting started with Amazon CloudWatch Application Insights**
-
-  Learn how to use the console to enable CloudWatch Application Insights to manage your applications for monitoring.
-
-   [Explore the guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-getting-started.html)
 +  **Using Container Insights**
 
   Learn how CloudWatch Container Insights collects, aggregates, and summarizes metrics and logs from your containerized applications and microservices.
@@ -215,7 +225,7 @@ To explore how to use and learn more about each of the available AWS observabili
    [Explore the guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/deploy-container-insights-ECS.html)
 
 ------
-#### [ Amazon CloudWatch Application Insights ]
+#### [ Amazon CloudWatch Application Signals ]
 +  **Getting started with Amazon CloudWatch Application Signals**
 
   In this guide, you will learn how to automatically instrument your applications on AWS so that you can monitor current application health and track long-term application performance against your business objectives.

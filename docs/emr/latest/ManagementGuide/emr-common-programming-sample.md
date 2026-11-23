@@ -79,7 +79,7 @@ In the following sample code, replace the example cluster ID (JobFlowId), {{`j-x
    ```
 In addition, replace the example Amazon S3 path, {{`s3://path/to/my/jarfolder`}}, with the valid path to your JAR. Lastly, replace the example class name, {{`com.my.Main1`}}, with the correct name of the class in your JAR, if applicable.
 
-   ```
+   ```java
    import com.amazonaws.AmazonClientException;
    import com.amazonaws.auth.AWSCredentials;
    import com.amazonaws.auth.AWSStaticCredentialsProvider;

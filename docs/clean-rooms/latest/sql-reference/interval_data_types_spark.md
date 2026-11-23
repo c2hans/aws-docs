@@ -111,7 +111,7 @@ Operations where the first operand is a `timestamp` produce the following result
 
 The following command sets the interval style to `sql_standard`.
 
-```
+```sql
 SET IntervalStyle to 'sql_standard';
 ```
 
@@ -123,7 +123,7 @@ The following is the output format for `postgres` interval style. Each numeric v
 '<numeric> <unit> [, <numeric> <unit> ...]'
 ```
 
-```
+```sql
 select INTERVAL '1-2' YEAR TO MONTH::text
 
 varchar
@@ -131,7 +131,7 @@ varchar
 1 year 2 mons
 ```
 
-```
+```sql
 select INTERVAL '1 2:3:4.5678' DAY TO SECOND::text
 
 varchar
@@ -147,7 +147,7 @@ postgres\_verbose syntax is similar to postgres, but postgres\_verbose outputs a
 '[@] <numeric> <unit> [, <numeric> <unit> ...] [direction]'
 ```
 
-```
+```sql
 select INTERVAL '1-2' YEAR TO MONTH::text
 
 varchar
@@ -155,7 +155,7 @@ varchar
 @ 1 year 2 mons
 ```
 
-```
+```sql
 select INTERVAL '1 2:3:4.5678' DAY TO SECOND::text
 
 varchar
@@ -177,7 +177,7 @@ Interval day to second values are formatted as the following.
 '[-]dd hh:mm:ss.ffffff'
 ```
 
-```
+```sql
 SELECT INTERVAL '1-2' YEAR TO MONTH::text
 
 varchar
@@ -185,7 +185,7 @@ varchar
 1-2
 ```
 
-```
+```sql
 select INTERVAL '1 2:3:4.5678' DAY TO SECOND::text
 
 varchar
@@ -198,7 +198,7 @@ varchar
 
 The following examples demonstrate how to use INTERVAL data types with tables.
 
-```
+```sql
 create table sample_intervals (y2m interval month, h2m interval hour to minute);
 insert into sample_intervals values (interval '20' month, interval '2 days 1:1:1.123456' day to second);
 select y2m::text, h2m::text from sample_intervals;
@@ -208,7 +208,7 @@ select y2m::text, h2m::text from sample_intervals;
  1 year 8 mons | 2 days 01:01:00
 ```
 
-```
+```sql
 update sample_intervals set y2m = interval '2' year where y2m = interval '1-8' year to month;
 select * from sample_intervals;
 
@@ -217,7 +217,7 @@ select * from sample_intervals;
  2 years | 2 days 01:01:00
 ```
 
-```
+```sql
 delete from sample_intervals where h2m = interval '2 1:1:0' day to second;
 select * from sample_intervals;
 
@@ -232,7 +232,7 @@ The following examples are run with interval style set to `postgres`.
 
 The following example demonstrates how to create an INTERVAL literal of 1 year.
 
-```
+```sql
 select INTERVAL '1' YEAR
 
 intervaly2m
@@ -242,7 +242,7 @@ intervaly2m
 
 If you specify a *quoted-string* that exceeds the qualifier, the remaining units of time are truncated from the interval. In the following example, an interval of 13 months becomes 1 year and 1 month, but the remaining 1 month is left out because of the YEAR qualifier.
 
-```
+```sql
 select INTERVAL '13 months' YEAR
 
 intervaly2m
@@ -252,7 +252,7 @@ intervaly2m
 
 If you use a qualifier lower than your interval string, leftover units are included.
 
-```
+```sql
 select INTERVAL '13 months' MONTH
 
 intervaly2m
@@ -262,7 +262,7 @@ intervaly2m
 
 Specifying a precision in your interval truncates the number of fractional digits to the specified precision.
 
-```
+```sql
 select INTERVAL '1.234567' SECOND (3)
 
 intervald2s
@@ -272,7 +272,7 @@ intervald2s
 
 If you don't specify a precision, AWS Clean Rooms uses the maximum precision of 6.
 
-```
+```sql
 select INTERVAL '1.23456789' SECOND
 
 intervald2s
@@ -282,7 +282,7 @@ intervald2s
 
 The following example demonstrates how to create a ranged interval.
 
-```
+```sql
 select INTERVAL '2:2' MINUTE TO SECOND
 
 intervald2s
@@ -292,7 +292,7 @@ intervald2s
 
 Qualifiers dictate the units that you're specifying. For example, even though the following example uses the same *quoted-string* of '2:2' as the previous example, AWS Clean Rooms recognizes that it uses different units of time because of the qualifier.
 
-```
+```sql
 select INTERVAL '2:2' HOUR TO MINUTE
 
 intervald2s
@@ -302,7 +302,7 @@ intervald2s
 
 Abbreviations and plurals of each unit are also supported. For example, `5s`, `5 second`, and `5 seconds` are equivalent intervals. Supported units are years, months, hours, minutes, and seconds.
 
-```
+```sql
 select INTERVAL '5s' SECOND
 
 intervald2s
@@ -310,7 +310,7 @@ intervald2s
 0 days 0 hours 0 mins 5.0 secs
 ```
 
-```
+```sql
 select INTERVAL '5 HOURS' HOUR
 
 intervald2s
@@ -318,7 +318,7 @@ intervald2s
 0 days 5 hours 0 mins 0.0 secs
 ```
 
-```
+```sql
 select INTERVAL '5 h' HOUR
 
 intervald2s

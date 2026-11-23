@@ -27,7 +27,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { IotToS3Props, IotToS3 } from '@aws-solutions-constructs/aws-iot-s3';
@@ -46,7 +46,7 @@ const constructProps: IotToS3Props = {
 new IotToS3(this, 'test-iot-s3-integration', constructProps);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_iot_s3 import IotToS3Props, IotToS3
 from aws_cdk import (
     aws_iot as iot,
@@ -65,7 +65,7 @@ IotToS3(self, 'test_iot_s3',
         ))
 ```
 
-```
+```java
 import software.constructs.Construct;
 import java.util.List;
 

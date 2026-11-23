@@ -58,6 +58,9 @@ The following two accounts must either be identical, or in the same AWS Organiza
 **Contributor**
 Contributors can read everything in the workspace. They can begin chats with AWS Transform, start and stop jobs, upload or download artifacts, and interact with running [jobs](#glossary_job) for HITL actions. However, they cannot perform critical HITL actions such as merging to main, performing graph decomposition, or deploying code to production environments. Contributors also cannot mutate [workspaces](#glossary_workspace), [connectors](#glossary_connector), or users.
 
+**Engagement**
+A construct in AWS Transform that gives you a single place to manage your migration and modernization engagements. An engagement brings together the people involved (for example, a customer and their partner), the AWS Transform [workspaces](#glossary_workspace) where the work runs, and an engagement-scoped chat.
+
 **Objective**
 A user-defined end state that AWS Transform works to reach. Users write this, and then AWS Transform converts the objective into a series of tasks that it perform in concert with users when required.
 

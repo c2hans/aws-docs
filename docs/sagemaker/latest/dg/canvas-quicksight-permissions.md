@@ -29,7 +29,7 @@ To grant the necessary permissions to share batch predictions with users in Quic
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

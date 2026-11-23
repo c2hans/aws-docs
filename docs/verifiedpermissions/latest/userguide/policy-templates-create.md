@@ -40,7 +40,7 @@ permit(
 );
 ```
 
-```
+```bash
 $ aws verifiedpermissions create-policy-template \
     --description "Template for vacation picture access"
     --statement file://template1.txt
@@ -56,7 +56,7 @@ $ aws verifiedpermissions create-policy-template \
 **To create a policy template with a policy template name**
 You can optionally specify a policy template name when creating a policy template. The name must be unique for all policy templates within the policy store and prefixed with `name/`. You can use the name in place of the policy template ID.
 
-```
+```bash
 $ aws verifiedpermissions create-policy-template \
     --description "Template for vacation picture access" \
     --statement file://template1.txt \

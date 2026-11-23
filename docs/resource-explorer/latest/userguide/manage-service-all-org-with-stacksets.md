@@ -48,7 +48,7 @@ The following sample template creates the account's aggregator index and a defau
 ------
 #### [ YAML ]
 
-```
+```yaml
 Description: >-
   CFN Stack setting up ResourceExplorer with an Aggregator index, and a new default view.
 Resources:
@@ -76,7 +76,7 @@ Resources:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Description": "CFN Stack setting up Resource Explorer with an Aggregator index, and a new default view.",
     "Resources": {
@@ -121,7 +121,7 @@ The following sample template creates a local index in each enabled Region in al
 ------
 #### [ YAML ]
 
-```
+```yaml
 Description: >-
   CFN Stack setting up ResourceExplorer with a local index and a new default view.
 Resources:
@@ -149,7 +149,7 @@ Resources:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Description": "CFN Stack setting up ResourceExplorer with a local index and a new default view.",
     "Resources": {

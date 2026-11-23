@@ -16,7 +16,7 @@ The confidence scores that Amazon Lex V2 returns are comparative values. You sho
 
 Amazon Lex V2 returns the most likely intent and up to 4 alternative intents with their associated scores in the `interpretations` structure in each response. The following JSON code shows the `interpretations` structure in the response from the [RecognizeText](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_RecognizeText.html) operation:
 
-```
+```json
    "interpretations": [
       {
          "intent": {

@@ -23,7 +23,7 @@ The following `Customer` class uses a composite primary key that consists of a p
 ### `Customer` class
 <a name="ddb-en-client-gs-tableschema-anno-bean-cust"></a>
 
-```
+```java
 package org.example.tests.model;
 
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbBean;
@@ -83,7 +83,7 @@ For an example of working with a data model made up of several data classes, see
 
 You can skip the cost of bean introspection if you define the table schema in code. If you code the schema, your class does not need to follow JavaBean naming standards nor does it need to be annotated. The following example uses a builder and is equivalent to the `Customer` class example that uses annotations.
 
-```
+```java
 static final TableSchema<Customer> customerTableSchema =
                 TableSchema.builder(Customer.class)
                         .newItemSupplier(Customer::new)

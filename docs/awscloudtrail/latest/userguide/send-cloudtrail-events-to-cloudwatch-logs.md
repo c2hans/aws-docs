@@ -142,7 +142,7 @@ To create the JSON file that will contain the policy document, open a text edito
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -178,7 +178,7 @@ Create the following role policy document for CloudTrail. This document grants C
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -217,7 +217,7 @@ If you're creating a policy that might be used for organization trails as well, 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

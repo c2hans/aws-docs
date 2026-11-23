@@ -17,7 +17,7 @@ The caller's identity needs permission in both accounts. For the reason, see [Ho
 
 The endpoint owner (account {{444455556666}}) runs the following command in the endpoint's AWS Region. The first statement lets account {{111122223333}} invoke the endpoint only through {{my-router}}. The second lets that account describe the endpoint, so SageMaker AI can show its `RoutingStatus` and check its mode.
 
-```
+```bash
 aws sagemaker put-endpoint-policy \
     --region {{eu-west-1}} \
     --endpoint-name {{shared-endpoint}} \
@@ -64,7 +64,7 @@ For an asynchronous endpoint, allow `sagemaker:InvokeEndpointAsync` in the first
 
 As the router owner (account {{111122223333}}), attach a policy like the following to the IAM identities that invoke the router. It allows the caller to invoke {{my-router}}, and to invoke and describe the shared endpoint in account {{444455556666}}.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -91,7 +91,7 @@ For an asynchronous routing target, allow `sagemaker:InvokeInferenceRouterAsync`
 
 Then add the shared endpoint's ARN as a destination in a routing target with `CreateInferenceRouter` or `UpdateInferenceRouter`, as shown in [Get started with inference routers](inference-router-get-started.md). The following example shows the destination entry to add to the routing target.
 
-```
+```json
 { "ResourceArn": "arn:aws:sagemaker:eu-west-1:{{444455556666}}:endpoint/{{shared-endpoint}}" }
 ```
 
@@ -129,7 +129,7 @@ You can create inference routers and endpoint policies with the AWS CloudFormati
 
 The endpoint owner (account {{444455556666}}) deploys the following template in {{eu-west-1}} first. It allows account {{111122223333}} to invoke the endpoint only through {{my-router}}.
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Resources:
   SharedEndpointPolicy:
@@ -160,7 +160,7 @@ To avoid drift, specify principals as full ARNs, as in this example. For the pol
 
 The router owner (account {{111122223333}}) then deploys the following template in {{us-west-2}}. It creates a router with one routing target and two destinations: an endpoint in the router owner's account and the shared endpoint.
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Resources:
   MyRouter:

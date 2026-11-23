@@ -140,6 +140,7 @@ Required: Yes
       "started": number,
       "status": "string",
       "stopped": number,
+      "testPackageArn": "string",
       "testSpecArn": "string",
       "totalJobs": number,
       "type": "string",

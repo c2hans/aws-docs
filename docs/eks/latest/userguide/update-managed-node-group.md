@@ -43,7 +43,7 @@ The version that you update to can’t be greater than the control plane’s ver
 
 Update a managed node group to the latest AMI release of the same Kubernetes version that’s currently deployed on the nodes with the following command. Replace every {{example value}} with your own values.
 
-```
+```bash
 eksctl upgrade nodegroup \
   --name=node-group-name \
   --cluster=my-cluster \
@@ -57,7 +57,7 @@ You can’t directly upgrade a node group that’s deployed without a launch tem
 
 You can upgrade a node group to the same version as the control plane’s Kubernetes version. For example, if you have a cluster running Kubernetes `1.37`, you can upgrade nodes currently running Kubernetes `1.36` to version `1.37` with the following command.
 
-```
+```bash
 eksctl upgrade nodegroup \
   --name=node-group-name \
   --cluster=my-cluster \
@@ -136,7 +136,7 @@ If you need to roll back your cluster control plane to a previous Kubernetes ver
 
 You can roll back a managed node group using the `UpdateNodegroupVersion` API with the previous Kubernetes version:
 
-```
+```bash
 aws eks update-nodegroup-version \
   --cluster-name {{my-cluster}} \
   --nodegroup-name {{my-nodegroup}} \

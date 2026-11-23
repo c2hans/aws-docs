@@ -14,7 +14,7 @@ If you have specific telemetry requirements, already have a telemetry solution i
 
 Register your own implementation with the [TelemetryProvider](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TTelemetryProvider.html) class. The following is a simple example of how to register your own `TracerProvider` and `MeterProvider`.
 
-```
+```cs
 using Amazon;
 using Amazon.Runtime.Telemetry;
 using Amazon.Runtime.Telemetry.Metrics;

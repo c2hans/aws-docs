@@ -103,7 +103,7 @@ Retrieves information about the communication requirements and options that are 
 #### POST schema
 <a name="recommenders-request-body-post-example"></a>
 
-```
+```json
 {
   "Name": "string",
   "Description": "string",
@@ -124,7 +124,7 @@ Retrieves information about the communication requirements and options that are 
 #### ListRecommenderConfigurationsResponse schema
 <a name="recommenders-response-body-listrecommenderconfigurationsresponse-example"></a>
 
-```
+```json
 {
   "Item": [
     {
@@ -150,7 +150,7 @@ Retrieves information about the communication requirements and options that are 
 #### RecommenderConfigurationResponse schema
 <a name="recommenders-response-body-recommenderconfigurationresponse-example"></a>
 
-```
+```json
 {
   "Id": "string",
   "CreationDate": "string",
@@ -171,7 +171,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="recommenders-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

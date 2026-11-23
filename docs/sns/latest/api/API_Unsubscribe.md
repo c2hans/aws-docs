@@ -66,7 +66,7 @@ https://sns.us-east-2.amazonaws.com/?Action=Unsubscribe
 #### Sample Response
 <a name="API_Unsubscribe_Example_1_Response"></a>
 
-```
+```xml
 <UnsubscribeResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ResponseMetadata>
         <RequestId>18e0ac39-3776-11df-84c0-b93cc1666b84</RequestId>

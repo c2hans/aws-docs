@@ -10,7 +10,7 @@ Associate a policy engine with an existing gateway:
 
 1. In an AgentCore project that already contains the gateway, attach the engine to it:
 
-   ```
+   ```bash
    agentcore add policy-engine --name my_policy_engine \
      --attach-to-gateways my-gateway \
      --attach-mode enforce
@@ -18,7 +18,7 @@ Associate a policy engine with an existing gateway:
 
 1. Deploy to apply the change:
 
-   ```
+   ```bash
    agentcore deploy
    ```
 
@@ -26,7 +26,7 @@ Associate a policy engine with an existing gateway:
 
 1. Run the following code in a terminal to update a gateway with a Policy Engine using the AWS CLI:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control update-gateway \
      --gateway-identifier my-gateway-id \
      --name my-gateway-name \
@@ -49,7 +49,7 @@ Associate a policy engine with an existing gateway:
 
 1. The following Python code shows how to update a gateway with a Policy Engine using the AWS Python SDK (Boto3):
 
-   ```
+   ```python
    import boto3
 
    gateway_client = boto3.client('bedrock-agentcore-control')

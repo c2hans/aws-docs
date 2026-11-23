@@ -113,7 +113,7 @@ The reason why an `AwsAggregatedEvent` was delayed, updated, or otherwise supple
 
 The following is an example of a CloudTrail aggregated event (`AwsAggregatedEvent`). In this example, CloudTrail aggregates `PutAuditEvents` calls to `cloudtrail-data.amazonaws.com` over a five-minute time window in the `us-east-1` Region. The summary block shows the primary aggregation dimension (`eventName`) and that 30 `PutAuditEvents` calls occurred during the time window. The details entries further break down those calls by `resourceARN`, `userIdentity`, `userAgent`, and `sourceIpAddress` to show how activity is distributed across resources, principals, and clients.
 
-```
+```json
 {
     "eventVersion": "1.0",
     "accountId": "111122223333",

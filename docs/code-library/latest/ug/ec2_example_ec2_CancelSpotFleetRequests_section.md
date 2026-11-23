@@ -65,12 +65,12 @@ For more information, see [Cancel a Spot Fleet request](https://docs.aws.amazon.
 **Tools for PowerShell V4**
 **Example 1: This example cancels the specified Spot fleet request and terminates the associated Spot instances.**
 
-```
+```powershell
 Stop-EC2SpotFleetRequest -SpotFleetRequestId sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE -TerminateInstance $true
 ```
 **Example 2: This example cancels the specified Spot fleet request without terminating the associated Spot instances.**
 
-```
+```powershell
 Stop-EC2SpotFleetRequest -SpotFleetRequestId sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE -TerminateInstance $false
 ```
 +  For API details, see [CancelSpotFleetRequests](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -78,12 +78,12 @@ Stop-EC2SpotFleetRequest -SpotFleetRequestId sfr-73fbd2ce-aa30-494c-8788-1cee4EX
 **Tools for PowerShell V5**
 **Example 1: This example cancels the specified Spot fleet request and terminates the associated Spot instances.**
 
-```
+```powershell
 Stop-EC2SpotFleetRequest -SpotFleetRequestId sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE -TerminateInstance $true
 ```
 **Example 2: This example cancels the specified Spot fleet request without terminating the associated Spot instances.**
 
-```
+```powershell
 Stop-EC2SpotFleetRequest -SpotFleetRequestId sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE -TerminateInstance $false
 ```
 +  For API details, see [CancelSpotFleetRequests](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

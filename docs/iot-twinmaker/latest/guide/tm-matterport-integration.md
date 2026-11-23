@@ -51,7 +51,7 @@ Before integrating Matterport with AWS IoT TwinMaker please make sure you meet t
 
   Add the following to your workspace role:
 
-  ```
+  ```json
   {
     "Effect": "Allow",
     "Action": "secretsmanager:GetSecretValue",

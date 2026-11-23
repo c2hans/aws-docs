@@ -189,9 +189,12 @@ This Usage Type Group contains only the following Usage Types:
 + DedicatedUsage
 + HighUsage
 + InstanceUsage
++ InstanceUsageIOOptimized
 + MirrorUsage
++ Multi-AZClusterUsage
 + Multi-AZUsage
 + SpotUsage
++ UnusedBox
 RDS: Data Transfer – CloudFront – In
 Filters by the costs associated with how many GB are transferred into Amazon RDS from a CloudFront distribution.
 RDS: Data Transfer – CloudFront – Out

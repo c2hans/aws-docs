@@ -129,7 +129,7 @@ All AWS Construct Library classes are instantiated using three arguments: the *s
 
 In C\#, props are expressed using a props type. In idiomatic C\# fashion, we can use an object initializer to set the various properties. Here we’re creating an Amazon S3 bucket using the `Bucket` construct; its corresponding props type is `BucketProps`.
 
-```
+```csharp
 var bucket = new Bucket(this, "amzn-s3-demo-bucket", new BucketProps {
     Versioned = true
 });
@@ -140,7 +140,7 @@ Add the package `Amazon.JSII.Analyzers` to your project to get required-values c
 
 When extending a class or overriding a method, you may want to accept additional props for your own purposes that are not understood by the parent class. To do this, subclass the appropriate props type and add the new attributes.
 
-```
+```csharp
 // extend BucketProps for use with MimeBucket
 class MimeBucketProps : BucketProps {
     public string MimeType { get; set; }
@@ -172,7 +172,7 @@ In some APIs, the AWS CDK uses JavaScript arrays or untyped objects as input to 
 **Tip**
 You might define short aliases to make it easier to work with these specific dictionary types.
 
-```
+```csharp
 using StringDict = System.Collections.Generic.Dictionary<string, string>;
 using ObjectDict = System.Collections.Generic.Dictionary<string, object>;
 ```
@@ -182,7 +182,7 @@ using ObjectDict = System.Collections.Generic.Dictionary<string, object>;
 
 In C\#, missing values in AWS CDK objects such as props are represented by `null`. The null-conditional member access operator `?.` and the null coalescing operator `??` are convenient for working with these values.
 
-```
+```csharp
 // mimeType is null if props is null or if props.MimeType is null
 string mimeType = props?.MimeType;
 

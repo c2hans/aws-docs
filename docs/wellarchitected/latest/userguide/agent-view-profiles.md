@@ -30,13 +30,13 @@ The profile details page has multiple tabs:
 
 To list all agent profiles in your account:
 
-```
+```bash
 aws wellarchitected list-agent-profiles
 ```
 
 To view details for a specific profile:
 
-```
+```bash
 aws wellarchitected get-agent-profile \
     --profile-arn "{{arn:aws:wellarchitected:us-east-1:111122223333:agent-profile/my-profile}}"
 ```

@@ -24,7 +24,7 @@ The following code example shows how to use `CreateContact`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/se2#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_se2->createcontact(
           iv_contactlistname = iv_contact_list_name
@@ -48,7 +48,7 @@ The following code example shows how to use `CreateContactList`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/se2#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_se2->createcontactlist(
           iv_contactlistname = iv_contact_list_name ).
@@ -75,7 +75,7 @@ The following code example shows how to use `CreateEmailIdentity`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/se2#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_se2->createemailidentity(
           iv_emailidentity = iv_email_identity ).
@@ -98,7 +98,7 @@ The following code example shows how to use `CreateEmailTemplate`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/se2#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_template_content) = NEW /aws1/cl_se2emailtmplcontent(
           iv_subject = iv_subject
@@ -127,7 +127,7 @@ The following code example shows how to use `DeleteContactList`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/se2#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_se2->deletecontactlist(
           iv_contactlistname = iv_contact_list_name ).
@@ -149,7 +149,7 @@ The following code example shows how to use `DeleteEmailIdentity`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/se2#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_se2->deleteemailidentity(
           iv_emailidentity = iv_email_identity ).
@@ -171,7 +171,7 @@ The following code example shows how to use `DeleteEmailTemplate`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/se2#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_se2->deleteemailtemplate(
           iv_templatename = iv_template_name ).
@@ -193,7 +193,7 @@ The following code example shows how to use `GetEmailIdentity`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/se2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_se2->getemailidentity(
           iv_emailidentity = iv_email_identity ).
@@ -216,7 +216,7 @@ The following code example shows how to use `ListContacts`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/se2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_se2->listcontacts(
           iv_contactlistname = iv_contact_list_name ).
@@ -240,7 +240,7 @@ The following code example shows how to use `SendBulkEmail`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/se2#code-examples).
 
-```
+```sap-abap
     TRY.
         " Build the default template content used for all bulk recipients
         DATA(lo_template) = NEW /aws1/cl_se2template(
@@ -282,7 +282,7 @@ The following code example shows how to use `SendEmail`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/se2#code-examples).
 Sends a message.
 
-```
+```sap-abap
     TRY.
         " Create destination with recipient address
         DATA lt_to_addresses TYPE /aws1/cl_se2emailaddresslist_w=>tt_emailaddresslist.
@@ -323,7 +323,7 @@ Sends a message.
 ```
 Sends a message using a template.
 
-```
+```sap-abap
     TRY.
         " Create destination with recipient address
         DATA lt_to_addresses TYPE /aws1/cl_se2emailaddresslist_w=>tt_emailaddresslist.

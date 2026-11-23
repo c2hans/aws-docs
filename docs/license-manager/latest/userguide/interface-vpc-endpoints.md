@@ -31,7 +31,7 @@ You can attach a policy to your VPC endpoint to control access to License Manage
 
 The following is an example of an endpoint policy for License Manager. When attached to an endpoint, this policy grants access to the specified License Manager actions for all principals on all resources.
 
-```
+```json
 {
    "Statement": [
         {

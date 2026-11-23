@@ -126,7 +126,7 @@ To update the standard view to refer to the latest definition of the late-bindin
 
 See the following example of creating a standard view from a late-binding view.
 
-```
+```sql
 create view sales_vw_lbv as
 select * from public.sales
 with no schema binding;

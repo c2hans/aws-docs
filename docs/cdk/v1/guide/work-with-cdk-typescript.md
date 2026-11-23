@@ -103,17 +103,17 @@ In TypeScript, you import modules into your code under the same name you use to 
 + Use ES6-style `import` directives, not `require()`.
 + Generally, import individual classes from `@aws-cdk/core`.
 
-  ```
+  ```javascript
   import { App, Construct } from '@aws-cdk/core';
   ```
 + If you need many classes from the core module, you may use a namespace alias of `cdk` instead of importing the individual classes. Avoid doing both.
 
-  ```
+  ```javascript
   import * as cdk from '@aws-cdk/core';
   ```
 + Generally, import AWS Construct Libraries using short namespace aliases.
 
-  ```
+  ```javascript
   import * as s3 from '@aws-cdk/aws-s3';
   ```
 
@@ -136,7 +136,7 @@ If you are subclassing an AWS Construct Library class (or overriding a method th
 
 A future release of the AWS CDK could coincidentally add a new property with a name you used for your own property. Passing the value you receive up the inheritance chain can then cause unexpected behavior. It's safer to pass a shallow copy of the props you received with your property removed or set to `undefined`. For example:
 
-```
+```javascript
 super(scope, name, {...props, encryptionKeys: undefined});
 ```
 

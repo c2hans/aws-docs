@@ -14,6 +14,7 @@ PUT /responder-gateway/{{gatewayId}}/link/{{linkId}}/routing-rule/{{ruleId}} HTT
 Content-type: application/json
 
 {
+   "clientToken": "{{string}}",
    "conditions": {
       "hostHeader": "{{string}}",
       "hostHeaderWildcard": "{{string}}",
@@ -57,6 +58,13 @@ Required: Yes
 
 The request accepts the following data in JSON format.
 
+ ** [clientToken](#API_UpdateLinkRoutingRule_RequestSyntax) **   <a name="rtbfabric-UpdateLinkRoutingRule-request-clientToken"></a>
+Reserved for future use.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[!-~]+`
+Required: No
+
  ** [conditions](#API_UpdateLinkRoutingRule_RequestSyntax) **   <a name="rtbfabric-UpdateLinkRoutingRule-request-conditions"></a>
 The updated conditions for the routing rule. All specified fields must match for the rule to apply. At least one condition field must be set.
 Type: [RuleCondition](API_RuleCondition.md) object
@@ -78,7 +86,8 @@ Content-type: application/json
 {
    "ruleId": "string",
    "status": "string",
-   "updatedAt": number
+   "updatedAt": number,
+   "updateId": "string"
 }
 ```
 
@@ -98,11 +107,17 @@ Pattern: `rule-[a-z0-9-]{1,25}`
  ** [status](#API_UpdateLinkRoutingRule_ResponseSyntax) **   <a name="rtbfabric-UpdateLinkRoutingRule-response-status"></a>
 The status of the routing rule.
 Type: String
-Valid Values: `CREATION_IN_PROGRESS | ACTIVE | UPDATE_IN_PROGRESS | DELETION_IN_PROGRESS | DELETED | FAILED`
+Valid Values: `CREATION_IN_PROGRESS | ACTIVE | UPDATE_IN_PROGRESS | DELETION_IN_PROGRESS | DELETED | FAILED | CREATE_FAILED | DELETE_FAILED`
 
  ** [updatedAt](#API_UpdateLinkRoutingRule_ResponseSyntax) **   <a name="rtbfabric-UpdateLinkRoutingRule-response-updatedAt"></a>
 The timestamp of when the routing rule was last updated.
 Type: Timestamp
+
+ ** [updateId](#API_UpdateLinkRoutingRule_ResponseSyntax) **   <a name="rtbfabric-UpdateLinkRoutingRule-response-updateId"></a>
+Reserved for future use.
+Type: String
+Length Constraints: Minimum length of 8. Maximum length of 64.
+Pattern: `update-[a-z0-9]{1,57}`
 
 ## Errors
 <a name="API_UpdateLinkRoutingRule_Errors"></a>
@@ -130,7 +145,7 @@ The request was denied due to request throttling.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request could not be completed because it fails satisfy the constraints specified by the service.
+The request could not be completed because it fails to satisfy the constraints specified by the service.
 HTTP Status Code: 400
 
 ## See Also

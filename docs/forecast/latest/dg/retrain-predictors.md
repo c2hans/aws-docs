@@ -48,7 +48,7 @@ You can retrain a predictor using the Software Development Kit (SDK) or the Amaz
 
 Using the [`CreateAutoPredictor`](API_CreateAutoPredictor.md) operation, assign the predictor a unique name and set the value of `ReferencePredictorArn` to the predictor you wish to retrain.
 
-```
+```json
 {
   "PredictorName": "RetrainedPredictor",
   "ReferencePredictorArn": "arn:aws:forecast:us-west-2:938097332257:predictor/OriginalPredictor"

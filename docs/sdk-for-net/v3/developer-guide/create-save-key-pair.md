@@ -25,7 +25,7 @@ The following snippet creates a key pair and then stores the private key to the 
 
 The example [at the end of this topic](#create-save-key-pair-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to create a key pair and save the key material in a PEM file
     private static async Task CreateKeyPair(
@@ -54,7 +54,7 @@ The following snippet displays a list of the available key pairs.
 
 The example [at the end of this topic](#create-save-key-pair-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to show the key pairs that are available
     private static async Task EnumerateKeyPairs(IAmazonEC2 ec2Client)
@@ -94,7 +94,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c17c15c11c19b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using System.IO;

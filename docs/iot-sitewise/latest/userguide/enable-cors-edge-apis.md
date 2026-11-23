@@ -33,7 +33,7 @@ Creating a revised CORS enabled configuration replaces the device’s current co
 
 1. In the Configuration update section, under Configuration to merge, enter the following JSON:
 
-   ```
+   ```json
    {
        "AWS_SITEWISE_EDGE_ACCESS_CONTROL_ALLOW_ORIGIN": "*"
    }

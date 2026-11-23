@@ -11,7 +11,7 @@ All Amazon SageMaker AI built-in algorithms adhere to the common input inference
 
 **Binary Classification**
 
-```
+```json
 let response =   {
     "predictions":    [
         {
@@ -24,7 +24,7 @@ let response =   {
 
 **Multiclass Classification**
 
-```
+```json
 let response =   {
     "predictions":    [
         {
@@ -37,7 +37,7 @@ let response =   {
 
 **Regression**
 
-```
+```json
 let response =   {
     "predictions":    [
         {
@@ -52,19 +52,19 @@ let response =   {
 
 **Binary Classification**
 
-```
+```json
 {"score": 0.4, "predicted_label": 0}
 ```
 
 **Multiclass Classification**
 
-```
+```json
 {"score": [0.1, 0.2, 0.4, 0.3], "predicted_label": 2}
 ```
 
 **Regression**
 
-```
+```json
 {"score": 0.4}
 ```
 
@@ -73,7 +73,7 @@ let response =   {
 
 **Binary Classification**
 
-```
+```json
 [
     Record = {
         features = {},
@@ -93,7 +93,7 @@ let response =   {
 
 **Multiclass Classification**
 
-```
+```json
 [
     Record = {
     "features": [],
@@ -113,7 +113,7 @@ let response =   {
 
 **Regression**
 
-```
+```json
 [
     Record = {
         features = {},

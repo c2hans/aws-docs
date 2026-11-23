@@ -17,7 +17,7 @@ You can retrieve a server certificate by calling the AmazonIdentityManagementCli
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.GetServerCertificateRequest;
@@ -26,7 +26,7 @@ import com.amazonaws.services.identitymanagement.model.GetServerCertificateResul
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -49,7 +49,7 @@ Results may be truncated; if the `ListServerCertificateResult` object’s `getIs
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.ListServerCertificatesRequest;
@@ -59,7 +59,7 @@ import com.amazonaws.services.identitymanagement.model.ServerCertificateMetadata
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -95,7 +95,7 @@ You can update a server certificate’s name or path by calling the AmazonIdenti
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.UpdateServerCertificateRequest;
@@ -104,7 +104,7 @@ import com.amazonaws.services.identitymanagement.model.UpdateServerCertificateRe
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -126,7 +126,7 @@ To delete a server certificate, call the AmazonIdentityManagementClient’s `del
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.DeleteServerCertificateRequest;
@@ -135,7 +135,7 @@ import com.amazonaws.services.identitymanagement.model.DeleteServerCertificateRe
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 

@@ -10,7 +10,7 @@ Each on-demand deep health check creates a cluster operation of type `DeepHealth
 
 In the following command, replace {{operation-id}} with the ID of the operation whose events you want to see.
 
-```
+```bash
 aws sagemaker list-cluster-events \
     --cluster-name my-cluster \
     --operation-id {{operation-id}}
@@ -73,7 +73,7 @@ The log streams are logged at `DeepHealthCheckResults/<log_stream_id>`.
 
 As an example shown below, the deep health check output logs show the instance ID that failed the checks with the cause of the failure.
 
-```
+```json
 {
     "level": "error",
     "ts": "2024-06-18T21:15:22Z",
@@ -85,13 +85,13 @@ As an example shown below, the deep health check output logs show the instance I
 
 The instance-level deep health check logs are stored at `/var/log/aws/clusters/sagemaker-deep-health-check.log` on each node. SSH into the node and open the log file by running the following command.
 
-```
+```sh
 cat /var/log/aws/clusters/sagemaker-deep-health-check.log
 ```
 
 The following is an example output of the hardware stress, [NVIDIA DCGM](https://developer.nvidia.com/dcgm) stress, and EFA connectivity test.
 
-```
+```txt
 # Hardware Stress Test output
 
 2024-08-20T21:53:58Z info Executing Hardware stress check with command: stress-ng, and args: [--cpu 32 --vm 2 --hdd 1 --fork 8 --switch 4 --timeout 60 --metrics]
@@ -111,7 +111,7 @@ The following is an example output of the hardware stress, [NVIDIA DCGM](https:/
 
 The following is an example output of the NCCL connectivity test.
 
-```
+```txt
 #       size         count      type   redop    root     time   algbw   busbw #wrong     time   algbw   busbw #wrong
 
 #        (B)    (elements)                               (us)  (GB/s)  (GB/s)            (us)  (GB/s)  (GB/s)

@@ -13,7 +13,7 @@ Add `AsyncInferenceConfig` to the routing target. The following rules apply:
 + Every destination must be an asynchronous endpoint. Inference components and real-time endpoints aren't supported, and a real-time routing target can't contain an asynchronous endpoint. `CreateInferenceRouter` and `UpdateInferenceRouter` reject a destination of the wrong mode. If SageMaker AI can't check an endpoint, for example because it isn't found or can't be read in time, the endpoint is accepted, and requests to it fail if it's the wrong mode.
 + The input, `S3OutputPath`, and `S3FailurePath` buckets must be in the router's AWS Region and owned by the router's AWS account. `CreateInferenceRouter` and `UpdateInferenceRouter` don't check the owner. A request whose input or output bucket is owned by another account fails, even if the bucket policy allows access.
 
-```
+```json
 {
   "Name": "{{my-async-model}}",
   "Destinations": [
@@ -46,7 +46,7 @@ By default, the router uses destinations in the router's Region first, and then 
 
 To use it, add the following field to the routing target from the previous example.
 
-```
+```json
 "RoutingPreference": "InstancePoolOrder"
 ```
 
@@ -71,7 +71,7 @@ An asynchronous routing target can include endpoints in other accounts. Set up t
 
 Upload the input to Amazon S3 in the router's Region, then call `InvokeInferenceRouterAsync`.
 
-```
+```bash
 aws sagemaker-inference-router-runtime invoke-inference-router-async \
     --region {{us-west-2}} \
     --inference-router-name {{my-router}} \
@@ -88,7 +88,7 @@ In the command, replace the following values:
 
 The following is example output.
 
-```
+```json
 {
     "InferenceId": "{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}",
     "OutputLocation": "s3://{{amzn-s3-demo-bucket}}/output/{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}.out",

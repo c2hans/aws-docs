@@ -65,7 +65,7 @@ Any IAM user access keys that you create are long-term credentials. To ensure th
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

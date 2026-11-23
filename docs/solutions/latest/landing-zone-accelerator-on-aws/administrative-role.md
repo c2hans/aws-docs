@@ -8,7 +8,7 @@ Landing Zone Accelerator on AWS uses an IAM role with administrative privileges 
 
 If you prefer using custom roles, a role with administrative privileges must be deployed in each member account managed by the Landing Zone Accelerator on AWS. These roles must have a trust relationship defined that grants the `sts:AssumeRole` permission to the IAM service role for the Landing Zone Accelerator on AWS CodeBuild projects. The following demonstrates the ARN changes based on the [partition](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html#cfn-pseudo-param-partition) of the resource:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

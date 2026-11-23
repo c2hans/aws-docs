@@ -109,7 +109,7 @@ For a state machine that has only `Activity` tasks, or no tasks at all, use an I
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

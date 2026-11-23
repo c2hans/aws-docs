@@ -32,7 +32,7 @@ For more information about how AWS services use service-linked roles, see [Using
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement" : [

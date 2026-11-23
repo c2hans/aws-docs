@@ -34,7 +34,7 @@ INTEGER
 
 The following example compares the value of `3 days` to `1 year`.
 
-```
+```sql
 select interval_cmp('3 days','1 year');
 
 interval_cmp
@@ -44,7 +44,7 @@ interval_cmp
 
 This example compares the value `7 days` to `1 week`.
 
-```
+```sql
 select interval_cmp('7 days','1 week');
 
 interval_cmp
@@ -54,7 +54,7 @@ interval_cmp
 
 The following example compares the value of `1 year` to `3 days`.
 
-```
+```sql
 select interval_cmp('1 year','3 days');
 
 interval_cmp

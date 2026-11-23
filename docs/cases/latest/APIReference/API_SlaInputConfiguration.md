@@ -29,7 +29,7 @@ Valid Values: `CaseField`
 Required: Yes
 
  ** fieldId **   <a name="connect-Type-connect-cases_SlaInputConfiguration-fieldId"></a>
-Unique identifier of a field.
+Unique identifier of the case field that the SLA tracks. The field must be a single-select field, such as the system `status` field or a custom single-select field.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 500.
 Required: No

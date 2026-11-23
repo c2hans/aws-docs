@@ -14,7 +14,7 @@ The following code examples show how to use `GetEngagementInvitation`.
 **SDK for Java 2.x**
 Retrieves the details of an engagement invitation shared by AWS with a partner.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -72,7 +72,7 @@ public class GetEngagementInvitation {
 **SDK for Python (Boto3)**
 Retrieves the details of an engagement invitation shared by AWS with a partner.
 
-```
+```python
 #!/usr/bin/env python
 
 """

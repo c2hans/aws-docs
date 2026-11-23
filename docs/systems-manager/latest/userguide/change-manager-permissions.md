@@ -44,7 +44,7 @@ If you're creating a policy to use with a single AWS account, and not an organiz
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -209,7 +209,7 @@ When a change request invokes other AWS services by using the Change Manager ass
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -234,7 +234,7 @@ When a change request invokes other AWS services by using the Change Manager ass
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[

@@ -55,7 +55,7 @@ You can reference the following authorization policy example to help you configu
 **Example authorization policy**
 The following example authorization policy allows a component to pause and resume all components.
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.ipc.lifecycle": {
@@ -104,7 +104,7 @@ The following examples demonstrate how to call this operation in custom componen
 
 **Example: Update state**
 
-```
+```rust
 use gg_sdk::{ComponentState, Sdk};
 
 fn main() {
@@ -124,7 +124,7 @@ fn main() {
 
 **Example: Update state**
 
-```
+```c
 #include <gg/error.h>
 #include <gg/ipc/client.h>
 #include <gg/sdk.h>
@@ -156,7 +156,7 @@ int main(void) {
 
 **Example: Update state**
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <iostream>
 

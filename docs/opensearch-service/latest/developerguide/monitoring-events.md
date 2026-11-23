@@ -38,7 +38,7 @@ OpenSearch Service sends this event when a service software update is available.
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -68,7 +68,7 @@ OpenSearch Service sends this event when a service software update has been sche
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -98,7 +98,7 @@ OpenSearch Service sends this event when an optional service software update has
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -129,7 +129,7 @@ OpenSearch Service sends this event when a service software update has started.
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -157,7 +157,7 @@ OpenSearch Service sends this event when a service software update has completed
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -185,7 +185,7 @@ OpenSearch Service sends this event when a service software update has been canc
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -214,7 +214,7 @@ OpenSearch Service sends this event when a service software update that was prev
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -242,7 +242,7 @@ OpenSearch Service sends this event when it can't initiate a service software up
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -270,7 +270,7 @@ OpenSearch Service sends this event when a service software update fails.
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -298,7 +298,7 @@ OpenSearch Service sends this event when a service software update is required. 
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -335,7 +335,7 @@ OpenSearch Service sends this event when Auto-Tune has identified tuning recomme
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "3acb26c8-397c-4c89-a80a-ce672a864c55",
@@ -364,7 +364,7 @@ OpenSearch Service sends this event when Auto-Tune begins to apply new settings 
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "3acb26c8-397c-4c89-a80a-ce672a864c55",
@@ -394,7 +394,7 @@ OpenSearch Service sends this event when Auto-Tune has identified tuning recomme
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "3acb26c8-397c-4c89-a80a-ce672a864c55",
@@ -424,7 +424,7 @@ OpenSearch Service sends this event when Auto-Tune schedule has been cancelled b
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "3acb26c8-397c-4c89-a80a-ce672a864c55",
@@ -453,7 +453,7 @@ OpenSearch Service sends this event when Auto-Tune has completed the blue/green 
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "3acb26c8-397c-4c89-a80a-ce672a864c55",
@@ -482,7 +482,7 @@ OpenSearch Service sends this event when Auto-Tune has been disabled and the app
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "3acb26c8-397c-4c89-a80a-ce672a864c55",
@@ -512,7 +512,7 @@ OpenSearch Service sends this event when Auto-Tune has been disabled and the app
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "3acb26c8-397c-4c89-a80a-ce672a864c55",
@@ -547,7 +547,7 @@ OpenSearch Service sends this event after your cluster status has been continuou
 
 The following is an example event of this type:
 
-```
+```json
 {
    "version":"0",
    "id":"01234567-0123-0123-0123-012345678901",
@@ -578,7 +578,7 @@ OpenSearch Service sends this event when it was only able to restore a subset of
 
 The following is an example event of this type:
 
-```
+```json
 {
    "version":"0",
    "id":"01234567-0123-0123-0123-012345678901",
@@ -609,7 +609,7 @@ OpenSearch Service sends this event when it fails to restore any indexes while a
 
 The following is an example event of this type:
 
-```
+```json
 {
    "version":"0",
    "id":"01234567-0123-0123-0123-012345678901",
@@ -640,7 +640,7 @@ OpenSearch Service sends this event when it has attempted to automatically fix y
 
 The following is an example event of this type:
 
-```
+```json
 {
    "version":"0",
    "id":"01234567-0123-0123-0123-012345678901",
@@ -674,7 +674,7 @@ OpenSearch Service sends this event after your cluster status has been continuou
 
 The following is an example event of this type:
 
-```
+```json
 {
    "version":"0",
    "id":"01234567-0123-0123-0123-012345678901",
@@ -707,7 +707,7 @@ OpenSearch Service sends this event when the average shard count across your hot
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version":"0",
   "id":"01234567-0123-0123-0123-012345678901",
@@ -736,7 +736,7 @@ OpenSearch Service sends this event when the average shard count across your hot
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version":"0",
   "id":"01234567-0123-0123-0123-012345678901",
@@ -765,7 +765,7 @@ OpenSearch Service sends this event when one or more nodes in your cluster has l
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version":"0",
   "id":"01234567-0123-0123-0123-012345678901",
@@ -794,7 +794,7 @@ OpenSearch Service sends this event when all nodes in your cluster have less tha
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version":"0",
   "id":"01234567-0123-0123-0123-012345678901",
@@ -824,7 +824,7 @@ OpenSearch Service sends this event when the EBS burst balance on one or more da
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version":"0",
   "id":"01234567-0123-0123-0123-012345678901",
@@ -854,7 +854,7 @@ OpenSearch Service sends this event when the EBS burst balance on one or more da
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version":"0",
   "id":"01234567-0123-0123-0123-012345678901",
@@ -884,7 +884,7 @@ OpenSearch Service sends this event when read and write requests to your domain 
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version":"0",
   "id":"01234567-0123-0123-0123-012345678901",
@@ -917,7 +917,7 @@ For more information, see the [sharding best practices](bp.md#bp-sharding-strate
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version":"0",
   "id":"01234567-0123-0123-0123-012345678901",
@@ -946,7 +946,7 @@ OpenSearch Service sends this event when the `JVMMemoryPressure` metric for your
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version":"0",
   "id":"01234567-0123-0123-0123-012345678901",
@@ -976,7 +976,7 @@ OpenSearch Service sends this event when maximum JVM is above 70% and difference
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version":"0",
   "id":"01234567-0123-0123-0123-012345678901",
@@ -1005,7 +1005,7 @@ OpenSearch Service sends this event when your domain is in processing state and 
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version":"0",
   "id":"01234567-0123-0123-0123-012345678901",
@@ -1035,7 +1035,7 @@ OpenSearch Service sends this event when your domain is unhealthy due to unassig
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version":"0",
   "id":"01234567-0123-0123-0123-012345678901",
@@ -1068,7 +1068,7 @@ OpenSearch Service sends this event when it's unable to create a requested VPC e
 
 The following is an example event of this type:
 
-```
+```json
 {
    "version":"0",
    "id":"01234567-0123-0123-0123-012345678901",
@@ -1100,7 +1100,7 @@ OpenSearch Service sends this event when it's unable to delete a requested VPC e
 
 The following is an example event of this type:
 
-```
+```json
 {
    "version":"0",
    "id":"01234567-0123-0123-0123-012345678901",
@@ -1131,7 +1131,7 @@ OpenSearch Service sends this event when it's unable to delete a requested VPC e
 
 The following is an example event of this type:
 
-```
+```json
 {
    "version":"0",
    "id":"01234567-0123-0123-0123-012345678901",
@@ -1167,7 +1167,7 @@ OpenSearch Service sends this event when a node retirement has been scheduled.
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -1197,7 +1197,7 @@ OpenSearch Service sends this event when a node retirement has completed.
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -1225,7 +1225,7 @@ OpenSearch Service sends this event when a node retirement fails.
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -1259,7 +1259,7 @@ OpenSearch Service sends this event when the automated action to retire and repl
 
 The following is an example event of this type:
 
-```
+```json
 {
    "version":"0",
    "id":"db233454-aad1-7676-3b15-10a84b052baa",
@@ -1289,7 +1289,7 @@ OpenSearch Service sends this event when a degraded node has been retired and re
 
 The following is an example event of this type:
 
-```
+```json
 {
    "version":"0",
    "id":"7444215c-90f9-a52d-bcda-e85973a9a762",
@@ -1319,7 +1319,7 @@ OpenSearch Service sends this event if the degraded node retirement failed.
 
 The following is an example event of this type:
 
-```
+```json
 {
    "version":"0",
    "id":"c328e9bb-93b9-c0b2-b17a-df527fdf96b6",
@@ -1354,7 +1354,7 @@ OpenSearch Service sends this event if it encounters one or more validation fail
 
 The following is an example event of this type:
 
-```
+```json
 {
    "version":"0",
    "id":"01234567-0123-0123-0123-012345678901",
@@ -1385,7 +1385,7 @@ OpenSearch Service sends this event when it [can't access your AWS KMS key](encr
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version":"0",
   "id":"01234567-0123-0123-0123-012345678901",
@@ -1414,7 +1414,7 @@ OpenSearch Service sends this event when your domain becomes isolated and can't 
 
 The following is an example event of this type:
 
-```
+```json
 {
   "version":"0",
   "id":"01234567-0123-0123-0123-012345678901",

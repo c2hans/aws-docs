@@ -105,7 +105,7 @@ Use the following instruction to turn on compute sharing for a workflow.
 
    In a workflow YAML, add code similar to the following:
 
-   ```
+   ```yaml
      Name: MyWorkflow
      SchemaVersion: "1.0"
      Compute: # Define compute configuration.

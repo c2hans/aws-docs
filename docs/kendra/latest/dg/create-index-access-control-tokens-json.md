@@ -43,7 +43,7 @@ The JSON token is a non-validated payload. This should only be used when request
 
 To create an index with the AWS CLI using a JSON input file, first create a JSON file with your desired parameters:
 
-```
+```json
 {
     "Name": "{{user-context}}",
     "Edition": "{{ENTERPRISE_EDITION}}",
@@ -68,7 +68,7 @@ aws kendra create-index --cli-input-json file://create-index-openid.json
 
 If you are not using Open ID for AWS IAM Identity Center, you can send us the token in JSON format. If you do, you must specify which field in the JSON token contains the user name and which field contains the groups. The group field values must be a JSON string array. For example, if you are using SAML, your token would be similar to the following:
 
-```
+```json
 {
      "username" : "user1",
      "groups": [
@@ -80,7 +80,7 @@ If you are not using Open ID for AWS IAM Identity Center, you can send us the to
 
 The `TokenConfiguration` would specify the user name and group field names:
 
-```
+```json
 {
     "UserNameAttributeField":"username",
     "GroupAttributeField":"groups"
@@ -90,7 +90,7 @@ The `TokenConfiguration` would specify the user name and group field names:
 ------
 #### [ Python ]
 
-```
+```Python
 response = kendra.create_index(
     Name='{{user-context}}',
     Edition='{{ENTERPRISE_EDITION}}',

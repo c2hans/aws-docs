@@ -57,7 +57,7 @@ For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon
 
  When you upgrade an existing cluster, the update workflow can report the cluster as `AVAILABLE` before the data migration has finished. The migration continues in the background after the workflow completes, so an `AVAILABLE` status does not mean the migration is done. To see the actual progress, query the `system.upgrade_parquet_node` system table, which reports migration status for each node in the cluster.
 
-```
+```sql
 SELECT * FROM system.upgrade_parquet_node
 ```
 

@@ -30,7 +30,7 @@ For more information, see [Elastic Load Balancing and Amazon EC2 Auto Scaling](h
 **Tools for PowerShell V4**
 **Example 1: This example attaches the specified load balancer to the specified Auto Scaling group.**
 
-```
+```powershell
 Add-ASLoadBalancer -LoadBalancerName my-lb -AutoScalingGroupName my-asg
 ```
 +  For API details, see [AttachLoadBalancers](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -38,7 +38,7 @@ Add-ASLoadBalancer -LoadBalancerName my-lb -AutoScalingGroupName my-asg
 **Tools for PowerShell V5**
 **Example 1: This example attaches the specified load balancer to the specified Auto Scaling group.**
 
-```
+```powershell
 Add-ASLoadBalancer -LoadBalancerName my-lb -AutoScalingGroupName my-asg
 ```
 +  For API details, see [AttachLoadBalancers](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -37,19 +37,19 @@ To use the AWS IoT Device SDK v2 for Python, a device must run Python 3.6 or lat
 
    1. Clone the AWS IoT Device SDK v2 for Python repository to download it.
 
-      ```
+      ```bash
       git clone https://github.com/aws/aws-iot-device-sdk-python-v2.git
       ```
 
    1. Install the AWS IoT Device SDK v2 for Python.
 
-      ```
+      ```bash
       python3 -m pip install --user ./aws-iot-device-sdk-python-v2
       ```
 
 1. <a name="cd-iot-device-sdk-python-v2"></a>Change to the samples folder in the AWS IoT Device SDK v2 for Python.
 
-   ```
+   ```bash
    cd aws-iot-device-sdk-python-v2/samples/greengrass
    ```
 
@@ -60,7 +60,7 @@ To use the AWS IoT Device SDK v2 for Python, a device must run Python 3.6 or lat
    + Replace {{\~/certs/private.pem.key}} with the path to the private key file on the client device.
    + Replace {{us-east-1}} with the AWS Region where your client device and core device operate.
 
-   ```
+   ```bash
    python3 basic_discovery.py \\
      --thing_name {{MyClientDevice1}} \\
      --topic 'clients/{{MyClientDevice1}}/hello/world' \\
@@ -124,7 +124,7 @@ In this section, you use Greengrass discovery sample in the [AWS IoT Device SDK 
 
    1. Create a folder for the AWS IoT Device SDK v2 for C\+\+ workspace, and change to it.
 
-      ```
+      ```bash
       cd
       mkdir iot-device-sdk-cpp
       cd iot-device-sdk-cpp
@@ -132,20 +132,20 @@ In this section, you use Greengrass discovery sample in the [AWS IoT Device SDK 
 
    1. Clone the AWS IoT Device SDK v2 for C\+\+ repository to download it. The `--recursive` flag specifies to download submodules.
 
-      ```
+      ```bash
       git clone --recursive https://github.com/aws/aws-iot-device-sdk-cpp-v2.git
       ```
 
    1. Create a folder for the AWS IoT Device SDK v2 for C\+\+ build output, and change to it.
 
-      ```
+      ```bash
       mkdir aws-iot-device-sdk-cpp-v2-build
       cd aws-iot-device-sdk-cpp-v2-build
       ```
 
    1. Build the AWS IoT Device SDK v2 for C\+\+.
 
-      ```
+      ```bash
       cmake -DCMAKE_INSTALL_PREFIX="~/iot-device-sdk-cpp" -DCMAKE_BUILD_TYPE="Release" ../aws-iot-device-sdk-cpp-v2
       cmake --build . --target install
       ```
@@ -154,20 +154,20 @@ In this section, you use Greengrass discovery sample in the [AWS IoT Device SDK 
 
    1. Change to the Greengrass discovery sample folder in the AWS IoT Device SDK v2 for C\+\+.
 
-      ```
+      ```bash
       cd ../aws-iot-device-sdk-cpp-v2/samples/greengrass/basic_discovery
       ```
 
    1. Create a folder for the Greengrass discovery sample build output, and change to it.
 
-      ```
+      ```bash
       mkdir build
       cd build
       ```
 
    1. Build the Greengrass discovery sample application.
 
-      ```
+      ```bash
       cmake -DCMAKE_PREFIX_PATH="~/iot-device-sdk-cpp" -DCMAKE_BUILD_TYPE="Release" ..
       cmake --build . --config "Release"
       ```
@@ -179,7 +179,7 @@ In this section, you use Greengrass discovery sample in the [AWS IoT Device SDK 
    + Replace {{\~/certs/private.pem.key}} with the path to the private key file on the client device.
    + Replace {{us-east-1}} with the AWS Region where your client device and core device operate.
 
-   ```
+   ```bash
    ./basic-discovery \
      --thing_name {{MyClientDevice1}} \
      --topic 'clients/{{MyClientDevice1}}/hello/world' \
@@ -234,26 +234,26 @@ To use the AWS IoT Device SDK v2 for JavaScript, a device must run Node v10.0 or
 
    1. Clone the AWS IoT Device SDK v2 for JavaScript repository to download it.
 
-      ```
+      ```bash
       git clone https://github.com/aws/aws-iot-device-sdk-js-v2.git
       ```
 
    1. Install the AWS IoT Device SDK v2 for JavaScript.
 
-      ```
+      ```bash
       cd aws-iot-device-sdk-js-v2
       npm install
       ```
 
 1. Change to the Greengrass discovery sample folder in the AWS IoT Device SDK v2 for JavaScript.
 
-   ```
+   ```bash
    cd samples/node/greengrass/basic_discovery
    ```
 
 1. Install the Greengrass discovery sample application.
 
-   ```
+   ```bash
    npm install
    ```
 
@@ -264,7 +264,7 @@ To use the AWS IoT Device SDK v2 for JavaScript, a device must run Node v10.0 or
    + Replace {{\~/certs/private.pem.key}} with the path to the private key file on the client device.
    + Replace {{us-east-1}} with the AWS Region where your client device and core device operate.
 
-   ```
+   ```bash
    node dist/index.js \
      --thing_name {{MyClientDevice1}} \
      --topic 'clients/{{MyClientDevice1}}/hello/world' \
@@ -329,7 +329,7 @@ Apache Maven
 
    1. Clone the AWS IoT Device SDK v2 for Java repository to download it.
 
-      ```
+      ```bash
       git clone https://github.com/aws/aws-iot-device-sdk-java-v2.git
       ```
 
@@ -337,7 +337,7 @@ Apache Maven
 
    1. Build the AWS IoT Device SDK v2 for Java.
 
-      ```
+      ```bash
       cd aws-iot-device-sdk-java-v2
       mvn versions:use-latest-versions -Dincludes="software.amazon.awssdk.crt*"
       mvn clean install
@@ -350,7 +350,7 @@ Apache Maven
    + Replace {{$HOME/certs/private.pem.key}} with the path to the private key file on the client device.
    + Replace {{us-east-1}} with the AWS Region where your client device and core device operate.
 
-   ```
+   ```bash
    DISCOVERY_SAMPLE_ARGS="--thing_name {{MyClientDevice1}} \
      --topic 'clients/{{MyClientDevice1}}/hello/world' \
      --ca_file {{$HOME/certs/AmazonRootCA1.pem}} \

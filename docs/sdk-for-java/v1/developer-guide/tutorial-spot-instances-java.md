@@ -51,7 +51,7 @@ After we create an `AmazonEC2` client object, we create a `CreateSecurityGroupRe
 
 To enable access to the group, we create an `ipPermission` object with the IP address range set to the CIDR representation of the subnet for the local computer; the "/10" suffix on the IP address indicates the subnet for the specified IP address. We also configure the `ipPermission` object with the TCP protocol and port 22 (SSH). The final step is to call `ec2.authorizeSecurityGroupIngress` with the name of our security group and the `ipPermission` object.
 
-```
+```java
 // Create the AmazonEC2 client so we can call various APIs.
 AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
@@ -128,7 +128,7 @@ There are many ways to approach bidding for Spot Instances; to get a broad overv
 
 After you choose your bid price, you are ready to request a Spot Instance. For the purposes of this tutorial, we will bid the On-Demand price ($0.03) to maximize the chances that the bid will be fulfilled. You can determine the types of available instances and the On-Demand prices for instances by going to Amazon EC2 Pricing page. While a Spot Instancee is running, you pay the Spot price that’s in effect for the time period your instances are running. Spot Instance prices are set by Amazon EC2 and adjust gradually based on long-term trends in supply and demand for Spot Instance capacity. You can also specify the amount you are willing to pay for a Spot Instance as a % of the On-Demand Instance price.To request a Spot Instance, you simply need to build your request with the parameters you chose earlier. We start by creating a `RequestSpotInstanceRequest` object. The request object requires the number of instances you want to start and the bid price. Additionally, you need to set the `LaunchSpecification` for the request, which includes the instance type, AMI ID, and security group you want to use. Once the request is populated, you call the `requestSpotInstances` method on the `AmazonEC2Client` object. The following example shows how to request a Spot Instance.
 
-```
+```java
 // Create the AmazonEC2 client so we can call various APIs.
 AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
@@ -171,7 +171,7 @@ Next, we want to create code to wait until the Spot request reaches the "active"
 
 The request ID created in Step 2 is embedded in the response to our `requestSpotInstances` request. The following example code shows how to gather request IDs from the `requestSpotInstances` response and use them to populate an `ArrayList`.
 
-```
+```java
 // Call the RequestSpotInstance API.
 RequestSpotInstancesResult requestResult = ec2.requestSpotInstances(requestRequest);
 List<SpotInstanceRequest> requestResponses = requestResult.getSpotInstanceRequests();
@@ -190,7 +190,7 @@ for (SpotInstanceRequest requestResponse : requestResponses) {
 
 To monitor your request ID, call the `describeSpotInstanceRequests` method to determine the state of the request. Then loop until the request is not in the "open" state. Note that we monitor for a state of not "open", rather a state of, say, "active", because the request can go straight to "closed" if there is a problem with your request arguments. The following code example provides the details of how to accomplish this task.
 
-```
+```java
 // Create a variable that will track whether there are any
 // requests still in the open state.
 boolean anyOpen;
@@ -247,7 +247,7 @@ Lastly, we need to clean up our requests and instances. It is important to both 
 
 The following code demonstrates how to cancel your requests.
 
-```
+```java
 try {
     // Cancel requests.
     CancelSpotInstanceRequestsRequest cancelRequest =
@@ -265,7 +265,7 @@ try {
 
 To terminate any outstanding instances, you will need the instance ID associated with the request that started them. The following code example takes our original code for monitoring the instances and adds an `ArrayList` in which we store the instance ID associated with the `describeInstance` response.
 
-```
+```java
 // Create a variable that will track whether there are any requests
 // still in the open state.
 boolean anyOpen;
@@ -322,7 +322,7 @@ do {
 
 Using the instance IDs, stored in the `ArrayList`, terminate any running instances using the following code snippet.
 
-```
+```java
 try {
     // Terminate instances.
     TerminateInstancesRequest terminateRequest = new TerminateInstancesRequest(instanceIds);

@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-api-apiusageplan-syntax.yaml"></a>
 
-```
+```yaml
   [CreateUsagePlan](#sam-api-apiusageplan-createusageplan): {{String}}
   [Description](#sam-api-apiusageplan-description): {{String}}
   [Quota](#sam-api-apiusageplan-quota): {{[QuotaSettings](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-quota)}}
@@ -78,7 +78,7 @@ The following is a usage plan example.
 #### YAML
 <a name="sam-property-api-apiusageplan--examples--usageplan--yaml"></a>
 
-```
+```yaml
 Auth:
   UsagePlan:
     CreateUsagePlan: PER_API

@@ -9,12 +9,12 @@ You can enable tiered storage only if your cluster's log.cleanup.policy is set t
 
 1. **Update the Kafka version** – Cluster versions aren't simple integers. To find the current version of the cluster, use the `DescribeCluster` operation or the `describe-cluster` AWS CLI command. An example version is `KTVPDKIKX0DER`.
 
-   ```
+   ```json
    aws kafka update-cluster-kafka-version --cluster-arn ClusterArn --current-version Current-Cluster-Version --target-kafka-version 3.6.0
    ```
 
 1. Edit cluster storage mode. The following code example shows editing the cluster storage mode to `TIERED` using the [`update-storage`](https://docs.aws.amazon.com/cli/latest/reference/kafka/update-storage.html) API.
 
-   ```
+   ```json
    aws kafka update-storage --current-version Current-Cluster-Version --cluster-arn Cluster-arn --storage-mode TIERED
    ```

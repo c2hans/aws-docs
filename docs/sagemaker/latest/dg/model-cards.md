@@ -62,7 +62,7 @@ When creating a model card using the SageMaker Python SDK, model content must be
 ### Model card JSON schema sample file
 <a name="model-cards-json-schema-example"></a>
 
-```
+```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://json-schema.org/draft-07/schema#",

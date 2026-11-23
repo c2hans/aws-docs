@@ -24,7 +24,7 @@ In order for a cross-account `StartAudienceGenerationJob` to succeed, AWS accoun
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

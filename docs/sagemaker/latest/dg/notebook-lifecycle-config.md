@@ -43,7 +43,7 @@ Lifecycle configuration scripts run with root access and the notebook instance's
 
   For example, if you want to install a package only for the `python3` environment, use the following code:
 
-  ```
+  ```sh
   #!/bin/bash
   sudo -u ec2-user -i <<EOF
 
@@ -61,7 +61,7 @@ Lifecycle configuration scripts run with root access and the notebook instance's
 
   If you want to install a package in all conda environments in the notebook instance, use the following code:
 
-  ```
+  ```sh
   #!/bin/bash
   sudo -u ec2-user -i <<EOF
 

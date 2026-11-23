@@ -132,6 +132,11 @@ The key represents cost and usage metrics. The following values are supported:
 +  `NetUnblendedCost`
 +  `UsageQuantity`
 +  `NormalizedUsageAmount`
++  `BilledCost`
++  `ContractedCost`
++  `ListCost`
++  `PublicEquivalentBilledCost`
++  `PublicOnDemandCost`
 The supported values for `SortOrder` are `ASCENDING` and `DESCENDING`.
 When you use `SortBy`, `NextPageToken` and `SearchString` aren't supported.
 Type: Array of [SortDefinition](API_SortDefinition.md) objects

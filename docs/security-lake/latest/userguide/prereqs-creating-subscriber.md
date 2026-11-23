@@ -65,7 +65,7 @@ Attach the following policy to your IAM role:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -92,7 +92,7 @@ Attach the following trust policy to your IAM role to permit EventBridge to assu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

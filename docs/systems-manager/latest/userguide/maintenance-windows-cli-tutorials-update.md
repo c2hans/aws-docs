@@ -23,7 +23,7 @@ As you follow the steps in this tutorial, replace the values in italicized {{red
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window-target \
        --window-id "{{mw-0c50858d01EXAMPLE}}" \
        --window-target-id "{{e32eecb2-646c-4f4b-8ed1-205fbEXAMPLE}}" \
@@ -34,7 +34,7 @@ As you follow the steps in this tutorial, replace the values in italicized {{red
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window-target ^
        --window-id "{{mw-0c50858d01EXAMPLE}}" ^
        --window-target-id "{{e32eecb2-646c-4f4b-8ed1-205fbEXAMPLE}}" ^
@@ -68,7 +68,7 @@ As you follow the steps in this tutorial, replace the values in italicized {{red
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window-target \
        --window-id "{{mw-0c50858d01EXAMPLE}}" \
        --window-target-id "{{d208dedf-3f6b-41ff-ace8-8e751EXAMPLE}}" \
@@ -80,7 +80,7 @@ As you follow the steps in this tutorial, replace the values in italicized {{red
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window-target ^
        --window-id "{{mw-0c50858d01EXAMPLE}}" ^
        --window-target-id "{{d208dedf-3f6b-41ff-ace8-8e751EXAMPLE}}" ^
@@ -117,7 +117,7 @@ As you follow the steps in this tutorial, replace the values in italicized {{red
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window \
        --window-id "{{mw-0c50858d01EXAMPLE}}" \
        --start-date "{{2020-10-01T10:10:10Z}}" \
@@ -127,7 +127,7 @@ As you follow the steps in this tutorial, replace the values in italicized {{red
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window ^
        --window-id "{{mw-0c50858d01EXAMPLE}}" ^
        --start-date "{{2020-10-01T10:10:10Z}}" ^
@@ -143,7 +143,7 @@ If your target is an Amazon Elastic Compute Cloud (Amazon EC2) instance for Wind
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window-task \
        --window-id "{{mw-0c50858d01EXAMPLE}}" \
        --window-task-id "{{4f7ca192-7e9a-40fe-9192-5cb15EXAMPLE}}" \
@@ -158,7 +158,7 @@ If your target is an Amazon Elastic Compute Cloud (Amazon EC2) instance for Wind
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window-task ^
        --window-id "{{mw-0c50858d01EXAMPLE}}" ^
        --window-task-id "{{4f7ca192-7e9a-40fe-9192-5cb15EXAMPLE}}" ^
@@ -212,7 +212,7 @@ If your target is an Amazon Elastic Compute Cloud (Amazon EC2) instance for Wind
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window-task \
        --window-id {{mw-0c50858d01EXAMPLE}} \
        --window-task-id {{4f7ca192-7e9a-40fe-9192-5cb15EXAMPLE}} \
@@ -228,7 +228,7 @@ If your target is an Amazon Elastic Compute Cloud (Amazon EC2) instance for Wind
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window-task ^
        --window-id {{mw-0c50858d01EXAMPLE}} ^
        --window-task-id {{4f7ca192-7e9a-40fe-9192-5cb15EXAMPLE}} ^
@@ -276,7 +276,7 @@ If your target is an Amazon Elastic Compute Cloud (Amazon EC2) instance for Wind
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window-task \
        --window-id "{{mw-0c50858d01EXAMPLE}}" \
        --window-task-id "{{4f7ca192-7e9a-40fe-9192-5cb15EXAMPLE}}" \
@@ -292,7 +292,7 @@ If your target is an Amazon Elastic Compute Cloud (Amazon EC2) instance for Wind
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window-task ^
        --window-id "{{mw-0c50858d01EXAMPLE}}" ^
        --window-task-id "{{4f7ca192-7e9a-40fe-9192-5cb15EXAMPLE}}" ^
@@ -342,7 +342,7 @@ If your target is an Amazon Elastic Compute Cloud (Amazon EC2) instance for Wind
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm deregister-target-from-maintenance-window \
        --window-id "{{mw-0c50858d01EXAMPLE}}" \
        --window-target-id "{{e32eecb2-646c-4f4b-8ed1-205fbEXAMPLE}}" \
@@ -352,7 +352,7 @@ If your target is an Amazon Elastic Compute Cloud (Amazon EC2) instance for Wind
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm deregister-target-from-maintenance-window ^
        --window-id "{{mw-0c50858d01EXAMPLE}}" ^
        --window-target-id "{{e32eecb2-646c-4f4b-8ed1-205fbEXAMPLE}}" ^
@@ -373,7 +373,7 @@ If your target is an Amazon Elastic Compute Cloud (Amazon EC2) instance for Wind
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm deregister-target-from-maintenance-window \
        --window-id "{{mw-0c50858d01EXAMPLE}}" \
        --window-target-id "{{e32eecb2-646c-4f4b-8ed1-205fbEXAMPLE}}" \
@@ -383,7 +383,7 @@ If your target is an Amazon Elastic Compute Cloud (Amazon EC2) instance for Wind
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm deregister-target-from-maintenance-window ^
        --window-id "{{mw-0c50858d01EXAMPLE}}" ^
        --window-target-id "{{e32eecb2-646c-4f4b-8ed1-205fbEXAMPLE}}" ^
@@ -406,7 +406,7 @@ If your target is an Amazon Elastic Compute Cloud (Amazon EC2) instance for Wind
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window-task \
        --window-id "{{mw-0c50858d01EXAMPLE}}" \
        --window-task-id "{{4f7ca192-7e9a-40fe-9192-5cb15EXAMPLE}}" \
@@ -417,7 +417,7 @@ If your target is an Amazon Elastic Compute Cloud (Amazon EC2) instance for Wind
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window-task ^
        --window-id "{{mw-0c50858d01EXAMPLE}}" ^
        --window-task-id "{{4f7ca192-7e9a-40fe-9192-5cb15EXAMPLE}}" ^
@@ -465,7 +465,7 @@ If your target is an Amazon Elastic Compute Cloud (Amazon EC2) instance for Wind
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window-task \
        --window-id "{{mw-0c50858d01EXAMPLE}}" \
        --window-task-id "{{4f7ca192-7e9a-40fe-9192-5cb15EXAMPLE}}" \
@@ -479,7 +479,7 @@ If your target is an Amazon Elastic Compute Cloud (Amazon EC2) instance for Wind
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm update-maintenance-window-task ^
        --window-id "{{mw-0c50858d01EXAMPLE}}" ^
        --window-task-id "{{4f7ca192-7e9a-40fe-9192-5cb15EXAMPLE}}" ^

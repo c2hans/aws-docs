@@ -65,7 +65,7 @@ To create the environment in the Amazon EVS console or with the AWS CLI, use the
 
    The following example creates an Amazon EVS environment in Self-deployed mode. Replace the example IDs, names, and CIDR blocks with your own values, and size the CIDR blocks for your VPC. The example CIDR blocks assume the 10.10.0.0/16 VPC from the earlier network steps. Each VLAN CIDR block must be inside a CIDR block of your VPC. Replace `<region-code>` with the Region where you want to create the environment.
 
-   ```
+   ```bash
    aws evs create-environment \
        --environment-name my-self-deployed-env \
        --vpc-id vpc-0abcdef1234567890 \
@@ -102,7 +102,7 @@ After the environment is in the `CREATED` state, do the following.
 
 1. Record the VLAN IDs that Amazon EVS assigned. The VLAN IDs can differ for each environment, so read them from your environment. You can find them in the Amazon EVS console on the **Networks and connectivity** tab of your environment, or with the following command. Replace `<environment-id>` with the ID of your environment, and replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws evs list-environment-vlans \
        --environment-id <environment-id> \
        --query 'environmentVlans[].[functionName,vlanId,cidr]' \

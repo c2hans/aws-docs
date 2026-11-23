@@ -15,7 +15,7 @@ Create an AWS IoT policy that allows your Raspberry Pi to connect and send messa
 1. In the **Add statements** section, replace the existing policy with the following JSON. Replace {{region}} and {{account}} with your AWS Region and AWS account number.
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

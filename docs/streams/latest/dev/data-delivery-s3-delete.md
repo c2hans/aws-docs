@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-s3-dele
 
  Use the `delete-channel` command:
 
-```
+```bash
 aws kinesis delete-channel \
     --channel-arn "arn:aws:kinesis:us-east-1:111122223333:channel/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 ```

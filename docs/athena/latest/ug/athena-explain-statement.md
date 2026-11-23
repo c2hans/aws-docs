@@ -524,3 +524,5 @@ For additional information, see the following resources.
 +  [Optimize Federated Query Performance using EXPLAIN and EXPLAIN ANALYZE in Amazon Athena](https://aws.amazon.com/blogs/big-data/optimize-federated-query-performance-using-explain-and-explain-analyze-in-amazon-athena/) in the *AWS Big Data Blog*.
 
 [![AWS Videos](https://img.youtube.com/vi/7JUyTqglmNU/0.jpg)](https://www.youtube.com/watch?v=7JUyTqglmNU)
+
+Visual query execution analysis in Amazon Athena (AWS YouTube channel)

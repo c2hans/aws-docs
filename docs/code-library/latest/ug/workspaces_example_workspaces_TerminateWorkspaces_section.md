@@ -38,17 +38,17 @@ For more information, see [Delete a WorkSpace](https://docs.aws.amazon.com/works
 **Tools for PowerShell V4**
 **Example 1: Terminates multiple WorkSpaces. use of the -Force switch stops the cmdlet from prompting for confirmation.**
 
-```
+```powershell
 Remove-WKSWorkspace -WorkspaceId "ws-1a2b3c4d5","ws-6a7b8c9d0" -Force
 ```
 **Example 2: Retrieves the collection of all your WorkSpaces and pipes the IDs to the -WorkSpaceId parameter of Remove-WKSWorkspace, terminating all of the WorkSpaces. The cmdlet will prompt before each WorkSpace is terminated. To suppress the confirmation prompt add the -Force switch.**
 
-```
+```powershell
 Get-WKSWorkspaces | Remove-WKSWorkspace
 ```
 **Example 3: This example shows how to pass TerminateRequest objects defining the WorkSpaces to be terminated. The cmdlet will prompt for confirmation before proceeding, unless the -Force switch parameter is also specified.**
 
-```
+```powershell
 $arrRequest = @()
 $request1 = New-Object Amazon.WorkSpaces.Model.TerminateRequest
 $request1.WorkspaceId = 'ws-12345678'
@@ -63,17 +63,17 @@ Remove-WKSWorkspace -Request $arrRequest
 **Tools for PowerShell V5**
 **Example 1: Terminates multiple WorkSpaces. use of the -Force switch stops the cmdlet from prompting for confirmation.**
 
-```
+```powershell
 Remove-WKSWorkspace -WorkspaceId "ws-1a2b3c4d5","ws-6a7b8c9d0" -Force
 ```
 **Example 2: Retrieves the collection of all your WorkSpaces and pipes the IDs to the -WorkSpaceId parameter of Remove-WKSWorkspace, terminating all of the WorkSpaces. The cmdlet will prompt before each WorkSpace is terminated. To suppress the confirmation prompt add the -Force switch.**
 
-```
+```powershell
 Get-WKSWorkspaces | Remove-WKSWorkspace
 ```
 **Example 3: This example shows how to pass TerminateRequest objects defining the WorkSpaces to be terminated. The cmdlet will prompt for confirmation before proceeding, unless the -Force switch parameter is also specified.**
 
-```
+```powershell
 $arrRequest = @()
 $request1 = New-Object Amazon.WorkSpaces.Model.TerminateRequest
 $request1.WorkspaceId = 'ws-12345678'

@@ -45,7 +45,7 @@ Use the following `put-users` command to add one or more users with the AWS CLI.
 
 For `properties`, for each field in your Users dataset, replace the `propertyName` with the field name from your schema in camel case. For example, GENDER would be `gender` and MEMBERSHIP\_TYPE would be `membershipType`. Replace `user data` with the data for the user. For categorical string data, to include multiple categories for a single property, separate each category with a pipe (`|`). For example `\"Premium Class|Legacy Member\"`.
 
-```
+```cmd
 aws personalize-events put-users \
   --dataset-arn {{dataset arn}} \
   --users '[{
@@ -70,7 +70,7 @@ For categorical string data, to include multiple categories for a single propert
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```py
 import boto3
 
 personalize_events = boto3.client(service_name='personalize-events')
@@ -91,7 +91,7 @@ personalize_events.put_users(
 ------
 #### [ SDK for Java 2.x ]
 
-```
+```java
 public static int putUsers(PersonalizeEventsClient personalizeEventsClient,
                          String datasetArn,
                          String user1Id,
@@ -137,7 +137,7 @@ public static int putUsers(PersonalizeEventsClient personalizeEventsClient,
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 import {
   PutUsersCommand,
   PersonalizeEventsClient,

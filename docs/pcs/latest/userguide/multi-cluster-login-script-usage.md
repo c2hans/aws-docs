@@ -11,19 +11,19 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/multi-cluster-login
 
 1. Save the [content of the script](multi-cluster-login-script-code.md#multi-cluster-login-script-code-content) in a file named:
 
-   ```
+   ```sh
    pcs-multi-cluster-login-configure.sh
    ```
 
 1. Make it executable:
 
-   ```
+   ```sh
    chmod +x pcs-multi-cluster-login-configure.sh
    ```
 
 1. Run the script:
 
-   ```
+   ```sh
    ./pcs-multi-cluster-login-configure.sh --cluster-identifier {{cluster-name}}
    ```
 

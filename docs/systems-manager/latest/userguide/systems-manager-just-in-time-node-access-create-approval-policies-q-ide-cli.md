@@ -101,7 +101,7 @@ For an auto-approval policy, the document name must be `SSM-JustInTimeAccessAuto
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm create-document \
        --content file://{{path}}/{{to}}/{{file}}/{{policyContent}}.cedar \
        --name "{{SSM-JustInTimeAccessAutoApprovalPolicy}}" \
@@ -111,7 +111,7 @@ For an auto-approval policy, the document name must be `SSM-JustInTimeAccessAuto
 ------
 #### [  Windows  ]
 
-   ```
+   ```sh
    aws ssm create-document ^
        --content file://C:\{{path}}\{{to}}\{{file}}\{{policyContent}}.cedar ^
        --name "{{SSM-JustInTimeAccessAutoApprovalPolicy}}" ^
@@ -121,7 +121,7 @@ For an auto-approval policy, the document name must be `SSM-JustInTimeAccessAuto
 ------
 #### [   PowerShell   ]
 
-   ```
+   ```ps
    $cedar = Get-Content -Path "C:\{{path}}\{{to}}\{{file}}\{{policyContent}}.cedar" | Out-String
    New-SSMDocument `
        -Content $cedar `

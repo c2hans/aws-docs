@@ -300,7 +300,7 @@ For more information about c3p0, see [c3p0](https://www.mchange.com/projects/c3p
 ------
 #### [ MySQL ]
 
-```
+```java
 c3p0.user={{secretId}}
 c3p0.driverClass=com.amazonaws.secretsmanager.sql.AWSSecretsManagerMySQLDriver
 c3p0.jdbcUrl={{secretId}}
@@ -309,7 +309,7 @@ c3p0.jdbcUrl={{secretId}}
 ------
 #### [ PostgreSQL ]
 
-```
+```java
 c3p0.user={{secretId}}
 c3p0.driverClass=com.amazonaws.secretsmanager.sql.AWSSecretsManagerPostgreSQLDriver
 c3p0.jdbcUrl={{secretId}}
@@ -318,7 +318,7 @@ c3p0.jdbcUrl={{secretId}}
 ------
 #### [ Oracle ]
 
-```
+```java
 c3p0.user={{secretId}}
 c3p0.driverClass=com.amazonaws.secretsmanager.sql.AWSSecretsManagerOracleDriver
 c3p0.jdbcUrl={{secretId}}
@@ -327,7 +327,7 @@ c3p0.jdbcUrl={{secretId}}
 ------
 #### [ MSSQLServer ]
 
-```
+```java
 c3p0.user={{secretId}}
 c3p0.driverClass=com.amazonaws.secretsmanager.sql.AWSSecretsManagerMSSQLServerDriver
 c3p0.jdbcUrl={{secretId}}
@@ -336,7 +336,7 @@ c3p0.jdbcUrl={{secretId}}
 ------
 #### [ Db2 ]
 
-```
+```java
 c3p0.user={{secretId}}
 c3p0.driverClass=com.amazonaws.secretsmanager.sql.AWSSecretsManagerDb2Driver
 c3p0.jdbcUrl={{secretId}}
@@ -345,7 +345,7 @@ c3p0.jdbcUrl={{secretId}}
 ------
 #### [ Redshift ]
 
-```
+```java
 c3p0.user={{secretId}}
 c3p0.driverClass=com.amazonaws.secretsmanager.sql.AWSSecretsManagerRedshiftDriver
 c3p0.jdbcUrl={{secretId}}
@@ -365,7 +365,7 @@ The following example shows how to establish a connection pool with a `c3p0.prop
 ------
 #### [ MySQL ]
 
-```
+```java
 c3p0.user={{secretId}}
 c3p0.driverClass=com.amazonaws.secretsmanager.sql.AWSSecretsManagerMySQLDriver
 c3p0.jdbcUrl=jdbc-secretsmanager:{{mysql://example.com:3306}}
@@ -374,7 +374,7 @@ c3p0.jdbcUrl=jdbc-secretsmanager:{{mysql://example.com:3306}}
 ------
 #### [ PostgreSQL ]
 
-```
+```java
 c3p0.user={{secretId}}
 c3p0.driverClass=com.amazonaws.secretsmanager.sql.AWSSecretsManagerPostgreSQLDriver
 c3p0.jdbcUrl=jdbc-secretsmanager:{{postgresql://example.com:5432/database}}
@@ -383,7 +383,7 @@ c3p0.jdbcUrl=jdbc-secretsmanager:{{postgresql://example.com:5432/database}}
 ------
 #### [ Oracle ]
 
-```
+```java
 c3p0.user={{secretId}}
 c3p0.driverClass=com.amazonaws.secretsmanager.sql.AWSSecretsManagerOracleDriver
 c3p0.jdbcUrl=jdbc-secretsmanager:{{oracle:thin:@example.com:1521/ORCL}}
@@ -392,7 +392,7 @@ c3p0.jdbcUrl=jdbc-secretsmanager:{{oracle:thin:@example.com:1521/ORCL}}
 ------
 #### [ MSSQLServer ]
 
-```
+```java
 c3p0.user={{secretId}}
 c3p0.driverClass=com.amazonaws.secretsmanager.sql.AWSSecretsManagerMSSQLServerDriver
 c3p0.jdbcUrl=jdbc-secretsmanager:{{sqlserver://example.com:1433}}
@@ -401,7 +401,7 @@ c3p0.jdbcUrl=jdbc-secretsmanager:{{sqlserver://example.com:1433}}
 ------
 #### [ Db2 ]
 
-```
+```java
 c3p0.user={{secretId}}
 c3p0.driverClass=com.amazonaws.secretsmanager.sql.AWSSecretsManagerDb2Driver
 c3p0.jdbcUrl=jdbc-secretsmanager:{{db2://example.com:50000}}
@@ -410,7 +410,7 @@ c3p0.jdbcUrl=jdbc-secretsmanager:{{db2://example.com:50000}}
 ------
 #### [ Redshift ]
 
-```
+```java
 c3p0.user={{secretId}}
 c3p0.driverClass=com.amazonaws.secretsmanager.sql.AWSSecretsManagerRedshiftDriver
 c3p0.jdbcUrl=jdbc-secretsmanager:{{redshift://example.com:5439}}

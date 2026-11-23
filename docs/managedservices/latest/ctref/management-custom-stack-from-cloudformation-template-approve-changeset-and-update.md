@@ -103,13 +103,13 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-custom-stack-from-cloudformation-template-approve-changeset-and-update-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-custom-stack-from-cloudformation-template-approve-changeset-and-update-ex-max"></a>
 
-```
+```json
 Example not available.
 ```

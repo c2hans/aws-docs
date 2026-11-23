@@ -55,7 +55,7 @@ To view a code example for using the `$abs` command, choose the tab for the lang
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function main() {
@@ -80,7 +80,7 @@ main();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def main():

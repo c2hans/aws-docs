@@ -8,7 +8,7 @@ Checks the column count of the primary dataset against a given expression. In th
 
 **Syntax**
 
-```
+```json
 ColumnCount {{<EXPRESSION>}}
 ```
 + **EXPRESSION** – An expression to run against the rule type response in order to produce a Boolean value. For more information, see [Expressions](dqdl.md#dqdl-syntax-rule-expressions).
@@ -17,7 +17,7 @@ ColumnCount {{<EXPRESSION>}}
 
 The following example rule checks whether the column count is within a given range.
 
-```
+```json
 ColumnCount between 10 and 20
 ```
 

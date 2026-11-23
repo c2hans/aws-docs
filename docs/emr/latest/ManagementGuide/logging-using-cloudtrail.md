@@ -57,7 +57,7 @@ An event represents a single request from any source and includes information ab
 
 The following example shows a CloudTrail log entry that demonstrates the **RunJobFlow** action.
 
-```
+```json
 {
 	"Records": [
 	{

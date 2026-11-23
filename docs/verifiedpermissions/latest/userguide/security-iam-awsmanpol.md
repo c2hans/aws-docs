@@ -20,7 +20,7 @@ The `AmazonVerifiedPermissionsFullAccess` managed policy grants full access to V
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -64,7 +64,7 @@ Access to `BatchIsAuthorized` and `BatchIsAuthorizedWithToken` are granted autom
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

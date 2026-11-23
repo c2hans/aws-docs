@@ -26,7 +26,7 @@ For more information, see [Amazon S3 Actions](https://docs.aws.amazon.com/Amazon
 
 This exercise also involves uploading and editing a file that's then run as a program from the command line interface. Open a text editor on your local machine and add the following code snippet.
 
-```
+```python
 import sys
 x=int(sys.argv[1])
 y=int(sys.argv[2])

@@ -88,7 +88,7 @@ This section describes how to launch and configure an Amazon DocumentDB CloudFor
 
       JSON:
 
-      ```
+      ```json
       "Resources": {
           "DBCluster": {
               "Type": "AWS::DocDB::DBCluster",
@@ -110,7 +110,7 @@ This section describes how to launch and configure an Amazon DocumentDB CloudFor
 
       YAML:
 
-      ```
+      ```yaml
       Resources:
         DBCluster:
           Type: 'AWS::DocDB::DBCluster'

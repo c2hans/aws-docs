@@ -10,7 +10,7 @@ Set up a S3 bucket to upload training datasets and save training output data for
 
 Use the following code to specify the default S3 bucket allocated for your SageMaker AI session. `prefix` is the path within the bucket where SageMaker AI stores the data for the current training job.
 
-```
+```python
 sess = sagemaker.Session()
 bucket = sess.default_bucket() # Set a default S3 bucket
 prefix = 'DEMO-automatic-model-tuning-xgboost-dm'
@@ -20,7 +20,7 @@ prefix = 'DEMO-automatic-model-tuning-xgboost-dm'
 
 If you want to use a specific S3 bucket, use the following code and replace the strings to the exact name of the S3 bucket. The name of the bucket must contain **sagemaker**, and be globally unique. The bucket must be in the same AWS Region as the notebook instance that you use for this example.
 
-```
+```py
 bucket = "{{sagemaker-your-preferred-s3-bucket}}"
 
 sess = sagemaker.Session(

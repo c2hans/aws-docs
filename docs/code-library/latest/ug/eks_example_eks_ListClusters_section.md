@@ -39,7 +39,7 @@ For more information, see [Amazon EKS cluster lifecycle and configuration](https
 **Tools for PowerShell V4**
 **Example 1: This cmdlet lists the Amazon EKS clusters in your AWS account in the specified Region.**
 
-```
+```powershell
 Get-EKSClusterList
 ```
 **Output:**
@@ -52,7 +52,7 @@ Get-EKSClusterList
 **Tools for PowerShell V5**
 **Example 1: This cmdlet lists the Amazon EKS clusters in your AWS account in the specified Region.**
 
-```
+```powershell
 Get-EKSClusterList
 ```
 **Output:**

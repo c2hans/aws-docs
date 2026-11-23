@@ -10,7 +10,7 @@ Create an AWS RCS Agent, the top-level resource that represents your brand for R
 
 1. At the command line, enter the following command. The `--deletion-protection-enabled` option prevents the agent from being removed until you disable it.
 
-   ```
+   ```bash
    $ aws pinpoint-sms-voice-v2 create-rcs-agent \
    > --deletion-protection-enabled
    ```

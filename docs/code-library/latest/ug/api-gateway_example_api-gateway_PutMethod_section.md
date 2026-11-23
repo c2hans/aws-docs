@@ -49,7 +49,7 @@ For more information, see [Set up a method request in API Gateway](https://docs.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/api-gateway#code-examples).
 
-```
+```python
 class ApiGatewayToService:
     """
     Encapsulates Amazon API Gateway functions that are used to create a REST API that
@@ -159,7 +159,7 @@ class ApiGatewayToService:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/agw#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_agw->putmethod(
           iv_restapiid = iv_rest_api_id

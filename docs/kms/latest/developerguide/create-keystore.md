@@ -127,7 +127,7 @@ Do not include confidential or sensitive information in this field. This field m
 
 The following example uses a fictitious cluster ID. Before running the command, replace it with a valid cluster ID.
 
-```
+```bash
 $ aws kms create-custom-key-store
         --custom-key-store-name {{ExampleCloudHSMKeyStore}} \
         --cloud-hsm-cluster-id {{cluster-1a23b4cdefg}} \
@@ -137,7 +137,7 @@ $ aws kms create-custom-key-store
 
 If you are using the AWS CLI, you can specify the trust anchor certificate file, instead of its contents. In the following example, the `customerCA.crt` file is in the root directory.
 
-```
+```bash
 $ aws kms create-custom-key-store
         --custom-key-store-name {{ExampleCloudHSMKeyStore}} \
         --cloud-hsm-cluster-id {{cluster-1a23b4cdefg}} \

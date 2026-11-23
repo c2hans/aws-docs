@@ -18,7 +18,7 @@ The asynchronous methods in the AWS SDK for .NET API are operations based on the
 
 When these API methods are called in your code, they must be called within a function that is declared with the `async` keyword, as shown in the following example.
 
-```
+```csharp
 static async Task Main(string[] args)
 {
   ...
@@ -41,7 +41,7 @@ private static async Task<ListBucketsResponse> ListBucketsAsync()
 
 As shown in the preceding code snippet, the preferred scope for the `async` declaration is the `Main` function. Setting this `async` scope ensures that all calls to AWS service clients are required to be asynchronous. If you can't declare `Main` to be asynchronous for some reason, you can use the `async` keyword on functions other than `Main` and then call the API methods from there, as shown in the following example.
 
-```
+```csharp
 static void Main(string[] args)
 {
   ...

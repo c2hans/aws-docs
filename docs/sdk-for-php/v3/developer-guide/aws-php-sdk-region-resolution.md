@@ -13,7 +13,7 @@ The AWS SDK for PHP Version 3 uses the following order to determine which Region
 
 1. Region provided in code—If you explicitly set the Region in the client constructor options, this takes precedence over all other sources.
 
-   ```
+   ```php
    $s3Client = new Aws\S3\S3Client([
        'region' => 'us-west-2'
    ]);
@@ -23,7 +23,7 @@ The AWS SDK for PHP Version 3 uses the following order to determine which Region
    + `AWS_REGION`
    + `AWS_DEFAULT_REGION`
 
-   ```
+   ```bash
    # Example of setting Region through environment variables.
    export AWS_REGION=us-east-1
    ```
@@ -38,7 +38,7 @@ The AWS SDK for PHP Version 3 uses the following order to determine which Region
 
    As an example, assume we have the following configuration file settings:
 
-   ```
+   ```ini
    # Example ~/.aws/config file.
    [default]
    region = eu-west-1

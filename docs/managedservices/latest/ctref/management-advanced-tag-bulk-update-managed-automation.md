@@ -124,7 +124,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-tag-bulk-update-managed-automation-ex-min"></a>
 
-```
+```json
 {
     "Description": "Tag all the instances for App A",
     "CsvS3Url": "https://example-bucket.s3.eu-central-1.amazonaws.com/tags.csv"
@@ -134,7 +134,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-tag-bulk-update-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "Description": "Tag all the instances for App A",
   "CsvS3Url": "https://example-bucket.s3.amazonaws.com/tags.csv?AWSAccessKeyId=AKIAIOSFODNN7EXAMPLE",

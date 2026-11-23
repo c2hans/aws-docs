@@ -122,7 +122,7 @@ The `stage-deadline` command requires that the IAM entity you authenticate with 
 
 First create an IAM policy with the following JSON. You can follow the [Create a Customer Managed Policy guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_managed-policies.html#step1-create-policy) if you aren’t familiar with how to do this.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -144,7 +144,7 @@ After finishing the policy setup, create a user that has your new policy applied
 
 If you attempt to use a different value for {{DEADLINE\_VERSION}} and rerun the `stage-deadline` script, you may get the following message:
 
-```
+```bash
 stage-deadline {{DEADLINE_VERSION}} --output {{STAGE_PATH}}
 The target directory is not empty.
 ```

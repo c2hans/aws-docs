@@ -20,7 +20,7 @@ The `customization_request_id` allows you to correlate the triggering event with
 
 **Example Query audit records by trigger source**
 
-```
+```bash
 aws dynamodb scan \
   --table-name aft-customizations-audit \
   --filter-expression "trigger_source = :ts" \

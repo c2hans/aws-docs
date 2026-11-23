@@ -38,13 +38,13 @@ https://docs.aws.amazon.com/location/latest/developerguide/ai-llms.md
 
  Install Amazon Location Service as an [Agent Skill](https://agentskills.io) using the skills CLI:
 
-```
+```bash
 npx skills add aws-geospatial/amazon-location-agent-context -a kiro-cli
 ```
 
  After installing, add the skill to your custom agent's resources in `.kiro/agents/<agent>.json`:
 
-```
+```json
 {
     "resources": [
         "skill://.kiro/skills/**/SKILL.md"
@@ -71,7 +71,7 @@ npx skills add aws-geospatial/amazon-location-agent-context -a kiro-cli
 
 Run the following command to install the plugin:
 
-```
+```bash
 /plugin install amazon-location-service@claude-plugins-official
 ```
 
@@ -117,7 +117,7 @@ Run the following command to install the plugin:
 
  For AI coding agents that support the [Agent Skills](https://agentskills.io) open standard (including GitHub Copilot, OpenCode, Codex, Antigravity, and [more](https://github.com/vercel-labs/skills?tab=readme-ov-file#supported-agents)), install the skill using the skills CLI:
 
-```
+```bash
 npx skills add aws-geospatial/amazon-location-agent-context
 ```
 
@@ -143,19 +143,19 @@ $ npx skills add aws-geospatial/amazon-location-agent-context
 
 GitHub Copilot:
 
-```
+```bash
 npx skills add aws-geospatial/amazon-location-agent-context -a github-copilot
 ```
 
 OpenCode:
 
-```
+```bash
 npx skills add aws-geospatial/amazon-location-agent-context -a opencode
 ```
 
 Codex:
 
-```
+```bash
 npx skills add aws-geospatial/amazon-location-agent-context -a codex
 ```
 

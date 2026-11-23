@@ -118,7 +118,7 @@ The following image shows "Add fields" module in the Amazon Bedrock console with
 
 Here is an example of what that same field definition looks like in a JSON schema, for the API:
 
-```
+```json
 "product_type":{
 "type": "string",
 "inferenceType": "inferred",

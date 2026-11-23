@@ -37,7 +37,7 @@ For more information, see [Writing SSM Document Content](https://docs.aws.amazon
 **Tools for PowerShell V4**
 **Example 1: This updates the default version of a document. You can obtain the available document versions with the "Get-SSMDocumentVersionList" cmdlet.**
 
-```
+```powershell
 Update-SSMDocumentDefaultVersion -Name "RunShellScript" -DocumentVersion "2"
 ```
 **Output:**
@@ -52,7 +52,7 @@ DefaultVersion Name
 **Tools for PowerShell V5**
 **Example 1: This updates the default version of a document. You can obtain the available document versions with the "Get-SSMDocumentVersionList" cmdlet.**
 
-```
+```powershell
 Update-SSMDocumentDefaultVersion -Name "RunShellScript" -DocumentVersion "2"
 ```
 **Output:**

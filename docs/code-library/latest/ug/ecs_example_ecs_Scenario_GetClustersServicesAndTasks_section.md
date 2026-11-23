@@ -18,7 +18,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/ECS#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 using Amazon.ECS;
 using ECSActions;
 using Microsoft.Extensions.Hosting;
@@ -155,7 +155,7 @@ public class ECSScenario
 ```
 Wrapper methods that are called by the scenario to manage Amazon ECS actions.
 
-```
+```csharp
 using Amazon.ECS;
 using Amazon.ECS.Model;
 using Microsoft.Extensions.Logging;

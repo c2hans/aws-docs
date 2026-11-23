@@ -265,7 +265,7 @@ You can find settings related to Application Load Balancers in the following nam
 **Example .ebextensions/alb-access-logs.config**
 The following configuration file enables access log uploads for an environment with an Application Load Balancer.
 
-```
+```yaml
 option_settings:
   aws:elbv2:loadbalancer:
     AccessLogsS3Bucket: amzn-s3-demo-bucket
@@ -276,7 +276,7 @@ option_settings:
 **Example .ebextensions/alb-default-process.config**
 The following configuration file modifies health check and stickiness settings on the default process.
 
-```
+```yaml
 option_settings:
   aws:elasticbeanstalk:environment:process:default:
     DeregistrationDelay: '20'
@@ -294,7 +294,7 @@ option_settings:
 **Example .ebextensions/alb-secure-listener.config**
 The following configuration file adds a secure listener and a matching process on port 443.
 
-```
+```yaml
 option_settings:
   aws:elbv2:listener:443:
     DefaultProcess: https
@@ -309,7 +309,7 @@ option_settings:
 **Example .ebextensions/alb-admin-rule.config**
 The following configuration file adds a secure listener with a rule that routes traffic with a request path of `/admin` to a process named `admin` that listens on port 4443.
 
-```
+```yaml
 option_settings:
   aws:elbv2:listener:443:
     DefaultProcess: https

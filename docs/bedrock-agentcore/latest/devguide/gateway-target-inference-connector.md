@@ -22,7 +22,7 @@ Connectors are recommended when you want to quickly add a supported model provid
 
 The target configuration for an inference connector target uses the following structure:
 
-```
+```json
 {
     "inference": {
         "connector": {
@@ -45,7 +45,7 @@ Each connector provides built-in defaults equivalent to a fully-specified provid
 
 The following example shows how to create an inference target using the Bedrock Mantle connector:
 
-```
+```bash
 aws bedrock-agentcore-control create-gateway-target --cli-input-json '{
     "gatewayIdentifier": "GATEWAY_ID",
     "name": "bedrock-mantle",
@@ -66,7 +66,7 @@ aws bedrock-agentcore-control create-gateway-target --cli-input-json '{
 
 The following example shows how to create an inference target using the OpenAI connector:
 
-```
+```bash
 aws bedrock-agentcore-control create-gateway-target --cli-input-json '{
     "gatewayIdentifier": "GATEWAY_ID",
     "name": "openai",
@@ -97,7 +97,7 @@ aws bedrock-agentcore-control create-gateway-target --cli-input-json '{
 
 The following example shows how to create an inference target using the Anthropic connector:
 
-```
+```bash
 aws bedrock-agentcore-control create-gateway-target --cli-input-json '{
     "gatewayIdentifier": "GATEWAY_ID",
     "name": "anthropic",
@@ -143,7 +143,7 @@ Replace `{path}` with the inference operation path (for example, `v1/chat/comple
 
 Set the gateway’s `/inference/v1` path as the `base_url`:
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI(
@@ -162,7 +162,7 @@ response = client.chat.completions.create(
 
 Set the gateway’s `/inference` path as the `base_url`:
 
-```
+```python
 import anthropic
 
 client = anthropic.Anthropic(
@@ -180,7 +180,7 @@ response = client.messages.create(
 ### Using awscurl
 <a name="_using_awscurl"></a>
 
-```
+```bash
 awscurl --service bedrock-agentcore --region us-west-2 -X POST \
     "https://<gateway-id>.gateway.bedrock-agentcore.us-west-2.amazonaws.com/inference/v1/chat/completions" \
     -H "Content-Type: application/json" \
@@ -192,14 +192,14 @@ awscurl --service bedrock-agentcore --region us-west-2 -X POST \
 
 To discover models available across all inference targets, call the list models endpoint:
 
-```
+```bash
 awscurl --service bedrock-agentcore --region us-west-2 \
     "https://<gateway-id>.gateway.bedrock-agentcore.us-west-2.amazonaws.com/inference/v1/models"
 ```
 
 The response is in OpenAI’s `/v1/models` format with model IDs prefixed by target name:
 
-```
+```json
 {
     "data": [
         {"id": "bedrock-mantle/anthropic.claude-opus-4-7", "object": "model", "owned_by": "system"},
@@ -229,7 +229,7 @@ To customize or override the target that a model routes to, you can rewrite the 
 
 Streaming follows the OpenAI SSE convention. Set `"stream": true` in the request body, and the gateway passes through the SSE stream from the provider without transformation:
 
-```
+```python
 stream = client.chat.completions.create(
     model="gpt-5.5",
     messages=[{"role": "user", "content": "Write a story."}],

@@ -8,7 +8,7 @@ For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon
 
  Timestream supports subqueries in `EXISTS` and `IN` predicates. The `EXISTS` predicate determines if a subquery returns any rows. The `IN` predicate determines if values produced by the subquery match the values or expression of in IN clause. The Timestream query language supports correlated and other subqueries.
 
-```
+```sql
 SELECT t.c1
 FROM (VALUES 1, 2, 3, 4, 5) AS t(c1)
 WHERE EXISTS
@@ -25,7 +25,7 @@ ORDER BY t.c1
 | 2 |
 | 3 |
 
-```
+```sql
 SELECT t.c1
 FROM (VALUES 1, 2, 3, 4, 5) AS t(c1)
 WHERE t.c1 IN

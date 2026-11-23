@@ -10,7 +10,7 @@ Currently, CodeCatalyst only supports `container` components in your devfile. Fo
 
 The following example shows you how to add a startup command to your container in your devfile.
 
-```
+```yaml
 components:
   - name: test
     container:

@@ -8,7 +8,7 @@ To create a new stream with service-managed record distribution, include the `Re
 
 **Example Create a stream with service-managed distribution (AWS CLI)**
 
-```
+```bash
 aws kinesis create-stream \
     --stream-name my-telemetry-stream \
     --stream-mode-details StreamMode=ON_DEMAND \
@@ -17,7 +17,7 @@ aws kinesis create-stream \
 
 **Example Create a stream with service-managed distribution (AWS SDK for Java)**
 
-```
+```java
 CreateStreamRequest request = CreateStreamRequest.builder()
     .streamName("my-telemetry-stream")
     .streamModeDetails(StreamModeDetails.builder()

@@ -18,7 +18,7 @@ The most effective way to protect against the confused deputy problem is to use 
 The following example shows how you can use the `aws:SourceArn` and `aws:SourceAccount` global condition context keys in AWS IoT SiteWise to prevent the confused deputy problem.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

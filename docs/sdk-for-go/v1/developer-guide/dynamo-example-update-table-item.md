@@ -10,7 +10,7 @@ The following example uses the DynamoDB [UpdateItem](https://docs.aws.amazon.co
 
 Create the file *DynamoDBUpdateItem.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -23,7 +23,7 @@ import (
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials` and region from the shared configuration file `~/.aws/config` and create a new DynamoDB service client.
 
-```
+```go
 // Initialize a session that the SDK will use to load
 // credentials from the shared credentials file ~/.aws/credentials
 // and region from the shared configuration file ~/.aws/config.
@@ -37,7 +37,7 @@ svc := dynamodb.New(sess)
 
 Call **UpdateItem** to add the item to the table. If we encounter an error, print the error message. Otherwise, display a message that the item was updated.
 
-```
+```go
 // Update item in table Movies
 tableName := "Movies"
 movieName := "The Big New Movie"

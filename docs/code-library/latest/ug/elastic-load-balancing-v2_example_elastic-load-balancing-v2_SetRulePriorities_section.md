@@ -55,7 +55,7 @@ For more information, see [Edit a listener rule for your Application Load Balanc
 **Tools for PowerShell V4**
 **Example 1: This example changes the priority of the specified listener rule.**
 
-```
+```powershell
 Set-ELB2RulePriority -RulePriority -RulePriority @{Priority = 11; RuleArn = 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener-rule/app/test-alb/3651b4394dd9a24f/a4eb199fa5046f80/dbf4c6dcef3ec6f8'}
 ```
 **Output:**
@@ -72,7 +72,7 @@ RuleArn    : arn:aws:elasticloadbalancing:us-east-1:123456789012:listener-rule/a
 **Tools for PowerShell V5**
 **Example 1: This example changes the priority of the specified listener rule.**
 
-```
+```powershell
 Set-ELB2RulePriority -RulePriority -RulePriority @{Priority = 11; RuleArn = 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener-rule/app/test-alb/3651b4394dd9a24f/a4eb199fa5046f80/dbf4c6dcef3ec6f8'}
 ```
 **Output:**

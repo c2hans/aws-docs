@@ -105,7 +105,7 @@ The following is an example of listing BYOIP CIDR addresses and the response.
 aws globalaccelerator list-byoip-cidrs
 ```
 
-```
+```json
 {
     "ByoipCidrs": [
         {

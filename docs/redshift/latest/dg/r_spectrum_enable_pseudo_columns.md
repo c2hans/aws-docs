@@ -21,6 +21,6 @@ You can disable the creation of pseudocolumns for a session by setting the `spec
 
 The following command disables the creation of pseudocolumns for a session.
 
-```
+```SQL
 set spectrum_enable_pseudo_columns to false;
 ```

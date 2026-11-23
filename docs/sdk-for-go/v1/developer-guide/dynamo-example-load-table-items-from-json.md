@@ -10,7 +10,7 @@ The following example uses the DynamoDB [PutItem](https://docs.aws.amazon.com/s
 
 Create the file *DynamoDBLoadItems.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -27,7 +27,7 @@ import (
 
 Create the data structure we use to contain the information about the table item.
 
-```
+```go
 // Create struct to hold info about new item
 type Item struct {
     Year   int
@@ -39,7 +39,7 @@ type Item struct {
 
 Create a function to get the table items from the JSON file.
 
-```
+```go
 // Get table items from JSON file
 func getItems() []Item {
     raw, err := ioutil.ReadFile("./.movie_data.json")
@@ -55,7 +55,7 @@ func getItems() []Item {
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials` and region from the shared configuration file `~/.aws/config` and create a new DynamoDB service client.
 
-```
+```go
 // Initialize a session that the SDK will use to load
 // credentials from the shared credentials file ~/.aws/credentials
 // and region from the shared configuration file ~/.aws/config.
@@ -69,7 +69,7 @@ svc := dynamodb.New(sess)
 
 Call **getItems** to get the items. Loop through each item, marshall that data into a map of **AttributeValue** objects, add the item to the `Movies` table, and print out the title and year of the movie added to the table.
 
-```
+```go
 // Get table items from .movie_data.json
 items := getItems()
 

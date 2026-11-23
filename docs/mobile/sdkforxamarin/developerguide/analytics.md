@@ -47,7 +47,7 @@ To use Mobile Analytics in your application, you’ll need to add the SDK to you
 
 Mobile Analytics defines some settings that can be configured in the awsconfig.xml file:
 
-```
+```csharp
 var config = new MobileAnalyticsManagerConfig();
 config.AllowUseDataNetwork = true;
 config.DBWarningThreshold = 0.9f;
@@ -80,7 +80,7 @@ To learn more about working in the Mobile Analytics Console, see the [Mobile Ana
 
 To initialize your MobileAnalyticsManager, call GetOrCreateInstance on your `MobileAnalyticsManager`, passing in your AWS credentials, your region, your Mobile Analytics application ID, and your optional config object:
 
-```
+```csharp
 // Initialize the MobileAnalyticsManager
 analyticsManager = MobileAnalyticsManager.GetOrCreateInstance(
   cognitoCredentials,
@@ -97,7 +97,7 @@ The `APP_ID` is generated for you during the app creation wizard. Both of these 
 
 The AWS Mobile SDK for .NET and Xamarin provides the `MonetizationEvent` class, which enables you generate monetization events to track purchases made within mobile applications. The following code snippet shows how to create a monetization event:
 
-```
+```csharp
 // Create the monetization event object
 MonetizationEvent monetizationEvent = new MonetizationEvent();
 
@@ -121,7 +121,7 @@ Mobile Analytics allows you to define custom events. Custom events are defined e
 
 For this example, we’ll say that our app is a game, and that we want to record an event when a user completes a level. Create a “LevelComplete” event by creating a new `AmazonMobileAnalyticsEvent` instance:
 
-```
+```csharp
 CustomEvent customEvent = new CustomEvent("LevelComplete");
 
 // Add attributes
@@ -145,7 +145,7 @@ analyticsManager.RecordEvent(customEvent);
 
 When the application loses focus you can pause the session. For iOS apps, in the AppDelegate.cs file, override `DidEnterBackground` and `WillEnterForeground` to call `MobileAnalyticsManager.PauseSesion` and `MobileAnalyticsManager.ResumeSession` as shown in the following snippet:
 
-```
+```csharp
 public override void DidEnterBackground(UIApplication application)
 {
   // ...
@@ -166,7 +166,7 @@ public override void WillEnterForeground(UIApplication application)
 
 For Android apps call `MobileAnalyticsManager.PauseSesion` in the OnPause() method and `MobileAnalyticsManager.ResumeSession` in the OnResume() method as shown in the following code snippet:
 
-```
+```csharp
 protected override void OnResume()
 {
   _manager.ResumeSession();

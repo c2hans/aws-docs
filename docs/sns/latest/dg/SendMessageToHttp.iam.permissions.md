@@ -14,7 +14,7 @@ You should use the first method for most cases (apply policies to groups and man
 
 If you added the following policy to an IAM user or group, you would give that user or members of that group permission to perform the `sns:Publish` action on the topic MyTopic.
 
-```
+```json
 {
   "Statement":[{
     "Sid":"AllowPublishToMyTopic",
@@ -32,7 +32,7 @@ When you give another AWS account access to a resource in your account, you are 
 
 If you added the following policy to a topic MyTopic in account 123456789012, you would give account 111122223333 permission to perform the `sns:Publish` action on that topic.
 
-```
+```json
 {
   "Statement":[{
     "Sid":"Allow-publish-to-topic",

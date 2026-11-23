@@ -30,7 +30,7 @@ Add any permissions needed for Amazon S3 resources. You might want to scope the 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

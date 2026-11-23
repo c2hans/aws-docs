@@ -38,7 +38,7 @@ For more details, refer to [Notion’s authorization documentation](https://deve
 
 To configure Notion as an outbound resource provider, use the following:
 
-```
+```json
 {
   "name": "Notion",
   "credentialProviderVendor": "NotionOauth2",

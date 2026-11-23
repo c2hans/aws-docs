@@ -169,7 +169,7 @@ You’ll also need to update the instantiation of the pipeline stack to specify 
 **Example**
 In `lib/my-pipeline-stack.ts` (may vary if your project folder isn’t named `my-pipeline`):
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { CodePipeline, CodePipelineSource, ShellStep } from 'aws-cdk-lib/pipelines';
@@ -190,7 +190,7 @@ export class MyPipelineStack extends cdk.Stack {
 ```
 In `bin/my-pipeline.ts` (may vary if your project folder isn’t named `my-pipeline`):
 
-```
+```javascript
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
 import { MyPipelineStack } from '../lib/my-pipeline-stack';
@@ -207,7 +207,7 @@ app.synth();
 ```
 In `lib/my-pipeline-stack.js` (may vary if your project folder isn’t named `my-pipeline`):
 
-```
+```javascript
 const cdk = require('aws-cdk-lib');
 const { CodePipeline, CodePipelineSource, ShellStep } = require('aws-cdk-lib/pipelines');
 
@@ -229,7 +229,7 @@ module.exports = { MyPipelineStack }
 ```
 In `bin/my-pipeline.js` (may vary if your project folder isn’t named `my-pipeline`):
 
-```
+```javascript
 #!/usr/bin/env node
 
 const cdk = require('aws-cdk-lib');
@@ -247,7 +247,7 @@ app.synth();
 ```
 In `my-pipeline/my-pipeline-stack.py` (may vary if your project folder isn’t named `my-pipeline`):
 
-```
+```python
 import aws_cdk as cdk
 from constructs import Construct
 from aws_cdk.pipelines import CodePipeline, CodePipelineSource, ShellStep
@@ -269,7 +269,7 @@ class MyPipelineStack(cdk.Stack):
 ```
 In `app.py`:
 
-```
+```python
 #!/usr/bin/env python3
 import aws_cdk as cdk
 from my_pipeline.my_pipeline_stack import MyPipelineStack
@@ -283,7 +283,7 @@ app.synth()
 ```
 In `src/main/java/com/myorg/MyPipelineStack.java` (may vary if your project folder isn’t named `my-pipeline`):
 
-```
+```java
 package com.myorg;
 
 import java.util.Arrays;
@@ -314,7 +314,7 @@ public class MyPipelineStack extends Stack {
 ```
 In `src/main/java/com/myorg/MyPipelineApp.java` (may vary if your project folder isn’t named `my-pipeline`):
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.App;
@@ -338,7 +338,7 @@ public class MyPipelineApp {
 ```
 In `src/MyPipeline/MyPipelineStack.cs` (may vary if your project folder isn’t named `my-pipeline`):
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.Pipelines;
 
@@ -363,7 +363,7 @@ namespace MyPipeline
 ```
 In `src/MyPipeline/Program.cs` (may vary if your project folder isn’t named `my-pipeline`):
 
-```
+```csharp
 using Amazon.CDK;
 
 namespace MyPipeline
@@ -385,7 +385,7 @@ namespace MyPipeline
 }
 ```
 
-```
+```go
 package main
 
 import (
@@ -525,7 +525,7 @@ We will create a stack containing a simple Lambda function and place that stack 
 **Example**
 Create the new file `lib/my-pipeline-lambda-stack.ts` to hold our application stack containing a Lambda function.
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { Function, InlineCode, Runtime } from 'aws-cdk-lib/aws-lambda';
@@ -544,7 +544,7 @@ export class MyLambdaStack extends cdk.Stack {
 ```
 Create the new file `lib/my-pipeline-app-stage.ts` to hold our stage.
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from "constructs";
 import { MyLambdaStack } from './my-pipeline-lambda-stack';
@@ -560,7 +560,7 @@ export class MyPipelineAppStage extends cdk.Stage {
 ```
 Edit `lib/my-pipeline-stack.ts` to add the stage to our pipeline.
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { CodePipeline, CodePipelineSource, ShellStep } from 'aws-cdk-lib/pipelines';
@@ -586,7 +586,7 @@ export class MyPipelineStack extends cdk.Stack {
 ```
 Create the new file `lib/my-pipeline-lambda-stack.js` to hold our application stack containing a Lambda function.
 
-```
+```javascript
 const cdk = require('aws-cdk-lib');
 const { Function, InlineCode, Runtime } = require('aws-cdk-lib/aws-lambda');
 
@@ -606,7 +606,7 @@ module.exports = { MyLambdaStack }
 ```
 Create the new file `lib/my-pipeline-app-stage.js` to hold our stage.
 
-```
+```javascript
 const cdk = require('aws-cdk-lib');
 const { MyLambdaStack } = require('./my-pipeline-lambda-stack');
 
@@ -623,7 +623,7 @@ module.exports = { MyPipelineAppStage };
 ```
 Edit `lib/my-pipeline-stack.ts` to add the stage to our pipeline.
 
-```
+```javascript
 const cdk = require('aws-cdk-lib');
 const { CodePipeline, CodePipelineSource, ShellStep } = require('aws-cdk-lib/pipelines');
 const { MyPipelineAppStage } = require('./my-pipeline-app-stage');
@@ -651,7 +651,7 @@ module.exports = { MyPipelineStack }
 ```
 Create the new file `my_pipeline/my_pipeline_lambda_stack.py` to hold our application stack containing a Lambda function.
 
-```
+```python
 import aws_cdk as cdk
 from constructs import Construct
 from aws_cdk.aws_lambda import Function, InlineCode, Runtime
@@ -668,7 +668,7 @@ class MyLambdaStack(cdk.Stack):
 ```
 Create the new file `my_pipeline/my_pipeline_app_stage.py` to hold our stage.
 
-```
+```python
 import aws_cdk as cdk
 from constructs import Construct
 from my_pipeline.my_pipeline_lambda_stack import MyLambdaStack
@@ -681,7 +681,7 @@ class MyPipelineAppStage(cdk.Stage):
 ```
 Edit `my_pipeline/my-pipeline-stack.py` to add the stage to our pipeline.
 
-```
+```python
 import aws_cdk as cdk
 from constructs import Construct
 from aws_cdk.pipelines import CodePipeline, CodePipelineSource, ShellStep
@@ -705,7 +705,7 @@ class MyPipelineStack(cdk.Stack):
 ```
 Create the new file `src/main/java/com.myorg/MyPipelineLambdaStack.java` to hold our application stack containing a Lambda function.
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -736,7 +736,7 @@ public class MyPipelineLambdaStack extends Stack {
 ```
 Create the new file `src/main/java/com.myorg/MyPipelineAppStage.java` to hold our stage.
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -759,7 +759,7 @@ public class MyPipelineAppStage extends Stage {
 ```
 Edit `src/main/java/com.myorg/MyPipelineStack.java` to add the stage to our pipeline.
 
-```
+```java
 package com.myorg;
 
 import java.util.Arrays;
@@ -799,7 +799,7 @@ public class MyPipelineStack extends Stack {
 ```
 Create the new file `src/MyPipeline/MyPipelineLambdaStack.cs` to hold our application stack containing a Lambda function.
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 using Amazon.CDK.AWS.Lambda;
@@ -822,7 +822,7 @@ namespace MyPipeline
 ```
 Create the new file `src/MyPipeline/MyPipelineAppStage.cs` to hold our stage.
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 
@@ -839,7 +839,7 @@ namespace MyPipeline
 ```
 Edit `src/MyPipeline/MyPipelineStack.cs` to add the stage to our pipeline.
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 using Amazon.CDK.Pipelines;
@@ -876,7 +876,7 @@ Every application stage added by `addStage()` results in the addition of a corre
 
 **Example**
 
-```
+```javascript
 // import { ManualApprovalStep } from 'aws-cdk-lib/pipelines';
 
 const testingStage = pipeline.addStage(new MyPipelineAppStage(this, 'testing', {
@@ -886,7 +886,7 @@ const testingStage = pipeline.addStage(new MyPipelineAppStage(this, 'testing', {
     testingStage.addPost(new ManualApprovalStep('approval'));
 ```
 
-```
+```javascript
 // const { ManualApprovalStep } = require('aws-cdk-lib/pipelines');
 
 const testingStage = pipeline.addStage(new MyPipelineAppStage(this, 'testing', {
@@ -896,7 +896,7 @@ const testingStage = pipeline.addStage(new MyPipelineAppStage(this, 'testing', {
 testingStage.addPost(new ManualApprovalStep('approval'));
 ```
 
-```
+```python
 # from aws_cdk.pipelines import ManualApprovalStep
 
 testing_stage = pipeline.add_stage(MyPipelineAppStage(self, "testing",
@@ -905,7 +905,7 @@ testing_stage = pipeline.add_stage(MyPipelineAppStage(self, "testing",
 testing_stage.add_post(ManualApprovalStep('approval'))
 ```
 
-```
+```java
 // import software.amazon.awscdk.pipelines.StageDeployment;
 // import software.amazon.awscdk.pipelines.ManualApprovalStep;
 
@@ -920,7 +920,7 @@ StageDeployment testingStage =
 testingStage.addPost(new ManualApprovalStep("approval"));
 ```
 
-```
+```csharp
 var testingStage = pipeline.AddStage(new MyPipelineAppStage(this, "test", new StageProps
 {
     Env = new Environment
@@ -936,7 +936,7 @@ You can add stages to a ` [Wave](https://docs.aws.amazon.com/cdk/api/v2/docs/aws
 
 **Example**
 
-```
+```javascript
 const wave = pipeline.addWave('wave');
 wave.addStage(new MyApplicationStage(this, 'MyAppEU', {
   env: { account: '111111111111', region: 'eu-west-1' }
@@ -946,7 +946,7 @@ wave.addStage(new MyApplicationStage(this, 'MyAppUS', {
 }));
 ```
 
-```
+```javascript
 const wave = pipeline.addWave('wave');
 wave.addStage(new MyApplicationStage(this, 'MyAppEU', {
   env: { account: '111111111111', region: 'eu-west-1' }
@@ -956,7 +956,7 @@ wave.addStage(new MyApplicationStage(this, 'MyAppUS', {
 }));
 ```
 
-```
+```python
 wave = pipeline.add_wave("wave")
 wave.add_stage(MyApplicationStage(self, "MyAppEU",
     env=cdk.Environment(account="111111111111", region="eu-west-1")))
@@ -964,7 +964,7 @@ wave.add_stage(MyApplicationStage(self, "MyAppUS",
     env=cdk.Environment(account="111111111111", region="us-west-1")))
 ```
 
-```
+```java
 // import software.amazon.awscdk.pipelines.Wave;
 final Wave wave = pipeline.addWave("wave");
 wave.addStage(new MyPipelineAppStage(this, "MyAppEU", StageProps.builder()
@@ -981,7 +981,7 @@ wave.addStage(new MyPipelineAppStage(this, "MyAppUS", StageProps.builder()
         .build()));
 ```
 
-```
+```csharp
 var wave = pipeline.AddWave("wave");
 wave.AddStage(new MyPipelineAppStage(this, "MyAppEU", new StageProps
 {
@@ -1010,7 +1010,7 @@ In its simplest form, adding validation actions looks like this:
 
 **Example**
 
-```
+```javascript
 // stage was returned by pipeline.addStage
 
 stage.addPost(new ShellStep("validate", {
@@ -1018,7 +1018,7 @@ stage.addPost(new ShellStep("validate", {
 }));
 ```
 
-```
+```javascript
 // stage was returned by pipeline.addStage
 
 stage.addPost(new ShellStep("validate", {
@@ -1026,7 +1026,7 @@ stage.addPost(new ShellStep("validate", {
 }));
 ```
 
-```
+```python
 # stage was returned by pipeline.add_stage
 
 stage.add_post(ShellStep("validate",
@@ -1034,7 +1034,7 @@ stage.add_post(ShellStep("validate",
 ))
 ```
 
-```
+```java
 // stage was returned by pipeline.addStage
 
 stage.addPost(ShellStep.Builder.create("validate")
@@ -1042,7 +1042,7 @@ stage.addPost(ShellStep.Builder.create("validate")
         .build());
 ```
 
-```
+```csharp
 // stage was returned by pipeline.addStage
 
 stage.AddPost(new ShellStep("validate", new ShellStepProps
@@ -1057,7 +1057,7 @@ To use outputs, expose the `CfnOutput` object you’re interested in. Then, pass
 
 **Example**
 
-```
+```javascript
 // given a stack lbStack that exposes a load balancer construct as loadBalancer
 this.loadBalancerAddress = new cdk.CfnOutput(lbStack, 'LbAddress', {
   value: `https://${lbStack.loadBalancer.loadBalancerDnsName}/`
@@ -1070,7 +1070,7 @@ stage.addPost(new ShellStep("lbaddr", {
 }));
 ```
 
-```
+```javascript
 // given a stack lbStack that exposes a load balancer construct as loadBalancer
 this.loadBalancerAddress = new cdk.CfnOutput(lbStack, 'LbAddress', {
   value: `https://${lbStack.loadBalancer.loadBalancerDnsName}/`
@@ -1083,7 +1083,7 @@ stage.addPost(new ShellStep("lbaddr", {
 }));
 ```
 
-```
+```python
 # given a stack lb_stack that exposes a load balancer construct as load_balancer
 self.load_balancer_address = cdk.CfnOutput(lb_stack, "LbAddress",
     value=f"https://{lb_stack.load_balancer.load_balancer_dns_name}/")
@@ -1094,7 +1094,7 @@ stage.add_post(ShellStep("lbaddr",
     commands=["echo $lb_addr"]))
 ```
 
-```
+```java
 // given a stack lbStack that exposes a load balancer construct as loadBalancer
 loadBalancerAddress = CfnOutput.Builder.create(lbStack, "LbAddress")
                             .value(String.format("https://%s/",
@@ -1108,7 +1108,7 @@ stage.addPost(ShellStep.Builder.create("lbaddr")
     .build());
 ```
 
-```
+```csharp
 // given a stack lbStack that exposes a load balancer construct as loadBalancer
 loadBalancerAddress = new CfnOutput(lbStack, "LbAddress", new CfnOutputProps
 {
@@ -1131,7 +1131,7 @@ Bringing in files from the source repository is appropriate if the files are dir
 
 **Example**
 
-```
+```javascript
 const source = CodePipelineSource.gitHub('OWNER/REPO', 'main');
 
 const pipeline = new CodePipeline(this, 'Pipeline', {
@@ -1152,7 +1152,7 @@ stage.addPost(new ShellStep('validate', {
 }));
 ```
 
-```
+```javascript
 const source = CodePipelineSource.gitHub('OWNER/REPO', 'main');
 
 const pipeline = new CodePipeline(this, 'Pipeline', {
@@ -1173,7 +1173,7 @@ stage.addPost(new ShellStep('validate', {
 }));
 ```
 
-```
+```python
 source   = CodePipelineSource.git_hub("OWNER/REPO", "main")
 
 pipeline =  CodePipeline(self, "Pipeline",
@@ -1192,7 +1192,7 @@ stage.add_post(ShellStep("validate", input=source,
 ))
 ```
 
-```
+```java
 final CodePipelineSource source = CodePipelineSource.gitHub("OWNER/REPO", "main");
 
 final CodePipeline pipeline = CodePipeline.Builder.create(this, "pipeline")
@@ -1217,7 +1217,7 @@ stage.addPost(ShellStep.Builder.create("validate")
         .build());
 ```
 
-```
+```csharp
 var source = CodePipelineSource.GitHub("OWNER/REPO", "main");
 
 var pipeline = new CodePipeline(this, "pipeline", new CodePipelineProps
@@ -1249,7 +1249,7 @@ Getting the additional files from the synth step is appropriate if your tests ne
 
 **Example**
 
-```
+```javascript
 const synthStep = new ShellStep('Synth', {
   input: CodePipelineSource.gitHub('OWNER/REPO', 'main'),
   commands: ['npm ci', 'npm run build', 'npx cdk synth'],
@@ -1271,7 +1271,7 @@ stage.addPost(new ShellStep('validate', {
 }));
 ```
 
-```
+```javascript
 const synthStep = new ShellStep('Synth', {
   input: CodePipelineSource.gitHub('OWNER/REPO', 'main'),
   commands: ['npm ci', 'npm run build', 'npx cdk synth'],
@@ -1293,7 +1293,7 @@ stage.addPost(new ShellStep('validate', {
 }));
 ```
 
-```
+```python
 synth_step = ShellStep("Synth",
                 input=CodePipelineSource.git_hub("OWNER/REPO", "main"),
                 commands=["npm install -g aws-cdk",
@@ -1314,7 +1314,7 @@ stage.add_post(ShellStep("validate",
 ))
 ```
 
-```
+```java
 final ShellStep synth = ShellStep.Builder.create("Synth")
                             .input(CodePipelineSource.gitHub("OWNER/REPO", "main"))
                             .commands(Arrays.asList("npm install -g aws-cdk", "cdk synth"))
@@ -1339,7 +1339,7 @@ stage.addPost(ShellStep.Builder.create("validate")
         .build());
 ```
 
-```
+```csharp
 var synth = new ShellStep("Synth", new ShellStepProps
 {
     Input = CodePipelineSource.GitHub("OWNER/REPO", "main"),

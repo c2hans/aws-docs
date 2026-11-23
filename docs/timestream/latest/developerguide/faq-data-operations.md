@@ -15,7 +15,7 @@ InfluxDB 3 supports multiple write methods: the native v3 write API, the InfluxD
 InfluxDB 3 supports SQL and InfluxQL through the v3 HTTP query API. SQL is the primary query language, powered by the Apache DataFusion engine. InfluxQL is supported for backward compatibility. You can also query using the `influxdb3` CLI tool. For query syntax and examples, see the [InfluxDB 3 Enterprise query data guide](https://docs.influxdata.com/influxdb3/enterprise/query-data/).
 Example SQL query:
 
-```
+```python
 SELECT time, temperature, location
 FROM weather
 WHERE time > now() - INTERVAL '1 hour'
@@ -42,7 +42,7 @@ Common causes include scanning too many Parquet files (check `query-file-limit`)
 Line protocol is a text-based format for writing time-series data to InfluxDB. Each line represents a single data point with a measurement name, optional tag set, field set, and optional timestamp. For the full specification, see the [InfluxDB 3 line protocol reference](https://docs.influxdata.com/influxdb3/enterprise/reference/line-protocol/).
 Example line protocol:
 
-```
+```python
 weather,location=us-east,station=A1 temperature=82.0,humidity=71.2 1465839830100400200
 weather,location=us-west,station=B2 temperature=68.5,humidity=45.8 1465839830100400200
 ```

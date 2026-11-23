@@ -113,7 +113,7 @@ For more information, see [start-index-rebuild](https://docs.aws.amazon.com/cli/
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 import json
 from botocore.config import Config
@@ -163,8 +163,7 @@ awscurl "https://{{your-neptune-endpoint}}:{{port}}/storage/indexes/rebuilds?con
   -X POST
 ```
 
-**Prerequisites**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -179,6 +178,8 @@ curl -X POST "https://{{your-neptune-endpoint}}:{{port}}/storage/indexes/rebuild
 # Rebuild with 4 workers and a high write buffer
 curl -X POST "https://{{your-neptune-endpoint}}:{{port}}/storage/indexes/rebuilds?concurrency=4&writeBufferSize=HIGH"
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -228,7 +229,7 @@ For more information, see [get-index-rebuild-status](https://docs.aws.amazon.com
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 import json
 from botocore.config import Config
@@ -255,8 +256,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/storage/indexes/rebuilds/{{re
   --service neptune-db
 ```
 
-**Prerequisites**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -264,6 +264,8 @@ This example assumes that your AWS credentials are configured in your environmen
 ```
 curl -G https://{{your-neptune-endpoint}}:{{port}}/storage/indexes/rebuilds/{{rebuildId}}
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -326,7 +328,7 @@ For more information, see [list-index-rebuilds](https://docs.aws.amazon.com/cli/
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 import json
 from botocore.config import Config
@@ -351,8 +353,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/storage/indexes/rebuilds \
   --service neptune-db
 ```
 
-**Prerequisites**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -360,6 +361,8 @@ This example assumes that your AWS credentials are configured in your environmen
 ```
 curl -G https://{{your-neptune-endpoint}}:{{port}}/storage/indexes/rebuilds
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -405,7 +408,7 @@ For more information, see [cancel-index-rebuild](https://docs.aws.amazon.com/cli
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 import json
 from botocore.config import Config
@@ -433,8 +436,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/storage/indexes/rebuilds/{{re
   -X POST
 ```
 
-**Prerequisites**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -442,6 +444,8 @@ This example assumes that your AWS credentials are configured in your environmen
 ```
 curl -X POST https://{{your-neptune-endpoint}}:{{port}}/storage/indexes/rebuilds/{{rebuildId}}/cancel
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -514,7 +518,7 @@ Use the following workflow to assess and optimize your Neptune storage.
 ------
 #### [ SDK ]
 
-   ```
+   ```python
    response = client.get_storage_info()
    ```
 
@@ -527,12 +531,16 @@ Use the following workflow to assess and optimize your Neptune storage.
      --service neptune-db
    ```
 
+   To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
+
 ------
 #### [ curl ]
 
    ```
    curl -G https://{{your-neptune-endpoint}}:{{port}}/storage/info
    ```
+
+   To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -550,7 +558,7 @@ Use the following workflow to assess and optimize your Neptune storage.
 ------
 #### [ SDK ]
 
-   ```
+   ```python
    response = client.start_index_rebuild(Scope='QUADS')
    ```
 
@@ -564,12 +572,16 @@ Use the following workflow to assess and optimize your Neptune storage.
      -X POST
    ```
 
+   To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
+
 ------
 #### [ curl ]
 
    ```
    curl -X POST "https://{{your-neptune-endpoint}}:{{port}}/storage/indexes/rebuilds?scope=QUADS"
    ```
+
+   To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -587,7 +599,7 @@ Use the following workflow to assess and optimize your Neptune storage.
 ------
 #### [ SDK ]
 
-   ```
+   ```python
    response = client.get_index_rebuild_status(
        RebuildId='{{rebuildId}}'
    )
@@ -602,12 +614,16 @@ Use the following workflow to assess and optimize your Neptune storage.
      --service neptune-db
    ```
 
+   To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
+
 ------
 #### [ curl ]
 
    ```
    curl -G https://{{your-neptune-endpoint}}:{{port}}/storage/indexes/rebuilds/{{rebuildId}}
    ```
+
+   To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -624,7 +640,7 @@ Use the following workflow to assess and optimize your Neptune storage.
 ------
 #### [ SDK ]
 
-   ```
+   ```python
    response = client.get_storage_info()
    ```
 
@@ -637,12 +653,16 @@ Use the following workflow to assess and optimize your Neptune storage.
      --service neptune-db
    ```
 
+   To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
+
 ------
 #### [ curl ]
 
    ```
    curl -G https://{{your-neptune-endpoint}}:{{port}}/storage/info
    ```
+
+   To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 

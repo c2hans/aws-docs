@@ -28,7 +28,7 @@ The following code example shows how to get started using OpenSearch Service.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/opensearch#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.opensearch.OpenSearchAsyncClient;
 import software.amazon.awssdk.services.opensearch.model.ListVersionsRequest;
 import java.util.List;
@@ -97,7 +97,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 Run an interactive scenario demonstrating OpenSearch Service features.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.opensearch.model.*;
@@ -418,7 +418,7 @@ public class OpenSearchScenario {
 ```
 A wrapper class for OpenSearch Service SDK methods.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.core.client.config.ClientOverrideConfiguration;
@@ -749,7 +749,7 @@ The following code example shows how to use `AddTags`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/opensearch#code-examples).
 
-```
+```java
     /**
      * Asynchronously adds tags to an Amazon OpenSearch Service domain.
      * @param domainARN the Amazon Resource Name (ARN) of the Amazon OpenSearch Service domain to add tags to
@@ -796,7 +796,7 @@ The following code example shows how to use `ChangeProgress`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/opensearch#code-examples).
 
-```
+```java
     /**
      * Asynchronously checks the progress of a domain change operation in Amazon OpenSearch Service.
      * @param domainName the name of the OpenSearch domain to check the progress for
@@ -855,7 +855,7 @@ The following code example shows how to use `CreateDomain`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/opensearch#code-examples).
 
-```
+```java
     /**
      * Creates a new OpenSearch domain asynchronously.
      * @param domainName the name of the new OpenSearch domain to create
@@ -909,7 +909,7 @@ The following code example shows how to use `DeleteDomain`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/opensearch#code-examples).
 
-```
+```java
     /**
      * Deletes a specific domain asynchronously.
      * @param domainName the name of the domain to be deleted
@@ -940,7 +940,7 @@ The following code example shows how to use `DescribeDomain`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/opensearch#code-examples).
 
-```
+```java
     /**
      * Describes the specified domain asynchronously.
      *
@@ -980,7 +980,7 @@ The following code example shows how to use `ListDomainNames`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/opensearch#code-examples).
 
-```
+```java
     /**
      * Asynchronously lists all the domains in the current AWS account.
      * @return a {@link CompletableFuture} that, when completed, contains a list of {@link DomainInfo} objects representing
@@ -1011,7 +1011,7 @@ The following code example shows how to use `ListTags`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/opensearch#code-examples).
 
-```
+```java
     /**
      * Asynchronously adds tags to an Amazon OpenSearch Service domain.
      * @param domainARN the Amazon Resource Name (ARN) of the Amazon OpenSearch Service domain to add tags to
@@ -1058,7 +1058,7 @@ The following code example shows how to use `UpdateDomainConfig`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/opensearch#code-examples).
 
-```
+```java
     /**
      * Updates the configuration of a specific domain asynchronously.
      * @param domainName the name of the domain to update

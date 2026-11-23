@@ -169,6 +169,6 @@ Amazon EMR 6.10.0 and higher supports spark-submit for running Spark application
 
 When you're done running your applications, you can perform cleanup with the following command.
 
-```
+```bash,sh,zsh
 kubectl delete -f spark-rbac.yaml
 ```

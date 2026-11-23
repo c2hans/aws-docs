@@ -10,7 +10,7 @@ EventBridge (CloudWatch Events) invokes your Lambda Event Function asynchronousl
 
 **Example instance lifecycle event**
 
-```
+```json
 {
     "version": "0",
     "id": "b6ba298a-7732-2226-xmpl-976312c1a050",

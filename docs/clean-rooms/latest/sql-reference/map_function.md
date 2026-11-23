@@ -34,7 +34,7 @@ The MAP function returns a MAP with keys typed as the least common type of *key0
 
 The following example creates a new map with two key-value pairs: The key `1.0` is associated with the value `'2'`. The key `3.0` is associated with the value `'4'`. The resulting map is then returned as the output of the SQL statement.
 
-```
+```sql
 SELECT map(1.0, '2', 3.0, '4');
  {1.0:"2",3.0:"4"}
 ```

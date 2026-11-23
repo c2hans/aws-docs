@@ -29,7 +29,7 @@ Locate the shared snapshot by ID or description. Create a copy of the shared sna
 **To view snapshot permissions**
 Use the [describe-snapshot-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-snapshot-attribute.html) command to get the snapshot permissions of the specified snapshot.
 
-```
+```bash
 aws ec2 describe-snapshot-attribute \
     --snapshot-id {{snap-0abcdef1234567890}} \
     --attribute createVolumePermission
@@ -37,7 +37,7 @@ aws ec2 describe-snapshot-attribute \
 
 The following is example output.
 
-```
+```json
 {
     "SnapshotId": "snap-0abcdef1234567890",
     "CreateVolumePermissions": [
@@ -54,7 +54,7 @@ The following is example output.
 **To view snapshot permissions**
 Use the [Get-EC2SnapshotAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2SnapshotAttribute.html) cmdlet.
 
-```
+```powershell
 (Get-EC2SnapshotAttribute `
     -SnapshotId {{snap-0abcdef1234567890}} `
     -Attribute createVolumePermission).CreateVolumePermissions

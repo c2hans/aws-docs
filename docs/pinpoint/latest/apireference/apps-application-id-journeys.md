@@ -115,7 +115,7 @@ Retrieves information about the communication requirements and options that are 
 #### POST schema
 <a name="apps-application-id-journeys-request-body-post-example"></a>
 
-```
+```json
 {
   "Name": "string",
   "Schedule": {
@@ -234,7 +234,7 @@ Retrieves information about the communication requirements and options that are 
 #### JourneysResponse schema
 <a name="apps-application-id-journeys-response-body-journeysresponse-example"></a>
 
-```
+```json
 {
   "Item": [
     {
@@ -359,7 +359,7 @@ Retrieves information about the communication requirements and options that are 
 #### JourneyResponse schema
 <a name="apps-application-id-journeys-response-body-journeyresponse-example"></a>
 
-```
+```json
 {
   "Name": "string",
   "Schedule": {
@@ -479,7 +479,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-journeys-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

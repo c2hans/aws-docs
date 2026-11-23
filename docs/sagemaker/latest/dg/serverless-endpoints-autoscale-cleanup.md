@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints
 
  The following example deletes scaling policy named `MyScalingPolicy` from a model named `MyVariant`.
 
-```
+```bash
 aws application-autoscaling delete-scaling-policy \
     --policy-name MyScalingPolicy \
     --service-namespace sagemaker \
@@ -74,7 +74,7 @@ Authorization: AUTHPARAMS
 
  The following example deregisters a model named `MyVariant` from Application Auto Scaling.
 
-```
+```bash
 aws application-autoscaling deregister-scalable-target \
     --service-namespace sagemaker \
     --scalable-dimension sagemaker:variant:DesiredProvisionedConcurrency \

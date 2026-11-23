@@ -29,7 +29,7 @@ Some OPC UA servers require access to the OPC UA client certificate file to trus
 
    By default, the Greengrass work folder is {{/greengrass/v2/work/aws.iot.SiteWiseEdgeCollectorOpcua}} on Linux and {{C:/greengrass/v2/work/aws.iot.SiteWiseEdgeCollectorOpcua}} on Microsoft Windows.
 
-   ```
+   ```bash
    cd /{{sitewise-work}}/{{source-name}}/opcua-certificate-store
    ```
 
@@ -37,7 +37,7 @@ Some OPC UA servers require access to the OPC UA client certificate file to trus
 
    Run the following command to export the certificate to a `.pem` file called `aws-iot-opcua-client-certificate.pem`.
 
-   ```
+   ```bash
    keytool -exportcert -v -alias aws-iot-opcua-client -keystore aws-iot-opcua-client.pfx -storepass amazon -storetype PKCS12 -rfc > aws-iot-opcua-client-certificate.pem
    ```
 

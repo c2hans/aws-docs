@@ -15,7 +15,7 @@ This documentation provides a brief overview of asynchronous search. It also dis
 
 To perform an asynchronous search, send HTTP requests to `_plugins/_asynchronous_search` using the following format:
 
-```
+```json
 POST {{opensearch-domain}}/_plugins/_asynchronous_search
 ```
 
@@ -32,7 +32,7 @@ You can specify the following asynchronous search options:
 
 **Sample request**
 
-```
+```json
 POST _plugins/_asynchronous_search/?pretty&size=10&wait_for_completion_timeout=1ms&keep_on_completion=true&request_cache=false
 {
   "aggs": {
@@ -56,7 +56,7 @@ Asynchronous search supports [fine-grained access control](fgac.md). For details
 
 For domains with fine-grained access control enabled, you need the following minimum permissions for a role:
 
-```
+```yaml
 # Allows users to use all asynchronous search functionality
 asynchronous_search_full_access:
   reserved: true
@@ -93,7 +93,7 @@ You can perform an asynchronous search across clusters with the following minor 
 
 If you set up a connection between `domain-a -> domain-b` with connection alias `cluster_b` and `domain-a -> domain-c` with connection alias `cluster_c`, asynchronously search `domain-a`, `domain-b`, and `domain-c` as follows:
 
-```
+```json
 POST https://src-domain.us-east-1.es.amazonaws.com/local_index,cluster_b:b_index,cluster_c:c_index/_plugins/_asynchronous_search/?pretty&size=10&wait_for_completion_timeout=500ms&keep_on_completion=true&request_cache=false
 {
   "size": 0,
@@ -148,7 +148,7 @@ POST https://src-domain.us-east-1.es.amazonaws.com/local_index,cluster_b:b_index
 
 **Response**
 
-```
+```json
 {
   "id" : "Fm9pYzJyVG91U19xb0hIQUJnMHJfRFEAAAAAAAknghQ1OWVBczNZQjVEa2dMYTBXaTdEagAAAAAAAAAB",
   "state" : "RUNNING",

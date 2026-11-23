@@ -147,6 +147,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetEvent  **
+  - **IAM action:**  [wafv2:GetEvent](#list_wafv2-action-GetEvent)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetEventActor  **
+  - **IAM action:**  [wafv2:GetEventActor](#list_wafv2-action-GetEventActor)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetIPSet  **
   - **IAM action:**  [wafv2:GetIPSet](#list_wafv2-action-GetIPSet)
   - **Condition key:**
@@ -250,6 +262,24 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListAvailableManagedRuleGroups  **
   - **IAM action:**  [wafv2:ListAvailableManagedRuleGroups](#list_wafv2-action-ListAvailableManagedRuleGroups)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListEventActors  **
+  - **IAM action:**  [wafv2:ListEventActors](#list_wafv2-action-ListEventActors)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListEvents  **
+  - **IAM action:**  [wafv2:ListEvents](#list_wafv2-action-ListEvents)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListEventsByWebACL  **
+  - **IAM action:**  [wafv2:ListEventsByWebACL](#list_wafv2-action-ListEventsByWebACL)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List

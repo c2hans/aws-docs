@@ -24,7 +24,7 @@ To view the permissions for the `AmazonConnect_FullAccess` policy, see [AmazonCo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -85,7 +85,7 @@ To view the permissions for the `AmazonConnectVoiceIDFullAccess` policy, see [Am
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

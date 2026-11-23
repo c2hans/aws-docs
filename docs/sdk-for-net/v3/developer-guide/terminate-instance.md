@@ -28,7 +28,7 @@ Programming elements:
 
   Class [TerminateInstancesResponse](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/EC2/TTerminateInstancesResponse.html)
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;

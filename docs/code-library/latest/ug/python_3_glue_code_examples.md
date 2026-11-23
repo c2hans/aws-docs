@@ -30,7 +30,7 @@ The following code example shows how to get started using AWS Glue.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 
@@ -80,7 +80,7 @@ For more information, see [Tutorial: Getting started with AWS Glue Studio](https
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 Create a class that wraps AWS Glue functions used in the scenario.
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -407,7 +407,7 @@ class GlueWrapper:
 ```
 Create a class that runs the scenario.
 
-```
+```python
 class GlueCrawlerJobScenario:
     """
     Encapsulates a scenario that shows how to create an AWS Glue crawler and job and use
@@ -715,7 +715,7 @@ def main():
 ```
 Create an ETL script that is used by AWS Glue to extract, transform, and load data during job runs.
 
-```
+```python
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
@@ -813,7 +813,7 @@ The following code example shows how to use `CreateCrawler`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -865,7 +865,7 @@ The following code example shows how to use `CreateJob`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -919,7 +919,7 @@ The following code example shows how to use `DeleteCrawler`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -956,7 +956,7 @@ The following code example shows how to use `DeleteDatabase`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -993,7 +993,7 @@ The following code example shows how to use `DeleteJob`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -1031,7 +1031,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -1069,7 +1069,7 @@ The following code example shows how to use `GetCrawler`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -1113,7 +1113,7 @@ The following code example shows how to use `GetDatabase`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -1153,7 +1153,7 @@ The following code example shows how to use `GetJobRun`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -1195,7 +1195,7 @@ The following code example shows how to use `GetJobRuns`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -1236,7 +1236,7 @@ The following code example shows how to use `GetTables`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -1276,7 +1276,7 @@ The following code example shows how to use `ListJobs`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -1314,7 +1314,7 @@ The following code example shows how to use `StartCrawler`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -1352,7 +1352,7 @@ The following code example shows how to use `StartJobRun`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 

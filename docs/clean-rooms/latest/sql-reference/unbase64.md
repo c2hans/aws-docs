@@ -33,7 +33,7 @@ A STRING expression in a base64 format.
 
 In the following example, the Base64-encoded string `'U3BhcmsgU1FM'` is converted back to the original string `'Spark SQL'`.
 
-```
+```sql
 SELECT unbase64('U3BhcmsgU1FM');
  Spark SQL
 ```

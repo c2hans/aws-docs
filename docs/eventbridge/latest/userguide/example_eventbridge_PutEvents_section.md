@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 Send an event that matches a custom pattern for a rule.
 
-```
+```csharp
     /// <summary>
     /// Add an event to the event bus that includes an email, message, and time.
     /// </summary>
@@ -57,7 +57,7 @@ Send an event that matches a custom pattern for a rule.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/eventbridge#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/events/EventBridgeClient.h>
 #include <aws/events/model/PutEventsRequest.h>
@@ -67,7 +67,7 @@ Include the required files.
 ```
 Send the event.
 
-```
+```cpp
         Aws::CloudWatchEvents::EventBridgeClient cwe;
 
         Aws::CloudWatchEvents::Model::PutEventsRequestEntry event_entry;
@@ -151,7 +151,7 @@ For more information, see [Sending events with PutEvents in Amazon EventBridge](
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 
-```
+```java
     public static void triggerCustomRule(EventBridgeClient eventBrClient, String email) {
         String json = "{" +
                 "\"UserEmail\": \"" + email + "\"," +
@@ -181,7 +181,7 @@ For more information, see [Sending events with PutEvents in Amazon EventBridge](
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/eventbridge#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import {
   EventBridgeClient,
   PutEventsCommand,
@@ -231,7 +231,7 @@ export const putEvents = async (
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/eventbridge#code-examples).
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -267,7 +267,7 @@ ebevents.putEvents(params, function (err, data) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 suspend fun triggerCustomRule(email: String) {
     val json =
         "{" +

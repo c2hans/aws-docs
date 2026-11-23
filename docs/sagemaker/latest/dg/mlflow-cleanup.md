@@ -32,7 +32,7 @@ If your tracking server is **Off**, you see the **Start** icon. If the tracking 
 
 To stop the tracking server using the AWS CLI, use the following command:
 
-```
+```bash
 aws sagemaker stop-mlflow-tracking-server \
   --tracking-server-name {{$ts_name}} \
   --region {{$region}}
@@ -43,7 +43,7 @@ To start the tracking server using the AWS CLI, use the following command:
 **Note**
 It may take up to 25 minutes to start your tracking server.
 
-```
+```bash
 aws sagemaker start-mlflow-tracking-server \
   --tracking-server-name {{$ts_name}} \
   --region {{$region}}
@@ -74,7 +74,7 @@ To delete a tracking server in Studio:
 
 Use the `DeleteMLflowTrackingServer` API to delete any tracking servers that you created. This may take some time.
 
-```
+```bash
 aws sagemaker delete-mlflow-tracking-server \
   --tracking-server-name {{$ts_name}} \
   --region {{$region}}
@@ -82,7 +82,7 @@ aws sagemaker delete-mlflow-tracking-server \
 
 To view the status of your tracking server, use the `DescribeMLflowTrackingServer` API and check the `TrackingServerStatus`.
 
-```
+```bash
 aws sagemaker describe-mlflow-tracking-server \
   --tracking-server-name {{$ts_name}} \
   --region {{$region}}
@@ -93,7 +93,7 @@ aws sagemaker describe-mlflow-tracking-server \
 
 Delete any Amazon S3 bucket used as an artifact store for your tracking server using the following commands:
 
-```
+```bash
 aws s3 rm s3://$bucket_name --recursive
 aws s3 rb s3://$bucket_name
 ```

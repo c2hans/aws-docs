@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # PaymentScheduleTerm
 
-Defines a payment schedule term with installment payments at specified dates.
+Describes a payment schedule term with installment payments at specified dates.
 
 ## Contents
 <a name="API_marketplace-discovery_PaymentScheduleTerm_Contents"></a>

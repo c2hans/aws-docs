@@ -11,7 +11,7 @@ Learn how to customize your AWS CDK Toolkit Library instance with options for me
 
 When you use the CDK Toolkit Library, it makes API calls to AWS using the SDK. While authentication is loaded automatically from your environment, you can explicitly specify which profile to use:
 
-```
+```typescript
 import { Toolkit } from '@aws-cdk/toolkit-lib';
 
 // Create a toolkit instance with a specific AWS profile
@@ -30,7 +30,7 @@ Most CDK Toolkit actions require you to specify which stacks to operate on. The 
 
 Use this when you want to operate on every stack in your CDK app:
 
-```
+```typescript
 import { StackSelectionStrategy } from '@aws-cdk/toolkit-lib';
 
 // Select all stacks in the cloud assembly
@@ -46,7 +46,7 @@ await toolkit.deploy(cloudAssemblySource, {
 
 Use this to select only the top-level stacks from the main assembly:
 
-```
+```typescript
 // Select only top-level stacks
 await toolkit.deploy(cloudAssemblySource, {
   stacks: {
@@ -60,7 +60,7 @@ await toolkit.deploy(cloudAssemblySource, {
 
 Use this when your assembly contains exactly one stack and you want to assert this condition. If the assembly includes a single stack, it returns that stack. Otherwise, it throws an exception:
 
-```
+```typescript
 // Ensure there's exactly one stack and select it
 await toolkit.deploy(cloudAssemblySource, {
   stacks: {
@@ -74,7 +74,7 @@ await toolkit.deploy(cloudAssemblySource, {
 
 Use this to select specific stacks by name pattern:
 
-```
+```typescript
 // Select stacks matching specific patterns
 await toolkit.deploy(cloudAssemblySource, {
   stacks: {
@@ -100,7 +100,7 @@ The CDK Toolkit uses structured errors to help you identify and handle issues. E
 
 Use the helper methods provided by the CDK Toolkit to detect and handle specific error types:
 
-```
+```typescript
 import { ToolkitError } from '@aws-cdk/toolkit-lib';
 
 try {

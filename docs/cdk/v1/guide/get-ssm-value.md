@@ -23,7 +23,7 @@ A [limited number of AWS services](https://docs.aws.amazon.com/AWSCloudFormation
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as ssm from '@aws-cdk/aws-ssm';
 
 // Get latest version or specified version of plain string attribute
@@ -40,7 +40,7 @@ const secureStringToken = ssm.StringParameter.valueForSecureStringParameter(
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const ssm = require('@aws-cdk/aws-ssm');
 
 // Get latest version or specified version of plain string attribute
@@ -57,7 +57,7 @@ const secureStringToken = ssm.StringParameter.valueForSecureStringParameter(
 ------
 #### [ Python ]
 
-```
+```python
 import aws_cdk.aws_ssm as ssm
 
 # Get latest version or specified version of plain string attribute
@@ -74,7 +74,7 @@ secure_string_token = ssm.StringParameter.value_for_secure_string_parameter(
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awscdk.services.ssm.StringParameter;
 
 //Get latest version or specified version of plain string attribute
@@ -91,7 +91,7 @@ String secureStringToken = StringParameter.valueForSecureStringParameter(
 ------
 #### [ C\# ]
 
-```
+```csharp
 using Amazon.CDK.AWS.SSM;
 
 // Get latest version or specified version of plain string attribute
@@ -122,7 +122,7 @@ The retrieved value will end up in your synthesized CloudFormation template, whi
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as ssm from '@aws-cdk/aws-ssm';
 
 const stringValue = ssm.StringParameter.valueFromLookup(this, 'my-plain-parameter-name');
@@ -131,7 +131,7 @@ const stringValue = ssm.StringParameter.valueFromLookup(this, 'my-plain-paramete
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const ssm = require('@aws-cdk/aws-ssm');
 
 const stringValue = ssm.StringParameter.valueFromLookup(this, 'my-plain-parameter-name');
@@ -140,7 +140,7 @@ const stringValue = ssm.StringParameter.valueFromLookup(this, 'my-plain-paramete
 ------
 #### [ Python ]
 
-```
+```python
 import aws_cdk.aws_ssm as ssm
 
 string_value = ssm.StringParameter.value_from_lookup(self, "my-plain-parameter-name")
@@ -149,7 +149,7 @@ string_value = ssm.StringParameter.value_from_lookup(self, "my-plain-parameter-n
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awscdk.services.ssm.StringParameter;
 
 String stringValue = StringParameter.valueFromLookup(this, "my-plain-parameter-name");
@@ -158,7 +158,7 @@ String stringValue = StringParameter.valueFromLookup(this, "my-plain-parameter-n
 ------
 #### [ C\# ]
 
-```
+```csharp
 using Amazon.CDK.AWS.SSM;
 
 var stringValue = StringParameter.ValueFromLookup(this, "my-plain-parameter-name");

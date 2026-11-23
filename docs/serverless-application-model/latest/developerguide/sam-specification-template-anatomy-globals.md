@@ -55,7 +55,7 @@ In this example, both `HelloWorldFunction` and `ThumbnailFunction` use "nodejs12
 
 AWS SAM supports the following resources and properties.
 
-```
+```yaml
 Globals:
   Api:
     AccessLogSetting:
@@ -122,6 +122,7 @@ Globals:
     ReservedConcurrentExecutions:
     RolePath:
     Runtime:
+    RuntimeConfig:
     RuntimeManagementConfig:
     SnapStart:
     SourceKMSKeyArn:

@@ -38,7 +38,7 @@ Here is an example of an IAM policy that grants the principal in the partner acc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -88,7 +88,7 @@ Here is an example of an IAM policy that grants the necessary Security Hub CSPM 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -138,7 +138,7 @@ Here is an example of an IAM policy that grants the necessary Security Hub CSPM 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -28,7 +28,7 @@ The following code example shows how to get started using Amazon SQS.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sqs#code-examples).
 
-```
+```kotlin
 package com.kotlin.sqs
 
 import aws.sdk.kotlin.services.sqs.SqsClient
@@ -63,7 +63,7 @@ The following code example shows how to use `CreateQueue`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sqs#code-examples).
 
-```
+```kotlin
 suspend fun createQueue(queueNameVal: String): String {
     println("Create Queue")
     val createQueueRequest =
@@ -95,7 +95,7 @@ The following code example shows how to use `DeleteMessage`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sqs#code-examples).
 
-```
+```kotlin
 suspend fun deleteMessages(queueUrlVal: String) {
     println("Delete Messages from $queueUrlVal")
 
@@ -132,7 +132,7 @@ The following code example shows how to use `DeleteQueue`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sqs#code-examples).
 
-```
+```kotlin
 suspend fun deleteMessages(queueUrlVal: String) {
     println("Delete Messages from $queueUrlVal")
 
@@ -169,7 +169,7 @@ The following code example shows how to use `ListQueues`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sqs#code-examples).
 
-```
+```kotlin
 suspend fun listQueues() {
     println("\nList Queues")
 
@@ -197,7 +197,7 @@ The following code example shows how to use `ReceiveMessage`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sqs#code-examples).
 
-```
+```kotlin
 suspend fun receiveMessages(queueUrlVal: String?) {
     println("Retrieving messages from $queueUrlVal")
 
@@ -225,7 +225,7 @@ The following code example shows how to use `SendMessage`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sqs#code-examples).
 
-```
+```kotlin
 suspend fun sendMessages(
     queueUrlVal: String,
     message: String,
@@ -302,7 +302,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/usecases/topics_and_queues#code-examples).
 
-```
+```kotlin
 package com.example.sns
 
 import aws.sdk.kotlin.services.sns.SnsClient

@@ -32,12 +32,12 @@ You can configure your domain to use authentication systems such as DKIM and SPF
 ## Step 4. Generate your SMTP credentials
 <a name="send-email-getting-started-migrate-generate-credentials"></a>
 
-If you plan to send email using an application that uses SMTP, you have to generate SMTP credentials. Your SMTP credentials are different from your regular AWS credentials. These credentials are also unique in each AWS Region. For more information about generating your SMTP credentials, see [Obtaining Amazon SES SMTP credentials](smtp-credentials.md).
+If you plan to send email using an application that uses SMTP, you have to generate SMTP credentials. Your SMTP credentials are different from your regular AWS credentials. These credentials are also unique in each AWS Region. For more information about generating your SMTP credentials, see [Obtaining Amazon SES SMTP credentials using IAM](smtp-credentials.md).
 
 ## Step 5. Connect to an SMTP endpoint
 <a name="send-email-getting-started-migrate-connect-to-endpoint"></a>
 
-If you use a message transfer agent such as postfix or sendmail, you have to update the configuration for that application to refer to an Amazon SES SMTP endpoint. For a complete list of SMTP endpoints, see [Connecting to an Amazon SES SMTP endpoint](smtp-connect.md). Note that the SMTP credentials that you created in the previous step are associated with a specific AWS Region. You have to connect to the SMTP endpoint in the region that you created the SMTP credentials in.
+If you use a message transfer agent such as postfix or sendmail, you have to update the configuration for that application to refer to an Amazon SES SMTP endpoint. For a complete list of SMTP endpoints, see [Requirements for the Amazon SES SMTP interface](smtp-credentials.md#ses-smtp-interface-requirements). Note that the SMTP credentials that you created in the previous step are associated with a specific AWS Region. You have to connect to the SMTP endpoint in the region that you created the SMTP credentials in.
 
 ## Next steps
 <a name="send-email-getting-started-migrate-next-steps"></a>

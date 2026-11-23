@@ -15,7 +15,7 @@ Create a new app in Amazon Pinpoint by providing an app name to the [CreateAppRe
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.pinpoint.AmazonPinpoint;
 import com.amazonaws.services.pinpoint.AmazonPinpointClientBuilder;
 import com.amazonaws.services.pinpoint.model.CreateAppRequest;
@@ -25,7 +25,7 @@ import com.amazonaws.services.pinpoint.model.CreateApplicationRequest;
 
  **Code**
 
-```
+```java
 CreateApplicationRequest appRequest = new CreateApplicationRequest()
 		.withName(appName);
 
@@ -43,14 +43,14 @@ To delete an app, call the AmazonPinpointClient’s `deleteApp` request with a [
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.pinpoint.AmazonPinpoint;
 import com.amazonaws.services.pinpoint.AmazonPinpointClientBuilder;
 ```
 
  **Code**
 
-```
+```java
 DeleteAppRequest deleteRequest = new DeleteAppRequest()
 		.withApplicationId(appID);
 

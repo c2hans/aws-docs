@@ -65,7 +65,7 @@ To use the [ListInferenceRecommendationsJobSteps](https://docs.aws.amazon.com/sa
 + For `StepType`, use `BENCHMARK` to return details about the job's benchmarks.
 + For `Status`, use `FAILED` to return details about only the failed benchmarks. For a list of the other status types, see the `Status` field in the [ListInferenceRecommendationsJobSteps](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListInferenceRecommendationsJobSteps.html) API.
 
-```
+```python
 # Create a low-level SageMaker service client.
 import boto3
 aws_region = {{'<region>'}}
@@ -89,6 +89,6 @@ response = sagemaker_client.list_inference_recommendations_job_steps(
 
 You can print the response object to view the results. The preceding code example stored the response in a variable called `response`:
 
-```
+```python
 print(response)
 ```

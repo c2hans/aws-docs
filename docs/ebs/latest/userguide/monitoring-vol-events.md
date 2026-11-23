@@ -52,7 +52,7 @@ If you have a volume where I/O is disabled, see [Work with an impaired Amazon EB
 **To view events for your volumes**
 Use the [describe-volume-status](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-volume-status.html) command.
 
-```
+```bash
 aws ec2 describe-volume-status --volume-ids {{vol-01234567890abcdef}}
 ```
 
@@ -62,7 +62,7 @@ aws ec2 describe-volume-status --volume-ids {{vol-01234567890abcdef}}
 **To view events for your volumes**
 Use the [Get-EC2VolumeStatus](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2VolumeStatus.html) cmdlet.
 
-```
+```powershell
 Get-EC2VolumeStatus -VolumeId {{vol-01234567890abcdef}}
 ```
 

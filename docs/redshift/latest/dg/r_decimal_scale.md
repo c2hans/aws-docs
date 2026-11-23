@@ -31,7 +31,7 @@ A `SUPER` expression or column.
 
 To apply the DECIMAL\_SCALE function to the table t, use the following example.
 
-```
+```sql
 CREATE TABLE t(s SUPER);
 
 INSERT INTO t VALUES (3.14159);

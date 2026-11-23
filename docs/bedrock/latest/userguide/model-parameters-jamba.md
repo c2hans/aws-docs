@@ -66,7 +66,7 @@ The AI21 Labs Jamba models support the following parameters to control repetitio
 
 When you make an [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html) or [InvokeModelWithResponseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html) call using an AI21 Labs model, fill the `body` field with a JSON object that conforms to the one below. Enter the prompt in the `prompt` field.
 
-```
+```json
 {
   "messages": [
     {
@@ -94,7 +94,7 @@ This example shows how to call the *AI21 Labs Jamba-Instruct* model.
 
 **`invoke_model`**
 
-```
+```json
 import boto3
 import json
 
@@ -116,7 +116,7 @@ print(json.dumps(json.loads(response['body']), indent=4))
 
 **converse**
 
-```
+```json
 import boto3
 import json
 
@@ -145,7 +145,7 @@ This example shows how to call the *AI21 Labs Jamba 1.5 Large* model.
 
 **`invoke_model`**
 
-```
+```json
 POST https://bedrock-runtime.us-east-1.amazonaws.com/model/ai21.jamba-1-5-mini-v1:0/invoke-model HTTP/1.1
 {
   "messages": [

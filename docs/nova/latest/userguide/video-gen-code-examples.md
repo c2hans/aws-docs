@@ -9,7 +9,7 @@ The following examples provide sample code for various single-shot (6 seconds) v
 ------
 #### [ Text to video ]
 
-```
+```Python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 
@@ -56,7 +56,7 @@ except Exception as e:
 ------
 #### [ Image to video ]
 
-```
+```Python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 import json
@@ -113,7 +113,7 @@ print(json.dumps(invocation, indent=2, default=str))
 ------
 #### [ Query job status ]
 
-```
+```Python
 import json
 import boto3
 
@@ -146,7 +146,7 @@ elif (status == "Failed"):
 ------
 #### [ Listing jobs ]
 
-```
+```Python
 import json
 import boto3
 
@@ -172,7 +172,7 @@ for job in completed_jobs["asyncInvokeSummaries"]:
 ------
 #### [ Text to video using REST API ]
 
-```
+```Python
 # Invoke the Amazon Nova Reel model to create a video and monitor the status
 # of the async job.
 

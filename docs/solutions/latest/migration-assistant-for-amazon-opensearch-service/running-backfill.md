@@ -11,7 +11,7 @@ After metadata has been migrated, use Reindex-from-Snapshot (RFS) to backfill do
 
 Configure RFS under `snapshotMigrationConfigs[].perSnapshotConfig.<snapshot>[].documentBackfillConfig` and submit the workflow:
 
-```
+```bash
 workflow configure edit
 workflow submit
 workflow manage
@@ -26,19 +26,19 @@ The legacy `console backfill start` command starts a directly configured RFS dep
 
 To speed up workflow-managed backfill, increase `documentBackfillConfig.podReplicas` and resubmit the workflow. Each worker processes shards in parallel from the snapshot in Amazon S3, so scaling up does not add live read load to the source cluster — it only increases the indexing rate on the target.
 
-```
+```yaml
 documentBackfillConfig:
   podReplicas: 5
 ```
 
-```
+```bash
 workflow configure edit
 workflow submit
 ```
 
 For a legacy directly configured RFS deployment, use:
 
-```
+```bash
 console backfill scale 5
 ```
 
@@ -49,7 +49,7 @@ It may take a few minutes for additional workers to come online. Scale up gradua
 
 Check workflow-managed backfill status:
 
-```
+```bash
 workflow status --resource-view
 workflow log resource snapshotmigration.<NAME> -- --tail=100
 ```
@@ -58,14 +58,14 @@ Use `workflow manage` for the interactive view and approval gates. Use `workflow
 
 For a legacy directly configured RFS deployment, use:
 
-```
+```bash
 console backfill status
 console backfill status --deep-check
 ```
 
 Example output:
 
-```
+```text
 BackfillStatus.RUNNING
 Running=9
 Pending=1
@@ -95,7 +95,7 @@ The workflow path does not expose a separate `workflow backfill pause` command. 
 
 For a legacy directly configured RFS deployment, use:
 
-```
+```bash
 console backfill pause
 ```
 
@@ -110,13 +110,13 @@ Workflow-managed backfill does not require a manual `console backfill stop`. The
 
 For a legacy directly configured RFS deployment, stop the migration only after status checks report that data has been completely migrated:
 
-```
+```bash
 console backfill stop
 ```
 
 Example output:
 
-```
+```text
 Backfill stopped successfully.
 Archiving the working state of the backfill operation...
 Backfill working state archived to: ./backfill_working_state/working_state_backup_20241115174822.json
@@ -130,13 +130,13 @@ You cannot restart a stopped legacy RFS migration. If you may need to resume lat
 
 After the backfill completes and workers have stopped, verify the contents of your Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection:
 
-```
+```bash
 console clusters cat-indices --refresh
 ```
 
 This displays the document count for each index. Compare source and target counts to verify completeness:
 
-```
+```text
 SOURCE CLUSTER
 health status index       uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 green  open   my-index    -DqPQDrATw25hhe5Ss34bQ   1   0          3            0     12.7kb         12.7kb
@@ -151,7 +151,7 @@ green  open   my-index    bGfGtYoeSU6U6p8leR5NAQ   1   0          3            0
 
 If you enabled the failed document stream, confirm that the failed document count is `0`:
 
-```
+```bash
 console failed-document-stream count
 ```
 
@@ -159,7 +159,7 @@ For details on enabling the stream, inspecting failures, and resubmitting docume
 
 If the failed document stream is not enabled, use the following Amazon CloudWatch Logs Insights query to identify failed documents:
 
-```
+```text
 fields @message
 | filter @message like "Bulk request succeeded, but some operations failed."
 | sort @timestamp desc

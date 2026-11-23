@@ -131,7 +131,7 @@ This example describes an identity store specified by its ID.
 #### Sample Request
 <a name="API_DescribeIdentityStore_Example_1_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890"
 }
@@ -140,7 +140,7 @@ This example describes an identity store specified by its ID.
 #### Sample Response
 <a name="API_DescribeIdentityStore_Example_1_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "IdentityStoreArn": "arn:aws:identitystore::111122223333:identitystore/d-1234567890",
@@ -161,7 +161,7 @@ This example describes the same identity store specified by its Amazon Resource 
 #### Sample Request
 <a name="API_DescribeIdentityStore_Example_2_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "arn:aws:identitystore::111122223333:identitystore/d-1234567890"
 }
@@ -170,7 +170,7 @@ This example describes the same identity store specified by its Amazon Resource 
 #### Sample Response
 <a name="API_DescribeIdentityStore_Example_2_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "IdentityStoreArn": "arn:aws:identitystore::111122223333:identitystore/d-1234567890",

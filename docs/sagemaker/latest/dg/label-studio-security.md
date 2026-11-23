@@ -54,7 +54,7 @@ The ID of your SageMaker AI domain, such as `d-xxxxxxxxxxxx`.
 {{annotator-profile-name}}
 The name of the annotator's user profile. Give each annotator a policy that names only their own profile.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -33,7 +33,7 @@ The following example shows how you can use the AWS SDK for Python (Boto3) to su
 **Note**
 The `HubContentVersion` you specify in the request means that the specific version's metadata is updated. To find all of the available versions of your hub content, you can use the [ ListHubContentVersions](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListHubContentVersions.html) API.
 
-```
+```python
 import boto3
 sagemaker_client = boto3.Session(region_name=<AWS-region>).client("sagemaker")
 
@@ -51,7 +51,7 @@ sagemaker_client.update_hub_contents(
 
 The following example shows how you can use the AWS CLI to submit an [ update-hub-content](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/update-hub-content.html) request.
 
-```
+```bash
 aws sagemaker update-hub-content \
 --hub-name {{<hub-name>}} \
 --hub-content-name {{<resource-content-name>}} \
@@ -74,7 +74,7 @@ You can only update the `MinVersion` field for model references.
 
 The following example shows how you can use the AWS SDK for Python (Boto3) to submit an [ UpdateHubContentReference](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateHubContentReference.html) request.
 
-```
+```python
 import boto3
 sagemaker_client = boto3.Session(region_name=<AWS-region>).client("sagemaker")
 
@@ -91,7 +91,7 @@ update_response = sagemaker_client.update_hub_content_reference(
 
 The following example shows how you can use the AWS CLI to submit an [ update-hub-content-reference](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/update-hub-content-reference.html) request.
 
-```
+```bash
 aws sagemaker update-hub-content-reference \
  --hub-name {{<hub-name>}} \
  --hub-content-name {{<model-reference-content-name>}} \

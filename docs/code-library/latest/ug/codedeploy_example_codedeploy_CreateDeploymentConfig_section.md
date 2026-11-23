@@ -36,7 +36,7 @@ For more information, see [Create a deployment configuration with CodeDeploy](ht
 **Tools for PowerShell V4**
 **Example 1: This example creates a new deployment configuration with the specified name and behavior.**
 
-```
+```powershell
 New-CDDeploymentConfig -DeploymentConfigName AtLeastTwoHealthyHosts -MinimumHealthyHosts_Type HOST_COUNT -MinimumHealthyHosts_Value 2
 ```
 **Output:**
@@ -49,7 +49,7 @@ New-CDDeploymentConfig -DeploymentConfigName AtLeastTwoHealthyHosts -MinimumHeal
 **Tools for PowerShell V5**
 **Example 1: This example creates a new deployment configuration with the specified name and behavior.**
 
-```
+```powershell
 New-CDDeploymentConfig -DeploymentConfigName AtLeastTwoHealthyHosts -MinimumHealthyHosts_Type HOST_COUNT -MinimumHealthyHosts_Value 2
 ```
 **Output:**

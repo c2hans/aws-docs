@@ -35,7 +35,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps, Aws } from 'aws-cdk-lib';
 import { LambdaToElasticSearchAndKibana } from '@aws-solutions-constructs/aws-lambda-elasticsearch-kibana';
@@ -55,7 +55,7 @@ new LambdaToElasticSearchAndKibana(this, 'sample', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_lambda_elasticsearch_kibana import LambdaToElasticSearchAndKibana
 from aws_cdk import (
     aws_lambda as _lambda,
@@ -78,7 +78,7 @@ LambdaToElasticSearchAndKibana(self, 'sample',
                             )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

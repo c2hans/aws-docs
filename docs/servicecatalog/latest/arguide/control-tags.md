@@ -17,7 +17,7 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -53,7 +53,7 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -91,7 +91,7 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -129,7 +129,7 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -167,7 +167,7 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -205,7 +205,7 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -255,7 +255,7 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -32,7 +32,7 @@ You can enable the Spark UI by using the AWS Glue console or the AWS Command Lin
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon Redshift.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/redshift#code-examples).
 
-```
+```python
 import boto3
 
 def hello_redshift(redshift_client):
@@ -77,7 +77,7 @@ The following code example shows how to:
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/redshift#code-examples).
 
-```
+```python
 class RedshiftScenario:
     """Runs an interactive scenario that shows how to get started with Redshift."""
 
@@ -364,7 +364,7 @@ class RedshiftScenario:
 ```
 Main function showing scenario implementation.
 
-```
+```python
 def main():
     redshift_client = boto3.client("redshift")
     redshift_data_client = boto3.client("redshift-data")
@@ -377,7 +377,7 @@ def main():
 ```
 The wrapper functions used in the scenario.
 
-```
+```python
     def create_cluster(
         self,
         cluster_identifier,
@@ -606,7 +606,7 @@ The following code example shows how to use `CreateCluster`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/redshift#code-examples).
 
-```
+```python
 class RedshiftWrapper:
     """
     Encapsulates Amazon Redshift cluster operations.
@@ -659,7 +659,7 @@ class RedshiftWrapper:
 ```
 The following code instantiates the RedshiftWrapper object.
 
-```
+```python
     client = boto3.client("redshift")
     redhift_wrapper = RedshiftWrapper(client)
 ```
@@ -673,7 +673,7 @@ The following code example shows how to use `DeleteCluster`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/redshift#code-examples).
 
-```
+```python
 class RedshiftWrapper:
     """
     Encapsulates Amazon Redshift cluster operations.
@@ -705,7 +705,7 @@ class RedshiftWrapper:
 ```
 The following code instantiates the RedshiftWrapper object.
 
-```
+```python
     client = boto3.client("redshift")
     redhift_wrapper = RedshiftWrapper(client)
 ```
@@ -719,7 +719,7 @@ The following code example shows how to use `DescribeClusters`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/redshift#code-examples).
 
-```
+```python
 class RedshiftWrapper:
     """
     Encapsulates Amazon Redshift cluster operations.
@@ -760,7 +760,7 @@ class RedshiftWrapper:
 ```
 The following code instantiates the RedshiftWrapper object.
 
-```
+```python
     client = boto3.client("redshift")
     redhift_wrapper = RedshiftWrapper(client)
 ```
@@ -774,7 +774,7 @@ The following code example shows how to use `DescribeStatement`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/redshift#code-examples).
 
-```
+```python
 class RedshiftDataWrapper:
     """Encapsulates Amazon Redshift data."""
 
@@ -804,7 +804,7 @@ class RedshiftDataWrapper:
 ```
 The following code instantiates the RedshiftDataWrapper object.
 
-```
+```python
     client = boto3.client("redshift-data")
     redshift_data_wrapper = RedshiftDataWrapper(client)
 ```
@@ -818,7 +818,7 @@ The following code example shows how to use `GetStatementResult`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/redshift#code-examples).
 
-```
+```python
 class RedshiftDataWrapper:
     """Encapsulates Amazon Redshift data."""
 
@@ -855,7 +855,7 @@ class RedshiftDataWrapper:
 ```
 The following code instantiates the RedshiftDataWrapper object.
 
-```
+```python
     client = boto3.client("redshift-data")
     redshift_data_wrapper = RedshiftDataWrapper(client)
 ```
@@ -869,7 +869,7 @@ The following code example shows how to use `ModifyCluster`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/redshift#code-examples).
 
-```
+```python
 class RedshiftWrapper:
     """
     Encapsulates Amazon Redshift cluster operations.
@@ -903,7 +903,7 @@ class RedshiftWrapper:
 ```
 The following code instantiates the RedshiftWrapper object.
 
-```
+```python
     client = boto3.client("redshift")
     redhift_wrapper = RedshiftWrapper(client)
 ```

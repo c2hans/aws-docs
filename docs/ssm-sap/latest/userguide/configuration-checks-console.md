@@ -92,7 +92,7 @@ See also [support restrictions for Systems Manager for SAP](https://docs.aws.ama
 
    1. In the AWS IAM Console, Create a new role, using a “Custom trust Policy“, and the following trust relationship:
 
-      ```
+      ```json
       {
           "Version": "2012-10-17",
           "Statement": [

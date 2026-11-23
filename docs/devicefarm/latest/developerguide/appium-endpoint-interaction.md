@@ -134,7 +134,7 @@ The following is an example of an IAM permissions policy that grants the recomme
 
 **Example**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

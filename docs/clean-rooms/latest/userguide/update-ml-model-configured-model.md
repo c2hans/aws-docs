@@ -20,7 +20,7 @@ After you have associated a configured a lookalike model, you can update it to c
 
    1. Choose the **Lookalike model** that you want configured from the dropdown list.
 
-   1. Choose the **Minimum matching seed size** that you want. This is the minimum number of users in the seed data provider's data that overlap with users in the training data. This value must be greater than 0.
+   1. Choose the **Minimum matching seed size** that you want. This is the minimum number of users in the seed data provider's data that overlap with users in the training data. This value must be between 25 and 500,000.
 
 1. For **Metrics to share with other members**, choose whether you want the seed data provider in your collaboration to receive model metrics, including relevance scores.
 

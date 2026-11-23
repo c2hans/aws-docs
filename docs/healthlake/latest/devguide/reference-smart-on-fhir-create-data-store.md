@@ -22,7 +22,7 @@ You can use the following code example to create SMART on FHIR enabled HealthLak
 
 In the `identity-provider-configuration` parameter you can *optionally* enable fine-grained authorization by setting `FineGrainedAuthorizationEnabled` equal to `True`. To learn more about Fine grained authorization, see [Using fine-grained authorization with a SMART on FHIR enabled HealthLake data store](reference-smart-on-fhir-fine-grained-authorization.md). The example below contains a special character `\` to indicate line breaks or as an escape character. This is for clarity.
 
-```
+```sh
 aws healthlake create-fhir-datastore \
   --region us-east-1 \
   --datastore-name "your-data-store-name" \
@@ -40,7 +40,7 @@ aws healthlake create-fhir-datastore \
 
 When successful you get the following JSON response:
 
-```
+```json
 {
   "DatastoreArn": "arn:aws:healthlake:your-region:111122223333:datastore/fhir/your-datastore-id",
   "DatastoreEndpoint": "https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/",

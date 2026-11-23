@@ -134,7 +134,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-rds-database-stack-reboot-ex-min"></a>
 
-```
+```json
 {
   "DbInstanceIdentifier": "dbinstance"
 }
@@ -143,7 +143,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-rds-database-stack-reboot-ex-max"></a>
 
-```
+```json
 {
   "DbInstanceIdentifier": "db-instance1",
   "ForceFailover": true

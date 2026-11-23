@@ -39,7 +39,7 @@ The **AWSImageBuilderFullAccess** policy is required to create the Image Builder
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

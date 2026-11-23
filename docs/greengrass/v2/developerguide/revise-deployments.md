@@ -12,7 +12,7 @@ To revise a deployment, you create a deployment that starts from the same compon
 
 1. <a name="revise-deployment-list-deployments-intro"></a>Run the following command to list the deployments for the deployment target. Replace {{targetArn}} with the ARN of the target AWS IoT thing or thing group.
 
-   ```
+   ```bash
    aws greengrassv2 list-deployments --target-arn {{targetArn}}
    ```
 
@@ -22,7 +22,7 @@ You can also revise a deployment other than the latest revision for the target. 
 
 1. <a name="revise-deployment-get-deployment"></a>Run the following command to get the deployment's details. These details include metadata, components, and job configuration. Replace {{deploymentId}} with the ID from the previous step.
 
-   ```
+   ```bash
    aws greengrassv2 get-deployment --deployment-id {{deploymentId}}
    ```
 
@@ -41,7 +41,7 @@ You can also revise a deployment other than the latest revision for the target. 
 
    The [CreateDeployment](https://docs.aws.amazon.com/greengrass/v2/APIReference/API_CreateDeployment.html) operation expects a payload with the following structure.
 
-   ```
+   ```json
    {
      "targetArn": "{{String}}",
      "components": {{Map of components}},
@@ -62,7 +62,7 @@ You can also revise a deployment other than the latest revision for the target. 
 
 1. Run the following command to create the deployment from `deployment.json`.
 
-   ```
+   ```bash
    aws greengrassv2 create-deployment --cli-input-json file://deployment.json
    ```
 

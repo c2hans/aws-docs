@@ -11,7 +11,7 @@ Use the following policy for resources in your Region type. Replace {{1111222233
 ------
 #### [ Commercial AWS Regions ]
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -42,7 +42,7 @@ Use the following policy for resources in your Region type. Replace {{1111222233
 ------
 #### [ AWS GovCloud (US) Regions ]
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

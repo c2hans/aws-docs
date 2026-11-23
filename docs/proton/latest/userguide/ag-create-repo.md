@@ -38,7 +38,7 @@ You can create a link to your repository using the console or CLI. When you crea
 
 Run the following command:
 
-```
+```sh
 $ aws proton create-repository \
     --name {{myrepos/environments}} \
     --connection-arn "arn:aws:codestar-connections:{{region-id}}:{{123456789012}}:connection/{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}" \
@@ -51,7 +51,7 @@ The last two parameters, **--encryption-key** and **--tags**, are optional.
 
 Response:
 
-```
+```json
 {
     "repository": {
         "arn": "arn:aws:proton:region-id:123456789012:repository/github:myrepos/environments",
@@ -67,7 +67,7 @@ After you create a repository link, you can view a list of AWS and customer mana
 
 Command:
 
-```
+```sh
 $ aws proton list-tags-for-resource \
     --resource-arn "arn:aws:proton:{{region-id}}:{{123456789012}}:repository/{{github:myrepos/environments}}"
 ```

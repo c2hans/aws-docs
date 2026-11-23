@@ -33,19 +33,19 @@ The following prerequisites are required to for the docker container.
 
 1. Copy the file to the Raspberry Pi using SCP:
 
-   ```
+   ```bash
    scp ~/path/to/IotMI-HubSDK-Docker-v1.0.0.tar.gz [username]@raspberrypi.local:~
    ```
 
 1. Connect to the Raspberry Pi via SSH:
 
-   ```
+   ```bash
    ssh hub123456@raspberrypi.local
    ```
 
 1. Install Docker if not present:
 
-   ```
+   ```bash
    # Install Docker
    cd
    curl -fsSL https://get.docker.com | sudo sh
@@ -59,7 +59,7 @@ The following prerequisites are required to for the docker container.
 
 1. Install Docker Compose if not present:
 
-   ```
+   ```bash
    # Install Docker Compose
    sudo apt-get update
    sudo apt-get install -y docker-compose-plugin
@@ -67,7 +67,7 @@ The following prerequisites are required to for the docker container.
 
 1. Extract the Hub SDK files:
 
-   ```
+   ```bash
    # Navigate to the home directory
    cd
 
@@ -77,7 +77,7 @@ The following prerequisites are required to for the docker container.
 
 1. Navigate to the hub-docker directory:
 
-   ```
+   ```bash
    cd IotMI-HubSDK-Docker
    ```
 
@@ -87,7 +87,7 @@ You must be on `YUL` or `DUB` region to do this step.
 
 1. Start the Docker container:
 
-   ```
+   ```bash
    # The first time it's called, it will build the container
    docker compose up -d
    docker compose logs -f
@@ -95,7 +95,7 @@ You must be on `YUL` or `DUB` region to do this step.
 
 **Expected output:**
 
-```
+```bash
 [+] Running 1/1
  ✔ Container iotmi-hubsdk-docker-hubsdk-1  Started
 hubsdk-1  | -\-\-\-\-\-\-Checking USB dongles-\-\-\-\-\-\-\-\-\-\-\-\-
@@ -151,22 +151,22 @@ After successfully starting the Hub SDK, proceed with device onboarding and mana
 **Note**
 To access the Docker container bash shell, run the following command:
 
-  ```
+  ```bash
   docker compose exec hubsdk bash
   ```
 To restart the container after reboot, run the following command:
 
-  ```
+  ```bash
   docker compose up -d
   ```
 To update the Hub SDK, replace binaries in the following folder:
 
-  ```
+  ```bash
   hub-docker/iotmi
   ```
 To safely restart the container while preserving data, do:
 
-  ```
+  ```bash
   docker compose down
   docker compose up -d
   docker compose logs -f

@@ -125,8 +125,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [CreateLink](https://docs.aws.amazon.com/OAM/latest/APIReference/API_CreateLink.html)  **
   - **Description:** Grants permission to create a link between a monitoring account and a source account for cross-account monitoring
-  - **Resource types (\*required):** [Sink\*](#list_oam-resource-Sink)
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_oam-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_oam-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_oam-aws_TagKeys)<br />[oam:ResourceTypes](#list_oam-oam_ResourceTypes)
+  - **Resource types (\*required):** [Link\*](#list_oam-resource-Link) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_oam-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_oam-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_oam-aws_TagKeys)<br />[oam:ResourceTypes](#list_oam-oam_ResourceTypes)
+  - **Resource types (\*required):** [Sink\*](#list_oam-resource-Sink) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_oam-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_oam-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_oam-aws_TagKeys)<br />[oam:ResourceTypes](#list_oam-oam_ResourceTypes)
   - **Access level:** Write
 
 - **   [CreateSink](https://docs.aws.amazon.com/OAM/latest/APIReference/API_CreateSink.html)  **
@@ -209,8 +209,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UpdateLink](https://docs.aws.amazon.com/OAM/latest/APIReference/API_UpdateLink.html)  **
   - **Description:** Grants permission to update an existing link between a monitoring account and a source account
-  - **Resource types (\*required):** [Link\*](#list_oam-resource-Link)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_oam-aws_ResourceTag___TagKey_)<br />[oam:ResourceTypes](#list_oam-oam_ResourceTypes)
+  - **Resource types (\*required):** [Link\*](#list_oam-resource-Link) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_oam-aws_ResourceTag___TagKey_)<br />[oam:ResourceTypes](#list_oam-oam_ResourceTypes)
+  - **Resource types (\*required):** [Sink\*](#list_oam-resource-Sink) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_oam-aws_ResourceTag___TagKey_)<br />[oam:ResourceTypes](#list_oam-oam_ResourceTypes)
   - **Access level:** Write
 
 ## Resource types defined by Amazon CloudWatch Observability Access Manager

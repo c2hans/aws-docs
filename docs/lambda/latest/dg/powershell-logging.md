@@ -22,7 +22,7 @@ To output logs from your function code, you can use cmdlets on [Microsoft.PowerS
 
 **Example [function/Handler.ps1](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/blank-powershell/function/Handler.ps1) – Logging**
 
-```
+```powershell
 #Requires -Modules @{ModuleName='AWSPowerShell.NetCore';ModuleVersion='3.3.618.0'}
 Write-Host `## Environment variables
 Write-Host AWS_LAMBDA_FUNCTION_VERSION=$Env:AWS_LAMBDA_FUNCTION_VERSION

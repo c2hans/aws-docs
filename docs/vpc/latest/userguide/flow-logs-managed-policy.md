@@ -17,7 +17,7 @@ The following example shows the details of the managed policy that's created.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

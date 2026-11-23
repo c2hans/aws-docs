@@ -24,7 +24,7 @@ Replace the following placeholders:
 + `<REGION>`: Your AWS region
 + `<OIDC_ID>`: Your Amazon EKS cluster's OIDC provider ID
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

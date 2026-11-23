@@ -29,7 +29,7 @@ The following code example shows how to get started using Amazon EC2.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 The `Package.swift` file.
 
-```
+```swift
 // swift-tools-version: 5.9
 //
 // The swift-tools-version declares the minimum version of Swift required to
@@ -71,7 +71,7 @@ let package = Package(
 ```
 The `entry.swift` file.
 
-```
+```swift
 // An example that shows how to use the AWS SDK for Swift to perform a simple
 // operation using Amazon Elastic Compute Cloud (EC2).
 //
@@ -191,7 +191,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 The `Package.swift` file.
 
-```
+```swift
 // swift-tools-version: 5.9
 //
 // The swift-tools-version declares the minimum version of Swift required to
@@ -234,7 +234,7 @@ let package = Package(
 ```
 The `entry.swift` file.
 
-```
+```swift
 // An example that shows how to use the AWS SDK for Swift to perform a variety
 // of operations using Amazon Elastic Compute Cloud (EC2).
 //
@@ -1356,7 +1356,7 @@ The following code example shows how to use `AllocateAddress`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Allocate an Elastic IP address.
@@ -1391,7 +1391,7 @@ The following code example shows how to use `AssociateAddress`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Associate the specified allocated Elastic IP to a given instance.
@@ -1428,7 +1428,7 @@ The following code example shows how to use `AuthorizeSecurityGroupIngress`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Authorize ingress of connections for the security group.
@@ -1479,7 +1479,7 @@ The following code example shows how to use `CreateKeyPair`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Create a new RSA key pair and save the private key to a randomly-named
@@ -1530,7 +1530,7 @@ The following code example shows how to use `CreateSecurityGroup`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Create a new security group.
@@ -1566,7 +1566,7 @@ The following code example shows how to use `DeleteKeyPair`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Delete an EC2 key pair.
@@ -1600,7 +1600,7 @@ The following code example shows how to use `DeleteSecurityGroup`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Delete a security group.
@@ -1633,7 +1633,7 @@ The following code example shows how to use `DescribeImages`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Return an array of `EC2ClientTypes.Image` objects describing all of
@@ -1680,7 +1680,7 @@ The following code example shows how to use `DescribeInstanceTypes`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Return a list of instance types matching the specified architecture
@@ -1740,7 +1740,7 @@ The following code example shows how to use `DescribeKeyPairs`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Describe the key pairs associated with the user by outputting each key
@@ -1775,7 +1775,7 @@ The following code example shows how to use `DescribeSecurityGroups`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 Using pagination with `describeSecurityGroupsPaginated()`.
 
-```
+```swift
 import AWSEC2
 
     /// Return an array of strings giving the names of every security group
@@ -1813,7 +1813,7 @@ import AWSEC2
 ```
 Without pagination.
 
-```
+```swift
 import AWSEC2
 
     func describeSecurityGroups(groupId: String) async -> Bool {
@@ -1849,7 +1849,7 @@ The following code example shows how to use `DisassociateAddress`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Disassociate an Elastic IP.
@@ -1877,7 +1877,7 @@ The following code example shows how to use `ReleaseAddress`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Release an allocated Elastic IP.
@@ -1906,7 +1906,7 @@ The following code example shows how to use `RunInstances`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Create and return a new EC2 instance.
@@ -1955,7 +1955,7 @@ The following code example shows how to use `StartInstances`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Start the specified instance.
@@ -2013,7 +2013,7 @@ The following code example shows how to use `StopInstances`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Stop the specified instance.
@@ -2072,7 +2072,7 @@ The following code example shows how to use `TerminateInstances`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Terminate the specified instance.

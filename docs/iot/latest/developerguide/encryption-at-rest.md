@@ -40,13 +40,13 @@ AWS IoT Core only supports AWS KMS keys with `SYMMETRIC_DEFAULT` key spec and `E
 
 The following is an example AWS CLI command to create a KMS key which can be used with AWS IoT Core for customer managed keys.
 
-```
+```bash
 aws kms create-key --key-spec SYMMETRIC_DEFAULT --key-usage ENCRYPT_DECRYPT --region us-west-2
 ```
 
 The following is an example output of the command.
 
-```
+```json
 {
     "KeyMetadata": {
         "AWSAccountId": "111122223333",
@@ -91,7 +91,7 @@ For AWS IoT Core to use the KMS key you created to encrypt your data at rest, yo
 
 The role must have the following trust policy to allow AWS IoT Core to assume the role.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": {
@@ -122,7 +122,7 @@ Ensure the IAM policies attached to the IAM role have the following permissions 
 
 The following is an example IAM policy with the required permissions for customer managed keys.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -159,7 +159,7 @@ After you complete all the previous steps, run the `update-encryption-configurat
 
 1. To opt in to customer managed keys in AWS IoT Core using AWS CLI, run the `update-encryption-configuration` CLI command.
 
-   ```
+   ```bash
    aws iot update-encryption-configuration --encryption-type "CUSTOMER_MANAGED_KMS_KEY" \
    --kms-access-role-arn "arn:aws:iam::111122223333:role/myrole" \
    --kms-key-arn "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab" --region us-west-2
@@ -167,13 +167,13 @@ After you complete all the previous steps, run the `update-encryption-configurat
 
 1. To verify customer managed keys in AWS IoT Core using AWS CLI, run the `describe-encryption-configuration` CLI command:
 
-   ```
+   ```bash
    aws iot describe-encryption-configuration --region us-west-2
    ```
 
    If you have enabled customer managed keys in AWS IoT Core, the output can look like the following:
 
-   ```
+   ```json
    {
        "encryptionType": "CUSTOMER_MANAGED_KMS_KEY",
        "kmsKeyArn": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
@@ -189,7 +189,7 @@ After you complete all the previous steps, run the `update-encryption-configurat
 
    If you haven't enabled customer managed keys, the output can look like the following:
 
-   ```
+   ```json
    {
        "encryptionType": "AWS_OWNED_KMS_KEY",
        "lastModifiedDate": "2024-09-26T22:01:02.365000-07:00"
@@ -277,7 +277,7 @@ To change the configuration to a different customer managed key:
 
 1. Update your encryption configuration to use the new key:
 
-   ```
+   ```bash
    aws iot update-encryption-configuration --encryption-type "CUSTOMER_MANAGED_KMS_KEY" \
    --kms-access-role-arn "arn:aws:iam::111122223333:role/myrole" \
    --kms-key-arn "arn:aws:kms:us-west-2:111122223333:key/new-key-id"
@@ -285,7 +285,7 @@ To change the configuration to a different customer managed key:
 
 To change the configuration from customer managed keys back to AWS owned keys:
 
-```
+```bash
 aws iot update-encryption-configuration --encryption-type "AWS_OWNED_KMS_KEY"
 ```
 
@@ -351,7 +351,7 @@ To effectively monitor and respond to key health status changes:
 
 1. **Set up CloudWatch alarms** for the `CMK.Health` metric:
 
-   ```
+   ```bash
    aws cloudwatch put-metric-alarm --region us-west-2 \
      --alarm-name "IoTCore-CMK-Health-Alert" \
      --alarm-description "Alert when IoT Core CMK health is unhealthy" \
@@ -369,7 +369,7 @@ To effectively monitor and respond to key health status changes:
 
 1. **Check configuration status** for troubleshooting:
 
-   ```
+   ```bash
    aws iot describe-encryption-configuration --region us-west-2
    ```
 
@@ -382,7 +382,7 @@ To effectively monitor and respond to key health status changes:
 
 When the status of the encryption keys is updated from `UNHEALTHY` to `HEALTHY`, AWS IoT Core will emit an AWS IoT V2 log message in the following format.
 
-```
+```json
 {
     "timestamp": "2017-08-10 15:37:23.476",
     "logLevel": "INFO",
@@ -401,7 +401,7 @@ When the status of the encryption keys is updated from `UNHEALTHY` to `HEALTHY`,
 
 When the status of the encryption keys is updated from `HEALTHY` to `UNHEALTHY`, AWS IoT Core will emit an AWS IoT V2 log message in the following format.
 
-```
+```json
 {
     "timestamp": "2017-08-10 15:37:23.476",
     "logLevel": "ERROR",
@@ -436,7 +436,7 @@ A value of `0` does not indicate a disruption to your current AWS IoT Core opera
 
 To be notified when branch key rotation can't proceed, set up a CloudWatch alarm for the `CMK.BranchKeyRotationHealth` metric:
 
-```
+```bash
 aws cloudwatch put-metric-alarm --region us-west-2 \
   --alarm-name "IoTCore-CMK-BranchKeyRotationHealth-Alert" \
   --alarm-description "Alert when IoT Core branch key rotation health is degraded" \
@@ -460,7 +460,7 @@ There are CloudTrail events for `DescribeKey`, `Decrypt`, `ReEncrypt`, and `Gene
 ##### `Decrypt` example
 <a name="decrypt"></a>
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {

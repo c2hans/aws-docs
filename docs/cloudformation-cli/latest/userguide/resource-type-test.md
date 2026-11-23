@@ -16,26 +16,26 @@ Once you've implemented the desired handlers for your resource, you can also tes
 
 To start testing, use the AWS SAM CLI to start the Local Lambda service. Run the following command in a terminal separate from your resource type workspace, or as a background process.
 
-```
+```sh
 $ sam local start-lambda
 ```
 
 If you have functions defined in your AWS SAM template, it will provide an endpoint to invoke these functions locally. This is especially helpful because it allows for remote debugging to step through resource type invocations in real time.
 
-```
+```text
 Starting the Local Lambda Service. You can now invoke your Lambda Functions defined in your template through the endpoint.
 2020-01-15 15:27:19  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
 ```
 
 Alternatively, you can also specify using the public Lambda service and invoke functions deployed in your account. Be aware, however, that using the local service allows for more iteration. To specify a debug port for remote debugging, use the `-d` option:
 
-```
+```sh
 $ sam local start-lambda -d PORT
 ```
 
 Once you have the Lambda service started, use the `[test](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-test.html)` command to perform contract tests:
 
-```
+```sh
 $ cfn test
 ```
 
@@ -56,7 +56,7 @@ Use the `--v2` flag of the `cfn test` command to run the new version of the cont
 
 **To run the tests**, from your project root:
 
-```
+```sh
 $ cfn test --v2
 ```
 
@@ -138,7 +138,7 @@ Because the input data specified in the `overrides.json` file is used by the Clo
 
 To override the input data used for specific properties during contract testing, add an `overrides.json` file to the root directory of your resource type project. The `overrides.json` file should contain only the resource properties to be used in testing. Use the following syntax:
 
-```
+```json
 {
     "CREATE": {
         "property_name": "property_value" # optional_comment
@@ -148,7 +148,7 @@ To override the input data used for specific properties during contract testing,
 
 For example:
 
-```
+```json
 {
     "CREATE": {
         "SubnetId": "subnet-0bc6136e" # This should be a real subnet that exists in the account you're testing against.
@@ -158,7 +158,7 @@ For example:
 
 You can also use output values from other stacks when specifying input data. For example, suppose you had a stack that contained an export value named `SubnetExport`:
 
-```
+```yaml
 Resources:
     VPC:
         Type: "AWS::EC2::VPC"
@@ -178,7 +178,7 @@ Outputs:
 
 You could then specify that export value as input data using the export value name using the following syntax:
 
-```
+```json
 {
   "CREATE": {
     "SubnetId": "{{SubnetExport}}"
@@ -204,7 +204,7 @@ To specify multiple sets of input data for contract tests, increment the integer
 
 Each input file is a JSON file containing only the resource properties to be used in testing. Below is an example of an input file data set.
 
-```
+```json
 {
    "AlarmName": "Name",
    "AlarmDescription": "TestAlarmDimensions Description",
@@ -230,7 +230,7 @@ If you specify both input files and an overrides files, the CloudFormation CLI i
 
 You can also use output values from other stacks when specifying input data. For example, suppose you had a stack that contained an export value named `SubnetExport`:
 
-```
+```yaml
 Resources:
     VPC:
         Type: "AWS::EC2::VPC"
@@ -250,7 +250,7 @@ Outputs:
 
 You could then specify that export value as input data using the export value name using the following syntax:
 
-```
+```json
 {
    "SubnetId": "{{SubnetExport}}",
    . . .
@@ -289,7 +289,7 @@ Because there are multiple ways to invoke contract tests against your resource, 
 
 ****
 
-    ```
+    ```json
     {
         "Version":"2012-10-17",
         "Statement": [
@@ -326,7 +326,7 @@ Because there are multiple ways to invoke contract tests against your resource, 
 
 ****
 
-    ```
+    ```json
     {
       "Version":"2012-10-17",
       "Statement": [
@@ -362,7 +362,7 @@ Instead, you can mimic the scenarios modeled in contract tests by invoking the h
 
 The test templates must adhere to the following format:
 
-```
+```json
 {
   "credentials": {
     "accessKeyId": "<Access Key Id>",

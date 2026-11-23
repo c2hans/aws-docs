@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/managed-apply-plug
 After you [create a pipeline](managed-opensearch-plugin-pipeline-example.md), you are ready to apply the Amazon Personalize Search Ranking plugin to queries. You can apply the Amazon Personalize Search Ranking plugin to all queries and responses for an index. You can also apply the plugin to individual queries and responses.
 +  You can use the following Python code to apply a search pipeline to an index. With this approach, all searches using this index use the plugin to apply personalization to search results.
 
-  ```
+  ```python
   import requests
   from requests_auth_aws_sigv4 import AWSSigV4
 
@@ -31,7 +31,7 @@ After you [create a pipeline](managed-opensearch-plugin-pipeline-example.md), yo
 
   For `context`, if you use contextual metadata, provide the user's contextual metadata, such as their device type. The `context` field is optional. For more information, see [Increasing recommendation relevance with contextual metadata](contextual-metadata.md).
 
-  ```
+  ```python
   import requests
   from requests_auth_aws_sigv4 import AWSSigV4
 

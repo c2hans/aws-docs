@@ -75,7 +75,7 @@ Valid pattern: `.+`
 
 The following CLI command creates a `ConnectorDefinition` with an initial version that contains the Modbus-RTU Protocol Adapter connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -117,7 +117,7 @@ The other parameters to include in the request depend on the operation. All requ
 
 **Example input: Read coils request**
 
-```
+```json
 {
     "request": {
         "operation": "ReadCoilsRequest",
@@ -153,7 +153,7 @@ Every response includes the following properties:
 
 **Example output: Success**
 
-```
+```json
 {
     "response" : {
         "status" : "success",
@@ -170,7 +170,7 @@ Every response includes the following properties:
 
 **Example output: Failure**
 
-```
+```json
 {
     "response" : {
         "status" : "fail",
@@ -609,7 +609,7 @@ The [Get started with connectors (console)](connectors-console.md) and [Get star
 
 The following example Lambda function sends an input message to the connector.
 
-```
+```python
 import greengrasssdk
 import json
 

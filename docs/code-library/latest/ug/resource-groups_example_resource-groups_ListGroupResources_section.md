@@ -60,7 +60,7 @@ For more information, see [What are resource groups?](https://docs.aws.amazon.co
 **Tools for PowerShell V4**
 **Example 1: This example lists group resources on the basis of filtered by resource type**
 
-```
+```powershell
 Get-RGGroupResourceList -Filter @{Name="resource-type";Values="AWS::EC2::Instance"} -GroupName auto-yes | Select-Object -ExpandProperty ResourceIdentifiers
 ```
 **Output:**
@@ -78,7 +78,7 @@ arn:aws:ec2:eu-west-1:123456789012:instance/i-0fd12dd3456789012 AWS::EC2::Instan
 **Tools for PowerShell V5**
 **Example 1: This example lists group resources on the basis of filtered by resource type**
 
-```
+```powershell
 Get-RGGroupResourceList -Filter @{Name="resource-type";Values="AWS::EC2::Instance"} -GroupName auto-yes | Select-Object -ExpandProperty ResourceIdentifiers
 ```
 **Output:**

@@ -54,7 +54,7 @@ For more information, see [Control access to services using endpoint policies](h
 **Example: VPC endpoint policy for AWS PCS actions**
 The following is an example of a custom endpoint policy. When you attach this policy to your interface endpoint, it grants access to the listed AWS PCS actions for all principals to the cluster with the specified {{cluster-id}}. Replace {{region}} with the ID of the AWS Region of the cluster, such as `us-east-1`. Replace {{account-id}} with the AWS account number of the cluster.
 
-```
+```json
 {
     "Statement": [
             {

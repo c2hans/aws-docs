@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/retail-hyper-personalization-o
 title: 'Guidance for Retail Hyper Personalization on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/retail-hyper-personalization-on-aws/
 source: aws-documentation
-generated_on: 2026-11-18
+generated_on: 2026-11-20
 ---
 
 # Guidance for Retail Hyper Personalization on AWS
@@ -33,7 +33,7 @@ Ingest and act on data from e-commerce, in-store IoT, POS, and CRM systems throu
 
 This architecture diagram shows how to build a retail hyper personalization platform that combines real-time data streaming, machine learning recommendations, and generative AI to deliver individualized shopping experiences. [Download the architecture diagram.](downloads/retail-hyper-personalization-on-aws.pdf)
 
-![Architecture diagram for Retail Hyper Personalization on AWS](/images/solutions/retail-hyper-personalization-on-aws/images/retail-hyper-personalization-on-aws-1.png)
+![Guidance for Retail Hyper Personalization on AWS](/images/solutions/retail-hyper-personalization-on-aws/images/retail-hyper-personalization-on-aws-1.png)
 
 1. **Step 1**: Shoppers interact with the retail experience through the e-commerce site, in-store IoT touchpoints, and POS systems. Retail signals, including browsing events, transactions, and CRM records, flow into Amazon API Gateway, over TLS-encrypted connections, for downstream processing.
 1. **Step 2**: Amazon Kinesis Data Streams processes events in real time while Amazon Data Firehose delivers raw events to the data lake.
@@ -44,7 +44,7 @@ This architecture diagram shows how to build a retail hyper personalization plat
 1. **Step 7**: The AI Shopping Assistant is deployed and operated using Amazon Bedrock AgentCore, a comprehensive set of services for securely running AI agents at scale. The AgentCore Runtime provides low-latency serverless environments with session isolation, supporting any agent framework, for conversational product discovery. Responses return via AWS AppSync.
 1. **Step 8**: Amazon EventBridge captures scheduled triggers and model drift events, sourced from Amazon SageMaker Model Monitor. This detects performance degradation, routing them to AWS Step Functions to initiate automated retraining workflows and campaign refresh pipelines.
 1. **Step 9**: Amazon ECS on AWS Fargate hosts microservices for A/B testing, campaign management, and recommendation blending.
-1. **Step 10**: AWS AppSync serves near real-time recommendations via GraphQL. Amazon Pinpoint delivers personalized email, SMS, and push campaigns.
+1. **Step 10**: AWS AppSync serves near real-time recommendations via GraphQL.
 1. **Step 11**: Amazon Cognito authenticates users. AWS KMS encrypts data at rest. Amazon CloudWatch provides metrics and logs while AWS X-Ray enables distributed tracing across the request path. AWS IAM enforces least-privilege access.
 ## Deploy with confidence
 

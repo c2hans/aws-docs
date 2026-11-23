@@ -15,7 +15,7 @@ For your jobs to send log data to CloudWatch Logs, the following permissions mus
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

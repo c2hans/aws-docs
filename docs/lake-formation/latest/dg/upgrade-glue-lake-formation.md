@@ -157,7 +157,7 @@ Create the following policy in IAM and attach it to every user who needs access 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -308,7 +308,7 @@ If you attach this policy to a user before revoking `Super` from `IAMAllowedPrin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -14,7 +14,7 @@ The following code examples show how to generate a transcription of a source aud
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/transcribe-streaming#code-examples).
 
-```
+```cpp
 int main() {
     Aws::SDKOptions options;
 
@@ -146,7 +146,7 @@ int main() {
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/transcribe-streaming#code-examples).
 
-```
+```java
 /**
  * To run this AWS code example, ensure that you have set up your development
  * environment, including your AWS credentials.
@@ -331,7 +331,7 @@ public class TranscribeStreamingDemoFile {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/transcribe-streaming#code-examples).
 Use Amazon Transcribe streaming to transcribe the spoken language in an audio file.
 
-```
+```swift
 /// An example that demonstrates how to watch an transcribe event stream to
 /// transcribe audio from a file to the console.
 

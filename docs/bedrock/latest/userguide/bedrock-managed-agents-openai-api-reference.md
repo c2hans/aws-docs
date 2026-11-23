@@ -27,12 +27,12 @@ Use the IDs returned by the service. Treat session IDs, environment IDs, turn ID
 ### Request
 <a name="bedrock-managed-agents-openai-api-reference-request"></a>
 
-```
+```http
 POST /openai/v1/agents/sessions
 Content-Type: application/json
 ```
 
-```
+```json
 {
   "agent": {
     "model": "openai.gpt-5.6-luna",
@@ -66,7 +66,7 @@ Unknown or unsupported configuration fields can result in a validation error. Us
 
 For a self-hosted environment:
 
-```
+```json
 {
   "type": "self_hosted",
   "workspace_directory": "/path/to/workspace",
@@ -76,7 +76,7 @@ For a self-hosted environment:
 
 For an AgentCore Runtime environment:
 
-```
+```json
 {
   "type": "aws_bedrock_agentcore",
   "runtime_arn": "arn:aws:bedrock-agentcore:us-east-1:123456789012:runtime/example-runtime",
@@ -114,7 +114,7 @@ A newly created self-hosted session can be `idle` before an exec server is attac
 
 List sessions:
 
-```
+```bash
 python3 bma_client.py GET '/openai/v1/agents/sessions?limit=20&order=desc'
 ```
 
@@ -122,7 +122,7 @@ The list operation accepts `limit`, `order`, `after`, and `agent_id`. `order` is
 
 Retrieve one session:
 
-```
+```bash
 python3 bma_client.py GET "/openai/v1/agents/sessions/${SESSION_ID}"
 ```
 
@@ -133,7 +133,7 @@ Messages and cancellation requests are submitted through the same endpoint. The 
 
 Message event:
 
-```
+```json
 {
   "events": [{
     "type": "agent.session.input.message",
@@ -147,7 +147,7 @@ Message event:
 
 Cancel event:
 
-```
+```json
 {"events":[{"type":"agent.session.input.cancel"}]}
 ```
 
@@ -165,7 +165,7 @@ See [stream progress](bedrock-managed-agents-openai-sessions.md#bedrock-managed-
 ## List items
 <a name="bedrock-managed-agents-openai-api-reference-list-items"></a>
 
-```
+```bash
 python3 bma_client.py GET "/openai/v1/agents/sessions/${SESSION_ID}/items?limit=100&order=asc"
 ```
 
@@ -180,7 +180,7 @@ The list response includes `data`, `has_more`, `first_id`, and `last_id`. A mess
 ## Delete a session
 <a name="bedrock-managed-agents-openai-api-reference-delete-a-session"></a>
 
-```
+```bash
 python3 bma_client.py DELETE "/openai/v1/agents/sessions/${SESSION_ID}"
 ```
 

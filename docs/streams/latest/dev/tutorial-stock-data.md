@@ -31,7 +31,7 @@ To complete the steps in this guide, you must have the following:
 + [Git Client.](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) Install the Git client if you haven't already.
 + [Apache Maven Compiler Plugin](https://maven.apache.org/plugins/maven-compiler-plugin/). Maven must be in your working path. To test your Apache Maven installation, enter the following:
 
-  ```
+  ```bash
   $ mvn -version
   ```
 

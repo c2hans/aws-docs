@@ -42,7 +42,7 @@ Setting the IAM permission for `Publish` sets permission for both `Publish` and 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{
@@ -81,7 +81,7 @@ An AWS account can have tens of thousands of Amazon SNS topics (see [Amazon SNS 
 
 For example, you may have hundreds of topics associated with your production environment. Rather than having to manually search for these topics, you can query for all topics with a given tag:
 
-```
+```java
 import com.amazonaws.services.resourcegroups.AWSResourceGroups;
 import com.amazonaws.services.resourcegroups.AWSResourceGroupsClientBuilder;
 import com.amazonaws.services.resourcegroups.model.QueryType;

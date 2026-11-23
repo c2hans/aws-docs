@@ -41,7 +41,7 @@ This message indicates that the workflow definition file contains a trigger that
 If you want to start a workflow on your feature branch, you can do the following:
 + In your feature branch, in the workflow definition file, remove the `Branches` property from the `Triggers` section so that it looks like this:
 
-  ```
+  ```yaml
   Triggers:
     - Type: PUSH
   ```
@@ -86,7 +86,7 @@ After navigating to your workflow's details page, you see the following error in
 + Make sure that the YAML properties in the workflow definition file are nested at the right level. To see how properties should be nested in the workflow definition file, refer to the [Workflow YAML definition](workflow-reference.md), or consult your action's documentation, which is linked to from [Adding an action to a workflow](workflows-add-action.md).
 + Make sure that asterisks (`*`) and other special characters are escaped properly. To escape them, add single or double quotes. For example:
 
-  ```
+  ```yaml
   Outputs:
     Artifacts:
       - Name: myartifact
@@ -236,7 +236,7 @@ Where:
 
 1. In the **Deploy CloudFormation stack** action, add a `capabilities` property, like this:
 
-   ```
+   ```yaml
    DeployCloudFormationStack:
      Configuration:
        capabilities: {{capability-name}}
@@ -313,7 +313,7 @@ Where:
 **Note**
 The following code sample is from an **AWS CDK bootstrap** action; a **AWS CDK deploy** action will look similar.
 
-   ```
+   ```yaml
    Name: CDK_Bootstrap_Action
    SchemaVersion: 1.0
    Actions:
@@ -347,7 +347,7 @@ The following code sample is from an **AWS CDK bootstrap** action; a **AWS CDK d
 **Note**
 The following sample code is from a TypeScript project. If you're using a JavaScript project, the code will look similar though not identical.
 
-   ```
+   ```json
    {
      "app": {{"npm set registry=https://your-registry/folder/CDK-package/ --userconfig .npmrc && npm set //your-registry/folder/CDK-package/:always-auth=true --userconfig .npmrc && npm set //your-registry/folder/CDK-package/:_authToken=\"${NPMUSER}\":\"${NPMTOKEN}\" && npm install  && npx ts-node --prefer-ts-exts bin/hello-cdk.ts|js",}}
      "watch": {

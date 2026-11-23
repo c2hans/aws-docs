@@ -74,7 +74,7 @@ wafv2
 
 To specify multiple actions in a single statement, separate them with commas.
 
-```
+```json
 "Action": [
       "wafv2:{{action1}}",
       "wafv2:{{action2}}"
@@ -83,7 +83,7 @@ To specify multiple actions in a single statement, separate them with commas.
 
 You can specify multiple actions using wildcards (\*). For example, to specify all actions in AWS WAF that begin with `List`, include the following action:
 
-```
+```json
 "Action": "wafv2:List*"
 ```
 
@@ -110,7 +110,7 @@ For Amazon CloudFront distributions, instead of this action, use the CloudFront 
 **Amazon API Gateway REST API**
 Requires permission to call API Gateway `SetWebACL` on the REST API resource type and to call AWS WAF `AssociateWebACL` on a protection pack (web ACL).
 
-```
+```json
 {
     "Sid": "AssociateWebACL1",
     "Effect": "Allow",
@@ -138,7 +138,7 @@ Requires permission to call API Gateway `SetWebACL` on the REST API resource typ
 
 Requires permission to call `elasticloadbalancing:SetWebACL` action on the Application Load Balancer resource type and to call AWS WAF `AssociateWebACL` on a protection pack (web ACL).
 
-```
+```json
 {
                   "Sid": "AssociateWebACL1",
                   "Effect": "Allow",
@@ -165,7 +165,7 @@ Requires permission to call `elasticloadbalancing:SetWebACL` action on the Appli
 
  Requires permission to call `elasticloadbalancing:CreateWebACLAssociation` action on the Application Load Balancer resource type and to call AWS WAF `AssociateWebACL` on a protection pack (web ACL).
 
-```
+```json
 {
    "Sid": "AssociateWebACL1",
    "Effect": "Allow",
@@ -193,7 +193,7 @@ Requires permission to call `elasticloadbalancing:SetWebACL` action on the Appli
 
 Requires permission to call AWS AppSync `SetWebACL` on the GraphQL API resource type and to call AWS WAF `AssociateWebACL` on a protection pack (web ACL).
 
-```
+```json
 {
     "Sid": "AssociateWebACL1",
     "Effect": "Allow",
@@ -246,7 +246,7 @@ Requires permission to call `appsync:AssociateWebACL` action on the GraphQL API 
 **Amazon Cognito user pool**
 Requires permission to call the Amazon Cognito `AssociateWebACL` action on the user pool resource type and to call AWS WAF `AssociateWebACL` on a protection pack (web ACL).
 
-```
+```json
 {
     "Sid": "AssociateWebACL1",
     "Effect": "Allow",
@@ -272,7 +272,7 @@ Requires permission to call the Amazon Cognito `AssociateWebACL` action on the u
 **AWS App Runner service**
 Requires permission to call the App Runner `AssociateWebACL` action on the App Runner service resource type and to call AWS WAF `AssociateWebACL` on a web ACL.
 
-```
+```json
 {
     "Sid": "AssociateWebACL1",
     "Effect": "Allow",
@@ -298,7 +298,7 @@ Requires permission to call the App Runner `AssociateWebACL` action on the App R
 **Amazon Bedrock AgentCore Gateway**
 Requires permission to call the `bedrock-agentcore:GatewayAssociateWebACL` action on the Bedrock AgentCore Gateway resource type and to call AWS WAF `AssociateWebACL` for a web ACL.
 
-```
+```JSON
 {
   "Sid": "AssociateWebACL1",
   "Effect": "Allow",
@@ -324,7 +324,7 @@ Requires permission to call the `bedrock-agentcore:GatewayAssociateWebACL` actio
 **AWS Verified Access instance**
 Requires permission to call the `ec2:AssociateVerifiedAccessInstanceWebAcl` action on the Verified Access instance resource type and to call AWS WAF `AssociateWebACL` on a web ACL.
 
-```
+```json
 {
     "Sid": "AssociateWebACL1",
     "Effect": "Allow",
@@ -357,7 +357,7 @@ For Amazon CloudFront distributions, instead of this action, use the CloudFront 
 **Amazon API Gateway REST API**
 Requires permission to call API Gateway `SetWebACL` on the REST API resource type. Does not require permission to call AWS WAF `DisassociateWebACL`.
 
-```
+```json
 {
     "Sid": "DisassociateWebACL",
     "Effect": "Allow",
@@ -375,7 +375,7 @@ Requires permission to call API Gateway `SetWebACL` on the REST API resource typ
 
 Requires permission to call the `elasticloadbalancing:SetWebACL` action on the Application Load Balancer resource type. Does not require permission to call AWS WAF `DisassociateWebACL`.
 
-```
+```json
 {
     "Sid": "DisassociateWebACL",
     "Effect": "Allow",
@@ -392,7 +392,7 @@ Requires permission to call the `elasticloadbalancing:SetWebACL` action on the A
 
 Requires permission to call the `elasticloadbalancing:DeleteWebACLAssociation` action on the Application Load Balancer resource type. Also requires permission to call AWS WAF `DisassociateWebACL`.
 
-```
+```json
 {
       "Sid": "DisassociateWebACL",
       "Effect": "Allow",
@@ -417,7 +417,7 @@ Requires permission to call the `elasticloadbalancing:DeleteWebACLAssociation` a
 
 Requires permission to call AWS AppSync `SetWebACL` on the GraphQL API resource type. Does not require permission to call AWS WAF `DisassociateWebACL`.
 
-```
+```json
 {
     "Sid": "DisassociateWebACL",
     "Effect": "Allow",
@@ -434,7 +434,7 @@ Requires permission to call AWS AppSync `SetWebACL` on the GraphQL API resource 
 
 Requires permission to call the `appsync:DisassociateWebACL` action on the GraphQL API resource type. Also requires permission to call AWS WAF `DisassociateWebACL`.
 
-```
+```json
 {
     "Sid": "DisassociateWebACL1",
     "Effect": "Allow",
@@ -456,7 +456,7 @@ Requires permission to call the `appsync:DisassociateWebACL` action on the Graph
 **Amazon Cognito user pool**
 Requires permission to call the Amazon Cognito `DisassociateWebACL` action on the user pool resource type and to call AWS WAF `DisassociateWebACL`.
 
-```
+```json
 {
     "Sid": "DisassociateWebACL1",
     "Effect": "Allow",
@@ -478,7 +478,7 @@ Requires permission to call the Amazon Cognito `DisassociateWebACL` action on th
 **AWS App Runner service**
 Requires permission to call the App Runner `DisassociateWebACL` action on the App Runner service resource type and to call AWS WAF `DisassociateWebACL`.
 
-```
+```json
 {
     "Sid": "DisassociateWebACL1",
     "Effect": "Allow",
@@ -500,7 +500,7 @@ Requires permission to call the App Runner `DisassociateWebACL` action on the Ap
 **Amazon Bedrock AgentCore Gateway**
 Requires permission to call the `bedrock-agentcore:GatewayDisassociateWebACL` action on the Bedrock AgentCore Gateway resource type and to call AWS WAF `DisassociateWebACL`.
 
-```
+```JSON
 {
   "Sid": "DisassociateWebACL",
   "Effect": "Allow",
@@ -524,7 +524,7 @@ Requires permission to call the `bedrock-agentcore:GatewayDisassociateWebACL` ac
 **AWS Verified Access instance**
 Requires permission to call the `ec2:DisassociateVerifiedAccessInstanceWebAcl` action on the Verified Access instance resource type and to call AWS WAF `DisassociateWebACL`.
 
-```
+```json
 {
     "Sid": "DisassociateWebACL1",
     "Effect": "Allow",
@@ -556,7 +556,7 @@ For Amazon CloudFront distributions, instead of this action, use the CloudFront 
 **Amazon API Gateway REST API**
 Require permission to call AWS WAF `GetWebACLForResource` and `GetWebACL` for a protection pack (web ACL).
 
-```
+```json
 {
     "Sid": "GetWebACLForResource",
     "Effect": "Allow",
@@ -575,7 +575,7 @@ Require permission to call AWS WAF `GetWebACLForResource` and `GetWebACL` for a 
 
 Require permission to call AWS WAF `GetWebACLForResource` and `GetWebACL` for a protection pack (web ACL).
 
-```
+```json
 {
     "Sid": "GetWebACLForResource",
     "Effect": "Allow",
@@ -593,7 +593,7 @@ Require permission to call AWS WAF `GetWebACLForResource` and `GetWebACL` for a 
 
 Require permission to call AWS WAF `GetWebACLForResource` and `GetWebACL` for a protection pack (web ACL). Also require permission to call `elasticloadbalancing:GetLoadBalancerWebACL`.
 
-```
+```json
 {
     "Sid": "GetWebACLForResource1",
     "Effect": "Allow",
@@ -622,7 +622,7 @@ Require permission to call AWS WAF `GetWebACLForResource` and `GetWebACL` for a 
 
 Require permission to call AWS WAF `GetWebACLForResource` and `GetWebACL` for a protection pack (web ACL).
 
-```
+```json
 {
     "Sid": "GetWebACLForResource",
     "Effect": "Allow",
@@ -640,7 +640,7 @@ Require permission to call AWS WAF `GetWebACLForResource` and `GetWebACL` for a 
 
 Require permission to call AWS WAF `GetWebACLForResource` and `GetWebACL` for a protection pack (web ACL). Also require permission to call `appsync:GetWebACLForResource`.
 
-```
+```json
 {
     "Sid": "GetWebACLForResource1",
     "Effect": "Allow",
@@ -667,7 +667,7 @@ Require permission to call AWS WAF `GetWebACLForResource` and `GetWebACL` for a 
 **Amazon Cognito user pool**
 Requires permission to call the Amazon Cognito `GetWebACLForResource` action on the user pool resource type and to call AWS WAF `GetWebACLForResource` and `GetWebACL`.
 
-```
+```json
 {
     "Sid": "GetWebACLForResource1",
     "Effect": "Allow",
@@ -694,7 +694,7 @@ Requires permission to call the Amazon Cognito `GetWebACLForResource` action on 
 **AWS App Runner service**
 Requires permission to call the App Runner `DescribeWebAclForService` action on the App Runner service resource type and to call AWS WAF `GetWebACLForResource` and `GetWebACL`.
 
-```
+```json
 {
     "Sid": "GetWebACLForResource1",
     "Effect": "Allow",
@@ -721,7 +721,7 @@ Requires permission to call the App Runner `DescribeWebAclForService` action on 
 **Amazon Bedrock AgentCore Gateway**
 Requires permission to call the `bedrock-agentcore:GatewayGetWebACLForResource` action on the Bedrock AgentCore Gateway resource type and to call AWS WAF `GetWebACLForResource` and `GetWebACL` for a web ACL.
 
-```
+```JSON
 {
   "Sid": "GetWebACLForResource1",
   "Effect": "Allow",
@@ -748,7 +748,7 @@ Requires permission to call the `bedrock-agentcore:GatewayGetWebACLForResource` 
 **AWS Verified Access instance**
 Requires permission to call the `ec2:GetVerifiedAccessInstanceWebAcl` action on the Verified Access instance resource type and to call AWS WAF `GetWebACLForResource` and `GetWebACL`.
 
-```
+```json
 {
     "Sid": "GetWebACLForResource1",
     "Effect": "Allow",
@@ -782,7 +782,7 @@ For Amazon CloudFront distributions, instead of this action, use the CloudFront 
 **Amazon API Gateway REST API**
 Require permission to call AWS WAF `ListResourcesForWebACL` for a web ACL.
 
-```
+```json
 {
     "Sid": "ListResourcesForWebACL",
     "Effect": "Allow",
@@ -800,7 +800,7 @@ Require permission to call AWS WAF `ListResourcesForWebACL` for a web ACL.
 
 Require permission to call AWS WAF `ListResourcesForWebACL` for a protection pack (web ACL).
 
-```
+```json
 {
     "Sid": "ListWebACLForResource",
     "Effect": "Allow",
@@ -817,7 +817,7 @@ Require permission to call AWS WAF `ListResourcesForWebACL` for a protection pac
 
 Require permission to call AWS WAF `ListResourcesForWebACL` for a protection pack (web ACL). Also require permission to call `elasticloadbalancing:DescribeWebACLAssociation`.
 
-```
+```json
 {
     "Sid": "ListResourcesForWebACL",
     "Effect": "Allow",
@@ -843,7 +843,7 @@ Require permission to call AWS WAF `ListResourcesForWebACL` for a protection pac
 
 Require permission to call AWS WAF `ListResourcesForWebACL` for a protection pack (web ACL).
 
-```
+```json
 {
     "Sid": "ListResourcesForWebACL",
     "Effect": "Allow",
@@ -860,7 +860,7 @@ Require permission to call AWS WAF `ListResourcesForWebACL` for a protection pac
 
 Require permission to call AWS WAF `ListResourcesForWebACL` for a protection pack (web ACL). Also require permission to call `appsync:ListResourcesForWebACL`.
 
-```
+```json
 {
     "Sid": "ListResourcesForWebACL",
     "Effect": "Allow",
@@ -884,7 +884,7 @@ Require permission to call AWS WAF `ListResourcesForWebACL` for a protection pac
 **Amazon Cognito user pool**
 Requires permission to call the Amazon Cognito `ListResourcesForWebACL` action on the user pool resource type and to call AWS WAF `ListResourcesForWebACL`.
 
-```
+```json
 {
     "Sid": "ListResourcesForWebACL1",
     "Effect": "Allow",
@@ -910,7 +910,7 @@ Requires permission to call the Amazon Cognito `ListResourcesForWebACL` action o
 **AWS App Runner service**
 Requires permission to call the App Runner `ListAssociatedServicesForWebAcl` action on the App Runner service resource type and to call AWS WAF `ListResourcesForWebACL`.
 
-```
+```json
 {
     "Sid": "ListResourcesForWebACL1",
     "Effect": "Allow",
@@ -936,7 +936,7 @@ Requires permission to call the App Runner `ListAssociatedServicesForWebAcl` act
 **Amazon Bedrock AgentCore Gateway**
 Requires permission to call the `bedrock-agentcore:GatewayListResourcesForWebACL` action and to call AWS WAF `ListResourcesForWebACL` for a web ACL.
 
-```
+```JSON
 {
   "Sid": "ListResourcesForWebACL",
   "Effect": "Allow",
@@ -960,7 +960,7 @@ Requires permission to call the `bedrock-agentcore:GatewayListResourcesForWebACL
 **AWS Verified Access instance**
 Requires permission to call the `ec2:DescribeVerifiedAccessInstanceWebAclAssociations` action on the Verified Access instance resource type and to call AWS WAF `ListResourcesForWebACL`.
 
-```
+```json
 {
     "Sid": "ListResourcesForWebACL1",
     "Effect": "Allow",

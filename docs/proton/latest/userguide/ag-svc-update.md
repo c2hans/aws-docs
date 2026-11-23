@@ -55,7 +55,7 @@ You can use the console or the AWS CLI to edit a service description.
 
 Command:
 
-```
+```sh
 $ aws proton update-service \
     --name "{{MySimpleService}}" \
     --description "{{Edit by updating description}}"
@@ -63,7 +63,7 @@ $ aws proton update-service \
 
 Response:
 
-```
+```json
 {
     "service": {
         "arn": "arn:aws:proton:region-id:123456789012:service/MySimpleService",
@@ -133,7 +133,7 @@ The following listing shows the example `spec` before the edit and a list of the
 
 Spec:
 
-```
+```yaml
 proton: ServiceSpec
 
 pipeline:
@@ -156,14 +156,14 @@ The following example CLI `list-service-instances` command and response shows th
 
 Command:
 
-```
+```sh
 $ aws proton list-service-instances \
     --service-name "{{MySimpleService}}"
 ```
 
 Response:
 
-```
+```json
 {
     "serviceInstances": [
         {
@@ -201,7 +201,7 @@ The following listing shows the example edited `spec` used to delete and add an 
 
 Spec:
 
-```
+```yaml
 proton: ServiceSpec
 
 pipeline:
@@ -225,7 +225,7 @@ The following listing shows how you can use `"${Proton::CURRENT_VAL}"` to ensure
 
 Spec:
 
-```
+```yaml
 proton: ServiceSpec
 
 pipeline:
@@ -247,7 +247,7 @@ The next listing shows the CLI command and response to edit the service.
 
 Command:
 
-```
+```sh
 $ aws proton update-service
     --name "{{MySimpleService}}" \
     --description "{{Edit by adding and deleting a service instance}}" \
@@ -256,7 +256,7 @@ $ aws proton update-service
 
 Response:
 
-```
+```json
 {
     "service": {
         "arn": "arn:aws:proton:region-id:123456789012:service/MySimpleService",
@@ -277,14 +277,14 @@ The following `list-service-instances` command and response confirms that the ex
 
 Command:
 
-```
+```sh
 $ aws proton list-service-instances \
     --service-name "{{MySimpleService}}"
 ```
 
 Response:
 
-```
+```json
 {
     "serviceInstances": [
         {

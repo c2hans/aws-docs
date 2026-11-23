@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/execute-sample-application
 
 1. Copy the following JSON to a file named `test_event.json`.
 
-   ```
+   ```json
    {
       "id": 15311,
       "date": "2019-03-25T23:41:11-08:00",
@@ -38,7 +38,7 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/execute-sample-application
 
 1. To send an HTTPS request to your API endpoint, pass the sample event payload as input by executing a `curl` command, for example:
 
-   ```
+   ```bash
    curl -d "$(cat test_event.json)" https://abcdefghij.execute-api.us-east-2.amazonaws.com/Prod/checkout
    ```
 

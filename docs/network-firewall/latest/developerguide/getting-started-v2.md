@@ -127,6 +127,8 @@ Creating a firewall and its firewall endpoints starts incurring AWS Network Fire
 
 1. On the **Describe firewall** page, for **Name**, enter the name that you want to use to identify this firewall, and optionally enter a description. You can't change the name after you create the firewall. Choose **Next**.
 
+1. On the **Firewall capability** page, for **Firewall capability**, choose **routed firewall**.
+
 1. On the **Attachment type** page, under **Attachment Details**, select **VPC**, select your VPC, and then select the **Availability Zone**, **Subnet**, and **IP address type** for the firewall subnet that you identified in [Before you begin](getting-started.md#getting-started-prerequisites). Choose **Next**.
 
 1. On the **Configure advanced settings** page, the settings are optional—they include change protection, traffic analysis mode, a customer managed key, logging configuration (alert, flow, and TLS logs), and the firewall monitoring dashboard. Because this tutorial creates the policy in monitor mode, turn on logging now so that you can review what the firewall would do before you route traffic through it. Under the logging configuration, turn on **Alert** logging and select a log destination, such as CloudWatch Logs or Amazon S3. Optionally, also turn on **Flow** logging. Then choose **Next**.

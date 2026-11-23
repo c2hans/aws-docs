@@ -48,6 +48,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Diagram showing blue/green deployment with AWS Elastic Beanstalk and Amazon Route 53](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/blue-green-deployment.png)
 
+*Figure 8: Blue/green deployment with AWS Elastic Beanstalk and Amazon Route 53*
+
  **Drift detection**
 
  *Drift* is defined as any change that causes an infrastructure resource to have a different state or configuration to what is expected. Any type of unmanaged configuration change goes against the notion of immutable infrastructure, and should be detected and remediated in order to have a successful implementation of immutable infrastructure.

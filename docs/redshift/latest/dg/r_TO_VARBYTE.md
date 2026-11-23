@@ -34,7 +34,7 @@ The format of the input string. Case insensitive valid values are `hex`, `binary
 
 To convert the hex `6162` to a binary value, use the following example. The result is automatically shown as the hexadecimal representation of the binary value.
 
-```
+```sql
 SELECT TO_VARBYTE('6162', 'hex');
 
 +------------+
@@ -46,7 +46,7 @@ SELECT TO_VARBYTE('6162', 'hex');
 
 To return the binary representation of `4d`, use the following example. The binary representation of '4d' is `01001101`.
 
-```
+```sql
 SELECT TO_VARBYTE('01001101', 'binary');
 
 +------------+
@@ -58,7 +58,7 @@ SELECT TO_VARBYTE('01001101', 'binary');
 
 To convert the string `'a'` in UTF-8 to a binary value, use the following example. The result is automatically shown as the hexadecimal representation of the binary value.
 
-```
+```sql
 SELECT TO_VARBYTE('a', 'utf8');
 
 +------------+
@@ -70,7 +70,7 @@ SELECT TO_VARBYTE('a', 'utf8');
 
 To convert the string `'4'` in hexadecimal to a binary value, use the following example. If the hexadecimal string length is an odd number, then a `0` is prepended to form a valid hexadecimal number.
 
-```
+```sql
 SELECT TO_VARBYTE('4', 'hex');
 
 +------------+

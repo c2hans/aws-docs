@@ -112,7 +112,7 @@ For more information, see [Scaling activities for Application Auto Scaling](http
 **Tools for PowerShell V4**
 **Example 1: Provides descriptive information about the scaling activities in the specified namespace from the previous six weeks.**
 
-```
+```powershell
 Get-AASScalingActivity -ServiceNamespace AppStream
 ```
 **Output:**
@@ -135,7 +135,7 @@ StatusMessage     : Successfully set desired capacity to 2. Change successfully 
 **Tools for PowerShell V5**
 **Example 1: Provides descriptive information about the scaling activities in the specified namespace from the previous six weeks.**
 
-```
+```powershell
 Get-AASScalingActivity -ServiceNamespace AppStream
 ```
 **Output:**

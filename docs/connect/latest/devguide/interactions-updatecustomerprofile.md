@@ -11,7 +11,7 @@ See [UpdateProfile](https://docs.aws.amazon.com/customerprofiles/latest/APIRefer
 ## Parameter object
 <a name="updatecustomerprofile-parameter"></a>
 
-```
+```json
 {
 "ProfileRequestData": {
     All of these fields are optional.

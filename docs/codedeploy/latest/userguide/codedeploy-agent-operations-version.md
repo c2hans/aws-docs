@@ -24,13 +24,13 @@ Second, you can view the version in a `.version` file on the instance. On Amazon
 
 Sign in to the instance and run the following command:
 
-```
+```sh
 sudo /opt/codedeploy-agent/bin/codedeploy-agent --version
 ```
 
 For versions earlier than 2.0.0, you can also use:
 
-```
+```sh
 sudo yum info codedeploy-agent
 ```
 
@@ -39,13 +39,13 @@ sudo yum info codedeploy-agent
 
 Sign in to the instance and run the following command:
 
-```
+```sh
 sudo /opt/codedeploy-agent/bin/codedeploy-agent --version
 ```
 
 For versions earlier than 2.0.0, you can also use:
 
-```
+```sh
 sudo dpkg -s codedeploy-agent
 ```
 
@@ -63,13 +63,13 @@ Sign in to the instance and run the following command:
 
 Sign in to the instance and run the following command:
 
-```
+```sh
 sudo /opt/codedeploy-agent/bin/codedeploy-agent --version
 ```
 
 You can also see the version of the installed package:
 
-```
+```sh
 pkgutil --pkg-info com.amazon.aws.codedeploy-agent
 ```
 
@@ -78,7 +78,7 @@ pkgutil --pkg-info com.amazon.aws.codedeploy-agent
 
 To find out which version is the latest one available in the AWS Region you deploy to, query the CodeDeploy resource kit bucket for that Region. Each regional bucket holds a `latestv2/LATEST_VERSION` file that names the agent packages currently released in that Region. The file is publicly readable, so you don't need credentials to retrieve it.
 
-```
+```sh
 curl https://{{bucket-name}}.s3.{{region-identifier}}.amazonaws.com/latestv2/LATEST_VERSION
 ```
 
@@ -86,7 +86,7 @@ Replace {{bucket-name}} and {{region-identifier}} with the resource kit bucket a
 
 The command returns output similar to the following:
 
-```
+```json
 {
     "rpm_x86_64": "releases/codedeploy-agent-2.1.0-9745926189.x86_64.rpm",
     "rpm_aarch64": "releases/codedeploy-agent-2.1.0-9745926189.aarch64.rpm",

@@ -46,7 +46,7 @@ For more information, see [Creating mount targets](https://docs.aws.amazon.com/e
 **Tools for PowerShell V4**
 **Example 1: Creates a new mount target for a file system. The specified subnet will be used determine the Virtual Private Cloud (VPC) that the mount target will be created in and the IP address that will be auto-assigned (from the address range of the subnet). The assigned IP address can be used to then mount this file system on an Amazon EC2 instance. As no security groups were specified the network interface created for the target is associated with the default security group for the subnet's VPC.**
 
-```
+```powershell
 New-EFSMountTarget -FileSystemId fs-1a2b3c4d -SubnetId subnet-1a2b3c4d
 ```
 **Output:**
@@ -62,12 +62,12 @@ SubnetId           : subnet-1a2b3c4d
 ```
 **Example 2: Creates a new mount target for the specified file system with auto-assigned IP address. The network interface created for the mount target is associated with the specified security groups (up to 5, in the format "sg-xxxxxxxx", may be specified).**
 
-```
+```powershell
 New-EFSMountTarget -FileSystemId fs-1a2b3c4d -SubnetId subnet-1a2b3c4d -SecurityGroup sg-group1,sg-group2,sg-group3
 ```
 **Example 3: Creates a new mount target for the specified file system with the specified IP address.**
 
-```
+```powershell
 New-EFSMountTarget -FileSystemId fs-1a2b3c4d -SubnetId subnet-1a2b3c4d -IpAddress 10.0.0.131
 ```
 +  For API details, see [CreateMountTarget](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -75,7 +75,7 @@ New-EFSMountTarget -FileSystemId fs-1a2b3c4d -SubnetId subnet-1a2b3c4d -IpAddres
 **Tools for PowerShell V5**
 **Example 1: Creates a new mount target for a file system. The specified subnet will be used determine the Virtual Private Cloud (VPC) that the mount target will be created in and the IP address that will be auto-assigned (from the address range of the subnet). The assigned IP address can be used to then mount this file system on an Amazon EC2 instance. As no security groups were specified the network interface created for the target is associated with the default security group for the subnet's VPC.**
 
-```
+```powershell
 New-EFSMountTarget -FileSystemId fs-1a2b3c4d -SubnetId subnet-1a2b3c4d
 ```
 **Output:**
@@ -91,12 +91,12 @@ SubnetId           : subnet-1a2b3c4d
 ```
 **Example 2: Creates a new mount target for the specified file system with auto-assigned IP address. The network interface created for the mount target is associated with the specified security groups (up to 5, in the format "sg-xxxxxxxx", may be specified).**
 
-```
+```powershell
 New-EFSMountTarget -FileSystemId fs-1a2b3c4d -SubnetId subnet-1a2b3c4d -SecurityGroup sg-group1,sg-group2,sg-group3
 ```
 **Example 3: Creates a new mount target for the specified file system with the specified IP address.**
 
-```
+```powershell
 New-EFSMountTarget -FileSystemId fs-1a2b3c4d -SubnetId subnet-1a2b3c4d -IpAddress 10.0.0.131
 ```
 +  For API details, see [CreateMountTarget](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -57,7 +57,7 @@ If you choose to use an existing IAM role, ensure it includes the following perm
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [

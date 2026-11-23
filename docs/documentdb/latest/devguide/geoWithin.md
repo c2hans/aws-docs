@@ -108,7 +108,7 @@ To view a code example for using the `$geoWithin` command, choose the tab for th
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function findAirportsWithinState(stateName) {
@@ -135,7 +135,7 @@ findAirportsWithinState('New York');
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def find_airports_within_state(state_name):

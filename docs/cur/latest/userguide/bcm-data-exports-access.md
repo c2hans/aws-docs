@@ -50,7 +50,7 @@ Allow IAM user to have full access to CUR 2.0 exports in Data Exports.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -99,7 +99,7 @@ Allow IAM user to have full access to CUR 2.0 and Billing Group Billing View.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -131,7 +131,7 @@ If you want an IAM role to have access to a specific billing group, you can add 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

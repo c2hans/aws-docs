@@ -52,7 +52,7 @@ To create a dataset group, use the `create-dataset-group` operation. To create a
 
 The following code creates a Domain dataset group for the `VIDEO_ON_DEMAND` domain.
 
-```
+```cmd
 aws personalize create-dataset-group \
 --name {{dataset-group-name}} \
 --domain VIDEO_ON_DEMAND
@@ -60,7 +60,7 @@ aws personalize create-dataset-group \
 
 If successful, the dataset group Amazon Resource Name (ARN) display as follows.
 
-```
+```json
 {
   "datasetGroupArn": "arn:aws:personalize:us-west-2:acct-id:dataset-group/DatasetGroupName"
 }
@@ -68,14 +68,14 @@ If successful, the dataset group Amazon Resource Name (ARN) display as follows.
 
 Record this value for future use. To display the dataset group that you created, use the `describe-dataset-group` command and specify the returned dataset group ARN.
 
-```
+```cmd
 aws personalize describe-dataset-group \
 --dataset-group-arn {{dataset group arn}}
 ```
 
 The dataset group and its properties display as follows.
 
-```
+```json
 {
     "datasetGroup": {
         "name": "DatasetGroupName",
@@ -99,7 +99,7 @@ Use the following code to create a Domain dataset group. Give the Domain dataset
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')
@@ -120,7 +120,7 @@ print('Status: ' + description['status'])
 ------
 #### [ SDK for Java 2.x ]
 
-```
+```java
 public static String createDomainDatasetGroup(PersonalizeClient personalizeClient,
                                               String datasetGroupName,
                                               String domain) {
@@ -141,7 +141,7 @@ public static String createDomainDatasetGroup(PersonalizeClient personalizeClien
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 // Get service clients module and commands using ES6 syntax.
 import { CreateDatasetGroupCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";

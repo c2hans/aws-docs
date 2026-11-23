@@ -56,7 +56,7 @@ The security group rules created in the AWS [Modify Security Groups for Cluster 
 
 You can verify the security group rules on your instances using the AWS CLI:
 
-```
+```console
 $ aws ec2 describe-instance-attribute --instance-id <instance_id> --attribute groupSet
 ```
 
@@ -69,7 +69,7 @@ These IPs are only used in cluster configurations. The secondary IPs provide the
 
 You can verify the secondary IP configuration on your instances using the AWS CLI:
 
-```
+```console
 $ aws ec2 describe-instances --instance-id <instance_id> \
     --query 'Reservations[*].Instances[*].NetworkInterfaces[*].PrivateIpAddresses[*].PrivateIpAddress' \
     --output text
@@ -105,7 +105,7 @@ The following AWS Console or AWS CLI commands can be used to modify the attribut
 
 To modify using the AWS CLI (requires appropriate configuration permissions):
 
-```
+```console
 $ aws ec2 modify-instance-attribute --instance-id <instance_id> --no-source-dest-check
 ```
 
@@ -115,13 +115,13 @@ Repeat for all nodes in the cluster.
 
 To confirm the value of an attribute for a particular instance, use the following command. The value `false` means source/destination checking is disabled
 
-```
+```console
 $ aws ec2 describe-instance-attribute --instance-id <instance_id> --attribute sourceDestCheck
 ```
 
 The output
 
-```
+```json
 {
     "InstanceId": "i-xxxxinstidforhost1",
     "SourceDestCheck": {
@@ -155,7 +155,7 @@ The following AWS Console or CLI commands can be used to modify the attribute.
 
 To modify using the AWS CLI (requires appropriate configuration permissions):
 
-```
+```console
 $ aws ec2 modify-instance-attribute --instance-id <instance_id> --no-disable-api-stop
 ```
 
@@ -165,13 +165,13 @@ Repeat this command for all nodes in the cluster.
 
 To confirm the value of an attribute for a particular instance, use the following command. The value `false` means it is possible to stop the instance using an AWS CLI.
 
-```
+```console
 $ aws ec2 describe-instance-attribute --instance-id <instance_id> --attribute disableApiStop
 ```
 
 The output
 
-```
+```json
 {
     "InstanceId": "i-xxxxinstidforhost1",
     "DisableApiStop": {
@@ -205,7 +205,7 @@ The following AWS Console or CLI commands can be used to modify the attribute.
 
 To modify auto-recovery settings (requires appropriate configuration permissions):
 
-```
+```console
 $ aws ec2 modify-instance-maintenance-options --instance-id <instance_id> --auto-recovery disabled
 ```
 
@@ -215,13 +215,13 @@ Repeat this command for all nodes in the cluster.
 
 To confirm the value of an attribute for a particular instance, use the following command. The value `disabled` means autorecovery will not be attempted.
 
-```
+```console
 $ aws ec2 describe-instances --instance-ids <instance_id> --query 'Reservations[*].Instances[*].MaintenanceOptions.AutoRecovery'
 ```
 
 The output:
 
-```
+```json
 [
     [
         "disabled"
@@ -244,6 +244,6 @@ Use the same tag key and the local hostname returned using the command hostname 
 
 You can run the following command locally to validate the tag values and IAM permissions to describe the tags. Run this command on all instances in the cluster, for all instances in the cluster.
 
-```
+```console
 $ aws ec2 describe-tags --filters "Name=resource-id,Values=<instance_id>" "Name=key,Values=<cluster_tag>" --region=<region> --output=text | cut -f5
 ```

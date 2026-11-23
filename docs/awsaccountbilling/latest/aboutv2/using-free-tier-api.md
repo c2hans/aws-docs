@@ -20,7 +20,7 @@ aws freetier get-free-tier-usage --filter '{"Dimensions": {"Key": "SERVICE", "Va
 **Response**
 The following response returns two `Always Free` offers from AWS Glue.
 
-```
+```json
 {
     "freeTierUsages": [
         {

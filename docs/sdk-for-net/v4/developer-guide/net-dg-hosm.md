@@ -70,7 +70,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c23c25c17c15b1"></a>
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.IO;

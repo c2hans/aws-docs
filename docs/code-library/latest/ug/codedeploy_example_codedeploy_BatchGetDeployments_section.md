@@ -92,7 +92,7 @@ For more information, see [View CodeDeploy deployment details](https://docs.aws.
 **Tools for PowerShell V4**
 **Example 1: This example gets information about the specified deployments.**
 
-```
+```powershell
 Get-CDDeploymentBatch -DeploymentId d-QZMRGSTEX, d-RR0T5KTEX
 ```
 **Output:**
@@ -133,7 +133,7 @@ Status                        : Succeeded
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified deployments.**
 
-```
+```powershell
 Get-CDDeploymentBatch -DeploymentId d-QZMRGSTEX, d-RR0T5KTEX
 ```
 **Output:**

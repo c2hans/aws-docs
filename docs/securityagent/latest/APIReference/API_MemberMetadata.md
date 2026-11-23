@@ -12,6 +12,11 @@ Contains metadata about a member. This is a union type that contains member-type
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** group **   <a name="securityagent-Type-MemberMetadata-group"></a>
+The group metadata for the member.
+Type: [GroupMetadata](API_GroupMetadata.md) object
+Required: No
+
  ** user **   <a name="securityagent-Type-MemberMetadata-user"></a>
 The user metadata for the member.
 Type: [UserMetadata](API_UserMetadata.md) object

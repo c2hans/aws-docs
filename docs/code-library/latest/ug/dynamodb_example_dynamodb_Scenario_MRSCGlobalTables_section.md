@@ -19,7 +19,7 @@ The following code examples show how to create and manage DynamoDB global tables
 **AWS CLI with Bash script**
 Create a table with Multi-Region Strong Consistency.
 
-```
+```bash
 # Step 1: Create a new table in us-east-2 (primary region for MRSC)
 # Note: Table must be empty when enabling MRSC
 aws dynamodb create-table \
@@ -47,7 +47,7 @@ aws dynamodb update-table \
 ```
 Verify MRSC configuration and replica status.
 
-```
+```bash
 # Verify the global table configuration and MRSC setting
 aws dynamodb describe-table \
     --table-name MusicTable \
@@ -56,7 +56,7 @@ aws dynamodb describe-table \
 ```
 Test strong consistency with immediate reads across Regions.
 
-```
+```bash
 # Write an item to the primary region
 aws dynamodb put-item \
     --table-name MusicTable \
@@ -74,7 +74,7 @@ aws dynamodb get-item \
 ```
 Perform conditional writes with MRSC guarantees.
 
-```
+```bash
 # Perform a conditional update from a different region
 # This demonstrates that conditions work consistently across all regions
 aws dynamodb update-item \
@@ -88,7 +88,7 @@ aws dynamodb update-item \
 ```
 Clean up MRSC global table resources.
 
-```
+```bash
 # Remove replica tables (must be done before deleting the primary table)
 aws dynamodb update-table \
     --table-name MusicTable \
@@ -120,7 +120,7 @@ aws dynamodb delete-table \
 **SDK for Java 2.x**
 Create a regional table ready for MRSC conversion using AWS SDK for Java 2.x.
 
-```
+```java
     public static CreateTableResponse createRegionalTable(final DynamoDbClient dynamoDbClient, final String tableName) {
 
         if (dynamoDbClient == null) {
@@ -173,7 +173,7 @@ Create a regional table ready for MRSC conversion using AWS SDK for Java 2.x.
 ```
 Convert a regional table to MRSC with replicas and witness using AWS SDK for Java 2.x.
 
-```
+```java
     public static UpdateTableResponse convertToMRSCWithWitness(
         final DynamoDbClient dynamoDbClient,
         final String tableName,
@@ -235,7 +235,7 @@ Convert a regional table to MRSC with replicas and witness using AWS SDK for Jav
 ```
 Describe an MRSC global table configuration using AWS SDK for Java 2.x.
 
-```
+```java
     public static DescribeTableResponse describeMRSCTable(final DynamoDbClient dynamoDbClient, final String tableName) {
 
         if (dynamoDbClient == null) {
@@ -294,7 +294,7 @@ Describe an MRSC global table configuration using AWS SDK for Java 2.x.
 ```
 Add test items to verify MRSC strong consistency using AWS SDK for Java 2.x.
 
-```
+```java
     public static PutItemResponse putTestItem(
         final DynamoDbClient dynamoDbClient,
         final String tableName,
@@ -349,7 +349,7 @@ Add test items to verify MRSC strong consistency using AWS SDK for Java 2.x.
 ```
 Read items with consistent reads from MRSC replicas using AWS SDK for Java 2.x.
 
-```
+```java
     public static GetItemResponse getItemWithConsistentRead(
         final DynamoDbClient dynamoDbClient, final String tableName, final String artist, final String songTitle) {
 
@@ -400,7 +400,7 @@ Read items with consistent reads from MRSC replicas using AWS SDK for Java 2.x.
 ```
 Perform conditional updates with MRSC guarantees using AWS SDK for Java 2.x.
 
-```
+```java
     public static UpdateItemResponse performConditionalUpdate(
         final DynamoDbClient dynamoDbClient,
         final String tableName,
@@ -466,7 +466,7 @@ Perform conditional updates with MRSC guarantees using AWS SDK for Java 2.x.
 ```
 Wait for MRSC replicas and witnesses to become active using AWS SDK for Java 2.x.
 
-```
+```java
     public static void waitForMRSCReplicasActive(
         final DynamoDbClient dynamoDbClient, final String tableName, final int maxWaitTimeSeconds)
         throws InterruptedException {
@@ -581,7 +581,7 @@ Wait for MRSC replicas and witnesses to become active using AWS SDK for Java 2.x
 ```
 Clean up MRSC replicas and witnesses using AWS SDK for Java 2.x.
 
-```
+```java
     public static UpdateTableResponse cleanupMRSCReplicas(
         final DynamoDbClient dynamoDbClient,
         final String tableName,
@@ -640,7 +640,7 @@ Clean up MRSC replicas and witnesses using AWS SDK for Java 2.x.
 ```
 Complete MRSC workflow demonstration using AWS SDK for Java 2.x.
 
-```
+```java
     public static void demonstrateCompleteMRSCWorkflow(
         final DynamoDbClient primaryClient,
         final DynamoDbClient replicaClient,

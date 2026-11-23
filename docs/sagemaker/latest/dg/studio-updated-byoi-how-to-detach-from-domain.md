@@ -104,7 +104,7 @@ If you do not have that file, you can create a new json file instead.
 
    A configuration file example for Code Editor, using [`CodeEditorAppSettings`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CodeEditorAppSettings.html).
 
-   ```
+   ```bash
    {
        "DomainId": "{{domain-id}}",
        "DefaultUserSettings": {
@@ -121,7 +121,7 @@ If you do not have that file, you can create a new json file instead.
 
    A configuration file example for JupyterLab, using [`JupyterLabAppSettings`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_JupyterLabAppSettings.html).
 
-   ```
+   ```bash
    {
        "DomainId": "{{domain-id}}",
        "DefaultUserSettings": {
@@ -150,7 +150,7 @@ Before you can update the custom images, you must delete all of the **applicatio
 If you want to use the SageMaker AI console, see [Shut down SageMaker AI resources in your domain](sm-console-domain-resources-shut-down.md).
 If you want to use the AWS CLI, use steps 1 through 3 of [Delete an Amazon SageMaker AI domain (AWS CLI)](gs-studio-delete-domain.md#gs-studio-delete-domain-cli).
 
-   ```
+   ```sh
    aws sagemaker update-domain \
        --cli-input-json file://update-domain.json \
        --region ${REGION}
@@ -158,14 +158,14 @@ If you want to use the AWS CLI, use steps 1 through 3 of [Delete an Amazon SageM
 
 1. Delete the app image config.
 
-   ```
+   ```cmd
    aws sagemaker delete-app-image-config \
        --app-image-config-name ${APP_IMAGE_CONFIG}
    ```
 
 1. Delete the custom image. This also deletes all of the image versions. This does not delete the Amazon ECR container image and image versions. To do so, use the optional steps below.
 
-   ```
+   ```cmd
    aws sagemaker delete-image \
        --image-name ${SAGEMAKER_IMAGE_NAME}
    ```

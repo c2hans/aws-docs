@@ -18,7 +18,7 @@ There are two ways to upload campaign data on the Edge:
 After you create the campaign, the campaign status displays as `WAITING_FOR_APPROVAL` until you change the `action` to `APPROVED`.
 + Use the following sample to update the campaign `action` by calling on the [UpdateCampaign](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_UpdateCampaign.html) API operation.
 
-  ```
+  ```json
   {
      "action": "APPROVED",
      "dataExtraDimensions": [ "string" ],

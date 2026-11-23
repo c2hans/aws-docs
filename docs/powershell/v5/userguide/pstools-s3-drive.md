@@ -23,13 +23,13 @@ The examples in this topic use `/` as the path separator, which the drive accept
 <a name="pstools-s3-drive-prerequisites"></a>
 + The `AWS.Tools.S3` module, 5.0.288 or later. Install it directly from the PowerShell Gallery (this also pulls in its `AWS.Tools.Common` dependency):
 
-  ```
+  ```powershell
   Install-Module -Name AWS.Tools.S3 -MinimumVersion 5.0.288
   ```
 
   Or, if you manage the modular tools with the `AWS.Tools.Installer` module, install that first and then use `Install-AWSToolsModule`:
 
-  ```
+  ```powershell
   Install-Module -Name AWS.Tools.Installer  # provides Install-AWSToolsModule
   Install-AWSToolsModule AWS.Tools.S3
   ```
@@ -39,7 +39,7 @@ The examples in this topic use `/` as the path separator, which the drive accept
 
 Importing the module registers a PowerShell provider named `AWS.S3`. You can confirm that it is available:
 
-```
+```powershell
 Get-PSProvider AWS.S3
 ```
 
@@ -48,7 +48,7 @@ Get-PSProvider AWS.S3
 
 Use `Mount-S3PSDrive` to create a drive. The `-Name` parameter becomes the drive name in every path (for example, `-Name S3` gives you paths like `S3:/amzn-s3-demo-bucket/reports/index.txt`).
 
-```
+```powershell
 # Mount an S3: drive using a named profile and Region
 Mount-S3PSDrive -Name S3 -ProfileName my-profile -Region us-east-1
 # List buckets
@@ -66,7 +66,7 @@ Sample output:
 
 If you have already set session defaults with `Set-AWSCredential` and `Set-DefaultAWSRegion`, you can mount with no other parameters:
 
-```
+```powershell
 Set-AWSCredential -ProfileName my-profile
 Set-DefaultAWSRegion us-west-2
 Mount-S3PSDrive -Name S3
@@ -74,7 +74,7 @@ Mount-S3PSDrive -Name S3
 
 `Mount-S3PSDrive` is a thin wrapper over the PowerShell built-in `New-PSDrive`. If you prefer, you can create the drive directly and pass the same credential and Region parameters:
 
-```
+```powershell
 New-PSDrive -Name S3 -PSProvider AWS.S3 -Root '' -Scope Global -ProfileName my-profile -Region us-east-1
 ```
 
@@ -100,7 +100,7 @@ A bad profile or a missing bucket or prefix fails at `Mount-S3PSDrive`. Some per
 
 After you mount the drive, navigate with common PowerShell drive commands. S3 has no real folders, but the provider presents prefixes as folders so you can navigate them the same way.
 
-```
+```powershell
 # Change into a bucket, then a prefix
 Set-Location S3:/amzn-s3-demo-reports/2026
 # List the current location
@@ -117,7 +117,7 @@ Sample output:
    Object   2026-03-31 18:02:11      48210 summary.txt
 ```
 
-```
+```powershell
 # List a path without changing location
 Get-ChildItem S3:/amzn-s3-demo-bucket/reports/2026
 ```
@@ -126,7 +126,7 @@ Tab completion works for buckets, prefixes, and objects, so you can complete a p
 
 `Get-ChildItem` returns each item as an object that exposes `Name`, `Type`, `Size`, and `LastModified` properties. These properties let listings pipe directly into commands such as `Where-Object` and `Sort-Object`. `Type` is one of `Bucket`, `Folder`, or `Object`. Folders and buckets carry no size.
 
-```
+```powershell
 # List the 10 largest objects with the prefix "2026"
 Get-ChildItem S3:/amzn-s3-demo-app-logs/2026 -Recurse |
     Where-Object Type -eq 'Object' |
@@ -136,7 +136,7 @@ Get-ChildItem S3:/amzn-s3-demo-app-logs/2026 -Recurse |
 
 Other navigation commands also work on the drive:
 
-```
+```powershell
 # Retrieve the single item at an exact path (no children)
 Get-Item S3:/amzn-s3-demo-bucket/reports/index.txt
 # Test whether a path exists and whether it is a folder or an object
@@ -153,7 +153,7 @@ With `-Recurse`, an item's `Name` is its key *relative to the prefix* (so it can
 **Piping listed objects with -AsByteStream on Windows PowerShell 5.1**
 Piping `Get-ChildItem` into `Get-Content -AsByteStream` can fail on Windows PowerShell 5.1. The engine might bind `-AsByteStream` before it knows the piped input is an S3 path, and the FileSystem provider in 5.1 has no such parameter (see [Reading local file bytes differs by edition](#pstools-s3-drive-local-bytes)). Read each item by its explicit `PSPath` instead, which works on both editions:
 
-```
+```powershell
 # Read each listed object by explicit PSPath
 Get-ChildItem S3:/amzn-s3-demo-bucket/prefix | ForEach-Object {
     Get-Content -LiteralPath $_.PSPath -AsByteStream -Raw
@@ -167,7 +167,7 @@ Listings stream as each page of results arrives from S3 and are safe to interrup
 **Wildcard characters in keys**
 S3 keys can legally contain PowerShell wildcard characters (`[`, `]`, `*`, `?`). To address such a key literally, use `-LiteralPath` (supported by `Get-Item`, `Get-Content`, `Set-Content`, and `Remove-Item`), the same way you do on the file system provider:
 
-```
+```powershell
 Get-Content -LiteralPath 'S3:/amzn-s3-demo-bucket/data[2026].csv' -Raw
 ```
 
@@ -179,7 +179,7 @@ Get-Content -LiteralPath 'S3:/amzn-s3-demo-bucket/data[2026].csv' -Raw
 
 `Get-Content` downloads an object. By default it returns text line by line. Add `-Raw` to return the whole object as a single string. Both `Get-Content` and `Set-Content` support `-Encoding` for text and `-AsByteStream` for binary content.
 
-```
+```powershell
 # Read an object line by line
 Get-Content S3:/amzn-s3-demo-reports/2026/summary.txt
 # Read the whole object as one string
@@ -188,7 +188,7 @@ Get-Content S3:/amzn-s3-demo-reports/2026/summary.txt -Raw
 
 For non-text objects, use `-AsByteStream` to get the raw bytes. On an S3 path this works on both PowerShell 7\+ and Windows PowerShell 5.1 because the S3 provider supplies the parameter. Only *local* files differ by edition (see [Reading local file bytes differs by edition](#pstools-s3-drive-local-bytes)). To control text decoding, add `-Encoding` with any of the standard PowerShell encoding names (`UTF8`, `UTF8BOM`, `Unicode`, `ASCII`, and so on). The default is UTF-8 without a BOM, on both `Get-Content` and `Set-Content`.
 
-```
+```powershell
 # Read raw bytes
 Get-Content S3:/amzn-s3-demo-bucket/images/logo.png -AsByteStream -Raw
 # Decode as a specific text encoding
@@ -200,7 +200,7 @@ Get-Content S3:/amzn-s3-demo-bucket/data/report.csv -Encoding UTF8
 **Reading raw bytes into a variable**
 If you load an object's bytes into a variable (to hash, measure, or pass them to another API), flatten the `-AsByteStream` result first. Otherwise `.Length` and byte comparisons produce incorrect results:
 
-```
+```powershell
 $bytes = [byte[]]((Get-Content S3:/amzn-s3-demo-bucket/images/logo.png -AsByteStream -Raw) | ForEach-Object { $_ })
 ```
 Piping to a file or another command (for example `Set-Content -AsByteStream`, as in [Copy objects between S3 and local disk](#pstools-s3-drive-copy)) needs no flattening.
@@ -210,7 +210,7 @@ Piping to a file or another command (for example `Set-Content -AsByteStream`, as
 
 `Set-Content` uploads (and overwrites) an object.
 
-```
+```powershell
 # Write text
 Set-Content S3:/amzn-s3-demo-reports/2026/notes.txt -Value 'Draft complete'
 # Write several lines
@@ -238,7 +238,7 @@ Text uploads use LF line endings, so an object written on Windows, Linux, or mac
 
 Every upload through the drive is a multipart upload, and S3 limits a multipart upload to 10,000 parts. With the default part size of 5 MiB that caps a single object at about 48 GiB, and an upload past the cap runs out of parts and fails. To upload something bigger, raise `-PartSize` so that it is at least `object size / 10,000`:
 
-```
+```powershell
 # Upload a ~200 GiB object with 64 MiB parts (200 GiB / 10,000 = 21 MiB, so 64 MiB is plenty)
 
 # PowerShell 7+
@@ -264,7 +264,7 @@ Copying *within* S3 with `Copy-Item` is not supported (see [Supported and unsupp
 
 For binary data, read and write the bytes exactly. An **S3** path uses `-AsByteStream` on both PowerShell editions; only the *local* side differs, as described in [Reading local file bytes differs by edition](#pstools-s3-drive-local-bytes).
 
-```
+```powershell
 # Upload a local file (PowerShell 7+; on Windows PowerShell 5.1 the local read uses -Encoding Byte)
 Get-Content ./report.csv -AsByteStream -ReadCount 8MB | Set-Content S3:/amzn-s3-demo-bucket/data/report.csv -AsByteStream
 
@@ -292,7 +292,7 @@ For server-side S3-to-S3 copies, use the [Copy-S3Object](https://docs.aws.amazon
 
 `Remove-Item` deletes a single object. Deleting a prefix (a folder with contents) requires `-Recurse`, which removes everything beneath it in batches.
 
-```
+```powershell
 # Delete a single object
 Remove-Item S3:/amzn-s3-demo-bucket/notes/todo.txt
 # Delete a prefix and everything under it
@@ -306,7 +306,7 @@ Whether `Remove-Item` prompts depends on what you target:
 
 Use the native PowerShell switches to preview or gate a delete:
 
-```
+```powershell
 # Preview without deleting
 Remove-Item S3:/amzn-s3-demo-bucket/old-logs -Recurse -WhatIf
 # Ask for confirmation
@@ -326,7 +326,7 @@ You cannot delete a whole *bucket* through the drive because bucket lifecycle op
 
 Mount with `-Root` to confine a drive to a bucket, or a prefix within a bucket. The drive's root then *is* that location, and navigation is confined beneath it.
 
-```
+```powershell
 # Mount rooted at a bucket: the drive root lists the bucket's top-level entries
 Mount-S3PSDrive -Name Data -Root amzn-s3-demo-bucket -ProfileName my-profile -Region us-east-1
 Get-ChildItem Data:/                 # top-level keys in amzn-s3-demo-bucket
@@ -344,7 +344,7 @@ The root must already exist. A nonexistent bucket or prefix fails the mount. Bec
 
 A single mounted drive can reach buckets across Regions. The first time you touch a bucket, the provider looks up its Region and routes subsequent calls to the right endpoint automatically. You don't need a separate drive for each Region.
 
-```
+```powershell
 # Mounted in us-east-1, but this bucket is in us-west-2 and commands work without extra configuration
 Mount-S3PSDrive -Name S3 -ProfileName my-profile -Region us-east-1
 Get-ChildItem S3:/amzn-s3-demo-west-bucket
@@ -356,7 +356,7 @@ Get-Content   S3:/amzn-s3-demo-west-bucket/data/report.csv -Raw
 
 Set a drive-wide default storage class at mount time with `-StorageClass`. Every upload through that drive uses the specified class unless a specific `Set-Content` overrides it with its own `-StorageClass`.
 
-```
+```powershell
 # Set all uploads to default to STANDARD_IA
 Mount-S3PSDrive -Name Archive -ProfileName my-profile -Region us-east-1 -StorageClass STANDARD_IA
 Set-Content Archive:/amzn-s3-demo-bucket/cold/data.txt -Value '...'                        # STANDARD_IA
@@ -368,7 +368,7 @@ Set-Content Archive:/amzn-s3-demo-bucket/hot/data.txt  -Value '...' -StorageClas
 
 Use `Dismount-S3PSDrive` (a wrapper over `Remove-PSDrive`) to remove a drive. Change to another location first, because PowerShell won't remove a drive that is your current location.
 
-```
+```powershell
 Set-Location $HOME           # or C:\ on Windows
 Dismount-S3PSDrive -Name S3
 ```

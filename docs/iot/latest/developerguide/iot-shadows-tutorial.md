@@ -35,7 +35,7 @@ A Shadow document contains a `state` property that describes these aspects of th
 
 Here is an example of a Shadow state document.
 
-```
+```JSON
 {
   "state": {
     "desired": {
@@ -55,7 +55,7 @@ To update a device's Shadow document, you can use the [reserved MQTT topics](res
 
 In the previous example, say you want to change the `desired` color to `yellow`. To do this, send a request to the [UpdateThingShadow](device-shadow-rest-api.md#API_UpdateThingShadow) API or publish a message to the [Update](device-shadow-mqtt.md#update-pub-sub-topic) topic, `$aws/things/THING_NAME/shadow/update`.
 
-```
+```JSON
 {
   "state": {
     "desired": {

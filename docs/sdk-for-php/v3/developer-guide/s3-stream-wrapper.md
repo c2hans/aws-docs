@@ -8,7 +8,7 @@ The Amazon S3 stream wrapper enables you to store and retrieve data from Amazon 
 
 You need to register the Amazon S3 stream wrapper to use it.
 
-```
+```php
 $client = new Aws\S3\S3Client([/** options **/]);
 
 // Register the stream wrapper from an S3Client object
@@ -25,14 +25,14 @@ The stream wrapper is designed for working with objects and buckets on which you
 
 You can grab the contents of an object by using `file_get_contents`. However, be careful with this function; it loads the entire contents of the object into memory.
 
-```
+```php
 // Download the body of the "key" object in the "bucket" bucket
 $data = file_get_contents('s3://bucket/key');
 ```
 
 Use `fopen()` when working with larger files or if you need to stream data from Amazon S3.
 
-```
+```php
 // Open a stream in read-only mode
 if ($stream = fopen('s3://bucket/key', 'r')) {
     // While the stream is still open
@@ -53,7 +53,7 @@ File write errors are only returned when a call to `fflush` is made. These error
 
 Streams opened in “r” mode only allow data to be read from the stream, and are not seekable by default. This is so that data can be downloaded from Amazon S3 in a truly streaming manner, where previously read bytes do not need to be buffered into memory. If you need a stream to be seekable, you can pass `seekable` into the [stream context options](http://www.php.net/manual/en/function.stream-context-create.php) of a function.
 
-```
+```php
 $context = stream_context_create([
     's3' => ['seekable' => true]
 ]);
@@ -76,13 +76,13 @@ Opening seekable streams enables you to seek bytes that were previously read. Yo
 
 You can upload data to Amazon S3 using `file_put_contents()`.
 
-```
+```php
 file_put_contents('s3://bucket/key', 'Hello!');
 ```
 
 You can upload larger files by streaming data using `fopen()` and a “w”, “x”, or “a” stream access mode. The Amazon S3 stream wrapper does **not** support simultaneous read and write streams (e.g. “r\+”, “w\+”, etc). This is because the HTTP protocol doesn’t allow simultaneous reading and writing.
 
-```
+```php
 $stream = fopen('s3://bucket/key', 'w');
 fwrite($stream, 'Hello!');
 fclose($stream);
@@ -137,7 +137,7 @@ You can create and browse Amazon S3 buckets similarly to how PHP allows you to c
 
 Here’s an example that creates a bucket.
 
-```
+```php
 mkdir('s3://amzn-s3-demo-bucket');
 ```
 
@@ -146,7 +146,7 @@ In April 2023, Amazon S3 automatically enabled S3 Block Public Access and disabl
 
 You can pass in stream context options to the `mkdir()` method to modify how the bucket is created using the parameters available to the [CreateBucket](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#_createBucket) operation.
 
-```
+```php
 // Create a bucket in the EU (Ireland) Region
 mkdir('s3://amzn-s3-demo-bucket', 0500, true,
         stream_context_create([
@@ -156,7 +156,7 @@ mkdir('s3://amzn-s3-demo-bucket', 0500, true,
 
 You can delete buckets using the `rmdir()` function.
 
-```
+```php
 // Delete a bucket
 rmdir('s3://amzn-s3-demo-bucket);
 ```
@@ -171,7 +171,7 @@ After you create a bucket, you can use `mkdir()` to create objects that function
 
 The following code snippet adds a folder object named 'my-folder' to the existing bucket named 'amzn-s3-demo-bucket'. Use the forward slash (`/`) character to separate a folder object name from the bucket name and any additional folder name.
 
-```
+```php
 mkdir('s3://amzn-s3-demo-bucket/my-folder')
 ```
 
@@ -179,7 +179,7 @@ The [previous note](#work-with-buckets-create) about permission changes after Ap
 
 Use the `rmdir()` function to delete an empty folder object as shown in the following snippet.
 
-```
+```php
 rmdir('s3://amzn-s3-demo-bucket/my-folder')
 ```
 
@@ -188,7 +188,7 @@ rmdir('s3://amzn-s3-demo-bucket/my-folder')
 
 You can use the [opendir()](http://www.php.net/manual/en/function.opendir.php), [readdir()](http://www.php.net/manual/en/function.readdir.php), [rewinddir()](http://www.php.net/manual/en/function.rewinddir.php), and [closedir()](http://php.net/manual/en/function.closedir.php) PHP functions with the Amazon S3 stream wrapper to traverse the contents of a bucket. You can pass in parameters available to the [ListObjects](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#_listObjects) operation as custom stream context options to the `opendir()` function to modify how objects are listed.
 
-```
+```php
 $dir = "s3://bucket/";
 
 if (is_dir($dir) && ($dh = opendir($dir))) {
@@ -201,7 +201,7 @@ if (is_dir($dir) && ($dh = opendir($dir))) {
 
 You can recursively list each object and prefix in a bucket using PHP’s [RecursiveDirectoryIterator](http://php.net/manual/en/class.recursivedirectoryiterator.php).
 
-```
+```php
 $dir = 's3://bucket';
 $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
 
@@ -212,7 +212,7 @@ foreach ($iterator as $file) {
 
 Another way to list the contents of a bucket recursively that incurs fewer HTTP requests is to use the `Aws\recursive_dir_iterator($path, $context = null)` function.
 
-```
+```php
 <?php
 require 'vendor/autoload.php';
 

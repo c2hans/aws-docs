@@ -14,7 +14,7 @@ The following code examples show how to use `DeleteBucketWebsite`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::deleteBucketWebsite(const Aws::String &bucketName,
                                      const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client client(clientConfig);
@@ -58,7 +58,7 @@ For more information, see [Hosting a static website using Amazon S3](https://doc
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/s3#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.DeleteBucketWebsiteRequest;
@@ -132,7 +132,7 @@ public class DeleteWebsiteConfiguration {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Delete the website configuration from the bucket.
 
-```
+```javascript
 import {
   DeleteBucketWebsiteCommand,
   S3Client,
@@ -184,7 +184,7 @@ export const main = async ({ bucketName }) => {
 **Tools for PowerShell V4**
 **Example 1: This command disables the static website hosting property of the given S3 bucket.**
 
-```
+```powershell
 Remove-S3BucketWebsite -BucketName 'amzn-s3-demo-bucket'
 ```
 **Output:**
@@ -200,7 +200,7 @@ Performing the operation "Remove-S3BucketWebsite (DeleteBucketWebsite)" on targe
 **Tools for PowerShell V5**
 **Example 1: This command disables the static website hosting property of the given S3 bucket.**
 
-```
+```powershell
 Remove-S3BucketWebsite -BucketName 'amzn-s3-demo-bucket'
 ```
 **Output:**

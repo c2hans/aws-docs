@@ -60,4 +60,8 @@ Consider an example using the EventBridge default event bus, which automatically
 
  The following video describes what event buses are and explains some of the basics of them:
 
+[![AWS Videos](https://img.youtube.com/vi/LkEBBgWRKkI/0.jpg)](https://www.youtube.com/watch?v=LkEBBgWRKkI)
+
  The following video covers the different event buses and when to use them:
+
+[![AWS Videos](https://img.youtube.com/vi/cB5-GTSJNqc/0.jpg)](https://www.youtube.com/watch?v=cB5-GTSJNqc)

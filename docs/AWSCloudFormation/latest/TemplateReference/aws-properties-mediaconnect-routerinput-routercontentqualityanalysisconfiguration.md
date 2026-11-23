@@ -6,7 +6,10 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::RouterInput RouterContentQualityAnalysisConfiguration
 
-<a name="aws-properties-mediaconnect-routerinput-routercontentqualityanalysisconfiguration-description"></a>The `RouterContentQualityAnalysisConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::RouterInput](aws-resource-mediaconnect-routerinput.md).
+The content quality analysis configuration for the router input.
+
+**Important**
+The content quality analysis feature only monitors the first video stream and the first audio stream it encounters within the router input source.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-routerinput-routercontentqualityanalysisconfiguration-syntax"></a>
@@ -34,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-routerinput-routercontentqualityanalysisconfiguration-properties"></a>
 
 `ContentLevel`  <a name="cfn-mediaconnect-routerinput-routercontentqualityanalysisconfiguration-contentlevel"></a>
-Property description not available.
+The content quality analysis configuration.
 *Required*: Yes
 *Type*: [ContentQualityAnalysisFeatureConfiguration](aws-properties-mediaconnect-routerinput-contentqualityanalysisfeatureconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -145,7 +145,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-database-migration-service-dms-create-target-endpoint-s3-ex-min"></a>
 
-```
+```json
 {
   "Description": "Test description.",
   "VpcId": "vpc-1234567890abcdef0",
@@ -163,7 +163,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-database-migration-service-dms-create-target-endpoint-s3-ex-max"></a>
 
-```
+```json
 {
   "Description": "Test description.",
   "VpcId": "vpc-317a9856",

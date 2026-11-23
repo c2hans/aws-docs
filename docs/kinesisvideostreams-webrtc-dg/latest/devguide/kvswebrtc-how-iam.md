@@ -23,7 +23,7 @@ For more information about IAM, see the following:
 
 An IAM policy is a JSON document that consists of one or more statements. Each statement is structured as follows:
 
-```
+```json
 {
   "Statement":[{
     "Effect":"{{effect}}",
@@ -54,19 +54,19 @@ In an IAM policy statement, you can specify any API action from any service that
 
 To specify multiple actions in a single statement, separate them with commas as follows:
 
-```
+```json
 "Action": ["kinesisvideo:action1", "kinesisvideo:action2"]
 ```
 
 You can also specify multiple actions using wildcards. For example, you can specify all actions whose name begins with the word "Get" as follows:
 
-```
+```json
 "Action": "kinesisvideo:Get*"
 ```
 
 To specify all Kinesis Video Streams operations, use the asterisk (\*) wild card as follows:
 
-```
+```json
 "Action": "kinesisvideo:*"
 ```
 
@@ -79,13 +79,13 @@ Each IAM policy statement applies to the resources that you specify using their 
 
 Use the following ARN resource format for Kinesis Video Streams:
 
-```
+```json
 arn:aws:kinesisvideo:{{region}}:{{account-id}}:channel/{{channel-name}}/{{code}}
 ```
 
 For example:
 
-```
+```json
 "Resource": arn:aws:kinesisvideo::*:111122223333:channel/my-channel/0123456789012
 ```
 
@@ -105,7 +105,7 @@ The following example policies demonstrate how you can control user access to yo
 This policy allows a user or group to perform the `DescribeSignalingChannel`, `GetSignalingChannelEndpoint`, `ListSignalingChannels`, and `ListTagsForResource` operations on any signaling channel.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -125,7 +125,7 @@ This policy allows a user or group to perform the `DescribeSignalingChannel`, `G
 **Example 2: Allow a user to create a signaling channel**
 This policy allows a user or group to perform the `CreateSignalingChannel` operation.
 
-```
+```json
 {
     "Statement": [
         {
@@ -143,7 +143,7 @@ This policy allows a user or group to perform the `CreateSignalingChannel` opera
 This policy allows a user or group to perform any Kinesis Video Streams operation on any resource. This policy is appropriate for administrators.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -160,7 +160,7 @@ This policy allows a user or group to perform any Kinesis Video Streams operatio
 This policy allows a user or group to get data from a specific signaling channel.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -22,7 +22,7 @@ You must configure a [NAT gateway](https://docs.aws.amazon.com/vpc/latest/usergu
 
 All the previous configuration and considerations are valid for AWS Batch, too. The following is an example of a AWS Batch networking configuration.
 
-```
+```yaml
 # Note that all values are only provided as examples
 HeadNode:
   ...

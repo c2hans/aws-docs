@@ -67,7 +67,7 @@ A list of tags to be added to the adapter.
 Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 200 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Key Pattern: `^(?!aws:)[\p{L}\p{Z}\p{N}_.:/=+\-@]*$`
+Key Pattern: `^[\p{L}\p{Z}\p{N}_.:/=+\-@]*$`
 Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Value Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
 Required: No

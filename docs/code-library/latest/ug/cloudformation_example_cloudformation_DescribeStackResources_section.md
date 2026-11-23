@@ -72,22 +72,22 @@ For more information, see [Managing AWS resources as a single unit with CloudFor
 **Tools for PowerShell V4**
 **Example 1: Returns the AWS resource descriptions for up to 100 resources associated with the specified stack. To obtain details of all resources associated with a stack use the Get-CFNStackResourceSummary, which also supports manual paging of the results.**
 
-```
+```powershell
 Get-CFNStackResourceList -StackName "myStack"
 ```
 **Example 2: Returns the description of the Amazon EC2 instance identified in the template associated with the specified stack by the logical ID "Ec2Instance".**
 
-```
+```powershell
 Get-CFNStackResourceList -StackName "myStack" -LogicalResourceId "Ec2Instance"
 ```
 **Example 3: Returns the description of up to 100 resources associated with the stack containing an Amazon EC2 instance identified by instance ID "i-123456". To obtain details of all resources associated with a stack use the Get-CFNStackResourceSummary, which also supports manual paging of the results.**
 
-```
+```powershell
 Get-CFNStackResourceList -PhysicalResourceId "i-123456"
 ```
 **Example 4: Returns the description of the Amazon EC2 instance identified by the logical ID "Ec2Instance" in the template for a stack. The stack is identified using the physical resource ID of a resource it contains, in this case also an Amazon EC2 instance with instance ID "i-123456". A different physical resource could also be used to identify the stack depending on the template content, for example an Amazon S3 bucket.**
 
-```
+```powershell
 Get-CFNStackResourceList -PhysicalResourceId "i-123456" -LogicalResourceId "Ec2Instance"
 ```
 +  For API details, see [DescribeStackResources](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -95,22 +95,22 @@ Get-CFNStackResourceList -PhysicalResourceId "i-123456" -LogicalResourceId "Ec2I
 **Tools for PowerShell V5**
 **Example 1: Returns the AWS resource descriptions for up to 100 resources associated with the specified stack. To obtain details of all resources associated with a stack use the Get-CFNStackResourceSummary, which also supports manual paging of the results.**
 
-```
+```powershell
 Get-CFNStackResourceList -StackName "myStack"
 ```
 **Example 2: Returns the description of the Amazon EC2 instance identified in the template associated with the specified stack by the logical ID "Ec2Instance".**
 
-```
+```powershell
 Get-CFNStackResourceList -StackName "myStack" -LogicalResourceId "Ec2Instance"
 ```
 **Example 3: Returns the description of up to 100 resources associated with the stack containing an Amazon EC2 instance identified by instance ID "i-123456". To obtain details of all resources associated with a stack use the Get-CFNStackResourceSummary, which also supports manual paging of the results.**
 
-```
+```powershell
 Get-CFNStackResourceList -PhysicalResourceId "i-123456"
 ```
 **Example 4: Returns the description of the Amazon EC2 instance identified by the logical ID "Ec2Instance" in the template for a stack. The stack is identified using the physical resource ID of a resource it contains, in this case also an Amazon EC2 instance with instance ID "i-123456". A different physical resource could also be used to identify the stack depending on the template content, for example an Amazon S3 bucket.**
 
-```
+```powershell
 Get-CFNStackResourceList -PhysicalResourceId "i-123456" -LogicalResourceId "Ec2Instance"
 ```
 +  For API details, see [DescribeStackResources](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

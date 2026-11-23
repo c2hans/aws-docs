@@ -173,7 +173,7 @@ ORDER BY score DESC
 
 The following example shows the output that `.eigenvectorCentrality` returns when you run it against the [ sample air-routes dataset [nodes]](https://github.com/krlawrence/graph/blob/main/sample-data/air-routes-latest-nodes.csv), and [ sample air-routes dataset [edges]](https://github.com/krlawrence/graph/blob/main/sample-data/air-routes-latest-edges.csv), using the following query:
 
-```
+```json
 aws neptune-graph execute-query \
     --graph-identifier ${graphIdentifier} \
     --query-string "MATCH(n) CALL neptune.algo.eigenvectorCentrality(n) YIELD node, score RETURN node, score LIMIT 2" \

@@ -82,7 +82,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="templates-template-name-template-type-active-version-request-body-put-example"></a>
 
-```
+```json
 {
   "Version": "string"
 }
@@ -94,7 +94,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="templates-template-name-template-type-active-version-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

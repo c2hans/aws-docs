@@ -34,7 +34,7 @@ To delete a campaign, run the following command.
 
 Replace {{campaign-name}} with the name of the vehicle that you're deleting.
 
-```
+```bash
 aws iotfleetwise delete-campaign --name {{campaign-name}}
 ```
 
@@ -48,6 +48,6 @@ You can use the [ListCampaigns](https://docs.aws.amazon.com/iot-fleetwise/latest
 
 To retrieve a paginated list of summaries for all campaigns, run the following command.
 
-```
+```bash
 aws iotfleetwise list-campaigns
 ```

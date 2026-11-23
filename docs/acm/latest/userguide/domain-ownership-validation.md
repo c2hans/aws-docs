@@ -27,3 +27,4 @@ To switch an existing certificate from email validation to DNS validation, use t
 + [AWS Certificate Manager DNS validation](dns-validation.md)
 + [AWS Certificate Manager email validation](email-validation.md)
 + [AWS Certificate Manager HTTP validation](http-validation.md)
++ [Migrating from email to DNS validation](email-to-dns-migration.md)

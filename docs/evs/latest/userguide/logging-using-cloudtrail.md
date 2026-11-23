@@ -39,7 +39,7 @@ For more information, see [CloudTrail userIdentity element](https://docs.aws.ama
 
 To list recent Amazon EVS events in **Event history** with the AWS CLI, filter on the event source. Replace `<region-code>` with the Region where you created the environment.
 
-```
+```bash
 aws cloudtrail lookup-events \
     --lookup-attributes AttributeKey=EventSource,AttributeValue=evs.amazonaws.com \
     --max-results 20 \
@@ -48,7 +48,7 @@ aws cloudtrail lookup-events \
 
 To find who deleted a host, filter on the event name, for example `DeleteEnvironmentHost`. Replace `<region-code>` with the Region where you created the environment.
 
-```
+```bash
 aws cloudtrail lookup-events \
     --lookup-attributes AttributeKey=EventName,AttributeValue=DeleteEnvironmentHost \
     --region <region-code>

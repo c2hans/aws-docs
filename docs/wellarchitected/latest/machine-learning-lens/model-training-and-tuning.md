@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 
 ![Chart displaying ML model training and tuning main components](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/images/training-tuning-components.png)
 
+* Figure 11: ML model training and tuning main components *
+
  Model training, tuning, and evaluation require prepared data and engineered features. The following are the main activities in this stage, as listed in Figure 11:
 +  **Features:** Features are selected as part of the data processing after data quality is assured
 +  **Building code:** Model development includes building the algorithm and its supporting code. The code-building process should support version control and continuous build, test, and integration through a pipeline.
@@ -23,5 +25,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 +  **Visualization:** Enables exploring and understanding data during metrics validation, debugging, profiling, and hyperparameter tuning.
 
 ![ML lifecycle with pre-production pipelines](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/images/ml-lifecycle-preproduction-pipelines.png)
+
+* Figure 12: ML lifecycle with pre-production pipelines *
 
  Figure 12 shows the pre-production pipelines. The *data prepare* pipeline automates data preparation tasks. The feature pipeline automates the storing, fetching, and copying of the features into and from online/offline store. The CI/CD/CT pipeline automates the build, train, and release to staging and production environments.

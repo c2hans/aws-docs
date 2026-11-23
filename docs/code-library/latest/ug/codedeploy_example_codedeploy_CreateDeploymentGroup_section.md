@@ -40,7 +40,7 @@ For more information, see [Create a deployment group with CodeDeploy](https://do
 **Tools for PowerShell V4**
 **Example 1: This example creates a deployment group with the specified name, Auto Scaling group, deployment configuration, tag, and service role, for the specified application.**
 
-```
+```powershell
 New-CDDeploymentGroup -ApplicationName MyNewApplication -AutoScalingGroup CodeDeployDemo-ASG -DeploymentConfigName CodeDeployDefault.OneAtATime -DeploymentGroupName MyNewDeploymentGroup -Ec2TagFilter @{Key="Name"; Type="KEY_AND_VALUE"; Value="CodeDeployDemo"} -ServiceRoleArn arn:aws:iam::80398EXAMPLE:role/CodeDeployDemo
 ```
 **Output:**
@@ -50,7 +50,7 @@ New-CDDeploymentGroup -ApplicationName MyNewApplication -AutoScalingGroup CodeDe
 ```
 **Example 2: This example shows how to specify groups of EC2 instance tags that an instance must be identified by in order for it to be included in the replacement environment for a blue/green deployment.**
 
-```
+```powershell
 New-CDDeploymentGroup -ApplicationName MyNewApplication -AutoScalingGroup CodeDeployDemo-ASG -DeploymentConfigName CodeDeployDefault.OneAtATime -DeploymentGroupName MyNewDeploymentGroup -Ec2TagFilter @{Key="Name"; Type="KEY_AND_VALUE"; Value="CodeDeployDemo"} -ServiceRoleArn arn:aws:iam::80398EXAMPLE:role/CodeDeployDemo -Ec2TagSetList @(@{Key="key1";Type="KEY_ONLY"},@{Key="Key2";Type="KEY_AND_VALUE";Value="Value2"}),@(@{Key="Key3";Type="VALUE_ONLY";Value="Value3"})
 ```
 **Output:**
@@ -63,7 +63,7 @@ New-CDDeploymentGroup -ApplicationName MyNewApplication -AutoScalingGroup CodeDe
 **Tools for PowerShell V5**
 **Example 1: This example creates a deployment group with the specified name, Auto Scaling group, deployment configuration, tag, and service role, for the specified application.**
 
-```
+```powershell
 New-CDDeploymentGroup -ApplicationName MyNewApplication -AutoScalingGroup CodeDeployDemo-ASG -DeploymentConfigName CodeDeployDefault.OneAtATime -DeploymentGroupName MyNewDeploymentGroup -Ec2TagFilter @{Key="Name"; Type="KEY_AND_VALUE"; Value="CodeDeployDemo"} -ServiceRoleArn arn:aws:iam::80398EXAMPLE:role/CodeDeployDemo
 ```
 **Output:**
@@ -73,7 +73,7 @@ New-CDDeploymentGroup -ApplicationName MyNewApplication -AutoScalingGroup CodeDe
 ```
 **Example 2: This example shows how to specify groups of EC2 instance tags that an instance must be identified by in order for it to be included in the replacement environment for a blue/green deployment.**
 
-```
+```powershell
 New-CDDeploymentGroup -ApplicationName MyNewApplication -AutoScalingGroup CodeDeployDemo-ASG -DeploymentConfigName CodeDeployDefault.OneAtATime -DeploymentGroupName MyNewDeploymentGroup -Ec2TagFilter @{Key="Name"; Type="KEY_AND_VALUE"; Value="CodeDeployDemo"} -ServiceRoleArn arn:aws:iam::80398EXAMPLE:role/CodeDeployDemo -Ec2TagSetList @(@{Key="key1";Type="KEY_ONLY"},@{Key="Key2";Type="KEY_AND_VALUE";Value="Value2"}),@(@{Key="Key3";Type="VALUE_ONLY";Value="Value3"})
 ```
 **Output:**

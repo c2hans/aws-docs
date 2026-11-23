@@ -25,7 +25,7 @@ The example covers authoring the various required CloudFormation infrastructure 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -82,7 +82,7 @@ The example covers authoring the various required CloudFormation infrastructure 
    The example shows how to write a robust service template that doesn't break if a component isn't attached to the service instance.
 **Example service CloudFormation IaC file using a component**
 
-   ```
+   ```yaml
    # service/instance_infrastructure/cloudformation.yaml
 
    Resources:
@@ -135,7 +135,7 @@ The example covers authoring the various required CloudFormation infrastructure 
 1. Write a component IaC template file that provisions an Amazon S3 bucket and a related access policy and exposes these resources as outputs.
 **Example component CloudFormation IaC file**
 
-   ```
+   ```yaml
    # cloudformation.yaml
 
    # A component that defines an S3 bucket and a policy for accessing the bucket.
@@ -167,7 +167,7 @@ The example covers authoring the various required CloudFormation infrastructure 
 1. If you're using the AWS Proton API or AWS CLI, write a manifest file for the component.
 **Example directly defined component manifest**
 
-   ```
+   ```yaml
    infrastructure:
      templates:
        - file: "cloudformation.yaml"

@@ -45,7 +45,7 @@ DuckDB uses your environment's execution role to access Amazon S3. To use the co
 
 1. Choose your environment's execution role, and add the following permissions policy to it. Replace {{amzn-s3-demo-bucket}} with the name of the bucket that stores your data. For more information about the execution role, see [Amazon MWAA execution role](mwaa-create-role.md).
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -85,7 +85,7 @@ This example stores sample data in Amazon S3, so you incur charges for Amazon S3
 
 1. Copy the following Python code example, and save it locally as `duckdb_s3.py`. Replace {{amzn-s3-demo-bucket}} with the name of your bucket.
 
-   ```
+   ```python
    import pendulum
 
    from airflow.providers.duckdb.operators.duckdb import DuckDBExecuteQueryOperator

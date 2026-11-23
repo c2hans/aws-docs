@@ -34,7 +34,7 @@ DATE
 
 The following example returns the date portion from the result of the SYSDATE function (which returns a timestamp).
 
-```
+```sql
 SELECT SYSDATE;
 
 +----------------------------+
@@ -54,7 +54,7 @@ SELECT TRUNC(SYSDATE);
 
 The following example applies the TRUNC function to a `TIMESTAMP` column. The return type is a date.
 
-```
+```sql
 SELECT TRUNC(starttime) FROM event
 ORDER BY eventid LIMIT 1;
 

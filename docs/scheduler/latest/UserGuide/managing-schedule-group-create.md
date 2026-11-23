@@ -54,7 +54,7 @@ You can't edit the `default` schedule group.
 
    Replace the schedule name and the tag key and value with your information.
 
-   ```
+   ```bash
    $ aws scheduler create-schedule-group --name {{TestGroup}} --tags Key=environment,Value=development
    ```
 
@@ -93,7 +93,7 @@ Use the following steps to associate a new schedule with the group you created i
 
 1. From the AWS Command Line Interface (AWS CLI), enter the following [`create-schedule`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/create-schedule.html) command. This creates a schedule and associates it with the group from the [previous step](#create-schedule-group), named `sqs-test-schedule`. This schedule uses the templated [Amazon SQS](managing-targets-templated.md#managing-targets-templated-sqs) target type to invoke the `SendMessage` operation. Replace the schedule name, target, and group name with your information.
 
-   ```
+   ```bash
    $ aws scheduler create-schedule --name {{sqs-test-schedule}} --schedule-expression 'rate(5 minutes)' \
    --target '{"RoleArn": "{{ROLE_ARN}}", "Arn": "{{QUEUE_ARN}}", "Input": "{{TEST_PAYLOAD}}" }' \
    --group-name {{TestGroup}}

@@ -56,7 +56,7 @@ This export destination has the following requirements:
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -114,7 +114,7 @@ For the list of AWS Regions that AWS IoT SiteWise supports, see [AWS IoT SiteWis
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -181,7 +181,7 @@ This export destination has the following requirements:
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -273,7 +273,7 @@ The following example shows how a Greengrass component might read and process st
 ------
 #### [ Python ]
 
-```
+```python
 import time
 from stream_manager import (
     ReadMessagesOptions,
@@ -329,7 +329,7 @@ Python SDK reference: [read\_messages](https://aws-greengrass.github.io/aws-gree
 ------
 #### [ Java ]
 
-```
+```java
 import com.amazonaws.greengrass.streammanager.client.StreamManagerClient;
 import com.amazonaws.greengrass.streammanager.client.StreamManagerClientFactory;
 import com.amazonaws.greengrass.streammanager.client.utils.ValidateAndSerialize;
@@ -382,7 +382,7 @@ Java SDK reference: [readMessages](https://aws-greengrass.github.io/aws-greengra
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const {
     StreamManagerClient, ReadMessagesOptions,
     Status, StatusConfig, StatusLevel, StatusMessage,

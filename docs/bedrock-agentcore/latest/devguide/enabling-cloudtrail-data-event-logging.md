@@ -17,7 +17,7 @@ When you log data events for a trail in CloudTrail, you must use advanced event 
 
 1. To enable CloudTrail data events for gateway resources using the AWS CLI, you can run the following command in a terminal:
 
-   ```
+   ```bash
    aws cloudtrail put-event-selectors \
      --trail-name brac-gateway-canary-trail-prod-us-east-1 \
      --region us-east-1 \
@@ -40,7 +40,7 @@ When you log data events for a trail in CloudTrail, you must use advanced event 
 
 1. The following example demonstrates how to create a CloudTrail trail with AgentCore Gateway data events using the AWS CDK:
 
-   ```
+   ```typescript
    import { Construct } from 'constructs';
    import { Trail, CfnTrail } from 'aws-cdk-lib/aws-cloudtrail';
    import { Bucket } from 'aws-cdk-lib/aws-s3';

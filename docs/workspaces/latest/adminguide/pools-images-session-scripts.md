@@ -99,7 +99,7 @@ To locate the session scripts configuration file in a Windows instance, navigate
 **Note**
 The configuration file is in JSON format. Verify that any text you type in this file is in valid JSON format.
 
-```
+```json
 {
   "SessionStart": {
     "executables": [

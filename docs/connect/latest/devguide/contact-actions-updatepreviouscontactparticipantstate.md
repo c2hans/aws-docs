@@ -9,7 +9,7 @@ This action is primarily used to prevent previous participants on the contact fr
 ## Parameter object
 <a name="updatepreviouscontactparticipantstate-parameter"></a>
 
-```
+```json
 {
     "PreviousContactParticipantState": One of ["AgentOnHold", "CustomerOnHold", "OffHold"], which are only supported for voice contacts.
 }

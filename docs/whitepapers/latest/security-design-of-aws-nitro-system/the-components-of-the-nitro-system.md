@@ -57,6 +57,8 @@ Within AWS, a common design pattern is to split a system into services that are 
 
 ![A diagram depicting Nitro System control architecture.](https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aws-nitro-system/images/control-architecture.png)
 
+*Nitro System control architecture*
+
  The Nitro Controller presents to the dedicated EC2 control plane network a set of strongly authenticated and encrypted networked APIs for system management. Every API action is logged and all attempts to call an API are cryptographically authenticated and authorized using a fine-grained access control model. Each control plane component is authorized only for the set of operations needed for it to complete its business purpose. Using formal methods, we've proven that the network-facing API of the control message parsing implementation of the Nitro Controller is free from memory safety errors in the face of any configuration file and any network input.
 
 ### Nitro Cards for I/O

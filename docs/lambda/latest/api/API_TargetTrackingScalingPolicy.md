@@ -10,7 +10,7 @@ A scaling policy for the capacity provider that automatically adjusts capacity t
 <a name="API_TargetTrackingScalingPolicy_Contents"></a>
 
  ** PredefinedMetricType **   <a name="lambda-Type-TargetTrackingScalingPolicy-PredefinedMetricType"></a>
-The predefined metric type to track for scaling decisions.
+The predefined metric type to track for scaling decisions. Use `LambdaCapacityProviderAverageCPUUtilization` to scale on the average CPU utilization of compute instances, or `LambdaCapacityProviderAverageGPUUtilization` to scale on the average GPU utilization of GPU instances.
 Type: String
 Valid Values: `LambdaCapacityProviderAverageCPUUtilization | LambdaCapacityProviderAverageGPUUtilization`
 Required: Yes

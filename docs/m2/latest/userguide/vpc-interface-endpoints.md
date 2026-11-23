@@ -49,7 +49,7 @@ For more information, see [Control access to services using endpoint policies](h
 **Example: VPC endpoint policy for AWS Mainframe Modernization actions**
 The following is an example of a custom endpoint policy. When you attach this policy to your interface endpoint, it grants access to the listed AWS Mainframe Modernization actions for all principals on all resources.
 
-```
+```json
 //Example of an endpoint policy where access is granted to the
 //listed AWS Mainframe Modernization actions for all principals on all resources
 {"Statement": [

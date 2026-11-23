@@ -92,7 +92,7 @@ To read objects encrypted by V3 clients (those using `REQUIRE_ENCRYPT_ALLOW_DECR
 
 For projects that install the `aws-sdk-s3` gem from the command line, use the version option to verify that the minimum version of 1.208.0 is installed.
 
-```
+```ruby
 gem install aws-sdk-s3 -v '>= 1.208.0'
 ```
 
@@ -100,7 +100,7 @@ gem install aws-sdk-s3 -v '>= 1.208.0'
 
 For projects that use a Gemfile to manage dependencies, set the minimum version of the `aws-sdk-s3` gem to 1.208.0. For example:
 
-```
+```ruby
 gem 'aws-sdk-s3', '>= 1.208.0'
 ```
 
@@ -172,7 +172,7 @@ After updating your clients to read the new encryption formats, you can update y
 
  **Pre-migration (V2)**
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Create V2 encryption client with KMS
@@ -194,7 +194,7 @@ decrypted_data = resp.body.read
 
  **During migration (V3 with backward compatibility)**
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Create V3 encryption client with KMS
@@ -216,7 +216,7 @@ decrypted_data = resp.body.read
 
  **Post-migration (V3)**
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Create V3 encryption client with KMS
@@ -256,7 +256,7 @@ The S3 encryption client can store encryption metadata (including the encrypted 
 
 By default, the encryption client stores encryption metadata in the S3 object's metadata headers. This is the recommended approach for most use cases because it keeps the encryption metadata with the object and doesn't require managing separate Instruction File objects.
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Create V3 encryption client with metadata storage (default)
@@ -280,7 +280,7 @@ When using metadata storage, AES GCM with Key Commitment does not apply to the e
 
 Alternatively, you can configure the encryption client to store encryption metadata in a separate S3 object called an Instruction File. When using Instruction Files with V3, the encrypted data key is protected by AES GCM with Key Commitment, providing additional security against data key tampering.
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Create V3 encryption client with instruction file storage

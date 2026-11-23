@@ -46,7 +46,7 @@ This configures your device to meet the Python requirement for AWS IoT Greengras
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement":[
@@ -83,7 +83,7 @@ This configures your device to meet the Python requirement for AWS IoT Greengras
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement":[
@@ -120,7 +120,7 @@ This configures your device to meet the Python requirement for AWS IoT Greengras
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement":[
@@ -243,7 +243,7 @@ Valid pattern: `arn:aws:firehose:([a-z]{2}-[a-z]+-\d{1}):(\d{12}):deliverystream
 **Create Connector Example (AWS CLI)**
 The following CLI command creates a `ConnectorDefinition` with an initial version that contains the connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -296,7 +296,7 @@ Type: `string`
 Valid pattern: `.*`
 **Example input**
 
-```
+```json
 {
      "request": {
         "delivery_stream_arn": "arn:aws:firehose:{{region}}:{{account-id}}:deliverystream/stream2-name",
@@ -337,7 +337,7 @@ Type: `string`
 Valid pattern: `.*`
 **Example input**
 
-```
+```json
 {
      "request": {
         "delivery_stream_arn": "arn:aws:firehose:{{region}}:{{account-id}}:deliverystream/stream2-name",
@@ -368,7 +368,7 @@ This connector publishes status information as output data on an MQTT topic.
 **Example output**
 The response contains the status of each data record sent in the batch.
 
-```
+```json
 {
     "response": [
         {
@@ -400,7 +400,7 @@ If the connector detects a retryable error (for example, connection errors), it 
 
 **Example output: Success**
 
-```
+```json
 {
    "response": {
        "firehose_record_id": "1lxfuuuFomkpJYzt/34ZU/r8JYPf8Wyf7AXqlXm",
@@ -412,7 +412,7 @@ If the connector detects a retryable error (for example, connection errors), it 
 
 **Example output: Failure**
 
-```
+```json
 {
    "response" : {
        "error": "ResourceNotFoundException",
@@ -465,7 +465,7 @@ The [Get started with connectors (console)](connectors-console.md) and [Get star
 
 The following example Lambda function sends an input message to the connector. This message contains JSON data.
 
-```
+```python
 import greengrasssdk
 import time
 import json

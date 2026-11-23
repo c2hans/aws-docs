@@ -102,7 +102,7 @@ The following examples launch a transient cluster that runs a Flink job and then
 
 **Example SDK for Java**
 
-```
+```java
 import java.util.ArrayList;
 import java.util.List;
 import com.amazonaws.AmazonClientException;

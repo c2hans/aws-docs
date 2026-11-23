@@ -40,7 +40,7 @@ For more information, see [Create a Lambda function with the console](https://do
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/lambda#code-examples).
 
-```
+```php
 namespace Lambda;
 
 use Aws\S3\S3Client;
@@ -233,7 +233,7 @@ The following code example shows how to use `CreateFunction`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/lambda#code-examples).
 
-```
+```php
     public function createFunction($functionName, $role, $bucketName, $handler)
     {
         //This assumes the Lambda function is in an S3 bucket.
@@ -261,7 +261,7 @@ The following code example shows how to use `DeleteFunction`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/lambda#code-examples).
 
-```
+```php
     public function deleteFunction($functionName)
     {
         return $this->lambdaClient->deleteFunction([
@@ -279,7 +279,7 @@ The following code example shows how to use `GetFunction`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/lambda#code-examples).
 
-```
+```php
     public function getFunction($functionName)
     {
         return $this->lambdaClient->getFunction([
@@ -297,7 +297,7 @@ The following code example shows how to use `Invoke`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/lambda#code-examples).
 
-```
+```php
     public function invoke($functionName, $params, $logType = 'None')
     {
         return $this->lambdaClient->invoke([
@@ -317,7 +317,7 @@ The following code example shows how to use `ListFunctions`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/lambda#code-examples).
 
-```
+```php
     public function listFunctions($maxItems = 50, $marker = null)
     {
         if (is_null($marker)) {
@@ -342,7 +342,7 @@ The following code example shows how to use `UpdateFunctionCode`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/lambda#code-examples).
 
-```
+```php
     public function updateFunctionCode($functionName, $s3Bucket, $s3Key)
     {
         return $this->lambdaClient->updateFunctionCode([
@@ -362,7 +362,7 @@ The following code example shows how to use `UpdateFunctionConfiguration`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/lambda#code-examples).
 
-```
+```php
     public function updateFunctionConfiguration($functionName, $handler, $environment = '')
     {
         return $this->lambdaClient->updateFunctionConfiguration([
@@ -407,7 +407,7 @@ The following code example shows how to implement a Lambda function that connect
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-connect-rds-iam) repository.
 Connecting to an Amazon RDS database in a Lambda function using PHP.
 
-```
+```php
 <?php
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
@@ -511,7 +511,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda) repository.
 Consuming an Kinesis event with Lambda using PHP.
 
-```
+```php
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 <?php
@@ -566,7 +566,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using PHP.
 
-```
+```php
 <?php
 
 # using bref/bref and bref/logger for simplicity
@@ -630,7 +630,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using PHP.
 
-```
+```php
 <?php
 
 require __DIR__.'/vendor/autoload.php';
@@ -679,7 +679,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-msk-to-lambda) repository.
 Consuming an Amazon MSK event with Lambda using PHP.
 
-```
+```php
 <?php
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -745,7 +745,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using PHP.
 
-```
+```php
 <?php
 
 use Bref\Context\Context;
@@ -801,7 +801,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sns-to-lambda) repository.
 Consuming an SNS event with Lambda using PHP.
 
-```
+```php
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 <?php
@@ -848,7 +848,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda) repository.
 Consuming an SQS event with Lambda using PHP.
 
-```
+```php
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 <?php
@@ -896,7 +896,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda-with-batch-item-handling) repository.
 Reporting Kinesis batch item failures with Lambda using PHP.
 
-```
+```php
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 <?php
@@ -968,7 +968,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using PHP.
 
-```
+```php
 <?php
 
 # using bref/bref and bref/logger for simplicity
@@ -1038,7 +1038,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using PHP.
 
-```
+```php
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 <?php

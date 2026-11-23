@@ -105,7 +105,7 @@ The following policy allows access to S3 buckets. Edit this policy to allow acce
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -183,7 +183,7 @@ The following policy provides the access needed to the `DataAccessRole` used for
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

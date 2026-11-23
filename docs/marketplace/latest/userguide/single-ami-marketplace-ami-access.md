@@ -50,7 +50,7 @@ If your AMI includes FPGA images (AFIs), you must also grant AWS Marketplace add
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[

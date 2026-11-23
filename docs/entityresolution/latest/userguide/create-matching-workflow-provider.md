@@ -47,7 +47,7 @@ Before you create a ID mapping workflow with LiveRamp, add the following permiss
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -236,7 +236,7 @@ Before you create a matching workflow with TransUnion, add the following permiss
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

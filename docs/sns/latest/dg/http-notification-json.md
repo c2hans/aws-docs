@@ -45,7 +45,7 @@ Amazon SNS represents the message attributes that you attached to the published 
 
 The following HTTP POST message is an example of a `Notification` message to an HTTP endpoint.
 
-```
+```http
 POST / HTTP/1.1
 x-amz-sns-message-type: Notification
 x-amz-sns-message-id: 22b80b92-fdea-4c2c-8f9d-bdfb0c7bf324

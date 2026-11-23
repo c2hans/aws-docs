@@ -18,6 +18,6 @@ On the consumer cluster, you can query datashare objects using fully qualified o
 
 1. Query tables using SELECT commands. For example:
 
-   ```
+   ```SQL
    select top 10 * from test_db.public.event;
    ```

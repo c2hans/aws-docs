@@ -19,7 +19,7 @@ The following page contains known solutions for troubleshooting your HyperPod EK
 
 **The EKS add-on fails to install**
 
-For the EKS add-on installation to succeed, you will need to have a Kubernets version >= 1.30. To update, see [Update Kubernetes version](https://docs.aws.amazon.com/eks/latest/userguide/update-cluster.html).
+For the EKS add-on installation to succeed, you will need to have a Kubernets version >= 1.31. To update, see [Update Kubernetes version](https://docs.aws.amazon.com/eks/latest/userguide/update-cluster.html).
 
 For the EKS add-on installation to succeed, all of the nodes need to be in **Ready** status and all of the pods need to be in **Running** status.
 
@@ -66,7 +66,7 @@ If your unallocated resource pool capacity is less than expected:
 
 1. **Check node ready status**
 
-   ```
+   ```bash
    kubectl get nodes
    ```
 
@@ -74,7 +74,7 @@ If your unallocated resource pool capacity is less than expected:
 
 1. **Check node schedulable status**
 
-   ```
+   ```bash
    kubectl get nodes -o custom-columns=NAME:.metadata.name,UNSCHEDULABLE:.spec.unschedulable
    ```
 
@@ -82,7 +82,7 @@ If your unallocated resource pool capacity is less than expected:
 
 1. **List unallocated resource sharing ClusterQueues:**
 
-   ```
+   ```bash
    kubectl get clusterqueue | grep hyperpod-ns-idle-resource-sharing
    ```
 
@@ -90,7 +90,7 @@ If your unallocated resource pool capacity is less than expected:
 
 1. **Verify unallocated resource sharing quota:**
 
-   ```
+   ```bash
    kubectl describe clusterqueue hyperpod-ns-idle-resource-sharing-<index>
    ```
 
@@ -100,7 +100,7 @@ If your unallocated resource pool capacity is less than expected:
 
 1. **Check MIG configuration status (GPU nodes):**
 
-   ```
+   ```bash
    kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.metadata.labels.nvidia\.com/mig\.config\.state}{"\n"}{end}'
    ```
 

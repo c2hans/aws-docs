@@ -15,6 +15,17 @@ Type: String
 Length Constraints: Maximum length of 256.
 Required: No
 
+ ** HostedZoneTier **   <a name="Route53-Type-HostedZoneConfig-HostedZoneTier"></a>
+The tier of the hosted zone. The tier controls which features you get and which optional features you can turn on. Valid values are the following:
+STANDARD
+ `STANDARD` is the default tier for new hosted zones.
+ADVANCED
+ `ADVANCED` is a tier that includes Change History and offers more optional features.
+If you don't specify a tier when you create a hosted zone, Route 53 uses `STANDARD`. Route 53 always returns this value.
+Type: String
+Valid Values: `STANDARD | ADVANCED`
+Required: No
+
  ** PrivateZone **   <a name="Route53-Type-HostedZoneConfig-PrivateZone"></a>
 A value that indicates whether this is a private hosted zone.
 Type: Boolean

@@ -25,7 +25,7 @@ The following code example shows how to get started using AWS IoT SiteWise.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ios->listassetmodels( ). " oo_result is returned for testing purposes. "
         DATA(lt_asset_models) = oo_result->get_assetmodelsummaries( ).
@@ -47,7 +47,7 @@ The following code example shows how to use `BatchPutAssetPropertyValue`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ios->batchputassetpropertyvalue(
           it_entries = it_entries
@@ -67,7 +67,7 @@ The following code example shows how to use `CreateAsset`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ios->createasset(
           iv_assetname = iv_asset_name
@@ -88,7 +88,7 @@ The following code example shows how to use `CreateAssetModel`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ios->createassetmodel(
           iv_assetmodelname = iv_asset_model_name
@@ -110,7 +110,7 @@ The following code example shows how to use `CreateGateway`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ios->creategateway(
           iv_gatewayname = iv_gateway_name
@@ -143,7 +143,7 @@ The following code example shows how to use `DeleteAsset`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ios->deleteasset(
           iv_assetid = iv_asset_id
@@ -163,7 +163,7 @@ The following code example shows how to use `DeleteAssetModel`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ios->deleteassetmodel(
           iv_assetmodelid = iv_asset_model_id
@@ -183,7 +183,7 @@ The following code example shows how to use `DeleteGateway`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ios->deletegateway(
           iv_gatewayid = iv_gateway_id
@@ -203,7 +203,7 @@ The following code example shows how to use `DescribeGateway`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ios->describegateway(
           iv_gatewayid = iv_gateway_id
@@ -223,7 +223,7 @@ The following code example shows how to use `GetAssetPropertyValue`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ios->getassetpropertyvalue(
           iv_assetid = iv_asset_id
@@ -244,7 +244,7 @@ The following code example shows how to use `ListAssetModelProperties`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ios->listassetmodelproperties(
           iv_assetmodelid = iv_asset_model_id
@@ -265,7 +265,7 @@ The following code example shows how to use `ListAssetModels`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ios->listassetmodels( ). " oo_result is returned for testing purposes. "
         DATA(lt_asset_models) = oo_result->get_assetmodelsummaries( ).

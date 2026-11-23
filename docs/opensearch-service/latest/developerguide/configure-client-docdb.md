@@ -38,7 +38,7 @@ Before you create your OpenSearch Ingestion pipeline, perform the following step
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -73,7 +73,7 @@ After you have your Amazon DocumentDB pipeline prerequisites set up, [configure 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -168,7 +168,7 @@ You must provide the above Amazon EC2 permissions on the IAM role that you use t
 
 You can then configure an OpenSearch Ingestion pipeline like the following, which specifies Amazon DocumentDB as the source. Note that to populate the index name, the `getMetadata` function uses `{{documentdb_collection}}` as a metadata key. If you want to use a different index name without the `getMetadata` method, you can use the configuration `index: "{{my_index_name}}"`.
 
-```
+```YAML
 version: "2"
 documentdb-pipeline:
   source:

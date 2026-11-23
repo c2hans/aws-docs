@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -227,7 +227,7 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -264,7 +264,7 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

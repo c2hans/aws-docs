@@ -40,7 +40,7 @@ For more details, refer to [Twitch’s app registration documentation](https://d
 
 To configure Twitch as an outbound resource provider, use the following:
 
-```
+```json
 {
   "name": "Twitch",
   "credentialProviderVendor": "TwitchOauth2",

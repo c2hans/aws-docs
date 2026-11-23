@@ -21,7 +21,7 @@ To provide permissions, attach the following policy to the IAM roles of your use
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

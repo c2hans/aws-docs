@@ -22,7 +22,7 @@ When attaching masking policies to paths of SUPER type columns, consider the fol
 **Attaching masking policies to SUPER paths**
 The following example attaches multiple masking policies onto multiple SUPER type paths in one column.
 
-```
+```sql
 CREATE TABLE employees (
     col_person SUPER
 );
@@ -143,7 +143,7 @@ SELECT col_person FROM employees ORDER BY col_person.age;
 
 Following are some examples of invalid masking policy attachments to SUPER paths.
 
-```
+```sql
 -- This attachment fails because there is already a policy
 -- with equal priority attached to employees.name.last, which is
 -- on the same SUPER path as employees.name.
@@ -166,7 +166,7 @@ ERROR:  cannot attach masking policy for output of type "timestamp without time 
 
 Following is an example of attaching a masking policy to a SUPER path that doesn’t exist. By default, Amazon Redshift will resolve the path to `NULL`.
 
-```
+```sql
 ATTACH MASKING POLICY mask_first_name
 ON employees(col_person.not_exists)
 TO PUBLIC;

@@ -51,7 +51,7 @@ Admins must complete the following steps to add permissions for AWS Marketplace.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -187,7 +187,7 @@ For detailed information about Deepchecks Amazon Bedrock features and configurat
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -228,7 +228,7 @@ For detailed information about Deepchecks Amazon Bedrock features and configurat
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -301,7 +301,7 @@ When propagating identities, SageMaker AI verifies whether an AWS STS Session ta
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -336,7 +336,7 @@ When propagating identities, SageMaker AI verifies whether an AWS STS Session ta
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

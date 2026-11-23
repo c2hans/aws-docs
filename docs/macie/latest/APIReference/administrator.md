@@ -45,7 +45,7 @@ Retrieves information about the Amazon Macie administrator account for an accoun
 #### GetAdministratorAccountResponse schema
 <a name="administrator-response-body-getadministratoraccountresponse-example"></a>
 
-```
+```json
 {
   "administrator": {
     "accountId": "string",
@@ -59,7 +59,7 @@ Retrieves information about the Amazon Macie administrator account for an accoun
 #### ValidationException schema
 <a name="administrator-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -68,7 +68,7 @@ Retrieves information about the Amazon Macie administrator account for an accoun
 #### ServiceQuotaExceededException schema
 <a name="administrator-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -77,7 +77,7 @@ Retrieves information about the Amazon Macie administrator account for an accoun
 #### AccessDeniedException schema
 <a name="administrator-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -86,7 +86,7 @@ Retrieves information about the Amazon Macie administrator account for an accoun
 #### ResourceNotFoundException schema
 <a name="administrator-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -95,7 +95,7 @@ Retrieves information about the Amazon Macie administrator account for an accoun
 #### ConflictException schema
 <a name="administrator-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -104,7 +104,7 @@ Retrieves information about the Amazon Macie administrator account for an accoun
 #### ThrottlingException schema
 <a name="administrator-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -113,7 +113,7 @@ Retrieves information about the Amazon Macie administrator account for an accoun
 #### InternalServerException schema
 <a name="administrator-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

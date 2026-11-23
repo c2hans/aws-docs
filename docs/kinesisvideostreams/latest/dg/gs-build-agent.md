@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-build-a
 
    After extraction, your folder structure will look like the following:
 
-   ```
+   ```bash
    kvs-edge-agent/LICENSE
    kvs-edge-agent/THIRD-PARTY-LICENSES
    kvs-edge-agent/pom.xml
@@ -62,7 +62,7 @@ The jar included with the `kvs-edge-agent.tar.gz` does not have the dependencies
 
 1. Clear the GStreamer cache. Type:
 
-   ```
+   ```bash
    rm ~/.cache/gstreamer-1.0/registry.{{your-os-architecture}}.bin
    ```
 
@@ -79,7 +79,7 @@ The jar included with the `kvs-edge-agent.tar.gz` does not have the dependencies
 
    For example:
 
-   ```
+   ```java
    java -Djava.library.path=/{{download-location}}/kvs-edge-agent/KvsEdgeComponent/artifacts/aws.kinesisvideo.KvsEdgeComponent/{{EdgeAgentVersion}} \
      --add-opens java.base/jdk.internal.misc=ALL-UNNAMED \
      -Dio.netty.tryReflectionSetAccessible=true \
@@ -97,7 +97,7 @@ Run the java command above from the same directory as `/{{download-location}}/kv
 
       For more information, see [StartEdgeConfigurationUpdate](https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/API_StartEdgeConfigurationUpdate.html).
 
-      ```
+      ```json
       {
           "StreamARN": "arn:aws:kinesisvideo:{{your-region}}:{{your-account-id}}:stream/{{your-stream}}/{{0123456789012}}",
           "EdgeConfig": {
@@ -132,7 +132,7 @@ Run the java command above from the same directory as `/{{download-location}}/kv
 
    1. To send the file to the Amazon Kinesis Video Streams Edge Agent, type the following in the AWS CLI:
 
-      ```
+      ```bash
       aws kinesisvideo start-edge-configuration-update --cli-input-json "file://{{example-edge-configuration}}.json"
       ```
 

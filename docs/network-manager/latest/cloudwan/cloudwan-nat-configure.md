@@ -155,7 +155,7 @@ In the following examples, replace the attachment ID, core network ID, and CIDRs
 
 The following command enables NAT on an attachment and configures two rules:
 
-```
+```bash
 aws networkmanager update-attachment-nat-configuration \
     --attachment-id {{my-attachment-id}} \
     --nat-gateway-support ENABLE \
@@ -181,7 +181,7 @@ The list you supply replaces all existing rules on the attachment, so include ev
 
 The following command replaces the existing rules with a single rule:
 
-```
+```bash
 aws networkmanager update-attachment-nat-configuration \
     --attachment-id {{my-attachment-id}} \
     --nat-gateway-rules '[
@@ -194,7 +194,7 @@ aws networkmanager update-attachment-nat-configuration \
 
 The following command disables NAT on an attachment:
 
-```
+```bash
 aws networkmanager update-attachment-nat-configuration \
     --attachment-id {{my-attachment-id}} \
     --nat-gateway-support DISABLE
@@ -207,7 +207,7 @@ When you disable NAT, traffic on the attachment is no longer translated. Cloud W
 
 To remove all rules, pass an empty list. NAT can't stay enabled with zero rules, so if NAT is enabled, disable it in the same call:
 
-```
+```bash
 aws networkmanager update-attachment-nat-configuration \
     --attachment-id {{my-attachment-id}} \
     --nat-gateway-support DISABLE \
@@ -221,14 +221,14 @@ You can view the NAT configuration for one attachment, or for all attachments in
 
 The following command lists the NAT configuration for one attachment:
 
-```
+```bash
 aws networkmanager list-attachment-nat-configurations \
     --attachment-id {{my-attachment-id}}
 ```
 
 The following command lists the NAT configurations for all attachments in a core network:
 
-```
+```bash
 aws networkmanager list-attachment-nat-configurations \
     --core-network-id {{my-core-network-id}}
 ```

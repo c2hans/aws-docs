@@ -15,7 +15,7 @@ You apply mixins using the `.with()` method, which is available on all construct
 
 **Example**
 
-```
+```javascript
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
 const bucket = new s3.CfnBucket(this, 'MyBucket')
@@ -23,7 +23,7 @@ const bucket = new s3.CfnBucket(this, 'MyBucket')
   .with(new s3.mixins.BucketBlockPublicAccess());
 ```
 
-```
+```javascript
 const s3 = require('aws-cdk-lib/aws-s3');
 
 const bucket = new s3.CfnBucket(this, 'MyBucket')
@@ -31,7 +31,7 @@ const bucket = new s3.CfnBucket(this, 'MyBucket')
   .with(new s3.mixins.BucketBlockPublicAccess());
 ```
 
-```
+```python
 import aws_cdk.aws_s3 as s3
 
 bucket = s3.CfnBucket(self, "MyBucket") \
@@ -39,7 +39,7 @@ bucket = s3.CfnBucket(self, "MyBucket") \
     .with_(s3.mixins.BucketBlockPublicAccess())
 ```
 
-```
+```java
 import software.amazon.awscdk.services.s3.*;
 
 CfnBucket bucket = new CfnBucket(this, "MyBucket");
@@ -47,7 +47,7 @@ bucket.with(new BucketVersioning());
 bucket.with(new BucketBlockPublicAccess());
 ```
 
-```
+```csharp
 using Amazon.CDK.AWS.S3;
 
 var bucket = new CfnBucket(this, "MyBucket");
@@ -55,7 +55,7 @@ bucket.With(new BucketVersioning());
 bucket.With(new BucketBlockPublicAccess());
 ```
 
-```
+```go
 bucket := awss3.NewCfnBucket(stack, jsii.String("MyBucket"), nil)
 bucket.With(awss3.NewBucketVersioning())
 bucket.With(awss3.NewBucketBlockPublicAccess())
@@ -72,7 +72,7 @@ The following example shows how to apply mixins to both L1 and L2 constructs:
 
 **Example**
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
@@ -86,7 +86,7 @@ new s3.Bucket(this, 'L2Bucket', {
 }).with(new s3.mixins.BucketAutoDeleteObjects());
 ```
 
-```
+```javascript
 const cdk = require('aws-cdk-lib');
 const s3 = require('aws-cdk-lib/aws-s3');
 
@@ -100,7 +100,7 @@ new s3.Bucket(this, 'L2Bucket', {
 }).with(new s3.mixins.BucketAutoDeleteObjects());
 ```
 
-```
+```python
 import aws_cdk as cdk
 import aws_cdk.aws_s3 as s3
 
@@ -114,7 +114,7 @@ s3.Bucket(self, "L2Bucket",
 ).with_(s3.mixins.BucketAutoDeleteObjects())
 ```
 
-```
+```java
 import software.amazon.awscdk.*;
 import software.amazon.awscdk.services.s3.*;
 
@@ -129,7 +129,7 @@ Bucket l2Bucket = Bucket.Builder.create(this, "L2Bucket")
 l2Bucket.with(new BucketAutoDeleteObjects());
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.S3;
 
@@ -145,7 +145,7 @@ var l2Bucket = new Bucket(this, "L2Bucket", new BucketProps
 l2Bucket.With(new BucketAutoDeleteObjects());
 ```
 
-```
+```go
 l1Bucket := awss3.NewCfnBucket(stack, jsii.String("L1Bucket"), nil)
 l1Bucket.With(awss3.NewBucketVersioning())
 
@@ -177,7 +177,7 @@ The `Mixins.of()` API provides more control over how mixins are applied across a
 
 **Example**
 
-```
+```javascript
 import { Mixins } from 'aws-cdk-lib';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
@@ -185,7 +185,7 @@ import * as s3 from 'aws-cdk-lib/aws-s3';
 Mixins.of(stack).apply(new s3.mixins.BucketVersioning());
 ```
 
-```
+```javascript
 const { Mixins } = require('aws-cdk-lib');
 const s3 = require('aws-cdk-lib/aws-s3');
 
@@ -193,7 +193,7 @@ const s3 = require('aws-cdk-lib/aws-s3');
 Mixins.of(stack).apply(new s3.mixins.BucketVersioning());
 ```
 
-```
+```python
 from aws_cdk import Mixins
 import aws_cdk.aws_s3 as s3
 
@@ -201,7 +201,7 @@ import aws_cdk.aws_s3 as s3
 Mixins.of(stack).apply(s3.mixins.BucketVersioning())
 ```
 
-```
+```java
 import software.amazon.awscdk.Mixins;
 import software.amazon.awscdk.services.s3.*;
 
@@ -209,7 +209,7 @@ import software.amazon.awscdk.services.s3.*;
 Mixins.of(stack).apply(new BucketVersioning());
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.S3;
 
@@ -217,7 +217,7 @@ using Amazon.CDK.AWS.S3;
 Mixins.Of(stack).Apply(new BucketVersioning());
 ```
 
-```
+```go
 awscdk.Mixins_Of(stack, nil).Apply(awss3.NewBucketVersioning())
 ```
 
@@ -225,42 +225,42 @@ By default, constructs that don’t support the mixin are silently skipped. Use 
 
 **Example**
 
-```
+```javascript
 // Throws an error if any construct in the scope doesn't support the mixin
 Mixins.of(stack)
   .requireAll()
   .apply(new s3.mixins.BucketVersioning());
 ```
 
-```
+```javascript
 // Throws an error if any construct in the scope doesn't support the mixin
 Mixins.of(stack)
   .requireAll()
   .apply(new s3.mixins.BucketVersioning());
 ```
 
-```
+```python
 # Throws an error if any construct in the scope doesn't support the mixin
 Mixins.of(stack) \
     .require_all() \
     .apply(s3.mixins.BucketVersioning())
 ```
 
-```
+```java
 // Throws an error if any construct in the scope doesn't support the mixin
 Mixins.of(stack)
         .requireAll()
         .apply(new BucketVersioning());
 ```
 
-```
+```csharp
 // Throws an error if any construct in the scope doesn't support the mixin
 Mixins.Of(stack)
     .RequireAll()
     .Apply(new BucketVersioning());
 ```
 
-```
+```go
 awscdk.Mixins_Of(stack, nil).RequireAll().Apply(awss3.NewBucketVersioning())
 ```
 

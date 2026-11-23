@@ -20,7 +20,7 @@ In this step, you create the workflow prototype of the state machine that passes
 **Important**
 Make sure to replace the Amazon Resource Name (ARN) of the Lambda function in the following code with the ARN of the function you'll create in [Step 2](#itembatcher-single-item-process-config-resource).
 
-  ```
+  ```json
   {
     "StartAt": "Pass",
     "States": {
@@ -112,7 +112,7 @@ Ensure that your Lambda function is under the same AWS Region as your state mach
 
 1. Copy the following code for the Lambda function and paste it into the **Code source** section of your Lambda function.
 
-   ```
+   ```python
    import json
 
    def lambda_handler(event, context):
@@ -145,7 +145,7 @@ When you run the [state machine](#itembatcher-single-item-process-create-state-m
 
 The following example shows the data passed to one of the [`ProcessSingleItem`](#itembatcher-single-item-process-config-resource) function invocations inside a child workflow execution.
 
-```
+```json
 {
   "MyMultiplicationFactor": 7,
   "MyItem": 1
@@ -154,7 +154,7 @@ The following example shows the data passed to one of the [`ProcessSingleItem`](
 
 Given this input, the following example shows the output that is returned by the Lambda function.
 
-```
+```json
 {
   "statusCode": 200,
   "multiplied": 7
@@ -163,7 +163,7 @@ Given this input, the following example shows the output that is returned by the
 
 The following example shows the output JSON array for one of the child workflow executions.
 
-```
+```json
 [
   {
     "statusCode": 200,
@@ -184,7 +184,7 @@ The state machine returns the following output that contains four arrays for the
 
 Finally, the state machine output is an array named `multiplied` that combines all the multiplication results returned for the four child workflow executions.
 
-```
+```json
 [
   [
     {
@@ -241,7 +241,7 @@ To combine all the multiplication results returned by the child workflow executi
 
 To use the `ResultSelector` field, update your state machine definition as shown in the following example.
 
-```
+```json
 {
   "StartAt": "Pass",
   "States": {
@@ -268,7 +268,7 @@ To use the `ResultSelector` field, update your state machine definition as shown
 
 The updated state machine returns a consolidated output array as shown in the following example.
 
-```
+```json
 {
   "multiplied": [7, 14, 21, 28, 35, 42, 49, 56, 63, 70]
 }

@@ -70,7 +70,7 @@ To view a code example for using the `$nin` command, choose the tab for the lang
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function findBooksNotInCategories(categories) {
@@ -91,7 +91,7 @@ findBooksNotInCategories(['Fiction', 'Mystery']);
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def find_books_not_in_categories(categories):

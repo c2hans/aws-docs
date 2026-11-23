@@ -25,7 +25,7 @@ Run pre-configured training recipes using [SageMaker AI Recipes](https://github.
 Python SDK V3 (ModelTrainer)
 Use the `ModelTrainer` class from the SageMaker AI Python SDK to submit training jobs programmatically with full control over instance selection and configuration.
 
-```
+```python
 from sagemaker.train import ModelTrainer
 from sagemaker.train.configs import Compute, InputData
 

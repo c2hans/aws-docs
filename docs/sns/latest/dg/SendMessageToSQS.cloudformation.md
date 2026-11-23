@@ -21,7 +21,7 @@ MyRDMessageQueueGroup is an IAM group whose members have permission to read and 
 
 The following listing shows the CloudFormation template contents.
 
-```
+```json
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
 

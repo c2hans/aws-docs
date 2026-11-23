@@ -79,7 +79,7 @@ You can create an algorithm by using either the SageMaker AI console or the Sage
 
    1. For **Hyperparameter specification**, specify the hyperparameters that your algorithm supports by editing the JSON object. For each hyperparameter that your algorithm supports, construct a JSON block similar to the following:
 
-      ```
+      ```JSON
       {
       "DefaultValue": "5",
       "Description": "The first hyperparameter",

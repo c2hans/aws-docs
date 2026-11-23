@@ -32,7 +32,7 @@ For more information, see [Manage components](https://docs.aws.amazon.com/greeng
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
     def delete_component(self, component_version_arn: str) -> None:
         """
         Deletes a specific version of a component.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automating-
 ---
 
 # Document generation
-<a name="document-generation"></a>
 
 The *documentation generation* component converts scanned AWS infrastructure data into AI-powered analyses and structured documentation. It uses [Claude by Anthropic in Amazon Bedrock](https://aws.amazon.com/bedrock/anthropic/) to perform in-depth analysis, produce recommendations, and format results as Markdown.
 

@@ -12,4 +12,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 
 ![This image shows how Availability Zones consist of one or more physical data centers that are redundantly connected to each other and the internet](https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/images/availability-zones.png)
 
+*Availability Zones consist of one or more physical data centers that are redundantly connected to each other and the internet*
+
  Availability Zones give you the ability to operate production applications that are more highly available, fault tolerant, and scalable than would be possible from a single data center. When your application uses multiple Availability Zones, it’s better isolated and protected from issues that impact a single Availability Zone’s physical infrastructure. This helps you build services that are redundant across Availability Zones and, if architected correctly, remain operational even if one Availability Zone experiences failures.

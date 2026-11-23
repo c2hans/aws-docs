@@ -32,6 +32,11 @@ Metric specific configuration for centralization destination metrics.
 Type: [DestinationMetricsConfiguration](API_DestinationMetricsConfiguration.md) object
 Required: No
 
+ ** DestinationProfilesConfiguration **   <a name="cwoa-Type-CentralizationRuleDestination-DestinationProfilesConfiguration"></a>
+Profile-specific configuration for centralization destination profiles.
+Type: [DestinationProfilesConfiguration](API_DestinationProfilesConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_CentralizationRuleDestination_SeeAlso"></a>
 

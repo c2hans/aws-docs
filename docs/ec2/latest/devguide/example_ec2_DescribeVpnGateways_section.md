@@ -58,7 +58,7 @@ For more information, see [How AWS Site-to-Site VPN works](https://docs.aws.amaz
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified virtual private gateway.**
 
-```
+```powershell
 Get-EC2VpnGateway -VpnGatewayId vgw-1a2b3c4d
 ```
 **Output:**
@@ -73,7 +73,7 @@ VpnGatewayId     : vgw-1a2b3c4d
 ```
 **Example 2: This example describes any virtual private gateway whose state is either pending or available.**
 
-```
+```powershell
 $filter = New-Object Amazon.EC2.Model.Filter
 $filter.Name = "state"
 $filter.Values = @( "pending", "available" )
@@ -82,7 +82,7 @@ Get-EC2VpnGateway -Filter $filter
 ```
 **Example 3: This example describes all your virtual private gateways.**
 
-```
+```powershell
 Get-EC2VpnGateway
 ```
 +  For API details, see [DescribeVpnGateways](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -90,7 +90,7 @@ Get-EC2VpnGateway
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified virtual private gateway.**
 
-```
+```powershell
 Get-EC2VpnGateway -VpnGatewayId vgw-1a2b3c4d
 ```
 **Output:**
@@ -105,7 +105,7 @@ VpnGatewayId     : vgw-1a2b3c4d
 ```
 **Example 2: This example describes any virtual private gateway whose state is either pending or available.**
 
-```
+```powershell
 $filter = New-Object Amazon.EC2.Model.Filter
 $filter.Name = "state"
 $filter.Values = @( "pending", "available" )
@@ -114,7 +114,7 @@ Get-EC2VpnGateway -Filter $filter
 ```
 **Example 3: This example describes all your virtual private gateways.**
 
-```
+```powershell
 Get-EC2VpnGateway
 ```
 +  For API details, see [DescribeVpnGateways](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -206,7 +206,7 @@ The following example allows Amazon Pinpoint and Amazon SNS to send SMS messages
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -284,7 +284,7 @@ The following example allows Amazon Pinpoint and Amazon SNS to send SMS messages
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

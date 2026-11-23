@@ -19,7 +19,7 @@ Here we create two identical Amazon SQS queues, one of which will serve as the d
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 import com.amazonaws.services.sqs.model.AmazonSQSException;
@@ -27,7 +27,7 @@ import com.amazonaws.services.sqs.model.AmazonSQSException;
 
  **Code**
 
-```
+```java
 final AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
 
 // Create source queue
@@ -60,7 +60,7 @@ To set the redrive policy for your source queue, call the AmazonSQS class' `setQ
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.model.GetQueueAttributesRequest;
 import com.amazonaws.services.sqs.model.GetQueueAttributesResult;
 import com.amazonaws.services.sqs.model.SetQueueAttributesRequest;
@@ -68,7 +68,7 @@ import com.amazonaws.services.sqs.model.SetQueueAttributesRequest;
 
  **Code**
 
-```
+```java
 String dl_queue_url = sqs.getQueueUrl(dl_queue_name)
                          .getQueueUrl();
 

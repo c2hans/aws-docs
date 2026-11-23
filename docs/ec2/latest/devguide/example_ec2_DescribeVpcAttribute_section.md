@@ -56,7 +56,7 @@ For more information, see [DNS attributes for your VPC](https://docs.aws.amazon.
 **Tools for PowerShell V4**
 **Example 1: This example describes the 'enableDnsSupport' attribute.**
 
-```
+```powershell
 Get-EC2VpcAttribute -VpcId vpc-12345678 -Attribute enableDnsSupport
 ```
 **Output:**
@@ -68,7 +68,7 @@ True
 ```
 **Example 2: This example describes the 'enableDnsHostnames' attribute.**
 
-```
+```powershell
 Get-EC2VpcAttribute -VpcId vpc-12345678 -Attribute enableDnsHostnames
 ```
 **Output:**
@@ -83,7 +83,7 @@ True
 **Tools for PowerShell V5**
 **Example 1: This example describes the 'enableDnsSupport' attribute.**
 
-```
+```powershell
 Get-EC2VpcAttribute -VpcId vpc-12345678 -Attribute enableDnsSupport
 ```
 **Output:**
@@ -95,7 +95,7 @@ True
 ```
 **Example 2: This example describes the 'enableDnsHostnames' attribute.**
 
-```
+```powershell
 Get-EC2VpcAttribute -VpcId vpc-12345678 -Attribute enableDnsHostnames
 ```
 **Output:**

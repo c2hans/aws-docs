@@ -40,7 +40,7 @@ From the console, follow these steps to create a run cache.
 
 Use the **create-run-cache** CLI command to create a run cache. The default cache behavior is `CACHE_ON_FAILURE`.
 
-```
+```bash
 aws omics create-run-cache \
       --name "workflow 123 run cache" \
       --description "my run cache" \
@@ -51,7 +51,7 @@ aws omics create-run-cache \
 
 If the create is successful, you receive a response with the following fields.
 
-```
+```json
 {
   "arn": "string",
   "id": "string",

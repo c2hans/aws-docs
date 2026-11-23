@@ -34,7 +34,7 @@ To create a CloudFront distribution, use the [CreateDistribution](https://docs.a
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -42,7 +42,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function createS3Distribution($cloudFrontClient, $distribution)
 {
     try {
@@ -148,7 +148,7 @@ To retrieve the status and details of a specified CloudFront distribution, use t
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -156,7 +156,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function getDistribution($cloudFrontClient, $distributionId)
 {
     try {
@@ -210,7 +210,7 @@ Get a list of existing CloudFront distributions in the specified AWS Region from
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -218,7 +218,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function listDistributions($cloudFrontClient)
 {
     try {
@@ -262,7 +262,7 @@ To update a specified CloudFront distribution, use the [UpdateDistribution](http
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\CloudFront\CloudFrontClient;
@@ -271,7 +271,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function updateDistribution(
     $cloudFrontClient,
     $distributionId,
@@ -417,7 +417,7 @@ To disable the specified CloudFront distribution, use the [DisableDistribution](
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -425,7 +425,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function disableDistribution(
     $cloudFrontClient,
     $distributionId,
@@ -562,7 +562,7 @@ To remove a specified CloudFront distribution, use the [DeleteDistribution](http
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -570,7 +570,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function deleteDistribution($cloudFrontClient, $distributionId, $eTag)
 {
     try {

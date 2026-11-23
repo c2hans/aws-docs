@@ -14,7 +14,7 @@ The following example uses Amazon S3. However, the concepts are the same for any
 
 The following code example shows using a waiter function instead of writing polling logic to wait for a bucket to exist after being created.
 
-```
+```rust
 use std::time::Duration;
 use aws_config::BehaviorVersion;
 // Import Waiters trait to get `wait_until_<Condition>` methods on Client.

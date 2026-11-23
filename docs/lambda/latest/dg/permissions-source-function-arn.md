@@ -36,7 +36,7 @@ For example, suppose your Lambda function code makes an `s3:PutObject` call that
 **Example policy granting a specific Event Function access to an Amazon S3 resource**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -65,7 +65,7 @@ You can also use `lambda:SourceFunctionArn` in SCPs. For example, suppose you wa
 **Example policy denying access to Amazon S3 under specific conditions**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

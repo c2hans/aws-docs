@@ -25,7 +25,7 @@ The following example demonstrates omitting the `--targets`, `--max-errors`, and
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm register-task-with-maintenance-window \
     --window-id "mw-ab12cd34eEXAMPLE" \
     --service-role-arn "arn:aws:iam::123456789012:role/MaintenanceWindowAndAutomationRole" \
@@ -39,7 +39,7 @@ aws ssm register-task-with-maintenance-window \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm register-task-with-maintenance-window ^
     --window-id "mw-ab12cd34eEXAMPLE" ^
     --service-role-arn "arn:aws:iam::123456789012:role/MaintenanceWindowAndAutomationRole" ^

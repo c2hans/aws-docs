@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automating-
 ---
 
 # Automating AWS infrastructure documentation generation and analysis
-<a name="introduction"></a>
 
 *Vijit Vashishtha, Mansi Doshi, Ishita Gupta, and Rohit Saha, Amazon Web Services*
 

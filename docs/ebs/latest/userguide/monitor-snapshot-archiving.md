@@ -11,7 +11,7 @@ The following events are available:
 
   The following is an example of an event that is emitted when a snapshot archive action succeeds.
 
-  ```
+  ```json
   {
      "version": "0",
      "id": "01234567-0123-0123-0123-012345678901",
@@ -37,7 +37,7 @@ The following events are available:
 
   The following is an example of an event that is emitted when a snapshot archive action fails.
 
-  ```
+  ```json
   {
      "version": "0",
     "id": "01234567-0123-0123-0123-012345678901",
@@ -65,7 +65,7 @@ The following events are available:
 
   The following is an example of an event that is emitted when a permanent restore action succeeds.
 
-  ```
+  ```json
   {
      "version": "0",
     "id": "01234567-0123-0123-0123-012345678901",
@@ -91,7 +91,7 @@ The following events are available:
 
   The following is an example of an event that is emitted when a permanent restore action fails.
 
-  ```
+  ```json
   {
      "version": "0",
     "id": "01234567-0123-0123-0123-012345678901",
@@ -119,7 +119,7 @@ The following events are available:
 
   The following is an example of an event that is emitted when a temporary restore action succeeds.
 
-  ```
+  ```json
   {
      "version": "0",
     "id": "01234567-0123-0123-0123-012345678901",
@@ -147,7 +147,7 @@ The following events are available:
 
   The following is an example of an event that is emitted when a temporary restore action fails.
 
-  ```
+  ```json
   {
      "version": "0",
     "id": "01234567-0123-0123-0123-012345678901",
@@ -175,7 +175,7 @@ The following events are available:
 
   The following is an example.
 
-  ```
+  ```json
   {
      "version": "0",
     "id": "01234567-0123-0123-0123-012345678901",

@@ -30,12 +30,12 @@ For more information, see [Tag your Classic Load Balancer](https://docs.aws.amaz
 **Tools for PowerShell V4**
 **Example 1: This example adds the specified tags to the specified load balancer. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Add-ELBResourceTag -LoadBalancerName my-load-balancer -Tag @{ Key="project";Value="lima" },@{ Key="department";Value="digital-media" }
 ```
 **Example 2: With PowerShell version 2, you must use New-Object to create a tag for the Tag parameter.**
 
-```
+```powershell
 $tag = New-Object Amazon.ElasticLoadBalancing.Model.Tag
 $tag.Key = "project"
 $tag.Value = "lima"
@@ -46,12 +46,12 @@ Add-ELBResourceTag -LoadBalancerName my-load-balancer -Tag $tag
 **Tools for PowerShell V5**
 **Example 1: This example adds the specified tags to the specified load balancer. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Add-ELBResourceTag -LoadBalancerName my-load-balancer -Tag @{ Key="project";Value="lima" },@{ Key="department";Value="digital-media" }
 ```
 **Example 2: With PowerShell version 2, you must use New-Object to create a tag for the Tag parameter.**
 
-```
+```powershell
 $tag = New-Object Amazon.ElasticLoadBalancing.Model.Tag
 $tag.Key = "project"
 $tag.Value = "lima"

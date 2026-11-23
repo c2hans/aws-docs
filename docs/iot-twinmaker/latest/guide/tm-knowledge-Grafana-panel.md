@@ -26,7 +26,7 @@ To use the AWS IoT TwinMaker query editor in Grafana, you must have an IAM role 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

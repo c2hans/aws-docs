@@ -30,7 +30,7 @@ For more information, see [Manage directories for WorkSpaces Personal](https://d
 **Tools for PowerShell V4**
 **Example 1: This sample enables Internet Access and Maintenance Mode to true as default values while creating a Workspace**
 
-```
+```powershell
 Edit-WKSWorkspaceCreationProperty -Region us-west-2 -ResourceId d-123454a369 -WorkspaceCreationProperties_EnableInternetAccess $true -WorkspaceCreationProperties_EnableMaintenanceMode $true
 ```
 +  For API details, see [ModifyWorkspaceCreationProperties](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -38,7 +38,7 @@ Edit-WKSWorkspaceCreationProperty -Region us-west-2 -ResourceId d-123454a369 -Wo
 **Tools for PowerShell V5**
 **Example 1: This sample enables Internet Access and Maintenance Mode to true as default values while creating a Workspace**
 
-```
+```powershell
 Edit-WKSWorkspaceCreationProperty -Region us-west-2 -ResourceId d-123454a369 -WorkspaceCreationProperties_EnableInternetAccess $true -WorkspaceCreationProperties_EnableMaintenanceMode $true
 ```
 +  For API details, see [ModifyWorkspaceCreationProperties](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

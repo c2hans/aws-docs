@@ -41,7 +41,7 @@ The following are tool definition components and explanations:
 
 Here's a simple weather tool definition
 
-```
+```json
 {
   "toolSpec": {
     "name": "get_weather",
@@ -72,7 +72,7 @@ Here's a simple weather tool definition
 
 Tool configuration is passed to Nova 2 Sonic in the `promptStart` event along with audio and text output settings:
 
-```
+```json
 {
     "event": {
         "promptStart": {
@@ -139,7 +139,7 @@ Nova 2 Sonic supports three tool choice parameters to control when and which too
 
 Auto (default)
 
-```
+```json
 "toolChoice": {
     "auto": {}
 }
@@ -147,7 +147,7 @@ Auto (default)
 
 Any:
 
-```
+```json
 "toolChoice": {
     "any": {}
 }
@@ -155,7 +155,7 @@ Any:
 
 Specific Tool:
 
-```
+```json
 "toolChoice": {
     "tool": {
         "name": "get_weather"
@@ -180,7 +180,7 @@ When Amazon Nova 2 Sonic determines that a tool is needed, it sends a `toolUse` 
 
 Example tool use event
 
-```
+```json
 {
     "event": {
         "toolUse": {
@@ -209,7 +209,7 @@ Processing steps
 
 Example ToolResult Event
 
-```
+```json
 {
     "event": {
         "toolResult": {

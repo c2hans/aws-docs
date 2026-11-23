@@ -57,7 +57,7 @@ To decrypt data, the same encryption context is included in the request. VPC Lat
 
 The following example shows the encryption context in the output of an operation such as `CreateGrant`.
 
-```
+```json
 "encryptionContextEquals": {
     "aws:acm:arn": "arn:aws:acm:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
     "aws:vpc-lattice:arn": "arn:aws:vpc-lattice:us-west-2:111122223333:service/svc-0b23c1234567890ab"
@@ -76,7 +76,7 @@ You can view the `CreateGrant` operation as an event in **CloudTrail**, **Event 
 
 The following is an example event record in the CloudTrail event history for the `CreateGrant` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -155,7 +155,7 @@ aws kms list-grants —key-id {{your-kms-key-id}}
 
 The following is example output.
 
-```
+```json
 {
     "Grants": [
         {
@@ -187,7 +187,7 @@ VPC Lattice uses TLS Connection Manager to call the `Decrypt` operation to decry
 
 The following is an example event record in the CloudTrail event history for the `Decrypt` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

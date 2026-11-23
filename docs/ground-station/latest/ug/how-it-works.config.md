@@ -139,7 +139,7 @@ This config represents a destination node in a dataflow. It will convert the pro
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -175,7 +175,7 @@ This config represents a destination node in a dataflow. It will convert the pro
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -53,6 +53,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 
 ![ADD ALTERNATE TEXT HERE for people using assistive technology.](https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial-data-technology-lens/images/image1.png)
 
+*ADD FIGURE CAPTION HERE*
+
 1.  Identify information related to industrial activities from on-premises equipment.
 
 1.  Collect real-time data from edge devices using AWS IoT SiteWise Edge and transmit data streams securely to AWS IoT SiteWise in the cloud. Using partners like Litmus, Domatica's EasyEdge, Siemens, and Belden accelerates your integration with AWS IoT SiteWise Edge.

@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-eventinvokeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationConfig](#sam-function-eventinvokeconfiguration-destinationconfig): {{EventInvokeDestinationConfiguration}}
   [MaximumEventAgeInSeconds](#sam-function-eventinvokeconfiguration-maximumeventageinseconds): {{Integer}}
   [MaximumRetryAttempts](#sam-function-eventinvokeconfiguration-maximumretryattempts): {{Integer}}
@@ -52,7 +52,7 @@ MaximumEventAgeInSeconds example
 #### YAML
 <a name="sam-property-function-eventinvokeconfiguration--examples--maximumeventageinseconds--yaml"></a>
 
-```
+```yaml
 EventInvokeConfig:
   MaximumEventAgeInSeconds: 60
   MaximumRetryAttempts: 2

@@ -8,7 +8,7 @@ To handle and diagnose errors produced during a transfer job, see the AWS IoT Tw
 
 1. After creating and running a transfer job, call the **GetMetadataTransferJob** API:
 
-   ```
+   ```bash
    aws iottwinmaker get-metadata-transfer-job \
    --metadata-transfer-job-id your_metadata_transfer_job_id \
    --region us-east-1

@@ -30,7 +30,7 @@ Create a new Go file named `ChangeMsgVisibility.go`.
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "flag"
     "fmt"
@@ -42,7 +42,7 @@ import (
 
 Get the queue name, receipt handle of the message, and visibility duration from the command line. Ensure the visibility is from 0 (zero) seconds to 12 hours.
 
-```
+```go
 queue := flag.String("q", "", "The name of the queue")
 handle := flag.String("h", "", "The receipt handle of the message")
 visibility := flag.Int64("v", 30, "The duration, in seconds, that the message is not visible to other consumers")
@@ -64,7 +64,7 @@ if *visibility > 12*60*60 {
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file, `~/.aws/credentials` and the default region from `~/.aws/config`.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -72,7 +72,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Create a service client and call `GetQueueUrl` to retrieve the URL of the queue.
 
-```
+```go
 svc := sqs.New(sess)
 
 result, err := svc.GetQueueUrl(&sqs.GetQueueUrlInput{
@@ -82,13 +82,13 @@ result, err := svc.GetQueueUrl(&sqs.GetQueueUrlInput{
 
 The URL of the queue is in the `QueueUrl` property of the returned object.
 
-```
+```go
 queueURL := urlResult.QueueUrl
 ```
 
 Call `ChangeMessageVisibility` to change the visibility of the messages in the queue.
 
-```
+```go
 _, err := svc.ChangeMessageVisibility(&sqs.ChangeMessageVisibilityInput{
     ReceiptHandle:     handle,
     QueueUrl:          queueURL,

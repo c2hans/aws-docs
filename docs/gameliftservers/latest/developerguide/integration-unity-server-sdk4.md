@@ -34,7 +34,7 @@ Set up communication with Amazon GameLift Servers and report that the server pro
 
 The following code example shows how to set up a simple server process with Amazon GameLift Servers.
 
-```
+```cs
 //initSDK
 var initSDKOutcome = GameLiftServerAPI.InitSDK();
 
@@ -93,7 +93,7 @@ After game initialization is complete, you can start a game session.
 
 The following code example illustrates how to start a game session with Amazon GameLift Servers.
 
-```
+```cs
 void OnStartGameSession(GameSession gameSession)
 {
     // game-specific tasks when starting a new game session, such as loading map
@@ -117,7 +117,7 @@ Notify Amazon GameLift Servers when a game session is ending. As a best practice
 
 The following example describes how to end a process for a game session.
 
-```
+```cs
 var processEndingOutcome = GameLiftServerAPI.ProcessEnding();
 
 if (processReadyOutcome.Success)

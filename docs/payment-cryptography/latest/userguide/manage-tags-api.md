@@ -25,7 +25,7 @@ The value of the `Tags` parameter of `CreateKey` is a collection of case-sensiti
 
 For example, the following AWS CLI command creates a symmetric encryption key with a `Project:Alpha` tag. When specifying more than one key-value pair, use a space to separate each pair.
 
-```
+```bash
 $ aws payment-cryptography create-key --exportable --key-attributes KeyAlgorithm=TDES_2KEY, \
         KeyUsage=TR31_C0_CARD_VERIFICATION_KEY,KeyClass=SYMMETRIC_KEY, \
         KeyModesOfUse='{Generate=true,Verify=true}' \
@@ -43,7 +43,7 @@ To add a tag, specify a new tag key and a tag value. To edit a tag, specify an e
 
 For example, the following command adds **UseCase** and **BIN** tags to an example key.
 
-```
+```bash
 $ aws payment-cryptography tag-resource --resource-arn arn:aws:payment-cryptography:us-east-2:111122223333:key/kwapwa6qaifllw2h --tags '[{"Key":"UseCase","Value":"Acquiring"},{"Key":"BIN","Value":"123456"}]'
 ```
 
@@ -55,7 +55,7 @@ For example, this command changes the value of the `Project` tag from `Alpha` to
 
 The command will return http/200 with no content. To see your changes, use `ListTagsForResource`
 
-```
+```bash
 $ aws payment-cryptography tag-resource --resource-arn arn:aws:payment-cryptography:us-east-2:111122223333:key/kwapwa6qaifllw2h \
         --tags '[{"Key":"Project","Value":"Noe"}]'
 ```
@@ -67,7 +67,7 @@ The [ListResourceTags](https://docs.aws.amazon.com/payment-cryptography/latest/A
 
 For example, the following command gets the tags for an example key.
 
-```
+```bash
 $ aws payment-cryptography list-tags-for-resource --resource-arn arn:aws:payment-cryptography:us-east-2:111122223333:key/kwapwa6qaifllw2h
 
   {
@@ -93,7 +93,7 @@ When it succeeds, the `UntagResource` operation doesn't return any output. Also,
 
 For example, this command deletes the **Purpose** tag and its value from the specified key.
 
-```
+```bash
 $ aws payment-cryptography untag-resource \
         --resource-arn arn:aws:payment-cryptography:us-east-2:111122223333:key/kwapwa6qaifllw2h --tag-keys Project
 ```

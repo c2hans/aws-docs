@@ -8,7 +8,7 @@ Because Amazon Silk runs on a touch-screen device, it doesn't handle the CSS pse
 
 Let's look at an example. The following HTML document contains two unordered lists, one nested within the other. Each <li> element contains a link.
 
-```
+```html
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="dropdown.css">
@@ -35,7 +35,7 @@ Let's look at an example. The following HTML document contains two unordered lis
 
 By applying CSS to this markup, we can create a simple drop-down navigation. Here's our style sheet:
 
-```
+```html
 div.nav ul {
     padding: 0;
     margin: 0;

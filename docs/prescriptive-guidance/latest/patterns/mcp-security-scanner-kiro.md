@@ -21,7 +21,7 @@ This pattern helps organizations enhance their development security practices th
 Key features of this solution include the following:
 + Delta scanning of new code segments, reducing computational overhead
 + Isolated security tool environments, preventing cross-tool contamination
-+ Seamless integration with AI coding assistants (Kiro, Amazon Q Developer, Cline, and others)
++ Integration with AI coding assistants (Kiro, Amazon Q Developer, Cline, and others)
 + Real-time security feedback during code generation
 + Customizable scanning rules for organizational compliance
 
@@ -39,10 +39,10 @@ This pattern provides a unified interface for security scanning with standardize
 
 **Limitations**
 + Bandit scanning supports Python files only.
-+ Real-time scanning might impact performance for large code bases.
-+ Tool-specific limitations are based on supported file formats and languages.
++ Real-time scanning might impact performance for large codebases.
++ Each scanning tool supports only specific file formats and languages.
 + Manual review is required to validate security findings.
-+ Security scanning results require security expertise for proper interpretation.
++ Security expertise is required to interpret scanning results.
 + Some AWS services aren’t available in all AWS Regions. For Region availability, see [AWS Services by Region](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/). For specific endpoints, see [Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html), and choose the link for the service.
 
 **Product versions**
@@ -71,14 +71,14 @@ The diagram shows the following workflow:
 
 1. The developer receives real-time security validation through a continuous feedback loop, which enables automated fixes through AI assistants and promotes security best practices during development.
 
-The architecture mitigates the following common security risks:
+The architecture helps mitigate the following common security risks:
 + Command injection
 + Prompt injection
 + Path traversal
 + Dependency attacks
 + Resource exhaustion
 
-The architecture mitigates these common security risks by implementing the following best practices:
+The architecture helps mitigate these risks through the following practices:
 + The server writes all user and AI model inputs to temporary files.
 + The server doesn't provide direct inputs to command line interface (CLI) commands.
 + The server restricts file system access to temporary directories and files only.
@@ -112,7 +112,7 @@ When extending the scanning tools, follow the design principles and best practic
 + [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html) is a generative AI-powered conversational assistant that can help you understand, build, extend, and operate AWS applications.
 
 **Other tools**
-+ [Bandit](https://bandit.readthedocs.io/en/latest/) is a specialized Python security scanner tool. It detects common Python security issues like insecure functions, hardcoded secrets, and injection vulnerabilities. Bandit provides detailed confidence and severity ratings.
++ [Bandit](https://bandit.readthedocs.io/en/latest/) is a Python security scanner. It detects common Python security issues like insecure functions, hardcoded secrets, and injection vulnerabilities. Bandit provides detailed confidence and severity ratings.
 + [Checkov](https://github.com/bridgecrewio/checkov) is a static code-analysis tool that checks infrastructure as code (IaC) for security and compliance misconfigurations.
 + [Cline](https://cline.bot/) is an AI-powered coding assistant that runs in Visual Studio Code.
 + [Loguru](https://loguru.readthedocs.io/en/stable/) is a logging library for Python.
@@ -122,7 +122,7 @@ When extending the scanning tools, follow the design principles and best practic
 
 **Code repository**
 
-The code for this pattern is available in the GitHub [MCP Security Scanner: Real-Time Protection for AI Code Assistants](https://github.com/aws-samples/sample-mcp-security-scanner) repository. The repository includes the MCP server implementation, details on the MCP configuration for Kiro, Amazon Q Developer, Cline and others, configuration examples, and testing utilities.
+The code for this pattern is available in the GitHub [MCP Security Scanner: Real-Time Protection for AI Code Assistants](https://github.com/aws-samples/sample-mcp-security-scanner) repository. The repository includes the MCP server implementation, details on the MCP configuration for Kiro, Amazon Q Developer, Cline, and others, configuration examples, and testing utilities.
 
 The repository structure includes:
 + `security_scanner_mcp_server/` - Main server implementation
@@ -141,7 +141,7 @@ The repository structure includes:
 + Update security rule sets and policies regularly.
 
 **Configuration management**
-+ Store the MCP configuration files in your version control repository, and use them from there.
++ Store the MCP configuration files in your version control repository.
 + Document custom rules and configurations.
 
 **Integration**
@@ -197,7 +197,7 @@ Follow these additional best practices:
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Perform code analysis. | To perform code analysis by using Terraform and Checkov, use the following steps:1. Create a new Terraform file named `terraform_test.tf` with the following content:<pre>    resource "aws_s3_bucket" "insecure_bucket" {<br />    bucket = "my-insecure-bucket"<br />    acl    = "public-read"<br />}<br /><br />resource "aws_security_group" "wide_open" {<br />    name        = "allow_all"<br />    description = "Allow all inbound traffic"<br /><br />    ingress {<br />        from_port   = 0<br />        to_port     = 0<br />        protocol    = "-1"<br />        cidr_blocks = ["0.0.0.0/0"]<br />    }<br />}<br /><br />    </pre><br />2. Open the coding assistant. Request the following actions in the chat: **Scan current script and tell me the results.** | App developer |
+| Perform code analysis. | To perform code analysis by using Terraform and Checkov, use the following steps:1. Create a new Terraform file named `terraform_test.tf` with the following content:<pre>    resource "aws_s3_bucket" "insecure_bucket" {<br />    bucket = "DOC-EXAMPLE-BUCKET"<br />    acl    = "public-read"<br />}<br /><br />resource "aws_security_group" "wide_open" {<br />    name        = "allow_all"<br />    description = "Allow all inbound traffic"<br /><br />    ingress {<br />        from_port   = 0<br />        to_port     = 0<br />        protocol    = "-1"<br />        cidr_blocks = ["0.0.0.0/0"]<br />    }<br />}<br /><br />    </pre><br />2. Open the coding assistant. Request the following actions in the chat: **Scan current script and tell me the results.** | App developer |
 
 ### Example of advanced scanning capabilities
 <a name="example-of-advanced-scanning-capabilities"></a>
@@ -238,7 +238,7 @@ Follow these additional best practices:
 
 **Example MCP configuration with auto approved enabled**
 
-Without `autoApprove` configured, you must grant approval to send the code to the MCP security server for scanning. When `autoApprove` is configured, the code assistant can invoke the tools without your approval. These tools run locally on your machine. No data is sent out, and only a code scan is performed.
+Without `autoApprove` configured, you must grant approval before the code assistant sends the code to the MCP security server for scanning. When `autoApprove` is configured, the code assistant can invoke the tools without your approval. These tools run locally on your machine. They don't send data outside your machine, and they only perform a code scan.
 
 The following configuration automatically runs all security scanning functions:
 
@@ -309,7 +309,7 @@ Each security scanning tool in this solution supports the following file formats
 For code scanning, try the following sample prompts with your AI assistant:
 + "Scan the current script and tell me the results."
 + "Scan lines 20–60 and tell me the results."
-+ "Scan this Amazon DynamoDB table resource and tell me the result."
++ "Scan this Amazon DynamoDB table resource and tell me the results."
 
 For more information, see this [code scanning demo](https://github.com/aws-samples/sample-mcp-security-scanner/blob/main/docs/demo_code_scan.gif) in this pattern’s GitHub repository.
 

@@ -74,7 +74,7 @@ Changes the configuration settings and status of automated sensitive data discov
 #### PUT schema
 <a name="automated-discovery-configuration-request-body-put-example"></a>
 
-```
+```json
 {
   "autoEnableOrganizationMembers": enum,
   "status": enum
@@ -87,7 +87,7 @@ Changes the configuration settings and status of automated sensitive data discov
 #### GetAutomatedDiscoveryConfigurationResponse schema
 <a name="automated-discovery-configuration-response-body-getautomateddiscoveryconfigurationresponse-example"></a>
 
-```
+```json
 {
   "autoEnableOrganizationMembers": enum,
   "classificationScopeId": "string",
@@ -102,7 +102,7 @@ Changes the configuration settings and status of automated sensitive data discov
 #### Empty Schema schema
 <a name="automated-discovery-configuration-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -110,7 +110,7 @@ Changes the configuration settings and status of automated sensitive data discov
 #### ValidationException schema
 <a name="automated-discovery-configuration-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -119,7 +119,7 @@ Changes the configuration settings and status of automated sensitive data discov
 #### AccessDeniedException schema
 <a name="automated-discovery-configuration-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -128,7 +128,7 @@ Changes the configuration settings and status of automated sensitive data discov
 #### ThrottlingException schema
 <a name="automated-discovery-configuration-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -137,7 +137,7 @@ Changes the configuration settings and status of automated sensitive data discov
 #### InternalServerException schema
 <a name="automated-discovery-configuration-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

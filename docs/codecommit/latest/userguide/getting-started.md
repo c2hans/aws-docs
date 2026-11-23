@@ -424,7 +424,7 @@ This step is written with the assumption you have permissions to create IAM user
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -446,7 +446,7 @@ If you want the IAM user to be able to push commits to any repository associated
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

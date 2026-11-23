@@ -27,7 +27,7 @@ The `PutRawMessageContent` API ensures that the MIME content of the updated mess
 **Example S3 policy**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -59,7 +59,7 @@ The `PutRawMessageContent` API ensures that the MIME content of the updated mess
 
 The following example shows how a Lambda function uses the Python runtime to update the subject of an in-transit email message.
 
-```
+```python
     import boto3
     import os
     import uuid

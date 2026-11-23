@@ -17,7 +17,7 @@ The following is an example `AwsDynamoDbTable` finding in the AWS Security Findi
 
 **Example**
 
-```
+```JSON
 "AwsDynamoDbTable": {
     "AttributeDefinitions": [
         {

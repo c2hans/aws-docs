@@ -19,14 +19,14 @@ The user-defined connections creation capability is available as a set of standa
 [amazon-sagemaker-sql-magic](https://pypi.org/project/amazon-sagemaker-sql-magic/)
 You can install these libraries by running the following commands in your JupyterLab terminal:
 
-```
+```python
 pip install amazon-sagemaker-sql-editor>=0.1.13
 pip install amazon-sagemaker-sql-execution>=0.1.6
 pip install amazon-sagemaker-sql-magic>=0.1.3
 ```
 After installing the libraries, you will need to restart the JupyterLab server for the changes to take effect.
 
-```
+```bash
 restart-jupyter-server
 ```
 

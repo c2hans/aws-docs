@@ -32,7 +32,7 @@ Replace `{{123456789012}}` with your AWS account ID.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -102,7 +102,7 @@ Replace `{{123456789012}}` with your AWS account ID.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -136,7 +136,7 @@ The following is an example of a scoped down AWS Proton service role policy that
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -204,7 +204,7 @@ Replace `{{123456789012}}` with your AWS account ID.
 
 ****
 
-```
+```json
  {
   "Version":"2012-10-17",
   "Statement": [
@@ -247,7 +247,7 @@ Replace `{{123456789012}}` with your AWS account ID.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -298,7 +298,7 @@ Replace `{{123456789012}}` with your AWS account ID.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -356,7 +356,7 @@ Replace `{{123456789012}}` with your AWS account ID.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

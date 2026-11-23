@@ -14,19 +14,19 @@ The following are instructions for using a custom version of the AWS ParallelClu
 
 1. Identify the AWS ParallelCluster Cookbook working directory where you have cloned the [AWS ParallelCluster cookbook](https://github.com/aws/aws-parallelcluster-cookbook) code.
 
-   ```
+   ```sh
    _cookbookDir={{<path to cookbook>}}
    ```
 
 1. Detect the current version of the AWS ParallelCluster Cookbook.
 
-   ```
+   ```sh
    _version=$(grep version ${_cookbookDir}/metadata.rb|awk '{print $2}'| tr -d \')
    ```
 
 1. Create an archive of the AWS ParallelCluster Cookbook and calculate its md5.
 
-   ```
+   ```sh
    cd "${_cookbookDir}"
    _stashName=$(git stash create)
    git archive --format tar --prefix="aws-parallelcluster-cookbook-${_version}/" "${_stashName:-HEAD}" | gzip > "aws-parallelcluster-cookbook-${_version}.tgz"
@@ -35,7 +35,7 @@ The following are instructions for using a custom version of the AWS ParallelClu
 
 1. Create an Amazon S3 bucket and upload the archive, its md5, and its last modified date into the bucket. Give public readable permission through a public-read ACL.
 
-   ```
+   ```sh
    _bucket={{<the bucket name>}}
    aws s3 cp --acl public-read aws-parallelcluster-cookbook-${_version}.tgz s3://${_bucket}/cookbooks/aws-parallelcluster-cookbook-${_version}.tgz
    aws s3 cp --acl public-read aws-parallelcluster-cookbook-${_version}.md5 s3://${_bucket}/cookbooks/aws-parallelcluster-cookbook-${_version}.md5
@@ -45,7 +45,7 @@ The following are instructions for using a custom version of the AWS ParallelClu
 
 1. Add the following variables to the AWS ParallelCluster configuration file, under the [`[cluster]` section](cluster-definition.md).
 
-   ```
+   ```ini
    custom_chef_cookbook = https://${_bucket}.s3.{{<the bucket region>}}.amazonaws.com/cookbooks/aws-parallelcluster-cookbook-${_version}.tgz
    extra_json = { "cluster" : { "skip_install_recipes" : "no" } }
    ```

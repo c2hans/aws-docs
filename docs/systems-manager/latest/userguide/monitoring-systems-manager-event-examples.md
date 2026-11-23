@@ -22,7 +22,7 @@ The following are examples, in JSON format, of supported EventBridge events for 
 
 **Automation Step Status-change Notification**
 
-```
+```json
 {
   "version": "0",
   "id": "eeca120b-a321-433e-9635-dab369006a6b",
@@ -49,7 +49,7 @@ The following are examples, in JSON format, of supported EventBridge events for 
 
 **Automation Execution Status-change Notification**
 
-```
+```json
 {
   "version": "0",
   "id": "d290ece9-1088-4383-9df6-cd5b4ac42b99",
@@ -111,7 +111,7 @@ Best practices
 
 **Calendar OPEN**
 
-```
+```json
 {
     "version": "0",
     "id": "47a3f03a-f30d-1011-ac9a-du3bdEXAMPLE",
@@ -133,7 +133,7 @@ Best practices
 
 **Calendar CLOSED**
 
-```
+```json
 {
     "version": "0",
     "id": "f30df03a-1011-ac9a-47a3-f761eEXAMPLE",
@@ -158,7 +158,7 @@ Best practices
 
 **Change request status update notification - example 1**
 
-```
+```json
 {
   "version": "0",
   "id": "feab80c1-a8ff-c721-b8b1-96ce70939696",
@@ -193,7 +193,7 @@ Best practices
 
 **Change request status update notification - example 2**
 
-```
+```json
 {
   "version": "0",
   "id": "25ce6b03-2e4e-1a2b-2a8f-6c9de8d278d2",
@@ -233,7 +233,7 @@ The following are examples of the events for AWS Systems Manager Compliance.
 
 **Association Compliant**
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -257,7 +257,7 @@ The following are examples of the events for AWS Systems Manager Compliance.
 
 **Association Non-Compliant**
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -281,7 +281,7 @@ The following are examples of the events for AWS Systems Manager Compliance.
 
 **Patch Compliant**
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -306,7 +306,7 @@ The following are examples of the events for AWS Systems Manager Compliance.
 
 **Patch Non-Compliant**
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -338,7 +338,7 @@ The following are examples of the events for Systems Manager Maintenance Window
 
 Valid status values include `REGISTERED` and `DEREGISTERED`.
 
-```
+```json
 {
    "version":"0",
    "id":"01234567-0123-0123-0123-0123456789ab",
@@ -370,7 +370,7 @@ Valid status values include the following:
 + `SKIPPED_OVERLAPPING`
 + `SUCCESS TIMED_OUT`
 
-```
+```json
 {
    "version":"0",
    "id":"01234567-0123-0123-0123-0123456789ab",
@@ -396,7 +396,7 @@ Valid status values include the following:
 
 Valid status values include `IN_PROGRESS`, `SUCCESS`, `FAILED`, and `TIMED_OUT`.
 
-```
+```json
 {
    "version":"0",
    "id":"01234567-0123-0123-0123-0123456789ab",
@@ -423,7 +423,7 @@ Valid status values include `IN_PROGRESS`, `SUCCESS`, `FAILED`, and `TIMED_OUT`.
 
 Valid status values include `IN_PROGRESS`, `SUCCESS`, `FAILED`, and `TIMED_OUT`.
 
-```
+```json
 {
    "version":"0",
    "id":"01234567-0123-0123-0123-0123456789ab",
@@ -452,7 +452,7 @@ Valid status values include `IN_PROGRESS`, `SUCCESS`, `FAILED`, and `TIMED_OUT`.
 
 Valid status values include `ENABLED` and `DISABLED`.
 
-```
+```json
 {
    "version":"0",
    "id":"01234567-0123-0123-0123-0123456789ab",
@@ -478,7 +478,7 @@ The following are examples of the events for Systems Manager Parameter Store.
 
 **Create Parameter**
 
-```
+```json
 {
   "version": "0",
   "id": "6a7e4feb-b491-4cf7-a9f1-bf3703497718",
@@ -501,7 +501,7 @@ The following are examples of the events for Systems Manager Parameter Store.
 
 **Update Parameter**
 
-```
+```json
 {
   "version": "0",
   "id": "9547ef2d-3b7e-4057-b6cb-5fdf09ee7c8f",
@@ -524,7 +524,7 @@ The following are examples of the events for Systems Manager Parameter Store.
 
 **Delete Parameter**
 
-```
+```json
 {
   "version": "0",
   "id": "80e9b391-6a9b-413c-839a-453b528053af",
@@ -550,7 +550,7 @@ The following are examples of the events for Systems Manager Parameter Store.
 
 **OpsCenter OpsItem create notification**
 
-```
+```json
 {
   "version": "0",
   "id": "aae66adc-7aac-f0c0-7854-7691e8c079b8",
@@ -577,7 +577,7 @@ The following are examples of the events for Systems Manager Parameter Store.
 
 **OpsCenter OpsItem update notification**
 
-```
+```json
 {
   "version": "0",
   "id": "2fb5b168-b725-41dd-a890-29311200089c",
@@ -609,7 +609,7 @@ The following are examples of the events for Systems Manager Parameter Store.
 
 **Run Command Status-change Notification**
 
-```
+```json
 {
     "version": "0",
     "id": "51c0891d-0e34-45b1-83d6-95db273d1602",
@@ -635,7 +635,7 @@ The following are examples of the events for Systems Manager Parameter Store.
 
 **Run Command Invocation Status-change Notification**
 
-```
+```json
 {
     "version": "0",
     "id": "4780e1b8-f56b-4de5-95f2-95dbEXAMPLE",
@@ -660,7 +660,7 @@ The following are examples of the events for Systems Manager Parameter Store.
 
 **State Manager Association State Change**
 
-```
+```json
 {
    "version":"0",
    "id":"db839caf-6f6c-40af-9a48-25b2ae2b7774",
@@ -692,7 +692,7 @@ The following are examples of the events for Systems Manager Parameter Store.
 
 **State Manager Instance Association State Change**
 
-```
+```json
 {
    "version":"0",
    "id":"6a7e8feb-b491-4cf7-a9f1-bf3703467718",

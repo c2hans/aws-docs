@@ -96,7 +96,7 @@ TensorFlow: 292282985366.dkr.ecr.us-west-2.amazonaws.com/amazon-braket-tensorflo
 
 **Example:**
 
-```
+```python
 from braket.jobs.hybrid_job import hybrid_job
 from braket.devices import Devices
 

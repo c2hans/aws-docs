@@ -99,7 +99,7 @@ To make a tool available in the Agent Builder deployment UI, update the AWS Syst
 
 1. Add your tool configuration to the end of the existing list using the following JSON structure:
 
-   ```
+   ```json
    {
      "name": "Bedrock KB Retrieve",
      "description": "Retrieve information from Bedrock Knowledge Base",
@@ -158,7 +158,7 @@ For example, to use the retrieve tool with Amazon Bedrock Knowledge Bases:
 
 1. Add the following permission:
 
-   ```
+   ```json
    {
      "Effect": "Allow",
      "Action": "bedrock:Retrieve",
@@ -200,7 +200,7 @@ Build the program with the `npm run build` command. Once any errors are resolved
 
 1. Use the following command to deploy or update platform:
 
-   ```
+   ```bash
    cdk deploy DeploymentPlatformStack --parameters AdminUserEmail='admin-email@amazon.com'
    ```
 

@@ -10,7 +10,7 @@ Details about a function's configuration.
 <a name="API_FunctionConfiguration_Contents"></a>
 
  ** AcceleratorConfig **   <a name="lambda-Type-FunctionConfiguration-AcceleratorConfig"></a>
-The accelerator resource settings for a Lambda execution environment.
+The accelerator resource settings for a Lambda execution environment, including the amount of accelerator memory to allocate. To use an accelerator, the function must also have a capacity provider configuration (`CapacityProviderConfig`) for Lambda Managed Instances.
 Type: [AcceleratorConfig](API_AcceleratorConfig.md) object
 Required: No
 

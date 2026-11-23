@@ -27,7 +27,7 @@ In writing the handler, you don't need to do anything special with replay/contin
 
 The following resource model is an example integration for a Kinesis Data Streams operation.
 
-```
+```json
 {
     "typeName": "AWS::Kinesis::Stream",
     "description": "Resource Type definition for AWS::Kinesis::Stream",
@@ -70,7 +70,7 @@ The following resource model is an example integration for a Kinesis Data Stream
 
 And a sample CloudFormation template for creating this resource in a stack:
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 Description: AWS MetricFilter
@@ -94,7 +94,7 @@ For Kinesis, the stream must first be created with a name and shard count, then 
 
 Here is the example of the using the progress-chaining and callback pattern to apply state consistently. Note that much of the error handling is delegated to the framework. The CloudFormation CLI provides some error handling on interpreting errors that can be retried after a delay. The framework provides a fluent API that guides the developer with the right set of calls with strong typing and code completion capabilities in IDEs.
 
-```
+```java
 public class CreateHandler extends BaseKinesisHandler {
     //
     // The handler is provide with a AmazonWebServicesClientProxy that provides
@@ -197,7 +197,7 @@ public class CreateHandler extends BaseKinesisHandler {
 
 The same pattern shown here for `CreateStreamRequest` is followed with others as well. The following is `handleRetention` code:
 
-```
+```java
 protected ProgressEvent<ResourceModel, CallbackContext>
     handleRetention(final AmazonWebServicesClientProxy proxy,
                     final ProxyClient<KinesisClient> client,

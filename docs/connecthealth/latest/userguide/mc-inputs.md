@@ -31,7 +31,7 @@ A medical coding job requires the clinical documentation and an output location 
 
 The following `StartMedicalCodingJob` request body uses fictional clinical text and includes both context objects.
 
-```
+```json
 {
   "clientToken": "encounter-20261003-000123",
   "text": "Established patient seen in clinic for follow-up of type 2 diabetes and essential hypertension. Blood pressure controlled on current regimen. A1c reviewed. Continue metformin and lisinopril. Return in 3 months.",

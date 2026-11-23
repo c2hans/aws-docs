@@ -66,7 +66,7 @@ When using Nova Multimodal Embeddings, Amazon Bedrock stores transient data in y
 
   Contents of `kb-nova-mme.json` (replace the placeholder values with your specific configuration):
 
-  ```
+  ```json
   {
       "knowledgeBaseConfiguration": {
           "vectorKnowledgeBaseConfiguration": {

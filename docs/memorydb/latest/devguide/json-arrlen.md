@@ -8,7 +8,7 @@ Get length of the array values at the path.
 
 Syntax
 
-```
+```json
 JSON.ARRLEN <key> [path]
 ```
 + key (required) – key of JSON document type
@@ -33,7 +33,7 @@ If the path is restricted syntax:
 
  Enhanced path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 . '[[], [\"a\"], [\"a\", \"b\"], [\"a\", \"b\", \"c\"]]'
 (error) SYNTAXERR Failed to parse JSON string due to syntax error
 127.0.0.1:6379> JSON.SET k1 . '[[], ["a"], ["a", "b"], ["a", "b", "c"]]'
@@ -56,7 +56,7 @@ OK
 
  Restricted path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 . '[[], ["a"], ["a", "b"], ["a", "b", "c"]]'
 OK
 127.0.0.1:6379> JSON.ARRLEN k1 [*]

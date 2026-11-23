@@ -100,7 +100,7 @@ https://sns.us-east-2.amazonaws.com/?Action=GetTopicAttributes
 #### Sample Response
 <a name="API_GetTopicAttributes_Example_1_Response"></a>
 
-```
+```xml
 <GetTopicAttributesResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <GetTopicAttributesResult>
         <Attributes>

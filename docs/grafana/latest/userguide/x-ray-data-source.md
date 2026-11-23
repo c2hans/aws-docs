@@ -54,7 +54,7 @@ This section covers the different types of authentication that you can use for X
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

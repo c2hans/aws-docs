@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 
 ![Chart showing the data preprocessing strategies.](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/images/data-processing-main-components.png)
 
+*Figure 9: Data preprocessing main components*
+
  The data preprocessing strategies listed in Figure 9 can be expanded as the following:
 +  **Clean (replace, impute, remove outliers and duplicates):** Remove outliers and duplicates, replace inaccurate or irrelevant data, and correct missing data using imputation techniques that will minimize bias as part of data cleaning.
 +  **Partition:** To block ML models from overfitting and to evaluate a trained model accurately, randomly split data into train, validate, and test sets. Data leakage can happen when information from hold-out test dataset leaks into the training data. One way to avoid data leakage is to remove duplicates before splitting the data.

@@ -94,7 +94,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 **Example 1: Management event, `CreateConnector`**
 The following example shows a CloudTrail log entry that demonstrates the `CreateConnector` action.
 
-```
+```json
 {
         "eventVersion": "1.09",
         "userIdentity": {
@@ -143,7 +143,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 **Example 2: Management event, `CreateChallenge`**
 The following example shows a CloudTrail log entry that demonstrates the `CreateChallenge` action.
 
-```
+```json
 {
         "eventVersion": "1.09",
         "userIdentity": {
@@ -198,7 +198,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 **Example 3: Management event, `GetChallengePassword`**
 The following example shows a CloudTrail log entry that demonstrates the `GetChallengePassword` action.
 
-```
+```json
 {
         "eventVersion": "1.09",
         "userIdentity": {
@@ -245,7 +245,7 @@ The following example shows a CloudTrail log entry that demonstrates the `GetCha
 **Example 4: Data event, `PkiOperationPost`**
 The following example shows a CloudTrail log entry that demonstrates a failed `PkiOperationPost` call. The log includes an error code and error message with an explanation of the failure.
 
-```
+```json
 {
         "eventVersion": "1.10",
         "userIdentity": {

@@ -42,7 +42,7 @@ Before you begin using the SageMaker AI console to create a labeling job, you mu
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

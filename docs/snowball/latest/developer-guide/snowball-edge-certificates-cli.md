@@ -27,13 +27,13 @@ You can also use AWS OpsHub to manage public key certificates. For more informat
 
 Use the `list-certificates` command to see the Amazon Resource Names (ARNs) for the current certificate.
 
-```
+```zsh,bash,sh
   snowballEdge list-certificates
 ```
 
 **Example of `list-certificates` output**
 
-```
+```JSON
  {
   "Certificates" : [ {
     "CertificateArn" : "arn:aws:snowball-device:::certificate/78EXAMPLE516EXAMPLEf538EXAMPLEa7",
@@ -47,7 +47,7 @@ Use the `list-certificates` command to see the Amazon Resource Names (ARNs) for 
 
 Use the `get-certificate` command to see the content of the certificate based on the ARN provided. Use the `list-certificates` command to obtain the ARN of the certificate to use as the `certificate-arn` parameter.
 
-```
+```bash,sh,zsh
   snowballEdge get-certificate --certificate-arn arn:aws:snowball-device:::certificate/78EXAMPLE516EXAMPLEf538EXAMPLEa7
 ```
 
@@ -66,12 +66,12 @@ For information about configuring your certificate, see [Configuring the AWS CLI
 
 Use the `delete-certificate` command to delete the current certificate. Use the `list-certificates` command to obtain the ARN of the certificate to use as the `certificate-arn` parameter. To generate a new certificate, reboot the Snowball Edge or each Snowball Edge in a cluster. See [Rebooting the Snowball Edge device](reboot.md) or use the `snowballEdge reboot-device` command.
 
-```
+```bash,sh,zsh
   snowballEdge delete-certificate --certificate-arn arn:aws:snowball-device:::certificate/78EXAMPLE516EXAMPLEf538EXAMPLEa7
 ```
 
 **Example of `delete-certificate` output**
 
-```
+```HTML
   The certificate has been deleted from your Snow device. Please reboot your Snowball Edge or Snowball Edge cluster to generate a new certificate.
 ```

@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Initiates and confirms tracking of the device.
     /// </summary>
@@ -67,7 +67,7 @@ For more information, see [Working with user devices in your user pool](https://
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 const confirmDevice = ({ deviceKey, accessToken, passwordVerifier, salt }) => {
   const client = new CognitoIdentityProviderClient({});
 
@@ -91,7 +91,7 @@ const confirmDevice = ({ deviceKey, accessToken, passwordVerifier, salt }) => {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cognito#code-examples).
 
-```
+```python
 class CognitoIdentityProviderWrapper:
     """Encapsulates Amazon Cognito actions"""
 

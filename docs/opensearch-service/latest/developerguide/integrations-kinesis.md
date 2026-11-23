@@ -19,7 +19,7 @@ Before proceeding, you must have the following resources.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -44,7 +44,7 @@ Before proceeding, you must have the following resources.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

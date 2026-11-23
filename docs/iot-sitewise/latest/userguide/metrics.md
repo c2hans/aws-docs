@@ -107,7 +107,7 @@ When you define a metric for an asset model with the AWS IoT SiteWise API, you s
 
   The following example shows you how to define a 12-hour time interval with an offset on February 20, 2021, at 06:30:30 PM (PST).
 
-  ```
+  ```json
   {
       "window": {
           "tumbling": {
@@ -131,7 +131,7 @@ If you define any metric input variables in a metric's expression, those inputs 
 **Example metric definition**
 The following example demonstrates a metric property that aggregates an asset's temperature measurement data to calculate maximum hourly temperature in Fahrenheit. This object is an example of an [AssetModelProperty](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_AssetModelProperty.html) that contains a [Metric](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Metric.html). You can specify this object as a part of the [CreateAssetModel](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAssetModel.html) request payload to create a metric property. For more information, see [Create an asset model (AWS CLI)](create-asset-models.md#create-asset-model-cli).
 
-```
+```json
 {
       {{...}}
       "assetModelProperties": [
@@ -167,7 +167,7 @@ The following example demonstrates a metric property that aggregates an asset's 
 **Example metric definition that inputs data from associated assets**
 The following example demonstrates a metric property that aggregates multiple wind turbines' average power data to calculate total average power for a wind farm. This object is an example of an [AssetModelProperty](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_AssetModelProperty.html) that contains a [Metric](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Metric.html). You can specify this object as a part of the [CreateAssetModel](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAssetModel.html) request payload to create a metric property.
 
-```
+```json
 {
       {{...}}
       "assetModelProperties": [

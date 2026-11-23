@@ -72,7 +72,7 @@ You cannot delete a cluster that has any instances associated with it. To determ
 
    Output from this operation looks something like the following (JSON format).
 
-   ```
+   ```json
    [
        [
            "sample-cluster",
@@ -107,7 +107,7 @@ To see the deletion protection status of all your Amazon DocumentDB clusters, om
 
    Output from this operation looks something like the following.
 
-   ```
+   ```json
    [
        [
            "sample-cluster",

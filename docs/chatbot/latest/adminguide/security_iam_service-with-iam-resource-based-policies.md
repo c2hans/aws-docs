@@ -65,7 +65,7 @@ To add a resource-level permission to a policy, include the channel's ARN in a n
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

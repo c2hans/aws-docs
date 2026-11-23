@@ -28,7 +28,7 @@ The following code example shows how to use `Get-CFCloudFrontOriginAccessIdentit
 **Tools for PowerShell V4**
 **Example 1: This example returns a specific Amazon CloudFront origin access identity, specified by the -Id parameter. Although the -Id parameter is not required, if you do not specify it, no results are returned.**
 
-```
+```powershell
 Get-CFCloudFrontOriginAccessIdentity -Id E3XXXXXXXXXXRT
 ```
 **Output:**
@@ -48,7 +48,7 @@ The following code example shows how to use `Get-CFCloudFrontOriginAccessIdentit
 **Tools for PowerShell V4**
 **Example 1: This example returns configuration information about a single Amazon CloudFront origin access identity, specified by the -Id parameter. Errors occur if no -Id parameter is specified..**
 
-```
+```powershell
 Get-CFCloudFrontOriginAccessIdentityConfig -Id E3XXXXXXXXXXRT
 ```
 **Output:**
@@ -68,7 +68,7 @@ The following code example shows how to use `Get-CFCloudFrontOriginAccessIdentit
 **Tools for PowerShell V4**
 **Example 1: This example returns a list of Amazon CloudFront origin access identities. Because the -MaxItem parameter specifies a value of 2, the results include two identities.**
 
-```
+```powershell
 Get-CFCloudFrontOriginAccessIdentityList -MaxItem 2
 ```
 **Output:**
@@ -91,7 +91,7 @@ The following code example shows how to use `Get-CFDistribution`.
 **Tools for PowerShell V4**
 **Example 1: Retrieves the information for a specific distribution.**
 
-```
+```powershell
 Get-CFDistribution -Id EXAMPLE0000ID
 ```
 +  For API details, see [GetDistribution](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -104,7 +104,7 @@ The following code example shows how to use `Get-CFDistributionConfig`.
 **Tools for PowerShell V4**
 **Example 1: Retrieves the configuration for a specific distribution.**
 
-```
+```powershell
 Get-CFDistributionConfig -Id EXAMPLE0000ID
 ```
 +  For API details, see [GetDistributionConfig](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -117,7 +117,7 @@ The following code example shows how to use `Get-CFDistributionList`.
 **Tools for PowerShell V4**
 **Example 1: Returns distributions.**
 
-```
+```powershell
 Get-CFDistributionList
 ```
 +  For API details, see [ListDistributions](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -130,7 +130,7 @@ The following code example shows how to use `New-CFDistribution`.
 **Tools for PowerShell V4**
 **Example 1: Creates a basic CloudFront distribution, configured with logging and caching.**
 
-```
+```powershell
 $origin = New-Object Amazon.CloudFront.Model.Origin
 $origin.DomainName = "amzn-s3-demo-bucket.s3.amazonaws.com"
 $origin.Id = "UniqueOrigin1"
@@ -169,7 +169,7 @@ The following code example shows how to use `New-CFInvalidation`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new invalidation on a distribution with an ID of EXAMPLENSTXAXE. The CallerReference is a unique ID chosen by the user; in this case, a time stamp representing May 15, 2019 at 9:00 a.m. is used. The $Paths variable stores three paths to image and media files that the user does not want as part of the distribution's cache. The -Paths\_Quantity parameter value is the total number of paths specified in the -Paths\_Item parameter.**
 
-```
+```powershell
 $Paths = "/images/*.gif", "/images/image1.jpg", "/videos/*.mp4"
 New-CFInvalidation -DistributionId "EXAMPLENSTXAXE" -InvalidationBatch_CallerReference 20190515090000 -Paths_Item $Paths -Paths_Quantity 3
 ```
@@ -190,7 +190,7 @@ The following code example shows how to use `New-CFSignedCookie`.
 **Tools for PowerShell V4**
 **Example 1: Creates a signed cookie to the specified resource using a canned policy. The cookie will be valid for one year.**
 
-```
+```powershell
 $params = @{
 	"ResourceUri"="http://xyz.cloudfront.net/image1.jpeg"
 	"KeyPairId"="AKIAIOSFODNN7EXAMPLE"
@@ -208,7 +208,7 @@ Expires
 ```
 **Example 2: Creates a signed cookie to the specified resources using a custom policy. The cookie will be valid in 24 hours and will expire one week afterward.**
 
-```
+```powershell
 $start = (Get-Date).AddHours(24)
 $params = @{
 	"ResourceUri"="http://xyz.cloudfront.net/content/*.jpeg"
@@ -229,7 +229,7 @@ Policy
 ```
 **Example 3: Creates a signed cookie to the specified resources using a custom policy. The cookie will be valid in 24 hours and will expire one week afterward. Access to the resources is restricted to the specified ip range.**
 
-```
+```powershell
 $start = (Get-Date).AddHours(24)
 $params = @{
 	"ResourceUri"="http://xyz.cloudfront.net/content/*.jpeg"
@@ -257,7 +257,7 @@ The following code example shows how to use `New-CFSignedUrl`.
 **Tools for PowerShell V4**
 **Example 1: Creates a signed url to the specified resource using a canned policy. The url will be valid for one hour. A System.Uri object containing the signed url is emitted to the pipeline.**
 
-```
+```powershell
 $params = @{
 	"ResourceUri"="https://cdn.example.com/index.html"
 	"KeyPairId"="AKIAIOSFODNN7EXAMPLE"
@@ -268,7 +268,7 @@ New-CFSignedUrl @params
 ```
 **Example 2: Creates a signed url to the specified resource using a custom policy. The url will be valid starting in 24 hours and will expire one week later.**
 
-```
+```powershell
 $start = (Get-Date).AddHours(24)
 $params = @{
 	"ResourceUri"="https://cdn.example.com/index.html"
@@ -281,7 +281,7 @@ New-CFSignedUrl @params
 ```
 **Example 3: Creates a signed url to the specified resource using a custom policy. The url will be valid starting in 24 hours and will expire one week later. Access to the resource is restricted to the specified ip range.**
 
-```
+```powershell
 $start = (Get-Date).AddHours(24)
 $params = @{
 	"ResourceUri"="https://cdn.example.com/index.html"

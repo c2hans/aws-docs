@@ -29,5 +29,6 @@ AWS Clean Rooms supports the following date and time functions:
 + [SECOND function](SECOND.md)
 + [TIMESTAMP function](TIMESTAMP.md)
 + [TO\_TIMESTAMP function](TO_TIMESTAMP.md)
++ [TRUNC function](TRUNC.md)
 + [YEAR function](YEAR.md)
 + [Date parts for date or timestamp functions](Dateparts_for_datetime_functions.md)

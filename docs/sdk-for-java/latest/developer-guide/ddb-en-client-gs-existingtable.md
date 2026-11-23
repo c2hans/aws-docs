@@ -8,7 +8,7 @@ The previous section showed how to create a DynamoDB table starting with a Java 
 
 Before you work with an existing table, call the `DynamoDbEnhanced.table()` method. This was done in the previous example with the following statement.
 
-```
+```java
 DynamoDbTable<Customer> customerTable = enhancedClient.table("Customer", TableSchema.fromBean(Customer.class));
 ```
 
@@ -16,7 +16,7 @@ After the `DynamoDbTable` instance is returned, you can begin working right away
 
 The following example demonstrates this by immediately retrieving a `Customer` instance from the DynamoDB table.
 
-```
+```java
 DynamoDbTable<Customer> customerTable = enhancedClient.table("Customer", TableSchema.fromBean(Customer.class));
 // The Customer table exists already and has an item with a primary key value of "1" and a sort key value of "customer@example.com".
 customerTable.getItem(

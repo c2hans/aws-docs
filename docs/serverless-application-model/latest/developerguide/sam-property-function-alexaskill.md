@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-alexaskill-syntax.yaml"></a>
 
-```
+```yaml
   [SkillId](#sam-function-alexaskill-skillid): {{String}}
 ```
 
@@ -38,7 +38,7 @@ Alexa Skill Event Example
 #### YAML
 <a name="sam-property-function-alexaskill--examples--alexaskilltrigger--yaml"></a>
 
-```
+```yaml
 AlexaSkillEvent:
   Type: AlexaSkill
 ```

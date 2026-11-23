@@ -44,7 +44,7 @@ If you use a custom Amazon SES policy, adapt this example for use in your domain
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 
 # Sample App Mesh workload for Amazon ECS clusters
 
-To collect metrics from a sample Prometheus workload for Amazon ECS, you must be running Container Insights in the cluster. For information about installing Container Insights, see [Amazon ECS](deploy-container-insights-ECS.md).
+To collect metrics from a sample Prometheus workload for Amazon ECS, you must be running Container Insights in the cluster. For information about installing Container Insights, see [Container Insights for Amazon ECS](deploy-container-insights-ECS.md).
 
 First, follow this [ walkthrough](https://github.com/aws/aws-app-mesh-examples/tree/main/examples/apps/colorapp#app-mesh-walkthrough-deploy-the-color-app-on-ecs) to deploy the sample color app on your Amazon ECS cluster. After you finish, you will have App Mesh Prometheus metrics exposed on port 9901.
 

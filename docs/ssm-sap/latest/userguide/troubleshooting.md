@@ -42,7 +42,7 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/troubleshooting
 
 1. Deregister the database with the following command.
 
-   ```
+   ```shell
    aws ssm-sap deregister-application \
    --application-id <YOUR_APPLICATION_ID> \
    --region us-east-1
@@ -52,7 +52,7 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/troubleshooting
 
 1. Re-register the database.
 
-   ```
+   ```shell
    aws ssm-sap register-application \
    --application-id <YOUR_APPLICATION_ID> \
    --region us-east-1
@@ -122,7 +122,7 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/troubleshooting
 
  **Resolution** – The specified `--database-arn` does not match the database connection discovered on the SAP\_ABAP instance. Use the [UpdateApplicationSettings](https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_UpdateApplicationSettings.html) API to provide the correct `--database-arn` of your SAP HANA database along with the `--application-id` of the SAP ABAP application.
 
-```
+```console
 aws ssm-sap update-application-settings --application-id <ApplicationId> --database-arn <DatabaseArn>
 ```
 
@@ -146,7 +146,7 @@ aws ssm-sap update-application-settings --application-id <ApplicationId> --datab
 
 1. De-register the database with the following command.
 
-   ```
+   ```shell
    aws ssm-sap deregister-application \
    --application-id <YOUR_APPLICATION_ID> \
    --region <REGION>
@@ -156,7 +156,7 @@ Use the same *APPLICATION\_ID* as the one used during registration.
 
 1. Use the following command to re-register the database with the same *APPLICATION\_ID*.
 
-   ```
+   ```shell
    aws ssm-sap register-application \
    --application-id <YOUR_APPLICATION_ID> \
    --region <REGION>

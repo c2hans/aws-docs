@@ -76,7 +76,7 @@ Create the following IAM policies to grant AWS Marketplace access to your Image 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -98,7 +98,7 @@ Create the following IAM policies to grant AWS Marketplace access to your Image 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -135,7 +135,7 @@ Create the following IAM policies to grant AWS Marketplace access to your Image 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -161,7 +161,7 @@ Create the following IAM policies to grant AWS Marketplace access to your Image 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -203,7 +203,7 @@ Use the following procedure to create an AWS Marketplace IAM role with policies 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

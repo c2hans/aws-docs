@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="resetdeployments-post-cli"></a>
 
-```
+```bash
 aws greengrass reset-deployments \
   --group-id <value> \
   [--force | --no-force] \
@@ -26,7 +26,7 @@ aws greengrass reset-deployments \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "Force": "boolean",
@@ -46,7 +46,7 @@ type: string
 Information required to reset deployments.
 where used: body; required: true
 
-```
+```json
 {
 "Force": true
 }
@@ -71,7 +71,7 @@ type: string
 Success. The group's deployments were reset.
  [ ResetDeploymentsResponse](definitions-resetdeploymentsresponse.md)
 
-```
+```json
 {
 "DeploymentArn": "string",
 "DeploymentId": "string"
@@ -90,7 +90,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

@@ -12,7 +12,7 @@ To retrieve information about a vehicle model, run the following command.
 
 Replace {{vehicle-model}} with the name of the vehicle model that you want to retrieve.
 
-```
+```bash
 aws iotfleetwise get-model-manifest --name {{vehicle-model}}
 ```
 
@@ -26,7 +26,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

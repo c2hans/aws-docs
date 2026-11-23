@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 Both the source and the target use SigV4 in this migration, but with different service names. Load the version-matched sample and open the configuration:
 
-```
+```bash
 workflow configure sample --load
 workflow configure edit
 ```
 
 Set the source to the Amazon OpenSearch Service domain (SigV4 service `es`) and the target to the Amazon OpenSearch Serverless NextGen collection (SigV4 service `aoss`):
 
-```
+```json
 {
   "sourceClusters": {
     "source": {

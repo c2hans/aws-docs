@@ -70,7 +70,7 @@ aws memorydb create-subnet-group ^
 
 This command should produce output similar to the following:
 
-```
+```json
     {
         "SubnetGroup": {
             "Subnets": [

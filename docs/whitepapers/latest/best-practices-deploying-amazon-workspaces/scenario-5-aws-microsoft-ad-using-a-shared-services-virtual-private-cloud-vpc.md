@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 
 ![Sample architecture showing a WorkSpaces with a shared services VPC hosting Managed AD, deploy an AD Connector.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/microsoft-ad-shared-services-vpc.png)
 
+*Figure 10: AWS Microsoft AD using a shared services VPC*
+
  This architecture uses the following components or constructs.
 
 ## AWS

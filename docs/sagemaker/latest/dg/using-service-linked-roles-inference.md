@@ -39,7 +39,7 @@ You don't need to manually create a service-linked role. When you create a real-
 
 To allow SageMaker AI Inference to create the service-linked role on your behalf, your IAM principal must have the following permission when calling `CreateEndpoint`:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "iam:CreateServiceLinkedRole",

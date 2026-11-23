@@ -70,7 +70,7 @@ Array Members: Minimum number of 1 item. Maximum number of 50 items.
  ** [firewallType](#API_GetTemplate_ResponseSyntax) **   <a name="networksecuritymanager-GetTemplate-response-firewallType"></a>
 The firewall type associated with the resource.
 Type: String
-Valid Values: `WAF`
+Valid Values: `WAF | IGW_FIREWALL`
 
  ** [hasPublishedVersion](#API_GetTemplate_ResponseSyntax) **   <a name="networksecuritymanager-GetTemplate-response-hasPublishedVersion"></a>
 Specifies whether a published version of the resource exists.

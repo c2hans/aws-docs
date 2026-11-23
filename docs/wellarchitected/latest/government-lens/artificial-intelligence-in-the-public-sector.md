@@ -32,6 +32,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/a
 
 ![A reference architecture diagram showing how to enable public sector customers with artificial intelligence.](https://docs.aws.amazon.com/wellarchitected/latest/government-lens/images/ai-arch1.jpg)
 
+*Figure 1: A sample reference architecture to enable public sector customers with AI*
+
  This architecture demonstrates a self-service model for enabling multiple project teams to create environments and details the design choices and security controls that your organization can rely on in these environments. Organizations should modify these controls to verify that they meet their specific requirements.
 
  This architecture is capable of supporting some of the hardest challenges for the public sector when implementing ML programs such as:

@@ -201,7 +201,7 @@ Before registering blueprints, create [self-managed CloudFormation StackSets](ht
 
  **Example: Create a StackSet using AWS CLI**
 
-```
+```bash
 aws cloudformation create-stack-set \
   --stack-set-name my-blueprint-stackset \
   --template-url https://s3.us-east-1.amazonaws.com/my-bucket/my-template.yaml \

@@ -15,7 +15,7 @@ The secret must be in the **same AWS region** as the SDMA deployment. Cross-regi
 
 1. Grant the SDMA connector invocation Lambda permission to read the secret:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -65,7 +65,7 @@ Each connector is dispatched independently — if the Slack delivery fails and r
 ## Example – alert owners when an asset fails quality checks (Slack)
 <a name="_example-alert-owners-when-an-asset-fails-quality-checks-slack"></a>
 
-```
+```json
 {
   "connectorName": "Asset Failure Alerts — Slack",
   "connectorType": "notification",
@@ -101,7 +101,7 @@ Each connector is dispatched independently — if the Slack delivery fails and r
 ## Example – in-app notification when a new asset is created
 <a name="_example-in-app-notification-when-a-new-asset-is-created"></a>
 
-```
+```json
 {
   "connectorName": "New Asset Alert — In-App",
   "connectorType": "notification",
@@ -133,7 +133,7 @@ Each connector is dispatched independently — if the Slack delivery fails and r
 
 Create two connectors — one per channel — and associate both to the same template:
 
-```
+```json
 // Rule 1 — Slack
 {
   "connectorName": "Failure Alert — Slack",

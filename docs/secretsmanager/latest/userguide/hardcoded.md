@@ -90,7 +90,7 @@ The first step is to copy the existing hardcoded secret into Secrets Manager. If
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

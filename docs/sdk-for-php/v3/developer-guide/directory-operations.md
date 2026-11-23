@@ -11,7 +11,7 @@ S3 Transfer Manager can handle entire directory transfers.
 
 S3 Transfer Manager can upload an entire directory to an S3 bucket. {{<Are the key values the filenames when uploaded?>}}
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\UploadDirectoryRequest;
@@ -111,7 +111,7 @@ When the `uploadDirectory` method runs successfully, it returns an `UploadDirect
 
 You can download a directory from an S3 bucket. {{<Are the filenames the key values when downloaded? If there is no extension in the key, is there also no extension on the file?>}}
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\DownloadDirectoryRequest;
@@ -226,14 +226,14 @@ The `recursive` option controls whether subdirectories are included. When `false
 The key in S3 for each uploaded file will be the provided s3 prefix, by default is null, plus the relative path of the file starting from the specified source directory. Also, we replace the directory separator in the resolved key name with the provided s3 delimiter, which by default it will be /.
 **Example 1**
 
-```
+```php
 $sourceDirectory = "/opt/my-upload-directory";
 $s3Prefix = "important/";
 $s3Delimiter = "/"; // Default value
 ```
 Directory Structure
 
-```
+```php
 /opt/my-upload-directory/
 -- my-file1.txt
 -- my-file-2.txt
@@ -243,11 +243,11 @@ Directory Structure
 ```
 The keys for each file will be:
 
-```
+```php
 $s3Prefix + $fileRelativePath;
 ```
 
-```
+```php
 - important/my-file1.txt
 - important/my-file-2.txt
 - important/sub-dir/my-another-file1.txt
@@ -255,14 +255,14 @@ $s3Prefix + $fileRelativePath;
 ```
 **Example 2**
 
-```
+```php
 $sourceDirectory = "/opt/my-docs";
 $s3Prefix = ''; // No provided and it will defaulted to empty string
 $s3Delimiter = "/"; // Default value
 ```
 Directory Structure
 
-```
+```php
 /opt/my-docs/
 -- my-file1.txt
 -- my-file-2.txt
@@ -272,11 +272,11 @@ Directory Structure
 ```
 The keys for each file will be:
 
-```
+```php
 $s3Prefix + $fileRelativePath;
 ```
 
-```
+```php
 - my-file1.txt
 - my-file-2.txt
 - sub-dir/my-another-file1.txt
@@ -285,7 +285,7 @@ $s3Prefix + $fileRelativePath;
 
 **Example Upload directory path handling**
 
-```
+```php
 <?php
 // Source directory: /home/user/photos/
 //   fla/beach.jpg
@@ -313,7 +313,7 @@ Downloads are always recursive. The SDK retrieves all objects under the specifie
 
 **Example Download directory path handling**
 
-```
+```php
 <?php
 // S3 objects:
 //   2023/fla/beach.jpg
@@ -332,7 +332,7 @@ The s3 prefix, if provided, will be removed from the object key.
 If the s3Delimiter is different than the OS directory separator then, the s3 delimiter will be replaced with the OS directory separator.
 **Example 1**
 
-```
+```php
 $s3Prefix = "my-prefix";
 $s3Objects = [
     "my-prefix/file-1.txt",
@@ -343,7 +343,7 @@ $targetDirectory = "/opt/bucket/downloads/";
 ```
 Once those objects are downloaded will be placed as follow:
 
-```
+```php
 /opt/bucket/downloads/
 -- file-1.txt
 -- file-2.txt
@@ -353,7 +353,7 @@ Once those objects are downloaded will be placed as follow:
 As we can see, the prefix was removed from the final file path for the objects.
 **Example 2 - without s3 prefix**
 
-```
+```php
 $s3Prefix = ""; // No provided
 $s3Objects = [
     "README.md",
@@ -365,7 +365,7 @@ $targetDirectory = "/opt/bucket/downloads/";
 ```
 Once those objects are downloaded will be placed as follow:
 
-```
+```php
 /opt/bucket/downloads/
 -- README.md
 -- my-docs/

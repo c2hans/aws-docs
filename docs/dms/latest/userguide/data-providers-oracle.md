@@ -12,7 +12,7 @@ DMS Schema Conversion supports the following modes for Oracle as a migration sou
 
 To connect to your Oracle database, use the Oracle System ID (SID). To find the Oracle SID, submit the following query to your Oracle database:
 
-```
+```sql
 SELECT sys_context('userenv','instance_name') AS SID FROM dual;
 ```
 

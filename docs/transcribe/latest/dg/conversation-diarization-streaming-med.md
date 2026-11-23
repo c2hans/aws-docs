@@ -62,7 +62,7 @@ GET wss://transcribestreaming.{{us-west-2}}.amazonaws.com:8443/medical-stream-tr
 
 The following code shows the truncated example response of a streaming request.
 
-```
+```json
 {
   "Transcript": {
     "Results": [

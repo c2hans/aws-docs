@@ -85,7 +85,7 @@ Step Functions accepts names for state machines, executions, activities, and lab
 
    1. In the **Input** box, enter the following JSON input to run your workflow.
 
-      ```
+      ```json
       {
           "Comment": "Testing the human approval tutorial."
       }
@@ -114,7 +114,7 @@ Step Functions accepts names for state machines, executions, activities, and lab
 
 Use this AWS CloudFormation template to deploy an example of a human approval process workflow.
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "AWS Step Functions Human based task example. It sends an email with an HTTP URL for approval."
 Parameters:

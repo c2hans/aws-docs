@@ -15,7 +15,7 @@ In the following list, the required parameters are described first.
  ** BusinessTitle **   <a name="AWSPartnerCentral-Type-AwsTeamMember-BusinessTitle"></a>
 Specifies the AWS team member's business title and indicates their organizational role.
 Type: String
-Valid Values: `AWSSalesRep | AWSAccountOwner | WWPSPDM | PDM | PSM | ISVSM`
+Valid Values: `AWSSalesRep | AWSAccountOwner | WWPSPDM | PDM | PSM | ISVSM | Signatory`
 Required: No
 
  ** Email **   <a name="AWSPartnerCentral-Type-AwsTeamMember-Email"></a>

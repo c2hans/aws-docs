@@ -96,7 +96,7 @@ This is an introductory example policy. When you attach the policy to the user, 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

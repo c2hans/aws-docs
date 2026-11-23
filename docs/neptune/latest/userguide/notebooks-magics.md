@@ -536,7 +536,7 @@ For example, the `%%neptune_ml export start` cell magic can consume a JSON docum
 
 In the [Neptune-ML-01-Introduction-to-Node-Classification-Gremlin](https://github.com/aws/graph-notebook/blob/main/src/graph_notebook/notebooks/04-Machine-Learning/Neptune-ML-01-Introduction-to-Node-Classification-Gremlin.ipynb) notebook, under **Configuring Features** in the **Export the data and model configuration** section, you can see how the following cell holds export parameters in a document assigned to a Jupyter variable named `export-params`:
 
-```
+```json
 export_params = {
   "command": "export-pg",
   "params": {

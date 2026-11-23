@@ -39,7 +39,7 @@ SageMaker AI LightGBM uses the Python Joblib module to serialize or deserialize 
 **To use a model trained with SageMaker AI LightGBM with the JobLib module**
 + Use the following Python code:
 
-  ```
+  ```python
   import joblib
   import tarfile
 

@@ -18,7 +18,7 @@ Use the `Connectors` resource attribute by embedding it within a **source** reso
 
 The following outlines how this resource attribute is written:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...
@@ -46,7 +46,7 @@ First, the embedded `Connectors` resource attribute is transformed into an `AWS:
 
 For example, here is an embedded connector:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...
@@ -67,7 +67,7 @@ Resources:
 
 This will generate the following `AWS::Serverless::Connector` resource:
 
-```
+```yaml
 Transform: AWS::Serverless-2016-10-31
 Resources:
   ...
@@ -95,7 +95,7 @@ The following example shows how you can use connectors to write data from an AWS
 
 ![A Lambda function writing data to a DynamoDB table using AWS SAM connectors.](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/images/managing-connectors-example.png)
 
-```
+```yaml
 Transform: AWS::Serverless-2016-10-31
 Resources:
   MyTable:

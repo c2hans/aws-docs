@@ -38,7 +38,7 @@ SYS\_LUDF\_DETAIL is visible only to superusers. For more information, see [Visi
 
 The following example uses a Lambda UDF in a query, and then shows how to query the SYS\_LUDF\_DETAIL view to see the function execution details.
 
-```
+```sql
 SET SESSION AUTHORIZATION regular_user;
 
 CREATE EXTERNAL FUNCTION exfunc_sum(INT,INT) RETURNS INT STABLE

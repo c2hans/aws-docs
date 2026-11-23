@@ -17,7 +17,7 @@ aws redshift-data list-statements
 
 The following is an example of the response.
 
-```
+```json
 {
     "Statements": [
         {

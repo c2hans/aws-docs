@@ -9,7 +9,7 @@ AWS TNB supports security group ingress rules to automate the provisioning of Am
 ## Syntax
 <a name="node-networking-security-group-ingress-rule-syntax"></a>
 
-```
+```yaml
 AWS.Networking.SecurityGroupIngressRule
   properties:
     ip\_protocol: String
@@ -78,7 +78,7 @@ Type: String
 ## Example
 <a name="node-networking-security-group-ingress-rule-example"></a>
 
-```
+```yaml
 SampleSecurityGroupIngressRule:
       type: tosca.nodes.AWS.Networking.SecurityGroupIngressRule
       properties:

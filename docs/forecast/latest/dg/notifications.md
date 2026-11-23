@@ -49,7 +49,7 @@ The following table lists the Forecast resource jobs and their status change eve
 
  Notifications contain information about the resource, including the Amazon Resource Name (ARN), job status, job duration (in minutes), and, if the job failed, an error message. Delete event notifications don't include a `Duration` field. The following is an example notification:
 
-```
+```json
 {
     "version": "0",
     "id": "017fcb6d-7ca3-ebf8-819e-3e0fa956ee17",

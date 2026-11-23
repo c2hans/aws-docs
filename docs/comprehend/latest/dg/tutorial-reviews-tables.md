@@ -260,7 +260,7 @@ Create an IAM role for AWS Glue that provides permission to access your S3 bucke
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -293,7 +293,7 @@ Create an IAM role for AWS Glue that provides permission to access your S3 bucke
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

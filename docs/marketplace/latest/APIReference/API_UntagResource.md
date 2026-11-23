@@ -84,6 +84,8 @@ HTTP Status Code: 429
  ** ValidationException **
 An error occurred during validation.
 HTTP status code: 422
+ ** ValidationExceptionFieldList **
+A list of detailed entries describing the request fields that failed validation. Present when the failure can be attributed to one or more specific fields.
 HTTP Status Code: 422
 
 ## See Also

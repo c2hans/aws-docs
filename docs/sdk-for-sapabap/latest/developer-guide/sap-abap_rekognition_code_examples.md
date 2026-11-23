@@ -26,7 +26,7 @@ For more information, see [Comparing faces in images](https://docs.aws.amazon.co
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create S3 object reference for the source image
         DATA(lo_source_s3obj) = NEW /aws1/cl_reks3object(
@@ -82,7 +82,7 @@ For more information, see [Creating a collection](https://docs.aws.amazon.com/re
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_rek->createcollection(
           iv_collectionid = iv_collection_id ).
@@ -105,7 +105,7 @@ For more information, see [Deleting a collection](https://docs.aws.amazon.com/re
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_rek->deletecollection(
           iv_collectionid = iv_collection_id ).
@@ -128,7 +128,7 @@ For more information, see [Deleting faces from a collection](https://docs.aws.am
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_rek->deletefaces(
           iv_collectionid = iv_collection_id
@@ -156,7 +156,7 @@ For more information, see [Describing a collection](https://docs.aws.amazon.com/
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_rek->describecollection(
           iv_collectionid = iv_collection_id ).
@@ -181,7 +181,7 @@ For more information, see [Detecting faces in an image](https://docs.aws.amazon.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create S3 object reference for the image
         DATA(lo_s3object) = NEW /aws1/cl_reks3object(
@@ -223,7 +223,7 @@ For more information, see [Detecting labels in an image](https://docs.aws.amazon
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create S3 object reference for the image
         DATA(lo_s3object) = NEW /aws1/cl_reks3object(
@@ -261,7 +261,7 @@ For more information, see [Detecting inappropriate images](https://docs.aws.amaz
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create S3 object reference for the image
         DATA(lo_s3object) = NEW /aws1/cl_reks3object(
@@ -298,7 +298,7 @@ For more information, see [Detecting text in an image](https://docs.aws.amazon.c
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create S3 object reference for the image
         DATA(lo_s3object) = NEW /aws1/cl_reks3object(
@@ -335,7 +335,7 @@ For more information, see [Adding faces to a collection](https://docs.aws.amazon
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create S3 object reference for the image
         DATA(lo_s3object) = NEW /aws1/cl_reks3object(
@@ -377,7 +377,7 @@ For more information, see [Listing collections](https://docs.aws.amazon.com/reko
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_rek->listcollections(
           iv_maxresults = iv_max_results ).
@@ -402,7 +402,7 @@ For more information, see [Listing faces in a collection](https://docs.aws.amazo
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_rek->listfaces(
           iv_collectionid = iv_collection_id
@@ -430,7 +430,7 @@ For more information, see [Recognizing celebrities in an image](https://docs.aws
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create S3 object reference for the image
         DATA(lo_s3object) = NEW /aws1/cl_reks3object(
@@ -467,7 +467,7 @@ For more information, see [Searching for a face (face ID)](https://docs.aws.amaz
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_rek->searchfaces(
           iv_collectionid = iv_collection_id
@@ -497,7 +497,7 @@ For more information, see [Searching for a face (image)](https://docs.aws.amazon
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create S3 object reference for the image
         DATA(lo_s3object) = NEW /aws1/cl_reks3object(

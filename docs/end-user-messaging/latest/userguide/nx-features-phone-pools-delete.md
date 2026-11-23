@@ -31,7 +31,7 @@ Before you can delete a pool you need to turn off Deletion protection and remove
 **To delete a pool using the AWS CLI**
 + To delete a pool, enter the following command at the command line:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 delete-pool \
   > --pool-id {{pool-78ec067f62f94d57bd3bab991example}}
   ```

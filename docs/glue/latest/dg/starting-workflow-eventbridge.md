@@ -32,7 +32,7 @@ In the following commands, replace:
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -69,7 +69,7 @@ In the following commands, replace:
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

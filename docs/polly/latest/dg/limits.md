@@ -16,6 +16,7 @@ Keep the following limits in mind when using Amazon Polly.
 + [Supported regions](#limits-regions)
 + [Quotas and throttle rates](#limits-throttle)
 + [Pronunciation lexicons](#limits-lexicons)
++ [Custom voice quotas](#limits-custom-voices)
 + [SynthesizeSpeech API operations](#limits-synthesizespeech)
 + [SpeechSynthesisTask API operations](#limits-long)
 + [Speech Synthesis Markup Language (SSML)](#limits-ssml)
@@ -39,6 +40,9 @@ Keep the following limits in mind when using Amazon Polly.
 | `DeleteLexicon`<br />`PutLexicon`<br />`GetLexicon`<br />`ListLexicons` | Any 5 transactions per second (tps) from these operations combined.<br />Maximum allowed burst of 10 tps. |
 | **Tagging** |  |
 | `TagResource`<br />`UntagResource`<br />`ListTagsForResource` | Any 5 transactions per second (tps) from these operations combined.<br />Maximum allowed burst of 10 tps. |
+| **Custom voices** |  |
+| `CreateVoice`<br />`DeleteVoice` | Any 1 transaction per second (tps) from these operations combined.<br />Maximum allowed burst of 1 tps. |
+| `GetVoice` | Shares the `DescribeVoices` quota: any 80 tps from both operations combined, with a burst limit of 100 tps. |
 | **Speech** |   |
 | `DescribeVoices` | 80 tps with a burst limit of 100 tps |
 | `SynthesizeSpeech` | Generative voice: 8 tps<br />Long-form voice: 8 tps with a burst limit of 10 tps<br />Neural voice: 8 tps with a burst limit of 10 tps<br />Standard voice: 80 tps with a burst limit of 100 tps |
@@ -70,6 +74,17 @@ Keep the following limits in mind when using Amazon Polly.
 + Each lexicon can have up to 50 tags. For more information, see [Tag limits and conventions](tagging.md#tagging-restrictions).
 
 For information about using lexicons, see [Managing lexicons](managing-lexicons.md).
+
+## Custom voice quotas
+<a name="limits-custom-voices"></a>
+
+The following quotas apply to custom voices in each AWS Region of an account:
++ You can have up to 10 custom voices. Voices in every status count. This quota is adjustable. To request a higher quota, contact AWS Support.
++ Each voice can have 1–10 recordings. Each recording that you pass in the request can be up to 5 MB, before base64 encoding. All recordings together can be up to 15 minutes long.
++ Voice names can be up to 64 characters long and can contain letters, digits, hyphens (-), and underscores (\_).
++ Each custom voice can have up to 50 tags. For more information, see [Tag limits and conventions](tagging.md#tagging-restrictions).
+
+Synthesis requests that use a custom voice have the same quotas as other requests to the generative engine. For more information about custom voices, see [Voice cloning in Amazon Polly](custom-voices.md).
 
 ## SynthesizeSpeech API operations
 <a name="limits-synthesizespeech"></a>

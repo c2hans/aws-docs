@@ -22,7 +22,7 @@ Creating and using an Amazon DynamoDB table can incur charges. The example delet
 
 Create a file named `getting_started_dynamodb.py` with the following code:
 
-```
+```python
 """Make first DynamoDB calls with the AWS SDK for Python v4."""
 
 import time
@@ -126,7 +126,7 @@ The example passes the table settings and item attributes as dictionaries. Dynam
 
 Run the program from the directory that contains `getting_started_dynamodb.py`:
 
-```
+```bash
 python getting_started_dynamodb.py
 ```
 

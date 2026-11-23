@@ -53,7 +53,7 @@ Programmatic access for serverless and SageMaker AI Training Jobs workflows usin
 
 Use technique-specific trainer classes for fully managed customization:
 
-```
+```python
 from sagemaker.train import SFTTrainer, DPOTrainer, RLVRTrainer, RLAIFTrainer
 
 # Example: Serverless SFT
@@ -74,7 +74,7 @@ trainer.train()
 
 Use `ModelTrainer` for full control over instance selection:
 
-```
+```python
 from sagemaker.train import ModelTrainer
 from sagemaker.train.configs import Compute, InputData
 
@@ -93,7 +93,7 @@ trainer.train(input_data_config=[
 
 Use the SageMaker AI Training session APIs when a predefined workflow is too rigid. Instead of submitting a complete training script, you open a stateful session and call training operations — `forward_backward()`, `optim_step()`, `sample()` — as individual API calls, then compose them into whatever procedure your technique requires. The model stays loaded between calls, so you can write custom loss functions, run multi-turn reinforcement learning with elastic rollouts, and chain multiple procedures in one session. SageMaker AI manages the underlying infrastructure and tenant isolation.
 
-```
+```python
 from sagemaker.train.training_session import ServiceClient, AdamParams
 
 svc = ServiceClient(region="us-west-2", role_arn="arn:aws:iam::111122223333:role/MyRole")

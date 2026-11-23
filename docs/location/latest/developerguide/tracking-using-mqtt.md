@@ -60,7 +60,7 @@ If no devices are currently publishing telemetry that includes location, you can
 
 1. Under **Publish to a topic**, set the **Topic name** to {{iot/topic}} (or the name of the topic that you set up in your AWS IoT Core rule, if different), and provide the following for the **Message payload**. Replace the timestamp {{1604940328}} with a valid timestamp within the last 30 days (any timestamps older than 30 days are ignored by Amazon Location Service trackers).
 
-   ```
+   ```json
    {
      "payload": {
        "deviceid": "thing123",

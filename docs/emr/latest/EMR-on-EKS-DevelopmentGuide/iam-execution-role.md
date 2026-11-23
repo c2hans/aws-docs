@@ -8,7 +8,7 @@ To use the `StartJobRun` command to submit a job run on an EKS cluster, you must
 
 The following permissions must be included in the trust policy for the job execution role.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -35,7 +35,7 @@ The trust policy in the preceding example grants permissions only to an Amazon E
 
 You can run the following command to automatically update the trust policy in the format given above.
 
-```
+```shell
 aws emr-containers update-role-trust-policy \
        --cluster-name {{cluster}} \
        --namespace {{namespace}} \
@@ -51,7 +51,7 @@ An administrator for your Amazon EKS cluster can create a multi-tenant Amazon EM
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

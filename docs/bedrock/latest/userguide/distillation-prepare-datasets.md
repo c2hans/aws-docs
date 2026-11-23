@@ -28,7 +28,7 @@ The following are examples for how you can format your input prompts for RAG or 
 ------
 #### [ RAG prompt example ]
 
-```
+```json
 {
   "schemaVersion": "bedrock-conversation-2024",
   "system": [
@@ -52,7 +52,7 @@ The following are examples for how you can format your input prompts for RAG or 
 ------
 #### [ Agent prompt example ]
 
-```
+```json
 {
     "schemaVersion": "bedrock-conversation-2024",
     "system": [

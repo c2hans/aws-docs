@@ -32,7 +32,7 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/su
 
  The following YAML example defines a workflow that runs every 5 minutes by using a direct Amazon EventBridge rate expression for the `schedule` parameter.
 
-```
+```yaml
 rate_schedule_test:
   dag_id: rate_schedule_test
   schedule: rate(5 minutes)

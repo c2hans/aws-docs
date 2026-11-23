@@ -43,7 +43,7 @@ Pure Ruby gems contain only Ruby code and don't require compilation. These gems 
 1. Create a `Gemfile` to specify the pure Ruby gems you want to include in your layer:
 **Example Gemfile**
 
-   ```
+   ```ruby
    source 'https://rubygems.org'
 
    gem 'tzinfo'
@@ -75,7 +75,7 @@ Pure Ruby gems contain only Ruby code and don't require compilation. These gems 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Compress-Archive -Path .\ruby -DestinationPath .\layer.zip
    ```
 
@@ -108,7 +108,7 @@ Many popular Ruby gems contain native extensions (C code) that must be compiled 
 1. Create a `Gemfile`.
 **Example Gemfile**
 
-   ```
+   ```ruby
    source 'https://rubygems.org'
 
    gem 'nokogiri'
@@ -118,7 +118,7 @@ Many popular Ruby gems contain native extensions (C code) that must be compiled 
 1. Use Docker to build the gems in a Linux environment that is compatible with Lambda. Specify an [AWS base image](ruby-image.md#ruby-image-base) in your Dockerfile:
 **Example Dockerfile for Ruby 4.0**
 
-   ```
+   ```dockerfile
    FROM {{public.ecr.aws/lambda/ruby:3.4}}
 
    # Copy Gemfile
@@ -183,7 +183,7 @@ You must require each gem individually in your function code. You can't use `bun
 1. Create your Ruby modules in the `ruby/lib` directory. The following example module validates orders by confirming that they contain the required information.
 **Example ruby/lib/order\_validator.rb**
 
-   ```
+   ```ruby
    require 'json'
 
    module OrderValidator
@@ -235,7 +235,7 @@ You must require each gem individually in your function code. You can't use `bun
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Compress-Archive -Path .\ruby -DestinationPath .\layer.zip
    ```
 
@@ -251,7 +251,7 @@ You must require each gem individually in your function code. You can't use `bun
 
 1. In your function, require and use the modules. You must require each gem individually in your function code. You can't use `bundler/setup` or `Bundler.require`. For more information, see [Using gems from layers in a function](#ruby-layers-bundler-limitations). Example:
 
-   ```
+   ```ruby
    require 'json'
    require 'order_validator'
 
@@ -281,7 +281,7 @@ You must require each gem individually in your function code. You can't use `bun
 
    You can use the following [test event](testing-functions.md#invoke-with-event) to invoke the function:
 
-   ```
+   ```json
    {
        "body": "{\"product_id\": \"ABC123\", \"quantity\": 2, \"priority\": \"express\"}"
    }
@@ -289,7 +289,7 @@ You must require each gem individually in your function code. You can't use `bun
 
    Expected response:
 
-   ```
+   ```json
    {
      "statusCode": 200,
      "body": "{\"message\":\"Order validated successfully\",\"order\":{\"product_id\":\"ABC123\",\"quantity\":2,\"shipping_priority\":\"express\"}}"
@@ -334,7 +334,7 @@ The [compatible runtimes](https://docs.aws.amazon.com/lambda/latest/api/API_Publ
 
 In your function code, you must explicitly require each gem that you want to use. Bundler commands such as `bundler/setup` and `Bundler.require` are not supported. Here's how to properly use gems from a layer in a Lambda function:
 
-```
+```ruby
 # Correct: Use explicit requires for each gem
 require 'nokogiri'
 require 'httparty'

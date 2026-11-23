@@ -14,7 +14,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java  ]
 
-```
+```java
     private static AmazonTimestreamQuery buildQueryClient() {
         AmazonTimestreamQuery client = AmazonTimestreamQueryClient.builder().withRegion("us-east-1").build();
         return client;
@@ -24,7 +24,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java v2  ]
 
-```
+```java
     private static TimestreamQueryClient buildQueryClient() {
         return TimestreamQueryClient.builder()
                 .region(Region.US_EAST_1)
@@ -35,14 +35,14 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Go  ]
 
-```
+```java
 sess, err := session.NewSession(&aws.Config{Region: aws.String("us-east-1")})
 ```
 
 ------
 #### [  Python  ]
 
-```
+```python
 query_client = session.client('timestream-query')
 ```
 
@@ -53,21 +53,21 @@ The following snippet uses AWS SDK for JavaScript v3. For more information about
 
 An additional command import is shown here. The `QueryCommand` import is not required to create the client.
 
-```
+```javascript
 import { TimestreamQueryClient, QueryCommand } from "@aws-sdk/client-timestream-query";
 const queryClient = new TimestreamQueryClient({ region: "us-east-1" });
 ```
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/sample_apps/js).
 
-```
+```javascript
 queryClient = new AWS.TimestreamQuery();
 ```
 
 ------
 #### [  .NET  ]
 
-```
+```cs
 var queryClientConfig = new AmazonTimestreamQueryConfig
 {
     RegionEndpoint = RegionEndpoint.USEast1

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 
 The AWS Glue `getResolvedOptions(args, options)` utility function gives you access to the arguments that are passed to your script when you run a job. To use this function, start by importing it from the AWS Glue `utils` module, along with the `sys` module:
 
-```
+```python
 import sys
 from awsglue.utils import getResolvedOptions
 ```
@@ -18,7 +18,7 @@ from awsglue.utils import getResolvedOptions
 **Example Retrieving arguments passed to a JobRun**
 Suppose that you created a JobRun in a script, perhaps within a Lambda function:
 
-```
+```python
 response = client.start_job_run(
              JobName = 'my_test_Job',
              Arguments = {
@@ -29,7 +29,7 @@ response = client.start_job_run(
 ```
 To retrieve the arguments that are passed, you can use the `getResolvedOptions` function as follows:
 
-```
+```python
 import sys
 from awsglue.utils import getResolvedOptions
 

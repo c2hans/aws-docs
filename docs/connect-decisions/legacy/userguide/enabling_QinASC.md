@@ -45,7 +45,7 @@ To update the instance role in the IAM console, perform the following steps:
 
 ****
 
-   ```
+   ```json
 
    ```
 

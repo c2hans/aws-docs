@@ -13,7 +13,7 @@ You can use the optional CloudFormation template parameter named `Properties to 
 
 For example, suppose you set this parameter to `bob`:
 
-```
+```json
 "Properties to exclude from being inserted into Elastic Search Index" : bob
 ```
 
@@ -25,7 +25,7 @@ g.V("1").property("bob", "test")
 
 Similarly, you could set the parameter to `http://my/example#bob`:
 
-```
+```json
 "Properties to exclude from being inserted into Elastic Search Index" : http://my/example#bob
 ```
 
@@ -78,7 +78,7 @@ For Gremlin, valid datatypes to list are:
 
 For example, suppose you set this parameter to `string`:
 
-```
+```json
 "Datatypes to exclude from being inserted into Elastic Search Index" : string
 ```
 
@@ -90,7 +90,7 @@ g.V("1").property("myStringval", "testvalue")
 
 Similarly, you could set the parameter to `int`:
 
-```
+```json
 "Datatypes to exclude from being inserted into Elastic Search Index" : int
 ```
 

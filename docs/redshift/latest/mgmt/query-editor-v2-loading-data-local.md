@@ -19,7 +19,7 @@ Your query editor v2 administrator must specify the common Amazon S3 bucket in t
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -56,7 +56,7 @@ Your query editor v2 administrator must specify the common Amazon S3 bucket in t
 
 ****
 
-  ```
+  ```json
   {
    "Version":"2012-10-17",
       "Statement": [

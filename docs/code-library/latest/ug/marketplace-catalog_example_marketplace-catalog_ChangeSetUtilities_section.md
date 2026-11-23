@@ -15,7 +15,7 @@ The following code examples show how to define utilities to start a changeset.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 Utility to load a changeset from a JSON file and start processing it.
 
-```
+```java
 package com.example.awsmarketplace.catalogapi;
 
 import java.io.ByteArrayInputStream;
@@ -169,7 +169,7 @@ public class RunChangesets {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 Utility to start a changeset.
 
-```
+```python
 """
 Purpose:
 
@@ -220,7 +220,7 @@ def usage_demo(change_set, change_set_name):
 ```
 Utility to load a changeset from a JSON file.
 
-```
+```python
 """
 Purpose:
 

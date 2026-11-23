@@ -85,7 +85,7 @@ Revoked Certificates:
 
 All certificates, including revoked certificates, are included in the audit report for a private CA. The following example shows an audit report with one issued and one revoked certificate. For more information, see [Use audit reports with your private CA](PcaAuditReport.md).
 
-```
+```json
 [
    {
       "awsAccountId":"account",

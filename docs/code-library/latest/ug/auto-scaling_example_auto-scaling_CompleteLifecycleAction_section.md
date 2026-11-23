@@ -32,7 +32,7 @@ For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example completes the specified lifecycle action.**
 
-```
+```powershell
 Complete-ASLifecycleAction -LifecycleHookName myLifecycleHook -AutoScalingGroupName my-asg -LifecycleActionResult CONTINUE -LifecycleActionToken bcd2f1b8-9a78-44d3-8a7a-4dd07d7cf635
 ```
 +  For API details, see [CompleteLifecycleAction](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -40,7 +40,7 @@ Complete-ASLifecycleAction -LifecycleHookName myLifecycleHook -AutoScalingGroupN
 **Tools for PowerShell V5**
 **Example 1: This example completes the specified lifecycle action.**
 
-```
+```powershell
 Complete-ASLifecycleAction -LifecycleHookName myLifecycleHook -AutoScalingGroupName my-asg -LifecycleActionResult CONTINUE -LifecycleActionToken bcd2f1b8-9a78-44d3-8a7a-4dd07d7cf635
 ```
 +  For API details, see [CompleteLifecycleAction](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

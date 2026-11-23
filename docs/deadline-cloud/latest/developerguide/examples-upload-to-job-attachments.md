@@ -15,7 +15,7 @@ The script provides the following:
 
 Upload by specifying a queue:
 
-```
+```bash
 python upload_to_job_attachments.py \
     --farm-id {{farm-1234567890abcdef}} \
     --queue-id {{queue-1234567890abcdef}} \
@@ -24,7 +24,7 @@ python upload_to_job_attachments.py \
 
 Or upload directly to an Amazon S3 bucket and prefix:
 
-```
+```bash
 python upload_to_job_attachments.py \
     --s3-bucket {{my-bucket}} \
     --s3-prefix {{job-attachments}} \

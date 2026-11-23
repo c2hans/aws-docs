@@ -23,7 +23,7 @@ This page includes the following topics:
 
 To send requests to a different endpoint, such as a local test server, set the `endpoint_uri` field. The following example sends DynamoDB requests to a local test server.
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient, DynamoDBConfig
 
 config = DynamoDBConfig.resolve(
@@ -49,11 +49,11 @@ To form the service-specific names, the SDK takes the service ID and replaces sp
 
 For example, each of the following settings sends DynamoDB requests to a local endpoint. The first is an environment variable. The second is a `services` section in the shared config file.
 
-```
+```bash
 export AWS_ENDPOINT_URL_DYNAMODB=http://localhost:8000
 ```
 
-```
+```ini
 # ~/.aws/config
 [default]
 region = us-east-1
@@ -80,7 +80,7 @@ Many AWS services offer FIPS endpoints and dual-stack endpoints. FIPS endpoints 
 
 In environment variables and the shared `config` file, use `true` or `false` in any letter case. Any other value raises `ConfigValidationError` when the configuration is resolved.
 
-```
+```python
 config = DynamoDBConfig.resolve(
     region="us-east-1",
     use_fips_endpoint=True,
@@ -88,7 +88,7 @@ config = DynamoDBConfig.resolve(
 )
 ```
 
-```
+```ini
 # ~/.aws/config
 [default]
 region = us-east-1
@@ -116,7 +116,7 @@ Credentials include an account ID when their source provides one. For example, t
 
 You can also set the mode with the `AWS_ACCOUNT_ID_ENDPOINT_MODE` environment variable or the `account_id_endpoint_mode` setting in the shared `config` file. Values aren't case sensitive. Any other value raises `ConfigValidationError`.
 
-```
+```python
 config = DynamoDBConfig.resolve(
     region="us-east-1",
     account_id_endpoint_mode="disabled",
@@ -140,7 +140,7 @@ The Amazon S3 client has the following additional endpoint fields. When `use_arn
 
 Use `force_path_style` with a custom endpoint that doesn't support bucket names in the host name.
 
-```
+```python
 from aws_sdk_s3 import S3Config
 
 config = S3Config.resolve(
@@ -157,7 +157,7 @@ For more information about the Amazon S3 client, see [Amazon S3](services-s3.md)
 
 To send every request to `endpoint_uri` without evaluating the endpoint rules, set the `endpoint_resolver` field to a `StaticEndpointResolver` from `smithy_core.endpoints`. The client then ignores `region`, `use_fips_endpoint`, `use_dualstack_endpoint`, and `account_id_endpoint_mode` when it chooses the endpoint. `StaticEndpointResolver` works with both synchronous and asynchronous clients.
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBConfig
 from smithy_core.endpoints import StaticEndpointResolver
 
@@ -182,7 +182,7 @@ Asynchronous clients also accept a synchronous resolver. Implement an asynchrono
 
 Implement `smithy_core.interfaces.EndpointResolver`.
 
-```
+```python
 from typing import Any
 
 from aws_sdk_dynamodb import DynamoDBClient, DynamoDBConfig
@@ -207,7 +207,7 @@ def create_client() -> DynamoDBClient:
 
 Implement `smithy_core.aio.interfaces.AsyncEndpointResolver`.
 
-```
+```python
 from typing import Any
 
 from aws_sdk_dynamodb import AsyncDynamoDBClient, AsyncDynamoDBConfig

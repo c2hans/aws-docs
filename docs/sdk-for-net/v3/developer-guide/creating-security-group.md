@@ -29,7 +29,7 @@ The following snippet searches for existing security groups with the given name 
 
 The example [at the end of this topic](#create-sec-groups-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to determine if a security group with the specified name
     // already exists in the VPC
@@ -59,7 +59,7 @@ The following snippet creates a new security group if a group with that name doe
 
 The example [at the end of this topic](#create-sec-groups-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to create a new security group (either EC2-Classic or EC2-VPC)
     // If vpcID is empty, the security group will be for EC2-Classic
@@ -133,7 +133,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c17c13c15c23b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;

@@ -15,7 +15,7 @@ Instead of making more calls to determine the bucket Region, you can use the SDK
 
 Support for cross-Region access became available with version `2.20.111` of the SDK. Use this version or a later one in your Maven build file for the `s3` dependency as shown in the following snippet.
 
-```
+```xml
 <dependency>
   <groupId>software.amazon.awssdk</groupId>
   <artifactId>s3</artifactId>
@@ -25,7 +25,7 @@ Support for cross-Region access became available with version `2.20.111` of the 
 
 Next, when you create your S3 client, enable cross-Region access as shown in the snippet. By default, access is not enabled.
 
-```
+```java
 S3AsyncClient client = S3AsyncClient.builder()
                                     .crossRegionAccessEnabled(true)
                                     .build();

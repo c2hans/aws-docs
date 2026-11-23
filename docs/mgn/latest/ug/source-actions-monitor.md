@@ -34,6 +34,8 @@ The job detail view shows:
 ## Viewing invocation results
 <a name="source-actions-monitor-invocations"></a>
 
+AWS Transform MGN doesn't store or show script output. The job details list each invocation's status, start time, and duration, with a link to the command in SSM Run Command. You view the script output and exit code in Run Command.
+
 To view results for individual machine invocations:
 
 1. Open a source action execution job from the **Launch history** page
@@ -42,15 +44,14 @@ To view results for individual machine invocations:
 
 1. Check the status for each invocation (Passed, Failed, In Progress, or Timeout)
 
-1. Click on an invocation to view detailed output
+1. To see the script output and exit code, choose the SSM command link to open the command in SSM Run Command
 
-The invocation detail view includes:
+For each invocation, the job details show:
 + **Machine name** — On-premises machine that executed the action
 + **Status** — Invocation result (Passed, Failed, Timeout)
-+ **Exit code** — Script exit code (0 = success)
-+ **Standard output** — Script stdout (up to 1 MB)
-+ **Standard error** — Script stderr (up to 1 MB)
++ **Start time** — When the invocation started
 + **Duration** — Script execution time in seconds
++ **SSM command link** — Opens the command in SSM Run Command, where you can view the standard output, standard error, and exit code
 
 **Note**
 The link to the SSM execution log is available only in the account where the AWS Transform MGN connector is deployed. In a member account that doesn't own the connector, open the log from the connector account.
@@ -98,9 +99,9 @@ Source action execution status is indicated throughout the console:
 
 If a source action execution fails, follow these steps:
 
-1. Check the invocation status and exit code in the job detail view
+1. Check the invocation status in the job details, and the exit code in SSM Run Command
 
-1. Review the **Standard error** output for error messages
+1. Review the standard error output in SSM Run Command for error messages
 
 1. Verify the script in SSM Parameter Store is correct and matches the target platform
 
@@ -108,7 +109,7 @@ If a source action execution fails, follow these steps:
 
 1. Check that the timeout is sufficient for the script duration
 
-1. Verify that the connector role has the required IAM permissions and access to SSM. If every source action fails with `Unsupported action`, update the connector role as described in [Prerequisites](source-actions-intro.md#source-actions-prerequisites). The source server doesn't need access to AWS
+1. Verify that the connector role has the required IAM permissions and access to SSM. If the result includes a warning that AWS Transform MGN couldn't send logs or metrics, add the `mgn:SendClientLogsForMgn` and `mgn:SendClientMetricsForMgn` actions to the connector role, as described in [Prerequisites](source-actions-intro.md#source-actions-prerequisites). The source server doesn't need access to AWS
 
 ### Reviewing the execution in SSM
 <a name="source-actions-troubleshooting-ssm"></a>

@@ -38,7 +38,7 @@ Your user, group or role must have a policy attached that allows the `ImportMode
 
 **Example IAM policy to import a custom model**
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": [
@@ -69,7 +69,7 @@ The following permissions policy allows the AWS KMS operations that Amazon Compr
 + The other KMS key is in the AWS account that imports the model. Amazon Comprehend uses this key to encrypt the new custom model that is created by the import.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -114,7 +114,7 @@ The following trust policy allows Amazon Comprehend to assume the role and gain 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

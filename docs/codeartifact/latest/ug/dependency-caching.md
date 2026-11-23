@@ -8,7 +8,7 @@ You can enable local caching in CodeBuild to reduce the number of dependencies t
 
 For example, if you are using `mvn`, use the following.
 
-```
+```yaml
 cache:
   paths:
     - '/root/.m2/**/*'

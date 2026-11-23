@@ -47,7 +47,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### POST schema
 <a name="inputdevices-inputdeviceid-transfer-request-body-post-example"></a>
 
-```
+```json
 {
   "targetCustomerId": "string",
   "targetRegion": "string",
@@ -61,7 +61,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### InvalidRequest schema
 <a name="inputdevices-inputdeviceid-transfer-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -70,7 +70,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### AccessDenied schema
 <a name="inputdevices-inputdeviceid-transfer-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -79,7 +79,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### ResourceNotFound schema
 <a name="inputdevices-inputdeviceid-transfer-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -88,7 +88,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### ResourceConflict schema
 <a name="inputdevices-inputdeviceid-transfer-response-body-resourceconflict-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -97,7 +97,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### ValidationError schema
 <a name="inputdevices-inputdeviceid-transfer-response-body-validationerror-example"></a>
 
-```
+```json
 {
   "elementPath": "string",
   "errorMessage": "string"
@@ -107,7 +107,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### LimitExceeded schema
 <a name="inputdevices-inputdeviceid-transfer-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -116,7 +116,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### InternalServiceError schema
 <a name="inputdevices-inputdeviceid-transfer-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -125,7 +125,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### BadGatewayException schema
 <a name="inputdevices-inputdeviceid-transfer-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -134,7 +134,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### GatewayTimeoutException schema
 <a name="inputdevices-inputdeviceid-transfer-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

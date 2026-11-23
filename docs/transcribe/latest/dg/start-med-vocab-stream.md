@@ -34,7 +34,7 @@ To use the AWS Management Console to transcribe streaming audio of a medical dic
 
 The following is the syntax for the parameters of an HTTP/2 request.
 
-```
+```http
 POST /medical-stream-transcription HTTP/2
 host: transcribestreaming.{{us-west-2}}.amazonaws.com
 authorization: {{Generated value}}

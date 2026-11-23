@@ -20,6 +20,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Descriptions of the four CFM pillars see, save, plan, and run.](https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/images/cfm-pillars.png)
 
+*The four pillars of Cloud Financial Management.*
+
 +  **See:** How are you currently measuring, monitoring and creating accountability for your cloud spend? If you are new to AWS or planning on using AWS, do you have a plan to establish cost and usage visibility?
 
    To understand your AWS costs and optimize spending, you need to know where those costs are coming from. This requires a deliberate structure for your accounts and resources, helping your finance organization track spending flows and hold teams accountable for their portion of the bottom line.

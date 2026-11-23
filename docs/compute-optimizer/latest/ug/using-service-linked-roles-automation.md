@@ -34,7 +34,7 @@ To create a service-linked role for Compute Optimizer Automation, configure perm
 
 Add the following policy to the IAM entity that needs to create the service-linked role.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

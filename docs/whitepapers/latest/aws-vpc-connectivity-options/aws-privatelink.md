@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
 ![A diagram showing AWS Privatelink.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-privatelink.png)
 
+AWS PrivateLink
+
 We recommend this approach if you want to use services offered by another VPC securely within an AWS network, using private IP addresses. Alternatively, AWS PrivateLink is a good solution when the VPCs have overlapped IP addresses.
 
  AWS PrivateLink fully supports IPv6, but both of the destination VPCs, VPC Subnets, the Network Load Balancer, and the DNS names have to be enabled or modified to use dual-stack. After these pre-requisites are met, IPv6 can be enabled at the service configuration for the endpoint.

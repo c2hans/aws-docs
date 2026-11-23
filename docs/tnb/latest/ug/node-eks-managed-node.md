@@ -14,7 +14,7 @@ AWS TNB supports EKS Managed Node groups to automate the provisioning and lifecy
 ## Syntax
 <a name="node-eks-managed-node-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Compute.EKSManagedNode:
   capabilities:
     compute:
@@ -184,7 +184,7 @@ Type: List
 ## Example
 <a name="node-eks-managed-node-example"></a>
 
-```
+```yaml
 SampleEKSManagedNode:
   type: tosca.nodes.AWS.Compute.EKSManagedNode
   capabilities:

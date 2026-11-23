@@ -106,7 +106,7 @@ This example isn't comprehensive. Additional permissions might be needed for wor
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

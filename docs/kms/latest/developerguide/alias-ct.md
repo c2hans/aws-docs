@@ -8,13 +8,13 @@ You can use an alias to represent an AWS KMS key in an AWS KMS API operation. Wh
 
 For example, the following [GenerateDataKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) request uses the `project-key` alias to represent a KMS key.
 
-```
+```bash
 $ aws kms generate-data-key --key-id alias/project-key --key-spec AES_256
 ```
 
 When this request is recorded in the CloudTrail log, the log entry includes both the alias and the key ARN of the actual KMS key that was used.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

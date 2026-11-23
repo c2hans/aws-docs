@@ -26,7 +26,7 @@ SCPs for Amazon Q Developer in chat applications are limited to Amazon Q Develop
 
 The following SCP denies all IAM operations invoked through all Amazon Q Developer in chat applications configurations.
 
-```
+```json
 {
     "Effect": "Deny",
     "Action": "iam:*",
@@ -49,7 +49,7 @@ The following SCP denies S3 put requests on the specified bucket for all request
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

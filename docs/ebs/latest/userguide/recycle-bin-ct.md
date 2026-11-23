@@ -52,7 +52,7 @@ The following are example CloudTrail log entries.
 ------
 #### [ CreateRule ]
 
-```
+```json
 {
 	"eventVersion": "1.08",
 	"userIdentity": {
@@ -111,7 +111,7 @@ The following are example CloudTrail log entries.
 ------
 #### [ GetRule ]
 
-```
+```json
 {
 	"eventVersion": "1.08",
 	"userIdentity": {
@@ -163,7 +163,7 @@ The following are example CloudTrail log entries.
 ------
 #### [ ListRules ]
 
-```
+```json
 {
 	"eventVersion": "1.08",
 	"userIdentity": {
@@ -220,7 +220,7 @@ The following are example CloudTrail log entries.
 ------
 #### [ UpdateRule ]
 
-```
+```json
 {
 	"eventVersion": "1.08",
 	"userIdentity": {
@@ -278,7 +278,7 @@ The following are example CloudTrail log entries.
 ------
 #### [ DeleteRule ]
 
-```
+```json
 {
 	"eventVersion": "1.08",
 	"userIdentity": {
@@ -330,7 +330,7 @@ The following are example CloudTrail log entries.
 ------
 #### [ TagResource ]
 
-```
+```json
 {
 	"eventVersion": "1.08",
 	"userIdentity": {
@@ -388,7 +388,7 @@ The following are example CloudTrail log entries.
 ------
 #### [ UntagResource ]
 
-```
+```json
 {
 	"eventVersion": "1.08",
 	"userIdentity": {
@@ -443,7 +443,7 @@ The following are example CloudTrail log entries.
 ------
 #### [ ListTagsForResource ]
 
-```
+```json
 {
 	"eventVersion": "1.08",
 	"userIdentity": {
@@ -495,7 +495,7 @@ The following are example CloudTrail log entries.
 ------
 #### [ LockRule ]
 
-```
+```json
 {
 	"eventVersion": "1.08",
 	"userIdentity": {
@@ -570,7 +570,7 @@ The following are example CloudTrail log entries.
 ------
 #### [ UnlockRule ]
 
-```
+```json
 {
 	"eventVersion": "1.08",
 	"userIdentity": {

@@ -30,7 +30,7 @@ When this parameter is not set, Amazon Redshift preserves the existing behavior 
 
 For a provisioned cluster, you must reboot the cluster to apply this parameter. To check the current state of your cluster, run the following command:
 
-```
+```sql
 SELECT is_large_string_enabled();
 ```
 

@@ -8,7 +8,7 @@ A message is a piece of data that can be sent and received by distributed compon
 
 The `sqsClient` variable that is used in the following examples can be created from the following snippet.
 
-```
+```java
 SqsClient sqsClient = SqsClient.create();
 ```
 
@@ -21,7 +21,7 @@ Add a single message to an Amazon Simple Queue Service queue by calling the SqsC
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.*;
@@ -30,7 +30,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
             sqsClient.sendMessage(SendMessageRequest.builder()
                 .queueUrl(queueUrl)
                 .messageBody("Hello world!")
@@ -47,7 +47,7 @@ Send more than one message in a single request by using the SqsClient `sendMessa
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.*;
@@ -56,7 +56,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
             SendMessageBatchRequest sendMessageBatchRequest = SendMessageBatchRequest.builder()
                 .queueUrl(queueUrl)
                 .entries(SendMessageBatchRequestEntry.builder().id("id1").messageBody("Hello from msg 1").build(),
@@ -74,7 +74,7 @@ Retrieve any messages that are currently in the queue by calling the SqsClient `
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.*;
@@ -83,7 +83,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
         try {
             ReceiveMessageRequest receiveMessageRequest = ReceiveMessageRequest.builder()
                 .queueUrl(queueUrl)
@@ -107,7 +107,7 @@ After receiving a message and processing its contents, delete the message from t
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.*;
@@ -116,7 +116,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
         try {
             for (Message message : messages) {
                 DeleteMessageRequest deleteMessageRequest = DeleteMessageRequest.builder()

@@ -32,7 +32,7 @@ A *trail* is a configuration that allows delivery of events as log files to a sp
 
 Calls to the `CreateRescoreExecutionPlan` operation creates the following entry.
 
-```
+```json
 {
             "eventVersion": "1.08",
             "userIdentity": {

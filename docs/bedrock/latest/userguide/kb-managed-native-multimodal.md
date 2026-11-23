@@ -82,7 +82,7 @@ Do not apply lifecycle policies to the entire bucket or to the `aws/` prefix, as
    + {{knowledge-base-id}} – Your knowledge base identifier
    + {{data-source-id}} – Your data source identifier
 
-   ```
+   ```json
    {
        "Rules": [
            {

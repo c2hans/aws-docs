@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-listaliases
 
 The following example shows an AWS CloudTrail log entry for the [ListAliases](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListAliases.html) operation. Because this operation doesn't use any particular alias or AWS KMS key, the `resources` field is empty. For information about viewing aliases in AWS KMS, see [Find the alias name and alias ARN for a KMS key](alias-view.md).
 
-```
+```json
 {
     "eventVersion": "1.02",
     "userIdentity": {

@@ -59,7 +59,7 @@ A single rate limit entry can specify multiple metrics. When an entry has multip
 
 The following example shows a rate limit that enforces both requests per minute and tokens per minute:
 
-```
+```json
 {
     "rateLimitId": "inference-rps-and-tpm",
     "dimensionKeys": ["targetName", "$.context.jwt.sub"],

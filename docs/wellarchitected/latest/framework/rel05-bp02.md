@@ -39,6 +39,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel05-b
 
 ![Diagram of the token bucket algorithm: a bucket holds tokens, each request consumes one token, tokens refill at a fixed rate, and requests are throttled when the bucket is empty.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/token-bucket-algorithm.png)
 
+*Token bucket algorithm for rate limiting*
+
  A throttle protects total capacity across all consumers. A rate limit protects fairness by capping any single requestor, which prevents one consumer or IP address from consuming shared capacity. You usually need both. A global throttle alone still lets one aggressive client crowd out the rest, and per-client limits alone can still be overwhelmed by many clients at once.
 
  Buffering is a third option when the work can be handled asynchronously. Instead of rejecting a spike, accept requests into a queue or stream and drain them at a controlled rate. This smooths bursts and lets you tolerate higher inbound rates than the backend could handle directly. Several AWS services support these patterns: [Amazon API Gateway](https://aws.amazon.com/api-gateway/) implements the token bucket per account and Region and per client through usage plans, [Amazon SQS](https://aws.amazon.com/sqs/) and [Amazon Kinesis](https://aws.amazon.com/kinesis/) buffer requests to smooth the rate, and [AWS WAF](https://aws.amazon.com/waf/) applies rate-based rules to throttle specific consumers that generate unusual load.

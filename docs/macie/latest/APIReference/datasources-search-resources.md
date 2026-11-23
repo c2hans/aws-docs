@@ -49,7 +49,7 @@ Retrieves (queries) statistical data and other information about AWS resources t
 #### POST schema
 <a name="datasources-search-resources-request-body-post-example"></a>
 
-```
+```json
 {
   "bucketCriteria": {
     "excludes": {
@@ -112,7 +112,7 @@ Retrieves (queries) statistical data and other information about AWS resources t
 #### SearchResourcesResponse schema
 <a name="datasources-search-resources-response-body-searchresourcesresponse-example"></a>
 
-```
+```json
 {
   "matchingResources": [
     {
@@ -162,7 +162,7 @@ Retrieves (queries) statistical data and other information about AWS resources t
 #### ValidationException schema
 <a name="datasources-search-resources-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -171,7 +171,7 @@ Retrieves (queries) statistical data and other information about AWS resources t
 #### ServiceQuotaExceededException schema
 <a name="datasources-search-resources-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -180,7 +180,7 @@ Retrieves (queries) statistical data and other information about AWS resources t
 #### AccessDeniedException schema
 <a name="datasources-search-resources-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -189,7 +189,7 @@ Retrieves (queries) statistical data and other information about AWS resources t
 #### ResourceNotFoundException schema
 <a name="datasources-search-resources-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -198,7 +198,7 @@ Retrieves (queries) statistical data and other information about AWS resources t
 #### ConflictException schema
 <a name="datasources-search-resources-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -207,7 +207,7 @@ Retrieves (queries) statistical data and other information about AWS resources t
 #### ThrottlingException schema
 <a name="datasources-search-resources-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -216,7 +216,7 @@ Retrieves (queries) statistical data and other information about AWS resources t
 #### InternalServerException schema
 <a name="datasources-search-resources-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

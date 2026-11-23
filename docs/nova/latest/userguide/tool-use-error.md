@@ -8,7 +8,7 @@ There are some instances where the parameters selected by Amazon Nova can cause 
 
 Here is an example that reports an error status message:
 
-```
+```JSON
 tool_result_message = {
     "role": "user",
     "content": [

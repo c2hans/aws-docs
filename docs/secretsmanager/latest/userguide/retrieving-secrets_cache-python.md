@@ -39,7 +39,7 @@ For more information, see [Permissions reference](auth-and-access.md#reference_i
 **Example Retrieve a secret**
 The following example shows how to get the secret value for a secret named {{mysecret}}.
 
-```
+```python
 import botocore
 import botocore.session
 from aws_secretsmanager_caching import SecretCache, SecretCacheConfig

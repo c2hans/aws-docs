@@ -149,7 +149,7 @@ The following example retrieves the full ingested access control list (ACL) for 
 #### Sample Request
 <a name="API_agent-runtime_GetIngestedDocumentAcl_Example_1_Request"></a>
 
-```
+```json
 POST /knowledgebases/KB12345678/datasources/DS12345678/get-ingested-document-acl HTTP/1.1
 Content-type: application/json
 

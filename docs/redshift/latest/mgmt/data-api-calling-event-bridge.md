@@ -34,7 +34,7 @@ aws events put-targets
 
 The input data.json file is as follows. The `Sql` JSON key indicates there is a single SQL statement. The `Arn` JSON value contains a cluster identifier. The `RoleArn` JSON value contains the IAM role used to run the SQL as described previously.
 
-```
+```json
 {
     "Rule": "test-redshift-cluster-data",
     "EventBusName": "default",
@@ -75,7 +75,7 @@ aws events put-targets
 
 The input data.json file is as follows. The `Sql` JSON key indicates there is a single SQL statement. The `Arn` JSON value contains a workgroup name. The `RoleArn` JSON value contains the IAM role used to run the SQL as described previously.
 
-```
+```json
 {
     "Rule": "test-redshift-serverless-workgroup-data",
     "EventBusName": "default",
@@ -115,7 +115,7 @@ aws events put-targets
 
 The input data.json file is as follows. The `Sqls` JSON key indicates there are multiple SQL statements. The `Arn` JSON value contains a cluster identifier. The `RoleArn` JSON value contains the IAM role used to run the SQL as described previously.
 
-```
+```json
 {
     "Rule": "test-redshift-cluster-data",
     "EventBusName": "default",
@@ -155,7 +155,7 @@ aws events put-targets
 
 The input data.json file is as follows. The `Sqls` JSON key indicates there are multiple SQL statements. The `Arn` JSON value contains a workgroup name. The `RoleArn` JSON value contains the IAM role used to run the SQL as described previously.
 
-```
+```json
 {
     "Rule": "test-redshift-serverless-workgroup-data",
     "EventBusName": "default",

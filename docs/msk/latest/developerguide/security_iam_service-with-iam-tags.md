@@ -17,7 +17,7 @@ You can use conditions in your identity-based policy to control access to Amazon
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

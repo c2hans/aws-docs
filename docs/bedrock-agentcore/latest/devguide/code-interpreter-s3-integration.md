@@ -17,7 +17,7 @@ Before creating a custom Code Interpreter with S3 access, you need to:
 
 1. Create an IAM role with the following trust policy:
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
      "Statement": [
@@ -39,7 +39,7 @@ Before creating a custom Code Interpreter with S3 access, you need to:
 
 1. Add the following permissions to the role:
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
      "Statement": [
@@ -69,7 +69,7 @@ You can implement S3 integration using boto3 (AWS SDK for Python). The following
 **Note**
 Before running this code, make sure to replace `REGION` and `<awsaccountid>` with your AWS Region and AWS account number.
 
-```
+```python
 import boto3
 import json
 import time

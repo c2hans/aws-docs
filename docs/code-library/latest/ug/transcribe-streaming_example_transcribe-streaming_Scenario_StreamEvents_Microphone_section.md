@@ -14,7 +14,7 @@ The following code example shows how to generate a transcription from a micropho
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/transcribe-streaming#code-examples).
 
-```
+```java
 public class TranscribeStreamingDemoApp {
     private static final Region REGION = Region.US_EAST_1;
     private static TranscribeStreamingAsyncClient client;

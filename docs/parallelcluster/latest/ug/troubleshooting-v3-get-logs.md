@@ -25,7 +25,7 @@ To add custom logs to the CloudWatch configuration, make sure you append to the 
 
 To restore the AWS ParallelCluster CloudWatch log configuration, you can run the following commands inside an AWS ParallelCluster node:
 
-```
+```bash
 $ PLATFORM="$(ohai platform | jq -r ".[]")"
 LOG_GROUP_NAME="$(cat /etc/chef/dna.json | jq -r ".cluster.log_group_name")"
 SCHEDULER="$(cat /etc/chef/dna.json | jq -r ".cluster.scheduler")"
@@ -77,7 +77,7 @@ If the `/var/log/parallelcluster/compute_console_output` log isn't available or 
 
 Retrieve the console output by using the following command with the `instance-id`:
 
-```
+```bash
 $ aws ec2 get-console-output --instance-id {{i-abcdef01234567890}}
 ```
 
@@ -87,7 +87,7 @@ Log in to the cluster head node and get the compute node `instance-id` from the 
 
 To retrieve the instance console log, use the following command:
 
-```
+```bash
 $ aws ec2 get-console-output --instance-id {{i-abcdef01234567890}}
 ```
 

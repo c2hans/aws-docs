@@ -23,7 +23,7 @@ A [`transactWriteItems`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotl
 
 The following transaction places an order atomically: it creates the `Order`, decrements the ordered `Product`'s inventory only if stock remains, and debits the `Customer`'s balance only if they have sufficient funds. If any condition fails, none of the three writes happen.
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.items.Key
 
 val ordersTable = mapper.getOrderTable("orders")
@@ -62,7 +62,7 @@ The key value passed to `update`, `delete`, and `conditionCheck` is wrapped with
 
  [`transactGetItems`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html) reads items across tables in one atomic, consistent snapshot. Supply keys with `key` (or `keys`) and read each table’s results from the response:
 
-```
+```kotlin
 val response = mapper.transactGetItems {
     table(ordersTable) {
         key(Key("customer-123"), Key("ORDER#2026-06-25#0042"))

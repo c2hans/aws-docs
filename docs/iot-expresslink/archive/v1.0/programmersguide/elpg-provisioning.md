@@ -79,4 +79,6 @@ In a production flow, ExpressLink customers can use any of a number of automated
 
 <a name="elpg-figure6"></a>![Figure 6 - ExpressLink onboarding states diagram](https://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmersguide/images/image5.png)
 
+Figure 6 - ExpressLink onboarding states diagram
+
 Once onboarded, all ExpressLink modules behave as fully owned devices and connect to the customer/OEM account as the ExpressLink things are transferred to the chosen OEM registry. It is the responsibility of the OEM to manage the product life cycle, use the OTA services to apply module updates (with images provided by the ExpressLink module vendor) and apply host processor application updates as needed.

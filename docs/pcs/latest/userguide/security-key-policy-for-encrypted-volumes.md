@@ -55,7 +55,7 @@ For more information, see:
 
 Add the following policy statements to the key policy of the customer managed key. Replace the example ARN with the ARN of the your `AWSServiceRoleForPCS` service-linked role. This example policy gives the AWS PCS service-linked role (`AWSServiceRoleForPCS`) permissions to use the customer managed key.
 
-```
+```json
 {
    "Sid": "Allow service-linked role use of the customer managed key",
    "Effect": "Allow",
@@ -75,7 +75,7 @@ Add the following policy statements to the key policy of the customer managed ke
 }
 ```
 
-```
+```json
 {
    "Sid": "Allow attachment of persistent resources",
    "Effect": "Allow",
@@ -105,7 +105,7 @@ If you create a customer managed key in a different account than your AWS PCS cl
 
 1. Add the following policy statements to the customer managed key's key policy. Replace the example ARN with the ARN of the other account. Replace {{111122223333}} with the actual account ID of the AWS account that you want to create the AWS PCS cluster in. This allows you to give an IAM user or role in the specified account permission to create a grant for the key using the CLI command that follows. By default, users don't have access to the key.
 
-   ```
+   ```json
    {.
       "Sid": "Allow external account {{111122223333}} use of the customer managed key",
       "Effect": "Allow",
@@ -125,7 +125,7 @@ If you create a customer managed key in a different account than your AWS PCS cl
    }
    ```
 
-   ```
+   ```json
    {
       "Sid": "Allow attachment of persistent resources in external account {{111122223333}}",
       "Effect": "Allow",
@@ -162,7 +162,7 @@ The user making the request must have permissions to use the `kms:CreateGrant` a
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

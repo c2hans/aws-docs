@@ -45,7 +45,7 @@ The AWS SDK for Java can generate performance metrics for your Amazon CloudSearc
 
 You can use the following code to test metrics generation. The code creates a new CloudWatch client and performs 2,500 searches. Because the SDK only sends metrics once per minute, long-running clients work best. The code uses the [default credential provider chain](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/credentials.html#credentials-default).
 
-```
+```java
 import com.amazonaws.client.builder.AwsClientBuilder;
 import com.amazonaws.services.cloudsearchdomain.AmazonCloudSearchDomain;
 import com.amazonaws.services.cloudsearchdomain.AmazonCloudSearchDomainClientBuilder;

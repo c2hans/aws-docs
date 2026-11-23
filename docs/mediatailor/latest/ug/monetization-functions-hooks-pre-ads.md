@@ -56,7 +56,7 @@ All output from the `PRE_ADS_REQUEST` hook is a transient override. It applies o
 
 **Example — rewriting the ADS request:**
 
-```
+```JSON
 {
     "Output": {
         "adsRequest.url": "{%'https://ads.example.com/v1/vast?sid=' & session.id & '&genre=' & player_params.genre%}",

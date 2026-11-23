@@ -114,7 +114,7 @@ Replace {{<your-s3-cloudtrail-bucket>}} with the Amazon S3 location of your Clou
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

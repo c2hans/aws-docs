@@ -143,7 +143,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-directory-computer-object-remove-ex-min"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-RemoveADComputerObject-Admin",
   "Region" : "us-east-1",
@@ -158,7 +158,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-directory-computer-object-remove-ex-max"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-RemoveADComputerObject-Admin",
   "Region" : "us-east-1",

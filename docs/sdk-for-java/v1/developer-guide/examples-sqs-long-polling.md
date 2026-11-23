@@ -20,7 +20,7 @@ To enable long polling when creating an Amazon SQS queue, set the `ReceiveMessag
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 import com.amazonaws.services.sqs.model.AmazonSQSException;
@@ -29,7 +29,7 @@ import com.amazonaws.services.sqs.model.CreateQueueRequest;
 
  **Code**
 
-```
+```java
 final AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
 
 // Enable long polling when creating a queue
@@ -55,13 +55,13 @@ In addition to enabling long polling when creating a queue, you can also enable 
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.model.SetQueueAttributesRequest;
 ```
 
  **Code**
 
-```
+```java
 SetQueueAttributesRequest set_attrs_request = new SetQueueAttributesRequest()
         .withQueueUrl(queue_url)
         .addAttributesEntry("ReceiveMessageWaitTimeSeconds", "20");
@@ -80,13 +80,13 @@ You should make sure that the AWS client’s request timeout is larger than the 
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.model.ReceiveMessageRequest;
 ```
 
  **Code**
 
-```
+```java
 ReceiveMessageRequest receive_request = new ReceiveMessageRequest()
         .withQueueUrl(queue_url)
         .withWaitTimeSeconds(20);

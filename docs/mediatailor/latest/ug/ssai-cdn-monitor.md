@@ -92,7 +92,7 @@ Follow these steps to implement a comprehensive monitoring strategy for your SSA
 **Example Creating a comprehensive SSAI monitoring dashboard**
 This example shows how to create a CloudWatch dashboard that combines MediaTailor and CloudFront metrics:
 
-```
+```json
 {
   "widgets": [
     {

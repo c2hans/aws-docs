@@ -13,7 +13,7 @@ To allow a role to copy a model, you might have to set up permissions, depending
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

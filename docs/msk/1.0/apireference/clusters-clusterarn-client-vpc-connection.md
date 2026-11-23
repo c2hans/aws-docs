@@ -64,7 +64,7 @@ Enable CORS by returning correct headers.
 #### PUT schema
 <a name="clusters-clusterarn-client-vpc-connection-request-body-put-example"></a>
 
-```
+```json
 {
   "vpcConnectionArn": "string"
 }
@@ -76,7 +76,7 @@ Enable CORS by returning correct headers.
 #### RejectClientVpcConnectionResponse schema
 <a name="clusters-clusterarn-client-vpc-connection-response-body-rejectclientvpcconnectionresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -84,7 +84,7 @@ Enable CORS by returning correct headers.
 #### Error schema
 <a name="clusters-clusterarn-client-vpc-connection-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

@@ -19,7 +19,7 @@ cdk synth -c bucket_name=mygroovybucket
 
 To specify the same context variable and value in the `cdk.json` file, use the following code.
 
-```
+```json
 {
   "context": {
     "bucket_name": "myotherbucket"
@@ -38,23 +38,23 @@ In this example, we retrieve the value of the `bucket_name` context variable. If
 
 **Example**
 
-```
+```javascript
 const bucket_name = this.node.tryGetContext('bucket_name');
 ```
 
-```
+```javascript
 const bucket_name = this.node.tryGetContext('bucket_name');
 ```
 
-```
+```python
 bucket_name = self.node.try_get_context("bucket_name")
 ```
 
-```
+```java
 String bucketName = (String)this.getNode().tryGetContext("bucket_name");
 ```
 
-```
+```csharp
 var bucketName = this.Node.TryGetContext("bucket_name");
 ```
 
@@ -62,27 +62,27 @@ Outside the context of a construct, you can access the context variable from the
 
 **Example**
 
-```
+```javascript
 const app = new cdk.App();
 const bucket_name = app.node.tryGetContext('bucket_name')
 ```
 
-```
+```javascript
 const app = new cdk.App();
 const bucket_name = app.node.tryGetContext('bucket_name');
 ```
 
-```
+```python
 app = cdk.App()
 bucket_name = app.node.try_get_context("bucket_name")
 ```
 
-```
+```java
 App app = App();
 String bucketName = (String)app.getNode().tryGetContext("bucket_name");
 ```
 
-```
+```csharp
 app = App();
 var bucketName = app.Node.TryGetContext("bucket_name");
 ```

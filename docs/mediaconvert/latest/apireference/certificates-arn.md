@@ -64,7 +64,7 @@ Supports CORS preflight requests.
 #### DELETE schema
 <a name="certificates-arn-request-body-delete-example"></a>
 
-```
+```json
 {
   "arn": "string"
 }
@@ -76,7 +76,7 @@ Supports CORS preflight requests.
 #### DisassociateCertificateResponse schema
 <a name="certificates-arn-response-body-disassociatecertificateresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -84,7 +84,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="certificates-arn-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

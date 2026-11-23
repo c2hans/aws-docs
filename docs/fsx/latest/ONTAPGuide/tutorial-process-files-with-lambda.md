@@ -60,7 +60,7 @@ Replace `{{region}}`, `{{account-id}}`, and `{{access-point-name}}` with your va
 
 1. Save the following trust policy as `trust-policy.json`.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -75,7 +75,7 @@ Replace `{{region}}`, `{{account-id}}`, and `{{access-point-name}}` with your va
 
 1. Save the following inline permissions policy as `permissions-policy.json`. It grants access to the access point and to the additional services the examples use.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -138,7 +138,7 @@ This example reads a JPEG image from your FSx for ONTAP volume, resizes it to a 
 
 Save the following code as `lambda_function.py`.
 
-```
+```python
 import boto3
 from io import BytesIO
 from PIL import Image
@@ -231,7 +231,7 @@ For this example, you need a PDF document on your FSx for ONTAP volume. The foll
 $ pip install fpdf2 boto3
 ```
 
-```
+```python
 # create_invoice.py — run locally to generate and upload a sample PDF
 from fpdf import FPDF
 import boto3
@@ -281,7 +281,7 @@ $ python3 create_invoice.py
 
 Save the following code as `lambda_function.py`.
 
-```
+```python
 import boto3
 import json
 
@@ -353,7 +353,7 @@ cat response.json
 
 Example output:
 
-```
+```json
 {"lines_extracted": 22, "output_key": "samples/documents/invoice_extracted.json"}
 ```
 
@@ -366,7 +366,7 @@ This example starts an Amazon Transcribe job for an audio file stored on your FS
 
 Save the following code as `lambda_function.py`.
 
-```
+```python
 import boto3
 import json
 import time

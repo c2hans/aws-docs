@@ -124,6 +124,8 @@ Depending on your initial requirements, you might not need to establish all of t
 
 ![Diagram showing example structure of Security OU](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-security-ou.png)
 
+*Example structure of Security OU*
+
 ## Infrastructure OU
 <a name="infrastructure-ou"></a>
 
@@ -317,3 +319,5 @@ Depending on your initial requirements, you might not need to establish all of t
  The following example structure represents the recommended Infrastructure OU at a basic level. For general guidance on separating production and non-production workloads, refer to [Organizing workload-oriented OUs](advanced-ous.md#organizing-workload-oriented-ous).
 
 ![Diagram showing an example structure of Infrastructure OU](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-infrastructure-ou.png)
+
+*Example structure of Infrastructure OU*

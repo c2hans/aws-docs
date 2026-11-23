@@ -73,4 +73,4 @@ To limit the resources the agent has access to, restrict the policy for the role
 ## Topology and the Agent Space Understanding memory
 <a name="topology-and-the-agent-space-understanding-memory"></a>
 
-The topology graph feeds the Agent Space Understanding memory, which holds a structured summary of your infrastructure for use during investigations. When topology discovery completes for a new Agent Space, AWS DevOps Agent automatically generates the Agent Space Understanding memory. For more information, see [DevOps Agent Memories](about-aws-devops-agent-devops-agent-memories.md).
+The topology graph feeds the Agent Space Understanding memory, which holds a structured summary of your infrastructure for use during investigations. When topology discovery completes for a new Agent Space, AWS DevOps Agent automatically generates the Agent Space Understanding memory. For more information, see [DevOps Agent Memories](about-aws-devops-agent-devops-agent-memories-index.md).

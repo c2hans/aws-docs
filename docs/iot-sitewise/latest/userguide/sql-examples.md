@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-exampl
 
 The following example is for metadata filtering with a `SELECT` statement with the AWS IoT SiteWise query language:
 
-```
+```SQL
 SELECT a.asset_name, p.property_name
 FROM asset a, asset_property p
 WHERE a.asset_name LIKE '{{Windmill%}}'
@@ -20,7 +20,7 @@ WHERE a.asset_name LIKE '{{Windmill%}}'
 
 The following is an example of value filtering using a `SELECT` statement with the AWS IoT SiteWise query language:
 
-```
+```SQL
 SELECT a.asset_name, r.int_value
 FROM asset a, raw_time_series r
 WHERE r.int_value > 30

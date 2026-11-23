@@ -14,7 +14,7 @@ This documentation provides a brief overview of the k-NN plugin, as well as limi
 
 To use k-NN, you must create an index with the `index.knn` setting and add one or more fields of the `knn_vector` data type.
 
-```
+```json
 PUT my-index
 
 {
@@ -38,7 +38,7 @@ PUT my-index
 
 The `knn_vector` data type supports a single list of up to 10,000 floats, with the number of floats defined by the required `dimension` parameter. After you create the index, add some data to it.
 
-```
+```json
 POST _bulk
 
 { "index": { "_index": "my-index", "_id": "1" } }
@@ -63,7 +63,7 @@ POST _bulk
 
 Then you can search the data using the `knn` query type.
 
-```
+```json
 GET my-index/_search
 {
   "size": 2,
@@ -82,7 +82,7 @@ In this case, `k` is the number of neighbors you want the query to return, but y
 
 If you mix the `knn` query with other clauses, you might receive fewer than `k` results. In this example, the `post_filter` clause reduces the number of results from 2 to 1.
 
-```
+```json
 GET my-index/_search
 
 {

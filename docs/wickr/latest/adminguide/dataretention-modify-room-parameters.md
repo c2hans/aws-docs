@@ -8,7 +8,7 @@ This guide documents the new AWS Wickr administration console, released on March
 
 Wickr generates this message when room settings change, such as the title, description, expiration timer, or burn-on-read timer.
 
-```
+```json
 {
   "control": {
     "bor": 0,

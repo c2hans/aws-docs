@@ -62,7 +62,7 @@ You can configure your workflow in the **Visual** editor, or the **YAML** editor
 
 1. In the **Build** action, choose **\+** to add the action's YAML to your workflow definition file. Your workflow now looks similar to the following.
 
-   ```
+   ```yaml
    Name: Workflow_fe47
    SchemaVersion: "1.0"
 

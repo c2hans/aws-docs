@@ -19,7 +19,7 @@ The examples in this topic assume a transfer manager `client`. To create one, se
 
 To upload data that you already hold in memory, create an `InputStream` from a byte buffer with `InputStream::from`:
 
-```
+```rust
 use aws_s3_transfer::io::InputStream;
 use aws_s3_transfer::Client;
 
@@ -44,7 +44,7 @@ async fn upload_bytes(client: &Client) -> Result<(), Box<dyn std::error::Error>>
 
 To upload a file from the local file system, create an `InputStream` with `InputStream::from_path`. The transfer manager reads the file size and streams the file for you:
 
-```
+```rust
 use aws_s3_transfer::io::InputStream;
 use aws_s3_transfer::Client;
 
@@ -69,7 +69,7 @@ async fn upload_file(client: &Client) -> Result<(), Box<dyn std::error::Error>> 
 
 To upload a byte range of a file, build the `InputStream` with `read_from` and set an `offset` and `length` in bytes:
 
-```
+```rust
 use aws_s3_transfer::io::InputStream;
 use aws_s3_transfer::Client;
 
@@ -101,7 +101,7 @@ When you set `length` explicitly, the transfer manager does not check it against
 
 To upload data as it is produced, when you don't know the total length in advance, wrap any reader that implements the Tokio `AsyncRead` trait with `TokioIo` and pass it to `InputStream::from_part_stream`. This is one way to supply a part stream. For full control over how parts are produced, you can instead implement a custom part producer (see [Provide a custom part producer](#transfer-manager-s3-upload-custom-stream)). A stream of unknown length is always uploaded as a multipart upload:
 
-```
+```rust
 use aws_s3_transfer::io::adapters::TokioIo;
 use aws_s3_transfer::io::{InputStream, SizeHint};
 use aws_s3_transfer::Client;
@@ -132,7 +132,7 @@ A multipart upload can have at most [10,000 parts](https://docs.aws.amazon.com/A
 
 The upload builder accepts the same object options as the `aws-sdk-s3` `PutObject` request, such as a content type and user metadata. The following example sets a content type, adds metadata, chooses a checksum algorithm, and writes the object only if it doesn't already exist:
 
-```
+```rust
 use aws_s3_transfer::io::InputStream;
 use aws_s3_transfer::types::checksum::Crc32C;
 use aws_s3_transfer::types::ChecksumStrategy;
@@ -169,7 +169,7 @@ For more information about these choices, see [ChecksumStrategy](https://docs.rs
 
 The `UploadOutput` that `join().await` returns carries the object's metadata from Amazon S3. Which fields are present depends on whether the upload used a single request or a multipart upload:
 
-```
+```rust
 use aws_s3_transfer::io::InputStream;
 use aws_s3_transfer::Client;
 

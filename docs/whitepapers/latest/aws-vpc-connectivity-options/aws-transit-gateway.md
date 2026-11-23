@@ -16,6 +16,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
 ![A diagram showing VPC communication over VPC peering.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-transit-gateway.png)
 
+AWS Transit Gateway
+
  For a central visibility of IP traffic going to and from your Transit Gateways, you can publish Transit Gateway Flow Logs to Amazon CloudWatch Logs and Amazon S3. Flow log data is collected outside of the path of your network traffic, and therefore does not affect network throughput or latency.
 
 ## Additional resources

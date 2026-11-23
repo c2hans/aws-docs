@@ -45,7 +45,7 @@ The event type of the function, either `viewer-request` or `viewer-response`. Yo
 The Amazon Resource Name (ARN) of the function.
 *Required*: No
 *Type*: String
-*Pattern*: `arn:aws:cloudfront::[0-9]{12}:function\/[a-zA-Z0-9-_]{1,64}`
+*Pattern*: `arn:aws(-[a-z]+)*:cloudfront::[0-9]{12}:function\/[a-zA-Z0-9-_]{1,64}`
 *Minimum*: `0`
-*Maximum*: `108`
+*Maximum*: `111`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

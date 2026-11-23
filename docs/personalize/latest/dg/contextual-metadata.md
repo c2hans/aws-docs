@@ -27,7 +27,7 @@ To increase recommendation relevance, include contextual metadata for a user, su
 
 Use the following code to get a recommendation based on contextual metadata. For `context`, for each key-value pair, provide the metadata field as the key and the context data as the value. In the following sample code, the key is `DEVICE` and the value is `mobile phone`. Replace these values and the `Campaign ARN` and `User ID` with your own. If you created a recommender, replace `campaignArn` with `recommenderArn`. A list of recommended items for the user displays.
 
-```
+```python
 import boto3
 
 personalizeRt = boto3.client('personalize-runtime')

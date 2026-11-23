@@ -28,7 +28,7 @@ org.apache.hadoop.fs.UnsupportedFileSystemException: No FileSystem for scheme "s
 
 If this occurs, add the following exceptions to the `SparkApplication` spec:
 
-```
+```yaml
  hadoopConf:
    # EMRFS filesystem
    fs.s3.customAWSCredentialsProvider: com.amazonaws.auth.WebIdentityTokenCredentialsProvider

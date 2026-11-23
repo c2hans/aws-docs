@@ -156,7 +156,7 @@ In this step, you create a support case to the Accounts and Billing support team
 
 1. In the **Description** box, copy and paste the following template:
 
-   ```
+   ```bash
        Company Name: [Company Name From Step 1]
        Account Email: [Account Email  From Step 1]
        Address: [Address  From Step 1]

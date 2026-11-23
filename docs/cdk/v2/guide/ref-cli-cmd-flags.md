@@ -66,7 +66,7 @@ Run `cdk flags` to view a report of your feature flag configurations that differ
 + Flags set to a value that doesn’t match our recommended value
 + Flags that you haven’t configured
 
-```
+```bash
 $ cdk flags --unstable=flags
 Feature Flag                           Recommended                       User
 * @aws-cdk/...                              true                         false

@@ -35,12 +35,12 @@ For more information, see [Rebuild a WorkSpace](https://docs.aws.amazon.com/work
 **Tools for PowerShell V4**
 **Example 1: Rebuilds the specified WorkSpace.**
 
-```
+```powershell
 Reset-WKSWorkspace -WorkspaceId "ws-1a2b3c4d"
 ```
 **Example 2: Retrieves the collection of all your WorkSpaces and pipes the IDs to the -WorkSpaceId parameter of Reset-WKSWorkspace, causing the WorkSpaces to be rebuilt.**
 
-```
+```powershell
 Get-WKSWorkspaces | Reset-WKSWorkspace
 ```
 +  For API details, see [RebuildWorkspaces](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -48,12 +48,12 @@ Get-WKSWorkspaces | Reset-WKSWorkspace
 **Tools for PowerShell V5**
 **Example 1: Rebuilds the specified WorkSpace.**
 
-```
+```powershell
 Reset-WKSWorkspace -WorkspaceId "ws-1a2b3c4d"
 ```
 **Example 2: Retrieves the collection of all your WorkSpaces and pipes the IDs to the -WorkSpaceId parameter of Reset-WKSWorkspace, causing the WorkSpaces to be rebuilt.**
 
-```
+```powershell
 Get-WKSWorkspaces | Reset-WKSWorkspace
 ```
 +  For API details, see [RebuildWorkspaces](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -124,7 +124,7 @@ Enable CORS by returning the correct headers.
 #### POST schema
 <a name="tags-resourcearn-request-body-post-example"></a>
 
-```
+```json
 {
   "tags": {
   }
@@ -137,7 +137,7 @@ Enable CORS by returning the correct headers.
 #### ListTagsForResourceResponse schema
 <a name="tags-resourcearn-response-body-listtagsforresourceresponse-example"></a>
 
-```
+```json
 {
   "tags": {
   }
@@ -147,7 +147,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="tags-resourcearn-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

@@ -21,7 +21,7 @@ You enable Flex per job run with the `flexExecution` parameter of the `StartJobR
 
 The following AWS CLI command starts a Flex job run:
 
-```
+```bash
 aws emr-serverless start-job-run \
     --application-id {{application-id}} \
     --execution-role-arn {{execution-role-arn}} \

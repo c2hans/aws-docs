@@ -19,7 +19,7 @@ Required: Yes
  ** analysisType **   <a name="API-Type-IntermediateTableActiveVersion-analysisType"></a>
 The type of analysis that created this version.
 Type: String
-Valid Values: `QUERY`
+Valid Values: `QUERY | JOB`
 Required: Yes
 
  ** inheritedConstraints **   <a name="API-Type-IntermediateTableActiveVersion-inheritedConstraints"></a>

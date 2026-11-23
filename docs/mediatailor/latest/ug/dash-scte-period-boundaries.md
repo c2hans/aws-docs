@@ -34,7 +34,7 @@ Use the following formula to determine how far an event is offset from its perio
 
 The following example shows an `EventStream` with a `presentationTime` that is offset from the period start:
 
-```
+```xml
 <Period id="1741948755359" start="PT10522H39M15.359S">
   <EventStream schemeIdUri="urn:scte:scte35:2013:xml" timescale="90000"
                presentationTimeOffset="156775387982400">
@@ -80,7 +80,7 @@ MediaTailor recognizes the early cue-in by checking the `outOfNetworkIndicator` 
 
 The following example shows an `EventStream` with both a cue-out and an early cue-in:
 
-```
+```xml
 <EventStream schemeIdUri="urn:scte:scte35:2013:xml" timescale="90000"
              presentationTimeOffset="276012000">
   <Event presentationTime="273308400" duration="5400000">

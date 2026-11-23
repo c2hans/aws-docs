@@ -65,7 +65,7 @@ Create an interface VPC endpoint for the `com.amazonaws.region-code.eks-capabili
 
 Replace {{region-code}} with your AWS Region, {{vpc-id}} with your VPC ID, {{subnet-id-1 subnet-id-2}} with subnet IDs in different Availability Zones, and {{sg-id}} with a security group that allows HTTPS inbound traffic.
 
-```
+```bash
 aws ec2 create-vpc-endpoint \
   --region {{region-code}} \
   --vpc-endpoint-type Interface \
@@ -92,7 +92,7 @@ After the VPC endpoint is available, configure the Argo CD capability to use it.
 
 Include the `networkAccess` in the `create-capability` command. Replace {{region-code}}, {{my-cluster}}, and other placeholders with your values:
 
-```
+```bash
 aws eks create-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \
@@ -124,7 +124,7 @@ aws eks create-capability \
 
 Replace {{region-code}}, {{my-cluster}}, {{my-argocd}}, and the VPC endpoint ID with your values:
 
-```
+```bash
 aws eks update-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \
@@ -140,7 +140,7 @@ aws eks update-capability \
 
 Wait for the capability update to complete:
 
-```
+```bash
 aws eks describe-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \
@@ -158,7 +158,7 @@ After the capability becomes active with private access configured, verify that 
 
 Run the following `nslookup` command from any network:
 
-```
+```bash
 nslookup {{your-argocd-endpoint.eks-capabilities.region-code.amazonaws.com}}
 ```
 
@@ -177,7 +177,7 @@ After you configure private access, the Argo CD endpoint hostname resolves to pr
 
 To disable private access and restore public endpoint access, update the capability to remove the VPC endpoint IDs:
 
-```
+```bash
 aws eks update-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \

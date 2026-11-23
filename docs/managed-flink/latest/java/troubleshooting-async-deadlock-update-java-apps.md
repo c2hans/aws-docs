@@ -26,7 +26,7 @@ Kinesis connector uses shading to package some dependencies, including the AWS S
 
    **pom.xml**
 
-   ```
+   ```xml
    <project>
        ...
        <dependencies>
@@ -129,7 +129,7 @@ Kinesis connector uses shading to package some dependencies, including the AWS S
 
    **build.gradle**
 
-   ```
+   ```json
    ...
    dependencies {
        ...
@@ -173,7 +173,7 @@ Add AWS SDK bill of materials (BOM) to the dependency management section of the 
 
 **pom.xml**
 
-```
+```json
 <project>
     ...
     <dependencyManagement>
@@ -200,7 +200,7 @@ Add platform dependency on the AWS SDK bill of materials (BOM) to enforce SDK ve
 
 **build.gradle**
 
-```
+```json
 ...
 dependencies {
     ...

@@ -228,7 +228,7 @@ In both cases, the `cause` is returned as a string.
 
 The following example shows a response where an error has occurred:
 
-```
+```json
 {
     "error": "ApiGateway.403",
     "cause": "{\"message\":\"Missing Authentication Token\"}"
@@ -247,7 +247,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -269,7 +269,7 @@ The following code example shows a resource policy for calling API Gateway.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

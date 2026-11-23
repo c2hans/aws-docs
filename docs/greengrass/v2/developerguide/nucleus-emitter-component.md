@@ -199,7 +199,7 @@ Default: `60000`
 **Example: Configuration merge update**
 The following example shows a sample configuration merge update that enables publishing telemetry data every 5 seconds to the `$local/greengrass/telemetry` topic and the `greengrass/myTelemetry` AWS IoT Core MQTT topic.
 
-```
+```json
 {
   "pubSubPublish": "true",
   "mqttTopic": "greengrass/myTelemetry",
@@ -218,7 +218,7 @@ You can optionally choose to also publish telemetry metrics to an AWS IoT Core M
 
 **Example data**
 
-```
+```json
 [
   {
     "A": "Average",
@@ -400,14 +400,14 @@ This component uses the same log file as the [Greengrass nucleus](greengrass-nuc
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
   ```
 

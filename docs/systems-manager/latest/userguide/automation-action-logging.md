@@ -41,7 +41,7 @@ For runbooks that you own, the same permissions must be added to the IAM service
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm update-service-setting \
        --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/automation/customer-script-log-destination \
        --setting-value CloudWatch
@@ -50,7 +50,7 @@ For runbooks that you own, the same permissions must be added to the IAM service
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm update-service-setting ^
        --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/automation/customer-script-log-destination ^
        --setting-value CloudWatch
@@ -59,7 +59,7 @@ For runbooks that you own, the same permissions must be added to the IAM service
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Update-SSMServiceSetting `
        -SettingId "arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/automation/customer-script-log-destination" `
        -SettingValue "CloudWatch"
@@ -74,7 +74,7 @@ For runbooks that you own, the same permissions must be added to the IAM service
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm update-service-setting \
        --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/automation/customer-script-log-group-name \
        --setting-value {{my-log-group}}
@@ -83,7 +83,7 @@ For runbooks that you own, the same permissions must be added to the IAM service
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm update-service-setting ^
        --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/automation/customer-script-log-group-name ^
        --setting-value {{my-log-group}}
@@ -92,7 +92,7 @@ For runbooks that you own, the same permissions must be added to the IAM service
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Update-SSMServiceSetting `
        -SettingId "arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/automation/customer-script-log-group-name" `
        -SettingValue "{{my-log-group}}"
@@ -107,7 +107,7 @@ For runbooks that you own, the same permissions must be added to the IAM service
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm get-service-setting \
        --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/automation/customer-script-log-destination
    ```
@@ -115,7 +115,7 @@ For runbooks that you own, the same permissions must be added to the IAM service
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm get-service-setting ^
        --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/automation/customer-script-log-destination
    ```
@@ -123,7 +123,7 @@ For runbooks that you own, the same permissions must be added to the IAM service
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Get-SSMServiceSetting `
        -SettingId "arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/automation/customer-script-log-destination"
    ```

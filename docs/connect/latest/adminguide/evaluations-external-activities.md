@@ -38,7 +38,7 @@ The following steps are typically performed by an IT admin.
 
   Following is a sample API request for ingesting a claims authorization activity that was completed in another system.
 
-  ```
+  ```json
   awscurl \
   --service connect \
   -X PUT \

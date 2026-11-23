@@ -126,7 +126,7 @@ By default, Docker daemon is enabled for non-VPC builds. If you would like to us
    + For **Mount point**, enter the absolute path of the directory in your build container where the file system is mounted. If this directory does not exist, CodeBuild creates it during the build.
    + (Optional) Enter mount options. If you leave **Mount options** blank, CodeBuild uses its default mount options:
 
-     ```
+     ```shell
      nfsvers=4.1
      rsize=1048576
      wsize=1048576

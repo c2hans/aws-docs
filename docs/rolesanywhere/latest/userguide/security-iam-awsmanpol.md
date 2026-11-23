@@ -32,7 +32,7 @@ This policy includes the following permissions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -70,7 +70,7 @@ This policy includes the following permissions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

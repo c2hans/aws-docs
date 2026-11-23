@@ -24,7 +24,7 @@ This example demonstrates how to use the Suggest API to look up a misspelled poi
 ------
 #### [ Sample request ]
 
-```
+```json
 {
   "QueryText": "Effel tow",
   "Filter": {
@@ -47,7 +47,7 @@ This example demonstrates how to use the Suggest API to look up a misspelled poi
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -136,7 +136,7 @@ This example demonstrates how to use the Suggest API to look up a misspelled poi
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/suggest?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -162,7 +162,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places suggest --key ${YourKey} \
 --query-text "Effel tow" \
 --filter '{"Circle": {"Radius": 10000, "Center": [2.3431932014695382, 48.858844492141145]}, "IncludeCountries": ["FRA"]}' \

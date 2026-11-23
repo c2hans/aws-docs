@@ -14,7 +14,7 @@ A `Linkage` created by resource matching includes:
 
 The following example shows a `Linkage` resource that groups three Patient resources. Patient/patient-A and Patient/patient-B share a Social Security number, and Patient/patient-A and Patient/patient-C share a hospital medical record number.
 
-```
+```json
 {
     "resourceType": "Linkage",
     "id": "linkage-001",

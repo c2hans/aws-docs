@@ -14,7 +14,7 @@ The following shows an example of a permissions policy with limited scope. It al
 **Example Function development policy**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

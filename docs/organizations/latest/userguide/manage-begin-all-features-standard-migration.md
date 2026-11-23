@@ -44,7 +44,7 @@ You can use one of the following commands to enable all features in an organizat
 
   The following command begins the process to enable all features in the organization.
 
-  ```
+  ```bash
   $ aws organizations enable-all-features
   {
       "Handshake": {
@@ -117,7 +117,7 @@ To agree to the request, you must accept the handshake with `"Action": "APPROVE_
 
   The following example shows how to list the handshakes available for your account. The value of `"Id"` in the fourth line of the output is the value you need for the next command.
 
-  ```
+  ```bash
   $ aws organizations list-handshakes-for-account
   {
       "Handshakes": [
@@ -159,7 +159,7 @@ To agree to the request, you must accept the handshake with `"Action": "APPROVE_
 
   The following example uses the Id of the handshake from the previous command to accept that handshake.
 
-  ```
+  ```bash
   $ aws organizations accept-handshake --handshake-id h-a2d6ecb7dbdc4540bc788200aEXAMPLE
   {
       "Handshake": {
@@ -235,7 +235,7 @@ To finalize the process, you must accept the handshake with `"Action": "ENABLE_A
   + [list-handshakes-for-organization](https://docs.aws.amazon.com/cli/latest/reference/organizations/list-handshakes-for-organization.html)
   +  [accept-handshake](https://docs.aws.amazon.com/cli/latest/reference/organizations/accept-handshake.html)
 
-  ```
+  ```bash
   $ aws organizations list-handshakes-for-organization
   {
       "Handshakes": [
@@ -265,7 +265,7 @@ To finalize the process, you must accept the handshake with `"Action": "ENABLE_A
 
   The following example shows how to list the handshakes available for the organization. The value of `"Id"` in the fourth line of the output is the value you need for the next command.
 
-  ```
+  ```bash
   $ aws organizations accept-handshake \
       --handshake-id h-43a871103e4c4ee399868fbf2EXAMPLE
   {

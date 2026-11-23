@@ -193,7 +193,7 @@ The `DescribeKey` response includes both `KeySpec` and `CustomerMasterKeySpec` m
 
 For example, this call to `DescribeKey` returns information about a symmetric encryption KMS key. The fields in the response vary with the [AWS KMS key spec](create-keys.md#key-spec), [key state](key-state.md), and the [key material origin](create-keys.md#key-origin). For examples in multiple programming languages, see [Use `DescribeKey` with an AWS SDK or CLI](example_kms_DescribeKey_section.md).
 
-```
+```bash
 $ aws kms describe-key --key-id 1234abcd-12ab-34cd-56ef-1234567890ab
 
 {
@@ -221,7 +221,7 @@ $ aws kms describe-key --key-id 1234abcd-12ab-34cd-56ef-1234567890ab
 
 This example calls `DescribeKey` operation on an asymmetric KMS key used for signing and verification. The response includes the signing algorithms that AWS KMS supports for this KMS key.
 
-```
+```bash
 $ aws kms describe-key --key-id 0987dcba-09fe-87dc-65ba-ab0987654321
 
 {

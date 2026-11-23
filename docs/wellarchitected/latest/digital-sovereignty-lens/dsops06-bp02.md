@@ -30,6 +30,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 
 ![Flowchart of the regulatory change process: detection and triage, then impact assessment classifying the change as common-baseline, jurisdiction-specific, or workload-only and checking for cross-jurisdictional conflicts, then control updates, then post-implementation verification](https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereignty-lens/images/regulatory-change-flow.png)
 
+*Flowchart of the regulatory change process: detection and triage, then impact assessment classifying the change as common-baseline, jurisdiction-specific, or workload-only and checking for cross-jurisdictional conflicts, then control updates, then post-implementation verification*
+
  Consider addressing the following questions during impact assessment:
 
 **Note**

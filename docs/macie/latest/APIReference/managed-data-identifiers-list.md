@@ -40,7 +40,7 @@ Retrieves information about all the managed data identifiers that Amazon Macie c
 #### POST schema
 <a name="managed-data-identifiers-list-request-body-post-example"></a>
 
-```
+```json
 {
   "nextToken": "string"
 }
@@ -52,7 +52,7 @@ Retrieves information about all the managed data identifiers that Amazon Macie c
 #### ListManagedDataIdentifiersResponse schema
 <a name="managed-data-identifiers-list-response-body-listmanageddataidentifiersresponse-example"></a>
 
-```
+```json
 {
   "items": [
     {

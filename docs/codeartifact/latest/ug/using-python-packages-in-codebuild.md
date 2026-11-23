@@ -20,7 +20,7 @@ These steps are required when using Python packages from CodeArtifact in CodeBui
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -67,7 +67,7 @@ It is only necessary to upgrade the AWS CLI with `pip3 install awscli --upgrade 
 
  To install Python packages using `pip`:
 
-```
+```yaml
 pre_build:
   commands:
     - pip3 install awscli --upgrade --user
@@ -79,7 +79,7 @@ build:
 
  To publish Python packages using `twine`:
 
-```
+```yaml
 pre_build:
   commands:
     - pip3 install awscli --upgrade --user
@@ -94,7 +94,7 @@ build:
 
  To install Python packages using `pip`:
 
-```
+```yaml
 version: 0.2
 phases:
   install:
@@ -111,7 +111,7 @@ phases:
 
  To publish Python packages using `twine`:
 
-```
+```yaml
 version: 0.2
 phases:
   install:

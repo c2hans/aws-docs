@@ -44,7 +44,7 @@ The `SessionId` field normally would just return the same ID that was provided a
 
 Example session resolver python implementation
 
-```
+```python
 from flask import Flask, request
 import json
 

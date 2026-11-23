@@ -77,7 +77,7 @@ To create the file system in the Amazon FSx console or with the AWS CLI, use the
 
 1. Run the `aws fsx create-file-system` command. The following example creates a Single-AZ (HA) generation 2 file system. For `--subnet-ids`, specify the Amazon EVS service access subnet. For `Clients`, specify the CIDR block of the host management VLAN subnet. Replace the values in angle brackets with your own values. Replace the example CIDR block with your own value. Replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws fsx create-file-system \
        --file-system-type OPENZFS \
        --storage-capacity 7168 \
@@ -109,7 +109,7 @@ A Single-AZ (HA) generation 2 file system with 7,168 GiB of SSD storage and 640 
 
 If you created the file system with the option to copy tags to volumes turned on, turn it off with the following command. The change causes no interruption. Replace `<file-system-id>` with the ID of your file system, and replace `<region-code>` with the Region where you created the environment.
 
-```
+```bash
 aws fsx update-file-system \
     --file-system-id <file-system-id> \
     --open-zfs-configuration CopyTagsToVolumes=false \
@@ -179,7 +179,7 @@ To create the volumes in the Amazon FSx console or with the AWS CLI, use the fol
 
 1. Get the ID of the root volume. Replace `<file-system-id>` with the ID of your file system, and replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws fsx describe-file-systems \
        --file-system-ids <file-system-id> \
        --query 'FileSystems[0].OpenZFSConfiguration.RootVolumeId' \
@@ -189,7 +189,7 @@ To create the volumes in the Amazon FSx console or with the AWS CLI, use the fol
 
 1. Create the principal volume. Replace `<root-volume-id>` with the ID of the root volume from the previous step. Replace the example CIDR block with the CIDR block of your host management VLAN subnet.
 
-   ```
+   ```bash
    aws fsx create-volume \
        --volume-type OPENZFS \
        --name vcf-principal \
@@ -229,7 +229,7 @@ You use the endpoint IP address of the file system as the NFS server when you mo
 
 1. Run the following command. Replace `<file-system-id>` with the ID of your file system, and replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws fsx describe-file-systems \
        --file-system-ids <file-system-id> \
        --query 'FileSystems[0].OpenZFSConfiguration.EndpointIpAddress' \
@@ -246,7 +246,7 @@ If you need more capacity before you deploy VCF, complete the following steps in
 
 1. Increase the SSD storage capacity of the file system. Each increase must be at least 10 percent of the current capacity. After a change, you must wait six hours before you can change the capacity again. Replace `<file-system-id>` with the ID of your file system, and replace the example capacity with your own value. Replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws fsx update-file-system \
        --file-system-id <file-system-id> \
        --storage-capacity 9216 \
@@ -255,7 +255,7 @@ If you need more capacity before you deploy VCF, complete the following steps in
 
 1. If you set a storage capacity quota on the volume, raise the quota. Each volume has its own quota, and a volume doesn’t use the new capacity until you raise it. Replace `<volume-id>` with the ID of the volume.
 
-   ```
+   ```bash
    aws fsx update-volume \
        --volume-id <volume-id> \
        --open-zfs-configuration StorageCapacityQuotaGiB=9216 \

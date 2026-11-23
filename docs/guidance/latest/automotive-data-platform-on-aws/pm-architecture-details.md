@@ -63,7 +63,7 @@ The Root ETL pipeline ingests, processes, and prepares telemetry data for both M
 
  **Query Logic**:
 
-```
+```sql
 SELECT
   aaid,
   tpms_avmtireposition AS tire_position,
@@ -206,7 +206,7 @@ The ML approach uses unsupervised anomaly detection with Amazon SageMaker’s Ra
 
       **Hyperparameters**:
 
-     ```
+     ```json
      {
        "num_trees": 100,
        "num_samples_per_tree": 256,
@@ -284,7 +284,7 @@ The ML approach uses unsupervised anomaly detection with Amazon SageMaker’s Ra
 
  **Processing Logic**:
 
-```
+```python
 def process_predictions(raw_predictions):
     # Add CSV headers back
     predictions_df = add_headers(raw_predictions)
@@ -438,7 +438,7 @@ Both ML and filtering approaches generate alerts that integrate with maintenance
 
  **Relay Garage System Format**:
 
-```
+```json
 {
   "alert_id": "uuid",
   "aaid": "vehicle-12345",
@@ -525,7 +525,7 @@ For most fleet architectures where the telemetry Redshift cluster is already man
 
 The source account creates a datashare for the tire telemetry tables, adds the relevant schema and tables to the share, and grants usage to the consumer account. The consumer account then creates a local database from the datashare reference. Replace `<source-account-id>` and `<consumer-account-id>` with your actual account IDs:
 
-```
+```sql
 -- In the source Redshift cluster
 CREATE DATASHARE tire_telemetry_share;
 ALTER DATASHARE tire_telemetry_share ADD SCHEMA public;
@@ -535,7 +535,7 @@ ALTER DATASHARE tire_telemetry_share ADD TABLE public.vehicle_metadata;
 GRANT USAGE ON DATASHARE tire_telemetry_share TO ACCOUNT '<consumer-account-id>';
 ```
 
-```
+```sql
 -- In the consumer account (where the solution is deployed)
 CREATE DATABASE tire_telemetry_db FROM DATASHARE tire_telemetry_share
 OF ACCOUNT '<source-account-id>' NAMESPACE '<source-namespace>';

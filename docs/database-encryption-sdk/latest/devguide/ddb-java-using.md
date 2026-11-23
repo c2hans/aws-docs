@@ -67,7 +67,7 @@ The AWS Database Encryption SDK does not support annotations on [nested attribut
 
 The following example shows the annotations used to define `ENCRYPT_AND_SIGN`, `SIGN_ONLY`, and `DO_NOTHING`attribute actions. For an example that shows the annotations used to define `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`, see [SimpleClass4.java](https://github.com/aws/aws-database-encryption-sdk-dynamodb//blob/main/Examples/runtimes/java/DynamoDbEncryption/src/main/java/software/amazon/cryptography/examples/enhanced/SimpleClass4.java).
 
-```
+```java
 @DynamoDbBean
 public class SimpleClass {
 
@@ -129,7 +129,7 @@ public class SimpleClass {
 
 Use your annotated data class to create the `TableSchema` as shown in the following snippet.
 
-```
+```java
 final TableSchema<{{SimpleClass}}> tableSchema = TableSchema.fromBean({{SimpleClass}}.class);
 ```
 
@@ -145,7 +145,7 @@ The partition and sort attributes must be either `SIGN_ONLY` or `SIGN_AND_INCLUD
 **Note**
 To use the `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` cryptographic action, you must use version 3.3 or later of the AWS Database Encryption SDK. Deploy the new version to all readers before [updating your data model](ddb-update-data-model.md) to include `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`.
 
-```
+```java
 final Map<String, CryptoAction> attributeActionsOnEncrypt = new HashMap<>();
 // The partition attribute must be signed
 attributeActionsOnEncrypt.put("partition_key", CryptoAction.SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT);
@@ -164,7 +164,7 @@ When you use the AWS Database Encryption SDK, you must explicitly define an encr
 
 The following snippet defines a DynamoDB table encryption configuration using the DynamoDB Enhanced Client, [`TableSchema`](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-gs-tableschema.html), and allowed unsigned attributes defined by a distinct prefix.
 
-```
+```java
 final Map<String, DynamoDbEnhancedTableEncryptionConfig> tableConfigs = new HashMap<>();
 tableConfigs.put(ddbTableName,
         DynamoDbEnhancedTableEncryptionConfig.builder()
@@ -199,7 +199,7 @@ The `algorithmSuiteId` defines which algorithm suite the AWS Database Encryption
 Unless you explicitly specify an alternative algorithm suite, the AWS Database Encryption SDK uses the [default algorithm suite](supported-algorithms.md#recommended-algorithms). The default algorithm suite uses the AES-GCM algorithm with key derivation, [digital signatures](concepts.md#digital-sigs), and [key commitment](concepts.md#key-commitment). Although the default algorithm suite is likely to be suitable for most applications, you can choose an alternate algorithm suite. For example, some trust models would be satisfied by an algorithm suite without digital signatures. For information about the algorithm suites that the AWS Database Encryption SDK supports, see [Supported algorithm suites in the AWS Database Encryption SDK](supported-algorithms.md).
 To select the [AES-GCM algorithm suite without ECDSA digital signatures](supported-algorithms.md#other-algorithms), include the following snippet in your table encryption configuration.
 
-```
+```java
 .algorithmSuiteId(
     DBEAlgorithmSuiteId.ALG_AES_256_GCM_HKDF_SHA512_COMMIT_KEY_SYMSIG_HMAC_SHA384)
 ```

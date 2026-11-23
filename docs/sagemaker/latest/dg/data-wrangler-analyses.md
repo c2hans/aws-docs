@@ -234,7 +234,7 @@ The following example uses the **Binned scatterplot** code snippet. It plots a h
 
 The snippets have comments to help you understand the changes that you need to make to the code. You usually need to specify the column names of your dataset in the code.
 
-```
+```python
 import altair as alt
 
 # Specify the number of top rows for plotting

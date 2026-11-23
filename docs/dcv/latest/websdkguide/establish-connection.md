@@ -18,7 +18,7 @@ The following tutorial shows you how to prepare your HTML page for your custom w
 
 For example:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en" style="height: 100%;">
   <head>
@@ -39,19 +39,19 @@ This section shows how to complete the user authentication process, how to conne
 
  First, from the `index.js` file import the Amazon DCV Web Client SDK. It can be imported either as a Universal Module Definition (UMD) module, like so:
 
-```
+```javascript
 import "./dcvjs/dcv.js"
 ```
 
  Otherwise, starting from version `1.1.0`, it can also be imported as a ECMAScript Module (ESM) from the corresponding package, like so:
 
-```
+```javascript
 import dcv from "./dcvjs/dcv.js"
 ```
 
 Define the variables to use to store the Authentication object, Connection object, and the Amazon DCV server URL.
 
-```
+```javascript
 let auth,
     connection,
     serverUrl;
@@ -59,14 +59,14 @@ let auth,
 
  On script load, log the Amazon DCV Web Client SDK version, and on page load, call the `main` function.
 
-```
+```javascript
 console.log("Using Amazon DCV Web Client SDK version " + dcv.version.versionStr);
 document.addEventListener('DOMContentLoaded', main);
 ```
 
  The `main` function sets the log level and starts the authentication process.
 
-```
+```javascript
 function main () {
   console.log("Setting log level to INFO");
   dcv.setLogLevel(dcv.LogLevel.INFO);
@@ -97,7 +97,7 @@ function main () {
 **Note**
 In the following code example, replace `MY_DCV_USER` with your own username and `MY_PASSWORD` with your own password.
 
-```
+```javascript
 function onPromptCredentials(auth, challenge) {
   // Let's check if in challege we have a username and password request
   if (challengeHasField(challenge, "username") && challengeHasField(challenge, "password")) {
@@ -125,7 +125,7 @@ function onSuccess(auth, result) {
 
  Connect to the Amazon DCV server. The `firstFrame` callback method is called when the first frame is received from the Amazon DCV server.
 
-```
+```javascript
 function connect (sessionId, authToken) {
   console.log(sessionId, authToken);
 
@@ -153,7 +153,7 @@ function connect (sessionId, authToken) {
 
 The following code sample shows you how to do this.
 
-```
+```javascript
 let form,
     fieldSet;
 

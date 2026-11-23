@@ -21,19 +21,19 @@ The method you use to view running processes on a cluster differs according to t
 **Example : List all running processes**
 The following example uses `systemctl` and specifies `--type` to view all processes.
 
-```
+```bash
 systemctl --type=service
 ```
 
 **Example : List specific processes**
 The following example lists all processes with names that contain `hadoop`.
 
-```
+```bash
 systemctl --type=service | grep -i {{hadoop}}
 ```
 Example output:
 
-```
+```bash
  hadoop-hdfs-namenode.service           loaded active running Hadoop namenode
  hadoop-httpfs.service                  loaded active running Hadoop httpfs
  hadoop-kms.service                     loaded active running Hadoop kms
@@ -47,12 +47,12 @@ Example output:
 **Example : See a detailed status report for a specific process**
 The following example displays a detailed status report for the `hadoop-hdfs-namenode` service.
 
-```
+```bash
 sudo systemctl status {{hadoop-hdfs-namenode}}
 ```
 Example output:
 
-```
+```bash
 hadoop-hdfs-namenode.service - Hadoop namenode
    Loaded: loaded (/etc/systemd/system/hadoop-hdfs-namenode.service; enabled; vendor preset: disabled)
    Active: active (running) since Wed 2021-08-18 21:01:46 UTC; 26min ago
@@ -76,7 +76,7 @@ Hint: Some lines were ellipsized, use -l to show in full.
 **Example : List all running processes**
 The following example lists all running processes.
 
-```
+```bash
 initctl list
 ```
 
@@ -86,7 +86,7 @@ initctl list
 **Example : List all running processes**
 The following example lists all running processes.
 
-```
+```bash
 ls /etc/init.d/
 ```
 
@@ -103,17 +103,17 @@ After you determine which processes are running, you can stop and then restart t
 **Example : Stop a process**
 The following example stops the `hadoop-hdfs-namenode` process.
 
-```
+```bash
 sudo systemctl stop {{hadoop-hdfs-namenode}}
 ```
 You can query the `status` to verify that the process is stopped.
 
-```
+```bash
 sudo systemctl status {{hadoop-hdfs-namenode}}
 ```
 Example output:
 
-```
+```bash
 hadoop-hdfs-namenode.service - Hadoop namenode
   Loaded: loaded (/etc/systemd/system/hadoop-hdfs-namenode.service; enabled; vendor preset: disabled)
   Active: failed (Result: exit-code) since Wed 2021-08-18 21:37:50 UTC; 8s ago
@@ -123,17 +123,17 @@ Main PID: 9733 (code=exited, status=143)
 **Example : Start a process**
 The following example starts the `hadoop-hdfs-namenode` process.
 
-```
+```bash
 sudo systemctl start {{hadoop-hdfs-namenode}}
 ```
 You can query the status to verify that the process is running.
 
-```
+```bash
 sudo systemctl status {{hadoop-hdfs-namenode}}
 ```
 Example output:
 
-```
+```bash
 hadoop-hdfs-namenode.service - Hadoop namenode
    Loaded: loaded (/etc/systemd/system/hadoop-hdfs-namenode.service; enabled; vendor preset: disabled)
    Active: active (running) since Wed 2021-08-18 21:38:24 UTC; 2s ago
@@ -151,21 +151,21 @@ hadoop-hdfs-namenode.service - Hadoop namenode
 **Example : Stop a running process**
 The following example stops the `hadoop-hdfs-namenode` service.
 
-```
+```bash
 sudo stop {{hadoop-hdfs-namenode}}
 ```
 
 **Example : Restart a stopped process**
 The following example restarts the `hadoop-hdfs-namenode` service. You must use the `start` command and not `restart`.
 
-```
+```bash
 sudo start {{hadoop-hdfs-namenode}}
 ```
 
 **Example : Check the process status**
 The following fetches the status for `hadoop-hdfs-namenode`. You can use the `status` command to verify that the process has stopped or started.
 
-```
+```bash
 sudo status {{hadoop-hdfs-namenode}}
 ```
 
@@ -175,28 +175,28 @@ sudo status {{hadoop-hdfs-namenode}}
 **Example : Stop an application process**
 The following example stops the `hadoop-hdfs-namenode` service, which is associated with the version of Amazon EMR installed on the cluster.
 
-```
+```bash
 sudo /etc/init.d/{{hadoop-hdfs-namenode}} stop
 ```
 
 **Example : Restart an application process**
 The following example command restarts the `hadoop-hdfs-namenode` process:
 
-```
+```bash
 sudo /etc/init.d/{{hadoop-hdfs-namenode}} start
 ```
 
 **Example : Stop an Amazon EMR process**
 The following example stops a process, such as instance-controller, which is not associated with the version of Amazon EMR on the cluster.
 
-```
+```bash
 sudo /sbin/stop {{instance-controller}}
 ```
 
 **Example : Restart an Amazon EMR process**
 The following example restarts a process, such as instance-controller, which is not associated with the version of Amazon EMR on the cluster.
 
-```
+```bash
 sudo /sbin/start {{instance-controller}}
 ```
 

@@ -66,7 +66,7 @@ You can in-place upgrade a running AL2023 instance from kernel 6.1 or 6.12 to ke
 
 1. Detect current kernel and set target version:
 
-   ```
+   ```sh
    # Automatically detect current kernel version BEFORE upgrade
    $ CURRENT_KERNEL=$(uname -r)
    $ SOURCE_VERSION=""
@@ -81,25 +81,25 @@ You can in-place upgrade a running AL2023 instance from kernel 6.1 or 6.12 to ke
    $ echo "${SOURCE_VERSION}" | sudo tee /var/lib/source_kernel_version > /dev/null
    ```
 
-   ```
+   ```sh
    # Set your target version
    $ TARGET_VERSION="6.18"
    ```
 
-   ```
+   ```sh
    $ echo "Current kernel: ${SOURCE_VERSION:-6.1}"
    $ echo "Upgrading to kernel ${TARGET_VERSION}"
    ```
 
 1. Install the target kernel package:
 
-   ```
+   ```sh
    $ sudo dnf install -y kernel${TARGET_VERSION}
    ```
 
 1. Get the latest version of the target kernel package:
 
-   ```
+   ```sh
    $ version=$(rpm -q --qf '%{version}-%{release}.%{arch}\n' kernel${TARGET_VERSION} | sort -V | tail -1)
    ```
 
@@ -117,7 +117,7 @@ You can in-place upgrade a running AL2023 instance from kernel 6.1 or 6.12 to ke
 
 1. Uninstall the previous kernel:
 
-   ```
+   ```sh
    # Read the source kernel version from the saved file
    $ SOURCE_VERSION=$(sudo cat /var/lib/source_kernel_version)
 
@@ -127,12 +127,12 @@ You can in-place upgrade a running AL2023 instance from kernel 6.1 or 6.12 to ke
 
 1. Replace extra kernel packages with their target kernel equivalents:
 
-   ```
+   ```sh
    # Set your target version
    $ TARGET_VERSION="6.18"
    ```
 
-   ```
+   ```sh
    $ for pkg in bpftool kernel-debuginfo kernel-debuginfo-common kernel-headers \
                kernel-modules-extra-common perf python3-perf; do
      case "$pkg" in
@@ -167,7 +167,7 @@ If at any point in time you need to downgrade back to an earlier kernel version,
 
 1. Detect current kernel and set target version:
 
-   ```
+   ```sh
    # Automatically detect current kernel version BEFORE downgrade
    $ CURRENT_KERNEL=$(uname -r)
    $ SOURCE_VERSION=""
@@ -182,19 +182,19 @@ If at any point in time you need to downgrade back to an earlier kernel version,
    $ echo "${SOURCE_VERSION}" | sudo tee /var/lib/source_kernel_version > /dev/null
    ```
 
-   ```
+   ```sh
    # Set your target version (change this to your desired kernel)
    # Use "" for kernel 6.1, "6.12" for kernel 6.12
    $ TARGET_VERSION=""
    ```
 
-   ```
+   ```sh
    $ echo "Downgrading from kernel ${SOURCE_VERSION:-6.1} to kernel ${TARGET_VERSION:-6.1}"
    ```
 
 1. Replace extra kernel packages with their target kernel equivalents:
 
-   ```
+   ```sh
    $ for pkg in bpftool kernel-debuginfo kernel-debuginfo-common kernel-headers \
                kernel-modules-extra-common python3-perf; do
      case "$pkg" in
@@ -221,13 +221,13 @@ If at any point in time you need to downgrade back to an earlier kernel version,
 
 1. Install the target kernel package:
 
-   ```
+   ```sh
    $ sudo dnf install -y kernel${TARGET_VERSION}
    ```
 
 1. Get the latest version of the target kernel package:
 
-   ```
+   ```sh
    $ version=$(rpm -q --qf '%{version}-%{release}.%{arch}\n' kernel${TARGET_VERSION} | sort -V | tail -1)
    ```
 
@@ -245,7 +245,7 @@ If at any point in time you need to downgrade back to an earlier kernel version,
 
 1. Uninstall the source kernel:
 
-   ```
+   ```sh
    # Read the source kernel version from the saved file
    $ SOURCE_VERSION=$(sudo cat /var/lib/source_kernel_version)
 
@@ -271,7 +271,7 @@ Amazon Linux does not provide facilities to manage fleets of instances. We recom
 
 Execute this command on your AL2023 instance:
 
-```
+```sh
 $ uname -r
 ```
 
@@ -290,7 +290,7 @@ Yes. AL2023 supports all available kernels (6.1, 6.12, and 6.18) with the same u
 
 Please run:
 
-```
+```sh
 $ version=$(uname -r | grep -oP '^\d+\.\d+')
 $ sudo dnf install -y kernel${version}-modules-extra-$(uname -r) kernel${version}-headers-$(uname -r) kernel${version}-devel-$(uname -r)
 ```

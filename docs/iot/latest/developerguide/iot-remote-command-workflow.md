@@ -86,7 +86,7 @@ Choose your target device and configure MQTT topics for receiving Commands and p
 **Note**
 If the payload type is not JSON or CBOR, the {{<PayloadFormat>}} field might not be present in the commands request topic. To get the payload format, we recommend that you use MQTT5 to get the format information from the MQTT message headers. For more information, see [Commands topics](reserved-topics.md#reserved-topics-commands).
 
-   ```
+   ```JSON
    $aws/commands/{{<devices>}}/{{<DeviceID>}}/executions/+/request/{{<PayloadFormat>}}
    $aws/commands/{{<devices>}}/{{<DeviceID>}}/executions/+/response/accepted/{{<PayloadFormat>}}
    $aws/commands/{{<devices>}}/{{<DeviceID>}}/executions/+/response/rejected/{{<PayloadFormat>}}
@@ -117,7 +117,7 @@ If the device is offline and uses MQTT persistent sessions, the Command waits at
 **Note**
 The {{<PayloadFormat>}} can only be JSON or CBOR in the commands response topic.
 
-   ```
+   ```JSON
    $aws/commands/{{<devices>}}/{{<DeviceID>}}/executions/{{<ExecutionId>}}/response/{{<PayloadFormat>}}
    ```
 
@@ -158,7 +158,7 @@ To receive notifications for all commands and command execution statuses, you ca
 
 The following code shows a sample payload for the commands events notifications that you'll receive.
 
-```
+```JSON
 {
     "executionId": "{{2bd65c51-4cfd-49e4-9310-d5cbfdbc8554}}",
     "status":"FAILED",

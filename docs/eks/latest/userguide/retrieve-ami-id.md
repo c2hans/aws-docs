@@ -20,20 +20,20 @@ You can retrieve the image ID of the latest recommended Amazon EKS optimized Ama
   + Use {{amazon-linux-2023/x86\_64/neuron}} for the latest AL2023 [AWS Neuron](https://aws.amazon.com/machine-learning/neuron/) instances.
 + Replace `<region-code>` with an [Amazon EKS supported AWS Region](https://docs.aws.amazon.com/general/latest/gr/eks.html) for which you want the AMI ID.
 
-```
+```bash
 aws ssm get-parameter --name /aws/service/eks/optimized-ami/<kubernetes-version>/<ami-type>/recommended/image_id \
     --region <region-code> --query "Parameter.Value" --output text
 ```
 
 Here’s an example command after placeholder replacements have been made.
 
-```
+```bash
 aws ssm get-parameter --name /aws/service/eks/optimized-ami/{{1.31}}/{{amazon-linux-2023}}/{{x86_64/standard}}/recommended/image_id \
     --region {{us-west-2}} --query "Parameter.Value" --output text
 ```
 
 An example output is as follows.
 
-```
+```bash
 ami-{{1234567890abcdef0}}
 ```

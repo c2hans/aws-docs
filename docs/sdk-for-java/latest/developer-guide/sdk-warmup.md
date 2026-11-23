@@ -22,7 +22,7 @@ In this topic, you learn how to configure and use `SdkWarmUp` with CRaC and AWS 
 
 The `warmUp()` method discovers every SDK service client on the classpath and warms each one, along with the HTTP clients that they use. Use this method when you depend on a small number of service modules and call most of the clients that they provide. The following Java code example calls `warmUp()` with no arguments:
 
-```
+```java
 import software.amazon.awssdk.core.warmup.SdkWarmUp;
 
 SdkWarmUp.warmUp();
@@ -37,7 +37,7 @@ The `warmUp(Class<? extends SdkClient>... clients)` method warms only the client
 
 Use this method when your classpath contains more service clients than your application calls. For example, this happens when a dependency brings in service modules that you don't use. Naming only the clients you need keeps warm-up time proportional to your application's actual usage rather than to your full classpath. The following Java code example warms only the `S3Client` and `DynamoDbClient` classes:
 
-```
+```java
 import software.amazon.awssdk.core.warmup.SdkWarmUp;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -52,7 +52,7 @@ SdkWarmUp.warmUp(S3Client.class, DynamoDbClient.class);
 
 Because Lambda takes the snapshot after your handler's constructor runs, call `SdkWarmUp.warmUp()` in the constructor. The snapshot then includes your warmed clients, and each invocation that restores from the snapshot benefits from the warm-up. The following Java code example calls `SdkWarmUp.warmUp()` in a Lambda handler constructor:
 
-```
+```java
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 import software.amazon.awssdk.core.warmup.SdkWarmUp;
@@ -83,7 +83,7 @@ You can also use `SdkWarmUp` with CRaC directly, in an application that manages 
 
 Call `SdkWarmUp.warmUp()` during initialization, before you take the checkpoint. Your application already registers itself as a CRaC `Resource` to close and reopen connections around the checkpoint. Add the warm-up call to the same constructor, as shown in the following Java code example:
 
-```
+```java
 import org.crac.Context;
 import org.crac.Core;
 import org.crac.Resource;
@@ -112,7 +112,7 @@ public class MyApp implements Resource {
 **Note**
 CRaC does not take a checkpoint while any file descriptor is open. If you use the AWS CRT-based HTTP client, closing your service clients alone is not enough, because the client keeps a shared event loop open. Release it in `beforeCheckpoint` as shown in the following Java code example:
 
-```
+```java
 import org.crac.Context;
 import org.crac.Resource;
 import software.amazon.awssdk.crt.CrtResource;

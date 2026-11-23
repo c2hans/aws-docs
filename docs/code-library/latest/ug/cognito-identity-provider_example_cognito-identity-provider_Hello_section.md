@@ -15,7 +15,7 @@ The following code examples show how to get started using Amazon Cognito.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cognito/hello_cognito#code-examples).
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -57,7 +57,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the hello\_cognito.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/cognito-idp/CognitoIdentityProviderClient.h>
 #include <aws/cognito-idp/model/ListUserPoolsRequest.h>
@@ -130,7 +130,7 @@ int main(int argc, char **argv) {
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/cognito#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -186,7 +186,7 @@ func main() {
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cognito#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cognitoidentityprovider.CognitoIdentityProviderClient;
 import software.amazon.awssdk.services.cognitoidentityprovider.model.CognitoIdentityProviderException;
@@ -237,7 +237,7 @@ public class ListUserPools {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 import {
   paginateListUserPools,
   CognitoIdentityProviderClient,
@@ -268,7 +268,7 @@ export const helloCognito = async () => {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cognito#code-examples).
 
-```
+```python
 import boto3
 
 # Create a Cognito Identity Provider client
@@ -303,7 +303,7 @@ else:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cognito#code-examples).
 
-```
+```ruby
 require 'aws-sdk-cognitoidentityprovider'
 require 'logger'
 

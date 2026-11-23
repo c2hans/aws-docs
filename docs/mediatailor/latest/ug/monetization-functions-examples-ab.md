@@ -14,7 +14,7 @@ A streaming service wants to use a CUSTOM\_OUTPUT function to randomly split ad 
 
 **A/B traffic split (CUSTOM\_OUTPUT):**
 
-```
+```JSON
 {
     "FunctionId": "abTestAdsUrl",
     "FunctionType": "CUSTOM_OUTPUT",
@@ -35,7 +35,7 @@ In this configuration:
 ## Function mapping
 <a name="monetization-functions-examples-ab-mapping"></a>
 
-```
+```JSON
 {
     "FunctionMapping": {
         "PRE_ADS_REQUEST": "abTestAdsUrl"

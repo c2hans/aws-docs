@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/eksctl-karpenter.html
 
 The following cluster configuration outlines a typical Karpenter installation:
 
-```
+```yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
@@ -33,7 +33,7 @@ managedNodeGroups:
 
 The version is Karpenter’s version as it can be found in their Helm Repository. The following options are also available to be set:
 
-```
+```yaml
 karpenter:
   version: '1.2.1'
   createServiceAccount: true # default is false
@@ -47,7 +47,7 @@ Once Karpenter is successfully installed, add [NodePool(s)](https://karpenter.sh
 
 The NodePool’s `nodeClassRef` section must match the name of an `EC2NodeClass`. For example:
 
-```
+```yaml
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:
@@ -79,7 +79,7 @@ spec:
         name: example # must match the name of an EC2NodeClass
 ```
 
-```
+```yaml
 apiVersion: karpenter.k8s.aws/v1
 kind: EC2NodeClass
 metadata:

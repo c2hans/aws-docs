@@ -10,7 +10,7 @@ In local mode, you can still send quantum tasks to actual devices, but you do no
 
 To use local mode, modify `AwsQuantumJob` to `LocalQuantumJob` wherever it occurs inside of your program. For instance, to run the example from [Create your first hybrid job](braket-jobs-first.md), edit the hybrid job script in the code as follows.
 
-```
+```python
 from braket.jobs.local import LocalQuantumJob
 
 job = LocalQuantumJob.create(

@@ -10,7 +10,7 @@ The following example shows a CloudTrail log entry for the operation that rotate
 
 For an example of the CloudTrail log entry that records the `EnableKeyRotation` operation, see [EnableKeyRotation](ct-enablekeyrotation.md).
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -52,7 +52,7 @@ The following example shows a CloudTrail log entry for an on-demand rotation ini
 
 For an example of the CloudTrail log entry that records the `RotateKeyOnDemand` operation, see [RotateKeyOnDemand](ct-rotatekeyondemand.md).
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

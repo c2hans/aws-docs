@@ -111,7 +111,7 @@ After creating the KMS key, configure the key policy to allow Amazon Redshift an
 
 The following example shows a key policy for zero-ETL integrations:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Id": "key-default-1",
@@ -190,7 +190,7 @@ Create an IAM policy that grants permissions for zero-ETL integration operations
 
 Save the following policy to a file (for example, `/tmp/zetl-policy.json`):
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

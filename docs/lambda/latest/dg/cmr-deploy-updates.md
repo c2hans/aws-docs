@@ -141,7 +141,7 @@ First, create the new runtime version and test it with a pinned function.
 
 1. To create the runtime version, run the `create-runtime-version` command:
 
-   ```
+   ```bash
    aws lambda-core create-runtime-version \
      --runtime-name {{companyphp8}} \
      --name {{v8.3.2}} \
@@ -152,7 +152,7 @@ First, create the new runtime version and test it with a pinned function.
 
 1. To wait until the version is `ACTIVE`, run the following command:
 
-   ```
+   ```bash
    aws lambda-core wait runtime-version-active \
      --runtime-name {{companyphp8}} \
      --name {{v8.3.2}} \
@@ -161,7 +161,7 @@ First, create the new runtime version and test it with a pinned function.
 
 1. To pin the test function to the new version, run the `put-runtime-management-config` command:
 
-   ```
+   ```bash
    aws lambda put-runtime-management-config \
      --function-name {{cmr-test-fn}} \
      --update-runtime-on Manual \
@@ -173,7 +173,7 @@ First, create the new runtime version and test it with a pinned function.
 
 1. To test the function, invoke it:
 
-   ```
+   ```bash
    aws lambda invoke \
      --function-name {{cmr-test-fn}} \
      --region {{us-east-1}} \
@@ -184,7 +184,7 @@ First, create the new runtime version and test it with a pinned function.
 
 1. To confirm that the function used the new version, search its logs for the `INIT_START` line:
 
-   ```
+   ```bash
    aws logs filter-log-events \
      --log-group-name /aws/lambda/{{cmr-test-fn}} \
      --filter-pattern INIT_START
@@ -192,7 +192,7 @@ First, create the new runtime version and test it with a pinned function.
 
    The latest `INIT_START` line shows the runtime version, similar to the following:
 
-   ```
+   ```text
    INIT_START Runtime Version: companyphp8:v8.3.2 Runtime Version ARN: arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8/version/v8.3.2
    ```
 
@@ -204,7 +204,7 @@ Next, roll out the version through your aliases.
 
 1. To update the `dev` alias, run the `update-runtime-alias` command:
 
-   ```
+   ```bash
    aws lambda-core update-runtime-alias \
      --runtime-name {{companyphp8}} \
      --name {{dev}} \
@@ -218,7 +218,7 @@ Next, roll out the version through your aliases.
 
 1. To verify the update, run the `get-runtime-alias` command:
 
-   ```
+   ```bash
    aws lambda-core get-runtime-alias \
      --runtime-name {{companyphp8}} \
      --name {{dev}} \
@@ -228,7 +228,7 @@ Next, roll out the version through your aliases.
 
    You should see the following output:
 
-   ```
+   ```json
    [
        "ACTIVE",
        "v8.3.2"
@@ -239,7 +239,7 @@ Next, roll out the version through your aliases.
 
 1. If the `dev` alias is healthy, update the `test` alias:
 
-   ```
+   ```bash
    aws lambda-core update-runtime-alias \
      --runtime-name {{companyphp8}} \
      --name {{test}} \
@@ -251,7 +251,7 @@ Next, roll out the version through your aliases.
 
 1. If the `test` alias is healthy, update the `prod` alias:
 
-   ```
+   ```bash
    aws lambda-core update-runtime-alias \
      --runtime-name {{companyphp8}} \
      --name {{prod}} \
@@ -280,7 +280,7 @@ To roll back in the Lambda console, update the alias to point to the previous ru
 
 1. To point the alias back to the previous version, run the `update-runtime-alias` command:
 
-   ```
+   ```bash
    aws lambda-core update-runtime-alias \
      --runtime-name {{companyphp8}} \
      --name {{prod}} \
@@ -290,7 +290,7 @@ To roll back in the Lambda console, update the alias to point to the previous ru
 
 1. To verify the rollback, run the `get-runtime-alias` command:
 
-   ```
+   ```bash
    aws lambda-core get-runtime-alias \
      --runtime-name {{companyphp8}} \
      --name {{prod}} \
@@ -300,7 +300,7 @@ To roll back in the Lambda console, update the alias to point to the previous ru
 
    You should see the following output:
 
-   ```
+   ```json
    [
        "ACTIVE",
        "v8.3.1"

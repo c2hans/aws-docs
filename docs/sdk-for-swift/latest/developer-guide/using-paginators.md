@@ -15,7 +15,7 @@ The examples in this section of the developer guide use Amazon S3. However, the 
 
 For example, the paginated version of the `S3Client` function `listBuckets(input:)`, `listBucketsPaginated(input:)`, returns an object of type `PaginatorSequence<ListBucketsInput, ListBucketsOutput>`:
 
-```
+```swift
         let pages = client.listBucketsPaginated(
             input: ListBucketsInput(maxBuckets: PAGE_SIZE)
         )
@@ -27,7 +27,7 @@ The `PaginatorSequence<>` is a sequence of pages which are asynchronously added 
 
 To begin sending requests and receiving results, asynchronously iterate over each page, then iterate over each page's items:
 
-```
+```swift
         var pageNumber = 0
 
         do {

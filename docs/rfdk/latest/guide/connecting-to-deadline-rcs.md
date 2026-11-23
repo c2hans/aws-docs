@@ -12,7 +12,7 @@ You can create a remote terminal session into the Render Queue to perform admini
 ------
 #### [ Python ]
 
-```
+```python
 render_queue = RenderQueue(self, 'RenderQueue',
   # ...
 )
@@ -22,7 +22,7 @@ SessionManagerHelper.grant_permissions_to(render_queue.asg)
 ------
 #### [ TypeScript ]
 
-```
+```typescript
 const renderQueue = new RenderQueue(this, 'RenderQueue', {
   // ...
 });
@@ -47,7 +47,7 @@ Once you are on the instance, you will need to enter the Docker container that i
 
 1. List all running Docker containers.
 
-   ```
+   ```bash
    sudo docker container ls
    ```
 
@@ -55,7 +55,7 @@ Once you are on the instance, you will need to enter the Docker container that i
 
 1. Create a bash shell inside the Docker container by running the following command, replacing `<container-id>` with the value from the previous step.
 
-   ```
+   ```bash
    sudo docker exec -it <container-id> bash
    ```
 

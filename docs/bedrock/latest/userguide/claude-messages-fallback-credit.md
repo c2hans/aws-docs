@@ -53,7 +53,7 @@ When a request to a supported source model returns `stop_reason: "refusal"` and 
 + `fallback_credit_token` – An opaque string that represents the credit.
 + `fallback_has_prefill_claim` – A boolean that tells you which retry body shape to use. For more information, see [Redemption rules](#claude-messages-fallback-credit-redemption-rules).
 
-```
+```json
 {
   "id": "msg_bdrk_...",
   "type": "message",
@@ -90,7 +90,7 @@ Start from the refused request body. Change `model` (or the model ID in the requ
 
 The following example shows a retry body for `InvokeModel` with the model ID `global.anthropic.claude-opus-5`:
 
-```
+```json
 {
   "anthropic_version": "bedrock-2023-05-31",
   "anthropic_beta": ["fallback-credit-2026-07-01"],
@@ -104,7 +104,7 @@ The following example shows a retry body for `InvokeModel` with the model ID `gl
 
 The following example shows the same retry on `bedrock-mantle`:
 
-```
+```bash
 curl -X POST "https://bedrock-mantle.$BEDROCK_REGION.api.aws/anthropic/v1/messages" \
   -H "x-api-key: $BEDROCK_API_KEY" \
   -H "anthropic-version: 2023-06-01" \
@@ -170,7 +170,7 @@ The following example shows the retry's usage for a conversation with a 42,000-t
 
 A successfully redeemed retry also reports the redemption in `usage.fallback_credit`:
 
-```
+```json
 "usage": {
   "input_tokens": 45,
   "cache_creation_input_tokens": 0,
@@ -208,7 +208,7 @@ A `reasoning_extraction` refusal has no recommended fallback model. Change the p
 
 The following Python example implements this workflow with `InvokeModel`, including the retry steps described in [Error handling](#claude-messages-fallback-credit-error-handling).
 
-```
+```python
 import json
 import time
 

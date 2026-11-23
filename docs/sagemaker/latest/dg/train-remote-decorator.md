@@ -90,7 +90,7 @@ You can annotate and run your local ML code from SageMaker Studio Classic by cre
 
    1. Run your code with the remote decorator by passing the dependencies file, as follows.
 
-      ```
+      ```python
       from sagemaker.remote_function import remote
 
       @remote(instance_type="ml.m5.xlarge", dependencies='./requirements.txt')
@@ -131,7 +131,7 @@ You can annotate your local ML code from a SageMaker notebook instance. The foll
 
    1. In the **Scripts** dialog box, in the **Start notebook** tab, replace the existing contents of the text box with the following script.
 
-      ```
+      ```bash
       #!/bin/bash
 
       set -e
@@ -161,7 +161,7 @@ You can annotate your local ML code from a SageMaker notebook instance. The foll
 
    1. In the **Scripts** dialog box, in the **Create notebook** tab, replace the existing contents of the text box with the following script.
 
-      ```
+      ```bash
       #!/bin/bash
 
       set -e
@@ -235,7 +235,7 @@ You can annotate your local ML code from a SageMaker notebook instance. The foll
 
    1. Run your code with the remote decorator by passing the dependencies file as shown below.
 
-      ```
+      ```python
       from sagemaker.remote_function import remote
 
       @remote(instance_type="{{ml.m5.xlarge}}", dependencies='./requirements.txt')
@@ -280,7 +280,7 @@ You can annotate your local ML code with an @remote decorator inside your prefer
 
    To package your code from your preferred IDE, you must have a virtual environment set up using Python 3.7 or higher, up to 3.10x. You also need a compatible container image. Install the SageMaker Python SDK using the following code example.
 
-   ```
+   ```python
    pip install sagemaker
    ```
 

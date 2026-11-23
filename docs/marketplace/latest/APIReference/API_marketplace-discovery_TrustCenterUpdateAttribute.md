@@ -1,0 +1,39 @@
+---
+source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-discovery_TrustCenterUpdateAttribute.html
+---
+
+# TrustCenterUpdateAttribute
+
+An update that a trust center publishes.
+
+## Contents
+<a name="API_marketplace-discovery_TrustCenterUpdateAttribute_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** description **   <a name="AWSMarketplaceService-Type-marketplace-discovery_TrustCenterUpdateAttribute-description"></a>
+The update description.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 8192.
+Required: Yes
+
+ ** publishedTime **   <a name="AWSMarketplaceService-Type-marketplace-discovery_TrustCenterUpdateAttribute-publishedTime"></a>
+The time when the update was published.
+Type: Timestamp
+Required: Yes
+
+ ** title **   <a name="AWSMarketplaceService-Type-marketplace-discovery_TrustCenterUpdateAttribute-title"></a>
+The update title.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Pattern: `.*\S.*`
+Required: Yes
+
+## See Also
+<a name="API_marketplace-discovery_TrustCenterUpdateAttribute_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/marketplace-discovery-2026-02-05/TrustCenterUpdateAttribute)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-discovery-2026-02-05/TrustCenterUpdateAttribute)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/marketplace-discovery-2026-02-05/TrustCenterUpdateAttribute)

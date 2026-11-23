@@ -24,7 +24,7 @@ Use the SQSClient class `CreateQueue` member function, and provide it with a [Cr
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/sqs/SQSClient.h>
 #include <aws/sqs/model/CreateQueueRequest.h>
@@ -33,7 +33,7 @@ Use the SQSClient class `CreateQueue` member function, and provide it with a [Cr
 
  **Code**
 
-```
+```cpp
     Aws::SQS::SQSClient sqsClient(clientConfiguration);
 
     Aws::SQS::Model::CreateQueueRequest request;
@@ -59,7 +59,7 @@ To list Amazon SQS queues for your account, call the SQSClient class `ListQueues
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/sqs/SQSClient.h>
 #include <aws/sqs/model/ListQueuesRequest.h>
@@ -68,7 +68,7 @@ To list Amazon SQS queues for your account, call the SQSClient class `ListQueues
 
  **Code**
 
-```
+```cpp
     Aws::SQS::SQSClient sqsClient(clientConfiguration);
 
     Aws::SQS::Model::ListQueuesRequest listQueuesRequest;
@@ -113,7 +113,7 @@ To get the URL for an existing Amazon SQS queue, call the SQSClient class `GetQu
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/sqs/SQSClient.h>
 #include <aws/sqs/model/GetQueueUrlRequest.h>
@@ -122,7 +122,7 @@ To get the URL for an existing Amazon SQS queue, call the SQSClient class `GetQu
 
  **Code**
 
-```
+```cpp
     Aws::SQS::SQSClient sqsClient(clientConfiguration);
 
     Aws::SQS::Model::GetQueueUrlRequest request;
@@ -148,7 +148,7 @@ Provide the [URL](#sqs-get-queue-url) to the SQSClient class `DeleteQueue` membe
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/core/client/DefaultRetryStrategy.h>
 #include <aws/sqs/SQSClient.h>
@@ -158,7 +158,7 @@ Provide the [URL](#sqs-get-queue-url) to the SQSClient class `DeleteQueue` membe
 
  **Code**
 
-```
+```cpp
     Aws::SQS::Model::DeleteQueueRequest request;
     request.SetQueueUrl(queueURL);
 

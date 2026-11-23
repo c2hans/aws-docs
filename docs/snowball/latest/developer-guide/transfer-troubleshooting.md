@@ -54,13 +54,13 @@ To correct the problem, stop and restart the NFS service using the following ste
 
 1. Use the `describe-service` command to determine the status of the service:
 
-   ```
+   ```bash,zsh,sh
    snowballEdge describe-service --service-id nfs
    ```
 
    The command returns the following.
 
-   ```
+   ```JSON
    {
      "ServiceId" : "nfs",
      "Status" : {
@@ -71,25 +71,25 @@ To correct the problem, stop and restart the NFS service using the following ste
 
 1. Use the `stop-service` command to stop the NFS service.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge stop-service --service-id nfs
    ```
 
 1. Use the `start-service` command to start the NFS service. For more information, see [Managing the NFS interface](https://docs.aws.amazon.com/snowball/latest/developer-guide/shared-using-nfs.html).
 
-   ```
+   ```bash,sh,zsh
    snowballEdge start-service  --virtual-network-interface-arns vni-arn --service-id nfs  --service-configuration  AllowedHosts=0.0.0.0/0
    ```
 
 1. Use the `describe-service` command to make sure the service is running.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge describe-service --service-id nfs
    ```
 
    If the value of the `State` name is `ACTIVE`, the NFS interface service is active.
 
-   ```
+   ```JSON
    {
     "ServiceId" : "nfs",
     "Status" : {
@@ -117,7 +117,7 @@ When using the S3 interface to transfer data to or from a Snowball Edge device, 
 
    1. If the policy only allows data to be uploaded if KMS headers are passed, ensure the policy specifies an principal ARN instead of a user ID. The example below shows the correct syntax.
 
-      ```
+      ```JSON
           {
           "Sid": "Statement3",
           "Effect": "Deny",
@@ -155,7 +155,7 @@ When using the S3 interface to transfer data to or from a Snowball Edge device, 
 
    1. If the bucket policy only allows upload to the bucket if the correct headers are passed, uploads from Snowball Edge devices don't pass any headers by default. Modify the policy to allow an exception for the IAM user used to upload the data. Below is an example of the correct syntax for this.
 
-      ```
+      ```JSON
       {
           "Sid": "Statement3",
           "Effect": "Deny",
@@ -190,7 +190,7 @@ When using the S3 interface to transfer data to or from a Snowball Edge device, 
 
 1. Check the policy of the KMS key you are using for the correct syntax in the Principal element. See the example below shows the correct syntax.
 
-   ```
+   ```JSON
    {
        "Sid": "Statement2",
        "Effect": "Allow",
@@ -224,7 +224,7 @@ When using the S3 interface to transfer data to or from a Snowball Edge device, 
 
 ****
 
-   ```
+   ```json
            {
        "Version":"2012-10-17",
        "Statement": [{
@@ -292,7 +292,7 @@ When using the S3 interface to transfer data to or from a Snowball Edge device, 
 
 1. If the KMS policy uses the incorrect IAM Role format, a 403 error may occur. Modify the policy to allow an exception for the IAM user used to upload the data. Below is an example of the correct syntax for this.
 
-   ```
+   ```JSON
    {{
                "Sid": "Allow use of the key",
                "Effect": "Allow",
@@ -317,7 +317,7 @@ When using the S3 interface to transfer data to or from a Snowball Edge device, 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "PutObjPolicy",
@@ -364,7 +364,7 @@ When using the S3 interface to transfer data to or from a Snowball Edge device, 
 
 ****
 
-   ```
+   ```json
          {
        "Version":"2012-10-17",
        "Statement": [

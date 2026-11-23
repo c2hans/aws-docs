@@ -27,7 +27,7 @@ The following code example shows how to use `SendMessages`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ppt#code-examples).
 Send an email message.
 
-```
+```sap-abap
     " Build the addresses map from the list of to_addresses
     DATA lt_addresses TYPE /aws1/cl_pptaddressconf=>tt_mapofaddressconfiguration.
     LOOP AT it_to_addresses INTO DATA(lo_address).
@@ -72,7 +72,7 @@ Send an email message.
 ```
 Send an SMS message.
 
-```
+```sap-abap
     " Build the addresses map for the destination number
     DATA lt_addresses TYPE /aws1/cl_pptaddressconf=>tt_mapofaddressconfiguration.
     INSERT VALUE /aws1/cl_pptaddressconf=>ts_mapofaddressconf_maprow(
@@ -109,7 +109,7 @@ Send an SMS message.
 ```
 Send an email message with an existing email template.
 
-```
+```sap-abap
     " Build the addresses map from the list of to_addresses
     DATA lt_addresses TYPE /aws1/cl_pptaddressconf=>tt_mapofaddressconfiguration.
     LOOP AT it_to_addresses INTO DATA(lo_address).
@@ -146,7 +146,7 @@ Send an email message with an existing email template.
 ```
 Send a text message with an existing SMS template.
 
-```
+```sap-abap
     " Build the addresses map for the destination number
     DATA lt_addresses TYPE /aws1/cl_pptaddressconf=>tt_mapofaddressconfiguration.
     INSERT VALUE /aws1/cl_pptaddressconf=>ts_mapofaddressconf_maprow(

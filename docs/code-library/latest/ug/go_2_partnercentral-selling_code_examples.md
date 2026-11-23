@@ -26,7 +26,7 @@ The following code example shows how to use `GetOpportunity`.
 **SDK for Go V2**
 Get an opportunity.
 
-```
+```go
 package main
 
 import (
@@ -76,7 +76,7 @@ The following code example shows how to use `ListOpportunities`.
 **SDK for Go V2**
 List opportunities.
 
-```
+```go
 package main
 
 import (

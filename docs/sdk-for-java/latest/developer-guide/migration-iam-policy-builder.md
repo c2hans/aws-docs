@@ -44,7 +44,7 @@ The v1 SDK has [`enum` types](https://docs.aws.amazon.com/AWSJavaSDK/latest/java
 
 The following example shows the `SendMessage` constant for `SQSActions`.
 
-```
+```java
 Action action = SQSActions.SendMessage;
 ```
 
@@ -55,13 +55,13 @@ You cannot specify a `[*NotAction*](https://docs.aws.amazon.com/IAM/latest/UserG
 
 In v2, the [IamAction](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/policybuilder/iam/IamAction.html) interface represents all actions. To specify a [service-specific action](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_action.html) element, pass a string to the `create` method as shown in the following code.
 
-```
+```java
 IamAction action = IamAction.create("sqs:SendMessage");
 ```
 
 You can specify a `[*NotAction*](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notaction.html)` for a statement with v2 as shown in the following code.
 
-```
+```java
 IamAction action = IamAction.create("sqs:SendMessage");
 IamStatement.builder().addNotAction(action);
 ```
@@ -82,7 +82,7 @@ To represent statement conditions, the v1 SDK uses subclasses of [`Condition`](h
 
 Each `Condition` subclass defines a comparison `enum` type to help define the condition. For example, the following shows a *not like*[ string comparison](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String) for a condition.
 
-```
+```java
 Condition condition = new StringCondition(StringComparisonType.StringNotLike, "key", "value");
 ```
 
@@ -91,7 +91,7 @@ Condition condition = new StringCondition(StringComparisonType.StringNotLike, "k
 
 In v2, you build a condition for a policy statement by using `[IamCondition](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/policybuilder/iam/IamCondition.html)` and provide an `[IamConditionOperator](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/policybuilder/iam/IamConditionOperator.html)`, which contains `enums` for all types.
 
-```
+```java
 IamCondition condition = IamCondition.create(IamConditionOperator.STRING_NOT_LIKE, "key", "value");
 ```
 
@@ -117,13 +117,13 @@ Resource resource = new Resource("arn:aws:s3:::amzn-s3-demo-bucket").withIsNotTy
 
 In v2, you create a `[*Resource*](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html)` element by passing an ARN to the `IamResource.create` method.
 
-```
+```java
 IamResource resource = IamResource.create("arn:aws:s3:::amzn-s3-demo-bucket");
 ```
 
 An `[IamResource](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/policybuilder/iam/IamResource.html)` can be set as *[`NotResource`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notresource.html)* element as shown in the following snippet.
 
-```
+```java
 IamResource resource = IamResource.create("arn:aws:s3:::amzn-s3-demo-bucket");
 IamStatement.builder().addNotResource(resource);
 ```

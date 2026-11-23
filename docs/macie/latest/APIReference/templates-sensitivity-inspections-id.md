@@ -77,7 +77,7 @@ Updates the settings for the sensitivity inspection template for an account.
 #### PUT schema
 <a name="templates-sensitivity-inspections-id-request-body-put-example"></a>
 
-```
+```json
 {
   "description": "string",
   "excludes": {
@@ -105,7 +105,7 @@ Updates the settings for the sensitivity inspection template for an account.
 #### GetSensitivityInspectionTemplateResponse schema
 <a name="templates-sensitivity-inspections-id-response-body-getsensitivityinspectiontemplateresponse-example"></a>
 
-```
+```json
 {
   "description": "string",
   "excludes": {
@@ -132,7 +132,7 @@ Updates the settings for the sensitivity inspection template for an account.
 #### Empty Schema schema
 <a name="templates-sensitivity-inspections-id-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -140,7 +140,7 @@ Updates the settings for the sensitivity inspection template for an account.
 #### ValidationException schema
 <a name="templates-sensitivity-inspections-id-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -149,7 +149,7 @@ Updates the settings for the sensitivity inspection template for an account.
 #### AccessDeniedException schema
 <a name="templates-sensitivity-inspections-id-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -158,7 +158,7 @@ Updates the settings for the sensitivity inspection template for an account.
 #### ResourceNotFoundException schema
 <a name="templates-sensitivity-inspections-id-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -167,7 +167,7 @@ Updates the settings for the sensitivity inspection template for an account.
 #### ThrottlingException schema
 <a name="templates-sensitivity-inspections-id-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -176,7 +176,7 @@ Updates the settings for the sensitivity inspection template for an account.
 #### InternalServerException schema
 <a name="templates-sensitivity-inspections-id-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

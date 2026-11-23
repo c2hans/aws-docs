@@ -39,7 +39,7 @@ You can create a policy in AccountA that grants access to the repository in Acco
 
 ****
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
    "Statement": [
@@ -77,7 +77,7 @@ You can create a policy in AccountA that grants access to the repository in Acco
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

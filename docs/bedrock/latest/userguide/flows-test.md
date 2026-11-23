@@ -50,7 +50,7 @@ To view the inputs and outputs for each node, set the `enableTrace` field to `TR
 
 The request body specifies the input for the flow and is of the following format:
 
-```
+```json
 {
    "inputs": [
       {
@@ -69,7 +69,7 @@ Provide the input in the `document` field, provide a name for the input in the `
 
 The response is returned in a stream. Each event returned contains output from a node in the `document` field, the node that was processed in the `nodeName` field, and the type of node in the `nodeType` field. These events are of the following format:
 
-```
+```json
 {
     "flowOutputEvent": {
         "content": {

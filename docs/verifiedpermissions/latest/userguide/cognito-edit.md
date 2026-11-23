@@ -43,7 +43,7 @@ You can update an identity source by using the [UpdateIdentitySource](https://do
 
 1. Create a `config.txt` file that contains the following details of the Amazon Cognito user pool for use by the `--configuration` parameter in the `update-identity-source` command.
 
-   ```
+   ```json
    {
        "cognitoUserPoolConfiguration": {
            "userPoolArn": "arn:aws:cognito-idp:us-west-2:123456789012:userpool/us-west-2_1a2b3c4d5",
@@ -57,7 +57,7 @@ You can update an identity source by using the [UpdateIdentitySource](https://do
 
 1. Run the following command to update an Amazon Cognito identity source.
 
-   ```
+   ```bash
    $ aws verifiedpermissions update-identity-source \
        --update-configuration file://config.txt \
        --policy-store-id 123456789012

@@ -34,7 +34,7 @@ You must complete the following tasks when implementing a KCL consumer applicati
 
 The simplest possible consumer using the KCL for Node.js must implement a `recordProcessor` function, which in turn contains the functions `initialize`, `processRecords`, and `shutdown`. The sample provides an implementation that you can use as a starting point (see `sample_kcl_app.js`).
 
-```
+```java
 function recordProcessor() {
   // return an object that implements initialize, processRecords and shutdown functions.}
 ```
@@ -42,14 +42,14 @@ function recordProcessor() {
 **initialize**
 The KCL calls the `initialize` function when the record processor starts. This record processor processes only the shard ID passed as `initializeInput.shardId`, and typically, the reverse is also true (this shard is processed only by this record processor). However, your consumer should account for the possibility that a data record might be processed more than one time. This is because Kinesis Data Streams has *at least once* semantics, meaning that every data record from a shard is processed at least one time by a worker in your consumer. For more information about cases in which a particular shard might be processed by more than one worker, see [Use resharding, scaling, and parallel processing to change the number of shards](kinesis-record-processor-scaling.md).
 
-```
+```java
 initialize: function(initializeInput, completeCallback)
 ```
 
 **processRecords**
  The KCL calls this function with input that contains a list of data records from the shard specified to the `initialize` function. The record processor that you implement processes the data in these records according to the semantics of your consumer. For example, the worker might perform a transformation on the data and then store the result in an Amazon Simple Storage Service (Amazon S3) bucket.
 
-```
+```java
 processRecords: function(processRecordsInput, completeCallback)
 ```
 
@@ -78,7 +78,7 @@ The basic sample application shows the simplest possible call to the `checkpoint
 **shutdown**
 The KCL calls the `shutdown` function either when processing ends (`shutdownInput.reason` is `TERMINATE`) or the worker is no longer responding (`shutdownInput.reason` is `ZOMBIE`).
 
-```
+```java
 shutdown: function(shutdownInput, completeCallback)
 ```
 

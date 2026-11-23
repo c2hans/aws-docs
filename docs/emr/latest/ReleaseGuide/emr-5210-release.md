@@ -89,13 +89,13 @@ Last updated date: April 3, 2019
 
     1. Search for the term `appblacklist` and modify the line to the following:
 
-       ```
+       ```bash
        appblacklist = search
        ```
 
     1. Save your changes and restart Hue as shown in the following example:
 
-       ```
+       ```bash
        sudo stop hue; sudo start hue
        ```
 + Tez

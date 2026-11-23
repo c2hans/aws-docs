@@ -11,7 +11,7 @@ The request schema is nearly identical between the Invoke API and Converse API. 
 
 The following shows the complete request structure for Amazon Nova models. All fields are optional unless marked as required:
 
-```
+```JSON
 {
   "system": [
     {
@@ -180,7 +180,7 @@ For Converse API, pass `reasoningConfig` in `additionalModelRequestFields`.
 
 The following shows the complete response structure for Amazon Nova models:
 
-```
+```JSON
 {
   "ResponseMetadata": {
     "RequestId": "string",

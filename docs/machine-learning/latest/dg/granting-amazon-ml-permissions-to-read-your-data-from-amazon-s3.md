@@ -17,7 +17,7 @@ We are no longer updating the Amazon Machine Learning service or accepting new u
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

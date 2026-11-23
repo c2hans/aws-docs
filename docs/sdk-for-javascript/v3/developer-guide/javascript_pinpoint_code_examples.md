@@ -27,7 +27,7 @@ The following code example shows how to use `SendMessages`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/pinpoint#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { PinpointClient } from "@aws-sdk/client-pinpoint";
 // Set the AWS Region.
 const REGION = "us-east-1";
@@ -35,7 +35,7 @@ export const pinClient = new PinpointClient({ region: REGION });
 ```
 Send an email message.
 
-```
+```javascript
 // Import required AWS SDK clients and commands for Node.js
 import { SendMessagesCommand } from "@aws-sdk/client-pinpoint";
 import { pinClient } from "./libs/pinClient.js";
@@ -128,7 +128,7 @@ run();
 ```
 Send an SMS message.
 
-```
+```javascript
 // Import required AWS SDK clients and commands for Node.js
 import { SendMessagesCommand } from "@aws-sdk/client-pinpoint";
 import { pinClient } from "./libs/pinClient.js";

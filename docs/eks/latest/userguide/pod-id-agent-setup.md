@@ -32,7 +32,7 @@ The nodes where the EKS Pod Identity Agent runs must be able to access the EKS A
 + An existing Amazon EKS cluster. To deploy one, see [Get started with Amazon EKS](getting-started.md). The cluster version and platform version must be the same or later than the versions listed in [EKS Pod Identity cluster versions](pod-identities.md#pod-id-cluster-versions).
 + The node role has permissions for the agent to do the `AssumeRoleForPodIdentity` action in the EKS Auth API. You can use the [AWS managed policy: AmazonEKSWorkerNodePolicy](security-iam-awsmanpol.md#security-iam-awsmanpol-amazoneksworkernodepolicy) or add a custom policy similar to the following:
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -75,13 +75,13 @@ The nodes where the EKS Pod Identity Agent runs must be able to access the EKS A
 
 1. Confirm that the EKS Pod Identity Agent pods are running on your cluster.
 
-   ```
+   ```bash
    kubectl get pods -n kube-system | grep 'eks-pod-identity-agent'
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    eks-pod-identity-agent-gmqp7                                          1/1     Running   1 (24h ago)   24h
    eks-pod-identity-agent-prnsh                                          1/1     Running   1 (24h ago)   24h
    ```
@@ -93,7 +93,7 @@ The nodes where the EKS Pod Identity Agent runs must be able to access the EKS A
 
 1. Run the following AWS CLI command. Replace `my-cluster` with the name of your cluster.
 
-   ```
+   ```shell
    aws eks create-addon --cluster-name my-cluster --addon-name eks-pod-identity-agent --addon-version v1.0.0-eksbuild.1
    ```
 **Note**
@@ -101,13 +101,13 @@ The EKS Pod Identity Agent doesn’t use the `service-account-role-arn` for *IAM
 
 1. Confirm that the EKS Pod Identity Agent pods are running on your cluster.
 
-   ```
+   ```bash
    kubectl get pods -n kube-system | grep 'eks-pod-identity-agent'
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    eks-pod-identity-agent-gmqp7                                          1/1     Running   1 (24h ago)   24h
    eks-pod-identity-agent-prnsh                                          1/1     Running   1 (24h ago)   24h
    ```

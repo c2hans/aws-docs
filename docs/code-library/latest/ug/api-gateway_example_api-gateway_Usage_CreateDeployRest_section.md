@@ -19,7 +19,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/api-gateway#code-examples).
 Create a class that wraps API Gateway operations.
 
-```
+```python
 import argparse
 import json
 import logging
@@ -219,7 +219,7 @@ class ApiGatewayToService:
 ```
 Deploy a REST API and call it with the Requests package.
 
-```
+```python
 def usage_demo(table_name, role_name, rest_api_name):
     """
     Demonstrates how to used API Gateway to create and deploy a REST API, and how

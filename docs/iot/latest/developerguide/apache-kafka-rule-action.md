@@ -22,7 +22,7 @@ This rule action has the following requirements:
   The policy attached to the role that you specify should look like the following example.
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -48,7 +48,7 @@ This rule action has the following requirements:
   The policy attached to the role that you specify should look like the following example.
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -158,7 +158,7 @@ The unique Kerberos identity to which Kerberos can assign tickets to access Kerb
 
 The following JSON example defines an Apache Kafka action in an AWS IoT rule. The following example passes the [ sourceIp()](iot-sql-functions.md#iot-function-sourceip) inline function as a [substitution template](https://docs.aws.amazon.com/iot/latest/developerguide/iot-substitution-templates.html) in the Kafka Action header.
 
-```
+```JSON
 {
 	"topicRulePayload": {
 		"sql": "SELECT * FROM 'some/topic'",

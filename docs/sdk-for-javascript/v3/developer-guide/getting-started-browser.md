@@ -96,7 +96,7 @@ In this step, you will add a Amazon S3 bucket and object for the example. You wi
 
 1. Next, choose the **Permissions** tab of your bucket, and then choose **Edit** in the **Cross-origin resource sharing (CORS)** section. Enter the following JSON:
 
-   ```
+   ```javascript
    [
      {
        "AllowedHeaders": [
@@ -128,19 +128,19 @@ The example application consists of a single-page React application. The files f
 
 1. From the command line, clone the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/):
 
-   ```
+   ```bash
    git clone --depth 1 https://github.com/awsdocs/aws-doc-sdk-examples.git
    ```
 
 1. Navigate to the example application:
 
-   ```
+   ```bash
    cd aws-doc-sdk-examples/javascriptv3/example_code/web/s3/list-objects/
    ```
 
 1. Run the following command to install the required packages:
 
-   ```
+   ```bash
    npm install
    ```
 
@@ -158,19 +158,19 @@ After you have replaced the text, save the `App.tsx` file. You're now ready to r
 
 1. From the command line, navigate to the example application:
 
-   ```
+   ```bash
    cd aws-doc-sdk-examples/javascriptv3/example_code/web/s3/list-objects/
    ```
 
 1. From the command line, run the following command:
 
-   ```
+   ```bash
    npm run dev
    ```
 
    The Vite development environment will run with the following message:
 
-   ```
+   ```bash
    VITE v4.3.9  ready in 280 ms
 
    ➜  Local:   http://localhost:5173/

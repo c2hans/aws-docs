@@ -46,19 +46,19 @@ In this step, you install all of the tools in your environment that the AWS CDK 
 
    For Amazon Linux:
 
-   ```
+   ```sh
    sudo yum -y update
    ```
 
    For Ubuntu Server:
 
-   ```
+   ```sh
    sudo apt update
    ```
 
 1. Confirm whether ** `nvm` ** is already installed. To do this, run the ** `nvm` ** command with the ** `--version` ** option.
 
-   ```
+   ```sh
    nvm --version
    ```
 
@@ -66,13 +66,13 @@ In this step, you install all of the tools in your environment that the AWS CDK 
 
 1. Download and install ** `nvm` **. To do this, run the install script. In this example, v0.33.0 is installed, but you can check for the latest version of ** `nvm` ** [here](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-   ```
+   ```sh
    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
    ```
 
 1. Start using ** `nvm` **. You can either close the terminal session and then restart it, or source the `~/.bashrc` file that contains the commands to load ** `nvm` **.
 
-   ```
+   ```sh
    . ~/.bashrc
    ```
 
@@ -81,7 +81,7 @@ In this step, you install all of the tools in your environment that the AWS CDK 
 
 1. Confirm whether you already have Node.js installed, and if you do, confirm that the installed version is 16.17.0 or greater. **This sample has been tested with Node.js 16.17.0.** To check, with the terminal session still open in the IDE, run the ** `node` ** command with the ** `--version` ** option.
 
-   ```
+   ```sh
    node --version
    ```
 
@@ -91,13 +91,13 @@ In this step, you install all of the tools in your environment that the AWS CDK 
 **Note**
 You can also run **`nvm install node`** to install the long-term support (LTS) version of Node.js. AWS Cloud9 support tracks the LTS version of Node.js.
 
-   ```
+   ```sh
    nvm install v16
    ```
 
 1. Start using Node.js 16. To do this, run the ** `nvm` ** command with the ** `alias` ** action, the version number to alias, and the version to use for that alias, as follows.
 
-   ```
+   ```sh
    nvm alias default 16
    ```
 **Note**
@@ -110,7 +110,7 @@ The preceding command sets Node.js 16 as the default version of Node.js. Alterna
 
 1. Confirm whether you already have TypeScript installed. To do this, with the terminal session still open in the IDE, run the command line TypeScript compiler with the ** `--version` ** option.
 
-   ```
+   ```sh
    tsc --version
    ```
 
@@ -118,13 +118,13 @@ The preceding command sets Node.js 16 as the default version of Node.js. Alterna
 
 1. Install TypeScript. To do this, run the ** `npm` ** command with the ** `install` ** action, the ** `-g` ** option, and the name of the TypeScript package. This installs TypeScript as a global package in the environment.
 
-   ```
+   ```sh
    npm install -g typescript
    ```
 
 1. Confirm that TypeScript is installed. To do this, run the command line TypeScript compiler with the ** `--version` ** option.
 
-   ```
+   ```sh
    tsc --version
    ```
 
@@ -135,7 +135,7 @@ The preceding command sets Node.js 16 as the default version of Node.js. Alterna
 
 1. Confirm whether you already have the AWS CDK installed. To do this, with the terminal session still open in the IDE, run the ** `cdk` ** command with the ** `--version` ** option.
 
-   ```
+   ```sh
    cdk --version
    ```
 
@@ -143,13 +143,13 @@ The preceding command sets Node.js 16 as the default version of Node.js. Alterna
 
 1. Install the AWS CDK by running the ** `npm` ** command along with the `install` action, the name of the AWS CDK package to install, and the `-g` option to install the package globally in the environment.
 
-   ```
+   ```sh
    npm install -g aws-cdk
    ```
 
 1. Confirm that the AWS CDK is installed and correctly referenced. To do this, run the ** `cdk` ** command with the ** `--version` ** option.
 
-   ```
+   ```sh
    cdk --version
    ```
 
@@ -162,7 +162,7 @@ In this step, you create a sample TypeScript project that contains all of the so
 
 1. With the terminal session still open in the IDE, create a directory to store the project's source code, for example a `~/environment/hello-cdk` directory in your environment. Then switch to that directory.
 
-   ```
+   ```sh
    rm -rf ~/environment/hello-cdk # Remove this directory if it already exists.
    mkdir ~/environment/hello-cdk  # Create the directory.
    cd ~/environment/hello-cdk     # Switch to the directory.
@@ -170,7 +170,7 @@ In this step, you create a sample TypeScript project that contains all of the so
 
 1. Set up the directory as a TypeScript language project for the AWS CDK. To do this, run the ** `cdk` ** command with the ** `init` ** action, the ** `sample-app` ** template, and the ** `--language` ** option along with the name of the programming language.
 
-   ```
+   ```sh
    cdk init sample-app --language typescript
    ```
 
@@ -188,7 +188,7 @@ In this step, you create a sample TypeScript project that contains all of the so
 
 1. In the **Environment** window, open the `lib/hello-cdk-stack.ts` file, and browse the following code in that file.
 
-   ```
+   ```typescript
    import sns = require('@aws-cdk/aws-sns');
    import sqs = require('@aws-cdk/aws-sqs');
    import cdk = require('@aws-cdk/cdk');
@@ -212,7 +212,7 @@ In this step, you create a sample TypeScript project that contains all of the so
 
 1. In the **Environment** window, open the `bin/hello-cdk.ts` file, and browse the following code in that file.
 
-   ```
+   ```typescript
    #!/usr/bin/env node
    import cdk = require('@aws-cdk/cdk');
    import { HelloCdkStack } from '../lib/hello-cdk-stack';
@@ -226,7 +226,7 @@ In this step, you create a sample TypeScript project that contains all of the so
 
 1. Use ** `npm` ** to run the TypeScript compiler to check for coding errors, and then enable the AWS CDK to execute the project's `bin/hello-cdk.js` file. To do this, from the project's root directory, run the ** `npm` ** command with the ** `run` ** action, specifying the ** `build` ** command value in the `package.json` file, as follows.
 
-   ```
+   ```sh
    npm run build
    ```
 
@@ -239,7 +239,7 @@ In this step, you instruct the AWS CDK to create a CloudFormation stack template
 
 1. Have the AWS CDK create the CloudFormation stack template. To do this, with the terminal session still open in the IDE, from the project's root directory, run the ** `cdk` ** command with the ** `synth` ** action and the name of the stack.
 
-   ```
+   ```sh
    cdk synth HelloCdkStack
    ```
 
@@ -247,7 +247,7 @@ In this step, you instruct the AWS CDK to create a CloudFormation stack template
 
 1. The first time that you deploy an AWS CDK app into an environment for a specific AWS account and AWS Region combination, you must install a *bootstrap stack*. This stack includes various resources that the AWS CDK needs to complete its various operations. For example, this stack includes an Amazon S3 bucket that the AWS CDK uses to store templates and assets during its deployment processes. To install the bootstrap stack, run the ** `cdk` ** command with the ** `bootstrap` ** action.
 
-   ```
+   ```sh
    cdk bootstrap
    ```
 **Note**
@@ -259,7 +259,7 @@ If you run `cdk bootstrap` without specifying any options, the default AWS accou
 
 1. Have the AWS CDK run the CloudFormation stack template to deploy the stack. To do this, from the project's root directory, run the ** `cdk` ** command with the ** `deploy` ** action and the name of the stack.
 
-   ```
+   ```sh
    cdk deploy HelloCdkStack
    ```
 
@@ -271,13 +271,13 @@ If the output displays a message that the stack does not define an environment a
 
    For example, to send a message to the topic, with the terminal session still open in the IDE, use the AWS CLI to run the Amazon SNS** `publish` ** command, supplying the message's subject and body, the AWS Region for the topic, and the topic's Amazon Resource Name (ARN).
 
-   ```
+   ```sh
    aws sns publish --subject "Hello from the AWS CDK" --message "This is a message from the AWS CDK." --topic-arn arn:aws:sns:us-east-2:123456789012:HelloCdkStack-HelloCdkTopic1A234567-8BCD9EFGHIJ0K
    ```
 
    In the preceding command, replace `arn:aws:sns:us-east-2:123456789012:HelloCdkStack-HelloCdkTopic1A234567-8BCD9EFGHIJ0K` with the ARN that CloudFormation assigns to the topic. To get the ID, you can run the Amazon SNS** `list-topics` ** command.
 
-   ```
+   ```sh
    aws sns list-topics --output table --query 'Topics[*].TopicArn'
    ```
 
@@ -285,13 +285,13 @@ If the output displays a message that the stack does not define an environment a
 
    To check the queue for the received message, run the Amazon SQS** `receive-message` ** command, supplying the queue's URL.
 
-   ```
+   ```sh
    aws sqs receive-message --queue-url https://queue.amazonaws.com/123456789012/HelloCdkStack-HelloCdkQueue1A234567-8BCD9EFGHIJ0K
    ```
 
    In the preceding command, replace `https://queue.amazonaws.com/123456789012/HelloCdkStack-HelloCdkQueue1A234567-8BCD9EFGHIJ0K` with the ARN that CloudFormation assigns to the queue. To get the URL, you can run the Amazon SQS** `list-queues` ** command.
 
-   ```
+   ```sh
    aws sqs list-queues --output table --query 'QueueUrls[*]'
    ```
 
@@ -307,7 +307,7 @@ To prevent ongoing charges to your AWS account after you're done using this samp
 
 With the terminal session still open in the IDE, from the project's root directory, run the ** `cdk` ** command with the ** `destroy` ** action and the stack's name.
 
-```
+```sh
 cdk destroy HelloCdkStack
 ```
 

@@ -32,7 +32,7 @@ The Amazon Kinesis Video Streams Edge Agent requires the AWS IoT Greengrass Secr
 **Note**
 Replace `arn:aws:secretsmanager:*:*:secret:*` with the ARNs of the secrets that you created in [Create the Amazon Kinesis Video Streams and AWS Secrets Manager resources for your IP camera RTSP URLs](gs-create-resources.md).
 
-     ```
+     ```bash
      {
       "cloudSecrets": [
            {

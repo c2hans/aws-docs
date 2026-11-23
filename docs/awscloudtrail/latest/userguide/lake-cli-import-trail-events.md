@@ -36,7 +36,7 @@ If you're creating the event data store to replace your trail, we recommend conf
 
    The following is the example response:
 
-   ```
+   ```JSON
    {
        "EventDataStoreArn": "arn:aws:cloudtrail:us-east-1:123456789012:eventdatastore/EXAMPLEa-4357-45cd-bce5-17ec652719d9",
        "Name": "import-trail-eds",
@@ -72,7 +72,7 @@ If you're creating the event data store to replace your trail, we recommend conf
 
    The response shows the `Status` is now `STOPPED_INGESTION`, which indicates the event data store is not ingesting live events.
 
-   ```
+   ```JSON
    {
        "EventDataStoreArn": "arn:aws:cloudtrail:us-east-1:123456789012:eventdatastore/EXAMPLEa-4357-45cd-bce5-17ec652719d9",
        "Name": "import-trail-eds",
@@ -102,7 +102,7 @@ If you're creating the event data store to replace your trail, we recommend conf
 
 1. Run the **start-import** command to import the trail events to the event data store created in step 1. Specify the ARN (or ID suffix of the ARN) of the event data store as the value for the `--destinations` parameter. For `--start-event-time` specify the `eventTime` for the oldest event you want to copy and for `--end-event-time` specify the `eventTime` of the newest event you want to copy. For `--import-source` specify the S3 URI for the S3 bucket containing your trail logs, the AWS Region for the S3 bucket, and the ARN of the role used for importing trail events.
 
-   ```
+   ```JSON
    aws cloudtrail start-import \
    --destinations ["arn:aws:cloudtrail:us-east-1:123456789012:eventdatastore/EXAMPLEa-4357-45cd-bce5-17ec652719d9"] \
    --start-event-time 2023-08-11T16:08:12.934000+00:00 \
@@ -112,7 +112,7 @@ If you're creating the event data store to replace your trail, we recommend conf
 
    The following is an example response.
 
-   ```
+   ```JSON
    {
       "CreatedTimestamp": "2023-11-09T17:08:20.705000+00:00",
       "Destinations": [
@@ -141,7 +141,7 @@ If you're creating the event data store to replace your trail, we recommend conf
 
    The following is an example response.
 
-   ```
+   ```JSON
    {
        "ImportId": "EXAMPLEe-7be2-4658-9204-b38c3EXAMPLE",
        "Destinations": [

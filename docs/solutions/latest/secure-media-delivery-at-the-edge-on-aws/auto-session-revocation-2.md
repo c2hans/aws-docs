@@ -10,6 +10,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
 1.  Use Filters fields to look up the blocked session ID.
 ![Screeshot of Filters.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image19.png)
+   *** Filters ***
 
 1.  In the **Items returned** section an entry corresponding to this session will be displayed with a type attribute set to **AUTO**. Sum of **ip\_penalty**, **ip\_rate**, **referrer\_penalty**, **ua\_penalty** should equal to the final score attribute value which was above the threshold set.
 

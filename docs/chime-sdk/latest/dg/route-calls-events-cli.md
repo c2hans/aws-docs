@@ -34,7 +34,7 @@ Before creating SIP rules with phone number triggers, you need to have phone num
 
 **Example : Search for available phone numbers**
 
-```
+```bash
 # Search for available toll-free phone numbers
 aws chime-sdk-voice search-available-phone-numbers \
   --phone-number-type TollFree \
@@ -49,7 +49,7 @@ This command searches for available toll-free phone numbers with the prefix 844 
 **Example : Provision a phone number**
 After you find an available phone number, you can provision it using the following command:
 
-```
+```bash
 # Order a phone number
 aws chime-sdk-voice create-phone-number-order \
   --product-type SipMediaApplicationDialIn \
@@ -62,7 +62,7 @@ Replace `+18445550100` with an actual available phone number from your search re
 **Example : Check phone number status**
 After ordering a phone number, you can check its status:
 
-```
+```bash
 # Get the phone number order status
 aws chime-sdk-voice get-phone-number-order \
   --phone-number-order-id abcd1234-5678-90ab-cdef-EXAMPLE55555 \
@@ -74,14 +74,14 @@ Replace the order ID with the one returned from the `create-phone-number-order` 
 **Example : List phone numbers in your inventory**
 To see all phone numbers in your inventory:
 
-```
+```bash
 # List all phone numbers
 aws chime-sdk-voice list-phone-numbers \
   --region us-east-1
 ```
 To find unassigned phone numbers that can be used for SIP rules:
 
-```
+```bash
 # List unassigned phone numbers
 aws chime-sdk-voice list-phone-numbers \
   --region us-east-1 \
@@ -96,7 +96,7 @@ Now, let's create a Lambda function that will handle incoming calls. The functio
 **Example : Create an IAM role for Lambda**
 Before creating the Lambda function, you need to create an IAM role that grants the necessary permissions.
 
-```
+```bash
 cat > lambda-trust-policy.json << EOF
 {
   "Version": "2012-10-17",
@@ -127,7 +127,7 @@ These commands create an IAM role that allows Lambda to assume it and attach the
 **Example : Create a Lambda function**
 Now, create a simple Lambda function that will handle incoming calls.
 
-```
+```bash
 mkdir -p lambda
 cat > lambda/index.js << EOF
 exports.handler = async (event) => {
@@ -181,7 +181,7 @@ This Lambda function responds to incoming calls with a spoken message and then h
 **Example : Add Lambda permission for Amazon Chime SDK**
 Grant permission to the Amazon Chime SDK service to invoke your Lambda function.
 
-```
+```bash
 # Get your AWS account ID
 ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 
@@ -201,7 +201,7 @@ SIP media applications connect your Lambda function to the PSTN audio service. I
 
 **Example : Create the SIP media application**
 
-```
+```bash
 # Get your Lambda function ARN
 LAMBDA_ARN=$(aws lambda get-function --function-name ChimeSDKCallHandler --query Configuration.FunctionArn --output text)
 
@@ -215,7 +215,7 @@ The SIP media application acts as a bridge between the PSTN audio service and yo
 **Example : Get the SIP media application ID**
 After creating the SIP media application, you need to retrieve its ID for use later in the tutorial.
 
-```
+```bash
 SIP_MEDIA_APP_ID=$(aws chime-sdk-voice list-sip-media-applications \
   --query "SipMediaApplications[?Name=='MyCallHandlerApp'].SipMediaApplicationId" \
   --output text)
@@ -232,7 +232,7 @@ SIP rules determine how incoming calls are routed to your SIP media applications
 **Example : Create a SIP rule with phone number trigger**
 To route calls based on a phone number, use the following command:
 
-```
+```bash
 # Get an unassigned phone number from your inventory
 PHONE_NUMBER=$(aws chime-sdk-voice list-phone-numbers \
   --query "PhoneNumbers[?Status=='Unassigned'].E164PhoneNumber | [0]" \
@@ -257,7 +257,7 @@ This command creates a SIP rule that routes calls to your phone number to your S
 **Example : Create a SIP rule with Request URI hostname trigger**
 Alternatively, you can route calls based on the request URI of an incoming Voice Connector SIP call:
 
-```
+```bash
 # Replace with your Voice Connector hostname
 VOICE_CONNECTOR_HOST="{{example}}.voiceconnector.chime.aws"
 
@@ -277,7 +277,7 @@ For redundancy and failover, you can create multiple SIP media applications in t
 **Example : Create a backup Lambda function**
 First, create a backup Lambda function in the same Region.
 
-```
+```bash
 cat > lambda/backup-index.js >< EOF
 exports.handler = async (event) => {
   console.log('Received event in backup handler:', JSON.stringify(event, null, 2));
@@ -328,7 +328,7 @@ EOF
 
 **Example : Add Lambda permission for Amazon Chime SDK to the backup function**
 
-```
+```bash
                     # Get your AWS account ID
                     ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 

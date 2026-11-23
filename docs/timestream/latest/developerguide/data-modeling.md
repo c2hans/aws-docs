@@ -271,7 +271,7 @@ Here are some code examples to generate the hashed value based on `host_name`.
 
 **Example Python**
 
-```
+```python
 >>> import xxhash
 >>> from bitstring import BitArray
 >>> b=xxhash.xxh64('HOST-ID-1235').digest()
@@ -281,7 +281,7 @@ Here are some code examples to generate the hashed value based on `host_name`.
 
 **Example Go**
 
-```
+```Go
 package main
 
 import (
@@ -308,7 +308,7 @@ func abs(x int64) int64 {
 
 **Example Java**
 
-```
+```Java
 import java.nio.ByteBuffer;
 
 import net.jpountz.xxhash.XXHash64;

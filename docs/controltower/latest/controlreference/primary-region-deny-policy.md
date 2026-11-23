@@ -22,7 +22,7 @@ The format for this control is based on the following SCP.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

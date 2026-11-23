@@ -175,13 +175,13 @@ If you used the [AWS IoT Greengrass Core software installer to provision resourc
 
 1. <a name="update-iot-policy-cli-list-thing-principals"></a>List the principals for the core device's AWS IoT thing. Thing principals can be X.509 device certificates or other identifies. Run the following command, and replace {{MyGreengrassCore}} with the name of the core device.
 
-   ```
+   ```bash
    aws iot list-thing-principals --thing-name {{MyGreengrassCore}}
    ```
 
    The operation returns a response that lists the core device's thing principals.
 
-   ```
+   ```json
    {
        "principals": [
            "arn:aws:iot:us-west-2:123456789012:cert/{{certificateId}}"
@@ -191,7 +191,7 @@ If you used the [AWS IoT Greengrass Core software installer to provision resourc
 
 1. <a name="update-iot-policy-cli-identify-active-certificate"></a>Identify the core device's active certificate. Run the following command, and replace {{certificateId}} with the ID of each certificate from the previous step until you find the active certificate. The certificate ID is the hexadecimal string at the end of the certificate ARN. The `--query` argument specifies to output only the certificate's status.
 
-   ```
+   ```bash
    aws iot describe-certificate --certificate-id {{certificateId}} --query 'certificateDescription.status'
    ```
 
@@ -199,13 +199,13 @@ If you used the [AWS IoT Greengrass Core software installer to provision resourc
 
 1. <a name="update-iot-policy-cli-list-certificate-policies"></a>List the AWS IoT policies that are attached to the certificate. Run the following command, and replace the certificate ARN with the ARN of the certificate.
 
-   ```
+   ```bash
    aws iot list-principal-policies --principal {{arn:aws:iot:us-west-2:123456789012:cert/certificateId}}
    ```
 
    The operation returns a response that lists the AWS IoT policies that are attached to the certificate.
 
-   ```
+   ```json
    {
        "policies": [
            {
@@ -226,13 +226,13 @@ If you used the [AWS IoT Greengrass Core software installer to provision resourc
 
 1. <a name="update-iot-policy-cli-get-policy-document"></a>Get the policy's document. Run the following command, and replace {{GreengrassV2IoTThingPolicy}} with the name of the policy.
 
-   ```
+   ```bash
    aws iot get-policy --policy-name {{GreengrassV2IoTThingPolicy}}
    ```
 
    The operation returns a response that contains the policy's document and other information about the policy. The policy document is a JSON object serialized as a string.
 
-   ```
+   ```json
    {
        "policyName": "GreengrassV2IoTThingPolicy",
        "policyArn": "arn:aws:iot:us-west-2:123456789012:policy/GreengrassV2IoTThingPolicy",
@@ -263,7 +263,7 @@ If you used the [AWS IoT Greengrass Core software installer to provision resourc
 
    For example, if you have the [jq](https://stedolan.github.io/jq/) tool installed, you can run the following command to get the policy document, convert it to a JSON object, and save the policy document as a JSON object.
 
-   ```
+   ```bash
    aws iot get-policy --policy-name {{GreengrassV2IoTThingPolicy}} --query 'policyDocument' | jq fromjson >> iot-policy.json
    ```
 
@@ -271,7 +271,7 @@ If you used the [AWS IoT Greengrass Core software installer to provision resourc
 
    <a name="nano-command-intro-existing-file"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to open the file.
 
-   ```
+   ```bash
    nano iot-policy.json
    ```
 
@@ -279,13 +279,13 @@ If you used the [AWS IoT Greengrass Core software installer to provision resourc
 
 1. <a name="update-iot-policy-cli-create-policy-version"></a>Save the changes as a new version of the policy. Run the following command, and replace {{GreengrassV2IoTThingPolicy}} with the name of the policy.
 
-   ```
+   ```bash
    aws iot create-policy-version --policy-name {{GreengrassV2IoTThingPolicy}} --policy-document file://iot-policy.json --set-as-default
    ```
 
    The operation returns a response similar to the following example if it succeeds.
 
-   ```
+   ```json
    {
        "policyArn": "arn:aws:iot:us-west-2:123456789012:policy/GreengrassV2IoTThingPolicy",
        "policyDocument": "{\
@@ -341,7 +341,7 @@ The following example policy includes the minimum set of actions required to sup
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -407,7 +407,7 @@ The following example policy includes the minimum set of actions required to sup
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -486,7 +486,7 @@ The following example policy includes the minimum set of actions required for a 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

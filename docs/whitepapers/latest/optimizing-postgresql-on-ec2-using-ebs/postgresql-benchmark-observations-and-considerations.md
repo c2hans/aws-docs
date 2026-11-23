@@ -81,12 +81,18 @@ The following diagram shows the gradual increase in TPS.
 
 ![Graph that shows the gradual increase in TPS.](https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image6.png)
 
+*Gradual increase in TPS*
+
 The following graph shows the gradual decrease in latency.
 
 ![Graph that shows the gradual decrease in latency.](https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image7.png)
+
+*Gradual decrease in latency*
 
  *Latency comparison for various Amazon EBS storage types*
 
  The following graph shows the gradual decrease in initial connection time.
 
 ![Graph that shows the gradual decrease in initial connection time.](https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image8.png)
+
+*Gradual decrease in initial connection time*

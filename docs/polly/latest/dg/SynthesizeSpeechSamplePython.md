@@ -8,7 +8,7 @@ The following Python code example uses the AWS SDK for Python (Boto) synthesize 
 
 This example uses a short string of plain text. You can use SSML text for more control over the output. For more information, see [Generating speech from SSML documents](ssml.md).
 
-```
+```python
 import boto3
 
 polly_client = boto3.Session(

@@ -260,7 +260,7 @@ Below are examples for mirroring the broadcast horizontally and vertically.
 
 Horizontal mirroring:
 
-```
+```swift
 let cameraSource = IVSMixedImageDeviceSourceConfiguration()
 cameraSource.size = CGSize(width: -320, height: 720)
 // Add 320 to position x since our width is -320
@@ -269,7 +269,7 @@ cameraSource.position = CGPoint(x: 320, y: 0)
 
 Vertical mirroring:
 
-```
+```swift
 let cameraSource = IVSMixedImageDeviceSourceConfiguration()
 cameraSource.size = CGSize(width: 320, height: -720)
 // Add 720 to position y since our height is -720
@@ -281,7 +281,7 @@ cameraSource.position = CGPoint(x: 0, y: 720)
 
 Horizontal mirroring:
 
-```
+```java
 val cameraConfig = MixedImageDeviceSourceConfiguration().apply {
     setSize(BroadcastConfiguration.Vec2(-320f, 180f))
    // Add 320f to position x since our width is -320f
@@ -291,7 +291,7 @@ val cameraConfig = MixedImageDeviceSourceConfiguration().apply {
 
 Vertical mirroring:
 
-```
+```java
 val cameraConfig = MixedImageDeviceSourceConfiguration().apply {
     setSize(BroadcastConfiguration.Vec2(320f, -180f))
     // Add 180f to position y since our height is -180f

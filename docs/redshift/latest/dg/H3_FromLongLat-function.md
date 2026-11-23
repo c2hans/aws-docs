@@ -39,7 +39,7 @@ If *resolution* is out of bounds, then an error is returned.
 
 The following SQL returns the H3 cell ID from longitude `0`, latitude `0`, and resolution `10`.
 
-```
+```sql
 SELECT H3_FromLongLat(0, 0, 10);
 ```
 

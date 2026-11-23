@@ -16,7 +16,7 @@ $ awscurl --service "elemental-inference" --region <{{region}}> \
 
 The following example shows one shot-level item with answers. For brevity, the example omits the other contextual metadata fields, such as `iabTaxonomy`, `garm`, and `mood`.
 
-```
+```json
 {
   "items": [
     {

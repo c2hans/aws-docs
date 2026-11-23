@@ -46,7 +46,7 @@ Run the following Python script to populate sample records on the `OrdersAndTrad
 
 1. Run the following Python code. The `put-record` command in the code writes the JSON records to the stream.
 
-   ```
+   ```python
 
    import json
    import random

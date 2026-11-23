@@ -26,7 +26,7 @@ The following code example shows how to use `Get-SESIdentity`.
 **Tools for PowerShell V4**
 **Example 1: This command returns a list containing all of the identities (email addresses and domains) for a specific AWS Account, regardless of verification status.**
 
-```
+```powershell
 Get-SESIdentity
 ```
 +  For API details, see [ListIdentities](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -39,7 +39,7 @@ The following code example shows how to use `Get-SESSendQuota`.
 **Tools for PowerShell V4**
 **Example 1: This command returns the user's current sending limits.**
 
-```
+```powershell
 Get-SESSendQuota
 ```
 +  For API details, see [GetSendQuota](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -52,7 +52,7 @@ The following code example shows how to use `Get-SESSendStatistic`.
 **Tools for PowerShell V4**
 **Example 1: This command returns the user's sending statistics. The result is a list of data points, representing the last two weeks of sending activity. Each data point in the list contains statistics for a 15-minute interval.**
 
-```
+```powershell
 Get-SESSendStatistic
 ```
 +  For API details, see [GetSendStatistics](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.

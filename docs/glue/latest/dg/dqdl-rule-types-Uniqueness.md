@@ -8,7 +8,7 @@ Checks the percentage of unique values in a column against a given expression. U
 
 **Syntax**
 
-```
+```json
 Uniqueness {{<COL_NAME>}} {{<EXPRESSION>}}
 ```
 + **COL\_NAME** – The name of the column that you want to evaluate the data quality rule against.
@@ -20,14 +20,14 @@ Uniqueness {{<COL_NAME>}} {{<EXPRESSION>}}
 
 The following example rule checks whether the percentage of unique values in a column matches certain numeric criteria.
 
-```
+```json
 Uniqueness "email" = 1.0
 Uniqueness "Customer_ID" != 1.0 where "Customer_ID < 10"
 ```
 
 The following example rule checks multiple columns.
 
-```
+```json
 Uniqueness "vendorid" "tpep_pickup_datetime" = 1
 ```
 

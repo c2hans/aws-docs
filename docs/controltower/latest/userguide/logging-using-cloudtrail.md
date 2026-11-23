@@ -75,7 +75,7 @@ For more information, see the [CloudTrail userIdentity Element](https://docs.aws
 
 The following example shows a CloudTrail log entry that shows the structure of a typical log file entry for a `SetupLandingZone` AWS Control Tower event, including a record of the identity of the user who initiated the action.
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {

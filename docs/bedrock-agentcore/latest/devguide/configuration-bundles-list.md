@@ -16,19 +16,19 @@ Both operations support pagination.
 **Example**
 List configuration bundles:
 
-```
+```bash
 agentcore eval config-bundle list
 ```
 In a terminal, this opens an interactive list. For JSON output, for example in scripts, add `--json`.
 List immutable versions of a bundle:
 
-```
+```bash
 agentcore eval config-bundle version list --id <configuration-bundle-id>
 ```
 Use `--max-results` and `--next-token` with either list command for pagination.
 List all bundles with pagination:
 
-```
+```python
 import boto3
 
 client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -40,7 +40,7 @@ for page in paginator.paginate(maxResults=20):
 ```
 List versions of a specific bundle:
 
-```
+```python
 response = client.list_configuration_bundle_versions(
     bundleId="myAgentConfig-a1b2c3d4e5",
     filter={"branchName": "mainline"},

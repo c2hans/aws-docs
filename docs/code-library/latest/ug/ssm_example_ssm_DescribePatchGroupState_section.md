@@ -46,7 +46,7 @@ For more information, see About patch groups <https://docs.aws.amazon.com/system
 **Tools for PowerShell V4**
 **Example 1: This example gets the high-level patch compliance summary for a patch group.**
 
-```
+```powershell
 Get-SSMPatchGroupState -PatchGroup "Production"
 ```
 **Output:**
@@ -64,7 +64,7 @@ InstancesWithNotApplicablePatches  : 0
 **Tools for PowerShell V5**
 **Example 1: This example gets the high-level patch compliance summary for a patch group.**
 
-```
+```powershell
 Get-SSMPatchGroupState -PatchGroup "Production"
 ```
 **Output:**

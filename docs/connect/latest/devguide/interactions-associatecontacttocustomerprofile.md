@@ -13,7 +13,7 @@ See [AddProfileKey](https://docs.aws.amazon.com/customerprofiles/latest/APIRefer
 
 A `ProfileId` and `ContactId` must be present.
 
-```
+```json
 {
     "ProfileRequestData": {
         "ProfileId": Profile being associated

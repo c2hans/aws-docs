@@ -11,7 +11,7 @@ You can use IAM policies to control access to your Amazon Location resources and
 
 The following is a policy example to allow a user to create a geofence collection and tag resources:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

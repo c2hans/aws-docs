@@ -27,7 +27,7 @@ The following code example shows how to get started using Amazon Bedrock.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/bedrock#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -80,7 +80,7 @@ The following code example shows how to use `ListFoundationModels`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/bedrock#code-examples).
 List the available Bedrock foundation models.
 
-```
+```go
 import (
 	"context"
 	"log"

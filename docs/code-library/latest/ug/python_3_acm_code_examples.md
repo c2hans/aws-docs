@@ -34,7 +34,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 Create a class that wraps ACM operations.
 
-```
+```python
 import logging
 from pprint import pprint
 
@@ -285,7 +285,7 @@ class AcmCertificate:
 ```
 Use the wrapper class to manage certificates for your account.
 
-```
+```python
 def usage_demo():
     print("-" * 88)
     print("Welcome to the AWS Certificate Manager (ACM) demo!")
@@ -373,7 +373,7 @@ The following code example shows how to use `AddTagsToCertificate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -413,7 +413,7 @@ The following code example shows how to use `DeleteCertificate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -448,7 +448,7 @@ The following code example shows how to use `DescribeCertificate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -491,7 +491,7 @@ The following code example shows how to use `GetCertificate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -529,7 +529,7 @@ The following code example shows how to use `ImportCertificate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -572,7 +572,7 @@ The following code example shows how to use `ListCertificates`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -639,7 +639,7 @@ The following code example shows how to use `ListTagsForCertificate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -680,7 +680,7 @@ The following code example shows how to use `RemoveTagsFromCertificate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -730,7 +730,7 @@ The following code example shows how to use `RequestCertificate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -800,7 +800,7 @@ The following code example shows how to use `ResendValidationEmail`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.

@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::DestinationEndpoint PublicDestinationEndpointNetworkingConfiguration
 
-<a name="aws-properties-mediaconnect-destinationendpoint-publicdestinationendpointnetworkingconfiguration-description"></a>The `PublicDestinationEndpointNetworkingConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::DestinationEndpoint](aws-resource-mediaconnect-destinationendpoint.md).
+The networking configuration for a publicly accessible destination endpoint, including the CIDR blocks that are allowed to connect.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-publicdestinationendpointnetworkingconfiguration-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-publicdestinationendpointnetworkingconfiguration-properties"></a>
 
 `DestinationAllowRules`  <a name="cfn-mediaconnect-destinationendpoint-publicdestinationendpointnetworkingconfiguration-destinationallowrules"></a>
-Property description not available.
+The rules that specify which CIDR blocks can connect to the destination endpoint. You can specify up to 10 rules.
 *Required*: Yes
 *Type*: Array of [PublicDestinationEndpointNetworkingConfigurationAllowRule](aws-properties-mediaconnect-destinationendpoint-publicdestinationendpointnetworkingconfigurationallowrule.md)
 *Minimum*: `0`

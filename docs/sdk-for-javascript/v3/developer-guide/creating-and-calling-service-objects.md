@@ -10,7 +10,7 @@ The JavaScript API supports most available AWS services. Each service in the Jav
 
 When using the SDK in Node.js, you add the SDK package for each service you need to your application using `import`, which provides support for all current services. The following example creates an Amazon S3 service object in the `us-west-1` Region.
 
-```
+```javascript
 // Import the Amazon S3 service client
 import { S3Client } from "@aws-sdk/client-s3";
 // Create an S3 client in the us-west-1 Region
@@ -24,7 +24,7 @@ const s3Client = new S3Client({
 
 When calling a method of a service object, pass parameters in JSON as required by the API. For example, in Amazon S3, to get an object for a specified bucket and key, pass the following parameters to the `GetObjectCommand` method from the `S3Client`. For more information about passing JSON parameters, see [Work with JSON](working-with-json.md).
 
-```
+```javascript
 s3Client.send(new GetObjectCommand({Bucket: 'bucketName', Key: 'keyName'}));
 ```
 
@@ -42,7 +42,7 @@ Generated shapes' members are unioned with `undefined` for input shapes and are 
 
 If you would like to skip these steps, use the `AssertiveClient` or `UncheckedClient` type helpers. The following example uses the type helpers with Amazon S3 service.
 
-```
+```javascript
 import { S3 } from "@aws-sdk/client-s3";
 import type { AssertiveClient, UncheckedClient } from "@smithy/types";
 
@@ -71,7 +71,7 @@ const body = await (
 
 When using the transform on non-aggregated client with the `Command` syntax, the input cannot be validated because it goes through another class as shown in the example below.
 
-```
+```javascript
 import { S3Client, ListBucketsCommand, GetObjectCommand, GetObjectCommandInput } from "@aws-sdk/client-s3";
 import type { AssertiveClient, UncheckedClient, NoUndefined } from "@smithy/types";
 
@@ -109,7 +109,7 @@ This scenario is mostly relevant to operations with streaming bodies such as wit
 
 Since blob payload types are platform dependent, you may wish to indicate in your application that a client is running in a specific environment. This narrows the blob payload types as shown in the following example.
 
-```
+```javascript
 import { GetObjectCommand, S3Client } from "@aws-sdk/client-s3";
 import type { NodeJsClient, SdkStream, StreamingBlobPayloadOutputTypes } from "@smithy/types";
 import type { IncomingMessage } from "node:http";

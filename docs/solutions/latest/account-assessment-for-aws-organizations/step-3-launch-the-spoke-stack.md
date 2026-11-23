@@ -8,7 +8,7 @@ Deploy the Spoke stack to every account that the guidance assesses, including th
 
 1. Review the changes that AWS CDK deploys.
 
-   ```
+   ```bash
    $ npm run cdk -- diff account-assessment-for-aws-organizations-spoke \
        --profile "${PROFILE_SPOKE}" \
        --no-change-set
@@ -16,7 +16,7 @@ Deploy the Spoke stack to every account that the guidance assesses, including th
 
 1. Deploy the stack.
 
-   ```
+   ```bash
    $ npm run deploySpoke -- \
        --parameters DeploymentNamespace="${DEPLOYMENT_NAMESPACE}" \
        --parameters HubAccountId="${HUB_ACCOUNT_ID}" \

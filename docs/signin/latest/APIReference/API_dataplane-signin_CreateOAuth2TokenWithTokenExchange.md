@@ -16,6 +16,8 @@ POST /v1/token?x-amz-oauth-token-method=token-exchange HTTP/1.1
 Content-type: application/json
 
 {
+   "assertion": "{{string}}",
+   "client\_id": "{{string}}",
    "grant\_type": "{{string}}",
    "resource": "{{string}}",
    "scope": "{{string}}",
@@ -34,21 +36,35 @@ The request does not use any URI parameters.
 
 The request accepts the following data in JSON format.
 
- ** [grant\_type](#API_dataplane-signin_CreateOAuth2TokenWithTokenExchange_RequestSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithTokenExchange-request-grant_type"></a>
-The OAuth 2.0 grant type. Currently only supports `urn:ietf:params:oauth:grant-type:token-exchange`.
+ ** [assertion](#API_dataplane-signin_CreateOAuth2TokenWithTokenExchange_RequestSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithTokenExchange-request-assertion"></a>
+The JWT authorization grant, as defined in RFC 7523. Required when `grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer`.
 Type: String
-Pattern: `urn:ietf:params:oauth:grant-type:token-exchange`
+Length Constraints: Minimum length of 4. Maximum length of 20000.
+Required: No
+
+ ** [client\_id](#API_dataplane-signin_CreateOAuth2TokenWithTokenExchange_RequestSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithTokenExchange-request-client_id"></a>
+The OAuth 2.0 client identifier. If provided with `grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer`, must match the assertion's `client_id` claim.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 212.
+Required: No
+
+ ** [grant\_type](#API_dataplane-signin_CreateOAuth2TokenWithTokenExchange_RequestSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithTokenExchange-request-grant_type"></a>
+The OAuth 2.0 grant type. Currently supports `urn:ietf:params:oauth:grant-type:token-exchange` and `urn:ietf:params:oauth:grant-type:jwt-bearer`.
+Type: String
+Pattern: `urn:ietf:params:oauth:grant-type:(token-exchange|jwt-bearer)`
 Required: Yes
 
  ** [resource](#API_dataplane-signin_CreateOAuth2TokenWithTokenExchange_RequestSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithTokenExchange-request-resource"></a>
-The OAuth resource for which the access token is requested. Required when `grant_type=urn:ietf:params:oauth:grant-type:token-exchange`. Example: `glue.amazonaws.com`.
+The OAuth resource for which the access token is requested:
++  `grant_type=urn:ietf:params:oauth:grant-type:token-exchange`: Required. Must be a service principal. Example: `glue.amazonaws.com`.
++  `grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer`: Required when the assertion has no `resource` claim, otherwise must match it. Must be a URI. Example: `https://aws-mcp.us-east-1.api.aws/mcp`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
  ** [scope](#API_dataplane-signin_CreateOAuth2TokenWithTokenExchange_RequestSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithTokenExchange-request-scope"></a>
-IAM managed policy Amazon Resource Names (ARNs) to apply as session policies that further scope down the permissions of the issued access token, provided as a space-delimited list.
-Example: `arn:aws:iam::444455556666:policy/MyPolicy`.
+The IAM managed policy Amazon Resource Names (ARNs) to apply as session policies that further scope down the permissions of the issued access token, provided as a space-delimited list. Example: `arn:aws:iam::444455556666:policy/MyPolicy`.
+If provided with `grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer`, must match the assertion's `scope` claim.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 Required: No
@@ -76,6 +92,8 @@ Content-type: application/json
    "access\_token": "string",
    "expires\_in": number,
    "issued\_token\_type": "string",
+   "resource": "string",
+   "scope": "string",
    "token\_type": "string"
 }
 ```
@@ -88,19 +106,29 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [access\_token](#API_dataplane-signin_CreateOAuth2TokenWithTokenExchange_ResponseSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithTokenExchange-response-access_token"></a>
-Access token containing principal identity, resource scope, and session metadata. Use this token as a Bearer token when accessing the target resource.
+The access token containing principal identity, resource scope, and session metadata. Use this token as a Bearer token when accessing the target resource.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 
  ** [expires\_in](#API_dataplane-signin_CreateOAuth2TokenWithTokenExchange_ResponseSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithTokenExchange-response-expires_in"></a>
-Token lifetime in seconds. Value is the minimum of the subject token's validity and 1 hour (3600 seconds).
+The token lifetime in seconds. Value is the minimum of the provided token's validity and 1 hour (3600 seconds).
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 3600.
 
  ** [issued\_token\_type](#API_dataplane-signin_CreateOAuth2TokenWithTokenExchange_ResponseSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithTokenExchange-response-issued_token_type"></a>
-The token type of the issued token. Always `urn:ietf:params:oauth:token-type:access_token` as defined in RFC 8693 §2.2.1.
+The token type of the issued token. Returned when `grant_type=urn:ietf:params:oauth:grant-type:token-exchange`. Value is `urn:ietf:params:oauth:token-type:access_token` as defined in RFC 8693 §2.2.1.
 Type: String
 Pattern: `urn:ietf:params:oauth:token-type:access_token`
+
+ ** [resource](#API_dataplane-signin_CreateOAuth2TokenWithTokenExchange_ResponseSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithTokenExchange-response-resource"></a>
+The resource the access token is scoped to. Returned when `grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+
+ ** [scope](#API_dataplane-signin_CreateOAuth2TokenWithTokenExchange_ResponseSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithTokenExchange-response-scope"></a>
+The IAM managed policy ARNs applied as session policies, as a space-delimited list. Returned when `grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer` and the assertion has a scope.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 4096.
 
  ** [token\_type](#API_dataplane-signin_CreateOAuth2TokenWithTokenExchange_ResponseSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithTokenExchange-response-token_type"></a>
 The token type. Currently only supports `Bearer` as defined in RFC 6749.

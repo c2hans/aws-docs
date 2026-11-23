@@ -26,7 +26,7 @@ We recommend that you use techniques such as input validation and output encodin
 
 **Example index.js file – Logging**
 
-```
+```javascript
 exports.handler = async function(event, context) {
   console.log("ENVIRONMENT VARIABLES\n" + JSON.stringify(process.env, null, 2))
   console.info("EVENT\n" + JSON.stringify(event, null, 2))
@@ -110,7 +110,7 @@ The first example uses the `console.error` method to output a simple string.
 
 **Example Node.js logging code**
 
-```
+```Javascript
 export const handler = async (event) => {
   console.error("This is a warning message");
   ...
@@ -119,7 +119,7 @@ export const handler = async (event) => {
 
 **Example JSON log record**
 
-```
+```JSON
 {
     "timestamp":"2025-11-01T00:21:51.358Z",
     "level":"ERROR",
@@ -132,7 +132,7 @@ You can also output more complex structured log messages using either single or 
 
 **Example Node.js logging code**
 
-```
+```Javascript
 export const handler = async (event) => {
   console.log({data: 12.3, flag: false});
   ...
@@ -141,7 +141,7 @@ export const handler = async (event) => {
 
 **Example JSON log record**
 
-```
+```JSON
 {
     "timestamp": "2025-12-08T23:21:04.664Z",
     "level": "INFO",
@@ -157,7 +157,7 @@ In the next example, you again use the `console.log` method to create a log outp
 
 **Example Node.js logging code**
 
-```
+```Javascript
 export const handler = async (event) => {
   console.log('Some object - ', {data: 12.3, flag: false});
   ...
@@ -166,7 +166,7 @@ export const handler = async (event) => {
 
 **Example JSON log record**
 
-```
+```JSON
 {
     "timestamp": "2025-12-08T23:21:04.664Z",
     "level": "INFO",
@@ -181,7 +181,7 @@ The final example shows how error objects can be output to CloudWatch Logs using
 
 **Example Node.js logging code**
 
-```
+```Javascript
 export const handler = async (event) => {
   let e1 = new ReferenceError("some reference error");
   let e2 = new SyntaxError("some syntax error");
@@ -192,7 +192,7 @@ export const handler = async (event) => {
 
 **Example JSON log record**
 
-```
+```JSON
 {
     "timestamp": "2025-12-08T23:21:04.632Z",
     "level": "INFO",
@@ -239,7 +239,7 @@ To ensure that your functions' EMF logs continue to be properly parsed by CloudW
 
 **Example code emitting embedded metrics to `stdout`**
 
-```
+```Javascript
 process.stdout.write(JSON.stringify(
     {
         "_aws": {

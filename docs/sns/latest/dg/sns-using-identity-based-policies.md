@@ -105,7 +105,7 @@ In the future, Amazon SNS might add new actions that should logically be include
 **Example 1: Allow a group to create and manage topics**
 In this example, we create a policy that grants access to `CreateTopic`, `ListTopics`, `SetTopicAttributes`, and `DeleteTopic`.
 
-```
+```json
 {
   "Statement": [{
     "Effect": "Allow",
@@ -118,7 +118,7 @@ In this example, we create a policy that grants access to `CreateTopic`, `ListTo
 **Example 2: Allow the IT group to publish messages to a particular topic**
 In this example, we create a group for IT, and assign a policy that grants access to `Publish` on the specific topic of interest.
 
-```
+```json
 {
   "Statement": [{
     "Effect": "Allow",
@@ -131,7 +131,7 @@ In this example, we create a group for IT, and assign a policy that grants acces
 **Example 3: Give users in the AWS account ability to subscribe to topics**
 In this example, we create a policy that grants access to the `Subscribe`action, with string matching conditions for the `sns:Protocol` and `sns:Endpoint` policy keys.
 
-```
+```json
 {
   "Statement": [{
     "Effect": "Allow",
@@ -155,7 +155,7 @@ For this example, we create a group called WidgetCo that represents the partner 
 We then attach a policy that grants the group `Publish` access on the specific topic named *WidgetPartnerTopic*.
 We also want to prevent the WidgetCo group from doing anything else with topics, so we add a statement that denies permission to any Amazon SNS actions other than `Publish` on any topics other than WidgetPartnerTopic. This is necessary only if there's a broad policy elsewhere in the system that grants users wide access to Amazon SNS.
 
-```
+```json
 {
   "Statement": [{
       "Effect": "Allow",
@@ -178,7 +178,7 @@ Amazon SNS normalizes email addresses in endpoint access policies by removing le
 
 Example policy:
 
-```
+```json
 {
     "Condition": {
         "StringEquals": {
@@ -198,7 +198,7 @@ The following email addresses match the above condition:
 
 Amazon SNS normalizes HTTP/HTTPs endpoints in endpoint access policies by converting the scheme and hostname to lowercase while preserving the port, path, query parameters, and fragments exactly. Because of that, you must use lowercase scheme and hostname in your policy definitions to ensure proper matching of subscription requests.
 
-```
+```json
 {
     "Condition": {
         "StringEquals": {

@@ -30,7 +30,7 @@ To complete this tutorial, your user or role must have an attached [identity-bas
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -79,7 +79,7 @@ First, create a role that the pipeline will assume in order to access the OpenSe
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -116,7 +116,7 @@ For simplicity in this tutorial, we use a broad access policy. In production env
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -163,7 +163,7 @@ Make sure that the domain has the following domain-level access policy, which gr
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -240,7 +240,7 @@ First, get the ingestion URL from the **Pipeline settings** page:
 
 Then, ingest some sample data. The following request uses [awscurl](https://github.com/okigan/awscurl) to send a single log file to the pipeline:
 
-```
+```curl
 awscurl --service osis --region {{us-east-1}} \
     -X POST \
     -H "Content-Type: application/json" \
@@ -260,7 +260,7 @@ awscurl --service es --region {{us-east-1}} \
 
 **Sample response**:
 
-```
+```json
 {
    "took":984,
    "timed_out":false,

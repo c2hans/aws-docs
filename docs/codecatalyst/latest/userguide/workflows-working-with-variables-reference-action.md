@@ -53,7 +53,7 @@ You can omit {{action-group-name}} if there is no action group, or if the variab
 
    For example:
 
-   ```
+   ```yaml
    MySecondAction:
        Configuration:
          Steps:

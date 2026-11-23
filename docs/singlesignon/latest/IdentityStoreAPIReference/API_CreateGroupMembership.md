@@ -160,7 +160,7 @@ This example adds the specified user as a member of the specified group.
 #### Sample Request
 <a name="API_CreateGroupMembership_Example_1_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "GroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
@@ -173,7 +173,7 @@ This example adds the specified user as a member of the specified group.
 #### Sample Response
 <a name="API_CreateGroupMembership_Example_1_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "MembershipId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",

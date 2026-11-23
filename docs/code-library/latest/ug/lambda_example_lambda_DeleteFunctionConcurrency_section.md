@@ -29,7 +29,7 @@ For more information, see [Reserving Concurrency for a Lambda Function](https://
 **Tools for PowerShell V4**
 **Example 1: This examples removes the Function Concurrency of the Lambda Function.**
 
-```
+```powershell
 Remove-LMFunctionConcurrency -FunctionName "MylambdaFunction123"
 ```
 +  For API details, see [DeleteFunctionConcurrency](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -37,7 +37,7 @@ Remove-LMFunctionConcurrency -FunctionName "MylambdaFunction123"
 **Tools for PowerShell V5**
 **Example 1: This examples removes the Function Concurrency of the Lambda Function.**
 
-```
+```powershell
 Remove-LMFunctionConcurrency -FunctionName "MylambdaFunction123"
 ```
 +  For API details, see [DeleteFunctionConcurrency](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

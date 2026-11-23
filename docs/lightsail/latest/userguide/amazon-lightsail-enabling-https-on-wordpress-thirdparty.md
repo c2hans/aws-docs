@@ -215,7 +215,7 @@ Your domain's name servers point to the correct DNS provider. They must point to
 1. Use [NS Lookup](https://dnschecker.org/ns-lookup.php) on the *dnschecker.org* website. You can also verify from the command line:
    + For macOS and Linux, run the following command:
 
-     ```
+     ```bash
      $ dig NS {{example.com}} +short
      ```
    + For Windows, run the following command:
@@ -231,7 +231,7 @@ Your domain's name servers point to the correct DNS provider. They must point to
 1. Check [DNS Checker](https://dnschecker.org) on the *dnschecker.org* website. You can also verify from the command line:
    + For macOS and Linux, run the following command:
 
-     ```
+     ```bash
      $ dig {{example.com}} A +short
      $ dig {{example.com}} AAAA +short
      ```

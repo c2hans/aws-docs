@@ -31,7 +31,7 @@ To restrict permissions to only actions that are used for batch inference, attac
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -73,7 +73,7 @@ The following policy is an example that scopes down permissions for batch infere
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -106,7 +106,7 @@ If the S3 bucket in which you [uploaded your data for batch inference](batch-inf
 Foundation models in Amazon Bedrock are AWS-managed resources that cannot be used with IAM policy conditions requiring customer ownership. These models are owned and operated by AWS, and cannot be owned by individual customers. Any IAM policy condition that checks for customer-owned resources (such as conditions using resource tags, organization ID, or other ownership attributes) will fail when applied to foundation models, potentially blocking legitimate access to these services.
 For example, if your policy includes an `aws:ResourceOrgID` condition like this:
 
-  ```
+  ```json
   {
     "Condition": {
       "StringEqualsIgnoreCase": {

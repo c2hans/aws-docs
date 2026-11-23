@@ -19,7 +19,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```json
 {
   "[Domain](#cfn-cloudfront-distributiontenant-domainresult-domain)" : {{String}},
-  "[Status](#cfn-cloudfront-distributiontenant-domainresult-status)" : {{String}}
+  "[ServeOn](#cfn-cloudfront-distributiontenant-domainresult-serveon)" : {{String}},
+  "[Status](#cfn-cloudfront-distributiontenant-domainresult-status)" : {{String}},
+  "[StatusReason](#cfn-cloudfront-distributiontenant-domainresult-statusreason)" : {{String}},
+  "[StatusReasonCode](#cfn-cloudfront-distributiontenant-domainresult-statusreasoncode)" : {{String}}
 }
 ```
 
@@ -28,7 +31,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```yaml
   [Domain](#cfn-cloudfront-distributiontenant-domainresult-domain): {{String}}
+  [ServeOn](#cfn-cloudfront-distributiontenant-domainresult-serveon): {{String}}
   [Status](#cfn-cloudfront-distributiontenant-domainresult-status): {{String}}
+  [StatusReason](#cfn-cloudfront-distributiontenant-domainresult-statusreason): {{String}}
+  [StatusReasonCode](#cfn-cloudfront-distributiontenant-domainresult-statusreasoncode): {{String}}
 ```
 
 ## Properties
@@ -40,9 +46,30 @@ The specified domain.
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`ServeOn`  <a name="cfn-cloudfront-distributiontenant-domainresult-serveon"></a>
+Specifies which requests for this domain CloudFront routes to the distribution tenant. Valid values are:
++ `any` – CloudFront routes requests for this domain to the distribution tenant regardless of the IP address that they arrive on. This is the default if you don't specify a value.
++ `anycast-ip-list-only` – CloudFront routes requests for this domain to the distribution tenant only when they arrive on the Anycast static IPs of the distribution tenant's connection group. CloudFront treats requests that arrive on other IP addresses as requests for an unknown domain.
+*Required*: No
+*Type*: String
+*Allowed values*: `any | anycast-ip-list-only`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Status`  <a name="cfn-cloudfront-distributiontenant-domainresult-status"></a>
 Whether the domain is active or inactive.
 *Required*: No
 *Type*: String
 *Allowed values*: `active | inactive`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`StatusReason`  <a name="cfn-cloudfront-distributiontenant-domainresult-statusreason"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`StatusReasonCode`  <a name="cfn-cloudfront-distributiontenant-domainresult-statusreasoncode"></a>
+Property description not available.
+*Required*: No
+*Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

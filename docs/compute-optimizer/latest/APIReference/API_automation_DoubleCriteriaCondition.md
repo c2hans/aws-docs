@@ -10,9 +10,9 @@ Defines a condition for filtering based on double/floating-point numeric values 
 <a name="API_automation_DoubleCriteriaCondition_Contents"></a>
 
  ** comparison **   <a name="computeoptimizer-Type-automation_DoubleCriteriaCondition-comparison"></a>
-The comparison operator to use, such as equals, greater than, less than, etc.
+The comparison operator used to evaluate the attribute against the specified values. Only operators that begin with `Numeric` are valid. Any other operator returns an `InvalidParameterValueException`.
 Type: String
-Valid Values: `StringEquals | StringNotEquals | StringEqualsIgnoreCase | StringNotEqualsIgnoreCase | StringLike | StringNotLike | NumericEquals | NumericNotEquals | NumericLessThan | NumericLessThanEquals | NumericGreaterThan | NumericGreaterThanEquals`
+Valid Values: `StringEquals | StringNotEquals | StringEqualsIgnoreCase | StringNotEqualsIgnoreCase | StringLike | StringNotLike | NumericEquals | NumericNotEquals | NumericLessThan | NumericLessThanEquals | NumericGreaterThan | NumericGreaterThanEquals | StringEqualsIfExists | StringNotEqualsIfExists | StringEqualsIgnoreCaseIfExists | StringNotEqualsIgnoreCaseIfExists | StringLikeIfExists | StringNotLikeIfExists | NumericEqualsIfExists | NumericNotEqualsIfExists | NumericLessThanIfExists | NumericLessThanEqualsIfExists | NumericGreaterThanIfExists | NumericGreaterThanEqualsIfExists`
 Required: No
 
  ** values **   <a name="computeoptimizer-Type-automation_DoubleCriteriaCondition-values"></a>

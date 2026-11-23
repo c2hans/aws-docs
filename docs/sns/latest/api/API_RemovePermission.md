@@ -69,7 +69,7 @@ https://sns.us-east-2.amazonaws.com/?Action=RemovePermission
 #### Sample Response
 <a name="API_RemovePermission_Example_1_Response"></a>
 
-```
+```xml
 <RemovePermissionResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ResponseMetadata>
         <RequestId>d170b150-33a8-11df-995a-2d6fbe836cc1</RequestId>

@@ -80,7 +80,7 @@ Retrieves information about the communication requirements and options that are 
 #### ExportJobResponse schema
 <a name="apps-application-id-jobs-export-job-id-response-body-exportjobresponse-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "Id": "string",
@@ -108,7 +108,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-jobs-export-job-id-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

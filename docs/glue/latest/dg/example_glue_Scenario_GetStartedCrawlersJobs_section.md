@@ -19,7 +19,7 @@ For more information, see [Tutorial: Getting started with AWS Glue Studio](https
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 Create a class that wraps AWS Glue functions that are used in the scenario.
 
-```
+```csharp
 using System.Net;
 
 namespace GlueActions;
@@ -350,7 +350,7 @@ public class GlueWrapper
 ```
 Create a class that runs the scenario.
 
-```
+```csharp
 global using Amazon.Glue;
 global using GlueActions;
 global using Microsoft.Extensions.Configuration;
@@ -645,7 +645,7 @@ public class UiWrapper
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/glue#code-examples).
 
-```
+```cpp
 //! Scenario which demonstrates using AWS Glue to add a crawler and run a job.
 /*!
  \\sa runGettingStartedWithGlueScenario()
@@ -1393,7 +1393,7 @@ bool AwsDoc::Glue::getObjectFromBucket(const Aws::String &bucketName,
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -2074,7 +2074,7 @@ public class GlueScenario {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 Create and run a crawler that crawls a public Amazon Simple Storage Service (Amazon S3) bucket and generates a metadata database that describes the CSV-formatted data it finds.
 
-```
+```javascript
 const createCrawler = (name, role, dbName, tablePrefix, s3TargetPath) => {
   const client = new GlueClient({});
 
@@ -2178,7 +2178,7 @@ const makeStartCrawlerStep =
 ```
 List information about databases and tables in your AWS Glue Data Catalog.
 
-```
+```javascript
 const getDatabase = (name) => {
   const client = new GlueClient({});
 
@@ -2223,7 +2223,7 @@ const makeGetTablesStep =
 ```
 Create and run a job that extracts CSV data from the source Amazon S3 bucket, transforms it by removing and renaming fields, and loads JSON-formatted output into another Amazon S3 bucket.
 
-```
+```javascript
 const createJob = (name, role, scriptBucketName, scriptKey) => {
   const client = new GlueClient({});
 
@@ -2345,7 +2345,7 @@ const makeStartJobRunStep =
 ```
 List information about job runs and view some of the transformed data.
 
-```
+```javascript
 const getJobRuns = (jobName) => {
   const client = new GlueClient({});
   const command = new GetJobRunsCommand({
@@ -2413,7 +2413,7 @@ const makePickJobRunStep =
 ```
 Delete all resources created by the demo.
 
-```
+```javascript
 const deleteJob = (jobName) => {
   const client = new GlueClient({});
 
@@ -2636,7 +2636,7 @@ const cleanUpCrawlerStep = async (context) => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/glue#code-examples).
 
-```
+```kotlin
 suspend fun main(args: Array<String>) {
     val usage = """
         Usage:
@@ -2925,7 +2925,7 @@ suspend fun deleteCrawler(crawlerName: String) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
 namespace Glue;
 
 use Aws\Glue\GlueClient;
@@ -3259,7 +3259,7 @@ class GlueService extends \AwsUtilities\AWSServiceClass
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 Create a class that wraps AWS Glue functions used in the scenario.
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -3586,7 +3586,7 @@ class GlueWrapper:
 ```
 Create a class that runs the scenario.
 
-```
+```python
 class GlueCrawlerJobScenario:
     """
     Encapsulates a scenario that shows how to create an AWS Glue crawler and job and use
@@ -3894,7 +3894,7 @@ def main():
 ```
 Create an ETL script that is used by AWS Glue to extract, transform, and load data during job runs.
 
-```
+```python
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
@@ -3988,7 +3988,7 @@ job.commit()
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 Create a class that wraps AWS Glue functions used in the scenario.
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -4213,7 +4213,7 @@ end
 ```
 Create a class that runs the scenario.
 
-```
+```ruby
 class GlueCrawlerJobScenario
   def initialize(glue_client, glue_service_role, glue_bucket, logger)
     @glue_client = glue_client
@@ -4303,7 +4303,7 @@ end
 ```
 Create an ETL script that is used by AWS Glue to extract, transform, and load data during job runs.
 
-```
+```ruby
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
@@ -4397,7 +4397,7 @@ job.commit()
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 Create and run a crawler that crawls a public Amazon Simple Storage Service (Amazon S3) bucket and generates a metadata database that describes the CSV-formatted data it finds.
 
-```
+```rust
         let create_crawler = glue
             .create_crawler()
             .name(self.crawler())
@@ -4440,7 +4440,7 @@ Create and run a crawler that crawls a public Amazon Simple Storage Service (Ama
 ```
 List information about databases and tables in your AWS Glue Data Catalog.
 
-```
+```rust
         let database = glue
             .get_database()
             .name(self.database())
@@ -4463,7 +4463,7 @@ List information about databases and tables in your AWS Glue Data Catalog.
 ```
 Create and run a job that extracts CSV data from the source Amazon S3 bucket, transforms it by removing and renaming fields, and loads JSON-formatted output into another Amazon S3 bucket.
 
-```
+```rust
         let create_job = glue
             .create_job()
             .name(self.job())
@@ -4507,7 +4507,7 @@ Create and run a job that extracts CSV data from the source Amazon S3 bucket, tr
 ```
 Delete all resources created by the demo.
 
-```
+```rust
         glue.delete_job()
             .job_name(self.job())
             .send()
@@ -4560,7 +4560,7 @@ Delete all resources created by the demo.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 The `Package.swift` file.
 
-```
+```swift
 // swift-tools-version: 5.9
 //
 // The swift-tools-version declares the minimum version of Swift required to
@@ -4603,7 +4603,7 @@ let package = Package(
 ```
 The Swift code file, `entry.swift`.
 
-```
+```swift
 // An example that shows how to use the AWS SDK for Swift to demonstrate
 // creating and using crawlers and jobs using AWS Glue.
 //

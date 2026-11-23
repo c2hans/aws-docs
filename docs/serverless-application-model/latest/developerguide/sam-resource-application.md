@@ -17,7 +17,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-resource-application-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Serverless::Application
 Properties:
   [Location](#sam-application-location): {{String | ApplicationLocationObject}}
@@ -93,7 +93,7 @@ Application that uses a template from the Serverless Application Repository
 #### YAML
 <a name="sam-resource-application--examples--sar-application--yaml"></a>
 
-```
+```yaml
 Type: AWS::Serverless::Application
 Properties:
   Location:
@@ -112,7 +112,7 @@ Application from an S3 url
 #### YAML
 <a name="sam-resource-application--examples--normal-application--yaml"></a>
 
-```
+```yaml
 Type: AWS::Serverless::Application
 Properties:
   Location: https://s3.amazonaws.com/sam-s3-demo-bucket/template.yaml

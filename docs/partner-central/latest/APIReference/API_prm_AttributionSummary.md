@@ -29,6 +29,16 @@ Type: String
 Valid Values: `AWS | Sandbox`
 Required: No
 
+ ** Context **   <a name="AWSPartnerCentral-Type-prm_AttributionSummary-Context"></a>
+The key-value context attributes associated with the revenue attribution.
+Type: String to string map
+Map Entries: Minimum number of 0 items. Maximum number of 10 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Key Pattern: `[\x21-\x7E]+`
+Value Length Constraints: Minimum length of 1. Maximum length of 1024.
+Value Pattern: `[\x20-\x7E]+`
+Required: No
+
  ** CreatedDate **   <a name="AWSPartnerCentral-Type-prm_AttributionSummary-CreatedDate"></a>
 The date when the revenue attribution was created.
 Type: Timestamp

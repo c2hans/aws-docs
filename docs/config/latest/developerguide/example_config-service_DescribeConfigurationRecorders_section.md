@@ -45,7 +45,7 @@ For more information, see [Working with the configuration recorder](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example returns the details of configuration recorders.**
 
-```
+```powershell
 Get-CFGConfigurationRecorder | Format-List
 ```
 **Output:**
@@ -60,7 +60,7 @@ RoleARN        : arn:aws:iam::123456789012:role/aws-service-role/config.amazonaw
 **Tools for PowerShell V5**
 **Example 1: This example returns the details of configuration recorders.**
 
-```
+```powershell
 Get-CFGConfigurationRecorder | Format-List
 ```
 **Output:**

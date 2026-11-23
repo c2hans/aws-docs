@@ -218,3 +218,5 @@ To access a resource from another VPC in the same account as the resource config
 <a name="resource-configuration-monitoring"></a>
 
 You can enable monitoring logs on your resource configuration. You can choose a destination to send the logs to.
+
+VPC Lattice also publishes Amazon CloudWatch metrics for each resource configuration to the `AWS/VpcLattice` namespace. You can view metrics for the resource configuration overall, per Availability Zone, or per association (service network resource association or VPC endpoint association). For a group resource configuration, the group's metrics are the sum of the metrics of its child resource configurations, and each child resource configuration also has its own metrics. For more information, see [Resource gateway and resource configuration metrics](https://docs.aws.amazon.com/vpc-lattice/latest/ug/monitoring-cloudwatch.html#resource-gateway-resource-configuration-metrics) in the *Amazon VPC Lattice User Guide*.

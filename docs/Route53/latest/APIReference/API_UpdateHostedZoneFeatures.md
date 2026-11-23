@@ -4,9 +4,11 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateHo
 
 # UpdateHostedZoneFeatures
 
-Updates the features configuration for a hosted zone. This operation allows you to enable or disable specific features for your hosted zone, such as accelerated recovery.
+Updates the features configuration for a hosted zone. This operation allows you to enable or disable specific features for your hosted zone, such as accelerated recovery and public DNS fallback.
 
 Accelerated recovery enables you to update DNS records in your public hosted zone even when the us-east-1 region is unavailable.
+
+Public DNS fallback enables Route 53 to retry a query against public DNS when a query for a domain name in a private hosted zone matches no existing name (`NXDOMAIN`). Fallback does not occur when the name exists but has no record of the requested type. Public DNS fallback is supported only for private hosted zones.
 
 ## Request Syntax
 <a name="API_UpdateHostedZoneFeatures_RequestSyntax"></a>
@@ -15,7 +17,15 @@ Accelerated recovery enables you to update DNS records in your public hosted zon
 POST /2013-04-01/hostedzone/{{Id}}/features HTTP/1.1
 <?xml version="1.0" encoding="UTF-8"?>
 <UpdateHostedZoneFeaturesRequest xmlns="https://route53.amazonaws.com/doc/2013-04-01/">
+   <ChangeGuardrails>
+      <ChangeGuardrail>
+         <Name>{{string}}</Name>
+         <Status>{{string}}</Status>
+      </ChangeGuardrail>
+   </ChangeGuardrails>
+   <DryRun>{{boolean}}</DryRun>
    <EnableAcceleratedRecovery>{{boolean}}</EnableAcceleratedRecovery>
+   <EnablePublicDNSFallback>{{boolean}}</EnablePublicDNSFallback>
 </UpdateHostedZoneFeaturesRequest>
 ```
 
@@ -38,8 +48,30 @@ The request accepts the following data in XML format.
 Root level tag for the UpdateHostedZoneFeaturesRequest parameters.
 Required: Yes
 
+ ** [ChangeGuardrails](#API_UpdateHostedZoneFeatures_RequestSyntax) **   <a name="Route53-UpdateHostedZoneFeatures-request-ChangeGuardrails"></a>
+Specify the Change Guardrails to turn on or off for the hosted zone. Each entry specifies the name of a guardrail and one of the following statuses:
++  `ENABLED`: Turns on the guardrail.
++  `DISABLED`: Turns off the guardrail.
+Guardrails that aren't in the request keep their current status.
+You can turn on an optional guardrail only if the tier of the hosted zone offers it. You can't turn off a guardrail that the tier includes, such as `NS_FORMAT_CHECK`. In either case, Route 53 returns an `InvalidInput` error.
+Type: Array of [ChangeGuardrail](API_ChangeGuardrail.md) objects
+Array Members: Minimum number of 1 item.
+Required: No
+
+ ** [DryRun](#API_UpdateHostedZoneFeatures_RequestSyntax) **   <a name="Route53-UpdateHostedZoneFeatures-request-DryRun"></a>
+Specifies whether to validate the request without changing any features. Route 53 returns the same errors as for a real request, but doesn't change the hosted zone. The default is `false`.
+Type: Boolean
+Required: No
+
  ** [EnableAcceleratedRecovery](#API_UpdateHostedZoneFeatures_RequestSyntax) **   <a name="Route53-UpdateHostedZoneFeatures-request-EnableAcceleratedRecovery"></a>
 Specifies whether to enable accelerated recovery for the hosted zone. Set to `true` to enable accelerated recovery, or `false` to disable it.
+Type: Boolean
+Required: No
+
+ ** [EnablePublicDNSFallback](#API_UpdateHostedZoneFeatures_RequestSyntax) **   <a name="Route53-UpdateHostedZoneFeatures-request-EnablePublicDNSFallback"></a>
+Specifies whether to enable public DNS fallback for the hosted zone. Set to `true` to enable public DNS fallback, or `false` to disable it.
+Public DNS fallback applies to the entire hosted zone and to all VPCs that are associated with it. To check whether a change has propagated, call `GetHostedZone` and review `PublicDNSFallbackStatus` in the response.
+Public DNS fallback is supported only for private hosted zones.
 Type: Boolean
 Required: No
 

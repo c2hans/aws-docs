@@ -37,7 +37,7 @@ For more information, see [Create a Lambda function with the console](https://do
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/lambda#code-examples).
 
-```
+```kotlin
 suspend fun main(args: Array<String>) {
     val usage = """
         Usage:
@@ -241,7 +241,7 @@ The following code example shows how to use `CreateFunction`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/lambda#code-examples).
 
-```
+```kotlin
 suspend fun createNewFunction(
     myFunctionName: String,
     s3BucketName: String,
@@ -284,7 +284,7 @@ The following code example shows how to use `DeleteFunction`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/lambda#code-examples).
 
-```
+```kotlin
 suspend fun delLambdaFunction(myFunctionName: String) {
     val request =
         DeleteFunctionRequest {
@@ -307,7 +307,7 @@ The following code example shows how to use `Invoke`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/lambda#code-examples).
 
-```
+```kotlin
 suspend fun invokeFunction(functionNameVal: String) {
     val json = """{"inputValue":"1000"}"""
     val byteArray = json.trimIndent().encodeToByteArray()

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-iam-users-rol
 
 You create users as IAM users, or in roles appropriate to your use case. You then assign the following policy to them. This ensures that you have the necessary permissions for the AWS SDK embedded in your server application. In turn, that allows you to perform lifecycle operations on the meeting and attendee resources.
 
-```
+```json
    // Policy ARN:     arn:aws:iam::aws:policy/AmazonChimeSDK
     // Description:    Provides access to Amazon Chime SDK operations
     {

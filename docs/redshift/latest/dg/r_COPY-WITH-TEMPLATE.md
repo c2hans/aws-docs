@@ -57,7 +57,7 @@ The name of the template to use in COPY.
 
 The following examples show how to create a template and use it in COPY commands:
 
-```
+```sql
 CREATE TEMPLATE public.test_template FOR COPY AS
 CSV DELIMITER '|' IGNOREHEADER 1 MAXERROR 100;
 
@@ -69,7 +69,7 @@ USING TEMPLATE public.test_template;
 
 When a parameter exists in both the template and the command, the command parameter takes precedence. In this example, if the template `public.test_template` contains `DELIMITER '|'` but the COPY command specifies `DELIMITER ','`, the comma delimiter (`,`) from the command will be used instead of the pipe delimiter (`|`) from the template.
 
-```
+```sql
 COPY public.target_table
 FROM 's3://amzn-s3-demo-bucket/staging-folder'
 IAM_ROLE 'arn:aws:iam::123456789012:role/MyLoadRoleName'

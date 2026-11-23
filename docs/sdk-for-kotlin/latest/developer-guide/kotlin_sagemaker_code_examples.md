@@ -28,7 +28,7 @@ The following code example shows how to get started using SageMaker AI.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sagemaker#code-examples).
 
-```
+```kotlin
 suspend fun listBooks() {
     SageMakerClient.fromEnvironment { region = "us-west-2" }.use { sageMakerClient ->
         val response = sageMakerClient.listNotebookInstances(ListNotebookInstancesRequest {})
@@ -51,7 +51,7 @@ The following code example shows how to use `CreatePipeline`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```kotlin
 // Create a pipeline from the example pipeline JSON.
 suspend fun setupPipeline(filePath: String?, roleArnVal: String?, functionArnVal: String?, pipelineNameVal: String?) {
     println("Setting up the pipeline.")
@@ -94,7 +94,7 @@ The following code example shows how to use `DeletePipeline`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```kotlin
 // Delete a SageMaker pipeline by name.
 suspend fun deletePipeline(pipelineNameVal: String) {
     val pipelineRequest = DeletePipelineRequest {
@@ -117,7 +117,7 @@ The following code example shows how to use `DescribePipelineExecution`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```kotlin
 suspend fun waitForPipelineExecution(executionArn: String?) {
     var status: String
     var index = 0
@@ -147,7 +147,7 @@ The following code example shows how to use `StartPipelineExecution`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```kotlin
 // Start a pipeline run with job configurations.
 suspend fun executePipeline(bucketName: String, queueUrl: String?, roleArn: String?, pipelineNameVal: String): String? {
     println("Starting pipeline execution.")
@@ -250,7 +250,7 @@ For more information, see [Create and run SageMaker pipelines using AWS SDKs on 
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```kotlin
 val DASHES = String(CharArray(80)).replace("\u0000", "-")
 private var eventSourceMapping = ""
 

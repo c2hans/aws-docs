@@ -9,10 +9,9 @@ The built-in stored procedures described in this topic manage databases for Amaz
 These stored procedures are used in a variety of tasks. This list isn't exhaustive.
 + [Common tasks for databases](db2-managing-databases.md)
 + [Creating databases with EBCDIC collation](db2-ebcdic.md)
-+ [Collecting information about databases](db2-supported-parameters.md#db2-modifying-parameters-db2-commands)
++ [Collecting information about databases](db2-managing-databases.md#db2-collecting-info-db)
 + [Modifying database configuration parameters](db2-supported-parameters.md#db2-modifying-parameters-db2-commands)
-+ [Migrating from Linux to Linux](db2-one-time-migration-linux.md)
-+ [Migrating from Linux to Linux with near-zero downtime](db2-near-zero-downtime-migration.md)
++ [Migrating from Linux to Linux](db2-migration-linux-linux.md)
 
 Refer to the following built-in stored procedures for information about their syntax, parameters, usage notes, and examples.
 
@@ -933,7 +932,7 @@ The timestamp is included in the backup file name. For example, `20230615010101`
 
 {{backup\_type}}
 The type of backup. The data type is `varchar`. Valid values: `OFFLINE`, `ONLINE`.
-Use `ONLINE` for near-zero downtime migrations. For more information, see [Migrating from Linux to Linux with near-zero downtime for Amazon RDS for Db2](db2-near-zero-downtime-migration.md).
+Use `ONLINE` for near-zero downtime migrations. For more information, see [Migrating from Linux to Linux for Amazon RDS for Db2](db2-migration-linux-linux.md).
 
 ### Usage notes
 <a name="db2-sp-restore-database-usage-notes"></a>

@@ -66,7 +66,7 @@ You can use the following AWS CLI commands or API operations to enable trusted s
 
   You can run the following command to enable Reachability Analyzer as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations enable-aws-service-access \
       --service-principal reachabilityanalyzer.networkinsights.amazonaws.com
   ```

@@ -19,7 +19,7 @@ A: Start by creating a security profile behavior with low thresholds and attach 
 Q: I created a behavior, but it is not triggering a violation when I expect it to. How should I fix it?
 A: When you define a behavior, you are specifying how you expect your device to behave normally. For example, if you have a security camera that only connects to one central server on TCP port 8888, you don't expect it to make any other connections. To be alerted if the camera makes a connection on another port, you define a behavior like this:
 
-```
+```JSON
 {
   "name": "Listening TCP Ports",
   "metric": "aws:listening-tcp-ports",
@@ -96,7 +96,7 @@ A: A role that allows AWS IoT Device Defender to publish alerts on an alert targ
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -117,7 +117,7 @@ A: A role that allows AWS IoT Device Defender to publish alerts on an alert targ
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -140,21 +140,21 @@ Q: My metric report submission with a custom metric type `number` fails with the
 A: The type `number` only takes a single metric value as an input, but while submitting the metrics value in the DeviceMetrics report, it must be passed as an array with a single value. Make sure you're submitting the metric value as an array.
 Error payload:
 
-```
+```JSON
 {"header":{"report_id":12334567,"version":"1.0"},"metrics":{"network_stats":{"bytes_in":30680,"bytes_out":10652,"packets_in":113,"packets_out":118}},"custom_metrics":{"my_custom_metric":{"number":0}}}
 ```
 Error message:
 
-```
+```JSON
 {"thingName":"myThing","status":"REJECTED","statusDetails":{"ErrorCode":"InvalidPayload","ErrorMessage":"Malformed metrics report"},"timestamp":1635802047699}
 ```
 No-error payload:
 
-```
+```JSON
 {"header":{"report_id":12334567,"version":"1.0"},"metrics":{"network_stats":{"bytes_in":30680,"bytes_out":10652,"packets_in":113,"packets_out":118}},"custom_metrics":{"my_custom_metric":[{"number":0}]}}
 ```
 Response:
 
-```
+```JSON
 {"thingName":"myThing","12334567":1635800375,"status":"ACCEPTED","timestamp":1635801636023}
 ```

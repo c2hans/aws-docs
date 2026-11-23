@@ -48,14 +48,14 @@ To view recommender metrics in the console, you navigate to the details page for
 
 The following code shows how to get metrics for a recommender with the AWS CLI.
 
-```
+```json
 aws personalize describe-recommender \
 --recommender-arn {{recommender arn}}
 ```
 
 The following is an example of the metrics output from a recommender created for the *Top picks for you* use case for the VIDEO\_ON\_DEMAND domain.
 
-```
+```json
 {
     "recommender": {
         "recommenderArn": "arn:aws:personalize:region:acct-id:recommender/recommenderName",
@@ -85,7 +85,7 @@ The following is an example of the metrics output from a recommender created for
 
 The following code shows how to get metrics for a recommender with the AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 
 personalize = boto3.client('personalize')
@@ -98,7 +98,7 @@ print(response['recommender']['modelMetrics'])
 
 The following is an example the metrics output from a recommender created for the *Top picks for you* use case for the VIDEO\_ON\_DEMAND domain.
 
-```
+```json
 {
     "recommender": {
         "recommenderArn": "arn:aws:personalize:region:acct-id:recommender/recommenderName",

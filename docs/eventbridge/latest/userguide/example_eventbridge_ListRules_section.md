@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 List all of the rules for an event bus.
 
-```
+```csharp
     /// <summary>
     /// List the rules on an event bus.
     /// </summary>
@@ -109,7 +109,7 @@ For more information, see [Rules in Amazon EventBridge](https://docs.aws.amazon.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 Enable a rule by using its rule name.
 
-```
+```java
     public static void listRules(EventBridgeClient eventBrClient) {
         try {
             ListRulesRequest rulesRequest = ListRulesRequest.builder()
@@ -139,7 +139,7 @@ Enable a rule by using its rule name.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 suspend fun listRules() {
     val rulesRequest =
         ListRulesRequest {

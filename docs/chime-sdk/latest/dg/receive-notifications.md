@@ -8,7 +8,7 @@ Along with the channel message push notification title and body, the Amazon Chim
 
 The following examples shows a typical push notification payload.
 
-```
+```json
 {
     "pinpoint.openApp=true",
     "pinpoint.notification.title={{PushNotificationTitle}}",

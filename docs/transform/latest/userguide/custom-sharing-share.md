@@ -9,7 +9,7 @@ You can share a TD with the AWS Transform CLI, the AWS RAM console, or the AWS C
 ## Share with the AWS Transform CLI
 <a name="custom-sharing-share-cli"></a>
 
-```
+```bash
 atx custom def share create -n {{td-name}} --target {{target}} [--managed-policy {{name}}]
 ```
 
@@ -28,7 +28,7 @@ All share commands accept `--json`. None of them takes `--region`.
 
 The following example shares a TD with an account outside your organization:
 
-```
+```bash
 atx custom def share create -n java17-upgrade --target 444455556666
 ```
 
@@ -45,7 +45,7 @@ The consumer has 12 hours to accept. After that, the invitation expires. To invi
 
 The following example shares a TD with an OU, with a permission that lets runs use your lessons:
 
-```
+```bash
 atx custom def share create -n java17-upgrade \
   --target arn:aws:organizations::111122223333:ou/o-a1b2c3d4e5/ou-ab12-34cd56ef \
   --managed-policy ExecuteWithLearnings
@@ -98,7 +98,7 @@ In the AWS RAM console, shared TDs appear with the resource type `transform-cust
 
 The following AWS CLI command shares a TD with one account, with the `Execute` permission:
 
-```
+```bash
 aws ram create-resource-share \
   --region us-east-1 \
   --name java17-upgrade-share \

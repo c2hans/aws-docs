@@ -42,7 +42,7 @@ For more information, see [Creating a Role to Delegate Permissions to an AWS Ser
 The following example permissions policy grants read access to an input folder in an Amazon S3 bucket. It grants read and write access to an output bucket.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -78,7 +78,7 @@ The following trust policy allows Amazon Translate to assume the IAM role that t
 We recommend that you verify the AWS account that is using the trust policy, to mitigate the [ Confused deputy](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) problem. This example uses the **aws:SourceArn** and **aws:SourceAccount** condition keys to verify the source account. Enter the AWS account that submits the batch translation job.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -116,7 +116,7 @@ The key policy allows the service role to perform the AWS KMS operations that ar
 
 **Example KMS key policy statement**
 
-```
+```json
 {
   "Effect": "Allow",
   "Principal":
@@ -153,7 +153,7 @@ To update your service role, attach a policy that allows it to perform the neces
 
 **Example IAM policy to grant access to a KMS key in a different account**
 
-```
+```JSON
 {
   "Effect": "Allow",
   "Action":
@@ -172,7 +172,7 @@ To update your KMS key policy, add the service role and admin user as principals
 
 **Example KMS key policy statement to allow an IAM role to use the key**
 
-```
+```json
 {
   "Effect": "Allow",
   "Principal":

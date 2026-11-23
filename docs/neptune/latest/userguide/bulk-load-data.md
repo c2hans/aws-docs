@@ -138,7 +138,7 @@ Amazon Neptune is available in the following AWS Regions:
 ------
 #### [ SDK ]
 
-   ```
+   ```python
    import boto3
    from botocore.config import Config
 
@@ -185,8 +185,7 @@ Amazon Neptune is available in the following AWS Regions:
          }'
    ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+   To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -206,6 +205,8 @@ This example assumes that your AWS credentials are configured in your environmen
            "dependencies" : ["{{load_A_id}}", "{{load_B_id}}"]
          }'
    ```
+
+   To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -257,7 +258,7 @@ The `dependencies` parameter makes execution of the load request contingent on t
 ------
 #### [ SDK ]
 
-   ```
+   ```python
    import boto3
    from botocore.config import Config
 
@@ -283,8 +284,7 @@ The `dependencies` parameter makes execution of the load request contingent on t
      --service neptune-db
    ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+   To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -292,6 +292,8 @@ This example assumes that your AWS credentials are configured in your environmen
    ```
    curl -G 'https://{{your-neptune-endpoint}}:{{port}}/loader/{{ef478d76-d9da-4d94-8ff1-08d9d4863aa5}}'
    ```
+
+   To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -315,7 +317,7 @@ This example assumes that your AWS credentials are configured in your environmen
 ------
 #### [ SDK ]
 
-   ```
+   ```python
    import boto3
    from botocore.config import Config
 
@@ -342,8 +344,7 @@ This example assumes that your AWS credentials are configured in your environmen
      -X DELETE
    ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+   To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -351,6 +352,8 @@ This example assumes that your AWS credentials are configured in your environmen
    ```
    curl -X DELETE 'https://{{your-neptune-endpoint}}:{{port}}/loader/{{ef478d76-d9da-4d94-8ff1-08d9d4863aa5}}'
    ```
+
+   To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 

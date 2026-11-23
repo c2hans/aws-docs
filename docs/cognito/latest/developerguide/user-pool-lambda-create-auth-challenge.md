@@ -27,7 +27,7 @@ The request that Amazon Cognito passes to this Lambda function is a combination 
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "request": {
         "userAttributes": {
@@ -107,7 +107,7 @@ For the fourth challenge, this function returns a security question. Your applic
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const handler = async (event) => {
   if (event.request.challengeName !== "CUSTOM_CHALLENGE") {
     return event;

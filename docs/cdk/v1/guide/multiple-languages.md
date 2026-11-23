@@ -23,7 +23,7 @@ For more details on working with the AWS CDK in its supported programming langua
 
 TypeScript supports importing either an entire namespace, or individual objects from a namespace. Each namespace includes constructs and other classes for use with a given AWS service.
 
-```
+```javascript
 // Import namespace as s3 into current namespace
 import * as s3 from '@aws-cdk-lib/aws-s3';
 
@@ -53,7 +53,7 @@ const bucket = Bucket(...);
 
 Like TypeScript, Python supports namespaced module imports and selective imports. Module names in Python look like **aws\_cdk.***xxx*, where *xxx* represents an AWS service name, such as **s3** for Amazon S3 (we'll use Amazon S3 for our examples).
 
-```
+```python
 # Import entire module as s3 into current namespace
 import aws_cdk.aws_s3 as s3
 
@@ -77,7 +77,7 @@ Java's imports work differently from TypeScript's. Each import statement imports
 
 Packages are named like `software.amazon.awscdk.services.xxx` for AWS Construct Library packages (the core module is `software.amazon.awscdk.core`). The Maven group ID for AWS CDK packages is `software.amazon.awscdk`.
 
-```
+```java
 // Make all Amazon S3 construct library classes available
 import software.amazon.awscdk.services.s3.*;
 
@@ -108,7 +108,7 @@ In C\#, you import types with the `using` directive. There are two styles, which
 
 Packages are named like `Amazon.CDK.AWS.xxx` for AWS Construct Library packages (the core module is `Amazon.CDK`).
 
-```
+```java
 // Make all Amazon S3 construct library classes available
 using Amazon.CDK.AWS.S3;
 
@@ -138,7 +138,7 @@ AWS CDK construct classes have the same name in all supported languages. Most la
 ------
 #### [ TypeScript/JavaScript ]
 
-```
+```javascript
 // Instantiate default Bucket
 const bucket = new s3.Bucket(this, 'MyBucket');
 
@@ -164,7 +164,7 @@ If a props value is itself a bundle of attributes, it is represented by a class 
 
 In Python, the current instance is passed to methods as the first argument, which is named `self` by convention.
 
-```
+```python
 # Instantiate default Bucket
 bucket = s3.Bucket(self, "MyBucket")
 
@@ -185,7 +185,7 @@ Each `XxxxProps` class has a builder, and there is also a convenient builder for
 
 Props are named the same as in TypeScript, using `camelCase`.
 
-```
+```java
 // Instantiate default Bucket
 Bucket bucket = Bucket(self, "MyBucket");
 
@@ -210,7 +210,7 @@ Props are named similarly to TypeScript, except using `PascalCase`.
 
 It is convenient to use the `var` keyword when instantiating a construct, so you don't need to type the class name twice. However, your local code style guide may vary.
 
-```
+```csharp
 // Instantiate default Bucket
 var bucket = Bucket(self, "MyBucket");
 
@@ -238,7 +238,7 @@ It is common to refer to attributes or properties of constructs and other AWS CD
 
 Names are `camelCase`.
 
-```
+```javascript
 bucket.bucketArn
 ```
 
@@ -249,7 +249,7 @@ bucket.bucketArn
 
 Names are `snake_case`.
 
-```
+```python
 bucket.bucket_arn
 ```
 
@@ -258,7 +258,7 @@ bucket.bucket_arn
 
 A getter method is provided for each property; these names are `camelCase`.
 
-```
+```java
 bucket.getBucketArn()
 ```
 
@@ -267,7 +267,7 @@ bucket.getBucketArn()
 
 Names are `PascalCase`.
 
-```
+```javascript
 bucket.BucketArn
 ```
 
@@ -278,7 +278,7 @@ bucket.BucketArn
 
 Enum constants are scoped to a class, and have uppercase names with underscores in all languages (sometimes referred to as `SCREAMING_SNAKE_CASE`). Since class names also use the same casing in all supported languages, qualified enum names are also the same.
 
-```
+```javascript
 s3.BucketEncryption.KMS_MANAGED
 ```
 
@@ -293,7 +293,7 @@ The AWS CDK uses TypeScript object interfaces to indicate that a class implement
 **Note**
 JavaScript doesn't have an interface feature. You can ignore the `implements` keyword and the class names following it.
 
-```
+```javascript
 import { IAspect, IConstruct } from '@aws-cdk/core';
 
 class MyAspect implements IAspect {
@@ -310,7 +310,7 @@ class MyAspect implements IAspect {
 
 Python doesn't have an interface feature. However, for the AWS CDK you can indicate interface implementation by decorating your class with `@jsii.implements(interface)`.
 
-```
+```python
 from aws_cdk.core import IAspect, IConstruct
 import jsii
 
@@ -323,7 +323,7 @@ class MyAspect():
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awscdk.core.IAspect;
 import software.amazon.awscdk.core.IConstruct;
 
@@ -337,7 +337,7 @@ public class MyAspect implements IAspect {
 ------
 #### [ C\# ]
 
-```
+```csharp
 using Amazon.CDK;
 
 public class MyAspect : IAspect

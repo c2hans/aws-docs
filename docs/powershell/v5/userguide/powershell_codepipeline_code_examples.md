@@ -30,7 +30,7 @@ The following code example shows how to use `Confirm-CPJob`.
 **Tools for PowerShell V5**
 **Example 1: This example gets the status of the specified job.**
 
-```
+```powershell
 Confirm-CPJob -JobId f570dc12-5ef3-44bc-945a-6e133EXAMPLE -Nonce 3
 ```
 **Output:**
@@ -50,7 +50,7 @@ The following code example shows how to use `Disable-CPStageTransition`.
 **Tools for PowerShell V5**
 **Example 1: This example disables the inbound transition for the specified stage in the specified pipeline.**
 
-```
+```powershell
 Disable-CPStageTransition -PipelineName CodePipelineDemo -Reason "Disabling temporarily." -StageName Beta -TransitionType Inbound
 ```
 +  For API details, see [DisableStageTransition](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -63,7 +63,7 @@ The following code example shows how to use `Enable-CPStageTransition`.
 **Tools for PowerShell V5**
 **Example 1: This example enables the inbound transition for the specified stage in the specified pipeline.**
 
-```
+```powershell
 Enable-CPStageTransition -PipelineName CodePipelineDemo -StageName Beta -TransitionType Inbound
 ```
 +  For API details, see [EnableStageTransition](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -76,7 +76,7 @@ The following code example shows how to use `Get-CPActionType`.
 **Tools for PowerShell V5**
 **Example 1: This example gets information about all available actions for the specified owner.**
 
-```
+```powershell
 ForEach ($actionType in (Get-CPActionType -ActionOwnerFilter AWS)) {
   Write-Output ("For Category = " + $actionType.Id.Category + ", Owner = " + $actionType.Id.Owner + ", Provider = " + $actionType.Id.Provider + ", Version = " + $actionType.Id.Version + ":")
   Write-Output ("  ActionConfigurationProperties:")
@@ -159,7 +159,7 @@ The following code example shows how to use `Get-CPActionableJobList`.
 **Tools for PowerShell V5**
 **Example 1: This example gets information about all actionable jobs for the specified action category, owner, provider, version, and query parameters.**
 
-```
+```powershell
 Get-CPActionableJobList -ActionTypeId_Category Build -ActionTypeId_Owner Custom -ActionTypeId_Provider MyCustomProviderName -ActionTypeId_Version 1 -QueryParam @{"ProjectName" = "MyProjectName"}
 ```
 **Output:**
@@ -179,7 +179,7 @@ The following code example shows how to use `Get-CPJobDetail`.
 **Tools for PowerShell V5**
 **Example 1: This example gets general information about the specified job.**
 
-```
+```powershell
 Get-CPJobDetail -JobId f570dc12-5ef3-44bc-945a-6e133EXAMPLE
 ```
 **Output:**
@@ -191,7 +191,7 @@ AccountId       Data                                 Id
 ```
 **Example 2: This example gets detailed information about the specified job.**
 
-```
+```powershell
 $jobDetails = Get-CPJobDetail -JobId f570dc12-5ef3-44bc-945a-6e133EXAMPLE
 Write-Output ("For Job " + $jobDetails.Id + ":")
 Write-Output ("  AccountId = " + $jobDetails.AccountId)
@@ -258,7 +258,7 @@ The following code example shows how to use `Get-CPPipeline`.
 **Tools for PowerShell V5**
 **Example 1: This example gets general information about the specified pipeline.**
 
-```
+```powershell
 Get-CPPipeline -Name CodePipelineDemo -Version 1
 ```
 **Output:**
@@ -272,7 +272,7 @@ Version       : 1
 ```
 **Example 2: This example gets detailed information about the specified pipeline.**
 
-```
+```powershell
 $pipeline = Get-CPPipeline -Name CodePipelineDemo
 Write-Output ("Name = " + $pipeline.Name)
 Write-Output ("RoleArn = " + $pipeline.RoleArn)
@@ -380,7 +380,7 @@ The following code example shows how to use `Get-CPPipelineList`.
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of available pipelines.**
 
-```
+```powershell
 Get-CPPipelineList
 ```
 **Output:**
@@ -401,7 +401,7 @@ The following code example shows how to use `Get-CPPipelineState`.
 **Tools for PowerShell V5**
 **Example 1: This example gets general information about the stages for the specified pipeline.**
 
-```
+```powershell
 Get-CPPipelineState -Name CodePipelineDemo
 ```
 **Output:**
@@ -415,7 +415,7 @@ Updated         : 8/13/2015 10:17:54 PM
 ```
 **Example 2: This example gets detailed information about the state of the specified pipeline.**
 
-```
+```powershell
 ForEach ($stageState in (Get-CPPipelineState -Name $arg).StageStates) {
   Write-Output ("For " + $stageState.StageName + ":")
   Write-Output ("  InboundTransitionState:")
@@ -555,7 +555,7 @@ The following code example shows how to use `New-CPCustomActionType`.
 **Tools for PowerShell V5**
 **Example 1: This example creates a new custom action with the specified properties.**
 
-```
+```powershell
 New-CPCustomActionType -Category Build -ConfigurationProperty @{"Description" = "The name of the build project must be provided when this action is added to the pipeline."; "Key" = $True; "Name" = "ProjectName"; "Queryable" = $False; "Required" = $True; "Secret" = $False; "Type" = "String"} -Settings_EntityUrlTemplate "https://my-build-instance/job/{Config:ProjectName}/" -Settings_ExecutionUrlTemplate "https://my-build-instance/job/mybuildjob/lastSuccessfulBuild{ExternalExecutionId}/" -InputArtifactDetails_MaximumCount 1 -OutputArtifactDetails_MaximumCount 1 -InputArtifactDetails_MinimumCount 0 -OutputArtifactDetails_MinimumCount 0 -Provider "MyBuildProviderName" -Version 1
 ```
 **Output:**
@@ -577,7 +577,7 @@ The following code example shows how to use `New-CPPipeline`.
 **Tools for PowerShell V5**
 **Example 1: This examples creates a new pipeline with the specified settings.**
 
-```
+```powershell
 $pipeline = New-Object Amazon.CodePipeline.Model.PipelineDeclaration
 
 $sourceStageAction = New-Object Amazon.CodePipeline.Model.ActionDeclaration
@@ -638,7 +638,7 @@ The following code example shows how to use `Remove-CPCustomActionType`.
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified custom action. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the custom action without a prompt.**
 
-```
+```powershell
 Remove-CPCustomActionType -Category Build -Provider MyBuildProviderName -Version 1
 ```
 +  For API details, see [DeleteCustomActionType](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -651,7 +651,7 @@ The following code example shows how to use `Remove-CPPipeline`.
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified pipeline. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the pipeline without a prompt.**
 
-```
+```powershell
 Remove-CPPipeline -Name CodePipelineDemo
 ```
 +  For API details, see [DeletePipeline](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -664,7 +664,7 @@ The following code example shows how to use `Start-CPPipelineExecution`.
 **Tools for PowerShell V5**
 **Example 1: This example starts running the specified pipeline.**
 
-```
+```powershell
 Start-CPPipelineExecution -Name CodePipelineDemo
 ```
 +  For API details, see [StartPipelineExecution](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -677,7 +677,7 @@ The following code example shows how to use `Update-CPPipeline`.
 **Tools for PowerShell V5**
 **Example 1: This example updates the specified existing pipeline with the specified settings.**
 
-```
+```powershell
 $pipeline = New-Object Amazon.CodePipeline.Model.PipelineDeclaration
 
 $sourceStageAction = New-Object Amazon.CodePipeline.Model.ActionDeclaration

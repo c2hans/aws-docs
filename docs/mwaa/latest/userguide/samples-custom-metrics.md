@@ -116,7 +116,7 @@ No additional permissions are required to use the code example on this page.
 
 1.  Run the following AWS CLI command to copy the DAG to your environment's bucket, then trigger the DAG using the Apache Airflow UI.
 
-   ```
+   ```bash
    aws s3 cp {{your-dag}}.py s3://{{your-environment-bucket}}/dags/
    ```
 

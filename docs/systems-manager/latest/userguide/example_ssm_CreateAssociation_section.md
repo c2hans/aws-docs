@@ -140,7 +140,7 @@ For more information, see [Creating associations](https://docs.aws.amazon.com/sy
 **Tools for PowerShell V4**
 **Example 1: This example associates a configuration document with an instance, using instance IDs.**
 
-```
+```powershell
 New-SSMAssociation -InstanceId "i-0cb2b964d3e14fd9f" -Name "AWS-UpdateSSMAgent"
 ```
 **Output:**
@@ -156,7 +156,7 @@ Status.AdditionalInfo :
 ```
 **Example 2: This example associates a configuration document with an instance, using targets.**
 
-```
+```powershell
 $target = @{Key="instanceids";Values=@("i-0cb2b964d3e14fd9f")}
 New-SSMAssociation -Name "AWS-UpdateSSMAgent" -Target $target
 ```
@@ -173,7 +173,7 @@ Status.AdditionalInfo :
 ```
 **Example 3: This example associates a configuration document with an instance, using targets and parameters.**
 
-```
+```powershell
 $target = @{Key="instanceids";Values=@("i-0cb2b964d3e14fd9f")}
 $params = @{
   "action"="configure"
@@ -197,7 +197,7 @@ Status.AdditionalInfo :
 ```
 **Example 4: This example creates an association with all instances in the region, with `AWS-GatherSoftwareInventory`. It also provides custom files and registry locations in the parameters to collect**
 
-```
+```powershell
 $params = [Collections.Generic.Dictionary[String,Collections.Generic.List[String]]]::new()
 $params["windowsRegistry"] ='[{"Path":"HKEY_LOCAL_MACHINE\SOFTWARE\Amazon\MachineImage","Recursive":false,"ValueNames":["AMIName"]}]'
 $params["files"] = '[{"Path":"C:\Program Files","Pattern":["*.exe"],"Recursive":true}, {"Path":"C:\ProgramData","Pattern":["*.log"],"Recursive":true}]'
@@ -219,7 +219,7 @@ Status.AdditionalInfo :
 **Tools for PowerShell V5**
 **Example 1: This example associates a configuration document with an instance, using instance IDs.**
 
-```
+```powershell
 New-SSMAssociation -InstanceId "i-0cb2b964d3e14fd9f" -Name "AWS-UpdateSSMAgent"
 ```
 **Output:**
@@ -235,7 +235,7 @@ Status.AdditionalInfo :
 ```
 **Example 2: This example associates a configuration document with an instance, using targets.**
 
-```
+```powershell
 $target = @{Key="instanceids";Values=@("i-0cb2b964d3e14fd9f")}
 New-SSMAssociation -Name "AWS-UpdateSSMAgent" -Target $target
 ```
@@ -252,7 +252,7 @@ Status.AdditionalInfo :
 ```
 **Example 3: This example associates a configuration document with an instance, using targets and parameters.**
 
-```
+```powershell
 $target = @{Key="instanceids";Values=@("i-0cb2b964d3e14fd9f")}
 $params = @{
   "action"="configure"
@@ -276,7 +276,7 @@ Status.AdditionalInfo :
 ```
 **Example 4: This example creates an association with all instances in the region, with `AWS-GatherSoftwareInventory`. It also provides custom files and registry locations in the parameters to collect**
 
-```
+```powershell
 $params = [Collections.Generic.Dictionary[String,Collections.Generic.List[String]]]::new()
 $params["windowsRegistry"] ='[{"Path":"HKEY_LOCAL_MACHINE\SOFTWARE\Amazon\MachineImage","Recursive":false,"ValueNames":["AMIName"]}]'
 $params["files"] = '[{"Path":"C:\Program Files","Pattern":["*.exe"],"Recursive":true}, {"Path":"C:\ProgramData","Pattern":["*.log"],"Recursive":true}]'

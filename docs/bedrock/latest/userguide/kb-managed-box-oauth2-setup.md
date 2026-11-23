@@ -76,7 +76,7 @@ Do not enable administrative actions or the as-user header for OAuth 2.0. No oth
 
 Store the credentials in an AWS Secrets Manager secret with the following key-value pairs:
 
-```
+```json
 {
     "clientId": "{{your-client-id}}",
     "clientSecret": "{{your-client-secret}}",

@@ -70,7 +70,7 @@ This command creates the following files and directories in your project directo
 
 When Lambda invokes your function, the entry point it uses is the `LambdaEntryPoint.cs` file. The file created by the .NET Lambda template contains the following code.
 
-```
+```csharp
 namespace AspNetOnLambda;
 
 public class LambdaEntryPoint : Amazon.Lambda.AspNetCoreServer.APIGatewayProxyFunction
@@ -138,7 +138,7 @@ The command creates the following files and directories in your project director
 
 The `Program.cs` file contains the following code.
 
-```
+```csharp
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

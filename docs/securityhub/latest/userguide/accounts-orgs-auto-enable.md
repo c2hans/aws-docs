@@ -60,7 +60,7 @@ Invoke the [`UpdateOrganizationConfiguration`](https://docs.aws.amazon.com/secur
 
 Run the [`update-organization-configuration`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html) command from the delegated administrator account. Include the `auto-enable` parameter to automatically enable Security Hub CSPM in new organization accounts.
 
-```
+```NONE
 aws securityhub update-organization-configuration --auto-enable
 ```
 

@@ -32,13 +32,13 @@ SYS\_REDSHIFT\_TEMPLATE is visible to all users. Superusers can see all rows; re
 
 The following query returns all templates visible to the current user:
 
-```
+```sql
 SELECT * FROM SYS_REDSHIFT_TEMPLATE;
 ```
 
 Sample output.
 
-```
+```SQL
  database_name | schema_name |   template_name    | template_type |        create_time         |     last_modified_time     | owner_id | last_modified_by | template_parameters
 ---------------+-------------+--------------------+---------------+----------------------------+----------------------------+----------+------------------+---------------------
  dev           | s1          | shapefile_template |             1 | 2025-12-17 22:42:02.079758 | 2025-12-17 22:42:02.079758 |      101 |              101 | {

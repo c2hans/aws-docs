@@ -17,7 +17,7 @@ By default, the AWS SDK for Ruby performs up to three retries, with 15 seconds b
 
 The following example creates an Amazon S3 client in the region `us-west-2`, and specifies to wait five seconds between two retries on every client operation. Therefore, Amazon S3 client operations could take up to 15 seconds to time out.
 
-```
+```ruby
  s3 = Aws::S3::Client.new(
    region: region,
    retry_limit: 2,

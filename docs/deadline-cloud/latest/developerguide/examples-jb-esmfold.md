@@ -20,7 +20,7 @@ The bundle requires a farm with an NVIDIA GPU service-managed fleet (A10G, L4, o
 
 Submit the demo, which folds three short benchmark proteins (Trp-cage variants 1L2Y and 2JOF, and villin headpiece 1VII):
 
-```
+```bash
 deadline bundle submit ./job_bundles/esmfold_predict/ \
   -p InputFasta=./job_bundles/esmfold_predict/sample_inputs/demo.fasta
 ```

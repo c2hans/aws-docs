@@ -43,7 +43,7 @@ The message payload format as `cbor` or `json`.
 #### CreateCertificateFromCsr request payload
 <a name="create-cert-csr-request-payload"></a>
 
-```
+```json
 {
     "certificateSigningRequest": "string"
 }
@@ -63,7 +63,7 @@ The message payload format as `cbor` or `json`.
 #### CreateCertificateFromCsr response payload
 <a name="create-cert-csr-response-payload"></a>
 
-```
+```json
 {
     "certificateOwnershipToken": "string",
     "certificateId": "string",
@@ -91,7 +91,7 @@ The message payload format as `cbor` or `json`.
 #### CreateCertificateFromCsr error payload
 <a name="create-cert-csr-error-payload"></a>
 
-```
+```json
 {
     "statusCode": int,
     "errorCode": "string",
@@ -135,7 +135,7 @@ The message payload format as `cbor` or `json`.
 #### CreateKeysAndCertificate response
 <a name="create-keys-cert-response-payload"></a>
 
-```
+```json
 {
     "certificateId": "string",
     "certificatePem": "string",
@@ -167,7 +167,7 @@ The message payload format as `cbor` or `json`.
 #### CreateKeysAndCertificate error payload
 <a name="create-keys-cert-error-payload"></a>
 
-```
+```json
 {
     "statusCode": int,
     "errorCode": "string",
@@ -203,7 +203,7 @@ The provisioning template name.
 #### RegisterThing request payload
 <a name="register-thing-request-payload"></a>
 
-```
+```json
 {
     "certificateOwnershipToken": "string",
     "parameters": {
@@ -233,7 +233,7 @@ The provisioning template name.
 #### RegisterThing response payload
 <a name="register-thing-response-payload"></a>
 
-```
+```json
 {
     "deviceConfiguration": {
         "string": "string",
@@ -263,7 +263,7 @@ The provisioning template name.
 #### RegisterThing error response payload
 <a name="register-thing-error-payload"></a>
 
-```
+```json
 {
     "statusCode": int,
     "errorCode": "string",

@@ -8,6 +8,8 @@ Amazon GameLift Servers can be configured to collect and publish telemetry metri
 
 ![telemetry_metrics](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/images/telemetry_metrics.png)
 
+Monitor performance across your game servers using pre-built dashboards in Amazon Managed Grafana or Amazon CloudWatch.
+
 ## Benefits of telemetry metrics
 <a name="gamelift-servers-metrics-benefits"></a>
 

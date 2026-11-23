@@ -82,7 +82,7 @@ This example shows partitioning structure with a date of January 1, 2023:
 
 1.
 
-   ```
+   ```sql
    s3://example-bucket/amazon_chime_sdk_data_lake
                                /serviceType=CallAnalytics/detailType={{{DETAIL_TYPE}}}/year={{2023}}
                                /month={{01}}/day={{01}}/example-file.parquet
@@ -151,7 +151,7 @@ Use AWS CLI to create a role with permissions to call CloudFormation’s create 
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -188,7 +188,7 @@ Use AWS CLI to create a role with permissions to call CloudFormation’s create 
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

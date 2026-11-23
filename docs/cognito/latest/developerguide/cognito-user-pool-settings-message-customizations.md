@@ -96,7 +96,7 @@ When you choose **Link** as the verification type, your custom message must incl
 
 The link for an email verification message directs your user to a URL like the following example.
 
-```
+```http
 https://{{<your user pool domain>}}/confirmUser/?client_id={{abcdefg12345678}}&user_name={{emailtest}}&confirmation_code={{123456}}
 ```
 
@@ -154,7 +154,7 @@ In this example, the "Sid" value is an arbitrary string that uniquely identifies
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -25,6 +25,8 @@ Using AWS Firewall Manager, you can easily roll out AWS WAF rules for your Appli
 
 ![A diagram depicting centralized inbound traffic inspection using AWS WAF](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/inbound-traffic-inspection-with-waf.png)
 
+**Centralized inbound traffic inspection using AWS WAF**
+
 In the preceding architecture, applications are running on Amazon EC2 instances in multiple availability zones in the private subnets. There is a public-facing Application Load Balancer (ALB) deployed in front of the Amazon EC2 instances, load balancing the requests between different targets. The AWS WAF is associated with the ALB.
 
 ### Advantages

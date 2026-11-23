@@ -89,7 +89,7 @@ Next, create an IAM role that Kinesis Data Analytics can assume and read the Ama
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -113,7 +113,7 @@ Next, create an IAM role that Kinesis Data Analytics can assume and read the Ama
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

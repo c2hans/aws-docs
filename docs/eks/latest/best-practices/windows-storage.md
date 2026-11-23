@@ -26,13 +26,13 @@ A StorageClass provides a way for administrators to describe the "classes" of st
 
 You can check it by running the following command:
 
-```
+```bash
 kubectl describe storageclass gp2
 ```
 
 Output:
 
-```
+```bash
 Name:            gp2
 IsDefaultClass:  Yes
 Annotations:     kubectl.kubernetes.io/last-applied-configuration={"apiVersion":"storage.k8s.io/v1","kind":"StorageClas
@@ -50,7 +50,7 @@ Events:                <none>
 
 To create the new StorageClass to support **NTFS**, use the following manifest:
 
-```
+```yaml
 kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
@@ -64,7 +64,7 @@ volumeBindingMode: WaitForFirstConsumer
 
 Create the StorageClass by running the following command:
 
-```
+```bash
 kubectl apply -f NTFSStorageClass.yaml
 ```
 
@@ -78,7 +78,7 @@ Users need PersistentVolumes with different attributes, such as performance, for
 
 In the example below, the PVC has been created within the namespace windows.
 
-```
+```yaml
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -95,13 +95,13 @@ spec:
 
 Create the PVC by running the following command:
 
-```
+```bash
 kubectl apply -f persistent-volume-claim.yaml
 ```
 
 The following manifest creates a Windows Pod, setup the VolumeMount as `C:\Data` and uses the PVC as the attached storage on `C:\Data`.
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -142,7 +142,7 @@ spec:
 
 Test the results by accessing the Windows pod via PowerShell:
 
-```
+```bash
 kubectl exec -it podname powershell -n windows
 ```
 
@@ -150,7 +150,7 @@ Inside the Windows Pod, run: `ls`
 
 Output:
 
-```
+```bash
 PS C:\> ls
 
     Directory: C:\
@@ -189,7 +189,7 @@ The SMB Global Mapping is transparent to the orchestrator, and it is mounted thr
 
 In the example below, the path `G:\Directory\app-state` is an SMB share on the Windows Node.
 
-```
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:

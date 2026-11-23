@@ -86,7 +86,7 @@ Removes tags from the specified resource. You can specify one or more tags to re
 #### POST schema
 <a name="tags-resource-arn-request-body-post-example"></a>
 
-```
+```json
 {
   "tags": {
   }
@@ -99,7 +99,7 @@ Removes tags from the specified resource. You can specify one or more tags to re
 #### tagsModel schema
 <a name="tags-resource-arn-response-body-tagsmodel-example"></a>
 
-```
+```json
 {
   "tags": {
   }

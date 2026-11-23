@@ -23,7 +23,7 @@ You can make a batch HTTP request using the following headers:
 
 Here's an example of a `StartTranscriptionJob` request:
 
-```
+```http
 POST /transcribe HTTP/1.1
 host: transcribe.{{us-west-2}}.amazonaws.com
 x-amz-target: com.amazonaws.transcribe.Transcribe.{{StartTranscriptionJob}}

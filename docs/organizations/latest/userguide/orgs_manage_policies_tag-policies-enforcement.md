@@ -33,7 +33,7 @@ The JSON below is the generated tag policy from the above "CostCenter" example.
 **Important**
 We recommend that you use the Visual editor when you are defining your tag policy for the first time. The Visual editor ensures that your tag policy syntax is valid, with no additional steps, and gives you a simplified clickable experience to define your tag policy. You can use either the Visual editor or JSON tab to define your tag policy.
 
-```
+```json
 {
     "tags": {
         "CostCenter": {

@@ -21,7 +21,7 @@ Note that [Amazon S3 Express One Zone](https://aws.amazon.com/s3/storage-classes
 
 **Example**
 
-```
+```bash
 aws s3api put-bucket-encryption --bucket my-directory-bucket --server-side-encryption-configuration \
    '{"Rules": [{"ApplyServerSideEncryptionByDefault": {"SSEAlgorithm": "aws:kms", "KMSMasterKeyID": "1234abcd-12ab-34cd-56ef-1234567890ab"}}]}'
 ```

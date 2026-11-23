@@ -55,7 +55,7 @@ For more information, see [Internet gateways](https://docs.aws.amazon.com/vpc/la
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified Internet gateway.**
 
-```
+```powershell
 Get-EC2InternetGateway -InternetGatewayId igw-1a2b3c4d
 ```
 **Output:**
@@ -67,7 +67,7 @@ Attachments       InternetGatewayId     Tags
 ```
 **Example 2: This example describes all your Internet gateways.**
 
-```
+```powershell
 Get-EC2InternetGateway
 ```
 **Output:**
@@ -83,7 +83,7 @@ Attachments       InternetGatewayId     Tags
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified Internet gateway.**
 
-```
+```powershell
 Get-EC2InternetGateway -InternetGatewayId igw-1a2b3c4d
 ```
 **Output:**
@@ -95,7 +95,7 @@ Attachments       InternetGatewayId     Tags
 ```
 **Example 2: This example describes all your Internet gateways.**
 
-```
+```powershell
 Get-EC2InternetGateway
 ```
 **Output:**

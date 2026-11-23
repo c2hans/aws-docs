@@ -38,7 +38,7 @@ For example, the following policy grants permission to update a pipeline:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -38,7 +38,7 @@ Following is an example SCP that can be applied at the AWS Account, Organization
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -141,7 +141,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [DeliverabilityTestStatus](#API_CreateDeliverabilityTestReport_ResponseSyntax) **   <a name="SES-CreateDeliverabilityTestReport-response-DeliverabilityTestStatus"></a>
-The status of the predictive inbox placement test. If the status is `IN_PROGRESS`, then the predictive inbox placement test is currently running. Predictive inbox placement tests are usually complete within 24 hours of creating the test. If the status is `COMPLETE`, then the test is finished, and you can use the `GetDeliverabilityTestReport` to view the results of the test.
+The status of the predictive inbox placement test. If the status is `IN_PROGRESS`, then the predictive inbox placement test is currently running. Predictive inbox placement tests are usually complete within 24 hours of creating the test. If the status is `COMPLETED`, then the test is finished, and you can use the `GetDeliverabilityTestReport` operation to view the results of the test.
 Type: String
 Valid Values: `IN_PROGRESS | COMPLETED`
 

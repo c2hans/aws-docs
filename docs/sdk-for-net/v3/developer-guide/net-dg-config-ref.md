@@ -39,7 +39,7 @@ In general, we recommend that instead of using `AWSConfigs` class properties in 
 
 You specify AWS settings in an `App.config` or `Web.config` file from within the `<aws>` element. Before you can begin using the `<aws>` element, you must create a `<section>` element (which is a child element of the `<configSections>` element) and set its `name` attribute to `aws` and its `type` attribute to `Amazon.AWSSection, AWSSDK.Core`, as shown in the following example:
 
-```
+```xml
 <?xml version="1.0"?>
 <configuration>
   ...
@@ -62,7 +62,7 @@ To assist you in creating a correctly formatted version of the `<aws>` element, 
 
 The following is a list of the logical relationships among the allowed elements in an AWS settings section. You can generate the latest version of this list by calling the `Amazon.AWSConfigs.GenerateConfigTemplate` method, which outputs a canonical version of the `<aws>` element as a string you can adapt to your needs.
 
-```
+```xml
 <aws
   endpointDefinition="string value"
   region="string value"
@@ -143,7 +143,7 @@ The `<alias>` element contains no child elements.
 
 The following is an example of the `<alias>` element in use:
 
-```
+```xml
 <alias
   fromTable="Studio"
   toTable="Studios" />
@@ -177,7 +177,7 @@ The `<aws>` element can include the following child elements:
 
 The following is an example of the `<aws>` element in use:
 
-```
+```xml
 <aws
   endpointDefinition="C:\Configs\endpoints.xml"
   region="us-west-2"
@@ -198,7 +198,7 @@ The `<dynamoDB>` element can include the `<dynamoDBContext>` child element.
 
 The following is an example of the `<dynamoDB>` element in use:
 
-```
+```xml
 <dynamoDB
   conversionSchema="V2">
   <!-- ... -->
@@ -218,7 +218,7 @@ The `<dynamoDBContext>` element can include the following child elements:
 
 The following is an example of the `<dynamoDBContext>` element in use:
 
-```
+```xml
 <dynamoDBContext
   tableNamePrefix="Test-">
   <!-- ... -->
@@ -236,7 +236,7 @@ The `<ec2>` element contains no child elements.
 
 The following is an example of the `<ec2>` element in use:
 
-```
+```xml
 <ec2
   useSignatureVersion4="true" />
 ```
@@ -286,7 +286,7 @@ The `<logging>` element contains no child elements.
 
 The following is an example of the `<logging>` element in use:
 
-```
+```xml
 <logging
   logTo="SystemDiagnostics"
   logResponses="OnError"
@@ -314,7 +314,7 @@ The `<map>` element can include one or more instances of the `<property>` child 
 
 The following is an example of the `<map>` element in use:
 
-```
+```xml
 <map
   type="SampleApp.Models.Movie, SampleDLL"
   targetTable="Movies">
@@ -350,7 +350,7 @@ The `<property>` element contains no child elements.
 
 The following is an example of the `<property>` element in use:
 
-```
+```xml
 <property
   name="Rating"
   converter="SampleApp.Models.RatingConverter, SampleDLL" />
@@ -379,7 +379,7 @@ The `<proxy>` element contains no child elements.
 
 The following is an example of the `<proxy>` element in use:
 
-```
+```xml
 <proxy
   host="192.0.2.0"
   port="1234"
@@ -398,6 +398,6 @@ The `<s3>` element contains no child elements.
 
 The following is an example of the `<s3>` element in use:
 
-```
+```xml
 <s3 useSignatureVersion4="true" />
 ```

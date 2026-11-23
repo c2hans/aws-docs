@@ -9,9 +9,7 @@ In Amazon RDS, there are several ways you can migrate data from a Db2 database t
 For one-time migrations for Linux-based Db2 databases, Amazon RDS only supports offline and online backups. Amazon RDS doesn't support incremental and Delta backups. For near-zero downtime migrations for Linux-based Db2 databases, Amazon RDS requires online backups. We recommend that you use online backups for near-zero downtime migrations and offline backups for migrations that can handle downtime.
 
 **Topics**
-+ [Migrating from Linux to Linux for Amazon RDS for Db2](db2-one-time-migration-linux.md)
-+ [Migrating from Linux to Linux with near-zero downtime for Amazon RDS for Db2](db2-near-zero-downtime-migration.md)
-+ [Migrating synchronously from Linux to Linux for Amazon RDS for Db2](db2-synchronous-migration-linux.md)
++ [Migrating from Linux to Linux for Amazon RDS for Db2](db2-migration-linux-linux.md)
 + [Migrating from AIX or Windows to Linux for Amazon RDS for Db2](db2-one-time-migration-aix-windows-linux.md)
 + [Migrating Db2 data through Amazon S3 to Amazon RDS for Db2](db2-migration-load-from-s3.md)
 + [Migrating to Amazon RDS for Db2 with AWS Database Migration Service (AWS DMS)](db2-migration-amazon-dms.md)

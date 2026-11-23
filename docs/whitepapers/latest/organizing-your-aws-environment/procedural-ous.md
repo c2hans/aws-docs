@@ -79,6 +79,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
 ![Diagram showing example structure of Policy Staging OU](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-policy-ou.png)
 
+*Example structure of Policy Staging OU*
+
 ## Suspended OU
 <a name="suspended-ou"></a>
 

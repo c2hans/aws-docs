@@ -10,7 +10,7 @@ Defines configuration settings for CloudWatch Logs.
 
 The format is `[cw_log {{cw-log-name}}]`. {{cw-log-name}} must start with a letter, contain no more than 30 characters, and only contain letters, numbers, hyphens (-), and underscores (\_).
 
-```
+```ini
 [cw_log {{custom-cw-log}}]
 enable = true
 retention_days = 14
@@ -30,7 +30,7 @@ The default value is `true`. Use `false` to disable CloudWatch Logs.
 
 The following example enables CloudWatch Logs.
 
-```
+```ini
 enable = true
 ```
 
@@ -45,7 +45,7 @@ The default value is `14`. The supported values are 1, 3, 5, 7, 14, 30, 60, 90, 
 
 The following example configures CloudWatch Logs to retain log events for 30 days.
 
-```
+```ini
 retention_days = 30
 ```
 

@@ -56,7 +56,7 @@ These steps describe how to enable audit logs using the console. You can also [e
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -81,7 +81,7 @@ These steps describe how to enable audit logs using the console. You can also [e
 
    For example, you could add the following condition block to the policy:
 
-   ```
+   ```json
    "Condition": {
        "StringEquals": {
            "aws:SourceAccount": "{{account-id}}"
@@ -112,7 +112,7 @@ The Dashboards UI offers full control of audit log settings under **General sett
 
 The following AWS CLI command enables audit logs on an existing domain:
 
-```
+```bash
 aws opensearch update-domain-config --domain-name {{my-domain}} --log-publishing-options "AUDIT_LOGS={CloudWatchLogsLogGroupArn={{arn:aws:logs:us-east-1:123456789012:log-group:my-log-group}},Enabled=true}"
 ```
 
@@ -123,7 +123,7 @@ You can also enable audit logs when you create a domain. For detailed informatio
 
 The following request to the configuration API enables audit logs on an existing domain:
 
-```
+```json
 POST https://es.us-east-1.amazonaws.com/2021-01-01/opensearch/domain/{{my-domain}}/config
 {
   "LogPublishingOptions": {
@@ -251,7 +251,7 @@ After you enable the publishing of audit logs to a CloudWatch Logs group, naviga
 
 1. Under **Read**, in **Watched Fields**, add `ssn` and `id-` fields of the `accounts` index:
 
-   ```
+   ```json
    {
      "accounts-": [
        "ssn",
@@ -265,7 +265,7 @@ After you enable the publishing of audit logs to a CloudWatch Logs group, naviga
 
 1. Navigate to OpenSearch Dashboards, choose **Dev Tools**, and index a sample document:
 
-   ```
+   ```json
    PUT accounts/_doc/0
    {
      "ssn": "123",
@@ -275,7 +275,7 @@ After you enable the publishing of audit logs to a CloudWatch Logs group, naviga
 
 1. To test a read event, send the following request:
 
-   ```
+   ```json
    GET accounts/_search
    {
      "query": {
@@ -299,7 +299,7 @@ After you enable the publishing of audit logs to a CloudWatch Logs group, naviga
 
    **Sample write audit log**
 
-   ```
+   ```json
    {
      "audit_compliance_operation": "CREATE",
      "audit_cluster_name": "824471164578:audit-test",
@@ -325,7 +325,7 @@ After you enable the publishing of audit logs to a CloudWatch Logs group, naviga
 
     **Sample read audit log**
 
-   ```
+   ```json
    {
      "audit_cluster_name": "824471164578:audit-docs",
      "audit_node_name": "806f6050cb45437e2401b07534a1452f",

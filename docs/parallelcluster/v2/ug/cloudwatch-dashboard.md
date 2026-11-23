@@ -20,7 +20,7 @@ If you don’t want to create the Amazon CloudWatch dashboard, you must complete
 
 For example, if your [`[dashboard]` section](dashboard-section.md) is named `myDashboard` and your [`[cluster]` section](cluster-definition.md) is named `myCluster`, your changes resemble this.
 
-```
+```ini
 [cluster MyCluster]
 dashboard_settings = MyDashboard
 ...

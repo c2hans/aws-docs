@@ -32,7 +32,7 @@ For more information about LinkedIn authentication, see [Authentication overview
 
 To configure LinkedIn as an outbound resource provider, use the following configuration:
 
-```
+```json
 {
    "name": "NAME",
    "credentialProviderVendor": "LinkedInOAuth2",

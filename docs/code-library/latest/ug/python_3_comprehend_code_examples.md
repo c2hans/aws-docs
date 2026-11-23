@@ -29,7 +29,7 @@ The following code example shows how to use `CreateDocumentClassifier`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendClassifier:
     """Encapsulates an Amazon Comprehend custom classifier."""
 
@@ -93,7 +93,7 @@ The following code example shows how to use `DeleteDocumentClassifier`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendClassifier:
     """Encapsulates an Amazon Comprehend custom classifier."""
 
@@ -128,7 +128,7 @@ The following code example shows how to use `DescribeDocumentClassificationJob`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendClassifier:
     """Encapsulates an Amazon Comprehend custom classifier."""
 
@@ -168,7 +168,7 @@ The following code example shows how to use `DescribeDocumentClassifier`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendClassifier:
     """Encapsulates an Amazon Comprehend custom classifier."""
 
@@ -210,7 +210,7 @@ The following code example shows how to use `DescribeTopicsDetectionJob`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendTopicModeler:
     """Encapsulates a Comprehend topic modeler."""
 
@@ -249,7 +249,7 @@ The following code example shows how to use `DetectDominantLanguage`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendDetect:
     """Encapsulates Comprehend detection functions."""
 
@@ -286,7 +286,7 @@ The following code example shows how to use `DetectEntities`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendDetect:
     """Encapsulates Comprehend detection functions."""
 
@@ -327,7 +327,7 @@ The following code example shows how to use `DetectKeyPhrases`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendDetect:
     """Encapsulates Comprehend detection functions."""
 
@@ -368,7 +368,7 @@ The following code example shows how to use `DetectPiiEntities`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendDetect:
     """Encapsulates Comprehend detection functions."""
 
@@ -409,7 +409,7 @@ The following code example shows how to use `DetectSentiment`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendDetect:
     """Encapsulates Comprehend detection functions."""
 
@@ -449,7 +449,7 @@ The following code example shows how to use `DetectSyntax`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendDetect:
     """Encapsulates Comprehend detection functions."""
 
@@ -491,7 +491,7 @@ The following code example shows how to use `ListDocumentClassificationJobs`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendClassifier:
     """Encapsulates an Amazon Comprehend custom classifier."""
 
@@ -530,7 +530,7 @@ The following code example shows how to use `ListDocumentClassifiers`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendClassifier:
     """Encapsulates an Amazon Comprehend custom classifier."""
 
@@ -569,7 +569,7 @@ The following code example shows how to use `ListTopicsDetectionJobs`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendTopicModeler:
     """Encapsulates a Comprehend topic modeler."""
 
@@ -605,7 +605,7 @@ The following code example shows how to use `StartDocumentClassificationJob`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendClassifier:
     """Encapsulates an Amazon Comprehend custom classifier."""
 
@@ -678,7 +678,7 @@ The following code example shows how to use `StartTopicsDetectionJob`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendTopicModeler:
     """Encapsulates a Comprehend topic modeler."""
 
@@ -754,7 +754,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 Create a class that wraps Amazon Comprehend actions.
 
-```
+```python
 import logging
 from pprint import pprint
 import boto3
@@ -895,7 +895,7 @@ class ComprehendDetect:
 ```
 Call functions on the wrapper class to detect entities, phrases, and more in a document.
 
-```
+```python
 def usage_demo():
     print("-" * 88)
     print("Welcome to the Amazon Comprehend detection demo!")
@@ -983,7 +983,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 Create a wrapper class to call Amazon Comprehend topic modeling actions.
 
-```
+```python
 class ComprehendTopicModeler:
     """Encapsulates a Comprehend topic modeler."""
 
@@ -1078,7 +1078,7 @@ class ComprehendTopicModeler:
 ```
 Use the wrapper class to run a topic modeling job and get job data.
 
-```
+```python
 def usage_demo():
     print("-" * 88)
     print("Welcome to the Amazon Comprehend topic modeling demo!")
@@ -1158,7 +1158,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 Create a wrapper class to call Amazon Comprehend document classifier actions.
 
-```
+```python
 class ComprehendClassifier:
     """Encapsulates an Amazon Comprehend custom classifier."""
 
@@ -1356,7 +1356,7 @@ class ComprehendClassifier:
 ```
 Create a class to help run the scenario.
 
-```
+```python
 class ClassifierDemo:
     """
     Encapsulates functions used to run the demonstration.
@@ -1527,7 +1527,7 @@ class ClassifierDemo:
 ```
 Train a classifier on a set of GitHub issues with known labels, then send a second set of GitHub issues to the classifier so that they can be labeled.
 
-```
+```python
 def usage_demo():
     print("-" * 88)
     print("Welcome to the Amazon Comprehend custom document classifier demo!")

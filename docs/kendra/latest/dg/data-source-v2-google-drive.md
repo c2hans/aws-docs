@@ -185,7 +185,7 @@ You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/
 Google Drive API does not support retrieving comments from a permanently deleted file. Comments from trashed files are retrievable. When a file is trashed, the connector will delete comments from the Amazon Kendra index.
 + **Secret Amazon Resource Name (ARN)**—Provide the Amazon Resource Name (ARN) of a Secrets Manager secret that contains the authentication credentials you created in your Google Drive account. If you use Google service account authentication, the secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "clientEmail": "{{user account email}}",
       "adminAccountEmail": "{{service account email}}",
@@ -195,7 +195,7 @@ Google Drive API does not support retrieving comments from a permanently deleted
 
   If you use OAuth 2.0 authentication, the secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "clientID": "{{OAuth client ID}}",
       "clientSecret": "{{client secret}}",

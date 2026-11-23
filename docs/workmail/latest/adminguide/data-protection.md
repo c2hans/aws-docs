@@ -139,7 +139,7 @@ The following is a key policy for an example AWS managed CMK for Amazon WorkMail
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id" : "auto-workmail-1",
@@ -192,7 +192,7 @@ Amazon WorkMail uses the same encryption context format in all AWS KMS cryptogra
 
 In its [Encrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html) and [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) requests to AWS KMS, Amazon WorkMail uses an encryption context where the key is `aws:workmail:arn` and the value is the Amazon Resource Name (ARN) of the organization.
 
-```
+```json
 "aws:workmail:arn":"arn:aws:workmail:{{region}}:{{account ID}}:organization/{{organization-ID}}"
 ```
 
@@ -214,7 +214,7 @@ When you create a mailbox, Amazon WorkMail generates a mailbox key and calls AWS
 
 The event that records the `Encrypt` operation is similar to the following example event. The user is the Amazon WorkMail service. The parameters include the CMK ID (`keyId`) and the encryption context for the Amazon WorkMail organization. Amazon WorkMail also passes in the mailbox key, but that is not recorded in the CloudTrail log.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -257,7 +257,7 @@ When you add, view, or delete a mailbox message, Amazon WorkMail asks AWS KMS to
 
 The event that records the `Decrypt` operation is similar to the following example event. The user is the Amazon WorkMail service. The parameters include the encrypted mailbox key (as a ciphertext blob), which is not recorded in the log, and the encryption context for the Amazon WorkMail organization. AWS KMS derives the ID of the CMK from the ciphertext.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

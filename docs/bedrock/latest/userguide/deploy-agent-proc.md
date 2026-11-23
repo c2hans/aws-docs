@@ -63,7 +63,7 @@ The following procedure shows you how to create an alias and a version for your 
 </tbody>
 </table>
 
-  ```
+  ```python
       def create_agent_alias(self, name, agent_id):
           """
           Creates an alias of an agent that can be used to deploy the agent.

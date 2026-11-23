@@ -19,7 +19,7 @@ The following statements add permissions specifically for consumer group offset 
 **Source cluster**
 The service execution role must have permission to describe consumer groups and the topics they consume on the source.
 
-```
+```json
 [
     {
         "Sid": "SourceGroupPermissions",
@@ -47,7 +47,7 @@ The service execution role must have permission to describe consumer groups and 
 **Target cluster**
 The service execution role must have permission to describe the replicated topics and alter consumer groups on the target so that translated offsets can be committed.
 
-```
+```json
 [
     {
         "Sid": "TargetCheckpointTopicPermissions",

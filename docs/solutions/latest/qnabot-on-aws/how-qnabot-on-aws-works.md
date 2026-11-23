@@ -46,7 +46,7 @@ Asking QnABot on AWS questions initiates the following processes:
      + If QnABot on AWS can’t find any answers that match these keyword filter rules, then it will admit that it doesn’t know the answer rather than guessing an answer that doesn’t match the keywords. QnABot on AWS logs every question that it can’t answer so you can see them in the included Kibana Dashboard.
      + The Bot fulfillment Lambda function generates an Amazon OpenSearch Service query containing the transcribed question. The query attempts to find the best match from all the questions and answers you’ve previously provided, filtering items to apply the keyword filters and using Amazon OpenSearch Service relevance scoring to rank the results. Scoring is based on 1) matching the words in the end user’s question against the unique set of words used in the stored questions (`quniqueterms`), 2) matching the phrasing of the user’s question to the text of stored questions (nested field `questions.q`), and 3) matching the topic value assigned to the previous answer (if any) to increase the overall relevance score when the topic value (field `t`) matches. The following example code shows an Amazon OpenSearch query:
 
-       ```
+       ```json
        "query":{
            "bool": {
                "filter": {

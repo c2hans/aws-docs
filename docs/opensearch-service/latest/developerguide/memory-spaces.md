@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 
 In Amazon OpenSearch Memory, a *space* is the AWS resource that stores your events and memories. A space also defines which memory strategies extract memories, how long events and memories are kept, which model does the extraction, and which key encrypts the data. You control access to events and memories by controlling access to their space.
 
-This topic describes how to create and manage spaces. For the event and memory operations, see [Working with events in Amazon OpenSearch Memory](memory-events.md) and [Working with memories in Amazon OpenSearch Memory](memory-memories.md).
+This topic describes how to create and manage spaces. The child topics describe memory strategies, events, memories, and search.
 
 **Topics**
 + [Space IDs and ARNs](#memory-spaces-ids)
@@ -17,6 +17,10 @@ This topic describes how to create and manage spaces. For the event and memory o
 + [Updating a space](#memory-spaces-update)
 + [Deleting a space](#memory-spaces-delete)
 + [Tagging a space](#memory-spaces-tagging)
++ [Memory strategies in Amazon OpenSearch Memory](memory-strategies.md)
++ [Working with events in Amazon OpenSearch Memory](memory-events.md)
++ [Working with memories in Amazon OpenSearch Memory](memory-memories.md)
++ [Searching memories and events in Amazon OpenSearch Memory](memory-search.md)
 
 ## Space IDs and ARNs
 <a name="memory-spaces-ids"></a>
@@ -98,7 +102,7 @@ To create a space, call [CreateSpace](https://docs.aws.amazon.com/opensearch-ser
 
 The following AWS CLI example creates a space that keeps events for 30 days, keeps memories indefinitely, uses the Opus model for extraction, and encrypts its data with a customer managed key. Replace the key ARN with the ARN of your own key.
 
-```
+```bash
 aws opensearchmemory create-space \
     --name support-agent-memory \
     --event-expiry-days 30 \
@@ -132,7 +136,7 @@ The space appears in the list with the status **Creating**. When it is ready, th
 
 To view a space's settings, status, and strategies, call `GetSpace` with the space ID.
 
-```
+```bash
 aws opensearchmemory get-space --space-id sp-02864597b164
 ```
 
@@ -140,7 +144,7 @@ The response includes any strategy names that OpenSearch Memory generated for st
 
 To list the spaces in your account in the current Region, call [ListSpaces](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_ListSpaces.html). Each entry includes the space's ID, ARN, name, status, and creation time. Use `--max-results` to control the page size, from 1 to 100, and pass the returned `nextToken` to get the next page.
 
-```
+```bash
 aws opensearchmemory list-spaces --max-results 20
 ```
 
@@ -151,7 +155,7 @@ To change a space's strategies, retention settings, or extraction model, call `U
 
 The following example changes how long a space keeps events.
 
-```
+```bash
 aws opensearchmemory update-space \
     --space-id sp-02864597b164 \
     --event-expiry-days 60
@@ -173,7 +177,7 @@ Deleting a space permanently deletes its memories. You can't undo the deletion o
 
 When you no longer need a space, call [DeleteSpace](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_DeleteSpace.html) with the space ID.
 
-```
+```bash
 aws opensearchmemory delete-space --space-id sp-02864597b164
 ```
 
@@ -198,7 +202,7 @@ You can't delete a space that is `CREATING` or `UPDATING`. Wait for the space to
 
 A tag is a key-value pair that you attach to a space to organize it, track costs, or control access. You can add tags when you create a space with the `tags` parameter, and manage tags on an existing space with [TagResource](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_TagResource.html), [UntagResource](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_UntagResource.html), and [ListTagsForResource](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_ListTagsForResource.html), which take the space's ARN.
 
-```
+```bash
 aws opensearchmemory tag-resource \
     --resource-arn arn:aws:osm:us-east-1:111122223333:space/sp-02864597b164 \
     --tags '[{"key":"environment","value":"production"}]'

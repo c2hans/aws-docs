@@ -28,7 +28,7 @@ The following code example shows how to get started using AWS Batch.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
 import software.amazon.awssdk.core.client.config.ClientOverrideConfiguration;
 import software.amazon.awssdk.core.retry.RetryPolicy;
 import software.amazon.awssdk.http.async.SdkAsyncHttpClient;
@@ -124,7 +124,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 Run an interactive scenario demonstrating AWS Batch features.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.batch.model.BatchException;
@@ -655,7 +655,7 @@ public class BatchScenario {
 ```
 A wrapper class for AWS Batch SDK methods.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.core.client.config.ClientOverrideConfiguration;
@@ -1257,7 +1257,7 @@ The following code example shows how to use `CreateComputeEnvironment`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Asynchronously creates a new compute environment in AWS Batch.
      *
@@ -1306,7 +1306,7 @@ The following code example shows how to use `CreateJobQueue`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Creates a job queue asynchronously.
      *
@@ -1352,7 +1352,7 @@ The following code example shows how to use `DeleteComputeEnvironment`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     public CompletableFuture<DeleteComputeEnvironmentResponse> deleteComputeEnvironmentAsync(String computeEnvironmentName) {
         DeleteComputeEnvironmentRequest deleteComputeEnvironment = DeleteComputeEnvironmentRequest.builder()
             .computeEnvironment(computeEnvironmentName)
@@ -1381,7 +1381,7 @@ The following code example shows how to use `DeleteJobQueue`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Deletes a Batch job queue asynchronously.
      *
@@ -1414,7 +1414,7 @@ The following code example shows how to use `DeregisterJobDefinition`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Deregisters a job definition asynchronously.
      *
@@ -1447,7 +1447,7 @@ The following code example shows how to use `DescribeComputeEnvironments`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Checks the status of the specified compute environment.
      *
@@ -1487,7 +1487,7 @@ The following code example shows how to use `DescribeJobQueues`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Asynchronously describes the job queue associated with the specified compute environment.
      *
@@ -1541,7 +1541,7 @@ The following code example shows how to use `DescribeJobs`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Asynchronously retrieves the status of a specific job.
      *
@@ -1571,7 +1571,7 @@ The following code example shows how to use `ListJobsPaginator`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Asynchronously lists the jobs in the specified job queue with the given job status.
      *
@@ -1607,7 +1607,7 @@ The following code example shows how to use `RegisterJobDefinition`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Registers a new job definition asynchronously in AWS Batch.
      * <p>
@@ -1682,7 +1682,7 @@ The following code example shows how to use `SubmitJob`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Submits a job asynchronously to the AWS Batch service.
      *
@@ -1718,7 +1718,7 @@ The following code example shows how to use `UpdateComputeEnvironment`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Disables the specified compute environment asynchronously.
      *
@@ -1751,7 +1751,7 @@ The following code example shows how to use `UpdateJobQueue`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Disables the specified job queue asynchronously.
      *

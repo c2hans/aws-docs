@@ -74,12 +74,12 @@ This field can have one of the following values:
 +  `no-override` – If the viewer request doesn't contain the `Authorization` header, then CloudFront signs the origin request. If the viewer request contains the `Authorization` header, then CloudFront doesn't sign the origin request and instead passes along the `Authorization` header from the viewer request. **WARNING: To pass along the `Authorization` header from the viewer request, you *must* add the `Authorization` header to a [cache policy](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/controlling-the-cache-key.html) for all cache behaviors that use origins associated with this origin access control.**
 +  `always-amz-auth` – CloudFront signs all origin requests with Amazon authentication headers. If the viewer request contains the `Authorization` header, then CloudFront also forwards that header to the origin. This value is only valid with Lambda-Web origins. **WARNING: To forward the `Authorization` header from the viewer request, you *must* add the `Authorization` header to a [cache policy](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/controlling-the-cache-key.html) for all cache behaviors that use origins associated with this origin access control.**
 Type: String
-Valid Values: `never | always | no-override`
+Valid Values: `never | always | no-override | always-amz-auth`
 
  ** [SigningProtocol](#API_GetOriginAccessControlConfig_ResponseSyntax) **   <a name="cloudfront-GetOriginAccessControlConfig-response-SigningProtocol"></a>
 The signing protocol of the origin access control, which determines how CloudFront signs (authenticates) requests. The only valid values are `sigv4` and `sigv4a`.
 Type: String
-Valid Values: `sigv4`
+Valid Values: `sigv4 | sigv4a`
 
 ## Errors
 <a name="API_GetOriginAccessControlConfig_Errors"></a>

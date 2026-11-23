@@ -148,7 +148,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-ami-create-from-auto-scaling-group-ex-min"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-CreateAmiInAutoScalingGroup",
   "Region" : "us-east-1",
@@ -169,7 +169,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-ami-create-from-auto-scaling-group-ex-max"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-CreateAmiInAutoScalingGroup",
   "Region" : "us-east-1",

@@ -18,7 +18,7 @@ Each batch request groups its work by table: inside the request block, call `tab
 
 Use [`batchWriteItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html) to seed or update a catalog. Within each table’s block, add puts with [`putItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.model/put-item.html) (or `putItems`) and deletes with `deleteKey` (or `deleteKeys`):
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.items.Key
 
 val productsTable = mapper.getProductTable("products")
@@ -37,7 +37,7 @@ mapper.batchWriteItem {
 
 Use [`batchGetItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html) to fetch many items by key. Supply keys with `key`, `keys`, or by assigning the `keys` list; read the mapped objects from the response’s per-table `items`:
 
-```
+```kotlin
 val response = mapper.batchGetItem {
     table(productsTable) {
         key(Key("SKU-1"))
@@ -57,7 +57,7 @@ DynamoDB might not process every item in a batch. For example, a request might e
 +  [`batchGetItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html): the per-table response exposes `unprocessedKeys`, the keys that weren’t read.
 +  [`batchWriteItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html): the per-table response exposes `unprocessedItems` (puts that weren’t written) and `unprocessedKeys` (deletes that weren’t performed).
 
-```
+```kotlin
 val response = mapper.batchGetItem {
     table(productsTable) { keys = skus.map(::Key) }
 }

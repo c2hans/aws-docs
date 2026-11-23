@@ -98,7 +98,7 @@ MediaTailor doesn't include any beacons of its own, and the tracking response st
 
 The following example turns on beaconing and reports on the mute, unmute, and skip player operation events:
 
-```
+```json
 {
     "Name": "my-playback-configuration",
     "BeaconingConfiguration": {
@@ -112,7 +112,7 @@ The following example turns on beaconing and reports on the mute, unmute, and sk
 
 The following example turns beaconing off. Omit `AdditionalEventTypes` here – sending event types with `DISABLED` is rejected.
 
-```
+```json
 {
     "Name": "my-playback-configuration",
     "BeaconingConfiguration": {

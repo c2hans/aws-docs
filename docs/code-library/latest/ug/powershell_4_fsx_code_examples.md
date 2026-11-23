@@ -26,7 +26,7 @@ The following code example shows how to use `Add-FSXResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This example adds tags to the given resource.**
 
-```
+```powershell
 Add-FSXResourceTag -ResourceARN "arn:aws:fsx:eu-west-1:123456789012:file-system/fs-01cd23bc4bdf5678a" -Tag @{Key="Users";Value="Test"} -PassThru
 ```
 **Output:**
@@ -44,7 +44,7 @@ The following code example shows how to use `Get-FSXBackup`.
 **Tools for PowerShell V4**
 **Example 1: This example fetches backups created since yesterday for the given file system id.**
 
-```
+```powershell
 Get-FSXBackup -Filter @{Name="file-system-id";Values=$fsx.FileSystemId} | Where-Object CreationTime -gt (Get-Date).AddDays(-1)
 ```
 **Output:**
@@ -71,7 +71,7 @@ The following code example shows how to use `Get-FSXFileSystem`.
 **Tools for PowerShell V4**
 **Example 1: This example returns the description of given filesystemId.**
 
-```
+```powershell
 Get-FSXFileSystem -FileSystemId fs-01cd23bc4bdf5678a
 ```
 **Output:**
@@ -104,7 +104,7 @@ The following code example shows how to use `Get-FSXResourceTagList`.
 **Tools for PowerShell V4**
 **Example 1: This example lists tags for provided resource arn.**
 
-```
+```powershell
 Get-FSXResourceTagList -ResourceARN $fsx.ResourceARN
 ```
 **Output:**
@@ -125,7 +125,7 @@ The following code example shows how to use `New-FSXBackup`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a back up of the given file system.**
 
-```
+```powershell
 New-FSXBackup -FileSystemId fs-0b1fac2345623456ba
 ```
 **Output:**
@@ -152,7 +152,7 @@ The following code example shows how to use `New-FSXFileSystem`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new 300GB Windows file system, permitting access from the specified subnet, that supports throughput up to 8 megabytes per second. The new file system is automatically joined to the specified Microsoft Active Directory.**
 
-```
+```powershell
 New-FSXFileSystem -FileSystemType WINDOWS -StorageCapacity 300 -SubnetId subnet-1a2b3c4d5e6f -WindowsConfiguration @{ThroughputCapacity=8;ActiveDirectoryId='d-1a2b3c4d'}
 ```
 **Output:**
@@ -185,7 +185,7 @@ The following code example shows how to use `New-FSXFileSystemFromBackup`.
 **Tools for PowerShell V4**
 **Example 1: This exmaple creates new Amazon FSx file system from an existing Amazon FSx for Windows File Server backup.**
 
-```
+```powershell
 New-FSXFileSystemFromBackup -BackupId $backupID -Tag @{Key="tag:Name";Value="from-manual-backup"} -SubnetId $SubnetID -SecurityGroupId $SG_ID -WindowsConfiguration @{ThroughputCapacity=8;ActiveDirectoryId=$DirectoryID}
 ```
 **Output:**
@@ -218,7 +218,7 @@ The following code example shows how to use `Remove-FSXBackup`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the given backup-id.**
 
-```
+```powershell
 Remove-FSXBackup -BackupId $backupID
 ```
 **Output:**
@@ -243,7 +243,7 @@ The following code example shows how to use `Remove-FSXFileSystem`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the given FSX file system ID.**
 
-```
+```powershell
 Remove-FSXFileSystem -FileSystemId fs-012ff34e567890120
 ```
 **Output:**
@@ -268,7 +268,7 @@ The following code example shows how to use `Remove-FSXResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the resource tag for the given FSX file system resource ARN.**
 
-```
+```powershell
 Remove-FSXResourceTag -ResourceARN $FSX.ResourceARN -TagKey Users
 ```
 **Output:**
@@ -289,7 +289,7 @@ The following code example shows how to use `Update-FSXFileSystem`.
 **Tools for PowerShell V4**
 **Example 1: This example updates the FSX file system automatic backup retention days via UpdateFileSystemWindowsConfiguration.**
 
-```
+```powershell
 $UpdateFSXWinConfig = [Amazon.FSx.Model.UpdateFileSystemWindowsConfiguration]::new()
 	$UpdateFSXWinConfig.AutomaticBackupRetentionDays = 35
 	Update-FSXFileSystem -FileSystemId $FSX.FileSystemId -WindowsConfiguration $UpdateFSXWinConfig

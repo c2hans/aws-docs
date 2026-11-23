@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 
 ![Diagram showing the use of Multi-AZ cells.](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/multi-az-cells.png)
 
+*Multi-AZ cells*
+
  Advantages of this approach:
 +  Wider use of serverless services that already are Regional.
 +  It is easier to a cell be self-resilience using serverless or managed services with a Multi-AZ strategy, without share state with external components.

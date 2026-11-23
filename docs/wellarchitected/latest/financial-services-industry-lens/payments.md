@@ -19,6 +19,8 @@ Payment gateways can use tokenization to protect customer data by replacing the 
 
 ![QR payments reference architecture diagram](https://docs.aws.amazon.com/wellarchitected/latest/financial-services-industry-lens/images/payments-reference-architecture.png)
 
+*Figure 5: Architecture for QR Payments on AWS*
+
  **Architecture description**
 
 1.  To start, customers scan the business QR code displayed at the checkout page on a website or at the point of sale (POS) terminal.

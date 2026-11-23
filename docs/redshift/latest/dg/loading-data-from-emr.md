@@ -177,7 +177,7 @@ If any of the data files are changed or deleted before the COPY completes, you m
 
 In the COPY command, specify the Amazon EMR cluster ID and the HDFS file path and file name.
 
-```
+```sql
 COPY sales
 FROM 'emr://myemrclusterid/myoutput/part*' CREDENTIALS
 IAM_ROLE 'arn:aws:iam::0123456789012:role/MyRedshiftRole';

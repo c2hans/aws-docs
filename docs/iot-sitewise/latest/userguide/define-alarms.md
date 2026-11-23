@@ -40,7 +40,7 @@ Data type: `STRING`
 **Example alarm composite model**
 The following asset model represents a boiler that has an alarm to monitor its temperature. AWS IoT SiteWise sends the temperature data to AWS IoT Events to detect the alarm.
 
-```
+```json
 {
   "assetModelName": "Boiler",
   "assetModelDescription": "A boiler that alarms when its temperature exceeds its limit.",

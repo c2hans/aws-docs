@@ -31,7 +31,7 @@ A `SUPER` expression or column.
 
 To check if `[1,2]` is an array using the IS\_ARRAY function, use the following example.
 
-```
+```sql
 SELECT IS_ARRAY(JSON_PARSE('[1,2]'));
 
 +----------+

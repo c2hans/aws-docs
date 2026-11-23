@@ -62,7 +62,7 @@ Refer to the [Clarify post-training bias metrics reference](https://docs.aws.ama
 
 The SHAP library is the same engine that powers SageMaker Clarify's explainability. Using it directly gives you more flexibility:
 
-```
+```bash
 pip install shap
 ```
 
@@ -83,7 +83,7 @@ This approach operationalizes the same standardized metrics (directly computed f
 
 The `fmeval` library is the same evaluation engine Clarify's foundation model evaluation is built on, and it can be used independently of Clarify Processing Jobs:
 
-```
+```bash
 pip install fmeval
 ```
 

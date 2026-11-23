@@ -103,7 +103,7 @@ The **Set Touchtone Buffer Behavior** block is represented as a `GetParticipantI
 
 **Enable buffering:**
 
-```
+```json
 {
     "Parameters": {
         "EnableDTMFBuffer": "true"
@@ -124,7 +124,7 @@ The **Set Touchtone Buffer Behavior** block is represented as a `GetParticipantI
 
 **Stop and clear with stored encrypted input:**
 
-```
+```json
 {
     "Parameters": {
         "EnableDTMFBuffer": "false",

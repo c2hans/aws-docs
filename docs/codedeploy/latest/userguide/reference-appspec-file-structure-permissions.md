@@ -14,7 +14,7 @@ The `'permissions'` section is used for EC2/On-Premises deployments only. It is 
 
 This section has the following structure:
 
-```
+```yaml
 permissions:
   - object: {{object-specification}}
     pattern: {{pattern-specification}}
@@ -101,7 +101,7 @@ The following example shows how to specify the `'permissions'` section with the 
 
 The following AppSpec file shows how to set permissions on these files and folders after they are copied:
 
-```
+```yaml
 version: 0.0
 os: linux
 # Copy over all of the folders and files with the permissions they
@@ -203,7 +203,7 @@ dr-xrw-r-- root     wheel my-folder-3
 
 The following example shows how to specify the `'permissions'` section with the addition of the `acls` and `context` instructions. This example applies to Amazon Linux, Ubuntu Server, and RHEL instances only.
 
-```
+```yaml
 permissions:
   - object: /var/www/html/WordPress
     pattern: "**"

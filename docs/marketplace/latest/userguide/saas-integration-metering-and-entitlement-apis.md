@@ -15,3 +15,5 @@ If your SaaS product is integrated with another AWS managed service that handles
 + [SaaS product integration checklist](aws-marketplace-integration-checklist.md)
 
  For information about setting up the AWS CLI, along with credentials, see [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) in the *AWS Command Line Interface User Guide*. If you're new to the AWS Python SDK, see the Boto 3 [Quickstart](https://boto3.readthedocs.io/en/latest/guide/quickstart.html).
+
+RTB Fabric module products use contract pricing only and aren't metered. For more information, see [Checking entitlements for RTB Fabric module products](additional-product-types-metering.md).

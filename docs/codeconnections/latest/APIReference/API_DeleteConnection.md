@@ -27,7 +27,7 @@ The Amazon Resource Name (ARN) of the connection to be deleted.
 The ARN is never reused if the connection is deleted.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `arn:aws(-[\w]+)*:.+:.+:[0-9]{12}:.+`
+Pattern: `arn:aws(-[\w]+)*:(codestar-connections|codeconnections):[a-z0-9\-]+:[0-9]{12}:connection\/[\w\-]+`
 Required: Yes
 
 ## Response Elements

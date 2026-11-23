@@ -43,7 +43,7 @@ The following examples use data from the EVENT table in the TICKIT sample databa
 
 To truncate a specified set of event names to 20 characters and prepend the shorter names with spaces, use the following example.
 
-```
+```sql
 SELECT LPAD(eventname, 20) FROM event
 WHERE eventid BETWEEN 1 AND 5 ORDER BY 1;
 
@@ -60,7 +60,7 @@ WHERE eventid BETWEEN 1 AND 5 ORDER BY 1;
 
 To truncate the same set of event names to 20 characters but append the shorter names with `0123456789`, use the following example.
 
-```
+```sql
 SELECT RPAD(eventname, 20,'0123456789') FROM event
 WHERE eventid BETWEEN 1 AND 5 ORDER BY 1;
 

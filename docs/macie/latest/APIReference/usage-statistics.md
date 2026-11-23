@@ -49,7 +49,7 @@ Retrieves (queries) quotas and aggregated usage data for one or more accounts.
 #### POST schema
 <a name="usage-statistics-request-body-post-example"></a>
 
-```
+```json
 {
   "filterBy": [
     {
@@ -76,7 +76,7 @@ Retrieves (queries) quotas and aggregated usage data for one or more accounts.
 #### GetUsageStatisticsResponse schema
 <a name="usage-statistics-response-body-getusagestatisticsresponse-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "records": [
@@ -105,7 +105,7 @@ Retrieves (queries) quotas and aggregated usage data for one or more accounts.
 #### ValidationException schema
 <a name="usage-statistics-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -114,7 +114,7 @@ Retrieves (queries) quotas and aggregated usage data for one or more accounts.
 #### ServiceQuotaExceededException schema
 <a name="usage-statistics-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -123,7 +123,7 @@ Retrieves (queries) quotas and aggregated usage data for one or more accounts.
 #### AccessDeniedException schema
 <a name="usage-statistics-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -132,7 +132,7 @@ Retrieves (queries) quotas and aggregated usage data for one or more accounts.
 #### ResourceNotFoundException schema
 <a name="usage-statistics-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -141,7 +141,7 @@ Retrieves (queries) quotas and aggregated usage data for one or more accounts.
 #### ConflictException schema
 <a name="usage-statistics-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -150,7 +150,7 @@ Retrieves (queries) quotas and aggregated usage data for one or more accounts.
 #### ThrottlingException schema
 <a name="usage-statistics-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -159,7 +159,7 @@ Retrieves (queries) quotas and aggregated usage data for one or more accounts.
 #### InternalServerException schema
 <a name="usage-statistics-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

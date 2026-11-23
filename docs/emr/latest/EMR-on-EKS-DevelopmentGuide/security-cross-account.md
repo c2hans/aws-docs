@@ -37,7 +37,7 @@ To set up cross-account access for Amazon EMR on EKS, complete the following ste
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -67,7 +67,7 @@ To set up cross-account access for Amazon EMR on EKS, complete the following ste
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -100,7 +100,7 @@ To set up cross-account access for Amazon EMR on EKS, complete the following ste
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -129,7 +129,7 @@ To set up cross-account access for Amazon EMR on EKS, complete the following ste
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

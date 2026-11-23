@@ -61,7 +61,7 @@ When calling `[CreateAutoMLJobV2](https://docs.aws.amazon.com/sagemaker/latest/A
 
   The following is an example of those request parameters. In this example, you are setting up a daily forecast for the expected quantity or level of demand of specific items over a period of 20 days.
 
-  ```
+  ```JSON
   "AutoMLProblemTypeConfig": {
           "ForecastFrequency": "D",
           "ForecastHorizon": 20,
@@ -92,7 +92,7 @@ Then, you can specify an array of selected `AutoMLAlgorithms` in the `Algorithms
 
 The following is an example of an `AlgorithmsConfig` attribute listing exactly three algorithms ("cnn-qr", "prophet", "arima") in its `AutoMLAlgorithms` field.
 
-```
+```json
 {
    "[AutoMLProblemTypeConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAutoMLJobV2.html#sagemaker-CreateAutoMLJobV2-request-AutoMLProblemTypeConfig)": {
         "[TimeSeriesForecastingJobConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TimeSeriesForecastingJobConfig.html)": {
@@ -117,7 +117,7 @@ In Autopilot, you can specify up to five forecast quantiles from 0.01 (`p1`) to 
 
 In the following example, you are setting up a daily 10th, 25th, 50th, 75th, and 90th percentile forecast for the expected quantity or level of demand of specific items over a period of 20 days.
 
-```
+```JSON
 "AutoMLProblemTypeConfig": {
         "ForecastFrequency": "D",
         "ForecastHorizon": 20,
@@ -218,7 +218,7 @@ This role should have the following trust relationship:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -252,7 +252,7 @@ The IAM policy defined in the provided JSON document grants those permissions:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

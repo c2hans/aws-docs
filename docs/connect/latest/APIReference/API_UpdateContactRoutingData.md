@@ -166,7 +166,7 @@ In this example, we are setting a single-step routing criteria on a contact, to 
 
 Note that in this specific example, there is no expiration timer set for this step. This means that so long as this routing criteria is set on the contact, this contact will not be offered to any other agent. In most scenarios, we would recommend to set an Expiry timer, so that if the agent is not available within some amount of time, you can fallback the contact to any agent in queue, or any agent matching some other condition. See Example 3 for an example showing the Expiry timer.
 
-```
+```json
 {
     "InstanceId": "5d463351-d515-4241-b8f3-bf78da37770d",
     "ContactId": "44c84896-243d-43bc-ad8c-76fc8baadced",
@@ -198,7 +198,7 @@ Note that in this specific example, there is no expiration timer set for this st
 
 Additionally, in this specific example, QueueTimeAdjustmentSeconds was set to 60 for this contact, meaning that this contact will look 60 seconds older than its true age to the routing engine, which may put it closer to the head of the queue relative to other contacts.
 
-```
+```json
 {
     "InstanceId": "5d463351-d515-4241-b8f3-bf78da37770d",
     "ContactId": "90422764-7f29-4359-943d-d84be5e53642",
@@ -233,7 +233,7 @@ Since in this example there is an Expiry set with a DurationInSeconds of 60, if 
 
 Additionally, in this specific example, QueueTimeAdjustmentSeconds was set to 60 for this contact, meaning that this contact will look 60 seconds older than its true age to the routing engine, which may put it closer to the head of the queue relative to other contacts.
 
-```
+```json
 {
     "InstanceId": "5d463351-d515-4241-b8f3-bf78da37770d",
     "ContactId": "90422764-7f29-4359-943d-d84be5e53642",
@@ -290,7 +290,7 @@ Additionally, in this specific example, QueueTimeAdjustmentSeconds was set to 60
 
 In this example, we are setting a two-step routing criteria. Step 1 restricts this contact so that only the agent matching the specified user ID can be offered the contact, with an expiry of 30 seconds. Note that this agent must be in Available status with the queue the contact is in their Routing Profile in order to be offered the contact. If this agent does not accept the contact within 30 seconds, then the contact will instead be offered to an agent within the queue with at least 5/5 proficiency level in language English.
 
-```
+```json
 {
     "InstanceId": "5d463351-d515-4241-b8f3-bf78da37770d",
     "ContactId": "90422764-7f29-4359-943d-d84be5e53642",

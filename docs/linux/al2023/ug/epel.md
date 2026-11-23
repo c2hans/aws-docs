@@ -75,13 +75,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `brotli` package can be installed on AL2023 with the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{brotli}}
 ```
 
  The `libbrotli` package can be installed on AL2023 with the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{libbrotli}}
 ```
 
@@ -92,7 +92,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `collectd` package is included in AL2023 and can be installed by running the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{collectd}}
 ```
 
@@ -113,15 +113,15 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `fuse3` package (including `fuse3-libs` and `fuse3-devel`) were in EPEL7. These packages are part of AL2023, and each can be installed by running the relevant following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{fuse3}}
 ```
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{fuse3-libs}}
 ```
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{fuse3-devel}}
 ```
 
@@ -137,7 +137,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `git-lfs` package was in EPEL7. In Amazon Linux 2023, the `git-lfs` package is included in the core repository. On AL2023, `git-lfs` can be installed by running the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{git-lfs}}
 ```
 
@@ -157,7 +157,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `inotify-tools` package is included in AL2023 and can be installed by running the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{inotify-tools}}
 ```
 
@@ -171,7 +171,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `iperf` package is included in AL2023 and can be installed by running the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{iperf}}
 ```
 
@@ -182,7 +182,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `jemalloc` package is included in AL2023 and can be installed by running the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{jemalloc}}
 ```
 
@@ -193,13 +193,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `libbsd` package is included in AL2023 and can be installed by running the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{libbsd}}
 ```
 
  The development files for `libbsd` can be installed by running the following command.
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{libbsd-devel}}
 ```
 
@@ -208,7 +208,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `libserf` package was in EPEL7. The `libserf` package is provided in Amazon Linux 2023. It can be installed by running the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{libserf}}
 ```
 
@@ -217,7 +217,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `libzstd` package was in AL2 core, as well as in EPEL7. The `libzstd` package is also part of AL2023.
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{libzstd}}
 ```
 
@@ -253,13 +253,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `nodejs` version 16 package was in EPEL7, and `nodejs` is now included in AL2023. At the time of writing, both `nodejs` version 18 and 20 were available in AL2023. You can install `nodejs` 18 on AL2023 with the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{nodejs}}
 ```
 
  You can install `nodejs` 20 on AL2023 with the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{nodejs20}}
 ```
 
@@ -268,13 +268,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `perl-Config-General` package was in EPEL7, and is now included in AL2023. You can install the `perl-Config-General` package in AL2023 with the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{perl-Config-General}}
 ```
 
  Perl modules can also be installed by asking DNF to install the package that provides a particular Perl module. With this method, you can use the more familiar Perl module name rather than the OS package name.
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install 'perl({{Confg::General}})'
 ```
 
@@ -285,13 +285,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The *Python 3* version of this package *is included in AL2023*. You can install the `python3-lockfile` package in AL2023 with one of the following commands:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{python3-lockfile}}
 ```
 
  Python modules can also be installed by asking DNF to install the package that provides a particular Python module.
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install 'python3dist({{lockfile}})'
 ```
 
@@ -302,13 +302,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The *Python 3* version of this package *is included in AL2023*. You can install the `python3-rsa` package in AL2023 with one of the following commands:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{python3-rsa}}
 ```
 
  Python modules can also be installed by asking DNF to install the package that provides a particular Python module.
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install 'python3dist({{rsa}})'
 ```
 
@@ -319,13 +319,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The *Python 3* version of this package *is included in AL2023*. You can install the `python3-simplejson` package in AL2023 with the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{python3-simplejson}}
 ```
 
  Python modules can also be installed by asking DNF to install the package that provides a particular Python module.
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install 'python3dist({{simplejson}})'
 ```
 
@@ -334,11 +334,11 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `rkhunter` package is included in AL2023 along with `chkrootkit`.
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{rkhunter}}
 ```
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{chkrootkit}}
 ```
 
@@ -354,7 +354,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `sscg` package was in AL2 core, as well as in EPEL7. The `sscg` package is also part of AL2023.
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{sscg}}
 ```
 
@@ -365,7 +365,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `stress` package is included in AL2023 and can be installed by running the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{stress}}
 ```
 
@@ -376,7 +376,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The `stress-ng` package is included in AL2023 and can be installed by running the following command:
 
-```
+```bash
 [ec2-user ~]$ sudo dnf install {{stress-ng}}
 ```
 

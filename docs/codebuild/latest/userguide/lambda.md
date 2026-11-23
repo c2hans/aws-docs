@@ -35,7 +35,7 @@ Note that you require the following Amazon ECR permissions to use custom images 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

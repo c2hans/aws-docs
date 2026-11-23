@@ -140,7 +140,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-rds-snapshot-copy-for-aurora-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-CopyDBClusterSnapshot",
   "Region": "us-east-1",
@@ -154,7 +154,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-rds-snapshot-copy-for-aurora-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-CopyDBClusterSnapshot",
   "Region": "us-east-1",

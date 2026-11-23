@@ -18,13 +18,13 @@ Notebook-scoped libraries provide you the following benefits:
 
 The following example code shows how to install pandas and matplotlib from the PiPY repository.
 
-```
+```python
 sc.install_pypi_package("pandas==0.25.1") #Install pandas version 0.25.1
 sc.install_pypi_package("matplotlib", "https://pypi.org/simple") #Install matplotlib from given PyPI repository
 ```
 
 You can uninstall packages using the `uninstall_package` PySpark API.
 
-```
+```python
 sc.uninstall_package('pandas')
 ```

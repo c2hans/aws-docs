@@ -9,8 +9,7 @@ Connections can associate your AWS resources with the following third-party repo
 + Bitbucket Cloud
 + GitHub.com
 + GitHub Enterprise Cloud
-**Note**
-Currently, custom domains for GitHub Enterprise Cloud are not supported.
++ GitHub Enterprise Cloud with data residency (`https://{{subdomain}}.ghe.com`)
 + GitHub Enterprise Server
 + GitLab.com
 **Important**

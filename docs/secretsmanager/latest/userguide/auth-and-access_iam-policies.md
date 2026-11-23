@@ -34,7 +34,7 @@ This example is useful when you want to grant access to an IAM group. To grant p
 If a secret is encrypted using a customer managed key, you can grant access to read the secret by attaching the following policy to an identity. \\
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement": [
@@ -59,7 +59,7 @@ If a secret is encrypted using a customer managed key, you can grant access to r
 You can grant access to a secret by attaching the following policy to an identity.
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement": [
@@ -82,7 +82,7 @@ You can grant access to a secret by attaching the following policy to an identit
 You can grant access to retrieve a group of secrets in a batch API call by attaching the following policy to an identity. The policy restricts the caller so that they can only retrieve the secrets specified by {{SecretARN1}}, {{SecretARN2}}, and {{SecretARN3}}, even if the batch call includes other secrets. If the caller also requests other secrets in the batch API call, Secrets Manager won't return them. For more information, see [`BatchGetSecretValue`.](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_BatchGetSecretValue.html).
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement": [
@@ -118,7 +118,7 @@ You can use wildcards to include a set of values in a policy element.
 The following policy grants access to retrieve all secrets with a name beginning with "{{TestEnv/}}".
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -133,7 +133,7 @@ The following policy grants access to retrieve all secrets with a name beginning
 The following policy grants `DescribeSecret` and permissions beginning with `List`: `ListSecrets` and `ListSecretVersionIds`.
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement": {
@@ -153,7 +153,7 @@ To match a secret name, you create the ARN for the secret by putting together th
 Because you can predict all of the parts of the ARN of a secret except the 6 random characters, using the wildcard character `'??????'` syntax enables you to securely grant permissions to a secret that doesn't yet exist. Be aware, however, if you delete the secret and recreate it with the same name, the user automatically receives permission to the new secret, even though the 6 characters changed.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -178,7 +178,7 @@ To grant a user permissions to create a secret, we recommend you attach a permis
 The following policy grants permission to create secrets and view a list of secrets. To use this policy, see [Identity-based policies](auth-and-access_iam-policies.md).
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement": [
@@ -208,7 +208,7 @@ The following policy denies the use of the AWS managed key `aws/secretsmanager` 
 1. The second statement, `Sid: "RequireKmsKeyIdParameterOnCreate"`, denies requests for creating secrets that don't include a KMS key, because Secrets Manager would default to using the AWS managed key `aws/secretsmanager`.
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement": [

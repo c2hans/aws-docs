@@ -31,6 +31,8 @@ Establish a plan to match workload capacity requirements with commitment duratio
 
 ![Timeline showing SAP workload capacity allocation over 3 years with different commitment types.](https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/images/example-timeline-of-planning-sap-on-aws-compute-commitments.png)
 
+*Example timeline of planning SAP on AWS compute commitments*
+
  **Suggestion 20.2.3 – Evaluate whether fixing compute types for greater discounts is appropriate**
 
 SAP workloads generally only use a limited set of AWS compute types and thus you should consider whether committing to specific compute families or specific instance types is appropriate for your workload to maximize discount. The two highest discount pricing approaches for compute are EC2 Instance Savings Plans and Standard Reserved Instances.

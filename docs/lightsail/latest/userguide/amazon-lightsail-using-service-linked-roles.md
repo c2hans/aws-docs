@@ -42,7 +42,7 @@ Add the following policy to the IAM entity that needs to create the service-link
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

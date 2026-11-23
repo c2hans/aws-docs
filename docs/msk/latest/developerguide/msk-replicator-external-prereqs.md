@@ -114,7 +114,7 @@ A secret is required for the client credentials mechanism and is optional for th
 
 Keys other than `client_id` and `client_secret` that do not use one of these prefixes are ignored. The following is an example secret value for the client credentials mechanism:
 
-```
+```json
 {
   "client_id": "my-oauth-client",
   "client_secret": "example-client-secret",

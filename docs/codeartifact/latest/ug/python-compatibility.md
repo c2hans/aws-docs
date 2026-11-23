@@ -31,7 +31,7 @@ The `size` and `upload-time` fields may be missing for package versions cached b
 
 The following example uses `curl` to fetch the JSON Simple Repository API response for the `requests` project. Get the repository URL from `aws codeartifact get-repository-endpoint`, and the authorization token from `aws codeartifact get-authorization-token`.
 
-```
+```bash
 curl --header "Accept: application/vnd.pypi.simple.v1+json" \
      --header "Authorization: Bearer $CODEARTIFACT_AUTH_TOKEN" \
      "https://{{my_domain}}-{{111122223333}}.d.codeartifact.{{region}}.amazonaws.com/pypi/{{my_repo}}/simple/requests/"
@@ -42,7 +42,7 @@ The CodeArtifact PyPI endpoint accepts either HTTP Basic authentication (usernam
 
 The following example shows a typical JSON response (truncated for brevity). The `versions`, `size`, and `upload-time` fields are from PEP 700; the `hashes`, `requires-python`, and `yanked` fields are from PEP 691.
 
-```
+```json
 {
   "meta": { "api-version": "1.1" },
   "name": "requests",

@@ -143,7 +143,7 @@ Using the pandas mode gives better performance. The Python mode makes it easier 
 
 The following example extracts date and time from a timestamp.
 
-```
+```python
 from pyspark.sql.functions import from_unixtime, to_date, date_format
 df = df.withColumn('DATE_TIME', from_unixtime('TIMESTAMP'))
 df = df.withColumn( 'EVENT_DATE', to_date('DATE_TIME')).withColumn(
@@ -162,7 +162,7 @@ df.info()
 
 The following example creates a new dataframe with four columns: *name*, *fare*, *pclass*, *survived*.
 
-```
+```sql
 SELECT name, fare, pclass, survived FROM df
 ```
 
@@ -179,7 +179,7 @@ The following example shows a **Drop duplicate rows** code snippet that can dele
 
 The following snippet has comments to help you understand the changes that you need to make. For most snippets, you must specify the column names of your dataset in the code.
 
-```
+```python
 # Specify the subset of columns
 # all rows having identical values in these columns will be dropped
 
@@ -1309,7 +1309,7 @@ Use the **Flatten structured** operator to separate the first level keys into se
 
 For example, you might have a dataset that has a *person* column with demographic information on each person stored as JSON strings. A JSON string might look like the following.
 
-```
+```json
  "{"seq": 1,"name": {"first": "Nathaniel","last": "Ferguson"},"age": 59,"city": "Posbotno","state": "WV"}"
 ```
 
@@ -1436,7 +1436,7 @@ Use the following procedure to transform your images without writing code.
 
 In addition to using the transformations that Data Wrangler provides, you can also use your own custom code snippets. For more information about using custom code snippets, see [Custom Transforms](#canvas-transform-custom). You can import the OpenCV and imgaug libraries within your code snippets and use the transforms associated with them. The following is an example of a code snippet that detects edges within the images.
 
-```
+```python
 # A table with your image data is stored in the `df` variable
 import cv2
 import numpy as np

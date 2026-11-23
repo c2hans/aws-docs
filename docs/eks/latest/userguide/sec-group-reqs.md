@@ -42,7 +42,7 @@ The default rules allow all traffic to flow freely between your cluster and node
 
 You can determine the ID of your cluster security group in the AWS Management Console under the cluster’s **Networking** section. Or, you can do so by running the following AWS CLI command.
 
-```
+```bash
 aws eks describe-cluster --name my-cluster --query cluster.resourcesVpcConfig.clusterSecurityGroupId
 ```
 

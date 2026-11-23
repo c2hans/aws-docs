@@ -58,7 +58,7 @@ The second statement allows the Runbook service role to assume a role in another
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

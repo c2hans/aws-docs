@@ -29,7 +29,7 @@ The following code example shows how to:
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auditmanager#code-examples).
 
-```
+```python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -191,7 +191,7 @@ The following code example shows how to:
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auditmanager#code-examples).
 
-```
+```python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -284,7 +284,7 @@ The following code example shows how to create an Audit Manager assessment repor
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auditmanager#code-examples).
 
-```
+```python
 import dateutil.parser
 import logging
 import time

@@ -15,7 +15,7 @@ The primary web and mobile client entry point. Sends a conversational turn to th
 
  **Request body:**
 
-```
+```json
 {
   "prompt": "What does DTC P0420 mean for my vehicle?",
   "sessionId": "session_ms1719340_r8abc123xyz",
@@ -33,7 +33,7 @@ The primary web and mobile client entry point. Sends a conversational turn to th
 
  **Response body (200):**
 
-```
+```json
 {
   "result": "DTC P0420 indicates catalyst system efficiency is below the threshold ...",
   "sessionId": "session_ms1719340_r8abc123xyz",

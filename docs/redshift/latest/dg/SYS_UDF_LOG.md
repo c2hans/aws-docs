@@ -27,7 +27,7 @@ SYS\_UDF\_LOG is visible only to superusers. For more information, see [Visibili
 
 The following example shows how UDFs handle system-defined errors. The first block shows the definition for a UDF function that returns the inverse of an argument. When you run the function and provide a 0 as your argument, the function returns an error. The last statement returns the error message logged in SYS\_UDF\_LOG.
 
-```
+```sql
 -- Create a function to find the inverse of a number.
 CREATE OR REPLACE FUNCTION f_udf_inv(a int)
 
@@ -50,7 +50,7 @@ query_id    |    record_time              |                 message
 
 The following example adds logging and a warning message to the UDF so that a divide by zero operation results in a warning message instead of stopping with an error message.
 
-```
+```sql
 -- Create a function to find the inverse of a number and log a warning if you input 0.
 CREATE OR REPLACE FUNCTION f_udf_inv_log(a int)
   RETURNS float IMMUTABLE

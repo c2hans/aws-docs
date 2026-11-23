@@ -23,7 +23,7 @@ AWS provides a [GitHub example](https://github.com/awsdocs/aws-doc-sdk-examples/
 
 The following example shows how to use the [TranslateText](https://docs.aws.amazon.com/translate/latest/APIReference/API_TranslateText.html) operation in Python. To run the example, install the Python SDK via the AWS CLI. For instructions, see [Install and configure the AWS Command Line Interface (AWS CLI)](setting-up.md#setup-awscli).
 
-```
+```python
 import boto3
 
 translate = boto3.client(service_name='translate', region_name='{{region}}', use_ssl=True)

@@ -12,7 +12,7 @@ This section covers configuring authorization rules using the built-in database 
 
 1. Run the AWS IoT SiteWise EMQX CLI tool:
 
-   ```
+   ```sh
    C:\greengrass\v2\bin\swe-emqx-cli.ps1 acl init
    ```
 

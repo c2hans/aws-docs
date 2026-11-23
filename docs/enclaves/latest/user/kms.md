@@ -39,7 +39,7 @@ For example, the following KMS key policy allows enclaves running on instances t
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/developerguide/campaigns
 
 A standard campaign sends a custom push notification to a specified segment according to a schedule that you define. The following example demonstrates how to create a campaign with the AWS SDK for Java. For an example of creating a segment to pass in, see [Build segments in Amazon Pinpoint](segments-dimensional.md).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.CampaignResponse;
@@ -22,7 +22,7 @@ import software.amazon.awssdk.services.pinpoint.model.CreateCampaignRequest;
 import software.amazon.awssdk.services.pinpoint.model.PinpointException;
 ```
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.CampaignResponse;

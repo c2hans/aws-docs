@@ -38,7 +38,7 @@ A trail is a configuration that allows delivery of events as log files to an Ama
 
 The following example shows a CloudTrail log entry that demonstrates the DescribeSourceServers.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

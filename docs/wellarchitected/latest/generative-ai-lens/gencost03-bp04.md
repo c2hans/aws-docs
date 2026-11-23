@@ -29,7 +29,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 
 1.  Use XML-style tags to mark specific sections of input prompts for content filtering. Add tags using the format:
 
-```
+```xml
 <amazon-bedrock-guardrails-guardContent_xyz>
 [Content to be filtered]
 </amazon-bedrock-guardrails-guardContent_xyz>
@@ -39,7 +39,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 
  Include the tag suffix in the guardrailConfig:
 
-```
+```json
 {
     "amazon-bedrock-guardrailConfig": {
         "tagSuffix": "xyz"

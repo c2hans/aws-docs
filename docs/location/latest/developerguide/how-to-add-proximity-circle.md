@@ -11,7 +11,7 @@ In this example, you add a proximity circle of 500 meters near the Eiffel Tower 
 ------
 #### [ Request ]
 
-```
+```json
 {
   "type": "FeatureCollection",
   "features": [

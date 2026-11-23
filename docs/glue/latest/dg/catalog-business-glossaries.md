@@ -14,7 +14,7 @@ A business glossary is a container for controlled vocabulary terms that define b
 
 Use `CreateGlossary` to create a business glossary.
 
-```
+```bash
 aws glue create-glossary \
     --name "Finance Data Definitions" \
     --description "Standardized financial terms used across reporting and analytics"
@@ -22,7 +22,7 @@ aws glue create-glossary \
 
 Example output:
 
-```
+```JSON
 {
     "Id": "gl-c9vq7sh2fk4t2h",
     "Name": "Finance Data Definitions"
@@ -34,7 +34,7 @@ Example output:
 
 Use `CreateGlossaryTerm` to add terms to a glossary.
 
-```
+```bash
 aws glue create-glossary-term \
     --glossary-identifier {{glossary-id}} \
     --name "Active User" \
@@ -44,7 +44,7 @@ aws glue create-glossary-term \
 
 Example output:
 
-```
+```JSON
 {
     "Id": "gt-d7xm3np5rk2w9j",
     "GlossaryId": "gl-c9vq7sh2fk4t2h",
@@ -60,7 +60,7 @@ Use `AssociateGlossaryTerms` to associate terms with Data Catalog assets.
 **Note**
 During preview, you can associate a maximum of 10 glossary terms per asset.
 
-```
+```bash
 aws glue associate-glossary-terms \
     --asset-identifier {{asset-id}} \
     --glossary-term-identifiers '["{{term-id-1}}", "{{term-id-2}}"]'
@@ -68,7 +68,7 @@ aws glue associate-glossary-terms \
 
 Example output:
 
-```
+```JSON
 {
     "AssetIdentifier": "{{asset-id}}",
     "GlossaryTerms": ["{{term-id-1}}", "{{term-id-2}}"]
@@ -80,7 +80,7 @@ Example output:
 
 Use `DisassociateGlossaryTerms` to remove term associations from an asset.
 
-```
+```bash
 aws glue disassociate-glossary-terms \
     --asset-identifier {{asset-id}} \
     --glossary-term-identifiers '["{{term-id}}"]'
@@ -94,7 +94,7 @@ You can scope a glossary term association to a single item of an iterable formâ€
 **Note**
 You can associate a maximum of 5 glossary terms per column.
 
-```
+```bash
 aws glue associate-glossary-terms \
     --asset-identifier {{asset-id}} \
     --iterable-form-name columns \
@@ -104,7 +104,7 @@ aws glue associate-glossary-terms \
 
 The response echoes the iterable form name and item identifier along with the column's current term list:
 
-```
+```JSON
 {
     "AssetIdentifier": "{{asset-id}}",
     "IterableFormName": "columns",
@@ -115,7 +115,7 @@ The response echoes the iterable form name and item identifier along with the co
 
 To remove a term from a column, use the `disassociate-glossary-terms` command with the same `--iterable-form-name` and `--item-identifier` parameters. Terms associated at the asset level and terms associated on individual columns are independent.
 
-```
+```bash
 aws glue disassociate-glossary-terms \
     --asset-identifier {{asset-id}} \
     --iterable-form-name columns \
@@ -131,7 +131,7 @@ Updates take effect immediately and are reflected in search results.
 **To update a glossary**
 Use `UpdateGlossary`:
 
-```
+```bash
 aws glue update-glossary \
     --identifier {{glossary-id}} \
     --name "Enterprise Finance Glossary" \
@@ -141,7 +141,7 @@ aws glue update-glossary \
 **To update a glossary term**
 Use `UpdateGlossaryTerm`:
 
-```
+```bash
 aws glue update-glossary-term \
     --identifier {{term-id}} \
     --name "Monthly Active User" \
@@ -156,7 +156,7 @@ You must delete all terms from a glossary before you can delete the glossary.
 **To delete a glossary term**
 Use `DeleteGlossaryTerm`:
 
-```
+```bash
 aws glue delete-glossary-term \
     --identifier {{term-id}}
 ```
@@ -164,7 +164,7 @@ aws glue delete-glossary-term \
 **To delete a glossary**
 Use `DeleteGlossary` after removing all terms:
 
-```
+```bash
 aws glue delete-glossary \
     --identifier {{glossary-id}}
 ```
@@ -177,14 +177,14 @@ Both `ListGlossaries` and `ListGlossaryTerms` support pagination with `MaxResult
 **To list all glossaries**
 Run the following command:
 
-```
+```bash
 aws glue list-glossaries \
     --max-results 10
 ```
 
 Example output:
 
-```
+```JSON
 {
     "Items": [
         {"Id": "gl-c9vq7sh2fk4t2h", "Name": "Finance Data Definitions"},
@@ -196,7 +196,7 @@ Example output:
 **To list terms in a glossary**
 Run the following command:
 
-```
+```bash
 aws glue list-glossary-terms \
     --glossary-identifier {{glossary-id}} \
     --max-results 10
@@ -204,7 +204,7 @@ aws glue list-glossary-terms \
 
 Example output:
 
-```
+```JSON
 {
     "GlossaryId": "gl-c9vq7sh2fk4t2h",
     "Items": [
@@ -220,7 +220,7 @@ Example output:
 **To retrieve a glossary**
 Run the following command:
 
-```
+```bash
 aws glue get-glossary \
     --identifier {{glossary-id}}
 ```
@@ -228,7 +228,7 @@ aws glue get-glossary \
 **To retrieve a glossary term**
 Run the following command:
 
-```
+```bash
 aws glue get-glossary-term \
     --identifier {{term-id}}
 ```

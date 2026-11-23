@@ -38,7 +38,7 @@ For more information about `universal-test-runner`, see [What is universal-test-
 
 1. On the **Configuration** tab, complete the **Shell commands** field by updating the sample code with your choice of the supported frameworks. For example, to use a supported framework, you would use a `Run` command similar to the following.
 
-   ```
+   ```yaml
    - Run: run-tests {{<framework>}}
    ```
 
@@ -69,7 +69,7 @@ For more information about `universal-test-runner`, see [What is universal-test-
 
 1. Modify the YAML code according to your needs. For example, to use a supported framework, you would use a `Run` command similar to the following.
 
-   ```
+   ```yaml
    Configuration:
      Steps:
        - Run: run-tests {{<framework>}}

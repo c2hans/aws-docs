@@ -11,7 +11,7 @@ AWS ParallelCluster uses Spot Instances if the cluster configuration has set [`c
 **Note**
 Using Spot Instances requires that the `AWSServiceRoleForEC2Spot` service-linked role exist in your account. To create this role in your account using the AWS CLI, run the following command:
 
-```
+```bash
 aws iam create-service-linked-role --aws-service-name spot.amazonaws.com
 ```
 For more information, see [Service-linked role for Spot Instance requests](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-requests.html#service-linked-roles-spot-instance-requests) in the *Amazon EC2 User Guide*.
@@ -55,7 +55,7 @@ This only applies to AWS ParallelCluster versions up to and including version 2.
 The job isn't terminated and continues to run on the remaining nodes. The compute node is removed from the scheduler queue, but will appear in the hosts list as an orphaned and unavailable node.
 The user must delete the job when this occurs (`qdel {{<jobid>}}`). The node still displays in the hosts list (`qhost`), although this doesn't affect AWS ParallelCluster. To remove the host from the list, run the following command after replacing the instance.
 
-```
+```sh
 sudo -- bash -c 'source /etc/profile.d/sge.sh; qconf -dattr hostgroup hostlist {{<hostname>}} @allhosts; qconf -de {{<hostname>}}'
 ```
 

@@ -45,7 +45,7 @@ aws omics create-reference-store --name {{"reference store name"}}
 
 You receive a JSON response with the reference store ID and name, the ARN, and the timestamp of when your reference store was created.
 
-```
+```json
 {
     "id": "3242349265",
     "arn": "arn:aws:omics:us-west-2:555555555555:referenceStore/3242349265",
@@ -62,7 +62,7 @@ aws omics list-reference-stores
 
 In response, you receive the name of your newly created reference store.
 
-```
+```json
 {
     "referenceStores": [
         {
@@ -82,7 +82,7 @@ After you create a reference store, you can create import jobs to load genomic r
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -111,7 +111,7 @@ You must also have a trust policy similar to the following example.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -144,7 +144,7 @@ aws omics start-reference-import-job --reference-store-id {{reference store ID}}
 
 After the data is imported, you receive the following response in JSON.
 
-```
+```json
 {
         "id": "7252016478",
         "referenceStoreId": "3242349265",
@@ -162,7 +162,7 @@ aws omics get-reference-import-job --reference-store-id {{reference store ID}} -
 
 In response, you receive a response with the details for that reference store and its status.
 
-```
+```json
 {
     "id": "7252016478",
     "referenceStoreId": "3242349265",
@@ -187,7 +187,7 @@ aws omics list-references --reference-store-id {{reference store ID}} --filter n
 
 In response, you receive the following information.
 
-```
+```json
 {
     "references": [
         {

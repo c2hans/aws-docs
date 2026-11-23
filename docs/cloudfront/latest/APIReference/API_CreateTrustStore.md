@@ -30,6 +30,7 @@ POST /2020-05-31/trust-store HTTP/1.1
          </Tag>
       </Items>
    </Tags>
+   <UseClientCertificateOCSPEndpoint>{{boolean}}</UseClientCertificateOCSPEndpoint>
 </CreateTrustStoreRequest>
 ```
 
@@ -63,6 +64,11 @@ A complex type that contains zero or more `Tag` elements.
 Type: [Tags](API_Tags.md) object
 Required: No
 
+ ** [UseClientCertificateOCSPEndpoint](#API_CreateTrustStore_RequestSyntax) **   <a name="cloudfront-CreateTrustStore-request-UseClientCertificateOCSPEndpoint"></a>
+A boolean. When true, performs real-time certificate revocation checks by querying the OCSP endpoint specified within the client certificate.
+Type: Boolean
+Required: No
+
 ## Response Syntax
 <a name="API_CreateTrustStore_ResponseSyntax"></a>
 
@@ -77,6 +83,7 @@ HTTP/1.1 201
    <NumberOfCaCertificates>integer</NumberOfCaCertificates>
    <Reason>string</Reason>
    <Status>string</Status>
+   <UseClientCertificateOCSPEndpoint>boolean</UseClientCertificateOCSPEndpoint>
 </TrustStore>
 ```
 
@@ -119,6 +126,10 @@ Type: String
 The trust store's status.
 Type: String
 Valid Values: `pending | active | failed`
+
+ ** [UseClientCertificateOCSPEndpoint](#API_CreateTrustStore_ResponseSyntax) **   <a name="cloudfront-CreateTrustStore-response-UseClientCertificateOCSPEndpoint"></a>
+A boolean. When true, performs real-time certificate revocation checks by querying the OCSP endpoint specified within the client certificate.
+Type: Boolean
 
 ## Errors
 <a name="API_CreateTrustStore_Errors"></a>

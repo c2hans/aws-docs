@@ -157,7 +157,7 @@ The following table lists the supported IAM global condition keys for CloudTrail
 
 In the following example, the `eventContext` field includes IAM global condition key `aws:ViaAWSService` with a value of `false`, which indicates the API call was not made by an AWS service.
 
-```
+```JSON
 {
     "eventVersion": "1.11",
     "userIdentity": {

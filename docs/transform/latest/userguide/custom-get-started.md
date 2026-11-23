@@ -43,7 +43,7 @@ Use the AWS Transform agent plugin with Claude Code, Codex, or Cursor in the rep
 
 Add the AWS agent plugin marketplace and install the AWS Transform plugin:
 
-```
+```bash
 /plugin marketplace add awslabs/agent-plugins
 /plugin install aws-transform@agent-plugins-for-aws
 ```

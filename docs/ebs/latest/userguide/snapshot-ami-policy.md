@@ -181,7 +181,7 @@ To simplify the syntax, the following examples use a JSON file, `policyDetails.j
 **Example 1—Snapshot lifecycle policy with two schedules**
 This example creates a snapshot lifecycle policy that creates snapshots of all volumes that have a tag key of `costcenter` with a value of `115`. The policy includes two schedules. The first schedule creates a snapshot every day at 03:00 UTC. The second schedule creates a weekly snapshot every Friday at 17:00 UTC.
 
-```
+```bash
 aws dlm create-lifecycle-policy \
     --description "{{My volume policy}}" \
     --state ENABLED \
@@ -191,7 +191,7 @@ aws dlm create-lifecycle-policy \
 
 The following is an example of the `policyDetails.json` file.
 
-```
+```json
 {
     "PolicyType": "EBS_SNAPSHOT_MANAGEMENT",
     "ResourceTypes": [
@@ -238,7 +238,7 @@ The following is an example of the `policyDetails.json` file.
 
 If the request succeeds, the command returns the ID of the newly created policy. The following is example output.
 
-```
+```json
 {
    "PolicyId": "policy-{{0123456789abcdef0}}"
 }
@@ -247,7 +247,7 @@ If the request succeeds, the command returns the ID of the newly created policy.
 **Example 2—Snapshot lifecycle policy that targets instances and creates snapshots of a subset of data (non-root) volumes**
 This example creates a snapshot lifecycle policy that creates multi-volume snapshot sets from instances tagged with `code=production`. The policy includes only one schedule. The schedule does not create snapshots of the data volumes that are tagged with `code=temp`.
 
-```
+```bash
 aws dlm create-lifecycle-policy \
     --description "{{My volume policy}}" \
     --state ENABLED \
@@ -257,7 +257,7 @@ aws dlm create-lifecycle-policy \
 
 The following is an example of the `policyDetails.json` file.
 
-```
+```json
 {
     "PolicyType": "EBS_SNAPSHOT_MANAGEMENT",
     "ResourceTypes": [
@@ -296,7 +296,7 @@ The following is an example of the `policyDetails.json` file.
 
 If the request succeeds, the command returns the ID of the newly created policy. The following is example output.
 
-```
+```json
 {
    "PolicyId": "policy-{{0123456789abcdef0}}"
 }
@@ -305,7 +305,7 @@ If the request succeeds, the command returns the ID of the newly created policy.
 **Example 3—Snapshot lifecycle policy that automates local snapshots of Outpost resources**
 This example creates a snapshot lifecycle policy that creates snapshots of volumes tagged with `team=dev` across all of your Outposts. The policy creates the snapshots on the same Outposts as the source volumes. The policy creates snapshots every `12` hours starting at `00:00` UTC.
 
-```
+```bash
 aws dlm create-lifecycle-policy \
     --description "{{My local snapshot policy}}" \
     --state ENABLED \
@@ -315,7 +315,7 @@ aws dlm create-lifecycle-policy \
 
 The following is an example of the `policyDetails.json` file.
 
-```
+```json
 {
     "PolicyType": "EBS_SNAPSHOT_MANAGEMENT",
     "ResourceTypes": "VOLUME",
@@ -347,7 +347,7 @@ The following is an example of the `policyDetails.json` file.
 **Example 4—Snapshot lifecycle policy that creates snapshots in a Region and copies them to an Outpost**
 The following example policy creates snapshots of volumes that are tagged with `team=dev`. Snapshots are created in the same Region as the source volume. Snapshots are created every `12` hours starting at `00:00` UTC, and retains a maximum of `1` snapshot. The policy also copies the snapshots to Outpost `arn:aws:outposts:us-east-1:123456789012:outpost/op-1234567890abcdef0`, encrypts the copied snapshots using the default encryption KMS key, and retains the copies for `1` month.
 
-```
+```bash
 aws dlm create-lifecycle-policy \
     --description "{{Copy snapshots to Outpost}}" \
     --state ENABLED \
@@ -357,7 +357,7 @@ aws dlm create-lifecycle-policy \
 
 The following is an example of the `policyDetails.json` file.
 
-```
+```json
 {
     "PolicyType": "EBS_SNAPSHOT_MANAGEMENT",
     "ResourceTypes": "VOLUME",
@@ -397,7 +397,7 @@ The following is an example of the `policyDetails.json` file.
 **Example 5—Snapshot lifecycle policy with an archive-enabled, age-based schedule**
 This example creates a snapshot lifecycle policy that targets volumes tagged with `Name=Prod`. The policy has one age-based schedule that creates snapshots on the first day of each month at 09:00. The schedule retains each snapshot in the standard tier for one day, after which it moves them to the archive tier. Snapshots are stored in the archive tier for 90 days before being deleted.
 
-```
+```bash
 aws dlm create-lifecycle-policy \
     --description "{{Copy snapshots to Outpost}}" \
     --state ENABLED \
@@ -407,7 +407,7 @@ aws dlm create-lifecycle-policy \
 
 The following is an example of the `policyDetails.json` file.
 
-```
+```json
 {
     "ResourceTypes": [ "VOLUME"],
     "PolicyType": "EBS_SNAPSHOT_MANAGEMENT",
@@ -447,7 +447,7 @@ The following is an example of the `policyDetails.json` file.
 **Example 6—Snapshot lifecycle policy with an archive-enabled, count-based schedule**
 This example creates a snapshot lifecycle policy that targets volumes tagged with `Purpose=Test`. The policy has one count-based schedule that creates snapshots on the first day of each month at 09:00. The schedule archives snapshots immediately after creation and retains a maximum of three snapshots in the archive tier.
 
-```
+```bash
 aws dlm create-lifecycle-policy \
     --description "{{Copy snapshots to Outpost}}" \
     --state ENABLED \
@@ -457,7 +457,7 @@ aws dlm create-lifecycle-policy \
 
 The following is an example of the `policyDetails.json` file.
 
-```
+```json
 {
     "ResourceTypes": [ "VOLUME"],
     "PolicyType": "EBS_SNAPSHOT_MANAGEMENT",

@@ -27,7 +27,7 @@ The following code example shows how to get started using AWS Elemental MediaCon
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/MediaConvert#code-examples).
 
-```
+```csharp
 using Amazon.MediaConvert;
 using Amazon.MediaConvert.Model;
 
@@ -74,7 +74,7 @@ The following code example shows how to use `CreateJob`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/MediaConvert#code-examples).
 Set up the file locations, client, and wrapper.
 
-```
+```csharp
         // MediaConvert role Amazon Resource Name (ARN).
         // For information on creating this role, see
         // https://docs.aws.amazon.com/mediaconvert/latest/ug/creating-the-iam-role-in-mediaconvert-configured.html.
@@ -89,7 +89,7 @@ Set up the file locations, client, and wrapper.
         var wrapper = new MediaConvertWrapper(mcClient);
 ```
 
-```
+```csharp
         Console.WriteLine(new string('-', 80));
         Console.WriteLine($"Creating job for input file {fileInput}.");
         var jobId = await wrapper.CreateJob(mediaConvertRole!, fileInput!, fileOutput!);
@@ -98,7 +98,7 @@ Set up the file locations, client, and wrapper.
 ```
 Create the job using the wrapper method and return the job ID.
 
-```
+```csharp
     /// <summary>
     /// Create a job to convert a media file.
     /// </summary>
@@ -309,7 +309,7 @@ The following code example shows how to use `GetJob`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/MediaConvert#code-examples).
 Set up the file locations, client, and wrapper.
 
-```
+```csharp
         // MediaConvert role Amazon Resource Name (ARN).
         // For information on creating this role, see
         // https://docs.aws.amazon.com/mediaconvert/latest/ug/creating-the-iam-role-in-mediaconvert-configured.html.
@@ -325,7 +325,7 @@ Set up the file locations, client, and wrapper.
 ```
 Get a job by its ID.
 
-```
+```csharp
         Console.WriteLine(new string('-', 80));
         Console.WriteLine($"Getting job information for Job ID {jobId}");
         var job = await wrapper.GetJobById(jobId);
@@ -333,7 +333,7 @@ Get a job by its ID.
         Console.WriteLine(new string('-', 80));
 ```
 
-```
+```csharp
     /// <summary>
     /// Get the job information for a job by its ID.
     /// </summary>
@@ -361,7 +361,7 @@ The following code example shows how to use `ListJobs`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/MediaConvert#code-examples).
 Set up the file locations, client, and wrapper.
 
-```
+```csharp
         // MediaConvert role Amazon Resource Name (ARN).
         // For information on creating this role, see
         // https://docs.aws.amazon.com/mediaconvert/latest/ug/creating-the-iam-role-in-mediaconvert-configured.html.
@@ -377,7 +377,7 @@ Set up the file locations, client, and wrapper.
 ```
 List the jobs with a particular status.
 
-```
+```csharp
         Console.WriteLine(new string('-', 80));
         Console.WriteLine($"Listing all complete jobs.");
         var completeJobs = await wrapper.ListAllJobsByStatus(JobStatus.COMPLETE);
@@ -388,7 +388,7 @@ List the jobs with a particular status.
 ```
 List the jobs using a paginator.
 
-```
+```csharp
     /// <summary>
     /// List all of the jobs with a particular status using a paginator.
     /// </summary>

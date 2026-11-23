@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/oemonboardingguid
 
 1. Register the root CA on your AWS account with the following AWS CLI command (replace {{path-to-manufacturer-CA}} with the local path of the the root CA):
 
-   ```
+   ```bash
    aws iot register-ca-certificate --ca-certificate file://{{path-to-manufacturer-CA}} --certificate-mode SNI_ONLY --set-as-active --allow-auto-registration
    ```
 

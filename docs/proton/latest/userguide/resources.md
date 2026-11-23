@@ -62,13 +62,13 @@ AWS Proton applies tags to your resources by AWS Proton accounts, registered tem
 
 The following is an example of an AWS managed tag for an AWS Proton resource.
 
-```
+```json
 "aws:proton:template" = "arn:aws:proton:{{region-id}}:{{account-id}}:environment-template/{{env-template}}"
 ```
 
 The following is an example of a customer managed tag applied to a provisioned resource that was propagated from an AWS managed tag.
 
-```
+```json
 "proton:environment:database" = "arn:aws:proton:{{region-id}}:{{account-id}}:rds/{{env-db}}"
 ```
 
@@ -82,7 +82,7 @@ Here's the `proton_tags` variable definition:
 
 **proton.environment.variables.tf:**
 
-```
+```json
 variable "environment" {
   type = object({
     inputs = map(string)
@@ -100,7 +100,7 @@ Here's how tag values are assigned to this variable:
 
 **proton.auto.tfvars.json:**
 
-```
+```json
 {
   "environment": {
     "name": "dev",
@@ -119,7 +119,7 @@ Here's how tag values are assigned to this variable:
 
 And here's how you can add AWS Proton tags to your Terraform configuration so that they're added to provisioned resources:
 
-```
+```json
 # Configure the AWS Provider
 provider "aws" {
   region = var.aws_region
@@ -168,7 +168,7 @@ You can view, create, remove and edit tags using the AWS Proton AWS CLI.
 
 You can create or edit a tag for a resource as shown in the following example.
 
-```
+```sh
 $ aws proton tag-resource \
     --resource-arn "arn:aws:proton:{{region-id}}:{{account-id}}:service-template/{{webservice}}" \
     --tags '[{"key":"{{mykey1}}","value":"{{myval1}}"},{"key":"{{mykey2}}","value":"{{myval2}}"}]'
@@ -176,7 +176,7 @@ $ aws proton tag-resource \
 
 You can remove a tag for a resource as shown in the next example.
 
-```
+```sh
 $ aws proton untag-resource \
     --resource-arn "arn:aws:proton:{{region-id}}:{{account-id}}:service-template/{{webservice}}" \
     --tag-keys '["{{mykey1}}","{{mykey2}}"]'
@@ -184,7 +184,7 @@ $ aws proton untag-resource \
 
 You can list tags for a resource as shown in the final example.
 
-```
+```sh
 $ aws proton list-tags-for-resource \
     --resource-arn "arn:aws:proton:{{region-id}}:{{account-id}}:service-template/{{webservice}}"
 ```

@@ -29,7 +29,7 @@ For more information, see [Using cost allocation S3 bucket tags](https://docs.aw
 **Tools for PowerShell V4**
 **Example 1: This command removes all the tags associated with the given S3 bucket.**
 
-```
+```powershell
 Remove-S3BucketTagging -BucketName 'amzn-s3-demo-bucket'
 ```
 **Output:**
@@ -45,7 +45,7 @@ Performing the operation "Remove-S3BucketTagging (DeleteBucketTagging)" on targe
 **Tools for PowerShell V5**
 **Example 1: This command removes all the tags associated with the given S3 bucket.**
 
-```
+```powershell
 Remove-S3BucketTagging -BucketName 'amzn-s3-demo-bucket'
 ```
 **Output:**

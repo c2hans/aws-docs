@@ -27,7 +27,7 @@ You can use the AWS CLI or the Amazon Location APIs.
 
 The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html)` request to search the place index resource, {{ExamplePlaceIndex}}, for an address, name, city or region called {{Any Town}}.
 
-```
+```json
 POST /places/v0/indexes/{{ExamplePlaceIndex}}/search/text
 Content-type: application/json
 
@@ -60,7 +60,7 @@ When geocoding, you can geocode near a given position with the following optiona
 
 The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html)` request to search the place index resource for an address, name, city or region called {{Any Town}} near the position [{{-123.4567}},{{45.6789}}].
 
-```
+```json
 POST /places/v0/indexes/ExamplePlaceIndex/search/text
 Content-type: application/json
 
@@ -84,7 +84,7 @@ The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.co
 + The longitude of the northeast corner is {{-124.1387}}.
 + The latitude of the northeast corner is {{41.7096}}.
 
-```
+```json
 POST /places/v0/indexes/ExamplePlaceIndex/search/text
 Content-type: application/json
 
@@ -105,7 +105,7 @@ You can geocode within one or more countries you specify by using the following 
 
 The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html)` request to search for an address, name, city or region called {{Any Town}} in Germany and France.
 
-```
+```json
 POST /places/v0/indexes/ExamplePlaceIndex/search/text
 Content-type: application/json
 
@@ -123,7 +123,7 @@ You can filter the categories that are returned in your geocode request by using
 
 The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html)` request to search for an coffee shop called {{Hometown Coffee}} in the United States.
 
-```
+```json
 POST /places/v0/indexes/ExamplePlaceIndex/search/text
 Content-type: application/json
 
@@ -162,7 +162,7 @@ Content-type: application/json
 **Example**
 The following is an example response when you call the `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html)` operation from the Amazon Location Places APIs. The results include relevant [places](https://docs.aws.amazon.com/location/previous/APIReference/API_Place.html) and the request [summary](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForTextSummary.html). Two responses are shown, based on selecting Esri or HERE as the partner.
 
-```
+```json
 POST /places/v0/indexes/ExamplePlaceIndex/search/text
 Content-type: application/json
 
@@ -174,7 +174,7 @@ Content-type: application/json
 }
 ```
 
-```
+```json
 {
     "Results": [
         {
@@ -217,7 +217,7 @@ Content-type: application/json
 }
 ```
 
-```
+```json
 {
     "Summary": {
         "Text": "Amazon",

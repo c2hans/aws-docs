@@ -15,7 +15,7 @@ The following example IAM policy denies access to AWS Proton actions that match 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -54,7 +54,7 @@ In the next example policy, the first Resource-level statement denies access to 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -94,7 +94,7 @@ The final policy example allows developer AWS Proton actions that match the spec
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

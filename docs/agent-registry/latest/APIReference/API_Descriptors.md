@@ -39,6 +39,11 @@ Required: No
 Type: [McpServerDescriptor](API_McpServerDescriptor.md) object
 Required: No
 
+ ** signatureAgentCard **   <a name="agentregistry-Type-Descriptors-signatureAgentCard"></a>
+ The signature agent card descriptor, populated when the record represents a web bot. It identifies the JSON Web Key Set (JWKS) used to verify the bot's HTTP message signatures.
+Type: [SignatureAgentCardDescriptor](API_SignatureAgentCardDescriptor.md) object
+Required: No
+
 ## See Also
 <a name="API_Descriptors_SeeAlso"></a>
 

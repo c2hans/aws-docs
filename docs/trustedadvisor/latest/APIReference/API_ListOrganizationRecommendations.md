@@ -150,7 +150,7 @@ List all organization recommendations and do not include a filter.
 #### Sample Response
 <a name="API_ListOrganizationRecommendations_Example_1_Response"></a>
 
-```
+```json
 {
                     "organizationRecommendationSummaries": [
                     {
@@ -208,7 +208,7 @@ Filter and return a max of one organization recommendation that is a part of the
 #### Sample Request
 <a name="API_ListOrganizationRecommendations_Example_2_Request"></a>
 
-```
+```json
 {
                     "pillar": "security",
                     "maxResults": 100
@@ -218,7 +218,7 @@ Filter and return a max of one organization recommendation that is a part of the
 #### Sample Response
 <a name="API_ListOrganizationRecommendations_Example_2_Response"></a>
 
-```
+```json
 {
                     "organizationRecommendationSummaries": [{
                     "arn": "arn:aws:trustedadvisor:::organization-recommendation/9534ec9b-bf3a-44e8-8213-2ed68b39d9d5",
@@ -253,7 +253,7 @@ Use the "nextToken" returned from a previous request to fetch the next page of f
 #### Sample Request
 <a name="API_ListOrganizationRecommendations_Example_3_Request"></a>
 
-```
+```json
 {
                     "nextToken": "REDACTED",
                     "pillar": "security",
@@ -264,7 +264,7 @@ Use the "nextToken" returned from a previous request to fetch the next page of f
 #### Sample Response
 <a name="API_ListOrganizationRecommendations_Example_3_Response"></a>
 
-```
+```json
 {
                     "organizationRecommendationSummaries": [{
                     "arn": "arn:aws:trustedadvisor:::organization-recommendation/4ecff4d4-1bc1-4c99-a5b8-0fff9ee500d6",

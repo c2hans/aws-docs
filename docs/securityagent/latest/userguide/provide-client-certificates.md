@@ -31,7 +31,7 @@ AWS Security Agent reads the secret once, when the penetration test starts. Rota
 
 The secret must hold a JSON `SecretString` with the following fields:
 
-```
+```json
 {
   "certificate": "-----BEGIN CERTIFICATE-----\n...\n-----END CERTIFICATE-----",
   "privateKey": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----",
@@ -49,7 +49,7 @@ If you create the secret in the Secrets Manager console, use the **Plaintext** t
 
 The following AWS CLI command builds the secret from local `client.crt` and `client.key` files, so that the line breaks are encoded correctly. Replace `client.crt` and `client.key` with the paths to your certificate and private key files, and replace `my-agent-space-partner-api-cert` with your secret name. Start the name with your Agent Space name so that the service role can read the secret without an extra grant:
 
-```
+```bash
 aws secretsmanager create-secret \
   --name "my-agent-space-partner-api-cert" \
   --secret-string "$(jq -n --rawfile c client.crt --rawfile k client.key \
@@ -65,7 +65,7 @@ The penetration test service role reads the secret when the penetration test run
 
 If the secret name starts with your Agent Space name, the service role policy described in [Create the IAM roles for AWS Security Agent](create-iam-role.md) already grants `secretsmanager:GetSecretValue` on it. Otherwise, add a statement for the secret, as in the following example:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -115,7 +115,7 @@ Set `clientCertificates` in the `assets` parameter of your `create-pentest` or `
 
 The following example attaches one client certificate to a target host:
 
-```
+```bash
 aws securityagent create-pentest \
   --title "My penetration test" \
   --agent-space-id "your-agent-space-id" \

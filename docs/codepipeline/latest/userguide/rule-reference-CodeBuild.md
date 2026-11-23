@@ -82,7 +82,7 @@ For more information, see [ EnvironmentVariable](https://docs.aws.amazon.com/cod
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: codebuild-rule
 ruleTypeId:
   category: Rule
@@ -100,7 +100,7 @@ region: us-east-1
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "codebuild-rule",
     "ruleTypeId": {

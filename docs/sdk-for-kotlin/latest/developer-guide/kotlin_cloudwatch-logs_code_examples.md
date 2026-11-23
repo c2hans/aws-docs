@@ -24,7 +24,7 @@ The following code example shows how to use `DeleteSubscriptionFilter`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun deleteSubFilter(
     filter: String?,
     logGroup: String?,
@@ -51,7 +51,7 @@ The following code example shows how to use `DescribeSubscriptionFilters`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun describeFilters(logGroup: String) {
     val request =
         DescribeSubscriptionFiltersRequest {
@@ -77,7 +77,7 @@ The following code example shows how to use `StartLiveTail`.
 **SDK for Kotlin**
 Include the required files.
 
-```
+```kotlin
 import aws.sdk.kotlin.services.cloudwatchlogs.CloudWatchLogsClient
 import aws.sdk.kotlin.services.cloudwatchlogs.model.StartLiveTailRequest
 import aws.sdk.kotlin.services.cloudwatchlogs.model.StartLiveTailResponseStream
@@ -85,7 +85,7 @@ import kotlinx.coroutines.flow.takeWhile
 ```
 Start the Live Tail session.
 
-```
+```kotlin
     val client = CloudWatchLogsClient.fromEnvironment()
 
     val request = StartLiveTailRequest {

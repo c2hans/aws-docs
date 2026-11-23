@@ -85,7 +85,7 @@ Add the following contents to your `Dockerfile`.
 
 **Example `~/eb-docker-flask/Dockerfile`**
 
-```
+```dockerfile
 FROM public.ecr.aws/docker/library/python:3.12
 COPY . /app
 WORKDIR /app
@@ -98,7 +98,7 @@ Add the following contents to your `app.py` file.
 
 **Example `~/eb-docker-flask/app.py`**
 
-```
+```python
 from flask import Flask
 app = Flask(__name__)
 @app.route('/')

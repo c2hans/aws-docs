@@ -23,7 +23,7 @@ Training data must follow the OpenAI chat completions format with 100-20K exampl
 ------
 #### [ Example: General question-answering ]
 
-```
+```json
 {
             "messages": [
                 {
@@ -41,7 +41,7 @@ Training data must follow the OpenAI chat completions format with 100-20K exampl
 ------
 #### [ Example: Math problem ]
 
-```
+```json
 {
   "id": "sample-001",
   "messages": [
@@ -76,7 +76,7 @@ To upload a training file, choose the tab for your preferred method, and then fo
 ------
 #### [ OpenAI SDK (Python) ]
 
-```
+```python
 # Requires OPENAI_API_KEY and OPENAI_BASE_URL environment variables
 from openai import OpenAI
 client = OpenAI()
@@ -98,7 +98,7 @@ print(f"✅ Training file uploaded successfully: {training_file_id}")
 
 Make a POST request to `/v1/files`:
 
-```
+```bash
 curl https://bedrock-mantle.us-west-2.api.aws/v1/files \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
   -F purpose="fine-tune" \
@@ -115,7 +115,7 @@ To retrieve details about a specific file, choose the tab for your preferred met
 ------
 #### [ OpenAI SDK (Python) ]
 
-```
+```python
 # Requires OPENAI_API_KEY and OPENAI_BASE_URL environment variables
 from openai import OpenAI
 client = OpenAI()
@@ -132,7 +132,7 @@ print(json.dumps(file_details.model_dump(), indent=2))
 
 Make a GET request to `/v1/files/{file_id}`:
 
-```
+```bash
 curl https://bedrock-mantle.us-west-2.api.aws/v1/files/file-abc123 \
   -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
@@ -147,7 +147,7 @@ To list uploaded files, choose the tab for your preferred method, and then follo
 ------
 #### [ OpenAI SDK (Python) ]
 
-```
+```python
 # Requires OPENAI_API_KEY and OPENAI_BASE_URL environment variables
 from openai import OpenAI
 client = OpenAI()
@@ -164,7 +164,7 @@ print(json.dumps(files_response.model_dump(), indent=2))
 
 Make a GET request to `/v1/files`:
 
-```
+```bash
 curl https://bedrock-mantle.us-west-2.api.aws/v1/files?purpose=fine-tune \
   -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
@@ -179,7 +179,7 @@ To delete a file, choose the tab for your preferred method, and then follow the 
 ------
 #### [ OpenAI SDK (Python) ]
 
-```
+```python
 # Requires OPENAI_API_KEY and OPENAI_BASE_URL environment variables
 from openai import OpenAI
 client = OpenAI()
@@ -193,7 +193,7 @@ delete_response = client.files.delete(training_file_id)
 
 Make a DELETE request to `/v1/files/{file_id}`:
 
-```
+```bash
 curl -X DELETE https://bedrock-mantle.us-west-2.api.aws/v1/files/file-abc123 \
   -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
@@ -229,7 +229,7 @@ These additional fields are passed to your reward function during evaluation, en
 ------
 #### [ Chemistry problem ]
 
-```
+```json
 {
   "id": "chem-001",
   "messages": [
@@ -254,7 +254,7 @@ The `reference_answer` field contains the expected output or evaluation criteria
 ------
 #### [ Math problem with metadata ]
 
-```
+```json
 {
   "messages": [
     {

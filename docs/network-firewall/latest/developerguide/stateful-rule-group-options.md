@@ -20,3 +20,4 @@ The sections that follow provide details for each of these options.
 + [IP set references in Suricata compatible AWS Network Firewall rule groups](rule-groups-ip-set-references.md)
 + [Geographic IP filtering in Suricata compatible AWS Network Firewall rule groups](rule-groups-geo-ip-filtering.md)
 + [URL and domain category filtering in Suricata compatible AWS Network Firewall rule groups](rule-groups-url-filtering.md)
++ [Filtering traffic by firewall endpoint VPC](stateful-rule-groups-endpoint-vpc.md)

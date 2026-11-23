@@ -25,7 +25,7 @@ To restrict use of an IAM role by region, take the following steps.<a name="iden
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -51,7 +51,7 @@ To restrict use of an IAM role by region, take the following steps.<a name="iden
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

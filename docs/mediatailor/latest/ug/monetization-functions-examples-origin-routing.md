@@ -14,7 +14,7 @@ A broadcaster serves a linear channel from a channel assembly origin that uses p
 
 **Map postal code to audience (CUSTOM\_OUTPUT):**
 
-```
+```JSON
 {
     "FunctionId": "zipAudienceRouting",
     "FunctionType": "CUSTOM_OUTPUT",
@@ -32,7 +32,7 @@ The output key uses the `manifest.` namespace, so MediaTailor removes the prefix
 ## Function mapping
 <a name="monetization-functions-examples-origin-routing-mapping"></a>
 
-```
+```JSON
 {
     "FunctionMapping": {
         "PRE_SESSION_INITIALIZATION": "zipAudienceRouting"

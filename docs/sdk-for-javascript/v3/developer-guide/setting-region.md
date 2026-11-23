@@ -15,7 +15,7 @@ The SDK for JavaScript doesn't select a Region by default. However, you can set 
 
 When you instantiate a service object, you can specify the AWS Region for that resource as part of the client class constructor, as shown here.
 
-```
+```javascript
 const s3Client = new S3.S3Client({region: 'us-west-2'});
 ```
 
@@ -33,7 +33,7 @@ Much like the shared credentials file lets you store credentials for use by the 
 
 If you don't already have a shared `config` file, you can create one in the designated directory. In the following example, the `config` file sets both the Region and the output format.
 
-```
+```ini
 [default]
    region=us-west-2
    output=json

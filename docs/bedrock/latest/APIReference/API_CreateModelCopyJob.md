@@ -127,7 +127,7 @@ HTTP Status Code: 400
 
 The following example shows how to copy a custom model from `us-west-2` into the region from which the request is made, using the AWS CLI.
 
-```
+```bash
 aws bedrock create-model-copy-job --source-model-arn arn:aws:bedrock:us-west-2:123456789012:custom-model/amazon.titan-text-lite-v1:0:4k/MyCustomModel --target-model-name MyCustomModelCopy
 ```
 

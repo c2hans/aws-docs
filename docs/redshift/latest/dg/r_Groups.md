@@ -16,7 +16,7 @@ select * from pg_group;
 
 For example, to list all database users by group, run the following SQL.
 
-```
+```sql
 SELECT u.usesysid
 ,g.groname
 ,u.usename

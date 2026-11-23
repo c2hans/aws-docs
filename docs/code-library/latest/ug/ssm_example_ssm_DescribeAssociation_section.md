@@ -135,7 +135,7 @@ For more information, see [Editing and creating a new version of an association]
 **Tools for PowerShell V4**
 **Example 1: This example describes the association between an instance and a document.**
 
-```
+```powershell
 Get-SSMAssociation -InstanceId "i-0000293ffd8c57862" -Name "AWS-UpdateSSMAgent"
 ```
 **Output:**
@@ -154,7 +154,7 @@ Status.AdditionalInfo : Additional-Config-Needed
 **Tools for PowerShell V5**
 **Example 1: This example describes the association between an instance and a document.**
 
-```
+```powershell
 Get-SSMAssociation -InstanceId "i-0000293ffd8c57862" -Name "AWS-UpdateSSMAgent"
 ```
 **Output:**

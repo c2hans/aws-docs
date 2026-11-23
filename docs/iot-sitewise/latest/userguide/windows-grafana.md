@@ -25,7 +25,7 @@ Creating a dashboard is the final step in building your local monitoring solutio
 
   You can also use the quick start guide by importing the provided example dashboard template to quickly create a dashboard with a time series plot for the data that Node-RED generates in previous section. This template provides a starting point that you can customize to meet your specific monitoring needs.
 
-  ```
+  ```json
   {
     "__inputs": [
       {

@@ -24,7 +24,7 @@ To create a YAML application component document for a sample application, follow
 **Create a YAML component file**
 Use a file editing tool to create your component document. Documentation examples use a file named `{{update-linux-os.yaml}}`, with the following content:
 
-```
+```yaml
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT-0
 #
@@ -60,7 +60,7 @@ Use a tool like this online [YAML Validator](https://jsonformatter.org/yaml-vali
 **Create a YAML component file**
 Use a file editing tool to create your component document. Documentation examples use a file named `{{update-windows-os.yaml}}`, with the following content:
 
-```
+```yaml
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT-0
 #
@@ -96,7 +96,7 @@ Use a tool like this online [YAML Validator](https://jsonformatter.org/yaml-vali
 **Create a YAML component file**
 Use a file editing tool to create your component document. Documentation examples use a file named `{{wget-macos.yaml}}`, with the following content:
 
-```
+```yaml
 name: WgetInstallDocument
 description: This is wget installation document.
 schemaVersion: 1.0

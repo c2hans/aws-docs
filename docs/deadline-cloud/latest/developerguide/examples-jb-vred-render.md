@@ -16,6 +16,6 @@ To run this bundle on a service-managed fleet, your queue needs access to the `d
 
 Submit the bundle:
 
-```
+```bash
 deadline bundle gui-submit vred_render/
 ```

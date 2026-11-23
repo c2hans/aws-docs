@@ -13,7 +13,7 @@ For more information, see [Pagination](https://docs.aws.amazon.com/AWSEC2/latest
 
 Where possible, specify a list of resource IDs in your describe calls. This is the fastest way to describe a large number of resources. Note that you should not specify more than 1,000 IDs in a single call. The following is an example.
 
-```
+```java
 private List<Reservation> describeMyInstances(List<String> ids){
     if (ids == null || ids.isEmpty()) {
         return ImmutableList.of();
@@ -28,7 +28,7 @@ private List<Reservation> describeMyInstances(List<String> ids){
 
 If you can't specify resource IDs in your describe calls, we strongly recommend using pagination. The following is an example.
 
-```
+```java
 private List<Reservation> describeMyInstances(final Collection<Filter> filters){
     final DescribeInstancesRequest request = new DescribeInstancesRequest()
             .withFilters(filters)
@@ -57,7 +57,7 @@ The following are examples of code that inadvertently makes unpaginated calls.
 **Example issue: Passing an empty list of resource IDs**
 The following code uses a list of IDs. However, if the list is empty, the result is an unpaginated call.
 
-```
+```java
 private List<Reservation> describeMyInstances(List<String> ids){
     final DescribeInstancesRequest request = new DescribeInstancesRequest()
             .withInstanceIds(ids);
@@ -67,7 +67,7 @@ private List<Reservation> describeMyInstances(List<String> ids){
 ```
 To correct this issue, ensure that the list is not empty before making the describe call.
 
-```
+```java
 private List<Reservation> describeMyInstances(List<String> ids){
     if (ids == null || ids.isEmpty()) {
         return ImmutableList.of();
@@ -87,7 +87,7 @@ private List<Reservation> describeMyInstances(List<String> ids){
 **Example issue: Not setting MaxResults**
 The following code checks and uses `nextToken`, but does not set `MaxResults`.
 
-```
+```java
 private List<Reservation> describeMyInstances(final Collection<Filter> filters){
     final DescribeInstancesRequest request = new DescribeInstancesRequest()
             .withFilters(filters);
@@ -106,7 +106,7 @@ private List<Reservation> describeMyInstances(final Collection<Filter> filters){
 ```
 To correct this issue, add `withMaxResults` as follows.
 
-```
+```java
 private List<Reservation> describeMyInstances(final Collection<Filter> filters){
     final DescribeInstancesRequest request = new DescribeInstancesRequest()
             .withFilters(filters)

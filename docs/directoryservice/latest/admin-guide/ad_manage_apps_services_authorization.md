@@ -43,7 +43,7 @@ For more information about Directory Service API permissions, see [Directory Ser
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -67,7 +67,7 @@ For more information about Directory Service API permissions, see [Directory Ser
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

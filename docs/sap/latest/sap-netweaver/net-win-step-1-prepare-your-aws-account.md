@@ -15,7 +15,7 @@ In this example, we step through setting up a sample environment for the install
 
      1. Display the AWS CLI configuration data:
 
-        ```
+        ```sh
          $ aws configure list
         ```
 
@@ -62,7 +62,7 @@ In this example, we step through setting up a sample environment for the install
 
      Make sure that you choose one of the [Amazon EC2 Instance Types for SAP](https://aws.amazon.com/sap/instance-types/). Sample AWS CLI syntax is given below.
 
-     ```
+     ```sh
      $ aws ec2 run-instances \
      --image-id <AMI-ID> \
      --monitoring Enabled=true \
@@ -77,7 +77,7 @@ In this example, we step through setting up a sample environment for the install
 
      This example enables detailed monitoring (data is available in 1-minute periods for an additional cost) which is a support prerequisite for SAP workloads on Amazon EC2.
 
-     ```
+     ```sh
      $ aws ec2 run-instances \
      --image-id ami-012345678901234ab \
      --monitoring Enabled=true \

@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Get detailed information about an image.
 
-```
+```sh
 pcluster describe-image [-h]
                  --image-id {{IMAGE_ID}}
                 [--debug]

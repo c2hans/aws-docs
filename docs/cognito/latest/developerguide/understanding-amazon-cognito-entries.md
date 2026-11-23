@@ -27,7 +27,7 @@ The following example CloudTrail events demonstrate the information that Amazon 
 
 Amazon Cognito logs the following event when a new user navigates to the sign-in page for your app.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity":
@@ -79,7 +79,7 @@ Amazon Cognito logs the following event when a new user navigates to the sign-in
 
 Amazon Cognito logs the following event when a new user chooses **Sign up** from the sign-in page for your app.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity":
@@ -134,7 +134,7 @@ Amazon Cognito logs the following event when a new user chooses **Sign up** from
 
 Amazon Cognito logs the following event when a new user chooses a username, enters an email address, and chooses a password from the sign-in page for your app. Amazon Cognito doesn't log identifying information about the user's identity to CloudTrail.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity":
@@ -205,7 +205,7 @@ Amazon Cognito logs the following event when a new user chooses a username, ente
 
 Amazon Cognito logs the following event when a new user accesses the user confirmation page in the hosted UI after they sign up.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity":
@@ -260,7 +260,7 @@ Amazon Cognito logs the following event when a new user accesses the user confir
 
 Amazon Cognito logs the following event when, in the user confirmation page in the hosted UI, a user enters a code that Amazon Cognito sent them in an email message.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity":
@@ -350,7 +350,7 @@ Amazon Cognito logs the following event when, in the user confirmation page in t
 
 Amazon Cognito logs the following event when a user who has authenticated with your SAML IdP submits the SAML assertion to your `/saml2/idpresponse` endpoint.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity":
@@ -406,7 +406,7 @@ The following are example events from requests to the [Token endpoint](token-end
 
 Amazon Cognito logs the following event when a user who has authenticated and received an authorization code submits the code to your `/oauth2/token` endpoint.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity":
@@ -465,7 +465,7 @@ Amazon Cognito logs the following event when a user who has authenticated and re
 
 Amazon Cognito logs the following event when your back-end system submits a `client_credentials` request for an access token to your `/oauth2/token` endpoint.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity":
@@ -516,7 +516,7 @@ Amazon Cognito logs the following event when your back-end system submits a `cli
 
 Amazon Cognito logs the following event when your app exchanges a refresh token for a new ID and access token with your `/oauth2/token` endpoint.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity":
@@ -578,7 +578,7 @@ Amazon Cognito delivers these events asynchronously, and might deliver an event 
 
 The following example event shows that a recovery deleted a user that was created after the recovery point.
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -621,7 +621,7 @@ The following example event shows that a recovery deleted a user that was create
 
 The following example is a log entry for a request for the `CreateIdentityPool` action. The request was made by an IAM user named Alice.
 
-```
+```json
 {
     "eventVersion": "1.03",
     "userIdentity": {
@@ -665,7 +665,7 @@ The following example is a log entry for a request for the `CreateIdentityPool` 
 
 The following example is a log entry for a request for the `GetCredentialsForIdentity` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -711,7 +711,7 @@ The following example is a log entry for a request for the `GetCredentialsForIde
 
 The following example is a log entry for a request for the `GetId` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -752,7 +752,7 @@ The following example is a log entry for a request for the `GetId` action.
 
 The following example is a log entry for a request for the `GetOpenIdToken` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -793,7 +793,7 @@ The following example is a log entry for a request for the `GetOpenIdToken` acti
 
 The following example is a log entry for a request for the `GetOpenIdTokenForDeveloperIdentity` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -852,7 +852,7 @@ The following example is a log entry for a request for the `GetOpenIdTokenForDev
 
 The following example is a log entry for a request for the `UnlinkIdentity` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

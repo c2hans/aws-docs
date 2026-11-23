@@ -15,6 +15,12 @@ Type: String
 Pattern: `arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:capacity-provider/[a-zA-Z][a-zA-Z0-9_]{0,47}-[a-zA-Z0-9]{10}`
 Required: Yes
 
+ ** operatingSystemConfiguration **   <a name="bedrockagentcorecontrol-Type-CapacityProviderConfiguration-operatingSystemConfiguration"></a>
+The operating system configuration of the agents that Amazon Bedrock AgentCore Runtime runs on the capacity provider.
+Type: [OperatingSystemConfiguration](API_OperatingSystemConfiguration.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
+
 ## See Also
 <a name="API_CapacityProviderConfiguration_SeeAlso"></a>
 

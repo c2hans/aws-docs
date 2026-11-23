@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 The following example creates a topic with the name from the command line, in your default region, and displays the resulting topic ARN.
 
-```
+```go
 package main
 
 import (

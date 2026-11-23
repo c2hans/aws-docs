@@ -66,7 +66,7 @@ Enable CORS by returning the correct headers.
 #### PUT schema
 <a name="clusters-clusterarn-version-request-body-put-example"></a>
 
-```
+```json
 {
   "targetKafkaVersion": "string",
   "configurationInfo": {
@@ -83,7 +83,7 @@ Enable CORS by returning the correct headers.
 #### UpdateClusterKafkaVersionResponse schema
 <a name="clusters-clusterarn-version-response-body-updateclusterkafkaversionresponse-example"></a>
 
-```
+```json
 {
   "clusterArn": "string",
   "clusterOperationArn": "string"
@@ -93,7 +93,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="clusters-clusterarn-version-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

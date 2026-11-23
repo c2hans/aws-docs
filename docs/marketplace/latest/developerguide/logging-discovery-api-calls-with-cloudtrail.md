@@ -21,6 +21,7 @@ All Discovery API actions are logged by CloudTrail. The following operations gen
 + `GetOfferSet`
 + `ListPurchaseOptions`
 + `ListFulfillmentOptions`
++ `ListListingAttributes`
 + `SearchFacets`
 + `SearchListings`
 
@@ -31,7 +32,7 @@ The event source for Discovery API events is `discovery-marketplace.amazonaws.co
 
 The following example shows a CloudTrail log entry that demonstrates the `GetListing` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

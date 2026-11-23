@@ -13,7 +13,7 @@ Replace the following values with your own details:
 + {{object-key}} – The S3 object key of the script to import. This includes the name of the script and its location in the folder structure of the bucket. For example, `scripts/script.sh`. For more information, see [Organizing objects in the Amazon S3 console by using folders](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-folders.html) in the *Amazon Simple Storage Service User Guide*.
 + {{shell}} – The Linux shell to use to run the script, such as `bash`.
 
-```
+```txt
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="==MYBOUNDARY=="
 
@@ -34,7 +34,7 @@ The IAM instance profile for the node group must have access to the bucket. The 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

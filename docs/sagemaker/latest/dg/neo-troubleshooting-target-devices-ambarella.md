@@ -11,7 +11,7 @@ SageMaker Neo requires models to be packaged in a compressed TAR file (`*.tar.gz
 
 For example, the contents of your compressed TAR file should look similar to the following example:
 
-```
+```python
 ├──amba_config.json
 ├──calib_data
 |    ├── data1
@@ -47,7 +47,7 @@ The configuration file provides information required by the Ambarella toolchain 
 
 The following is a sample configuration file:
 
-```
+```python
 {
     "inputs": {
         "data": {

@@ -40,7 +40,7 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/remove-reg
 
  **To remove a Region**
 
-```
+```bash
 aws sso-admin remove-region \
     --instance-arn arn:aws:sso:::instance/ssoins-1234567890abcdef \
     --region-name eu-west-1
@@ -48,7 +48,7 @@ aws sso-admin remove-region \
 
  **To check the current Region status**
 
-```
+```bash
 aws sso-admin describe-region \
     --instance-arn arn:aws:sso:::instance/ssoins-1234567890abcdef \
     --region-name eu-west-1

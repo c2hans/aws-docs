@@ -28,7 +28,7 @@ For a configuration you added with `agentcore add online-eval`, set `enableOnCre
 
 For a configuration created outside a project, control execution status with the following commands. They take the configuration ID. Run `agentcore eval online-eval list` to find it.
 
-```
+```bash
 # Pause a running online evaluation
 agentcore eval online-eval pause --id <ONLINE_EVAL_ID>
 
@@ -47,7 +47,7 @@ In either case, set `serviceNames` so the service can identify your agent’s tr
 
 If you use `logGroupNamePrefixes` to match Amazon Bedrock AgentCore Runtime log groups, make sure your runtime sends spans to the agent’s own log group. For agents that still use the shared `aws/spans` log group, set `UNIFIED_TRACES_DESTINATION_ENABLED=true` on the runtime. For more information, see [Span destination for agents hosted in Amazon Bedrock AgentCore runtime](observability-configure.md#observability-configure-unified-traces).
 
-```
+```python
 # Match input log groups by prefix instead of exact names
 dataSourceConfig={
     "cloudWatchLogs": {
@@ -75,7 +75,7 @@ The following code samples demonstrate how to create online evaluation configura
 
 1.
 
-   ```
+   ```bash
    # Create online evaluation configuration
    agentcore add online-eval \
      --name "your_config_name" \
@@ -91,7 +91,7 @@ Run this from inside an AgentCore project directory created with `agentcore crea
 
 1.
 
-   ```
+   ```python
    from bedrock_agentcore_starter_toolkit import Evaluation
 
    # Initialize the evaluation client
@@ -123,7 +123,7 @@ Run this from inside an AgentCore project directory created with `agentcore crea
 
 1.
 
-   ```
+   ```python
    import boto3
 
    # Your input log group that contains agent traces
@@ -157,7 +157,7 @@ Run this from inside an AgentCore project directory created with `agentcore crea
 
 1.
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-online-evaluation-config \
        --online-evaluation-config-name "strands_healthcare_agent_1" \
        --description "Continuous evaluation of a healthcare agent" \

@@ -22,13 +22,13 @@ The following examples show you how to find your model evaluation jobs using the
 
 In the AWS CLI, you can use the `help` command to view parameters are required, and which parameters are optional when using `list-evaluation-jobs`.
 
-```
+```bash
 aws bedrock list-evaluation-jobs help
 ```
 
 The follow is an example of using `list-evaluation-jobs` and specifying that maximum of 5 jobs be returned. By default jobs are returned in descending order from the time when they where started.
 
-```
+```bash
 aws bedrock list-evaluation-jobs --max-items 5
 ```
 
@@ -37,7 +37,7 @@ aws bedrock list-evaluation-jobs --max-items 5
 
 The following examples show how to use the AWS SDK for Python (Boto3) to find a model evaluation job you have previously created.
 
-```
+```python
 import boto3
 client = boto3.client('bedrock')
 

@@ -66,7 +66,7 @@ aws docdb apply-pending-maintenance-action ^
 ```
 Output from this operation looks like the following.
 
-```
+```json
 {
     "ResourcePendingMaintenanceActions": {
         "ResourceIdentifier": "arn:aws:rds:aa-example-1:111122223333:cluster:sample-cluster",

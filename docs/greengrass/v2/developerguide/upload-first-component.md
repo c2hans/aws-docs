@@ -44,7 +44,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 
    1. <a name="core-device-allow-s3-bucket-access-console-step-2"></a>On the **JSON** tab, replace the placeholder content with the following policy. Replace amzn-s3-demo-bucket with the name of the S3 bucket that contains component artifacts for the core device to download.
 
-      ```
+      ```json
       {
         "Version": "2012-10-17",
         "Statement": [
@@ -77,7 +77,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 
    1. Under **Component information**, choose **Enter recipe as JSON**. The placeholder recipe should look similar to the following example.
 
-      ```
+      ```json
       {
         "RecipeFormatVersion": "2020-01-25",
         "ComponentName": "com.example.HelloWorld",
@@ -135,7 +135,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 
    You can use an existing S3 bucket, or run the following command to create a bucket. This command creates a bucket with your AWS account ID and AWS Region to form a unique bucket name. Replace {{123456789012}} with your AWS account ID and {{region}} with the AWS Region that you use for this tutorial.
 
-   ```
+   ```bash
    aws s3 mb s3://greengrass-component-artifacts-{{123456789012}}-{{region}}
    ```
 
@@ -153,7 +153,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 
    1. Create a file called `component-artifact-policy.json` and copy the following JSON into the file. This policy allows access to all files in an S3 bucket. Replace amzn-s3-demo-bucket with the name of the S3 bucket.
 
-      ```
+      ```json
       {
         "Version": "2012-10-17",
         "Statement": [
@@ -173,7 +173,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       aws iam create-policy \\
         --policy-name {{MyGreengrassV2ComponentArtifactPolicy}} \\
         --policy-document file://component-artifact-policy.json
@@ -182,7 +182,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-      ```
+      ```cmd
       aws iam create-policy ^
         --policy-name {{MyGreengrassV2ComponentArtifactPolicy}} ^
         --policy-document file://component-artifact-policy.json
@@ -191,7 +191,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 ------
 #### [ PowerShell ]
 
-      ```
+      ```ps
       aws iam create-policy `
         --policy-name {{MyGreengrassV2ComponentArtifactPolicy}} `
         --policy-document file://component-artifact-policy.json
@@ -206,7 +206,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       aws iam attach-role-policy \\
         --role-name {{GreengrassV2TokenExchangeRole}} \\
         --policy-arn arn:aws:iam::{{123456789012}}:policy/{{MyGreengrassV2ComponentArtifactPolicy}}
@@ -215,7 +215,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-      ```
+      ```cmd
       aws iam attach-role-policy ^
         --role-name {{GreengrassV2TokenExchangeRole}} ^
         --policy-arn arn:aws:iam::{{123456789012}}:policy/{{MyGreengrassV2ComponentArtifactPolicy}}
@@ -224,7 +224,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 ------
 #### [ PowerShell ]
 
-      ```
+      ```ps
       aws iam attach-role-policy `
         --role-name {{GreengrassV2TokenExchangeRole}} `
         --policy-arn arn:aws:iam::{{123456789012}}:policy/{{MyGreengrassV2ComponentArtifactPolicy}}
@@ -241,7 +241,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    aws s3 cp \
      artifacts/com.example.HelloWorld/1.0.0/hello_world.py \
      s3://amzn-s3-demo-bucket/artifacts/com.example.HelloWorld/1.0.0/hello_world.py
@@ -250,7 +250,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    aws s3 cp ^
      artifacts/com.example.HelloWorld/1.0.0/hello_world.py ^
      s3://amzn-s3-demo-bucket/artifacts/com.example.HelloWorld/1.0.0/hello_world.py
@@ -259,7 +259,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 ------
 #### [ PowerShell ]
 
-   ```
+   ```bash
    aws s3 cp `
      artifacts/com.example.HelloWorld/1.0.0/hello_world.py `
      s3://amzn-s3-demo-bucket/artifacts/com.example.HelloWorld/1.0.0/hello_world.py
@@ -282,7 +282,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    "Artifacts": [
      {
        "URI": "s3://amzn-s3-demo-bucket/artifacts/com.example.HelloWorld/1.0.0/hello_world.py"
@@ -294,13 +294,13 @@ In this section, you complete these steps on your Greengrass core device to uplo
 
    <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-   ```
+   ```bash
    nano recipes/com.example.HelloWorld-1.0.0.json
    ```
 
    Add the artifact to the recipe. Your recipe file should look similar to the following example.
 
-   ```
+   ```json
    {
      "RecipeFormatVersion": "2020-01-25",
      "ComponentName": "com.example.HelloWorld",
@@ -346,7 +346,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    Artifacts:
      - URI: s3://amzn-s3-demo-bucket/artifacts/com.example.HelloWorld/1.0.0/hello_world.py
    ```
@@ -355,13 +355,13 @@ In this section, you complete these steps on your Greengrass core device to uplo
 
    <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-   ```
+   ```bash
    nano recipes/com.example.HelloWorld-1.0.0.yaml
    ```
 
    Add the artifact to the recipe. Your recipe file should look similar to the following example.
 
-   ```
+   ```yaml
    ---
    RecipeFormatVersion: '2020-01-25'
    ComponentName: com.example.HelloWorld
@@ -395,14 +395,14 @@ In this section, you complete these steps on your Greengrass core device to uplo
 ------
 #### [ JSON ]
 
-   ```
+   ```bash
    aws greengrassv2 create-component-version --inline-recipe fileb://recipes/com.example.HelloWorld-1.0.0.json
    ```
 
 ------
 #### [ YAML ]
 
-   ```
+   ```bash
    aws greengrassv2 create-component-version --inline-recipe fileb://recipes/com.example.HelloWorld-1.0.0.yaml
    ```
 
@@ -410,7 +410,7 @@ In this section, you complete these steps on your Greengrass core device to uplo
 
    The response looks similar to the following example if the request succeeds.
 
-   ```
+   ```json
    {
      "arn": "arn:aws:greengrass:{{region}}:{{123456789012}}:components:com.example.HelloWorld:versions:1.0.0",
      "componentName": "com.example.HelloWorld",
@@ -430,13 +430,13 @@ You can also see your Hello World component in the [AWS IoT Greengrass console](
 
 1. Verify that the component creates and is ready to be deployed. When you create a component, its state is `REQUESTED`. Then, AWS IoT Greengrass validates that the component is deployable. You can run the following command to query the component status and verify that your component is deployable. Replace the `arn` with the ARN from the previous step.
 
-   ```
+   ```bash
    aws greengrassv2 describe-component --arn "arn:aws:greengrass:{{region}}:{{123456789012}}:components:com.example.HelloWorld:versions:1.0.0"
    ```
 
    If the component validates, the response indicates that the component state is `DEPLOYABLE`.
 
-   ```
+   ```json
    {
      "arn": "arn:aws:greengrass:{{region}}:{{123456789012}}:components:com.example.HelloWorld:versions:1.0.0",
      "componentName": "com.example.HelloWorld",

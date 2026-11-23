@@ -34,7 +34,7 @@ This AWS Management Console VPC endpoint policy allows access for AWS accounts i
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -63,7 +63,7 @@ This AWS Management Console VPC endpoint policy limits access to a list of speci
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -103,7 +103,7 @@ This AWS Sign-In VPC endpoint policy uses action-specific statements to allow si
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -148,7 +148,7 @@ This AWS Sign-In VPC endpoint policy uses action-specific statements to limit si
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -195,7 +195,7 @@ When using the AWS Sign-In VPC endpoint policy format, the signup flow is blocke
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

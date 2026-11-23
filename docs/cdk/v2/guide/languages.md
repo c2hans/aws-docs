@@ -22,26 +22,26 @@ The following are a few code examples:
 
 **Example**
 
-```
+```javascript
 const bucket = new s3.Bucket(this, 'amzn-s3-demo-bucket', {
   bucketName: 'amzn-s3-demo-bucket',
   versioned: true,
   websiteRedirect: {hostName: 'aws.amazon.com'}});
 ```
 
-```
+```javascript
 const bucket = new s3.Bucket(this, 'amzn-s3-demo-bucket', {
   bucketName: 'amzn-s3-demo-bucket',
   versioned: true,
   websiteRedirect: {hostName: 'aws.amazon.com'}});
 ```
 
-```
+```python
 bucket = s3.Bucket("amzn-s3-demo-bucket", bucket_name="amzn-s3-demo-bucket", versioned=True,
             website_redirect=s3.RedirectTarget(host_name="aws.amazon.com"))
 ```
 
-```
+```java
 Bucket bucket = Bucket.Builder.create(self, "amzn-s3-demo-bucket")
                       .bucketName("amzn-s3-demo-bucket")
                       .versioned(true)
@@ -50,7 +50,7 @@ Bucket bucket = Bucket.Builder.create(self, "amzn-s3-demo-bucket")
                       .build();
 ```
 
-```
+```csharp
 var bucket = new Bucket(this, "amzn-s3-demo-bucket", new BucketProps {
                       BucketName = "amzn-s3-demo-bucket",
                       Versioned  = true,
@@ -59,7 +59,7 @@ var bucket = new Bucket(this, "amzn-s3-demo-bucket", new BucketProps {
                       }});
 ```
 
-```
+```go
 bucket := awss3.NewBucket(scope, jsii.String("amzn-s3-demo-bucket"), &awss3.BucketProps {
 	BucketName: jsii.String("amzn-s3-demo-bucket"),
 	Versioned: jsii.Bool(true),

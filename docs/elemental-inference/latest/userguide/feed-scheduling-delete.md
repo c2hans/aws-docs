@@ -14,7 +14,7 @@ aws elemental-inference delete-schedule-action \
 
 If the request succeeds, Elemental Inference returns the name of the deleted action. A deleted action never runs.
 
-```
+```json
 { "actionName": "enable-smartcrop-game-1" }
 ```
 

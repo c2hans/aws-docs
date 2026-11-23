@@ -84,7 +84,7 @@ Before you can use GuardDuty Investigation, make sure that the following prerequ
 
 The following example IAM policy grants permission to use all GuardDuty Investigation actions:
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -155,7 +155,7 @@ You can optionally include a `--client-token` parameter for idempotency. If you 
 
 Example output:
 
-```
+```JSON
 {
     "InvestigationId": "a1b2c3d4-5678-90ab-cdef-ef1234567890"
 }
@@ -228,7 +228,7 @@ aws guardduty get-investigation \
 
 Example output for a completed investigation:
 
-```
+```JSON
 {
     "Investigation": {
         "InvestigationId": "a1b2c3d4-5678-90ab-cdef-ef1234567890",
@@ -327,7 +327,7 @@ The available sort attributes are `START_TIME`, `END_TIME`, `STATUS`, `RISK_LEVE
 
 Example output:
 
-```
+```JSON
 {
     "Investigations": [
         {
@@ -433,7 +433,7 @@ In the preceding command, replace {{detector-id}} and {{investigation-id}} with 
 
 The following example output shows two of the records that the command returns:
 
-```
+```JSON
 {
     "InvestigationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Status": "COMPLETED",

@@ -13,7 +13,7 @@ If you've developed your Hook with Java, use Maven to package it.
 
 In the directory of your Hook project, run the following command to build your Hook, run unit tests, and package your project as a `JAR` file that you can use to submit your Hook to the CloudFormation registry.
 
-```
+```bash
 mvn clean package
 ```
 
@@ -24,7 +24,7 @@ mvn clean package
 
 1. (Optional) Configure your default AWS Region name to `us-west-2`, by submitting the [configure](https://docs.aws.amazon.com/cli/latest/reference/configure/) operation.
 
-   ```
+   ```sh
    $ aws configure
    AWS Access Key ID [None]: {{<Your Access Key ID>}}
    AWS Secret Access Key [None]: {{<Your Secret Key>}}
@@ -34,13 +34,13 @@ mvn clean package
 
 1. (Optional) The following command builds and packages your Hook project without registering it.
 
-   ```
+   ```sh
    $ cfn submit --dry-run
    ```
 
 1. Register your Hook by using the CloudFormation CLI [submit](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-submit.html) operation.
 
-   ```
+   ```sh
    $ cfn submit --set-default
    ```
 
@@ -59,13 +59,13 @@ Verify that your Hook is available in your AWS account and in the Regions to whi
 
 1. To verify your Hook, use the [list-types](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-types.html) command to list your newly registered Hook and return a summary description of it.
 
-   ```
+   ```sh
    $ aws cloudformation list-types
    ```
 
    The command returns the following output and will also show you publicly available Hooks you can activate in your AWS account and Regions.
 
-   ```
+   ```json
    {
        "TypeSummaries": [
            {
@@ -82,7 +82,7 @@ Verify that your Hook is available in your AWS account and in the Regions to whi
 
 1. Retrieve the `TypeArn` from the `list-type` output for your Hook and save it.
 
-   ```
+   ```sh
    export HOOK_TYPE_ARN=arn:aws:cloudformation:us-west-2:{{ACCOUNT_ID}}/type/hook/MyCompany-Testing-MyTestHook
    ```
 
@@ -98,7 +98,7 @@ By enabling Hooks in your account, you are authorizing a Hook to use defined per
 
   Specify the configuration data for your registered Hook extension in the same account and AWS Region.
 
-  ```
+  ```sh
   $ aws cloudformation set-type-configuration --region us-west-2
     --configuration '{"CloudFormationConfiguration":{"HookConfiguration":{"HookInvocationStatus":"ENABLED","FailureMode":"FAIL","Properties":{"minBuckets": "1","minQueues": "1", "encryptionAlgorithm": "aws:kms"}}}}'
     --type-arn ${{HOOK_TYPE_ARN}}
@@ -121,7 +121,7 @@ If you choose to create your own execution role, we highly recommend practicing 
 
 The following template uses the IAM, Amazon S3, and Amazon SQS permissions.
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: >
   This CloudFormation template creates a role assumed by CloudFormation during

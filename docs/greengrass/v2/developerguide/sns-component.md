@@ -59,7 +59,7 @@ This component has the following requirements:
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -84,7 +84,7 @@ This component has the following requirements:
 ------
 #### [ Legacy subscription router v2.1.x ]
 
-  ```
+  ```json
   {
     "subscriptions": {
       "aws-greengrass-sns": {
@@ -100,7 +100,7 @@ This component has the following requirements:
 ------
 #### [ Legacy subscription router v2.0.x ]
 
-  ```
+  ```json
   {
     "subscriptions": {
       "aws-greengrass-sns": {
@@ -377,7 +377,7 @@ Default: `PUB_SUB`
 
 **Example: Configuration merge update (container mode)**
 
-```
+```json
 {
   "lambdaExecutionParameters": {
     "EnvironmentVariables": {
@@ -390,7 +390,7 @@ Default: `PUB_SUB`
 
 **Example: Configuration merge update (no container mode)**
 
-```
+```json
 {
   "lambdaExecutionParameters": {
     "EnvironmentVariables": {
@@ -438,7 +438,7 @@ The message size can be a maximum of 256 KB.
 
 **Example input: String message**
 
-```
+```json
 {
   "request": {
     "subject": "Message subject",
@@ -451,7 +451,7 @@ The message size can be a maximum of 256 KB.
 
 **Example input: JSON message**
 
-```
+```json
 {
   "request": {
     "subject": "Message subject",
@@ -471,7 +471,7 @@ The message size can be a maximum of 256 KB.
 
 **Example output: Success**
 
-```
+```json
 {
   "response": {
     "sns_message_id": "f80a81bc-f44c-56f2-a0f0-d5af6a727c8a",
@@ -483,7 +483,7 @@ The message size can be a maximum of 256 KB.
 
 **Example output: Failure**
 
-```
+```json
 {
   "response" : {
     "error": "InvalidInputException",
@@ -506,7 +506,7 @@ This component uses the following log file.
 **To view this component's logs**
 + Run the following command on the core device to view this component's log file in real time. Replace `{{/greengrass/v2}}` with the path to the AWS IoT Greengrass root folder.
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.greengrass.SNS.log
   ```
 

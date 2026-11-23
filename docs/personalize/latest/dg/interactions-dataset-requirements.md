@@ -22,7 +22,7 @@ For more information on minimum requirements and maximum data limits for an Item
 
 The following example shows a schema for an Item interactions dataset. The `USER_ID`, `ITEM_ID`, and `TIMESTAMP` fields are required. The `EVENT_TYPE`, `EVENT_VALUE`, and `IMPRESSION` fields are optional reserved keywords recognized by Amazon Personalize. EVENT\_TYPE must of type string and can't be categorical. `LOCATION` and `DEVICE` are optional contextual metadata fields. For information on schema requirements see [Custom dataset and schema requirements](custom-datasets-and-schemas.md#dataset-requirements).
 
-```
+```json
 {
 
   "type": "record",

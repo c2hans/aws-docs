@@ -15,7 +15,7 @@ In both cases, a JSON object is used to specify the filter settings per the form
 
  *Example 1: Kendra AttributeFilter*
 
-```
+```json
 {
  "EqualsTo": {
  "Key": "_language_code",
@@ -28,7 +28,7 @@ In both cases, a JSON object is used to specify the filter settings per the form
 
  *Example 2: Bedrock RetrievalFilter*
 
-```
+```json
 {
  "equals": {
  "key": "language",

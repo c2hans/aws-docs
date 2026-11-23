@@ -77,7 +77,7 @@ Updates the classification scope settings for an account.
 #### PATCH schema
 <a name="classification-scopes-id-request-body-patch-example"></a>
 
-```
+```json
 {
   "s3": {
     "excludes": {
@@ -96,7 +96,7 @@ Updates the classification scope settings for an account.
 #### GetClassificationScopeResponse schema
 <a name="classification-scopes-id-response-body-getclassificationscoperesponse-example"></a>
 
-```
+```json
 {
   "id": "string",
   "name": "string",
@@ -113,7 +113,7 @@ Updates the classification scope settings for an account.
 #### Empty Schema schema
 <a name="classification-scopes-id-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -121,7 +121,7 @@ Updates the classification scope settings for an account.
 #### ValidationException schema
 <a name="classification-scopes-id-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -130,7 +130,7 @@ Updates the classification scope settings for an account.
 #### AccessDeniedException schema
 <a name="classification-scopes-id-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -139,7 +139,7 @@ Updates the classification scope settings for an account.
 #### ResourceNotFoundException schema
 <a name="classification-scopes-id-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -148,7 +148,7 @@ Updates the classification scope settings for an account.
 #### ThrottlingException schema
 <a name="classification-scopes-id-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -157,7 +157,7 @@ Updates the classification scope settings for an account.
 #### InternalServerException schema
 <a name="classification-scopes-id-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

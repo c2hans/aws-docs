@@ -24,7 +24,7 @@ The first step is to create a service-linked role policy for Neptune:
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

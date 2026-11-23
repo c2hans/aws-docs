@@ -84,7 +84,7 @@ You can use the [PutEncryptionConfiguration](https://docs.aws.amazon.com/iot-fle
 To enable encryption, run the following command.
 + Replace {{kms\_key\_id}} with the ID of the KMS key.
 
-```
+```bash
 aws iotfleetwise put-encryption-configuration \
       --encryption-type KMS_BASED_ENCRYPTION \
       --kms-key-id {{kms_key_id}}
@@ -92,7 +92,7 @@ aws iotfleetwise put-encryption-configuration \
 
 **Example response**
 
-```
+```bash
 {
  "kmsKeyId": "customer_kms_key_id",
  "encryptionStatus": "PENDING",
@@ -105,7 +105,7 @@ aws iotfleetwise put-encryption-configuration \
 
 After you create a KMS key, you must, at minimum, add the following statement to your KMS key policy for it to work with AWS IoT FleetWise. The AWS IoT FleetWise service principal `iotfleetwise.amazonaws.com` in the KMS key policy statement allows AWS IoT FleetWise to access the KMS key.
 
-```
+```json
 {
   "Sid": "Allow FleetWise to encrypt and decrypt data when customer managed KMS key based encryption is enabled",
   "Effect": "Allow",
@@ -134,7 +134,7 @@ The value of `aws:SourceAccount` is your account ID, which is used to further re
 
 The following policy includes a service principal (an identifier for a service), as well as `aws:SourceAccount` and `aws:SourceArn` set up for use based on the AWS Region and your account ID.
 
-```
+```json
 {
   "Sid": "Allow use of the key",
   "Effect": "Allow",
@@ -177,7 +177,7 @@ If you enabled AWS KMS encryption, you must specify permissions in the role poli
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -208,7 +208,7 @@ The following policy statement is required for your role to invoke encryption AP
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

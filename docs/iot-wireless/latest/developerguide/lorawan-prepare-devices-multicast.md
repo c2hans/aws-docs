@@ -74,7 +74,7 @@ where:
 
 **Contents of input.json**
 
-```
+```JSON
 {
     "Description": "My LoRaWAN wireless device"
     "DestinationName": "IoTWirelessDestination"

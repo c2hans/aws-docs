@@ -27,7 +27,7 @@ An expression is made up of the following:
 
 Use a builder to generate an`Expression` object that takes the following general form.
 
-```
+```java
 Expression expression = Expression.builder()
                             .expression({{<String>}})
                             .expressionNames({{<Map>}})
@@ -39,7 +39,7 @@ Expression expression = Expression.builder()
 
 The following snippet shows a map with two entries after comment line 2. The string passed to the `expression()` method, shown after comment line 1, contains the placeholders that DynamoDB resolves before performing the operation. This snippet doesn't contain a map of expression names, because *price* is a permissible attribute name.
 
-```
+```java
     public static void scanAsync(DynamoDbAsyncTable productCatalog) {
         ScanEnhancedRequest request = ScanEnhancedRequest.builder()
                 .consistentRead(true)
@@ -101,7 +101,7 @@ A filter expression is applied after all the data is read from the database, so 
 
 The following example shows a filter expression added to a scan request. The criteria restricts the items returned to items with a price between 8.00 and 80.00 inclusive.
 
-```
+```java
         Map<String, AttributeValue> expressionValues = Map.of(
                 ":min_value", numberValue(8.00),
                 ":max_value", numberValue(80.00));

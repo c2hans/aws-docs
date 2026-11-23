@@ -37,7 +37,7 @@ Use the following role policy when creating the IAM role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -65,7 +65,7 @@ Use the following role policy when creating the IAM role.
 
 Configure the SDK for JavaScript by creating a global configuration object then setting the Region for your code. In this example, the Region is set to `us-west-2`.
 
-```
+```javascript
 // Load the SDK for JavaScript
 var AWS = require('aws-sdk');
 // Set the Region
@@ -81,7 +81,7 @@ Create a JSON object to hold the parameters for creating an alarm, specifying `A
 
 In the callback function for the `putMetricAlarm`, upon successful completion create a JSON object containing the name of the CloudWatch alarm. Call the `enableAlarmActions` method to enable the alarm action.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -132,7 +132,7 @@ cw.putMetricAlarm(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node cw_enablealarmactions.js
 ```
 
@@ -143,7 +143,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `cw_disablealarmactions.js`. Be sure to configure the SDK as previously shown. To access CloudWatch, create an `AWS.CloudWatch` service object. Create a JSON object containing the name of the CloudWatch alarm. Call the `disableAlarmActions` method to disable the actions for this alarm.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -166,7 +166,7 @@ cw.disableAlarmActions(
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node cw_disablealarmactions.js
 ```
 

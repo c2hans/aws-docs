@@ -14,7 +14,7 @@ The following code examples show how to create a table with warm throughput enab
 **SDK for Java 2.x**
 Create DynamoDB table with warm throughput setting using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeDefinition;
 import software.amazon.awssdk.services.dynamodb.model.CreateTableRequest;
@@ -185,7 +185,7 @@ import software.amazon.awssdk.services.dynamodb.model.WarmThroughput;
 **SDK for JavaScript (v3)**
 Create DynamoDB table with warm throughput setting using AWS SDK for JavaScript.
 
-```
+```javascript
 import { DynamoDBClient, CreateTableCommand } from "@aws-sdk/client-dynamodb";
 
 export async function createDynamoDBTableWithWarmThroughput(
@@ -279,7 +279,7 @@ createDynamoDBTableWithWarmThroughput(
 **SDK for Python (Boto3)**
 Create DynamoDB table with warm throughput setting using AWS SDK for Python (Boto3).
 
-```
+```python
 from boto3 import client
 from botocore.exceptions import ClientError
 

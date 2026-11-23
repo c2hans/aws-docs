@@ -37,6 +37,6 @@ When it succeeds, the `UntagResource` operation doesn't return any output. Also,
 
 For example, this command deletes the **Purpose** tag and its value from the specified KMS key.
 
-```
+```bash
 $ aws kms untag-resource --key-id 1234abcd-12ab-34cd-56ef-1234567890ab --tag-keys Purpose
 ```

@@ -120,7 +120,7 @@ To get the values of local secrets, your user-defined Lambda functions must use 
 
 1. Save the following Python code function in a local file named `secret_test.py`.
 
-   ```
+   ```python
    import greengrasssdk
 
    secrets_client = greengrasssdk.client("secretsmanager")
@@ -308,7 +308,7 @@ Deploy the group to the core device. During deployment, AWS IoT Greengrass fetch
 
    1. To check whether the daemon is running:
 
-      ```
+      ```bash
       ps aux | grep -E 'greengrass.*daemon'
       ```
 
@@ -318,7 +318,7 @@ The version in the path depends on the AWS IoT Greengrass Core software version 
 
    1. To start the daemon:
 
-      ```
+      ```bash
       cd /greengrass/ggc/core/
       sudo ./greengrassd start
       ```

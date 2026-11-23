@@ -146,7 +146,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-load-balancer-elb-stack-update-deletion-protection-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-UpdateELBDeletionProtectionV2",
   "Region": "us-east-1",
@@ -162,7 +162,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-load-balancer-elb-stack-update-deletion-protection-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-UpdateELBDeletionProtectionV2",
   "Region": "us-west-2",

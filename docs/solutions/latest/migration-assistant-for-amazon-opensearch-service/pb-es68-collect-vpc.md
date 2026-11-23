@@ -10,7 +10,7 @@ Migration Assistant deploys into the VPC and subnets you provide. Collect these 
 +  `<REGION>` — the AWS Region of the VPC and the Amazon OpenSearch Service domain.
 +  `<STAGE>` — a short environment label you choose (for example, `dev` or `prod`); it is used to name the solution’s resources.
 
-```
+```bash
 aws ec2 describe-subnets \
   --filters "Name=vpc-id,Values=<VPC_ID>" \
   --query "Subnets[].{Subnet:SubnetId,AZ:AvailabilityZone}" \

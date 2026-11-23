@@ -251,7 +251,7 @@ The following procedure shows how to import a dataset from Athena into Data Wran
 **Note**
 Salesforce data uses the `timestamptz` type. If you're querying the timestamp column that you've imported to Athena from Salesforce, cast the data in the column to the `timestamp` type. The following query casts the timestamp column to the correct type.
 
-   ```
+   ```sql
    # cast column timestamptz_col as timestamp type, and name it as timestamp_col
    select cast(timestamptz_col as timestamp) as timestamp_col from table
    ```
@@ -599,7 +599,7 @@ To be able to query large datasets on Amazon EMR clusters, add the following pro
 You can also modify the configuration settings when you launch the Amazon EMR cluster.
 The configuration file for your Amazon EMR cluster is located under the following path: `/etc/hive/conf/hive-site.xml`. You can specify the following property and restart the cluster:
 
-```
+```xml
 <property>
     <name>hive.resultset.use.unique.column.names</name>
     <value>false</value>
@@ -630,7 +630,7 @@ Storing the query results in a data catalog requires Amazon EMR version 5.8.0 or
 
 1. Under **Enter configuration**, specify the following JSON:
 
-   ```
+   ```json
    [
      {
        "classification": "hive-site",
@@ -694,7 +694,7 @@ To use LDAP for Hive for a cluster that you've created, use the following proced
 
 You're specifying the name of the cluster to which you're connecting.
 
-```
+```json
 [
   {
     "classification": "hive-site",
@@ -779,7 +779,7 @@ To store your credentials as a secret, do the following.
 
 1. For clusters running Hive, you can use the following template for IAM authentication.
 
-   ```
+   ```json
    {"jdbcURL": ""
     "iam_auth": {"endpoint": "jdbc:hive2://", #required
                    "dns": "ip-{{xx-x-xxx-xxx}}.ec2.internal", #required
@@ -1060,7 +1060,7 @@ Use the following procedure to get the authorization URL and the token URL.
 
      1. Create the following JSON object:
 
-        ```
+        ```json
         {
           "identity_provider": "SALESFORCE",
           "authorization_url": "{{example-authorization-endpoint}}",
@@ -1084,7 +1084,7 @@ To create a secret, do the following.
 
 1. Replace the empty JSON with the following configuration settings.
 
-   ```
+   ```json
    {
      "identity_provider": "SALESFORCE",
      "authorization_url": "{{example-authorization-endpoint}}",
@@ -1147,7 +1147,7 @@ To add read permissions for Data Wrangler, do the following.
 
 ****
 
-   ```
+   ```json
    {
     "Version":"2012-10-17",
     "Statement": [
@@ -1354,7 +1354,7 @@ You must create an IAM policy to configure access permissions for Snowflake to l
 
 The following is the JSON policy document that you use to create the policy:
 
-```
+```json
 # Example policy for S3 write access
 # This needs to be updated
 {
@@ -1472,7 +1472,7 @@ Before you create a Secrets Manager secret, make sure that the SageMaker AI exec
 
 For Okta and Ping Federate, the following is the format of the secret:
 
-```
+```json
 {
     "token_url":"https://{{identityprovider}}.com/oauth2/{{example-portion-of-URL-path}}/v2/token",
     "client_id":"{{example-client-id}}",
@@ -1484,7 +1484,7 @@ For Okta and Ping Federate, the following is the format of the secret:
 
 For Azure AD, the following is the format of the secret:
 
-```
+```json
 {
     "token_url":"https://{{identityprovider}}.com/oauth2/{{example-portion-of-URL-path}}/v2/token",
     "client_id":"{{example-client-id}}",
@@ -1770,7 +1770,7 @@ For information about creating a secret, see [Create a secret](https://docs.aws.
 
 1. (Optional) Provide the data scientist with the name of the storage integration that you created using the following procedure [Create a Cloud Storage Integration in Snowflake](                                      https://docs.snowflake.com/en/user-guide/data-load-s3-config-storage-integration.html#step-3-create-a-cloud-storage-integration-in-snowflake). This is the name of the new integration and is called `integration_name` in the `CREATE INTEGRATION` SQL command you ran, which is shown in the following snippet:
 
-   ```
+   ```sql
      CREATE STORAGE INTEGRATION integration_name
      TYPE = EXTERNAL_STAGE
      STORAGE_PROVIDER = S3
@@ -2025,7 +2025,7 @@ Before you try to access your data, make sure your IAM role has the following po
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

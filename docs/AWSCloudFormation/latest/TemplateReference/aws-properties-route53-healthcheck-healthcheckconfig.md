@@ -94,7 +94,12 @@ The SSL/TLS certificate on your endpoint includes a domain name in the `Common N
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EndpointType`  <a name="cfn-route53-healthcheck-healthcheckconfig-endpointtype"></a>
-Property description not available.
+Specifies whether the health check targets a public endpoint or a private endpoint in a VPC. Valid values:
+ `PUBLIC`
+The health check targets an endpoint that is reachable over the internet. This is the default.
+ `PRIVATE`
+The health check targets a private endpoint in a VPC. You must also specify `HealthCheckSourceId`. `PRIVATE` isn't supported for health checks with a `Type` of `CALCULATED`, `CLOUDWATCH_METRIC`, or `RECOVERY_CONTROL`.
+You can't change the value of `EndpointType` after you create a health check. Adding `EndpointType` to the template of an existing health check replaces the health check, so leave it unset for existing public health checks.
 *Required*: No
 *Type*: String
 *Allowed values*: `PUBLIC | PRIVATE`
@@ -131,7 +136,9 @@ In addition, if the value that you specify for `Type` is `HTTP`, `HTTPS`, `HTTP_
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HealthCheckSourceId`  <a name="cfn-route53-healthcheck-healthcheckconfig-healthchecksourceid"></a>
-Property description not available.
+The ID of the health check source that Route 53 uses to send health checks to a private endpoint. Required when `EndpointType` is `PRIVATE`.
+You can change `HealthCheckSourceId` on an existing private health check. You can't add it to a public health check.
+Each health check source supports a limited number of active health checks. If you reach that limit, specify a different health check source.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -170,12 +177,13 @@ The IPv4 or IPv6 IP address of the endpoint that you want Amazon Route 53 to per
 Use one of the following formats for the value of `IPAddress`:
 + **IPv4 address**: four values between 0 and 255, separated by periods (.), for example, `192.0.2.44`.
 + **IPv6 address**: eight groups of four hexadecimal values, separated by colons (:), for example, `2001:0db8:85a3:0000:0000:abcd:0001:2345`. You can also shorten IPv6 addresses as described in RFC 5952, for example, `2001:db8:85a3::abcd:1:2345`.
-If the endpoint is an EC2 instance, we recommend that you create an Elastic IP address, associate it with your EC2 instance, and specify the Elastic IP address for `IPAddress`. This ensures that the IP address of your instance will never change.
+For a public health check, if the endpoint is an EC2 instance, we recommend that you create an Elastic IP address, associate it with your EC2 instance, and specify the Elastic IP address for `IPAddress`. This ensures that the IP address of your instance will never change.
 For more information, see [FullyQualifiedDomainName](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateHealthCheck.html#Route53-UpdateHealthCheck-request-FullyQualifiedDomainName).
-Constraints: Route 53 can't check the health of endpoints for which the IP address is in local, private, non-routable, or multicast ranges. For more information about IP addresses for which you can't create health checks, see the following documents:
+Constraints: For a public health check (`EndpointType` of `PUBLIC`, the default), Route 53 can't check the health of endpoints for which the IP address is in local, private, non-routable, or multicast ranges. For more information about IP addresses for which you can't create public health checks, see the following documents:
 +  [RFC 5735, Special Use IPv4 Addresses](https://tools.ietf.org/html/rfc5735)
 +  [RFC 6598, IANA-Reserved IPv4 Prefix for Shared Address Space](https://tools.ietf.org/html/rfc6598)
 +  [RFC 5156, Special-Use IPv6 Addresses](https://tools.ietf.org/html/rfc5156)
+For a private endpoint health check (`EndpointType` of `PRIVATE`), if you specify `IPAddress`, it must be a private IPv4 or IPv6 address. Route 53 sends health checks to it from the health check source that you specify in `HealthCheckSourceId`.
 When the value of `Type` is `CALCULATED` or `CLOUDWATCH_METRIC`, omit `IPAddress`.
 *Required*: No
 *Type*: String

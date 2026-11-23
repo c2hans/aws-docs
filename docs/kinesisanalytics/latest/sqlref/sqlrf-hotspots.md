@@ -124,7 +124,7 @@ price           REAL)
 
 In this example, a destination stream is created for the output of the HOTSPOTS function. A pump is then created that runs the HOTSPOTS function on the specified values in the sample data stream.
 
-```
+```sql
 CREATE OR REPLACE STREAM "DESTINATION_SQL_STREAM"(
     CHANGE REAL,
     PRICE REAL,

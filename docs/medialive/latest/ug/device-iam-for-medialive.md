@@ -46,7 +46,7 @@ In this step, you create a policy that makes the statement "Let a principal have
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -106,7 +106,7 @@ In this step, you create a role that consists of a trust policy ("let MediaLive 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

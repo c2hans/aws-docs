@@ -27,7 +27,7 @@ structure DataResidency {
 
 Use `PutFormType` to create or update a form type.
 
-```
+```bash
 aws glue put-form-type \
     --name DataResidency \
     --schema 'structure DataResidency {
@@ -39,7 +39,7 @@ aws glue put-form-type \
 
 Example output:
 
-```
+```json
 {
     "Id": "DataResidency",
     "Name": "DataResidency"
@@ -49,7 +49,7 @@ Example output:
 ### To retrieve a form type
 <a name="catalog-metadata-forms-get-form-type"></a>
 
-```
+```bash
 aws glue get-form-type --identifier DataResidency
 ```
 
@@ -61,7 +61,7 @@ aws glue get-form-type --identifier DataResidency
 
 Use `PutAttachment` with the asset identifier, attachment name, form type ID, and JSON content conforming to the schema.
 
-```
+```bash
 aws glue put-attachment \
     --asset-identifier {{asset-id}} \
     --attachment-name residencyInfo \
@@ -76,7 +76,7 @@ Use `GetAsset` to retrieve an asset along with its forms and attachments.
 
 The following command retrieves an asset:
 
-```
+```bash
 aws glue get-asset --asset-identifier {{asset-id}}
 ```
 
@@ -89,7 +89,7 @@ Each column is a single item of the `columns` iterable form with column name as 
 
 The following command attaches a form to a specific column:
 
-```
+```bash
 aws glue put-attachment \
     --asset-identifier {{asset-id}} \
     --iterable-form-name columns \
@@ -107,7 +107,7 @@ After you attach the form, use `SearchAssets` to discover the asset by any searc
 ### To list columns for an asset
 <a name="catalog-metadata-forms-list-iterable"></a>
 
-```
+```bash
 aws glue list-iterable-forms \
     --asset-identifier {{asset-id}} \
     --iterable-form-name columns \
@@ -119,7 +119,7 @@ aws glue list-iterable-forms \
 
 Use `BatchGetIterableForms` to retrieve columns and attached forms in a single request.
 
-```
+```bash
 aws glue batch-get-iterable-forms \
     --asset-identifier {{asset-id}} \
     --iterable-form-name columns \
@@ -128,7 +128,7 @@ aws glue batch-get-iterable-forms \
 
 Example output:
 
-```
+```JSON
 {
     "Items": [
         {
@@ -157,7 +157,7 @@ Example output:
 ### To delete an attachment
 <a name="catalog-metadata-forms-delete-attachment"></a>
 
-```
+```bash
 aws glue delete-attachment \
     --asset-identifier {{asset-id}} \
     --attachment-name residencyInfo
@@ -168,7 +168,7 @@ aws glue delete-attachment \
 
 To remove a form attached to a single column, run the following command. Pass the iterable form name, item identifier, and attachment name:
 
-```
+```bash
 aws glue delete-attachment \
     --asset-identifier {{asset-id}} \
     --iterable-form-name columns \
@@ -181,20 +181,20 @@ aws glue delete-attachment \
 
 You cannot delete a form type that is still referenced by an asset type.
 
-```
+```bash
 aws glue delete-form-type --identifier DataResidency
 ```
 
 ## Listing form types
 <a name="catalog-metadata-forms-listing"></a>
 
-```
+```bash
 aws glue list-form-types --max-results 20
 ```
 
 Example output:
 
-```
+```json
 {
     "Items": [
         {"Id": "DataResidency", "Name": "DataResidency"},

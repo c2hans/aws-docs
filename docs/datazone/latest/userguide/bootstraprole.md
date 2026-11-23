@@ -13,7 +13,7 @@ The default `AmazonDataZoneProvisioningRole-<domainAccountId>` has the following
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

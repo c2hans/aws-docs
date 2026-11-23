@@ -9,7 +9,7 @@ A Channel assumes a service execution role to deliver data. The role needs a tru
 ## Trust policy
 <a name="msk-data-delivery-iceberg-iam-trust-policy"></a>
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -40,7 +40,7 @@ Use the `aws:SourceArn` and `aws:SourceAccount` conditions to prevent confused d
 
 The following single policy contains every statement the service role may need. Keep the statements that apply to your setup (see [When you need each statement](#msk-data-delivery-iceberg-iam-when-needed)) and remove the rest.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

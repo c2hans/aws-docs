@@ -55,7 +55,7 @@ You can configure a warm pool when creating a managed node group or add one to a
 
  **Create a node group with a warm pool**
 
-```
+```bash
 aws eks create-nodegroup \
   --cluster-name my-cluster \
   --nodegroup-name my-nodegroup \
@@ -68,7 +68,7 @@ aws eks create-nodegroup \
 
  **Add a warm pool to an existing node group**
 
-```
+```bash
 aws eks update-nodegroup-config \
   --cluster-name my-cluster \
   --nodegroup-name my-nodegroup \
@@ -81,7 +81,7 @@ aws eks update-nodegroup-config \
 
 Update warm pool settings at any time using `update-nodegroup-config`. Existing warm pool instances aren’t immediately affected; new settings apply to instances entering the warm pool after the update.
 
-```
+```bash
 aws eks update-nodegroup-config \
   --cluster-name my-cluster \
   --nodegroup-name my-nodegroup \
@@ -91,7 +91,7 @@ aws eks update-nodegroup-config \
 
 To disable the warm pool attached to your nodegroup, set `enabled=false`:
 
-```
+```bash
 aws eks update-nodegroup-config \
   --cluster-name my-cluster \
   --nodegroup-name my-nodegroup \

@@ -66,7 +66,7 @@ Before you begin work with an OpenSearch Service database as a target for AWS DM
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -91,7 +91,7 @@ The role that you use for the migration to OpenSearch Service must have the foll
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

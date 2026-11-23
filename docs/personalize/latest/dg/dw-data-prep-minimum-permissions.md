@@ -18,7 +18,7 @@ To prepare data with Data Wrangler, you must set up the following permissions:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

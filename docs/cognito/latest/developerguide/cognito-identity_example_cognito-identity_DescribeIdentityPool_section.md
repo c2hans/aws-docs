@@ -42,7 +42,7 @@ For more information, see [Amazon Cognito identity pools](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: Retrieves information about a specific Identity Pool by its id.**
 
-```
+```powershell
 Get-CGIIdentityPool -IdentityPoolId us-east-1:0de2af35-2988-4d0b-b22d-EXAMPLEGUID1
 ```
 **Output:**
@@ -64,7 +64,7 @@ HttpStatusCode                 : OK
 **Tools for PowerShell V5**
 **Example 1: Retrieves information about a specific Identity Pool by its id.**
 
-```
+```powershell
 Get-CGIIdentityPool -IdentityPoolId us-east-1:0de2af35-2988-4d0b-b22d-EXAMPLEGUID1
 ```
 **Output:**

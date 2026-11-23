@@ -114,7 +114,7 @@ Valid pattern: `^$|^[a-zA-Z0-9][a-zA-Z0-9-]{1,62}$`
 
 The following CLI command creates a `ConnectorDefinition` with an initial version that contains an ML Object Detection connector. This example creates an instance of the ML Object Detection ARMv7l connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -199,7 +199,7 @@ The following example Lambda function uses the [AWS IoT Greengrass Machine Learn
 
 The example initializes an SDK client and synchronously calls the SDK's `invoke_inference_service` function to invoke the local inference service. It passes in the algorithm type, service name, image type, and image content. Then, the example parses the service response to get the probability results (predictions).
 
-```
+```python
 import logging
 from threading import Timer
 

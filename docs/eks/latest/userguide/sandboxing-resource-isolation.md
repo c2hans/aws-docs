@@ -46,7 +46,7 @@ Bandwidth and packet rate are enforced by independent token buckets. You must ra
 
 To raise the effective network cap to about 1 Gbps:
 
-```
+```yaml
 metadata:
   annotations:
     sandbox.amazonaws.com/ingress-bandwidth: "1G"

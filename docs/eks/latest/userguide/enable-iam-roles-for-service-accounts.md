@@ -28,7 +28,7 @@ You can create an IAM OIDC provider for your cluster using `eksctl` or the AWS M
 
    Retrieve your cluster’s OIDC issuer ID and store it in a variable. Replace `<my-cluster>` with your own value.
 
-   ```
+   ```bash
    cluster_name=<my-cluster>
    oidc_id=$(aws eks describe-cluster --name $cluster_name --query "cluster.identity.oidc.issuer" --output text | cut -d '/' -f 5)
    echo $oidc_id
@@ -36,7 +36,7 @@ You can create an IAM OIDC provider for your cluster using `eksctl` or the AWS M
 
 1. Determine whether an IAM OIDC provider with your cluster’s issuer ID is already in your account.
 
-   ```
+   ```bash
    aws iam list-open-id-connect-providers | grep $oidc_id | cut -d "/" -f4
    ```
 
@@ -44,7 +44,7 @@ You can create an IAM OIDC provider for your cluster using `eksctl` or the AWS M
 
 1. Create an IAM OIDC identity provider for your cluster with the following command.
 
-   ```
+   ```bash
    eksctl utils associate-iam-oidc-provider --cluster $cluster_name --approve
    ```
 **Note**

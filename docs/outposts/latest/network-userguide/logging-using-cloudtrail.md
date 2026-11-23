@@ -32,7 +32,7 @@ AWS Outposts logs all AWS Outposts control plane operations as management events
 
 The following example shows a CloudTrail event that demonstrates the `SetSiteAddress` operation.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

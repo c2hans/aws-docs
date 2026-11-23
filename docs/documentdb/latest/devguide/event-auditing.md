@@ -307,7 +307,7 @@ aws docdb modify-db-cluster ^
 ```
 Output from these operations looks something like the following (JSON format).
 
-```
+```json
 {
     "DBCluster": {
         "HostedZoneId": "ZNKXH85TT8WVW",
@@ -406,7 +406,7 @@ aws docdb modify-db-cluster ^
 ```
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "DBCluster": {
         "DBClusterParameterGroup": "default.docdb4.0",

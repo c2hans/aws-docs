@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **SDK for C\+\+**
 
-```
+```cpp
 //! Routine which downloads an AWS HealthImaging image frame.
 /*!
   \param dataStoreID: The HealthImaging data store ID.
@@ -92,7 +92,7 @@ For more information, see [Getting image set pixel data](https://docs.aws.amazon
 
 **SDK for Java 2.x**
 
-```
+```java
         public static void getMedicalImageSetFrame(MedicalImagingClient medicalImagingClient,
                         String destinationPath,
                         String datastoreId,
@@ -125,7 +125,7 @@ For more information, see [Getting image set pixel data](https://docs.aws.amazon
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { GetImageFrameCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -175,7 +175,7 @@ export const getImageFrame = async (
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -211,7 +211,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -223,7 +223,7 @@ The following code instantiates the MedicalImagingWrapper object.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         " iv_image_set_id = '1234567890123456789012345678901234567890'

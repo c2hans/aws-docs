@@ -889,7 +889,7 @@ The `{{your-label-attribute}}-ref` parameter contains the location of a compress
 
 You can use Python code similar to the following to decompress a .zlib file:
 
-```
+```python
 import zlib
 from array import array
 

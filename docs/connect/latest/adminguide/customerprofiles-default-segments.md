@@ -22,7 +22,7 @@ Important: Always configure the high threshold to be greater than the low thresh
 
 The following example shows the High lifetime value default segment definition:
 
-```
+```json
 {
    "SegmentDefinitionName": "_default_lifetime_value_high",
    "DisplayName": "High lifetime value",
@@ -53,7 +53,7 @@ The following example shows the High lifetime value default segment definition:
 
 The following example shows the Medium lifetime value default segment definition:
 
-```
+```json
 {
    "SegmentDefinitionName": "_default_lifetime_value_medium",
    "DisplayName": "Medium lifetime value",
@@ -92,7 +92,7 @@ The following example shows the Medium lifetime value default segment definition
 
 The following example shows the Low lifetime value default segment definition:
 
-```
+```json
 {
    "SegmentDefinitionName": "_default_lifetime_value_low",
    "DisplayName": "Low lifetime value",
@@ -130,7 +130,7 @@ To change how many contacts qualify a profile as a repeat caller, update the thr
 
 The following example shows the Repeat caller default segment definition:
 
-```
+```json
 {
    "SegmentDefinitionName": "_default_repeat_caller",
    "DisplayName": "Repeat caller",

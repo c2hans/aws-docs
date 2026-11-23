@@ -35,7 +35,7 @@ The following code example shows how to get started using IAM.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
 namespace IAMActions;
 
 public class HelloIAM
@@ -82,7 +82,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
 global using Amazon.IdentityManagement;
 global using Amazon.S3;
 global using Amazon.SecurityToken;
@@ -952,7 +952,7 @@ The following code example shows how to use `AttachRolePolicy`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Attach an IAM policy to a role.
     /// </summary>
@@ -980,7 +980,7 @@ The following code example shows how to use `CreateAccessKey`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an IAM access key for a user.
     /// </summary>
@@ -1008,7 +1008,7 @@ The following code example shows how to use `CreateInstanceProfile`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/AutoScalerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a policy, role, and profile that is associated with instances with a specified name.
     /// An instance's associated profile defines a role that is assumed by the
@@ -1150,7 +1150,7 @@ The following code example shows how to use `CreatePolicy`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an IAM policy.
     /// </summary>
@@ -1178,7 +1178,7 @@ The following code example shows how to use `CreateRole`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a new IAM role.
     /// </summary>
@@ -1208,7 +1208,7 @@ The following code example shows how to use `CreateServiceLinkedRole`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an IAM service-linked role.
     /// </summary>
@@ -1237,7 +1237,7 @@ The following code example shows how to use `CreateUser`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an IAM user.
     /// </summary>
@@ -1259,7 +1259,7 @@ The following code example shows how to use `DeleteAccessKey`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an IAM user's access key.
     /// </summary>
@@ -1288,7 +1288,7 @@ The following code example shows how to use `DeleteInstanceProfile`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/AutoScalerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Detaches a role from an instance profile, detaches policies from the role,
     /// and deletes all the resources.
@@ -1348,7 +1348,7 @@ The following code example shows how to use `DeletePolicy`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an IAM policy.
     /// </summary>
@@ -1371,7 +1371,7 @@ The following code example shows how to use `DeleteRole`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an IAM role.
     /// </summary>
@@ -1393,7 +1393,7 @@ The following code example shows how to use `DeleteRolePolicy`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an IAM role policy.
     /// </summary>
@@ -1421,7 +1421,7 @@ The following code example shows how to use `DeleteUser`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an IAM user.
     /// </summary>
@@ -1444,7 +1444,7 @@ The following code example shows how to use `DeleteUserPolicy`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an IAM user policy.
     /// </summary>
@@ -1468,7 +1468,7 @@ The following code example shows how to use `DetachRolePolicy`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Detach an IAM policy from an IAM role.
     /// </summary>
@@ -1496,7 +1496,7 @@ The following code example shows how to use `GetAccountPasswordPolicy`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Gets the IAM password policy for an AWS account.
     /// </summary>
@@ -1517,7 +1517,7 @@ The following code example shows how to use `GetPolicy`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information about an IAM policy.
     /// </summary>
@@ -1540,7 +1540,7 @@ The following code example shows how to use `GetRole`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information about an IAM role.
     /// </summary>
@@ -1567,7 +1567,7 @@ The following code example shows how to use `GetUser`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information about an IAM user.
     /// </summary>
@@ -1589,7 +1589,7 @@ The following code example shows how to use `ListAttachedRolePolicies`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List the IAM role policies that are attached to an IAM role.
     /// </summary>
@@ -1618,7 +1618,7 @@ The following code example shows how to use `ListGroups`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List IAM groups.
     /// </summary>
@@ -1646,7 +1646,7 @@ The following code example shows how to use `ListPolicies`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List IAM policies.
     /// </summary>
@@ -1674,7 +1674,7 @@ The following code example shows how to use `ListRolePolicies`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List IAM role policies.
     /// </summary>
@@ -1703,7 +1703,7 @@ The following code example shows how to use `ListRoles`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List IAM roles.
     /// </summary>
@@ -1731,7 +1731,7 @@ The following code example shows how to use `ListSAMLProviders`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List SAML authentication providers.
     /// </summary>
@@ -1752,7 +1752,7 @@ The following code example shows how to use `ListUsers`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List IAM users.
     /// </summary>
@@ -1780,7 +1780,7 @@ The following code example shows how to use `PutRolePolicy`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Update the inline policy document embedded in a role.
     /// </summary>
@@ -1821,7 +1821,7 @@ The following code example shows how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```csharp
     static async Task Main(string[] args)
     {
         _configuration = new ConfigurationBuilder()
@@ -2218,7 +2218,7 @@ Run the interactive scenario at a command prompt.
 ```
 Create a class that wraps Auto Scaling and Amazon EC2 actions.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates Amazon EC2 Auto Scaling and EC2 management methods.
 /// </summary>
@@ -3107,7 +3107,7 @@ public class AutoScalerWrapper
 ```
 Create a class that wraps Elastic Load Balancing actions.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates Elastic Load Balancer actions.
 /// </summary>
@@ -3401,7 +3401,7 @@ public class ElasticLoadBalancerWrapper
 ```
 Create a class that uses DynamoDB to simulate a recommendation service.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates a DynamoDB table to use as a service that recommends books, movies, and songs.
 /// </summary>
@@ -3544,7 +3544,7 @@ public class Recommendations
 ```
 Create a class that wraps Systems Manager actions.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates Systems Manager parameter operations. This example uses these parameters
 /// to drive the demonstration of resilient architecture, such as failure of a dependency or

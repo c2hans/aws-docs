@@ -16,19 +16,19 @@ You can use the Hudi CLI to administer Hudi datasets to view information about c
 
 1. Use the following command to connect to a dataset. Replace {{s3://amzn-s3-demo-bucket/myhudidataset}} with the path to the dataset that you want to work with. The value we use is the same as the value established in earlier examples.
 
-   ```
+   ```bash
    connect --path {{s3://amzn-s3-demo-bucket/myhudidataset}}
    ```
 
    The command prompt changes to include the dataset that you're connected to, as shown in the following example.
 
-   ```
+   ```bash
    hudi:{{myhudidataset}}->
    ```
 
 By default, the `hudi-cli.sh` script in Amazon EMR release 7.3.0 to 7.8.0 uses `hudi-cli-bundle.jar`. If you run into issues, you can switch back to the classic Hudi CLI with the following command:
 
-```
+```bash,sh,zsh
 /usr/lib/hudi/cli/bin/hudi-cli.sh --cliBundle false
 ```
 

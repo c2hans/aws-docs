@@ -30,13 +30,13 @@ The same difference applies to a filter with a scope of `DATA`. The pattern is w
 
 Published with `PutRawEvents`:
 
-```
+```json
 { "total": [ { "numeric": [ ">", 500 ] } ] }
 ```
 
 Published with `PutEvents`:
 
-```
+```json
 { "detail": { "total": [ { "numeric": [ ">", 500 ] } ] } }
 ```
 

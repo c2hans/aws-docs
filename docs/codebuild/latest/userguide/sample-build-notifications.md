@@ -27,7 +27,7 @@ Use the following procedure to run the build notifications sample.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -97,7 +97,7 @@ For more information, see [Editing customer managed policies](https://docs.aws.a
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -128,7 +128,7 @@ For more information, see [Editing customer managed policies](https://docs.aws.a
 
 1. The following code should be displayed in **Event Pattern Preview**:
 
-   ```
+   ```json
    {
      "source": [
        "aws.codebuild"
@@ -140,7 +140,7 @@ For more information, see [Editing customer managed policies](https://docs.aws.a
 
    This first rule pattern triggers an event when a build starts or completes for the specified build projects in AWS CodeBuild.
 
-   ```
+   ```json
    {
      "source": [
        "aws.codebuild"
@@ -172,7 +172,7 @@ For more information, see [Editing customer managed policies](https://docs.aws.a
 
    This second rule pattern triggers an event whenever a build moves from one build phase to another for the specified build projects in AWS CodeBuild.
 
-   ```
+   ```json
    {
      "source": [
        "aws.codebuild"

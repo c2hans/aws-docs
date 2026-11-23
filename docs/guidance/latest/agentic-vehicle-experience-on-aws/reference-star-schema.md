@@ -24,7 +24,7 @@ AVX emits booking-shaped artifacts as **STAR-JSON**: a JSON representation of th
 
 Every STAR-JSON message shares a common outer envelope:
 
-```
+```json
 {
   "schemaVersion": "1.0.0",
   "messageType": "ServiceRequestAdd",

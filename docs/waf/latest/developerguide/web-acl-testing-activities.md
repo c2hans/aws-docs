@@ -51,6 +51,7 @@ Repeat the following procedure until the protection pack (web ACL) is managing y
    + **Sampled web requests** – Access information for the rules that match a sampling of the web requests. The sample information identifies matching rules by the metric name for the rule in the protection pack (web ACL). For rule groups, the metric identifies the rule group reference statement. For rules inside rule groups, the sample lists the matching rule name in `RuleWithinRuleGroup`.
 
      For more information, see [Viewing a sample of web requests](web-acl-testing-view-sample.md).
+   + **Security analytics** – Analyze the security activity of your protection packs (web ACLs) across AWS Regions in one view. To use security analytics, enable it in the analytics configuration of your protection pack (web ACL). For more information, see [Security analytics for protection packs (web ACLs)](web-acl-security-analytics.md).
 
 1.
 

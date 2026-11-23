@@ -19,7 +19,7 @@ Call the **put-rule** command, specifying:
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -49,7 +49,7 @@ Call the **put-rule** command, specifying:
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

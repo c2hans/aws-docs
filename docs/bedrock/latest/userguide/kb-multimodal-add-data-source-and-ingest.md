@@ -55,7 +55,7 @@ Text embedding models limit retrieval to text-only content. However, you can ena
 
   For Nova Multimodal Embeddings (no special parsing configuration needed), use this `ds-multimodal.json` content:
 
-  ```
+  ```json
   {
       "dataSourceConfiguration": {
           "type": "S3",
@@ -72,7 +72,7 @@ Text embedding models limit retrieval to text-only content. However, you can ena
 
   For BDA parsing approach, use this configuration:
 
-  ```
+  ```json
   {
       "dataSourceConfiguration": {
           "type": "S3",

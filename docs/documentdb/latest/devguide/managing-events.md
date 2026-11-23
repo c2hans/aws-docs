@@ -45,7 +45,7 @@ aws docdb describe-event-categories ^
 ```
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "EventCategoriesMapList": [
         {
@@ -67,7 +67,7 @@ aws docdb describe-event-categories
 ```
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "EventCategoriesMapList": [
         {
@@ -170,7 +170,7 @@ aws docdb describe-events --filters Name=engine,Values=docdb
 
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "Events": [
         {

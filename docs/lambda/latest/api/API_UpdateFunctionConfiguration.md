@@ -116,7 +116,7 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [AcceleratorConfig](#API_UpdateFunctionConfiguration_RequestSyntax) **   <a name="lambda-UpdateFunctionConfiguration-request-AcceleratorConfig"></a>
-The accelerator resource settings for a Lambda execution environment.
+The accelerator resource settings for a Lambda execution environment, including the amount of accelerator memory to allocate. To use an accelerator, the function must also have a capacity provider configuration (`CapacityProviderConfig`) for Lambda Managed Instances.
 Type: [AcceleratorConfig](API_AcceleratorConfig.md) object
 Required: No
 
@@ -228,7 +228,7 @@ Type: [SnapStart](API_SnapStart.md) object
 Required: No
 
  ** [Timeout](#API_UpdateFunctionConfiguration_RequestSyntax) **   <a name="lambda-UpdateFunctionConfiguration-request-Timeout"></a>
-The amount of time (in seconds) that Lambda allows a function to run before stopping it. The default is 3 seconds, and the maximum allowed value is 900 seconds. For functions using Lambda Managed Instances, asynchronous invocations and event source mapping invocations (except Amazon MQ and Amazon DocumentDB) support a maximum allowed value of 5,400 seconds (90 minutes). For more information, see [Lambda execution environment](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-context.html).
+The amount of time (in seconds) that Lambda allows a function to run before stopping it. The default is 3 seconds, and the maximum allowed value is 1,800 seconds. For functions using Lambda Managed Instances, asynchronous invocations and event source mapping invocations (except Amazon MQ and Amazon DocumentDB) support a maximum allowed value of 5,400 seconds (90 minutes). For more information, see [Lambda execution environment](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-context.html).
 Type: Integer
 Valid Range: Minimum value of 1.
 Required: No
@@ -379,7 +379,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [AcceleratorConfig](#API_UpdateFunctionConfiguration_ResponseSyntax) **   <a name="lambda-UpdateFunctionConfiguration-response-AcceleratorConfig"></a>
-The accelerator resource settings for a Lambda execution environment.
+The accelerator resource settings for a Lambda execution environment, including the amount of accelerator memory to allocate. To use an accelerator, the function must also have a capacity provider configuration (`CapacityProviderConfig`) for Lambda Managed Instances.
 Type: [AcceleratorConfig](API_AcceleratorConfig.md) object
 
  ** [Architectures](#API_UpdateFunctionConfiguration_ResponseSyntax) **   <a name="lambda-UpdateFunctionConfiguration-response-Architectures"></a>

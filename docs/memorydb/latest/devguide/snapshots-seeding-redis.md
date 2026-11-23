@@ -133,7 +133,7 @@ AWS Regions introduced before March 20, 2019, are enabled by default. You can be
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "Policy15397346",

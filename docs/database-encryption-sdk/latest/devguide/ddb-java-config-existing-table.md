@@ -34,7 +34,7 @@ For example annotations, see [Use an annotated data class](ddb-java-using.md#ddb
 **2. Define which attributes will be excluded from the signatures**
 The following example assumes that all `DO_NOTHING` attributes share the distinct prefix "`:`", and uses the prefix to define the allowed unsigned attributes. The client will assume that any attribute name with the "`:`" prefix is excluded from the signatures. For more information, see [Allowed unsigned attributes](ddb-java-using.md#allowed-unauth).
 
-```
+```java
 final String unsignedAttrPrefix = ":";
 ```
 
@@ -42,7 +42,7 @@ final String unsignedAttrPrefix = ":";
 The following example creates an [AWS KMS keyring](use-kms-keyring.md). The AWS KMS keyring uses symmetric encryption or asymmetric RSA AWS KMS keys to generate, encrypt, and decrypt data keys.
 This example uses `CreateMrkMultiKeyring` to create an AWS KMS keyring with a symmetric encryption KMS key. The `CreateAwsKmsMrkMultiKeyring` method ensures that the keyring will correctly handle both single-Region and multi-Region keys.
 
-```
+```java
 final MaterialProviders matProv = MaterialProviders.builder()
         .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
         .build();
@@ -57,7 +57,7 @@ The following example defines a `tableConfigs` Map that represents the encryptio
 This example specifies the DynamoDB table name as the [logical table name](ddb-java-using.md#logical-table-name). We strongly recommend specifying your DynamoDB table name as the logical table name when you first define your encryption configuration. For more information, see [Encryption configuration in the AWS Database Encryption SDK for DynamoDB](ddb-java-using.md#ddb-config-encrypt).
 You must specify `FORCE_WRITE_PLAINTEXT_ALLOW_READ_PLAINTEXT` as the plaintext override. This policy continues to read and write plaintext items, reads encrypted items, and prepares the client to write encrypted items.
 
-```
+```java
 final Map<String, DynamoDbTableEncryptionConfig> tableConfigs = new HashMap<>();
 final DynamoDbTableEncryptionConfig config = DynamoDbTableEncryptionConfig.builder()
         .logicalTableName(ddbTableName)
@@ -74,7 +74,7 @@ tableConfigs.put(ddbTableName, config);
 **5. Create the `DynamoDbEncryptionInterceptor`**
 The following example creates the `DynamoDbEncryptionInterceptor` using the `tableConfigs` from **Step 3**.
 
-```
+```java
 DynamoDbEncryptionInterceptor interceptor = DynamoDbEncryptionInterceptor.builder()
         .config(DynamoDbTablesEncryptionConfig.builder()
                 .tableEncryptionConfigs(tableConfigs)
@@ -91,7 +91,7 @@ Before you proceed to [Step 3](#ddb-java-add-step3), you must encrypt and sign a
 
 The following example updates the table encryption configuration from **Step 1**. You must update the plaintext override with `FORBID_WRITE_PLAINTEXT_ALLOW_READ_PLAINTEXT`. This policy continues to read plaintext items, but also reads and writes encrypted items. Create a new `DynamoDbEncryptionInterceptor` using the updated `tableConfigs`.
 
-```
+```java
 final Map<String, DynamoDbTableEncryptionConfig> tableConfigs = new HashMap<>();
 final DynamoDbTableEncryptionConfig config = DynamoDbTableEncryptionConfig.builder()
         .logicalTableName(ddbTableName)
@@ -112,7 +112,7 @@ After you have encrypted and signed all of your items, update the plaintext over
 
 The following example updates the table encryption configuration from **Step 2**. You can either update the plaintext override with `FORBID_WRITE_PLAINTEXT_FORBID_READ_PLAINTEXT` or remove the plaintext policy from your configuration. The client only reads and writes encrypted and signed items by default. Create a new `DynamoDbEncryptionInterceptor` using the updated `tableConfigs`.
 
-```
+```java
 final Map<String, DynamoDbTableEncryptionConfig> tableConfigs = new HashMap<>();
 final DynamoDbTableEncryptionConfig config = DynamoDbTableEncryptionConfig.builder()
         .logicalTableName(ddbTableName)

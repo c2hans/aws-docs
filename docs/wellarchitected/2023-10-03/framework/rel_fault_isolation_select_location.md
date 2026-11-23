@@ -12,6 +12,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Diagram showing a resilient multi-AZ database deployment with backup to another AWS Region](https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/multi-az-architecture.png)
 
+*A resilient multi-AZ database deployment with backup to another AWS Region*
+
  **Common anti-patterns:**
 +  Choosing to design a multi-Region architecture when a multi-AZ architecture would satisfy requirements.
 +  Not accounting for dependencies between application components if resilience and multi-location requirements differ between those components.

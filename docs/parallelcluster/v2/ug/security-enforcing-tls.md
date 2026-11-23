@@ -80,7 +80,7 @@ If you're able to make a connection, you need to recompile OpenSSL and Python to
 
 To ensure that AWS ParallelCluster doesn't negotiate for anything earlier than TLS 1.2, you need to recompile OpenSSL and Python. To do this, copy the following content to create a script and run it.
 
-```
+```bash
 #!/usr/bin/env bash
 set -e
 
@@ -107,7 +107,7 @@ sudo make install > /dev/null
 
 This compiles a version of Python that has a statically linked OpenSSL that doesn't automatically negotiate anything earlier than TLS 1.2. This also installs OpenSSL in the `/opt/openssl-with-min-tls1_2` directory and installs Python in the `/opt/python-with-min-tls1_2` directory. After you run this script, confirm installation of the new version of Python.
 
-```
+```sh
 $ /opt/python-with-min-tls1_2/bin/python3 --version
 ```
 

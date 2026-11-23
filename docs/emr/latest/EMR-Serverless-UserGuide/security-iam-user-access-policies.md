@@ -18,7 +18,7 @@ The following is a sample policy that allows power users to create and modify EM
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -58,7 +58,7 @@ We strongly recommend setting this policy to ensure that users cannot create EC2
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -128,7 +128,7 @@ This following is a sample policy that allows users read-only permissions on EMR
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -164,7 +164,7 @@ You can use tag conditions for fine-grained access control. For example, you can
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

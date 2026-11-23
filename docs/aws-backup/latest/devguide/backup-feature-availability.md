@@ -58,7 +58,7 @@ If a resource type does not have a checkmark in the Cross-Region backup or Cross
 | Virtual machines | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ |  | ✓ |  |  |  |  |
 | AWS CloudFormation | ✓ 5 |  | ✓ | ✓ 5 |  |  | ✓ |  |  |  |  |  |  |  |
 | Amazon DynamoDB |  |  | ✓ |  |  |  |  |  | ✓ |  |  |  |  |  |
-| DynamoDB with [AWS Backup advanced features](advanced-ddb-backup.md) | ✓ | ✓ | ✓ |  |  | ✓ | ✓ |  | ✓ | ✓ |  |  |  |  |
+| DynamoDB with [AWS Backup advanced features](advanced-ddb-backup.md) | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |  | ✓ | ✓ |  |  |  |  |
 | SAP HANA databases on Amazon EC2 instances | ✓ | ✓ |  | ✓ 6 | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |
 | Amazon EKS10 | ✓ | ✓ |  |  |  | ✓ |  | ✓ |  | ✓11 |  |  |  |  |
 

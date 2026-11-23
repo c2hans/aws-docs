@@ -9,7 +9,7 @@ A network interface is a logical networking component in a VPC that represents a
 ## Syntax
 <a name="node-eni-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Networking.ENI:
   properties:
     device\_index: Integer
@@ -56,7 +56,7 @@ Type: String
 ## Example
 <a name="node-eni-example"></a>
 
-```
+```yaml
 SampleENI:
   type: tosca.nodes.AWS.Networking.ENI
   properties:

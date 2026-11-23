@@ -13,11 +13,11 @@ By default, tables created without explicitly defining sort keys or distribution
 
 To enable an existing table to be automatically optimized, use the ALTER statement options to change the table to `AUTO`. You might choose to define automation for sort keys, but not for distribution keys (and vice versa). If you run an ALTER statement to convert a table to be an automated table, existing sort keys and distribution styles are preserved.
 
-```
+```sql
 ALTER TABLE {{table_name}} ALTER SORTKEY AUTO;
 ```
 
-```
+```sql
 ALTER TABLE {{table_name}} ALTER DISTSTYLE AUTO;
 ```
 
@@ -30,25 +30,25 @@ Initially, a table has no distribution key or sort key. The distribution style i
 
 You can remove a table from automatic optimization. Removing a table from automation involves selecting a sort key or distribution style. To change distribution style, specify a specific distribution style.
 
-```
+```sql
 ALTER TABLE {{table_name}} ALTER DISTSTYLE EVEN;
 ```
 
-```
+```sql
 ALTER TABLE {{table_name}} ALTER DISTSTYLE ALL;
 ```
 
-```
+```sql
 ALTER TABLE {{table_name}} ALTER DISTSTYLE KEY DISTKEY {{c1}};
 ```
 
 To change a sort key, you can define a sort key or choose none.
 
-```
+```sql
 ALTER TABLE {{table_name}} ALTER SORTKEY({{c1, c2}});
 ```
 
-```
+```sql
 ALTER TABLE {{table_name}} ALTER SORTKEY NONE;
 ```
 

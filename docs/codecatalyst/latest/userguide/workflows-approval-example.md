@@ -10,7 +10,7 @@ The following example shows how to add an **Approval** gate called `Approval_01`
 
 For more information about the **Approval** gate, see [Requiring approvals on workflow runs](workflows-approval.md).
 
-```
+```yaml
 Actions:
   Staging: # Deploy to a staging server
     Identifier: aws/ecs-deploy@v1

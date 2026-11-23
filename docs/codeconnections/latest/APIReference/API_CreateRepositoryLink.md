@@ -35,7 +35,7 @@ The request accepts the following data in JSON format.
 The Amazon Resource Name (ARN) of the connection to be associated with the repository link.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `arn:aws(-[\w]+)*:.+:.+:[0-9]{12}:.+`
+Pattern: `arn:aws(-[\w]+)*:(codestar-connections|codeconnections):[a-z0-9\-]+:[0-9]{12}:connection\/[\w\-]+`
 Required: Yes
 
  ** [EncryptionKeyArn](#API_CreateRepositoryLink_RequestSyntax) **   <a name="codeconnections-CreateRepositoryLink-request-EncryptionKeyArn"></a>
@@ -121,6 +121,10 @@ HTTP Status Code: 429
  ** ResourceAlreadyExistsException **
 Unable to create resource. Resource already exists.
 HTTP Status Code: 409
+
+ ** ResourceNotFoundException **
+Resource not found. Verify the connection resource ARN and try again.
+HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was denied due to request throttling.

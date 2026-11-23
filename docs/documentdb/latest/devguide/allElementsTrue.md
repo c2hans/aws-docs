@@ -53,7 +53,7 @@ To view a code example for using the `$allElementsTrue` command, choose the tab 
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function example() {
@@ -76,7 +76,7 @@ example();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def example():

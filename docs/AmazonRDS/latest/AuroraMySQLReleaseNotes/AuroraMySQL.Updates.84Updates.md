@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes
 The following are database engine updates for Amazon Aurora MySQL version 8.4.
 
 **Topics**<a name="aurora_84_updates"></a>
++ [Aurora MySQL 8.4.12](AuroraMySQL.Updates.8412.md)
 + [Aurora MySQL 8.4.10](AuroraMySQL.Updates.8410.md)
 + [Aurora MySQL 8.4.8](AuroraMySQL.Updates.848.md)
 + [Aurora MySQL 8.4.7](AuroraMySQL.Updates.847.md)

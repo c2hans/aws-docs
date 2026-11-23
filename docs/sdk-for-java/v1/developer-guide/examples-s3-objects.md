@@ -26,7 +26,7 @@ Use the AmazonS3 client’s `putObject` method, supplying a bucket name, key nam
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -34,7 +34,7 @@ import com.amazonaws.services.s3.AmazonS3;
 
  **Code**
 
-```
+```java
 System.out.format("Uploading %s to S3 bucket %s...\n", file_path, bucket_name);
 final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.DEFAULT_REGION).build();
 try {
@@ -56,7 +56,7 @@ The `listObjects` method returns an [ObjectListing](https://docs.aws.amazon.com/
 
  **Imports**
 
-```
+```java
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
@@ -66,7 +66,7 @@ import com.amazonaws.services.s3.model.S3ObjectSummary;
 
  **Code**
 
-```
+```java
 System.out.format("Objects in S3 bucket %s:\n", bucket_name);
 final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.DEFAULT_REGION).build();
 ListObjectsV2Result result = s3.listObjectsV2(bucket_name);
@@ -89,7 +89,7 @@ The following example downloads an object from S3 and saves its contents to a fi
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -102,7 +102,7 @@ import java.io.File;
 
  **Code**
 
-```
+```java
 System.out.format("Downloading %s from S3 bucket %s...\n", key_name, bucket_name);
 final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.DEFAULT_REGION).build();
 try {
@@ -137,14 +137,14 @@ You can copy an object from one bucket to another by using the AmazonS3 client�
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 ```
 
  **Code**
 
-```
+```java
 try {
     s3.copyObject(from_bucket, object_key, to_bucket, object_key);
 } catch (AmazonServiceException e) {
@@ -166,14 +166,14 @@ Use the AmazonS3 client’s `deleteObject` method, passing it the name of a buck
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 ```
 
  **Code**
 
-```
+```java
 final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.DEFAULT_REGION).build();
 try {
     s3.deleteObject(bucket_name, object_key);
@@ -192,7 +192,7 @@ Using the AmazonS3 client’s `deleteObjects` method, you can delete multiple ob
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -200,7 +200,7 @@ import com.amazonaws.services.s3.AmazonS3;
 
  **Code**
 
-```
+```java
 final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.DEFAULT_REGION).build();
 try {
     DeleteObjectsRequest dor = new DeleteObjectsRequest(bucket_name)

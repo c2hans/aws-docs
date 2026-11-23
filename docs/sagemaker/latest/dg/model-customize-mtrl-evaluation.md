@@ -42,7 +42,7 @@ The `MultiTurnRLEvaluator` provides a high-level interface for launching evaluat
 
 **Evaluate a fine-tuned model**
 
-```
+```python
 from sagemaker.train.evaluate import MultiTurnRLEvaluator
 from sagemaker.train.multi_turn_rl_trainer import MultiTurnRLTrainer
 
@@ -70,7 +70,7 @@ print(f"MLflow: {execution.mlflow_url}")
 
 When evaluating a base model directly, `agent_config` is required since there is no trainer to inherit from:
 
-```
+```python
 from sagemaker.train.evaluate import MultiTurnRLEvaluator
 
 # With Bedrock AgentCore
@@ -92,7 +92,7 @@ execution.wait()
 
 A single `evaluate()` call that evaluates both the base model and the fine-tuned model in one pipeline:
 
-```
+```python
 comparison_evaluator = MultiTurnRLEvaluator(
     model=trainer,
     dataset="s3://my-bucket/eval-prompts.parquet",
@@ -107,7 +107,7 @@ print(f"Status: {execution.status.overall_status}")
 
 **Monitor and retrieve results**
 
-```
+```python
 # Refresh status
 execution.refresh()
 print(f"Status: {execution.status.overall_status}")
@@ -133,7 +133,7 @@ You can also create evaluation jobs directly using the `CreateJob` API.
 
 **Using AWS CLI**
 
-```
+```bash
 aws sagemaker create-job \
   --job-category AgentRFTEvaluation \
   --job-name "my-agent-rft-eval-job" \
@@ -171,7 +171,7 @@ aws sagemaker create-job \
 
 **Using SageMaker AI Python SDK (boto3)**
 
-```
+```python
 import json
 import boto3
 
@@ -218,7 +218,7 @@ print(f"Eval Job ARN: {response['JobArn']}")
 
  To evaluate a model produced by a training job, include `ModelPackageConfig` with the `InputModelPackageArn`:
 
-```
+```python
 import json
 import boto3
 
@@ -247,7 +247,7 @@ print(f"Eval Job ARN: {response['JobArn']}")
 
  Use the same approach as Bedrock AgentCore evaluation but specify `CustomAgentLambdaConfig` in the `AgentConfig`:
 
-```
+```json
 "AgentConfig": {
     "CustomAgentLambdaConfig": {
         "LambdaArn": "arn:aws:lambda:us-west-2:account-id:function:rft-agent-forwarder"
@@ -273,7 +273,7 @@ print(f"Eval Job ARN: {response['JobArn']}")
 ## Monitoring evaluation
 <a name="model-customize-mtrl-evaluation-monitoring"></a>
 
-```
+```bash
 aws sagemaker describe-job \
   --job-name "my-agent-rft-eval-job" \
   --job-category AgentRFTEvaluation \

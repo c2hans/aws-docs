@@ -90,7 +90,7 @@ When using tasks with the [StartTaskContact](https://docs.aws.amazon.com/connect
 
 The following code shows request syntax that includes `PreviousContactID` and `RelatedContactId`.
 
-```
+```json
 PUT /contact/task HTTP/1.1
 Content-type: application/json
 

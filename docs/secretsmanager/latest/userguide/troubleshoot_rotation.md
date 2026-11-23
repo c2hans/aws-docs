@@ -376,7 +376,7 @@ If you use an assumed role or a cross-account rotation with Secrets Manager and 
 
    Include the rotation\_token parameter in the create\_secret step for cross-account rotation:
 
-   ```
+   ```python
    def lambda_handler(event, context):
        """Secrets Manager Rotation Template
 
@@ -444,7 +444,7 @@ If you use an assumed role or a cross-account rotation with Secrets Manager and 
 
    Revise the `create_secret` function to accept and use the `rotation_token` parameter:
 
-   ```
+   ```python
    # Add rotation_token to the function
    def create_secret(service_client, arn, token, rotation_token):
    """Create the secret

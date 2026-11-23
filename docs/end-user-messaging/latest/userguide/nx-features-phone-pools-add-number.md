@@ -41,7 +41,7 @@ The configuration of every phone number or sender ID that you add to a pool has 
 **To add a phone number, sender ID, or RCS agent to a pool using the AWS CLI**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 associate-origination-identity \
   > --pool-id {{poolId}} \
   > --origination-identity {{originationIdentity}} \
@@ -62,7 +62,7 @@ You can use the [list-pool-origination-identities](https://docs.aws.amazon.com/c
 **To view a list of origination IDs in a pool using the AWS CLI**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 list-pool-origination-identities \
   > --pool-id {{pool-78ec067f62f94d57bd3bab991example}}
   ```

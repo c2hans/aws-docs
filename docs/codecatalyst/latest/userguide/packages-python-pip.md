@@ -55,13 +55,13 @@ If copying from the console instructions, the following values should be updated
 
 1. Assuming that a package is present in your repository or one of its upstream repositories, you can install it with `pip install`. For example, use the following command to install the `requests` package.
 
-   ```
+   ```bash
    pip install requests
    ```
 
    Use the `-i` option to revert temporarily to installing packages from [https://pypi.org](https://pypi.org) instead of your CodeCatalyst package repository.
 
-   ```
+   ```bash
    pip install -i https://pypi.org/simple requests
    ```
 

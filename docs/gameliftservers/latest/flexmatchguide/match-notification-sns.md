@@ -25,7 +25,7 @@ You can have Amazon GameLift Servers publish all events that a FlexMatch matchma
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Id": "__default_policy_ID",

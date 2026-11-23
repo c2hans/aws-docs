@@ -48,7 +48,7 @@ Vale uses the `.vale.ini` configuration file in your project root to determine w
 
 1. Run the command:
 
-   ```
+   ```bash
    vale sync
    ```
 

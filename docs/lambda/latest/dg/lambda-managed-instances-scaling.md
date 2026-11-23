@@ -126,7 +126,7 @@ Use the `put-function-scaling-config` command to set the minimum and maximum num
 **To configure execution environments for a function version**
 + Run the following command. This example sets a minimum of 5 and a maximum of 20 execution environments for the `$LATEST.PUBLISHED` version.
 
-  ```
+  ```bash
   aws lambda put-function-scaling-config \
     --function-name {{my-lmi-function}} \
     --qualifier '$LATEST.PUBLISHED' \
@@ -169,7 +169,7 @@ Create two schedules to scale up before peak hours and scale down afterward.
 
 The following command creates a schedule that sets the minimum to 100 and the maximum to 1000 execution environments at 8:00 AM UTC.
 
-```
+```bash
 aws scheduler create-schedule \
   --name "ScaleUpLambdaManagedInstances" \
   --schedule-expression "cron(0 8 * * ? *)" \
@@ -183,7 +183,7 @@ aws scheduler create-schedule \
 
 The following command creates a schedule that sets the minimum to 5 and the maximum to 20 execution environments at 6:00 PM UTC.
 
-```
+```bash
 aws scheduler create-schedule \
   --name "ScaleDownLambdaManagedInstances" \
   --schedule-expression "cron(0 18 * * ? *)" \
@@ -202,7 +202,7 @@ If you set both `MinExecutionEnvironments` and `MaxExecutionEnvironments` to 0, 
 
 The following command creates a schedule that deactivates the function version at 10:00 PM UTC by setting the minimum and maximum to 0.
 
-```
+```bash
 aws scheduler create-schedule \
   --name "DeactivateLambdaManagedInstances" \
   --schedule-expression "cron(0 22 * * ? *)" \
@@ -216,7 +216,7 @@ aws scheduler create-schedule \
 
 The following command creates a schedule that reactivates the function version at 7:00 AM UTC with a minimum of 10 and a maximum of 20.
 
-```
+```bash
 aws scheduler create-schedule \
   --name "ReactivateLambdaManagedInstances" \
   --schedule-expression "cron(0 7 * * ? *)" \
@@ -235,7 +235,7 @@ Create two schedules to keep execution environments running during business hour
 
 The following command creates a schedule that allows the function version to scale to zero at 10:00 PM UTC. It sets the minimum to 0 and the maximum to 20.
 
-```
+```bash
 aws scheduler create-schedule \
   --name "AllowScaleToZeroLambdaManagedInstances" \
   --schedule-expression "cron(0 22 * * ? *)" \
@@ -249,7 +249,7 @@ aws scheduler create-schedule \
 
 The following command creates a schedule that raises the minimum to 10 at 7:00 AM UTC, with a maximum of 20.
 
-```
+```bash
 aws scheduler create-schedule \
   --name "RaiseMinimumLambdaManagedInstances" \
   --schedule-expression "cron(0 7 * * ? *)" \

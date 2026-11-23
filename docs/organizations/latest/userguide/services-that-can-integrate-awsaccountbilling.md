@@ -45,7 +45,7 @@ Use the following AWS CLI commands or API operations to enable trusted service a
 
   Run the following command to enable AWS Billing and Cost Management as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations enable-aws-service-access \
       --service-principal  billing-cost-management.amazonaws.com
   ```
@@ -73,7 +73,7 @@ Use the following AWS CLI commands or API operations to disable trusted service 
 
   Run the following command to disable AWS Billing and Cost Management as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations disable-aws-service-access \
       --service-principal  billing-cost-management.amazonaws.com
   ```

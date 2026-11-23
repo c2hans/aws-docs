@@ -22,7 +22,7 @@ Guzzle provides several stream decorators that you can use to control how the SD
 
 Reads from multiple streams, one after the other.
 
-```
+```php
 use GuzzleHttp\Psr7;
 
 $a = Psr7\stream_for('abc, ');
@@ -41,7 +41,7 @@ echo $composed(); // abc, 123. Above all listen to me.
 
 Used to allow seeking over previously read bytes on non-seekable streams. This can be useful when transferring a non-seekable entity body fails due to needing to rewind the stream (for example, resulting from a redirect). Data that is read from the remote stream is buffered in a PHP temp stream so that previously read bytes are cached first in memory, then on disk.
 
-```
+```php
 use GuzzleHttp\Psr7;
 
 $original = Psr7\stream_for(fopen('http://www.google.com', 'r'));
@@ -72,7 +72,7 @@ This stream decorator skips the first 10 bytes of the given stream to remove the
 
 Lazily reads or writes to a file that is opened only after an I/O operation takes place on the stream.
 
-```
+```php
 use GuzzleHttp\Psr7;
 
 $stream = new Psr7\LazyOpenStream('/path/to/file', 'r');
@@ -89,7 +89,7 @@ echo $stream->read(10);
 
 Used to read a subset or slice of an existing stream object. This can be useful for breaking a large file into smaller pieces to be sent in chunks (e.g., the Amazon S3 Multipart Upload API).
 
-```
+```php
 use GuzzleHttp\Psr7;
 
 $original = Psr7\stream_for(fopen('/tmp/test.txt', 'r+'));
@@ -111,7 +111,7 @@ echo $stream->tell();
 
 Wraps a stream and does not allow seeking.
 
-```
+```php
 use GuzzleHttp\Psr7;
 
 $original = Psr7\stream_for('foo');
@@ -142,7 +142,7 @@ Creating a stream decorator is very easy thanks to the [GuzzleHttp\\Psr7\\Stream
 
 For example, let’s say we wanted to call a specific function each time the last byte is read from a stream. This could be implemented by overriding the `read()` method.
 
-```
+```php
 use Psr\Http\Message\StreamInterface;
 use GuzzleHttp\Psr7\StreamDecoratorTrait;
 
@@ -174,7 +174,7 @@ class EofCallbackStream implements StreamInterface
 
 This decorator could be added to any existing stream and used like this.
 
-```
+```php
 use GuzzleHttp\Psr7;
 
 $original = Psr7\stream_for('foo');

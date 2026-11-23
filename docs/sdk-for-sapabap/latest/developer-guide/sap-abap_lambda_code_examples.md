@@ -34,7 +34,7 @@ For more information, see [Create a Lambda function with the console](https://do
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/lmd#code-examples).
 
-```
+```sap-abap
     TRY.
         "Create an AWS Identity and Access Management (IAM) role that grants AWS Lambda permission to write to logs."
         DATA(lv_policy_document) = `{` &&
@@ -268,7 +268,7 @@ The following code example shows how to use `CreateFunction`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/lmd#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_lmd->createfunction(
             iv_functionname = iv_function_name
@@ -308,7 +308,7 @@ The following code example shows how to use `DeleteFunction`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/lmd#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_lmd->deletefunction( iv_functionname = iv_function_name ).
         MESSAGE 'Lambda function deleted.' TYPE 'I'.
@@ -334,7 +334,7 @@ The following code example shows how to use `GetFunction`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/lmd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_lmd->getfunction( iv_functionname = iv_function_name ).       " oo_result is returned for testing purposes. "
         MESSAGE 'Lambda function information retrieved.' TYPE 'I'.
@@ -356,7 +356,7 @@ The following code example shows how to use `Invoke`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/lmd#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lv_json) = /aws1/cl_rt_util=>string_to_xstring(
           `{`  &&
@@ -397,7 +397,7 @@ The following code example shows how to use `ListFunctions`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/lmd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_lmd->listfunctions( ).       " oo_result is returned for testing purposes. "
         DATA(lt_functions) = oo_result->get_functions( ).
@@ -420,7 +420,7 @@ The following code example shows how to use `UpdateFunctionCode`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/lmd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_lmd->updatefunctioncode(     " oo_result is returned for testing purposes. "
               iv_functionname = iv_function_name
@@ -457,7 +457,7 @@ The following code example shows how to use `UpdateFunctionConfiguration`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/lmd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_lmd->updatefunctionconfiguration(     " oo_result is returned for testing purposes. "
               iv_functionname = iv_function_name

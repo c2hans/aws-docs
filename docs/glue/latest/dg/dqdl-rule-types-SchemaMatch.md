@@ -8,7 +8,7 @@ Checks if the schema of the primary dataset matches the schema of a reference da
 
 **Syntax**
 
-```
+```json
 SchemaMatch {{<REFERENCE_DATASET_ALIAS>}} {{<EXPRESSION>}}
 ```
 + **REFERENCE\_DATASET\_ALIAS** – The alias of the reference dataset against which to compare schemas.
@@ -20,6 +20,6 @@ SchemaMatch {{<REFERENCE_DATASET_ALIAS>}} {{<EXPRESSION>}}
 
 The following example rule checks whether the schema of the primary dataset exactly matches the schema of a reference dataset.
 
-```
+```json
 SchemaMatch "reference" = 1.0
 ```

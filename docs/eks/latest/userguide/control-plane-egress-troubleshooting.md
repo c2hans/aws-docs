@@ -15,7 +15,7 @@ When using the `CUSTOMER_ROUTED` control plane egress mode, you are responsible 
 
 When the control plane can’t reach a webhook server or OIDC provider, the symptom usually surfaces as a webhook timeout. To confirm, create or modify a resource that triggers the webhook and check the error:
 
-```
+```bash
 kubectl apply -f my-resource.yaml
 ```
 
@@ -29,7 +29,7 @@ Post "https://my-webhook.example.com/validate?timeout=10s": context deadline exc
 
 You can also check recent events for webhook errors across the cluster:
 
-```
+```bash
 kubectl get events --all-namespaces --field-selector reason=FailedCreate
 ```
 + If the error is a timeout (`context deadline exceeded`) or connection refused, the control plane can’t reach the webhook endpoint. See [No egress route to the required endpoints](#egress-troubleshoot-natgw), [NACLs blocking webhook or control plane traffic](#egress-troubleshoot-nacl), and [Security groups preventing access](#egress-troubleshoot-sg).
@@ -51,21 +51,21 @@ The control plane network interface subnets don’t have a working route to the 
 
 1. Identify the subnets your cluster uses for control plane network interfaces:
 
-   ```
+   ```bash
    aws eks describe-cluster --name my-cluster \
        --query "cluster.resourcesVpcConfig.subnetIds"
    ```
 
 1. For each subnet, check the associated route table:
 
-   ```
+   ```bash
    aws ec2 describe-route-tables \
        --filters "Name=association.subnet-id,Values=subnet-ExampleID1"
    ```
 
 1. Verify a route exists for `0.0.0.0/0` (or a route that covers the endpoint) pointing at your egress device. If it is missing, add the route. The following example adds a NAT gateway route; substitute your own egress target (for example, a transit gateway or network interface):
 
-   ```
+   ```bash
    aws ec2 create-route \
        --route-table-id rtb-ExampleID \
        --destination-cidr-block 0.0.0.0/0 \
@@ -87,7 +87,7 @@ Network ACLs on the control plane ENI subnets block outbound traffic to webhook 
 
 1. Identify the NACLs associated with your control plane subnets:
 
-   ```
+   ```bash
    aws ec2 describe-network-acls \
        --filters "Name=association.subnet-id,Values=subnet-ExampleID1"
    ```
@@ -125,7 +125,7 @@ The security group attached to the control plane ENIs (the *cluster security gro
 
 1. Identify the cluster security group:
 
-   ```
+   ```bash
    aws eks describe-cluster --name my-cluster \
        --query "cluster.resourcesVpcConfig.clusterSecurityGroupId"
    ```
@@ -144,7 +144,7 @@ The security group attached to the control plane ENIs (the *cluster security gro
 
 1. If outbound rules are restrictive, add rules for the required traffic:
 
-   ```
+   ```bash
    aws ec2 authorize-security-group-egress \
        --group-id sg-ExampleClusterSG \
        --protocol tcp \
@@ -170,13 +170,13 @@ The VPC DHCP option set was changed. Alternatively, it doesn’t include `Amazon
 
 1. Verify the DHCP option set for your VPC:
 
-   ```
+   ```bash
    aws ec2 describe-vpcs --vpc-ids vpc-ExampleID \
        --query "Vpcs[0].DhcpOptionsId" \
        --region region-code
    ```
 
-   ```
+   ```bash
    aws ec2 describe-dhcp-options --dhcp-options-ids dopt-ExampleID --region region-code
    ```
 
@@ -201,14 +201,14 @@ The subnet route table is missing a `::/0` route to an egress-only internet gate
 
 1. Verify an egress-only internet gateway exists and is attached to the VPC:
 
-   ```
+   ```bash
    aws ec2 describe-egress-only-internet-gateways \
        --filters "Name=attachment.vpc-id,Values=vpc-ExampleID"
    ```
 
 1. Check that the route table for the control plane subnets has a `::/0` route:
 
-   ```
+   ```bash
    aws ec2 describe-route-tables \
        --filters "Name=association.subnet-id,Values=subnet-ExampleID1" \
        --query "RouteTables[0].Routes[?DestinationIpv6CidrBlock=='::/0']"
@@ -216,7 +216,7 @@ The subnet route table is missing a `::/0` route to an egress-only internet gate
 
 1. If missing, add the route:
 
-   ```
+   ```bash
    aws ec2 create-route \
        --route-table-id rtb-ExampleID \
        --destination-ipv6-cidr-block ::/0 \

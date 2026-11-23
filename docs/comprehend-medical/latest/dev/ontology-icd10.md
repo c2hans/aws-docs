@@ -75,7 +75,7 @@ The following example input text shows how the `InferICD10CM` operation works. T
 
 The `InferICD10CM` operation returns the following output in JSON format (abbreviated for brevity).
 
-```
+```json
 {
     "Entities": [
         {
@@ -139,7 +139,7 @@ The `InferICD10CM` operation returns the following output in JSON format (abbrev
 
 `InferICD10CM` also recognizes when an entity is negated in text. For instance, if a patient is not experiencing a symptom, both the symptom and negation are identified as traits and listed with a confidence score. Based on the input for the previous example, the symptom `Nausea` will be listed under `NEGATION` because the patient isn't experiencing nausea.
 
-```
+```json
 {
     "Id": 3,
     "Text": "nausea",

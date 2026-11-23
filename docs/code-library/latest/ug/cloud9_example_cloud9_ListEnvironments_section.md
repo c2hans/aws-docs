@@ -37,7 +37,7 @@ For more information, see [Working with environments in AWS Cloud9](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example gets a list of available AWS Cloud9 development environment identifiers.**
 
-```
+```powershell
 Get-C9EnvironmentList
 ```
 **Output:**
@@ -51,7 +51,7 @@ Get-C9EnvironmentList
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of available AWS Cloud9 development environment identifiers.**
 
-```
+```powershell
 Get-C9EnvironmentList
 ```
 **Output:**

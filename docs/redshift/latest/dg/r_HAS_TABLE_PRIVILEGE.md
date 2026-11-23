@@ -46,7 +46,7 @@ BOOLEAN
 
 The following query finds that the GUEST user doesn't have SELECT privilege on the LISTING table.
 
-```
+```sql
 select has_table_privilege('guest', 'listing', 'select');
 
 has_table_privilege
@@ -56,7 +56,7 @@ false
 
 The following query lists table privileges, including select, insert, update, and delete, using output from the pg\_tables and pg\_user catalog tables. This is a sample only. You might have to specify a schema name and table names from your database. For more information, see [Querying the catalog tables](c_join_PG.md).
 
-```
+```sql
 SELECT
      tablename
      ,usename
@@ -81,6 +81,6 @@ listing   |  elsa     |  false | false | false | false
 
 The previous query also contains a cross join. For more information, see [JOIN examples](r_Join_examples.md). To query tables that are not in the `public` schema, remove the `schemaname` condition from the WHERE clause and use the following example prior to your query.
 
-```
+```sql
 SET SEARCH_PATH to '{{schema_name}}';
 ```

@@ -35,7 +35,7 @@ To configure a Blackbaud Raiser's Edge NXT connection:
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

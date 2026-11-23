@@ -79,7 +79,7 @@ This function only pauses email sending for configuration sets in the AWS Region
 
 1. Under **Function code**, in the code editor, paste the following code, and replace `{{my-configuration-set}}` with the name of the configuration set:
 
-   ```
+   ```javascript
    'use strict';
 
    import {
@@ -155,7 +155,7 @@ The procedures in this section re-enable email sending for your configuration se
 
    The command produces output that resembles the following example:
 
-   ```
+   ```json
    {
        "ConfigurationSet": {
            "Name": "{{ConfigSet}}"
@@ -246,7 +246,7 @@ The procedures in this section are optional, but we recommend that you complete 
 
    If sending is enabled for the configuration set, you see the following output:
 
-   ```
+   ```json
    {
        "ConfigurationSet": {
            "Name": "{{ConfigSet}}"
@@ -282,7 +282,7 @@ When you execute this command, the status of the alarm switches from `OK` to `AL
 
    If the Lambda function executed successfully, you see output that resembles the following example:
 
-   ```
+   ```json
    {
        "ConfigurationSet": {
            "Name": "{{ConfigSet}}"

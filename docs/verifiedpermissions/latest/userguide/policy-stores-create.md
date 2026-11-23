@@ -200,7 +200,7 @@ To add schema, see [Amazon Verified Permissions policy store schema](schema.md).
  To add policies, see [Creating Amazon Verified Permissions static policies](policies-create.md).
 To add policy templates, see [Creating Amazon Verified Permissions policy templates](policy-templates-create.md).
 
-```
+```bash
 $ aws verifiedpermissions create-policy-store \
     --validation-settings "mode=STRICT"
 {

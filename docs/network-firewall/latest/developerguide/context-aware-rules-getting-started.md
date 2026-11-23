@@ -50,7 +50,7 @@ Network Firewall adds 2 APIs for working with context stores:
 + `ListContextStores` returns the context stores associated with your transit gateway-attached network firewalls, with each store's ID and owner account. Use it to find the store ID and to confirm that your firewall discovered a store.
 + `ListResourcesInContextStore` returns the resource IDs that a store tracks: the context IDs that you can reference in rules. Use it to confirm that an ID is tracked before you reference it. A rule that references an untracked ID matches nothing. You can filter the listing by Region and by resource type.
 
-```
+```sh
 aws network-firewall list-context-stores
 
 aws network-firewall list-resources-in-context-store \

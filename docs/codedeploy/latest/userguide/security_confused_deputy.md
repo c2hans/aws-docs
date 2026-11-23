@@ -21,7 +21,7 @@ For example, you might use the following trust policy with a EC2/On-Premises, AW
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -54,7 +54,7 @@ For an [Amazon ECS blue/green deployment created through CloudFormation](deploym
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

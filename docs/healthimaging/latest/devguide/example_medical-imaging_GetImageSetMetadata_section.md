@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
 Utility function to get image set metadata.
 
-```
+```cpp
 //! Routine which gets a HealthImaging image set's metadata.
 /*!
   \param dataStoreID: The HealthImaging data store ID.
@@ -54,7 +54,7 @@ bool AwsDoc::Medical_Imaging::getImageSetMetadata(const Aws::String &dataStoreID
 ```
 Get image set metadata without version.
 
-```
+```cpp
         if (AwsDoc::Medical_Imaging::getImageSetMetadata(dataStoreID, imageSetID, "", outputFilePath, clientConfig))
         {
             std::cout << "Successfully retrieved image set metadata." << std::endl;
@@ -63,7 +63,7 @@ Get image set metadata without version.
 ```
 Get image set metadata with version.
 
-```
+```cpp
         if (AwsDoc::Medical_Imaging::getImageSetMetadata(dataStoreID, imageSetID, versionID, outputFilePath, clientConfig))
         {
             std::cout << "Successfully retrieved image set metadata." << std::endl;
@@ -122,7 +122,7 @@ Output:
 
 **SDK for Java 2.x**
 
-```
+```java
     public static void getMedicalImageSetMetadata(MedicalImagingClient medicalImagingClient,
             String destinationPath,
             String datastoreId,
@@ -157,7 +157,7 @@ Output:
 **SDK for JavaScript (v3)**
 Utility function to get image set metadata.
 
-```
+```javascript
 import { GetImageSetMetadataCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 import { writeFileSync } from "node:fs";
@@ -206,7 +206,7 @@ export const getImageSetMetadata = async (
 ```
 Get image set metadata without version.
 
-```
+```javascript
   try {
     await getImageSetMetadata(
       "metadata.json.gzip",
@@ -219,7 +219,7 @@ Get image set metadata without version.
 ```
 Get image set metadata with version.
 
-```
+```javascript
   try {
     await getImageSetMetadata(
       "metadata2.json.gzip",
@@ -240,7 +240,7 @@ Get image set metadata with version.
 **SDK for Python (Boto3)**
 Utility function to get image set metadata.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -284,14 +284,14 @@ class MedicalImagingWrapper:
 ```
 Get image set metadata without version.
 
-```
+```python
                 image_set_metadata = self.health_imaging_client.get_image_set_metadata(
                     imageSetId=image_set_id, datastoreId=datastore_id
                 )
 ```
 Get image set metadata with version.
 
-```
+```python
                 image_set_metadata = self.health_imaging_client.get_image_set_metadata(
                     imageSetId=image_set_id,
                     datastoreId=datastore_id,
@@ -300,7 +300,7 @@ Get image set metadata with version.
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -312,7 +312,7 @@ The following code instantiates the MedicalImagingWrapper object.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         " iv_image_set_id = '1234567890123456789012345678901234567890'

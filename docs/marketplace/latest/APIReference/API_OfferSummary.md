@@ -74,6 +74,13 @@ Type: String
 Valid Values: `Draft | Released`
 Required: No
 
+ ** SubsidiaryAuthorizationId **   <a name="AWSMarketplaceService-Type-OfferSummary-SubsidiaryAuthorizationId"></a>
+The ID of the subsidiary authorization that the offer was created from. The ID begins with `subauthz-` followed by 13 alphanumeric characters.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 22.
+Pattern: `^subauthz-[a-zA-Z0-9]{13}$`
+Required: No
+
  ** TargetAgreementId **   <a name="AWSMarketplaceService-Type-OfferSummary-TargetAgreementId"></a>
 The target agreement ID of the offer.
 Type: String

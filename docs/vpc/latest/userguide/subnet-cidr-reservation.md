@@ -64,7 +64,7 @@ aws ec2 create-subnet-cidr-reservation --subnet-id {{subnet-03c51e2eEXAMPLE}} --
 
 The following is example output.
 
-```
+```json
 {
     "SubnetCidrReservation": {
         "SubnetCidrReservationId": "scr-044f977c4eEXAMPLE",

@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-statemachine-statemachinescheduletarget-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#sam-statemachine-statemachinescheduletarget-id): {{String}}
 ```
 
@@ -37,7 +37,7 @@ The value of `Id` can include alphanumeric characters, periods (`.`), hyphens (`
 #### YAML
 <a name="sam-property-statemachine-statemachinescheduletarget--examples--target--yaml"></a>
 
-```
+```yaml
 EBRule:
   Type: Schedule
   Properties:

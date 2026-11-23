@@ -14,7 +14,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java  ]
 
-```
+```java
     public void describeDatabase() {
         System.out.println("Describing database");
         final DescribeDatabaseRequest describeDatabaseRequest = new DescribeDatabaseRequest();
@@ -34,7 +34,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java v2  ]
 
-```
+```java
     public void describeDatabase() {
         System.out.println("Describing database");
         final DescribeDatabaseRequest describeDatabaseRequest = DescribeDatabaseRequest.builder()
@@ -54,7 +54,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Go  ]
 
-```
+```go
 describeDatabaseOutput, err := writeSvc.DescribeDatabase(describeDatabaseInput)
 
     if err != nil {
@@ -69,7 +69,7 @@ describeDatabaseOutput, err := writeSvc.DescribeDatabase(describeDatabaseInput)
 ------
 #### [  Python  ]
 
-```
+```python
     def describe_database(self):
         print("Describing database")
         try:
@@ -88,7 +88,7 @@ The following snippet uses AWS SDK for JavaScript v3. For more information about
 
 Also see [Class DescribeDatabaseCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-timestream-write/classes/describedatabasecommand.html) and [DescribeDatabase](https://docs.aws.amazon.com/timestream/latest/developerguide/API_DescribeDatabase.html).
 
-```
+```javascript
 import { TimestreamWriteClient, DescribeDatabaseCommand } from "@aws-sdk/client-timestream-write";
 const writeClient = new TimestreamWriteClient({ region: "us-east-1" });
 
@@ -113,7 +113,7 @@ try {
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/sample_apps/js).
 
-```
+```javascript
 async function describeDatabase () {
     console.log("Describing Database");
     const params = {
@@ -141,7 +141,7 @@ async function describeDatabase () {
 ------
 #### [  .NET  ]
 
-```
+```cs
         public async Task DescribeDatabase()
         {
             Console.WriteLine("Describing Database");

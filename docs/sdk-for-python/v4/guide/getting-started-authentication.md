@@ -18,7 +18,7 @@ For local development, we recommend short-term credentials. Obtain them with the
 
 Set your credentials as environment variables on macOS or Linux:
 
-```
+```bash
 export AWS_ACCESS_KEY_ID={{your_access_key_id}}
 export AWS_SECRET_ACCESS_KEY={{your_secret_access_key}}
 export AWS_SESSION_TOKEN={{your_session_token}}
@@ -41,7 +41,7 @@ Instead of setting environment variables in each terminal session, you can store
 
 Add a `[default]` profile to the `credentials` file:
 
-```
+```ini
 [default]
 aws_access_key_id = {{your_access_key_id}}
 aws_secret_access_key = {{your_secret_access_key}}
@@ -50,7 +50,7 @@ aws_session_token = {{your_session_token}}
 
 The SDK uses the `[default]` profile unless you select another one. To select a named profile, set the `AWS_PROFILE` environment variable:
 
-```
+```bash
 export AWS_PROFILE={{my-profile}}
 ```
 

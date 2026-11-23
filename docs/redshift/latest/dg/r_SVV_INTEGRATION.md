@@ -39,7 +39,7 @@ For information about zero-ETL integrations, see [Zero-ETL integrations](https:/
 
 The following SQL command displays the currently defined integrations.
 
-```
+```sql
 select * from svv_integration;
 
            integration_id              | target_database | source |      state      | current_lag |      last_replicated_checkpoint     | total_tables_replicated | total_tables_failed |       creation_time       |  refresh_interval  | source_database | is_history_mode

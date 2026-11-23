@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/partner-central/index.html
 title: 'AWS Partner Central Documentation'
 canonical_url: https://docs.aws.amazon.com/partner-central/
 source: aws-documentation
-generated_on: 2026-11-18
+generated_on: 2026-11-21
 ---
 
 # AWS Partner Central Documentation
@@ -26,7 +26,7 @@ AWS Partner Central is a portal for AWS Partners to manage their AWS Partner Net
 Integrations enable partners to perform both sell and cosell motions with AWS using familiar tools.
 
 - [Partner CRM Integrations](/partner-central/latest/crm/): Describes how AWS Partners can build CRM integrations using APIs.
-- [Partner Revenue Measurement](/PRM/latest/aws-prm-onboarding-guide/): Describes how AWS Partners can gain visibility into how their solutions impact AWS service consumption.
+- [AWS Revenue Measurement](/PRM/latest/aws-prm-onboarding-guide/): Describes how AWS Partners can gain visibility into how their solutions impact AWS service consumption.
 
 ---
 

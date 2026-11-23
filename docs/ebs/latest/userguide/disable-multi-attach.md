@@ -27,7 +27,7 @@ You can disable Multi-Attach for an `io1` or `io2` volume only if it is not atta
 **To disable Multi-Attach after creation**
 Use the [modify-volume](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-volume.html) command with the `-no-multi-attach-enabled` option.
 
-```
+```bash
 aws ec2 modify-volume \
     --volume-id {{vol-01234567890abcdef}} \
     --no-multi-attach-enabled
@@ -39,7 +39,7 @@ aws ec2 modify-volume \
 **To disable Multi-Attach after creation**
 Use the [Edit-EC2Volume](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2Volume.html) cmdlet with the `-MultiAttachEnabled` parameter.
 
-```
+```powershell
 Edit-EC2Volume `
     -VolumeId {{vol-01234567890abcdef}} `
     -MultiAttachEnabled $false

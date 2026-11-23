@@ -28,7 +28,7 @@ Create a new Studio notebook by following the [Tutorial: Create a Studio noteboo
 
 1. Use the following sample code:
 
-   ```
+   ```SQL
    %flink.ssql(type=update)
    CREATE TABLE exampleoutput (
      'ticket' VARCHAR,

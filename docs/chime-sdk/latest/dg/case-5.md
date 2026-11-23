@@ -16,7 +16,7 @@ The endpoint configured for the SIP media application is invoked for different s
 
 This example shows a typical invocation event for a `HANGUP`.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{6}},

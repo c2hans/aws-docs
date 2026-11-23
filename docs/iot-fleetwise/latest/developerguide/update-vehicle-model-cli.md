@@ -12,7 +12,7 @@ To update an existing vehicle model, run the following command.
 
 Replace {{update-vehicle-model-configuration}} with the name of the .json file that contains the configuration.
 
-```
+```bash
 aws iotfleetwise update-model-manifest --cli-input-json file://{{update-vehicle-model-configuration}}.json
 ```
 
@@ -24,7 +24,7 @@ aws iotfleetwise update-model-manifest --cli-input-json file://{{update-vehicle-
 After the vehicle model is activated, you can't change the vehicle model.
 + (Optional) Replace {{description}} with an updated description to help you identify the vehicle model.
 
-```
+```json
 {
     "name": "{{vehicle-model-name}}",
     "status": "{{vehicle-model-status}}",
@@ -41,7 +41,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -70,7 +70,7 @@ To retrieve a paginated list of summaries of all signals (nodes) in a given vehi
 
 Replace {{vehicle-model-name}} with the name of the vehicle model that you're checking.
 
-```
+```bash
 aws iotfleetwise list-model-manifest-nodes /
                  --name {{vehicle-model-name}}
 ```
@@ -82,7 +82,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -64,7 +64,7 @@ Create the compute environment:
 
 Create the launch template. Save the user-data script from the [companion GitHub repository](https://github.com/aws-samples/sample-batch-host-level-logs) to a file and encode it with base64:
 
-```
+```bash
 aws ec2 create-launch-template \
     --launch-template-name {{batch-host-logs}} \
     --launch-template-data '{
@@ -78,7 +78,7 @@ aws ec2 create-launch-template \
 
 Create the compute environment with the launch template:
 
-```
+```bash
 aws batch create-compute-environment \
     --compute-environment-name {{my-host-logs-ce}} \
     --type MANAGED \

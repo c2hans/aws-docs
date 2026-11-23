@@ -27,7 +27,7 @@ aws elb modify-load-balancer-attributes --load-balancer-name {{my-loadbalancer}}
 
 The following is an example response:
 
-```
+```json
 {
     "LoadBalancerName": "my-loadbalancer",
     "LoadBalancerAttributes": {

@@ -419,7 +419,7 @@ For more information, see [Use Amazon EBS volumes with Amazon ECS](https://docs.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecs#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ecs.EcsClient;
 import software.amazon.awssdk.services.ecs.model.AwsVpcConfiguration;
@@ -518,12 +518,12 @@ public class CreateService {
 **Tools for PowerShell V4**
 **Example 1: This example command creates a service in your default cluster called `ecs-simple-service`. The service uses the `ecs-demo` task definition and it maintains 10 instantiations of that task.**
 
-```
+```powershell
 New-ECSService -ServiceName ecs-simple-service -TaskDefinition ecs-demo -DesiredCount 10
 ```
 **Example 2: This example command creates a service behind a load balancer in your default cluster called `ecs-simple-service`. The service uses the `ecs-demo` task definition and it maintains 10 instantiations of that task.**
 
-```
+```powershell
 $lb = @{
     LoadBalancerName = "EC2Contai-EcsElast-S06278JGSJCM"
     ContainerName = "simple-demo"
@@ -536,12 +536,12 @@ New-ECSService -ServiceName ecs-simple-service -TaskDefinition ecs-demo -Desired
 **Tools for PowerShell V5**
 **Example 1: This example command creates a service in your default cluster called `ecs-simple-service`. The service uses the `ecs-demo` task definition and it maintains 10 instantiations of that task.**
 
-```
+```powershell
 New-ECSService -ServiceName ecs-simple-service -TaskDefinition ecs-demo -DesiredCount 10
 ```
 **Example 2: This example command creates a service behind a load balancer in your default cluster called `ecs-simple-service`. The service uses the `ecs-demo` task definition and it maintains 10 instantiations of that task.**
 
-```
+```powershell
 $lb = @{
     LoadBalancerName = "EC2Contai-EcsElast-S06278JGSJCM"
     ContainerName = "simple-demo"
@@ -557,7 +557,7 @@ New-ECSService -ServiceName ecs-simple-service -TaskDefinition ecs-demo -Desired
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 

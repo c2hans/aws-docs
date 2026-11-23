@@ -66,7 +66,7 @@ Enable CORS by returning the correct headers.
 #### DescribeClusterOperationResponse schema
 <a name="operations-clusteroperationarn-response-body-describeclusteroperationresponse-example"></a>
 
-```
+```json
 {
   "clusterOperationInfo": {
     "clusterArn": "string",
@@ -348,6 +348,10 @@ Enable CORS by returning the correct headers.
       "rebalancing": {
         "status": enum
       }
+    },
+    "brokerTypeUpgradeInfo": {
+      "topicReassignmentMode": enum,
+      "topicReassignmentOperationArn": "string"
     }
   }
 }
@@ -356,7 +360,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="operations-clusteroperationarn-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"
@@ -409,6 +413,16 @@ The broker logs configuration for this MSK cluster.
 | firehose | [Firehose](#operations-clusteroperationarn-model-firehose) | False | Details of the Kinesis Data Firehose delivery stream that is the destination for broker logs. |
 | s3 | [S3](#operations-clusteroperationarn-model-s3) | False | Details of the Amazon S3 destination for broker logs. |
 
+### BrokerTypeUpgradeInfo
+<a name="operations-clusteroperationarn-model-brokertypeupgradeinfo"></a>
+
+Information about the topic reassignment of an UpdateBrokerType operation that upgrades a cluster from Standard brokers to Express brokers. Present only on the operation that initiated the upgrade.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| topicReassignmentMode | [TopicReassignmentMode](#operations-clusteroperationarn-model-topicreassignmentmode) | False | How topics are reassigned to the Express brokers. |
+| topicReassignmentOperationArn | string<br />MaxLength: 2048 | False | The Amazon Resource Name (ARN) of the topic reassignment operation that Amazon MSK started for this upgrade. Present once that reassignment has started. Under MANUAL you start reassignments yourself, so Amazon MSK starts none. |
+
 ### ClientAuthentication
 <a name="operations-clusteroperationarn-model-clientauthentication"></a>
 
@@ -445,6 +459,7 @@ Returns information about a cluster operation.
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| brokerTypeUpgradeInfo | [BrokerTypeUpgradeInfo](#operations-clusteroperationarn-model-brokertypeupgradeinfo) | False | The topic reassignment details of the `UPDATE_BROKER_TYPE` operation that initiated an upgrade from Standard brokers to Express brokers. This field is present only on that operation; the operations that complete or roll back an upgrade, and every operation of any other type, omit it. |
 | clientRequestId | string | False | The ID of the API request that triggered this operation. |
 | clusterArn | string | False | ARN of the cluster. |
 | creationTime | string | False | The time that the operation was created. |
@@ -617,7 +632,7 @@ Information about cluster attributes that can be updated via update APIs.
 | connectivityInfo | [ConnectivityInfo](#operations-clusteroperationarn-model-connectivityinfo) | False | Defines the connectivity setting of the cluster. |
 | encryptionInfo | [EncryptionInfo](#operations-clusteroperationarn-model-encryptioninfo) | False | Encryption details. |
 | enhancedMonitoring | [EnhancedMonitoring](#operations-clusteroperationarn-model-enhancedmonitoring) | False | The monitoring level. |
-| instanceType | string | False | The broker type. |
+| instanceType | string | False | The broker type.<br />While a cluster is in mixed mode during an in-place upgrade from Standard brokers to Express brokers, this is the composite value of both broker types (for example, `kafka.m7g.large-express.m7g.large`). A cluster that is not mid-upgrade reports a single instance type. |
 | kafkaVersion | string | False | The Apache Kafka version. |
 | loggingInfo | [LoggingInfo](#operations-clusteroperationarn-model-logginginfo) | False | LoggingInfo details. |
 | numberOfBrokerNodes | integer | False | The number of broker nodes in the cluster. |
@@ -737,6 +752,17 @@ Details for client authentication using TLS.
 | --- |--- |--- |--- |
 | certificateAuthorityArnList | Array of type string | False | List of AWS Private CA Amazon Resource Name (ARN)s. |
 | enabled | boolean | False | TLS authentication is enabled or not. |
+
+### TopicReassignmentMode
+<a name="operations-clusteroperationarn-model-topicreassignmentmode"></a>
+
+The mode that controls how topics move from Standard brokers to Express brokers.
+
+`AUTO` - Amazon MSK moves all topics to Express brokers.
+
+`MANUAL` - You choose which topics move and when, and Amazon MSK performs each reassignment.
++ `AUTO`
++ `MANUAL`
 
 ### Unauthenticated
 <a name="operations-clusteroperationarn-model-unauthenticated"></a>

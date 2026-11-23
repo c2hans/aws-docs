@@ -32,7 +32,7 @@ The following example uses the TICKIT sample database. For more information, see
 
 To calculate the cube root of the commission paid for a given transaction, use the following example.
 
-```
+```sql
 SELECT CBRT(commission) FROM sales WHERE salesid=10000;
 
 +--------------------+

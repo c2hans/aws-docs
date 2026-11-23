@@ -9,7 +9,7 @@ Defines a virtual network function descriptor (VNFD) template.
 ## Syntax
 <a name="vnfd-syntax"></a>
 
-```
+```yaml
 tosca_definitions_version: tnb_simple_yaml_1_0
 
 topology_template:

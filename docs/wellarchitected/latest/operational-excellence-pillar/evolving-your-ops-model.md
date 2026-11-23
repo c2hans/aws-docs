@@ -12,4 +12,6 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Cloud operating model evolution diagram from on-premises to automated value streams and processes](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/images/evolving-ops.en.png)
 
+*Cloud operating model evolution*
+
  When evaluating how your team can support your organizations evolution, examine the trade-offs between models, where your individual teams exist within the models (as they transition and evolve), how your team's relationship and responsibilities could change, and if the benefits merit the impact on your organization. Keep in mind that change is never linear. Some models are more appropriate for specific use cases or points in the journey, and some of these models may provide advantages over the ones in your environment.

@@ -40,7 +40,7 @@ Integration involves four steps: detect the redirection environment, override We
 
 The following JavaScript code detects the redirection environment and initializes the proxy. The callback runs when a proxy object becomes available.
 
-```
+```javascript
 let proxy = null;
 
 function handleInitCallback(result) {
@@ -99,7 +99,7 @@ After calling `overrideWebRTC()`, use WebRTC APIs normally. The proxy transparen
 **Note**
 Video redirection is not currently supported. Set `video: false` in `getUserMedia` requests.
 
-```
+```javascript
 // Get user media  - automatically redirected
 const stream = await navigator.mediaDevices.getUserMedia({
     audio: true,
@@ -117,7 +117,7 @@ await pc.setLocalDescription(offer);
 
 If you need to access the original browser APIs (for example, to capture video from the remote browser rather than the local client), they are preserved in `proxy.overridenApis`:
 
-```
+```javascript
 // Get the original getUserMedia (runs in remote browser, not redirected)
 const originalGetUserMedia = proxy.overridenApis.get('navigator.mediaDevices.getUserMedia');
 
@@ -143,7 +143,7 @@ const remoteStream = await originalGetUserMedia.call(navigator.mediaDevices, {
 
 For audio playback, call `mapAudioElement()` before setting `srcObject` on any audio element.
 
-```
+```javascript
 const audioElement = document.querySelector('audio#remote-audio');
 
 // Map the audio element before setting srcObject
@@ -170,7 +170,7 @@ The redirection service can become temporarily unavailable, for example due to n
 **Important**
 After reconnection, all previously created proxy objects become invalid because the client browser context is completely reloaded. You must close existing connections and create new WebRTC objects.
 
-```
+```javascript
 function setupReconnectionHandling() {
     proxy.addStatusChangeEventListener((event) => {
         switch (event.status) {
@@ -206,7 +206,7 @@ function handleRedirectionRestored() {
 
 The heartbeat is what detects that the client went away: when a heartbeat round-trip exceeds `heartbeatTimeoutMs`, the proxy reports `unavailable`. Call `resetHeartbeat()` once after you obtain the proxy to start it; with no arguments it keeps the default timing. Pass values to change it. For the two timing values, the defaults shown are also the minimums:
 
-```
+```javascript
 proxy.resetHeartbeat({
     heartbeatTimeoutMs: 10000,       // Minimum and default. Time before marking unavailable.
     heartbeatIntervalPeriodMs: 1000, // Minimum and default. How often to send a heartbeat.
@@ -223,7 +223,7 @@ The proxy raises a `heartbeatTimeoutMs` below 10000, or a `heartbeatIntervalPeri
 Redirection records the CPU pressure of the application frame as diagnostic telemetry, which it includes in the periodic statistics the extension logs. Where the Compute Pressure API (`PressureObserver`) is available to the frame, it records the browser's reported pressure state. Where it is not, it falls back to an estimate derived from how late the frame's own timers run. The frame's `compute-pressure` Permissions-Policy governs that availability, so consider enabling it when you deploy:
 + If your application runs in an iframe inside a host web application, add the `allow` attribute to the iframe and serve the delegating header from the embedding application:
 
-  ```
+  ```html
   <iframe src="https://your-app.example.com/..." allow="compute-pressure"></iframe>
   ```
 
@@ -242,7 +242,7 @@ This is a web-platform permission on the page, not a browser extension permissio
 
 Device changes - for example, a user plugging in a headset - are automatically detected. Use `makeMediaDevicesProxy()` to listen for device changes on the local client:
 
-```
+```javascript
 const mediaDevices = proxy.makeMediaDevicesProxy();
 mediaDevices.ondevicechange = async () => {
     const devices = await navigator.mediaDevices.enumerateDevices();
@@ -252,7 +252,7 @@ mediaDevices.ondevicechange = async () => {
 
 Use `proxy.clientInfo` to determine which client platform the user is connecting from. It is `null` until the proxy completes its first handshake with the client. If `proxy.status` is already `available`, read it directly; otherwise read it in your `available` status handler, which delivers the same object as `event.data`:
 
-```
+```javascript
 // clientInfo contains:
 // - platform: 'web' | 'windows' | 'macOS' | 'linux'
 // - version: version of the redirection library running in the DCV client,
@@ -289,7 +289,7 @@ Some redirection behavior requires a minimum version of the redirection library 
 
 You can use the Web Audio API to process audio streams before sending them through a peer connection:
 
-```
+```javascript
 const audioContext = new AudioContext();
 const source = audioContext.createMediaStreamSource(micStream);
 const gainNode = audioContext.createGain();
@@ -310,7 +310,7 @@ pc.addTrack(destination.stream.getAudioTracks()[0], destination.stream);
 
 The following example demonstrates a complete integration with initialization, reconnection handling, device change detection, and call setup:
 
-```
+```javascript
 let proxy = null;
 let peerConnection = null;
 let localStream = null;
@@ -449,7 +449,7 @@ Follow these recommendations when integrating with WebRTC redirection:
 
 The following summarizes the proxy API:
 
-```
+```typescript
 interface DCVWebRTCProxy {
     // Version of the redirection library on the remote host.
     getVersion(): LibraryVersion;

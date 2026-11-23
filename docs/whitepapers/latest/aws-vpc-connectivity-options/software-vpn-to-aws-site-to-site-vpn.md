@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
 ![Diagram that shows software VPN to AWS Site-to-Site VPN VPC-to-VPC Routing.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/software-vpn-to-site-to-site-vpn-vpc-routing.png)
 
+Software VPN to AWS Site-to-Site VPN VPC-to-VPC Routing
+
  Note that this design introduces a potential single point of failure into the network design. For additional information, see [Appendix A: High-Level HA architecture for software VPN instances](appendix-a-high-level-ha-architecture-for-software-vpn-instances.md).
 
 ## Additional resources

@@ -17,7 +17,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Scenarios](https://github.com/aws-samples/partner-crm-integration-samples/tree/main/partner-central-api-sample-codes/java_preview) repository.
 Update associated entity of an opportunity
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -106,7 +106,7 @@ public class ReplaceSolution {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/partner-central-api-sample-codes/python_preview/#code-examples).
 Update Associated Entity of an opportunity
 
-```
+```python
 #!/usr/bin/env python
 
 """

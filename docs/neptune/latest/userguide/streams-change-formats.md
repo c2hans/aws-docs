@@ -40,7 +40,7 @@ A Gremlin or openCypher change record, contained in the `data` field of a log st
 
   This is a JSON object that contains a `value` field for the value itself, and a `datatype` field for the JSON data type of that value.
 
-  ```
+  ```json
     "value": {
       "value": "{{the new value}}",
       "dataType": "{{the JSON datatype of the new value}}"
@@ -56,7 +56,7 @@ A Gremlin or openCypher change record, contained in the `data` field of a log st
 **Gremlin Examples**
 + The following is an example of a Gremlin vertex label.
 
-  ```
+  ```json
   {
     "id": "{{an ID string}}",
     "type": "vl",
@@ -69,7 +69,7 @@ A Gremlin or openCypher change record, contained in the `data` field of a log st
   ```
 + The following is an example of a Gremlin vertex property.
 
-  ```
+  ```json
   {
     "id": "{{an ID string}}",
     "type": "vp",
@@ -82,7 +82,7 @@ A Gremlin or openCypher change record, contained in the `data` field of a log st
   ```
 + The following is an example of a Gremlin edge.
 
-  ```
+  ```json
   {
     "id": "{{an ID string}}",
     "type": "e",
@@ -99,7 +99,7 @@ A Gremlin or openCypher change record, contained in the `data` field of a log st
 **openCypher Examples**
 + The following is an example of an openCypher node label.
 
-  ```
+  ```json
   {
     "id": "{{an ID string}}",
     "type": "vl",
@@ -112,7 +112,7 @@ A Gremlin or openCypher change record, contained in the `data` field of a log st
   ```
 + The following is an example of an openCypher node property.
 
-  ```
+  ```json
   {
     "id": "{{an ID string}}",
     "type": "vp",
@@ -125,7 +125,7 @@ A Gremlin or openCypher change record, contained in the `data` field of a log st
   ```
 + The following is an example of an openCypher relationship.
 
-  ```
+  ```json
   {
     "id": "{{an ID string}}",
     "type": "e",

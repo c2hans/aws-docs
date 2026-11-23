@@ -63,7 +63,7 @@ Transforms must input one or more properties that aren't attributes and any numb
 **Example transform definition**
 The following example demonstrates a transform property that converts an asset's temperature measurement data from Celsius to Fahrenheit. This object is an example of an [AssetModelProperty](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_AssetModelProperty.html) that contains a [Transform](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Transform.html). You can specify this object as a part of the [CreateAssetModel](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAssetModel.html) request payload to create a transform property. For more information, see [Create an asset model (AWS CLI)](create-asset-models.md#create-asset-model-cli).
 
-```
+```json
 {
 {{...}}
 "assetModelProperties": [
@@ -94,7 +94,7 @@ The following example demonstrates a transform property that converts an asset's
 **Example transform definition that contains three variables**
 The following example demonstrates a transform property that returns a warning message (`"Caution"`) if more than 10 percent of the BLT123 parts don't meet the standard. Otherwise, it returns an information message (`"Normal"`).
 
-```
+```json
 {
 {{...}}
 "assetModelProperties": [

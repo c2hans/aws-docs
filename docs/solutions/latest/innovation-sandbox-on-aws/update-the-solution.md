@@ -237,7 +237,7 @@ When you update to a version that includes account cost allocation tagging, the 
 When you update to v1.3.0, the account cleanup event payloads (`AccountCleanupSucceeded` and `AccountCleanupFailed`) rename `cleanupExecutionContext.stateMachineExecutionArn` to `cleanupExecutionContext.executionArn` and `cleanupExecutionContext.stateMachineExecutionStartTime` to `cleanupExecutionContext.executionStartTime`. If you have custom EventBridge rules or Lambda consumers that process these events, update them to use the new field names.
  **Before (v1.2.x):**
 
-```
+```json
 "cleanupExecutionContext": {
   "stateMachineExecutionArn": "arn:aws:states:...",
   "stateMachineExecutionStartTime": "2024-01-15T14:30:25Z"
@@ -245,7 +245,7 @@ When you update to v1.3.0, the account cleanup event payloads (`AccountCleanupSu
 ```
  **After (v1.3.0):**
 
-```
+```json
 "cleanupExecutionContext": {
   "executionArn": "arn:aws:lambda:...",
   "executionStartTime": "2024-01-15T14:30:25Z"
@@ -264,7 +264,7 @@ Before updating from source code, ensure your development environment is properl
 
 1. Pull the latest changes from the remote repository:
 
-   ```
+   ```bash
    git pull origin main
    ```
 
@@ -275,12 +275,12 @@ Before updating from source code, ensure your development environment is properl
 1. Redeploy the solution using npm commands:
    + To deploy all stacks:
 
-     ```
+     ```bash
      npm run deploy:all
      ```
    + Alternatively, stacks can be deployed individually in the following order:
 
-     ```
+     ```bash
      npm run deploy:account-pool
      npm run deploy:idc
      npm run deploy:data

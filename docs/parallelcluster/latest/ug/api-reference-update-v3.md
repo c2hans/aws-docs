@@ -14,7 +14,7 @@ Option 1: To remove the existing API, delete the corresponding CloudFormation st
 
 Option 2: To update the existing API, run the following commands:
 
-```
+```sh
 $ REGION={{<region>}}
 $ API_STACK_NAME={{<stack-name>}}  # This needs to correspond to the existing API stack name
 $ VERSION=3.16.3

@@ -50,7 +50,7 @@ nitro-cli pcr --signing-certificate {{cert.pem}}
 
 **Output**
 
-```
+```json
 {
     "PCR8": "example39de75e8ed2939e95examplea96f2c79eaf5d5ac3bacf2cb76c75a31f9examplef55b29f0acd256b8example"
 }

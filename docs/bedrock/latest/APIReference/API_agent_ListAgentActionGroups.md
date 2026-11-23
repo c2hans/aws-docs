@@ -127,7 +127,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of ListAgentActionGroups.
 
-```
+```json
 POST /agents/AGENT12345/agentversions/1/actiongroups/ HTTP/1.1
 Content-type: application/json
 

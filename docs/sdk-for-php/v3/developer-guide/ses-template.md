@@ -35,7 +35,7 @@ Amazon SES doesn’t validate your HTML, so be sure that *HtmlPart* is valid bef
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -43,7 +43,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -82,7 +82,7 @@ To view the content for an existing email template including the subject line, H
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -90,7 +90,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -118,7 +118,7 @@ To retrieve a list of all email templates that are associated with your AWS acco
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -126,7 +126,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -152,7 +152,7 @@ To change the content for a specific email template including the subject line, 
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -160,7 +160,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -199,7 +199,7 @@ To remove a specific email template, use the [DeleteTemplate](https://docs.aws.a
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -207,7 +207,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -235,7 +235,7 @@ To use a template to send an email to recipients, use the [SendTemplatedEmail](h
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -243,7 +243,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',

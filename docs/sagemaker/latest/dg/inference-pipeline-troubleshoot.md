@@ -21,7 +21,7 @@ When you use custom Docker images in a pipeline that includes [SageMaker AI buil
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

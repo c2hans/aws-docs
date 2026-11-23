@@ -42,7 +42,7 @@ To install the Amazon DynamoDB Encryption Client for Java, clone or download the
 **Using Apache Maven**
 The Amazon DynamoDB Encryption Client for Java is available through [Apache Maven](https://maven.apache.org/) with the following dependency definition.
 
-```
+```xml
 <dependency>
   <groupId>com.amazonaws</groupId>
   <artifactId>aws-dynamodb-encryption-java</artifactId>

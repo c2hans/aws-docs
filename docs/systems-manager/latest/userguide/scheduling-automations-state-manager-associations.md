@@ -25,7 +25,7 @@ Be aware of the following important details before you run an automation by usin
 ------
 #### [ Linux & macOS ]
 
-  ```
+  ```sh
   aws iam create-service-linked-role \
   --aws-service-name ssm.amazonaws.com
   ```
@@ -33,7 +33,7 @@ Be aware of the following important details before you run an automation by usin
 ------
 #### [ Windows ]
 
-  ```
+  ```sh
   aws iam create-service-linked-role ^
   --aws-service-name ssm.amazonaws.com
   ```
@@ -41,7 +41,7 @@ Be aware of the following important details before you run an automation by usin
 ------
 #### [ PowerShell ]
 
-  ```
+  ```powershell
   New-IAMServiceLinkedRole `
   -AWSServiceName ssm.amazonaws.com
   ```
@@ -129,21 +129,21 @@ Before you complete the following procedure, make sure you have created an IAM s
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm list-documents
    ```
 
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm list-documents
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Get-SSMDocumentList
    ```
 
@@ -156,7 +156,7 @@ Before you complete the following procedure, make sure you have created an IAM s
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm describe-document \
    --name {{runbook name}}
    ```
@@ -166,7 +166,7 @@ Before you complete the following procedure, make sure you have created an IAM s
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm describe-document ^
    --name {{runbook name}}
    ```
@@ -176,7 +176,7 @@ Before you complete the following procedure, make sure you have created an IAM s
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Get-SSMDocumentDescription `
    -Name {{runbook name}}
    ```
@@ -192,7 +192,7 @@ Before you complete the following procedure, make sure you have created an IAM s
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm create-association \
    --association-name {{association name}} \
    --targets Key=tag:{{key name}},Values={{value}} \
@@ -208,7 +208,7 @@ If you create an association by using the AWS CLI, use the `--targets` parameter
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm create-association ^
    --association-name {{association name}} ^
    --targets Key=tag:{{key name}},Values={{value}} ^
@@ -224,7 +224,7 @@ If you create an association by using the AWS CLI, use the `--targets` parameter
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    $Targets = New-Object Amazon.SimpleSystemsManagement.Model.Target
    $Targets.Key = "tag:{{key name}}"
    $Targets.Values = "{{value}}"
@@ -249,7 +249,7 @@ If you create an association by using the AWS Tools for PowerShell, use the `Tar
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm create-association \
    --association-name {{association name}} \
    --targets Key=ParameterValues,Values={{value}},{{value 2}},{{value 3}} \
@@ -262,7 +262,7 @@ If you create an association by using the AWS Tools for PowerShell, use the `Tar
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm create-association ^
    --association-name {{association name}} ^
    --targets Key=ParameterValues,Values={{value}},{{value 2}},{{value 3}} ^
@@ -275,7 +275,7 @@ If you create an association by using the AWS Tools for PowerShell, use the `Tar
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    $Targets = New-Object Amazon.SimpleSystemsManagement.Model.Target
    $Targets.Key = "ParameterValues"
    $Targets.Values = "{{value}}","{{value 2}}","{{value 3}}"
@@ -297,7 +297,7 @@ If you create an association by using the AWS Tools for PowerShell, use the `Tar
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm create-association \
    --association-name {{association name}} \
    --targets Key=ResourceGroup,Values={{resource group name}} \
@@ -310,7 +310,7 @@ If you create an association by using the AWS Tools for PowerShell, use the `Tar
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm create-association ^
    --association-name {{association name}} ^
    --targets Key=ResourceGroup,Values={{resource group name}} ^
@@ -323,7 +323,7 @@ If you create an association by using the AWS Tools for PowerShell, use the `Tar
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    $Targets = New-Object Amazon.SimpleSystemsManagement.Model.Target
    $Targets.Key = "ResourceGroup"
    $Targets.Values = "{{resource group name}}"
@@ -345,7 +345,7 @@ If you create an association by using the AWS Tools for PowerShell, use the `Tar
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm create-association \
    --association-name {{association name}} \
    --targets Key=ResourceGroup,Values={{resource group name}} \
@@ -359,7 +359,7 @@ If you create an association by using the AWS Tools for PowerShell, use the `Tar
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm create-association ^
    --association-name {{association name}} ^
    --targets Key=ResourceGroup,Values={{resource group name}} ^
@@ -373,7 +373,7 @@ If you create an association by using the AWS Tools for PowerShell, use the `Tar
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    $Targets = New-Object Amazon.SimpleSystemsManagement.Model.Target
    $Targets.Key = "ResourceGroup"
    $Targets.Values = "{{resource group name}}"

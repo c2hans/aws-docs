@@ -39,6 +39,8 @@ There are charges for MediaLive based on the state of resources. There are idle 
 
   The input pricing is based on the type of input, and on a combination of key characteristics of the input, such as input codec, bitrate, and resolution. For detailed information about the basis for input pricing, see [https://aws.amazon.com/medialive/pricing/](https://aws.amazon.com/medialive/pricing/). You specify some of these characteristics in the input specification when you create the channel. For more information, see [Input specifications settings](input-specification.md).
 
+  For a channel that uses the JPEG XS (TR-07) input specification, the input charge is based on the JPEG XS codec, HD resolution, and 500 Mbps maximum bitrate. As with other inputs, the charge applies to each input that is attached to the channel. For more information, see [Completing the settings – JPEG XS (TR-07)](input-specification.md#input-specification-jpegxs).
+
   Inputs from a Link device use a different pricing model. Link inputs are charged a flat rate that is not based on codec, bitrate, or resolution. Link UHD devices are charged at a higher rate than Link HD devices. A Link UHD device that is configured to send HD resolution is charged at the Link HD rate. For specific rates, see [https://aws.amazon.com/medialive/pricing/](https://aws.amazon.com/medialive/pricing/).
 
   For channels configured with a standard channel class (two-pipeline), input and output charges are at the standard-class rate. For channels with a single-pipeline channel class, charges are at the single-pipeline rate.

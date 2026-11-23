@@ -117,7 +117,7 @@ Pattern: `rule-[a-z0-9-]{1,25}`
  ** [status](#API_CreateLinkRoutingRule_ResponseSyntax) **   <a name="rtbfabric-CreateLinkRoutingRule-response-status"></a>
 The status of the routing rule.
 Type: String
-Valid Values: `CREATION_IN_PROGRESS | ACTIVE | UPDATE_IN_PROGRESS | DELETION_IN_PROGRESS | DELETED | FAILED`
+Valid Values: `CREATION_IN_PROGRESS | ACTIVE | UPDATE_IN_PROGRESS | DELETION_IN_PROGRESS | DELETED | FAILED | CREATE_FAILED | DELETE_FAILED`
 
 ## Errors
 <a name="API_CreateLinkRoutingRule_Errors"></a>
@@ -149,7 +149,7 @@ The request was denied due to request throttling.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request could not be completed because it fails satisfy the constraints specified by the service.
+The request could not be completed because it fails to satisfy the constraints specified by the service.
 HTTP Status Code: 400
 
 ## See Also

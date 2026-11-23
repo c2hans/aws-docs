@@ -18,7 +18,7 @@ The AWS SDK for JavaScript v2 implements retry logic using [exponential backoff 
 
 In order to test retry delay in v2, the code in [node\_modules/aws-sdk/lib/event\_listeners.js](https://github.com/aws/aws-sdk-js/blob/master/lib/event_listeners.js#L588) was updated to `console.log` the value present in variable delay as follows:
 
-```
+```javascript
 // delay < 0 is a signal from customBackoff to skip retries
 if (willRetry && delay >= 0) {
   resp.error = null;
@@ -34,7 +34,7 @@ if (willRetry && delay >= 0) {
 
 You can test delay for any operation on AWS SDK clients. We call `listTables` operation on a DynamoDB client using the following code:
 
-```
+```javascript
 import AWS from "aws-sdk";
 
 const region = "us-east-1";
@@ -46,7 +46,7 @@ In order to test retries, we simulate `NetworkingError` by disconnecting interne
 
 On running the code, you can see that retry delay using exponential backoff with jitter as follows:
 
-```
+```javascript
 retry delay: 7.39361151766359
 retry delay: 9.0672860785882
 retry delay: 134.89340825668168
@@ -64,7 +64,7 @@ The AWS SDK for JavaScript v2 allows passing a custom base number of millisecond
 
 We test retries with a custom base of 1000 ms as follows:
 
-```
+```javascript
 ...
 const client = new AWS.DynamoDB({ region, retryDelayOptions: { base: 1000 } });
 ...
@@ -72,7 +72,7 @@ const client = new AWS.DynamoDB({ region, retryDelayOptions: { base: 1000 } });
 
 We simulate `NetworkingError` by disconnecting internet from the device running the test code. You can see that the values for retry delay are higher as compared to previous run where the default was 50 or 100 ms.
 
-```
+```javascript
 retry delay: 356.2841549924913
 retry delay: 1183.5216495444615
 retry delay: 2266.997988094194
@@ -89,7 +89,7 @@ The AWS SDK for JavaScript v2 also allows passing a custom backoff function that
 
 We test custom backoff function which uses linear backoff with base value of 200 ms as follows:
 
-```
+```javascript
 ...
 const client = new AWS.DynamoDB({
   region,
@@ -100,7 +100,7 @@ const client = new AWS.DynamoDB({
 
 We simulate `NetworkingError` by disconnecting internet from the device running the test code. You can see that the values for retry delay are multiples of 200.
 
-```
+```javascript
 retry delay: 200
 retry delay: 400
 retry delay: 600

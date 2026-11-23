@@ -47,7 +47,7 @@ Here are some things to consider about using Fargate on Amazon EKS.
 
   To automatically delete the related Pods after a Job completes or fails, you can specify a time period using the time-to-live (TTL) controller. The following example shows specifying `.spec.ttlSecondsAfterFinished` in your Job manifest.
 
-  ```
+  ```yaml
   apiVersion: batch/v1
   kind: Job
   metadata:

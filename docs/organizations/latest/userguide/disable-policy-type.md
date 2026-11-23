@@ -50,7 +50,7 @@ You can use one of the following commands to disable a policy type:
 
   The following example shows how to disable backup policies for your organization. Note that you must specify the ID of your organization's root.
 
-  ```
+  ```bash
   $ aws organizations disable-policy-type \
       --root-id r-a1b2 \
       --policy-type BACKUP_POLICY

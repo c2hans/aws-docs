@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/lambda-response-format.h
 
 The second step in integrating a Lambda function into your Amazon Lex V2 bot is to understand the fields in the Lambda function response and to determine which parameters you want to manipulate. The following JSON object shows the general format of an Lambda response that is returned to Amazon Lex V2:
 
-```
+```json
 {
     "sessionState": {
         // see Session state for details about the structure
@@ -53,7 +53,7 @@ The `messages` field is required if the `dialogAction.type` is `ElicitIntent` or
 
 Each item in the list is a structure in the following format, containing information about a message to return to the user. Here is an example:
 
-```
+```json
 {
     "contentType": "CustomPayload | ImageResponseCard | PlainText | SSML",
     "content": {{string}},
@@ -104,7 +104,7 @@ Minimally, the Lambda response must include a `sessionState` object. Within that
 
 **Delegate** lets Amazon Lex V2 determine the next step. No other fields are required.
 
-```
+```json
 {
     "sessionState": {
         "dialogAction": {
@@ -118,7 +118,7 @@ Minimally, the Lambda response must include a `sessionState` object. Within that
 
 **ElicitIntent** prompts the customer to express an intent. You must include at least one message in the `messages` field to prompt elicitation of an intent.
 
-```
+```json
 {
     "sessionState": {
         "dialogAction": {
@@ -138,7 +138,7 @@ Minimally, the Lambda response must include a `sessionState` object. Within that
 
 **ElicitSlot** prompts the customer to provide a slot value. You must include the name of the slot in the `slotToElicit` field in the `dialogAction` object. You must also include the `name` of the `intent` in the `sessionState` object.
 
-```
+```json
 {`
     "sessionState": {
         "dialogAction": {
@@ -157,7 +157,7 @@ Minimally, the Lambda response must include a `sessionState` object. Within that
 
 **ConfirmIntent** confirms the customer's slot values and whether the intent is ready to be fulfilled. You must include the `name` of the `intent` in the `sessionState` object and the `slots` to be confirmed. You must also include at least one message in the `messages` field to ask the user for confirmation of the slot values. Your message should prompt a "yes" or "no" response. If the user responds "yes", Amazon Lex V2 sets the `confirmationState` of the intent to `Confirmed`. If the user responds "no", Amazon Lex V2 sets the `confirmationState` of the intent to `Denied`.
 
-```
+```json
 {
     "sessionState": {
         "dialogAction": {
@@ -211,7 +211,7 @@ Minimally, the Lambda response must include a `sessionState` object. Within that
 
 **Close** ends the fulfillment process of the intent and indicates that no further responses are expected from the user. You must include the `name` and `state` of the `intent` in the `sessionState` object. The compatible intent states are `Failed`, `Fulfilled`, and `InProgress`.
 
-```
+```json
 "sessionState": {
     "dialogAction": {
         "type": "Close"

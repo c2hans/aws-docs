@@ -130,7 +130,7 @@ The v2 `--showxml` output uses a different XML structure than v1. The root `<pac
 
 **v1:** `dnf supportinfo --pkg apr --showxml`
 
-```
+```xml
 <?xml version="1.0" ?>
 <package_support current_as="2026-06-18">
   <statements>
@@ -150,7 +150,7 @@ no longer receive any updates from AWS.</text>
 
 **v2:** `dnf supportinfo --pkg apr --showxml`
 
-```
+```xml
 <?xml version='1.0' encoding='utf-8'?>
 <package_support current_as="2026-06-18">
   <statements>
@@ -205,7 +205,7 @@ The v2 plugin caches data at `/var/cache/dnf/support-info/` when run as root. Wh
 
 1. Use the CLI to get structured output for installed packages:
 
-   ```
+   ```bash
    dnf supportinfo --show installed --showxml
    ```
 
@@ -223,7 +223,7 @@ v1 filters are **phase names** (`supported`, `unsupported`). v2 filters are **su
 
 Run `--list-filters` to discover available filter values on your system:
 
-```
+```bash
 dnf supportinfo --list-filters
 ```
 
@@ -257,7 +257,7 @@ In a future AL2023 quarterly release, the default changes to `legacy = 0`. At th
 
 **To keep v1-compatible output temporarily**, set `legacy = 1` in `/etc/dnf/plugins/supportinfo.conf`:
 
-```
+```ini
 [main]
 legacy = 1
 ```

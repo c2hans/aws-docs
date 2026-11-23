@@ -14,7 +14,7 @@ Configure the `DurableConfig` object when creating your function to set executio
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws lambda create-function \
   --function-name my-durable-function \
   --runtime nodejs24.x \
@@ -27,7 +27,7 @@ aws lambda create-function \
 ------
 #### [ CloudFormation ]
 
-```
+```yaml
 Resources:
   MyDurableFunction:
     Type: AWS::Lambda::Function
@@ -47,7 +47,7 @@ Resources:
 ------
 
 **Configuration parameters:**
-+ `ExecutionTimeout` – Required. The maximum time in seconds that a durable execution can run before Lambda stops the execution. This timeout applies to the entire durable execution, not individual function invocations. You must specify `ExecutionTimeout` whenever you provide `DurableConfig`; creating a function with a durable configuration but no execution timeout fails with an `InvalidParameterValueException`. Valid range: 1–31622400.
++ `ExecutionTimeout` – Required. The maximum time in seconds that a durable execution can run before Lambda stops the execution. This timeout applies to the entire durable execution, not individual function invocations. You must specify `ExecutionTimeout` whenever you provide `DurableConfig`. Creating a function with a durable configuration but no execution timeout fails with an `InvalidParameterValueException`. Valid range: 1–31622400. To invoke the function synchronously or through a function URL, set the execution timeout to 1,800 seconds (30 minutes) or less.
 + `RetentionPeriodInDays` – Optional. The number of days to retain execution history after a durable execution completes. After this period, execution history is no longer available through the `GetDurableExecutionHistory` API. Valid range: 1–90. Default: 14.
 + `KMSKeyArn` – Optional. The ARN of a customer managed key to encrypt durable execution data. For more information, see [Encrypting Lambda durable execution data](durable-encryption.md).
 
@@ -65,7 +65,7 @@ Follow these best practices when configuring durable functions for production us
 
 **Production configuration example:**
 
-```
+```json
 {
   "ExecutionTimeout": 86400,
   "RetentionPeriodInDays": 7,

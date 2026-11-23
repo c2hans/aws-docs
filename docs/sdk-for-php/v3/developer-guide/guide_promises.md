@@ -23,7 +23,7 @@ Promises are used throughout the SDK. For example, promises are used in most hig
 
 All of the clients that the SDK provides return promises when you invoke any of the `Async` suffixed methods. For example, the following code shows how to create a promise for getting the results of an Amazon DynamoDB`DescribeTable` operation.
 
-```
+```php
 $client = new Aws\DynamoDb\DynamoDbClient([
     'region'  => 'us-west-2',
     'version' => 'latest',
@@ -40,7 +40,7 @@ When the promise is returned, the result might have already arrived (for example
 
 You can register a callback with the promise by using the `then` method. This method accepts two callbacks, `$onFulfilled` and `$onRejected`, both of which are optional. The `$onFulfilled` callback is invoked if the promise is fulfilled, and the `$onRejected` callback is invoked if the promise is rejected (meaning it failed).
 
-```
+```php
 $promise->then(
     function ($value) {
         echo "The promise was fulfilled with {$value}";
@@ -56,7 +56,7 @@ $promise->then(
 
 Multiple promises can be composed together such that they are executed concurrently. This can be achieved by integrating the SDK with a non-blocking event loop, or by building up multiple promises and waiting on them to complete concurrently.
 
-```
+```php
 use GuzzleHttp\Promise\Utils;
 
 $sdk = new Aws\Sdk([
@@ -88,7 +88,7 @@ The [CommandPool](guide_commands.md#command-pool) provides a more powerful mecha
 
 One of the best aspects of promises is that they are composable, allowing you to create transformation pipelines. Promises are composed by chaining `then` callbacks with subsequent `then` callbacks. The return value of a `then` method is a promise that is fulfilled or rejected based on the result of the provided callbacks.
 
-```
+```php
 $promise = $client->describeTableAsync(['TableName' => 'mytable']);
 
 $promise
@@ -130,14 +130,14 @@ You can register a callback to invoke when a promise is rejected. If an exceptio
 
 You can synchronously force promises to complete by using a promise’s `wait` method.
 
-```
+```php
 $promise = $client->listTablesAsync();
 $result = $promise->wait();
 ```
 
 If an exception is encountered while invoking the `wait` function of a promise, the promise is rejected with the exception and the exception is thrown.
 
-```
+```php
 use Aws\Exception\AwsException;
 
 $promise = $client->listTablesAsync();
@@ -151,7 +151,7 @@ try {
 
 Calling `wait` on a promise that has been fulfilled doesn’t trigger the wait function. It simply returns the previously delivered value.
 
-```
+```php
 $promise = $client->listTablesAsync();
 $result = $promise->wait();
 assert($result ### $promise->wait());
@@ -181,7 +181,7 @@ Use the [CommandPool](guide_commands.md#command-pool) when you have a task queue
 
 The `CommandPool` works only with commands that are executed by the same client. You can use the `GuzzleHttp\Promise\each_limit` function to perform send commands of different clients concurrently using a fixed pool size.
 
-```
+```php
 use GuzzleHttp\Promise;
 
 $sdk = new Aws\Sdk([
@@ -214,7 +214,7 @@ One of the more powerful features of the Guzzle promises library is that it allo
 
 Imagine you wanted to create several buckets and upload a file to the bucket when the bucket becomes available, and you’d like to do this all concurrently so that it happens as fast as possible. You can do this easily by combining multiple coroutine promises together using the `all()` promise function.
 
-```
+```php
 use GuzzleHttp\Promise;
 
 $uploadFn = function ($bucket) use ($s3Client) {

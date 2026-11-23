@@ -80,7 +80,7 @@ All other settings use the default values which you can't change.
 
 To disable alerting, send the following request:
 
-```
+```json
 PUT _cluster/settings
 {
   "persistent" : {
@@ -91,7 +91,7 @@ PUT _cluster/settings
 
 The following request configures alerting to automatically delete history indexes after seven days, rather than the default 30 days:
 
-```
+```json
 PUT _cluster/settings
 {
   "persistent": {
@@ -108,7 +108,7 @@ DELETE .plugins-alerting-alert-history-*
 
 To reduce shard count for history indexes, create an index template. The following request sets history indexes for alerting to one shard and one replica:
 
-```
+```json
 PUT _index_template/{{template-name}}
 {
   "index_patterns": [".opendistro-alerting-alert-history-*"],

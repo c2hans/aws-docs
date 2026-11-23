@@ -192,7 +192,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of GetResourceConfigHistory.
 
-```
+```pyton
 import boto3
 import json
 
@@ -224,7 +224,7 @@ def handle_configuration(configuration_item):
 
 This example illustrates one usage of GetResourceConfigHistory.
 
-```
+```pyton
 import boto3
 import json
 

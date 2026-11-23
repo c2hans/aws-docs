@@ -64,13 +64,13 @@ To register your board, follow the procedures below.
 
    To find the AWS region for your AWS account, use the AWS Command Line Interface. To install the AWS CLI, follow the instructions in the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html). After you install the AWS CLI, open a command prompt window and enter the following command:
 
-   ```
+   ```bash
    aws iot describe-endpoint --endpoint-type=iot:Data-ATS
    ```
 
    The output should look like this:
 
-   ```
+   ```json
    {
        "endpointAddress": "xxxxxxxxxxxxxx-ats.iot.us-west-2.amazonaws.com"
    }
@@ -93,7 +93,7 @@ We recommend using ATS endpoints as seen in the example.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

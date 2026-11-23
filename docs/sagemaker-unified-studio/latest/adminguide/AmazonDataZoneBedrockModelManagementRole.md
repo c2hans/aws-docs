@@ -15,7 +15,7 @@ The default `AmazonDataZoneBedrockModelManagementRole` has the following trust p
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -40,7 +40,7 @@ The `reboot-broker` operation only supports rebooting one broker at a time.
 
    The output of this `reboot-broker` operation looks like the following JSON.
 
-   ```
+   ```JSON
    {
 
        "ClusterArn": "arn:aws:kafka:us-east-1:012345678012:cluster/exampleClusterName/abcdefab-1234-abcd-5678-cdef0123ab01-2",
@@ -56,7 +56,7 @@ The `reboot-broker` operation only supports rebooting one broker at a time.
 
    The output of this `describe-cluster-operation` command looks like the following JSON example.
 
-   ```
+   ```JSON
    {
        "ClusterOperationInfo": {
            "ClientRequestId": "c0b7af47-8591-45b5-9c0c-909a1a2c99ea",

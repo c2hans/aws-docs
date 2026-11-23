@@ -60,7 +60,7 @@ Unallocated resource sharing automatically manages the pool of resources that ar
 
  You can verify that unallocated resource sharing is fully configured by checking for unallocated resource sharing ClusterQueues:
 
-```
+```bash
 kubectl get clusterqueue | grep hyperpod-ns-idle-resource-sharing
 ```
 

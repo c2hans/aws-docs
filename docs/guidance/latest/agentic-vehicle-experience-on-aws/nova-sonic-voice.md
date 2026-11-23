@@ -11,7 +11,7 @@ Amazon Nova 2 Sonic v2 (`amazon.nova-2-sonic-v1:0`) provides the speech-to-speec
 
 Nova 2 Sonic is integrated through the Strands `BidiNovaSonicModel` class:
 
-```
+```python
 from strands.experimental.bidi.models.nova_sonic import (
     BidiNovaSonicModel,
     NOVA_SONIC_V2_MODEL_ID,

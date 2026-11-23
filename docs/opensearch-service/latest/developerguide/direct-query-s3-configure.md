@@ -17,7 +17,7 @@ To manage existing databases and tables in your data source, or to create new ta
 
 To set up a table for VPC Flow logs stored in S3 in Parquet format, run the following query:
 
-```
+```JSON
 CREATE TABLE
 {{datasourcename.gluedatabasename.vpclogstable}} (version INT, account_id STRING, interface_id STRING,
 srcaddr STRING, dstaddr STRING, srcport INT, dstport INT, protocol INT, packets BIGINT,
@@ -33,7 +33,7 @@ LOCATION "s3://{{accountnum-vpcflow}}/AWSLogs"
 
 After creating the table, run the following query to ensure that it's compatible with direct queries:
 
-```
+```JSON
 MSCK REPAIR TABLE {{ datasourcename.databasename.vpclogstable}}
 ```
 

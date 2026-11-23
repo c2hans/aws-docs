@@ -45,7 +45,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-
 **Warning**
  Using `retry.AddWithMaxAttempts` with a value of zero will allow the SDK to retry all retryable errors until the request succeeds, or a non-retryable error is returned. **Allowing the SDK to retry infinitely may result in runaway workloads and inflated billing cycles.**
 
-```
+```go
 import "context"
 import "github.com/aws/aws-sdk-go-v2/aws/retry"
 import "github.com/aws/aws-sdk-go-v2/config"
@@ -66,7 +66,7 @@ client := s3.NewFromConfig(cfg)
 
  Note that instantiating a retryer using functional options to set MaxAttempts directly will have slightly different behavior. More specifically, setting a value less than or equal to zero will cause the retryer to use the default maximum of 3 attempts, rather than retry infinitely:
 
-```
+```go
 import "context"
 import "github.com/aws/aws-sdk-go-v2/aws/retry"
 import "github.com/aws/aws-sdk-go-v2/config"
@@ -94,7 +94,7 @@ client := s3.NewFromConfig(cfg)
 
  For example, you can the following code to wrap the standard client retryer with a desired max delay of five seconds:
 
-```
+```go
 import "context"
 import "time"
 import "github.com/aws/aws-sdk-go-v2/aws/retry"
@@ -120,7 +120,7 @@ client := s3.NewFromConfig(cfg)
 
  For example, you can the following code to wrap the standard client retryer to include the Amazon S3 `NoSuchBucketException` exception as retryable.
 
-```
+```go
 import "context"
 import "time"
 import "github.com/aws/aws-sdk-go-v2/aws/retry"
@@ -159,7 +159,7 @@ client := s3.NewFromConfig(cfg)
 #### Example: modified rate limiter
 <a name="example-modified-rate-limiter"></a>
 
-```
+```go
 import (
     "context"
 
@@ -187,7 +187,7 @@ cfg, err := config.LoadDefaultConfig(context.Background(), config.WithRetryer(fu
 #### Example: no rate limit using ratelimit.None
 <a name="example-no-rate-limit-using-ratelimitnone"></a>
 
-```
+```go
 import (
     "context"
 
@@ -216,7 +216,7 @@ cfg, err := config.LoadDefaultConfig(context.Background(), config.WithRetryer(fu
 
  The following example shows how to set a timeout for a service client operation.
 
-```
+```go
 import "context"
 import "time"
 

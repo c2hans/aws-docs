@@ -39,7 +39,7 @@ For details on all global configuration settings that you can set in the AWS con
 
 The following example shows how to pass options into an Amazon S3 client constructor.
 
-```
+```php
 use Aws\S3\S3Client;
 
 $options = [
@@ -71,7 +71,7 @@ Type
 
 Pass an `Aws\Credentials\CredentialsInterface` object to use a specific credentials instance. The following specifies that the IAM Identity Center credential provider should be used. This provider is also known as the SSO credential provider.
 
-```
+```php
 $credentials = Aws\Credentials\CredentialProvider::sso('profile default');
 
 $s3 = new Aws\S3\S3Client([
@@ -86,7 +86,7 @@ If you don’t specify a credential provider to use, and rely on the credential 
 
 Pass `false` to use null credentials and not sign requests.
 
-```
+```php
 $s3 = new Aws\S3\S3Client([
     'region'      => 'us-west-2',
     'credentials' => false
@@ -95,7 +95,7 @@ $s3 = new Aws\S3\S3Client([
 
 Pass a callable [credential provider](guide_credentials.md#cred-provider-defn-php) function to create credentials using a function.
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 
 // Only load credentials from environment variables
@@ -109,7 +109,7 @@ $s3 = new Aws\S3\S3Client([
 
 Pass credentials cached to an instance of `Aws\CacheInterface` to cache the values returned by the default provider chain across multiple processes.
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 use Aws\PsrCacheAdapter;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
@@ -139,7 +139,7 @@ Outputs debug information about each transfer. Debug information contains inform
 
 Set to `true` to display debug information when sending requests.
 
-```
+```php
 $s3 = new Aws\S3\S3Client([
     'region'  => 'us-west-2',
     'debug'   => true
@@ -169,7 +169,7 @@ Set to a key-value mapping of headers you want to replace mapped to the value yo
 **auth\_strings (array)**
 Set to a key-value mapping of regular expressions to map to their replacements. These values are used by the authentication data scrubber if `scrub_auth` is set to `true`.
 
-```
+```php
 $s3 = new Aws\S3\S3Client([
     'region'  => 'us-west-2',
     'debug'   => [
@@ -203,7 +203,7 @@ Binds transfer statistics to errors and results returned by SDK operations.
 
 Set to `true` to gather transfer statistics on requests sent.
 
-```
+```php
 $s3 = new Aws\S3\S3Client([
     'region'  => 'us-west-2',
     'stats'   => true
@@ -227,7 +227,7 @@ If a request was retried, each request’s transfer stats are returned, with `$r
 **timer (bool)**
 Set to `true` to enable a command timer that reports the total wall clock time spent on an operation in seconds. Disabled by default.
 
-```
+```php
 $s3 = new Aws\S3\S3Client([
     'region'  => 'us-west-2',
     'stats'   => [
@@ -259,7 +259,7 @@ This is only required when connecting to a custom endpoint (e.g., a local versio
 
 Here’s an example of connecting to Amazon DynamoDB Local:
 
-```
+```php
 $client = new Aws\DynamoDb\DynamoDbClient([
     'version'  => '2012-08-10',
     'region'   => 'us-east-1',
@@ -279,7 +279,7 @@ An optional instance of EndpointProviderV2 or PHP callable that accepts a hash o
 
 Here’s an example of how to create a minimal endpoint provider.
 
-```
+```php
 $provider = function (array $params) {
     if ($params['service'] == 'foo') {
         return ['endpoint' => $params['region'] . '.example.com'];
@@ -305,7 +305,7 @@ The `Aws\EndpointDiscovery\Configuration` object accepts two options, including 
 
 For each client created, pass an `Aws\EndpointDiscovery\Configuration` object to use a specific configuration for endpoint discovery.
 
-```
+```php
 use Aws\EndpointDiscovery\Configuration;
 use Aws\S3\S3Client;
 
@@ -326,7 +326,7 @@ $s3 = new Aws\S3\S3Client([
 
 Pass an instance of `Aws\CacheInterface` to cache the values returned by endpoint discovery across multiple processes.
 
-```
+```php
 use Aws\DoctrineCacheAdapter;
 use Aws\S3\S3Client;
 use Doctrine\Common\Cache\ApcuCache;
@@ -339,7 +339,7 @@ $s3 = new S3Client([
 
 Pass an array to endpoint discovery.
 
-```
+```php
 use Aws\S3\S3Client;
 
 $s3 = new S3Client([
@@ -361,7 +361,7 @@ A handler that accepts a command object and request object, and that returns a p
 
 You can use the `Aws\MockHandler` to return mocked results or throw mock exceptions. You enqueue results or exceptions, and the MockHandler will dequeue them in FIFO order.
 
-```
+```php
 use Aws\Result;
 use Aws\MockHandler;
 use Aws\DynamoDb\DynamoDbClient;
@@ -411,7 +411,7 @@ Type
 Specify the PEM formatted client side certificate.
 + Set as a string for the path to only the certificate file.
 
-```
+```php
 use Aws\S3\S3Client;
 
 $client = new S3Client([
@@ -421,7 +421,7 @@ $client = new S3Client([
 ```
 + Set as an array containing the path and password.
 
-```
+```php
 use Aws\S3\S3Client;
 
 $client = new S3Client([
@@ -437,7 +437,7 @@ $client = new S3Client([
 
 A float describing the number of seconds to wait while trying to connect to a server. Use `0` to wait indefinitely (the default behavior).
 
-```
+```php
 use Aws\DynamoDb\DynamoDbClient;
 
 // Timeout after attempting to connect for 5 seconds
@@ -470,7 +470,7 @@ Instructs the underlying HTTP handler to inflate the body of compressed response
 **Note**
 Content decoding is enabled by default in the SDK’s default HTTP handler. For backward compatibility reasons, this default cannot be changed. If you store compressed files in Amazon S3, we recommend that you disable content decoding at the S3 client level.
 
-```
+```php
 use Aws\S3\S3Client;
 use GuzzleHttp\Psr7\InflateStream;
 
@@ -523,7 +523,7 @@ Defines a function to invoke when transfer progress is made. The function accept
 
 1. The number of bytes uploaded so far.
 
-```
+```php
 use Aws\S3\S3Client;
 
 $client = new S3Client([
@@ -559,7 +559,7 @@ You can connect to an AWS service through a proxy by using the `proxy` option.
 + Provide a string value to connect to a proxy for all types of URIs. The proxy string value can contain a scheme, user name, and password. For example, `"http://username:password@192.168.16.1:10"`.
 + Provide an associative array of proxy settings where the key is the scheme of the URI, and the value is the proxy for the given URI (i.e., you can give different proxies for “http” and “https” endpoints).
 
-```
+```php
 use Aws\DynamoDb\DynamoDbClient;
 
 // Send requests through a single proxy
@@ -622,7 +622,7 @@ Type
 
 A float describing the timeout of the request in seconds. Use `0` to wait indefinitely (the default behavior).
 
-```
+```php
 use Aws\DynamoDb\DynamoDbClient;
 
 // Timeout after 5 seconds
@@ -647,7 +647,7 @@ You can customize the peer SSL/TLS certificate verification behavior of the SDK 
 
 If the CA bundle cannot be found for your system and you receive an error, provide the path to a CA bundle to the SDK. If you do not need a specific CA bundle, Mozilla provides a commonly used CA bundle which you can download [here](https://raw.githubusercontent.com/bagder/ca-bundle/master/ca-bundle.crt) (this is maintained by the maintainer of cURL). Once you have a CA bundle available on disk, you can set the `openssl.cafile` PHP .ini setting to point to the path to the file, allowing you to omit the `verify` request option. You can find much more detail on SSL certificates on the [cURL website](http://curl.haxx.se/docs/sslcerts.html).
 
-```
+```php
 use Aws\DynamoDb\DynamoDbClient;
 
 // Use a custom CA bundle
@@ -690,7 +690,7 @@ You can determine the TLS version being used for a given client operation by set
 
 Example setting TLS 1.2 with Guzzle 6:
 
-```
+```php
 use Aws\DynamoDb\DynamoDbClient;
 use Aws\Handler\GuzzleV6\GuzzleHandler;
 use GuzzleHttp\Client;
@@ -723,7 +723,7 @@ The "profile" option specifies which profile to use when credentials are created
 **Note**
 When you specify the "profile" option, the `"credentials"` option is ignored and credential-related settings in the AWS configuration file (typically `~/.aws/config`) are ignored.
 
-```
+```php
 // Use the "production" profile from your credentials file
 $ec2 = new Aws\Ec2\Ec2Client([
     'version' => '2014-10-01',
@@ -745,7 +745,7 @@ true
 
 AWS Region to connect to. See the [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) for a list of available Regions.
 
-```
+```php
 // Set the Region to the EU (Frankfurt) Region
 $s3 = new Aws\S3\S3Client([
     'region'  => 'eu-central-1',
@@ -793,7 +793,7 @@ The order of precedence for retry configuration is as follows (1 overrides 2-3, 
 
 The following example disables retries for the Amazon DynamoDB client.
 
-```
+```php
 // Disable retries by setting "retries" to 0
 $client = new Aws\DynamoDb\DynamoDbClient([
     'version' => '2012-08-10',
@@ -804,7 +804,7 @@ $client = new Aws\DynamoDb\DynamoDbClient([
 
 The following example passes in an integer, which will default to `legacy` mode with the passed in number of retries
 
-```
+```php
 // Disable retries by setting "retries" to 0
 $client = new Aws\DynamoDb\DynamoDbClient([
     'version' => '2012-08-10',
@@ -818,7 +818,7 @@ and an integer for the maximum attempts per request. This example passes in an
 
  `Aws\Retry\Configuration` object for retry configuration.
 
-```
+```php
 use Aws\EndpointDiscovery\Configuration;
 use Aws\S3\S3Client;
 
@@ -835,7 +835,7 @@ $s3 = new Aws\S3\S3Client([
 
 This example passes in an array for retry configuration.
 
-```
+```php
 use Aws\S3\S3Client;
 
 $s3 = new S3Client([
@@ -849,7 +849,7 @@ $s3 = new S3Client([
 
 This examples passes an instance of `Aws\CacheInterface` to cache the values returned by the default retry configuration provider.
 
-```
+```php
 use Aws\DoctrineCacheAdapter;
 use Aws\S3\S3Client;
 use Doctrine\Common\Cache\ApcuCache;
@@ -871,7 +871,7 @@ Default
 
 URI scheme to use when connecting. The SDK uses “https” endpoints (i.e., uses SSL/TLS connections) by default. You can attempt to connect to a service over an unencrypted “http” endpoint by setting `scheme` to “http”.
 
-```
+```php
 $s3 = new Aws\S3\S3Client([
     'version' => '2006-03-01',
     'region'  => 'us-west-2',
@@ -912,7 +912,7 @@ A string representing a custom signature version to use with a service (e.g., `v
 
 The following examples show how to configure an Amazon S3 client to use [signature version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html):
 
-```
+```php
 // Set a preferred signature version
 $s3 = new Aws\S3\S3Client([
     'version'           => '2006-03-01',
@@ -957,7 +957,7 @@ Default
 
 Set to `false` to disable client-side parameter validation. You might find that turning validation off will slightly improve client performance, but the difference is negligible.
 
-```
+```php
 // Disable client-side validation
 $s3 = new Aws\S3\S3Client([
     'version'  => '2006-03-01',
@@ -972,7 +972,7 @@ Set to an associative array of validation options to enable specific validation 
 +  `max` - Validate the maximum length of a value.
 +  `pattern` - Validate that the value matches a regular expression.
 
-```
+```php
 // Validate only that required values are present
 $s3 = new Aws\S3\S3Client([
     'version'  => '2006-03-01',
@@ -1000,7 +1000,7 @@ Two situations require a "version" parameter when you create a service client.
 
 For example, the following snippet uses version 3.279.7 of the SDK, but not the latest version for the `Ec2Client`.
 
-```
+```php
 $ec2Client = new \Aws\Ec2\Ec2Client([
     'version' => '2015-10-01',
     'region' => 'us-west-2'

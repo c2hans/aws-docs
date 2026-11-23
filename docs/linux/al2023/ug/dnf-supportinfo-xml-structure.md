@@ -30,7 +30,7 @@ From this file, the plugin reports:
 
 This example shows the minimum structure with all required sections and one package:
 
-```
+```xml
 <package_support schema_version="1.0" current_as="2025-08-21T22:41:55.575196">
   <lifecycles>
     <lifecycle name="default_lc"
@@ -106,7 +106,7 @@ The root element that contains all support metadata.
 | schema\_version | Yes | Schema format version (currently 1.0) |
 | current\_as | Yes | ISO timestamp when the support data was last generated |
 
-```
+```xml
 <package_support schema_version="1.0" current_as="2025-08-21T22:41:55.575196">
 ```
 
@@ -124,7 +124,7 @@ Defines a sequence of phases that a package transitions through over time.
 | display\_name | No | Customer-facing label |
 | description | No | Human-readable description |
 
-```
+```xml
 <lifecycle name="redis6_lc" note="eol_redis6"
            display_name="Redis 6 Lifecycle"
            description="Support lifecycle for Redis 6 packages">
@@ -150,7 +150,7 @@ Defines one stage within a lifecycle. Each phase continues until the next phase 
 **Note**
 Specify exactly one of `start_date` or `start_milestone`, not both.
 
-```
+```xml
 <phase name="limited_support"
        support_level="limited"
        start_milestone="AL2023_6months"
@@ -171,7 +171,7 @@ Defines a reusable date marker that lifecycle phases reference.
 | display\_name | No | Customer-facing label |
 | description | No | Human-readable description |
 
-```
+```xml
 <milestone name="AL2023_GA" date="2023-03-15"
            display_name="AL2023 General Availability"
            description="Amazon Linux 2023 general availability date"/>
@@ -191,7 +191,7 @@ Defines a support tier and the severities it covers. Each `name` becomes a valid
 | description | Yes | Human-readable description shown in --list-filters output |
 | display\_name | No | Customer-facing label |
 
-```
+```xml
 <support_level name="limited"
                severities="Important,Critical"
                description="Security fixes for Important and Critical severities only"
@@ -212,7 +212,7 @@ Maps an RPM package name to its lifecycle, origin, and class.
 | origin | Yes | References a package\_origin@name |
 | package\_class | No | References a package\_class@name |
 
-```
+```xml
 <package name="curl" lifecycle="default_lc" origin="al2023_core" package_class="default"/>
 ```
 
@@ -232,7 +232,7 @@ Categorizes packages by their role in the system. The class name and summary app
 | summary (child) | Yes | Short description of the category |
 | text (child) | Yes | Extended description. The element must be present but may be empty |
 
-```
+```xml
 <package_class name="os_dependency">
   <summary>Packages supported only as dependencies of the operating system</summary>
   <text></text>
@@ -256,7 +256,7 @@ Identifies the repository source of a package. The `origin` value appears in `dn
 | display\_name | No | Customer-facing label |
 | description | No | Human-readable description |
 
-```
+```xml
 <package_origin name="al2023_core"
                 repo_id="amazonlinux"
                 dist="amzn2023"
@@ -278,7 +278,7 @@ Provides freeform text that a lifecycle can reference for additional context.
 
 The element's text content contains the note message.
 
-```
+```xml
 <note name="eol_redis6">Upstream end-of-life for Redis 6 (redis6) is 2025-08-31</note>
 ```
 

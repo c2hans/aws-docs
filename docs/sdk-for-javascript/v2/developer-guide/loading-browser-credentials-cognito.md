@@ -21,7 +21,7 @@ Unauthenticated users do not have their identity verified, making this role appr
 
 After you configure an identity pool with identity providers attached, you can use `AWS.CognitoIdentityCredentials` to authenticate users. To configure your application credentials to use `AWS.CognitoIdentityCredentials`, set the `credentials` property of either `AWS.Config` or a per-service configuration. The following example uses `AWS.Config`:
 
-```
+```javascript
 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
   IdentityPoolId: '{{us-east-1:1699ebc0-7900-4099-b910-2df94f52a030}}',
   Logins: { // optional tokens, used for authenticated login
@@ -34,7 +34,7 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
 
 The optional `Logins` property is a map of identity provider names to the identity tokens for those providers. How you get the token from your identity provider depends on the provider you use. For example, if Facebook is one of your identity providers, you might use the `FB.login` function from the [Facebook SDK](https://developers.facebook.com/docs/facebook-login/web) to get an identity provider token:
 
-```
+```javascript
 FB.login(function (response) {
   if (response.authResponse) { // logged in
     AWS.config.credentials = new AWS.CognitoIdentityCredentials({
@@ -63,7 +63,7 @@ Amazon Cognito supports both authenticated and unauthenticated users. Unauthenti
 
 Users typically start with the unauthenticated role, for which you set the credentials property of your configuration object without a `Logins` property. In this case, your default configuration might look like the following:
 
-```
+```javascript
 // set the default config object
 var creds = new AWS.CognitoIdentityCredentials({
  IdentityPoolId: '{{us-east-1:1699ebc0-7900-4099-b910-2df94f52a030}}'
@@ -76,7 +76,7 @@ AWS.config.credentials = creds;
 
 When an unauthenticated user logs in to an identity provider and you have a token, you can switch the user from unauthenticated to authenticated by calling a custom function that updates the credentials object and adds the `Logins` token:
 
-```
+```javascript
 // Called when an identity provider has a token for a logged in user
 function userLoggedIn(providerName, token) {
   creds.params.Logins = creds.params.Logins || {};

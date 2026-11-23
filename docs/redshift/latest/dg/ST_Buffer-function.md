@@ -45,7 +45,7 @@ If *geom* is a `GEOMETRYCOLLECTION`, then an error is returned.
 
 The following SQL returns the buffer of the input linestring.
 
-```
+```sql
 SELECT ST_AsEwkt(ST_Buffer(ST_GeomFromText('LINESTRING(1 2,5 2,5 8)'), 2));
 ```
 
@@ -56,7 +56,7 @@ POLYGON((-1 2,-0.96157056080646 2.39018064403226,-0.847759065022573 2.7653668647
 
 The following SQL returns the buffer of the input point geometry which approximates a circle. Because the command doesn't specify the number of segments per quarter circle, the function uses the default value of eight segments to approximate the quarter circle.
 
-```
+```sql
 SELECT ST_AsEwkt(ST_Buffer(ST_GeomFromText('POINT(3 4)'), 2));
 ```
 
@@ -67,7 +67,7 @@ POLYGON((1 4,1.03842943919354 4.39018064403226,1.15224093497743 4.76536686473018
 
 The following SQL returns the buffer of the input point geometry which approximates a circle. Because the command specifies 3 as the number of segments per quarter circle, the function uses three segments to approximate the quarter circle.
 
-```
+```sql
 SELECT ST_AsEwkt(ST_Buffer(ST_GeomFromText('POINT(3 4)'), 2, 3));
 ```
 

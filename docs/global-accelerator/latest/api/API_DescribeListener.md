@@ -89,7 +89,7 @@ aws globalaccelerator describe-listener
          --region us-west-2
 ```
 
-```
+```json
 {
     "Listener": {
         "ListenerArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/abcdef1234",

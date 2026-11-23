@@ -148,7 +148,7 @@ The Titan V2 Embeddings - Text model supports multiple dimensions. It can also b
 </tbody>
 </table>
 
-   ```
+   ```json
    PUT /{{<index-name>}}
    {
        "settings": {
@@ -188,7 +188,7 @@ The Titan V2 Embeddings - Text model supports multiple dimensions. It can also b
 **Custom metadata fields for filtering**
 If you plan to use [metadata filtering](kb-test-config.md) with custom metadata fields, you must define those fields with a `keyword` type or as a `text` type with a `keyword` subfield. For example:
 
-   ```
+   ```json
    "my_custom_field": {
        "type": "text",
        "fields": {

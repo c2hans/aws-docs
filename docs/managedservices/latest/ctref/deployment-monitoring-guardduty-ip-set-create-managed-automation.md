@@ -140,7 +140,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-monitoring-guardduty-ip-set-create-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "Region": "us-east-1",
   "Name": "Sample IPSet",
@@ -151,7 +151,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-monitoring-guardduty-ip-set-create-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "Activate": true,
   "DetectorId": "12abc34d567e8fa901bc2d34e56789f0",

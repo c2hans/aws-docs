@@ -13,7 +13,7 @@ See [ListProfileObjects](https://docs.aws.amazon.com/customerprofiles/latest/API
 
 A `ProfileId` and `ObjectType` must be present. Either `UseLatest`, or `IdentifierName` and `IdentifierValue` must be present.
 
-```
+```json
 {
     "ProfileRequestData": {
         "ProfileId": Profile owning the object,

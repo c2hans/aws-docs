@@ -15,7 +15,7 @@ The SDK now automatically encodes and decodes base64-encoded values, as well as 
 
 User code that previously converted base64 is no longer required. Values encoded as base64 are now returned as buffer objects from server responses and can also be passed as buffer input. For example, the following version 1 `SQS.sendMessage` parameters:
 
-```
+```javascript
 var params = {
    MessageBody: '{{Some Message}}',
    MessageAttributes: {
@@ -29,7 +29,7 @@ var params = {
 
 Can be rewritten as follows.
 
-```
+```javascript
 var params = {
    MessageBody: '{{Some Message}}',
    MessageAttributes: {
@@ -43,7 +43,7 @@ var params = {
 
 Here is how the message is read.
 
-```
+```javascript
 sqs.receiveMessage(params, function(err, data) {
   // buf is <Buffer 65 78 61 6d 70 6c 65 20 74 65 78 74>
   var buf = data.Messages[0].MessageAttributes.attrName.BinaryValue;
@@ -58,7 +58,7 @@ The SDK now stores request IDs for all services in a consistent place on the `re
 
 In your code, change the following:
 
-```
+```javascript
 svc.operation(params, function (err, data) {
   console.log('Request ID:', data.RequestId);
 });
@@ -66,7 +66,7 @@ svc.operation(params, function (err, data) {
 
 To the following:
 
-```
+```javascript
 svc.operation(params, function () {
   console.log('Request ID:', this.requestId);
 });
@@ -104,7 +104,7 @@ The `.Client` and `.client` properties have been removed from service objects. I
 
 The following code used with version 1 of the SDK for JavaScript:
 
-```
+```javascript
 var sts = new AWS.STS.Client();
 // or
 var sts = new AWS.STS();
@@ -114,7 +114,7 @@ sts.client.operation(...);
 
 Should be changed to the following code.
 
-```
+```javascript
 var sts = new AWS.STS();
 sts.operation(...)
 ```

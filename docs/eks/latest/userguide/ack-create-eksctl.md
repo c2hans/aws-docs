@@ -18,7 +18,7 @@ The following steps require eksctl version `0.215.0` or later. To check your ver
 
 Create a trust policy file:
 
-```
+```bash
 cat > ack-trust-policy.json << 'EOF'
 {
   "Version": "2012-10-17",
@@ -40,7 +40,7 @@ EOF
 
 Create the IAM role:
 
-```
+```bash
 aws iam create-role \
   --role-name ACKCapabilityRole \
   --assume-role-policy-document file://ack-trust-policy.json
@@ -48,7 +48,7 @@ aws iam create-role \
 
 Attach the `AdministratorAccess` managed policy to the role:
 
-```
+```bash
 aws iam attach-role-policy \
   --role-name ACKCapabilityRole \
   --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
@@ -62,7 +62,7 @@ The suggested `AdministratorAccess` policy grants broad permissions and is inten
 
 Create the ACK capability using eksctl. Replace {{region-code}} with the AWS Region that your cluster is in and replace {{my-cluster}} with the name of your cluster.
 
-```
+```bash
 eksctl create capability \
   --cluster {{my-cluster}} \
   --region {{region-code}} \
@@ -78,7 +78,7 @@ The command returns immediately, but the capability takes some time to become ac
 
 Check the capability status:
 
-```
+```bash
 eksctl get capability \
   --cluster {{my-cluster}} \
   --region {{region-code}} \
@@ -92,7 +92,7 @@ The capability is ready when the status shows `ACTIVE`.
 
 After the capability is active, verify that ACK custom resources are available in your cluster:
 
-```
+```bash
 kubectl api-resources | grep services.k8s.aws
 ```
 

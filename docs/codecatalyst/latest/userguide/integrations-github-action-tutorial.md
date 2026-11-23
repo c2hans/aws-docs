@@ -73,7 +73,7 @@ In this step, you add an `app.js` file to your source repository. The `app.js` c
 
 1. In the text box, enter the following code:
 
-   ```
+   ```js
    // const axios = require('axios')
    // const url = 'http://checkip.amazonaws.com/';
    let response;
@@ -139,7 +139,7 @@ In this step, you create a workflow that runs the Super-Linter action when you p
 
 1. Add the following YAML:
 
-   ```
+   ```yaml
    Name: codecatalyst-linter-workflow
    SchemaVersion: "1.0"
    Triggers:
@@ -164,7 +164,7 @@ In this step, you create a workflow that runs the Super-Linter action when you p
 
    Your CodeCatalyst workflow now looks like this:
 
-   ```
+   ```yaml
    Name: codecatalyst-linter-workflow
    SchemaVersion: "1.0"
    Triggers:
@@ -214,7 +214,7 @@ The Super-Linter should have found problems in the `app.js` code, as well as the
 
 1. In the Super-Linter logs, scroll down to around line 90, where you find the start of the problems. They look similar to the following:
 
-   ```
+   ```bash
    /github/workspace/hello-world/app.js:3:13: Extra semicolon.
    /github/workspace/hello-world/app.js:9:92: Trailing spaces not allowed.
    /github/workspace/hello-world/app.js:21:7: Unnecessarily quoted property 'body' found.
@@ -226,7 +226,7 @@ The Super-Linter should have found problems in the `app.js` code, as well as the
 **Tip**
 To fix the `README.md`, add `markdown` to the code block, like this:
 
-   ```
+   ```markdown
    ```markdown
    Setup examples:
    ...

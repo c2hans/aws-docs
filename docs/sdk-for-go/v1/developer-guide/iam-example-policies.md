@@ -32,7 +32,7 @@ This code creates a new IAM Policy. Create a new Go file named `iam_createpolicy
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -47,7 +47,7 @@ import (
 
 Define two structs. The first is the definition of the policies to upload to IAM.
 
-```
+```go
 type PolicyDocument struct {
     Version   string
     Statement []StatementEntry
@@ -56,7 +56,7 @@ type PolicyDocument struct {
 
 The second dictates what this policy will allow or disallow.
 
-```
+```go
 type StatementEntry struct {
     Effect   string
     Action   []string
@@ -66,7 +66,7 @@ type StatementEntry struct {
 
 Set up the session and IAM client.
 
-```
+```go
 func main() {
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
@@ -78,7 +78,7 @@ func main() {
 
 Build the policy document using the structures defined earlier.
 
-```
+```go
     policy := PolicyDocument{
         Version: "2012-10-17",
         Statement: []StatementEntry{
@@ -107,7 +107,7 @@ Build the policy document using the structures defined earlier.
 
 Marshal the policy to JSON and pass to `CreatePolicy`.
 
-```
+```go
     b, err := json.Marshal(&policy)
     if err != nil {
         fmt.Println("Error marshaling policy", err)
@@ -137,7 +137,7 @@ In this example, you retrieve an existing policy from IAM. Create a new Go file 
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -151,7 +151,7 @@ import (
 
 Set up a new IAM client.
 
-```
+```go
 func main() {
     // Initialize a session in us-west-2 that the SDK will use to load
     // credentials from the shared credentials file ~/.aws/credentials.
@@ -165,7 +165,7 @@ func main() {
 
 Call `GetPolicy`, passing in the ARN for the policy (which is hard coded in this example), and print the results.
 
-```
+```go
     arn := "arn:aws:iam::aws:policy/AWSLambdaExecute"
     result, err := svc.GetPolicy(&iam.GetPolicyInput{
         PolicyArn: &arn,
@@ -190,7 +190,7 @@ Then, you’ll check the array members to see if the policy you want to attach t
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -205,7 +205,7 @@ import (
 
 Set up a new IAM client.
 
-```
+```go
 func main() {
     // Initialize a session in us-west-2 that the SDK will use to load
     // credentials from the shared credentials file ~/.aws/credentials.
@@ -219,7 +219,7 @@ func main() {
 
 Declare variables to hold the name and ARN of the policy.
 
-```
+```go
     var pageErr error
     policyName := "AmazonDynamoDBFullAccess"
     policyArn := "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
@@ -227,7 +227,7 @@ Declare variables to hold the name and ARN of the policy.
 
 Paginate through all the role policies. If your role exists on any role policy, you set the `pageErr` and return `false`, stopping the pagination.
 
-```
+```go
     err = svc.ListAttachedRolePoliciesPages(
         &iam.ListAttachedRolePoliciesInput{
             RoleName: &os.Args[1],
@@ -250,7 +250,7 @@ Paginate through all the role policies. If your role exists on any role policy, 
 
 If your role policy is not attached already, call `AttachRolePolicy`.
 
-```
+```go
     if pageErr != nil {
         fmt.Println("Error", pageErr)
         return
@@ -284,7 +284,7 @@ Then, check the array members to see if the policy you want to detach from the r
 
 Create a new Go file named `iam_detachuserpolicy.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -299,7 +299,7 @@ import (
 
 Set up a new IAM client.
 
-```
+```go
 func main() {
     // Initialize a session in us-west-2 that the SDK will use to load
     // credentials from the shared credentials file ~/.aws/credentials.
@@ -313,7 +313,7 @@ func main() {
 
 Declare variables to hold the name and ARN of the policy.
 
-```
+```go
     foundPolicy := false
     policyName := "AmazonDynamoDBFullAccess"
     policyArn := "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
@@ -321,7 +321,7 @@ Declare variables to hold the name and ARN of the policy.
 
 Paginate through all the role policies. If the role exists on any role policy, you stop iterating and detach the role.
 
-```
+```go
     err = svc.ListAttachedRolePoliciesPages(
         &iam.ListAttachedRolePoliciesInput{
             RoleName: &os.Args[1],

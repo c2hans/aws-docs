@@ -611,6 +611,106 @@ Provides access to use the AWS DevOps operator web app for an Agent Space.
 }
 ```
 
+### AIDevOpsChannelAccessPolicy
+<a name="aidevopschannelaccesspolicy"></a>
+
+With this policy, you can chat with AWS DevOps Agent from a Slack channel and manage investigations for your [Agent Spaces](about-aws-devops-agent-what-are-devops-agent-spaces.md).
+
+Attach this policy to the AWS Identity and Access Management (IAM) role of a Slack channel that uses bidirectional communication. When you associate the channel and choose **Auto-create a new DevOps Agent role**, the console attaches this policy to the role. For instructions on connecting Slack, see [Connecting Slack](connecting-to-ticketing-and-chat-connecting-slack.md).
+
+When you send a message in the channel, AWS DevOps Agent assumes the role. It sets the `AgentSpaceId` session tag to the ID of the Agent Space that the channel is associated with.
+
+If you choose **Assign an existing role**, or if you create a role from the policy template, attach this policy to the role yourself. You can also add both statements of this policy to the permissions policy of the role.
+
+#### Permissions details
+<a name="permissions-details"></a>
+
+This policy includes the following statements:
++ `AllowChatActions` – You can start a chat and send messages to AWS DevOps Agent from the channel.
++ `AllowAgentSpaceActions` – AWS DevOps Agent can read and manage items in the Agent Space when it answers your message.
+
+The `AllowAgentSpaceActions` statement covers the following Agent Space items:
++ Assets
++ Associations
++ Backlog tasks
++ Executions
++ Goals
++ Journal records
++ Recommendations
++ Triggers
+
+Both statements apply only to the Agent Space in the `AgentSpaceId` session tag. They also apply only to resources in the AWS account of the role.
+
+The following JSON shows the policy document of `AIDevOpsChannelAccessPolicy`:
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowChatActions",
+      "Effect": "Allow",
+      "Action": [
+        "aidevops:CreateChat",
+        "aidevops:SendMessage"
+      ],
+      "Resource": "arn:aws:aidevops:*:*:agentspace/${aws:PrincipalTag/AgentSpaceId}",
+      "Condition": {
+        "StringEquals": {
+          "aws:ResourceAccount": "${aws:PrincipalAccount}"
+        }
+      }
+    },
+    {
+      "Sid": "AllowAgentSpaceActions",
+      "Effect": "Allow",
+      "Action": [
+        "aidevops:CreateAsset",
+        "aidevops:UpdateAsset",
+        "aidevops:DeleteAsset",
+        "aidevops:CreateAssetFile",
+        "aidevops:UpdateAssetFile",
+        "aidevops:DeleteAssetFile",
+        "aidevops:GetAsset",
+        "aidevops:GetAssetContent",
+        "aidevops:GetAssetFile",
+        "aidevops:ListAssets",
+        "aidevops:ListAssetFiles",
+        "aidevops:CreateBacklogTask",
+        "aidevops:UpdateBacklogTask",
+        "aidevops:UpdateRecommendation",
+        "aidevops:CreateTrigger",
+        "aidevops:UpdateTrigger",
+        "aidevops:DeleteTrigger",
+        "aidevops:GetBacklogTask",
+        "aidevops:ListBacklogTasks",
+        "aidevops:GetRecommendation",
+        "aidevops:ListRecommendations",
+        "aidevops:ListTriggers",
+        "aidevops:ListGoals",
+        "aidevops:ListExecutions",
+        "aidevops:ListJournalRecords",
+        "aidevops:GetAssociation",
+        "aidevops:ListAssociations"
+      ],
+      "Resource": [
+        "arn:aws:aidevops:*:*:agentspace/${aws:PrincipalTag/AgentSpaceId}",
+        "arn:aws:aidevops:*:*:agentspace/${aws:PrincipalTag/AgentSpaceId}/*"
+      ],
+      "Condition": {
+        "StringEquals": {
+          "aws:ResourceAccount": "${aws:PrincipalAccount}"
+        }
+      }
+    }
+  ]
+}
+```
+
+The policy document uses the following IAM policy variables. IAM replaces each variable with its value when AWS DevOps Agent uses the role, so keep the variables as they are when you copy the statements.
++ `${aws:PrincipalTag/AgentSpaceId}` – The value of the `AgentSpaceId` session tag, which is the ID of the Agent Space of the channel.
++ `${aws:PrincipalAccount}` – The ID of the AWS account that owns the role.
+
 ### AIDevOpsAgentAccessPolicy
 <a name="aidevopsagentaccesspolicy"></a>
 
@@ -1594,6 +1694,57 @@ Provides permissions required by the AWS DevOps Agent to conduct investigations 
           "s3:prefix": ["AWSLogs/*", "*/AWSLogs/*"]
         }
       }
+    }
+  ]
+}
+```
+
+### AIDevOpsOrganizationsAccessPolicy
+<a name="aidevopsorganizationsaccesspolicy"></a>
+
+Provides permissions required by the AWS DevOps Agent to read your organization's structure and to manage the CloudFormation StackSets it creates to deploy roles to your member accounts.
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "OrgSourceStackSets",
+      "Effect": "Allow",
+      "Action": [
+        "cloudformation:CreateStackSet",
+        "cloudformation:DescribeStackSet",
+        "cloudformation:UpdateStackSet",
+        "cloudformation:DeleteStackSet",
+        "cloudformation:CreateStackInstances",
+        "cloudformation:DeleteStackInstances",
+        "cloudformation:ListStackInstances",
+        "cloudformation:DescribeStackSetOperation",
+        "cloudformation:ListStackSetOperations",
+        "cloudformation:ListStackSetOperationResults"
+      ],
+      "Resource": [
+        "arn:aws:cloudformation:*:*:stackset/AIDevOpsOrgSource-*",
+        "arn:aws:cloudformation:*:*:stackset-target/AIDevOpsOrgSource-*/*",
+        "arn:aws:cloudformation:*:*:type/resource/AWS-IAM-Role",
+        "arn:aws:cloudformation:*:*:type/resource/AWS-CloudFormation-WaitConditionHandle"
+      ]
+    },
+    {
+      "Sid": "OrgReads",
+      "Effect": "Allow",
+      "Action": [
+        "organizations:DescribeOrganization",
+        "organizations:DescribeAccount",
+        "organizations:DescribeOrganizationalUnit",
+        "organizations:ListParents",
+        "organizations:ListChildren",
+        "organizations:ListRoots",
+        "organizations:ListAWSServiceAccessForOrganization",
+        "organizations:ListDelegatedServicesForAccount",
+        "organizations:ListDelegatedAdministrators"
+      ],
+      "Resource": "*"
     }
   ]
 }

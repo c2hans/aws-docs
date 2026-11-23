@@ -41,7 +41,7 @@ For more information, see [Administer your WorkSpaces](https://docs.aws.amazon.c
 **Tools for PowerShell V4**
 **Example 1: This sample fetches the connection status for the specified Workspace**
 
-```
+```powershell
 Get-WKSWorkspacesConnectionStatus -WorkspaceId ws-w123s234r
 ```
 +  For API details, see [DescribeWorkspacesConnectionStatus](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -49,7 +49,7 @@ Get-WKSWorkspacesConnectionStatus -WorkspaceId ws-w123s234r
 **Tools for PowerShell V5**
 **Example 1: This sample fetches the connection status for the specified Workspace**
 
-```
+```powershell
 Get-WKSWorkspacesConnectionStatus -WorkspaceId ws-w123s234r
 ```
 +  For API details, see [DescribeWorkspacesConnectionStatus](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

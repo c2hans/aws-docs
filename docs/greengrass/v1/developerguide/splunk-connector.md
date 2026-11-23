@@ -191,7 +191,7 @@ Valid pattern: `^$|/.*`
 
 The following CLI command creates a `ConnectorDefinition` with an initial version that contains the Splunk Integration connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -239,7 +239,7 @@ All limits that are imposed by the Splunk API apply when using this connector. F
 
 **Example input**
 
-```
+```json
 {
     "request": {
         "event": "some event",
@@ -266,7 +266,7 @@ This connector publishes output data on two topics:
 Use this topic to listen for the status of the requests. Each time that the connector sends a batch of received data to the Splunk API, it publishes a list of the IDs of the requests that succeeded and failed.
 **Example output**
 
-```
+```json
 {
     "response": {
         "succeeded": [
@@ -285,7 +285,7 @@ Use this topic to listen for the status of the requests. Each time that the conn
 Use this topic to listen for errors from the connector. The `error_message` property that describes the error or timeout encountered while processing the request.
 **Example output**
 
-```
+```json
 {
     "response": {
         "error": "UnauthorizedException",
@@ -336,7 +336,7 @@ The [Get started with connectors (console)](connectors-console.md) and [Get star
 
 The following example Lambda function sends an input message to the connector.
 
-```
+```python
 import greengrasssdk
 import time
 import json

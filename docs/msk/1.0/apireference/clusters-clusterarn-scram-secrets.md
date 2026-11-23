@@ -125,7 +125,7 @@ Disassociates a list of SCRAM secrets from a cluster. SCRAM secrets are stored i
 #### POST schema
 <a name="clusters-clusterarn-scram-secrets-request-body-post-example"></a>
 
-```
+```json
 {
   "secretArnList": [
     "string"
@@ -136,7 +136,7 @@ Disassociates a list of SCRAM secrets from a cluster. SCRAM secrets are stored i
 #### PATCH schema
 <a name="clusters-clusterarn-scram-secrets-request-body-patch-example"></a>
 
-```
+```json
 {
   "secretArnList": [
     "string"
@@ -150,7 +150,7 @@ Disassociates a list of SCRAM secrets from a cluster. SCRAM secrets are stored i
 #### ListScramSecretsResponse schema
 <a name="clusters-clusterarn-scram-secrets-response-body-listscramsecretsresponse-example"></a>
 
-```
+```json
 {
   "secretArnList": [
     "string"
@@ -162,7 +162,7 @@ Disassociates a list of SCRAM secrets from a cluster. SCRAM secrets are stored i
 #### BatchAssociateScramSecretResponse schema
 <a name="clusters-clusterarn-scram-secrets-response-body-batchassociatescramsecretresponse-example"></a>
 
-```
+```json
 {
   "clusterArn": "string",
   "unprocessedScramSecrets": [
@@ -178,7 +178,7 @@ Disassociates a list of SCRAM secrets from a cluster. SCRAM secrets are stored i
 #### BatchDisassociateScramSecretResponse schema
 <a name="clusters-clusterarn-scram-secrets-response-body-batchdisassociatescramsecretresponse-example"></a>
 
-```
+```json
 {
   "clusterArn": "string",
   "unprocessedScramSecrets": [
@@ -194,7 +194,7 @@ Disassociates a list of SCRAM secrets from a cluster. SCRAM secrets are stored i
 #### Error schema
 <a name="clusters-clusterarn-scram-secrets-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

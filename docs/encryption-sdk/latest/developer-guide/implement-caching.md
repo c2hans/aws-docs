@@ -33,7 +33,7 @@ These step-by-step instructions show you how to create the components that you n
 ------
 #### [ C ]
 
-  ```
+  ```cpp
   // Cache capacity (maximum number of entries) is required
   size_t cache_capacity = 10;
   struct aws_allocator *allocator = aws_default_allocator();
@@ -46,7 +46,7 @@ These step-by-step instructions show you how to create the components that you n
 
   The following example uses version 2.*x* of the AWS Encryption SDK for Java. Version 3.*x* of the AWS Encryption SDK for Java deprecates the data key caching CMM. With version 3.*x*, you can also use the [AWS KMS Hierarchical keyring](use-hierarchical-keyring.md), an alternative cryptographic materials caching solution.
 
-  ```
+  ```java
   // Cache capacity (maximum number of entries) is required
   int MAX_CACHE_SIZE = 10;
 
@@ -56,7 +56,7 @@ These step-by-step instructions show you how to create the components that you n
 ------
 #### [ JavaScript Browser ]
 
-  ```
+  ```javascript
   const capacity = 10
 
   const cache = getLocalCryptographicMaterialsCache(capacity)
@@ -65,7 +65,7 @@ These step-by-step instructions show you how to create the components that you n
 ------
 #### [ JavaScript Node.js ]
 
-  ```
+  ```javascript
   const capacity = 10
 
   const cache = getLocalCryptographicMaterialsCache(capacity)
@@ -74,7 +74,7 @@ These step-by-step instructions show you how to create the components that you n
 ------
 #### [ Python ]
 
-  ```
+  ```python
   # Cache capacity (maximum number of entries) is required
   MAX_CACHE_SIZE = 10
 
@@ -88,7 +88,7 @@ These step-by-step instructions show you how to create the components that you n
 ------
 #### [ C ]
 
-  ```
+  ```cpp
   // Create an AWS KMS keyring
   //   The input is the Amazon Resource Name (ARN)
   //   of an AWS KMS key
@@ -101,7 +101,7 @@ These step-by-step instructions show you how to create the components that you n
 
   The following example uses version 2.*x* of the AWS Encryption SDK for Java. Version 3.*x* of the AWS Encryption SDK for Java deprecates the data key caching CMM. With version 3.*x*, you can also use the [AWS KMS Hierarchical keyring](use-hierarchical-keyring.md), an alternative cryptographic materials caching solution.
 
-  ```
+  ```java
   // Create an AWS KMS master key provider
   //   The input is the Amazon Resource Name (ARN)
   //   of an AWS KMS key
@@ -114,7 +114,7 @@ These step-by-step instructions show you how to create the components that you n
 
   In the browser, you must inject your credentials securely. This example defines credentials in a webpack (kms.webpack.config) that resolves credentials at runtime. It creates an AWS KMS client provider instance from an AWS KMS client and the credentials. Then, when it creates the keyring, it passes the client provider to the constructor along with the AWS KMS key (`generatorKeyId)`.
 
-  ```
+  ```javascript
   const { accessKeyId, secretAccessKey, sessionToken } = credentials
 
   const clientProvider = getClient(KMS, {
@@ -140,7 +140,7 @@ These step-by-step instructions show you how to create the components that you n
 ------
 #### [ JavaScript Node.js ]
 
-  ```
+  ```javascript
   /* Create an AWS KMS keyring
    *   The input is the Amazon Resource Name (ARN)
   */   of an AWS KMS key
@@ -151,7 +151,7 @@ These step-by-step instructions show you how to create the components that you n
 ------
 #### [ Python ]
 
-  ```
+  ```python
   # Create an AWS KMS master key provider
   #  The input is the Amazon Resource Name (ARN)
   #  of an AWS KMS key
@@ -172,7 +172,7 @@ These step-by-step instructions show you how to create the components that you n
 
   After you create the caching CMM, you can release your references to the keyring and the cache. For details, see [Reference counting](c-language-using.md#c-language-using-release).
 
-  ```
+  ```cpp
   // Create the caching CMM
   //   Set the partition ID to NULL.
   //   Set the required maximum age value to 60 seconds.
@@ -192,7 +192,7 @@ These step-by-step instructions show you how to create the components that you n
 
   The following example uses version 2.*x* of the AWS Encryption SDK for Java. Version 3.*x* of the AWS Encryption SDK for Java does not support data key caching, but it does support the [AWS KMS Hierarchical keyring](use-hierarchical-keyring.md), an alternative cryptographic materials caching solution.
 
-  ```
+  ```java
   /*
    * Security thresholds
    *   Max entry age is required.
@@ -213,7 +213,7 @@ These step-by-step instructions show you how to create the components that you n
 ------
 #### [ JavaScript Browser ]
 
-  ```
+  ```javascript
   /*
    * Security thresholds
    *   Max age (in milliseconds) is required.
@@ -234,7 +234,7 @@ These step-by-step instructions show you how to create the components that you n
 ------
 #### [ JavaScript Node.js ]
 
-  ```
+  ```javascript
   /*
    * Security thresholds
    *   Max age (in milliseconds) is required.
@@ -255,7 +255,7 @@ These step-by-step instructions show you how to create the components that you n
 ------
 #### [ Python ]
 
-  ```
+  ```python
   # Security thresholds
   #   Max entry age is required.
   #   Max messages (and max bytes) per entry are optional
@@ -288,7 +288,7 @@ In the AWS Encryption SDK for C, you create a session with the caching CMM and t
 
 By default, when the message size is unknown and unbounded, the AWS Encryption SDK does not cache data keys. To allow caching when you don't know the exact data size, use the `aws_cryptosdk_session_set_message_bound` method to set a maximum size for the message. Set the bound larger than the estimated message size. If the actual message size exceeds the bound, the encryption operation fails.
 
-```
+```cpp
 /* Create a session with the caching CMM. Set the session mode to encrypt. */
 struct aws_cryptosdk_session *session = aws_cryptosdk_session_new_from_cmm_2(allocator, AWS_CRYPTOSDK_ENCRYPT, caching_cmm);
 
@@ -309,7 +309,7 @@ aws_cryptosdk_session_destroy(session);
 
 The following example uses version 2.*x* of the AWS Encryption SDK for Java. Version 3.*x* of the AWS Encryption SDK for Java deprecates the data key caching CMM. With version 3.*x*, you can also use the [AWS KMS Hierarchical keyring](use-hierarchical-keyring.md), an alternative cryptographic materials caching solution.
 
-```
+```java
 // When the call to encryptData specifies a caching CMM,
 // the encryption operation uses the data key cache
 final AwsCrypto encryptionSdk = AwsCrypto.standard();
@@ -319,7 +319,7 @@ return encryptionSdk.encryptData(cachingCmm, plaintext_source).getResult();
 ------
 #### [ JavaScript Browser ]
 
-```
+```javascript
 const { result } = await encrypt(cachingCmm, plaintext)
 ```
 
@@ -328,14 +328,14 @@ const { result } = await encrypt(cachingCmm, plaintext)
 
 When you use the caching CMM in the AWS Encryption SDK for JavaScript for Node.js, the `encrypt` method requires the length of the plaintext. If you don't provide it, the data key is not cached. If you provide a length, but the plaintext data that you supply exceeds that length, the encrypt operation fails. If you don't know the exact length of the plaintext, such as when you're streaming data, provide the largest expected value.
 
-```
+```javascript
 const { result } = await encrypt(cachingCmm, plaintext, { plaintextLength: plaintext.length })
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 # Set up an encryption client
 client = aws_encryption_sdk.EncryptionSDKClient()
 
@@ -364,7 +364,7 @@ For more detailed, real-world examples of creating and using a data key cache, s
 ------
 #### [ C ]
 
-```
+```cpp
 /*
  * Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -454,7 +454,7 @@ void encrypt_with_caching(
 
 The following example uses version 2.*x* of the AWS Encryption SDK for Java. Version 3.*x* of the AWS Encryption SDK for Java deprecates the data key caching CMM. With version 3.*x*, you can also use the [AWS KMS Hierarchical keyring](use-hierarchical-keyring.md), an alternative cryptographic materials caching solution.
 
-```
+```java
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
@@ -532,7 +532,7 @@ public class SimpleDataKeyCachingExample {
 ------
 #### [ JavaScript Browser ]
 
-```
+```javascript
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
@@ -763,7 +763,7 @@ export async function testCachingCMMExample() {
 ------
 #### [ JavaScript Node.js ]
 
-```
+```javascript
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
@@ -941,7 +941,7 @@ export async function cachingCMMNodeSimpleTest() {
 ------
 #### [ Python ]
 
-```
+```python
 # Copyright 2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License"). You

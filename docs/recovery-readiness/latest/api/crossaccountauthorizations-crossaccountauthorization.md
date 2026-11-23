@@ -61,7 +61,7 @@ Enables CORS by returning correct headers.
 #### DeleteCrossAccountAuthorizationResult schema
 <a name="crossaccountauthorizations-crossaccountauthorization-response-body-deletecrossaccountauthorizationresult-example"></a>
 
-```
+```json
 {
 }
 ```

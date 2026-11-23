@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::Route53::HostedZone HostedZoneConfig
 
-A complex type that contains an optional comment about your hosted zone. If you don't want to specify a comment, omit both the `HostedZoneConfig` and `Comment` elements.
+A complex type that contains an optional comment about your hosted zone and the hosted zone's service tier. If you don't want to specify a comment or a service tier, omit the `HostedZoneConfig` element and its child elements.
 
 ## Syntax
 <a name="aws-properties-route53-hostedzone-hostedzoneconfig-syntax"></a>
@@ -42,11 +42,11 @@ Any comments that you want to include about the hosted zone.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HostedZoneTier`  <a name="cfn-route53-hostedzone-hostedzoneconfig-hostedzonetier"></a>
-Property description not available.
+The service tier of the hosted zone. Specify `ADVANCED` for the advanced tier; specify `STANDARD` or omit the property for the standard tier.
 *Required*: No
 *Type*: String
 *Allowed values*: `STANDARD | ADVANCED`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 ## See also
 <a name="aws-properties-route53-hostedzone-hostedzoneconfig--seealso"></a>

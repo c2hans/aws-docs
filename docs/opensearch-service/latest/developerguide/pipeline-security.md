@@ -75,7 +75,7 @@ You configure VPC access during [pipeline creation](creating-pipeline.md#create-
 
 To configure VPC access using the AWS CLI, specify the `--vpc-options` parameter:
 
-```
+```bash
 aws osis create-pipeline \
   --pipeline-name {{vpc-pipeline}} \
   --min-units 4 \

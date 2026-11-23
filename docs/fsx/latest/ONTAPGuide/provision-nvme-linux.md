@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/provision-nvme-lin
 
 # Provisioning NVMe/TCP for Linux
 
-FSx for ONTAP supports the Non-Volatile Memory Express over TCP (NVMe/TCP) block storage protocol. With NVMe/TCP, you use the ONTAP CLI to provision namespaces and subsystems and then map the namespaces to subsystems, similar to the way LUNs are provisioned and mapped to initiator groups (igroups) for iSCSI. The NVMe/TCP protocol is available on second-generation file systems that have 6 or fewer [high-availability (HA) pairs](HA-pairs.md).
+FSx for ONTAP supports the Non-Volatile Memory Express over TCP (NVMe/TCP) block storage protocol. With NVMe/TCP, you use the ONTAP CLI to provision namespaces and subsystems and then map the namespaces to subsystems, similar to the way LUNs are provisioned and mapped to initiator groups (igroups) for iSCSI. The NVMe/TCP protocol is available on second-generation and third-generation file systems that have 6 or fewer [high-availability (HA) pairs](HA-pairs.md).
 
 **Note**
 FSx for ONTAP file systems use an SVM's iSCSI endpoints for both iSCSI and NVMe/TCP block storage protocols.

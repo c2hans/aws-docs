@@ -62,7 +62,7 @@ To view a code example for using the `$unset` command, choose the tab for the la
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function removeField() {
@@ -85,7 +85,7 @@ removeField();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def remove_field():

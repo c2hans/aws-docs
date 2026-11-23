@@ -30,7 +30,7 @@ The policy's default version is the version that defines the permissions for the
 ## JSON policy document
 <a name="AWSCodePipeline_ReadOnlyAccess-json"></a>
 
-```
+```json
 {
   "Statement" : [
     {

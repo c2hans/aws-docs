@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List the Step Functions activities for the current account.
     /// </summary>
@@ -51,7 +51,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sfn.SfnClient;
 import software.amazon.awssdk.services.sfn.model.ListActivitiesRequest;
@@ -107,7 +107,7 @@ public class ListActivities {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun listAllActivites() {
     val activitiesRequest =
         ListActivitiesRequest {
@@ -131,7 +131,7 @@ suspend fun listAllActivites() {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 class Activity:
     """Encapsulates Step Function activity actions."""
 
@@ -171,7 +171,7 @@ class Activity:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sfn#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_sfn->listactivities( ).
         DATA(lt_activities) = lo_result->get_activities( ).

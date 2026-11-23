@@ -129,7 +129,7 @@ The following parameters configure S3 Tables publishing:
 
 **Enable delivery.** `--log-exports` accepts `all` or a space-separated list of supported system tables, and `--s3-table-granularity` accepts `cluster` (per-warehouse) or `account` (consolidated).
 
-```
+```bash
 aws redshift enable-logging \
     --cluster-identifier my-redshift-cluster \
     --log-destination-type s3table \
@@ -139,7 +139,7 @@ aws redshift enable-logging \
 
 To enable delivery for specific system tables only:
 
-```
+```bash
 aws redshift enable-logging \
     --cluster-identifier my-redshift-cluster \
     --log-destination-type s3table \
@@ -149,14 +149,14 @@ aws redshift enable-logging \
 
 **Check delivery status.**
 
-```
+```bash
 aws redshift describe-logging-status \
     --cluster-identifier my-redshift-cluster
 ```
 
 **Disable delivery** for all system tables, or for specific tables with `--log-exports`:
 
-```
+```bash
 aws redshift disable-logging \
     --cluster-identifier my-redshift-cluster \
     --log-destination-type s3table \
@@ -170,7 +170,7 @@ In Redshift Serverless, you configure the feature per namespace with `update-nam
 
 **Enable delivery.**
 
-```
+```bash
 aws redshift-serverless update-namespace \
     --namespace-name my-namespace \
     --log-destination-type s3table \
@@ -181,7 +181,7 @@ aws redshift-serverless update-namespace \
 
 **Disable delivery** for specific system tables (or `all`):
 
-```
+```bash
 aws redshift-serverless update-namespace \
     --namespace-name my-namespace \
     --log-destination-type s3table \
@@ -191,7 +191,7 @@ aws redshift-serverless update-namespace \
 
 **Check delivery status.**
 
-```
+```bash
 aws redshift-serverless get-namespace \
     --namespace-name my-namespace
 ```
@@ -210,7 +210,7 @@ For integration instructions, see [Integrating Amazon S3 Tables with AWS Glue Da
 
 By default, data delivered to S3 Tables is encrypted with Amazon S3-managed keys (SSE-S3). To use an AWS KMS customer managed key instead, specify its ARN with `--s3-table-kms-key-id` when you enable delivery:
 
-```
+```bash
 aws redshift enable-logging \
     --cluster-identifier my-redshift-cluster \
     --log-destination-type s3table \
@@ -221,7 +221,7 @@ aws redshift enable-logging \
 
 If you use a customer managed key, its key policy must allow the Redshift system table integration service principal to generate data keys when it writes your system tables, and the S3 Tables maintenance service principal to use the key during table maintenance (such as compaction). Add the following statements to the key policy, replacing {{PARTITION}}, {{REGION}}, {{ACCOUNT}}, and {{KEY\_ID}} with your own values.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

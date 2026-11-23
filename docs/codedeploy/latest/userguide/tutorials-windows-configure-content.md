@@ -91,7 +91,7 @@ The AppSpec file must be named `appspec.yml`. It must be placed in the applicati
 
 1. Add the following YAML code to the file, and then save the file.
 
-   ```
+   ```yaml
    version: 0.0
    os: windows
    files:

@@ -78,7 +78,7 @@ For more information, see [Allocate a Dedicated Host](https://docs.aws.amazon.co
 **Tools for PowerShell V4**
 **Example 1: This example allocates a Dedicated Host to your account for the given instance type and availability zone**
 
-```
+```powershell
 New-EC2Host -AutoPlacement on -AvailabilityZone eu-west-1b -InstanceType m4.xlarge -Quantity 1
 ```
 **Output:**
@@ -91,7 +91,7 @@ h-01e23f4cd567890f3
 **Tools for PowerShell V5**
 **Example 1: This example allocates a Dedicated Host to your account for the given instance type and availability zone**
 
-```
+```powershell
 New-EC2Host -AutoPlacement on -AvailabilityZone eu-west-1b -InstanceType m4.xlarge -Quantity 1
 ```
 **Output:**

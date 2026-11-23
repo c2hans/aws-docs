@@ -11,7 +11,7 @@ Managed Service for Apache Flink tracks events using the following timestamps:
 
 You set the time used by the streaming environment using `setStreamTimeCharacteristic`.
 
-```
+```java
 env.setStreamTimeCharacteristic(TimeCharacteristic.ProcessingTime);
 env.setStreamTimeCharacteristic(TimeCharacteristic.IngestionTime);
 env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);

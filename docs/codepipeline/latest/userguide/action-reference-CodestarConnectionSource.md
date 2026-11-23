@@ -167,7 +167,7 @@ In the following example, the output artifact is set to the default ZIP format o
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: Source
 Actions:
   - InputArtifacts: []
@@ -190,7 +190,7 @@ Actions:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "Source",
     "Actions": [

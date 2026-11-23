@@ -58,7 +58,7 @@ If *geom1*, *geom2*, *geom3*, and *geom4* don't have the same value for the spat
 
 The following SQL returns the angle converted to degrees of three input points.
 
-```
+```sql
 SELECT ST_Angle(ST_Point(1,1), ST_Point(0,0), ST_Point(1,0)) / Pi() * 180.0 AS angle;
 ```
 
@@ -70,7 +70,7 @@ SELECT ST_Angle(ST_Point(1,1), ST_Point(0,0), ST_Point(1,0)) / Pi() * 180.0 AS a
 
 The following SQL returns the angle converted to degrees of four input points.
 
-```
+```sql
 SELECT ST_Angle(ST_Point(1,1), ST_Point(0,0), ST_Point(1,0), ST_Point(2,0)) / Pi() * 180.0 AS angle;
 ```
 

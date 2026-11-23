@@ -10,7 +10,7 @@ Because secrets can be replicated using [`ReplicateSecretToRegions`](https://doc
 The following policy example shows how to allow all actions that don't add replica regions. This prevents users from replicating secrets through both `ReplicateSecretToRegions` and `CreateSecret`.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -35,7 +35,7 @@ The following policy shows how to allow all of the following:
 + Replicate secrets to Regions only in United States and Canada
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

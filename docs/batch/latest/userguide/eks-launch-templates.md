@@ -120,7 +120,7 @@ runcmd:
 
 To use this volume in the job, it must be added in the [eksProperties](https://docs.aws.amazon.com/batch/latest/APIReference/API_EksProperties.html) parameter to [RegisterJobDefinition](https://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html). The following example is a large portion of the job definition.
 
-```
+```json
 {
     "jobDefinitionName": "MyJobOnEks_EFS",
     "type": "container",

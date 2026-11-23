@@ -163,7 +163,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-rds-database-stack-create-from-backup-for-aurora-ex-min"></a>
 
-```
+```json
 {
   "Description": "Create an AWS Relational Database Service (RDS) Aurora stack from AWS Backup.",
   "VpcId": "vpc-12345678901234567",
@@ -192,7 +192,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-rds-database-stack-create-from-backup-for-aurora-ex-max"></a>
 
-```
+```json
 {
   "Description": "Create an AWS Relational Database Service (RDS) Aurora stack from AWS Backup.",
   "VpcId": "vpc-12345678901234567",

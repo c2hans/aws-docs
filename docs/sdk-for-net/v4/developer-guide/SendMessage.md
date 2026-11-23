@@ -30,7 +30,7 @@ The following snippet sends a message to the queue identified by the given queue
 
 The example [at the end of this topic](#SendMessage-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to put a message on a queue
     // Could be expanded to include message attributes, etc., in a SendMessageRequest
@@ -51,7 +51,7 @@ The following snippet sends a batch of messages to the queue identified by the g
 
 The example [at the end of this topic](#SendMessage-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to put a batch of messages on a queue
     // Could be expanded to include message attributes, etc.,
@@ -75,7 +75,7 @@ The following snippet deletes all messages from the queue identified by the give
 
 The example [at the end of this topic](#SendMessage-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to delete all messages from the queue
     private static async Task DeleteAllMessages(IAmazonSQS sqsClient, string qUrl)
@@ -116,7 +116,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c29c23c25b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

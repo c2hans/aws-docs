@@ -16,7 +16,7 @@ Extracted information is included in the contact analysis output written to Amaz
 
 The following is an example of the extracted information structure in the JSON output:
 
-```
+```json
 {
   "ExtractedInformation": {
     "Extractions": [

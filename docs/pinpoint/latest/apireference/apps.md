@@ -99,7 +99,7 @@ Retrieves information about the communication requirements and options that are 
 #### POST schema
 <a name="apps-request-body-post-example"></a>
 
-```
+```json
 {
   "Name": "string",
   "tags": {
@@ -113,7 +113,7 @@ Retrieves information about the communication requirements and options that are 
 #### ApplicationsResponse schema
 <a name="apps-response-body-applicationsresponse-example"></a>
 
-```
+```json
 {
   "NextToken": "string",
   "Item": [
@@ -132,7 +132,7 @@ Retrieves information about the communication requirements and options that are 
 #### ApplicationResponse schema
 <a name="apps-response-body-applicationresponse-example"></a>
 
-```
+```json
 {
   "Name": "string",
   "Id": "string",
@@ -146,7 +146,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

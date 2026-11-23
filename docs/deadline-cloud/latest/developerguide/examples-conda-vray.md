@@ -10,7 +10,7 @@ To build the recipe, download the V-Ray Standalone archive (`vraystd_adv_71000_r
 
 Submit the build:
 
-```
+```bash
 ./submit-package-job vray
 ```
 

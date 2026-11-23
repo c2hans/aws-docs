@@ -33,7 +33,7 @@ The next section discusses details of sequence and subsequence checkpointing for
 
 KPL de-aggregation can involve subsequence checkpointing. To facilitate using subsequence checkpointing, a `UserRecord` class has been added to the KCL:
 
-```
+```java
 public class UserRecord extends Record {
     public long getSubSequenceNumber() {
     /* ... */
@@ -53,26 +53,26 @@ This class is now used instead of `Record`. This does not break existing code be
 
 In addition, two new operations are added to`IRecordProcessorCheckpointer`:
 
-```
+```java
 public void checkpoint(Record record);
 public void checkpoint(String sequenceNumber, long subSequenceNumber);
 ```
 
 To begin using subsequence number checkpointing, you can perform the following conversion. Change the following form code:
 
-```
+```java
 checkpointer.checkpoint(record.getSequenceNumber());
 ```
 
 New form code:
 
-```
+```java
 checkpointer.checkpoint(record);
 ```
 
 We recommend that you use the `checkpoint(Record record)` form for subsequence checkpointing. However, if you are already storing `sequenceNumbers` in strings to use for checkpointing, you should now also store `subSequenceNumber`, as shown in the following example:
 
-```
+```java
 String sequenceNumber = record.getSequenceNumber();
 long subSequenceNumber = ((UserRecord) record).getSubSequenceNumber();  // ... do other processing
 checkpointer.checkpoint(sequenceNumber, subSequenceNumber);
@@ -87,7 +87,7 @@ While processing KPL user records, the KCL writes the subsequence number into Am
 
 You can also choose not to use the KCL but instead invoke the API operation `GetRecords` directly to retrieve Kinesis Data Streams records. To unpack these retrieved records into your original KPL user records, call one of the following static operations in `UserRecord.java`:
 
-```
+```java
 public static List<Record> deaggregate(List<Record> records)
 
 public static List<UserRecord> deaggregate(List<UserRecord> records, BigInteger startingHashKey, BigInteger endingHashKey)

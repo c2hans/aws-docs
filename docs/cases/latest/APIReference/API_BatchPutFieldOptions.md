@@ -123,7 +123,7 @@ HTTP Status Code: 400
 
 Request and Response Example:
 
-```
+```json
 {
   "options": [
     {
@@ -150,7 +150,7 @@ Request and Response Example:
 }
 ```
 
-```
+```json
 {
 "errors": []
 }

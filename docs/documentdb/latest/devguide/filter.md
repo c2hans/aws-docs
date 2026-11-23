@@ -76,7 +76,7 @@ To view a code example for using the `$filter` command, choose the tab for the l
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function example() {
@@ -119,7 +119,7 @@ example();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 from pprint import pprint
 

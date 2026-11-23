@@ -28,7 +28,7 @@ These procedures require the celebrity ID for a celebrity that Amazon Rekognitio
 
    Replace `id` with one of the celebrity IDs displayed in [Recognizing celebrities in an image](celebrities-procedure-image.md).
 
-   ```
+   ```java
    //Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    //PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -67,7 +67,7 @@ These procedures require the celebrity ID for a celebrity that Amazon Rekognitio
 
    This code is taken from the AWS Documentation SDK examples GitHub repository. See the full example [here](https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/javav2/example_code/rekognition/src/main/java/com/example/rekognition/CelebrityInfo.java).
 
-   ```
+   ```java
    import software.amazon.awssdk.regions.Region;
    import software.amazon.awssdk.services.rekognition.RekognitionClient;
    import software.amazon.awssdk.services.rekognition.model.GetCelebrityInfoRequest;
@@ -151,7 +151,7 @@ These procedures require the celebrity ID for a celebrity that Amazon Rekognitio
 
    Replace `id` with one of the celebrity IDs displayed in [Recognizing celebrities in an image](celebrities-procedure-image.md). Replace the value of `profile_name` in the line that creates the Rekognition session with the name of your developer profile.
 
-   ```
+   ```python
    # Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -187,7 +187,7 @@ These procedures require the celebrity ID for a celebrity that Amazon Rekognitio
 
    Replace `id` with one of the celebrity IDs displayed in [Recognizing celebrities in an image](celebrities-procedure-image.md).
 
-   ```
+   ```cs
    //Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    //PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 

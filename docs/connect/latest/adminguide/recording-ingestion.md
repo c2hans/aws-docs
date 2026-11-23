@@ -76,7 +76,7 @@ To retrieve details about the contact—such as its channel, initiation method, 
 
 In the following AWS CLI command, replace `{{instance-id}}`, `{{contact-id}}`, and `{{region}}` with your own values.
 
-```
+```bash
 aws connect describe-contact \
   --instance-id "{{instance-id}}" \
   --contact-id "{{contact-id}}" \

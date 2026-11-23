@@ -44,7 +44,7 @@ For more information, see [Managing file system tags](https://docs.aws.amazon.co
 **Tools for PowerShell V4**
 **Example 1: Returns the collection of tags currently associated with the specified file system.**
 
-```
+```powershell
 Get-EFSTag -FileSystemId fs-1a2b3c4d
 ```
 **Output:**
@@ -61,7 +61,7 @@ tagkey2     tagvalue2
 **Tools for PowerShell V5**
 **Example 1: Returns the collection of tags currently associated with the specified file system.**
 
-```
+```powershell
 Get-EFSTag -FileSystemId fs-1a2b3c4d
 ```
 **Output:**

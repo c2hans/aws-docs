@@ -42,7 +42,7 @@ After the [StartSpeakerSearchTask](https://docs.aws.amazon.com/chime-sdk/latest/
 
 The following example shows notification for a successful match.
 
-```
+```json
 {
     "version": "0",
     "id": "{{12345678-1234-1234-1234-111122223333}}",
@@ -87,7 +87,7 @@ After an additional 10 seconds of non-silent speech, the Voice Connector sends a
 
 The following example shows the notification for a successful match, meaning you can update the associated voice profile.
 
-```
+```json
 {
     "version": "0",
     "id": "{{12345678-1234-1234-1234-111122223333}}",
@@ -119,7 +119,7 @@ Voice tone analysis events have the `VoiceToneAnalysisStatus` detail type. The a
 
 The following example shows a typical voice tone analysis event.
 
-```
+```json
 {
   "detail-type": "VoiceToneAnalysisStatus",
   "service-type": "VoiceAnalytics",
@@ -170,7 +170,7 @@ Post call summary events are sent 5 minutes after the call has ended. These summ
 
 The following example shows a post call summary with the best voice profile match, confirmed speaker identity, and a list of the voice profiles created or updated through the `CreateVoiceProfile` and `UpdateVoiceProfile` API calls made during the call.
 
-```
+```json
 {
     "version": "0",
     "id": "{{12345678-1234-1234-1234-111122223333}}",

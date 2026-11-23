@@ -10,6 +10,10 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 
 ![Diagram showing Serverless microservice using AWS Lambda](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/serverless-microservice-using-lambda.png)
 
+*Figure 4: Serverless microservice using AWS Lambda*
+
  Figure 5 displays a similar serverless implementation using containers with AWS Fargate, removing concerns about underlying infrastructure. It also features Amazon Aurora Serverless, an on-demand, auto-scaling database that automatically adjusts capacity based on your application's requirements.
 
 ![Diagram showing serverless microservice using AWS Fargate](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/serverless-microservice-fargate.png)
+
+*Figure 5: Serverless microservice using AWS Fargate*

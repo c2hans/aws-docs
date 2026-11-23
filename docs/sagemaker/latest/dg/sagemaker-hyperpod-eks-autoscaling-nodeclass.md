@@ -30,7 +30,7 @@ The following steps cover how to create a `NodeClass`.
 
 1. Here's a sample `NodeClass` that uses a ml.c5.xlarge and ml.c5.4xlarge instance types:
 
-   ```
+   ```yaml
    apiVersion: karpenter.sagemaker.amazonaws.com/v1
    kind: HyperpodNodeClass
    metadata:
@@ -55,7 +55,7 @@ The following steps cover how to create a `NodeClass`.
    kubectl get hyperpodnodeclass sample-nc -o yaml
    ```
 
-   ```
+   ```yaml
    apiVersion: karpenter.sagemaker.amazonaws.com/v1
    kind: HyperpodNodeClass
    metadata:

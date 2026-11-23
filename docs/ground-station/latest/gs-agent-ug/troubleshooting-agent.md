@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/troubl
 
  The AWS Ground Station Agent may fail to start due to several reasons, but the most common scenario might be a misconfigured agent configuration file. After starting the agent (see [AWS Ground Station Agent start](managing-agent.md#gs-agent-start)) you might get a status such as:
 
-```
+```bash
 #agent is automatically retrying a restart
 aws-groundstation-agent.service - aws-groundstation-agent
 Loaded: loaded (/usr/lib/systemd/system/aws-groundstation-agent.service; enabled; vendor preset: disabled)
@@ -30,13 +30,13 @@ Main PID: 43095 (code=exited, status=101)
 ### Troubleshooting
 <a name="agent-fails-to-start-ts"></a>
 
-```
+```bash
 sudo journalctl -u aws-groundstation-agent | grep -i -B 3 -A 3 'Loading Config' | tail -6
 ```
 
 might result in an output of:
 
-```
+```bash
 launch-aws-gs-agent[43095]: Running with options Production(ProductionOptions { endpoint: None, region: None })
 launch-aws-gs-agent[43095]: Loading Config
 launch-aws-gs-agent[43095]: System has 96 logical cores
@@ -62,7 +62,7 @@ You can view agent logs in the following location.
 
  Scheduling contacts requires a healthy AWS Ground Station Agent. Please confirm that your AWS Ground Station Agent has started and that it is healthy by querying the AWS Ground Station API via get-dataflow-endpoint-group:
 
-```
+```bash
 aws groundstation get-dataflow-endpoint-group --dataflow-endpoint-group-id ${DATAFLOW-ENDPOINT-GROUP-ID} --region ${REGION}
 ```
 

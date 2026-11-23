@@ -40,7 +40,7 @@ For more information, see [Update Groups](https://docs.aws.amazon.com/ARG/latest
 **Tools for PowerShell V4**
 **Example 1: This example updates the description of the group**
 
-```
+```powershell
 Update-RGGroup -GroupName auto-yes -Description "Instances auto-remove"
 ```
 **Output:**
@@ -55,7 +55,7 @@ Instances to be cleaned arn:aws:resource-groups:eu-west-1:123456789012:group/aut
 **Tools for PowerShell V5**
 **Example 1: This example updates the description of the group**
 
-```
+```powershell
 Update-RGGroup -GroupName auto-yes -Description "Instances auto-remove"
 ```
 **Output:**

@@ -64,7 +64,7 @@ For more information, see [Update Groups](https://docs.aws.amazon.com/ARG/latest
 **Tools for PowerShell V4**
 **Example 1: This example creates a query object and updates the query for the group.**
 
-```
+```powershell
 $query = [Amazon.ResourceGroups.Model.ResourceQuery]::new()
 $query.Type = [Amazon.ResourceGroups.QueryType]::TAG_FILTERS_1_0
 $query.Query = @{
@@ -89,7 +89,7 @@ build600  Amazon.ResourceGroups.Model.ResourceQuery
 **Tools for PowerShell V5**
 **Example 1: This example creates a query object and updates the query for the group.**
 
-```
+```powershell
 $query = [Amazon.ResourceGroups.Model.ResourceQuery]::new()
 $query.Type = [Amazon.ResourceGroups.QueryType]::TAG_FILTERS_1_0
 $query.Query = @{

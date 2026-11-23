@@ -40,11 +40,11 @@ Install the latest version of the AWS Encryption SDK for Go. For details on inst
 **To install the latest version**
 + Install the AWS Encryption SDK for Go
 
-  ```
+  ```go
   go get github.com/aws/aws-encryption-sdk/releases/go/encryption-sdk@latest
   ```
 + Install the [Cryptographic Material Providers Library](https://github.com/aws/aws-cryptographic-material-providers-library) (MPL)
 
-  ```
+  ```go
   go get github.com/aws/aws-cryptographic-material-providers-library/releases/go/mpl
   ```

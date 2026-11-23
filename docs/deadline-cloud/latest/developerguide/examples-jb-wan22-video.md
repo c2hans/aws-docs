@@ -12,7 +12,7 @@ The bundle requires a farm with a GPU-enabled Linux queue. Workers must have an 
 
 Submit a job that generates four variations of a prompt:
 
-```
+```bash
 deadline bundle submit ./wan22_video_generation \
   --queue-id {{gpu-queue-id}} \
   -p Prompt="A hot air balloon drifting over terraced rice fields at dawn" \

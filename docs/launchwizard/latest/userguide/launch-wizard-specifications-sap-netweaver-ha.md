@@ -8,7 +8,7 @@ The following are examples of the specifications required to create high-availab
 
 High availability (HA) deployment with SAP software installed:
 
-```
+```json
 {
   "KeyPairName": "ExampleKeyPair",
   "VpcId": "vpc-a1b2c3d4",
@@ -71,7 +71,7 @@ High availability (HA) deployment with SAP software installed:
 
 High-availability deployment with SAP HANA database software installed:
 
-```
+```json
 {
   "KeyPairName": "ExampleKeyPair",
   "VpcId": "vpc-a1b2c3d4",
@@ -135,7 +135,7 @@ High-availability deployment with SAP HANA database software installed:
 
 High-availability deployment with only infrastructure resources:
 
-```
+```json
 {
   "KeyPairName": "ExampleKeyPair",
   "VpcId": "vpc-a1b2c3d4",

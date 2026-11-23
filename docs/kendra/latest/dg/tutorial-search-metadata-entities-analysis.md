@@ -87,7 +87,7 @@ Ensure that you are in the same region in which you created your Amazon S3 bucke
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -157,7 +157,7 @@ The ARN has a format similar to {{arn:aws:iam::123456789012:role/comprehend-role
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

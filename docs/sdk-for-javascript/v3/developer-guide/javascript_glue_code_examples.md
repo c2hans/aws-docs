@@ -30,7 +30,7 @@ The following code example shows how to get started using AWS Glue.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 import { ListJobsCommand, GlueClient } from "@aws-sdk/client-glue";
 
 const client = new GlueClient({});
@@ -65,7 +65,7 @@ For more information, see [Tutorial: Getting started with AWS Glue Studio](https
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 Create and run a crawler that crawls a public Amazon Simple Storage Service (Amazon S3) bucket and generates a metadata database that describes the CSV-formatted data it finds.
 
-```
+```javascript
 const createCrawler = (name, role, dbName, tablePrefix, s3TargetPath) => {
   const client = new GlueClient({});
 
@@ -169,7 +169,7 @@ const makeStartCrawlerStep =
 ```
 List information about databases and tables in your AWS Glue Data Catalog.
 
-```
+```javascript
 const getDatabase = (name) => {
   const client = new GlueClient({});
 
@@ -214,7 +214,7 @@ const makeGetTablesStep =
 ```
 Create and run a job that extracts CSV data from the source Amazon S3 bucket, transforms it by removing and renaming fields, and loads JSON-formatted output into another Amazon S3 bucket.
 
-```
+```javascript
 const createJob = (name, role, scriptBucketName, scriptKey) => {
   const client = new GlueClient({});
 
@@ -336,7 +336,7 @@ const makeStartJobRunStep =
 ```
 List information about job runs and view some of the transformed data.
 
-```
+```javascript
 const getJobRuns = (jobName) => {
   const client = new GlueClient({});
   const command = new GetJobRunsCommand({
@@ -404,7 +404,7 @@ const makePickJobRunStep =
 ```
 Delete all resources created by the demo.
 
-```
+```javascript
 const deleteJob = (jobName) => {
   const client = new GlueClient({});
 
@@ -632,7 +632,7 @@ The following code example shows how to use `CreateCrawler`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const createCrawler = (name, role, dbName, tablePrefix, s3TargetPath) => {
   const client = new GlueClient({});
 
@@ -659,7 +659,7 @@ The following code example shows how to use `CreateJob`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const createJob = (name, role, scriptBucketName, scriptKey) => {
   const client = new GlueClient({});
 
@@ -687,7 +687,7 @@ The following code example shows how to use `DeleteCrawler`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const deleteCrawler = (crawlerName) => {
   const client = new GlueClient({});
 
@@ -708,7 +708,7 @@ The following code example shows how to use `DeleteDatabase`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const deleteDatabase = (databaseName) => {
   const client = new GlueClient({});
 
@@ -729,7 +729,7 @@ The following code example shows how to use `DeleteJob`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const deleteJob = (jobName) => {
   const client = new GlueClient({});
 
@@ -750,7 +750,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const deleteTable = (databaseName, tableName) => {
   const client = new GlueClient({});
 
@@ -772,7 +772,7 @@ The following code example shows how to use `GetCrawler`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const getCrawler = (name) => {
   const client = new GlueClient({});
 
@@ -793,7 +793,7 @@ The following code example shows how to use `GetDatabase`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const getDatabase = (name) => {
   const client = new GlueClient({});
 
@@ -814,7 +814,7 @@ The following code example shows how to use `GetDatabases`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const getDatabases = () => {
   const client = new GlueClient({});
 
@@ -833,7 +833,7 @@ The following code example shows how to use `GetJob`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const getJob = (jobName) => {
   const client = new GlueClient({});
 
@@ -854,7 +854,7 @@ The following code example shows how to use `GetJobRun`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const getJobRun = (jobName, jobRunId) => {
   const client = new GlueClient({});
   const command = new GetJobRunCommand({
@@ -875,7 +875,7 @@ The following code example shows how to use `GetJobRuns`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const getJobRuns = (jobName) => {
   const client = new GlueClient({});
   const command = new GetJobRunsCommand({
@@ -895,7 +895,7 @@ The following code example shows how to use `GetTables`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const getTables = (databaseName) => {
   const client = new GlueClient({});
 
@@ -916,7 +916,7 @@ The following code example shows how to use `ListJobs`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const listJobs = () => {
   const client = new GlueClient({});
 
@@ -935,7 +935,7 @@ The following code example shows how to use `StartCrawler`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const startCrawler = (name) => {
   const client = new GlueClient({});
 
@@ -956,7 +956,7 @@ The following code example shows how to use `StartJobRun`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const startJobRun = (jobName, dbName, tableName, bucketName) => {
   const client = new GlueClient({});
 

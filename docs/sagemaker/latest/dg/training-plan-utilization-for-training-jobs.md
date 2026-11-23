@@ -24,7 +24,7 @@ To achieve this, you can use the `SAGEMAKER_CURRENT_CAPACITY_BLOCK_EXPIRATION_TI
 
 Here's an example of how you can implement this checkpointing logic in your Python training script:
 
-```
+```python
 import os
 import time
 from datetime import datetime, timedelta

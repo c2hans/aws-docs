@@ -10,7 +10,7 @@ The operation creates a private root certificate authority (CA) using custom obj
 
 If successful, this function returns the Amazon Resource Name (ARN) of the CA.
 
-```
+```java
 package com.amazonaws.samples.appstream;
 
 import com.amazonaws.auth.AWSCredentials;

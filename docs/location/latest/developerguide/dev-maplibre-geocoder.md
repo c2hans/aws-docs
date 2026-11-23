@@ -17,7 +17,7 @@ npm install @aws/amazon-location-for-maplibre-gl-geocoder
 
 You can also import HTML and CSS files for usage directly in the browser with a script:
 
-```
+```html
 <script src="https://cdn.jsdelivr.net/npm/@aws/amazon-location-for-maplibre-gl-geocoder@2"></script>
 <link
   href="https://cdn.jsdelivr.net/npm/@aws/amazon-location-for-maplibre-gl-geocoder@2/dist/amazon-location-for-mlg-styles.css"
@@ -30,7 +30,7 @@ You can also import HTML and CSS files for usage directly in the browser with a 
 
 This example uses the [AWS SDK for JavaScript V3](https://github.com/aws/aws-sdk-js-v3) to get a GeoPlacesClient to provide to the library and [AuthHelper](https://github.com/aws-geospatial/amazon-location-utilities-auth-helper-js) for authenticating the GeoPlacesClient. It enables all APIs for the geocoder.
 
-```
+```js
 // Import MapLibre GL JS
 import maplibregl from "maplibre-gl";
 // Import from the AWS JavaScript SDK V3
@@ -77,7 +77,7 @@ Some of these example use the Amazon Location GeoPlacesClient. This client is ba
 
 Include the following in an HTML file:
 
-```
+```html
 <!-- Import the Amazon Location For Maplibre Geocoder -->
 <script src="https://cdn.jsdelivr.net/npm/@aws/amazon-location-for-maplibre-gl-geocoder@2"></script>
 <link
@@ -90,7 +90,7 @@ Include the following in an HTML file:
 
 Include the following in a JavaScript file:
 
-```
+```js
 const apiKey = "<API Key>";
 const mapStyle = "Standard";
 const region = "<Region>"; // region containing Amazon Location API key
@@ -128,13 +128,13 @@ Listed below are the functions used in the Amazon Location MapLibre geocoder plu
 
   Using standalone `GeoPlacesClient` API calls (client is instance of `GeoPlacesClient`):
 
-  ```
+  ```js
   const amazonLocationMaplibreGeocoder = buildAmazonLocationMaplibreGeocoder(client, { enableAll: true });
   ```
 
   Using consolidated `LocationClient` API calls (client is instance of `LocationClient`):
 
-  ```
+  ```js
   const amazonLocationMaplibreGeocoder = buildAmazonLocationMaplibreGeocoder(client, {
     enableAll: true,
     placesIndex: placeIndex,
@@ -144,7 +144,7 @@ Listed below are the functions used in the Amazon Location MapLibre geocoder plu
 
   Returns a ready-to-use IControl object that can be added directly to a map.
 
-  ```
+  ```js
   const geocoder = getPlacesGeocoder();
 
   // Initialize map see: <insert link to initializing a map instance here>

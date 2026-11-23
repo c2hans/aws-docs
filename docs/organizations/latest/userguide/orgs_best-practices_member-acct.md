@@ -49,7 +49,7 @@ You can deny all root actions except a specific root only action that you must p
 
 ****
 
-```
+```json
 {
  "Version":"2012-10-17",
     "Statement": [

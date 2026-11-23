@@ -86,4 +86,6 @@ You can configure Security Lake to receive findings from Security Hub CSPM. To a
 
 The following video, [AWS re:Inforce 2024 - Cyber threat intelligence sharing on AWS](https://www.youtube.com/watch?v=ufNNHBPPjQU), discusses how you can use Security Hub CSPM and Security Lake integrations to share CTI.
 
+[![AWS Videos](https://img.youtube.com/vi/ufNNHBPPjQU/0.jpg)](https://www.youtube.com/watch?v=ufNNHBPPjQU)
+
 [https://www.youtube-nocookie.com/embed/ufNNHBPPjQU?controls=0](https://www.youtube-nocookie.com/embed/ufNNHBPPjQU?controls=0)

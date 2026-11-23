@@ -37,7 +37,7 @@ The following policies allow a principal to discover every `SigningProfile` with
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -65,7 +65,7 @@ The following policies allow a principal to discover every `SigningProfile` with
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -99,7 +99,7 @@ The following policies allow a principal to call `GetSigningProfile` and `StartS
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -133,7 +133,7 @@ The following policies allow a principal to call `GetSigningProfile` and `StartS
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -170,7 +170,7 @@ The following policy allows a principal to call `GetSigningProfile` and `StartSi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -212,7 +212,7 @@ The following policy allows a principal to call `GetSigningProfile` and `StartSi
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

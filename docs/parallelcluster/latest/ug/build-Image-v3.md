@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 **(Optional)** Defines the image properties for the image build.
 
-```
+```yaml
 Image:
   Name: {{string}}
   RootVolume:
@@ -34,7 +34,7 @@ Specifies the name of the AMI. If not specified, the name used when calling the 
 
 (**Optional**) Specifies key-value pairs for the image.
 
-```
+```yaml
 Tags:
   - Key: {{string}}
     Value: {{string}}
@@ -54,7 +54,7 @@ Defines the value of the tag.
 
 (**Optional**) Specifies properties of the root volume for the image.
 
-```
+```yaml
 RootVolume:
   Size: {{integer}}
   Encrypted: {{boolean}}

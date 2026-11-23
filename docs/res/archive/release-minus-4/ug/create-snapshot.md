@@ -30,7 +30,7 @@ There are limited version strings supported by AWS. For more information, see [h
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

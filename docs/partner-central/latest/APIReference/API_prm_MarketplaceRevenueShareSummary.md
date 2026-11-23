@@ -15,54 +15,70 @@ In the following list, the required parameters are described first.
  ** Arn **   <a name="AWSPartnerCentral-Type-prm_MarketplaceRevenueShareSummary-Arn"></a>
 The Amazon Resource Name (ARN) of the marketplace revenue share.
 Type: String
-Required: Yes
-
- ** ProductId **   <a name="AWSPartnerCentral-Type-prm_MarketplaceRevenueShareSummary-ProductId"></a>
-The AWS Marketplace product identifier.
-Type: String
-Length Constraints: Fixed length of 18.
-Pattern: `prod-[a-z0-9]{13}`
+Length Constraints: Minimum length of 1. Maximum length of 1011.
+Pattern: `arn:aws:partnercentral:[a-z0-9-]+:[0-9]{12}:catalog/[a-zA-Z]+/marketplace-revenue-share/mrs-[a-z0-9]{13}`
 Required: Yes
 
  ** Catalog **   <a name="AWSPartnerCentral-Type-prm_MarketplaceRevenueShareSummary-Catalog"></a>
 The catalog that the marketplace revenue share belongs to.
 Type: String
 Valid Values: `AWS | Sandbox`
-Required: No
+Required: Yes
 
  ** CreatedDate **   <a name="AWSPartnerCentral-Type-prm_MarketplaceRevenueShareSummary-CreatedDate"></a>
 The date when the marketplace revenue share was created.
 Type: Timestamp
-Required: No
+Required: Yes
+
+ ** Id **   <a name="AWSPartnerCentral-Type-prm_MarketplaceRevenueShareSummary-Id"></a>
+The unique identifier of the marketplace revenue share, in short ID form (for example, mrs-0a1b2c3d4e5f6).
+Type: String
+Length Constraints: Fixed length of 17.
+Pattern: `mrs-[a-z0-9]{13}`
+Required: Yes
 
  ** LastModifiedDate **   <a name="AWSPartnerCentral-Type-prm_MarketplaceRevenueShareSummary-LastModifiedDate"></a>
 The date when the marketplace revenue share was last modified.
 Type: Timestamp
-Required: No
+Required: Yes
 
  ** LatestRevision **   <a name="AWSPartnerCentral-Type-prm_MarketplaceRevenueShareSummary-LatestRevision"></a>
-The latest revision number of the marketplace revenue share.
-Type: Integer
-Required: No
-
- ** ProductCode **   <a name="AWSPartnerCentral-Type-prm_MarketplaceRevenueShareSummary-ProductCode"></a>
-The AWS Marketplace product code.
+The latest revision of the marketplace revenue share.
 Type: String
-Required: No
+Length Constraints: Minimum length of 1. Maximum length of 19.
+Pattern: `[1-9][0-9]*`
+Required: Yes
 
- ** ProductName **   <a name="AWSPartnerCentral-Type-prm_MarketplaceRevenueShareSummary-ProductName"></a>
-The display name of the AWS Marketplace product.
-Type: String
-Required: No
+ ** Products **   <a name="AWSPartnerCentral-Type-prm_MarketplaceRevenueShareSummary-Products"></a>
+The AWS Marketplace products in the marketplace revenue share, each with per-type AWS account counts. Empty when the marketplace revenue share is closed.
+Type: Array of [MarketplaceRevenueShareProductSummary](API_prm_MarketplaceRevenueShareProductSummary.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 25 items.
+Required: Yes
 
  ** TotalActiveMarketplaceRevenueShareAllocationCount **   <a name="AWSPartnerCentral-Type-prm_MarketplaceRevenueShareSummary-TotalActiveMarketplaceRevenueShareAllocationCount"></a>
 The number of active allocations under this share.
 Type: Integer
-Required: No
+Valid Range: Minimum value of 0.
+Required: Yes
 
  ** TotalMarketplaceRevenueShareAllocationCount **   <a name="AWSPartnerCentral-Type-prm_MarketplaceRevenueShareSummary-TotalMarketplaceRevenueShareAllocationCount"></a>
 The total number of allocations under this share.
 Type: Integer
+Valid Range: Minimum value of 0.
+Required: Yes
+
+ ** EffectiveFrom **   <a name="AWSPartnerCentral-Type-prm_MarketplaceRevenueShareSummary-EffectiveFrom"></a>
+The date from which the marketplace revenue share is effective, derived from the earliest start date among its ACTIVE marketplace revenue share allocations (YYYY-MM-DD). Not returned when the marketplace revenue share has no ACTIVE marketplace revenue share allocations.
+Type: String
+Length Constraints: Fixed length of 10.
+Pattern: `\d{4}-\d{2}-\d{2}`
+Required: No
+
+ ** EffectiveUntil **   <a name="AWSPartnerCentral-Type-prm_MarketplaceRevenueShareSummary-EffectiveUntil"></a>
+The date until which the marketplace revenue share is effective, derived from the latest end date among its ACTIVE marketplace revenue share allocations (YYYY-MM-DD). Not returned when the marketplace revenue share has no ACTIVE marketplace revenue share allocations.
+Type: String
+Length Constraints: Fixed length of 10.
+Pattern: `\d{4}-\d{2}-\d{2}`
 Required: No
 
 ## See Also

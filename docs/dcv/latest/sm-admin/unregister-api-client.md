@@ -39,6 +39,6 @@ sudo -u root dcv-session-manager-broker unregister-api-client --client-id f855b5
 
 **Output**
 
-```
+```json
 Client f855b54b-40d4-4769-b792-b727bEXAMPLE unregistered.
 ```

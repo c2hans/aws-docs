@@ -11,6 +11,13 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
 + [BatchDisassociateScramSecret](clusters-clusterarn-scram-secrets.md#BatchDisassociateScramSecret)
 
   Disassociates a list of SCRAM secrets from a cluster. SCRAM secrets are stored in the Amazon Secrets Manager service, and are used to authenticate clients using sign-in credentials. You can disassociate up to 10 secrets from a cluster at a time.
++ [CreateAssessment](clusters-clusterarn-assessments.md#CreateAssessment)
+
+  Creates an assessment for a cluster and starts an asynchronous, read-only scan. The operation returns as soon as the scan starts; poll `DescribeAssessment` for the result and call `ListAssessmentFindings` once the status is `COMPLETE`.
+
+  A cluster can have only one assessment of a given type in progress at a time. If one is already in progress, this operation returns that assessment rather than creating another. When the cluster has reached its assessment quota, the operation fails; delete a completed or failed assessment to free a slot.
+
+  The scan does not lock the cluster and does not change it.
 + [CreateChannel](clusters-clusterarn-channels.md#CreateChannel)
 
   Creates a channel using the specified properties in the request on the cluster specified by the Amazon Resource Name (ARN) in the request.
@@ -18,7 +25,7 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
 
   Creates a new MSK cluster. The following Python 3.6 examples shows how you can create a cluster that's distributed over two Availability Zones. Before you run this Python script, replace the example subnet and security-group IDs with the IDs of your subnets and security group. When you create an MSK cluster, its brokers get evenly distributed over a number of Availability Zones that's equal to the number of subnets that you specify in the `BrokerNodeGroupInfo` parameter. In this example, you can add a third subnet to get a cluster that's distributed over three Availability Zones.
 
-  ```
+  ```PYTHON
   import boto3
 
   client = boto3.client('kafka')
@@ -63,7 +70,7 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
 
   Now run the following Python 3.6 script in the folder where you saved `config-file.txt`. This script uses the properties specified in `config-file.txt` to create a configuration named `SalesClusterConfiguration`. This configuration can work with Apache Kafka versions 1.1.1 and 2.1.0.
 
-  ```
+  ```PYTHON
   import boto3
 
   client = boto3.client('kafka')
@@ -87,6 +94,11 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
 + [CreateVpcConnection](vpc-connection.md#CreateVpcConnection)
 
   Create remote VPC connection.
++ [DeleteAssessment](clusters-clusterarn-assessments-assessmentarn.md#DeleteAssessment)
+
+  Deletes an assessment and its findings, and frees one slot against the cluster's assessment quota. The assessment moves to `DELETING` and its findings are removed asynchronously.
+
+  An assessment that is still in progress cannot be deleted. Deleting an assessment that is already being deleted succeeds.
 + [DeleteChannel](clusters-clusterarn-channels-channelarn.md#DeleteChannel)
 
   Deletes the channel specified by the channelArn in the request from the cluster specified by the Amazon Resource Name (ARN) in the request.
@@ -105,6 +117,9 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
 + [DeleteVpcConnection](vpc-connection-arn.md#DeleteVpcConnection)
 
   Delete remote VPC connection.
++ [DescribeAssessment](clusters-clusterarn-assessments-assessmentarn.md#DescribeAssessment)
+
+  Returns the status of an assessment and, once the assessment is complete, a summary of its findings by category and severity. The individual findings are returned by `ListAssessmentFindings`.
 + [DescribeChannel](clusters-clusterarn-channels-channelarn.md#DescribeChannel)
 
   Returns details for a channel resource.
@@ -112,7 +127,7 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
 
   Returns a description of the MSK cluster whose Amazon Resource Name (ARN) is specified in the request. The following is a Python 3.6 example of how to use this operation. Before you run this Python script, replace the example cluster Amazon Resource Name (ARN) with the ARN of the cluster you want to describe. If you don't know the ARN of the cluster, you can use the `ListClusters` operation to list all the clusters and see their ARNs and full descriptions.
 
-  ```
+  ```PYTHON
   import boto3
 
   client = boto3.client('kafka')
@@ -144,6 +159,9 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
   Returns all partition information for a topic on a cluster.
 
   This API response reflects data that updates approximately every minute. For the most current topic state after making changes, allow approximately one minute before querying.
++ [DescribeTopicReassignment](clusters-clusterarn-topic-reassignments-topicreassignmentoperationarn.md#DescribeTopicReassignment)
+
+  Returns the progress of a topic reassignment. The partition counters (`migratedPartitions` against `totalPartitions`) advance continuously and are the most responsive signal that a long-running reassignment is making progress; the topic counters (`completedTopics` against `totalTopics`) advance only as whole topics finish.
 + [DescribeVpcConnection](vpc-connection-arn.md#DescribeVpcConnection)
 
   Describes Remote VPC Connection.
@@ -151,7 +169,7 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
 
   A list of brokers that a client can use to bootstrap. This list doesn't necessarily include all of the brokers in the cluster. The following Python 3.6 example shows how you can use the Amazon Resource Name (ARN) of a cluster to get its bootstrap brokers. If you don't know the ARN of your cluster, you can use the `ListClusters` operation to get the ARNs of all the clusters in this account and Region.
 
-  ```
+  ```PYTHON
   import boto3
 
   client = boto3.client('kafka')
@@ -168,6 +186,14 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
 + [GetCompatibleKafkaVersions](compatible-kafka-versions.md#GetCompatibleKafkaVersions)
 
   Returns a list of the Apache Kafka versions to which you can update this cluster.
++ [ListAssessmentFindings](clusters-clusterarn-assessments-assessmentarn-findings.md#ListAssessmentFindings)
+
+  Returns the findings of a completed assessment. Each finding names the affected resource, what is wrong with it, and how to resolve it. Filter by `category`, by `severity`, or by both.
+
+  Findings are available only while the assessment status is `COMPLETE`. An assessment that is still in progress returns a conflict error.
++ [ListAssessments](clusters-clusterarn-assessments.md#ListAssessments)
+
+  Returns the assessments for a cluster, newest first. Filter by `assessmentType` to narrow the list.
 + [ListChannels](clusters-clusterarn-channels.md#ListChannels)
 
   Returns all channels in a cluster.
@@ -193,7 +219,7 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
 
   Returns a list of the broker nodes in the cluster. The following Python 3.6 example first lists one node of a cluster. Because the cluster has more nodes, the response contains a token that the script then uses to list the remaining nodes.
 
-  ```
+  ```PYTHON
   import boto3
 
   client = boto3.client('kafka')
@@ -226,6 +252,9 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
 + [ListTagsForResource](tags-resourcearn.md#ListTagsForResource)
 
   Returns a list of the tags associated with the specified resource.
++ [ListTopicReassignments](clusters-clusterarn-topic-reassignments.md#ListTopicReassignments)
+
+  Returns the topic reassignments for a cluster. Filter by `statusFilter` to return only reassignments in the statuses you name; omit it to return all of them.
 + [ListTopics](clusters-clusterarn-topics.md#ListTopics)
 
   Returns all topics in a cluster.
@@ -245,6 +274,20 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
 + [RejectClientVpcConnection](clusters-clusterarn-client-vpc-connection.md#RejectClientVpcConnection)
 
   Reject client VPC connection.
++ [StartTopicReassignment](clusters-clusterarn-topic-reassignments.md#StartTopicReassignment)
+
+  Starts a topic reassignment on a cluster that is in mixed mode, moving the partitions of the selected topics onto the brokers named by `targetInstanceType`. The operation returns as soon as the reassignment is recorded; poll `DescribeTopicReassignment` for progress.
+
+  The topic selection is resolved once, when you make the call. Topics created afterwards are not included, and topics already on the target brokers are skipped.
+
+  A cluster can have only one active reassignment at a time, and none can start while a cluster-level operation is in progress. To resume after `StopTopicReassignment`, call this operation again with the same selection: the partitions that already moved are skipped.
++ [StopTopicReassignment](clusters-clusterarn-topic-reassignments-topicreassignmentoperationarn-stop.md#StopTopicReassignment)
+
+  Stops an active topic reassignment. The operation returns `STOPPING` immediately and the reassignment reaches `STOPPED` once the partitions that were in flight have reverted.
+
+  Only the in-flight batch is reverted. Partitions that already finished moving stay on the target brokers. To move them back, start a new reassignment whose `targetInstanceType` names the brokers you want them on.
+
+  A reassignment that has already reached a terminal status cannot be stopped.
 + [TagResource](tags-resourcearn.md#TagResource)
 
   Adds tags to the specified MSK resource.
@@ -257,7 +300,7 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
 
   The following Python 3.6 example shows how you can increase the number of brokers in a cluster to 6 brokers. The update operation returns immediately, with a response that includes the Amazon Resource Name (ARN) that Amazon MSK assigns to this cluster operation. You can use that ARN to check the state of the operation. When the state changes from `PENDING` to `UPDATE_COMPLETE`, the operation is complete.
 
-  ```
+  ```PYTHON
   import boto3
   import time
 
@@ -294,6 +337,13 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
 + [UpdateBrokerType](clusters-clusterarn-nodes-type.md#UpdateBrokerType)
 
   For information about this operation, see [Updating the broker type](https://docs.aws.amazon.com/msk/latest/developerguide/msk-update-broker-type.html) in the developer guide.
+
+  This operation also drives each step of an in-place upgrade from Standard brokers to Express brokers. The step you take is determined by the value of `targetInstanceType`:
+  + **Initiate the upgrade.** Send the composite instance type (for example, `kafka.m7g.large-express.m7g.large`) to add Express brokers alongside the cluster's existing Standard brokers. The cluster enters mixed mode, where it runs brokers of both types. Set `topicReassignment` to `AUTO` on this request to have Amazon MSK migrate every topic to the Express brokers, or leave it at `MANUAL` to migrate topics yourself with `StartTopicReassignment`.
+  + **Complete the upgrade.** Send the Express instance type (for example, `express.m7g.large`) to decommission the Standard brokers. Every topic must already be on the Express brokers, and `topicReassignment` must be `MANUAL` or omitted.
+  + **Roll back.** Send the Standard instance type (for example, `kafka.m7g.large`) to decommission the Express brokers and return the cluster to Standard. Every topic must already be back on the Standard brokers, and `topicReassignment` must be `MANUAL` or omitted.
+
+  Rolling back is available only while the cluster is in mixed mode. After you complete the upgrade, the Standard brokers are permanently removed.
 + [UpdateChannel](clusters-clusterarn-channels-channelarn.md#UpdateChannel)
 
   Updates the channel specified by the channelArn in the request from the cluster specified by the Amazon Resource Name (ARN) in the request.
@@ -313,7 +363,7 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following op
 
   Updates the monitoring settings for the cluster. You can use this operation to specify which Apache Kafka metrics you want Amazon MSK to send to Amazon CloudWatch. You can also specify settings for open monitoring with Prometheus. The following Python 3.6 example enables open monitoring with the Node Exporter. It also sets enhanced monitoring to `PER_BROKER`. For more information about monitoring, see [Monitoring](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html).
 
-  ```
+  ```PYTHON
   import boto3
   import time
 

@@ -21,7 +21,7 @@ If you don't already have the `s3:GetObject` permission for the S3 bucket locati
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -43,7 +43,7 @@ Various IAM identities require special permissions to work with trusted IP lists
 
 To grant various identities full access to working with trusted IP lists and threat lists (in addition to renaming and deactivating, this includes adding, activating, deleting, and updating the location or name of the lists), make sure that the following actions are present in the permissions policy attached to a user, group, or role:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -64,7 +64,7 @@ GuardDuty supports SSE-AES256 and SSE-KMS encryption for your lists. SSE-C is no
 
 Regardless of whether you use entity lists or IP lists, if you use SSE-KMS, then add the following statement to your AWS KMS key policy. Replace {{123456789012}} with your own account ID.
 
-```
+```json
 {
     "Sid": "AllowGuardDutyServiceRole",
     "Effect": "Allow",

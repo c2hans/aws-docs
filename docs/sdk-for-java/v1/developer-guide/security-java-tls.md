@@ -13,13 +13,13 @@ The following information applies only to Java SSL implementation (the default S
 
 Consult your Java virtual machine (JVM) provider's documentation to determine which TLS versions are supported on your platform. For some JVMs, the following code will print which SSL versions are supported.
 
-```
+```java
 System.out.println(Arrays.toString(SSLContext.getDefault().getSupportedSSLParameters().getProtocols()));
 ```
 
 To see the SSL handshake in action and what version of TLS is used, you can use the system property **javax.net.debug**.
 
-```
+```java
 java app.jar -Djavax.net.debug=ssl
 ```
 
@@ -32,7 +32,7 @@ TLS 1.3 is incompatible with SDK for Java versions 1.9.5 to 1.10.31. For more in
 
 The SDK always prefers the latest TLS version supported by the platform and service. If you wish to enforce a specific minimum TLS version, consult your JVM's documentation. For OpenJDK-based JVMs, you can use the system property `jdk.tls.client.protocols`.
 
-```
+```java
 java app.jar -Djdk.tls.client.protocols=PROTOCOLS
 ```
 

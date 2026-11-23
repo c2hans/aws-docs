@@ -16,7 +16,7 @@ This policy provides all the permissions necessary for a management account to o
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -81,7 +81,7 @@ This policy provides the permissions necessary for a member account to have full
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

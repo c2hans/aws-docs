@@ -27,7 +27,7 @@ Like verification messages, these messages contain additional metadata to descri
 
 In the following example, the **changemask** value of 47 is equal to the sum of Masters (1), TTL (2), Title (4), Description (8), and Burn on read (32).
 
-```
+```json
 {
   "control": {
     "bor": 0,

@@ -31,7 +31,7 @@ A `SUPER` expression or column.
 
 To check the type of JSON for the array `[1,2]` using the JSON\_TYPEOF function, use the following example.
 
-```
+```sql
 SELECT JSON_TYPEOF(ARRAY(1,2));
 
 +-------------+
@@ -43,7 +43,7 @@ SELECT JSON_TYPEOF(ARRAY(1,2));
 
 To check the type of JSON for the object `{"name":"Joe"}` using the JSON\_TYPEOF function, use the following example.
 
-```
+```sql
 SELECT JSON_TYPEOF(JSON_PARSE('{"name":"Joe"}'));
 
 +-------------+

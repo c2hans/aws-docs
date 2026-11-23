@@ -44,7 +44,7 @@ The CDK Toolkit Library is particularly valuable when you need to:
 
 The following example shows how to create and deploy a simple S3 bucket using the CDK Toolkit Library:
 
-```
+```typescript
 // Import required packages
 import { Toolkit } from '@aws-cdk/toolkit-lib';
 import { App, Stack } from 'aws-cdk-lib';

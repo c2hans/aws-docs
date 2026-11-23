@@ -31,7 +31,7 @@ To configure a Zoho CRM connection:
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

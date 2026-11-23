@@ -8,7 +8,7 @@ When a snapshot gets created and shared with a GuardDuty service account, a new 
 
 The following example is a snippet from a CloudTrail event that shows the request body for the `ModifySnapshotAttribute` request:
 
-```
+```json
 "requestParameters": {
         "snapshotId": "snap-1234567890abcdef0",
         "createVolumePermission": {

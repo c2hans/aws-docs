@@ -34,7 +34,7 @@ You can assign a variable type in the Amazon Fraud Detector console, using the A
 
 The following example uses the [UpdateList](https://docs.aws.amazon.com/frauddetector/latest/api/API_UpdateList.html) API operation to assign a variable type to `allow_ip_address` list.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

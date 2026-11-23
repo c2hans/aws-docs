@@ -31,14 +31,14 @@ The version numbers of these packages will differ depending on the version of th
 
 In general, you can use the following imports for code development:
 
-```
+```java
 import com.amazonaws.services.simpleworkflow.AmazonSimpleWorkflowClientBuilder;
 import com.amazonaws.services.simpleworkflow.model.*;
 ```
 
 It’s a good practice to import only the classes you require, however. You will likely end up specifying particular classes in the `com.amazonaws.services.simpleworkflow.model` workspace:
 
-```
+```java
 import com.amazonaws.services.simpleworkflow.model.PollForActivityTaskRequest;
 import com.amazonaws.services.simpleworkflow.model.RespondActivityTaskCompletedRequest;
 import com.amazonaws.services.simpleworkflow.model.RespondActivityTaskFailedRequest;
@@ -47,7 +47,7 @@ import com.amazonaws.services.simpleworkflow.model.TaskList;
 
 If you are using the AWS Flow Framework for Java, you will import classes from the `com.amazonaws.services.simpleworkflow.flow` workspace. For example:
 
-```
+```java
 import com.amazonaws.services.simpleworkflow.AmazonSimpleWorkflow;
 import com.amazonaws.services.simpleworkflow.flow.ActivityWorker;
 ```
@@ -60,6 +60,6 @@ The AWS Flow Framework for Java has additional requirements beyond those of the 
 
 Your basic interface to Amazon SWF is through either the [AmazonSimpleWorkflowClient](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflowClient.html) or [AmazonSimpleWorkflowAsyncClient](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflowAsyncClient.html) classes. The main difference between these is that the `\*AsyncClient` class return [Future](https://docs.oracle.com/javase/8/docs/api/index.html?java/util/concurrent/Future.html) objects for concurrent (asynchronous) programming.
 
-```
+```java
 AmazonSimpleWorkflowClient swf = AmazonSimpleWorkflowClientBuilder.defaultClient();
 ```

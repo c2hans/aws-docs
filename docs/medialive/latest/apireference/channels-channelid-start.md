@@ -46,7 +46,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### Channel schema
 <a name="channels-channelid-start-response-body-channel-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "cdiInputSpecification": {
@@ -1631,7 +1631,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### InvalidRequest schema
 <a name="channels-channelid-start-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -1640,7 +1640,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### AccessDenied schema
 <a name="channels-channelid-start-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -1649,7 +1649,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### ResourceNotFound schema
 <a name="channels-channelid-start-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -1658,7 +1658,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### ResourceConflict schema
 <a name="channels-channelid-start-response-body-resourceconflict-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -1667,7 +1667,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### LimitExceeded schema
 <a name="channels-channelid-start-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -1676,7 +1676,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### InternalServiceError schema
 <a name="channels-channelid-start-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -1685,7 +1685,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### BadGatewayException schema
 <a name="channels-channelid-start-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -1694,7 +1694,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### GatewayTimeoutException schema
 <a name="channels-channelid-start-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

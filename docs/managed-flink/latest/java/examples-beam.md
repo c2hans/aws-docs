@@ -40,7 +40,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Create a file named `ping.py` with the following contents:
 
-   ```
+   ```python
    import json
    import boto3
    import random
@@ -58,7 +58,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Run the `ping.py` script:
 
-   ```
+   ```bash
    $ python ping.py
    ```
 
@@ -197,7 +197,7 @@ Edit the IAM policy to add permissions to access the Kinesis data streams.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

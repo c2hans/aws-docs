@@ -31,7 +31,7 @@ When you create an Amazon Q Developer in chat applications configuration, it cre
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

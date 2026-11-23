@@ -10,13 +10,13 @@ The AWS SDK for JavaScript is instrumented with a built-in logger so you can log
 
 To turn on the logger and print log entries in the console, add the following statement to your code.
 
-```
+```javascript
 AWS.config.logger = console;
 ```
 
 Here is an example of the log output.
 
-```
+```json
 [AWS s3 200 0.185s 0 retries] createMultipartUpload({ Bucket: 'amzn-s3-demo-logging-bucket', Key: 'issues_1704' })
 ```
 
@@ -29,7 +29,7 @@ One such logger you can use in either browser scripts or in Node.js is logplease
 
 When using a third-party logger, set all options before assigning the logger to `AWS.Config.logger`. For example, the following specifies an external log file and sets the log level for logplease
 
-```
+```javascript
 // Require AWS Node.js SDK
 const AWS = require('aws-sdk')
 // Require logplease

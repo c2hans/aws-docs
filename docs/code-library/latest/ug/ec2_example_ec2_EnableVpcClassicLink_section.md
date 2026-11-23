@@ -34,7 +34,7 @@ Output:
 **Tools for PowerShell V4**
 **Example 1: This example enables VPC vpc-0123456b789b0d12f for ClassicLink**
 
-```
+```powershell
 Enable-EC2VpcClassicLink -VpcId vpc-0123456b789b0d12f
 ```
 **Output:**
@@ -47,7 +47,7 @@ True
 **Tools for PowerShell V5**
 **Example 1: This example enables VPC vpc-0123456b789b0d12f for ClassicLink**
 
-```
+```powershell
 Enable-EC2VpcClassicLink -VpcId vpc-0123456b789b0d12f
 ```
 **Output:**

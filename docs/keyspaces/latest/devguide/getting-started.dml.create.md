@@ -29,14 +29,14 @@ To create data in your `book_awards` table, use the `INSERT` statement to add a 
 
 1. To insert a single record, run the following command in the CQL editor.
 
-   ```
+   ```sql
    INSERT INTO catalog.book_awards (award, year, category, rank, author, book_title, publisher)
    VALUES ('Wolf', 2023, 'Fiction',3,'Shirley Rodriguez','Mountain', 'AnyPublisher') ;
    ```
 
 1. Verify that the data was correctly added to your table by running the following command.
 
-   ```
+   ```sql
    SELECT * FROM catalog.book_awards;
    ```
 
@@ -77,7 +77,7 @@ To create data in your `book_awards` table, use the `INSERT` statement to add a 
 
 1. At the keyspace prompt (`cqlsh:catalog>`), run the following statement.
 
-   ```
+   ```sql
    COPY book_awards (award, year, category, rank, author, book_title, publisher) FROM '/home/cloudshell-user/keyspaces_sample_table.csv' WITH header=TRUE ;
    ```
 
@@ -99,7 +99,7 @@ To create data in your `book_awards` table, use the `INSERT` statement to add a 
 
 1. Verify that the data was correctly added to your table by running the following query.
 
-   ```
+   ```sql
    SELECT * FROM book_awards ;
    ```
 

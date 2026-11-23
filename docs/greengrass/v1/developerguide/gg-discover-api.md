@@ -16,7 +16,7 @@ Client devices can also use the AWS IoT Device SDKs to discover connectivity inf
 
 To use this API, send HTTP requests to the Discovery API endpoint. For example:
 
-```
+```https
 https://greengrass-ats.iot.{{region}}.amazonaws.com:{{port}}/greengrass/discover/thing/{{thing-name}}
 ```
 
@@ -31,13 +31,13 @@ The port number depends on whether the core is configured to send HTTPS traffic 
 
 Port 8443
 
-```
+```https
 HTTP GET https://greengrass-ats.iot.{{region}}.amazonaws.com:8443/greengrass/discover/thing/{{thing-name}}
 ```
 
 Port 443
 
-```
+```https
 HTTP GET https://greengrass-ats.iot.{{region}}.amazonaws.com:443/greengrass/discover/thing/{{thing-name}}
 ```
 Clients that connect on port 443 must implement the [ Application Layer Protocol Negotiation (ALPN)](https://tools.ietf.org/html/rfc7301) TLS extension and pass `x-amzn-http-ca` as the `ProtocolName` in the `ProtocolNameList`. For more information, see [Protocols](https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html) in the *AWS IoT Developer Guide*.
@@ -48,7 +48,7 @@ These examples use the Amazon Trust Services (ATS) endpoint, which is used with 
 
 Upon success, the response includes the standard HTTP headers plus the following code and body:
 
-```
+```http
 HTTP 200
 BODY: response document
 ```
@@ -65,7 +65,7 @@ Retrieving the connectivity information requires a policy that allows the caller
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -83,7 +83,7 @@ Retrieving the connectivity information requires a policy that allows the caller
 
 The following document shows the response for a client device that is a member of a group with one Greengrass core, one endpoint, and one group CA certificate:
 
-```
+```json
 {
   "GGGroups": [
     {
@@ -111,7 +111,7 @@ The following document shows the response for a client device that is a member o
 
 The following document shows the response for a client device that is a member of two groups with one Greengrass core, multiple endpoints, and multiple group CA certificates:
 
-```
+```json
 {
   "GGGroups": [
     {
@@ -170,7 +170,7 @@ A Greengrass group must define exactly one Greengrass core. Any response from th
 
 If you have `cURL` installed, you can test the discovery request. For example:
 
-```
+```bash
 $ curl --cert 1a23bc4d56.cert.pem --key 1a23bc4d56.private.key https://greengrass-ats.iot.us-west-2.amazonaws.com:8443/greengrass/discover/thing/MyDevice
 {"GGGroups":[{"GGGroupId":"1234a5b6-78cd-901e-2fgh-3i45j6k1789","Cores":[{"thingArn":"arn:aws:iot:us-west-2:1234567
 89012:thing/MyFirstGroup_Core","Connectivity":[{"Id":"AUTOIP_192.168.1.4_1","HostAddress":"192.168.1.5","PortNumber

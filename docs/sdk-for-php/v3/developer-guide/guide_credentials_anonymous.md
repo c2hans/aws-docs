@@ -10,7 +10,7 @@ For example, you can configure both Amazon S3 objects and Amazon CloudSearch dom
 
 To create an anonymous client, you set the `'credentials'` option to `false`.
 
-```
+```php
 $s3Client = new S3Client([
     'version'     => 'latest',
     'region'      => 'us-west-2',

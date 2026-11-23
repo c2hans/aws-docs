@@ -28,7 +28,7 @@ The following code example shows how to use `Get-CWAlarm`.
 **Tools for PowerShell V4**
 **Example 1: Returns all the alarms including Composite and Metric Alarms from CloudWatch.**
 
-```
+```powershell
 Get-CWAlarm -MaxRecords 1
 ```
 **Output:**
@@ -42,7 +42,7 @@ CompositeAlarms MetricAlarms         NextToken
 ```
 **Example 2: Returns only the composite alarms data from CloudWatch after setting -AlarmType parameter to CompositeAlarms.**
 
-```
+```powershell
 Get-CWAlarm -AlarmType 'CompositeAlarms'
 ```
 **Output:**
@@ -64,7 +64,7 @@ The following code example shows how to use `Get-CWDashboard`.
 **Tools for PowerShell V4**
 **Example 1: Returns the arn the body of the specified dashboard.**
 
-```
+```powershell
 Get-CWDashboard -DashboardName Dashboard1
 ```
 **Output:**
@@ -84,7 +84,7 @@ The following code example shows how to use `Get-CWDashboardList`.
 **Tools for PowerShell V4**
 **Example 1: Returns the collection of dashboards for your account.**
 
-```
+```powershell
 Get-CWDashboardList
 ```
 **Output:**
@@ -96,7 +96,7 @@ arn:...      Dashboard1    7/6/2017 8:14:15 PM 252
 ```
 **Example 2: Returns the collection of dashboards for your account whose names start with the prefix 'dev'.**
 
-```
+```powershell
 Get-CWDashboardList -DashboardNamePrefix dev
 ```
 +  For API details, see [ListDashboards](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -109,7 +109,7 @@ The following code example shows how to use `Remove-CWDashboard`.
 **Tools for PowerShell V4**
 **Example 1: Deletes the specified dashboard, promoting for confirmation before proceeding. To bypass confirmation add the -Force switch to the command.**
 
-```
+```powershell
 Remove-CWDashboard -DashboardName Dashboard1
 ```
 +  For API details, see [DeleteDashboards](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -122,7 +122,7 @@ The following code example shows how to use `Write-CWDashboard`.
 **Tools for PowerShell V4**
 **Example 1: Creates or updates the dashboard named 'Dashboard1' to include two metric widgets side by side.**
 
-```
+```powershell
 $dashBody = @"
 {
     "widgets":[
@@ -176,7 +176,7 @@ Write-CWDashboard -DashboardName Dashboard1 -DashboardBody $dashBody
 ```
 **Example 2: Creates or updates the dashboard, piping the content describing the dashboard into the cmdlet.**
 
-```
+```powershell
 $dashBody = @"
 {
 ...
@@ -195,7 +195,7 @@ The following code example shows how to use `Write-CWMetricData`.
 **Tools for PowerShell V4**
 **Example 1: Creates a new MetricDatum object, and writes it to Amazon Web Services CloudWatch Metrics.**
 
-```
+```powershell
 ### Create a MetricDatum .NET object
 $Metric = New-Object -TypeName Amazon.CloudWatch.Model.MetricDatum
 $Metric.Timestamp = [DateTime]::UtcNow

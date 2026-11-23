@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/create-vpc-endoin
 
  The following example policy specifies that principals in the account 123456789012 can call the `GetAuthorizationToken` API and fetch packages from a CodeArtifact repository.
 
-```
+```json
 {
   "Statement": [
     {

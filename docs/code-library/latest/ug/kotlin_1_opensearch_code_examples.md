@@ -26,7 +26,7 @@ The following code example shows how to use `CreateDomain`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/opensearch#code-examples).
 
-```
+```kotlin
 suspend fun createNewDomain(domainNameVal: String?) {
     val clusterConfigOb =
         ClusterConfig {
@@ -76,7 +76,7 @@ The following code example shows how to use `DeleteDomain`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/opensearch#code-examples).
 
-```
+```kotlin
 suspend fun deleteSpecificDomain(domainNameVal: String) {
     val request =
         DeleteDomainRequest {
@@ -98,7 +98,7 @@ The following code example shows how to use `ListDomainNames`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/opensearch#code-examples).
 
-```
+```kotlin
 suspend fun listAllDomains() {
     OpenSearchClient.fromEnvironment { region = "us-east-1" }.use { searchClient ->
         val response: ListDomainNamesResponse = searchClient.listDomainNames(ListDomainNamesRequest {})
@@ -118,7 +118,7 @@ The following code example shows how to use `UpdateDomainConfig`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/opensearch#code-examples).
 
-```
+```kotlin
 suspend fun updateSpecificDomain(domainNameVal: String?) {
     val clusterConfigOb =
         ClusterConfig {

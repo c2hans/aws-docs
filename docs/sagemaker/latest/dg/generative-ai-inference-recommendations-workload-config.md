@@ -17,7 +17,7 @@ Use inline parameters to specify token distributions when you don't have a repre
 
 **Python (boto3)**
 
-```
+```python
 import boto3
 import json
 
@@ -56,7 +56,7 @@ aws sagemaker create-ai-workload-config \
 
 If you have a representative dataset of real requests, provide it through Amazon S3 using the `DatasetConfig` parameter with an `InputDataConfig` channel.
 
-```
+```python
 response = client.create_ai_workload_config(
     AIWorkloadConfigName="my-dataset-workload",
     DatasetConfig={
@@ -84,7 +84,7 @@ By default, synthetic prompts are generated. You can also use a public dataset o
 
 When creating a workload configuration for benchmarking an existing endpoint, you can specify additional parameters such as the tokenizer, concurrency, request count, and request rate.
 
-```
+```python
 workload_spec = {
     "benchmark": {"type": "aiperf"},
     "parameters": {
@@ -108,7 +108,7 @@ workload_spec = {
 
 Use the following operations to manage your workload configurations.
 
-```
+```python
 # List workload configurations
 response = client.list_ai_workload_configs(MaxResults=10)
 for config in response["AIWorkloadConfigs"]:
@@ -135,7 +135,7 @@ This section provides the complete schema for the workload specification JSON do
 
 The following is a representative example of a workload specification with commonly used parameters. All parameters are documented in the reference table below.
 
-```
+```json
 {
     "benchmark": {
         "type": "aiperf"
@@ -365,7 +365,7 @@ Optional mapping. Use this section to pass sensitive values (such as Hugging Fac
 
 Each key is a parameter name, and the value is the ARN of the secret in AWS Secrets Manager. At job start time, the service resolves the secret and injects the value into the benchmark environment.
 
-```
+```json
 "secrets": {
     "hf_token": "arn:aws:secretsmanager:us-west-2:111122223333:secret:my-hf-token-AbCdEf"
 }

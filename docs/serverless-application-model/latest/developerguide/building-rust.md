@@ -41,7 +41,7 @@ To learn more about custom runtimes, see [Custom AWS Lambda runtimes](https://do
 
 Here is an example of a configured AWS SAM template:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...
@@ -154,7 +154,7 @@ hello-rust
 
 In our AWS SAM template, our Rust function is defined as the following:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...
@@ -311,7 +311,7 @@ Hello World!%
 
 To test our function locally, first we ensure our function’s `Architectures` property matches our local machine.
 
-```
+```yaml
 ...
 Resources:
   HelloWorldFunction:
@@ -361,7 +361,7 @@ Project directory structure:
 
 AWS SAM template:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...
@@ -433,7 +433,7 @@ tokio = { workspace = true }
 
 AWS SAM template. The `CodeUri` of each function points to that function's package directory:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...
@@ -463,7 +463,7 @@ Give each function package a unique binary name. Package names are unique within
 
 Alternatively, a single package can define multiple binaries. In that case, use the `Binary` build property to select the binary for each function:
 
-```
+```yaml
 Resources:
   FunctionA:
     Type: AWS::Serverless::Function

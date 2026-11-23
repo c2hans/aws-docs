@@ -10,6 +10,8 @@ To simplify this, there is an option to host your entire EKS cluster on Outposts
 
 ![Amazon EKS local cluster on Outposts](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-52-eks-local-cluster-outposts.png)
 
+*Amazon EKS local cluster on Outposts*
+
 ## Amazon EKS Local Cluster on Outposts considerations
 <a name="eks-local-cluster-considerations"></a>
 

@@ -21,7 +21,7 @@ The following policy example grants all AWS KMS permissions.
 
 ****
 
-```
+```json
 {
   "Id": "key-policy-example",
   "Version":"2012-10-17",

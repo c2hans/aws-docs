@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hu
 
 You can delete a private hub from your admin account. Before deleting a private hub, you must first remove any content in that hub. Delete hub contents and hubs with the following commands:
 
-```
+```Python
 # List the model references in the private hub
 response = hub.list_models()
 models = response["hub_content_summaries"]

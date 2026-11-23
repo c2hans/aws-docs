@@ -29,7 +29,7 @@ The following code example shows how to use `GetQueryResults`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatchLogs/LargeQuery#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Gets the results of a CloudWatch Logs Insights query.
     /// </summary>
@@ -69,7 +69,7 @@ The following code example shows how to use `StartQuery`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatchLogs/LargeQuery#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Starts a CloudWatch Logs Insights query.
     /// </summary>
@@ -131,7 +131,7 @@ The following code example shows how to use CloudWatch Logs to query more than 1
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatchLogs/LargeQuery#code-examples).
 This is the main workflow that demonstrates the large query scenario.
 
-```
+```csharp
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using Amazon.CloudFormation;

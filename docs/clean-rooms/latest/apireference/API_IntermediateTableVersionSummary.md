@@ -19,7 +19,7 @@ Required: Yes
  ** analysisType **   <a name="API-Type-IntermediateTableVersionSummary-analysisType"></a>
 The type of analysis that created this version.
 Type: String
-Valid Values: `QUERY`
+Valid Values: `QUERY | JOB`
 Required: Yes
 
  ** createTime **   <a name="API-Type-IntermediateTableVersionSummary-createTime"></a>

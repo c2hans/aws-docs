@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 
 ![Diagram showing Managing AWS Outposts capacity with Amazon CloudWatch and AWS Lambda](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/managing-outposts-capacity.png)
 
+*Managing AWS Outposts capacity with Amazon CloudWatch and AWS Lambda*
+
 Capacity Reservations can be used in a multi-account environment to control how much of your Outpost compute capacity is used by a single account, or an AWS Organization unit (OU) containing multiple accounts. You can create a capacity reservation for Amazon EC2 on Outposts, as well as supported Outposts AWS services such as Amazon Elastic Kubernetes Service (EKS, Amazon Elastic Container Service (ECS), and Amazon Elastic Map Reduce (EMR). Capacity reservations are created and shared to accounts through AWS Resource Access Manager (AWS RAM) in the Outpost owner account. The [Creating computing quotas on AWS Outposts rack with EC2 Capacity Reservations sharing](https://aws.amazon.com/blogs/compute/creating-computing-quotas-on-aws-outposts-rack-with-ec2-capacity-reservation-sharing/) provides a hands-on tutorial and additional guidance for implementing capacity reservations with your Outpost for the purpose of capacity management.
 
 ![Diagram showing Capacity Reservation sharing process steps 1-4](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-36-capacity-reservation-sharing-process-steps-1-4.png)

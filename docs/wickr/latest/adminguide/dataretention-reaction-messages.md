@@ -8,7 +8,7 @@ This guide documents the new AWS Wickr administration console, released on March
 
 When a user adds or removes an emoji reaction on a message, Wickr generates a reaction edit message. The **reactAdded** field indicates whether the reaction was added (true) or removed (false).
 
-```
+```json
 {
   "edit": {
     "originalmessageid": "73117f005f6811f19b07b1408476c2f4",

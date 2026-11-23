@@ -40,7 +40,7 @@ The URL of the Amazon EVS custom add-on depot includes the access token. If you 
 
 1. Run the `get-depot-url` command for your environment.
 
-   ```
+   ```bash
    aws evs get-depot-url --environment-id env-abcde12345
    ```
 
@@ -48,7 +48,7 @@ The URL of the Amazon EVS custom add-on depot includes the access token. If you 
 
    The following is example output.
 
-   ```
+   ```json
    {
        "depotUrl": "https://example.cloudfront.net/EXAMPLE-TOKEN/depot/vmw-depot-index.xml",
        "token": "EXAMPLE-TOKEN"
@@ -77,7 +77,7 @@ You have added the Amazon EVS custom add-on depot when the add-on is available i
 
 1. Run the `get-depot-url` command with the `--rotate` flag.
 
-   ```
+   ```bash
    aws evs get-depot-url --environment-id env-abcde12345 --rotate
    ```
 
@@ -91,7 +91,7 @@ After you rotate the token, the old URLs of the Amazon EVS custom add-on depot s
 
 To get the depot URL, your IAM identity needs permission to call the `evs:GetDepotUrl` action on the environment. The following example policy allows the action on one environment. Replace `<region-code>` with the Region where you created the environment.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

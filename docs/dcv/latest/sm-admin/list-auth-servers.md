@@ -37,6 +37,6 @@ sudo -u root dcv-session-manager-broker list-auth-servers
 
 **Output**
 
-```
+```json
 Urls: [ "https://my-auth-server.com/.well-known/jwks.json" ]
 ```

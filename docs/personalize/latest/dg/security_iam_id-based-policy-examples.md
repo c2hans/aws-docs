@@ -66,7 +66,7 @@ You don't need to allow minimum console permissions for users that are making ca
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -111,7 +111,7 @@ The following example gives an IAM user in your AWS account full access to all A
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -138,7 +138,7 @@ In this example, you grant an IAM user in your AWS account read-only access to y
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

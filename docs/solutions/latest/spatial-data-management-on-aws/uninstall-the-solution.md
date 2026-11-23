@@ -14,7 +14,7 @@ This section describes how to completely remove the Spatial Data Management Appl
 
 Before running any commands, configure your AWS CLI with the appropriate region and profile:
 
-```
+```bash
 # Set your AWS Region (replace with your deployment region)
 export AWS_REGION=<your-region>
 
@@ -44,7 +44,7 @@ Before uninstalling, backup any data you want to keep:
 #### 1. Export DynamoDB Tables
 <a name="export-dynamodb-tables"></a>
 
-```
+```bash
 # Create on-demand backups (replace <resource-prefix> with your resource naming prefix)
 for table in $(aws dynamodb list-tables --query 'TableNames[?contains(@, `<resource-prefix>`)]' --output text); do
   aws dynamodb create-backup \
@@ -56,7 +56,7 @@ done
 #### 2. Download S3 Assets
 <a name="download-s3-assets"></a>
 
-```
+```bash
 # Get asset bucket name (replace <stack-name> with your CloudFormation stack name)
 ASSET_BUCKET=$(aws cloudformation describe-stacks \
   --stack-name <stack-name> \
@@ -70,7 +70,7 @@ aws s3 sync s3://$ASSET_BUCKET ./backup/assets/
 #### 3. Export CloudWatch Logs
 <a name="export-cloudwatch-logs"></a>
 
-```
+```bash
 # Export logs to S3 for archival (replace <log-group-name> and <backup-bucket> with your values)
 aws logs create-export-task \
   --log-group-name <log-group-name> \
@@ -113,7 +113,7 @@ Expected time: 10-15 minutes
 
  **Step 1: Delete the Stack**
 
-```
+```bash
 # Replace <stack-name> with your CloudFormation stack name
 aws cloudformation delete-stack \
   --stack-name <stack-name>
@@ -121,7 +121,7 @@ aws cloudformation delete-stack \
 
  **Step 2: Monitor Deletion Progress**
 
-```
+```bash
 # Replace <stack-name> with your CloudFormation stack name
 aws cloudformation describe-stack-events \
   --stack-name <stack-name> \
@@ -131,7 +131,7 @@ aws cloudformation describe-stack-events \
 
  **Step 3: Wait for Completion**
 
-```
+```bash
 # Replace <stack-name> with your CloudFormation stack name
 aws cloudformation wait stack-delete-complete \
   --stack-name <stack-name>
@@ -147,7 +147,7 @@ If stack deletion fails due to resource dependencies:
 #### Step 1: Identify Stuck Resources
 <a name="step-1-identify-stuck-resources"></a>
 
-```
+```bash
 # Replace <stack-name> with your CloudFormation stack name
 aws cloudformation describe-stack-events \
   --stack-name <stack-name> \
@@ -162,7 +162,7 @@ Common stuck resources and solutions:
 
  **Lambda ENIs (Elastic Network Interfaces):**
 
-```
+```bash
 # List ENIs (replace <resource-prefix> with your resource naming prefix)
 aws ec2 describe-network-interfaces \
   --filters "Name=description,Values=*<resource-prefix>*" \
@@ -173,7 +173,7 @@ aws ec2 describe-network-interfaces \
 
  **S3 Buckets with Objects:**
 
-```
+```bash
 # Empty bucket before deletion (replace <bucket-name> with your bucket name)
 aws s3 rm s3://<bucket-name> --recursive
 
@@ -183,7 +183,7 @@ aws s3 rb s3://<bucket-name>
 
  **VPC Endpoints:**
 
-```
+```bash
 # Delete VPC endpoints (replace <vpc-endpoint-id> with your VPC endpoint ID)
 aws ec2 delete-vpc-endpoints \
   --vpc-endpoint-ids <vpc-endpoint-id>
@@ -192,7 +192,7 @@ aws ec2 delete-vpc-endpoints \
 #### Step 3: Retry Stack Deletion
 <a name="step-3-retry-stack-deletion"></a>
 
-```
+```bash
 # Replace <stack-name> with your CloudFormation stack name
 aws cloudformation delete-stack \
   --stack-name <stack-name>
@@ -212,7 +212,7 @@ The commands in this section use grep patterns and queries to filter resources b
 **Warning**
 This permanently deletes all stored assets and logs.
 
-```
+```bash
 # List retained buckets
 aws s3 ls | grep spatial-data-management
 
@@ -227,7 +227,7 @@ done
 ### 2. Delete CloudWatch Log Groups
 <a name="delete-cloudwatch-log-groups"></a>
 
-```
+```bash
 # List log groups (replace <log-group-prefix> with your log group prefix)
 aws logs describe-log-groups \
   --log-group-name-prefix <log-group-prefix> \
@@ -244,7 +244,7 @@ done
 
 KMS keys enter a pending deletion state (7-30 days) and cannot be immediately deleted.
 
-```
+```bash
 # List KMS keys
 aws kms list-aliases \
   --query 'Aliases[?contains(AliasName, `spatial-data-management`)]'
@@ -258,7 +258,7 @@ aws kms schedule-key-deletion \
 ### 4. Delete Secrets Manager Secrets
 <a name="delete-secrets-manager-secrets"></a>
 
-```
+```bash
 # List secrets (replace <resource-prefix> with your resource naming prefix)
 aws secretsmanager list-secrets \
   --query 'SecretList[?contains(Name, `<resource-prefix>`)]'
@@ -274,7 +274,7 @@ aws secretsmanager delete-secret \
 
 If not automatically deleted:
 
-```
+```bash
 # Get user pool ID (replace <user-pool-name> with your user pool name)
 USER_POOL_ID=$(aws cognito-idp list-user-pools \
   --max-results 60 \
@@ -292,7 +292,7 @@ aws cognito-idp delete-user-pool \
 ### Verify Stack Deletion
 <a name="verify-stack-deletion"></a>
 
-```
+```bash
 # Check stack status (should return error if deleted, replace <stack-name> with your stack name)
 aws cloudformation describe-stacks \
   --stack-name <stack-name>
@@ -303,7 +303,7 @@ Expected: `Stack with id <stack-name> does not exist`
 ### Verify Resource Cleanup
 <a name="verify-resource-cleanup"></a>
 
-```
+```bash
 # Check for remaining Lambda functions (replace <resource-prefix> with your resource naming prefix)
 aws lambda list-functions \
   --query 'Functions[?contains(FunctionName, `<resource-prefix>`)]'

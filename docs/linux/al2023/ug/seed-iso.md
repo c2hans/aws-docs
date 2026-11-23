@@ -34,7 +34,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/seed-iso.html
 
    1.  Open the `meta-data` file using your preferred editor and add the following, replacing {{vm-hostname}} with the host name for the VM:
 
-      ```
+      ```yaml
       #cloud-config
       local-hostname: {{vm-hostname}}
       ```
@@ -47,7 +47,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/seed-iso.html
 
    1.  Open the `user-data` file using your preferred editor and add the following, making substitutions as needed:
 
-      ```
+      ```yaml
       #cloud-config
       #vim:syntax=yaml
       users:
@@ -71,7 +71,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/seed-iso.html
 
    1.  Open the `network-config` file using your preferred editor and add the following, replacing the various IP addresses with the appropriate ones for your setup.
 
-      ```
+      ```yaml
       #cloud-config
       version: 2
       ethernets:
@@ -92,17 +92,17 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/seed-iso.html
     Do one of the following, depending on the OS you are creating the `seed.iso` disk image on.
    +  On Linux systems, use a tool such as **mkisofs** or **genisoimage** to create the completed `seed.iso` file. Navigate into the `seedconfig` folder, and run the following command:
 
-     ```
+     ```sh
      $ mkisofs -output seed.iso -volid cidata -joliet -rock user-data meta-data
      ```
    +  If you use a `network-config`, include it in the invocation of **mkisofs**:
 
-     ```
+     ```sh
      $ mkisofs -output seed.iso -volid cidata -joliet -rock user-data meta-data network-config
      ```
    +  On macOS systems, you can use a tool such as **hdiutil** to generate the finished `seed.iso` file. Since **hdiutil** takes a pathname rather than a list of files, the same invocation can be used regardless of if a `network-config` configuration file has been created or not.
 
-     ```
+     ```sh
      $ hdiutil makehybrid -o seed.iso -hfs -joliet -iso -default-volume-name cidata seedconfig/
      ```
 

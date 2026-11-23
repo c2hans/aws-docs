@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Polly#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Polly;
@@ -84,7 +84,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/polly#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.polly.PollyClient;
 import software.amazon.awssdk.services.polly.model.DescribeVoicesRequest;
@@ -139,7 +139,7 @@ public class DescribeVoicesSample {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/polly#code-examples).
 
-```
+```python
 class PollyWrapper:
     """Encapsulates Amazon Polly functions."""
 
@@ -176,7 +176,7 @@ class PollyWrapper:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/polly#code-examples).
 
-```
+```ruby
 require 'aws-sdk-polly' # In v2: require 'aws-sdk'
 
 begin
@@ -207,7 +207,7 @@ end
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/polly#code-examples).
 
-```
+```rust
 async fn list_voices(client: &Client) -> Result<(), Error> {
     let resp = client.describe_voices().send().await?;
 
@@ -237,7 +237,7 @@ async fn list_voices(client: &Client) -> Result<(), Error> {
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ply#code-examples).
 
-```
+```sap-abap
     TRY.
         " Only pass optional parameters if they have values
         IF iv_engine IS NOT INITIAL AND iv_language IS NOT INITIAL.

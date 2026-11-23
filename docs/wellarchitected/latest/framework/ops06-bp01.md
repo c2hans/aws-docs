@@ -46,6 +46,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops06-b
 
 ![Pyramid diagram showing monitoring layers stacked from application metrics at the top down to infrastructure metrics and then compute and storage metrics at the base.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/metrics-pyramid.png)
 
+*Monitoring metrics pyramid from application down to compute and storage*
+
  Each alert needs an owner and an escalation path for when the first responder cannot resolve it. Link each alert to a current runbook or playbook so any operator can respond the same way, keeping handling consistent across shifts. Recurring incidents point at a problem worth removing (for more detail, see [OPS07-BP01 Perform post-incident analysis](ops07-bp01.md)).
 
  You can automate the first minutes after an alert. Configure an alarm to start a [CloudWatch investigation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations.html) when it fires; the investigation correlates related telemetry and recent changes into a probable-cause hypothesis before the responder arrives. [AWS DevOps Agent](https://docs.aws.amazon.com/devopsagent/latest/userguide/) can be triggered from a ticket, a webhook, or its own monitoring, and it then investigates autonomously and returns root cause analyses and mitigation plans to the channel that raised the alert. The alert's named owner remains accountable for the response.

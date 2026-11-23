@@ -25,6 +25,16 @@ The details of the resource assessed under the Container Security framework.
 Type: [ContainerSecuritySummary](API_ContainerSecuritySummary.md) object
 Required: No
 
+ ** ListingQualitySummary **   <a name="AWSMarketplaceService-Type-FrameworkSummary-ListingQualitySummary"></a>
+The details of the resource assessed under the Listing Quality framework.
+Type: [ListingQualitySummary](API_ListingQualitySummary.md) object
+Required: No
+
+ ** ListingRecommendationsSummary **   <a name="AWSMarketplaceService-Type-FrameworkSummary-ListingRecommendationsSummary"></a>
+The details of the resource assessed under the Listing Recommendations framework.
+Type: [ListingRecommendationsSummary](API_ListingRecommendationsSummary.md) object
+Required: No
+
 ## See Also
 <a name="API_FrameworkSummary_SeeAlso"></a>
 

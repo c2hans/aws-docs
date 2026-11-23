@@ -22,7 +22,7 @@ When you create a campaign that specifies a webhook URL, Amazon Pinpoint issues 
 
 If you opt to instead send custom channel messages by creating a Lambda function, it's best to first familiarize yourself with the data that Amazon Pinpoint emits. When a Amazon Pinpoint campaign sends messages over a custom channel, it sends a payload to the target Lambda function that resembles the following example:
 
-```
+```json
 {
   "Message":{},
   "Data":"The payload that's provided in the CustomMessage object in MessageConfiguration",

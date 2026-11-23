@@ -67,7 +67,7 @@ This component has the following requirements:
 
   On a device with `apt`, you can run the following commands to install GStreamer.
 
-  ```
+  ```bash
   sudo apt install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gstreamer1.0-plugins-base-apps
   sudo apt install -y gstreamer1.0-libav
   sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools
@@ -86,7 +86,7 @@ This example policy allows the device to get the value of secrets named **IPCame
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -164,7 +164,7 @@ The ID of the AWS IoT SiteWise asset that represents this core device. For more 
 
 **Example: Configuration merge update**
 
-```
+```json
 {
   "SiteWiseAssetIdForHub": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
@@ -194,7 +194,7 @@ This component uses the following log file.
 **To view this component's logs**
 + Run the following command on the core device to view this component's log file in real time. Replace `{{/greengrass/v2}}` with the path to the AWS IoT Greengrass root folder.
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.iot.EdgeConnectorForKVS.log
   ```
 

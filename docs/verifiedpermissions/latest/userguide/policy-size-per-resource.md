@@ -42,7 +42,7 @@ To find how template-linked policies contribute to the *Policy size per resource
 
 Review the following template:
 
-```
+```cedar
 permit (
   principal in ?principal,
   action in
@@ -60,7 +60,7 @@ when {
 
 Create the following policies from that template:
 
-```
+```cedar
 TemplateLinkedPolicy {
   policyId: "policy1",
   templateId: "template1",

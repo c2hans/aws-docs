@@ -23,7 +23,7 @@ When AWS End User Messaging generates the code with `SendNotifyCodeVerification`
 
 Validate the code with the [validate-notify-code-verification](https://docs.aws.amazon.com/cli/latest/reference/endusermessaging/validate-notify-code-verification.html) command.
 
-```
+```bsh
 $ aws endusermessaging validate-notify-code-verification \
 > --destination-identity {{+15550123456}} \
 > --code {{483921}} \

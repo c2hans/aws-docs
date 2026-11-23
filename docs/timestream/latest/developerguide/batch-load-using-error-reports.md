@@ -16,7 +16,7 @@ Batch load tasks have one of the following status values:
 
 When there are errors, an error log report is created in the S3 bucket defined for that. Errors are categorized as taskErrors or fileErrors in separate arrays. Following is an example error report.
 
-```
+```json
 {
     "taskId": "9367BE28418C5EF902676482220B631C",
     "taskErrors": [],

@@ -39,7 +39,7 @@ For more information, see [Configure subnets for your Classic Load Balancer](htt
 **Tools for PowerShell V4**
 **Example 1: This example adds the specified Availability Zone to the specified load balancer. The output includes the complete list of Availability Zones.**
 
-```
+```powershell
 Enable-ELBAvailabilityZoneForLoadBalancer -LoadBalancerName my-load-balancer -AvailabilityZone us-west-2a
 ```
 **Output:**
@@ -53,7 +53,7 @@ us-west-2b
 **Tools for PowerShell V5**
 **Example 1: This example adds the specified Availability Zone to the specified load balancer. The output includes the complete list of Availability Zones.**
 
-```
+```powershell
 Enable-ELBAvailabilityZoneForLoadBalancer -LoadBalancerName my-load-balancer -AvailabilityZone us-west-2a
 ```
 **Output:**

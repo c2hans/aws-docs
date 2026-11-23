@@ -69,7 +69,7 @@ Enables CORS by returning correct headers.
 #### GetArchitectureRecommendationsOutput schema
 <a name="recoverygroups-recoverygroupname-architecturerecommendations-response-body-getarchitecturerecommendationsoutput-example"></a>
 
-```
+```json
 {
   "lastAuditTimestamp": "string",
   "nextToken": "string",

@@ -8,7 +8,7 @@ Deploy the Hub stack to the member account that you selected as the Hub account.
 
 1. Review the changes that AWS CDK deploys.
 
-   ```
+   ```bash
    $ npm run cdk -- diff account-assessment-for-aws-organizations-hub \
        --profile "${PROFILE_HUB}" \
        --no-change-set
@@ -16,7 +16,7 @@ Deploy the Hub stack to the member account that you selected as the Hub account.
 
 1. Deploy the stack.
 
-   ```
+   ```bash
    $ npm run deploy -- \
        --parameters DeploymentNamespace="${DEPLOYMENT_NAMESPACE}" \
        --parameters UserEmail="${USER_EMAIL}" \

@@ -25,7 +25,7 @@ When the transport opens a connection, it negotiates a TLS version that both the
 
 `Urllib3HTTPClient` and `AIOHTTPClient` both use Python's `ssl` module. For clients that use either transport, use the `ssl` module to inspect the TLS library and the version limits of the default SSL context:
 
-```
+```python
 import ssl
 
 context = ssl.create_default_context()

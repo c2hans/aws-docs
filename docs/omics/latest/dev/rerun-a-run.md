@@ -52,7 +52,7 @@ aws-healthomics-rerun 9876543
 
 If the run exists in CloudWatch, you receive a response similar to the following example output. If the workflow no longer exists, you receive an error message.
 
-```
+```json
 Original request:
 {
   "workflowId": "9679729",

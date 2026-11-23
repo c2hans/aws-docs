@@ -7,5 +7,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS Agent Registry
 
 **Resource types**
++ [AWS::AgentRegistry::Publisher](aws-resource-agentregistry-publisher.md)
 + [AWS::AgentRegistry::Registry](aws-resource-agentregistry-registry.md)
 + [AWS::AgentRegistry::RegistryRecord](aws-resource-agentregistry-registryrecord.md)

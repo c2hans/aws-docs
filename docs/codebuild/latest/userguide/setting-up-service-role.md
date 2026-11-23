@@ -57,7 +57,7 @@ The service role described on this page contains a policy that grants the minimu
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -158,7 +158,7 @@ If you use a different name, be sure to use it throughout this procedure.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -184,7 +184,7 @@ We recommend that you use the `aws:SourceAccount` and `aws:SourceArn` condition 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -215,7 +215,7 @@ We recommend that you use the `aws:SourceAccount` and `aws:SourceArn` condition 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -246,7 +246,7 @@ If you don't know or haven't decided on a name for your CodeBuild project and wa
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -304,10 +304,10 @@ This policy contains statements that allow access to a potentially large number 
 
 1. Switch to the directory where you saved the preceding files, and then run the following two commands, one at a time, in this order. You can use different values for `CodeBuildServiceRole` and `CodeBuildServiceRolePolicy`, but be sure to use them here.
 
-   ```
+   ```shell
    aws iam create-role --role-name CodeBuildServiceRole --assume-role-policy-document file://create-role.json
    ```
 
-   ```
+   ```shell
    aws iam put-role-policy --role-name CodeBuildServiceRole --policy-name CodeBuildServiceRolePolicy --policy-document file://put-role-policy.json
    ```

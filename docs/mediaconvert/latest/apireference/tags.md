@@ -52,7 +52,7 @@ Supports CORS preflight requests.
 #### POST schema
 <a name="tags-request-body-post-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "tags": {
@@ -66,7 +66,7 @@ Supports CORS preflight requests.
 #### TagResourceResponse schema
 <a name="tags-response-body-tagresourceresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -74,7 +74,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="tags-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

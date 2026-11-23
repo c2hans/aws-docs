@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/basic-usa
 
 The following example shows how to use the S3 Transfer Manager:
 
-```
+```php
 <?php
 
 use Aws\S3\S3Client;
@@ -57,7 +57,7 @@ You can create a transfer manager in two ways:
 With an existing S3 client
 Pass an existing [`S3Client`](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html) instance to the `S3TransferManager` {{<add link>}} constructor.
 
-```
+```php
 <?php
 
 use Aws\S3\S3Client;
@@ -77,7 +77,7 @@ $transferManager = new S3TransferManager($s3Client);
 With default S3 client creation
 Pass `null` as the client and specify configuration options.
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\S3TransferManager;

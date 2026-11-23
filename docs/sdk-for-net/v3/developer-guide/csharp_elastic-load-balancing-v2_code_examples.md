@@ -31,7 +31,7 @@ The following code example shows how to use `CreateListener`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/ElasticLoadBalancerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an Elastic Load Balancing load balancer that uses the specified subnets
     /// and forwards requests to the specified target group.
@@ -102,7 +102,7 @@ The following code example shows how to use `CreateLoadBalancer`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/ElasticLoadBalancerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an Elastic Load Balancing load balancer that uses the specified subnets
     /// and forwards requests to the specified target group.
@@ -173,7 +173,7 @@ The following code example shows how to use `CreateTargetGroup`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/ElasticLoadBalancerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an Elastic Load Balancing target group. The target group specifies how the load balancer forwards
     /// requests to instances in the group and how instance health is checked.
@@ -215,7 +215,7 @@ The following code example shows how to use `DeleteLoadBalancer`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/ElasticLoadBalancerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a load balancer by its specified name.
     /// </summary>
@@ -255,7 +255,7 @@ The following code example shows how to use `DeleteTargetGroup`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/ElasticLoadBalancerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a TargetGroup by its specified name.
     /// </summary>
@@ -305,7 +305,7 @@ The following code example shows how to use `DescribeLoadBalancers`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/ElasticLoadBalancerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the HTTP Endpoint of a load balancer by its name.
     /// </summary>
@@ -337,7 +337,7 @@ The following code example shows how to use `DescribeTargetHealth`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/ElasticLoadBalancerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the target health for a group by name.
     /// </summary>
@@ -390,7 +390,7 @@ The following code example shows how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```csharp
     static async Task Main(string[] args)
     {
         _configuration = new ConfigurationBuilder()
@@ -787,7 +787,7 @@ Run the interactive scenario at a command prompt.
 ```
 Create a class that wraps Auto Scaling and Amazon EC2 actions.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates Amazon EC2 Auto Scaling and EC2 management methods.
 /// </summary>
@@ -1676,7 +1676,7 @@ public class AutoScalerWrapper
 ```
 Create a class that wraps Elastic Load Balancing actions.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates Elastic Load Balancer actions.
 /// </summary>
@@ -1970,7 +1970,7 @@ public class ElasticLoadBalancerWrapper
 ```
 Create a class that uses DynamoDB to simulate a recommendation service.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates a DynamoDB table to use as a service that recommends books, movies, and songs.
 /// </summary>
@@ -2113,7 +2113,7 @@ public class Recommendations
 ```
 Create a class that wraps Systems Manager actions.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates Systems Manager parameter operations. This example uses these parameters
 /// to drive the demonstration of resilient architecture, such as failure of a dependency or

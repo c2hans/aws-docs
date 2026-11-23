@@ -114,7 +114,7 @@ This policy permits local network access to the loopback address from any site, 
 
 Example `policies.json` configuration:
 
-```
+```json
 {
   "policies": {
     "LocalNetworkAccess": {

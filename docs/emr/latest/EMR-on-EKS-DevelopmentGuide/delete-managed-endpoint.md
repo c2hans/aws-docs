@@ -10,7 +10,7 @@ Specify values for the following parameters to the command:
 + **‐‐id:** The identifier of the interactive endpoint that you want to delete.
 + **‐‐virtual-cluster-id** – The identifier of the virtual cluster associated with the interactive endpoint that you want to delete. This is the same virtual cluster ID that was specified when the interactive endpoint was created.
 
-```
+```bash,sh,zsh
 aws emr-containers delete-managed-endpoint ‐‐id {{managed-endpoint-id}} ‐‐virtual-cluster-id {{virtual-cluster-id}}
 ```
 

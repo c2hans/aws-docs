@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # FixedUpfrontPricingTerm
 
-Defines a fixed upfront pricing term with a pre-paid amount and granted entitlements.
+Describes a fixed upfront pricing term with a pre-paid amount and granted entitlements.
 
 ## Contents
 <a name="API_marketplace-discovery_FixedUpfrontPricingTerm_Contents"></a>
@@ -20,7 +20,7 @@ Pattern: `[A-Z]+`
 Required: Yes
 
  ** grants **   <a name="AWSMarketplaceService-Type-marketplace-discovery_FixedUpfrontPricingTerm-grants"></a>
-The entitlements granted to the buyer as part of this term.
+The entitlements that you receive as part of this term.
 Type: Array of [GrantItem](API_marketplace-discovery_GrantItem.md) objects
 Required: Yes
 

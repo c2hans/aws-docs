@@ -36,6 +36,7 @@ The following data types are supported:
 +  [DedicatedIpPool](API_DedicatedIpPool.md)
 +  [DefaultSigningScheme](API_DefaultSigningScheme.md)
 +  [DeliverabilityTestReport](API_DeliverabilityTestReport.md)
++  [DeliveryAttributes](API_DeliveryAttributes.md)
 +  [DeliveryOptions](API_DeliveryOptions.md)
 +  [Destination](API_Destination.md)
 +  [Details](API_Details.md)

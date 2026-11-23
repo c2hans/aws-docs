@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 
 ![Picture of equation. A = α1 X α2 X ... X αnsubscript>](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/images/equation4.png)
 
+*Equation 4 - Theoretical maximum availability*
+
  The availability numbers used in these calculations are usually associated with things like SLAs or Service-Level Objectives (SLOs). SLAs define the expected level of service customers will receive, the metrics by which the service is measured, and remediations or penalties (usually monetary) should the service levels not be achieved.
 
  Using the above formula, we can conclude that, purely mathematically, a workload can be no more available than any of its dependencies. But in reality, what we typically see is that this is not the case. A workload built using two or three dependencies with 99.99% availability SLAs can still achieve 99.99% availability itself, or higher.

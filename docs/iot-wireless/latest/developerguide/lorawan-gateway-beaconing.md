@@ -23,7 +23,7 @@ The following example shows how you configure these parameters for the gateway. 
 **Note**
 The beaconing parameters aren't available when you add your gateway to AWS IoT Core for LoRaWAN using the AWS IoT console.
 
-```
+```JSON
 aws iotwireless create-wireless-gateway \
     --name "{{myLoRaWANGateway}}" \
     --cli-input-json {{file://input.json}}
@@ -33,7 +33,7 @@ The following shows the contents of the `input.json` file.
 
 **Contents of input.json**
 
-```
+```JSON
 {
     "Description": {{"My LoRaWAN gateway"}},
     "LoRaWAN": {

@@ -115,7 +115,7 @@ session1 = # DROP TABLE A;
 session1 = # COMMIT;
 ```
 
-```
+```nocopy
 session3 = # BEGIN;
 session3 = # CREATE TABLE A (id INT);
 session3 = # COMMIT;

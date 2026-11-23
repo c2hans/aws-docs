@@ -26,7 +26,7 @@ The following table lists all available voices and their corresponding language 
 
 You can specify the voice ID in the `audioOutputConfiguration` when starting a prompt in the `promptStart` event:
 
-```
+```json
 "event": {
         "promptStart": {
             "promptName": "string",

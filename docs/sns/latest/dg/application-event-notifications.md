@@ -60,7 +60,7 @@ Run the [set-platform-application-attributes](https://docs.aws.amazon.com/cli/la
 
 The following example sets the same Amazon SNS topic for all four application events:
 
-```
+```bash
 aws sns set-platform-application-attributes
 --platform-application-arn arn:aws:sns:us-east-1:12345EXAMPLE:app/FCM/MyFCMPlatformApplication
 --attributes EventEndpointCreated="arn:aws:sns:us-east-1:12345EXAMPLE:MyFCMPlatformApplicationEvents",

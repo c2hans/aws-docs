@@ -27,7 +27,7 @@ You can also configure [Apache Log4j2 properties](log4j2.md), [AWS Secrets Manag
 To pass Secrets Manager secrets at the application level, attach the following policy to users and roles that need to create or update EMR Serverless applications with secrets.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -65,7 +65,7 @@ The `runtimeConfiguration` that you specify at application level maps to `applic
 
 The following example shows how to declare default configurations with `create-application`.
 
-```
+```bash,sh,zsh
 aws emr-serverless create-application \
     --release-label {{release-version}}  \
     --type SPARK \
@@ -133,7 +133,7 @@ When you start a job, if you don’t specify a particular configuration, it will
 
 The following example shows different operations you can perform during job submission at `start-job-run`.
 
-```
+```bash,sh,zsh
 aws emr-serverless start-job-run \
     --application-id {{your-application-id}} \
     --execution-role-arn {{your-job-role-arn}} \

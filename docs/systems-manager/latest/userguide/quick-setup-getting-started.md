@@ -18,7 +18,7 @@ To use the new Quick Setup console, you must have permissions for the following 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -232,7 +232,7 @@ If you use the console to work with Quick Setup, the service handles onboarding 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -268,7 +268,7 @@ If you use the console to work with Quick Setup, the service handles onboarding 
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -292,7 +292,7 @@ If you use the console to work with Quick Setup, the service handles onboarding 
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -316,7 +316,7 @@ If you use the console to work with Quick Setup, the service handles onboarding 
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

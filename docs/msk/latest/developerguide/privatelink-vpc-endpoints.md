@@ -89,7 +89,7 @@ This sample policy can be attached to a VPC endpoint. It restricts access to a s
 **List connectors and create a new connector**
 The following is an example of an endpoint policy for MSK Connect. This policy allows the specified role to list connectors and create a new connector.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

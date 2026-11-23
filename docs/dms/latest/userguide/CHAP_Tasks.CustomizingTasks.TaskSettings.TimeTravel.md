@@ -41,7 +41,7 @@ The Time Travel settings include the `TTSettings` properties following:
 
 ****
 
-  ```
+  ```json
   {
    "Version":"2012-10-17",
    "Statement": [
@@ -73,7 +73,7 @@ The Time Travel settings include the `TTSettings` properties following:
 
 ****
 
-  ```
+  ```json
   {
    "Version":"2012-10-17",
    "Statement": [

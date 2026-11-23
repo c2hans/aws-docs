@@ -12,6 +12,12 @@ Contains the compute configuration for an intermediate table population operatio
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** jobComputeConfiguration **   <a name="API-Type-IntermediateTableComputeConfiguration-jobComputeConfiguration"></a>
+Specifies the compute configuration for the PySpark job that populates the intermediate table.
+Type: [ProtectedJobComputeConfiguration](API_ProtectedJobComputeConfiguration.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
+
  ** queryComputeConfiguration **   <a name="API-Type-IntermediateTableComputeConfiguration-queryComputeConfiguration"></a>
  The configuration of the compute resources for workers running an analysis with the AWS Clean Rooms SQL analytics engine.
 Type: [WorkerComputeConfiguration](API_WorkerComputeConfiguration.md) object

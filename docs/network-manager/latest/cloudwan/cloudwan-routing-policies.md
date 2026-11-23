@@ -73,6 +73,7 @@ The following is a list of considerations that should be taken into account befo
 + Segment share policies are applied after attachment policies.
 + Routing policies associated across segments and Regions are unidirectional.
 + Routing policies are not supported for network function groups (service insertion).
++ When the core network policy `version` is `2026.10` or later, Cloud WAN sets a default MED on cross-Region routes. Summary routes created by an edge location routing policy retain a default MED of 100. The default MED can be overridden by a `set-med` routing policy.
 
 ### Attachment type support
 <a name="cloudwan-routing-policies-considerations-attachment-support"></a>

@@ -103,7 +103,7 @@ Enable CORS by returning correct headers.
 #### POST schema
 <a name="tags-resource-arn-request-body-post-example"></a>
 
-```
+```json
 {
   "tags": {
   }
@@ -116,7 +116,7 @@ Enable CORS by returning correct headers.
 #### tagsModel schema
 <a name="tags-resource-arn-response-body-tagsmodel-example"></a>
 
-```
+```json
 {
   "tags": {
   }

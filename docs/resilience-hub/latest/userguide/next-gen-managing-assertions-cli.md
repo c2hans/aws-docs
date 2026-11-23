@@ -16,7 +16,7 @@ aws resiliencehubv2 create-assertion \
 
 The response returns the new assertion, including its generated `assertionId`:
 
-```
+```json
 {
     "assertion": {
         "serviceArn": "arn:aws:resiliencehub:us-east-1:123456789012:service/checkout:abc123",

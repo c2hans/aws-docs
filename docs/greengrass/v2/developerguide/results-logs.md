@@ -65,7 +65,7 @@ The version of the product being tested.
 `features`
 The features validated. Features marked as `required` are required to submit your board for qualification. The following snippet shows how this information appears in the `awsiotdevicetester_report.xml` file.
 
-```
+```json
 <name="aws-iot-greengrass-v2-core" value="supported" type="required"></feature>
 ```
 

@@ -22,7 +22,7 @@ Although these credentials are temporary and would eventually expire, an `Instan
 
 As an alternative to the default credentials provider chain that eventually uses an `InstanceProfileCredentialsProvider` on EC2, you can configure a service client explicitly with an `InstanceProfileCredentialsProvider`. This approach is shown in the following snippet.
 
-```
+```java
 S3Client s3 = S3Client.builder()
        .credentialsProvider(InstanceProfileCredentialsProvider.create())
        .build();

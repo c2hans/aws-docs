@@ -25,7 +25,7 @@ See the following steps to use serverless storage for EMR Serverless in your Spa
 
    Create an EMR Serverless release 7.12 (or later) application with serverless storage enabled by setting the spark property `spark.aws.serverlessStorage.enabled` to **true** in the spark-defaults classification.
 
-   ```
+   ```bash,sh,zsh
    aws emr-serverless create-application \
      --type "SPARK" \
      --name {{my-application}} \
@@ -43,7 +43,7 @@ See the following steps to use serverless storage for EMR Serverless in your Spa
 
    Start a job run on your application. Serverless storage for EMR Serverless automatically handles intermediate data operation such as shuffle for your job.
 
-   ```
+   ```bash,sh,zsh
    aws emr-serverless start-job-run \
      --application-id {{<application-id>}} \
      --execution-role-arn {{<job-role-arn>}} \

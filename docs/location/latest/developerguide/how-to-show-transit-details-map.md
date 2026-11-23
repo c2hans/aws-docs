@@ -17,7 +17,7 @@ This example shows how to create a map with transit details with Transit TravelM
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -49,7 +49,7 @@ This example shows how to create a map with transit details with Transit TravelM
 ------
 #### [ style.css ]
 
-```
+```css
 body {
     margin: 0;
     padding: 0;

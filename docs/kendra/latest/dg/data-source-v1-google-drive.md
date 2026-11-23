@@ -139,7 +139,7 @@ IAM roles used for indexes cannot be used for data sources. If you are unsure if
 You must specify the following using the [GoogleDriveConfiguration](https://docs.aws.amazon.com/kendra/latest/APIReference/API_GoogleDriveConfiguration.html) API:
 + **Secret Amazon Resource Name (ARN)**—Provide the Amazon Resource Name (ARN) of an Secrets Manager secret that contains the authentication credentials for your Google Drive account. The secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "clientAccount": "{{service account email}}",
       "adminAccount": "{{user account email"}}",

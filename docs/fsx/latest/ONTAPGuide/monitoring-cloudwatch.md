@@ -25,5 +25,5 @@ All CloudWatch metrics for FSx for ONTAP are published to the `AWS/FSx` namespac
 + [Accessing CloudWatch metrics](accessingmetrics.md)
 + [Monitoring in the Amazon FSx console](monitor-throughput-cloudwatch.md)
 + [File system metrics](file-system-metrics.md)
-+ [Second-generation file system metrics](so-file-system-metrics.md)
++ [Second-generation and third-generation file system metrics](so-file-system-metrics.md)
 + [Volume metrics](volume-metrics.md)

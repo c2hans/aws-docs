@@ -76,7 +76,7 @@ Looking for technical support? [Open an Support ticket here](https://console.aws
 
 1. In the **Description** box, copy and paste the following template:
 
-   ```
+   ```json
    Subject: Apple Messages for Business Integration request
       Body:
 

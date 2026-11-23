@@ -31,7 +31,7 @@ The following policy allows Amazon Pinpoint to send event data to a Kinesis stre
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -59,7 +59,7 @@ The following policy allows Amazon Pinpoint to send event data to a Firehose del
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -87,7 +87,7 @@ To allow Amazon Pinpoint to assume the IAM role and perform the actions allowed 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

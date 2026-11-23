@@ -37,7 +37,7 @@ The following example shows the `aws-lambda-tools-defaults.json` file, which is 
 Specifying a value in the **function-handler** field pre-populates that value in the Publish wizard.
 If you rename the function, class, or assembly then you also need to update the corresponding field in the `aws-lambda-tools-defaults.json` file.
 
-```
+```json
 {
   "Information": [
     "This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI.",

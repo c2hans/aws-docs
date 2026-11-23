@@ -42,7 +42,7 @@ After you have your Amazon DocumentDB collection created and change stream enabl
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -90,7 +90,7 @@ In order for an OpenSearch pipeline to write data to an OpenSearch domain, the d
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

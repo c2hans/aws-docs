@@ -29,7 +29,7 @@ For more information, see [Work with an impaired Amazon EBS volume](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example enables I/O operations for the specified volume, if I/O operations were disabled.**
 
-```
+```powershell
 Enable-EC2VolumeIO -VolumeId vol-12345678
 ```
 +  For API details, see [EnableVolumeIo](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -37,7 +37,7 @@ Enable-EC2VolumeIO -VolumeId vol-12345678
 **Tools for PowerShell V5**
 **Example 1: This example enables I/O operations for the specified volume, if I/O operations were disabled.**
 
-```
+```powershell
 Enable-EC2VolumeIO -VolumeId vol-12345678
 ```
 +  For API details, see [EnableVolumeIo](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

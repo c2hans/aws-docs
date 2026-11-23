@@ -23,7 +23,7 @@ The role permissions policy named AWSIoTTwinMakerServiceRolePolicy allows AWS Io
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

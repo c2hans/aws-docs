@@ -17,3 +17,4 @@ This section provides guidance on common practices you can follow to test your a
 + [Automate local integration tests with AWS SAM](serverless-sam-cli-using-automated-tests.md)
 + [Generate sample event payloads with AWS SAM](serverless-sam-cli-using-generate-event.md)
 + [Testing and debugging durable functions](test-and-debug-durable-functions.md)
++ [Testing and debugging functions that use customer-managed runtimes](test-and-debug-customer-managed-runtimes.md)

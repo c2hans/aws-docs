@@ -19,7 +19,7 @@ Contains information about a test case. You must create a `test.json` file for e
 
 1. In the `MyTestSuite_1.0.0/suite` folder, create a `suite.json` file with the following structure:
 
-   ```
+   ```json
    {
        "id": "MyTestSuite_1.0.0",
        "title": "My Test Suite",
@@ -30,7 +30,7 @@ Contains information about a test case. You must create a `test.json` file for e
 
 1. In the `MyTestSuite_1.0.0/myTestGroup` folder, create a `group.json` file with the following structure:
 
-   ```
+   ```json
    {
        "id": "MyTestGroup",
        "title": "My Test Group",
@@ -41,7 +41,7 @@ Contains information about a test case. You must create a `test.json` file for e
 
 1. In the `MyTestSuite_1.0.0/myTestGroup/myTestCase` folder, create a `test.json` file with the following structure:
 
-   ```
+   ```json
    {
        "id": "MyTestCase",
        "title": "My Test Case",

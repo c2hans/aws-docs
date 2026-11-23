@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Shows the output of a given job.
 
-```
+```sh
 awsbout [ - h ] [ - c {{CLUSTER}} ] [ - hd {{HEAD}} ] [ - t {{TAIL}} ] [ - s ] [ - sp {{STREAM_PERIOD}} ] {{job_id}}
 ```
 

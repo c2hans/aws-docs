@@ -109,7 +109,7 @@ Properties:
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Encryption`  <a name="cfn-mediaconnect-flowoutput-encryption"></a>
- The type of key used for the encryption. If no `keyType` is provided, the service will use the default setting (static-key). Allowable encryption types: static-key.
+ The type of key used for the encryption. If no `KeyType` is provided, the service will use the default setting (static-key). Allowable encryption types: `static-key` and `srt-password`.
 *Required*: No
 *Type*: [Encryption](aws-properties-mediaconnect-flowoutput-encryption.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -146,7 +146,7 @@ The maximum latency in milliseconds. This parameter applies only to RIST-based a
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `NdiAudioReferenceLevel`  <a name="cfn-mediaconnect-flowoutput-ndiaudioreferencelevel"></a>
-Property description not available.
+The audio reference level of the NDI receiver, in decibels relative to full scale (dBFS). Common values are `-20` (NDI and SMPTE) and `-18` (EBU). If you don't specify this field, MediaConnect uses `-20`.
 *Required*: No
 *Type*: Integer
 *Minimum*: `-40`
@@ -154,7 +154,9 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NdiOutputTimecodeSource`  <a name="cfn-mediaconnect-flowoutput-ndioutputtimecodesource"></a>
- The settings for the source of the flow.
+Controls how MediaConnect generates timecodes for NDI output frames. If you don't specify this field, MediaConnect uses `EMBEDDED_TIMECODE`.
++ `EMBEDDED_TIMECODE` (default) - Preserves timecodes from the input transport stream. The timecodes must be embedded in the video stream as SEI timing messages. If no embedded timecode is detected, MediaConnect uses the UTC system time instead.
++ `UTC_SYSTEM_TIME` - Generates timecodes based on the system clock time when each frame is sent.
 *Required*: No
 *Type*: String
 *Allowed values*: `EMBEDDED_TIMECODE | UTC_SYSTEM_TIME`
@@ -173,7 +175,7 @@ A quality setting for the NDI Speed HQ encoder.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `OutputStatus`  <a name="cfn-mediaconnect-flowoutput-outputstatus"></a>
- An indication of whether the output should transmit data or not. If you don't specify the `outputStatus` field in your request, MediaConnect leaves the value unchanged.
+ An indication of whether the output should transmit data or not.
 *Required*: No
 *Type*: String
 *Allowed values*: `ENABLED | DISABLED`

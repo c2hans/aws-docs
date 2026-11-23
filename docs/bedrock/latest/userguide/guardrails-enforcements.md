@@ -171,7 +171,7 @@ Make sure you are specifying the accurate guardrail ARN in the policy. Specifyin
           + **Comprehensive**: Evaluate all content, regardless of guard content tags.
         + If not configured, both controls default to **Comprehensive**.
 
-        ```
+        ```json
         {
             "bedrock": {
                 "guardrail_inference": {

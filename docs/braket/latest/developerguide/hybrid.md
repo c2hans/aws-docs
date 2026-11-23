@@ -32,20 +32,20 @@ Amazon Braket provides support for [PennyLane](https://pennylane.ai), an open-so
 The PennyLane library provides interfaces to familiar machine learning tools, including PyTorch and TensorFlow, to make training quantum circuits quick and intuitive.
 +  **The PennyLane Library** -– PennyLane is pre-installed in Amazon Braket notebooks. For access to Amazon Braket devices from PennyLane, open a notebook and import the PennyLane library with the following command.
 
-```
+```python
 import pennylane as qml
 ```
 
 Tutorial notebooks help you get started quickly. Alternatively, you can use PennyLane on Amazon Braket from an IDE of your choice.
 +  **The Amazon Braket PennyLane plugin** — To use your own IDE, you can install the Amazon Braket PennyLane plugin manually. The plugin connects PennyLane with the [Amazon Braket Python SDK](https://github.com/aws/amazon-braket-sdk-python), so you can run circuits in PennyLane on Amazon Braket devices. To install the the PennyLane plugin, use the following command.
 
-```
+```python
 pip install amazon-braket-pennylane-plugin
 ```
 
 The following example demonstrates how to set up access to Amazon Braket devices in PennyLane:
 
-```
+```python
 # to use SV1
 import pennylane as qml
 sv1 = qml.device("braket.aws.qubit", device_arn="arn:aws:braket:::device/quantum-simulator/amazon/sv1", wires=2)
@@ -92,7 +92,7 @@ With Hybrid Jobs, you can now run your variational algorithm code using a combin
 
 The embedded simulator is already available with the Hybrid Jobs container, you need to decorate your main Python function with the `@hybrid_job` decorator. To use the PennyLane `lightning.gpu` simulator, you also need to specify a GPU instance in the `InstanceConfig` as shown in the following code snippet:
 
-```
+```python
 import pennylane as qml
 from braket.jobs import hybrid_job
 from braket.jobs.config import InstanceConfig
@@ -112,7 +112,7 @@ With the PennyLane plugin for Amazon Braket, you can compute gradients using the
 
  **Note:** To use the adjoint differentiation method, you must specify `diff_method='device'` in your `qnode`, and **not** `diff_method='adjoint'`. See the following example.
 
-```
+```python
 device_arn = "arn:aws:braket:::device/quantum-simulator/amazon/sv1"
 dev = qml.device("braket.aws.qubit", wires=wires, shots=0, device_arn=device_arn)
 

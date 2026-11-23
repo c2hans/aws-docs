@@ -100,6 +100,7 @@ Before you use Capacity Blocks, consider the following details and limitations.
 + Instances in a Capacity Block don't count against your On-Demand Instances limits.
 + For P5 instances using a custom AMI, ensure that you have the [required software and configuration for EFA](gpu-instances-started.md).
 + For Amazon EKS managed node groups, see [Create a managed node group with Amazon EC2 Capacity Blocks for ML](https://docs.aws.amazon.com/eks/latest/userguide/capacity-blocks-mng.html). For Amazon EKS self-managed node groups, see [Use Capacity Blocks for ML with self-managed nodes](https://docs.aws.amazon.com/eks/latest/userguide/capacity-blocks.html).
++ You can search for Capacity Blocks across multiple instance types in a single request. Search across multiple AWS Regions is available only in the Amazon EC2 console. When you use the AWS CLI, AWS SDK, or API, a search covers only the Region that you send the request to.
 
 ## Related resources
 <a name="capacity-blocks-related-resources"></a>

@@ -43,7 +43,7 @@ For more information, see [Creating OpsItems manually (AWS CLI)](https://docs.aw
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
     /**
      * Creates an SSM OpsItem asynchronously.
      *
@@ -89,7 +89,7 @@ For more information, see [Creating OpsItems manually (AWS CLI)](https://docs.aw
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import { CreateOpsItemCommand, SSMClient } from "@aws-sdk/client-ssm";
 import { parseArgs } from "node:util";
 
@@ -132,7 +132,7 @@ export const main = async ({
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class OpsItemWrapper:
     """Encapsulates AWS Systems Manager OpsItem actions."""
 
@@ -196,7 +196,7 @@ class OpsItemWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ssm->createopsitem(
             iv_title = iv_title

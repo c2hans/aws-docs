@@ -74,7 +74,7 @@ Every object under `s3InputPath` must be a JSON or JSON Lines file of encounter 
 
 The following example shows one encounter record:
 
-```
+```json
 {
   "note": "...finalized clinical note text...",
   "icd-10-cm": [

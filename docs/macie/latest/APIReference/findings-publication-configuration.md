@@ -67,7 +67,7 @@ Updates the configuration settings for publishing findings to AWS Security Hub C
 #### PUT schema
 <a name="findings-publication-configuration-request-body-put-example"></a>
 
-```
+```json
 {
   "clientToken": "string",
   "securityHubConfiguration": {
@@ -83,7 +83,7 @@ Updates the configuration settings for publishing findings to AWS Security Hub C
 #### GetFindingsPublicationConfigurationResponse schema
 <a name="findings-publication-configuration-response-body-getfindingspublicationconfigurationresponse-example"></a>
 
-```
+```json
 {
   "securityHubConfiguration": {
     "publishClassificationFindings": boolean,
@@ -95,7 +95,7 @@ Updates the configuration settings for publishing findings to AWS Security Hub C
 #### ValidationException schema
 <a name="findings-publication-configuration-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -104,7 +104,7 @@ Updates the configuration settings for publishing findings to AWS Security Hub C
 #### ServiceQuotaExceededException schema
 <a name="findings-publication-configuration-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -113,7 +113,7 @@ Updates the configuration settings for publishing findings to AWS Security Hub C
 #### AccessDeniedException schema
 <a name="findings-publication-configuration-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -122,7 +122,7 @@ Updates the configuration settings for publishing findings to AWS Security Hub C
 #### ResourceNotFoundException schema
 <a name="findings-publication-configuration-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -131,7 +131,7 @@ Updates the configuration settings for publishing findings to AWS Security Hub C
 #### ConflictException schema
 <a name="findings-publication-configuration-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -140,7 +140,7 @@ Updates the configuration settings for publishing findings to AWS Security Hub C
 #### ThrottlingException schema
 <a name="findings-publication-configuration-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -149,7 +149,7 @@ Updates the configuration settings for publishing findings to AWS Security Hub C
 #### InternalServerException schema
 <a name="findings-publication-configuration-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

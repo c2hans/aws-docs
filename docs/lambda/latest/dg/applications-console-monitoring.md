@@ -21,7 +21,7 @@ By default, the Lambda console shows a basic dashboard. You can customize this p
 
 **Example Event Function dashboard template**
 
-```
+```yaml
 Resources:
   MyDashboard:
     Type: AWS::CloudWatch::Dashboard

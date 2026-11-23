@@ -52,7 +52,7 @@ This policy grants permissions to the specified log delivery service.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -134,14 +134,14 @@ Previously, for Regions available before August 2022, we required a policy that 
 
 The following policy grants permissions to the specified log delivery service. Use this policy for load balancers in Outposts Zones.
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {
         "Service": "logdelivery.elb.amazonaws.com"
     },
     "Action": "s3:PutObject",
-    "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}/{{prefix}}/AWSLogs/{{123456789012}}/*"
+    "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}/{{prefix}}/AWSLogs/{{123456789012}}/*",
     "Condition": {
         "StringEquals": {
             "s3:x-amz-acl": "bucket-owner-full-control"
@@ -260,7 +260,7 @@ aws elbv2 modify-load-balancer-attributes \
 **To enable connection logs**
 Update the [AWS::ElasticLoadBalancingV2::LoadBalancer](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-loadbalancer.html) resource to include the related attributes.
 
-```
+```yaml
 Resources:
   myLoadBalancer:
     Type: 'AWS::ElasticLoadBalancingV2::LoadBalancer'

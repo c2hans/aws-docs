@@ -54,7 +54,7 @@ aws elbv2 modify-load-balancer-attributes \
 **To enable or disable deletion protection**
 Update the [AWS::ElasticLoadBalancingV2::LoadBalancer](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-loadbalancer.html) resource to include the `deletion_protection.enabled` attribute.
 
-```
+```yaml
 Resources:
   myLoadBalancer:
     Type: 'AWS::ElasticLoadBalancingV2::LoadBalancer'
@@ -114,7 +114,7 @@ aws elbv2 modify-load-balancer-attributes \
 **To enable or disable cross-zone load balancing for a load balancer**
 Update the [AWS::ElasticLoadBalancingV2::LoadBalancer ](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-loadbalancer.html) resource to include the `load_balancing.cross_zone.enabled` attribute.
 
-```
+```yaml
 Resources:
   myLoadBalancer:
     Type: 'AWS::ElasticLoadBalancingV2::LoadBalancer'
@@ -219,7 +219,7 @@ aws elbv2 modify-load-balancer-attributes \
 **To enable Availability Zone affinity**
 Update the [AWS::ElasticLoadBalancingV2::LoadBalancer](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-loadbalancer.html) resource to include the `dns_record.client_routing_policy` attribute.
 
-```
+```yaml
 Resources:
   myLoadBalancer:
     Type: 'AWS::ElasticLoadBalancingV2::LoadBalancer'
@@ -276,10 +276,10 @@ aws elbv2 modify-load-balancer-attributes \
     --attributes "Key=secondary_ips.auto_assigned.per_subnet,Value={{1}}"
 ```
 
-You can use the [describe-network-interfaces](https://docs.aws.amazon.com/cli/latest/reference/elbv2/describe-network-interfaces.html) command to get the IPv4 addresses for the load balancer network interfaces. The `--filters` parameter scopes the results to the network interfaces for Network Load Balancers and the `--query` parameter further scopes the results to the load balancer with the specified name and displays only the specified fields. You can include additional fields as needed.
+You can use the [describe-network-interfaces](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-network-interfaces.html) command to get the IPv4 addresses for the load balancer network interfaces. The `--filters` parameter scopes the results to the network interfaces for Network Load Balancers and the `--query` parameter further scopes the results to the load balancer with the specified name and displays only the specified fields. You can include additional fields as needed.
 
 ```
-aws elbv2 describe-network-interfaces \
+aws ec2 describe-network-interfaces \
     --filters "Name=interface-type,Values=network_load_balancer" \
     --query "NetworkInterfaces[?contains(Description,'{{my-nlb}}')].{ID:NetworkInterfaceId,AZ:AvailabilityZone,Addresses:PrivateIpAddresses[*]}"
 ```
@@ -290,7 +290,7 @@ aws elbv2 describe-network-interfaces \
 **To add a secondary IP address**
 Update the [AWS::ElasticLoadBalancingV2::LoadBalancer](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-loadbalancer.html) resource to include the `secondary_ips.auto_assigned.per_subnet` attribute.
 
-```
+```yaml
 Resources:
   myLoadBalancer:
     Type: 'AWS::ElasticLoadBalancingV2::LoadBalancer'

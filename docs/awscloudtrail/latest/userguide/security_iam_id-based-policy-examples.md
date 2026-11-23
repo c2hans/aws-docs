@@ -43,7 +43,7 @@ The following example demonstrates a policy that allows users with the policy to
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -73,7 +73,7 @@ The following example demonstrates a policy that explicitly denies CloudTrail ac
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -108,7 +108,7 @@ In the first policy, you deny the `StartLogging` and `StopLogging` actions for t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -136,7 +136,7 @@ In the second policy, the `DescribeTrails` and `GetTrailStatus` actions are allo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -242,7 +242,7 @@ In the following policy example, permission to create an event data store with `
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -284,7 +284,7 @@ In the following policy example, permission to delete an event data store with `
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -351,7 +351,7 @@ You don't need to allow minimum console permissions for users that are making ca
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -408,7 +408,7 @@ The following example shows a policy that grants read-only access to CloudTrail 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -456,7 +456,7 @@ The **AWSCloudTrail\_FullAccess** policy or equivalent permissions are not inten
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -574,7 +574,7 @@ You can view event information on the CloudTrail console, including resources th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -603,7 +603,7 @@ You can view and configure delivery of events to CloudWatch Logs in the CloudTra
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

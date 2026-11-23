@@ -33,7 +33,7 @@ If *geom* is null, then null is returned.
 
 The following SQL checks if the specified polygon is valid. In this example, the polygon is invalid because the interior of the polygon isn't simply connected.
 
-```
+```sql
 SELECT ST_IsValid(ST_GeomFromText('POLYGON((0 0,10 0,10 10,0 10,0 0),(5 0,10 5,5 10,0 5,5 0))'));
 ```
 

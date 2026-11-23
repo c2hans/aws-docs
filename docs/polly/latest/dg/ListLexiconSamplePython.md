@@ -8,7 +8,7 @@ The following Python code example uses the AWS SDK for Python (Boto) to list the
 
 For more information on this operation, see the reference for the [`ListLexicons`](https://docs.aws.amazon.com/polly/latest/APIReference/API_ListLexicons.html) API.
 
-```
+```python
 import sys
 
 from boto3 import Session

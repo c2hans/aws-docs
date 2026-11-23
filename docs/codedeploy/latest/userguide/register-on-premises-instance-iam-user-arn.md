@@ -52,7 +52,7 @@ If you will be deploying application revisions only from GitHub repositories, sk
 
 1. Create a file with the following policy contents on the Amazon EC2 instance or device you are using to call the AWS CLI. Name the file something like **CodeDeploy-OnPrem-Permissions.json**, and then save the file.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -71,7 +71,7 @@ If you will be deploying application revisions only from GitHub repositories, sk
 We recommend that you restrict this policy to only those Amazon S3 buckets your on-premises instance needs to access. If you restrict this policy, make sure to also give access to the Amazon S3 buckets that contain the AWS CodeDeploy agent. Otherwise, an error might occur whenever the CodeDeploy agent is installed or updated on the associated on-premises instance.
 For example:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -136,7 +136,7 @@ Be sure to include `file://` before the file name. It is required in this comman
 
 1. In the **Policy Document** box, type or paste the following permissions expression, which allows AWS CodeDeploy to deploy application revisions from any Amazon S3 bucket specified in the policy to the on-premises instance on behalf of the IAM user:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -270,7 +270,7 @@ As you configure the AWS CLI (for example, by calling the **aws configure** comm
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement" : [
@@ -298,7 +298,7 @@ As you configure the AWS CLI (for example, by calling the **aws configure** comm
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement" : [

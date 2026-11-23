@@ -15,7 +15,7 @@ The following code example shows how to use `UpdateApplication`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis-analytics-v2#code-examples).
 This example updates the code that runs in an existing application.
 
-```
+```python
 class KinesisAnalyticsApplicationV2:
     """Encapsulates Kinesis Data Analytics application functions."""
 

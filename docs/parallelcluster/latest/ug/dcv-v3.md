@@ -12,7 +12,7 @@ The Amazon DCV software is automatically installed on the head node and can be e
 
 Starting from AWS ParallelCluster version 3.11, Amazon DCV can be enabled for a login node pool by using the Dcv section from the [`LoginNodes` section](LoginNodes-v3.md) / [Pools](LoginNodes-v3.md#LoginNodes-v3-Pools) configuration.
 
-```
+```yaml
 LoginNodes:
   Pools:
     Dcv:

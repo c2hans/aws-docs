@@ -66,7 +66,7 @@ The following example sets the `ParallelClusterInstancePolicy` using Slurm as th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -240,7 +240,7 @@ This policy only applies to AWS ParallelCluster versions up to and including ver
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -450,7 +450,7 @@ The following example sets the `ParallelClusterInstancePolicy` using `awsbatch` 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -576,7 +576,7 @@ To:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -919,7 +919,7 @@ To:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1294,7 +1294,7 @@ The following example sets the `ParallelClusterUserPolicy` using `awsbatch` as t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1660,7 +1660,7 @@ Starting with version 2.11.5, AWS ParallelCluster doesn't support the use of SGE
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -1739,7 +1739,7 @@ The following example sets the `ParallelClusterLambdaPolicy` using `awsbatch` as
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -1806,7 +1806,7 @@ The following example sets the `ParallelClusterUserPolicy` for users that don't 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

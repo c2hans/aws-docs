@@ -26,7 +26,7 @@ The following code example shows how to use `AttachPolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/organizations#code-examples).
 
-```
+```python
 def attach_policy(policy_id, target_id, orgs_client):
     """
     Attaches a policy to a target. The target is an organization root, account, or
@@ -55,7 +55,7 @@ The following code example shows how to use `CreatePolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/organizations#code-examples).
 
-```
+```python
 def create_policy(name, description, content, policy_type, orgs_client):
     """
     Creates a policy.
@@ -93,7 +93,7 @@ The following code example shows how to use `DeletePolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/organizations#code-examples).
 
-```
+```python
 def delete_policy(policy_id, orgs_client):
     """
     Deletes a policy.
@@ -118,7 +118,7 @@ The following code example shows how to use `DescribePolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/organizations#code-examples).
 
-```
+```python
 def describe_policy(policy_id, orgs_client):
     """
     Describes a policy.
@@ -147,7 +147,7 @@ The following code example shows how to use `DetachPolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/organizations#code-examples).
 
-```
+```python
 def detach_policy(policy_id, target_id, orgs_client):
     """
     Detaches a policy from a target.
@@ -175,7 +175,7 @@ The following code example shows how to use `ListPolicies`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/organizations#code-examples).
 
-```
+```python
 def list_policies(policy_filter, orgs_client):
     """
     Lists the policies for the account, limited to the specified filter.

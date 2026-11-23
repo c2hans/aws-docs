@@ -29,7 +29,7 @@ The following code example shows how to get started using Amazon Glacier.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 
-```
+```csharp
 using Amazon.Glacier;
 using Amazon.Glacier.Model;
 
@@ -69,7 +69,7 @@ The following code example shows how to use `AddTagsToVault`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Add tags to the items in an Amazon S3 Glacier vault.
     /// </summary>
@@ -103,7 +103,7 @@ The following code example shows how to use `CreateVault`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an Amazon S3 Glacier vault.
     /// </summary>
@@ -137,7 +137,7 @@ The following code example shows how to use `DescribeVault`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Describe an Amazon S3 Glacier vault.
     /// </summary>
@@ -175,7 +175,7 @@ The following code example shows how to use `InitiateJob`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier#code-examples).
 Retrieve an archive from a vault. This example uses the ArchiveTransferManager class. For API details see [ArchiveTransferManager](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Glacier/TArchiveTransferManager).
 
-```
+```csharp
     /// <summary>
     /// Download an archive from an Amazon S3 Glacier vault using the Archive
     /// Transfer Manager.
@@ -235,7 +235,7 @@ The following code example shows how to use `ListJobs`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List Amazon S3 Glacier jobs.
     /// </summary>
@@ -267,7 +267,7 @@ The following code example shows how to use `ListTagsForVault`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List tags for an Amazon S3 Glacier vault.
     /// </summary>
@@ -300,7 +300,7 @@ The following code example shows how to use `ListVaults`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List the Amazon S3 Glacier vaults associated with the current account.
     /// </summary>
@@ -329,7 +329,7 @@ The following code example shows how to use `UploadArchive`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Upload an object to an Amazon S3 Glacier vault.
     /// </summary>

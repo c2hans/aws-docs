@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::SourceEndpoint SrtListenerStandardSourceEndpointConfiguration
 
-<a name="aws-properties-mediaconnect-sourceendpoint-srtlistenerstandardsourceendpointconfiguration-description"></a>The `SrtListenerStandardSourceEndpointConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::SourceEndpoint](aws-resource-mediaconnect-sourceendpoint.md).
+The configuration settings for a source endpoint that uses SRT in listener mode.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-srtlistenerstandardsourceendpointconfiguration-syntax"></a>
@@ -42,13 +42,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-srtlistenerstandardsourceendpointconfiguration-properties"></a>
 
 `EncryptionPassphrase`  <a name="cfn-mediaconnect-sourceendpoint-srtlistenerstandardsourceendpointconfiguration-encryptionpassphrase"></a>
-Property description not available.
+The configuration for the AWS Secrets Manager secret that holds the key or passphrase used to encrypt an endpoint connection.
 *Required*: No
 *Type*: [EndpointEncryptionSecretConfiguration](aws-properties-mediaconnect-sourceendpoint-endpointencryptionsecretconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MinimumLatencyMilliseconds`  <a name="cfn-mediaconnect-sourceendpoint-srtlistenerstandardsourceendpointconfiguration-minimumlatencymilliseconds"></a>
-Property description not available.
+The minimum latency, in milliseconds, for the SRT connection. The valid range is 10 to 10000.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `10`
@@ -56,13 +56,13 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourceAddress`  <a name="cfn-mediaconnect-sourceendpoint-srtlistenerstandardsourceendpointconfiguration-sourceaddress"></a>
-Property description not available.
+The IP address that the source endpoint listens on for incoming connections.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourceListenerPort`  <a name="cfn-mediaconnect-sourceendpoint-srtlistenerstandardsourceendpointconfiguration-sourcelistenerport"></a>
-Property description not available.
+The port that the source endpoint listens on for incoming connections. The valid range is 1024 to 65535.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `1024`
@@ -70,7 +70,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StreamId`  <a name="cfn-mediaconnect-sourceendpoint-srtlistenerstandardsourceendpointconfiguration-streamid"></a>
-Property description not available.
+The stream ID that identifies the content for the SRT connection.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps, Duration } from 'aws-cdk-lib';
 import { EventbridgeToKinesisFirehoseToS3, EventbridgeToKinesisFirehoseToS3Props } from '@aws-solutions-constructs/aws-eventbridge-kinesisfirehose-s3';
@@ -40,7 +40,7 @@ const EventbridgeToKinesisFirehoseToS3Props: EventbridgeToKinesisFirehoseToS3Pro
 new EventbridgeToKinesisFirehoseToS3(this, 'test-eventbridge-firehose-s3', EventbridgeToKinesisFirehoseToS3Props);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_eventbridge_kinesis_firehose_s3 import EventbridgeToKinesisFirehoseToS3, EventbridgeToKinesisFirehoseToS3Props
 from aws_cdk import (
     aws_events as events,
@@ -56,7 +56,7 @@ EventbridgeToKinesisFirehoseToS3(self, 'test-eventbridge-firehose-s3',
                                 ))
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

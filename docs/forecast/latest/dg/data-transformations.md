@@ -35,7 +35,7 @@ What follows are examples of how you can specify a time series transformation us
 
 This example applies a 10% discount to all items in Seattle store. Note that "City" is a forecast dimension.
 
-```
+```json
 TimeSeriesTransformations=[
   {
     "Action": {
@@ -59,7 +59,7 @@ TimeSeriesTransformations=[
 
 This example applies a 10% discount on all items in the "electronics" category. Note that "product\_category" is an item metadata.
 
-```
+```json
 TimeSeriesTransformations=[
   {
     "Action": {
@@ -83,7 +83,7 @@ TimeSeriesTransformations=[
 
 This example applies a 20% markup on the specific item\_id BOA21314K.
 
-```
+```json
 TimeSeriesTransformations=[
   {
     "Action": {
@@ -107,7 +107,7 @@ TimeSeriesTransformations=[
 
 This example adds $1 to all items in the Seattle and Bellevue stores.
 
-```
+```json
 TimeSeriesTransformations=[
   {
     "Action": {
@@ -145,7 +145,7 @@ TimeSeriesTransformations=[
 
 This example subtracts $1 from all items in Seattle in the month of September, 2022.
 
-```
+```json
 TimeSeriesTransformations=[
   {
     "Action": {
@@ -179,7 +179,7 @@ TimeSeriesTransformations=[
 
 In this example, the price is first multiplied by 10, then $5 is subtracted from the price. Note that actions are applied in the order that they are declared.
 
-```
+```json
 TimeSeriesTransformations=[
   {
     "Action": {
@@ -217,7 +217,7 @@ TimeSeriesTransformations=[
 
 This example creates an empty set, so the action is not applied to any time series. This code tries to modify the price of all items at the stores in Seattle and Bellevue. Because conditions are joined with the AND operation, and a store can exist in only one city, the results are an empty set. Therefore, the action is not applied.
 
-```
+```json
 TimeSeriesTransformations=[
   {
     "Action": {
@@ -248,7 +248,7 @@ For an example of how to apply a condition to multiple attributes, see Example 4
 
 Transformation conditions that use a timestamp apply to the boundary-aligned data, not the raw data. For example, you input your data hourly and forecast daily. In this case, Forecast aligns timestamps to the day, so `2020-12-31 01:00:00` is aligned to `2020-12-31 00:00:00`. This code will create an empty set because it does not specify the timestamp at the boundary-aligned timestamp.
 
-```
+```json
 TimeSeriesTransformations=[
   {
     "Action": {

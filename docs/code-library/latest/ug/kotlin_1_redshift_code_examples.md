@@ -30,7 +30,7 @@ The following code example shows how to use `CreateCluster`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/redshift#code-examples).
 Create the cluster.
 
-```
+```kotlin
 suspend fun createCluster(
     clusterId: String?,
     masterUsernameVal: String?,
@@ -64,7 +64,7 @@ The following code example shows how to use `DeleteCluster`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/redshift#code-examples).
 Delete the cluster.
 
-```
+```kotlin
 suspend fun deleteRedshiftCluster(clusterId: String?) {
     val request =
         DeleteClusterRequest {
@@ -89,7 +89,7 @@ The following code example shows how to use `DescribeClusters`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/redshift#code-examples).
 Describe the cluster.
 
-```
+```kotlin
 suspend fun describeRedshiftClusters() {
     RedshiftClient.fromEnvironment { region = "us-west-2" }.use { redshiftClient ->
         val clusterResponse = redshiftClient.describeClusters(DescribeClustersRequest {})
@@ -115,7 +115,7 @@ The following code example shows how to use `ModifyCluster`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/redshift#code-examples).
 Modify a cluster.
 
-```
+```kotlin
 suspend fun modifyCluster(clusterId: String?) {
     val modifyClusterRequest =
         ModifyClusterRequest {

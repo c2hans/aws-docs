@@ -137,7 +137,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-monitoring-guardduty-threat-intel-set-delete-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "Region": "us-east-1",
   "ThreatIntelSetId": "0cb0141ab9fbde177613ab9436212e90"
@@ -147,7 +147,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-monitoring-guardduty-threat-intel-set-delete-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "DetectorId": "12abc34d567e8fa901bc2d34e56789f0",
   "Region": "us-east-1",

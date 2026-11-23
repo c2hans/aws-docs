@@ -40,7 +40,7 @@ Specify the parameters JSON for template creation. You can use most of the JSON 
 
 Call the `createJobTemplate` method by creating a promise for invoking an `AWS.MediaConvert` service object, passing the parameters. Then handle the response in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the Region
@@ -194,7 +194,7 @@ templatePromise.then(
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node emc_create_jobtemplate.js
 ```
 
@@ -207,7 +207,7 @@ Create a Node.js module with the file name `emc_template_createjob.js`. Be sure 
 
 Create the job creation parameters JSON, including the name of the job template to use, and the `Settings` to use that are specific to the job you're creating. Then call the `createJobs` method by creating a promise for invoking an `AWS.MediaConvert` service object, passing the parameters. Handle the response in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the Region
@@ -264,7 +264,7 @@ templateJobPromise.then(
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node emc_template_createjob.js
 ```
 
@@ -277,7 +277,7 @@ Create a Node.js module with the file name `emc_listtemplates.js`. Be sure to co
 
 Create an object to pass the request parameters for the `listTemplates` method of the `AWS.MediaConvert` client class. Include values to determine what templates to list (`NAME`, `CREATION DATE`, `SYSTEM`), how many to list, and their sort order. To call the `listTemplates` method, create a promise for invoking an MediaConvert service object, passing the parameters. Then handle the response in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the Region
@@ -309,7 +309,7 @@ listTemplatesPromise.then(
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node emc_listtemplates.js
 ```
 
@@ -322,7 +322,7 @@ Create a Node.js module with the file name `emc_deletetemplate.js`. Be sure to c
 
 Create an object to pass the name of the job template you want to delete as parameters for the `deleteJobTemplate` method of the `AWS.MediaConvert` client class. To call the `deleteJobTemplate` method, create a promise for invoking an MediaConvert service object, passing the parameters. Handle the response in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the Region
@@ -352,7 +352,7 @@ deleteTemplatePromise.then(
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node emc_deletetemplate.js
 ```
 

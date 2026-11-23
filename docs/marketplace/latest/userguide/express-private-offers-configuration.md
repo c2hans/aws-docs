@@ -13,7 +13,7 @@ To configure express private offers, sellers must have an active SaaS contract o
 
 For express private offer configuration permissions, you can use the [AWSMarketplaceFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceFullAccess.html) or [AWSMarketplaceSellerFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html) managed policy. You also can use the following IAM policy:
 
-```
+```json
 {
     "Version": "2012-10-17"		 	 	 ,
     "Statement": [{
@@ -76,7 +76,7 @@ For express private offer configuration permissions, you can use the [AWSMarketp
 ## Access express private offers
 <a name="express-private-offers-access"></a>
 
-You can access express private offers from the **Private offers** or **Products** tab on AWS Partner Central.
+You can access express private offers from two places on AWS Partner Central: the product listing experience when you create or manage a product listing, or from the Private offers tab.
 
 ## Rate card types and implementation
 <a name="express-private-offers-configuration-rate-cards"></a>

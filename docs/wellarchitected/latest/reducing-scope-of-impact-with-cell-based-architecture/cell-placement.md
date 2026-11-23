@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 
 ![Diagram showing importance of cell placement.](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/cell-placement.png)
 
+*Cell placement*
+
  In an ideal world, it is important to find the percentage of utilization and the limit that each of your cells will work with the greatest possible predictability and stability. It is not because your cell supports 10K TPS that you must constantly be operating [on the threshold of this limit, as already recommended in REL01-BP06](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_manage_service_limits_suff_buffer_limits.html). Ensure that a sufficient gap exists between the current quotas and the maximum usage to accommodate failover.
 
  For data and state heavy workloads, the problem of allocation becomes a core competency. This is classically a pretty deep area of allocation, scheduling, and forecasting, that is, it is your strategy to evenly distribute your traffic among the cells. For example, when a customer or partitioned key starts to dominate a cell, you need to migrate some tenants or customers to other cells. In addition to the entry of new tenants or clients, there are other scenarios where a placement strategy is necessary:

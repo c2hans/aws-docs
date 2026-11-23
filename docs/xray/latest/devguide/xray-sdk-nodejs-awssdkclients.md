@@ -21,7 +21,7 @@ You can instrument all AWS SDK V2 clients by wrapping your `aws-sdk` require sta
 
 **Example app.js - AWS SDK instrumentation**
 
-```
+```js
 const AWS = AWSXRay.captureAWS(require('aws-sdk'));
 ```
 
@@ -29,7 +29,7 @@ To instrument individual clients, wrap your AWS SDK client in a call to `AWSXRay
 
 **Example app.js - DynamoDB client instrumentation**
 
-```
+```js
     const AWSXRay = require('aws-xray-sdk');
 ...
     const ddb = AWSXRay.captureAWSClient(new AWS.DynamoDB());
@@ -42,7 +42,7 @@ If you want to use [TypeScript](https://www.typescriptlang.org/docs/handbook/typ
 
 **Example app.js - AWS SDK instrumentation**
 
-```
+```javascript
 import * as AWS from 'aws-sdk';
 import * as AWSXRay from 'aws-xray-sdk';
 ```
@@ -51,7 +51,7 @@ To instrument all AWS clients with ESM, use the following code:
 
 **Example app.js - AWS SDK instrumentation**
 
-```
+```javascript
 import * as AWS from 'aws-sdk';
 import * as AWSXRay from 'aws-xray-sdk';
 const XRAY_AWS = AWSXRay.captureAWS(AWS);
@@ -97,7 +97,7 @@ The AWS SDK for JavaScript V3 is modular, so your code only loads the modules it
 
 If you want to use TypeScript with ECMAScript Modules (ESM) to load your JavaScript code, you can use the following example to import libraries:
 
-```
+```javascript
 import * as AWS from 'aws-sdk';
 import * as AWSXRay from 'aws-xray-sdk';
 ```
@@ -106,7 +106,7 @@ Instrument each AWS SDK client using the `AWSXRay.captureAWSv3Client` method. Fo
 
 **Example app.js - DynamoDB client instrumentation using SDK for Javascript V3**
 
-```
+```js
     const AWSXRay = require('aws-xray-sdk');
     const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 ...

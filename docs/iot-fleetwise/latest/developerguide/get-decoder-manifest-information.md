@@ -12,7 +12,7 @@ To retrieve information about a decoder manifest, run the following command.
 
 Replace {{decoder-manifest}} with the name of the decoder manifest that you want to retrieve.
 
-```
+```bash
 aws iotfleetwise get-decoder-manifest --name {{decoder-manifest}}
 ```
 
@@ -26,7 +26,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

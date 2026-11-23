@@ -10,6 +10,8 @@ The **Sample Code** topic contains snippets of code organized by programming lan
 
 Before you start using these examples, we recommend that you first read [How Amazon Polly works](how-text-to-speech-works.md) and follow the steps described in [Getting started with Amazon Polly](getting-started.md).
 
+For more end-to-end speech AI applications that you can build with Amazon Polly, such as cascaded voice agents, a live speech translator, an avatar, a two-speaker podcast, and a virtual assistant, see the [Amazon Polly GitHub repository](https://github.com/aws-samples/amazon-ai-samples/tree/main/text-to-speech) on the GitHub website.
+
 **Topics**
 + [Java samples](java-samples.md)
 + [Python samples](python-samples.md)

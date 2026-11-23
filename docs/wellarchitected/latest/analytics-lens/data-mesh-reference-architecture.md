@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/da
 
 ![Data mesh reference architecture](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/images/data-mesh-reference-architecture.png)
 
+*Data mesh reference architecture*
+
  Each consumer, producer, and central governance layer are their own separate data domain and typically reside in their own separate AWS account. Information is shared between domains.
 
 1.  Data producers are source systems that generate data, which is shared throughout the organization. Data producers can be an application, data stream, data lake, or data warehouse – essentially a domain that either generates or updates data. The business owners that are responsible for the data producers must have their data attributes classified for consumers to inherit the classification so data processing and data access to that data meets the organization’s or industry’s data governance policy.

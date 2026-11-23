@@ -18,7 +18,7 @@ There are two ways to add a GitHub Action to a CodeCatalyst workflow:
 
   Here is an example of a **GitHub Actions** action wrapping the [Super-Linter](https://github.com/marketplace/actions/super-linter) GitHub Action:
 
-  ```
+  ```yaml
   Actions:
     GitHubAction:
       Identifier: aws/github-actions-runner@v1

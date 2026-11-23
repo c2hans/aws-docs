@@ -86,7 +86,7 @@ To view a code example for using the `$replaceOne` command, choose the tab for t
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function replaceOne() {
@@ -120,7 +120,7 @@ replaceOne();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def replaceOne():

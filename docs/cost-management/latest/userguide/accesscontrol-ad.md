@@ -36,7 +36,7 @@ For `ce:GetAnomalies`, use the optional `monitorArn` parameter. When used with t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -69,7 +69,7 @@ To allow the IAM entity to update or delete anomaly monitors, use a policy simil
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -102,7 +102,7 @@ Create an identity-based policy that allows updating anomaly monitors. If the mo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

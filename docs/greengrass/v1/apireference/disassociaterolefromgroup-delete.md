@@ -13,7 +13,7 @@ URI: `DELETE /greengrass/groups/{{GroupId}}/role`
 ## CLI:
 <a name="disassociaterolefromgroup-delete-cli"></a>
 
-```
+```bash
 aws greengrass disassociate-role-from-group \
   --group-id <value>  \
   [--cli-input-json <value>] \
@@ -22,7 +22,7 @@ aws greengrass disassociate-role-from-group \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string"
 }
@@ -43,7 +43,7 @@ type: string
 Success.
  [ DisassociateRoleFromGroupResponse](definitions-disassociaterolefromgroupresponse.md)
 
-```
+```json
 {
 "DisassociatedAt": "string"
 }
@@ -58,7 +58,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -94,7 +94,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

@@ -30,7 +30,7 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/supported-raspber
 
 1. Extract the package:
 
-   ```
+   ```bash
    cd ~/Downloads
    tar -xzf IotMI-HubSDK-DemoApp-v1.0.0.tar.gz
    cd IotManagedIntegrations-DemoApp
@@ -44,7 +44,7 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/supported-raspber
 
 1. Create a `.env` file in the root directory:
 
-   ```
+   ```bash
    # AWS Configuration
    REACT_APP_AWS_REGION=your_region
    REACT_APP_AWS_ACCESS_KEY_ID=your_access_key
@@ -67,7 +67,7 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/supported-raspber
 
 1. Access the application at:
 
-   ```
+   ```bash
    http://localhost:3000
    ```
 

@@ -24,7 +24,7 @@ You can run `pcluster-diag` on any cluster node. If you don't know where the pro
 
 To see which checks the tool will execute, use the `describe-checks` subcommand, which returns a JSON array of every registered check, each with its id and description.
 
-```
+```bash
 $ pcluster-diag describe-checks
 [
   {
@@ -40,7 +40,7 @@ $ pcluster-diag describe-checks
 
 Connect to the node that you want to diagnose, and then execute the `run` subcommand as root.
 
-```
+```bash
 $ sudo pcluster-diag run
 ```
 
@@ -67,7 +67,7 @@ Print the usage information. `pcluster-diag run --help` prints the options of th
 
 `pcluster-diag` emits a JSON report that accounts for every check it ran, whether the check passed, warned, failed, or was skipped. `context` describes the node that was diagnosed. The general structure of the report is as follows:
 
-```
+```json
 {
   "context": { ... },
   "results": [
@@ -121,7 +121,7 @@ In AWS ParallelCluster versions 3.16.0 and later, the `pcluster-diag` command is
 
 To update the tool from the `develop` branch, run the following on the node where you want to execute the tool.
 
-```
+```bash
 $ curl -fL https://github.com/aws/aws-parallelcluster-cookbook/archive/refs/heads/develop.tar.gz \
   | sudo tar -xz --strip-components=5 -C /opt/parallelcluster/sources/pcluster-diag \
     --wildcards '*/cookbooks/aws-parallelcluster-platform/files/pcluster-diag/*'
@@ -129,7 +129,7 @@ $ curl -fL https://github.com/aws/aws-parallelcluster-cookbook/archive/refs/head
 
 Verify the tool is functional:
 
-```
+```bash
 $ sudo pcluster-diag describe-checks
 ```
 
@@ -146,7 +146,7 @@ In AWS ParallelCluster versions older than 3.16.0, the `pcluster-diag` command i
 
 To install the tool from the `develop` branch, run the following on the node where you want to execute the tool.
 
-```
+```bash
 $ sudo mkdir -p /opt/parallelcluster/sources/pcluster-diag
 curl -fL https://github.com/aws/aws-parallelcluster-cookbook/archive/refs/heads/develop.tar.gz \
   | sudo tar -xz --strip-components=5 -C /opt/parallelcluster/sources/pcluster-diag \
@@ -155,14 +155,14 @@ curl -fL https://github.com/aws/aws-parallelcluster-cookbook/archive/refs/heads/
 
 Verify the tool is functional:
 
-```
+```bash
 $ PYTHONPATH=/opt/parallelcluster/sources/pcluster-diag \
   /opt/parallelcluster/pyenv/versions/*/envs/cookbook_virtualenv/bin/python3 -m pcluster_diag.cli describe-checks
 ```
 
 To execute the checks, run the following as root. This command is equivalent to `sudo pcluster-diag run` and accepts the same options.
 
-```
+```bash
 $ sudo PYTHONPATH=/opt/parallelcluster/sources/pcluster-diag \
   /opt/parallelcluster/pyenv/versions/*/envs/cookbook_virtualenv/bin/python3 -m pcluster_diag.cli run
 ```

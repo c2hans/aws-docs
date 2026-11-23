@@ -73,7 +73,7 @@ With API-driven configuration, you define Slurm node types, partition assignment
 
 Add `SlurmConfig` to each instance group to define the Slurm node type and partition assignment.
 
-```
+```json
 "SlurmConfig": {
     "NodeType": "Controller | Login | Compute",
     "PartitionNames": ["{{string}}"]
@@ -93,7 +93,7 @@ All nodes are automatically added to the universal `dev` partition in addition t
 
 **Example:**
 
-```
+```json
 {
     "InstanceGroupName": "gpu-compute",
     "InstanceType": "ml.p4d.24xlarge",
@@ -115,7 +115,7 @@ All nodes are automatically added to the universal `dev` partition in addition t
 
 Add `Orchestrator.Slurm` to the cluster configuration to specify how HyperPod manages the `slurm.conf` file.
 
-```
+```json
 "Orchestrator": {
     "Slurm": {
         "SlurmConfigStrategy": "Managed | Overwrite | Merge"
@@ -137,7 +137,7 @@ You can change `SlurmConfigStrategy` at any time using UpdateCluster. There is n
 
 **Example:**
 
-```
+```json
 {
     "ClusterName": "my-hyperpod-cluster",
     "InstanceGroups": [...],
@@ -173,7 +173,7 @@ With API-driven configuration, you can configure FSx filesystems per instance gr
 
 Configure FSx for Lustre filesystem mounting for an instance group.
 
-```
+```json
 "InstanceStorageConfigs": [
     {
         "FsxLustreConfig": {
@@ -195,7 +195,7 @@ Configure FSx for Lustre filesystem mounting for an instance group.
 
 Configure FSx for OpenZFS filesystem mounting for an instance group.
 
-```
+```json
 "InstanceStorageConfigs": [
     {
         "FsxOpenZfsConfig": {
@@ -215,7 +215,7 @@ Each instance group can have at most one `FsxLustreConfig` and one `FsxOpenZfsCo
 
 **Example with multiple filesystems:**
 
-```
+```json
 {
     "InstanceGroupName": "gpu-compute",
     "InstanceType": "ml.p4d.24xlarge",
@@ -260,7 +260,7 @@ FSx configuration changes only apply during node provisioning. Existing nodes re
 
 The following example shows a complete CreateCluster request using API-driven Slurm configuration:
 
-```
+```json
 {
     "ClusterName": "ml-training-cluster",
     "InstanceGroups": [
@@ -375,7 +375,7 @@ With the legacy approach, you create a Slurm configuration file named `provision
 
 The following code is the Slurm configuration form you should prepare to properly set up Slurm nodes on your HyperPod cluster. You should complete this form and upload it as part of a set of lifecycle scripts during cluster creation. To learn how this form should be prepared throughout HyperPod cluster creation processes, see [Customizing SageMaker HyperPod clusters using lifecycle scripts](sagemaker-hyperpod-lifecycle-best-practices-slurm.md).
 
-```
+```json
 // Save as provisioning_parameters.json.
 {
     "version": "1.0.0",
@@ -422,8 +422,8 @@ The following code is the Slurm configuration form you should prepare to properl
 <a name="sagemaker-hyperpod-ref-hyperpod-ami"></a>
 
 SageMaker HyperPod runs a DLAMI based on:
-+ [AWS Deep Learning Base GPU AMI (Ubuntu 20.04)](https://aws.amazon.com/releasenotes/aws-deep-learning-base-gpu-ami-ubuntu-20-04/) for orchestration with Slurm.
-+ Amazon Linux 2 based AMI for orchestration with Amazon EKS.
++ [AWS Deep Learning Base GPU AMI (Ubuntu 22.04)](https://docs.aws.amazon.com/dlami/latest/devguide/aws-deep-learning-x86-base-gpu-ami-ubuntu-22-04.html) for orchestration with Slurm.
++ Amazon Linux 2023 based AMI for orchestration with Amazon EKS.
 
 The SageMaker HyperPod DLAMI is bundled with additional packages to support open source tools such as Slurm, Kubernetes, dependencies, and SageMaker HyperPod cluster software packages to support resiliency features such as cluster health check and auto-resume. To follow up with HyperPod software updates that the HyperPod service team distributes through DLAMIs, see [Amazon SageMaker HyperPod release notes](sagemaker-hyperpod-release-notes.md).
 

@@ -144,7 +144,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-access-stack-admin-access-update-ex-min"></a>
 
-```
+```json
 {
   "DomainFQDN": "test.domain.com",
   "StackIds": ["stack-12345678901234567"],
@@ -156,7 +156,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-access-stack-admin-access-update-ex-max"></a>
 
-```
+```json
 {
   "DomainFQDN": "test.domain.com",
   "StackIds": ["stack-12345678901234567"],

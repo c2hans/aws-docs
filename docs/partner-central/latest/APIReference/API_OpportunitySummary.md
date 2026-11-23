@@ -19,7 +19,7 @@ Pattern: `[a-zA-Z]+`
 Required: Yes
 
  ** Arn **   <a name="AWSPartnerCentral-Type-OpportunitySummary-Arn"></a>
- The Amazon Resource Name (ARN) for the opportunity. This globally unique identifier can be used for IAM policies and cross-service references.
+The Amazon Resource Name (ARN) for the opportunity. This globally unique identifier can be used for IAM policies and cross-service references.
 Type: String
 Pattern: `arn:.*`
 Required: No

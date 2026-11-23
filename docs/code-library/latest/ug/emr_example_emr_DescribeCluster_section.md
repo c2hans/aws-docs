@@ -292,7 +292,7 @@ For more information, see [View Amazon EMR cluster status and details](https://d
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/emr#code-examples).
 
-```
+```python
 def describe_cluster(cluster_id, emr_client):
     """
     Gets detailed information about a cluster.
@@ -319,7 +319,7 @@ def describe_cluster(cluster_id, emr_client):
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/emr#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_emr->describecluster(
           iv_clusterid = iv_cluster_id

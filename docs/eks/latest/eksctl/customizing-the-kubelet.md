@@ -10,7 +10,7 @@ Some fields in the `kubelet.yaml` are set by eksctl and therefore are not overwr
 
 The following example config file creates a nodegroup that reserves `300m` vCPU, `300Mi` of memory and `1Gi` of ephemeral-storage for the kubelet; `300m` vCPU, `300Mi` of memory and `1Gi`of ephemeral storage for OS system daemons; and kicks in eviction of pods when there is less than `200Mi` of memory available or less than 10% of the root filesystem.
 
-```
+```yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 

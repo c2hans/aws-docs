@@ -43,6 +43,8 @@ RDS for SQL Server Developer Edition is available in the following AWS Regions:
 + Asia Pacific (Tokyo)
 + Canada (Central)
 + Canada West (Calgary)
++ China (Beijing)
++ China (Ningxia)
 + Europe (Frankfurt)
 + Europe (Zurich)
 + Europe (Ireland)

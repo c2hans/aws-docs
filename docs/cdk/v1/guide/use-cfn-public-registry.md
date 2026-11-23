@@ -61,7 +61,7 @@ For example, suppose there is a public resource named `MY::S5::UltimateBucket` t
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const ubucket = new CfnResource(this, 'MyUltimateBucket', {
     type: 'MY::S5::UltimateBucket::MODULE',
     properties: {
@@ -73,7 +73,7 @@ const ubucket = new CfnResource(this, 'MyUltimateBucket', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const ubucket = new CfnResource(this, 'MyUltimateBucket', {
     type: 'MY::S5::UltimateBucket::MODULE',
     properties: {
@@ -85,7 +85,7 @@ const ubucket = new CfnResource(this, 'MyUltimateBucket', {
 ------
 #### [ Python ]
 
-```
+```python
 ubucket = CfnResource(self, "MyUltimateBucket",
             type="MY::S5::UltimateBucket::MODULE",
             properties=dict(
@@ -95,7 +95,7 @@ ubucket = CfnResource(self, "MyUltimateBucket",
 ------
 #### [ Java ]
 
-```
+```java
 CfnResource.Builder.create(this, "MyUltimateBucket")
 	.type("MY::S5::UltimateBucket::MODULE")
 	.properties(java.util.Map.of(    // Map.of requires Java 9+
@@ -106,7 +106,7 @@ CfnResource.Builder.create(this, "MyUltimateBucket")
 ------
 #### [ C\# ]
 
-```
+```csharp
 new CfnResource(this, "MyUltimateBucket", new CfnResourceProps
 {
     Type = "MY::S5::UltimateBucket::MODULE",

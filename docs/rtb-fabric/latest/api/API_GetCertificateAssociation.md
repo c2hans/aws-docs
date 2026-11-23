@@ -45,6 +45,13 @@ Content-type: application/json
 {
    "acmCertificateArn": "string",
    "associatedAt": number,
+   "errorDetails": [
+      {
+         "code": "string",
+         "message": "string",
+         "resourceIds": [ "string" ]
+      }
+   ],
    "gatewayId": "string",
    "status": "string",
    "updatedAt": number
@@ -67,6 +74,11 @@ Pattern: `arn:(aws|aws-cn|aws-us-gov):acm:[a-z0-9-]+:[0-9]{12}:certificate/[0-9a
  ** [associatedAt](#API_GetCertificateAssociation_ResponseSyntax) **   <a name="rtbfabric-GetCertificateAssociation-response-associatedAt"></a>
 The timestamp of when the certificate was associated.
 Type: Timestamp
+
+ ** [errorDetails](#API_GetCertificateAssociation_ResponseSyntax) **   <a name="rtbfabric-GetCertificateAssociation-response-errorDetails"></a>
+The causes of the failure. Present only when the association is FAILED.
+Type: Array of [ErrorDetail](API_ErrorDetail.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 
  ** [gatewayId](#API_GetCertificateAssociation_ResponseSyntax) **   <a name="rtbfabric-GetCertificateAssociation-response-gatewayId"></a>
 The unique identifier of the gateway.
@@ -105,7 +117,7 @@ The request was denied due to request throttling.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request could not be completed because it fails satisfy the constraints specified by the service.
+The request could not be completed because it fails to satisfy the constraints specified by the service.
 HTTP Status Code: 400
 
 ## See Also

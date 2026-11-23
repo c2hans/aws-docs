@@ -20,7 +20,7 @@ These steps are required when using npm packages from CodeArtifact in CodeBuild.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -65,7 +65,7 @@ After `login` has run successfully, you can run `npm` commands from the `build` 
 **Note**
 It is only necessary to upgrade the AWS CLI with `pip3 install awscli --upgrade --user` if you are using an older CodeBuild image. If you are using the latest image versions, you can remove that line.
 
-```
+```yaml
 pre_build:
   commands:
     - pip3 install awscli --upgrade --user
@@ -78,7 +78,7 @@ build:
 ### Windows
 <a name="npm-packages-in-codebuild-login-windows"></a>
 
-```
+```yaml
 version: 0.2
 phases:
   install:

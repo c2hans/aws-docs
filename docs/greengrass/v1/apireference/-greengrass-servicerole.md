@@ -18,7 +18,7 @@ Produces: application/json
 ### CLI
 <a name="-greengrass-servicerole-get-cli"></a>
 
-```
+```bash
 aws greengrass get-service-role-for-account  \
     [--cli-input-json <value>] \
     [--generate-cli-skeleton]
@@ -31,7 +31,7 @@ aws greengrass get-service-role-for-account  \
 Success.
  [ GetServiceRoleForAccountResponse](definitions-getserviceroleforaccountresponse.md)
 
-```
+```json
 {
   "AssociatedAt": "string",
   "RoleArn": "string"
@@ -50,7 +50,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
   "Message": "string",
   "ErrorDetails": [
@@ -97,7 +97,7 @@ Associates a role with your account. AWS IoT Greengrass uses the role to access 
 
 where used: body; required: true
 
-```
+```json
 {
 "RoleArn": "string"
 }
@@ -112,7 +112,7 @@ type: string
 ### CLI
 <a name="-greengrass-servicerole-put-cli"></a>
 
-```
+```bash
 aws greengrass associate-service-role-to-account \
   [--role-arn <value>]  \
   [--cli-input-json <value>] \
@@ -121,7 +121,7 @@ aws greengrass associate-service-role-to-account \
 
 cli-input-json format:
 
-```
+```json
 {
 "RoleArn": "string"
 }
@@ -134,7 +134,7 @@ cli-input-json format:
 Success.
  [ AssociateServiceRoleToAccountResponse](definitions-associateserviceroletoaccountresponse.md)
 
-```
+```json
 {
 "AssociatedAt": "string"
 }
@@ -149,7 +149,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -185,7 +185,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -229,7 +229,7 @@ Disassociates the service role from your account. Without a service role, deploy
 ### CLI
 <a name="-greengrass-servicerole-delete-cli"></a>
 
-```
+```bash
 aws greengrass disassociate-service-role-from-account  \
   [--cli-input-json <value>] \
   [--generate-cli-skeleton]
@@ -242,7 +242,7 @@ aws greengrass disassociate-service-role-from-account  \
 Success.
  [ DisassociateServiceRoleFromAccountResponse](definitions-disassociateservicerolefromaccountresponse.md)
 
-```
+```json
 {
 "DisassociatedAt": "string"
 }
@@ -257,7 +257,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -301,7 +301,7 @@ Retrieves the service role that is attached to your account.
 ### CLI
 <a name="-greengrass-servicerole-get-cli"></a>
 
-```
+```bash
 aws greengrass get-service-role-for-account  \
   [--cli-input-json <value>] \
   [--generate-cli-skeleton]
@@ -314,7 +314,7 @@ aws greengrass get-service-role-for-account  \
 Success.
  [ GetServiceRoleForAccountResponse](definitions-getserviceroleforaccountresponse.md)
 
-```
+```json
 {
 "AssociatedAt": "string",
 "RoleArn": "string"
@@ -333,7 +333,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

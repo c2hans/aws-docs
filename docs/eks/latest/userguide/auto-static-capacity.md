@@ -62,7 +62,7 @@ Static capacity node pools have several important constraints and behaviors:
 
 You can change the number of replicas in a static capacity node pool using the `kubectl scale` command:
 
-```
+```bash
 # Scale down to 5 nodes
 kubectl scale nodepool static-nodepool --replicas=5
 ```
@@ -74,7 +74,7 @@ When scaling down, EKS Auto Mode will terminate nodes gracefully, respecting Pod
 
 Use the following commands to monitor your static capacity node pools:
 
-```
+```bash
 # View node pool status
 kubectl get nodepool static-nodepool
 
@@ -109,7 +109,7 @@ The `status.nodes` field shows the current number of nodes managed by the node p
 ### Basic static capacity node pool
 <a name="_basic_static_capacity_node_pool"></a>
 
-```
+```yaml
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:
@@ -139,7 +139,7 @@ spec:
 ### Static capacity with specific instance types
 <a name="_static_capacity_with_specific_instance_types"></a>
 
-```
+```yaml
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:
@@ -181,7 +181,7 @@ spec:
 ### Multi-zone static capacity node pool
 <a name="_multi_zone_static_capacity_node_pool"></a>
 
-```
+```yaml
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:
@@ -228,7 +228,7 @@ The following example shows how to use a static capacity node pool with an EC2 C
 
  `NodeClass` defining the `capacityReservationSelectorTerms`
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1
 kind: NodeClass
 metadata:
@@ -245,7 +245,7 @@ spec:
 
  `NodePool` referencing the above `NodeClass` and using `karpenter.sh/capacity-type: reserved`.
 
-```
+```yaml
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:

@@ -141,7 +141,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-other-other-create-review-required-ex-min"></a>
 
-```
+```json
 {
   "Comment": "This is a test comment"
 }
@@ -150,7 +150,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-other-other-create-review-required-ex-max"></a>
 
-```
+```json
 {
   "Comment": "This is a test comment",
   "Priority": "High",

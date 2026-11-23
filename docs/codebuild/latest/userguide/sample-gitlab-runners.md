@@ -54,7 +54,7 @@ In this step, you will create a `.gitlab-ci.yml` file in [`GitLab`](https://gitl
 Navigate to `https://gitlab.com/{{user-name}}/{{project-name}}/-/tree/{{branch-name}}` and create a `.gitlab-ci.yml` file in your repository. You can configure your build environment by doing one of the following:
 + You can specify the CodeBuild project name, in which case the build will use your existing project configuration for the compute, image, image version, and instance size. The project name is needed to link the AWS-related settings of your GitLab job to a specific CodeBuild project. By including the project name in the YAML, CodeBuild is allowed to invoke jobs with the correct project settings.
 
-  ```
+  ```yaml
   tags:
       - codebuild-{{<codebuild-project-name>}}-$CI_PROJECT_ID-$CI_PIPELINE_IID-$CI_JOB_NAME
   ```
@@ -65,7 +65,7 @@ Make sure that your {{<project-name>}} matches the name of the project that you 
 
   The following is an example of a GitLab CI/CD pipeline YAML:
 
-  ```
+  ```yaml
   workflow:
     name: HelloWorld
   stages:          # List of stages for jobs, and their order of execution
@@ -80,7 +80,7 @@ Make sure that your {{<project-name>}} matches the name of the project that you 
   ```
 + You can also override your image and compute type in the tag. See [Compute images supported with the CodeBuild-hosted GitLab runner](sample-gitlab-runners-gitlab-ci.images.md) for a list of curated images. For using custom images, see [Label overrides supported with the CodeBuild-hosted GitLab runner](gitlab-runners-update-labels.md). The compute type and image in the tag will override the environment settings on your project. To override your environment settings for an Amazon EC2 compute build, use the following syntax:
 
-  ```
+  ```yaml
   tags:
       - codebuild-{{<codebuild-project-name>}}-$CI_PROJECT_ID-$CI_PIPELINE_IID-$CI_JOB_NAME
       - image:{{<environment-type>}}-{{<image-identifier>}}
@@ -89,7 +89,7 @@ Make sure that your {{<project-name>}} matches the name of the project that you 
 
   The following is an example of a GitLab CI/CD pipeline YAML:
 
-  ```
+  ```yaml
   stages:
     - build
 
@@ -104,7 +104,7 @@ Make sure that your {{<project-name>}} matches the name of the project that you 
   ```
 + You can override the fleet used for your build in the tag. This will override the fleet settings configured on your project to use the specified fleet. For more information, see [Run builds on reserved capacity fleets](fleets.md). To override your fleet settings for an Amazon EC2 compute build, use the following syntax:
 
-  ```
+  ```yaml
   tags:
       - codebuild-{{<codebuild-project-name>}}-$CI_PROJECT_ID-$CI_PIPELINE_IID-$CI_JOB_NAME
       - fleet:{{<fleet-name>}}
@@ -112,7 +112,7 @@ Make sure that your {{<project-name>}} matches the name of the project that you 
 
   To override both the fleet and the image used for the build, use the following syntax:
 
-  ```
+  ```yaml
   tags:
       - codebuild-{{<codebuild-project-name>}}-$CI_PROJECT_ID-$CI_PIPELINE_IID-$CI_JOB_NAME
       - fleet:{{<fleet-name>}}
@@ -121,7 +121,7 @@ Make sure that your {{<project-name>}} matches the name of the project that you 
 
   The following is an example of a GitLab CI/CD pipeline YAML:
 
-  ```
+  ```yaml
   stages:
     - build
 
@@ -143,7 +143,7 @@ After you commit your changes to `.gitlab-ci.yml`, a GitLab pipeline will be tri
 
 By default, CodeBuild ignores any buildspec commands when running a self-managed GitLab build. To run buildspec commands during the build, `buildspec-override:true` can be added as a suffix to `tags`:
 
-```
+```yaml
 tags:
     - codebuild-{{<codebuild-project-name>}}-$CI_PROJECT_ID-$CI_PIPELINE_IID-$CI_JOB_NAME
     - buildspec-override:true
@@ -171,7 +171,7 @@ You can review the requested labels in the log while the job is waiting to be pi
 
 The following YAML-formatted portion of a CloudFormation template creates a filter group that triggers a build when it evaluates to true. The following filter group specifies a GitLab CI/CD pipeline job request with a CI/CD pipeline name matching the regular expression `\[CI-CodeBuild\]`.
 
-```
+```yaml
 CodeBuildProject:
   Type: AWS::CodeBuild::Project
   Properties:

@@ -10,7 +10,7 @@ CloudTrail log entries for this operation recorded on or after December 2022 inc
 
 For an example of an `TagResource` CloudTrail log entry, see [TagResource](ct-tagresource.md). For information about tagging AWS KMS keys, see [Tags in AWS KMS](tagging-keys.md).
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

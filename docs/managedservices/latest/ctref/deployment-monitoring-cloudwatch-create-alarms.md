@@ -156,14 +156,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-monitoring-cloudwatch-create-alarms-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="deployment-monitoring-cloudwatch-create-alarms-ex-max"></a>
 
-```
+```json
 {
   "Alarms": [
     {

@@ -44,7 +44,7 @@ The [AdminCreateUserConfig](https://docs.aws.amazon.com/cognito-user-identity-po
 
 The following example, when added to a full API request body, sets a user pool with self-service sign-up inactive and a basic invitation email.
 
-```
+```json
 "AdminCreateUserConfig": {
       "AllowAdminCreateUserOnly": true,
       "InviteMessageTemplate": {
@@ -67,7 +67,7 @@ The user pool [password policy](managing-users-passwords.md#user-pool-settings-p
 The user pool [custom attributes](user-pool-settings-attributes.md#user-pool-settings-custom-attributes.title). They are important to the user creation and sign-up process because you can only set a value for *immutable* custom attributes when you first create a user.
 This parameter also sets the required attributes for your user pool. The following text, when inserted into the `Schema` element of a full API request body, set the `email` attribute as required.
 
-```
+```json
 {
             "Name": "email",
             "Required": true

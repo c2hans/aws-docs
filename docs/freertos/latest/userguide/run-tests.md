@@ -63,7 +63,7 @@ Starting in IDT v3.0.0, IDT checks online for newer test suites. For more inform
 
 **Example**
 
-```
+```bash
 devicetester_{{[linux | mac | win_x86-64]}} run-suite --group-id mqtt --test-id mqtt_test
 ```
 
@@ -80,12 +80,12 @@ devicetester_{{[linux | mac | win_x86-64]}} run-suite --group-id mqtt --test-id 
 **Example**
 To always download and use the latest test suite, use the following command.
 
-```
+```bash
 devicetester_{{[linux | mac | win_x86-64]}} run-suite --userdata {{userdata file}} --group-id {{group ID}} --upgrade-test-suite y
 ```
 To use the latest test suite on your system, use the following command.
 
-```
+```bash
 devicetester_{{[linux | mac | win_x86-64]}} run-suite --userdata {{userdata file}} --group-id {{group ID}} --upgrade-test-suite n
 ```
 
@@ -95,14 +95,14 @@ Use the help option to learn more about `run-suite` options.
 **Example**
 **Example**
 
-```
+```bash
 devicetester_{{[linux | mac | win_x86-64]}} run-suite -h
 ```
 
 ------
 #### [ IDT v1.7.0 and earlier ]
 
-```
+```bash
 devicetester_{{[linux | mac | win]}} run-suite  \
     --suite-id {{suite-id}}  \
     --pool-id {{your-device-pool}}  \
@@ -116,7 +116,7 @@ If you are running IDT for FreeRTOS on Windows, use forward slashes (/) to speci
 
 Use the following command to run a specific test group.
 
-```
+```bash
 devicetester_{{[linux | mac | win]}} run-suite  \
     --suite-id FRQ_1 --group-id {{group-id}}  \
     --pool-id {{pool-id}}  \

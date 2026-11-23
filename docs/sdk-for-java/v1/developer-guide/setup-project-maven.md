@@ -16,7 +16,7 @@ You must have Maven installed to use the guidance in this topic. If it isn’t a
 
 To create a basic Maven package, open a terminal (command-line) window and run:
 
-```
+```sh
 mvn -B archetype:generate \
   -DarchetypeGroupId=org.apache.maven.archetypes \
   -DgroupId=org.example.basicapp \
@@ -27,7 +27,7 @@ Replace *org.example.basicapp* with the full package namespace of your applicati
 
 By default, creates a project template for you using the [quickstart](http://maven.apache.org/archetypes/maven-archetype-quickstart/) archetype, which is a good starting place for many projects. There are more archetypes available; visit the [Maven archetypes](https://maven.apache.org/archetypes/index.html) page for a list of archetypes packaged with . You can choose a particular archetype to use by adding the `-DarchetypeArtifactId` argument to the `archetype:generate` command. For example:
 
-```
+```sh
 mvn archetype:generate \
   -DarchetypeGroupId=org.apache.maven.archetypes \
   -DarchetypeArtifactId=maven-archetype-webapp \
@@ -50,7 +50,7 @@ To select individual SDK modules, use the AWS SDK for Java bill of materials (BO
 
 To use the BOM, add a `<dependencyManagement>` section to your application’s `pom.xml` file, adding `aws-java-sdk-bom` as a dependency and specifying the version of the SDK you want to use:
 
-```
+```xml
 <dependencyManagement>
   <dependencies>
     <dependency>
@@ -68,7 +68,7 @@ To view the latest version of the AWS SDK for Java BOM that is available on Mave
 
 You can now select individual modules from the SDK that you use in your application. Because you already declared the SDK version in the BOM, you don’t need to specify the version number for each component.
 
-```
+```xml
 <dependencies>
   <dependency>
     <groupId>com.amazonaws</groupId>
@@ -88,7 +88,7 @@ You can also refer to the * AWS Code Sample Catalog * to learn what dependencies
 
 If you would like to pull in the *entire* SDK as a dependency, don’t use the BOM method, but simply declare it in your `pom.xml` like this:
 
-```
+```xml
 <dependencies>
   <dependency>
     <groupId>com.amazonaws</groupId>
@@ -103,7 +103,7 @@ If you would like to pull in the *entire* SDK as a dependency, don’t use the B
 
 Once you have your project set up, you can build it using Maven’s `package` command:
 
-```
+```java
 mvn package
 ```
 
@@ -114,6 +114,6 @@ This will create your `0jar` file in the `target` directory.
 
 You can use Apache Maven to build the SDK from source. To do so, [download the SDK code from GitHub](https://github.com/aws/aws-sdk-java), unpack it locally, and then execute the following Maven command:
 
-```
+```java
 mvn clean install
 ```

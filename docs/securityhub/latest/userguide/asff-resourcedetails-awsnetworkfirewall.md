@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsN
 
 **Example**
 
-```
+```json
 "AwsNetworkFirewallFirewall": {
     "DeleteProtection": false,
     "FirewallArn": "arn:aws:network-firewall:us-east-1:024665936331:firewall/testfirewall",
@@ -47,7 +47,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsN
 
 **Example**
 
-```
+```json
 "AwsNetworkFirewallFirewallPolicy": {
    "FirewallPolicy": {
     "StatefulRuleGroupReferences": [
@@ -82,7 +82,7 @@ The following examples show the AWS Security Finding Format (ASFF) for the `AwsN
 
 **Example – stateless rule group**
 
-```
+```json
 "AwsNetworkFirewallRuleGroup": {
     "Capacity": 600,
     "RuleGroupArn": "arn:aws:network-firewall:us-east-1:444455556666:stateless-rulegroup/Stateless-1",
@@ -139,7 +139,7 @@ The following examples show the AWS Security Finding Format (ASFF) for the `AwsN
 
 **Example – stateful rule group**
 
-```
+```json
 "AwsNetworkFirewallRuleGroup": {
     "Capacity": 100,
     "RuleGroupArn": "arn:aws:network-firewall:us-east-1:444455556666:stateful-rulegroup/tupletest",

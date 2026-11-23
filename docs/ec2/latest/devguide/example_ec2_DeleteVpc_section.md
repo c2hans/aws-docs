@@ -34,7 +34,7 @@ For more information, see [Delete your VPC](https://docs.aws.amazon.com/vpc/late
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/ec2#code-examples).
 
-```
+```php
     /**
      * @param string $vpcId
      * @return void
@@ -59,7 +59,7 @@ For more information, see [Delete your VPC](https://docs.aws.amazon.com/vpc/late
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified VPC. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2Vpc -VpcId vpc-12345678
 ```
 **Output:**
@@ -75,7 +75,7 @@ Performing operation "Remove-EC2Vpc (DeleteVpc)" on Target "vpc-12345678".
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified VPC. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2Vpc -VpcId vpc-12345678
 ```
 **Output:**
@@ -94,7 +94,7 @@ Performing operation "Remove-EC2Vpc (DeleteVpc)" on Target "vpc-12345678".
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ec2#code-examples).
 
-```
+```python
 class VpcWrapper:
     """Encapsulates Amazon Elastic Compute Cloud (Amazon EC2) Amazon Virtual Private Cloud actions."""
 
@@ -142,7 +142,7 @@ class VpcWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ec2->deletevpc( iv_vpcid = iv_vpc_id ).
         MESSAGE 'Deleted VPC.' TYPE 'I'.

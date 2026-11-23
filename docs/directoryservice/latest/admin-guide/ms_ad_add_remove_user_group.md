@@ -54,7 +54,7 @@ You can add an AWS Managed Microsoft AD member to a group with the AWS Managemen
 **To add an AWS Managed Microsoft AD user to a group with the AWS CLI**
 +  To add a user to a group, open the AWS CLI, and run the following command with your Directory ID, group name, and member name:
 
-```
+```bash
 aws ds-data add-group-member \
   --directory-id {{d-1234567890}} \
   --group-name "{{your-group-name}}" \
@@ -71,7 +71,7 @@ For more information, see [`add-group-member`](https://docs.aws.amazon.com/cli/l
 **To add an AWS Managed Microsoft AD user to a group with AWS Tools for PowerShell**
 +  To add a user to a group, open PowerShell, and run the following command with your Directory ID, group name, and member name:
 
-```
+```ps
 Add-DSDGroupMember `
     -DirectoryId {{d-1234567890}} `
     -GroupName "{{your-group-name}}" `
@@ -123,7 +123,7 @@ You can remove an AWS Managed Microsoft AD member from a group with the AWS Mana
 **To remove an AWS Managed Microsoft AD user from a group with AWS CLI**
 +  To remove a user from a group, open the AWS CLI, and run the following command with your Directory ID, group name, and member name:
 
-```
+```bash
 aws ds-data remove-group-member \
   --directory-id {{d-1234567890}} \
   --group-name "{{your-group-name}}" \
@@ -140,7 +140,7 @@ For more information, see [`remove-group-member`](https://docs.aws.amazon.com/cl
 **To remove an AWS Managed Microsoft AD user from a group with AWS Tools for PowerShell**
 +  To remove a user from a group, open PowerShell, and run the following command with your Directory ID, group name, and member name:
 
-```
+```ps
 Remove-DSDGroupMember `
     -DirectoryId {{d-1234567890}} `
     -GroupName "{{your-group-name}}" `
@@ -205,7 +205,7 @@ You can add an AWS Managed Microsoft AD group to a group with the AWS Management
 **To add a child group to your group with the AWS CLI**
 +  To add a child group to a parent group, open the AWS CLI, and run the following command with your Directory ID, group name, and member name:
 
-```
+```bash
 aws ds-data add-group-member \
   --directory-id {{d-1234567890}} \
   --group-name "{{parent-group-name}}" \
@@ -222,7 +222,7 @@ For more information, see [`add-group-member`](https://docs.aws.amazon.com/cli/l
 **To add a child group to your group with AWS Tools for PowerShell**
 +  To add a child group to a parent group, open PowerShell, and run the following command with your Directory ID, group name, and member name:
 
-```
+```ps
 Add-DSDGroupMember `
     -DirectoryId {{d-1234567890}} `
     -GroupName "{{parent-group-name}}" `
@@ -289,7 +289,7 @@ The following describes how to format a request that removes an AWS Managed Micr
 
    To remove a child group from a parent group, open the AWS CLI, and run the following command with your Directory ID, group name, and member name:
 
-```
+```bash
 aws ds-data remove-group-member \
   --directory-id {{d-1234567890}} \
   --group-name "{{parent-group-name}}" \
@@ -308,7 +308,7 @@ The following describes how to format a request that removes an AWS Managed Micr
 
    To remove a child group from a parent group, open the PowerShell, and run the following command with your Directory ID, group name, and member name:
 
-```
+```ps
 Remove-DSDGroupMember `
     -DirectoryId {{d-1234567890}} `
     -GroupName "{{parent-group-name}}" `

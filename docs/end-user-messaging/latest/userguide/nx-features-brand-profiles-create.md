@@ -46,7 +46,7 @@ To pre-fill the brand profile from an existing registration instead, choose **Im
 
 1. The response includes the brand profile ID, ARN, status, and the number of default attributes that were created:
 
-   ```
+   ```json
    {
        "brandProfileId": "bp-gkma20fagojtpys0e",
        "brandProfileArn": "arn:aws:end-user-messaging:us-east-1:111122223333:brand-profile/bp-gkma20fagojtpys0e",

@@ -27,7 +27,7 @@ To check whether a bucket already exists before attempting to create one with th
 
  **Imports**
 
-```
+```java
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
@@ -39,7 +39,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
 if (s3.doesBucketExistV2(bucket_name)) {
     System.out.format("Bucket %s already exists.\n", bucket_name);
     b = getBucket(bucket_name);
@@ -62,7 +62,7 @@ Use the AmazonS3 client’s `listBucket` method. If successful, a list of [Bucke
 
  **Imports**
 
-```
+```java
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
@@ -73,7 +73,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
 List<Bucket> buckets = s3.listBuckets();
 System.out.println("Your {S3} buckets are:");
 for (Bucket b : buckets) {
@@ -103,7 +103,7 @@ Use the AmazonS3 client’s `listObjects` method to retrieve the list of objects
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -115,7 +115,7 @@ import java.util.Iterator;
 
  **Code**
 
-```
+```java
 System.out.println(" - removing objects from bucket");
 ObjectListing object_listing = s3.listObjects(bucket_name);
 while (true) {
@@ -146,7 +146,7 @@ Using a pattern similar to the one used when removing objects within a bucket, r
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -158,7 +158,7 @@ import java.util.Iterator;
 
  **Code**
 
-```
+```java
 System.out.println(" - removing versions from bucket");
 VersionListing version_listing = s3.listVersions(
         new ListVersionsRequest().withBucketName(bucket_name));
@@ -189,7 +189,7 @@ Once you remove the objects from a bucket (including any versioned objects), you
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -201,7 +201,7 @@ import java.util.Iterator;
 
  **Code**
 
-```
+```java
 System.out.println(" OK, bucket ready to delete!");
 s3.deleteBucket(bucket_name);
 ```

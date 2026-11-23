@@ -46,7 +46,7 @@ Make sure you have defined the variable you want to reference. For more informat
 
    For example:
 
-   ```
+   ```yaml
    MyAction:
        Configuration:
          Steps:

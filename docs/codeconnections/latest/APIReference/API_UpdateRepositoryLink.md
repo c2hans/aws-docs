@@ -28,7 +28,7 @@ The request accepts the following data in JSON format.
 The Amazon Resource Name (ARN) of the connection for the repository link to be updated. The updated connection ARN must have the same providerType (such as GitHub) as the original connection ARN for the repo link.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `arn:aws(-[\w]+)*:.+:.+:[0-9]{12}:.+`
+Pattern: `arn:aws(-[\w]+)*:(codestar-connections|codeconnections):[a-z0-9\-]+:[0-9]{12}:connection\/[\w\-]+`
 Required: No
 
  ** [EncryptionKeyArn](#API_UpdateRepositoryLink_RequestSyntax) **   <a name="codeconnections-UpdateRepositoryLink-request-EncryptionKeyArn"></a>

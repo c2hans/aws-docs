@@ -39,7 +39,7 @@ If *point* is not a `POINT`, then an error is returned.
 
 The following SQL returns the `z` coordinate of a point in a 3DZ geometry.
 
-```
+```sql
 SELECT ST_Z(ST_GeomFromEWKT('POINT Z (1 2 3)'));
 ```
 
@@ -51,7 +51,7 @@ st_z
 
 The following SQL returns the `z` coordinate of a point in a 4D geometry.
 
-```
+```sql
 SELECT ST_Z(ST_GeomFromEWKT('POINT ZM (1 2 3 4)'));
 ```
 

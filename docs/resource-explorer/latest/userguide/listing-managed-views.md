@@ -24,7 +24,7 @@ aws resource-explorer-2 list-managed-views  --region region
 
 The command output is a list of ARNs.
 
-```
+```json
 {
   "ManagedViews": [
     "arn:aws:resource-explorer-2:us-east-1:111122223333:managed-view/ManagedViewNameA/1a2b3c4d-5d6e-7f8a-9b0c-abcd11111111",
@@ -44,7 +44,7 @@ aws resource-explorer-2 get-managed-view \
 
 The command output provides details about the specified managed view, similar to the following:
 
-```
+```json
 {
   "ManagedView": {
     "ManagedViewArn": "arn:aws:resource-explorer-2:us-east-1:111122223333:managed-view/ManagedViewNameA/1a2b3c4d-5d6e-7f8a-9b0c-abcd11111111",

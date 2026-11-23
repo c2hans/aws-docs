@@ -53,7 +53,7 @@ You can [Install the FSx for Lustre CSI driver](https://docs.aws.amazon.com/eks/
 
 Persistent Volume (PV) definition for an FSx for Lustre file system, using Static Provisioning (where the FSx instance has already been provisioned).
 
-```
+```yaml
 apiVersion: v1
 kind: PersistentVolume
 metadata:
@@ -79,7 +79,7 @@ spec:
 
 Persistent Volume Claim definition for PV called `fsx-pv`:
 
-```
+```yaml
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -98,7 +98,7 @@ spec:
 
 Configure a pod to use an Persistent Volume Claim of `fsx-claim`:
 
-```
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -125,7 +125,7 @@ For complete examples, see the [FSx for Lustre Driver Examples in GitHub](https:
 
  **Example** Partial example of a Pod deployment YAML with CSI Driver:
 
-```
+```yaml
 # CSI driver dynamically mounts the S3 bucket for each pod
 
 volumes:
@@ -185,7 +185,7 @@ Examples:
 
 A Storage Class (SC) definition for an FSx for OpenZFS volume, used to create a child volume of the root volume ($ROOT\_VOL\_ID) on an existing file system and export the volume to the VPC CIDR ($VPC\_CIDR) using the NFS v4.2 protocol.
 
-```
+```yaml
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
@@ -214,7 +214,7 @@ mountOptions:
 
 A dynamically created Persistent Volume Claim (PVC) against the fsxz-vol-sc created above. **Note**, the storage capacity allocated is 1Gi, this is required for FSx for OpenZFS volumes as noted in the [CSI driver FAQ](https://github.com/kubernetes-sigs/aws-fsx-openzfs-csi-driver/blob/main/docs/FAQ.md). The volume will be provided the full capacity provisioned to the file system with this configuration. If the volume capacity needs to be restricted you can do so using user or group quotas.
 
-```
+```yaml
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -231,7 +231,7 @@ spec:
 
 Configure a pod to mount a volume using the Persistent Volume Claim (PVC) of dynamic-vol-pvc:
 
-```
+```yaml
 kind: Pod
 apiVersion: v1
 metadata:

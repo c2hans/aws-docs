@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool
 AwsDoc::IAM::listAccountAliases(const Aws::Client::ClientConfiguration &clientConfig) {
     Aws::IAM::IAMClient iam(clientConfig);
@@ -88,7 +88,7 @@ For more information, see [Your AWS account ID and its alias](https://docs.aws.a
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.IamException;
 import software.amazon.awssdk.services.iam.model.ListAccountAliasesResponse;
 import software.amazon.awssdk.regions.Region;
@@ -137,7 +137,7 @@ public class ListAccountAliases {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 List the account aliases.
 
-```
+```javascript
 import { ListAccountAliasesCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -175,7 +175,7 @@ export async function* listAccountAliases() {
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/iam#code-examples).
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -201,7 +201,7 @@ iam.listAccountAliases({ MaxItems: 10 }, function (err, data) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun listAliases() {
     IamClient.fromEnvironment { region = "AWS_GLOBAL" }.use { iamClient ->
         val response = iamClient.listAccountAliases(ListAccountAliasesRequest {})
@@ -219,7 +219,7 @@ suspend fun listAliases() {
 **Tools for PowerShell V4**
 **Example 1: This command returns the account alias for the AWS account.**
 
-```
+```powershell
 Get-IAMAccountAlias
 ```
 **Output:**
@@ -232,7 +232,7 @@ ExampleCo
 **Tools for PowerShell V5**
 **Example 1: This command returns the account alias for the AWS account.**
 
-```
+```powershell
 Get-IAMAccountAlias
 ```
 **Output:**
@@ -248,7 +248,7 @@ ExampleCo
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def list_aliases():
     """
     Gets the list of aliases for the current account. An account has at most one alias.
@@ -277,7 +277,7 @@ def list_aliases():
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 List, create, and delete account aliases.
 
-```
+```ruby
 class IAMAliasManager
   # Initializes the IAM client and logger
   #
@@ -334,7 +334,7 @@ end
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_iam->listaccountaliases( ).
         MESSAGE 'Retrieved account alias list.' TYPE 'I'.

@@ -19,7 +19,7 @@ The following sections provide details.
 
 You create the `KinesisVideoClient` object by calling the `createKinesisVideoClient` operation.
 
-```
+```java
 final KinesisVideoClient kinesisVideoClient = KinesisVideoJavaClientFactory
     .createKinesisVideoClient(
         Regions.US_WEST_2,

@@ -68,7 +68,7 @@ You usually call the URL when the client application starts, or its network conn
 
 The following example uses HTML and JavaScript to return the nearest media Region and AWS GovCloud (US) media Region.
 
-```
+```javascript
 <html>
 <head>
   <title>Amazon Chime SDK - Nearest Media Region</title>
@@ -121,7 +121,7 @@ Call [https://region.status.chime.aws/](https://region.status.chime.aws/) to ret
 
 The following example shows a typical result.
 
-```
+```json
 {
   "MeetingsControlRegions": {
     "us-east-1": "recommended",

@@ -117,7 +117,7 @@ Retrieves information about the communication requirements and options that are 
 #### POST schema
 <a name="apps-application-id-jobs-import-request-body-post-example"></a>
 
-```
+```json
 {
   "S3Url": "string",
   "RoleArn": "string",
@@ -136,7 +136,7 @@ Retrieves information about the communication requirements and options that are 
 #### ImportJobsResponse schema
 <a name="apps-application-id-jobs-import-response-body-importjobsresponse-example"></a>
 
-```
+```json
 {
   "Item": [
     {
@@ -173,7 +173,7 @@ Retrieves information about the communication requirements and options that are 
 #### ImportJobResponse schema
 <a name="apps-application-id-jobs-import-response-body-importjobresponse-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "Id": "string",
@@ -205,7 +205,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-jobs-import-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

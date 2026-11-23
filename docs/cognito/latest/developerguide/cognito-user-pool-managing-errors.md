@@ -63,13 +63,13 @@ The following example demonstrates how, when you configure alias attributes in y
 
    **Example AWS CLI command**
 
-   ```
+   ```sh
    aws cognito-idp sign-up --client-id 1234567890abcdef0 --username jie --password PASSWORD --user-attributes Name="email",Value="jie@example.com"
    ```
 
    **Example response**
 
-   ```
+   ```json
    {
        "UserConfirmed": false,
        "UserSub": "{{<subId>}}",
@@ -85,7 +85,7 @@ The following example demonstrates how, when you configure alias attributes in y
 
    **Example AWS CLI command**
 
-   ```
+   ```sh
    aws cognito-idp confirm-sign-up --client-id 1234567890abcdef0 --username=jie --confirmation-code xxxxxx
    ```
 
@@ -93,13 +93,13 @@ The following example demonstrates how, when you configure alias attributes in y
 
    **Example AWS CLI command**
 
-   ```
+   ```sh
    aws cognito-idp sign-up --client-id 1234567890abcdef0 --username shirley --password PASSWORD --user-attributes Name="email",Value="jie@example.com"
    ```
 
    **Example response**
 
-   ```
+   ```json
    {
        "UserConfirmed": false,
        "UserSub": "{{<new subId>}}",
@@ -115,13 +115,13 @@ The following example demonstrates how, when you configure alias attributes in y
 
    **Example AWS CLI command**
 
-   ```
+   ```sh
    aws cognito-idp confirm-sign-up --client-id 1234567890abcdef0 --username=shirley --confirmation-code xxxxxx
    ```
 
    **Example response**
 
-   ```
+   ```sh
    An error occurred (AliasExistsException) when calling the ConfirmSignUp operation: An account with the email already exists.
    ```
 
@@ -131,14 +131,14 @@ This behavior is different from the response that Amazon Cognito returns to `Sig
 
 **Example CLI command**
 
-```
+```sh
 aws cognito-idp sign-up --client-id 1example23456789 --username jie --password PASSWORD
       --user-attributes Name="email",Value="shirley@example.com"
 ```
 
 **Example response**
 
-```
+```sh
 An error occurred (UsernameExistsException) when calling the SignUp operation: User already exists
 ```
 

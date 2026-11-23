@@ -58,6 +58,7 @@ Output:
 
 ```
 {
+    "BucketArn": "arn:aws:s3:::amzn-s3-demo-bucket",
     "BucketRegion": "us-west-2",
     "AccessPointAlias": false
 }

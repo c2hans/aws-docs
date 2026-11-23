@@ -23,7 +23,7 @@ You upload objects to Amazon S3 with the SDK for Kotlin by using the [putObject]
 
 The following code snippet shows a request to upload an object with a `CRC32` checksum. When the SDK sends the request, it calculates the `CRC32` checksum and uploads the object. Amazon S3 stores the checksum with the object.
 
-```
+```kotlin
 val request = PutObjectRequest {
     bucket = "amzn-s3-demo-bucket"
     key = "key"
@@ -47,7 +47,7 @@ A pre-calculated checksum value provided with the request disables automatic com
 
 The following example shows a request with a pre-calculated SHA256 checksum.
 
-```
+```kotlin
 val request = PutObjectRequest {
     bucket = "amzn-s3-demo-bucket"
     key = "key"
@@ -66,7 +66,7 @@ You can also use checksums with multipart uploads.
 
 You must specify the checksum algorithm in the [`CreateMultipartUpload`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/create-multipart-upload.html) request and in each [`UploadPart`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/upload-part.html) request. As a final step, you must specify the checksum of each part in the [`CompleteMultipartUpload`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/complete-multipart-upload.html). The following example shows how to create a multipart upload with the checksum algorithm specified.
 
-```
+```kotlin
 val multipartUpload = s3.createMultipartUpload {
     bucket = "amzn-s3-demo-bucket"
     key = "key"
@@ -110,7 +110,7 @@ When you use the [getObject](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.servic
 
 The request in the following snippet directs the SDK to validate the checksum in the response by calculating the checksum and comparing the values.
 
-```
+```kotlin
 val request = GetObjectRequest {
     bucket = "amzn-s3-demo-bucket"
     key = "key"
@@ -130,7 +130,7 @@ Because the SDK for Kotlin uses streaming responses when it downloads an object 
 
 The following example shows how to validate a checksum by fully consuming the response.
 
-```
+```kotlin
 val request = GetObjectRequest {
     bucket = "amzn-s3-demo-bucket"
     key = "key"
@@ -145,7 +145,7 @@ val response = s3Client.getObject(request) {
 
 By contrast, the code in the following example doesn’t use the object in any way, so the checksum is not validated.
 
-```
+```kotlin
 s3Client.getObject(request) {
     println("Got the object.")
 }

@@ -41,7 +41,7 @@ If you want to create your own IAM role, we recommend using the permissions show
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

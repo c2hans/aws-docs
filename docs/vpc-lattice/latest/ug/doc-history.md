@@ -8,9 +8,10 @@ The following table describes the documentation releases for VPC Lattice.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [CloudWatch metrics for VPC resources](doc-history.md) | VPC Lattice now publishes CloudWatch metrics for resource gateways, resource configurations, and resource consumers (resource VPC endpoints, service-network VPC endpoints, and service network VPC associations). | November 19, 2026 |
 | [Update resource gateway DNS resolution](doc-history.md) | You can now change the Resource Config DNS Resolution setting of a resource gateway after creation. | November 17, 2026 |
 | [Update private DNS settings](doc-history.md) | You can now change the private DNS preference and specified domains of resource VPC endpoints, service-network VPC endpoints, and service network VPC associations after creation. | November 17, 2026 |
-| [Private hosted zone re-use](doc-history.md) | For group resource configurations, VPC Lattice now reuses an existing VPC Lattice-managed private hosted zone when multiple endpoints or VPC associations in a VPC connect to groups with the same group domain. | November 17, 2026 |
+| [Private hosted zone reuse](doc-history.md) | For group resource configurations, VPC Lattice now reuses an existing VPC Lattice-managed private hosted zone when multiple endpoints or VPC associations in a VPC connect to groups with the same group domain. | November 17, 2026 |
 | [Enable or disable private DNS](doc-history.md) | You can now enable or disable private DNS on resource VPC endpoints, service-network VPC endpoints, and service network VPC associations after creation. | November 17, 2026 |
 | [Resource gateways in shared subnets](doc-history.md) | Participant accounts can now create resource gateways and resource configurations in shared VPC subnets. | November 10, 2026 |
 | [Added configurable IP addresses for resource gateways](https://docs.aws.amazon.com/vpc-lattice/latest/ug/resource-gateway.html#ipv4-address-type-per-eni) | VPC Lattice now supports configurable IP addresses for resource gateways. | October 7, 2025 |

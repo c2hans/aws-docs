@@ -11,7 +11,7 @@ Turn-taking is a fundamental aspect of natural conversation. Amazon Nova 2 Sonic
 
 Configure turn detection sensitivity in the sessionStart event:
 
-```
+```json
                 {
     "event": {
         "sessionStart": {

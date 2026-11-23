@@ -28,7 +28,7 @@ For more information, see [Using Resource-based Policies for AWS Lambda](https:/
 **Tools for PowerShell V4**
 **Example 1: This example removes the function policy for the specified StatementId of a Lambda Function.**
 
-```
+```powershell
 $policy =  Get-LMPolicy -FunctionName "MylambdaFunction123" -Select Policy | ConvertFrom-Json| Select-Object -ExpandProperty Statement
 Remove-LMPermission -FunctionName "MylambdaFunction123" -StatementId $policy[0].Sid
 ```
@@ -37,7 +37,7 @@ Remove-LMPermission -FunctionName "MylambdaFunction123" -StatementId $policy[0].
 **Tools for PowerShell V5**
 **Example 1: This example removes the function policy for the specified StatementId of a Lambda Function.**
 
-```
+```powershell
 $policy =  Get-LMPolicy -FunctionName "MylambdaFunction123" -Select Policy | ConvertFrom-Json| Select-Object -ExpandProperty Statement
 Remove-LMPermission -FunctionName "MylambdaFunction123" -StatementId $policy[0].Sid
 ```

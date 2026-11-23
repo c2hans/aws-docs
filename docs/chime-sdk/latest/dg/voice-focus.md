@@ -18,7 +18,7 @@ When you use Amazon Voice Focus, AWS bills you for the active call minutes of ea
 
 This example shows a typical `VoiceFocus` action.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions":[
@@ -47,7 +47,7 @@ This example shows a typical `VoiceFocus` action.
 
 This example shows a successful `ACTION_SUCCESSFUL` event for the `VoiceFocus` action.
 
-```
+```json
 {
    "SchemaVersion": "1.0",
    "Sequence": 3,
@@ -80,7 +80,7 @@ This example shows a successful `ACTION_SUCCESSFUL` event for the `VoiceFocus` a
 
 This example shows a typical `ACTION_FAILED` event for the `VoiceFocus` action.
 
-```
+```json
 {
    "SchemaVersion": "1.0",
    "Sequence":2,

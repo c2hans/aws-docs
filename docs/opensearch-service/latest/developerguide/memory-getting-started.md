@@ -35,7 +35,7 @@ A space stores your events and memories and defines the memory strategies that e
 
 Run the following command.
 
-```
+```bash
 aws opensearchmemory create-space \
     --region us-east-1 \
     --name getting-started-space \
@@ -44,7 +44,7 @@ aws opensearchmemory create-space \
 
 The response includes the ID of the new space and its status.
 
-```
+```json
 {
     "spaceId": "sp-02864597b164",
     "arn": "arn:aws:osm:us-east-1:111122223333:space/sp-02864597b164",
@@ -66,7 +66,7 @@ To create a space from the console instead, open the Amazon OpenSearch Service c
 
 [CreateSpace](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_CreateSpace.html) returns while OpenSearch Memory is still setting up the space. You can't send events to the space until its status is `ACTIVE`. Run the following command to wait.
 
-```
+```bash
 aws opensearchmemory wait space-active \
     --region us-east-1 \
     --space-id sp-02864597b164
@@ -74,7 +74,7 @@ aws opensearchmemory wait space-active \
 
 The command returns when the space is active, which usually takes a few minutes. Then view the space.
 
-```
+```bash
 aws opensearchmemory get-space \
     --region us-east-1 \
     --space-id sp-02864597b164
@@ -82,7 +82,7 @@ aws opensearchmemory get-space \
 
 The response shows the status `ACTIVE` and the two strategies, including the name that OpenSearch Memory generated for the `SUMMARY` strategy.
 
-```
+```json
 {
     "spaceId": "sp-02864597b164",
     "arn": "arn:aws:osm:us-east-1:111122223333:space/sp-02864597b164",
@@ -105,7 +105,7 @@ An event carries content for one actor in one session. In this step, you send a 
 
 Save the following request in a file named `event.json`. Replace the `spaceId` value with your space ID.
 
-```
+```json
 {
     "spaceId": "sp-02864597b164",
     "actorId": "user-123",
@@ -135,7 +135,7 @@ Save the following request in a file named `event.json`. Replace the `spaceId` v
 
 Then run the following command.
 
-```
+```bash
 aws opensearchmemory create-event \
     --region us-east-1 \
     --cli-input-json file://event.json
@@ -143,7 +143,7 @@ aws opensearchmemory create-event \
 
 The response confirms that the event is stored.
 
-```
+```json
 {
     "event": {
         "eventId": "ev-8f3a2c1d9b7e",
@@ -168,7 +168,7 @@ OpenSearch Memory extracts memories after the event is stored, when one of the s
 
 After a brief time, run the following command.
 
-```
+```bash
 aws opensearchmemory search-memories \
     --region us-east-1 \
     --space-id sp-02864597b164 \
@@ -178,7 +178,7 @@ aws opensearchmemory search-memories \
 
 The response lists the matching memories, most relevant first. The exact text depends on the extraction model and may differ from this example.
 
-```
+```json
 {
     "memories": [
         {
@@ -216,7 +216,7 @@ Deleting a space permanently deletes its memories. You can't undo the deletion.
 
 When you finish the tutorial, delete the space so that you stop incurring charges.
 
-```
+```bash
 aws opensearchmemory delete-space \
     --region us-east-1 \
     --space-id sp-02864597b164
@@ -224,7 +224,7 @@ aws opensearchmemory delete-space \
 
 The response shows the status `DELETING`. Deletion continues after the call returns. To wait for it to finish, run the following command.
 
-```
+```bash
 aws opensearchmemory wait space-deleted \
     --region us-east-1 \
     --space-id sp-02864597b164

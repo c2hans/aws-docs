@@ -14,7 +14,7 @@ aws omics start-read-set-activation-job
 
 You receive a response that contains the activation job information, as shown in the following.
 
-```
+```json
 {
     "id": "12345678",
     "sequenceStoreId": "1234567890",
@@ -31,7 +31,7 @@ aws omics get-read-set-activation-job --id {{job ID}} --sequence-store-id {{sequ
 
 The response summarizes the activation job, as shown in the following.
 
-```
+```json
 {
     "id": 123567890,
     "sequenceStoreId": 123467890,

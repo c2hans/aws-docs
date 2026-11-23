@@ -163,7 +163,7 @@ The managed policy attached to the `AmazonSageMakerServiceCatalogProductsUseRole
   1. Toggle both settings and then choose **Submit**.
 + In the IAM console, add the following permissions to `AmazonSageMakerServiceCatalogProductsUseRole`:
 
-  ```
+  ```json
   {
         "Effect": "Allow",
         "Action": [

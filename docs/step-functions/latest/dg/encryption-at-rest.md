@@ -72,7 +72,7 @@ The following is an example AWS KMS key policy from console, without **Key admin
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "key-consolepolicy-1",
@@ -97,7 +97,7 @@ See the *AWS Key Management Service Developer Guide* for information about [spec
 
  Step Functions is integrated with CloudWatch for logging and monitoring. When you enable server-side encryption for your state machine using your own KMS key and enable CloudWatch Log integration, you must allow `delivery.logs.amazonaws.com` to do `kms:Decrypt` action from your AWS KMS key policy:
 
-```
+```json
 {
   "Sid": "Enable log service delivery for integrations",
   "Effect": "Allow",
@@ -113,7 +113,7 @@ If you enable state machine encryption with a AWS KMS key, and your state machin
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -142,7 +142,7 @@ You can choose the same or different AWS KMS keys to encrypt your logs and your 
 
 ****
 
-```
+```json
 {
   "Id": "key-consolepolicy-logging",
   "Version":"2012-10-17",
@@ -195,7 +195,7 @@ The following is an example execution role policy:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -237,7 +237,7 @@ When customer managed key encryption is enabled on an Activity Task, the state m
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -279,13 +279,13 @@ Step Functions provides an encryption context in AWS KMS cryptographic operation
 
 **Example**
 
-```
+```json
 "encryptionContext": {"aws:states:stateMachineArn": "arn:aws:states:{{region}}:{{account-id}}:stateMachine:stateMachineName"}
 ```
 
 **Example**
 
-```
+```json
 "encryptionContext": {"aws:states:activityArn": "arn:aws:states:{{region}}:{{account-id}}:activity:activityName"}
 ```
 
@@ -293,7 +293,7 @@ The following example shows how to limit the use of a AWS KMS key for execution 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -326,7 +326,7 @@ The following example policy uses the `kms:ViaService` condition to allow the AW
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

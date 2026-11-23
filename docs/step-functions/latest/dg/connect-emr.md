@@ -47,7 +47,7 @@ The following table describes the differences between each Amazon EMR service in
 
 The following includes a `Task` state that creates a cluster.
 
-```
+```json
 "Create_Cluster": {
     "Type": "Task",
     "Resource": "arn:aws:states:::elasticmapreduce:createCluster.sync",
@@ -95,7 +95,7 @@ The following includes a `Task` state that creates a cluster.
 
 The following includes a `Task` state that enables termination protection.
 
-```
+```json
 "Enable_Termination_Protection": {
     "Type": "Task",
     "Resource": "arn:aws:states:::elasticmapreduce:setClusterTerminationProtection",
@@ -109,7 +109,7 @@ The following includes a `Task` state that enables termination protection.
 
 The following includes a `Task` state that submits a step to a cluster.
 
-```
+```json
 "Step_One": {
     "Type": "Task",
     "Resource": "arn:aws:states:::elasticmapreduce:addStep.sync",
@@ -141,7 +141,7 @@ The following includes a `Task` state that submits a step to a cluster.
 
 The following includes a `Task` state that cancels a step.
 
-```
+```json
 "Cancel_Step_One": {
     "Type": "Task",
     "Resource": "arn:aws:states:::elasticmapreduce:cancelStep",
@@ -155,7 +155,7 @@ The following includes a `Task` state that cancels a step.
 
 The following includes a `Task` state that terminates a cluster.
 
-```
+```json
 "Terminate_Cluster": {
     "Type": "Task",
     "Resource": "arn:aws:states:::elasticmapreduce:terminateCluster.sync",
@@ -168,7 +168,7 @@ The following includes a `Task` state that terminates a cluster.
 
 The following includes a `Task` state that scales a cluster up or down for an instance group.
 
-```
+```json
 "ModifyInstanceGroupByName": {
     "Type": "Task",
     "Resource": "arn:aws:states:::elasticmapreduce:modifyInstanceGroupByName",
@@ -185,7 +185,7 @@ The following includes a `Task` state that scales a cluster up or down for an in
 
 The following includes a `Task` state that scales a cluster up or down for an instance fleet.
 
-```
+```json
 "ModifyInstanceFleetByName": {
     "Type": "Task",
     "Resource": "arn:aws:states:::elasticmapreduce:modifyInstanceFleetByName",
@@ -213,7 +213,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -236,7 +236,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -260,7 +260,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -279,7 +279,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -299,7 +299,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -330,7 +330,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -349,7 +349,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -369,7 +369,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -391,7 +391,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -414,7 +414,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -436,7 +436,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -459,7 +459,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -481,7 +481,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

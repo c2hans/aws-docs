@@ -21,7 +21,7 @@ IAM Roles that are created by AWS Elastic Disaster Recovery in your account alre
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": {

@@ -20,7 +20,7 @@ To decrypt the data in the **Stored customer input** attribute, use the AWS Encr
 
 The following code sample shows how to decrypt data using the AWS Encryption SDK.
 
-```
+```java
 package com.amazonaws;
 
 import com.amazonaws.encryptionsdk.AwsCrypto;

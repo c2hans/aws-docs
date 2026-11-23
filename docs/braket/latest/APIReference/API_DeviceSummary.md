@@ -23,7 +23,7 @@ Required: Yes
  ** deviceStatus **   <a name="braket-Type-DeviceSummary-deviceStatus"></a>
 The status of the device.
 Type: String
-Valid Values: `ONLINE | OFFLINE | RETIRED`
+Valid Values: `ONLINE | OFFLINE | RETIRED | PAUSED`
 Required: Yes
 
  ** deviceType **   <a name="braket-Type-DeviceSummary-deviceType"></a>

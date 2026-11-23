@@ -9,7 +9,7 @@ A lifecycle hook provides you with the ability to run your own scripts as part o
 ## Syntax
 <a name="node-hook-execution-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.HookExecution:
   capabilities:
     execution:
@@ -47,7 +47,7 @@ Type: String
 ## Example
 <a name="node-hook-execution-example"></a>
 
-```
+```yaml
 SampleHookExecution:
   type: tosca.nodes.AWS.HookExecution
   requirements:

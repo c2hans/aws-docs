@@ -112,7 +112,7 @@ For more information, see [Updating an Amazon EKS cluster Kubernetes version](ht
 **Tools for PowerShell V4**
 **Example 1: This cmdlet returns descriptive information about an update against your Amazon EKS cluster or associated managed node group. **
 
-```
+```powershell
 Get-EKSUpdate -Name "PROD" -UpdateId "ee708232-7d2e-4ed7-9270-d0b5176f0726"
 ```
 **Output:**
@@ -130,7 +130,7 @@ Type      : LoggingUpdate
 **Tools for PowerShell V5**
 **Example 1: This cmdlet returns descriptive information about an update against your Amazon EKS cluster or associated managed node group. **
 
-```
+```powershell
 Get-EKSUpdate -Name "PROD" -UpdateId "ee708232-7d2e-4ed7-9270-d0b5176f0726"
 ```
 **Output:**

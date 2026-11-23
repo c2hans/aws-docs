@@ -124,7 +124,7 @@ For example, use the IAM console to create a role with the following policy:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -189,7 +189,7 @@ In the following example, your [Amazon ECR repository permissions policy](https:
 **Example — Add cross-account permission to your repository**
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -258,7 +258,7 @@ If you can't find information to help you fix your specific issue, the following
 
 The following is a generic example that you can use to catch most exceptions.
 
-```
+```python
 import sagemaker
 from botocore.exceptions import ParamValidationError, ClientError
 
@@ -282,7 +282,7 @@ There are two main categories of errors:
 
 Errors specific to the underlying AWS service are always `botocore.exceptions.ClientError` exceptions. The `botocore.exceptions.ClientError` has an `Error` object and a `ResponseMetadata` object. The following shows the template of a client error:
 
-```
+```json
 {
     'Error': {
         'Code': 'SomeServiceException',
@@ -300,7 +300,7 @@ Errors specific to the underlying AWS service are always `botocore.exceptions.Cl
 
 The following is an example of the specific error handling that you can do with the `botocore.exceptions.ClientError`:
 
-```
+```python
 try:
     sagemaker.some_api_call(SomeParam='some_param')
 

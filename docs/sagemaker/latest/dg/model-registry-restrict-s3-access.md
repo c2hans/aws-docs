@@ -26,7 +26,7 @@ The SCP is what makes the session tag trustworthy. If you apply the bucket polic
 
 In the consuming account, tag the execution role `ManagedBy=SageMaker` and restrict its trust policy to the SageMaker AI service principal. The trust policy must allow both `sts:AssumeRole` and `sts:TagSession`. Without `sts:TagSession`, SageMaker AI cannot apply the `sagemaker:ModelPackageArn` session tag, and Amazon S3 denies every read that the bucket policy in Step 3 requires.
 
-```
+```json
 {
   "RoleName": "GovernedModelExecutionRole",
   "Tags": [ { "Key": "ManagedBy", "Value": "SageMaker" } ],
@@ -46,7 +46,7 @@ In the consuming account, tag the execution role `ManagedBy=SageMaker` and restr
 
 Attach the following SCP in your organization. The first statement allows only the SageMaker AI service principal to assume a role tagged `ManagedBy=SageMaker`. The second allows only SageMaker AI to set the `sagemaker:ModelPackageArn` tag key, which is the only tag key that the bucket policy evaluates. For more information, see [Creating, updating, and deleting service control policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_create.html).
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -82,7 +82,7 @@ Both statements use `StringNotEquals` on `aws:PrincipalServiceName`, which evalu
 
 In the producing account, apply the following policy to the bucket holding the model artifacts. The first statement governs reads by endpoints deployed from a model package. All three of its conditions must hold, and Amazon S3 denies any session that is missing one. The second statement allows model package registration, which happens before any deployment tag exists.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

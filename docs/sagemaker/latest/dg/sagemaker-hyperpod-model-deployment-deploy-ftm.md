@@ -22,7 +22,7 @@ Replace all placeholder values with your actual resource identifiers.
 
 1. Select your Region in your environment.
 
-   ```
+   ```bash
    export REGION=<region>
    ```
 
@@ -30,7 +30,7 @@ Replace all placeholder values with your actual resource identifiers.
 **Note**
 Check with your cluster admin to ensure permissions are granted for this role or user. You can run `!aws sts get-caller-identity --query "Arn"` to check which role or user you are using in your terminal.
 
-   ```
+   ```bash
    # Specify your hyperpod cluster name here
    HYPERPOD_CLUSTER_NAME="<Hyperpod_cluster_name>"
 
@@ -40,7 +40,7 @@ Check with your cluster admin to ensure permissions are granted for this role or
 
 1. Initialize your cluster namespace. Your cluster admin should've already created a hyperpod-inference service account in your namespace.
 
-   ```
+   ```bash
    cluster_namespace="<namespace>"
    ```
 
@@ -315,13 +315,13 @@ To configure KV caching and intelligent routing for improved performance, see [C
 
 1. Check if the model successfully deployed.
 
-   ```
+   ```bash
    kubectl describe InferenceEndpointConfig $SAGEMAKER_ENDPOINT_NAME -n $CLUSTER_NAMESPACE
    ```
 
 1. Check that the endpoint is successfully created.
 
-   ```
+   ```bash
    kubectl describe SageMakerEndpointRegistration $SAGEMAKER_ENDPOINT_NAME -n $CLUSTER_NAMESPACE
    ```
 
@@ -349,13 +349,13 @@ Verify that you no longer need the deployed model or stored data before proceedi
 
 1. Delete the inference deployment and associated Kubernetes resources. This stops the running model containers and removes the SageMaker endpoint.
 
-   ```
+   ```bash
    kubectl delete inferenceendpointconfig $SAGEMAKER_ENDPOINT_NAME -n $CLUSTER_NAMESPACE
    ```
 
 1. Verify the cleanup was done successfully.
 
-   ```
+   ```bash
    # # Check that Kubernetes resources are removed
    kubectl get pods,svc,deployment,InferenceEndpointConfig,sagemakerendpointregistration -n $CLUSTER_NAMESPACE
    ```
@@ -371,18 +371,18 @@ Use these debugging commands if your deployment isn't working as expected.
 
 1. Check the Kubernetes deployment status.
 
-   ```
+   ```bash
    kubectl describe deployment $SAGEMAKER_ENDPOINT_NAME -n $CLUSTER_NAMESPACE
    ```
 
 1. Check the InferenceEndpointConfig status to see the high-level deployment state and any configuration issues.
 
-   ```
+   ```bash
    kubectl describe InferenceEndpointConfig $SAGEMAKER_ENDPOINT_NAME -n $CLUSTER_NAMESPACE
    ```
 
 1. Check status of all Kubernetes objects. Get a comprehensive view of all related Kubernetes resources in your namespace. This gives you a quick overview of what's running and what might be missing.
 
-   ```
+   ```bash
    kubectl get pods,svc,deployment,InferenceEndpointConfig,sagemakerendpointregistration -n $CLUSTER_NAMESPACE
    ```

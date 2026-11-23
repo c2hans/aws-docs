@@ -30,13 +30,13 @@ The following example uploads a string as UTF-8 encoded text.
 
  **Imports**
 
-```
+```python
 from aws_sdk_s3 import S3Client
 ```
 
  **Code**
 
-```
+```python
 def upload_text(client: S3Client, bucket_name: str, key: str, text: str) -> None:
     """Upload a string as a UTF-8 text object."""
     client.put_object(
@@ -49,7 +49,7 @@ def upload_text(client: S3Client, bucket_name: str, key: str, text: str) -> None
 
 To upload a local file, open it in binary mode and pass the file object as the body.
 
-```
+```python
 def upload_file(
     client: S3Client, bucket_name: str, key: str, file_path: str
 ) -> None:
@@ -71,13 +71,13 @@ The following example reads a whole object into memory.
 
  **Imports**
 
-```
+```python
 from aws_sdk_s3 import S3Client
 ```
 
  **Code**
 
-```
+```python
 def download_bytes(client: S3Client, bucket_name: str, key: str) -> bytes:
     """Read an entire object into memory."""
     response = client.get_object(bucket=bucket_name, key=key)
@@ -87,7 +87,7 @@ def download_bytes(client: S3Client, bucket_name: str, key: str) -> bytes:
 
 For a large object, iterate over the body to process the data in chunks instead of holding all of it in memory. The following example writes each chunk to a local file.
 
-```
+```python
 def download_file(
     client: S3Client, bucket_name: str, key: str, file_path: str
 ) -> None:
@@ -109,14 +109,14 @@ Use `list_objects_v2` to list the objects in a bucket. Set `prefix` to list only
 
  **Imports**
 
-```
+```python
 from aws_sdk_s3 import S3Client
 from aws_sdk_s3.models import Object
 ```
 
  **Code**
 
-```
+```python
 def list_objects(
     client: S3Client, bucket_name: str, prefix: str = ""
 ) -> list[Object]:
@@ -137,7 +137,7 @@ def list_objects(
 
 Each `Object` model has the object's `key`, `size`, and `last_modified` time.
 
-```
+```python
 for obj in list_objects(client, bucket_name, prefix="reports/"):
     print(obj.key, obj.size, obj.last_modified)
 ```
@@ -151,13 +151,13 @@ Use `delete_object` to delete one object. In a bucket that doesn't use versionin
 
  **Imports**
 
-```
+```python
 from aws_sdk_s3 import S3Client
 ```
 
  **Code**
 
-```
+```python
 def delete_object(client: S3Client, bucket_name: str, key: str) -> None:
     """Delete one object."""
     client.delete_object(bucket=bucket_name, key=key)
@@ -172,13 +172,13 @@ Use `delete_objects` to delete up to 1,000 objects in one request. Pass a `delet
 
  **Imports**
 
-```
+```python
 from aws_sdk_s3 import S3Client
 ```
 
  **Code**
 
-```
+```python
 def delete_objects(client: S3Client, bucket_name: str, keys: list[str]) -> None:
     """Delete up to 1,000 objects and raise if any deletion fails."""
     if not 1 <= len(keys) <= 1000:
@@ -204,13 +204,13 @@ Delete the bucket that you created for the examples, together with its objects. 
 
  **Imports**
 
-```
+```python
 from aws_sdk_s3 import S3Client
 ```
 
  **Code**
 
-```
+```python
 def delete_bucket_and_objects(client: S3Client, bucket_name: str) -> None:
     """Delete every object in an unversioned bucket, then the bucket."""
     continuation_token = None
@@ -229,7 +229,7 @@ def delete_bucket_and_objects(client: S3Client, bucket_name: str) -> None:
 
 Call the cleanup function in a `finally` block, so that it runs even if an earlier step fails.
 
-```
+```python
 config = S3Config.resolve()
 if config.region is None:
     raise ValueError("No AWS Region is configured")

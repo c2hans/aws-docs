@@ -28,7 +28,7 @@ The following code example shows how to use `Add-AASScalableTarget`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet registers or updates a scalable target. A scalable target is a resource that Application Auto Scaling can scale out and scale in.**
 
-```
+```powershell
 Add-AASScalableTarget -ServiceNamespace AppStream -ResourceId fleet/MyFleet -ScalableDimension appstream:fleet:DesiredCapacity -MinCapacity 2 -MaxCapacity 10
 ```
 +  For API details, see [RegisterScalableTarget](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -41,7 +41,7 @@ The following code example shows how to use `Get-AASScalableTarget`.
 **Tools for PowerShell V4**
 **Example 1: This example will provide information about the Application Autoscaling Scalable targets in the specified namespace.**
 
-```
+```powershell
 Get-AASScalableTarget -ServiceNamespace "AppStream"
 ```
 **Output:**
@@ -66,7 +66,7 @@ The following code example shows how to use `Get-AASScalingActivity`.
 **Tools for PowerShell V4**
 **Example 1: Provides descriptive information about the scaling activities in the specified namespace from the previous six weeks.**
 
-```
+```powershell
 Get-AASScalingActivity -ServiceNamespace AppStream
 ```
 **Output:**
@@ -94,7 +94,7 @@ The following code example shows how to use `Get-AASScalingPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet describe the Application Auto Scaling scaling policies for the specified service namespace.**
 
-```
+```powershell
 Get-AASScalingPolicy -ServiceNamespace AppStream
 ```
 **Output:**
@@ -134,7 +134,7 @@ The following code example shows how to use `Get-AASScheduledAction`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet lists the actions scheduled for your Auto Scaling group that haven't run or that have not reached their end time. **
 
-```
+```powershell
 Get-AASScheduledAction -ServiceNamespace AppStream
 ```
 **Output:**
@@ -162,7 +162,7 @@ The following code example shows how to use `Remove-AASScalableTarget`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deregisters an Application Auto Scaling scalable target.Deregistering a scalable target deletes the scaling policies that are associated with it.**
 
-```
+```powershell
 Remove-AASScalableTarget -ResourceId fleet/MyFleet -ScalableDimension appstream:fleet:DesiredCapacity -ServiceNamespace AppStream
 ```
 **Output:**
@@ -183,7 +183,7 @@ The following code example shows how to use `Remove-AASScalingPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deletes the specified scaling policy for an Application Auto Scaling scalable target.**
 
-```
+```powershell
 Remove-AASScalingPolicy -ServiceNamespace AppStream -PolicyName "default-scale-out" -ResourceId fleet/Test -ScalableDimension appstream:fleet:DesiredCapacity
 ```
 +  For API details, see [DeleteScalingPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -196,7 +196,7 @@ The following code example shows how to use `Remove-AASScheduledAction`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deletes the specified scheduled action for an Application Auto Scaling scalable target.**
 
-```
+```powershell
 Remove-AASScheduledAction -ServiceNamespace AppStream -ScheduledActionName WeekDaysFleetScaling -ResourceId fleet/MyFleet -ScalableDimension appstream:fleet:DesiredCapacity
 ```
 **Output:**
@@ -217,7 +217,7 @@ The following code example shows how to use `Set-AASScalingPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet creates or updates a policy for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension.**
 
-```
+```powershell
 Set-AASScalingPolicy -ServiceNamespace AppStream -PolicyName ASFleetScaleInPolicy -PolicyType StepScaling  -ResourceId fleet/MyFleet -ScalableDimension appstream:fleet:DesiredCapacity -StepScalingPolicyConfiguration_AdjustmentType ChangeInCapacity -StepScalingPolicyConfiguration_Cooldown 360 -StepScalingPolicyConfiguration_MetricAggregationType Average -StepScalingPolicyConfiguration_StepAdjustments @{ScalingAdjustment = -1; MetricIntervalUpperBound = 0}
 ```
 **Output:**
@@ -237,7 +237,7 @@ The following code example shows how to use `Set-AASScheduledAction`.
 **Tools for PowerShell V4**
 **Example 1: This cmdlet creates or updates a scheduled action for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension.**
 
-```
+```powershell
 Set-AASScheduledAction -ServiceNamespace AppStream -ResourceId fleet/MyFleet -Schedule "cron(0 0 8 ? * MON-FRI *)" -ScalableDimension appstream:fleet:DesiredCapacity -ScheduledActionName WeekDaysFleetScaling -ScalableTargetAction_MinCapacity 5 -ScalableTargetAction_MaxCapacity 10
 ```
 +  For API details, see [PutScheduledAction](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.

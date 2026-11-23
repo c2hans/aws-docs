@@ -18,7 +18,7 @@ Each managed instance must have an AWS Identity and Access Management role that 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

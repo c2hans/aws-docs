@@ -66,7 +66,7 @@ Specifies whether DMS Schema Conversion emulates time zones in the converted cod
 
 The following example converts Oracle conversion functions to their native MySQL equivalents for the `ORACLE_TO_MYSQL` section.
 
-```
+```json
 {
   "ORACLE_TO_MYSQL": {
     "ToCharFunctionOracle": true,

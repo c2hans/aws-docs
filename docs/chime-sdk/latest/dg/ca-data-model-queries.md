@@ -16,7 +16,7 @@ Expand each section as needed.
 
 `call_analytics_metadata` has the `metadata` field in a JSON string format. Use the [json\_extract\_scalar function](https://docs.aws.amazon.com/athena/latest/ug/extracting-data-from-JSON.html) in Athena to query the elements in this string.
 
-```
+```sql
 SELECT
     json_extract_scalar(metadata,'$.voiceConnectorId') AS "VoiceConnector ID",
     json_extract_scalar(metadata,'$.fromNumber') AS "From Number",
@@ -33,7 +33,7 @@ FROM
 
 The `call_analytics_metadata` field has the metadata field in a JSON string format. `metadata` has another nested object called `oneTimeMetadata`, this object contains SIPRec Metadata in original XML and transformed JSON formats. Use the `json_extract_scalar` function in Athena to query the elements in this string.
 
-```
+```sql
 SELECT
     json_extract_scalar(metadata,'$.voiceConnectorId') AS "VoiceConnector ID",
     json_extract_scalar(metadata,'$.fromNumber') AS "From Number",
@@ -55,7 +55,7 @@ WHERE
 
 `call_analytics_recording_metadata` has the metadata field in a JSON string format. Use the [json\_extract\_scalar function](https://docs.aws.amazon.com/athena/latest/ug/extracting-data-from-JSON.html) in Athena to query the elements in this string.
 
-```
+```sql
 SELECT
     json_extract_scalar(metadata,'$.voiceConnectorId') AS "VoiceConnector ID",
     json_extract_scalar(metadata,'$.fromNumber') AS "From Number",
@@ -74,7 +74,7 @@ WHERE
 
 `voice_analytics_status` has a details field in the `struct` data type. The following example shows how to query a `struct` data type field:
 
-```
+```sql
 SELECT
     detail.transactionId AS "Transaction ID",
     detail.voiceConnectorId AS "VoiceConnector ID",
@@ -90,7 +90,7 @@ FROM
 
 The following example query joins `call_analytics_metadata` and `voice_analytics_status`:
 
-```
+```sql
 SELECT
     a.detail.transactionId AS "Transaction ID",
     a.detail.voiceConnectorId AS "VoiceConnector ID",
@@ -113,7 +113,7 @@ ON a.detail.transactionId = json_extract_scalar(b.metadata,'$.transactionId')
 
 transcribe\_call\_analytics\_post\_call has transcript field in struct format with nested arrays. Use the following query to un-nest the arrays:
 
-```
+```sql
 SELECT
     jobstatus,
     languagecode,
@@ -134,7 +134,7 @@ CROSS JOIN UNNEST
 
 The following query joins transcribe\_call\_analytics\_post\_call and call\_analytics\_metadata:
 
-```
+```sql
 WITH metadata AS(
   SELECT
     from_iso8601_timestamp(time) AS "Timestamp",
@@ -200,7 +200,7 @@ ON
 
 The following example query joins `Voice enhancement call recording` URL:
 
-```
+```sql
 SELECT
     json_extract_scalar(metadata,'$.voiceConnectorId') AS "VoiceConnector ID",
     json_extract_scalar(metadata,'$.fromNumber') AS "From Number",

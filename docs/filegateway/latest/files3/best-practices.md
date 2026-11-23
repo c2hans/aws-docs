@@ -99,7 +99,7 @@ When you configure a single Amazon S3 bucket to allow multiple gateways or file 
 
 ****
 
-  ```
+  ```json
   {
      "Version":"2012-10-17",
      "Statement":[

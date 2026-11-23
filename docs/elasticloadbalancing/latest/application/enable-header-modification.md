@@ -59,7 +59,7 @@ aws elbv2 modify-listener-attributes \
 **To enable header modification**
 Update the [AWS::ElasticLoadBalancingV2::Listener](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-listener.html) resource to include the attributes. For the list of attributes, see [Header modification attributes](#header-modification-attributes).
 
-```
+```yaml
 Resources:
   myHTTPlistener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'

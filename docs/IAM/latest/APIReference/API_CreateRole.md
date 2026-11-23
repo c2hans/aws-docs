@@ -41,8 +41,7 @@ Valid Range: Minimum value of 3600. Maximum value of 43200.
 Required: No
 
  ** MaxSigninSessionDuration **
-The maximum duration (in seconds) of an AWS Sign-In session for users who sign in with this role. This setting can have a value from 1 hour (3600 seconds) to 90 days (7776000 seconds), inclusive. If you do not specify a value, the setting remains unset and the existing sign-in session behavior applies.
-This setting is independent of `MaxSessionDuration`.
+The maximum AWS Sign-In duration (in seconds) for users who authenticate with the specified role through OAuth-based flows (`signin:CreateOAuth2Token`), such as the AWS CLI (`aws login`), AWS SDKs, and MCP clients. This setting does not affect AWS Management Console browser sessions or traditional STS sessions. This setting can have a value from 1 hour (3600 seconds) to 90 days (7776000 seconds), inclusive. This setting is independent of `MaxSessionDuration`. If this parameter is not set, the default session duration equals the role's `MaxSessionDuration`.
 Type: Integer
 Valid Range: Minimum value of 3600. Maximum value of 7776000.
 Required: No

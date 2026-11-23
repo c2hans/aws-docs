@@ -21,7 +21,7 @@ The role permissions policy is as follows:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

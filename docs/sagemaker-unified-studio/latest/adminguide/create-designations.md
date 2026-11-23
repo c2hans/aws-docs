@@ -63,7 +63,7 @@ You can create a designation by duplicating an existing designation. Duplicating
 
 To create a designation using the AWS CLI, run the `create-designation` command.
 
-```
+```bash
 aws datazone create-designation \
     --domain-identifier "dzd_example1234" \
     --name "Data Engineer" \

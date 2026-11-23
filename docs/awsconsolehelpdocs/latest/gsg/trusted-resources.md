@@ -18,7 +18,7 @@ This AWS Management Console VPC endpoint policy uses `aws:ResourceOrgID` to allo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -47,7 +47,7 @@ This AWS Management Console VPC endpoint policy uses `aws:ResourceAccount` to al
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

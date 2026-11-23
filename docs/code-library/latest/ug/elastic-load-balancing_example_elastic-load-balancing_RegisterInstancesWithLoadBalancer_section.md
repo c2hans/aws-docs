@@ -46,7 +46,7 @@ For more information, see [Register instances with your Classic Load Balancer](h
 **Tools for PowerShell V4**
 **Example 1: This example registers the specified EC2 instance with the specified load balancer.**
 
-```
+```powershell
 Register-ELBInstanceWithLoadBalancer -LoadBalancerName my-load-balancer -Instance i-12345678
 ```
 **Output:**
@@ -62,7 +62,7 @@ i-87654321
 **Tools for PowerShell V5**
 **Example 1: This example registers the specified EC2 instance with the specified load balancer.**
 
-```
+```powershell
 Register-ELBInstanceWithLoadBalancer -LoadBalancerName my-load-balancer -Instance i-12345678
 ```
 **Output:**

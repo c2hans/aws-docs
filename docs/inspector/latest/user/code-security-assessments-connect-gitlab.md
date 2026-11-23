@@ -55,6 +55,8 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/code-security-asse
         +  **VPC ID** – Provide the VPC ID where the AWS CodeConnection is hosted.
         +  **VPC endpoint** – Specify the VPC endpoint for the connection.
 
+       If you use an interface VPC endpoint with private DNS enabled for Amazon Inspector webhook events, you must allow the Amazon Inspector hostname in GitLab Self-Managed. For more information, see [Allowing Amazon Inspector webhooks when you use an interface VPC endpoint with private DNS](#code-security-assessments-connect-gitlab-private-webhooks).
+
 1.  Choose **Connect** to GitLab.
 
 1.  Choose **Authorize** in the pop-up window to finish creating a connection between Amazon Inspector and GitLab.
@@ -62,3 +64,21 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/code-security-asse
  After you create the integration, you can encounter a scenario where Amazon Inspector is unable to refresh the access token. This can occur if the integration host is unavailable or Amazon Inspector experiences other communication issues. To remediate the issue, you can re-authenticate the connection from the **Integrations** tab on the **Code Security** page. Under the **Status** column, the integration shows as **Inactive**, and Amazon Inspector provides the option to re-authenticate. Choose **Re-authenticate**. You're redirected to the integration workflow where you can complete the connection setup.
 
  If you delete system settings for your integration, you can lose connection indefinitely. If this occurs, you must [delete the integration](https://docs.aws.amazon.com/inspector/latest/user/code-security-assessments-connect-delete-integrations.html) and create a new integration. When you delete an integration, you lose all projects and scan configurations associated with the integration.
+
+## Allowing Amazon Inspector webhooks when you use an interface VPC endpoint with private DNS
+<a name="code-security-assessments-connect-gitlab-private-webhooks"></a>
+
+ Amazon Inspector registers webhooks on your GitLab Self-Managed instance. When you create the integration, Amazon Inspector adds a system hook to your instance. When you associate a scan configuration that has a merge request scan trigger with a project, Amazon Inspector also adds a webhook to that project. Both webhooks send events to the following Regional endpoint, where {{region}} is the AWS Region of your integration:
+
+```
+https://inspector2-codesecurity-events.{{region}}.amazonaws.com
+```
+
+ If your instance reaches this endpoint through an interface VPC endpoint for `com.amazonaws.{{region}}.inspector2-codesecurity-events` with private DNS enabled, you must allow the Amazon Inspector hostname in GitLab Self-Managed.
+
+**Important**
+ When private DNS is enabled, the Amazon Inspector hostname resolves to private IP addresses in your VPC. By default, GitLab Self-Managed blocks project webhooks that send requests to private IP addresses, so you must allow the Amazon Inspector hostname for Amazon Inspector to add webhooks to your projects.
+
+ To allow the hostname, add `inspector2-codesecurity-events.{{region}}.amazonaws.com` to the allowlist for outbound requests to local IP addresses and domain names in the administrator settings of your GitLab Self-Managed instance. For more information, see the GitLab documentation about filtering outbound requests. We recommend that you allow only this hostname instead of allowing all webhooks and integrations to send requests to your local network.
+
+ After you allow the hostname, existing Amazon Inspector project webhooks deliver events again. If a project doesn't have an Amazon Inspector project webhook yet, Amazon Inspector adds it the next time you associate or update a scan configuration for that project.

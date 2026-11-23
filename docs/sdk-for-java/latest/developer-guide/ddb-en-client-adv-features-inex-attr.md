@@ -11,7 +11,7 @@ The DynamoDB Enhanced Client API offers annotations to exclude data class attrib
 
 To ignore attributes that should not be mapped to a DynamoDB table, mark the attribute with the `@DynamoDbIgnore` annotation.
 
-```
+```java
 private String internalKey;
 
 @DynamoDbIgnore
@@ -24,7 +24,7 @@ public void setInternalKey(String internalKey) { this.internalKey = internalKey;
 
 To change the name of an attribute used in the DynamoDB table, mark it with the `@DynamoDbAttribute` annotation and supply a different name.
 
-```
+```java
 private String internalKey;
 
 @DynamoDbAttribute("renamedInternalKey")

@@ -91,7 +91,7 @@ Migration is an in-place platform update. Your EBS volume data (notebooks, datas
 
 If your notebook instance uses a lifecycle configuration script, update any `yum` commands to use `dnf`. For example:
 
-```
+```bash
 # AL2 (old)
 sudo yum install -y htop
 

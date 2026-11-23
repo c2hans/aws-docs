@@ -35,7 +35,7 @@ You need the model ID for the model that you want to use. To get the model ID, s
 
 Pixtral Large (25.02) invoke model example.
 
-```
+```json
 import boto3
 import json
 import base64
@@ -84,7 +84,7 @@ print(json.dumps(json.loads(response.get('body').read()), indent=4))
 
 Pixtral Large (25.02) Converse example.
 
-```
+```json
 import boto3
 import json
 import base64
@@ -129,7 +129,7 @@ print(json.dumps(response.get('output'), indent=4))
 
 Pixtral Large (25.02) invoke\_model\_with\_response\_stream example.
 
-```
+```json
 import boto3
 import json
 import base64
@@ -184,7 +184,7 @@ if stream:
 
 Pixtral Large (25.02) converse\_stream example.
 
-```
+```json
 import boto3
 import json
 import base64
@@ -251,7 +251,7 @@ if stream:
 
 Pixtral Large (25.02) JSON output example.
 
-```
+```json
 import boto3
 import json
 
@@ -273,7 +273,7 @@ print(json.loads(body))
 
 Pixtral Large (25.02) tools example.
 
-```
+```json
 data = {
     'transaction_id': ['T1001', 'T1002', 'T1003', 'T1004', 'T1005'],
     'customer_id': ['C001', 'C002', 'C003', 'C002', 'C001'],

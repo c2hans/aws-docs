@@ -22,7 +22,7 @@ The following IAM policy is recommended for principals who are not data lake adm
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -72,7 +72,7 @@ A principal with administrative permissions—for example, with the `Administrat
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

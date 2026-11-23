@@ -34,7 +34,7 @@ To see the effects of the code change, finish setting up the WordPress site so t
 **Important**
  During the deployment of the WordPress application, the **change\_permissions.sh** script updated permissions of the `/tmp/WordPress` folder so anyone can write to it. Now is a good time to run the following command to restrict permissions so that only you, the owner, can write to it:
 
-```
+```sh
 chmod -R 755 /var/www/html/WordPress
 ```
 
@@ -43,7 +43,7 @@ chmod -R 755 /var/www/html/WordPress
 
 To modify the WordPress site, go to the application's folder on your development machine:
 
-```
+```sh
 cd /tmp/WordPress
 ```
 
@@ -51,13 +51,13 @@ To modify some of the site's colors, in the `wp-content/themes/twentyfifteen/sty
 
 On Linux or other systems with GNU **sed**, use:
 
-```
+```sh
 sed -i 's/#fff/#768331/g' wp-content/themes/twentyfifteen/style.css
 ```
 
 On macOS, Unix, or other systems with BSD **sed**, use:
 
-```
+```sh
 sed -i '' 's/#fff/#768331/g' wp-content/themes/twentyfifteen/style.css
 ```
 

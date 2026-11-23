@@ -109,12 +109,12 @@ You can also use this modified `DescribeUserPool` output in the `--cli-input-jso
 
 Alternately, run the following AWS CLI command to generate JSON with blank values for the accepted input fields for `update-user-pool`. You can then populate these fields with the existing values from your user pool.
 
-```
+```bash
 aws cognito-idp update-user-pool --generate-cli-skeleton --output json
 ```
 
 Run the following command to generate the same JSON object for an app client.
 
-```
+```bash
 aws cognito-idp update-user-pool-client --generate-cli-skeleton --output json
 ```

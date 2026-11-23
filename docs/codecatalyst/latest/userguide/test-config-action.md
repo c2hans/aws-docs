@@ -142,7 +142,7 @@ If you do not specify success criteria, then:
 
  The following example shows how to manually configure four reports: a test report, a code coverage report, a software composition analysis report, and a static analysis report.
 
-```
+```yaml
 Reports:
   MyTestReport:
     Format: JUNITXML

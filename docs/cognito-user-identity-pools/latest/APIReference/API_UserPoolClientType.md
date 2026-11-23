@@ -100,6 +100,23 @@ Length Constraints: Minimum length of 24. Maximum length of 64.
 Pattern: `[\w+]+`
 Required: No
 
+ ** ClientSecretArn **   <a name="CognitoUserPools-Type-UserPoolClientType-ClientSecretArn"></a>
+The Amazon Resource Name (ARN) of the [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) secret that stores this app client's secret, when Amazon Cognito manages the secret in Secrets Manager. Retrieve the secret from Secrets Manager by this ARN. The `SecretString` value is a JSON object with `userPoolId`, `userPoolClientId`, and `clientSecretValue` fields. Use `clientSecretValue` as the app client secret. Amazon Cognito returns this ARN instead of `ClientSecret` for app clients whose secret it manages in Secrets Manager.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 2048.
+Pattern: `^arn\:(aws|aws-us-gov|aws-eusc)\:secretsmanager\:([\d\w\-]+):(\d{12})\:secret\/[\w+=\/,.@\-]+$`
+Required: No
+
+ ** ClientType **   <a name="CognitoUserPools-Type-UserPoolClientType-ClientType"></a>
+How the app client was created.
+REGULAR
+The app client wasn't created through dynamic client registration. For example, you created it with `CreateUserPoolClient`.
+DCR
+An application registered the app client through dynamic client registration. These app clients don't support client secret operations such as `AddUserPoolClientSecret`, and they can't hold the `aws.cognito/dcr/register` scope.
+Type: String
+Valid Values: `REGULAR | DCR`
+Required: No
+
  ** CreationDate **   <a name="CognitoUserPools-Type-UserPoolClientType-CreationDate"></a>
 The date and time when the item was created. Amazon Cognito returns this timestamp in UNIX epoch time format. Your SDK might render the output in a human-readable format like ISO 8601 or a Java `Date` object.
 Type: Timestamp

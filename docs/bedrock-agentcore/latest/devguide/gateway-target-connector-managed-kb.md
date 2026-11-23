@@ -84,7 +84,7 @@ After you create the target, your agent discovers the tools with `tools/list` an
 
 For `AgenticRetrieveStream`, your agent passes only the conversation. The retrievers are configured on the target by the administrator, so the agent does not send knowledge base IDs:
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "id": 1,
@@ -102,7 +102,7 @@ For `AgenticRetrieveStream`, your agent passes only the conversation. The retrie
 
 For `Retrieve`, the managed knowledge base identifier is bound to the target, so your agent passes only the query:
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "id": 1,
@@ -118,7 +118,7 @@ For `Retrieve`, the managed knowledge base identifier is bound to the target, so
 
 If you exposed retrieval parameters to the agent (see [Control which parameters the agent can set](gateway-add-target-api-target-config.md#gateway-add-target-api-connector-managed-kb-parameters)), the agent can override the administrator-configured defaults at call time:
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "id": 1,
@@ -140,7 +140,7 @@ If you exposed retrieval parameters to the agent (see [Control which parameters 
 
 The schema returned by `tools/list` is the set of fields your agent can set when it calls `AgenticRetrieveStream`. By default, the only agent-visible field is `messages`. The retrievers to query and all retrieval configuration are administrator-set on the target — see [Set up a managed knowledge base](gateway-add-target-api-target-config.md#gateway-add-target-api-connector-managed-kb-setup). To expose more fields to the agent, configure `parameterOverrides` on the target — see [Control which parameters the agent can set](gateway-add-target-api-target-config.md#gateway-add-target-api-connector-managed-kb-parameters).
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -193,7 +193,7 @@ For the administrator-set fields — `retrievers`, `agenticRetrieveConfiguration
 
 A `result` event has the following structure:
 
-```
+```json
 {
   "result": {
     "results": [
@@ -231,7 +231,7 @@ A `result` event has the following structure:
 
 The schema returned by `tools/list` is the set of fields your agent can set when it calls `Retrieve`. By default, the only agent-visible field is `retrievalQuery.text`. The managed knowledge base identifier and all retrieval settings are administrator-set on the target. To expose retrieval settings such as `numberOfResults` or a metadata `filter` to the agent, configure `parameterOverrides` on the target — see [Control which parameters the agent can set](gateway-add-target-api-target-config.md#gateway-add-target-api-connector-managed-kb-parameters).
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -262,7 +262,7 @@ For the administrator-set and overridable fields — `numberOfResults`, a metada
 
 The `Retrieve` tool returns an MCP `tools/call` result wrapped in a JSON-RPC envelope. The `isError` and `content` fields are inside `result`, and the `text` field contains the serialized `retrievalResults` payload:
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "id": 1,
@@ -324,7 +324,7 @@ To use it:
 
 1. Have the calling application (not the model) include `userContext` in the `tools/call` arguments:
 
-```
+```json
 {
   "arguments": {
     "retrievalQuery": { "text": "insurance benefits" },

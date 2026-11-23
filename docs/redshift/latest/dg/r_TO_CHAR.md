@@ -38,7 +38,7 @@ VARCHAR
 
 The following example converts a timestamp to a value with the date and time in a format with the name of the month padded to nine characters, the name of the day of the week, and the day number of the month.
 
-```
+```sql
 select to_char(timestamp '2009-12-31 23:15:59', 'MONTH-DY-DD-YYYY HH12:MIPM');
 
 to_char
@@ -48,7 +48,7 @@ DECEMBER -THU-31-2009 11:15PM
 
 The following example converts a timestamp to a value with day number of the year.
 
-```
+```sql
 select to_char(timestamp '2009-12-31 23:15:59', 'DDD');
 
 to_char
@@ -58,7 +58,7 @@ to_char
 
 The following example converts a timestamp to an ISO day number of the week.
 
-```
+```sql
 select to_char(timestamp '2022-05-16 23:15:59', 'ID');
 
 to_char
@@ -68,7 +68,7 @@ to_char
 
 The following example extracts the month name from a date.
 
-```
+```sql
 select to_char(date '2009-12-31', 'MONTH');
 
 to_char
@@ -78,7 +78,7 @@ DECEMBER
 
 The following example converts each STARTTIME value in the EVENT table to a string that consists of hours, minutes, and seconds.
 
-```
+```sql
 select to_char(starttime, 'HH12:MI:SS')
 from event where eventid between 1 and 5
 order by eventid;
@@ -94,7 +94,7 @@ to_char
 
 The following example converts an entire timestamp value into a different format.
 
-```
+```sql
 select starttime, to_char(starttime, 'MON-DD-YYYY HH12:MIPM')
 from event where eventid=1;
 
@@ -105,7 +105,7 @@ from event where eventid=1;
 
 The following example converts a timestamp literal to a character string.
 
-```
+```sql
 select to_char(timestamp '2009-12-31 23:15:59','HH24:MI:SS');
 
 to_char
@@ -115,7 +115,7 @@ to_char
 
 The following example converts a decimal number to a character string.
 
-```
+```sql
 select to_char(125.8, '999.99');
 
 to_char
@@ -125,7 +125,7 @@ to_char
 
 The following example converts a decimal number to a character string.
 
-```
+```sql
 select to_char(125.8, '999D99');
 
 to_char
@@ -135,7 +135,7 @@ to_char
 
 The following example converts a number to a character string with a leading zero.
 
-```
+```sql
 select to_char(125.8, '0999D99');
 
 to_char
@@ -145,7 +145,7 @@ to_char
 
 The following example converts a number to a character string with the negative sign at the end.
 
-```
+```sql
 select to_char(-125.8, '999D99S');
 
 to_char
@@ -155,7 +155,7 @@ to_char
 
 The following example converts a number to a character string with the positive or negative sign at the specified position.
 
-```
+```sql
 select to_char(125.8, '999D99SG');
 
 to_char
@@ -165,7 +165,7 @@ to_char
 
 The following example converts a number to a character string with the positive sign at the specified position.
 
-```
+```sql
 select to_char(125.8, 'PL999D99');
 
 to_char
@@ -175,7 +175,7 @@ to_char
 
 The following example converts a number to a character string with the currency symbol.
 
-```
+```sql
 select to_char(-125.88, '$S999D99');
 
 to_char
@@ -185,7 +185,7 @@ $-125.88
 
 The following example converts a number to a character string with the currency symbol in the specified position.
 
-```
+```sql
 select to_char(-125.88, 'S999D99L');
 
 to_char
@@ -195,7 +195,7 @@ to_char
 
 The following example converts a number to a character string using a thousands (comma) separator.
 
-```
+```sql
 select to_char(1125.8, '9,999.99');
 
 to_char
@@ -205,7 +205,7 @@ to_char
 
 The following example converts a number to a character string using angle brackets for negative numbers.
 
-```
+```sql
 select to_char(-125.88, '$999D99PR');
 
 to_char
@@ -215,7 +215,7 @@ $<125.88>
 
 The following example converts a number to a Roman numeral string.
 
-```
+```sql
 select to_char(125, 'RN');
 
 to_char
@@ -225,7 +225,7 @@ to_char
 
 The following example converts a date to a century code.
 
-```
+```sql
 select to_char(date '2020-12-31', 'CC');
 
 to_char
@@ -235,7 +235,7 @@ to_char
 
 The following example displays the day of the week.
 
-```
+```sql
 SELECT to_char(current_timestamp, 'FMDay, FMDD HH12:MI:SS');
 
 to_char
@@ -245,7 +245,7 @@ Wednesday, 31 09:34:26
 
 The following example displays the ordinal number suffix for a number.
 
-```
+```sql
 SELECT to_char(482, '999th');
 
 to_char
@@ -255,7 +255,7 @@ to_char
 
 The following example subtracts the commission from the price paid in the sales table. The difference is then rounded up and converted to a roman numeral, shown in the to\_char column:
 
-```
+```sql
 select salesid, pricepaid, commission, (pricepaid - commission)
 as difference, to_char(pricepaid - commission, 'rn') from sales
 group by sales.pricepaid, sales.commission, salesid
@@ -277,7 +277,7 @@ order by salesid limit 10;
 
 The following example adds the currency symbol to the difference values shown in the to\_char column:
 
-```
+```sql
 select salesid, pricepaid, commission, (pricepaid - commission)
 as difference, to_char(pricepaid - commission, 'l99999D99') from sales
 group by sales.pricepaid, sales.commission, salesid
@@ -299,7 +299,7 @@ salesid | pricepaid | commission | difference |  to_char
 
 The following example lists the century in which each sale was made.
 
-```
+```sql
 select salesid, saletime, to_char(saletime, 'cc') from sales
 order by salesid limit 10;
 
@@ -319,7 +319,7 @@ order by salesid limit 10;
 
 The following example converts each STARTTIME value in the EVENT table to a string that consists of hours, minutes, seconds, and time zone.
 
-```
+```sql
 select to_char(starttime, 'HH12:MI:SS TZ')
 from event where eventid between 1 and 5
 order by eventid;
@@ -335,7 +335,7 @@ to_char
 
 The following example shows formatting for seconds, milliseconds, and microseconds.
 
-```
+```sql
 select sysdate,
 to_char(sysdate, 'HH24:MI:SS') as seconds,
 to_char(sysdate, 'HH24:MI:SS.MS') as milliseconds,

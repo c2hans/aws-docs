@@ -181,7 +181,7 @@ If you don't see the CloudShell icon, make sure that you're in a [Region support
 
 1. In the CloudShell terminal, enter:
 
-   ```
+   ```bash
    aws --version
    ```
 
@@ -206,7 +206,7 @@ This role grants Amazon ECS and AWS Fargate permission to make API calls on your
 
    1. In AWS CloudShell, enter the following command:
 
-      ```
+      ```bash
       cat > codecatalyst-ecs-trust-policy.json
       ```
 
@@ -219,7 +219,7 @@ This role grants Amazon ECS and AWS Fargate permission to make API calls on your
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -243,7 +243,7 @@ This role grants Amazon ECS and AWS Fargate permission to make API calls on your
 
 1. Create a task execution role:
 
-   ```
+   ```bash
    aws iam create-role \
          --role-name codecatalyst-ecs-task-execution-role \
          --assume-role-policy-document file://codecatalyst-ecs-trust-policy.json
@@ -251,7 +251,7 @@ This role grants Amazon ECS and AWS Fargate permission to make API calls on your
 
 1. Attach the AWS managed `AmazonECSTaskExecutionRolePolicy` policy to the role:
 
-   ```
+   ```bash
    aws iam attach-role-policy \
          --role-name codecatalyst-ecs-task-execution-role \
          --policy-arn arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy
@@ -259,7 +259,7 @@ This role grants Amazon ECS and AWS Fargate permission to make API calls on your
 
 1. Display the role’s details:
 
-   ```
+   ```bash
    aws iam get-role \
          --role-name codecatalyst-ecs-task-execution-role
    ```
@@ -272,13 +272,13 @@ This cluster will contain the Apache placeholder application, and later, the Hel
 
 1. As `CodeCatalystECSUser`, in AWS CloudShell, create an empty cluster:
 
-   ```
+   ```bash
    aws ecs create-cluster --cluster-name codecatalyst-ecs-cluster
    ```
 
 1. (Optional) Verify that the cluster was created successfully:
 
-   ```
+   ```bash
    aws ecs list-clusters
    ```
 
@@ -290,13 +290,13 @@ The task definition file indicates to run the [Apache 2.4 Web server](https://hu
 
 1. As `CodeCatalystECSUser`, in AWS CloudShell, create a task definition file:
 
-   ```
+   ```bash
    cat > taskdef.json
    ```
 
 1. Paste the following code at the prompt:
 
-   ```
+   ```json
    {
        "executionRoleArn": "{{arn:aws:iam::111122223333:role/codecatalyst-ecs-task-execution-role}}",
        "containerDefinitions": [
@@ -335,14 +335,14 @@ The task definition file indicates to run the [Apache 2.4 Web server](https://hu
 
 1. As `CodeCatalystECSUser`, in AWS CloudShell, register the task definition:
 
-   ```
+   ```bash
    aws ecs register-task-definition \
        --cli-input-json file://taskdef.json
    ```
 
 1. (Optional) Verify that the task definition was registered:
 
-   ```
+   ```bash
    aws ecs list-task-definitions
    ```
 
@@ -435,13 +435,13 @@ For more information about Amazon ECR, see the *Amazon Elastic Container Registr
 
 1. As `CodeCatalystECSUser`, in AWS CloudShell, create an empty repository in Amazon ECR:
 
-   ```
+   ```bash
    aws ecr create-repository --repository-name codecatalyst-ecs-image-repo
    ```
 
 1. Display the Amazon ECR repository’s details:
 
-   ```
+   ```bash
    aws ecr describe-repositories \
          --repository-names codecatalyst-ecs-image-repo
    ```
@@ -492,7 +492,7 @@ To create the build and deploy roles, complete the following series of procedure
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -512,7 +512,7 @@ To create the build and deploy roles, complete the following series of procedure
 **Note**
 The first time the role is used to run workflow actions, use the wildcard in the resource policy statement and then scope down the policy with the resource name after it is available.
 
-      ```
+      ```yaml
       "Resource": "*"
       ```
 
@@ -597,7 +597,7 @@ The first time the role is used to run workflow actions, use the wildcard in the
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [{
@@ -665,7 +665,7 @@ The first time the role is used to run workflow actions, use the wildcard in the
 **Note**
 The first time the role is used to run workflow actions, use the wildcard in the resource policy statement. You can then scope down the policy with the resource name after it is available.
 
-      ```
+      ```yaml
       "Resource": "*"
       ```
 
@@ -738,7 +738,7 @@ As `CodeCatalystECSUser`, in AWS CloudShell, create a trust policy file:
 
 1. Create the file:
 
-   ```
+   ```bash
    cat > codecatalyst-ecs-trust-policy.json
    ```
 
@@ -754,7 +754,7 @@ As `CodeCatalystECSUser`, in AWS CloudShell, create a trust policy file:
 
    1. As `CodeCatalystECSUser`, in AWS CloudShell, create a build policy file:
 
-      ```
+      ```bash
       cat > codecatalyst-ecs-build-policy.json
       ```
 
@@ -765,7 +765,7 @@ As `CodeCatalystECSUser`, in AWS CloudShell, create a trust policy file:
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -789,7 +789,7 @@ As `CodeCatalystECSUser`, in AWS CloudShell, create a trust policy file:
 
 1. Add the build policy to AWS:
 
-   ```
+   ```bash
    aws iam create-policy \
        --policy-name codecatalyst-ecs-build-policy \
        --policy-document file://codecatalyst-ecs-build-policy.json
@@ -799,7 +799,7 @@ As `CodeCatalystECSUser`, in AWS CloudShell, create a trust policy file:
 
 1. Create the build role and attach the trust policy to it:
 
-   ```
+   ```bash
    aws iam create-role \
          --role-name codecatalyst-ecs-build-role \
          --assume-role-policy-document file://codecatalyst-ecs-trust-policy.json
@@ -807,7 +807,7 @@ As `CodeCatalystECSUser`, in AWS CloudShell, create a trust policy file:
 
 1. Attach the build policy to the build role:
 
-   ```
+   ```json
    aws iam attach-role-policy \
          --role-name codecatalyst-ecs-build-role \
          --policy-arn {{arn:aws:iam::111122223333:policy/codecatalyst-ecs-build-policy}}
@@ -817,7 +817,7 @@ As `CodeCatalystECSUser`, in AWS CloudShell, create a trust policy file:
 
 1. Display the build role’s details:
 
-   ```
+   ```bash
    aws iam get-role \
          --role-name codecatalyst-ecs-build-role
    ```
@@ -830,7 +830,7 @@ As `CodeCatalystECSUser`, in AWS CloudShell, create a trust policy file:
 
    1. In AWS CloudShell, create a deploy policy file:
 
-      ```
+      ```bash
       cat > codecatalyst-ecs-deploy-policy.json
       ```
 
@@ -841,7 +841,7 @@ As `CodeCatalystECSUser`, in AWS CloudShell, create a trust policy file:
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [{
@@ -909,7 +909,7 @@ As `CodeCatalystECSUser`, in AWS CloudShell, create a trust policy file:
 **Note**
 The first time the role is used to run workflow actions, use the wildcard in the resource policy statement and then scope down the policy with the resource name after it is available.
 
-      ```
+      ```yaml
       "Resource": "*"
       ```
 
@@ -919,7 +919,7 @@ The first time the role is used to run workflow actions, use the wildcard in the
 
 1. Add the deploy policy to AWS:
 
-   ```
+   ```bash
    aws iam create-policy \
        --policy-name codecatalyst-ecs-deploy-policy \
        --policy-document file://codecatalyst-ecs-deploy-policy.json
@@ -929,7 +929,7 @@ The first time the role is used to run workflow actions, use the wildcard in the
 
 1. Create the deploy role and attach the trust policy to it:
 
-   ```
+   ```bash
    aws iam create-role \
          --role-name codecatalyst-ecs-deploy-role \
          --assume-role-policy-document file://codecatalyst-ecs-trust-policy.json
@@ -937,7 +937,7 @@ The first time the role is used to run workflow actions, use the wildcard in the
 
 1. Attach the deploy policy to the deploy role, where {{arn:aws:iam::111122223333:policy/codecatalyst-ecs-deploy-policy}} is replaced with the ARN of the deploy policy you noted earlier.
 
-   ```
+   ```json
    aws iam attach-role-policy \
          --role-name codecatalyst-ecs-deploy-role \
          --policy-arn {{arn:aws:iam::111122223333:policy/codecatalyst-ecs-deploy-policy}}
@@ -945,7 +945,7 @@ The first time the role is used to run workflow actions, use the wildcard in the
 
 1. Display the deploy role’s details:
 
-   ```
+   ```bash
    aws iam get-role \
          --role-name codecatalyst-ecs-deploy-role
    ```
@@ -1057,7 +1057,7 @@ Make sure to include the `public-html/` prefix to create a folder of the same na
 
 1. In the text box, enter the following code:
 
-   ```
+   ```html
    <html>
      <head>
        <title>Hello World</title>
@@ -1103,7 +1103,7 @@ The Dockerfile must reside in your repository’s root folder. The workflow’s 
 
 1. In the text box, enter the following code:
 
-   ```
+   ```dockerfile
    FROM httpd:2.4
    COPY ./public-html/index.html /usr/local/apache2/htdocs/index.html
    EXPOSE 80
@@ -1134,7 +1134,7 @@ For details on the task definition parameters, see [Task definition parameters](
 
 1. In the text box, enter the following code:
 
-   ```
+   ```json
    {
        "executionRoleArn": "{{arn:aws:iam::account_ID:role/codecatalyst-ecs-task-execution-role}}",
        "containerDefinitions": [
@@ -1204,7 +1204,7 @@ The workflow consists of the following building blocks that run sequentially:
 **Note**
 In the YAML code that follows, you can omit the `Connections:` sections if you want. If you omit these sections, you must ensure that the role specified in the **Default IAM role** field in your environment includes the permissions and trust policies of both roles described in [Step 5: Add AWS roles to CodeCatalyst](#deploy-tut-ecs-import-roles). For more information about setting up an environment with a default IAM role, see [Creating an environment](deploy-environments-creating-environment.md).
 
-   ```
+   ```yaml
    Name: codecatalyst-ecs-workflow
    SchemaVersion: 1.0
 

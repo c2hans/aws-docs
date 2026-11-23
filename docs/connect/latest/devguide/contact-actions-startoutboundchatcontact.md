@@ -9,7 +9,7 @@ Initiate an outbound chat contact to a customer. Only SMS chats are supported. F
 ## Parameter object
 <a name="startoutboundchatcontact-parameter"></a>
 
-```
+```json
 {
     "SourceEndpoint": {
         "Address": ConnectPhoneNumberArn of the SourceEndpoint,

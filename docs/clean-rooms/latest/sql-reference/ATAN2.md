@@ -32,7 +32,7 @@ A `DOUBLE PRECISION` number.
 
 To return the arc tangent of `2/2` and multiply it by 4, use the following example.
 
-```
+```sql
 SELECT ATAN2(2,2) * 4 AS PI;
 
 +-------------------+

@@ -14,6 +14,8 @@ Your application engineers perform both the engineering and the operations of th
 
 ![Decentralized DevOps diagram](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/images/decentralized-devops.en.png)
 
+*Decentralized DevOps*
+
 For this example, we treat governance as decentralized. Standards are still distributed, provided, or shared to application teams by the platform team, but application teams are free to engineer and operate new platform capabilities in support of their workload.
 
 In this model, there are fewer constraints on the application team, but that comes with a significant increase in responsibilities. Additional skills (and potentially team members) must be present to support the additional platform capabilities. The risk of significant rework is increased if skill sets are inadequate and defects are not recognized early.

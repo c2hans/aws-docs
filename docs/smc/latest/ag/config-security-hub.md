@@ -22,7 +22,7 @@ Specifically, as a Jira administrator, you can use this integration to automatic
 
    The CloudWatch rule should have the following event pattern and should point to the SQS queue created in Step 2.
 
-   ```
+   ```json
    "EventPattern": {
 
           "source": [

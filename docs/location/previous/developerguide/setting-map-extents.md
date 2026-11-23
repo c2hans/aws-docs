@@ -11,7 +11,7 @@ The following code example shows how to initialize the map control to constrain 
 **Note**
 These samples are in JavaScript, and work within the context of the [Create a web app to use Amazon Location Service](qs-web.md) tutorial.
 
-```
+```js
 // Set bounds to Grab data provider region
 var bounds = [
         [90.0, -21.943045533438166], // Southwest coordinates
@@ -30,7 +30,7 @@ var mlglMap = new maplibregl.Map(
 
 Similarly, you can set a minimum and maximum zoom level for the map. The values for both can be between 0 and 24, although the defaults are 0 for minimum zoom and 22 for maximum (data providers may not provide data at all zoom levels. Most map libraries handle this automatically). The following example initializes the `minZoom` and `maxZoom` options on the MapLibre Map control.
 
-```
+```js
 // Set the minimum and maximum zoom levels
 var mlglMap = new maplibregl.Map(
     {

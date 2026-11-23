@@ -8,7 +8,7 @@ A superset of the FT.SEARCH command, it allows substantial additional processing
 
 **Syntax**
 
-```
+```text
 FT.AGGREGATE index query
   [LOAD * | [count field [field ...]]]
   [TIMEOUT timeout]

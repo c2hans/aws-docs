@@ -28,7 +28,7 @@ The following code example shows how to get started using IAM.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
 require 'aws-sdk-iam'
 require 'logger'
 
@@ -88,7 +88,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 Create an IAM user and a role that grants permission to list Amazon S3 buckets. The user has rights only to assume the role. After assuming the role, use temporary credentials to list buckets for the account.
 
-```
+```ruby
 # Wraps the scenario actions.
 class ScenarioCreateUserAssumeRole
   attr_reader :iam_client
@@ -375,7 +375,7 @@ The following code example shows how to use `AttachRolePolicy`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 This example module lists, creates, attaches, and detaches role policies.
 
-```
+```ruby
 # Manages policies in AWS Identity and Access Management (IAM)
 class RolePolicyManager
   # Initialize with an AWS IAM client
@@ -474,7 +474,7 @@ The following code example shows how to use `AttachUserPolicy`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Attaches a policy to a user
   #
   # @param user_name [String] The name of the user
@@ -502,7 +502,7 @@ The following code example shows how to use `CreateAccessKey`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 This example module lists, creates, deactivates, and deletes access keys.
 
-```
+```ruby
 # Manages access keys for IAM users
 class AccessKeyManager
   def initialize(iam_client, logger: Logger.new($stdout))
@@ -591,7 +591,7 @@ The following code example shows how to use `CreateAccountAlias`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 List, create, and delete account aliases.
 
-```
+```ruby
 class IAMAliasManager
   # Initializes the IAM client and logger
   #
@@ -651,7 +651,7 @@ The following code example shows how to use `CreatePolicy`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 This example module lists, creates, attaches, and detaches role policies.
 
-```
+```ruby
 # Manages policies in AWS Identity and Access Management (IAM)
 class RolePolicyManager
   # Initialize with an AWS IAM client
@@ -750,7 +750,7 @@ The following code example shows how to use `CreateRole`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Creates a role and attaches policies to it.
   #
   # @param role_name [String] The name of the role.
@@ -787,7 +787,7 @@ The following code example shows how to use `CreateServiceLinkedRole`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Creates a service-linked role
   #
   # @param service_name [String] The service name to create the role for.
@@ -817,7 +817,7 @@ The following code example shows how to use `CreateUser`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Creates a user and their login profile
   #
   # @param user_name [String] The name of the user
@@ -852,7 +852,7 @@ The following code example shows how to use `DeleteAccessKey`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 This example module lists, creates, deactivates, and deletes access keys.
 
-```
+```ruby
 # Manages access keys for IAM users
 class AccessKeyManager
   def initialize(iam_client, logger: Logger.new($stdout))
@@ -941,7 +941,7 @@ The following code example shows how to use `DeleteAccountAlias`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 List, create, and delete account aliases.
 
-```
+```ruby
 class IAMAliasManager
   # Initializes the IAM client and logger
   #
@@ -1000,7 +1000,7 @@ The following code example shows how to use `DeleteRole`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Deletes a role and its attached policies.
   #
   # @param role_name [String] The name of the role to delete.
@@ -1040,7 +1040,7 @@ The following code example shows how to use `DeleteServerCertificate`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 List, update, and delete server certificates.
 
-```
+```ruby
 class ServerCertificateManager
   def initialize(iam_client, logger: Logger.new($stdout))
     @iam_client = iam_client
@@ -1115,7 +1115,7 @@ The following code example shows how to use `DeleteServiceLinkedRole`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Deletes a service-linked role.
   #
   # @param role_name [String] The name of the role to delete.
@@ -1168,7 +1168,7 @@ The following code example shows how to use `DeleteUser`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Deletes a user and their associated resources
   #
   # @param user_name [String] The name of the user to delete
@@ -1195,7 +1195,7 @@ The following code example shows how to use `DeleteUserPolicy`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Deletes a user and their associated resources
   #
   # @param user_name [String] The name of the user to delete
@@ -1223,7 +1223,7 @@ The following code example shows how to use `DetachRolePolicy`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 This example module lists, creates, attaches, and detaches role policies.
 
-```
+```ruby
 # Manages policies in AWS Identity and Access Management (IAM)
 class RolePolicyManager
   # Initialize with an AWS IAM client
@@ -1322,7 +1322,7 @@ The following code example shows how to use `DetachUserPolicy`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Detaches a policy from a user
   #
   # @param user_name [String] The name of the user
@@ -1353,7 +1353,7 @@ The following code example shows how to use `GetAccountPasswordPolicy`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
 # Class to manage IAM account password policies
 class PasswordPolicyManager
   attr_accessor :iam_client, :logger
@@ -1386,7 +1386,7 @@ The following code example shows how to use `GetPolicy`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Fetches an IAM policy by its ARN
   # @param policy_arn [String] the ARN of the IAM policy to retrieve
   # @return [Aws::IAM::Types::GetPolicyResponse] the policy object if found
@@ -1413,7 +1413,7 @@ The following code example shows how to use `GetRole`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Gets data about a role.
   #
   # @param name [String] The name of the role to look up.
@@ -1441,7 +1441,7 @@ The following code example shows how to use `GetUser`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Retrieves a user's details
   #
   # @param user_name [String] The name of the user to retrieve
@@ -1468,7 +1468,7 @@ The following code example shows how to use `ListAccessKeys`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 This example module lists, creates, deactivates, and deletes access keys.
 
-```
+```ruby
 # Manages access keys for IAM users
 class AccessKeyManager
   def initialize(iam_client, logger: Logger.new($stdout))
@@ -1557,7 +1557,7 @@ The following code example shows how to use `ListAccountAliases`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 List, create, and delete account aliases.
 
-```
+```ruby
 class IAMAliasManager
   # Initializes the IAM client and logger
   #
@@ -1617,7 +1617,7 @@ The following code example shows how to use `ListAttachedRolePolicies`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 This example module lists, creates, attaches, and detaches role policies.
 
-```
+```ruby
 # Manages policies in AWS Identity and Access Management (IAM)
 class RolePolicyManager
   # Initialize with an AWS IAM client
@@ -1716,7 +1716,7 @@ The following code example shows how to use `ListGroups`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
 # A class to manage IAM operations via the AWS SDK client
 class IamGroupManager
   # Initializes the IamGroupManager class
@@ -1753,7 +1753,7 @@ The following code example shows how to use `ListPolicies`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 This example module lists, creates, attaches, and detaches role policies.
 
-```
+```ruby
 # Manages policies in AWS Identity and Access Management (IAM)
 class RolePolicyManager
   # Initialize with an AWS IAM client
@@ -1852,7 +1852,7 @@ The following code example shows how to use `ListRolePolicies`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Lists policy ARNs attached to a role
   #
   # @param role_name [String] The name of the role
@@ -1875,7 +1875,7 @@ The following code example shows how to use `ListRoles`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Lists IAM roles up to a specified count.
   # @param count [Integer] the maximum number of roles to list.
   # @return [Array<String>] the names of the roles.
@@ -1911,7 +1911,7 @@ The following code example shows how to use `ListSAMLProviders`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
 class SamlProviderLister
   # Initializes the SamlProviderLister with IAM client and a logger.
   # @param iam_client [Aws::IAM::Client] The IAM client object.
@@ -1948,7 +1948,7 @@ The following code example shows how to use `ListServerCertificates`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 List, update, and delete server certificates.
 
-```
+```ruby
 class ServerCertificateManager
   def initialize(iam_client, logger: Logger.new($stdout))
     @iam_client = iam_client
@@ -2023,7 +2023,7 @@ The following code example shows how to use `ListUsers`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Lists all users in the AWS account
   #
   # @return [Array<Aws::IAM::Types::User>] An array of user objects
@@ -2050,7 +2050,7 @@ The following code example shows how to use `PutUserPolicy`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Creates an inline policy for a specified user.
   # @param username [String] The name of the IAM user.
   # @param policy_name [String] The name of the policy to create.
@@ -2081,7 +2081,7 @@ The following code example shows how to use `UpdateServerCertificate`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 List, update, and delete server certificates.
 
-```
+```ruby
 class ServerCertificateManager
   def initialize(iam_client, logger: Logger.new($stdout))
     @iam_client = iam_client
@@ -2156,7 +2156,7 @@ The following code example shows how to use `UpdateUser`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Updates an IAM user's name
   #
   # @param current_name [String] The current name of the user

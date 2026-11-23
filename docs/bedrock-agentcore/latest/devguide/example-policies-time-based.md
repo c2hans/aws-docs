@@ -18,7 +18,7 @@ Time-based is not the same as **temporal**. A time-based condition asks what tim
 
 During policy evaluation, the current UTC timestamp is provided as part of evaluation context:
 
-```
+```cedar
 // Current datetime in UTC.
 context.system.now
 ```
@@ -40,7 +40,7 @@ Enforce policies within specific calendar periods.
 
 The following policy quotes premiums only during the January 2025 open-enrollment window:
 
-```
+```cedar
 permit (
   principal,
   action == AgentCore::Action::"InsuranceAPI___calculate_premium",
@@ -62,7 +62,7 @@ Enforce policies based on time of day that recur daily.
 
 The following policy disburses payments only during business hours (9 AM–5 PM UTC daily):
 
-```
+```cedar
 permit (
   principal,
   action == AgentCore::Action::"InsuranceAPI___disburse_payment",
@@ -84,7 +84,7 @@ Combine absolute dates with daily time restrictions.
 
 The following policy allows coverage changes only during February 2025, between 9 AM and 9 PM UTC daily:
 
-```
+```cedar
 permit (
   principal,
   action == AgentCore::Action::"InsuranceAPI___update_coverage",

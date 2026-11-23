@@ -26,7 +26,7 @@ In this step, you perform two tasks. The first task is to create an IAM policy t
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

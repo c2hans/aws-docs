@@ -42,7 +42,7 @@ TIMESTAMPTZ when used with a TIMESTAMP expression. TIMESTAMP when used with a TI
 
 The following example converts a timestamp value without time zone and interprets it as MST time (UTC\+7 in POSIX). The example returns a value of data type TIMESTAMPTZ for the UTC timezone. If you configure your default timezone to a timezone other than UTC, you might see a different result.
 
-```
+```sql
 SELECT TIMESTAMP '2001-02-16 20:38:40' AT TIME ZONE 'MST';
 
 timezone
@@ -52,7 +52,7 @@ timezone
 
 The following example takes an input timestamp with a time zone value where the specified time zone is EST (UTC\+5 in POSIX) and converts it to MST (UTC\+7 in POSIX). The example returns a value of data type TIMESTAMP.
 
-```
+```sql
 SELECT TIMESTAMPTZ '2001-02-16 20:38:40-05' AT TIME ZONE 'MST';
 
 timezone

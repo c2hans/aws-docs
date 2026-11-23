@@ -27,7 +27,7 @@ To configure a Dynatrace connection:
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

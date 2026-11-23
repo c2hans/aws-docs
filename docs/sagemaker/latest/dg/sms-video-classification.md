@@ -92,7 +92,7 @@ response = client.create_labeling_job(
 
 If you create a labeling job using the API, you must supply a worker task template in `UiTemplateS3Uri`. Copy and modify the following template by modifying the `short-instructions`, `full-instructions`, and `header`. Upload this template to Amazon S3, and provide the Amazon S3 URI to this file in `UiTemplateS3Uri`.
 
-```
+```html
 <script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
 
               <crowd-form>

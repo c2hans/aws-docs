@@ -25,7 +25,7 @@ Create a role that grants read access to the source bucket. The role name **must
 
  **Permissions policy:**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -53,7 +53,7 @@ The role must trust the SDMA roles that will assume it at runtime. There are two
 
 Find these ARNs in your SDMA deployment:
 
-```
+```bash
 # Connector invocation Lambda role (for bucket browsing)
 aws lambda get-function \
   --function-name SpatialDataManagement-ConnectorInvocationFunction \
@@ -66,7 +66,7 @@ aws iam list-roles \
 
 Add these ARNs as trusted principals:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -93,7 +93,7 @@ You can find the secret ARN in the Secrets Manager console (filter by prefix `Sp
 
 Update the secret value to the following JSON structure:
 
-```
+```json
 {
   "authType": "assumeRole",
   "roleArn": "arn:aws:iam::<source-account-id>:role/SpatialDataManagementContentDerivation-<your-suffix>",
@@ -109,7 +109,7 @@ If the source bucket is in the same account as SDMA, use the same account ID. Th
 
 If the source bucket is in a **different** AWS account, you must allowlist that account on the S3 VPC endpoint policy. Set the `S3ImportSourceAccountIds` CloudFormation parameter during deployment:
 
-```
+```bash
 # Single account
 --parameters S3ImportSourceAccountIds=111122223333
 
@@ -129,7 +129,7 @@ The Amazon S3 Import connector is initially created with placeholder values. Upd
 ### Full configuration example
 <a name="_full-configuration-example"></a>
 
-```
+```json
 {
   "schemaVersion": "1.0.0",
   "name": "S3 Import",

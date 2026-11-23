@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="listgroupversions-get-cli"></a>
 
-```
+```bash
 aws greengrass list-group-versions \
   --group-id <value> \
   [--next-token <value>] \
@@ -26,7 +26,7 @@ aws greengrass list-group-versions \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "NextToken": "string",
@@ -59,7 +59,7 @@ type: integer
 Success. The response contains the list of versions and metadata for the given group.
  [ ListVersionsResponse](definitions-listversionsresponse.md)
 
-```
+```json
 {
 "Versions": [
   {
@@ -102,7 +102,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

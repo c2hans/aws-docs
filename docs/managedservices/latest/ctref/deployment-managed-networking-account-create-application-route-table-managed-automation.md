@@ -139,7 +139,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-managed-networking-account-create-application-route-table-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "TransitGatewayApplicationRouteTableName": "routeTableName"
 }
@@ -148,7 +148,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-managed-networking-account-create-application-route-table-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "TransitGatewayApplicationRouteTableName": "routeTableName",
   "AddPresetStaticRoutes": true,

@@ -43,7 +43,7 @@ Here's an example trust policy, similar to one you will need to include for your
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

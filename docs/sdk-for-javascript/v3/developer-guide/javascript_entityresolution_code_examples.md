@@ -27,7 +27,7 @@ The following code example shows how to get started using AWS Entity Resolution.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/entityresolution#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import {
   EntityResolutionClient,
@@ -68,7 +68,7 @@ The following code example shows how to use `CreateMatchingWorkflow`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/entityresolution#code-examples).
 
-```
+```javascript
 //The default inputs for this demo are read from the ../inputs.json.
 
 import { fileURLToPath } from "node:url";
@@ -146,7 +146,7 @@ The following code example shows how to use `CreateSchemaMapping`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/entityresolution#code-examples).
 
-```
+```javascript
 //The default inputs for this demo are read from the ../inputs.json.
 
 import { fileURLToPath } from "node:url";
@@ -221,7 +221,7 @@ The following code example shows how to use `DeleteMatchingWorkflow`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/entityresolution#code-examples).
 
-```
+```javascript
 //The default inputs for this demo are read from the ../inputs.json.
 
 import { fileURLToPath } from "node:url";
@@ -258,7 +258,7 @@ The following code example shows how to use `DeleteSchemaMapping`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/entityresolution#code-examples).
 
-```
+```javascript
 //The default inputs for this demo are read from the ../inputs.json.
 
 import { fileURLToPath } from "node:url";
@@ -295,7 +295,7 @@ The following code example shows how to use `GetMatchingJob`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/entityresolution#code-examples).
 
-```
+```javascript
 //The default inputs for this demo are read from the ../inputs.json.
 
 import { fileURLToPath } from "node:url";
@@ -335,7 +335,7 @@ The following code example shows how to use `GetSchemaMapping`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/entityresolution#code-examples).
 
-```
+```javascript
 //The default inputs for this demo are read from the ../inputs.json.
 
 import { fileURLToPath } from "node:url";
@@ -377,7 +377,7 @@ The following code example shows how to use `ListSchemaMappings`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/entityresolution#code-examples).
 
-```
+```javascript
 //The default inputs for this demo are read from the ../inputs.json.
 
 import { fileURLToPath } from "node:url";
@@ -422,7 +422,7 @@ The following code example shows how to use `StartMatchingJob`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/entityresolution#code-examples).
 
-```
+```javascript
 //The default inputs for this demo are read from the ../inputs.json.
 
 import { fileURLToPath } from "node:url";
@@ -460,7 +460,7 @@ The following code example shows how to use `TagResource`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/entityresolution#code-examples).
 
-```
+```javascript
 //The default inputs for this demo are read from the ../inputs.json.
 
 import { fileURLToPath } from "node:url";

@@ -55,7 +55,7 @@ Add the following arguments and environment variables to your inference containe
 +  `RUNAI_STREAMER_S3_REQUEST_TIMEOUT_MS` – Per-request timeout in milliseconds. Allows faster retry on slow S3 responses.
 +  `RUNAI_STREAMER_S3_LOW_SPEED_LIMIT` – Minimum transfer speed in bytes per second before a request is considered slow and retried.
 
-```
+```yaml
 containers:
 - name: vllm-inference
   image: vllm/vllm-openai:v0.21.0
@@ -140,7 +140,7 @@ When an inference engine compiles the model’s computation graph on first start
 
 Add the following environment variables to your inference container spec to direct torch.compile and Triton cache to a persistent host path. We recommend using the node’s local NVMe instance store and not the root Amazon Elastic Block Store (Amazon EBS) volume for the `hostPath`. For examples, see the following section.
 
-```
+```yaml
 containers:
 - name: vllm-inference
   env:
@@ -178,7 +178,7 @@ The NVMe mount point and how you enable it differ between EKS Auto Mode and self
 
 For EKS Auto Mode, set the `hostPath` to `/mnt/.ephemeral/compile-cache` in your container spec:
 
-```
+```yaml
 volumes:
 - name: compile-cache
   hostPath:
@@ -188,7 +188,7 @@ volumes:
 
 For self-managed Karpenter, set the `hostPath` to `/mnt/k8s-disks/0/compile-cache` in your container spec:
 
-```
+```yaml
 volumes:
 - name: compile-cache
   hostPath:
@@ -257,7 +257,7 @@ The following example combines Run:ai Model Streamer performance tuning and a to
 +  `--tensor-parallel-size` – Set the tensor parallel (TP) degree to the minimum number of GPUs required to fit the model in memory.
 +  `hostPath` `path` – NVMe instance store mount point for self-managed nodes with Karpenter. On EKS Auto Mode, use `/mnt/.ephemeral/compile-cache` instead. See [Cache torch.compile artifacts on the same node](#model-loading-torch-compile-same-node) for details.
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:

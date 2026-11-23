@@ -12,7 +12,7 @@ Some EC2 instances have multiple network cards. This allows them to provide high
 + All network interfaces must have a unique `NetworkCardIndex`. A recommended practice is to number them sequentially as they are defined in the launch template.
 + Security groups for each network interface are set using `Groups`. In this example, an inbound SSH security group (`sg-{{SshSecurityGroupId}}`) is added to the primary network interface, as well as the security group enabling within-cluster communications (`sg-{{ClusterSecurityGroupId}}`). Finally, a security group allowing outbound connections to the internet (`sg-{{InternetOutboundSecurityGroupId}}`) is added to both primary and secondary interfaces.
 
-```
+```json
 {
     "NetworkInterfaces": [
         {

@@ -39,7 +39,7 @@ aws rekognition create-collection --collection-id "collection-name" --tags "{\"k
 
  Replace the value of `profile_name` in the line that creates the Rekognition session with the name of your developer profile.
 
-```
+```python
 import boto3
 
 def create_collection(collection_id):
@@ -87,7 +87,7 @@ aws rekognition tag-resource --resource-arn collection-arn --tags "{\"key1\":\"v
 
  Replace the value of `profile_name` in the line that creates the Rekognition session with the name of your developer profile.
 
-```
+```python
 # Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -136,7 +136,7 @@ aws rekognition list-tags-for-resource --resource-arn resource-arn --profile pro
 
  Replace the value of `profile_name` in the line that creates the Rekognition session with the name of your developer profile.
 
-```
+```python
 import boto3
 
 def list_tags():
@@ -190,7 +190,7 @@ Alternatively, you can specify tag-keys in this format:
 
  Replace the value of `profile_name` in the line that creates the Rekognition session with the name of your developer profile.
 
-```
+```python
 import boto3
 
 def list_tags():

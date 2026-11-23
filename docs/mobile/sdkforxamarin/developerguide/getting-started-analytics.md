@@ -40,7 +40,7 @@ Follow Step 4 of the instructions in [Setting Up the AWS Mobile SDK for .NET and
 
 Mobile Analytics defines some settings that can be configured in the awsconfig.xml file:
 
-```
+```csharp
 var config = new MobileAnalyticsManagerConfig();
 config.AllowUseDataNetwork = true;
 config.DBWarningThreshold = 0.9f;
@@ -61,7 +61,7 @@ The settings shown above are the default values for each configuration item.
 
 To initialize your MobileAnalyticsManager, call GetOrCreateInstance on your `MobileAnalyticsManager`, passing in your AWS credentials, your region, your Mobile Analytics application ID, and your optional config object:
 
-```
+```csharp
 var manager = MobileAnalyticsManager.GetOrCreateInstance(
   "APP_ID",
   "Credentials",
@@ -78,7 +78,7 @@ var manager = MobileAnalyticsManager.GetOrCreateInstance(
 
 Override the activity’s `OnPause()` and `OnResume()` methods to record session events.
 
-```
+```csharp
 protected override void OnResume()
 {
     manager.ResumeSession();
@@ -99,7 +99,7 @@ This needs to be implemented for each activity in your application.
 
 In your AppDelegate.cs:
 
-```
+```csharp
 public override void DidEnterBackground(UIApplication application)
 {
     manager.PauseSession();

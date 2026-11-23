@@ -95,7 +95,7 @@ aws elbv2 remove-tags \
 **To update the default action**
 Update the [AWS::ElasticLoadBalancingV2::Listener](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-listener.html) resource to include the new target group.
 
-```
+```yaml
 Resources:
   myTCPListener:
     Type: 'AWS::ElasticLoadBalancingV2::Listener'
@@ -110,7 +110,7 @@ Resources:
 
 Alternatively, to distribute traffic between multiple target groups, define `DefaultActions` as follows.
 
-```
+```yaml
 DefaultActions:
     - Type: forward
     ForwardConfig:
@@ -124,7 +124,7 @@ DefaultActions:
 **To add tags**
 Update the [AWS::ElasticLoadBalancingV2::Listener](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-listener.html) resource to include the Tags property.
 
-```
+```yaml
 Resources:
   myTCPListener:
     Type: 'AWS::ElasticLoadBalancingV2::Listener'

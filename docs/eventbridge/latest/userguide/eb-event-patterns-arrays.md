@@ -12,7 +12,7 @@ For guidance on how to write precise rules and event patterns to minimize such u
 
 For example, consider an event pattern that includes the following field.
 
-```
+```json
 "resources": [
    "arn:aws:ec2:us-east-1:123456789012:instance/i-b188560f",
    "arn:aws:ec2:us-east-1:111122223333:instance/i-b188560f",
@@ -22,7 +22,7 @@ For example, consider an event pattern that includes the following field.
 
 The preceding event pattern matches an event that includes the following field because the first item in the event pattern array matches the second item in the event array.
 
-```
+```json
 "resources": [
    "arn:aws:autoscaling:us-east-1:123456789012:autoScalingGroup:eb56d16b-bbf0-401d-b893-d5978ed4a025:autoScalingGroupName/ASGTerminate",
    "arn:aws:ec2:us-east-1:123456789012:instance/i-b188560f"

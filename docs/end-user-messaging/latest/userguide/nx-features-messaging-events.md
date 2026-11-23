@@ -19,7 +19,7 @@ AWS End User Messaging can stream event data for SMS, MMS, and voice message del
 
 The JSON object for an SMS event contains the data shown in the following example.
 
-```
+```json
 {
     "eventType": "TEXT_SUCCESSFUL",
     "eventVersion": "1.0",
@@ -73,7 +73,7 @@ The JSON object for an SMS event contains the data shown in the following exampl
 
 The JSON object for a SMS event when using [SMS Protect](nx-features-sms-protect.md) contains the data shown in the following example.
 
-```
+```json
 {
     "eventType": "TEXT_PROTECT_BLOCKED",
     "eventVersion": "1.0",
@@ -139,7 +139,7 @@ The JSON object for a SMS event when using [SMS Protect](nx-features-sms-protect
 
 The JSON object for a Voice event contains the data shown in the following example.
 
-```
+```json
 {
     "eventType": "VOICE_COMPLETED",
     "eventVersion": "1.0",
@@ -182,7 +182,7 @@ The JSON object for a Voice event contains the data shown in the following examp
 
 The JSON object for an MMS event contains the data shown in the following example.
 
-```
+```json
 {
     "contentType":"MMS",
     "eventType": "MEDIA_DELIVERED",
@@ -230,7 +230,7 @@ RCS events use an `eventType` of `RCS_DELIVERED`, `RCS_READ`, and the related RC
 
 **Delivery event.** A delivered message reports an `eventType` of `RCS_DELIVERED` and a `messageStatus` of `DELIVERED`. Rich RCS messages include billing metadata, where `rcsMetadata.billingEventType` is `RICH`:
 
-```
+```json
 {
     "eventType": "RCS_DELIVERED",
     "eventVersion": "1.0",
@@ -257,7 +257,7 @@ RCS events use an `eventType` of `RCS_DELIVERED`, `RCS_READ`, and the related RC
 
 **Read event.** A read receipt reports an `eventType` of `RCS_READ` and a `messageStatus` of `READ`. A `RCS_DELIVERED` event is always sent before or together with the `RCS_READ` event:
 
-```
+```json
 {
     "eventType": "RCS_READ",
     "eventVersion": "1.0",
@@ -283,7 +283,7 @@ RCS events use an `eventType` of `RCS_DELIVERED`, `RCS_READ`, and the related RC
 
 **Delivery event within a conversation.** When a message is part of an active conversation session, the delivery event adds the conversation fields and reports a `totalMessagePrice` and `totalCarrierFee` of `0.0`, because the one-time `conversationSessionFee` covers the message:
 
-```
+```json
 {
     "eventType": "RCS_DELIVERED",
     "eventVersion": "1.0",
@@ -313,7 +313,7 @@ RCS events use an `eventType` of `RCS_DELIVERED`, `RCS_READ`, and the related RC
 
 **CONVERSATION\_STARTED event.** AWS End User Messaging sends this event to your RCS event Amazon SNS topic when a conversation session begins. The `messageBody` is a JSON string:
 
-```
+```json
 {
     "originationNumber": "14376638816",
     "destinationNumber": "rcs-e138fa39eabf4d6d8e95546248c8dfa7",
@@ -324,7 +324,7 @@ RCS events use an `eventType` of `RCS_DELIVERED`, `RCS_READ`, and the related RC
 
 **Inbound typing indicator.** Inbound interaction events are delivered to the two-way Amazon SNS topic on your RCS agent, not to a configuration set event destination. The `messageBody` is a JSON string with a `type` of `RCS_TYPING`:
 
-```
+```json
 {
     "originationNumber": "12679164820",
     "destinationNumber": "rcs-cb1e6e519e9049fabf8c0ae38e4d876b",
@@ -335,7 +335,7 @@ RCS events use an `eventType` of `RCS_DELIVERED`, `RCS_READ`, and the related RC
 
 **Suggestion tap (postback).** When a recipient taps a suggestion, you receive a postback on the two-way Amazon SNS topic. The `messageBody` carries the `postbackData` you configured on the suggestion:
 
-```
+```json
 {
     "originationNumber": "12679164820",
     "destinationNumber": "rcs-cb1e6e519e9049fabf8c0ae38e4d876b",
@@ -507,7 +507,7 @@ Follow these best practices when you configure event destinations and process AW
 
 Unlike the message events in the preceding sections, which you receive through a configuration set event destination, the registration status change event is published directly to Amazon EventBridge on the default event bus. emits this event whenever the status of a registration, such as a phone number or sender ID registration, changes. Create an EventBridge rule on the default event bus with a source of `aws.sms-voice` and a detail type of **Registration Status Change** to route it to a target. The event contains the data shown in the following example.
 
-```
+```json
 {
     "version": "0",
     "id": "a1b2c3d4-e5f6-7890-abcd-ef1234example",

@@ -46,7 +46,7 @@ For more information, see [Amazon Cognito identity pools](https://docs.aws.amazo
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cognito#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cognitoidentity.CognitoIdentityClient;
 import software.amazon.awssdk.services.cognitoidentity.model.ListIdentityPoolsRequest;
@@ -98,7 +98,7 @@ public class ListIdentityPools {
 **Tools for PowerShell V4**
 **Example 1: Retrieves a list of existing Identity Pools.**
 
-```
+```powershell
 Get-CGIIdentityPoolList
 ```
 **Output:**
@@ -115,7 +115,7 @@ us-east-1:15d49393-ab16-431a-b26e-EXAMPLEGUID3                     CommonTests13
 **Tools for PowerShell V5**
 **Example 1: Retrieves a list of existing Identity Pools.**
 
-```
+```powershell
 Get-CGIIdentityPoolList
 ```
 **Output:**
@@ -135,7 +135,7 @@ us-east-1:15d49393-ab16-431a-b26e-EXAMPLEGUID3                     CommonTests13
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity/FindOrCreateIdentityPool#code-examples).
 
-```
+```swift
 import AWSCognitoIdentity
 
     /// Return the ID of the identity pool with the specified name.
@@ -179,7 +179,7 @@ import AWSCognitoIdentity
 ```
 Get the ID of an existing identity pool or create it if it doesn't already exist.
 
-```
+```swift
 import AWSCognitoIdentity
 
     /// Return the ID of the identity pool with the specified name.

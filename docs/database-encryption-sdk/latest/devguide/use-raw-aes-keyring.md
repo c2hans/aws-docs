@@ -28,7 +28,7 @@ The following examples show how to create a Raw AES keyring. The `AESWrappingKey
 ------
 #### [ Java ]
 
-```
+```java
 final CreateRawAesKeyringInput keyringInput = CreateRawAesKeyringInput.builder()
         .keyName("{{AES_256_012}}")
         .keyNamespace("{{HSM_01}}")
@@ -44,7 +44,7 @@ IKeyring rawAesKeyring = matProv.CreateRawAesKeyring(keyringInput);
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var keyNamespace = "{{HSM_01}}";
 var keyName = "{{AES_256_012}}";
 
@@ -68,7 +68,7 @@ IKeyring rawAesKeyring = matProv.CreateRawAesKeyring(keyringInput);
 ------
 #### [ Rust ]
 
-```
+```rs
 let mpl_config = MaterialProvidersConfig::builder().build()?;
 let mpl = mpl_client::Client::from_conf(mpl_config)?;
 let raw_aes_keyring = mpl

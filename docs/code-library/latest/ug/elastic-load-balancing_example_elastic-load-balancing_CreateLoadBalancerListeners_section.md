@@ -40,7 +40,7 @@ For more information, see [Configure an HTTPS listener for your Classic Load Bal
 **Tools for PowerShell V4**
 **Example 1: This example adds an HTTPS listener to the specified load balancer.**
 
-```
+```powershell
 $httpsListener = New-Object Amazon.ElasticLoadBalancing.Model.Listener
 $httpsListener.Protocol = "https"
 $httpsListener.LoadBalancerPort = 443
@@ -54,7 +54,7 @@ New-ELBLoadBalancerListener -LoadBalancerName my-load-balancer -Listener $httpsL
 **Tools for PowerShell V5**
 **Example 1: This example adds an HTTPS listener to the specified load balancer.**
 
-```
+```powershell
 $httpsListener = New-Object Amazon.ElasticLoadBalancing.Model.Listener
 $httpsListener.Protocol = "https"
 $httpsListener.LoadBalancerPort = 443

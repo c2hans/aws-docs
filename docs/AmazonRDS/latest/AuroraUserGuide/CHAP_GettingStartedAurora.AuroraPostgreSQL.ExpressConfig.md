@@ -383,6 +383,7 @@ These additional permissions help prevent a DB cluster from being moved into or 
 
 1. In the **Connectivity** section, for **Network access type**, choose **VPC**.
 ![Connectivity section with Network access type options VPC and Internet access gateway, VPC selected, and the Virtual private cloud, DB subnet group, VPC security group, Network type, and Database port fields.](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora-express-modify-connectivity-vpc.png)
+   The Connectivity section of the Modify DB cluster page, with Network access type set to VPC.
 
 1. Choose the **Virtual private cloud (VPC)**, **DB subnet group**, and **VPC security group (firewall)** for the cluster. Optionally, choose the **Network type**.
 

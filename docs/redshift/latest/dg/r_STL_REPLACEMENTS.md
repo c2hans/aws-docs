@@ -35,7 +35,7 @@ STL\_NESTLOOP only contains queries run on main provisioned clusters. It doesn't
 
 The following example returns replacements for the most recent COPY operation.
 
-```
+```sql
 select query, session, filename, line_number, colname
 from stl_replacements
 where query = pg_last_copy_id();

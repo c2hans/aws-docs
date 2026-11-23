@@ -153,7 +153,7 @@ The following example policy allows a user to create a branch in a repository na
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [

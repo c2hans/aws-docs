@@ -86,7 +86,7 @@ The following snippet is an example of a `block-s3-public.json` policy file.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

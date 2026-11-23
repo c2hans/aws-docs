@@ -37,7 +37,7 @@ The following procedure walks you through how to use simultaneous TCP connection
 
    Running this command generates the source and destination access tokens which you'll use to run the local proxy.
 
-   ```
+   ```JSON
    {
    	"tunnelId": "{{b2de92a3-b8ff-46c0-b0f2-afa28b00cecd}}",
    	"tunnelArn": "arn:aws:iot:{{us-west-2}}:{{431600097591}}:tunnel/{{b2de92a3-b8ff-46c0-b0f2-afa28b00cecd}}",

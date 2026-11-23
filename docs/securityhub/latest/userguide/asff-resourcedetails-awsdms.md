@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsD
 
 **Example**
 
-```
+```JSON
 "AwsDmsEndpoint": {
     "CertificateArn": "arn:aws:dms:us-east-1:123456789012:cert:EXAMPLEIGDURVZGVJQZDPWJ5A7F2YDJVSMTBWFI",
     "DatabaseName": "Test",
@@ -42,7 +42,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsD
 
 **Example**
 
-```
+```JSON
 "AwsDmsReplicationInstance": {
     "AllocatedStorage": 50,
     "AutoMinorVersionUpgrade": true,
@@ -74,7 +74,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsD
 
 **Example**
 
-```
+```JSON
 "AwsDmsReplicationTask": {
     "CdcStartPosition": "2023-08-28T14:26:22",
     "Id": "arn:aws:dms:us-east-1:123456789012:task:YDYUOHZIXWKQSUCBMUCQCNY44SJW74VJNB5DFWQ",

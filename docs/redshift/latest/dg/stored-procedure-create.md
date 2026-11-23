@@ -51,7 +51,7 @@ You can use a client with support for parsing CREATE PROCEDURE statements, such 
 
 The following example shows a procedure with no output arguments. By default, arguments are input (IN) arguments.
 
-```
+```sql
 CREATE OR REPLACE PROCEDURE test_sp1(f1 int, f2 varchar)
 AS $$
 BEGIN

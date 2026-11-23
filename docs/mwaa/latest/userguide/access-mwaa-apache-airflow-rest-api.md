@@ -52,7 +52,7 @@ Use the following examples to make API calls to the Apache Airflow REST API and 
 
 To access the Apache Airflow REST API using AWS credentials, you must grant the `airflow:InvokeRestApi` permission in your IAM policy. In the following policy sample, specify the `Admin`, `Op`, `User`, `Viewer`, or `Public` role in `{airflow-role}` to customize the level of user access. For more information, refer to [Default Roles](https://airflow.apache.org/docs/apache-airflow/1.10.6/security.html?highlight=ldap#default-roles) in the *Apache Airflow reference guide*.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -78,7 +78,7 @@ To confine `InvokeRestApi` calls to a VPC, apply an IAM policy condition using t
 
 The following sample Python script shows how to use the Apache Airflow REST API. The script lists the available DAGs in your environment and creates an Apache Airflow variable:
 
-```
+```python
 import boto3
 
 env_name = "MyAirflowEnvironment"
@@ -133,7 +133,7 @@ Login path changed from `/aws_mwaa/login` to `/pluginsv2/aws_mwaa/login`
 Response from login `response.cookies["_token"]` contains token information that you must use for subsequent API calls
 For a REST API call, you must pass `jwt_token` information in headers as:
 
-  ```
+  ```json
   headers = {
     "Authorization": f"Bearer {jwt_token}",
     "Content-Type": "application/json"
@@ -143,7 +143,7 @@ For a REST API call, you must pass `jwt_token` information in headers as:
 ------
 #### [ Apache Airflow v3 ]
 
-```
+```python
 def get_token_info(region, env_name):
     logging.basicConfig(level=logging.INFO)
 
@@ -191,7 +191,7 @@ def get_token_info(region, env_name):
 ------
 #### [ Apache Airflow v2 ]
 
-```
+```python
 def get_session_info(region, env_name):
     logging.basicConfig(level=logging.INFO)
 
@@ -243,7 +243,7 @@ After authentication is complete, you have the credentials to start sending requ
 ------
 #### [ Apache Airflow v3 ]
 
-```
+```python
 def trigger_dag(region, env_name, dag_id):
     """
     Triggers a DAG in a specified MWAA environment using the Airflow REST API.
@@ -308,7 +308,7 @@ if __name__ == "__main__":
 ------
 #### [ Apache Airflow v2 ]
 
-```
+```python
 def trigger_dag(region, env_name, dag_name):
     """
     Triggers a DAG in a specified MWAA environment using the Airflow REST API.

@@ -30,7 +30,7 @@ The following code example shows how to get started using Elastic Load Balancing
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/elastic-load-balancing-v2#code-examples).
 
-```
+```javascript
 import {
   ElasticLoadBalancingV2Client,
   DescribeLoadBalancersCommand,
@@ -69,7 +69,7 @@ The following code example shows how to use `CreateListener`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
     const client = new ElasticLoadBalancingV2Client({});
     const { Listeners } = await client.send(
       new CreateListenerCommand({
@@ -92,7 +92,7 @@ The following code example shows how to use `CreateLoadBalancer`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
     const client = new ElasticLoadBalancingV2Client({});
     const { LoadBalancers } = await client.send(
       new CreateLoadBalancerCommand({
@@ -117,7 +117,7 @@ The following code example shows how to use `CreateTargetGroup`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
     const client = new ElasticLoadBalancingV2Client({});
     const { TargetGroups } = await client.send(
       new CreateTargetGroupCommand({
@@ -143,7 +143,7 @@ The following code example shows how to use `DeleteLoadBalancer`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
       const client = new ElasticLoadBalancingV2Client({});
       const loadBalancer = await findLoadBalancer(NAMES.loadBalancerName);
       await client.send(
@@ -168,7 +168,7 @@ The following code example shows how to use `DeleteTargetGroup`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
     const client = new ElasticLoadBalancingV2Client({});
     try {
       const { TargetGroups } = await client.send(
@@ -198,7 +198,7 @@ The following code example shows how to use `DescribeLoadBalancers`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/elastic-load-balancing-v2#code-examples).
 
-```
+```javascript
 import {
   ElasticLoadBalancingV2Client,
   DescribeLoadBalancersCommand,
@@ -234,7 +234,7 @@ The following code example shows how to use `DescribeTargetGroups`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/elastic-load-balancing-v2#code-examples).
 
-```
+```javascript
   const client = new ElasticLoadBalancingV2Client({});
   const { TargetGroups } = await client.send(
     new DescribeTargetGroupsCommand({
@@ -252,7 +252,7 @@ The following code example shows how to use `DescribeTargetHealth`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
   const { TargetHealthDescriptions } = await client.send(
     new DescribeTargetHealthCommand({
       TargetGroupArn: TargetGroups[0].TargetGroupArn,
@@ -279,7 +279,7 @@ The following code example shows how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```javascript
 #!/usr/bin/env node
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -334,7 +334,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 ```
 Create steps to deploy all of the resources.
 
-```
+```javascript
 import { join } from "node:path";
 import { readFileSync, writeFileSync } from "node:fs";
 import axios from "axios";
@@ -946,7 +946,7 @@ export const deploySteps = [
 ```
 Create steps to run the demo.
 
-```
+```javascript
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -1407,7 +1407,7 @@ async function createSsmOnlyInstanceProfile() {
 ```
 Create steps to destroy all of the resources.
 
-```
+```javascript
 import { unlinkSync } from "node:fs";
 
 import { DynamoDBClient, DeleteTableCommand } from "@aws-sdk/client-dynamodb";

@@ -9,7 +9,7 @@ These steps are for the consumer account.
 ## See what's shared with you
 <a name="custom-sharing-consumer-list"></a>
 
-```
+```bash
 atx custom def share list --incoming
 ```
 
@@ -24,7 +24,7 @@ Shares from accounts in your organization don't need acceptance when sharing wit
 ## Accept or decline an invitation
 <a name="custom-sharing-consumer-accept"></a>
 
-```
+```bash
 atx custom def share accept {{share-id}}        # asks you to confirm
 atx custom def share accept {{share-id}} --yes  # no prompt
 ```
@@ -37,7 +37,7 @@ Accepted share {{share-id}} from 111122223333.
 
 {{share-id}} can be the share ID (a UUID) or the share ARN.
 
-```
+```bash
 atx custom def share decline {{share-id}}        # asks you to confirm
 atx custom def share decline {{share-id}} --yes  # no prompt
 ```
@@ -61,7 +61,7 @@ In this release, shared TDs aren't available in the AWS Transform web applicatio
 
 Always identify a shared TD by its ARN. Two owners can publish TDs with the same name.
 
-```
+```bash
 atx custom def exec \
   -n arn:aws:transform-custom:us-east-1:111122223333:package/java17-upgrade \
   -p ./my-repo
@@ -74,7 +74,7 @@ All the usual `atx custom def exec` options work, including `-c`, `-g`, `--limit
 
 If the share's permission is `ExecuteWithLearningsAndPackageDownload`, you can download the TD's content.
 
-```
+```bash
 atx custom def get -n arn:aws:transform-custom:us-east-1:111122223333:package/java17-upgrade --td ./
 ```
 

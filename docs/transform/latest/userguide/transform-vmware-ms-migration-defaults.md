@@ -197,7 +197,7 @@ A global toggle controls whether post-launch actions run:
 
 The `parameters` field is provided as a JSON structure:
 
-```
+```json
 {
   "parameters": {
     "Operation": [

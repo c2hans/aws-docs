@@ -18,7 +18,7 @@ You can create a `.rs` file in Cinema 4D with Redshift materials and lighting, t
 
 Submit the bundle:
 
-```
+```bash
 deadline bundle gui-submit redshift-2025
 ```
 

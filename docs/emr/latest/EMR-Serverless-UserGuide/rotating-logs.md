@@ -38,6 +38,6 @@ The same behavior applies to Spark executors as well. This change is only applic
 
 EMR Serverless releases 7.1.0 and higher support retry attempts for streaming and batch jobs. If you enabled retry attempts with your job, EMR Serverless adds a prefix to the log path for such jobs so you can better track and distinguish the logs from one another. This path contains all rotated logs.
 
-```
+```bash,sh,zsh
 '/applications/<applicationId>/jobs/<jobId>/attempts/<attemptNumber>/'.
 ```

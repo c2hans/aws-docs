@@ -25,7 +25,7 @@ Amazon EBS emits events related to snapshot lock actions. You can use AWS Lambda
 The following events are emitted:
 + Successfully locked snapshot in governance or compliance mode.
 
-  ```
+  ```json
   {
     "version": "0",
     "id": "{{01234567-01234-0123-0123-012345678901}}",
@@ -54,7 +54,7 @@ The following events are emitted:
   ```
 + Failed lock event when a snapshot is locked while it is in the `pending` state, and it fails to reach the `completed` state.
 
-  ```
+  ```json
   {
     "version": "0",
     "id": "{{01234567-01234-0123-0123-012345678901}}",
@@ -82,7 +82,7 @@ The following events are emitted:
   ```
 + Lock expired
 
-  ```
+  ```json
   {
     "version": "0",
     "id": "{{01234567-01234-0123-0123-012345678901}}",
@@ -107,7 +107,7 @@ The following events are emitted:
   ```
 + Cooling-off period expired after being locked in compliance mode.
 
-  ```
+  ```json
   {
     "version": "0",
     "id": "{{01234567-01234-0123-0123-012345678901}}",

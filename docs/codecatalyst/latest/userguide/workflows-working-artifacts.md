@@ -10,7 +10,7 @@ An *artifact* is the output of a workflow action, and typically consists of a fo
 
 For example, you might have a build action that *generates* a `sam-template.yml` file, but you want a deploy action to *use* it. In this scenario, you would use an artifact to allow the build action to share the `sam-template.yml` file with the deploy action. The code might look something like this:
 
-```
+```yaml
 Actions:
   BuildAction:
     Identifier: aws/build@v1

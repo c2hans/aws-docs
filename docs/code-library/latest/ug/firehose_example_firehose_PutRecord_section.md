@@ -40,7 +40,7 @@ For more information, see [Sending Data to an Amazon Kinesis Data Firehose Deliv
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/firehose#code-examples).
 
-```
+```java
     /**
      * Puts a record to the specified Amazon Kinesis Data Firehose delivery stream.
      *
@@ -79,7 +79,7 @@ For more information, see [Sending Data to an Amazon Kinesis Data Firehose Deliv
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/firehose#code-examples).
 
-```
+```python
 class FirehoseClient:
     """
     AWS Firehose client to send records and monitor metrics.
@@ -136,7 +136,7 @@ class FirehoseClient:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/frh#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_record) = NEW /aws1/cl_frhrecord( iv_data = iv_data ).
 

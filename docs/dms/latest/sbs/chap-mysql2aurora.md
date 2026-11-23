@@ -47,7 +47,7 @@ To migrate your MySQL data to an Amazon Aurora MySQL DB cluster, several permiss
 
 For example, the following IAM policy grants a user the minimum required permissions to use the console to both list IAM roles, create an IAM role, and list the S3 buckets for your user.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -71,7 +71,7 @@ Additionally, for a user to associate an IAM role with an S3 bucket, the IAM use
 
 For example, the following IAM policy allows a user to associate the role named `S3Access` with an S3 bucket.
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -116,7 +116,7 @@ As an alternative, you can manually create the role using the following procedur
 
    To specify a prefix, replace {{<prefix>}} following with the prefix of your file names. Include the asterisk (\*) after the prefix. If you don’t want to specify a prefix, specify only an asterisk.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

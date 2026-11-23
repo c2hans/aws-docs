@@ -93,7 +93,7 @@ There is no need to install any optional parts of the Amazon DCV Server.
 
 When you're done, run the following command to start the Amazon DCV Server:
 
-```
+```bash
 sudo systemctl start dcvserver
 sudo systemctl enable dcvserver
 ```

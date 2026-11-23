@@ -31,7 +31,7 @@ To create a CloudFront distribution invalidation, use the [CreateInvalidation](h
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -39,7 +39,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function createInvalidation(
     $cloudFrontClient,
     $distributionId,
@@ -106,7 +106,7 @@ To retrieve the status and details about a CloudFront distribution invalidation,
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -114,7 +114,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function getInvalidation($cloudFrontClient, $distributionId, $invalidationId)
 {
     try {
@@ -171,7 +171,7 @@ To list all current CloudFront distribution invalidations, use the [ListInvalida
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -179,7 +179,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function listInvalidations($cloudFrontClient, $distributionId)
 {
     try {

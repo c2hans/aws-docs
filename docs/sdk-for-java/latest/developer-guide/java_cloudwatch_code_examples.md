@@ -31,7 +31,7 @@ The following code example shows how to get started using CloudWatch.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cloudwatch.CloudWatchClient;
 import software.amazon.awssdk.services.cloudwatch.model.CloudWatchException;
@@ -111,7 +111,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 Run an interactive scenario demonstrating the CloudWatch OpenTelemetry experience.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.cloudwatch.model.AlarmContributor;
@@ -554,7 +554,7 @@ public class CloudWatchScenario {
 ```
 A wrapper class for the CloudWatch SDK methods that the scenario calls.
 
-```
+```java
 public class CloudWatchActions {
 
     private static CloudWatchAsyncClient cloudWatchAsyncClient;
@@ -1829,7 +1829,7 @@ The following code example shows how to use `DeleteAlarmMuteRule`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Deletes an alarm mute rule. The alarms it targeted resume firing their actions.
      *
@@ -1860,7 +1860,7 @@ The following code example shows how to use `DeleteAlarms`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Deletes a CloudWatch alarm.
      *
@@ -1894,7 +1894,7 @@ The following code example shows how to use `DeleteAnomalyDetector`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Deletes an Anomaly Detector.
      *
@@ -1945,7 +1945,7 @@ The following code example shows how to use `DeleteDashboards`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Deletes the specified dashboard.
      *
@@ -1978,7 +1978,7 @@ The following code example shows how to use `DescribeAlarmContributors`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Gets the contributors for a PromQL alarm. Each contributor is one series that the
      * alarm's query matched, identified by its label set. This is how you find out which
@@ -2033,7 +2033,7 @@ The following code example shows how to use `DescribeAlarmHistory`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Retrieves the alarm history for a given alarm name and date range.
      *
@@ -2101,7 +2101,7 @@ The following code example shows how to use `DescribeAlarms`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Describes the CloudWatch alarms of the 'METRIC_ALARM' type.
      *
@@ -2144,7 +2144,7 @@ The following code example shows how to use `DescribeAlarmsForMetric`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Checks for a metric alarm in AWS CloudWatch.
      *
@@ -2229,7 +2229,7 @@ The following code example shows how to use `DescribeAnomalyDetectors`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Describes the anomaly detectors based on the specified JSON file.
      *
@@ -2286,7 +2286,7 @@ The following code example shows how to use `DisableAlarmActions`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cloudwatch.CloudWatchClient;
 import software.amazon.awssdk.services.cloudwatch.model.CloudWatchException;
@@ -2352,7 +2352,7 @@ The following code example shows how to use `EnableAlarmActions`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cloudwatch.CloudWatchClient;
 import software.amazon.awssdk.services.cloudwatch.model.CloudWatchException;
@@ -2418,7 +2418,7 @@ The following code example shows how to use `GetAlarmMuteRule`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Gets the full configuration of an alarm mute rule, including its schedule, the
      * alarms it targets, and whether it is currently SCHEDULED, ACTIVE, or EXPIRED.
@@ -2453,7 +2453,7 @@ The following code example shows how to use `GetMetricData`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Retrieves custom metric data from the AWS CloudWatch service.
      *
@@ -2540,7 +2540,7 @@ The following code example shows how to use `GetMetricStatistics`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Retrieves and displays metric statistics for the specified parameters.
      *
@@ -2598,7 +2598,7 @@ The following code example shows how to use `GetMetricWidgetImage`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Retrieves and saves a custom metric image to a file.
      *
@@ -2664,7 +2664,7 @@ The following code example shows how to use `GetOTelEnrichment`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Gets the current OTel enrichment status for the account.
      *
@@ -2695,7 +2695,7 @@ The following code example shows how to use `ListAlarmMuteRules`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Lists the alarm mute rules in the account, optionally filtered to the rules that
      * target one alarm.
@@ -2741,7 +2741,7 @@ The following code example shows how to use `ListDashboards`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Lists the available dashboards.
      *
@@ -2772,7 +2772,7 @@ The following code example shows how to use `ListMetrics`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Retrieves a list of metric names for the specified namespace.
      *
@@ -2812,7 +2812,7 @@ The following code example shows how to use `PutAlarmMuteRule`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Creates or updates an alarm mute rule. While a mute rule is active the targeted
      * alarms keep evaluating and keep transitioning between states, but their configured
@@ -2876,7 +2876,7 @@ The following code example shows how to use `PutAnomalyDetector`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Adds an anomaly detector for the given file.
      *
@@ -2931,7 +2931,7 @@ The following code example shows how to use `PutDashboard`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Creates a new dashboard with the specified name and body.
      *
@@ -2977,7 +2977,7 @@ The following code example shows how to use `PutMetricAlarm`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 
-```
+```java
     /**
      * Creates an alarm that evaluates a PromQL query.
      *
@@ -3037,7 +3037,7 @@ Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 ```
 Create an alarm that evaluates a single CloudWatch metric.
 
-```
+```java
     /**
      * Creates an alarm based on the configuration provided in a JSON file.
      *
@@ -3104,7 +3104,7 @@ The following code example shows how to use `PutMetricData`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Adds metric data for an alarm asynchronously.
      *
@@ -3181,7 +3181,7 @@ The following code example shows how to use `StartOTelEnrichment`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Turns on OTel enrichment for the account. Once enrichment is running, CloudWatch
      * vended metrics that carry a resource identifier dimension, such as the EC2
@@ -3214,7 +3214,7 @@ The following code example shows how to use `StopOTelEnrichment`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Turns off OTel enrichment for the account. Existing PromQL alarms are not
      * deleted, but vended metrics stop being enriched with resource ARN and tag labels,
@@ -3265,7 +3265,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 A wrapper class for the CloudWatch OpenTelemetry SDK operations.
 
-```
+```java
 import software.amazon.awssdk.services.cloudwatch.CloudWatchClient;
 import software.amazon.awssdk.services.cloudwatch.model.AlarmContributor;
 import software.amazon.awssdk.services.cloudwatch.model.AlarmMuteRuleSummary;

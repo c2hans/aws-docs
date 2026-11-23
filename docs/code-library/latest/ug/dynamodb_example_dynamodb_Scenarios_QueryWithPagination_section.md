@@ -17,7 +17,7 @@ The following code examples show how to query a table with pagination.
 **SDK for Java 2.x**
 Query a DynamoDB table with pagination using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -104,7 +104,7 @@ import java.util.Map;
 ```
 Demonstrates how to query a DynamoDB table with pagination.
 
-```
+```java
     public static void main(String[] args) {
         final String usage =
             """
@@ -179,7 +179,7 @@ Demonstrates how to query a DynamoDB table with pagination.
 **SDK for JavaScript (v3)**
 Query a DynamoDB table with pagination using AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example demonstrating how to handle large query result sets in DynamoDB using pagination
  *
@@ -294,7 +294,7 @@ module.exports = { queryWithPagination };
 **SDK for Python (Boto3)**
 Query a DynamoDB table with pagination using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Key
 

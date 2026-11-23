@@ -61,7 +61,7 @@ For example, to give the `Dev` role in Account B access to database `db1` in Acc
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -93,7 +93,7 @@ In addition, Account B would have to attach the following IAM policy to the `Dev
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -162,7 +162,7 @@ The following example shows the permissions required by the grantee to run an ET
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

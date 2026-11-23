@@ -27,7 +27,7 @@ To create an event rule that monitors for *batch job queue blocked*, repeat thes
 
 1. **In [Tutorial: Register an event rule](batch_sns_reg_rule.md) **, use the following pattern in the JSON editor:
 
-   ```
+   ```json
    {
       "detail-type": [
         "Batch Job Queue Blocked"

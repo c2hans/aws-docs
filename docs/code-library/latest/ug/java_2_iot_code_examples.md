@@ -30,7 +30,7 @@ The following code example shows how to get started using AWS IoT.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iot.IotClient;
 import software.amazon.awssdk.services.iot.model.ListThingsRequest;
@@ -88,7 +88,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 Run an interactive scenario demonstrating AWS IoT features.
 
-```
+```java
 import java.util.Scanner;
 
 /**
@@ -317,7 +317,7 @@ public class IotScenario {
 ```
 A wrapper class for AWS IoT SDK methods.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.EnvironmentVariableCredentialsProvider;
 import software.amazon.awssdk.core.SdkBytes;
 import software.amazon.awssdk.core.client.config.ClientOverrideConfiguration;
@@ -992,7 +992,7 @@ The following code example shows how to use `AttachThingPrincipal`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
     /**
      * Attaches a certificate to an IoT Thing asynchronously.
      *
@@ -1042,7 +1042,7 @@ The following code example shows how to use `CreateKeysAndCertificate`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
     /**
      * Creates an IoT certificate asynchronously.
      *
@@ -1090,7 +1090,7 @@ The following code example shows how to use `CreateThing`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
     /**
      * Creates an IoT Thing with the specified name asynchronously.
      *
@@ -1132,7 +1132,7 @@ The following code example shows how to use `CreateTopicRule`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
     /**
      * Creates an IoT rule asynchronously.
      *
@@ -1197,7 +1197,7 @@ The following code example shows how to use `DeleteCertificate`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
     /**
      * Deletes a certificate asynchronously.
      *
@@ -1239,7 +1239,7 @@ The following code example shows how to use `DeleteThing`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
     /**
      * Deletes an IoT Thing asynchronously.
      *
@@ -1281,7 +1281,7 @@ The following code example shows how to use `DescribeEndpoint`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
     /**
      * Describes the endpoint of the IoT service asynchronously.
      *
@@ -1327,7 +1327,7 @@ The following code example shows how to use `DescribeThing`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
     /**
      * Describes an IoT Thing asynchronously.
      *
@@ -1373,7 +1373,7 @@ The following code example shows how to use `DetachThingPrincipal`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
     /**
      * Detaches a principal (certificate) from an IoT Thing asynchronously.
      *
@@ -1417,7 +1417,7 @@ The following code example shows how to use `ListCertificates`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
     /**
      * Lists all certificates asynchronously.
      *
@@ -1459,7 +1459,7 @@ The following code example shows how to use `SearchIndex`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
     /**
      * Searches for IoT Things asynchronously based on a query string.
      *

@@ -81,7 +81,7 @@ AWS Quick adds new event names as features launch and evolve. The non-API events
 
 The following example shows a CloudTrail log entry that demonstrates the `BatchCreateUser` operation:
 
-```
+```json
 {
    "eventVersion":"1.11",
    "userIdentity":
@@ -158,7 +158,7 @@ The casing of `Quicksight` compared with `QuickSight` in resource type ARNs is i
 
 Use advanced event selectors to enable data events. Include a management-events selector to retain management event logging:
 
-```
+```bash
 aws cloudtrail put-event-selectors \
   --trail-name {{your-trail-name}} \
   --region {{your-region}} \
@@ -201,7 +201,7 @@ The `readOnly` field is always `false` for action connector invocations, includi
 
 The following example shows an `InvokeAction` data event for a successful email action:
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

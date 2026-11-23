@@ -61,7 +61,7 @@ Each MDAA Module/CDK App has its own configuration schema, which is documented i
 
 MDAA allows use of Dynamic References in configuration files. These build on the concept of CloudFormation Dynamic References.
 
-```
+```yaml
 # Example Config File w/Dynamic References
 
 # Will be passed through to CloudFormation as a CFN Dynamic Reference and will be resolved at deployment time
@@ -94,7 +94,7 @@ key_arn: arn:{{partition}}:kms:{{region}}:{{account}}:key/{{context:key_id}}
 
 MDAA modules may share identical config files across multiple domains, envs, and modules. Because MDAA automatically injects the domain/env/module names into resource naming, each resulting deployment will result in uniquely named resources but with otherwise identical behaviors.
 
-```
+```yaml
 # Example MDAA Config With Shared Configs
 domains:
   domain1:
@@ -124,7 +124,7 @@ Each MDAA module accepts one or more configuration files, which are merged into 
 + Objects on same config key will be concatenated
 + Scalar values will be overridden, with config files higher on list taking precedence
 
-```
+```yaml
 # Example MDAA CLI Module Specification With Multiple Configs
 domains:
   domain1:

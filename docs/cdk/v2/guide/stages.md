@@ -13,7 +13,7 @@ The following is a basic example that defines a CDK stage named `MyAppStage`. We
 **Example**
 In `cdk-demo-app/lib/app-stack.ts`:
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 
@@ -27,7 +27,7 @@ export class AppStack extends cdk.Stack {
 ```
 In `cdk-demo-app/lib/database-stack.ts`:
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 
@@ -41,7 +41,7 @@ export class DatabaseStack extends cdk.Stack {
 ```
 In `cdk-demo-app/lib/my-stage.ts`:
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { Stage } from 'aws-cdk-lib';
@@ -61,7 +61,7 @@ export class MyAppStage extends Stage {
 ```
 In `cdk-demo-app/bin/cdk-demo-app.ts`:
 
-```
+```javascript
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
@@ -88,7 +88,7 @@ new MyAppStage(app, 'Prod', {
 ```
 In `cdk-demo-app/lib/app-stack.js`:
 
-```
+```javascript
 const { Stack } = require('aws-cdk-lib');
 
 class AppStack extends Stack {
@@ -103,7 +103,7 @@ module.exports = { AppStack }
 ```
 In `cdk-demo-app/lib/database-stack.js`:
 
-```
+```javascript
 const { Stack } = require('aws-cdk-lib');
 
 class DatabaseStack extends Stack {
@@ -118,7 +118,7 @@ module.exports = { DatabaseStack }
 ```
 In `cdk-demo-app/lib/my-stage.js`:
 
-```
+```javascript
 const { Stage } = require('aws-cdk-lib');
 const { AppStack } = require('./app-stack');
 const { DatabaseStack } = require('./database-stack');
@@ -138,7 +138,7 @@ module.exports = { MyAppStage };
 ```
 In `cdk-demo-app/bin/cdk-demo-app.js`:
 
-```
+```javascript
 #!/usr/bin/env node
 
 const cdk = require('aws-cdk-lib');
@@ -165,7 +165,7 @@ new MyAppStage(app, 'Prod', {
 ```
 In `cdk-demo-app/cdk_demo_app/app_stack.py`:
 
-```
+```python
 from aws_cdk import Stack
 from constructs import Construct
 
@@ -178,7 +178,7 @@ class AppStack(Stack):
 ```
 In `cdk-demo-app/cdk_demo_app/database_stack.py`:
 
-```
+```python
 from aws_cdk import Stack
 from constructs import Construct
 
@@ -191,7 +191,7 @@ class DatabaseStack(Stack):
 ```
 In `cdk-demo-app/cdk_demo_app/my_stage.py`:
 
-```
+```python
 from aws_cdk import Stage
 from constructs import Construct
 from .app_stack import AppStack
@@ -208,7 +208,7 @@ class MyAppStage(Stage):
 ```
 In `cdk-demo-app/app.py`:
 
-```
+```python
 #!/usr/bin/env python3
 import os
 
@@ -233,7 +233,7 @@ app.synth()
 ```
 In `cdk-demo-app/src/main/java/com/myorg/AppStack.java`:
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -254,7 +254,7 @@ public class AppStack extends Stack {
 ```
 In `cdk-demo-app/src/main/java/com/myorg/DatabaseStack.java`:
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -275,7 +275,7 @@ public class DatabaseStack extends Stack {
 ```
 In `cdk-demo-app/src/main/java/com/myorg/MyAppStage.java`:
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.Stage;
@@ -295,7 +295,7 @@ public class MyAppStage extends Stage {
 ```
 In `cdk-demo-app/src/main/java/com/myorg/CdkDemoAppApp.java`:
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.App;
@@ -328,7 +328,7 @@ public class CdkDemoAppApp {
 ```
 In `cdk-demo-app/src/CdkDemoApp/AppStack.cs`:
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 
@@ -345,7 +345,7 @@ namespace CdkDemoApp
 ```
 In `cdk-demo-app/src/CdkDemoApp/DatabaseStack.cs`:
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 
@@ -362,7 +362,7 @@ namespace CdkDemoApp
 ```
 In `cdk-demo-app/src/CdkDemoApp/MyAppStage.cs`:
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 
@@ -382,7 +382,7 @@ namespace CdkDemoApp
 ```
 In `cdk-demo-app/src/CdkDemoApp/program.cs`:
 
-```
+```csharp
 using Amazon.CDK;
 using System;
 using System.Collections.Generic;
@@ -418,7 +418,7 @@ namespace CdkDemoApp
 ```
 In `cdk-demo-app/cdk-demo-app.go`:
 
-```
+```go
 package main
 
 import (

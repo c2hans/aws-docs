@@ -8,7 +8,7 @@ The [hf\_finetune\_lora job bundle](https://github.com/aws-deadline/deadline-clo
 
 To run this bundle, you need a Deadline Cloud farm with a GPU-enabled queue (Linux fleet, NVIDIA GPU with 16 GB or more of video RAM (VRAM)) and a dataset in JSONL format. Submitting with all defaults trains on the bundle's included sample data. From the `job_bundles` directory of the samples repository, submit the job:
 
-```
+```bash
 deadline bundle gui-submit hf_finetune_lora
 ```
 

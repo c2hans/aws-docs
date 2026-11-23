@@ -40,7 +40,7 @@ If a query is not in a transaction block (BEGIN … END), you can cancel the que
 
 To query the SVV\_TRANSACTIONS table to view all locks in effect for current transactions, use the following example.
 
-```
+```sql
 SELECT * FROM svv_transactions;
 
 +-----------+--------+-------+------+---------------------+-----------------+----------------------+----------+---------+
@@ -55,6 +55,6 @@ SELECT * FROM svv_transactions;
 
 TO terminate the session holding the locks, use the following example.
 
-```
+```sql
 SELECT PG_TERMINATE_BACKEND(8585);
 ```

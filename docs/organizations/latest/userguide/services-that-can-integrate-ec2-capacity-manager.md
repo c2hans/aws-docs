@@ -69,7 +69,7 @@ Use the following AWS CLI commands or API operations to enable trusted service a
 
   Run the following command to enable EC2 Capacity Manager as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations enable-aws-service-access \
       --service-principal ec2.capacitymanager.amazonaws.com
   ```
@@ -103,7 +103,7 @@ Use the following AWS CLI commands or API operations to disable trusted service 
 
   Run the following command to disable EC2 Capacity Manager as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations disable-aws-service-access \
       --service-principal ec2.capacitymanager.amazonaws.com
   ```
@@ -129,7 +129,7 @@ You can specify a delegated administrator account using the EC2 Capacity Manager
 You can register a delegated administrator account using the AWS CLI or one of the AWS SDKs:
 + AWS CLI: [register-delegated-administrator](https://docs.aws.amazon.com/cli/latest/reference/organizations/register-delegated-administrator.html)
 
-  ```
+  ```bash
   $ aws organizations register-delegated-administrator \
       --account-id {{ACCOUNT_ID}} \
       --service-principal ec2.capacitymanager.amazonaws.com
@@ -149,7 +149,7 @@ Only an administrator in either the Organizations management account or the EC2 
 You can remove a delegated administrator account using the AWS CLI or one of the AWS SDKs:
 + AWS CLI: [deregister-delegated-administrator](https://docs.aws.amazon.com/cli/latest/reference/organizations/deregister-delegated-administrator.html)
 
-  ```
+  ```bash
   $ aws organizations deregister-delegated-administrator \
       --account-id {{ACCOUNT_ID}} \
       --service-principal ec2.capacitymanager.amazonaws.com

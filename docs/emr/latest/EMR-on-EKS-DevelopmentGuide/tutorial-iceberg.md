@@ -16,7 +16,7 @@ The runtime JAR for Iceberg contains the necessary Iceberg classes for Spark run
 
 1. Include Iceberg additional configuration:
 
-   ```
+   ```shell
    --configuration-overrides '{
        "applicationConfiguration": [
        "classification" : "spark-defaults",

@@ -12,13 +12,13 @@ To run this bundle, you need:
 
 Submit the bundle with the GUI submitter:
 
-```
+```bash
 deadline bundle gui-submit vray_render
 ```
 
 Or submit a Chaos ENVISION sample from the CLI:
 
-```
+```bash
 SAMPLE_DIR={{path-to-sample}}
 deadline bundle submit vray_render \
     -p VraySceneFile="$SAMPLE_DIR"/Building.vrscene \

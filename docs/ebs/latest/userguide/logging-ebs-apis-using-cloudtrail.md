@@ -61,7 +61,7 @@ The following are example CloudTrail events for the EBS direct APIs.
 ------
 #### [ StartSnapshot ]
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -102,7 +102,7 @@ The following are example CloudTrail events for the EBS direct APIs.
 ------
 #### [ CompleteSnapshot ]
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -136,7 +136,7 @@ The following are example CloudTrail events for the EBS direct APIs.
 ------
 #### [ ListSnapshotBlocks ]
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -184,7 +184,7 @@ The following are example CloudTrail events for the EBS direct APIs.
 ------
 #### [ ListChangedBlocks ]
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -238,7 +238,7 @@ The following are example CloudTrail events for the EBS direct APIs.
 ------
 #### [ GetSnapshotBlock ]
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -286,7 +286,7 @@ The following are example CloudTrail events for the EBS direct APIs.
 ------
 #### [ PutSnapshotBlock ]
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

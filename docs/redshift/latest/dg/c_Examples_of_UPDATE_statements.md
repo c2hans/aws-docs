@@ -32,7 +32,7 @@ The CATEGORY table in the TICKIT database contains the following rows:
 
 Update the CATGROUP column based on a range of values in the CATID column.
 
-```
+```sql
 UPDATE category
 SET catgroup='Theatre'
 WHERE catid BETWEEN 6 AND 8;
@@ -53,7 +53,7 @@ WHERE catid BETWEEN 6 AND 8;
 
 Update the CATNAME and CATDESC columns based on their current CATGROUP value:
 
-```
+```sql
 UPDATE category
 SET catdesc=default, catname='Shows'
 WHERE catgroup='Theatre';
@@ -74,7 +74,7 @@ In this case, the CATDESC column was set to null because no default value was de
 
 Run the following commands to set the CATEGORY table data back to the original values:
 
-```
+```sql
 TRUNCATE category;
 
 COPY category
@@ -89,7 +89,7 @@ IAM_ROLE default;
 
 Update the CATEGORY table based on the result of a subquery in the WHERE clause:
 
-```
+```sql
 UPDATE category
 SET catdesc='Broadway Musical'
 WHERE category.catid IN
@@ -102,7 +102,7 @@ WHERE venuecity='New York City' AND catname='Musicals');
 
 View the updated table:
 
-```
+```sql
 SELECT * FROM category ORDER BY catid;
 
 +-------+----------+-----------+--------------------------------------------+
@@ -125,7 +125,7 @@ SELECT * FROM category ORDER BY catid;
 
 To update the CATEGORY table based on the result of a subquery using the WITH clause, use the following example.
 
-```
+```sql
 WITH u1 as (SELECT catid FROM event ORDER BY catid DESC LIMIT 1)
 UPDATE category SET catid='200' FROM u1 WHERE u1.catid=category.catid;
 
@@ -143,7 +143,7 @@ SELECT * FROM category ORDER BY catid DESC LIMIT 1;
 
 Update the original 11 rows in the CATEGORY table based on matching CATID rows in the EVENT table:
 
-```
+```sql
 UPDATE category SET catid=100
 FROM event
 WHERE event.catid=category.catid;
@@ -168,7 +168,7 @@ SELECT * FROM category ORDER BY catid;
 
  Note that the EVENT table is listed in the FROM clause and the join condition to the target table is defined in the WHERE clause. Only four rows qualified for the update. These four rows are the rows whose CATID values were originally 6, 7, 8, and 9; only those four categories are represented in the EVENT table:
 
-```
+```sql
 SELECT DISTINCT catid FROM event;
 
 +-------+
@@ -183,7 +183,7 @@ SELECT DISTINCT catid FROM event;
 
 Update the original 11 rows in the CATEGORY table by extending the previous example and adding another condition to the WHERE clause. Because of the restriction on the CATGROUP column, only one row qualifies for the update (although four rows qualify for the join).
 
-```
+```sql
 UPDATE category SET catid=100
 FROM event
 WHERE event.catid=category.catid
@@ -200,7 +200,7 @@ SELECT * FROM category WHERE catid=100;
 
 An alternative way to write this example is as follows:
 
-```
+```sql
 UPDATE category SET catid=100
 FROM event JOIN category cat ON event.catid=cat.catid
 WHERE cat.catgroup='Concerts';

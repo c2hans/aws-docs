@@ -62,12 +62,12 @@ For more information, see [Working with CloudFormation templates](https://docs.a
 **Tools for PowerShell V4**
 **Example 1: Validates the specified template content. The output details the capabilities, description and parameters of the template.**
 
-```
+```powershell
 Test-CFNTemplate -TemplateBody "{TEMPLATE CONTENT HERE}"
 ```
 **Example 2: Validates the specified template accessed via an Amazon S3 URL. The output details the capabilities, description and parameters of the template.**
 
-```
+```powershell
 Test-CFNTemplate -TemplateURL https://s3.amazonaws.com/amzn-s3-demo-bucket/templatefile.template
 ```
 +  For API details, see [ValidateTemplate](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -75,12 +75,12 @@ Test-CFNTemplate -TemplateURL https://s3.amazonaws.com/amzn-s3-demo-bucket/templ
 **Tools for PowerShell V5**
 **Example 1: Validates the specified template content. The output details the capabilities, description and parameters of the template.**
 
-```
+```powershell
 Test-CFNTemplate -TemplateBody "{TEMPLATE CONTENT HERE}"
 ```
 **Example 2: Validates the specified template accessed via an Amazon S3 URL. The output details the capabilities, description and parameters of the template.**
 
-```
+```powershell
 Test-CFNTemplate -TemplateURL https://s3.amazonaws.com/amzn-s3-demo-bucket/templatefile.template
 ```
 +  For API details, see [ValidateTemplate](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

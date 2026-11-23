@@ -39,7 +39,7 @@ The following examples show how you can use the `aws:SourceArn` and `aws:SourceA
 
 The following example shows an Amazon S3 bucket policy that allows AWS B2B Data Interchange to access your bucket while preventing the confused deputy problem:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -73,7 +73,7 @@ The following example shows an Amazon S3 bucket policy that allows AWS B2B Data 
 
 The following example shows a AWS KMS key policy that allows AWS B2B Data Interchange to use your key for encryption and decryption while preventing the confused deputy problem:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

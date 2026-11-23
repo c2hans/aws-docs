@@ -41,7 +41,7 @@ For more information, see [Creating an EC2 Environment](https://docs.aws.amazon.
 **Tools for PowerShell V4**
 **Example 1: This example creates an AWS Cloud9 development environment with the specified settings, launches an Amazon Elastic Compute Cloud (Amazon EC2) instance, and then connects from the instance to the environment.**
 
-```
+```powershell
 New-C9EnvironmentEC2 -Name my-demo-env -AutomaticStopTimeMinutes 60 -Description "My demonstration development environment." -InstanceType t2.micro -OwnerArn arn:aws:iam::123456789012:user/MyDemoUser -SubnetId subnet-d43a46EX
 ```
 **Output:**
@@ -54,7 +54,7 @@ ffd88420d4824eeeaeaa8a04bfde8cEX
 **Tools for PowerShell V5**
 **Example 1: This example creates an AWS Cloud9 development environment with the specified settings, launches an Amazon Elastic Compute Cloud (Amazon EC2) instance, and then connects from the instance to the environment.**
 
-```
+```powershell
 New-C9EnvironmentEC2 -Name my-demo-env -AutomaticStopTimeMinutes 60 -Description "My demonstration development environment." -InstanceType t2.micro -OwnerArn arn:aws:iam::123456789012:user/MyDemoUser -SubnetId subnet-d43a46EX
 ```
 **Output:**

@@ -15,7 +15,7 @@ This topic gives you an overview of how to configure and work with the Automatic
 
 You need to use version *2.28.0 *or later of the SDK for Java 2.x to have access to the batching API. Your Maven `pom.xml` should at least contain the following elements.
 
-```
+```xml
 <dependencyManagement>
     <dependencies>
         <dependency>
@@ -47,7 +47,7 @@ The automatic request batching API is implemented by the [SqsAsyncBatchManager](
 
 The simplest way you can create a batch manager is to call the `batchManager` factory method on an existing [SqsAsyncClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/SqsAsyncClient.html) instance. The simple approach is shown in the following snippet.
 
-```
+```java
 SqsAsyncClient asyncClient = SqsAsyncClient.create();
 SqsAsyncBatchManager sqsAsyncBatchManager = asyncClient.batchManager();
 ```
@@ -59,7 +59,7 @@ When you use this approach, the `SqsAsyncBatchManager` instance uses the default
 
 For more advanced use cases, you can customize the batch manager using the [`SqsAsyncBatchManager.Builder`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/batchmanager/SqsAsyncBatchManager.Builder.html). By using this approach to create a `SqsAsyncBatchManager` instance, you can fine tune the batching behavior. The following snippet shows an example of how to use the builder to customize batching behavior.
 
-```
+```java
 SqsAsyncBatchManager batchManager = SqsAsyncBatchManager.builder()
     .client(SqsAsyncClient.create())
     .scheduledExecutor(Executors.newScheduledThreadPool(5))
@@ -80,7 +80,7 @@ To send messages with the batch manager, use the `[SqsAsyncBatchManager\#sendMes
 
 The following example show a `sendMessage` request immediately following by another request. In this case, the SDK sends both messages in a single batch.
 
-```
+```java
 // Sending the first message
 CompletableFuture<SendMessageResponse> futureOne =
     sqsAsyncBatchManager.sendMessage(r -> r.messageBody("One").queueUrl("queue"));
@@ -101,7 +101,7 @@ You can change the visibility timeout of messages in a batch by using the [`SqsA
 
 The following example shows how to call the `changeMessageVisibility` method.
 
-```
+```java
 CompletableFuture<ChangeMessageVisibilityResponse> futureOne =
     sqsAsyncBatchManager.changeMessageVisibility(r ->
         r.receiptHandle("receiptHandle")
@@ -116,7 +116,7 @@ You can delete messages in a batch using the [`SqsAsyncBatchManager#deleteMessag
 
 The following example shows how you can call the `deleteMessage` method.
 
-```
+```java
 CompletableFuture<DeleteMessageResponse> futureOne =
     sqsAsyncBatchManager.deleteMessage(r ->
         r.receiptHandle("receiptHandle")
@@ -134,7 +134,7 @@ When you poll the `[SqsAsyncBatchManager\#receiveMessage](https://sdk.amazonaws.
 
 The following example shows how to call the `receiveMessage` method.
 
-```
+```java
 CompletableFuture<ReceiveMessageResponse> responseFuture =
     sqsAsyncBatchManager.receiveMessage(r -> r.queueUrl("queueUrl"));
 ```
@@ -144,7 +144,7 @@ CompletableFuture<ReceiveMessageResponse> responseFuture =
 
 If you want to customize the request further, for example by setting custom wait times and specifying the number of messages to retrieve, you can customize the request as shown in the following example.
 
-```
+```java
 CompletableFuture<ReceiveMessageResponse> response =
     sqsAsyncBatchManager.receiveMessage(r ->
         r.queueUrl("queueUrl")

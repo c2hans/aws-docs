@@ -26,7 +26,7 @@ These steps are required when using NuGet packages from CodeArtifact in CodeBuil
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -76,7 +76,7 @@ After the credential provider is installed and your repository source is added, 
 
  To consume NuGet packages using `dotnet`:
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -100,7 +100,7 @@ phases:
 
  To consume NuGet packages using `dotnet`:
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -134,7 +134,7 @@ After the credential provider is installed and your repository source is added, 
 
  To build NuGet packages using `dotnet`:
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -155,7 +155,7 @@ phases:
 
  To build NuGet packages using `msbuild`:
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -179,7 +179,7 @@ phases:
 
  To build NuGet packages using `dotnet`:
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -197,7 +197,7 @@ phases:
 
  To build NuGet packages using `msbuild`:
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -231,7 +231,7 @@ After the credential provider is installed and your repository source is added, 
 
  To publish NuGet packages using `dotnet`:
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -256,7 +256,7 @@ phases:
 
  To publish NuGet packages using `dotnet`:
 
-```
+```yaml
 version: 0.2
 
 phases:

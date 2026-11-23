@@ -14,7 +14,7 @@ The [Amazon Kinesis Data Streams connector](https://docs.aws.amazon.com/emr/late
 
 The following is an example of how to start a job run with the Kinesis Data Streams connector dependency.
 
-```
+```bash,sh,zsh
 aws emr-serverless start-job-run \
 --application-id {{<APPLICATION_ID>}} \
 --execution-role-arn {{<JOB_EXECUTION_ROLE>}} \
@@ -41,7 +41,7 @@ The Apache Kafka connector for Spark structured streaming is an open-source conn
 
 The following example demonstrates how to include the Kafka connector in your job run request.
 
-```
+```bash,sh,zsh
 aws emr-serverless start-job-run \
 --application-id {{<APPLICATION_ID>}} \
 --execution-role-arn {{<JOB_EXECUTION_ROLE>}} \
@@ -64,7 +64,7 @@ The Apache Kafka connector version depends on your EMR Serverless release versio
 
 To use Amazon Managed Streaming for Apache Kafka with IAM authentication, include another dependency to enable the Kafka connector to connect to Amazon MSK with IAM. For more information, refer to the [aws-msk-iam-auth repository on GitHub](https://github.com/aws/aws-msk-iam-auth). You must also make sure that the job runtime role has the necessary IAM permissions. The following example demonstrates how to use the connector with IAM authentication.
 
-```
+```bash,sh,zsh
 aws emr-serverless start-job-run \
 --application-id {{<APPLICATION_ID>}} \
 --execution-role-arn {{<JOB_EXECUTION_ROLE>}} \

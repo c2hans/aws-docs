@@ -147,7 +147,7 @@ You must specify the following using the [JiraConfiguration ](https://docs.aws.a
 + **Data source URL**—Specify your Jira account URL. For example, {{company.atlassian.net}}.
 + **Secret Amazon Resource Name (ARN)**—Provide the Amazon Resource Name (ARN) of an Secrets Manager secret that contains the authentication credentials for your Jira account. The secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "jiraId": "{{Jira user name or email}}",
       "jiraCredential": "{{Jira API token}}"

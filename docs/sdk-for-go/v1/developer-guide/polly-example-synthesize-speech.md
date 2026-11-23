@@ -12,7 +12,7 @@ Choose `Copy` to save the code locally.
 
 Create the file *pollySynthesizeSpeech.go*. Import the packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -28,7 +28,7 @@ import (
 
 Get the name of the text file from the command line.
 
-```
+```go
 if len(os.Args) != 2 {
     fmt.Println("You must supply an alarm name")
     os.Exit(1)
@@ -39,14 +39,14 @@ fileName := os.Args[1]
 
 Open the text file and read the contents as a string.
 
-```
+```go
 contents, err := ioutil.ReadFile(fileName)
 s := string(contents[:])
 ```
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials`, load your configuration from the shared configuration file `~/.aws/config`, and create an Amazon Polly client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -56,7 +56,7 @@ svc := polly.New(sess)
 
 Create the input for and call `SynthesizeSpeech`.
 
-```
+```go
 input := &polly.SynthesizeSpeechInput{OutputFormat: aws.String("mp3"), Text: aws.String(s), VoiceId: aws.String("Joanna")}
 
 output, err := svc.SynthesizeSpeech(input)
@@ -64,7 +64,7 @@ output, err := svc.SynthesizeSpeech(input)
 
 Save the resulting synthesized speech as an MP3 file.
 
-```
+```go
 names := strings.Split(fileName, ".")
 name := names[0]
 mp3File := name + ".mp3"

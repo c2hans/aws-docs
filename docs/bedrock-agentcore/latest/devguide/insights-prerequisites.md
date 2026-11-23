@@ -36,7 +36,7 @@ If the Store is `INACTIVE`, enable it. If it is `UPDATING`, wait for the current
 
 The following example grants a principal the Agent Insights API permissions and the evaluation permissions used in the examples in this section. Scope the resources and conditions for your environment where the actions support resource-level permissions.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

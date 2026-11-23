@@ -37,7 +37,7 @@ Use **pip** to install the Amazon DynamoDB Encryption Client for Python, as show
 
 **To install the latest version**
 
-```
+```bash
 pip install dynamodb-encryption-sdk
 ```
 

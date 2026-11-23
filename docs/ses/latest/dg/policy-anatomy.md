@@ -20,7 +20,7 @@ The following example policy grants AWS account ID *123456789012* permissions sp
 
 ****
 
-```
+```json
 {
   "Id":"ExampleAuthorizationPolicy",
   "Version":"2012-10-17",

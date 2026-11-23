@@ -42,11 +42,15 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel13-b
 
 ![Diagram comparing four disaster recovery strategies — backup and restore, pilot light, warm standby, and multi-site active-active — along axes of recovery time, recovery point, and cost.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/disaster-recovery-strategies.png)
 
+*Disaster recovery strategies from backup and restore to multi-site active-active*
+
  Pilot light and warm standby both keep a copy of primary-site assets in the recovery site with data replicated and live. The difference is readiness. A pilot light cannot serve requests until you start and scale compute, while a warm standby already handles reduced traffic and only needs to scale up. Pilot light costs less and recovers more slowly. When a warm standby is fully scaled and serving full production load, it becomes hot standby.
 
  Match the strategy to the recovery objectives you already defined. Avoid choosing one more stringent than the business requires, because standing capacity and cross-Region complexity carry ongoing cost. The following figure shows how a maximum acceptable RTO and a spending limit together narrow the field to the strategies that satisfy both. Where you want warm-standby recovery times closer to pilot-light cost, a purpose-built replication service can continuously protect data and orchestrate compute recovery on failover.
 
 ![Decision diagram showing how a maximum acceptable RTO and a spending limit together narrow disaster recovery strategies to the options that satisfy both constraints.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/choosing-a-dr-strategy.png)
+
+*Choosing a disaster recovery strategy by RTO and cost*
 
  Replication alone does not make a workload recoverable. Continuous replication copies corruption and deletion to the recovery site as faithfully as it copies good data. Every strategy therefore needs point-in-time backups or versioning in addition to replication, so you can recover to a moment before the data was damaged.
 

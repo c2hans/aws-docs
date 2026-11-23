@@ -48,7 +48,7 @@ For more information, see [Internet gateways](https://docs.aws.amazon.com/vpc/la
 **Tools for PowerShell V4**
 **Example 1: This example creates an Internet gateway.**
 
-```
+```powershell
 New-EC2InternetGateway
 ```
 **Output:**
@@ -63,7 +63,7 @@ Attachments    InternetGatewayId    Tags
 **Tools for PowerShell V5**
 **Example 1: This example creates an Internet gateway.**
 
-```
+```powershell
 New-EC2InternetGateway
 ```
 **Output:**

@@ -41,7 +41,7 @@ The Amazon EC2 service has an operation for describing instances, [DescribeInsta
 
 Import the required AWS SDK for Go packages.
 
-```
+```go
 package main
 
 import (
@@ -54,7 +54,7 @@ import (
 
 Use the following code to create a session and Amazon EC2 client.
 
-```
+```go
 // Load session from shared config
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
@@ -66,7 +66,7 @@ ec2Svc := ec2.New(sess)
 
 Call `DescribeInstances` to get detailed information for each instance.
 
-```
+```go
 // Call to get detailed information on each instance
 result, err := ec2Svc.DescribeInstances(nil)
 if err != nil {
@@ -85,7 +85,7 @@ Create a new Go file named `monitoring_instances.go`.
 
 Import the required AWS SDK for Go packages.
 
-```
+```go
 package main
 
 import (
@@ -101,7 +101,7 @@ import (
 
 To access Amazon EC2, create an EC2 client.
 
-```
+```go
 func main() {
     // Load session from shared config
     sess := session.Must(session.NewSessionWithOptions(session.Options{
@@ -114,7 +114,7 @@ func main() {
 
 Based on the value of a command-line argument (ON or OFF), call either the `MonitorInstances` method of the Amazon EC2 service object to begin detailed monitoring of the specified instances, or the `UnmonitorInstances` method. Before you try to change the monitoring of these instances, use the `DryRun` parameter to test whether you have permission to change instance monitoring.
 
-```
+```go
     if os.Args[1] == "ON" {
         input := &ec2.MonitorInstancesInput{
             InstanceIds: []*string{
@@ -170,7 +170,7 @@ Create a new Go file named `start_stop_instances.go`.
 
 Import the required AWS SDK for Go packages.
 
-```
+```go
 package main
 
 import (
@@ -186,7 +186,7 @@ import (
 
 To access Amazon EC2, create an EC2 client. The user will pass in a state value of START or STOP and the instance ID.
 
-```
+```go
 func main() {
     // Load session from shared config
     sess := session.Must(session.NewSessionWithOptions(session.Options{
@@ -199,7 +199,7 @@ func main() {
 
 Based on the value of a command-line argument (START or STOP), call either the `StartInstances` method of the Amazon EC2 service object to start the specified instances, or the `StopInstances` method to stop them. Before you try to start or stop the selected instances, use the `DryRun` parameter to test whether you have permission to start or stop them.
 
-```
+```go
     if os.Args[1] == "START" {
         input := &ec2.StartInstancesInput{
             InstanceIds: []*string{
@@ -255,7 +255,7 @@ Create a new Go file named `reboot_instances.go`.
 
 Import the required AWS SDK for Go packages.
 
-```
+```go
 package main
 
 import (
@@ -271,7 +271,7 @@ import (
 
 To access Amazon EC2, create an EC2 client. The user will pass in a state value of START or STOP and the instance ID.
 
-```
+```go
     sess := session.Must(session.NewSessionWithOptions(session.Options{
         SharedConfigState: session.SharedConfigEnable,
     }))
@@ -282,7 +282,7 @@ To access Amazon EC2, create an EC2 client. The user will pass in a state value 
 
 Based on the value of a command-line argument (START or STOP), call either the `StartInstances` method of the Amazon EC2 service object to start the specified instances, or the `StopInstances` method to stop them. Before you try to reboot the selected instances, use the `DryRun` parameter to test whether the instance exists and that you have permission to reboot it.
 
-```
+```go
     input := &ec2.RebootInstancesInput{
         InstanceIds: []*string{
             aws.String(os.Args[1]),
@@ -295,7 +295,7 @@ Based on the value of a command-line argument (START or STOP), call either the `
 
 If the error code is `DryRunOperation`, it means that you do have the permissions you need to reboot the instance.
 
-```
+```go
     if ok && awsErr.Code() == "DryRunOperation" {
         input.DryRun = aws.Bool(false)
         result, err = svc.RebootInstances(input)

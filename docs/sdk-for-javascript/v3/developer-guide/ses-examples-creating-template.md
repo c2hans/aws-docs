@@ -44,7 +44,7 @@ In this example, use a Node.js module to create an email template to use with Am
 
 Create a `libs` directory, and create a Node.js module with the file name `sesClient.js`. Copy and paste the code below into it, which creates the Amazon SES client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SESClient } from "@aws-sdk/client-ses";
 // Set the AWS Region.
 const REGION = "us-east-1";
@@ -64,7 +64,7 @@ Create an object to pass the parameters for the `ListTemplatesCommand` method of
 **Note**
 This example imports and uses the required AWS Service V3 package clients, V3 commands, and uses the `send` method in an async/await pattern. You can create this example using V2 commands instead by making some minor changes. For details, see [Using v3 commands](migrating.md#using_v3_commands).
 
-```
+```javascript
 import { ListTemplatesCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 
@@ -85,7 +85,7 @@ const run = async () => {
 
 To run the example, enter the following at the command prompt. Amazon SES returns the list of templates.
 
-```
+```javascript
 node ses_listtemplates.js
 ```
 
@@ -98,7 +98,7 @@ In this example, use a Node.js module to get an email template to use with Amazo
 
 Create a `libs` directory, and create a Node.js module with the file name `sesClient.js`. Copy and paste the code below into it, which creates the Amazon SES client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SESClient } from "@aws-sdk/client-ses";
 // Set the AWS Region.
 const REGION = "us-east-1";
@@ -121,7 +121,7 @@ This example imports and uses the required AWS Service V3 package clients, V3 co
 **Note**
 Replace {{TEMPLATE\_NAME}} with the name of the template to return.
 
-```
+```javascript
 import { GetTemplateCommand } from "@aws-sdk/client-ses";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
 import { sesClient } from "./libs/sesClient.js";
@@ -149,7 +149,7 @@ const run = async () => {
 
 To run the example, enter the following at the command prompt. Amazon SES returns the template details.
 
-```
+```javascript
 node ses_gettemplate.js
 ```
 
@@ -162,7 +162,7 @@ In this example, use a Node.js module to create an email template to use with Am
 
 Create a `libs` directory, and create a Node.js module with the file name `sesClient.js`. Copy and paste the code below into it, which creates the Amazon SES client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SESClient } from "@aws-sdk/client-ses";
 // Set the AWS Region.
 const REGION = "us-east-1";
@@ -185,7 +185,7 @@ This example imports and uses the required AWS Service V3 package clients, V3 co
 **Note**
 Replace {{TEMPLATE\_NAME}} with a name for the new template, {{HtmlPart}} with the HTML tagged content of email, and {{SubjectPart}} with the subject of the email.
 
-```
+```javascript
 import { CreateTemplateCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
@@ -227,7 +227,7 @@ const run = async () => {
 
 To run the example, enter the following at the command prompt. The template is added to Amazon SES.
 
-```
+```javascript
 node ses_createtemplate.js
 ```
 
@@ -240,7 +240,7 @@ In this example, use a Node.js module to create an email template to use with Am
 
 Create a `libs` directory, and create a Node.js module with the file name `sesClient.js`. Copy and paste the code below into it, which creates the Amazon SES client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SESClient } from "@aws-sdk/client-ses";
 // Set the AWS Region.
 const REGION = "us-east-1";
@@ -263,7 +263,7 @@ This example imports and uses the required AWS Service V3 package clients, V3 co
 **Note**
 Replace {{TEMPLATE\_NAME}} with a name of the template and {{HTML\_PART}} with the HTML tagged content of email.
 
-```
+```javascript
 import { UpdateTemplateCommand } from "@aws-sdk/client-ses";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
 import { sesClient } from "./libs/sesClient.js";
@@ -296,7 +296,7 @@ const run = async () => {
 
 To run the example, enter the following at the command prompt. Amazon SES returns the template details.
 
-```
+```javascript
 node ses_updatetemplate.js
 ```
 
@@ -309,7 +309,7 @@ In this example, use a Node.js module to create an email template to use with Am
 
 Create a `libs` directory, and create a Node.js module with the file name `sesClient.js`. Copy and paste the code below into it, which creates the Amazon SES client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SESClient } from "@aws-sdk/client-ses";
 // Set the AWS Region.
 const REGION = "us-east-1";
@@ -332,7 +332,7 @@ This example imports and uses the required AWS Service V3 package clients, V3 co
 **Note**
 Replace {{TEMPLATE\_NAME}} with the name of the template to be deleted.
 
-```
+```javascript
 import { DeleteTemplateCommand } from "@aws-sdk/client-ses";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
 import { sesClient } from "./libs/sesClient.js";
@@ -356,7 +356,7 @@ const run = async () => {
 
 To run the example, enter the following at the command prompt. Amazon SES returns the template details.
 
-```
+```javascript
 node ses_deletetemplate.js
 ```
 

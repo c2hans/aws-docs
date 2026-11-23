@@ -47,7 +47,7 @@ You can't embed an inline policy in a service-linked role in IAM. Because the li
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": {

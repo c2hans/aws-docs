@@ -15,7 +15,7 @@ After you've done either of the preceding steps, install the corresponding envir
 
 To submit a training job to a Kubernetes cluster, you specify Kubernetes-specific configurations. The configurations include the cluster namespace or the location of the persistent volume.
 
-```
+```yaml
 pullPolicy: Always
 restartPolicy: Never
 namespace: default

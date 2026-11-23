@@ -29,7 +29,7 @@ The following code example shows how to get started using Amazon SNS.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/sns#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -89,7 +89,7 @@ The following code example shows how to use `CreateTopic`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/topics_and_queues#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -141,7 +141,7 @@ The following code example shows how to use `DeleteTopic`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/topics_and_queues#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -178,7 +178,7 @@ The following code example shows how to use `ListTopics`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/sns#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -235,7 +235,7 @@ The following code example shows how to use `Publish`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/topics_and_queues#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -288,7 +288,7 @@ The following code example shows how to use `Subscribe`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/topics_and_queues#code-examples).
 Subscribe a queue to a topic with optional filters.
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -354,7 +354,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/topics_and_queues#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -660,7 +660,7 @@ func RunTopicsAndQueuesScenario(
 ```
 Define a struct that wraps Amazon SNS actions used in this example.
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -770,7 +770,7 @@ func (actor SnsActions) Publish(ctx context.Context, topicArn string, message st
 ```
 Define a struct that wraps Amazon SQS actions used in this example.
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -922,7 +922,7 @@ func (actor SqsActions) DeleteQueue(ctx context.Context, queueUrl string) error 
 ```
 Clean up resources.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -991,7 +991,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sns-to-lambda) repository.
 Consuming an SNS event with Lambda using Go.
 
-```
+```go
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 package main

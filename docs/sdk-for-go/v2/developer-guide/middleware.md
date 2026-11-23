@@ -41,7 +41,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/middleware
 
  The following examples show how you can write a custom middleware to populate the Bucket member of the Amazon S3 `GetObject` API calls if one is not provided. This middleware will be referenced in proceeding examples to show how to attach step middleware to the stack.
 
-```
+```go
 import "github.com/aws/smithy-go/aws"
 import "github.com/aws/smithy-go/middleware"
 import "github.com/aws/aws-sdk-go-v2/service/s3"
@@ -73,7 +73,7 @@ var defaultBucket = middleware.InitializeMiddlewareFunc("DefaultBucket", func(
 
  You can attach your custom step middleware to every client by adding the middleware using the `APIOptions` member of the [aws.Config](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/aws#Config) type. The following examples attaches the `defaultBucket` middleware to every client constructed using your applications `aws.Config` object:
 
-```
+```go
 import "context"
 import "github.com/aws/aws-sdk-go-v2/aws"
 import "github.com/aws/aws-sdk-go-v2/config"
@@ -100,7 +100,7 @@ client := s3.NewFromConfig(cfg)
 
  You can attach your custom step middleware to a specific client operation by modifying the client's `APIOptions` member using the variadic argument list for an operation. The following examples attaches the `defaultBucket` middleware to a specific Amazon S3 `GetObject` operation invocation:
 
-```
+```go
 import "context"
 import "github.com/aws/aws-sdk-go-v2/aws"
 import "github.com/aws/aws-sdk-go-v2/config"
@@ -137,7 +137,7 @@ object, err := client.GetObject(context.TODO(), &s3.GetObjectInput{
 
  In certain situations, you may find that you require two or more middleware to function in tandem by sharing information or state. You can use [context.Context](https://golang.org/pkg/context/#Context) to pass this metadata by using [middleware.WithStackValue](https://pkg.go.dev/github.com/aws/smithy-go/middleware#WithStackValue). `middleware.WithStackValue` attaches the given key-value pair to the provided context, and safely limits the scope to the currently executing stack. These stack-scoped values can be retrieved from a context using [middleware.GetStackValue](https://pkg.go.dev/github.com/aws/smithy-go/middleware#GetStackValue) and providing the key used to stored the corresponding value. Keys must be comparable, and you must define your own types as context keys to avoid collisions. The following examples shows how two middleware can use `context.Context` to pass information down the stack.
 
-```
+```go
 import "context"
 import "github.com/aws/smithy-go/middleware"
 
@@ -197,7 +197,7 @@ var customBuild = middleware.BuildMiddlewareFunc("customBuild", func(
 
  The following examples shows how a custom middleware can add metadata that is returned as part of the operation output.
 
-```
+```go
 import "context"
 import "github.com/aws/aws-sdk-go-v2/service/s3"
 import "github.com/aws/smithy-go/middleware"

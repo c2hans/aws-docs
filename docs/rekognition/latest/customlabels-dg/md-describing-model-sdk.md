@@ -32,7 +32,7 @@ You can use the `DescribeProjectVersions` API to get information about a version
 
    For example: `python describe_model.py {{project_arn}} {{model_version}} `
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
 
@@ -155,7 +155,7 @@ You can use the `DescribeProjectVersions` API to get information about a version
    + project\_arn — the ARN of the model that you want to describe.
    + model\_version — the version of the model that you want to describe.
 
-   ```
+   ```java
    /*
       Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
       SPDX-License-Identifier: Apache-2.0

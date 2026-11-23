@@ -62,7 +62,7 @@ Show command reference information for the `cdk refactor` command.<a name="ref-c
  `--override-file <FILE>`
 Provide overrides when the CDK CLI is unable to determine a refactoring resolution for resources. This file contains resource mappings in JSON format. The following is an example:
 
-```
+```json
 {
     "environments": [
         {

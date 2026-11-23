@@ -16,7 +16,7 @@ In this section of the [Hotspots example](app-hotspots-detection.md), you set up
 
 1. Create a file named `index.html` with the following contents:
 
-   ```
+   ```html
    <!doctype html>
    <html lang=en>
    <head>
@@ -60,7 +60,7 @@ In this section of the [Hotspots example](app-hotspots-detection.md), you set up
 
 1. Create a file in the same directory named `hotspots_viewer.js` with the following contents. Provide your , credentials, and output stream name in the variables provided.
 
-   ```
+   ```Javascript
    // Visualize example output from the Kinesis Analytics hotspot detection algorithm.
    // This script assumes that the output stream has a single shard.
 

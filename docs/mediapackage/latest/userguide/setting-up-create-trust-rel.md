@@ -100,7 +100,7 @@ The following permissions are required only if you customer-managed AWS KMS key.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -172,7 +172,7 @@ The trust relationship defines what entities can assume the role that you create
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -197,7 +197,7 @@ The trust relationship defines what entities can assume the role that you create
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

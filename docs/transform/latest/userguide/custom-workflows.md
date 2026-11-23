@@ -689,7 +689,7 @@ After you tag your customer-owned transformation definitions, activate those tag
 
 After a tag key is active, you can group AWS Transform charges by that key in Cost Explorer. You can also include resource IDs in AWS Cost and Usage Reports to see the transformation definition ARN and its tag values on each line item. For the columns that carry those values, see [Resource tags columns](https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur2-resource-tags.html) in the *AWS Data Exports User Guide*. The following example returns AWS Transform cost and Agent Minutes for one day, grouped by a `CostCenter` tag.
 
-```
+```bash
 aws ce get-cost-and-usage \
     --time-period Start=2026-09-01,End=2026-09-02 \
     --granularity DAILY \

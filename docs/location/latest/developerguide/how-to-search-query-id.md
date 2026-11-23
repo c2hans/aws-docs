@@ -20,7 +20,7 @@ Get search results for Query ID, which are returned by the `Suggestion` API.
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryId": "<Redacted>"
 }
@@ -29,7 +29,7 @@ Get search results for Query ID, which are returned by the `Suggestion` API.
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -325,7 +325,7 @@ Get search results for Query ID, which are returned by the `Suggestion` API.
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/search-text?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -337,7 +337,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places search-text --key ${YourKey} --query-id "<Redacted>"
 ```
 

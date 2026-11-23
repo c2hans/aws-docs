@@ -95,7 +95,7 @@ You can combine the Linux and Windows single-secret options if you have both ser
 
 Credential secret format. For more information, see [MGN connector credentials](https://docs.aws.amazon.com/mgn/latest/ug/mgn-connector-credentials.html) in the *MGN User Guide*:
 
-```
+```json
 {
   "WinConnectionProtocol": "HTTPS",
   "WinUserName": "windows_username",

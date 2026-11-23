@@ -98,7 +98,7 @@ The following procedure enables the profiler on all supported operations for the
 
    In the following output, only `sample-parameter-group ` meets both criteria.
 
-   ```
+   ```json
    [
           [
               "default.docdb3.6",
@@ -137,7 +137,7 @@ The following procedure enables the profiler on all supported operations for the
 
    Output from this operation looks something like the following.
 
-   ```
+   ```json
    {
        "DBCluster": {
            "AvailabilityZones": [
@@ -284,7 +284,7 @@ aws docdb modify-db-cluster ^
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 {
     "DBCluster": {
         "AvailabilityZones": [

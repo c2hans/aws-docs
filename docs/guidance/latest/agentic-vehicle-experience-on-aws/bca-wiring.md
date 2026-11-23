@@ -28,7 +28,7 @@ Before running any AVX deploy command, confirm all of the following:
 
 1.  **Deploy ADP** with AVX account context. From the ADP repo:
 
-   ```
+   ```bash
    cdk deploy --all \
      --context cvxAccountId=<cvx-account-id> \
      --context cvxKbPrincipals=<cvx-agentcore-role-arn>,<cvx-supervisor-lambda-role-arn>
@@ -38,7 +38,7 @@ Before running any AVX deploy command, confirm all of the following:
 
 1.  **Deploy AVX CDK infrastructure**. From the AVX repo:
 
-   ```
+   ```bash
    source .env  # loads CMS table names, Redis endpoint, KMS ARN, Cognito pool ID
    cdk deploy --all \
      --context adpAccountId=<adp-account-id> \
@@ -50,7 +50,7 @@ Before running any AVX deploy command, confirm all of the following:
 
 1.  **Configure the AgentCore runtime**. Run the `agentcore configure` command pointing at the supervisor handler:
 
-   ```
+   ```bash
    agentcore configure -e agents/supervisor/agentcore_app.py
    ```
 
@@ -58,7 +58,7 @@ Before running any AVX deploy command, confirm all of the following:
 
 1.  **Deploy the AgentCore runtimes**. Deploy both the text and bidirectional runtimes:
 
-   ```
+   ```bash
    make deploy-staging   # deploys both vsa_supervisor_text_* and vsa_supervisor_bidi_*
    ```
 
@@ -66,7 +66,7 @@ Before running any AVX deploy command, confirm all of the following:
 
 1.  **Seed tenant configuration**. Each tenant is onboarded by writing a config record to the `vsa-tenant-config` DynamoDB table. The seed script accepts tenant ID, KB IDs, Connect queue ARNs, escalation rules, and booking config:
 
-   ```
+   ```bash
    python3 scripts/seed-tenant.py \
      --tenant-id <tenant-id> \
      --kb-id <tenant-kb-id> \
@@ -76,7 +76,7 @@ Before running any AVX deploy command, confirm all of the following:
 
 1.  **Validate end-to-end**. Run the smoke test to confirm that the AgentCore runtime can reach both foundations:
 
-   ```
+   ```bash
    python3 scripts/smoke-test-kb-retrieve.py --stage <stage>
    ```
 

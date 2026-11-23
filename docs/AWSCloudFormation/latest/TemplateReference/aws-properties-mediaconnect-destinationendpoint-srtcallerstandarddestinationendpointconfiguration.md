@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::DestinationEndpoint SrtCallerStandardDestinationEndpointConfiguration
 
-<a name="aws-properties-mediaconnect-destinationendpoint-srtcallerstandarddestinationendpointconfiguration-description"></a>The `SrtCallerStandardDestinationEndpointConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::DestinationEndpoint](aws-resource-mediaconnect-destinationendpoint.md).
+The configuration settings for a destination endpoint that uses SRT in caller mode.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-srtcallerstandarddestinationendpointconfiguration-syntax"></a>
@@ -38,13 +38,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-srtcallerstandarddestinationendpointconfiguration-properties"></a>
 
 `EncryptionPassphrase`  <a name="cfn-mediaconnect-destinationendpoint-srtcallerstandarddestinationendpointconfiguration-encryptionpassphrase"></a>
-Property description not available.
+The configuration for the AWS Secrets Manager secret that holds the key or passphrase used to encrypt an endpoint connection.
 *Required*: No
 *Type*: [EndpointEncryptionSecretConfiguration](aws-properties-mediaconnect-destinationendpoint-endpointencryptionsecretconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MinimumLatencyMilliseconds`  <a name="cfn-mediaconnect-destinationendpoint-srtcallerstandarddestinationendpointconfiguration-minimumlatencymilliseconds"></a>
-Property description not available.
+The minimum latency, in milliseconds, for the SRT connection. The valid range is 10 to 10000.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `10`
@@ -52,7 +52,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourceListenerPort`  <a name="cfn-mediaconnect-destinationendpoint-srtcallerstandarddestinationendpointconfiguration-sourcelistenerport"></a>
-Property description not available.
+The port on which the source listens for the connection. The valid range is 3000 to 30000.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `3000`

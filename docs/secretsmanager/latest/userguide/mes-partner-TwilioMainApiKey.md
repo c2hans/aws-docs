@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "accountSid": "{{AC followed by 32 hexadecimal characters}}",
   "adminKeySid": "{{SK followed by 32 hexadecimal characters}}",

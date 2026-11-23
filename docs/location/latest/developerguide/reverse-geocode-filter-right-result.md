@@ -21,7 +21,7 @@ By filtering for `PointAddress`, you can retrieve specific street addresses, enh
 ------
 #### [ Sample Request ]
 
-```
+```json
 {
     "QueryPosition": [
         -97.721, 30.404
@@ -37,7 +37,7 @@ By filtering for `PointAddress`, you can retrieve specific street addresses, enh
 ------
 #### [ Sample Response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -92,7 +92,7 @@ By filtering for `PointAddress`, you can retrieve specific street addresses, enh
 ------
 #### [ cURL ]
 
-```
+```json
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/reverse-geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -111,7 +111,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```json
 aws geo-places reverse-geocode --key ${YourKey} --query-position -97.721 30.404 --filter '{"IncludePlaceTypes": ["PointAddress"]}'
 ```
 
@@ -125,7 +125,7 @@ By filtering for `Street`, the API returns street-level data without specific ad
 ------
 #### [ Sample Request ]
 
-```
+```json
 {
     "QueryPosition": [
         -97.721, 30.404
@@ -141,7 +141,7 @@ By filtering for `Street`, the API returns street-level data without specific ad
 ------
 #### [ Sample Response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -195,7 +195,7 @@ By filtering for `Street`, the API returns street-level data without specific ad
 ------
 #### [ cURL ]
 
-```
+```json
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/reverse-geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -214,7 +214,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```json
 aws geo-places reverse-geocode --key ${YourKey} --query-position -97.721 30.404 --filter '{"IncludePlaceTypes": ["Street"]}'
 ```
 
@@ -228,7 +228,7 @@ By filtering for `Locality`, you can retrieve broader location data, including c
 ------
 #### [ Sample Request ]
 
-```
+```json
 {
     "QueryPosition": [
         -97.721, 30.404
@@ -244,7 +244,7 @@ By filtering for `Locality`, you can retrieve broader location data, including c
 ------
 #### [ Sample Response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -287,7 +287,7 @@ By filtering for `Locality`, you can retrieve broader location data, including c
 ------
 #### [ cURL ]
 
-```
+```json
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/reverse-geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -306,7 +306,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```json
 aws geo-places reverse-geocode --key ${YourKey} --query-position -97.721 30.404 --filter '{"IncludePlaceTypes": ["Locality"]}'
 ```
 

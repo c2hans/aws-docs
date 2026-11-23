@@ -46,7 +46,7 @@ The **Events** tab also shows the cluster's operations. To see only the events f
 
 Use the `list-cluster-events` command to retrieve events for your cluster:
 
-```
+```bash
 aws sagemaker list-cluster-events \
     --cluster-name my-eks-cluster \
     --sort-by EventTime \
@@ -63,7 +63,7 @@ You can narrow results using the following filters:
 
 For example, to see only instance-group-level events for a specific instance group:
 
-```
+```bash
 aws sagemaker list-cluster-events \
     --cluster-name my-eks-cluster \
     --resource-type InstanceGroup \
@@ -72,7 +72,7 @@ aws sagemaker list-cluster-events \
 
 To see only the events caused by one request:
 
-```
+```bash
 aws sagemaker list-cluster-events \
     --cluster-name my-eks-cluster \
     --operation-id 4c078808-1f2e-4a6b-9c3d-8e5f7a2b1c0d
@@ -85,7 +85,7 @@ aws sagemaker list-cluster-events \
 
 Use the `describe-cluster-event` command with an event ID from the list output to retrieve full event details, including the `EventLevel`, `Description`, and `EventMetadata`:
 
-```
+```bash
 aws sagemaker describe-cluster-event \
     --cluster-name my-eks-cluster \
     --event-id 83ea0bb5-be77-45e8-a458-0a87f778a205

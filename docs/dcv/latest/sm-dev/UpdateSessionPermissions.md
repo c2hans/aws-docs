@@ -44,7 +44,7 @@ The ID of the session.
 **Request**
 The following example sets new permissions for a session with a session ID of `SessionId1897`.
 
-```
+```python
 from swagger_client.models.update_session_permissions_request_data import UpdateSessionPermissionsRequestData
 
 def get_session_permissions_api():
@@ -68,7 +68,7 @@ def main():
 **Response**
 The following is the sample output.
 
-```
+```json
 {
    'request_id': 'd68ebf66-4022-42b5-ba65-99f89b18c341',
     'successful_list': [

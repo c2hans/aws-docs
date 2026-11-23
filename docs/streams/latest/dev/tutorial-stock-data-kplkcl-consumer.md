@@ -40,7 +40,7 @@ Add code to the methods of the `StockTradeRecordProcessor` class, as shown in th
 
 1. Implement the `processRecord` method by instantiating a correctly sized `StockTrade` object and adding the record data to it, logging a warning if there's a problem.
 
-   ```
+   ```java
    StockTrade trade = StockTrade.fromJsonAsBytes(record.getData().array());
    if (trade == null) {
        LOG.warn("Skipping record. Unable to parse record into StockTrade. Partition Key: " + record.getPartitionKey());
@@ -51,7 +51,7 @@ Add code to the methods of the `StockTradeRecordProcessor` class, as shown in th
 
 1. Implement a simple `reportStats` method. Feel free to modify the output format to your preferences.
 
-   ```
+   ```java
    System.out.println("****** Shard " + kinesisShardId + " stats for last 1 minute ******\n" +
                       stockStats + "\n" +
                       "****************************************************************\n");
@@ -59,7 +59,7 @@ Add code to the methods of the `StockTradeRecordProcessor` class, as shown in th
 
 1. Finally, implement the `resetStats` method, which creates a new `stockStats` instance.
 
-   ```
+   ```java
    stockStats = new StockStats();
    ```
 
@@ -71,7 +71,7 @@ Add code to the methods of the `StockTradeRecordProcessor` class, as shown in th
 
 1. Run the `StockTradesProcessor` class with the following arguments:
 
-   ```
+   ```java
    StockTradesProcessor StockTradeStream us-west-2
    ```
 

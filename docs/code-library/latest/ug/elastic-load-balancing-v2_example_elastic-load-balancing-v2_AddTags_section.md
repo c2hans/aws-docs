@@ -30,7 +30,7 @@ For more information, see [Tag an Application Load Balancer](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: This example add new Tag to specified `AWS.Tools.ElasticLoadBalancingV2` resource.**
 
-```
+```powershell
 Add-ELB2Tag -ResourceArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -Tag @{Key = 'productVersion'; Value = '1.0.0'}
 ```
 +  For API details, see [AddTags](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -38,7 +38,7 @@ Add-ELB2Tag -ResourceArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:lo
 **Tools for PowerShell V5**
 **Example 1: This example add new Tag to specified `AWS.Tools.ElasticLoadBalancingV2` resource.**
 
-```
+```powershell
 Add-ELB2Tag -ResourceArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -Tag @{Key = 'productVersion'; Value = '1.0.0'}
 ```
 +  For API details, see [AddTags](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

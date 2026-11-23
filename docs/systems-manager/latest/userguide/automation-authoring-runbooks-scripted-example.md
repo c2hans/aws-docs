@@ -23,7 +23,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    description: 'An example of an Automation runbook that patches groups of Amazon EC2 instances in stages.'
    schemaVersion: '0.3'
    assumeRole: '{{AutomationAssumeRole}}'
@@ -60,7 +60,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
       "description":"An example of an Automation runbook that patches groups of Amazon EC2 instances in stages.",
       "schemaVersion":"0.3",
@@ -114,7 +114,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    mainSteps:
      - name: getPrimaryInstanceState
        action: 'aws:executeScript'
@@ -162,7 +162,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    "mainSteps":[
          {
             "name":"getPrimaryInstanceState",
@@ -201,7 +201,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    - name: verifyPrimaryInstancesRunning
        action: 'aws:executeScript'
        timeoutSeconds: 600
@@ -242,7 +242,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
             "name":"verifyPrimaryInstancesRunning",
             "action":"aws:executeScript",
@@ -267,7 +267,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    - name: waitForPrimaryRunningInstances
        action: 'aws:executeScript'
        timeoutSeconds: 300
@@ -295,7 +295,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
             "name":"waitForPrimaryRunningInstances",
             "action":"aws:executeScript",
@@ -320,7 +320,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    - name: returnPrimaryTagKey
        action: 'aws:executeScript'
        timeoutSeconds: 120
@@ -389,7 +389,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
             "name":"returnPrimaryTagKey",
             "action":"aws:executeScript",
@@ -478,7 +478,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    - name: returnPrimaryToOriginalState
        action: 'aws:executeScript'
        timeoutSeconds: 600
@@ -508,7 +508,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
             "name":"returnPrimaryToOriginalState",
             "action":"aws:executeScript",
@@ -533,7 +533,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    - name: getSecondaryInstanceState
        action: 'aws:executeScript'
        timeoutSeconds: 120
@@ -723,7 +723,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
             "name":"getSecondaryInstanceState",
             "action":"aws:executeScript",
@@ -880,7 +880,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    description: An example of an Automation runbook that patches groups of Amazon EC2 instances in stages.
    schemaVersion: '0.3'
    assumeRole: '{{AutomationAssumeRole}}'
@@ -1287,7 +1287,7 @@ After Emily reviews the available automation actions, she determines that she ca
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
       "description":"An example of an Automation runbook that patches groups of Amazon EC2 instances in stages.",
       "schemaVersion":"0.3",

@@ -31,7 +31,7 @@ For more information, see [Comparing faces in images](https://docs.aws.amazon.co
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionImage:
     """
     Encapsulates an Amazon Rekognition image. This class is a thin wrapper
@@ -99,7 +99,7 @@ For more information, see [Creating a collection](https://docs.aws.amazon.com/re
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionCollectionManager:
     """
     Encapsulates Amazon Rekognition collection management functions.
@@ -146,7 +146,7 @@ For more information, see [Deleting a collection](https://docs.aws.amazon.com/re
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionCollection:
     """
     Encapsulates an Amazon Rekognition collection. This class is a thin wrapper
@@ -206,7 +206,7 @@ For more information, see [Deleting faces from a collection](https://docs.aws.am
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionCollection:
     """
     Encapsulates an Amazon Rekognition collection. This class is a thin wrapper
@@ -275,7 +275,7 @@ For more information, see [Describing a collection](https://docs.aws.amazon.com/
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionCollection:
     """
     Encapsulates an Amazon Rekognition collection. This class is a thin wrapper
@@ -347,7 +347,7 @@ For more information, see [Detecting faces in an image](https://docs.aws.amazon.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionImage:
     """
     Encapsulates an Amazon Rekognition image. This class is a thin wrapper
@@ -397,7 +397,7 @@ For more information, see [Detecting labels in an image](https://docs.aws.amazon
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionImage:
     """
     Encapsulates an Amazon Rekognition image. This class is a thin wrapper
@@ -448,7 +448,7 @@ For more information, see [Detecting inappropriate images](https://docs.aws.amaz
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionImage:
     """
     Encapsulates an Amazon Rekognition image. This class is a thin wrapper
@@ -506,7 +506,7 @@ For more information, see [Detecting text in an image](https://docs.aws.amazon.c
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionImage:
     """
     Encapsulates an Amazon Rekognition image. This class is a thin wrapper
@@ -554,7 +554,7 @@ For more information, see [Adding faces to a collection](https://docs.aws.amazon
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionCollection:
     """
     Encapsulates an Amazon Rekognition collection. This class is a thin wrapper
@@ -640,7 +640,7 @@ For more information, see [Listing collections](https://docs.aws.amazon.com/reko
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionCollectionManager:
     """
     Encapsulates Amazon Rekognition collection management functions.
@@ -686,7 +686,7 @@ For more information, see [Listing faces in a collection](https://docs.aws.amazo
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionCollection:
     """
     Encapsulates an Amazon Rekognition collection. This class is a thin wrapper
@@ -757,7 +757,7 @@ For more information, see [Recognizing celebrities in an image](https://docs.aws
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionImage:
     """
     Encapsulates an Amazon Rekognition image. This class is a thin wrapper
@@ -817,7 +817,7 @@ For more information, see [Searching for a face (face ID)](https://docs.aws.amaz
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionCollection:
     """
     Encapsulates an Amazon Rekognition collection. This class is a thin wrapper
@@ -901,7 +901,7 @@ For more information, see [Searching for a face (image)](https://docs.aws.amazon
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 
-```
+```python
 class RekognitionCollection:
     """
     Encapsulates an Amazon Rekognition collection. This class is a thin wrapper
@@ -1002,7 +1002,7 @@ For more information, see [Searching faces in a collection](https://docs.aws.ama
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 Create classes that wrap Amazon Rekognition functions.
 
-```
+```python
 import logging
 from pprint import pprint
 import boto3
@@ -1410,7 +1410,7 @@ class RekognitionFace:
 ```
 Use the wrapper classes to build a collection of faces from a set of images and then search for faces in the collection.
 
-```
+```python
 def usage_demo():
     print("-" * 88)
     print("Welcome to the Amazon Rekognition face collection demo!")
@@ -1491,7 +1491,7 @@ For more information, see [Displaying bounding boxes](https://docs.aws.amazon.co
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 Create classes to wrap Amazon Rekognition functions.
 
-```
+```python
 import logging
 from pprint import pprint
 import boto3
@@ -1705,7 +1705,7 @@ class RekognitionImage:
 ```
 Create helper functions to draw bounding boxes and polygons.
 
-```
+```python
 import io
 import logging
 from PIL import Image, ImageDraw
@@ -1753,7 +1753,7 @@ def show_polygons(image_bytes, polygons, color):
 ```
 Create classes to parse objects returned by Amazon Rekognition.
 
-```
+```python
 class RekognitionFace:
     """Encapsulates an Amazon Rekognition face."""
 
@@ -1998,7 +1998,7 @@ class RekognitionText:
 ```
 Use the wrapper classes to detect elements in images and display their bounding boxes. The images used in this example can be found on GitHub along with instructions and more code.
 
-```
+```python
 def usage_demo():
     print("-" * 88)
     print("Welcome to the Amazon Rekognition image detection demo!")

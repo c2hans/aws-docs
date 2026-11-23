@@ -30,7 +30,7 @@ This example enables event orchestration for an event type that is has already b
 
 The following example shows a sample request for updating an event type `sample_registration` to enable event orchestration. The example uses the `PutEventType` API and assumes you have created the variables `ip_address` and `email_address`, the labels `legit` and `fraud`, and the entity type `sample_customer`. For information on how to create these resources, see [Resources](https://docs.aws.amazon.com/frauddetector/latest/ug/create-resources.html).
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 fraud_detector.put_event_type(

@@ -81,7 +81,7 @@ AWS CLI template delete operations *don't* include the deletion of other version
 
 Run the following command:
 
-```
+```sh
 $ aws proton delete-environment-template-version \
     --template-name "{{simple-env}}" \
     --major-version "{{1}}" \
@@ -90,7 +90,7 @@ $ aws proton delete-environment-template-version \
 
 Response:
 
-```
+```json
 {
     "environmentTemplateVersion": {
         "arn": "arn:aws:proton:region-id:123456789012:environment-template/simple-env:1.0",
@@ -108,14 +108,14 @@ Response:
 
 Run the following command:
 
-```
+```sh
 $ aws proton delete-environment-template \
     --name "{{simple-env}}"
 ```
 
 Response:
 
-```
+```json
 {
     "environmentTemplate": {
         "arn": "arn:aws:proton:region-id:123456789012:environment-template/simple-env",
@@ -131,7 +131,7 @@ Response:
 
 Run the following command:
 
-```
+```sh
 $ aws proton delete-service-template-version \
     --template-name "{{fargate-service}}" \
     --major-version "{{1}}" \
@@ -140,7 +140,7 @@ $ aws proton delete-service-template-version \
 
 Response:
 
-```
+```json
 {
     "serviceTemplateVersion": {
         "arn": "arn:aws:proton:region-id:123456789012:service-template/fargate-service:1.0",

@@ -39,7 +39,7 @@ In this step, you create a credential file on the host computer that contains yo
 
    For example, you can run the following command to use GNU nano to create the `credentials` file.
 
-   ```
+   ```bash
    nano ./greengrass-v2-credentials/credentials
    ```
 
@@ -66,7 +66,7 @@ This tutorial uses an environment file to set the environment variables that wil
 
    For example, on a Linux-based system, you can run the following command to use GNU nano to create the `.env` in the current directory.
 
-   ```
+   ```bash
    nano .env
    ```
 
@@ -103,7 +103,7 @@ This tutorial shows you how to start the Docker image that you built in a the Do
 
 1. Run the following command to start the Docker container.
 
-   ```
+   ```bash
    docker run --rm --init -it --name {{docker-image}} \
     -v {{path/to/}}greengrass-v2-credentials:/root/.aws/:ro \
     --env-file .env \
@@ -126,7 +126,7 @@ To run your Docker container with increased security, you can use the `--cap-dro
 
 1. <a name="docker-automatic-provisioning-remove-credentials-file"></a>Remove the credentials from `./greengrass-v2-credentials` on the host device.
 
-   ```
+   ```bash
    rm -rf ./greengrass-v2-credentials
    ```
 **Important**
@@ -139,7 +139,7 @@ You're removing these credentials, because they provide broad permissions that t
 
    For example, on a Linux-based system, you can run the following command to use GNU nano to create the `docker-compose.yml` in the current directory.
 
-   ```
+   ```bash
    nano docker-compose.yml
    ```
 **Note**
@@ -147,7 +147,7 @@ You can also download and use the latest version of the AWS-provided Compose fil
 
 1. Add the following content to the Compose file. Your file should look similar to the following example. Replace {{docker-image}} with the name of your Docker image.
 
-   ```
+   ```yaml
    version: '3.7'
 
    services:
@@ -170,13 +170,13 @@ To run your Docker container with increased security, you can use `cap_drop` and
 
 1. Run the following command to start the Docker container.
 
-   ```
+   ```bash
    docker-compose -f docker-compose.yml up
    ```
 
 1. <a name="docker-automatic-provisioning-remove-credentials-file"></a>Remove the credentials from `./greengrass-v2-credentials` on the host device.
 
-   ```
+   ```bash
    rm -rf ./greengrass-v2-credentials
    ```
 **Important**

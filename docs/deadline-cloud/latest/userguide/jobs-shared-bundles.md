@@ -23,7 +23,7 @@ Before you begin, make sure that you have the Deadline Cloud command line interf
 
 1. From a terminal, run the following command to open the job bundle browser:
 
-   ```
+   ```bash
    deadline bundle gui-submit --browse
    ```
 

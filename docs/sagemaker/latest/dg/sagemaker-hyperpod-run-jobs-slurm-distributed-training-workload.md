@@ -52,7 +52,7 @@ Docker images pre-installed with the SMDDP library or the URLs to the SMDDP bina
 **Note**
 If you work in a Conda environment, ensure that you install PyTorch using `conda install` instead of `pip`.
 
-  ```
+  ```sh
   conda install pytorch=={{X.Y.Z}}  torchvision=={{X.Y.Z}} torchaudio=={{X.Y.Z}} pytorch-cuda={{X.Y.Z}} -c pytorch -c nvidia
   ```
 
@@ -61,7 +61,7 @@ If you work in a Conda environment, ensure that you install PyTorch using `conda
 **Important**
 To use the SMDDP library in a Docker container, mount the `/var/log` directory from the host machine onto `/var/log` in the container. This can be done by adding the following option when running your container.
 
-  ```
+  ```sh
   docker run {{<OTHER_OPTIONS>}} -v /var/log:/var/log ...
   ```
 

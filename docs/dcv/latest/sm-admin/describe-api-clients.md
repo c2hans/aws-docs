@@ -43,7 +43,7 @@ sudo -u root dcv-session-manager-broker describe-api-clients
 
 **Output**
 
-```
+```json
 Api clients
 [ {
 "name" : "client-abc",

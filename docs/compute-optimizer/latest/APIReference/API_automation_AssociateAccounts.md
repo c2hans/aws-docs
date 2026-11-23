@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 
 Associates one or more member accounts with your organization's management account, enabling centralized implementation of optimization actions across those accounts. Once associated, the management account (or a delegated administrator) can apply recommended actions to the member account. When you associate a member account, its organization rule mode is automatically set to "Any allowed," which permits the management account to create Automation rules that automatically apply actions to that account. If the member account has not previously enabled the Automation feature, the association process automatically enables it.
 
+Requests that include an account to which an organization enrollment configuration applies are rejected.
+
 **Note**
 Only the management account or a delegated administrator can perform this action.
 
@@ -33,7 +35,7 @@ Pattern: `[0-9]{12}`
 Required: Yes
 
  ** [clientToken](#API_automation_AssociateAccounts_RequestSyntax) **   <a name="computeoptimizer-automation_AssociateAccounts-request-clientToken"></a>
- A unique identifier to ensure idempotency of the request. Valid for 24 hours after creation.
+ A unique identifier to ensure idempotency of the request. Valid for 30 minutes after creation.
 Type: String
 Pattern: `[a-zA-Z0-9_-]{1,64}`
 Required: No
@@ -71,19 +73,19 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
  You do not have sufficient permissions to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ForbiddenException **
  You are not authorized to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** IdempotencyTokenInUseException **
  The specified client token is already in use.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** IdempotentParameterMismatchException **
 Exception thrown when the same client token is used with different parameters, indicating a mismatch in idempotent request parameters.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
  An internal error occurred while processing the request.
@@ -94,20 +96,20 @@ HTTP Status Code: 500
 HTTP Status Code: 400
 
  ** NotManagementAccountException **
- The operation can only be performed by a management account.
+ The operation can only be performed by an organization's management account or a delegated administrator.
 HTTP Status Code: 400
 
  ** OptInRequiredException **
  The account must be opted in to Compute Optimizer Automation before performing this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ServiceUnavailableException **
  The service is temporarily unavailable.
-HTTP Status Code: 500
+HTTP Status Code: 503
 
  ** ThrottlingException **
  The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_automation_AssociateAccounts_SeeAlso"></a>

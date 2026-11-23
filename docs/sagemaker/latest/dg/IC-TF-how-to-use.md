@@ -15,7 +15,7 @@ Default hyperparameter values are different for different models. For larger mod
 
 This example uses the [`tf_flowers`](https://www.tensorflow.org/datasets/catalog/tf_flowers) dataset, which contains five classes of flower images. We pre-downloaded the dataset from TensorFlow under the Apache 2.0 license and made it available with Amazon S3. To fine-tune your model, call `.fit` using the Amazon S3 location of your training dataset.
 
-```
+```python
 from sagemaker.core import image_uris
 from sagemaker.core import model_uris, script_uris, hyperparameters
 from sagemaker.train import ModelTrainer

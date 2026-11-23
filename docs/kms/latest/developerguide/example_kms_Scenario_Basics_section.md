@@ -20,7 +20,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 Run a scenario at a command prompt.
 
-```
+```java
 import software.amazon.awssdk.core.SdkBytes;
 import software.amazon.awssdk.regions.Region;
 import org.slf4j.Logger;
@@ -634,7 +634,7 @@ public class KMSScenario {
 ```
 Define a class that wraps KMS actions.
 
-```
+```java
 public class KMSActions {
     private static final Logger logger = LoggerFactory.getLogger(KMSActions.class);
     private static KmsAsyncClient kmsAsyncClient;
@@ -1257,7 +1257,7 @@ public class KMSActions {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
         echo "\n";
         echo "--------------------------------------\n";
         echo <<<WELCOME
@@ -1953,7 +1953,7 @@ class KmsService extends AWSServiceClass
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KMSScenario:
     """Runs an interactive scenario that shows how to get started with KMS."""
 
@@ -2296,7 +2296,7 @@ if __name__ == "__main__":
 ```
 Wrapper class and methods for KMS key management.
 
-```
+```python
 class KeyManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -2430,7 +2430,7 @@ class KeyManager:
 ```
 Wrapper class and methods for KMS key aliases.
 
-```
+```python
 class AliasManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -2512,7 +2512,7 @@ class AliasManager:
 ```
 Wrapper class and methods for KMS key encryption.
 
-```
+```python
 class KeyEncrypt:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -2624,7 +2624,7 @@ class KeyEncrypt:
 ```
 Wrapper class and methods for KMS key grants.
 
-```
+```python
 class GrantManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -2709,7 +2709,7 @@ class GrantManager:
 ```
 Wrapper class and methods for KMS key policies.
 
-```
+```python
 class KeyPolicy:
     def __init__(self, kms_client):
         self.kms_client = kms_client

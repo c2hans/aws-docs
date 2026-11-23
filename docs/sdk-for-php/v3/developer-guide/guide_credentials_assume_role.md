@@ -25,7 +25,7 @@ For more information on developing Amazon EC2 applications using the SDKs, see [
 
     **Imports**
 
-   ```
+   ```php
    require 'vendor/autoload.php';
 
    use Aws\Iam\IamClient;
@@ -33,7 +33,7 @@ For more information on developing Amazon EC2 applications using the SDKs, see [
 
     **Sample Code**
 
-   ```
+   ```php
    $client = new IamClient([
        'region' => 'us-west-2',
        'version' => '2010-05-08'
@@ -44,7 +44,7 @@ For more information on developing Amazon EC2 applications using the SDKs, see [
 
     **Sample Code**
 
-   ```
+   ```php
    $result = $client->createRole([
        'AssumeRolePolicyDocument' => 'IAM JSON Policy', // REQUIRED
        'Description' => 'Description of Role',
@@ -57,7 +57,7 @@ For more information on developing Amazon EC2 applications using the SDKs, see [
 If you use the IAM console instead of the AWS SDK for PHP, the console creates an instance profile automatically and gives it the same name as the role to which it corresponds.
  **Sample Code**
 
-   ```
+   ```php
    $IPN = 'InstanceProfileName';
 
    $result = $client->createInstanceProfile([
@@ -72,7 +72,7 @@ If you use the IAM console instead of the AWS SDK for PHP, the console creates a
 
     **Imports**
 
-   ```
+   ```php
    require 'vendor/autoload.php';
 
    use Aws\Ec2\Ec2Client;
@@ -80,7 +80,7 @@ If you use the IAM console instead of the AWS SDK for PHP, the console creates a
 
     **Sample Code**
 
-   ```
+   ```php
    $ec2Client = new Ec2Client([
        'region' => 'us-west-2',
        'version' => '2016-11-15',
@@ -91,7 +91,7 @@ If you use the IAM console instead of the AWS SDK for PHP, the console creates a
 
     **Sample Code**
 
-   ```
+   ```php
     $result = $ec2Client->associateIamInstanceProfile([
        'IamInstanceProfile' => [
            'Arn' => $ARN,
@@ -123,7 +123,7 @@ Create an AWS STS client with credentials for your AWS account. In the following
 
  **Sample Code**
 
-```
+```php
 $stsClient = new Aws\Sts\StsClient([
     'profile' => 'default',
     'region' => 'us-east-2',
@@ -160,7 +160,7 @@ After [creating an identity provider](https://docs.aws.amazon.com/IAM/latest/Use
 
  **Sample Code**
 
-```
+```php
 $stsClient = new Aws\Sts\StsClient([
     'profile' => 'default',
     'region' => 'us-east-2',
@@ -203,7 +203,7 @@ Create a new profile with the `role_arn` setting for the role you want assumed. 
 
 For example, in the following `~/.aws/credentials`, the `project1` profile sets the `role_arn` and specifies the `default` profile as the source for credentials to verify that the entity associated with them can assume the role.
 
-```
+```ini
 [project1]
 role_arn = arn:aws:iam::123456789012:role/testing
 source_profile = default
@@ -219,7 +219,7 @@ If you set the `AWS_PROFILE` environment variable, or you use `profile` paramete
 
 The following snippet shows the use of the `profile` parameter in an `S3Client` constructor. The `S3Client` will have the permissions associated with the role associated with the `project1` profile.
 
-```
+```php
 $s3 = new Aws\S3\S3Client([
     'region' => 'us-east-1',
     'version' => '2006-03-01',
@@ -234,7 +234,7 @@ The `~/.aws/config` file can also contain profiles that you want to be assumed. 
 
 The following example uses the `project1` profile defined in the `config` file and the `default` profile in the `credentials` file. The `AWS_SDK_LOAD_NONDEFAULT_CONFIG` is also set.
 
-```
+```ini
 # Profile in ~/.aws/config.
 
 [profile project1]
@@ -243,7 +243,7 @@ source_profile = default
 role_session_name = OPTIONAL_SESSION_NAME
 ```
 
-```
+```ini
 # Profile in ~/.aws/credentials.
 
 [default]
@@ -254,7 +254,7 @@ aws_session_token= YOUR_AWS_SESSION_TOKEN
 
 When the `S3Client` constructor runs that is shown the following snippet, the role defined in the `project1` profile will be assumed using credentials associated with the `default` profile.
 
-```
+```php
 $s3 = new Aws\S3\S3Client([
     'region' => 'us-east-1',
     'version' => '2006-03-01',

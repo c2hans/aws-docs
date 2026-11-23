@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 The following is an example of a cluster configuration that supports IMDSv1 when using AWS ParallelCluster versions 3.7.0 and older.
 
-```
+```yaml
 Region: {{us-east-1}}
 Imds:
   ImdsSupport: v1.0

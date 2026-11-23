@@ -28,7 +28,7 @@ The following code example shows how to get started using Auto Scaling.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function helloService()
     {
         $autoScalingClient = new AutoScalingClient([
@@ -60,7 +60,7 @@ The following code example shows how to:
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
 namespace AutoScaling;
 
 use Aws\AutoScaling\AutoScalingClient;
@@ -329,7 +329,7 @@ The following code example shows how to use `CreateAutoScalingGroup`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function createAutoScalingGroup(
         $autoScalingGroupName,
         $availabilityZones,
@@ -358,7 +358,7 @@ The following code example shows how to use `DeleteAutoScalingGroup`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function deleteAutoScalingGroup($autoScalingGroupName)
     {
         return $this->autoScalingClient->deleteAutoScalingGroup([
@@ -377,7 +377,7 @@ The following code example shows how to use `DescribeAutoScalingGroups`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function describeAutoScalingGroups($autoScalingGroupNames)
     {
         return $this->autoScalingClient->describeAutoScalingGroups([
@@ -395,7 +395,7 @@ The following code example shows how to use `DescribeAutoScalingInstances`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function describeAutoScalingInstances($instanceIds)
     {
         return $this->autoScalingClient->describeAutoScalingInstances([
@@ -413,7 +413,7 @@ The following code example shows how to use `DescribeScalingActivities`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function describeScalingActivities($autoScalingGroupName)
     {
         return $this->autoScalingClient->describeScalingActivities([
@@ -431,7 +431,7 @@ The following code example shows how to use `DisableMetricsCollection`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function disableMetricsCollection($autoScalingGroupName)
     {
         return $this->autoScalingClient->disableMetricsCollection([
@@ -449,7 +449,7 @@ The following code example shows how to use `EnableMetricsCollection`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function enableMetricsCollection($autoScalingGroupName, $granularity)
     {
         return $this->autoScalingClient->enableMetricsCollection([
@@ -468,7 +468,7 @@ The following code example shows how to use `SetDesiredCapacity`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function setDesiredCapacity($autoScalingGroupName, $desiredCapacity)
     {
         return $this->autoScalingClient->setDesiredCapacity([
@@ -487,7 +487,7 @@ The following code example shows how to use `TerminateInstanceInAutoScalingGroup
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function terminateInstanceInAutoScalingGroup(
         $instanceId,
         $shouldDecrementDesiredCapacity = true,
@@ -523,7 +523,7 @@ The following code example shows how to use `UpdateAutoScalingGroup`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function updateAutoScalingGroup($autoScalingGroupName, $args)
     {
         if (array_key_exists('MaxSize', $args)) {

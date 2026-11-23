@@ -32,7 +32,7 @@ This should be setup in your AWS Organizations or delegated administrator accoun
 
 1. Paste the following event pattern into the text area.
 
-   ```
+   ```json
                      {
                        "source": ["aws.security-ir"],
                        "detail-type": ["Membership Updated"]

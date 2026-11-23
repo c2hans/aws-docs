@@ -16,7 +16,7 @@ To subscribe an delivery stream to an SNS topic, your AWS account must have:
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -48,7 +48,7 @@ To subscribe an delivery stream to an SNS topic, your AWS account must have:
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [

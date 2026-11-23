@@ -95,7 +95,7 @@ Pattern: `[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
  ** [analysisType](#API_PopulateIntermediateTable_ResponseSyntax) **   <a name="API-PopulateIntermediateTable-response-analysisType"></a>
 The type of analysis performed to populate the intermediate table.
 Type: String
-Valid Values: `QUERY`
+Valid Values: `QUERY | JOB`
 
  ** [versionId](#API_PopulateIntermediateTable_ResponseSyntax) **   <a name="API-PopulateIntermediateTable-response-versionId"></a>
 The unique identifier of the version created by this population operation.

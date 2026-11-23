@@ -65,7 +65,7 @@ You can set a scaling profile for every job on an application, for one job run, 
 
 The following example creates a Spark application on which every job run and session uses the `cost-optimized` profile, unless the job sets a different profile. The `--runtime-configuration` parameter carries the profile. The other parameters are the same as for creating any other application.
 
-```
+```bash
 aws emr-serverless create-application \
     --type SPARK \
     --name {{my-application-name}} \
@@ -83,7 +83,7 @@ aws emr-serverless create-application \
 
 To change the profile of an existing application, update the application while it's in the `CREATED` or `STOPPED` state. If the application is `STARTED`, `update-application` rejects the change with a `ValidationException`, so stop the application first. The `--runtime-configuration` that you send replaces the application's whole runtime configuration. Include every classification and property that the application needs, not only the scaling profile. Job runs and sessions that start after the update use the new profile.
 
-```
+```bash
 aws emr-serverless update-application \
     --application-id {{application-id}} \
     --runtime-configuration '[
@@ -102,7 +102,7 @@ aws emr-serverless update-application \
 
 The following example runs one job with the `performance-optimized` profile by passing the property with `--conf` in `sparkSubmitParameters`. This value overrides any profile set on the application.
 
-```
+```bash
 aws emr-serverless start-job-run \
     --application-id {{application-id}} \
     --execution-role-arn {{job-role-arn}} \
@@ -117,7 +117,7 @@ aws emr-serverless start-job-run \
 
 You can also set the property in the `spark-defaults` classification of `applicationConfiguration` in the job's `--configuration-overrides`.
 
-```
+```bash
 aws emr-serverless start-job-run \
     --application-id {{application-id}} \
     --execution-role-arn {{job-role-arn}} \
@@ -144,7 +144,7 @@ aws emr-serverless start-job-run \
 
 The following example starts a Spark Connect session with the `cost-optimized` profile. Sessions take the property in `runtimeConfiguration` inside `--configuration-overrides`. The application must have interactive sessions turned on. To turn them on, pass `--interactive-configuration '{"sessionEnabled": true}'` to `create-application` or `update-application`.
 
-```
+```bash
 aws emr-serverless start-session \
     --application-id {{application-id}} \
     --execution-role-arn {{execution-role-arn}} \
@@ -166,7 +166,7 @@ aws emr-serverless start-session \
 
 With the Livy endpoint, pass the property in the `conf` map of the request that creates the session. The application must have the Livy endpoint turned on (`--interactive-configuration '{"livyEndpointEnabled": true}'`). The following example is the body of a `POST /sessions` request.
 
-```
+```json
 {
     "kind": "pyspark",
     "conf": {

@@ -23,7 +23,7 @@ The following code example shows how to use `CopyImageSet`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         " iv_source_image_set_id = '1234567890123456789012345678901234567890'
@@ -78,7 +78,7 @@ The following code example shows how to use `CreateDatastore`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_name = 'my-datastore-name'
         oo_result = lo_mig->createdatastore( iv_datastorename = iv_datastore_name ).
@@ -108,7 +108,7 @@ The following code example shows how to use `DeleteDatastore`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         oo_result = lo_mig->deletedatastore( iv_datastoreid = iv_datastore_id ).
@@ -137,7 +137,7 @@ The following code example shows how to use `DeleteImageSet`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         " iv_image_set_id = '1234567890123456789012345678901234567890'
@@ -169,7 +169,7 @@ The following code example shows how to use `GetDICOMImportJob`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         " iv_job_id = '12345678901234567890123456789012'
@@ -203,7 +203,7 @@ The following code example shows how to use `GetDatastore`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         oo_result = lo_mig->getdatastore( iv_datastoreid = iv_datastore_id ).
@@ -233,7 +233,7 @@ The following code example shows how to use `GetImageFrame`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         " iv_image_set_id = '1234567890123456789012345678901234567890'
@@ -269,7 +269,7 @@ The following code example shows how to use `GetImageSet`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         " iv_image_set_id = '1234567890123456789012345678901234567890'
@@ -310,7 +310,7 @@ The following code example shows how to use `GetImageSetMetadata`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         " iv_image_set_id = '1234567890123456789012345678901234567890'
@@ -351,7 +351,7 @@ The following code example shows how to use `ListDICOMImportJobs`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         oo_result = lo_mig->listdicomimportjobs( iv_datastoreid = iv_datastore_id ).
@@ -382,7 +382,7 @@ The following code example shows how to use `ListDatastores`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         oo_result = lo_mig->listdatastores( ).
         DATA(lt_datastores) = oo_result->get_datastoresummaries( ).
@@ -408,7 +408,7 @@ The following code example shows how to use `ListImageSetVersions`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         " iv_image_set_id = '1234567890123456789012345678901234567890'
@@ -442,7 +442,7 @@ The following code example shows how to use `ListTagsForResource`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_resource_arn = 'arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012'
         oo_result = lo_mig->listtagsforresource( iv_resourcearn = iv_resource_arn ).
@@ -471,7 +471,7 @@ The following code example shows how to use `SearchImageSets`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         oo_result = lo_mig->searchimagesets(
@@ -504,7 +504,7 @@ The following code example shows how to use `StartDICOMImportJob`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_job_name = 'import-job-1'
         " iv_datastore_id = '1234567890123456789012345678901234567890'
@@ -545,7 +545,7 @@ The following code example shows how to use `TagResource`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_resource_arn = 'arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012'
         lo_mig->tagresource(
@@ -574,7 +574,7 @@ The following code example shows how to use `UntagResource`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_resource_arn = 'arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012'
         lo_mig->untagresource(
@@ -603,7 +603,7 @@ The following code example shows how to use `UpdateImageSetMetadata`.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         " iv_image_set_id = '1234567890123456789012345678901234567890'

@@ -26,14 +26,14 @@ You can view the configuration details data for a service sync using the console
 
 Run the following command.
 
-```
+```sh
 $ aws proton get-service-sync-config \
     --service-name "{{service name}}"
 ```
 
 The response is as follows.
 
-```
+```json
 {
     "serviceSyncConfig": {
         "branch": "main",
@@ -49,7 +49,7 @@ The response is as follows.
 
 Run the following command.
 
-```
+```sh
 $ aws proton get-service-sync-status \
     --service-name "{{service name}}"
 ```

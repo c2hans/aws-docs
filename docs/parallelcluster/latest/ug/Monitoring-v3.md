@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 **(Optional)** Specifies the monitoring settings for the cluster.
 
-```
+```yaml
 Monitoring:
   Logs:
     CloudWatch:

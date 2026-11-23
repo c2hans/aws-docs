@@ -36,7 +36,7 @@ Your state machine then implements a `Choice` state that executes some applicati
 
 1. Copy the following code for the Lambda function into the **Code source**.
 
-   ```
+   ```javascript
    export const handler = function (event, context, callback) {
      let index = event.iterator.index
      let step = event.iterator.step
@@ -71,7 +71,7 @@ Run your Lambda function with numeric values to see it in operation. You can pro
 
 1. Replace the example data with the following.
 
-   ```
+   ```json
    {
      "Comment": "Test my Iterator function",
      "iterator": {
@@ -92,7 +92,7 @@ Run your Lambda function with numeric values to see it in operation. You can pro
 
 1. Choose the **Execution results** tab to see the output.
 
-   ```
+   ```json
    {
      "index": 6,
      "step": 1,
@@ -128,7 +128,7 @@ Your state machine must be in the same AWS account and Region as your Lambda fun
 
    For more information about the Amazon States Language, see [State Machine Structure](statemachine-structure.md).
 
-   ```
+   ```json
    {
        "Comment": "Iterator State Machine Example",
        "StartAt": "ConfigureCount",

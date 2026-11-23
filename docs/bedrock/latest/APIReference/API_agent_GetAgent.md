@@ -141,7 +141,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of GetAgent.
 
-```
+```json
 GET /agents/ABCDEFGHIJ/ HTTP/1.1
 ```
 

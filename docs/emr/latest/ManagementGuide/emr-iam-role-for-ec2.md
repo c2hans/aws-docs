@@ -23,7 +23,7 @@ The following shows the contents of version 3 of `AmazonElasticMapReduceforEC2Ro
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -95,7 +95,7 @@ Your service role should use the following trust policy.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -143,7 +143,7 @@ The sample statement below demonstrates the permissions that EMRFS requires to m
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -234,7 +234,7 @@ The following policy statement allows the Amazon EMR cluster to archive log file
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -264,7 +264,7 @@ The following policy statement allows actions that are required if you use the A
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

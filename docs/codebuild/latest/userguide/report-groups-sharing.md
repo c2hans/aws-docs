@@ -56,7 +56,7 @@ Use the [put-resource-policy](https://docs.aws.amazon.com/cli/latest/reference/c
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[{
@@ -83,7 +83,7 @@ Use the [put-resource-policy](https://docs.aws.amazon.com/cli/latest/reference/c
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[{

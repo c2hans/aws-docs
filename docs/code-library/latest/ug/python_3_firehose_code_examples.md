@@ -29,7 +29,7 @@ The following code example shows how to use `PutRecord`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/firehose#code-examples).
 
-```
+```python
 class FirehoseClient:
     """
     AWS Firehose client to send records and monitor metrics.
@@ -88,7 +88,7 @@ The following code example shows how to use `PutRecordBatch`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/firehose#code-examples).
 
-```
+```python
 class FirehoseClient:
     """
     AWS Firehose client to send records and monitor metrics.
@@ -153,7 +153,7 @@ The following code example shows how to use Firehose to process individual and b
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/firehose/scenarios/firehose-put-actions#code-examples).
 This script puts individual and batch records to Firehose.
 
-```
+```python
 import json
 import logging
 import random
@@ -393,7 +393,7 @@ if __name__ == "__main__":
 ```
 This file contains config for the above script.
 
-```
+```python
 class Config:
     def __init__(self):
         self.delivery_stream_name = "ENTER YOUR DELIVERY STREAM NAME HERE"

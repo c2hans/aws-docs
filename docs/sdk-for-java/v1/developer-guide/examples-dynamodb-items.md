@@ -17,7 +17,7 @@ You can use the returned `GetItemResult` object’s `getItem()` method to retrie
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
@@ -29,7 +29,7 @@ import java.util.Map;
 
  **Code**
 
-```
+```java
 HashMap<String,AttributeValue> key_to_get =
     new HashMap<String,AttributeValue>();
 
@@ -78,7 +78,7 @@ If the named table doesn’t exist for your account and region, a [ResourceNotFo
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
@@ -89,7 +89,7 @@ import java.util.ArrayList;
 
  **Code**
 
-```
+```java
 HashMap<String,AttributeValue> item_values =
     new HashMap<String,AttributeValue>();
 
@@ -124,7 +124,7 @@ If the named table doesn’t exist for your account and region, or if the item i
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
@@ -137,7 +137,7 @@ import java.util.ArrayList;
 
  **Code**
 
-```
+```java
 HashMap<String,AttributeValue> item_key =
    new HashMap<String,AttributeValue>();
 
@@ -175,7 +175,7 @@ The [DynamoDBMapper](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/a
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
@@ -190,7 +190,7 @@ import com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException;
 
 The following Java code example shows you how to add content to the *Music* table by using the [DynamoDBMapper](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/dynamodbv2/datamodeling/DynamoDBMapper.html) class. After the content is added to the table, notice that an item is loaded by using the *Partition* and *Sort* keys. Then the *Awards* item is updated. For information on creating the *Music* table, see [Create a Table](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/getting-started-step-1.html) in the Amazon DynamoDB Developer Guide.
 
-```
+```java
        AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard().build();
        MusicItems items = new MusicItems();
 

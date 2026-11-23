@@ -30,6 +30,11 @@ A sort for data products.
 Type: [DataProductSort](API_DataProductSort.md) object
 Required: No
 
+ ** ExpressPrivateOfferConfigurationSort **   <a name="AWSMarketplaceService-Type-EntityTypeSort-ExpressPrivateOfferConfigurationSort"></a>
+A sort for express private offer configurations.
+Type: [ExpressPrivateOfferConfigurationSort](API_ExpressPrivateOfferConfigurationSort.md) object
+Required: No
+
  ** MachineLearningProductSort **   <a name="AWSMarketplaceService-Type-EntityTypeSort-MachineLearningProductSort"></a>
 The sort options for machine learning products.
 Type: [MachineLearningProductSort](API_MachineLearningProductSort.md) object

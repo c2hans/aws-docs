@@ -35,7 +35,7 @@ Amazon Cognito supports custom OAuth 2.0 scopes for [resource servers](cognito-u
 
  The following AWS CloudFormation template creates a user pool for custom-scope multi-tenancy with one resource server and app client.
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: A sample template illustrating scope-based multi-tenancy
 Resources:

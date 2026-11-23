@@ -18,7 +18,7 @@ In this example, the developer defines the `StartStreamTranscriptionRequest.Audi
 
 The code demonstrates how audio from a file can be streamed into Amazon Transcribe Streaming for processing.
 
-```
+```cs
 using Amazon;
 using Amazon.TranscribeStreaming;
 using Amazon.TranscribeStreaming.Model;

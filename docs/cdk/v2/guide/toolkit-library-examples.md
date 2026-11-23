@@ -11,7 +11,7 @@ Learn how to use advanced features of the AWS CDK Toolkit Library through practi
 
 The following example demonstrates how to combine cloud assembly sources, custom io host implementation, and deployment options:
 
-```
+```typescript
 import { Toolkit, StackSelectionStrategy, IIoHost } from '@aws-cdk/toolkit-lib';
 
 async function deployApplication(appPath, environment, options = {}) {
@@ -81,7 +81,7 @@ await deployApplication('ts-node app.ts', 'staging', {
 
 Track deployment progress with detailed status updates:
 
-```
+```typescript
 import { Toolkit, StackSelectionStrategy, IIoHost } from '@aws-cdk/toolkit-lib';
 
 // Create a progress tracker
@@ -163,7 +163,7 @@ async function deployWithTracking(cloudAssemblySource: any) {
 
 Implement robust error handling with recovery strategies:
 
-```
+```typescript
 import { Toolkit, ToolkitError, StackSelectionStrategy } from '@aws-cdk/toolkit-lib';
 
 async function deployWithRetry(toolkit: Toolkit, cloudAssemblySource: any) {
@@ -203,7 +203,7 @@ try {
 
 Integrate the CDK Toolkit Library into a CI/CD pipeline:
 
-```
+```typescript
 import { Toolkit, StackSelectionStrategy, IIoHost } from '@aws-cdk/toolkit-lib';
 import * as fs from 'fs';
 import * as path from 'path';

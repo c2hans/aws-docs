@@ -9,6 +9,13 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## November 2026 Updates
 <a name="nov26-release-notes"></a>
 
+### Amazon Connect Customer analytics dashboards now show agent status metrics
+<a name="nov26-agent-status-metrics"></a>
+
+Managers can see how much time agents spend in Available, Offline, and custom non-productive statuses such as Break, Lunch, and Training. You can use these metrics to understand how agents divide their time, spot trends in auxiliary status usage, and make better staffing and scheduling decisions. For example, a contact center manager notices longer wait times every afternoon. In the dashboard, they see that time in Break and Training statuses goes up during those hours. They move training sessions to off-peak periods, which frees up more agents during peak demand.
+
+For more information, see [Agent status time](metrics-definitions.md#agent-status-time).
+
 ### Resolutions for operational work
 <a name="nov26-resolutions"></a>
 
@@ -3962,7 +3969,7 @@ At the same time, the `AgentStatus` field continues to display `Available`.
 
 The following code snippet shows what the agent event stream looks like when an agent has set their CCP to **Next status: Lunch**.
 
-```
+```json
 "CurrentAgentSnapshot":
 {
     "AgentStatus": {
@@ -3980,7 +3987,7 @@ The following code snippet shows what the agent event stream looks like when an 
 
 When an agent has not selected a **Next status**, the field is `null`, as shown in the following snippet:
 
-```
+```json
 "CurrentAgentSnapshot": {
     "AgentStatus": {
             "ARN": "example-ARN",

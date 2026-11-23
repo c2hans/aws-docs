@@ -25,8 +25,9 @@ Type: Integer
 Required: No
 
  ** skipAppResign **   <a name="devicefarm-Type-ExecutionConfiguration-skipAppResign"></a>
-When set to `true`, for private devices, Device Farm does not sign your app again. For public devices, Device Farm always signs your apps again.
-For more information about how Device Farm re-signs your apps, see [Do you modify my app?](http://aws.amazon.com/device-farm/faqs/) in the *AWS Device Farm FAQs*.
+When set to `true`, Device Farm does not re-sign your app or test package for the test run.
+The default depends on the test host. For Android test runs on the `amazon_linux_2023` test host, the default is `true` for both public and private devices. For all other test runs, the default is `false`. On the `amazon_linux_2` test host and for iOS, you can set this parameter to `true` only for private devices.
+For more information about re-signing, see [Re-signing apps](https://docs.aws.amazon.com/devicefarm/latest/developerguide/apps.html#test-runs-app-resigning) in the *AWS Device Farm Developer Guide* and [Do you modify my app?](http://aws.amazon.com/device-farm/faqs/) in the *AWS Device Farm FAQs*.
 Type: Boolean
 Required: No
 

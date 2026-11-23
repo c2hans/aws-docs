@@ -16,7 +16,7 @@ The following parameters are required for all transformed records from Lambda.
 
   Following is a sample Lambda result output:
 
-  ```
+  ```json
    {
       "recordId": {{"<recordId from the Lambda input>"}},
       "result": "Ok",
@@ -34,7 +34,7 @@ The following parameters are required for all transformed records from Lambda.
 
   Following is a sample Lambda result output:
 
-  ```
+  ```json
    {
       "recordId": {{"<recordId from the Lambda input>"}},
       "result": "Ok",

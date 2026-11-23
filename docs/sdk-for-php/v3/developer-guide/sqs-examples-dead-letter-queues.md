@@ -23,7 +23,7 @@ Before running the example code, configure your AWS credentials, as described in
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -32,7 +32,7 @@ use Aws\Sqs\SqsClient;
 
  **Sample Code**
 
-```
+```php
 $queueUrl = "QUEUE_URL";
 
 $client = new SqsClient([

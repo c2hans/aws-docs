@@ -26,7 +26,7 @@ The following code example shows how to use `DeleteLexicon`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ply#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ply->deletelexicon( iv_name ).
         MESSAGE 'Lexicon deleted successfully.' TYPE 'I'.
@@ -46,7 +46,7 @@ The following code example shows how to use `DescribeVoices`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ply#code-examples).
 
-```
+```sap-abap
     TRY.
         " Only pass optional parameters if they have values
         IF iv_engine IS NOT INITIAL AND iv_language IS NOT INITIAL.
@@ -79,7 +79,7 @@ The following code example shows how to use `GetLexicon`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ply#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ply->getlexicon( iv_name ).
         DATA(lo_lexicon) = oo_result->get_lexicon( ).
@@ -103,7 +103,7 @@ The following code example shows how to use `GetSpeechSynthesisTask`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ply#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ply->getspeechsynthesistask( iv_task_id ).
         DATA(lo_task) = oo_result->get_synthesistask( ).
@@ -129,7 +129,7 @@ The following code example shows how to use `ListLexicons`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ply#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ply->listlexicons( ).
         DATA(lt_lexicons) = oo_result->get_lexicons( ).
@@ -151,7 +151,7 @@ The following code example shows how to use `ListSpeechSynthesisTasks`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ply#code-examples).
 
-```
+```sap-abap
     TRY.
         " Only pass optional parameters if they have values
         IF iv_max_results IS NOT INITIAL AND iv_status IS NOT INITIAL.
@@ -186,7 +186,7 @@ The following code example shows how to use `PutLexicon`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ply#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ply->putlexicon(
           iv_name = iv_name
@@ -218,7 +218,7 @@ The following code example shows how to use `StartSpeechSynthesisTask`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ply#code-examples).
 
-```
+```sap-abap
     TRY.
         " Only pass optional parameters if they have values
         IF iv_lang_code IS NOT INITIAL AND iv_s3_key_prefix IS NOT INITIAL.
@@ -277,7 +277,7 @@ The following code example shows how to use `SynthesizeSpeech`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ply#code-examples).
 
-```
+```sap-abap
     TRY.
         " Only pass optional language code if it has a value
         IF iv_lang_code IS NOT INITIAL.

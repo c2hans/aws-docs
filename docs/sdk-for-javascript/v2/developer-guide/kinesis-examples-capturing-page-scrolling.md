@@ -31,7 +31,7 @@ Use the following role policy when creating the IAM role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -65,7 +65,7 @@ Use the following role policy when creating the IAM role.
 
 The HTML for the blog page consists mainly of a series of paragraphs contained within a `<div>` element. The scrollable height of this `<div>` is used to help calculate how far a reader has scrolled through the content as they read. The HTML also contains a pair of `<script>` elements. One of these elements adds the SDK for JavaScript to the page and the other adds the browser script that captures scroll progress on the page and reports it to Kinesis.
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -93,7 +93,7 @@ Obtain the credentials needed to configure the SDK by calling the `CognitoIdenti
 
 The following code snippet shows this step. (See [Capturing Web Page Scroll Progress Code](kinesis-examples-capturing-page-scrolling-full.md) for the full example.)
 
-```
+```javascript
 // Configure Credentials to use Cognito
 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
   IdentityPoolId: "IDENTITY_POOL_ID",
@@ -122,7 +122,7 @@ Scroll progress is calculated using the `scrollHeight` and `scrollTop` propertie
 
 The following code snippet shows this step. (See [Capturing Web Page Scroll Progress Code](kinesis-examples-capturing-page-scrolling-full.md) for the full example.)
 
-```
+```javascript
   // Get the ID of the Web page element.
   var blogContent = document.getElementById("BlogContent");
 
@@ -167,7 +167,7 @@ Once each second, if there are records in the array, those pending records are s
 
 The following code snippet shows this step. (See [Capturing Web Page Scroll Progress Code](kinesis-examples-capturing-page-scrolling-full.md) for the full example.)
 
-```
+```javascript
   // upload data to Amazon Kinesis every second if data exists
   setInterval(function () {
     if (!recordData.length) {

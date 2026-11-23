@@ -22,7 +22,7 @@ The following table summarizes the major component changes between AL2023 and AL
 | systemd | 252 | 260 | Support for System V service scripts has been removed. |
 | RPM | 4.16 | 6.0 | OpenPGP signature verification uses the rpm-sequoia implementation. |
 | DNF | DNF 4.14 | DNF5 5.4 | DNF5 replaces DNF. The dnf and yum commands run DNF5. The DNF (version 4) Python API (python3-dnf) is not available. Use python3-libdnf5 instead. See [Package management tool](package-management.md). |
-| Python | 3.9 | 3.14 | The default python3 is Python 3.14. |
+| Python | 3.9 | 3.15 | The default python3 is Python 3.15. |
 | zlib | 1.2.11 | zlib-ng 2.3 | Drop-in replacement through the zlib-ng-compat package. |
 | PCRE | PCRE 8.x \+ PCRE2 | PCRE2 only | PCRE1 has been removed. |
 

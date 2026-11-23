@@ -17,7 +17,7 @@ For request POJOs (excluding Amazon S3), the migration tool transforms only sett
 
 Before (original v1 code):
 
-```
+```java
 import com.amazonaws.services.sqs.model.SendMessageRequest;
 
 SendMessageRequest request = new SendMessageRequest().withMessageBody("Hello World");
@@ -26,7 +26,7 @@ request.setQueueUrl("https://sqs.us-west-2.amazonaws.com/0123456789012/demo-queu
 
 After (migration tool result):
 
-```
+```java
 import software.amazon.awssdk.services.sqs.model.SendMessageRequest;
 
 SendMessageRequest request = SendMessageRequest.builder()
@@ -41,7 +41,7 @@ The migration tool cannot convert constructors with parameters:
 
 Before manual migration, but after migration tool:
 
-```
+```java
 import software.amazon.awssdk.services.sqs.model.SendMessageRequest; // Import updated to v2.
 
 // This pattern requires manual migration.
@@ -54,7 +54,7 @@ The migration tool transforms the import to v2, but the constructor code remains
 
 After manual migration:
 
-```
+```java
 import software.amazon.awssdk.services.sqs.model.SendMessageRequest;
 
 SendMessageRequest request = SendMessageRequest.builder()
@@ -70,7 +70,7 @@ The migration tool cannot convert service client methods that take individual pa
 
 Before (v1 code):
 
-```
+```java
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClient;
 
@@ -81,7 +81,7 @@ sqs.sendMessage("https://sqs.us-west-2.amazonaws.com/0123456789012/demo-queue", 
 
 After (migration tool result–does not compile):
 
-```
+```java
 import software.amazon.awssdk.services.sqs.SqsClient;  // Import updated to v2.
 // No import statement for the v2 request POJO.
 
@@ -93,7 +93,7 @@ sqs.sendMessage("https://sqs.us-west-2.amazonaws.com/0123456789012/demo-queue", 
 
 You must manually update the method arguments to use a request object:
 
-```
+```java
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.SendMessageRequest; // Add manually.
 
@@ -114,7 +114,7 @@ The migration tool does not convert methods that set timeouts on request objects
 
 Before (v1 code):
 
-```
+```java
 import com.amazonaws.services.sqs.model.SendMessageRequest;
 
 SendMessageRequest request = new SendMessageRequest();
@@ -123,7 +123,7 @@ request.setSdkRequestTimeout(7);
 
 After (migration tool result–does not compile):
 
-```
+```java
 import software.amazon.awssdk.services.sqs.model.SendMessageRequest;  // Import updated to v2.
 
 SendMessageRequest request = SendMessageRequest.builder().build();
@@ -134,7 +134,7 @@ request.setSdkRequestTimeout(7);
 
 You must manually migrate to use v2's `overrideConfiguration` method:
 
-```
+```java
 import software.amazon.awssdk.services.sqs.model.SendMessageRequest;
 import java.time.Duration;
 
@@ -153,7 +153,7 @@ The migration tool converts empty service client constructors but cannot convert
 
 Before (v1 code):
 
-```
+```java
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.sqs.AmazonSQS;
@@ -165,7 +165,7 @@ AmazonSQS sqs = new AmazonSQSClient(awsCredentials);
 
 After (migration tool result–does not compile):
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.AwsCredentials;
 import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;
 import software.amazon.awssdk.services.sqs.SqsClient;  // Import updated to v2.
@@ -178,7 +178,7 @@ SqsClient sqs = new SqsClient(awsCredentials);
 
 You must manually update the service client constructor to use the builder pattern:
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.AwsCredentials;
 import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;
 import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;  // Add manually.

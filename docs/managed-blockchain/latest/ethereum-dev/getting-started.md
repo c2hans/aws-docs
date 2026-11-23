@@ -30,7 +30,7 @@ This example shows how you grant users AWS account access in the `us-east-1` Reg
 If you want to grant access across all Regions, replace `us-east-1` with `*`.
 You must specify the AWS account ID of the node and accessor resources in the policy that you want to enforce.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

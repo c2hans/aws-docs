@@ -140,14 +140,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-ams-state-disable-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-ams-state-disable-ex-max"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-HandleAMSResourceSchedulerStack-Admin",
   "Region" : "us-east-1",

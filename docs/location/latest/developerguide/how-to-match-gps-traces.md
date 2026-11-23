@@ -23,7 +23,7 @@ SnapToRoads considers legal and time restrictions for the specified travel mode 
 ------
 #### [ Sample request ]
 
-```
+```json
 {
   "TracePoints": [
     {
@@ -43,7 +43,7 @@ SnapToRoads considers legal and time restrictions for the specified travel mode 
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "Notices": [],
     "SnappedGeometry": {
@@ -68,7 +68,7 @@ SnapToRoads considers legal and time restrictions for the specified travel mode 
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.eu-central-1.amazonaws.com/v2/snap-to-roads?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -91,7 +91,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes snap-to-roads --key ${YourKey} \
 --trace-points '[{"Position": [8.53404, 50.16364], "Timestamp": "2024-05-22T18:13:42Z"}, {"Position": [8.53379056, 50.16352417], "Speed": 20, "Timestamp": "2024-05-22T18:13:59Z"}]' \
 --travel-mode "Car"
@@ -105,7 +105,7 @@ aws geo-routes snap-to-roads --key ${YourKey} \
 ------
 #### [ Sample request ]
 
-```
+```json
 {
   "TracePoints": [
     {
@@ -130,7 +130,7 @@ aws geo-routes snap-to-roads --key ${YourKey} \
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "Notices": [],
     "SnappedGeometry": {
@@ -155,7 +155,7 @@ aws geo-routes snap-to-roads --key ${YourKey} \
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.eu-central-1.amazonaws.com/v2/snap-to-roads?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -183,7 +183,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes snap-to-roads --key ${YourKey} \
 --trace-points '[{"Position": [8.53404, 50.16364], "Timestamp": "2024-05-22T18:13:42Z"}, {"Position": [8.53379056, 50.16352417], "Speed": 20, "Timestamp": "2024-05-22T18:13:59Z"}]' \
 --travel-mode "Truck" \

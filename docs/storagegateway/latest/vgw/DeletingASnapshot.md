@@ -172,7 +172,7 @@ Update the code to provide the service endpoint, your gateway Amazon Resource Na
 The following code creates the minimum policy that allows an user to delete snapshots. In this example, the policy is named **sgw-delete-snapshot**.
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": [

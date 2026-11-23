@@ -14,7 +14,7 @@ To use the code, update the following parameters. The code sample also includes 
 
 After you create the custom model, the model appears in the [ListCustomModels](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListCustomModels.html) response with a `customizationType` of `imported`. To track the status of the new model, you use the [GetCustomModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetCustomModel.html) API operation.
 
-```
+```python
 import boto3
 import uuid
 from botocore.exceptions import ClientError

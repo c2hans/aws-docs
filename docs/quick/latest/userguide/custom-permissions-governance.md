@@ -213,7 +213,7 @@ aws quicksight describe-custom-permissions \
 
 The command returns output similar to the following:
 
-```
+```json
 {
     "CustomPermissions": {
         "CustomPermissionsName": "RestrictAI-Finance",
@@ -290,7 +290,7 @@ aws quicksight describe-custom-permissions \
 
 The command returns the following output:
 
-```
+```json
 {
     "CustomPermissions": {
         "CustomPermissionsName": "RestrictAI-Finance",

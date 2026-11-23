@@ -30,7 +30,7 @@ Choose **Copy** to save the code locally.
 
 Create the file `describe_alarms.go`. Import the packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws/session"
     "github.com/aws/aws-sdk-go/service/cloudwatch"
@@ -42,7 +42,7 @@ import (
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials`, load your configuration from the shared configuration file `~/.aws/config`, and create a CloudWatch client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -52,7 +52,7 @@ svc := cloudwatch.New(sess)
 
 Call `DescribeAlarms`, and print the results.
 
-```
+```go
 resp, err := svc.DescribeAlarms(nil)
 for _, alarm := range resp.MetricAlarms {
     fmt.Println(*alarm.AlarmName)

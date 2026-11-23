@@ -44,7 +44,7 @@ OTel Container Insights has the following limitations:
 + Requires add-on version v6.2.0 or later
 + Newer offering with a smaller ecosystem of community examples
 
-For setup instructions, see [Quick start: OTel Container Insights on Amazon EKS](container-insights-eks-otel-quickstart.md).
+For setup instructions, see [OTel Container Insights quick start](container-insights-eks-otel-quickstart.md).
 
 ### Enhanced Container Insights (Classic)
 <a name="container-insights-eks-compare-classic-capabilities"></a>
@@ -92,6 +92,6 @@ The following table lists the prerequisites for each approach.
 <a name="container-insights-eks-compare-next-steps"></a>
 
 After you choose an approach, use the following links to get started:
-+ [Quick start: OTel Container Insights on Amazon EKS](container-insights-eks-otel-quickstart.md) — Set up OTel Container Insights with the fastest path.
++ [OTel Container Insights quick start](container-insights-eks-otel-quickstart.md) — Set up OTel Container Insights with the fastest path.
 + [Setup guide (AWS CLI)](container-insights-eks-classic-setup.md) — Set up Enhanced Container Insights (Classic).
 + [Migration guides](container-insights-eks-migration-hub.md) — Migrate from Classic to OTel Container Insights.

@@ -59,7 +59,7 @@ The root endpoint serves several key purposes:
 
 A2A servers expect JSON-RPC 2.0 formatted requests:
 
-```
+```json
 Content-Type: application/json
 {
   "jsonrpc": "2.0",
@@ -85,7 +85,7 @@ Content-Type: application/json
 
 A2A servers respond with JSON-RPC 2.0 formatted responses containing tasks and artifacts:
 
-```
+```json
 Content-Type: application/json
 {
   "jsonrpc": "2.0",
@@ -129,7 +129,7 @@ The Agent Card endpoint serves several key purposes:
 
 Returns JSON metadata describing the agent’s identity and capabilities:
 
-```
+```json
 Content-Type: application/json
 {
   "name": "Agent Name",
@@ -169,7 +169,7 @@ Returns a status code indicating your agent’s health:
 +  **Content-Type** : `application/json`
 +  **HTTP Status Code** : `200` for healthy, appropriate error codes for unhealthy states
 
-```
+```json
 {
   "status": "Healthy"
 }
@@ -226,7 +226,7 @@ Unlike the A2A specification’s convention of delivering JSON-RPC errors over a
 
 Example error response:
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "id": "req-001",

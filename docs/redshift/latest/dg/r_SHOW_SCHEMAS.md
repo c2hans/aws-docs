@@ -57,7 +57,7 @@ The maximum number of rows to return. The *row\_limit* can be 0–10,000.
 
 Following example shows the schemas from the Amazon Redshift database named `dev` .
 
-```
+```sql
 SHOW SCHEMAS FROM DATABASE dev;
 
  database_name |     schema_name      | schema_owner | schema_type |         schema_acl          | source_database | schema_option
@@ -71,7 +71,7 @@ SHOW SCHEMAS FROM DATABASE dev;
 
 Following example shows the schemas in the AWS Glue Data Catalog database named `awsdatacatalog`. The maximum number of output rows is `5`.
 
-```
+```sql
 SHOW SCHEMAS FROM DATABASE awsdatacatalog LIMIT 5;
 
  database_name  |     schema_name      | schema_owner | schema_type | schema_acl | source_database | schema_option

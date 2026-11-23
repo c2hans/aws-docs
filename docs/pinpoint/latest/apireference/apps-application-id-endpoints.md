@@ -78,7 +78,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="apps-application-id-endpoints-request-body-put-example"></a>
 
-```
+```json
 {
   "Item": [
     {
@@ -127,7 +127,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-endpoints-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

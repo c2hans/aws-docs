@@ -53,7 +53,7 @@ aws docdb describe-db-cluster-parameter-groups ^
 ```
 The output of the preceding operation is a list the names of cluster parameter groups similar to the following (JSON format).
 
-```
+```json
 [
        [
            "default.docdb4.0"
@@ -98,7 +98,7 @@ aws docdb describe-db-cluster-parameter-groups ^
 The output of the preceding operation is a list of cluster parameter groups similar to the following (JSON format). The cluster parameter group that you just deleted should not be in the list.
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 [
        [
            "default.docdb4.0"

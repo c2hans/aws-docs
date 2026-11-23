@@ -42,6 +42,9 @@ MediaLive also includes quotas, which you can change. For more information about
   - You can attach multiple inputs to a channel, in order to implement input switching. You can't include an HLS input that is a VOD asset. For the definition of a VOD asset, see [Support for live and file sources](inputs-live-vs-file.md).
   - For the inputs that you attach in order to implement input switching, there are restrictions related to input types and Availability Zones:+  You can have multiple MediaConnect inputs attached to one channel, but all those inputs must be in the same two Availability Zones.  <br />+  You can have multiple VPC inputs attached to one channel, but all these inputs must be in the same two Availability Zones. VPC inputs include CDI inputs, RTP VPC inputs, and RTMP VPC inputs.  <br />+  If the channel has both MediaConnect inputs and VPC inputs, all these inputs must be in the same two Availability Zones.
 
+- **Input – JPEG XS (TR-07)**
+  - A channel that uses the JPEG XS input specification has the following rules:+  All attached inputs must be MediaConnect inputs or MediaConnect Router inputs. <br />+  The resolution is HD and the maximum bitrate is 500 Mbps. <br />+  The channel can't be an MediaLive Anywhere channel, can't have a multiplex output destination, and can't have a CDI input specification. <br />For more information, see [Completing the settings – JPEG XS (TR-07)](input-specification.md#input-specification-jpegxs).
+
 - **Input – audio and captions selectors**
   - Maximum of 32 audio and captions selectors (in any combination) in one channel.
 

@@ -10,6 +10,8 @@ The capabilities within this area enable you to design, build, and manage a secu
 
 ![A chart showing which capabilities fall under each category.](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/infrastructure-category.png)
 
+*Infrastructure Category *
+
  Infrastructure capabilities include:
 +  **Network Security** enables you to design and implement security policies and controls across different levels of the networking stack to protect your resources from external or internal threats to ensure confidentiality, availability, integrity, and usability. This capability includes the prevention, detection, and blocking of anomalous network traffic based on monitoring of ingress/egress and lateral data movement.
 +  **Network Connectivity** enables you to create, manage, and monitor secure, scalable, and highly available networks for your applications and workloads. This includes connectivity within the cloud, Hybrid connectivity, IP address management, network logging and monitoring, and DNS management.

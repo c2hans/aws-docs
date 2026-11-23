@@ -72,7 +72,7 @@ The data written to the DynamoDB table is the result from the SQL statement of t
 
 The following JSON example defines a DynamoDB action in an AWS IoT rule.
 
-```
+```JSON
 {
     "topicRulePayload": {
         "sql": "SELECT * AS message FROM 'some/topic'",

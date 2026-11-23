@@ -20,7 +20,7 @@ On clusters that run Kubernetes version 1.33, the Kueue controller in v1.6.0-eks
 
 To upgrade the add-on to v1.6 through the Amazon EKS add-on interface, run the following command. Replace {{region}} with your Region and {{cluster-name}} with your Amazon EKS cluster name.
 
-```
+```bash
 aws eks update-addon --region {{region}} --cluster-name {{cluster-name}} \
   --addon-name amazon-sagemaker-hyperpod-taskgovernance \
   --addon-version v1.6.1-eksbuild.1 --resolve-conflicts OVERWRITE
@@ -28,7 +28,7 @@ aws eks update-addon --region {{region}} --cluster-name {{cluster-name}} \
 
 Wait until the status is `ACTIVE`:
 
-```
+```bash
 aws eks describe-addon --region {{region}} --cluster-name {{cluster-name}} \
   --addon-name amazon-sagemaker-hyperpod-taskgovernance \
   --query 'addon.status' --output text
@@ -37,7 +37,7 @@ aws eks describe-addon --region {{region}} --cluster-name {{cluster-name}} \
 **Topology-aware scheduling slice size validation**
 Beginning with v1.6 (Kueue v0.19.2), task governance validates the topology-aware scheduling slice size (the number of pods grouped together for placement) when you submit a job. If you submit a job that sets the `kueue.x-k8s.io/podset-slice-size` annotation to a value less than `1`, task governance rejects the job with an error like the following:
 
-```
+```bash
 admission webhook "vjob.kb.io" denied the request:
 spec.template.metadata.annotations[kueue.x-k8s.io/podset-slice-size]: Invalid value: "0": must be greater than or equal to 1
 ```
@@ -50,7 +50,7 @@ The recommended way to upgrade from v1.3.x is the upgrade option in the SageMake
 
 A direct `aws eks update-addon` from v1.3.x to v1.5 or later fails because v1.3.x stores some Kueue custom resource definitions (CRDs) under the `v1alpha1` API version, which v1.5 removes:
 
-```
+```bash
 CustomResourceDefinition.apiextensions.k8s.io "cohorts.kueue.x-k8s.io" is invalid:
 status.storedVersions[0]: Invalid value: "v1alpha1": missing from spec.versions
 ```
@@ -76,7 +76,7 @@ To upgrade the add-on from v1.3.x to v1.5, complete the following steps:
 
 1. **Confirm the current add-on version and set a working directory.**
 
-   ```
+   ```bash
    aws eks describe-addon --region {{region}} --cluster-name {{cluster-name}} \
      --addon-name amazon-sagemaker-hyperpod-taskgovernance \
      --query 'addon.addonVersion' --output text
@@ -84,14 +84,14 @@ To upgrade the add-on from v1.3.x to v1.5, complete the following steps:
 
    Confirm the output begins with `v1.3.`. Then set `BACKUP_DIR` to an absolute path in a writable directory and create it. Later steps read from and write to this variable, so run every step in the same shell session.
 
-   ```
+   ```bash
    export BACKUP_DIR={{/absolute/path/to/backup-dir}}
    mkdir -p "$BACKUP_DIR"
    ```
 
 1. **Back up every Kueue custom resource to local files.**
 
-   ```
+   ```bash
    for crd in admissionchecks clusterqueues cohorts localqueues multikueueclusters \
               multikueueconfigs provisioningrequestconfigs resourceflavors topologies \
               workloadpriorityclasses workloads; do
@@ -107,7 +107,7 @@ Confirm that the backup directory contains a JSON file for each custom resource 
 
    This removes the `v1alpha1` (or `v1beta1`) entry from `status.storedVersions` so the v1.5 or later CRDs can install. The objects are safe in your backup and are restored in a later step.
 
-   ```
+   ```bash
    for crd in admissionchecks clusterqueues cohorts localqueues multikueueclusters \
               multikueueconfigs provisioningrequestconfigs resourceflavors topologies \
               workloadpriorityclasses workloads; do
@@ -125,7 +125,7 @@ Confirm that the backup directory contains a JSON file for each custom resource 
 
    Replace {{target-version}} with the target add-on version, for example `v1.5.0-eksbuild.1` or `v1.6.1-eksbuild.1`.
 
-   ```
+   ```bash
    aws eks update-addon --region {{region}} --cluster-name {{cluster-name}} \
      --addon-name amazon-sagemaker-hyperpod-taskgovernance \
      --addon-version {{target-version}} --resolve-conflicts OVERWRITE
@@ -133,7 +133,7 @@ Confirm that the backup directory contains a JSON file for each custom resource 
 
    Wait until the status is `ACTIVE`:
 
-   ```
+   ```bash
    aws eks describe-addon --region {{region}} --cluster-name {{cluster-name}} \
      --addon-name amazon-sagemaker-hyperpod-taskgovernance \
      --query 'addon.status' --output text
@@ -143,18 +143,18 @@ Confirm that the backup directory contains a JSON file for each custom resource 
 
    Do not restore immediately after the add-on reports `ACTIVE`. Wait for the controller, its webhook, and the post-install jobs to be ready, or the restore in the next step can hang.
 
-   ```
+   ```bash
    kubectl rollout status deploy/kueue-controller-manager -n kueue-system --timeout=300s
    ```
 
-   ```
+   ```bash
    until [ -n "$(kubectl get endpoints -n kueue-system kueue-webhook-service \
                  -o jsonpath='{.subsets[*].addresses[*].ip}' 2>/dev/null)" ]; do
      echo "waiting for kueue webhook endpoint..."; sleep 5
    done
    ```
 
-   ```
+   ```bash
    kubectl wait --for=condition=complete job -l app.kubernetes.io/name=kueue \
      -n kueue-system --timeout=180s || true
    ```
@@ -163,7 +163,7 @@ Confirm that the backup directory contains a JSON file for each custom resource 
 
    This transforms each backed-up object to the v1.5 or later (`v1beta2`) schema and re-applies it.
 
-   ```
+   ```bash
    transform() {
      jq '
        .apiVersion = "kueue.x-k8s.io/v1beta2"
@@ -200,7 +200,7 @@ Confirm that the backup directory contains a JSON file for each custom resource 
 
 1. **Verify the result.**
 
-   ```
+   ```bash
    aws eks describe-addon --region {{region}} --cluster-name {{cluster-name}} \
      --addon-name amazon-sagemaker-hyperpod-taskgovernance \
      --query 'addon.{version:addonVersion,status:status}'
@@ -208,7 +208,7 @@ Confirm that the backup directory contains a JSON file for each custom resource 
 
    An example output is as follows (your `version` matches the {{target-version}} you set in step 4).
 
-   ```
+   ```json
    {
        "version": "v1.5.0-eksbuild.1",
        "status": "ACTIVE"
@@ -217,7 +217,7 @@ Confirm that the backup directory contains a JSON file for each custom resource 
 
    Confirm your objects are present and no CRD still lists `v1alpha1`:
 
-   ```
+   ```bash
    kubectl get clusterqueues
    kubectl get localqueues --all-namespaces
    kubectl get crd clusterqueues.kueue.x-k8s.io -o jsonpath='{.status.storedVersions}'

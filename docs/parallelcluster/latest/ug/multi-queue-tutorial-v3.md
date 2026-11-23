@@ -46,7 +46,7 @@ Some instances that this tutorial uses aren't free-tier eligible.
 
 For this tutorial, modify your configuration file to match the following configuration. The items that are highlighted in red represent your configuration file values. Keep your own values.
 
-```
+```yaml
 Region: {{region-id}}
 Image:
  Os: alinux2023

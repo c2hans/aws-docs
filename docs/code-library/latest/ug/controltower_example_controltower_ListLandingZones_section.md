@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List the AWS Control Tower landing zones for an account.
     /// </summary>
@@ -76,7 +76,7 @@ For more information, see [Getting started with AWS Control Tower](https://docs.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Lists all landing zones using pagination to retrieve complete results.
      *
@@ -135,7 +135,7 @@ For more information, see [Getting started with AWS Control Tower](https://docs.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/controltower#code-examples).
 
-```
+```python
 class ControlTowerWrapper:
     """Encapsulates AWS Control Tower and Control Catalog functionality."""
 
@@ -190,7 +190,7 @@ class ControlTowerWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     DATA lt_landing_zones TYPE /aws1/cl_cttlandingzonesummary=>tt_landingzonesummaries.
     DATA lv_nexttoken TYPE /aws1/cttstring.
 

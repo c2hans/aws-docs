@@ -17,7 +17,7 @@ The ARN format of the *AWSDataLifecycleManagerDefaultRole* role differs dependin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

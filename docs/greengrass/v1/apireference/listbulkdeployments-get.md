@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="listbulkdeployments-get-cli"></a>
 
-```
+```bash
 aws greengrass list-bulk-deployments \
   [--max-results <value>] \
   [--next-token <value>]  \
@@ -25,7 +25,7 @@ aws greengrass list-bulk-deployments \
 
 cli-input-json format:
 
-```
+```json
 {
 "MaxResults": "integer",
 "NextToken": "string"
@@ -52,7 +52,7 @@ type: string
 Success. The response body contains the list of bulk deployments.
  [ ListBulkDeploymentsResponse](definitions-listbulkdeploymentsresponse.md)
 
-```
+```json
 {
 "BulkDeployments": [
   {
@@ -90,7 +90,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

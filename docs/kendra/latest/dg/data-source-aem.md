@@ -167,7 +167,7 @@ You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/
 + **AEM type**—Specify which type of Adobe Experience Manager you use, either `CLOUD` or `ON_PREMISE`.
 + **Secret Amazon Resource Name (ARN)**—If you want to use basic authentication for either AEM On-Premise or Cloud, you provide a secret that stores your authentication credentials of your user name and password. You provide the Amazon Resource Name (ARN) of an AWS Secrets Manager secret. The secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "aemUrl": "{{Adobe Experience Manager On-Premise host URL}}",
       "username": "{{user name with admin permissions}}",
@@ -177,7 +177,7 @@ You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/
 
   If you want to use OAuth 2.0 authentication for AEM On-Premise, the secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "aemUrl": "{{Adobe Experience Manager host URL}}",
       "clientId": "{{client ID}}",
@@ -188,7 +188,7 @@ You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/
 
   If you want to use OAuth 2.0 authentication for AEM as a Cloud Service, the secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "clientId": "{{client ID}}",
       "clientSecret": "{{client secret}}",

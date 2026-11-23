@@ -87,7 +87,7 @@ If your OpenSearch domain has [fine-grained access control](fgac.md) enabled, yo
 
 The following example exports all dashboards with their related objects. Replace the {{placeholder values}} with your own information.
 
-```
+```sh
 curl -X POST \
     "https://{{dashboards-endpoint}}/_dashboards/api/saved_objects/_export" \
     -u '{{master-username}}:{{master-password}}' \
@@ -105,7 +105,7 @@ If your domain does not have fine-grained access control enabled, you can omit t
 
 To export specific saved objects by ID, use the `objects` parameter instead of `type`:
 
-```
+```sh
 curl -X POST \
     "https://{{dashboards-endpoint}}/_dashboards/api/saved_objects/_export" \
     -u '{{master-username}}:{{master-password}}' \
@@ -124,7 +124,7 @@ curl -X POST \
 **Note**
 To find saved object IDs, you can use the Saved Objects API to list all objects of a specific type. The following example lists all dashboards:
 
-```
+```sh
 curl -X GET \
     "https://{{dashboards-endpoint}}/_dashboards/api/saved_objects/_find?type=dashboard" \
     -u '{{master-username}}:{{master-password}}'
@@ -170,7 +170,7 @@ To import saved objects using the API with AWS Signature Version 4 authenticatio
 
 Step 1: Get the data source ID for your workspace:
 
-```
+```sh
 curl -X GET \
     "https://{{opensearch-ui-endpoint}}/w/{{workspace-id}}/api/saved_objects/_find?type=data-source" \
     --aws-sigv4 "aws:amz:{{region}}:opensearch" \
@@ -184,7 +184,7 @@ The response includes the data source ID. You can also find the data source ID i
 
 Step 2: Import the saved objects using the data source ID from Step 1:
 
-```
+```sh
 curl -X POST \
     "https://{{opensearch-ui-endpoint}}/w/{{workspace-id}}/api/saved_objects/_import?overwrite=true&dataSourceId={{data-source-id}}" \
     --aws-sigv4 "aws:amz:{{region}}:opensearch" \

@@ -24,7 +24,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/report-create
 
    The following is an example of a buildspec `reports` section:
 
-   ```
+   ```yaml
    reports:
      php-reports:
        files:

@@ -12,7 +12,7 @@ documentDynamoDbTable.putItem(personDocument);
 
 After you read an enhanced document instance from DynamoDB, you can extract the individual attribute values using getters as shown in the following code snippet that access the data saved from the `personDocument`. Alternatively, you can extract the complete content to a JSON string as shown in the last part of the example code.
 
-```
+```java
         // Read the item.
         EnhancedDocument personDocFromDb = documentDynamoDbTable.getItem(Key.builder().partitionValue(50).build());
 

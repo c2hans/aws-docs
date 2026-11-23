@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon ECS.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 import logging
 
 import boto3
@@ -87,7 +87,7 @@ The following code example shows how to learn Amazon ECS basics.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 import json
 import logging
 import os
@@ -537,7 +537,7 @@ if __name__ == "__main__":
 ```
 Create a class that wraps ECS operations.
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -583,7 +583,7 @@ The following code example shows how to use `CreateCluster`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -645,7 +645,7 @@ The following code example shows how to use `CreateService`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -729,7 +729,7 @@ The following code example shows how to use `DeleteCluster`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -788,7 +788,7 @@ The following code example shows how to use `DeleteService`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -856,7 +856,7 @@ The following code example shows how to use `DeregisterTaskDefinition`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -915,7 +915,7 @@ The following code example shows how to use `DescribeClusters`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -978,7 +978,7 @@ The following code example shows how to use `DescribeServices`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -1044,7 +1044,7 @@ The following code example shows how to use `DescribeTasks`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -1109,7 +1109,7 @@ The following code example shows how to use `ListTasks`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -1178,7 +1178,7 @@ The following code example shows how to use `RegisterTaskDefinition`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -1273,7 +1273,7 @@ The following code example shows how to use `RunTask`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -1357,7 +1357,7 @@ The following code example shows how to use `UpdateService`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 

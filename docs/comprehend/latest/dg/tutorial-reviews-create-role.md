@@ -38,7 +38,7 @@ The Amazon Comprehend console lets you select roles where the role name contains
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -80,7 +80,7 @@ To access your Amazon S3 bucket, Amazon Comprehend needs permissions to list, re
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

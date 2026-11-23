@@ -37,7 +37,7 @@ If *wkt\_string* is not valid, then an error is returned.
 
 The following SQL constructs a polygon from a geography object with an SRID value.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_GeogFromText('SRID=4324;POLYGON((0 0,0 1,1 1,10 10,1 0,0 0))'));
 ```
 
@@ -49,7 +49,7 @@ SELECT ST_AsEWKT(ST_GeogFromText('SRID=4324;POLYGON((0 0,0 1,1 1,10 10,1 0,0 0))
 
 The following SQL constructs a polygon from a geography object. The SRID value is set to `4326`.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_GeogFromText('POLYGON((0 0,0 1,1 1,10 10,1 0,0 0))'));
 ```
 

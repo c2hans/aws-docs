@@ -8,7 +8,7 @@ Delete the JSON values at the path in a document key. If the path is the root, i
 
 Syntax
 
-```
+```json
 JSON.DEL <key> [path]
 ```
 + key (required) – key of JSON document type
@@ -23,7 +23,7 @@ JSON.DEL <key> [path]
 
  Enhanced path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 . '{"a":{}, "b":{"a":1}, "c":{"a":1, "b":2}, "d":{"a":1, "b":2, "c":3}, "e": [1,2,3,4,5]}'
 OK
 127.0.0.1:6379> JSON.DEL k1 $.d.*
@@ -38,7 +38,7 @@ OK
 
  Restricted path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 . '{"a":{}, "b":{"a":1}, "c":{"a":1, "b":2}, "d":{"a":1, "b":2, "c":3}, "e": [1,2,3,4,5]}'
 OK
 127.0.0.1:6379> JSON.DEL k1 .d.*

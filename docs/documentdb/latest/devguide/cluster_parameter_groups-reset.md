@@ -72,7 +72,7 @@ aws docdb reset-db-cluster-parameter-group ^
 ```
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
        "DBClusterParameterGroupName": "sample-parameter-group"
    }

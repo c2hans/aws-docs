@@ -173,7 +173,7 @@ The [`AWSIoTDeviceDefenderAudit`](https://docs.aws.amazon.com/aws-managed-policy
 
 1. Choose the **JSON** tab and enter the following policy. Replace the example {{us-east-1}} Region, {{111122223333}} account ID, and {{KEY\_ID}} with your AWS KMS key details:
 
-   ```
+   ```JSON
    {
      "Version": "2012-10-17",
      "Statement": [

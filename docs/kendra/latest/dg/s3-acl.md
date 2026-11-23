@@ -14,7 +14,7 @@ You can specify both users and groups in the access settings. When you query the
 
 The JSON structure for the configuration file must be in the following format:
 
-```
+```json
 [
     {
         "keyPrefix": "s3://BUCKETNAME/prefix1/",

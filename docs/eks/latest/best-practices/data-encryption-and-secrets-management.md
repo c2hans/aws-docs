@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/data-encryptio
 
 There are three different AWS-native storage options you can use with Kubernetes: [EBS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html), [EFS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html), and [FSx for Lustre](https://docs.aws.amazon.com/fsx/latest/LustreGuide/what-is.html). All three offer encryption at rest using a service managed key or a customer master key (CMK). For EBS you can use the in-tree storage driver or the [EBS CSI driver](https://github.com/kubernetes-sigs/aws-ebs-csi-driver). Both include parameters for encrypting volumes and supplying a CMK. For EFS, you can use the [EFS CSI driver](https://github.com/kubernetes-sigs/aws-efs-csi-driver), however, unlike EBS, the EFS CSI driver does not support dynamic provisioning. If you want to use EFS with EKS, you will need to provision and configure at-rest encryption for the file system prior to creating a PV. For further information about EFS file encryption, please refer to [Encrypting Data at Rest](https://docs.aws.amazon.com/efs/latest/ug/encryption-at-rest.html). Besides offering at-rest encryption, EFS and FSx for Lustre include an option for encrypting data in transit. FSx for Lustre does this by default. For EFS, you can add transport encryption by adding the `tls` parameter to `mountOptions` in your PV as in this example:
 
-```
+```yaml
 apiVersion: v1
 kind: PersistentVolume
 metadata:
@@ -31,7 +31,7 @@ spec:
 
 The [FSx CSI driver](https://github.com/kubernetes-sigs/aws-fsx-csi-driver) supports dynamic provisioning of Lustre file systems. It encrypts data with a service managed key by default, although there is an option to provide your own CMK as in this example:
 
-```
+```yaml
 kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
@@ -86,7 +86,7 @@ This allows you to encrypt your secrets with a unique data encryption key (DEK).
 
 On EKS, turn on audit logging and create a CloudWatch metrics filter and alarm to alert you when a secret is used (optional). The following is an example of a metrics filter for the Kubernetes audit log, `{($.verb="get") && ($.objectRef.resource="secret")}`. You can also use the following queries with CloudWatch Log Insights:
 
-```
+```bash
 fields @timestamp, @message
 | sort @timestamp desc
 | limit 100
@@ -96,7 +96,7 @@ fields @timestamp, @message
 
 The above query will display the number of times a secret has been accessed within a specific timeframe.
 
-```
+```bash
 fields @timestamp, @message
 | sort @timestamp desc
 | limit 100

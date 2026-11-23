@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/ruby.html
 
  After installing a Ruby version, the entries for companion tools may show as null in the *alternatives* configuration. This can be verified by running `alternatives --display ruby`. If entries appear as null, they must be registered manually using `alternatives --install`. For example, to register all companion tools for Ruby 3.4:
 
-```
+```sh
 sudo alternatives --install /usr/bin/gem gem /usr/bin/ruby3.4-gem 34
 sudo alternatives --install /usr/bin/bundle bundle /usr/bin/ruby3.4-bundle 34
 sudo alternatives --install /usr/bin/bundler bundler /usr/bin/ruby3.4-bundler 34
@@ -30,30 +30,30 @@ sudo alternatives --install /usr/bin/ri ri /usr/bin/ruby3.4-ri 34
 
 1. Check what *alternatives* is configured for
 
-   ```
+   ```sh
    alternatives --list
    ```
 
 1. Check *ruby*'s current configuration
 
-   ```
+   ```sh
    alternatives --display ruby
    ```
 
 1. Interactively change the Ruby version
 
-   ```
+   ```sh
    alternatives --config ruby
    ```
 
 1. Switch to manual mode and select a specific version
 
-   ```
+   ```sh
    alternatives --set ruby /usr/bin/ruby{MAJOR.MINOR}
    ```
 
 1. Switch back to auto version selection mode
 
-   ```
+   ```sh
    alternatives --auto ruby
    ```

@@ -15,7 +15,7 @@ Create a new endpoint in Amazon Pinpoint by providing the endpoint data in an [E
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.pinpoint.AmazonPinpoint;
 import com.amazonaws.services.pinpoint.AmazonPinpointClientBuilder;
 import com.amazonaws.services.pinpoint.model.UpdateEndpointRequest;
@@ -31,7 +31,7 @@ import com.amazonaws.services.pinpoint.model.GetEndpointResult;
 
  **Code**
 
-```
+```java
 HashMap<String, List<String>> customAttributes = new HashMap<>();
 List<String> favoriteTeams = new ArrayList<>();
 favoriteTeams.add("Lakers");
@@ -82,7 +82,7 @@ Then create an [UpdateEndpointRequest](https://docs.aws.amazon.com/sdk-for-java/
 
  **Code**
 
-```
+```java
 UpdateEndpointRequest updateEndpointRequest = new UpdateEndpointRequest()
         .withApplicationId(appId)
         .withEndpointId(endpointId)

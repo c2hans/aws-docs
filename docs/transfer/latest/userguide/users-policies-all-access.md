@@ -10,7 +10,7 @@ The following policy provides programmatic read, write, and tagging access to an
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

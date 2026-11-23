@@ -15,7 +15,7 @@ You can attach message-level suggestions, such as reply chips or action buttons,
 
 The `FileMessage` object is nested inside the `Content` field of the `RcsMessageContent` parameter. Message-level `Suggestions` are a sibling of `Content` (not nested inside it).
 
-```
+```json
 {
     "Content": {
         "FileMessage": {
@@ -48,7 +48,7 @@ When you use an Amazon S3 URL, the API validates at request time that the object
 
 To allow AWS End User Messaging to retrieve files from your S3 bucket, attach the following resource-based policy to the bucket:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -108,7 +108,7 @@ To send a file message, call the `SendRcsMessage` API with a `FileMessage` objec
 
 The following JSON example shows the `RcsMessageContent` value for a file message with suggestions.
 
-```
+```json
 {
     "Content": {
         "FileMessage": {

@@ -31,7 +31,7 @@ For more information, see [Configure sticky sessions for your Classic Load Balan
 **Tools for PowerShell V4**
 **Example 1: This example creates a stickiness policy that follows the sticky session lifetimes of the specified application-generated cookie.**
 
-```
+```powershell
 New-ELBAppCookieStickinessPolicy -LoadBalancerName my-load-balancer -PolicyName my-app-cookie-policy -CookieName my-app-cookie
 ```
 +  For API details, see [CreateAppCookieStickinessPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -39,7 +39,7 @@ New-ELBAppCookieStickinessPolicy -LoadBalancerName my-load-balancer -PolicyName 
 **Tools for PowerShell V5**
 **Example 1: This example creates a stickiness policy that follows the sticky session lifetimes of the specified application-generated cookie.**
 
-```
+```powershell
 New-ELBAppCookieStickinessPolicy -LoadBalancerName my-load-balancer -PolicyName my-app-cookie-policy -CookieName my-app-cookie
 ```
 +  For API details, see [CreateAppCookieStickinessPolicy](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -13,7 +13,7 @@ For Neo-supported frameworks and containers, Inference Recommender automatically
 
   The following example shows how to specify the `DataInputConfig` field in the `InferenceSpecification`, where `data_input_configuration` is a variable that contains the data shape in dictionary format (for example, `{'input':[1,1024,1024,3]}`).
 
-  ```
+  ```json
   "InferenceSpecification": {
           "Containers": [
               {

@@ -27,7 +27,7 @@ To configure the Log4j 2 binding for SLF4J in your build file, use the following
 
 Add the following elements to your `pom.xml` file.
 
-```
+```xml
 ...
 <dependency>
    <groupId>org.apache.logging.log4j</groupId>
@@ -67,7 +67,7 @@ The following `log4j2.xml` file sets the `rootLogger` to "WARN", which causes wa
 
 This configuration will log messages at the "ERROR" and "WARN" levels to the console for all logger hierarchies.
 
-```
+```xml
 <Configuration status="WARN">
  <Appenders>
   <Console name="ConsoleAppender" target="SYSTEM_OUT">
@@ -90,7 +90,7 @@ Every request to an AWS service generates a unique AWS request ID that is useful
 
 The following `log4j2.xml` file enables a summary of requests and responses.
 
-```
+```xml
 <Configuration status="WARN">
  <Appenders>
   <Console name="ConsoleAppender" target="SYSTEM_OUT">
@@ -157,7 +157,7 @@ DEBUG s.a.a.h.a.i.c.SdkTlsSocketFactory:366 - Connecting socket to s3.us-east-1.
 
 The following `log4j2.xml` file configures the previous output.
 
-```
+```xml
 <Configuration status="WARN">
     <Appenders>
         <Console name="ConsoleAppender" target="SYSTEM_OUT">
@@ -202,7 +202,7 @@ Add the "org.apache.http.wire" logger to the `log4j2.xml` configuration file and
 
 The following `log4j2.xml` file turns on full wire logging for the Apache HttpClient.
 
-```
+```xml
 <Configuration status="WARN">
  <Appenders>
   <Console name="ConsoleAppender" target="SYSTEM_OUT">
@@ -278,7 +278,7 @@ Add the "org.apache.hc.client5.http.wire" logger to the `log4j2.xml` configurati
 
 The following `log4j2.xml` file turns on full wire logging for the Apache5 HttpClient.
 
-```
+```xml
 <Configuration status="WARN">
  <Appenders>
   <Console name="ConsoleAppender" target="SYSTEM_OUT">

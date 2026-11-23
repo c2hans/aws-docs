@@ -15,6 +15,13 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes
 
+ ** stateToken **   <a name="inspector2-Type-UpdateGitLabSelfManagedIntegrationDetail-stateToken"></a>
+The PKCE state token used to validate the authorization request.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Pattern: `[A-Za-z0-9_-]+`
+Required: No
+
 ## See Also
 <a name="API_UpdateGitLabSelfManagedIntegrationDetail_SeeAlso"></a>
 

@@ -15,7 +15,7 @@ To create a topic, first build a [CreateTopicRequest](https://sdk.amazonaws.com/
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sns.SnsClient;
 import software.amazon.awssdk.services.sns.model.CreateTopicRequest;
@@ -25,7 +25,7 @@ import software.amazon.awssdk.services.sns.model.SnsException;
 
  **Code**
 
-```
+```java
     public static String createSNSTopic(SnsClient snsClient, String topicName ) {
 
         CreateTopicResponse result = null;
@@ -56,7 +56,7 @@ The following code snippet prints out the HTTP status code of the request and a 
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sns.SnsClient;
 import software.amazon.awssdk.services.sns.model.ListTopicsRequest;
@@ -66,7 +66,7 @@ import software.amazon.awssdk.services.sns.model.SnsException;
 
  **Code**
 
-```
+```java
     public static void listSNSTopics(SnsClient snsClient) {
 
         try {
@@ -96,7 +96,7 @@ The following code snippet shows how to subscribe an email address to a topic.
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sns.SnsClient;
 import software.amazon.awssdk.services.sns.model.SnsException;
@@ -106,7 +106,7 @@ import software.amazon.awssdk.services.sns.model.SubscribeResponse;
 
  **Code**
 
-```
+```java
     public static void subEmail(SnsClient snsClient, String topicArn, String email) {
 
         try {
@@ -136,7 +136,7 @@ After you have a topic and one or more endpoints configured for it, you can publ
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sns.SnsClient;
 import software.amazon.awssdk.services.sns.model.PublishRequest;
@@ -146,7 +146,7 @@ import software.amazon.awssdk.services.sns.model.SnsException;
 
  **Code**
 
-```
+```java
     public static void pubTopic(SnsClient snsClient, String message, String topicArn) {
 
         try {
@@ -176,7 +176,7 @@ To remove a communication channel as an endpoint for a topic, unsubscribe that e
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sns.SnsClient;
 import software.amazon.awssdk.services.sns.model.SnsException;
@@ -186,7 +186,7 @@ import software.amazon.awssdk.services.sns.model.UnsubscribeResponse;
 
  **Code**
 
-```
+```java
     public static void unSub(SnsClient snsClient, String subscriptionArn) {
 
         try {
@@ -215,7 +215,7 @@ To delete an Amazon SNS topic, first build a [DeleteTopicRequest](https://sdk.am
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sns.SnsClient;
 import software.amazon.awssdk.services.sns.model.DeleteTopicRequest;
@@ -225,7 +225,7 @@ import software.amazon.awssdk.services.sns.model.SnsException;
 
  **Code**
 
-```
+```java
     public static void deleteSNSTopic(SnsClient snsClient, String topicArn ) {
 
         try {

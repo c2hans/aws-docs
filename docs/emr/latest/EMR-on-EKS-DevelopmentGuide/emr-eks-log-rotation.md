@@ -23,7 +23,7 @@ To turn on the Spark event log rotation feature, configure the following Spark p
 
 You can specify these parameters in the `sparkSubmitParameters` section of the [`StartJobRun`](emr-eks-jobs-submit.md) API, as the following example shows.
 
-```
+```JSON
 "sparkSubmitParameters": "--class org.apache.spark.examples.SparkPi --conf spark.eventLog.rotation.enabled=true --conf spark.eventLog.rotation.interval=300 --conf spark.eventLog.rotation.minFileSize=1m --conf spark.eventLog.rotation.maxFilesToRetain=2"
 ```
 

@@ -10,7 +10,7 @@ The following example uses the DynamoDB [GetItem](https://docs.aws.amazon.com/s
 
 Create the file *DynamoDBReadItem.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -24,7 +24,7 @@ import (
 
 Create the data structure we use to contain the information about the table item.
 
-```
+```go
 // Create struct to hold info about new item
 type Item struct {
     Year   int
@@ -36,7 +36,7 @@ type Item struct {
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials` and region from the shared configuration file `~/.aws/config` and create a new DynamoDB service client.
 
-```
+```go
 // Initialize a session that the SDK will use to load
 // credentials from the shared credentials file ~/.aws/credentials
 // and region from the shared configuration file ~/.aws/config.
@@ -50,7 +50,7 @@ svc := dynamodb.New(sess)
 
 Call **GetItem** to get the item from the table. If we encounter an error, print the error message. Otherwise, display information about the item.
 
-```
+```go
 tableName := "Movies"
 movieName := "The Big New Movie"
 movieYear := "2015"
@@ -73,7 +73,7 @@ if err != nil {
 
 If an item was returned, unmarshall the return value and display the year, title, plot, and rating.
 
-```
+```go
 if result.Item == nil {
     msg := "Could not find '" + *title + "'"
     return nil, errors.New(msg)

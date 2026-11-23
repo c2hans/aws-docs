@@ -61,7 +61,7 @@ The following procedures configure encryption at rest in your user pool. For mor
 
 To use a customer managed key, your key must trust an Amazon Cognito service principal to perform encryption and decryption operations on the key. Configure the [key policy](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html) of your KMS key as shown in the following example. The IAM principal that writes this policy must have write access to your KMS key, with `kms:PutKeyPolicy` permission.
 
-```
+```json
 {
     "Id": "cognito-cmk-policy",
     "Version": "2012-10-17",
@@ -184,7 +184,7 @@ To use a customer managed key, your key must trust an Amazon Cognito service pri
 
 Apply this policy to your KMS key when you have [log export](exporting-quotas-and-usage.md) configured. This policy permits Amazon Cognito to encrypt logs as it exports them, and the intermediate service to decrypt them before writing them to your CloudWatch Logs log group. Configure the [key policy](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html) of your KMS key as shown in the following example. The IAM principal that writes this policy must have write access to your KMS key, with `kms:PutKeyPolicy` permission.
 
-```
+```json
 {
     "Id": "cognito-cmk-policy",
     "Version": "2012-10-17",
@@ -366,7 +366,7 @@ Apply this policy to your KMS key when you have [log export](exporting-quotas-an
 
 Set your key configuration in a [CreateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPool.html#CognitoUserPools-CreateUserPool-request-KeyConfiguration) or [UpdateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPool.html#CognitoUserPools-UpdateUserPool-request-KeyConfiguration) API request. The following partial example request body sets a user pool to use the provided customer managed key. For a complete example request, see [Examples](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPool.html#API_CreateUserPool_Examples).
 
-```
+```json
 "KeyConfiguration": {
    "KeyType": "CUSTOMER_MANAGED_KEY",
    "KmsKeyArn": "arn:aws:kms:{{us-east-1}}:{{111122223333}}:key/{{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}"
@@ -375,7 +375,7 @@ Set your key configuration in a [CreateUserPool](https://docs.aws.amazon.com/cog
 
 The following partial example request body sets a user pool to use an AWS owned key.
 
-```
+```json
 "KeyConfiguration": {
    "KeyType": "AWS_OWNED_KEY"
 },

@@ -171,7 +171,7 @@ If your workload does not require you to use HTTP, we recommend that you avoid u
 
 The following example policy prevents users from sending requests over HTTP.
 
-```
+```json
 {
     "Statement": [
         {

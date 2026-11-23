@@ -31,7 +31,7 @@ Instead of preventing all account instance creation, this policy denies any atte
 **Example : Deny policy to limit account instance creation**
 ****
 
-```
+```json
 {
 
     "Version":"2012-10-17",

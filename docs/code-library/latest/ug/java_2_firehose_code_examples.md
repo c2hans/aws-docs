@@ -29,7 +29,7 @@ The following code example shows how to use `PutRecord`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/firehose#code-examples).
 
-```
+```java
     /**
      * Puts a record to the specified Amazon Kinesis Data Firehose delivery stream.
      *
@@ -70,7 +70,7 @@ The following code example shows how to use `PutRecordBatch`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/firehose#code-examples).
 
-```
+```java
     /**
      * Puts a batch of records to an Amazon Kinesis Data Firehose delivery stream.
      *
@@ -134,7 +134,7 @@ The following code example shows how to use Firehose to process individual and b
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/firehose#code-examples).
 This example puts individual and batch records to Firehose.
 
-```
+```java
 /**
  * Amazon Firehose Scenario example using Java V2 SDK.
  *

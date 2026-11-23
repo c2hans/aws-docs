@@ -36,7 +36,7 @@ You tune the relevance of a field or attribute at the index level by using eithe
 
 The following example sets the `_last_updated_at` field as the `Freshness` field for a document.
 
-```
+```json
 "DocumentMetadataConfigurationUpdates" : [
     {
         "Name": "_last_updated_at",
@@ -51,7 +51,7 @@ The following example sets the `_last_updated_at` field as the `Freshness` field
 
 The following example applies different importance to the different categories in the "department" field.
 
-```
+```json
 "DocumentMetadataConfigurationUpdates" : [
     {
         "Name": "department",
@@ -78,7 +78,7 @@ Tuning at the query level can speed up the process of testing relevance tuning b
 
 The following example overrides the importance applied to the "department" field and each department category set at the index level, shown in the above example. When a user inputs their search query, the "department" field has a fair level of importance and the Legal department has more importance than the HR department.
 
-```
+```json
 "DocumentRelevanceOverrideConfigurations" : [
     {
         "Name": "department",

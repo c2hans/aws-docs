@@ -46,7 +46,7 @@ aws memorydb describe-subnet-groups ^
 
 This command should produce output similar to the following:
 
-```
+```json
 {
   "subnetgroups": [
     {

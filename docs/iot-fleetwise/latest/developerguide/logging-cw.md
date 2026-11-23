@@ -24,7 +24,7 @@ With these permissions, you can change the logging configuration, configure log 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

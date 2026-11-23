@@ -33,7 +33,7 @@ Specifies destination domains to restrict network access control to.
 
 To define proxy configurations in your console, see [Create a reserved capacity fleet](fleets.md#fleets.how-to) for instructions. To define proxy configurations using the AWS CLI, you can do so by modifying the following JSON syntax and saving your results:
 
-```
+```json
 "proxyConfiguration": {
     "defaultBehavior": "ALLOW_ALL" | "DENY_ALL",
     "orderedProxyRules": [
@@ -50,7 +50,7 @@ To define proxy configurations in your console, see [Create a reserved capacity 
 
 Your JSON file may look similar to the following:
 
-```
+```json
 "proxyConfiguration": {
     "defaultBehavior": "DENY_ALL",
     "orderedProxyRules": [

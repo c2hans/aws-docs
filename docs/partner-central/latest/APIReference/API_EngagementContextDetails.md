@@ -15,7 +15,7 @@ In the following list, the required parameters are described first.
  ** Type **   <a name="AWSPartnerCentral-Type-EngagementContextDetails-Type"></a>
 Specifies the type of Engagement context. Valid values are "CustomerProject" or "Document", indicating whether the context relates to a customer project or a document respectively.
 Type: String
-Valid Values: `CustomerProject | Lead | ProspectingResult`
+Valid Values: `CustomerProject | Lead | ProspectingResult | CustomerAccount`
 Required: Yes
 
  ** Id **   <a name="AWSPartnerCentral-Type-EngagementContextDetails-Id"></a>

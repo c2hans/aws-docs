@@ -63,7 +63,7 @@ aws docdb describe-db-instances ^
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 [
     [
         "sample-instance-1",
@@ -89,7 +89,7 @@ aws docdb describe-db-instances ^
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 [
     [
         "sample-instance-1",

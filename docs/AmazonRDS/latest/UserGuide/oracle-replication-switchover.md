@@ -8,6 +8,9 @@ A *switchover* is a role reversal between a primary database and a standby datab
 
 In an Oracle Data Guard environment, a primary database supports one or more standby databases. You can perform a managed, switchover-based role transition from a primary database to a standby database.
 
+**Tip**
+You can use a switchover to complete a minor version upgrade with less downtime. Upgrade a replica first, test the new minor engine version with read traffic, and then switch over to it. For more information, see [Upgrading with Replica First Patching](oracle-upgrade-replica-first.md).
+
 **Topics**
 + [Overview of Oracle Data Guard switchover](#oracle-replication-switchover.overview)
 + [Requirements for the Oracle Data Guard switchover](oracle-switchover.preparing.md)
@@ -39,6 +42,7 @@ Just as for RDS for Oracle read replicas, a managed switchover relies on Oracle 
 + Ensures data consistency
 + Maintains your replication configuration after the transition
 + Supports repeated reversals, allowing your new standby database to return to its original primary role
++ Completes a minor version upgrade when you switch over to a replica that you upgraded with Replica First Patching. For more information, see [Upgrading with Replica First Patching](oracle-upgrade-replica-first.md).
 
 ### Supported Oracle Database versions
 <a name="oracle-replication-switchover.overview.engine-support"></a>
@@ -73,6 +77,8 @@ To perform the switchover, Amazon RDS must take the following steps:
 1. Restart the new standby database in read-only or mounted mode. The mode depends on the open state of the original standby database before the switchover.
 
 1. Open the new primary database in read/write mode.
+
+If the status of the original standby database is `replica-patched-pending-switchover`, Amazon RDS also completes the upgrade on the new primary database before it opens in read/write mode. Then Amazon RDS upgrades the new standby database and the bystander replicas. For more information, see [Upgrading with Replica First Patching](oracle-upgrade-replica-first.md).
 
 #### After the Oracle Data Guard switchover
 <a name="oracle-replication-switchover.overview.how-it-works.after-switchover"></a>

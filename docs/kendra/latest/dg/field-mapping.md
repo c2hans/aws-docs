@@ -68,7 +68,7 @@ With the [UpdateIndex](https://docs.aws.amazon.com/kendra/latest/APIReference/AP
 
 The following JSON example uses `DocumentMetadataConfigurationUpdates` to add a field called "Department" to the index.
 
-```
+```json
 "DocumentmetadataConfigurationUpdates": [
    {
        "Name": "Department",
@@ -85,7 +85,7 @@ When you create the field, you have the option of setting how the field is used 
 
 The following JSON example uses `DocumentMetadataConfigurationUpdates` to add a field called "Department" to the index and marks it as facetable.
 
-```
+```json
 "DocumentMetadataConfigurationUpdates": [
    {
        "Name": "Department",

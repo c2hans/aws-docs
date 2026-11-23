@@ -106,7 +106,7 @@ You can create the function using the AWS Lambda console, the AWS Command Line I
 
 1. Overwrite the placeholder code in `lambda_function.py` with the following:
 
-   ```
+   ```py
    from os import environ
 
    import boto3
@@ -331,7 +331,7 @@ CREATE EXTENSION IF NOT EXISTS postgis;
 
 In an SQL editor, create a new user-defined function `f_SearchPlaceIndexForText` to invoke the function {{AuroraGeocoder}}:
 
-```
+```sql
 CREATE OR REPLACE FUNCTION f_SearchPlaceIndexForText(
   text text,
   bias_position geometry(Point, 4326) DEFAULT NULL,
@@ -404,14 +404,14 @@ If you are geocoding 50 rows, Amazon Aurora PostgreSQL invokes the Lambda functi
 
 The following `f_SearchPlaceIndexForText` SQL function makes requests to Amazon Location's `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html)` API through the {{AuroraGeocoder}} Lambda function. The function returns a `geom` column that's a PostGIS geometry, which `ST_AsText(geom)` converts to text.
 
-```
+```sql
 SELECT *, ST_AsText(geom)
 FROM f_SearchPlaceIndexForText('Vancouver, BC');
 ```
 
 By default, the return will contain one row. To request additional rows, up to the `MaxResults` limit, run the following SQL statement while providing a `BiasPosition` and limiting to results in Canada.
 
-```
+```sql
 SELECT *
 FROM f_SearchPlaceIndexForText('Mount Pleasant', ST_MakePoint(-123.113, 49.260), null, '{"CAN"}', 5);
 ```
@@ -419,7 +419,7 @@ FROM f_SearchPlaceIndexForText('Mount Pleasant', ST_MakePoint(-123.113, 49.260),
 To filter results using a bounding box, then pass a `[Box2D](https://postgis.net/docs/Box2D.html)` as `filter_bbox`:
 + `[FilterBBox](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html#locationplaces-SearchPlaceIndexForText-request-FilterBBox)` – Filters the results by returning places within a bounding box. This is an optional parameter.
 
-```
+```sql
 SELECT *
 FROM f_SearchPlaceIndexForText('Mount Pleasant', null, 'BOX(-139.06 48.30, -114.03 60.00)'::box2d, '{"CAN"}', 5);
 ```
@@ -436,7 +436,7 @@ You can construct a formatted address and simultaneously normalize and geocode u
 + `state`
 + `zip`
 
-```
+```sql
 WITH source_data AS (
   SELECT
     id,
@@ -462,7 +462,7 @@ LIMIT 1;
 
 The following example illustrates one resulting datatable row:
 
-```
+```sql
  id |      formatted_address         |            normalized_address              |     latitude     |     longitude
 ----+--------------------------------+--------------------------------------------+------------------+-------------------
  42 | 123 Anytown Ave N, Seattle, WA | 123 Anytown Ave N, Seattle, WA, 12345, USA | 47.6223000127926 | -122.336745971039
@@ -473,7 +473,7 @@ The following example illustrates one resulting datatable row:
 
 The following example updates the table and populates columns with results of `SearchPlaceIndexForText` queries:
 
-```
+```sql
 WITH source_data AS (
   -- select rows that have not been geocoded and created a formatted address for each
   SELECT

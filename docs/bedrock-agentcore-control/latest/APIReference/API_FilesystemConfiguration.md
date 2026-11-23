@@ -22,6 +22,11 @@ Configuration for an Amazon EFS access point to mount into the AgentCore Runtime
 Type: [EfsAccessPointConfiguration](API_EfsAccessPointConfiguration.md) object
 Required: No
 
+ ** s3BucketMount **   <a name="bedrockagentcorecontrol-Type-FilesystemConfiguration-s3BucketMount"></a>
+Mounts an Amazon S3 bucket as a file system in the AgentCore Runtime.
+Type: [S3BucketMountConfiguration](API_S3BucketMountConfiguration.md) object
+Required: No
+
  ** s3FilesAccessPoint **   <a name="bedrockagentcorecontrol-Type-FilesystemConfiguration-s3FilesAccessPoint"></a>
 Configuration for an Amazon S3 Files access point to mount into the AgentCore Runtime.
 Type: [S3FilesAccessPointConfiguration](API_S3FilesAccessPointConfiguration.md) object

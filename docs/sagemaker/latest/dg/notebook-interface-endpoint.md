@@ -39,7 +39,7 @@ For more information, see [Controlling Access to Services with VPC Endpoints](ht
 
 The following example of a VPC endpoint policy specifies that all users that have access to the endpoint are allowed to access the notebook instance named `myNotebookInstance`.
 
-```
+```json
 {
   "Statement": [
       {
@@ -72,7 +72,7 @@ This policy allows connections only to callers within a subnet where you created
 
 ****
 
-```
+```json
 {
     "Id": "notebook-example-1",
     "Version":"2012-10-17",
@@ -104,7 +104,7 @@ If you want to restrict access to the notebook instance to only connections made
 
 ****
 
-```
+```json
 {
     "Id": "notebook-example-1",
     "Version":"2012-10-17",

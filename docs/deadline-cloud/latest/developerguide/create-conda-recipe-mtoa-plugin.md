@@ -18,7 +18,7 @@ The recipe uses the same source archives as the Maya recipe. The build script in
 
 Build the Maya package before you build the MtoA package, because MtoA depends on Maya at build time. Use `rattler-build publish` to build and publish the package. From the `conda_recipes` directory, run the following command.
 
-```
+```bash
 rattler-build publish maya-mtoa-2026/recipe/recipe.yaml \
     --to file://$HOME/my-conda-channel \
     --build-number=+1

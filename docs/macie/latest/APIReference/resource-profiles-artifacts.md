@@ -57,7 +57,7 @@ Retrieves information about objects that Amazon Macie selected from an S3 bucket
 #### ListResourceProfileArtifactsResponse schema
 <a name="resource-profiles-artifacts-response-body-listresourceprofileartifactsresponse-example"></a>
 
-```
+```json
 {
   "artifacts": [
     {
@@ -73,7 +73,7 @@ Retrieves information about objects that Amazon Macie selected from an S3 bucket
 #### ValidationException schema
 <a name="resource-profiles-artifacts-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -82,7 +82,7 @@ Retrieves information about objects that Amazon Macie selected from an S3 bucket
 #### AccessDeniedException schema
 <a name="resource-profiles-artifacts-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -91,7 +91,7 @@ Retrieves information about objects that Amazon Macie selected from an S3 bucket
 #### ResourceNotFoundException schema
 <a name="resource-profiles-artifacts-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -100,7 +100,7 @@ Retrieves information about objects that Amazon Macie selected from an S3 bucket
 #### ThrottlingException schema
 <a name="resource-profiles-artifacts-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -109,7 +109,7 @@ Retrieves information about objects that Amazon Macie selected from an S3 bucket
 #### InternalServerException schema
 <a name="resource-profiles-artifacts-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

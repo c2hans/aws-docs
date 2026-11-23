@@ -33,7 +33,7 @@ The following code example shows how to get started using CloudWatch.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
 using Amazon.CloudWatch;
 using Amazon.CloudWatch.Model;
 using Microsoft.Extensions.DependencyInjection;
@@ -98,7 +98,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 public class CloudWatchScenario
 {
     /*
@@ -633,7 +633,7 @@ public class CloudWatchScenario
 ```
 Wrapper methods used by the scenario for the CloudWatch OpenTelemetry actions.
 
-```
+```csharp
 /// <summary>
 /// Wrapper class for the OpenTelemetry features of Amazon CloudWatch: turning on OTel
 /// enrichment so that CloudWatch vended metrics are queryable with PromQL, alarming on a
@@ -664,7 +664,7 @@ public class CloudWatchOTelWrapper
 ```
 Wrapper methods used by the scenario for the metric, statistic, and dashboard actions.
 
-```
+```csharp
 /// <summary>
 /// Wrapper class for Amazon CloudWatch methods.
 /// </summary>
@@ -1151,7 +1151,7 @@ public class CloudWatchWrapper
 ```
 Example settings.json values for the scenario.
 
-```
+```csharp
 {
   "dashboardName": "example-new-dashboard",
   "exampleAlarmName": "example-metric-alarm",
@@ -1271,7 +1271,7 @@ The following code example shows how to use `DeleteAlarmMuteRule`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an alarm mute rule. The alarms it targeted resume firing their actions.
     /// </summary>
@@ -1299,7 +1299,7 @@ The following code example shows how to use `DeleteAlarms`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a list of alarms from CloudWatch.
     /// </summary>
@@ -1326,7 +1326,7 @@ The following code example shows how to use `DeleteAnomalyDetector`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a single metric anomaly detector.
     /// </summary>
@@ -1353,7 +1353,7 @@ The following code example shows how to use `DeleteDashboards`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a list of CloudWatch dashboards.
     /// </summary>
@@ -1380,7 +1380,7 @@ The following code example shows how to use `DescribeAlarmContributors`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the contributors for a PromQL alarm. Each contributor is one series that the
     /// alarm's query matched, identified by its label set. This is how you find out which
@@ -1424,7 +1424,7 @@ The following code example shows how to use `DescribeAlarmHistory`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Describe the history of an alarm for a number of days in the past.
     /// </summary>
@@ -1460,7 +1460,7 @@ The following code example shows how to use `DescribeAlarms`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Describe the current alarms, optionally filtered by state.
     /// </summary>
@@ -1492,7 +1492,7 @@ The following code example shows how to use `DescribeAlarmsForMetric`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Describe the current alarms for a specific metric.
     /// </summary>
@@ -1521,7 +1521,7 @@ The following code example shows how to use `DescribeAnomalyDetectors`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Describe anomaly detectors for a metric and namespace.
     /// </summary>
@@ -1556,7 +1556,7 @@ The following code example shows how to use `DisableAlarmActions`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Disable the actions for a list of alarms from CloudWatch.
     /// </summary>
@@ -1583,7 +1583,7 @@ The following code example shows how to use `EnableAlarmActions`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Enable the actions for a list of alarms from CloudWatch.
     /// </summary>
@@ -1610,7 +1610,7 @@ The following code example shows how to use `GetAlarmMuteRule`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the full configuration of an alarm mute rule, including its schedule, the
     /// alarms it targets, and whether it is currently SCHEDULED, ACTIVE, or EXPIRED.
@@ -1639,7 +1639,7 @@ The following code example shows how to use `GetDashboard`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information on a dashboard.
     /// </summary>
@@ -1666,7 +1666,7 @@ The following code example shows how to use `GetMetricData`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get data for CloudWatch metrics.
     /// </summary>
@@ -1720,7 +1720,7 @@ The following code example shows how to use `GetMetricStatistics`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Wrapper to get statistics for a specific CloudWatch metric.
     /// </summary>
@@ -1759,7 +1759,7 @@ The following code example shows how to use `GetMetricWidgetImage`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get an image for a metric graphed over time.
     /// </summary>
@@ -1819,7 +1819,7 @@ The following code example shows how to use `GetOTelEnrichment`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the current OTel enrichment status for the account.
     /// </summary>
@@ -1843,7 +1843,7 @@ The following code example shows how to use `ListAlarmMuteRules`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List the alarm mute rules in the account, optionally filtered to the rules that
     /// target one alarm.
@@ -1887,7 +1887,7 @@ The following code example shows how to use `ListDashboards`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of dashboards.
     /// </summary>
@@ -1916,7 +1916,7 @@ The following code example shows how to use `ListMetrics`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List metrics available, optionally within a namespace.
     /// </summary>
@@ -1953,7 +1953,7 @@ The following code example shows how to use `PutAlarmMuteRule`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create or update an alarm mute rule. While a mute rule is active the targeted
     /// alarms keep evaluating and keep transitioning between states, but their configured
@@ -2014,7 +2014,7 @@ The following code example shows how to use `PutAnomalyDetector`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Add an anomaly detector for a single metric.
     /// </summary>
@@ -2041,7 +2041,7 @@ The following code example shows how to use `PutDashboard`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Wrapper to create or add to a dashboard with metrics.
     /// </summary>
@@ -2074,7 +2074,7 @@ The following code example shows how to use `PutMetricAlarm`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 
-```
+```csharp
     /// <summary>
     /// Create an alarm that evaluates a PromQL query.
     ///
@@ -2127,7 +2127,7 @@ Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 ```
 Create an alarm that evaluates a single CloudWatch metric.
 
-```
+```csharp
     /// <summary>
     /// Add a metric alarm to send an email when the metric passes a threshold.
     /// </summary>
@@ -2197,7 +2197,7 @@ The following code example shows how to use `PutMetricData`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Wrapper to add metric data to a CloudWatch metric.
     /// </summary>
@@ -2227,7 +2227,7 @@ The following code example shows how to use `StartOTelEnrichment`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Turn on OTel enrichment for the account. Once enrichment is running, CloudWatch
     /// vended metrics that carry a resource identifier dimension, such as the Amazon EC2
@@ -2257,7 +2257,7 @@ The following code example shows how to use `StopOTelEnrichment`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Turn off OTel enrichment for the account. Existing PromQL alarms are not deleted,
     /// but vended metrics stop being enriched with resource ARN and tag labels, so
@@ -2292,7 +2292,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 Wrapper code for the CloudWatch OpenTelemetry operations.
 
-```
+```csharp
 /// <summary>
 /// Wrapper class for the OpenTelemetry features of Amazon CloudWatch: turning on OTel
 /// enrichment so that CloudWatch vended metrics are queryable with PromQL, alarming on a

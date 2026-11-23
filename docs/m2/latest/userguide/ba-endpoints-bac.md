@@ -690,7 +690,7 @@ Use the following endpoints to manage user interactions.
 
 Sample response:
 
-```
+```json
 {
      "login": "some-admin",
      "password": null,
@@ -719,7 +719,7 @@ Sample response:
 + Returns the boolean value `true` if the user was successfully created. Returns `false` otherwise.
 + Sample request JSON:
 
-  ```
+  ```json
    {
        "login": "simpleuser",
        "password": "simplepassword",

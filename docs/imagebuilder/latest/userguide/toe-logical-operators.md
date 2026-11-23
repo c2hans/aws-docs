@@ -11,7 +11,7 @@ With the `and` operator, you can evaluate two or more comparisons as a single ex
 **Examples:**
 The following example performs two comparisons – a string and a number. Both comparisons are true, so the expression evaluates to true.
 
-```
+```yaml
 and:
   - stringEquals: 'test_string'
     value: 'test_string'
@@ -20,7 +20,7 @@ and:
 ```
 The following example also performs two comparisons. The first comparison is false, at which point evaluation stops and the second comparison is skipped. The expression evaluates to `false`.
 
-```
+```yaml
 and:
   - stringEquals: 'test_string'
     value: 'Hello world!'
@@ -33,7 +33,7 @@ With the `or` operator, you can evaluate two or more comparisons as a single exp
 **Examples:**
 The following example performs two comparisons – a string and a number. The first comparison is true, so the expression evaluates to `true` and the second comparison is skipped.
 
-```
+```yaml
 or:
   - stringEquals: 'test_string'
     value: 'test_string'
@@ -42,7 +42,7 @@ or:
 ```
 The following example also performs two comparisons. The first comparison is false, and evaluation continues. The second comparison is true, so the expression evaluates to `true`.
 
-```
+```yaml
 or:
   - stringEquals: 'test_string'
     value: 'Hello world!'
@@ -51,7 +51,7 @@ or:
 ```
 In the final example, both comparisons are false, so the expression evaluates to `false`.
 
-```
+```yaml
 or:
   - stringEquals: 'test_string'
     value: 'Hello world!'
@@ -64,14 +64,14 @@ With the `not` operator, you can negate a single comparison. The expression eval
 **Examples:**
 The following example performs a string comparison. The comparison is false, so the expression evaluates to `true`.
 
-```
+```yaml
 not:
   - stringEquals: 'test_string'
     value: 'Hello world!'
 ```
 The following example also performs a string comparison. The comparison is true, so the expression evaluates to `false`.
 
-```
+```yaml
 not:
   - stringEquals: 'test_string'
     value: 'test_string'

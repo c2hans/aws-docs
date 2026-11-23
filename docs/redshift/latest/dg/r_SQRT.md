@@ -31,7 +31,7 @@ The expression must have an `INTEGER`, `DECIMAL`, or `FLOAT` data type, or a dat
 
 To return the square root of 16, use the following example.
 
-```
+```sql
 SELECT SQRT(16);
 
 +------+
@@ -43,7 +43,7 @@ SELECT SQRT(16);
 
 To return the square root of the string `16` using an implicit type conversion, use the following example.
 
-```
+```sql
 SELECT SQRT('16');
 
 +------+
@@ -55,7 +55,7 @@ SELECT SQRT('16');
 
 To return the square root of 16.4 after using the ROUND function, use the following example.
 
-```
+```sql
 SELECT SQRT(ROUND(16.4));
 
 +------+
@@ -67,7 +67,7 @@ SELECT SQRT(ROUND(16.4));
 
 To return the length of the radius when given the area of a circle, use the following example. It calculates the radius in inches, for instance, when given the area in square inches. The area in the sample is 20.
 
-```
+```sql
 SELECT SQRT(20/PI()) AS radius;
 
 +--------------------+
@@ -81,7 +81,7 @@ The following examples use the TICKIT sample database. For more information, see
 
 To return the square root for COMMISSION values from the SALES table, use the following example. The COMMISSION column is a `DECIMAL` column. This example shows how you can use the function in a query with more complex conditional logic.
 
-```
+```sql
 SELECT SQRT(commission)
 FROM sales WHERE salesid < 10 ORDER BY salesid;
 
@@ -102,7 +102,7 @@ FROM sales WHERE salesid < 10 ORDER BY salesid;
 
 To return the rounded square root for the same set of COMMISSION values, use the following example.
 
-```
+```sql
 SELECT ROUND(SQRT(commission))
 FROM sales WHERE salesid < 10 ORDER BY salesid;
 

@@ -16,19 +16,19 @@ The AWS Deep Learning AMIs is ready to use with Arm64 processor-based GPUs, and 
 
 Connect to your G5g instance and activate the base Conda environment with the following command:
 
-```
+```bash
 source activate base
 ```
 
 Your command prompt should indicate that you are working in the base Conda environment, which contains PyTorch, TorchVision, and other libraries.
 
-```
+```bash
 (base) $
 ```
 
 Verify the default tool paths of the PyTorch environment:
 
-```
+```bash
 (base) $ which python
 (base) $ which pip
 (base) $ which conda
@@ -46,7 +46,7 @@ Verify the default tool paths of the PyTorch environment:
 
 Run a sample MNIST training job:
 
-```
+```bash
 git clone https://github.com/pytorch/examples.git
 cd examples/mnist
 python main.py
@@ -54,7 +54,7 @@ python main.py
 
 Your output should look similar to the following:
 
-```
+```bash
 ...
 Train Epoch: 14 [56320/60000 (94%)]    Loss: 0.021424
 Train Epoch: 14 [56960/60000 (95%)]    Loss: 0.023695
@@ -70,7 +70,7 @@ Test set: Average loss: 0.0275, Accuracy: 9916/10000 (99%)
 
 Use the following commands to download a pre-trained densenet161 model and run inference using TorchServe:
 
-```
+```bash
 # Set up TorchServe
 cd $HOME
 git clone https://github.com/pytorch/serve.git
@@ -103,7 +103,7 @@ curl http://127.0.0.1:8080/predictions/densenet161 -T examples/image_classifier/
 
 Your output should look similar to the following:
 
-```
+```bash
 {
   "tiger_cat": 0.4693363308906555,
   "tabby": 0.4633873701095581,
@@ -115,14 +115,14 @@ Your output should look similar to the following:
 
 Use the following commands to unregister the densenet161 model and stop the server:
 
-```
+```bash
 curl -X DELETE http://localhost:8081/models/densenet161/1.0
 torchserve --stop
 ```
 
 Your output should look similar to the following:
 
-```
+```bash
 {
   "status": "Model \"densenet161\" unregistered"
 }

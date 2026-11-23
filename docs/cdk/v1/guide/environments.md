@@ -30,7 +30,7 @@ For production stacks, we recommend that you explicitly specify the environment 
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const envEU  = { account: '2383838383', region: 'eu-west-1' };
 const envUSA = { account: '8373873873', region: 'us-west-2' };
 
@@ -41,7 +41,7 @@ new MyFirstStack(app, 'first-stack-eu', { env: envEU });
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const envEU  = { account: '2383838383', region: 'eu-west-1' };
 const envUSA = { account: '8373873873', region: 'us-west-2' };
 
@@ -52,7 +52,7 @@ new MyFirstStack(app, 'first-stack-eu', { env: envEU });
 ------
 #### [ Python ]
 
-```
+```python
 env_EU = core.Environment(account="8373873873", region="eu-west-1")
 env_USA = core.Environment(account="2383838383", region="us-west-2")
 
@@ -63,7 +63,7 @@ MyFirstStack(app, "first-stack-eu", env=env_EU)
 ------
 #### [ Java ]
 
-```
+```java
 public class MyApp {
 
     // Helper method to build an environment
@@ -93,7 +93,7 @@ public class MyApp {
 ------
 #### [ C\# ]
 
-```
+```csharp
 Amazon.CDK.Environment makeEnv(string account, string region)
 {
     return new Amazon.CDK.Environment
@@ -128,7 +128,7 @@ Access environment variables via Node's `process` object.
 npm install @types/node
 ```
 
-```
+```javascript
 new MyDevStack(app, 'dev', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,
@@ -141,7 +141,7 @@ new MyDevStack(app, 'dev', {
 
 Access environment variables via Node's `process` object.
 
-```
+```javascript
 new MyDevStack(app, 'dev', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,
@@ -154,7 +154,7 @@ new MyDevStack(app, 'dev', {
 
 Use the `os` module's `environ` dictionary to access environment variables.
 
-```
+```python
 import os
 MyDevStack(app, "dev", env=core.Environment(
     account=os.environ["CDK_DEFAULT_ACCOUNT"],
@@ -166,7 +166,7 @@ MyDevStack(app, "dev", env=core.Environment(
 
 Use `System.getenv()` to get the value of an environment variable.
 
-```
+```java
 public class MyApp {
 
     // Helper method to build an environment
@@ -201,7 +201,7 @@ public class MyApp {
 
 Use `System.Environment.GetEnvironmentVariable()` to get the value of an environment variable.
 
-```
+```csharp
 Amazon.CDK.Environment makeEnv(string account=null, string region=null)
 {
     return new Amazon.CDK.Environment
@@ -225,7 +225,7 @@ You can set `env` however you like, using any valid expression. For example, you
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 new MyDevStack(app, 'dev', {
   env: {
     account: process.env.CDK_DEPLOY_ACCOUNT || process.env.CDK_DEFAULT_ACCOUNT,
@@ -236,7 +236,7 @@ new MyDevStack(app, 'dev', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 new MyDevStack(app, 'dev', {
   env: {
     account: process.env.CDK_DEPLOY_ACCOUNT || process.env.CDK_DEFAULT_ACCOUNT,
@@ -247,7 +247,7 @@ new MyDevStack(app, 'dev', {
 ------
 #### [ Python ]
 
-```
+```python
 MyDevStack(app, "dev", env=core.Environment(
     account=os.environ.get("CDK_DEPLOY_ACCOUNT", os.environ["CDK_DEFAULT_ACCOUNT"]),
     region=os.environ.get("CDK_DEPLOY_REGION", os.environ["CDK_DEFAULT_REGION"])
@@ -256,7 +256,7 @@ MyDevStack(app, "dev", env=core.Environment(
 ------
 #### [ Java ]
 
-```
+```java
 public class MyApp {
 
     // Helper method to build an environment
@@ -291,7 +291,7 @@ public class MyApp {
 ------
 #### [ C\# ]
 
-```
+```csharp
 Amazon.CDK.Environment makeEnv(string account=null, string region=null)
 {
     return new Amazon.CDK.Environment
@@ -315,7 +315,7 @@ With your stack's environment declared this way, you can now write a short scrip
 ------
 #### [ macOS/Linux ]
 
-```
+```bash
 #!/usr/bin/env bash
 if [[ $# -ge 2 ]]; then
     export CDK_DEPLOY_ACCOUNT=$1
@@ -335,7 +335,7 @@ Save the script as `cdk-deploy-to.sh`, then execute `chmod +x cdk-deploy-to.sh` 
 ------
 #### [ Windows ]
 
-```
+```bat
 @findstr /B /V @ %~dpnx0 > %~dpn0.ps1 && powershell -ExecutionPolicy Bypass %~dpn0.ps1 %*
 @exit /B %ERRORLEVEL%
 if ($args.length -ge 2) {
@@ -359,7 +359,7 @@ Then you can write additional scripts that call the "deploy-to" script to deploy
 ------
 #### [ macOS/Linux ]
 
-```
+```bash
 #!/usr/bin/env bash
 # cdk-deploy-to-test.sh
 ./cdk-deploy-to.sh 123457689 us-east-1 "$@"
@@ -368,7 +368,7 @@ Then you can write additional scripts that call the "deploy-to" script to deploy
 ------
 #### [ Windows ]
 
-```
+```bat
 @echo off
 rem cdk-deploy-to-test.bat
 cdk-deploy-to 135792469 us-east-1 %*
@@ -381,7 +381,7 @@ When deploying to multiple environments, consider whether you want to continue d
 ------
 #### [ macOS/Linux ]
 
-```
+```bash
 #!/usr/bin/env bash
 # cdk-deploy-to-prod.sh
 ./cdk-deploy-to.sh 135792468 us-west-1 "$@" || exit
@@ -391,7 +391,7 @@ When deploying to multiple environments, consider whether you want to continue d
 ------
 #### [ Windows ]
 
-```
+```bat
 @echo off
 rem cdk-deploy-to-prod.bat
 cdk-deploy-to 135792469 us-west-1 %* || exit /B

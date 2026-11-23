@@ -12,7 +12,7 @@ The following code examples show how to get started using Amazon SNS.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/TopicsAndQueues#code-examples).
 
-```
+```csharp
 using Amazon.SimpleNotificationService;
 using Amazon.SimpleNotificationService.Model;
 
@@ -49,7 +49,7 @@ public static class HelloSNS
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sns/hello_sns#code-examples).
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -91,7 +91,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the hello\_sns.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/sns/SNSClient.h>
 #include <aws/sns/model/ListTopicsRequest.h>
@@ -172,7 +172,7 @@ int main(int argc, char **argv) {
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/sns#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -227,7 +227,7 @@ func main() {
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sns#code-examples).
 
-```
+```java
 package com.example.sns;
 
 import software.amazon.awssdk.regions.Region;
@@ -268,7 +268,7 @@ public class HelloSNS {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Initialize an SNS client and and list topics in your account.
 
-```
+```javascript
 import { SNSClient, paginateListTopics } from "@aws-sdk/client-sns";
 
 export const helloSns = async () => {
@@ -304,7 +304,7 @@ export const helloSns = async () => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sns#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.sns.SnsClient
 import aws.sdk.kotlin.services.sns.model.ListTopicsRequest
 import aws.sdk.kotlin.services.sns.paginators.listTopicsPaginated
@@ -341,7 +341,7 @@ suspend fun listTopicsPag() {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sns/basics#code-examples).
 The Package.swift file.
 
-```
+```swift
 import PackageDescription
 
 let package = Package(
@@ -378,7 +378,7 @@ let package = Package(
 ```
 The main Swift program.
 
-```
+```swift
 import ArgumentParser
 import AWSClientRuntime
 import AWSSNS

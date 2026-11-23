@@ -20,7 +20,7 @@ To create an alarm based on a CloudWatch metric, call the CloudWatchClient’s `
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/PutMetricAlarmRequest.h>
@@ -29,7 +29,7 @@ To create an alarm based on a CloudWatch metric, call the CloudWatchClient’s `
 
  **Code**
 
-```
+```cpp
         Aws::CloudWatch::CloudWatchClient cw;
         Aws::CloudWatch::Model::PutMetricAlarmRequest request;
         request.SetAlarmName(alarm_name);
@@ -73,7 +73,7 @@ To list the CloudWatch alarms that you have created, call the CloudWatchClient�
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/DescribeAlarmsRequest.h>
@@ -84,7 +84,7 @@ To list the CloudWatch alarms that you have created, call the CloudWatchClient�
 
  **Code**
 
-```
+```cpp
         Aws::CloudWatch::CloudWatchClient cw;
         Aws::CloudWatch::Model::DescribeAlarmsRequest request;
         request.SetMaxRecords(1);
@@ -147,7 +147,7 @@ To delete CloudWatch alarms, call the CloudWatchClient’s `DeleteAlarms` functi
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/DeleteAlarmsRequest.h>
@@ -156,7 +156,7 @@ To delete CloudWatch alarms, call the CloudWatchClient’s `DeleteAlarms` functi
 
  **Code**
 
-```
+```cpp
         Aws::CloudWatch::CloudWatchClient cw;
         Aws::CloudWatch::Model::DeleteAlarmsRequest request;
         request.AddAlarmNames(alarm_name);

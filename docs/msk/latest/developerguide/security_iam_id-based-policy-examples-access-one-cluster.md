@@ -11,7 +11,7 @@ In this example, you want to grant an IAM user in your Amazon Web Services accou
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

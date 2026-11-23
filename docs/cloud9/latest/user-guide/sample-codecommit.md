@@ -63,7 +63,7 @@ Skip ahead to [Step 2: Create a Repository in AWS CodeCommit](#sample-codecommit
 
 Run the IAM `attach-group-policy` command, specifying the group's name and the Amazon Resource Name (ARN) of the AWS managed policy that describes the required access permissions. The syntax is as follows.
 
-```
+```sh
 aws iam attach-group-policy --group-name MyGroup --policy-arn POLICY_ARN
 ```
 
@@ -106,7 +106,7 @@ Skip ahead to [Step 3: Connect Your Environment to the Remote Repository](#sampl
 
 Run the AWS CodeCommit `create-repository` command. Specify the repository's name, an optional description, and the AWS Region to create the repository in.
 
-```
+```sh
 aws codecommit create-repository --repository-name MyDemoCloud9Repo --repository-description "This is a demonstration repository for the AWS Cloud9 sample." --region us-east-2
 ```
 
@@ -136,7 +136,7 @@ In this step, you use the AWS Cloud9 IDE to clone the remote repository in CodeC
 
 To clone the repository, run the **`git clone`** command. Replace `CLONE_URL` with the repository's clone URL.
 
-```
+```sh
 git clone CLONE_URL
 ```
 
@@ -159,7 +159,7 @@ If the cloned repository already has files in it, you're done and can skip the r
 
 1. Enter the following content into the file, and then choose **File**, **Save** to save the file as `bird.txt` in the `MyDemoCloud9Repo` directory in your AWS Cloud9 environment.
 
-   ```
+   ```text
    bird.txt
    --------
    Birds are a group of endothermic vertebrates, characterized by feathers,
@@ -171,7 +171,7 @@ To confirm that you're saving this file in the correct directory, in the **Save 
 
 1. Create two more files, named `insect.txt` and `reptile.txt`, with the following content. Save the files in the same `MyDemoCloud9Repo` directory.
 
-   ```
+   ```text
    insect.txt
    ----------
    Insects are a class of invertebrates within the arthropod phylum that
@@ -179,7 +179,7 @@ To confirm that you're saving this file in the correct directory, in the **Save 
    three pairs of jointed legs, compound eyes, and one pair of antennae.
    ```
 
-   ```
+   ```text
    reptile.txt
    -----------
    Reptiles are tetrapod (four-limbed vertebrate) animals in the class
@@ -189,13 +189,13 @@ To confirm that you're saving this file in the correct directory, in the **Save 
 
 1. In the terminal, run the **`cd`** command to switch to the `MyDemoCloud9Repo` directory.
 
-   ```
+   ```sh
    cd MyDemoCloud9Repo
    ```
 
 1. Confirm that the files were successfully saved in the `MyDemoCloud9Repo` directory by running the **`git status`** command. All three files will be listed as untracked files.
 
-   ```
+   ```text
    Untracked files:
      (use "git add <file>..." to include in what will be committed)
 
@@ -206,13 +206,13 @@ To confirm that you're saving this file in the correct directory, in the **Save 
 
 1. Add the files to the Git staging area by running the **`git add`** command.
 
-   ```
+   ```sh
    git add --all
    ```
 
 1. Confirm that the files were successfully added to the Git staging area by running the **`git status`** command again. All three files are now listed as changes to commit.
 
-   ```
+   ```text
    Changes to be committed:
      (use "git rm --cached <file>..." to unstage)
 
@@ -223,13 +223,13 @@ To confirm that you're saving this file in the correct directory, in the **Save 
 
 1. Commit the staged files by running the **`git commit`** command.
 
-   ```
+   ```sh
    git commit -m "Added information about birds, insects, and reptiles."
    ```
 
 1. Push the commit to your remote repository in CodeCommit by running the **`git push`** command.
 
-   ```
+   ```sh
    git push -u origin master
    ```
 

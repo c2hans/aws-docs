@@ -40,7 +40,7 @@ You can update recommenders with the Amazon Personalize console, AWS Command Lin
 
 To update recommender with the AWS CLI, use the `update-recommender` command. Provide the Amazon Resource Name (ARN) for the recommender and updated configuration. The following code shows how to update the columns a recommender uses for training.
 
-```
+```cmd
 aws personalize update-recommender \
 --dataset-group-arn {{dataset group ARN}} \
 --recommender-config "{\"trainingDataConfig\": {\"excludedDatasetColumns\": { \"{{datasetType}}\" : [ \"{{column1Name}}\", \"{{column2Name}}\"]}}}"
@@ -58,7 +58,7 @@ To update recommender with the AWS, use the [UpdateRecommender](API_UpdateRecomm
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')
@@ -78,7 +78,7 @@ update_recommender_response = personalize.update_recommender(
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 // Get service clients and commands using ES6 syntax.
 import { UpdateRecommenderCommand, PersonalizeClient } from
   "@aws-sdk/client-personalize";

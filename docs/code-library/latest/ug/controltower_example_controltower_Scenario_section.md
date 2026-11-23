@@ -18,7 +18,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 Run an interactive scenario demonstrating AWS Control Tower features.
 
-```
+```csharp
 using Amazon.ControlCatalog;
 using Amazon.ControlTower;
 using Amazon.ControlTower.Model;
@@ -309,7 +309,7 @@ public class ControlTowerBasics
 ```
 Wrapper methods that are called by the scenario to manage Aurora actions.
 
-```
+```csharp
 using Amazon.ControlCatalog;
 using Amazon.ControlCatalog.Model;
 using Amazon.ControlTower;
@@ -806,7 +806,7 @@ public class ControlTowerWrapper
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 Run an interactive scenario demonstrating AWS Control Tower features.
 
-```
+```java
 public class ControlTowerScenario {
     public static final String DASHES = new String(new char[80]).replace("\0", "-");
     private static final Scanner scanner = new Scanner(in);
@@ -2102,7 +2102,7 @@ public class ControlTowerActions {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/controltower#code-examples).
 Run an interactive scenario demonstrating AWS Control Tower features.
 
-```
+```python
 class ControlTowerScenario:
     IDENTITY_CENTER_BASELINE = "baseline/LN25R72TTG6IGPTQ"
     stack_name = ""

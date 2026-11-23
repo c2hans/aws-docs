@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/prerequisites-i
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -55,7 +55,7 @@ The following inline policies contain specific permissions required to view, upd
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -81,7 +81,7 @@ The following inline policies contain specific permissions required to view, upd
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -109,7 +109,7 @@ The following inline policies contain specific permissions required to view, upd
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

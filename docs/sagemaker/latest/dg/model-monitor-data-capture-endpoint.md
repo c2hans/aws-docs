@@ -34,7 +34,7 @@ Configure the data you want to capture with the [DataCaptureConfig](https://docs
 
 You can optionally specify how SageMaker AI should encode captured data by passing key-value pair arguments to the `CaptureContentTypeHeader` dictionary.
 
-```
+```python
 # Create an endpoint config name.
 endpoint_config_name = {{'<endpoint-config-name>'}}
 
@@ -92,7 +92,7 @@ Optionally provide arguments for the following parameters:
 + `SamplingPercentage`: an integer value that corresponds to percentage of data to sample. If you do not provide a sampling percentage, SageMaker AI will sample a default of 20 (20%) of your data.
 + `DestinationS3Uri`: the Amazon S3 URI SageMaker AI will use to store captured data. If you do not provide one, SageMaker AI will store captured data in `"s3://<default-session-bucket>/ model-monitor/data-capture"`.
 
-```
+```python
 from sagemaker.model_monitor import DataCaptureConfig
 
 # Set to True to enable data capture
@@ -134,7 +134,7 @@ Once you have your model and endpoint configuration, use the [`CreateEndpoint`](
 
 The following creates an endpoint using the endpoint configuration specified in the request. Amazon SageMaker AI uses the endpoint to provision resources and deploy models.
 
-```
+```python
 # The name of the endpoint. The name must be unique within an AWS Region in your AWS account.
 endpoint_name = {{'<endpoint-name>'}}
 
@@ -153,7 +153,7 @@ For more information, see the [`CreateEndpoint`](https://docs.aws.amazon.com/sag
 
 Define a name for your endpoint. This step is optional. If you do not provide one, SageMaker AI will create a unique name for you:
 
-```
+```python
 from datetime import datetime
 
 endpoint_name = f"DEMO-{datetime.utcnow():%Y-%m-%d-%H%M}"
@@ -162,7 +162,7 @@ print("EndpointName =", endpoint_name)
 
 Deploy your model to a real-time, HTTPS endpoint with the Model object's built-in `deploy()` method. Provide the name of the Amazon EC2 instance type to deploy this model to in the `instance_type` field along with the initial number of instances to run the endpoint on for the `initial_instance_count` field:
 
-```
+```python
 initial_instance_count={{<integer>}}
 # initial_instance_count=1 # Example
 
@@ -187,7 +187,7 @@ model.deploy(
 
 Create an `Endpoint` object from the SageMaker Python SDK. You will use the `Endpoint` object to invoke your endpoint in a future step. Provide the name of your endpoint (defined earlier as `endpoint_name`).
 
-```
+```python
 from sagemaker.core.resources import Endpoint
 
 endpoint = Endpoint(endpoint_name=endpoint_name)
@@ -203,7 +203,7 @@ The first few lines of the with statement first opens the validation set CSV fil
 
 Suppose the model returns a probability. Probabilities range between integer values of 0 and 1.0. If the probability returned by the model is greater than 80% (0.8) we assign the prediction an integer value label of 1. Otherwise, we assign the prediction an integer value label of 0.
 
-```
+```python
 from time import sleep
 
 validate_dataset = "validation_with_predictions.csv"
@@ -236,13 +236,13 @@ View captured data by listing the data capture files stored in Amazon S3. The fo
 
 Expect to see different files from different time periods, organized based on the hour when the invocation occurred. Run the following to print out the contents of a single capture file:
 
-```
+```python
 print("\n".join(capture_file[-3:-1]))
 ```
 
 This will return a SageMaker AI specific JSON-line formatted file. The following is a response sample taken from a real-time endpoint that we invoked using `csv/text` data:
 
-```
+```python
 {"captureData":{"endpointInput":{"observedContentType":"text/csv","mode":"INPUT",
 "data":"69,0,153.7,109,194.0,105,256.1,114,14.1,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0\n",
 "encoding":"CSV"},"endpointOutput":{"observedContentType":"text/csv; charset=utf-8","mode":"OUTPUT","data":"0.0254181120544672","encoding":"CSV"}},
@@ -255,14 +255,14 @@ This will return a SageMaker AI specific JSON-line formatted file. The following
 
 In the proceeding example, the `capture_file` object is a list type. Index the first element of the list to view a single inference request.
 
-```
+```python
 # The capture_file object is a list. Index the first element to view a single inference request
 print(json.dumps(json.loads(capture_file[0]), indent=2))
 ```
 
 This will return a response similar to the following. The values returned will differ based on your endpoint configuration, SageMaker AI model, and captured data:
 
-```
+```python
 {
   "captureData": {
     "endpointInput": {

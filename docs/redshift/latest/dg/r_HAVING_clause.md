@@ -36,7 +36,7 @@ The condition itself takes the same form as any WHERE clause condition.
 
 The following query calculates total ticket sales for all events by name, then eliminates events where the total sales were less than $800,000. The HAVING condition is applied to the results of the aggregate function in the select list: `sum(pricepaid)`.
 
-```
+```sql
 select eventname, sum(pricepaid)
 from sales join event on sales.eventid = event.eventid
 group by 1
@@ -55,7 +55,7 @@ Legally Blonde   |  804583.00
 
 The following query calculates a similar result set. In this case, however, the HAVING condition is applied to an aggregate that isn't specified in the select list: `sum(qtysold)`. Events that did not sell more than 2,000 tickets are eliminated from the final result.
 
-```
+```sql
 select eventname, sum(pricepaid)
 from sales join event on sales.eventid = event.eventid
 group by 1
@@ -76,7 +76,7 @@ Spamalot         |  714307.00
 
 The following query calculates total ticket sales for all events by name, then eliminates events where the total sales were less than $800,000. The HAVING condition is applied to the results of the aggregate function in the select list using the alias `pp` for `sum(pricepaid)`.
 
-```
+```sql
 select eventname, sum(pricepaid) as pp
 from sales join event on sales.eventid = event.eventid
 group by 1

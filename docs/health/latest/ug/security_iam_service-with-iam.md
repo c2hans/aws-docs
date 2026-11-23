@@ -30,7 +30,7 @@ Policy statements must include an `Action` or `NotAction` element. AWS Health de
 
 To specify multiple actions in a single statement, separate them with commas as follows.
 
-```
+```json
 "Action": [
       "health:action1",
       "health:action2"
@@ -63,13 +63,13 @@ arn:${Partition}:health:*::event/{{service}}/{{event-type-code}}/{{event-ID}}
 
 For example, to specify the `EC2_INSTANCE_RETIREMENT_SCHEDULED_ABC123-DEF456` event in your statement, use the following ARN.
 
-```
+```json
 "Resource": "arn:aws:health:*::event/EC2/EC2_INSTANCE_RETIREMENT_SCHEDULED/EC2_INSTANCE_RETIREMENT_SCHEDULED_ABC123-DEF456"
 ```
 
 To specify all AWS Health events for Amazon EC2 that belong to a specific account, use the wildcard (\*).
 
-```
+```json
 "Resource": "arn:aws:health:*::event/EC2/*/*"
 ```
 
@@ -77,7 +77,7 @@ For more information about the format of ARNs, see [Amazon Resource Names (ARNs)
 
 Some AWS Health actions can't be performed on a specific resource. In those cases, you must use the wildcard (\*).
 
-```
+```json
 "Resource": "*"
 ```
 
@@ -85,7 +85,7 @@ AWS Health API operations can involve multiple resources. For example, the [Desc
 
 To specify multiple resources in a single statement, separate the ARNs with commas.
 
-```
+```json
 "Resource": [
       "resource1",
       "resource2"

@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 
 ![Diagram showing the use of Amazon API Gateway](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/api-gateway.png)
 
+*Using Amazon API Gateway*
+
  DynamoDB also features the [Amazon DynamoDB Accelerator (DAX)](https://aws.amazon.com/dynamodb/dax/?ref=wellarchitected) is a fully managed, highly available in-memory cache for Amazon DynamoDB that delivers up to a 10X performance improvement from milliseconds to microseconds, even at millions of requests per second.
 
  DynamoDB is a powerful serverless and regional NoSQL database, but according to your workload needs, any database can be used in this model of cell router architecture.

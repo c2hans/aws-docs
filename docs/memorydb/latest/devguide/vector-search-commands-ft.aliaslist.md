@@ -8,7 +8,7 @@ List the index aliases.
 
 **Syntax**
 
-```
+```text
 FT._ALIASLIST
 ```
 

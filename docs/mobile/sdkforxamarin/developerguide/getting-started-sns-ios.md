@@ -105,7 +105,7 @@ Follow Step 4 of the instructions in [Setting Up the AWS Mobile SDK for .NET and
 ## Create an SNS Client
 <a name="create-an-sns-client"></a>
 
-```
+```csharp
 var snsClient = new AmazonSimpleNotificationServiceClient(credentials, region);
 ```
 
@@ -114,7 +114,7 @@ var snsClient = new AmazonSimpleNotificationServiceClient(credentials, region);
 
 To register an application, call RegisterForRemoteNotifications on your UIApplication object, as shown below. Place the following code in AppDelegate.cs, inserting your platform application ARN where prompted below:
 
-```
+```csharp
 public override bool FinishedLaunching(UIApplication app, NSDictionary options) {
 // do something
 var pushSettings = UIUserNotificationSettings.GetSettingsForTypes (

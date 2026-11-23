@@ -151,7 +151,7 @@ You must specify the following using the [BoxConfiguration](https://docs.aws.ama
 **Box enterprise ID**—Provide your Box Enterprise ID. You can find the enterprise ID in the Box Developer Console settings or when you configure an app in Box.
 + **Secret Amazon Resource Name (ARN)**—Provide the Amazon Resource Name (ARN) of an Secrets Manager secret that contains the authentication credentials for your Box account. The secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "clientID": "{{client-id}}",
       "clientSecret": "{{client-secret}}",

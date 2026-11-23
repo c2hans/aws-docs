@@ -49,7 +49,7 @@ Before you create your OpenSearch Ingestion pipeline, perform the following step
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -81,7 +81,7 @@ Before you create your OpenSearch Ingestion pipeline, perform the following step
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -112,7 +112,7 @@ After you have your Amazon RDS pipeline prerequisites set up, [configure the pip
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -262,7 +262,7 @@ After you have your Amazon RDS pipeline prerequisites set up, [configure the pip
 
 Configure an OpenSearch Ingestion pipeline similar to the following. The example pipeline specifies an Amazon RDS instance as the source.
 
-```
+```YAML
 version: "2"
 rds-mysql-pipeline:
   source:

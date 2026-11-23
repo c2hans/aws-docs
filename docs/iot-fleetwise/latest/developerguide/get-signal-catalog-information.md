@@ -12,7 +12,7 @@ To retrieve information about a signal catalog, run the following command.
 
 Replace {{signal-catalog-name}} with the name of the signal catalog that you want to retrieve.
 
-```
+```bash
 aws iotfleetwise get-signal-catalog --name {{signal-catalog-name}}
 ```
 
@@ -23,7 +23,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

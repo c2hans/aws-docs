@@ -68,7 +68,7 @@ You can use these options to specify default roles explicitly rather than using 
 
 The following example demonstrates the contents of a `config` file for the AWS CLI the specifies custom roles for Amazon EMR. With this configuration file, when the `--use-default-roles` option is specified, the cluster is created using the {{MyCustomServiceRoleForEMR}} and {{MyCustomServiceRoleForClusterEC2Instances}}. By default, the `config` file specifies the default `service_role` as `AmazonElasticMapReduceRole` and the default `instance_profile` as `EMR_EC2_DefaultRole`.
 
-```
+```bash
 [default]
 output = json
 region = us-west-1

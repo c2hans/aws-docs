@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 
 ![Scenario diagram covering user and audit consent for data storage outside the country](https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hybrid-cloud-services-lens/images/scenario-A.jpg)
 
+*Scenario A*
+
  The use case diagram depicts the following:
 +  Organization A in Country B seeks consent from Individuals X (the data subjects).
 +  Validation checks the consent and verifies compliance.

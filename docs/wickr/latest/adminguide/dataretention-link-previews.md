@@ -8,7 +8,7 @@ This guide documents the new AWS Wickr administration console, released on March
 
 When a user shares a link and has "Link Previews" enabled, Wickr generates an **edit** message with the preview content.
 
-```
+```json
 {
   "edit": {
     "originalmessageid": "11457fa08da211ea881baffab0b42745",

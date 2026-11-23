@@ -108,7 +108,7 @@ Retrieves information about the communication requirements and options that are 
 #### ApplicationResponse schema
 <a name="apps-application-id-response-body-applicationresponse-example"></a>
 
-```
+```json
 {
   "Name": "string",
   "Id": "string",
@@ -122,7 +122,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

@@ -50,7 +50,7 @@ AWS Proton does not take in any customer-specified or externally-specified encry
 
 AWS Proton adds the following encryption context.
 
-```
+```json
 {
   "aws:proton:template": "<proton-template-arn>",
   "aws:proton:resource": "<proton-resource-arn>"
@@ -65,7 +65,7 @@ The following examples show AWS Proton encryption context use.
 
 Developer creating a service instance.
 
-```
+```json
 {
   "aws:proton:template": "arn:aws:proton:region_id:123456789012:service-template/my-template",
   "aws:proton:resource": "arn:aws:proton:region_id:123456789012:service/my-service/service-instance/my-service-instance"
@@ -74,7 +74,7 @@ Developer creating a service instance.
 
 An administrator creating a template.
 
-```
+```json
 {
   "aws:proton:template": "arn:aws:proton:region_id:123456789012:service-template/my-template",
   "aws:proton:resource": "arn:aws:proton:region_id:123456789012:service-template/my-template"

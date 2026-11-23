@@ -10,9 +10,9 @@ The information about the suggested answer for the question.
 <a name="API_EvaluationSuggestedAnswer_Contents"></a>
 
  ** AnalysisType **   <a name="connect-Type-EvaluationSuggestedAnswer-AnalysisType"></a>
-Type of analysis used to provide suggested answer.
+Type of analysis used to provide suggested answer. Valid values: `CONTACT_LENS_DATA` \| `GEN_AI` \| `CONDITION`.
 Type: String
-Valid Values: `CONTACT_LENS_DATA | GEN_AI`
+Valid Values: `CONTACT_LENS_DATA | GEN_AI | CONDITION`
 Required: Yes
 
  ** Status **   <a name="connect-Type-EvaluationSuggestedAnswer-Status"></a>

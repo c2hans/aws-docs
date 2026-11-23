@@ -13,7 +13,7 @@ If your node is an Amazon EC2 instance, you must update the IAM instance profile
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

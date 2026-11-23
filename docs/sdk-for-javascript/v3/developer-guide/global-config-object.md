@@ -22,7 +22,7 @@ Each service that you use in the SDK for JavaScript is accessed through a servic
 
 For example, if you need to access Amazon EC2 objects in multiple AWS Regions, create an Amazon EC2 service object for each Region and then set the Region configuration of each service object accordingly.
 
-```
+```javascript
 var ec2_regionA = new EC2({region: 'ap-southeast-2', maxAttempts: 15});
 var ec2_regionB = new EC2({region: 'us-west-2', maxAttempts: 15});
 ```

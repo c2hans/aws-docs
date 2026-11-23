@@ -88,7 +88,7 @@ Deletes a routing control.
 #### DescribeRoutingControlResponse schema
 <a name="routingcontrol-routingcontrolarn-response-body-describeroutingcontrolresponse-example"></a>
 
-```
+```json
 {
   "RoutingControl": {
     "Status": enum,
@@ -103,7 +103,7 @@ Deletes a routing control.
 #### DeleteRoutingControlResponse schema
 <a name="routingcontrol-routingcontrolarn-response-body-deleteroutingcontrolresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -111,7 +111,7 @@ Deletes a routing control.
 #### ValidationException schema
 <a name="routingcontrol-routingcontrolarn-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -120,7 +120,7 @@ Deletes a routing control.
 #### AccessDeniedException schema
 <a name="routingcontrol-routingcontrolarn-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -129,7 +129,7 @@ Deletes a routing control.
 #### ResourceNotFoundException schema
 <a name="routingcontrol-routingcontrolarn-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -138,7 +138,7 @@ Deletes a routing control.
 #### ConflictException schema
 <a name="routingcontrol-routingcontrolarn-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -147,7 +147,7 @@ Deletes a routing control.
 #### ThrottlingException schema
 <a name="routingcontrol-routingcontrolarn-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -156,7 +156,7 @@ Deletes a routing control.
 #### InternalServerException schema
 <a name="routingcontrol-routingcontrolarn-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

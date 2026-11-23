@@ -12,7 +12,7 @@ This lets you set an upper bound on the number of concurrent requests to a given
 
 The following example shows how to set `maxSockets` for all service objects you create. This example allows up to 25 concurrent connections to each service endpoint.
 
-```
+```javascript
 var AWS = require('aws-sdk');
 var https = require('https');
 var agent = new https.Agent({
@@ -28,7 +28,7 @@ AWS.config.update({
 
 The same can be done per service.
 
-```
+```javascript
 var AWS = require('aws-sdk');
 var https = require('https');
 var agent = new https.Agent({

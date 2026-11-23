@@ -31,7 +31,7 @@ For more information, see [Change the route table for a subnet](https://docs.aws
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified association between a route table and a subnet.**
 
-```
+```powershell
 Unregister-EC2RouteTable -AssociationId rtbassoc-1a2b3c4d
 ```
 +  For API details, see [DisassociateRouteTable](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -39,7 +39,7 @@ Unregister-EC2RouteTable -AssociationId rtbassoc-1a2b3c4d
 **Tools for PowerShell V5**
 **Example 1: This example removes the specified association between a route table and a subnet.**
 
-```
+```powershell
 Unregister-EC2RouteTable -AssociationId rtbassoc-1a2b3c4d
 ```
 +  For API details, see [DisassociateRouteTable](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

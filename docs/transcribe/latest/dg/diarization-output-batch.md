@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/diarization-output-
 
 Here's an output example for a batch transcription with diarization enabled.
 
-```
+```json
 {
     "jobName": "my-first-transcription-job",
     "accountId": "111122223333",

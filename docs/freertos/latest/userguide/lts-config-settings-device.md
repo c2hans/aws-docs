@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/lts-config-set
 
 Build, flash, and test settings are made in the `configs/userdata.json` file. The following JSON example shows how you can configure IDT for FreeRTOS to test multiple devices:
 
-```
+```json
 {
     "sourcePath": "</path/to/freertos>",
     "retainModifiedSourceDirectories": true | false,

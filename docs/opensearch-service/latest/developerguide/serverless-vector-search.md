@@ -48,7 +48,7 @@ Your user or role must have an attached [identity-based policy](security-iam-ser
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -95,7 +95,7 @@ An *index* is a collection of documents with a common data schema that provides 
 
 1. To create an index for your new collection, send the following request in the [Dev Tools](https://opensearch.org/docs/latest/dashboards/dev-tools/index-dev/) console. By default, this creates an index with Euclidean distance and 32x compression.
 
-   ```
+   ```json
    PUT housing-index
    {
      "settings": {
@@ -124,7 +124,7 @@ An *index* is a collection of documents with a common data schema that provides 
 
 1. To use a different compression level, set `compression_level` in the field mapping. The following example creates an index with `compression_level` set to 1x.
 
-   ```
+   ```json
    PUT housing-index-1x
    {
      "settings": {
@@ -156,7 +156,7 @@ An *index* is a collection of documents with a common data schema that provides 
 
 1. To index documents into `housing-index`, you can use a system-generated ID (POST) or a user-provided ID (PUT).
 
-   ```
+   ```json
    # System-generated document ID
    POST housing-index/_doc
    {
@@ -178,7 +178,7 @@ An *index* is a collection of documents with a common data schema that provides 
 
 1. To search for properties similar to the ones in your index, send the following query. By default, the search response excludes the original vector from `_source` to reduce latency and payload size.
 
-   ```
+   ```json
    GET housing-index/_search
    {
      "size": 5,
@@ -195,7 +195,7 @@ An *index* is a collection of documents with a common data schema that provides 
 
    The response excludes the `housing-vector` field from `_source`:
 
-   ```
+   ```json
    {
      "took": 10,
      "timed_out": false,
@@ -232,7 +232,7 @@ An *index* is a collection of documents with a common data schema that provides 
 
 To override the default behavior, set `_source` to `true` in the search request. You can also use the `includes`/`excludes` options of `_source` to retrieve specific fields.
 
-```
+```json
 GET housing-index/_search
 {
   "size": 5,
@@ -250,7 +250,7 @@ GET housing-index/_search
 
 The response now includes the `housing-vector` field in `_source`:
 
-```
+```json
 {
   "took": 10,
   "timed_out": false,
@@ -305,7 +305,7 @@ You can use filters to refine your semantic search results. To create an index a
 
 1. To create a single index for your collection, send the following request in the [Dev Tools](https://opensearch.org/docs/latest/dashboards/dev-tools/index-dev/) console:
 
-   ```
+   ```json
    PUT housing-index-filtered
    {
      "settings": {
@@ -337,7 +337,7 @@ You can use filters to refine your semantic search results. To create an index a
 
 1. To index a single document into *housing-index-filtered*, send the following request:
 
-   ```
+   ```json
    POST housing-index-filtered/_doc
    {
      "housing-vector": [
@@ -353,7 +353,7 @@ You can use filters to refine your semantic search results. To create an index a
 
 1. To search your data for an apartment in Seattle under a given price and within a given distance of a geographical point, send the following request:
 
-   ```
+   ```json
    GET housing-index-filtered/_search
    {
      "size": 5,
@@ -424,7 +424,7 @@ The following examples apply to Classic vector collections, which use the `nmsli
 
 1. To create an index for your Classic collection, send the following request in the [Dev Tools](https://opensearch.org/docs/latest/dashboards/dev-tools/index-dev/) console. By default, this creates an index with the `nmslib` engine and Euclidean distance.
 
-   ```
+   ```json
    PUT housing-index
    {
       "settings": {
@@ -452,7 +452,7 @@ The following examples apply to Classic vector collections, which use the `nmsli
 
 1. To index a single document into *housing-index*, send the following request:
 
-   ```
+   ```json
    POST housing-index/_doc
    {
      "housing-vector": [
@@ -468,7 +468,7 @@ The following examples apply to Classic vector collections, which use the `nmsli
 
 1. To search for properties similar to the ones in your index, send the following query:
 
-   ```
+   ```json
    GET housing-index/_search
    {
        "size": 5,
@@ -496,7 +496,7 @@ To create an index and perform a filtered search, use the following examples. Fo
 
 1. To create a single index for your collection, send the following request in the [Dev Tools](https://opensearch.org/docs/latest/dashboards/dev-tools/index-dev/) console:
 
-   ```
+   ```json
    PUT housing-index-filtered
    {
      "settings": {
@@ -528,7 +528,7 @@ To create an index and perform a filtered search, use the following examples. Fo
 
 1. To index a single document into *housing-index-filtered*, send the following request:
 
-   ```
+   ```json
    POST housing-index-filtered/_doc
    {
      "housing-vector": [
@@ -544,7 +544,7 @@ To create an index and perform a filtered search, use the following examples. Fo
 
 1. To search your data for an apartment in Seattle under a given price and within a given distance of a geographical point, send the following request:
 
-   ```
+   ```json
    GET housing-index-filtered/_search
    {
      "size": 5,

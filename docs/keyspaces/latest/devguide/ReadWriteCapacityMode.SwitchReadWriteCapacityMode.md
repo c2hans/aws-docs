@@ -39,7 +39,7 @@ The following waiting periods apply when you switch capacity modes:
 
    A table configured with on-demand capacity mode returns the following.
 
-   ```
+   ```JSON
    {
       "capacity_mode":{
          "last_update_to_pay_per_request_timestamp":"1727952499092",

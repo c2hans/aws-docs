@@ -48,7 +48,7 @@ Alternatively, you can choose to remove an instance group permanently. For more 
 
 The following is an example of an `UpdateCluster` JSON object. Consider the case where your instance group currently has 2 running instances. If you set the **InstanceCount** field to 1, as shown in the example, then HyperPod randomly selects one of the instances and terminates it.
 
-```
+```json
 {
   "ClusterName": {{"name-of-cluster-to-update"}},
   "InstanceGroups": [
@@ -100,7 +100,7 @@ The removal process cannot be undone.
 
 The following is an example of an `UpdateCluster` JSON object. Consider the case where a cluster currently has 3 instance groups, a *training*, a *prototype-training*, and an *inference-serving* group. You want to delete the *prototype-training* group.
 
-```
+```json
 {
   "ClusterName": {{"name-of-cluster-to-update"}},
   "InstanceGroups": [

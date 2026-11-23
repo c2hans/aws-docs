@@ -103,7 +103,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of DescribeFileSystemAssociations.
 
-```
+```json
 __Sample Request__
 {
   "FileSystemAssociationARNList": ["arn:aws:storagegateway:us-east-1:111122223333:fs-association/fsa-1122AABBCCDDEEFFG"]
@@ -115,7 +115,7 @@ __Sample Request__
 
 This example illustrates one usage of DescribeFileSystemAssociations.
 
-```
+```json
 __Sample Response__
 {
   "FileSystemAssociationInfoList":

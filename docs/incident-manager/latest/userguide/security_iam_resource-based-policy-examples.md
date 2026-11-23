@@ -24,7 +24,7 @@ The `Condition` block uses the `StringEquals` conditions and the `aws:PrincipalO
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -70,7 +70,7 @@ The following example grants permission to the principal with the ARN `arn:aws:i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

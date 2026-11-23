@@ -105,7 +105,7 @@ SELECT @temp_celsius AS celsius, humidity FROM 'device/data'
 
 Action configuration:
 
-```
+```json
 {
   "s3": {
     "roleArn": "arn:aws:iam::123456789012:role/testRuleRole",

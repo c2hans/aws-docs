@@ -13,7 +13,7 @@ Regions enable you to access AWS services that physically reside in a specific g
 
 To see if a particular AWS service is available in a region, use the `isServiceSupported` method on the region that you’d like to use.
 
-```
+```java
 Region.getRegion(Regions.US_WEST_2)
     .isServiceSupported(AmazonDynamoDB.ENDPOINT_PREFIX);
 ```
@@ -27,7 +27,7 @@ Beginning with version 1.4 of the AWS SDK for Java, you can specify a region nam
 
 To explicitly set a region, we recommend that you use the [Regions](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/regions/Regions.html) enum. This is an enumeration of all publicly available regions. To create a client with a region from the enum, use the following code.
 
-```
+```java
 AmazonEC2 ec2 = AmazonEC2ClientBuilder.standard()
                     .withRegion(Regions.US_WEST_2)
                     .build();
@@ -35,7 +35,7 @@ AmazonEC2 ec2 = AmazonEC2ClientBuilder.standard()
 
 If the region you are attempting to use isn’t in the `Regions` enum, you can set the region using a *string* that represents the name of the region.
 
-```
+```java
 AmazonEC2 ec2 = AmazonEC2ClientBuilder.standard()
                     .withRegion("{region_api_default}")
                     .build();
@@ -51,7 +51,7 @@ Each AWS client can be configured to use a *specific endpoint* within a region b
 
 For example, to configure the Amazon S3 client to use the Europe (Ireland) Region, use the following code.
 
-```
+```java
 AmazonS3 s3 = AmazonS3ClientBuilder.standard()
      .withEndpointConfiguration(new EndpointConfiguration(
           "https://s3.eu-west-1.amazonaws.com",
@@ -74,13 +74,13 @@ When running on Amazon EC2 or Lambda, you might want to configure clients to use
 
 To use the default credential/region provider chain to determine the region from the environment, use the client builder’s `defaultClient` method.
 
-```
+```java
 AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 ```
 
 This is the same as using `standard` followed by `build`.
 
-```
+```java
 AmazonEC2 ec2 = AmazonEC2ClientBuilder.standard()
                     .build();
 ```

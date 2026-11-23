@@ -16,7 +16,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-httpapi-oauth2authorizer-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationScopes](#sam-httpapi-oauth2authorizer-authorizationscopes): {{List}}
   [IdentitySource](#sam-httpapi-oauth2authorizer-identitysource): {{String}}
   [JwtConfiguration](#sam-httpapi-oauth2authorizer-jwtconfiguration): {{Map}}
@@ -56,7 +56,7 @@ OAuth 2.0 authorizer Example
 #### YAML
 <a name="sam-property-httpapi-oauth2authorizer--examples--oauth-2.0-authorizer--yaml"></a>
 
-```
+```yaml
 Auth:
   Authorizers:
     OAuth2Authorizer:

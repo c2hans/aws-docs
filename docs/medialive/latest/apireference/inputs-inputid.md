@@ -94,7 +94,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### PUT schema
 <a name="inputs-inputid-request-body-put-example"></a>
 
-```
+```json
 {
   "destinations": [
     {
@@ -197,7 +197,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### Empty schema
 <a name="inputs-inputid-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -205,7 +205,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### Input schema
 <a name="inputs-inputid-response-body-input-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "attachedChannels": [
@@ -260,7 +260,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### UpdateInputResultModel schema
 <a name="inputs-inputid-response-body-updateinputresultmodel-example"></a>
 
-```
+```json
 {
   "input": {
     "arn": "string",
@@ -317,7 +317,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### InvalidRequest schema
 <a name="inputs-inputid-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -326,7 +326,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### AccessDenied schema
 <a name="inputs-inputid-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -335,7 +335,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### ResourceNotFound schema
 <a name="inputs-inputid-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -344,7 +344,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### ResourceConflict schema
 <a name="inputs-inputid-response-body-resourceconflict-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -353,7 +353,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### LimitExceeded schema
 <a name="inputs-inputid-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -362,7 +362,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### InternalServiceError schema
 <a name="inputs-inputid-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -371,7 +371,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### BadGatewayException schema
 <a name="inputs-inputid-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -380,7 +380,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 #### GatewayTimeoutException schema
 <a name="inputs-inputid-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

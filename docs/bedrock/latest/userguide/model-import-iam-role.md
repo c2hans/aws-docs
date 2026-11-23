@@ -28,7 +28,7 @@ You can optionally restrict the scope of the permission for [cross-service confu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -68,7 +68,7 @@ To restrict access to a specific folder in a bucket, add an `s3:prefix` conditio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

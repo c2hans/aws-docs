@@ -150,7 +150,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of StartBotResourceGeneration.
 
-```
+```json
 PUT https://models-v2-lex.us-east-1.amazonaws.com/bots/BOT1234567/botversions/DRAFT/botlocales/en_GB/startgeneration
 
 Payload:
@@ -164,7 +164,7 @@ Payload:
 
 This example illustrates one usage of StartBotResourceGeneration.
 
-```
+```json
 {
     "botId": "BOT1234567",
     "botVersion": "DRAFT",

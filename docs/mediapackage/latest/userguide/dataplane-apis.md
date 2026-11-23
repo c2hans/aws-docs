@@ -42,7 +42,7 @@ To call `HarvestObject`, perform an HTTP `POST` request to an egress URL, includ
 
 **Example**
 
-```
+```json
 POST {{egress_domain}}/channelGroup/{{ChannelGroupName}}/channel/{{ChannelName}}/originEndpoint/{{OriginEndpointName}}/{{manifest_or_segment_path}} HTTP/1.1
 
 X-Amz-Source-MediaPackage-S3-Dst-Bucket-Name: {{amzn-s3-demo-bucket/path}}

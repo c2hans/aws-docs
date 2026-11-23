@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { AlbToFargate, AlbToFargateProps } from '@aws-solutions-constructs/aws-alb-fargate';
@@ -53,7 +53,7 @@ const constructProps: AlbToFargateProps = {
 new AlbToFargate(this, 'new-construct', constructProps);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_alb_fargate import AlbToFargate, AlbToFargateProps
 from aws_cdk import (
     aws_certificatemanager as acm,
@@ -82,7 +82,7 @@ AlbToFargate(self, 'new-construct',
                 public_api=True)
 ```
 
-```
+```java
 import software.constructs.Construct;
 import java.util.List;
 

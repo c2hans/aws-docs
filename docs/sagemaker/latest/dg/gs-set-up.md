@@ -32,7 +32,7 @@ If you intend to create your own custom policy, these permissions are required t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -78,7 +78,7 @@ For information about adding policies, see [Adding and removing IAM identity per
 
 ****
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

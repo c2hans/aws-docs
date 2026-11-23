@@ -67,7 +67,7 @@ The time zone for the deployment window. The regular expression matches patterns
 ------
 #### [ YAML ]
 
-```
+```yaml
 - name: MyDeploymentRule
   ruleTypeId:
     category: Rule
@@ -84,7 +84,7 @@ The time zone for the deployment window. The regular expression matches patterns
 ------
 #### [ JSON ]
 
-```
+```json
 [
                     {
                         "name": "MyDeploymentRule",

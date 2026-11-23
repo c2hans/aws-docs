@@ -21,7 +21,7 @@ The following code snippets show how to add the SMP initialization module `torch
 
 **SMP configuration**
 
-```
+```json
 {
     "activation_loading_horizon": 2,
     "sm_activation_offloading": True
@@ -33,7 +33,7 @@ The following code snippets show how to add the SMP initialization module `torch
 **Note**
 While activating the SMP activation offloading feature, make sure that you also use the PyTorch `offload_wrapper` function and apply it to the root module. The SMP activation offloading feature uses the root module to determine when forward pass is done to start pre-fetching.
 
-```
+```py
 import torch.sagemaker as tsm
 tsm.init()
 

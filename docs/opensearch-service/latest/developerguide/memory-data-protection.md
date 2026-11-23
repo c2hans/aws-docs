@@ -9,7 +9,7 @@ The AWS [shared responsibility model](https://aws.amazon.com/compliance/shared-r
 For data protection purposes, we recommend that you protect AWS account credentials and set up individual users with AWS IAM Identity Center or AWS Identity and Access Management (IAM). That way, each user is given only the permissions necessary to fulfill their job duties. We also recommend that you secure your data in the following ways:
 + Use multi-factor authentication (MFA) with each account.
 + Use SSL/TLS to communicate with AWS resources. We require TLS 1.2 and recommend TLS 1.3.
-+ Set up API and user activity logging with AWS CloudTrail. For more information, see [Logging Amazon OpenSearch Memory API calls with AWS CloudTrail](memory-monitoring.md).
++ Set up API and user activity logging with AWS CloudTrail. For more information, see [Monitoring Amazon OpenSearch Memory with AWS CloudTrail](memory-cloudtrail.md).
 + Use AWS encryption solutions, along with all default security controls within AWS services.
 + Use advanced managed security services such as Amazon Macie, which assists in discovering and securing sensitive data that is stored in Amazon S3.
 
@@ -53,7 +53,7 @@ OpenSearch Memory uses your key with the permissions of the principal that makes
 
 You can grant these permissions in the key policy, in an IAM policy, or both. The following example key policy statement lets one role use the key for all OpenSearch Memory operations, and only through OpenSearch Memory.
 
-```
+```json
 {
     "Sid": "Allow use of the key through OpenSearch Memory",
     "Effect": "Allow",

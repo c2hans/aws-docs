@@ -180,7 +180,7 @@ To check usage in the CloudWatch console, see [View runtime metrics](cmr-monitor
 
 To get the daily sum of invokes for the `dev` alias over the last 14 days, run the following **get-metric-statistics** command.
 
-```
+```bash
 aws cloudwatch get-metric-statistics \
   --region us-east-1 \
   --namespace AWS/Lambda \
@@ -225,7 +225,7 @@ The runtime alias enters the `PENDING_DELETION` state for the waiting period.
 
 1. To delete the alias with a 7-day waiting period, run the following **delete-runtime-alias** command.
 
-   ```
+   ```bash
    aws lambda-core delete-runtime-alias \
      --region us-east-1 \
      --runtime-name {{companyphp8}} \
@@ -237,7 +237,7 @@ The runtime alias enters the `PENDING_DELETION` state for the waiting period.
 
 1. To confirm that the alias is scheduled for deletion, run the following **get-runtime-alias** command.
 
-   ```
+   ```bash
    aws lambda-core get-runtime-alias \
      --region us-east-1 \
      --runtime-name {{companyphp8}} \
@@ -246,7 +246,7 @@ The runtime alias enters the `PENDING_DELETION` state for the waiting period.
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "Name": "dev",
        "Arn": "arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8/alias/dev",
@@ -294,7 +294,7 @@ The runtime version enters the `PENDING_DELETION` state for the waiting period.
 
 1. To find the aliases that reference each version, run the following **list-runtime-aliases** command.
 
-   ```
+   ```bash
    aws lambda-core list-runtime-aliases \
      --region us-east-1 \
      --runtime-name {{companyphp8}} \
@@ -306,7 +306,7 @@ The runtime version enters the `PENDING_DELETION` state for the waiting period.
 
 1. To delete the version with a 30-day waiting period, run the following **delete-runtime-version** command.
 
-   ```
+   ```bash
    aws lambda-core delete-runtime-version \
      --region us-east-1 \
      --runtime-name {{companyphp8}} \
@@ -318,7 +318,7 @@ The runtime version enters the `PENDING_DELETION` state for the waiting period.
 
 1. To confirm that the version is scheduled for deletion, run the following **get-runtime-version** command.
 
-   ```
+   ```bash
    aws lambda-core get-runtime-version \
      --region us-east-1 \
      --runtime-name {{companyphp8}} \
@@ -328,7 +328,7 @@ The runtime version enters the `PENDING_DELETION` state for the waiting period.
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "Name": "v8.3.1",
        "State": "PENDING_DELETION",
@@ -373,7 +373,7 @@ The following example deletes the `companyphp8` runtime, its `dev`, `test`, and 
 
 1. To list the runtime's aliases, run the following **list-runtime-aliases** command.
 
-   ```
+   ```bash
    aws lambda-core list-runtime-aliases \
      --region us-east-1 \
      --runtime-name {{companyphp8}} \
@@ -383,7 +383,7 @@ The following example deletes the `companyphp8` runtime, its `dev`, `test`, and 
 
 1. To delete each alias, run the **delete-runtime-alias** command for each alias name.
 
-   ```
+   ```bash
    for alias in {{dev test prod}}; do
      aws lambda-core delete-runtime-alias \
        --region us-east-1 \
@@ -395,7 +395,7 @@ The following example deletes the `companyphp8` runtime, its `dev`, `test`, and 
 
 1. To list the runtime's versions, run the following **list-runtime-versions** command.
 
-   ```
+   ```bash
    aws lambda-core list-runtime-versions \
      --region us-east-1 \
      --runtime-name {{companyphp8}} \
@@ -405,7 +405,7 @@ The following example deletes the `companyphp8` runtime, its `dev`, `test`, and 
 
 1. To delete each version, run the **delete-runtime-version** command for each version name.
 
-   ```
+   ```bash
    for version in {{v8.3.1 v8.3.2}}; do
      aws lambda-core delete-runtime-version \
        --region us-east-1 \
@@ -417,7 +417,7 @@ The following example deletes the `companyphp8` runtime, its `dev`, `test`, and 
 
 1. To delete the runtime, run the following **delete-runtime** command. You can run this command as soon as all of the runtime's aliases and versions are scheduled for deletion.
 
-   ```
+   ```bash
    aws lambda-core delete-runtime \
      --region us-east-1 \
      --runtime-name {{companyphp8}} \
@@ -428,7 +428,7 @@ The following example deletes the `companyphp8` runtime, its `dev`, `test`, and 
 
 1. To confirm that the runtime is scheduled for deletion, run the following **get-runtime** command.
 
-   ```
+   ```bash
    aws lambda-core get-runtime \
      --region us-east-1 \
      --runtime-name {{companyphp8}}
@@ -436,7 +436,7 @@ The following example deletes the `companyphp8` runtime, its `dev`, `test`, and 
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "Name": "companyphp8",
        "Arn": "arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8",
@@ -467,7 +467,7 @@ In the console, you can't change the waiting period of a resource that's schedul
 
 1. To restore the `dev` alias, run the following **restore-runtime** command.
 
-   ```
+   ```bash
    aws lambda-core restore-runtime \
      --region us-east-1 \
      --runtime-name {{companyphp8}} \
@@ -476,7 +476,7 @@ In the console, you can't change the waiting period of a resource that's schedul
 
 1. To delete the alias again with a new 30-day waiting period, run the following **delete-runtime-alias** command.
 
-   ```
+   ```bash
    aws lambda-core delete-runtime-alias \
      --region us-east-1 \
      --runtime-name {{companyphp8}} \
@@ -486,7 +486,7 @@ In the console, you can't change the waiting period of a resource that's schedul
 
 1. To confirm the new date, run the following **get-runtime-alias** command.
 
-   ```
+   ```bash
    aws lambda-core get-runtime-alias \
      --region us-east-1 \
      --runtime-name {{companyphp8}} \
@@ -496,7 +496,7 @@ In the console, you can't change the waiting period of a resource that's schedul
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "State": "PENDING_DELETION",
        "PendingDeletionAt": "2026-11-06T14:30:00Z"
@@ -514,7 +514,7 @@ In the Lambda console, the resource lists show the scheduled deletion for each r
 
 To view the state of a runtime with the AWS CLI, run the following **get-runtime** command.
 
-```
+```bash
 aws lambda-core get-runtime \
   --region us-east-1 \
   --runtime-name {{companyphp8}} \
@@ -523,7 +523,7 @@ aws lambda-core get-runtime \
 
 To view the state of every version or alias in a runtime, run the following **list-runtime-versions** and **list-runtime-aliases** commands.
 
-```
+```bash
 aws lambda-core list-runtime-versions \
   --region us-east-1 \
   --runtime-name {{companyphp8}} \
@@ -564,7 +564,7 @@ To restore a runtime, runtime version, or runtime alias, use the **restore-runti
 
 To restore the runtime, run the following **restore-runtime** command. This command doesn't restore the runtime's versions or aliases.
 
-```
+```bash
 aws lambda-core restore-runtime \
   --region us-east-1 \
   --runtime-name {{companyphp8}}
@@ -572,7 +572,7 @@ aws lambda-core restore-runtime \
 
 To restore a runtime version, run the following **restore-runtime** command. This command doesn't restore the runtime or any aliases.
 
-```
+```bash
 aws lambda-core restore-runtime \
   --region us-east-1 \
   --runtime-name {{companyphp8}} \
@@ -581,7 +581,7 @@ aws lambda-core restore-runtime \
 
 To restore the `prod` alias, run the following **restore-runtime** command. This command doesn't restore the alias's version or the runtime.
 
-```
+```bash
 aws lambda-core restore-runtime \
   --region us-east-1 \
   --runtime-name {{companyphp8}} \
@@ -590,7 +590,7 @@ aws lambda-core restore-runtime \
 
 You should see output similar to the following:
 
-```
+```json
 {
     "RuntimeName": "companyphp8",
     "RuntimeAlias": "prod",

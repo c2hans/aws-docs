@@ -16,7 +16,7 @@ With SageMaker AI, you can use XGBoost as a built-in algorithm or framework. Whe
 
 Use XGBoost as a framework to run your customized training scripts that can incorporate additional data processing into your training jobs. In the following code example, SageMaker Python SDK provides the XGBoost API as a framework. This functions similarly to how SageMaker AI provides other framework APIs, such as TensorFlow, MXNet, and PyTorch.
 
-```
+```py
 import boto3
 from sagemaker.train import ModelTrainer
 from sagemaker.train.configs import Compute, SourceCode
@@ -82,7 +82,7 @@ After specifying the XGBoost image URI, use the XGBoost container to construct a
 **Important**
 When you retrieve the SageMaker AI XGBoost image URI, do not use `:latest` or `:1` for the image URI tag. You must specify one of the [Supported versions](xgboost.md#xgboost-supported-versions) to choose the SageMaker AI-managed XGBoost container with the native XGBoost package version that you want to use. To find the package version migrated into the SageMaker AI XGBoost containers, see [Docker Registry Paths and Example Code](https://docs.aws.amazon.com/sagemaker/latest/dg-ecr-paths/sagemaker-algo-docker-registry-paths.html). Then choose your AWS Region, and navigate to the **XGBoost (algorithm)** section.
 
-```
+```py
 from sagemaker.train import ModelTrainer
 from sagemaker.train.configs import Compute
 from sagemaker.train.configs import InputData
@@ -163,7 +163,7 @@ Be mindful of versions when using an SageMaker AI XGBoost model in open source X
 **To use a model trained with SageMaker AI XGBoost v1.3-1 or later in open source XGBoost**
 + Use the following Python code:
 
-  ```
+  ```python
   import xgboost as xgb
 
   xgb_model = xgb.Booster()
@@ -174,7 +174,7 @@ Be mindful of versions when using an SageMaker AI XGBoost model in open source X
 **To use a model trained with previous versions of SageMaker AI XGBoost in open source XGBoost**
 + Use the following Python code:
 
-  ```
+  ```python
   import pickle as pkl
   import tarfile
 

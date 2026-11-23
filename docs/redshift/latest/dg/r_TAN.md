@@ -31,7 +31,7 @@ A `DOUBLE PRECISION` number.
 
 To return the tangent of zero, use the following example.
 
-```
+```sql
 SELECT TAN(0);
 
 +-----+

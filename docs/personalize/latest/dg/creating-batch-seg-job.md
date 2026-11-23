@@ -89,7 +89,7 @@ We recommend using a different location for your output data (either a folder or
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 
 personalize_rec = boto3.client(service_name='personalize')
@@ -110,7 +110,7 @@ personalize_rec.create_batch_segment_job (
 ------
 #### [ SDK for Java 2.x ]
 
-```
+```java
 public static String createBatchSegmentJob(PersonalizeClient personalizeClient,
                                                         String solutionVersionArn,
                                                         String jobName,
@@ -191,7 +191,7 @@ public static String createBatchSegmentJob(PersonalizeClient personalizeClient,
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 // Get service clients module and commands using ES6 syntax.
 import { CreateBatchSegmentJobCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";

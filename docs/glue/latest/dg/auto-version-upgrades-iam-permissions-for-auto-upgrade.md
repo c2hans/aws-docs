@@ -13,7 +13,7 @@ Users who manage auto upgrade need these permissions:
 + To turn it on, they need the same rights as to edit a job: `glue:UpdateJob` or `glue:CreateJob`, and `iam:PassRole` on the job role.
 + To view, approve, or decline an upgrade, they need the rights in the following policy.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -49,7 +49,7 @@ AWS Glue runs the compatibility check with the job's own IAM role, so the analys
 
 **Trust policy** – The role must trust `glue.amazonaws.com`, which every AWS Glue job role already does. If you scope the trust policy with `aws:SourceAccount` or `aws:SourceArn` conditions, they must allow your account and the job's ARN.
 
-```
+```json
 {
   "Effect": "Allow",
   "Principal": { "Service": "glue.amazonaws.com" },

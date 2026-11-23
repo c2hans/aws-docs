@@ -137,7 +137,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-aws-self-provisioned-service-add-ex-min"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-HandleCreateSSPSResources-Admin",
   "Region" : "us-east-1",
@@ -150,7 +150,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-aws-self-provisioned-service-add-ex-max"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-HandleCreateSSPSResources-Admin",
   "Region" : "us-east-1",

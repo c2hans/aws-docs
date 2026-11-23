@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 When the full backfill completes, validate completeness across all indexes:
 
-```
+```bash
 console clusters cat-indices --refresh
 ```
 

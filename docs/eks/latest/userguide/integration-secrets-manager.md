@@ -26,7 +26,7 @@ When using the EKS Capability for Argo CD, you can store Git repository credenti
 
 1. Store your Git credentials in Secrets Manager. For example, to store a GitHub personal access token:
 
-   ```
+   ```bash
    aws secretsmanager create-secret \
      --name argocd/github-token \
      --secret-string '{"username":"git","password":"ghp_xxxxxxxxxxxx"}'
@@ -34,7 +34,7 @@ When using the EKS Capability for Argo CD, you can store Git repository credenti
 
 1. Ensure the Argo CD capability role has permissions to retrieve the secret:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -69,7 +69,7 @@ The KMS decrypt permission is required because Secrets Manager encrypts all secr
 
 1. Create an Argo CD repository configuration that references the secret ARN:
 
-   ```
+   ```yaml
    apiVersion: v1
    kind: Secret
    metadata:

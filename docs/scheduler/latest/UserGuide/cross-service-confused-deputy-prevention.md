@@ -24,7 +24,7 @@ The following example shows how you can use the `aws:SourceArn` and `aws:SourceA
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -49,7 +49,7 @@ The following example shows how you can use the `aws:SourceArn` and `aws:SourceA
 
 If you use wildcard characters in the value of `aws:SourceArn`, you must use `ArnLike` instead of `StringEquals` as the condition operator. For example, the following trust policy uses `ArnLike` to match any schedule group in the account:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

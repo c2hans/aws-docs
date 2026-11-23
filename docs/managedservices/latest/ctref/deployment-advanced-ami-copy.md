@@ -151,7 +151,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-ami-copy-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-CopyAMI",
   "Region": "us-east-1",
@@ -172,7 +172,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-ami-copy-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-CopyAMI",
   "Region": "us-east-1",

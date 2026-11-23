@@ -75,7 +75,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/cloudwatch
 #### POST schema
 <a name="cloudwatch-alarm-templates-request-body-post-example"></a>
 
-```
+```json
 {
   "comparisonOperator": enum,
   "datapointsToAlarm": number,
@@ -102,7 +102,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/cloudwatch
 #### ListCloudWatchAlarmTemplatesResponseContent schema
 <a name="cloudwatch-alarm-templates-response-body-listcloudwatchalarmtemplatesresponsecontent-example"></a>
 
-```
+```json
 {
   "cloudWatchAlarmTemplates": [
     {
@@ -132,7 +132,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/cloudwatch
 #### CreateCloudWatchAlarmTemplateResponseContent schema
 <a name="cloudwatch-alarm-templates-response-body-createcloudwatchalarmtemplateresponsecontent-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "comparisonOperator": enum,
@@ -157,7 +157,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/cloudwatch
 #### BadRequestExceptionResponseContent schema
 <a name="cloudwatch-alarm-templates-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -166,7 +166,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/cloudwatch
 #### ForbiddenExceptionResponseContent schema
 <a name="cloudwatch-alarm-templates-response-body-forbiddenexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -175,7 +175,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/cloudwatch
 #### NotFoundExceptionResponseContent schema
 <a name="cloudwatch-alarm-templates-response-body-notfoundexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -184,7 +184,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/cloudwatch
 #### ConflictExceptionResponseContent schema
 <a name="cloudwatch-alarm-templates-response-body-conflictexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -193,7 +193,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/cloudwatch
 #### TooManyRequestsExceptionResponseContent schema
 <a name="cloudwatch-alarm-templates-response-body-toomanyrequestsexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -202,7 +202,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/cloudwatch
 #### InternalServerErrorExceptionResponseContent schema
 <a name="cloudwatch-alarm-templates-response-body-internalservererrorexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

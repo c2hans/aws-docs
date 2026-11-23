@@ -23,7 +23,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-resource-function-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Serverless::Function
 Properties:
   [AcceleratorConfig](#sam-function-acceleratorconfig): {{AcceleratorConfig}}
@@ -66,6 +66,7 @@ Properties:
   [Role](#sam-function-role): {{String}}
   [RolePath](#sam-function-rolepath): {{String}}
   [Runtime](#sam-function-runtime): {{String}}
+  [RuntimeConfig](#sam-function-runtimeconfig): {{RuntimeConfig}}
   RuntimeManagementConfig: {{[RuntimeManagementConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-runtimemanagementconfig.html)}}
   SnapStart: {{[SnapStart](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-snapstart.html)}}
   [SourceKMSKeyArn](#sam-function-sourcekmskeyarn): {{String}}
@@ -122,7 +123,7 @@ AWS SAM publishes a new version only when a property's value changes in the temp
 Use one of the following workarounds to force AWS SAM to publish a new version when only a parameter value changes:
 + **Standard AWS SAM and CloudFormation deployments**: add the [AWS::LanguageExtensions transform](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-aws-languageextensions.html) before `AWS::Serverless-2016-10-31` in your template's `Transform` section. CloudFormation resolves references to their actual values before AWS SAM computes the version hash. A change to the parameter's value then publishes a new version and updates the alias:
 
-  ```
+  ```yaml
   Transform:
     - AWS::LanguageExtensions
     - AWS::Serverless-2016-10-31
@@ -381,9 +382,17 @@ Use this property when the role is generated for you. Do not use when the role i
  `Runtime`   <a name="sam-function-runtime"></a>
 The identifier of the function's [runtime](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html). This property is only required if the `PackageType` property is set to `Zip`.
 If you specify the `provided` identifier for this property, you can use the `Metadata` resource attribute to instruct AWS SAM to build the custom runtime that this function requires. For more information about building custom runtimes, see [Building Lambda Event Functions with custom runtimes in AWS SAM](building-custom-runtimes.md).
+To use a customer-managed runtime, specify `custom` and set the [RuntimeConfig](#sam-function-runtimeconfig) property.
 *Type*: String
 *Required*: Conditional
 *CloudFormation compatibility*: This property is passed directly to the `[Runtime](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-runtime)` property of an `AWS::Lambda::Function` resource.
+
+ `RuntimeConfig`   <a name="sam-function-runtimeconfig"></a>
+Configures the function to use a customer-managed runtime. Specify the ARN of the runtime and the name of the runtime alias that the function uses. To learn more, see [Customer-managed runtimes](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-customer-managed.html) in the *AWS Lambda Developer Guide*.
+If you specify `RuntimeConfig`, you must set `Runtime` to `custom`. If you set `Runtime` to `custom`, you must specify `RuntimeConfig`. You can't use `RuntimeConfig` with the `Image` package type, and you can't turn on `SnapStart` for a function that uses a customer-managed runtime. If you do, AWS SAM returns a validation error. If these values come from intrinsic functions that AWS SAM can't resolve, Lambda validates them when you deploy.
+*Type*: [RuntimeConfig](sam-property-function-runtimeconfig.md)
+*Required*: Conditional
+*CloudFormation compatibility*: This property is passed directly to the [RuntimeConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html#cfn-lambda-function-runtimeconfig) property of an `AWS::Lambda::Function` resource.
 
  `RuntimeManagementConfig`   <a name="sam-function-runtimemanagementconfig"></a>
 Configure runtime management options for your Lambda functions such as runtime environment updates, rollback behavior, and selecting a specific runtime version. To learn more, see [Lambda runtime updates](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-update.html) in the *AWS Lambda Developer Guide*.
@@ -485,7 +494,7 @@ The following is a basic example of an [AWS::Serverless::Function](sam-resource-
 #### YAML
 <a name="sam-resource-function-examples-simple-function--yaml"></a>
 
-```
+```yaml
 Type: AWS::Serverless::Function
 Properties:
   Handler: index.handler
@@ -501,7 +510,7 @@ The following is an example of an [AWS::Serverless::Function](sam-resource-funct
 #### YAML
 <a name="sam-resource-function-examples-function-properties-example--yaml"></a>
 
-```
+```yaml
 Type: AWS::Serverless::Function
 DependsOn: MyMountTarget        # This is needed if an AWS::EFS::MountTarget resource is declared for EFS
 Properties:
@@ -543,7 +552,7 @@ The following is an example of an `ImageConfig` for a Lambda function of package
 #### YAML
 <a name="sam-resource-function-examples-imageconfig-example--yaml"></a>
 
-```
+```yaml
 HelloWorldFunction:
   Type: AWS::Serverless::Function
   Properties:
@@ -562,7 +571,7 @@ HelloWorldFunction:
 
 A Lambda function configured to update its runtime environment according to current behavior:
 
-```
+```yaml
 TestFunction
   Type: AWS::Serverless::Function
   Properties:
@@ -574,7 +583,7 @@ TestFunction
 
 A Lambda function configured to update its runtime environment when the function is updated:
 
-```
+```yaml
 TestFunction
   Type: AWS::Serverless::Function
   Properties:
@@ -586,7 +595,7 @@ TestFunction
 
 A Lambda function configured to update its runtime environment manually:
 
-```
+```yaml
 TestFunction
   Type: AWS::Serverless::Function
   Properties:
@@ -602,7 +611,7 @@ TestFunction
 
 Example of a Lambda function with SnapStart turned on for future versions:
 
-```
+```yaml
 TestFunc
   Type: AWS::Serverless::Function
   Properties:
@@ -616,7 +625,7 @@ TestFunc
 
 Example of a Lambda function with tenant isolation mode turned on:
 
-```
+```yaml
 TestFunction
   Type: AWS::Serverless::Function
   Properties:
@@ -636,7 +645,7 @@ You can attach either an Amazon EFS file system or an S3 Files file system to a 
 #### YAML
 <a name="sam-resource-function-examples-s3files-example--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Lambda function with S3 Files file system

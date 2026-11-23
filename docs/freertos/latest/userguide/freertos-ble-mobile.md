@@ -27,7 +27,7 @@ Use the iOS SDK for FreeRTOS Bluetooth Devices to build iOS mobile applications 
 
 1. Install [CocoaPods](http://cocoapods.org/):
 
-   ```
+   ```bash
    $ gem install cocoapods
    $ pod setup
    ```
@@ -36,7 +36,7 @@ You might need to use `sudo` to install CocoaPods.
 
 1. Install the SDK with CocoaPods (add this to your podfile):
 
-   ```
+   ```bash
    $ pod 'FreeRTOS', :git => 'https://github.com/aws/amazon-freertos-ble-ios-sdk.git'
    ```
 

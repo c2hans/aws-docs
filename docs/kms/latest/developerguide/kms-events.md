@@ -24,7 +24,7 @@ Whenever AWS KMS rotates key material, it sends a `KMS CMK Rotation` event to Ev
 
 The following is an example of this event.
 
-```
+```json
 {
   "version": "0",
   "id": "6a7e8feb-b491-4cf7-a9f1-bf3703467718",
@@ -53,7 +53,7 @@ When you [import key material into a KMS key](importing-keys.md), you can option
 
 The following is an example of this event.
 
-```
+```json
 {
   "version": "0",
   "id": "9da9af57-9253-4406-87cb-7cc400e43465",
@@ -79,7 +79,7 @@ When you [schedule deletion](deleting-keys.md) of a KMS key, AWS KMS enforces a 
 
  The following is an example of this event.
 
-```
+```json
 {
   "version": "0",
   "id": "e9ce3425-7d22-412a-a699-e7a5fc3fbc9a",

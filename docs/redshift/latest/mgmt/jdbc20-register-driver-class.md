@@ -16,7 +16,7 @@ The driver supports the following fully qualified class names that are independe
 
 The following example shows how to use the DriverManager class to establish a connection for JDBC 4.2.
 
-```
+```java
             private static Connection connectViaDM() throws Exception
 {
 Connection connection = null;
@@ -27,7 +27,7 @@ return connection;
 
 The following example shows how to use the `DataSource` class to establish a connection.
 
-```
+```java
  private static Connection connectViaDS() throws Exception
 {
 Connection connection = null;

@@ -31,7 +31,7 @@ For more information, see [How do I get started with server-side encryption?](ho
 
 Use the AWS CLI to call the DescribeImageGenerationConfiguration API for your stream.
 
-```
+```bash
 aws kinesisvideo describe-image-generation-configuration \
   --stream-name "{{demo-stream}}"
 ```
@@ -53,7 +53,7 @@ Review the `DestinationConfig` in the response and confirm it looks correct.
 
    1. Set the `KVS_DEBUG_DUMP_DATA_FILE_DIR` environment variable. If this value is set, the Producer SDK writes the media files that it would have sent to Kinesis Video Streams to the specified location.
 
-      ```
+      ```bash
       export KVS_DEBUG_DUMP_DATA_FILE_DIR=/path/to/output/directory
       ```
 **Note**
@@ -67,7 +67,7 @@ The SDK will not create a new directory if the path doesn't exist. Create the fo
 
       1. Run MKVToolNix with one of the `.mkv` files in the output directory.
 
-         ```
+         ```bash
          mkvinfo -v ./path/to/video/file
          ```
 

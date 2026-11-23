@@ -157,7 +157,7 @@ The following table lists the optional Hive properties and their default values 
 
 The following code example shows how to run a Hive query with the `StartJobRun` API.
 
-```
+```bash
 aws emr-serverless start-job-run \
     --application-id {{application-id}} \
     --execution-role-arn {{job-role-arn}} \

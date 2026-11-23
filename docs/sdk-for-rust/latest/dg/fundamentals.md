@@ -29,7 +29,7 @@ The following are some basics of the Rust programming language that would be hel
   + A common way to add library dependencies to your project and this file is to use `cargo add`. See [`cargo-add`](https://doc.rust-lang.org/cargo/commands/cargo-add.html).
 + Rust has a basic function structure like the following. The `let` keyword declares a variable and might be paired with assignment (=). If you don't specify a type after `let`, then the compiler will infer one. See [Variables and Mutability](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html).
 
-  ```
+  ```rust
   fn main() {
       let w = "world";
       println!("Hello {}!", w);
@@ -50,7 +50,7 @@ The following are some basics of the Rust programming language that would be hel
 <a name="aws-sdk-crate-fundamentals"></a>
 + The primary core crate for the SDK for Rust functionality is `aws-config`. This is included in the majority of projects because it provides functionality to read configuration from the environment.
 
-  ```
+  ```sh
   $ cargo add aws-config
   ```
   + Don't confuse this with the AWS service that is called AWS Config. Since that is a service, it follows the standard convention of AWS service crates and is called `aws-sdk-config`.
@@ -74,12 +74,12 @@ The following are some basics of the Rust programming language that would be hel
 + Tokio is an asynchronous runtime for the SDK for Rust programming language, it executes the `async` tasks. See [tokio.rs](http://tokio.rs/) and [docs.rs/tokio](http://docs.rs/tokio).
 + The SDK for Rust requires an async runtime. We recommend you add the following crate to your projects:
 
-  ```
+  ```sh
   $ cargo add tokio --features=full
   ```
 + The `tokio::main` attribute macro creates an async main entry point to your program. To use this macro, add it to the line before your `main` method, as shown in the following:
 
-  ```
+  ```rust
   #[tokio::main]
   async fn main() -> Result<(), Error> {
   ```

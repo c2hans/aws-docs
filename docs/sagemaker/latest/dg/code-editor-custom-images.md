@@ -35,7 +35,7 @@ If you are bringing your own image to SageMaker Unified Studio, you will need to
 
 The following is an example Dockerfile to create an image from scratch using a [`micromamba`](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) base environment:
 
-```
+```docker
 FROM mambaorg/micromamba:latest
 ARG NB_USER="sagemaker-user"
 ARG NB_UID=1000
@@ -59,7 +59,7 @@ CMD eval "$(micromamba shell hook --shell=bash)"; \
 
 The following is an example Dockerfile to create an image based on [Amazon SageMaker AI Distribution](https://github.com/aws/sagemaker-distribution/tree/main):
 
-```
+```docker
 FROM public.ecr.aws/sagemaker/sagemaker-distribution:latest-cpu
 ARG NB_USER="sagemaker-user"
 ARG NB_UID=1000

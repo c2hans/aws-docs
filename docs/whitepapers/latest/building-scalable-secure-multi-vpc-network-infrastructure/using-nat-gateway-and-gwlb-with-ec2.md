@@ -16,6 +16,8 @@ It is also possible to deploy GWLB endpoints in a distributed manner without Tra
 
 ![A diagram depicting Centralized egress with Gateway Load Balancer and EC2 instance (route table design)](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/centralized-egress-gwlb-and-ec2.png)
 
+**Centralized egress with Gateway Load Balancer and EC2 instance (route table design)**
+
 ## High availability
 <a name="high-availabilty-2"></a>
 

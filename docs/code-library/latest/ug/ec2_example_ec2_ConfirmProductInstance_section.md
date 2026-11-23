@@ -36,7 +36,7 @@ For more information, see [Paid AMIs in the AWS Marketplace for Amazon EC2 insta
 **Tools for PowerShell V4**
 **Example 1: This example determines whether the specified product code is associated with the specified instance.**
 
-```
+```powershell
 Confirm-EC2ProductInstance -ProductCode 774F4FF8 -InstanceId i-12345678
 ```
 +  For API details, see [ConfirmProductInstance](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -44,7 +44,7 @@ Confirm-EC2ProductInstance -ProductCode 774F4FF8 -InstanceId i-12345678
 **Tools for PowerShell V5**
 **Example 1: This example determines whether the specified product code is associated with the specified instance.**
 
-```
+```powershell
 Confirm-EC2ProductInstance -ProductCode 774F4FF8 -InstanceId i-12345678
 ```
 +  For API details, see [ConfirmProductInstance](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

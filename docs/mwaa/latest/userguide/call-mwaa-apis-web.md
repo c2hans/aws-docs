@@ -90,7 +90,7 @@ The following example uses the [boto3 create\_web\_login\_token](https://boto3.a
 
 1. Copy the contents of the following code sample and save locally as `create-web-login-token.py`.
 
-   ```
+   ```python
    import boto3
      mwaa = boto3.client('mwaa')
      response = mwaa.create_web_login_token(

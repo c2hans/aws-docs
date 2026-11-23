@@ -17,7 +17,7 @@ For version 2.1.3 and later, only the Administrators group and the SYSTEM accoun
 **Note**
 The agent installer (`codedeploy-agent.msi`) and the agent binaries it installs (`codedeploy-agent.exe` and `codedeploy-local.exe`) are Authenticode-signed by Amazon. To check a signature, run:
 
-```
+```powershell
 Get-AuthenticodeSignature -FilePath .\codedeploy-agent.msi
 ```
 The `Status` must be `Valid`.

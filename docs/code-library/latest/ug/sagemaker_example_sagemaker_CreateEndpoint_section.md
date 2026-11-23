@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     DATA lt_production_variants TYPE /aws1/cl_sgmproductionvariant=>tt_productionvariantlist.
     DATA lo_production_variants TYPE REF TO /aws1/cl_sgmproductionvariant.
     DATA oo_ep_config_result TYPE REF TO /aws1/cl_sgmcreateendptcfgout.

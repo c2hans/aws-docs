@@ -19,7 +19,7 @@ The following code example shows how to create and manage DynamoDB global tables
 **SDK for Java 2.x**
 Create a table with Global Secondary Index and DynamoDB Streams using AWS SDK for Java 2.x.
 
-```
+```java
     public static CreateTableResponse createTableWithGSI(
         final DynamoDbClient dynamoDbClient, final String tableName, final String indexName) {
 
@@ -86,7 +86,7 @@ Create a table with Global Secondary Index and DynamoDB Streams using AWS SDK fo
 ```
 Wait for a table to become active using AWS SDK for Java 2.x.
 
-```
+```java
     public static void waitForTableActive(final DynamoDbClient dynamoDbClient, final String tableName) {
 
         if (dynamoDbClient == null) {
@@ -116,7 +116,7 @@ Wait for a table to become active using AWS SDK for Java 2.x.
 ```
 Add a replica to create or extend a global table using AWS SDK for Java 2.x.
 
-```
+```java
     public static UpdateTableResponse addReplica(
         final DynamoDbClient dynamoDbClient,
         final String tableName,
@@ -173,7 +173,7 @@ Add a replica to create or extend a global table using AWS SDK for Java 2.x.
 ```
 Remove a replica from a global table using AWS SDK for Java 2.x.
 
-```
+```java
     public static UpdateTableResponse removeReplica(
         final DynamoDbClient dynamoDbClient, final String tableName, final Region replicaRegion) {
 
@@ -213,7 +213,7 @@ Remove a replica from a global table using AWS SDK for Java 2.x.
 ```
 Add test items to verify replication using AWS SDK for Java 2.x.
 
-```
+```java
     public static PutItemResponse putTestItem(
         final DynamoDbClient dynamoDbClient, final String tableName, final String artist, final String songTitle) {
 
@@ -261,7 +261,7 @@ Add test items to verify replication using AWS SDK for Java 2.x.
 ```
 Describe global table configuration and replicas using AWS SDK for Java 2.x.
 
-```
+```java
     public static DescribeTableResponse describeTable(final DynamoDbClient dynamoDbClient, final String tableName) {
 
         if (dynamoDbClient == null) {
@@ -302,7 +302,7 @@ Describe global table configuration and replicas using AWS SDK for Java 2.x.
 ```
 Complete example of global table operations using AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(final Region sourceRegion, final Region replicaRegion) {
 
         String tableName = "Music";

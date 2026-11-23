@@ -29,4 +29,6 @@ The following data types are supported:
 +  [RegistryRecordFilter](API_RegistryRecordFilter.md)
 +  [RegistryRecordsEntry](API_RegistryRecordsEntry.md)
 +  [RegistryRecordSummary](API_RegistryRecordSummary.md)
++  [SignatureAgentCardAdditionalData](API_SignatureAgentCardAdditionalData.md)
++  [SignatureAgentCardDescriptor](API_SignatureAgentCardDescriptor.md)
 +  [ValidationExceptionField](API_ValidationExceptionField.md)

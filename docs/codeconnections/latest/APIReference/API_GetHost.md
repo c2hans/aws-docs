@@ -69,7 +69,7 @@ Pattern: `.*`
  ** [ProviderType](#API_GetHost_ResponseSyntax) **   <a name="codeconnections-GetHost-response-ProviderType"></a>
 The provider type of the requested host, such as GitHub Enterprise Server.
 Type: String
-Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps`
+Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps | GitHubEnterpriseCloudDataResidency`
 
  ** [Status](#API_GetHost_ResponseSyntax) **   <a name="codeconnections-GetHost-response-Status"></a>
 The status of the requested host.

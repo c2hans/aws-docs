@@ -40,13 +40,13 @@ To define a query monitoring rule, you specify the following elements:
 
 To limit the runtime of queries, we recommend creating a query monitoring rule instead of using WLM timeout. For example, you can set `max_execution_time` to 50,000 milliseconds as shown in the following JSON snippet.
 
-```
+```json
 "max_execution_time": 50000
 ```
 
 But we recommend instead that you define an equivalent query monitoring rule. The following example demonstrates a query monitoring rule that sets `query_execution_time` to 50 seconds:
 
-```
+```json
 "rules":
 [
     {

@@ -49,25 +49,25 @@ To get your AWS account number, contact your system administrator.
 
 1. Alternatively, you can use an API call to find the dataset ID.
 
-   ```
+   ```bash
    aws quicksight list-data-sets --aws-account-id {{your-aws-account-id}}
    ```
 
    The dataset ID appears in the result, for example:
 
-   ```
+   ```json
    "DataSetId": "a165d37b-c071-4648-8039-e4db5e5f7f08"
    ```
 
 **To get the data source ID**
 + Use an API call to find the data source ID.
 
-  ```
+  ```bash
   aws quicksight list-data-sources --aws-account-id {{your-aws-account-id}}
   ```
 
   The data source ID appears in the result, for example:
 
-  ```
+  ```json
   "DataSourceId": "1491fa60-1f19-4c0f-9f56-c72413a24986"
   ```

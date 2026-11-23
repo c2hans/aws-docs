@@ -37,7 +37,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Reserv
 
 **Example: ReserveContact**
 
-```
+```json
 
 {
     "eventVersion": "1.05",

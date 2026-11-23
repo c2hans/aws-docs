@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/scenarios/S3ObjectLockScenario#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the object lock configuration details for an S3 bucket.
     /// </summary>
@@ -83,7 +83,7 @@ For more information, see [Configuring S3 Object Lock](https://docs.aws.amazon.c
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/s3_object_lock#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -138,7 +138,7 @@ func (actor S3Actions) GetObjectLockConfiguration(ctx context.Context, bucket st
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/s3#code-examples).
 
-```
+```java
     // Get the object lock configuration details for an S3 bucket.
     public void getBucketObjectLockConfiguration(String bucketName) {
         GetObjectLockConfigurationRequest objectLockConfigurationRequest = GetObjectLockConfigurationRequest.builder()
@@ -159,7 +159,7 @@ func (actor S3Actions) GetObjectLockConfiguration(ctx context.Context, bucket st
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 
-```
+```javascript
 import {
   GetObjectLockConfigurationCommand,
   S3Client,
@@ -238,7 +238,7 @@ if (isMain(import.meta.url)) {
 **Tools for PowerShell V4**
 **Example 1: This command returns the value 'Enabled' if Object lock configuration is enabled for the given S3 bucket.**
 
-```
+```powershell
 Get-S3ObjectLockConfiguration -BucketName 'amzn-s3-demo-bucket' -Select ObjectLockConfiguration.ObjectLockEnabled
 ```
 **Output:**
@@ -253,7 +253,7 @@ Enabled
 **Tools for PowerShell V5**
 **Example 1: This command returns the value 'Enabled' if Object lock configuration is enabled for the given S3 bucket.**
 
-```
+```powershell
 Get-S3ObjectLockConfiguration -BucketName 'amzn-s3-demo-bucket' -Select ObjectLockConfiguration.ObjectLockEnabled
 ```
 **Output:**
@@ -272,7 +272,7 @@ Enabled
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object-locking#code-examples).
 Get the object lock configuration.
 
-```
+```python
 def is_object_lock_enabled(s3_client, bucket: str) -> bool:
     """
     Check if object lock is enabled for a bucket.
@@ -304,7 +304,7 @@ def is_object_lock_enabled(s3_client, bucket: str) -> bool:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->getobjectlockconfiguration(         " oo_result is returned for testing purposes. "
           iv_bucket = iv_bucket_name ).

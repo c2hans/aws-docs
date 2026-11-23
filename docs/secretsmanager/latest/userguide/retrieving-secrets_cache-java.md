@@ -39,7 +39,7 @@ For more information, see [Permissions reference](auth-and-access.md#reference_i
 **Example Retrieve a secret**
 The following code example shows a Lambda function that retrieves a secret string. It follows the [best practice](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html) of instantiating the cache outside of the function handler, so it doesn't keep calling the API if you call the Lambda function again.
 
-```
+```java
 package com.amazonaws.secretsmanager.caching.examples;
 
     import com.amazonaws.services.lambda.runtime.Context;

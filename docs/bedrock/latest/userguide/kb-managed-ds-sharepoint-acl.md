@@ -46,7 +46,7 @@ The `connectionConfiguration` must include a `certificateS3Path` pointing to a P
 **Note**
 The `certificatePassword` field in the secret is optional. If you omit it, Bedrock Managed Knowledge Base opens the PKCS\#12 (.p12) file using your application's client ID as the password, so the certificate must have been created with that password. We recommend that you always set an explicit, high-entropy `certificatePassword` to protect the certificate's private key at rest.
 
-```
+```json
 "connectorParameters": {
     "type": "SHAREPOINT",
     "version": "1",

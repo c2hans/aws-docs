@@ -199,7 +199,7 @@ Both operations take a `LimitDefinition` parameter that identifies the limit to 
 The following example returns the provisioned limit for the `UserAuthentication` API category.
 **Request**
 
-```
+```json
 {
     "LimitDefinition": {
         "LimitClass": "API_CATEGORY",
@@ -209,7 +209,7 @@ The following example returns the provisioned limit for the `UserAuthentication`
 ```
 **Response**
 
-```
+```json
 {
     "Limit": {
         "LimitDefinition": {
@@ -226,7 +226,7 @@ The following example returns the provisioned limit for the `UserAuthentication`
 The following example sets the provisioned limit for the `UserAuthentication` API category to 300 RPS.
 **Request**
 
-```
+```json
 {
     "LimitDefinition": {
         "LimitClass": "API_CATEGORY",
@@ -237,7 +237,7 @@ The following example sets the provisioned limit for the `UserAuthentication` AP
 ```
 **Response**
 
-```
+```json
 {
     "Limit": {
         "LimitDefinition": {

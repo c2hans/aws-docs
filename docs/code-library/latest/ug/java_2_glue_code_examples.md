@@ -30,7 +30,7 @@ The following code example shows how to get started using AWS Glue.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
 package com.example.glue;
 
 import software.amazon.awssdk.regions.Region;
@@ -79,7 +79,7 @@ For more information, see [Tutorial: Getting started with AWS Glue Studio](https
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -764,7 +764,7 @@ The following code example shows how to use `CreateCrawler`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
     /**
      * Creates a new AWS Glue crawler using the AWS Glue Java API.
      *
@@ -820,7 +820,7 @@ The following code example shows how to use `CreateJob`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
     /**
      * Creates a new AWS Glue job.
      *
@@ -866,7 +866,7 @@ The following code example shows how to use `DeleteCrawler`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
     /**
      * Deletes a specific AWS Glue crawler.
      *
@@ -898,7 +898,7 @@ The following code example shows how to use `DeleteDatabase`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
     /**
      * Deletes a AWS Glue Database.
      *
@@ -930,7 +930,7 @@ The following code example shows how to use `DeleteJob`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
     /**
      * Deletes a Glue job.
      *
@@ -962,7 +962,7 @@ The following code example shows how to use `GetCrawler`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
     /**
      * Retrieves a specific crawler from the AWS Glue service and waits for it to be in the "READY" state.
      *
@@ -1002,7 +1002,7 @@ The following code example shows how to use `GetDatabase`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
     /**
      * Retrieves the specific database from the AWS Glue service.
      *
@@ -1042,7 +1042,7 @@ The following code example shows how to use `GetJobRuns`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
     /**
      * Retrieves the job runs for a given Glue job and prints the status of the job runs.
      *
@@ -1104,7 +1104,7 @@ The following code example shows how to use `GetTables`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
     /**
      * Retrieves the names of the tables in the specified Glue database.
      *
@@ -1146,7 +1146,7 @@ The following code example shows how to use `StartCrawler`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
     /**
      * Starts a specific AWS Glue crawler.
      *
@@ -1178,7 +1178,7 @@ The following code example shows how to use `StartJobRun`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
     /**
      * Starts a job run in AWS Glue.
      *

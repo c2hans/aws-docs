@@ -39,7 +39,7 @@ For more information, see [View instance details with CodeDeploy](https://docs.a
 **Tools for PowerShell V4**
 **Example 1: This example gets a list of instance IDs for the specified deployment.**
 
-```
+```powershell
 Get-CDDeploymentInstanceList -DeploymentId d-QZMRGSTEX
 ```
 **Output:**
@@ -54,7 +54,7 @@ i-3b4e22EX
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of instance IDs for the specified deployment.**
 
-```
+```powershell
 Get-CDDeploymentInstanceList -DeploymentId d-QZMRGSTEX
 ```
 **Output:**

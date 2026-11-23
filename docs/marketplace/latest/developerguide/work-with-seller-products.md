@@ -26,6 +26,7 @@ Each product type has a different product entity. An *entity* can be a product o
 | Software as a service (SaaS) products | SaaSProduct@1.0 |
 | Machine learning (ML) products | MachineLearningProduct@1.0 |
 | Professional services products | ProfessionalServicesProduct@1.0 |
+| Products integrated with AWS Services (RTB Fabric module and Data as a Service products, which share the generic Product@1.0 entity and are differentiated by the delivery option) | Product@1.0 |
 
 **Note**
 Single-AMI with CloudFormation product types and AWS Data Exchange data products are not supported.
@@ -55,7 +56,8 @@ The following topics describe how to use the Catalog API to perform actions on y
 + [Work with container-based products using the AWS Marketplace APIs](work-with-container-products.md)
 + [Work with SaaS products using the AWS Marketplace APIs](work-with-saas-products.md)
 + [Work with machine learning products using AWS Marketplace APIs](work-with-ml-products.md)
-+ [Work with professional services products using the AWS Marketplace APIs](work-with-professional-services-products.md)
++ [Working with professional services products using AWS Marketplace APIs](work-with-professional-services-products.md)
++ [Working with products integrated with AWS Services](work-with-additional-product-types.md)
 
 ## Create a product
 <a name="create-product"></a>
@@ -74,19 +76,20 @@ You then use `Update` change types to complete the create product process: [Upda
 After the product is completed, you can use the [ReleaseProduct](#release-product) change type to complete the product creation process, and then release the offer. This process validates the entire product and moves the product to the `Limited` state.
 
 **Note**
-For more information about creating a product using the AWS Marketplace Management Portal, see the following topics in the *AWS Marketplace Seller Guide*:
+For more information about creating a product using AWS Partner Central, see the following topics in the *AWS Marketplace Seller Guide*:
 [Create your single-AMI product](https://docs.aws.amazon.com/marketplace/latest/userguide/ami-single-ami-products.html#ami-create-product)
 You cannot update the AMI for the version. If you need to update the AMI, create a new version instead.
 [Creating a container product](https://docs.aws.amazon.com/marketplace/latest/userguide/container-product-getting-started.html#create-container-product)
 [Creating a SaaS product](https://docs.aws.amazon.com/marketplace/latest/userguide/saas-create-product.html)
  [Creating a machine learning product](https://docs.aws.amazon.com/marketplace/latest/userguide/ml-creating-your-listing.html)
+ [Products Integrated with AWS Services](https://docs.aws.amazon.com/marketplace/latest/userguide/additional-product-types.html)
 If you use the AWS Marketplace Management Portal to create a product, the product will be in the `Staging` state.
 
 To create a product in `Draft` state, call the `StartChangeSet` API operation with the `CreateProduct` change type, as shown in the following example.
 
 **Request Syntax**
 
-```
+```json
 POST /StartChangeSet HTTP/1.1
 Content-type: application/json
 
@@ -116,7 +119,7 @@ Provide information for the fields to add the `CreateProduct` change type. This 
 
 A change set is created for your request. The response to this request gives you the `ChangeSetId` and `ChangeSetArn` for the change set and looks like the following.
 
-```
+```json
 {
   "ChangeSetId": "{{example123456789012abcdef}}",
    "ChangeSetArn": "arn:aws:aws-marketplace:{{us-east-1}}:{{123456789012}}:AWSMarketplace/ChangeSet/{{example123456789012abcdef}}"
@@ -160,7 +163,7 @@ To update product details, call the `StartChangeSet` API operation with the `Upd
 
 **Request Syntax**
 
-```
+```json
 POST /StartChangeSet HTTP/1.1
 Content-type: application/json
 
@@ -207,7 +210,12 @@ Content-type: application/json
         "SearchKeywords":
         [
           "{{123example456}}"
-        ]
+        ],
+        "TrustCenter":
+        {
+          "Provider": "Vanta",
+          "Url": "https://trust.example.com/my-product"
+        }
       }
     }
   ]
@@ -235,6 +243,9 @@ Currently, AWS Marketplace supports one URL in the array.
   + `Categories` (array of strings) – The list of AWS Marketplace defined product categories that describe your product. For more information, see [Product categories](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-product-categories.html) in the *AWS Marketplace Buyer Guide*.
   + `AssociatedProducts` (array of strings or null) – For `ProfessionalServicesProduct@1.0` only. The list of up to 10 product IDs of other AWS Marketplace products that complement your professional services product, with the most relevant product first. Each product must be a public Amazon Machine Image (AMI), container, data, machine learning, or SaaS product. Use `null` to unset this field. Other product types can't set this field and accept only `null`.
   + `SearchKeywords` (array of strings) – The list of keywords for your product to enhance the search experience. Seller name, product name, and product categories are automatically included in search keywords and don't need to be repeated here.
+  + `TrustCenter` (structure or null) – The trust center that hosts your product's security and compliance posture, shown to buyers on your product listing. Use `null` to remove the trust center from your product.
+    + `Provider` (string) (required) – The trust center provider. Valid values: `Drata`, `Vanta`, `Other`. With `Drata` or `Vanta`, buyers see your trust center on your listing. With `Other`, the listing links to your trust center URL.
+    + `Url` (string) (required) – The HTTPS URL of your product's trust center. The URL must be publicly accessible.
 
 **Note**
 When you are initially populating product information (metadata) for a `Draft` product, you will need to supply all of the following in the `DetailsDocument` object of `UpdateInformation` change type: `ProductTitle`, `ShortDescription`, `LongDescription`, `LogoUrl`, `Highlights`, `AdditionalResources`, `SupportDescription`, `Categories`, and `SearchKeywords`.
@@ -244,7 +255,7 @@ The `ProductTitle` can be omitted if it has already been provided during `Create
 
 A change set is created for your request. The response to this request gives you the `ChangeSetId` and `ChangeSetArn` for the change set and looks like the following.
 
-```
+```json
 {
   "ChangeSetId": "{{example123456789012abcdef}}",
    "ChangeSetArn": "arn:aws:aws-marketplace:{{us-east-1}}:{{123456789012}}:AWSMarketplace/ChangeSet/{{example123456789012abcdef}}"
@@ -274,6 +285,9 @@ The following schema validations are specific to `UpdateInformation` actions in 
 | Categories (array of strings) | Min 1 - Max 3 Required | 400 |
 | AssociatedProducts (array of strings or null) | Min 1 - Max 10 Each item is a product ID: `prod-` followed by 13 letters or digits, or a UUID<br />Optional | 400 |
 | SearchKeywords (array of strings) | Min 1 - Max 15 Max 50 chars for each item<br />Required | 400 |
+| TrustCenter (structure or null) | Optional. When provided, Provider and Url are both required and no other fields are allowed. | 400 |
+| TrustCenter.Provider (string) | One of: Drata, Vanta, Other | 400 |
+| TrustCenter.Url (string) | Max length: 2048<br />URL pattern:<br />^https://(www\\.)?[-a-zA-Z0-9@.\_]{1,256}\\.[a-zA-Z0-9()]{2,63}\\b([-a-zA-Z0-9()@:%\_\+.\~\#?&/=,]\*)$ | 400 |
 
 **Asynchronous Errors**
 
@@ -318,6 +332,9 @@ The following errors are specific to `UpdateInformation` actions in the AWS Mark
 | INVALID\_MEDIA | Malware detected in media. Please resubmit media without malware. |
 | TOO\_MANY\_MEDIA | Provide no more than 15 media items. |
 | DUPLICATE\_MEDIA | Duplicate media is not allowed for a product. Please provide media with no duplicates. |
+| INVALID\_URL | Invalid trust center URL: {Url} Provide a valid URL that does not exceed 2048 characters. |
+| URL\_NOT\_ACCESSIBLE | Trust center URL not accessible: {Url} Provide a new, accessible trust center URL. |
+| INVALID\_INPUT | TrustCenter is not supported in catalog {CatalogId}. Remove TrustCenter from the request. |
 
 ## Add pricing dimensions
 <a name="add-dimensions"></a>
@@ -328,6 +345,16 @@ A *pricing dimension* is a unit of measure that sellers define for charging buye
 
 **Note**
 For SaaS products with Free pricing model, you must create at least one dimension with UsageBasedPricingTerm or ConfigurableUpfrontPricingTerm, and all dimensions must be priced at $0.00. This requirement is unique to SaaS products and does not apply to AMI, container, or machine learning products.
+
+**Note**
+The dimension key `agentic_commerce_default` is reserved for Agentic Commerce products. When you list an Agentic Commerce product in the AWS Marketplace console, AWS Marketplace adds this dimension for you. When you use the AWS Marketplace Catalog API, you add it yourself with `AddDimensions`. Add it after the Agentic Commerce delivery option, later in the same change set or in a later change set. Use the following values:
+`Key`: `agentic_commerce_default`
+`Name`: `Agentic Commerce x402`
+`Description`: `Agentic Commerce meters this unit to bill buyers the seller's x402 quote price.`
+`Types`: `["Metered", "ExternallyMetered"]`
+`Unit`: `Units`
+Price the dimension at `1.00` USD in the product's public offer. AWS Marketplace meters this dimension for each verified payment, so that AWS Marketplace bills the buyer the amount in your signed quote. Don't send metering records for it. For more information, see [Configure pricing for Agentic Commerce products](work-with-saas-products.md#saas-agentic-commerce-pricing).
+Any product type, including an Agentic Commerce product, can return the error `INVALID_DIMENSION_KEY`. For example, it's returned for `agentic_commerce_default` if you add the dimension before the Agentic Commerce delivery option, or add it to a product that doesn't use the Agentic Commerce access model, because the key is reserved.
 
 **Note**
 New pricing dimensions have the following impacts on SaaS buyers:
@@ -345,6 +372,7 @@ For more information about adding pricing dimensions using the AWS Marketplace M
 + AMI-based products: [Update pricing](https://docs.aws.amazon.com/marketplace/latest/userguide/ami-single-ami-products.html#single-ami-update-product-pricing).
 + Container-based products: [Adding a pricing dimension](https://docs.aws.amazon.com/marketplace/latest/userguide/container-product-getting-started.html#container-add-pricing-dimensions).
 + SaaS-based products: [Add pricing dimensions](https://docs.aws.amazon.com/marketplace/latest/userguide/saas-product-settings.html#saas-add-pricing-dimensions).
++ Products integrated with AWS Services: see [Working with products integrated with AWS Services](work-with-additional-product-types.md).
 + ML products: Not supported. Machine learning products have fixed pricing dimensions. However, you can [Update pricing](https://docs.aws.amazon.com/marketplace/latest/userguide/ami-single-ami-products.html#single-ami-update-product-pricing).
 
 To add pricing dimensions, call the `StartChangeSet` API with the `AddDimensions` change type, as shown in the following example.
@@ -408,7 +436,7 @@ Provide the following fields for the `AddDimensions` change type.
 <tbody>
   <tr><td>[<code>Metered</code>] </td><td>AMI</td></tr>
   <tr><td>[<code>Metered, ExternallyMetered</code>] </td><td>SaaS, AMI/Flexible Consumption Pricing (FCP)When <code>ExternallyMetered</code> appears, <code>Metered</code> is masked/inferred.</td></tr>
-  <tr><td>[<code>Entitled</code>] </td><td>SaaS Contracts, ProServ Products The <code>Entitled</code> tag grants rights to use a software/service start and end dates for the usage. Also, to grant rights to have usage discount for AMI annual products. Each entitlement is identified by a <code>Dimension Key</code> in AWS Marketplace Entitlement Service for creating or updating the entitlements.</td></tr>
+  <tr><td>[<code>Entitled</code>] </td><td>SaaS Contracts, ProServ Products, and Products integrated with AWS Services The <code>Entitled</code> tag grants rights to use a software/service start and end dates for the usage. Also, to grant rights to have usage discount for AMI annual products. Each entitlement is identified by a <code>Dimension Key</code> in AWS Marketplace Entitlement Service for creating or updating the entitlements.</td></tr>
   <tr><td>[<code>Metered, ExternallyMetered, Entitled</code>] </td><td>Contracts with consumption pricing, where dimensions can be prepaid or metered, are a combination of both [<code>ExternallyMetered</code>] and [<code>Entitled</code>].</td></tr>
 </tbody>
 </table>
@@ -421,7 +449,7 @@ Provide the following fields for the `AddDimensions` change type.
 
 A change set is created for your request. The response to this request gives you the `ChangeSetId` and `ChangeSetArn` for the change set and looks like the following.
 
-```
+```json
 {
   "ChangeSetId": "{{example123456789012abcdef}}",
    "ChangeSetArn": "arn:aws:aws-marketplace:{{us-east-1}}:{{123456789012}}:AWSMarketplace/ChangeSet/{{example123456789012abcdef}}"
@@ -456,6 +484,7 @@ The following errors are specific to `AddDimensions` actions in the AWS Marketpl
 | INVALID\_DIMENSION | Dimension can't be added in current state '%s'. States that support dimension updates are %s. |
 | INVALID\_DIMENSION | Can't add dimension. The field '%s' has duplicate values '%s' in other dimensions. |
 | INVALID\_DIMENSION | Provide non-empty fields (Key, Unit, Name, Types) for each dimension. |
+| INVALID\_DIMENSION\_KEY | The dimension key provided '%s' is reserved by AWS Marketplace. Please use a different value. |
 | IINVALID\_TYPE | Remove invalid type '%s'. Valid types are ["Metered", "Entitled", "ExternallyMetered"]. |
 | INVALID\_UNIT | Remove invalid Unit '%s'. Valid units are ["GB", "Gbps", "HostHrs", "Hosts", "MB", "Mbps", "Requests", "TaskHrs", "TB", "TierHrs", "UnitHrs", "Units", "UserHrs", "Users"]. |
 | INVALID\_INPUT | Inappropriate content '%s' found in %s field. Provide %s with no inappropriate content. |
@@ -484,7 +513,7 @@ To update pricing dimensions, call the `StartChangeSet` API operation with the `
 
 **Request Syntax**
 
-```
+```json
 POST /StartChangeSet HTTP/1.1
 Content-type: application/json
 
@@ -533,7 +562,7 @@ Use the following fields with the `UpdateDimensions` change type:
 <tbody>
   <tr><td>[<code>Metered</code>] </td><td>AMI</td></tr>
   <tr><td>[<code>ExternallyMetered</code>] </td><td>SaaS, AMI/Flexible Consumption Pricing (FCP)When <code>ExternallyMetered</code> appears, <b>Metered</b> is masked/inferred.</td></tr>
-  <tr><td>[<code>Entitled</code>] </td><td>SaaS Contracts, ProServe Products The <code>Entitled</code> tag grants rights to use a software/service set start and end dates for the usage. Also, to grant rights to have usage discount for AMI annual products. Each entitlement is identified by a <b>Dimension Key</b> in AWS Marketplace Entitlement Service for creating or updating the entitlements.</td></tr>
+  <tr><td>[<code>Entitled</code>] </td><td>SaaS Contracts, ProServe Products, and Products integrated with AWS Services The <code>Entitled</code> tag grants rights to use a software/service set start and end dates for the usage. Also, to grant rights to have usage discount for AMI annual products. Each entitlement is identified by a <b>Dimension Key</b> in AWS Marketplace Entitlement Service for creating or updating the entitlements.</td></tr>
   <tr><td>[<code>ExternallyMetered, Entitled</code>] </td><td>Contracts with Consumption Pricing, where dimensions can be prepaid or metered are a combination of both [<code>ExternallyMetered</code>] and [<code>Entitled</code>].</td></tr>
 </tbody>
 </table>
@@ -548,7 +577,7 @@ Use the following fields with the `UpdateDimensions` change type:
 
 A change set is created for your request. The response to this request gives you the `ChangeSetId` and `ChangeSetArn` for the change set and looks like the following.
 
-```
+```json
 {
   "ChangeSetId": "{{example123456789012abcdef}}",
    "ChangeSetArn": "arn:aws:aws-marketplace:{{us-east-1}}:{{123456789012}}:AWSMarketplace/ChangeSet/{{example123456789012abcdef}}"
@@ -601,7 +630,7 @@ The following example shows how to restrict the `Entitled` dimension for a SaaS 
 
 **Request Syntax**
 
-```
+```json
 POST /StartChangeSet HTTP/1.1
 Content-type: application/json
 
@@ -644,7 +673,7 @@ Use the following fields with the `RestrictDimensions` change type:
 
 A change set is created for your request. The response to this request gives you the `ChangeSetId` and `ChangeSetArn` for the change set and looks like the following.
 
-```
+```json
 {
   "ChangeSetId": "{{example123456789012abcdef}}",
    "ChangeSetArn": "arn:aws:aws-marketplace:{{us-east-1}}:{{123456789012}}:AWSMarketplace/ChangeSet/{{example123456789012abcdef}}"
@@ -698,7 +727,7 @@ To add AWS account IDs that are allowed to view the AMI, container, ML, or SaaS 
 
 **Request Syntax**
 
-```
+```json
 POST /StartChangeSet HTTP/1.1
 Content-type: application/json
 
@@ -740,7 +769,7 @@ Use the following the fields with the `UpdateTargeting` change type.
 
 A change set is created for your request. The response to this request gives you the `ChangeSetId` and `ChangeSetArn` for the change set and looks like the following.
 
-```
+```json
 {
   "ChangeSetId": "{{example123456789012abcdef}}",
    "ChangeSetArn": "arn:aws:aws-marketplace:{{us-east-1}}:{{123456789012}}:AWSMarketplace/ChangeSet/{{example123456789012abcdef}}"
@@ -802,7 +831,7 @@ To update your product's visibility, call the `StartChangeSet` API operation wit
 
 For when `TargetVisibility` is `Public` or `Limited`.
 
-```
+```json
 POST /StartChangeSet HTTP/1.1
 Content-type: application/json
 
@@ -828,7 +857,7 @@ Content-type: application/json
 
 For when `TargetVisibility` is `Restricted`.
 
-```
+```json
 POST /StartChangeSet HTTP/1.1
 Content-type: application/json
 
@@ -884,7 +913,7 @@ When `TargetVisibility` is `Public`, the AWS Marketplace Seller Operations team 
 
 A change set is created for your request. The response to this request gives you the `ChangeSetId` and `ChangeSetArn` for the change set and looks like the following.
 
-```
+```json
 {
   "ChangeSetId": "{{example123456789012abcdef}}",
    "ChangeSetArn": "arn:aws:aws-marketplace:{{us-east-1}}:{{123456789012}}:AWSMarketplace/ChangeSet/example123456789012abcdef"
@@ -917,13 +946,13 @@ The following errors are specific to `UpdateVisibility` actions in the AWS Marke
 You can use the Catalog API to publish a `Draft` AMI, container, ML, professional services, or SaaS product into `Limited` state in AWS Marketplace.
 
 **Note**
-For `AmiProduct@1.0` and `SaaSProduct@1.0`, the `ReleaseProduct` change type must be accompanied by `ReleaseOffer` change type on the corresponding draft public `Offer@1.0` entity created for this product.
+You don't need to include the `ReleaseOffer` change type in the same change set as `ReleaseProduct`.
 
 To publish a product, call the `StartChangeSet` API operation with the `ReleaseProduct` change type, as shown in the following example.
 
 **Request Syntax**
 
-```
+```json
 POST /StartChangeSet HTTP/1.1
 Content-type: application/json
 
@@ -954,7 +983,7 @@ Provide information for the fields to add to the `ReleaseProduct` change type. T
 
 A change set is created for your request. The response to this request gives you the `ChangeSetId` and `ChangeSetArn` for the change set and looks like the following.
 
-```
+```json
 {
   "ChangeSetId": "{{example123456789012abcdef}}",
    "ChangeSetArn": "arn:aws:aws-marketplace:{{us-east-1}}:{{123456789012}}:AWSMarketplace/ChangeSet/{{example123456789012abcdef}}"
@@ -1022,7 +1051,7 @@ Content-Type: application/json
 
 **Response**
 
-```
+```json
 HTTP/1.1 200
 Content-type: application/json
 
@@ -1071,7 +1100,7 @@ Content-Type: application/json
 
 **Response**
 
-```
+```json
 HTTP/1.1 200
 Content-type: application/json
 
@@ -1097,7 +1126,7 @@ Content-type: application/json
 
 **Request**
 
-```
+```json
 POST /ListEntities HTTP/1.1
 Content-Type: application/json
 
@@ -1119,7 +1148,7 @@ Content-Type: application/json
 
 **Response**
 
-```
+```json
 HTTP/1.1 200
 Content-type: application/json
 
@@ -1145,7 +1174,7 @@ Content-type: application/json
 
 **Request**
 
-```
+```json
 POST /ListEntities HTTP/1.1
 Content-Type: application/json
 
@@ -1178,7 +1207,7 @@ Content-Type: application/json
 
 **Response**
 
-```
+```json
 HTTP/1.1 200
 Content-type: application/json
 
@@ -1212,7 +1241,7 @@ GET /DescribeEntity?catalog=AWSMarketplace&entityId={{example-abcd-1234}} HTTP/1
 
 **Response**
 
-```
+```json
 HTTP/1.1 200
 Content-type: application/json
 
@@ -1241,7 +1270,7 @@ Content-type: application/json
 
 Making changes to seller products in the AWS Marketplace Catalog API involves creating change sets that describe the changes you want to make, and then using the `StartChangeSet` action to start the changes. The changes from the request can take minutes to hours or longer to complete, depending on the request. The response to this request looks like the following.
 
-```
+```json
 {
     "ChangeSetId": "{{example123456789012abcdef}}",
     "ChangeSetArn": "arn:aws:aws-marketplace:{{us-east-1}}:{{123456789012}}:AWSMarketplace/ChangeSet/{{example123456789012abcdef}}"
@@ -1252,7 +1281,7 @@ The change request is added to a queue and processed, including scanning the fil
 
 To check the status of your request, use the `DescribeChangeSet` action.
 
-```
+```json
 POST /DescribeChangeSet HTTP/1.1
 Content-type: application/json
 
@@ -1264,7 +1293,7 @@ Content-type: application/json
 
 The result of this call looks like the following (in this case, for adding a new version to a container product).
 
-```
+```json
 {
   "ChangeSetId": "{{example123456789012abcdef}}",
   "ChangeSetArn": "arn:aws:aws-marketplace:{{us-east-1}}:{{123456789012}}:AWSMarketplace/ChangeSet/{{example123456789012abcdef}}",
@@ -1365,7 +1394,7 @@ The `Status` field shows the current status of the request, in this case, `SUCCE
 
 If there are failures, the result can include two types of errors. For most errors, the error message is included directly. However, errors found while scanning the product for security vulnerabilities instead include a URL to a file that lists all of the errors found, in the `ErrorMessage` field. Errors found while scanning have the `ErrorCode` "`SCAN_ERROR`".
 
-```
+```json
 {
   "ChangeSetId": "{{example123456789012abcdef}}",
   "ChangeSetArn": "arn:aws:aws-marketplace:{{us-east-1}}:{{123456789012}}:AWSMarketplace/ChangeSet/{{example123456789012abcdef}}",

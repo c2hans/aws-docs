@@ -25,7 +25,7 @@ Add these permissions to your existing model customization service role for RFT 
 
 You must add Lambda invocation permissions. The following shows an example policy you can use:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -49,7 +49,7 @@ To use existing Amazon Bedrock model invocation logs as training data, add permi
 
 You need to provide Amazon S3 bucket access permissions for the input bucket. The following shows an example policy you can use:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -85,7 +85,7 @@ Only add these permissions to your Lambda execution role if you create your own 
 
 The following is an example for bedrock LLM as judge invocation using foundation models:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -104,7 +104,7 @@ The following is an example for bedrock LLM as judge invocation using foundation
 
 The following is an example for bedrock LLM as judge invocation using inference profile:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -30,7 +30,7 @@ In a blue/green deployment, you publish the new version alongside the current ve
 
 The following example uses the AWS CLI to send 10 percent of traffic to version `2` while version `1` continues to serve the remaining 90 percent.
 
-```
+```bash
 aws lambda update-alias \
   --function-name my-managed-instance-function \
   --name production \
@@ -46,7 +46,7 @@ In this command:
 
 To roll back, clear the routing configuration so that all traffic returns to the stable version.
 
-```
+```bash
 aws lambda update-alias \
   --function-name my-managed-instance-function \
   --name production \
@@ -93,7 +93,7 @@ Each step of a `$LATEST.PUBLISHED` rollout starts execution environments for the
 
 During an in-place deployment, Lambda replaces the old version's execution environments in three batches of about one third each. For each batch, Lambda stops routing invocations to those execution environments, waits for their in-flight invocations to complete, and then starts the new version in their place. The remaining execution environments serve all invocations in the meantime, so the function runs at reduced capacity and throttles the invocations it cannot serve. A function with a single execution environment will not be able to serve any invocations until the new version is ready. Lambda pauses scaling of the capacity provider until the rollout finishes. Because each batch drains before the next one starts, an in-place rollout might take longer than a regular one, and long-running invocations extend it further.
 
-In-place rollouts apply only to `$LATEST.PUBLISHED`. A numbered version still requires additional capacity to activate a new version, as a weighted alias keeps both versions active at the same time. If Lambda cannot launch the minimum number of execution environments, the version fails to activate and its state reason reports `InsufficientCapacityException`. To keep a GPU-accelerated function at full capacity during a rollout, reserve at least 33%\+ extra capacity in your ODCR to avoid switching to in-place rollout.
+In-place rollouts apply only to `$LATEST.PUBLISHED`. A numbered version still requires additional capacity to activate a new version, as a weighted alias keeps both versions active at the same time. If Lambda cannot launch the minimum number of execution environments, the version fails to activate and its state reason reports `InsufficientCapacityException`. To keep a GPU-accelerated function at full capacity during a rollout, size your ODCR for the function's capacity plus one batch of execution environments, which is at least a third more, so that Lambda doesn't switch to an in-place rollout.
 
 ## Configuring scaling after a deployment
 <a name="lambda-managed-instances-deployments-scaling-config"></a>
@@ -102,7 +102,7 @@ Each function version that you deploy has its own scaling configuration, which c
 
 The following example sets the scaling configuration for a specific version. Replace `2` with your version number or with `$LATEST.PUBLISHED`.
 
-```
+```bash
 aws lambda put-function-scaling-config \
   --function-name my-managed-instance-function \
   --qualifier 2 \
@@ -124,7 +124,7 @@ Keep the following considerations in mind when you manage Lambda Managed Instanc
 
 The following CloudFormation template shows a blue/green deployment. It creates a capacity provider, a Lambda Managed Instances function, two published versions (each with its own function scaling configuration), and an alias named `production` that routes 90 percent of traffic to the stable version and 10 percent to the canary version. To promote the canary, set the alias `FunctionVersion` to the canary version and remove the `RoutingConfig`. To roll back, remove the `RoutingConfig` so that all traffic returns to the stable version. Replace the subnet, security group, role, and Amazon S3 values with your own.
 
-```
+```YAML
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Lambda Managed Instances blue/green deployment with a weighted alias
 
@@ -195,7 +195,7 @@ Resources:
 
 The following CDK example (TypeScript) defines the same capacity provider and function using the level 1 (L1) constructs from the `aws-cdk-lib/aws-lambda` module. `operatorRole` and `executionRole` are IAM roles defined elsewhere in your stack.
 
-```
+```typescript
 import * as cdk from 'aws-cdk-lib';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
@@ -241,7 +241,7 @@ The following CDK example (TypeScript) uses AWS CodeDeploy to shift traffic to a
 
 `fn` is the L1 `CfnFunction` from the previous example. Because CodeDeploy's `LambdaDeploymentGroup` works with the level 2 (L2) alias and function constructs, import the L1 function by ARN and build the version and alias from it.
 
-```
+```typescript
 import * as cdk from 'aws-cdk-lib';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as codedeploy from 'aws-cdk-lib/aws-codedeploy';

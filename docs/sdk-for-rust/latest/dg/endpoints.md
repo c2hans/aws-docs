@@ -42,7 +42,7 @@ A service client's `ResolveEndpoint` implementation determines the final resolve
 
 The following example demonstrates supplying a custom endpoint resolver implementation for an Amazon S3 client that resolves a different endpoint per-stage, such as staging and production:
 
-```
+```rust
 use aws_sdk_s3::config::endpoint::{ResolveEndpoint, EndpointFuture, Params, Endpoint};
 
 #[derive(Debug)]
@@ -93,7 +93,7 @@ If you implement your own provider, you shouldn't need to construct your own ins
 
 It is important to understand that the following two configurations, one that uses `endpoint_url` and the other that uses `endpoint_resolver`, do NOT produce clients with equivalent endpoint resolution behavior.
 
-```
+```rust
 use aws_sdk_s3::config::endpoint::{ResolveEndpoint, EndpointFuture, Params, Endpoint};
 
 #[derive(Debug, Default)]
@@ -137,7 +137,7 @@ Custom endpoints are often used for testing. Instead of making calls out to the 
 
 As described in the previous sections, you can set `endpoint_url` directly in code to override the base endpoint to point to the local DynamoDB server. In your code:
 
-```
+```rust
     let config = aws_config::defaults(aws_config::BehaviorVersion::latest())
         .test_credentials()
         // DynamoDB run locally uses port 8000 by default.
@@ -156,7 +156,7 @@ The [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main
 
 You can set [service-specific endpoints](https://docs.aws.amazon.com/sdkref/latest/guide/feature-ss-endpoints.html) in your shared AWS `config` file. The following configuration profile sets `endpoint_url` to connect to `localhost` on port `4566`. For more information on LocalStack configuration, see [Accessing LocalStack via the endpoint URL](https://docs.localstack.cloud/references/network-troubleshooting/endpoint-url/) on the *LocalStack docs* website.
 
-```
+```ini
 [profile {{localstack}}]
 region=us-east-1
 endpoint_url = http://localhost:4566
@@ -164,7 +164,7 @@ endpoint_url = http://localhost:4566
 
 The SDK will pick up the changes in the shared `config` file and apply them to your SDK clients when you use the `localstack` profile. Using this approach, your code doesn't need to include any reference to endpoints, and would look like:
 
-```
+```rust
     // set the environment variable `AWS_PROFILE=localstack` when running
     // the application to source `endpoint_url` and point the SDK at the
     // localstack instance

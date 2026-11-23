@@ -42,7 +42,7 @@ Your messages are moved into a dead-letter queue using a *redrive policy*. A red
 
 The following JSON object is a sample redrive policy, attached to an SNS subscription.
 
-```
+```json
 {
   "deadLetterTargetArn": "arn:aws:sqs:us-east-2:123456789012:MyDeadLetterQueue"
 }

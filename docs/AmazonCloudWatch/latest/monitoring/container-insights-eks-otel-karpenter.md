@@ -17,7 +17,7 @@ Karpenter metrics help you answer operational questions such as:
 Karpenter metrics collection is enabled by default when the following requirements are met.
 + Amazon EKS cluster running Kubernetes 1.28 or later
 + Karpenter installed and running in the cluster (default namespace: `kube-system`)
-+ OTel Container Insights enabled on the cluster (see [Quick start: OTel Container Insights on Amazon EKS](container-insights-eks-otel-quickstart.md))
++ OTel Container Insights enabled on the cluster (see [Quick start](container-insights-eks-otel-quickstart.md))
 + The `amazon-cloudwatch-observability` add-on in `ACTIVE` status
 
 ## Configuring Karpenter metrics collection

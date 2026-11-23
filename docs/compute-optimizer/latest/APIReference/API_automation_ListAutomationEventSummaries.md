@@ -20,6 +20,7 @@ Provides a summary of automation events based on specified filters. Only events 
    ],
    "maxResults": {{number}},
    "nextToken": "{{string}}",
+   "organizationalUnitIds": [ "{{string}}" ],
    "startDateInclusive": "{{string}}"
 }
 ```
@@ -42,7 +43,7 @@ Type: Array of [AutomationEventFilter](API_automation_AutomationEventFilter.md) 
 Required: No
 
  ** [maxResults](#API_automation_ListAutomationEventSummaries_RequestSyntax) **   <a name="computeoptimizer-automation_ListAutomationEventSummaries-request-maxResults"></a>
-The maximum number of automation event summaries to return in a single response. Valid range is 1-1000.
+The maximum number of automation event summaries to return in a single response. If you don't specify a value, the default is 100.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
@@ -51,6 +52,14 @@ Required: No
 A token used for pagination to retrieve the next set of results when the response is truncated.
 Type: String
 Pattern: `[A-Za-z0-9+/=]+`
+Required: No
+
+ ** [organizationalUnitIds](#API_automation_ListAutomationEventSummaries_RequestSyntax) **   <a name="computeoptimizer-automation_ListAutomationEventSummaries-request-organizationalUnitIds"></a>
+ The organizational unit (OU) or organization root IDs to use to filter the results. The response includes event summaries for accounts in the specified OUs and their child OUs. Only the management account or a delegated administrator can specify this parameter.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 50 items.
+Length Constraints: Minimum length of 1. Maximum length of 68.
+Pattern: `(r-[0-9a-z]{4,32}|ou-[0-9a-z]{4,32}-[a-z0-9]{8,32})`
 Required: No
 
  ** [startDateInclusive](#API_automation_ListAutomationEventSummaries_RequestSyntax) **   <a name="computeoptimizer-automation_ListAutomationEventSummaries-request-startDateInclusive"></a>
@@ -114,11 +123,11 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
  You do not have sufficient permissions to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ForbiddenException **
  You are not authorized to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** InternalServerException **
  An internal error occurred while processing the request.
@@ -130,15 +139,15 @@ HTTP Status Code: 400
 
  ** OptInRequiredException **
  The account must be opted in to Compute Optimizer Automation before performing this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ServiceUnavailableException **
  The service is temporarily unavailable.
-HTTP Status Code: 500
+HTTP Status Code: 503
 
  ** ThrottlingException **
  The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_automation_ListAutomationEventSummaries_SeeAlso"></a>

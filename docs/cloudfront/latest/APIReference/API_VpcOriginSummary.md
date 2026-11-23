@@ -44,6 +44,17 @@ The VPC origin summary status.
 Type: String
 Required: Yes
 
+ ** AccountId **   <a name="cloudfront-Type-VpcOriginSummary-AccountId"></a>
+The account ID of the AWS account that owns the VPC origin.
+Type: String
+Required: No
+
+ ** IpAddressType **   <a name="cloudfront-Type-VpcOriginSummary-IpAddressType"></a>
+The IP address type of the CloudFront VPC origin. Valid values are `ipv4` and `dualstack`. IPv6-only is not supported for VPC origins.
+Type: String
+Valid Values: `ipv4 | dualstack`
+Required: No
+
 ## See Also
 <a name="API_VpcOriginSummary_SeeAlso"></a>
 

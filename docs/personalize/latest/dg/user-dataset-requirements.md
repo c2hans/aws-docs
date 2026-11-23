@@ -19,7 +19,7 @@ For more information on minimum requirements and maximum data limits for a Users
 
 The following example shows how to structure a Users schema. The `USER_ID` field is required and the `AGE` and `GENDER` fields are metadata. At least one metadata field is required and you can add at most 25 metadata fields. For information about schema requirements see [Custom dataset and schema requirements](custom-datasets-and-schemas.md#dataset-requirements).
 
-```
+```json
 {
   "type": "record",
   "name": "Users",

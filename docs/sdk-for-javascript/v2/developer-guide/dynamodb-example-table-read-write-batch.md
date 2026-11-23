@@ -31,7 +31,7 @@ To set up and run this example, first complete these tasks:
 
 Create a Node.js module with the file name `ddb_batchgetitem.js`. Be sure to configure the SDK as previously shown. To access DynamoDB, create an `AWS.DynamoDB` service object. Create a JSON object containing the parameters needed to get a batch of items, which in this example includes the name of one or more tables from which to read, the values of keys to read in each table, and the projection expression that specifies the attributes to return. Call the `batchGetItem` method of the DynamoDB service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -66,7 +66,7 @@ ddb.batchGetItem(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ddb_batchgetitem.js
 ```
 
@@ -77,7 +77,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `ddb_batchwriteitem.js`. Be sure to configure the SDK as previously shown. To access DynamoDB, create an `AWS.DynamoDB` service object. Create a JSON object containing the parameters needed to get a batch of items, which in this example includes the table into which you want to write items, the key(s) you want to write for each item, and the attributes along with their values. Call the `batchWriteItem` method of the DynamoDB service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -122,7 +122,7 @@ ddb.batchWriteItem(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ddb_batchwriteitem.js
 ```
 

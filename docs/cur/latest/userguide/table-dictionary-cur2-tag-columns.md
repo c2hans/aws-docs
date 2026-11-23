@@ -33,7 +33,7 @@ AWS uses the following prefixes to distinguish between different tag sources:
 
 Consider a scenario where multiple tagging mechanisms use the same tag keys. Here's how AWS handles them:
 
-```
+```json
 {
   "resourceTags/department": "teamA",
   "resourceTags/appName": "app1",

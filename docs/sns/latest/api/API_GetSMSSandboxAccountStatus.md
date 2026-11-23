@@ -49,7 +49,7 @@ This example illustrates one usage of GetSMSSandboxAccountStatus.
 #### Sample Request
 <a name="API_GetSMSSandboxAccountStatus_Example_1_Request"></a>
 
-```
+```xml
 https://sns.us-west-2.amazonaws.com/?Action=GetSMSSandboxAccountStatus
 &Version=2010-03-31
 &AUTHPARAMS
@@ -58,7 +58,7 @@ https://sns.us-west-2.amazonaws.com/?Action=GetSMSSandboxAccountStatus
 #### Sample Response
 <a name="API_GetSMSSandboxAccountStatus_Example_1_Response"></a>
 
-```
+```xml
 <GetSMSSandboxAccountStatusResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <GetSMSSandboxAccountStatusResult>
             <IsInSandbox>true</IsInSandbox>

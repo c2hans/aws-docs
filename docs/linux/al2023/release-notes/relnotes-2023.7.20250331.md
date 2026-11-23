@@ -33,20 +33,20 @@ This is the seventh quarterly release of AL2023. AL2023 is the current version o
 
   1. Install the `kernel6.12` package.
 
-     ```
+     ```sh
      $ sudo dnf install kernel6.12
      ```
 
   1. Set kernel 6.12 as the default kernel.
 
-     ```
+     ```sh
      $ version=$(rpm -q --qf '%{version}-%{release}.%{arch}\n' kernel6.12 | sort -V | tail -1)
      $ sudo grubby --set-default "/boot/vmlinuz-$version"
      ```
 
   1. Reboot the instance.
 
-     ```
+     ```sh
      $ sudo reboot
      ```
 +  OpenSSL has been updated to version 3.2.2. This update provides significant performance improvements, and some changes to how the OpenSSL FIPS provider is managed. For more information, see the [Security](https://docs.aws.amazon.com/linux/al2023/ug/security.html) section of the [AL2023 User Guide](https://docs.aws.amazon.com/linux/al2023/ug/), and the upstream [OpenSSL 3.2 Release Notes](https://openssl-library.org/news/openssl-3.2-notes/). This resolves [GitHub issue \#819](https://github.com/amazonlinux/amazon-linux-2023/issues/819).

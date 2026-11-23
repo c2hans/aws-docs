@@ -31,7 +31,7 @@ For a role to have permissions to share a model, it must have permissions to bot
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -67,7 +67,7 @@ You can also attach the more permissive [AWSResourceManagerFullAccess managed po
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

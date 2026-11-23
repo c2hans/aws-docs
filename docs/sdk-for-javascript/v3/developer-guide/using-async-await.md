@@ -15,7 +15,7 @@ For this example to run:
 Install the AWS SDK for JavaScript DynamoDB client by entering `npm install @aws-sdk/client-dynamodb` in the command line of your project.
 Ensure you have configured your AWS credentials correctly. For more information, see [Set credentials](setting-credentials.md).
 
-```
+```javascript
 import {
   DynamoDBClient,
   ListTablesCommand

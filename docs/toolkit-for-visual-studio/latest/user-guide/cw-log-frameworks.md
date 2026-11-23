@@ -15,7 +15,7 @@ Supported .NET logging frameworks include:
 
 The following is an example of an `NLog.config` file that enables both CloudWatch Logs and the console as output for log messages by adding the `AWS.Logger.NLog` NuGet package, and AWS target into `NLog.config`.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <nlog xmlns="http://www.nlog-project.org/schemas/NLog.xsd"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -40,7 +40,7 @@ The AWS .NET logging plugins are an open source project. For additional informat
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

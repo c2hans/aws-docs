@@ -23,19 +23,19 @@ Which resource ARN you specify depends on which action or actions you want to co
 
 You can indicate a specific domain ({{myDomain}}) in your statement using its ARN as follows.
 
-```
+```json
 "Resource": "arn:aws:codeartifact:{{us-east-2}}:{{123456789012}}:domain/{{myDomain}}"
 ```
 
 You can indicate a specific repository ({{myRepo}}) in your statement using its ARN as follows.
 
-```
+```json
 "Resource": "arn:aws:codeartifact:{{us-east-2}}:{{123456789012}}:domain/{{myDomain}}/{{myRepo}}"
 ```
 
 To specify multiple resources in a single statement, separate their ARNs with commas. The following statement applies to all packages and repositories in a specific domain.
 
-```
+```json
 "Resource": [
   "arn:aws:codeartifact:{{us-east-2}}:{{123456789012}}:domain/{{myDomain}}",
   "arn:aws:codeartifact:{{us-east-2}}:{{123456789012}}:repository/{{myDomain}}/*",

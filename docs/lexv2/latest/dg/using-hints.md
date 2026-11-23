@@ -53,7 +53,7 @@ Enter acronyms, or other words whose letters should be pronounced individually, 
 
 To add runtime hints to a slot, you use the `runtimeHints` structure that is part of the `sessionState` structure. The following is an example of the `runtimeHints` structure. It provides hints for two slots, "FirstName" and "LastName" for the "MakeAppointment" intent.
 
-```
+```json
 {
     "sessionState": {
         "intent": {},

@@ -60,7 +60,7 @@ You can reference the following authorization policy example to help you configu
 **Example authorization policy**
 The following example authorization policy allows a component to perform all client device auth IPC operations.
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.clientdevices.Auth": {

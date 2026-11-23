@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-c
 
 **Syntax**
 
-```
+```text
 FT.CREATE <index-name>
 ON HASH | JSON
 [PREFIX <count> <prefix1> [<prefix2>...]]
@@ -72,13 +72,13 @@ The following example uses arguments native to [valkey-cli](https://valkey.io/to
 **Example 1: Create some indexes**
 Create an index for vectors of size 2
 
-```
+```text
 FT.CREATE hash_idx1 ON HASH PREFIX 1 hash: SCHEMA vec AS VEC VECTOR HNSW 6 DIM 2 TYPE FLOAT32 DISTANCE_METRIC L2
 OK
 ```
 Create a 6-dimensional JSON index using the HNSW algorithm:
 
-```
+```text
 FT.CREATE json_idx1 ON JSON PREFIX 1 json: SCHEMA $.vec AS VEC VECTOR HNSW 6 DIM 6 TYPE FLOAT32 DISTANCE_METRIC L2
 OK
 ```
@@ -87,7 +87,7 @@ OK
 The following commands are formatted so they can be executed as arguments to the redis-cli terminal program. Developers using programming-language clients (such Python, Ruby, C\#, etc.) will need to follow their environment's handling rules for dealing with strings and binary data.
 Creating some hash and json data:
 
-```
+```text
 HSET hash:0 vec "\x00\x00\x00\x00\x00\x00\x00\x00"
 HSET hash:1 vec "\x00\x00\x00\x00\x00\x00\x80\xbf"
 JSON.SET json:0 . '{"vec":[1,2,3,4,5,6]}'
@@ -102,7 +102,7 @@ Note the following:
 
 **Example 3: Delete and re-create an index**
 
-```
+```text
 FT.DROPINDEX json_idx1
 OK
 
@@ -111,7 +111,7 @@ OK
 ```
 Note the new JSON index uses the `FLAT` algorithm instead of the `HNSW` algorithm. Also note that it will re-index the existing JSON data:
 
-```
+```text
 FT.SEARCH json_idx1 "*=>[KNN 100 @VEC $query_vec]" PARAMS 2 query_vec "\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00" DIALECT 2
 1) (integer) 3
 2) "json:2"

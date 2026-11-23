@@ -29,7 +29,7 @@ Your agent can get the skill in the following ways:
 + **Discover at runtime through the AWS MCP Server** – Agents connected to the AWS MCP Server can search for and load the skill on demand, without local installation. For more information, see [Skills](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/skills.html) in the *Agent Toolkit for AWS User Guide*.
 + **Install with the AWS CLI** – The following command installs the skill for the AI coding agents that are detected on your system. The command specifies the `us-east-1` Region because the skills catalog is available only in that Region. This doesn't limit where you can use the skill. For setup and version requirements, see [AWS CLI](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html) in the *Agent Toolkit for AWS User Guide*.
 
-  ```
+  ```bash
   aws agent-toolkit add-skill \
       --skill-name amazon-ec2-image-builder \
       --region us-east-1

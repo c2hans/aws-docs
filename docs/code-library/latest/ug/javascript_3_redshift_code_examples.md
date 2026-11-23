@@ -27,7 +27,7 @@ The following code example shows how to use `CreateCluster`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/redshift#code-examples).
 Create the client.
 
-```
+```javascript
 import { RedshiftClient } from "@aws-sdk/client-redshift";
 // Set the AWS Region.
 const REGION = "REGION";
@@ -37,7 +37,7 @@ export { redshiftClient };
 ```
 Create the cluster.
 
-```
+```javascript
 // Import required AWS SDK clients and commands for Node.js
 import { CreateClusterCommand } from "@aws-sdk/client-redshift";
 import { redshiftClient } from "./libs/redshiftClient.js";
@@ -78,7 +78,7 @@ The following code example shows how to use `DeleteCluster`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/redshift#code-examples).
 Create the client.
 
-```
+```javascript
 import { RedshiftClient } from "@aws-sdk/client-redshift";
 // Set the AWS Region.
 const REGION = "REGION";
@@ -88,7 +88,7 @@ export { redshiftClient };
 ```
 Create the cluster.
 
-```
+```javascript
 // Import required AWS SDK clients and commands for Node.js
 import { DeleteClusterCommand } from "@aws-sdk/client-redshift";
 import { redshiftClient } from "./libs/redshiftClient.js";
@@ -121,7 +121,7 @@ The following code example shows how to use `DescribeClusters`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/redshift#code-examples).
 Create the client.
 
-```
+```javascript
 import { RedshiftClient } from "@aws-sdk/client-redshift";
 // Set the AWS Region.
 const REGION = "REGION";
@@ -131,7 +131,7 @@ export { redshiftClient };
 ```
 Describe your clusters.
 
-```
+```javascript
 // Import required AWS SDK clients and commands for Node.js
 import { DescribeClustersCommand } from "@aws-sdk/client-redshift";
 import { redshiftClient } from "./libs/redshiftClient.js";
@@ -162,7 +162,7 @@ The following code example shows how to use `ModifyCluster`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/redshift#code-examples).
 Create the client.
 
-```
+```javascript
 import { RedshiftClient } from "@aws-sdk/client-redshift";
 // Set the AWS Region.
 const REGION = "REGION";
@@ -172,7 +172,7 @@ export { redshiftClient };
 ```
 Modify a cluster.
 
-```
+```javascript
 // Import required AWS SDK clients and commands for Node.js
 import { ModifyClusterCommand } from "@aws-sdk/client-redshift";
 import { redshiftClient } from "./libs/redshiftClient.js";

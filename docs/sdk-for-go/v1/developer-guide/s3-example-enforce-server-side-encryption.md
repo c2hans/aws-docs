@@ -16,7 +16,7 @@ Create the file *require\_server\_encryption.go*.
 
 Import the required packages.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -30,7 +30,7 @@ import (
 
 Set the name of the bucket, create a session, and create an Amazon S3 client.
 
-```
+```go
 bucket := "amzn-s3-demo-bucket"
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
@@ -41,7 +41,7 @@ svc := s3.New(sess)
 
 Create an Amazon S3 policy that requires server-side KMS encryption on objects uploaded to the bucket.
 
-```
+```go
 PolicyDoc := map[string]interface{}{
     "Version": "2012-10-17",
     "Statement": []map[string]interface{}{
@@ -75,7 +75,7 @@ PolicyDoc := map[string]interface{}{
 
 Convert the policy into JSON, create the input for and call `PutBucketPolicy`, apply the policy to the bucket, and print a success message.
 
-```
+```go
 policy, err := json.Marshal(PolicyDoc)
 input := &s3.PutBucketPolicyInput{
     Bucket: aws.String(bucket),

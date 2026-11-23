@@ -39,7 +39,7 @@ The new SageMaker AI Operators for Kubernetes provide the ability to adopt resou
 
 The following steps show how the new SageMaker AI Operators for Kubernetes can adopt an existing SageMaker AI endpoint. Save the following sample to a file named `adopt-endpoint-sample.yaml`.
 
-```
+```yaml
 apiVersion: services.k8s.aws/v1alpha1
 kind: AdoptedResource
 metadata:
@@ -58,19 +58,19 @@ spec:
 
 Submit the custom resource (CR) using `kubectl apply`:
 
-```
+```bash
 kubectl apply -f adopt-endpoint-sample.yaml
 ```
 
 Use `kubectl describe` to check the status conditions of your adopted resource.
 
-```
+```bash
 kubectl describe adoptedresource adopt-endpoint-sample
 ```
 
 Verify that the `ACK.Adopted` condition is `True`. The output should look similar to the following example:
 
-```
+```yaml
 ---
 kind: AdoptedResource
 metadata:
@@ -141,7 +141,7 @@ After uninstalling the old operator, you must explicitly remove the finalizers t
 **Note**
 You must use full resource names to get resources. For example, use `kubectl get trainingjobs.sagemaker.aws.amazon.com` instead of `kubectl get trainingjob`.
 
-```
+```bash
 namespace={{sagemaker_namespace}}
 training_jobs=$(kubectl get trainingjobs.sagemaker.aws.amazon.com -n $namespace -ojson | jq -r '.items | .[] | .metadata.name')
 

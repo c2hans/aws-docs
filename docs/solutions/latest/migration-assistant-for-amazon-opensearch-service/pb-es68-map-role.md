@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 If your Amazon OpenSearch Service domain has fine-grained access control enabled, the migration IAM role must be allowed to write metadata and documents. Map it as the domain’s master user (the Amazon OpenSearch Service fine-grained access control administrative user) by updating the domain’s advanced security options. Replace `<DOMAIN_NAME>` and the role ARN with your values:
 
-```
+```bash
 aws opensearch update-domain-config \
   --domain-name <DOMAIN_NAME> \
   --advanced-security-options '{

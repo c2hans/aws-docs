@@ -35,7 +35,7 @@ The following code example shows how to get started using DynamoDB.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 For more details on working with DynamoDB in AWS SDK for JavaScript, see [Programming DynamoDB with JavaScript](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/programming-with-javascript.html).
 
-```
+```javascript
 import { ListTablesCommand, DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient({});
@@ -67,7 +67,7 @@ The following code example shows how to:
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 
-```
+```javascript
 import { readFileSync } from "node:fs";
 import {
   BillingMode,
@@ -354,7 +354,7 @@ The following code example shows how to use `BatchExecuteStatement`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 Create a batch of items using PartiQL.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -381,7 +381,7 @@ export const main = async () => {
 ```
 Get a batch of items using PartiQL.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -415,7 +415,7 @@ export const main = async () => {
 ```
 Update a batch of items using PartiQL.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -445,7 +445,7 @@ export const main = async () => {
 ```
 Delete a batch of items using PartiQL.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -486,7 +486,7 @@ The following code example shows how to use `BatchGetItem`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 This example uses the document client to simplify working with items in DynamoDB. For API details see [BatchGet](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/BatchGetCommand/).
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { BatchGetCommand, DynamoDBDocumentClient } from "@aws-sdk/lib-dynamodb";
 
@@ -531,7 +531,7 @@ The following code example shows how to use `BatchWriteItem`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 This example uses the document client to simplify working with items in DynamoDB. For API details see [BatchWrite](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/BatchWriteCommand/).
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
   BatchWriteCommand,
@@ -591,7 +591,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 
-```
+```javascript
 import { CreateTableCommand, DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient({});
@@ -634,7 +634,7 @@ The following code example shows how to use `DeleteItem`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 This example uses the document client to simplify working with items in DynamoDB. For API details see [DeleteCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/DeleteCommand/).
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, DeleteCommand } from "@aws-sdk/lib-dynamodb";
 
@@ -665,7 +665,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 
-```
+```javascript
 import { DeleteTableCommand, DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient({});
@@ -690,7 +690,7 @@ The following code example shows how to use `DescribeTable`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 
-```
+```javascript
 import { DescribeTableCommand, DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient({});
@@ -717,7 +717,7 @@ The following code example shows how to use `DescribeTimeToLive`.
 **SDK for JavaScript (v3)**
 Describe TTL configuration on an existing DynamoDB table using AWS SDK for JavaScript.
 
-```
+```javascript
 import { DynamoDBClient, DescribeTimeToLiveCommand } from "@aws-sdk/client-dynamodb";
 
 export const describeTTL = async (tableName, region) => {
@@ -756,7 +756,7 @@ The following code example shows how to use `ExecuteStatement`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 Create an item using PartiQL.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -780,7 +780,7 @@ export const main = async () => {
 ```
 Get an item using PartiQL.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -805,7 +805,7 @@ export const main = async () => {
 ```
 Update an item using PartiQL.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -829,7 +829,7 @@ export const main = async () => {
 ```
 Delete an item using PartiQL.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -862,7 +862,7 @@ The following code example shows how to use `GetItem`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 This example uses the document client to simplify working with items in DynamoDB. For API details see [GetCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/GetCommand/).
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, GetCommand } from "@aws-sdk/lib-dynamodb";
 
@@ -892,7 +892,7 @@ The following code example shows how to use `ListTables`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 
-```
+```javascript
 import { ListTablesCommand, DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient({});
@@ -917,7 +917,7 @@ The following code example shows how to use `PutItem`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 This example uses the document client to simplify working with items in DynamoDB. For API details see [PutCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/PutCommand/).
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { PutCommand, DynamoDBDocumentClient } from "@aws-sdk/lib-dynamodb";
 
@@ -948,7 +948,7 @@ The following code example shows how to use `Query`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 This example uses the document client to simplify working with items in DynamoDB. For API details see [QueryCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/QueryCommand/).
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { QueryCommand, DynamoDBDocumentClient } from "@aws-sdk/lib-dynamodb";
 
@@ -984,7 +984,7 @@ The following code example shows how to use `Scan`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 This example uses the document client to simplify working with items in DynamoDB. For API details see [ScanCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/ScanCommand/).
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, ScanCommand } from "@aws-sdk/lib-dynamodb";
 
@@ -1016,7 +1016,7 @@ The following code example shows how to use `UpdateItem`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 This example uses the document client to simplify working with items in DynamoDB. For API details see [UpdateCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/UpdateCommand/).
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, UpdateCommand } from "@aws-sdk/lib-dynamodb";
 
@@ -1051,7 +1051,7 @@ The following code example shows how to use `UpdateTimeToLive`.
 **SDK for JavaScript (v3)**
 Enable TTL on an existing DynamoDB table.
 
-```
+```javascript
 import { DynamoDBClient, UpdateTimeToLiveCommand } from "@aws-sdk/client-dynamodb";
 
 export const enableTTL = async (tableName, ttlAttribute, region = 'us-east-1') => {
@@ -1088,7 +1088,7 @@ export const enableTTL = async (tableName, ttlAttribute, region = 'us-east-1') =
 ```
 Disable TTL on an existing DynamoDB table.
 
-```
+```javascript
 import { DynamoDBClient, UpdateTimeToLiveCommand } from "@aws-sdk/client-dynamodb";
 
 export const disableTTL = async (tableName, ttlAttribute, region = 'us-east-1') => {
@@ -1153,7 +1153,7 @@ The following code example shows how to compare multiple values with a single at
 **SDK for JavaScript (v3)**
 Compare multiple values with a single attribute using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
   DynamoDBDocumentClient,
@@ -1396,7 +1396,7 @@ async function compareWithOrConditions(
 ```
 Example usage of comparing multiple values with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example of how to use the compareMultipleValues function.
  */
@@ -1473,7 +1473,7 @@ The following code example shows how to conditionally update an item's TTL.
 **SDK for JavaScript (v3)**
 Update TTL on on an existing DynamoDB Item in a table, with a condition.
 
-```
+```javascript
 import { DynamoDBClient, UpdateItemCommand } from "@aws-sdk/client-dynamodb";
 import { marshall, unmarshall } from "@aws-sdk/util-dynamodb";
 
@@ -1531,7 +1531,7 @@ The following code example shows how to count expression operators in DynamoDB.
 **SDK for JavaScript (v3)**
 Demonstrate expression operator counting using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
   DynamoDBDocumentClient,
@@ -1866,7 +1866,7 @@ function countOperatorsInExpression(expression) {
 ```
 Example usage of expression operator counting with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example of how to work with expression operator counting.
  */
@@ -1971,7 +1971,7 @@ The following code example shows how to create a table with warm throughput enab
 **SDK for JavaScript (v3)**
 Create DynamoDB table with warm throughput setting using AWS SDK for JavaScript.
 
-```
+```javascript
 import { DynamoDBClient, CreateTableCommand } from "@aws-sdk/client-dynamodb";
 
 export async function createDynamoDBTableWithWarmThroughput(
@@ -2066,7 +2066,7 @@ The following code example shows how to create an item with TTL.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { DynamoDBClient, PutItemCommand } from "@aws-sdk/client-dynamodb";
 
 export function createDynamoDBItem(table_name, region, partition_key, sort_key) {
@@ -2122,7 +2122,7 @@ The following code example shows how to delete data using PartiQL DELETE stateme
 **SDK for JavaScript (v3)**
 Delete items from a DynamoDB table using PartiQL DELETE statements with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * This example demonstrates how to delete items from a DynamoDB table using PartiQL.
  * It shows different ways to delete documents with various index types.
@@ -2378,7 +2378,7 @@ The following code example shows how to insert data using PartiQL INSERT stateme
 **SDK for JavaScript (v3)**
 Insert items into a DynamoDB table using PartiQL INSERT statements with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * This example demonstrates how to insert items into a DynamoDB table using PartiQL.
  * It shows different ways to insert documents with various index types.
@@ -2574,7 +2574,7 @@ The following code example shows how to perform advanced query operations in Dyn
 **SDK for JavaScript (v3)**
 Query with strongly consistent reads using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -2622,7 +2622,7 @@ async function queryWithConsistentRead(
 ```
 Query using a Global Secondary Index with AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -2700,7 +2700,7 @@ async function queryGSI(
 ```
 Query with pagination using AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example demonstrating how to handle large query result sets in DynamoDB using pagination
  *
@@ -2809,7 +2809,7 @@ module.exports = { queryWithPagination };
 ```
 Query with complex filters using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -2864,7 +2864,7 @@ async function queryWithComplexFilter(
 ```
 Query with a dynamically constructed filter expression using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 async function queryWithDynamicFilter(
@@ -2947,7 +2947,7 @@ The following code example shows how to perform list operations in DynamoDB.
 **SDK for JavaScript (v3)**
 Demonstrate list operations using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
   DynamoDBDocumentClient,
@@ -3283,7 +3283,7 @@ async function getItem(
 ```
 Example usage of list operations with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example of how to work with lists in DynamoDB.
  */
@@ -3488,7 +3488,7 @@ The following code example shows how to perform map operations in DynamoDB.
 **SDK for JavaScript (v3)**
 Demonstrate map operations using AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example of updating map attributes in DynamoDB.
  *
@@ -3880,7 +3880,7 @@ The following code example shows how to perform set operations in DynamoDB.
 **SDK for JavaScript (v3)**
 Demonstrate set operations using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
   DynamoDBDocumentClient,
@@ -4188,7 +4188,7 @@ async function getItem(
 ```
 Example usage of set operations with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example of how to work with sets in DynamoDB.
  */
@@ -4329,7 +4329,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 Execute batch PartiQL statements.
 
-```
+```javascript
 import {
   BillingMode,
   CreateTableCommand,
@@ -4536,7 +4536,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 Execute single PartiQL statements.
 
-```
+```javascript
 import {
   BillingMode,
   CreateTableCommand,
@@ -4705,7 +4705,7 @@ The following code example shows how to query a table using a Global Secondary I
 **SDK for JavaScript (v3)**
 Query a DynamoDB table using the primary key with AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -4745,7 +4745,7 @@ async function queryTable(
 ```
 Query a DynamoDB Global Secondary Index (GSI) with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Queries a DynamoDB Global Secondary Index (GSI)
  *
@@ -4796,7 +4796,7 @@ The following code example shows how to query a table using a begins\_with condi
 **SDK for JavaScript (v3)**
 Query a DynamoDB table using a begins\_with condition on the sort key with AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -4857,7 +4857,7 @@ The following code example shows how to query a table using a date range in the 
 **SDK for JavaScript (v3)**
 Query a DynamoDB table for items within a date range with AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -4926,7 +4926,7 @@ The following code example shows how to query a table with a complex filter expr
 **SDK for JavaScript (v3)**
 Query a DynamoDB table with a complex filter expression using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -4992,7 +4992,7 @@ The following code example shows how to query a table with a dynamic filter expr
 **SDK for JavaScript (v3)**
 Query a DynamoDB table with a dynamically constructed filter expression using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 async function queryWithDynamicFilter(
@@ -5073,7 +5073,7 @@ The following code example shows how to query a table with nested attributes.
 **SDK for JavaScript (v3)**
 Query a DynamoDB table with nested attributes using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -5128,7 +5128,7 @@ The following code example shows how to query a table with pagination.
 **SDK for JavaScript (v3)**
 Query a DynamoDB table with pagination using AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example demonstrating how to handle large query result sets in DynamoDB using pagination
  *
@@ -5248,7 +5248,7 @@ The following code example shows how to query a table with strongly consistent r
 **SDK for JavaScript (v3)**
 Query a DynamoDB table with configurable read consistency using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -5304,7 +5304,7 @@ The following code example shows how to query data using PartiQL SELECT statemen
 **SDK for JavaScript (v3)**
 Query items from a DynamoDB table using PartiQL SELECT statements with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * This example demonstrates how to query items from a DynamoDB table using PartiQL.
  * It shows different ways to select data with various index types.
@@ -5538,7 +5538,7 @@ The following code example shows how to query for TTL items.
 **SDK for JavaScript (v3)**
 Query Filtered Expression to gather TTL items in a DynamoDB table using AWS SDK for JavaScript.
 
-```
+```javascript
 import { DynamoDBClient, QueryCommand } from "@aws-sdk/client-dynamodb";
 import { marshall, unmarshall } from "@aws-sdk/util-dynamodb";
 
@@ -5592,7 +5592,7 @@ The following code example shows how to query tables using date and time pattern
 **SDK for JavaScript (v3)**
 Query using date ranges in sort keys with AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -5650,7 +5650,7 @@ async function queryByDateRangeOnSortKey(
 ```
 Query using date-time variables with AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -5719,7 +5719,7 @@ The following code example shows how to understand update expression order.
 **SDK for JavaScript (v3)**
 Demonstrate update expression order using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
   DynamoDBDocumentClient,
@@ -6085,7 +6085,7 @@ async function demonstrateMultipleOperationsOnSameAttribute(
 ```
 Example usage of update expression order with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example of how to use update expression order of operations in DynamoDB.
  */
@@ -6209,7 +6209,7 @@ The following code example shows how to update a table's warm throughput setting
 **SDK for JavaScript (v3)**
 Update warm throughput setting on an existing DynamoDB table using AWS SDK for JavaScript.
 
-```
+```javascript
 import { DynamoDBClient, UpdateTableCommand } from "@aws-sdk/client-dynamodb";
 
 export async function updateDynamoDBTableWarmThroughput(
@@ -6273,7 +6273,7 @@ The following code example shows how to update an item's TTL.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { DynamoDBClient, UpdateItemCommand } from "@aws-sdk/client-dynamodb";
 import { marshall, unmarshall } from "@aws-sdk/util-dynamodb";
 
@@ -6323,7 +6323,7 @@ The following code example shows how to update data using PartiQL UPDATE stateme
 **SDK for JavaScript (v3)**
 Update items in a DynamoDB table using PartiQL UPDATE statements with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * This example demonstrates how to update items in a DynamoDB table using PartiQL.
  * It shows different ways to update documents with various index types.
@@ -6614,7 +6614,7 @@ The following code example shows how to use atomic counter operations in DynamoD
 **SDK for JavaScript (v3)**
 Demonstrate atomic counter operations using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
   DynamoDBDocumentClient,
@@ -6846,7 +6846,7 @@ async function getCounterValue(
 ```
 Example usage of atomic counter operations with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example of how to use the atomic counter operations.
  */
@@ -6948,7 +6948,7 @@ The following code example shows how to use conditional operations in DynamoDB.
 **SDK for JavaScript (v3)**
 Demonstrate conditional operations using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
   DynamoDBDocumentClient,
@@ -7254,7 +7254,7 @@ async function getItem(
 ```
 Example usage of conditional operations with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example of how to use conditional operations.
  */
@@ -7376,7 +7376,7 @@ The following code example shows how to use expression attribute names in Dynamo
 **SDK for JavaScript (v3)**
 Demonstrate expression attribute names using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
   DynamoDBDocumentClient,
@@ -7660,7 +7660,7 @@ async function getItem(
 ```
 Example usage of expression attribute names with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example of how to use expression attribute names.
  */
@@ -7803,7 +7803,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using JavaScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 exports.handler = async (event, context) => {
@@ -7821,7 +7821,7 @@ const logDynamoDBRecord = (record) => {
 ```
 Consuming a DynamoDB event with Lambda using TypeScript.
 
-```
+```javascript
 export const handler = async (event, context) => {
     console.log(JSON.stringify(event, null, 2));
     event.Records.forEach(record => {
@@ -7844,7 +7844,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using JavaScript.
 
-```
+```javascript
 export const handler = async (event) => {
   const records = event.Records;
   let curRecordSequenceNumber = "";
@@ -7864,7 +7864,7 @@ export const handler = async (event) => {
 ```
 Reporting DynamoDB batch item failures with Lambda using TypeScript.
 
-```
+```javascript
 import {
   DynamoDBBatchResponse,
   DynamoDBBatchItemFailure,

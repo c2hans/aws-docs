@@ -28,7 +28,7 @@ The following code example shows how to use `CreateQueue`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sqs#code-examples).
 Create an Amazon SQS standard queue.
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sqs->createqueue( iv_queuename = iv_queue_name ).        " oo_result is returned for testing purposes. "
         MESSAGE 'SQS queue created.' TYPE 'I'.
@@ -40,7 +40,7 @@ Create an Amazon SQS standard queue.
 ```
 Create an Amazon SQS queue that waits for a message to arrive.
 
-```
+```sap-abap
     TRY.
         DATA lt_attributes TYPE /aws1/cl_sqsqueueattrmap_w=>tt_queueattributemap.
         DATA ls_attribute TYPE /aws1/cl_sqsqueueattrmap_w=>ts_queueattributemap_maprow.
@@ -67,7 +67,7 @@ The following code example shows how to use `DeleteMessage`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sqs#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_sqs->deletemessage(
            iv_queueurl = iv_queue_url
@@ -89,7 +89,7 @@ The following code example shows how to use `DeleteMessageBatch`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sqs#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sqs->deletemessagebatch(       " oo_result is returned for testing purposes. "
            iv_queueurl = iv_queue_url
@@ -115,7 +115,7 @@ The following code example shows how to use `DeleteQueue`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sqs#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_sqs->deletequeue( iv_queueurl = iv_queue_url ).
         MESSAGE 'SQS queue deleted' TYPE 'I'.
@@ -131,7 +131,7 @@ The following code example shows how to use `GetQueueUrl`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sqs#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sqs->getqueueurl( iv_queuename = iv_queue_name ).        " oo_result is returned for testing purposes. "
         MESSAGE 'Queue URL retrieved.' TYPE 'I'.
@@ -149,7 +149,7 @@ The following code example shows how to use `ListQueues`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sqs#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sqs->listqueues( ).        " oo_result is returned for testing purposes. "
         MESSAGE 'Retrieved list of queues.' TYPE 'I'.
@@ -166,7 +166,7 @@ The following code example shows how to use `ReceiveMessage`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sqs#code-examples).
 Receive a message from an Amazon SQS queue.
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sqs->receivemessage( iv_queueurl = iv_queue_url ).    " oo_result is returned for testing purposes. "
         DATA(lt_messages) = oo_result->get_messages( ).
@@ -177,7 +177,7 @@ Receive a message from an Amazon SQS queue.
 ```
 Receive a message from an Amazon SQS queue using long-poll support.
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sqs->receivemessage(           " oo_result is returned for testing purposes. "
                 iv_queueurl = iv_queue_url
@@ -198,7 +198,7 @@ The following code example shows how to use `SendMessage`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sqs#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sqs->sendmessage(              " oo_result is returned for testing purposes. "
            iv_queueurl = iv_queue_url
@@ -220,7 +220,7 @@ The following code example shows how to use `SendMessageBatch`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sqs#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sqs->sendmessagebatch(         " oo_result is returned for testing purposes. "
            iv_queueurl = iv_queue_url
@@ -254,7 +254,7 @@ The following code example shows how to create and publish to a FIFO Amazon SNS 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sns#code-examples).
 Create a FIFO topic, subscribe an Amazon SQS FIFO queue to the topic, and publish a message to an Amazon SNS topic.
 
-```
+```sap-abap
     " Creates a FIFO topic. "
     DATA lt_tpc_attributes TYPE /aws1/cl_snstopicattrsmap_w=>tt_topicattributesmap.
     DATA ls_tpc_attributes TYPE /aws1/cl_snstopicattrsmap_w=>ts_topicattributesmap_maprow.

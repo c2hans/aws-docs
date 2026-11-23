@@ -15,7 +15,7 @@ For example, you can add auto-delete behavior to an L1 `CfnBucket`, which normal
 
 **Example**
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
@@ -26,7 +26,7 @@ bucket.cfnOptions.deletionPolicy = cdk.CfnDeletionPolicy.DELETE;
 bucket.with(new s3.mixins.BucketAutoDeleteObjects());
 ```
 
-```
+```javascript
 const cdk = require('aws-cdk-lib');
 const s3 = require('aws-cdk-lib/aws-s3');
 
@@ -37,7 +37,7 @@ bucket.cfnOptions.deletionPolicy = cdk.CfnDeletionPolicy.DELETE;
 bucket.with(new s3.mixins.BucketAutoDeleteObjects());
 ```
 
-```
+```python
 import aws_cdk as cdk
 import aws_cdk.aws_s3 as s3
 
@@ -48,7 +48,7 @@ bucket.cfn_options.deletion_policy = cdk.CfnDeletionPolicy.DELETE
 bucket.with_(s3.mixins.BucketAutoDeleteObjects())
 ```
 
-```
+```java
 import software.amazon.awscdk.*;
 import software.amazon.awscdk.services.s3.*;
 
@@ -59,7 +59,7 @@ bucket.getCfnOptions().setDeletionPolicy(CfnDeletionPolicy.DELETE);
 bucket.with(new BucketAutoDeleteObjects());
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.S3;
 
@@ -70,7 +70,7 @@ bucket.CfnOptions.DeletionPolicy = CfnDeletionPolicy.DELETE;
 bucket.With(new BucketAutoDeleteObjects());
 ```
 
-```
+```go
 bucket := awss3.NewCfnBucket(stack, jsii.String("MyBucket"), nil)
 bucket.CfnOptions().SetDeletionPolicy(awscdk.CfnDeletionPolicy_DELETE)
 
@@ -88,7 +88,7 @@ You can use Facades directly on L1 constructs without wrapping them in an L2:
 
 **Example**
 
-```
+```javascript
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
@@ -101,7 +101,7 @@ const role = new iam.Role(this, 'MyRole', {
 s3.BucketGrants.fromBucket(bucket).read(role);
 ```
 
-```
+```javascript
 const s3 = require('aws-cdk-lib/aws-s3');
 const iam = require('aws-cdk-lib/aws-iam');
 
@@ -114,7 +114,7 @@ const role = new iam.Role(this, 'MyRole', {
 s3.BucketGrants.fromBucket(bucket).read(role);
 ```
 
-```
+```python
 import aws_cdk.aws_s3 as s3
 import aws_cdk.aws_iam as iam
 
@@ -127,7 +127,7 @@ role = iam.Role(self, "MyRole",
 s3.BucketGrants.from_bucket(bucket).read(role)
 ```
 
-```
+```java
 import software.amazon.awscdk.services.s3.*;
 import software.amazon.awscdk.services.iam.*;
 
@@ -140,7 +140,7 @@ Role role = Role.Builder.create(this, "MyRole")
 BucketGrants.fromBucket(bucket).read(role);
 ```
 
-```
+```csharp
 using Amazon.CDK.AWS.S3;
 using Amazon.CDK.AWS.IAM;
 
@@ -154,7 +154,7 @@ var role = new Role(this, "MyRole", new RoleProps
 BucketGrants.FromBucket(bucket).Read(role);
 ```
 
-```
+```go
 bucket := awss3.NewCfnBucket(stack, jsii.String("MyBucket"), nil)
 role := awsiam.NewRole(stack, jsii.String("MyRole"), &awsiam.RoleProps{
     AssumedBy: awsiam.NewServicePrincipal(jsii.String("lambda.amazonaws.com"), nil),
@@ -196,7 +196,7 @@ For example, to instantiate a low-level Amazon S3 bucket L1 with analytics enabl
 
 **Example**
 
-```
+```javascript
 new s3.CfnBucket(this, 'amzn-s3-demo-bucket', {
   analyticsConfigurations: [
     {
@@ -207,7 +207,7 @@ new s3.CfnBucket(this, 'amzn-s3-demo-bucket', {
 });
 ```
 
-```
+```javascript
 new s3.CfnBucket(this, 'amzn-s3-demo-bucket', {
   analyticsConfigurations: [
     {
@@ -218,7 +218,7 @@ new s3.CfnBucket(this, 'amzn-s3-demo-bucket', {
 });
 ```
 
-```
+```python
 s3.CfnBucket(self, "amzn-s3-demo-bucket",
     analytics_configurations: [
         dict(id="Config",
@@ -228,14 +228,14 @@ s3.CfnBucket(self, "amzn-s3-demo-bucket",
 )
 ```
 
-```
+```java
 CfnBucket.Builder.create(this, "amzn-s3-demo-bucket")
     .analyticsConfigurations(Arrays.asList(java.util.Map.of(    // Java 9 or later
         "id", "Config", // ...
     ))).build();
 ```
 
-```
+```csharp
 new CfnBucket(this, 'amzn-s3-demo-bucket', new CfnBucketProps {
     AnalyticsConfigurations = new Dictionary<string, string>
     {
@@ -249,7 +249,7 @@ There might be rare cases where you want to define a resource that doesn’t hav
 
 **Example**
 
-```
+```javascript
 new cdk.CfnResource(this, 'amzn-s3-demo-bucket', {
   type: 'AWS::S3::Bucket',
   properties: {
@@ -264,7 +264,7 @@ new cdk.CfnResource(this, 'amzn-s3-demo-bucket', {
 });
 ```
 
-```
+```javascript
 new cdk.CfnResource(this, 'amzn-s3-demo-bucket', {
   type: 'AWS::S3::Bucket',
   properties: {
@@ -279,7 +279,7 @@ new cdk.CfnResource(this, 'amzn-s3-demo-bucket', {
 });
 ```
 
-```
+```python
 cdk.CfnResource(self, 'amzn-s3-demo-bucket',
   type="AWS::S3::Bucket",
   properties=dict(
@@ -294,7 +294,7 @@ cdk.CfnResource(self, 'amzn-s3-demo-bucket',
 )
 ```
 
-```
+```java
 CfnResource.Builder.create(this, "amzn-s3-demo-bucket")
         .type("AWS::S3::Bucket")
         .properties(java.util.Map.of(    // Map.of requires Java 9 or later
@@ -305,7 +305,7 @@ CfnResource.Builder.create(this, "amzn-s3-demo-bucket")
         .build();
 ```
 
-```
+```csharp
 new CfnResource(this, "amzn-s3-demo-bucket", new CfnResourceProps
 {
     Type = "AWS::S3::Bucket",
@@ -332,7 +332,7 @@ The basic approach to get access to the L1 construct is to use `construct.node.d
 
 **Example**
 
-```
+```javascript
 // Get the CloudFormation resource
 const cfnBucket = bucket.node.defaultChild as s3.CfnBucket;
 
@@ -345,7 +345,7 @@ cfnBucket.analyticsConfiguration = [
 ];
 ```
 
-```
+```javascript
 // Get the CloudFormation resource
 const cfnBucket = bucket.node.defaultChild;
 
@@ -358,7 +358,7 @@ cfnBucket.analyticsConfiguration = [
 ];
 ```
 
-```
+```python
 # Get the CloudFormation resource
 cfn_bucket = bucket.node.default_child
 
@@ -371,7 +371,7 @@ cfn_bucket.analytics_configuration = [
 ]
 ```
 
-```
+```java
 // Get the CloudFormation resource
 CfnBucket cfnBucket = (CfnBucket)bucket.getNode().getDefaultChild();
 
@@ -382,7 +382,7 @@ cfnBucket.setAnalyticsConfigurations(
 )
 ```
 
-```
+```csharp
 // Get the CloudFormation resource
 var cfnBucket = (CfnBucket)bucket.Node.DefaultChild;
 
@@ -399,30 +399,30 @@ You can also use this object to change AWS CloudFormation options such as `Metad
 
 **Example**
 
-```
+```javascript
 cfnBucket.cfnOptions.metadata = {
   MetadataKey: 'MetadataValue'
 };
 ```
 
-```
+```javascript
 cfnBucket.cfnOptions.metadata = {
   MetadataKey: 'MetadataValue'
 };
 ```
 
-```
+```python
 cfn_bucket.cfn_options.metadata = {
     "MetadataKey": "MetadataValue"
 }
 ```
 
-```
+```java
 cfnBucket.getCfnOptions().setMetadata(java.util.Map.of(    // Java 9+
     "MetadataKey", "Metadatavalue"));
 ```
 
-```
+```csharp
 cfnBucket.CfnOptions.Metadata = new Dictionary<string, object>
 {
     ["MetadataKey"] = "Metadatavalue"
@@ -443,29 +443,29 @@ You move to the higher abstraction level using a static method on the L2 class c
 
 **Example**
 
-```
+```javascript
 b1 = new s3.CfnBucket(this, "buck09", { ... });
 b2 = s3.Bucket.fromCfnBucket(b1);
 ```
 
-```
+```javascript
 b1 = new s3.CfnBucket(this, "buck09", { ...} );
 b2 = s3.Bucket.fromCfnBucket(b1);
 ```
 
-```
+```python
 b1 = s3.CfnBucket(self, "buck09", ...)
  b2 = s3.from_cfn_bucket(b1)
 ```
 
-```
+```java
 CfnBucket b1 = CfnBucket.Builder.create(this, "buck09")
 								// ....
 		                        .build();
 IBucket b2 = Bucket.fromCfnBucket(b1);
 ```
 
-```
+```csharp
 var b1 = new CfnBucket(this, "buck09", new CfnBucketProps { ... });
 var v2 = Bucket.FromCfnBucket(b1);
 ```
@@ -483,7 +483,7 @@ Use one of the `addOverride` methods (Python: `add_override`) methods, as shown 
 
 **Example**
 
-```
+```javascript
 // Get the CloudFormation resource
 const cfnBucket = bucket.node.defaultChild as s3.CfnBucket;
 
@@ -502,7 +502,7 @@ cfnBucket.addPropertyOverride('Tags.0.Value', 'NewValue');
 cfnBucket.addPropertyDeletionOverride('Tags.0');
 ```
 
-```
+```javascript
 // Get the CloudFormation resource
 const cfnBucket = bucket.node.defaultChild ;
 
@@ -521,7 +521,7 @@ cfnBucket.addPropertyOverride('Tags.0.Value', 'NewValue');
 cfnBucket.addPropertyDeletionOverride('Tags.0');
 ```
 
-```
+```python
 # Get the CloudFormation resource
 cfn_bucket = bucket.node.default_child
 
@@ -540,7 +540,7 @@ cfn_bucket.add_property_override("Tags.0.Value", "NewValue")
 cfn_bucket.add_property_deletion_override("Tags.0")
 ```
 
-```
+```java
 // Get the CloudFormation resource
 CfnBucket cfnBucket = (CfnBucket)bucket.getNode().getDefaultChild();
 
@@ -559,7 +559,7 @@ cfnBucket.addPropertyOverride("Tags.0.Value", "NewValue");
 cfnBucket.addPropertyDeletionOverride("Tags.0");
 ```
 
-```
+```csharp
 // Get the CloudFormation resource
 var cfnBucket = (CfnBucket)bucket.node.defaultChild;
 

@@ -16,7 +16,7 @@ The following examples show IAM policy documents that grant access to Bedrock Pr
 
 The following policy prevents a user from creating new projects:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -35,7 +35,7 @@ The following policy prevents a user from creating new projects:
 
 The following policy grants read-only access to a specific project:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -59,7 +59,7 @@ The following policy grants read-only access to a specific project:
 
 The following policy grants full access to all Bedrock Projects actions on a specific project:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

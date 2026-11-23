@@ -25,7 +25,7 @@ You can configure temporary credentials for the AWS SDK for Java in a number of 
 
   To set these variables on Linux, macOS, or Unix, use :
 
-  ```
+  ```sh
   export AWS_ACCESS_KEY_ID=your_access_key_id
   export AWS_SECRET_ACCESS_KEY=your_secret_access_key
   export AWS_SESSION_TOKEN=your_session_token
@@ -33,7 +33,7 @@ You can configure temporary credentials for the AWS SDK for Java in a number of 
 
   To set these variables on Windows, use:
 
-  ```
+  ```bat
   set AWS_ACCESS_KEY_ID=your_access_key_id
   set AWS_SECRET_ACCESS_KEY=your_secret_access_key
   set AWS_SESSION_TOKEN=your_session_token
@@ -47,7 +47,7 @@ Once you have set your AWS temporary credentials using one of these methods, the
 
 The AWS SDK for Java supports opt-in refreshing IMDS credentials in the background every 1 minute, regardless of the credential expiration time. This allows you to refresh credentials more frequently and reduces the chance that not reaching IMDS impacts the perceived AWS availability.
 
-```
+```java
  1. // Refresh credentials using a background thread, automatically every minute. This will log an error if IMDS is down during
  2. // a refresh, but your service calls will continue using the cached credentials until the credentials are refreshed
  3. // again one minute later.
@@ -80,7 +80,7 @@ You can use similar techniques to setting credentials to set your default AWS re
 
   \+
 
-  ```
+  ```cfg
   [default]
   region = your_aws_region
   ```
@@ -92,13 +92,13 @@ You can use similar techniques to setting credentials to set your default AWS re
 
   On Linux, macOS, or Unix, use ** `` **:
 
-  ```
+  ```sh
   export AWS_REGION=your_aws_region
   ```
 
   On Windows, use ** `` **:
 
-  ```
+  ```bat
   set AWS_REGION=your_aws_region
   ```
 

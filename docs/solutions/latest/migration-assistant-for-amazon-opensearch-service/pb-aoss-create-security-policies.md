@@ -11,7 +11,7 @@ Create the collection’s security policies **before** you create the collection
 
 The encryption policy selects the [AWS Key Management Service](https://aws.amazon.com/kms) (AWS KMS) key that protects the collection’s data at rest. The following example uses an AWS owned key (`AWSOwnedKey: true`) and matches a single collection named `vector-search`:
 
-```
+```bash
 aws opensearchserverless create-security-policy \
   --name vector-search-encryption \
   --type encryption \
@@ -30,7 +30,7 @@ The network policy controls whether the collection endpoint (and its OpenSearch 
 
 For a collection reachable over public networks:
 
-```
+```bash
 aws opensearchserverless create-security-policy \
   --name vector-search-network \
   --type network \
@@ -56,7 +56,7 @@ Even with public network access, the data access policy still controls which IAM
 
 The data access policy grants the migration IAM role the collection- and index-level permissions it needs to create indexes and bulk-index documents. The principal is the migration role created by the Amazon EKS deployment, named `<eks-cluster-name>-migrations-role`.
 
-```
+```bash
 aws opensearchserverless create-access-policy \
   --name vector-search-data \
   --type data \

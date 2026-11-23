@@ -12,7 +12,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the [`CreateCluster`](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCluster.html) action.
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -73,7 +73,7 @@ The Amazon EKS service linked roles make API calls to AWS resources. CloudTrail 
 
 The following example shows a CloudTrail log entry that demonstrates a [`DeleteInstanceProfile`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteInstanceProfile.html) action that’s made by the `AWSServiceRoleForAmazonEKSNodegroup` service linked role, noted in the `sessionContext`.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

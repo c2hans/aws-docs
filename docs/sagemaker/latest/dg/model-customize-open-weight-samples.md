@@ -594,7 +594,7 @@ def lambda_handler(event, context):
 
 **Sample reward function code**
 
-```
+```python
 # RLVR Evaluator for OSS
 # lambda_grader.py
 
@@ -788,7 +788,7 @@ def lambda_handler(event, context):
 
 **Sample reward prompt**
 
-```
+```jsonl
 You are an expert RAG response evaluator specializing in faithfulness and relevance assessment.
 Given: Context documents, a question, and response statements.
 Goal: Evaluate both statement-level faithfulness and overall response relevance to the question.

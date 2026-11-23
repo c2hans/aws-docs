@@ -12,6 +12,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functi
 
 **Example of a COALESCE function**
 
-```
+```SQL
 SELECT COALESCE (l.double_value, 100) AS non_double_value FROM latest_value_time_series AS l LIMIT 1
 ```

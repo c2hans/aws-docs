@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/ElasticLoadBalancerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an Elastic Load Balancing target group. The target group specifies how the load balancer forwards
     /// requests to instances in the group and how instance health is checked.
@@ -240,7 +240,7 @@ For more information, see Create a target group <https://docs.aws.amazon.com/ela
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 
-```
+```java
     /*
      * Creates an Elastic Load Balancing target group. The target group specifies
      * how
@@ -272,7 +272,7 @@ For more information, see Create a target group <https://docs.aws.amazon.com/ela
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
     const client = new ElasticLoadBalancingV2Client({});
     const { TargetGroups } = await client.send(
       new CreateTargetGroupCommand({
@@ -296,7 +296,7 @@ For more information, see Create a target group <https://docs.aws.amazon.com/ela
 **Tools for PowerShell V4**
 **Example 1: This example creates new Target group with the provided parameters.**
 
-```
+```powershell
 New-ELB2TargetGroup -HealthCheckEnabled 1 -HealthCheckIntervalSeconds 30 -HealthCheckPath '/index.html' -HealthCheckPort 80 -HealthCheckTimeoutSecond 5 -HealthyThresholdCount 2 -UnhealthyThresholdCount 5 -Port 80 -Protocol 'HTTP' -TargetType instance -VpcId 'vpc-2cfd7000' -Name 'NewTargetGroup'
 ```
 **Output:**
@@ -324,7 +324,7 @@ VpcId                      : vpc-2cfd7000
 **Tools for PowerShell V5**
 **Example 1: This example creates new Target group with the provided parameters.**
 
-```
+```powershell
 New-ELB2TargetGroup -HealthCheckEnabled 1 -HealthCheckIntervalSeconds 30 -HealthCheckPath '/index.html' -HealthCheckPort 80 -HealthCheckTimeoutSecond 5 -HealthyThresholdCount 2 -UnhealthyThresholdCount 5 -Port 80 -Protocol 'HTTP' -TargetType instance -VpcId 'vpc-2cfd7000' -Name 'NewTargetGroup'
 ```
 **Output:**
@@ -355,7 +355,7 @@ VpcId                      : vpc-2cfd7000
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/elastic-load-balancing#code-examples).
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 

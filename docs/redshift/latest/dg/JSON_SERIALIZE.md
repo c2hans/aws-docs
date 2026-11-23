@@ -36,7 +36,7 @@ The returned VARCHAR value is always a non-null JSON string. If *super\_expressi
 
 To serialize a `SUPER` value to a string, use the following example.
 
-```
+```sql
 SELECT JSON_SERIALIZE(JSON_PARSE('[10001,10002,"abc"]'));
 
 +---------------------+

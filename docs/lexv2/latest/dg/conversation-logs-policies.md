@@ -25,7 +25,7 @@ The following code is formatted for Linux and MacOS. For Windows, replace the Li
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -83,7 +83,7 @@ If you are logging audio to an S3 bucket, create a policy that enables Amazon Le
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -128,7 +128,7 @@ The following policy defines the permission to grant to the user, role, or group
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

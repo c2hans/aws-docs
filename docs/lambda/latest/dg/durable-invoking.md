@@ -9,9 +9,9 @@ Durable Lambda functions support the same invocation methods as other Lambda fun
 ## Invocation methods
 <a name="durable-invoking-methods"></a>
 
-**Synchronous invocation:** Invoke a durable function and wait for the response. Synchronous invocations are limited to 15 minutes, or less if the function timeout or execution timeout is lower. Use synchronous invocation when you need immediate results or when integrating with APIs and services that expect a response. You can use wait operations for efficient computation without disrupting the caller—the invocation waits for the entire durable execution to complete. For idempotent execution starts, use the execution name parameter as described in [Idempotency](durable-execution-idempotency.md).
+**Synchronous invocation:** Invoke a durable function and wait for the response. Synchronous invocations are limited to 30 minutes, or less if the function timeout or execution timeout is lower. Use synchronous invocation when you need immediate results or when integrating with APIs and services that expect a response. You can use wait operations for efficient computation without disrupting the caller—the invocation waits for the entire durable execution to complete. For idempotent execution starts, use the execution name parameter as described in [Idempotency](durable-execution-idempotency.md).
 
-```
+```bash
 aws lambda invoke \
   --function-name my-durable-function:1 \
   --cli-binary-format raw-in-base64-out \
@@ -21,7 +21,7 @@ aws lambda invoke \
 
 **Asynchronous invocation:** Queue an event for processing without waiting for a response. Lambda places the event in a queue and returns immediately. Asynchronous invocations support execution durations up to 1 year. Use asynchronous invocation for fire-and-forget scenarios or when processing can happen in the background. For idempotent execution starts, use the execution name parameter as described in [Idempotency](durable-execution-idempotency.md).
 
-```
+```bash
 aws lambda invoke \
   --function-name my-durable-function:1 \
   --invocation-type Event \
@@ -95,7 +95,7 @@ When you invoke a durable function, Lambda creates a durable execution that can 
 
 1. **Completion:** When your function returns a final result or throws an unhandled error, the durable execution completes.
 
-For synchronous invocations, the caller waits for the entire durable execution to complete, including any wait operations. If the execution exceeds the invocation timeout (15 minutes or less), the invocation times out. For asynchronous invocations, Lambda returns immediately and the execution continues independently. Use the durable execution APIs to track execution status and retrieve final results.
+For synchronous invocations, the caller waits for the entire durable execution to complete, including any wait operations. If the execution exceeds the invocation timeout (30 minutes or less), the invocation times out. For asynchronous invocations, Lambda returns immediately and the execution continues independently. Use the durable execution APIs to track execution status and retrieve final results.
 
 ## Invoking from application code
 <a name="durable-invoking-with-sdk"></a>
@@ -105,7 +105,7 @@ Use the AWS SDKs to invoke durable functions from your application code, with th
 ------
 #### [ TypeScript ]
 
-```
+```typescript
 import { LambdaClient, InvokeCommand } from '@aws-sdk/client-lambda';
 
 const client = new LambdaClient({});
@@ -129,7 +129,7 @@ await client.send(new InvokeCommand({
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 import json
 
@@ -161,7 +161,7 @@ Durable functions can invoke any Lambda function, including another durable func
 ------
 #### [ TypeScript ]
 
-```
+```typescript
 export const handler = withDurableExecution(
   async (event: any, context: DurableContext) => {
     // Invoke another durable function and wait for result
@@ -179,7 +179,7 @@ export const handler = withDurableExecution(
 ------
 #### [ Python ]
 
-```
+```python
 @durable_execution
 def handler(event, context: DurableContext):
     # Invoke another durable function and wait for result

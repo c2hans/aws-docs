@@ -10,13 +10,13 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/jobs-managemen
 
 To determine the {{endpoint-url}} parameter for your CLI commands, run this command.
 
-```
+```bash
 aws iot describe-endpoint --endpoint-type=iot:Jobs
 ```
 
 This command returns the following output.
 
-```
+```json
 {
 "endpointAddress": "{{account-specific-prefix}}.jobs.iot.{{aws-region}}.amazonaws.com"
 }
@@ -36,7 +36,7 @@ The following data types are used by management and control applications to comm
 
 The `Job` object contains details about a job. The following example shows the syntax:
 
-```
+```JSON
 {
     "jobArn": "string",
     "jobId": "string",
@@ -106,7 +106,7 @@ For more information, see [`Job`](https://docs.aws.amazon.com/iot/latest/apirefe
 
 The `JobSummary` object contains a job summary. The following example shows the syntax:
 
-```
+```JSON
 {
     "jobArn": "string",
     "jobId": "string",
@@ -129,7 +129,7 @@ The `JobExecution` object represents the execution of a job on a device. The fol
 **Note**
 When you use the control plane API operations, the `JobExecution` data type doesn't contain a `JobDocument` field. To obtain this information, you can use the [`GetJobDocument`](https://docs.aws.amazon.com/iot/latest/apireference/API_GetJobDocument.html) API operation or the [`get-job-document`](https://docs.aws.amazon.com/cli/latest/reference/get-job-document.html) CLI command.
 
-```
+```JSON
 {
     "approximateSecondsBeforeTimedOut": 50,
     "executionNumber": 1234567890,
@@ -158,7 +158,7 @@ For more information, see [`JobExecution`](https://docs.aws.amazon.com/iot/lates
 
 The `JobExecutionSummary` object contains job execution summary information. The following example shows the syntax:
 
-```
+```JSON
 {
     "executionNumber": 1234567890,
     "queuedAt": timestamp,
@@ -175,7 +175,7 @@ For more information, see [`JobExecutionSummary`](https://docs.aws.amazon.com/io
 
 The `JobExecutionSummaryForJob` object contains a summary of information about job executions for a specific job. The following example shows the syntax:
 
-```
+```JSON
 {
     "executionSummaries": [
         {
@@ -199,7 +199,7 @@ For more information, see [`JobExecutionSummaryForJob`](https://docs.aws.amazon.
 
 The `JobExecutionSummaryForThing` object contains a summary of information about a job execution on a specific thing. FThe following example shows the syntax:
 
-```
+```JSON
 {
     "executionSummaries": [
         {
@@ -259,7 +259,7 @@ aws iot  associate-targets-with-job \
 
  `cli-input-json` format:
 
-```
+```JSON
 {
 "targets": [
 "string"
@@ -308,7 +308,7 @@ aws iot cancel-job \
 
  `cli-input-json` format:
 
-```
+```JSON
 {
     "jobId": "string",
     "force": boolean,
@@ -359,7 +359,7 @@ aws iot cancel-job-execution \
 
  `cli-input-json` format:
 
-```
+```JSON
 {
 "jobId": "string",
 "thingName": "string",
@@ -468,7 +468,7 @@ aws iot create-job \
 
  `cli-input-json` format:
 
-```
+```JSON
 {
     "jobId": "string",
     "targets": [ "string" ],
@@ -544,7 +544,7 @@ aws iot  delete-job \
 
  `cli-input-json` format:
 
-```
+```JSON
 {
 "jobId": "string",
 "force": boolean
@@ -584,7 +584,7 @@ aws iot  delete-job-execution \
 
  `cli-input-json` format:
 
-```
+```JSON
 {
 "jobId": "string",
 "thingName": "string",
@@ -623,7 +623,7 @@ aws iot describe-job \
 
  `cli-input-json` format:
 
-```
+```JSON
 {
 "jobId": "string"
 }
@@ -661,7 +661,7 @@ aws iot  describe-job-execution \
 
  `cli-input-json` format:
 
-```
+```JSON
 {
 "jobId": "string",
 "thingName": "string",
@@ -702,7 +702,7 @@ aws iot get-job-document \
 
  `cli-input-json` format:
 
-```
+```JSON
 {
 "jobId": "string"
 }
@@ -741,7 +741,7 @@ aws iot  list-job-executions-for-job \
 
  `cli-input-json` format:
 
-```
+```JSON
 {
 "jobId": "string",
 "status": "string",
@@ -783,7 +783,7 @@ aws iot list-job-executions-for-thing \
 
  `cli-input-json` format:
 
-```
+```JSON
 {
 "thingName": "string",
 "status": "string",
@@ -827,7 +827,7 @@ aws iot list-jobs \
 
  `cli-input-json` format:
 
-```
+```JSON
 {
 "status": "string",
 "targetSelection": "string",
@@ -903,7 +903,7 @@ aws iot  update-job \
 
  `cli-input-json` format:
 
-```
+```JSON
 {
 "description": "string",
 "presignedUrlConfig": {

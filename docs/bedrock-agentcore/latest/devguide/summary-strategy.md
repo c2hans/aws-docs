@@ -62,7 +62,7 @@ To return only full session summaries, filter on the system-generated `x-amz-age
 
 The following AWS CLI command lists only the full session summary for a session:
 
-```
+```bash
 aws bedrock-agentcore list-memory-records \
   --memory-id "<memory-id>" \
   --namespace "/strategy/<memory-strategy-id>/actor/<actor-id>/session/<session-id>/" \

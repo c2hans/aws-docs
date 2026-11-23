@@ -38,7 +38,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 **Example: CreateLifecyclePolicy**
 The following is an example CloudTrail log entry for the `CreateLifecyclePolicy` action.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -112,7 +112,7 @@ The following is an example CloudTrail log entry for the `CreateLifecyclePolicy`
 **Example: DeleteLifecyclePolicy**
 The following is an example CloudTrail log entry for the `DeleteLifecyclePolicy` action.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

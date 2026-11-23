@@ -45,7 +45,7 @@ When you disable a user's account, the user loses any permissions to access thei
 **To disable an AWS Managed Microsoft AD user account with the AWS CLI**
 +  Open the AWS CLI, and run the following command with your Directory ID and username:
 
-```
+```bash
 aws ds-data disable-user --directory-id {{d-1234567890}} --sam-account-name "{{jane.doe}}"
 ```
 
@@ -62,7 +62,7 @@ For more information, see [`disable-user`](https://docs.aws.amazon.com/cli/lates
 **To disable an AWS Managed Microsoft AD user account with AWS Tools for PowerShell**
 +  Open PowerShell, and run the following command with your Directory ID and username:
 
-```
+```ps
 Disable-DSDUser -DirectoryId {{d-1234567890}} -SAMAccountName "{{jane.doe}}"
 ```
 

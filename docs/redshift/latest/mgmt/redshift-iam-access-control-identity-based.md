@@ -18,7 +18,7 @@ The following shows an example of a permissions policy. The policy allows a user
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -301,7 +301,7 @@ The following example shows the policy document in JSON format to set up a trust
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -332,7 +332,7 @@ For the scheduler to use the `ResizeCluster` operation, add a permission that is
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -371,7 +371,7 @@ The following example shows the policy document in JSON format to set up a trust
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -413,7 +413,7 @@ The following policy shows the permissions required to run SageMaker AI Autopilo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -572,7 +572,7 @@ The following policy shows the full minimal permissions to allow access to Amazo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -845,7 +845,7 @@ To allow Amazon Redshift and SageMaker AI to assume the preceding IAM role to in
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -898,7 +898,7 @@ To work with model explanation, make sure that you have the permissions to call 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -932,7 +932,7 @@ If you want to create Forecast models, we recommend that you use the `AmazonFore
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -971,7 +971,7 @@ If you want to create Amazon Bedrock models, we recommend that you use the `Amaz
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1107,7 +1107,7 @@ The following policy allows access to all Amazon Redshift actions on all resourc
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -1137,7 +1137,7 @@ By default, all permissions are denied. However, sometimes you need to explicitl
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -1173,7 +1173,7 @@ The following policy allows a user to create, delete, modify, and reboot all clu
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -1218,7 +1218,7 @@ The following policy allows a user, for example User A, to do the following:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -1255,7 +1255,7 @@ If User A has allowed User B to access a snapshot, User B must have a policy suc
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -1296,7 +1296,7 @@ The following policy allows a user to copy any snapshot created from the cluster
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -1340,7 +1340,7 @@ The following policy allows a user to copy any snapshot created from the cluster
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -1409,7 +1409,7 @@ The following example policy allows a user to tag resources with the Amazon Reds
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1446,7 +1446,7 @@ The following policy enables the `GetCredentials`, `CreateClusterUser`, and `Joi
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
   "Statement": [
@@ -1505,7 +1505,7 @@ The following example shows a policy that allows the IAM role to call the `GetCl
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -1528,7 +1528,7 @@ The statement in the following example specifies a wildcard character (\*) as pa
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -1551,7 +1551,7 @@ The statement in the following example specifies a wildcard character (\*) as th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

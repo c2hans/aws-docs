@@ -26,7 +26,7 @@ The following code example shows how to use `GetThingShadow`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iop#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_iop->getthingshadow( iv_thingname = iv_thing_name ).
 
@@ -51,7 +51,7 @@ The following code example shows how to use `UpdateThingShadow`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iop#code-examples).
 
-```
+```sap-abap
     TRY.
         " Convert JSON string to xstring for payload
         DATA(lv_payload) = /aws1/cl_rt_util=>string_to_xstring( iv_shadow_state ).

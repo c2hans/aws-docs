@@ -14,7 +14,7 @@ You can use the following as the source for your default values.
 
 When you use the [CreateIntent](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateIntent.html) operation to add slots to an intent, you can add a list of default values. Default values are used in the order that they are listed. For example, suppose you have an intent with a slot with the following definition:
 
-```
+```json
 "slots": [
     {
         "botId": "{{string}}",

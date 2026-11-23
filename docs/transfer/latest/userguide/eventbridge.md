@@ -184,7 +184,7 @@ For example, the following event pattern matches against all events from Transfe
 
 The following event pattern example matches all of the SFTP connector events:
 
-```
+```json
 {
   "source": ["aws.transfer"],
   "detail-type": ["SFTP Connector File Send Completed", "SFTP Connector File Retrieve Completed",
@@ -194,7 +194,7 @@ The following event pattern example matches all of the SFTP connector events:
 
 The following event pattern example matches all Transfer Family failed events:
 
-```
+```json
 {
   "source": ["aws.transfer"],
   "detail-type": [{"wildcard", "*Failed"}]
@@ -203,7 +203,7 @@ The following event pattern example matches all Transfer Family failed events:
 
 The following event pattern example matches successful SFTP downloads for user {{username}}:
 
-```
+```json
 {
   "source": ["aws.transfer"],
   "detail-type": ["SFTP Server File Download Completed"],

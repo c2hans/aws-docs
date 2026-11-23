@@ -124,7 +124,7 @@ If the source is a Firehose delivery stream, the event input data model is as fo
 
 The following example shows input from a Firehose delivery stream:
 
-```
+```json
 {
    "invocationId":"00540a87-5050-496a-84e4-e7d92bbaf5e2",
    "applicationArn":"arn:aws:kinesisanalytics:us-east-1:12345678911:application/lambda-test",
@@ -182,7 +182,7 @@ If the source is a Kinesis data stream, the event input data model is as follows
 
 The following example shows input from a Kinesis data stream:
 
-```
+```json
 {
   "invocationId": "00540a87-5050-496a-84e4-e7d92bbaf5e2",
   "applicationArn": "arn:aws:kinesisanalytics:us-east-1:12345678911:application/lambda-test",
@@ -228,7 +228,7 @@ All records returned from your Lambda preprocessing function (with record IDs) t
 
 The following example shows output from a Lambda function:
 
-```
+```json
 {
   "records": [
     {

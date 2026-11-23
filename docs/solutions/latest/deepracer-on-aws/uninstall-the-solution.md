@@ -34,7 +34,7 @@ To uninstall the solution, use the AWS Management Console or the AWS Command Lin
 
 Determine whether the AWS Command Line Interface (AWS CLI) is available in your environment. For installation instructions, refer to [What Is the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS CLI User Guide*. After confirming that the AWS CLI is available, run the following command.
 
-```
+```bash
 $ aws cloudformation delete-stack --stack-name <installation-stack-name>
 ```
 
@@ -66,7 +66,7 @@ Repeat steps 4 through 7 until you delete all the S3 buckets.
 
 To delete the S3 bucket using AWS CLI, run the following command:
 
-```
+```bash
 $ aws s3 rb s3://<bucket-name> --force
 ```
 
@@ -89,6 +89,6 @@ Amazon CloudWatch Log Groups are also retained following stack deletion, and wil
 
 To delete a log group using AWS CLI, run the following command:
 
-```
+```bash
 $ aws logs delete-log-group --log-group-name <log-group-name>
 ```

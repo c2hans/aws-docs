@@ -154,6 +154,6 @@ You can do one of the following:
 + You can restart the AWS Managed Microsoft AD domain joined machines that were configured to receive certificates from the AWS Private CA. Then you can confirm the AWS Private CA has issued certificates to members of your AWS Managed Microsoft AD domain by following the procedure in [Microsoft documentation](https://learn.microsoft.com/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
 + You can use the following PowerShell command to update the certificates for your AWS Managed Microsoft AD:
 
-  ```
+  ```powershell
   certutil -pulse
   ```

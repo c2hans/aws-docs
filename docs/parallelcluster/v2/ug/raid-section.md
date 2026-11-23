@@ -10,7 +10,7 @@ Defines configuration settings for a RAID array that's built from a number of id
 
 The format is `[raid {{raid-name}}]`. {{raid-name}} must start with a letter, contain no more than 30 characters, and only contain letters, numbers, hyphens (-), and underscores (\_).
 
-```
+```ini
 [raid rs]
 shared_dir = raid
 raid_type = 1
@@ -40,7 +40,7 @@ Don't use `NONE` or `/NONE` as the shared directory.
 
 The following example mounts the array at `/raid`.
 
-```
+```ini
 shared_dir = raid
 ```
 
@@ -55,7 +55,7 @@ This parameter must be used together with `encrypted = true`, and it must have a
 
 For more information, see [Disk encryption with a custom KMS Key](tutorials_04_encrypted_kms_fs.md).
 
-```
+```ini
 ebs_kms_key_id = {{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}}
 ```
 
@@ -68,7 +68,7 @@ ebs_kms_key_id = {{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}}
 
 The default value is `false`.
 
-```
+```ini
 encrypted = false
 ```
 
@@ -85,7 +85,7 @@ Maximum number of volumes is `5`.
 
 The default value is `2`.
 
-```
+```ini
 num_of_raid_volumes = 2
 ```
 
@@ -106,7 +106,7 @@ For more information on RAID types, see [RAID info](https://docs.aws.amazon.com/
 
 The following example creates a RAID `0` array:
 
-```
+```ini
 raid_type = 0
 ```
 
@@ -134,7 +134,7 @@ Default `volume_iops` = 3000
 Supported values `volume_iops` = 3000–16000
 Maximum `volume_iops` to `volume_size` ratio = 500 IOPS per GiB. 5000 IOPS requires a `volume_size` of at least 10 GiB.
 
-```
+```ini
 volume_iops = 3000
 ```
 
@@ -161,7 +161,7 @@ Supported values `volume_size` = 1–16384 GiB
 Default `volume_size` = 500 GiB
 Supported values `volume_size` = 500–16384 GiB
 
-```
+```ini
 volume_size = 20
 ```
 
@@ -181,7 +181,7 @@ Supported values `volume_throughput` = 125–1000 MiB/s
 
 The ratio of `volume_throughput` to `volume_iops` can be no more than 0.25. The maximum throughput of 1000 MiB/s requires that the `volume_iops` setting is at least 4000.
 
-```
+```ini
 volume_throughput = 1000
 ```
 
@@ -216,7 +216,7 @@ For more information, see [Amazon EBS volume types](https://docs.aws.amazon.com/
 
 The default value is `gp2`.
 
-```
+```ini
 volume_type = io2
 ```
 

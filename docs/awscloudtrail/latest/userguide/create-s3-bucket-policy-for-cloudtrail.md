@@ -30,7 +30,7 @@ The following policy allows CloudTrail to write log files to the bucket from sup
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -120,7 +120,7 @@ The example policy includes an `aws:SourceArn` condition key for the Amazon S3 b
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -202,7 +202,7 @@ As a best practice, update the policy to use a permission with the CloudTrail se
 **Example bucket policy with service principal name**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

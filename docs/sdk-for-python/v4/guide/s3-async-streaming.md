@@ -23,7 +23,7 @@ The following program uploads a local file, streams the object back to a second 
 
  **Imports**
 
-```
+```python
 import asyncio
 
 from aws_sdk_s3 import AsyncS3Client, AsyncS3Config
@@ -31,7 +31,7 @@ from aws_sdk_s3 import AsyncS3Client, AsyncS3Config
 
  **Code**
 
-```
+```python
 BUCKET_NAME = "amzn-s3-demo-bucket"
 KEY = "reports/summary.csv"
 

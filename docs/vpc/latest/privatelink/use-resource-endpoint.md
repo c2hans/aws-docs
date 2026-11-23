@@ -55,3 +55,8 @@ Use the following procedure to create a VPC resource endpoint. After you create 
 **To create a resource endpoint using the command line**
 + [create-vpc-endpoint](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-vpc-endpoint.html) (AWS CLI)
 + [New-EC2VpcEndpoint](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2VpcEndpoint.html) (Tools for Windows PowerShell)
+
+## Monitor your resource endpoint
+<a name="monitor-resource-endpoint"></a>
+
+Amazon VPC Lattice publishes Amazon CloudWatch metrics for your resource endpoint to the `AWS/VpcLattice` namespace, using the `VPC Endpoint Id` dimension. Metrics include bytes processed, packets dropped, and new and active flows, overall or per Availability Zone. For more information, see [Resource endpoint and service-network endpoint metrics](privatelink-cloudwatch-metrics.md#resource-endpoint-service-network-endpoint-metrics).

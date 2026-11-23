@@ -37,20 +37,20 @@ The following procedure shows you how to create an authentication helper using c
 
 1. After installing the library, you need to add one or both of the descriptions into your `info.plist` file:
 
-   ```
+   ```swift
    Privacy - Location When In Use Usage Description
    Privacy - Location Always and When In Use Usage Description
    ```
 
 1. Next, import the AuthHelper in your class:
 
-   ```
+   ```swift
    import AmazonLocationiOSAuthSDKimport AmazonLocationiOSTrackingSDK
    ```
 
 1. Then you will create an `AuthHelper` object and use it with the AWS SDK, by creating an authentication helper using credentials from Amazon Cognito.
 
-   ```
+   ```swift
    let authHelper = AuthHelper()
    let locationCredentialsProvider = authHelper.authenticateWithCognitoUserPool(identityPoolId: "{{My-Cognito-Identity-Pool-Id}}", region: "{{My-region}}") //example: us-east-1
    let locationTracker = LocationTracker(provider: locationCredentialsProvider, trackerName: "{{My-tracker-name}}")
@@ -76,7 +76,7 @@ The Amazon Location mobile tracking iOS SDK has three inbuilt location filters.
 
 This example adds filters in the `LocationTracker` at the creation time:
 
-```
+```swift
 val config = LocationTrackerConfig(
     trackerName = "MY-TRACKER-NAME",
     logLevel = TrackingSdkLogLevel.DEBUG,
@@ -97,7 +97,7 @@ locationTracker = LocationTracker(
 
 This example enables and disables filter at runtime with `LocationTracker`:
 
-```
+```swift
 // To enable the filter
 locationTracker?.enableFilter(TimeLocationFilter())
 
@@ -206,7 +206,7 @@ Privacy - Location Always and When In Use Usage Description
 
 Start tracking the location:
 
-```
+```swift
 do {
     try locationTracker.startTracking()
     }
@@ -217,7 +217,7 @@ catch TrackingLocationError.permissionDenied {
 
 Resume tracking the location:
 
-```
+```swift
 do {
     try locationTracker.resumeTracking()
     }
@@ -228,13 +228,13 @@ catch TrackingLocationError.permissionDenied {
 
 Stop tracking the location:
 
-```
+```swift
 locationTracker.stopTracking()
 ```
 
 Start background tracking:
 
-```
+```swift
 do {
     locationTracker.startBackgroundTracking(mode: .Active) // .Active, .BatterySaving, .None
     }
@@ -245,7 +245,7 @@ catch TrackingLocationError.permissionDenied {
 
 Resume background tracking:
 
-```
+```swift
 do {
     locationTracker.resumeBackgroundTracking(mode: .Active)
     }
@@ -256,13 +256,13 @@ catch TrackingLocationError.permissionDenied {
 
 To stop background tracking:
 
-```
+```swift
 locationTracker.stopBackgroundTracking()
 ```
 
 Retrieve device's tracked locations from the tracker:
 
-```
+```swift
 func getTrackingPoints(nextToken: String? = nil) {
 let startTime: Date = Date().addingTimeInterval(-86400) // Yesterday's day date and time
 let endTime: Date = Date()

@@ -16,6 +16,9 @@ For an ongoing record of events in your AWS account, including events for Wickr,
 
 All Wickr actions are logged by CloudTrail. For example, calls to the `CreateAdminSession`, and `ListNetworks` actions generate entries in the CloudTrail log files.
 
+**Note**
+For management events, CloudTrail can redact only the request parameters that the Wickr API defines. If you include additional fields in a request that aren't part of the API, CloudTrail records them exactly as you sent them and doesn't redact them. Don't include passwords or other sensitive information in fields that aren't part of the API.
+
 Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
 + Whether the request was made with root or AWS Identity and Access Management (IAM) user credentials.
 + Whether the request was made with temporary security credentials for a role or federated user.

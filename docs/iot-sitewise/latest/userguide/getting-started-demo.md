@@ -41,7 +41,7 @@ Your IAM role must have the following permissions.
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

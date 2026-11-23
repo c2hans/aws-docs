@@ -16,7 +16,7 @@ A list of metrics and dimensions that are posted by AWS services can be found wi
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.cloudwatch.AmazonCloudWatch;
 import com.amazonaws.services.cloudwatch.AmazonCloudWatchClientBuilder;
 import com.amazonaws.services.cloudwatch.model.ListMetricsRequest;
@@ -26,7 +26,7 @@ import com.amazonaws.services.cloudwatch.model.Metric;
 
  **Code**
 
-```
+```java
 final AmazonCloudWatch cw =
     AmazonCloudWatchClientBuilder.defaultClient();
 

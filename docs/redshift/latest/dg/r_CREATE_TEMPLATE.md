@@ -94,7 +94,7 @@ MAXERROR 100;
 
 Use [SHOW TEMPLATE](r_SHOW_TEMPLATE.md) to get the definition of the template:
 
-```
+```sql
 SHOW TEMPLATE test_schema.demo_template;
 CREATE OR REPLACE TEMPLATE dev.test_schema.demo_template FOR COPY AS FORMAT AS JSON 'auto' NULL '' MAXERROR 100;
 ```

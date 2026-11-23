@@ -34,7 +34,7 @@ For more information, see [AWS Systems Manager Session Manager](https://docs.aws
 **Tools for PowerShell V4**
 **Example 1: This example retrieves the Session Manager connection status for an instance to determine whether it is connected and ready to receive Session Manager connections. **
 
-```
+```powershell
 Get-SSMConnectionStatus -Target i-0a1caf234f12d3dc4
 ```
 **Output:**
@@ -49,7 +49,7 @@ Connected i-0a1caf234f12d3dc4
 **Tools for PowerShell V5**
 **Example 1: This example retrieves the Session Manager connection status for an instance to determine whether it is connected and ready to receive Session Manager connections. **
 
-```
+```powershell
 Get-SSMConnectionStatus -Target i-0a1caf234f12d3dc4
 ```
 **Output:**

@@ -13,7 +13,7 @@ If you plan to use other AWS services with the Wickr data retention bot, you mus
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -42,7 +42,7 @@ You can create an IAM policy that is more strict by identifying the specific obj
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -63,7 +63,7 @@ An endpoint policy specifies the following information:
 
  Replace {{action-1}}, {{action-2}}, and {{action-3}} with the required permissions for the Directory Service APIs that you want to include in your policy. For a full list, see [Directory Service API permissions: Actions, resources, and conditions reference](UsingWithDS_IAM_ResourcePermissions.md).
 
-```
+```json
 {
    "Statement": [
       {
@@ -85,7 +85,7 @@ An endpoint policy specifies the following information:
 
  Replace {{action-1}}, {{action-2}}, and {{action-3}} with the required permissions for the Directory Service Data APIs that you want to include in your policy. For a full list, see [Directory Service API permissions: Actions, resources, and conditions reference](UsingWithDS_IAM_ResourcePermissions.md).
 
-```
+```json
 {
    "Statement": [
       {

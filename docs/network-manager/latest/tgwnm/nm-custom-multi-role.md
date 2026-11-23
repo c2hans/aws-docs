@@ -46,7 +46,7 @@ The `IAMRoleForAWSNetworkManagerCrossAccountResourceAccess` IAM policy role, bas
 
 The following is an example of the administrator role template.
 
-```
+```json
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Enables admin cross account resource access through switch role
 
@@ -74,7 +74,7 @@ Resources:
 
 The following is the read-only role template.
 
-```
+```json
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Enables read only cross account resource access through switch role
 Resources:
@@ -119,7 +119,7 @@ This policy enables administrator permission for the delegated administrator and
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -415,7 +415,7 @@ This policy enables read-only permission for the delegated administrator and man
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

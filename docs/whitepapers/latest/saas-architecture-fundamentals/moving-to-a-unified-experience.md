@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
 ![A diagram showing a conceptual view of an environment where all of the customers are managed, onboarded, billed, and operated through a shared model.](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/unified-environment.png)
 
+*A conceptual view of an environment where all of the customers are managed, onboarded, billed, and operated through a shared model*
+
  At first glance, this may not seem all that different than the prior model. However, as we dig in a bit further, you’ll see that there are fundamental, significant differences in these two approaches.
 
  First, you’ll notice that the customer environments have been renamed to tenants. This notion of a *tenant* is foundational to SaaS. The basic idea is that you have a single SaaS environment, and each one of your customers is viewed as a tenant of that environment, consuming the resources they need. A tenant could be a company with many users, or it could correlate directly to an individual user.

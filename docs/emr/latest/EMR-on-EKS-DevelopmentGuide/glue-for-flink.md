@@ -8,14 +8,14 @@ Amazon EMR on EKS with Apache Flink releases 6.15.0 and higher supports using th
 
 You must first create an AWS Glue database named `default` that serves as your Flink SQL Catalog. This Flink Catalog stores metadata such as databases, tables, paritions, views, functions, and other information needed to access data in other external systems.
 
-```
+```bash,sh,zsh
 aws glue create-database \
     --database-input "{\"Name\":\"default\"}"
 ```
 
 To enable AWS Glue support, use a `FlinkDeployment` spec. This example spec uses a Python script to quickly issue some Flink SQL statements to interact with the AWS Glue catalog.
 
-```
+```bash,sh,zsh
 apiVersion: flink.apache.org/v1beta1
 kind: FlinkDeployment
 metadata:
@@ -47,7 +47,7 @@ spec:
 
 The following is an example of what your PyFlink script might look like.
 
-```
+```bash,sh,zsh
 import logging
 import sys
 from pyflink.datastream import StreamExecutionEnvironment

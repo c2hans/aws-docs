@@ -10,7 +10,7 @@ Conditions in IAM policy statements are part of the syntax that you can use to s
 The first statement gives all CodeGuru Profiler permissions to all groups with the role. The second statement provides deny permissions to delete any profiling group with tag `{stage: prod}` from the role.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -41,7 +41,7 @@ The first statement gives all CodeGuru Profiler permissions to all groups with t
 The following policy prevents a role from tagging or untagging a resource if the resource is marked with the tag `{stage: prod}`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

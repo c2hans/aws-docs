@@ -46,7 +46,7 @@ For more information, see [Get information about a single on-premises instance](
 **Tools for PowerShell V4**
 **Example 1: This example gets information about the specified on-premises instance.**
 
-```
+```powershell
 Get-CDOnPremiseInstance -InstanceName AssetTag12010298EX
 ```
 **Output:**
@@ -64,7 +64,7 @@ Tags           : {Name}
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified on-premises instance.**
 
-```
+```powershell
 Get-CDOnPremiseInstance -InstanceName AssetTag12010298EX
 ```
 **Output:**

@@ -46,7 +46,7 @@ If *geom1* or *geom2* is not a two-dimensional (2D) geometry, then an error is r
 
 The following SQL returns the non-empty geometry representing the union of two input geometries.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Union(ST_GeomFromText('POLYGON((0 0,100 100,0 200,0 0))'), ST_GeomFromText('POLYGON((0 0,10 0,0 10,0 0))')));
 ```
 

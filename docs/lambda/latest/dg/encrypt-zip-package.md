@@ -35,7 +35,7 @@ The following example key policy allows all Lambda functions in account 11112222
 **Example AWS KMS key policy**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -67,7 +67,7 @@ When you use a customer managed key to encrypt a .zip deployment package, only [
 
 **Example AWS KMS AccessDeniedException**
 
-```
+```json
 {
     "Code": {
         "RepositoryType": "S3",

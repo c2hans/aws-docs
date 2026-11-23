@@ -32,7 +32,7 @@ Version 3 is the latest version of the AWS SDK for PHP. To complete this migrati
 
 For projects that were installed using Composer, in the Composer file, update the SDK package to version 3.148.0 of the SDK and then run the following command.
 
-```
+```php
 composer update aws/aws-sdk-php
 ```
 
@@ -42,7 +42,7 @@ Use one of the following methods. Be sure to place the updated SDK file in the l
 
 For projects that were installed using the Phar file, download the updated file: [`aws.phar`](https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.phar).
 
-```
+```php
 <?php
   require '/path/to/aws.phar';
 ?>
@@ -50,7 +50,7 @@ For projects that were installed using the Phar file, download the updated file:
 
 For projects that were installed using the Zip file, download the updated file: [``](https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.zip).
 
-```
+```php
 <?php
   require '/path/to/aws-autoloader.php';
 ?>
@@ -80,7 +80,7 @@ After updating your clients to read the new encryption formats, you can update y
 
  **Pre-migration**
 
-```
+```php
 use Aws\S3\Crypto\S3EncryptionClient;
 use Aws\S3\S3Client;
 
@@ -95,7 +95,7 @@ $encryptionClient = new S3EncryptionClient(
 
  **Post-migration**
 
-```
+```php
 use Aws\S3\Crypto\S3EncryptionClientV2;
 use Aws\S3\S3Client;
 
@@ -116,7 +116,7 @@ These examples use imports and variables defined in Example 1. For example, `$en
 
  **Pre-migration**
 
-```
+```php
 use Aws\Crypto\KmsMaterialsProvider;
 use Aws\Kms\KmsClient;
 
@@ -155,7 +155,7 @@ $result = $encryptionClient->getObject([
 
  **Post-migration**
 
-```
+```php
 use Aws\Crypto\KmsMaterialsProviderV2;
 use Aws\Kms\KmsClient;
 

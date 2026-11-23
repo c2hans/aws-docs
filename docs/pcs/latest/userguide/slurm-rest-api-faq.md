@@ -45,7 +45,7 @@ No, there are no additional charges for enabling or using the Slurm REST API fea
 
   Example error message:
 
-  ```
+  ```json
   {
   "errors": [
       {

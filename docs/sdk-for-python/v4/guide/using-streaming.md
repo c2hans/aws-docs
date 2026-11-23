@@ -25,7 +25,7 @@ An output event stream operation returns an open stream object. Calling the oper
 
 The following example calls the operation, enters the stream's asynchronous context, and waits for events with `async for`. It collects payload chunks and raises an error for an event type that the installed client doesn't recognize.
 
-```
+```python
 from aws_sdk_bedrock_runtime import AsyncBedrockRuntimeClient
 from aws_sdk_bedrock_runtime.models import (
     ResponseStreamChunk,
@@ -82,7 +82,7 @@ The following example uses Amazon Transcribe Streaming. The application supplies
 
 The following snippet contains the imports that the rest of this section shares.
 
-```
+```python
 import asyncio
 from collections.abc import AsyncIterable, Callable
 
@@ -112,7 +112,7 @@ A bidirectional stream exposes `input_stream` for events sent by the application
 
 The sender wraps each prepared payload in the generated event classes and awaits `send()`. The asynchronous source determines how the application produces those payloads.
 
-```
+```python
 async def send_audio(
     input_stream: AsyncEventPublisher[AudioStream],
     audio_chunks: AsyncIterable[bytes],
@@ -136,7 +136,7 @@ A bidirectional operation can return an initial modeled response before it start
 
 Each received item is one variant of the generated output event union. The receiver validates the variant and passes the modeled event payload to an application-provided handler. The handler determines how to interpret or store the service-specific payload.
 
-```
+```python
 async def receive_events(
     output_stream: AsyncEventReceiver[TranscriptResultStream],
     handle_event: Callable[[TranscriptEvent], None],
@@ -160,7 +160,7 @@ When iteration ends, the service has closed `output_stream` and no more output e
 
 If an application waits for all input to finish before it reads output, the service or client can block while output waits to be consumed. The following function starts the operation with keyword arguments for the initial request, enters the stream context, and uses `asyncio.gather()` to run the sender and receiver concurrently. The caller supplies the audio source, the event handler, and the sample rate of the audio.
 
-```
+```python
 async def transcribe_audio(
     client: AsyncTranscribeStreamingClient,
     audio_chunks: AsyncIterable[bytes],

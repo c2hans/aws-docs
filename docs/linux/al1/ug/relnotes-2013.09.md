@@ -67,14 +67,14 @@ We've improved the Ruby 1.9 experience on Amazon Linux 1 (AL1) by updating to th
 
 Ruby now has alternatives support in Amazon Linux 1 (AL1). You can switch between Ruby 1.8 and 1.9 with one command. To use Ruby 1.9, for example (as root):
 
-```
+```sh
 $ yum install ruby19
      $ alternatives --set ruby /usr/bin/ruby1.9
 ```
 
 To pick the Ruby version interactively:
 
-```
+```sh
 $ alternatives --config ruby
 ```
 

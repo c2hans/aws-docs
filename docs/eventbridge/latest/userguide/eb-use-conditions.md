@@ -68,7 +68,7 @@ The following example policy statement shows how to use the `creatorAccount` con
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -99,7 +99,7 @@ The `eventBusInvocation` indicates whether the invocation originates from a cros
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -132,7 +132,7 @@ The following example policies can be attached to an IAM user. Policy A allows t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -155,7 +155,7 @@ The following example policies can be attached to an IAM user. Policy A allows t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -217,7 +217,7 @@ The following policy allows an IAM user or role to create a rule where the sourc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -261,7 +261,7 @@ The following policy allows users to only create rules with `EventPatterns` that
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -300,7 +300,7 @@ The following policy allows users to create rules with `EventPatterns` that have
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -347,7 +347,7 @@ For example, the following policy allows the creation of rules only for events w
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -380,7 +380,7 @@ You can restrict an IAM user or role to creating rules only for events that have
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -443,7 +443,7 @@ If an IAM user or role has `events:PutTargets` permission, they can add any targ
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -466,7 +466,7 @@ To limit what target can be added to the rule, use the `events:TargetArn` condit
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -67,7 +67,7 @@ For example, suppose you want to allow account `444455556666` to use a symmetric
 **Note**
 The following example represents a sample key policy for sharing a KMS key with another account. Replace the example `Sid`, `Principal`, and `Action` values with valid values for the intended use of your KMS key.
 
-```
+```json
 {
     "Sid": "{{Allow an external account to use this KMS key}}",
     "Effect": "Allow",
@@ -98,7 +98,7 @@ For example, the following example key policy statement allows `ExampleRole` in 
 **Note**
 The following example represents a sample key policy for sharing a KMS key with another account. Replace the example `Sid`, `Principal`, and `Action` values with valid values for the intended use of your KMS key.
 
-```
+```json
 {
     "Sid": "{{Allow an external account to use this KMS key}}",
     "Effect": "Allow",
@@ -141,7 +141,7 @@ The following example IAM policy allows the principal to use the KMS key in acco
 **Note**
 The following example represents a sample IAM policy for sharing a KMS key with another account. Replace the example `Sid`, `Resource`, and `Action` values with valid values for the intended use of your KMS key.
 
-```
+```json
 {
     "Sid": "{{AllowUseOfKeyInAccount111122223333}}",
     "Effect": "Allow",

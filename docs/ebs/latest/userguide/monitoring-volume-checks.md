@@ -52,13 +52,13 @@ Alternatively, you can choose **Events** in the navigator to view all the events
 **To view volume status information**
 Use the [describe-volume-status](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-volume-status.html) command.
 
-```
+```bash
 aws ec2 describe-volume-status --volume-ids {{vol-01234567890abcdef}}
 ```
 
 Use the following example to identify impaired volumes.
 
-```
+```bash
 aws ec2 describe-volume-status --filters Name=volume-status.status,Values=impaired
 ```
 
@@ -68,13 +68,13 @@ aws ec2 describe-volume-status --filters Name=volume-status.status,Values=impair
 **To view volume status information**
 Use the [Get-EC2VolumeStatus](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2VolumeStatus.html) cmdlet.
 
-```
+```powershell
 Get-EC2VolumeStatus -VolumeId {{vol-01234567890abcdef}}
 ```
 
 Use the following example to identify impaired volumes.
 
-```
+```powershell
 Get-EC2VolumeStatus -Filter @{Name="volume-status.status"; Values="impaired"}
 ```
 

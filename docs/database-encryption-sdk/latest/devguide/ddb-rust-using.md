@@ -45,7 +45,7 @@ After you define your attribute actions, you must define which attributes are ex
 
 The following object model demonstrates how to specify `ENCRYPT_AND_SIGN`, `SIGN_ONLY`, `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`, and `DO_NOTHING` attribute actions with the Rust client. This example uses the prefix "`:`" to identify `DO_NOTHING` attributes.
 
-```
+```rs
 let attribute_actions_on_encrypt = HashMap::from([
     ("partition_key".to_string(), CryptoAction::SignOnly),
     ("sort_key".to_string(), CryptoAction::SignOnly),
@@ -62,7 +62,7 @@ When you use the AWS Database Encryption SDK, you must explicitly define an encr
 
 The following snippet defines a DynamoDB table encryption configuration using the low-level AWS Database Encryption SDK for DynamoDB API and allowed unsigned attributes defined by a distinct prefix.
 
-```
+```rs
 let table_config = DynamoDbTableEncryptionConfig::builder()
     .logical_table_name(ddb_table_name)
     .partition_key_name("partition_key")
@@ -100,7 +100,7 @@ The `algorithmSuiteId` defines which algorithm suite the AWS Database Encryption
 Unless you explicitly specify an alternative algorithm suite, the AWS Database Encryption SDK uses the [default algorithm suite](supported-algorithms.md#recommended-algorithms). The default algorithm suite uses the AES-GCM algorithm with key derivation, [digital signatures](concepts.md#digital-sigs), and [key commitment](concepts.md#key-commitment). Although the default algorithm suite is likely to be suitable for most applications, you can choose an alternate algorithm suite. For example, some trust models would be satisfied by an algorithm suite without digital signatures. For information about the algorithm suites that the AWS Database Encryption SDK supports, see [Supported algorithm suites in the AWS Database Encryption SDK](supported-algorithms.md).
 To select the [AES-GCM algorithm suite without ECDSA digital signatures](supported-algorithms.md#other-algorithms), include the following snippet in your table encryption configuration.
 
-```
+```rs
 .algorithm_suite_id(
     DbeAlgorithmSuiteId::AlgAes256GcmHkdfSha512CommitKeyEcdsaP384SymsigHmacSha384,
 )

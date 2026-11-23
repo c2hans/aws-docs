@@ -100,7 +100,7 @@ To completely remove the current key combination, press `Backspace` for Windows 
 
 1. In the `keybindings.settings` file, define each keybinding to be changed. The following is example syntax.
 
-   ```
+   ```json
    [
      {
        "command": "addfavorite",

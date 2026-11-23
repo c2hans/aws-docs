@@ -35,7 +35,7 @@ For example, suppose an IAM policy denies a user from creating data access polic
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -74,7 +74,7 @@ Being granted permissions within a data access policy is not sufficient to acces
 
 Data access control for OpenSearch Serverless uses the following IAM permissions. You can specify IAM conditions to restrict users to specific access policy names. Amazon OpenSearch Service also supports global IAM condition keys in resource-based access policies, including `aws:SecureTransport`. You can use `aws:SecureTransport` to require that requests to your domain be made over HTTPS. For example:
 
-```
+```json
 "Condition": {"Bool": {"aws:SecureTransport": "true"}}
 ```
 + `aoss:CreateAccessPolicy` – Create an access policy.
@@ -90,7 +90,7 @@ The following identity-based access policy allows a user to view all access poli
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -139,7 +139,7 @@ A data access policy includes a set of rules, each with the following elements:
 
 The following example policy grants alias and template permissions to the collection called `autopartsinventory`, as well as any collections that begin with the prefix `sales*`. It also grants read and write permissions to all indexes within the `autopartsinventory` collection, and any indexes in the `salesorders` collection that begin with the prefix `orders*`.
 
-```
+```json
 [
    {
       "Description": "Rule 1",
@@ -216,7 +216,7 @@ These permissions are specific to data access policies and are not IAM actions. 
 
 OpenSearch Dashboards provides [sample datasets](https://opensearch.org/docs/latest/dashboards/quickstart-dashboards/#adding-sample-data) that come with visualizations, dashboards, and other tools to help you explore Dashboards before you add your own data. To create indexes from this sample data, you need a data access policy that provides permissions to the dataset that you want to work with. The following policy uses a wildcard (`*`) to provide permissions to all three sample datasets.
 
-```
+```json
 [
   {
     "Rules": [
@@ -298,7 +298,7 @@ aws opensearchserverless list-access-policies --type data
 
 The request returns information about all configured data access policies. To view the pattern rules defined in the one specific policy, find the policy information in the contents of the `accessPolicySummaries` element in the response. Note the `name` and `type` of this policy and use these properties in a [GetAccessPolicy](https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIReference/API_GetAccessPolicy.html) request to receive a response with the following policy details:
 
-```
+```json
 {
     "accessPolicyDetails": [
         {

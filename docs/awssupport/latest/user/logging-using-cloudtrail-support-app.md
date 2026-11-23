@@ -36,7 +36,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 **Example : Log example for `CreateSlackChannelConfiguration`**
 The following example shows a CloudTrail log entry for the [CreateSlackChannelConfiguration](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_CreateSlackChannelConfiguration.html) operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -90,7 +90,7 @@ The following example shows a CloudTrail log entry for the [CreateSlackChannelCo
 **Example : Log example for `ListSlackChannelConfigurations`**
 The following example shows a CloudTrail log entry for the [ListSlackChannelConfigurations](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_ListSlackChannelConfigurations.html) operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -135,7 +135,7 @@ The following example shows a CloudTrail log entry for the [ListSlackChannelConf
 **Example : Log example for `GetAccountAlias`**
 The following example shows a CloudTrail log entry for the [GetAccountAlias](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_GetAccountAlias.html) operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

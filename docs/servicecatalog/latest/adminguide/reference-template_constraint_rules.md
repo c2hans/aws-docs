@@ -20,7 +20,7 @@ The `Rules` section of a template consists of the key name `Rules`, followed by 
 
 A rule can include a `RuleCondition` property and must include an `Assertions` property. For each rule, you can define only one rule condition; you can define one or more asserts within the `Assertions` property. You define a rule condition and assertions by using rule-specific intrinsic functions, as shown in the following pseudo template:
 
-```
+```json
 "Rules":{
    "Rule01":{
       "RuleCondition":{
@@ -63,7 +63,7 @@ For information on rule-specific intrinsic functions to define rule conditions a
 
 The following two rules check the value of the `InstanceType` parameter. Depending on the value of the Environment parameter (`test` or `prod`), the user must specify `m1.small` or `m1.large` for the `InstanceType` parameter. The `InstanceType` and `Environment` parameters must be declared in the `Parameters` section of the same template.
 
-```
+```json
 "Rules" : {
   "testInstanceType" : {
     "RuleCondition" : {"Fn::Equals":[{"Ref":"Environment"}, "test"]},

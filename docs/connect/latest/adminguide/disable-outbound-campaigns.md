@@ -11,7 +11,7 @@ To disable outbound campaigns, delete your outbound campaigns configuration by u
 
 The following example deletes the outbound campaigns configuration for an instance. Replace {{instance-id}} with the ID of your Connect Customer instance.
 
-```
+```bash
 aws connectcampaigns delete-connect-instance-config --connect-instance-id {{instance-id}}
 ```
 

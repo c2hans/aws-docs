@@ -32,7 +32,7 @@ For more information, see [Stop a deployment with CodeDeploy](https://docs.aws.a
 **Tools for PowerShell V4**
 **Example 1: This example attempts to stop the deployment with the specified deployment ID.**
 
-```
+```powershell
 Stop-CDDeployment -DeploymentId d-LJQNREYEX
 ```
 **Output:**
@@ -47,7 +47,7 @@ Pending    Stopping Pending. Stopping to schedule commands in the deployment ins
 **Tools for PowerShell V5**
 **Example 1: This example attempts to stop the deployment with the specified deployment ID.**
 
-```
+```powershell
 Stop-CDDeployment -DeploymentId d-LJQNREYEX
 ```
 **Output:**

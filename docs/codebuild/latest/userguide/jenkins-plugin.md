@@ -41,7 +41,7 @@ If you already have a Jenkins server set up and would like to only install the A
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [

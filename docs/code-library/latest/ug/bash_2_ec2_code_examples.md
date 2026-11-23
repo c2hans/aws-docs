@@ -38,7 +38,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```bash
 ###############################################################################
 # function get_started_with_ec2_instances
 #
@@ -783,7 +783,7 @@ function echo_repeat() {
 ```
 The DynamoDB functions used in this scenario.
 
-```
+```bash
 ###############################################################################
 # function ec2_create_keypair
 #
@@ -2045,7 +2045,7 @@ function ec2_delete_keypair() {
 ```
 The utility functions used in this scenario.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2121,7 +2121,7 @@ The following code example shows how to use `AllocateAddress`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_allocate_address
 #
@@ -2193,7 +2193,7 @@ function ec2_allocate_address() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2247,7 +2247,7 @@ The following code example shows how to use `AssociateAddress`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_associate_address
 #
@@ -2321,7 +2321,7 @@ function ec2_associate_address() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2375,7 +2375,7 @@ The following code example shows how to use `AuthorizeSecurityGroupIngress`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_authorize_security_group_ingress
 #
@@ -2475,7 +2475,7 @@ function ec2_authorize_security_group_ingress() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2529,7 +2529,7 @@ The following code example shows how to use `CreateKeyPair`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_create_keypair
 #
@@ -2606,7 +2606,7 @@ function ec2_create_keypair() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2660,7 +2660,7 @@ The following code example shows how to use `CreateSecurityGroup`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_create_security_group
 #
@@ -2736,7 +2736,7 @@ function ec2_create_security_group() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2790,7 +2790,7 @@ The following code example shows how to use `DeleteKeyPair`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_delete_keypair
 #
@@ -2850,7 +2850,7 @@ function ec2_delete_keypair() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2904,7 +2904,7 @@ The following code example shows how to use `DeleteSecurityGroup`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_delete_security_group
 #
@@ -2963,7 +2963,7 @@ function ec2_delete_security_group() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -3017,7 +3017,7 @@ The following code example shows how to use `DescribeImages`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_describe_images
 #
@@ -3084,7 +3084,7 @@ function ec2_describe_images() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -3138,7 +3138,7 @@ The following code example shows how to use `DescribeInstanceTypes`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # ec2_describe_instance_types
 #
@@ -3249,7 +3249,7 @@ function ec2_describe_instance_types() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -3303,7 +3303,7 @@ The following code example shows how to use `DescribeInstances`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_describe_instances
 #
@@ -3381,7 +3381,7 @@ function ec2_describe_instances() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -3435,7 +3435,7 @@ The following code example shows how to use `DescribeKeyPairs`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_describe_key_pairs
 #
@@ -3492,7 +3492,7 @@ function ec2_describe_key_pairs() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -3546,7 +3546,7 @@ The following code example shows how to use `DescribeSecurityGroups`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_describe_security_groups
 #
@@ -3611,7 +3611,7 @@ function ec2_describe_security_groups() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -3665,7 +3665,7 @@ The following code example shows how to use `DisassociateAddress`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_disassociate_address
 #
@@ -3726,7 +3726,7 @@ function ec2_disassociate_address() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -3780,7 +3780,7 @@ The following code example shows how to use `ReleaseAddress`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_release_address
 #
@@ -3841,7 +3841,7 @@ function ec2_release_address() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -3895,7 +3895,7 @@ The following code example shows how to use `RunInstances`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_run_instances
 #
@@ -3999,7 +3999,7 @@ function ec2_run_instances() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -4053,7 +4053,7 @@ The following code example shows how to use `StartInstances`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_start_instances
 #
@@ -4115,7 +4115,7 @@ function ec2_start_instances() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -4169,7 +4169,7 @@ The following code example shows how to use `StopInstances`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_stop_instances
 #
@@ -4231,7 +4231,7 @@ function ec2_stop_instances() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -4285,7 +4285,7 @@ The following code example shows how to use `TerminateInstances`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_terminate_instances
 #
@@ -4352,7 +4352,7 @@ function ec2_terminate_instances() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -4416,7 +4416,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/085-amazon-ecs-service-connect) repository.
 
-```
+```bash
 #!/bin/bash
 
 # ECS Service Connect Tutorial Script v4 - Modified to use Default VPC
@@ -5065,7 +5065,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/002-vpc-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # VPC Creation Script
@@ -5638,7 +5638,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/086-amazon-ecs-fargate-linux) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon ECS Fargate Tutorial Script - Version 5
@@ -6227,7 +6227,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/018-ecs-ec2) repository.
 
-```
+```bash
 #!/bin/bash
 
 # ECS EC2 Launch Type Tutorial Script - UPDATED VERSION
@@ -6913,7 +6913,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/036-rds-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Script to create an Amazon RDS DB instance
@@ -7204,7 +7204,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/055-amazon-vpc-lattice-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # VPC Lattice Service Network Tutorial Script
@@ -7571,7 +7571,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/020-ebs-gs-volumes) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Script to create and manage Amazon EBS volumes
@@ -7983,7 +7983,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/051-aws-direct-connect-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS Direct Connect Connection Management Script - Version 6
@@ -8326,7 +8326,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/030-marketplace-buyer-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS Marketplace Buyer Getting Started Script
@@ -8676,7 +8676,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/037-emr-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # EMR Getting Started Tutorial Script
@@ -9072,7 +9072,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/025-documentdb-gs) repository.
 
-```
+```bash
 #!/bin/bash
 # Amazon DocumentDB - Getting Started
 # This script creates a DocumentDB cluster with encrypted storage, stores the
@@ -9663,7 +9663,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/064-amazon-neptune-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon Neptune Getting Started Script
@@ -9989,7 +9989,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/065-amazon-elasticache-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon ElastiCache Getting Started Script
@@ -10282,7 +10282,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/058-elastic-load-balancing-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Elastic Load Balancing Getting Started Script - v2
@@ -10605,7 +10605,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/057-amazon-managed-streaming-for-apache-kafka-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon MSK Getting Started Tutorial Script - Version 8
@@ -11635,7 +11635,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/012-transitgateway-gettingstarted) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon VPC Transit Gateway CLI Script
@@ -12078,7 +12078,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/081-aws-elemental-mediaconnect-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS Elemental MediaConnect Getting Started Tutorial Script
@@ -12409,7 +12409,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/013-ec2-basics) repository.
 
-```
+```bash
 #!/bin/bash
 
 # EC2 Basics Tutorial Script - Revised
@@ -12835,7 +12835,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/069-aws-fault-injection-service-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS FIS CPU Stress Test Tutorial Script
@@ -13448,7 +13448,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/009-vpc-ipam-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # IPAM Getting Started CLI Script - Version 7
@@ -13838,7 +13838,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/008-vpc-private-servers-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # VPC with Private Subnets and NAT Gateways (IMDSv2 Compliant Version)
@@ -14484,7 +14484,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/022-ebs-intermediate) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Script for EBS operations: encryption, snapshots, and volume initialization
@@ -14801,7 +14801,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/015-vpc-peering) repository.
 
-```
+```bash
 #!/bin/bash
 
 # VPC Peering Connection Script - Version 6 (Security Enhanced)

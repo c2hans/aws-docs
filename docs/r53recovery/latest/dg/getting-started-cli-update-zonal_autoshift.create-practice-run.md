@@ -24,7 +24,7 @@ aws arc-zonal-shift create-practice-run-configuration \
       --blocked-dates 2023-12-01 --blocked-windows Mon:10:00-Mon:10:30
 ```
 
-```
+```json
 {
    "arn": "arn:aws:elasticloadbalancing:us-west-2:111122223333:ExampleALB123456890",
    "name": "zonal-shift-elb"

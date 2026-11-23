@@ -11,7 +11,7 @@ The [ModifyInstanceGroups](https://docs.aws.amazon.com/emr/latest/APIReference/A
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -50,7 +50,7 @@ A solution to this issue is to attach a policy statement to the identity that us
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -97,7 +97,7 @@ The following example demonstrates a policy that, when attached to an identity, 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

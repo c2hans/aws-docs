@@ -24,7 +24,7 @@ The following code example shows how to use `AdminInitiateAuth`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cgp#code-examples).
 
-```
+```sap-abap
     TRY.
         " Set up authentication parameters
         DATA(lt_auth_params) = VALUE /aws1/cl_cgpauthparamstype_w=>tt_authparameterstype(
@@ -76,7 +76,7 @@ The following code example shows how to use `AdminRespondToAuthChallenge`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cgp#code-examples).
 
-```
+```sap-abap
     TRY.
         " Build challenge responses
         DATA(lt_challenge_responses) = VALUE /aws1/cl_cgpchallengerspstyp00=>tt_challengeresponsestype(
@@ -134,7 +134,7 @@ The following code example shows how to use `AssociateSoftwareToken`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cgp#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_cgp->associatesoftwaretoken(
           iv_session = iv_session
@@ -161,7 +161,7 @@ The following code example shows how to use `ListUsers`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cgp#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_cgp->listusers(
           iv_userpoolid = iv_user_pool_id
@@ -188,7 +188,7 @@ The following code example shows how to use `VerifySoftwareToken`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cgp#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_cgp->verifysoftwaretoken(
           iv_session = iv_session

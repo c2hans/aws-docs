@@ -38,7 +38,7 @@ You can view accuracy metrics for your predictors using the Amazon Forecast Soft
 
 Using the [GetAccuracyMetrics](API_GetAccuracyMetrics.md) Operation, specif y your `PredictorArn` to view the RMSE, MASE, MAPE, WAPE, Average wQL, and wQL metrics for each backtest.
 
-```
+```json
 {
     "PredictorArn": "arn:aws:forecast:region:acct-id:predictor/example-id"
 }
@@ -195,7 +195,7 @@ Using the [`CreatePredictorBacktestExportJob`](API_CreatePredictorBacktestExport
 
 For example:
 
-```
+```json
 {
    "Destination": {
       "S3Config": {
@@ -244,7 +244,7 @@ Using the [`CreateAutoPredictor`](API_CreateAutoPredictor.md) operation, specify
 
 For example, to create a predictor at the `0.01`, `mean`, `0.65`, and `0.99` forecast types, use the following code.
 
-```
+```json
 {
     "ForecastTypes": [ "0.01", "mean", "0.65", "0.99" ],
 },
@@ -286,7 +286,7 @@ Using the [CreatePredictor](API_CreatePredictor.md) operation, set the backtest 
 
 For example, to run 2 backtests with a testing set of 10 time points, use the follow code.
 
-```
+```json
 "EvaluationParameters": {
     "BackTestWindowOffset": 10,
     "NumberOfBacktestWindows": 2
@@ -329,7 +329,7 @@ The `ObjectiveMetric` parameter accepts the following values:
 
 For example, to create a predictor with AutoML and optimize using the Mean Absolute Scaled Error (MASE) accuracy metric, use the following code.
 
-```
+```json
 {
     ...
     "PerformAutoML": "true",

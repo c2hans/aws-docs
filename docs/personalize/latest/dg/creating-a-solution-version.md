@@ -43,14 +43,14 @@ On the solution details page, you can track training progress in the **Solution 
 
 When your solution is ACTIVE, train the model by running the following command. Replace `solution arn` with the solution Amazon Resource Name (ARN) from [Configuring a custom solution in Amazon Personalize](customizing-solution-config.md).
 
-```
+```cmd
 aws personalize create-solution-version \
   --solution-arn {{solution arn}}
 ```
 
 The solution version ARN is displayed, for example:
 
-```
+```json
 {
   "solutionVersionArn": "arn:aws:personalize:us-west-2:acct-id:solution/SolutionName/<version-id>"
 }
@@ -58,14 +58,14 @@ The solution version ARN is displayed, for example:
 
 Check the training status of the solution version by using the `describe-solution-version` command. Provide the solution version ARN that was returned in the previous step. For more information about the API, see [DescribeSolutionVersion](API_DescribeSolutionVersion.md).
 
-```
+```cmd
 aws personalize describe-solution-version \
   --solution-version-arn {{solution version arn}}
 ```
 
 The properties of the solution version and the training `status` are displayed. Initially, the status shows as CREATE PENDING, for example:
 
-```
+```json
 {
   "solutionVersion": {
       "solutionVersionArn": "arn:aws:personalize:us-west-2:acct-id:solution/solutionName/<version-id>",
@@ -91,7 +91,7 @@ When your solution is ACTIVE, use the following code to create a solution versio
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 
 personalize = boto3.client('personalize')
@@ -117,7 +117,7 @@ print('Solution version status: ' + solution_version_description['status'])
 ------
 #### [ SDK for Java 2.x ]
 
-```
+```java
 public static String createPersonalizeSolutionVersion(PersonalizeClient personalizeClient, String solutionArn) {
         long maxTime = 0;
         long waitInMilliseconds = 30 * 1000; // 30 seconds
@@ -195,7 +195,7 @@ public static String createPersonalizeSolutionVersion(PersonalizeClient personal
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 // Get service clients module and commands using ES6 syntax.
 import { CreateSolutionVersionCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";

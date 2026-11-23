@@ -31,13 +31,13 @@ Get the AWS IoT endpoints for your AWS account, and save them to use later. Your
 
 1. Get the AWS IoT data endpoint for your AWS account.
 
-   ```
+   ```bash
    aws iot describe-endpoint --endpoint-type iot:Data-ATS
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "endpointAddress": "{{device-data-prefix}}-ats.iot.us-west-2.amazonaws.com"
    }
@@ -45,13 +45,13 @@ Get the AWS IoT endpoints for your AWS account, and save them to use later. Your
 
 1. Get the AWS IoT credentials endpoint for your AWS account.
 
-   ```
+   ```bash
    aws iot describe-endpoint --endpoint-type iot:CredentialProvider
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "endpointAddress": "{{device-credentials-prefix}}.credentials.iot.us-west-2.amazonaws.com"
    }
@@ -71,13 +71,13 @@ In this section, you create an AWS IoT thing that represents your device.
 **Note**  <a name="install-argument-thing-name-constraint"></a>
 The thing name can't contain colon (`:`) characters.
 
-   ```
+   ```bash
    aws iot create-thing --thing-name {{MyGreengrassCore}}
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "thingName": "MyGreengrassCore",
      "thingArn": "arn:aws:iot:us-west-2:123456789012:thing/MyGreengrassCore",
@@ -92,13 +92,13 @@ The thing name can't contain colon (`:`) characters.
 **Note**  <a name="install-argument-thing-group-name-constraint"></a>
 The thing group name can't contain colon (`:`) characters.
 
-      ```
+      ```bash
       aws iot create-thing-group --thing-group-name {{MyGreengrassCoreGroup}}
       ```
 
       The response looks similar to the following example, if the request succeeds.
 
-      ```
+      ```json
       {
         "thingGroupName": "MyGreengrassCoreGroup",
         "thingGroupArn": "arn:aws:iot:us-west-2:123456789012:thinggroup/MyGreengrassCoreGroup",
@@ -110,7 +110,7 @@ The thing group name can't contain colon (`:`) characters.
       + Replace {{MyGreengrassCore}} with the name of your AWS IoT thing.
       + Replace {{MyGreengrassCoreGroup}} with the name of the thing group.
 
-      ```
+      ```bash
       aws iot add-thing-to-thing-group --thing-name {{MyGreengrassCore}} --thing-group-name {{MyGreengrassCoreGroup}}
       ```
 
@@ -132,19 +132,19 @@ The thing group name can't contain colon (`:`) characters.
 
 1. Create a folder where you download the certificates for the AWS IoT thing.
 
-   ```
+   ```bash
    mkdir greengrass-v2-certs
    ```
 
 1. Create and download the certificates for the AWS IoT thing.
 
-   ```
+   ```bash
    aws iot create-keys-and-certificate --set-as-active --certificate-pem-outfile greengrass-v2-certs/device.pem.crt --public-key-outfile greengrass-v2-certs/public.pem.key --private-key-outfile greengrass-v2-certs/private.pem.key
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "certificateArn": "arn:aws:iot:us-west-2:123456789012:cert/aa0b7958770878eabe251d8a7ddd547f4889c524c9b574ab9fbf65f32248b1d4",
      "certificateId": "aa0b7958770878eabe251d8a7ddd547f4889c524c9b574ab9fbf65f32248b1d4",
@@ -203,25 +203,25 @@ To use a hardware security module and [secret manager](secret-manager-component.
 
 1. Copy the CSR from the device to your development computer. If SSH and SCP are enabled on the development computer and the device, you can use the `scp` command on your development computer to transfer the CSR. Replace {{device-ip-address}} with the IP address of your device, and replace {{\~/iotdevicekey.csr}} with the path to the CSR file on the device.
 
-   ```
+   ```bash
    scp {{device-ip-address}}:{{~/iotdevicekey.csr}} iotdevicekey.csr
    ```
 
 1. On your development computer, create a folder where you download the certificate for the AWS IoT thing.
 
-   ```
+   ```bash
    mkdir greengrass-v2-certs
    ```
 
 1. Use the CSR file to create and download the certificate for the AWS IoT thing to your development computer.
 
-   ```
+   ```bash
    aws iot create-certificate-from-csr --set-as-active --certificate-signing-request=file://iotdevicekey.csr --certificate-pem-outfile greengrass-v2-certs/device.pem.crt
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "certificateArn": "arn:aws:iot:us-west-2:123456789012:cert/aa0b7958770878eabe251d8a7ddd547f4889c524c9b574ab9fbf65f32248b1d4",
      "certificateId": "aa0b7958770878eabe251d8a7ddd547f4889c524c9b574ab9fbf65f32248b1d4",
@@ -258,7 +258,7 @@ Attach the thing certificate to the AWS IoT thing that you created earlier, and 
    + Replace {{MyGreengrassCore}} with the name of your AWS IoT thing.
    + Replace the certificate Amazon Resource Name (ARN) with the ARN of the certificate that you created in the previous step.
 
-   ```
+   ```bash
    aws iot attach-thing-principal --thing-name {{MyGreengrassCore}} --principal {{arn:aws:iot:us-west-2:123456789012:cert/aa0b7958770878eabe251d8a7ddd547f4889c524c9b574ab9fbf65f32248b1d4}}
    ```
 
@@ -274,13 +274,13 @@ Attach the thing certificate to the AWS IoT thing that you created earlier, and 
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano greengrass-v2-iot-policy.json
       ```
 
       Copy the following JSON into the file.
 
-      ```
+      ```json
       {
         "Version": "2012-10-17",
         "Statement": [
@@ -304,13 +304,13 @@ Attach the thing certificate to the AWS IoT thing that you created earlier, and 
    1. Create an AWS IoT policy from the policy document.
       + Replace {{GreengrassV2IoTThingPolicy}} with the name of the policy to create.
 
-      ```
+      ```bash
       aws iot create-policy --policy-name {{GreengrassV2IoTThingPolicy}} --policy-document file://greengrass-v2-iot-policy.json
       ```
 
       The response looks similar to the following example, if the request succeeds.
 
-      ```
+      ```json
       {
         "policyName": "GreengrassV2IoTThingPolicy",
         "policyArn": "arn:aws:iot:us-west-2:123456789012:policy/GreengrassV2IoTThingPolicy",
@@ -340,7 +340,7 @@ Attach the thing certificate to the AWS IoT thing that you created earlier, and 
       + Replace {{GreengrassV2IoTThingPolicy}} with the name of the policy to attach.
       + Replace the target ARN with the ARN of the certificate for your AWS IoT thing.
 
-      ```
+      ```bash
       aws iot attach-policy --policy-name {{GreengrassV2IoTThingPolicy}} --target {{arn:aws:iot:us-west-2:123456789012:cert/aa0b7958770878eabe251d8a7ddd547f4889c524c9b574ab9fbf65f32248b1d4}}
       ```
 
@@ -363,13 +363,13 @@ In this section, you create a token exchange IAM role and an AWS IoT role alias 
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano device-role-trust-policy.json
       ```
 
       Copy the following JSON into the file.
 
-      ```
+      ```json
       {
         "Version": "2012-10-17",
         "Statement": [
@@ -387,13 +387,13 @@ In this section, you create a token exchange IAM role and an AWS IoT role alias 
    1. Create the token exchange role with the trust policy document.
       + Replace {{GreengrassV2TokenExchangeRole}} with the name of the IAM role to create.
 
-      ```
+      ```bash
       aws iam create-role --role-name {{GreengrassV2TokenExchangeRole}} --assume-role-policy-document file://device-role-trust-policy.json
       ```
 
       The response looks similar to the following example, if the request succeeds.
 
-      ```
+      ```json
       {
         "Role": {
           "Path": "/",
@@ -420,13 +420,13 @@ In this section, you create a token exchange IAM role and an AWS IoT role alias 
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano device-role-access-policy.json
       ```
 
       Copy the following JSON into the file.
 
-      ```
+      ```json
       {
         "Version": "2012-10-17",
         "Statement": [
@@ -451,13 +451,13 @@ If you don't yet have an S3 bucket for component artifacts, you can add these pe
    1. Create the IAM policy from the policy document.
       + Replace {{GreengrassV2TokenExchangeRoleAccess}} with the name of the IAM policy to create.
 
-      ```
+      ```bash
       aws iam create-policy --policy-name {{GreengrassV2TokenExchangeRoleAccess}} --policy-document file://device-role-access-policy.json
       ```
 
       The response looks similar to the following example, if the request succeeds.
 
-      ```
+      ```json
       {
         "Policy": {
           "PolicyName": "GreengrassV2TokenExchangeRoleAccess",
@@ -478,7 +478,7 @@ If you don't yet have an S3 bucket for component artifacts, you can add these pe
       + Replace {{GreengrassV2TokenExchangeRole}} with the name of the IAM role.
       + Replace the policy ARN with the ARN of the IAM policy that you created in the previous step.
 
-      ```
+      ```bash
       aws iam attach-role-policy --role-name {{GreengrassV2TokenExchangeRole}} --policy-arn {{arn:aws:iam::123456789012:policy/GreengrassV2TokenExchangeRoleAccess}}
       ```
 
@@ -488,13 +488,13 @@ If you don't yet have an S3 bucket for component artifacts, you can add these pe
    + Replace {{GreengrassCoreTokenExchangeRoleAlias}} with the name of the role alias to create.
    + Replace the role ARN with the ARN of the IAM role that you created in the previous step.
 
-   ```
+   ```bash
    aws iot create-role-alias --role-alias {{GreengrassCoreTokenExchangeRoleAlias}} --role-arn {{arn:aws:iam::123456789012:role/GreengrassV2TokenExchangeRole}}
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "roleAlias": "GreengrassCoreTokenExchangeRoleAlias",
      "roleAliasArn": "arn:aws:iot:us-west-2:123456789012:rolealias/GreengrassCoreTokenExchangeRoleAlias"
@@ -509,14 +509,14 @@ To create a role alias, you must have permission to pass the token exchange IAM 
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano greengrass-v2-iot-role-alias-policy.json
       ```
 
       Copy the following JSON into the file.
       + Replace the resource ARN with the ARN of your role alias.
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -532,13 +532,13 @@ To create a role alias, you must have permission to pass the token exchange IAM 
    1. Create an AWS IoT policy from the policy document.
       + Replace {{GreengrassCoreTokenExchangeRoleAliasPolicy}} with the name of the AWS IoT policy to create.
 
-      ```
+      ```bash
       aws iot create-policy --policy-name {{GreengrassCoreTokenExchangeRoleAliasPolicy}} --policy-document file://greengrass-v2-iot-role-alias-policy.json
       ```
 
       The response looks similar to the following example, if the request succeeds.
 
-      ```
+      ```json
       {
         "policyName": "GreengrassCoreTokenExchangeRoleAliasPolicy",
         "policyArn": "arn:aws:iot:us-west-2:123456789012:policy/GreengrassCoreTokenExchangeRoleAliasPolicy",
@@ -560,7 +560,7 @@ To create a role alias, you must have permission to pass the token exchange IAM 
       + Replace {{GreengrassCoreTokenExchangeRoleAliasPolicy}} with the name of the role alias AWS IoT policy.
       + Replace the target ARN with the ARN of the certificate for your AWS IoT thing.
 
-      ```
+      ```bash
       aws iot attach-policy --policy-name {{GreengrassCoreTokenExchangeRoleAliasPolicy}} --target {{arn:aws:iot:us-west-2:123456789012:cert/aa0b7958770878eabe251d8a7ddd547f4889c524c9b574ab9fbf65f32248b1d4}}
       ```
 
@@ -580,7 +580,7 @@ Earlier, you downloaded your device's certificate to your development computer. 
 
 1. <a name="installation-copy-thing-certificate-to-device"></a>Copy the AWS IoT thing certificate from your development computer to the device. If SSH and SCP are enabled on the development computer and the device, you can use the `scp` command on your development computer to transfer the certificate. Replace {{device-ip-address}} with the IP address of your device.
 
-   ```
+   ```bash
    scp -r greengrass-v2-certs/ {{device-ip-address}}:~
    ```
 
@@ -592,7 +592,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 #### [ Linux or Unix ]
    + Replace `{{/greengrass/v2}}` with the folder to use.
 
-   ```
+   ```bash
    sudo mkdir -p {{/greengrass/v2}}
    ```
 
@@ -600,7 +600,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 #### [ Windows Command Prompt ]
    + Replace {{C:\\greengrass\\v2}} with the folder to use.
 
-   ```
+   ```cmd
    mkdir {{C:\greengrass\v2}}
    ```
 
@@ -608,7 +608,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 #### [ PowerShell ]
    + Replace {{C:\\greengrass\\v2}} with the folder to use.
 
-   ```
+   ```cmd
    mkdir {{C:\greengrass\v2}}
    ```
 
@@ -617,7 +617,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 1. <a name="installation-set-greengrass-root-folder-permissions"></a>(Linux only) Set the permissions of the parent of the Greengrass root folder.
    + Replace {{/greengrass}} with the parent of the root folder.
 
-   ```
+   ```bash
    sudo chmod 755 {{/greengrass}}
    ```
 
@@ -627,7 +627,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 #### [ Linux or Unix ]
    + Replace `{{/greengrass/v2}}` with the Greengrass root folder.
 
-   ```
+   ```bash
    sudo cp -R ~/greengrass-v2-certs/* {{/greengrass/v2}}
    ```
 
@@ -635,7 +635,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 #### [ Windows Command Prompt ]
    + Replace {{C:\\greengrass\\v2}} with the folder to use.
 
-   ```
+   ```cmd
    robocopy %USERPROFILE%\greengrass-v2-certs {{C:\greengrass\v2}} /E
    ```
 
@@ -643,7 +643,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 #### [ PowerShell ]
    + Replace {{C:\\greengrass\\v2}} with the folder to use.
 
-   ```
+   ```ps
    cp -Path ~\greengrass-v2-certs\* -Destination {{C:\greengrass\v2}}
    ```
 
@@ -654,21 +654,21 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo curl -o {{/greengrass/v2}}/AmazonRootCA1.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```bash
    curl -o {{C:\greengrass\v2}}\\AmazonRootCA1.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```bash
    iwr -Uri https://www.amazontrust.com/repository/AmazonRootCA1.pem -OutFile {{C:\greengrass\v2}}\\AmazonRootCA1.pem
    ```
 
@@ -684,7 +684,7 @@ This feature is available for v2.5.3 and later of the [Greengrass nucleus compon
 
 1. <a name="installation-copy-thing-certificate-to-device"></a>Copy the AWS IoT thing certificate from your development computer to the device. If SSH and SCP are enabled on the development computer and the device, you can use the `scp` command on your development computer to transfer the certificate. Replace {{device-ip-address}} with the IP address of your device.
 
-   ```
+   ```bash
    scp -r greengrass-v2-certs/ {{device-ip-address}}:~
    ```
 
@@ -696,7 +696,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 #### [ Linux or Unix ]
    + Replace `{{/greengrass/v2}}` with the folder to use.
 
-   ```
+   ```bash
    sudo mkdir -p {{/greengrass/v2}}
    ```
 
@@ -704,7 +704,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 #### [ Windows Command Prompt ]
    + Replace {{C:\\greengrass\\v2}} with the folder to use.
 
-   ```
+   ```cmd
    mkdir {{C:\greengrass\v2}}
    ```
 
@@ -712,7 +712,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 #### [ PowerShell ]
    + Replace {{C:\\greengrass\\v2}} with the folder to use.
 
-   ```
+   ```cmd
    mkdir {{C:\greengrass\v2}}
    ```
 
@@ -721,7 +721,7 @@ Windows has a path length limitation of 260 characters. If you are using Windows
 1. <a name="installation-set-greengrass-root-folder-permissions"></a>(Linux only) Set the permissions of the parent of the Greengrass root folder.
    + Replace {{/greengrass}} with the parent of the root folder.
 
-   ```
+   ```bash
    sudo chmod 755 {{/greengrass}}
    ```
 
@@ -731,7 +731,7 @@ If you generated the private key earlier without an object ID, and the certifica
 
 1. (Optional) Delete the thing certificate file, so that it exists only in the HSM.
 
-   ```
+   ```bash
    rm ~/greengrass-v2-certs/device.pem.crt
    ```
 
@@ -740,21 +740,21 @@ If you generated the private key earlier without an object ID, and the certifica
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo curl -o {{/greengrass/v2}}/AmazonRootCA1.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```bash
    curl -o {{C:\greengrass\v2}}\\AmazonRootCA1.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```bash
    iwr -Uri https://www.amazontrust.com/repository/AmazonRootCA1.pem -OutFile {{C:\greengrass\v2}}\\AmazonRootCA1.pem
    ```
 
@@ -773,28 +773,28 @@ Follow the steps in this section to set up a Linux or Windows device to use as y
 1. Install the Java runtime, which AWS IoT Greengrass Core software requires to run. We recommend that you use [Amazon Corretto](https://aws.amazon.com/corretto/) or [OpenJDK](https://openjdk.java.net/) long-term support versions. Version 8 or higher is required. The following commands show you how to install OpenJDK on your device.
    + For Debian-based or Ubuntu-based distributions:
 
-     ```
+     ```bash
      sudo apt install default-jdk
      ```
    + For Red Hat-based distributions:
 
-     ```
+     ```bash
      sudo yum install java-11-openjdk-devel
      ```
    + For Amazon Linux 2:
 
-     ```
+     ```bash
      sudo amazon-linux-extras install java-openjdk11
      ```
    + For Amazon Linux 2023:
 
-     ```
+     ```bash
      sudo dnf install java-11-amazon-corretto -y
      ```
 
    When the installation completes, run the following command to verify that Java runs on your Linux device.
 
-   ```
+   ```bash
    java -version
    ```
 
@@ -808,7 +808,7 @@ Follow the steps in this section to set up a Linux or Windows device to use as y
 
 1. (Optional) Create the default system user and group that runs components on the device. You can also choose to let the AWS IoT Greengrass Core software installer create this user and group during installation with the `--component-default-user` installer argument. For more information, see [Installer arguments](configure-installer.md).
 
-   ```
+   ```bash
    sudo useradd --system --create-home ggc_user
    sudo groupadd --system ggc_group
    ```
@@ -817,7 +817,7 @@ Follow the steps in this section to set up a Linux or Windows device to use as y
 
    1. Run the following command to open the `/etc/sudoers` file.
 
-      ```
+      ```bash
       sudo visudo
       ```
 
@@ -873,24 +873,24 @@ This feature is available for v2.5.0 and later of the [Greengrass nucleus compon
 
 1. <a name="set-up-windows-device-environment-create"></a>Create the default user in the LocalSystem account on the Windows device. Replace {{password}} with a secure password.
 
-   ```
+   ```cmd
    net user /add ggc_user {{password}}
    ```
 **Tip**  <a name="windows-password-expiration-tip"></a>
 Depending on your Windows configuration, the user's password might be set to expire at a date in the future. To ensure your Greengrass applications continue to operate, track when the password expires, and update it before it expires. You can also set the user's password to never expire.
 To check when a user and its password expire, run the following command.
 
-     ```
+     ```cmd
      net user {{ggc_user}} | findstr /C:expires
      ```
 To set a user's password to never expire, run the following command.
 
-     ```
+     ```cmd
      wmic UserAccount where "Name='{{ggc_user}}'" set PasswordExpires=False
      ```
 If you’re using Windows 10 or later where the [`wmic` command is deprecated](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmic), run the following PowerShell command.
 
-     ```
+     ```powershell
      Get-CimInstance -Query "SELECT * from Win32_UserAccount WHERE name = '{{ggc_user}}'" | Set-CimInstance -Property @{PasswordExpires="False"}
      ```
 
@@ -898,7 +898,7 @@ If you’re using Windows 10 or later where the [`wmic` command is deprecated](h
 
 1. <a name="set-up-windows-device-credentials"></a>Use the PsExec utility to store the user name and password for the default user in the Credential Manager instance for the LocalSystem account. Replace {{password}} with the user's password that you set earlier.
 
-   ```
+   ```cmd
    psexec -s cmd /c cmdkey /generic:ggc_user /user:ggc_user /pass:{{password}}
    ```
 
@@ -926,21 +926,21 @@ https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-{{version}}.zip
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip > greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip > greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    iwr -Uri https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip -OutFile greengrass-nucleus-latest.zip
    ```
 
@@ -957,7 +957,7 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       jarsigner -verify -certs -verbose greengrass-nucleus-latest.zip
       ```
 
@@ -966,7 +966,7 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 
       The file name might look different depending on the JDK version you install. Replace {{`jdk17.0.6_10`}} with the JDK version you installed.
 
-      ```
+      ```cmd
       "C:\\Program Files\\Amazon Corretto\\{{jdk17.0.6_10}}\\bin\\jarsigner.exe" -verify -certs -verbose greengrass-nucleus-latest.zip
       ```
 
@@ -975,7 +975,7 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 
       The file name might look different depending on the JDK version you install. Replace {{`jdk17.0.6_10`}} with the JDK version you installed.
 
-      ```
+      ```ps
       'C:\\Program Files\\Amazon Corretto\\{{jdk17.0.6_10}}\\bin\\jarsigner.exe' -verify -certs -verbose greengrass-nucleus-latest.zip
       ```
 
@@ -985,13 +985,13 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 
       1. If the Greengrass nucleus zip file is signed, the output contains the following statement:
 
-         ```
+         ```bash
          jar verified.
          ```
 
       1. If the Greengrass nucleus zip file isn't signed, the output contains the following statement:
 
-         ```
+         ```bash
          jar is unsigned.
          ```
 
@@ -1002,21 +1002,21 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    unzip greengrass-nucleus-latest.zip -d {{GreengrassInstaller}} && rm greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    mkdir {{GreengrassInstaller}} && tar -xf greengrass-nucleus-latest.zip -C {{GreengrassInstaller}} && del greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Expand-Archive -Path greengrass-nucleus-latest.zip -DestinationPath .\\{{GreengrassInstaller}}
    rm greengrass-nucleus-latest.zip
    ```
@@ -1025,7 +1025,7 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 
 1. (Optional) Run the following command to see the version of the AWS IoT Greengrass Core software.
 
-   ```
+   ```bash
    java -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar --version
    ```
 
@@ -1058,7 +1058,7 @@ For more information about the arguments that you can specify, see [Installer ar
 1. <a name="installer-check-greengrass-core-software-version"></a>Check the version of the AWS IoT Greengrass Core software.
    + Replace {{GreengrassInstaller}} with the path to the folder that contains the software.
 
-   ```
+   ```bash
    java -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar --version
    ```
 
@@ -1066,13 +1066,13 @@ For more information about the arguments that you can specify, see [Installer ar
 
    <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-   ```
+   ```bash
    nano {{GreengrassInstaller}}/config.yaml
    ```
 
    Copy the following YAML content into the file. This partial configuration file specifies system parameters and Greengrass nucleus parameters.
 
-   ```
+   ```yaml
    ---
    system:
      certificateFilePath: "{{/greengrass/v2}}/device.pem.crt"
@@ -1102,7 +1102,7 @@ For more information about the arguments that you can specify, see [Installer ar
 **Note**
 In this configuration file, you can customize other nucleus configuration options such as the ports and network proxy to use, as shown in the following example. For more information, see [Greengrass nucleus configuration](greengrass-nucleus-component.md#greengrass-nucleus-component-configuration).
 
-   ```
+   ```yaml
    ---
    system:
      certificateFilePath: "{{/greengrass/v2}}/device.pem.crt"
@@ -1137,7 +1137,7 @@ In this configuration file, you can customize other nucleus configuration option
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo -E java -Droot="{{/greengrass/v2}}" -Dlog.store=FILE \
      -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar \
      --init-config ./{{GreengrassInstaller}}/config.yaml \
@@ -1148,7 +1148,7 @@ In this configuration file, you can customize other nucleus configuration option
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    java -Droot="{{C:\greengrass\v2}}" "-Dlog.store=FILE" ^
      -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar ^
      --init-config ./{{GreengrassInstaller}}/config.yaml ^
@@ -1159,7 +1159,7 @@ In this configuration file, you can customize other nucleus configuration option
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    java -Droot="{{C:\greengrass\v2}}" "-Dlog.store=FILE" `
      -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar `
      --init-config ./{{GreengrassInstaller}}/config.yaml `
@@ -1180,21 +1180,21 @@ You can't use the `deploy-dev-tools` argument to deploy local development tools 
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    ls {{/greengrass/v2}}
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    dir {{C:\greengrass\v2}}
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    ls {{C:\greengrass\v2}}
    ```
 
@@ -1213,7 +1213,7 @@ This feature is available for v2.5.3 and later of the [Greengrass nucleus compon
 1. <a name="installer-check-greengrass-core-software-version"></a>Check the version of the AWS IoT Greengrass Core software.
    + Replace {{GreengrassInstaller}} with the path to the folder that contains the software.
 
-   ```
+   ```bash
    java -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar --version
    ```
 
@@ -1222,7 +1222,7 @@ This feature is available for v2.5.3 and later of the [Greengrass nucleus compon
 
    Download the PKCS\#11 provider plugin to a file named `aws.greengrass.crypto.Pkcs11Provider.jar`. Replace {{GreengrassInstaller}} with the folder that you want to use.
 
-   ```
+   ```bash
    curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/Pkcs11Provider/aws.greengrass.crypto.Pkcs11Provider-latest.jar > {{GreengrassInstaller}}/aws.greengrass.crypto.Pkcs11Provider.jar
    ```
 
@@ -1232,13 +1232,13 @@ This feature is available for v2.5.3 and later of the [Greengrass nucleus compon
 
    <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-   ```
+   ```bash
    nano {{GreengrassInstaller}}/config.yaml
    ```
 
    Copy the following YAML content into the file. This partial configuration file specifies system parameters, Greengrass nucleus parameters, and PKCS\#11 provider parameters.
 
-   ```
+   ```yaml
    ---
    system:
      certificateFilePath: "pkcs11:object={{iotdevicekey}};type=cert"
@@ -1276,7 +1276,7 @@ This feature is available for v2.5.3 and later of the [Greengrass nucleus compon
 **Note**
 In this configuration file, you can customize other nucleus configuration options such as the ports and network proxy to use, as shown in the following example. For more information, see [Greengrass nucleus configuration](greengrass-nucleus-component.md#greengrass-nucleus-component-configuration).
 
-   ```
+   ```yaml
    ---
    system:
      certificateFilePath: "pkcs11:object={{iotdevicekey}};type=cert"
@@ -1314,7 +1314,7 @@ In this configuration file, you can customize other nucleus configuration option
    + Replace `{{/greengrass/v2}}` with the Greengrass root folder.
    + Replace each instance of {{GreengrassInstaller}} with the folder where you unpacked the installer.
 
-   ```
+   ```bash
    sudo -E java -Droot="{{/greengrass/v2}}" -Dlog.store=FILE \
      -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar \
      --trusted-plugin ./{{GreengrassInstaller}}/aws.greengrass.crypto.Pkcs11Provider.jar \
@@ -1334,21 +1334,21 @@ You can't use the `deploy-dev-tools` argument to deploy local development tools 
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    ls {{/greengrass/v2}}
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    dir {{C:\greengrass\v2}}
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    ls {{C:\greengrass\v2}}
    ```
 

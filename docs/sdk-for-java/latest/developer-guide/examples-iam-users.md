@@ -11,7 +11,7 @@ Create a new IAM user by providing the user name to the IamClient’s `createUse
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.core.waiters.WaiterResponse;
 import software.amazon.awssdk.services.iam.model.CreateUserRequest;
 import software.amazon.awssdk.services.iam.model.CreateUserResponse;
@@ -25,7 +25,7 @@ import software.amazon.awssdk.services.iam.model.GetUserResponse;
 
  **Code**
 
-```
+```java
     public static String createIAMUser(IamClient iam, String username ) {
 
         try {
@@ -66,7 +66,7 @@ The list of users returned by `listUsers` is paged. You can check to see there a
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.IamException;
 import software.amazon.awssdk.services.iam.model.ListUsersRequest;
 import software.amazon.awssdk.services.iam.model.ListUsersResponse;
@@ -77,7 +77,7 @@ import software.amazon.awssdk.services.iam.IamClient;
 
  **Code**
 
-```
+```java
     public static void listAllUsers(IamClient iam ) {
 
         try {
@@ -123,7 +123,7 @@ To update a user, call the IamClient object’s `updateUser` method, which takes
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
 import software.amazon.awssdk.services.iam.model.IamException;
@@ -132,7 +132,7 @@ import software.amazon.awssdk.services.iam.model.UpdateUserRequest;
 
  **Code**
 
-```
+```java
     public static void updateIAMUser(IamClient iam, String curName,String newName ) {
 
         try {
@@ -160,7 +160,7 @@ To delete a user, call the IamClient’s `deleteUser` request with a [UpdateUser
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
 import software.amazon.awssdk.services.iam.model.DeleteUserRequest;
@@ -169,7 +169,7 @@ import software.amazon.awssdk.services.iam.model.IamException;
 
  **Code**
 
-```
+```java
     public static void deleteIAMUser(IamClient iam, String userName) {
 
         try {

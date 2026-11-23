@@ -10,7 +10,7 @@ The `Ref::` declarations in the `command` section are used to set placeholders f
 
 For more information, see [Parameters](job_definition_parameters.md#parameters).
 
-```
+```json
 {
     "jobDefinitionName": "ffmpeg_parameters",
     "type": "container",

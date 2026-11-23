@@ -76,7 +76,7 @@ If you create a trigger in CodeCommit that invokes a Lambda function, you must m
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

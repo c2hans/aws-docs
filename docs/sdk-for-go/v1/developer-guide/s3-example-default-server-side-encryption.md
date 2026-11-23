@@ -16,7 +16,7 @@ Create the file *set\_default\_encryption.go*.
 
 Import the required packages.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -29,7 +29,7 @@ import (
 
 Get the KMS key from the command line, where `key` is a KMS key ID as created in the [Creating a CMK in AWS Key Management Service](kms-example-create-key.md) example, and set the bucket name.
 
-```
+```go
 if len(os.Args) != 2 {
     fmt.Println("You must supply a key")
     os.Exit(1)
@@ -41,7 +41,7 @@ bucket := "amzn-s3-demo-bucket"
 
 Create a session and Amazon S3 client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -51,7 +51,7 @@ svc := s3.New(sess)
 
 Create the input for and call `PutBucketEncryption`, and display a success message.
 
-```
+```go
 defEnc := &s3.ServerSideEncryptionByDefault{KMSMasterKeyID: aws.String(key), SSEAlgorithm: aws.String(s3.ServerSideEncryptionAwsKms)}
 rule := &s3.ServerSideEncryptionRule{ApplyServerSideEncryptionByDefault: defEnc}
 rules := []*s3.ServerSideEncryptionRule{rule}

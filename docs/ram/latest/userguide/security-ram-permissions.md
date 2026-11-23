@@ -33,6 +33,8 @@ You can retrieve the list of the available managed permissions at any time. For 
 
 For a quick overview, watch the following video that demonstrates how managed permissions let you apply the best practice of least privilege access to your AWS resources.
 
+[![AWS Videos](https://img.youtube.com/vi/X3HskbPqR2s/0.jpg)](https://www.youtube.com/watch?v=X3HskbPqR2s)
+
 This video demonstrates how to author and associate customer managed permissions following the best practice of least privilege. For more information see, [Creating and using customer managed permissions in AWS RAM](create-customer-managed-permissions.md).
 
 [![AWS Videos](https://img.youtube.com/vi/SQoJOuIDLKM/0.jpg)](https://www.youtube.com/watch?v=SQoJOuIDLKM)

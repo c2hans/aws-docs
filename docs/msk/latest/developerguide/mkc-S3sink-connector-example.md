@@ -8,7 +8,7 @@ This example shows how to use the Confluent [Amazon S3 sink connector](https://w
 
 1. Copy the following JSON and paste it in a new file. Replace the placeholder strings with values that correspond to your Amazon MSK cluster's bootstrap servers connection string and the cluster's subnet and security group IDs. For information about how to set up a service execution role, see [IAM roles and policies for MSK Connect](msk-connect-iam.md).
 
-   ```
+   ```JSON
    {
        "connectorConfiguration": {
            "connector.class": "io.confluent.connect.s3.S3SinkConnector",

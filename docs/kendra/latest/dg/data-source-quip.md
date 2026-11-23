@@ -141,7 +141,7 @@ You must specify the following using [QuipConfiguration ](https://docs.aws.amazo
 + **Quip site domain**—For example, {{https://quip-company.quipdomain.com/browse}} where {{quipdomain}} is the domain.
 + **Secret Amazon Resource Name (ARN)**—Provide the Amazon Resource Name (ARN) of an Secrets Manager secret that contains the authentication credentials for your Quip account. The secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "accessToken": "{{token}}"
   }

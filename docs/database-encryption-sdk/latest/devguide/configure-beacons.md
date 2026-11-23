@@ -34,7 +34,7 @@ To make it easier to define the beacon version, we recommend creating lists for 
 ------
 #### [ Java ]
 
-```
+```java
 List<StandardBeacon> standardBeaconList = new ArrayList<>();
 StandardBeacon exampleStandardBeacon = StandardBeacon.builder()
     .name("{{beaconName}}")
@@ -47,7 +47,7 @@ standardBeaconList.add(exampleStandardBeacon);
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var standardBeaconList = new List<StandardBeacon>();
 StandardBeacon exampleStandardBeacon = new StandardBeacon
   {
@@ -61,7 +61,7 @@ standardBeaconList.Add(exampleStandardBeacon);
 ------
 #### [ Rust ]
 
-```
+```rs
 let standard_beacon_list = vec![
     StandardBeacon::builder().name("{{beacon_name}}").length({{beacon_length_in_bits}}).number_of_partitions(2).build()?,
 ```
@@ -95,7 +95,7 @@ We recommend verifying that your virtual fields produce the expected outcome bef
 
 **See the complete code example**: [VirtualBeaconSearchableEncryptionExample.java](https://github.com/aws/aws-database-encryption-sdk-dynamodb//blob/main/Examples/runtimes/java/DynamoDbEncryption/src/main/java/software/amazon/cryptography/examples/searchableencryption/VirtualBeaconSearchableEncryptionExample.java)
 
-```
+```java
 List<VirtualPart> virtualPartList = new ArrayList<>();
     virtualPartList.add({{sourceField1}});
     virtualPartList.add({{sourceField2}});
@@ -114,7 +114,7 @@ List<VirtualField> virtualFieldList = new ArrayList<>();
 
 **See the complete code example**: [VirtualBeaconSearchableEncryptionExample.cs](https://github.com/aws/aws-database-encryption-sdk-dynamodb/tree/main/Examples/runtimes/net/src/searchableencryption/VirtualBeaconSearchableEncryptionExample.cs)
 
-```
+```cs
 var virtualPartList = new List<VirtualPart> { {{sourceField1}}, {{sourceField2}} };
 
 var {{virtualFieldName}} = new VirtualField
@@ -131,7 +131,7 @@ var virtualFieldList = new List<VirtualField> { {{virtualFieldName}} };
 
 **See the complete code example**: [virtual\_beacon\_searchable\_encryption.rs](https://github.com/aws/aws-database-encryption-sdk-dynamodb/blob/main/releases/rust/db_esdk/examples/searchableencryption/virtual_beacon_searchable_encryption.rs)
 
-```
+```rs
 let virtual_part_list = vec![{{source_field_one}}, {{source_field_two}}];
 
 let state_and_has_test_result_field = VirtualField::builder()
@@ -186,7 +186,7 @@ A standard beacon defined as `PartOnly` can only be used to define an [encrypted
 
 **Java**
 
-```
+```java
 List<StandardBeacon> standardBeaconList = new ArrayList<>();
 StandardBeacon exampleStandardBeacon = StandardBeacon.builder()
     .name("{{beaconName}}")
@@ -202,7 +202,7 @@ standardBeaconList.add(exampleStandardBeacon);
 
 **C\# / .NET**
 
-```
+```cs
 new StandardBeacon
 {
     Name = "{{beaconName}}",
@@ -216,7 +216,7 @@ new StandardBeacon
 
 **Rust**
 
-```
+```rs
 StandardBeacon::builder()
     .name("{{beacon_name}}")
     .length({{beacon_length_in_bits}})
@@ -236,7 +236,7 @@ Consider your security and performance needs before configuring any `Shared` bea
 
 **Java**
 
-```
+```java
 List<StandardBeacon> standardBeaconList = new ArrayList<>();
 StandardBeacon exampleStandardBeacon = StandardBeacon.builder()
     .name("{{beacon2}}")
@@ -252,7 +252,7 @@ standardBeaconList.add(exampleStandardBeacon);
 
 **C\# / .NET**
 
-```
+```cs
 new StandardBeacon
 {
     Name = "{{beacon2}}",
@@ -266,7 +266,7 @@ new StandardBeacon
 
 **Rust**
 
-```
+```rs
 StandardBeacon::builder()
     .name("{{beacon2}}")
     .length({{beacon_length_in_bits}})
@@ -288,7 +288,7 @@ Consider your security and performance needs before configuring any `AsSet` beac
 
 **Java**
 
-```
+```java
 List<StandardBeacon> standardBeaconList = new ArrayList<>();
 StandardBeacon exampleStandardBeacon = StandardBeacon.builder()
     .name("{{beaconName}}")
@@ -304,7 +304,7 @@ standardBeaconList.add(exampleStandardBeacon);
 
 **C\# / .NET**
 
-```
+```cs
 new StandardBeacon
 {
     Name = "{{beaconName}}",
@@ -318,7 +318,7 @@ new StandardBeacon
 
 **Rust**
 
-```
+```rs
 StandardBeacon::builder()
     .name("{{beacon_name}}")
     .length({{beacon_length_in_bits}})
@@ -336,7 +336,7 @@ Consider your security and performance needs before configuring any `Shared` bea
 
 **Java**
 
-```
+```java
 List<StandardBeacon> standardBeaconList = new ArrayList<>();
 StandardBeacon exampleStandardBeacon = StandardBeacon.builder()
     .name("{{beacon2}}")
@@ -352,7 +352,7 @@ standardBeaconList.add(exampleStandardBeacon);
 
 **C\# / .NET**
 
-```
+```cs
 new StandardBeacon
 {
     Name = "{{beacon2}}",
@@ -366,7 +366,7 @@ new StandardBeacon
 
 **Rust**
 
-```
+```rs
 StandardBeacon::builder()
     .name("{{beacon2}}")
     .length({{beacon_length_in_bits}})
@@ -396,7 +396,7 @@ We recommend verifying that your compound beacons produce the expected outcome b
 
 The following example defines encrypted and signed parts lists locally within the compound beacon configuration.
 
-```
+```java
 List<CompoundBeacon> compoundBeaconList = new ArrayList<>();
 CompoundBeacon exampleCompoundBeacon = CompoundBeacon.builder()
     .name("{{compoundBeaconName}}")
@@ -412,7 +412,7 @@ compoundBeaconList.add(exampleCompoundBeacon);
 
 The following example defines encrypted and signed parts lists globally in the beacon version. For more information on defining the beacon version, see [Using beacons](using-beacons.md).
 
-```
+```java
  List<BeaconVersion> beaconVersions = new ArrayList<>();
 beaconVersions.add(
     BeaconVersion.builder()
@@ -441,7 +441,7 @@ beaconVersions.add(
 
 The following example defines encrypted and signed parts lists locally within the compound beacon configuration.
 
-```
+```cs
 var compoundBeaconList = new List<CompoundBeacon>();
 var exampleCompoundBeacon = new CompoundBeacon
  {
@@ -458,7 +458,7 @@ compoundBeaconList.Add(exampleCompoundBeacon);
 
 The following example defines encrypted and signed parts lists globally in the beacon version. For more information on defining the beacon version, see [Using beacons](using-beacons.md).
 
-```
+```cs
 var beaconVersions = new List<BeaconVersion>
 {
     new BeaconVersion
@@ -490,7 +490,7 @@ var beaconVersions = new List<BeaconVersion>
 
 The following example defines encrypted and signed parts lists locally within the compound beacon configuration.
 
-```
+```rs
 let compound_beacon_list = vec![
     CompoundBeacon::builder()
         .name("{{compound_beacon_name}}")
@@ -505,7 +505,7 @@ let compound_beacon_list = vec![
 
 The following example defines encrypted and signed parts lists globally in the beacon version. For more information on defining the beacon version, see [Using beacons](using-beacons.md).
 
-```
+```rs
 let beacon_versions = BeaconVersion::builder()
     .standard_beacons(standard_beacon_list)
     .compound_beacons(compound_beacon_list)
@@ -548,7 +548,7 @@ Identifies the `ENCRYPT_AND_SIGN` fields included in the compound beacon.
 Each part must include a name and prefix. The part name must be the name of the standard beacon constructed from the encrypted field. The prefix can be any string, but it must be unique. An encrypted part cannot have the same prefix as a signed part. We recommend using a short value that distinguishes the part from other parts served by the compound beacon.
 We recommend defining your encrypted parts globally whenever possible. You might consider defining an encrypted part locally if you only intend on using it in one compound beacon. A locally defined encrypted part cannot have the same prefix or name as a globally defined encrypted part.
 
-```
+```java
 List<EncryptedPart> encryptedPartList = new ArrayList<>();
 EncryptedPart encryptedPartExample = EncryptedPart.builder()
     .name("{{standardBeaconName}}")
@@ -557,7 +557,7 @@ EncryptedPart encryptedPartExample = EncryptedPart.builder()
 encryptedPartList.add(encryptedPartExample);
 ```
 
-```
+```cs
 var encryptedPartList = new List<EncryptedPart>();
 var encryptedPartExample = new EncryptedPart
  {
@@ -567,7 +567,7 @@ var encryptedPartExample = new EncryptedPart
 encryptedPartList.Add(encryptedPartExample);
 ```
 
-```
+```rs
 let encrypted_parts_list = vec![
     EncryptedPart::builder()
         .name("{{standard_beacon_name}}")
@@ -582,7 +582,7 @@ Signed parts are optional. You can configure a compound beacon that does not ref
 Each part must include a name, source, and prefix. The source is the `SIGN_ONLY` or `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` field that the part identifies. The source must be a field name or an index referring to the value of a nested field. If your part name identifies the source, you can omit the source and the AWS Database Encryption SDK will automatically use the name as its source. We recommend specifying the source as the part name whenever possible. The prefix can be any string, but it must be unique. A signed part cannot have the same prefix as an encrypted part. We recommend using a short value that distinguishes the part from other parts served by the compound beacon.
 We recommend defining your signed parts globally whenever possible. You might consider defining a signed part locally if you only intend on using it in one compound beacon. A locally defined signed part cannot have the same prefix or name as a globally defined signed part.
 
-```
+```java
 List<SignedPart> signedPartList = new ArrayList<>();
 SignedPart signedPartExample = SignedPart.builder()
     .name("{{signedFieldName}}")
@@ -591,7 +591,7 @@ SignedPart signedPartExample = SignedPart.builder()
 signedPartList.add(signedPartExample);
 ```
 
-```
+```cs
 var signedPartsList = new List<SignedPart>
 {
     new SignedPart { Name = "{{signedFieldName1}}", Prefix = "S-" },
@@ -599,7 +599,7 @@ var signedPartsList = new List<SignedPart>
 };
 ```
 
-```
+```rs
 let signed_parts_list = vec![
     SignedPart::builder()
         .name("{{signed_field_name_1}}")
@@ -634,7 +634,7 @@ Use the following procedures to specify your own constructor list.
 ------
 #### [ Java ]
 
-   ```
+   ```java
    ConstructorPart field1ConstructorPart = ConstructorPart.builder()
            .name("{{Field1}}")
            .required({{true}})
@@ -644,14 +644,14 @@ Use the following procedures to specify your own constructor list.
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    var field1ConstructorPart = new ConstructorPart { Name = "{{Field1}}", Required = {{true}} };
    ```
 
 ------
 #### [ Rust ]
 
-   ```
+   ```rs
    let field_1_constructor_part = ConstructorPart::builder()
        .name("{{field_1}}")
        .required({{true}})
@@ -667,7 +667,7 @@ Use the following procedures to specify your own constructor list.
 ------
 #### [ Java ]
 
-   ```
+   ```java
    // Create a list for Field1.Field2.Field3 queries
    List<ConstructorPart> field123ConstructorPartList = new ArrayList<>();
    field123ConstructorPartList.add(field1ConstructorPart);
@@ -689,7 +689,7 @@ Use the following procedures to specify your own constructor list.
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    // Create a list for Field1.Field2.Field3 queries
     var field123ConstructorPartList = new Constructor
    {
@@ -705,7 +705,7 @@ Use the following procedures to specify your own constructor list.
 ------
 #### [ Rust ]
 
-   ```
+   ```rs
    // Create a list for field1.field2.field3 queries
    let field1_field2_field3_constructor = Constructor::builder()
        .parts(vec![
@@ -732,7 +732,7 @@ Use the following procedures to specify your own constructor list.
 ------
 #### [ Java ]
 
-   ```
+   ```java
    List<Constructor> constructorList = new ArrayList<>();
    constructorList.add(field123Constructor);
    constructorList.add(field421Constructor);
@@ -741,7 +741,7 @@ Use the following procedures to specify your own constructor list.
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    var constructorList = new List<Constructor>
    {
        field123Constructor,
@@ -752,7 +752,7 @@ Use the following procedures to specify your own constructor list.
 ------
 #### [ Rust ]
 
-   ```
+   ```rs
    let constructor_list = vec![
        field1_field2_field3_constructor,
        field4_field2_field1_constructor,

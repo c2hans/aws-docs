@@ -23,7 +23,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-msk-to-lambda) repository.
 Consuming an Amazon MSK event with Lambda using Rust.
 
-```
+```rust
 use aws_lambda_events::event::kafka::KafkaEvent;
 use lambda_runtime::{run, service_fn, tracing, Error, LambdaEvent};
 use base64::prelude::*;

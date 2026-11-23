@@ -33,7 +33,7 @@ The UI also provides guidance on the format required for the reward function or 
 
 You can also use the SageMaker AI Python SDK to create assets. See sample code snippet below:
 
-```
+```python
 from sagemaker.ai_registry.air_constants import REWARD_FUNCTION, REWARD_PROMPT
 from sagemaker.ai_registry.dataset import DataSet, CustomizationTechnique
 from sagemaker.ai_registry.evaluator import Evaluator

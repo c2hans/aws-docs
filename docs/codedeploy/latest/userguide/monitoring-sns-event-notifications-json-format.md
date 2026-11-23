@@ -13,7 +13,7 @@ The following examples show the structure of the JSON output available with Code
 
 **Sample JSON Output for Instance-Based Triggers**
 
-```
+```json
 {
     "region": "us-east-2",
     "accountId": "111222333444",
@@ -42,7 +42,7 @@ The following examples show the structure of the JSON output available with Code
 
 **Sample JSON Output for Deployment-Based Triggers**
 
-```
+```json
 {
     "region": "us-west-1",
     "accountId": "111222333444",

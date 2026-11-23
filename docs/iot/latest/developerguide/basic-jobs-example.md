@@ -10,7 +10,7 @@ Replace {{us-west-2:57EXAMPLE833}} with your AWS Region, a colon character (:), 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

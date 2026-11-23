@@ -11,7 +11,7 @@ You can use the following code snippets to update a scheduled query.
 ------
 #### [  Java  ]
 
-```
+```java
 public void updateScheduledQueries(String scheduledQueryArn) {
     System.out.println("Updating Scheduled Query");
     try {
@@ -34,7 +34,7 @@ public void updateScheduledQueries(String scheduledQueryArn) {
 ------
 #### [  Java v2  ]
 
-```
+```java
 public void updateScheduledQuery(String scheduledQueryArn, ScheduledQueryState state) {
     System.out.println("Updating Scheduled Query");
     try {
@@ -89,7 +89,7 @@ func (timestreamBuilder TimestreamBuilder) UpdateScheduledQuery(scheduledQueryAr
 ------
 #### [  Python  ]
 
-```
+```python
 def update_scheduled_query(self, scheduled_query_arn, state):
     print("\nUpdating Scheduled Query")
     try:
@@ -109,7 +109,7 @@ def update_scheduled_query(self, scheduled_query_arn, state):
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/blob/mainline/sample_apps_reinvent2021/js/schedule-query-example.js).
 
-```
+```javascript
 async function updateScheduledQueries(scheduledQueryArn) {
      console.log("Updating Scheduled Query");
      var params = {
@@ -129,7 +129,7 @@ async function updateScheduledQueries(scheduledQueryArn) {
 ------
 #### [  .NET  ]
 
-```
+```cs
 private async Task UpdateScheduledQuery(string scheduledQueryArn, ScheduledQueryState state)
  {
      try

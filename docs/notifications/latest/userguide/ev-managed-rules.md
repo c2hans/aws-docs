@@ -20,7 +20,7 @@ The followng table displays Amazon EventBridge managed rules:
 **Note**
 The managed rule User Notifications creates in EventBridge only contains source and detail-type fields, regardless of whether the User Notifications event rule includes additional filters. User Notifications always filters based on the User Notifications event rule. For example, the User Notifications event rule for Amazon Elastic Compute Cloud instance state changed to "terminated", "stopping", "stopped", or "shutting-down" shows:
 
-```
+```json
 {
  "source": ["aws.ec2"],
  "detail-type": ["EC2 Instance State-change Notification"],
@@ -31,7 +31,7 @@ The managed rule User Notifications creates in EventBridge only contains source 
 ```
 The corresponding EventBridge managed rule shows:
 
-```
+```json
 {
  "source": ["aws.ec2"],
  "detail-type": ["EC2 Instance State-change Notification"]

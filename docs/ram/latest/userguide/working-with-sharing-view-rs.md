@@ -36,7 +36,7 @@ You can use the [get-resource-shares](https://docs.aws.amazon.com/cli/latest/ref
 
 The following example shows the resource shares that are shared in the current AWS Region (`us-east-1`) for the calling AWS account. To get the resource shares created in a different Region, use the `--region <region-code>` parameter. To include resource shares that contain global resources, you must specify the Region US East (N. Virginia), `us-east-1`.
 
-```
+```bash
 $  aws ram get-resource-shares \
     --resource-owner SELF
 {

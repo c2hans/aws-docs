@@ -118,7 +118,7 @@ Depending on your migration source, you can provide additional options to custom
 
 To migrate from a deployed AWS CloudFormation stack, provide the `--from-stack` option. Provide the name of your deployed AWS CloudFormation stack with `--stack-name`. The following is an example:
 
-```
+```bash
 $ cdk migrate --from-stack --stack-name "myCloudFormationStack"
 ```
 
@@ -141,7 +141,7 @@ CDK Migrate supports migrating from AWS CloudFormation templates formatted in `J
 
 To migrate from a local AWS CloudFormation template, use the `--from-path` option and provide a path to the local template. You must also provide the required `--stack-name` option. The following is an example:
 
-```
+```bash
 $ cdk migrate --from-path "./template.json" --stack-name "myCloudFormationStack"
 ```
 
@@ -171,7 +171,7 @@ To convert to an AWS CloudFormation stack, deploy the AWS SAM template using the
 
 To migrate from deployed AWS resources, provide the `--from-scan` option. You must also provide the required `--stack-name` option. The following is an example:
 
-```
+```bash
 $ cdk migrate --from-scan --stack-name "myCloudFormationStack"
 ```
 
@@ -210,7 +210,7 @@ For more information on write-only properties and how IaC generator manages them
 
 After migration, you must specify write-only property values in the new CDK app. The AWS CDK CLI will append a **Warnings** section to the CDK project’s `ReadMe` file to document any write-only properties that were identified by IaC generator. The following is an example:
 
-```
+```markdown
 # Welcome to your CDK TypeScript project
 ...
 ## Warnings
@@ -249,7 +249,7 @@ This property can be replaced with other exclusive properties
 
    The following is an example of the `Props` section within a migrated CDK app with two write-only properties to resolve:
 
-   ```
+   ```javascript
    export interface MyTestAppStackProps extends cdk.StackProps {
      /**
       * The Amazon S3 key of the deployment package.

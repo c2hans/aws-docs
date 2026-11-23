@@ -22,7 +22,7 @@ Required: No
 An array of context types associated with the engagement, such as "CustomerProject" or "Lead". This provides a quick overview of the types of contexts included in the engagement.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
-Valid Values: `CustomerProject | Lead | ProspectingResult`
+Valid Values: `CustomerProject | Lead | ProspectingResult | CustomerAccount`
 Required: No
 
  ** CreatedAt **   <a name="AWSPartnerCentral-Type-EngagementSummary-CreatedAt"></a>

@@ -19,7 +19,7 @@ The following example policy illustrates the basic elements of what is needed in
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -36,7 +36,7 @@ Required: No
  ** ProviderType **   <a name="codeconnections-Type-Host-ProviderType"></a>
 The name of the installed provider to be associated with your connection. The host resource represents the infrastructure where your provider type is installed. The valid provider type is GitHub Enterprise Server.
 Type: String
-Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps`
+Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps | GitHubEnterpriseCloudDataResidency`
 Required: No
 
  ** Status **   <a name="codeconnections-Type-Host-Status"></a>

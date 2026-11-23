@@ -92,7 +92,7 @@ You can use the following AWS CLI commands or API operations to disable trusted 
 
   Run the following command to disable AWS CloudFormation StackSets as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations disable-aws-service-access \
       --service-principal stacksets.cloudformation.amazonaws.com
   ```

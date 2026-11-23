@@ -23,7 +23,7 @@ A mock client operation gives you a fast unit test of how application code calls
 ------
 #### [ Synchronous client ]
 
-```
+```python
 from unittest.mock import Mock
 
 from aws_sdk_dynamodb import DynamoDBClient
@@ -46,7 +46,7 @@ def test_first_table() -> None:
 ------
 #### [ Asynchronous client ]
 
-```
+```python
 from unittest.mock import AsyncMock
 
 import pytest
@@ -90,7 +90,7 @@ Use a mock HTTP client only when the application behavior depends on the client'
 ------
 #### [ Synchronous client ]
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient, DynamoDBConfig
 from smithy_http.testing import MockHTTPClient
 
@@ -123,7 +123,7 @@ def test_first_table_through_client() -> None:
 ------
 #### [ Asynchronous client ]
 
-```
+```python
 import pytest
 
 from aws_sdk_dynamodb import AsyncDynamoDBClient, AsyncDynamoDBConfig

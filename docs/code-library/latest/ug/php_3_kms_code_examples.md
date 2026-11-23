@@ -30,7 +30,7 @@ The following code example shows how to get started using AWS Key Management Ser
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
 include "vendor/autoload.php";
 
 use Aws\Kms\KmsClient;
@@ -71,7 +71,7 @@ The following code example shows how to:
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
         echo "\n";
         echo "--------------------------------------\n";
         echo <<<WELCOME
@@ -772,7 +772,7 @@ The following code example shows how to use `CreateAlias`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @param string $alias
@@ -803,7 +803,7 @@ The following code example shows how to use `CreateGrant`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @param string $granteePrincipal
@@ -841,7 +841,7 @@ The following code example shows how to use `CreateKey`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keySpec
      * @param string $keyUsage
@@ -877,7 +877,7 @@ The following code example shows how to use `Decrypt`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @param string $ciphertext
@@ -908,7 +908,7 @@ The following code example shows how to use `DeleteAlias`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $aliasName
      * @return void
@@ -935,7 +935,7 @@ The following code example shows how to use `DescribeKey`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @return array
@@ -965,7 +965,7 @@ The following code example shows how to use `DisableKey`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @return void
@@ -992,7 +992,7 @@ The following code example shows how to use `EnableKey`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @return void
@@ -1021,7 +1021,7 @@ The following code example shows how to use `Encrypt`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @param string $text
@@ -1052,7 +1052,7 @@ The following code example shows how to use `ListAliases`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @param int $limit
@@ -1087,7 +1087,7 @@ The following code example shows how to use `ListGrants`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @return Result
@@ -1116,7 +1116,7 @@ The following code example shows how to use `ListKeys`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @return array
      */
@@ -1147,7 +1147,7 @@ The following code example shows how to use `PutKeyPolicy`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @param string $policy
@@ -1176,7 +1176,7 @@ The following code example shows how to use `RevokeGrant`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $grantId
      * @param string $keyId
@@ -1205,7 +1205,7 @@ The following code example shows how to use `ScheduleKeyDeletion`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @param int $pendingWindowInDays
@@ -1234,7 +1234,7 @@ The following code example shows how to use `Sign`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @param string $message
@@ -1265,7 +1265,7 @@ The following code example shows how to use `TagResource`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @param array $tags

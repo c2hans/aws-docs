@@ -137,7 +137,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-ec2-instance-stack-update-imds-version-managed-automation-ex-min"></a>
 
-```
+```json
 {
     "InstanceIds": ["i-1234567890abcdef0","i-b188560f"],
     "HttpEndpoint": "enabled"
@@ -147,7 +147,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-ec2-instance-stack-update-imds-version-managed-automation-ex-max"></a>
 
-```
+```json
 {
     "InstanceIds": ["i-1234567890abcdef0"],
     "HttpEndpoint": "enabled",

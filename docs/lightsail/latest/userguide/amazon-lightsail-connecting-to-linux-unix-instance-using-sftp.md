@@ -75,6 +75,7 @@ Ensure your instance's firewall allows SSH (TCP port 22) connections from your I
    + Lightsail packaged versions of WordPress, Nginx, WordPress Multisite, LAMP, Node.js instances: `admin`
    + Ruby on Rails instances: `ec2-user`
    + OpenClaw instances: `ubuntu`
+   + Kiro Crew instances: `ubuntu`
    + Plesk instances: `ubuntu`
    + cPanel & WHM (AlmaLinux) instances: `ec2-user`
    + cPanel & WHM (CentOS 7) instances: `centos`

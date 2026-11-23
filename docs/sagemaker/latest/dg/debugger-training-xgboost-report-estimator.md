@@ -18,7 +18,7 @@ The output tensors are saved at a default S3 bucket. For example, `s3://sagemake
 
 When you construct a SageMaker AI ModelTrainer for an XGBoost training job, specify the rule as shown in the following example code.
 
-```
+```py
 import boto3
 import sagemaker
 from sagemaker.train import ModelTrainer

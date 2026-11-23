@@ -205,7 +205,7 @@ HTTP Status Code: 400
 
 The following example creates a location for an SMB file server.
 
-```
+```json
 {
    "AgentArns":[
       "arn:aws:datasync:us-east-2:111222333444:agent/agent-0b0addbeef44b3nfs",
@@ -233,7 +233,7 @@ The following example creates a location for an SMB file server.
 
 A response returns the location ARN of your SMB file server.
 
-```
+```json
 {
     "LocationArn": "arn:aws:datasync:us-east-1:111222333444:location/loc-0f01451b140b2af49"
 }

@@ -48,7 +48,7 @@ Steps:
 
 1. Create a basic *build image* configuration file. To do this, specify the [`InstanceType`](Build-v3.md#yaml-build-image-Build-InstanceType) to be used to build the image and the [`ParentImage`](Build-v3.md#yaml-build-image-Build-ParentImage). These are used as the starting point to create the AMI. For more information about optional build parameters, see [Image Configuration](image-builder-configuration-file-v3.md).
 
-   ```
+   ```yaml
    Build:
     InstanceType: {{<BUILD_INSTANCE_TYPE>}}
     ParentImage: {{<BASE_AMI_ID>}}
@@ -56,7 +56,7 @@ Steps:
 
 1. Use the CLI command [`pcluster build-image`](pcluster.build-image-v3.md) to build an AWS ParallelCluster AMI starting from the AMI that you provide as the base.
 
-   ```
+   ```sh
    $ pcluster build-image --image-id {{IMAGE_ID}} --image-configuration {{IMAGE_CONFIG.yaml}} --region {{REGION}}
        {
     "image": {
@@ -82,7 +82,7 @@ Steps:
 
 1. You can monitor the status of the build process by running the following command. After the build completes, you can run it to retrieve the AMI ID given in the response.
 
-   ```
+   ```sh
    $ pcluster describe-image --image-id {{IMAGE_ID}} --region {{REGION}}
 
    # BEFORE COMPLETE
@@ -144,7 +144,7 @@ Steps:
 
 Image creation completes in about an hour. You can monitor the process by running the [`pcluster describe-image`](pcluster.describe-image-v3.md) command or log retrieval commands.
 
-```
+```sh
 $ pcluster describe-image --image-id {{IMAGE_ID}} --region {{REGION}}
 ```
 
@@ -152,7 +152,7 @@ The [`build-image`](pcluster.build-image-v3.md) command creates a CloudFormation
 
 After running the [`build-image`](pcluster.build-image-v3.md) command, it's possible to retrieve CloudFormation stack events by using [`pcluster get-image-stack-events`](pcluster.get-image-stack-events-v3.md). You can filter results with the `--query` parameter to see the latest events. For more information, see [Filtering AWS CLI output](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-filter.html) in the *AWS Command Line Interface User Guide*.
 
-```
+```sh
 $ pcluster get-image-stack-events --image-id {{IMAGE_ID}} --region {{REGION}} --query "events[0]"
 {
  "eventId": "ParallelClusterImage-CREATE_IN_PROGRESS-2022-04-05T21:39:24.725Z",
@@ -170,7 +170,7 @@ $ pcluster get-image-stack-events --image-id {{IMAGE_ID}} --region {{REGION}} --
 
 After about 15 minutes, the stack events appear in the log event entry related to Image Builder creation. You can now list image log streams and monitor the Image Builder steps by using [`pcluster list-image-log-streams`](pcluster.list-image-log-streams-v3.md) and [`pcluster get-image-log-events`](pcluster.get-image-log-events-v3.md) commands.
 
-```
+```sh
 $ pcluster list-image-log-streams --image-id {{IMAGE_ID}} --region {{REGION}} \
     --query 'logStreams[*].logStreamName'
 
@@ -201,7 +201,7 @@ $ pcluster get-image-log-events --image-id {{IMAGE_ID}} --region {{REGION}} \
 
 Continue to check with the [`describe-image`](pcluster.describe-image-v3.md) command until you see the `BUILD_COMPLETE` status.
 
-```
+```sh
 $ pcluster describe-image --image-id {{IMAGE_ID}} --region {{REGION}}
 {
  "imageConfiguration": {
@@ -232,7 +232,7 @@ If you need to troubleshoot a custom AMI creation issue, create an archive of th
 
 It's possible to archive the logs in an Amazon S3 bucket or in a local file, depending on the `--output` parameter.
 
-```
+```sh
 $ pcluster export-image-logs --image-id {{IMAGE_ID}} --region {{REGION}} \
 --bucket {{BUCKET_NAME}} --bucket-prefix {{BUCKET_FOLDER}}
 {
@@ -282,7 +282,7 @@ Steps:
 
 1. Run the following command to prepare your instance for AMI creation.
 
-   ```
+   ```sh
    sudo /usr/local/sbin/ami_cleanup.sh
    ```
 
@@ -323,7 +323,7 @@ Steps:
 
 1. Run the following command to prepare your instance for AMI creation:
 
-   ```
+   ```sh
    sudo /usr/local/sbin/ami_cleanup.sh
    ```
 

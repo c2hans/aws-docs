@@ -38,7 +38,7 @@ For more information, see [Cancel a Spot Instance request](https://docs.aws.amaz
 **Tools for PowerShell V4**
 **Example 1: This example cancels the specified Spot instance request.**
 
-```
+```powershell
 Stop-EC2SpotInstanceRequest -SpotInstanceRequestId sir-12345678
 ```
 **Output:**
@@ -53,7 +53,7 @@ sir-12345678             cancelled
 **Tools for PowerShell V5**
 **Example 1: This example cancels the specified Spot instance request.**
 
-```
+```powershell
 Stop-EC2SpotInstanceRequest -SpotInstanceRequestId sir-12345678
 ```
 **Output:**

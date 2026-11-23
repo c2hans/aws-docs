@@ -27,7 +27,7 @@ If you run the **create-image-pipeline** command or the `New-EC2IBImagePipeline`
 
    Use a text editor to create a JSON file with the following keys, plus values that are valid for your environment. This example uses a file named `create-image-pipeline.json`:
 
-   ```
+   ```json
    {
    	"name": "{{my-windows-2019-pipeline}}",
    	"description": "{{Builds Windows Server 2019 container images}}",
@@ -52,7 +52,7 @@ The path for the JSON file should follow the appropriate convention for the base
 
 1. Run the following command, using the file you created as input:
 
-   ```
+   ```sh
    aws imagebuilder create-image-pipeline --cli-input-json file://create-image-pipeline.json
    ```
 
@@ -63,7 +63,7 @@ Tools for PowerShell doesn't take a JSON input file. Instead, you pass each top-
 
 The following example shows how to use the [New-EC2IBImagePipeline](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2IBImagePipeline.html) cmdlet to create the pipeline with the same settings as the AWS CLI example:
 
-```
+```ps
 New-EC2IBImagePipeline -Name {{my-windows-2019-pipeline}} `
     -Description "{{Builds Windows Server 2019 container images}}" `
     -EnhancedImageMetadataEnabled $true `
@@ -94,7 +94,7 @@ To create a container pipeline with scanning enabled, you must meet the Amazon I
 
    Create a JSON file named `create-container-pipeline-with-workflows.json`. This file defines the container pipeline configuration with image scanning enabled and custom test workflows. Replace the placeholder values in the following example with your own resource ARNs:
 
-   ```
+   ```json
    {
    	"name": "{{my-container-pipeline-with-scanning}}",
    	"description": "{{Container pipeline with vulnerability scanning and custom workflows}}",
@@ -168,7 +168,7 @@ In Tools for PowerShell, the `workflows` array becomes a list of `WorkflowConfig
 
 The following example shows how to use the [New-EC2IBImagePipeline](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2IBImagePipeline.html) cmdlet to create the pipeline with the same settings as the AWS CLI example:
 
-```
+```ps
 Import-Module AWS.Tools.Imagebuilder
 
 $workflows = @(

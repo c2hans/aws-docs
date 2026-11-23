@@ -9,7 +9,7 @@ You can define a public or private NAT Gateway node over a subnet. For a public 
 ## Syntax
 <a name="node-nat-gateway-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Networking.NATGateway:
   requirements:
     subnet: String
@@ -55,7 +55,7 @@ Type: List
 ## Example
 <a name="node-nat-gateway-example"></a>
 
-```
+```yaml
 Free5GCNatGateway01:
   type: tosca.nodes.AWS.Networking.NATGateway
     requirements:

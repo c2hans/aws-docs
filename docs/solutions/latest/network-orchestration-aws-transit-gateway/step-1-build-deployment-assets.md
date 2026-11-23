@@ -15,20 +15,20 @@ If you deploy spoke stacks into more than one AWS Region, create a source bucket
 
 1. Clone the Guidance source code repository:
 
-   ```
+   ```bash
    git clone https://github.com/aws-solutions-library-samples/network-orchestration-for-aws-transit-gateway.git
    ```
 
 1. Change to the `deployment` directory and make the build script executable:
 
-   ```
+   ```bash
    cd network-orchestration-for-aws-transit-gateway/deployment
    chmod +x ./build-s3-dist.sh
    ```
 
 1. Run the build script. It requires four arguments:
 
-   ```
+   ```bash
    ./build-s3-dist.sh <BUCKET_BASE_NAME> network-orchestration-for-aws-transit-gateway <VERSION> <BUCKET_BASE_NAME>
    ```
 
@@ -49,19 +49,19 @@ Use the same bucket base name for the first and fourth arguments. This deploymen
 
    For example:
 
-   ```
+   ```bash
    ./build-s3-dist.sh notg-guidance network-orchestration-for-aws-transit-gateway v3.3.28 notg-guidance
    ```
 
 1. Upload the generated Lambda source assets to your bucket, using the same version value you passed to the build script:
 
-   ```
+   ```bash
    aws s3 cp ./regional-s3-assets/ s3://<BUCKET_BASE_NAME>-<region>/network-orchestration-for-aws-transit-gateway/<VERSION>/ --recursive
    ```
 
    For example:
 
-   ```
+   ```bash
    aws s3 cp ./regional-s3-assets/ s3://notg-guidance-us-east-1/network-orchestration-for-aws-transit-gateway/v3.3.28/ --recursive
    ```
 
@@ -69,7 +69,7 @@ Use the same bucket base name for the first and fourth arguments. This deploymen
 
 1. Grant every account that you deploy this Guidance into (the hub account, each spoke account, and — if you use AWS Organizations — the management account) read access to the staged source code. Attach the following bucket policy to your S3 bucket. Replace the placeholders with your bucket name, Region, and the account IDs you deploy into.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

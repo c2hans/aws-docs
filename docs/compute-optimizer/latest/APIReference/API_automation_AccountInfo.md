@@ -32,6 +32,11 @@ Type: String
 Valid Values: `Active | Inactive | Pending | Failed`
 Required: Yes
 
+ ** organizationRuleModeSource **   <a name="computeoptimizer-Type-automation_AccountInfo-organizationRuleModeSource"></a>
+Information about the source of the account's effective organization rule mode.
+Type: [OrganizationRuleModeSource](API_automation_OrganizationRuleModeSource.md) object
+Required: No
+
  ** statusReason **   <a name="computeoptimizer-Type-automation_AccountInfo-statusReason"></a>
 The reason for the current Automation enrollment status.
 Type: String

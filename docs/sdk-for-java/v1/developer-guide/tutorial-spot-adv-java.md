@@ -34,7 +34,7 @@ To enable access to the group, we create an `ipPermission` object with the IP ad
 
 (The following code is the same as what we used in the first tutorial.)
 
-```
+```java
 // Create the AmazonEC2Client object so we can call various APIs.
 AmazonEC2 ec2 = AmazonEC2ClientBuilder.standard()
                     .withCredentials(credentials)
@@ -106,7 +106,7 @@ Let’s start by creating a `RequestSpotInstanceRequest` object. The request obj
 
 (The following code is the same as what we used in the first tutorial.)
 
-```
+```java
 // Create the AmazonEC2 client so we can call various APIs.
 AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
@@ -143,7 +143,7 @@ RequestSpotInstancesResult requestResult =
 
 When building a Spot request, you can specify several optional parameters. The first is whether your request is one-time only or persistent. By default, it is a one-time request. A one-time request can be fulfilled only once, and after the requested instances are terminated, the request will be closed. A persistent request is considered for fulfillment whenever there is no Spot Instance running for the same request. To specify the type of request, you simply need to set the Type on the Spot request. This can be done with the following code.
 
-```
+```java
 // Retrieves the credentials from an AWSCredentials.properties file.
 AWSCredentials credentials = null;
 try {
@@ -197,7 +197,7 @@ RequestSpotInstancesResult requestResult =
 
 You can also optionally specify the length of time that your request will remain valid. You can specify both a starting and ending time for this period. By default, a Spot request will be considered for fulfillment from the moment it is created until it is either fulfilled or canceled by you. However you can constrain the validity period if you need to. An example of how to specify this period is shown in the following code.
 
-```
+```java
 // Create the AmazonEC2 client so we can call various APIs.
 AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
@@ -246,7 +246,7 @@ You have the option of grouping your Spot Instance requests in several different
 
 If you want to ensure your Spot Instances are all launched and terminated together, then you have the option to leverage a launch group. A launch group is a label that groups a set of bids together. All instances in a launch group are started and terminated together. Note, if instances in a launch group have already been fulfilled, there is no guarantee that new instances launched with the same launch group will also be fulfilled. An example of how to set a Launch Group is shown in the following code example.
 
-```
+```java
 // Create the AmazonEC2 client so we can call various APIs.
 AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
@@ -283,7 +283,7 @@ RequestSpotInstancesResult requestResult =
 
 If you want to ensure that all instances within a request are launched in the same Availability Zone, and you don’t care which one, you can leverage Availability Zone groups. An Availability Zone group is a label that groups a set of instances together in the same Availability Zone. All instances that share an Availability Zone group and are fulfilled at the same time will start in the same Availability Zone. An example of how to set an Availability Zone group follows.
 
-```
+```java
 // Create the AmazonEC2 client so we can call various APIs.
 AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
@@ -320,7 +320,7 @@ RequestSpotInstancesResult requestResult =
 
 You can specify an Availability Zone that you want for your Spot Instances. The following code example shows you how to set an Availability Zone.
 
-```
+```java
 // Create the AmazonEC2 client so we can call various APIs.
 AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
@@ -360,7 +360,7 @@ RequestSpotInstancesResult requestResult =
 
 Lastly, you can specify a *placement group* if you are using High Performance Computing (HPC) Spot Instances, such as cluster compute instances or cluster GPU instances. Placement groups provide you with lower latency and high-bandwidth connectivity between the instances. An example of how to set a placement group follows.
 
-```
+```java
 // Create the AmazonEC2 client so we can call various APIs.
 AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
@@ -408,7 +408,7 @@ One of the easiest ways to manage interruption of your Spot Instances is to ensu
 
 In the added code, we create a `BlockDeviceMapping` object and set its associated Amazon Elastic Block Store (Amazon EBS) to an Amazon EBS object that we’ve configured to `not` be deleted if the Spot Instance is terminated. We then add this `BlockDeviceMapping` to the ArrayList of mappings that we include in the launch specification.
 
-```
+```java
 // Retrieves the credentials from an AWSCredentials.properties file.
 AWSCredentials credentials = null;
 try {
@@ -483,7 +483,7 @@ Adding tags to Amazon EC2 resources can simplify the administration of your clou
 
 To add tags to your spot requests, you need to tag them *after* they have been requested. The return value from `requestSpotInstances()` provides you with a [RequestSpotInstancesResult](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/RequestSpotInstancesResult.html) object that you can use to get the spot request IDs for tagging:
 
-```
+```java
 // Call the RequestSpotInstance API.
 RequestSpotInstancesResult requestResult = ec2.requestSpotInstances(requestRequest);
 List<SpotInstanceRequest> requestResponses = requestResult.getSpotInstanceRequests();
@@ -501,7 +501,7 @@ for (SpotInstanceRequest requestResponse : requestResponses) {
 
 Once you have the IDs, you can tag the requests by adding their IDs to a [CreateTagsRequest](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/CreateTagsRequest.html) and calling the Amazon EC2 client’s `createTags()` method:
 
-```
+```java
 // The list of tags to create
 ArrayList<Tag> requestTags = new ArrayList<Tag>();
 requestTags.add(new Tag("keyname1","value1"));
@@ -533,7 +533,7 @@ You can check the status of your requests by calling the Amazon EC2 client’s `
 
 Once the spot request is no longer open, you can retrieve its instance ID from the `SpotInstanceRequest` object by calling its `getInstanceId()` method.
 
-```
+```java
 boolean anyOpen; // tracks whether any requests are still open
 
 // a list of instances to tag.
@@ -580,7 +580,7 @@ do {
 
 Now you can tag the instances that are returned:
 
-```
+```java
 // Create a list of tags to create
 ArrayList<Tag> instanceTags = new ArrayList<Tag>();
 instanceTags.add(new Tag("keyname1","value1"));
@@ -612,7 +612,7 @@ catch (AmazonServiceException e) {
 
 To cancel a Spot Instance request, call `cancelSpotInstanceRequests` on the Amazon EC2 client with a [CancelSpotInstanceRequestsRequest](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/CancelSpotInstanceRequestsRequest.html) object.
 
-```
+```java
 try {
     CancelSpotInstanceRequestsRequest cancelRequest = new CancelSpotInstanceRequestsRequest(spotInstanceRequestIds);
     ec2.cancelSpotInstanceRequests(cancelRequest);
@@ -630,7 +630,7 @@ try {
 
 You can terminate any Spot Instances that are running by passing their IDs to the Amazon EC2 client’s `terminateInstances()` method.
 
-```
+```java
 try {
     TerminateInstancesRequest terminateRequest = new TerminateInstancesRequest(instanceIds);
     ec2.terminateInstances(terminateRequest);

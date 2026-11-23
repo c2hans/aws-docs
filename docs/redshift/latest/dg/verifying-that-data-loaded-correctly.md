@@ -10,7 +10,7 @@ After the load operation is complete, query the [STL\_LOAD\_COMMITS](r_STL_LOAD_
 
 The following query returns entries for loading the tables in the TICKIT database:
 
-```
+```sql
 SELECT query, trim(filename) AS filename, curtime, status
 FROM stl_load_commits
 WHERE filename like '%tickit%' order by query;

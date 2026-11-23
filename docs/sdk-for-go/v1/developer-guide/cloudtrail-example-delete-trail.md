@@ -12,7 +12,7 @@ Choose `Copy` to save the code locally.
 
 Create the file *delete\_trail.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -25,7 +25,7 @@ import (
 
 Get the name of the trail. If the trail name is missing, display an error message and exit.
 
-```
+```go
 trailNamePtr := flag.String("n", "", "The name of the trail to delete")
 
 flag.Parse()
@@ -38,7 +38,7 @@ if *trailNamePtr == "" {
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `.aws/credentials` in your home folder and create the client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -46,7 +46,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Create a CloudTrail client and call **DeleteTrail** with the trail name. If an error occurs, print the error and exit. If no error occurs, print a success message.
 
-```
+```go
 svc := cloudtrail.New(sess)
 
 _, err := svc.DeleteTrail(&cloudtrail.DeleteTrailInput{Name: aws.String(*trailNamePtr)})

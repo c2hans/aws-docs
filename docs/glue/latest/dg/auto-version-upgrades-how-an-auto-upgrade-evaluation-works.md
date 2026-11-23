@@ -74,7 +74,7 @@ When an upgraded run fails, AWS Glue retries it on the job's current version. So
 
 An upgraded run can fail in 2 ways. It can fail while it runs, or it can finish but fail the data validation checks. In both cases, AWS Glue marks the run `FAILED` and retries it on the current version. A run that fails the data validation checks shows the following message.
 
-```
+```text
 Auto upgrade output data validation failed, rolling back to previous version
 ```
 

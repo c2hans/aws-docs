@@ -9,7 +9,7 @@ You can directly access the nodes of a SageMaker HyperPod cluster in service usi
 **Note**
 If you haven't set up AWS Systems Manager, follow the instructions provided at [Setting up AWS Systems Manager and Run As for cluster user access control](sagemaker-hyperpod-prerequisites.md#sagemaker-hyperpod-prerequisites-ssm).
 
-```
+```bash
 $ aws ssm start-session \
     --target sagemaker-cluster:{{aa11bbbbb222}}_{{controller-group}}-{{i-111222333444555aa}} \
     --region {{us-west-2}}

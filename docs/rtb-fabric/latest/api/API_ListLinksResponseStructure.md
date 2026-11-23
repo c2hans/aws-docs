@@ -38,7 +38,7 @@ Required: Yes
  ** status **   <a name="rtbfabric-Type-ListLinksResponseStructure-status"></a>
 The status of the link.
 Type: String
-Valid Values: `PENDING_CREATION | PENDING_REQUEST | REQUESTED | ACCEPTED | ACTIVE | REJECTED | FAILED | PENDING_DELETION | DELETED | PENDING_UPDATE | PENDING_ISOLATION | ISOLATED | PENDING_RESTORATION`
+Valid Values: `PENDING_CREATION | PENDING_REQUEST | REQUESTED | ACCEPTED | ACTIVE | REJECTED | FAILED | PENDING_DELETION | DELETED | PENDING_UPDATE | PENDING_ISOLATION | ISOLATED | PENDING_RESTORATION | CREATE_FAILED | DELETE_FAILED`
 Required: Yes
 
  ** updatedAt **   <a name="rtbfabric-Type-ListLinksResponseStructure-updatedAt"></a>
@@ -61,6 +61,12 @@ Required: No
 The direction of the link.
 Type: String
 Valid Values: `RESPONSE | REQUEST`
+Required: No
+
+ ** errorDetails **   <a name="rtbfabric-Type-ListLinksResponseStructure-errorDetails"></a>
+The causes of the link's failure, such as a deleted subnet. Present only when the link is CREATE\_FAILED or DELETE\_FAILED.
+Type: Array of [ErrorDetail](API_ErrorDetail.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
 
  ** flowModules **   <a name="rtbfabric-Type-ListLinksResponseStructure-flowModules"></a>

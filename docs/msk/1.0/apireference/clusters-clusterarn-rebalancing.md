@@ -64,7 +64,7 @@ Use this resource to update the intelligent rebalancing status of an Amazon MSK 
 #### PUT schema
 <a name="clusters-clusterarn-rebalancing-request-body-put-example"></a>
 
-```
+```json
 {
   "currentVersion": "string",
   "rebalancing": {
@@ -79,7 +79,7 @@ Use this resource to update the intelligent rebalancing status of an Amazon MSK 
 #### UpdateRebalancingResponse schema
 <a name="clusters-clusterarn-rebalancing-response-body-updaterebalancingresponse-example"></a>
 
-```
+```json
 {
   "clusterArn": "string",
   "clusterOperationArn": "string"
@@ -89,7 +89,7 @@ Use this resource to update the intelligent rebalancing status of an Amazon MSK 
 #### Error schema
 <a name="clusters-clusterarn-rebalancing-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

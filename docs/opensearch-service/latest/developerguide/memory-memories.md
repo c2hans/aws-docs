@@ -44,7 +44,7 @@ When your application already knows something worth remembering, you can write i
 
 The request requires the space ID, the `name` of a strategy that the space already declares, the memory `content` (1 to 16,000 characters), and an `actorId`. You can also supply a `sessionId`, `metadata`, and a `clientToken`.
 
-```
+```bash
 aws opensearchmemory create-memory \
     --space-id sp-02864597b164 \
     --name user-facts \
@@ -54,7 +54,7 @@ aws opensearchmemory create-memory \
 
 The response returns the new memory's ID.
 
-```
+```json
 {
     "memory": {
         "memoryId": "mem-3b9f1c2e-7d4a-4e8b-9c1f-2a6d8e0b4f17",
@@ -78,7 +78,7 @@ The AWS CLI and SDKs add a `clientToken` to the request. A retry with the same t
 
 To read one memory, call `GetMemory` with the space ID and the memory ID that `SearchMemories` or `ListMemories` returned.
 
-```
+```bash
 aws opensearchmemory get-memory \
     --space-id sp-02864597b164 \
     --memory-id mem-3b9f1c2e-7d4a-4e8b-9c1f-2a6d8e0b4f17
@@ -99,7 +99,7 @@ You can narrow the list with the following parameters:
 
 The following example lists the most recently updated `user-facts` memories of one actor.
 
-```
+```bash
 aws opensearchmemory list-memories \
     --space-id sp-02864597b164 \
     --memory-strategies '[{"memoryType":"SEMANTIC","memoryStrategyNames":["user-facts"]}]' \
@@ -115,7 +115,7 @@ aws opensearchmemory list-memories \
 
 To find memories by what they say, call `SearchMemories` with the space ID, an `actorId`, and a query. Each search covers one actor. The results are ranked by relevance and include each memory's content, score, and source events.
 
-```
+```bash
 aws opensearchmemory search-memories \
     --space-id sp-02864597b164 \
     --actor-id user-123 \
@@ -133,7 +133,7 @@ To change a memory's text or metadata, call `UpdateMemory` with the space ID, th
 
 The following example adds one tag and keeps the others.
 
-```
+```bash
 aws opensearchmemory update-memory \
     --space-id sp-02864597b164 \
     --memory-id mem-3b9f1c2e-7d4a-4e8b-9c1f-2a6d8e0b4f17 \
@@ -157,7 +157,7 @@ You can't undo deleting a memory.
 
 To delete a memory, call `DeleteMemory` with the space ID and memory ID. You can supply `actorId` and `strategyName` to check the memory's owner first.
 
-```
+```bash
 aws opensearchmemory delete-memory \
     --space-id sp-02864597b164 \
     --memory-id mem-3b9f1c2e-7d4a-4e8b-9c1f-2a6d8e0b4f17 \

@@ -13,7 +13,7 @@ To make aggregation queries on non-managed fields, you must specify a field you 
 
 If a field cannot be indexed because of a mismatched type, the Fleet Indexing service sends an error log to CloudWatch Logs. The error log contains the field name, the value that could not be converted, and the thing name for the device. The following is an example error log:
 
-```
+```json
 {
   "timestamp": "2017-02-20 20:31:22.932",
   "logLevel": "ERROR",
@@ -63,7 +63,7 @@ When you index location data using geoqueries, the location fields you specify i
 
 The following is an example error log:
 
-```
+```json
 {
 "timestamp": "2023-11-09 01:39:43.466",
     "logLevel": "ERROR",

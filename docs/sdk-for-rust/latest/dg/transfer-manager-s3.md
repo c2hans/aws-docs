@@ -54,7 +54,7 @@ A transfer manager client has the type [aws\_s3\_transfer::Client](https://docs.
 
 The simplest way is to load configuration from the environment, the same way `aws-config` does. This detects your settings and pins the latest behavior version:
 
-```
+```rust
 use aws_s3_transfer::Client;
 
 #[tokio::main]
@@ -70,7 +70,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 To control the AWS Region, profile, or credentials, or to share configuration with an Amazon S3 client, build the client from an existing `SdkConfig`. Pass the configuration to `s3_config`, which is required:
 
-```
+```rust
 use aws_config::BehaviorVersion;
 use aws_s3_transfer::{Client, Config};
 
@@ -90,7 +90,7 @@ Sharing one `SdkConfig` lets a transfer manager client and an Amazon S3 client r
 **Tip**
 Create the client once and reuse it. The client is cheap to clone, and every clone shares the same runtime, memory budget, and concurrency limits. Clone the client for each task that runs a transfer instead of building a new client.
 
-```
+```rust
 use aws_s3_transfer::Client;
 
 #[tokio::main]

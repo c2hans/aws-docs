@@ -58,7 +58,7 @@ You must attach permissions for your agent so that it can access the Lambda func
 
 To configure advanced prompts by using the API operations, you send an [UpdateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgent.html) call and modify the following `promptOverrideConfiguration` object.
 
-```
+```json
 "promptOverrideConfiguration": {
     "overrideLambda": "string",
     "promptConfigurations": [

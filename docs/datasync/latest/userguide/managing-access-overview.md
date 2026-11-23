@@ -132,7 +132,7 @@ For more information, see [Control access to VPC endpoints using endpoint polici
 **Example policy**
 The following is an example of a endpoint policy.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

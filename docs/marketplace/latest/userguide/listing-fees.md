@@ -17,9 +17,14 @@ Learn about listing fees for standard public offers, private offers, channel par
 **Public offer listing fees**
 
 Listing fees for software and data public offers are determined by the deployment method:
-+ Software-as-a-service (SaaS) – 3%
++ Software-as-a-service (SaaS) – 3%. This fee also applies to Agentic Commerce products.
++ Data as a Service (DaaS) – 3%
 + Server (Amazon Machine Image (AMI), container, and machine learning) – 20%
 + AWS Data Exchange – 3%
++ RTB Fabric module – 15% (public and private offers)
+
+**Note**
+Standard public offer listing fees apply to purchases made through [AWS Marketplace Express Checkout](saas-express-checkout.md#saas-express-checkout-pricing).
 
 **Private offer listing fees**
 
@@ -28,6 +33,9 @@ Listing fees for private offers are determined by the total contract value and w
 + Between $1M and less than $10M – 2%
 + Equal to or greater than $10M – 1.5%
 + All renewals – 1.5%
+
+**Note**
+RTB Fabric module private offers are charged a 15% listing fee.
 
 **Channel partner private offer (CPPO) listing fees**
 

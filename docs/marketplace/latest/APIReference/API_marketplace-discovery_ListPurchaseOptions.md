@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # ListPurchaseOptions
 
-Returns the purchase options (offers and offer sets) available to the buyer. You can filter results by product, seller, purchase option type, visibility scope, and availability status.
+Retrieves the purchase options (offers and offer sets) available to you. You can filter results by product, seller, purchase option type, visibility scope, and availability status. The operation returns results in pages. Use `nextToken` to retrieve the next page.
 
 **Note**
 You must include at least one of the following filters in the request: a `PRODUCT_ID` filter to specify the product for which to retrieve purchase options, or a `VISIBILITY_SCOPE` filter to retrieve purchase options by visibility.
@@ -40,26 +40,26 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [filters](#API_marketplace-discovery_ListPurchaseOptions_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_ListPurchaseOptions-request-filters"></a>
-Filters to narrow the results. Multiple filters are combined with AND logic. Multiple values within the same filter are combined with OR logic.
+Filters to narrow the results. A result must match every filter. Within one filter, a result matches if it has any of the values.
 Type: Array of [PurchaseOptionFilter](API_marketplace-discovery_PurchaseOptionFilter.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
  ** [locale](#API_marketplace-discovery_ListPurchaseOptions_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_ListPurchaseOptions-request-locale"></a>
-A BCP 47 language tag or comma-separated priority list specifying the preferred locale for response content. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If omitted, the service returns content in the default locale.
+The preferred locale for response content, as a Best Current Practice 47 (BCP 47) language tag or a comma-separated priority list of language tags. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If you omit this field, the service returns content in the default locale.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
 Required: No
 
  ** [maxResults](#API_marketplace-discovery_ListPurchaseOptions_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_ListPurchaseOptions-request-maxResults"></a>
-The maximum number of results that are returned per call. You can use `nextToken` to get more results.
+The maximum number of purchase options to return in each call. If you omit this field, the default is 25. Use `nextToken` to retrieve the next page.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
  ** [nextToken](#API_marketplace-discovery_ListPurchaseOptions_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_ListPurchaseOptions-request-nextToken"></a>
-If `nextToken` is returned, there are more results available. Make the call again using the returned token to retrieve the next page.
+If the service returns `nextToken`, more results are available. The value of `nextToken` is a unique pagination token for each page. Make the call again with the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. An expired pagination token returns a `ValidationException`.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 8192.
 Pattern: `[a-zA-Z0-9+/=]+`
@@ -132,13 +132,13 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [nextToken](#API_marketplace-discovery_ListPurchaseOptions_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_ListPurchaseOptions-response-nextToken"></a>
-If `nextToken` is returned, there are more results available. Make the call again using the returned token to retrieve the next page.
+If the service returns `nextToken`, more results are available. The value of `nextToken` is a unique pagination token for each page. Make the call again with the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. An expired pagination token returns a `ValidationException`.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 8192.
 Pattern: `[a-zA-Z0-9+/=]+`
 
  ** [purchaseOptions](#API_marketplace-discovery_ListPurchaseOptions_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_ListPurchaseOptions-response-purchaseOptions"></a>
-The purchase options available to the buyer. Each option is either an offer for a single product or an offer set spanning multiple products.
+The purchase options available to you. Each option is either an offer for a single product or an offer set spanning multiple products.
 Type: Array of [PurchaseOptionSummary](API_marketplace-discovery_PurchaseOptionSummary.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
@@ -148,7 +148,7 @@ Array Members: Minimum number of 0 items. Maximum number of 100 items.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-You don't have sufficient access to perform this action.
+You don't have sufficient access to perform this operation. For the permissions that each operation requires, see [Access control for the AWS Marketplace Discovery API](https://docs.aws.amazon.com/marketplace/latest/developerguide/discovery-api-access-control.html) in the *AWS Marketplace Developer Guide*.
 HTTP Status Code: 403
 
  ** InternalServerException **
@@ -156,13 +156,19 @@ Unexpected error during processing of the request.
 HTTP Status Code: 500
 
  ** ThrottlingException **
-The request was denied due to request throttling.
+The request was denied due to request throttling. Reduce the frequency of your requests and retry.
 HTTP Status Code: 429
 
  ** ValidationException **
-The input fails to satisfy the constraints specified by the service.
+The input fails to satisfy the constraints specified by the service. Check the `reason` field for the constraint that failed.
  ** reason **
-The reason that the input fails to satisfy the constraints specified by the service.
+The reason that the input fails to satisfy the constraints that the Discovery API specifies. This field has one of the following values:
+INVALID\_PAGINATION\_TOKEN
+The `nextToken` value is malformed, expired, or belongs to a different request. Start the pagination again from the first page.
+MALFORMED\_REQUEST\_PARAMETERS
+One or more request parameters have an invalid value. Correct the parameters that you specified, and then resubmit your request.
+PAGINATION\_LIMIT\_EXCEEDED
+The request asks for results beyond the deepest page that the operation returns. Narrow your request with filters or a more specific search.
 HTTP Status Code: 400
 
 ## See Also

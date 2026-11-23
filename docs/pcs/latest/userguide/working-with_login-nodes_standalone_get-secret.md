@@ -9,7 +9,7 @@ These instructions require the AWS CLI. For more information, see [Install or up
 Store the cluster secret with the following commands.
 + Create the configuration directory for Slurm.
 
-  ```
+  ```sh
   sudo mkdir -p /etc/slurm
   sudo chmod 0755 /etc/slurm
   ```
@@ -17,7 +17,7 @@ Store the cluster secret with the following commands.
 Setting directory permissions to `0755` ensures that the `slurm` user can traverse the directory to access the key file. Some systems may have a restrictive umask that creates directories with more restrictive permissions by default.
 + Retrieve, decode, and store the cluster secret. Before running this command, replace {{region-code}} with the Region where the target cluster is running, and replace {{secret-arn}} with the value for `secretArn` retrieved in [Step 1](working-with_login-nodes_standalone_get-addr.md).
 
-  ```
+  ```sh
   aws secretsmanager get-secret-value \
    --region {{region-code}} \
    --secret-id '{{secret-arn}}' \
@@ -29,7 +29,7 @@ Setting directory permissions to `0755` ensures that the `slurm` user can traver
 In a multiuser environment, any user with access to the instance might be able to fetch the cluster secret if they can access the instance metadata service (IMDS). This, in turn, could allow them to impersonate other users. Consider restricting access to IMDS to root or administrative users only. Alternatively, consider using a different mechanism that doesn't rely on the instance profile to fetch and configure the secret.
 + Set ownership and permissions on the Slurm key file.
 
-  ```
+  ```sh
   sudo chmod 0600 /etc/slurm/slurm.key
   sudo chown slurm:slurm /etc/slurm/slurm.key
   ```

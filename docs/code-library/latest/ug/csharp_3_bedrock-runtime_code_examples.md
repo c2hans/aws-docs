@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon Bedrock Runtime
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Bedrock-runtime#code-examples).
 
-```
+```csharp
 using Amazon;
 using Amazon.BedrockRuntime;
 using Amazon.BedrockRuntime.Model;
@@ -118,7 +118,7 @@ The following code example shows how to build a typical interaction between an a
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Bedrock-runtime/Scenarios/ConverseToolScenario#code-examples).
 The primary execution of the scenario flow. This scenario orchestrates the conversation between the user, the Amazon Bedrock Converse API, and a weather tool.
 
-```
+```csharp
 using Amazon;
 using Amazon.BedrockRuntime;
 using Amazon.BedrockRuntime.Model;
@@ -477,7 +477,7 @@ public static class ConverseToolScenario
 ```
 The weather tool used by the demo. This file defines the tool specification and implements the logic to retrieve weather data using from the Open-Meteo API.
 
-```
+```csharp
 using Amazon.BedrockRuntime.Model;
 using Amazon.Runtime.Documents;
 using Microsoft.Extensions.Logging;
@@ -573,7 +573,7 @@ public class WeatherTool
 ```
 The Converse API action with a tool configuration.
 
-```
+```csharp
 /// <summary>
 /// Wrapper class for interacting with the Amazon Bedrock Converse API.
 /// </summary>
@@ -659,7 +659,7 @@ The following code example shows how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Bedrock-runtime#code-examples).
 Send a text message to Amazon Nova, using Bedrock's Converse API.
 
-```
+```csharp
 // Use the Converse API to send a text message to Amazon Nova.
 
 using System;
@@ -714,7 +714,7 @@ catch (AmazonBedrockRuntimeException e)
 ```
 Send a conversation of messages to Amazon Nova using Bedrock's Converse API with a tool configuration.
 
-```
+```csharp
 /// <summary>
 /// Wrapper class for interacting with the Amazon Bedrock Converse API.
 /// </summary>
@@ -797,7 +797,7 @@ The following code example shows how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Bedrock-runtime#code-examples).
 Send a text message to Amazon Nova, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```csharp
 // Use the Converse API to send a text message to Amazon Nova
 // and print the response stream.
 
@@ -868,7 +868,7 @@ The following code example shows how to build a typical interaction between an a
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Bedrock-runtime/Scenarios/ConverseToolScenario#code-examples).
 The primary execution of the scenario flow. This scenario orchestrates the conversation between the user, the Amazon Bedrock Converse API, and a weather tool.
 
-```
+```csharp
 using Amazon;
 using Amazon.BedrockRuntime;
 using Amazon.BedrockRuntime.Model;
@@ -1227,7 +1227,7 @@ public static class ConverseToolScenario
 ```
 The weather tool used by the demo. This file defines the tool specification and implements the logic to retrieve weather data using from the Open-Meteo API.
 
-```
+```csharp
 using Amazon.BedrockRuntime.Model;
 using Amazon.Runtime.Documents;
 using Microsoft.Extensions.Logging;
@@ -1323,7 +1323,7 @@ public class WeatherTool
 ```
 The Converse API action with a tool configuration.
 
-```
+```csharp
 /// <summary>
 /// Wrapper class for interacting with the Amazon Bedrock Converse API.
 /// </summary>
@@ -1409,7 +1409,7 @@ The following code example shows how to invoke Amazon Nova Canvas on Amazon Bedr
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Bedrock-runtime#code-examples).
 Create an image with Amazon Nova Canvas.
 
-```
+```csharp
 // Use the native inference API to create an image with Amazon Nova Canvas.
 
 using System;
@@ -1493,7 +1493,7 @@ The following code example shows how to invoke Stability.ai Stable Image Core on
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Bedrock-runtime#code-examples).
 Create an image with Stable Image Core.
 
-```
+```csharp
         /// <summary>
         /// Asynchronously invokes the Stability.ai Stable Image Core model to run an inference based on the provided input.
         /// </summary>

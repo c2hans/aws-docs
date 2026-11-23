@@ -208,7 +208,7 @@ The quota code.
 The resource type.
  ** ServiceCode **
 The service code.
-HTTP Status Code: 400
+HTTP Status Code: 402
 
  ** InternalServerError **
 Amazon Textract experienced a service issue. Try your call again.

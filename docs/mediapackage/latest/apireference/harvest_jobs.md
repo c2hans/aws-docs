@@ -81,7 +81,7 @@ Enable CORS by returning correct headers.
 #### POST schema
 <a name="harvest_jobs-request-body-post-example"></a>
 
-```
+```json
 {
   "s3Destination": {
     "bucketName": "string",
@@ -101,7 +101,7 @@ Enable CORS by returning correct headers.
 #### HarvestJobList schema
 <a name="harvest_jobs-response-body-harvestjoblist-example"></a>
 
-```
+```json
 {
   "harvestJobs": [
     {
@@ -127,7 +127,7 @@ Enable CORS by returning correct headers.
 #### HarvestJob schema
 <a name="harvest_jobs-response-body-harvestjob-example"></a>
 
-```
+```json
 {
   "createdAt": "string",
   "s3Destination": {

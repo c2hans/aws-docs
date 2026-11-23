@@ -72,7 +72,7 @@ Use `project`, `asset`, or `file` to test metadata attributes on the resource. E
 
 The following JSON filter combines a file dimension with asset and file metadata conditions.
 
-```
+```json
 "filter": {
   "fileExtensionFilter": ".tif",
   "asset": {
@@ -110,7 +110,7 @@ A trigger can declare the parameters a caller supplies when running it on demand
 
 The following JSON declares three parameters.
 
-```
+```json
 "parameterDefinitions": {
   "outputFormat": {
     "type": "string",
@@ -150,7 +150,7 @@ By default, a trigger’s steps run once for the resource whose event matched. A
 
 The following JSON shows an `applyTo` block.
 
-```
+```json
 "applyTo": {
   "resource": "file",
   "scope": "all",
@@ -185,7 +185,7 @@ Choose the event by what the next connector should act on.
 
 The following trigger is the second stage of a pipeline. The first stage writes `segmented.laz` as a derived file. This trigger matches only that file, by name, and converts it:
 
-```
+```json
 "triggers": [
   {
     "resources": ["derivedFile"],
@@ -220,7 +220,7 @@ For a five-stage example, see [Example – a multi-model pipeline](connector-pat
 
 When one connector’s work must complete before another connector runs, use `dependsOn` on the downstream trigger. This orders connector execution within the same lifecycle context — the set of work that a single upstream event triggers.
 
-```
+```json
 "triggers": [
   {
     "description": "Fuse instance results with the terrain model",
@@ -267,7 +267,7 @@ The `output` block supports the following routing targets:
 
 The `metadataAttributes` target uses `fieldMappings` to control which response fields to write and where to write them. Each mapping has a `source` (a field in the step response) and a `target` (an SDMA metadata path). Use `:type` suffixes on targets to store values as typed metadata (see [Type coercion](#type-coercion)).
 
-```
+```json
 "output": {
   "metadataAttributes": {
     "fieldMappings": [
@@ -283,7 +283,7 @@ Mappings with `asset. ` targets write to asset-level metadata. Mappings with `fi
 
 The `metadataAttributes` target also supports an optional `uri` field. When present, SDMA reads the JSON file at that S3 location as the source for `fieldMappings` instead of using the step’s response body directly. This is used with output-driven `wait` steps (see [Working with wait steps](connector-wait.md)): SDMA watches S3 for the file to appear, then reads and maps its contents.
 
-```
+```json
 "metadataAttributes": {
   "uri": "s3://amzn-s3-demo-bucket/results/${invocation.id}/",
   "filter": { "fileNameRegex": ".*_summary\\.json$" },
@@ -298,7 +298,7 @@ The `metadataAttributes` target also supports an optional `uri` field. When pres
 
 A single `output` block can route to multiple targets. This is the canonical pattern when a step produces both summary metadata (for search and display) and detailed output files (for downstream processing or review).
 
-```
+```json
 "output": {
   "metadataAttributes": {
     "fieldMappings": [
@@ -324,7 +324,7 @@ Adding an `output` block does not change how a connector is approved, and you do
 
 For example, an orthophoto `site.tif` has a derived shapefile `site.zip`. A connector converts `site.zip` to GeoJSON. The GeoJSON describes the orthophoto just as the shapefile does, so you place it next to `site.zip`, under `site.tif`, not under `site.zip`. The following JSON configuration declares this with `siblingDerivedFiles` on a trigger on `derivedFile`:
 
-```
+```json
 "output": {
   "siblingDerivedFiles": [
     { "filter": { "fileExtensionFilter": ".geojson" }, "preview": true }
@@ -348,7 +348,7 @@ A step declares new assets in one of two ways:
 
 Each entry in the `assets` array specifies which templates the connector is allowed to create assets under, and a filter that identifies envelope files in the step output.
 
-```
+```json
 "output": {
   "assets": [
     {
@@ -379,7 +379,7 @@ The `assets` output target is valid on project and asset triggers. Declaring it 
 
 A `wait` step has no output files of its own to filter. Instead, its `assets` entry describes the asset to create when the wait completes. Every `${…​}` expression resolves at that point, including `$temp` values the wait captures with `responseFieldMapping` (see [Capturing values from the result](connector-wait.md#wait-capture)).
 
-```
+```json
 {
   "stepType": "wait",
   "wait": {
@@ -429,7 +429,7 @@ When a trigger on an asset creates new assets, SDMA records where each new asset
 
 SDMA builds lineage from what it bound for the run, never from the connector configuration or a producer’s response. It writes one `derivedFrom` edge on the history event of the new asset’s first version:
 
-```
+```json
 "lineage": [
   {
     "kind": "derivedFrom",
@@ -472,7 +472,7 @@ The `uri` field supports two forms depending on whether `filter` is present:
 
 Example — ingest `.png` files from a location returned by a Lambda step:
 
-```
+```json
 "output": {
   "derivedFiles": [
     {
@@ -487,7 +487,7 @@ In this example, the Lambda function returns `{"outputLocation": "s3://my-bucket
 
 You can also reference a single file directly:
 
-```
+```json
 "output": {
   "derivedFiles": [
     {
@@ -514,7 +514,7 @@ The `uri` and `hash` forms are mutually exclusive. When `hash` is present, SDMA 
 
 Field mappings transform resource metadata into the format expected by the external system. Each mapping specifies a `source` field from the resource metadata and a `target` field name for the output.
 
-```
+```json
 "fieldMappings": [
   { "source": "project.projectId", "target": "projectId" },
   { "source": "asset.assetName", "target": "name" },
@@ -547,7 +547,7 @@ Flat field references like `projectId` are not allowed. Always use the fully qua
 
 Field mappings support iterating over arrays using the `[*]` syntax. For example, to map each file in an asset:
 
-```
+```json
 { "source": "asset.files[*].path", "target": "assets[${file.path}].title" }
 ```
 
@@ -560,7 +560,7 @@ You can define field mappings at the connector level as a default and override t
 
 When a step response contains a collection (object or array) whose entries correspond to individual files on the asset, use a `correlate` block on a `fieldMapping` to write per-file metadata by matching each response entry to an existing file.
 
-```
+```json
 "metadataAttributes": {
   "fieldMappings": [
     {
@@ -591,7 +591,7 @@ For list-shaped source collections (arrays), `valueField` is required. Without i
 
 For publish connectors, the `payload.fields` array selects which mapped field names to include in the output. If you omit it, the connector includes all mapped fields. This gives you explicit control over what data the connector sends to the external system.
 
-```
+```json
 "payload": {
   "format": "json",
   "fields": ["projectId", "assetId", "name"]
@@ -642,14 +642,14 @@ Supported type suffixes: `string`, `number`, `boolean`, `date`, `stringList`, `n
 
 Example:
 
-```
+```json
 {
   "source": "response.survey_date",
   "target": "asset.metadataAttributes.surveyDate:date"
 }
 ```
 
-```
+```json
 {
   "source": "${response.site_codes:numberList}",
   "target": "asset.metadataAttributes.siteCodes:numberList"
@@ -665,7 +665,7 @@ In multi-step triggers, steps often need to pass values to subsequent steps — 
 
 Use `responseFieldMapping` on a step to capture response values into `$temp.*` variables:
 
-```
+```json
 "steps": [
   {
     "description": "Create external record",
@@ -692,7 +692,7 @@ Use `responseFieldMapping` on a step to capture response values into `$temp.*` v
 
 A `rest` step can also capture a response header. Use the source `responseHeaders.<header-name>`, with the header name in lowercase. This is how a step captures where an asynchronous API will write its result, as in [Running inference on an Amazon SageMaker asynchronous endpoint](connector-patterns.md#pattern-sagemaker-async).
 
-```
+```json
 "responseFieldMapping": [
   { "source": "responseHeaders.x-amzn-sagemaker-outputlocation", "target": "$temp.outputLocation" }
 ]
@@ -729,7 +729,7 @@ The following examples show different authentication configurations.
 
 IAM role assumption:
 
-```
+```json
 "securityConfig": {
   "type": "AssumeRole",
   "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentPublisher-MyRole"
@@ -738,7 +738,7 @@ IAM role assumption:
 
 API key in a header:
 
-```
+```json
 "securityConfig": {
   "type": "ApiKey",
   "apiKeyLocation": "header",
@@ -750,7 +750,7 @@ API key in a header:
 
 Token-based authentication (OAuth 2.0):
 
-```
+```json
 "securityConfig": {
   "type": "TokenAuth",
   "tokenEndpoint": "https://auth.example.com/oauth/token",
@@ -784,7 +784,7 @@ Each resource type (`project`, `asset`, `file`) can define three sub-configurati
 
 The following example shows how to configure resource discovery.
 
-```
+```json
 "resources": {
   "project": {
     "discover": {
@@ -825,7 +825,7 @@ Discovery operations can also read values from the request. A client passes them
 
 A viewer can load a large point cloud or map progressively, one tile at a time. Two discovery operations let a connector serve those tiles from an external service, without exposing the service’s credentials to the viewer:
 
-```
+```json
 "resources": {
   "tileset": {
     "discover": {
@@ -863,7 +863,7 @@ A viewer can load a large point cloud or map progressively, one tile at a time. 
 
 The following example shows how to configure resource validation.
 
-```
+```json
 "validate": {
   "description": "Verify resource exists",
   "type": "rest",
@@ -880,7 +880,7 @@ The following example shows how to configure resource validation.
 
 The following example shows how to configure the display of connected resources in the Spatial Data Portal.
 
-```
+```json
 "display": {
   "connectedResourceName": "External resource",
   "displayId": {
@@ -931,7 +931,7 @@ Configuration size limit — the connector config must not exceed 350 KB.
 
 Every connector configuration is a JSON object with the following top-level structure:
 
-```
+```json
 {
   "direction": "publish",
   "connectorType": "RESTApi | S3 | lambda | eventbridge | ...",
@@ -967,7 +967,7 @@ Field mappings transform SDMA resource metadata into the structure expected by t
 
 Each mapping has a `source` and a `target`:
 
-```
+```json
 "fieldMappings": [
   { "source": "asset.assetName", "target": "properties.title" },
   { "source": "project.projectId", "target": "properties.projectId" },
@@ -1000,7 +1000,7 @@ Supported target types:
 
 Triggers define when and how the connector runs. Each trigger specifies which resources and events activate it, and what steps to execute.
 
-```
+```json
 "triggers": [
   {
     "description": "On asset creation, publish metadata to S3.",
@@ -1060,7 +1060,7 @@ Common step fields:
 
 Connectors support a failure policy that automatically disables the connector when too many failures occur within a time window. Configure this at the connector level:
 
-```
+```json
 "failurePolicy": {
   "maxFailures": 5,
   "windowMinutes": 10,

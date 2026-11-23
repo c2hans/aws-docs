@@ -25,9 +25,23 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `^[\w\-]+$`
 Required: No
 
+ ** ControlSummary **   <a name="AWSMarketplaceService-Type-ControlAssessment-ControlSummary"></a>
+A summary of what the control produced, such as recommendations for the listing.
+Type: [ControlSummary](API_ControlSummary.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
+
  ** Errors **   <a name="AWSMarketplaceService-Type-ControlAssessment-Errors"></a>
 An array of `ControlError` objects associated with the control evaluation.
 Type: Array of [ControlError](API_ControlError.md) objects
+Required: No
+
+ ** VerificationSource **   <a name="AWSMarketplaceService-Type-ControlAssessment-VerificationSource"></a>
+Where the result of the control came from. This value doesn't say whether the control passed. A control that you attested to can still have a result of `PASS`. Valid values are:
++  `AWS_VERIFIED` - AWS evaluated the control.
++  `SELF_ATTESTED` - You attested to the result of the control.
+Type: String
+Valid Values: `AWS_VERIFIED | SELF_ATTESTED`
 Required: No
 
 ## See Also

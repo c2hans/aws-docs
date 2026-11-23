@@ -113,7 +113,7 @@ Type: JSON value
  ** [firewallType](#API_UpdateRule_ResponseSyntax) **   <a name="networksecuritymanager-UpdateRule-response-firewallType"></a>
 The firewall type associated with the resource.
 Type: String
-Valid Values: `WAF`
+Valid Values: `WAF | IGW_FIREWALL`
 
  ** [hasPublishedVersion](#API_UpdateRule_ResponseSyntax) **   <a name="networksecuritymanager-UpdateRule-response-hasPublishedVersion"></a>
 Specifies whether a published version of the resource exists.

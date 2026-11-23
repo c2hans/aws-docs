@@ -36,7 +36,7 @@ Not all model features are supported on OpenSearch Serverless, such as local mod
 
 With a remote model, you can run a prediction by sending the model input in the `parameters` object. The parameter names depend on the request body that the connector defines. To run predictions, you need the `aoss:ExecuteMLResource` permission.
 
-```
+```json
 POST /_plugins/_ml/models/{{model_id}}/_predict
 {
     "parameters": {
@@ -47,7 +47,7 @@ POST /_plugins/_ml/models/{{model_id}}/_predict
 
 To pass `text_docs` to a remote text embedding model, add the `algorithm=text_embedding` query parameter. Without this parameter, `text_docs` is ignored and the request can fail with a `Some parameter placeholder not filled in payload` error. The connector's `pre_process_function`, such as `connector.pre_process.bedrock.embedding`, must convert `text_docs` into the parameters that the connector's request body uses.
 
-```
+```json
 POST /_plugins/_ml/models/{{model_id}}/_predict?algorithm=text_embedding
 {
     "text_docs": ["{{What is the meaning of life?}}"]
@@ -89,7 +89,7 @@ Changes to a data access policy can take a few minutes to take effect. If you ad
 
 The following section describes the collection data access policies required for Machine Learning (ML). Replace the {{placeholder values}} with your specific information. For more information, see [Supported policy permissions](serverless-data-access.md#serverless-data-supported-permissions).
 
-```
+```JSON
 {
     "Rules": [
         {
@@ -122,7 +122,7 @@ Use the wildcard resource `model/{{collection_name}}/*`. You need it to work wit
 
 To limit a principal to specific models, use separate policy statements for the wildcard resource and the model names. A policy statement can contain only one rule for the `model` resource type. Don't add the wildcard and a model name to the same rule, because the wildcard applies the rule's permissions to every model in the collection. The following policy lets a role search connectors, model groups, and models, and run predictions on and deploy only the model `{{model_name}}`.
 
-```
+```JSON
 [
     {
         "Rules": [

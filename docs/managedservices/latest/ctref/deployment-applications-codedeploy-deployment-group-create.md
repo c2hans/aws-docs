@@ -142,7 +142,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-applications-codedeploy-deployment-group-create-ex-min"></a>
 
-```
+```json
 {
   "Description": "Stack Description.",
   "VpcId": "vpc-01234567890abcdef",
@@ -161,7 +161,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-applications-codedeploy-deployment-group-create-ex-max"></a>
 
-```
+```json
 {
   "Description": "Stack Description.",
   "VpcId": "vpc-01234567890abcdef",

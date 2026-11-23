@@ -13,7 +13,7 @@ The following code example shows how to send a text message to Amazon Titan Text
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Use the Invoke Model API to send a text message.
 
-```
+```python
 # Use the native inference API to send a text message to Amazon Titan Text.
 
 import boto3

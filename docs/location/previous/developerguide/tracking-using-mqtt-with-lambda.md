@@ -55,7 +55,7 @@ To create a Lambda function that publishes position updates to Amazon Location u
 
 1. Overwrite the placeholder code in `lambda_function.py` with the following, replacing the value assigned to `TRACKER_NAME` with the name of the tracker that you created as a [prerequisite](#mqtt-prerequisite-with-lambda).
 
-   ```
+   ```py
    from datetime import datetime
    import json
    import os
@@ -120,7 +120,7 @@ To create a Lambda function that publishes position updates to Amazon Location u
 
 1. Choose the **JSON** tab, and overwrite the policy with the following document. This allows your Lambda function to update device positions managed by all tracker resources across all Regions.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -189,7 +189,7 @@ If no devices are currently publishing telemetry that includes location, you can
 
 1. Under **Publish to a topic**, set the **Topic name** to {{iot/topic}} (or the name of the topic that you set up in your AWS IoT Core rule, if different), and provide the following for the **Message payload**. Replace the timestamp {{1604940328}} with a valid timestamp within the last 30 days (any timestamps older than 30 days are ignored).
 
-   ```
+   ```json
    {
      "payload": {
        "deviceid": "thing123",

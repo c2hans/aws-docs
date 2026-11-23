@@ -29,7 +29,7 @@ Replace `arn:aws:kinesisvideo:*:*:stream/streamName1/*` and `arn:aws:kinesisvide
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -84,7 +84,7 @@ Replace `arn:aws:secretsmanager:*:*:secret:*` with the ARNs containing the Media
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -109,7 +109,7 @@ Replace `arn:aws:secretsmanager:*:*:secret:*` with the ARNs containing the Media
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

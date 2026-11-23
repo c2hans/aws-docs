@@ -16,7 +16,7 @@ With AWS IoT Jobs, you can configure campaigns to upload stored vehicle data to 
 
   To request that only one vehicle uploads data, set the job target to the AWS IoT thing that's associated with the vehicle. To request that multiple vehicles (in the same campaign) upload data, create a thing group of all things corresponding with the vehicles, and then set the job target to the thing group.
 
-  ```
+  ```json
   {
     "version": "1.0",
     "parameters": {

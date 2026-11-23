@@ -27,21 +27,21 @@ First, you create a memory resource with both short-term and long-term memory ca
 
 1. Create an AgentCore project if you don’t have one yet:
 
-   ```
+   ```bash
    agentcore create --name ShopSupport --template empty
    cd ShopSupport
    ```
 
 1. Create memory with summary and user preference strategies:
 
-   ```
+   ```bash
    agentcore add memory --name ShoppingSupportAgentMemory --strategies SUMMARIZATION,USER_PREFERENCE
    agentcore deploy
    ```
 
 1. Get the memory ID. Run the following command and copy the memory `arn`. The memory ID is the part of the ARN after `memory/`:
 
-   ```
+   ```bash
    agentcore status --json
    ```
 **Note**
@@ -59,19 +59,19 @@ To write events, use the AWS SDK. To inspect events and records, you can also us
 
 1. Press Ctrl\+C to exit the TUI, then deploy the project to create the memory:
 
-   ```
+   ```bash
    agentcore deploy
    ```
 
 1. Get the memory ID. Run the following command and copy the memory `arn`. The memory ID is the part of the ARN after `memory/`:
 
-   ```
+   ```bash
    agentcore status --json
    ```
 
 1.
 
-   ```
+   ```python
    import boto3
    import time
    from datetime import datetime
@@ -121,7 +121,7 @@ To write events, use the AWS SDK. To inspect events and records, you can also us
 
 If you created the memory with the AgentCore CLI, run the following code before the next steps. Replace `<memory-id>` with the memory ID from the `agentcore status --json` output.
 
-```
+```python
 import boto3
 import time
 from datetime import datetime
@@ -135,7 +135,7 @@ memory_id = "<memory-id>"
 
 When Sarah initiates the conversation, the agent creates a new, and unique, session ID to track this interaction separately.
 
-```
+```python
 # Unique identifier for the customer, Sarah
 sarah_actor_id = "user-sarah-123"
 
@@ -150,7 +150,7 @@ print(f"Session started for Actor ID: {sarah_actor_id}, Session ID: {support_ses
 
 As Sarah explains her issue, the agent captures each turn of the conversation (both her questions and the agent’s responses). This populates the full conversation in short-term memory and provides the raw data for the long-term memory strategies to process.
 
-```
+```python
 print("Capturing conversational events...")
 
 full_conversation_payload = [
@@ -201,7 +201,7 @@ In the background, the asynchronous extraction process runs. This process analyz
 
 To provide context-aware assistance, the agent loads the current conversation history. This helps the agent understand what issues Sarah has raised in the ongoing chat.
 
-```
+```python
 print("\nRetrieving current conversation history from short-term memory...")
 
 response = data_client.list_events(
@@ -222,7 +222,7 @@ for event in event_list: print(event)
 
 The agent performs a semantic search across extracted long-term memories to find relevant insights about Sarah’s preferences, order history, or past concerns. This lets the agent provide highly personalized assistance without needing to ask Sarah to repeat information she has already shared in previous chats.
 
-```
+```python
 # Wait for the asynchronous extraction to finish
 print("\nWaiting 60 seconds for long-term memory processing...")
 time.sleep(60)

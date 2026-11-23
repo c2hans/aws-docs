@@ -15,7 +15,7 @@ To use the metadata client, add the `imds` Maven artifact to your project. You a
 
 The following Maven XML shows dependency snippets for using the synchronous [UrlConnectionHttpClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/urlconnection/UrlConnectionHttpClient.html) along with the dependency for metadata clients.
 
-```
+```xml
 <dependencyManagement>
    <dependencies>
         <dependency>
@@ -45,7 +45,7 @@ Search the [Maven central repository](https://central.sonatype.com/artifact/soft
 
 To use an asynchronous HTTP client, replace the dependency snippet for the `url-connection-client` artifact. For example, the following snippet brings in the [NettyNioAsyncHttpClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/nio/netty/NettyNioAsyncHttpClient.html) implementation.
 
-```
+```xml
     <dependency>
         <groupId>software.amazon.awssdk</groupId>
         <artifactId>netty-nio-client</artifactId>
@@ -60,7 +60,7 @@ To use an asynchronous HTTP client, replace the dependency snippet for the `url-
 
 You can instantiate an instance of a synchronous `Ec2MetadataClient` when only one implementation of the `SdkHttpClient` interface is present on the classpath. To do so, call the static `Ec2MetadataClient#create()` method as shown in the following snippet.
 
-```
+```java
 Ec2MetadataClient client = Ec2MetadataClient.create(); // 'Ec2MetadataAsyncClient#create' is the asynchronous version.
 ```
 
@@ -76,7 +76,7 @@ To retrieve instance metadata, instantiate the `EC2MetadataClient` class and cal
 
 The following example prints the value associated with the `ami-id` key to the console.
 
-```
+```java
 Ec2MetadataClient client = Ec2MetadataClient.create();
 Ec2MetadataResponse response = client.get("/latest/meta-data/ami-id");
 System.out.println(response.asString());
@@ -94,7 +94,7 @@ EC2 instance metadata can be output in different formats. Plain text and JSON ar
 
 As the following example shows, use the `asString` method to get the data as a Java string. You can also use the `asList` method to separate a plain text response that returns multiple lines.
 
-```
+```java
 Ec2MetadataClient client = Ec2MetadataClient.create();
 Ec2MetadataResponse response = client.get("/latest/meta-data/");
 String fullResponse = response.asString();
@@ -103,7 +103,7 @@ List<String> splits = response.asList();
 
 If the response is in JSON, use the `Ec2MetadataResponse#asDocument` method to parse the JSON response into a [Document](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/document/Document.html) instance as shown in the following code snippet.
 
-```
+```java
 Document fullResponse = response.asDocument();
 ```
 
@@ -119,7 +119,7 @@ You can configure a metadata client with a retry mechanism. If you do, then the 
 
 If your use case requires a different retry mechanism, you can customize the client using the `retryPolicy` method on its builder. For example, the following example shows a synchronous client configured with a fixed delay of two seconds between attempts and five retry attempts.
 
-```
+```java
 BackoffStrategy fixedBackoffStrategy = FixedDelayBackoffStrategy.create(Duration.ofSeconds(2));
 Ec2MetadataClient client =
     Ec2MetadataClient.builder()
@@ -132,7 +132,7 @@ There are several [BackoffStrategies](https://sdk.amazonaws.com/java/api/latest/
 
 You can also disable the retry mechanism entirely, as the following snippet shows.
 
-```
+```java
 Ec2MetadataClient client =
     Ec2MetadataClient.builder()
                     .retryPolicy(Ec2MetadataRetryPolicy.none())
@@ -148,14 +148,14 @@ By default, a metadata client uses the IPV4 endpoint at `http://169.254.169.254`
 
 The following examples show both IPV6 options.
 
-```
+```java
 Ec2MetadataClient client =
     Ec2MetadataClient.builder()
                      .endpointMode(EndpointMode.IPV6)
                      .build();
 ```
 
-```
+```java
 Ec2MetadataClient client =
     Ec2MetadataClient.builder()
                      .endpoint(URI.create("http://[fd00:ec2::254]"))
@@ -170,14 +170,14 @@ Ec2MetadataClient client =
 
 To use the non-blocking version of the client, instantiate an instance of the `Ec2MetadataAsyncClient` class. The code in the following example creates an asynchronous client with default settings and uses the `get` method to retrieve the value for the `ami-id` key.
 
-```
+```java
 Ec2MetadataAsyncClient asyncClient = Ec2MetadataAsyncClient.create();
 CompletableFuture<Ec2MetadataResponse> response = asyncClient.get("/latest/meta-data/ami-id");
 ```
 
 The `java.util.concurrent.CompletableFuture` returned by the `get` method completes when the response returns. The following example prints the `ami-id` metadata to the console.
 
-```
+```java
 response.thenAccept(metadata -> System.out.println(metadata.asString()));
 ```
 
@@ -188,7 +188,7 @@ The builder for each metadata client has a `httpClient` method that you can use 
 
 The following example shows code for a custom `UrlConnectionHttpClient` instance.
 
-```
+```java
 SdkHttpClient httpClient =
     UrlConnectionHttpClient.builder()
                            .socketTimeout(Duration.ofMinutes(5))
@@ -204,7 +204,7 @@ metaDataClient.close();   // Close the instance when no longer needed.
 
 The following example shows code for a custom `NettyNioAsyncHttpClient` instance with an asynchronous metadata client.
 
-```
+```java
 SdkAsyncHttpClient httpAsyncClient =
     NettyNioAsyncHttpClient.builder()
                            .connectionTimeout(Duration.ofMinutes(5))
@@ -229,7 +229,7 @@ By default, a token lasts for six hours (21,600 seconds). We recommend that you 
 
 If needed, configure the duration by using the `tokenTtl` builder method. For example, the code in the following snippet creates a client with a session duration of five minutes.
 
-```
+```java
 Ec2MetadataClient client =
     Ec2MetadataClient.builder()
                      .tokenTtl(Duration.ofMinutes(5))

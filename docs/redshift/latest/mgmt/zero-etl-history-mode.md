@@ -41,7 +41,7 @@ For information about what to consider when using history mode, see [Considerati
 
    You can delete inactive records from a history mode table by filtering on records where the column `_record_is_active` is false. The following SQL DELETE command deletes inactive records from a table where the id column is less than or equal to 100. After you delete records, when automatic vacuum delete runs, storage for the deleted records is reclaimed.
 
-   ```
+   ```sql
    DELETE FROM myschema.mytable where not _record_is_active AND id <= 100;
    ```
 **Note**
@@ -49,7 +49,7 @@ This `DELETE` applies only to rows whose inactive state zero-ETL has already per
 
    When history mode is turned `off`, Amazon Redshift makes a copy of your table in the target database with active records and without the added history columns. Amazon Redshift renames your table to `{{table-name}}_historical_{{timestamp}}` for your use. You can drop this copy of your table if you no longer need it. You can rename these tables using the ALTER TABLE command. For example:
 
-   ```
+   ```sql
    ALTER TABLE {{[schema-name.]}}{{table-name_historical_timestamp}} RENAME TO {{new_table_name}};
    ```
 

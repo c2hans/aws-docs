@@ -14,7 +14,7 @@ Ensure that the connectivity data for the SAP HANA Database references the hostn
 
 Test database connectivity using R3trans utility:
 
-```
+```console
 sidadm> R3trans -d
 ```
 

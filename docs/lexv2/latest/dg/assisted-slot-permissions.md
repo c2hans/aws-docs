@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/assisted-slot-permission
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

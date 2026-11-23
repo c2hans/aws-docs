@@ -52,7 +52,7 @@ In workspaces that support version 9 or newer, this data source might require yo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": {
@@ -80,7 +80,7 @@ In workspaces that support version 9 or newer, this data source might require yo
 
 ****
 
-   ```
+   ```json
       {
      "Version":"2012-10-17",
      "Statement": [

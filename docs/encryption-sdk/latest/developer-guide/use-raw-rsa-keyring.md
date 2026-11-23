@@ -52,7 +52,7 @@ To create a Raw RSA keyring in the AWS Encryption SDK for C, use `aws_cryptosdk_
 
 When constructing a Raw RSA keyring in the AWS Encryption SDK for C, be sure to provide the *contents* of the PEM file that includes each key as a null-terminated C-string, not as a path or file name. For a complete example, see [raw\_rsa\_keyring.c](https://github.com/aws/aws-encryption-sdk-c/blob/master/examples/raw_rsa_keyring.c).
 
-```
+```cpp
 struct aws_allocator *alloc = aws_default_allocator();
 
 AWS_STATIC_STRING_FROM_LITERAL(key_namespace, "HSM_01");
@@ -74,7 +74,7 @@ To instantiate a Raw RSA keyring in the AWS Encryption SDK for .NET, use the `ma
 
 The following example uses version 4.*x* and later of the AWS Encryption SDK for .NET.
 
-```
+```csharp
 // Instantiate the AWS Encryption SDK and material providers
 var esdk =  new ESDK(new AwsEncryptionSdkConfig());
 var mpl = new MaterialProviders(new MaterialProvidersConfig());
@@ -111,7 +111,7 @@ The following example uses the `buildClient` function to specify the [default co
 
 For a complete example, see [rsa\_simple.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-browser/src/rsa_simple.ts) (JavaScript Browser).
 
-```
+```js
 import {
   RsaImportableKey,
   RawRsaKeyringWebCrypto,
@@ -153,7 +153,7 @@ The following example uses the `buildClient` function to specify the [default co
 
 For a complete example, see [rsa\_simple.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-node/src/rsa_simple.ts) (JavaScript Node.js).
 
-```
+```js
 import {
   RawRsaKeyringNode,
   buildClient,
@@ -173,7 +173,7 @@ const keyring = new RawRsaKeyringNode({ keyName, keyNamespace, rsaPublicKey, rsa
 ------
 #### [ Java ]
 
-```
+```java
 final CreateRawRsaKeyringInput keyringInput = CreateRawRsaKeyringInput.builder()
         .keyName("{{RSA_2048_06}}")
         .keyNamespace("{{HSM_01}}")
@@ -192,7 +192,7 @@ IKeyring rawRsaKeyring = matProv.CreateRawRsaKeyring(keyringInput);
 
 The following example instantiates the AWS Encryption SDK client with the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. For a complete example, see [raw\_rsa\_keyring\_example.py](https://github.com/aws/aws-encryption-sdk-python/tree/master/examples/src/raw_rsa_keyring_example.py) in the AWS Encryption SDK for Python repository in GitHub.
 
-```
+```python
 # Define the key namespace and key name
 key_name_space = "{{HSM_01}}"
 key_name = "{{RSA_2048_06}}"
@@ -219,7 +219,7 @@ raw_rsa_keyring: IKeyring = mat_prov.create_raw_rsa_keyring(
 ------
 #### [ Rust ]
 
-```
+```rust
 // Instantiate the AWS Encryption SDK client
 let esdk_config = AwsEncryptionSdkConfig::builder().build()?;
 let esdk_client = esdk_client::Client::from_conf(esdk_config)?;
@@ -256,7 +256,7 @@ let raw_rsa_keyring = mpl
 ------
 #### [ Go ]
 
-```
+```go
 // Instantiate the material providers library
 matProv, err := awscryptographymaterialproviderssmithygenerated.NewClient(awscryptographymaterialproviderssmithygeneratedtypes.MaterialProvidersConfig{})
 
@@ -275,7 +275,7 @@ rsaKeyring, err := matProv.CreateRawRsaKeyring(context.Background(), rsaKeyRingI
 ------
 #### [ Go ]
 
-```
+```go
 import (
     "context"
 

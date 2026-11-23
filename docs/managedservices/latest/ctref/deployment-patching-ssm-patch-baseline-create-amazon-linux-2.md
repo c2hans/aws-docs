@@ -168,13 +168,13 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-patching-ssm-patch-baseline-create-amazon-linux-2-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="deployment-patching-ssm-patch-baseline-create-amazon-linux-2-ex-max"></a>
 
-```
+```json
 Example not available.
 ```

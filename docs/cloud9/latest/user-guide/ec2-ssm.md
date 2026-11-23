@@ -265,7 +265,7 @@ You can create and configure VPC endpoints using the AWS Management Console, AWS
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/parse-transcripts.ht
 
 Use the following command to parse transcription content from a transcription message. The command parses complete sentences from the transcript-message.txt files.
 
-```
+```json
 with open('transcript-message.txt') as f:
         for line in f:
             result_json = json.loads(line)["transcript"]["results"][0]

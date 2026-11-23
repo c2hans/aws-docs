@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-networkconnector-elasticipconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 [Type](#sam-networkconnector-elasticipconfiguration-type): {{String}}
 ```
 
@@ -38,7 +38,7 @@ The Elastic IP address type for the network connector's ENIs:
 
 The following example creates a network connector that assigns a service-managed Elastic IP address to each ENI. Because the template doesn't specify an `OperatorRole`, the role that AWS SAM creates includes the `ec2:AllocateAddress` and `ec2:AssociateAddress` permissions.
 
-```
+```yaml
 MyNetworkConnector:
   Type: AWS::Serverless::NetworkConnector
   Properties:

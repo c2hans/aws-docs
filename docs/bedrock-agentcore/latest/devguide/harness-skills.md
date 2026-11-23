@@ -43,7 +43,7 @@ The `agentcore add harness` wizard does not configure skills. With the AgentCore
 
 **Example**
 
-```
+```bash
 aws bedrock-agentcore-control create-harness \
   --harness-name "MyHarness" \
   --execution-role-arn "${ROLE_ARN}" \
@@ -51,7 +51,7 @@ aws bedrock-agentcore-control create-harness \
 ```
 Or at invoke time:
 
-```
+```python
 response = client.invoke_harness(
     harnessArn=HARNESS_ARN,
     runtimeSessionId=SESSION_ID,
@@ -60,7 +60,7 @@ response = client.invoke_harness(
 )
 ```
 
-```
+```bash
 agentcore add harness \
   --name my_harness \
   --skills '[{"awsSkills":{}}]'
@@ -75,14 +75,14 @@ Use glob patterns to enable specific skill categories:
 
 **Example**
 
-```
+```bash
 aws bedrock-agentcore-control create-harness \
   --harness-name "MyHarness" \
   --execution-role-arn "${ROLE_ARN}" \
   --skills '[{"awsSkills": {"paths": ["core-skills/*", "specialized-skills/operations-skills/*"]}}]'
 ```
 
-```
+```bash
 agentcore add harness \
   --name my_harness \
   --skills '[{"awsSkills":{"paths":["core-skills/*","specialized-skills/operations-skills/*"]}}]'
@@ -93,7 +93,7 @@ agentcore deploy
 ### Enable a single specific skill
 <a name="_enable_a_single_specific_skill"></a>
 
-```
+```python
 response = client.invoke_harness(
     harnessArn=HARNESS_ARN,
     runtimeSessionId=SESSION_ID,
@@ -105,7 +105,7 @@ response = client.invoke_harness(
 ### Combine multiple patterns
 <a name="_combine_multiple_patterns"></a>
 
-```
+```python
 skills=[{"awsSkills": {"paths": ["core-skills/aws-cdk", "core-skills/aws-serverless", "specialized-skills/storage-skills/*"]}}]
 ```
 
@@ -122,7 +122,7 @@ Clone a skill from any public or private Git repository. Supports subdirectories
 **Example**
 Public repository:
 
-```
+```python
 response = client.invoke_harness(
     harnessArn=HARNESS_ARN,
     runtimeSessionId=SESSION_ID,
@@ -134,7 +134,7 @@ response = client.invoke_harness(
 ```
 Private repository (requires a personal access token stored in [AgentCore Identity](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html)):
 
-```
+```python
 skills=[
     {
         "git": {
@@ -149,7 +149,7 @@ skills=[
 ```
 Set Git skills in the `--skills` JSON when you add the harness. Use `path` to select a subdirectory:
 
-```
+```bash
 agentcore add harness \
   --name my_harness \
   --skills '[{"gitUrl":"https://github.com/anthropics/skills","path":"skills/docx"}]'
@@ -157,7 +157,7 @@ agentcore deploy
 ```
 For a private repository, add an API key credential containing the personal access token, then reference its project name in `auth.credentialName`:
 
-```
+```bash
 agentcore add credentials api-key \
   --name my-github-pat \
   --api-key file://github-pat.txt
@@ -181,7 +181,7 @@ Fetch a skill from a customer-owned S3 bucket. Uses the harness execution role c
 
 **Example**
 
-```
+```python
 response = client.invoke_harness(
     harnessArn=HARNESS_ARN,
     runtimeSessionId=SESSION_ID,
@@ -193,7 +193,7 @@ response = client.invoke_harness(
 ```
 Set the S3 skill in the `--skills` JSON:
 
-```
+```bash
 agentcore add harness \
   --name my_harness \
   --skills '[{"s3Uri":"s3://my-skills-bucket/skills/company-style/"}]'
@@ -212,7 +212,7 @@ Reference a skill already on the harness filesystem - baked into the container i
 
 **Example**
 
-```
+```python
 response = client.invoke_harness(
     harnessArn=HARNESS_ARN,
     runtimeSessionId=SESSION_ID,
@@ -221,7 +221,7 @@ response = client.invoke_harness(
 )
 ```
 
-```
+```bash
 agentcore add harness \
   --name my_harness \
   --skills '[{"path":".agents/skills/xlsx"}]'
@@ -233,7 +233,7 @@ agentcore deploy
 
 Include the skill directory in your custom image:
 
-```
+```dockerfile
 COPY skills/xlsx .agents/skills/xlsx
 ```
 
@@ -242,7 +242,7 @@ COPY skills/xlsx .agents/skills/xlsx
 
 Use `InvokeAgentRuntimeCommand` before the first agent invocation. The AgentCore CLI wraps it in `agentcore harness exec`. Pass the harness ID, which is the part of the harness ARN after `harness/`. `agentcore status` shows the harness ARN. The session ID must be 33 to 100 characters. Use the same session ID when you invoke the harness. The harness must already list the path skill, as shown in [Filesystem path skills](#harness-skills-path).
 
-```
+```bash
 SESSION_ID="$(uuidgen)"
 
 agentcore harness exec \
@@ -261,7 +261,7 @@ agentcore invoke \
 
 All four source types can coexist in a single payload:
 
-```
+```python
 response = client.invoke_harness(
     harnessArn=HARNESS_ARN,
     runtimeSessionId=SESSION_ID,

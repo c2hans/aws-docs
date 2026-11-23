@@ -14,7 +14,11 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Diagram showing not using AWS Transit Gateway](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/without-transit-gateway.png)
 
+*Figure 1: Without AWS Transit Gateway: You need to peer each Amazon VPC to each other and to each onsite location using a VPN connection, which can become complex as it scales.*
+
 ![Diagram showing using AWS Transit Gateway](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/with-transit-gateway.png)
+
+*Figure 2: With AWS Transit Gateway: You simply connect each Amazon VPC or VPN to the AWS Transit Gateway and it routes traffic to and from each VPC or VPN.*
 
  **Common anti-patterns:**
 +  Using VPC peering to connect more than two VPCs.

@@ -22,7 +22,7 @@ Existing
 
 Example
 
-```
+```JSON
 {
   "resources": [
     {
@@ -48,7 +48,7 @@ Existing
 
 Example
 
-```
+```JSON
 {
   "resources": [
     {
@@ -81,7 +81,7 @@ Existing
 
 Example
 
-```
+```JSON
 {
   "resources": [
     {
@@ -110,7 +110,7 @@ Existing
 
 Example
 
-```
+```JSON
 {
   "resources": [
     {
@@ -143,7 +143,7 @@ Existing
 
 Examples
 
-```
+```JSON
 {
   "resources": [
     {
@@ -153,7 +153,7 @@ Examples
 }
 ```
 
-```
+```json
 {
   "resources": [
     {
@@ -182,7 +182,7 @@ Existing
 
 Example
 
-```
+```JSON
 {
   "resources": [
     {
@@ -211,7 +211,7 @@ Existing
 
 Example
 
-```
+```JSON
 {
   "resources": [
     {
@@ -240,7 +240,7 @@ Existing
 
 Example
 
-```
+```JSON
 {
   "resources": [
     {
@@ -269,7 +269,7 @@ Existing
 
 Example
 
-```
+```JSON
 {
   "resources": [
     {
@@ -307,7 +307,7 @@ Existing
 
 Example
 
-```
+```JSON
 {
   "resources": [
     {
@@ -333,7 +333,7 @@ New
 
 Example
 
-```
+```JSON
 {
   "resources": [
     {
@@ -362,7 +362,7 @@ Added to `resource_details`
 
 Example
 
-```
+```JSON
 {
   "resources": [
     {
@@ -375,7 +375,7 @@ Example
 ## Example resource object with basic attributes
 <a name="example-resource-object"></a>
 
-```
+```JSON
 {
   "resources": [
     {

@@ -33,7 +33,7 @@ The role name must be `AwsResilienceHubPeriodicAssessmentRole`.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

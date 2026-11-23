@@ -31,7 +31,7 @@ This set of examples shows basic queries with their responses. Use this as a ref
 
   **Response:**
 
-  ```
+  ```json
   {
     "columnDescriptions": [
       {
@@ -98,7 +98,7 @@ Unlike SQL where you can only return scalar values, you can return an object (as
 
   **Response**
 
-  ```
+  ```json
   {
       "columnDescriptions": [{
           "name": "relationship",

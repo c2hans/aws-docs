@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 The Amazon Resource Name (ARN) of the key value store association.
 *Required*: Yes
 *Type*: String
-*Pattern*: `arn:aws:cloudfront::[0-9]{12}:key-value-store\/[0-9a-fA-F-]{36}`
+*Pattern*: `arn:aws(-[a-z]+)*:cloudfront::[0-9]{12}:key-value-store\/[0-9a-fA-F-]{36}`
 *Minimum*: `0`
-*Maximum*: `85`
+*Maximum*: `90`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

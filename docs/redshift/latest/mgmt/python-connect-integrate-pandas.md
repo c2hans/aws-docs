@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/python-connect-inte
 
 Following is an example of integrating the Python connector with pandas.
 
-```
+```python
 >>> import pandas
 
 #Connect to the cluster

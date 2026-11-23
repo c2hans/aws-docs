@@ -53,7 +53,7 @@ SigV4a signing requires the AWS Common Runtime (CRT). For example, install `boto
 
 The following example configures a Python (Boto3) client for the global endpoint.
 
-```
+```python
 # Python (Boto3) example
 import boto3
 from botocore.config import Config
@@ -94,7 +94,7 @@ The current API version is `2026-02-05`.
 <a name="discovery-data-model"></a>
 
 The Discovery API organizes the AWS Marketplace catalog into the following entities:
-+ **Listing** — A product or multi-product solution as it appears to buyers. A listing includes descriptions, highlights, categories, badges, pricing models, pricing units, reviews, promotional media, seller engagements, fulfillment option types, and references to associated products and offers. Use `GetListing` to retrieve a listing, or `SearchListings` to search across listings.
++ **Listing** — A product or multi-product solution as it appears to buyers. A listing includes descriptions, highlights, categories, badges, pricing models, pricing units, reviews, promotional media, seller engagements, fulfillment option types, and references to associated products and offers. Use `GetListing` to retrieve a listing, `SearchListings` to search across listings, or `ListListingAttributes` to retrieve a listing's case studies, specializations, and trust center information.
 + **Product** — The underlying software or service being sold. A product includes descriptions, highlights, categories, promotional media, seller engagements, and fulfillment options that describe how a buyer can deploy or access the product (such as AMI, SaaS, Container, or Helm). Use `GetProduct` to retrieve product details and `ListFulfillmentOptions` to retrieve detailed fulfillment options for a product.
 + **Offer** — A pricing arrangement for a product, including the pricing model, seller of record, availability dates, and badges. An offer contains commercial terms such as usage-based pricing, fixed upfront pricing, free trial periods, legal documents, payment schedules, and renewal terms. Use `ListPurchaseOptions` to find all available offers for a product, `GetOffer` to retrieve the details of an offer, and `GetOfferTerms` to retrieve the specific terms of the offer.
 + **Offer set** — A grouped collection of private offers for each product in a multi-product solution. An offer set lets buyers review all offers together and accept them simultaneously with a single action. Use `ListPurchaseOptions` to find all available offer sets for a product, `GetOfferSet` to retrieve the details of an offer set, `GetOffer` to retrieve the details of an offer, and `GetOfferTerms` to retrieve the specific terms of the offer.
@@ -119,7 +119,7 @@ All responses are returned in JSON format. Successful responses return HTTP stat
 
 The recommended way to call the Discovery API is through the AWS SDK. The SDK handles authentication, request signing, serialization, and error handling automatically.
 
-```
+```python
 # Python (Boto3) example
 import boto3
 
@@ -132,7 +132,7 @@ response = client.get_listing(
 print(response['listingName'])
 ```
 
-```
+```javascript
 // JavaScript (AWS SDK v3) example
 import { MarketplaceDiscoveryClient, GetListingCommand } from "@aws-sdk/client-marketplace-discovery";
 
@@ -147,7 +147,7 @@ console.log(response.listingName);
 ## Pagination
 <a name="discovery-pagination"></a>
 
-Operations that return lists (such as `ListPurchaseOptions` and `SearchFacets`) support pagination using `nextToken`. If the response includes a `nextToken` value, pass it in the next request to retrieve additional results.
+Operations that return lists (such as `ListPurchaseOptions` and `ListListingAttributes`) support pagination using `nextToken`. If the response includes a `nextToken` value, pass it in the next request to retrieve additional results.
 
 ## Throttling
 <a name="discovery-throttling"></a>

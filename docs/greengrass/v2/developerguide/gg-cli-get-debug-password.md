@@ -8,7 +8,7 @@ Use the `get-debug-password` command to print a randomly generated password for 
 
 **Synopsis**
 
-```
+```bash
 greengrass-cli get-debug-password
 ```
 

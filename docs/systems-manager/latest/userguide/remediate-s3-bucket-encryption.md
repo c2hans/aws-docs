@@ -62,7 +62,7 @@ Use the following procedure to update the [KMS key policy](https://docs.aws.amaz
 
    To locate the correct bucket name in the Amazon S3 console, in the delegated administrator account, locate the bucket in the format `do-not-delete-ssm-{{operational-account-id}}-{{home-region}}-{{disambiguator}}`.
 
-   ```
+   ```json
    {
         "Sid": "EncryptionForSystemsManagerS3Bucket",
         "Effect": "Allow",

@@ -27,7 +27,7 @@ Lambda publishes the GPU base images in the [Amazon ECR Public Gallery](https://
 
 The `base:cuda` image is a minimal image that includes the CUDA toolkit and the Lambda Python runtime. Use this image when you use custom CUDA kernels or frameworks that Lambda's other base images don't include (such as GROMACS or Blender). The following Dockerfile shows how to add your own packages to `base:cuda`.
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/deep-learning-containers/base:cuda
 
 RUN dnf install -y gcc gcc-c++ cmake make && dnf clean all
@@ -43,7 +43,7 @@ CMD ["handler.handler"]
 
 The `cupy:cuda` image is meant for GPU-accelerated numerical computing with a NumPy-compatible interface. Use the CuPy image for workloads that benefit from GPU-accelerated array operations and don't need a full ML framework. Common use cases include scientific computing, signal processing, and financial modeling. The following Dockerfile shows how you can add a custom handler to this base image.
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/deep-learning-containers/cupy:cuda
 
 WORKDIR /var/task
@@ -53,7 +53,7 @@ CMD ["handler.handler"]
 
 The following handler code uses CuPy to perform Monte Carlo option pricing.
 
-```
+```python
 import cupy as cp
 import math
 
@@ -92,9 +92,9 @@ def handler(event, context):
 ## PyTorch
 <a name="lambda-managed-instances-gpu-base-images-pytorch"></a>
 
-The `pytorch:cuda` image can be used for general-purpose ML inference with PyTorch and CUDA, such as image classification, object detection, speech synthesis, and diffusion models, or for LLM inference where you need full control over the model pipeline. The following example performs image classification using mobilenet. The example Dockerfile installs the model weights at build time. Building the weights into the image is fine for small models, up to about 1 GB like the one in this example. For larger models, stream the weights from Amazon S3 at initialization instead of building them into the image, which keeps the image small and shortens startup. For more information about optimizing startup time, see [Optimizing startup time for GPU-accelerated functions](lambda-managed-instances-gpu-startup.md).
+The `pytorch:cuda` image can be used for general-purpose ML inference with PyTorch and CUDA, such as image classification, object detection, speech synthesis, and diffusion models, or for LLM inference where you need full control over the model pipeline. The following example performs image classification using mobilenet. The example Dockerfile installs the model weights at build time. Building the weights into the image suits small models that change infrequently, like the one in this example. For large models, or models that you update often, stream the weights from Amazon S3 at initialization instead of building them into the image, which keeps the image small and lets you change the model without rebuilding it. For more information about optimizing startup time, see [Optimizing startup time for GPU-accelerated functions](lambda-managed-instances-gpu-startup.md).
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/deep-learning-containers/pytorch:cuda
 
 # Download weights at build time so the function has no runtime internet dependency
@@ -109,7 +109,7 @@ CMD ["handler.handler"]
 
 The sample handler code is shown below:
 
-```
+```python
 import torch
 import io
 import base64
@@ -154,13 +154,13 @@ def handler(event, context):
 
 The `vllm:cuda` image is meant for serving large language models behind an OpenAI-compatible API. Use it for chat, completion, and embedding workloads where you want the server to handle batching and GPU memory management for you. The image includes the vLLM framework, which you can use to serve models directly without writing code to load the model, batch requests, or manage GPU memory. Configure the `MODEL_ID` environment variable to point to your model on the local file system, in an Amazon S3 bucket, or in a Hugging Face or ModelScope repository. When retrieving models from Hugging Face, we recommend that you authenticate with the `HF_TOKEN` environment variable for higher download rate limits and to access private or gated models. By default, the image serves Qwen/Qwen2.5-0.5B-Instruct.
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/deep-learning-containers/vllm:cuda
 ```
 
 To use a different model, update the `MODEL_ID` environment variable on the function and publish a new function version. You don't need to rebuild the image.
 
-```
+```bash
 aws lambda update-function-configuration \
     --function-name my-gpu-function \
     --environment 'Variables={MODEL_ID=Qwen/Qwen2.5-1.5B-Instruct,HF_TOKEN=<your-hugging-face-token>}'
@@ -173,7 +173,7 @@ The image starts the vLLM server during initialization and checks its health whi
 
 The image automatically handles model downloading, GPU memory management, and serving. Invoke payloads follow an OpenAI-compatible format. For text models, supply an input like the following:
 
-```
+```json
 {
   "prompt": "Explain quantum computing in one sentence.",
   "max_tokens": 256
@@ -185,14 +185,14 @@ The image automatically handles model downloading, GPU memory management, and se
 
 For production workloads, we recommend copying models to an S3 bucket in the same Region as your capacity provider and loading them from there. This avoids cross-Region data transfer costs and downloads faster than the Hugging Face Hub.
 
-```
+```bash
 huggingface-cli download Qwen/Qwen2.5-1.5B-Instruct --local-dir ./model
 aws s3 sync ./model s3://amzn-s3-demo-bucket/models/Qwen2.5-1.5B-Instruct/
 ```
 
 You can then refer to your S3 prefix in the `MODEL_ID` environment variable. By default, the `vllm:cuda` image downloads models to `/tmp`. We recommend that you stream models directly to memory using an additional environment variable.
 
-```
+```bash
 aws lambda update-function-configuration \
     --function-name my-gpu-function \
     --environment 'Variables={MODEL_ID=s3://amzn-s3-demo-bucket/models/Qwen2.5-1.5B-Instruct/,VLLM_LOAD_FORMAT=runai_streamer}'
@@ -210,13 +210,13 @@ To use a pretrained model with custom business logic, you can provide your own h
 
 The `sglang:cuda` image, like the `vllm:cuda` image, includes a built-in model serving framework that requires no code. It provides structured generation capabilities and efficient prefix caching via RadixAttention. Use it for LLM workloads that benefit from structured output (JSON mode, regex-constrained generation), multi-turn conversations with prefix sharing, or fine-grained generation control.
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/deep-learning-containers/sglang:cuda
 ```
 
 Like the vLLM image, configure it with environment variables.
 
-```
+```bash
 aws lambda update-function-configuration \
     --function-name my-gpu-function \
     --environment 'Variables={MODEL_ID=Qwen/Qwen2.5-1.5B-Instruct,HF_TOKEN=<your-hugging-face-token>}'

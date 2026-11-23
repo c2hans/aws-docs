@@ -198,7 +198,7 @@ The addition of `System.getenv` access for environment variables in Tomcat platf
   ```
 + [Python](create-deploy-python-container.md#create-deploy-python-custom-container-envprop) – `os.environ`
 
-  ```
+  ```python
   import os
   endpoint = os.environ['API_ENDPOINT']
   ```

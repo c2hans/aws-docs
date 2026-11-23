@@ -15,7 +15,7 @@ The example calls the following AWS Private CA API actions:
 
 If you encounter problems, see [Troubleshoot AWS Private CA Matter-compliant certificate errors](TroubleshootPcaMatter.md) in the Troubleshooting section.
 
-```
+```java
 package com.amazonaws.samples.matter;
 
 import com.amazonaws.auth.AWSCredentials;

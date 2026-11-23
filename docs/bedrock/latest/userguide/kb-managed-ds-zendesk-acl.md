@@ -26,7 +26,7 @@ To enable ACL awareness for a Zendesk data source, set `aclEnabled` to `true` in
 **Important**
 ACL configuration is permanent. You cannot enable ACLs on a data source created without ACL support, and you cannot disable ACLs after they are enabled.
 
-```
+```json
 "connectorParameters": {
     "type": "ZENDESK",
     "connectorType": "ZENDESK",

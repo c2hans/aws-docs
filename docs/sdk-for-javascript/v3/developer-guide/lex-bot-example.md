@@ -80,7 +80,7 @@ The CloudFormation template was generated using the AWS CDK available [here on G
 **Important**
 The stack name must be unique within an AWS Region and AWS account. You can specify up to 128 characters, and numbers and hyphens are allowed.
 
-   ```
+   ```javascript
    aws cloudformation create-stack --stack-name STACK_NAME --template-body file://setup.yaml --capabilities CAPABILITY_IAM
    ```
 
@@ -112,7 +112,7 @@ The first step is to create an Amazon Lex chatbot by using the Amazon Web Servic
 
 Create a file named `index.html`. Copy and paste the code below in to `index.html`. This HTML references `main.js`. This is a bundled version of index.js, which includes the required AWS SDK for JavaScript modules. You'll create this file in [Create the HTML](#lex-bot-example-html). `index.html` also references `style.css`, which adds the styles.
 
-```
+```html
 <!doctype html>
 <head>
   <title>Amazon Lex - Sample Application (BookTrip)</title>
@@ -157,7 +157,7 @@ First, create a `libs` directory create the required service client objects by c
 **Note**
 Use the ID of the Amazon Cognito identity pool you created in [Create the AWS resources using CloudFormation](#lex-bot-example-resources-cli).
 
-```
+```javascript
 import { CognitoIdentityClient } from "@aws-sdk/client-cognito-identity";
 import { fromCognitoIdentityPool } from "@aws-sdk/credential-provider-cognito-identity";
 import { ComprehendClient } from "@aws-sdk/client-comprehend";
@@ -177,7 +177,7 @@ const comprehendClient = new ComprehendClient({
 export { comprehendClient };
 ```
 
-```
+```javascript
 import { CognitoIdentityClient } from "@aws-sdk/client-cognito-identity";
 import { fromCognitoIdentityPool } from "@aws-sdk/credential-provider-cognito-identity";
 import { LexRuntimeServiceClient } from "@aws-sdk/client-lex-runtime-service";
@@ -197,7 +197,7 @@ const lexClient = new LexRuntimeServiceClient({
 export { lexClient };
 ```
 
-```
+```javascript
 import { CognitoIdentityClient } from "@aws-sdk/client-cognito-identity";
 import { fromCognitoIdentityPool } from "@aws-sdk/credential-provider-cognito-identity";
 import { TranslateClient } from "@aws-sdk/client-translate";
@@ -227,7 +227,7 @@ Next, create an `index.js` file, and paste the code below into it.
 + Takes the translated text and uses Amazon Lex to generate a response.
 + Posts the response to the browser page.
 
-```
+```html
 import { DetectDominantLanguageCommand } from "@aws-sdk/client-comprehend";
 import { TranslateTextCommand } from "@aws-sdk/client-translate";
 import { PostTextCommand } from "@aws-sdk/client-lex-runtime-service";
@@ -347,7 +347,7 @@ For information about*webpack*, see [Bundle applications with webpack](webpack.m
 
 1. Run the the following in the command line to bundle the JavaScript for this example into a file called `main.js`:
 
-   ```
+   ```javascript
    webpack index.js --mode development --target web --devtool false -o main.js
    ```
 

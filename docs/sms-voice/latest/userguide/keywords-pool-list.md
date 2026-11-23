@@ -28,7 +28,7 @@ You can use the [describe-keywords](https://docs.aws.amazon.com/cli/latest/refer
 
 To view a list of keywords using the AWS CLI at the command line, enter the following command:
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 describe-keywords \
 > --origination-identity {{OriginationIdentity}}
 ```

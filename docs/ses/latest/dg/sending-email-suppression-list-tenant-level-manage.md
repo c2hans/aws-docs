@@ -86,7 +86,7 @@ Use the `GetSuppressedDestination` API operation with the `--tenant-name` parame
 
 If the address is on the tenant's suppression list, the command returns output that resembles the following example:
 
-```
+```json
 {
     "SuppressedDestination": {
         "EmailAddress": "recipient@example.com",
@@ -174,7 +174,7 @@ Use the `ListSuppressedDestinations` API operation with the `--tenant-name` para
 
 The following example output shows two suppressed addresses:
 
-```
+```json
 {
     "SuppressedDestinationSummaries": [
         {

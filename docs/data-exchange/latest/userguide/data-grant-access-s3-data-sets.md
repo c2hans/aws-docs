@@ -54,7 +54,7 @@ The data provided is stored in the data owner’s Amazon S3 bucket. When accessi
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [{
@@ -76,7 +76,7 @@ The data provided is stored in the data owner’s Amazon S3 bucket. When accessi
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

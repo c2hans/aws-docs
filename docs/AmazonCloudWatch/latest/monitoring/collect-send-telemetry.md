@@ -11,6 +11,5 @@ You can also use the CloudWatch agent to collect metrics, logs, and traces from 
 **Topics**
 + [OpenTelemetry](CloudWatch-OpenTelemetry-Sections.md)
 + [Collect metrics, logs, and traces using the CloudWatch agent](Install-CloudWatch-Agent.md)
-+ [Embedding metrics within logs](CloudWatch_Embedded_Metric_Format.md)
 + [CloudWatch pipelines](cloudwatch-pipelines.md)
 + [Amazon CloudWatch managed Prometheus collectors](managed-prometheus-collectors.md)

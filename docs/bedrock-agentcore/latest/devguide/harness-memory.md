@@ -24,7 +24,7 @@ To customize the managed memory at create time:
 
 **Example**
 
-```
+```bash
 aws bedrock-agentcore-control create-harness \
   --harness-name "MyHarness" \
   --execution-role-arn "arn:aws:iam::123456789012:role/MyHarnessRole" \
@@ -32,14 +32,14 @@ aws bedrock-agentcore-control create-harness \
 ```
 To update strategies on an existing harness:
 
-```
+```bash
 aws bedrock-agentcore-control update-harness \
   --harness-id "MyHarness-UuFdkQoXSL" \
   --memory '{"optionalValue": {"managedMemoryConfiguration": {"strategies": ["SEMANTIC", "SUMMARIZATION", "USER_PREFERENCE", "EPISODIC"]}}}'
 ```
 Create an empty project, then add a harness with managed memory:
 
-```
+```bash
 agentcore create --name MyHarnessProject --template empty
 cd MyHarnessProject
 agentcore add harness \
@@ -49,7 +49,7 @@ agentcore deploy
 ```
 To create a harness without memory, run the following command instead of the preceding `agentcore add harness` command:
 
-```
+```bash
 agentcore add harness \
   --name no_memory \
   --memory '{"mode":"disabled"}'
@@ -85,7 +85,7 @@ Managed memory already accepts `encryptionKeyArn` for a customer managed key in 
 **Example**
 Create a memory instance:
 
-```
+```bash
 aws bedrock-agentcore-control create-memory \
   --name "MyMemory" \
   --event-expiry-duration 30 \
@@ -93,13 +93,13 @@ aws bedrock-agentcore-control create-memory \
 ```
 Attach it to the harness:
 
-```
+```bash
 aws bedrock-agentcore-control update-harness \
   --harness-id "MyHarness-UuFdkQoXSL" \
   --memory '{"optionalValue": {"agentCoreMemoryConfiguration": {"arn": "arn:aws:bedrock-agentcore:us-west-2:123456789012:memory/MyMemory-abc1234567"}}}'
 ```
 
-```
+```bash
 agentcore create --name MyHarnessProject --template empty
 cd MyHarnessProject
 agentcore add harness \
@@ -109,7 +109,7 @@ agentcore deploy
 ```
 To use a memory that the same project declares, reference it by name instead of by ARN:
 
-```
+```bash
 agentcore add memory --name MyMemory
 agentcore add harness \
   --name myagent \
@@ -123,7 +123,7 @@ A by-name reference also accepts `retrievalConfig`, and `agentcore export harnes
 
 To disable memory entirely:
 
-```
+```bash
 aws bedrock-agentcore-control update-harness \
   --harness-id "MyHarness-UuFdkQoXSL" \
   --memory '{"optionalValue": {"disabled": {}}}'
@@ -134,7 +134,7 @@ aws bedrock-agentcore-control update-harness \
 
 Pass `actorId` at invoke time to scope memory to a specific user. Each actor gets isolated short-term and long-term memory:
 
-```
+```python
 response = client.invoke_harness(
     harnessArn=HARNESS_ARN,
     runtimeSessionId=SESSION_ID,
@@ -154,7 +154,7 @@ When a harness has active memory strategies (managed or BYO), retrieval works au
 
  **Override the defaults:** If you explicitly provide a `retrievalConfig` in the BYO memory configuration, your values take priority and no automatic derivation occurs. This lets you customize which namespaces are queried, adjust `topK` or `relevanceScore`, or disable retrieval for specific strategies.
 
-```
+```bash
 aws bedrock-agentcore-control update-harness \
   --harness-id "MyHarness-UuFdkQoXSL" \
   --memory '{"optionalValue": {"agentCoreMemoryConfiguration": {"arn": "arn:aws:bedrock-agentcore:us-west-2:123456789012:memory/MyMemory-abc1234567", "retrievalConfig": {"/facts/{actorId}/": {"topK": 5, "relevanceScore": 0.5, "strategyId": "FactExtractor-abc123"}}}}}'
@@ -173,7 +173,7 @@ When conversation history grows beyond the model’s context window, the harness
 
 The following AWS CLI `update-harness` command sets the `sliding_window` strategy and its settings on the harness. Replace {{MyHarness-UuFdkQoXSL}} with your harness ID.
 
-```
+```bash
 aws bedrock-agentcore-control update-harness \
   --harness-id "MyHarness-UuFdkQoXSL" \
   --truncation '{"strategy": "sliding_window", "config": {"slidingWindow": {"messagesCount": 30}}}'
@@ -203,7 +203,7 @@ Step 3 decides whether the harness generates summaries at all. Only the `summari
 
 The following AWS CLI `update-harness` command completes steps 2 and 3 by setting the harness model and the `summarization` truncation strategy with its settings:
 
-```
+```bash
 aws bedrock-agentcore-control update-harness \
   --harness-id "MyHarness-UuFdkQoXSL" \
   --model '{

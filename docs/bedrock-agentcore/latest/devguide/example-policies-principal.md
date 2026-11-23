@@ -28,7 +28,7 @@ Every JWT claim becomes a **string** tag on the principal, whatever its type in 
 
 Test with `hasTag` before reading a tag with `getTag`; reading a tag that does not exist is an error that denies the request. The `like` operator matches the scope wherever it appears in the claim, which is what you want because the `scope` claim holds several values. That holds whether the token delivers them space-separated or as a JSON array.
 
-```
+```cedar
 permit(
   principal is AgentCore::OAuthUser,
   action == AgentCore::Action::"InsuranceAPI___file_claim",
@@ -49,7 +49,7 @@ Because `like` matches substrings, choose the pattern carefully: `*insurance:cla
 
 If the identity you want to match is the token subject, match the entity directly in the policy scope with `principal == AgentCore::OAuthUser::"{{sub}}"` instead. That needs no condition at all, and is cheaper to evaluate.
 
-```
+```cedar
 permit(
   principal is AgentCore::OAuthUser,
   action == AgentCore::Action::"InsuranceAPI___update_coverage",
@@ -66,7 +66,7 @@ when {
 
  **Intent:** Allow only administrators and managers to delete a claim.
 
-```
+```cedar
 permit(
   principal is AgentCore::OAuthUser,
   action == AgentCore::Action::"InsuranceAPI___delete_claim",
@@ -85,7 +85,7 @@ when {
 
 This reaches a similar outcome to the previous example by the opposite route, and the difference matters. A `permit` grants access that another `permit` could also grant independently. A `forbid …​ unless` denies access that no `permit` can restore, because `forbid` always wins. Use `forbid …​ unless` for a restriction you want to hold regardless of what other policies the engine contains.
 
-```
+```cedar
 forbid(
   principal is AgentCore::OAuthUser,
   action == AgentCore::Action::"InsuranceAPI___update_coverage",
@@ -104,7 +104,7 @@ unless {
 
 Because the action is unconstrained, the resource is written as the type test `resource is AgentCore::Gateway` rather than a specific ARN. This policy applies to every gateway the policy engine is attached to, and to every target type on them — MCP tools, runtime invocations, and inference calls alike.
 
-```
+```cedar
 forbid(
   principal is AgentCore::OAuthUser,
   action,
@@ -128,7 +128,7 @@ These patterns apply when your gateway uses `AWS_IAM`, so the principal is an `A
 
 Use this only when authenticating as any IAM identity is a sufficient authorization decision. The gateway’s resource policy and its execution role already limit who can reach it.
 
-```
+```cedar
 permit(
   principal is AgentCore::IamEntity,
   action == AgentCore::Action::"InsuranceAPI___get_contract",
@@ -143,7 +143,7 @@ permit(
 
 Matching with `principal ==` in the policy scope is the most precise form and needs no condition. Write the ARN without a session name; the service removes the session name before evaluation.
 
-```
+```cedar
 permit(
   principal == AgentCore::IamEntity::"arn:aws:sts::111122223333:assumed-role/ClaimsProcessorRole",
   action == AgentCore::Action::"InsuranceAPI___disburse_payment",
@@ -160,7 +160,7 @@ Use `principal.id like` when one policy must cover several roles. Two other usef
 +  `principal.id like "arn:aws:sts::111122223333:assumed-role/*"` matches any role in one account.
 +  `principal.id like "*:111122223333:*"` matches any IAM ARN from one account, whatever its form.
 
-```
+```cedar
 permit(
   principal is AgentCore::IamEntity,
   action == AgentCore::Action::"InsuranceAPI___get_claim_status",
@@ -180,7 +180,7 @@ A `like` pattern with no wildcard is equivalent to `principal ==` but costs a co
 
 The pattern `*:444455556666:*` matches any ARN containing that account ID, in any of the forms an IAM caller can take. Because `forbid` wins over every `permit`, this holds no matter what else the engine allows.
 
-```
+```cedar
 forbid(
   principal is AgentCore::IamEntity,
   action,
@@ -198,7 +198,7 @@ when {
 
 A `forbid` that lists the write actions fails safe in one direction only. Adding a new read tool needs no policy change. Adding a new write tool requires you to extend the list, or the new tool goes unprotected. If you prefer the opposite bias, write a `permit` that lists the read actions instead, so a newly added tool is denied until you deliberately allow it.
 
-```
+```cedar
 forbid(
   principal == AgentCore::IamEntity::"arn:aws:sts::111122223333:assumed-role/ReadOnlyAgentRole",
   action in [
@@ -219,7 +219,7 @@ forbid(
 
 Several agents can share one gateway and one policy engine while seeing different tools. Each agent’s `tools/list` response contains only the tools its principal is authorized to call, so an agent is not told about tools it cannot use.
 
-```
+```cedar
 // Triage agent: read only.
 permit(
   principal == AgentCore::IamEntity::"arn:aws:sts::111122223333:assumed-role/TriageAgentRole",

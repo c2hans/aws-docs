@@ -18,7 +18,7 @@ Pattern: `^(.+)@(.+)$`
 Required: No
 
  ** ContactLanguage **   <a name="SES-Type-AccountDetails-ContactLanguage"></a>
-The language you would prefer for the case. The contact language can be one of `ENGLISH` or `JAPANESE`.
+The language you would prefer for the case. The contact language can be one of `EN` or `JA`.
 Type: String
 Valid Values: `EN | JA`
 Required: No

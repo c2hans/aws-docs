@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { IotToSqsProps, IotToSqs } from '@aws-solutions-constructs/aws-iot-sqs';
@@ -44,7 +44,7 @@ const constructProps: IotToSqsProps = {
 new IotToSqs(this, 'test-iot-sqs-integration', constructProps);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_iot_sqs import IotToSqs
 from aws_cdk import (
     aws_iot as iot,
@@ -63,7 +63,7 @@ IotToSqs(self, 'test_iot_sqs',
     ))
 ```
 
-```
+```java
 import software.constructs.Construct;
 import java.util.List;
 

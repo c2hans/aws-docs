@@ -16,7 +16,7 @@ Use `SolrToOpenSearchTransformProvider` as a request transform for captured Solr
 
 For a single schema/config pair, configure the default keys `solrSchemaXml` and `solrConfigXml`. For multiple collections or config sets in the same replay stream, prefix the keys with the Solr collection name from the request path:
 
-```
+```json
 "context": {
   "values": {
     "targetType": { "value": "OpenSearch" },

@@ -46,7 +46,7 @@ To use Default Host Management Configuration in the AWS Region and AWS account w
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -112,7 +112,7 @@ After turning on Default Host Management Configuration, it might take up to 30 m
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement":[
@@ -135,7 +135,7 @@ After turning on Default Host Management Configuration, it might take up to 30 m
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws iam create-role \
    --role-name {{AWSSystemsManagerDefaultEC2InstanceManagementRole}} \
    --path /service-role/ \
@@ -145,7 +145,7 @@ After turning on Default Host Management Configuration, it might take up to 30 m
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws iam create-role ^
    --role-name {{AWSSystemsManagerDefaultEC2InstanceManagementRole}} ^
    --path /service-role/ ^
@@ -155,7 +155,7 @@ After turning on Default Host Management Configuration, it might take up to 30 m
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    New-IAMRole `
    -RoleName "{{AWSSystemsManagerDefaultEC2InstanceManagementRole}}" `
    -Path "/service-role/" `
@@ -169,7 +169,7 @@ After turning on Default Host Management Configuration, it might take up to 30 m
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws iam attach-role-policy \
    --policy-arn arn:aws:iam::aws:policy/AmazonSSMManagedEC2InstanceDefaultPolicy \
    --role-name {{AWSSystemsManagerDefaultEC2InstanceManagementRole}}
@@ -178,7 +178,7 @@ After turning on Default Host Management Configuration, it might take up to 30 m
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws iam attach-role-policy ^
    --policy-arn arn:aws:iam::aws:policy/AmazonSSMManagedEC2InstanceDefaultPolicy ^
    --role-name {{AWSSystemsManagerDefaultEC2InstanceManagementRole}}
@@ -187,7 +187,7 @@ After turning on Default Host Management Configuration, it might take up to 30 m
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Register-IAMRolePolicy `
    -PolicyArn "arn:aws:iam::aws:policy/AmazonSSMManagedEC2InstanceDefaultPolicy" `
    -RoleName "{{AWSSystemsManagerDefaultEC2InstanceManagementRole}}"
@@ -200,7 +200,7 @@ After turning on Default Host Management Configuration, it might take up to 30 m
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm update-service-setting \
    --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/managed-instance/default-ec2-instance-management-role \
    --setting-value {{service-role/AWSSystemsManagerDefaultEC2InstanceManagementRole}}
@@ -209,7 +209,7 @@ After turning on Default Host Management Configuration, it might take up to 30 m
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm update-service-setting ^
    --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/managed-instance/default-ec2-instance-management-role ^
    --setting-value {{service-role/AWSSystemsManagerDefaultEC2InstanceManagementRole}}
@@ -218,7 +218,7 @@ After turning on Default Host Management Configuration, it might take up to 30 m
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Update-SSMServiceSetting `
    -SettingId "arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/managed-instance/default-ec2-instance-management-role" `
    -SettingValue "{{service-role/AWSSystemsManagerDefaultEC2InstanceManagementRole}}"
@@ -233,7 +233,7 @@ After turning on Default Host Management Configuration, it might take up to 30 m
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm get-service-setting \
    --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/managed-instance/default-ec2-instance-management-role
    ```
@@ -241,7 +241,7 @@ After turning on Default Host Management Configuration, it might take up to 30 m
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm get-service-setting ^
    --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/managed-instance/default-ec2-instance-management-role
    ```
@@ -249,7 +249,7 @@ After turning on Default Host Management Configuration, it might take up to 30 m
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Get-SSMServiceSetting `
    -SettingId "arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/managed-instance/default-ec2-instance-management-role"
    ```
@@ -298,7 +298,7 @@ If you deactivate Default Host Management Configuration, and you have not attach
 ------
 #### [ Linux & macOS ]
 
-  ```
+  ```sh
   aws ssm reset-service-setting \
   --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/managed-instance/default-ec2-instance-management-role
   ```
@@ -306,7 +306,7 @@ If you deactivate Default Host Management Configuration, and you have not attach
 ------
 #### [ Windows ]
 
-  ```
+  ```sh
   aws ssm reset-service-setting ^
   --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/managed-instance/default-ec2-instance-management-role
   ```
@@ -314,7 +314,7 @@ If you deactivate Default Host Management Configuration, and you have not attach
 ------
 #### [ PowerShell ]
 
-  ```
+  ```powershell
   Reset-SSMServiceSetting `
   -SettingId "arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/managed-instance/default-ec2-instance-management-role"
   ```
@@ -336,7 +336,7 @@ The following policy demonstrates how to prevent non-administrative members in y
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -402,7 +402,7 @@ The following policy demonstrates how to prevent IAM groups, roles, or users in 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -59,7 +59,7 @@ elasticloadbalancing
 
 To specify multiple actions in a single statement, separate them with commas.
 
-```
+```json
 "Action": [
     "elasticloadbalancing:{{action1}}",
     "elasticloadbalancing:{{action2}}"
@@ -68,7 +68,7 @@ To specify multiple actions in a single statement, separate them with commas.
 
 You can specify multiple actions using wildcards (\*). For example, to specify all actions that begin with the word `Describe`, include the following action:
 
-```
+```json
 "Action": "elasticloadbalancing:Describe*"
 ```
 
@@ -91,7 +91,7 @@ The `Resource` JSON policy element specifies the object or objects to which the 
 
 Some Elastic Load Balancing API actions support multiple resources. To specify multiple resources in a single statement, separate the ARNs with commas.
 
-```
+```json
 "Resource": [
     "{{resource1}}",
     "{{resource2}}"
@@ -139,7 +139,7 @@ The following example policy requires users to select the HTTPS protocol for the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -170,7 +170,7 @@ With a Classic Load Balancer, you can specify multiple listeners in a single cal
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -217,7 +217,7 @@ The following example policy requires users to select one of the specified secur
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -260,7 +260,7 @@ The following example policy requires users to select the specified scheme for t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -296,7 +296,7 @@ The `elasticloadbalancing:SecurityGroup` condition key can be used for condition
 
 The following example policy requires users to select one of the specified security groups for their load balancers.
 
-```
+```json
     "Version": "2012-10-17",
     "Statement": {
         "Effect": "Allow",
@@ -341,7 +341,7 @@ The following example policy requires users to select one of the specified subne
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

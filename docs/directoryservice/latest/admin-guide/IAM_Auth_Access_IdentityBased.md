@@ -22,7 +22,7 @@ The following shows an example of a permissions policy.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
     "Statement": [
@@ -115,7 +115,7 @@ The following permissions policy grants permissions to a user to run all of the 
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
    "Statement":[
@@ -140,7 +140,7 @@ The following permissions policy grants permissions to allow a user to create a 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -199,7 +199,7 @@ The following tag policy allows creating an Directory Service directory as long 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -233,7 +233,7 @@ The following tag policy allows updating and deleting Directory Service director
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -268,7 +268,7 @@ The following tag policy denies resource tagging for Directory Service where the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

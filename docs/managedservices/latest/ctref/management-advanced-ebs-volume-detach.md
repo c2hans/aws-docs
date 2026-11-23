@@ -142,7 +142,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-ebs-volume-detach-ex-min"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-DetachEBSVolume",
   "Region" : "us-east-1",
@@ -157,7 +157,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-ebs-volume-detach-ex-max"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-DetachEBSVolume",
   "Region" : "us-east-1",

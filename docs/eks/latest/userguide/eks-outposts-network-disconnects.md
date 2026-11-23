@@ -36,14 +36,14 @@ During network disconnects, the Kubernetes node lifecycle controller marks unrea
 
    1. Generate a certificate signing request.
 
-      ```
+      ```bash
       openssl req -new -newkey rsa:4096 -nodes -days 365 \
           -keyout admin.key -out admin.csr -subj "/CN=admin"
       ```
 
    1. Create a certificate signing request in Kubernetes.
 
-      ```
+      ```bash
       BASE64_CSR=$(cat admin.csr | base64 -w 0)
       cat << EOF > admin-csr.yaml
       apiVersion: certificates.k8s.io/v1
@@ -60,19 +60,19 @@ During network disconnects, the Kubernetes node lifecycle controller marks unrea
 
 1. Create a certificate signing request using `kubectl`.
 
-   ```
+   ```bash
    kubectl create -f admin-csr.yaml
    ```
 
 1. Check the status of the certificate signing request.
 
-   ```
+   ```bash
    kubectl get csr admin-csr
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    NAME       AGE   REQUESTOR                       CONDITION
    admin-csr  11m   kubernetes-admin                Pending
    ```
@@ -81,19 +81,19 @@ During network disconnects, the Kubernetes node lifecycle controller marks unrea
 
 1. Approve the certificate signing request.
 
-   ```
+   ```bash
    kubectl certificate approve admin-csr
    ```
 
 1. Recheck the certificate signing request status for approval.
 
-   ```
+   ```bash
    kubectl get csr admin-csr
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    NAME       AGE   REQUESTOR                     CONDITION
    admin-csr  11m   kubernetes-admin              Approved
    ```
@@ -102,19 +102,19 @@ During network disconnects, the Kubernetes node lifecycle controller marks unrea
 
    1. Retrieve the certificate.
 
-      ```
+      ```bash
       kubectl get csr admin-csr -o jsonpath='{.status.certificate}' | base64 --decode > admin.crt
       ```
 
    1. Verify the certificate.
 
-      ```
+      ```bash
       cat admin.crt
       ```
 
 1. Create a cluster role binding for an `admin` user.
 
-   ```
+   ```bash
    kubectl create clusterrolebinding admin --clusterrole=cluster-admin \
        --user=admin --group=system:masters
    ```
@@ -123,34 +123,34 @@ During network disconnects, the Kubernetes node lifecycle controller marks unrea
 
    You can generate a `kubeconfig` file using the downloaded `admin` certificates. Replace {{my-cluster}} and {{apiserver-endpoint}} in the following commands.
 
-   ```
+   ```bash
    aws eks describe-cluster --name my-cluster \
        --query "cluster.certificateAuthority" \
        --output text | base64 --decode > ca.crt
    ```
 
-   ```
+   ```bash
    kubectl config --kubeconfig admin.kubeconfig set-cluster my-cluster \
        --certificate-authority=ca.crt --server apiserver-endpoint --embed-certs
    ```
 
-   ```
+   ```bash
    kubectl config --kubeconfig admin.kubeconfig set-credentials admin \
        --client-certificate=admin.crt --client-key=admin.key --embed-certs
    ```
 
-   ```
+   ```bash
    kubectl config --kubeconfig admin.kubeconfig set-context admin@my-cluster \
        --cluster my-cluster --user admin
    ```
 
-   ```
+   ```bash
    kubectl config --kubeconfig admin.kubeconfig use-context admin@my-cluster
    ```
 
 1. View your `kubeconfig` file.
 
-   ```
+   ```bash
    kubectl get nodes --kubeconfig admin.kubeconfig
    ```
 
@@ -160,7 +160,7 @@ During network disconnects, the Kubernetes node lifecycle controller marks unrea
 
    1. You can test the connection to your local cluster while disconnected using the `x509` certificate. Make sure to change your `kubeconfig` to the `admin.kubeconfig` that you created in a previous step. Replace {{my-cluster}} with the name of your local cluster.
 
-      ```
+      ```bash
       kubectl config use-context admin@my-cluster --kubeconfig admin.kubeconfig
       ```
 

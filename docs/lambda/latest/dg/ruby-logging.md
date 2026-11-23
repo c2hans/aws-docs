@@ -97,7 +97,7 @@ The following example code snippet and log output show how standard log outputs 
 
 **Example Ruby logging code**
 
-```
+```ruby
 require 'logger'
 
 def lambda_handler(event:, context:)
@@ -108,7 +108,7 @@ end
 
 **Example JSON log record**
 
-```
+```JSON
 {
     "timestamp": "2025-10-27T19:17:45.586Z",
     "level": "INFO",
@@ -124,7 +124,7 @@ When your function's log format is set to JSON, you can also log additional para
 
 **Example Ruby logging code**
 
-```
+```ruby
 require 'logger'
 require 'json'
 
@@ -137,7 +137,7 @@ end
 
 **Example JSON log record**
 
-```
+```JSON
 {
     "timestamp": "2025-11-02T15:26:28Z",
     "level": "INFO",
@@ -157,7 +157,7 @@ The following code snippet shows how Ruby exceptions are captured in your functi
 
 **Example Ruby logging code**
 
-```
+```ruby
 require 'logger'
 
 def lambda_handler(event:, context:)
@@ -172,7 +172,7 @@ end
 
 **Example JSON log record**
 
-```
+```JSON
 {
     "timestamp": "2025-11-02T16:18:57Z",
     "level": "ERROR",
@@ -198,7 +198,7 @@ For AWS Lambda to filter your application logs according to their log level, you
 
 You can also use a `puts` statement to output a JSON object containing a log level identifier. The following `puts` statement produces a JSON formatted output where the log level is set to INFO. AWS Lambda will send the JSON object to CloudWatch Logs if your function's logging level is set to INFO, DEBUG, or TRACE.
 
-```
+```ruby
 puts '{"msg":"My log message", "level":"info"}'
 ```
 

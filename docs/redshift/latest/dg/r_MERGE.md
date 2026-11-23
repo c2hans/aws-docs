@@ -128,7 +128,7 @@ Using REMOVE DUPLICATES gives better performance than using WHEN MATCHED and WHE
   ```
 + The target cannot be a data source of any subquery of the same MERGE statement. For example, the following SQL command returns an error like `ERROR: Source view/subquery in Merge statement cannot reference target table.` because the subquery references `target` instead of `source`.
 
-  ```
+  ```sql
   MERGE INTO target
   USING (SELECT id, name FROM {{target}} GROUP BY 1, 2) as my_source
   ON target.id = my_source.id

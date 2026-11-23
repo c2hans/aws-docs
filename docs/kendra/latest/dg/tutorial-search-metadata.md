@@ -60,7 +60,7 @@ To complete this tutorial, you need the following resources:
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [

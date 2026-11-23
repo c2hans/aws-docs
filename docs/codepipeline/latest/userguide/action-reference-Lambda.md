@@ -50,7 +50,7 @@ For more information about variables in CodePipeline, see [Variables reference](
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: Lambda
 Actions:
   - Name: Lambda
@@ -71,7 +71,7 @@ Actions:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "Lambda",
     "Actions": [

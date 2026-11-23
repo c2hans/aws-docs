@@ -32,7 +32,7 @@ To authorize another AWS account to send emails on your behalf, use an identity 
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -41,7 +41,7 @@ use Aws\Ses\SesClient;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -93,7 +93,7 @@ Return the sending authorization policies that are associated with a specific em
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -102,7 +102,7 @@ use Aws\Ses\SesClient;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -132,7 +132,7 @@ To list the sending authorization policies that are associated with a specific e
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -141,7 +141,7 @@ use Aws\Ses\SesClient;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -169,7 +169,7 @@ Remove sending authorization for another AWS account to send emails with an emai
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -178,7 +178,7 @@ use Aws\Ses\SesClient;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',

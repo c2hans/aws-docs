@@ -8,7 +8,7 @@ AWS IoT provides a registry that helps you manage *things*. A thing is a represe
 
  Information about a thing is stored in the registry as JSON data. Here is an example thing:
 
-```
+```JSON
 {
      "version": 3,
     "thingName": "MyLightBulb",

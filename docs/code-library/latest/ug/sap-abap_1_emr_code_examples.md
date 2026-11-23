@@ -26,7 +26,7 @@ The following code example shows how to use `AddJobFlowSteps`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/emr#code-examples).
 
-```
+```sap-abap
     TRY.
         " Build args list for Spark submit
         DATA lt_args TYPE /aws1/cl_emrxmlstringlist_w=>tt_xmlstringlist.
@@ -78,7 +78,7 @@ The following code example shows how to use `DescribeCluster`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/emr#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_emr->describecluster(
           iv_clusterid = iv_cluster_id
@@ -104,7 +104,7 @@ The following code example shows how to use `DescribeStep`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/emr#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_emr->describestep(
           iv_clusterid = iv_cluster_id
@@ -131,7 +131,7 @@ The following code example shows how to use `ListSteps`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/emr#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_emr->liststeps(
           iv_clusterid = iv_cluster_id
@@ -157,7 +157,7 @@ The following code example shows how to use `RunJobFlow`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/emr#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create instances configuration
         DATA(lo_instances) = NEW /aws1/cl_emrjobflowinstsconfig(
@@ -202,7 +202,7 @@ The following code example shows how to use `TerminateJobFlows`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/emr#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA lt_cluster_ids TYPE /aws1/cl_emrxmlstringlist_w=>tt_xmlstringlist.
         APPEND NEW /aws1/cl_emrxmlstringlist_w( iv_cluster_id ) TO lt_cluster_ids.

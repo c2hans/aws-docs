@@ -51,7 +51,7 @@ The following code creates an auto predictor that makes predictions for 24 (`For
 
  For information on required and optional parameters for creating a predictor see [CreateAutoPredictor](API_CreateAutoPredictor.md).
 
-```
+```python
 import boto3
 
 forecast = boto3.client('forecast')
@@ -102,7 +102,7 @@ To enable predictor monitoring for an existing predictor with the SDK for Python
 
 For information on required and optional parameters, see the [CreateMonitor](API_CreateMonitor.md) and [DescribeMonitor](API_DescribeMonitor.md).
 
-```
+```python
 import boto3
 
 forecast = boto3.client('forecast')

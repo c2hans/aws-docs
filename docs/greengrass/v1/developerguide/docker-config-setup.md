@@ -97,7 +97,7 @@ To upgrade to a later AWS CLI version 1, you must repeat the MSI installation pr
 
      **Example:** To point to the latest version of the AWS IoT Greengrass Core software
 
-     ```
+     ```non
      216483018798.dkr.ecr.us-west-2.amazonaws.com/aws-iot-greengrass:latest
      ```
 
@@ -119,7 +119,7 @@ To upgrade to a later AWS CLI version 1, you must repeat the MSI installation pr
 
      **Example:** To point to the latest version of the AWS IoT Greengrass Core software
 
-     ```
+     ```non
      216483018798.dkr.ecr.us-west-2.amazonaws.com/aws-iot-greengrass:latest
      ```
 
@@ -141,7 +141,7 @@ To upgrade to a later AWS CLI version 1, you must repeat the MSI installation pr
 
      **Example:** To point to the latest version of the AWS IoT Greengrass Core software
 
-     ```
+     ```non
      216483018798.dkr.ecr.us-west-2.amazonaws.com/aws-iot-greengrass:latest
      ```
 
@@ -202,7 +202,7 @@ Follow these steps to configure the Docker image built from the AWS IoT Greengra
 
      **Example:** To point to the latest version of the AWS IoT Greengrass Core software
 
-     ```
+     ```non
      216483018798.dkr.ecr.us-west-2.amazonaws.com/aws-iot-greengrass:latest
      ```
 
@@ -224,7 +224,7 @@ Follow these steps to configure the Docker image built from the AWS IoT Greengra
 
      **Example:** To point to the latest version of the AWS IoT Greengrass Core software
 
-     ```
+     ```non
      216483018798.dkr.ecr.us-west-2.amazonaws.com/aws-iot-greengrass:latest
      ```
 
@@ -246,7 +246,7 @@ Follow these steps to configure the Docker image built from the AWS IoT Greengra
 
      **Example:** To point to the latest version of the AWS IoT Greengrass Core software
 
-     ```
+     ```non
      216483018798.dkr.ecr.us-west-2.amazonaws.com/aws-iot-greengrass:latest
      ```
 

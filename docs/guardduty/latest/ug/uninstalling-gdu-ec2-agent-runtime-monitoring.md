@@ -51,12 +51,12 @@ When you installed the security agent with [Method 2 - Using Linux Package Manag
    The following command will uninstall the GuardDuty security agent from the Amazon EC2 instance to which you connect:
    + For RPM:
 
-     ```
+     ```bash
      sudo rpm -e amazon-guardduty-agent
      ```
    + For Debian:
 
-     ```
+     ```bash
      sudo dpkg --purge amazon-guardduty-agent
      ```
 

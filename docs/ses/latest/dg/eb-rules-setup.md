@@ -68,7 +68,7 @@ A rule set can contain up to 40 rules. Each rule can contain up to 10 `Condition
 1. Choose **Save rule set**.
 
 **Assign a rule set to an ingress endpoint**
-When you create an ingress endpoint, select the rule set in **Rule set**. You must also select a traffic policy. For the complete procedure, see [Creating an ingress endpoint in the SES console](eb-ingress.md#eb-ingress-create-console).
+When you create an ingress endpoint, select the rule set in **Rule set**. You must also select a traffic policy. For the complete procedure, see [Creating and managing ingress points](eb-ingress.md#eb-ingress-create-console).
 
 **To change the rule set assigned to an existing ingress endpoint**
 
@@ -104,7 +104,7 @@ The following commands use rule set IDs `rs-0123456789abcdef01234567` and `rs-fe
 
 `CreateRuleSet` requires a rule-set name and a `Rules` list. The following command creates a rule set with one rule. The rule adds the `X-Route: orders` header when a recipient ends with `@example.com`, except for `test@example.com`:
 
-```
+```bash
 PROMPT> aws mailmanager create-rule-set \
   --region {{us-east-1}} \
   --rule-set-name {{inbound-routing}} \
@@ -140,7 +140,7 @@ The response contains the `RuleSetId`. Use this ID to retrieve, update, assign, 
 
 In the following command, replace the AWS Region and rule set ID with your own values. Run `get-rule-set` to retrieve the current rule list before you replace it:
 
-```
+```bash
 PROMPT> aws mailmanager get-rule-set \
   --region {{us-east-1}} \
   --rule-set-id {{rs-0123456789abcdef01234567}}
@@ -150,7 +150,7 @@ When you include `--rules` in `update-rule-set`, the supplied list replaces all 
 
 In the following command, replace the AWS Region and rule set ID with your own values. The command renames the rule set and replaces its rules with the displayed order:
 
-```
+```bash
 PROMPT> aws mailmanager update-rule-set \
   --region {{us-east-1}} \
   --rule-set-id {{rs-0123456789abcdef01234567}} \
@@ -200,7 +200,7 @@ To add a rule or action, add it to the complete list. To remove one, omit it fro
 
 An ingress endpoint requires an existing rule set and traffic policy. In the following command, replace the AWS Region, ingress endpoint name, rule set ID, and traffic policy ID with your own values. The command creates an open ingress endpoint and assigns both resources:
 
-```
+```bash
 PROMPT> aws mailmanager create-ingress-point \
   --region {{us-east-1}} \
   --ingress-point-name {{orders-ingress}} \
@@ -214,7 +214,7 @@ For other ingress endpoint types and settings, see [Ingress endpoints](eb-ingres
 
 In the following command, replace the AWS Region, ingress endpoint ID, and replacement rule set ID with your own values. The command replaces the rule set assigned to an existing ingress endpoint. Other ingress endpoint properties remain unchanged:
 
-```
+```bash
 PROMPT> aws mailmanager update-ingress-point \
   --region {{us-east-1}} \
   --ingress-point-id {{inp-0123456789abcdef01234567}} \
@@ -226,7 +226,7 @@ PROMPT> aws mailmanager update-ingress-point \
 
 Before you delete `rs-0123456789abcdef01234567`, assign a different rule set to every ingress endpoint that references it. In the following commands, replace the AWS Region and resource IDs with your own values. The commands replace the assignment on one ingress endpoint and then delete the unassigned rule set:
 
-```
+```bash
 PROMPT> aws mailmanager update-ingress-point \
   --region {{us-east-1}} \
   --ingress-point-id {{inp-0123456789abcdef01234567}} \

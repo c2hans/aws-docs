@@ -43,7 +43,7 @@ For more details, see [Best practices for managing AWS access keys in the *AWS G
 
 ****
 
-   ```
+   ```json
    {
                       "Version":"2012-10-17",
                       "Statement": [

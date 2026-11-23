@@ -11,7 +11,7 @@ An instance of [`Aws::SDKOptions`](https://docs.aws.amazon.com/sdk-for-cpp/lates
 The following samples demonstrate some of the available options.
 + Turn logging on using the default logger
 
-  ```
+  ```cpp
   Aws::SDKOptions options;
   options.loggingOptions.logLevel = Aws::Utils::Logging::LogLevel::Info;
   Aws::InitAPI(options);
@@ -22,7 +22,7 @@ The following samples demonstrate some of the available options.
   ```
 + Override the default HTTP client factory
 
-  ```
+  ```cpp
   Aws::SDKOptions options;
   options.httpOptions.httpClientFactory_create_fn = [](){
           return Aws::MakeShared<MyCustomHttpClientFactory>(
@@ -40,7 +40,7 @@ The following samples demonstrate some of the available options.
 
   If you build the SDK for C\+\+ with curl and OpenSSL, you must specify a signal handler. If you don’t use your own custom signal handler, set `installSigPipeHandler` to `true`.
 
-  ```
+  ```cpp
   Aws::SDKOptions options;
   options.httpOptions.installSigPipeHandler = true;
   Aws::InitAPI(options);

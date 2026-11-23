@@ -25,7 +25,7 @@ The CDK app and its constructs are in the `source/infrastructure` directory:
 
 Run the following commands from the `source/infrastructure` directory:
 
-```
+```bash
 # Install dependencies and compile the TypeScript CDK (tsc)
 npm ci && npm run build
 

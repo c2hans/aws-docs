@@ -44,7 +44,7 @@ For more information, see [AWS Trusted Advisor](https://docs.aws.amazon.com/awss
 **Tools for PowerShell V4**
 **Example 1: Returns the current status of refresh requests for the specified checks. Request-ASATrustedAdvisorCheckRefresh can be used to request that the status information of the checks be refreshed.**
 
-```
+```powershell
 Get-ASATrustedAdvisorCheckRefreshStatus -CheckId @("checkid1", "checkid2")
 ```
 +  For API details, see [DescribeTrustedAdvisorCheckRefreshStatuses](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -52,7 +52,7 @@ Get-ASATrustedAdvisorCheckRefreshStatus -CheckId @("checkid1", "checkid2")
 **Tools for PowerShell V5**
 **Example 1: Returns the current status of refresh requests for the specified checks. Request-ASATrustedAdvisorCheckRefresh can be used to request that the status information of the checks be refreshed.**
 
-```
+```powershell
 Get-ASATrustedAdvisorCheckRefreshStatus -CheckId @("checkid1", "checkid2")
 ```
 +  For API details, see [DescribeTrustedAdvisorCheckRefreshStatuses](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -185,7 +185,7 @@ pip install -r requirements.txt
 
 **Export indexes from MongoDB (if migrating from MongoDB)**
 
-```
+```python
 python3 migrationtools/documentdb_index_tool.py \
   --dump-indexes \
   --dir index_export \
@@ -194,7 +194,7 @@ python3 migrationtools/documentdb_index_tool.py \
 
 **Verify indexes**
 
-```
+```python
 python3 migrationtools/documentdb_index_tool.py \
   --show-issues \
   --dir index_export
@@ -202,7 +202,7 @@ python3 migrationtools/documentdb_index_tool.py \
 
 **Import indexes**
 
-```
+```python
 python3 migrationtools/documentdb_index_tool.py \
   --restore-indexes \
   --skip-incompatible \
@@ -478,7 +478,7 @@ Use [DMS Buddy](https://github.com/awslabs/amazon-documentdb-tools/tree/master/m
 
 1. Back at the top of the **Settings** section, for **Editing mode**, choose **JSON editor** and set the following attributes:
 
-   ```
+   ```json
    {
      "TargetMetadata": {
        "ParallelApplyThreads": 5
@@ -894,14 +894,14 @@ The following prerequisites must be met before installing the DataDiffer tool:
 
 **Clone the repository and navigate to the DataDiffer directory**
 
-```
+```python
 git clone https://github.com/awslabs/amazon-documentdb-tools.git
 cd amazon-documentdb-tools/migration/data-differ
 ```
 
 **Install required dependencies**
 
-```
+```python
 pip install -r requirements.txt
 ```
 
@@ -910,7 +910,7 @@ pip install -r requirements.txt
 
 **Create a configuration file (e.g., config.json) with connection details**
 
-```
+```json
 {
   "source": {
     "uri": "mongodb://<username>:<password>@<source_endpoint>:27017/?replicaSet=rs0",
@@ -933,19 +933,19 @@ pip install -r requirements.txt
 
 **Run the DataDiffer tool**
 
-```
+```python
 python differ.py --config config.json
 ```
 
 **For large collections, use sampling to validate a subset of data**
 
-```
+```python
 python differ.py --config config.json --sample-size 10000
 ```
 
 **To validate multiple collections, create separate configuration files or use the batch mode**
 
-```
+```python
 python differ.py --batch-config batch_config.json
 ```
 

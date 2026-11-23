@@ -27,7 +27,7 @@ Use the following procedure to obtain the reference identifier of the secret. Yo
 
 1. In the **Reference ID** column, copy the identifier of the secret. The following is the syntax for the **Reference ID**:
 
-   ```
+   ```yaml
    ${Secrets.{{<name>}}}
    ```
 
@@ -48,7 +48,7 @@ Use the following procedure to reference a secret in a workflow.
 
 1. Modify the YAML to use the identifier of the secret. For example, to use a user name and password that are stored as secrets with the `curl` command, you would use a `Run` command similar to the following:
 
-   ```
+   ```yaml
    - Run: curl -u {{<username-secret-identifier>}}:{{<password-secret-identifier>}} https://example.com
    ```
 

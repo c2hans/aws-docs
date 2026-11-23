@@ -178,7 +178,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-security-group-delete-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "SecurityGroupId": "sg-1234abcd",
   "DisassociatedResources": [
@@ -201,7 +201,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-security-group-delete-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "SecurityGroupId": "sg-1234abcd",
   "DisassociatedResources": [

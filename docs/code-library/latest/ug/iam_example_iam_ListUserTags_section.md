@@ -45,7 +45,7 @@ For more information, see [Tagging IAM resources](https://docs.aws.amazon.com/IA
 **Tools for PowerShell V4**
 **Example 1: This example fetches the tag associated with the user.**
 
-```
+```powershell
 Get-IAMUserTagList -UserName joe
 ```
 +  For API details, see [ListUserTags](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -53,7 +53,7 @@ Get-IAMUserTagList -UserName joe
 **Tools for PowerShell V5**
 **Example 1: This example fetches the tag associated with the user.**
 
-```
+```powershell
 Get-IAMUserTagList -UserName joe
 ```
 +  For API details, see [ListUserTags](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -54,7 +54,7 @@ The following examples use data from the USERS table in the TICKIT sample databa
 
 To search for the `@` character that begins a domain name and returns the starting position of the first match, use the following example.
 
-```
+```sql
 SELECT email, REGEXP_INSTR(email, '@[^.]*')
 FROM users
 ORDER BY userid LIMIT 4;
@@ -71,7 +71,7 @@ ORDER BY userid LIMIT 4;
 
 To search for variants of the word `Center` and returns the starting position of the first match, use the following example.
 
-```
+```sql
 SELECT venuename, REGEXP_INSTR(venuename,'[cC]ent(er|re)$')
 FROM venue
 WHERE REGEXP_INSTR(venuename,'[cC]ent(er|re)$') > 0
@@ -89,7 +89,7 @@ ORDER BY venueid LIMIT 4;
 
 To find the starting position of the first occurrence of the string `FOX`, using case-insensitive matching logic, use the following example.
 
-```
+```sql
 SELECT REGEXP_INSTR('the fox', 'FOX', 1, 1, 0, 'i');
 
 +--------------+
@@ -101,7 +101,7 @@ SELECT REGEXP_INSTR('the fox', 'FOX', 1, 1, 0, 'i');
 
 To use a pattern written in PCRE dialect to locate words containing at least one number and one lowercase letter, use the following example. It uses the `?=` operator, which has a specific look-ahead connotation in PCRE. This example finds the starting position of the second such word.
 
-```
+```sql
 SELECT REGEXP_INSTR('passwd7 plain A1234 a1234', '(?=[^ ]*[a-z])(?=[^ ]*[0-9])[^ ]+', 1, 2, 0, 'p');
 
 +--------------+
@@ -113,7 +113,7 @@ SELECT REGEXP_INSTR('passwd7 plain A1234 a1234', '(?=[^ ]*[a-z])(?=[^ ]*[0-9])[^
 
 To use a pattern written in PCRE dialect to locate words containing at least one number and one lowercase letter, use the following example. It uses the `?=` operator, which has a specific look-ahead connotation in PCRE. This example finds the starting position of the second such word, but differs from the previous example in that it uses case-insensitive matching.
 
-```
+```sql
 SELECT REGEXP_INSTR('passwd7 plain A1234 a1234', '(?=[^ ]*[a-z])(?=[^ ]*[0-9])[^ ]+', 1, 2, 0, 'ip');
 
 +--------------+

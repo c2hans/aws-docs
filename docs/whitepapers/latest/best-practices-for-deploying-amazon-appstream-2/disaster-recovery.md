@@ -23,7 +23,7 @@ When users login to WorkSpaces Applications from an Identity Provider (IdP), fol
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

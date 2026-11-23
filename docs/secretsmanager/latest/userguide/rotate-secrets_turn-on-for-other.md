@@ -116,7 +116,7 @@ The following policy allows Secrets Manager to invoke a Lambda function.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "default",

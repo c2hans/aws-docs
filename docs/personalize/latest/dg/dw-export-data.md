@@ -31,7 +31,7 @@ After you process your data, you are ready to import it into Amazon Personalize.
 1. Review the notebook cells that create the schema. Verify that the schema fields have the expected types and attributes before running the cell.
    +  Verify that fields that support null data have `null` listed in the list of types. The following example shows how to add `null` for a field.
 
-     ```
+     ```json
      {
        "name": "GENDER",
        "type": [
@@ -43,7 +43,7 @@ After you process your data, you are ready to import it into Amazon Personalize.
      ```
    +  Verify that categorical fields have the categorical attribute set to true. The following example shows how to mark a field categorical.
 
-     ```
+     ```json
      {
                "name": "SUBSCRIPTION_MODEL",
                "type": "string",
@@ -52,7 +52,7 @@ After you process your data, you are ready to import it into Amazon Personalize.
      ```
    + Verify that textual fields have the textual attribute set to true. The following example shows how to mark a field as textual.
 
-     ```
+     ```json
      {
            "name": "DESCRIPTION",
            "type": [

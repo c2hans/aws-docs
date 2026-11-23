@@ -97,7 +97,7 @@ Filter criteria for resource tags, allowing filtering by tag key and value combi
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RestartNeeded`  <a name="cfn-computeoptimizer-automationrule-criteria-restartneeded"></a>
-Filter criteria indicating whether the recommended action requires a resource restart.
+Filter criteria indicating whether the recommended action requires a resource restart. Valid values are `true` and `false`. Values are case-sensitive unless you use an `IgnoreCase` comparison operator. For example, `StringEquals` with the value `False` matches no recommended actions.
 *Required*: No
 *Type*: Array of [StringCriteriaCondition](aws-properties-computeoptimizer-automationrule-stringcriteriacondition.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

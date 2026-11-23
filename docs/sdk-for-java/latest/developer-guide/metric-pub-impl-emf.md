@@ -22,7 +22,7 @@ Include the artifactId `emf-metric-logging-publisher` with the version number `2
 
 For example:
 
-```
+```xml
 <project>
   <dependencyManagement>
    <dependencies>
@@ -54,7 +54,7 @@ Enable `logs:PutLogEvents` permissions for the IAM identity used by the metrics 
 
 To ensure proper metric collection, configure your logging to output to the console at the `INFO` level or lower (such as `DEBUG`). In your `log4j2.xml` file:
 
-```
+```xml
 <Loggers>
   <Root level="WARN">
    <AppenderRef ref="ConsoleAppender"/>
@@ -70,7 +70,7 @@ See the [logging topic](logging-slf4j.md) in this guide for more information on 
 
 The following Lambda function class first creates and configures an `EmfMetricLoggingPublisher` instance and then uses it with a Amazon DynamoDB service client:
 
-```
+```java
 public class GameIdHandler implements RequestHandler<Map<String, String>, String> {
     private final EmfMetricLoggingPublisher emfPublisher;
     private final DynamoDbClient dynamoDb;
@@ -124,7 +124,7 @@ After the function processes the event, you find two log events that look simila
 
 When CloudWatch receives a log event in EMF format, it automatically parses the structured JSON to extract metric data. CloudWatch then creates corresponding metrics while storing the original log entry in CloudWatch Logs.
 
-```
+```json
 2025-07-11 15:58:30 [main] INFO  org.example.GameIdHandler:39 - Received map: {id=23456}
 
 2025-07-11 15:58:34 [main] INFO  software.amazon.awssdk.metrics.publishers.emf.EmfMetricLoggingPublisher:43 -

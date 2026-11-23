@@ -37,7 +37,7 @@ The diagram reflects the following placement rules:
 | Component | Region placement |
 | --- | --- |
 | Farm, queues, fleets, jobs | A farm is a regional resource. Its queues, fleets, and jobs are all in one Region. A farm can't span Regions. To render in more than one Region, create a farm in each Region. |
-| Job attachments bucket | An Amazon S3 bucket in your AWS account that a queue uses for job attachments. Create it in the farm's Region so that transfers from service-managed fleet workers stay in the Region. |
+| Job attachments bucket | An Amazon S3 bucket in your AWS account that a queue uses for job attachments. The bucket must be in the farm's Region for a queue that uses a service-managed fleet. |
 | Service-managed fleet workers | Always run in the farm's Region. |
 | Customer-managed fleet | You create the fleet in the farm, and you run its workers on compute that you provide. Worker hosts run anywhere with network access to the Deadline Cloud endpoints in the farm's Region, including your own data center and Amazon Elastic Compute Cloud (Amazon EC2) instances in other Regions. For more information, see [Worker host data flow for customer-managed fleets](cmf-network.md). |
 | Submitters and the CLI | Run anywhere. Submitting a job needs only network access to the Deadline Cloud endpoint in the farm's Region. |
@@ -59,6 +59,19 @@ Rendering on a service-managed fleet runs inside the farm's Region, so the dista
 | Sign-in | Authentication requests travel to the IAM Identity Center Region during sign-in. | Distance adds time during sign-in. After sign-in, identity information is cached in the Region for most requests. |
 
 To evaluate a candidate Region, run a quick test before you commit to a layout: create a farm in that Region, submit a representative job from the location your users work from, browse the job in the monitor, and download its output.
+
+## How Region choice affects data transfer costs
+<a name="multi-region-data-transfer"></a>
+
+Most data transfer charges come from data that leaves a Region. That data includes job output that you download and input files that workers outside the farm's Region download. AWS doesn't charge for uploads into AWS. Transfers between Amazon S3 and service-managed fleet workers in the farm's Region also carry no data transfer charge.
+
+To choose a Region that keeps data transfer costs low, consider the following guidelines:
++ Create the farm in the Region where your assets are already stored in Amazon S3.
++ Estimate how much output your team downloads each month, and how much input your customer-managed fleet workers outside AWS download. Data transfer out rates are tiered and differ between Regions. Compare them on the [Amazon S3 pricing](https://aws.amazon.com/s3/pricing/) page.
++ Compare service-managed fleet rates along with data transfer, because they can also differ between Regions. For more information, see [AWS Deadline Cloud pricing](https://aws.amazon.com/deadline-cloud/pricing/).
++ Run customer-managed fleet workers on Amazon EC2 instances in the farm's Region. For on-premises workers, read assets from shared storage on your network instead of downloading them from Amazon S3.
+
+For more information about which transfers are charged and other ways to reduce data transfer costs, see [Data transfer costs](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/cost-management.html#costs-data-transfer) in the *Deadline Cloud User Guide*.
 
 ## Choose a deployment
 <a name="multi-region-choose"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 
 The stream processing stack accepts an email address and subscribes it for you. Set it before deploying:
 
-```
+```bash
 export FLINK_ALARM_EMAIL=oncall@example.com
 ```
 
@@ -14,7 +14,7 @@ The address is read at synthesis time and subscribed to the Flink alarms topic. 
 
 The simulation, manifest and security operators topics have no equivalent and must be subscribed after deploying. List the topics and subscribe each one:
 
-```
+```bash
 aws sns list-topics \
   --query "Topics[?contains(TopicArn, 'cms-<stage>')].TopicArn" \
   --output text

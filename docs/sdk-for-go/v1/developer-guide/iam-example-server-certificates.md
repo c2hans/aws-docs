@@ -33,7 +33,7 @@ This code lists your certificates. Create a new Go file named `iam_listservercer
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "fmt"
 
@@ -45,7 +45,7 @@ import (
 
 Set up the session and IAM client.
 
-```
+```go
 func main() {
     // Initialize a session in us-west-2 that the SDK will use to load
     // credentials from the shared credentials file ~/.aws/credentials.
@@ -59,7 +59,7 @@ func main() {
 
 Call `ListServerCertificates` and print the details.
 
-```
+```go
     result, err := svc.ListServerCertificates(nil)
     if err != nil {
         fmt.Println("Error", err)
@@ -84,7 +84,7 @@ In this example, you retrieve an existing server certificate.
 
 Create a new Go file named `iam_getservercert.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -98,7 +98,7 @@ import (
 
 Set up a new IAM client.
 
-```
+```go
 func main() {
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
@@ -110,7 +110,7 @@ func main() {
 
 Call `GetServerCertificate`, passing the name of the certificate, and print the results.
 
-```
+```go
     result, err := svc.GetServerCertificate(&iam.GetServerCertificateInput{
         ServerCertificateName: aws.String("CERTIFICATE_NAME"),
     })
@@ -134,7 +134,7 @@ Create a new Go file named `iam_updateservercert.go`. You call the `UpdateServer
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -148,7 +148,7 @@ import (
 
 Set up a new IAM client.
 
-```
+```go
 func main() {
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
@@ -160,7 +160,7 @@ func main() {
 
 Update the certificate name.
 
-```
+```go
     _, err = svc.UpdateServerCertificate(&iam.UpdateServerCertificateInput{
         ServerCertificateName:    aws.String("CERTIFICATE_NAME"),
         NewServerCertificateName: aws.String("NEW_CERTIFICATE_NAME"),
@@ -185,7 +185,7 @@ Create a new Go file named `iam_deleteservercert.go`. You call the `DeleteServer
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -199,7 +199,7 @@ import (
 
 Set up a new IAM client.
 
-```
+```go
 func main() {
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
@@ -211,7 +211,7 @@ func main() {
 
 Call the method to delete the certificate, specifying the name of certificate.
 
-```
+```go
     _, err = svc.DeleteServerCertificate(&iam.DeleteServerCertificateInput{
         ServerCertificateName: aws.String("CERTIFICATE_NAME"),
     })

@@ -45,7 +45,7 @@ The byte counts advance as whole parts complete, so a snapshot taken mid-transfe
 
 To cancel a transfer, call `abort().await` on the handle. It stops the transfer and waits for its cleanup to finish. For an upload, if a multipart upload was started, it sends `AbortMultipartUpload` to Amazon S3 to remove the incomplete parts. It returns an `AbortedUpload` that reports whether the object was canceled or had already been stored, and the open upload ID if a multipart upload was left in place:
 
-```
+```rust
 use aws_s3_transfer::io::InputStream;
 use aws_s3_transfer::types::AbortOutcome;
 use aws_s3_transfer::Client;
@@ -96,7 +96,7 @@ When an upload fails but leaves a multipart upload open in Amazon S3, the error'
 
 The error's own display text carries limited local detail, so for a filesystem failure you have two options to reach the operating system message: wrap the error in `DisplayErrorContext` from the `aws-smithy-types` crate, or walk the error's source chain yourself with `std::error::Error::source`. Add the crate with `cargo add aws-smithy-types`:
 
-```
+```rust
 use aws_s3_transfer::error::{Error, ErrorKind};
 use aws_smithy_types::error::display::DisplayErrorContext;
 
@@ -134,7 +134,7 @@ fn handle_transfer_error(err: Error) {
 
 The transfer manager buffers object parts in a shared memory pool. Call `metrics()` on the client and then `memory()` to read the pool's current accounting, such as the configured capacity and how much is in use:
 
-```
+```rust
 use aws_s3_transfer::Client;
 
 async fn print_memory_usage(client: &Client) -> Result<(), Box<dyn std::error::Error>> {
@@ -158,7 +158,7 @@ By default, the transfer manager runs transfers on its own managed runtime. That
 
 To wait for the runtime's background threads to stop, call `shutdown_completion()` on the client before you release it. This returns an observer, or `None` if you run transfers on your own Tokio runtime instead of the managed one. Waiting does not request shutdown, so release every clone and handle, and the client itself, first:
 
-```
+```rust
 async fn shut_down_client(
     client: aws_s3_transfer::Client,
 ) -> Result<(), Box<dyn std::error::Error>> {
@@ -184,7 +184,7 @@ Don't await `wait()` while a client clone or a transfer handle is still alive. A
 
 When several transfers share one client, you can bias the scheduler toward the ones that matter most. Call `scheduling()` on a handle to get its scheduling controls, and change the transfer's priority while it runs, for example to boost a background download once a user is waiting on it:
 
-```
+```rust
 use aws_s3_transfer::Client;
 
 async fn prioritize_transfer(client: &Client) -> Result<(), Box<dyn std::error::Error>> {

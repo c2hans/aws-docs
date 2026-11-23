@@ -16,7 +16,7 @@ To determine whether RFT is a good fit for your use case, see [Reinforcement fin
 ## Sample RFT recipe
 <a name="nova-rft-2-sample-recipe"></a>
 
-```
+```yaml
 # Note:
 # This recipe can run on p5.48xlarge, p5e.48xlarge, and p5en.48xlarge instance types.
 run:

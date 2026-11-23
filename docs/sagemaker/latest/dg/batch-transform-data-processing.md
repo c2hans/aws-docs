@@ -113,7 +113,7 @@ sm_transformer.transform(…, join_source="Input", split_type="Line", content_ty
 
 If you're using the AWS SDK for Python (Boto 3), join all input data with the inference by adding the following code to your [`CreateTransformJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTransformJob.html) request. The values for `Accept` and `ContentType` must match, and the values for `AssembleWith` and `SplitType` must also match.
 
-```
+```json
 {
     "DataProcessing": {
         "JoinSource": "Input"

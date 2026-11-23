@@ -20,7 +20,7 @@ Python 3 with the `venv` module is required only for the functional and load tes
 
 If you are using the AWS CDK for the first time in the target account and Region, bootstrap it from the `source/infrastructure` directory after you run `npm ci`:
 
-```
+```bash
 npx cdk bootstrap --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess
 ```
 

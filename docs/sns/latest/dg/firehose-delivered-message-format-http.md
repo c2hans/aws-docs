@@ -9,7 +9,7 @@ Here’s an example of an HTTP POST request body from Amazon SNS, sent through a
 **Note**
 In this example, raw message delivery is disabled for the published message. For more information about raw delivery, see [Amazon SNS raw message delivery](sns-large-payload-raw-message-delivery.md).
 
-```
+```json
 "body": {
     "requestId": "ebc9e8b2-fce3-4aef-a8f1-71698bf8175f",
     "timestamp": 1606255960435,

@@ -37,7 +37,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 Run an interactive scenario demonstrating the CloudWatch OpenTelemetry experience.
 
-```
+```javascript
 import {
   Scenario,
   ScenarioAction,
@@ -654,7 +654,7 @@ The following code example shows how to use `DeleteAlarmMuteRule`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 
-```
+```javascript
 import { DeleteAlarmMuteRuleCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -684,7 +684,7 @@ The following code example shows how to use `DeleteAlarms`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { DeleteAlarmsCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -704,7 +704,7 @@ export default run();
 ```
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { CloudWatchClient } from "@aws-sdk/client-cloudwatch";
 
 export const client = new CloudWatchClient({});
@@ -720,7 +720,7 @@ The following code example shows how to use `DescribeAlarmContributors`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 
-```
+```javascript
 import { DescribeAlarmContributorsCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -768,7 +768,7 @@ The following code example shows how to use `DescribeAlarmsForMetric`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { DescribeAlarmsCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -788,7 +788,7 @@ export default run();
 ```
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { CloudWatchClient } from "@aws-sdk/client-cloudwatch";
 
 export const client = new CloudWatchClient({});
@@ -805,7 +805,7 @@ The following code example shows how to use `DisableAlarmActions`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { DisableAlarmActionsCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -825,7 +825,7 @@ export default run();
 ```
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { CloudWatchClient } from "@aws-sdk/client-cloudwatch";
 
 export const client = new CloudWatchClient({});
@@ -842,7 +842,7 @@ The following code example shows how to use `EnableAlarmActions`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { EnableAlarmActionsCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -862,7 +862,7 @@ export default run();
 ```
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { CloudWatchClient } from "@aws-sdk/client-cloudwatch";
 
 export const client = new CloudWatchClient({});
@@ -878,7 +878,7 @@ The following code example shows how to use `GetAlarmMuteRule`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 
-```
+```javascript
 import { GetAlarmMuteRuleCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -910,7 +910,7 @@ The following code example shows how to use `GetOTelEnrichment`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 
-```
+```javascript
 import { GetOTelEnrichmentCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -940,7 +940,7 @@ The following code example shows how to use `ListAlarmMuteRules`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 
-```
+```javascript
 import { ListAlarmMuteRulesCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -984,7 +984,7 @@ The following code example shows how to use `ListMetrics`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import {
   CloudWatchServiceException,
   ListMetricsCommand,
@@ -1019,7 +1019,7 @@ export const main = async () => {
 ```
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { CloudWatchClient } from "@aws-sdk/client-cloudwatch";
 
 export const client = new CloudWatchClient({});
@@ -1035,7 +1035,7 @@ The following code example shows how to use `PutAlarmMuteRule`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 
-```
+```javascript
 import { PutAlarmMuteRuleCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -1088,7 +1088,7 @@ The following code example shows how to use `PutMetricAlarm`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 
-```
+```javascript
 import { PutMetricAlarmCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -1135,7 +1135,7 @@ export default run();
 ```
 Create an alarm that evaluates a single CloudWatch metric.
 
-```
+```javascript
 import { PutMetricAlarmCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -1172,7 +1172,7 @@ export default run();
 ```
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { CloudWatchClient } from "@aws-sdk/client-cloudwatch";
 
 export const client = new CloudWatchClient({});
@@ -1189,7 +1189,7 @@ The following code example shows how to use `PutMetricData`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { PutMetricDataCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -1225,7 +1225,7 @@ export default run();
 ```
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { CloudWatchClient } from "@aws-sdk/client-cloudwatch";
 
 export const client = new CloudWatchClient({});
@@ -1241,7 +1241,7 @@ The following code example shows how to use `StartOTelEnrichment`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 
-```
+```javascript
 import { StartOTelEnrichmentCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -1274,7 +1274,7 @@ The following code example shows how to use `StopOTelEnrichment`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 
-```
+```javascript
 import { StopOTelEnrichmentCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 

@@ -10,7 +10,7 @@ In this section, you publish the Hello World component to the AWS IoT Greengrass
 
 1. Run the following command to build the component using the GDK CLI. The [component build command](greengrass-development-kit-cli-component.md#greengrass-development-kit-cli-component-build) creates a recipe and artifacts based on the GDK CLI configuration file. In this process, the GDK CLI creates a ZIP file that contains the component's source code.
 
-   ```
+   ```bash
    gdk component build
    ```
 
@@ -30,7 +30,7 @@ In this section, you publish the Hello World component to the AWS IoT Greengrass
 
 1. Run the following command to publish the component to the AWS IoT Greengrass cloud service. The [component publish command](greengrass-development-kit-cli-component.md#greengrass-development-kit-cli-component-publish) uploads the component's ZIP file artifact to an S3 bucket. Then, it updates the ZIP file's S3 URI in the component recipe and uploads the recipe to the AWS IoT Greengrass service. In this process, the GDK CLI checks what version of the Hello World component is already available in the AWS IoT Greengrass cloud service, so it can choose the next patch version after that version. If the component doesn't exist yet, the GDK CLI uses version `1.0.0`.
 
-   ```
+   ```bash
    gdk component publish
    ```
 
@@ -77,7 +77,7 @@ In this section, you publish the Hello World component to the AWS IoT Greengrass
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

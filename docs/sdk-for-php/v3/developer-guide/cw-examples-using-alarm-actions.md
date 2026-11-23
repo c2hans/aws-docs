@@ -22,7 +22,7 @@ Before running the example code, configure your AWS credentials, as described in
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\CloudWatch\CloudWatchClient;
@@ -31,7 +31,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function enableAlarmActions($cloudWatchClient, $alarmNames)
 {
     try {
@@ -74,7 +74,7 @@ function enableTheAlarmActions()
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\CloudWatch\CloudWatchClient;
@@ -83,7 +83,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function disableAlarmActions($cloudWatchClient, $alarmNames)
 {
     try {

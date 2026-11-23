@@ -21,7 +21,7 @@ When you create a payment instrument with the Coinbase CDP connector, the `Creat
 
 The `redirectUrl` from the `CreatePaymentInstrument` response opens the Coinbase WalletHub, where the end user can fund the wallet and grant signing permissions to the agent.
 
-```
+```python
 instrument = dp_client.create_payment_instrument(
     userId="test-user-123",
     paymentManagerArn=PAYMENT_MANAGER_ARN,
@@ -84,14 +84,14 @@ If you need a customizable UI instead of the hosted WalletHub, deploy the [Coinb
 
 1. Clone the repository:
 
-   ```
+   ```bash
    git clone https://github.com/coinbase/cdp-agentcore-template.git
    cd cdp-agentcore-template
    ```
 
 1. Create a `.env.local` file with your CDP credentials:
 
-   ```
+   ```bash
    NEXT_PUBLIC_CDP_PROJECT_ID=<YOUR_CDP_PROJECT_ID>
    CDP_API_KEY_ID=<YOUR_CDP_API_KEY_ID>
    CDP_API_KEY_SECRET=<YOUR_CDP_API_KEY_SECRET>
@@ -101,7 +101,7 @@ If you need a customizable UI instead of the hosted WalletHub, deploy the [Coinb
 
 1. Install dependencies and start the application:
 
-   ```
+   ```bash
    npm install
    npm run dev
    ```
@@ -124,14 +124,14 @@ The [Privy AgentCore SDK on GitHub](https://github.com/privy-io/aws-agentcore-sd
 
 1. Clone the repository:
 
-   ```
+   ```bash
    git clone https://github.com/privy-io/aws-agentcore-sdk.git
    cd aws-agentcore-sdk
    ```
 
 1. Create a `.env.local` file with your Privy credentials:
 
-   ```
+   ```bash
    NEXT_PUBLIC_PRIVY_APP_ID=<YOUR_PRIVY_APP_ID>
    PRIVY_APP_SECRET=<YOUR_PRIVY_APP_SECRET>
    NEXT_PUBLIC_PRIVY_SIGNER_ID=<YOUR_PRIVY_AUTHORIZATION_ID>
@@ -142,7 +142,7 @@ The [Privy AgentCore SDK on GitHub](https://github.com/privy-io/aws-agentcore-sd
 
 1. Install dependencies and start the application:
 
-   ```
+   ```bash
    pnpm install
    pnpm dev
    ```

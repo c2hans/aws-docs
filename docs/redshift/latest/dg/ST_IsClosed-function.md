@@ -41,7 +41,7 @@ If *geom* is null, then null is returned.
 
 The following SQL checks if the polygon is closed.
 
-```
+```sql
 SELECT ST_IsClosed(ST_GeomFromText('POLYGON((0 2,1 1,0 -1,0 2))'));
 ```
 

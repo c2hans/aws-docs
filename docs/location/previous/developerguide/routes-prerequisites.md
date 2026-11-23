@@ -57,7 +57,7 @@ Use the `[CreateRouteCalculator](https://docs.aws.amazon.com/location/previous/A
 
 The following example is an API request to create a route calculator resource called {{ExampleCalculator}} using the data provider {{Esri}}.
 
-```
+```json
 POST /routes/v0/calculators
 Content-type: application/json
 

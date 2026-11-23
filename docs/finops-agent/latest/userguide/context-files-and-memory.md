@@ -15,7 +15,7 @@ Context files let the agent answer using your organization's terms. Upload an ac
 
 Start with an account-to-team mapping. This is the most useful context file to upload first, because it lets the agent attribute cost to the team that owns each account.
 
-```
+```csv
 account_id,team_name,team_lead,email
 123456789012,Data Platform,Jane Smith,jsmith@example.com
 234567890123,ML Training,Alex Chen,achen@example.com

@@ -31,7 +31,7 @@ Also make sure that the VPC has DNS hostnames turned on. For more information on
 
 To achieve low overhead latency, create a SageMaker AI endpoint using the same subnets that you specified when deploying AWS PrivateLink. These subnets should match the AZs of your client application, as shown in the following code snippet.
 
-```
+```py
 model_name = {{'<the-name-of-your-model>'}}
 
 vpc = {{'vpc-0123456789abcdef0'}}
@@ -60,7 +60,7 @@ The aforementioned code snippet assumes that you have followed the steps in [Bef
 
 Finally, specify the SageMaker Runtime client and invoke the SageMaker AI endpoint as shown in the following code snippet.
 
-```
+```py
 endpoint_name = {{'<endpoint-name>'}}
 
 runtime_client = boto3.client('sagemaker-runtime')

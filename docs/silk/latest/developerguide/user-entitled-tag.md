@@ -32,7 +32,7 @@ By following these guidelines, website publishers can ensure that Silk accuratel
 
 When a page is behind a paywall because the current user does not have a subscription, include the tag with `content="false"`:
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -48,7 +48,7 @@ When a page is behind a paywall because the current user does not have a subscri
 
 When a page is not behind a paywall because the user has a subscription, you can include the tag with `content="true"` or omit the tag altogether:
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>

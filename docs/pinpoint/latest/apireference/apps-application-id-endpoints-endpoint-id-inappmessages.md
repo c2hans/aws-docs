@@ -76,7 +76,7 @@ Retrieves information about the communication requirements and options that are 
 #### InAppMessagesResponse schema
 <a name="apps-application-id-endpoints-endpoint-id-inappmessages-response-body-inappmessagesresponse-example"></a>
 
-```
+```json
 {
   "InAppMessageCampaigns": [
     {
@@ -181,7 +181,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-endpoints-endpoint-id-inappmessages-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

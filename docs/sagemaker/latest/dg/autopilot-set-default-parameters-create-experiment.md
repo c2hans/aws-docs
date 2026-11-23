@@ -34,7 +34,7 @@ Administrators can set default values in a configuration file, then manually pla
 
   To configure any or all default values listed in [List of default parameters supported](#autopilot-list-default-parameters-create-experiment), administrators can create a configuration file named `config.yaml`, the structure of which should adhere to this [sample configuration file](https://sagemaker.readthedocs.io/en/stable/). The following snippet shows a sample configuration file with all the supported `AutoML` parameters. For more information on the format of this file, refer to the [full schema](https://github.com/aws/sagemaker-python-sdk/blob/master/src/sagemaker/config/config_schema.py).
 
-  ```
+  ```YAML
   SchemaVersion: '1.0'
   SageMaker:
     AutoMLJob:
@@ -67,7 +67,7 @@ Administrators can set default values in a configuration file, then manually pla
 
   The following snippet shows a sample script which writes the default parameters configuration file to the *administrator* location in the user's Studio Classic environment. You can replace `/etc/xdg/sagemaker` with `/root/.config/sagemaker` to write the file to the *user* location.
 
-  ```
+  ```YAML
   ## Sample script with AutoML intelligent defaults
   #!/bin/bash
 
@@ -133,7 +133,7 @@ Administrators can set default values in a configuration file, then manually pla
     You can now follow these three steps:
     +  **Create a new lifecycle configuration referencing the configuration script `lifecycle_config.sh`**
 
-      ```
+      ```YAML
       LCC_CONTENT=`openssl base64 -A -in {{lifecycle_config.sh}}`
 
       ## Create a new lifecycle config
@@ -148,7 +148,7 @@ Administrators can set default values in a configuration file, then manually pla
 
       The following example shows how to create a new user profile with a lifecycle configuration attached. To update an existing user profile, use the AWS CLI [update-user-profile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/update-user-profile.html) command. To create or update a domain, see [create-domain](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/create-domain.html) and [update-domain](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/update-domain.html). Add the lifecycle configuration ARN from the previous step to the settings of the `JupyterServerAppSettings` application type. You can add multiple lifecycle configurations at the same time by using a list of lifecycle configurations.
 
-      ```
+      ```YAML
       # Create a new UserProfile
       aws sagemaker create-user-profile --domain-id {{domain-id}} \
       --user-profile-name {{user-profile-name}} \
@@ -164,7 +164,7 @@ Administrators can set default values in a configuration file, then manually pla
       Once the LCC is attached to a domain or a user profile, impacted users can shut down and update their existing Studio Classic application by following the steps in [Shut down and Update Amazon SageMaker Studio Classic](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-tasks-update-studio.html), or start a new Studio Classic application from the AWS Console to pick up the defaults set by the LCC automatically. This auto-populates the Studio Classic UI when creating an Autopilot experiment. Alternatively, they can launch a new Studio Classic application using the AWS CLI as follows.
     +  **Launch your Studio Classic application with the lifecycle configuration using the AWS CLI**
 
-      ```
+      ```YAML
       # Create a Jupyter Server application
       aws sagemaker create-app --domain-id {{domain-id}} \
       --user-profile-name {{user-profile-name}} \

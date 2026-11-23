@@ -44,7 +44,7 @@ When you create an Argo CD capability resource, you provide an IAM Capability Ro
 
 If you’re using CodeCommit repositories, attach a policy with read permissions:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -63,7 +63,7 @@ If you’re using CodeCommit repositories, attach a policy with read permissions
 For production use, restrict the `Resource` field to specific repository ARNs instead of using `"*"`.
 Example:
 
-```
+```json
 "Resource": "arn:aws:codecommit:us-west-2:111122223333:my-app-repo"
 ```
 This limits the Argo CD capability’s access to only the repositories it needs to manage.
@@ -73,7 +73,7 @@ This limits the Argo CD capability’s access to only the repositories it needs 
 
 If you’re storing repository credentials in Secrets Manager, attach the managed policy for read access:
 
-```
+```text
 arn:aws:iam::aws:policy/AWSSecretsManagerClientReadOnlyAccess
 ```
 
@@ -165,7 +165,7 @@ Register clusters using Kubernetes Secrets in the `argocd` namespace.
 
 Get the target cluster ARN. Replace {{region-code}} with the AWS Region that your target cluster is in and replace {{target-cluster}} with the name of your target cluster.
 
-```
+```bash
 aws eks describe-cluster \
   --region {{region-code}} \
   --name {{target-cluster}} \
@@ -175,7 +175,7 @@ aws eks describe-cluster \
 
 Create a cluster secret using the cluster ARN:
 
-```
+```yaml
 apiVersion: v1
 kind: Secret
 metadata:
@@ -195,7 +195,7 @@ Use the EKS cluster ARN in the `server` field, not the Kubernetes API server URL
 
 Apply the secret:
 
-```
+```bash
 kubectl apply -f cluster-secret.yaml
 ```
 
@@ -204,7 +204,7 @@ kubectl apply -f cluster-secret.yaml
 
 The target cluster must have an Access Entry that grants the Argo CD capability role permission to deploy applications. Replace {{region-code}} with the AWS Region that your target cluster is in, replace {{target-cluster}} with the name of your target cluster, and replace the ARN with your Argo CD capability role ARN.
 
-```
+```bash
 aws eks create-access-entry \
   --region {{region-code}} \
   --cluster-name {{target-cluster}} \
@@ -303,7 +303,7 @@ The capability serves two webhook receivers on your Argo CD server URL: one refr
 
 For example, if your Argo CD server URL is `https://my-argocd-dc855fdf-111122223333.eks-capabilities.us-west-2.amazonaws.com`, the webhook URLs are:
 
-```
+```text
 https://my-argocd-dc855fdf-111122223333.eks-capabilities.us-west-2.amazonaws.com/api/webhook
 https://my-argocd-dc855fdf-111122223333.eks-capabilities.us-west-2.amazonaws.com/api/applicationset/webhook
 ```
@@ -318,7 +318,7 @@ The ApplicationSet path differs from upstream Argo CD. Upstream serves both rece
 
 To have Argo CD verify that a payload came from your Git provider, store a shared secret in the `argocd-webhook-creds-secret` Secret in your Argo CD namespace, and configure the same value in your Git provider. Both webhook receivers read this Secret, so one value covers Applications and ApplicationSet generators.
 
-```
+```yaml
 apiVersion: v1
 kind: Secret
 metadata:

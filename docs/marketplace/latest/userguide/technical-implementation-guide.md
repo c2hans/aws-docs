@@ -23,7 +23,7 @@ Use the following IAM permissions policy to enroll in the AWS Marketplace Commer
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -51,7 +51,7 @@ Use the following IAM permissions policy to allow an user to make requests to th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

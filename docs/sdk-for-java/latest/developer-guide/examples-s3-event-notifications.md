@@ -23,7 +23,7 @@ The last section shows you how to use the S3 Event Notifications API to work wit
 
 The following example configures a bucket to send notifications when *object create* events or *object tagging* events occur against a bucket.
 
-```
+```java
 static void processS3Events(String bucketName, String queueArn) {
     // Configure the bucket to send Object Created and Object Tagging notifications to an existing SQS queue.
     s3Client.putBucketNotificationConfiguration(b -> b
@@ -38,7 +38,7 @@ static void processS3Events(String bucketName, String queueArn) {
 
 The code shown above sets up one queue to receive two types of events. Conveniently, the `queueConfigurations` method allows you to set multiple queue destinations if needed. Also, in the `notificationConfiguration` method you can set additional destinations, such as one or more Amazon SNS topics or one or more Lambda functions. The following snippet shows an example with two queues and three types of destinations.
 
-```
+```java
 s3Client.putBucketNotificationConfiguration(b -> b
                 .notificationConfiguration(ncb -> ncb
                         .queueConfigurations(qcb -> qcb
@@ -58,7 +58,7 @@ The Code Examples GitHub repository contains the [complete example](https://gith
 
 The following example configures a bucket to send notifications to EventBridge.
 
-```
+```java
 public static String setBucketNotificationToEventBridge(String bucketName) {
     // Enable bucket to emit S3 Event notifications to EventBridge.
     s3Client.putBucketNotificationConfiguration(b -> b
@@ -72,7 +72,7 @@ When you configure a bucket to send events to EventBridge, you simply indicate t
 
 The following code shows how to configure EventBridge to fan out *object created* events to a topic and a queue.
 
-```
+```java
    public static String configureEventBridge(String topicArn, String queueArn) {
         try {
             // Create an EventBridge rule to route Object Created notifications.
@@ -127,7 +127,7 @@ The following code shows how to configure EventBridge to fan out *object created
 
 To work with EventBridge in your Java code, add a dependency on the `eventbridge` artifact to your Maven `pom.xml` file.
 
-```
+```xml
 <dependency>
     <groupId>software.amazon.awssdk</groupId>
     <artifactId>eventbridge</artifactId>
@@ -148,7 +148,7 @@ The S3 Event Notifications API was released with version 2.25.11 of the SDK for 
 
 To use the S3 Event Notifications API, add the required dependency element to your Maven `pom.xml` as shown in the following snippet.
 
-```
+```xml
 <dependencyManagement>
     <dependencies>
         <dependency>
@@ -178,7 +178,7 @@ To use the S3 Event Notifications API, add the required dependency element to yo
 
 To convert a JSON string into an `S3EventNotification` object, use the static methods of the `S3EventNotification` class as shown in the following example.
 
-```
+```java
 import software.amazon.awssdk.eventnotifications.s3.model.S3EventNotification
 import software.amazon.awssdk.eventnotifications.s3.model.S3EventNotificationRecord
 import software.amazon.awssdk.services.sqs.model.Message;
@@ -212,7 +212,7 @@ Other APIs for an event notification record can be found in API reference for `[
 
 Use the `toJson` (or `toJsonPretty`) method to convert an `S3EventNotification` object into a JSON string as shown in the following example.
 
-```
+```java
 import software.amazon.awssdk.eventnotifications.s3.model.S3EventNotification
 
 public class S3EventNotificationExample {
@@ -233,7 +233,7 @@ Fields for `GlacierEventData`, `ReplicationEventData`, `IntelligentTieringEventD
 
 The following shows example output of the `toJsonPretty` method for an S3 object tagging event.
 
-```
+```json
 {
   "Records" : [ {
     "eventVersion" : "2.3",

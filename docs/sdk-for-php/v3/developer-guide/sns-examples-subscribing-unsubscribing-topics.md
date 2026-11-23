@@ -35,7 +35,7 @@ In this example, the endpoint is an email address. A confirmation token is sent 
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -44,7 +44,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -80,7 +80,7 @@ In this example, the endpoint is a URL. A confirmation token is sent to this web
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -89,7 +89,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -125,7 +125,7 @@ In this example, the endpoint is a Lambda function. A confirmation token is sent
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -134,7 +134,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -176,7 +176,7 @@ For an alternative way to send SMS messages with Amazon SNS, see [Sending SMS Me
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -185,7 +185,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -219,7 +219,7 @@ To confirm a subscription, use the [ConfirmSubscription](https://docs.aws.amazon
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -228,7 +228,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -257,7 +257,7 @@ To list up to 100 existing subscriptions in a given AWS Region, use the [ListSub
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -266,7 +266,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -291,7 +291,7 @@ If the subscription requires authentication for deletion, only the owner of the 
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -300,7 +300,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -329,7 +329,7 @@ Create an object that contains the parameters for publishing a message, includin
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -338,7 +338,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',

@@ -183,7 +183,7 @@ The dates are optional. If you set the release status to **Deprecated**, the dep
 **To set the lifecycle for a new runtime (AWS CLI)**
 + To set the lifecycle when you create a runtime, run the `create-runtime` command with the `--release-lifecycle` option. The following example creates a runtime named `companyphp8` in the `PREVIEW` state.
 
-  ```
+  ```bash
   aws lambda-core create-runtime \
     --name {{companyphp8}} \
     --description "{{PHP 8 runtime for Example Corp}}" \
@@ -194,7 +194,7 @@ The dates are optional. If you set the release status to **Deprecated**, the dep
 **To set or change the lifecycle for an existing runtime (AWS CLI)**
 + To set or change the lifecycle of an existing runtime, run the `update-runtime` command with the `--release-lifecycle` option. You can use shorthand syntax or JSON. The following example makes the `companyphp8` runtime generally available and sets its deprecation and block dates.
 
-  ```
+  ```bash
   aws lambda-core update-runtime \
     --runtime-name {{companyphp8}} \
     --release-lifecycle '{"ReleaseState":"GA","DeprecationDate":"2027-06-30","FunctionCreateBlockDate":"2027-06-30","FunctionUpdateBlockDate":"2027-09-30"}' \
@@ -203,7 +203,7 @@ The dates are optional. If you set the release status to **Deprecated**, the dep
 
   You should see output similar to the following:
 
-  ```
+  ```json
   {
       "Arn": "arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8",
       "Name": "companyphp8",
@@ -221,7 +221,7 @@ The dates are optional. If you set the release status to **Deprecated**, the dep
 
   The `update-runtime` command replaces the runtime's stored lifecycle with the lifecycle in your request. To change only one property, specify the complete lifecycle, including the values that you want to keep. The following example moves the function update block date and keeps the other values from the previous example.
 
-  ```
+  ```bash
   aws lambda-core update-runtime \
     --runtime-name {{companyphp8}} \
     --release-lifecycle '{"ReleaseState":"GA","DeprecationDate":"2027-06-30","FunctionCreateBlockDate":"2027-06-30","FunctionUpdateBlockDate":"{{2027-12-31}}"}' \
@@ -257,7 +257,7 @@ The dates are optional. If you set the release status to **Deprecated**, the dep
 
   The following example sets the lifecycle of the `al2` alias of the `java8` runtime. The alias keeps runtime version `2026-09-15.1`. If the alias already has a lifecycle, the lifecycle in this request replaces it.
 
-  ```
+  ```bash
   aws lambda-core update-runtime-alias \
     --runtime-name {{java8}} \
     --name {{al2}} \
@@ -281,7 +281,7 @@ If the runtime is in another account, you can't view it in the Lambda console. U
 
 1. To view the lifecycle that applies to an alias, run the `get-runtime-alias` command. The following example gets the `al2023` alias of the `java8` runtime. This alias doesn't have its own lifecycle, so the response shows the runtime-level lifecycle.
 
-   ```
+   ```bash
    aws lambda-core get-runtime-alias \
      --runtime-name {{java8}} \
      --name {{al2023}} \
@@ -290,7 +290,7 @@ If the runtime is in another account, you can't view it in the Lambda console. U
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "Name": "al2023",
        "Arn": "arn:aws:lambda:us-east-1:123456789012:runtime/java8/alias/al2023",
@@ -314,7 +314,7 @@ If the runtime is in another account, you can't view it in the Lambda console. U
 
 1. (Optional) To view the lifecycle of every alias of a runtime, run the `list-runtime-aliases` command. Consumers in other accounts can specify the runtime ARN instead of the runtime name.
 
-   ```
+   ```bash
    aws lambda-core list-runtime-aliases \
      --runtime-name {{arn:aws:lambda:us-east-1:123456789012:runtime/java8}} \
      --region us-east-1
@@ -322,7 +322,7 @@ If the runtime is in another account, you can't view it in the Lambda console. U
 
 1. (Optional) To view the runtime-level lifecycle, run the `get-runtime` command.
 
-   ```
+   ```bash
    aws lambda-core get-runtime \
      --runtime-name {{java8}} \
      --region us-east-1
@@ -337,7 +337,7 @@ In this example, you're the publisher of the `java8` runtime. You want to retire
 
 1. To confirm that the successor alias is ready, run the `get-runtime-alias` command for `al2023`. Check that its `State` is `ACTIVE`.
 
-   ```
+   ```bash
    aws lambda-core get-runtime-alias \
      --runtime-name {{java8}} \
      --name {{al2023}} \
@@ -346,7 +346,7 @@ In this example, you're the publisher of the `java8` runtime. You want to retire
 
 1. To find the runtime version that `al2` uses, run the `get-runtime-alias` command for `al2`. Note the `RuntimeVersion` value in the response, such as `2026-09-15.1`.
 
-   ```
+   ```bash
    aws lambda-core get-runtime-alias \
      --runtime-name {{java8}} \
      --name {{al2}} \
@@ -355,7 +355,7 @@ In this example, you're the publisher of the `java8` runtime. You want to retire
 
 1. To set the alias lifecycle, run the `update-runtime-alias` command. Specify the current runtime version so that the alias doesn't move to a different version.
 
-   ```
+   ```bash
    aws lambda-core update-runtime-alias \
      --runtime-name {{java8}} \
      --name {{al2}} \
@@ -367,7 +367,7 @@ In this example, you're the publisher of the `java8` runtime. You want to retire
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "Name": "al2",
        "Arn": "arn:aws:lambda:us-east-1:123456789012:runtime/java8/alias/al2",

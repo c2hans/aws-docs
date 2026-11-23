@@ -29,26 +29,26 @@ These steps show how to generate a serving certificate for DNS name `myserver.de
 
 1. Run the `openssl genrsa -out myserver.key 2048` command to generate an RSA private key.
 
-   ```
+   ```bash
    openssl genrsa -out myserver.key 2048
    ```
 
 1. Run the following command to generate a certificate request.
 
-   ```
+   ```bash
    openssl req -new -key myserver.key -out myserver.csr -subj "/CN=myserver.default.svc"
    ```
 
 1. Generate a `base64` value for the CSR request and store it in a variable for use in a later step.
 
-   ```
+   ```bash
    base_64=$(cat myserver.csr | base64 -w 0 | tr -d "
    ")
    ```
 
 1. Run the following command to create a file named `mycsr.yaml`. In the following example, `beta.eks.amazonaws.com/app-serving` is the `signerName`.
 
-   ```
+   ```yaml
    cat >mycsr.yaml <<EOF
    apiVersion: certificates.k8s.io/v1
    kind: CertificateSigningRequest
@@ -66,31 +66,31 @@ These steps show how to generate a serving certificate for DNS name `myserver.de
 
 1. Submit the CSR.
 
-   ```
+   ```bash
    kubectl apply -f mycsr.yaml
    ```
 
 1. Approve the serving certificate.
 
-   ```
+   ```bash
    kubectl certificate approve myserver
    ```
 
 1. Verify that the certificate was issued.
 
-   ```
+   ```bash
    kubectl get csr myserver
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    NAME       AGE     SIGNERNAME                           REQUESTOR          CONDITION
    myserver   3m20s   beta.eks.amazonaws.com/app-serving   kubernetes-admin   Approved,Issued
    ```
 
 1. Export the issued certificate.
 
-   ```
+   ```bash
    kubectl get csr myserver -o jsonpath='{.status.certificate}'| base64 -d > myserver.crt
    ```

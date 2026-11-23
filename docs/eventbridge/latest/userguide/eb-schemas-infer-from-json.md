@@ -28,7 +28,7 @@ If you have the JSON of an event, you can automatically create a schema for that
 
    For example, you could paste in the source from this AWS Step Functions event for a failed execution.
 
-   ```
+   ```json
    {
        "version": "0",
        "id": "315c1398-40ff-a850-213b-158f73e60175",
@@ -57,7 +57,7 @@ If you have the JSON of an event, you can automatically create a schema for that
 
 1. EventBridge generates an OpenAPI schema for the event. For example, the following schema is generated for the preceding Step Functions event.
 
-   ```
+   ```json
    {
      "openapi": "3.0.0",
      "info": {

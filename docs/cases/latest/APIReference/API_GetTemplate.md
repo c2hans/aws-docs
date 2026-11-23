@@ -188,11 +188,11 @@ HTTP Status Code: 400
 
 This example illustrates one usage of GetTemplate.
 
-```
+```json
 { }
 ```
 
-```
+```json
 {
   "templateId": "[template_id]",
   "templateArn": "[template_arn]",

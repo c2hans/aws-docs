@@ -30,7 +30,7 @@ A genuine allowance problem shows throughput declining within a single run, not 
 
 To look for a real decline, watch one long run's own time series. On the endpoint, during the run, use the Linux `sar -n DEV 1` command, or read `/proc/net/dev` in a one-second loop:
 
-```
+```bash
 sar -n DEV 1
 ```
 

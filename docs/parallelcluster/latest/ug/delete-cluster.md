@@ -18,7 +18,7 @@ Initiate deleting a cluster.
 ## Request syntax
 <a name="delete-cluster-request"></a>
 
-```
+```json
 DELETE /v3/clusters/{{{clusterName}}}
 {
   "region": "string"
@@ -41,7 +41,7 @@ Required: No
 ## Response syntax
 <a name="delete-cluster-response"></a>
 
-```
+```json
 {
    "cluster": {
        "clusterName": "string",
@@ -105,13 +105,13 @@ Type: string
 
 **Request**
 
-```
+```python
 $ delete_cluster({{cluster_name_3x}})
 ```
 
 **200 Response**
 
-```
+```json
 {
   "cluster": {
     "cloudformation_stack_arn": "arn:aws:cloudformation:us-east-1:123456789012:stack/cluster_name_3x/16b49540-aee5-11ec-8e18-0ac1d712b241",

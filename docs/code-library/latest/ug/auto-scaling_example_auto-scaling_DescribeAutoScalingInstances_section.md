@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get data about the instances in an Amazon EC2 Auto Scaling group.
     /// </summary>
@@ -68,7 +68,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/autoscaling#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -197,7 +197,7 @@ For more information, see [Filter AWS CLI output](https://docs.aws.amazon.com/cl
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
     public static void describeAutoScalingInstance(AutoScalingClient autoScalingClient, String id) {
         try {
             DescribeAutoScalingInstancesRequest describeAutoScalingInstancesRequest = DescribeAutoScalingInstancesRequest
@@ -226,7 +226,7 @@ For more information, see [Filter AWS CLI output](https://docs.aws.amazon.com/cl
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun describeAutoScalingInstance(id: String) {
     val describeAutoScalingInstancesRequest =
         DescribeAutoScalingInstancesRequest {
@@ -249,7 +249,7 @@ suspend fun describeAutoScalingInstance(id: String) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function describeAutoScalingInstances($instanceIds)
     {
         return $this->autoScalingClient->describeAutoScalingInstances([
@@ -265,7 +265,7 @@ suspend fun describeAutoScalingInstance(id: String) {
 **Tools for PowerShell V4**
 **Example 1: This example lists the IDs of your Auto Scaling instances.**
 
-```
+```powershell
 Get-ASAutoScalingInstance | format-table -property InstanceId
 ```
 **Output:**
@@ -279,7 +279,7 @@ i-abcd1234
 ```
 **Example 2: This example describes the specified Auto Scaling instance.**
 
-```
+```powershell
 Get-ASAutoScalingInstance -InstanceId i-12345678
 ```
 **Output:**
@@ -294,17 +294,17 @@ LifecycleState          : InService
 ```
 **Example 3: This example describes the specified two Auto Scaling instances.**
 
-```
+```powershell
 Get-ASAutoScalingInstance -InstanceId @("i-12345678", "i-87654321")
 ```
 **Example 4: This example describes the Auto Scaling instances for the specified Auto Scaling group.**
 
-```
+```powershell
 (Get-ASAutoScalingGroup -AutoScalingGroupName my-asg).Instances | Get-ASAutoScalingInstance
 ```
 **Example 5: This example describes all your Auto Scaling instances.**
 
-```
+```powershell
 Get-ASAutoScalingInstance
 ```
 +  For API details, see [DescribeAutoScalingInstances](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -312,7 +312,7 @@ Get-ASAutoScalingInstance
 **Tools for PowerShell V5**
 **Example 1: This example lists the IDs of your Auto Scaling instances.**
 
-```
+```powershell
 Get-ASAutoScalingInstance | format-table -property InstanceId
 ```
 **Output:**
@@ -326,7 +326,7 @@ i-abcd1234
 ```
 **Example 2: This example describes the specified Auto Scaling instance.**
 
-```
+```powershell
 Get-ASAutoScalingInstance -InstanceId i-12345678
 ```
 **Output:**
@@ -341,17 +341,17 @@ LifecycleState          : InService
 ```
 **Example 3: This example describes the specified two Auto Scaling instances.**
 
-```
+```powershell
 Get-ASAutoScalingInstance -InstanceId @("i-12345678", "i-87654321")
 ```
 **Example 4: This example describes the Auto Scaling instances for the specified Auto Scaling group.**
 
-```
+```powershell
 (Get-ASAutoScalingGroup -AutoScalingGroupName my-asg).Instances | Get-ASAutoScalingInstance
 ```
 **Example 5: This example describes all your Auto Scaling instances.**
 
-```
+```powershell
 Get-ASAutoScalingInstance
 ```
 +  For API details, see [DescribeAutoScalingInstances](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -362,7 +362,7 @@ Get-ASAutoScalingInstance
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -410,7 +410,7 @@ class AutoScalingWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
     pub async fn list_instances(&self) -> Result<Vec<String>, ScenarioError> {
         // The direct way to list instances is by using DescribeAutoScalingGroup's instances property. However, this returns a Vec<Instance>, as opposed to a Vec<AutoScalingInstanceDetails>.
         // Ok(self.get_group().await?.instances.unwrap_or_default().map(|i| i.instance_id.clone().unwrap_or_default()).filter(|id| !id.is_empty()).collect())
@@ -445,7 +445,7 @@ class AutoScalingWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: it_instance_ids contains a list of instance IDs
 
     TRY.

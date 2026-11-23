@@ -10,7 +10,7 @@ Provides additional optional settings for your [StartCallAnalyticsJob](API_Start
 <a name="API_CallAnalyticsJobSettings_Contents"></a>
 
  ** ContentRedaction **   <a name="transcribe-Type-CallAnalyticsJobSettings-ContentRedaction"></a>
-Makes it possible to redact or flag specified personally identifiable information (PII) in your transcript. If you use `ContentRedaction`, you must also include the sub-parameters: `RedactionOutput` and `RedactionType`. You can optionally include `PiiEntityTypes` to choose which types of PII you want to redact.
+Makes it possible to redact specified personally identifiable information (PII) in your transcript. If you use `ContentRedaction`, you must also include the sub-parameters: `RedactionOutput` and `RedactionType`. You can optionally include `PiiEntityTypes` to choose which types of PII you want to redact.
 Type: [ContentRedaction](API_ContentRedaction.md) object
 Required: No
 

@@ -20,7 +20,7 @@ One potential use case is to localize the query and/or the result.
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryText":"Patna, Bihar, Bharat",
     "Language": "HI"
@@ -30,7 +30,7 @@ One potential use case is to localize the query and/or the result.
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -82,7 +82,7 @@ One potential use case is to localize the query and/or the result.
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -95,7 +95,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places geocode --key ${YourKey} --query-text "पटना, बिहार, भारत" --language "HI"
 ```
 
@@ -107,7 +107,7 @@ aws geo-places geocode --key ${YourKey} --query-text "पटना, बिहा
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryText":"पटना, बिहार, भारत"
 }
@@ -116,7 +116,7 @@ aws geo-places geocode --key ${YourKey} --query-text "पटना, बिहा
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -168,7 +168,7 @@ aws geo-places geocode --key ${YourKey} --query-text "पटना, बिहा
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -180,7 +180,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places geocode --key ${YourKey} --query-text "पटना, बिहार, भारत"
 ```
 
@@ -192,7 +192,7 @@ aws geo-places geocode --key ${YourKey} --query-text "पटना, बिहा
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryText":"पटना, बिहार, भारत",
     "Language": "HI"
@@ -202,7 +202,7 @@ aws geo-places geocode --key ${YourKey} --query-text "पटना, बिहा
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -254,7 +254,7 @@ aws geo-places geocode --key ${YourKey} --query-text "पटना, बिहा
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -267,7 +267,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places geocode --key ${YourKey} --query-text "पटना, बिहार, भारत" --language "HI"
 ```
 

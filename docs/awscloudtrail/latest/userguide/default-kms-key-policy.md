@@ -28,7 +28,7 @@ The policy includes a statement to allow cross accounts to decrypt log files and
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "Key policy created by CloudTrail",
@@ -127,7 +127,7 @@ The following is the default policy created for a AWS KMS key that you use with 
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Id": "Key policy created by CloudTrail",

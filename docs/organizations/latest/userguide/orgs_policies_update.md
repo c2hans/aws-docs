@@ -55,7 +55,7 @@ You can use one of the following commands to update a policy:
 
   The following example renames a policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --name "MyRenamedPolicy"
@@ -76,7 +76,7 @@ You can use one of the following commands to update a policy:
 
   The following example adds or changes the description for a service control policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --description "My new policy description"
@@ -97,7 +97,7 @@ You can use one of the following commands to update a policy:
 
   The following example changes the policy document of the SCP by specifying a file that contains the new JSON policy text.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-zlfw1r64
       --content file://MyNewPolicyText.json
@@ -156,7 +156,7 @@ You can use one of the following commands to update a policy:
 
   The following example renames a policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --name "MyRenamedPolicy"
@@ -177,7 +177,7 @@ You can use one of the following commands to update a policy:
 
   The following example adds or changes the description for a resource control policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --description "My new policy description"
@@ -198,7 +198,7 @@ You can use one of the following commands to update a policy:
 
   The following example changes the policy document of the RCP by specifying a file that contains the new JSON policy text.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-zlfw1r64
       --content file://MyNewPolicyText.json
@@ -252,7 +252,7 @@ You can use one of the following to update a policy:
 
   The following example renames a declarative policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --name "Renamed policy"
@@ -272,7 +272,7 @@ You can use one of the following to update a policy:
 
   The following example adds or changes the description for a declarative policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --description "My new description"
@@ -328,7 +328,7 @@ You can use one of the following to update a backup policy:
 
   The following example renames a backup policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --name "Renamed policy"
@@ -348,7 +348,7 @@ You can use one of the following to update a backup policy:
 
   The following example adds or changes the description for a backup policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --description "My new description"
@@ -410,7 +410,7 @@ You can use one of the following to update a backup policy:
   }
   ```
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --content file://policy.json
@@ -463,7 +463,7 @@ You can use one of the following to update a policy:
 
   The following example renames a tag policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --name "Renamed tag policy"
@@ -483,7 +483,7 @@ You can use one of the following to update a policy:
 
   The following example adds or changes the description for a tag policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --description "My new tag policy description"
@@ -522,7 +522,7 @@ You can use one of the following to update a policy:
   }
   ```
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --content file://policy.json
@@ -575,7 +575,7 @@ You can use one of the following to update a policy:
 
   The following example renames a chat applications policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --name "Renamed chat applications policy"
@@ -628,7 +628,7 @@ You can use one of the following to update a policy:
 
   The following example renames an AI services opt-out policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --name "Renamed policy"
@@ -648,7 +648,7 @@ You can use one of the following to update a policy:
 
   The following example adds or changes the description for an AI services opt-out policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --description "My new description"
@@ -692,7 +692,7 @@ You can use one of the following to update a policy:
   }
   ```
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-i9j8k7l6m5 \
       --content file://policy.json
@@ -745,7 +745,7 @@ You can use one of the following to update a policy:
 
   The following example renames a Security Hub policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-66ev7hgcvj \
       --name "Renamed policy"
@@ -765,7 +765,7 @@ You can use one of the following to update a policy:
 
   The following example adds or changes the description for a Security Hub policy.
 
-  ```
+  ```bash
   $ aws organizations update-policy \
       --policy-id p-66ev7hgcvj \
       --name "My new description"

@@ -31,7 +31,7 @@ The name of the table to show.
 
 Following is an example of the SHOW TABLE output for the table `sales`.
 
-```
+```sql
 show table sales;
 ```
 
@@ -53,7 +53,7 @@ DISTSTYLE KEY SORTKEY ( dateid );
 
 Following is an example of the SHOW TABLE output for the table `category` in the schema `public`. The collation of the database is CASE\_SENSITIVE.
 
-```
+```sql
 show table public.category;
 ```
 
@@ -69,13 +69,13 @@ DISTSTYLE KEY SORTKEY ( catid );
 
 The following example creates table `foo` with a primary key.
 
-```
+```sql
 create table foo(a int PRIMARY KEY, b int);
 ```
 
 The SHOW TABLE results display the create statement with all properties of the `foo` table.
 
-```
+```sql
 show table foo;
 ```
 
@@ -89,7 +89,7 @@ DISTSTYLE AUTO;
 
 This example creates a table where column `a` inherits the database's default CASE\_SENSITIVE collation, while `b` and `c` are explicitly set to CASE\_INSENSITIVE collation.
 
-```
+```sql
 CREATE TABLE public.foo (
 a CHAR,
 b VARCHAR(10) COLLATE CASE_INSENSITIVE,
@@ -99,7 +99,7 @@ c SUPER COLLATE CASE_INSENSITIVE
 
 The SHOW TABLE results display the create statement with all properties of the `foo` table.
 
-```
+```sql
 show table public.foo;
 ```
 

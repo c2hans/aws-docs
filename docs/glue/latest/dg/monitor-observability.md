@@ -64,7 +64,7 @@ AWS Glue Observability metrics is available on AWS Glue 4.0 and later versions.
 
 1.  Create a metric definition JSON file and replace `your-Glue-job-name`and `your-Glue-job-run-id` with yours.
 
-   ```
+   ```JSON
    $ cat multiplequeries.json
    [
        {
@@ -132,7 +132,7 @@ AWS Glue Observability metrics is available on AWS Glue 4.0 and later versions.
 
 1.  Run the `get-metric-data` command:
 
-   ```
+   ```JSON
    $ aws cloudwatch get-metric-data --metric-data-queries file: //multiplequeries.json \
         --start-time '2023-10-28T18: 20' \
         --end-time '2023-10-28T19: 10'  \

@@ -32,7 +32,7 @@ You can use the available AWS CloudFormation templates for the JSM connector to 
 
    Example stack set outputs:
 
-   ```
+   ```json
    SCStackSetAdministratorRoleARN
    arn:aws:iam::123456789123:role/AWSCloudFormationStackSetAdministrationRole SCIAMStackSetExecutionRoleName
    AWSCloudFormationStackSetExecutionRole

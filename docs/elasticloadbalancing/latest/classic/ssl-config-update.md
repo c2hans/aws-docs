@@ -131,7 +131,7 @@ The `set-load-balancer-policies-of-listener` command replaces the current set of
 
    The response shows that the policy is enabled on port 443.
 
-   ```
+   ```json
    ...
      {
          "Listener": {
@@ -189,7 +189,7 @@ The `set-load-balancer-policies-of-listener` command replaces the current set of
 
    The response shows that the policy is enabled on port 443.
 
-   ```
+   ```json
    ...
      {
          "Listener": {

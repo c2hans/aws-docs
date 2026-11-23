@@ -16,13 +16,15 @@ If you have an AWS Marketplace account with Amazon Payments Europe S.C.A., your 
 
 **To submit a complaint**
 
-1. Sign in to your [AWS Marketplace](https://aws.amazon.com/marketplace/login?ref_=header_user_signin_desktop) Seller account.
+1. Open the [AWS Partner Central and Marketplace Support page](https://us-east-1.console.aws.amazon.com/partnercentral/support?region=us-east-1) in the AWS Partner Central console.
 
-1. Go to **Contact Us**.
+1. Choose **Get support**.
 
-1. Select **Commercial Marketplace**, **Seller Account**, **Registration**.
+1. In the support chat, say that you want to submit a complaint, and provide details about your complaint.
 
-1. Provide details about your complaint and choose **Submit**.
+1. Review the case form. For **Service**, choose **Commercial Marketplace**.
+
+1. Choose **Submit**. The chat displays your case ID.
 
 ## Amazon Payments Europe Complaint resolution time frames
 <a name="complaint-timeframes"></a>

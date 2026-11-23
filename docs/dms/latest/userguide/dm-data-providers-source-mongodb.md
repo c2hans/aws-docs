@@ -36,7 +36,7 @@ For MongoDB as a source, to store user credentials in Secrets Manager, you need 
 
 The following code sample demonstrates how to store database secrets using plain text.
 
-```
+```json
 {
   "username": "dbuser",
   "password": "dbpassword"

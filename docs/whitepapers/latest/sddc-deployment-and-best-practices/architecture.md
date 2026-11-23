@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-b
 
 ![A diagram that depicts the high-level architecture of the VMware Cloud on an AWS managed account connected to a customer owned AWS account.](https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/region.png)
 
+*High-level architecture of the VMware Cloud on an AWS managed account connected to a customer owned AWS account*
+
  This paper covers key preparation steps, associated resources, and deployment instructions to guide you through deployment of your first SDDC environment within your chosen [Region and Availability Zone](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/). This includes the following:
 +  Creating a single Virtual Private Cloud (VPC) within your AWS account
 +  Planning and provisioning a private subnet network within your chosen Availability Zone (AZ) for SDDC integration

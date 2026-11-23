@@ -36,7 +36,7 @@ com.amazonaws.<region>.securityagent
 
 To create the interface endpoint using the AWS CLI, run the following command. Replace the Region, VPC ID, subnet IDs, and security group ID with your own values.
 
-```
+```bash
 aws ec2 create-vpc-endpoint \
     --vpc-id vpc-1a2b3c4d \
     --vpc-endpoint-type Interface \
@@ -80,7 +80,7 @@ For more information, see [Control access to services using endpoint policies](h
 
 The following is an example of an endpoint policy for AWS Security Agent. When attached to an endpoint, this policy grants access to the listed AWS Security Agent actions for all principals on all resources.
 
-```
+```json
 {
    "Version": "2012-10-17",
    "Statement": [
@@ -106,7 +106,7 @@ The following is an example of an endpoint policy for AWS Security Agent. When a
 
 The following VPC endpoint policy denies AWS account `123456789012` all access to resources using the endpoint. The policy allows all actions from other accounts.
 
-```
+```json
 {
    "Statement": [
       {
@@ -133,7 +133,7 @@ The following VPC endpoint policy denies AWS account `123456789012` all access t
  **Connection times out when calling Security Agent API**
 + Verify that the VPC endpoint status is `available`:
 
-  ```
+  ```bash
   aws ec2 describe-vpc-endpoints --vpc-endpoint-ids vpce-1a2b3c4d \
       --query "VpcEndpoints[].State"
   ```
@@ -143,13 +143,13 @@ The following VPC endpoint policy denies AWS account `123456789012` all access t
  **DNS resolution fails for `securityagent.<region>.api.aws` **
 + Verify that private DNS is enabled on the endpoint:
 
-  ```
+  ```bash
   aws ec2 describe-vpc-endpoints --vpc-endpoint-ids vpce-1a2b3c4d \
       --query "VpcEndpoints[].PrivateDnsEnabled"
   ```
 + Confirm that both `enableDnsSupport` and `enableDnsHostnames` are set to `true` on your VPC:
 
-  ```
+  ```bash
   aws ec2 describe-vpc-attribute --vpc-id vpc-1a2b3c4d --attribute enableDnsSupport
   aws ec2 describe-vpc-attribute --vpc-id vpc-1a2b3c4d --attribute enableDnsHostnames
   ```

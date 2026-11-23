@@ -42,7 +42,7 @@ The solution consists of two CDK stacks:
 
 For a streamlined deployment experience on Linux/macOS, use the provided `deploy.sh` script:
 
-```
+```bash
 # Deploy Prebid Server only (no simulator)
 ./deploy.sh --profile <your-aws-cli-profile> --region <your-region>
 
@@ -121,7 +121,7 @@ The Fabric Link is managed independently of CloudFormation — no stack update i
 
 You can also manage the Fabric Link manually:
 
-```
+```bash
 # Check link status
 ./deployment/simulator-fabric-link.sh status --stack-name prebid-server-deployment-on-aws --profile <profile> --region <region>
 
@@ -135,13 +135,13 @@ For customization or manual deployment:
 
 If you deploy with the bidder simulator, first copy the AMT bidder files into the container build context from the repository root:
 
-```
+```bash
 cp -r source/loadtest/amt-bidder deployment/ecr/prebid-server/
 ```
 
 Then install the dependencies, compile the TypeScript CDK, and deploy. The AWS CDK CLI is a project dependency, so run it with `npx`:
 
-```
+```bash
 cd source/infrastructure
 
 # Install dependencies and compile the TypeScript CDK

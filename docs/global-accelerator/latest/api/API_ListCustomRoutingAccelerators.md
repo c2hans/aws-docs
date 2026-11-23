@@ -114,7 +114,7 @@ The following is an example for listing the custom routing accelerators for an A
 aws globalaccelerator list-custom-routing-accelerators --region us-west-2
 ```
 
-```
+```json
 {
 "Accelerators": [
         {

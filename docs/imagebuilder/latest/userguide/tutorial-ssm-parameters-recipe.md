@@ -72,7 +72,7 @@ We recommend that you don't pass the [AWSServiceRoleForImageBuilder](security-ia
 
 ****
 
-   ```
+   ```json
    {
    	"Version":"2012-10-17",
    	"Statement": [

@@ -49,7 +49,7 @@ Setting a TTL on a record is a deferred, service-executed deletion: once the dur
 
 The following IAM policy grants a principal the ability to manage memory resources and configure retention, while withholding on-demand record deletion. The principal can set or remove a TTL. However, because `DeleteMemoryRecord` and `BatchDeleteMemoryRecords` are not granted, the principal cannot delete individual records directly.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -69,7 +69,7 @@ The following IAM policy grants a principal the ability to manage memory resourc
 
 To set a TTL when you create a memory, provide a `recordExpirySpecification` on the strategy.
 
-```
+```bash
 aws bedrock-agentcore-control create-memory \
   --name "SupportAgentFactMemory" \
   --event-expiry-duration 90 \
@@ -88,7 +88,7 @@ aws bedrock-agentcore-control create-memory \
 
 To change the retention on an existing strategy, pass `recordExpirySpecification` with `recordExpiryDurationDays` in a `modifyMemoryStrategies` entry.
 
-```
+```bash
 aws bedrock-agentcore-control update-memory \
   --memory-id "SupportAgentFactMemory-abc123" \
   --memory-strategies '{
@@ -105,7 +105,7 @@ aws bedrock-agentcore-control update-memory \
 
 To remove a previously configured TTL so that records generated afterward no longer expire, set `action` to `REMOVE`.
 
-```
+```bash
 aws bedrock-agentcore-control update-memory \
   --memory-id "SupportAgentFactMemory-abc123" \
   --memory-strategies '{
@@ -125,7 +125,7 @@ aws bedrock-agentcore-control update-memory \
 
 When you write records directly with the batch APIs, you set a request-level TTL that applies to every record in the request. The following IAM policy grants a principal the ability to write records through the batch APIs and to configure retention on those requests.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -145,7 +145,7 @@ When you write records directly with the batch APIs, you set a request-level TTL
 
 To set a TTL on created records, provide a `recordExpirySpecification` at the top level of the request. It applies to every record created by the call.
 
-```
+```bash
 aws bedrock-agentcore batch-create-memory-records \
   --memory-id "your-memory-id" \
   --records '[
@@ -163,7 +163,7 @@ aws bedrock-agentcore batch-create-memory-records \
 
 To change retention on the records in an update request, provide `recordExpiryDurationDays`. To remove a previously configured TTL, set `action` to `REMOVE`.
 
-```
+```bash
 aws bedrock-agentcore batch-update-memory-records \
   --memory-id "your-memory-id" \
   --records '[

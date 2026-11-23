@@ -115,7 +115,7 @@ The **ReadOnly Command Permissions** policy JSON code is shown following:
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
     "Statement": [
@@ -162,7 +162,7 @@ The following example shows the **Lambda-Invoke Command Permissions** policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

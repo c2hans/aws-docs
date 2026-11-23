@@ -50,7 +50,7 @@ If you currently use Amazon SNS message data protection, you can review your con
 **Using the AWS CLI**
 To check if a specific topic has message data protection enabled, run the following command. Replace {{topic-arn}} with your Amazon SNS topic ARN.
 
-```
+```bash
 aws sns get-data-protection-policy --resource-arn {{topic-arn}}
 ```
 
@@ -76,7 +76,7 @@ You can remove data protection policies from your Amazon SNS topics at any time,
 **Using the AWS CLI**
 To disable message data protection, delete the data protection policy from your topic. Replace {{topic-arn}} with your Amazon SNS topic ARN.
 
-```
+```bash
 aws sns put-data-protection-policy --resource-arn {{topic-arn}} --data-protection-policy ""
 ```
 

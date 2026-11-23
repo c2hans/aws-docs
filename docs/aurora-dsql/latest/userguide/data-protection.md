@@ -67,3 +67,13 @@ Witness Regions protect and secure your data through these design features:
 + The witness Region operates without cluster connection endpoints or query processors. This prevents user database access.
 
 For more information on witness Regions, see [Configuring multi-Region clusters](configuring-multi-region-clusters.md).
+
+## Data protection for ephemeral clusters
+<a name="data-protection-ephemeral-clusters"></a>
+
+Ephemeral clusters use the same encryption at rest and in transit as other Aurora DSQL clusters. Ephemeral clusters don't support data protection features such as backups.
+
+**Warning**
+After an ephemeral cluster's lifetime expires, Aurora DSQL permanently deletes the cluster and all of its data, even if deletion protection is turned on. You can't extend the lifetime, and you can't recover the data after deletion.
+
+Use ephemeral clusters only for non-production data. Don't store production or sensitive data on an ephemeral cluster. For more information about ephemeral clusters, see [Early-access features and ephemeral clusters in Aurora DSQL](ephemeral-clusters.md).

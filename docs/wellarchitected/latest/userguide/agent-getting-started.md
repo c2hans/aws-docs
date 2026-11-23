@@ -189,7 +189,7 @@ The execution role's permissions policy grants `sts:AssumeRole` on the access ro
 
 Use the following trust policy template for your access roles. {{ProfileOwningAccountId}} is the account where you created the agent profile. {{ExecutionRoleName}} is the name of the execution role in the agent profile. By default, this is usually `ExecutionRoleForWellArchitectedAgent`.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

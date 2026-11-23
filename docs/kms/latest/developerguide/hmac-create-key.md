@@ -105,7 +105,7 @@ If you try to create an HMAC KMS key in an AWS Region in which HMAC keys are not
 
 The following example uses the `CreateKey` operation to create a 512-bit HMAC KMS key.
 
-```
+```bash
 $ aws kms create-key --key-spec HMAC_512 --key-usage GENERATE_VERIFY_MAC
 {
     "KeyMetadata": {

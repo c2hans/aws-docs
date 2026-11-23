@@ -38,7 +38,7 @@ You must create the MediaLiveAnywhereAccess policy. This is the top yellow box i
 
 ****
 
-   ```
+   ```json
    {
    	"Version":"2012-10-17",
    	"Statement": [
@@ -88,7 +88,7 @@ You must create the Instance role. This is the pink box in the diagram.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

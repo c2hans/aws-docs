@@ -95,7 +95,7 @@ Some domains have optional dimensions that we recommend including. Optional dime
 
 A schema is required for every dataset. The following is the accompanying schema for the example target time series dataset above.
 
-```
+```json
 {
      "attributes": [
         {

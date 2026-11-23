@@ -18,6 +18,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Diagram showing dependencies such as queuing systems and load balancers are loosely coupled](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/loosely-coupled-dependencies.png)
 
+*Figure 4: Dependencies such as queuing systems and load balancers are loosely coupled*
+
  Amazon SQS queues and Elastic Load Balancers are just two ways to add an intermediate layer for loose coupling. Event-driven architectures can also be built in the AWS Cloud using Amazon EventBridge, which can abstract clients (event producers) from the services they rely on (event consumers). Amazon Simple Notification Service (Amazon SNS) is an effective solution when you need high-throughput, push-based, many-to-many messaging. Using Amazon SNS topics, your publisher systems can fan out messages to a large number of subscriber endpoints for parallel processing.
 
  While queues offer several advantages, in most hard real-time systems, requests older than a threshold time (often seconds) should be considered stale (the client has given up and is no longer waiting for a response), and not processed. This way more recent (and likely still valid requests) can be processed instead.

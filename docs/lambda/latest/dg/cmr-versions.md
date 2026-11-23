@@ -141,7 +141,7 @@ Lambda uses `ecr:BatchGetImage` and `ecr:GetDownloadUrlForLayer` to read the ima
 
 1. Create a file named `ecr-policy.json` with the following content:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -173,7 +173,7 @@ Lambda uses `ecr:BatchGetImage` and `ecr:GetDownloadUrlForLayer` to read the ima
 
 1. Run the following command to apply the policy to your repository:
 
-   ```
+   ```bash
    aws ecr set-repository-policy \
      --repository-name companyphp8 \
      --policy-text file://ecr-policy.json \
@@ -217,7 +217,7 @@ The new runtime version starts in the `CREATING` state. After Lambda ingests and
 
 1. (Optional) To check the request without creating a version, add the `--dry-run` option:
 
-   ```
+   ```bash
    aws lambda-core create-runtime-version \
      --runtime-name companyphp8 \
      --name v8.3.1 \
@@ -229,7 +229,7 @@ The new runtime version starts in the `CREATING` state. After Lambda ingests and
 
 1. To create the version, run the `create-runtime-version` command:
 
-   ```
+   ```bash
    aws lambda-core create-runtime-version \
      --runtime-name companyphp8 \
      --name v8.3.1 \
@@ -245,7 +245,7 @@ The new runtime version starts in the `CREATING` state. After Lambda ingests and
 
    The following example shows the output for a multi-architecture image. The version is `CREATING`.
 
-   ```
+   ```json
    {
        "Name": "v8.3.1",
        "Arn": "arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8/version/v8.3.1",
@@ -281,7 +281,7 @@ The new runtime version starts in the `CREATING` state. After Lambda ingests and
 
 1. To wait until the version is ready, run the following command:
 
-   ```
+   ```bash
    aws lambda-core wait runtime-version-active \
      --runtime-name companyphp8 \
      --name v8.3.1
@@ -291,7 +291,7 @@ The new runtime version starts in the `CREATING` state. After Lambda ingests and
 
 1. To confirm the state, run the `get-runtime-version` command:
 
-   ```
+   ```bash
    aws lambda-core get-runtime-version \
      --runtime-name companyphp8 \
      --name v8.3.1 \
@@ -300,7 +300,7 @@ The new runtime version starts in the `CREATING` state. After Lambda ingests and
 
    You should see the following output:
 
-   ```
+   ```json
    "ACTIVE"
    ```
 
@@ -321,7 +321,7 @@ After you fix the issue, create a new version with a new name. You can delete th
 
 To view a version, including its platforms, run the `get-runtime-version` command:
 
-```
+```bash
 aws lambda-core get-runtime-version \
   --runtime-name companyphp8 \
   --name v8.3.1
@@ -331,14 +331,14 @@ The output has the same fields as the output of `create-runtime-version`.
 
 To list all versions of a runtime, run the `list-runtime-versions` command:
 
-```
+```bash
 aws lambda-core list-runtime-versions \
   --runtime-name companyphp8
 ```
 
 You should see output similar to the following:
 
-```
+```json
 {
     "Items": [
         {
@@ -393,7 +393,7 @@ You can change only the release notes of a version. The version must be `ACTIVE`
 
 To update the release notes, run the `update-runtime-version` command:
 
-```
+```bash
 aws lambda-core update-runtime-version \
   --runtime-name companyphp8 \
   --name v8.3.1 \

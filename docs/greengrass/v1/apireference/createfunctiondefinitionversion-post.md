@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="createfunctiondefinitionversion-post-cli"></a>
 
-```
+```bash
 aws greengrass create-function-definition-version \
   --function-definition-id <value> \
   [--default-config <value>] \
@@ -27,7 +27,7 @@ aws greengrass create-function-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "FunctionDefinitionId": "string",
 "DefaultConfig": {
@@ -91,7 +91,7 @@ type: string
 Information about the function definition version.
 where used: body; required: true
 
-```
+```json
 {
 "DefaultConfig": {
   "Execution": {
@@ -242,7 +242,7 @@ type: string
 
  [ VersionInformation](definitions-versioninformation.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -270,7 +270,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

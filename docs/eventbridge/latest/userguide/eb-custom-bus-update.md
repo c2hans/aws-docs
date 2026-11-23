@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 
 The following request replaces the subscriber's whole `InvokeConfiguration`, so it names the role and every target parameter the subscriber must keep. `TargetArn` is not part of the update; a subscriber's target cannot change.
 
-```
+```json
 {
     "SubscriberArn": "arn:aws:events:us-east-1:111122223333:subscriber/large-orders/EXAMPLEabcdef1234567890",
     "InvokeConfiguration": {
@@ -56,7 +56,7 @@ An update leaves an omitted top-level member unchanged but replaces a supplied b
 Solution
 Read the resource, modify the whole block, write the whole block back, then read it again. The read-back is the only confirmation, because create and update responses do not echo every field.
 
-```
+```bash
 aws eventsv2 describe-subscriber --subscriber-arn "$SUBSCRIBER_ARN" --query 'LogConfiguration'
 
 aws eventsv2 update-subscriber --subscriber-arn "$SUBSCRIBER_ARN" \
@@ -98,7 +98,7 @@ EventBridge matches an event to a subscriber and delivers it at different times,
 
 So when a filter and a transformer or target parameter form one behavior, change them in the same request. The following request pairs a new `DATA` filter with the transformer written for it, so no event is delivered with a mismatched pair.
 
-```
+```json
 {
     "SubscriberArn": "arn:aws:events:us-east-1:111122223333:subscriber/large-orders/EXAMPLEabcdef1234567890",
     "FilterConfiguration": {
@@ -128,7 +128,7 @@ A subscriber delivers only while its `State` is `RUNNING`. Set it to `STOPPED` t
 + `LAST_PROCESSED`, the default: continue from where delivery stopped, so every event published while the subscriber was stopped is delivered, oldest first.
 + `LATEST`: skip the backlog and deliver only events published from now on. A subscriber that is replaying cannot use it: an open-ended replay is still catching up, and a bounded replay never reaches live events.
 
-```
+```bash
 aws eventsv2 update-subscriber \
     --subscriber-arn arn:aws:events:us-east-1:111122223333:subscriber/large-orders/EXAMPLEabcdef1234567890 \
     --state STOPPED

@@ -37,7 +37,7 @@ The most basic scenario is that the remote index is in the same AWS Region as yo
 
 From the remote domain, specify the remote index to reindex from and the local index to reindex to:
 
-```
+```json
 POST _reindex
 {
   "source": {
@@ -56,13 +56,13 @@ You must add 443 at the end of the remote domain endpoint for a validation check
 
 To verify that the index is copied over to the local domain, send this request to the local domain:
 
-```
+```json
 GET local_index/_search
 ```
 
 If the remote index is in a Region different from your local domain, pass in its Region name, such as in this sample request:
 
-```
+```json
 POST _reindex
 {
   "source": {
@@ -82,7 +82,7 @@ In case of isolated Region like AWS GovCloud (US) or China Regions, the endpoint
 
 If the remote domain is secured with [basic authentication](fgac-http-auth.md), specify the username and password:
 
-```
+```json
 POST _reindex
 {
   "source": {
@@ -129,7 +129,7 @@ You can use remote reindex with the console to copy indexes between two domains 
 
 1. Open the dashboard for the local domain and choose **Dev Tools** in the left navigation. To confirm that the remote domain index doesn't exist on your local domain yet, run the following GET request. Replace {{remote-domain-index-name}} with your own index name.
 
-   ```
+   ```json
    GET {{remote-domain-index-name}}/_search
    {
       "query":{
@@ -142,7 +142,7 @@ You can use remote reindex with the console to copy indexes between two domains 
 
 1. Below your GET request, create a POST request and use the VPC endpoint connection endpoint from step 6 (found in the **Endpoint** column of the **Outbound connections** table) as the remote host, as follows.
 
-   ```
+   ```json
    POST _reindex
    {
       "source":{
@@ -223,7 +223,7 @@ You can use remote reindex with the API to copy indexes between two domains that
 
 1. To confirm that the remote domain index doesn't exist on your local domain yet, run the following GET request. Replace {{remote-domain-index-name}} with your own index name.
 
-   ```
+   ```json
    GET {{local-domain-endpoint}}/{{remote-domain-index-name}}/_search
    {
       "query":{
@@ -236,7 +236,7 @@ You can use remote reindex with the API to copy indexes between two domains that
 
 1. Create a POST request and use your endpoint as the remote host, as follows.
 
-   ```
+   ```json
    POST {{local-domain-endpoint}}/_reindex
    {
       "source":{
@@ -268,7 +268,7 @@ The remote reindex command is run from the local domain, so the originating traf
 
 If the remote index is hosted outside of OpenSearch Service, like in a self-managed EC2 instance, set the `external` parameter to `true`:
 
-```
+```json
 POST _reindex
 {
   "source": {
@@ -301,7 +301,7 @@ We recommend tuning these parameters to accommodate your data. For large documen
 **Note**
 The default batch size for remote reindex is 1,000 documents, and the default socket timeout is 30 seconds. AWS recommends a total bulk request size of 3–5 MiB. If your average document size multiplied by the batch size exceeds this range, reduce the batch size accordingly. These are general guidelines — tune these parameters based on your domain configuration, resource utilization, and workload characteristics.
 
-```
+```json
 POST _reindex?pretty=true&scroll=10h&wait_for_completion=false
 {
   "source": {
@@ -320,7 +320,7 @@ POST _reindex?pretty=true&scroll=10h&wait_for_completion=false
 
 We also recommend adding the following settings to the local index for better performance:
 
-```
+```json
 PUT local_index
 {
   "settings": {
@@ -334,7 +334,7 @@ After the reindex process is complete, you can set your desired replica count an
 
 To reindex only a subset of documents that you select through a query, send this request to the local domain:
 
-```
+```json
 POST _reindex
 {
   "source": {

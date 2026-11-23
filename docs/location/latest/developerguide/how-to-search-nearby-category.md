@@ -23,7 +23,7 @@ To learn more about supported categories, see [Categories filters](places-filter
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryPosition": [
         4.35609,
@@ -38,7 +38,7 @@ To learn more about supported categories, see [Categories filters](places-filter
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -137,7 +137,7 @@ To learn more about supported categories, see [Categories filters](places-filter
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/search-nearby?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -156,7 +156,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places search-nearby --key ${YourKey} \
 --query-position 4.35609 50.84439 \
 --filter '{"IncludeCategories": ["airport"]}' \
@@ -171,7 +171,7 @@ aws geo-places search-nearby --key ${YourKey} \
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryPosition": [
         4.35609,
@@ -186,7 +186,7 @@ aws geo-places search-nearby --key ${YourKey} \
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -333,7 +333,7 @@ aws geo-places search-nearby --key ${YourKey} \
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/search-nearby?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -351,7 +351,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places search-nearby --key ${YourKey} \
 --query-position 4.35609 50.84439 \
 --filter '{"ExcludeCategories": ["airport"]}' \

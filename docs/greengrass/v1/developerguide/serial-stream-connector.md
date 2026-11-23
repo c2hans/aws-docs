@@ -156,7 +156,7 @@ Valid pattern: `^(|[NEOSMneosm])$`
 
 The following CLI command creates a `ConnectorDefinition` with an initial version that contains the Serial Stream connector. It configures the connector for Polling-Read mode.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -213,7 +213,7 @@ Type: `string`
 Valid pattern: `.+`
 **Example input**
 
-```
+```json
 {
     "readLength": "30",
     "type": "ascii",
@@ -242,7 +242,7 @@ Type: `string`
 Valid pattern: `.+`
 **Example input: ASCII request**
 
-```
+```json
 {
     "data": "{{random serial data}}",
     "type": "ascii",
@@ -251,7 +251,7 @@ Valid pattern: `.+`
 ```
 **Example input: hex request**
 
-```
+```json
 {
     "data": "{{base64 encoded data}}",
     "type": "hex",
@@ -276,7 +276,7 @@ serial/{{core-thing-name}}/status/dev/{{serial-port}}
 Use this topic to listen for the status of read and write requests. If an `id` property is included it the request, it's returned in the response.
 **Example output: Success**
 
-```
+```json
 {
     "response": {
         "status": "success"
@@ -287,7 +287,7 @@ Use this topic to listen for the status of read and write requests. If an `id` p
 **Example output: Failure**
 A failure response includes an `error_message` property that describes the error or timeout encountered while performing the read or write operation.
 
-```
+```json
 {
     "response": {
         "status": "fail",
@@ -301,7 +301,7 @@ A failure response includes an `error_message` property that describes the error
 Use this topic to receive response data from a read operation. The response data is Base64 encoded if the type is `hex`.
 **Example output**
 
-```
+```json
 {
     "data": "{{output of serial read operation}}"
     "id": "abc123"
@@ -348,7 +348,7 @@ The [Get started with connectors (console)](connectors-console.md) and [Get star
 
 The following example Lambda function sends an input message to the connector.
 
-```
+```python
 import greengrasssdk
 import json
 

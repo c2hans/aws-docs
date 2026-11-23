@@ -44,7 +44,7 @@ Conversational analytics generates two output files for the same evaluation form
 
 The following example shows a typical score.
 
-```
+```json
 {
   "schemaVersion": "3.5",
   "evaluationId": "fb90de35-4507-479a-8b57-970290fd5c2c",
@@ -395,7 +395,7 @@ The [score](#score) for the question.
 
 The following example shows a typical exported evaluation.
 
-```
+```javascript
 {
   "schemaVersion": "3.5",
   "evaluationId": "fb90de35-4507-479a-8b57-970290fd5c2c",

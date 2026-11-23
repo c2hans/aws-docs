@@ -19,7 +19,7 @@ Pattern: `engi-[0-9,a-z]{13}`
 Required: No
 
  ** Message **   <a name="AWSPartnerCentral-Type-ListEngagementByAcceptingInvitationTaskSummary-Message"></a>
- Detailed message describing the failure and possible recovery steps.
+Detailed message describing the failure and possible recovery steps.
 Type: String
 Required: No
 
@@ -30,36 +30,36 @@ Pattern: `O[0-9]{1,19}`
 Required: No
 
  ** ReasonCode **   <a name="AWSPartnerCentral-Type-ListEngagementByAcceptingInvitationTaskSummary-ReasonCode"></a>
- A code pointing to the specific reason for the failure.
+A code pointing to the specific reason for the failure.
 Type: String
 Valid Values: `InvitationAccessDenied | InvitationValidationFailed | EngagementAccessDenied | OpportunityAccessDenied | ResourceSnapshotJobAccessDenied | ResourceSnapshotJobValidationFailed | ResourceSnapshotJobConflict | EngagementValidationFailed | EngagementConflict | OpportunitySubmissionFailed | EngagementInvitationConflict | InternalError | OpportunityValidationFailed | OpportunityConflict | ResourceSnapshotAccessDenied | ResourceSnapshotValidationFailed | ResourceSnapshotConflict | ServiceQuotaExceeded | RequestThrottled | ContextNotFound | CustomerProjectContextNotPermitted | DisqualifiedLeadNotPermitted`
 Required: No
 
  ** ResourceSnapshotJobId **   <a name="AWSPartnerCentral-Type-ListEngagementByAcceptingInvitationTaskSummary-ResourceSnapshotJobId"></a>
- Unique identifier of the resource snapshot job that was created.
+Unique identifier of the resource snapshot job that was created.
 Type: String
 Pattern: `job-[0-9a-z]{13}`
 Required: No
 
  ** StartTime **   <a name="AWSPartnerCentral-Type-ListEngagementByAcceptingInvitationTaskSummary-StartTime"></a>
- Task start timestamp.
+Task start timestamp.
 Type: Timestamp
 Required: No
 
  ** TaskArn **   <a name="AWSPartnerCentral-Type-ListEngagementByAcceptingInvitationTaskSummary-TaskArn"></a>
- The Amazon Resource Name (ARN) that uniquely identifies the task.
+The Amazon Resource Name (ARN) that uniquely identifies the task.
 Type: String
 Pattern: `arn:.*`
 Required: No
 
  ** TaskId **   <a name="AWSPartnerCentral-Type-ListEngagementByAcceptingInvitationTaskSummary-TaskId"></a>
- Unique identifier of the task.
+Unique identifier of the task.
 Type: String
 Pattern: `.*task-[0-9a-z]{13}`
 Required: No
 
  ** TaskStatus **   <a name="AWSPartnerCentral-Type-ListEngagementByAcceptingInvitationTaskSummary-TaskStatus"></a>
- Status of the task.
+Status of the task.
 Type: String
 Valid Values: `IN_PROGRESS | COMPLETE | FAILED`
 Required: No

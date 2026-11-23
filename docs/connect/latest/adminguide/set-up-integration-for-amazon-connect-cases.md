@@ -28,7 +28,7 @@ The same applies to data that you ingest from any other source, such as Salesfor
 
 1.  Using the AWS CLI, create a Case event configuration to send Connect Customer Cases Events to the default EventBridge bus for your AWS account.
 
-```
+```bash
 // set up Case Event Configuration including all system fields
 aws connectcases put-case-event-configuration --domain-id <YOUR_CASES_DOMAIN_ID> --region <YOUR_AWS_REGION> --event-bridge "{
     \"enabled\": true,
@@ -83,7 +83,7 @@ aws connectcases put-case-event-configuration --domain-id <YOUR_CASES_DOMAIN_ID>
 
 +  Event Pattern snippet:
 
-```
+```json
 {
   "source": ["aws.cases"],
   "detail": {
@@ -103,7 +103,7 @@ aws connectcases put-case-event-configuration --domain-id <YOUR_CASES_DOMAIN_ID>
 
 1.  Using the AWS CLI, create an Event Integration with AppIntegrations and record the ARN output.  This represents a source data that a Connect Customer instance can use.
 
-```
+```bash
 aws appintegrations create-event-integration --region
     {{<YOUR_REGION>}} --name Connect-Cases-Event-Integration
     --event-bridge-bus connect-cases-to-customer-profiles --event-filter
@@ -113,7 +113,7 @@ aws appintegrations create-event-integration --region
 
 1.  Using the AWS CLI, create an integration with Customer Profiles using the put-integration API. This will start the flow of data to Customer Profiles, replacing the placeholder values with your Event Integration ARN and Customer Profile domain name.
 
-```
+```bash
 aws customer-profiles put-integration --region
     {{<YOUR_REGION>}} --domain-name {{<YOUR_CP_DOMAIN_NAME>}}
     --uri {{<YOUR_EVENT_INTEGRATION_ARN>}} --object-type-name Connect-case
@@ -128,7 +128,7 @@ aws customer-profiles put-integration --region
 
 1.  Using the AWS CLI, find the Connect-case object under the profile, replacing the placeholders with the correct values.
 
-```
+```bash
 aws customer-profiles list-profile-objects --domain-name
     {{<YOUR_CP_DOMAIN_NAME>}} --region {{<YOUR_REGION>}}
     --object-type-name Connect-case --profile-id {{<YOUR_PROFILE_ID>}}

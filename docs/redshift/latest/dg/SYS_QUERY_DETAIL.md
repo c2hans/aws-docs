@@ -82,7 +82,7 @@ The following example returns the output of SYS\_QUERY\_DETAIL.
 
 The following query shows the query metadata detail at step level, including step name, input\_bytes, output\_bytes, input\_rows, output\_rows.
 
-```
+```sql
 SELECT query_id,
        child_query_sequence,
        stream_id,
@@ -134,7 +134,7 @@ Sample output.
 
 To view the tables in your database in order from most used to least used, use the following example. Replace {{sample\_data\_dev}} with your own database. Note that this query will count queries starting when your cluster is created, but your system view data is not saved when your data warehouse is lacking space.
 
-```
+```sql
 SELECT table_name, COUNT (DISTINCT query_id)
 FROM SYS_QUERY_DETAIL
 WHERE table_name LIKE 'sample_data_dev%'
@@ -157,7 +157,7 @@ ORDER BY COUNT(*) DESC;
 
  The following example shows the various metric levels for a single WLM query.
 
-```
+```sql
 SELECT query_id, child_query_sequence, stream_id, segment_id, step_id, step_name, start_time, end_time, metrics_level
 FROM sys_query_detail
 WHERE query_id = 1553 AND step_id = -1

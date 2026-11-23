@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/cwet_create_lam.h
 
 1. In the **Code source** section, edit the sample code to match the following example:
 
-   ```
+   ```python
    import json
 
    def lambda_handler(event, _context):

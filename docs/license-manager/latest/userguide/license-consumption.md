@@ -13,7 +13,7 @@ License Manager allows multiple users to concurrently consume entitlements, with
   Example: 1a2b3c4d2f5e69f440bae30eaec9570bb1fb7358824f9ddfa1aa5a0daEXAMPLE
 + **Entitlements** – Capabilities to check out. If you specify an unlimited capability, the quantity is zero. Example:
 
-  ```
+  ```json
   "Entitlements": [
       {
           "Name": "DataTransfer",

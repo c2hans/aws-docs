@@ -69,7 +69,7 @@ The role trust relationship must allow your instance or local credentials to ass
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

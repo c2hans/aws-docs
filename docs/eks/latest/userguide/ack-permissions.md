@@ -77,7 +77,7 @@ You can start with direct permissions and migrate to IAM Role Selectors later as
 
 Create an IAM role with permissions for specific AWS services:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -94,7 +94,7 @@ Create an IAM role with permissions for specific AWS services:
 
 Configure the trust policy to allow the Capability Role to assume it:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -113,7 +113,7 @@ Configure the trust policy to allow the Capability Role to assume it:
 
 Add permission to the Capability Role to assume the service-specific role:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -130,7 +130,7 @@ Add permission to the Capability Role to assume the service-specific role:
 
 Map the IAM role to a namespace:
 
-```
+```yaml
 apiVersion: services.k8s.aws/v1alpha1
 kind: IAMRoleSelector
 metadata:
@@ -146,7 +146,7 @@ spec:
 
 Resources in the `s3-resources` namespace automatically use the specified role:
 
-```
+```yaml
 apiVersion: s3.services.k8s.aws/v1alpha1
 kind: Bucket
 metadata:
@@ -165,7 +165,7 @@ Use IAM Role Selectors to manage resources across multiple AWS accounts.
 
 In the target account (444455556666), create a role that trusts the source account’s Capability Role:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -186,7 +186,7 @@ Attach service-specific permissions to this role.
 
 In the source account (111122223333), allow the Capability Role to assume the target account role:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -203,7 +203,7 @@ In the source account (111122223333), allow the Capability Role to assume the ta
 
 Map the cross-account role to a namespace:
 
-```
+```yaml
 apiVersion: services.k8s.aws/v1alpha1
 kind: IAMRoleSelector
 metadata:
@@ -219,7 +219,7 @@ spec:
 
 Resources in the `production` namespace are created in the target account:
 
-```
+```yaml
 apiVersion: s3.services.k8s.aws/v1alpha1
 kind: Bucket
 metadata:
@@ -254,7 +254,7 @@ You can use these session tags in IAM policy conditions to restrict which resour
 
 Allow ACK to create S3 buckets only when the request originates from the `production` namespace:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -276,7 +276,7 @@ Allow ACK to create S3 buckets only when the request originates from the `produc
 
 Allow actions only from a specific ACK capability:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

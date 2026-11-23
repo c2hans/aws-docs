@@ -11,7 +11,7 @@ This topic contains examples that show how to implement key concepts of componen
 
 The following example is the abstract alarm component type that appears in the AWS IoT TwinMaker console. It contains a `functions` list that consists of a `dataReader` that has no `implementedBy` value.
 
-```
+```json
 {
   "componentTypeId": "com.example.alarm.basic:1",
   "workspaceId": "{{MyWorkspace}}",
@@ -67,7 +67,7 @@ More examples are available in [AWS IoT TwinMaker Samples](https://github.com/aw
 
 The following example is a simple component type that retrieves telemetry data about a specific type of component (such as an alarm or a cookie mixer) from an external source. It specifies a Lambda function that component types inherit.
 
-```
+```json
 {
     "componentTypeId": "com.example.timestream-telemetry",
     "workspaceId": "{{MyWorkspace}}",
@@ -104,7 +104,7 @@ The following example is a simple component type that retrieves telemetry data a
 
 The following example inherits from both the abstract alarm and the timestream telemetry component types. It specifies its own Lambda function that retrieves alarm data.
 
-```
+```json
 {
     "componentTypeId": "com.example.cookiefactory.alarm",
     "workspaceId": "{{MyWorkspace}}",
@@ -144,7 +144,7 @@ The examples in this section show how to model potential pieces of equipment. Yo
 
 The following example inherits from the timestream telemetry component type. It specifies additional time-series properties for a cookie mixer's rotation rate and temperature.
 
-```
+```json
 {
     "componentTypeId": "com.example.cookiefactory.mixer",
     "workspaceId": "{{MyWorkspace}}",
@@ -174,7 +174,7 @@ The following example inherits from the timestream telemetry component type. It 
 
 The following example inherits from the timestream telemetry component type. It specifies additional time-series properties for a water tank's volume and flow rate.
 
-```
+```json
 {
     "componentTypeId": "com.example.cookiefactory.watertank",
     "workspaceId": "{{MyWorkspace}}",
@@ -216,7 +216,7 @@ The following example contains properties, the values of which are stored in AWS
 
 This component provides a lightweight mechanism for adding context to a digital twin. You can use it to add metadata indicating where something is located. You can also use this information in logic used for determining which cameras can see a piece of equipment or space, or for knowing how to dispatch someone to a location.
 
-```
+```json
 {
     "componentTypeId": "com.example.cookiefactory.space",
     "workspaceId": "{{MyWorkspace}}",

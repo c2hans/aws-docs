@@ -9,7 +9,7 @@ You must specify a CIDR block for your virtual private cloud (VPC).
 ## Syntax
 <a name="node-vpc-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Networking.VPC:
   properties:
     cidr\_block: String
@@ -46,7 +46,7 @@ Type: List
 ## Example
 <a name="node-vpc-example"></a>
 
-```
+```yaml
 SampleVPC:
   type: tosca.nodes.AWS.Networking.VPC
   properties:

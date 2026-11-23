@@ -36,7 +36,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/hubspot-writing-to-entiti
 
 **INSERT Operation**
 
-```
+```python
 hubspot_write = glueContext.write_dynamic_frame.from_options(
     frame=frameToWrite,
     connection_type="hubspot",
@@ -51,7 +51,7 @@ hubspot_write = glueContext.write_dynamic_frame.from_options(
 
 **UPDATE Operation**
 
-```
+```python
 hubspot_write = glueContext.write_dynamic_frame.from_options(
     frame=frameToWrite,
     connection_type="hubspot",

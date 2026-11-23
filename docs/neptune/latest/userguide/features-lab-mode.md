@@ -27,7 +27,7 @@ curl -G https://{{your-neptune-endpoint}}:{{port}}/status
 ```
 The status results include lab-mode information which will show whether or not the changes you requested were made:
 
-```
+```json
 {
   "status":"healthy",
   "startTime":"Wed Dec 29 02:29:24 UTC 2021",

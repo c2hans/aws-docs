@@ -35,7 +35,7 @@ This is the default setting for AWS Organizations. If it's not activated, see [A
 
  You must have permission to activate Amazon Inspector and to designate an Amazon Inspector delegated administrator. Add the following statement to the end of your IAM policy to grant these permissions. For more information, see [Managing IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage.html).
 
-```
+```JSON
 {
     "Sid": "PermissionsForInspectorAdmin",
     "Effect": "Allow",

@@ -46,7 +46,7 @@ If *geom* is not a `LINESTRING`, then null is returned.
 
 The following SQL returns an extended well-known text (EWKT) representation of a six-point `LINESTRING` to a `GEOMETRY` object and returns the point at index 5 of the linestring.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_PointN(ST_GeomFromText('LINESTRING(0 0,10 0,10 10,5 5,0 5,0 0)',4326), 5));
 ```
 

@@ -19,7 +19,7 @@ To create a multi-keyring, first instantiate the child keyrings. In this example
 ------
 #### [ Java ]
 
-```
+```java
 // 1. Create the raw AES keyring.
 final MaterialProviders matProv = MaterialProviders.builder()
         .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
@@ -42,7 +42,7 @@ IKeyring awsKmsMrkMultiKeyring = matProv.CreateAwsKmsMrkMultiKeyring(createAwsKm
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 // 1. Create the raw AES keyring.
 var keyNamespace = "{{HSM_01}}";
 var keyName = "{{AES_256_012}}";
@@ -71,7 +71,7 @@ var awsKmsMrkMultiKeyring = matProv.CreateAwsKmsMrkMultiKeyring(createAwsKmsMrkM
 ------
 #### [ Rust ]
 
-```
+```rust
 // 1. Create the raw AES keyring
 let mpl_config = MaterialProvidersConfig::builder().build()?;
 let mpl = mpl_client::Client::from_conf(mpl_config)?;
@@ -102,7 +102,7 @@ Next, create the multi-keyring and specify its generator keyring, if any. In thi
 
 The Java `CreateMultiKeyringInput` constructor lets you define a generator keyring and child keyrings. The resulting `createMultiKeyringInput` object is immutable.
 
-```
+```java
 final CreateMultiKeyringInput createMultiKeyringInput = CreateMultiKeyringInput.builder()
         .generator(awsKmsMrkMultiKeyring)
         .childKeyrings(Collections.singletonList(rawAesKeyring))
@@ -115,7 +115,7 @@ IKeyring multiKeyring = matProv.CreateMultiKeyring(createMultiKeyringInput);
 
  The .NET `CreateMultiKeyringInput` constructor lets you define a generator keyring and child keyrings. The resulting `CreateMultiKeyringInput` object is immutable.
 
-```
+```cs
 var createMultiKeyringInput = new CreateMultiKeyringInput
 {
     Generator = awsKmsMrkMultiKeyring,
@@ -127,7 +127,7 @@ var multiKeyring = matProv.CreateMultiKeyring(createMultiKeyringInput);
 ------
 #### [ Rust ]
 
-```
+```rs
 let multi_keyring = mpl
     .create_multi_keyring()
     .generator(aws_kms_mrk_multi_keyring)

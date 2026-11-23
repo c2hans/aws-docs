@@ -33,7 +33,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-cores-coredefinitionid-versions-coredefinitionversionid-get-cli"></a>
 
-```
+```bash
 aws greengrass get-core-definition-version \
   --core-definition-id <value> \
   --core-definition-version-id <value>  \
@@ -43,7 +43,7 @@ aws greengrass get-core-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "CoreDefinitionId": "string",
 "CoreDefinitionVersionId": "string"
@@ -57,7 +57,7 @@ cli-input-json format:
 Success.
  [ GetCoreDefinitionVersionResponse](definitions-getcoredefinitionversionresponse.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -121,7 +121,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

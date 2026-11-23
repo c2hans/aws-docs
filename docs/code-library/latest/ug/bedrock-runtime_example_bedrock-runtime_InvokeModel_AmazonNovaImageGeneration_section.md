@@ -15,7 +15,7 @@ The following code examples show how to invoke Amazon Nova Canvas on Amazon Bedr
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Bedrock-runtime#code-examples).
 Create an image with Amazon Nova Canvas.
 
-```
+```csharp
 // Use the native inference API to create an image with Amazon Nova Canvas.
 
 using System;
@@ -94,7 +94,7 @@ catch (AmazonBedrockRuntimeException e)
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Create an image with Amazon Nova Canvas.
 
-```
+```java
 import org.json.JSONObject;
 import org.json.JSONPointer;
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -198,7 +198,7 @@ public class InvokeModel {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
 Create an image with Amazon Nova Canvas.
 
-```
+```javascript
 import {
   BedrockRuntimeClient,
   InvokeModelCommand,
@@ -296,7 +296,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Create an image with the Amazon Nova Canvas.
 
-```
+```python
 # Use the native inference API to create an image with Amazon Nova Canvas
 
 import base64
@@ -367,7 +367,7 @@ print(f"The generated image has been saved to {image_path}")
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/bedrock-runtime#code-examples).
 Create an image with Amazon Nova Canvas.
 
-```
+```swift
 // Use the native inference API to create an image with Amazon Nova Canvas
 
 import AWSBedrockRuntime

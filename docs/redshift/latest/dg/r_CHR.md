@@ -32,7 +32,7 @@ The CHR function returns a `CHAR` string if an ASCII character matches the input
 
 To return the character that corresponds with ASCII code point 0, use the following example. Note that the CHR function returns `NULL` for the input `0`.
 
-```
+```sql
 SELECT CHR(0);
 
 +-----+
@@ -44,7 +44,7 @@ SELECT CHR(0);
 
 To return the character that corresponds with ASCII code point 65, use the following example.
 
-```
+```sql
 SELECT CHR(65);
 
 +-----+
@@ -56,7 +56,7 @@ SELECT CHR(65);
 
 To return distinct event names that begin with a capital A (ASCII code point 65), use the following example. The following example uses the EVENT table from the TICKIT sample database. For more information, see [Sample database](c_sampledb.md).
 
-```
+```sql
 SELECT DISTINCT eventname FROM event
 WHERE SUBSTRING(eventname, 1, 1)=CHR(65) LIMIT 5;
 

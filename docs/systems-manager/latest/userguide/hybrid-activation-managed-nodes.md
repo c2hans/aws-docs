@@ -140,7 +140,7 @@ For `--expiration-date`, provide a date in timestamp format, such as `"2021-07-0
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    New-SSMActivation -DefaultInstanceName {{name}} `
        -IamRole {{iam-service-role-name}} `
        -RegistrationLimit {{number-of-managed-instances}} `
@@ -182,7 +182,7 @@ For `--expiration-date`, provide a date in timestamp format, such as `"2021-07-0
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    New-SSMActivation -DefaultInstanceName MyWebServers `
        -IamRole service-role/AmazonEC2RunCommandRoleForManagedInstances `
        -RegistrationLimit 10 `

@@ -132,14 +132,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-load-balancer-elb-stack-delete-listener-rule-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-advanced-load-balancer-elb-stack-delete-listener-rule-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-DeleteListenerRule",
   "Region": "us-east-1",

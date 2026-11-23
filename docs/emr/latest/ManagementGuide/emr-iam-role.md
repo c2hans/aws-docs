@@ -20,7 +20,7 @@ The following shows the contents of the current `AmazonEMRServicePolicy_v2` poli
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -446,7 +446,7 @@ The following trust policy includes the [`aws:SourceArn`](https://docs.aws.amazo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

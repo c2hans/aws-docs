@@ -90,6 +90,7 @@ Content-type: application/json
    },
    "imageArn": "string",
    "imageVersion": "string",
+   "kmsKeyIdentifier": "string",
    "logging": { ... },
    "resources": [
       {
@@ -162,7 +163,7 @@ Length Constraints: Minimum length of 1. Maximum length of 2048.
  ** [environmentVariables](#API_UpdateMicrovmImageVersion_ResponseSyntax) **   <a name="lambdamicrovm-UpdateMicrovmImageVersion-response-environmentVariables"></a>
 Environment variables set in the MicroVM runtime environment.
 Type: String to string map
-Map Entries: Minimum number of 0 items. Maximum number of 50 items.
+Map Entries: Minimum number of 0 items. Maximum number of 100 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 256.
 Key Pattern: `[^\s]+`
 Value Length Constraints: Minimum length of 0. Maximum length of 4096.
@@ -182,6 +183,12 @@ The version of the MicroVM image.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `[^\s]+`
+
+ ** [kmsKeyIdentifier](#API_UpdateMicrovmImageVersion_ResponseSyntax) **   <a name="lambdamicrovm-UpdateMicrovmImageVersion-response-kmsKeyIdentifier"></a>
+The customer managed AWS Key Management Service (AWS KMS) key that encrypts the contents and metadata of your MicroVM image version. If you don't specify a key, your MicroVM image version uses an AWS owned key.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `(arn:aws[a-z-]*:kms:[a-z0-9-]+:[0-9]{12}:(key|alias)/[a-zA-Z0-9:/_-]+|alias/[a-zA-Z0-9:/_-]+|[a-zA-Z0-9-]+)`
 
  ** [logging](#API_UpdateMicrovmImageVersion_ResponseSyntax) **   <a name="lambdamicrovm-UpdateMicrovmImageVersion-response-logging"></a>
 The logging configuration for this version.

@@ -12,7 +12,7 @@ A schema has two parts:
 
 You combine them into an [`ItemSchema`](#ddb-mapper-code-schemas-assemble), then pass that schema to [`getTable`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/get-table.html). This page builds a schema for the `Product` class (a partition-key-only item) as the worked example.
 
-```
+```kotlin
 data class Product(
     val sku: String,
     val name: String,
@@ -40,7 +40,7 @@ You may implement [`ItemConverter`](/sdk-for-kotlin/api/latest/dynamodb-mapper/a
 
 For example, assuming the type `Product` is immutable, define a small builder for it:
 
-```
+```kotlin
 class ProductBuilder {
     var sku: String? = null
     var name: String? = null
@@ -58,7 +58,7 @@ class ProductBuilder {
 
 Then assemble the converter. Each [`AttributeDescriptor`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.items/-attribute-descriptor/index.html) pairs a property with a built-in value converter (`StringValueConverter` for the `String` attributes and `NumberValueConverters.Long` for the `Long` price):
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.items.AttributeDescriptor
 import aws.sdk.kotlin.hll.dynamodbmapper.items.SimpleItemConverter
 import aws.sdk.kotlin.hll.dynamodbmapper.values.scalars.NumberValueConverters
@@ -101,7 +101,7 @@ By default, attributes present on a stored item but absent from the descriptors 
 
 A [`KeySpec`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.items/-key-spec/index.html) names the key attributes and their types, which DynamoDB Mapper needs in order to build key conditions for [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) and [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html). Create a single-attribute spec with one of the [`KeySpec`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.items/-key-spec/index.html) companion functions (in alphabetical order: `byte`, `byteArray`, `int`, `long`, `short`, and `string`):
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.items.KeySpec
 
 val skuKey = KeySpec.string("sku")   // KeySpec.Key1<String>
@@ -117,7 +117,7 @@ For a composite key, the partition and sort keys are two separate [`KeySpec`](/s
 
 Combine the converter and key spec into an [`ItemSchema`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.items/-item-schema/index.html). For a partition-key-only item like `Product`, pass the converter and a single partition key:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.items.ItemSchema
 
 val productSchema = ItemSchema(
@@ -130,7 +130,7 @@ val productsTable = mapper.getTable("products", productSchema)
 
 For a composite-key item, supply both keys:
 
-```
+```kotlin
 val orderSchema = ItemSchema(
     converter = orderConverter,
     partitionKey = KeySpec.string("customerId"),
@@ -140,7 +140,7 @@ val orderSchema = ItemSchema(
 
 Equivalently, call `withKeySpec` on a converter:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.items.withKeySpec
 
 val productSchema = productConverter.withKeySpec(KeySpec.string("sku"))
@@ -168,7 +168,7 @@ The full package prefix is `aws.sdk.kotlin.hll.dynamodbmapper.values`. Set and n
 
 To support a type that has no built-in converter, implement `ValueConverter` yourself. For example, a converter for `kotlin.uuid.Uuid` stored as a DynamoDB string:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.values.ValueConverter
 import aws.sdk.kotlin.services.dynamodb.model.AttributeValue
 import kotlin.uuid.Uuid
@@ -193,7 +193,7 @@ Two more built-in [`ItemConverter`](/sdk-for-kotlin/api/latest/dynamodb-mapper/a
 
 For example:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.items.HeterogeneousItemConverter
 
 sealed interface PaymentMethod {

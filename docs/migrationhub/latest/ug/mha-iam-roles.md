@@ -34,7 +34,7 @@ For managed automation units, create an IAM role and give the role any name that
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -77,7 +77,7 @@ If your custom unit uses an AWS Systems Manager document as its target, then the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -111,7 +111,7 @@ For a custom automation unit that uses an AWS Lambda function as its target, you
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

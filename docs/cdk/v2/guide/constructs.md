@@ -67,32 +67,32 @@ Most constructs accept `props` as their third argument (or in Python, keyword ar
 
 **Example**
 
-```
+```javascript
 new s3.Bucket(this, 'MyEncryptedBucket', {
   encryption: s3.BucketEncryption.KMS,
   websiteIndexDocument: 'index.html'
 });
 ```
 
-```
+```javascript
 new s3.Bucket(this, 'MyEncryptedBucket', {
   encryption: s3.BucketEncryption.KMS,
   websiteIndexDocument: 'index.html'
 });
 ```
 
-```
+```python
 s3.Bucket(self, "MyEncryptedBucket", encryption=s3.BucketEncryption.KMS,
     website_index_document="index.html")
 ```
 
-```
+```java
 Bucket.Builder.create(this, "MyEncryptedBucket")
         .encryption(BucketEncryption.KMS_MANAGED)
         .websiteIndexDocument("index.html").build();
 ```
 
-```
+```csharp
 new Bucket(this, "MyEncryptedBucket", new BucketProps
 {
     Encryption = BucketEncryption.KMS_MANAGED,
@@ -100,7 +100,7 @@ new Bucket(this, "MyEncryptedBucket", new BucketProps
 });
 ```
 
-```
+```go
 	awss3.NewBucket(stack, jsii.String("MyEncryptedBucket"), &awss3.BucketProps{
 		Encryption: awss3.BucketEncryption_KMS,
 		WebsiteIndexDocument: jsii.String("index.html"),
@@ -118,37 +118,37 @@ Most AWS constructs have a set of [grant](permissions.md#permissions-grants) met
 
 **Example**
 
-```
+```javascript
 const rawData = new s3.Bucket(this, 'raw-data');
 const dataScience = new iam.Group(this, 'data-science');
 rawData.grants.read(dataScience);
 ```
 
-```
+```javascript
 const rawData = new s3.Bucket(this, 'raw-data');
 const dataScience = new iam.Group(this, 'data-science');
 rawData.grants.read(dataScience);
 ```
 
-```
+```python
 raw_data = s3.Bucket(self, 'raw-data')
 data_science = iam.Group(self, 'data-science')
 raw_data.grants.read(data_science)
 ```
 
-```
+```java
 Bucket rawData = new Bucket(this, "raw-data");
 Group dataScience = new Group(this, "data-science");
 rawData.getGrants().read(dataScience);
 ```
 
-```
+```csharp
 var rawData = new Bucket(this, "raw-data");
 var dataScience = new Group(this, "data-science");
 rawData.Grants.Read(dataScience);
 ```
 
-```
+```go
 	rawData := awss3.NewBucket(stack, jsii.String("raw-data"), nil)
 	dataScience := awsiam.NewGroup(stack, jsii.String("data-science"), nil)
 	rawData.Grants().Read(dataScience, nil)
@@ -160,7 +160,7 @@ The following code defines an AWS Lambda function and associates it with an Amaz
 
 **Example**
 
-```
+```javascript
 const jobsQueue = new sqs.Queue(this, 'jobs');
 const createJobLambda = new lambda.Function(this, 'create-job', {
   runtime: lambda.Runtime.NODEJS_18_X,
@@ -172,7 +172,7 @@ const createJobLambda = new lambda.Function(this, 'create-job', {
 });
 ```
 
-```
+```javascript
 const jobsQueue = new sqs.Queue(this, 'jobs');
 const createJobLambda = new lambda.Function(this, 'create-job', {
   runtime: lambda.Runtime.NODEJS_18_X,
@@ -184,7 +184,7 @@ const createJobLambda = new lambda.Function(this, 'create-job', {
 });
 ```
 
-```
+```python
 jobs_queue = sqs.Queue(self, "jobs")
 create_job_lambda = lambda_.Function(self, "create-job",
     runtime=lambda_.Runtime.NODEJS_18_X,
@@ -196,7 +196,7 @@ create_job_lambda = lambda_.Function(self, "create-job",
 )
 ```
 
-```
+```java
 final Queue jobsQueue = new Queue(this, "jobs");
 Function createJobLambda = Function.Builder.create(this, "create-job")
                 .handler("index.handler")
@@ -206,7 +206,7 @@ Function createJobLambda = Function.Builder.create(this, "create-job")
                 .build();
 ```
 
-```
+```csharp
 var jobsQueue = new Queue(this, "jobs");
 var createJobLambda = new Function(this, "create-job", new FunctionProps
 {
@@ -220,7 +220,7 @@ var createJobLambda = new Function(this, "create-job", new FunctionProps
 });
 ```
 
-```
+```go
 	createJobLambda := awslambda.NewFunction(stack, jsii.String("create-job"), &awslambda.FunctionProps{
 		Runtime: awslambda.Runtime_NODEJS_18_X(),
 		Handler: jsii.String("index.handler"),
@@ -242,7 +242,7 @@ For example, you can enable versioning and block public access on an Amazon S3 b
 
 **Example**
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
@@ -256,7 +256,7 @@ new s3.Bucket(this, 'MyL2Bucket', { removalPolicy: cdk.RemovalPolicy.DESTROY })
   .with(new s3.mixins.BucketAutoDeleteObjects());
 ```
 
-```
+```javascript
 const cdk = require('aws-cdk-lib');
 const s3 = require('aws-cdk-lib/aws-s3');
 
@@ -270,7 +270,7 @@ new s3.Bucket(this, 'MyL2Bucket', { removalPolicy: cdk.RemovalPolicy.DESTROY })
   .with(new s3.mixins.BucketAutoDeleteObjects());
 ```
 
-```
+```python
 import aws_cdk as cdk
 import aws_cdk.aws_s3 as s3
 
@@ -284,7 +284,7 @@ s3.Bucket(self, "MyL2Bucket", removal_policy=cdk.RemovalPolicy.DESTROY) \
     .with_(s3.mixins.BucketAutoDeleteObjects())
 ```
 
-```
+```java
 import software.amazon.awscdk.*;
 import software.amazon.awscdk.services.s3.*;
 
@@ -300,7 +300,7 @@ Bucket l2Bucket = Bucket.Builder.create(this, "MyL2Bucket")
 l2Bucket.with(new BucketAutoDeleteObjects());
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.S3;
 
@@ -317,7 +317,7 @@ var l2Bucket = new Bucket(this, "MyL2Bucket", new BucketProps
 l2Bucket.With(new BucketAutoDeleteObjects());
 ```
 
-```
+```go
 bucket := awss3.NewCfnBucket(stack, jsii.String("MyBucket"), nil)
 bucket.With(awss3.NewBucketVersioning())
 bucket.With(awss3.NewBucketBlockPublicAccess())
@@ -343,7 +343,7 @@ The following example defines an app with a single stack. Within the stack, an L
 
 **Example**
 
-```
+```javascript
 import { App, Stack, StackProps } from 'aws-cdk-lib';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
@@ -361,7 +361,7 @@ const app = new App();
 new HelloCdkStack(app, "HelloCdkStack");
 ```
 
-```
+```javascript
 const { App , Stack } = require('aws-cdk-lib');
 const s3 = require('aws-cdk-lib/aws-s3');
 
@@ -379,7 +379,7 @@ const app = new App();
 new HelloCdkStack(app, "HelloCdkStack");
 ```
 
-```
+```python
 from aws_cdk import App, Stack
 import aws_cdk.aws_s3 as s3
 from constructs import Construct
@@ -396,7 +396,7 @@ HelloCdkStack(app, "HelloCdkStack")
 ```
 Stack defined in `HelloCdkStack.java` file:
 
-```
+```java
 import software.constructs.Construct;
 import software.amazon.awscdk.Stack;
 import software.amazon.awscdk.StackProps;
@@ -417,7 +417,7 @@ public class HelloCdkStack extends Stack {
 ```
 App defined in `HelloCdkApp.java` file:
 
-```
+```java
 import software.amazon.awscdk.App;
 import software.amazon.awscdk.StackProps;
 
@@ -433,7 +433,7 @@ public class HelloCdkApp {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.S3;
 
@@ -459,7 +459,7 @@ namespace HelloCdkApp
 }
 ```
 
-```
+```go
 func NewHelloCdkStack(scope constructs.Construct, id string, props *HelloCdkStackProps) awscdk.Stack {
 	var sprops awscdk.StackProps
 	if props != nil {
@@ -487,34 +487,34 @@ In this example, we create a `bucket` object using the `CfnBucket` L1 construct:
 
 **Example**
 
-```
+```javascript
 const bucket = new s3.CfnBucket(this, "amzn-s3-demo-bucket", {
   bucketName: "amzn-s3-demo-bucket"
 });
 ```
 
-```
+```javascript
 const bucket = new s3.CfnBucket(this, "amzn-s3-demo-bucket", {
   bucketName: "amzn-s3-demo-bucket"
 });
 ```
 
-```
+```python
 bucket = s3.CfnBucket(self, "amzn-s3-demo-bucket", bucket_name="amzn-s3-demo-bucket")
 ```
 
-```
+```java
 CfnBucket bucket = new CfnBucket.Builder().bucketName("amzn-s3-demo-bucket").build();
 ```
 
-```
+```csharp
 var bucket = new CfnBucket(this, "amzn-s3-demo-bucket", new CfnBucketProps
 {
     BucketName= "amzn-s3-demo-bucket"
 });
 ```
 
-```
+```go
 	awss3.NewCfnBucket(stack, jsii.String("amzn-s3-demo-bucket"), &awss3.CfnBucketProps{
 		BucketName: jsii.String("amzn-s3-demo-bucket"),
 	})
@@ -524,7 +524,7 @@ Construct properties that aren’t simple Booleans, strings, numbers, or contain
 
 **Example**
 
-```
+```javascript
 const bucket = new s3.CfnBucket(this, "amzn-s3-demo-bucket", {
   bucketName: "amzn-s3-demo-bucket",
   corsConfiguration: {
@@ -536,7 +536,7 @@ const bucket = new s3.CfnBucket(this, "amzn-s3-demo-bucket", {
 });
 ```
 
-```
+```javascript
 const bucket = new s3.CfnBucket(this, "amzn-s3-demo-bucket", {
   bucketName: "amzn-s3-demo-bucket",
   corsConfiguration: {
@@ -549,7 +549,7 @@ const bucket = new s3.CfnBucket(this, "amzn-s3-demo-bucket", {
 ```
 In Python, these properties are represented by types defined as inner classes of the L1 construct. For example, the optional property `cors_configuration` of a `CfnBucket` requires a wrapper of type `CfnBucket.CorsConfigurationProperty`. Here we are defining `cors_configuration` on a `CfnBucket` instance.
 
-```
+```python
 bucket = CfnBucket(self, "amzn-s3-demo-bucket", bucket_name="amzn-s3-demo-bucket",
     cors_configuration=CfnBucket.CorsConfigurationProperty(
         cors_rules=[CfnBucket.CorsRuleProperty(
@@ -561,7 +561,7 @@ bucket = CfnBucket(self, "amzn-s3-demo-bucket", bucket_name="amzn-s3-demo-bucket
 ```
 In Java, these properties are represented by types defined as inner classes of the L1 construct. For example, the optional property `corsConfiguration` of a `CfnBucket` requires a wrapper of type `CfnBucket.CorsConfigurationProperty`. Here we are defining `corsConfiguration` on a `CfnBucket` instance.
 
-```
+```java
 CfnBucket bucket = CfnBucket.Builder.create(this, "amzn-s3-demo-bucket")
                         .bucketName("amzn-s3-demo-bucket")
                         .corsConfiguration(new CfnBucket.CorsConfigurationProperty.Builder()
@@ -574,7 +574,7 @@ CfnBucket bucket = CfnBucket.Builder.create(this, "amzn-s3-demo-bucket")
 ```
 In C\#, these properties are represented by types defined as inner classes of the L1 construct. For example, the optional property `CorsConfiguration` of a `CfnBucket` requires a wrapper of type `CfnBucket.CorsConfigurationProperty`. Here we are defining `CorsConfiguration` on a `CfnBucket` instance.
 
-```
+```csharp
 var bucket = new CfnBucket(this, "amzn-s3-demo-bucket", new CfnBucketProps
 {
     BucketName = "amzn-s3-demo-bucket",
@@ -592,7 +592,7 @@ var bucket = new CfnBucket(this, "amzn-s3-demo-bucket", new CfnBucketProps
 ```
 In Go, these types are named using the name of the L1 construct, an underscore, and the property name. For example, the optional property `CorsConfiguration` of a `CfnBucket` requires a wrapper of type `CfnBucket_CorsConfigurationProperty`. Here we are defining `CorsConfiguration` on a `CfnBucket` instance.
 
-```
+```go
 	awss3.NewCfnBucket(stack, jsii.String("amzn-s3-demo-bucket"), &awss3.CfnBucketProps{
 		BucketName: jsii.String("amzn-s3-demo-bucket"),
 		CorsConfiguration: &awss3.CfnBucket_CorsConfigurationProperty{
@@ -626,7 +626,7 @@ The following example creates a Lambda function using an L1 construct (`CfnFunct
 
 **Example**
 
-```
+```javascript
 const role = new iam.Role(this, 'MyRole', {
   assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
   managedPolicies: [
@@ -652,7 +652,7 @@ const myFunction = new lambda.CfnFunction(this, 'HelloWorldFunction', {
 });
 ```
 
-```
+```javascript
 const role = new iam.Role(this, 'MyRole', {
   assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
   managedPolicies: [
@@ -678,7 +678,7 @@ const myFunction = new lambda.CfnFunction(this, "HelloWorldFunction", {
 });
 ```
 
-```
+```python
 role = iam.Role(self, "MyRole",
     assumed_by=iam.ServicePrincipal("lambda.amazonaws.com"),
     managed_policies=[
@@ -706,7 +706,7 @@ my_function = _lambda.CfnFunction(self, "HelloWorldFunction",
 )
 ```
 
-```
+```java
 Role role = Role.Builder.create(this, "MyRole")
     .assumedBy(new ServicePrincipal("lambda.amazonaws.com"))
     .managedPolicies(Arrays.asList(
@@ -732,7 +732,7 @@ CfnFunction myFunction = CfnFunction.Builder.create(this, "HelloWorldFunction")
     .build();
 ```
 
-```
+```csharp
 var role = new Role(this, "MyRole", new RoleProps
 {
     AssumedBy = new ServicePrincipal("lambda.amazonaws.com"),
@@ -763,7 +763,7 @@ var myFunction = new CfnFunction(this, "HelloWorldFunction", new CfnFunctionProp
 });
 ```
 
-```
+```go
 role := awsiam.NewRole(stack, jsii.String("MyRole"), &awsiam.RoleProps{
 	AssumedBy: awsiam.NewServicePrincipal(jsii.String("lambda.amazonaws.com"), nil),
 	ManagedPolicies: &[]awsiam.IManagedPolicy{
@@ -801,7 +801,7 @@ The following example shows the same Lambda function, but using the role object 
 
 **Example**
 
-```
+```javascript
 const role = new iam.Role(this, 'MyRole', {
   assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
   managedPolicies: [
@@ -829,7 +829,7 @@ const myFunction = new lambda.CfnFunction(this, 'HelloWorldFunction', {
 // After creation, myFunction.role contains the resolved ARN string
 ```
 
-```
+```javascript
 const role = new iam.Role(this, 'MyRole', {
   assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
   managedPolicies: [
@@ -857,7 +857,7 @@ const myFunction = new lambda.CfnFunction(this, "HelloWorldFunction", {
 // After creation, myFunction.role contains the resolved ARN string
 ```
 
-```
+```python
 role = iam.Role(self, "MyRole",
     assumed_by=iam.ServicePrincipal("lambda.amazonaws.com"),
     managed_policies=[
@@ -887,7 +887,7 @@ my_function = _lambda.CfnFunction(self, "HelloWorldFunction",
 # After creation, my_function.role contains the resolved ARN string
 ```
 
-```
+```java
 Role role = Role.Builder.create(this, "MyRole")
     .assumedBy(new ServicePrincipal("lambda.amazonaws.com"))
     .managedPolicies(Arrays.asList(
@@ -915,7 +915,7 @@ CfnFunction myFunction = CfnFunction.Builder.create(this, "HelloWorldFunction")
 // After creation, myFunction.getRole() contains the resolved ARN string
 ```
 
-```
+```csharp
 var role = new Role(this, "MyRole", new RoleProps
 {
     AssumedBy = new ServicePrincipal("lambda.amazonaws.com"),
@@ -948,7 +948,7 @@ var myFunction = new CfnFunction(this, "HelloWorldFunction", new CfnFunctionProp
 // After creation, myFunction.Role contains the resolved ARN string
 ```
 
-```
+```go
 role := awsiam.NewRole(stack, jsii.String("MyRole"), &awsiam.RoleProps{
 	AssumedBy: awsiam.NewServicePrincipal(jsii.String("lambda.amazonaws.com"), nil),
 	ManagedPolicies: &[]awsiam.IManagedPolicy{
@@ -982,7 +982,7 @@ In the following example, we define an Amazon S3 bucket by creating an object fr
 
 **Example**
 
-```
+```javascript
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
 // "this" is HelloCdkStack
@@ -991,7 +991,7 @@ new s3.Bucket(this, 'MyFirstBucket', {
 });
 ```
 
-```
+```javascript
 const s3 = require('aws-cdk-lib/aws-s3');
 
 // "this" is HelloCdkStack
@@ -1000,14 +1000,14 @@ new s3.Bucket(this, 'MyFirstBucket', {
 });
 ```
 
-```
+```python
 import aws_cdk.aws_s3 as s3
 
 # "self" is HelloCdkStack
 s3.Bucket(self, "MyFirstBucket", versioned=True)
 ```
 
-```
+```java
 import software.amazon.awscdk.services.s3.*;
 
 public class HelloCdkStack extends Stack {
@@ -1024,7 +1024,7 @@ public class HelloCdkStack extends Stack {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK.AWS.S3;
 
 // "this" is HelloCdkStack
@@ -1034,7 +1034,7 @@ new Bucket(this, "MyFirstBucket", new BucketProps
 });
 ```
 
-```
+```go
 import (
 	"github.com/aws/aws-cdk-go/awscdk/v2/awss3"
 	"github.com/aws/jsii-runtime-go"
@@ -1064,7 +1064,7 @@ The following example shows how to declare a construct that represents an Amazon
 
 **Example**
 
-```
+```javascript
 export interface NotifyingBucketProps {
   prefix?: string;
 }
@@ -1080,7 +1080,7 @@ export class NotifyingBucket extends Construct {
 }
 ```
 
-```
+```javascript
 class NotifyingBucket extends Construct {
   constructor(scope, id, props = {}) {
     super(scope, id);
@@ -1094,7 +1094,7 @@ class NotifyingBucket extends Construct {
 module.exports = { NotifyingBucket }
 ```
 
-```
+```python
 class NotifyingBucket(Construct):
 
     def __init__(self, scope: Construct, id: str, *, prefix=None):
@@ -1105,7 +1105,7 @@ class NotifyingBucket(Construct):
             s3.NotificationKeyFilter(prefix=prefix))
 ```
 
-```
+```java
 public class NotifyingBucket extends Construct {
 
     public NotifyingBucket(final Construct scope, final String id) {
@@ -1132,7 +1132,7 @@ public class NotifyingBucket extends Construct {
 }
 ```
 
-```
+```csharp
 public class NotifyingBucketProps : BucketProps
 {
     public string Prefix { get; set; }
@@ -1152,7 +1152,7 @@ public class NotifyingBucket : Construct
 }
 ```
 
-```
+```go
 type NotifyingBucketProps struct {
 	awss3.BucketProps
 	Prefix *string
@@ -1184,27 +1184,27 @@ The `NotifyingBucket` constructor has a typical construct signature: `scope`, `i
 
 **Example**
 
-```
+```javascript
 new NotifyingBucket(this, 'MyNotifyingBucket');
 ```
 
-```
+```javascript
 new NotifyingBucket(this, 'MyNotifyingBucket');
 ```
 
-```
+```python
 NotifyingBucket(self, "MyNotifyingBucket")
 ```
 
-```
+```java
 new NotifyingBucket(this, "MyNotifyingBucket");
 ```
 
-```
+```csharp
 new NotifyingBucket(this, "MyNotifyingBucket");
 ```
 
-```
+```go
 NewNotifyingBucket(stack, jsii.String("MyNotifyingBucket"), nil)
 ```
 
@@ -1212,30 +1212,30 @@ Or you could use `props` (in Java, an additional parameter) to specify the path 
 
 **Example**
 
-```
+```javascript
 new NotifyingBucket(this, 'MyNotifyingBucket', { prefix: 'images/' });
 ```
 
-```
+```javascript
 new NotifyingBucket(this, 'MyNotifyingBucket', { prefix: 'images/' });
 ```
 
-```
+```python
 NotifyingBucket(self, "MyNotifyingBucket", prefix="images/")
 ```
 
-```
+```java
 new NotifyingBucket(this, "MyNotifyingBucket", "/images");
 ```
 
-```
+```csharp
 new NotifyingBucket(this, "MyNotifyingBucket", new NotifyingBucketProps
 {
     Prefix = "/images"
 });
 ```
 
-```
+```go
 NewNotifyingBucket(stack, jsii.String("MyNotifyingBucket"), &NotifyingBucketProps{
 	Prefix: jsii.String("images/"),
 })
@@ -1245,7 +1245,7 @@ Typically, you would also want to expose some properties or methods on your cons
 
 **Example**
 
-```
+```javascript
 export class NotifyingBucket extends Construct {
   public readonly topic: sns.Topic;
 
@@ -1258,7 +1258,7 @@ export class NotifyingBucket extends Construct {
 }
 ```
 
-```
+```javascript
 class NotifyingBucket extends Construct {
 
   constructor(scope, id, props) {
@@ -1272,7 +1272,7 @@ class NotifyingBucket extends Construct {
 module.exports = { NotifyingBucket };
 ```
 
-```
+```python
 class NotifyingBucket(Construct):
 
     def __init__(self, scope: Construct, id: str, *, prefix=None, **kwargs):
@@ -1283,7 +1283,7 @@ class NotifyingBucket(Construct):
             s3.NotificationKeyFilter(prefix=prefix))
 ```
 
-```
+```java
 public class NotifyingBucket extends Construct {
 
     public Topic topic = null;
@@ -1312,7 +1312,7 @@ public class NotifyingBucket extends Construct {
 }
 ```
 
-```
+```csharp
 public class NotifyingBucket : Construct
 {
     public readonly Topic topic;
@@ -1330,7 +1330,7 @@ public class NotifyingBucket : Construct
 ```
 To do this in Go, we’ll need a little extra plumbing. Our original `NewNotifyingBucket` function returned an `awss3.Bucket`. We’ll need to extend `Bucket` to include a `topic` member by creating a `NotifyingBucket` struct. Our function will then return this type.
 
-```
+```go
 type NotifyingBucket struct {
 	awss3.Bucket
 	topic awssns.Topic
@@ -1362,30 +1362,30 @@ Now, consumers can subscribe to the topic, for example:
 
 **Example**
 
-```
+```javascript
 const queue = new sqs.Queue(this, 'NewImagesQueue');
 const images = new NotifyingBucket(this, '/images');
 images.topic.addSubscription(new sns_sub.SqsSubscription(queue));
 ```
 
-```
+```javascript
 const queue = new sqs.Queue(this, 'NewImagesQueue');
 const images = new NotifyingBucket(this, '/images');
 images.topic.addSubscription(new sns_sub.SqsSubscription(queue));
 ```
 
-```
+```python
 queue = sqs.Queue(self, "NewImagesQueue")
 images = NotifyingBucket(self, prefix="Images")
 images.topic.add_subscription(sns_sub.SqsSubscription(queue))
 ```
 
-```
+```java
 NotifyingBucket images = new NotifyingBucket(this, "MyNotifyingBucket", "/images");
 images.topic.addSubscription(new SqsSubscription(queue));
 ```
 
-```
+```csharp
 var queue = new Queue(this, "NewImagesQueue");
 var images = new NotifyingBucket(this, "MyNotifyingBucket", new NotifyingBucketProps
 {
@@ -1394,7 +1394,7 @@ var images = new NotifyingBucket(this, "MyNotifyingBucket", new NotifyingBucketP
 images.topic.AddSubscription(new SqsSubscription(queue));
 ```
 
-```
+```go
 	queue := awssqs.NewQueue(stack, jsii.String("NewImagesQueue"), nil)
 	images := NewNotifyingBucket(stack, jsii.String("MyNotifyingBucket"), &NotifyingBucketProps{
 		Prefix: jsii.String("/images"),
@@ -1407,4 +1407,4 @@ images.topic.AddSubscription(new SqsSubscription(queue));
 
 The following video provides a comprehensive overview of CDK constructs, and explains how you can use them in your CDK apps.
 
-[![AWS Videos](https://img.youtube.com/vi/PzU-i0rJPGw?rel=0/0.jpg)](https://www.youtube.com/watch?v=PzU-i0rJPGw?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/PzU-i0rJPGw/0.jpg)](https://www.youtube.com/watch?v=PzU-i0rJPGw)

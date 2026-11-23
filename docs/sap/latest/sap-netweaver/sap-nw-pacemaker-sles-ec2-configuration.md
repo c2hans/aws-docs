@@ -45,7 +45,7 @@ The following AWS Console or AWS CLI commands can be used to modify the IAM role
 
 To assign an IAM role using the AWS CLI:
 
-```
+```console
 $ aws ec2 associate-iam-instance-profile --instance-id <instance_id> --iam-instance-profile Name=<iam_instance_profile_name>
 ```
 
@@ -55,7 +55,7 @@ Repeat for all nodes in the cluster.
 
 You can verify the IAM role assignment on your instances using the AWS CLI:
 
-```
+```console
 $ aws ec2 describe-instances --instance-ids <instance_id> --query 'Reservations[0].Instances[0].IamInstanceProfile' --output table
 ```
 
@@ -65,21 +65,21 @@ When --dry-run is used, the AWS CLI or SDK sends the request to the EC2 service 
 
 Check that the tags are correctly set and can be queried from both instances if using the ec2/stonith fencing agent:
 
-```
+```console
 $ aws ec2 describe-tags --filters "Name=resource-id,Values=<instance_id_1>" "Name=key,Values=
 <cluster_tag>" --region=<region> --output=text | cut -f5
 ```
 
 Check that the fencing resource has the permission to shut down both instances:
 
-```
+```console
 $ aws ec2 stop-instances --instance-ids <instance_id_1> --dry-run
 $ aws ec2 stop-instances --instance-ids <instance_id_2> --dry-run
 ```
 
 Check that the overlay IP resource has the pemissions to update the route tables:
 
-```
+```console
 $ aws ec2 replace-route --route-table-id <routetable_id> --destination-cidr-block <ascs_overlayip>/32 --instance-id <instance_id_1> --dry-run
 ```
 
@@ -112,7 +112,7 @@ The following AWS Console or AWS CLI commands can be used to modify security gro
 
 To modify security groups using the AWS CLI:
 
-```
+```console
 $ aws ec2 modify-instance-attribute --instance-id <instance_id> --groups <security_group_id1> <security_group_id2>
 ```
 
@@ -122,7 +122,7 @@ Repeat for all nodes in the cluster.
 
 You can verify the security group rules on your instances using the AWS CLI:
 
-```
+```console
 $ aws ec2 describe-instance-attribute --instance-id <instance_id> --attribute groupSet
 ```
 
@@ -159,7 +159,7 @@ The following AWS Console or AWS CLI commands can be used to assign secondary IP
 
 To assign secondary IP addresses using the AWS CLI:
 
-```
+```console
 $ ENI_ID=$(aws ec2 describe-instances --instance-id <instance_id> \
     --query 'Reservations[0].Instances[0].NetworkInterfaces[0].NetworkInterfaceId' \
     --output text)
@@ -172,7 +172,7 @@ Repeat for all nodes in the cluster.
 
 You can verify the secondary IP configuration on your instances using the AWS CLI:
 
-```
+```console
 $ aws ec2 describe-instances --instance-id <instance_id> \
     --query 'Reservations[*].Instances[*].NetworkInterfaces[*].PrivateIpAddresses[*].PrivateIpAddress' \
     --output text
@@ -208,7 +208,7 @@ The following AWS Console or AWS CLI commands can be used to modify the attribut
 
 To modify using the AWS CLI (requires appropriate configuration permissions):
 
-```
+```console
 $ aws ec2 modify-instance-attribute --instance-id <instance_id> --no-source-dest-check
 ```
 
@@ -218,13 +218,13 @@ Repeat for all nodes in the cluster.
 
 To confirm the value of an attribute for a particular instance, use the following command. The value `false` means source/destination checking is disabled
 
-```
+```console
 $ aws ec2 describe-instance-attribute --instance-id <instance_id> --attribute sourceDestCheck
 ```
 
 The output
 
-```
+```json
 {
     "InstanceId": "i-xxxxinstidforhost1",
     "SourceDestCheck": {
@@ -258,7 +258,7 @@ The following AWS Console or CLI commands can be used to modify the attribute.
 
 To modify using the AWS CLI (requires appropriate configuration permissions):
 
-```
+```console
 $ aws ec2 modify-instance-attribute --instance-id <instance_id> --no-disable-api-stop
 ```
 
@@ -268,13 +268,13 @@ Repeat this command for all nodes in the cluster.
 
 To confirm the value of an attribute for a particular instance, use the following command. The value `false` means it is possible to stop the instance using an AWS CLI.
 
-```
+```console
 $ aws ec2 describe-instance-attribute --instance-id <instance_id> --attribute disableApiStop
 ```
 
 The output
 
-```
+```json
 {
     "InstanceId": "i-xxxxinstidforhost1",
     "DisableApiStop": {
@@ -308,7 +308,7 @@ The following AWS Console or CLI commands can be used to modify the attribute.
 
 To modify auto-recovery settings (requires appropriate configuration permissions):
 
-```
+```console
 $ aws ec2 modify-instance-maintenance-options --instance-id <instance_id> --auto-recovery disabled
 ```
 
@@ -318,13 +318,13 @@ Repeat this command for all nodes in the cluster.
 
 To confirm the value of an attribute for a particular instance, use the following command. The value `disabled` means autorecovery will not be attempted.
 
-```
+```console
 $ aws ec2 describe-instances --instance-ids <instance_id> --query 'Reservations[*].Instances[*].MaintenanceOptions.AutoRecovery'
 ```
 
 The output:
 
-```
+```json
 [
     [
         "disabled"
@@ -371,7 +371,7 @@ The following AWS Console or AWS CLI commands can be used to create resource tag
 
 To create tags using the AWS CLI:
 
-```
+```console
 $ aws ec2 create-tags --resources <instance_id> --tags Key=<cluster_tag>,Value=<hostname>
 ```
 
@@ -381,6 +381,6 @@ Repeat for all nodes in the cluster with their respective hostnames.
 
 You can run the following command locally to validate the tag values and IAM permissions to describe the tags. Run this command on all instances in the cluster, for all instances in the cluster.
 
-```
+```console
 $ aws ec2 describe-tags --filters "Name=resource-id,Values=<instance_id>" "Name=key,Values=<cluster_tag>" --region=<region> --output=text | cut -f5
 ```

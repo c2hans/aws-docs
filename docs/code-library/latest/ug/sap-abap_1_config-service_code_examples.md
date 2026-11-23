@@ -26,7 +26,7 @@ The following code example shows how to use `DeleteConfigRule`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cfs#code-examples).
 
-```
+```sap-abap
     lo_cfs->deleteconfigrule( iv_rule_name ).
     MESSAGE 'Deleted AWS Config rule.' TYPE 'I'.
 ```
@@ -40,7 +40,7 @@ The following code example shows how to use `DescribeConfigRules`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cfs#code-examples).
 
-```
+```sap-abap
     DATA(lo_result) = lo_cfs->describeconfigrules(
       it_configrulenames = VALUE /aws1/cl_cfsconfigrulenames_w=>tt_configrulenames(
         ( NEW /aws1/cl_cfsconfigrulenames_w( iv_rule_name ) )
@@ -59,7 +59,7 @@ The following code example shows how to use `PutConfigRule`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cfs#code-examples).
 
-```
+```sap-abap
     " Create a config rule for S3 bucket public read prohibition
     lo_cfs->putconfigrule(
       io_configrule = NEW /aws1/cl_cfsconfigrule(

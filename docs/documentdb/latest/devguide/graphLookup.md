@@ -175,7 +175,7 @@ To view a code example that builds the employee reporting hierarchy from the fir
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function example() {
@@ -213,7 +213,7 @@ example();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 from pymongo.errors import PyMongoError
 

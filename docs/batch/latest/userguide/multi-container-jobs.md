@@ -17,7 +17,7 @@ The main difference is that there is a new object added to the job definition to
 
 For example, a job definition that uses `ContainerProperties` on Amazon ECS and Fargate has the following structure:
 
-```
+```json
 {
    "containerProperties": {
      ...
@@ -30,7 +30,7 @@ For example, a job definition that uses `ContainerProperties` on Amazon ECS and 
 
 A job definition that uses `EcsProperties` on Amazon ECS and Fargate has the following structure:
 
-```
+```json
 {
   "ecsProperties": {
     "taskProperties": [{

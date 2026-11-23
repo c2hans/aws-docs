@@ -40,7 +40,7 @@ If *geom1* or *geom2* is a geometry collection, then an error is returned.
 
 The following SQL checks if the two polygons are geometrically equal.
 
-```
+```sql
 SELECT ST_Equals(ST_GeomFromText('POLYGON((0 2,1 1,0 -1,0 2))'), ST_GeomFromText('POLYGON((-1 3,2 1,0 -3,-1 3))'));
 ```
 
@@ -52,7 +52,7 @@ st_equals
 
 The following SQL checks if the two linestrings are geometrically equal.
 
-```
+```sql
 SELECT ST_Equals(ST_GeomFromText('LINESTRING(1 0,10 0)'), ST_GeomFromText('LINESTRING(1 0,5 0,10 0)'));
 ```
 

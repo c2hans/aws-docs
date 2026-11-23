@@ -167,7 +167,7 @@ All branches (for schedule triggers). One workflow run will start per branch in 
 
    A code push trigger might look like this:
 
-   ```
+   ```yaml
    Triggers:
      - Type: PUSH
        Branches:
@@ -176,7 +176,7 @@ All branches (for schedule triggers). One workflow run will start per branch in 
 
    A pull request trigger might look like this:
 
-   ```
+   ```yaml
    Triggers:
      - Type: PULLREQUEST
        Branches:
@@ -189,7 +189,7 @@ All branches (for schedule triggers). One workflow run will start per branch in 
 
    A schedule trigger might look like this:
 
-   ```
+   ```yaml
    Triggers:
      - Type: SCHEDULE
        Branches:

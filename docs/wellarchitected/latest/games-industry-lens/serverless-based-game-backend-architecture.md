@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 
 ![Serverless-based game backend reference architecture](https://docs.aws.amazon.com/wellarchitected/latest/games-industry-lens/images/image5.png)
 
+*Serverless-based game backend reference architecture*
+
  This reference architecture illustrates a web-based trivia game that provides single player and multiplayer features.
 +  **Player authentication**: Players authenticate using Amazon Cognito, which provides secure authentication with a user directory for player identity management.
 +  **Game logic as serverless functions**: Game features and backend business logic run as AWS Lambda functions that are initiated in response to events, which keeps costs down because you only pay when the function runs. Lambda gives you the flexibility to write each game feature as a separate microservice using a programming language of your choice. For example, you might choose to develop .NET Lambda functions if you have experience using C\# to build Unity games, or you might choose to develop Node.js Lambda functions if you desire to program a frontend and backend for a web-based game both in JavaScript.

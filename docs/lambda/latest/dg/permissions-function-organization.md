@@ -14,7 +14,7 @@ Using `put-resource-policy` replaces any existing resource-based policy on the r
 
 The following example policy grants invoke access to all AWS accounts in organization `o-a1b2c3d4e5f`:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -44,7 +44,7 @@ aws lambda put-resource-policy \
 
 With a full JSON policy, you can also deny access to specific accounts within an organization:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

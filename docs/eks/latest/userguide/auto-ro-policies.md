@@ -29,7 +29,7 @@ A policy selects a workload when the workload’s namespace matches `namespaceSe
 
 The following YAML policy selects every Deployment and StatefulSet labeled `tier: web`, in every namespace except `payments`:
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1beta1
 kind: ClusterResourceOptimizationPolicy
 metadata:
@@ -96,7 +96,7 @@ The order in which you create policies doesn’t matter, and there’s no priori
 
 Suppose a cluster has the following three policies.
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1beta1
 kind: ClusterResourceOptimizationPolicy
 metadata:
@@ -141,7 +141,7 @@ The following table shows the result for workloads in different namespaces.
 
 To exclude a workload that a policy selects, add the following annotation to the Deployment or StatefulSet metadata, not to its Pod template.
 
-```
+```yaml
 metadata:
   annotations:
     optimization.eks.amazonaws.com/enabled: "false"
@@ -154,13 +154,13 @@ The annotation wins over every policy. Resource optimization deletes the workloa
 
 To see how many workloads each policy selects, run the following `kubectl` command. A workload that several policies select counts on each of them.
 
-```
+```bash
 kubectl get crop
 ```
 
 The following example output shows the mode, profile, and number of selected workloads for each policy.
 
-```
+```bash
 NAME               MODE        PROFILE    READY   SELECTED   AGE
 batch              Recommend   Balanced   True    2          3d
 default            Recommend   Balanced   True    4          3d
@@ -169,13 +169,13 @@ search-namespace   Apply       Balanced   True    2          3d
 
 To see the result for each workload in a namespace, run the following `kubectl` command to list its `ResourceOptimization` objects. The `POLICY` column shows the winning policy, and `MODE` shows the mode the workload gets.
 
-```
+```bash
 kubectl get ro -n search
 ```
 
 The following example output shows the winning policy and mode for each workload.
 
-```
+```bash
 NAME              KIND         TARGET     POLICY             MODE        AGE
 frontend-deploy   Deployment   frontend   search-namespace   Apply       3d
 indexer-deploy    Deployment   indexer    batch              Recommend   3d
@@ -185,13 +185,13 @@ A workload with no `ResourceOptimization` object isn’t managed. Check that a p
 
 The object’s `status.policySource` field also names the winning policy. Every selecting policy is an owner of the object. The winning policy has `controller: true`. The object exists while at least one valid policy selects the workload. To see the winning policy for one workload, run the following `kubectl` command:
 
-```
+```bash
 kubectl get ro indexer-deploy -n search -o jsonpath='{.status.policySource}'
 ```
 
 The following example output shows the policy that supplied each field.
 
-```
+```bash
 {"mode":"batch","profile":"batch"}
 ```
 

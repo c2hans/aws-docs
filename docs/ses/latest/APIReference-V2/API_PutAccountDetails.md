@@ -42,7 +42,7 @@ Pattern: `^(.+)@(.+)$`
 Required: No
 
  ** [ContactLanguage](#API_PutAccountDetails_RequestSyntax) **   <a name="SES-PutAccountDetails-request-ContactLanguage"></a>
-The language you would prefer to be contacted with.
+The language you would prefer to be contacted with. The contact language can be one of `EN` or `JA`.
 Type: String
 Valid Values: `EN | JA`
 Required: No

@@ -11,7 +11,7 @@ You can use the following code snippets to describe batch load tasks.
 ------
 #### [  Java  ]
 
-```
+```java
     public void describeBatchLoadTask(String taskId) {
             final DescribeBatchLoadTaskResponse batchLoadTaskResponse = amazonTimestreamWrite
                             .describeBatchLoadTask(DescribeBatchLoadTaskRequest.builder()
@@ -28,7 +28,7 @@ You can use the following code snippets to describe batch load tasks.
 ------
 #### [  Go  ]
 
-```
+```go
 package main
 
 import (
@@ -71,7 +71,7 @@ func main() {
 ------
 #### [  Python  ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -105,7 +105,7 @@ The following snippet uses AWS SDK for JavaScript v3. For more information about
 
 For API details, see [Class DescribeBatchLoadCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-timestream-write/classes/describebatchloadtaskcommand.html) and [DescribeBatchLoadTask](https://docs.aws.amazon.com/timestream/latest/developerguide/API_DescribeBatchLoadTask.html).
 
-```
+```javascript
 import { TimestreamWriteClient, DescribeBatchLoadTaskCommand } from "@aws-sdk/client-timestream-write";
 const writeClient = new TimestreamWriteClient({ region: "{{<region>}}", endpoint: "{{<endpoint>}}" });
 
@@ -131,7 +131,7 @@ try {
 ------
 #### [  .NET  ]
 
-```
+```cs
 using System;
 using System.IO;
 using System.Collections.Generic;
@@ -174,7 +174,7 @@ namespace TimestreamDotNetSample
 }
 ```
 
-```
+```cs
 using Amazon.TimestreamWrite;
 using Amazon.TimestreamWrite.Model;
 using Amazon;

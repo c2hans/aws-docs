@@ -9,11 +9,11 @@ To create a VPC endpoint for the AWS IoT SiteWise service, use either the Amazon
 Create a VPC endpoint for AWS IoT SiteWise by using one of the following service names:
 + For the **data plane** API operations, use the following service name:
 
-  ```
+  ```bash
   com.amazonaws.{{region}}.iotsitewise.data
   ```
 + For the **control plane** API operations, use the following service name:
 
-  ```
+  ```bash
   com.amazonaws.{{region}}.iotsitewise.api
   ```

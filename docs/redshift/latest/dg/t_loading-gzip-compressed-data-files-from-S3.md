@@ -10,7 +10,7 @@ To load data files that are compressed using gzip, lzop, or bzip2, include the c
 
 For example, the following command loads from files that were compressing using lzop.
 
-```
+```sql
 COPY customer FROM 's3://amzn-s3-demo-bucket/customer.lzo'
 IAM_ROLE 'arn:aws:iam::0123456789012:role/MyRedshiftRole'
 DELIMITER '|' LZOP;

@@ -70,7 +70,7 @@ The header and payload are base64url-encoded JSON. You can identify them by the 
 
 The following example application verifies user pool tokens with `aws-jwt-verify`.
 
-```
+```javascript
 // cognito-verify.js
 // Usage example: node cognito-verify.js eyJra789ghiEXAMPLE
 

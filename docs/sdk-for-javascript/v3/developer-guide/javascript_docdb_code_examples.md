@@ -25,7 +25,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using JavaScript.
 
-```
+```javascript
 console.log('Loading function');
 exports.handler = async (event, context) => {
     event.events.forEach(record => {
@@ -43,7 +43,7 @@ const logDocumentDBEvent = (record) => {
 ```
 Consuming a Amazon DocumentDB event with Lambda using TypeScript
 
-```
+```javascript
 import { DocumentDBEventRecord, DocumentDBEventSubscriptionContext } from 'aws-lambda';
 
 console.log('Loading function');

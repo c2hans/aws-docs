@@ -35,7 +35,7 @@ aws ec2 describe-network-acls --filters Name=association.subnet-id,Values={{subn
 
 The following is example output.
 
-```
+```json
 [
     "acl-03701d1f82d8c3fd6"
 ]
@@ -60,7 +60,7 @@ aws ec2 describe-network-acls --network-acl-ids {{acl-060415a18fcc9afde}} --quer
 
 The following is example output.
 
-```
+```json
 [
     "subnet-0d2d1b81e0bc9c6d4",
     "subnet-0e990c67809773b19",

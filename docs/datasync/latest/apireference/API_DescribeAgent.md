@@ -120,7 +120,7 @@ HTTP Status Code: 400
 
 The following example returns information about an agent specified in a request.
 
-```
+```json
 {
   "AgentArn": "arn:aws:datasync:us-east-2:111122223333:agent/agent-1234567890abcdef0"
 }
@@ -131,7 +131,7 @@ The following example returns information about an agent specified in a request.
 
 The following example response describes an agent that uses a public service endpoint.
 
-```
+```json
 {
     "AgentArn": "arn:aws:datasync:us-east-2:111122223333:agent/agent-1234567890abcdef0",
     "Name": "Data center migration agent",

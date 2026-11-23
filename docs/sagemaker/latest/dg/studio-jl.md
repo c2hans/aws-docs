@@ -51,7 +51,7 @@ The following policy shows how to limit the JupyterLab version at the domain lev
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -82,7 +82,7 @@ The following policy shows how to limit the JupyterLab version at the user prof
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -113,7 +113,7 @@ The following policy shows how to limit the JupyterLab version at the applicati
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

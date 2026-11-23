@@ -11,7 +11,7 @@ The following list describes compute environment parameters that aren't valid or
 `type`
 This parameter must be `MANAGED`.
 
-```
+```json
 "type": "MANAGED"
 ```
 
@@ -25,6 +25,6 @@ This isn't applicable for Fargate compute environments and can't be provided. To
 `type`
 This must be either `FARGATE` or `FARGATE_SPOT`.
 
-```
+```json
 "type": "FARGATE_SPOT"
 ```

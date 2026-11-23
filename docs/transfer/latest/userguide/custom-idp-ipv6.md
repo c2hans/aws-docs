@@ -14,7 +14,7 @@ When handling IPv6 addresses in your custom identity provider, ensure you're usi
 
 **Example Handling both IPv4 and IPv6 addresses in a custom identity provider**
 
-```
+```python
 def lambda_handler(event, context):
     # Extract the source IP address from the request
     source_ip = event.get('sourceIp', '')

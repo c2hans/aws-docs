@@ -29,7 +29,7 @@ When Web Grounding is enabled for a prompt, the following steps are performed:
 
 To include Web Grounding in your results, specify the following `systemTool` parameter in your `toolConfig` block:
 
-```
+```json
 "toolConfig": {
     "tools": [
         {"systemTool": {"name": "nova_grounding"}}
@@ -44,13 +44,13 @@ Web Grounding is only available in US regions. You can use Web Grounding by call
 
 The following example is an AWS CLI command using Web Grounding:
 
-```
+```bash
 aws --profile {{111122223333}} --region us-east-1 bedrock-runtime converse --model-id us.amazon.nova-premier-v1:0 --tool-config '{"tools":[{"systemTool":{"name":"nova_grounding"}}]}' --messages '[{"role":"user","content":[{"text":"What is the latest news about renewable energy sources?"}]}]'
 ```
 
 The following is an example response. The response has been shortened for brevity:
 
-```
+```json
 ...
 {
     "text": ".\n- **Solar energy** is leading growth with a 31% increase in generation in early 2025, outpacing wind's 7.7% growth "
@@ -105,7 +105,7 @@ To ensure your role can access Web Grounding on AWS Bedrock, you have two option
 
 1. **Add Specific Permissions (if needed)**: If you require more granular access control, add this policy to your role's IAM policy, replacing the red text with your AWS account ID:
 
-   ```
+   ```json
    {
        Statement: [
          {

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/chime/latest/ag/update-pins.html
 
 The following example shows how to reset the personal meeting PIN for a specified Amazon Chime user.
 
-```
+```java
 ResetPersonalPINRequest request = new ResetPersonalPINRequest()
     .withAccountId("{{chimeAccountId}}")
     .withUserId("{{userId}}");

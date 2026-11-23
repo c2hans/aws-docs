@@ -26,7 +26,7 @@ You can create a new notebook for Neptune Analytics by following the instruction
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -58,7 +58,7 @@ You can create a new notebook for Neptune Analytics by following the instruction
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

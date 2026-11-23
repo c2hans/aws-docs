@@ -21,7 +21,7 @@ If you manage your own permission policy, you must include the following permiss
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -107,7 +107,7 @@ The following policy grants AWS FIS the necessary permissions to execute an expe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -78,7 +78,7 @@ For S3 deploy action support, add the following to your policy statement:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -129,7 +129,7 @@ The following example shows the default action configuration when the action is 
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: Deploy
 Actions:
   - Name: Deploy
@@ -153,7 +153,7 @@ Actions:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "Deploy",
     "Actions": [
@@ -194,7 +194,7 @@ The following example shows the default action configuration when the action is 
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: Deploy
 Actions:
   - Name: Deploy
@@ -217,7 +217,7 @@ Actions:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "Deploy",
     "Actions": [

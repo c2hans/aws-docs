@@ -16,7 +16,7 @@ The following examples show how to run a basic query:
 ------
 #### [ Gremlin ]
 
-```
+```bash
 aws neptunedata execute-gremlin-query \
   --endpoint-url https://{{your-neptune-endpoint}}:{{port}} \
   --region {{us-east-1}} \
@@ -28,7 +28,7 @@ For more information, see [execute-gremlin-query](https://docs.aws.amazon.com/cl
 ------
 #### [ openCypher ]
 
-```
+```bash
 aws neptunedata execute-open-cypher-query \
   --endpoint-url https://{{your-neptune-endpoint}}:{{port}} \
   --region {{us-east-1}} \
@@ -50,7 +50,7 @@ You can use the Neptune Data API through the AWS SDKs to run queries programmati
 ------
 #### [ Gremlin ]
 
-```
+```python
 import boto3
 import json
 from botocore.config import Config
@@ -76,7 +76,7 @@ For AWS SDK examples in other languages, see [AWS SDK](access-graph-gremlin-sdk.
 ------
 #### [ openCypher ]
 
-```
+```python
 import boto3
 import json
 from botocore.config import Config
@@ -124,10 +124,15 @@ For more information about the tool, see the [curl man page](https://curl.haxx.s
 
 The following examples show how to run a basic query using `curl` and `awscurl`:
 
+In each example, replace {{your-neptune-endpoint}} with the hostname or IP address of your Neptune DB instance, and replace {{port}} with your cluster's port. The default port is 8182.
+
+**Note**
+For information about finding the hostname of your Neptune DB instance, see the [Connecting to Amazon Neptune Endpoints](feature-overview-endpoints.md) section.
+
 ------
 #### [ Gremlin (awscurl) ]
 
-```
+```bash
 awscurl https://{{your-neptune-endpoint}}:{{port}}/gremlin \
   --region {{us-east-1}} \
   --service neptune-db \
@@ -138,7 +143,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/gremlin \
 ------
 #### [ Gremlin (curl) ]
 
-```
+```bash
 curl -X POST \
   -d '{"gremlin":"g.V().limit(1)"}' \
   https://{{your-neptune-endpoint}}:{{port}}/gremlin
@@ -150,7 +155,7 @@ Plain `curl` works only when IAM authentication is not enabled on your cluster.
 ------
 #### [ openCypher (awscurl) ]
 
-```
+```bash
 awscurl https://{{your-neptune-endpoint}}:{{port}}/openCypher \
   --region {{us-east-1}} \
   --service neptune-db \
@@ -161,7 +166,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/openCypher \
 ------
 #### [ openCypher (curl) ]
 
-```
+```bash
 curl -X POST \
   -d "query=MATCH (n) RETURN n LIMIT 1" \
   https://{{your-neptune-endpoint}}:{{port}}/openCypher
@@ -173,7 +178,7 @@ Plain `curl` works only when IAM authentication is not enabled on your cluster.
 ------
 #### [ SPARQL (awscurl) ]
 
-```
+```bash
 awscurl https://{{your-neptune-endpoint}}:{{port}}/sparql \
   --region {{us-east-1}} \
   --service neptune-db \
@@ -184,7 +189,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/sparql \
 ------
 #### [ SPARQL (curl) ]
 
-```
+```bash
 curl -X POST \
   -d "query=SELECT ?s ?p ?o WHERE { ?s ?p ?o } LIMIT 1" \
   https://{{your-neptune-endpoint}}:{{port}}/sparql

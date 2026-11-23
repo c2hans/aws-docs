@@ -107,7 +107,7 @@ A [Lambda execution role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-in
 **Note**
 The first time the role is used to run workflow actions, use the wildcard in the resource policy statement and then scope down the policy with the resource name after it is available.
 
-      ```
+      ```yaml
       "Resource": "*"
       ```
 
@@ -191,7 +191,7 @@ The first time the role is used to run workflow actions, use the wildcard in the
 **Note**
 The first time the role is used to run workflow actions, use the wildcard in the resource policy statement and then scope down the policy with the resource name after it is available.
 
-      ```
+      ```yaml
       "Resource": "*"
       ```
 
@@ -551,7 +551,7 @@ The `setup-sam.sh` file contains the instructions for downloading and installing
 
 1. In the text box, enter the following code:
 
-   ```
+   ```bash
    #!/usr/bin/env bash
    echo "Setting up sam"
 
@@ -723,7 +723,7 @@ In this step, you create a workflow that packages your Lambda source code and de
 **Note**
 In the YAML code that follows, you can omit the `Connections:` sections if you want. If you omit these sections, you must ensure that the role specified in the **Default IAM role** field in your environment includes the permissions and trust policies of both roles described in [Step 2: Create AWS roles](#deploy-tut-lambda-cfn-roles). For more information about setting up an environment with a default IAM role, see [Creating an environment](deploy-environments-creating-environment.md).
 
-   ```
+   ```yaml
    Name: codecatalyst-cfn-workflow
    SchemaVersion: 1.0
 

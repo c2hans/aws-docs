@@ -84,7 +84,7 @@ In a production scenario, we recommend embedding AWS Event Fork Pipelines within
 
 For example, you can use the Event Storage and Backup Pipeline as a nested application by adding the following YAML snippet to the `Resources` section of your AWS SAM template.
 
-```
+```yaml
 Backup:
     Type: AWS::Serverless::Application
   Properties:

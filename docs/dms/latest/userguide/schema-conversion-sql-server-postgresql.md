@@ -109,7 +109,7 @@ Controls where stub objects are placed when `ConvUnsupportedBuiltinsToStubs` is 
 
 The following example sets `SchemaNameTemplate`, `ConvertProceduresToFunction`, and `UseCitextForAllStringDatatypes`. Apply the same settings to each section name that your project uses (check the output of [`DescribeConversionConfiguration`](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeConversionConfiguration.html) first).
 
-```
+```json
 {
   "MSSQL_TO_POSTGRESQL_15": {
     "SchemaNameTemplate": "SCHEMA",

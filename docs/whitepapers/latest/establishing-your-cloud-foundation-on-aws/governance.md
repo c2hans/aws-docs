@@ -10,6 +10,8 @@ Governance, Risk Management, and Compliance (GRC) helps organizations set the fo
 
 ![A chart showing which capabilities fall under each category.](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/governance-category.png)
 
+*Governance, Risk Management, and Compliance Category *
+
  Governance, Risk Management, and Compliance capabilities include:
 +  **Tagging** enables you to group sets of resources by assigning metadata to cloud resources for a variety of purposes. These purposes include access control (such as ABAC), cost reporting, and automation (such as patching for select tagged instances). Tagging can also be used to create new resource constructs for visibility or control (such as grouping together resources that make up a microservice, application, or workload). Tagging is fundamental to providing enterprise-level visibility and control.
 +  **Log storage** enables you to collect and store your environment logs centrally and securely. This will enable you to evaluate, monitor, alert, and audit access and actions performed on your cloud resources and objects.

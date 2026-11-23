@@ -24,7 +24,7 @@ The AWS Partner Central API Reference was restructured. For more information abo
 
  The following example shows a CloudTrail log entry that demonstrates the `CreateProgramManagementAccount` action on AWS Partner Central Channel API:
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

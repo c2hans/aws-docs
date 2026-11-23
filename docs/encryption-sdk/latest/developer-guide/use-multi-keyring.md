@@ -27,7 +27,7 @@ To create a multi-keyring, first instantiate the child keyrings. In this example
 ------
 #### [ C ]
 
-```
+```cpp
 /* Define an AWS KMS keyring. For details, see [string.cpp](https://github.com/aws/aws-encryption-sdk-c/blob/master/examples/string.cpp) */
 struct aws_cryptosdk_keyring *kms_keyring = Aws::Cryptosdk::KmsKeyring::Builder().Build(example_key);
 
@@ -39,7 +39,7 @@ struct aws_cryptosdk_keyring *aes_keyring = aws_cryptosdk_raw_aes_keyring_new(
 ------
 #### [ C\# / .NET ]
 
-```
+```csharp
 // Define an AWS KMS keyring. For details, see [AwsKmsKeyringExample.cs](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/Examples/Keyring/AwsKmsKeyringExample.cs).
 var kmsKeyring = materialProviders.CreateAwsKmsKeyring(createKmsKeyringInput);
 
@@ -52,7 +52,7 @@ var aesKeyring = materialProviders.CreateRawAesKeyring(createAesKeyringInput);
 
 The following example uses the `buildClient` function to specify the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. You can also use the `buildClient` to limit the number of encrypted data keys in an encrypted message. For more information, see [Limiting encrypted data keys](configure.md#config-limit-keys).
 
-```
+```js
 import {
   KmsKeyringBrowser,
   KMS,
@@ -83,7 +83,7 @@ const aesKeyring = new RawAesKeyringWebCrypto({ keyName, keyNamespace, wrappingS
 
 The following example uses the `buildClient` function to specify the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. You can also use the `buildClient` to limit the number of encrypted data keys in an encrypted message. For more information, see [Limiting encrypted data keys](configure.md#config-limit-keys).
 
-```
+```js
 import {
   MultiKeyringNode,
   KmsKeyringNode,
@@ -107,7 +107,7 @@ const aesKeyring = new RawAesKeyringNode({ keyName, keyNamespace, wrappingSuite,
 ------
 #### [ Java ]
 
-```
+```java
 // Define the raw AES keyring.
 final MaterialProviders matProv = MaterialProviders.builder()
         .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
@@ -132,7 +132,7 @@ IKeyring awsKmsMrkMultiKeyring = matProv.CreateAwsKmsMrkMultiKeyring(createAwsKm
 
 The following example instantiates the AWS Encryption SDK client with the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`.
 
-```
+```python
 # Create the AWS KMS keyring
 kms_client = boto3.client('kms', region_name="us-west-2")
 
@@ -168,7 +168,7 @@ raw_aes_keyring: IKeyring = mat_prov.create_raw_aes_keyring(
 ------
 #### [ Rust ]
 
-```
+```rust
 // Instantiate the AWS Encryption SDK client
 let esdk_config = AwsEncryptionSdkConfig::builder().build()?;
 let esdk_client = esdk_client::Client::from_conf(esdk_config)?;
@@ -206,7 +206,7 @@ let raw_aes_keyring = mpl
 ------
 #### [ Go ]
 
-```
+```go
 import (
     "context"
 
@@ -271,13 +271,13 @@ Next, create the multi-keyring and specify its generator keyring, if any. In thi
 
 In the multi-keyring constructor in C, you specify only its generator keyring.
 
-```
+```cpp
 struct aws_cryptosdk_keyring *multi_keyring = aws_cryptosdk_multi_keyring_new(alloc, kms_keyring);
 ```
 
 To add a child keyring to your multi-keyring, use the `aws_cryptosdk_multi_keyring_add_child` method. You need to call the method once for each child keyring that you add.
 
-```
+```cpp
 // Add the Raw AES keyring (C only)
 aws_cryptosdk_multi_keyring_add_child(multi_keyring, aes_keyring);
 ```
@@ -287,7 +287,7 @@ aws_cryptosdk_multi_keyring_add_child(multi_keyring, aes_keyring);
 
  The .NET `CreateMultiKeyringInput` constructor lets you define a generator keyring and child keyrings. The resulting `CreateMultiKeyringInput` object is immutable.
 
-```
+```csharp
 var createMultiKeyringInput = new CreateMultiKeyringInput
 {
     Generator = kmsKeyring,
@@ -302,7 +302,7 @@ var multiKeyring = materialProviders.CreateMultiKeyring(createMultiKeyringInput)
 
 JavaScript multi-keyrings are immutable. The JavaScript multi-keyring constructor lets you specify the generator keyring and multiple child keyrings.
 
-```
+```js
 const clientProvider = getClient(KMS, { credentials })
 
 const multiKeyring = new MultiKeyringWebCrypto(generator: kmsKeyring, children: [aesKeyring]);
@@ -313,7 +313,7 @@ const multiKeyring = new MultiKeyringWebCrypto(generator: kmsKeyring, children: 
 
 JavaScript multi-keyrings are immutable. The JavaScript multi-keyring constructor lets you specify the generator keyring and multiple child keyrings.
 
-```
+```js
 const multiKeyring = new MultiKeyringNode(generator: kmsKeyring, children: [aesKeyring]);
 ```
 
@@ -322,7 +322,7 @@ const multiKeyring = new MultiKeyringNode(generator: kmsKeyring, children: [aesK
 
 The Java `CreateMultiKeyringInput` constructor lets you define a generator keyring and child keyrings. The resulting `createMultiKeyringInput` object is immutable.
 
-```
+```java
 final CreateMultiKeyringInput createMultiKeyringInput = CreateMultiKeyringInput.builder()
         .generator(awsKmsMrkMultiKeyring)
         .childKeyrings(Collections.singletonList(rawAesKeyring))
@@ -333,7 +333,7 @@ IKeyring multiKeyring = matProv.CreateMultiKeyring(createMultiKeyringInput);
 ------
 #### [ Python ]
 
-```
+```python
 multi_keyring_input: CreateMultiKeyringInput = CreateMultiKeyringInput(
     generator=kms_keyring,
     child_keyrings=[raw_aes_keyring]
@@ -347,7 +347,7 @@ multi_keyring: IKeyring = mat_prov.create_multi_keyring(
 ------
 #### [ Rust ]
 
-```
+```rust
 let multi_keyring = mpl
     .create_multi_keyring()
     .generator(kms_keyring.clone())
@@ -359,7 +359,7 @@ let multi_keyring = mpl
 ------
 #### [ Go ]
 
-```
+```go
 createMultiKeyringInput := mpltypes.CreateMultiKeyringInput{
 		Generator:     awsKmsKeyring,
 		ChildKeyrings: []mpltypes.IKeyring{rawAESKeyring},

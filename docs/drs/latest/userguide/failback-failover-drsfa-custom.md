@@ -64,7 +64,7 @@ Three formats are supported:
 
 1. JSON format:
 
-   ```
+   ```json
    "DEVICE_MAPPING": {
        "/dev/xvdb":"/dev/sdb",
        "/dev/xvdc":"/dev/sdc",
@@ -74,7 +74,7 @@ Three formats are supported:
 
 1. JSON list DRS API format:
 
-   ```
+   ```json
    [
        {
            "recoveryInstanceDeviceName": "recovery_device1",

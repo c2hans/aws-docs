@@ -13,7 +13,7 @@ A CORS configuration is a document that defines rules that identify the origins 
 
 The following is the minimal required CORS configuration for the S3 output bucket in human-based evaluation jobs:
 
-```
+```json
 [
     {
         "AllowedMethods": [

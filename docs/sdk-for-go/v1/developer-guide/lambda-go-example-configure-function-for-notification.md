@@ -10,7 +10,7 @@ The following example configures the Lambda function `functionName` to accept no
 
 Import the packages we use.
 
-```
+```go
 import (
     "flag"
     "fmt"
@@ -24,7 +24,7 @@ import (
 
 Get the name of the function and ARN of the entity invoking the function. If either is missing, print an error message and quit.
 
-```
+```go
 functionPtr := flag.String("f", "", "The name of the Lambda function")
 sourcePtr := flag.String("a", "", "The ARN of the entity invoking the function")
 flag.Parse()
@@ -38,7 +38,7 @@ if *functionPtr == "" || *sourcePtr == "" {
 
 Create the session and Lambda client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -48,7 +48,7 @@ svc := lambda.New(sess)
 
 Create the structure for the input argument to the `AddPermission` function.
 
-```
+```go
 permArgs := &lambda.AddPermissionInput{
     Action:       aws.String("lambda:InvokeFunction"),
     FunctionName: functionPtr,
@@ -60,7 +60,7 @@ permArgs := &lambda.AddPermissionInput{
 
 Finally, call `AddPermission` and display a message with the result of the call.
 
-```
+```go
 result, err := svc.AddPermission(permArgs)
 if err != nil {
     fmt.Println("Cannot configure function for notifications")

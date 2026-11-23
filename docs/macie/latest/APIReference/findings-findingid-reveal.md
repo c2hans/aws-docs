@@ -61,7 +61,7 @@ Retrieves occurrences of sensitive data reported by a finding.
 #### GetSensitiveDataOccurrencesResponse schema
 <a name="findings-findingid-reveal-response-body-getsensitivedataoccurrencesresponse-example"></a>
 
-```
+```json
 {
   "error": "string",
   "sensitiveDataOccurrences": {
@@ -73,7 +73,7 @@ Retrieves occurrences of sensitive data reported by a finding.
 #### ServiceQuotaExceededException schema
 <a name="findings-findingid-reveal-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -82,7 +82,7 @@ Retrieves occurrences of sensitive data reported by a finding.
 #### AccessDeniedException schema
 <a name="findings-findingid-reveal-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -91,7 +91,7 @@ Retrieves occurrences of sensitive data reported by a finding.
 #### ResourceNotFoundException schema
 <a name="findings-findingid-reveal-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -100,7 +100,7 @@ Retrieves occurrences of sensitive data reported by a finding.
 #### UnprocessableEntityException schema
 <a name="findings-findingid-reveal-response-body-unprocessableentityexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -109,7 +109,7 @@ Retrieves occurrences of sensitive data reported by a finding.
 #### ThrottlingException schema
 <a name="findings-findingid-reveal-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -118,7 +118,7 @@ Retrieves occurrences of sensitive data reported by a finding.
 #### InternalServerException schema
 <a name="findings-findingid-reveal-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

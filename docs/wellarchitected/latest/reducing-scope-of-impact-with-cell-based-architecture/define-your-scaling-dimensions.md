@@ -12,4 +12,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 
 ![Diagram showing scaling dimensions](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/scaling-dimensions.jpg)
 
+*Scaling dimensions*
+
  One last factor that cannot be overlooked is cost. When defining the size of your cells, also calculate how much each cell will cost you. This calculation can help you decide how multi-tenant your system is, which can increase or decrease the economies of scale and margin advantage that your business might have.

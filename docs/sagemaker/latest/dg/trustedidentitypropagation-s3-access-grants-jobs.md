@@ -44,7 +44,7 @@ After Amazon S3 Access Grants is set up, [add the following permissions](https:/
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -28,7 +28,7 @@ The following code example shows how to use `Get-CGIIdentityPool`.
 **Tools for PowerShell V4**
 **Example 1: Retrieves information about a specific Identity Pool by its id.**
 
-```
+```powershell
 Get-CGIIdentityPool -IdentityPoolId us-east-1:0de2af35-2988-4d0b-b22d-EXAMPLEGUID1
 ```
 **Output:**
@@ -55,7 +55,7 @@ The following code example shows how to use `Get-CGIIdentityPoolList`.
 **Tools for PowerShell V4**
 **Example 1: Retrieves a list of existing Identity Pools.**
 
-```
+```powershell
 Get-CGIIdentityPoolList
 ```
 **Output:**
@@ -77,7 +77,7 @@ The following code example shows how to use `Get-CGIIdentityPoolRole`.
 **Tools for PowerShell V4**
 **Example 1: Gets the information about roles for a specific Identity Pool.**
 
-```
+```powershell
 Get-CGIIdentityPoolRole -IdentityPoolId us-east-1:0de2af35-2988-4d0b-b22d-EXAMPLEGUID1
 ```
 **Output:**
@@ -100,7 +100,7 @@ The following code example shows how to use `New-CGIIdentityPool`.
 **Tools for PowerShell V4**
 **Example 1: Creates a new Identity Pool which allows unauthenticated identities.**
 
-```
+```powershell
 New-CGIIdentityPool -AllowUnauthenticatedIdentities $true -IdentityPoolName CommonTests13
 ```
 **Output:**
@@ -127,7 +127,7 @@ The following code example shows how to use `Remove-CGIIdentityPool`.
 **Tools for PowerShell V4**
 **Example 1: Deletes a specific Identity Pool.**
 
-```
+```powershell
 Remove-CGIIdentityPool -IdentityPoolId us-east-1:0de2af35-2988-4d0b-b22d-EXAMPLEGUID1
 ```
 +  For API details, see [DeleteIdentityPool](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -140,7 +140,7 @@ The following code example shows how to use `Set-CGIIdentityPoolRole`.
 **Tools for PowerShell V4**
 **Example 1: Configures the specific Identity Pool to have an unauthenticated IAM role.**
 
-```
+```powershell
 Set-CGIIdentityPoolRole -IdentityPoolId us-east-1:0de2af35-2988-4d0b-b22d-EXAMPLEGUID1 -Role @{ "unauthenticated" = "arn:aws:iam::123456789012:role/CommonTests1Role" }
 ```
 +  For API details, see [SetIdentityPoolRoles](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -153,7 +153,7 @@ The following code example shows how to use `Update-CGIIdentityPool`.
 **Tools for PowerShell V4**
 **Example 1: Updates some of the Identity Pool properties, in this case the name of the Identity Pool.**
 
-```
+```powershell
 Update-CGIIdentityPool -IdentityPoolId us-east-1:0de2af35-2988-4d0b-b22d-EXAMPLEGUID1 -IdentityPoolName NewPoolName
 ```
 **Output:**

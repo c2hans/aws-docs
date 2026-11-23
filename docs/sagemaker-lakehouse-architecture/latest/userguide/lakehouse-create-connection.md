@@ -52,7 +52,7 @@ You can find the project ARN on the Page details page in the lakehouse architect
 
    The following is an example policy. It allows access of the IAM role named `datazone_user_role_projectid` to perform the allowed actions (`Query`, `Scan`, `DescribeTable`, `PartiQLSelect`) on the specified DynamoDB table. Administrators should choose to allow or deny the set of actions.
 
-   ```
+   ```JSON
    {
        "Sid": "Statement1",
        "Effect": "Allow",

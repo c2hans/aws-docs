@@ -26,7 +26,7 @@ The COPY command matches attribute names in the items retrieved from the DynamoD
 
 The COPY command uses the following syntax to load data from an Amazon DynamoDB table:
 
-```
+```sql
 COPY <redshift_tablename> FROM 'dynamodb://<dynamodb_table_name>'
 authorization
 readratio '<integer>';
@@ -44,7 +44,7 @@ IAM_ROLE 'arn:aws:iam::{{<aws-account-id>}}:role/{{<role-name>}}'
 
 The following example shows authentication using an IAM role.
 
-```
+```sql
 COPY favoritemovies
 FROM 'dynamodb://ProductCatalog'
 IAM_ROLE 'arn:aws:iam::0123456789012:role/MyRedshiftRole';
@@ -56,7 +56,7 @@ If you want to validate your data without actually loading the table, use the NO
 
 The following example loads the FAVORITEMOVIES table with data from the DynamoDB table my-favorite-movies-table. The read activity can consume up to 50% of the provisioned throughput.
 
-```
+```sql
 COPY favoritemovies FROM 'dynamodb://my-favorite-movies-table'
 IAM_ROLE 'arn:aws:iam::0123456789012:role/MyRedshiftRole'
 READRATIO 50;

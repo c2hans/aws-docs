@@ -44,7 +44,7 @@ The following examples show CloudTrail events for a user who created a load bala
 
 **Example 1: CreateLoadBalancer from the ELBv2 API**
 
-```
+```json
 {
     "eventVersion": "1.03",
     "userIdentity": {
@@ -95,7 +95,7 @@ The following examples show CloudTrail events for a user who created a load bala
 
 **Example 2: DeleteLoadBalancer from the ELBv2 API**
 
-```
+```json
 {
     "eventVersion": "1.03",
     "userIdentity": {
@@ -126,7 +126,7 @@ The following examples show CloudTrail events for a user who created a load bala
 
 **Example 3: CreateLoadBalancer from the ELB API**
 
-```
+```json
 {
     "eventVersion": "1.03",
     "userIdentity": {
@@ -166,7 +166,7 @@ The following examples show CloudTrail events for a user who created a load bala
 
 **Example 4: DeleteLoadBalancer from the ELB API**
 
-```
+```json
 {
     "eventVersion": "1.03",
     "userIdentity": {

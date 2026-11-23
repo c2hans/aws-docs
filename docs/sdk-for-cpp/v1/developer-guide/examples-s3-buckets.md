@@ -28,7 +28,7 @@ The `S3Client` object calls the SDK's `ListBuckets()` method. If successful, the
 
  **Code**
 
-```
+```cpp
 bool AwsDoc::S3::listBuckets(const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client client(clientConfig);
 
@@ -64,7 +64,7 @@ The `S3Client` object calls the SDK's `CreateBucket()` method, passing in a `Cre
 
  **Code**
 
-```
+```cpp
 bool AwsDoc::S3::createBucket(const Aws::String &bucketName,
                               const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client client(clientConfig);
@@ -108,7 +108,7 @@ The `S3Client` object uses the SDK's `DeleteBucket()` method, passing in a `Dele
 
  **Code**
 
-```
+```cpp
 bool AwsDoc::S3::deleteBucket(const Aws::String &bucketName,
                               const Aws::S3::S3ClientConfiguration &clientConfig) {
 

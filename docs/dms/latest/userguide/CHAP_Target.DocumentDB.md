@@ -90,7 +90,7 @@ To coerce a data type, you can prefix the source column name with `json_` (that 
 
 For example, suppose that you want to migrate the following document from a MongoDB source endpoint.
 
-```
+```json
 {
     "_id": "1",
     "FirstName": "John",
@@ -101,7 +101,7 @@ For example, suppose that you want to migrate the following document from a Mong
 
 If you don't coerce any of the source data types, the embedded `ContactDetails` document is migrated as a string.
 
-```
+```json
 {
     "_id": "1",
     "FirstName": "John",
@@ -135,7 +135,7 @@ However, you can add a transformation rule to coerce `ContactDetails` to a JSON 
 
 AWS DMS replicates the ContactDetails field as nested JSON, as follows.
 
-```
+```json
 {
     "_id": "1",
     "FirstName": "John",
@@ -160,7 +160,7 @@ To coerce a data type, you can prefix a column name with `array_` (that is, `arr
 
 Suppose that you want to migrate the following document from a MongoDB source endpoint.
 
-```
+```json
 {
     "_id" : "1",
     "FirstName": "John",
@@ -172,7 +172,7 @@ Suppose that you want to migrate the following document from a MongoDB source en
 
 If you don't coerce any of the source data types, the embedded `ContactDetails` document is migrated as a string.
 
-```
+```json
 {
     "_id": "1",
     "FirstName": "John",
@@ -191,7 +191,7 @@ If you don't coerce any of the source data types, the embedded `ContactDetails` 
 
 AWS DMS replicates `ContactAddress` and `ContactPhoneNumbers` as follows.
 
-```
+```json
 {
     "_id": "1",
     "FirstName": "John",

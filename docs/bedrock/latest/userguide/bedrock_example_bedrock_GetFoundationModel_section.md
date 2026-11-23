@@ -13,7 +13,7 @@ The following code examples show how to use `GetFoundationModel`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock#code-examples).
 Get details about a foundation model using the synchronous Amazon Bedrock client.
 
-```
+```java
     /**
      * Get details about an Amazon Bedrock foundation model.
      *
@@ -52,7 +52,7 @@ Get details about a foundation model using the synchronous Amazon Bedrock client
 ```
 Get details about a foundation model using the asynchronous Amazon Bedrock client.
 
-```
+```java
     /**
      * Get details about an Amazon Bedrock foundation model.
      *
@@ -104,7 +104,7 @@ Get details about a foundation model using the asynchronous Amazon Bedrock clien
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock#code-examples).
 Get details about a foundation model.
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 
 import {
@@ -144,7 +144,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock#code-examples).
 Get details about a foundation model.
 
-```
+```python
     def get_foundation_model(self, model_identifier):
         """
         Get details about an Amazon Bedrock foundation model.

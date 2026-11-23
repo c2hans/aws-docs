@@ -37,7 +37,7 @@ SYS\_UNLOAD\_HISTORY is visible to all users. Superusers can see all rows; regul
 
 The following query shows the unloaded query details, including format, rows, and file count of unload command.
 
-```
+```sql
 SELECT query_id,
        file_format,
        start_time,

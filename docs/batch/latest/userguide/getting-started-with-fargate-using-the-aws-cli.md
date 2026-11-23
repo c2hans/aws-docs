@@ -46,7 +46,7 @@ AWS Batch requires an execution role that allows Amazon Elastic Container Servic
 
 First, create a trust policy that allows the Amazon ECS tasks service to assume the role.
 
-```
+```bsh
 cat > batch-execution-role-trust-policy.json << EOF
 {
   "Version":"2012-10-17",
@@ -68,7 +68,7 @@ EOF
 
 The following command creates an IAM role named `BatchEcsTaskExecutionRoleTutorial` using the trust policy you just created.
 
-```
+```bsh
 aws iam create-role \
     --role-name BatchEcsTaskExecutionRoleTutorial \
     --assume-role-policy-document file://batch-execution-role-trust-policy.json
@@ -78,7 +78,7 @@ aws iam create-role \
 
 Attach the AWS managed policy that provides the necessary permissions for Amazon ECS task execution.
 
-```
+```bsh
 aws iam attach-role-policy \
     --role-name BatchEcsTaskExecutionRoleTutorial \
     --policy-arn arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy
@@ -95,7 +95,7 @@ A compute environment defines the compute resources where your batch jobs will r
 
 The following command creates a Fargate compute environment. Replace the example subnet and security group IDs with your own per the [Prerequisites](#prerequisites).
 
-```
+```bsh
 aws batch create-compute-environment \
     --compute-environment-name my-fargate-compute-env \
     --type MANAGED \
@@ -105,7 +105,7 @@ aws batch create-compute-environment \
 
 The following shows how the output looks when the command runs successfully.
 
-```
+```bsh
 {
     "computeEnvironmentName": "my-fargate-compute-env",
     "computeEnvironmentArn": "arn:aws:batch:us-west-2:123456789012:compute-environment/my-fargate-compute-env"
@@ -116,13 +116,13 @@ The following shows how the output looks when the command runs successfully.
 
 Check the status of your compute environment to ensure it's ready before proceeding.
 
-```
+```bsh
 aws batch describe-compute-environments \
     --compute-environments my-fargate-compute-env \
     --query 'computeEnvironments[0].status'
 ```
 
-```
+```bsh
 "VALID"
 ```
 
@@ -137,7 +137,7 @@ A job queue stores submitted jobs until the AWS Batch scheduler runs them on res
 
 The following command creates a job queue with priority 900 that uses your Fargate compute environment.
 
-```
+```bsh
 aws batch create-job-queue \
     --job-queue-name my-fargate-job-queue \
     --state ENABLED \
@@ -158,7 +158,7 @@ The following shows how the output looks when the command runs successfully.
 
 Check that your job queue is in the `ENABLED` state and ready to accept jobs.
 
-```
+```bsh
 aws batch describe-job-queues \
     --job-queues my-fargate-job-queue \
     --query 'jobQueues[0].state' "ENABLED"
@@ -173,7 +173,7 @@ A job definition specifies how jobs are to be run, including the Docker image to
 
 The following command creates a job definition that runs a simple "hello world" command using the busybox container image. Replace `123456789012` with your actual AWS account ID and replace the example AWS Region with your own.
 
-```
+```bsh
 aws batch register-job-definition \
     --job-definition-name my-fargate-job-def \
     --type container \
@@ -203,7 +203,7 @@ Now that you have all the necessary components, you can submit a job to your que
 
 The following command submits a job to your queue using the job definition you created.
 
-```
+```bsh
 aws batch submit-job \
     --job-name my-hello-world-job \
     --job-queue my-fargate-job-queue \
@@ -226,13 +226,13 @@ Make note of the `jobId` returned in the response, as you'll use it to monitor t
 
 Use the job ID to check the status of your job. The job will progress through several states: `SUBMITTED`, `PENDING`, `RUNNABLE`, `STARTING`, `RUNNING`, and finally `SUCCEEDED` or `FAILED`.
 
-```
+```bsh
 aws batch describe-jobs --jobs 1509xmpl-4224-4da6-9ba9-1d1acc96431a
 ```
 
 The following shows how the output looks when the command runs successfully.
 
-```
+```json
 {
     "jobs": [
         {
@@ -259,13 +259,13 @@ After your job completes, you can view its output in Amazon CloudWatch Logs.
 
 First, retrieve the log stream name from the job details. Replace the example job ID with your own.
 
-```
+```bsh
 aws batch describe-jobs --jobs {{1509xmpl-4224-4da6-9ba9-1d1acc96431a}} \
     --query 'jobs[0].attempts[0].containers[0].logStreamName' \
     --output text
 ```
 
-```
+```bsh
 my-fargate-job-def/default/1509xmpl-4224-4da6-9ba9-1d1acc96431a
 ```
 
@@ -273,7 +273,7 @@ my-fargate-job-def/default/1509xmpl-4224-4da6-9ba9-1d1acc96431a
 
 Use the log stream name to retrieve the job's output from CloudWatch Logs.
 
-```
+```bsh
 aws logs get-log-events \
     --log-group-name /aws/batch/job \
     --log-stream-name my-fargate-job-def/default/{{1509xmpl-4224-4da6-9ba9-1d1acc96431a}} \
@@ -292,13 +292,13 @@ To avoid ongoing charges, clean up the resources you created in this tutorial. Y
 
 First, disable the job queue, then delete it.
 
-```
+```bsh
 aws batch update-job-queue \
     --job-queue my-fargate-job-queue \
     --state DISABLED
 ```
 
-```
+```bsh
 aws batch delete-job-queue \
     --job-queue my-fargate-job-queue
 ```
@@ -307,13 +307,13 @@ aws batch delete-job-queue \
 
 After the job queue is deleted, disable and delete the compute environment.
 
-```
+```bsh
 aws batch update-compute-environment \
     --compute-environment my-fargate-compute-env \
     --state DISABLED
 ```
 
-```
+```bsh
 aws batch delete-compute-environment \
     --compute-environment my-fargate-compute-env
 ```
@@ -322,13 +322,13 @@ aws batch delete-compute-environment \
 
 Remove the policy attachment and delete the IAM role.
 
-```
+```bsh
 aws iam detach-role-policy \
     --role-name BatchEcsTaskExecutionRoleTutorial \
     --policy-arn arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy
 ```
 
-```
+```bsh
 aws iam delete-role \
     --role-name BatchEcsTaskExecutionRoleTutorial
 ```

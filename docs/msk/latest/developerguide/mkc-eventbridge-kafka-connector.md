@@ -41,7 +41,7 @@ The IAM role that you associate with the connector must have the [PutEvents](htt
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -65,7 +65,7 @@ In addition, you must make sure that your IAM role for the connector contains th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -87,7 +87,7 @@ In addition, you must make sure that your IAM role for the connector contains th
 
 You create [rules](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html) that match incoming events with event data criteria, known as [*event pattern*](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html). With an event pattern, you can define the criteria to filter incoming events, and determine which events should trigger a particular rule and subsequently be routed to a designated [target](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-targets.html). The following example of an event pattern matches Kafka events sent to the EventBridge event bus.
 
-```
+```json
 {
   "detail": {
     "topic": ["msk-eventbridge-tutorial"]
@@ -97,7 +97,7 @@ You create [rules](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-r
 
 The following is an example of an event sent from Kafka to EventBridge using the Kafka sink connector.
 
-```
+```json
 {
   "version": "0",
   "id": "dbc1c73a-c51d-0c0e-ca61-ab9278974c57",
@@ -197,7 +197,7 @@ Before creating the connector, we recommend to create the required Kafka topic t
    + Replace the EventBridge event bus ARN in the following configuration with the ARN of your event bus.
    + Update any Region-specific values.
 
-   ```
+   ```json
    {
      "connector.class": "software.amazon.event.kafkaconnector.EventBridgeSinkConnector",
      "aws.eventbridge.connector.id": "msk-eventbridge-tutorial",

@@ -49,7 +49,7 @@ The [SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/v3-example
 
 Create a `ModelTrainer` that defines the training job configuration.
 
-```
+```python
 from sagemaker.train.model_trainer import ModelTrainer
 from sagemaker.train.configs import SourceCode, Compute, StoppingCondition
 
@@ -66,7 +66,7 @@ model_trainer = ModelTrainer(
 
 Create a `TrainingQueue` object that references your job queue by name.
 
-```
+```python
 from sagemaker.train.aws_batch.training_queue import TrainingQueue
 
 queue = TrainingQueue({{"my-sagemaker-job-queue"}})
@@ -74,7 +74,7 @@ queue = TrainingQueue({{"my-sagemaker-job-queue"}})
 
 Submit a job by calling `queue.submit`.
 
-```
+```python
 job = queue.submit(
     training_job=model_trainer,
     inputs=None,
@@ -86,7 +86,7 @@ job = queue.submit(
 
 The following shows how to submit a service job using the AWS CLI:
 
-```
+```bash
 aws batch submit-service-job \
     --job-name "my-sagemaker-training-job" \
     --job-queue "my-sagemaker-job-queue" \

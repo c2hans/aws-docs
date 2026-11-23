@@ -13,7 +13,7 @@ For instructions on how to enroll, follow the [onboarding guide](https://docs.aw
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -41,7 +41,7 @@ Use the following IAM permissions policy to allow a user to make requests to the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

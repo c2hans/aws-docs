@@ -32,7 +32,7 @@ To set up and run this example, you must first complete these tasks:
 
 Configure the SDK for JavaScript by creating a global configuration object then setting the Region for your code. In this example, the Region is set to `us-west-2`.
 
-```
+```javascript
 // Load the SDK for JavaScript
 var AWS = require('aws-sdk');
 // Set the Region
@@ -46,7 +46,7 @@ Create a Node.js module with the file name `s3_getbucketacl.js`. The module will
 
 Create an `AWS.S3` service object. The only parameter you need to pass is the name of the selected bucket when calling the `getBucketAcl` method. The current access control list configuration is returned by Amazon S3 in the `data` parameter passed to the callback function.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region

@@ -34,17 +34,17 @@ Type: String
 Required: No
 
  ** recommendation **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SageMakerModelFulfillmentOption-recommendation"></a>
-Recommended instance types for inference with this model.
+The recommended instance types for inference with this model.
 Type: [SageMakerModelRecommendation](API_marketplace-discovery_SageMakerModelRecommendation.md) object
 Required: No
 
  ** releaseNotes **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SageMakerModelFulfillmentOption-releaseNotes"></a>
-Release notes describing changes in this version of the fulfillment option.
+Release notes that describe the changes in this version of the fulfillment option.
 Type: String
 Required: No
 
  ** supportedContentTypes **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SageMakerModelFulfillmentOption-supportedContentTypes"></a>
-The MIME types that this model accepts as input.
+The Multipurpose Internet Mail Extensions (MIME) types that this model accepts as input.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Length Constraints: Minimum length of 0. Maximum length of 256.

@@ -11,7 +11,7 @@ The DNF package manager has access to metadata describing which advisories are f
 
 In AL2027, advisory information is queried with the `dnf advisory` command and its `summary`, `list`, and `info` subcommands:
 
-```
+```bash
 # Summary of advisories applicable to this system
 dnf advisory summary
 
@@ -24,7 +24,7 @@ dnf advisory info <advisory-id>
 
 Advisory publication for AL2027 begins with the public preview, using the same Amazon Linux Security Advisory (ALAS) model as AL2023. The following outputs show the format. They were captured with example advisories, so the advisory identifiers and CVE numbers are examples:
 
-```
+```bash
 dnf advisory summary
 ```
 
@@ -41,7 +41,7 @@ Enhancement : 0
 Other       : 0
 ```
 
-```
+```bash
 dnf advisory list
 ```
 
@@ -51,7 +51,7 @@ ALAS2027-2026-001 security Important zsh-5.9-21.amzn2027.x86_64 2026-08-17 18:00
 ALAS2027-2026-002 security Low       zsh-5.9-22.amzn2027.x86_64 2026-08-17 18:00:00
 ```
 
-```
+```bash
 dnf advisory info ALAS2027-2026-001
 ```
 
@@ -78,7 +78,7 @@ Collection  :
 
 By default, the commands consider advisories for available package upgrades. Use the `--installed`, `--updates`, or `--all` options to change the scope, and `--contains-pkgs={{name}}` to filter by package. As with other DNF commands, add `--releasever={{version}}` to evaluate the metadata of a newer release than the one the system is locked to:
 
-```
+```bash
 dnf advisory summary --releasever=latest
 ```
 
@@ -89,7 +89,7 @@ If you are migrating from AL2023: DNF5 replaces the `dnf updateinfo --list` opti
 
 To list advisories against a specific release, name it. To list against the newest release, use `latest`. Both forms report zero advisories until advisory publication begins with the public preview:
 
-```
+```bash
 dnf advisory summary --releasever=2027.0.20260817
 dnf advisory summary --releasever=latest
 ```

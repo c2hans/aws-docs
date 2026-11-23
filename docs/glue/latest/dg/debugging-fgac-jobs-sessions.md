@@ -28,7 +28,7 @@ If the job run or session doesn't have fine-grained access control enabled, the 
 
 The principal that debugs a Lake Formation-enabled job run or session must have the following permissions. The `glue:GetDatabases` and `glue:SearchTables` permissions are both required, on all databases and tables in the account.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -63,7 +63,7 @@ If any of these permissions are missing, the operation returns an `AccessDeniedE
 
 To get the system logs for a job run, call `GetSystemLogsForJobRun` with the job name and the job run ID.
 
-```
+```bash
 aws glue get-system-logs-for-job-run \
     --job-name {{my-fgac-job}} \
     --run-id {{jr_EXAMPLE1234567890}} \
@@ -72,7 +72,7 @@ aws glue get-system-logs-for-job-run \
 
 To get the system logs for a session, call `GetSystemLogsForSession` with the session ID.
 
-```
+```bash
 aws glue get-system-logs-for-session \
     --id {{my-fgac-session}} \
     --region {{region}}
@@ -80,7 +80,7 @@ aws glue get-system-logs-for-session \
 
 Both operations return a presigned Amazon S3 URL.
 
-```
+```json
 {
     "SystemLogsUrl": "{{presigned-url}}"
 }

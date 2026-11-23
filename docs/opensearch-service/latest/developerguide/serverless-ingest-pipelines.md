@@ -76,7 +76,7 @@ Ingest pipeline operations map to the following OpenSearch Serverless data acces
 
 The following example data access policy grants a principal permission to manage pipelines in a collection. Replace {{collection-name}} with the name of your collection, {{account-id}} with your AWS account ID, and {{role-name}} with the name of the IAM role that manages pipelines.
 
-```
+```json
 [
     {
         "Description": "Manage pipelines",
@@ -112,7 +112,7 @@ To create a pipeline, send a `PUT` request to the `_ingest/pipeline` endpoint wi
 
 The following example creates a pipeline that trims a field, lowercases it, and renames it. Replace {{my-pipeline}} with the name of your pipeline.
 
-```
+```json
 PUT _ingest/pipeline/{{my-pipeline}}
 {
   "description": "Normalizes the category field",
@@ -139,7 +139,7 @@ PUT _ingest/pipeline/{{my-pipeline}}
 
 The request returns the following response:
 
-```
+```json
 {
   "acknowledged": true
 }
@@ -147,7 +147,7 @@ The request returns the following response:
 
 The following example creates a pipeline that chunks a text field and generates vector embeddings for each chunk. It requires a configured model. For more information, see [Configure Neural Search and Hybrid Search on OpenSearch Serverless](serverless-configure-neural-search.md).
 
-```
+```json
 PUT _ingest/pipeline/{{nlp-ingest-pipeline}}
 {
   "description": "Chunks text and generates embeddings",
@@ -189,7 +189,7 @@ GET _ingest/pipeline/{{my-pipeline}}
 
 The request returns the pipeline definition:
 
-```
+```json
 {
   "my-pipeline": {
     "description": "Normalizes the category field",
@@ -233,7 +233,7 @@ The request returns the definitions of all of the pipelines in the collection, k
 
 Before you apply a pipeline to live traffic, you can simulate it against sample documents and inspect the transformed output. To simulate an existing pipeline, send a `POST` request with the pipeline name and the sample documents:
 
-```
+```json
 POST _ingest/pipeline/{{my-pipeline}}/_simulate
 {
   "docs": [
@@ -250,7 +250,7 @@ POST _ingest/pipeline/{{my-pipeline}}/_simulate
 
 The response shows each document as it would be indexed after the pipeline runs. In this example, the pipeline trimmed and lowercased the `category` field and renamed it to `category_normalized`:
 
-```
+```json
 {
   "docs": [
     {
@@ -271,7 +271,7 @@ The response shows each document as it would be indexed after the pipeline runs.
 
 You can also simulate a pipeline definition that you haven't created yet by including the definition in the request body:
 
-```
+```json
 POST _ingest/pipeline/_simulate
 {
   "pipeline": {
@@ -308,7 +308,7 @@ DELETE _ingest/pipeline/{{my-pipeline}}
 
 The request returns the following response:
 
-```
+```json
 {
   "acknowledged": true
 }
@@ -319,7 +319,7 @@ The request returns the following response:
 
 To run a pipeline on every document that's indexed into an index, set the `index.default_pipeline` setting when you create the index:
 
-```
+```json
 PUT {{my-index}}
 {
   "settings": {
@@ -330,7 +330,7 @@ PUT {{my-index}}
 
 The request returns the following response:
 
-```
+```json
 {
   "acknowledged": true,
   "shards_acknowledged": false,
@@ -340,7 +340,7 @@ The request returns the following response:
 
 Alternatively, specify the pipeline on an individual indexing or bulk request with the `pipeline` query parameter:
 
-```
+```json
 POST {{my-index}}/_doc?pipeline={{my-pipeline}}
 {
   "category": "  Home Appliances  "
@@ -349,7 +349,7 @@ POST {{my-index}}/_doc?pipeline={{my-pipeline}}
 
 The response confirms that the document was indexed:
 
-```
+```json
 {
   "_index": "my-index",
   "_id": "93VTg6EBtHTIBjFym5yW",

@@ -41,7 +41,7 @@ As you configure the AWS CLI (for example, by calling the **aws configure** comm
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement" : [
@@ -82,7 +82,7 @@ If you see access denied errors when trying to access one of the Amazon S3 bucke
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement" : [

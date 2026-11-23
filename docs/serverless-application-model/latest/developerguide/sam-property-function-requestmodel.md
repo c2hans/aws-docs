@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-requestmodel-syntax.yaml"></a>
 
-```
+```yaml
   [Model](#sam-function-requestmodel-model): {{String}}
   [Required](#sam-function-requestmodel-required): {{Boolean}}
   [ValidateBody](#sam-function-requestmodel-validatebody): {{Boolean}}
@@ -59,7 +59,7 @@ Request Model Example
 #### YAML
 <a name="sam-property-function-requestmodel--examples--request-model--yaml"></a>
 
-```
+```yaml
 RequestModel:
   Model: User
   Required: true

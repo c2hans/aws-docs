@@ -34,7 +34,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -98,7 +98,7 @@ Child resources (such as nodes, members and invitations) must have AWS account i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -189,7 +189,7 @@ The statement with the `Sid` set to `RequireTag` specifies that network creation
 The statement with `Sid` set to `AllowTagging` allows the IAM principal to tag networks, which are not associated with an AWS account ID. It also allows tagging of members in the specified AWS account, `111122223333`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -230,7 +230,7 @@ The statement with `Sid` set to `AllowTagging` allows the IAM principal to tag n
 The following identity-based policy statement denies the IAM principal the ability to retrieve or view information for networks that have a tag with a tag key of `restricted`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -259,7 +259,7 @@ The following identity-based policy statement denies the IAM principal the abili
 The following identity-based policy statement denies the IAM principal from creating a member on any network that has a tag with a tag key of `department` with the value of `accounting`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -286,7 +286,7 @@ The following identity-based policy statement denies the IAM principal from crea
 The following identity-based policy statements allow the IAM principal to create members in the account `111122223333` only if the member is created with a tag that has the tag key of `department` and a tag value of `accounting`; otherwise, the create member operation fails.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -323,7 +323,7 @@ The following identity-based policy statements allow the IAM principal to create
 The following identity-based policy statement allows the IAM principal to retrieve or view information about members only if the member has a tag with a tag key of `unrestricted`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -352,7 +352,7 @@ The following identity-based policy statement allows the IAM principal to retrie
 The following identity-based policy statement denies the IAM principal the ability to create a node if a tag with the tag key of `department` and a value of `analytics` is added during creation.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -381,7 +381,7 @@ The following identity-based policy statement denies the IAM principal the abili
 The following identity-based policy statement denies the IAM principal the ability to create a node if the member to which the node will belong has a tag with a tag key of `department` and a tag value of `analytics`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -410,7 +410,7 @@ The following identity-based policy statement denies the IAM principal the abili
 The following identity-based policy statement allows the IAM principal to retrieve or view information about nodes only if the node has a tag with a tag key of `department` and a tag value of `sales`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -439,7 +439,7 @@ The following identity-based policy statement allows the IAM principal to retrie
 The following identity-based policy statement denies the IAM principal the ability to retrieve or view information about a node if the node has a tag with a tag key of `restricted`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -468,7 +468,7 @@ The following identity-based policy statement denies the IAM principal the abili
 The following identity-based policy statement allows the IAM principal to create a proposal only if the network for which the proposal is made has a tag with a tag key of `department` and a value of `accounting`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -497,7 +497,7 @@ The following identity-based policy statement allows the IAM principal to create
 The following identity-based policy statements allow the IAM principal to create a proposal for inviting the specified account `123456789012` to the network only if a tag with a tag key of `consortium` and a tag value of `exampleconsortium` is added during proposal creation.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -537,7 +537,7 @@ The following identity-based policy statements allow the IAM principal to create
 The following identity-based policy statement allows the IAM principal to retrieve and view proposals only if the proposal has a tag with a tag key of `consortium` and a tag value of `exampleconsortium`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -566,7 +566,7 @@ The following identity-based policy statement allows the IAM principal to retrie
 The following identity-based policy statement denies the IAM principal the ability to vote on proposals that have a tag with the tag key of `consortium` and a tag value of `exampleconsortium`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -595,7 +595,7 @@ The following identity-based policy statement denies the IAM principal the abili
 The following identity-based policy statement denies the IAM principal the ability to reject on invitation that has a tag with the tag key of `consortium` and a tag value of `exampleconsortium`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

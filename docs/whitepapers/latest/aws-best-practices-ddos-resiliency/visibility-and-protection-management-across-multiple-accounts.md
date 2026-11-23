@@ -16,4 +16,6 @@ For example, when Firewall Manager evaluates accounts within the scope of a Shie
 
 ![Architecture diagram showing monitoring AWS Shield-protected resources with Firewall Manager and Security Hub CSPM](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/shield-protected-resources-ref-arch.jpg)
 
+*Figure 12 – Architecture diagram showing monitoring AWS Shield-protected resources with Firewall Manager and Security Hub CSPM*
+
 For more information about central monitoring of Shield protected resources, refer to [Set up centralized monitoring for DDoS events and auto-remediate noncompliant resources](https://aws.amazon.com/blogs/security/set-up-centralized-monitoring-for-ddos-events-and-auto-remediate-noncompliant-resources).

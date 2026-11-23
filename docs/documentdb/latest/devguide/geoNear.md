@@ -65,7 +65,7 @@ To view a code example for using the `$geoNear` aggregation stage, choose the ta
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function example() {
@@ -93,7 +93,7 @@ example();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def example():

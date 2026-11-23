@@ -27,7 +27,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { FargateToStepfunctions, FargateToStepfunctionsProps } from '@aws-solutions-constructs/aws-fargate-stepfunctions';
@@ -46,7 +46,7 @@ const constructProps: FargateToStepfunctionsProps = {
 new FargateToStepfunctions(this, 'test-construct', constructProps);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_fargate_stepfunctions import FargateToStepfunctions, FargateToStepfunctionsProps
 from aws_cdk import (
     aws_stepfunctions as stepfunctions,
@@ -63,7 +63,7 @@ FargateToStepfunctions(self, 'test_construct',
               definition=start_state))
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

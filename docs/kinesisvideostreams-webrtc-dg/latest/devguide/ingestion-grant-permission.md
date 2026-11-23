@@ -18,7 +18,7 @@ Refer to the sample IAM policy below for Master participants:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

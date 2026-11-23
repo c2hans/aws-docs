@@ -35,7 +35,7 @@ Suppose a producer is writing messages to a topic in your Kafka cluster, either 
 
 Suppose your Apache Kafka producer is writing messages to your topic in the following JSON format.
 
-```
+```JSON
 {
     "device_ID": "AB1234",
     "session":{
@@ -103,7 +103,7 @@ aws lambda update-event-source-mapping \
 
 To add this filter using AWS SAM, add the following snippet to the YAML template for your event source.
 
-```
+```YAML
 FilterCriteria:
   Filters:
     - Pattern: '{ "value" : { "device_ID" : [ { "prefix":  "AB" } ] } }'
@@ -171,7 +171,7 @@ aws lambda update-event-source-mapping \
 
 To add this filter using AWS SAM, add the following snippet to the YAML template for your event source.
 
-```
+```YAML
 FilterCriteria:
   Filters:
     - Pattern: '{ "value" : [ { "anything-but": [ "error" ] } ] }'

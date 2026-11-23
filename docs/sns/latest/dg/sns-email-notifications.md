@@ -67,7 +67,7 @@ The following code examples show how to use `Subscribe`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SNS#code-examples).
 Subscribe an email address to a topic.
 
-```
+```csharp
         /// <summary>
         /// Creates a new subscription to a topic.
         /// </summary>
@@ -95,7 +95,7 @@ Subscribe an email address to a topic.
 ```
 Subscribe a queue to a topic with optional filters.
 
-```
+```csharp
     /// <summary>
     /// Subscribe a queue to a topic with optional filters.
     /// </summary>
@@ -130,7 +130,7 @@ Subscribe a queue to a topic with optional filters.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```cpp
 //! Subscribe to an Amazon Simple Notification Service (Amazon SNS) topic with delivery to an email address.
 /*!
   \param topicARN: An SNS topic Amazon Resource Name (ARN).
@@ -165,7 +165,7 @@ bool AwsDoc::SNS::subscribeEmail(const Aws::String &topicARN,
 ```
 Subscribe a mobile application to a topic.
 
-```
+```cpp
 //! Subscribe to an Amazon Simple Notification Service (Amazon SNS) topic with delivery to a mobile app.
 /*!
   \param topicARN: The Amazon Resource Name (ARN) for an Amazon SNS topic.
@@ -201,7 +201,7 @@ AwsDoc::SNS::subscribeApp(const Aws::String &topicARN,
 ```
 Subscribe a Lambda function to a topic.
 
-```
+```cpp
 //! Subscribe to an Amazon Simple Notification Service (Amazon SNS) topic with delivery to an AWS Lambda function.
 /*!
   \param topicARN: The Amazon Resource Name (ARN) for an Amazon SNS topic.
@@ -236,7 +236,7 @@ bool AwsDoc::SNS::subscribeLambda(const Aws::String &topicARN,
 ```
 Subscribe an SQS queue to a topic.
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -275,7 +275,7 @@ Subscribe an SQS queue to a topic.
 ```
 Subscribe with a filter to a topic.
 
-```
+```cpp
         static const Aws::String TONE_ATTRIBUTE("tone");
         static const Aws::Vector<Aws::String> TONES = {"cheerful", "funny", "serious",
                                                        "sincere"};
@@ -437,7 +437,7 @@ For more information, see [Amazon SNS email subscription setup and management](h
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/topics_and_queues#code-examples).
 Subscribe a queue to a topic with optional filters.
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -494,7 +494,7 @@ func (actor SnsActions) SubscribeQueue(ctx context.Context, topicArn string, que
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sns.SnsClient;
 import software.amazon.awssdk.services.sns.model.SnsException;
@@ -556,7 +556,7 @@ public class SubscribeEmail {
 ```
 Subscribe an HTTP endpoint to a topic.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sns.SnsClient;
 import software.amazon.awssdk.services.sns.model.SnsException;
@@ -619,7 +619,7 @@ public class SubscribeHTTPS {
 ```
 Subscribe a Lambda function to a topic.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sns.SnsClient;
 import software.amazon.awssdk.services.sns.model.SnsException;
@@ -692,7 +692,7 @@ public class SubscribeLambda {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sns#code-examples).
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -701,7 +701,7 @@ export const snsClient = new SNSClient({});
 ```
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { SubscribeCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -736,7 +736,7 @@ export const subscribeEmail = async (
 ```
 Subscribe a mobile application to a topic.
 
-```
+```javascript
 import { SubscribeCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -773,7 +773,7 @@ export const subscribeApp = async (
 ```
 Subscribe a Lambda function to a topic.
 
-```
+```javascript
 import { SubscribeCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -809,7 +809,7 @@ export const subscribeLambda = async (
 ```
 Subscribe an SQS queue to a topic.
 
-```
+```javascript
 import { SubscribeCommand, SNSClient } from "@aws-sdk/client-sns";
 
 const client = new SNSClient({});
@@ -842,7 +842,7 @@ export const subscribeQueue = async (
 ```
 Subscribe with a filter to a topic.
 
-```
+```javascript
 import { SubscribeCommand, SNSClient } from "@aws-sdk/client-sns";
 
 const client = new SNSClient({});
@@ -890,7 +890,7 @@ export const subscribeQueueFiltered = async (
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```kotlin
 suspend fun subEmail(
     topicArnVal: String,
     email: String,
@@ -911,7 +911,7 @@ suspend fun subEmail(
 ```
 Subscribe a Lambda function to a topic.
 
-```
+```kotlin
 suspend fun subLambda(
     topicArnVal: String?,
     lambdaArn: String?,
@@ -939,7 +939,7 @@ suspend fun subLambda(
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -977,7 +977,7 @@ try {
 ```
 Subscribe an HTTP endpoint to a topic.
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -1022,7 +1022,7 @@ try {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```python
 class SnsWrapper:
     """Encapsulates Amazon SNS topic and subscription functions."""
 
@@ -1062,7 +1062,7 @@ class SnsWrapper:
 ```
 Subscribe a queue to a topic with optional filters.
 
-```
+```python
 class SnsWrapper:
     """Wrapper class for managing Amazon SNS operations."""
 
@@ -1129,7 +1129,7 @@ class SnsWrapper:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```ruby
 require 'aws-sdk-sns'
 require 'logger'
 
@@ -1185,7 +1185,7 @@ end
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```rust
 async fn subscribe_and_publish(
     client: &Client,
     topic_arn: &str,
@@ -1224,7 +1224,7 @@ async fn subscribe_and_publish(
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sns->subscribe(                      "oo_result is returned for testing purposes."
                 iv_topicarn = iv_topic_arn
@@ -1247,7 +1247,7 @@ Subscribe an email address to a topic.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```swift
 import AWSSNS
 
         let config = try await SNSClient.SNSClientConfig(region: region)
@@ -1271,7 +1271,7 @@ import AWSSNS
 ```
 Subscribe a phone number to a topic to receive notifications by SMS.
 
-```
+```swift
 import AWSSNS
 
         let config = try await SNSClient.SNSClientConfig(region: region)

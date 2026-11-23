@@ -11,7 +11,7 @@ This action currently supports mute and unmute operations on telephony attendees
 
 This action only applies to the callLeg that joins from the SIP media application to `"+`{{13605550122}}`"`, LEG-B, or the leg joined from the SIP media application to the meeting.
 
-```
+```json
 {
 "SchemaVersion": "1.0",
   "Actions": [

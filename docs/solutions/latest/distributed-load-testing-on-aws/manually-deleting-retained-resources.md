@@ -29,7 +29,7 @@ Repeat the steps until you have deleted all the solution S3 buckets.
 
 To delete the S3 buckets using AWS CLI, run the following command for each bucket:
 
-```
+```bash
 $ aws s3 rb s3://<bucket-name> --force
 ```
 
@@ -52,7 +52,7 @@ Repeat the steps until you have deleted all the solution tables.
 
 To delete the DynamoDB tables using AWS CLI, run the following command:
 
-```
+```bash
 $ aws dynamodb delete-table --table-name <table-name>
 ```
 
@@ -75,7 +75,7 @@ Repeat the steps until you have deleted all the solution log groups.
 
 To delete log groups using AWS CLI, run the following commands:
 
-```
+```bash
 $ aws logs describe-log-groups --log-group-name-prefix <stack-name> --query 'logGroups[].logGroupName' --output text
 $ aws logs delete-log-group --log-group-name <log-group-name>
 ```
@@ -102,7 +102,7 @@ After uninstalling the solution, you can manually delete these dashboards if the
 
 To delete dashboards using AWS CLI, run the following commands:
 
-```
+```bash
 $ aws cloudwatch list-dashboards --dashboard-name-prefix EcsLoadTesting --query 'DashboardEntries[].DashboardName' --output text
 $ aws cloudwatch delete-dashboards --dashboard-names <dashboard-name-1> <dashboard-name-2>
 ```

@@ -42,7 +42,7 @@ aws memorydb describe-events --duration {{1440}}
 
 The output from the `describe-events` command looks something like this.
 
-```
+```json
 {
     "Events": [
         {

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "account": "{{Your Account Identifier}}",
   "user": "{{Your user name}}",
@@ -39,7 +39,7 @@ passphrase
 
 The following are the metadata fields for Snowflake:
 
-```
+```json
 {
   "cryptographicAlgorithm": "{{Your Cryptographic algorithm}}",
   "encryptPrivateKey": "{{True/False}}"

@@ -29,7 +29,7 @@ The following code example shows how to use `AnalyzeDocument`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/textract#code-examples).
 
-```
+```java
 import software.amazon.awssdk.core.SdkBytes;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.textract.TextractClient;
@@ -128,7 +128,7 @@ The following code example shows how to use `DetectDocumentText`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/textract#code-examples).
 Detect text from an input document.
 
-```
+```java
 import software.amazon.awssdk.core.SdkBytes;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.textract.TextractClient;
@@ -212,7 +212,7 @@ public class DetectDocumentText {
 ```
 Detect text from a document located in an Amazon S3 bucket.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.textract.model.S3Object;
 import software.amazon.awssdk.services.textract.TextractClient;
@@ -303,7 +303,7 @@ The following code example shows how to use `StartDocumentAnalysis`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/textract#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.textract.model.S3Object;
 import software.amazon.awssdk.services.textract.TextractClient;

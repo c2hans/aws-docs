@@ -269,7 +269,7 @@ To have AWS SAM skip a function when using **sam build**, configure the followin
 
 Here is an example, with `TestFunction` configured to be skipped. Its built resources are located at `built-resources/TestFunction.zip`.
 
-```
+```yaml
 TestFunction:
   Type: AWS::Serverless::Function
   Properties:
@@ -290,7 +290,7 @@ Now, when you run **sam build**, AWS SAM will do the following:
 
    Here is an example of the cached template for `TestFunction` in the `.aws-sam` build directory:
 
-   ```
+   ```yaml
    TestFunction:
      Type: AWS::Serverless::Function
      Properties:

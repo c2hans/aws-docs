@@ -14,7 +14,7 @@ The `Client` exposes one method for each API operation exposed by the service. T
 
 The following example demonstrates a basic operation using Amazon S3 to create a bucket in the `us-west-2` AWS Region:
 
-```
+```rust
 let config = aws_config::defaults(BehaviorVersion::latest())
     .load()
     .await;

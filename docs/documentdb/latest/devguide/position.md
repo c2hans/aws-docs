@@ -77,7 +77,7 @@ To view a code example for using the `$position` command, choose the tab for the
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function insertTasksAtPosition() {
@@ -109,7 +109,7 @@ insertTasksAtPosition();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def insert_tasks_at_position():

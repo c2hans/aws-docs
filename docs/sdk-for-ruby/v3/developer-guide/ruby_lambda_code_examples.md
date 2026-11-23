@@ -32,7 +32,7 @@ The following code example shows how to get started using Lambda.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/lambda#code-examples).
 
-```
+```ruby
 require 'aws-sdk-lambda'
 
 # Creates an AWS Lambda client using the default credentials and configuration
@@ -83,7 +83,7 @@ For more information, see [Create a Lambda function with the console](https://do
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/lambda#code-examples).
 Set up pre-requisite IAM permissions for a Lambda function capable of writing logs.
 
-```
+```ruby
   # Get an AWS Identity and Access Management (IAM) role.
   #
   # @param iam_role_name: The name of the role to retrieve.
@@ -149,7 +149,7 @@ Set up pre-requisite IAM permissions for a Lambda function capable of writing lo
 ```
 Define a Lambda handler that increments a number provided as an invocation parameter.
 
-```
+```ruby
 require 'logger'
 
 # A function that increments a whole number by one (1) and logs the result.
@@ -180,7 +180,7 @@ end
 ```
 Zip your Lambda function into a deployment package.
 
-```
+```ruby
   # Creates a Lambda deployment package in .zip format.
   #
   # @param source_file: The name of the object, without suffix, for the Lambda file and zip.
@@ -202,7 +202,7 @@ Zip your Lambda function into a deployment package.
 ```
 Create a new Lambda function.
 
-```
+```ruby
   # Deploys a Lambda function.
   #
   # @param function_name: The name of the Lambda function.
@@ -238,7 +238,7 @@ Create a new Lambda function.
 ```
 Invoke your Lambda function with optional runtime parameters.
 
-```
+```ruby
   # Invokes a Lambda function.
   # @param function_name [String] The name of the function to invoke.
   # @param payload [nil] Payload containing runtime parameters.
@@ -253,7 +253,7 @@ Invoke your Lambda function with optional runtime parameters.
 ```
 Update your Lambda function's configuration to inject a new environment variable.
 
-```
+```ruby
   # Updates the environment variables for a Lambda function.
   # @param function_name: The name of the function to update.
   # @param log_level: The log level of the function.
@@ -279,7 +279,7 @@ Update your Lambda function's configuration to inject a new environment variable
 ```
 Update your Lambda function's code with a different deployment package containing different code.
 
-```
+```ruby
   # Updates the code for a Lambda function by submitting a .zip archive that contains
   # the code for the function.
   #
@@ -305,7 +305,7 @@ Update your Lambda function's code with a different deployment package containin
 ```
 List all existing Lambda functions using the built-in paginator.
 
-```
+```ruby
   # Lists the Lambda functions for the current account.
   def list_functions
     functions = []
@@ -321,7 +321,7 @@ List all existing Lambda functions using the built-in paginator.
 ```
 Delete a specific Lambda function.
 
-```
+```ruby
   # Deletes a Lambda function.
   # @param function_name: The name of the function to delete.
   def delete_function(function_name)
@@ -354,7 +354,7 @@ The following code example shows how to use `CreateFunction`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/lambda#code-examples).
 
-```
+```ruby
 class LambdaWrapper
   attr_accessor :lambda_client, :cloudwatch_client, :iam_client
 
@@ -409,7 +409,7 @@ The following code example shows how to use `DeleteFunction`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/lambda#code-examples).
 
-```
+```ruby
 class LambdaWrapper
   attr_accessor :lambda_client, :cloudwatch_client, :iam_client
 
@@ -443,7 +443,7 @@ The following code example shows how to use `GetFunction`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/lambda#code-examples).
 
-```
+```ruby
 class LambdaWrapper
   attr_accessor :lambda_client, :cloudwatch_client, :iam_client
 
@@ -480,7 +480,7 @@ The following code example shows how to use `Invoke`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/lambda#code-examples).
 
-```
+```ruby
 class LambdaWrapper
   attr_accessor :lambda_client, :cloudwatch_client, :iam_client
 
@@ -514,7 +514,7 @@ The following code example shows how to use `ListFunctions`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/lambda#code-examples).
 
-```
+```ruby
 class LambdaWrapper
   attr_accessor :lambda_client, :cloudwatch_client, :iam_client
 
@@ -549,7 +549,7 @@ The following code example shows how to use `UpdateFunctionCode`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/lambda#code-examples).
 
-```
+```ruby
 class LambdaWrapper
   attr_accessor :lambda_client, :cloudwatch_client, :iam_client
 
@@ -594,7 +594,7 @@ The following code example shows how to use `UpdateFunctionConfiguration`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/lambda#code-examples).
 
-```
+```ruby
 class LambdaWrapper
   attr_accessor :lambda_client, :cloudwatch_client, :iam_client
 
@@ -666,7 +666,7 @@ The following code example shows how to implement a Lambda function that connect
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-connect-rds-iam) repository.
 Connecting to an Amazon RDS database in a Lambda function using Ruby.
 
-```
+```ruby
 # Ruby code here.
 
 require 'aws-sdk-rds'
@@ -731,7 +731,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda) repository.
 Consuming an Kinesis event with Lambda using Ruby.
 
-```
+```ruby
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 require 'aws-sdk'
@@ -768,7 +768,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using Ruby.
 
-```
+```ruby
 def lambda_handler(event:, context:)
     return 'received empty event' if event['Records'].empty?
 
@@ -795,7 +795,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using Ruby.
 
-```
+```ruby
 require 'json'
 
 def lambda_handler(event:, context:)
@@ -828,7 +828,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-msk-to-lambda) repository.
 Consuming an Amazon MSK event with Lambda using Ruby.
 
-```
+```ruby
 require 'base64'
 
 def lambda_handler(event:, context:)
@@ -857,7 +857,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using Ruby.
 
-```
+```ruby
 require 'json'
 require 'uri'
 require 'aws-sdk'
@@ -892,7 +892,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sns-to-lambda) repository.
 Consuming an SNS event with Lambda using Ruby.
 
-```
+```ruby
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 def lambda_handler(event:, context:)
@@ -917,7 +917,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda) repository.
 Consuming an SQS event with Lambda using Ruby.
 
-```
+```ruby
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 def lambda_handler(event:, context:)
@@ -947,7 +947,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda-with-batch-item-handling) repository.
 Reporting Kinesis batch item failures with Lambda using Ruby.
 
-```
+```ruby
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 require 'aws-sdk'
@@ -990,7 +990,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using Ruby.
 
-```
+```ruby
 def lambda_handler(event:, context:)
     records = event["Records"]
     cur_record_sequence_number = ""
@@ -1018,7 +1018,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda-with-batch-item-handling) repository.
 Reporting SQS batch item failures with Lambda using Ruby.
 
-```
+```ruby
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 require 'json'

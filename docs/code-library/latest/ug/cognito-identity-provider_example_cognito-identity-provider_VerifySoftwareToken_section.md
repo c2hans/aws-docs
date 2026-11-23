@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Verify the TOTP and register for MFA.
     /// </summary>
@@ -45,7 +45,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cognito#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -101,7 +101,7 @@ For more information, see [Adding MFA to a user pool](https://docs.aws.amazon.co
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cognito#code-examples).
 
-```
+```java
     // Verify the TOTP and register for MFA.
     public static void verifyTOTP(CognitoIdentityProviderClient identityProviderClient, String session, String code) {
         try {
@@ -127,7 +127,7 @@ For more information, see [Adding MFA to a user pool](https://docs.aws.amazon.co
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 const verifySoftwareToken = (totp) => {
   const client = new CognitoIdentityProviderClient({});
 
@@ -156,7 +156,7 @@ const verifySoftwareToken = (totp) => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cognito#code-examples).
 
-```
+```kotlin
 // Verify the TOTP and register for MFA.
 suspend fun verifyTOTP(
     sessionVal: String?,
@@ -182,7 +182,7 @@ suspend fun verifyTOTP(
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cognito#code-examples).
 
-```
+```python
 class CognitoIdentityProviderWrapper:
     """Encapsulates Amazon Cognito actions"""
 
@@ -230,7 +230,7 @@ class CognitoIdentityProviderWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cgp#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_cgp->verifysoftwaretoken(
           iv_session = iv_session
@@ -260,7 +260,7 @@ class CognitoIdentityProviderWrapper:
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity-provider#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSCognitoIdentityProvider
 

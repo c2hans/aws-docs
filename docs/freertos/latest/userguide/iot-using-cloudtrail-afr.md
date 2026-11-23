@@ -49,7 +49,7 @@ CloudTrail log files can contain one or more log entries. Each entry lists multi
 
 The following example shows a CloudTrail log entry that demonstrates the log from a call to `CreateOTAUpdate` action.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

@@ -87,7 +87,7 @@ The following examples show how to distribute an existing image with the [Start-
 **Distribute from an AMI ID**
 The following example distributes an image that you specify by AMI ID:
 
-```
+```ps
 Start-EC2IBImageDistribution -SourceImage ami-0abcdef1234567890 `
     -DistributionConfigurationArn arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:distribution-configuration/{{my-distribution}} `
     -ExecutionRole arn:aws:iam::{{111122223333}}:role/{{my-image-builder-distribution-role}}
@@ -96,7 +96,7 @@ Start-EC2IBImageDistribution -SourceImage ami-0abcdef1234567890 `
 **Distribute from an SSM parameter**
 The following example distributes the image that an SSM parameter references:
 
-```
+```ps
 Start-EC2IBImageDistribution -SourceImage ssm:{{/golden/latest-ami}} `
     -DistributionConfigurationArn arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:distribution-configuration/{{my-distribution}} `
     -ExecutionRole {{my-image-builder-distribution-role}}
@@ -105,7 +105,7 @@ Start-EC2IBImageDistribution -SourceImage ssm:{{/golden/latest-ami}} `
 **Distribute from an Image Builder image version ARN**
 You can omit the trailing build number (`/1`) to distribute the latest build of that image version. The following example distributes an image that you specify by build version ARN:
 
-```
+```ps
 Start-EC2IBImageDistribution -SourceImage arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:image/{{my-image}}/1.0.0/1 `
     -DistributionConfigurationArn arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:distribution-configuration/{{my-distribution}} `
     -ExecutionRole {{my-image-builder-distribution-role}}
@@ -156,7 +156,7 @@ aws imagebuilder retry-image \
 
 To retry a failed image with the [Start-EC2IBImageRetry](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2IBImageRetry.html) cmdlet, provide the image build version ARN of the failed image:
 
-```
+```ps
 Start-EC2IBImageRetry -ImageBuildVersionArn arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:image/{{my-image}}/1.0.0/1
 ```
 

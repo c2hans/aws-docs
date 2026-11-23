@@ -10,11 +10,9 @@ Each role name uses the pattern `SSM-Azure{{Type}}-{{connector-name}}`, where {{
 
 The console creates the roles in this order:
 
-1. Azure federation role, with a trust policy that initially names only the Systems Manager service principal as a trusted entity.
+1. Azure federation role, with the trust policy shown in [Azure federation role](cloud-connector-azure-federation-role.md). The console sets the trust policy only when it creates the role. The policy matches the automation assume role and the automation dispatch role by name and tag, so it trusts them after the console creates them.
 
 1. Automation assume role and automation dispatch role.
-
-1. The console then updates the Azure federation role's trust policy to add the automation assume role and the automation dispatch role as trusted principals. After this update, the trust policy is the one shown in [Azure federation role](cloud-connector-azure-federation-role.md).
 
 **Note**
 The Systems Manager console creates these roles only during the Cloud Connector setup wizard. If you create a Cloud Connector with the AWS CLI (as described in [Step 2: Create a Systems Manager Cloud Connector](cloud-connector-create-ssm-connector.md)), you must create the roles yourself. The trust and permissions policies in this section show the JSON you can use to recreate them. If you recreate the roles, do the following:

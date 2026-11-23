@@ -13,7 +13,7 @@ This citation pattern is important for three reasons. First, it prevents the sup
 
 The `citations` field in the `/assistant/chat` response follows the structure in the API contract:
 
-```
+```json
 {
   "result": "P0420 is a catalyst system efficiency below threshold ...",
   "sessionId": "session_1234567890_abc123456",

@@ -31,7 +31,7 @@ For more information, see [Comparing faces in images](https://docs.aws.amazon.co
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 
-```
+```kotlin
 suspend fun compareTwoFaces(
     similarityThresholdVal: Float,
     sourceImageVal: String,
@@ -95,7 +95,7 @@ For more information, see [Creating a collection](https://docs.aws.amazon.com/re
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 
-```
+```kotlin
 suspend fun createMyCollection(collectionIdVal: String) {
     val request =
         CreateCollectionRequest {
@@ -121,7 +121,7 @@ For more information, see [Deleting a collection](https://docs.aws.amazon.com/re
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 
-```
+```kotlin
 suspend fun deleteMyCollection(collectionIdVal: String) {
     val request =
         DeleteCollectionRequest {
@@ -146,7 +146,7 @@ For more information, see [Deleting faces from a collection](https://docs.aws.am
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 
-```
+```kotlin
 suspend fun deleteFacesCollection(
     collectionIdVal: String?,
     faceIdVal: String,
@@ -175,7 +175,7 @@ For more information, see [Describing a collection](https://docs.aws.amazon.com/
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 
-```
+```kotlin
 suspend fun describeColl(collectionName: String) {
     val request =
         DescribeCollectionRequest {
@@ -201,7 +201,7 @@ For more information, see [Detecting faces in an image](https://docs.aws.amazon.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 
-```
+```kotlin
 suspend fun detectFacesinImage(sourceImage: String?) {
     val souImage =
         Image {
@@ -236,7 +236,7 @@ For more information, see [Detecting labels in an image](https://docs.aws.amazon
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 
-```
+```kotlin
 suspend fun detectImageLabels(sourceImage: String) {
     val souImage =
         Image {
@@ -268,7 +268,7 @@ For more information, see [Detecting inappropriate images](https://docs.aws.amaz
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 
-```
+```kotlin
 suspend fun detectModLabels(sourceImage: String) {
     val myImage =
         Image {
@@ -301,7 +301,7 @@ For more information, see [Detecting text in an image](https://docs.aws.amazon.c
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 
-```
+```kotlin
 suspend fun detectTextLabels(sourceImage: String?) {
     val souImage =
         Image {
@@ -337,7 +337,7 @@ For more information, see [Adding faces to a collection](https://docs.aws.amazon
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 
-```
+```kotlin
 suspend fun addToCollection(
     collectionIdVal: String?,
     sourceImage: String,
@@ -391,7 +391,7 @@ For more information, see [Listing collections](https://docs.aws.amazon.com/reko
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 
-```
+```kotlin
 suspend fun listAllCollections() {
     val request =
         ListCollectionsRequest {
@@ -418,7 +418,7 @@ For more information, see [Listing faces in a collection](https://docs.aws.amazo
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 
-```
+```kotlin
 suspend fun listFacesCollection(collectionIdVal: String?) {
     val request =
         ListFacesRequest {
@@ -447,7 +447,7 @@ For more information, see [Recognizing celebrities in an image](https://docs.aws
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 
-```
+```kotlin
 suspend fun recognizeAllCelebrities(sourceImage: String?) {
     val souImage =
         Image {
@@ -508,7 +508,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 Detect faces in a video stored in an Amazon S3 bucket.
 
-```
+```kotlin
 suspend fun startFaceDetection(
     channelVal: NotificationChannel?,
     bucketVal: String,
@@ -584,7 +584,7 @@ suspend fun getFaceResults() {
 ```
 Detect inappropriate or offensive content in a video stored in an Amazon S3 bucket.
 
-```
+```kotlin
 suspend fun startModerationDetection(
     channel: NotificationChannel?,
     bucketVal: String?,

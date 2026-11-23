@@ -43,7 +43,7 @@ To give users full access to use zonal autoshift in the AWS Management Console, 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -94,7 +94,7 @@ To work with API operations for zonal autoshift, attach a policy such as the fol
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

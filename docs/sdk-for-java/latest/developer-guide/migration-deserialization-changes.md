@@ -15,7 +15,7 @@ For example, consider the response returned for the `describeTable` method from 
 
 **Example of the deserialization of a property modeled as a list that is missing in the response**
 
-```
+```java
 public void deserializationDiffs(){
 
     DescribeTableResponse v2Response = dynamoDbClientV2.describeTable(builder -> builder.tableName(TABLE_NAME));

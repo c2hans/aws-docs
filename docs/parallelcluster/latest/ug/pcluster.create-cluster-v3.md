@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Creates an AWS ParallelCluster cluster.
 
-```
+```sh
 pcluster create-cluster [-h]
                  --cluster-configuration {{CLUSTER_CONFIGURATION}}
                  --cluster-name {{CLUSTER_NAME}}

@@ -62,7 +62,7 @@ The grants created by CreateDataAutomationLibrary are retired by BDA when the li
 
  To use your customer managed key to encrypt BDA resources, include the following statements in your key policy and replace `${account-id}`, `${region}`, and `${key-id}` with your specific values:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Id": "KMS key policy for a key to encrypt data for BDA resource",
@@ -120,7 +120,7 @@ The IAM role used to interact with BDA and AWS KMS should have the following per
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

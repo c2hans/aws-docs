@@ -69,7 +69,7 @@ Use `CreateAgreementRequest` to generate a quote. You must provide:
 
 You can optionally provide `acceptorContact` with your contact information.
 
-```
+```python
 response = client.create_agreement_request(
     agreementProposalIdentifier='at-edhtjnbilupjv3xqbphtom77y',
     intent='NEW',
@@ -157,7 +157,7 @@ Use the example below to locate the values needed for `ConfigurableUpfrontPricin
 
 Example `GetOfferTerms` response:
 
-```
+```json
 {
   "offerTerms": [
     {
@@ -208,7 +208,7 @@ The `constraints` field in the rate card governs how you may craft the `Configur
 
 Example `RequestedTerm` payload for `ConfigurableUpfrontPricingTerm`:
 
-```
+```json
 {
   "id": "term-43ab7a2445f89dfcb7e1a6a81c92fe08c124125ffad126bea5e5b7915c065166",
   "configuration": {
@@ -238,7 +238,7 @@ Example `RequestedTerm` payload for `ConfigurableUpfrontPricingTerm`:
 
 Example `RequestedTerm` payload for `RenewalTerm`:
 
-```
+```json
 {
   "id": "term-ffcc0100ce0c5468426dc07d0b05cff09ab8447640108d9c95ce1591f0949738",
   "configuration": {
@@ -259,7 +259,7 @@ Example `RequestedTerm` payload for `RenewalTerm`:
 
 Example `RequestedTerm` payload for `VariablePaymentTerm`:
 
-```
+```json
 {
   "id": "term-9ab34376c51cd5b4dc995aa0f410b657d58bd577b3f09b34d38afb6964aaaf12",
   "configuration": {
@@ -276,7 +276,7 @@ Example `RequestedTerm` payload for `VariablePaymentTerm`:
 
 Use `GetAgreementRequest` to view details about an agreement request, such as its status, intent, approval requirement, and expected charges.
 
-```
+```python
 response = client.get_agreement_request(
     agreementRequestId='ar-abc123'
 )
@@ -290,7 +290,7 @@ print(f"Approval requirement: {response['approvalRequirement']}")
 
 Use `GetAgreementRequestTerms` to obtain details about the terms in an agreement request.
 
-```
+```python
 response = client.get_agreement_request_terms(
     agreementRequestId='ar-abc123'
 )
@@ -304,7 +304,7 @@ for term in response['terms']:
 
 Use `ListAgreementRequests` to list the agreement requests that you created as an acceptor. You can filter by status and resource.
 
-```
+```python
 response = client.list_agreement_requests(
     status='PENDING_APPROVAL'
 )
@@ -318,7 +318,7 @@ for req in response['items']:
 
 Use `CancelAgreementRequest` to cancel an agreement request that is pending approval, or approved but not yet accepted. Cancelling an agreement request also cancels its open approvals.
 
-```
+```python
 client.cancel_agreement_request(
     agreementRequestId='ar-abc123'
 )
@@ -336,7 +336,7 @@ When every approval is approved, the agreement request is accepted and its statu
 
 Use `GetAgreementRequestApprovalPlans` to get the approval plans for an agreement request that requires approval.
 
-```
+```python
 response = client.get_agreement_request_approval_plans(
     agreementRequestId='ar-abc123'
 )
@@ -350,7 +350,7 @@ for plan in response['items']:
 
 Use `StartAgreementApprovals` to start the approvals for an agreement request, using the plan references from `GetAgreementRequestApprovalPlans`. You can also add a note for the approvers and associate purchase order numbers with charges. You also need `AcceptAgreementRequest` permission because the agreement request is accepted when its approvals are complete.
 
-```
+```python
 response = client.start_agreement_approvals(
     agreementRequestId='ar-abc123',
     planInputs=[
@@ -372,7 +372,7 @@ for approval in response['approvalSummaries']:
 
 Use `ListAgreementApprovals` to list agreement approvals. Set `partyType` to `REQUESTER` to list agreement approvals for agreement requests that you created, or to `AWS_ORGANIZATION_ADMIN` to list agreement approvals as an AWS Organizations administrator. You can filter by agreement request, approval type, and status.
 
-```
+```python
 response = client.list_agreement_approvals(
     partyType='REQUESTER',
     agreementRequestId='ar-abc123'
@@ -387,7 +387,7 @@ for approval in response['items']:
 
 Use `GetAgreementApproval` to retrieve detailed information about an agreement approval, including its status and the outcome recorded for each approver.
 
-```
+```python
 response = client.get_agreement_approval(
     agreementApprovalId='apr-abc123'
 )
@@ -400,7 +400,7 @@ print(f"Status: {response['buyerAgreementApproval']['status']}")
 
 If your account is the management account or a delegated administrator of your AWS organization, use `AcceptAgreementApproval` to approve an agreement approval as the organization administrator approver. To approve on behalf of another approver, set `approverOutcomeIdToOverride`. After every level of the agreement approval is approved, its status changes to `APPROVED`.
 
-```
+```python
 client.accept_agreement_approval(
     buyerAgreementApprovalApproverInput={
         'agreementApprovalId': 'apr-abc123',
@@ -414,7 +414,7 @@ client.accept_agreement_approval(
 
 If your account is the management account or a delegated administrator of your AWS organization, use `RejectAgreementApproval` to reject an agreement approval as the organization administrator approver. To reject on behalf of another approver, set `approverOutcomeIdToOverride`. A note that explains the rejection is required. After rejection, the agreement approval and the agreement request change to `REJECTED` status.
 
-```
+```python
 client.reject_agreement_approval(
     buyerAgreementApprovalRejectionInput={
         'agreementApprovalId': 'apr-abc123',
@@ -428,7 +428,7 @@ client.reject_agreement_approval(
 
 First, generate a quote as described in [Generate a quote](#buyer-generate-quote). Then, use `AcceptAgreementRequest` to accept the quote and create the agreement. You must call `AcceptAgreementRequest` before the agreement request expires. You can optionally associate a purchase order number during acceptance.
 
-```
+```python
 # Use chargeId from CreateAgreementRequest response
 response = client.accept_agreement_request(
     agreementRequestId='ar-abc123',
@@ -448,7 +448,7 @@ print(f"Agreement ID: {response['agreementId']}")
 
 Construct a `CreateAgreementRequest` as described in [Generate a quote](#buyer-generate-quote), but set `intent` to `REPLACE` and provide `sourceAgreementIdentifier` with the agreement to replace. Then call `AcceptAgreementRequest` to complete the replacement.
 
-```
+```python
 response = client.create_agreement_request(
     agreementProposalIdentifier='at-edhtjnbilupjv3xqbphtom77y',
     intent='REPLACE',
@@ -463,7 +463,7 @@ print(f"Agreement Request ID: {response['agreementRequestId']}")
 
 To modify term configuration on an existing agreement, set `intent` to `AMEND` and provide `sourceAgreementIdentifier`. Unlike a new agreement, no `agreementProposalIdentifier` is needed. Only include the terms whose configuration you want to change. Then call `AcceptAgreementRequest` to apply the amendment.
 
-```
+```python
 response = client.create_agreement_request(
     intent='AMEND',
     sourceAgreementIdentifier='agmt-existing123',
@@ -490,7 +490,7 @@ print(f"Agreement Request ID: {response['agreementRequestId']}")
 
 Use `CreateAgreementRequest` with the `AMEND` intent to toggle auto-renewal.
 
-```
+```python
 response = client.create_agreement_request(
     intent='AMEND',
     sourceAgreementIdentifier='agmt-existing123',
@@ -519,7 +519,7 @@ You can change your preference until the renewal decision deadline, or until the
 
 Use `CancelAgreement` to cancel a usage agreement. For other agreement types, the buyer must reach out to the seller to initiate cancellation.
 
-```
+```python
 client.cancel_agreement(
     agreementId='agmt-abc123'
 )
@@ -530,7 +530,7 @@ client.cancel_agreement(
 
 Use `SearchAgreements` to search across all agreements that you participate in as an acceptor. The search returns a list of agreements with basic agreement information.
 
-```
+```python
 response = client.search_agreements(
     catalog='AWSMarketplace',
     filters=[
@@ -549,7 +549,7 @@ for agmt in response['agreementViewSummaries']:
 
 Use `DescribeAgreement` to view details about an agreement, such as the proposer, acceptor, start date, and end date.
 
-```
+```python
 response = client.describe_agreement(
     agreementId='agmt-abc123'
 )
@@ -564,7 +564,7 @@ print(f"End: {response['endTime']}")
 
 Use `GetAgreementTerms` to obtain details about the terms in an agreement that you participate in as an acceptor.
 
-```
+```python
 response = client.get_agreement_terms(
     agreementId='agmt-abc123'
 )
@@ -578,7 +578,7 @@ for term in response['acceptedTerms']:
 
 Use `GetAgreementContacts` to retrieve the contact information captured on an agreement that you participate in as an acceptor.
 
-```
+```python
 response = client.get_agreement_contacts(
     agreementId='agmt-abc123'
 )
@@ -596,7 +596,7 @@ if contact:
 
 Use `GetAgreementEntitlements` to obtain an agreement-level view of the status and details of entitlements tied to your agreement.
 
-```
+```python
 response = client.get_agreement_entitlements(
     agreementId='agmt-abc123'
 )
@@ -610,7 +610,7 @@ for ent in response['agreementEntitlements']:
 
 Use `GetAgreementEntitlements` to obtain a registration token. This short-lived token (valid for 30 minutes) is required by acceptors to set up an account with proposers. Currently only applicable for SaaS purchase agreements.
 
-```
+```python
 response = client.get_agreement_entitlements(
     agreementId='agmt-abc123'
 )
@@ -626,7 +626,7 @@ for ent in response['agreementEntitlements']:
 
 Use `ListAgreementCharges` to view charges and purchase order details associated with your agreement.
 
-```
+```python
 response = client.list_agreement_charges(
     agreementId='agmt-abc123'
 )
@@ -641,7 +641,7 @@ for charge in response['items']:
 
 Use `UpdatePurchaseOrders` to add a purchase order number after subscribing to a product. Use the `chargeId` and `chargeRevision` from the [List agreement charges](#buyer-list-charges) response. Once a purchase order is associated with a charge, the invoice generated for that charge includes the purchase order number.
 
-```
+```python
 client.update_purchase_orders(
     agreementId='agmt-abc123',
     purchaseOrders=[
@@ -661,7 +661,7 @@ For how purchase orders carry over when an agreement renews, see [Purchase order
 
 Use `ListAgreementCancellationRequests` to list all cancellation requests for agreements you participate in. You can filter by agreement, status, and other criteria.
 
-```
+```python
 response = client.list_agreement_cancellation_requests(
     partyType='Acceptor',
     agreementId='agmt-abc123'
@@ -676,7 +676,7 @@ for req in response['agreementCancellationRequests']:
 
 Use `GetAgreementCancellationRequest` to retrieve detailed information about a specific cancellation request, including status, timestamps, and reason codes.
 
-```
+```python
 response = client.get_agreement_cancellation_request(
     agreementId='agmt-abc123',
     agreementCancellationRequestId='acr-abc123'
@@ -691,7 +691,7 @@ print(f"Reason: {response['reasonCode']}")
 
 Use `AcceptAgreementCancellationRequest` to approve a cancellation request initiated by the seller. After approval, the agreement cancellation workflow executes asynchronously. You also need `CancelAgreement` permission because approving the cancellation request leads to agreement cancellation.
 
-```
+```python
 client.accept_agreement_cancellation_request(
     agreementId='agmt-abc123',
     agreementCancellationRequestId='acr-abc123'
@@ -703,7 +703,7 @@ client.accept_agreement_cancellation_request(
 
 Use `RejectAgreementCancellationRequest` to reject a cancellation request initiated by the seller. After rejection, the agreement remains active and the seller can create a new cancellation request if needed.
 
-```
+```python
 client.reject_agreement_cancellation_request(
     agreementId='agmt-abc123',
     agreementCancellationRequestId='acr-abc123'
@@ -715,7 +715,7 @@ client.reject_agreement_cancellation_request(
 
 Use `ListAgreementPaymentRequests` to list all payment requests for agreements you participate in. You can filter by agreement, status, and other criteria.
 
-```
+```python
 response = client.list_agreement_payment_requests(
     partyType='Acceptor',
     agreementId='agmt-abc123'
@@ -730,7 +730,7 @@ for req in response['agreementPaymentRequests']:
 
 Use `GetAgreementPaymentRequest` to retrieve detailed information about a specific payment request, including status, timestamps, and associated charges.
 
-```
+```python
 response = client.get_agreement_payment_request(
     paymentRequestId='pr-abc123',
     agreementId='agmt-abc123'
@@ -745,7 +745,7 @@ print(f"Amount: ${response['amount']}")
 
 Use `AcceptAgreementPaymentRequest` to approve a payment request initiated by the seller for an active agreement.
 
-```
+```python
 client.accept_agreement_payment_request(
     paymentRequestId='pr-abc123',
     agreementId='agmt-abc123'
@@ -757,7 +757,7 @@ client.accept_agreement_payment_request(
 
 Use `RejectAgreementPaymentRequest` to reject a payment request initiated by the seller. After rejection, the seller can create a new payment request if needed.
 
-```
+```python
 client.reject_agreement_payment_request(
     paymentRequestId='pr-abc123',
     agreementId='agmt-abc123'

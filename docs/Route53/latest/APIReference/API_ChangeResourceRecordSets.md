@@ -67,6 +67,10 @@ POST /2013-04-01/hostedzone/{{Id}}/rrset/ HTTP/1.1
                   <EvaluateTargetHealth>{{boolean}}</EvaluateTargetHealth>
                   <HostedZoneId>{{string}}</HostedZoneId>
                </AliasTarget>
+               <AZAffinity>
+                  <LocationId>{{string}}</LocationId>
+                  <LocationType>{{string}}</LocationType>
+               </AZAffinity>
                <CidrRoutingConfig>
                   <CollectionId>{{string}}</CollectionId>
                   <LocationName>{{string}}</LocationName>

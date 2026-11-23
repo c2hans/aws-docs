@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 
 ![A diagram depicting hub and spoke design with AWS Transit Gateway](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/hub-and-spoke-design.png)
 
+**Hub and spoke design with AWS Transit Gateway**
+
 Transit Gateway is a Regional resource and can connect thousands of VPCs within the same AWS Region. You can connect multiple gateways over a single Direct Connect connection for hybrid connectivity. Typically, you can use just one Transit Gateway instance connecting all your VPC instances in a given Region, and use Transit Gateway routing tables to isolate them wherever needed. Note that you do not need additional transit gateways for high availability, because transit gateways are highly available by design; for redundancy, use a single gateway in each Region. However, there is a valid case for creating multiple gateways to limit misconﬁguration blast radius, segregate control plane operations, and administrative ease-of-use.
 
 With Transit Gateway peering, customers can peer their Transit Gateway instances within same or multiple Regions and route traffic between them. It uses the same underlying infrastructure as VPC peering, and is therefore encrypted. For more information, refer to [Building a global network using AWS Transit Gateway Inter-Region peering](https://aws.amazon.com/blogs/networking-and-content-delivery/building-a-global-network-using-aws-transit-gateway-inter-region-peering/) and [AWS Transit Gateway now supports Intra-Region Peering](https://aws.amazon.com/blogs/networking-and-content-delivery/aws-transit-gateway-now-supports-intra-region-peering/).

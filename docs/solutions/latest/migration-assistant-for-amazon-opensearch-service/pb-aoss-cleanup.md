@@ -8,14 +8,14 @@ After the rollback window has passed and the collection is serving production tr
 
 1. Unregister the snapshot repository and remove the snapshot from Amazon S3 if you no longer need it:
 
-   ```
+   ```bash
    console snapshot delete
    console snapshot unregister-repo
    ```
 
 1. Reset the migration custom resources on Amazon EKS:
 
-   ```
+   ```bash
    workflow reset --all
    ```
 
@@ -26,7 +26,7 @@ Deleting a collection is irreversible and removes all of its indexed data. Only 
 
 If you created a **throwaway** test collection (not your production target), delete it and its policies after you are finished:
 
-```
+```bash
 aws opensearchserverless delete-collection --name vector-search
 ```
 

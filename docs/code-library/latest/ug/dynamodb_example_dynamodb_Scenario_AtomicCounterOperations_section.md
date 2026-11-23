@@ -17,7 +17,7 @@ The following code examples show how to use atomic counter operations in DynamoD
 **SDK for Java 2.x**
 Demonstrate atomic counter operations using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -270,7 +270,7 @@ import java.util.Map;
 ```
 Example usage of atomic counter operations with AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(DynamoDbClient dynamoDbClient, String tableName) {
         // Example key
         Map<String, AttributeValue> key = new HashMap<>();
@@ -349,7 +349,7 @@ Example usage of atomic counter operations with AWS SDK for Java 2.x.
 **SDK for JavaScript (v3)**
 Demonstrate atomic counter operations using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
   DynamoDBDocumentClient,
@@ -581,7 +581,7 @@ async function getCounterValue(
 ```
 Example usage of atomic counter operations with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example of how to use the atomic counter operations.
  */
@@ -678,7 +678,7 @@ async function exampleUsage() {
 **SDK for Python (Boto3)**
 Demonstrate atomic counter operations using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 from typing import Any, Dict, Union
@@ -837,7 +837,7 @@ def atomic_conditional_increment(
 ```
 Example usage of atomic counter operations with AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use the atomic counter operations functions."""
     # Example parameters

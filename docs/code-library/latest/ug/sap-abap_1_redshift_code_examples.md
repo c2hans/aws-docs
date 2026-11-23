@@ -27,7 +27,7 @@ The following code example shows how to use `CreateCluster`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rsh#code-examples).
 Create the cluster.
 
-```
+```sap-abap
     TRY.
         " Example values: iv_cluster_identifier = 'my-redshift-cluster'
         " Example values: iv_node_type = 'ra3.4xlarge'
@@ -61,7 +61,7 @@ The following code example shows how to use `DeleteCluster`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rsh#code-examples).
 Delete the cluster.
 
-```
+```sap-abap
     TRY.
         " Example values: iv_cluster_identifier = 'my-redshift-cluster'
         lo_rsh->deletecluster(
@@ -86,7 +86,7 @@ The following code example shows how to use `DescribeClusters`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rsh#code-examples).
 Describe the cluster.
 
-```
+```sap-abap
     TRY.
         " Example values: iv_cluster_identifier = 'my-redshift-cluster' (optional)
         oo_result = lo_rsh->describeclusters(
@@ -109,7 +109,7 @@ The following code example shows how to use `DescribeStatement`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rsd#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example values: iv_statement_id = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
         oo_result = lo_rsd->describestatement(
@@ -133,7 +133,7 @@ The following code example shows how to use `ExecuteStatement`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rsd#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example values: iv_cluster_identifier = 'redshift-cluster-movies'
         " Example values: iv_database_name = 'dev'
@@ -178,7 +178,7 @@ The following code example shows how to use `GetStatementResult`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rsd#code-examples).
 Check the statement result.
 
-```
+```sap-abap
     TRY.
         " Example values: iv_statement_id = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
         " Handle pagination for large result sets
@@ -220,7 +220,7 @@ The following code example shows how to use `ListDatabases`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rsd#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example values: iv_cluster_identifier = 'redshift-cluster-movies'
         " Example values: iv_database_name = 'dev'
@@ -250,7 +250,7 @@ The following code example shows how to use `ModifyCluster`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rsh#code-examples).
 Modify a cluster.
 
-```
+```sap-abap
     TRY.
         " Example values: iv_cluster_identifier = 'my-redshift-cluster'
         " Example values: iv_pref_maintenance_wn = 'wed:07:30-wed:08:00'

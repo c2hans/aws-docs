@@ -39,6 +39,8 @@ The authorizer lambda function it not managed by AWS HealthImaging service. It e
 
 ![Diagram showing workflow: Client sends token, Lambda authorizer validates, HealthImaging processes request](https://docs.aws.amazon.com/healthimaging/latest/devguide/images/security-oidc-workflow-lambda.png)
 
+OIDC authentication workflow with Lambda authorizer
+
 ## Prerequisites
 <a name="dicomweb-oidc-prerequisites"></a>
 

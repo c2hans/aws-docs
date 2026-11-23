@@ -30,7 +30,7 @@ The API key is only displayed once. Make sure to copy and save it before closing
 ------
 #### [ Python ]
 
-   ```
+   ```python
    import boto3
    import os
 
@@ -60,7 +60,7 @@ The API key is only displayed once. Make sure to copy and save it before closing
 ------
 #### [ HTTP client using Python ]
 
-   ```
+   ```python
    import requests
 
    url = "https://bedrock-runtime.us-east-1.amazonaws.com/model/us.anthropic.claude-3-5-haiku-20241022-v1:0/converse"
@@ -87,7 +87,7 @@ The API key is only displayed once. Make sure to copy and save it before closing
 ------
 #### [ HTTP request using cURL ]
 
-   ```
+   ```bash
    curl -X POST "https://bedrock-runtime.us-east-1.amazonaws.com/model/us.anthropic.claude-3-5-haiku-20241022-v1:0/converse" \
      -H "Content-Type: application/json" \
      -H "Authorization: Bearer {{${api-key}}}" \

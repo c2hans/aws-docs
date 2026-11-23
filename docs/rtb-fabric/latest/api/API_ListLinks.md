@@ -62,6 +62,13 @@ Content-type: application/json
          "connectivityType": "string",
          "createdAt": number,
          "direction": "string",
+         "errorDetails": [
+            {
+               "code": "string",
+               "message": "string",
+               "resourceIds": [ "string" ]
+            }
+         ],
          "flowModules": [
             {
                "dependsOn": [ "string" ],
@@ -138,7 +145,7 @@ The request was denied due to request throttling.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request could not be completed because it fails satisfy the constraints specified by the service.
+The request could not be completed because it fails to satisfy the constraints specified by the service.
 HTTP Status Code: 400
 
 ## See Also

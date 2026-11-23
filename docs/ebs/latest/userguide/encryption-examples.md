@@ -84,7 +84,7 @@ When you have access to both an encrypted and unencrypted volume, you can freely
 
 For example, use the **rsync** command to copy the data. In the following command, the source data is located in `/mnt/source` and the destination volume is mounted at `/mnt/destination`.
 
-```
+```bash
 [ec2-user ~]$ sudo rsync -avh --progress {{/mnt/source/}} {{/mnt/destination/}}
 ```
 
@@ -93,7 +93,7 @@ For example, use the **rsync** command to copy the data. In the following comman
 
 For example, use the **robocopy** command to copy the data. In the following command, the source data is located in `D:\` and the destination volume is mounted at `E:\`.
 
-```
+```bash
 PS C:\> robocopy {{D:\sourcefolder}} {{E:\destinationfolder}} /e /copyall /eta
 ```
 

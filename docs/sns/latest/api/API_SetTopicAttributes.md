@@ -126,7 +126,7 @@ https://sns.us-east-2.amazonaws.com/?Action=SetTopicAttributes
 #### Sample Response
 <a name="API_SetTopicAttributes_Example_1_Response"></a>
 
-```
+```xml
 <SetTopicAttributesResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ResponseMetadata>
         <RequestId>a8763b99-33a7-11df-a9b7-05d48da6f042</RequestId>
@@ -141,7 +141,7 @@ The following example sets the delivery policy to 5 retries.
 
 The JSON format for `AttributeValue` is as follows. For more information on the `DeliveryPolicy` topic attribute, see [Creating an HTTP/S delivery policy](https://docs.aws.amazon.com/sns/latest/dg/sns-message-delivery-retries.html#creating-delivery-policy).
 
-```
+```json
 "http": {
     "defaultHealthyRetryPolicy": {
         "minDelayTarget": <int>,

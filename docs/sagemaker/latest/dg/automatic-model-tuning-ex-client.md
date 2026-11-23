@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuni
 
 Import Amazon SageMaker Python SDK, AWS SDK for Python (Boto3), and other Python libraries. In a new Jupyter notebook, paste the following code to the first cell:
 
-```
+```python
 import sagemaker
 import boto3
 

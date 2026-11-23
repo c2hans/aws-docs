@@ -165,7 +165,7 @@ You also create a `CMakeLists.txt` file that provides instructions that are used
 
 1. In the AWS Cloud9 IDE, create a file with this content, and save the file with the name `s3-demo.cpp` at the root (`/`) of your environment.
 
-   ```
+   ```cpp
    #include <iostream>
    #include <aws/core/Aws.h>
    #include <aws/s3/S3Client.h>
@@ -313,7 +313,7 @@ You also create a `CMakeLists.txt` file that provides instructions that are used
 
 1. Create a second file with this content, and save the file with the name `CMakeLists.txt` at the root (`/`) of your environment. This file enables you to build your code into an executable file.
 
-   ```
+   ```text
    # A minimal CMakeLists.txt file for the AWS SDK for C++.
 
    # The minimum version of CMake that will work.

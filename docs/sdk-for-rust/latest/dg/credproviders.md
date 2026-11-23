@@ -21,7 +21,7 @@ If you don't explicitly specify a credential provider when constructing a client
 
 The following example doesn't specify a credential provider in the code. The SDK uses the credential provider chain to detect the authentication that has been set up in the hosting environment, and uses that authentication for calls to AWS services.
 
-```
+```rust
 let config = aws_config::defaults(BehaviorVersion::latest()).load().await;
 let s3 = aws_sdk_s3::Client::new(&config);
 ```
@@ -71,7 +71,7 @@ For details on AWS credential provider configuration settings, see [Standardized
 
 Instead of relying on the credential provider chain to detect your authentication method, you can specify a specific credential provider that the SDK should use. When you load your general configuration using `aws_config::defaults`, you can specify a custom credential provider as shown in the following:
 
-```
+```rust
 let config = aws_config::defaults(BehaviorVersion::latest())
     .credentials_provider(MyCredentialsProvider::new())
     .load()

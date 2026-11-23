@@ -17,7 +17,7 @@ Even though building a custom AMI isn't ideal (because of the reasons mentioned 
 **Note**
 Starting with AWS ParallelCluster version 2.6.1, most of the install recipes are skipped by default when launching nodes. This is to improve startup times. To run all of the install recipes for better backwards compatibility at the expense of startup times, add `"skip_install_recipes" : "no"` to the `cluster` key in the [`extra_json`](cluster-definition.md#extra-json) setting. For example:
 
-```
+```ini
 extra_json = { "cluster" : { "skip_install_recipes" : "no" } }
 ```
 
@@ -56,7 +56,7 @@ This is the safest and most recommended method. Because the base AWS ParallelClu
 
 1. Run the following command to prepare your instance for AMI creation:
 
-   ```
+   ```sh
    sudo /usr/local/sbin/ami_cleanup.sh
    ```
 
@@ -97,7 +97,7 @@ This is the safest and most recommended method. Because the base AWS ParallelClu
 
 1. Run the following command to prepare your instance for AMI creation:
 
-   ```
+   ```sh
    sudo /usr/local/sbin/ami_cleanup.sh
    ```
 
@@ -133,7 +133,7 @@ Before AWS ParallelCluster version 2.8.0, [Berkshelf](https://github.com/berkshe
 
 1. Use the command `createami` in the AWS ParallelCluster CLI to build an AWS ParallelCluster AMI starting from the one that you provide as base:
 
-   ```
+   ```sh
    pcluster createami --ami-id {{<BASE_AMI>}} --os {{<BASE_AMI_OS>}}
    ```
 **Important**

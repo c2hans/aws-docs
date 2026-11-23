@@ -19,6 +19,8 @@ It is important for an organization to deliver applications and services at high
 
 ![Reference architecture diagram of improving the build pipeline performance of continerized applications](https://docs.aws.amazon.com/wellarchitected/latest/container-build-lens/images/improving-performance-containerized-app-build-pipeline.png)
 
+*Figure 4. Improving the build pipeline performance of containerized applications*
+
 1.  A **CodePipeline** pipeline for your application build is triggered, usually by something like a push to a code repository or writing an object to an Amazon Simple Storage Service (Amazon S3) bucket. This kicks off a CodeBuild stage.
 
 1.  The **CodeBuild** stage will initiate the building of your containerized application. It pulls the code from the code repository and takes the necessary steps to build your application code.

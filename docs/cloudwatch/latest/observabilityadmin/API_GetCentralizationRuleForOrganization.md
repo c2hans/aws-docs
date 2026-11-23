@@ -50,6 +50,7 @@ Content-type: application/json
                "KmsKeyArn": "string",
                "Region": "string"
             },
+            "LogGroupDeletionProtection": "string",
             "LogGroupNameConfiguration": {
                "LogGroupNamePattern": "string"
             },
@@ -69,6 +70,11 @@ Content-type: application/json
                "Region": "string"
             }
          },
+         "DestinationProfilesConfiguration": {
+            "BackupConfiguration": {
+               "Region": "string"
+            }
+         },
          "Region": "string"
       },
       "Source": {
@@ -83,6 +89,9 @@ Content-type: application/json
          },
          "SourceMetricsConfiguration": {
             "MetricsSelectionCriteria": "string"
+         },
+         "SourceProfilesConfiguration": {
+            "ProfilesSelectionCriteria": "string"
          }
       }
    },

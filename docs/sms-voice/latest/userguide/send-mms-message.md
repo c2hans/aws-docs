@@ -50,7 +50,7 @@ The only required parameters for [send-media-message](https://docs.aws.amazon.co
 **To send an MMS message**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   aws pinpoint-sms-voice-v2 --region '{{us-east-1}}' send-media-message --destination-phone-number {{+12065550150}} --origination-identity {{+14255550120}} --message-body '{{text body}}' --media-urls '{{s3://s3-bucket/media_file.jpg}}'
   ```
 
@@ -63,7 +63,7 @@ The only required parameters for [send-media-message](https://docs.aws.amazon.co
 
 If AWS End User Messaging SMS accepts the command you will receive the `MessageID`. This only means the command was successfully received and not that the destination device has received the message yet. For a list of error codes, see [SendMediaMessage Errors](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendMediaMessage.html#API_SendMediaMessage_Errors).
 
-```
+```json
 {
    "MessageId": "string"
 }

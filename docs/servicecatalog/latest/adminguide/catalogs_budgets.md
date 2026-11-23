@@ -45,7 +45,7 @@ To allow users to create budgets, you must also allow users to view billing info
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

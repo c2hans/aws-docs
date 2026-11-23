@@ -87,7 +87,7 @@ Replace the following placeholder values in the policy:
 +  ` MyApplicationRole ` – The application role created during AWS Security Agent setup
 +  ` us-east-1 ` – The AWS Region where you use AWS Security Agent
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -200,7 +200,7 @@ Replace the following placeholder values in the policy:
 +  ` MyRole ` – The IAM role you use to manage AWS Security Agent in the console
 +  ` us-east-1 ` – The AWS Region where you use AWS Security Agent
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -278,7 +278,7 @@ Replace the following values in the policy:
 +  ` MyRole ` – The IAM role you use to invoke security requirement pack operations
 +  ` us-east-1 ` – The AWS Region where you use AWS Security Agent
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -375,7 +375,7 @@ Replace the following placeholder values in the policy:
 +  ` MyPenTestServiceRole ` – The penetration test service role
 +  ` us-east-1 ` – The AWS Region where you use AWS Security Agent
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -507,7 +507,7 @@ Replace the following placeholder values in the policy:
 +  ` us-east-1 ` – The AWS Region where you use AWS Security Agent
 + The KMS key ARNs in `Resource` – The ARNs of your KMS keys
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -579,7 +579,7 @@ Replace the following placeholder values in the policy:
 +  ` us-east-1 ` – The AWS Region where you use AWS Security Agent
 + The KMS key ARNs in `Resource` – The ARNs of the customer managed keys used to encrypt each resource
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

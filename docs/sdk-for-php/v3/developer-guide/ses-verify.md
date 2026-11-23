@@ -34,7 +34,7 @@ To add an email address to your Amazon SES account, use the [VerifyEmailIdentity
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -42,7 +42,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -74,7 +74,7 @@ To add a sending domain to your Amazon SES account, use the [VerifyDomainIdentit
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -82,7 +82,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -110,7 +110,7 @@ To retrieve a list of email addresses submitted in the current AWS Region, regar
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -118,7 +118,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -144,7 +144,7 @@ To retrieve a list of email domains submitted in the current AWS Region, regardl
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -152,7 +152,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -178,7 +178,7 @@ To delete a verified email address from the list of identities, use the [DeleteI
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -186,7 +186,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -214,7 +214,7 @@ To delete a verified email domain from the list of verified identities, use the 
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -222,7 +222,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',

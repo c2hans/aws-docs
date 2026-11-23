@@ -19,7 +19,7 @@ The CalculateRouteMatrix API computes routes and returns travel time and distanc
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "Origins": [
         {
@@ -54,7 +54,7 @@ The CalculateRouteMatrix API computes routes and returns travel time and distanc
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ErrorCount": 0,
     "RouteMatrix": [
@@ -74,7 +74,7 @@ The CalculateRouteMatrix API computes routes and returns travel time and distanc
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.eu-central-1.amazonaws.com/v2/route-matrix?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -112,7 +112,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes calculate-route-matrix --key ${YourKey} \
 --origins '[{"Position": [-123.11679620827039, 49.28147612192166]}]' \
 --destinations '[{"Position": [-123.112317039, 49.28897192166]}]' \
@@ -128,7 +128,7 @@ aws geo-routes calculate-route-matrix --key ${YourKey} \
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "Origins": [
         {
@@ -154,7 +154,7 @@ aws geo-routes calculate-route-matrix --key ${YourKey} \
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ErrorCount": 0,
     "RouteMatrix": [
@@ -174,7 +174,7 @@ aws geo-routes calculate-route-matrix --key ${YourKey} \
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.eu-central-1.amazonaws.com/v2/route-matrix?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -203,7 +203,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes calculate-route-matrix --key ${YourKey} \
 --origins '[{"Position": [-123.11679620827039, 49.28147612192166]}]' \
 --destinations '[{"Position": [-123.112317039, 49.28897192166]}]' \

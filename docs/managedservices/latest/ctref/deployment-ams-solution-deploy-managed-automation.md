@@ -137,7 +137,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-ams-solution-deploy-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "PatternName": "amsEbsVolumeSnapshotTagger"
 }
@@ -146,7 +146,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-ams-solution-deploy-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "PatternName": "amsEbsVolumeSnapshotTagger",
   "OrganizationalUnitIds": ["ou-9dyd-jvsei4yg"],

@@ -51,7 +51,7 @@ If *geom1* or *geom2* is not a point, then an error is returned.
 
 The following example SQL computes the distance in kilometers between two points on Earth.
 
-```
+```sql
 SELECT ROUND(ST_DistanceSphere(ST_Point(-122, 47), ST_Point(-122.1, 47.1))/ 1000, 0);
 ```
 
@@ -63,7 +63,7 @@ SELECT ROUND(ST_DistanceSphere(ST_Point(-122, 47), ST_Point(-122.1, 47.1))/ 1000
 
 The following example SQL computes the distances in kilometers between three airport locations in Germany: Berlin Tegel (TXL), Munich International (MUC), and Frankfurt International (FRA).
 
-```
+```sql
 WITH airports_raw(code,lon,lat) AS (
 (SELECT 'MUC', 11.786111, 48.353889) UNION
 (SELECT 'FRA', 8.570556, 50.033333) UNION

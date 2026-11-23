@@ -20,14 +20,14 @@ For Studio apps, the app launches on reserved GPU capacity when the training pla
 
 The following example uses an AWS CLI command to retrieve the details of a training plan by its name.
 
-```
+```sh
 aws sagemaker describe-training-plan \
 --training-plan-name "{{name}}"
 ```
 
 This JSON document is a sample response from the SageMaker training plans API. This response provides details about a training plan that has been successfully created.
 
-```
+```JSON
       {
          "AvailableInstanceCount": 2,
          "CurrencyCode": "USD",

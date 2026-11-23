@@ -59,7 +59,7 @@ source .venv/bin/activate # On Windows, run '.\venv\Scripts\activate' instead
 pip install -r requirements.txt
 ```
 
-```
+```java
 mkdir MyEcsConstruct
 cd MyEcsConstruct
 cdk init --language java
@@ -93,34 +93,34 @@ We add the following AWS Construct Library module imports to our *stack file*:
 **Example**
 File: `lib/my_ecs_construct-stack.ts`
 
-```
+```javascript
 import * as ec2 from "aws-cdk-lib/aws-ec2";
 import * as ecs from "aws-cdk-lib/aws-ecs";
 import * as ecs_patterns from "aws-cdk-lib/aws-ecs-patterns";
 ```
 File: `lib/my_ecs_construct-stack.js`
 
-```
+```javascript
 const ec2 = require("aws-cdk-lib/aws-ec2");
 const ecs = require("aws-cdk-lib/aws-ecs");
 const ecs_patterns = require("aws-cdk-lib/aws-ecs-patterns");
 ```
 File: `my_ecs_construct/my_ecs_construct_stack.py`
 
-```
+```python
 from aws_cdk import (aws_ec2 as ec2, aws_ecs as ecs,
                      aws_ecs_patterns as ecs_patterns)
 ```
 File: `src/main/java/com/myorg/MyEcsConstructStack.java`
 
-```
+```java
 import software.amazon.awscdk.services.ec2.*;
 import software.amazon.awscdk.services.ecs.*;
 import software.amazon.awscdk.services.ecs.patterns.*;
 ```
 File: `src/MyEcsConstruct/MyEcsConstructStack.cs`
 
-```
+```csharp
 using Amazon.CDK.AWS.EC2;
 using Amazon.CDK.AWS.ECS;
 using Amazon.CDK.AWS.ECS.Patterns;
@@ -130,7 +130,7 @@ Within our stack, we add the following code:
 
 **Example**
 
-```
+```javascript
     const vpc = new ec2.Vpc(this, "MyVpc", {
       maxAzs: 3 // Default is all AZs in region
     });
@@ -150,7 +150,7 @@ Within our stack, we add the following code:
     });
 ```
 
-```
+```javascript
     const vpc = new ec2.Vpc(this, "MyVpc", {
       maxAzs: 3 // Default is all AZs in region
     });
@@ -170,7 +170,7 @@ Within our stack, we add the following code:
     });
 ```
 
-```
+```python
         vpc = ec2.Vpc(self, "MyVpc", max_azs=3)     # default is all AZs in region
 
         cluster = ecs.Cluster(self, "MyCluster", vpc=vpc)
@@ -185,7 +185,7 @@ Within our stack, we add the following code:
             public_load_balancer=True)  # Default is True
 ```
 
-```
+```java
         Vpc vpc = Vpc.Builder.create(this, "MyVpc")
                             .maxAzs(3)  // Default is all AZs in region
                             .build();
@@ -207,7 +207,7 @@ Within our stack, we add the following code:
                      .build();
 ```
 
-```
+```csharp
             var vpc = new Vpc(this, "MyVpc", new VpcProps
             {
                 MaxAzs = 3 // Default is all AZs in region

@@ -99,7 +99,7 @@ To successfully operate AWS Mainframe Modernization EC2 instances deployed via o
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

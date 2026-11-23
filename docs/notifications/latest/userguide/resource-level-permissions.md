@@ -83,7 +83,7 @@ This policy allows a user to call all available API actions.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -111,7 +111,7 @@ This policy allows a user to call all get and list API actions.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -142,7 +142,7 @@ This policy denies a user the ability to update a notification configuration.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -169,7 +169,7 @@ This policy allows users to create notification configurations and associate ema
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -203,7 +203,7 @@ This policy allows users full create, read, update, and delete (CRUD) access.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -232,7 +232,7 @@ This policy grants a user full read-write access to AWS User Notifications by li
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -303,7 +303,7 @@ This policy grants a user full read-write access to AWS User Notifications by li
 
 This policy demonstrates least-privilege access by scoping managed notification permissions to a specific category (and optionally a specific sub-category) using resource-level ARNs. Replace the category (and optionally the sub-category) in the ARN to match your use case. This example uses AWS Health managed notifications.
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -45,7 +45,7 @@ SageMaker AI uses the `AdapterId` as the inference component name for that adapt
 
 **Python (boto3) — adapters in Amazon S3**
 
-```
+```python
 try:
     response = client.create_ai_recommendation_job(
         AIRecommendationJobName="my-lora-recommendation-job",
@@ -81,7 +81,7 @@ except Exception as error:
 
 **Python (boto3) — adapters as model packages**
 
-```
+```python
 try:
     response = client.create_ai_recommendation_job(
         AIRecommendationJobName="my-lora-recommendation-job",
@@ -154,7 +154,7 @@ The `DeploymentConfiguration` in each recommendation describes the multi-adapter
 
 The following example shows the adapter-related fields of a `DescribeAIRecommendationJob` response for a job created with Amazon S3 adapters.
 
-```
+```json
 {
     "AIRecommendationJobName": "my-lora-recommendation-job",
     "AIRecommendationJobStatus": "Completed",

@@ -17,7 +17,7 @@ After you created your unmanaged compute environment, use the [DescribeComputeEn
 
 The following AWS CLI command also provides the Amazon ECS cluster ARN.
 
-```
+```sh
 $ aws batch describe-compute-environments \
     --compute-environments {{unmanagedCE}} \
     --query "computeEnvironments[].ecsClusterArn"

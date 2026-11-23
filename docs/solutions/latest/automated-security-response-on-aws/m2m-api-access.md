@@ -20,7 +20,7 @@ AWS CLI v2 authenticated to the ASR administrator account
 
 Find the user pool id in the administrator stack’s `UserPoolId` **Output**, then create a confidential client granted **both** required OAuth 2.0 scopes — `asr-api/api` (Amazon API Gateway requires this scope to admit the request to the API) and `asr-api/full-access` (the backend authorizes Full Access on this scope). A client granted only `asr-api/api` reaches the API but receives a `403` rejection, because the backend treats it as an unprivileged machine token.
 
-```
+```bash
 export AWS_REGION="us-east-1"
 export STACK_NAME="<ASR-administrator-stack-name>"
 
@@ -56,7 +56,7 @@ The response contains `UserPoolClient.ClientId` and `UserPoolClient.ClientSecret
 
 The token endpoint is derived from the user pool’s hosted domain. Request a token using HTTP Basic auth (`client_id:client_secret`), the `client_credentials` grant, and both scopes:
 
-```
+```bash
 export DOMAIN_PREFIX="$(aws cognito-idp describe-user-pool \
   --user-pool-id "$USER_POOL_ID" --region "$AWS_REGION" \
   --query "UserPool.Domain" --output text)"
@@ -78,7 +78,7 @@ Caching the token keeps your integration within the Cognito token endpoint rate 
 
 Send the access token as a `Authorization: Bearer <access_token>` header on any ASR API path. API Gateway validates the token and the `asr-api/api` scope before the request reaches the backend, and the backend grants Full Access on the `asr-api/full-access` scope:
 
-```
+```bash
 # Find the API base URL in the administrator stack's APIEndpoint Output, then
 # call an endpoint your integration uses.
 curl -s -H "Authorization: Bearer ${ACCESS_TOKEN}" \
@@ -94,7 +94,7 @@ Because a secret cannot be added, replaced, or removed on an existing Cognito ap
 +  **Rotate:** create a second M2M client (repeat Step 1 with a different `--client-name`), migrate your integration to its credentials, confirm it can obtain tokens, then delete the old client.
 +  **Disable:** delete the client to immediately revoke machine access.
 
-```
+```bash
 aws cognito-idp delete-user-pool-client \
   --user-pool-id "$USER_POOL_ID" \
   --client-id "$M2M_CLIENT_ID" \

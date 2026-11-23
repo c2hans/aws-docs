@@ -92,7 +92,7 @@ Supports CORS preflight requests.
 #### GET schema
 <a name="policy-request-body-get-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -100,7 +100,7 @@ Supports CORS preflight requests.
 #### PUT schema
 <a name="policy-request-body-put-example"></a>
 
-```
+```json
 {
   "policy": {
     "s3Inputs": enum,
@@ -113,7 +113,7 @@ Supports CORS preflight requests.
 #### DELETE schema
 <a name="policy-request-body-delete-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -124,7 +124,7 @@ Supports CORS preflight requests.
 #### GetPolicyResponse schema
 <a name="policy-response-body-getpolicyresponse-example"></a>
 
-```
+```json
 {
   "policy": {
     "s3Inputs": enum,
@@ -137,7 +137,7 @@ Supports CORS preflight requests.
 #### PutPolicyResponse schema
 <a name="policy-response-body-putpolicyresponse-example"></a>
 
-```
+```json
 {
   "policy": {
     "s3Inputs": enum,
@@ -150,7 +150,7 @@ Supports CORS preflight requests.
 #### DeletePolicyResponse schema
 <a name="policy-response-body-deletepolicyresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -158,7 +158,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="policy-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

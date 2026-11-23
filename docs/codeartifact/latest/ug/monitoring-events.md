@@ -69,7 +69,7 @@ The following are event fields and descriptions along with an example of a CodeA
 
  The following is an example of a CodeArtifact event that might be triggered when an npm package is published.
 
-```
+```json
 {
       "version":"0",
       "id":"73f03fec-a137-971e-6ac6-07c8ffffffff",

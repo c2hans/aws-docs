@@ -46,7 +46,7 @@ In this example, use a Node.js module to list email addresses and domains to use
 
 Create a `libs` directory, and create a Node.js module with the file name `sesClient.js`. Copy and paste the code below into it, which creates the Amazon SES client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SESClient } from "@aws-sdk/client-ses";
 // Set the AWS Region.
 const REGION = "us-east-1";
@@ -68,7 +68,7 @@ Create an object to pass the `IdentityType` and other parameters for the `ListId
 **Note**
 Replace {{IdentityType}} with the identity type, which can be "EmailAddress" or "Domain".
 
-```
+```javascript
 import { ListIdentitiesCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 
@@ -89,7 +89,7 @@ const run = async () => {
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node ses_listidentities.js
 ```
 
@@ -102,7 +102,7 @@ In this example, use a Node.js module to verify email senders to use with Amazon
 
 Create a `libs` directory, and create a Node.js module with the file name `sesClient.js`. Copy and paste the code below into it, which creates the Amazon SES client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SESClient } from "@aws-sdk/client-ses";
 // Set the AWS Region.
 const REGION = "us-east-1";
@@ -122,7 +122,7 @@ Create an object to pass the `EmailAddress` parameter for the `VerifyEmailIdenti
 **Note**
 Replace {{EMAIL\_ADDRESS}} with the email address, such as name@example.com.
 
-```
+```javascript
 // Import required AWS SDK clients and commands for Node.js
 import { VerifyEmailIdentityCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
@@ -147,7 +147,7 @@ const run = async () => {
 
 To run the example, enter the following at the command prompt. The domain is added to Amazon SES to be verified.
 
-```
+```javascript
 node ses_verifyemailidentity.js
 ```
 
@@ -160,7 +160,7 @@ In this example, use a Node.js module to verify email domains to use with Amazon
 
 Create a `libs` directory, and create a Node.js module with the file name `sesClient.js`. Copy and paste the code below into it, which creates the Amazon SES client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SESClient } from "@aws-sdk/client-ses";
 // Set the AWS Region.
 const REGION = "us-east-1";
@@ -183,7 +183,7 @@ This example imports and uses the required AWS Service V3 package clients, V3 co
 **Note**
 Replace {{DOMAIN\_NAME}} with the domain name.
 
-```
+```javascript
 import { VerifyDomainIdentityCommand } from "@aws-sdk/client-ses";
 import {
   getUniqueName,
@@ -215,7 +215,7 @@ const run = async () => {
 
 To run the example, enter the following at the command prompt. The domain is added to Amazon SES to be verified.
 
-```
+```javascript
 node ses_verifydomainidentity.js
 ```
 
@@ -228,7 +228,7 @@ In this example, use a Node.js module to delete email addresses or domains used 
 
 Create a `libs` directory, and create a Node.js module with the file name `sesClient.js`. Copy and paste the code below into it, which creates the Amazon SES client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SESClient } from "@aws-sdk/client-ses";
 // Set the AWS Region.
 const REGION = "us-east-1";
@@ -251,7 +251,7 @@ This example imports and uses the required AWS Service V3 package clients, V3 co
 **Note**
 Replace {{IDENTITY\_EMAIL}} with the email of the identity to be deleted.
 
-```
+```javascript
 import { DeleteIdentityCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 
@@ -277,7 +277,7 @@ const run = async () => {
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node ses_deleteidentity.js
 ```
 

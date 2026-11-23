@@ -328,7 +328,7 @@ For more information, see [AWS security audit guidelines](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This example gets authorization details about the identities in the AWS account, and displays the element list of the returned object, including users, groups, and roles. For example, the `UserDetailList` property displays details about the users. Similar information is available in the `RoleDetailList` and `GroupDetailList` properties.**
 
-```
+```powershell
 $Details=Get-IAMAccountAuthorizationDetail
 $Details
 ```
@@ -342,7 +342,7 @@ RoleDetailList  : {TestRole1, AdminRole, TesterRole, clirole...}
 UserDetailList  : {Administrator, Bob, BackupToS3, }
 ```
 
-```
+```powershell
 $Details.UserDetailList
 ```
 **Output:**
@@ -377,7 +377,7 @@ UserPolicyList : {BackupServicePermissionsToS3Buckets}
 **Tools for PowerShell V5**
 **Example 1: This example gets authorization details about the identities in the AWS account, and displays the element list of the returned object, including users, groups, and roles. For example, the `UserDetailList` property displays details about the users. Similar information is available in the `RoleDetailList` and `GroupDetailList` properties.**
 
-```
+```powershell
 $Details=Get-IAMAccountAuthorizationDetail
 $Details
 ```
@@ -391,7 +391,7 @@ RoleDetailList  : {TestRole1, AdminRole, TesterRole, clirole...}
 UserDetailList  : {Administrator, Bob, BackupToS3, }
 ```
 
-```
+```powershell
 $Details.UserDetailList
 ```
 **Output:**
@@ -429,7 +429,7 @@ UserPolicyList : {BackupServicePermissionsToS3Buckets}
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def get_authorization_details(response_filter):
     """
     Gets an authorization detail report for the current account.
@@ -458,7 +458,7 @@ def get_authorization_details(response_filter):
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_iam->getaccountauthdetails( ).
         MESSAGE 'Retrieved account authorization details.' TYPE 'I'.

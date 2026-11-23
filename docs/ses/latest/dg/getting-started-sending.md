@@ -22,7 +22,7 @@ For more information about the Regions where SES is available, see [Regions and 
 
 If you use the AWS CLI, set these variables once. In every command on this page, replace each value in angle brackets, such as `<YOUR_DOMAIN>`, with your own:
 
-```
+```bash
 export DOMAIN="<YOUR_DOMAIN>"        # your sending domain, such as example.com
 export AWS_REGION="<YOUR_REGION>"    # the Region where your application runs, such as us-east-1
 ```
@@ -40,7 +40,7 @@ A [domain identity](creating-identities.md) tells SES which domain you send from
 
 Create the identity with the following AWS CLI command:
 
-```
+```bash
 aws sesv2 create-email-identity \
   --email-identity "$DOMAIN" \
   --dkim-signing-attributes NextSigningKeyLength=RSA_2048_BIT
@@ -50,7 +50,7 @@ The output lists three DomainKeys Identified Mail (DKIM) tokens and shows `"Veri
 
 Then set a Custom MAIL FROM domain with the following AWS CLI command, so that bounces return to your own domain:
 
-```
+```bash
 aws sesv2 put-email-identity-mail-from-attributes \
   --email-identity "$DOMAIN" \
   --mail-from-domain "bounce.$DOMAIN" \
@@ -96,7 +96,7 @@ SES verifies your domain by looking up records in your domain's DNS, so add them
 
 Get the three DKIM tokens and the signing zone with the following AWS CLI command. You need them for the CNAME records in the table that follows:
 
-```
+```bash
 aws sesv2 get-email-identity --email-identity "$DOMAIN" \
   --query 'DkimAttributes.{SigningHostedZone:SigningHostedZone,Tokens:Tokens}'
 ```
@@ -135,7 +135,7 @@ Publishes a [Domain-based Message Authentication, Reporting, and Conformance (DM
 
 This is a shortcut for domains that use Route 53 for DNS. SES doesn't require Route 53; with any other provider, add the records from the table by hand. Set `ZONE_ID` to your hosted zone ID and run these commands. Each record is created with `CREATE`, so an existing record is never overwritten; that command fails instead.
 
-```
+```bash
 export ZONE_ID="<YOUR_HOSTED_ZONE_ID>"   # from: aws route53 list-hosted-zones-by-name --dns-name "$DOMAIN"
 
 read -r SIGNING_ZONE T1 T2 T3 <<< "$(aws sesv2 get-email-identity --email-identity "$DOMAIN" \
@@ -167,7 +167,7 @@ The request asks what kind of email you send. Choose `TRANSACTIONAL` for message
 
 Submit the request with the following AWS CLI command:
 
-```
+```bash
 aws sesv2 put-account-details \
   --production-access-enabled \
   --mail-type TRANSACTIONAL \
@@ -201,7 +201,7 @@ To turn these settings off later, see [Clean up resources](#getting-started-clea
 
 Create a configuration set with the following AWS CLI commands, and make it the default for your domain. The name is `default-` followed by your domain, with dots replaced by underscores:
 
-```
+```bash
 export CONFIG_SET="default-${DOMAIN//./_}"   # for example.com: default-example_com
 
 aws sesv2 create-configuration-set \
@@ -219,7 +219,7 @@ If `create-configuration-set` reports `AlreadyExistsException`, keep the existin
 
 Then turn on the account-level suppression list and Virtual Deliverability Manager with the following AWS CLI commands:
 
-```
+```bash
 aws sesv2 put-account-suppression-attributes --suppressed-reasons BOUNCE COMPLAINT
 
 aws sesv2 put-account-vdm-attributes --vdm-attributes \
@@ -264,7 +264,7 @@ SES looks for your DNS records on its own. It usually finds them within a few mi
 
 Check the status of your domain with the following AWS CLI command:
 
-```
+```bash
 aws sesv2 get-email-identity --email-identity "$DOMAIN" --query '{
   VerifiedForSending: VerifiedForSendingStatus,
   Dkim: DkimAttributes.Status,
@@ -272,7 +272,7 @@ aws sesv2 get-email-identity --email-identity "$DOMAIN" --query '{
   ConfigurationSet: ConfigurationSetName}'
 ```
 
-```
+```json
 {
     "VerifiedForSending": true,
     "Dkim": "SUCCESS",
@@ -285,13 +285,13 @@ Setup is complete when `VerifiedForSending` is `true`, and `Dkim` and `MailFrom`
 
 Then check your production access request from Step 3 with the following AWS CLI command:
 
-```
+```bash
 aws sesv2 get-account --query '{
   ProductionAccess: ProductionAccessEnabled,
   Review: Details.ReviewDetails.Status}'
 ```
 
-```
+```json
 {
     "ProductionAccess": false,
     "Review": "PENDING"
@@ -319,7 +319,7 @@ Send a message to the [mailbox simulator](send-an-email-from-console.md#send-ema
 
 Send the message with the following AWS CLI command:
 
-```
+```bash
 aws sesv2 send-email \
   --from-email-address "hello@$DOMAIN" \
   --destination ToAddresses=success@simulator.amazonses.com \
@@ -347,7 +347,7 @@ The script requests production access for `TRANSACTIONAL` mail. Change that valu
 ### setup-ses.sh
 <a name="getting-started-script-code"></a>
 
-```
+```bash
 #!/usr/bin/env bash
 # Set up Amazon SES for one domain with the defaults on this page.
 set -euo pipefail
@@ -488,7 +488,7 @@ To avoid ongoing charges, delete the resources that you created on this page whe
 
 Delete the domain identity and the configuration set with the following AWS CLI commands, or delete them in the Amazon SES console under **Identities** and **Configuration sets**:
 
-```
+```bash
 aws sesv2 delete-email-identity --email-identity "$DOMAIN"
 
 aws sesv2 delete-configuration-set --configuration-set-name "$CONFIG_SET"
@@ -498,13 +498,13 @@ Then delete the DNS records that you added in Step 2 at your DNS provider.
 
 The account-level suppression list, Virtual Deliverability Manager, and production access apply to your whole account, so leave them in place if anything else in the account uses SES. If nothing else does, turn off Virtual Deliverability Manager with the following AWS CLI command:
 
-```
+```bash
 aws sesv2 put-account-vdm-attributes --vdm-attributes VdmEnabled=DISABLED
 ```
 
 ## Next steps
 <a name="getting-started-next-steps"></a>
-+ Send from your application: [Sending email through Amazon SES using an AWS SDK](send-an-email-using-sdk-programmatically.md) or [Using the Amazon SES SMTP interface to send email](send-email-smtp.md).
++ Send from your application: [Sending email through Amazon SES using an AWS SDK](send-an-email-using-sdk-programmatically.md) or [Using SMTP to send email](send-email-smtp.md).
 + Get bounce, complaint, and delivery events: [Step 2: Add an event destination](event-publishing-add-event-destination.md).
 + Raise your sending quota: [Managing your Amazon SES sending limits](manage-sending-quotas.md).
 + Receive email for your domain: [Email receiving with Amazon SES](receiving-email.md).

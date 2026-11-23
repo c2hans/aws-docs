@@ -41,7 +41,7 @@ We also recommend setting the maximum retry attempts to `1` (no retries). If the
 
 1. Create a file named `openCypherExample.py` and paste the following code:
 
-   ```
+   ```python
    import boto3
    import json
    from botocore.config import Config
@@ -70,7 +70,7 @@ We also recommend setting the maximum retry attempts to `1` (no retries). If the
 
 1. Use the following code to set up a `NeptunedataClient`, run an openCypher query, and print the result:
 
-   ```
+   ```java
    import java.net.URI;
    import java.time.Duration;
    import software.amazon.awssdk.core.client.config.ClientOverrideConfiguration;
@@ -105,7 +105,7 @@ We also recommend setting the maximum retry attempts to `1` (no retries). If the
 
 1. Create a file named `openCypherExample.js` and paste the following code:
 
-   ```
+   ```javascript
    import { NeptunedataClient, ExecuteOpenCypherQueryCommand } from "@aws-sdk/client-neptunedata";
    import { NodeHttpHandler } from "@smithy/node-http-handler";
 

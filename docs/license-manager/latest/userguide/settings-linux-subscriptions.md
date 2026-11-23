@@ -63,7 +63,7 @@ The timestamp from the last successful update of subscription data from the regi
 *Tags*
 You can define key value pairs for tags that License Manager assigns to your RHSM access secret in Secrets Manager. To retrieve and decrypt your RHSM access secret, the License Manager service-linked role policy requires the secret, and any associated AWS KMS key, to have the following tag assigned:
 
-```
+```json
 "LicenseManagerLinuxSubscriptions": "enabled"
 ```
 The tag is automatically assigned if License Manager created your secret during the registration process. If you create your own secret for the offline token, make sure that you assign that tag to the secret and to the associated KMS key, if it's encrypted. To add the tag, see [Modify an AWS Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/manage_update-secret.html) in the *AWS Secrets Manager User Guide*.

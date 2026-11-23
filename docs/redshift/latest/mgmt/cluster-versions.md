@@ -10,7 +10,7 @@ Amazon Redshift regularly releases cluster versions. Your Amazon Redshift cluste
 
 You can view the cluster version of your cluster on the Amazon Redshift console on the **Maintenance** tab of the cluster details. Or you can see the cluster version in the output of the SQL command:
 
-```
+```sql
 SELECT version();
 ```
 
@@ -117,6 +117,7 @@ Cluster versions in this patch:
 + Materialized View internal backing tables are now stored in an internal protected schema.
 + AQMV support for MVs on Iceberg tables
 + Changed how tables load after a cluster restart so that commits no longer wait for all tables to load. The first commit can complete up to 15 minutes sooner, with minimal impact on query performance. This improvement is currently enabled for a limited set of Amazon Redshift Serverless workgroups and will be extended in future patches.
++ Amazon Redshift now supports IANA Time Zone Database version 2026f
 + Fixed a rare issue where a disk error during internal cluster maintenance could cause an unexpected node restart.
 + Fixed a rare issue where memory pressure could cause an unexpected node restart.
 + Fixed an issue where files belonging to dropped databases were not cleaned up promptly under heavy `DROP DATABASE` activity.

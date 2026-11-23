@@ -42,7 +42,7 @@ Each wait step must declare exactly one of these. Declaring both is a validation
 ## Wait step configuration
 <a name="wait-configuration"></a>
 
-```
+```json
 {
   "stepType": "wait",
   "description": "Wait for import job to finish",
@@ -94,7 +94,7 @@ Choose REST polling when the external system exposes a status endpoint. Choose o
 
 A connector that starts an import via a REST POST, captures the job version, then polls a status endpoint until the import is ready:
 
-```
+```json
 {
   "triggers": [
     {
@@ -167,7 +167,7 @@ In this example:
 
 A connector that invokes an inference service, then waits for the results to appear in S3:
 
-```
+```json
 {
   "triggers": [
     {
@@ -242,7 +242,7 @@ With an external-completion wait, SDMA suspends the trigger and waits for the ex
 
 A connector that starts an external quality review, passes the callback URL, and writes the review results back as asset metadata when the external system posts its decision:
 
-```
+```json
 {
   "triggers": [
     {
@@ -291,7 +291,7 @@ A connector that starts an external quality review, passes the callback URL, and
 
 When the external review platform finishes, it sends a PUT request to the callback URL with a body like:
 
-```
+```json
 {
   "status": "complete",
   "score": 92,
@@ -325,19 +325,19 @@ The special key `$status` matches the HTTP status code of the poll response (not
 
 Simple field match — succeeds when the response contains `"status": "ready"` (extra fields are ignored):
 
-```
+```json
 "successWhen": { "status": "ready" }
 ```
 
 Nested subset match — succeeds when `result.state` is `"DONE"` and `errorCount` is `0`:
 
-```
+```json
 "successWhen": { "result": { "state": "DONE" }, "errorCount": 0 }
 ```
 
 Any-of — succeeds if the response matches either pattern:
 
-```
+```json
 "successWhen": [
   { "status": "succeeded" },
   { "status": "complete" }
@@ -346,13 +346,13 @@ Any-of — succeeds if the response matches either pattern:
 
 HTTP status match — fails on a 404 regardless of body content:
 
-```
+```json
 "failureWhen": { "$status": 404 }
 ```
 
 Combined status and body — succeeds only when both HTTP 200 and body field match:
 
-```
+```json
 "successWhen": { "$status": 200, "result": { "state": "DONE" } }
 ```
 
@@ -373,7 +373,7 @@ With this mode, SDMA periodically checks S3 for the declared output files. When 
 
 Set `poll.type` to `"output"` and declare an `output` block with at least one S3-backed target (a `uri` on `metadataAttributes`, `derivedFiles`, or `files`):
 
-```
+```json
 {
   "stepType": "wait",
   "description": "Wait for inference results to appear in S3.",
@@ -419,7 +419,7 @@ Many systems that write results to S3 also write a file when the work fails. For
 
 Declare `wait.failure` to watch for it. When the file appears, the wait fails at once, with the file’s message as the reason. The following JSON example declares a `wait.failure` field:
 
-```
+```json
 "wait": {
   "timeoutSeconds": 21600,
   "poll": { "type": "output", "intervalSeconds": 60 },
@@ -454,7 +454,7 @@ A wait step can declare `responseFieldMapping`, in the same form as other steps,
 
 The following JSON shows an output-driven wait step that captures values from its result document:
 
-```
+```json
 {
   "stepType": "wait",
   "wait": {
@@ -522,7 +522,7 @@ This means a trigger like **[rest → wait → rest (record-and-continue) → re
 
 For external-completion waits, the third party needs to know the URL to call. SDMA makes this available as `${invocation.callbackUrl}`. A common pattern is to pass it in a preceding REST step:
 
-```
+```json
 "steps": [
   {
     "description": "Start external review and pass the callback URL.",

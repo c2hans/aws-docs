@@ -13,7 +13,7 @@ In this topic we show how to create a calculated attribute using a custom JSON f
 
 Create a JSON file with the following contents:
 
-```
+```json
 {
 "DomainName": "{{your-domain-name}}",
    "CalculatedAttributeName": "{{your-calculated-attribute-name}}",
@@ -82,12 +82,12 @@ To customize the JSON with your own values, follow these guidelines:
 
 After you have created and customized the JSON file with your values, call the [CreateCalculatedAttributeDefinition](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateCalculatedAttributeDefinition.html) API, as shown in the following example:
 
-```
+```json
 aws customer-profiles create-calculated-attribute-definition --cli-input-json file:///{{custom_calculated_attribute_cli.json}} --region {{region_name}}
 ```
 
 You can also use the following endpoint:
 
-```
+```json
 https://profile.{{your-region}}.amazonaws.com/domains/{{your-domain-name}}/calculated-attributes
 ```

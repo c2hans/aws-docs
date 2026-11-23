@@ -17,7 +17,7 @@ If a Pod needs to access AWS services, then you must configure it to use a Kuber
 
   1. Use the following command to create a deployment manifest that you can deploy a Pod to confirm configuration with. Replace the example values with your own values.
 
-     ```
+     ```yaml
      cat >my-deployment.yaml <<EOF
      apiVersion: apps/v1
      kind: Deployment
@@ -41,7 +41,7 @@ If a Pod needs to access AWS services, then you must configure it to use a Kuber
 
   1. Deploy the manifest to your cluster.
 
-     ```
+     ```bash
      kubectl apply -f my-deployment.yaml
      ```
 
@@ -49,25 +49,25 @@ If a Pod needs to access AWS services, then you must configure it to use a Kuber
 
      1. View the Pods that were deployed with the deployment in the previous step.
 
-        ```
+        ```bash
         kubectl get pods | grep my-app
         ```
 
         An example output is as follows.
 
-        ```
+        ```bash
         my-app-6f4dfff6cb-76cv9   1/1     Running   0          3m28s
         ```
 
      1. Confirm that the Pod has a service account token file mount.
 
-        ```
+        ```bash
         kubectl describe pod my-app-6f4dfff6cb-76cv9 | grep AWS_CONTAINER_AUTHORIZATION_TOKEN_FILE:
         ```
 
         An example output is as follows.
 
-        ```
+        ```bash
         AWS_CONTAINER_AUTHORIZATION_TOKEN_FILE:  /var/run/secrets/pods.eks.amazonaws.com/serviceaccount/eks-pod-identity-token
         ```
 
@@ -81,12 +81,12 @@ When a Pod uses AWS credentials from an IAM role that’s associated with a serv
 
      1. Confirm that the deployment is using the service account.
 
-        ```
+        ```bash
         kubectl describe deployment my-app | grep "Service Account"
         ```
 
         An example output is as follows.
 
-        ```
+        ```bash
         Service Account:  my-service-account
         ```

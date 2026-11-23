@@ -203,7 +203,7 @@ HTTP Status Code: 400
 
 The following example creates an action group using an OpenAPI schema uploaded to an Amazon S3 bucket and sends the information elicited from the user to a Lambda function.
 
-```
+```json
 PUT /agents/AGENT12345/agentversions/DRAFT/actiongroups/ HTTP/1.1
 Content-type: application/json
 
@@ -228,7 +228,7 @@ Content-type: application/json
 
 The following example creates an action group using an OpenAPI schema uploaded to an Amazon S3 bucket and returns control by sending the information in the `InvokeAgent` response.
 
-```
+```json
 {
     "actionGroupName": "WeatherAPIs",
     "description": "Actions to get current weather and historical trends for a location",
@@ -250,7 +250,7 @@ The following example creates an action group using an OpenAPI schema uploaded t
 
 The following example creates an action group using function details and returns control by sending the information in the `InvokeAgent` response
 
-```
+```json
 PUT /agents/AGENT12345/agentversions/DRAFT/actiongroups/ HTTP/1.1
 Content-type: application/json
 

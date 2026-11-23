@@ -40,7 +40,7 @@ This policy only works in domains that use Amazon SageMaker Studio Classic as th
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -110,7 +110,7 @@ This policy only works in domains that use Amazon SageMaker Studio Classic as th
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

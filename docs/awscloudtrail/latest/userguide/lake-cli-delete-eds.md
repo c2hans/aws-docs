@@ -14,7 +14,7 @@ After you run **delete-event-data-store** on an event data store, you cannot run
 You can't delete an event data store if `--termination-protection-enabled` is set or its `FederationStatus` is `ENABLED`.
 To delete an event data store with an `eventCategory` of `ActivityAuditLog`, you must first delete the integration's channel. You can delete the channel by using the `aws cloudtrail delete-channel` command. For more information, see [Delete a channel to delete an integration with the AWS CLI](lake-cli-delete-integration.md).
 
-```
+```JSON
 aws cloudtrail delete-event-data-store \
 --event-data-store arn:aws:cloudtrail:us-east-1:123456789012:eventdatastore/EXAMPLE-f852-4e8f-8bd1-bcf6cEXAMPLE
 ```

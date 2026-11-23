@@ -32,7 +32,7 @@ Then, complete the following steps to set up your permissions:
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -70,7 +70,7 @@ Then, complete the following steps to set up your permissions:
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

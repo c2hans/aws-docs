@@ -71,7 +71,7 @@ price           REAL)
 
 In this example, the aggregate query has a `GROUP BY` clause on `ROWTIME` that groups the stream into finite rows. The `GROUP_RANK` function then sorts the rows returned by the `GROUP BY` clause.
 
-```
+```sql
 CREATE OR REPLACE STREAM "ticker_grouped" (
     "group_time" TIMESTAMP,
     "ticker" VARCHAR(65520),

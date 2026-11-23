@@ -24,7 +24,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "UpdateTargetsArchitecture": "armv6l|armv7l|x86_64|aarch64",
 "UpdateTargets": [
@@ -75,7 +75,7 @@ type: string
 ### CLI
 <a name="-greengrass-updates-post-cli"></a>
 
-```
+```bash
 aws greengrass create-software-update-job \
   [--update-targets-architecture <value>] \
   [--update-targets <value>] \
@@ -90,7 +90,7 @@ aws greengrass create-software-update-job \
 
 cli-input-json format:
 
-```
+```json
 {
 "UpdateTargetsArchitecture": "armv6l|armv7l|x86_64|aarch64",
 "UpdateTargets": [
@@ -111,7 +111,7 @@ cli-input-json format:
 Success.
  [ CreateSoftwareUpdateJobResponse](definitions-createsoftwareupdatejobresponse.md)
 
-```
+```json
 {
 "IotJobId": "string",
 "IotJobArn": "string",
@@ -134,7 +134,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -170,7 +170,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

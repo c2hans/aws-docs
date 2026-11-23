@@ -72,7 +72,7 @@ You can use the following commands to accept or decline an invitation:
 
   The following example shows how to accept an invitation to join an organization.
 
-  ```
+  ```bash
   $ aws organizations accept-handshake --handshake-id h-examplehandshakeid111
   {
       "Handshake": {

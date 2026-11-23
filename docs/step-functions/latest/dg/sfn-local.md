@@ -36,13 +36,13 @@ The Step Functions Local Docker image enables you to get started with Step Funct
 
 To get the Docker image for Step Functions Local, see [https://hub.docker.com/r/amazon/aws-stepfunctions-local](https://hub.docker.com/r/amazon/aws-stepfunctions-local), or enter the following Docker `pull` command.
 
-```
+```bash
 docker pull amazon/aws-stepfunctions-local
 ```
 
 To start the downloadable version of Step Functions on Docker, run the following Docker `run` command
 
-```
+```bash
 docker run -p 8083:8083 amazon/aws-stepfunctions-local
 ```
 
@@ -73,7 +73,7 @@ The downloadable version of AWS Step Functions is provided as an executable JAR 
 
 1. Test the download and view version information.
 
-   ```
+   ```bash
    $ java -jar StepFunctionsLocal.jar -v
    Step Function Local
    Version: 2.0.0
@@ -82,7 +82,7 @@ The downloadable version of AWS Step Functions is provided as an executable JAR 
 
 1. (Optional) View a listing of available commands.
 
-   ```
+   ```bash
    $ java -jar StepFunctionsLocal.jar -h
    ```
 
@@ -94,7 +94,7 @@ The downloadable version of AWS Step Functions is provided as an executable JAR 
 
 1. To access Step Functions running locally, use the `--endpoint-url` parameter. For example, using the AWS CLI, you would specify Step Functions commands as follows:
 
-   ```
+   ```bash
    aws stepfunctions --endpoint-url http://localhost:8083 {{command}}
    ```
 
@@ -180,7 +180,7 @@ After you run Step Functions locally with the AWS Command Line Interface (AWS CL
 
 1. Create a state machine from the AWS CLI by escaping out the state machine definition.
 
-   ```
+   ```bash
    aws stepfunctions --endpoint-url http://localhost:8083 create-state-machine --definition "{\
      \"Comment\": \"A Hello World example of the Amazon States Language using a Pass state\",\
      \"StartAt\": \"HelloWorld\",\
@@ -196,7 +196,7 @@ The `role-arn` is not used for Step Functions Local, but you must include it wit
 
    If you successfully create the state machine, Step Functions responds with the creation date and the state machine ARN.
 
-   ```
+   ```bash
    {
        "creationDate": 1548454198.202,
        "stateMachineArn": "arn:aws:states:{{region}}:{{account-id}}:stateMachine:HelloWorld"
@@ -205,7 +205,7 @@ The `role-arn` is not used for Step Functions Local, but you must include it wit
 
 1. Start an execution using the ARN of the state machine you created.
 
-   ```
+   ```bash
    aws stepfunctions --endpoint-url http://localhost:8083 start-execution --state-machine-arn arn:aws:states:{{region}}:{{account-id}}:stateMachine:HelloWorld
    ```
 

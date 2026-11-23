@@ -32,7 +32,7 @@ The following example policy allows any user of any server in the account to ass
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -60,7 +60,7 @@ The following example policy allows any user of a specific server to assume the 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -88,7 +88,7 @@ The following example policy allows a specific user of a specific server to assu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -116,7 +116,7 @@ The following example policy allows any workflow in the account to assume the ro
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -144,7 +144,7 @@ The following example policy allows a specific workflow to assume the role.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -172,7 +172,7 @@ The following example policy allows any connector in the account to assume the r
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -200,7 +200,7 @@ The following example policy allows a specific connector to assume the role.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -232,7 +232,7 @@ The following example logging/invocation policy allows any server (and workflow)
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -263,7 +263,7 @@ The following example logging/invocation policy allows a specific server (and wo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

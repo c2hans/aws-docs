@@ -37,7 +37,7 @@ If *geom* is empty, then an empty geometry is returned.
 
 The following SQL returns a 2D geometry from a 3DZ geometry.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Force2D(ST_GeomFromText('MULTIPOINT Z(0 1 2, EMPTY, 2 3 4, 5 6 7)')));
 ```
 

@@ -101,7 +101,7 @@ The following JSON policy grants access to deliver the report to your bucket:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

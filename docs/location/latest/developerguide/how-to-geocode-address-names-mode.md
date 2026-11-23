@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryText": "100 Universal City Plaza, Hollywood, CA",
     "AddressNamesMode": "Matched"
@@ -30,7 +30,7 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -65,7 +65,7 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -78,7 +78,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places geocode --key ${YourKey} --query-text "100 Universal City Plaza, Hollywood, CA" --address-names-mode Matched
 ```
 
@@ -90,7 +90,7 @@ aws geo-places geocode --key ${YourKey} --query-text "100 Universal City Plaza, 
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryText": "100 Universal City Plaza, Hollywood, CA",
     "AddressNamesMode": "Administrative"
@@ -100,7 +100,7 @@ aws geo-places geocode --key ${YourKey} --query-text "100 Universal City Plaza, 
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -135,7 +135,7 @@ aws geo-places geocode --key ${YourKey} --query-text "100 Universal City Plaza, 
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -148,7 +148,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places geocode --key ${YourKey} --query-text "100 Universal City Plaza, Hollywood, CA" --address-names-mode Administrative
 ```
 

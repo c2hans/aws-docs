@@ -11,7 +11,7 @@ The AWS SDK for Swift supports two types of timeout on HTTP clients. These are c
 + **`connectTimeout`** specifies how much time to allow before an attempt to open an HTTP connection times out.
 + **`socketTimeout`** specifies how long to wait for a socket to respond to a request before timing out.
 
-```
+```swift
         do {
             let config = try await S3Client.S3ClientConfig(
                 region: region,
@@ -42,7 +42,7 @@ Setting default headers that interfere with headers the AWS service expects may 
 
 This example creates an Amazon S3 client whose HTTP configuration adds two custom headers to HTTP requests sent by the client:
 
-```
+```swift
 import ClientRuntime
 import AWSS3
 import SmithyHTTPAPI

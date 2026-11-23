@@ -51,20 +51,20 @@ Search for:
 Select instances based on your workload requirements:
 +  **Enhanced networking**: Verify and enable enhanced networking for improved network performance
 
-```
+```console
 $ aws ec2 describe-instances --instance-ids i-1234567890abcdef0 --query 'Reservations[].Instances[].EnaSupport'
 ```
 
-```
+```console
 $ aws ec2 modify-instance-attribute --instance-id i-1234567890abcdef0 --ena-support
 ```
 +  **EBS optimization**: Enable EBS optimization for consistent storage performance
 
-```
+```console
 $ aws ec2 describe-instances --instance-ids i-1234567890abcdef0 --query 'Reservations[].Instances[].EbsOptimized'
 ```
 
-```
+```console
 $ aws ec2 modify-instance-attribute --instance-id i-1234567890abcdef0 --ebs-optimized
 ```
 +  **Nitro System**: Current generation instances run on the AWS Nitro System, providing consistent performance and security
@@ -152,7 +152,7 @@ Amazon EFS provides serverless, fully elastic NFS storage that scales automatica
 
 1.  **Create an encrypted EFS file system with recommended settings**
 
-   ```
+   ```console
    $ aws efs create-file-system \
    --creation-token SAP-TRANS-PROD \
    --backup \
@@ -172,7 +172,7 @@ Amazon EFS provides serverless, fully elastic NFS storage that scales automatica
 
    Create mount targets in each subnet where your SAP instances will access EFS:
 
-   ```
+   ```console
    $ aws efs create-mount-target \
    --file-system-id fs-12345678 \
    --subnet-id subnet-12345678 \
@@ -184,7 +184,7 @@ Amazon EFS provides serverless, fully elastic NFS storage that scales automatica
 
    Get the DNS name needed for mounting:
 
-   ```
+   ```console
    $ aws efs describe-file-systems --creation-token SAP-TRANS-PROD --region us-west-2
    ```
 

@@ -129,7 +129,7 @@ For a description of how you might use the `InstallOverrideList` parameter to ap
 If your file is stored in a publicly available bucket, you can specify either an https URL format or an Amazon S3 path-style URL. If your file is stored in a private bucket, you must specify an Amazon S3 path-style URL.
 + **https URL format**:
 
-  ```
+  ```http
   https://s3.{{aws-api-domain}}/amzn-s3-demo-bucket/my-windows-override-list.yaml
   ```
 + **Amazon S3 path-style URL**:
@@ -202,7 +202,7 @@ The **id** field is required. The value for the **id** field can be supplied usi
 **Sample patch lists**
 + **Amazon Linux 2**
 
-  ```
+  ```yaml
   patches:
       -
           id: 'kernel.x86_64'
@@ -220,7 +220,7 @@ The **id** field is required. The value for the **id** field can be supplied usi
   ```
 + **Debian Server**
 
-  ```
+  ```yaml
   patches:
       -
           id: 'apparmor.amd64'
@@ -240,7 +240,7 @@ The **id** field is required. The value for the **id** field can be supplied usi
   ```
 + **macOS**
 
-  ```
+  ```yaml
   patches:
       -
           id: 'XProtectPlistConfigData'
@@ -253,7 +253,7 @@ The **id** field is required. The value for the **id** field can be supplied usi
   ```
 + **Oracle Linux**
 
-  ```
+  ```yaml
   patches:
       -
           id: 'audit-libs.x86_64'
@@ -270,7 +270,7 @@ The **id** field is required. The value for the **id** field can be supplied usi
   ```
 + **Red Hat Enterprise Linux (RHEL)**
 
-  ```
+  ```yaml
   patches:
       -
           id: 'NetworkManager.x86_64'
@@ -290,7 +290,7 @@ The **id** field is required. The value for the **id** field can be supplied usi
   ```
 + **SUSE Linux Enterprise Server (SLES)**
 
-  ```
+  ```yaml
   patches:
       -
           id: 'amazon-ssm-agent.x86_64'
@@ -308,7 +308,7 @@ The **id** field is required. The value for the **id** field can be supplied usi
   ```
 + **Ubuntu Server **
 
-  ```
+  ```yaml
   patches:
       -
           id: 'apparmor.amd64'
@@ -328,7 +328,7 @@ The **id** field is required. The value for the **id** field can be supplied usi
   ```
 + **Windows**
 
-  ```
+  ```yaml
   patches:
       -
           id: 'KB4284819'

@@ -43,7 +43,7 @@ Create an IAM policy for Distributor permissions.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -71,7 +71,7 @@ Enable CORS by returning correct headers.
 #### ListClientVpcConnectionsResponse schema
 <a name="clusters-clusterarn-client-vpc-connections-response-body-listclientvpcconnectionsresponse-example"></a>
 
-```
+```json
 {
   "clientVpcConnections": [
     {
@@ -89,7 +89,7 @@ Enable CORS by returning correct headers.
 #### Error schema
 <a name="clusters-clusterarn-client-vpc-connections-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

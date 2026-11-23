@@ -84,7 +84,7 @@ https://sns.us-east-2.amazonaws.com/?Action=AddPermission
 #### Sample Response
 <a name="API_AddPermission_Example_1_Response"></a>
 
-```
+```xml
 <AddPermissionResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ResponseMetadata>
         <RequestId>6a213e4e-33a8-11df-9540-99d0768312d3</RequestId>

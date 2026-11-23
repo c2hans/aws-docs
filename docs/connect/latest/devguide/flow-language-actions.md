@@ -81,7 +81,7 @@ The Condition object must contain the following fields:
 
 Following is an example of a condition that returns true if the result starts with "ABC":
 
-```
+```json
 {
     "Operator": "TextStartsWith",
     "Operands": [

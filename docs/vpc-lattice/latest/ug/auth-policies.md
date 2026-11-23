@@ -46,13 +46,13 @@ Follow the steps in this section to use the AWS CLI to:
 
 1. To enable access control on a service network so that it can use an auth policy, use the **create-service-network** command with the `--auth-type` option and a value of `AWS_IAM`.
 
-   ```
+   ```shell
    aws vpc-lattice create-service-network --name {{Name}} --auth-type AWS_IAM [--tags {{TagSpecification}}]
    ```
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
       "arn": "{{arn}}",
       "authType": "AWS_IAM",
@@ -65,7 +65,7 @@ Follow the steps in this section to use the AWS CLI to:
 
    For example, use the following command to create an auth policy for the service network with the ID {{`sn-0123456789abcdef0`}}.
 
-   ```
+   ```shell
    aws vpc-lattice put-auth-policy --resource-identifier {{sn-0123456789abcdef0}} --policy {{file://policy.json}}
    ```
 
@@ -73,7 +73,7 @@ Follow the steps in this section to use the AWS CLI to:
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
       "policy": "{{policy}}",
       "state": "Active"
@@ -84,13 +84,13 @@ Follow the steps in this section to use the AWS CLI to:
 
 1. To enable access control on a service network so that it can use an auth policy, use the **update-service-network** command with the `--auth-type` option and a value of `AWS_IAM`.
 
-   ```
+   ```shell
    aws vpc-lattice update-service-network --service-network-identifier {{sn-0123456789abcdef0}} --auth-type AWS_IAM
    ```
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
       "arn": "{{arn}}",
       "authType": "AWS_IAM",
@@ -101,7 +101,7 @@ Follow the steps in this section to use the AWS CLI to:
 
 1. Use the **put-auth-policy** command, specifying the ID of the service network where you want to add the auth policy and the auth policy you want to add.
 
-   ```
+   ```shell
    aws vpc-lattice put-auth-policy --resource-identifier {{sn-0123456789abcdef0}} --policy {{file://policy.json}}
    ```
 
@@ -109,7 +109,7 @@ Follow the steps in this section to use the AWS CLI to:
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
       "policy": "{{policy}}",
       "state": "Active"
@@ -122,7 +122,7 @@ Follow the steps in this section to use the AWS CLI to:
 **To disable the auth policy for a service network**
 Use the **update-service-network** command with the `--auth-type` option and a value of `NONE`.
 
-```
+```shell
 aws vpc-lattice update-service-network --service-network-identifier {{sn-0123456789abcdef0}} --auth-type NONE
 ```
 
@@ -134,7 +134,7 @@ If you need to enable the auth policy again later, run this command with `AWS_IA
 **To remove an auth policy from a service network**
 Use the **delete-auth-policy** command.
 
-```
+```shell
 aws vpc-lattice delete-auth-policy --resource-identifier {{sn-0123456789abcdef0}}
 ```
 
@@ -161,13 +161,13 @@ Follow these steps to use the AWS CLI to:
 
 1. To enable access control on a service so that it can use an auth policy, use the **create-service** command with the `--auth-type` option and a value of `AWS_IAM`.
 
-   ```
+   ```shell
    aws vpc-lattice create-service --name {{Name}} --auth-type AWS_IAM [--tags {{TagSpecification}}]
    ```
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
       "arn": "{{arn}}",
       "authType": "AWS_IAM",
@@ -184,7 +184,7 @@ Follow these steps to use the AWS CLI to:
 
    For example, use the following command to create an auth policy for the service with the ID {{svc-0123456789abcdef0}}.
 
-   ```
+   ```shell
    aws vpc-lattice put-auth-policy --resource-identifier {{svc-0123456789abcdef0}} --policy {{file://policy.json}}
    ```
 
@@ -192,7 +192,7 @@ Follow these steps to use the AWS CLI to:
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
       "policy": "{{policy}}",
       "state": "Active"
@@ -203,13 +203,13 @@ Follow these steps to use the AWS CLI to:
 
 1. To enable access control on a service so that it can use an auth policy, use the **update-service** command with the `--auth-type` option and a value of `AWS_IAM`.
 
-   ```
+   ```shell
    aws vpc-lattice update-service --service-identifier {{svc-0123456789abcdef0}} --auth-type AWS_IAM
    ```
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
       "arn": "{{arn}}",
       "authType": "AWS_IAM",
@@ -220,7 +220,7 @@ Follow these steps to use the AWS CLI to:
 
 1. Use the **put-auth-policy** command, specifying the ID of the service where you want to add the auth policy and the auth policy you want to add.
 
-   ```
+   ```shell
    aws vpc-lattice put-auth-policy --resource-identifier {{svc-0123456789abcdef0}} --policy {{file://policy.json}}
    ```
 
@@ -228,7 +228,7 @@ Follow these steps to use the AWS CLI to:
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
       "policy": "{{policy}}",
       "state": "Active"
@@ -241,7 +241,7 @@ Follow these steps to use the AWS CLI to:
 **To disable the auth policy for a service**
 Use the **update-service** command with the `--auth-type` option and a value of `NONE`.
 
-```
+```shell
 aws vpc-lattice update-service --service-identifier {{svc-0123456789abcdef0}} --auth-type NONE
 ```
 
@@ -253,7 +253,7 @@ If you need to enable the auth policy again later, run this command with `AWS_IA
 **To remove an auth policy from a service**
 Use the **delete-auth-policy** command.
 
-```
+```shell
 aws vpc-lattice delete-auth-policy --resource-identifier {{svc-0123456789abcdef0}}
 ```
 
@@ -298,7 +298,7 @@ arn:aws:vpc-lattice:{{region}}:{{account-id}}:service/{{service-id}}
 
 For example:
 
-```
+```json
 "Resource": "arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0123456789abcdef0"
 ```
 
@@ -403,7 +403,7 @@ The following auth policy example grants permissions to any authenticated reques
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -434,7 +434,7 @@ The following auth policy example grants permissions to any authenticated reques
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -469,7 +469,7 @@ The following auth policy example only allows authenticated requests from princi
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

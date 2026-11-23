@@ -78,7 +78,7 @@ Users without `Decrypt` permissions can still manage functions, but they can't v
 **Example IAM policy – Deny access by key ARN**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

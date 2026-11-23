@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Describe the status of the compute fleet.
 
-```
+```sh
 pcluster describe-compute-fleet [-h]
                  --cluster-name {{CLUSTER_NAME}}
                 [--debug]

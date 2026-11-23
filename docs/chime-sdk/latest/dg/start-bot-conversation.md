@@ -33,7 +33,7 @@ Use of Amazon Lex V2 and Amazon Polly is subject to the [AWS Service Terms ](htt
 
 The following example shows typical `StartBotConversation` syntax.
 
-```
+```json
 {
   "SchemaVersion": "1.0",
   "Actions":[
@@ -141,7 +141,7 @@ The following example shows typical `StartBotConversation` syntax.
 
 The following example shows a typical `StartBotConversation` action.
 
-```
+```json
 {
   "SchemaVersion": "1.0",
   "Actions":[
@@ -178,7 +178,7 @@ The following example shows a typical `StartBotConversation` action.
 
 The following example shows a typical `ACTION_SUCCESSFUL` event for the `StartBotConversation` action.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": number,
@@ -301,7 +301,7 @@ A list of additional values that Amazon Lex V2 v2 recognizes for the slot.
 
 The following example shows a typical `ACTION_FAILED` event for the `StartBotConversation` action.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": number,
@@ -349,7 +349,7 @@ The following example grants the Amazon Chime SDK permission to call the Amazon 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -27,7 +27,7 @@ The following code example shows how to use `GetFoundationModel`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock#code-examples).
 Get details about a foundation model using the synchronous Amazon Bedrock client.
 
-```
+```java
     /**
      * Get details about an Amazon Bedrock foundation model.
      *
@@ -66,7 +66,7 @@ Get details about a foundation model using the synchronous Amazon Bedrock client
 ```
 Get details about a foundation model using the asynchronous Amazon Bedrock client.
 
-```
+```java
     /**
      * Get details about an Amazon Bedrock foundation model.
      *
@@ -120,7 +120,7 @@ The following code example shows how to use `ListFoundationModels`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock#code-examples).
 List the available Amazon Bedrock foundation models using the synchronous Amazon Bedrock client.
 
-```
+```java
     /**
      * Lists Amazon Bedrock foundation models that you can use.
      * You can filter the results with the request parameters.
@@ -156,7 +156,7 @@ List the available Amazon Bedrock foundation models using the synchronous Amazon
 ```
 List the available Amazon Bedrock foundation models using the asynchronous Amazon Bedrock client.
 
-```
+```java
     /**
      * Lists Amazon Bedrock foundation models that you can use.
      * You can filter the results with the request parameters.

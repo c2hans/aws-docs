@@ -11,7 +11,7 @@ The default software package management tool in AL2027 is DNF5. DNF5 is the succ
 
 Both the `dnf` and `yum` commands run DNF5 in AL2027. Day-to-day commands are unchanged from AL2023:
 
-```
+```bash
 sudo dnf install packagename
 sudo dnf search packagename
 sudo dnf remove packagename

@@ -59,7 +59,7 @@ For your knowledge base that's conencted to a structured data source, if you wan
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

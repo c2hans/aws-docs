@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::Connect::EvaluationForm EvaluationFormItemEnablementSourceValue
 
-An enablement expression source value.
+An enablement expression source value. Provide only the value member that matches the specified `Type`.
 
 ## Syntax
 <a name="aws-properties-connect-evaluationform-evaluationformitemenablementsourcevalue-syntax"></a>
@@ -35,14 +35,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-connect-evaluationform-evaluationformitemenablementsourcevalue-properties"></a>
 
 `RefId`  <a name="cfn-connect-evaluationform-evaluationformitemenablementsourcevalue-refid"></a>
-A referenceId of the source value.
+A referenceId of the source value. Use when `Type` is `OPTION_REF_ID`.
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9._-]{1,40}$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Type`  <a name="cfn-connect-evaluationform-evaluationformitemenablementsourcevalue-type"></a>
-A type of source item value.
+A type of source item value. Valid values: `OPTION_REF_ID` \| `STRING_VALUE` \| `NUMERIC_VALUE` \| `BOOLEAN_VALUE` \| `DATETIME_VALUE`.
 *Required*: No
 *Type*: String
 *Allowed values*: `OPTION_REF_ID`

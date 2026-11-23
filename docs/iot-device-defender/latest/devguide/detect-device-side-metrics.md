@@ -28,7 +28,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example**
 
-```
+```JSON
 {
   "name": "TCP outbound traffic",
   "metric": "aws:all-bytes-out",
@@ -47,7 +47,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example using a `statisticalThreshold`**
 
-```
+```JSON
 {
   "name": "TCP outbound traffic",
   "metric": "aws:all-bytes-out",
@@ -66,7 +66,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example using ML Detect**
 
-```
+```JSON
 {
   "name": "Outbound traffic ML behavior",
   "metric": "aws:all-bytes-out",
@@ -100,7 +100,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example**
 
-```
+```JSON
 {
   "name": "TCP inbound traffic",
   "metric": "aws:all-bytes-in",
@@ -119,7 +119,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example using a `statisticalThreshold`**
 
-```
+```JSON
 {
   "name": "TCP inbound traffic",
   "metric": "aws:all-bytes-in",
@@ -138,7 +138,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example using ML Detect**
 
-```
+```JSON
 {
   "name": "Inbound traffic ML behavior",
   "metric": "aws:all-bytes-in",
@@ -174,7 +174,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example**
 
-```
+```JSON
 {
   "name": "Max TCP Ports",
   "metric": "aws:num-listening-tcp-ports",
@@ -193,7 +193,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example using a `statisticalThreshold`**
 
-```
+```JSON
 {
   "name": "Max TCP Ports",
   "metric": "aws:num-listening-tcp-ports",
@@ -212,7 +212,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example using ML detect**
 
-```
+```JSON
 {
   "name": "Max TCP Port ML behavior",
   "metric": "aws:num-listening-tcp-ports",
@@ -248,7 +248,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example**
 
-```
+```JSON
 {
   "name": "Max UDP Ports",
   "metric": "aws:num-listening-udp-ports",
@@ -267,7 +267,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example using a `statisticalThreshold`**
 
-```
+```JSON
 {
   "name": "Max UDP Ports",
   "metric": "aws:num-listening-udp-ports",
@@ -286,7 +286,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example using ML Detect**
 
-```
+```JSON
 {
   "name": "Max UPD Port ML behavior",
   "metric": "aws:num-listening-tcp-ports",
@@ -320,7 +320,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example**
 
-```
+```JSON
 {
   "name": "TCP outbound traffic",
   "metric": "aws:all-packets-out",
@@ -339,7 +339,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example using a `statisticalThreshold`**
 
-```
+```JSON
 {
   "name": "TCP outbound traffic",
   "metric": "aws:all-packets-out",
@@ -358,7 +358,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800, or 3600 
 
 **Example using ML Detect**
 
-```
+```JSON
 {
   "name": "Outbound sent ML behavior",
   "metric": "aws:all-packets-out",
@@ -392,7 +392,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800 or 3600 s
 
 **Example**
 
-```
+```JSON
 {
   "name": "TCP inbound traffic",
   "metric": "aws:all-packets-in",
@@ -412,7 +412,7 @@ Duration: a non-negative integer. Valid values are 300, 600, 900, 1800 or 3600 s
 **Example**
 Example using a `statisticalThreshold`
 
-```
+```JSON
 {
   "name": "TCP inbound traffic",
   "metric": "aws:all-packets-in",
@@ -431,7 +431,7 @@ Example using a `statisticalThreshold`
 
 **Example using ML Detect**
 
-```
+```JSON
 {
   "name": "Inbound sent ML behavior",
   "metric": "aws:all-packets-in",
@@ -463,7 +463,7 @@ Units: n/a
 
 **Example**
 
-```
+```JSON
 {
   "name": "Denied source IPs",
   "metric": "aws:destination-ip-address",
@@ -494,7 +494,7 @@ Units: n/a
 
 **Example**
 
-```
+```JSON
 {
   "name": "Listening TCP Ports",
   "metric": "aws:listening-tcp-ports",
@@ -525,7 +525,7 @@ Units: n/a
 
 **Example**
 
-```
+```JSON
 {
   "name": "Listening UDP Ports",
   "metric": "aws:listening-udp-ports",
@@ -555,7 +555,7 @@ Units: connections
 
 **Example**
 
-```
+```JSON
 {
   "name": "TCP Connection Count",
   "metric": "aws:num-established-tcp-connections",
@@ -573,7 +573,7 @@ Units: connections
 
 **Example using a `statisticalThreshold`**
 
-```
+```JSON
 {
   "name": "TCP Connection Count",
   "metric": "aws:num-established-tcp-connections",
@@ -592,7 +592,7 @@ Units: connections
 
 **Example using ML Detect**
 
-```
+```JSON
 {
   "name": "Connection count ML behavior",
   "metric": "aws:num-established-tcp-connections",
@@ -672,7 +672,7 @@ Units: connections
 **Example**
 The following JSON structure uses long names.
 
-```
+```JSON
 {
   "header": {
     "report_id": 1530304554,
@@ -770,7 +770,7 @@ The following JSON structure uses long names.
 
 **Example JSON structure using short names**
 
-```
+```JSON
 {
   "hed": {
     "rid": 1530305228,
@@ -882,7 +882,7 @@ You publish device-side metrics to the [reserved topic](https://docs.aws.amazon.
 
 To install AWS IoT Device Client, you can download it from [Github](https://github.com/awslabs/aws-iot-device-client). After you've installed the AWS IoT Device Client on the device for which you want to collect device-side data, you must configure it to send device-side metrics to AWS IoT Device Defender. Verify that the AWS IoT Device Client [configuration file](https://github.com/awslabs/aws-iot-device-client/blob/main/config-template.json) has the following parameters set in the `device-defender` section:
 
-```
+```JSON
 
   "device-defender":    {
         "enabled":    true,

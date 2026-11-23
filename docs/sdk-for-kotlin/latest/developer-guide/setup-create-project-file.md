@@ -20,7 +20,7 @@ Note that version catalogs are a preview feature of Gradle before version 8. Dep
 
    The following example file configures the AWS SDK for Kotlin version catalog. Replace {{X.Y.Z}} with the version you’re using in your app or with the latest version available ([foojay-resolver-convention](https://plugins.gradle.org/plugin/org.gradle.toolchains.foojay-resolver-convention), [aws-sdk-kotlin](https://github.com/awslabs/aws-sdk-kotlin/releases/latest)).
 
-   ```
+   ```kotlin
    plugins {
        id("org.gradle.toolchains.foojay-resolver-convention") version "{{X.Y.Z}}"
    }
@@ -43,7 +43,7 @@ Note that version catalogs are a preview feature of Gradle before version 8. Dep
 
    The following example file declares dependencies for seven AWS services. Replace {{X.Y.Z}} with the latest version available ([kotlin-jvm](https://plugins.gradle.org/plugin/org.jetbrains.kotlin.jvm), [log4j-bom](https://search.maven.org/#search|gav|1|g:org.apache.logging.log4j%20AND%20a:log4j-bom)).
 
-   ```
+   ```kotlin
    plugins {
        kotlin("jvm") version "{{X.Y.Z}}"
        application
@@ -91,7 +91,7 @@ Note that version catalogs are a preview feature of Gradle before version 8. Dep
    \* Java version, for example `17` or `21`.
 The following example `pom.xml` file has dependencies for seven AWS services. Replace {{X.Y.Z}} with the latest version available ([aws-sdk-kotlin](https://github.com/awslabs/aws-sdk-kotlin/releases/latest), [Kotlin](https://kotlinlang.org/docs/releases.html#release-details), [log4j](https://search.maven.org/#search|gav|1|g:org.apache.logging.log4j%20AND%20a:log4j-bom), [junit-jupiter](https://search.maven.org/#search|gav|1|g:org.junit.jupiter%20AND%20a:junit-jupiter)).
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">

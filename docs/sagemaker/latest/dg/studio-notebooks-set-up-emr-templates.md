@@ -35,7 +35,7 @@ To do so, add the following section (here in YAML format) to your stack. This gr
 
  Replace {{SageMakerExecutionRole.Arn}} and {{SageMakerStudioEMRProductPortfolio.ID}} with their actual values.
 
-```
+```YAML
 SageMakerStudioEMRProductPortfolioPrincipalAssociation:
     Type: AWS::ServiceCatalog::PortfolioPrincipalAssociation
     Properties:
@@ -58,7 +58,7 @@ In the Service Catalog product definition, the CloudFormation template of the cl
 **Note**
 The Amazon EMR template referenced by the provided URL in the example does not enforce any authentication requirements when launched. This option is meant for demonstration and learning purposes. It is not recommended in a production environment.
 
-```
+```YAML
 SMStudioEMRNoAuthProduct:
     Type: AWS::ServiceCatalog::CloudFormationProduct
     Properties:
@@ -81,7 +81,7 @@ SMStudioEMRNoAuthProduct:
 
 The following example illustrates additional input parameters that administrators can set when creating an Amazon EMR template.
 
-```
+```JSON
 "Parameters": {
     "EmrClusterName": {
       "Type": "String",
@@ -240,7 +240,7 @@ Follow these steps to create the necessary roles and policies on the account whe
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -267,7 +267,7 @@ Follow these steps to create the necessary roles and policies on the account whe
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -328,7 +328,7 @@ On the account where Studio is deployed, also referred to as the *trusted accoun
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -376,7 +376,7 @@ On the account where Studio is deployed, also referred to as the *trusted accoun
 
     In a JupyterLab application started from a space using the SageMaker AI execution role whose permissions you updated, run the following command in a terminal. Replace the `domainID`, `user-profile-name`, `emr-accountID`, and `AssumableRole` ( `EMRServiceRole` for [RBAC runtime roles]()) with their proper values. This code snippet updates the user profile settings for a specific user profile (use `client.update_userprofile`) or domain settings (use `client.update_domain`) within a SageMaker AI domain. Specifically, it allows the JupyterLab application to assume a particular IAM role (`AssumableRole`) for running Amazon EMR clusters within the Amazon EMR account.
 
-   ```
+   ```python
    import botocore.session
    import json
    sess = botocore.session.get_session()

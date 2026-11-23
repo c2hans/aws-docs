@@ -26,7 +26,7 @@ The following instructions describe how to set up an Amazon EKS cluster in Studi
 
    These are two different resources with two different ARNs. Find the HyperPod cluster ARN in the SageMaker AI console and the Amazon EKS cluster ARN in the Amazon EKS console. If you leave the example values in place, Studio cannot describe your cluster and the **Tasks** tab does not load.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -147,7 +147,7 @@ Use a custom role when you want to grant a custom set of permissions instead of 
 
 YAML Configuration
 
-```
+```yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

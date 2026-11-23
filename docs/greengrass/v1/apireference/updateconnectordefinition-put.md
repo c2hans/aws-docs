@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="updateconnectordefinition-put-cli"></a>
 
-```
+```bash
 aws greengrass update-connector-definition \
   --connector-definition-id <value> \
   [--name <value>]  \
@@ -25,7 +25,7 @@ aws greengrass update-connector-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "ConnectorDefinitionId": "string",
 "Name": "string"
@@ -44,7 +44,7 @@ type: string
 
 where used: body; required: true
 
-```
+```json
 {
 "Name": "string"
 }
@@ -62,7 +62,7 @@ type: string
 Success.
  [ Empty](definitions-empty.md)
 
-```
+```json
 {
 }
 ```
@@ -74,7 +74,7 @@ type: object
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

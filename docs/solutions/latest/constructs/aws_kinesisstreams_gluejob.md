@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import * as glue from "@aws-cdk/aws-glue";
 import * as s3assets from "@aws-cdk/aws-s3-assets";
 import { KinesisstreamsToGluejob } from "@aws-solutions-constructs/aws-kinesisstreams-gluejob";

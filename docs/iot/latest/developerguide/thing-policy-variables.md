@@ -30,7 +30,7 @@ If your client ID matches your thing name, or if you attach your certificate to 
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

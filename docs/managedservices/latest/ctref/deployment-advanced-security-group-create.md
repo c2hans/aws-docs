@@ -154,7 +154,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-security-group-create-ex-min"></a>
 
-```
+```json
 {
   "VpcId": "vpc-12345678",
   "SecurityGroupName": "app1-webserver",
@@ -165,7 +165,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-security-group-create-ex-max"></a>
 
-```
+```json
 {
   "VpcId": "vpc-01234567890abcdef",
   "SecurityGroupName": "app1-webserver",

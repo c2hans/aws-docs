@@ -44,13 +44,13 @@ Use the following procedure to specify a deduplication string for an EventBridge
 
    The deduplication string entry in EventBridge rules uses the following JSON format.
 
-   ```
+   ```JSON
    "operationalData": { "/aws/dedup": {"type": "SearchableString","value": "{\"dedupString\":\"{{Words the system should use to check for duplicate OpsItems}}\"}"}}
    ```
 
    Here is an example.
 
-   ```
+   ```JSON
    "operationalData": { "/aws/dedup": {"type": "SearchableString","value": "{\"dedupString\":\"SSMOpsCenter-EBS-volume-performance-issue\"}"}}
    ```
 
@@ -76,7 +76,7 @@ Here is an example command that specifies a deduplication string of `disk full`.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm create-ops-item \
     --title "EC2 instance disk full" \
     --description "Log clean up may have failed which caused the disk to be full" \
@@ -90,7 +90,7 @@ aws ssm create-ops-item \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm create-ops-item ^
     --title "EC2 instance disk full" ^
     --description "Log clean up may have failed which caused the disk to be full" ^

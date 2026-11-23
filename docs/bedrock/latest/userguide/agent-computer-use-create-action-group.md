@@ -13,7 +13,7 @@ In parentActionGroupSignature of the action group, you specify the tool type fro
 
 The following code example shows how to create an action group that specifies the `ANTHROPIC.Computer` tool for the agent’s use.
 
-```
+```python
 def create_agent_action_group(client, agent_id, agent_version):
 """
 Creates an action group that specifies the ANTHROPIC.Computer tool for the agent.

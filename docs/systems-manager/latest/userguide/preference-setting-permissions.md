@@ -14,7 +14,7 @@ An administrator can have the following policy to create and update preferences 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -44,7 +44,7 @@ Use the following policy to prevent end users in your account from updating or o
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

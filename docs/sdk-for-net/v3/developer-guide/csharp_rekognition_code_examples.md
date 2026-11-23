@@ -33,7 +33,7 @@ For more information, see [Comparing faces in images](https://docs.aws.amazon.co
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.IO;
     using System.Threading.Tasks;
@@ -119,7 +119,7 @@ For more information, see [Creating a collection](https://docs.aws.amazon.com/re
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Rekognition;
@@ -161,7 +161,7 @@ For more information, see [Deleting a collection](https://docs.aws.amazon.com/re
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Rekognition;
@@ -201,7 +201,7 @@ For more information, see [Deleting faces from a collection](https://docs.aws.am
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -247,7 +247,7 @@ For more information, see [Describing a collection](https://docs.aws.amazon.com/
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Rekognition;
@@ -291,7 +291,7 @@ For more information, see [Detecting faces in an image](https://docs.aws.amazon.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -355,7 +355,7 @@ For more information, see [Detecting faces in an image](https://docs.aws.amazon.
 ```
 Display bounding box information for all faces in an image.
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Drawing;
@@ -496,7 +496,7 @@ For more information, see [Detecting labels in an image](https://docs.aws.amazon
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Rekognition;
@@ -547,7 +547,7 @@ For more information, see [Detecting labels in an image](https://docs.aws.amazon
 ```
 Detect labels in an image file stored on your computer.
 
-```
+```csharp
     using System;
     using System.IO;
     using System.Threading.Tasks;
@@ -616,7 +616,7 @@ For more information, see [Detecting inappropriate images](https://docs.aws.amaz
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Rekognition;
@@ -678,7 +678,7 @@ For more information, see [Detecting text in an image](https://docs.aws.amazon.c
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Rekognition;
@@ -740,7 +740,7 @@ The following code example shows how to use `GetCelebrityInfo`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Rekognition;
@@ -789,7 +789,7 @@ For more information, see [Adding faces to a collection](https://docs.aws.amazon
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -850,7 +850,7 @@ For more information, see [Listing collections](https://docs.aws.amazon.com/reko
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Rekognition;
@@ -906,7 +906,7 @@ For more information, see [Listing faces in a collection](https://docs.aws.amazo
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Rekognition;
@@ -959,7 +959,7 @@ For more information, see [Recognizing celebrities in an image](https://docs.aws
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.IO;
     using System.Threading.Tasks;
@@ -1030,7 +1030,7 @@ For more information, see [Searching for a face (face ID)](https://docs.aws.amaz
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Rekognition;
@@ -1082,7 +1082,7 @@ For more information, see [Searching for a face (image)](https://docs.aws.amazon
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Rekognition;

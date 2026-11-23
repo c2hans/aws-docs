@@ -28,7 +28,7 @@ For more information, see [start-ml-model-transform-job](https://docs.aws.amazon
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -65,8 +65,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/ml/modeltransform \
       }'
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -82,6 +81,8 @@ curl \
         "modelTransformOutputS3Location" : "s3://{{(your S3 bucket)}}/neptune-model-transform/"
       }'
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -110,7 +111,7 @@ For more information, see [start-ml-model-transform-job](https://docs.aws.amazon
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -145,8 +146,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/ml/modeltransform \
       }'
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -161,6 +161,8 @@ curl \
         "modelTransformOutputS3Location" : "s3://{{(your S3 bucket)}}/neptune-model-transform/"
       }'
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 

@@ -44,7 +44,7 @@ For more details, refer to [Ping Identity’s PingOne API documentation](https:/
 
 To configure PingOne as an outbound resource provider use the following:
 
-```
+```json
 {
   "name": "PingOne",
   "credentialProviderVendor": "PingOneOauth2",
@@ -62,7 +62,7 @@ To configure PingOne as an outbound resource provider use the following:
 
 To use [PingIdentity OAuth 2.0 token exchange for delegation](https://docs.pingidentity.com/pingone/use_cases/p1_oauth_2_token_exchange_delegation.html), use custom provider for advanced configuration. For details, see [On-behalf-of token exchange with AgentCore Identity](on-behalf-of-token-exchange.md).
 
-```
+```json
 {
   "name": "PingOne",
   "credentialProviderVendor": "CustomOauth2",
@@ -91,7 +91,7 @@ To use [PingIdentity OAuth 2.0 token exchange for delegation](https://docs.pingi
 
 To use [PingIdentity OAuth 2.0 token exchange for impersonation](https://docs.pingidentity.com/pingone/use_cases/p1_oauth_2_token_exchange_impersonation.html), use custom provider for advanced configuration. For details, see [On-behalf-of token exchange with AgentCore Identity](on-behalf-of-token-exchange.md).
 
-```
+```json
 {
   "name": "PingOne",
   "credentialProviderVendor": "CustomOauth2",

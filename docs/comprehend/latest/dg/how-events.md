@@ -47,7 +47,7 @@ When your event detection job completes, Amazon Comprehend writes the analysis r
 
 For each detected event, the output provides details in the following format:
 
-```
+```json
 {
    "Entities": [
      {

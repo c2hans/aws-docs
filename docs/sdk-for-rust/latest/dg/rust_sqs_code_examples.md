@@ -26,7 +26,7 @@ The following code example shows how to use `ListQueues`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/sqs#code-examples).
 Retrieve the first Amazon SQS queue listed in the Region.
 
-```
+```rust
 async fn find_first_queue(client: &Client) -> Result<String, Error> {
     let queues = client.list_queues().send().await?;
     let queue_urls = queues.queue_urls();
@@ -46,7 +46,7 @@ The following code example shows how to use `ReceiveMessage`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/sqs#code-examples).
 
-```
+```rust
 async fn receive(client: &Client, queue_url: &String) -> Result<(), Error> {
     let rcv_message_output = client.receive_message().queue_url(queue_url).send().await?;
 
@@ -69,7 +69,7 @@ The following code example shows how to use `SendMessage`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/sqs#code-examples).
 
-```
+```rust
 async fn send(client: &Client, queue_url: &String, message: &SQSMessage) -> Result<(), Error> {
     println!("Sending message to queue with URL: {}", queue_url);
 
@@ -101,7 +101,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda) repository.
 Consuming an SQS event with Lambda using Rust.
 
-```
+```rust
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 use aws_lambda_events::event::sqs::SqsEvent;
@@ -139,7 +139,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using Rust.
 
-```
+```rust
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 use aws_lambda_events::{

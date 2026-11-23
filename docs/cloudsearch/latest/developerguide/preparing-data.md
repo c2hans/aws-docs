@@ -160,7 +160,7 @@ To delete documents, you upload document batches that contain delete operations.
 
 1. Specify a delete operation that contains the ID of the document you want to remove. For example, the following operation would remove document `tt0484575`:
 
-   ```
+   ```json
    {
      "type": "delete",
      "id": "tt0484575"

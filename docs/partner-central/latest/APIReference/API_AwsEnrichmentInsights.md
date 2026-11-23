@@ -1,0 +1,41 @@
+---
+source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_AwsEnrichmentInsights.html
+---
+
+# AwsEnrichmentInsights
+
+Values that we compute about the matched customer, such as the marketplace engagement score and the solution propensity. These differ from the recorded facts in `Customer`.
+
+## Contents
+<a name="API_AwsEnrichmentInsights_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** MarketplaceEngagementScore **   <a name="AWSPartnerCentral-Type-AwsEnrichmentInsights-MarketplaceEngagementScore"></a>
+The level of engagement of the customer with AWS Marketplace. Valid values are `High`, `Medium`, and `Low`.
+Type: String
+Required: No
+
+ ** SolutionCategory **   <a name="AWSPartnerCentral-Type-AwsEnrichmentInsights-SolutionCategory"></a>
+The category of the solution that AWS recommends for the customer.
+Type: String
+Required: No
+
+ ** SolutionScore **   <a name="AWSPartnerCentral-Type-AwsEnrichmentInsights-SolutionScore"></a>
+The likelihood that the customer adopts the recommended solution. Valid values are `High`, `Medium`, and `Low`.
+Type: String
+Required: No
+
+ ** SolutionSubCategory **   <a name="AWSPartnerCentral-Type-AwsEnrichmentInsights-SolutionSubCategory"></a>
+The sub-category of the solution that AWS recommends for the customer.
+Type: String
+Required: No
+
+## See Also
+<a name="API_AwsEnrichmentInsights_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/partnercentral-selling-2022-07-26/AwsEnrichmentInsights)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/partnercentral-selling-2022-07-26/AwsEnrichmentInsights)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/partnercentral-selling-2022-07-26/AwsEnrichmentInsights)

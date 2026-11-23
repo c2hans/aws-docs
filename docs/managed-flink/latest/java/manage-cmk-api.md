@@ -42,7 +42,7 @@ The following example uses IAM roles. You can create the key policy for the KMS 
 
 The following key policy statements are large because they are intended to be explicit and show the conditions that each action requires.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "MyMsfCmkApplicationKeyPolicy",
@@ -279,7 +279,7 @@ The following IAM policy ensures that the application lifecycle operator has the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -382,7 +382,7 @@ For an application in enhanced snapshot mode, each existing enhanced snapshot ke
 
    In this JSON configuration, remember to replace the {{sample}} values with the actual values.
 
-   ```
+   ```json
    {
        "ApplicationName": "{{MyCmkApplication}}",
        "CurrentApplicationVersionId": {{1}},
@@ -418,7 +418,7 @@ The preceding configuration is accepted to update the application for using CMK 
 
    In this JSON configuration, remember to replace the {{sample}} values with the actual values.
 
-   ```
+   ```json
    {
        "ApplicationName": "{{MyCmkApplication}}",
        "CurrentApplicationVersionId": {{1}},

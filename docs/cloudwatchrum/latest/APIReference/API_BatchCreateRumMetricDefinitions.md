@@ -196,7 +196,7 @@ HTTP Status Code: 400
 
 The following example creates extended metrics with dimensions `Browser:Chrome`, `Browser:Safari`, and `CountryCode=US`.
 
-```
+```json
 {
   AppMonitorName: "app-monitor-name",
   Destination: "CloudWatch",

@@ -31,7 +31,7 @@ SIZE(super_expression)
 
  To use SIZE to get the in-memory size of several `SUPER` type expressions, use the following example.
 
-```
+```sql
 CREATE TABLE test_super_size(a SUPER);
 
 INSERT INTO test_super_size

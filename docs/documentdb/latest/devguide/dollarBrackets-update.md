@@ -51,7 +51,7 @@ To view a code example for using the `$[]` operator, choose the tab for the lang
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function updateDocument() {
@@ -76,7 +76,7 @@ updateDocument();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def update_document():

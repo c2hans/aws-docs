@@ -13,7 +13,7 @@ Amazon Bedrock Runtime runs inference on the foundation models in [Amazon Bedroc
 
 Install the Bedrock Runtime client package.
 
-```
+```bash
 python -m pip install aws-sdk-bedrock-runtime
 ```
 
@@ -26,7 +26,7 @@ The identity that runs the examples needs access to the models that they use and
 ------
 #### [ Synchronous client ]
 
-```
+```python
 from aws_sdk_bedrock_runtime import BedrockRuntimeClient, BedrockRuntimeConfig
 
 def create_client() -> BedrockRuntimeClient:
@@ -38,7 +38,7 @@ def create_client() -> BedrockRuntimeClient:
 ------
 #### [ Asynchronous client ]
 
-```
+```python
 from aws_sdk_bedrock_runtime import AsyncBedrockRuntimeClient, AsyncBedrockRuntimeConfig
 
 async def create_async_client() -> AsyncBedrockRuntimeClient:

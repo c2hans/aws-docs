@@ -31,7 +31,7 @@ You can then enter your custom model name, select the model customization techni
 
 You can also use the SageMaker AI Python SDK to submit a model customization job:
 
-```
+```python
 # Submit a DPO model customization job
 
 from sagemaker.train import DPOTrainer

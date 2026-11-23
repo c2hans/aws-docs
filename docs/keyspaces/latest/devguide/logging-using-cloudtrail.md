@@ -84,7 +84,7 @@ CloudTrail log files contain one or more log entries. An event represents a sing
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateKeyspace`, `DropKeyspace`, `CreateTable`, and `DropTable` actions:
 
-```
+```JSON
 {
   "Records": [
     {
@@ -307,7 +307,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 
 The following log file shows an example of a `SELECT` statement.
 
-```
+```JSON
 {
     "eventVersion": "1.09",
     "userIdentity": {
@@ -364,7 +364,7 @@ The following log file shows an example of a `SELECT` statement.
 
 The following log file shows an example of an `INSERT` statement.
 
-```
+```JSON
 {
     "eventVersion": "1.09",
     "userIdentity": {
@@ -423,7 +423,7 @@ The following log file shows an example of an `INSERT` statement.
 
 The following log file shows an example of an `UPDATE` statement.
 
-```
+```JSON
 {
     "eventVersion": "1.09",
     "userIdentity": {
@@ -479,7 +479,7 @@ The following log file shows an example of an `UPDATE` statement.
 
 The following log file shows an example of a `DELETE` statement.
 
-```
+```JSON
 {
     "eventVersion": "1.09",
     "userIdentity": {

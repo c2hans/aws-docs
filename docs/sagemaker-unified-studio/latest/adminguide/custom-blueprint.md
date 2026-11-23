@@ -121,7 +121,7 @@ Review the parameters that your template declares and confirm that each name mat
 
 Amazon SageMaker Unified Studio assumes the blueprint's provisioning role with `sts:AssumeRole` to deploy your AWS CloudFormation template. It also attaches your user context to that session as tags with `sts:TagSession`. Amazon SageMaker Unified Studio resources such as connections and data sources require this user context to provision. Therefore, the trust policy of the provisioning role must allow both actions for the `datazone.amazonaws.com` service principal, as shown in the following example. The `aws:SourceAccount` condition restricts the role to your own AWS account, which guards against the cross-service confused deputy problem.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

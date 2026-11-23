@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::BedrockAgentCore::Dataset S3Source
 
- Amazon S3 location of a JSONL file containing dataset examples.
+<a name="aws-properties-bedrockagentcore-dataset-s3source-description"></a>The `S3Source` property type specifies Property description not available. for an [AWS::BedrockAgentCore::Dataset](aws-resource-bedrockagentcore-dataset.md).
 
 ## Syntax
 <a name="aws-properties-bedrockagentcore-dataset-s3source-syntax"></a>
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-dataset-s3source-properties"></a>
 
 `S3Uri`  <a name="cfn-bedrockagentcore-dataset-s3source-s3uri"></a>
- Amazon S3 URI of the JSONL file (for example, `s3://my-bucket/path/to/examples.jsonl`).
+Property description not available.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^s3://[a-z0-9][a-z0-9.\-]{1,61}[a-z0-9]/.{1,1024}$`

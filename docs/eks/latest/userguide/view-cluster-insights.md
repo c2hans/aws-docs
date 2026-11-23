@@ -61,19 +61,19 @@ Rollback readiness insights appear in the same tab after you perform an upgrade 
    + Replace {{region-code}} with the code for your AWS Region.
    + Replace {{my-cluster}} with the name of your cluster.
 
-     ```
+     ```bash
      aws eks start-insights-refresh --region {{region-code}} --cluster-name {{my-cluster}}
      ```
 
 1. To track the status of an insights refresh, run the following command. Replace {{my-cluster}} with the name of your cluster.
 
-   ```
+   ```bash
    aws eks describe-insights-refresh --cluster-name {{my-cluster}}
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    {
        "message": "Insights refresh is in progress",
        "status": "IN_PROGRESS",
@@ -85,13 +85,13 @@ Rollback readiness insights appear in the same tab after you perform an upgrade 
    + Replace {{region-code}} with the code for your AWS Region.
    + Replace {{my-cluster}} with the name of your cluster.
 
-     ```
+     ```bash
      aws eks list-insights --region {{region-code}} --cluster-name {{my-cluster}}
      ```
 
      An example output is as follows.
 
-     ```
+     ```bash
      {
      "insights":
          [
@@ -241,13 +241,13 @@ Rollback readiness insights appear in the same tab after you perform an upgrade 
    + Replace {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} with an insight ID retrieved from listing the cluster insights.
    + Replace {{my-cluster}} with the name of your cluster.
 
-     ```
+     ```bash
      aws eks describe-insight --region region-code --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} --cluster-name my-cluster
      ```
 
      An example output is as follows.
 
-     ```
+     ```bash
      {
        "insight":
          {
@@ -283,7 +283,7 @@ The preceding output shows both `UPGRADE_READINESS` and `ROLLBACK_READINESS` ins
 
 You can filter insights by category to view only a specific type:
 
-```
+```bash
 aws eks list-insights \
   --cluster-name {{my-cluster}} \
   --region {{region-code}} \
@@ -292,7 +292,7 @@ aws eks list-insights \
 
 You can also filter by status to see only blocking issues:
 
-```
+```bash
 aws eks list-insights \
   --cluster-name {{my-cluster}} \
   --region {{region-code}} \
@@ -304,7 +304,7 @@ aws eks list-insights \
 
 For rollback readiness insights, the `describe-insight` command returns similar information about affected resources and remediation steps. For example:
 
-```
+```json
 {
     "clusterId": "73a0e91f-f016-4555-bb7c-177496c47c9d",
     "insight": {

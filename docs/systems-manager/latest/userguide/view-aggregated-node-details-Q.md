@@ -18,7 +18,7 @@ For example, say that you give the AWS assistant the following prompt:
 
 The AWS assistant determines what filters to include in a request, and then runs a query similar to the following:
 
-```
+```sh
 aws ssm list-nodes \
     --filters Key=PlatformName,Values='Red Hat Enterprise Linux',Type=Equal Key=PlatformVersion,Values=9.2,Type=Equal
 ```

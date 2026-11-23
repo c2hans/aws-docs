@@ -42,7 +42,7 @@ If you use the AWS IoT Greengrass Core software to create this role, it uses the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -71,7 +71,7 @@ If you use the AWS IoT Greengrass Core software to create this role, it uses the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -101,7 +101,7 @@ If you use the AWS IoT Greengrass Core software to create this role, it uses the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -143,7 +143,7 @@ The default core device role doesn't allow core devices to access S3 buckets. To
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -165,7 +165,7 @@ The default core device role doesn't allow core devices to access S3 buckets. To
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    aws iam create-policy \
      --policy-name {{MyGreengrassV2ComponentArtifactPolicy}} \
      --policy-document file://component-artifact-policy.json
@@ -174,7 +174,7 @@ The default core device role doesn't allow core devices to access S3 buckets. To
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    aws iam create-policy ^
      --policy-name {{MyGreengrassV2ComponentArtifactPolicy}} ^
      --policy-document file://component-artifact-policy.json
@@ -183,7 +183,7 @@ The default core device role doesn't allow core devices to access S3 buckets. To
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    aws iam create-policy `
      --policy-name {{MyGreengrassV2ComponentArtifactPolicy}} `
      --policy-document file://component-artifact-policy.json
@@ -198,7 +198,7 @@ The default core device role doesn't allow core devices to access S3 buckets. To
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    aws iam attach-role-policy \
      --role-name {{GreengrassV2TokenExchangeRole}} \
      --policy-arn arn:aws:iam::{{123456789012}}:policy/{{MyGreengrassV2ComponentArtifactPolicy}}
@@ -207,7 +207,7 @@ The default core device role doesn't allow core devices to access S3 buckets. To
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    aws iam attach-role-policy ^
      --role-name {{GreengrassV2TokenExchangeRole}} ^
      --policy-arn arn:aws:iam::{{123456789012}}:policy/{{MyGreengrassV2ComponentArtifactPolicy}}
@@ -216,7 +216,7 @@ The default core device role doesn't allow core devices to access S3 buckets. To
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    aws iam attach-role-policy `
      --role-name {{GreengrassV2TokenExchangeRole}} `
      --policy-arn arn:aws:iam::{{123456789012}}:policy/{{MyGreengrassV2ComponentArtifactPolicy}}

@@ -12,9 +12,15 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 
 ![Diagram showing m5.24xlarge host compute resources](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/m5-24xlarge-server-resources.png)
 
+*`m5.24xlarge` host compute resources*
+
 ![Diagram showing m5.24xlarge host homogenously slotted into 48 m5.large slots](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/m5-24xlarge-slotted-into-48-m5-large-slots.png)
 
+* `m5.24xlarge` host homogenously slotted into 48 `m5.large` slots*
+
 ![Diagram showing m5.24xlarge host heterogeneously slotted into 4 m5.large, 4 m5.xlarge, 3 m5.2xlarge, 1 m5.4xlarge, and 1 m5.8xlarge slots](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/m5-24xlarge-slotted-into-different-x5-slots.png)
+
+*`m5.24xlarge` host heterogeneously slotted into 4 `m5.large`, 4 `m5.xlarge`, 3 `m5.2xlarge`, 1 `m5.4xlarge`, and 1 `m5.8xlarge` slots*
 
 The full host capacity does not have to be slotted. Slots may be added to a host that has available unallocated capacity. You can modify a slotting layout by using the Capacity Management APIs or UIs for AWS Outposts and creating a new capacity task. For more information, see [Capacity management for AWS Outposts](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-capacity.html) in the *AWS Outposts user guide for racks*. You may be required to shut down or restart certain instances to complete a new capacity task if the new slotting layout cannot be applied while certain slots are occupied by running instances. The `CreateCapacityTask` API allows you to express the number of each instance size that should be present on the Outpost ID indicated, and in the event that a task cannot be completed due to running instances, returns instances that must be stopped in order to satisfy the request. At this point, you can optionally indicate that you want to see “N” additional options in the event that you would prefer not to stop one of the instances returned, and you can also indicate an EC2 instance ID, EC2 instance tag, account, or service that should not be suggested as an instance to shut down in order to satisfy the capacity task request. After making your selection of the option you’d like to go with, we recommend using the Dry Run parameter to validate the proposed changes and understand the potential impact before implementing.
 
@@ -33,6 +39,8 @@ Consult your AWS account team to validate your planned AWS Outposts rack slottin
  In the following figure, four `m5.24xlarge` hosts are heterogeneously slotted with an identical slotting layout. The four hosts create five EC2 capacity pools. Each pool is running at maximum utilization (75%) to maintain N\+1 availability for the instances running on these four hosts. If any host fails, there is sufficient room to restart the failed instances on the remaining hosts.
 
 ![Diagram showing Visualization of EC2 host slots, running instances, and slot pools](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/ec2-server-slots-and-pools.png)
+
+*Visualization of EC2 host slots, running instances, and slot pools*
 
  For more complex slotting layouts, where hosts are not identically slotted, you will need to calculate N\+M availability for each EC2 capacity pool. You can use the following formula to calculate how many hosts (that contribute slots to a given EC2 capacity pool) can fail and still allow the remaining hosts to carry the running instances:
 

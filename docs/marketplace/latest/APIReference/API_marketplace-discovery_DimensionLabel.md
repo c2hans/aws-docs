@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # DimensionLabel
 
-A label used to group or categorize pricing dimensions, such as by region or SageMaker option.
+A label that groups or categorizes pricing dimensions, such as by region or SageMaker option.
 
 ## Contents
 <a name="API_marketplace-discovery_DimensionLabel_Contents"></a>
@@ -13,7 +13,11 @@ A label used to group or categorize pricing dimensions, such as by region or Sag
 In the following list, the required parameters are described first.
 
  ** labelType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_DimensionLabel-labelType"></a>
-The type of the dimension label, such as `Region` or `SagemakerOption`.
+The type of the dimension label. This field has one of the following values:
+Region
+The label groups dimensions by AWS Region.
+SagemakerOption
+The label groups dimensions by Amazon SageMaker option.
 Type: String
 Valid Values: `Region | SagemakerOption`
 Required: Yes

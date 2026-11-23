@@ -136,7 +136,7 @@ select extract(ms from time '18:25:33.123456');
 
 The following example table TIMETZ\_TEST has a column TIMETZ\_VAL (type TIMETZ) with three values inserted.
 
-```
+```sql
 select timetz_val from timetz_test;
 
 timetz_val
@@ -148,7 +148,7 @@ timetz_val
 
 The following example extracts the hours from each timetz\_val.
 
-```
+```sql
 select extract(hour from timetz_val) as hours from time_test;
 
 hours
@@ -160,7 +160,7 @@ hours
 
 The following example extracts milliseconds from a literal value. Literals aren't converted to UTC before the extraction is processed.
 
-```
+```sql
 select extract(ms from timetz '18:25:33.123456 EST');
 
  date_part
@@ -170,7 +170,7 @@ select extract(ms from timetz '18:25:33.123456 EST');
 
 The following example returns the timezone offset hour from UTC from a literal timetz value.
 
-```
+```sql
 select extract(timezone_hour from timetz '1.12.1997 07:37:16.00 PDT');
 
 date_part
@@ -183,7 +183,7 @@ date_part
 
 The following example extracts the day part of `1` from the INTERVAL DAY TO SECOND that defines 36 hours, which is 1 day 12 hours.
 
-```
+```sql
 select EXTRACT('days' from INTERVAL '36 hours' DAY TO SECOND)
 
  date_part
@@ -193,7 +193,7 @@ select EXTRACT('days' from INTERVAL '36 hours' DAY TO SECOND)
 
 The following example extracts the month part of `3` from the YEAR TO MONTH that defines 15 months, which is 1 year 3 months.
 
-```
+```sql
 select EXTRACT('month' from INTERVAL '15 months' YEAR TO MONTH)
 
  date_part
@@ -203,7 +203,7 @@ select EXTRACT('month' from INTERVAL '15 months' YEAR TO MONTH)
 
 The following example extracts the month part of `6` from 30 months which is 2 years 6 months.
 
-```
+```sql
 select EXTRACT('month' from INTERVAL '30' MONTH)
 
  date_part
@@ -213,7 +213,7 @@ select EXTRACT('month' from INTERVAL '30' MONTH)
 
 The following example extracts the hour part of `2` from 50 hours which is 2 days 2 hours.
 
-```
+```sql
 select EXTRACT('hours' from INTERVAL '50' HOUR)
 
  date_part
@@ -223,7 +223,7 @@ select EXTRACT('hours' from INTERVAL '50' HOUR)
 
 The following example extracts the minute part of `11` from 1 hour 11 minutes 11.123 seconds.
 
-```
+```sql
 select EXTRACT('minute' from INTERVAL '70 minutes 70.123 seconds' MINUTE TO SECOND)
 
  date_part
@@ -233,7 +233,7 @@ select EXTRACT('minute' from INTERVAL '70 minutes 70.123 seconds' MINUTE TO SECO
 
 The following example extracts the seconds part of `1.11` from 1 day 1 hour 1 minute 1.11 seconds.
 
-```
+```sql
 select EXTRACT('seconds' from INTERVAL '1 day 1:1:1.11' DAY TO SECOND)
 
  date_part
@@ -243,7 +243,7 @@ select EXTRACT('seconds' from INTERVAL '1 day 1:1:1.11' DAY TO SECOND)
 
 The following example extracts the total number of hours in an INTERVAL. Each part is extracted and added to a total.
 
-```
+```sql
 select EXTRACT('days' from INTERVAL '50' HOUR) * 24 + EXTRACT('hours' from INTERVAL '50' HOUR)
 
  ?column?
@@ -253,7 +253,7 @@ select EXTRACT('days' from INTERVAL '50' HOUR) * 24 + EXTRACT('hours' from INTER
 
 The following example extracts the total number of seconds in an INTERVAL. Each part is extracted and added to a total.
 
-```
+```sql
 select EXTRACT('days' from INTERVAL '1 day 1:1:1.11' DAY TO SECOND) * 86400 +
        EXTRACT('hours' from INTERVAL '1 day 1:1:1.11' DAY TO SECOND) * 3600 +
        EXTRACT('minutes' from INTERVAL '1 day 1:1:1.11' DAY TO SECOND) * 60 +

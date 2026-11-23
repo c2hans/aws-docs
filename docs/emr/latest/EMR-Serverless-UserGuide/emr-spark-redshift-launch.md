@@ -17,7 +17,7 @@ Amazon EMR releases 6.10.0 and higher don't require the `minimal-json.jar` depen
 
 Launch a Spark job on Amazon EMR Serverless with the Amazon Redshift integration for Apache Spark on EMR Serverless release 6.10.0 and higher.
 
-```
+```bash
 spark-submit my_script.py
 ```
 
@@ -34,7 +34,7 @@ To launch a Spark job on Amazon EMR Serverless with the Amazon Redshift integrat
     /usr/share/aws/redshift/spark-redshift/lib/minimal-json.jar
 ```
 
-```
+```bash
 spark-submit \
   --jars /usr/share/aws/redshift/jdbc/RedshiftJDBC.jar,/usr/share/aws/redshift/spark-redshift/lib/spark-redshift.jar,/usr/share/aws/redshift/spark-redshift/lib/spark-avro.jar,/usr/share/aws/redshift/spark-redshift/lib/minimal-json.jar \
   my_script.py

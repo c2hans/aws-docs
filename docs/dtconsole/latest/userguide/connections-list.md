@@ -27,7 +27,7 @@ To do this, use the **list-connections** command.
 **To list connections**
 + Open a terminal (Linux, macOS, or Unix) or command prompt (Windows), and use the AWS CLI to run the **list-connections** command.
 
-  ```
+  ```shell
   aws codeconnections list-connections --provider-type Bitbucket
   --max-results 5 --next-token: {{next-token}}
   ```

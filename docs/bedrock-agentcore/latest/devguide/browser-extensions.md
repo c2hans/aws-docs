@@ -25,7 +25,7 @@ Before using browser extensions, ensure you have:
 + An Amazon Amazon S3 bucket to store your extension ZIP files
 + IAM permissions to access the Amazon S3 bucket containing your extensions. Add the following permissions to your IAM policy:
 
-  ```
+  ```json
   {
   "Version": "2012-10-17",
       "Statement": [
@@ -59,7 +59,7 @@ To prepare an extension for use with Browser Tool:
 
    Zip the extension directory contents (not the parent folder):
 
-   ```
+   ```bash
    cd my-extension
    zip -r ../my-extension.zip.
    ```
@@ -68,7 +68,7 @@ To prepare an extension for use with Browser Tool:
 
    Upload the ZIP file to your Amazon S3 bucket:
 
-   ```
+   ```bash
    aws s3 cp my-extension.zip s3://my-extensions-bucket/extensions/my-extension.zip
    ```
 
@@ -81,7 +81,7 @@ You can create a browser session with extensions using the AWS CLI, SDK, or API.
 
 1. To start a browser session with extensions using the AWS CLI:
 
-   ```
+   ```bash
    aws bedrock-agentcore start-browser-session \
      --region <Region> \
      --browser-identifier "aws.browser.v1" \
@@ -101,7 +101,7 @@ You can create a browser session with extensions using the AWS CLI, SDK, or API.
 
 1. To start a browser session with extensions using the AWS SDK for Python (Boto3):
 
-   ```
+   ```python
    import boto3
 
    region = "us-west-2"
@@ -143,7 +143,7 @@ You can create a browser session with extensions using the AWS CLI, SDK, or API.
 
 1. To start a browser session with extensions using the API:
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X PUT \
      "https://bedrock-agentcore.<Region>.amazonaws.com/browsers/aws.browser.v1/sessions/start" \

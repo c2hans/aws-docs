@@ -77,7 +77,7 @@ If you plan to [Configure your agent using conversational builder](agents-create
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

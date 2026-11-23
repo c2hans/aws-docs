@@ -13,7 +13,7 @@ The SMDDP library integrates natively with PyTorch through the [process group](h
 
 To activate SMDDP and use its `AllGather` operation, you need to add two lines of code to your training script as part of [Step 1: Adapt your PyTorch FSDP training script](model-parallel-use-api-v2.md#model-parallel-adapt-pytorch-script-v2). Note that you need to initialize PyTorch Distributed with the SMDDP backend first, and then run the SMP initialization.
 
-```
+```py
 import torch.distributed as dist
 
 # Initialize with SMDDP

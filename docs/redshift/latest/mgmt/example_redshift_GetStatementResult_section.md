@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Redshift#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the results of a statement execution.
     /// </summary>
@@ -56,7 +56,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/redshift#code-examples).
 Check the statement result.
 
-```
+```java
     /**
      * Asynchronously retrieves the results of a statement execution.
      *
@@ -96,7 +96,7 @@ Check the statement result.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/redshift#code-examples).
 
-```
+```python
 class RedshiftDataWrapper:
     """Encapsulates Amazon Redshift data."""
 
@@ -133,7 +133,7 @@ class RedshiftDataWrapper:
 ```
 The following code instantiates the RedshiftDataWrapper object.
 
-```
+```python
     client = boto3.client("redshift-data")
     redshift_data_wrapper = RedshiftDataWrapper(client)
 ```
@@ -146,7 +146,7 @@ The following code instantiates the RedshiftDataWrapper object.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rsd#code-examples).
 Check the statement result.
 
-```
+```sap-abap
     TRY.
         " Example values: iv_statement_id = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
         " Handle pagination for large result sets

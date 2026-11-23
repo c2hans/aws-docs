@@ -55,6 +55,7 @@ HTTP/1.1 200
    <NumberOfCaCertificates>integer</NumberOfCaCertificates>
    <Reason>string</Reason>
    <Status>string</Status>
+   <UseClientCertificateOCSPEndpoint>boolean</UseClientCertificateOCSPEndpoint>
 </TrustStore>
 ```
 
@@ -98,6 +99,10 @@ The trust store's status.
 Type: String
 Valid Values: `pending | active | failed`
 
+ ** [UseClientCertificateOCSPEndpoint](#API_UpdateTrustStore_ResponseSyntax) **   <a name="cloudfront-UpdateTrustStore-response-UseClientCertificateOCSPEndpoint"></a>
+A boolean. When true, performs real-time certificate revocation checks by querying the OCSP endpoint specified within the client certificate.
+Type: Boolean
+
 ## Errors
 <a name="API_UpdateTrustStore_Errors"></a>
 
@@ -106,6 +111,10 @@ For information about the errors that are common to all actions, see [Common Err
  ** AccessDenied **
 Access denied.
 HTTP Status Code: 403
+
+ ** EntityLimitExceeded **
+The entity limit has been exceeded.
+HTTP Status Code: 400
 
  ** EntityNotFound **
 The entity was not found.

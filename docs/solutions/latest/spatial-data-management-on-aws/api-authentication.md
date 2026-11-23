@@ -54,7 +54,7 @@ If you do not already have a role with the required permissions, create one:
 
 1. Choose **Create policy** and enter the following JSON:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -75,7 +75,7 @@ If you do not already have a role with the required permissions, create one:
 
 To restrict access to specific operations, narrow the `Resource` ARN. For example, to allow only read operations on libraries:
 
-```
+```json
 "Resource": "arn:aws:execute-api:<REGION>:<ACCOUNT_ID>:<API_ID>/2025-04-18/GET/iam/libraries*"
 ```
 
@@ -84,7 +84,7 @@ To restrict access to specific operations, narrow the `Resource` ARN. For exampl
 
 The following policy grants a user full access to Assets and Projects APIs, but no access to other resources such as Libraries, Connectors, or Asset Templates:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -114,7 +114,7 @@ The Amazon Resource Name (ARN) pattern breakdown:
 
 To grant read-only access across all resources:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -129,7 +129,7 @@ To grant read-only access across all resources:
 
 Alternatively, using the AWS CLI:
 
-```
+```bash
 # Create the role (replace the trust policy principal as needed)
 aws iam create-role \
   --role-name SpatialDataMgmtApiRole \
@@ -166,7 +166,7 @@ Once the role exists, obtain credentials to sign your requests.
 
 If you have an IAM role with the `execute-api:Invoke` permission, assume it to get temporary credentials:
 
-```
+```bash
 aws sts assume-role \
   --role-arn arn:aws:iam::<ACCOUNT_ID>:role/<ROLE_NAME> \
   --role-session-name api-session
@@ -174,7 +174,7 @@ aws sts assume-role \
 
 This returns `AccessKeyId`, `SecretAccessKey`, and `SessionToken`. Export them as environment variables:
 
-```
+```bash
 export AWS_ACCESS_KEY_ID=<AccessKeyId>
 export AWS_SECRET_ACCESS_KEY=<SecretAccessKey>
 export AWS_SESSION_TOKEN=<SessionToken>
@@ -185,7 +185,7 @@ export AWS_SESSION_TOKEN=<SessionToken>
 
 If your organization uses [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html):
 
-```
+```bash
 aws sso login --profile <PROFILE_NAME>
 ```
 
@@ -199,7 +199,7 @@ Long-lived access keys are less secure than temporary credentials. We recommend 
 
 For programmatic access with a long-lived IAM user, configure the AWS CLI:
 
-```
+```bash
 aws configure
 ```
 
@@ -215,7 +215,7 @@ All requests to `/iam/` endpoints must include a SigV4 signature with the servic
 
 This example requires the `requests` and `botocore` Python packages.
 
-```
+```python
 from botocore.auth import SigV4Auth
 from botocore.awsrequest import AWSRequest
 from botocore.session import Session
@@ -245,7 +245,7 @@ This uses the default credential chain (environment variables, `~/.aws/credentia
 **Note**
  `awscurl` is a third-party tool and is not maintained by AWS.
 
-```
+```bash
 awscurl --service execute-api \
   --region <REGION> \
   "<API_ENDPOINT>/iam/libraries"
@@ -256,7 +256,7 @@ awscurl --service execute-api \
 ### JavaScript (AWS SDK v3)
 <a name="javascript-example"></a>
 
-```
+```javascript
 import { SignatureV4 } from "@aws-sdk/signature-v4";
 import { Sha256 } from "@aws-crypto/sha256-js";
 import { HttpRequest } from "@aws-sdk/protocol-http";

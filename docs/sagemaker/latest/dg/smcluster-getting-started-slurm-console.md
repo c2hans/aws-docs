@@ -151,7 +151,7 @@ Configure how nodes in your cluster are provisioned. Your choice affects Amazon 
 </tbody>
 </table>
 
-1. For **Extension script file in S3 - *optional*** (appears when you choose **None** under **Lifecycle scripts**), enter the Amazon S3 URI of your extension script. The extension script allows you to provision additional optional capabilities, such as observability, System Security Services Daemon (SSSD), and Amazon S3 bucket mounting, on top of default configurations without managing the entire set of lifecycle scripts.
+1. For **Extension script file in S3 - *optional*** (appears when you choose **None** under **Lifecycle scripts**), enter the Amazon S3 URI of your extension script. The extension script allows you to provision additional optional capabilities, such as Amazon S3 bucket mounting, on top of default configurations without managing the entire set of lifecycle scripts. To set up observability and user management, use [Cluster extensions for SageMaker HyperPod Slurm clusters](sagemaker-hyperpod-slurm-extensions.md) instead.
 
    Enter the full Amazon S3 URI to the entry point script, for example:
 

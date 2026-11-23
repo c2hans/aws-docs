@@ -30,7 +30,7 @@ The following code example shows how to get started using Systems Manager.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 
@@ -81,7 +81,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class SystemsManagerScenario:
     """Runs an interactive scenario that shows how to get started using Amazon Systems Manager."""
 
@@ -294,7 +294,7 @@ if __name__ == "__main__":
 ```
 Define a class that wraps document and command actions.
 
-```
+```python
 class DocumentWrapper:
     """Encapsulates AWS Systems Manager Document actions."""
 
@@ -461,7 +461,7 @@ class DocumentWrapper:
 ```
 Define a class that wraps ops item actions.
 
-```
+```python
 class OpsItemWrapper:
     """Encapsulates AWS Systems Manager OpsItem actions."""
 
@@ -593,7 +593,7 @@ class OpsItemWrapper:
 ```
 Define a class that wraps maintenance window actions.
 
-```
+```python
 class MaintenanceWindowWrapper:
     """Encapsulates AWS Systems Manager maintenance window actions."""
 
@@ -731,7 +731,7 @@ The following code example shows how to use `CreateDocument`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class DocumentWrapper:
     """Encapsulates AWS Systems Manager Document actions."""
 
@@ -781,7 +781,7 @@ The following code example shows how to use `CreateMaintenanceWindow`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class MaintenanceWindowWrapper:
     """Encapsulates AWS Systems Manager maintenance window actions."""
 
@@ -846,7 +846,7 @@ The following code example shows how to use `CreateOpsItem`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class OpsItemWrapper:
     """Encapsulates AWS Systems Manager OpsItem actions."""
 
@@ -912,7 +912,7 @@ The following code example shows how to use `DeleteDocument`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class DocumentWrapper:
     """Encapsulates AWS Systems Manager Document actions."""
 
@@ -958,7 +958,7 @@ The following code example shows how to use `DeleteMaintenanceWindow`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class MaintenanceWindowWrapper:
     """Encapsulates AWS Systems Manager maintenance window actions."""
 
@@ -1006,7 +1006,7 @@ The following code example shows how to use `DeleteOpsItem`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class OpsItemWrapper:
     """Encapsulates AWS Systems Manager OpsItem actions."""
 
@@ -1054,7 +1054,7 @@ The following code example shows how to use `DescribeOpsItems`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class OpsItemWrapper:
     """Encapsulates AWS Systems Manager OpsItem actions."""
 
@@ -1111,7 +1111,7 @@ The following code example shows how to use `ListCommandInvocations`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class DocumentWrapper:
     """Encapsulates AWS Systems Manager Document actions."""
 
@@ -1171,7 +1171,7 @@ The following code example shows how to use `SendCommand`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class DocumentWrapper:
     """Encapsulates AWS Systems Manager Document actions."""
 
@@ -1218,7 +1218,7 @@ The following code example shows how to use `UpdateMaintenanceWindow`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class MaintenanceWindowWrapper:
     """Encapsulates AWS Systems Manager maintenance window actions."""
 
@@ -1287,7 +1287,7 @@ The following code example shows how to use `UpdateOpsItem`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class OpsItemWrapper:
     """Encapsulates AWS Systems Manager OpsItem actions."""
 

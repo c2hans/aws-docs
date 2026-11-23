@@ -26,14 +26,14 @@ In the following commands, replace the example Region, log group, service name, 
 
 The Store starts disabled. List it before you create the evaluation:
 
-```
+```bash
 aws bedrock-agentcore-control list-agent-insight-stores \
     --region us-west-2
 ```
 
 The response contains one Store. Its ID is `default-insight-store`. Enable it:
 
-```
+```bash
 aws bedrock-agentcore-control update-agent-insight-store \
     --agent-insight-store-id default-insight-store \
     --enablement-status ENABLED \
@@ -42,7 +42,7 @@ aws bedrock-agentcore-control update-agent-insight-store \
 
 Use `GetAgentInsightStore` to poll the asynchronous update:
 
-```
+```bash
 aws bedrock-agentcore-control get-agent-insight-store \
     --agent-insight-store-id default-insight-store \
     --region us-west-2
@@ -55,7 +55,7 @@ Continue after `enablementStatus` is `ENABLED` and `status` is `ACTIVE`.
 
 Create an online evaluation configuration that uses the failure analysis evaluator:
 
-```
+```bash
 aws bedrock-agentcore-control create-online-evaluation-config \
     --online-evaluation-config-name "production_failure_analysis" \
     --description "Find recurring failures in production traffic" \
@@ -87,7 +87,7 @@ Send normal traffic to your agent. We write a session result for each selected s
 
 Use the following AWS CLI command to list active Agent Insights for your application:
 
-```
+```bash
 aws bedrock-agentcore list-agent-insights \
     --application-name "MyAgent.DEFAULT" \
     --archive-status ACTIVE \
@@ -101,7 +101,7 @@ A successful response contains an `agentInsights` list. If the list is empty, th
 
 Use the following AWS CLI command to get one Agent Insight. Replace `<agent-insight-id>` with an ID returned by `ListAgentInsights`:
 
-```
+```bash
 aws bedrock-agentcore get-agent-insight \
     --application-name "MyAgent.DEFAULT" \
     --agent-insight-id <agent-insight-id> \
@@ -115,18 +115,32 @@ The response includes the generated pattern description, root causes, suggested 
 
 If you don’t want the online evaluation to keep processing traffic, delete the configuration. Replace `online-evaluation-config-id` with the configuration ID returned in Step 2:
 
-```
+```bash
 aws bedrock-agentcore-control delete-online-evaluation-config \
     --online-evaluation-config-id <online-evaluation-config-id> \
     --region us-west-2
 ```
+
+Delete the online evaluation configuration to stop future processing. Existing Agent Insights remain in the Store. To remove them, disable the default Store:
+
+**Warning**
+Disabling the Store permanently removes all Agent Insights in the current account and Region. This includes findings from other online and batch evaluations. Before you disable the Store, retrieve any Agent Insights that you need to retain.
+
+```bash
+aws bedrock-agentcore-control update-agent-insight-store \
+    --agent-insight-store-id default-insight-store \
+    --enablement-status DISABLED \
+    --region us-west-2
+```
+
+Poll `GetAgentInsightStore` until the Store reaches `INACTIVE`.
 
 ## Use the AWS SDK for Python
 <a name="insights-getting-started-sdk"></a>
 
 The following Python example performs the same Store enablement, evaluation creation, and Agent Insight retrieval:
 
-```
+```python
 import boto3
 import time
 

@@ -11,7 +11,7 @@ To see if you have the latest version, run the following command in the AWS CLI.
 **Note**
 The command returns results only if the plugin is located in the default installation directory for your operating system type. You can also check the version in the contents of the `VERSION` file in the directory where you have installed the plugin.
 
-```
+```sh
 session-manager-plugin --version
 ```
 

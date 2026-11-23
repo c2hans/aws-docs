@@ -8,7 +8,7 @@ While SageMaker Pipelines provide a robust and automated way to orchestrate mach
 
 The following is an example of a training step with a retry policy.
 
-```
+```JSON
 {
     "Steps": [
         {
@@ -32,7 +32,7 @@ The following is an example of a training step with a retry policy.
 
 The following is an example of how to build a `TrainingStep` in SDK for Python (Boto3) with a retry policy.
 
-```
+```Python
 from sagemaker.workflow.retry import (
     StepRetryPolicy,
     StepExceptionTypeEnum,

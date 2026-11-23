@@ -23,7 +23,7 @@ Provide the `accounting` configuration in your call to the `CreateCluster` API a
 
 The following example uses the AWS CLI to call the `CreateCluster` API action. The parameter value substring `accounting='{mode=STANDARD}'` enables accounting.
 
-```
+```txt
 aws pcs create-cluster --cluster-name {{cluster-name}} \
                        --scheduler type=SLURM,version=25.11 \
                        --size SMALL \

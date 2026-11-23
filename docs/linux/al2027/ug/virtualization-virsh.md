@@ -22,7 +22,7 @@ Run `virsh` with `sudo`. The system libvirt instance (`qemu:///system`) authoriz
 
 This domain XML describes a guest with two vCPUs, 2 GiB of memory, a virtio disk, user-mode networking, and a serial console. Point `source file` at a disk image you have already created, for example a copy of the AL2027 Kernel-based Virtual Machine (KVM) image, or a blank image from `qemu-img create`. Save the following as `al2027-demo.xml`:
 
-```
+```xml
 <domain type='kvm'>
   <name>al2027-demo</name>
   <memory unit='MiB'>2048</memory>
@@ -144,7 +144,7 @@ Two guest networking modes are practical on AL2027, and they differ in what you 
 
 This is the mode used in the preceding domain XML. It gives the guest outbound access without a bridge, needs no additional daemon, and is the simplest option for a short-lived test guest. It uses the following `<interface>` configuration:
 
-```
+```xml
 <interface type='user'>
   <backend type='passt'/>
   <model type='virtio'/>
@@ -181,7 +181,7 @@ The `default` network is managed by a separate daemon, `virtnetworkd`, which is 
 
 1. Replace the interface in your domain XML, then redefine and start the guest.
 
-   ```
+   ```xml
    <interface type='network'>
      <source network='default'/>
      <model type='virtio'/>

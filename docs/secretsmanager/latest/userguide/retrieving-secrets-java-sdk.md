@@ -12,7 +12,7 @@ The following code examples show how to use `GetSecretValue`.
 
 **Required permissions: **`secretsmanager:GetSecretValue`
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.secretsmanager.SecretsManagerClient;
 import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueRequest;

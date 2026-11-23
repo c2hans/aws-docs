@@ -12,7 +12,7 @@ After you complete the deployment wizard in the Toolkit for Visual Studio, the t
 
 When the **publish** command finishes, the toolkit writes the new deployment manifest into the publishing folder. The deployment manifest is a JSON file named **aws-windows-deployment-manifest.json**, which the Elastic Beanstalk Windows container (version 1.2 or later) reads to determine how to deploy the application. For example, for an ASP.NET Core application you want to be deploy at the root of IIS, the toolkit generates a manifest file that looks like this:
 
-```
+```json
 {
   "manifestVersion": 1,
   "deployments": {
@@ -42,7 +42,7 @@ The manifest must be named **aws-windows-deployment-manifest.json** and it must 
 
 To ensure the dotnet CLI `publish` command includes the manifest, update the `project.json` file to include the manifest file in the include section under `include` in `publishOptions`.
 
-```
+```json
 {
    "publishOptions": {
      "include": [
@@ -63,7 +63,7 @@ When you open `windows-deployment-manifest.json`, you'll see the schema URL sele
 
 One customization you can do is to configure the IIS application pool under which the application will run. The following example shows how you can define an IIS Application pool ("customPool") that recycles the process every 60 minutes, and assigns it to the application using `"appPool": "customPool"`.
 
-```
+```json
 {
   "manifestVersion": 1,
   "iisConfig": {
@@ -91,7 +91,7 @@ One customization you can do is to configure the IIS application pool under whic
 
 Additionally, the manifest can declare Windows PowerShell scripts to run before and after the install, restart and uninstall actions. For example, the following manifest runs the Windows PowerShell script `PostInstallSetup.ps1` to do further setup work after the ASP.NET Core application is deployed to IIS. When adding scripts like this, make sure the scripts are added to the include section under publishOptions in the `project.json` file, just as you did with the `aws-windows-deployment-manifest.json` file. If you don't, the scripts won't be included as part of the dotnet CLI **publish** command.
 
-```
+```json
 {
   "manifestVersion": 1,
   "deployments": {

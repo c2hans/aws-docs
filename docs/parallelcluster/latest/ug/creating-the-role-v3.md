@@ -23,7 +23,7 @@ In this tutorial, you will create a policy for configuring shared storage encryp
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

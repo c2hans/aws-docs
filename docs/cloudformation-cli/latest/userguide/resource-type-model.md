@@ -43,7 +43,7 @@ The example below displays a minimal resource type definition. In this case, the
 
 Note that this resource schema would require a `handlers` section with the create, read, and update handlers specified in order for the resource to actually be provisioned within a CloudFormation account.
 
-```
+```json
 {
     "typeName": "myORG::myService::myResource",
     "properties": {
@@ -94,7 +94,7 @@ In this example, both properties must be dynamic references, as represented by t
 
 To see how users set configuration data for their extensions, see [Configuring extensions at the account level](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/registry-private.html#registry-set-configuration) in the *AWS CloudFormation User Guide*.
 
-```
+```json
 {
     "typeName": "MyOrg::MyService::Resource",
     "description": "Example resource type that requires third-party credentials",

@@ -48,7 +48,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/intercepto
 
  Interceptors are managed through an interceptor registry that provides methods to add and remove interceptors. The following example shows a simple interceptor that adds an AWS X-Ray trace ID header to outgoing requests before the signing process:
 
-```
+```go
 type recursionDetection struct{}
 
 func (recursionDetection) BeforeSigning(ctx context.Context, in *smithyhttp.InterceptorContext) error {
@@ -66,7 +66,7 @@ svc := s3.NewFromConfig(cfg, func(o *s3.Options) {
 
  The interceptor registry is added to client Options, which enables per-operation interceptor configuration:
 
-```
+```go
 // ... or use it per-operation
 s3.ListBuckets(context.Background(), &s3.ListBucketsInput{
 }, func(o *s3.Options) {
@@ -79,7 +79,7 @@ s3.ListBuckets(context.Background(), &s3.ListBucketsInput{
 
  You can also register interceptors globally using the `config.LoadDefaultConfig` function with the appropriate `With*` options for each interceptor type. This applies the interceptor to all AWS service clients created from that configuration:
 
-```
+```go
 type myExecutionInterceptor struct{}
 
 func (*myExecutionInterceptor) AfterExecution(ctx context.Context, in *smithyhttp.InterceptorContext) error {

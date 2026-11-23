@@ -15,7 +15,7 @@ The following code example shows how to set up a AWS HealthScribe streaming tran
 
  The following example uses the SDK for Java 2.x to set up streaming and make a [StartMedicalScribeStream](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartMedicalScribeStream.html) request.
 
-```
+```java
 package org.example;
 
 import io.reactivex.rxjava3.core.BackpressureStrategy;
@@ -246,7 +246,7 @@ public class HealthScribeStreamingDemoApp {
 
  The following is an example of a AWS HealthScribe transcript file from a streaming session.
 
-```
+```json
 {
     "Conversation": {
         "ClinicalInsights": [{
@@ -492,7 +492,7 @@ public class HealthScribeStreamingDemoApp {
 
  The following is an example of a AWS HealthScribe clinical documentation insights file from a streaming session.
 
-```
+```json
 {
   "ClinicalDocumentation": {
     "Sections": [

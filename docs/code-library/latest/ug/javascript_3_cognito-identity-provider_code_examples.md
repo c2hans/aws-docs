@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon Cognito.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 import {
   paginateListUserPools,
   CognitoIdentityProviderClient,
@@ -66,7 +66,7 @@ The following code example shows how to use `AdminGetUser`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider/#code-examples).
 
-```
+```javascript
 const adminGetUser = ({ userPoolId, username }) => {
   const client = new CognitoIdentityProviderClient({});
 
@@ -88,7 +88,7 @@ The following code example shows how to use `AdminInitiateAuth`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider/#code-examples).
 
-```
+```javascript
 const adminInitiateAuth = ({ clientId, userPoolId, username, password }) => {
   const client = new CognitoIdentityProviderClient({});
 
@@ -112,7 +112,7 @@ The following code example shows how to use `AdminRespondToAuthChallenge`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 const adminRespondToAuthChallenge = ({
   userPoolId,
   clientId,
@@ -145,7 +145,7 @@ The following code example shows how to use `AssociateSoftwareToken`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 const associateSoftwareToken = (session) => {
   const client = new CognitoIdentityProviderClient({});
   const command = new AssociateSoftwareTokenCommand({
@@ -165,7 +165,7 @@ The following code example shows how to use `ConfirmDevice`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 const confirmDevice = ({ deviceKey, accessToken, passwordVerifier, salt }) => {
   const client = new CognitoIdentityProviderClient({});
 
@@ -191,7 +191,7 @@ The following code example shows how to use `ConfirmSignUp`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 const confirmSignUp = ({ clientId, username, code }) => {
   const client = new CognitoIdentityProviderClient({});
 
@@ -214,7 +214,7 @@ The following code example shows how to use `DeleteUser`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-pools-triggers#code-examples).
 
-```
+```javascript
 /**
  * Delete the signed-in user. Useful for allowing a user to delete their
  * own profile.
@@ -243,7 +243,7 @@ The following code example shows how to use `InitiateAuth`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 const initiateAuth = ({ username, password, clientId }) => {
   const client = new CognitoIdentityProviderClient({});
 
@@ -269,7 +269,7 @@ The following code example shows how to use `ListUsers`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 const listUsers = ({ userPoolId }) => {
   const client = new CognitoIdentityProviderClient({});
 
@@ -290,7 +290,7 @@ The following code example shows how to use `ResendConfirmationCode`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 const resendConfirmationCode = ({ clientId, username }) => {
   const client = new CognitoIdentityProviderClient({});
 
@@ -312,7 +312,7 @@ The following code example shows how to use `RespondToAuthChallenge`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 const respondToAuthChallenge = ({
   clientId,
   username,
@@ -346,7 +346,7 @@ The following code example shows how to use `SignUp`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 const signUp = ({ clientId, username, password, email }) => {
   const client = new CognitoIdentityProviderClient({});
 
@@ -370,7 +370,7 @@ The following code example shows how to use `UpdateUserPool`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-pools-triggers#code-examples).
 
-```
+```javascript
 /**
  * Connect a Lambda function to the PreSignUp trigger for a Cognito user pool
  * @param {{ region: string, userPoolId: string, handlerArn: string }} config
@@ -410,7 +410,7 @@ The following code example shows how to use `VerifySoftwareToken`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 const verifySoftwareToken = (totp) => {
   const client = new CognitoIdentityProviderClient({});
 
@@ -449,7 +449,7 @@ The following code example shows how to automatically confirm known Amazon Cogni
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-pools-triggers#code-examples).
 Configure an interactive "Scenario" run. The JavaScript (v3) examples share a Scenario runner to streamline complex examples. The complete source code is on GitHub.
 
-```
+```javascript
 import { AutoConfirm } from "./scenario-auto-confirm.js";
 
 /**
@@ -497,7 +497,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 ```
 This Scenario demonstrates auto-confirming a known user. It orchestrates the example steps.
 
-```
+```javascript
 import { wait } from "@aws-doc-sdk-examples/lib/utils/util-timers.js";
 import {
   Scenario,
@@ -852,7 +852,7 @@ export const AutoConfirm = (context) =>
 ```
 These are steps that are shared with other Scenarios.
 
-```
+```javascript
 import {
   ScenarioAction,
   ScenarioInput,
@@ -900,7 +900,7 @@ export const logCleanUpReminder = new ScenarioOutput(
 ```
 A handler for the `PreSignUp` trigger with a Lambda function.
 
-```
+```javascript
 import type { PreSignUpTriggerEvent, Handler } from "aws-lambda";
 import type { UserRepository } from "./user-repository";
 import { DynamoDBUserRepository } from "./user-repository";
@@ -975,7 +975,7 @@ export const handler: Handler = async (event: PreSignUpTriggerEvent) => {
 ```
 Module of CloudWatch Logs actions.
 
-```
+```javascript
 import {
   CloudWatchLogsClient,
   GetLogEventsCommand,
@@ -1045,7 +1045,7 @@ export const getLogEvents = async ({
 ```
 Module of Amazon Cognito actions.
 
-```
+```javascript
 import {
   AdminGetUserCommand,
   CognitoIdentityProviderClient,
@@ -1182,7 +1182,7 @@ export const deleteUser = async ({ region, accessToken }) => {
 ```
 Module of DynamoDB actions.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
   BatchWriteCommand,
@@ -1233,7 +1233,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider/scenarios/basic#code-examples).
 For the best experience, clone the GitHub repository and run this example. The following code represents a sample of the full example application.
 
-```
+```javascript
 import { logger } from "@aws-doc-sdk-examples/lib/utils/util-log.js";
 import { signUp } from "../../../actions/sign-up.js";
 import { FILE_USER_POOLS } from "./constants.js";

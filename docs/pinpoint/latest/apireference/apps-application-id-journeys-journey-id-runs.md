@@ -85,7 +85,7 @@ Retrieves information about the communication requirements and options that are 
 #### JourneyRunsResponse schema
 <a name="apps-application-id-journeys-journey-id-runs-response-body-journeyrunsresponse-example"></a>
 
-```
+```json
 {
   "NextToken": "string",
   "Item": [
@@ -102,7 +102,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-journeys-journey-id-runs-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

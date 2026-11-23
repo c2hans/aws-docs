@@ -78,7 +78,7 @@ The following [configuration file](ebextensions.md) uses options in this namespa
 
 **Example .ebextensions/vpc.config – Public-private**
 
-```
+```yaml
 option_settings:
    aws:ec2:vpc:
       VPCId: vpc-087a68c03b9c50c84
@@ -92,7 +92,7 @@ This example shows a public-public configuration, where the load balancer and EC
 
 **Example .ebextensions/vpc.config – Public-public**
 
-```
+```yaml
 option_settings:
    aws:ec2:vpc:
       VPCId: vpc-087a68c03b9c50c84

@@ -13,7 +13,7 @@ The TagContact action parameters correspond to user-defined tags that are applie
 ## Parameter object
 <a name="tagcontact-parameter"></a>
 
-```
+```json
 {
 "Tags": { an Object that holds the tags to be set.
        "Key1":"Value1" Both the key and value may be defined statically or dynamically.

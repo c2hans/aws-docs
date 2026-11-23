@@ -129,7 +129,7 @@ Add articles to the publication
 
 1. Create the `awsdms` schema on the source database using the following script:
 
-   ```
+   ```sql
    use master
    go
    create schema awsdms
@@ -208,7 +208,7 @@ Add articles to the publication
 
 1. Create the `[awsdms].[rtm_dump_dblog]` procedure on the Master database using the following script:
 
-   ```
+   ```sql
    use [MASTER]
 
    go
@@ -452,7 +452,7 @@ Add articles to the publication
 
 1. Create the login from the certificate using the following script:
 
-   ```
+   ```sql
    Use [master]
    Go
 
@@ -467,7 +467,7 @@ Add articles to the publication
 
 1. Add the signature to [master].[awsdms].[rtm\_dump\_dblog] using the certificate, using the following script:
 
-   ```
+   ```sql
    Use [master]
    GO
    ADD SIGNATURE
@@ -585,7 +585,7 @@ If you recreate the stored procedure, you need to add the signature again.
 **Note**
 You should create the dmsnosysadmin user account with the same SID on each replica. The following SQL query can help verify the dmsnosysadmin account SID value on each replica. For more information about creating a user, see [ CREATE USER (Transact-SQL) ](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-user-transact-sql) in the [Microsoft SQL server documentation](https://learn.microsoft.com/en-us/sql/). For more information about creating SQL user accounts for Azure SQL database, see [ Active geo-replication ](https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview).
 
-   ```
+   ```sql
    use master
    go
    grant select on sys.fn_dblog to [DMS_user]
@@ -600,7 +600,7 @@ You should create the dmsnosysadmin user account with the same SID on each repli
    grant execute on [awsdms].[rtm_dump_dblog] to [DMS_user]
    ```
 
-   ```
+   ```sql
    use msdb
    go
    grant select on msdb.dbo.backupset to {{self_managed_user}}
@@ -654,7 +654,7 @@ You should either configure the MS-REPLICATION distributor as local or in a way 
 
    1. Create the `[awsdms].[split_partition_list]` table valued function on the Master database:
 
-      ```
+      ```sql
       USE [master]
       GO
 
@@ -699,7 +699,7 @@ You should either configure the MS-REPLICATION distributor as local or in a way 
 
    1. Create the `[awsdms].[rtm_dump_dblog]` procedure on the Master database:
 
-      ```
+      ```sql
       USE [MASTER]
       GO
 
@@ -835,7 +835,7 @@ You should either configure the MS-REPLICATION distributor as local or in a way 
 
    1. Create a certificate on the Master Database:
 
-      ```
+      ```sql
       USE [master]
       GO
       CREATE CERTIFICATE [awsdms_rtm_dump_dblog_cert]
@@ -854,13 +854,13 @@ You should either configure the MS-REPLICATION distributor as local or in a way 
 
    1. Add the login to the sysadmin server role:
 
-      ```
+      ```sql
       ALTER SERVER ROLE [sysadmin] ADD MEMBER [awsdms_rtm_dump_dblog_login];
       ```
 
    1. Add the signature to the [master].[awsdms].[rtm\_dump\_dblog] procedure using the certificate:
 
-      ```
+      ```sql
       USE [master]
       GO
 
@@ -874,7 +874,7 @@ If you recreate the stored procedure, you need to add the signature again.
 
    1. Create the `[awsdms].[rtm_position_1st_timestamp]` procedure on the Master database:
 
-      ```
+      ```sql
       USE [master]
       IF object_id('[awsdms].[rtm_position_1st_timestamp]','P') is not null
         DROP PROCEDURE [awsdms].[rtm_position_1st_timestamp];
@@ -934,7 +934,7 @@ If you recreate the stored procedure, you need to add the signature again.
 
    1. Create a certificate on the Master database:
 
-      ```
+      ```sql
       USE [master]
       GO
       CREATE CERTIFICATE [awsdms_rtm_position_1st_timestamp_cert]
@@ -944,7 +944,7 @@ If you recreate the stored procedure, you need to add the signature again.
 
    1. Create a login from the certificate:
 
-      ```
+      ```sql
       USE [master]
       GO
       CREATE LOGIN awsdms_rtm_position_1st_timestamp_login FROM CERTIFICATE
@@ -959,7 +959,7 @@ If you recreate the stored procedure, you need to add the signature again.
 
    1. Add the signature to the `[master].[awsdms].[rtm_position_1st_timestamp]` procedure using the certificate:
 
-      ```
+      ```sql
       USE [master]
       GO
       ADD SIGNATURE
@@ -974,7 +974,7 @@ If you recreate the stored procedure, you need to add the signature again.
 **Note**
 You should create the dmsnosysadmin user account with the same SID on each replica. The following SQL query can help verify the dmsnosysadmin account SID value on each replica. For more information about creating a user, see [ CREATE USER (Transact-SQL) ](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-user-transact-sql) in the [Microsoft SQL server documentation](https://learn.microsoft.com/en-us/sql/). For more information about creating SQL user accounts for Azure SQL database, see [ Active geo-replication ](https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview).
 
-      ```
+      ```sql
       SELECT @@servername servername, name, sid, create_date, modify_date
         FROM sys.server_principals
         WHERE name = 'dmsnosysadmin';
@@ -982,7 +982,7 @@ You should create the dmsnosysadmin user account with the same SID on each repli
 
    1. Grant permissions on the master database on each replica:
 
-      ```
+      ```sql
       USE master
       GO
 
@@ -1001,7 +1001,7 @@ You should create the dmsnosysadmin user account with the same SID on each repli
 
    1. Grant permissions on the msdb database on each replica:
 
-      ```
+      ```sql
       USE msdb
       GO
       GRANT select on msdb.dbo.backupset TO {{self_managed_user}}

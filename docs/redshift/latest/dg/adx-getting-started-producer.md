@@ -67,7 +67,7 @@ With Amazon Redshift, you can share live data products with AWS Data Exchange as
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [

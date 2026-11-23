@@ -66,7 +66,7 @@ Enable CORS by returning the correct headers.
 #### PUT schema
 <a name="clusters-clusterarn-nodes-storage-request-body-put-example"></a>
 
-```
+```json
 {
   "targetBrokerEBSVolumeInfo": [
     {
@@ -88,7 +88,7 @@ Enable CORS by returning the correct headers.
 #### UpdateBrokerStorageResponse schema
 <a name="clusters-clusterarn-nodes-storage-response-body-updatebrokerstorageresponse-example"></a>
 
-```
+```json
 {
   "clusterArn": "string",
   "clusterOperationArn": "string"
@@ -98,7 +98,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="clusters-clusterarn-nodes-storage-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

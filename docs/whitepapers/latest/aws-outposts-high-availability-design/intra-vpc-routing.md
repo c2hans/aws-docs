@@ -8,4 +8,6 @@ AWS Outposts rack supports [intra-VPC communication across multiple Outposts](ht
 
 ![Diagram showing network paths for single VPC with multiple logical Outposts](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-49-single-vpc-multiple-outposts.png)
 
+*Network paths for single VPC with multiple logical Outposts*
+
 Outposts-to-Outposts traffic routing through the Region is blocked as this is an anti-pattern. Such traffic would incur egress charges in both directions and significantly higher latency than routing the traffic across the customer WAN.

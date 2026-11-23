@@ -70,7 +70,7 @@ For more information, see [Deploy components to devices](https://docs.aws.amazon
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
     def get_deployment(self, deployment_id: str) -> dict[str, Any]:
         """
         Gets the full details of a deployment.

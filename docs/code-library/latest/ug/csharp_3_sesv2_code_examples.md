@@ -29,7 +29,7 @@ The following code example shows how to use `CreateContact`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SESv2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Creates a contact and adds it to the specified contact list.
     /// </summary>
@@ -82,7 +82,7 @@ The following code example shows how to use `CreateContactList`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SESv2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Creates a contact list with the specified name.
     /// </summary>
@@ -133,7 +133,7 @@ The following code example shows how to use `CreateEmailIdentity`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SESv2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Creates an email identity (email address or domain) and starts the verification process.
     /// </summary>
@@ -198,7 +198,7 @@ The following code example shows how to use `CreateEmailTemplate`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SESv2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Creates an email template with the specified content.
     /// </summary>
@@ -258,7 +258,7 @@ The following code example shows how to use `DeleteContactList`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SESv2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Deletes a contact list and all contacts within it.
     /// </summary>
@@ -309,7 +309,7 @@ The following code example shows how to use `DeleteEmailIdentity`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SESv2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Deletes an email identity (email address or domain).
     /// </summary>
@@ -360,7 +360,7 @@ The following code example shows how to use `DeleteEmailTemplate`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SESv2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Deletes an email template.
     /// </summary>
@@ -406,7 +406,7 @@ The following code example shows how to use `ListContacts`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SESv2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Lists the contacts in the specified contact list.
     /// </summary>
@@ -452,7 +452,7 @@ The following code example shows how to use `SendEmail`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SESv2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Sends an email with the specified content and options.
     /// </summary>
@@ -565,7 +565,7 @@ The following code example shows how to run the Amazon SES API v2 newsletter sce
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SESv2#code-examples).
 Run the scenario.
 
-```
+```csharp
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using Amazon.SimpleEmailV2;
@@ -1010,7 +1010,7 @@ public static class NewsletterWorkflow
 ```
 Wrapper for service operations.
 
-```
+```csharp
 using System.Net;
 using Amazon.SimpleEmailV2;
 using Amazon.SimpleEmailV2.Model;

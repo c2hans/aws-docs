@@ -8,7 +8,7 @@ You can control access to your APIs by attaching a resource policy within your A
 
 The following is an example AWS SAM template for a private API. A private API must have a resource policy to deploy.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Resources:

@@ -395,7 +395,7 @@ The metadata file includes the following properties for each exported column or 
 
 The following is an example of the information that's included in the metadata file.
 
-```
+```json
 {
   "@context": [
     "http://www.w3.org/ns/csvw"

@@ -140,7 +140,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="apps-application-id-channels-email-request-body-put-example"></a>
 
-```
+```json
 {
   "Enabled": boolean,
   "Identity": "string",
@@ -157,7 +157,7 @@ Retrieves information about the communication requirements and options that are 
 #### EmailChannelResponse schema
 <a name="apps-application-id-channels-email-response-body-emailchannelresponse-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "IsArchived": boolean,
@@ -181,7 +181,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-channels-email-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

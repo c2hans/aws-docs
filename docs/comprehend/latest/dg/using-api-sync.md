@@ -330,7 +330,7 @@ aws comprehend detect-syntax \
 
 Amazon Comprehend responds with the following:
 
-```
+```json
 {
     "SyntaxTokens": [
         {
@@ -428,7 +428,7 @@ These examples show how to use the batch API operations using the AWS Command Li
 
 The third document in the JSON file (`"$$$$$$$$"`) will cause an error during batch processing. It is included so that the operations will include an [BatchItemError](https://docs.aws.amazon.com/comprehend/latest/APIReference/API_BatchItemError.html) in the response.
 
-```
+```json
 {
    "LanguageCode": "en",
    "TextList": [
@@ -536,7 +536,7 @@ The following sample program shows how to use the [BatchDetectEntities](https://
 
 The .NET example in this section uses the [AWS SDK for .NET](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/welcome.html). You can use the [AWS Toolkit for Visual Studio](https://docs.aws.amazon.com/AWSToolkitVS/latest/UserGuide/welcome.html) to develop AWS applications using .NET. It includes helpful templates and the AWS Explorer for deploying applications and managing services. For a .NET developer perspective of AWS, see the [AWS guide for .NET developers](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/welcome.html).
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using Amazon.Comprehend;

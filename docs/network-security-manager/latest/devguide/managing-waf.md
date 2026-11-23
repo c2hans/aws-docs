@@ -66,7 +66,7 @@ Before you use the delivery stream, test it to confirm that it has enough throug
 Amazon S3
 Create the bucket following the Amazon S3 guidance in the *AWS WAF Developer Guide*. You must also configure the bucket with the permissions that allow log delivery to write to it. The following bucket policy grants those permissions.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "AWSLogDeliveryForNetworkSecurityManager",

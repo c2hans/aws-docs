@@ -24,7 +24,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java  ]
 
-```
+```java
   public void writeRecords() {
     System.out.println("Writing records");
     // Specify repeated values for all records
@@ -80,7 +80,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java v2  ]
 
-```
+```java
   public void writeRecords() {
     System.out.println("Writing records");
     // Specify repeated values for all records
@@ -135,7 +135,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Go  ]
 
-```
+```go
 now := time.Now()
 currentTimeInSeconds := now.Unix()
 writeRecordsInput := &timestreamwrite.WriteRecordsInput{
@@ -200,7 +200,7 @@ if err != nil {
 ------
 #### [  Python  ]
 
-```
+```python
   def write_records(self):
     print("Writing records")
     current_time = self._current_milli_time()
@@ -256,7 +256,7 @@ if err != nil {
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/sample_apps/js).
 
-```
+```javascript
 async function writeRecords() {
   console.log("Writing records");
   const currentTime = Date.now().toString(); // Unix time in milliseconds
@@ -312,7 +312,7 @@ async function writeRecords() {
 ------
 #### [  .NET  ]
 
-```
+```cs
    public async Task WriteRecords()
    {
      Console.WriteLine("Writing records");
@@ -387,7 +387,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java  ]
 
-```
+```java
   public void writeRecordsWithCommonAttributes() {
     System.out.println("Writing records with extracting common attributes");
     // Specify repeated values for all records
@@ -443,7 +443,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java v2  ]
 
-```
+```java
   public void writeRecordsWithCommonAttributes() {
     System.out.println("Writing records with extracting common attributes");
     // Specify repeated values for all records
@@ -499,7 +499,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Go  ]
 
-```
+```go
 now = time.Now()
 currentTimeInSeconds = now.Unix()
 writeRecordsCommonAttributesInput := &timestreamwrite.WriteRecordsInput{
@@ -549,7 +549,7 @@ if err != nil {
 ------
 #### [  Python  ]
 
-```
+```python
   def write_records_with_common_attributes(self):
     print("Writing records extracting common attributes")
     current_time = self._current_milli_time()
@@ -605,7 +605,7 @@ if err != nil {
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/sample_apps/js).
 
-```
+```javascript
 async function writeRecordsWithCommonAttributes() {
   console.log("Writing records with common attributes");
   const currentTime = Date.now().toString(); // Unix time in milliseconds
@@ -662,7 +662,7 @@ async function writeRecordsWithCommonAttributes() {
 ------
 #### [  .NET  ]
 
-```
+```cs
   public async Task WriteRecordsWithCommonAttributes()
   {
     Console.WriteLine("Writing records with common attributes");
@@ -740,7 +740,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java  ]
 
-```
+```java
   public void writeRecordsWithUpsert() {
     System.out.println("Writing records with upsert");
     // Specify repeated values for all records
@@ -851,7 +851,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java v2  ]
 
-```
+```java
   public void writeRecordsWithUpsert() {
     System.out.println("Writing records with upsert");
     // Specify repeated values for all records
@@ -977,7 +977,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Go  ]
 
-```
+```go
 // Below code will ingest and upsert cpu_utilization and memory_utilization metric for a host on
 // region=us-east-1, az=az1, and hostname=host1
 fmt.Println("Ingesting records and set version as currentTimeInMills, hit enter to continue")
@@ -1093,7 +1093,7 @@ if err != nil {
 ------
 #### [  Python  ]
 
-```
+```python
   def write_records_with_upsert(self):
     print("Writing records with upsert")
     current_time = self._current_milli_time()
@@ -1186,7 +1186,7 @@ if err != nil {
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/sample_apps/js).
 
-```
+```javascript
 async function writeRecordsWithUpsert() {
   console.log("Writing records with upsert");
   const currentTime = Date.now().toString(); // Unix time in milliseconds
@@ -1333,7 +1333,7 @@ async function writeRecordsWithUpsert() {
 ------
 #### [  .NET  ]
 
-```
+```cs
   public async Task WriteRecordsWithUpsert()
   {
     Console.WriteLine("Writing records with upsert");
@@ -1487,7 +1487,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java  ]
 
-```
+```java
 package com.amazonaws.services.timestream;
 
 import static com.amazonaws.services.timestream.Main.DATABASE_NAME;
@@ -1639,7 +1639,7 @@ public class multimeasureAttributeExample {
 ------
 #### [  Java v2  ]
 
-```
+```java
 package com.amazonaws.services.timestream;
 
 import java.util.ArrayList;
@@ -1803,7 +1803,7 @@ public class multimeasureAttributeExample {
 ------
 #### [  Go  ]
 
-```
+```go
   now := time.Now()
   currentTimeInSeconds := now.Unix()
   writeRecordsInput := &timestreamwrite.WriteRecordsInput{
@@ -1858,7 +1858,7 @@ public class multimeasureAttributeExample {
 ------
 #### [  Python  ]
 
-```
+```python
 import time
 import boto3
 import psutil
@@ -1960,7 +1960,7 @@ if __name__ == '__main__':
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/sample_apps/js).
 
-```
+```javascript
   async function writeRecords() {
     console.log("Writing records");
     const currentTime = Date.now().toString(); // Unix time in milliseconds
@@ -2007,7 +2007,7 @@ The following snippet uses the AWS SDK for JavaScript V2 style. It is based on t
 ------
 #### [  .NET  ]
 
-```
+```cs
 using System;
 using System.IO;
 using System.Collections.Generic;
@@ -2194,7 +2194,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java  ]
 
-```
+```java
   try {
     WriteRecordsResult writeRecordsResult = amazonTimestreamWrite.writeRecords(writeRecordsRequest);
     System.out.println("WriteRecords Status: " + writeRecordsResult.getSdkHttpMetadata().getHttpStatusCode());
@@ -2213,7 +2213,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java v2  ]
 
-```
+```java
     try {
       WriteRecordsResponse writeRecordsResponse = timestreamWriteClient.writeRecords(writeRecordsRequest);
       System.out.println("writeRecordsWithCommonAttributes Status: " + writeRecordsResponse.sdkHttpResponse().statusCode());
@@ -2232,7 +2232,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Go  ]
 
-```
+```go
 _, err = writeSvc.WriteRecords(writeRecordsInput)
 
 if err != nil {
@@ -2246,7 +2246,7 @@ if err != nil {
 ------
 #### [  Python  ]
 
-```
+```python
 try:
   result = self.client.write_records(DatabaseName=Constant.DATABASE_NAME, TableName=Constant.TABLE_NAME, Records=records, CommonAttributes=common_attributes)
   print("WriteRecords Status: [%s]" % result['ResponseMetadata']['HTTPStatusCode'])
@@ -2264,7 +2264,7 @@ except Exception as err:
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/sample_apps/js).
 
-```
+```javascript
 await request.promise().then(
     (data) => {
       console.log("Write records successful");
@@ -2283,7 +2283,7 @@ await request.promise().then(
 ------
 #### [  .NET  ]
 
-```
+```cs
   try
   {
     var writeRecordsRequest = new WriteRecordsRequest

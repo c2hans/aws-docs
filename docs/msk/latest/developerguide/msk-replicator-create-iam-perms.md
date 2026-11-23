@@ -13,7 +13,7 @@ Start with the **base policy** below. If you also configure log delivery, append
 
 Replace the placeholders with your account ID, AWS Region, service execution role name, and source and target cluster ARNs. The action `kafka:TagResource` is only needed if you provide tags during creation.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

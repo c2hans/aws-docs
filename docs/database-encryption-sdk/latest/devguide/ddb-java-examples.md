@@ -32,7 +32,7 @@ The DynamoDB Enhanced Client does not support [searchable encryption](searchable
 **Step 1: Create the AWS KMS keyring**
 The following example uses `CreateAwsKmsMrkMultiKeyring` to create an AWS KMS keyring with a symmetric encryption KMS key. The `CreateAwsKmsMrkMultiKeyring` method ensures that the keyring will correctly handle both single-Region and multi-Region keys.
 
-```
+```java
 final MaterialProviders matProv = MaterialProviders.builder()
         .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
         .build();
@@ -47,14 +47,14 @@ The following example uses the annotated data class to create the `TableSchema`.
 This example assumes that the annotated data class and attribute actions were defined using the [SimpleClass.java](https://github.com/aws/aws-database-encryption-sdk-dynamodb//blob/main/Examples/runtimes/java/DynamoDbEncryption/src/main/java/software/amazon/cryptography/examples/enhanced/SimpleClass.java). For more guidance on annotating your attribute actions, see [Use an annotated data class](ddb-java-using.md#ddb-attribute-actions-annotated-data-class).
 The AWS Database Encryption SDK does not support annotations on [nested attributes](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-adv-features-nested.html).
 
-```
+```java
 final TableSchema<SimpleClass> schemaOnEncrypt = TableSchema.fromBean(SimpleClass.class);
 ```
 
 **Step 3: Define which attributes are excluded from the signatures**
 The following example assumes that all `DO_NOTHING` attributes share the distinct prefix "`:`", and uses the prefix to define the allowed unsigned attributes. The client assumes that any attribute name with the "`:`" prefix is excluded from the signatures. For more information, see [Allowed unsigned attributes](ddb-java-using.md#allowed-unauth).
 
-```
+```java
 final String unsignedAttrPrefix = ":";
 ```
 
@@ -63,7 +63,7 @@ The following example defines a `tableConfigs` Map that represents the encryptio
 This example specifies the DynamoDB table name as the [logical table name](ddb-java-using.md#logical-table-name). We strongly recommend specifying your DynamoDB table name as the logical table name when you first define your encryption configuration. For more information, see [Encryption configuration in the AWS Database Encryption SDK for DynamoDB](ddb-java-using.md#ddb-config-encrypt).
 To use [searchable encryption](searchable-encryption.md) or [signed beacons](configure.md#signed-beacons), you must also include the [`SearchConfig`](ddb-java-using.md#ddb-search-config) in your encryption configuration.
 
-```
+```java
 final Map<String, DynamoDbEnhancedTableEncryptionConfig> tableConfigs = new HashMap<>();
 tableConfigs.put(ddbTableName,
     DynamoDbEnhancedTableEncryptionConfig.builder()
@@ -77,7 +77,7 @@ tableConfigs.put(ddbTableName,
 **Step 5: Creates the `DynamoDbEncryptionInterceptor`**
 The following example creates a new `DynamoDbEncryptionInterceptor` with the `tableConfigs` from **Step 4**.
 
-```
+```java
 final DynamoDbEncryptionInterceptor interceptor =
     DynamoDbEnhancedClientEncryption.CreateDynamoDbEncryptionInterceptor(
         CreateDynamoDbEncryptionInterceptorInput.builder()
@@ -89,7 +89,7 @@ final DynamoDbEncryptionInterceptor interceptor =
 **Step 6: Create a new AWS SDK DynamoDB client**
 The following example creates a new AWS SDK DynamoDB client using the `interceptor` from **Step 5**.
 
-```
+```java
 final DynamoDbClient ddb = DynamoDbClient.builder()
         .overrideConfiguration(
                 ClientOverrideConfiguration.builder()
@@ -101,7 +101,7 @@ final DynamoDbClient ddb = DynamoDbClient.builder()
 **Step 7: Create the DynamoDB Enhanced Client and create a table**
 The following example creates the DynamoDB Enhanced Client using the AWS SDK DynamoDB client created in **Step 6** and creates a table using the annotated data class.
 
-```
+```java
 final DynamoDbEnhancedClient enhancedClient = DynamoDbEnhancedClient.builder()
         .dynamoDbClient(ddb)
         .build();
@@ -111,7 +111,7 @@ final DynamoDbTable<SimpleClass> table = enhancedClient.table(ddbTableName, tabl
 **Step 8: Encrypt and sign a table item**
 The following example puts an item into the DynamoDB table using the DynamoDB Enhanced Client. The item is encrypted and signed client-side before it is send to DynamoDB.
 
-```
+```java
 final SimpleClass item = new SimpleClass();
 item.setPartitionKey("EnhancedPutGetExample");
 item.setSortKey(0);
@@ -134,7 +134,7 @@ You can use any supported [keyring](keyrings.md), but we recommend using one of 
 **Step 1: Create the AWS KMS keyring**
 The following example uses `CreateAwsKmsMrkMultiKeyring` to create an AWS KMS keyring with a symmetric encryption KMS key. The `CreateAwsKmsMrkMultiKeyring` method ensures that the keyring will correctly handle both single-Region and multi-Region keys.
 
-```
+```java
 final MaterialProviders matProv = MaterialProviders.builder()
          .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
          .build();
@@ -148,7 +148,7 @@ final IKeyring kmsKeyring = matProv.CreateAwsKmsMrkMultiKeyring(keyringInput);
 The following example defines an `attributeActionsOnEncrypt` Map that represents sample [attribute actions](concepts.md#crypt-actions) for a table item.
 The following example does not define any attributes as `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`. If you specify any `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` attributes, then the partition and sort attributes must also be `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`.
 
-```
+```java
 final Map<String, CryptoAction> attributeActionsOnEncrypt = new HashMap<>();
 // The partition attribute must be SIGN_ONLY
 attributeActionsOnEncrypt.put("partition_key", CryptoAction.SIGN_ONLY);
@@ -162,7 +162,7 @@ attributeActionsOnEncrypt.put(":attribute3", CryptoAction.DO_NOTHING);
 **Step 3: Define which attributes are excluded from the signatures**
 The following example assumes that all `DO_NOTHING` attributes share the distinct prefix "`:`", and uses the prefix to define the allowed unsigned attributes. The client assumes that any attribute name with the "`:`" prefix is excluded from the signatures. For more information, see [Allowed unsigned attributes](ddb-java-using.md#allowed-unauth).
 
-```
+```java
 final String unsignedAttrPrefix = ":";
 ```
 
@@ -171,7 +171,7 @@ The following example defines a `tableConfigs` Map that represents the encryptio
 This example specifies the DynamoDB table name as the [logical table name](ddb-java-using.md#logical-table-name). We strongly recommend specifying your DynamoDB table name as the logical table name when you first define your encryption configuration. For more information, see [Encryption configuration in the AWS Database Encryption SDK for DynamoDB](ddb-java-using.md#ddb-config-encrypt).
 To use [searchable encryption](searchable-encryption.md) or [signed beacons](configure.md#signed-beacons), you must also include the [`SearchConfig`](ddb-java-using.md#ddb-search-config) in your encryption configuration.
 
-```
+```java
 final Map<String, DynamoDbTableEncryptionConfig> tableConfigs = new HashMap<>();
 final DynamoDbTableEncryptionConfig config = DynamoDbTableEncryptionConfig.builder()
         .logicalTableName(ddbTableName)
@@ -187,7 +187,7 @@ tableConfigs.put(ddbTableName, config);
 **Step 5: Create the `DynamoDbEncryptionInterceptor`**
 The following example creates the `DynamoDbEncryptionInterceptor` using the `tableConfigs` from **Step 4**.
 
-```
+```java
 DynamoDbEncryptionInterceptor interceptor = DynamoDbEncryptionInterceptor.builder()
         .config(DynamoDbTablesEncryptionConfig.builder()
                 .tableEncryptionConfigs(tableConfigs)
@@ -198,7 +198,7 @@ DynamoDbEncryptionInterceptor interceptor = DynamoDbEncryptionInterceptor.builde
 **Step 6: Create a new AWS SDK DynamoDB client**
 The following example creates a new AWS SDK DynamoDB client using the `interceptor` from **Step 5**.
 
-```
+```java
 final DynamoDbClient ddb = DynamoDbClient.builder()
         .overrideConfiguration(
                 ClientOverrideConfiguration.builder()
@@ -210,7 +210,7 @@ final DynamoDbClient ddb = DynamoDbClient.builder()
 **Step 7: Encrypt and sign a DynamoDB table item**
 The following example defines an `item` Map that represents a sample table item and puts the item in the DynamoDB table. The item is encrypted and signed client-side before it is sent to DynamoDB.
 
-```
+```java
 final HashMap<String, AttributeValue> item = new HashMap<>();
 item.put("partition_key", AttributeValue.builder().s("BasicPutGetExample").build());
 item.put("sort_key", AttributeValue.builder().n("0").build());
@@ -241,7 +241,7 @@ The lower-level `DynamoDbItemEncryptor` does not support [searchable encryption]
 **Step 1: Create the AWS KMS keyring**
 The following example uses `CreateAwsKmsMrkMultiKeyring` to create an AWS KMS keyring with a symmetric encryption KMS key. The `CreateAwsKmsMrkMultiKeyring` method ensures that the keyring will correctly handle both single-Region and multi-Region keys.
 
-```
+```java
 final MaterialProviders matProv = MaterialProviders.builder()
          .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
          .build();
@@ -255,7 +255,7 @@ final IKeyring kmsKeyring = matProv.CreateAwsKmsMrkMultiKeyring(keyringInput);
 The following example defines an `attributeActionsOnEncrypt` Map that represents sample [attribute actions](concepts.md#crypt-actions) for a table item.
 The following example does not define any attributes as `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`. If you specify any `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` attributes, then the partition and sort attributes must also be `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`.
 
-```
+```java
 final Map<String, CryptoAction> attributeActionsOnEncrypt = new HashMap<>();
 // The partition attribute must be SIGN_ONLY
 attributeActionsOnEncrypt.put("partition_key", CryptoAction.SIGN_ONLY);
@@ -269,7 +269,7 @@ attributeActionsOnEncrypt.put(":attribute3", CryptoAction.DO_NOTHING);
 **Step 3: Define which attributes are excluded from the signatures**
 The following example assumes that all `DO_NOTHING` attributes share the distinct prefix "`:`", and uses the prefix to define the allowed unsigned attributes. The client assumes that any attribute name with the "`:`" prefix is excluded from the signatures. For more information, see [Allowed unsigned attributes](ddb-java-using.md#allowed-unauth).
 
-```
+```java
 final String unsignedAttrPrefix = ":";
 ```
 
@@ -277,7 +277,7 @@ final String unsignedAttrPrefix = ":";
 The following example defines the configuration for the `DynamoDbItemEncryptor`.
 This example specifies the DynamoDB table name as the [logical table name](ddb-java-using.md#logical-table-name). We strongly recommend specifying your DynamoDB table name as the logical table name when you first define your encryption configuration. For more information, see [Encryption configuration in the AWS Database Encryption SDK for DynamoDB](ddb-java-using.md#ddb-config-encrypt).
 
-```
+```java
 final DynamoDbItemEncryptorConfig config = DynamoDbItemEncryptorConfig.builder()
         .logicalTableName(ddbTableName)
         .partitionKeyName("partition_key")
@@ -291,7 +291,7 @@ final DynamoDbItemEncryptorConfig config = DynamoDbItemEncryptorConfig.builder()
 **Step 5: Create the `DynamoDbItemEncryptor`**
 The following example creates a new `DynamoDbItemEncryptor` using the `config` from **Step 4**.
 
-```
+```java
 final DynamoDbItemEncryptor itemEncryptor = DynamoDbItemEncryptor.builder()
         .DynamoDbItemEncryptorConfig(config)
         .build();
@@ -300,7 +300,7 @@ final DynamoDbItemEncryptor itemEncryptor = DynamoDbItemEncryptor.builder()
 **Step 6: Directly encrypt and sign a table item**
 The following example directly encrypts and signs an item using the `DynamoDbItemEncryptor`. The `DynamoDbItemEncryptor` does not put the item in your DynamoDB table.
 
-```
+```java
 final Map<String, AttributeValue> originalItem = new HashMap<>();
 originalItem.put("partition_key", AttributeValue.builder().s("ItemEncryptDecryptExample").build());
 originalItem.put("sort_key", AttributeValue.builder().n("0").build());

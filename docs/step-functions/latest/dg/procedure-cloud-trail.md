@@ -105,7 +105,7 @@ An event represents a single request from any source and includes information ab
 
 The following example shows a CloudTrail **data event** that demonstrates `InvokeHTTPEndpoint`.
 
-```
+```JSON
 {
     "eventVersion": "1.09",
     "userIdentity": {
@@ -142,7 +142,7 @@ The following example shows a CloudTrail **data event** that demonstrates `Invok
 
 The following example shows a CloudTrail **management event** that demonstrates the `CreateStateMachine` operation.
 
-```
+```JSON
 {
     "eventVersion": "1.08",
     "userIdentity": {

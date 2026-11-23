@@ -78,7 +78,7 @@ The following CSV file selects the following five time series:
 
 1. Item\_id: 003, store\_location: Denver
 
-```
+```csv
 001, Seattle
 001, New York
 002, Seattle
@@ -127,7 +127,7 @@ Configure the following datatypes:
 
 The example below shows a schema for time series using a combination of “item\_id” and the “store\_location” dimension.
 
-```
+```json
 {
     "ExplainabilityName" : [unique_name],
     "ResourceArn" : [forecast_arn],
@@ -209,7 +209,7 @@ Configure the following datatypes:
 
 The example below shows a schema for time series using a combination of “item\_id” and the “store\_location” dimension.
 
-```
+```json
 {
     "ExplainabilityName" : [unique_name],
     "ResourceArn" : [forecast_arn],
@@ -295,7 +295,7 @@ Using the [CreateExplainabilityExport](API_CreateExplainabilityExport.md) operat
 
 For example:
 
-```
+```json
 {
    "Destination": {
       "S3Config": {

@@ -27,7 +27,7 @@ The IAM policy must grant access to both generator and evaluator models.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

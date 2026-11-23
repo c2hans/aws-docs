@@ -23,7 +23,7 @@ See the following architecture diagrams for illustrations of some of these scena
 
 The configuration for this architecture requires the following settings:
 
-```
+```ini
 [vpc public]
 vpc_id = vpc-{{xxxxxx}}
 master_subnet_id = subnet-{{<public>}}
@@ -41,7 +41,7 @@ The configuration to create a new private subnet for compute instances requires 
 
  *Note that all values are only provided as examples.*
 
-```
+```ini
 [vpc public-private-new]
 vpc_id = vpc-{{xxxxxx}}
 master_subnet_id = subnet-{{<public>}}
@@ -50,7 +50,7 @@ compute_subnet_cidr = 10.0.1.0/24
 
 The configuration to use an existing private network requires the following settings:
 
-```
+```ini
 [vpc public-private-existing]
 vpc_id = vpc-{{xxxxxx}}
 master_subnet_id = subnet-{{<public>}}
@@ -66,7 +66,7 @@ Both of these configurations require a [NAT gateway](https://docs.aws.amazon.com
 
 The configuration for this architecture requires the following settings:
 
-```
+```ini
 [cluster private-proxy]
 proxy_server = http://proxy.corp.net:8080
 

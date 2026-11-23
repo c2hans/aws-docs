@@ -78,7 +78,7 @@ Pre-authorization is ongoing. When a new group of users starts using the knowled
 
 Document-level access controls use the authentication type `OAUTH2_WITH_JWT_BEARER`. Its secret contains the three Client Credentials fields plus three more. Store it in an AWS Secrets Manager secret in the same AWS Region as your knowledge base:
 
-```
+```json
 {
     "clientId": "{{your-consumer-key}}",
     "clientSecret": "{{your-consumer-secret}}",

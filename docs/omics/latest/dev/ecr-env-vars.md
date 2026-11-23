@@ -36,7 +36,7 @@ This variable is the task UUID of the current task.
 
 The following example shows sample values for each environment variable:
 
-```
+```bash
 AWS Region: {{us-east-1}}
 Workflow Run: arn:aws:omics:{{us-east-1}}:111122223333:run/{{6470304}}
 Workflow Run ID: {{6470304}}

@@ -20,6 +20,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
 ![Prebid Server implementation on AWS, part 1, showing the auction orchestration layer on EKS with Karpenter, per-adapter isolation, and bid response caching](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-09-prebid-server-1.jpg)
 
+*Prebid Server implementation on AWS, part 1*
+
  The architecture consists of the following components:
 
 1.  **Application Load Balancer**: Distributes incoming publisher ad requests to Prebid Server pods. Configured with auction-engine health checks (validates that the auction engine is responsive, not just that the container is running). Cross-zone load balancing enabled for even distribution across Availability Zones.
@@ -40,6 +42,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
 ![Prebid Server implementation on AWS, part 2, showing the yield analytics streaming path from bid events through Kinesis and Flink to DynamoDB floor prices and S3 historical storage](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-09-prebid-server-2.jpg)
 
+*Prebid Server implementation on AWS, part 2*
+
 ## Configuration notes
 <a name="s09-configuration-notes"></a>
 
@@ -47,6 +51,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 <a name="adapter-management"></a><a name="scenario-09-fig3"></a>
 
 ![Prebid Server implementation on AWS, part 3, showing per-adapter circuit breakers, bounded HTTP connection pools, and per-adapter CloudWatch dashboards for timeout and eCPM monitoring](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-09-prebid-server-3.jpg)
+
+*Prebid Server implementation on AWS, part 3*
 
  Configure per-adapter circuit breakers with 50% failure rate threshold, 30-second sliding window, and 15-second half-open probe interval. Build per-adapter CloudWatch dashboards tracking bid response rate, win rate, identity-signal match rate (per UID2/LiveRamp/ID5 framework), and eCPM contribution. Disable adapters where p99 latency consistently exceeds 90% of the timeout budget or marginal revenue falls below 1% of total auction revenue (typically cap active adapters at 10–12).
 

@@ -10,9 +10,13 @@ To build RESTful APIs, use REST APIs from Amazon API Gateway. REST APIs are inte
 
 ![Diagram showing Edge-optimized API Gateway deployment](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/edge-optimized-api-gateway-deployment.png)
 
+*Figure 22: Edge-optimized API Gateway deployment*
+
 The API Gateway Regional endpoint doesn’t provide a CloudFront distribution, and enables HTTP2 by default, which helps reduce overall latency when requests originate from the same Region. Regional endpoints also allow you to associate your own Amazon CloudFront distribution or an existing CDN.
 
 ![Diagram showing Regional Endpoint API Gateway deployment](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/regional-endpoint-api-gateway-deployment.png)
+
+*Figure 23: Regional Endpoint API Gateway deployment*
 
  This table can help you decide whether to deploy an Edge-optimized API or Regional API Endpoint:
 

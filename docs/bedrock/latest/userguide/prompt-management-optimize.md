@@ -94,7 +94,7 @@ The response stream returns the following events:
 
 Run the following code sample to optimize a prompt:
 
-```
+```python
 import boto3
 
 # Set values here

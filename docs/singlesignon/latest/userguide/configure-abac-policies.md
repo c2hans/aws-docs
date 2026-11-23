@@ -16,7 +16,7 @@ You can use access control attributes in your permission sets (or IAM roles when
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

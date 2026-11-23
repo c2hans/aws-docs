@@ -22,7 +22,7 @@ The basic steps are as follows:
 
 1. To use your AWS PrivateLink endpoint, modify the `emr.wal.client.endpoint` configuration when you create your [Amazon EMR WAL enabled cluster](emr-hbase-wal-enabling.md) as shown in the following example:
 
-   ```
+   ```json
    [
        {
            "Classification": "hbase-site",

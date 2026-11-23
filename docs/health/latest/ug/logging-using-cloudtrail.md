@@ -43,7 +43,7 @@ For more information, see [Receiving CloudTrail Log Files from Multiple Regions]
 
 The following example shows a CloudTrail log entry that demonstrates the [DescribeEntityAggregates](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeEntityAggregates.html) operation.
 
-```
+```json
 {
    "Records": [
    {

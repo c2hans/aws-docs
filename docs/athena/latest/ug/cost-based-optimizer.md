@@ -62,4 +62,6 @@ In contrast, Hive tables in the Glue Data Catalog do not have a similar table pr
 
 For additional information, see the following resource.
 
-[![AWS Videos](https://img.youtube.com/vi/zUHEXJdHUxs?si=rMAhJj3I5IlhN-1R/0.jpg)](https://www.youtube.com/watch?v=zUHEXJdHUxs?si=rMAhJj3I5IlhN-1R)
+[![AWS Videos](https://img.youtube.com/vi/zUHEXJdHUxs/0.jpg)](https://www.youtube.com/watch?v=zUHEXJdHUxs)
+
+Enhance query performance using AWS Glue Data Catalog statistics (AWS YouTube channel)

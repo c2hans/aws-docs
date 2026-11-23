@@ -14,7 +14,7 @@ The following code examples show how to use `DeleteTrail`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudtrail#code-examples).
 
-```
+```cpp
 // Routine which deletes an AWS CloudTrail trail.
 /*!
   \param trailName: The name of the CloudTrail trail.
@@ -63,7 +63,7 @@ For more information, see [Managing trails with the AWS CLI](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: Deletes the specified trail. You will be prompted for confirmation before the command is run. To suppress confirmation, add the -Force switch parameter.**
 
-```
+```powershell
 Remove-CTTrail -Name "awscloudtrail-example"
 ```
 +  For API details, see [DeleteTrail](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -71,7 +71,7 @@ Remove-CTTrail -Name "awscloudtrail-example"
 **Tools for PowerShell V5**
 **Example 1: Deletes the specified trail. You will be prompted for confirmation before the command is run. To suppress confirmation, add the -Force switch parameter.**
 
-```
+```powershell
 Remove-CTTrail -Name "awscloudtrail-example"
 ```
 +  For API details, see [DeleteTrail](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -82,7 +82,7 @@ Remove-CTTrail -Name "awscloudtrail-example"
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudtrail#code-examples).
 
-```
+```ruby
   client.delete_trail({
                         name: trail_name # required
                       })

@@ -75,7 +75,7 @@ Enable CORS by returning correct headers
 #### DescribeTopicPartitionsResponse schema
 <a name="clusters-clusterarn-topics-topicname-partitions-response-body-describetopicpartitionsresponse-example"></a>
 
-```
+```json
 {
   "partitions": [
     {
@@ -96,7 +96,7 @@ Enable CORS by returning correct headers
 #### Error schema
 <a name="clusters-clusterarn-topics-topicname-partitions-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

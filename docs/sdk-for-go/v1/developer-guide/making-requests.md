@@ -17,7 +17,7 @@ For the list of service clients, including their methods and parameters, see the
 
 To construct a service client instance, use the [NewSession()](https://docs.aws.amazon.com/sdk-for-go/api/aws/session/#NewSession) function. The following example creates an Amazon S3 service client.
 
-```
+```go
 sess, err := session.NewSession()
 if err != nil {
     fmt.Println("Error creating session ", err)
@@ -30,7 +30,7 @@ After you have a service client instance, you can use it to call service operati
 
 When you create a service client, you can pass in custom configurations so that you don’t need to create a session for each configuration. The SDK merges the two configurations, overriding session values with your custom configuration. For example, in the following snippet, the Amazon S3 client uses the `mySession` session but overrides the `Region` field with a custom value (`us-west-2`):
 
-```
+```go
 svc := s3.New(mySession, aws.NewConfig().WithRegion("us-west-2"))
 ```
 
@@ -41,7 +41,7 @@ You can tag service resources, such as Amazon S3 buckets, so that you can determ
 
 The following example shows how to tag the Amazon S3 bucket `amzn-s3-demo-bucket` with `Cost Center` tag with the value `123456` and `Stack` tag with the value `MyTestStack`.
 
-```
+```go
 package main
 
 import (
@@ -138,7 +138,7 @@ You can direct the AWS SDK for Go to display the HTTP request and response it se
 
 The following example uses the DynamoDB **ListTables** operation to illustrate how to add a custom header to a service call.
 
-```
+```go
 package main
 
 import (
@@ -180,7 +180,7 @@ func main() {
 
 If you run this program, the output should be similar to the following, where **ACCESS-KEY** is the access key of the user and **TABLE-1**, through **TABLE-N** are the names of the tables.
 
-```
+```go
 2017/10/25 11:10:57 DEBUG: Request dynamodb/ListTables Details:
 ---[ REQUEST POST-SIGN ]-----------------------------
 POST / HTTP/1.1
@@ -223,7 +223,7 @@ Calling the operation will sync as the request is built, signed, sent, and the r
 
 For example, to call the Amazon S3 GET Object API, use the Amazon S3 service client instance and call its [GetObject](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.GetObject) method:
 
-```
+```go
 result, err := s3Svc.GetObject(&s3.GetObjectInput{...})
 // result is a *s3.GetObjectOutput struct pointer
 // err is a error which can be cast to awserr.Error.
@@ -234,7 +234,7 @@ result, err := s3Svc.GetObject(&s3.GetObjectInput{...})
 
 When calling an operation on a service, you pass in input parameters as option values, similar to passing in a configuration. For example, to retrieve an object, you must specify a bucket and the object’s key by passing in the following parameters to the `GetObject` method:
 
-```
+```go
 svc := s3.New(session.New())
 svc.GetObject(&s3.GetObjectInput{
     Bucket: aws.String("amzn-s3-demo-bucket"),
@@ -255,7 +255,7 @@ Calling the request form can be useful when you want to construct a number of pr
 
 The following example calls the request form of the `GetObject` method. The [Send](https://docs.aws.amazon.com/sdk-for-go/api/aws/request/#Request.Send) method signs the request before sending it.
 
-```
+```go
 req, result := s3Svc.GetObjectRequest(&s3.GetObjectInput{...})
 // result is a *s3.GetObjectOutput struct pointer, not populated until req.Send() returns
 // req is a *aws.Request struct pointer. Used to Send request.
@@ -271,7 +271,7 @@ if err := req.Send(); err != nil {
 
 Some API operations return a response struct that contain a `Body` field that is an `io.ReadCloser`. If you’re making requests with these operations, always be sure to call `Close` on the field.
 
-```
+```go
 resp, err := s3svc.GetObject(&s3.GetObjectInput{...})
 if err != nil {
     // handle error
@@ -294,7 +294,7 @@ You can create goroutines that concurrently use the same service client to send 
 
 In the following example, an Amazon S3 service client is used in multiple goroutines. The example concurrently outputs all objects in `amzn-s3-demo-bucket1`, `amzn-s3-demo-bucket2`, and `amzn-s3-demo-bucket3`, which are all in the same region. To make sure all objects from the same bucket are printed together, the example uses a channel.
 
-```
+```go
 sess, err := session.NewSession()
 if err != nil {
     fmt.Println("Error creating session ", err)
@@ -346,7 +346,7 @@ Pagination methods iterate over a list operation until the method retrieves the 
 
 The following example uses the `ListObjectPages` pagination method to list up to three pages of object keys from the `ListObject` operation. Each page consists of up to 10 keys, which is defined by the `MaxKeys` field.
 
-```
+```go
 svc, err := s3.NewSession(sess)
 if err != nil {
     fmt.Println("Error creating session ", err)
@@ -372,7 +372,7 @@ The SDK provides waiters that continuously check for completion of a job. For ex
 
 The following example uses a waiter that waits until specific instances have stopped.
 
-```
+```go
 sess, err := session.NewSession(aws.NewConfig().WithRegion("us-west-2"))
 if err != nil {
     fmt.Println("Error creating session ", err)

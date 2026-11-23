@@ -81,7 +81,7 @@ The following example policy grants DataSync the minimum permissions to read and
 **Note**
 The value for `aws:ResourceAccount` should be the account ID that owns the Amazon S3 bucket specified in the policy.
 
-```
+```JSON
 {
  "Version": "2012-10-17",
  "Statement": [

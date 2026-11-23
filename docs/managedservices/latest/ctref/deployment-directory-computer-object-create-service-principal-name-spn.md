@@ -141,13 +141,13 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-directory-computer-object-create-service-principal-name-spn-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="deployment-directory-computer-object-create-service-principal-name-spn-ex-max"></a>
 
-```
+```json
 Example not available.
 ```

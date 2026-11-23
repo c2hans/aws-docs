@@ -48,7 +48,7 @@ Add JupyterHub users using PAM or LDAP. For more information, see [Using PAM aut
 
 You connected to the master node to create users. While still connected to the master node, copy the contents below and save it to a script file. The script creates HDFS home directories for each JupyterHub user on the master node. The script assumes you are using the default administrator user ID, {{jovyan}}.
 
-```
+```bash
 #!/bin/bash
 
 CURL="curl --silent -k"

@@ -29,7 +29,7 @@ The following code example shows how to use `AttachLoadBalancerTargetGroups`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
     const client = new AutoScalingClient({});
     await client.send(
       new AttachLoadBalancerTargetGroupsCommand({
@@ -58,7 +58,7 @@ The following code example shows how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```javascript
 #!/usr/bin/env node
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -113,7 +113,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 ```
 Create steps to deploy all of the resources.
 
-```
+```javascript
 import { join } from "node:path";
 import { readFileSync, writeFileSync } from "node:fs";
 import axios from "axios";
@@ -725,7 +725,7 @@ export const deploySteps = [
 ```
 Create steps to run the demo.
 
-```
+```javascript
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -1186,7 +1186,7 @@ async function createSsmOnlyInstanceProfile() {
 ```
 Create steps to destroy all of the resources.
 
-```
+```javascript
 import { unlinkSync } from "node:fs";
 
 import { DynamoDBClient, DeleteTableCommand } from "@aws-sdk/client-dynamodb";

@@ -227,7 +227,7 @@ The `glue:GetCatalog` and `glue:GetCatalogs` permissions have the condition `glu
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : {

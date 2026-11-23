@@ -27,13 +27,13 @@ The following attributes are mapped by default when you create a profile. The de
 
  To view your current mappings associated with a profile, using the following command:
 
-```
+```bash
 $ aws rolesanywhere get-profile --profile-id {{PROFILE_ID}}
 ```
 
  Default mapping rules in a JSON format:
 
-```
+```json
 "attributeMappings": [
   {
     "mappingRules": [

@@ -13,7 +13,7 @@ The following examples use Amazon Simple Storage Service. However, the concepts 
 
  The following code example shows the simplest example that uses the [`try_collect()`](https://docs.rs/aws-smithy-async/latest/aws_smithy_async/future/pagination_stream/struct.PaginationStream.html#method.try_collect) method to collect all paginated results into a `Vec`:
 
-```
+```rust
 let config = aws_config::defaults(BehaviorVersion::latest())
     .load()
     .await;
@@ -33,7 +33,7 @@ let all_objects = s3.list_objects_v2()
 
 Sometimes, you want to have more control over paging and not pull everything into memory all at once. The following example iterates over objects in an Amazon S3 bucket until there are no more.
 
-```
+```rust
 let config = aws_config::defaults(BehaviorVersion::latest())
     .load()
     .await;

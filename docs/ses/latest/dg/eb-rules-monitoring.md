@@ -85,7 +85,7 @@ Rule-set logs contain the message, rule, selected recipient, and action details 
 
 Query by `message_id`, then read the records in `rule_index` and `action_index` order. Every action record uses the common fields shown in the following example.
 
-```
+```json
 {
   "resource_arn": "arn:aws:ses:us-east-1:123456789012:mailmanager-rule-set/rs-0123456789abcdef01234567",
   "event_timestamp": 1763150400000,
@@ -107,7 +107,7 @@ The `action_metadata` object changes for each action. Each example assumes that 
 
 [Add header](eb-rules-actions.md#eb-rules-actions-add-header)
 
-```
+```json
 {
   "action_name": "ADD_HEADER",
   "action_index": 1,
@@ -117,7 +117,7 @@ The `action_metadata` object changes for each action. Each example assumes that 
 
 [Replace recipient](eb-rules-actions.md#eb-rules-actions-replace-recipient)
 
-```
+```json
 {
   "action_name": "REPLACE_RECIPIENT",
   "action_index": 1,
@@ -127,7 +127,7 @@ The `action_metadata` object changes for each action. Each example assumes that 
 
 [Write to S3](eb-rules-actions.md#eb-rules-actions-write-to-s3)
 
-```
+```json
 {
   "action_name": "WRITE_TO_S3",
   "action_index": 1,
@@ -137,7 +137,7 @@ The `action_metadata` object changes for each action. Each example assumes that 
 
 [Archive](eb-rules-actions.md#eb-rules-actions-archive)
 
-```
+```json
 {
   "action_name": "ARCHIVE",
   "action_index": 1,
@@ -147,7 +147,7 @@ The `action_metadata` object changes for each action. Each example assumes that 
 
 [Publish to SNS](eb-rules-actions.md#eb-rules-actions-publish-to-sns)
 
-```
+```json
 {
   "action_name": "PUBLISH_TO_SNS",
   "action_index": 1,
@@ -157,7 +157,7 @@ The `action_metadata` object changes for each action. Each example assumes that 
 
 [Invoke Lambda function](eb-rules-actions.md#eb-rules-actions-invoke-lambda)
 
-```
+```json
 {
   "action_name": "INVOKE_LAMBDA",
   "action_index": 1,
@@ -167,7 +167,7 @@ The `action_metadata` object changes for each action. Each example assumes that 
 
 [Deliver to Q Business](eb-rules-actions.md#eb-rules-actions-deliver-to-q-business)
 
-```
+```json
 {
   "action_name": "DELIVER_TO_AMAZON_Q_BUSINESS",
   "action_index": 1,
@@ -178,7 +178,7 @@ The `action_metadata` object changes for each action. Each example assumes that 
 [SMTP relay](eb-rules-actions.md#eb-rules-actions-relay)
 An SMTP relay action first records that delivery is in progress.
 
-```
+```json
 {
   "action_name": "RELAY",
   "action_index": 1,
@@ -187,7 +187,7 @@ An SMTP relay action first records that delivery is in progress.
 ```
 After every selected recipient has a final outcome, a successful relay records the following object.
 
-```
+```json
 {
   "action_name": "RELAY",
   "action_index": 1,
@@ -197,7 +197,7 @@ After every selected recipient has a final outcome, a successful relay records t
 
 [Send to internet](eb-rules-actions.md#eb-rules-actions-send)
 
-```
+```json
 {
   "action_name": "SEND",
   "action_index": 1,
@@ -207,7 +207,7 @@ After every selected recipient has a final outcome, a successful relay records t
 
 [Deliver to WorkMail mailbox](eb-rules-actions.md#eb-rules-actions-deliver-to-mailbox)
 
-```
+```json
 {
   "action_name": "DELIVER_TO_MAILBOX",
   "action_index": 1,
@@ -217,7 +217,7 @@ After every selected recipient has a final outcome, a successful relay records t
 
 [Drop](eb-rules-actions.md#eb-rules-actions-drop)
 
-```
+```json
 {
   "action_name": "DROP",
   "action_index": 1,
@@ -227,7 +227,7 @@ After every selected recipient has a final outcome, a successful relay records t
 
 [Bounce](eb-rules-actions.md#eb-rules-actions-bounce)
 
-```
+```json
 {
   "action_name": "BOUNCE",
   "action_index": 1,
@@ -237,7 +237,7 @@ After every selected recipient has a final outcome, a successful relay records t
 
 A failed action uses `FAILURE` and can include `action_failure`. For example:
 
-```
+```json
 {
   "action_name": "WRITE_TO_S3",
   "action_index": 1,

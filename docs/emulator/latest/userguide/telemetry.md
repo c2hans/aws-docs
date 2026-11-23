@@ -58,7 +58,7 @@ The emulator keeps the installation ID and the queue in `~/.aws/emulator/telemet
 
 Start the emulator with the `--telemetry` option (short form `-t`) set to `off`. This setting applies only to that emulator process.
 
-```
+```bash
 aws-emulator --telemetry off
 ```
 
@@ -73,14 +73,14 @@ Set `EMULATOR_TELEMETRY` to `off` before you start the emulator. This setting ap
 
  **Bash**
 
-```
+```bash
 export EMULATOR_TELEMETRY=off
 aws-emulator
 ```
 
  **Docker** – Pass the variable to the container with the `-e` option. On Linux, also add `--user "$(id -u):$(id -g)"` after `docker run`, as described in [Getting started with Docker](getting-started-docker.md).
 
-```
+```bash
 docker run --rm --name aws-emulator -e EMULATOR_TELEMETRY=off \
   --memory=2g --memory-swap=2g \
   -p 127.0.0.1:9297:9297 \
@@ -90,7 +90,7 @@ docker run --rm --name aws-emulator -e EMULATOR_TELEMETRY=off \
 
  **Docker in Windows PowerShell**
 
-```
+```powershell
 docker run --rm --name aws-emulator -e EMULATOR_TELEMETRY=off `
   --memory=2g --memory-swap=2g `
   -p 127.0.0.1:9297:9297 `
@@ -105,7 +105,7 @@ Setting the variable in your own shell doesn’t turn telemetry off inside a con
 
 To turn telemetry off for every run on a machine, add these lines to the emulator settings file, `config.toml`. The file is `~/.aws/emulator/config.toml` on Linux and macOS, and `%USERPROFILE%\.aws\emulator\config.toml` on Windows. To use a different file, set the `EMULATOR_CONFIG` environment variable to its path.
 
-```
+```toml
 [telemetry]
 enabled = false
 ```
@@ -115,7 +115,7 @@ enabled = false
 
 In embedded mode, turn off telemetry in the options that you pass when you create the emulator.
 
-```
+```rust
 use aws_emulator_embedded::{AwsEmulatorEmbedded, EmbeddedOptions, Telemetry};
 
 fn main() {

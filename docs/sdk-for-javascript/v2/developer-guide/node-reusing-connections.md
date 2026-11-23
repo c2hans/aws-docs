@@ -14,7 +14,7 @@ The easiest way to configure SDK for JavaScript to reuse TCP connections is to s
 
 Alternatively, you can set the `keepAlive` property of an HTTP or HTTPS agent set to `true`, as shown in the following example.
 
-```
+```javascript
 const AWS = require('aws-sdk');
 // http or https
 const http = require('http');
@@ -33,7 +33,7 @@ AWS.config.update({
 
 The following example shows how to set `keepAlive` for just a DynamoDB client:
 
-```
+```javascript
 const AWS = require('aws-sdk')
 // http or https
 const https = require('https');

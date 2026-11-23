@@ -23,13 +23,13 @@ To access the Flink Web Dashboard for a running Flink application on Kubernetes:
    flink-kubernetes-operator   1/1       1            1           21h
    ```
 
-   ```
+   ```bash,sh,zsh
    kubectl port-forward deployments/{{deployment-name}} 8081 -n {{namespace}}
    ```
 
 1. If you want to use a different port locally, use the {{local-port}}:8081 parameter.
 
-   ```
+   ```bash,sh,zsh
    kubectl port-forward -n flink deployments/basic-example {{8080}}:8081
    ```
 

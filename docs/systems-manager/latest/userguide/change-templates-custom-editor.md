@@ -31,7 +31,7 @@ For more information about approvals for change templates, see [About approvals 
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    description: >-
      This change template demonstrates the feature set available for creating
      change templates for Change Manager. This template starts a Runbook workflow
@@ -108,7 +108,7 @@ For more information about approvals for change templates, see [About approvals 
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
       "description": "This change template demonstrates the feature set available for creating
      change templates for Change Manager. This template starts a Runbook workflow

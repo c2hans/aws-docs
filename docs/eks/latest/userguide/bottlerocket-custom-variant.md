@@ -94,14 +94,14 @@ Launch an EC2 instance — for example, a `c7i.8xlarge` (32 vCPU, 64 GiB memory)
 
 Connect to the instance using AWS Systems Manager (SSM) Session Manager:
 
-```
+```bash
 aws ssm start-session --target <instance-id>
 cd ~
 ```
 
 Install the required operating system packages:
 
-```
+```bash
 apt-get update
 apt-get install -y build-essential openssl libssl-dev pkg-config lz4 \
                    git ca-certificates curl gnupg
@@ -112,7 +112,7 @@ The official `BUILDING.md` references `liblz4-tool`. On recent Ubuntu versions, 
 
 Install Docker using the following commands:
 
-```
+```bash
 install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
   -o /etc/apt/keyrings/docker.asc
@@ -127,7 +127,7 @@ systemctl enable --now docker
 
 Install Rust and cargo-make using the following commands:
 
-```
+```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 . "$HOME/.cargo/env"
 cargo install cargo-make
@@ -138,7 +138,7 @@ cargo install cargo-make
 
 Clone the [Bottlerocket repository](https://github.com/bottlerocket-os/bottlerocket) on the GitHub website and navigate into the directory:
 
-```
+```bash
 cd ~/bottlerocket
 ```
 
@@ -149,7 +149,7 @@ To create a reproducible build, check out a tagged release (for example, `git ch
 
 Open `Twoliter.toml` and confirm the kit versions. For R595 support, you need `bottlerocket-kernel-kit` version 6.2.2 or later:
 
-```
+```toml
 [[kit]]
 name = "bottlerocket-kernel-kit"
 version = "6.2.2"
@@ -158,7 +158,7 @@ vendor = "bottlerocket"
 
 If the version is older, update it and regenerate the lock:
 
-```
+```bash
 ./tools/twoliter/twoliter update
 ```
 
@@ -167,7 +167,7 @@ If the version is older, update it and regenerate the lock:
 
 Twoliter sets `CARGO_HOME` to `~/bottlerocket/.cargo`, which prevents the inner Cargo process from finding your globally installed cargo-make. Create a symlink:
 
-```
+```bash
 mkdir -p ~/bottlerocket/.cargo/bin
 ln -sf /root/.cargo/bin/cargo-make ~/bottlerocket/.cargo/bin/cargo-make
 ```
@@ -201,7 +201,7 @@ Each kmod package ships subpackages (`-tesla`, `-open-gpu`, `-grid`, `-fabricman
 
 Copy the existing variant. Use `cp -R` to preserve symlinks:
 
-```
+```bash
 cp -R variants/aws-k8s-1.36-nvidia variants/aws-k8s-1.36-nvidia-595
 cp -R sources/settings-defaults/aws-k8s-1.36-nvidia \
       sources/settings-defaults/aws-k8s-1.36-nvidia-595
@@ -209,7 +209,7 @@ cp -R sources/settings-defaults/aws-k8s-1.36-nvidia \
 
 Edit `variants/aws-k8s-1.36-nvidia-595/Cargo.toml`:
 
-```
+```diff
 - name = "aws-k8s-1_36-nvidia"
 + name = "aws-k8s-1_36-nvidia-595"
 
@@ -219,7 +219,7 @@ Edit `variants/aws-k8s-1.36-nvidia-595/Cargo.toml`:
 
 Edit `sources/settings-defaults/aws-k8s-1.36-nvidia-595/Cargo.toml`:
 
-```
+```diff
 - name = "settings-defaults-aws-k8s-1_36-nvidia"
 + name = "settings-defaults-aws-k8s-1_36-nvidia-595"
 ```
@@ -231,7 +231,7 @@ Register the new variant in five files:
 
  **1. `Cargo.toml` ** — add the workspace member:
 
-```
+```diff
  "variants/aws-k8s-1.36-nvidia",
 +    "variants/aws-k8s-1.36-nvidia-595",
  "variants/aws-k8s-1.36-nvidia-fips",
@@ -239,14 +239,14 @@ Register the new variant in five files:
 
  **2. `sources/Cargo.toml` ** — add the settings-defaults member:
 
-```
+```diff
  "settings-defaults/aws-k8s-1.36-nvidia",
 +    "settings-defaults/aws-k8s-1.36-nvidia-595",
 ```
 
  **3. `packages/settings-defaults/settings-defaults.spec` ** — add a `%package` block, entries in both build loops, and a `%files` section:
 
-```
+```spec
 %package aws-k8s-1.36-nvidia-595
 Summary: Settings defaults for the aws-k8s 1.36 nvidia-595 variant
 Requires: %{_cross_os}variant(aws-k8s-1.36-nvidia-595)
@@ -260,7 +260,7 @@ Conflicts: %{_cross_os}settings-defaults(any)
 
 Add to both `for defaults in` loops:
 
-```
+```diff
     aws-k8s-1.36-nvidia \
 +   aws-k8s-1.36-nvidia-595 \
     metal-dev \
@@ -268,7 +268,7 @@ Add to both `for defaults in` loops:
 
 Add the `%files` section:
 
-```
+```spec
 %files aws-k8s-1.36-nvidia-595
 %{_cross_defaultsdir}/aws-k8s-1.36-nvidia-595.toml
 %{_cross_tmpfilesdir}/storewolf-defaults-aws-k8s-1.36-nvidia-595.conf
@@ -276,7 +276,7 @@ Add the `%files` section:
 
  **4. `packages/settings-plugins/settings-plugins.spec` ** — add a `Provides:` line under `%package aws-k8s-nvidia`:
 
-```
+```diff
  Provides: %{_cross_os}settings-plugin(aws-k8s-1.36-nvidia)
 +Provides: %{_cross_os}settings-plugin(aws-k8s-1.36-nvidia-595)
  Conflicts: %{_cross_os}settings-plugin(any)
@@ -287,7 +287,7 @@ Add the `%files` section:
 
 Adding a workspace member invalidates `sources/Cargo.lock`. Refresh it:
 
-```
+```bash
 cd ~/bottlerocket/sources
 cargo update --workspace
 ```
@@ -300,7 +300,7 @@ Don’t use `cargo generate-lockfile`. It rewrites the entire lockfile and bumps
 
 NVIDIA restricts redistribution of driver sources. You must add an explicit license acknowledgement before building:
 
-```
+```bash
 cat > ~/bottlerocket/Licenses.toml <<'EOF'
 [nvidia]
 spdx-id = "LicensesRef-NVIDIA-Customer-Use"
@@ -315,7 +315,7 @@ EOF
 
 Create an `Infra.toml` with your target regions:
 
-```
+```bash
 cat > ~/bottlerocket/Infra.toml <<'EOF'
 [aws]
 regions = ["us-west-2", "us-east-1", "us-east-2"]
@@ -324,7 +324,7 @@ EOF
 
 Build the image:
 
-```
+```bash
 cd ~/bottlerocket
 cargo make \
   -e BUILDSYS_VARIANT=aws-k8s-1.36-nvidia-595 \
@@ -337,7 +337,7 @@ The first build pulls the SDK and kit images (\~2 GB total). Subsequent builds t
 
 Publish the AMI:
 
-```
+```bash
 cargo make \
   -e BUILDSYS_VARIANT=aws-k8s-1.36-nvidia-595 \
   -e PUBLISH_REGIONS=us-west-2,us-east-1,us-east-2 \

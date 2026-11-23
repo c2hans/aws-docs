@@ -15,7 +15,7 @@ Note the following default settings:
 + `MASTER_IP` is set to the IP address of the head node
 + `ARGS` is set to whatever arguments the user provides after *`pcluster ssh cluster_name`*
 
-```
+```ini
 [aliases]
 # This is the aliases section, you can configure
 # ssh alias here

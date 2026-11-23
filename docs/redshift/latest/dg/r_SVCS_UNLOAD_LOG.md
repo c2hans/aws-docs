@@ -37,7 +37,7 @@ To get a list of the files that were written to Amazon S3 by an UNLOAD command, 
 
 The following query returns the path name for files that were created by an UNLOAD for the last query completed:
 
-```
+```sql
 select query, substring(path,0,40) as path
 from svcs_unload_log
 where query = pg_last_query_id()

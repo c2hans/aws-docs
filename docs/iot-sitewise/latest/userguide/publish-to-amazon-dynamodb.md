@@ -98,7 +98,7 @@ In this step, create a rule in AWS IoT Core that parses the property value notif
 
 1. Enter the following rule query statement. Replace the topic in the `FROM` section with your notification topic.
 
-   ```
+   ```sql
    SELECT
      payload.assetId AS asset,
      (SELECT VALUE (value.doubleValue) FROM payload.values) AS windspeed,

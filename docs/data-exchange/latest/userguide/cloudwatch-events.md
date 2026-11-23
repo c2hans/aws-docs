@@ -49,7 +49,7 @@ When a provider adds file-based data sets to a product and publishes it, the sub
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -92,7 +92,7 @@ When a provider adds an Amazon S3 data access data set to a product and publishe
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
 	"version": "0",
 	"id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -133,7 +133,7 @@ When a provider adds an AWS Lake Formation data permission data set to a product
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -175,7 +175,7 @@ When a provider adds an Amazon Redshift datashare data set to a product and publ
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -219,7 +219,7 @@ When a provider adds an Amazon API Gateway API data set to a product and publish
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -261,7 +261,7 @@ When a provider adds a data set to a product and publishes it, the subscriber re
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -304,7 +304,7 @@ When a provider adds an Amazon S3 data access data set revision to a product and
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -347,7 +347,7 @@ When a provider adds an AWS Lake Formation data permission data set revision to 
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -389,7 +389,7 @@ When a provider adds an Amazon Redshift datashare data set revision to a product
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -432,7 +432,7 @@ When a provider adds an Amazon API Gateway API data set revision to a product an
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -485,7 +485,7 @@ When a provider revokes a revision to a product and publishes it, the subscriber
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -531,7 +531,7 @@ For example, if a provider changes the data share's public accessibility setting
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -576,7 +576,7 @@ For example, if a provider deletes an Amazon Redshift datashare or deletes a clu
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -619,7 +619,7 @@ After an auto-export job moves all the data in a newly published File data set r
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -660,7 +660,7 @@ When an auto-export job fails, the subscriber receives an event with the `Auto-e
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -707,7 +707,7 @@ When a provider sends a notification for a data update, the subscriber receives 
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -761,7 +761,7 @@ When a provider sends a notification for a schema change, the subscriber receive
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -831,7 +831,7 @@ When a provider sends a notification for a data delay, the subscriber receives a
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -880,7 +880,7 @@ When a provider sends a notification for a data deprecation, the subscriber rece
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -934,7 +934,7 @@ When a data consumer accepts a data grant, the data owner receives an event with
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -968,7 +968,7 @@ When a data owner extends a data grant, the data consumer receives an event with
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",
@@ -1002,7 +1002,7 @@ When a data owner revokes a data grant, the data consumer receives an event with
 
 The following example shows the event body for the detail type.
 
-```
+```json
 {
     "version": "0",
     "id": "{{dc529cb6-2e23-4c5f-d020-EXAMPLE92231}}",

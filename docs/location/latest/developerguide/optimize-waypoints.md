@@ -19,7 +19,7 @@ The OptimizeWaypoints API calculates the most efficient route between a series o
 ------
 #### [ Sample Request ]
 
-```
+```json
 {
     "Origin": [
         -123.095740,
@@ -51,7 +51,7 @@ The OptimizeWaypoints API calculates the most efficient route between a series o
 ------
 #### [ Sample Response ]
 
-```
+```json
 {
     "Connections": [
         {
@@ -128,7 +128,7 @@ The OptimizeWaypoints API calculates the most efficient route between a series o
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.eu-central-1.amazonaws.com/v2/optimize-waypoints?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -163,7 +163,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes optimize-waypoints --key ${YourKey} \
 --origin -123.095740 49.274426 \
 --waypoints '[{"Position": [-123.115193 , 49.280596]}, {"Position": [-123.089557 , 49.271774]}]' \

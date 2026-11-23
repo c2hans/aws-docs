@@ -20,7 +20,7 @@ The following code example shows how to write custom activity data with a Lambda
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/user_pools_and_lambda_triggers#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -176,7 +176,7 @@ func (runner *ActivityLog) Run(ctx context.Context, stackName string) {
 ```
 Handle the `PostAuthentication` trigger with a Lambda function.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -274,7 +274,7 @@ func main() {
 ```
 Create a struct that performs common tasks.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -381,7 +381,7 @@ func (helper ScenarioHelper) ListRecentLogEvents(ctx context.Context, functionNa
 ```
 Create a struct that wraps Amazon Cognito actions.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -572,7 +572,7 @@ func (actor CognitoActions) AdminSetUserPassword(ctx context.Context, userPoolId
 ```
 Create a struct that wraps DynamoDB actions.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -675,7 +675,7 @@ func (actor DynamoActions) AddUser(ctx context.Context, tableName string, user U
 ```
 Create a struct that wraps CloudWatch Logs actions.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -728,7 +728,7 @@ func (actor CloudWatchLogsActions) GetLogEvents(ctx context.Context, functionNam
 ```
 Create a struct that wraps CloudFormation actions.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -761,7 +761,7 @@ func (actor CloudFormationActions) GetOutputs(ctx context.Context, stackName str
 ```
 Clean up resources.
 
-```
+```go
 import (
 	"context"
 	"log"

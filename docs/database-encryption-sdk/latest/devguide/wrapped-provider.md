@@ -33,7 +33,7 @@ The wrapping, unwrapping, and signing keys can be symmetric keys or asymmetric k
 ------
 #### [ Java ]
 
-```
+```java
 // This example uses asymmetric wrapping and signing key pairs
 final KeyPair wrappingKeys = ...
 final KeyPair signingKeys = ...
@@ -47,7 +47,7 @@ final WrappedMaterialsProvider cmp =
 ------
 #### [ Python ]
 
-```
+```python
 # This example uses symmetric wrapping and signing keys
 wrapping_key = ...
 signing_key  = ...

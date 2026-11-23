@@ -15,7 +15,7 @@ You can use the returned `GetItemResult` object’s `GetItem()` method to retrie
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/dynamodb/DynamoDBClient.h>
 #include <aws/dynamodb/model/AttributeDefinition.h>
@@ -25,7 +25,7 @@ You can use the returned `GetItemResult` object’s `GetItem()` method to retrie
 
  **Code**
 
-```
+```cpp
 //! Get an item from an Amazon DynamoDB table.
 /*!
   \sa getItem()
@@ -80,7 +80,7 @@ Create key `Aws::String` and value [AttributeValue](https://docs.aws.amazon.com/
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/dynamodb/DynamoDBClient.h>
 #include <aws/dynamodb/model/AttributeDefinition.h>
@@ -91,7 +91,7 @@ Create key `Aws::String` and value [AttributeValue](https://docs.aws.amazon.com/
 
  **Code**
 
-```
+```cpp
 //! Put an item in an Amazon DynamoDB table.
 /*!
   \sa putItem()
@@ -154,7 +154,7 @@ You can update an attribute for an item that already exists in a table by using 
 
  **Imports**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/dynamodb/DynamoDBClient.h>
 #include <aws/dynamodb/model/UpdateItemRequest.h>
@@ -164,7 +164,7 @@ You can update an attribute for an item that already exists in a table by using 
 
  **Code**
 
-```
+```cpp
 //! Update an Amazon DynamoDB table item.
 /*!
   \sa updateItem()

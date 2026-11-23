@@ -40,7 +40,7 @@ For more information, see [Use Elastic Load Balancing to distribute incoming app
 **Tools for PowerShell V4**
 **Example 1: This example describes the load balancers for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASLoadBalancer -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -55,7 +55,7 @@ my-lb               Added
 **Tools for PowerShell V5**
 **Example 1: This example describes the load balancers for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASLoadBalancer -AutoScalingGroupName my-asg
 ```
 **Output:**

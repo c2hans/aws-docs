@@ -43,7 +43,7 @@ aws ec2 describe-vpc-endpoint-service-configurations \
 
 The following is example output. You'll use `Value` and `Name` when you create the TXT record.
 
-```
+```json
 [
     {
         "State": "pendingVerification",

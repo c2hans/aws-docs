@@ -52,7 +52,7 @@ To create the connector in the Amazon EVS console or with the AWS CLI, use the f
 
 1. Run the `aws evs create-environment-connector` command. The secret identifier can be the secret name or ARN. Replace `<environment-id>` with the ID of your environment. Replace the example FQDN and secret name with your own values.
 
-   ```
+   ```bash
    aws evs create-environment-connector \
        --environment-id <environment-id> \
        --type OPERATIONS_MANAGER \
@@ -62,7 +62,7 @@ To create the connector in the Amazon EVS console or with the AWS CLI, use the f
 
 1. List the connectors of the environment.
 
-   ```
+   ```bash
    aws evs list-environment-connectors \
        --environment-id <environment-id>
    ```

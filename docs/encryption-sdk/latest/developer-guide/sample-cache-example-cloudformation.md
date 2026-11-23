@@ -9,7 +9,7 @@ This CloudFormation template sets up all the necessary AWS resources to reproduc
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Parameters": {
         "SourceCodeBucket": {
@@ -390,7 +390,7 @@ This CloudFormation template sets up all the necessary AWS resources to reproduc
 ------
 #### [ YAML ]
 
-```
+```yaml
 Parameters:
     SourceCodeBucket:
         Type: String

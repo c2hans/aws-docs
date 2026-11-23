@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/graph
 
 **Find the id of your graph**
 
-```
+```bash
 aws neptune-graph list-graphs
 ```
 
@@ -19,7 +19,7 @@ aws neptune-graph list-graphs
 
  **Create a graph snapshot**
 
-```
+```bash
 aws neptune-graph create-graph-snapshot \
 --graph-identifier <GRAPH_ID> \
 --snapshot-name <SNAPSHOT_NAME>

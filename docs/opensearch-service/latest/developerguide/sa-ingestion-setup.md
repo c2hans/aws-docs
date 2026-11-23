@@ -73,7 +73,7 @@ In every example, replace the following placeholders with your own values:
 
    The following `PUT _index_template` REST API request shows the structure. Replace `{{my-logs}}`, `{{source-event}}`, and the example fields and field aliases with your own values.
 
-   ```
+   ```json
    PUT _index_template/{{my-logs}}
    {
      "index_patterns": ["{{my-logs}}-*"],
@@ -119,7 +119,7 @@ In every example, replace the following placeholders with your own values:
 
 1. **Create the ISM policy.** The policy rolls the index over every day. It then deletes each index a fixed time after it stops being the write index. The following `PUT _plugins/_ism/policies` REST API request rolls over after one day and deletes two hours after rollover. This keeps roughly 26 hours of data behind the alias. Adjust `min_index_age` and `min_rollover_age` to match your retention requirement, and replace `{{my-logs}}` with your own value.
 
-   ```
+   ```json
    PUT _plugins/_ism/policies/{{my-logs}}-rollover
    {
      "policy": {
@@ -161,7 +161,7 @@ In every example, replace the following placeholders with your own values:
 
 1. **Create the first index and set the write index.** The following `PUT` REST API request creates the first index of the new series with the alias set as its write index. Replace `{{my-logs}}` with your own value.
 
-   ```
+   ```json
    PUT %3C{{my-logs}}-%7Bnow%2Fd%7D-000001%3E
    {
      "aliases": {

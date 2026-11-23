@@ -12,19 +12,19 @@ The `init` command launches a wizard that walks you through setting up the proje
 
 1. Create a directory for the project.
 
-   ```
+   ```bash
    mkdir {{~/mycompany-testing-mytesthook}}
    ```
 
 1. Navigate to the new directory.
 
-   ```
+   ```bash
    cd {{~/mycompany-testing-mytesthook}}
    ```
 
 1. Use the CloudFormation CLI `init` command to initiate the project.
 
-   ```
+   ```bash
    cfn init
    ```
 
@@ -40,7 +40,7 @@ The `init` command launches a wizard that walks you through setting up the proje
    Do you want to develop a new resource(r) a module(m) or a hook(h)?
    ```
 
-   ```
+   ```text
    h
    ```
 
@@ -51,7 +51,7 @@ The `init` command launches a wizard that walks you through setting up the proje
    (Organization::Service::Hook)
    ```
 
-   ```
+   ```bash
    {{MyCompany}}::{{Testing}}::{{MyTestHook}}
    ```
 
@@ -72,7 +72,7 @@ The `init` command launches a wizard that walks you through setting up the proje
 
    (*Optional*) Choose Docker for platform-independent packaging. While Docker isn't required, it's highly recommended to make packaging easier.
 
-   ```
+   ```text
    Use docker for platform-independent packaging (Y/n)?
    This is highly recommended unless you are experienced with cross-platform Python packaging.
    ```
@@ -82,11 +82,11 @@ The `init` command launches a wizard that walks you through setting up the proje
 
    Set Java package name and choose a codegen model. You can use the default package name, or create a new one.
 
-   ```
+   ```text
    Enter a package name (empty for default 'com.mycompany.testing.mytesthook'):
    ```
 
-   ```
+   ```text
    Choose codegen model - 1 (default) or 2 (guided-aws):
    ```
 

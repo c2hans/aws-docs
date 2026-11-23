@@ -31,7 +31,7 @@ To create an instance of `PostObjectV4`, you must provide the following:
 
  **Imports**
 
-```
+```php
 require '../vendor/autoload.php';
 
 use Aws\S3\PostObjectV4;
@@ -40,7 +40,7 @@ use Aws\S3\S3Client;
 
  **Sample Code**
 
-```
+```php
 require '../vendor/autoload.php';
 
 use Aws\S3\PostObjectV4;

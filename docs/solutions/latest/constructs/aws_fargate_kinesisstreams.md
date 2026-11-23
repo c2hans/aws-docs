@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { FargateToKinesisStreamsProps } from '@aws-solutions-constructs/aws-fargate-kinesisstreams';
@@ -37,7 +37,7 @@ new FargateToKinesisStreams(this, 'FargateToKinesisStreams', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_fargate_kinesisstreams import FargateToKinesisStreams
 from aws_cdk import (
     aws_fargate as _fargate,
@@ -51,7 +51,7 @@ FargateToKinesisStreams(self, 'FargateToKinesisStreams',
                        )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

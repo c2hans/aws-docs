@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 
 AVX requires CMS for live vehicle state (DynamoDB, Redis), KMS decrypt, and Cognito user pools. If CMS is not yet deployed in your target account and region, deploy it first:
 
-```
+```bash
 # Run from the connected-mobility-guidance-on-aws project root
 cd <cms-project-root>/deployment
 make deploy-all          # deploys all CMS CDK stacks
@@ -18,7 +18,7 @@ make bootstrap-demo      # seeds demo vehicles, drivers, and tenant records
 
 Capture the CMS stack outputs you will need for AVX configuration:
 
-```
+```bash
 aws cloudformation describe-stacks \
   --stack-name cms-<stage>-storage \
   --region <region> \
@@ -33,7 +33,7 @@ Record the KMS key ARN, DynamoDB table prefix, Redis endpoint, VPC ID, and Redis
 
 AVX uses ADP’s Bedrock Knowledge Base for RAG grounding (DTC guides, technical service bulletins, recalls, owner manuals, service policy) and the ADP Vehicle Knowledge Base data products for persona context. Seed the knowledge base from the ADP project:
 
-```
+```bash
 # Run from the automotive-data-platform-on-aws guidance-for-vehicle-knowledge-base directory
 cd <adp-project-root>/guidance-for-vehicle-knowledge-base
 make create-tables       # provision DynamoDB tables for data products
@@ -45,7 +45,7 @@ make sync-data           # vectorize documents (starts the Bedrock KB ingestion 
 
 After `make sync-data` completes, note the Bedrock Knowledge Base ID from the ADP stack output:
 
-```
+```bash
 aws cloudformation describe-stacks \
   --stack-name adp-<stage>-vehicle-knowledge-base \
   --region <region> \

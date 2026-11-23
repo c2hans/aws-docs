@@ -33,7 +33,7 @@ The QUOTE\_IDENT function returns the same type of string as the input *string*.
 
 To return the string `"CAT"` with doubled quotation marks, use the following example.
 
-```
+```sql
 SELECT QUOTE_IDENT('"CAT"');
 
 +-------------+
@@ -47,7 +47,7 @@ The following example uses data from the CATEGORY table in the TICKIT sample dat
 
 To return the CATNAME column surrounded by quotation marks, use the following example.
 
-```
+```sql
 SELECT catid, QUOTE_IDENT(catname)
 FROM category
 ORDER BY 1,2;

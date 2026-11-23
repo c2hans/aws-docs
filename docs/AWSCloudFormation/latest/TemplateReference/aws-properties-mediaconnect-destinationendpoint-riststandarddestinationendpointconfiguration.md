@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::DestinationEndpoint RistStandardDestinationEndpointConfiguration
 
-<a name="aws-properties-mediaconnect-destinationendpoint-riststandarddestinationendpointconfiguration-description"></a>The `RistStandardDestinationEndpointConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::DestinationEndpoint](aws-resource-mediaconnect-destinationendpoint.md).
+The configuration settings for a destination endpoint that uses the RIST protocol.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-riststandarddestinationendpointconfiguration-syntax"></a>
@@ -35,13 +35,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-riststandarddestinationendpointconfiguration-properties"></a>
 
 `DestinationAddress`  <a name="cfn-mediaconnect-destinationendpoint-riststandarddestinationendpointconfiguration-destinationaddress"></a>
-Property description not available.
+The IP address on which the destination endpoint receives content.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DestinationIngestPort`  <a name="cfn-mediaconnect-destinationendpoint-riststandarddestinationendpointconfiguration-destinationingestport"></a>
-Property description not available.
+The port on which the destination endpoint receives content. The valid range is 1024 to 65531.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `1024`

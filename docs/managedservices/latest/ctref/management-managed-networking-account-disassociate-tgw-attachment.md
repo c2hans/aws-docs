@@ -76,7 +76,7 @@ You can use any `CreateRfc` parameters with any RFC whether or not they are part
 
 Issue the create RFC command with execution parameters provided inline (escape quotes when providing execution parameters inline), and then submit the returned RFC ID. For example, you can replace the contents with something like this:
 
-```
+```json
 aws amscm create-rfc --change-type-id "ct-3jo8yccbin4it" --change-type-version "1.0" --title "{{Disassociate a TGW attachment}}" --execution-parameters "{\"DocumentName\": \"AWSManagedServices-CreateRouteInTGWRouteTable\",\"Region\": \"{{us-east-1}}\",\"Parameters\": {\"TransitGatewayAttachmentId\": [\"{{tgw-attach-0878cf82a40721d19}}\"],\"TransitGatewayRouteTableId\": [\"{{tgw-rtb-06ddc751c0c0c881c}}\"], \"Blackhole\": [\"{{false}}"], \"DestinationCidrBlock\": [\"{{10.0.0.0/24}}\"]}}"
 ```
 
@@ -84,13 +84,13 @@ aws amscm create-rfc --change-type-id "ct-3jo8yccbin4it" --change-type-version "
 
 1. Output the execution parameters JSON schema for this change type to a file; this example names it DisassociateTgwAttachmentParams.json:
 
-   ```
+   ```json
    aws amscm get-change-type-version --change-type-id "ct-3jo8yccbin4it" --query "ChangeTypeVersion.ExecutionInputSchema" --output text > DisassociateTgwAttachmentParams.json
    ```
 
 1. Modify and save the DisassociateTgwAttachmentParams file. For example, you can replace the contents with something like this:
 
-   ```
+   ```json
    {
      "DocumentName": "AWSManagedServices-DisassociateTGWAttachment",
      "Region": "{{us-east-1}}",
@@ -109,7 +109,7 @@ aws amscm create-rfc --change-type-id "ct-3jo8yccbin4it" --change-type-version "
 
 1. Modify and save the DisassociateTgwAttachmentRfc.json file. For example, you can replace the contents with something like this:
 
-   ```
+   ```json
    {
      "ChangeTypeVersion": "1.0",
      "ChangeTypeId": "ct-3jo8yccbin4it",
@@ -141,7 +141,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-networking-account-disassociate-tgw-attachment-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-DisassociateTGWAttachment",
   "Region": "us-east-1",
@@ -155,7 +155,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-managed-networking-account-disassociate-tgw-attachment-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-DisassociateTGWAttachment",
   "Region": "us-east-1",

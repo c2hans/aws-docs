@@ -35,7 +35,7 @@ The operations return a list of [API Entity](https://docs.aws.amazon.com/compreh
 
 The following example is the response from the `DetectEntities` operation.
 
-```
+```json
 {
     "Entities": [
         {

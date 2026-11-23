@@ -109,7 +109,7 @@ Create a text file named `application.py` in the directory you just created with
 
 **Example `~/eb-python/application.py`**
 
-```
+```python,py
 from flask import Flask
 application = Flask(__name__)
 

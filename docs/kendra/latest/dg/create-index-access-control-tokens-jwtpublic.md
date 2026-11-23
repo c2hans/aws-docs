@@ -66,7 +66,7 @@ You can use JWT with a public key inside of a AWS Secrets Manager. You need the 
 
 To create an index with the AWS CLI using a JSON input file, first create a JSON file with your desired parameters:
 
-```
+```json
 {
     "Name": "{{user-context}}",
     "Edition": "{{ENTERPRISE_EDITION}}",
@@ -96,7 +96,7 @@ aws kendra create-index --cli-input-json file://create-index-openid.json
 
 The secret must have the following format in Secrets Manager:
 
-```
+```json
 {
   "keys": [
     {
@@ -120,7 +120,7 @@ For more information about JWT, see [jwt.io](http://jwt.io).
 ------
 #### [ Python ]
 
-```
+```Python
 response = kendra.create_index(
     Name='{{user-context}}',
     Edition='{{ENTERPRISE_EDITION}}',

@@ -8,7 +8,7 @@ To create a session, you use the [CreateSession](https://docs.aws.amazon.com/bed
 
 When you create a session, you can specify a AWS KMS key to encrypt conversations. For information about encryption, see [Session encryption](sessions-encryption.md).
 
-```
+```python
 def create_session():
 try:
     session_id = client.create_session(

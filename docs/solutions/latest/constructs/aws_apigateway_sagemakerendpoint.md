@@ -27,7 +27,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { ApiGatewayToSageMakerEndpoint, ApiGatewayToSageMakerEndpointProps } from '@aws-solutions-constructs/aws-apigateway-sagemakerendpoint';
@@ -54,7 +54,7 @@ new ApiGatewayToSageMakerEndpoint(this, 'test-apigw-sagemakerendpoint', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_apigateway_sagemakerendpoint import ApiGatewayToSageMakerEndpoint
 from aws_cdk import Stack
 from constructs import Construct
@@ -81,7 +81,7 @@ ApiGatewayToSageMakerEndpoint(self, 'test-apigw-sagemakerendpoint',
                                 )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

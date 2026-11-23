@@ -27,7 +27,7 @@ Before you set up Amazon Timestream as a target for AWS DMS, make sure that you 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -20,6 +20,6 @@ For more information on the available connection properties per data source, see
 
 The following example illustrates a connection property argument that sets the schema name for Amazon Athena.
 
-```
+```bash
 %%sm_sql --connection-properties '{"schema_name": "{{athena-db-name}}"}' --metastore-id {{athena-connection-name}} --metastore-type GLUE_CONNECTION
 ```

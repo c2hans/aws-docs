@@ -15,7 +15,7 @@ For example, consider a service with a `SampleOperation` that takes a `SampleReq
 
 **Example of `SampleOperation` in 1.x**
 
-```
+```java
 SampleRequest v1Request = new SampleRequest()
     .withStr1("TestName");
 
@@ -29,7 +29,7 @@ Action=SampleOperation&Version=2011-01-01&str1=TestName
 
 **Example of `SampleOperation` in 2.x**
 
-```
+```java
 sampleServiceV2Client.sampleOperation(b -> b
     .str1("TestName"));
 ```
@@ -48,7 +48,7 @@ The V2 SDK for Java, by contrast, uses immutable model objects. You must use an 
 
 The following example shows the differences between de/serializing a `headBucket` API call with V1 and V2 using a Jackson `ObjectMapper`.
 
-```
+```java
     public void sendRequest() throws IOException {
         final String bucketName = "amzn-s3-demo-bucket";
         final ObjectMapper mapper = new ObjectMapper();

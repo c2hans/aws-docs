@@ -98,7 +98,7 @@ After you create your Amazon Cognito identity pool and add permissions for Amazo
 
 Create a React Native App by running the following command.
 
-```
+```javascript
 npx react-native init ReactNativeApp --npm
 ```
 
@@ -107,7 +107,7 @@ npx react-native init ReactNativeApp --npm
 
 Inside the directory of the project, run the following commands to install the Amazon S3 package.
 
-```
+```javascript
 npm install @aws-sdk/client-s3
 ```
 
@@ -119,7 +119,7 @@ For more information about installing Node.js packages, see [Downloading and ins
 
 Install other dependencies required for authentication.
 
-```
+```javascript
 npm install @aws-sdk/client-cognito-identity @aws-sdk/credential-provider-cognito-identity
 ```
 
@@ -128,7 +128,7 @@ npm install @aws-sdk/client-cognito-identity @aws-sdk/credential-provider-cognit
 
 Add the following code to the `App.tsx`. Replace {{identityPoolId}} and {{region}} with the identity pool ID and Region where your Amazon S3 bucket will be created.
 
-```
+```javascript
 import React, { useCallback, useState } from "react";
 import { Button, StyleSheet, Text, TextInput, View } from "react-native";
 import "react-native-get-random-values";
@@ -263,7 +263,7 @@ To run the example, run `web`, `ios`, or `android` command using npm.
 
 Here is an example output of running `ios` command on macOS.
 
-```
+```javascript
 $ npm run ios
 
 > ReactNativeApp@0.0.1 ios /Users/trivikr/workspace/ReactNativeApp
@@ -281,7 +281,7 @@ success Successfully launched the app on the simulator
 
 Here is an example output of running `android` command on macOS.
 
-```
+```javascript
 $ npm run android
 
 > ReactNativeApp@0.0.1 android

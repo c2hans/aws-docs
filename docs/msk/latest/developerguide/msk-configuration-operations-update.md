@@ -24,7 +24,7 @@ This process describes how to update a custom Amazon MSK configuration.
 
 1. The following is an example of a successful response after you run this command.
 
-   ```
+   ```JSON
    {
        "Arn": "arn:aws:kafka:us-east-1:123456789012:configuration/SomeTest/abcdabcd-1234-abcd-1234-abcd123e8e8e-1",
        "LatestRevision": {

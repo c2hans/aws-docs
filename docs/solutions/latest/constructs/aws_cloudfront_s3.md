@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { CloudFrontToS3 } from '@aws-solutions-constructs/aws-cloudfront-s3';
@@ -33,7 +33,7 @@ import { CloudFrontToS3 } from '@aws-solutions-constructs/aws-cloudfront-s3';
 new CloudFrontToS3(this, 'test-cloudfront-s3', {});
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_cloudfront_s3 import CloudFrontToS3
 from aws_cdk import Stack
 from constructs import Construct
@@ -41,7 +41,7 @@ from constructs import Construct
 CloudFrontToS3(self, 'test-cloudfront-s3')
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

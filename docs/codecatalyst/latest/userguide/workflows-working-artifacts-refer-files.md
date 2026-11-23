@@ -35,7 +35,7 @@ See also [Referencing source repository files](workflows-sources-reference-files
 
 1. In the action where you want to reference a file, add code similar to the following:
 
-   ```
+   ```yaml
    Actions:
      My-action:
        Inputs:

@@ -21,7 +21,7 @@ The following trust relationship is used for each of the AWS Proton managed poli
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

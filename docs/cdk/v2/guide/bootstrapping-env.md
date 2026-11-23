@@ -18,7 +18,7 @@ You can use the CDK CLI `cdk bootstrap` command to bootstrap your environment. T
  **Bootstrap from any working directory**
 To bootstrap from any working directory, provide the environment to bootstrap as a command line argument. The following is an example:
 
-```
+```bash
 $ cdk bootstrap <aws://123456789012/us-east-1>
 ```
 If you don’t have your AWS account number, you can get it from the AWS Management Console. You can also use the following AWS CLI command to display your default account information, including your account number:
@@ -155,7 +155,7 @@ The following is an example physical ID of the Amazon S3 staging bucket created 
 
 When bootstrapping an AWS environment, the IAM identity performing the bootstrapping must have at least the following permissions:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -274,7 +274,7 @@ If you are using AWS Security Hub, you may see findings reported on some of the 
 The *deploy role* (`DeploymentActionRole`) grants permission to read encrypted data, which is necessary for cross-account deployments with CDK Pipelines. Policies in this role do not grant permission to all data. It only grants permission to read encrypted data from Amazon S3 and AWS KMS, and only when those resources allow it through their bucket or key policy.
 The following is a snippet of these two statements in the *deploy role* from the bootstrap template:
 
-```
+```yaml
 DeploymentActionRole:
     Type: AWS::IAM::Role
     Properties:
@@ -328,7 +328,7 @@ How you fix this finding depends on whether or not you will be using CDK Pipelin
 
 1. Obtain a copy of the CDK bootstrap template to modify it. The following is an example, using the AWS CDK CLI:
 
-   ```
+   ```bash
    $ cdk bootstrap --show-template > bootstrap-template.yaml
    ```
 
@@ -336,14 +336,14 @@ How you fix this finding depends on whether or not you will be using CDK Pipelin
 
 1. Deploy the template to update your bootstrap stack. The following is an example, using the CDK CLI:
 
-   ```
+   ```bash
    $ cdk bootstrap aws://<account-id>/<region> --template bootstrap-template.yaml
    ```
  **To fix the Security Hub finding if you’re not using CDK Pipelines for cross-account deployments**
 
 1. Obtain a copy of the CDK bootstrap template to modify it. The following is an example, using the CDK CLI:
 
-   ```
+   ```bash
    $ cdk bootstrap --show-template > bootstrap-template.yaml
    ```
 
@@ -351,7 +351,7 @@ How you fix this finding depends on whether or not you will be using CDK Pipelin
 
 1. Deploy the template to update your bootstrap stack. The following is an example, using the CDK CLI:
 
-   ```
+   ```bash
    $ cdk bootstrap aws://<account-id>/<region> --template bootstrap-template.yaml
    ```
 

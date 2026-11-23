@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 
 ![Figure 1: Model for AWS-aware buyer and on-premises seller](https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acquisitions-lens/images/image1.png)
 
+*Figure 1: Model for AWS-aware buyer and on-premises seller*
+
  Operational excellence plays integral part during mergers and acquisition because of the following:
 
 1.  It helps identify synergies between the combining companies. By analyzing the operational processes of both companies, areas of overlap and duplication can be identified. Eliminating these can improve efficiency and reduce costs. Operational excellence helps quantify the potential synergies and cost savings from process integration.
@@ -36,6 +38,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
  In the case that both the buyer and seller are on AWS, we recommend best practices for multi-account governance, including setting up AWS Organizations. Consider setting up AWS Control Tower, which orchestrates multiple AWS services on your behalf while maintaining the security and compliance needs of combined organization. Additionally, consider resource tagging and integrating workloads to support end customers of the combined organization.
 
 ![Figure 2: Buyer and seller are both on AWS](https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acquisitions-lens/images/image2.png)
+
+*Figure 2: Buyer and seller are both on AWS*
 
  Here are some best practices for integrating operational excellence when conducting a mergers and acquisitions deal involving companies on AWS:
 +  Consolidate or organize AWS accounts and reduce redundancy. Merge separate AWS accounts and resources from the acquired company into centralized accounts controlled by the parent company. Eliminate duplicate services and resources.

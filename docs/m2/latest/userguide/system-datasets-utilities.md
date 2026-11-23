@@ -46,7 +46,7 @@ Returns code 1 if source dataset doesn't exist or if either dataset is in use by
 #### Sample Usage
 <a name="bluesamcopy-sample"></a>
 
-```
+```groovy
 import ...
 
 mpr = applicationContext.getBean("com.netfective.bluage.gapwalk.rt.call.ExecutionController",MainProgramRunner.class)
@@ -90,7 +90,7 @@ Returns code 0 in all cases.
 #### Sample Usage
 <a name="bluesamcreate-sample"></a>
 
-```
+```groovy
 import ...
 
 mpr = applicationContext.getBean("com.netfective.bluage.gapwalk.rt.call.ExecutionController",MainProgramRunner.class)
@@ -129,7 +129,7 @@ Returns code 0 in all cases.
 #### Sample Usage
 <a name="bluesamdelete-sample"></a>
 
-```
+```groovy
 import ...
 
 mpr = applicationContext.getBean("com.netfective.bluage.gapwalk.rt.call.ExecutionController",MainProgramRunner.class)
@@ -162,7 +162,7 @@ Returns code 0 in all cases.
 #### Sample Usage
 <a name="bluesamclear-sample"></a>
 
-```
+```groovy
 import ...
 
 mpr = applicationContext.getBean("com.netfective.bluage.gapwalk.rt.call.ExecutionController",MainProgramRunner.class)
@@ -197,7 +197,7 @@ Here is a Java sample usage of the BPXWDYN program, resulting from a COBOL moder
 
 The COBOL code:
 
-```
+```cobol
    01  WK-AREA.
        03  DS-ALLOC-STRING.
            05  DS-LENGTH          PIC S9(004) COMP VALUE 100.
@@ -212,7 +212,7 @@ The COBOL code:
 
 and the matching Java modernization:
 
-```
+```java
 private final Group dsAllocString = new Group(root).named("DS-ALLOC-STRING");
 private final Elementary dsLength = new Elementary(dsAllocString,new BinaryType(4, 0, "STD", false, false, true),Short.valueOf("100")).named("DS-LENGTH");
 private final Elementary dsText = new Elementary(dsAllocString,new AlphanumericType(100),"ALLOC DD(INFILE) DSN('A.B.JCLLIB(XYZ470)') SHR").named("DS-TEXT");
@@ -266,7 +266,7 @@ relativeGeneration or absoluteGeneration: one of these properties needs to be se
 
 Gdg creation operation: the following code create a bluesam generation (43) for `IC.PLI.GDGTEST` dataset
 
-```
+```groovy
 import ...
 
 mpr = applicationContext.getBean("com.netfective.bluage.gapwalk.rt.call.ExecutionController",MainProgramRunner.class)
@@ -279,7 +279,7 @@ mpr.withParameters(params).withArguments(args).runProgram("GDGUTILS")
 
 Gdg refreshevents operation: only relativeGeneration is relevant for this operation. The following code update the generation number (\+1 compared to the current generation) for `IC.PLI.GDGTEST` dataset
 
-```
+```groovy
 import ...
 
 mpr = applicationContext.getBean("com.netfective.bluage.gapwalk.rt.call.ExecutionController",MainProgramRunner.class)
@@ -323,7 +323,7 @@ Here is a Groovy sample usage of the ICEGENER program, resulting from a JCL mode
 
 The JCL code:
 
-```
+```jcl
 //STEP01    EXEC PGM=ICEGENER
 //SYSUT1   DD DSN=POI.INPUT,DISP=SHR
 //SYSUT2   DD DSN=POI.OUTPU,
@@ -335,7 +335,7 @@ The JCL code:
 
 and the matching Groovy modernization:
 
-```
+```groovy
 mpr
     .withFileConfigurations(new FileConfigurationUtils()
         .withJobContext(jobContext)
@@ -402,7 +402,7 @@ Here is a Groovy sample usage of the IDCAMS program, resulting from a JCL modern
 
 The JCL code:
 
-```
+```jcl
 //STEP15 EXEC PGM=IDCAMS
 //SYSPRINT DD   SYSOUT=*
 //ACCTDATA DD DISP=SHR,
@@ -416,7 +416,7 @@ The JCL code:
 
 and the matching Groovy modernization:
 
-```
+```groovy
 mpr.withFileConfigurations(new FileConfigurationUtils()
     .withJobContext(jobContext)
     .systemOut("SYSPRINT")
@@ -491,7 +491,7 @@ Here is a Groovy sample usage of the IEBGENER program, resulting from a JCL mode
 
 The JCL code:
 
-```
+```jcl
 //GENDATA  EXEC PGM=IEBGENER
 //SYSUT1   DD DSN=INPUT.EMPLOYEE.DATA,
 //            DISP=SHR
@@ -515,7 +515,7 @@ The JCL code:
 
 and the matching Groovy modernization:
 
-```
+```groovy
 mpr
     .withFileConfigurations(new FileConfigurationUtils()
         .withJobContext(jobContext)
@@ -571,7 +571,7 @@ Here is a Groovy sample usage of the IEFBR14 program, resulting from a JCL moder
 
 The JCL code to create a new sequential dataset:
 
-```
+```jcl
 //STEP1    EXEC PGM=IEFBR14
 //NEWSEQ   DD DSN=USER.NEW.SEQ.DATA,
 //            DISP=(NEW,CATLG,DELETE),
@@ -581,7 +581,7 @@ The JCL code to create a new sequential dataset:
 
 and the matching Groovy modernization:
 
-```
+```groovy
 mpr
     .withFileConfigurations(new FileConfigurationUtils()
         .withJobContext(jobContext)
@@ -598,7 +598,7 @@ mpr
 
 The JCL code to delete a existing dataset:
 
-```
+```jcl
 //STEP3    EXEC PGM=IEFBR14
 //DELDD    DD DSN=USER.OLD.DATASET,
 //            DISP=(OLD,DELETE,DELETE)
@@ -606,7 +606,7 @@ The JCL code to delete a existing dataset:
 
 and the matching Groovy modernization:
 
-```
+```groovy
 mpr
     .withFileConfigurations(new FileConfigurationUtils()
         .withJobContext(jobContext)
@@ -646,7 +646,7 @@ In `application-utility-pgm.yml`:
 In individual step of the Groovy file calling the program
 + `JCLBCICS_OVERRIDDEN_SIZE`: it overrides the global dataset name size:
 
-```
+```groovy
 TreeMap stepMapTransfo = [:]
 Map stepParams = ["MapTransfo":stepMapTransfo]
 stepParams["MapTransfo"]["JCLBCICS_OVERRIDDEN_SIZE"] = '6'
@@ -681,7 +681,7 @@ Here is a Groovy sample usage of the JCLBCICS program:
 
 it disables the dataset `UFOLJ3P`, it enables all datasets starting with AX, it enables all datasets starting with DX
 
-```
+```groovy
 import com.netfective.bluage.gapwalk.rt.call.MainProgramRunner
 import com.netfective.bluage.gapwalk.rt.call.ProgramExecutionResult
 import com.netfective.bluage.gapwalk.rt.io.support.DatasetsConfiguration

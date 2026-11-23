@@ -51,7 +51,7 @@ You can also use CloudTrail and Amazon CloudWatch Logs to track the requests tha
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

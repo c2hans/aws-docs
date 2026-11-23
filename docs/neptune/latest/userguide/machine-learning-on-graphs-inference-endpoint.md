@@ -26,7 +26,7 @@ For more information, see [create-ml-endpoint](https://docs.aws.amazon.com/cli/l
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -59,8 +59,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/ml/endpoints \
       }'
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -74,6 +73,8 @@ curl \
         "mlModelTrainingJobId": "{{(the model-training job-id of a completed job)}}"
       }'
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -94,7 +95,7 @@ For more information, see [create-ml-endpoint](https://docs.aws.amazon.com/cli/l
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -127,8 +128,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/ml/endpoints \
       }'
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -142,6 +142,8 @@ curl \
         "mlModelTransformJobId": "{{(the model-transform job-id of a completed job)}}"
       }'
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 

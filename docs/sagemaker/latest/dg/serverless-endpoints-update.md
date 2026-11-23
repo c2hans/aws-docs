@@ -25,7 +25,7 @@ The following example uses the [AWS SDK for Python (Boto3)](https://boto3.amazon
 + For `EndpointName`, use the name of the endpoint you’re updating.
 + For `EndpointConfigName`, use the name of the endpoint configuration that you want to use for the update.
 
-```
+```python
 response = client.update_endpoint(
     EndpointName="{{<your-endpoint-name>}}",
     EndpointConfigName="{{<new-endpoint-config>}}",

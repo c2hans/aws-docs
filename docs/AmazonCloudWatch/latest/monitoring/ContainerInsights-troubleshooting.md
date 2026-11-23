@@ -52,7 +52,7 @@ If you see an error message similar to the following, check to make sure that yo
 ## Metrics don't appear in the console
 <a name="ContainerInsights-setup-EKS-troubleshooting-nometrics"></a>
 
-If you don't see any Container Insights metrics in the AWS Management Console, be sure that you have completed the setup of Container Insights. Metrics don't appear before Container Insights has been set up completely. For more information, see [Container Insights](ContainerInsights.md).
+If you don't see any Container Insights metrics in the AWS Management Console, be sure that you have completed the setup of Container Insights. Metrics don't appear before Container Insights has been set up completely. For more information, see [Container Insights for Amazon EKS](ContainerInsights.md).
 
 ## Pod metrics missing on Amazon EKS or Kubernetes after upgrading cluster
 <a name="ContainerInsights-troubleshooting-podmetrics-missing"></a>

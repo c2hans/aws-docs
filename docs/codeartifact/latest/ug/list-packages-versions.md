@@ -14,7 +14,7 @@ aws codeartifact list-package-versions --package {{kind-of}} \
 
 Sample output:
 
-```
+```json
 {
   "defaultDisplayVersion": "1.0.1",
   "format": "{{npm}}",

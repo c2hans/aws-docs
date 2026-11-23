@@ -73,7 +73,7 @@ If you're using a connection in Apache Airflow v2, ensure the Airflow connection
 
 1. Copy the contents of the following code sample and save locally as `sql-server.py`.
 
-   ```
+   ```python
    """
    Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    Permission is hereby granted, free of charge, to any person obtaining a copy of

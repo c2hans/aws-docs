@@ -11,7 +11,7 @@ Use the following command to view the name of the latest Amazon ECS optimized AM
 ------
 #### [ Linux & macOS ]
 
-```
+```bash
 aws ssm get-parameters \
     --names /aws/service/ecs/optimized-ami/amazon-linux-2/recommended
 ```
@@ -19,7 +19,7 @@ aws ssm get-parameters \
 ------
 #### [ Windows ]
 
-```
+```bash
 aws ssm get-parameters ^
     --names /aws/service/ecs/optimized-ami/amazon-linux-2/recommended
 ```

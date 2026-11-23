@@ -18,7 +18,7 @@ This policy includes the following permissions.
 + `ec2` – Allows principals to describe VPCs, subnets, and security groups. This is used in the AWS Management Console in WorkSpaces Secure Browser to show you your VPCs, subnets, and security groups that are available foruse with the service.
 + `Kinesis` - Allows principals to list Kinesis data streams. This is used in the AWS Management Console in WorkSpaces Secure Browser to show you Kinesis data streams that are available for use with the service.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

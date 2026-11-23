@@ -193,14 +193,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-ec2-instance-stack-resize-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-advanced-ec2-instance-stack-resize-ex-max"></a>
 
-```
+```json
 {
     "DocumentName": "AWSManagedServices-ChangeInstanceType",
     "Region": "us-east-1",

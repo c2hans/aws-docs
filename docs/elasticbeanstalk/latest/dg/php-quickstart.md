@@ -54,7 +54,7 @@ Next, create an `index.php` file in the project directory and add the following 
 
 **Example `index.php`**
 
-```
+```php
 <?php
   echo "Hello from a PHP application running in Elastic Beanstalk!";
 ?>
@@ -122,7 +122,7 @@ After you have created an application and deployed to an environment, you can de
 
 Update your PHP code to include the REQUEST\_TIME value from the server environment:
 
-```
+```php
 <?php
   echo "Hello from a PHP application running in Elastic Beanstalk!";
 

@@ -32,7 +32,7 @@ The following policy denies the IAM principal from describing the user `joe` or 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -76,7 +76,7 @@ The following policy allows the IAM principal to update the user `joe`.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -119,7 +119,7 @@ The following policy allows the IAM principal to perform `AddGroupMember` on mem
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -163,7 +163,7 @@ The following example uses only the `ds-data:MemberName` context key.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -202,7 +202,7 @@ The following policy denies the IAM principal from calling `ListUsers` on the re
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

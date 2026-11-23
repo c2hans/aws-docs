@@ -115,20 +115,20 @@ You can also use the MQTT client in the AWS IoT console to monitor the messages 
 
      Navigate to the directory that contains the source files for the FreeRTOS demo project. Then, generate the build files by running the following command.
 
-     ```
+     ```bash
      cmake -DVENDOR=nuvoton -DBOARD=numaker_iot_m487_wifi -DCOMPILER=arm-keil -S . -B {{BUILD_FOLDER}} -G Ninja
      ```
    + For Ethernet:
 
      Navigate to the directory that contains the source files for the FreeRTOS demo project. Then, generate the build files by running the following command.
 
-     ```
+     ```bash
      cmake -DVENDOR=nuvoton -DBOARD=numaker_iot_m487_wifi -DCOMPILER=arm-keil -DAFR_ENABLE_ETH=1 -S . -B {{BUILD_FOLDER}} -G Ninja
      ```
 
 1. Generate the binary to flash onto the M487 by running the following command.
 
-   ```
+   ```bash
    cmake --build {{BUILD_FOLDER}}
    ```
 

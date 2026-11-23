@@ -48,7 +48,7 @@ If your Amazon S3 location is encrypted with an AWS managed key, add the followi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

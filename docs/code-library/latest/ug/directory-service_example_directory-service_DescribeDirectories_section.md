@@ -73,7 +73,7 @@ For more information, see [Viewing AWS Managed Microsoft AD directory informatio
 **Tools for PowerShell V4**
 **Example 1: This command Obtains information about the directories that belong to this account.**
 
-```
+```powershell
 Get-DSDirectory | Select-Object DirectoryId, Name, DnsIpAddrs, Type
 ```
 **Output:**
@@ -90,7 +90,7 @@ d-123456ijkl lan2.example.com {172.31.10.56, 172.31.16.108}  MicrosoftAD
 **Tools for PowerShell V5**
 **Example 1: This command Obtains information about the directories that belong to this account.**
 
-```
+```powershell
 Get-DSDirectory | Select-Object DirectoryId, Name, DnsIpAddrs, Type
 ```
 **Output:**

@@ -46,7 +46,7 @@ When integrating with other Amazon Lex bots or Lambda functions, the permission 
 
 The input JSON payload to the target Lambda function is as follows:
 
-```
+```JSON
 req: {
         request: "message",
         inputText: <String>,
@@ -57,7 +57,7 @@ req: {
 
 The expected response payload from the target Lambda function is the following:
 
-```
+```JSON
 {
     response: "message",
     status: "success", "failed"
@@ -76,7 +76,7 @@ The expected response payload from the target Lambda function is the following:
 
 The Nutrionix node.js based sample `BotRouter` is provided as a zip file in the [GitHub repository](https://github.com/aws-solutions/qnabot-on-aws/blob/main/source/docs/nutritionix_botrouter.zip). To use this sample you’ll need to provision an [API account with Nutritionix](https://www.nutritionix.com/business/api) and configure the source to use your own `x-app-id` and `x-app-key` from Nutritionix.
 
-```
+```JSON
 'x-app-id': process.env.xAppId,
     'x-app-key': process.env.xAppKey
 ```

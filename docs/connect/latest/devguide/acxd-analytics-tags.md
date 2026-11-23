@@ -31,7 +31,7 @@ Creates a new analytics tag.
 ### Sample Request
 <a name="acxd-analytics-tags-createanalyticstag-sample-request"></a>
 
-```
+```typescript
 await client.send(new CreateAnalyticsTagCommand({
   name: 'AnalyticsTagName',
   type: 'positive',
@@ -45,7 +45,7 @@ await client.send(new CreateAnalyticsTagCommand({
 
 Returns the analytics tags entry that was created.
 
-```
+```json
 {
   "name": "AnalyticsTagName",
   "type": "positive",
@@ -77,7 +77,7 @@ No parameters.
 ### Sample Request
 <a name="acxd-analytics-tags-listanalyticstags-sample-request"></a>
 
-```
+```typescript
 await client.send(new ListAnalyticsTagsCommand({}));
 ```
 
@@ -86,7 +86,7 @@ await client.send(new ListAnalyticsTagsCommand({}));
 
 Returns the full analytics tags collection:
 
-```
+```json
 {
   "items": [
     {
@@ -126,7 +126,7 @@ Updates an existing analytics tag by name.
 ### Sample Request
 <a name="acxd-analytics-tags-updateanalyticstag-sample-request"></a>
 
-```
+```typescript
 await client.send(new UpdateAnalyticsTagCommand({
     name: 'AnalyticsTagName',
     type: 'negative',
@@ -140,7 +140,7 @@ await client.send(new UpdateAnalyticsTagCommand({
 
 Returns the analytics tags entry that was updated.
 
-```
+```json
 {
   "name": "AnalyticsTagName",
   "type": "negative",
@@ -174,7 +174,7 @@ Deletes an analytics tag by name.
 ### Sample Request
 <a name="acxd-analytics-tags-deleteanalyticstag-sample-request"></a>
 
-```
+```typescript
 await client.send(new DeleteAnalyticsTagCommand({
     name: 'AnalyticsTagName',
 }));

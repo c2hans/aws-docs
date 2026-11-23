@@ -128,7 +128,7 @@ Your list of **Metrics** and **Logs** is now filtered to just logs and metrics t
 
 To explore related telemetry, you must be getting entity information with the telemetry from your workloads, and you must have the proper permissions to view that data.
 
-Many services send entity information automatically. For workloads that use the CloudWatch agent, you must have at least version `1.300049.1` of the agent, and you must configure it correctly. For information about configuring the agent, see [How to add related information to custom telemetry sent to CloudWatch](adding-your-own-related-telemetry.md). For workloads running on Amazon EKS, you must have at least version `v2.3.1-eksbuild.1` of the Amazon CloudWatch Observability EKS add-on. For more information about this add-on, see [Quick start: OTel Container Insights on Amazon EKS](container-insights-eks-otel-quickstart.md).
+Many services send entity information automatically. For workloads that use the CloudWatch agent, you must have at least version `1.300049.1` of the agent, and you must configure it correctly. For information about configuring the agent, see [How to add related information to custom telemetry sent to CloudWatch](adding-your-own-related-telemetry.md). For workloads running on Amazon EKS, you must have at least version `v2.3.1-eksbuild.1` of the Amazon CloudWatch Observability EKS add-on. For more information about this add-on, see [OTel Container Insights quick start](container-insights-eks-otel-quickstart.md).
 
 To explore related telemetry you must be signed in with certain permissions. Exploring related telemetry is a read-only activity, and requires at least read-only access to CloudWatch.
 

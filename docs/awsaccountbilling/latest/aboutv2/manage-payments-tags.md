@@ -12,7 +12,7 @@ To add tags to new payment instruments or update existing ones, see [Managing cr
 The following policy allows the IAM entity to access payment instruments that have the `creditcard` key and a value of visa.
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [{
@@ -36,7 +36,7 @@ The following policy allows the IAM entity to access payment instruments that ha
 The following policy denies the IAM entity from completing any payment action on payment methods that have the `creditcard` key and a value of `visa`.
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [{

@@ -34,7 +34,7 @@ To connect your managed knowledge base to Amazon Quick, complete the following s
 
    In the knowledge base owner account, attach a resource policy to the knowledge base granting your Amazon Quick service role `bedrock:Retrieve` and `bedrock:GetDocumentContent`:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

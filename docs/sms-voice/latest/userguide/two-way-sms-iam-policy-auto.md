@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/two-way-sms-i
 
 The Amazon SNS topic requires the appropriate topic policy to grant access to AWS End User Messaging SMS if they are not provided in the {{TwoChannelWayRole}} parameter.
 
-```
+```json
 {
   "Effect": "Allow",
   "Principal": {
@@ -33,7 +33,7 @@ First, the key that you use must be *symmetric*. Encrypted Amazon SNS topics don
 
 Second, the key policy must be modified to allow AWS End User Messaging SMS to use the key. Add the following permissions to the existing key policy:
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {

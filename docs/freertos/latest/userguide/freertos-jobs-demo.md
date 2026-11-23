@@ -32,7 +32,7 @@ The demo shows the workflow used to receive jobs from AWS IoT and process them o
 
 See the following format for this job document.
 
-```
+```JSON
 {
     "action": "print",
     "message": "ADD_MESSAGE_HERE"
@@ -41,7 +41,7 @@ See the following format for this job document.
 
 You can use the AWS CLI to create a job as in the following example command.
 
-```
+```bash
 aws iot create-job \
     --job-id t12 \
     --targets arn:aws:iot:{{region}}:123456789012:thing/device1 \
@@ -50,7 +50,7 @@ aws iot create-job \
 
 The demo also uses a job document that has the `action` key set to `publish` to republish the message to a topic. See the following format for this job document.
 
-```
+```JSON
 {
     "action": "publish",
     "message": "ADD_MESSAGE_HERE",
@@ -60,7 +60,7 @@ The demo also uses a job document that has the `action` key set to `publish` to 
 
 The demo loops until it receives a job document with the `action` key set to `exit` to exit the demo. The format for the job document is as follows.
 
-```
+```JSON
 {
     "action: "exit"
 }

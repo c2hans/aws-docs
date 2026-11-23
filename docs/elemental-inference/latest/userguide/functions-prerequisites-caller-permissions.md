@@ -8,7 +8,7 @@ The identity that creates and attaches functions — a person in the console, or
 
 In the following policy, replace `{{111122223333}}` with your account ID, and `{{ElementalInferenceFeedAccessRole}}` with the name of the feed's access role.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [

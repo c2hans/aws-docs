@@ -42,7 +42,7 @@ CloudTrail redacts sensitive fields from event records. For example, CloudTrail 
 
 The following example shows a CloudTrail log entry for the `CreatePolicy` operation.
 
-```
+```json
 {
   "eventVersion": "1.09",
   "userIdentity": {

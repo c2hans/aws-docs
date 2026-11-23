@@ -130,7 +130,7 @@ These steps create a schedule rule that starts a pipeline build every 90 days. E
 
 1. Create an IAM role that EventBridge can assume, with this trust policy:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [{
@@ -143,7 +143,7 @@ These steps create a schedule rule that starts a pipeline build every 90 days. E
 
    Attach a permissions policy that allows the pipeline to start:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [{
@@ -184,7 +184,7 @@ Instead of a schedule, you can start a pipeline build when an event matches a pa
 
 The following example starts a build whenever a specific base image becomes `AVAILABLE`—for example, to chain a dependent image build after its base image finishes. The `resources` prefix scopes the rule to the base image so that it matches only that image, and not the dependent pipeline's own output:
 
-```
+```json
 {
     "source": ["aws.imagebuilder"],
     "detail-type": ["EC2 Image Builder Image State Change"],
@@ -249,7 +249,7 @@ To act on an event that Image Builder sends, create a rule whose event pattern m
 
 **Example: Notify on image completion (`AVAILABLE` or `FAILED`)**
 
-```
+```json
 {
     "source": ["aws.imagebuilder"],
     "detail-type": ["EC2 Image Builder Image State Change"],
@@ -263,7 +263,7 @@ To act on an event that Image Builder sends, create a rule whose event pattern m
 
 Use a numeric matcher so that clean scans don't trigger the rule. Image Builder sends this event for test instance scans and container image scans, not for on-demand AMI scans:
 
-```
+```json
 {
     "source": ["aws.imagebuilder"],
     "detail-type": ["EC2 Image Builder CVE Detected"],

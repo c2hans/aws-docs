@@ -14,7 +14,7 @@ The following code examples show how to get started using Amazon ECS.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ECS#code-examples).
 
-```
+```csharp
 using Amazon.ECS;
 using Amazon.ECS.Model;
 using Microsoft.Extensions.DependencyInjection;
@@ -84,7 +84,7 @@ public class HelloECS
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 import logging
 
 import boto3

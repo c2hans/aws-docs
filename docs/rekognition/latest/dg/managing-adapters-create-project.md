@@ -28,7 +28,7 @@ To create a project with the AWS CLI and SDK:
 ------
 #### [ CLI ]
 
-```
+```bash
 # Request
 # Creating Content Moderation Project
 aws rekognition create-project \

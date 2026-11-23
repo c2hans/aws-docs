@@ -25,7 +25,7 @@ When you use the AWS Encryption SDK for C, you follow a pattern similar to this:
 Call the `aws_cryptosdk_load_error_strings()` method in your C or C\+\+ code. It loads error information that is very useful for debugging.
 You only need to call it once, such as in your `main` method.
 
-```
+```cpp
 /* Load error strings for debugging */
 aws_cryptosdk_load_error_strings();
 ```
@@ -34,7 +34,7 @@ aws_cryptosdk_load_error_strings();
 Configure your [keyring](concepts.md#keyring) with the wrapping keys that you want to use to encrypt your data keys. This example uses an [AWS KMS keyring](use-kms-keyring.md) with one AWS KMS key, but you can use any type of keyring in its place.
 To identify an AWS KMS key in an encryption keyring in the AWS Encryption SDK for C, specify a [key ARN](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN) or [alias ARN](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-alias-arn). In a decryption keyring, you must use a key ARN. For details, see [Identifying AWS KMS keys in an AWS KMS keyring](use-kms-keyring.md#kms-keyring-id).
 
-```
+```cpp
 const char * KEY_ARN = "{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}"
 struct aws_cryptosdk_keyring *kms_keyring =
        Aws::Cryptosdk::KmsKeyring::Builder().Build(KEY_ARN);
@@ -54,7 +54,7 @@ struct aws_cryptosdk_session * session = aws_cryptosdk_session_new_from_keyring_
 To process the data in the session, use the `aws_cryptosdk_session_process` method. If the input buffer is large enough to hold the entire plaintext, and the output buffer is large enough to hold the entire ciphertext, you can call `aws_cryptosdk_session_process_full`. However, if you need to handle streaming data, you can call `aws_cryptosdk_session_process` in a loop. For an example, see the [file\_streaming.cpp](https://github.com/aws/aws-encryption-sdk-c/blob/master/examples/file_streaming.cpp) example. The `aws_cryptosdk_session_process_full` is introduced in AWS Encryption SDK versions 1.9.*x* and 2.2.*x*.
 When the session is configured to encrypt data, the plaintext fields describe the input and the ciphertext fields describe the output. The `plaintext` field holds the message that you want to encrypt and the `ciphertext` field gets the [encrypted message](message-format.md) that the encrypt method returns.
 
-```
+```cpp
 /* Encrypting data */
 aws_cryptosdk_session_process_full(session,
                                    ciphertext,
@@ -66,7 +66,7 @@ aws_cryptosdk_session_process_full(session,
 When the session is configured to decrypt data, the ciphertext fields describe the input and the plaintext fields describe the output. The `ciphertext` field holds the [encrypted message](message-format.md) that the encrypt method returned, and the `plaintext` field gets the plaintext message that the decrypt method returns.
 To decrypt the data, call the `aws_cryptosdk_session_process_full` method.
 
-```
+```cpp
 /* Decrypting data */
 aws_cryptosdk_session_process_full(session,
                                    plaintext,
@@ -92,7 +92,7 @@ You are only responsible for releasing references to the child objects that you 
 
 In the following example, when you create a session with a [keyring](concepts.md#keyring), the session gets a reference to the keyring, and maintains that reference until the session is destroyed. If you do not need to maintain an additional reference to the keyring, you can use the `aws_cryptosdk_keyring_release` method to release the keyring object as soon as the session is created. This method decrements the reference count for the keyring. The session's reference to the keyring is released when you call `aws_cryptosdk_session_destroy` to destroy the session.
 
-```
+```cpp
 // The session gets a reference to the keyring.
 struct aws_cryptosdk_session *session =
 	aws_cryptosdk_session_new_from_keyring_2(alloc, AWS_CRYPTOSDK_ENCRYPT, keyring);

@@ -106,7 +106,7 @@ To view examples of AWS End User Messaging SMS identity-based policies, see [Ide
 
 Some AWS End User Messaging SMS actions, such as certain actions for creating resources, can't be performed on a specific resource. In those cases, you must use the wildcard (\*):
 
-```
+```json
 "Resource": "*"
 ```
 

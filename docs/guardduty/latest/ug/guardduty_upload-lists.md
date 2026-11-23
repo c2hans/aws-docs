@@ -98,7 +98,7 @@ This format supports IP addresses, CIDR block, domain names, and SHA-256 file ha
 
 ****Example for an entity list****
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <stix:STIX_Package
     xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
@@ -133,7 +133,7 @@ This format supports IP addresses, CIDR block, domain names, and SHA-256 file ha
 
 ****Example for threat entity list with file hashes****
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <stix:STIX_Package
     xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
@@ -189,7 +189,7 @@ This format supports IP addresses, CIDR block, domain names, and SHA-256 file ha
 
 ****Example for an IP address list****
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <stix:STIX_Package
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -278,7 +278,7 @@ This format supports CIDR block, individual IP addresses, domains, and SHA-256 f
 
 ****Example for entity list****
 
-```
+```text
 reportId, title, threatScape, audience, intelligenceType, publishDate, reportLink, webLink, emailIdentifier, senderAddress, senderName, sourceDomain, sourceIp, subject, recipient, emailLanguage, fileName, fileSize, fuzzyHash, fileIdentifier, md5, sha1, sha256, description, fileType, packer, userAgent, registry, fileCompilationDateTime, filePath, asn, cidr, domain, domainTimeOfLookup, networkIdentifier, ip, port, protocol, registrantEmail, registrantName, networkType, url, malwareFamily, malwareFamilyId, actor, actorId, observationTime
 
 01-00000001, Example, Test, Operational, threat, 1494944400, https://www.example.com/report/01-00000001, https://www.example.com/report/01-00000001, , , , , , , , , , , , , , , , , , , , , , , , 192.0.2.0/24, , , Related, , , , , , network, , Ursnif, 21a14673-0d94-46d3-89ab-8281a0466099, , , 1494944400
@@ -292,7 +292,7 @@ reportId, title, threatScape, audience, intelligenceType, publishDate, reportLin
 
 ****Example for threat entity list with file hashes****
 
-```
+```text
 reportId, title, threatScape, audience, intelligenceType, publishDate, reportLink, webLink, emailIdentifier, senderAddress, senderName, sourceDomain, sourceIp, subject, recipient, emailLanguage, fileName, fileSize, fuzzyHash, fileIdentifier, md5, sha1, sha256, description, fileType, packer, userAgent, registry, fileCompilationDateTime, filePath, asn, cidr, domain, domainTimeOfLookup, networkIdentifier, ip, port, protocol, registrantEmail, registrantName, networkType, url, malwareFamily, malwareFamilyId, actor, actorId, observationTime
 
 01-00000001, Example, Test, Operational, threat, 1494944400, https://www.example.com/report/01-00000001, https://www.example.com/report/01-00000001, , , , , , , , , , , , , , , , , , , , , , , , 192.0.2.0/24, , , Related, , , , , , network, , Ursnif, 21a14673-0d94-46d3-89ab-8281a0466099, , , 1494944400
@@ -308,7 +308,7 @@ reportId, title, threatScape, audience, intelligenceType, publishDate, reportLin
 
 ****Example for IP address list****
 
-```
+```text
 reportId, title, threatScape, audience, intelligenceType, publishDate, reportLink, webLink, emailIdentifier, senderAddress, senderName, sourceDomain, sourceIp, subject, recipient, emailLanguage, fileName, fileSize, fuzzyHash, fileIdentifier, md5, sha1, sha256, description, fileType, packer, userAgent, registry, fileCompilationDateTime, filePath, asn, cidr, domain, domainTimeOfLookup, networkIdentifier, ip, port, protocol, registrantEmail, registrantName, networkType, url, malwareFamily, malwareFamilyId, actor, actorId, observationTime
 
 01-00000001, Example, Test, Operational, threat, 1494944400, https://www.example.com/report/01-00000001, https://www.example.com/report/01-00000001, , , , , , , , , , , , , , , , , , , , , , , , 192.0.2.0/24, , , Related, , , , , , network, , Ursnif, 21a14673-0d94-46d3-89ab-8281a0466099, , , 1494944400
@@ -325,7 +325,7 @@ In ProofPoint CSV format, you can add IP either addresses or domain names in a o
 
 ****Example for entity list****
 
-```
+```text
 domain, category, score, first_seen, last_seen, ports (|)
 198.51.100.1, 1, 100, 2000-01-01, 2000-01-01,
 203.0.113.1, 1, 100, 2000-01-01, 2000-01-01, 80
@@ -333,7 +333,7 @@ domain, category, score, first_seen, last_seen, ports (|)
 
 ****Example for IP address list****
 
-```
+```text
 ip, category, score, first_seen, last_seen, ports (|)
 198.51.100.1, 1, 100, 2000-01-01, 2000-01-01,
 203.0.113.1, 1, 100, 2000-01-01, 2000-01-01, 80
@@ -346,7 +346,7 @@ The following sample list uses the `AlienVault` format. This format also support
 
 ****Example for entity list****
 
-```
+```text
 192.0.2.1#4#2#Malicious Host#KR##37.5111999512,126.974098206#3
 192.0.2.2#4#2#Scanning Host#IN#Gurgaon#28.4666996002,77.0333023071#3
 192.0.2.3#4#2##CN#Guangzhou#23.1166992188,113.25#3
@@ -356,7 +356,7 @@ www.example.com#4#2#Malicious Host#PL##52.2393989563,21.0361995697#3
 
 ****Example for threat entity list with file hashes****
 
-```
+```text
 192.0.2.1#4#2#Malicious Host#KR##37.5111999512,126.974098206#3
 192.0.2.2#4#2#Scanning Host#IN#Gurgaon#28.4666996002,77.0333023071#3
 192.0.2.3#4#2##CN#Guangzhou#23.1166992188,113.25#3
@@ -367,7 +367,7 @@ a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3#4#2#Malicious H
 
 ****Example for IP address list****
 
-```
+```text
 198.51.100.1#4#2#Malicious Host#US##0.0,0.0#3
 203.0.113.1#4#2#Malicious Host#US##0.0,0.0#3
 ```

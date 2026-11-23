@@ -137,7 +137,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-aws-backup-job-stop-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-StopBackupJob",
   "Region": "us-east-1",
@@ -150,7 +150,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-aws-backup-job-stop-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-StopBackupJob",
   "Region": "us-east-1",

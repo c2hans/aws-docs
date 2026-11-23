@@ -30,6 +30,7 @@ To create or attach a policy to your AWS Identity and Access Management (IAM) us
 + [Create a connection to Azure DevOps](connections-create-azure.md)
 + [Create a connection to Bitbucket](connections-create-bitbucket.md)
 + [Create a connection to GitHub](connections-create-github.md)
++ [Create a connection to GitHub Enterprise Cloud with data residency](connections-create-ghec-dr.md)
 + [Create a connection to GitHub Enterprise Server](connections-create-gheserver.md)
 + [Create a connection to GitLab](connections-create-gitlab.md)
 + [Create a connection to GitLab self-managed](connections-create-gitlab-managed.md)

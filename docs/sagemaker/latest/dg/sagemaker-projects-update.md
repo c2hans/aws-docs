@@ -18,7 +18,7 @@ This procedure demonstrates how to update a MLOps project in Amazon SageMaker St
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -44,7 +44,7 @@ This procedure demonstrates how to update a MLOps project in Amazon SageMaker St
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

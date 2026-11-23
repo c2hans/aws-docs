@@ -36,7 +36,7 @@ When you turn off Kernel Live Patching, the process uninstalls the Kernel Live P
 ------
 #### [ Linux & macOS ]
 
-  ```
+  ```sh
   aws ssm send-command \
       --document-name "AWS-ConfigureKernelLivePatching" \
       --targets "Key=instanceIds,Values={{instance-id}}" \
@@ -46,7 +46,7 @@ When you turn off Kernel Live Patching, the process uninstalls the Kernel Live P
 ------
 #### [ Windows Server ]
 
-  ```
+  ```sh
   aws ssm send-command ^
       --document-name "AWS-ConfigureKernelLivePatching" ^
       --targets "Key=instanceIds,Values={{instance-id}}" ^

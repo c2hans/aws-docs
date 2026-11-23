@@ -22,7 +22,7 @@ For each workload that a policy selects, resource optimization creates a `Resour
 
 Run the following `kubectl` command to view the object, replacing {{web-deploy}} with the name of your workload’s `ResourceOptimization` object and {{shop}} with its namespace:
 
-```
+```bash
 kubectl get ro {{web-deploy}} -n {{shop}} -o yaml
 ```
 
@@ -64,13 +64,13 @@ When an HPA owns a resource, the `ResourceOptimization` shows the `HPAResourceCo
 
 Run the following `kubectl` command to view which resources an HPA owns, replacing {{web-deploy}} and {{shop}} with your values:
 
-```
+```bash
 kubectl get ro {{web-deploy}} -n {{shop}} -o jsonpath='{.status.conditions[?(@.type=="HPAResourceConflict")].message}'
 ```
 
 An example output is as follows.
 
-```
+```bash
 cpu (all containers) is scaled by HorizontalPodAutoscaler/web
 ```
 
@@ -124,7 +124,7 @@ The last `-Xmx` or `-XX:MaxHeapSize` setting wins, and it takes precedence over 
 
 The following example Deployment manifest sets a 1 GiB maximum heap, so resource optimization never sets the memory request below 1.25 GiB. Replace {{public.ecr.aws/amazoncorretto/amazoncorretto:21}} with your application’s image, and {{/app/orders.jar}} with the path to your application’s JAR file:
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:

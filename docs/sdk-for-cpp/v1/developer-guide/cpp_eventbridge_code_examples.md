@@ -25,7 +25,7 @@ The following code example shows how to use `PutEvents`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/eventbridge#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/events/EventBridgeClient.h>
 #include <aws/events/model/PutEventsRequest.h>
@@ -35,7 +35,7 @@ Include the required files.
 ```
 Send the event.
 
-```
+```cpp
         Aws::CloudWatchEvents::EventBridgeClient cwe;
 
         Aws::CloudWatchEvents::Model::PutEventsRequestEntry event_entry;
@@ -69,7 +69,7 @@ The following code example shows how to use `PutRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/eventbridge#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/events/EventBridgeClient.h>
 #include <aws/events/model/PutRuleRequest.h>
@@ -79,7 +79,7 @@ Include the required files.
 ```
 Create the rule.
 
-```
+```cpp
         Aws::CloudWatchEvents::EventBridgeClient cwe;
         Aws::CloudWatchEvents::Model::PutRuleRequest request;
         request.SetName(rule_name);
@@ -112,7 +112,7 @@ The following code example shows how to use `PutTargets`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/eventbridge#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/events/EventBridgeClient.h>
 #include <aws/events/model/PutTargetsRequest.h>
@@ -122,7 +122,7 @@ Include the required files.
 ```
 Add the target.
 
-```
+```cpp
         Aws::CloudWatchEvents::EventBridgeClient cwe;
 
         Aws::CloudWatchEvents::Model::Target target;

@@ -24,7 +24,7 @@ Defines the schema for the [`userdata.json` file](set-custom-idt-config.md#userd
 
 Configuration files are placed in your `{{<custom-test-suite-folder>}}` as shown here.
 
-```
+```json
 {{<custom-test-suite-folder>}}
 └── suite
     ├── suite.json
@@ -41,7 +41,7 @@ Configuration files are placed in your `{{<custom-test-suite-folder>}}` as shown
 
 The `suite.json` file sets environment variables and determines whether user data is required to run the test suite. Use the following template to configure your `{{<custom-test-suite-folder>}}/suite/suite.json` file:
 
-```
+```json
 {
     "id": "{{<suite-name>_<suite-version>}}",
     "title": "{{<suite-title>}}",
@@ -90,7 +90,7 @@ The value of the environment variable.
 
 The `group.json` file defines whether a test group is required or optional. Use the following template to configure your `{{<custom-test-suite-folder>}}/suite/{{<test-group>}}/group.json` file:
 
-```
+```json
 {
     "id": "{{<group-id>}}",
     "title": "{{<group-title>}}",
@@ -120,7 +120,7 @@ The `test.json` file determines the test case executables and the environment va
 
 Use the following template to configure your `{{<custom-test-suite-folder>}}/suite/{{<test-group>}}/{{<test-case>}}/test.json` file:
 
-```
+```json
 {
     "id": "{{<test-id>}}",
     "title": "{{<test-title>}}",

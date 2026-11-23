@@ -30,7 +30,7 @@ In this procedure, you create a simple Lambda function to serve as a target for 
 
 1. In the **Function code** section, edit the sample code to match the following example:
 
-   ```
+   ```python
    import json
 
    def lambda_handler(event, context):

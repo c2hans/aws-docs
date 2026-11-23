@@ -18,7 +18,7 @@ The following example shows how you might create a policy that allows associatin
 
 ****
 
-```
+```json
        {
       "Version":"2012-10-17",
       "Statement": [
@@ -58,7 +58,7 @@ You can use conditions in your IAM policies to control which tag key–value pai
 
 ****
 
-```
+```json
     {
         "Version":"2012-10-17",
         "Statement": {
@@ -92,7 +92,7 @@ The following example shows how you might create a policy that allows you to tag
 
 ****
 
-```
+```json
      {
       "Version":"2012-10-17",
       "Statement": {

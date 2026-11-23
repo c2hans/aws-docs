@@ -135,7 +135,7 @@ Clients that aren't anonymous can get root access to the file system through an 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

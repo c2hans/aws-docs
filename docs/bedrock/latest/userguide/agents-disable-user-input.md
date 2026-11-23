@@ -38,7 +38,7 @@ To disable user input, send an [UpdateAgentActionGroup](https://docs.aws.amazon.
 
 The following example shows the general format for specifying the required fields to disable user input.
 
-```
+```json
 CreateAgentActionGroup:
 {
   "actionGroupName": "AskUserAction",

@@ -105,7 +105,7 @@ Review your function's Amazon CloudWatch logs for before-checkpoint [runtime hoo
 ### Common cause
 <a name="snapstart-creation-latency-cause"></a>
 
-When Lambda creates a snapshot, your initialization code can run for up to 15 minutes. The time limit is 130 seconds or the [configured function timeout](configuration-timeout.md) (maximum 900 seconds), whichever is higher.
+When Lambda creates a snapshot, your initialization code can run for up to 15 minutes. The time limit is 130 seconds or the [configured function timeout](configuration-timeout.md) (maximum 900 seconds, even if the function timeout is longer), whichever is higher.
 
 If your function is [attached to a VPC](configuration-vpc.md#configuration-vpc-attaching), Lambda might also need to create network interfaces before the function becomes `Active`. If you try to invoke the function version while the function is `Pending`, you might get a 409 `ResourceConflictException`. If the function is invoked using an Amazon API Gateway endpoint, you might get a 500 error in API Gateway.
 

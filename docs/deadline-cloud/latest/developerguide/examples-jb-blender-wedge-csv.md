@@ -10,13 +10,13 @@ The bundle includes a pre-submission hook that expands the CSV into the job's ta
 
 The bundle requires the Deadline Cloud CLI version 0.58.0 or later with PyYAML available to `python3`, a queue with a conda queue environment that provides the `blender` package, and bundle hooks enabled once per workstation:
 
-```
+```bash
 deadline config set settings.allow_bundle_hooks true
 ```
 
 Submit from the bundle directory. The CLI asks for confirmation before running the bundle's hooks:
 
-```
+```bash
 deadline bundle submit .
 ```
 

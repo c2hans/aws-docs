@@ -221,7 +221,7 @@ For **Encryption Key**, create a new key, don't use the AWS default KMS key. Be 
 
 1. For **Key policy**, choose **Edit** and include the following to the policy **Statement** to allow Amazon FSx to use the KMS key and choose **Next**. Make sure to replace the {{us-west-2}} to the AWS Region where the file system is deployed and {{123456789012}} to your AWS account ID.
 
-   ```
+   ```json
    {
        "Sid": "Allow FSx to use the KMS key",
        "Version": "2012-10-17",
@@ -282,7 +282,7 @@ You can set more granular access control by modifying the `Resource` and `aws:So
 
    Add the following policy to the permission policy to allow Amazon FSx to use the secret, then choose **Next**. Make sure to replace the {{us-west-2}} to the AWS Region where the file system is deployed and {{123456789012}} to your AWS account ID.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

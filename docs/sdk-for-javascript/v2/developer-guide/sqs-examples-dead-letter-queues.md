@@ -36,7 +36,7 @@ After you create a queue to act as a dead letter queue, you must configure the o
 
 Create a Node.js module with the file name `sqs_deadletterqueue.js`. Be sure to configure the SDK as previously shown. To access Amazon SQS, create an `AWS.SQS` service object. Create a JSON object containing the parameters needed to update queue attributes, including the `RedrivePolicy` parameter that specifies both the ARN of the dead letter queue, as well as the value of `maxReceiveCount`. Also specify the URL source queue you want to configure. Call the `setQueueAttributes` method.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -64,7 +64,7 @@ sqs.setQueueAttributes(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sqs_deadletterqueue.js
 ```
 

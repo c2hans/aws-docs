@@ -46,7 +46,7 @@ If you use custom IAM policies to manage access to third-party applications, you
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -169,7 +169,7 @@ Update your IAM policy to include the following permissions:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

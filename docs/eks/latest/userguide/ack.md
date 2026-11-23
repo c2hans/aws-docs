@@ -23,7 +23,7 @@ ACK continuously reconciles the state of your AWS resources with the desired sta
 
  **Example S3 Bucket resource manifest**
 
-```
+```yaml
 apiVersion: s3.services.k8s.aws/v1alpha1
 kind: Bucket
 metadata:

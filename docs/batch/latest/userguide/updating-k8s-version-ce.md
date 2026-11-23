@@ -8,7 +8,7 @@ With AWS Batch, you can update the Kubernetes version of a compute environment t
 
 To upgrade the Kubernetes version of a compute environment, use the [UpdateComputeEnvironment](https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateComputeEnvironment.html) API operation.
 
-```
+```sh
 $ aws batch update-compute-environment \
     --compute-environment {{<compute-environment-name>}} \
     --compute-resources \

@@ -35,7 +35,7 @@ Carefully consider the KMS key ARN that you specify when statically configuring 
 ------
 #### [ Java ]
 
-```
+```java
 final KeyStore keystore = KeyStore.builder().KeyStoreConfig(
 	                 KeyStoreConfig.builder()
 	                         .ddbClient(DynamoDbClient.create())
@@ -51,7 +51,7 @@ final KeyStore keystore = KeyStore.builder().KeyStoreConfig(
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var kmsConfig = new KMSConfiguration { KmsKeyArn = {{kmsKeyArn}} };
 	 var keystoreConfig = new KeyStoreConfig
 	 {
@@ -67,7 +67,7 @@ var kmsConfig = new KMSConfiguration { KmsKeyArn = {{kmsKeyArn}} };
 ------
 #### [ Python ]
 
-```
+```python
 keystore: KeyStore = KeyStore(
     config=KeyStoreConfig(
         ddb_client=ddb_client,
@@ -84,7 +84,7 @@ keystore: KeyStore = KeyStore(
 ------
 #### [ Rust ]
 
-```
+```rust
 let sdk_config = aws_config::load_defaults(aws_config::BehaviorVersion::latest()).await;
 let key_store_config = KeyStoreConfig::builder()
     .kms_client(aws_sdk_kms::Client::new(&sdk_config))
@@ -100,7 +100,7 @@ let keystore = keystore_client::Client::from_conf(key_store_config)?;
 ------
 #### [ Go ]
 
-```
+```go
 import (
 	keystore "github.com/aws/aws-cryptographic-material-providers-library/mpl/awscryptographykeystoresmithygenerated"
 	keystoretypes "github.com/aws/aws-cryptographic-material-providers-library/mpl/awscryptographykeystoresmithygeneratedtypes"
@@ -131,7 +131,7 @@ The following example configures key store actions for discovery. You must speci
 ------
 #### [ Java ]
 
-```
+```java
 final KeyStore keystore = KeyStore.builder().KeyStoreConfig(
                  KeyStoreConfig.builder()
                          .ddbClient(DynamoDbClient.create())
@@ -147,7 +147,7 @@ final KeyStore keystore = KeyStore.builder().KeyStoreConfig(
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var keystoreConfig = new KeyStoreConfig
  {
      KmsClient = new AmazonKeyManagementServiceClient(),
@@ -162,7 +162,7 @@ var keystoreConfig = new KeyStoreConfig
 ------
 #### [ Python ]
 
-```
+```python
 keystore: KeyStore = KeyStore(
     config=KeyStoreConfig(
         ddb_client=ddb_client,
@@ -179,7 +179,7 @@ keystore: KeyStore = KeyStore(
 ------
 #### [ Rust ]
 
-```
+```rust
 let key_store_config = KeyStoreConfig::builder()
         .kms_client(kms_client)
         .ddb_client(ddb_client)
@@ -192,7 +192,7 @@ let key_store_config = KeyStoreConfig::builder()
 ------
 #### [ Go ]
 
-```
+```go
 import (
 	keystore "github.com/aws/aws-cryptographic-material-providers-library/mpl/awscryptographykeystoresmithygenerated"
 	keystoretypes "github.com/aws/aws-cryptographic-material-providers-library/mpl/awscryptographykeystoresmithygeneratedtypes"

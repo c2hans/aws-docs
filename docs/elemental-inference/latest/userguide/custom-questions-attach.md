@@ -34,7 +34,7 @@ aws elemental-inference create-feed \
 
 While you test new questions, you can use `DRAFT` instead, as in the following fragment.
 
-```
+```json
 "customQuestions": {
   "scene": { "questionSetId": "abcd1234efgh5678ijk", "version": "DRAFT" }
 }

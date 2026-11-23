@@ -19,7 +19,9 @@ Application integration is a suite of services that enables communication betwee
 
 Choosing an integration service that is the best fit for your organization and workloads can become difficult. This decision guide will help you ask the right questions to discover your requirements and provides clear guidance on how to evaluate and choose the right integration services for your workloads.
 
-[![AWS Videos](https://img.youtube.com/vi/Zrj7RD7G24Q?start=58&end=567/0.jpg)](https://www.youtube.com/watch?v=Zrj7RD7G24Q?start=58&end=567)
+[![AWS Videos](https://img.youtube.com/vi/Zrj7RD7G24Q/0.jpg)](https://www.youtube.com/watch?v=Zrj7RD7G24Q)
+
+*This 8½-minute clip is from a one hour recording of a presentation by AWS director of enterprise strategy Gregor Hohpe at AWS re:Invent 2022. It provides an overview of available AWS application integration services.*
 
 ## Understand
 <a name="understand"></a>

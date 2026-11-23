@@ -38,7 +38,7 @@ The following example shows a CloudTrail log entry that demonstrates the creatio
 **Note**
 Some of the events in notification log file entries might come from the service-linked role AWSServiceRoleForCodeStarNotifications.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

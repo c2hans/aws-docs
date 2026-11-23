@@ -41,7 +41,7 @@ If *geom* is null, then null is returned.
 
 The following SQL converts a well-known text (WKT) representation of a four-point `LINESTRING` to a `GEOMETRY` object and returns a polygon whose vertices whose corners are the minimum bounding box.
 
-```
+```sql
 SELECT ST_AsText(ST_Envelope(ST_GeomFromText('GEOMETRYCOLLECTION(POLYGON((0 0,10 0,0 10,0 0)),LINESTRING(20 10,20 0,10 0))')));
 ```
 

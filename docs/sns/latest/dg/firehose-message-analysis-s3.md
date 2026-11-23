@@ -23,7 +23,7 @@ For this example query, assume the following:
 
 The following query returns all SNS messages received in the specified date range:
 
-```
+```sql
 SELECT *
 FROM default.notifications
 WHERE from_iso8601_timestamp(timestamp) BETWEEN TIMESTAMP '2020-12-01 00:00:00' AND TIMESTAMP '2020-12-02 00:00:00';

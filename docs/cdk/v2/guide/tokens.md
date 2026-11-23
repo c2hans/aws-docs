@@ -13,7 +13,7 @@ The following is an example of a CDK stack that defines a construct for an Amazo
 
 **Example**
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as s3 from 'aws-cdk-lib/aws-s3';
@@ -34,7 +34,7 @@ export class CdkDemoAppStack extends cdk.Stack {
 }
 ```
 
-```
+```javascript
 const { Stack, Duration } = require('aws-cdk-lib');
 const s3 = require('aws-cdk-lib/aws-s3');
 
@@ -56,7 +56,7 @@ class CdkDemoAppStack extends Stack {
 module.exports = { CdkDemoAppStack }
 ```
 
-```
+```python
 from aws_cdk import (
     Stack
 )
@@ -78,7 +78,7 @@ class CdkDemoAppStack(Stack):
         print(f"myBucketName: {my_bucket_name}")
 ```
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -109,7 +109,7 @@ public class CdkDemoAppStack extends Stack {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 using Amazon.CDK.AWS.S3;
@@ -133,7 +133,7 @@ namespace CdkDemoApp
 }
 ```
 
-```
+```go
 package main
 
 import (
@@ -172,13 +172,13 @@ func NewCdkDemoAppStack(scope constructs.Construct, id string, props *CdkDemoApp
 ```
 When we run `cdk synth` to synthesize our stack, the value for `myBucketName` will be displayed in the token format of `${Token[TOKEN.<1234>]}`. This token format is a result of how the AWS CDK encodes tokens. In this example, the token is encoded as a string:
 
-```
+```bash
 $ cdk synth --quiet
 myBucketName: ${Token[TOKEN.21]}
 ```
 Since the value for our bucket name is not known at synthesis, the token is rendered as `myBucket<unique-hash>`. Our AWS CloudFormation template uses the `Ref` intrinsic function to reference its value, which will be known at deployment:
 
-```
+```yaml
 Resources:
   myBucket<5AF9C99B>:
     # ...
@@ -198,7 +198,7 @@ Tokens can be passed around as if they were the actual value they represent. The
 
 **Example**
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as s3 from 'aws-cdk-lib/aws-s3';
@@ -234,7 +234,7 @@ export class CdkDemoAppStack extends cdk.Stack {
 }
 ```
 
-```
+```javascript
 const { Stack, Duration } = require('aws-cdk-lib');
 const s3 = require('aws-cdk-lib/aws-s3');
 const lambda = require('aws-cdk-lib/aws-lambda');
@@ -271,7 +271,7 @@ class CdkDemoAppStack extends Stack {
 module.exports = { CdkDemoAppStack }
 ```
 
-```
+```python
 from aws_cdk import (
     Stack
 )
@@ -308,7 +308,7 @@ class CdkDemoAppStack(Stack):
         )
 ```
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -354,7 +354,7 @@ public class CdkDemoAppStack extends Stack {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 using Amazon.CDK.AWS.S3;
@@ -398,7 +398,7 @@ namespace CdkDemoApp
 }
 ```
 
-```
+```go
 package main
 
 import (
@@ -451,7 +451,7 @@ func NewCdkDemoAppStack(scope constructs.Construct, id string, props *CdkDemoApp
 ```
 When we synthesize our template, the `Ref` and `Fn::Join` intrinsic functions are used to specify the values, which will be known at deployment:
 
-```
+```yaml
 Resources:
   myBucket<5AF9C99B>:
     Type: AWS::S3::Bucket
@@ -500,7 +500,7 @@ To check whether a value has an unresolved token in it, call the [`Token.isUnres
 
 **Example**
 
-```
+```javascript
 // ...
 
 export class CdkDemoAppStack extends cdk.Stack {
@@ -523,7 +523,7 @@ export class CdkDemoAppStack extends cdk.Stack {
 }
 ```
 
-```
+```javascript
 const { Stack, Duration, Token, CfnOutput } = require('aws-cdk-lib');
 // ...
 
@@ -548,7 +548,7 @@ class CdkDemoAppStack extends Stack {
 }
 ```
 
-```
+```python
 from aws_cdk import (
     Stack,
     Token
@@ -574,7 +574,7 @@ class CdkDemoAppStack(Stack):
         # ...
 ```
 
-```
+```java
 // ...
 import software.amazon.awscdk.Token;
 import software.amazon.awscdk.services.s3.Bucket;
@@ -610,7 +610,7 @@ public class CdkDemoAppStack extends Stack {
   }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 using Amazon.CDK.AWS.S3;
@@ -648,7 +648,7 @@ namespace CdkDemoApp
 }
 ```
 
-```
+```go
 // ...
 
 func NewCdkDemoAppStack(scope constructs.Construct, id string, props *CdkDemoAppStackProps) awscdk.Stack {
@@ -676,7 +676,7 @@ func NewCdkDemoAppStack(scope constructs.Construct, id string, props *CdkDemoApp
 
 When we run `cdk synth`, `myBucketName` is identified as a token:
 
-```
+```bash
 $ cdk synth --quiet
 Token identified.
 ```
@@ -697,27 +697,27 @@ They can be passed around like regular strings, and can be concatenated, as show
 
 **Example**
 
-```
+```javascript
 const functionName = bucket.bucketName + 'Function';
 ```
 
-```
+```javascript
 const functionName = bucket.bucketName + 'Function';
 ```
 
-```
+```python
 function_name = bucket.bucket_name + "Function"
 ```
 
-```
+```java
 String functionName = bucket.getBucketName().concat("Function");
 ```
 
-```
+```csharp
 string functionName = bucket.BucketName + "Function";
 ```
 
-```
+```go
 functionName := *bucket.BucketName() + "Function"
 ```
 
@@ -725,28 +725,28 @@ You can also use string interpolation, if your language supports it, as shown in
 
 **Example**
 
-```
+```javascript
 const functionName = `${bucket.bucketName}Function`;
 ```
 
-```
+```javascript
 const functionName = `${bucket.bucketName}Function`;
 ```
 
-```
+```python
 function_name = f"{bucket.bucket_name}Function"
 ```
 
-```
+```java
 String functionName = String.format("%sFunction". bucket.getBucketName());
 ```
 
-```
+```csharp
 string functionName = $"${bucket.bucketName}Function";
 ```
 Use `fmt.Sprintf` for similar functionality:
 
-```
+```go
 functionName := fmt.Sprintf("%sFunction", *bucket.BucketName())
 ```
 
@@ -778,7 +778,7 @@ The following is an example of a construct that contains a token encoded as a nu
 
 **Example**
 
-```
+```javascript
 import { Stack, Duration, StackProps } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as rds from 'aws-cdk-lib/aws-rds';
@@ -810,7 +810,7 @@ export class CdkDemoAppStack extends Stack {
 }
 ```
 
-```
+```javascript
 const { Stack, Duration } = require('aws-cdk-lib');
 const lambda = require('aws-cdk-lib/aws-lambda');
 const rds = require('aws-cdk-lib/aws-rds');
@@ -844,7 +844,7 @@ class CdkDemoAppStack extends Stack {
 module.exports = { CdkDemoAppStack }
 ```
 
-```
+```python
 from aws_cdk import (
     Duration,
     Stack,
@@ -878,7 +878,7 @@ class CdkDemoAppStack(Stack):
         print(f"portToken: {port_token}")
 ```
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -919,7 +919,7 @@ public class CdkDemoAppStack extends Stack {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 using Amazon.CDK.AWS.EC2;
@@ -959,7 +959,7 @@ namespace CdkDemoApp
 }
 ```
 
-```
+```go
 package main
 
 import (
@@ -1010,7 +1010,7 @@ func NewCdkDemoAppStack(scope constructs.Construct, id string, props *CdkDemoApp
 
 When we run `cdk synth`, the value for `portToken` is displayed as a number-encoded token:
 
-```
+```bash
 $ cdk synth --quiet
 portToken: -1.8881545897087968e+289
 ```
@@ -1024,7 +1024,7 @@ In the following example,`portToken` is a number-encoded token that we want to p
 
 **Example**
 
-```
+```javascript
 import { Stack, Duration, CfnOutput, StackProps } from 'aws-cdk-lib';
 // ...
 import * as lambda from 'aws-cdk-lib/aws-lambda';
@@ -1075,7 +1075,7 @@ export class CdkDemoAppStack extends Stack {
 }
 ```
 
-```
+```javascript
 const { Stack, Duration, CfnOutput } = require('aws-cdk-lib');
 // ...
 const lambda = require('aws-cdk-lib/aws-lambda');
@@ -1128,7 +1128,7 @@ class CdkDemoAppStack extends Stack {
 module.exports = { CdkDemoAppStack }
 ```
 
-```
+```python
 from aws_cdk import (
     Duration,
     Stack,
@@ -1182,7 +1182,7 @@ class CdkDemoAppStack(Stack):
         )
 ```
 
-```
+```java
 // ...
 import software.amazon.awscdk.CfnOutput;
 import software.amazon.awscdk.services.lambda.Function;
@@ -1240,7 +1240,7 @@ public class CdkDemoAppStack extends Stack {
 }
 ```
 
-```
+```csharp
 // ...
 using Amazon.CDK.AWS.Lambda;
 using Amazon.CDK.AWS.RDS;
@@ -1304,7 +1304,7 @@ namespace CdkDemoApp
 }
 ```
 
-```
+```go
 // ...
 	"github.com/aws/aws-cdk-go/awscdk/v2/awslambda"
 )
@@ -1376,7 +1376,7 @@ To convert a number-encoded token to a string, use [`cdk.Tokenization.stringifyN
 
 **Example**
 
-```
+```javascript
 import { Stack, Duration, Tokenization, CfnOutput, StackProps } from 'aws-cdk-lib';
 // ...
 
@@ -1420,7 +1420,7 @@ export class CdkDemoAppStack extends Stack {
 }
 ```
 
-```
+```javascript
 const { Stack, Duration, Tokenization, CfnOutput } = require('aws-cdk-lib');
 // ...
 
@@ -1466,7 +1466,7 @@ class CdkDemoAppStack extends Stack {
 module.exports = { CdkDemoAppStack }
 ```
 
-```
+```python
 from aws_cdk import (
     Duration,
     Stack,
@@ -1512,7 +1512,7 @@ class CdkDemoAppStack(Stack):
         )
 ```
 
-```
+```java
 // ...
 import software.amazon.awscdk.Tokenization;
 
@@ -1560,7 +1560,7 @@ public class CdkDemoAppStack extends Stack {
 }
 ```
 
-```
+```csharp
 // ...
 
 namespace CdkDemoApp
@@ -1609,7 +1609,7 @@ namespace CdkDemoApp
 }
 ```
 
-```
+```go
 // ...
 
 func NewCdkDemoAppStack(scope constructs.Construct, id string, props *CdkDemoAppStackProps) awscdk.Stack {
@@ -1662,7 +1662,7 @@ func NewCdkDemoAppStack(scope constructs.Construct, id string, props *CdkDemoApp
 
 When we run `cdk synth`, the value for our connection string is represented in a cleaner and clearer format:
 
-```
+```bash
 $ cdk synth --quiet
 connectionString: jdbc:mysql://mydb.cluster.amazonaws.com:${Token[TOKEN.242]}/mydatabase
 ```
@@ -1678,7 +1678,7 @@ The following example creates an Auto Scaling group whose capacity is determined
 
 **Example**
 
-```
+```javascript
 let actualValue: number;
 
 new AutoScalingGroup(this, 'Group', {
@@ -1693,7 +1693,7 @@ new AutoScalingGroup(this, 'Group', {
 actualValue = 10;
 ```
 
-```
+```javascript
 let actualValue;
 
 new AutoScalingGroup(this, 'Group', {
@@ -1708,7 +1708,7 @@ new AutoScalingGroup(this, 'Group', {
 actualValue = 10;
 ```
 
-```
+```python
 class Producer:
     def __init__(self, func):
         self.produce = func
@@ -1723,7 +1723,7 @@ AutoScalingGroup(self, "Group",
 actual_value = 10
 ```
 
-```
+```java
 double actualValue = 0;
 
 class ProduceActualValue implements INumberProducer {
@@ -1741,7 +1741,7 @@ AutoScalingGroup.Builder.create(this, "Group")
 actualValue = 10;
 ```
 
-```
+```csharp
 public class NumberProducer : INumberProducer
 {
     Func<Double> function;
@@ -1775,32 +1775,32 @@ Sometimes you want to produce a JSON string of arbitrary data, and you may not k
 
 **Example**
 
-```
+```javascript
 const stack = Stack.of(this);
 const str = stack.toJsonString({
   value: bucket.bucketName
 });
 ```
 
-```
+```javascript
 const stack = Stack.of(this);
 const str = stack.toJsonString({
   value: bucket.bucketName
 });
 ```
 
-```
+```python
 stack = Stack.of(self)
 string = stack.to_json_string(dict(value=bucket.bucket_name))
 ```
 
-```
+```java
 Stack stack = Stack.of(this);
 String stringVal = stack.toJsonString(java.util.Map.of(    // Map.of requires Java 9+
         put("value", bucket.getBucketName())));
 ```
 
-```
+```csharp
 var stack = Stack.Of(this);
 var stringVal = stack.ToJsonString(new Dictionary<string, string>
 {

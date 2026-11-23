@@ -22,7 +22,7 @@ To output logs from your function code, you can use methods on [the fmt package]
 
 **Example [main.go](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/blank-go/function/main.go) – Logging**
 
-```
+```go
 func handleRequest(ctx context.Context, event events.SQSEvent) (string, error) {
   // event
   eventJson, _ := json.MarshalIndent(event, "", "  ")

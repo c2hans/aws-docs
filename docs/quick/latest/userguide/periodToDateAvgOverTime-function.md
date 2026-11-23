@@ -9,7 +9,7 @@ The `periodToDateAvgOverTime` function calculates the average of a measure for a
 ## Syntax
 <a name="periodToDateAvgOverTime-function-syntax"></a>
 
-```
+```text
 periodToDateAvgOverTime(
 	measure,
 	dateTime,
@@ -34,7 +34,7 @@ The default value is the visual's date dimension granularity.
 
 The following function calculates the average fare amount month over mont.
 
-```
+```text
 periodToDateAvgOverTime(sum({fare_amount}), pickupDatetime, MONTH)
 ```
 

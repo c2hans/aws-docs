@@ -61,7 +61,7 @@ The following example demonstrates how to use the `CreateApplication` API action
 
 For more information about `CreateApplication`, see [CreateApplication](API_CreateApplication.md).
 
-```
+```json
 {
    "ApplicationCode": "{{<The SQL code the new application will run on the input stream>}}",
    "ApplicationDescription": "{{<A friendly description for the new application>}}",
@@ -107,7 +107,7 @@ In the following example, each source stream is first aggregated using [COUNT](h
 **Note**
 To run this example and get results from both in-application input streams, update both the number of shards in your source stream and the `InputParallelism` parameter in your application.
 
-```
+```SQL
 CREATE OR REPLACE STREAM in_application_stream_001 (
     ticker VARCHAR(64),
     ticker_count INTEGER

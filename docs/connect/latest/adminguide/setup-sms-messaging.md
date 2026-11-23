@@ -209,7 +209,7 @@ Before proceeding, your Connect Customer instance should have the following sett
 
    1. Run the following CLI command with your AWS account credentials to integrate the Lambda function created in step 2 with the Message Processing flow block:
 
-      ```
+      ```bash
       aws connect create-integration-association \
           --instance-id {{your-connect-instance-id}} \
           --integration-type MESSAGE_PROCESSOR \

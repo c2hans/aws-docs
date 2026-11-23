@@ -37,7 +37,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `AssociateServiceRoleToAccount` action.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -69,7 +69,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Associ
 
 The following example shows a CloudTrail log entry that demonstrates the `GetGroupVersion` action.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -108,7 +108,7 @@ The following example shows a CloudTrail log entry that demonstrates the `GetGro
 
 The following example shows a CloudTrail log entry that demonstrates the `GetConnectivityInfo` action.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -139,7 +139,7 @@ The following example shows a CloudTrail log entry that demonstrates the `GetCon
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateFunctionDefinition` action.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

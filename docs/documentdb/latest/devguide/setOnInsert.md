@@ -83,7 +83,7 @@ To view a code example for using the `$setOnInsert` command, choose the tab for 
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function updateWithSetOnInsert() {
@@ -112,7 +112,7 @@ updateWithSetOnInsert();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def update_with_set_on_insert():

@@ -53,7 +53,7 @@ Before you configure monitoring, be sure to complete the following setup tasks:
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

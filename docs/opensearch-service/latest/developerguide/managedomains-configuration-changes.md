@@ -70,6 +70,9 @@ Prior to March 10, 2026, in-place volume increases were supported only for volum
 + Adding or removing tags
 
 **Note**
+Although each of the preceding operations usually doesn't cause a blue/green deployment individually, combining two or more changes in a single update can trigger one. To check how your changes will be applied before you update your domain, perform a dry run. For more information, see [Determining whether a change will cause a blue/green deployment](#dryrun).
+
+**Note**
 There are some exceptions depending on your service software version. If you want to be sure that a change won't cause a blue/green deployment, [perform a dry run](#dryrun) before updating your domain, if this option is available. Some changes don't offer a dry run option. We generally recommend that you make changes to your cluster outside of peak traffic hours.
 
 ## Blue/Green Deployment options
@@ -260,7 +263,7 @@ To run a dry run analysis without a validation check, set `DryRunMode` to `Basic
 
 The following Python code uses the [UpdateDomainConfig](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_UpdateDomainConfig.html) API to perform a dry run validation check and, if the check succeeds, calls the same API without a dry run to start the update. If the check fails, the script prints out the error and stops.
 
-```
+```python
 import time
 import boto3
 
@@ -353,7 +356,7 @@ POST https://es.{{us-east-1}}.amazonaws.com/2021-01-01/opensearch/domain/{{my-do
 
 Set the `AcceptedWarnings` property on your domain resource to accept warnings directly in your template. Include the code of each warning you want to accept. As with the API, this property applies only to the update it's included in and isn't persisted on the domain.
 
-```
+```yaml
 Resources:
   MyDomain:
     Type: AWS::OpenSearchService::Domain

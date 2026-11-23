@@ -26,7 +26,7 @@ The following code example shows how to use `Add-ASLoadBalancer`.
 **Tools for PowerShell V4**
 **Example 1: This example attaches the specified load balancer to the specified Auto Scaling group.**
 
-```
+```powershell
 Add-ASLoadBalancer -LoadBalancerName my-lb -AutoScalingGroupName my-asg
 ```
 +  For API details, see [AttachLoadBalancers](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -39,7 +39,7 @@ The following code example shows how to use `Complete-ASLifecycleAction`.
 **Tools for PowerShell V4**
 **Example 1: This example completes the specified lifecycle action.**
 
-```
+```powershell
 Complete-ASLifecycleAction -LifecycleHookName myLifecycleHook -AutoScalingGroupName my-asg -LifecycleActionResult CONTINUE -LifecycleActionToken bcd2f1b8-9a78-44d3-8a7a-4dd07d7cf635
 ```
 +  For API details, see [CompleteLifecycleAction](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -52,12 +52,12 @@ The following code example shows how to use `Disable-ASMetricsCollection`.
 **Tools for PowerShell V4**
 **Example 1: This example disables monitoring of the specified metrics for the specified Auto Scaling group.**
 
-```
+```powershell
 Disable-ASMetricsCollection -AutoScalingGroupName my-asg -Metric @("GroupMinSize", "GroupMaxSize")
 ```
 **Example 2: This example disables monitoring of all metrics for the specified Auto Scaling group.**
 
-```
+```powershell
 Disable-ASMetricsCollection -AutoScalingGroupName my-asg
 ```
 +  For API details, see [DisableMetricsCollection](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -70,7 +70,7 @@ The following code example shows how to use `Dismount-ASInstance`.
 **Tools for PowerShell V4**
 **Example 1: This example detaches the specified instance from the specified Auto Scaling group and decreases the desired capacity so that Auto Scaling does not launch a replacement instance.**
 
-```
+```powershell
 Dismount-ASInstance -InstanceId i-93633f9b -AutoScalingGroupName my-asg -ShouldDecrementDesiredCapacity $true
 ```
 **Output:**
@@ -90,7 +90,7 @@ StatusMessage        :
 ```
 **Example 2: This example detaches the specified instance from the specified Auto Scaling group without decreasing the desired capacity. Auto Scaling launches a replacement instance.**
 
-```
+```powershell
 Dismount-ASInstance -InstanceId i-7bf746a2 -AutoScalingGroupName my-asg -ShouldDecrementDesiredCapacity $false
 ```
 **Output:**
@@ -117,7 +117,7 @@ The following code example shows how to use `Dismount-ASLoadBalancer`.
 **Tools for PowerShell V4**
 **Example 1: This example detaches the specified load balancer from the specified Auto Scaling group.**
 
-```
+```powershell
 Dismount-ASLoadBalancer -LoadBalancerName my-lb -AutoScalingGroupName my-asg
 ```
 +  For API details, see [DetachLoadBalancers](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -130,12 +130,12 @@ The following code example shows how to use `Enable-ASMetricsCollection`.
 **Tools for PowerShell V4**
 **Example 1: This example enables monitoring of the specified metrics for the specified Auto Scaling group.**
 
-```
+```powershell
 Enable-ASMetricsCollection  -Metric @("GroupMinSize", "GroupMaxSize") -AutoScalingGroupName my-asg -Granularity 1Minute
 ```
 **Example 2: This example enables monitoring of all metrics for the specified Auto Scaling group.**
 
-```
+```powershell
 Enable-ASMetricsCollection -AutoScalingGroupName my-asg -Granularity 1Minute
 ```
 +  For API details, see [EnableMetricsCollection](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -148,7 +148,7 @@ The following code example shows how to use `Enter-ASStandby`.
 **Tools for PowerShell V4**
 **Example 1: This example puts the specified instance into standby mode and decreases the desired capacity so that Auto Scaling does not launch a replacement instance.**
 
-```
+```powershell
 Enter-ASStandby -InstanceId i-93633f9b -AutoScalingGroupName my-asg -ShouldDecrementDesiredCapacity $true
 ```
 **Output:**
@@ -168,7 +168,7 @@ StatusMessage        :
 ```
 **Example 2: This example puts the specified instance into standby mode without decreasing the desired capacity. Auto Scaling launches a replacement instance.**
 
-```
+```powershell
 Enter-ASStandby -InstanceId i-93633f9b -AutoScalingGroupName my-asg -ShouldDecrementDesiredCapacity $false
 ```
 **Output:**
@@ -195,7 +195,7 @@ The following code example shows how to use `Exit-ASStandby`.
 **Tools for PowerShell V4**
 **Example 1: This example moves the specified instance out of standby mode.**
 
-```
+```powershell
 Exit-ASStandby -InstanceId i-93633f9b -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -223,7 +223,7 @@ The following code example shows how to use `Get-ASAccountLimit`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the Auto Scaling resource limits for your AWS account.**
 
-```
+```powershell
 Get-ASAccountLimit
 ```
 **Output:**
@@ -242,7 +242,7 @@ The following code example shows how to use `Get-ASAdjustmentType`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the adjustment types that are supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASAdjustmentType
 ```
 **Output:**
@@ -264,7 +264,7 @@ The following code example shows how to use `Get-ASAutoScalingGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the names of your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASAutoScalingGroup | format-table -property AutoScalingGroupName
 ```
 **Output:**
@@ -281,7 +281,7 @@ my-asg-6
 ```
 **Example 2: This example describes the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASAutoScalingGroup -AutoScalingGroupName my-asg-1
 ```
 **Output:**
@@ -311,22 +311,22 @@ VPCZoneIdentifier       : subnet-e4f33493,subnet-5264e837
 ```
 **Example 3: This example describes the specified two Auto Scaling groups.**
 
-```
+```powershell
 Get-ASAutoScalingGroup -AutoScalingGroupName @("my-asg-1", "my-asg-2")
 ```
 **Example 4: This example describes the Auto Scaling instances for the specified Auto Scaling group.**
 
-```
+```powershell
 (Get-ASAutoScalingGroup -AutoScalingGroupName my-asg-1).Instances
 ```
 **Example 5: This example describes all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASAutoScalingGroup
 ```
 **Example 6: This example describes LaunchTemplate for the specified Auto Scaling group. This example assumes that the "Instance purchase options" is set to "Adhere to launch template". In case this option is set to "Combine purchase options and instance types", LaunchTemplate could be accessed using "MixedInstancesPolicy.LaunchTemplate" property.**
 
-```
+```powershell
 (Get-ASAutoScalingGroup -AutoScalingGroupName my-ag-1).LaunchTemplate
 ```
 **Output:**
@@ -346,7 +346,7 @@ The following code example shows how to use `Get-ASAutoScalingInstance`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the IDs of your Auto Scaling instances.**
 
-```
+```powershell
 Get-ASAutoScalingInstance | format-table -property InstanceId
 ```
 **Output:**
@@ -360,7 +360,7 @@ i-abcd1234
 ```
 **Example 2: This example describes the specified Auto Scaling instance.**
 
-```
+```powershell
 Get-ASAutoScalingInstance -InstanceId i-12345678
 ```
 **Output:**
@@ -375,17 +375,17 @@ LifecycleState          : InService
 ```
 **Example 3: This example describes the specified two Auto Scaling instances.**
 
-```
+```powershell
 Get-ASAutoScalingInstance -InstanceId @("i-12345678", "i-87654321")
 ```
 **Example 4: This example describes the Auto Scaling instances for the specified Auto Scaling group.**
 
-```
+```powershell
 (Get-ASAutoScalingGroup -AutoScalingGroupName my-asg).Instances | Get-ASAutoScalingInstance
 ```
 **Example 5: This example describes all your Auto Scaling instances.**
 
-```
+```powershell
 Get-ASAutoScalingInstance
 ```
 +  For API details, see [DescribeAutoScalingInstances](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -398,7 +398,7 @@ The following code example shows how to use `Get-ASAutoScalingNotificationType`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the notification types that are supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASAutoScalingNotificationType
 ```
 **Output:**
@@ -420,7 +420,7 @@ The following code example shows how to use `Get-ASLaunchConfiguration`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the names of your launch configurations.**
 
-```
+```powershell
 Get-ASLaunchConfiguration | format-table -property LaunchConfigurationName
 ```
 **Output:**
@@ -436,7 +436,7 @@ my-lc-5
 ```
 **Example 2: This example describes the specified launch configuration.**
 
-```
+```powershell
 Get-ASLaunchConfiguration -LaunchConfigurationName my-lc-1
 ```
 **Output:**
@@ -465,12 +465,12 @@ UserData                     :
 ```
 **Example 3: This example describes the specified two launch configurations.**
 
-```
+```powershell
 Get-ASLaunchConfiguration -LaunchConfigurationName @("my-lc-1", "my-lc-2")
 ```
 **Example 4: This example describes all your launch configurations.**
 
-```
+```powershell
 Get-ASLaunchConfiguration
 ```
 +  For API details, see [DescribeLaunchConfigurations](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -483,7 +483,7 @@ The following code example shows how to use `Get-ASLifecycleHook`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified lifecycle hook.**
 
-```
+```powershell
 Get-ASLifecycleHook -AutoScalingGroupName my-asg -LifecycleHookName myLifecycleHook
 ```
 **Output:**
@@ -501,12 +501,12 @@ RoleARN               : arn:aws:iam::123456789012:role/my-iam-role
 ```
 **Example 2: This example describes all lifecycle hooks for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASLifecycleHook -AutoScalingGroupName my-asg
 ```
 **Example 3: This example describes all lifecycle hooks for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASLifecycleHook
 ```
 +  For API details, see [DescribeLifecycleHooks](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -519,7 +519,7 @@ The following code example shows how to use `Get-ASLifecycleHookType`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the lifecycle hook types supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASLifecycleHookType
 ```
 **Output:**
@@ -538,7 +538,7 @@ The following code example shows how to use `Get-ASLoadBalancer`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the load balancers for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASLoadBalancer -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -558,7 +558,7 @@ The following code example shows how to use `Get-ASMetricCollectionType`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the metric collection types that are supported by Auto Scaling.**
 
-```
+```powershell
 (Get-ASMetricCollectionType).Metrics
 ```
 **Output:**
@@ -577,7 +577,7 @@ GroupTotalInstances
 ```
 **Example 2: This example lists the corresponding granularities.**
 
-```
+```powershell
 (Get-ASMetricCollectionType).Granularities
 ```
 **Output:**
@@ -597,7 +597,7 @@ The following code example shows how to use `Get-ASNotificationConfiguration`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the notification actions associated with the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASNotificationConfiguration -AutoScalingGroupName my-asg | format-list
 ```
 **Output:**
@@ -613,7 +613,7 @@ TopicARN             : arn:aws:sns:us-west-2:123456789012:my-topic
 ```
 **Example 2: This example describes the notification actions associated with all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASNotificationConfiguration
 ```
 +  For API details, see [DescribeNotificationConfigurations](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -626,7 +626,7 @@ The following code example shows how to use `Get-ASPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example describes all policies for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASPolicy -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -649,12 +649,12 @@ StepAdjustments         : {}
 ```
 **Example 2: This example describes the specified policies for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASPolicy -AutoScalingGroupName my-asg -PolicyName @("myScaleOutPolicy", "myScaleInPolicy")
 ```
 **Example 3: This example describes all policies for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASPolicy
 ```
 +  For API details, see [DescribePolicies](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -667,7 +667,7 @@ The following code example shows how to use `Get-ASScalingActivity`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the scaling activities for the last six weeks for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASScalingActivity -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -701,12 +701,12 @@ StatusMessage        :
 ```
 **Example 2: This example describes the specified scaling activity.**
 
-```
+```powershell
 Get-ASScalingActivity -ActivityId "063308ae-aa22-4a9b-94f4-9fae4EXAMPLE"
 ```
 **Example 3: This example describes the scaling activities for the last six weeks for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASScalingActivity
 ```
 +  For API details, see [DescribeScalingActivities](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -719,7 +719,7 @@ The following code example shows how to use `Get-ASScalingProcessType`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the process types that are supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASScalingProcessType
 ```
 **Output:**
@@ -746,7 +746,7 @@ The following code example shows how to use `Get-ASScheduledAction`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the scheduled scaling actions for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASScheduledAction -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -766,22 +766,22 @@ Time                 : 11/30/2015 8:00:00 AM
 ```
 **Example 2: This example describes the specified scheduled scaling actions.**
 
-```
+```powershell
 Get-ASScheduledAction -ScheduledActionName @("myScheduledScaleOut", "myScheduledScaleIn")
 ```
 **Example 3: This example describes the scheduled scaling actions that start by the specified time.**
 
-```
+```powershell
 Get-ASScheduledAction -StartTime "2015-12-01T08:00:00Z"
 ```
 **Example 4: This example describes the scheduled scaling actions that end by the specified time.**
 
-```
+```powershell
 Get-ASScheduledAction -EndTime "2015-12-30T08:00:00Z"
 ```
 **Example 5: This example describes the scheduled scaling actions for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASScheduledAction
 ```
 +  For API details, see [DescribeScheduledActions](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -794,7 +794,7 @@ The following code example shows how to use `Get-ASTag`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the tags with a key value of either 'myTag' or 'myTag2'. The possible values for the filter name are 'auto-scaling-group', 'key', 'value', and 'propagate-at-launch'. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Get-ASTag -Filter @( @{ Name="key"; Values=@("myTag", "myTag2") } )
 ```
 **Output:**
@@ -814,7 +814,7 @@ Value             : myTagValue
 ```
 **Example 2: With PowerShell version 2, you must use New-Object to create the filter for the Filter parameter.**
 
-```
+```powershell
 $keys = New-Object string[] 2
 $keys[0] = "myTag"
 $keys[1] = "myTag2"
@@ -825,7 +825,7 @@ Get-ASTag -Filter @( $filter )
 ```
 **Example 3: This example describes all tags for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASTag
 ```
 +  For API details, see [DescribeTags](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -838,7 +838,7 @@ The following code example shows how to use `Get-ASTerminationPolicyType`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the termination policies that are supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASTerminationPolicyType
 ```
 **Output:**
@@ -860,7 +860,7 @@ The following code example shows how to use `Mount-ASInstance`.
 **Tools for PowerShell V4**
 **Example 1: This example attaches the specified instance to the specified Auto Scaling group. Auto Scaling automatically increases the desired capacity of the Auto Scaling group.**
 
-```
+```powershell
 Mount-ASInstance -InstanceId i-93633f9b -AutoScalingGroupName my-asg
 ```
 +  For API details, see [AttachInstances](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -873,7 +873,7 @@ The following code example shows how to use `New-ASAutoScalingGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example creates an Auto Scaling group with the specified name and attributes. The default desired capacity is the minimum size. Therefore, this Auto Scaling group launches two instances, one in each of the specified two Availability Zones.**
 
-```
+```powershell
 New-ASAutoScalingGroup -AutoScalingGroupName my-asg -LaunchConfigurationName my-lc -MinSize 2 -MaxSize 6 -AvailabilityZone @("us-west-2a", "us-west-2b")
 ```
 +  For API details, see [CreateAutoScalingGroup](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -886,7 +886,7 @@ The following code example shows how to use `New-ASLaunchConfiguration`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a launch configuration named 'my-lc'. The EC2 instances launched by Auto Scaling groups that use this launch configuration use specified instance type, AMI, security group, and IAM role.**
 
-```
+```powershell
 New-ASLaunchConfiguration -LaunchConfigurationName my-lc -InstanceType "m3.medium" -ImageId "ami-12345678" -SecurityGroup "sg-12345678" -IamInstanceProfile "myIamRole"
 ```
 +  For API details, see [CreateLaunchConfiguration](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -899,7 +899,7 @@ The following code example shows how to use `Remove-ASAutoScalingGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified Auto Scaling group if it has no running instances. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASAutoScalingGroup -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -912,12 +912,12 @@ Performing operation "Remove-ASAutoScalingGroup (DeleteAutoScalingGroup)" on Tar
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASAutoScalingGroup -AutoScalingGroupName my-asg -Force
 ```
 **Example 3: This example deletes the specified Auto Scaling group and terminates any running instances that it contains.**
 
-```
+```powershell
 Remove-ASAutoScalingGroup -AutoScalingGroupName my-asg -ForceDelete $true -Force
 ```
 +  For API details, see [DeleteAutoScalingGroup](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -930,7 +930,7 @@ The following code example shows how to use `Remove-ASLaunchConfiguration`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified launch configuration if it is not attached to an Auto Scaling group. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASLaunchConfiguration -LaunchConfigurationName my-lc
 ```
 **Output:**
@@ -943,7 +943,7 @@ Performing operation "Remove-ASLaunchConfiguration (DeleteLaunchConfiguration)" 
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASLaunchConfiguration -LaunchConfigurationName my-lc -Force
 ```
 +  For API details, see [DeleteLaunchConfiguration](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -956,7 +956,7 @@ The following code example shows how to use `Remove-ASLifecycleHook`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified lifecycle hook for the specified Auto Scaling group. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASLifecycleHook -AutoScalingGroupName my-asg -LifecycleHookName myLifecycleHook
 ```
 **Output:**
@@ -969,7 +969,7 @@ Performing operation "Remove-ASLifecycleHook (DeleteLifecycleHook)" on Target "m
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASLifecycleHook -AutoScalingGroupName my-asg -LifecycleHookName myLifecycleHook -Force
 ```
 +  For API details, see [DeleteLifecycleHook](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -982,7 +982,7 @@ The following code example shows how to use `Remove-ASNotificationConfiguration`
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified notification action. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASNotificationConfiguration -AutoScalingGroupName my-asg -TopicARN "arn:aws:sns:us-west-2:123456789012:my-topic"
 ```
 **Output:**
@@ -996,7 +996,7 @@ Performing operation "Remove-ASNotificationConfiguration (DeleteNotificationConf
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASNotificationConfiguration -AutoScalingGroupName my-asg -TopicARN "arn:aws:sns:us-west-2:123456789012:my-topic" -Force
 ```
 +  For API details, see [DeleteNotificationConfiguration](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1009,7 +1009,7 @@ The following code example shows how to use `Remove-ASPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified policy for the specified Auto Scaling group. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASPolicy -AutoScalingGroupName my-asg -PolicyName myScaleInPolicy
 ```
 **Output:**
@@ -1022,7 +1022,7 @@ Performing operation "Remove-ASPolicy (DeletePolicy)" on Target "myScaleInPolicy
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASPolicy -AutoScalingGroupName my-asg -PolicyName myScaleInPolicy -Force
 ```
 +  For API details, see [DeletePolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1035,7 +1035,7 @@ The following code example shows how to use `Remove-ASScheduledAction`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified scheduled action for the specified Auto Scaling group. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASScheduledAction -AutoScalingGroupName my-asg -ScheduledAction "myScheduledAction"
 ```
 **Output:**
@@ -1048,7 +1048,7 @@ Performing operation "Remove-ASScheduledAction (DeleteScheduledAction)" on Targe
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASScheduledAction -AutoScalingGroupName my-asg -ScheduledAction "myScheduledAction" -Force
 ```
 +  For API details, see [DeleteScheduledAction](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1061,7 +1061,7 @@ The following code example shows how to use `Remove-ASTag`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified tag from the specified Auto Scaling group. You are prompted for confirmation before the operation proceeds. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Remove-ASTag -Tag @( @{ResourceType="auto-scaling-group"; ResourceId="my-asg"; Key="myTag" } )
 ```
 **Output:**
@@ -1074,12 +1074,12 @@ Performing the operation "Remove-ASTag (DeleteTags)" on target "Amazon.AutoScali
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASTag -Tag @( @{ResourceType="auto-scaling-group"; ResourceId="my-asg"; Key="myTag" } ) -Force
 ```
 **Example 3: With Powershell version 2, you must use New-Object to create the tag for the Tag parameter.**
 
-```
+```powershell
 $tag = New-Object Amazon.AutoScaling.Model.Tag
 $tag.ResourceType = "auto-scaling-group"
 $tag.ResourceId = "my-asg"
@@ -1096,12 +1096,12 @@ The following code example shows how to use `Resume-ASProcess`.
 **Tools for PowerShell V4**
 **Example 1: This example resumes the specified Auto Scaling process for the specified Auto Scaling group.**
 
-```
+```powershell
 Resume-ASProcess -AutoScalingGroupName my-asg -ScalingProcess "AlarmNotification"
 ```
 **Example 2: This example resumes all suspended Auto Scaling processes for the specified Auto Scaling group.**
 
-```
+```powershell
 Resume-ASProcess -AutoScalingGroupName my-asg
 ```
 +  For API details, see [ResumeProcesses](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1114,12 +1114,12 @@ The following code example shows how to use `Set-ASDesiredCapacity`.
 **Tools for PowerShell V4**
 **Example 1: This example sets the size of the specified Auto Scaling group.**
 
-```
+```powershell
 Set-ASDesiredCapacity -AutoScalingGroupName my-asg -DesiredCapacity 2
 ```
 **Example 2: This example sets the size of the specified Auto Scaling group and waits for the cooldown period to complete before scaling to the new size.**
 
-```
+```powershell
 Set-ASDesiredCapacity -AutoScalingGroupName my-asg -DesiredCapacity 2 -HonorCooldown $true
 ```
 +  For API details, see [SetDesiredCapacity](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1132,12 +1132,12 @@ The following code example shows how to use `Set-ASInstanceHealth`.
 **Tools for PowerShell V4**
 **Example 1: This example sets the status of the specified instance to 'Unhealthy', taking it out of service. Auto Scaling terminates and replaces the instance.**
 
-```
+```powershell
 Set-ASInstanceHealth -HealthStatus Unhealthy -InstanceId i-93633f9b
 ```
 **Example 2: This example sets the status of the specified instance to 'Healthy', keeping it in service. Any health check grace period for the Auto Scaling group is not honored.**
 
-```
+```powershell
 Set-ASInstanceHealth -HealthStatus Healthy -InstanceId i-93633f9b -ShouldRespectGracePeriod $false
 ```
 +  For API details, see [SetInstanceHealth](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1150,12 +1150,12 @@ The following code example shows how to use `Set-ASInstanceProtection`.
 **Tools for PowerShell V4**
 **Example 1: This example enables instance protection for the specified instance.**
 
-```
+```powershell
 Set-ASInstanceProtection -AutoScalingGroupName my-asg -InstanceId i-12345678 -ProtectedFromScaleIn $true
 ```
 **Example 2: This example disables instance protection for the specified instance.**
 
-```
+```powershell
 Set-ASInstanceProtection -AutoScalingGroupName my-asg -InstanceId i-12345678 -ProtectedFromScaleIn $false
 ```
 +  For API details, see [SetInstanceProtection](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1168,12 +1168,12 @@ The following code example shows how to use `Set-ASTag`.
 **Tools for PowerShell V4**
 **Example 1: This example adds a single tag to the specified Auto Scaling group. The tag key is 'myTag' and the tag value is 'myTagValue'. Auto Scaling propagates this tag to the subsequent EC2 instances launched by the Auto Scaling group. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Set-ASTag -Tag @( @{ResourceType="auto-scaling-group"; ResourceId="my-asg"; Key="myTag"; Value="myTagValue"; PropagateAtLaunch=$true} )
 ```
 **Example 2: With PowerShell version 2, you must use New-Object to create the tag for the Tag parameter.**
 
-```
+```powershell
 $tag = New-Object Amazon.AutoScaling.Model.Tag
 $tag.ResourceType = "auto-scaling-group"
 $tag.ResourceId = "my-asg"
@@ -1192,12 +1192,12 @@ The following code example shows how to use `Start-ASPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example executes the specified policy for the specified Auto Scaling group.**
 
-```
+```powershell
 Start-ASPolicy -AutoScalingGroupName my-asg -PolicyName "myScaleInPolicy"
 ```
 **Example 2: This example executes the specified policy for the specified Auto Scaling group, after waiting for the cooldown period to complete.**
 
-```
+```powershell
 Start-ASPolicy -AutoScalingGroupName my-asg -PolicyName "myScaleInPolicy" -HonorCooldown $true
 ```
 +  For API details, see [ExecutePolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1210,7 +1210,7 @@ The following code example shows how to use `Stop-ASInstanceInAutoScalingGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example terminates the specified instance and decreases the desired capacity of its Auto Scaling group so that Auto Scaling does not launch a replacement instance.**
 
-```
+```powershell
 Stop-ASInstanceInAutoScalingGroup -InstanceId i-93633f9b -ShouldDecrementDesiredCapacity $true
 ```
 **Output:**
@@ -1230,7 +1230,7 @@ StatusMessage        :
 ```
 **Example 2: This example terminates the specified instance without decreasing the desired capacity of its Auto Scaling group. Auto Scaling launches a replacement instance.**
 
-```
+```powershell
 Stop-ASInstanceInAutoScalingGroup -InstanceId i-93633f9b -ShouldDecrementDesiredCapacity $false
 ```
 **Output:**
@@ -1258,12 +1258,12 @@ The following code example shows how to use `Suspend-ASProcess`.
 **Tools for PowerShell V4**
 **Example 1: This example suspends the specified Auto Scaling process for the specified Auto Scaling group.**
 
-```
+```powershell
 Suspend-ASProcess -AutoScalingGroupName my-asg -ScalingProcess "AlarmNotification"
 ```
 **Example 2: This example suspends all Auto Scaling processes for the specified Auto Scaling group.**
 
-```
+```powershell
 Suspend-ASProcess -AutoScalingGroupName my-asg
 ```
 +  For API details, see [SuspendProcesses](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1276,22 +1276,22 @@ The following code example shows how to use `Update-ASAutoScalingGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example updates the minimum and maximum size of the specified Auto Scaling group.**
 
-```
+```powershell
 Update-ASAutoScalingGroup -AutoScalingGroupName my-asg -MaxSize 5 -MinSize 1
 ```
 **Example 2: This example updates the default cooldown period of the specified Auto Scaling group.**
 
-```
+```powershell
 Update-ASAutoScalingGroup -AutoScalingGroupName my-asg -DefaultCooldown 10
 ```
 **Example 3: This example updates the Availability Zones of the specified Auto Scaling group.**
 
-```
+```powershell
 Update-ASAutoScalingGroup -AutoScalingGroupName my-asg -AvailabilityZone @("us-west-2a", "us-west-2b")
 ```
 **Example 4: This example updates the specified Auto Scaling group to use Elastic Load Balancing health checks.**
 
-```
+```powershell
 Update-ASAutoScalingGroup -AutoScalingGroupName my-asg -HealthCheckType ELB -HealthCheckGracePeriod 60
 ```
 +  For API details, see [UpdateAutoScalingGroup](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1304,7 +1304,7 @@ The following code example shows how to use `Write-ASLifecycleActionHeartbeat`.
 **Tools for PowerShell V4**
 **Example 1: This example records a heartbeat for the specified lifecycle action. This keeps the instance in a pending state until you complete the custom action.**
 
-```
+```powershell
 Write-ASLifecycleActionHeartbeat -AutoScalingGroupName my-asg -LifecycleHookName myLifecycleHook -LifecycleActionToken bcd2f1b8-9a78-44d3-8a7a-4dd07d7cf635
 ```
 +  For API details, see [RecordLifecycleActionHeartbeat](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1317,7 +1317,7 @@ The following code example shows how to use `Write-ASLifecycleHook`.
 **Tools for PowerShell V4**
 **Example 1: This example adds the specified lifecycle hook to the specified Auto Scaling group.**
 
-```
+```powershell
 Write-ASLifecycleHook -AutoScalingGroupName my-asg -LifecycleHookName "myLifecycleHook" -LifecycleTransition "autoscaling:EC2_INSTANCE_LAUNCHING" -NotificationTargetARN "arn:aws:sns:us-west-2:123456789012:my-sns-topic" -RoleARN "arn:aws:iam::123456789012:role/my-iam-role"
 ```
 +  For API details, see [PutLifecycleHook](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1330,12 +1330,12 @@ The following code example shows how to use `Write-ASNotificationConfiguration`.
 **Tools for PowerShell V4**
 **Example 1: This example configures the specified Auto Scaling group to send a notification to the specified SNS topic when it launches EC2 instances.**
 
-```
+```powershell
 Write-ASNotificationConfiguration -AutoScalingGroupName my-asg -NotificationType "autoscaling:EC2_INSTANCE_LAUNCH" -TopicARN "arn:aws:sns:us-west-2:123456789012:my-topic"
 ```
 **Example 2: This example configures the specified Auto Scaling group to send a notification to the specified SNS topic when it launches or terminates EC2 instances.**
 
-```
+```powershell
 Write-ASNotificationConfiguration -AutoScalingGroupName my-asg -NotificationType @("autoscaling:EC2_INSTANCE_LAUNCH", "autoscaling:EC2_INSTANCE_TERMINATE") -TopicARN "arn:aws:sns:us-west-2:123456789012:my-topic"
 ```
 +  For API details, see [PutNotificationConfiguration](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1348,7 +1348,7 @@ The following code example shows how to use `Write-ASScalingPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example adds the specified policy to the specified Auto Scaling group. The specified adjustment type determines how to interpret the ScalingAdjustment parameter. With 'ChangeInCapacity', a positive value increases the capacity by the specified number of instances and a negative value decreases the capacity by the specified number of instances.**
 
-```
+```powershell
 Write-ASScalingPolicy -AutoScalingGroupName my-asg -AdjustmentType "ChangeInCapacity" -PolicyName "myScaleInPolicy" -ScalingAdjustment -1
 ```
 **Output:**
@@ -1367,7 +1367,7 @@ The following code example shows how to use `Write-ASScheduledUpdateGroupAction`
 **Tools for PowerShell V4**
 **Example 1: This example creates or updates a one-time scheduled action to change the desired capacity at the specified start time.**
 
-```
+```powershell
 Write-ASScheduledUpdateGroupAction -AutoScalingGroupName my-asg -ScheduledActionName "myScheduledAction" -StartTime "2015-12-01T00:00:00Z" -DesiredCapacity 10
 ```
 +  For API details, see [PutScheduledUpdateGroupAction](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.

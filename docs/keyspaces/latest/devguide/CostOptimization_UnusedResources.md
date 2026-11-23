@@ -52,7 +52,7 @@ If the table name is not unique within your account, you must also specify the n
 
    The following result shows a table receiving read traffic in the evaluated period:
 
-   ```
+   ```json
            {
                "Timestamp": "2022-08-25T19:40:00Z",
                "Sum": 36023355.0,
@@ -67,7 +67,7 @@ If the table name is not unique within your account, you must also specify the n
 
    The following result shows a table not receiving read traffic in the evaluated period:
 
-   ```
+   ```json
            {
                "Timestamp": "2022-08-01T19:50:00Z",
                "Sum": 0.0,
@@ -95,7 +95,7 @@ If the table name is not unique within your account, you must also specify the n
 
    The following result shows a table receiving write traffic in the evaluated period:
 
-   ```
+   ```json
            {
                "Timestamp": "2022-08-19T20:15:00Z",
                "Sum": 41014457.0,
@@ -110,7 +110,7 @@ If the table name is not unique within your account, you must also specify the n
 
    The following result shows a table not receiving write traffic in the evaluated period:
 
-   ```
+   ```json
            {
                "Timestamp": "2022-07-31T20:15:00Z",
                "Sum": 0.0,

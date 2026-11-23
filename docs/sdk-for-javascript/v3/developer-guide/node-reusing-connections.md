@@ -12,7 +12,7 @@ For short-lived operations, such as Amazon DynamoDB queries, the latency overhea
 
 If you do not want to reuse TCP connections, you can disable reusing these connections alive with `keepAlive` on a per-service client basis as shown in the following example for a DynamoDB client.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { NodeHttpHandler } from "@smithy/node-http-handler";
 import { Agent } from "https";

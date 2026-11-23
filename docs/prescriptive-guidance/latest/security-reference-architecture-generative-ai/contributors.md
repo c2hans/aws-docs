@@ -4,9 +4,20 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 
 # Contributors
 
-The following individuals contributed to this guide.
+Current Contributors
 + Avik Mukherjee, AWS Senior Security SA
-+ Abdullah Ali, AWS Technical Program Manager
++ Jonathan Nguyen, AWS Principal Specialist SA AI Security
+
+Reviewers
++ Marc Luescher, AWS Senior Solutions Architect
++ Mac Stevens, AWS Senior Solutions Architect
++ Rodolfo Brenes, AWS Principal SA, CloudOps
++ Anthony Harvey, AWS** **Senior Security Specialist SA
++ Nivas Durairaj, AWS** **Principal World Wide Specialist, Governance
++ Chris Lamont-Smith, AWS** **Senior AIML Security Spec SA
++ Barry Conway, AWS** **Security Solutions Architect
+
+Previous Contributors
 + Emmanuel Isimah, AWS Senior Solutions Architect
 + Mac Stevens, AWS Senior Solutions Architect
 + Pierre-Yves Gillier, AWS Senior Startup Solutions Architect
@@ -18,5 +29,4 @@ The following individuals contributed to this guide.
 + Maitreya Ranganath, AWS Principal Security SA
 + Joe Wagner, AWS Senior Solutions Architect
 + Pravin Nair, AWS Senior Security SA
-+ Riggs Goodman III, AWS Principal AI Security SA
 + Christopher Rae, AWS, Principal Worldwide Security Specialist

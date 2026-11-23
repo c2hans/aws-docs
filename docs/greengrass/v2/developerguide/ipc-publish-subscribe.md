@@ -52,7 +52,7 @@ You can reference the following authorization policy example to help you configu
 **Example authorization policy**
 The following example authorization policy allows a component to publish and subscribe to all topics.
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.ipc.pubsub": {
@@ -150,7 +150,7 @@ The following examples demonstrate how to call this operation in custom componen
 
 **Example: Publish a binary message**
 
-```
+```java
 package com.aws.greengrass.docs.samples.ipc;
 
 import software.amazon.awssdk.aws.greengrass.GreengrassCoreIPCClientV2;
@@ -198,7 +198,7 @@ public class PublishToTopicV2 {
 
 **Example: Publish a binary message**
 
-```
+```python
 import sys
 import traceback
 
@@ -236,7 +236,7 @@ if __name__ == '__main__':
 
 **Example: Publish a binary message**
 
-```
+```cpp
 #include <iostream>
 
 #include <aws/crt/Api.h>
@@ -317,7 +317,7 @@ int main() {
 
 **Example: Publish a binary message**
 
-```
+```javascript
 
 import * as greengrasscoreipc from "aws-iot-device-sdk-v2/dist/greengrasscoreipc";
 import {BinaryMessage, PublishMessage, PublishToTopicRequest} from "aws-iot-device-sdk-v2/dist/greengrasscoreipc/model";
@@ -384,7 +384,7 @@ const publishToTopic = new PublishToTopic();
 
 **Example: Publish a binary message**
 
-```
+```rust
 use gg_sdk::Sdk;
 
 fn main() {
@@ -406,7 +406,7 @@ fn main() {
 
 **Example: Publish a binary message**
 
-```
+```c
 #include <gg/error.h>
 #include <gg/ipc/client.h>
 #include <gg/sdk.h>
@@ -447,7 +447,7 @@ int main(void) {
 
 **Example: Publish a binary message**
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <iostream>
 
@@ -585,7 +585,7 @@ The following examples demonstrate how to call this operation in custom componen
 
 **Example: Subscribe to local publish/subscribe messages**  <a name="ipc-operation-subscribetotopic-example-java-v2"></a>
 
-```
+```java
 package com.aws.greengrass.docs.samples.ipc;
 
 import software.amazon.awssdk.aws.greengrass.GreengrassCoreIPCClientV2;
@@ -661,7 +661,7 @@ public class SubscribeToTopicV2 {
 
 **Example: Subscribe to local publish/subscribe messages**  <a name="ipc-operation-subscribetotopic-example-python-v2"></a>
 
-```
+```python
 import sys
 import time
 import traceback
@@ -727,7 +727,7 @@ if __name__ == '__main__':
 
 **Example: Subscribe to local publish/subscribe messages**  <a name="ipc-operation-subscribetotopic-example-cpp"></a>
 
-```
+```cpp
 #include <iostream>
 
 #include </crt/Api.h>
@@ -841,7 +841,7 @@ int main() {
 
 **Example: Subscribe to local publish/subscribe messages**  <a name="ipc-operation-subscribetotopic-example-nodejs"></a>
 
-```
+```javascript
 import * as greengrasscoreipc from "aws-iot-device-sdk-v2/dist/greengrasscoreipc";
 import {SubscribeToTopicRequest, SubscriptionResponseMessage} from "aws-iot-device-sdk-v2/dist/greengrasscoreipc/model";
 import {RpcError} from "aws-iot-device-sdk-v2/dist/eventstream_rpc";
@@ -916,7 +916,7 @@ const subscribeToTopic = new SubscribeToTopic();
 
 **Example: Subscribe to local publish/subscribe messages**
 
-```
+```rust
 use gg_sdk::{Sdk, SubscribeToTopicPayload};
 use std::{thread, time::Duration};
 
@@ -955,7 +955,7 @@ fn main() {
 
 **Example: Subscribe to local publish/subscribe messages**
 
-```
+```c
 #include <assert.h>
 #include <gg/error.h>
 #include <gg/ipc/client.h>
@@ -1035,7 +1035,7 @@ int main(void) {
 
 **Example: Subscribe to local publish/subscribe messages**
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <gg/object.hpp>
 #include <unistd.h>
@@ -1102,7 +1102,7 @@ The following example recipe allows the component to publish to all topics.
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.PubSubPublisherJava",
@@ -1139,7 +1139,7 @@ The following example recipe allows the component to publish to all topics.
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.PubSubPublisherJava
@@ -1166,7 +1166,7 @@ Manifests:
 
 The following example Java application demonstrates how to use the publish/subscribe IPC service to publish messages to other components.
 
-```
+```java
 /* Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0 */
 
@@ -1237,7 +1237,7 @@ The following example recipe allows the component to subscribe to all topics.
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.PubSubSubscriberJava",
@@ -1274,7 +1274,7 @@ The following example recipe allows the component to subscribe to all topics.
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.PubSubSubscriberJava
@@ -1301,7 +1301,7 @@ Manifests:
 
 The following example Java application demonstrates how to use the publish/subscribe IPC service to subscribe to messages to other components.
 
-```
+```java
 /* Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0 */
 
@@ -1403,7 +1403,7 @@ The following example recipe allows the component to publish to all topics.
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.PubSubPublisherPython",
@@ -1453,7 +1453,7 @@ The following example recipe allows the component to publish to all topics.
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.PubSubPublisherPython
@@ -1487,7 +1487,7 @@ Manifests:
 
 The following example Python application demonstrates how to use the publish/subscribe IPC service to publish messages to other components.
 
-```
+```python
 import concurrent.futures
 import sys
 import time
@@ -1547,7 +1547,7 @@ The following example recipe allows the component to subscribe to all topics.
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.PubSubSubscriberPython",
@@ -1597,7 +1597,7 @@ The following example recipe allows the component to subscribe to all topics.
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.PubSubSubscriberPython
@@ -1631,7 +1631,7 @@ Manifests:
 
 The following example Python application demonstrates how to use the publish/subscribe IPC service to subscribe to messages to other components.
 
-```
+```java
 import concurrent.futures
 import sys
 import time
@@ -1710,7 +1710,7 @@ The following example recipe allows the component to publish to all topics.
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.PubSubPublisherCpp",
@@ -1755,7 +1755,7 @@ The following example recipe allows the component to publish to all topics.
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.PubSubPublisherCpp
@@ -1785,7 +1785,7 @@ Manifests:
 
 The following example C\+\+ application demonstrates how to use the publish/subscribe IPC service to publish messages to other components.
 
-```
+```cpp
 #include <iostream>
 
 #include <aws/crt/Api.h>
@@ -1878,7 +1878,7 @@ The following example recipe allows the component to subscribe to all topics.
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.PubSubSubscriberCpp",
@@ -1923,7 +1923,7 @@ The following example recipe allows the component to subscribe to all topics.
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.PubSubSubscriberCpp
@@ -1953,7 +1953,7 @@ Manifests:
 
 The following example C\+\+ application demonstrates how to use the publish/subscribe IPC service to subscribe to messages to other components.
 
-```
+```cpp
 #include <iostream>
 
 #include <aws/crt/Api.h>
@@ -2072,7 +2072,7 @@ int main() {
 
 The following example recipe allows the component to publish to all topics.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.PubSubPublisherRust",
@@ -2116,7 +2116,7 @@ The following example recipe allows the component to publish to all topics.
 
 The following example Rust application demonstrates how to use the publish/subscribe IPC service to publish messages to other components.
 
-```
+```rust
 use gg_sdk::Sdk;
 
 fn main() {
@@ -2138,7 +2138,7 @@ fn main() {
 
 The following example recipe allows the component to subscribe to all topics.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.PubSubSubscriberRust",
@@ -2182,7 +2182,7 @@ The following example recipe allows the component to subscribe to all topics.
 
 The following example Rust application demonstrates how to use the publish/subscribe IPC service to subscribe to messages from other components.
 
-```
+```rust
 use gg_sdk::{Sdk, SubscribeToTopicPayload};
 use std::{thread, time::Duration};
 
@@ -2221,7 +2221,7 @@ fn main() {
 
 The following example recipe allows the component to publish to all topics.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.PubSubPublisherC",
@@ -2265,7 +2265,7 @@ The following example recipe allows the component to publish to all topics.
 
 The following example C application demonstrates how to use the publish/subscribe IPC service to publish messages to other components.
 
-```
+```c
 #include <gg/error.h>
 #include <gg/ipc/client.h>
 #include <gg/sdk.h>
@@ -2306,7 +2306,7 @@ int main(void) {
 
 The following example recipe allows the component to subscribe to all topics.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.PubSubSubscriberC",
@@ -2350,7 +2350,7 @@ The following example recipe allows the component to subscribe to all topics.
 
 The following example C application demonstrates how to use the publish/subscribe IPC service to subscribe to messages from other components.
 
-```
+```c
 #include <assert.h>
 #include <gg/error.h>
 #include <gg/ipc/client.h>
@@ -2430,7 +2430,7 @@ int main(void) {
 
 The following example recipe allows the component to publish to all topics.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.PubSubPublisherCpp",
@@ -2474,7 +2474,7 @@ The following example recipe allows the component to publish to all topics.
 
 The following example C\+\+ application demonstrates how to use the publish/subscribe IPC service to publish messages to other components.
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <iostream>
 
@@ -2505,7 +2505,7 @@ int main() {
 
 The following example recipe allows the component to subscribe to all topics.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.PubSubSubscriberCpp",
@@ -2549,7 +2549,7 @@ The following example recipe allows the component to subscribe to all topics.
 
 The following example C\+\+ application demonstrates how to use the publish/subscribe IPC service to subscribe to messages from other components.
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <gg/object.hpp>
 #include <unistd.h>

@@ -38,7 +38,7 @@ Use `pip` to install the AWS Encryption SDK for Python, as shown in the followin
 
 **To install the latest version**
 
-```
+```bash
 pip install "aws-encryption-sdk[MPL]"
 ```
 The `[MPL]` suffix installs the [AWS Cryptographic Material Providers Library](https://github.com/aws/aws-cryptographic-material-providers-library) (MPL). The MPL contains constructs for encrypting and decrypting your data. The MPL is an optional dependency for the AWS Encryption SDK for Python introduced in version 4.*x*. We highly recommend installing the MPL. However, if you do not intend to use the MPL, you can omit the `[MPL]` suffix.

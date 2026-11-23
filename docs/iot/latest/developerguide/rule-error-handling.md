@@ -20,7 +20,7 @@ A single message is generated per rule and message. For example, if two rule act
 
 The error action message looks like the following example.
 
-```
+```JSON
 {
   "ruleName": "TestAction",
   "topic": "testme/action",
@@ -65,7 +65,7 @@ The description and explanation of the error.
 
 Here is an example of a rule with an added error action. The following rule has an action that writes message data to a DynamoDB table and an error action that writes data to an Amazon S3 bucket:
 
-```
+```JSON
 {
     "sql" : "SELECT * FROM ..."
     "actions" : [{

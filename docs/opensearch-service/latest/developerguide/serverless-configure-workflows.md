@@ -24,7 +24,7 @@ Before you create and provision a template, verify that you have the required pe
 **Example : Workflows policy**
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

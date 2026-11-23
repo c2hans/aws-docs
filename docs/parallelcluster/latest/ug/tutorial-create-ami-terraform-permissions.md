@@ -15,7 +15,7 @@ You need the following permissions to deploy a custom AMI with Terraform:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

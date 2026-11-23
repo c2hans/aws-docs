@@ -30,7 +30,7 @@ This topic contains common issues regarding resource type development, and sugge
 
   For resource types, you should use the passed-in `AmazonWebServicesClientProxy` object to make AWS API calls, as in the following example.
 
-  ```
+  ```java
   SesClient client = ClientBuilder.getClient();
   final CreateConfigurationSetRequest createConfigurationSetRequest =
       CreateConfigurationSetRequest.builder()
@@ -97,7 +97,7 @@ This topic contains common issues regarding resource type development, and sugge
 
   **Solution:** This exception message indicates that you might be running out of memory or time. Add the following lines under `Globals` in the `template.yaml` file in your code package.
 
-  ```
+  ```yaml
   Globals:
     Function:
       Timeout: 180

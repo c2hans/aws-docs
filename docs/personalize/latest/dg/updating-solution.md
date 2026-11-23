@@ -59,7 +59,7 @@ To update a solution with the AWS SDKs, use the [UpdateSolution](API_UpdateSolut
 
 The default training frequency is every 7 days. The expression must be in `rate(value unit)` format. For the value, specify a number between 1 and 30. For the unit, specify `day` or `days`.
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')

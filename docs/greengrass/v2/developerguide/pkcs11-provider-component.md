@@ -243,7 +243,7 @@ The user PIN to use to access the slot.
 
 **Example: Configuration merge update**
 
-```
+```json
 {
   "name": "softhsm_pkcs11",
   "library": "/usr/lib/softhsm/libsofthsm2.so",
@@ -279,14 +279,14 @@ This component uses the same log file as the [Greengrass nucleus](greengrass-nuc
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
   ```
 

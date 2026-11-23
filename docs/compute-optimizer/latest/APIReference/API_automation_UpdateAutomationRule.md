@@ -67,6 +67,9 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
    "name": "{{string}}",
    "organizationConfiguration": {
       "accountIds": [ "{{string}}" ],
+      "excludedAccountIds": [ "{{string}}" ],
+      "excludedOrganizationalUnitIds": [ "{{string}}" ],
+      "organizationalUnitIds": [ "{{string}}" ],
       "ruleApplyOrder": "{{string}}"
    },
    "priority": "{{string}}",
@@ -221,6 +224,9 @@ Required: No
    "name": "string",
    "organizationConfiguration": {
       "accountIds": [ "string" ],
+      "excludedAccountIds": [ "string" ],
+      "excludedOrganizationalUnitIds": [ "string" ],
+      "organizationalUnitIds": [ "string" ],
       "ruleApplyOrder": "string"
    },
    "priority": "string",
@@ -309,19 +315,19 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
  You do not have sufficient permissions to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ForbiddenException **
  You are not authorized to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** IdempotencyTokenInUseException **
  The specified client token is already in use.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** IdempotentParameterMismatchException **
 Exception thrown when the same client token is used with different parameters, indicating a mismatch in idempotent request parameters.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
  An internal error occurred while processing the request.
@@ -333,19 +339,19 @@ HTTP Status Code: 400
 
  ** OptInRequiredException **
  The account must be opted in to Compute Optimizer Automation before performing this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ResourceNotFoundException **
  The specified resource was not found.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ServiceUnavailableException **
  The service is temporarily unavailable.
-HTTP Status Code: 500
+HTTP Status Code: 503
 
  ** ThrottlingException **
  The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_automation_UpdateAutomationRule_SeeAlso"></a>

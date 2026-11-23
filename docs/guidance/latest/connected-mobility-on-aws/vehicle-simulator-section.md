@@ -55,7 +55,7 @@ FWE mode uses EC2-backed ECS tasks (not Fargate) for two reasons:
 
 The simulation stack deploys an Auto Scaling Group with EC2 instances (t4g.small, ARM) running Amazon Linux 2023 with the ECS-optimized AMI. The UserData script runs at boot:
 
-```
+```bash
 # Load CAN kernel modules
 modprobe can
 modprobe can_raw

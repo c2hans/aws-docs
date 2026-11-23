@@ -30,13 +30,13 @@ A success banner appears: *Policy table entry with rule number {ruleNumber} was 
 **To delete a policy table entry using the AWS CLI**
 Use the [delete-transit-gateway-policy-table-entry](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-transit-gateway-policy-table-entry.html) command. The deleted entry is returned in the response with `"State": "deleted"`.
 
-```
+```bash
 aws ec2 delete-transit-gateway-policy-table-entry \
     --transit-gateway-policy-table-id tgw-ptb-0ca78a549EXAMPLE \
     --policy-rule-number 100
 ```
 
-```
+```json
 {
     "TransitGatewayPolicyTableEntry": {
         "PolicyRuleNumber": "100",

@@ -14,7 +14,7 @@ Add the DynamoDB Mapper dependencies to your project build file. Replace {{X.Y.Z
 **Example**
 To use DynamoDB Mapper with annotation-based schema generation, apply the schema-generator plugin and add the runtime and annotations dependencies to your `build.gradle.kts` file:
 
-```
+```kotlin
 // build.gradle.kts
 val sdkVersion: String = "{{X.Y.Z}}"
 
@@ -30,7 +30,7 @@ dependencies {
 The annotations dependency and the schema-generator plugin are needed only if you generate schemas from annotated classes (shown in this topic). If you define schemas manually, you need only the `dynamodb-mapper` dependency.
 Add the DynamoDB Mapper runtime dependency to the `<dependencies>` section of your `pom.xml` file:
 
-```
+```xml
 <dependencyManagement>
     <dependencies>
         <dependency>
@@ -57,7 +57,7 @@ The DynamoDB Mapper schema-generator plugin is available for Gradle only. Maven 
 
 DynamoDB Mapper uses the SDK’s DynamoDB client to interact with DynamoDB. Provide a configured [`DynamoDbClient`](/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html) when you create a mapper:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbMapper
 import aws.sdk.kotlin.services.dynamodb.DynamoDbClient
 
@@ -75,7 +75,7 @@ For many Kotlin classes, the SDK can generate a schema at build time using the D
 
 Annotate your class with `@DynamoDbItem`, mark the partition key with `@DynamoDbPartitionKey`, and (for a composite key) mark the sort key with `@DynamoDbSortKey`:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbAttribute
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbAttributeConverter
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbIgnore
@@ -116,7 +116,7 @@ See [Generate a schema from annotations](ddb-mapper-anno-schema-gen.md) and the 
 
 The custom converter is a small object that implements `convertRight`/`convertLeft`:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.values.ValueConverter
 import aws.sdk.kotlin.services.dynamodb.model.AttributeValue
 import kotlin.uuid.Uuid
@@ -129,13 +129,13 @@ object UuidConverter : ValueConverter<Uuid> {
 
 After you build the project, the generator produces an `OrderSchema` and a convenience extension function. You can get a table reference with the generated `getOrderTable` extension. Note that the function name contains the class name (`Order`), while the string you pass is your actual table name (`orders`):
 
-```
+```kotlin
 val ordersTable = mapper.getOrderTable("orders")
 ```
 
 Equivalently, you can pass the generated schema to [`getTable`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/get-table.html):
 
-```
+```kotlin
 import com.example.store.model.dynamodbmapper.generatedschemas.OrderSchema
 
 val ordersTable = mapper.getTable("orders", OrderSchema)
@@ -149,7 +149,7 @@ After you have a table reference, you can perform operations on it. The followin
 ### Put an item
 <a name="ddb-mapper-get-started-put-item"></a>
 
-```
+```kotlin
 import aws.smithy.kotlin.runtime.time.Instant
 import kotlin.uuid.Uuid
 
@@ -172,7 +172,7 @@ ordersTable.putItem {
 
  [`getItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.model/get-item.html) returns a `GetItemResponse`; read the mapped object from its `item` property (which is `null` if no matching item exists). For a composite-key table, supply both keys, wrapping each key value with `Key(…​)`:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.items.Key
 
 val response = ordersTable.getItem {
@@ -188,7 +188,7 @@ println(response.item)   // the Order, or null
 
  [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) and [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) can match more items than fit in a single response. DynamoDB Mapper provides paginating variants ([`queryPaginated`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) and [`scanPaginated`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html)) that return a [`Flow`](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/) of response pages and transparently fetch subsequent pages as you collect them.
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.expressions.KeyFilter
 
 val responses = ordersTable.queryPaginated {
@@ -204,7 +204,7 @@ responses.collect { response ->
 
 Often a flow of objects is more convenient than a flow of response pages. Call `items()` to flatten a paginated flow into a `Flow` of your objects (here, a `Flow<Order>` instead of a `Flow<QueryResponse<Order>>`):
 
-```
+```kotlin
 val orders = ordersTable
     .queryPaginated {
         keyCondition = KeyFilter(partitionKey = "customer-123")

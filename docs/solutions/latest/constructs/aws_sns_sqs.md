@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { SnsToSqs, SnsToSqsProps } from "@aws-solutions-constructs/aws-sns-sqs";
@@ -45,7 +45,7 @@ snsToSqsStack.queueEncryptionKey?.addToResourcePolicy(policyStatement);
 snsToSqsStack.topicEncryptionKey?.addToResourcePolicy(policyStatement);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_sns_sqs import SnsToSqs
 from aws_cdk import (
     aws_iam as iam,
@@ -66,7 +66,7 @@ construct_stack.queue_encryption_key.add_to_resource_policy(policy_statement)
 construct_stack.topic_encryption_key.add_to_resource_policy(policy_statement)
 ```
 
-```
+```java
 import software.constructs.Construct;
 import java.util.List;
 

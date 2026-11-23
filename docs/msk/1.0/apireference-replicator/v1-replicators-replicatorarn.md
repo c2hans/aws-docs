@@ -96,7 +96,7 @@ Enable CORS by returning correct headers
 #### DescribeReplicatorResponse schema
 <a name="v1-replicators-replicatorarn-response-body-describereplicatorresponse-example"></a>
 
-```
+```json
 {
   "replicatorArn": "string",
   "creationTime": "string",
@@ -201,7 +201,7 @@ Enable CORS by returning correct headers
 #### DeleteReplicatorResponse schema
 <a name="v1-replicators-replicatorarn-response-body-deletereplicatorresponse-example"></a>
 
-```
+```json
 {
   "replicatorArn": "string",
   "replicatorState": enum

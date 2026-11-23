@@ -14,7 +14,7 @@ To rotate a secret, Secrets Manager calls a [ Lambda function](rotate-secrets_la
 
 During rotation, Secrets Manager calls the same function several times, each time with different parameters. Secrets Manager invokes the function with the following JSON request structure of parameters:
 
-```
+```json
 {
     "Step" : "request.type",
     "SecretId" : "string",

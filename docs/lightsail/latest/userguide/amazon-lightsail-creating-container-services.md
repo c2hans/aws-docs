@@ -4,6 +4,9 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 
 # Create a highly available container service with Lightsail
 
+**Did you know?**
+ Lightsail publishes an agent skill that deploys a container image to a container service and finds why a deployment isn't serving traffic. For more information, see [ Set up an AI agent for Amazon Lightsail ](https://docs.aws.amazon.com/lightsail/latest/userguide/agent-setup-guide.html) .
+
 In this guide, we show you how to create an Amazon Lightsail container service using the Lightsail console, and describe the container service settings that you can configure.
 
 Before getting started, we recommend that you familiarize yourself with the elements of a Lightsail container service. For more information, see [Container services](amazon-lightsail-container-services.md).

@@ -47,7 +47,7 @@ When a cluster is in protected status, you can check the compute fleet status an
 
 The status of the compute fleet is `PROTECTED` in a cluster running in protected status.
 
-```
+```bash
 $ pcluster describe-compute-fleet --cluster-name {{<cluster-name>}} --region {{<region-id>}}
 {
    "status": "PROTECTED",
@@ -85,7 +85,7 @@ Partition `queue2` isn't impacted by the bootstrap failures in `queue1`. It's in
 
 After the bootstrap error has been resolved, you can run the following command to take the cluster out of protected status.
 
-```
+```bash
 $ pcluster update-compute-fleet --cluster-name {{<cluster-name>}} \
   --region {{<region-id>}} \
   --status START_REQUESTED

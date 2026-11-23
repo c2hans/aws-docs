@@ -37,6 +37,16 @@ Aurora DSQL commits writes synchronously across the active Regions of a multi-Re
 
 Aurora DSQL provides 99.99% availability for single-Region clusters and 99.999% for multi-Region clusters.
 
+## Ephemeral clusters
+<a name="disaster-recovery-resiliency-ephemeral-clusters"></a>
+
+Use ephemeral clusters for short-lived testing of early-access features. Ephemeral clusters have Multi-AZ availability like other single-Region clusters, with the following considerations:
++ Aurora DSQL permanently deletes the cluster and its data after the lifetime expires, regardless of deletion protection.
++ Ephemeral clusters are single-Region clusters only.
++ Ephemeral clusters don't support data protection features such as backups.
+
+For more information, see [Early-access features and ephemeral clusters in Aurora DSQL](ephemeral-clusters.md).
+
 ## Fault injection testing
 <a name="fault-injection-testing"></a>
 

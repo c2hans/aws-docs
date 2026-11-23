@@ -13,7 +13,7 @@ You can use the `Distribution` Analyzer only in the `Analyzers` block of your DQ
 
 **Syntax**
 
-```
+```json
 Distribution {{<COL_NAME>}}
 Distribution {{<COL_NAME>}} with bins = {{<BIN_COUNT>}}
 Distribution {{<COL_NAME>}} with bins = {{<BIN_COUNT>}}, rebin = {{<true|false>}}
@@ -28,7 +28,7 @@ Distribution {{<COL_NAME>}} with bins = {{<BIN_COUNT>}}, rebin = {{<true|false>}
 
 The following example computes a frequency distribution for the `Salary` column using the default 20 bins:
 
-```
+```json
 Analyzers = [
     Distribution "Salary"
 ]
@@ -38,7 +38,7 @@ Analyzers = [
 
 The following example computes a histogram for the `Age` column using 10 bins:
 
-```
+```json
 Analyzers = [
     Distribution "Age" with bins = 10
 ]
@@ -48,7 +48,7 @@ Analyzers = [
 
 The following example computes distributions for all columns in the dataset. Numeric columns produce histograms with 20 bins, and non-numeric columns produce value distributions:
 
-```
+```json
 Analyzers = [
     Distribution AllColumns
 ]
@@ -58,7 +58,7 @@ Analyzers = [
 
 The following example shows a ruleset that combines rules, standard analyzers, and the `Distribution` Analyzer:
 
-```
+```json
 Rules = [
     RowCount > 100,
     Completeness "Salary" > 0.9

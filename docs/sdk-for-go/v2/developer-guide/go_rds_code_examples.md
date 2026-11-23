@@ -29,7 +29,7 @@ The following code example shows how to get started using Amazon RDS.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -90,7 +90,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -427,7 +427,7 @@ func (helper ScenarioHelper) UniqueId() string {
 ```
 Define functions that are called by the scenario to manage Amazon RDS actions.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -693,7 +693,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -743,7 +743,7 @@ The following code example shows how to use `CreateDBParameterGroup`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -788,7 +788,7 @@ The following code example shows how to use `CreateDBSnapshot`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -828,7 +828,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -868,7 +868,7 @@ The following code example shows how to use `DeleteDBParameterGroup`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -907,7 +907,7 @@ The following code example shows how to use `DescribeDBEngineVersions`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -949,7 +949,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -995,7 +995,7 @@ The following code example shows how to use `DescribeDBParameterGroups`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1041,7 +1041,7 @@ The following code example shows how to use `DescribeDBParameters`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1090,7 +1090,7 @@ The following code example shows how to use `DescribeDBSnapshots`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1129,7 +1129,7 @@ The following code example shows how to use `DescribeOrderableDBInstanceOptions`
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1179,7 +1179,7 @@ The following code example shows how to use `ModifyDBParameterGroup`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1223,7 +1223,7 @@ The following code example shows how to implement a Lambda function that connect
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-connect-rds-iam) repository.
 Connecting to an Amazon RDS database in a Lambda function using Go.
 
-```
+```go
 /*
 Golang v2 code here.
 */

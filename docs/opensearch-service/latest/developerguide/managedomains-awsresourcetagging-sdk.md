@@ -11,7 +11,7 @@ The AWS SDKs (except the Android and iOS SDKs) support all the actions defined i
 
 This example uses the [OpenSearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html) low-level Python client from the AWS SDK for Python (Boto) to add a tag to a domain, list the tag attached to the domain, and remove a tag from the domain. You must provide values for `DOMAIN_ARN`, `TAG_KEY`, and `TAG_VALUE`.
 
-```
+```python
 import boto3
 from botocore.config import Config  # import configuration
 

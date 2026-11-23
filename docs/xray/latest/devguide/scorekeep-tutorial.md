@@ -275,7 +275,7 @@ To instrument incoming HTTP requests, the application adds the `TracingFilter` p
 
 **Example src/main/java/scorekeep/WebConfig.java - servlet filter**
 
-```
+```java
 import javax.servlet.Filter;
 import [com.amazonaws.xray.javax.servlet.AWSXRayServletFilter](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/javax/servlet/AWSXRayServletFilter.html);
 ...
@@ -362,7 +362,7 @@ The X-Ray SDK for Java provides a class named `AWSXRay` that provides the global
 
 **Example src/main/java/scorekeep/WebConfig.java - recorder**
 
-```
+```java
 import com.amazonaws.xray.AWSXRay;
 import com.amazonaws.xray.AWSXRayRecorderBuilder;
 import com.amazonaws.xray.javax.servlet.AWSXRayServletFilter;
@@ -392,7 +392,7 @@ This example uses the builder to load sampling rules from a file named `sampling
 
 **Example src/main/java/resources/sampling-rules.json**
 
-```
+```json
 {
   "version": 1,
   "rules": [
@@ -490,7 +490,7 @@ To update your policy, first you identify the ARN of your DynamoDB resources. Th
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

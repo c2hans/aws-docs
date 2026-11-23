@@ -46,7 +46,7 @@ Even if the native service API is in camelCase, for example the API action `star
 **Note**
 When using JSONPath, you can use the recursive descent operator (`..`) to provide parameters for `BatchDeleteBuilds`. With the returned array, you can transform the `Arn` field from `StartBuild` into a plural `Ids` parameter, as shown in the following example.
 
-```
+```json
 "BatchDeleteBuilds": {
     "Type": "Task",
     "Resource": "arn:aws:states:::codebuild:batchDeleteBuilds",
@@ -66,7 +66,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -114,7 +114,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -149,7 +149,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -175,7 +175,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -210,7 +210,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -236,7 +236,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -257,7 +257,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -281,7 +281,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -302,7 +302,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -326,7 +326,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -347,7 +347,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -374,7 +374,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -409,7 +409,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -435,7 +435,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -470,7 +470,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -496,7 +496,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -517,7 +517,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -544,7 +544,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -568,7 +568,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -594,7 +594,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -618,7 +618,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -644,7 +644,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -665,7 +665,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

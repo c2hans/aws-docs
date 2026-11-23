@@ -10,7 +10,7 @@ To render with the `KarmaXPU` GPU engine, uncomment the `amount.worker.gpu` host
 
 This bundle also shows how to write a custom asset introspection tool for job attachments. The included `generate_usd_job.py` script inspects a USD file, finds all referenced asset files, and generates a job bundle with job attachment references for those assets. To use the script, install the `usd-core` and `deadline` Python libraries and run:
 
-```
+```bash
 python3 generate_usd_job.py {{my_scene.usd}}
 ```
 

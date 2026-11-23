@@ -12,13 +12,13 @@ To find a third-party HTTP agent, search for "HTTP proxy" at [npm](https://www.n
 
 To install a third-party HTTP agent proxy, enter the following at the command prompt, where {{PROXY}} is the name of the `npm` package.
 
-```
+```sh
 npm install {{PROXY}} --save
 ```
 
 To use a proxy in your application, use the `httpAgent` and ` httpsAgent` property, as shown in the following example for a DynamoDB client.
 
-```
+```javascript
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
 import { NodeHttpHandler } from "@smithy/node-http-handler";
 import { HttpsProxyAgent } from "hpagent";

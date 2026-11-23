@@ -27,7 +27,7 @@ For more information, see [Delete a network interface](https://docs.aws.amazon.c
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified network interface. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2NetworkInterface -NetworkInterfaceId eni-12345678
 ```
 **Output:**
@@ -43,7 +43,7 @@ Performing operation "Remove-EC2NetworkInterface (DeleteNetworkInterface)" on Ta
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified network interface. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2NetworkInterface -NetworkInterfaceId eni-12345678
 ```
 **Output:**

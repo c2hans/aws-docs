@@ -95,7 +95,7 @@ For more information, see the [CloudTrail userIdentity element](https://docs.aws
 
 The following example shows a CloudTrail log entry that demonstrates the `ClassifyDocument` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

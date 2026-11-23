@@ -45,7 +45,7 @@ Amazon Redshift IAM authentication with MSK is only supported on Kafka version 2
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -85,7 +85,7 @@ Amazon Redshift IAM authentication with MSK is only supported on Kafka version 2
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -112,7 +112,7 @@ Amazon Redshift IAM authentication with MSK is only supported on Kafka version 2
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

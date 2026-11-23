@@ -8,7 +8,7 @@ Same as the FT.EXPLAIN command except that the results are displayed in a differ
 
 **Syntax**
 
-```
+```text
 FT.EXPLAINCLI <index> <query>
 ```
 

@@ -66,7 +66,7 @@ To allow Elastic Beanstalk to assume the `aws-elasticbeanstalk-service-role` rol
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

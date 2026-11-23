@@ -17,7 +17,7 @@ The CLI accepts `--managed-policy` values in any letter case.
 
 The AWS managed permission ARNs use the format `arn:aws:ram::aws:permission/{{name}}`, for example `arn:aws:ram::aws:permission/AWSRAMPermissionTransformCustomPackageExecute`. To list them, run the following command.
 
-```
+```bash
 aws ram list-permissions --resource-type transform-custom:Package --region us-east-1
 ```
 

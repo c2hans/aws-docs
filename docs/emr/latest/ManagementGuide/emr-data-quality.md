@@ -85,7 +85,7 @@ You can invoke `EvaluateDataQuality` anywhere in a Spark script. The three commo
 
 The following PySpark snippet gates a write on the result of a post-validation evaluation.
 
-```
+```python
 results = EvaluateDataQuality.apply(
     frame=final_df,
     ruleset=ruleset,

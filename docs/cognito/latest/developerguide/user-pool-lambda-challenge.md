@@ -58,7 +58,7 @@ You can have Amazon Cognito verify user passwords before it issues your custom c
 
 The following is an example of a starting `InitiateAuth` request that precedes custom authentication with an SRP flow.
 
-```
+```json
 {
     "AuthFlow": "CUSTOM_AUTH",
     "ClientId": "1example23456789",
@@ -127,7 +127,7 @@ The following example demonstrates a complete custom authentication flow for a u
 
 1. **InitiateAuth request**
 
-   ```
+   ```json
    {
        "AuthFlow": "CUSTOM_AUTH",
        "ClientId": "{{1example23456789}}",
@@ -141,7 +141,7 @@ The following example demonstrates a complete custom authentication flow for a u
 
 1. **InitiateAuth response**
 
-   ```
+   ```json
    {
        "ChallengeName": "PASSWORD_VERIFIER",
        "ChallengeParameters": {
@@ -153,7 +153,7 @@ The following example demonstrates a complete custom authentication flow for a u
 
 1. **RespondToAuthChallenge request with `PASSWORD_VERIFIER`**
 
-   ```
+   ```json
    {
        "ChallengeName": "PASSWORD_VERIFIER",
        "ClientId": "{{1example23456789}}",
@@ -169,7 +169,7 @@ The following example demonstrates a complete custom authentication flow for a u
 
 1. **RespondToAuthChallenge response with `NEW_PASSWORD_REQUIRED` challenge**
 
-   ```
+   ```json
    {
        "ChallengeName": "NEW_PASSWORD_REQUIRED",
        "ChallengeParameters": {},
@@ -179,7 +179,7 @@ The following example demonstrates a complete custom authentication flow for a u
 
 1. **RespondToAuthChallenge request with `NEW_PASSWORD_REQUIRED`**
 
-   ```
+   ```json
    {
        "ChallengeName": "NEW_PASSWORD_REQUIRED",
        "ClientId": "{{1example23456789}}",
@@ -193,7 +193,7 @@ The following example demonstrates a complete custom authentication flow for a u
 
 1. **RespondToAuthChallenge response with CAPTCHA custom challenge**
 
-   ```
+   ```json
    {
        "ChallengeName": "CUSTOM_CHALLENGE",
        "ChallengeParameters": {
@@ -205,7 +205,7 @@ The following example demonstrates a complete custom authentication flow for a u
 
 1. **RespondToAuthChallenge request with answer to CAPTCHA custom challenge**
 
-   ```
+   ```json
    {
        "ChallengeName": "CUSTOM_CHALLENGE",
        "ClientId": "{{1example23456789}}",
@@ -219,7 +219,7 @@ The following example demonstrates a complete custom authentication flow for a u
 
 **6. Final success response**
 
-```
+```json
 {
     "AuthenticationResult": {
         "AccessToken": "{{eyJra456defEXAMPLE}}",

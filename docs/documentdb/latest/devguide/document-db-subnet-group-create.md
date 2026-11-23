@@ -85,7 +85,7 @@ aws docdb describe-db-subnet-groups ^
 ```
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 [
     [
         "default",
@@ -146,7 +146,7 @@ aws docdb create-db-subnet-group ^
 ```
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "DBSubnetGroup": {
         "DBSubnetGroupDescription": "A sample subnet group",

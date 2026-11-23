@@ -41,7 +41,7 @@ The following considerations apply to VPC Lattice for Oracle Database@AWS:
 
 ****
 
-  ```
+  ```json
   {
    "Version":"2012-10-17",
    "Statement": [

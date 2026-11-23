@@ -90,7 +90,7 @@ Enable CORS by returning correct headers.
 #### DescribeVpcConnectionResponse schema
 <a name="vpc-connection-arn-response-body-describevpcconnectionresponse-example"></a>
 
-```
+```json
 {
   "vpcConnectionArn": "string",
   "creationTime": "string",
@@ -112,7 +112,7 @@ Enable CORS by returning correct headers.
 #### DeleteVpcConnectionResponse schema
 <a name="vpc-connection-arn-response-body-deletevpcconnectionresponse-example"></a>
 
-```
+```json
 {
   "vpcConnectionArn": "string",
   "state": enum
@@ -122,7 +122,7 @@ Enable CORS by returning correct headers.
 #### Error schema
 <a name="vpc-connection-arn-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

@@ -32,7 +32,7 @@ The following examples use the MongoDB API to add documents.
 
 To add a single document to a collection, use the `insertOne( {} )` operation with the document that you want added to the collection.
 
-```
+```json
 db.example.insertOne(
     {
         "Item": "Ruler",
@@ -48,7 +48,7 @@ db.example.insertOne(
 
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "acknowledged" : true,
     "insertedId" : ObjectId("5bedafbcf65ff161707de24f")
@@ -60,7 +60,7 @@ Output from this operation looks something like the following (JSON format).
 
 To add multiple documents to a collection, use the `insertMany( [{},...,{}] )` operation with a list of the documents that you want added to the collection. Although the documents in this particular list have different schemas, they can all be added to the same collection.
 
-```
+```json
 db.example.insertMany(
     [
         {
@@ -94,7 +94,7 @@ db.example.insertMany(
 
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "acknowledged" : true,
     "insertedIds" : [
@@ -130,7 +130,7 @@ To retrieve all the documents in your collection, use the `find()` operation wit
 
 The following query returns all documents in the `example` collection.
 
-```
+```json
 db.example.find( {} ).pretty()
 ```
 
@@ -141,7 +141,7 @@ To retrieve all documents that match a field and value, use the `find()` operati
 
 Using the preceding documents, this query returns all documents where the "Item" field equals "Pen".
 
-```
+```json
 db.example.find( { "Item": "Pen" } ).pretty()
 ```
 
@@ -178,7 +178,7 @@ To find all documents that match an array, use the `find()` operation with the a
 
 The following query returns only the "Pen" because the "Poster Paint" has an additional color (White), and "Spray Paint" has the colors in a different order.
 
-```
+```json
 db.example.find( { "Colors": ["Red","Green","Blue","Black"] } ).pretty()
 ```
 
@@ -187,7 +187,7 @@ db.example.find( { "Colors": ["Red","Green","Blue","Black"] } ).pretty()
 
 To find all the documents that have a particular array value, use the `find()` operation with the array name and the value that you're interested in.
 
-```
+```json
 db.example.find( { "Colors": "Red" } ).pretty()
 ```
 
@@ -198,7 +198,7 @@ The preceding operation returns all three documents because each of them has an 
 
 The following query returns all documents where the "`Inventory.OnHand`" value is less than 50.
 
-```
+```json
 db.example.find(
         { "Inventory.OnHand": { $lt: 50 } } )
 ```
@@ -227,7 +227,7 @@ When you update an existing field — whether that field is a simple field, an a
 
 Use the following four documents that you added earlier for the following updating operations.
 
-```
+```json
 {
     "Item": "Ruler",
     "Colors": ["Red","Green","Blue","Clear","Yellow"],
@@ -267,7 +267,7 @@ Use the following four documents that you added earlier for the following updati
 **To update a simple field**
 To update a simple field, use `update()` with `$set` to specify the field name and new value. The following example changes the `Item` from "Pen" to "Gel Pen".
 
-```
+```json
 db.example.update(
     { "Item" : "Pen" },
     { $set: { "Item": "Gel Pen" } }
@@ -276,7 +276,7 @@ db.example.update(
 
 Results from this operation look something like the following.
 
-```
+```json
 {
     "Item": "Gel Pen",
     "Colors": ["Red","Green","Blue","Black"],
@@ -290,7 +290,7 @@ Results from this operation look something like the following.
 **To update an array**
 The following example replaces the existing array of colors with a new array that includes `Orange` and drops `White` from the list of colors. The new list of colors is in the order specified in the `update()` operation.
 
-```
+```json
 db.example.update(
     { "Item" : "Poster Paint" },
     { $set: { "Colors": ["Red","Green","Blue","Orange","Black"] } }
@@ -299,7 +299,7 @@ db.example.update(
 
 Results from this operation look something like the following.
 
-```
+```json
 {
     "Item": "Poster Paint",
     "Colors": ["Red","Green","Blue","Orange","Black"],
@@ -317,7 +317,7 @@ To modify a document by adding one or more new fields, use the `update()` operat
 
 The following example adds the field `UnitPrice` with the value `3.99` to the Spray Paints document. Note that the value `3.99` is numeric and not a string.
 
-```
+```json
 db.example.update(
     { "Item": "Spray Paint" },
     { $set: { "UnitPrice": 3.99 } }
@@ -326,7 +326,7 @@ db.example.update(
 
 Results from this operation look something like the following (JSON format).
 
-```
+```json
 {
     "Item": "Spray Paint",
     "Colors": ["Black","Red","Green","Blue"],
@@ -346,7 +346,7 @@ To modify a document by replacing an embedded document, use the `update()` opera
 
 Given the following document.
 
-```
+```json
 db.example.insert({
     "DocName": "Document 1",
     "Date": {
@@ -360,7 +360,7 @@ db.example.insert({
 **To replace an embedded document**
 The following example replaces the current Date document with a new one that has only the fields `Month` and `Day`; `Year` has been eliminated.
 
-```
+```json
 db.example.update(
     { "DocName" : "Document 1" },
     { $set: { "Date": { "Month": 4, "Day": 18 } } }
@@ -369,7 +369,7 @@ db.example.update(
 
 Results from this operation look something like the following.
 
-```
+```json
 {
     "DocName": "Document 1",
     "Date": {
@@ -387,7 +387,7 @@ To modify a document by adding one or more new fields to an embedded document, u
 
 Given the following document, the following code uses "dot notation" to insert the `Year` and `DoW` fields to the embedded `Date` document, and `Words` into the parent document.
 
-```
+```json
 {
     "DocName": "Document 1",
     "Date": {
@@ -397,7 +397,7 @@ Given the following document, the following code uses "dot notation" to insert t
 }
 ```
 
-```
+```json
 db.example.update(
     { "DocName" : "Document 1" },
     { $set: { "Date.Year": 1987,
@@ -408,7 +408,7 @@ db.example.update(
 
 Results from this operation look something like the following.
 
-```
+```json
 {
     "DocName": "Document 1",
     "Date": {
@@ -428,7 +428,7 @@ To modify a document by removing a field from the document, use the `update()` o
 
 The following example removes the `Words` field from the preceding document.
 
-```
+```json
 db.example.update(
     { "DocName" : "Document 1" },
     { $unset: { Words:1 } }
@@ -437,7 +437,7 @@ db.example.update(
 
 Results from this operation look something like the following.
 
-```
+```json
 {
     "DocName": "Document 1",
     "Date": {
@@ -456,7 +456,7 @@ To modify a document by removing a field from multiple documents, use the `updat
 
 The following example removes the `Inventory` field from all documents in the example collection. If a document does not have the `Inventory` field, no action is taken on that document. If `multi: true` is omitted, the action is performed only on the first document that meets the criterion.
 
-```
+```json
 db.example.update(
     {},
     { $unset: { Inventory:1 } },
@@ -469,12 +469,12 @@ db.example.update(
 
 To remove a document from your database, use the `remove()` operation, specifying which document to remove. The following code removes "Gel Pen" from your `example` collection.
 
-```
+```json
 db.example.remove( { "Item": "Gel Pen" } )
 ```
 
 To remove all documents from your database, use the `remove()` operation with an empty query.
 
-```
+```json
 db.example.remove( { } )
 ```

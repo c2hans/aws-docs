@@ -42,7 +42,7 @@ For more information, see [Working with shared environment in AWS Cloud9](https:
 **Tools for PowerShell V4**
 **Example 1: This example changes the settings of the specified existing environment member for the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Update-C9EnvironmentMembership -UserArn arn:aws:iam::123456789012:user/AnotherDemoUser -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX -Permission read-only
 ```
 **Output:**
@@ -59,7 +59,7 @@ UserId        : AIDAJ3BA6O2FMJWCWXHEX
 **Tools for PowerShell V5**
 **Example 1: This example changes the settings of the specified existing environment member for the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Update-C9EnvironmentMembership -UserArn arn:aws:iam::123456789012:user/AnotherDemoUser -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX -Permission read-only
 ```
 **Output:**

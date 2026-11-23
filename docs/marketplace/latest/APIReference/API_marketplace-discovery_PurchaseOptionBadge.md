@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # PurchaseOptionBadge
 
-A badge indicating a special attribute of a purchase option, such as private pricing or future dated.
+A badge indicating a special attribute of a purchase option, such as private pricing or future-dated.
 
 ## Contents
 <a name="API_marketplace-discovery_PurchaseOptionBadge_Contents"></a>
@@ -13,7 +13,7 @@ A badge indicating a special attribute of a purchase option, such as private pri
 In the following list, the required parameters are described first.
 
  ** badgeType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_PurchaseOptionBadge-badgeType"></a>
-The machine-readable type of the badge.
+The machine-readable type of the badge. See `PurchaseOptionBadgeType` for the values.
 Type: String
 Valid Values: `PRIVATE_PRICING | FUTURE_DATED | REPLACEMENT_OFFER | AUTO_RENEW`
 Required: Yes

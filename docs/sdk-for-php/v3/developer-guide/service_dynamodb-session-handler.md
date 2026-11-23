@@ -18,7 +18,7 @@ For more information about the DynamoDB service, see the [Amazon DynamoDB homepa
 
 First, instantiate and register the session handler.
 
-```
+```php
 use Aws\DynamoDb\SessionHandler;
 
 $dynamoDb = new Aws\DynamoDb\DynamoDbClient([
@@ -44,7 +44,7 @@ When creating this table use ‘id’ as the name of the primary key. Also it is
 
 Once the session handler is registered and the table exists, you can write to and read from the session using the `$_SESSION` superglobal, just like you normally do with PHP’s default session handler. The DynamoDB Session Handler encapsulates and abstracts the interactions with DynamoDB and enables you to simply use PHP’s native session functions and interface.
 
-```
+```php
 // Start the session
 session_start();
 
@@ -99,7 +99,7 @@ Maximum time (in microseconds) that the session handler should wait between atte
 
 To configure the Session Handler, specify the configuration options when you instantiate the handler. The following code is an example with all of the configuration options specified.
 
-```
+```php
 $sessionHandler = SessionHandler::fromClient($dynamoDb, [
     'table_name'                    => 'sessions',
     'hash_key'                      => 'id',
@@ -140,7 +140,7 @@ The DynamoDB Session Handler supports pessimistic session locking to mimic the b
 
 To enable session locking, set the `'locking'` option to `true` when you instantiate the `SessionHandler`.
 
-```
+```php
 $sessionHandler = SessionHandler::fromClient($dynamoDb, [
     'table_name' => 'sessions',
     'locking'    => true,
@@ -156,7 +156,7 @@ Alternatively, the DynamoDB Session Handler supports session garbage collection 
 
 For this reason, we do not support automated garbage collection. A better practice is to schedule the garbage collection to occur during an off-peak time when a burst of consumed throughput will not disrupt the rest of the application. For example, you could have a nightly cron job trigger a script to run the garbage collection. This script would need to do something like the following.
 
-```
+```php
 $sessionHandler = SessionHandler::fromClient($dynamoDb, [
     'table_name'   => 'sessions',
     'batch_config' => [
@@ -172,7 +172,7 @@ $sessionHandler->garbageCollect();
 
 You can also use the `'before'` option within `'batch_config'` to introduce delays on the `BatchWriteItem` operations that are performed by the garbage collection process. This will increase the amount of time it takes the garbage collection to complete, but it can help you spread out the requests made by the DynamoDB Session Handler to help you stay close to or within your provisioned throughput capacity during garbage collection.
 
-```
+```php
 $sessionHandler = SessionHandler::fromClient($dynamoDb, [
     'table_name'   => 'sessions',
     'batch_config' => [
@@ -210,7 +210,7 @@ To use the DynamoDB SessionHhandler, your [configured credentials](guide_credent
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

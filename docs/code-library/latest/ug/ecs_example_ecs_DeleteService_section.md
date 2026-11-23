@@ -91,7 +91,7 @@ For more information, see [Deleting an Amazon ECS service using the console](htt
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecs#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ecs.EcsClient;
 import software.amazon.awssdk.services.ecs.model.DeleteServiceRequest;
@@ -159,12 +159,12 @@ public class DeleteService {
 **Tools for PowerShell V4**
 **Example 1: Deletes the service named 'my-http-service' in the default cluster. The service must have a desired count and running count of 0 before you can delete it. You are prompted for confirmation before the command proceeds. To bypass the confirmation prompt add the -Force switch.**
 
-```
+```powershell
 Remove-ECSService -Service my-http-service
 ```
 **Example 2: Deletes the service named 'my-http-service' in the named cluster.**
 
-```
+```powershell
 Remove-ECSService -Cluster myCluster -Service my-http-service
 ```
 +  For API details, see [DeleteService](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -172,12 +172,12 @@ Remove-ECSService -Cluster myCluster -Service my-http-service
 **Tools for PowerShell V5**
 **Example 1: Deletes the service named 'my-http-service' in the default cluster. The service must have a desired count and running count of 0 before you can delete it. You are prompted for confirmation before the command proceeds. To bypass the confirmation prompt add the -Force switch.**
 
-```
+```powershell
 Remove-ECSService -Service my-http-service
 ```
 **Example 2: Deletes the service named 'my-http-service' in the named cluster.**
 
-```
+```powershell
 Remove-ECSService -Cluster myCluster -Service my-http-service
 ```
 +  For API details, see [DeleteService](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -188,7 +188,7 @@ Remove-ECSService -Cluster myCluster -Service my-http-service
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 

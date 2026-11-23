@@ -29,7 +29,7 @@ The following IAM permissions are required in the IAM policy.
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[

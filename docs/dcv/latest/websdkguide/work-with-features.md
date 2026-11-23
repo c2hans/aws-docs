@@ -13,7 +13,7 @@ The availability of Amazon DCV features depends on the permissions configured fo
 
  When the availability of a feature in a Amazon DCV session changes, the Amazon DCV Web Client SDK notifies you using the `featuresUpdate` callback function that you specify at the time of establishing the connection. For example:
 
-```
+```javascript
 featuresUpdate: function (connection, list) {
   {{...}}
 },
@@ -28,7 +28,7 @@ featuresUpdate: function (connection, list) {
 
 The following example code shows how to do this.
 
-```
+```javascript
 // Connection callback called
 function featuresUpdate (_, list) {
   if (list.length > 0) {

@@ -37,7 +37,7 @@ You need `kubectl` installed and configured. For more information, see [Set up t
 
 Here’s an example Node Class:
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1
 kind: NodeClass
 metadata:
@@ -58,7 +58,7 @@ This NodeClass increases the amount of ephemeral storage on the node.
 
 Apply this configuration by using:
 
-```
+```bash
 kubectl apply -f nodeclass.yaml
 ```
 
@@ -80,7 +80,7 @@ When creating access entries for EKS Auto Mode node classes, you need to use the
 
 Update the following CLI commands with your cluster name, and node role ARN. The node role ARN is specified in the node class YAML.
 
-```
+```bash
 # Create the access entry for EC2 nodes
 aws eks create-access-entry \
   --cluster-name <cluster-name> \
@@ -102,7 +102,7 @@ aws eks associate-access-policy \
 
 Update the following CloudFormation with your cluster name, and node role ARN. The node role ARN is specified in the node class YAML.
 
-```
+```yaml
 EKSAutoNodeRoleAccessEntry:
   Type: AWS::EKS::AccessEntry
   Properties:
@@ -121,7 +121,7 @@ For information about deploying CloudFormation stacks, see [Getting started with
 ## Node Class Specification
 <a name="auto-node-class-spec"></a>
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1
 kind: NodeClass
 metadata:
@@ -314,7 +314,7 @@ Use `podSubnetSelectorTerms` and `podSecurityGroupSelectorTerms` when you need t
 ### Example configuration
 <a name="_example_configuration"></a>
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1
 kind: NodeClass
 metadata:
@@ -382,7 +382,7 @@ To switch to secondary IP mode (1 IP per pod, no prefix reservation) for a pod-s
 ### Example configuration
 <a name="_example_configuration_2"></a>
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1
 kind: NodeClass
 metadata:
@@ -413,7 +413,7 @@ Use `enableV4Egress` when you need to:
 ### Example configuration
 <a name="_example_configuration_3"></a>
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1
 kind: NodeClass
 metadata:
@@ -456,7 +456,7 @@ When using `podSubnetSelectorTerms` and `podSecurityGroupSelectorTerms` with sta
 
 The following example shows a `NodeClass` configured with EFA-only interfaces for a GPU instance used in distributed training. The primary interface has a /28 prefix (16 pod IPs) and 4 additional EFA-only interfaces provide RDMA connectivity. This configuration can be paired with a [static capacity node pool](auto-static-capacity.md) to maintain pre-warmed, EFA-ready nodes.
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1
 kind: NodeClass
 metadata:
@@ -501,7 +501,7 @@ With the `advancedCompute.hugepages` field, you can configure hugepages on nodes
 ### Example configuration
 <a name="hugepages-example"></a>
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1
 kind: NodeClass
 metadata:
@@ -567,7 +567,7 @@ The following kubelet settings are available:
 ### Example configuration
 <a name="kubelet-config-example"></a>
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1
 kind: NodeClass
 metadata:
@@ -676,7 +676,7 @@ Use the `advancedCompute.kernel.sysctl` field to set Linux kernel sysctls on nod
 ### Example configuration
 <a name="sysctls-example"></a>
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1
 kind: NodeClass
 metadata:

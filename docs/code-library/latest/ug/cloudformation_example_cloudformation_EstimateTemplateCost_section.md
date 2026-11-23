@@ -46,21 +46,21 @@ For more information, see [What is AWS Pricing Calculator?](https://docs.aws.ama
 **Tools for PowerShell V4**
 **Example 1: Returns an AWS Simple Monthly Calculator URL with a query string that describes the resources required to run the template. The template is obtained from the specified Amazon S3 URL and the single customization parameter applied. The parameter can also be specified using 'Key' and 'Value' instead of 'ParameterKey' and 'ParameterValue'.**
 
-```
+```powershell
 Measure-CFNTemplateCost -TemplateURL https://s3.amazonaws.com/amzn-s3-demo-bucket/templatefile.template `
                         -Region us-west-1 `
                         -Parameter @{ ParameterKey="KeyName"; ParameterValue="myKeyPairName" }
 ```
 **Example 2: Returns an AWS Simple Monthly Calculator URL with a query string that describes the resources required to run the template. The template is parsed from the supplied content and the customization parameters applied (this example assumes the template content would have declared two parameters, 'KeyName' and 'InstanceType'). The customization parameters can also be specified using 'Key' and 'Value' instead of 'ParameterKey' and 'ParameterValue'.**
 
-```
+```powershell
 Measure-CFNTemplateCost -TemplateBody "{TEMPLATE CONTENT HERE}" `
                         -Parameter @( @{ ParameterKey="KeyName"; ParameterValue="myKeyPairName" },`
                                       @{ ParameterKey="InstanceType"; ParameterValue="m1.large" })
 ```
 **Example 3: Uses New-Object to build the set of template parameters and returns an AWS Simple Monthly Calculator URL with a query string that describes the resources required to run the template. The template is parsed from the supplied content, with customization parameters (this example assumes the template content would have declared two parameters, 'KeyName' and 'InstanceType').**
 
-```
+```powershell
 $p1 = New-Object -Type Amazon.CloudFormation.Model.Parameter
 $p1.ParameterKey = "KeyName"
 $p1.ParameterValue = "myKeyPairName"
@@ -76,21 +76,21 @@ Measure-CFNTemplateCost -TemplateBody "{TEMPLATE CONTENT HERE}" -Parameter @( $p
 **Tools for PowerShell V5**
 **Example 1: Returns an AWS Simple Monthly Calculator URL with a query string that describes the resources required to run the template. The template is obtained from the specified Amazon S3 URL and the single customization parameter applied. The parameter can also be specified using 'Key' and 'Value' instead of 'ParameterKey' and 'ParameterValue'.**
 
-```
+```powershell
 Measure-CFNTemplateCost -TemplateURL https://s3.amazonaws.com/amzn-s3-demo-bucket/templatefile.template `
                         -Region us-west-1 `
                         -Parameter @{ ParameterKey="KeyName"; ParameterValue="myKeyPairName" }
 ```
 **Example 2: Returns an AWS Simple Monthly Calculator URL with a query string that describes the resources required to run the template. The template is parsed from the supplied content and the customization parameters applied (this example assumes the template content would have declared two parameters, 'KeyName' and 'InstanceType'). The customization parameters can also be specified using 'Key' and 'Value' instead of 'ParameterKey' and 'ParameterValue'.**
 
-```
+```powershell
 Measure-CFNTemplateCost -TemplateBody "{TEMPLATE CONTENT HERE}" `
                         -Parameter @( @{ ParameterKey="KeyName"; ParameterValue="myKeyPairName" },`
                                       @{ ParameterKey="InstanceType"; ParameterValue="m1.large" })
 ```
 **Example 3: Uses New-Object to build the set of template parameters and returns an AWS Simple Monthly Calculator URL with a query string that describes the resources required to run the template. The template is parsed from the supplied content, with customization parameters (this example assumes the template content would have declared two parameters, 'KeyName' and 'InstanceType').**
 
-```
+```powershell
 $p1 = New-Object -Type Amazon.CloudFormation.Model.Parameter
 $p1.ParameterKey = "KeyName"
 $p1.ParameterValue = "myKeyPairName"

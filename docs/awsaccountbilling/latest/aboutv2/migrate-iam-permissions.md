@@ -100,13 +100,13 @@ To get started, download the required files from the [AWS Samples](https://githu
 
 1. Clone the repository from the [AWS Samples](https://github.com/aws-samples/bulk-policy-migrator-scripts-for-account-cost-billing-consoles) website. In a command line window, you can use the following command:
 
-   ```
+   ```bash
    git clone https://github.com/aws-samples/bulk-policy-migrator-scripts-for-account-cost-billing-consoles.git
    ```
 
 1. Navigate to the directory where you downloaded the files. You can use the following command:
 
-   ```
+   ```bash
    cd bulk-policy-migrator-scripts-for-account-cost-billing-consoles
    ```
 
@@ -123,7 +123,7 @@ To get started, download the required files from the [AWS Samples](https://githu
 
 1. Run the following commands to set up and activate the virtual environment.
 
-   ```
+   ```python
    python3 -m venv venv
    ```
 
@@ -133,7 +133,7 @@ To get started, download the required files from the [AWS Samples](https://githu
 
 1. Run the following command to install the AWS SDK for Python (Boto3) dependency.
 
-   ```
+   ```python
    pip install -r requirements.txt
    ```
 **Note**
@@ -205,22 +205,22 @@ You can use the following input parameters:
 + AWS accounts that you want the script to scan. To specify accounts, use the following input parameters:
   +  `--all` – Scans all member accounts in your organization.
 
-    ```
+    ```python
     python3 identify_affected_policies.py --all
     ```
   +  `--accounts` – Scans a subset of member accounts in your organization.
 
-    ```
+    ```python
     python3 identify_affected_policies.py --accounts 111122223333, 444455556666, 777788889999
     ```
   + `--exclude-accounts`– Excludes specific member accounts in your organization.
 
-    ```
+    ```python
     python3 identify_affected_policies.py --all --exclude-accounts 111111111111, 222222222222, 333333333333
     ```
 + ` –-action-mapping-config-file`– (Optional) Specify the path to the `action_mapping_config.json` file. The script uses this file to generate suggested updates for affected policies. If you don't specify the path, the script uses the `action_mapping_config.json` file in the folder.
 
-  ```
+  ```python
   python3 identify_affected_policies.py –-action-mapping-config-file c:\Users\username\Desktop\Scripts\action_mapping_config.json –-all
   ```
 
@@ -261,7 +261,7 @@ For more information, see [IAM policy examples](#examples-of-similar-policies).
 
 **Example `affected_policies_and_suggestions.json`**
 
-```
+```json
 [{
         "AccountsScanned": [
             "111111111111",
@@ -413,7 +413,7 @@ After you review and refine the suggested replacements, run the `update_affected
 1. Enter the following command to run the `update_affected_policies.py` script. You can enter the following input parameter:
 + The directory path of the `affected_policies_and_suggestions.json` file that contains a list of the affected policies to be updated. This file is an output of the previous step.
 
-```
+```json
 python3 update_affected_policies.py --affected-policies-directory Affected_Policies_{{<Timestamp>}}
 ```
 
@@ -432,7 +432,7 @@ The script generates a status report that contains unsuccessful operations and o
 
 **Example: Status report**
 
-```
+```json
 [{
     "Account": "111111111111",
     "PolicyType": "Customer Managed Policy"
@@ -467,14 +467,14 @@ The `rollback_affected_policies.py` script reverts the changes applied to each a
   + Specifies a comma-separated list of the AWS account IDs that you want to include in the rollback.
   + The following example scans the policies in the specified AWS accounts, and removes any statements with the `BillingConsolePolicyMigrator{{#}}` `Sid` block.
 
-    ```
+    ```python
     python3 rollback_affected_policies.py –-accounts 111122223333, 555555555555, 666666666666
     ```
 + `--all`
   + Includes all AWS account IDs in your organization.
   + The following example scans all policies in your organization, and removes any statements with the `BillingConsolePolicyMigratorRole{{#}}` `Sid` block.
 
-  ```
+  ```python
   python3 rollback_affected_policies.py –-all
   ```
 + `--exclude-accounts`
@@ -483,7 +483,7 @@ The `rollback_affected_policies.py` script reverts the changes applied to each a
     You can use this parameter only when you also specify the `--all` parameter.
   + The following example scans the policies for all AWS accounts in your organization, except for the specified accounts.
 
-    ```
+    ```python
     python3 rollback_affected_policies.py --all --exclude-accounts 777777777777, 888888888888, 999999999999
     ```
 
@@ -506,7 +506,7 @@ The following examples show policies which IAM might or might not consider simil
 Each policy type is different, but both policies contain one `Sid` block with the same affected `Action`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -522,7 +522,7 @@ Each policy type is different, but both policies contain one `Sid` block with th
 ```
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -541,7 +541,7 @@ Each policy type is different, but both policies contain one `Sid` block with th
 Both policies contain one `Sid` block with the same affected `Action`. Policy 2 contains additional actions, but these actions aren't affected.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -557,7 +557,7 @@ Both policies contain one `Sid` block with the same affected `Action`. Policy 2 
 ```
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -577,7 +577,7 @@ Both policies contain one `Sid` block with the same affected `Action`. Policy 2 
 Both policies contain one `Sid` block with the same affected `Action`. However, policy 2 contains a `Condition` element that isn't present in policy 1.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -593,7 +593,7 @@ Both policies contain one `Sid` block with the same affected `Action`. However, 
 ```
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -618,7 +618,7 @@ Both policies contain one `Sid` block with the same affected `Action`. However, 
 Policy 1 has a single `Sid` block with an affected `Action`. Policy 2 has multiple `Sid` blocks, but the affected `Action` appears in only one block.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -633,7 +633,7 @@ Policy 1 has a single `Sid` block with an affected `Action`. Policy 2 has multip
 ```
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -660,7 +660,7 @@ Policy 1 has a single `Sid` block with an affected `Action`. Policy 2 has multip
 Policy 1 has a single `Sid` block with an affected `Action`. Policy 2 has multiple `Sid` blocks, and the affected `Action` appears in multiple blocks.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -675,7 +675,7 @@ Policy 1 has a single `Sid` block with an affected `Action`. Policy 2 has multip
 ```
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -702,7 +702,7 @@ Policy 1 has a single `Sid` block with an affected `Action`. Policy 2 has multip
 Both policies have multiple `Sid` blocks, with the same affected `Action` in each `Sid` block.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -728,7 +728,7 @@ Both policies have multiple `Sid` blocks, with the same affected `Action` in eac
 ```
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -758,7 +758,7 @@ The following two policies aren't considered similar.
 Policy 1 has a single `Sid` block with an affected `Action`. Policy 2 has a `Sid` block with the same affected `Action`. However, policy 2 also contains another `Sid` block with different actions.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -784,7 +784,7 @@ Policy 1 has a single `Sid` block with an affected `Action`. Policy 2 has a `Sid
 ```
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

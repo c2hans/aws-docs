@@ -14,7 +14,7 @@ The following code examples show how to get started using Amazon EC2.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/EC2#code-examples).
 
-```
+```csharp
 namespace EC2Actions;
 
 public class HelloEc2
@@ -81,7 +81,7 @@ public class HelloEc2
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2/hello_ec2#code-examples).
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -123,7 +123,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the hello\_ec2.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/DescribeInstancesRequest.h>
@@ -236,7 +236,7 @@ int main(int argc, char **argv) {
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Asynchronously describes the security groups for the specified group ID.
      *
@@ -278,7 +278,7 @@ int main(int argc, char **argv) {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { DescribeSecurityGroupsCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 // Call DescribeSecurityGroups and display the result.
@@ -316,7 +316,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun describeEC2SecurityGroups(groupId: String) {
     val request =
         DescribeSecurityGroupsRequest {
@@ -339,7 +339,7 @@ suspend fun describeEC2SecurityGroups(groupId: String) {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ec2#code-examples).
 
-```
+```python
 def hello_ec2(ec2_client):
     """
     Use the AWS SDK for Python (Boto3) to list the security groups in your account.
@@ -374,7 +374,7 @@ if __name__ == "__main__":
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ec2'
 require 'logger'
 
@@ -447,7 +447,7 @@ end
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
 async fn show_security_groups(client: &aws_sdk_ec2::Client, group_ids: Vec<String>) {
     let response = client
         .describe_security_groups()
@@ -486,7 +486,7 @@ async fn show_security_groups(client: &aws_sdk_ec2::Client, group_ids: Vec<Strin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 The `Package.swift` file.
 
-```
+```swift
 // swift-tools-version: 5.9
 //
 // The swift-tools-version declares the minimum version of Swift required to
@@ -528,7 +528,7 @@ let package = Package(
 ```
 The `entry.swift` file.
 
-```
+```swift
 // An example that shows how to use the AWS SDK for Swift to perform a simple
 // operation using Amazon Elastic Compute Cloud (EC2).
 //

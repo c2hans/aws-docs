@@ -114,7 +114,7 @@ For more information, see [Get a secret value using the AWS CLI](https://docs.aw
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/secretsmanager#code-examples).
 
-```
+```python
 class BatchGetSecretsWrapper:
     def __init__(self, secretsmanager_client):
         self.client = secretsmanager_client
@@ -156,7 +156,7 @@ class BatchGetSecretsWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/smr#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_filter_name = 'mySecret'
         DATA(lo_result) = lo_smr->batchgetsecretvalue(

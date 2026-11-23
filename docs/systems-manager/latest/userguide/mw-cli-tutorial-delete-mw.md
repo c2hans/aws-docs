@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/mw-cli-
 
 To delete a maintenance window you created in these tutorials, run the following command.
 
-```
+```sh
 aws ssm delete-maintenance-window --window-id "{{mw-0c50858d01EXAMPLE}}"
 ```
 

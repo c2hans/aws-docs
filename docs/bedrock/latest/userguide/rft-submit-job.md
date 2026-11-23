@@ -60,7 +60,7 @@ Send a CreateModelCustomizationJob request with `customizationType` set to `REIN
 
 **Example request:**
 
-```
+```json
 {
     "roleArn": "arn:aws:iam::{{123456789012}}:role/{{BedrockRFTRole}}",
     "baseModelIdentifier": "amazon.nova-2.0",
@@ -97,7 +97,7 @@ Send a CreateModelCustomizationJob request with `customizationType` set to `REIN
 
 **Python API sample request:**
 
-```
+```python
 import boto3
 
 bedrock = boto3.client(service_name='bedrock')

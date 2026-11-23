@@ -30,7 +30,7 @@ To configure the custom domain feature, you need to provide the custom domain va
 
 Use the following example to create an environment with a custom webserver domain name using the AWS CLI.
 
-```
+```bash
 aws mwaa create-environment \
 --name my-mwaa-env \
 --source-bucket-arn arn:aws:s3:::amzn-s3-demo-bucket \
@@ -50,7 +50,7 @@ Use the following steps to set up the required networking infrastructure to use 
 
 1. Get the IP addresses for the Amazon VPC Endpoint Network Interfaces (ENI). To do this, first, use [`get-environment`](https://awscli.amazonaws.com/v2/documentation/api/2.9.6/reference/mwaa/get-environment.html) to find the `WebserverVpcEndpointService` for your environment.
 
-   ```
+   ```bash
    aws mwaa get-environment --name {{your-environment-name}}
    ```
 
@@ -102,7 +102,7 @@ Use the following steps to set up the required networking infrastructure to use 
 
 1. Use `create-target-group` to create a new target group. You will use this target group to register the IP addresses for your webserver Amazon VPC endpoints.
 
-   ```
+   ```bash
    aws elbv2 create-target-group \
    --name {{new-target-group-namne}} \
    --protocol HTTPS \
@@ -118,7 +118,7 @@ Use the following steps to set up the required networking infrastructure to use 
 
    Register the IP addresses using the `register-targets` command.
 
-   ```
+   ```bash
    aws elbv2 register-targets \
    --target-group-arn {{target-group-arn}} \
    --targets Id={{ip-address-1}} Id={{ip-address-2}}
@@ -126,7 +126,7 @@ Use the following steps to set up the required networking infrastructure to use 
 
 1. Request an ACM certificate. Skip this step if you are using an existing certificate.
 
-   ```
+   ```bash
    aws acm request-certificate \
    --domain-name {{my-custom-domain.com}} \
    --validation-method DNS
@@ -134,14 +134,14 @@ Use the following steps to set up the required networking infrastructure to use 
 
 1. Configure an Application Load Balancer. First, create the load balancer, then create a listener for the load balancer. Specify the ACM certificate you created in the previous step.
 
-   ```
+   ```bash
    aws elbv2 create-load-balancer \
    --name {{my-mwaa-lb}} \
    --type application \
    --subnets {{subnet-id-1}} {{subnet-id-2}}
    ```
 
-   ```
+   ```bash
    aws elbv2 create-listener \
    --load-balancer-arn {{load-balancer-arn}} \
    --protocol HTTPS \
@@ -155,20 +155,20 @@ Use the following steps to set up the required networking infrastructure to use 
 
 1. Create a hosted zone using Route 53 for the domain.
 
-   ```
+   ```bash
    aws route53 create-hosted-zone --name my-custom-domain.com \
    --caller-reference 1
    ```
 
    Create an A record for the domain. To do this using the AWS CLI, get the hosted zone ID using `list-hosted-zones-by-name` then apply the record with `change-resource-record-sets`.
 
-   ```
+   ```bash
    HOSTED_ZONE_ID=$(aws route53 list-hosted-zones-by-name \
    --dns-name my-custom-domain.com \
    --query 'HostedZones[0].Id' --output text)
    ```
 
-   ```
+   ```bash
    aws route53 change-resource-record-sets \
    --hosted-zone-id $HOSTED_ZONE_ID \
    --change-batch '{
@@ -191,7 +191,7 @@ Use the following steps to set up the required networking infrastructure to use 
 
 1. Update the security group rules for the webserver Amazon VPC endpoint to follow the principle of least privilege by allowing HTTPS traffic only from the public subnets where the Application Load Balancer is located. Save the following JSON locally. For example, as `sg-ingress-ip-permissions.json`.
 
-   ```
+   ```json
    [
      {
        "IpProtocol": "tcp",
@@ -216,7 +216,7 @@ Use the following steps to set up the required networking infrastructure to use 
 
    Run the following Amazon EC2 command to update your ingress security group rules. Specify the JSON file for `--ip-permissions`.
 
-   ```
+   ```bash
    aws ec2 authorize-security-group-ingress \
    --group-id <security-group-id> \
    --ip-permissions file://{{sg-ingress-ip-permissions.json}}
@@ -224,7 +224,7 @@ Use the following steps to set up the required networking infrastructure to use 
 
    Run the following Amazon EC2 command to update your egress rules.
 
-   ```
+   ```bash
    aws ec2 authorize-security-group-egress \
    --group-id {{webserver-vpc-endpoint-security-group-id}} \
    --protocol tcp \

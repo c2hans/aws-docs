@@ -51,7 +51,7 @@ To use your customer managed key with Mail Manager archiving, your key policy mu
 
 The following example shows a typical key policy:
 
-```
+```json
 {
             "Sid": "Allow SES to encrypt/decrypt",
             "Effect": "Allow",
@@ -93,7 +93,7 @@ SES uses the same encryption context in all AWS KMS cryptographic operations, wh
 
 **Example**
 
-```
+```json
 "encryptionContext": {
     "aws:ses:arn": "arn:aws:ses:us-west-2:111122223333:ExampleResourceName/ExampleResourceID"
 }
@@ -112,7 +112,7 @@ SES uses an encryption context constraint in grants to control access to the cus
 **Example**
 The following are example key policy statements to grant access to a customer managed key for a specific encryption context. The condition in this policy statement requires that the grants have an encryption context constraint that specifies the encryption context.
 
-```
+```json
 {
     "Sid": "Enable DescribeKey",
     "Effect": "Allow",
@@ -198,7 +198,7 @@ To scope the example policies to a specific ingress endpoint, replace the wildca
 
 **IAM policy**
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {
@@ -239,7 +239,7 @@ To scope the example policies to a specific ingress endpoint, replace the wildca
 
 **AWS KMS policy**
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {

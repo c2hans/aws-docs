@@ -13,7 +13,7 @@ The module (`nn.Module`) is a low level API that defines the attention layers of
 
 The following code snippet shows how to use the [`torch.sagemaker.nn.attn.FlashSelfAttention`](distributed-model-parallel-v2-reference.md#model-parallel-v2-torch-sagemaker-reference-flashselfattention) API provided by SMP v2.
 
-```
+```py
 def new_attn(self, q, k, v, attention_mask=None, head_mask=None):
     return (
         self.flashmod((q, k, v), causal=True, cast_dtype=torch.bfloat16, layout="b h s d"),
@@ -34,7 +34,7 @@ SMP v2 also supports [FlashAttention](https://github.com/HazyResearch/flash-atte
 
 The following code snippet shows how to use the [`torch.sagemaker.nn.attn.FlashGroupedQueryAttention`](distributed-model-parallel-v2-reference.md#model-parallel-v2-torch-sagemaker-reference-flashGroupedQueryAttn) API provided by SMP v2.
 
-```
+```py
 from transformers.models.llama.modeling_llama import LlamaAttention
 from torch.sagemaker.nn.attn import FlashGroupedQueryAttention
 
@@ -73,7 +73,7 @@ class LlamaFlashAttention(LlamaAttention):
 
 The SMP library also provides [`torch.sagemaker.nn.huggingface.llama_flashattn.LlamaFlashAttention`](distributed-model-parallel-v2-reference.md#model-parallel-v2-torch-sagemaker-reference-llamaFlashAttn), which uses the [`torch.sagemaker.nn.attn.FlashGroupedQueryAttention`](distributed-model-parallel-v2-reference.md#model-parallel-v2-torch-sagemaker-reference-flashGroupedQueryAttn) API at low level. Hugging Face Transformers has a similar implementation called [`LlamaFlashAttention2`](https://github.com/huggingface/transformers/blob/main/src/transformers/models/llama/modeling_llama.py) from v4.36.0. The following code snippet shows how to use the SMP v2 `LlamaFlashAttention` API or the Transformers `LlamaFlashAttention2` API to replace the attention layers of an existing Llama model.
 
-```
+```py
 from torch.sagemaker.nn.huggingface.llama_flashattn import LlamaFlashAttention
 from transformers.models.llama.modeling_llama import LlamaFlashAttention2
 

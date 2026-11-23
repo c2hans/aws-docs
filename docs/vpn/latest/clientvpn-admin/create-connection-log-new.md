@@ -25,7 +25,7 @@ You can enable connection logging when you create a new Client VPN endpoint by u
 **To enable connection logging for a new Client VPN endpoint using the AWS CLI**
 Use the [create-client-vpn-endpoint](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-client-vpn-endpoint.html) command, and specify the `--connection-log-options` parameter. You can specify the connection logs information in JSON format, as shown in the following example.
 
-```
+```json
 {
     "Enabled": true,
     "CloudwatchLogGroup": "ClientVpnConnectionLogs",

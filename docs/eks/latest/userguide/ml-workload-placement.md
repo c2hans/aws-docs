@@ -157,13 +157,13 @@ The node name is not the only label that differs between compute types. For the 
 
 The authoritative list for your cluster is the cluster itself. List every label on a node:
 
-```
+```bash
 kubectl get node <node-name> -o go-template='{{range $k, $v := .metadata.labels}}{{$k}} = {{$v}}{{"\n"}}{{end}}' | sort
 ```
 
 Show selected labels as columns across all nodes:
 
-```
+```bash
 kubectl get nodes \
   -L node.kubernetes.io/instance-type \
   -L karpenter.sh/capacity-type \
@@ -173,7 +173,7 @@ kubectl get nodes \
 
 List the nodes that match a prospective selector before you deploy against it:
 
-```
+```bash
 kubectl get nodes -l eks.amazonaws.com/instance-gpu-manufacturer=nvidia
 ```
 
@@ -197,7 +197,7 @@ kubectl get nodes -l eks.amazonaws.com/instance-gpu-manufacturer=nvidia
 
 The following Pod runs only on an EKS Auto Mode node with an NVIDIA GPU.
 
-```
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -235,7 +235,7 @@ Node affinity is more expressive than `nodeSelector`. It supports set operators 
 
 Combine both to express "an NVIDIA GPU is required, and one particular GPU model is preferred":
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -284,7 +284,7 @@ Within a single `matchExpressions` list, all expressions must match, which is a 
 
 Pin to `kubernetes.io/hostname` when you need a specific machine, for example to reproduce a failure on one node or to colocate a debugging Pod with a running job. Use the node name format for your provisioner, as described in [The node name format differs by provisioner](#ml-workload-placement-hostname).
 
-```
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -311,7 +311,7 @@ Host pinning is appropriate for short-lived, operational Pods. Avoid it for prod
 
 To keep replicas from concentrating on one node, use a topology spread constraint rather than affinity. The following constraint allows at most one replica of difference between any two nodes, and leaves excess replicas `Pending` rather than stacking them.
 
-```
+```yaml
       topologySpreadConstraints:
         - maxSkew: 1
           topologyKey: kubernetes.io/hostname
@@ -340,7 +340,7 @@ The following table summarizes the behavior when the target nodes become unavail
 
 If a Pod is stuck `Pending`, the scheduler’s reason is in the Pod’s events:
 
-```
+```bash
 kubectl describe pod <pod-name>
 ```
 

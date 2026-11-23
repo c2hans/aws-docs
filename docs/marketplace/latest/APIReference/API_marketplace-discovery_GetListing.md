@@ -37,7 +37,7 @@ Pattern: `[\w\-]+`
 Required: Yes
 
  ** [locale](#API_marketplace-discovery_GetListing_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetListing-request-locale"></a>
-A BCP 47 language tag or comma-separated priority list specifying the preferred locale for response content. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If omitted, the service returns content in the default locale.
+The preferred locale for response content, as a Best Current Practice 47 (BCP 47) language tag or a comma-separated priority list of language tags. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If you omit this field, the service returns content in the default locale.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
@@ -116,6 +116,11 @@ Content-type: application/json
       "displayName": "string",
       "sellerProfileId": "string"
    },
+   "purchaseIndicators": [
+      {
+         "indicatorType": "string"
+      }
+   ],
    "resources": [
       {
          "contentType": "string",
@@ -179,12 +184,12 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\w\-]+`
 
  ** [categories](#API_marketplace-discovery_GetListing_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetListing-response-categories"></a>
-The categories used to classify this listing into logical groups.
+The categories that classify this listing into logical groups.
 Type: Array of [Category](API_marketplace-discovery_Category.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 30 items.
 
  ** [fulfillmentOptionSummaries](#API_marketplace-discovery_GetListing_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetListing-response-fulfillmentOptionSummaries"></a>
-A summary of fulfillment options available for deploying or accessing the listing, such as AMI, SaaS, or Container.
+A summary of fulfillment options available for deploying or accessing the listing, such as Amazon Machine Image (AMI), Software as a Service (SaaS), or Container.
 Type: Array of [FulfillmentOptionSummary](API_marketplace-discovery_FulfillmentOptionSummary.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
 
@@ -220,7 +225,7 @@ Length Constraints: Minimum length of 0. Maximum length of 32768.
 Pattern: `.*\S.*`
 
  ** [pricingModels](#API_marketplace-discovery_GetListing_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetListing-response-pricingModels"></a>
-The pricing models for offers associated with this listing, such as usage-based, contract, BYOL, or free.
+The pricing models for offers associated with this listing, such as usage-based, contract, Bring Your Own License (BYOL), or free.
 Type: Array of [PricingModel](API_marketplace-discovery_PricingModel.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
 
@@ -238,13 +243,18 @@ Array Members: Minimum number of 0 items. Maximum number of 100 items.
 The entity who created and published the listing.
 Type: [SellerInformation](API_marketplace-discovery_SellerInformation.md) object
 
+ ** [purchaseIndicators](#API_marketplace-discovery_GetListing_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetListing-response-purchaseIndicators"></a>
+Indicators describing purchase characteristics of this listing, such as whether you can subscribe to it or use it without a subscription. The list is empty when no special purchase conditions apply.
+Type: Array of [PurchaseIndicator](API_marketplace-discovery_PurchaseIndicator.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 20 items.
+
  ** [resources](#API_marketplace-discovery_GetListing_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetListing-response-resources"></a>
 Resources that provide further information about using the product or requesting support, such as documentation links, support contacts, and usage instructions.
 Type: Array of [Resource](API_marketplace-discovery_Resource.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
  ** [sellerEngagements](#API_marketplace-discovery_GetListing_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetListing-response-sellerEngagements"></a>
-Engagement options available to potential buyers, such as requesting a private offer or requesting a demo.
+The engagement options available to you, such as buying now, requesting a private offer, or requesting a demo.
 Type: Array of [SellerEngagement](API_marketplace-discovery_SellerEngagement.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
@@ -255,7 +265,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `.*\S.*`
 
  ** [useCases](#API_marketplace-discovery_GetListing_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetListing-response-useCases"></a>
-Use cases associated with the listing, describing scenarios where the product can be applied.
+Use cases associated with the listing, describing scenarios where you can apply the product.
 Type: Array of [UseCaseEntry](API_marketplace-discovery_UseCaseEntry.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
@@ -265,7 +275,7 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 255.
 
  ** [locale](#API_marketplace-discovery_GetListing_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetListing-response-locale"></a>
-The locale of the returned content. Indicates whether the response contains content in the requested locale, or fell back to the default locale. See `Locale` for details.
+The locale of the returned content. This value indicates whether the response contains content in the requested locale or fell back to the default locale. See `Locale` for details.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
@@ -280,7 +290,7 @@ Type: [ReviewSummary](API_marketplace-discovery_ReviewSummary.md) object
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-You don't have sufficient access to perform this action.
+You don't have sufficient access to perform this operation. For the permissions that each operation requires, see [Access control for the AWS Marketplace Discovery API](https://docs.aws.amazon.com/marketplace/latest/developerguide/discovery-api-access-control.html) in the *AWS Marketplace Developer Guide*.
 HTTP Status Code: 403
 
  ** InternalServerException **
@@ -288,17 +298,23 @@ Unexpected error during processing of the request.
 HTTP Status Code: 500
 
  ** ResourceNotFoundException **
-The specified resource doesn't exist.
+The specified resource doesn't exist. Verify that the identifier is correct.
 HTTP Status Code: 404
 
  ** ThrottlingException **
-The request was denied due to request throttling.
+The request was denied due to request throttling. Reduce the frequency of your requests and retry.
 HTTP Status Code: 429
 
  ** ValidationException **
-The input fails to satisfy the constraints specified by the service.
+The input fails to satisfy the constraints specified by the service. Check the `reason` field for the constraint that failed.
  ** reason **
-The reason that the input fails to satisfy the constraints specified by the service.
+The reason that the input fails to satisfy the constraints that the Discovery API specifies. This field has one of the following values:
+INVALID\_PAGINATION\_TOKEN
+The `nextToken` value is malformed, expired, or belongs to a different request. Start the pagination again from the first page.
+MALFORMED\_REQUEST\_PARAMETERS
+One or more request parameters have an invalid value. Correct the parameters that you specified, and then resubmit your request.
+PAGINATION\_LIMIT\_EXCEEDED
+The request asks for results beyond the deepest page that the operation returns. Narrow your request with filters or a more specific search.
 HTTP Status Code: 400
 
 ## See Also

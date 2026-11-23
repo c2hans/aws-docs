@@ -28,7 +28,7 @@ The following snippet shows the attributes of the queue identified by the given 
 
 The example [at the end of this topic](#UpdateSqsQueue-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to show all attributes of a queue
     private static async Task ShowAllAttributes(IAmazonSQS sqsClient, string qUrl)
@@ -49,7 +49,7 @@ The following snippet validates the name of the attribute being updated.
 
 The example [at the end of this topic](#UpdateSqsQueue-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to check the name of the attribute
     private static bool ValidAttribute(string attribute)
@@ -72,7 +72,7 @@ The following snippet updates an attribute of the queue identified by the given 
 
 The example [at the end of this topic](#UpdateSqsQueue-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to update a queue attribute
     private static async Task UpdateAttribute(
@@ -107,7 +107,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c25c19c25b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -296,6 +296,6 @@ namespace SQSUpdateQueue
 
   On Windows, for example, the value is constructed in a manner similar to the following:
 
-  ```
+  ```ini
   "{\"deadLetterTargetArn\":\"DEAD_LETTER-QUEUE-ARN\",\"maxReceiveCount\":\"10\"}"
   ```

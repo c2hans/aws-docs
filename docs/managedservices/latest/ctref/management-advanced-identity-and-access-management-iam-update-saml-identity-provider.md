@@ -143,7 +143,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-identity-and-access-management-iam-update-saml-identity-provider-ex-min"></a>
 
-```
+```json
 {
 
   "DocumentName" : "AWSManagedServices-HandleUpdateSamlProvider-Admin",
@@ -162,7 +162,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-identity-and-access-management-iam-update-saml-identity-provider-ex-max"></a>
 
-```
+```json
 {
 
   "DocumentName" : "AWSManagedServices-HandleUpdateSamlProvider-Admin",

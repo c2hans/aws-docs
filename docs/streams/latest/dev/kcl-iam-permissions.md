@@ -35,7 +35,7 @@ The following is an example policy document for a KCL consumer application.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

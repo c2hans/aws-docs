@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::createAccountAlias(const Aws::String &aliasName,
                                      const Aws::Client::ClientConfiguration &clientConfig) {
     Aws::IAM::IAMClient iam(clientConfig);
@@ -61,7 +61,7 @@ For more information, see [Your AWS account ID and its alias](https://docs.aws.a
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.CreateAccountAliasRequest;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
@@ -126,7 +126,7 @@ public class CreateAccountAlias {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Create the account alias.
 
-```
+```javascript
 import { CreateAccountAliasCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -150,7 +150,7 @@ export const createAccountAlias = (alias) => {
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/iam#code-examples).
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -176,7 +176,7 @@ iam.createAccountAlias({ AccountAlias: process.argv[2] }, function (err, data) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun createIAMAccountAlias(alias: String) {
     val request =
         CreateAccountAliasRequest {
@@ -197,7 +197,7 @@ suspend fun createIAMAccountAlias(alias: String) {
 **Tools for PowerShell V4**
 **Example 1: This example changes the account alias for your AWS account to `mycompanyaws`. The address of the user logon page chages to https://mycompanyaws.signin.aws.amazon.com/console. The original URL using your account ID number instead of the alias (https://<accountidnumber>.signin.aws.amazon.com/console) continues to work. However, any previously defined alias-based URLs stop working.**
 
-```
+```powershell
 New-IAMAccountAlias -AccountAlias mycompanyaws
 ```
 +  For API details, see [CreateAccountAlias](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -205,7 +205,7 @@ New-IAMAccountAlias -AccountAlias mycompanyaws
 **Tools for PowerShell V5**
 **Example 1: This example changes the account alias for your AWS account to `mycompanyaws`. The address of the user logon page chages to https://mycompanyaws.signin.aws.amazon.com/console. The original URL using your account ID number instead of the alias (https://<accountidnumber>.signin.aws.amazon.com/console) continues to work. However, any previously defined alias-based URLs stop working.**
 
-```
+```powershell
 New-IAMAccountAlias -AccountAlias mycompanyaws
 ```
 +  For API details, see [CreateAccountAlias](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -216,7 +216,7 @@ New-IAMAccountAlias -AccountAlias mycompanyaws
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def create_alias(alias):
     """
     Creates an alias for the current account. The alias can be used in place of the
@@ -242,7 +242,7 @@ def create_alias(alias):
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 List, create, and delete account aliases.
 
-```
+```ruby
 class IAMAliasManager
   # Initializes the IAM client and logger
   #
@@ -299,7 +299,7 @@ end
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_iam->createaccountalias(
           iv_accountalias = iv_account_alias ).

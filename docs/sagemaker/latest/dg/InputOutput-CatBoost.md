@@ -36,7 +36,7 @@ SageMaker AI CatBoost uses the `catboost.CatBoostClassifier` and `catboost.CatBo
 **To use a model trained with SageMaker AI CatBoost with `catboost`**
 + Use the following Python code:
 
-  ```
+  ```python
   import tarfile
   from catboost import CatBoostClassifier
 

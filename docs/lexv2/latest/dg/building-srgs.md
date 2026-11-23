@@ -17,7 +17,7 @@ The second is part of a grammar slot type is an optional script written in ECMAS
 
 The following example is in the XML format per the SRGS specification that shows a valid grammar accepted by Amazon Lex V2. It defines a grammar slot type that accepts card numbers and determines if they are for regular or premium accounts. For more information about the acceptable syntax, see the [Grammar definition](grammar-srgs-spec.md) and the [Script format](grammar-ecmascript-spec.md) topics.
 
-```
+```xml
 <grammar version="1.0" xmlns="http://www.w3.org/2001/06/grammar"
          xml:lang="en-US" tag-format="semantics/1.0" root="card_number">
 
@@ -47,7 +47,7 @@ The following example is in the XML format per the SRGS specification that shows
 
 The above grammar only accepts two types of card numbers: 7241 or 7001. Both of these may be optionally prefixed with “card number”. It also contains ECMAScript tags that can be used for semantic interpretation. With semantic interpretation, the utterance “card number seven two four one” would return following object:
 
-```
+```json
 {
     "value": "7241",
     "card_type": "premium"

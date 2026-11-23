@@ -21,7 +21,7 @@ Here's an example snippet for this role trust policy:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -53,7 +53,7 @@ This role requires two IAM policies.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -86,7 +86,7 @@ Role trust policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -112,7 +112,7 @@ The inline policy is `AWSControlTowerAdminPolicy`:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -144,7 +144,7 @@ CloudFormation assumes this role to deploy stack sets in accounts created by AWS
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -170,7 +170,7 @@ CloudFormation assumes this role to deploy stack sets in accounts created by AWS
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -210,7 +210,7 @@ Prior to the introduction of the managed policy, this role used an inline policy
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -237,7 +237,7 @@ Prior to the introduction of the managed policy, this role used an inline policy
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -276,7 +276,7 @@ The following example shows a least-privilege trust policy. When you make your o
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -317,7 +317,7 @@ Role trust policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

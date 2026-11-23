@@ -13,7 +13,7 @@ A Hook includes a Hook specification represented by a JSON schema and Hook handl
 
 The following schema is the structure for a Hook.
 
-```
+```json
 {
 "typeName": "string",
     "description": "string",
@@ -154,7 +154,7 @@ A string array that specifies the AWS permissions needed to invoke the handler.
 
 The Java and the Python walkthroughs use the following code example. The following is an example structure for a Hook called `mycompany-testing-mytesthook.json`.
 
-```
+```json
 {
     "typeName":"MyCompany::Testing::MyTestHook",
     "description":"Verifies S3 bucket and SQS queues properties before create and update",
@@ -224,7 +224,7 @@ The Java and the Python walkthroughs use the following code example. The followi
 
 The following example is a schema that uses the `STACK` and `CHANGE_SET` for `targetNames` to target a stack template and a change set operation.
 
-```
+```json
 {
     "typeName":"MyCompany::Testing::MyTestHook",
     "description":"Verifies Stack and Change Set properties before create and update",

@@ -79,7 +79,7 @@ Amazon Cognito adds the `acr` and `amr` claims to access tokens and ID tokens. Y
 
 The following example shows an ID token after a user authenticates with a password and a TOTP.
 
-```
+```json
 {
   "sub": "a1b2c3d4-5678-90ab-cdef-1234567890ab",
   "iss": "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_ExAmPlE",
@@ -110,7 +110,7 @@ Configuring custom ACR level names with the `AcrConfiguration` field requires th
 
 The `AcrConfiguration` field is a map with the keys `Level1` through `Level4`. Each value is an object with a single `AcrValue` string. You can override only the levels that you want to customize. The following example request customizes the names of levels 2 and 3.
 
-```
+```json
 {
   "AcrConfiguration": {
     "Level2": { "AcrValue": "urn:my-standard:loa:2" },
@@ -121,7 +121,7 @@ The `AcrConfiguration` field is a map with the keys `Level1` through `Level4`. E
 
 The response always returns the effective configuration, with the default names merged in for any levels that you didn't customize.
 
-```
+```json
 {
   "AcrConfiguration": {
     "Level1": { "AcrValue": "urn:cognito:loa:1" },

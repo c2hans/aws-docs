@@ -6,13 +6,13 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 Before you migrate, you can confirm whether any source index uses the `flattened` type so you know which indexes the transformation will touch. Run the following from the Migration Console pod (`migration-console-0`) to inspect the source mappings:
 
-```
+```bash
 console clusters curl source /_mapping
 ```
 
 Scan the response for fields declared as `"type": "flattened"`. For example:
 
-```
+```json
 {
   "products": {
     "mappings": {

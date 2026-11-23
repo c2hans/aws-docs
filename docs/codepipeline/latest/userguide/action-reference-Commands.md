@@ -223,7 +223,7 @@ For Commands support, add the following to your policy statement:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -251,7 +251,7 @@ For Commands support, add the following to your policy statement:
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: Commands_action
 actionTypeId:
   category: Compute
@@ -279,7 +279,7 @@ namespace: compute
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "Commands_action",
     "actionTypeId": {

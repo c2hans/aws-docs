@@ -11,7 +11,7 @@ Make sure the IAM roles referenced in `SuccessFeedbackRoleArn` and `FailureFeedb
 ------
 #### [ JSON ]
 
-```
+```json
 "Resources": {
     "MySNSTopic" : {
         "Type" : "AWS::SNS::Topic",
@@ -33,7 +33,7 @@ Make sure the IAM roles referenced in `SuccessFeedbackRoleArn` and `FailureFeedb
 ------
 #### [ YAML ]
 
-```
+```yaml
 Resources:
   MySNSTopic:
     Type: AWS::SNS::Topic

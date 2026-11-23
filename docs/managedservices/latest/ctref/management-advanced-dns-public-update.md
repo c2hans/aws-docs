@@ -146,14 +146,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-dns-public-update-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-advanced-dns-public-update-ex-max"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-CreateAddRoute53Resources",
   "Region" : "us-east-1",

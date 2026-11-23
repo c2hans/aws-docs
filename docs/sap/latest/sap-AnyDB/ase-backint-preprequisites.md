@@ -18,7 +18,7 @@ This section provides information on mandatory prerequisites for AWS Backint Age
 
 To enable S3 bucket access for your Amazon EC2 instance, create or update an inline IAM policy with the following permissions and attach it to your EC2 service role. Replace the resource names, such as the S3 bucket name, to match your setup. You must provide the AWS Region and Amazon S3 bucket owner account ID along with the Amazon S3 bucket name and KMS Key for Encryption.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -102,7 +102,7 @@ By default, AWS Backint agent adds a tag called ` AWSBackintAgentVersion` when i
 
  AWS Backint Agent must be installed on your Amazon EC2 instance. To download the installation binary, your EC2 instance needs access to the AWS-managed S3 buckets where the installer packages are hosted. If your organization uses data perimeter policies to control access to Amazon S3 in your environment, you might need to explicitly allow these service-owned buckets so that the EC2 instance can retrieve the required installer. The following policy shows an example Service control policy to permit access to service-owned resources through the resource perimeter, relevant service owned buckets are listed in the NotResource element of the policy.
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -127,7 +127,7 @@ By default, AWS Backint agent adds a tag called ` AWSBackintAgentVersion` when i
 
 The following policy shows an example VPC endpoint policy allowing access to specific service-owned resources through a VPC endpoint. Relevant service owned buckets are listed in the Resource element of the statement.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

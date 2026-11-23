@@ -10,7 +10,7 @@ The following example uses the DynamoDB [ListTables](https://docs.aws.amazon.co
 
 Create the file *DynamoDBListTables.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws/awserr"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -22,7 +22,7 @@ import (
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials` and region from the shared configuration file `~/.aws/config` and create a new DynamoDB service client.
 
-```
+```go
 // Initialize a session that the SDK will use to load
 // credentials from the shared credentials file ~/.aws/credentials
 // and region from the shared configuration file ~/.aws/config.
@@ -36,7 +36,7 @@ svc := dynamodb.New(sess)
 
 Call **ListTables**. If an error occurs, print the error and exit. If no error occurs, loop through the tables, printing the name of each table.
 
-```
+```go
 // create the input configuration instance
 input := &dynamodb.ListTablesInput{}
 

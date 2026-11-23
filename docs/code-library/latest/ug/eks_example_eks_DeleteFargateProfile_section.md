@@ -57,7 +57,7 @@ For more information, see [AWS Fargate profile - Deleting a Fargate](https://doc
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deletes an AWS Fargate profile. When you delete a Fargate profile, any pods running on Fargate that were created with the profile are deleted. **
 
-```
+```powershell
 Remove-EKSFargateProfile -FargateProfileName "EKSFargate" -ClusterName "TEST"
 ```
 **Output:**
@@ -83,7 +83,7 @@ Tags                : {}
 **Tools for PowerShell V5**
 **Example 1: This cmdlet deletes an AWS Fargate profile. When you delete a Fargate profile, any pods running on Fargate that were created with the profile are deleted. **
 
-```
+```powershell
 Remove-EKSFargateProfile -FargateProfileName "EKSFargate" -ClusterName "TEST"
 ```
 **Output:**

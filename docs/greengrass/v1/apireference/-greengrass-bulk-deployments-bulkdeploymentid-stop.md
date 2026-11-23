@@ -28,7 +28,7 @@ type: string
 ### CLI
 <a name="-greengrass-bulk-deployments-bulkdeploymentid-stop-put-cli"></a>
 
-```
+```bash
 aws greengrass stop-bulk-deployment \
   --bulk-deployment-id <value>  \
   [--cli-input-json <value>] \
@@ -37,7 +37,7 @@ aws greengrass stop-bulk-deployment \
 
 cli-input-json format:
 
-```
+```json
 {
 "BulkDeploymentId": "string"
 }
@@ -53,7 +53,7 @@ Success. The bulk deployment is being stopped.
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

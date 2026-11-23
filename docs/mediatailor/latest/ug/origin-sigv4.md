@@ -24,7 +24,7 @@ If you use SigV4 to protect your MediaTailor Channel Assembly origin, the follow
 
 **Example origin access policy for Channel Assembly, scoped to the MediaTailor configuration account**
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {"Service": "mediatailor.amazonaws.com"},
@@ -38,7 +38,7 @@ If you use SigV4 to protect your MediaTailor Channel Assembly origin, the follow
 
 **Example origin access policy for Channel Assembly, scoped to the MediaTailor playback configuration**
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {"Service": "mediatailor.amazonaws.com"},
@@ -66,7 +66,7 @@ If you use SigV4 to protect your Amazon S3 origin, the following requirements mu
 
 **Example origin access policy for Amazon S3, scoped to the MediaTailor account**
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {"Service": "mediatailor.amazonaws.com"},
@@ -80,7 +80,7 @@ If you use SigV4 to protect your Amazon S3 origin, the following requirements mu
 
 **Example origin access policy for Amazon S3, scoped to the MediaTailor playback configuration**
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {"Service": "mediatailor.amazonaws.com"},
@@ -106,7 +106,7 @@ If you use SigV4 to protect your MediaPackage v2 origin, the following requireme
 
 **Example origin access policy for MediaPackage v2, scoped to the MediaTailor account**
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {"Service": "mediatailor.amazonaws.com"},
@@ -120,7 +120,7 @@ If you use SigV4 to protect your MediaPackage v2 origin, the following requireme
 
 **Example origin access policy for MediaPackage v2, scoped to the MediaTailor playback configuration**
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {"Service": "mediatailor.amazonaws.com"},

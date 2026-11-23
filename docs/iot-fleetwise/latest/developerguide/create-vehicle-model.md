@@ -182,7 +182,7 @@ To create a vehicle model, run the following command.
 
 Replace {{vehicle-model-configuration}} with the name of the .json file that contains the configuration.
 
-```
+```bash
 aws iotfleetwise create-model-manifest --cli-input-json file://{{vehicle-model-configuration}}.json
 ```
 
@@ -194,7 +194,7 @@ aws iotfleetwise create-model-manifest --cli-input-json file://{{vehicle-model-c
 
 For more information about how to configure branches, attributes, sensors, and actuators, see [Configure AWS IoT FleetWise signals](define-signal.md).
 
-```
+```json
 {
     "name": "{{vehicle-model-name}}",
     "signalCatalogArn": "{{signal-catalog-ARN}}",
@@ -210,7 +210,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,6 +16,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 
 ![Machine learning lifecycle](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/images/ml-lifecycle.png)
 
+*Figure 1: Machine learning lifecycle*
+
  The following is a quick introduction to each phase, which will be expanded upon later in this paper.
 
  **Business goal**

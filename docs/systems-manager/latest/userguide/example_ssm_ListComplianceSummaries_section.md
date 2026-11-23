@@ -125,7 +125,7 @@ For more information, see [Learn details about Compliance](https://docs.aws.amaz
 **Tools for PowerShell V4**
 **Example 1: This example returns a summary count of compliant and non-compliant resources for all compliance types. **
 
-```
+```powershell
 Get-SSMComplianceSummaryList
 ```
 **Output:**
@@ -143,7 +143,7 @@ Patch          Amazon.SimpleSystemsManagement.Model.CompliantSummary Amazon.Simp
 **Tools for PowerShell V5**
 **Example 1: This example returns a summary count of compliant and non-compliant resources for all compliance types. **
 
-```
+```powershell
 Get-SSMComplianceSummaryList
 ```
 **Output:**

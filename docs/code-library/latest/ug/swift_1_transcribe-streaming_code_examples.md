@@ -29,7 +29,7 @@ The following code example shows how to use `StartStreamTranscription`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/transcribe-streaming#code-examples).
 
-```
+```swift
         let client = TranscribeStreamingClient(
             config: try await TranscribeStreamingClient.TranscribeStreamingClientConfig(
                 region: region
@@ -61,7 +61,7 @@ The following code example shows how to generate a transcription of a source aud
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/transcribe-streaming#code-examples).
 Use Amazon Transcribe streaming to transcribe the spoken language in an audio file.
 
-```
+```swift
 /// An example that demonstrates how to watch an transcribe event stream to
 /// transcribe audio from a file to the console.
 

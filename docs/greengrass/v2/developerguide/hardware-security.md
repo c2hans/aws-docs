@@ -175,7 +175,7 @@ The ID of the slot that contains the private key and device certificate. This va
 `userPin`
 The user PIN to use to access the slot.
 
-      ```
+      ```json
       {
         "name": "softhsm_pkcs11",
         "library": "/usr/lib/softhsm/libsofthsm2.so",
@@ -211,7 +211,7 @@ The ID of the slot that contains the private key and device certificate. This va
 `userPin`
 The user PIN to use to access the slot.
 
-```
+```json
 {
   "name": "softhsm_pkcs11",
   "library": "/usr/lib/softhsm/libsofthsm2.so",
@@ -220,7 +220,7 @@ The user PIN to use to access the slot.
 }
 ```
 
-```
+```json
 {
   {{...}},
   "components": {
@@ -250,7 +250,7 @@ The AWS IoT Greengrass Core software uses a configuration file that specifies ho
 
 1. Stop the AWS IoT Greengrass Core software. If you [configured the AWS IoT Greengrass Core software as a system service](configure-greengrass-core-v2.md#configure-system-service) with systemd, you can run the following command to stop the software.
 
-   ```
+   ```bash
    sudo systemctl stop greengrass.service
    ```
 
@@ -268,13 +268,13 @@ The AWS IoT Greengrass Core software uses a configuration file that specifies ho
 
    1. Create a back up of the AWS IoT Greengrass Core configuration file. You can use this back up to restore the core device if you run into issues when you configure hardware security.
 
-      ```
+      ```bash
       sudo cp {{/greengrass/v2}}/config/effectiveConfig.yaml ~/ggc-config-backup.yaml
       ```
 
    1. Open the AWS IoT Greengrass Core configuration file in a text editor. For example, you can run the following command to use GNU nano to edit the file. Replace `{{/greengrass/v2}}` with the path to the Greengrass root folder.
 
-      ```
+      ```bash
       sudo nano {{/greengrass/v2}}/config/effectiveConfig.yaml
       ```
 
@@ -292,7 +292,7 @@ The AWS IoT Greengrass Core software uses a configuration file that specifies ho
 
    After you finish these steps, the `system` property in the AWS IoT Greengrass Core configuration file should look similar to the following example.
 
-   ```
+   ```yaml
    system:
      certificateFilePath: "pkcs11:object={{iotdevicekey}};type=cert"
      privateKeyPath: "pkcs11:object={{iotdevicekey}};type=private"
@@ -303,7 +303,7 @@ The AWS IoT Greengrass Core software uses a configuration file that specifies ho
 
 1. Apply the configuration in the updated `effectiveConfig.yaml` file. Run `Greengrass.jar` with the `--init-config` parameter to apply the configuration in `effectiveConfig.yaml`. Replace `{{/greengrass/v2}}` with the path to the Greengrass root folder.
 
-   ```
+   ```bash
    sudo java -Droot="{{/greengrass/v2}}" \
      -jar {{/greengrass/v2}}/alts/current/distro/lib/Greengrass.jar \
      --start false \
@@ -312,7 +312,7 @@ The AWS IoT Greengrass Core software uses a configuration file that specifies ho
 
 1. Start the AWS IoT Greengrass Core software. If you [configured the AWS IoT Greengrass Core software as a system service](configure-greengrass-core-v2.md#configure-system-service) with systemd, you can run the following command to start the software.
 
-   ```
+   ```bash
    sudo systemctl start greengrass.service
    ```
 
@@ -320,7 +320,7 @@ The AWS IoT Greengrass Core software uses a configuration file that specifies ho
 
 1. Check the AWS IoT Greengrass Core software logs to verify that the software starts and connects to the AWS Cloud. The AWS IoT Greengrass Core software uses the private key and certificate to connect to the AWS IoT and AWS IoT Greengrass services.
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
    ```
 
@@ -332,7 +332,7 @@ The AWS IoT Greengrass Core software uses a configuration file that specifies ho
 
 1. (Optional) After you verify that the AWS IoT Greengrass Core software works with the private key and certificate in the HSM, delete the private key and certificate files from the device's file system. Run the following command, and replace the file paths with the paths to the private key and certificate files.
 
-   ```
+   ```bash
    sudo rm {{{{/greengrass/v2}}/privKey.key}}
    sudo rm {{{{/greengrass/v2}}/thingCert.crt}}
    ```

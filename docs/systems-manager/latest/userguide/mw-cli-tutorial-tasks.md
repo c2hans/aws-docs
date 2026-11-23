@@ -19,7 +19,7 @@ When you're ready to register other task types, or use more of the available Sys
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm register-task-with-maintenance-window \
        --window-id {{mw-0c50858d01EXAMPLE}} \
        --task-arn "AWS-RunShellScript" \
@@ -33,7 +33,7 @@ When you're ready to register other task types, or use more of the available Sys
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm register-task-with-maintenance-window ^
        --window-id {{mw-0c50858d01EXAMPLE}} ^
        --task-arn "AWS-RunShellScript" ^
@@ -67,7 +67,7 @@ When you're ready to register other task types, or use more of the available Sys
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm describe-maintenance-window-tasks ^
        --window-id {{mw-0c50858d01EXAMPLE}}
    ```
@@ -115,7 +115,7 @@ When you're ready to register other task types, or use more of the available Sys
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm describe-maintenance-window-executions ^
        --window-id {{mw-0c50858d01EXAMPLE}}
    ```
@@ -147,7 +147,7 @@ aws ssm update-maintenance-window \
     --schedule "rate(7 days)"
 ```
 
-```
+```sh
 aws ssm update-maintenance-window ^
     --window-id {{mw-0c50858d01EXAMPLE}} ^
     --schedule "rate(7 days)"

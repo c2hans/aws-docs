@@ -19,6 +19,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 
 ![This image shows that the IAM control plane is hosted in a single AWS Region and its data plane is globally distributed within each Region in the partition](https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/images/iam-single-control-plane-and-regionalized-data-plane.png)
 
+*The IAM control plane is hosted in a single AWS Region and its data plane is globally distributed within each Region in the partition*
+
  The following table lists the partitional AWS services, where their control plane is located in the `aws` partition, and whether their data plane runs in the Regions of the partition, the PoP network, or both. Not all services are available in all partitions.
 
 | Service | Control plane | Data plane in Regions | Data plane in PoPs |

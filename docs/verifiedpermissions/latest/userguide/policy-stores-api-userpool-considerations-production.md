@@ -22,7 +22,7 @@ The results of the API-linked policy store process are an initial policy store a
 
 The following template is an example policy store. You can append the Lambda authorizer resources from your existing stack to this template.
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {

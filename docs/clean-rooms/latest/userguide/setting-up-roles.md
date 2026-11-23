@@ -71,7 +71,7 @@ If you want to help ensure that the role is used only in the context of a certai
 
 ****
 
-   ```
+   ```json
    {
 
        "Version":"2012-10-17",
@@ -100,7 +100,7 @@ Your AWS Glue resources and underlying Amazon S3 resources must be in the same A
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -200,7 +200,7 @@ If you want to help ensure that the role is used only in the context of a certai
 
 ****
 
-   ```
+   ```json
    {
 
        "Version":"2012-10-17",
@@ -325,7 +325,7 @@ If you want to help ensure that the role is used only in the context of a certai
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -365,7 +365,7 @@ This configuration enables scenarios where one party provides data or analysis t
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -408,7 +408,7 @@ The `kms:EncryptionContext:SecretARN` condition ensures that the AWS KMS key can
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -441,7 +441,7 @@ You or your IAM administrator should follow this procedure only if you want to c
 
 1. Use the following permissions policy, which allows AWS Clean Rooms to generate a web identity token for the role.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [{
@@ -456,7 +456,7 @@ The `Resource` must be `*` because `sts:GetWebIdentityToken` generates a token f
 
 1. Use the following custom trust policy, which allows AWS Clean Rooms to assume the role only in the context of your collaboration memberships. Replace each {{placeholder}} with your own information.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [{
@@ -483,7 +483,7 @@ The `aws:SourceArn` condition prevents a security issue known as the confused de
 
 If your Databricks table is an external table backed by data in your own Amazon S3 bucket, you also create a Databricks storage credential so that Databricks Unity Catalog can access that bucket. The storage credential uses a separate IAM role with the following trust policy. Replace each {{placeholder}} with your own information.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -529,7 +529,7 @@ AWS Clean Rooms uses a service role to read code from a collaboration member's s
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -569,7 +569,7 @@ Your Amazon S3 resources must be in the same AWS Region as the AWS Clean Rooms c
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -621,7 +621,7 @@ AWS Clean Rooms uses a service role to write the results of a PySpark job to a s
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -662,7 +662,7 @@ Keep the `s3:GetBucketLocation` and `s3:ListBucket` permissions on the bucket in
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -762,7 +762,7 @@ You or your IAM administrator should follow this procedure only if you don't hav
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -811,7 +811,7 @@ Your AWS Glue resources and underlying Amazon S3 resources must be in the same A
 
 ****
 
-   ```
+   ```json
    {
 
        "Version":"2012-10-17",

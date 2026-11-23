@@ -51,7 +51,7 @@ Use the following AWS CLI commands or API operations to enable trusted service a
 
   Run the following command to enable Amazon Macie as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations enable-aws-service-access \
       --service-principal macie.amazonaws.com
   ```

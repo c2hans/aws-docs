@@ -10,7 +10,7 @@ A table shows as active in the system schema when it's ready for use. The recomm
 
 The following query shows the status of a table.
 
-```
+```sql
 SELECT keyspace_name, table_name, status FROM system_schema_mcs.tables WHERE keyspace_name = 'mykeyspace' AND table_name = 'mytable';
 ```
 

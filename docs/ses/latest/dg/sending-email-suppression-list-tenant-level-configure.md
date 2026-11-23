@@ -149,7 +149,7 @@ Use the `CreateTenant` API operation with the `SuppressionAttributes` parameter 
 
 1. Verify that the response contains the tenant ID:
 
-   ```
+   ```json
    {
        "TenantId": "tn-abc123def456"
    }
@@ -293,7 +293,7 @@ Use the `GetTenant` API operation to check a tenant's current suppression settin
 
 1. Review the response. The following example shows a tenant with tenant-level suppression enabled:
 
-   ```
+   ```json
    {
        "Tenant": {
            "TenantName": "MyTenant",

@@ -35,7 +35,7 @@ If you receive this error while attempting to access resources from another acco
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

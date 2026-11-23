@@ -20,6 +20,11 @@ Type: String
 Pattern: `https://[-a-zA-Z0-9()@:%_+.~#?&//=]{1,1024}`
 Required: Yes
 
+ ** vpcConfiguration **   <a name="inspector2-Type-CreateGitLabSelfManagedIntegrationDetail-vpcConfiguration"></a>
+The VPC configuration used to connect to the self-managed GitLab instance in a private network. For publicly accessible instances, omit this field.
+Type: [CodeSecurityIntegrationVpcConfiguration](API_CodeSecurityIntegrationVpcConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_CreateGitLabSelfManagedIntegrationDetail_SeeAlso"></a>
 

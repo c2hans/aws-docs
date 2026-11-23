@@ -40,7 +40,7 @@ To add Amazon Redshift as a service principal to the IAM role, do the following.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

@@ -52,7 +52,7 @@ For more information, see [Security group rules](https://docs.aws.amazon.com/vpc
 **Tools for PowerShell V4**
 **Example 1: Updates the description of an existing ingress (inbound) security group rule.**
 
-```
+```powershell
 $existingInboundRule = Get-EC2SecurityGroupRule -SecurityGroupRuleId "sgr-1234567890"
 $ruleWithUpdatedDescription = [Amazon.EC2.Model.SecurityGroupRuleDescription]@{
   "SecurityGroupRuleId" = $existingInboundRule.SecurityGroupRuleId
@@ -63,7 +63,7 @@ Update-EC2SecurityGroupRuleIngressDescription -GroupId $existingInboundRule.Grou
 ```
 **Example 2: Removes the description of an existing ingress (inbound) security group rule (by omitting the parameter in the request).**
 
-```
+```powershell
 $existingInboundRule = Get-EC2SecurityGroupRule -SecurityGroupRuleId "sgr-1234567890"
 $ruleWithoutDescription = [Amazon.EC2.Model.SecurityGroupRuleDescription]@{
   "SecurityGroupRuleId" = $existingInboundRule.SecurityGroupRuleId
@@ -76,7 +76,7 @@ Update-EC2SecurityGroupRuleIngressDescription -GroupId $existingInboundRule.Grou
 **Tools for PowerShell V5**
 **Example 1: Updates the description of an existing ingress (inbound) security group rule.**
 
-```
+```powershell
 $existingInboundRule = Get-EC2SecurityGroupRule -SecurityGroupRuleId "sgr-1234567890"
 $ruleWithUpdatedDescription = [Amazon.EC2.Model.SecurityGroupRuleDescription]@{
   "SecurityGroupRuleId" = $existingInboundRule.SecurityGroupRuleId
@@ -87,7 +87,7 @@ Update-EC2SecurityGroupRuleIngressDescription -GroupId $existingInboundRule.Grou
 ```
 **Example 2: Removes the description of an existing ingress (inbound) security group rule (by omitting the parameter in the request).**
 
-```
+```powershell
 $existingInboundRule = Get-EC2SecurityGroupRule -SecurityGroupRuleId "sgr-1234567890"
 $ruleWithoutDescription = [Amazon.EC2.Model.SecurityGroupRuleDescription]@{
   "SecurityGroupRuleId" = $existingInboundRule.SecurityGroupRuleId

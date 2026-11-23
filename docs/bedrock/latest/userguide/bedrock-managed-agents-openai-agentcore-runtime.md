@@ -26,7 +26,7 @@ Complete the [prerequisites](bedrock-managed-agents-openai-prerequisites.md). Sa
 
 From the bundle root:
 
-```
+```bash
 cd acr
 export AWS_PROFILE=my-deployment-profile
 export AWS_REGION=us-east-1
@@ -40,7 +40,7 @@ npx cdk bootstrap
 ## Step 2: Deploy
 <a name="bedrock-managed-agents-openai-agentcore-runtime-step-2-deploy"></a>
 
-```
+```bash
 npm run deploy -- \
   --parameters BmaRegion="$BMA_REGION" \
   --parameters BmaEndpoint="$BMA_ENDPOINT"
@@ -57,7 +57,7 @@ The Runtime and its storage must be available in the deployment Region. Use Avai
 
 Select your BMA client profile:
 
-```
+```bash
 export AWS_PROFILE=my-bma-client-profile
 ./scripts/bma/0.create-session.sh
 ```
@@ -69,7 +69,7 @@ The session's environment uses `type: "aws_bedrock_agentcore"`. It identifies th
 ## Step 4: Run the sample skill
 <a name="bedrock-managed-agents-openai-agentcore-runtime-step-4-run-the-sample-skill"></a>
 
-```
+```bash
 ./scripts/bma/2.submit-turn.sh "Run the hello-bma skill."
 ./scripts/bma/3.read-result.sh
 ```
@@ -78,7 +78,7 @@ BMA invokes the Runtime adapter, which prepares storage and starts the exec serv
 
 You can inspect the BMA session while work is running:
 
-```
+```bash
 ./scripts/bma/1.status.sh
 ```
 
@@ -98,14 +98,14 @@ The adapter copies the mounted skills into the workspace when it activates. Use 
 
 To generate a file:
 
-```
+```bash
 ./scripts/bma/2.submit-turn.sh "Write the text BMA_OUTPUT_VERIFIED to /mnt/output/verification.txt, then read it back."
 ./scripts/bma/3.read-result.sh
 ```
 
 Retrieve the bucket name and the file:
 
-```
+```bash
 OUTPUTS_BUCKET=$(aws cloudformation describe-stacks \
   --stack-name AcBmaStack --region "$BMA_REGION" \
   --query "Stacks[0].Outputs[?OutputKey=='OutputsBucketName'].OutputValue | [0]" \
@@ -127,7 +127,7 @@ Session storage and the S3-backed files have different lifecycles. Review [Agent
 ## Step 5: Clean up
 <a name="bedrock-managed-agents-openai-agentcore-runtime-step-5-clean-up"></a>
 
-```
+```bash
 ./scripts/bma/4.delete-session.sh
 export AWS_PROFILE=my-deployment-profile
 npm run destroy

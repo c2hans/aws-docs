@@ -122,7 +122,7 @@ Enable CORS by returning correct headers
 #### PUT schema
 <a name="clusters-clusterarn-topics-topicname-request-body-put-example"></a>
 
-```
+```json
 {
   "partitionCount": integer,
   "configs": "string",
@@ -137,21 +137,24 @@ Enable CORS by returning correct headers
 #### DescribeTopicResponse schema
 <a name="clusters-clusterarn-topics-topicname-response-body-describetopicresponse-example"></a>
 
-```
+```json
 {
   "replicationFactor": number,
   "partitionCount": number,
   "configs": "string",
   "topicName": "string",
   "topicArn": "string",
-  "status": enum
+  "status": enum,
+  "replicaIds": [
+    integer
+  ]
 }
 ```
 
 #### UpdateTopicResponse schema
 <a name="clusters-clusterarn-topics-topicname-response-body-updatetopicresponse-example"></a>
 
-```
+```json
 {
   "topicName": "string",
   "topicArn": "string",
@@ -162,7 +165,7 @@ Enable CORS by returning correct headers
 #### DeleteTopicResponse schema
 <a name="clusters-clusterarn-topics-topicname-response-body-deletetopicresponse-example"></a>
 
-```
+```json
 {
   "topicName": "string",
   "topicArn": "string",
@@ -173,7 +176,7 @@ Enable CORS by returning correct headers
 #### Error schema
 <a name="clusters-clusterarn-topics-topicname-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"
@@ -203,6 +206,7 @@ The response contains metadata for a topic on a cluster.
 | --- |--- |--- |--- |
 | configs | string | False | Kafka configs for a topic. |
 | partitionCount | number | False | Partition count for a topic |
+| replicaIds | Array of type integer | False | The IDs of the brokers that host the replicas of this topic's partitions, as a single set across every partition. While a cluster is in mixed mode, these IDs tell you whether the topic is still on the Standard brokers or has moved to the Express brokers; match them against the `brokerNodeType` values that `ListNodes` reports.<br />For replica assignments partition by partition, use `DescribeTopicPartitions`. |
 | replicationFactor | number | False | Replication factor for a topic |
 | status | [TopicStatus](#clusters-clusterarn-topics-topicname-model-topicstatus) | False | Status of the topic.  |
 | topicArn | string | False | ARN of the topic. |

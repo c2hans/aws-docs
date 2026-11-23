@@ -221,7 +221,7 @@ connection.inputStream
 
 The following Android example shows a custom device ID provider and a `WAFConfiguration` that uses it. The `deviceIdProvider` setting requires version 2.1.0 or later of the AWS WAF Android SDK, which isn't available yet. For more information, see [AWS WAF mobile SDK specification](waf-mobile-sdk-specification.md).
 
-```
+```java
 import com.amazonaws.waf.mobilesdk.publicmodel.WAFDeviceIdProvider;
 import com.amazonaws.waf.mobilesdk.token.WAFConfiguration;
 

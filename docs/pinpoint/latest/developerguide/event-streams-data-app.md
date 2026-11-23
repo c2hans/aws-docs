@@ -13,7 +13,7 @@ After you integrate your application (app) with Amazon Pinpoint and set up event
 
 The JSON object for an app event contains the data shown in the following example.
 
-```
+```json
 {
   "event_type": "_session.stop",
   "event_timestamp": 1487973802507,

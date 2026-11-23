@@ -14,7 +14,7 @@ Because these features rely on the default interceptors, replacing the mapper’
 
  [DynamoDB TTL](/amazondynamodb/latest/developerguide/TTL.html) deletes items automatically after an expiration timestamp. Mark a numeric property with `@DynamoDbTtlSeconds`, passing the item’s `lifetime` in seconds. Whenever the item is written, the mapper sets that property to the current time plus the lifetime (as an epoch-seconds timestamp):
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbItem
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbPartitionKey
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbTtlSeconds
@@ -39,7 +39,7 @@ The annotation makes the mapper *write* the expiration timestamp, but DynamoDB o
 
 An atomic counter is a numeric attribute the mapper increments automatically each time the item is persisted. Mark a numeric property with `@DynamoDbCounter`:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbCounter
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbItem
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbPartitionKey

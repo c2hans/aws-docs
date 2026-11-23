@@ -150,7 +150,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="apps-application-id-segments-segment-id-request-body-put-example"></a>
 
-```
+```json
 {
   "Name": "string",
   "Dimensions": {
@@ -315,7 +315,7 @@ Retrieves information about the communication requirements and options that are 
 #### SegmentResponse schema
 <a name="apps-application-id-segments-segment-id-response-body-segmentresponse-example"></a>
 
-```
+```json
 {
   "Name": "string",
   "Dimensions": {
@@ -493,7 +493,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-segments-segment-id-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

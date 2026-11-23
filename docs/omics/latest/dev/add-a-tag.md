@@ -18,7 +18,7 @@ aws omics create-sequence-store --name "MySequenceStore" --tags key1=value1,key2
 
 The output does not list the tags. It returns the following response.
 
-```
+```json
 {
     "id": "6860403586",
     "referenceStoreId": "4889894479",

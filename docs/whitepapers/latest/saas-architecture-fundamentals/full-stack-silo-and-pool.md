@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
 ![A diagram depicting full stack silo and pool models.](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/silo-and-pool-models2.png)
 
+*Full stack silo and pool models *
+
  In this diagram, you’ll see that there are three different models for your full stack tenant deployments. First, you’ll see that there is a full stack pool environment. Tenants in this pool share all the resources (compute, storage, and so on).
 
  The other two stacks shown are meant to represent full stack siloed tenant environments. In this case, Tenant 3 and Tenant 4 are shown as each having their own dedicated stacks where none of the resources are shared with other tenants.

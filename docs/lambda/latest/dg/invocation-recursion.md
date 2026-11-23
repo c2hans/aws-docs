@@ -184,7 +184,7 @@ Note that when you configure a function to allow recursive loops, the [CloudWatc
 
 You can use the [PutFunctionRecursionConfig](https://docs.aws.amazon.com/lambda/latest/api/API_PutFunctionRecursionConfig.html) API to allow your function to be invoked in a recursive loop. Specify `Allow` for the recursive loop parameter. For example, you can call this API with the `put-function-recursion-config` AWS CLI command:
 
-```
+```bash
 aws lambda put-function-recursion-config --function-name {{yourFunctionName}} --recursive-loop Allow
 ```
 
@@ -214,7 +214,7 @@ You can change your Event Function's configuration back to the default setting s
 
 You can use the [PutFunctionRecursionConfig](https://docs.aws.amazon.com/lambda/latest/api/API_PutFunctionRecursionConfig.html) API to configure your function so that Lambda terminates recursive loops when it detects them. Specify `Terminate` for the recursive loop parameter. For example, you can call this API with the `put-function-recursion-config` AWS CLI command:
 
-```
+```bash
 aws lambda put-function-recursion-config --function-name {{yourFunctionName}} --recursive-loop Terminate
 ```
 

@@ -35,7 +35,7 @@ The following example inline policy adds the required permissions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -91,7 +91,7 @@ The following examples show ways that you can reference Secrets Manager secrets 
 **Example referencing a full secret**
 The following is a snippet of a task definition showing the format when referencing the full text of a Secrets Manager secret.
 
-```
+```json
 {
   "containerProperties": [{
     "secrets": [{
@@ -119,7 +119,7 @@ The following shows an example output from a [ >get-secret-value](https://docs.a
 ```
 Reference a specific key from the previous output in a container definition by specifying the key name at the end of the ARN.
 
-```
+```json
 {
   "containerProperties": [{
     "secrets": [{
@@ -154,7 +154,7 @@ The following shows an example output from a [ >describe-secret](https://docs.aw
 ```
 Reference a specific version staging label from the previous output in a container definition by specifying the key name at the end of the ARN.
 
-```
+```json
 {
   "containerProperties": [{
     "secrets": [{
@@ -166,7 +166,7 @@ Reference a specific version staging label from the previous output in a contain
 ```
 Reference a specific version ID from the previous output in a container definition by specifying the key name at the end of the ARN.
 
-```
+```json
 {
   "containerProperties": [{
     "secrets": [{
@@ -180,7 +180,7 @@ Reference a specific version ID from the previous output in a container definiti
 **Example referencing a specific key and version staging label of a secret**
 The following shows how to reference both a specific key within a secret and a specific version staging label.
 
-```
+```json
 {
   "containerProperties": [{
     "secrets": [{
@@ -192,7 +192,7 @@ The following shows how to reference both a specific key within a secret and a s
 ```
 To specify a specific key and version ID, use the following syntax.
 
-```
+```json
 {
   "containerProperties": [{
     "secrets": [{
@@ -210,7 +210,7 @@ When you specify a `logConfiguration` within your job definition, you can specif
 
 The following is a snippet of a job definition showing the format when referencing an Secrets Manager secret.
 
-```
+```json
 {
   "containerProperties": [{
     "logConfiguration": [{

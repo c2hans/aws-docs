@@ -40,7 +40,7 @@ Follow this procedure to create a customer managed policy for your role. This po
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -157,7 +157,7 @@ Finally, you can update the trust policy for the role that you created. You must
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -215,7 +215,7 @@ Follow this procedure to create a rule in the EventBridge console so that you ca
    Your **Event pattern** will look similar to the following example.
 **Example**
 
-   ```
+   ```json
    {
      "source": [
        "aws.health"

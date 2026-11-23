@@ -24,7 +24,7 @@ For centralized access management, we recommend AWS IAM Identity Center. For mor
 
 An IAM policy is a JSON document that consists of one or more statements. Each statement is structured as follows:
 
-```
+```json
 {
 	"Statement": [
 		{

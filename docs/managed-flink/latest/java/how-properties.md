@@ -48,7 +48,7 @@ Replace the sample account ID ({{`012345678901`}}) in the examples following wit
 
 The following example request for the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action adds two runtime property groups (`ProducerConfigProperties` and `ConsumerConfigProperties`) when you create an application:
 
-```
+```json
 {
     "ApplicationName": "MyApplication",
     "ApplicationDescription": "my java test app",
@@ -91,7 +91,7 @@ The following example request for the [`CreateApplication`](https://docs.aws.ama
 
 The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action adds or updates runtime properties for an existing application:
 
-```
+```json
 {
   "ApplicationName": "MyApplication",
   "CurrentApplicationVersionId": 2,
@@ -126,7 +126,7 @@ If you use a key that has no corresponding runtime property in a property group,
 
 The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action removes all runtime properties and property groups from an existing application:
 
-```
+```json
 {
   "ApplicationName": "MyApplication",
   "CurrentApplicationVersionId": 3,

@@ -48,7 +48,7 @@ An *execution role* is an IAM role that EventBridge Scheduler assumes in order t
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -69,7 +69,7 @@ An *execution role* is an IAM role that EventBridge Scheduler assumes in order t
 
 1. From the AWS Command Line Interface (AWS CLI), enter the following command to create a new role. Replace `{{SchedulerExecutionRole}}` with the name you want to give this role.
 
-   ```
+   ```bash
    $ aws iam create-role --role-name {{SchedulerExecutionRole}} --assume-role-policy-document file://Scheduler-Execution-Role.json
    ```
 
@@ -111,7 +111,7 @@ An *execution role* is an IAM role that EventBridge Scheduler assumes in order t
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -138,7 +138,7 @@ An *execution role* is an IAM role that EventBridge Scheduler assumes in order t
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -165,7 +165,7 @@ An *execution role* is an IAM role that EventBridge Scheduler assumes in order t
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -186,7 +186,7 @@ An *execution role* is an IAM role that EventBridge Scheduler assumes in order t
 
 1. Run the following command to create the new permission policy. Replace `{{PolicyName}}` with the name you want to give this policy.
 
-   ```
+   ```bash
    $ aws iam create-policy --policy-name {{PolicyName}} --policy-document file://PermissionPolicy.json
    ```
 
@@ -210,7 +210,7 @@ An *execution role* is an IAM role that EventBridge Scheduler assumes in order t
 
 1. Run the following command to attach the policy to your execution role. Replace `{{your-policy-arn}}` with the ARN of the policy you created in the previous step. Replace `{{SchedulerExecutionRole}}` with the name of your execution role.
 
-   ```
+   ```bash
    $ aws iam attach-role-policy --policy-arn {{your-policy-arn}} --role-name {{SchedulerExecutionRole}}
    ```
 
@@ -225,7 +225,7 @@ Before you create an EventBridge Scheduler schedule, you need at least one targe
 
 1. Copy the following JSON CloudFormation template and save it locally as `Scheduler-Target-SQS.json`.
 
-   ```
+   ```json
    {
       "AWSTemplateFormatVersion": "2010-09-09",
       "Resources": {
@@ -267,7 +267,7 @@ Before you create an EventBridge Scheduler schedule, you need at least one targe
 
 1. From the AWS CLI, run the following command to create an CloudFormation stack from the `Scheduler-Target-SQS.json` template.
 
-   ```
+   ```bash
    $ aws cloudformation create-stack --stack-name {{Scheduler-Target-SQS}} --template-body file://Scheduler-Target-SQS.json
    ```
 
@@ -281,7 +281,7 @@ Before you create an EventBridge Scheduler schedule, you need at least one targe
 
 1. Run the following command to view summary information for your CloudFormation stack. This information includes the status of the stack and the outputs specified in the template.
 
-   ```
+   ```bash
    $ aws cloudformation describe-stacks --stack-name {{Scheduler-Target-SQS}}
    ```
 

@@ -34,6 +34,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Diagram showing a comparison between monolithic, service-oriented, and microservices architectures](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/images/monolith-soa-microservices-comparison.png)
 
+*Monolithic, service-oriented, and microservices architectures*
+
 ## Implementation steps
 <a name="implementation-steps"></a>
 +  Determine the appropriate architecture to refactor or build your application. SOA and microservices offer respectively smaller segmentation, which is preferred as a modern scalable and reliable architecture. SOA can be a good compromise for achieving smaller segmentation while avoiding some of the complexities of microservices. For more details, see [Microservice Trade-Offs](https://martinfowler.com/articles/microservice-trade-offs.html).

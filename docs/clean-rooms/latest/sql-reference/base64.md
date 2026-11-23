@@ -29,7 +29,7 @@ A BINARY expression or a STRING which the function will interpret as BINARY.
 
 To convert the given string input into its Base64 encoded representation. use the following example. The result is the Base64 encoded representation of the input string 'Spark SQL', which is 'U3BhcmsgU1FM'.
 
-```
+```sql
 SELECT base64('Spark SQL');
  U3BhcmsgU1FM
 ```

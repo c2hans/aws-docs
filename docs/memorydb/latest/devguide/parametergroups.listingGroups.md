@@ -38,7 +38,7 @@ aws memorydb describe-parameter-groups ^
 ```
 The output of this command will look something like this, listing the name, family, and description for the parameter group.
 
-```
+```json
 {
     "ParameterGroups": [
 	    {
@@ -67,7 +67,7 @@ aws memorydb describe-parameter-groups ^
 ```
 The output of this command will look something like this, listing the name, family and description for the parameter group.
 
-```
+```json
 {
     "ParameterGroups": [
 	    {
@@ -88,7 +88,7 @@ aws memorydb describe-parameter-groups --max-results {{20}}
 ```
 The JSON output of this command will look something like this, listing the name, family and description for each parameter group.
 
-```
+```json
 {
     "ParameterGroups": [
         {

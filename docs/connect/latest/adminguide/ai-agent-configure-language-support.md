@@ -17,7 +17,7 @@ Agents can ask for assistance in the [language](supported-languages.md#supported
 
 Use the following sample AWS CLI command to set the locale of a **Manual search** AI agent.
 
-```
+```json
 {
     ...
     "configuration": {

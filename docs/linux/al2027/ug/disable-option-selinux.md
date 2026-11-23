@@ -19,26 +19,26 @@ To disable SELinux, use the following steps.
 
 1. Ensure that the `grubby` package is installed.
 
-   ```
+   ```sh
    rpm -q grubby
    grubby-{{version}}
    ```
 
 1. Configure your bootloader to add `selinux=0` to the kernel command line.
 
-   ```
+   ```sh
    sudo grubby --update-kernel ALL --args selinux=0
    ```
 
 1. Restart your system.
 
-   ```
+   ```sh
    sudo reboot
    ```
 
 1. Run the `getenforce ` command to confirm that SELinux is `Disabled`.
 
-   ```
+   ```sh
    $ getenforce
    Disabled
    ```

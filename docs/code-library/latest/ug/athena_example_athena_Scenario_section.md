@@ -22,7 +22,7 @@ The following code example shows how to learn Athena basics.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class AthenaScenario:
     """Runs the Amazon Athena basics scenario."""
 
@@ -468,7 +468,7 @@ class AthenaScenario:
 ```
 Create a class that wraps Athena operations.
 
-```
+```python
 class AthenaWrapper:
     """Encapsulates Amazon Athena operations."""
 

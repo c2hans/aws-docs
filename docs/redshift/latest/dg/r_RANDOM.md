@@ -30,7 +30,7 @@ The RANDOM function can be seeded using [SET](r_SET.md) seed TO value. When seed
 
 To compute a random value between 0 and 99, use the following example. If the random number is 0 to 1, this query produces a random number from 0 to 100.
 
-```
+```sql
 SELECT CAST(RANDOM() * 100 AS INT);
 
 +------+
@@ -44,7 +44,7 @@ This example uses the [SET](r_SET.md) command to set a SEED value so that RANDOM
 
 To return three RANDOM integers without setting the SEED value, use the following example.
 
-```
+```sql
 SELECT CAST(RANDOM() * 100 AS INT);
 +------+
 | int4 |
@@ -69,7 +69,7 @@ SELECT CAST(RANDOM() * 100 AS INT);
 
 To set the SEED value to `.25`, and return three more RANDOM numbers, use the following example.
 
-```
+```sql
 SET SEED TO .25;
 SELECT CAST(RANDOM() * 100 AS INT);
 +------+
@@ -95,7 +95,7 @@ SELECT CAST(RANDOM() * 100 AS INT);
 
 To reset the SEED value to `.25`, and verify that RANDOM returns the same results as the previous three calls, use the following example.
 
-```
+```sql
 SET SEED TO .25;
 SELECT CAST(RANDOM() * 100 AS INT);
 +------+
@@ -123,7 +123,7 @@ The following examples use the TICKIT sample database. For more information, see
 
 To retrieve a uniform random sample of 10 items from the SALES table, use the following example.
 
-```
+```sql
 SELECT *
 FROM sales
 ORDER BY RANDOM()
@@ -147,7 +147,7 @@ LIMIT 10;
 
 To retrieve a random sample of 10 items, but choose the items in proportion to their prices, use the following example. For example, an item that is twice the price of another would be twice as likely to appear in the query results.
 
-```
+```sql
 SELECT *
 FROM sales
 ORDER BY -LOG(RANDOM()) / pricepaid

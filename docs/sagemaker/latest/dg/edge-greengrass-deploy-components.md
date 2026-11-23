@@ -40,7 +40,7 @@ Deploy your AWS IoT Greengrass components with the AWS IoT console.
 
    1. Under **Configuration update**, in **Configuration to merge**, enter the following configuration.
 
-      ```
+      ```bash
       {
           "DeviceFleetName": "device-fleet-name",
           "BucketName": "{{bucket-name}}"
@@ -60,7 +60,7 @@ Deploy your AWS IoT Greengrass components with the AWS IoT console.
 
 1. Create a ` deployment.json` file to define the deployment configuration for your SageMaker Edge Manager components. This file should look like the following example.
 
-   ```
+   ```bash
    {
      "targetArn":"targetArn",
      "components": {
@@ -94,7 +94,7 @@ Deploy your AWS IoT Greengrass components with the AWS IoT console.
 
 1. Run the following command to deploy the components on the device:
 
-   ```
+   ```bash
    aws greengrassv2 create-deployment \
        --cli-input-json file://path/to/deployment.json
    ```

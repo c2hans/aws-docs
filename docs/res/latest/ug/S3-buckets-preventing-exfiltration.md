@@ -47,7 +47,7 @@ This example policy uses `s3:*` and does not restrict S3 control plane operation
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

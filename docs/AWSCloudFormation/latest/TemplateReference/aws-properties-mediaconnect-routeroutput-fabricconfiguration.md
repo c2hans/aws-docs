@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::RouterOutput FabricConfiguration
 
-<a name="aws-properties-mediaconnect-routeroutput-fabricconfiguration-description"></a>The `FabricConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::RouterOutput](aws-resource-mediaconnect-routeroutput.md).
+The fabric configuration settings for the router output.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-routeroutput-fabricconfiguration-syntax"></a>
@@ -33,7 +33,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-routeroutput-fabricconfiguration-properties"></a>
 
 `RecoveryLatencyMode`  <a name="cfn-mediaconnect-routeroutput-fabricconfiguration-recoverylatencymode"></a>
-Property description not available.
+The recovery latency mode for the router fabric connection. Valid values include the following:
++ `BALANCED` (default) – Optimizes for stream quality.
++ `LOW_LATENCY` – Reduces latency at the potential cost of stream quality under adverse network conditions.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `BALANCED | LOW_LATENCY`

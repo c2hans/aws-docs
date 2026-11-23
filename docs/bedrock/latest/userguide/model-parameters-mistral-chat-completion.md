@@ -31,7 +31,7 @@ You need the model ID for the model that you want to use. To get the model ID, s
 
 The Mistral AI models have the following inference parameters.
 
-```
+```json
 {
     "messages": [
         {
@@ -82,7 +82,7 @@ The following are required parameters.
     + **assistant** – The response from the model.
   + **content** – The content for the message.
 
-  ```
+  ```json
   [
       {
           "role": "user",
@@ -98,7 +98,7 @@ The following are required parameters.
 
   The following example is the result from a tool that gets the most popular song on a radio station.
 
-  ```
+  ```json
   {
       "role": "tool",
       "tool_call_id": "v6RMMiRlT7ygYkT4uULjtg",
@@ -113,7 +113,7 @@ The following are optional parameters.
 
   The following example is for a tool that gets the most popular songs on a radio station.
 
-  ```
+  ```json
   [
       {
           "type": "function",
@@ -175,7 +175,7 @@ The following are optional parameters.
 
 The `body` response from a call to `InvokeModel` is the following:
 
-```
+```json
 {
     "choices": [
         {
@@ -205,7 +205,7 @@ The `body` response has the following fields:
 
       The following is an example request for a tool that gets the top song on a radio station.
 
-      ```
+      ```json
       [
                           {
                               "id": "v6RMMiRlT7ygYkT4uULjtg",

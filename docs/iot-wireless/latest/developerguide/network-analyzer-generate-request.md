@@ -13,7 +13,7 @@ To use the WebSocket protocol to call network analyzer, attach the following pol
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

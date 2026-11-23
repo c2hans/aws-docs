@@ -41,7 +41,7 @@ To make sure that users and roles can still use the Amazon EBS console, also att
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -97,7 +97,7 @@ The following policy allows users to attach volumes with the tag "`volume_user`=
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -143,7 +143,7 @@ The following policy allows users to use the [CreateVolume](https://docs.aws.ama
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -180,7 +180,7 @@ For resource-creating actions that apply tags, users must also have permissions 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -221,7 +221,7 @@ The following policy allows users to create a volume without having to specify t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -286,7 +286,7 @@ The following policy allows customers to use the [CreateSnapshot](https://docs.a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -324,7 +324,7 @@ The following policy allows customers to use the [CreateSnapshots](https://docs.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -365,7 +365,7 @@ For resource-creating actions that apply tags, customers must also have permissi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -412,7 +412,7 @@ The following policy includes the `aws:RequestTag` condition key that requires t
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -461,7 +461,7 @@ The following policy allows customers to create a snapshot without having to spe
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -497,7 +497,7 @@ The following policy allows customers to create multi-volume snapshot sets witho
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -535,7 +535,7 @@ The following policy for `CreateSnapshots` allows snapshots to be created only i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -583,7 +583,7 @@ The following policy allows deletion of a snapshot only if the snapshot is tagge
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -610,7 +610,7 @@ The following policy allows a customer to create a snapshot but denies the actio
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -645,7 +645,7 @@ The following policy allows a customer to create snapshots but denies the action
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -680,7 +680,7 @@ The following policy allows you to combine multiple actions into a single policy
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -723,7 +723,7 @@ The following example policy allows principals to copy snapshots only if the new
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -748,7 +748,7 @@ The following example policy allows principals to copy snapshots only if the sou
 
 The following example policy allows principals to copy snapshots only if the source snapshot is created with tag key of `CSISnapshotName`.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "ec2:CopySnapshot",
@@ -777,7 +777,7 @@ The following policy allows modification of a snapshot only if the snapshot is t
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

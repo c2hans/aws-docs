@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/chime/latest/ag/invite-users.html
 
 The following example shows how to invite multiple users to an Amazon Chime `Team` account.
 
-```
+```java
 List<String> emails = new ArrayList<>();
 emails.add("{{janedoe@example.com}}");
 emails.add("{{richardroe@example.net}}");

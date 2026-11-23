@@ -92,7 +92,7 @@ aws kendra update-query-suggestions-config \
 
 **To retrieve query suggestions**
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 
@@ -137,7 +137,7 @@ print("Program ends.")
 
 For example, to change the query log time window and the minimum number of times a query must be searched:
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 import pprint
@@ -207,7 +207,7 @@ aws  kendra clear-query-suggestions \
 
 **To clear query suggestions**
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 
@@ -301,7 +301,7 @@ aws kendra update-query-suggestions-config \
 
 To retrieve query suggestions and override the document fields configuration at the query level instead of having to change the configuration at the index level.
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 
@@ -354,7 +354,7 @@ print("Program ends.")
 
 For example, to change the document fields configuration at the index level:
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 import pprint
@@ -469,7 +469,7 @@ aws kendra delete-query-suggestions-block-list \
 
 **To create a block list**
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 import pprint
@@ -532,7 +532,7 @@ print("Program ends.")
 
 **To update a block list**
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 import pprint
@@ -594,7 +594,7 @@ print("Program ends.")
 
 **To delete a block list**
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 

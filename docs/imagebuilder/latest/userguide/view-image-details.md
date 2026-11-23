@@ -235,7 +235,7 @@ aws imagebuilder get-image-policy --image-arn arn:aws:imagebuilder:{{us-west-2}}
 
 The following example shows how to use the [Get-EC2IBImagePolicy](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBImagePolicy.html) cmdlet to get the details of an image policy with its ARN:
 
-```
+```ps
 Get-EC2IBImagePolicy -ImageArn arn:aws:imagebuilder:{{us-west-2}}:{{123456789012}}:image/{{example-image}}/2019.12.02
 ```
 

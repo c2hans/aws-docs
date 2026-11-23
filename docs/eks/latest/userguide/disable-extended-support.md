@@ -34,7 +34,7 @@ You cannot disable extended support once your cluster has entered it. You can on
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws eks update-cluster-config \
    --name <cluster-name> \
    --upgrade-policy supportType=STANDARD

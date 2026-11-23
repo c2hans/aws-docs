@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-api-domainconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccessAssociation](#sam-api-domainconfiguration-domainaccessassociation): {{DomainAccessAssociation}}
   [BasePath](#sam-api-domainconfiguration-basepath): {{List}}
   [CertificateArn](#sam-api-domainconfiguration-certificatearn): {{String}}
@@ -124,7 +124,7 @@ DomainName example
 #### YAML
 <a name="sam-property-api-domainconfiguration--examples--domainname--yaml"></a>
 
-```
+```yaml
 Domain:
   DomainName: www.example.com
   CertificateArn: arn-example

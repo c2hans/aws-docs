@@ -16,14 +16,14 @@ After you install this component, run the following command to view its help doc
 ------
 #### [ Linux or Unix ]
 
-```
+```bash
 {{/greengrass/v2}}/bin/greengrass-cli help
 ```
 
 ------
 #### [ Windows ]
 
-```
+```cmd
 {{C:\greengrass\v2}}\bin\greengrass-cli help
 ```
 
@@ -34,14 +34,14 @@ The following command restarts a component named `com.example.HelloWorld`, for e
 ------
 #### [ Linux or Unix ]
 
-```
+```bash
 sudo {{/greengrass/v2}}/bin/greengrass-cli component restart --names "com.example.HelloWorld"
 ```
 
 ------
 #### [ Windows ]
 
-```
+```cmd
 {{C:\greengrass\v2}}\bin\greengrass-cli component restart --names "com.example.HelloWorld"
 ```
 
@@ -320,7 +320,7 @@ If you don't specify any groups to authorize, you can use the Greengrass CLI as 
 **Example: Configuration merge update**
 The following example configuration specifies to authorize three POSIX system groups (`group1`, `1002`, and `group3`) and two Windows user groups (`Device Operators` and `QA Engineers`) to use the Greengrass CLI.
 
-```
+```json
 {
   "AuthorizedPosixGroups": "group1,1002,group3",
   "AuthorizedWindowsGroups": "Device Operators,QA Engineers"
@@ -337,7 +337,7 @@ If you don't specify any groups to authorize, you can use the Greengrass CLI as 
 **Example: Configuration merge update**
 The following example configuration specifies to authorize three system groups (`group1`, `1002`, and `group3`) to use the Greengrass CLI.
 
-```
+```json
 {
   "AuthorizedPosixGroups": "group1,1002,group3"
 }
@@ -372,14 +372,14 @@ This component uses the same log file as the [Greengrass nucleus](greengrass-nuc
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
   ```
 

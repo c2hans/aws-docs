@@ -31,7 +31,7 @@ If you don't have the *AWSElasticBeanstalkWebTier* or *AWSElasticBeanstalkWorker
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -114,7 +114,7 @@ Before you enable it, set up IAM permissions to use with the CloudWatch Logs age
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -182,7 +182,7 @@ In particular, the `--log-group` option enables you to retrieve instance logs of
 
 When you create or update an environment, you can use a configuration file to set up and configure instance log streaming to CloudWatch Logs. The following example configuration file enables default instance log streaming. Elastic Beanstalk streams the default set of log files for your environment's platform. To use the example, copy the text into a file with the `.config` extension in the `.ebextensions` directory at the top level of your application source bundle.
 
-```
+```yaml
 option_settings:
   - namespace: aws:elasticbeanstalk:cloudwatch:logs
     option_name: StreamLogs

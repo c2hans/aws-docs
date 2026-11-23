@@ -40,7 +40,7 @@ Use the following AWS CLI commands to modify an IPAM pool allocation:
 
 1. Modify the allocation description: [modify-ipam-pool-allocation](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-ipam-pool-allocation.html)
 
-   ```
+   ```bash
    aws ec2 modify-ipam-pool-allocation --ipam-pool-allocation-id {{ipam-pool-alloc-0e6186d73999e1f12}} --description "{{Updated description}}"
    ```
 

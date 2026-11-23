@@ -41,7 +41,7 @@ Use the following role policy when creating the IAM role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -70,7 +70,7 @@ Use the following trust relationship when creating the IAM role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -97,7 +97,7 @@ Create a Node.js module with the file name `cwe_putrule.js`. Be sure to configur
 
 Call the `putRule` method to create the rule. The callback returns the ARN of the new or updated rule.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -124,7 +124,7 @@ cwevents.putRule(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node cwe_putrule.js
 ```
 
@@ -135,7 +135,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `cwe_puttargets.js`. Be sure to configure the SDK as previously shown. To access CloudWatch Events, create an `AWS.CloudWatchEvents` service object. Create a JSON object containing the parameters needed to specify the rule to which you want to attach the target, including the ARN of the Lambda function you created. Call the `putTargets` method of the `AWS.CloudWatchEvents` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -165,7 +165,7 @@ cwevents.putTargets(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node cwe_puttargets.js
 ```
 
@@ -176,7 +176,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `cwe_putevents.js`. Be sure to configure the SDK as previously shown. To access CloudWatch Events, create an `AWS.CloudWatchEvents` service object. Create a JSON object containing the parameters needed to send events. For each event, include the source of the event, the ARNs of any resources affected by the event, and details for the event. Call the `putEvents` method of the `AWS.CloudWatchEvents` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -207,7 +207,7 @@ cwevents.putEvents(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node cwe_putevents.js
 ```
 

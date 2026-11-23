@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::DestinationEndpoint StandardDestinationEndpointProtocolConfiguration
 
-<a name="aws-properties-mediaconnect-destinationendpoint-standarddestinationendpointprotocolconfiguration-description"></a>The `StandardDestinationEndpointProtocolConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::DestinationEndpoint](aws-resource-mediaconnect-destinationendpoint.md).
+The protocol configuration for a standard destination endpoint. This is a union type, so exactly one of its members is set, depending on the protocol that the destination endpoint uses.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-standarddestinationendpointprotocolconfiguration-syntax"></a>
@@ -43,25 +43,25 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-standarddestinationendpointprotocolconfiguration-properties"></a>
 
 `Rist`  <a name="cfn-mediaconnect-destinationendpoint-standarddestinationendpointprotocolconfiguration-rist"></a>
-Property description not available.
+The configuration settings for a destination endpoint that uses the RIST protocol.
 *Required*: No
 *Type*: [RistStandardDestinationEndpointConfiguration](aws-properties-mediaconnect-destinationendpoint-riststandarddestinationendpointconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Rtp`  <a name="cfn-mediaconnect-destinationendpoint-standarddestinationendpointprotocolconfiguration-rtp"></a>
-Property description not available.
+The configuration settings for a destination endpoint that uses the RTP protocol.
 *Required*: No
 *Type*: [RtpStandardDestinationEndpointConfiguration](aws-properties-mediaconnect-destinationendpoint-rtpstandarddestinationendpointconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SrtCaller`  <a name="cfn-mediaconnect-destinationendpoint-standarddestinationendpointprotocolconfiguration-srtcaller"></a>
-Property description not available.
+The configuration settings for a destination endpoint that uses SRT in caller mode.
 *Required*: No
 *Type*: [SrtCallerStandardDestinationEndpointConfiguration](aws-properties-mediaconnect-destinationendpoint-srtcallerstandarddestinationendpointconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SrtListener`  <a name="cfn-mediaconnect-destinationendpoint-standarddestinationendpointprotocolconfiguration-srtlistener"></a>
-Property description not available.
+The configuration settings for a destination endpoint that uses SRT in listener mode.
 *Required*: No
 *Type*: [SrtListenerStandardDestinationEndpointConfiguration](aws-properties-mediaconnect-destinationendpoint-srtlistenerstandarddestinationendpointconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

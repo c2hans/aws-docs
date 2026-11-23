@@ -48,7 +48,7 @@ For more information, see [Creating mount targets](https://docs.aws.amazon.com/e
 **Tools for PowerShell V4**
 **Example 1: Returns the collection of mount targets associated with the specified file system.**
 
-```
+```powershell
 Get-EFSMountTarget -FileSystemId fs-1a2b3c4d
 ```
 **Output:**
@@ -67,7 +67,7 @@ SubnetId           : subnet-1a2b3c4d
 **Tools for PowerShell V5**
 **Example 1: Returns the collection of mount targets associated with the specified file system.**
 
-```
+```powershell
 Get-EFSMountTarget -FileSystemId fs-1a2b3c4d
 ```
 **Output:**

@@ -31,7 +31,7 @@ The following code example shows how to get started using Amazon SQS.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.SqsException;
@@ -82,7 +82,7 @@ The following code example shows how to use `CreateQueue`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.ChangeMessageVisibilityRequest;
@@ -277,7 +277,7 @@ The following code example shows how to use `DeleteMessage`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs#code-examples).
 
-```
+```java
         try {
             for (Message message : messages) {
                 DeleteMessageRequest deleteMessageRequest = DeleteMessageRequest.builder()
@@ -301,7 +301,7 @@ The following code example shows how to use `DeleteQueue`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.GetQueueUrlRequest;
@@ -371,7 +371,7 @@ The following code example shows how to use `GetQueueUrl`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs#code-examples).
 
-```
+```java
             GetQueueUrlResponse getQueueUrlResponse = sqsClient
                     .getQueueUrl(GetQueueUrlRequest.builder().queueName(queueName).build());
             return getQueueUrlResponse.queueUrl();
@@ -386,7 +386,7 @@ The following code example shows how to use `ListQueues`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs#code-examples).
 
-```
+```java
         String prefix = "que";
 
         try {
@@ -411,7 +411,7 @@ The following code example shows how to use `ReceiveMessage`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs#code-examples).
 
-```
+```java
         try {
             ReceiveMessageRequest receiveMessageRequest = ReceiveMessageRequest.builder()
                     .queueUrl(queueUrl)
@@ -439,7 +439,7 @@ Two examples of the `SendMessage` operation follow:
 + Send a message with a body and message attributes
 Send a message with a body and a delay.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sqs.SqsClient;
@@ -510,7 +510,7 @@ public class SendMessages {
 ```
 Send a message with a body and message attributes.
 
-```
+```java
     /**
      * <p>This method demonstrates how to add message attributes to a message.
      * Each attribute must specify a name, value, and data type. You use a Java Map to supply the attributes. The map's
@@ -570,7 +570,7 @@ The following code example shows how to use `SendMessageBatch`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs#code-examples).
 
-```
+```java
             SendMessageBatchRequest sendMessageBatchRequest = SendMessageBatchRequest.builder()
                     .queueUrl(queueUrl)
                     .entries(SendMessageBatchRequestEntry.builder().id("id1").messageBody("Hello from msg 1").build(),
@@ -590,7 +590,7 @@ The following code example shows how to use `SetQueueAttributes`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs#code-examples).
 Configure an Amazon SQS to use server-side encryption (SSE) using a custom KMS key.
 
-```
+```java
     public static void addEncryption(String queueName, String kmsMasterKeyAlias) {
         SqsClient sqsClient = SqsClient.create();
 
@@ -657,7 +657,7 @@ This example
 + subscribes the queues to the topic and publishes a message to the topic.
 The [test](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sns/src/test/java/com/example/sns/PriceUpdateExampleTest.java) verifies the receipt of the message to each queue. The [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sns/src/main/java/com/example/sns/PriceUpdateExample.java) also shows the addition of access policies and deletes the resources at the end.
 
-```
+```java
 public class PriceUpdateExample {
     public final static SnsClient snsClient = SnsClient.create();
     public final static SqsClient sqsClient = SqsClient.create();
@@ -819,7 +819,7 @@ The following code example shows how to use the Amazon SQS Extended Client Libra
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs#code-examples).
 
-```
+```java
 import com.amazon.sqs.javamessaging.AmazonSQSExtendedClient;
 import com.amazon.sqs.javamessaging.ExtendedClientConfiguration;
 import org.slf4j.Logger;
@@ -968,7 +968,7 @@ The following code example shows how to work with S3 event notifications in an o
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/s3#code-examples).
 This example show how to process S3 notification event by using Amazon SQS.
 
-```
+```java
     /**
      * This method receives S3 event notifications by using an SqsAsyncClient.
      * After the client receives the messages it deserializes the JSON payload and logs them. It uses
@@ -1083,7 +1083,7 @@ The following code example shows how to:
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/topics_and_queues#code-examples).
 
-```
+```java
 package com.example.sns;
 
 import software.amazon.awssdk.auth.credentials.EnvironmentVariableCredentialsProvider;
@@ -1804,7 +1804,7 @@ As shown in the following examples, you can handle batch message operations with
 Use explicit batching when you need fine-grained control over batch composition and error handling. Use automatic batching when you want to optimize performance with minimal code changes.
 SendRecvBatch.java - Uses explicit batch operations with messages.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.sqs.SqsClient;
@@ -2131,7 +2131,7 @@ public class SendRecvBatch {
 ```
 SimpleProducerConsumer.java - Uses automatic batching of messages.
 
-```
+```java
 package com.example.sqs;
 
 import org.slf4j.Logger;
@@ -2750,7 +2750,7 @@ The following examples work with standard Amazon SQS queues and include:
 For more information on using JMS with Amazon SQS, see the [Amazon SQS Developer Guide](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-java-message-service-jms-client.html).
 Sending a text message.
 
-```
+```java
     /**
      * This method establishes a connection to a standard Amazon SQS queue using the Amazon SQS
      * Java Messaging Library and sends text messages to it. It uses JMS (Java Message Service) API
@@ -2816,7 +2816,7 @@ Sending a text message.
 ```
 Receiving messages synchronously.
 
-```
+```java
     /**
      * This method receives messages from a standard Amazon SQS queue using the Amazon SQS Java
      * Messaging Library. It creates a connection to the queue using JMS (Java Message Service),
@@ -2878,7 +2878,7 @@ Receiving messages synchronously.
 ```
 Receiving messages asynchronously.
 
-```
+```java
     /**
      * This method sets up automatic message handling for a standard Amazon SQS queue using the
      * Amazon SQS Java Messaging Library. It creates a listener that processes messages as soon
@@ -2933,7 +2933,7 @@ Receiving messages asynchronously.
 ```
 Receiving messages using CLIENT\_ACKNOWLEDGE mode.
 
-```
+```java
     /**
      * This method demonstrates how message acknowledgment affects message processing in a standard
      * Amazon SQS queue using the Amazon SQS Java Messaging Library. It sends messages to the queue,
@@ -3037,7 +3037,7 @@ Receiving messages using CLIENT\_ACKNOWLEDGE mode.
 ```
 Receiving messages using the UNORDERED\_ACKNOWLEDGE mode.
 
-```
+```java
     /**
      * Demonstrates message acknowledgment behavior in UNORDERED_ACKNOWLEDGE mode with Amazon SQS JMS.
      * In this mode, each message must be explicitly acknowledged regardless of receive order.
@@ -3136,7 +3136,7 @@ Receiving messages using the UNORDERED\_ACKNOWLEDGE mode.
 ```
 Using Spring to inject dependencies.
 
-```
+```java
 package com.example.sqs.jms.spring;
 
 import com.amazon.sqs.javamessaging.SQSConnection;
@@ -3251,7 +3251,7 @@ public class SpringExample {
 ```
 Spring bean definitions.
 
-```
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <beans
         xmlns="http://www.springframework.org/schema/beans"
@@ -3300,7 +3300,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 ```
 A utility class that provides common methods used by the other examples.
 
-```
+```java
 package com.example.sqs.jms;
 
 import com.amazon.sqs.javamessaging.AmazonSQSMessagingClientWrapper;
@@ -3521,7 +3521,7 @@ The following code example shows how to perform tagging operation with Amazon SQ
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs#code-examples).
 The following example creates tags for a queue, lists tags, and removes a tag.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.sqs.SqsClient;
@@ -3647,7 +3647,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda) repository.
 Consuming an SQS event with Lambda using Java.
 
-```
+```java
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import com.amazonaws.services.lambda.runtime.Context;
@@ -3689,7 +3689,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using Java.
 
-```
+```java
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import com.amazonaws.services.lambda.runtime.Context;

@@ -79,7 +79,7 @@ Creates and defines the settings for an allow list.
 #### POST schema
 <a name="allow-lists-request-body-post-example"></a>
 
-```
+```json
 {
   "clientToken": "string",
   "criteria": {
@@ -102,7 +102,7 @@ Creates and defines the settings for an allow list.
 #### ListAllowListsResponse schema
 <a name="allow-lists-response-body-listallowlistsresponse-example"></a>
 
-```
+```json
 {
   "allowLists": [
     {
@@ -121,7 +121,7 @@ Creates and defines the settings for an allow list.
 #### CreateAllowListResponse schema
 <a name="allow-lists-response-body-createallowlistresponse-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "id": "string"
@@ -131,7 +131,7 @@ Creates and defines the settings for an allow list.
 #### ValidationException schema
 <a name="allow-lists-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -140,7 +140,7 @@ Creates and defines the settings for an allow list.
 #### ServiceQuotaExceededException schema
 <a name="allow-lists-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -149,7 +149,7 @@ Creates and defines the settings for an allow list.
 #### AccessDeniedException schema
 <a name="allow-lists-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -158,7 +158,7 @@ Creates and defines the settings for an allow list.
 #### ResourceNotFoundException schema
 <a name="allow-lists-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -167,7 +167,7 @@ Creates and defines the settings for an allow list.
 #### ConflictException schema
 <a name="allow-lists-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -176,7 +176,7 @@ Creates and defines the settings for an allow list.
 #### ThrottlingException schema
 <a name="allow-lists-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -185,7 +185,7 @@ Creates and defines the settings for an allow list.
 #### InternalServerException schema
 <a name="allow-lists-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

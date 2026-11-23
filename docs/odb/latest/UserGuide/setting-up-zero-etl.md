@@ -109,7 +109,7 @@ Create a Customer Managed Key (CMK) and store your database credentials.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -146,7 +146,7 @@ Create a Customer Managed Key (CMK) and store your database credentials.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -212,7 +212,7 @@ The following policy grants the necessary permissions.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

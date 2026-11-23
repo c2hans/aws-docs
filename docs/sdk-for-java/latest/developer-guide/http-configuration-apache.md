@@ -23,7 +23,7 @@ To use the `ApacheHttpClient`, you need to add a dependency on the `apache-clien
 
 Refer to the following example of a Maven `pom.xml` file to configure the `ApacheHttpClient`.
 
-```
+```xml
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -65,7 +65,7 @@ The following example creates an `S3Client` and configures the embedded instance
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.http.apache.ApacheHttpClient;
 import software.amazon.awssdk.services.s3.S3Client;
 import java.time.Duration;
@@ -73,7 +73,7 @@ import java.time.Duration;
 
  **Code**
 
-```
+```java
 S3Client s3Client = S3Client   // Singleton: Use the s3Client for all requests.
     .builder()
     .httpClientBuilder(ApacheHttpClient.builder()
@@ -107,7 +107,7 @@ import software.amazon.awssdk.services.s3.S3Client;
 
  **Code**
 
-```
+```java
 SdkHttpClient apacheHttpClient = ApacheHttpClient.builder()
         .maxConnections(100).build();
 
@@ -133,7 +133,7 @@ apacheHttpClient.close();  // Explicitly close apacheHttpClient.
 
 The following code snippet uses the [proxy configuration builder for the Apache HTTP client](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/apache/ProxyConfiguration.Builder.html).
 
-```
+```java
 SdkHttpClient apacheHttpClient = ApacheHttpClient.builder()
                 .proxyConfiguration(ProxyConfiguration.builder()
                         .endpoint(URI.create("http://example.com:1234"))
@@ -154,7 +154,7 @@ $ java -Dhttp.proxyHost=example.com -Dhttp.proxyPort=1234 -Dhttp.proxyUser=usern
 
 The equivalent setup that uses environment variables is:
 
-```
+```java
 // Set the following environment variables.
 // $ export HTTP_PROXY="http://username:password@example.com:1234"
 // $ export NO_PROXY="localhost|host.example.com"

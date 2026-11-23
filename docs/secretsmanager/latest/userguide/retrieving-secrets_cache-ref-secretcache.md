@@ -8,7 +8,7 @@ An in-memory cache for secrets retrieved from Secrets Manager. You use [get\_sec
 
 For more information, including examples, see [Get a Secrets Manager secret value using Python with client-side caching](retrieving-secrets_cache-python.md).
 
-```
+```python
 cache = SecretCache(
     config = SecretCacheConfig,
     client = [client](https://botocore.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html)
@@ -26,7 +26,7 @@ Retrieves the secret string value.
 
 Request syntax
 
-```
+```python
 response = cache.get_secret_string(
     secret_id='{{string}}',
     version_stage='{{string}}' )
@@ -46,7 +46,7 @@ Retrieves the secret binary value.
 
 Request syntax
 
-```
+```python
 response = cache.get_secret_binary(
     secret_id='{{string}}',
     version_stage='{{string}}'

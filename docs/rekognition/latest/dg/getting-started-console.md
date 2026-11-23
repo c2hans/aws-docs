@@ -34,7 +34,7 @@ This section also shows you how to see aggregated Amazon CloudWatch metrics for 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

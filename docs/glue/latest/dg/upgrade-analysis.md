@@ -36,7 +36,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/upgrade-analysis.html
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -120,7 +120,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/upgrade-analysis.html
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -147,7 +147,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/upgrade-analysis.html
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -175,7 +175,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/upgrade-analysis.html
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

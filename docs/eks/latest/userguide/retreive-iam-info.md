@@ -19,7 +19,7 @@ Before you create an add-on, use the AWS CLI to determine:
 
 1. Use the AWS CLI to determine if the add-on requires IAM permissions.
 
-   ```
+   ```shell
    aws eks describe-addon-versions \
    --addon-name <addon-name> \
    --kubernetes-version <kubernetes-version>
@@ -27,7 +27,7 @@ Before you create an add-on, use the AWS CLI to determine:
 
    For example:
 
-   ```
+   ```shell
    aws eks describe-addon-versions \
    --addon-name aws-ebs-csi-driver \
    --kubernetes-version 1.33
@@ -35,7 +35,7 @@ Before you create an add-on, use the AWS CLI to determine:
 
    Review the following sample output. Note that `requiresIamPermissions` is `true`, and the default add-on version. You need to specify the add-on version when retrieving the recommended IAM policy.
 
-   ```
+   ```text
    {
        "addons": [
            {
@@ -65,7 +65,7 @@ Before you create an add-on, use the AWS CLI to determine:
 
 1. If the add-on requires IAM permissions, use the AWS CLI to retrieve a recommended IAM policy.
 
-   ```
+   ```shell
    aws eks describe-addon-configuration \
    --query podIdentityConfiguration \
    --addon-name <addon-name> \
@@ -74,7 +74,7 @@ Before you create an add-on, use the AWS CLI to determine:
 
    For example:
 
-   ```
+   ```shell
    aws eks describe-addon-configuration \
    --query podIdentityConfiguration \
    --addon-name aws-ebs-csi-driver \
@@ -83,7 +83,7 @@ Before you create an add-on, use the AWS CLI to determine:
 
    Review the following output. Note the `recommendedManagedPolicies`.
 
-   ```
+   ```json
    [
        {
            "serviceAccount": "ebs-csi-controller-sa",

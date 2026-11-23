@@ -37,7 +37,7 @@ When you use the Secrets Manager backend, every connection or variable lookup ca
 
  The same lookup applies when you reference a connection or variable through Jinja templating in your workflow definition, with `{{ conn.{{conn_id}} }}`, `{{ var.value.{{key}} }}`, or `{{ var.json.{{key}} }}`. In the following example, a `BashOperator` task reads the host of the `my_http` connection and the value of the `app_stage` variable:
 
-```
+```yaml
 templated_dag:
   start_date: "2024-01-01"
   schedule: null
@@ -168,7 +168,7 @@ aws secretsmanager put-secret-value \
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -193,7 +193,7 @@ aws secretsmanager put-secret-value \
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -221,7 +221,7 @@ aws secretsmanager put-secret-value \
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -325,7 +325,7 @@ aws ssm put-parameter \
 
  Apache Airflow passes each key in the `AIRFLOW__WORKERS__SECRETS_BACKEND_KWARGS` JSON to your class's `__init__` method as a keyword argument. The following example reads from a store of your choice. It returns `None` when a secret doesn't exist, and logs and re-raises any other error so that a failed lookup isn't silently treated as a missing value.
 
-```
+```python
 # my_secrets_backend.py
 from airflow.secrets import BaseSecretsBackend
 
@@ -406,7 +406,7 @@ aws mwaa-serverless create-workflow \
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -429,7 +429,7 @@ aws mwaa-serverless create-workflow \
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -513,7 +513,7 @@ aws secretsmanager create-secret \
 
  Next, write a Python callable that reads the connection and the variable. The callable logs only non-secret fields, such as the host, port, and schema of the connection, and the value of a non-secret variable.
 
-```
+```python
 # my_module.py
 import logging
 
@@ -546,7 +546,7 @@ def read_connection_and_variable():
 
  Define a workflow that runs the callable as a `PythonOperator` task in the following YAML workflow definition:
 
-```
+```yaml
 my_dag:
   start_date: "2024-01-01"
   schedule: null

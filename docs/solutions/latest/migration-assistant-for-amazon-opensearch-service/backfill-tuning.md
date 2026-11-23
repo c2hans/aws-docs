@@ -51,7 +51,7 @@ Use `documentBackfillConfig.indexAllowlist` to include the backing indexes. For 
 
 The standard RFS image includes a JavaScript transform at `js/dataStreamBackingIndexTransform.js`. Configure it through the raw `docTransformerConfig` field because workflow-managed `documentTransforms` is for inline or mounted user scripts. The transform rewrites bulk operations whose `_index` starts with `.ds-` so that `_index` becomes the data stream name and `op_type` becomes `create`.
 
-```
+```yaml
 documentBackfillConfig:
   indexAllowlist:
     - 'regex:\.ds-logs-.*'

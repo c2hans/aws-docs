@@ -33,8 +33,8 @@ Required: No
 The desired enrollment status.
 + Active - Enables the Automation feature for your account.
 + Inactive - Disables the Automation feature for your account and stops all of your automation rules. If you opt in again later, all rules will be inactive, and you must enable the rules you want to run. You must wait at least 24 hours after opting out to opt in again.
-The `Pending` and `Failed` options cannot be used to update the enrollment status of an account. They are returned in the response of a request to update the enrollment status of an account.
-If you are a member account, your account must be disassociated from your organization’s management account before you can disable Automation. Contact your administrator to make this change.
+The `Pending` and `Failed` options can't be used to update the enrollment status of an account. They are returned in the response of a request to update the enrollment status of an account.
+If you are a member account, you can't disable Automation while an organization enrollment configuration applies. If no organization enrollment configuration applies, you also can't disable Automation while your organization rule mode is `AnyAllowed`. Ask your administrator to delete the organization enrollment configuration or disassociate your account, as applicable.
 Type: String
 Valid Values: `Active | Inactive | Pending | Failed`
 Required: Yes
@@ -77,19 +77,19 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
  You do not have sufficient permissions to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ForbiddenException **
  You are not authorized to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** IdempotencyTokenInUseException **
  The specified client token is already in use.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** IdempotentParameterMismatchException **
 Exception thrown when the same client token is used with different parameters, indicating a mismatch in idempotent request parameters.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
  An internal error occurred while processing the request.
@@ -100,24 +100,24 @@ HTTP Status Code: 500
 HTTP Status Code: 400
 
  ** NotManagementAccountException **
- The operation can only be performed by a management account.
+ The operation can only be performed by an organization's management account or a delegated administrator.
 HTTP Status Code: 400
 
  ** OptInRequiredException **
  The account must be opted in to Compute Optimizer Automation before performing this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ResourceNotFoundException **
  The specified resource was not found.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ServiceUnavailableException **
  The service is temporarily unavailable.
-HTTP Status Code: 500
+HTTP Status Code: 503
 
  ** ThrottlingException **
  The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_automation_UpdateEnrollmentConfiguration_SeeAlso"></a>

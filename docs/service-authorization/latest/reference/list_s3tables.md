@@ -103,6 +103,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DisassociateTableReplication  **
+  - **IAM action:**  [s3tables:DisassociateTableReplication](#list_s3tables-action-DisassociateTableReplication)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   GetNamespace  **
   - **IAM action:**  [s3tables:GetNamespace](#list_s3tables-action-GetNamespace)
   - **Condition key:**
@@ -438,6 +444,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [DeleteTableReplication](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_DeleteTableReplication.html)  **
   - **Description:** Grants permission to delete table replication configuration on a table
+  - **Resource types (\*required):** [Table\*](#list_s3tables-resource-Table)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_s3tables-aws_ResourceTag___TagKey_)<br />[s3tables:namespace](#list_s3tables-s3tables_namespace)<br />[s3tables:TableBucketTag/${TagKey}](#list_s3tables-s3tables_TableBucketTag___TagKey_)<br />[s3tables:tableName](#list_s3tables-s3tables_tableName)
+  - **Access level:** Write
+
+- **   [DisassociateTableReplication](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_DisassociateTableReplication.html)  **
+  - **Description:** Grants permission to disassociate table replication on a table
   - **Resource types (\*required):** [Table\*](#list_s3tables-resource-Table)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_s3tables-aws_ResourceTag___TagKey_)<br />[s3tables:namespace](#list_s3tables-s3tables_namespace)<br />[s3tables:TableBucketTag/${TagKey}](#list_s3tables-s3tables_TableBucketTag___TagKey_)<br />[s3tables:tableName](#list_s3tables-s3tables_tableName)
   - **Access level:** Write

@@ -110,7 +110,7 @@ Enable CORS by returning correct headers
 #### PUT schema
 <a name="resourcesets-resourcesetname-request-body-put-example"></a>
 
-```
+```json
 {
   "resourceSetType": "string",
   "resources": [
@@ -146,7 +146,7 @@ Enable CORS by returning correct headers
 #### ResourceSetOutput schema
 <a name="resourcesets-resourcesetname-response-body-resourcesetoutput-example"></a>
 
-```
+```json
 {
   "resourceSetType": "string",
   "resourceSetName": "string",

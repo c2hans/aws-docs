@@ -32,7 +32,7 @@ Additionally, create an inline policy with the following permissions:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -68,7 +68,7 @@ Add the following trust policy to `Glue-execution-role`:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -44,7 +44,7 @@ The following example shows you how to use the AWS SDK for .NET to display a lis
 
 **Getting CloudWatch log groups without paginators**
 
-```
+```csharp
       // Loop as many times as needed to get all the log groups
       var request = new DescribeLogGroupsRequest{Limit = LogGroupLimit};
       do
@@ -61,7 +61,7 @@ The following example shows you how to use the AWS SDK for .NET to display a lis
 
 **Getting CloudWatch log groups by using paginators**
 
-```
+```csharp
       // No need to loop to get all the log groups--the SDK does it for us behind the scenes
       var paginatorForLogGroups =
         cwClient.Paginators.DescribeLogGroups(new DescribeLogGroupsRequest());
@@ -103,7 +103,7 @@ Programming elements:
 #### Full code
 <a name="w2aac11c15c23c19b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using Amazon.CloudWatchLogs;
@@ -199,7 +199,7 @@ Starting August 15th, 2024, the AWS SDK for .NET will end support for .NET Frame
 
   To see this, create a .NET Framework 4.7.2 (or later) project and copy the preceding code to it. Then simply remove the `await` keyword from the two `foreach` paginator calls, as shown in the following example.
 
-  ```
+  ```csharp
   /*await*/ foreach(var logGroup in paginatorForLogGroups.LogGroups)
   {
     Console.WriteLine(logGroup.LogGroupName);

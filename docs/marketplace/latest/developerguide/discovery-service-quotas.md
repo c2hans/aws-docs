@@ -19,5 +19,6 @@ Your AWS account has the following quotas related to the AWS Marketplace Discove
 | GetOfferSet | 5 per second |
 | ListPurchaseOptions | 5 per second |
 | ListFulfillmentOptions | 5 per second |
+| ListListingAttributes | 5 per second |
 | SearchListings | 10 per second |
 | SearchFacets | 10 per second |

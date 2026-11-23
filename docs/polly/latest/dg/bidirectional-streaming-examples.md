@@ -9,7 +9,7 @@ The following example demonstrates a complete bidirectional streaming session. T
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.polly.PollyAsyncClient;
 import software.amazon.awssdk.services.polly.model.*;
@@ -120,7 +120,7 @@ public class BidirectionalStreamExample {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 import { PollyClient, StartSpeechSynthesisStreamCommand } from "@aws-sdk/client-polly";
 import { createWriteStream } from "fs";
 
@@ -186,7 +186,7 @@ synthesizeStream().catch(console.error);
 ------
 #### [ Go ]
 
-```
+```go
 package main
 
 import (
@@ -289,7 +289,7 @@ func main() {
 ------
 #### [ Rust ]
 
-```
+```rust
 use aws_sdk_polly::types::{
     CloseStreamEvent, Engine, OutputFormat,
     StartSpeechSynthesisStreamActionStream,

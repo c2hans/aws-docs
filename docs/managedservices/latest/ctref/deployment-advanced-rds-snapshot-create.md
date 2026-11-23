@@ -140,14 +140,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-rds-snapshot-create-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="deployment-advanced-rds-snapshot-create-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-CreateDBSnapshot",
   "Region": "us-east-1",

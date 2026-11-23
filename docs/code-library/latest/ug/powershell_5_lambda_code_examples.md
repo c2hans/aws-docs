@@ -26,7 +26,7 @@ The following code example shows how to use `Add-LMResourceTag`.
 **Tools for PowerShell V5**
 **Example 1: Adds the three tags (Washington, Oregon and California) and their associated values to the specified function identified by its ARN.**
 
-```
+```powershell
 Add-LMResourceTag -Resource "arn:aws:lambda:us-west-2:123456789012:function:MyFunction" -Tag @{ "Washington" = "Olympia"; "Oregon" = "Salem"; "California" = "Sacramento" }
 ```
 +  For API details, see [TagResource](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -39,7 +39,7 @@ The following code example shows how to use `Get-LMAccountSetting`.
 **Tools for PowerShell V5**
 **Example 1: This sample displays to compare the Account Limit and Account Usage**
 
-```
+```powershell
 Get-LMAccountSetting | Select-Object @{Name="TotalCodeSizeLimit";Expression={$_.AccountLimit.TotalCodeSize}}, @{Name="TotalCodeSizeUsed";Expression={$_.AccountUsage.TotalCodeSize}}
 ```
 **Output:**
@@ -59,7 +59,7 @@ The following code example shows how to use `Get-LMAlias`.
 **Tools for PowerShell V5**
 **Example 1: This example retrieves the Routing Config weights for a specific Lambda Function Alias.**
 
-```
+```powershell
 Get-LMAlias -FunctionName "MylambdaFunction123" -Name "newlabel1" -Select RoutingConfig
 ```
 **Output:**
@@ -79,7 +79,7 @@ The following code example shows how to use `Get-LMFunctionConcurrency`.
 **Tools for PowerShell V5**
 **Example 1: This examples gets the Reserved concurrency for the Lambda Function**
 
-```
+```powershell
 Get-LMFunctionConcurrency -FunctionName "MylambdaFunction123" -Select *
 ```
 **Output:**
@@ -99,7 +99,7 @@ The following code example shows how to use `Get-LMFunctionConfiguration`.
 **Tools for PowerShell V5**
 **Example 1: This example returns the version specific configuration of a Lambda Function.**
 
-```
+```powershell
 Get-LMFunctionConfiguration -FunctionName "MylambdaFunction123" -Qualifier "PowershellAlias"
 ```
 **Output:**
@@ -143,7 +143,7 @@ The following code example shows how to use `Get-LMFunctionList`.
 **Tools for PowerShell V5**
 **Example 1: This sample displays all the Lambda functions with sorted code size**
 
-```
+```powershell
 Get-LMFunctionList | Sort-Object -Property CodeSize | Select-Object FunctionName, RunTime, Timeout, CodeSize
 ```
 **Output:**
@@ -165,7 +165,7 @@ The following code example shows how to use `Get-LMPolicy`.
 **Tools for PowerShell V5**
 **Example 1: This sample displays the Function policy of the Lambda function**
 
-```
+```powershell
 Get-LMPolicy -FunctionName test -Select Policy
 ```
 **Output:**
@@ -183,7 +183,7 @@ The following code example shows how to use `Get-LMProvisionedConcurrencyConfig`
 **Tools for PowerShell V5**
 **Example 1: This example gets the provisioned Concurrency Configuration for the specified Alias of the Lambda Function.**
 
-```
+```powershell
 C:\>Get-LMProvisionedConcurrencyConfig -FunctionName "MylambdaFunction123" -Qualifier "NewAlias1"
 ```
 **Output:**
@@ -206,7 +206,7 @@ The following code example shows how to use `Get-LMProvisionedConcurrencyConfigL
 **Tools for PowerShell V5**
 **Example 1: This example retrieves the list of provisioned concurrency configurations for a Lambda function.**
 
-```
+```powershell
 Get-LMProvisionedConcurrencyConfigList -FunctionName "MylambdaFunction123"
 ```
 +  For API details, see [ListProvisionedConcurrencyConfigs](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -219,7 +219,7 @@ The following code example shows how to use `Get-LMResourceTag`.
 **Tools for PowerShell V5**
 **Example 1: Retrieves the tags and their values currently set on the specified function.**
 
-```
+```powershell
 Get-LMResourceTag -Resource "arn:aws:lambda:us-west-2:123456789012:function:MyFunction"
 ```
 **Output:**
@@ -241,7 +241,7 @@ The following code example shows how to use `Get-LMVersionsByFunction`.
 **Tools for PowerShell V5**
 **Example 1: This example returns the list of version specific configurations for each version of the Lambda Function.**
 
-```
+```powershell
 Get-LMVersionsByFunction -FunctionName "MylambdaFunction123"
 ```
 **Output:**
@@ -264,7 +264,7 @@ The following code example shows how to use `New-LMAlias`.
 **Tools for PowerShell V5**
 **Example 1: This example creates a New Lambda Alias for specified version and routing configuration to specify the percentage of invocation requests that it receives.**
 
-```
+```powershell
 New-LMAlias -FunctionName "MylambdaFunction123" -RoutingConfig_AdditionalVersionWeight @{Name="1";Value="0.6} -Description "Alias for version 4" -FunctionVersion 4 -Name "PowershellAlias"
 ```
 +  For API details, see [CreateAlias](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -277,7 +277,7 @@ The following code example shows how to use `Publish-LMFunction`.
 **Tools for PowerShell V5**
 **Example 1: This example creates a new C\# (dotnetcore1.0 runtime) function named MyFunction in AWS Lambda, providing the compiled binaries for the function from a zip file on the local file system (relative or absolute paths may be used). C\# Lambda functions specify the handler for the function using the designation AssemblyName::Namespace.ClassName::MethodName. You should replace the assembly name (without .dll suffix), namespace, class name and method name parts of the handler spec appropriately. The new function will have environment variables 'envvar1' and 'envvar2' set up from the provided values.**
 
-```
+```powershell
 Publish-LMFunction -Description "My C# Lambda Function" `
         -FunctionName MyFunction `
         -ZipFilename .\MyFunctionBinaries.zip `
@@ -308,7 +308,7 @@ VpcConfig        :
 ```
 **Example 2: This example is similar to the previous one except the function binaries are first uploaded to an Amazon S3 bucket (which must be in the same region as the intended Lambda function) and the resulting S3 object is then referenced when creating the function.**
 
-```
+```powershell
 Write-S3Object -BucketName amzn-s3-demo-bucket -Key MyFunctionBinaries.zip -File .\MyFunctionBinaries.zip
 Publish-LMFunction -Description "My C# Lambda Function" `
         -FunctionName MyFunction `
@@ -329,7 +329,7 @@ The following code example shows how to use `Publish-LMVersion`.
 **Tools for PowerShell V5**
 **Example 1: This example creates a version for the existing snapshot of Lambda Function Code**
 
-```
+```powershell
 Publish-LMVersion -FunctionName "MylambdaFunction123" -Description "Publishing Existing Snapshot of function code as a  new version through Powershell"
 ```
 +  For API details, see [PublishVersion](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -342,7 +342,7 @@ The following code example shows how to use `Remove-LMAlias`.
 **Tools for PowerShell V5**
 **Example 1: This example deletes the Lambda function Alias mentioned in the command.**
 
-```
+```powershell
 Remove-LMAlias -FunctionName "MylambdaFunction123" -Name "NewAlias"
 ```
 +  For API details, see [DeleteAlias](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -355,7 +355,7 @@ The following code example shows how to use `Remove-LMFunction`.
 **Tools for PowerShell V5**
 **Example 1: This example deletes a specific version of a Lambda function**
 
-```
+```powershell
 Remove-LMFunction -FunctionName "MylambdaFunction123" -Qualifier '3'
 ```
 +  For API details, see [DeleteFunction](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -368,7 +368,7 @@ The following code example shows how to use `Remove-LMFunctionConcurrency`.
 **Tools for PowerShell V5**
 **Example 1: This examples removes the Function Concurrency of the Lambda Function.**
 
-```
+```powershell
 Remove-LMFunctionConcurrency -FunctionName "MylambdaFunction123"
 ```
 +  For API details, see [DeleteFunctionConcurrency](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -381,7 +381,7 @@ The following code example shows how to use `Remove-LMPermission`.
 **Tools for PowerShell V5**
 **Example 1: This example removes the function policy for the specified StatementId of a Lambda Function.**
 
-```
+```powershell
 $policy =  Get-LMPolicy -FunctionName "MylambdaFunction123" -Select Policy | ConvertFrom-Json| Select-Object -ExpandProperty Statement
 Remove-LMPermission -FunctionName "MylambdaFunction123" -StatementId $policy[0].Sid
 ```
@@ -395,7 +395,7 @@ The following code example shows how to use `Remove-LMProvisionedConcurrencyConf
 **Tools for PowerShell V5**
 **Example 1: This example removes the Provisioned Concurrency Configuration for a specific Alias.**
 
-```
+```powershell
 Remove-LMProvisionedConcurrencyConfig -FunctionName "MylambdaFunction123" -Qualifier "NewAlias1"
 ```
 +  For API details, see [DeleteProvisionedConcurrencyConfig](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -408,12 +408,12 @@ The following code example shows how to use `Remove-LMResourceTag`.
 **Tools for PowerShell V5**
 **Example 1: Removes the supplied tags from a function. The cmdlet will prompt for confirmation before proceeding unless the -Force switch is specified. A single call is made to the service to remove the tags.**
 
-```
+```powershell
 Remove-LMResourceTag -Resource "arn:aws:lambda:us-west-2:123456789012:function:MyFunction" -TagKey "Washington","Oregon","California"
 ```
 **Example 2: Removes the supplied tags from a function. The cmdlet will prompt for confirmation before proceeding unless the -Force switch is specified. Once call to the service is made per supplied tag.**
 
-```
+```powershell
 "Washington","Oregon","California" | Remove-LMResourceTag -Resource "arn:aws:lambda:us-west-2:123456789012:function:MyFunction"
 ```
 +  For API details, see [UntagResource](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -426,7 +426,7 @@ The following code example shows how to use `Update-LMAlias`.
 **Tools for PowerShell V5**
 **Example 1: This example updates the Configuration of an existing Lambda function Alias. It updates the RoutingConfiguration value to shift 60% (0.6) of traffic to version 1**
 
-```
+```powershell
 Update-LMAlias -FunctionName "MylambdaFunction123" -Description " Alias for version 2" -FunctionVersion 2 -Name "newlabel1" -RoutingConfig_AdditionalVersionWeight @{Name="1";Value="0.6}
 ```
 +  For API details, see [UpdateAlias](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -439,12 +439,12 @@ The following code example shows how to use `Update-LMFunctionCode`.
 **Tools for PowerShell V5**
 **Example 1: Updates the function named 'MyFunction' with new content contained in the specified zip file. For a C\# .NET Core Lambda function the zip file should contain the compiled assembly.**
 
-```
+```powershell
 Update-LMFunctionCode -FunctionName MyFunction -ZipFilename .\UpdatedCode.zip
 ```
 **Example 2: This example is similar to the previous one but uses an Amazon S3 object containing the updated code to update the function.**
 
-```
+```powershell
 Update-LMFunctionCode -FunctionName MyFunction -BucketName amzn-s3-demo-bucket -Key UpdatedCode.zip
 ```
 +  For API details, see [UpdateFunctionCode](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -457,7 +457,7 @@ The following code example shows how to use `Update-LMFunctionConfiguration`.
 **Tools for PowerShell V5**
 **Example 1: This example updates the existing Lambda Function Configuration**
 
-```
+```powershell
 Update-LMFunctionConfiguration -FunctionName "MylambdaFunction123" -Handler "lambda_function.launch_instance" -Timeout 600 -Environment_Variable @{ "envvar1"="value";"envvar2"="value" } -Role arn:aws:iam::123456789101:role/service-role/lambda -DeadLetterConfig_TargetArn arn:aws:sns:us-east-1: 123456789101:MyfirstTopic
 ```
 +  For API details, see [UpdateFunctionConfiguration](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -470,7 +470,7 @@ The following code example shows how to use `Write-LMFunctionConcurrency`.
 **Tools for PowerShell V5**
 **Example 1: This example applies the concurrency settings for the Function as a whole.**
 
-```
+```powershell
 Write-LMFunctionConcurrency -FunctionName "MylambdaFunction123" -ReservedConcurrentExecution 100
 ```
 +  For API details, see [PutFunctionConcurrency](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -483,7 +483,7 @@ The following code example shows how to use `Write-LMProvisionedConcurrencyConfi
 **Tools for PowerShell V5**
 **Example 1: This example adds a provisioned concurrency configuration to a Function's Alias**
 
-```
+```powershell
 Write-LMProvisionedConcurrencyConfig -FunctionName "MylambdaFunction123" -ProvisionedConcurrentExecution 20 -Qualifier "NewAlias1"
 ```
 +  For API details, see [PutProvisionedConcurrencyConfig](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

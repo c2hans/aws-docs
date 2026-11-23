@@ -33,7 +33,7 @@ A `SUPER` expression or column.
 
 To check if `abc` is a `VARCHAR` using the IS\_VARCHAR function, use the following example.
 
-```
+```sql
 CREATE TABLE t(s SUPER);
 
 INSERT INTO t VALUES ('abc');

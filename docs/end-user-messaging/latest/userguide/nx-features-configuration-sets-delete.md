@@ -22,7 +22,7 @@ To delete a configuration set using the AWS End User Messaging console, follow t
 
 You can use the [delete-configuration-set](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/delete-configuration-set.html) command to delete a configuration set.
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 delete-configuration-set \
 > --configuration-set-name {{configurationSet}}
 ```

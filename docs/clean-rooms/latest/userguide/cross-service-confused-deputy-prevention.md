@@ -29,7 +29,7 @@ If you do not update your service role's confused deputy condition after adding 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

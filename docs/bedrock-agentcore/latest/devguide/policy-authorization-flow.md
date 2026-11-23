@@ -13,7 +13,7 @@ Amazon Bedrock AgentCore Gateway processes two key pieces of information from ea
 
 1.  **JWT Token** - Contains OAuth claims about the user:
 
-   ```
+   ```json
    {
      "sub": "12345678-1234-1234-1234-123456789012",
      "iss": "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_Vg2efaoGO",
@@ -26,7 +26,7 @@ Amazon Bedrock AgentCore Gateway processes two key pieces of information from ea
 
 1.  **MCP Tool Call Request** - The actual tool invocation:
 
-   ```
+   ```json
    {
      "jsonrpc": "2.0",
      "id": 1,
@@ -49,7 +49,7 @@ The Gateway extracts information from both sources and constructs a Cedar author
 
  **Complete Authorization Request:**
 
-```
+```json
 {
   "principal": "AgentCore::OAuthUser::\"12345678-1234-1234-1234-123456789012\"",
   "action": "AgentCore::Action::\"RefundTool___process_refund\"",
@@ -90,7 +90,7 @@ AgentCore::Gateway::"arn:aws:bedrock-agentcore:us-west-2:123456789012:gateway/re
 Context
 Contains the tool arguments:
 
-```
+```json
 {
   "input": {
     "orderId": "12345",
@@ -102,7 +102,7 @@ Contains the tool arguments:
 
  **Entity Store** - The JWT claims are stored as tags on the OAuthUser entity:
 
-```
+```json
 {
   "uid": {
     "type": "AgentCore::OAuthUser",
@@ -126,7 +126,7 @@ Contains the tool arguments:
 
 When a `x-amzn-bedrock-agentcore-policy-session-id` header is present, the Gateway includes the session context in the authorization request passed to the policy engine. The session context provides the accumulated action history for the current session. Temporal policy rules evaluate constraints over time using this history.
 
-```
+```json
 {
   "principal": "AgentCore::OAuthUser::\"12345678-1234-1234-1234-123456789012\"",
   "action": "AgentCore::Action::\"PaymentTool___transfer_funds\"",

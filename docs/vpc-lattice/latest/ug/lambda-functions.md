@@ -86,7 +86,7 @@ When you create or update a target group of type `LAMBDA`, you can specify the v
 
 **Example event: V2**
 
-```
+```json
 {
     "version": "2.0",
     "path": "/?query1=value1&query2=value2",
@@ -157,7 +157,7 @@ The time, in microseconds.<a name="event-structure-v1"></a>
 
 **Example event: V1**
 
-```
+```json
 {
     "raw_path": "{{/path/to/resource?query1=value1&query2=value2}}",
     "method": "GET|POST|HEAD|...",
@@ -179,7 +179,7 @@ The VPC Lattice service does not honor hop-by-hop headers, such as `Connection` 
 
 The following is an example response from a Lambda function:
 
-```
+```json
 {
     "isBase64Encoded": {{false}},
     "statusCode": {{200}},

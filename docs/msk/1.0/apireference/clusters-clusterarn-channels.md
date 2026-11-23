@@ -99,7 +99,7 @@ Enable CORS by returning correct headers
 #### POST schema
 <a name="clusters-clusterarn-channels-request-body-post-example"></a>
 
-```
+```json
 {
   "s3DestinationConfiguration": {
     "dataFreshnessInSeconds": integer,
@@ -194,7 +194,7 @@ Enable CORS by returning correct headers
 #### ListChannelsResponse schema
 <a name="clusters-clusterarn-channels-response-body-listchannelsresponse-example"></a>
 
-```
+```json
 {
   "channels": [
     {
@@ -213,7 +213,7 @@ Enable CORS by returning correct headers
 #### CreateChannelResponse schema
 <a name="clusters-clusterarn-channels-response-body-createchannelresponse-example"></a>
 
-```
+```json
 {
   "clusterOperationArn": "string",
   "channelArn": "string"
@@ -223,7 +223,7 @@ Enable CORS by returning correct headers
 #### Error schema
 <a name="clusters-clusterarn-channels-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

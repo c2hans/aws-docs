@@ -45,7 +45,7 @@ For more information, see [Amazon Cognito identity pools](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: Updates some of the Identity Pool properties, in this case the name of the Identity Pool.**
 
-```
+```powershell
 Update-CGIIdentityPool -IdentityPoolId us-east-1:0de2af35-2988-4d0b-b22d-EXAMPLEGUID1 -IdentityPoolName NewPoolName
 ```
 **Output:**
@@ -67,7 +67,7 @@ HttpStatusCode                 : OK
 **Tools for PowerShell V5**
 **Example 1: Updates some of the Identity Pool properties, in this case the name of the Identity Pool.**
 
-```
+```powershell
 Update-CGIIdentityPool -IdentityPoolId us-east-1:0de2af35-2988-4d0b-b22d-EXAMPLEGUID1 -IdentityPoolName NewPoolName
 ```
 **Output:**

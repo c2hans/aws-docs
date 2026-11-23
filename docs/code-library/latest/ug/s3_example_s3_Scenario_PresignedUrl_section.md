@@ -15,7 +15,7 @@ The following code examples show how to create a presigned URL for Amazon S3 and
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/#code-examples).
 Generate a presigned URL that can perform an Amazon S3 action for a limited time.
 
-```
+```csharp
     using System;
     using Amazon;
     using Amazon.S3;
@@ -85,7 +85,7 @@ Generate a presigned URL that can perform an Amazon S3 action for a limited time
 ```
 Generate a presigned URL and perform an upload using that URL.
 
-```
+```csharp
     using System;
     using System.IO;
     using System.Net.Http;
@@ -193,7 +193,7 @@ Generate a presigned URL and perform an upload using that URL.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/S3/Scenarios/S3_CreatePresignedPost#code-examples).
 Create and use presigned POST URLs for direct browser uploads.
 
-```
+```csharp
 /// <summary>
 /// Scenario demonstrating the complete workflow for presigned POST URLs:
 /// 1. Create an S3 bucket
@@ -491,7 +491,7 @@ public class CreatePresignedPostBasics
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 Generate a pre-signed URL to download an object.
 
-```
+```cpp
 //! Routine which demonstrates creating a pre-signed URL to download an object from an
 //! Amazon Simple Storage Service (Amazon S3) bucket.
 /*!
@@ -512,7 +512,7 @@ Aws::String AwsDoc::S3::generatePreSignedGetObjectUrl(const Aws::String &bucketN
 ```
 Download using libcurl.
 
-```
+```cpp
 static size_t myCurlWriteBack(char *buffer, size_t size, size_t nitems, void *userdata) {
     Aws::StringStream *str = (Aws::StringStream *) userdata;
 
@@ -575,7 +575,7 @@ bool AwsDoc::S3::getObjectWithPresignedObjectUrl(const Aws::String &presignedURL
 ```
 Generate a pre-signed URL to upload an object.
 
-```
+```cpp
 //! Routine which demonstrates creating a pre-signed URL to upload an object to an
 //! Amazon Simple Storage Service (Amazon S3) bucket.
 /*!
@@ -595,7 +595,7 @@ Aws::String AwsDoc::S3::generatePreSignedPutObjectUrl(const Aws::String &bucketN
 ```
 Upload using libcurl.
 
-```
+```cpp
 static size_t myCurlReadBack(char *buffer, size_t size, size_t nitems, void *userdata) {
     Aws::StringStream *str = (Aws::StringStream *) userdata;
 
@@ -703,7 +703,7 @@ bool AwsDoc::S3::PutStringWithPresignedObjectURL(const Aws::String &presignedURL
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 Create functions that wrap S3 presigning actions.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -783,7 +783,7 @@ func (presigner Presigner) PresignPostObject(ctx context.Context, bucketName str
 ```
 Run an interactive example that generates and uses presigned URLs to upload, download, and delete an S3 object.
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -952,7 +952,7 @@ func RunPresigningScenario(ctx context.Context, sdkConfig aws.Config, questioner
 ```
 Define an HTTP request wrapper used by the example to make HTTP requests.
 
-```
+```go
 // IHttpRequester abstracts HTTP requests into an interface so it can be mocked during
 // unit testing.
 type IHttpRequester interface {
@@ -1006,7 +1006,7 @@ The following shows three example of how to create presigned URLs and use the UR
  Generate a pre-signed URL for an object, then download it (GET request).
 Imports.
 
-```
+```java
 import com.example.s3.util.PresignUrlUtils;
 import org.slf4j.Logger;
 import software.amazon.awssdk.http.HttpExecuteRequest;
@@ -1039,7 +1039,7 @@ import java.util.UUID;
 ```
 Generate the URL.
 
-```
+```java
     /* Create a pre-signed URL to download an object in a subsequent GET request. */
     public String createPresignedGetUrl(String bucketName, String keyName) {
         try (S3Presigner presigner = S3Presigner.create()) {
@@ -1065,7 +1065,7 @@ Generate the URL.
 Download the object by using any one of the following three approaches.
 Use JDK `HttpURLConnection` (since v1.1) class to do the download.
 
-```
+```java
     /* Use the JDK HttpURLConnection (since v1.1) class to do the download. */
     public byte[] useHttpUrlConnectionToGet(String presignedUrlString) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(); // Capture the response body to a byte array.
@@ -1088,7 +1088,7 @@ Use JDK `HttpURLConnection` (since v1.1) class to do the download.
 ```
 Use JDK `HttpClient` (since v11) class to do the download.
 
-```
+```java
     /* Use the JDK HttpClient (since v11) class to do the download. */
     public byte[] useHttpClientToGet(String presignedUrlString) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(); // Capture the response body to a byte array.
@@ -1115,7 +1115,7 @@ Use JDK `HttpClient` (since v11) class to do the download.
 ```
 Use the AWS SDK for Java `SdkHttpClient` class to do the download.
 
-```
+```java
     /* Use the AWS SDK for Java SdkHttpClient class to do the download. */
     public byte[] useSdkHttpClientToGet(String presignedUrlString) {
 
@@ -1154,7 +1154,7 @@ Use the AWS SDK for Java `SdkHttpClient` class to do the download.
 Generate a pre-signed URL with metadata in headers for an upload, then upload a file (PUT request).
 Imports.
 
-```
+```java
 import com.example.s3.util.PresignUrlUtils;
 import org.slf4j.Logger;
 import software.amazon.awssdk.core.internal.sync.FileContentStreamProvider;
@@ -1191,7 +1191,7 @@ import java.util.UUID;
 ```
 Generate the URL.
 
-```
+```java
     /* Create a presigned URL to use in a subsequent PUT request */
     public String createPresignedUrl(String bucketName, String keyName, Map<String, String> metadata) {
         try (S3Presigner presigner = S3Presigner.create()) {
@@ -1219,7 +1219,7 @@ Generate the URL.
 Upload a file object by using any one of the following three approaches.
 Use the JDK `HttpURLConnection` (since v1.1) class to do the upload.
 
-```
+```java
     /* Use the JDK HttpURLConnection (since v1.1) class to do the upload. */
     public void useHttpUrlConnectionToPut(String presignedUrlString, File fileToPut, Map<String, String> metadata) {
         logger.info("Begin [{}] upload", fileToPut.toString());
@@ -1257,7 +1257,7 @@ Use the JDK `HttpURLConnection` (since v1.1) class to do the upload.
 ```
 Use the JDK `HttpClient` (since v11) class to do the upload.
 
-```
+```java
     /* Use the JDK HttpClient (since v11) class to do the upload. */
     public void useHttpClientToPut(String presignedUrlString, File fileToPut, Map<String, String> metadata) {
         logger.info("Begin [{}] upload", fileToPut.toString());
@@ -1282,7 +1282,7 @@ Use the JDK `HttpClient` (since v11) class to do the upload.
 ```
 Use the AWS for Java V2 `SdkHttpClient` class to do the upload.
 
-```
+```java
     /* Use the AWS SDK for Java V2 SdkHttpClient class to do the upload. */
     public void useSdkHttpClientToPut(String presignedUrlString, File fileToPut, Map<String, String> metadata) {
         logger.info("Begin [{}] upload", fileToPut.toString());
@@ -1315,7 +1315,7 @@ Use the AWS for Java V2 `SdkHttpClient` class to do the upload.
 Generate a pre-signed URL with query parameters for an upload, then upload a file (PUT request).
 Imports.
 
-```
+```java
 import com.example.s3.util.PresignUrlUtils;
 import org.slf4j.Logger;
 import software.amazon.awssdk.awscore.AwsRequestOverrideConfiguration;
@@ -1343,7 +1343,7 @@ import java.util.UUID;
 ```
 Generate the URL.
 
-```
+```java
     /**
      *  Creates a presigned URL to use in a subsequent HTTP PUT request. The code adds query parameters
      *  to the request instead of using headers. By using query parameters, you do not need to add the
@@ -1383,7 +1383,7 @@ Generate the URL.
 ```
 Use the AWS for Java V2 `SdkHttpClient` class to do the upload.
 
-```
+```java
     /**
      * Use the AWS SDK for Java V2 SdkHttpClient class to execute the PUT request. Since the
      * URL contains the query parameters, no headers are needed for metadata, SSE settings, or ACL settings.
@@ -1425,7 +1425,7 @@ Use the AWS for Java V2 `SdkHttpClient` class to do the upload.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Create a presigned URL to upload an object to a bucket.
 
-```
+```javascript
 import https from "node:https";
 
 import { XMLParser } from "fast-xml-parser";
@@ -1537,7 +1537,7 @@ export const main = async ({ bucketName, key, region }) => {
 ```
 Create a presigned URL to download an object from a bucket.
 
-```
+```javascript
 import { GetObjectCommand, S3Client } from "@aws-sdk/client-s3";
 import { fromIni } from "@aws-sdk/credential-providers";
 import { HttpRequest } from "@smithy/protocol-http";
@@ -1614,7 +1614,7 @@ export const main = async ({ bucketName, key, region }) => {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 Create a `GetObject` presigned request and use the URL to download an object.
 
-```
+```kotlin
 suspend fun getObjectPresigned(
     s3: S3Client,
     bucketName: String,
@@ -1638,7 +1638,7 @@ suspend fun getObjectPresigned(
 ```
 Create a `GetObject` presigned request with advanced options.
 
-```
+```kotlin
 suspend fun getObjectPresignedMoreOptions(
     s3: S3Client,
     bucketName: String,
@@ -1664,7 +1664,7 @@ suspend fun getObjectPresignedMoreOptions(
 ```
 Create a `PutObject` presigned request and use it to upload an object.
 
-```
+```kotlin
 suspend fun putObjectPresigned(
     s3: S3Client,
     bucketName: String,
@@ -1706,7 +1706,7 @@ suspend fun putObjectPresigned(
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 
-```
+```php
 namespace S3;
 use Aws\Exception\AwsException;
 use AwsUtilities\PrintableLineBreak;
@@ -2043,7 +2043,7 @@ class S3Service extends AWSServiceClass
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 Generate a presigned URL that can perform an S3 action for a limited time. Use the Requests package to make a request with the URL.
 
-```
+```python
 import argparse
 import logging
 import boto3
@@ -2126,7 +2126,7 @@ if __name__ == "__main__":
 ```
 Generate a presigned POST request to upload a file.
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -2170,7 +2170,7 @@ class BucketWrapper:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 require 'aws-sdk-s3'
 require 'net/http'
 
@@ -2219,7 +2219,7 @@ run_demo if $PROGRAM_NAME == __FILE__
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 Create presigning requests to GET S3 objects.
 
-```
+```rust
 /// Generate a URL for a presigned GET request.
 async fn get_object(
     client: &Client,
@@ -2244,7 +2244,7 @@ async fn get_object(
 ```
 Create presigning requests to PUT S3 objects.
 
-```
+```rust
 async fn put_object(
     client: &Client,
     bucket: &str,
@@ -2276,7 +2276,7 @@ async fn put_object(
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 Create presigned requests to GET S3 objects.
 
-```
+```sap-abap
     " iv_bucket_name is the bucket name
     " iv_key is the object name like "myfile.txt"
 

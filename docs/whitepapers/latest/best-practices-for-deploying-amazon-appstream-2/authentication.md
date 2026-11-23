@@ -67,7 +67,7 @@ The WorkSpaces Applications administration guide provides an example configurati
 **Example**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -42,7 +42,7 @@ You need to create a service client in your application to talk to an AWS servic
 
 If all configuration settings that you need are coming from external sources, you can create a service client with a simple method:
 
-```
+```java
 S3Client s3Client = S3Client.create();
 ```
 

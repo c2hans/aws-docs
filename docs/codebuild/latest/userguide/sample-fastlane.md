@@ -176,7 +176,7 @@ Once the project is created, ensure your CodeBuild project's service role has pe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

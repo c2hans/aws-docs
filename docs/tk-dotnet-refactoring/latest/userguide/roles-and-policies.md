@@ -36,7 +36,7 @@ Use the AWS Management Console to create roles and policies to use Toolkit for .
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -64,7 +64,7 @@ Use the AWS Management Console to create roles and policies to use Toolkit for .
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -95,7 +95,7 @@ Use the AWS Management Console to create roles and policies to use Toolkit for .
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -218,7 +218,7 @@ Edit the trust relationship to add the principal with the ARN of the user:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -362,7 +362,7 @@ For more information, see [IAM roles for tasks](https://docs.aws.amazon.com/Amaz
 
 To use Toolkit for .NET Refactoring with an AWS KMS key to encrypt AWS resources, the KMS key policy must include the following statement:
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {

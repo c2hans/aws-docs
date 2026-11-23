@@ -26,7 +26,7 @@ The following differences apply to AWS Signer:
 
   1. In your trust policy, you must set `signingAuthority` to `aws-us-gov-signer-ts`. For example:
 
-     ```
+     ```json
      {
         "version":"1.0",
         "trustPolicies":[

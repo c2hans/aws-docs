@@ -17,7 +17,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-capacityprovider-managedresourcetags-syntax.yaml"></a>
 
-```
+```yaml
 [Tags](#sam-capacityprovider-managedresourcetags-tags): {{Map}}
 ```
 
@@ -40,7 +40,7 @@ A map of key-value pairs to apply to the Amazon EC2 instances and other resource
 
 The following example applies an explicit set of tags to the Amazon EC2 instances that the capacity provider manages.
 
-```
+```yaml
 ManagedResourceTags:
   Tags:
     CostCenter: {{cc-1234}}

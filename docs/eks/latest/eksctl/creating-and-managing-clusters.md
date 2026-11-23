@@ -11,7 +11,7 @@ This topic covers how to create and delete EKS clusters using Eksctl. You can cr
 
 Create a simple cluster with the following command:
 
-```
+```sh
 eksctl create cluster
 ```
 
@@ -30,7 +30,7 @@ You can create a cluster using a config file instead of flags.
 
 First, create `cluster.yaml` file:
 
-```
+```yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
@@ -63,7 +63,7 @@ This will create a cluster as described.
 
 If you needed to use an existing VPC, you can use a config file like this:
 
-```
+```yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 

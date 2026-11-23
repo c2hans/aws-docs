@@ -106,7 +106,7 @@ The following example shows a response object from a Node.js function. The respo
 
 **Example index.mjs – Proxy integration response object (Node.js)**
 
-```
+```json
 var response = {
       "statusCode": 200,
       "headers": {
@@ -150,7 +150,7 @@ When you add an API to your function by using the Lambda console, using the API 
 **Example function policy**
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "default",

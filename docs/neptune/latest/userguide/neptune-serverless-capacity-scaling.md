@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-serverl
 
 Setting up a Neptune Serverless DB cluster is similar to setting up a normal provisioned cluster, with additional configuration for minimum and maximum units for scaling, and with the instance type set to `db.serverless`. The scaling configuration is defined in Neptune Capacity Units (NCUs), each of which consists of 2 GiB (gibibyte) of memory (RAM) along with associated virtual processor capacity (vCPU) and networking. It is set as a part of a `ServerlessV2ScalingConfiguration` object, represented in JSON like this:
 
-```
+```json
 "ServerlessV2ScalingConfiguration": {
   "MinCapacity": {{(minimum NCUs, a floating-point number such as   1.0)}},
   "MaxCapacity": {{(maximum NCUs, a floating-point number such as 128.0)}}

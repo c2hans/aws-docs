@@ -44,7 +44,7 @@ For more information, see [API Gateway REST APIs](https://docs.aws.amazon.com/ap
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/api-gateway#code-examples).
 
-```
+```python
 class ApiGatewayToService:
     """
     Encapsulates Amazon API Gateway functions that are used to create a REST API that
@@ -95,7 +95,7 @@ class ApiGatewayToService:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/apigateway#code-examples).
 Displays the Amazon API Gateway REST APIs in the Region.
 
-```
+```rust
 async fn show_apis(client: &Client) -> Result<(), Error> {
     let resp = client.get_rest_apis().send().await?;
 
@@ -122,7 +122,7 @@ async fn show_apis(client: &Client) -> Result<(), Error> {
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/agw#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_agw->getrestapis( ).
         DATA(lt_apis) = oo_result->get_items( ).

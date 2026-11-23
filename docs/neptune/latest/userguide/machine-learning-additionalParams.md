@@ -10,7 +10,7 @@ The export process cannot automatically infer which node and edge properties sho
 
 For property-graph data, the top-level structure of `additionalParams` in an export request might look like this:
 
-```
+```json
 {
   "command": "export-pg",
   "outputS3Path": "s3://{{(your Amazon S3 bucket)}}/neptune-export",
@@ -30,7 +30,7 @@ For property-graph data, the top-level structure of `additionalParams` in an exp
 
 For RDF data, its top-level structure might look like this:
 
-```
+```json
 {
   "command": "export-rdf",
   "outputS3Path": "s3://{{(your Amazon S3 bucket)}}/neptune-export",
@@ -49,7 +49,7 @@ For RDF data, its top-level structure might look like this:
 
 You can also supply multiple export configurations, using the `jobs` field:
 
-```
+```json
 {
   "command": "export-pg",
   "outputS3Path": "s3://{{(your Amazon S3 bucket)}}/neptune-export",

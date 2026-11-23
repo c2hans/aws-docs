@@ -9,7 +9,7 @@ When the same action (the same Action Identifier) is run multiple times, this bl
 ## Parameter object
 <a name="loop-parameter"></a>
 
-```
+```json
 {
     "LoopCount": Number of times to loop, must be between 0 and 100 (inclusive). Must either be fully static or fully dynamic.
 }

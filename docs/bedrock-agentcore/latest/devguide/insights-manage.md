@@ -20,7 +20,7 @@ For online evaluation insights, `applicationName` is the agent’s OpenTelemetry
 
 The following AWS CLI examples list Agent Insights across the account, for an application, or for a batch evaluation. Replace `MyAgent.DEFAULT` and `<batch-evaluation-id>` with your application name and batch evaluation ID:
 
-```
+```bash
 # List active Agent Insights across the account
 aws bedrock-agentcore list-agent-insights \
     --region us-west-2
@@ -40,7 +40,7 @@ aws bedrock-agentcore list-agent-insights \
 
 The following AgentCore CLI commands list the same Agent Insights:
 
-```
+```bash
 agentcore eval insight list --region us-west-2
 
 agentcore eval insight list --application-name MyAgent.DEFAULT \
@@ -56,7 +56,7 @@ agentcore eval insight list --batch-evaluation-id <batch-evaluation-id> --region
 
 The following Python example reads one Agent Insight. Replace the `applicationName` and `agentInsightId` values with values returned by `ListAgentInsights`:
 
-```
+```python
 import boto3
 
 client = boto3.client("bedrock-agentcore", region_name="us-west-2")
@@ -80,7 +80,7 @@ Generated fields for online evaluation insights can change as later results cont
 
 The following AgentCore CLI command gets the details of one Agent Insight:
 
-```
+```bash
 agentcore eval insight get --application-name MyAgent.DEFAULT \
     --id <agent-insight-id> --region us-west-2
 ```
@@ -92,7 +92,7 @@ When you archive an Agent Insight, it remains available but moves out of the def
 
 The following AWS CLI commands archive and restore an Agent Insight. Replace the application name and Agent Insight ID with values returned by `ListAgentInsights`:
 
-```
+```bash
 # Archive
 aws bedrock-agentcore update-agent-insight \
     --application-name "MyAgent.DEFAULT" \
@@ -112,7 +112,7 @@ aws bedrock-agentcore update-agent-insight \
 
 The following AgentCore CLI commands archive and restore an Agent Insight:
 
-```
+```bash
 agentcore eval insight update --application-name MyAgent.DEFAULT \
     --id <agent-insight-id> --archive-status ARCHIVED --region us-west-2
 

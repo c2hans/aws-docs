@@ -18,7 +18,7 @@ You should already have created an Amazon Elastic Compute Cloud (Amazon EC2) ins
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm register-target-with-maintenance-window \
        --window-id "{{mw-0c50858d01EXAMPLE}}" \
        --resource-type "INSTANCE" \
@@ -28,7 +28,7 @@ You should already have created an Amazon Elastic Compute Cloud (Amazon EC2) ins
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm register-target-with-maintenance-window ^
        --window-id "{{mw-0c50858d01EXAMPLE}}" ^
        --resource-type "INSTANCE" ^
@@ -50,7 +50,7 @@ You should already have created an Amazon Elastic Compute Cloud (Amazon EC2) ins
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm describe-maintenance-window-targets \
        --window-id "{{mw-0c50858d01EXAMPLE}}"
    ```
@@ -58,7 +58,7 @@ You should already have created an Amazon Elastic Compute Cloud (Amazon EC2) ins
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm describe-maintenance-window-targets ^
        --window-id "{{mw-0c50858d01EXAMPLE}}"
    ```

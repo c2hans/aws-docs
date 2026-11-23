@@ -171,7 +171,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-custom-stack-from-cloudformation-template-update-ex-min"></a>
 
-```
+```json
 {
   "StackId": "stack-kiwonebfnadq08sol",
   "VpcId": "vpc-01234567890abcdef",
@@ -182,6 +182,6 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-custom-stack-from-cloudformation-template-update-ex-max"></a>
 
-```
+```json
 Example not available.
 ```

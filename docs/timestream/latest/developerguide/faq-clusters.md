@@ -14,7 +14,7 @@ Amazon Timestream for InfluxDB 3 offers instance types ranging from `db.influx.m
 **How do I create an InfluxDB 3 cluster?**
 You can create a cluster using the AWS Management Console, the AWS CLI, or the Amazon Timestream API. At minimum, you need to specify a cluster name, instance type, VPC subnet IDs, and security group IDs. For example, using the AWS CLI:
 
-```
+```python
 aws timestream-influxdb create-db-cluster \
   --name "my-cluster" \
   --db-instance-type db.influx.2xlarge \

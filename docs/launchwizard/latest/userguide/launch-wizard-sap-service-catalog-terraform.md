@@ -17,7 +17,7 @@ The Terraform resource named [`aws_servicecatalog_product`](https://registry.ter
 
 The following example Terraform script launches a single node HANA database instance with a single node HANA product (`prod-abc1234546`) created with Launch Wizard using the product version ID (`pa-xyz12345`). In this example, the hostname for HANA and the SID for HANA DB are passed to override the defaults, and the remaining parameters are set to the defaults in the AWS Service Catalog product.
 
-```
+```yaml
 terraform {
   required_providers {
     aws = {

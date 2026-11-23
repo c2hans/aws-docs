@@ -100,7 +100,7 @@ aws globalaccelerator withdraw-byoip-cidr
     --cidr 203.0.113.25/24
 ```
 
-```
+```json
 {
     "ByoipCidr": {
         "Cidr": "203.0.113.25/24",

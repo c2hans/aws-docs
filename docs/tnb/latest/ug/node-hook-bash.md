@@ -9,7 +9,7 @@ Defines an AWS HookDefinition in `bash`.
 ## Syntax
 <a name="hookdefinition-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.HookDefinition.Bash:
   properties:
     implementation: String
@@ -52,7 +52,7 @@ Type: String
 ## Example
 <a name="hookdefinition-example"></a>
 
-```
+```yaml
 SampleHookScript:
   type: tosca.nodes.AWS.HookDefinition.Bash
   properties:

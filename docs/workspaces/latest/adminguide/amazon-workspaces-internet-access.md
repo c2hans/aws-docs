@@ -17,7 +17,7 @@ With any of these options, you must ensure that the security group for your Work
 **Amazon Linux extras library**
 If you are using the Amazon Linux repository, your Amazon Linux WorkSpaces must either have internet access or you must configure VPC endpoints to this repository and to the main Amazon Linux repository. For more information, see the *Example: Enabling Access to the Amazon Linux AMI Repositories* section in [Endpoints for Amazon S3](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-s3.html). The Amazon Linux AMI repositories are Amazon S3 buckets in each Region. If you want instances in your VPC to access the repositories through an endpoint, create an endpoint policy that enables access to these buckets. The following policy allows access to the Amazon Linux repositories.
 
-```
+```json
 {
   "Statement": [
     {

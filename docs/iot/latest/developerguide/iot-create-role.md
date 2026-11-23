@@ -14,7 +14,7 @@ Use IAM roles to control the AWS resources to which each rule has access. Before
 1. Save the following trust policy document, which grants AWS IoT permission to assume the role, to a file named `iot-role-trust.json`.
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -45,7 +45,7 @@ Use IAM roles to control the AWS resources to which each rule has access. Before
 
    The output of this command looks like the following:
 
-   ```
+   ```JSON
    {
    	"Role": {
    		"AssumeRolePolicyDocument": "url-encoded-json",
@@ -61,7 +61,7 @@ Use IAM roles to control the AWS resources to which each rule has access. Before
 1. Save the following JSON into a file named `my-iot-policy.json`.
 ****
 
-   ```
+   ```json
    {
    	"Version":"2012-10-17",
    	"Statement": [
@@ -86,7 +86,7 @@ Use IAM roles to control the AWS resources to which each rule has access. Before
 
    The output of the [create-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/create-policy.html) command contains the ARN of the policy. Attach the policy to a role.
 
-   ```
+   ```JSON
    {
    	"Policy": {
    		"PolicyName": "my-iot-policy",
@@ -159,7 +159,7 @@ The following examples restrict inbound traffic to the `us-east-1` range. Replac
 
 An API Gateway resource policy that allows the rules engine and denies everything else:
 
-```
+```JSON
 {
 	"Version": "2012-10-17",
 	"Statement": [

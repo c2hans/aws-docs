@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 
 1. Clone the repository and change to its root directory.
 
-   ```
+   ```bash
    $ git clone https://github.com/aws-solutions-library-samples/account-assessment-for-aws-organizations.git
    $ cd account-assessment-for-aws-organizations
    ```
 
 1. Set the deployment values. Use a globally unique value for `DIST_OUTPUT_BUCKET`. Do not include the Region suffix in this value.
 
-   ```
+   ```bash
    $ export AWS_REGION=<REGION>
    $ export PROFILE_HUB=<HUB_PROFILE>
    $ export PROFILE_ORG_MGMT=<ORG_MGMT_PROFILE>
@@ -37,7 +37,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 
 1. Create the Regional staging bucket in the Hub account.
 
-   ```
+   ```bash
    $ aws s3 mb "s3://${ASSET_BUCKET_NAME}" \
        --region "${AWS_REGION}" \
        --profile "${PROFILE_HUB}"
@@ -45,7 +45,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 
 1. Build the Lambda package, web UI, and AWS CDK application.
 
-   ```
+   ```bash
    $ cd deployment
    $ chmod +x build-s3-dist.sh build-lambdas.sh
    $ ./build-s3-dist.sh \
@@ -56,7 +56,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 
 1. Upload the web UI assets to the Regional staging bucket.
 
-   ```
+   ```bash
    $ aws s3 cp deployment/regional-s3-assets/webui/ \
        "s3://${ASSET_BUCKET_NAME}/${SOLUTION_TRADEMARKEDNAME}/${SOLUTION_VERSION}/webui/" \
        --recursive \
@@ -65,14 +65,14 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 
 1. Install the AWS CDK application dependencies.
 
-   ```
+   ```bash
    $ cd source/infra
    $ npm ci
    ```
 
 1. Bootstrap each target environment. You only need to bootstrap each account and Region once.
 
-   ```
+   ```bash
    $ npm run cdk -- bootstrap "aws://${HUB_ACCOUNT_ID}/${AWS_REGION}" \
        --profile "${PROFILE_HUB}"
    $ npm run cdk -- bootstrap "aws://${MANAGEMENT_ACCOUNT_ID}/${AWS_REGION}" \

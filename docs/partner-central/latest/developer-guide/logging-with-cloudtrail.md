@@ -24,7 +24,7 @@ The AWS Partner Central API Reference was restructured. For more information abo
 
  The following example shows a CloudTrail log entry that demonstrates the `ListOpportunities` action on AWS Partner Central:
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

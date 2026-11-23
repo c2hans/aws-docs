@@ -219,7 +219,7 @@ pip install boto3
 ------
 #### [ Responses API ]
 
-```
+```python
 from aws_bedrock_token_generator import provide_token
 from openai import OpenAI
 
@@ -239,7 +239,7 @@ print(resp.output_text)
 ------
 #### [ Converse API ]
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-runtime', region_name='us-west-2')
@@ -258,7 +258,7 @@ print(response)
 ------
 #### [ Invoke API ]
 
-```
+```python
 import json
 import boto3
 

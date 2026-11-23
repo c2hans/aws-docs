@@ -35,19 +35,19 @@ To set up the package structure and install the client packages:
 
 1. Run the following command to create a default `package.json` file:
 
-   ```
+   ```sh
    npm init -y
    ```
 
 1. Run the following command to install the Amazon S3 client package:
 
-   ```
+   ```sh
    npm i @aws-sdk/client-s3
    ```
 
 1. Add `"type": "module"` to the `package.json` file. This tells Node.js to use modern ESM syntax. The final `package.json` should look similar to the following:
 
-   ```
+   ```javascript
    {
      "name": "example-javascriptv3-get-started-node",
      "version": "1.0.0",
@@ -70,7 +70,7 @@ To set up the package structure and install the client packages:
 
 Add the following code to a file named `index.js` in the `nodegetstarted` folder.
 
-```
+```javascript
 // This is used for getting user input.
 import { createInterface } from "node:readline/promises";
 

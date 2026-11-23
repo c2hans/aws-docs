@@ -93,7 +93,7 @@ To deploy a custom model for on-demand inference, use the [CreateCustomModelDepl
 
 The following code shows how to use the AWS SDK for Python (Boto3) to deploy a custom model.
 
-```
+```python
 def create_custom_model_deployment(bedrock_client):
     """Create a custom model deployment
     Args:
@@ -181,7 +181,7 @@ aws bedrock delete-custom-model-deployment \
 
 To delete a custom model deployment programmatically, use the [DeleteCustomModelDeployment](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteCustomModelDeployment.html) API operation with the deployment's Amazon Resource Name (ARN) or name. The following code shows how to use the SDK for Python (Boto3) to delete a custom model deployment.
 
-```
+```python
 def delete_custom_model_deployment(bedrock_client):
     """Delete a custom model deployment
 

@@ -10,23 +10,25 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-remove-a
 +  The product will be removed from AWS Marketplace search and discovery tools.
 +  Subscribe functionality will be disabled.
 +  The product details page remains accessible via direct URL.
-+  Current subscribers retain access until they cancel their subscription.
++  Existing subscribers keep access, but they can't renew contracts from private offers.
 +  AWS Marketplace notifies current buyers about the removal.
 
-**To remove your machine learning product:**
+**To remove your machine learning product**
 
-1.  Sign in to your seller account in the [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home).
+1. Open the [**Products and services**](https://console.aws.amazon.com/partnercentral/products) page in AWS Partner Central, and sign in to your seller account.
 
-1.  Go to the **Machine learning product** page and select your product.
+1. Choose the product.
 
-1.  Choose **Request changes**, select **Update product visibility**, and then select **Restricted**.
+1. Choose **Edit visibility**.
 
-1.  (Optional) Enter a replacement product ID.
+1. In the **Update listing visibility** dialog box, under **Change to**, choose **Restricted**.
 
-1.  Review the changes and then choose **Submit**.
+1. (Optional) For **Replacement product ID**, enter the ID of the product that existing subscribers move to when their contract ends.
 
- The product's visibility changes to **Restricted** as soon as your request succeeds. There's no waiting period and no review. You can monitor your request from the **Requests** tab of the **Machine learning** products page. For more information on statuses, see [Machine learning product status](ml-product-lifecycle.md#ml-product-status).
+1. Choose **Update visibility**.
 
- To make a **Restricted** product available again, select the product, choose **Request changes**, select **Update product visibility**, and then select **Public**. The AWS Marketplace Seller Operations team might review your request to make the product Public.
+Your change request appears on the product's **Change history** tab as **Restrict product**. Its status moves from **Preparing** to **Applying**, and then to **Succeeded** or **Failed**. To see why a request failed, choose the request name. After the request succeeds, the product stays on the **Products and services** page with **Restricted** visibility.
 
- If you have questions about removing products, contact the [AWS Marketplace Seller Operations](https://aws.amazon.com/marketplace/management/contact-us/) team.
+There's no waiting period. To make a **Restricted** product available again, choose **Edit visibility**, choose **Public**, and then choose **Update visibility**. AWS Marketplace might review the request before the product is **Public** again.
+
+ If you have questions about removing products, contact the AWS Marketplace Seller Operations team on the [AWS Partner Central and Marketplace Support page](https://us-east-1.console.aws.amazon.com/partnercentral/support?region=us-east-1) in the AWS Partner Central console.

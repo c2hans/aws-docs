@@ -13,7 +13,7 @@ The default `AmazonDataZoneGlueAccess-<region>-<domainId>` role has the followin
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

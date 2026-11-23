@@ -22,7 +22,7 @@ Use of Amazon Polly is subject to the [AWS Service Terms ](https://aws.amazon.co
 
 The following example shows a typical use of the `SpeakAndGetDigits` action:
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions":[
@@ -170,7 +170,7 @@ The following example shows a typical use of the `SpeakAndGetDigits` action:
 
 The following example shows a typical `ACTION_SUCCESSFUL` event.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": 3,
@@ -214,7 +214,7 @@ The following example shows a typical `ACTION_SUCCESSFUL` event.
 
 The following example shows a typical `ACTION_FAILED` event.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence":2,

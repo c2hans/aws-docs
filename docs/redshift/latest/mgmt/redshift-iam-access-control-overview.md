@@ -61,7 +61,7 @@ You can assign permissions by attaching polices to an IAM role and then assignin
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -144,7 +144,7 @@ Use the following IAM policy to let a user modify an Amazon Redshift cluster onl
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -173,7 +173,7 @@ Use the following IAM policy to let a user create an Amazon Redshift cluster onl
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="listtagsforresource-get-cli"></a>
 
-```
+```bash
 aws greengrass list-tags-for-resource  \
   [--cli-input-json <value>] \
   [--generate-cli-skeleton]
@@ -36,7 +36,7 @@ type: string
 HTTP Status Code 200: OK.
  [ tags](definitions-tags.md)
 
-```
+```json
 {
   "tags": {
       "keyName0": "value0",
@@ -54,7 +54,7 @@ additionalProperties: The key-value pair for the resource tag. Type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

@@ -91,7 +91,7 @@ Creates a file group that defines a logical collection of file name patterns. Th
 
 1. Create a file group for text files.
 
-   ```
+   ```powershell
    Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
        New-FSxFSRMFileGroup -Name "My Text Files" -IncludePattern "*.txt"
    }
@@ -99,7 +99,7 @@ Creates a file group that defines a logical collection of file name patterns. Th
 
 1. Create a file group for source code with include and exclude patterns.
 
-   ```
+   ```powershell
    $includePatterns = @("*.cpp", "*.h", "*.cs", "*.py")
    $excludePatterns = @("*.tmp", "*.bak")
 
@@ -121,7 +121,7 @@ Retrieves one or more file groups from your file system. File groups define coll
 
 1. Retrieve all file groups on the file system.
 
-   ```
+   ```powershell
    Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
        Get-FSxFSRMFileGroup
    }
@@ -140,7 +140,7 @@ Removes one or more file groups from your file system. After removal, the file g
 
 1. Remove a single file group.
 
-   ```
+   ```powershell
    Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
        Remove-FSxFSRMFileGroup -Name "My Text Files" -PassThru
    }
@@ -162,7 +162,7 @@ Modifies the properties of existing file groups.
 
 1. Update the description and patterns for a file group.
 
-   ```
+   ```powershell
    $includePatterns = @("*.docx", "*.pdf", "*.rtf")
    $excludePatterns = @("~$*", "*.tmp")
 

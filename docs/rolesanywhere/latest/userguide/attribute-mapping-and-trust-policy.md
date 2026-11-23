@@ -15,7 +15,7 @@ The following example shows trust policies that add a condition based on the `Is
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -53,7 +53,7 @@ If a profile is used with an Attribute Mapping field that lacks `specifier: CN` 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -88,7 +88,7 @@ Likewise, if the condition is `StringNotEquals`, the condition will evaluate to 
 
 Having the Attribute Mapping field provided below in a profile, the `StringEquals` condition for `x509Issuer/CN` will assess to `false`, or the `StringNotEquals` condition will assess to `true`.
 
-```
+```json
 "attributeMappings": [
   {
     "mappingRules": [

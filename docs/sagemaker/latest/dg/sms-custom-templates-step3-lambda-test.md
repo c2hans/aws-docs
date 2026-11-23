@@ -72,7 +72,7 @@ REPORT RequestId: cd117d38-8365-4e1a-bffb-0dcd631a878f	Duration: 0.42 ms	Billed 
 
 In this response, we can see the Lambda function's output matches the required pre-annotation response syntax:
 
-```
+```json
 {'taskInput': {'taskObject': 's3://sagemakerexample/object_to_annotate.jpg'}, 'isHumanAnnotationRequired': 'true'}
 ```
 

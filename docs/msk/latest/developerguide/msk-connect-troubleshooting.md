@@ -28,7 +28,6 @@ Here are some reasons why you might not be able to restart a connector:
 + The connector is not in the `RUNNING` state (for example, it is `CREATING`, `UPDATING`, or `DELETING`).
 + Another lifecycle operation is already in progress on the connector.
 + You specified `--only-failed-tasks` on a connector using Amazon MSK version earlier than 3.7 (this feature requires version 3.7 or later).
-+ The connector was created before the restart capability was available. This feature is currently supported only for newly created connectors.
 
 **Connector pause or resume operation reaches a failed state**
 A pause operation that reaches the `PAUSE_FAILED` state, or a resume operation that reaches the `RESUME_FAILED` state, does not always leave your connector unusable, and only some failures can be retried. Diagnose the failure as follows:

@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/services-sqs.htm
 
 Install the Amazon SQS client before you run the examples in this section.
 
-```
+```bash
 python -m pip install aws-sdk-sqs
 ```
 
@@ -23,13 +23,13 @@ Configure an AWS Region and credentials before you run the examples. For more in
 
  **Imports**
 
-```
+```python
 from aws_sdk_sqs import SQSClient, SQSConfig
 ```
 
  **Code**
 
-```
+```python
 def create_client() -> SQSClient:
     config = SQSConfig.resolve()
     return SQSClient(config=config)

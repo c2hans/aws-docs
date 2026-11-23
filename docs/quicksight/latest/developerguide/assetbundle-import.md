@@ -37,7 +37,7 @@ For more information about the `StartAssetBundleImportJob` operation, see [Start
 
 When you make a `StartAssetBundleImportJob` API call, provide an override parameter for the VPC connection that's configured to your Quick Sight account. You can find the `OverrideParameters` value in the asset bundle file that was created when the asset was exported. The following example shows an `OverrideParameters` structure that uses the `PrefixForAllResources` value.
 
-```
+```json
 "OverrideParameters": {
   "VPCConnections": [
     {

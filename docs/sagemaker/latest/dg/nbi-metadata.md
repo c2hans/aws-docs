@@ -11,7 +11,7 @@ The `resource-metadata.json` file can be modified with root access.
 
 The `resource-metadata.json` file has the following structure:
 
-```
+```json
 {
     "ResourceArn": "{{NotebookInstanceArn}}",
     "ResourceName": "{{NotebookInstanceName}}"
@@ -20,7 +20,7 @@ The `resource-metadata.json` file has the following structure:
 
 You can use this metadata from within the notebook instance to get other information about the notebook instance. For example, the following commands get the tags associated with the notebook instance:
 
-```
+```sh
 NOTEBOOK_ARN=$(jq '.ResourceArn'
             /opt/ml/metadata/resource-metadata.json --raw-output)
 aws sagemaker list-tags --resource-arn $NOTEBOOK_ARN
@@ -28,7 +28,7 @@ aws sagemaker list-tags --resource-arn $NOTEBOOK_ARN
 
 The output looks like the following:
 
-```
+```sh
 {
     "Tags": [
         {

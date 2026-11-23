@@ -22,7 +22,7 @@ For information on constructing event patterns that enable rules to match AWS Cl
 
 Below are the detail fields for the `Analysis Template Created` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Analysis Template Created"]
@@ -34,7 +34,7 @@ Below are the detail fields for the `Analysis Template Created` event.
 
 Below are the detail fields for the `Analysis Template Updated` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Analysis Template Updated"]
@@ -46,7 +46,7 @@ Below are the detail fields for the `Analysis Template Updated` event.
 
 Below are the detail fields for the `Analysis Template Deleted` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Analysis Template Deleted"]
@@ -58,7 +58,7 @@ Below are the detail fields for the `Analysis Template Deleted` event.
 
 Below are the detail fields for the `Collaboration Created` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Collaboration Created"]
@@ -70,7 +70,7 @@ Below are the detail fields for the `Collaboration Created` event.
 
 Below are the detail fields for the `Collaboration Updated` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Collaboration Updated"]
@@ -82,7 +82,7 @@ Below are the detail fields for the `Collaboration Updated` event.
 
 Below are the detail fields for the `Collaboration Change Request Created` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Collaboration Change Request Created"]
@@ -94,7 +94,7 @@ Below are the detail fields for the `Collaboration Change Request Created` event
 
 Below are the detail fields for the `Collaboration Change Request Approved` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Collaboration Change Request Approved"]
@@ -106,7 +106,7 @@ Below are the detail fields for the `Collaboration Change Request Approved` even
 
 Below are the detail fields for the `Collaboration Change Request Cancelled` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Collaboration Change Request Cancelled"]
@@ -118,7 +118,7 @@ Below are the detail fields for the `Collaboration Change Request Cancelled` eve
 
 Below are the detail fields for the `Collaboration Change Request Committed` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Collaboration Change Request Committed"]
@@ -130,7 +130,7 @@ Below are the detail fields for the `Collaboration Change Request Committed` eve
 
 Below are the detail fields for the `Configured Table Association Created` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Configured Table Association Created"]
@@ -142,7 +142,7 @@ Below are the detail fields for the `Configured Table Association Created` event
 
 Below are the detail fields for the `Configured Table Association Updated` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Configured Table Association Updated"]
@@ -154,7 +154,7 @@ Below are the detail fields for the `Configured Table Association Updated` event
 
 Below are the detail fields for the `Configured Table Association Deleted` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Configured Table Association Deleted"]
@@ -166,7 +166,7 @@ Below are the detail fields for the `Configured Table Association Deleted` event
 
 Below are the detail fields for the `Configured Table Association Analysis Rule Created` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Configured Table Association Analysis Rule Created"]
@@ -178,7 +178,7 @@ Below are the detail fields for the `Configured Table Association Analysis Rule 
 
 Below are the detail fields for the `Configured Table Association Analysis Rule Updated` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Configured Table Association Analysis Rule Updated"]
@@ -190,7 +190,7 @@ Below are the detail fields for the `Configured Table Association Analysis Rule 
 
 Below are the detail fields for the `Configured Table Association Analysis Rule Deleted` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Configured Table Association Analysis Rule Deleted"]
@@ -202,7 +202,7 @@ Below are the detail fields for the `Configured Table Association Analysis Rule 
 
 Below are the detail fields for the `Id Mapping Table Created` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Id Mapping Table Created"]
@@ -214,7 +214,7 @@ Below are the detail fields for the `Id Mapping Table Created` event.
 
 Below are the detail fields for the `Id Mapping Table Updated` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Id Mapping Table Updated"]
@@ -226,7 +226,7 @@ Below are the detail fields for the `Id Mapping Table Updated` event.
 
 Below are the detail fields for the `Id Mapping Table Deleted` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Id Mapping Table Deleted"]
@@ -238,7 +238,7 @@ Below are the detail fields for the `Id Mapping Table Deleted` event.
 
 Below are the detail fields for the `Id Namespace Association Created` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Id Namespace Association Created"]
@@ -250,7 +250,7 @@ Below are the detail fields for the `Id Namespace Association Created` event.
 
 Below are the detail fields for the `Id Namespace Association Updated` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Id Namespace Association Updated"]
@@ -274,7 +274,7 @@ When a collaboration is deleted, the event is captured in the Id Namespace Assoc
 
 Below are the detail fields for the `Id Namespace Association Deleted` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Id Namespace Association Deleted"]
@@ -286,7 +286,7 @@ Below are the detail fields for the `Id Namespace Association Deleted` event.
 
 Below are the detail fields for the `Invited To Collaboration` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Invited To Collaboration"]
@@ -298,7 +298,7 @@ Below are the detail fields for the `Invited To Collaboration` event.
 
 Below are the detail fields for the `Membership Created` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Membership Created"]
@@ -310,7 +310,7 @@ Below are the detail fields for the `Membership Created` event.
 
 Below are the detail fields for the `Membership Updated` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Membership Updated"]
@@ -322,7 +322,7 @@ Below are the detail fields for the `Membership Updated` event.
 
 Below are the detail fields for the `Membership Deleted` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Membership Deleted"]
@@ -334,7 +334,7 @@ Below are the detail fields for the `Membership Deleted` event.
 
 Below are the detail fields for the `Protected Job Submitted` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Protected Job Submitted"]
@@ -346,7 +346,7 @@ Below are the detail fields for the `Protected Job Submitted` event.
 
 Below are the detail fields for the `Protected Job Started` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Protected Job Started"]
@@ -358,7 +358,7 @@ Below are the detail fields for the `Protected Job Started` event.
 
 Below are the detail fields for the `Protected Job Cancelling` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Protected Job Cancelling"]
@@ -370,7 +370,7 @@ Below are the detail fields for the `Protected Job Cancelling` event.
 
 Below are the detail fields for the `Protected Job Cancelled` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Protected Job Cancelled"]
@@ -382,7 +382,7 @@ Below are the detail fields for the `Protected Job Cancelled` event.
 
 Below are the detail fields for the `Protected Job Succeeded` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Protected Job Succeeded"]
@@ -394,7 +394,7 @@ Below are the detail fields for the `Protected Job Succeeded` event.
 
 Below are the detail fields for the `Protected Job Failed` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Protected Job Failed"]
@@ -406,7 +406,7 @@ Below are the detail fields for the `Protected Job Failed` event.
 
 Below are the detail fields for the `Protected Query Submitted` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Protected Query Submitted"]
@@ -418,7 +418,7 @@ Below are the detail fields for the `Protected Query Submitted` event.
 
 Below are the detail fields for the `Protected Query Started` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Protected Query Started"]
@@ -430,7 +430,7 @@ Below are the detail fields for the `Protected Query Started` event.
 
 Below are the detail fields for the `Protected Query Cancelling` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Protected Query Cancelling"]
@@ -442,7 +442,7 @@ Below are the detail fields for the `Protected Query Cancelling` event.
 
 Below are the detail fields for the `Protected Query Cancelled` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Protected Query Cancelled"]
@@ -454,7 +454,7 @@ Below are the detail fields for the `Protected Query Cancelled` event.
 
 Below are the detail fields for the `Protected Query Succeeded` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Protected Query Succeeded"]
@@ -466,7 +466,7 @@ Below are the detail fields for the `Protected Query Succeeded` event.
 
 Below are the detail fields for the `Protected Query Failed` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Protected Query Failed"]
@@ -478,7 +478,7 @@ Below are the detail fields for the `Protected Query Failed` event.
 
 Below are the detail fields for the `Protected Query Timed Out` event.
 
-```
+```json
 {
   "source": ["aws.cleanrooms"],
   "detail-type": ["Protected Query Timed Out"]

@@ -72,7 +72,7 @@ Use this operation to send an OTP code to a user of your application. When you u
 #### POST schema
 <a name="apps-application-id-otp-request-body-post-example"></a>
 
-```
+```json
 {
   "Channel": "string",
   "OriginationIdentity": "string",
@@ -94,7 +94,7 @@ Use this operation to send an OTP code to a user of your application. When you u
 #### MessageResponse schema
 <a name="apps-application-id-otp-response-body-messageresponse-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "RequestId": "string",
@@ -108,7 +108,7 @@ Use this operation to send an OTP code to a user of your application. When you u
 #### MessageBody schema
 <a name="apps-application-id-otp-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

@@ -141,7 +141,7 @@ You can configure header and query parameters at the target level when creating 
 
 Configure header propagation by adding `allowedRequestHeaders` , `allowedResponseHeaders` , and `allowedQueryParameters` fields to your target’s `metadataConfiguration` :
 
-```
+```json
 {
     "name": "my-target",
     "description": "my target description",
@@ -177,7 +177,7 @@ Configure header propagation by adding `allowedRequestHeaders` , `allowedRespons
 
 Using the Python SDK:
 
-```
+```python
 import boto3
 
 # Initialize the client
@@ -231,7 +231,7 @@ Interceptor lambdas can influence header propagation in the following ways:
 
 Configure your interceptor lambda to return headers that should be propagated to the target:
 
-```
+```python
 import json
 import boto3
 

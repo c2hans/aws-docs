@@ -36,7 +36,7 @@ For more information, see [Delete a deployment group with CodeDeploy](https://do
 **Tools for PowerShell V4**
 **Example 1: This example deletes the deployment group with the specified name for the specified application. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the deployment group without a prompt.**
 
-```
+```powershell
 Remove-CDDeploymentGroup -ApplicationName MyNewApplication -DeploymentGroupName MyNewDeploymentGroup
 ```
 +  For API details, see [DeleteDeploymentGroup](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -44,7 +44,7 @@ Remove-CDDeploymentGroup -ApplicationName MyNewApplication -DeploymentGroupName 
 **Tools for PowerShell V5**
 **Example 1: This example deletes the deployment group with the specified name for the specified application. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the deployment group without a prompt.**
 
-```
+```powershell
 Remove-CDDeploymentGroup -ApplicationName MyNewApplication -DeploymentGroupName MyNewDeploymentGroup
 ```
 +  For API details, see [DeleteDeploymentGroup](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

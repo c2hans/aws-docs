@@ -62,7 +62,7 @@ For more information, see [Scheduled Scaling](https://docs.aws.amazon.com/autosc
 **Tools for PowerShell V4**
 **Example 1: This cmdlet lists the actions scheduled for your Auto Scaling group that haven't run or that have not reached their end time. **
 
-```
+```powershell
 Get-AASScheduledAction -ServiceNamespace AppStream
 ```
 **Output:**
@@ -85,7 +85,7 @@ StartTime            : 1/1/0001 12:00:00 AM
 **Tools for PowerShell V5**
 **Example 1: This cmdlet lists the actions scheduled for your Auto Scaling group that haven't run or that have not reached their end time. **
 
-```
+```powershell
 Get-AASScheduledAction -ServiceNamespace AppStream
 ```
 **Output:**

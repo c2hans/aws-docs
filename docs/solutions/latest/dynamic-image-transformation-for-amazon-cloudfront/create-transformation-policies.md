@@ -71,7 +71,7 @@ Alternatively, you can create policies by providing JSON configuration directly 
 
 1. Example policy JSON. This reference example exercises the full range of available operations: the `outputs` array defines device-aware format, quality, and autosize optimizations, and the `transformations` array applies image edits (some gated by a `condition`). A real policy typically uses a small subset of these:
 
-   ```
+   ```json
    {
        "outputs": [
            {

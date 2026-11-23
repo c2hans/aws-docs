@@ -41,7 +41,7 @@ The variables declared in the declarations section preceding a block are initial
 
 The following shows an example.
 
-```
+```sql
 CREATE PROCEDURE update_value() AS $$
 DECLARE
   value integer := 20;
@@ -106,7 +106,7 @@ The `refcursor` data type is the data type of cursor variables within stored pro
 
 If stored procedure's signature omits the argument name, you can declare an alias for the argument.
 
-```
+```sql
 name ALIAS FOR $n;
 ```
 
@@ -137,7 +137,7 @@ FOUND is a special variable of type Boolean. FOUND starts out false within each 
 
 The following shows an example.
 
-```
+```sql
 CREATE TABLE employee(empname varchar);
 CREATE OR REPLACE PROCEDURE show_found()
 AS  $$
@@ -156,7 +156,7 @@ Within an exception handler, the special variable SQLSTATE contains the error co
 
 The following shows an example.
 
-```
+```sql
 CREATE OR REPLACE PROCEDURE sqlstate_sqlerrm() AS
 $$
 BEGIN
@@ -173,7 +173,7 @@ ROW\_COUNT is used with the GET DIAGNOSTICS command. It shows the number of rows
 
 The following shows an example.
 
-```
+```sql
 CREATE OR REPLACE PROCEDURE sp_row_count() AS
 $$
 DECLARE
@@ -197,7 +197,7 @@ name RECORD;
 
 The following shows an example.
 
-```
+```sql
 CREATE TABLE tbl_record(a int, b int);
 INSERT INTO tbl_record VALUES(1, 2);
 CREATE OR REPLACE PROCEDURE record_example()

@@ -91,7 +91,7 @@ The following examples show how to invoke `airflow db clean` through the Amazon 
 
 Using a Python script:
 
-```
+```python
 import boto3
 import base64
 import requests

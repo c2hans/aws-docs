@@ -31,7 +31,7 @@ For more information, see [Create a branch in AWS CodeCommit](https://docs.aws.a
 **Tools for PowerShell V4**
 **Example 1: This example creates a new branch with the specified name for the specified repository and the specified commit ID.**
 
-```
+```powershell
 New-CCBranch -RepositoryName MyDemoRepo -BranchName MyNewBranch -CommitId 7763222d...561fc9c9
 ```
 +  For API details, see [CreateBranch](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -39,7 +39,7 @@ New-CCBranch -RepositoryName MyDemoRepo -BranchName MyNewBranch -CommitId 776322
 **Tools for PowerShell V5**
 **Example 1: This example creates a new branch with the specified name for the specified repository and the specified commit ID.**
 
-```
+```powershell
 New-CCBranch -RepositoryName MyDemoRepo -BranchName MyNewBranch -CommitId 7763222d...561fc9c9
 ```
 +  For API details, see [CreateBranch](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -24,6 +24,8 @@ Customers can now choose from the following fleet types:
 
 ![An diagram showing fleet type use cases and requirements..](https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/images/use-case-and-requirements.png)
 
+*Fleet type use cases and requirements*
+
 ## Fleet sizing
 <a name="fleet-sizing"></a>
 

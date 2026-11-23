@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SageMaker#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a SageMaker pipeline by name.
     /// </summary>
@@ -42,7 +42,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```java
     // Delete a SageMaker pipeline by name.
     public static void deletePipeline(SageMakerClient sageMakerClient, String pipelineName) {
         DeletePipelineRequest pipelineRequest = DeletePipelineRequest.builder()
@@ -62,7 +62,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sagemaker#code-examples).
 The syntax for deleting a SageMaker AI pipeline. This code is part of a larger function. Refer to 'Create a pipeline' or the GitHub repository for more context.
 
-```
+```javascript
       await sagemakerClient.send(
         new DeletePipelineCommand({ PipelineName: name }),
       );
@@ -75,7 +75,7 @@ The syntax for deleting a SageMaker AI pipeline. This code is part of a larger f
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```kotlin
 // Delete a SageMaker pipeline by name.
 suspend fun deletePipeline(pipelineNameVal: String) {
     val pipelineRequest = DeletePipelineRequest {

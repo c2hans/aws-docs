@@ -161,13 +161,13 @@ Deadline Cloud monitor requires GLIBC 2.34 or later. On Ubuntu 22.04, the AppIma
 
 1. On RHEL-family systems such as Red Hat Linux, Rocky Linux, and Alma Linux, create a symbolic link to the CA bundle. RHEL-family systems keep the CA bundle at `/etc/ssl/certs/ca-bundle.crt`, but Deadline Cloud monitor expects `/etc/ssl/certs/ca-certificates.crt` and blocks profile creation with the error `Couldn't load TLS file database` until that file exists. To create the link, enter:
 
-   ```
+   ```bash
    sudo ln -sf /etc/ssl/certs/ca-bundle.crt /etc/ssl/certs/ca-certificates.crt
    ```
 
 1. To make the AppImage executable, enter:
 
-   ```
+   ```bash
    chmod a+x deadline-cloud-monitor_amd64.AppImage
    ```
 
@@ -184,14 +184,14 @@ Deadline Cloud monitor requires GLIBC 2.34 or later.
 
 1. To install the Deadline Cloud monitor Debian package, enter:
 
-   ```
+   ```bash
    sudo apt update
    sudo apt install ./deadline-cloud-monitor_amd64.deb
    ```
 
 1. If the install fails on packages that have unmet dependencies, fix the broken packages and then run the following commands.
 
-   ```
+   ```bash
    sudo apt --fix-missing update
    sudo apt update
    sudo apt install -f
@@ -210,7 +210,7 @@ Deadline Cloud monitor requires GLIBC 2.34 or later and `webkit2gtk-4.1`, which 
 
 1. Install the Deadline Cloud monitor:
 
-   ```
+   ```bash
    sudo dnf install deadline-cloud-monitor.x86_64.rpm
    ```
 

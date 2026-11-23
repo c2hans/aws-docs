@@ -6,7 +6,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 # `update_compute_fleet`
 
-```
+```python
 update_compute_fleet(cluster_name, status, region)
 ```
 

@@ -90,7 +90,7 @@ By default, the groups claim emits group IDs (GUIDs). To emit group display name
 
 1. Locate the `optionalClaims` section, and add `cloud_displayname` to the groups claim for `idToken` and `accessToken`:
 
-   ```
+   ```json
    "optionalClaims": {
      "idToken": [
        {

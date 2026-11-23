@@ -12,7 +12,7 @@ Amazon EMR on EKS creates the Livy server service account and role to manage Liv
 
 The default name for this service account is `emr-containers-sa-livy`. It must have the following permissions.
 
-```
+```bash,sh,zsh
 rules:
 - apiGroups:
   - ""
@@ -71,7 +71,7 @@ rules:
 
 A Spark driver pod needs a Kubernetes service account in the same namespace as the pod. This service account needs permissions to manage executor pods and any resources required by the driver pod. Unless the default service account in the namespace has the required permissions, the driver fails and exits. The following RBAC permissions are required.
 
-```
+```bash,sh,zsh
 rules:
 - apiGroups:
   - ""

@@ -42,19 +42,19 @@ After you set up your operations, you can use the s3api SDK or s3control SDK to 
 
 **Example of accessing S3 bucket using the s3api SDK**
 
-```
+```bash,sh,zsh
 aws s3api list-buckets --endpoint-url https://{{s3api-endpoint-ip}} --profile {{your-profile}}
 ```
 
 **Example of accessing S3 buckets using the s3control SDK**
 
-```
+```bash,sh,zsh
 aws s3control list-regional-buckets --account-id {{bucket-owner}} --endpoint-url https://{{s3ctrlapi-endpoint-ip}} --profile {{your-profile}}
 ```
 
 **Example of accessing S3 objects using the s3api SDK**
 
-```
+```bash,sh,zsh
 aws s3api list-objects-v2 --endpoint-url https://{{s3api-endpoint-ip}} --profile {{your-profile}}
 ```
 

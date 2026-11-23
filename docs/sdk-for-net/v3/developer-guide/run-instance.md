@@ -47,7 +47,7 @@ The following snippet launches an EC2 instance.
 
 The example [near the end of this topic](#run-instance-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to launch the instances
     // Returns a list with the launched instance IDs
@@ -78,7 +78,7 @@ The example [near the end of this topic](#run-instance-complete-code) shows this
 
 See the [InstanceState](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/EC2/TInstanceState.html) class for the valid values of the `Instance.State.Code` property.
 
-```
+```csharp
     //
     // Method to wait until the instances are running (or at least not pending)
     private static async Task CheckState(IAmazonEC2 ec2Client, List<string> instanceIds)
@@ -164,7 +164,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c17c19b9c27b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -466,7 +466,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c17c19b9c35c25b1"></a>
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.IO;

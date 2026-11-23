@@ -74,7 +74,7 @@ https://sns.us-west-2.amazonaws.com/?Action=GetEndpointAttributes
 #### Sample Response
 <a name="API_GetEndpointAttributes_Example_1_Response"></a>
 
-```
+```xml
 <GetEndpointAttributesResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <GetEndpointAttributesResult>
         <Attributes>

@@ -360,7 +360,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Access level:** Read
 
 - **   [ListDiscoveredResources](https://docs.aws.amazon.com/assurance/latest/APIReference/API_ListDiscoveredResources.html)  **
-  - **Description:** Grants permission to list the resources found by a discovery job (paginated)
+  - **Description:** Grants permission to list the resources in scope for an environment or project (paginated)
   - **Resource types (\*required):** [environment\*](#list_assurance-resource-environment)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
   - **Access level:** Read

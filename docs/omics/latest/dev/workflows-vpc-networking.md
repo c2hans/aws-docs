@@ -163,7 +163,7 @@ HealthOmics provisions elastic network interfaces (ENIs) in your VPC to connect 
 
 ENIs created by HealthOmics are tagged with the following tags:
 
-```
+```json
 "TagSet": [
   {
     "Key": "Service",
@@ -216,7 +216,7 @@ aws omics create-configuration \
 
 **Response:**
 
-```
+```json
 {
   "arn": "arn:aws:omics:{{region}}:{{account-id}}:configuration/{{configuration-name}}",
   "uuid": "{{configuration-uuid}}",
@@ -255,7 +255,7 @@ aws omics get-configuration \
 
 **Response:**
 
-```
+```json
 {
   "arn": "arn:aws:omics:{{region}}:{{account-id}}:configuration/{{configuration-name}}",
   "uuid": "{{configuration-uuid}}",
@@ -287,7 +287,7 @@ aws omics list-configurations \
 
 **Response:**
 
-```
+```json
 {
   "items": [
     {
@@ -352,7 +352,7 @@ aws omics get-run \
 
 The response includes the networking mode, configuration details, and VPC configuration. The following example shows the VPC-related fields from the response:
 
-```
+```json
 {
   "arn": "arn:aws:omics:{{region}}:{{account-id}}:run/{{run-id}}",
   "id": "{{run-id}}",

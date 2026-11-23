@@ -106,7 +106,7 @@ The following example policy grants access to the Amazon WorkMail console only f
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -153,7 +153,7 @@ The following example policy scopes-down `AssumeImpersonationRole` action to a p
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

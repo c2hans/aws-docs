@@ -23,7 +23,7 @@ If you don't have the correct permissions, you'll receive a notification detaili
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

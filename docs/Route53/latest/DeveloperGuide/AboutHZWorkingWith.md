@@ -25,4 +25,3 @@ You can also use a Route 53 *private* hosted zone to route traffic within one o
 + [Checking DNS responses from Route 53](dns-test.md)
 + [Configuring white-label name servers](white-label-name-servers.md)
 + [NS and SOA records that Amazon Route 53 creates for a public hosted zone](SOA-NSrecords.md)
-+ [Enabling accelerated recovery for managing public DNS records](accelerated-recovery.md)

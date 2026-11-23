@@ -17,7 +17,7 @@ The following workflow example is for illustrative purposes, and will not work w
 **Note**
 In the YAML code that follows, you can omit the `Connections:` section if you want. If you omit this section, you must ensure that the role specified in the **Default IAM role** field in your environment includes the permissions and trust policies required by the **Amazon S3 publish** action. For more information about setting up an environment with a default IAM role, see [Creating an environment](deploy-environments-creating-environment.md). For more information about the permissions and trust policies required by the **Amazon S3 publish** action, see the description of the [Role](s3-pub-action-ref.md#s3.pub.environment.connections.role) property in the ['Amazon S3 publish' action YAML](s3-pub-action-ref.md).
 
-```
+```yaml
 Name: codecatalyst-s3-publish-workflow
 SchemaVersion: 1.0
 

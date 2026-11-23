@@ -12,7 +12,7 @@ The following code examples show how to use `GetRoutingControlState`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53recoverycluster#code-examples).
 
-```
+```java
     public static GetRoutingControlStateResponse getRoutingControlState(List<ClusterEndpoint> clusterEndpoints,
             String routingControlArn) {
         // As a best practice, we recommend choosing a random cluster endpoint to get or
@@ -44,7 +44,7 @@ The following code examples show how to use `GetRoutingControlState`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/route53-recovery-cluster#code-examples).
 
-```
+```python
 import boto3
 
 def create_recovery_client(cluster_endpoint):
@@ -93,7 +93,7 @@ def get_routing_control_state(routing_control_arn, cluster_endpoints):
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/r5v#code-examples).
 
-```
+```sap-abap
     CONSTANTS cv_pfl TYPE /aws1/rt_profile_id VALUE 'ZCODE_DEMO'.
     DATA lo_exception TYPE REF TO /aws1/cx_rt_generic.
     DATA lo_session TYPE REF TO /aws1/cl_rt_session_base.

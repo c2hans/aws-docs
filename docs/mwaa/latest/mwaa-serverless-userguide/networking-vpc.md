@@ -41,7 +41,7 @@ The following CloudFormation template creates an Amazon VPC network *with intern
 
 1. Copy the contents of the following template and save locally as `cfn-vpc-public-private.yaml`.
 
-   ```
+   ```yaml
    Description:  This template deploys a VPC, with a pair of public and private subnets spread
      across two Availability Zones. It deploys an internet gateway, with a default
      route on the public subnets. It deploys a pair of NAT gateways (one in each AZ),
@@ -311,7 +311,7 @@ This option uses private routing without internet access. You can use this templ
 
 1. Copy the contents of the following template and save locally as `cfn-vpc-private.yaml`.
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: "2010-09-09"
 
    Parameters:

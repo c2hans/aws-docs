@@ -34,7 +34,7 @@ To set up and run this example, you must first complete these tasks:
 
 Create a Node.js module with the file name `ec2_describeregionsandzones.js`. Be sure to configure the SDK as previously shown. To access Amazon EC2, create an `AWS.EC2` service object. Create an empty JSON object to pass as parameters, which returns all available descriptions. Then call the `describeRegions` and `describeAvailabilityZones` methods.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -66,7 +66,7 @@ ec2.describeAvailabilityZones(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```sh
 node ec2_describeregionsandzones.js
 ```
 

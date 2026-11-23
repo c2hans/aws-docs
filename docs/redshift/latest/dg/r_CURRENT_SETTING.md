@@ -46,7 +46,7 @@ Returns a `CHAR` or `VARCHAR` string.
 
 To return the current setting for the `query_group` parameter, use the following example.
 
-```
+```sql
 SELECT CURRENT_SETTING('query_group');
 
 +-----------------+
@@ -58,6 +58,6 @@ SELECT CURRENT_SETTING('query_group');
 
 To return the current setting for the variable `app_context.user_id`, use the following example.
 
-```
+```sql
 SELECT CURRENT_SETTING('app_context.user_id', FALSE);
 ```

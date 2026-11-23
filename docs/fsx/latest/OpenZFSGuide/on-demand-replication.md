@@ -75,7 +75,7 @@ You can create or update a replica volume across file systems that are on the sa
 
 The following example shows how to update a volume with a snapshot using incremental copy and deleting all intermediate clones, dependent snapshots, and intermediate data.
 
-```
+```json
 aws fsx copy-snapshot-and-update-volume \
      --volume-id {{fsvol-1234567890abcdef0}} \
      --source-snapshot-arn {{arn:aws:fsx:555555555555:snapshot/fsvol-1234567890abcdef0/fsvolsnap-021345abcdef6789}}\
@@ -85,7 +85,7 @@ aws fsx copy-snapshot-and-update-volume \
 
 The example above returns the following response.
 
-```
+```json
 {
     "VolumeId": "fsvol-1234567890abcdef0",
     "Lifecycle": "AVAILABLE",
@@ -128,7 +128,7 @@ You can also use the AWS CLI or Amazon FSx API to track more detailed progress o
 
 The following example shows the response for an incremental copy on-demand data replication task.
 
-```
+```json
 {
     "VolumeId": "fsvol-1234567890abcdef0",
     "Lifecycle": "AVAILABLE",

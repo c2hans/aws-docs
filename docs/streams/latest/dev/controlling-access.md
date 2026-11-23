@@ -41,7 +41,7 @@ For more information about IAM and Amazon CloudWatch, see [Controlling User Acce
 
 An IAM policy is a JSON document that consists of one or more statements. Each statement is structured as follows:
 
-```
+```json
 {
   "Statement":[{
     "Effect":"{{effect}}",
@@ -72,19 +72,19 @@ In an IAM policy statement, you can specify any API action from any service that
 
 To specify multiple actions in a single statement, separate them with commas as follows:
 
-```
+```json
 "Action": ["kinesis:action1", "kinesis:action2"]
 ```
 
 You can also specify multiple actions using wildcards. For example, you can specify all actions whose name begins with the word "Get" as follows:
 
-```
+```json
 "Action": "kinesis:Get*"
 ```
 
 To specify all Kinesis Data Streams operations, use the \* wildcard as follows:
 
-```
+```json
 "Action": "kinesis:*"
 ```
 
@@ -115,7 +115,7 @@ arn:aws:kinesis:{{region}}:{{account-id}}:stream/{{stream-name}}
 
 For example:
 
-```
+```json
 "Resource": arn:aws:kinesis:*:111122223333:stream/my-stream
 ```
 
@@ -149,7 +149,7 @@ The following example policies demonstrate how you could control user access to 
  This policy allows a user or group to perform the `DescribeStreamSummary`, `GetShardIterator`, and `GetRecords` operations on the specified stream and `ListStreams` on any stream. This policy could be applied to users who should be able to get data from a specific stream.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -183,7 +183,7 @@ The following example policies demonstrate how you could control user access to 
 This policy allows a user or group to use the `PutRecord` operation with any of the account's streams. This policy could be applied to users that should be able to add data records to all streams in an account.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -207,7 +207,7 @@ This policy allows a user or group to use the `PutRecord` operation with any of 
 This policy allows a user or group to use any Kinesis Data Streams operation on the specified stream. This policy could be applied to users that should have administrative control over a specific stream.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -229,7 +229,7 @@ This policy allows a user or group to use any Kinesis Data Streams operation on 
 This policy allows a user or group to use any Kinesis Data Streams operation on any stream in an account. Because this policy grants full access to all your streams, you should restrict it to administrators only.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -300,7 +300,7 @@ Multiple Principals (can be combination of account, user, role) – `{"AWS":["12
 **Example**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "__default_write_policy_ID",
@@ -329,7 +329,7 @@ Multiple Principals (can be combination of account, user, role) – `{"AWS":["12
 **Example**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "__default_sharedthroughput_read_policy_ID",
@@ -359,7 +359,7 @@ Multiple Principals (can be combination of account, user, role) – `{"AWS":["12
 Data stream policy statement:
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "__default_sharedthroughput_read_policy_ID",
@@ -382,7 +382,7 @@ Data stream policy statement:
 Consumer policy statement:
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "__default_efo_read_policy_ID",

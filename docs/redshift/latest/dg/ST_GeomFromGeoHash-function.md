@@ -42,7 +42,7 @@ If *geohash\_string* is not valid, then an error is returned.
 
 The following SQL returns a polygon with high precision.
 
-```
+```sql
 SELECT ST_AsText(ST_GeomFromGeoHash('9qqj7nmxncgyy4d0dbxqz0'));
 ```
 
@@ -54,7 +54,7 @@ SELECT ST_AsText(ST_GeomFromGeoHash('9qqj7nmxncgyy4d0dbxqz0'));
 
 The following SQL returns a point with high precision.
 
-```
+```sql
 SELECT ST_AsText(ST_GeomFromGeoHash('9qqj7nmxncgyy4d0dbxqz00'));
 ```
 
@@ -66,7 +66,7 @@ SELECT ST_AsText(ST_GeomFromGeoHash('9qqj7nmxncgyy4d0dbxqz00'));
 
 The following SQL returns a polygon with low precision.
 
-```
+```sql
 SELECT ST_AsText(ST_GeomFromGeoHash('9qq'));
 ```
 
@@ -78,7 +78,7 @@ SELECT ST_AsText(ST_GeomFromGeoHash('9qq'));
 
 The following SQL returns a polygon with precision 3.
 
-```
+```sql
 SELECT ST_AsText(ST_GeomFromGeoHash('9qqj7nmxncgyy4d0dbxqz0', 3));
 ```
 

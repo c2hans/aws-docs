@@ -93,7 +93,7 @@ To control the source that can create an inbound integration into the namespace,
 
 The following is a sample resource policy.
 
-```
+```JSON
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -144,7 +144,7 @@ Where `rs-rp.json` contains:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

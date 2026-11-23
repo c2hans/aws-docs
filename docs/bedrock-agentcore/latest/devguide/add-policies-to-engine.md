@@ -18,7 +18,7 @@ Select one of the following methods:
 
 1. Run the following code in a terminal to create a policy using the AWS CLI:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-policy \
      --policy-engine-id my-policy-engine-id \
      --name my_policy \
@@ -33,7 +33,7 @@ Select one of the following methods:
 
 1. The following Python code shows how to create a policy using the AWS Python SDK (Boto3):
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client('bedrock-agentcore-control')

@@ -45,7 +45,7 @@ Declines Amazon Macie membership invitations that were received from specific ac
 #### POST schema
 <a name="invitations-decline-request-body-post-example"></a>
 
-```
+```json
 {
   "accountIds": [
     "string"
@@ -59,7 +59,7 @@ Declines Amazon Macie membership invitations that were received from specific ac
 #### DeclineInvitationsResponse schema
 <a name="invitations-decline-response-body-declineinvitationsresponse-example"></a>
 
-```
+```json
 {
   "unprocessedAccounts": [
     {
@@ -74,7 +74,7 @@ Declines Amazon Macie membership invitations that were received from specific ac
 #### ValidationException schema
 <a name="invitations-decline-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -83,7 +83,7 @@ Declines Amazon Macie membership invitations that were received from specific ac
 #### ServiceQuotaExceededException schema
 <a name="invitations-decline-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -92,7 +92,7 @@ Declines Amazon Macie membership invitations that were received from specific ac
 #### AccessDeniedException schema
 <a name="invitations-decline-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -101,7 +101,7 @@ Declines Amazon Macie membership invitations that were received from specific ac
 #### ResourceNotFoundException schema
 <a name="invitations-decline-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -110,7 +110,7 @@ Declines Amazon Macie membership invitations that were received from specific ac
 #### ConflictException schema
 <a name="invitations-decline-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -119,7 +119,7 @@ Declines Amazon Macie membership invitations that were received from specific ac
 #### ThrottlingException schema
 <a name="invitations-decline-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -128,7 +128,7 @@ Declines Amazon Macie membership invitations that were received from specific ac
 #### InternalServerException schema
 <a name="invitations-decline-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

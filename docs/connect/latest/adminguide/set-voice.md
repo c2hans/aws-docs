@@ -23,7 +23,7 @@ This topic defines the flow block for setting the text-to-speech (TTS) language 
 **Note**
 If your instance was created before October 2018 and you have since migrated to a Service Linked Role (SLR), you need to add the following custom permissions to your Service Role (SR) to access the Generative engines.
 
-```
+```json
 {
    "Sid": "AllowPollyActions",
    "Effect": "Allow",

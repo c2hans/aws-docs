@@ -40,7 +40,7 @@ VM Import/Export found duplicate files during the import task for at least one o
 The VM import service role is missing or incorrect. You may also receive this error if the user, group, or role trying to start the import does not have sufficient access privileges on Amazon EC2 resources.
 This error can also occur if the user calling `ImportImage` has `Decrypt` permission but the `vmimport` role does not. If you use [Server-Side Encryption with AWS KMS–Managed Keys (SSE-KMS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html) to secure your at-rest data in Amazon S3, you need to assign additional `Decrypt` permission to your service role as shown in the following JSON code:
 
-```
+```json
 {
    "Sid":"Allow vmimport to decrypt SSE-KMS key",
    "Effect":"Allow",

@@ -159,13 +159,13 @@ To build and run a Swift Package Manager project from a Linux or macOS terminal 
 
  **Build a project**
 
-```
+```console
 $ swift build
 ```
 
  **Run a project**
 
-```
+```console
 $ swift run
 $ swift run {{executable-name}}
 $ swift run {{executable-name}} {{arg1, ...}}
@@ -175,20 +175,20 @@ If your project builds only one executable file, you can type **swift run** to b
 
  **Get the built product output directory**
 
-```
+```console
 $ swift build --show-bin-path
 /home/janice/MyProject/.build/x86_64-unknown-linux-gnu/debug
 ```
 
  **Delete build artifacts**
 
-```
+```console
 $ swift package clean
 ```
 
  **Delete build artifacts and all build caches**
 
-```
+```console
 $ swift package reset
 ```
 
@@ -197,7 +197,7 @@ $ swift package reset
 
 After the libraries are in place, you can use the Swift `import` directive to import the individual libraries into each source file that needs them. To use the functions for a given service, import its library from the AWS SDK for Swift package into your source code file. Also import the `ClientRuntime` library, which contains utility functions and type definitions.
 
-```
+```swift
 import Foundation
 import ClientRuntime
 import AWSS3

@@ -77,7 +77,7 @@ You should see a number of CRDs listed for AWS resources.
 
  **Using kubectl**
 
-```
+```bash
 kubectl api-resources | grep services.k8s.aws
 ```
 

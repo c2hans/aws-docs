@@ -27,7 +27,7 @@ Add the necessary dependencies for X-Ray:
 + [AWS X-Ray SDK for Java](https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-xray/)
 + [AWS X-Ray Recorder SDK for Java](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-aws-sdk/)
 
-```
+```java
 package example;
 
 import com.amazonaws.services.lambda.runtime.Context;
@@ -102,7 +102,7 @@ public class Handler implements RequestHandler<SQSEvent, String>{
 aws-xray-sdk==2.4.3
 ```
 
-```
+```python
 import boto3
 from aws_xray_sdk.core import xray_recorder
 from aws_xray_sdk.core import patch_all
@@ -128,7 +128,7 @@ def lambda_handler(event, context):
 ------
 #### [ Go ]
 
-```
+```go
 package main
 
 import (
@@ -187,7 +187,7 @@ func callEventBridge(ctx context.Context) (string, error) {
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const AWSXRay = require('aws-xray-sdk')
 //Wrap the aws-sdk client in the AWS XRay tracer
 const AWS = AWSXRay.captureAWS(require('aws-sdk'))
@@ -220,12 +220,12 @@ exports.handler = async (event) => {
 
  Add the following X-Ray packages to your C\# dependencies:
 
-```
+```cs
 <PackageReference Include="AWSXRayRecorder.Core" Version="2.6.2" />
 <PackageReference Include="AWSXRayRecorder.Handlers.AwsSdk" Version="2.7.2" />
 ```
 
-```
+```cs
 using System;
 using System.Collections.Generic;
 using System.Linq;

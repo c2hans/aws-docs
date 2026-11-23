@@ -14,7 +14,7 @@ The policy template of a customer managed permission follows these rules:
 
 To use more than one statement, specify the policy template as a JSON array of statement objects. The template must start with the `[` character. The following example policy template has two statements. The first grants read access to principals with a `team` tag of `payments`. The second grants describe access to everyone in the share.
 
-```
+```json
 [
     {
         "Effect": "Allow",

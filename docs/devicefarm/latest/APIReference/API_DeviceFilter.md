@@ -51,8 +51,11 @@ Supported operators: `CONTAINS`
 FLEET\_TYPE
 The fleet type. Valid values are PUBLIC or PRIVATE.
 Supported operators: `EQUALS`
+DEVICE\_TYPE
+The device type. Valid values are PHYSICAL or VIRTUAL.
+Supported operators: `EQUALS`
 Type: String
-Valid Values: `ARN | PLATFORM | OS_VERSION | MODEL | AVAILABILITY | FORM_FACTOR | MANUFACTURER | REMOTE_ACCESS_ENABLED | REMOTE_DEBUG_ENABLED | INSTANCE_ARN | INSTANCE_LABELS | FLEET_TYPE`
+Valid Values: `ARN | PLATFORM | OS_VERSION | MODEL | AVAILABILITY | FORM_FACTOR | DEVICE_TYPE | MANUFACTURER | REMOTE_ACCESS_ENABLED | REMOTE_DEBUG_ENABLED | INSTANCE_ARN | INSTANCE_LABELS | FLEET_TYPE`
 Required: Yes
 
  ** operator **   <a name="devicefarm-Type-DeviceFilter-operator"></a>
@@ -73,6 +76,7 @@ An array of one or more filter values used in a device filter.
 + The AVAILABILITY attribute can be set to AVAILABLE, HIGHLY\_AVAILABLE, BUSY, or TEMPORARY\_NOT\_AVAILABLE.
 + The FORM\_FACTOR attribute can be set to PHONE or TABLET.
 + The FLEET\_TYPE attribute can be set to PUBLIC or PRIVATE.
++ The DEVICE\_TYPE attribute can be set to PHYSICAL or VIRTUAL.
 Type: Array of strings
 Required: Yes
 

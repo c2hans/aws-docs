@@ -27,7 +27,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { FargateToOpenSearch, FargateToOpenSearchProps } from '@aws-solutions-constructs/aws-fargate-opensearch';
@@ -43,7 +43,7 @@ const constructProps: FargateToOpenSearchProps = {
 new FargateToOpenSearch(this, 'test-construct', constructProps);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_fargate_opensearch import FargateToOpenSearch, FargateToOpenSearchProps
 from aws_cdk import (
     Stack
@@ -58,7 +58,7 @@ FargateToOpenSearch(self, 'test_construct',
             cognito_domain_name='globallyuniquedomain' + Aws.ACCOUNT_ID)
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

@@ -81,7 +81,7 @@ $ aws secretsmanager create-secret \
 
 Grant the application role permission to read it, so that the collector can fetch it at run time:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -101,7 +101,7 @@ Elastic Beanstalk refreshes the mounted credentials on a schedule, and the refre
 
 Next, put the option settings in a file. A collector configuration contains commas, which the shorthand syntax of `--option-settings` treats as separators, so pass the settings as JSON instead. Save the following as `options.json`, with the pipeline configuration as a JSON string in the `custom-config` value:
 
-```
+```json
 [
   {
     "Namespace": "aws:elasticbeanstalk:eks:observability",

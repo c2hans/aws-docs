@@ -26,7 +26,7 @@ With every method, call `join` on the returned handle to wait for the download t
 
 Call `write_to_path` to have the transfer manager write the object to a file. This method is asynchronous, so await it, and then call `join` on the returned handle:
 
-```
+```rust
 use aws_s3_transfer::Client;
 
 async fn download_to_path(client: &Client) -> Result<(), Box<dyn std::error::Error>> {
@@ -52,7 +52,7 @@ A successful download means the operating system accepted every byte and the ren
 
 Call `initiate` to get a `DownloadHandle` that you read yourself. The `initiate` method is synchronous. Read chunks from the handle's body in order with `body_mut().next()`, then call `join` after the body is fully read:
 
-```
+```rust
 use aws_s3_transfer::Client;
 
 async fn download_to_memory(client: &Client) -> Result<Vec<u8>, Box<dyn std::error::Error>> {
@@ -85,7 +85,7 @@ Read the body to the end before you call `join`. A chunk error from `next` is a 
 
 Call `write_to_file` to write the object into a file that you opened. The transfer manager writes to the file with positioned writes that start at offset 0 and resizes it to the exact downloaded length. This method is synchronous:
 
-```
+```rust
 use aws_s3_transfer::Client;
 use std::fs::File;
 
@@ -110,7 +110,7 @@ The transfer manager takes ownership of the file, so clone it first if you need 
 
 To download part of an object, set `range` to a single HTTP range header value. Amazon S3 doesn't support more than one range per request:
 
-```
+```rust
 use aws_s3_transfer::Client;
 
 async fn download_range(client: &Client) -> Result<Vec<u8>, Box<dyn std::error::Error>> {
@@ -137,7 +137,7 @@ The transfer manager validates the range when it discovers the object, not when 
 
 To download a specific version of an object in a versioning-enabled bucket, set `version_id`:
 
-```
+```rust
 use aws_s3_transfer::Client;
 
 async fn download_version(client: &Client) -> Result<(), Box<dyn std::error::Error>> {
@@ -159,7 +159,7 @@ async fn download_version(client: &Client) -> Result<(), Box<dyn std::error::Err
 
 Call `object_meta` on the handle to read the object's metadata, such as its total size, before you consume the body. This method waits for the transfer manager to finish discovery:
 
-```
+```rust
 use aws_s3_transfer::Client;
 
 async fn download_with_size(client: &Client) -> Result<(), Box<dyn std::error::Error>> {
@@ -195,7 +195,7 @@ Validation is on by default, because the transfer manager validates a response c
 
 After the download finishes, call `join` to get the authoritative result, then read `integrity_checks().checksum_validation()` on the `DownloadOutput`. A `ChecksumValidation::Validated` result means the transfer manager verified every delivered byte. A `ChecksumValidation::NotValidated` result carries a reason, such as `UnsupportedAlgorithm` when the object stored a checksum only in an algorithm the SDK doesn't compute, such as MD5:
 
-```
+```rust
 use aws_s3_transfer::types::ChecksumValidation;
 use aws_s3_transfer::Client;
 
@@ -235,7 +235,7 @@ When you stream an object with `initiate`, the transfer manager can deliver byte
 
 To read an object that you stored with server-side encryption using customer-provided keys (SSE-C), supply the same key you used to upload the object. Set the algorithm, the key, and the key's MD5 digest:
 
-```
+```rust
 use aws_s3_transfer::Client;
 
 async fn download_sse_c(
@@ -269,7 +269,7 @@ To set the default read-ahead for every download on a client, use the loader's `
 
 Set the window on the request with the `read_ahead` setter and `ReadAhead::Parts`, where the value is the number of parts fetched beyond the part your reader is waiting on:
 
-```
+```rust
 use aws_s3_transfer::config::ReadAhead;
 use aws_s3_transfer::Client;
 
@@ -290,7 +290,7 @@ async fn download_with_read_ahead(client: &Client) -> Result<(), Box<dyn std::er
 
 To change the window while the download runs, call `io_ctl()` on the handle and then `set_read_ahead()`. Lowering the window caps the memory held for a consumer that has fallen behind. Raising it restores prefetch depth once the consumer catches up. The new window takes effect on the next part the transfer requests:
 
-```
+```rust
 use aws_s3_transfer::config::ReadAhead;
 use aws_s3_transfer::Client;
 

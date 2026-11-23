@@ -62,7 +62,7 @@ Use the [CreateAssetModelCompositeModel](https://docs.aws.amazon.com/iot-sitewis
 Because this is an *inline* composite model, these properties only apply to the current asset model and aren't shared anywhere else. What makes it "inline" is that it doesn't provide a value for the `composedAssetModelId` field.
 If you need to produce a reusable model (for example, to share among multiple asset models, or to include multiple instances within one asset model), you should create a *component-model-based* composite model instead. See the following section for details.
 
-```
+```json
 {
     "assetModelCompositeModelName": "CNCLathe_ServoMotorA",
     "assetModelCompositeModelType": "CUSTOM",
@@ -122,7 +122,7 @@ Use the [CreateAssetModelCompositeModel](https://docs.aws.amazon.com/iot-sitewis
 **Note**
 In this example, the value of `composedAssetModelId` is the asset model ID or external ID of an existing component model. For more information, see [Reference objects with external IDs](object-ids.md#external-id-references) in the *AWS IoT SiteWise User Guide*. For an example of how to create a component model, see [Create a component model (AWS CLI)](create-component-models.md#create-component-model-cli).
 
-```
+```json
 {
     "assetModelCompositeModelName": "CNCLathe_ServoMotorA",
     "assetModelCompositeModelType": "CUSTOM",

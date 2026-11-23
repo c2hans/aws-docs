@@ -98,7 +98,7 @@ To grant the necessary permissions, you must also create and embed the following
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -126,7 +126,7 @@ Attach the following trust policy to permit an AWS account by using which, it ca
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

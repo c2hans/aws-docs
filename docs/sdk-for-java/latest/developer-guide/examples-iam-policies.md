@@ -11,7 +11,7 @@ To create a new policy, provide the policy’s name and a JSON-formatted policy 
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.core.waiters.WaiterResponse;
 import software.amazon.awssdk.services.iam.model.CreatePolicyRequest;
 import software.amazon.awssdk.services.iam.model.CreatePolicyResponse;
@@ -25,7 +25,7 @@ import software.amazon.awssdk.services.iam.waiters.IamWaiter;
 
  **Code**
 
-```
+```java
     public static String createIAMPolicy(IamClient iam, String policyName ) {
 
         try {
@@ -64,7 +64,7 @@ To retrieve an existing policy, call the IamClient’s `getPolicy` method, provi
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.GetPolicyRequest;
 import software.amazon.awssdk.services.iam.model.GetPolicyResponse;
 import software.amazon.awssdk.regions.Region;
@@ -74,7 +74,7 @@ import software.amazon.awssdk.services.iam.model.IamException;
 
  **Code**
 
-```
+```java
     public static void getIAMPolicy(IamClient iam, String policyArn) {
 
         try {
@@ -101,7 +101,7 @@ You can attach a policy to an IAM [role](https://docs.aws.amazon.com/IAM/latest/
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
 import software.amazon.awssdk.services.iam.model.IamException;
@@ -114,7 +114,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
     public static void attachIAMRolePolicy(IamClient iam, String roleName, String policyArn ) {
 
         try {
@@ -168,7 +168,7 @@ Call `getAttachedPolicies` on the returned [ListAttachedRolePoliciesResponse](ht
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
 import software.amazon.awssdk.services.iam.model.IamException;
@@ -181,7 +181,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
     public static void attachIAMRolePolicy(IamClient iam, String roleName, String policyArn ) {
 
         try {
@@ -233,7 +233,7 @@ To detach a policy from a role, call the IamClient’s `detachRolePolicy` method
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.DetachRolePolicyRequest;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
@@ -242,7 +242,7 @@ import software.amazon.awssdk.services.iam.model.IamException;
 
  **Code**
 
-```
+```java
     public static void detachPolicy(IamClient iam, String roleName, String policyArn ) {
 
         try {

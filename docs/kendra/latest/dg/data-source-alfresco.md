@@ -162,7 +162,7 @@ You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/
 + **Alfresco type**—Specify which type of Alfresco you use, whether `PAAS` (Cloud/Platform as a Service) or `ON_PREM` (On-Premises).
 + **Secret Amazon Resource Name (ARN)**—If you want to use basic authentication, you provide a secret that stores your authentication credentials of your user name and password. You provide the Amazon Resource Name (ARN) of an AWS Secrets Manager secret. The secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "username": "{{user name}}",
       "password": "{{password}}"
@@ -171,7 +171,7 @@ You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/
 
   If you want to use OAuth 2.0 authentication, the secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "clientId": "{{client ID}}",
       "clientSecret": "{{client secret}}",

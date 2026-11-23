@@ -27,7 +27,7 @@ When you call `CreateKey`, you can choose to specify the following optional valu
 ------
 #### [ Java ]
 
-```
+```java
 final Map<String, String> {{additionalEncryptionContext}} = Collections.singletonMap("{{Additional Encryption Context for}}",
 	         "{{custom branch key id}}");
 
@@ -41,7 +41,7 @@ final Map<String, String> {{additionalEncryptionContext}} = Collections.singleto
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var additionalEncryptionContext = new Dictionary<string, string>();
 	 additionalEncryptionContext.Add("{{Additional Encryption Context for}}", "{{custom branch key id}}");
 
@@ -55,7 +55,7 @@ var additionalEncryptionContext = new Dictionary<string, string>();
 ------
 #### [ Python ]
 
-```
+```python
 additional_encryption_context = {"{{Additional Encryption Context for}}": "{{custom branch key id}}"}
 
 branch_key_id: str = keystore.create_key(
@@ -69,7 +69,7 @@ branch_key_id: str = keystore.create_key(
 ------
 #### [ Rust ]
 
-```
+```rs
 let additional_encryption_context = HashMap::from([
     ("{{Additional Encryption Context for}}".to_string(), "{{custom branch key id}}".to_string())
 ]);
@@ -86,7 +86,7 @@ let branch_key_id = keystore.create_key()
 ------
 #### [ Go ]
 
-```
+```go
 encryptionContext := map[string]string{
     {{"Additional Encryption Context for"}}: {{"custom branch key id"}},
 }

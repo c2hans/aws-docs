@@ -135,7 +135,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-bastions-add-cidr-ingress-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "BastionType": "RDP Bastion",
   "IngressCIDRAddresses": ["10.113.44.1/22"]
@@ -145,7 +145,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-bastions-add-cidr-ingress-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "BastionType": "RDP Bastion",
   "IngressCIDRAddresses": ["10.113.44.1/22", "10.113.56.1/22"],

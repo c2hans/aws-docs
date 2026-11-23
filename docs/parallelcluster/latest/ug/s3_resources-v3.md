@@ -13,7 +13,7 @@ You can configure AWS ParallelCluster's access to Amazon S3 through the [`HeadNo
 
 The following example configures read-only access to all objects in {{firstbucket/read\_only/}} and read/write access to all objects in `{{secondbucket/read_and_write/}}`.
 
-```
+```yaml
 ...
 HeadNode:
   ...
@@ -30,7 +30,7 @@ HeadNode:
 
 The next example configures read-only access to all objects in folder `{{read_only/}}` in any bucket (\*) in the account.
 
-```
+```yaml
 ...
 HeadNode:
   ...
@@ -44,7 +44,7 @@ HeadNode:
 
 The final example configures read\_only access to all buckets and objects in the account.
 
-```
+```yaml
 ...
 HeadNode:
   ...

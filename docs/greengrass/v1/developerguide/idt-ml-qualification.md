@@ -33,7 +33,7 @@ Follow the steps to install the dependencies for your target framework:
 **Note**  <a name="python-symlink-command"></a>
 If you're using Python 3.6, you must create a symbolic link from Python 3.7 to Python 3.6 binaries. This configures your device to meet the Python requirement for AWS IoT Greengrass. For example:
 
-  ```
+  ```bash
   sudo ln -s {{path-to-python-3.6}}/python3.6 {{path-to-python-3.7}}/python3.7
   ```
 + Apache MXNet v1.2.1 or later.
@@ -90,7 +90,7 @@ Choose one of the following options to validate the MXNet installation.
 **Note**  <a name="python-symlink-command"></a>
 If you're using Python 3.6, you must create a symbolic link from Python 3.7 to Python 3.6 binaries. This configures your device to meet the Python requirement for AWS IoT Greengrass. For example:
 
-  ```
+  ```bash
   sudo ln -s {{path-to-python-3.6}}/python3.6 {{path-to-python-3.7}}/python3.7
   ```
 + TensorFlow 1.x.
@@ -142,7 +142,7 @@ Choose one of the following options to validate the TensorFlow installation.
 **Note**  <a name="python-symlink-command"></a>
 If you're using Python 3.6, you must create a symbolic link from Python 3.7 to Python 3.6 binaries. This configures your device to meet the Python requirement for AWS IoT Greengrass. For example:
 
-  ```
+  ```bash
   sudo ln -s {{path-to-python-3.6}}/python3.6 {{path-to-python-3.7}}/python3.7
   ```
 + SageMaker AI Neo DLR.
@@ -217,7 +217,7 @@ Running the DLR test with a model compiled by SageMaker AI might take 4 or 5 min
 
 1. Compress the contents of the `resnet18` directory.
 
-   ```
+   ```bash
    tar cvfz model.tar.gz resnet18v1-symbol.json resnet18v1-0000.params
    ```
 
@@ -287,7 +287,7 @@ We recommend that you compile the model on your target device. This practice is 
 
    1. Build the model:
 
-      ```
+      ```bash
       python3 tutorials/relay_quick_start.py --build-dir ./model
       ```
 

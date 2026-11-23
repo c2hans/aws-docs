@@ -8,7 +8,7 @@ This guide documents the new AWS Wickr administration console, released on March
 
 Wickr generates this message when a room is permanently deleted.
 
-```
+```json
 {
   "message_id": "06364710f89811e899418b6723464a0c",
   "msg_ts": "1544019245.000000",

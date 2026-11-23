@@ -155,27 +155,27 @@ You can also use CMake to build and run the demo application. To set up CMake an
 
    1. Use the following command to generate build files. Specify the target board with the `-DBOARD` option.
 
-      ```
+      ```bash
       cmake -DVENDOR=cypress -DBOARD=CY8CKIT_064S0S2_4343W -DCOMPILER=arm-gcc -S {{freertos}} -B {{build_dir}}
       ```
 
       If you're using Windows, you must specify the native build system using the `-G` option because CMake uses Visual Studio by default.
 **Example**
 
-      ```
+      ```bash
       cmake -DVENDOR=cypress -DBOARD=CY8CKIT_064S0S2_4343W -DCOMPILER=arm-gcc -S {{freertos}} -B {{build_dir}} -G Ninja
       ```
 
       If `arm-none-eabi-gcc` is not in your shell path, you also need to set the `AFR_TOOLCHAIN_PATH` CMake variable.
 **Example**
 
-      ```
+      ```bash
        -DAFR_TOOLCHAIN_PATH=/home/user/opt/gcc-arm-none-eabi/bin
       ```
 
    1. Use the following command to build the project using CMake.
 
-      ```
+      ```bash
       cmake --build {{build_dir}}
       ```
 

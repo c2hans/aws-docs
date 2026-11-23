@@ -51,7 +51,7 @@ The OpenSearch (`openSearch`) action cannot be used to deliver data to VPC Elast
 
 The following JSON example defines an OpenSearch action in an AWS IoT rule and how you can specify the fields for the `OpenSearch` action. For more information, see [OpenSearchAction](https://docs.aws.amazon.com/iot/latest/apireference/API_OpenSearchAction.html).
 
-```
+```JSON
 {
     "topicRulePayload": {
         "sql": "SELECT *, timestamp() as timestamp FROM 'iot/test'",

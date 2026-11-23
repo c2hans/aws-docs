@@ -40,7 +40,7 @@ You can also configure a default Neptune notebook for use with Neptune ML by fol
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

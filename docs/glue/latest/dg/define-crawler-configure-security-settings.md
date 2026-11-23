@@ -9,7 +9,7 @@ The crawler assumes this role. It must have permissions similar to the AWS manag
 For an Amazon S3 data store, additional permissions attached to the role would be similar to the following:
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -29,7 +29,7 @@ For an Amazon S3 data store, additional permissions attached to the role would b
 For an Amazon DynamoDB data store, additional permissions attached to the role would be similar to the following:
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -55,7 +55,7 @@ The `s3:ListBucket` is not needed if the Amazon S3 bucket policy is disabled.
  Example Amazon S3 policy:
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

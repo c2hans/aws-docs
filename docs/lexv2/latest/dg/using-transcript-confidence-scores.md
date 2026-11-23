@@ -28,7 +28,7 @@ You can use confidence scores for multiple conversation design patterns:
 
 Amazon Lex V2 sends the following JSON structure with up to three transcriptions for the user's input to your Lambda code hook function:
 
-```
+```json
     "transcriptions": [
         {
             "transcription": "string",
@@ -123,7 +123,7 @@ To use the example code, you must have:
 + The intent should have two slots, "BirthMonth" and "Name," both of type `AMAZON.AlphaNumeric`.
 + An alias with the Lambda function defined. For more information, see [Creating an AWS Lambda function for your Amazon Lex V2 bot](lambda-attach.md).
 
-```
+```python
 import time
 import os
 import logging

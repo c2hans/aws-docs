@@ -34,7 +34,7 @@ The following code example shows how to get started using Amazon Redshift.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Redshift#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Main method to run the Hello Amazon Redshift example.
     /// </summary>
@@ -96,7 +96,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Redshift#code-examples).
 Create a Redshift wrapper class to manage operations.
 
-```
+```csharp
 /// <summary>
 /// Wrapper class for Amazon Redshift operations.
 /// </summary>
@@ -570,7 +570,7 @@ public class RedshiftWrapper
 ```
 Run an interactive scenario demonstrating Redshift basics.
 
-```
+```csharp
 /// <summary>
 /// Amazon Redshift Getting Started Scenario.
 /// </summary>
@@ -856,7 +856,7 @@ The following code example shows how to use `CreateCluster`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Redshift#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a new Amazon Redshift cluster.
     /// </summary>
@@ -908,7 +908,7 @@ The following code example shows how to use `DeleteCluster`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Redshift#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an Amazon Redshift cluster without a final snapshot.
     /// </summary>
@@ -950,7 +950,7 @@ The following code example shows how to use `DescribeClusters`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Redshift#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Describe Amazon Redshift clusters.
     /// </summary>
@@ -1004,7 +1004,7 @@ The following code example shows how to use `DescribeStatement`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Redshift#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Describe a statement execution.
     /// </summary>
@@ -1044,7 +1044,7 @@ The following code example shows how to use `GetStatementResult`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Redshift#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the results of a statement execution.
     /// </summary>
@@ -1084,7 +1084,7 @@ The following code example shows how to use `ListDatabases`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Redshift#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List databases in a Redshift cluster.
     /// </summary>
@@ -1136,7 +1136,7 @@ The following code example shows how to use `ModifyCluster`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Redshift#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Modify an Amazon Redshift cluster.
     /// </summary>

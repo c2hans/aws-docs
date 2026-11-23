@@ -27,7 +27,7 @@ Configure user permissions so that the Studio user can call the `elasticmapreduc
 **Warning**
 To grant this permission, create a condition based on the `elasticmapreduce:ExecutionRoleArn` context key when you grant a caller access to call the `GetClusterSessionCredentials` APIs. The following examples demonstrate how to do so.
 
-```
+```json
 {
       "Sid": "AllowSpecificExecRoleArn",
       "Effect": "Allow",

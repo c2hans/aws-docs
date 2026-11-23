@@ -37,7 +37,7 @@ The LISTCAT JSON format is defined by the following attributes:
 
 The following is a sample KSDS LISTCAT JSON file.
 
-```
+```JSON
 {
   "catalogId": "default",
   "identifier": "AWS_M2_CARDDEMO_CARDXREF_VSAM_KSDS",

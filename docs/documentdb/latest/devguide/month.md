@@ -58,7 +58,7 @@ To view a code example for using the `$month` command, choose the tab for the la
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function groupSalesByMonth() {
@@ -96,7 +96,7 @@ groupSalesByMonth().catch(console.error);
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def group_sales_by_month():

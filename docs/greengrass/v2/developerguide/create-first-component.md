@@ -25,7 +25,7 @@ In this section, you learn how to create and run a basic Hello World component l
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    mkdir -p {{~/greengrassv2}}/{recipes,artifacts}
    cd {{~/greengrassv2}}
    ```
@@ -33,7 +33,7 @@ In this section, you learn how to create and run a basic Hello World component l
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    mkdir {{%USERPROFILE%\greengrassv2}}\\recipes, {{%USERPROFILE%\greengrassv2}}\\artifacts
    cd {{%USERPROFILE%\greengrassv2}}
    ```
@@ -41,7 +41,7 @@ In this section, you learn how to create and run a basic Hello World component l
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    mkdir {{~/greengrassv2}}/recipes, {{~/greengrassv2}}/artifacts
    cd {{~/greengrassv2}}
    ```
@@ -55,14 +55,14 @@ In this section, you learn how to create and run a basic Hello World component l
 ------
 #### [ JSON ]
 
-   ```
+   ```bash
    nano recipes/{{com.example.HelloWorld}}-{{1.0.0}}.json
    ```
 
 ------
 #### [ YAML ]
 
-   ```
+   ```bash
    nano recipes/{{com.example.HelloWorld}}-{{1.0.0}}.yaml
    ```
 
@@ -75,7 +75,7 @@ In this section, you learn how to create and run a basic Hello World component l
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
      "RecipeFormatVersion": "2020-01-25",
      "ComponentName": "com.example.HelloWorld",
@@ -111,7 +111,7 @@ In this section, you learn how to create and run a basic Hello World component l
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    ---
    RecipeFormatVersion: '2020-01-25'
    ComponentName: com.example.HelloWorld
@@ -143,21 +143,21 @@ In this section, you learn how to create and run a basic Hello World component l
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    mkdir -p artifacts/com.example.HelloWorld/1.0.0
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    mkdir artifacts\com.example.HelloWorld\1.0.0
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```cmd
    mkdir artifacts\com.example.HelloWorld\1.0.0
    ```
 
@@ -173,13 +173,13 @@ You must use the following format for the artifact folder path. Include the comp
 
    <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-   ```
+   ```bash
    nano artifacts/com.example.HelloWorld/1.0.0/hello_world.py
    ```
 
    Copy and paste the following Python script into the file.
 
-   ```
+   ```python
    import sys
 
    message = "Hello, %s!" % sys.argv[1]
@@ -195,7 +195,7 @@ You must use the following format for the artifact folder path. Include the comp
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo {{/greengrass/v2}}/bin/greengrass-cli deployment create \
      --recipeDir {{~/greengrassv2}}/recipes \
      --artifactDir {{~/greengrassv2}}/artifacts \
@@ -205,7 +205,7 @@ You must use the following format for the artifact folder path. Include the comp
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    {{C:\greengrass\v2}}\bin\greengrass-cli deployment create ^
      --recipeDir {{%USERPROFILE%\greengrassv2}}\recipes ^
      --artifactDir {{%USERPROFILE%\greengrassv2}}\artifacts ^
@@ -215,7 +215,7 @@ You must use the following format for the artifact folder path. Include the comp
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    {{C:\greengrass\v2}}\bin\greengrass-cli deployment create `
      --recipeDir {{~/greengrassv2}}/recipes `
      --artifactDir {{~/greengrassv2}}/artifacts `
@@ -231,14 +231,14 @@ You must use the following format for the artifact folder path. Include the comp
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/com.example.HelloWorld.log
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    type {{C:\greengrass\v2}}\logs\com.example.HelloWorld.log
    ```
 
@@ -247,7 +247,7 @@ You must use the following format for the artifact folder path. Include the comp
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\logs\com.example.HelloWorld.log -Tail 10 -Wait
    ```
 
@@ -261,28 +261,28 @@ You must use the following format for the artifact folder path. Include the comp
 **Note**
 If the file doesn't exist, the local deployment may not be complete yet. If the file doesn't exist within 15 seconds, the deployment likely failed. This can occur if your recipe isn't valid, for example. Run the following command to view the AWS IoT Greengrass core log file. This file includes logs from the Greengrass core device's deployment service.
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
    ```
 
-   ```
+   ```cmd
    type {{C:\greengrass\v2}}\logs\greengrass.log
    ```
 <a name="windows-cmd-type-observe-logs"></a>The `type` command writes the file's contents to the terminal. Run this command multiple times to observe changes in the file.
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
    ```
 
 1. Modify the local component to iterate and test your code. Open `hello_world.py` in a text editor, and add the following code at line 4 to edit the message that the AWS IoT Greengrass core logs.
 
-   ```
+   ```python
    message += " Greetings from your first Greengrass component."
    ```
 
    The `hello_world.py` script should now have the following contents.
 
-   ```
+   ```python
    import sys
 
    message = "Hello, %s!" % sys.argv[1]
@@ -297,7 +297,7 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo {{/greengrass/v2}}/bin/greengrass-cli deployment create \
      --recipeDir {{~/greengrassv2}}/recipes \
      --artifactDir {{~/greengrassv2}}/artifacts \
@@ -307,7 +307,7 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    {{C:\greengrass\v2}}\bin\greengrass-cli deployment create ^
      --recipeDir {{%USERPROFILE%\greengrassv2}}\recipes ^
      --artifactDir {{%USERPROFILE%\greengrassv2}}\artifacts ^
@@ -317,7 +317,7 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    {{C:\greengrass\v2}}\bin\greengrass-cli deployment create `
      --recipeDir {{~/greengrassv2}}/recipes `
      --artifactDir {{~/greengrassv2}}/artifacts `
@@ -333,7 +333,7 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo {{/greengrass/v2}}/bin/greengrass-cli component restart \
      --names "com.example.HelloWorld"
    ```
@@ -341,7 +341,7 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    {{C:\greengrass\v2}}\bin\greengrass-cli component restart ^
      --names "com.example.HelloWorld"
    ```
@@ -349,7 +349,7 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    {{C:\greengrass\v2}}\bin\greengrass-cli component restart `
      --names "com.example.HelloWorld"
    ```
@@ -361,14 +361,14 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/com.example.HelloWorld.log
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    type {{C:\greengrass\v2}}\logs\com.example.HelloWorld.log
    ```
 
@@ -377,7 +377,7 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\logs\com.example.HelloWorld.log -Tail 10 -Wait
    ```
 
@@ -397,13 +397,13 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano hello-world-config-update.json
       ```
 
    1. Copy and paste the following JSON object into the file. This JSON object defines a configuration update that merges the value `friend` to the `Message` parameter to update its value. This configuration update doesn't specify any values to reset. You don't need to reset the `Message` parameter because the merge update replaces the existing value.
 
-      ```
+      ```json
       {
         "com.example.HelloWorld": {
           "MERGE": {
@@ -418,7 +418,7 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       sudo {{/greengrass/v2}}/bin/greengrass-cli deployment create \
         --merge "com.example.HelloWorld=1.0.0" \
         --update-config hello-world-config-update.json
@@ -427,7 +427,7 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-      ```
+      ```cmd
       {{C:\greengrass\v2}}\bin\greengrass-cli deployment create ^
         --merge "com.example.HelloWorld=1.0.0" ^
         --update-config hello-world-config-update.json
@@ -436,7 +436,7 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 ------
 #### [ PowerShell ]
 
-      ```
+      ```ps
       {{C:\greengrass\v2}}\bin\greengrass-cli deployment create `
         --merge "com.example.HelloWorld=1.0.0" `
         --update-config hello-world-config-update.json
@@ -449,14 +449,14 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       sudo tail -f {{/greengrass/v2}}/logs/com.example.HelloWorld.log
       ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-      ```
+      ```cmd
       type {{C:\greengrass\v2}}\logs\com.example.HelloWorld.log
       ```
 
@@ -465,7 +465,7 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 ------
 #### [ PowerShell ]
 
-      ```
+      ```ps
       gc {{C:\greengrass\v2}}\logs\com.example.HelloWorld.log -Tail 10 -Wait
       ```
 
@@ -482,21 +482,21 @@ If the file doesn't exist, the local deployment may not be complete yet. If the 
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo {{/greengrass/v2}}/bin/greengrass-cli deployment create --remove="com.example.HelloWorld"
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    {{C:\greengrass\v2}}\bin\greengrass-cli deployment create --remove="com.example.HelloWorld"
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    {{C:\greengrass\v2}}\bin\greengrass-cli deployment create --remove="com.example.HelloWorld"
    ```
 
@@ -509,21 +509,21 @@ This step is required for you to deploy the component back to the core device af
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo {{/greengrass/v2}}/bin/greengrass-cli component list
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    {{C:\greengrass\v2}}\bin\greengrass-cli component list
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    {{C:\greengrass\v2}}\bin\greengrass-cli component list
    ```
 

@@ -13,7 +13,7 @@ The role policy allows AWS CloudHSM to create Amazon CloudWatch Logs log groups 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -42,7 +42,7 @@ The trust policy for the **AWSServiceRoleForCloudHSM** role allows AWS CloudHSM 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

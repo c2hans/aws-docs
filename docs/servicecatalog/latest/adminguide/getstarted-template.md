@@ -19,7 +19,7 @@ The sample template provided for this tutorial, `development-environment.templat
 
 The text of the sample template follows:
 
-```
+```json
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
 

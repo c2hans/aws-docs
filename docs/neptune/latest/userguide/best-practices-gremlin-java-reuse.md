@@ -8,7 +8,7 @@ Re-use the same client (or `GraphTraversalSource`) object across multiple thread
 
 This also applies to `GraphTraversalSource`, which creates a `Client` object internally. For example, the following code causes a new `Client` object to be instantiated:
 
-```
+```java
 import static org.apache.tinkerpop.gremlin.process.traversal.AnonymousTraversalSource.traversal;
 
   /////

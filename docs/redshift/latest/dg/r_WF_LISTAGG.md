@@ -54,7 +54,7 @@ The following examples uses the WINSALES table. For a description of the WINSALE
 
 The following example returns a list of seller IDs, ordered by seller ID.
 
-```
+```sql
 select listagg(sellerid)
 within group (order by sellerid)
 over() from winsales;
@@ -71,7 +71,7 @@ over() from winsales;
 
 The following example returns a list of seller IDs for buyer B, ordered by date.
 
-```
+```sql
 select listagg(sellerid)
 within group (order by dateid)
 over () as seller
@@ -88,7 +88,7 @@ where buyerid = 'b' ;
 
 The following example returns a comma-separated list of sales dates for buyer B.
 
-```
+```sql
 select listagg(dateid,',')
 within group (order by sellerid desc,salesid asc)
 over () as dates
@@ -105,7 +105,7 @@ where buyerid  = 'b';
 
 The following example uses DISTINCT to return a list of unique sales dates for buyer B.
 
-```
+```sql
 select listagg(distinct dateid,',')
 within group (order by sellerid desc,salesid asc)
 over () as dates
@@ -122,7 +122,7 @@ where buyerid  = 'b';
 
 The following example returns a comma-separated list of sales IDs for each buyer ID.
 
-```
+```sql
 select buyerid,
 listagg(salesid,',')
 within group (order by salesid)
@@ -149,7 +149,7 @@ order by buyerid;
 
 When you set the `enable_large_strings_opt_in` parameter to `Yes`, the following example demonstrates LISTAGG support with concatenated results up to 16,000,000 bytes:
 
-```
+```SQL
 CREATE TABLE large_data (
     id INT,
     content VARCHAR(65535)

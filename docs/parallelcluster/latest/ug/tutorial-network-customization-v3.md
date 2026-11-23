@@ -46,7 +46,7 @@ Create a launch template that defines the network interface configuration for `p
 
 Run the following AWS CLI command to create the launch template (`lt-123456789`):
 
-```
+```bash
 aws ec2 create-launch-template \
   --region us-east-1 \
   --launch-template-name override-lt \
@@ -94,7 +94,7 @@ aws ec2 create-launch-template \
 
 Create a cluster configuration that uses the `LaunchTemplateOverrides` parameter to reference the launch template you created.
 
-```
+```yaml
 Region: us-east-1
 HeadNode:
   InstanceType: c5.xlarge

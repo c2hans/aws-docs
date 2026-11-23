@@ -13,7 +13,7 @@ For more information about the dataset and the data transformation that the exam
 
 To download and explore the dataset, run the following code in your notebook:
 
-```
+```python
 !wget -N https://archive.ics.uci.edu/ml/machine-learning-databases/00222/bank-additional.zip
 !unzip -o bank-additional.zip
 data = pd.read_csv('./bank-additional/bank-additional-full.csv', sep=';')
@@ -29,7 +29,7 @@ Before creating the hyperparameter tuning job, prepare the data and upload it to
 
 Run the following code in your notebook:
 
-```
+```python
 data['no_previous_contact'] = np.where(data['pdays'] == 999, 1, 0)                                 # Indicator variable to capture when pdays takes a value of 999
 data['not_working'] = np.where(np.in1d(data['job'], ['student', 'retired', 'unemployed']), 1, 0)   # Indicator for individuals not actively employed
 model_data = pd.get_dummies(data)                                                                  # Convert categorical variables to sets of indicators

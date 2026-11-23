@@ -84,7 +84,7 @@ In this step, you use the AWS Secrets Manager API to create a secret for your Tw
 1. First, create the secret.
    + Replace {{twilio-auth-token}} with your Twilio auth token.
 
-   ```
+   ```bash
    aws secretsmanager create-secret --name greengrass-TwilioAuthToken --secret-string {{twilio-auth-token}}
    ```
 **Note**
@@ -103,7 +103,7 @@ In this step, you use the AWS IoT Greengrass API to create a secret resource for
 ------
 #### [ JSON Expanded ]
 
-   ```
+   ```bash
    aws greengrass create-resource-definition --name MyGreengrassResources --initial-version '{
        "Resources": [
            {
@@ -122,7 +122,7 @@ In this step, you use the AWS IoT Greengrass API to create a secret resource for
 ------
 #### [ JSON Single-line ]
 
-   ```
+   ```bash
    aws greengrass create-resource-definition \
    --name MyGreengrassResources \
    --initial-version '{"Resources": [{"Id": "TwilioAuthToken", "Name": "MyTwilioAuthToken", "ResourceDataContainer": {"SecretsManagerSecretResourceData": {"ARN": "{{secret-arn}}"}}}]}'
@@ -145,7 +145,7 @@ In this step, you configure parameters for the Twilio Notifications connector.
 ------
 #### [ JSON Expanded ]
 
-   ```
+   ```bash
    aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
        "Connectors": [
            {
@@ -165,7 +165,7 @@ In this step, you configure parameters for the Twilio Notifications connector.
 ------
 #### [ JSON Single-line ]
 
-   ```
+   ```bash
    aws greengrass create-connector-definition \
    --name MyGreengrassConnectors \
    --initial-version '{"Connectors": [{"Id": "MyTwilioNotificationsConnector", "ConnectorArn": "arn:aws:greengrass:{{region}}::/connectors/TwilioNotifications/versions/4", "Parameters": {"TWILIO_ACCOUNT_SID": "{{account-sid}}", "TwilioAuthTokenSecretArn": "{{secret-arn}}", "TwilioAuthTokenSecretArn-ResourceId": "TwilioAuthToken", "DefaultFromPhoneNumber": "{{phone-number}}"}}]}'
@@ -188,7 +188,7 @@ To create a Lambda function, you must first create a Lambda function *deployment
 
 1. Save the following Python code function in a local file named `temp_monitor.py`.
 
-   ```
+   ```python
    import greengrasssdk
    import json
    import random
@@ -243,7 +243,7 @@ Now, create a Lambda function that uses the deployment package.
 ------
 #### [ JSON Expanded ]
 
-   ```
+   ```bash
    aws iam create-role --role-name Lambda_empty --assume-role-policy '{
        "Version": "2012-10-17",
        "Statement": [
@@ -261,7 +261,7 @@ Now, create a Lambda function that uses the deployment package.
 ------
 #### [ JSON Single-line ]
 
-   ```
+   ```bash
    aws iam create-role --role-name Lambda_empty --assume-role-policy '{"Version": "2012-10-17",		 	 	  "Statement": [{"Effect": "Allow", "Principal": {"Service": "lambda.amazonaws.com"},"Action": "sts:AssumeRole"}]}'
    ```
 
@@ -274,7 +274,7 @@ AWS IoT Greengrass doesn't use this role because permissions for your Greengrass
 1. Use the AWS Lambda API to create the TempMonitor function. The following command assumes that the zip file is in the current directory.
    + Replace {{role-arn}} with the `Arn` that you copied.
 
-   ```
+   ```bash
    aws lambda create-function \
    --function-name TempMonitor \
    --zip-file fileb://temp_monitor_python.zip \
@@ -285,7 +285,7 @@ AWS IoT Greengrass doesn't use this role because permissions for your Greengrass
 
 1. Publish a version of the function.
 
-   ```
+   ```bash
    aws lambda publish-version --function-name TempMonitor --description 'First version'
    ```
 
@@ -295,7 +295,7 @@ AWS IoT Greengrass doesn't use this role because permissions for your Greengrass
 **Note**
 AWS IoT Greengrass doesn't support Lambda aliases for **$LATEST** versions.
 
-   ```
+   ```bash
    aws lambda create-alias --function-name TempMonitor --name GG_TempMonitor --function-version 1
    ```
 
@@ -314,7 +314,7 @@ To use a Lambda function on an AWS IoT Greengrass core, you create a function de
 ------
 #### [ JSON Expanded ]
 
-   ```
+   ```bash
    aws greengrass create-function-definition --name MyGreengrassFunctions --initial-version '{
        "Functions": [
            {
@@ -333,7 +333,7 @@ To use a Lambda function on an AWS IoT Greengrass core, you create a function de
 ------
 #### [ JSON Single-line ]
 
-   ```
+   ```bash
    aws greengrass create-function-definition \
    --name MyGreengrassFunctions \
    --initial-version '{"Functions": [{"Id": "TempMonitorFunction", "FunctionArn": "{{alias-arn}}", "FunctionConfiguration": {"Executable": "temp_monitor.function_handler", "MemorySize": 16000,"Timeout": 5}}]}'
@@ -358,7 +358,7 @@ To use a Lambda function on an AWS IoT Greengrass core, you create a function de
 ------
 #### [ JSON Expanded ]
 
-   ```
+   ```bash
    aws greengrass create-subscription-definition --initial-version '{
        "Subscriptions": [
            {
@@ -386,7 +386,7 @@ To use a Lambda function on an AWS IoT Greengrass core, you create a function de
 ------
 #### [ JSON Single-line ]
 
-   ```
+   ```bash
    aws greengrass create-subscription-definition \
    --initial-version '{"Subscriptions": [{"Id": "TriggerNotification", "Source": "{{alias-arn}}", "Subject": "twilio/txt", "Target": "arn:aws:greengrass:{{region}}::/connectors/TwilioNotifications/versions/4"},{"Id": "TemperatureInput", "Source": "cloud", "Subject": "temperature/input", "Target": "{{alias-arn}}"},{"Id": "OutputStatus", "Source": "arn:aws:greengrass:{{region}}::/connectors/TwilioNotifications/versions/4", "Subject": "twilio/message/status", "Target": "cloud"}]}'
    ```
@@ -428,7 +428,7 @@ First, get the group ID and the ARN of the core definition version. These values
       + Replace {{group-id}} with the `Id` that you copied for the group.
       + Replace {{group-version-id}} with the `LatestVersion` that you copied for the group.
 
-      ```
+      ```bash
       aws greengrass get-group-version \
       --group-id {{group-id}} \
       --group-version-id {{group-version-id}}
@@ -444,7 +444,7 @@ First, get the group ID and the ARN of the core definition version. These values
    + Replace {{function-definition-version-arn}} with the `LatestVersionArn` that you copied for the function definition.
    + Replace {{subscription-definition-version-arn}} with the `LatestVersionArn` that you copied for the subscription definition.
 
-   ```
+   ```bash
    aws greengrass create-group-version \
    --group-id {{group-id}} \
    --core-definition-version-arn {{core-definition-version-arn}} \
@@ -465,7 +465,7 @@ Deploy the group to the core device.
 
    1. To check whether the daemon is running:
 
-      ```
+      ```bash
       ps aux | grep -E 'greengrass.*daemon'
       ```
 
@@ -473,7 +473,7 @@ Deploy the group to the core device.
 
    1. To start the daemon:
 
-      ```
+      ```bash
       cd /greengrass/ggc/core/
       sudo ./greengrassd start
       ```
@@ -482,7 +482,7 @@ Deploy the group to the core device.
    + Replace {{group-id}} with the `Id` that you copied for the group.
    + Replace {{group-version-id}} with the `Version` that you copied for the new group version.
 
-   ```
+   ```bash
    aws greengrass create-deployment \
    --deployment-type NewDeployment \
    --group-id {{group-id}} \
@@ -495,7 +495,7 @@ Deploy the group to the core device.
    + Replace {{group-id}} with the `Id` that you copied for the group.
    + Replace {{deployment-id}} with the `DeploymentId` that you copied for the deployment.
 
-   ```
+   ```bash
    aws greengrass get-deployment-status \
    --group-id {{group-id}} \
    --deployment-id {{deployment-id}}

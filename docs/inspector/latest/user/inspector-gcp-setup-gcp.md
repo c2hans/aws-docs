@@ -439,7 +439,7 @@ $ gcloud organizations get-iam-policy {{organization-id}} --format=json > policy
 
 In `policy.json`, add the following entries to `auditConfigs`. If an entry for the service already exists, add the log type to its `auditLogConfigs`. Keep everything else in the policy, including the `etag`. Don't add `exemptedMembers`.
 
-```
+```json
 {"service": "allServices", "auditLogConfigs": [{"logType": "DATA_WRITE"}]},
 {"service": "artifactregistry.googleapis.com", "auditLogConfigs": [{"logType": "DATA_READ"}]}
 ```

@@ -28,7 +28,7 @@ The following code example shows how to get started using Amazon SNS.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sns#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.sns.SnsClient
 import aws.sdk.kotlin.services.sns.model.ListTopicsRequest
 import aws.sdk.kotlin.services.sns.paginators.listTopicsPaginated
@@ -69,7 +69,7 @@ The following code example shows how to use `CreateTopic`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sns#code-examples).
 
-```
+```kotlin
 suspend fun createSNSTopic(topicName: String): String {
     val request =
         CreateTopicRequest {
@@ -92,7 +92,7 @@ The following code example shows how to use `DeleteTopic`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sns#code-examples).
 
-```
+```kotlin
 suspend fun deleteSNSTopic(topicArnVal: String) {
     val request =
         DeleteTopicRequest {
@@ -115,7 +115,7 @@ The following code example shows how to use `GetTopicAttributes`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sns#code-examples).
 
-```
+```kotlin
 suspend fun getSNSTopicAttributes(topicArnVal: String) {
     val request =
         GetTopicAttributesRequest {
@@ -138,7 +138,7 @@ The following code example shows how to use `ListSubscriptions`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sns#code-examples).
 
-```
+```kotlin
 suspend fun listSNSSubscriptions() {
     SnsClient.fromEnvironment { region = "us-east-1" }.use { snsClient ->
         val response = snsClient.listSubscriptions(ListSubscriptionsRequest {})
@@ -159,7 +159,7 @@ The following code example shows how to use `ListTopics`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sns#code-examples).
 
-```
+```kotlin
 suspend fun listSNSTopics() {
     SnsClient.fromEnvironment { region = "us-east-1" }.use { snsClient ->
         val response = snsClient.listTopics(ListTopicsRequest { })
@@ -179,7 +179,7 @@ The following code example shows how to use `Publish`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sns#code-examples).
 
-```
+```kotlin
 suspend fun pubTopic(
     topicArnVal: String,
     messageVal: String,
@@ -206,7 +206,7 @@ The following code example shows how to use `SetTopicAttributes`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sns#code-examples).
 
-```
+```kotlin
 suspend fun setTopAttr(
     attribute: String?,
     topicArnVal: String?,
@@ -236,7 +236,7 @@ The following code example shows how to use `Subscribe`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```kotlin
 suspend fun subEmail(
     topicArnVal: String,
     email: String,
@@ -257,7 +257,7 @@ suspend fun subEmail(
 ```
 Subscribe a Lambda function to a topic.
 
-```
+```kotlin
 suspend fun subLambda(
     topicArnVal: String?,
     lambdaArn: String?,
@@ -286,7 +286,7 @@ The following code example shows how to use `TagResource`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sns#code-examples).
 
-```
+```kotlin
 suspend fun addTopicTags(topicArn: String) {
     val tag =
         Tag {
@@ -326,7 +326,7 @@ The following code example shows how to use `Unsubscribe`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sns#code-examples).
 
-```
+```kotlin
 suspend fun unSub(subscriptionArnVal: String) {
     val request =
         UnsubscribeRequest {
@@ -384,7 +384,7 @@ The following code example shows how to publish SMS messages using Amazon SNS.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sns#code-examples).
 
-```
+```kotlin
 suspend fun pubTextSMS(
     messageVal: String?,
     phoneNumberVal: String?,
@@ -415,7 +415,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/usecases/topics_and_queues#code-examples).
 
-```
+```kotlin
 package com.example.sns
 
 import aws.sdk.kotlin.services.sns.SnsClient

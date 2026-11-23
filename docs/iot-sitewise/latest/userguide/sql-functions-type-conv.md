@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functi
 
 **Example of a SQL query using the listed functions:**
 
-```
+```SQL
 SELECT TO_TIMESTAMP (100) AS timestamp_value,
   TO_DATE(r.event_timestamp) AS date_value,
   TO_TIME(r.event_timestamp) AS time_value

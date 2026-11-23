@@ -25,7 +25,7 @@ The following code example shows how to use `ListChannels`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/mediapackage#code-examples).
 List channel ARNs and descriptions.
 
-```
+```rust
 async fn show_channels(client: &Client) -> Result<(), Error> {
     let list_channels = client.list_channels().send().await?;
 
@@ -54,7 +54,7 @@ The following code example shows how to use `ListOriginEndpoints`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/mediapackage#code-examples).
 List your endpoint descriptions and URLs.
 
-```
+```rust
 async fn show_endpoints(client: &Client) -> Result<(), Error> {
     let or_endpoints = client.list_origin_endpoints().send().await?;
 

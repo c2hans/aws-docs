@@ -18,28 +18,28 @@ The AgentCore CLI lifecycle commands identify a test by its A/B test ID. Get the
 **Example**
 List all A/B test jobs, or view one in detail, including its variants, execution status, and results:
 
-```
+```bash
 agentcore eval ab-test list
 agentcore eval ab-test get --id <ab-test-id>
 ```
 Start a test that you created with `--enable-on-create false`, or resume a paused test:
 
-```
+```bash
 agentcore eval ab-test resume --id <ab-test-id>
 ```
 Pause a running test. Traffic stops splitting and all requests route to the control variant. Can be resumed.
 
-```
+```bash
 agentcore eval ab-test pause --id <ab-test-id>
 ```
 Stop a test permanently. All traffic reverts to the control variant. This cannot be undone.
 
-```
+```bash
 agentcore eval ab-test stop --id <ab-test-id>
 ```
 Start a test (set execution status to `RUNNING`):
 
-```
+```python
 import boto3
 import uuid
 
@@ -54,7 +54,7 @@ print(f"Execution status: {response['executionStatus']}")
 ```
 Pause a running test:
 
-```
+```python
 response = client.update_ab_test(
     abTestId="customerSupportPromptTest-Ab1Cd2Ef3G",
     executionStatus="PAUSED",
@@ -64,7 +64,7 @@ print(f"Execution status: {response['executionStatus']}")
 ```
 Stop a running test permanently:
 
-```
+```python
 response = client.update_ab_test(
     abTestId="customerSupportPromptTest-Ab1Cd2Ef3G",
     executionStatus="STOPPED",
@@ -82,7 +82,7 @@ When the results are statistically significant, stop the test. For a target-base
 The `ab-test stop` command uses the AgentCore CLI, and the rule commands use the AWS CLI.
 For a target-based A/B test:
 
-```
+```bash
 agentcore eval ab-test stop --id <ab-test-id>
 
 aws bedrock-agentcore-control create-gateway-rule \
@@ -93,7 +93,7 @@ aws bedrock-agentcore-control create-gateway-rule \
 ```
 For a configuration-bundle A/B test:
 
-```
+```bash
 agentcore eval ab-test stop --id <ab-test-id>
 
 aws bedrock-agentcore-control create-gateway-rule \
@@ -105,7 +105,7 @@ aws bedrock-agentcore-control create-gateway-rule \
 The rule commands update the live Gateway immediately. The rule is not part of the project, and `agentcore deploy` does not manage it. To change an existing production rule instead, use `aws bedrock-agentcore-control update-gateway-rule --gateway-identifier <gateway-id> --rule-id <rule-id>`.
 Save the rule ID returned by the create command. To find the rule ID later, run `agentcore gateway rule list --gateway-id <gateway-id>`. If the rule is later replaced or no longer needed, remove it:
 
-```
+```bash
 aws bedrock-agentcore-control delete-gateway-rule \
   --gateway-identifier <gateway-id> \
   --rule-id <rule-id>
@@ -119,12 +119,12 @@ Delete an A/B test and its associated metadata. The test must be in `STOPPED` ex
 
 **Example**
 
-```
+```bash
 agentcore eval ab-test delete --id <ab-test-id>
 ```
 Stop and then delete:
 
-```
+```python
 import boto3
 import uuid
 

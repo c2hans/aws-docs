@@ -46,6 +46,11 @@ Type: String
 Valid Values: `SUBMITTED | STARTED | CANCELLED | CANCELLING | FAILED | SUCCESS`
 Required: Yes
 
+ ** intermediateTableConfiguration **   <a name="API-Type-ProtectedJobSummary-intermediateTableConfiguration"></a>
+The intermediate table that the protected job populated. This field is present when the protected job was triggered by a `PopulateIntermediateTable` operation.
+Type: [IntermediateTableOutputConfiguration](API_IntermediateTableOutputConfiguration.md) object
+Required: No
+
  ** jobComputePayerAccountId **   <a name="API-Type-ProtectedJobSummary-jobComputePayerAccountId"></a>
 The account ID of the member that pays for the job compute costs.
 Type: String

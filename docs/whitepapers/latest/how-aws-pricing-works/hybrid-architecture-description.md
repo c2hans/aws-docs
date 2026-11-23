@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
 
 ![AWS Outpost with Amazon EKS Control Plane and Data Plane Architecture](https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/images/aws-outpost-with-amazon-eks-control-plane-and-data-plane-architecture.png)
 
+*AWS Outpost with Amazon EKS Control Plane and Data Plane Architecture*
+
 ## Architecture
 <a name="architecture-1"></a>
 +  The Control Plane for Amazon EKS remains in the Region, which means in the case of Amazon EKS, the Kubernetes Primary node will stay in the Availability Zone deployed to the Region (not on the Outposts).

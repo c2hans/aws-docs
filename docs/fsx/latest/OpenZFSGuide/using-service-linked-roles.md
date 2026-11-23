@@ -44,7 +44,7 @@ The AWSServiceRoleForAmazonFSx is used by all Amazon FSx file system types; some
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

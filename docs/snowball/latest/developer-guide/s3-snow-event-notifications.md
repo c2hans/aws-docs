@@ -47,7 +47,7 @@ You need to subscribe to the topic s3SnowEvents/{{Device ID}} (or {{Cluster Id}}
 
 The following is an example Amazon S3 compatible storage on Snowball Edge event log:
 
-```
+```JSON
 {
     "eventDetails": {
         "additionalEventData": {

@@ -33,7 +33,7 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/migrationguide/key-considera
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

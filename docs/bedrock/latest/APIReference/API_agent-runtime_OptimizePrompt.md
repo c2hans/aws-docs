@@ -159,7 +159,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of OptimizePrompt.
 
-```
+```http
 POST /optimize-prompt HTTP/1.1
 Content-type: application/json
 

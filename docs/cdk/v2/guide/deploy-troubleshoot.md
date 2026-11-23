@@ -13,7 +13,7 @@ When deploying CDK applications that contain AWS Identity and Access Management 
 
 The following is a basic example of creating an IAM role that can be assumed by Amazon CloudWatch Logs using its service principal:
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import { Construct } from 'constructs';

@@ -24,7 +24,7 @@ The following code example shows how to get started using Aurora.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/aurora#code-examples).
 
-```
+```ruby
 require 'aws-sdk-rds'
 
 # Creates an Amazon RDS client for the AWS Region

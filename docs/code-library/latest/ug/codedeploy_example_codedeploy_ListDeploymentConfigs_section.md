@@ -39,7 +39,7 @@ For more information, see [View deployment configuration details with CodeDeploy
 **Tools for PowerShell V4**
 **Example 1: This example gets a list of available deployment configurations.**
 
-```
+```powershell
 Get-CDDeploymentConfigList
 ```
 **Output:**
@@ -55,7 +55,7 @@ CodeDeployDefault.HalfAtATime
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of available deployment configurations.**
 
-```
+```powershell
 Get-CDDeploymentConfigList
 ```
 **Output:**

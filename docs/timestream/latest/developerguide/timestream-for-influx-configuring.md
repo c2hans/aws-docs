@@ -72,7 +72,7 @@ For information about each setting, see [Settings for DB instances](#timestream-
 
 For Linux, macOS, or Unix:
 
-```
+```bash
 aws timestream-influxdb create-db-instance \
     --name myinfluxDbinstance \
     --allocated-storage 400 \
@@ -86,7 +86,7 @@ aws timestream-influxdb create-db-instance \
 
 For Windows:
 
-```
+```bash
 aws timestream-influxdb create-db-instance \
     --name myinfluxDbinstance \
     --allocated-storage 400 \

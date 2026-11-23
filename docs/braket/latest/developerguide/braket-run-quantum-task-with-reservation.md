@@ -12,7 +12,7 @@ During a reservation, both reservation and regular tasks can be created. To veri
 
 You can create quantum tasks using Python SDKs such as [Braket](https://docs.aws.amazon.com/braket/latest/developerguide/braket-references.html), [CUDA-Q](https://github.com/NVIDIA/cuda-quantum), [PennyLane](https://github.com/amazon-braket/amazon-braket-pennylane-plugin-python), [Qiskit](https://github.com/amazon-braket/qiskit-braket-provider), or directly with boto3 ([Working with Boto3](https://docs.aws.amazon.com/braket/latest/developerguide/braket-using-boto3.html)). To use reservations, you must have version [v1.79.0](https://github.com/amazon-braket/amazon-braket-sdk-python/releases/tag/v1.79.0) or higher of the [Amazon Braket Python SDK](https://github.com/amazon-braket/amazon-braket-sdk-python). You can update to the latest Braket SDK, Qiskit provider and PennyLane plugin with the following code.
 
-```
+```python
 pip install --upgrade amazon-braket-sdk amazon-braket-pennylane-plugin qiskit-braket-provider
 ```
 
@@ -22,7 +22,7 @@ The recommended way to run a task within your scheduled reservation is to use th
 
 First, define a quantum circuit and the device. Then use the reservation context and run the task. **Ensure that your entire workload is run inside the `with` block; anything run outside the scope of the `with` block will not be associated with your reservation\!**
 
-```
+```python
 from braket.aws import AwsDevice, DirectReservation
 from braket.circuits import Circuit
 from braket.devices import Devices
@@ -37,7 +37,7 @@ with DirectReservation(device, reservation_arn="<my_reservation_arn>"):
 
 You can create quantum tasks in a reservation using CUDA-Q, PennyLane, and Qiskit plugins, as long as the `DirectReservation` context is active while creating quantum tasks. For example, with the Qiskit-Braket provider, you can run tasks as follows.
 
-```
+```python
 from braket.devices import Devices
 from braket.aws import DirectReservation
 from qiskit import QuantumCircuit
@@ -56,7 +56,7 @@ with DirectReservation(Devices.IonQ.ForteEnterprise1, reservation_arn="<my_reser
 
 Similarly, the following code runs a circuit during a reservation using the Braket-PennyLane plugin.
 
-```
+```python
 from braket.devices import Devices
 from braket.aws import DirectReservation
 import pennylane as qml
@@ -78,7 +78,7 @@ with DirectReservation(Devices.IonQ.ForteEnterprise1, reservation_arn="<my_reser
 
 Alternatively, you can manually set the reservation context with the following code.
 
-```
+```python
 # set reservation context
 reservation_context = DirectReservation(device, reservation_arn="<my_reservation_arn>").start()
 
@@ -93,7 +93,7 @@ The cell containing the `.start()` call should *only be run once*.
 
 To switch back to the on-demand mode: Restart the Jupyter notebook, or call the following to change the context back to on-demand mode.
 
-```
+```python
 reservation_context.stop()  # unset reservation context
 ```
 
@@ -104,7 +104,7 @@ reservation_context.stop()  # unset reservation context
 
 Another way to create tasks during a reservation is to explicitly pass the reservation ARN when calling `device.run()`.
 
-```
+```python
 task = device.run(bell, shots=100, reservation_arn="<my_reservation_arn>")
 ```
 
@@ -112,7 +112,7 @@ This method directly associates the quantum task with the reservation ARN, ensur
 
 When directly using boto3, pass the reservation ARN as an association when creating a task.
 
-```
+```python
 import boto3
 
 braket_client = boto3.client("braket")

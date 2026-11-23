@@ -13,7 +13,7 @@ Here are a few examples of using web federated identity to obtain credentials in
 
 The following code shows how to use Login with Amazon as an identity provider.
 
-```
+```html
 <a href="#" id="login">
   <img border="0" alt="Login with Amazon"
     src="https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gold_156x32.png"
@@ -61,7 +61,7 @@ The following code shows how to use Login with Amazon as an identity provider.
 
 The following code shows how to use Facebook Login as an identity provider:
 
-```
+```html
 <button id="login">Login</button>
 <div id="fb-root"></div>
 <script type="text/javascript">
@@ -108,7 +108,7 @@ window.fbAsyncInit = function() {
 
 The following code shows how to use Google\+ Sign-in as an identity provider. The access token used for web identity federation from Google is stored in `response.id_token` instead of `access_token` like other identity providers.
 
-```
+```html
 <span
   id="login"
   class="g-signin"

@@ -19,7 +19,7 @@ This section shows examples of identity-based policies to use with Quick.
 
 The following example shows the IAM permissions needed for AWS Quick IAM console administration actions.
 
-```
+```json
 {
    "Version": "2012-10-17"		 	 	 ,
    "Statement": [
@@ -58,7 +58,7 @@ The following example shows the IAM permissions needed for AWS Quick IAM console
 
 The following example shows an IAM policy that allows dashboard sharing and embedding for specific dashboards.
 
-```
+```json
 {
     "Version": "2012-10-17"		 	 	 ,
     "Statement": [
@@ -128,7 +128,7 @@ The following examples show IAM policies that allow a AWS Quick administrator to
 
 The following example shows an IAM policy that allows a AWS Quick administrator or a developer to manage custom permissions.
 
-```
+```json
 {
     "Version": "2012-10-17"		 	 	 ,
     "Statement": [
@@ -145,7 +145,7 @@ The following example shows an IAM policy that allows a AWS Quick administrator 
 
 The following example shows another way to grant the same permissions as shown in the previous example.
 
-```
+```json
 {
     "Version": "2012-10-17"		 	 	 ,
     "Statement": [
@@ -170,7 +170,7 @@ The following example shows another way to grant the same permissions as shown i
 
 The following example shows a policy that allows viewing, updating, and creating email report templates in AWS Quick, as well as obtaining verification attributes for an Amazon Simple Email Service identity. This policy allows a AWS Quick administrator to create and update custom email report templates, and to confirm that any custom email address they want to send email reports from is a verified identity in SES.
 
-```
+```json
 {
     "Version": "2012-10-17"		 	 	 ,
     "Statement": [
@@ -196,7 +196,7 @@ The following example shows a policy that allows viewing, updating, and creating
 
 The following example shows a policy that allows AWS Quick admins to create an Enterprise edition AWS Quick account with AWS Quick managed users.
 
-```
+```json
 {
     "Version": "2012-10-17"		 	 	 ,
     "Statement": [
@@ -243,7 +243,7 @@ The following example shows a policy that allows AWS Quick admins to create an E
 
 The following example shows a policy that allows creating AWS Quick users only. For `quicksight:CreateReader`, `quicksight:CreateUser`, and `quicksight:CreateAdmin`, you can limit the permissions to **"Resource": "arn:aws:quicksight::{{<YOUR\_AWS\_ACCOUNTID>}}:user/${aws:userid}"**. For all other permissions described in this guide, use **"Resource": "\*"**. The resource you specify limits the scope of the permissions to the specified resource.
 
-```
+```json
 {
     "Version": "2012-10-17"		 	 	 ,
     "Statement": [
@@ -263,7 +263,7 @@ The following example shows a policy that allows creating AWS Quick users only. 
 
 The following example shows a policy that allows AWS Quick administrators and developers to create and manage groups.
 
-```
+```json
 {
     "Version": "2012-10-17"		 	 	 ,
     "Statement": [
@@ -333,7 +333,7 @@ This policy also allows users to subscribe to AWS Quick Pro roles that grant acc
 
 This example explicitly denies permission to unsubscribe from AWS Quick.
 
-```
+```json
 {
     "Statement": [
         {
@@ -397,7 +397,7 @@ This policy does not grant permissions to create Pro roles in AWS Quick. To crea
 
 This example explicitly denies permission to unsubscribe from AWS Quick.
 
-```
+```json
 {
     "Statement": [
         {
@@ -448,7 +448,7 @@ This example explicitly denies permission to unsubscribe from AWS Quick.
 
 The following example for AWS Quick Enterprise edition shows a policy that allows subscribing, creating users, and managing Active Directory in a AWS Quick account that uses Active Directory for identity management. This example explicitly denies permission to unsubscribe from AWS Quick.
 
-```
+```json
 {
     "Version": "2012-10-17"		 	 	 ,
     "Statement": [
@@ -489,7 +489,7 @@ The following example for AWS Quick Enterprise edition shows a policy that allow
 
 The following example shows an IAM policy that allows Active Directory group management for an AWS Quick Enterprise edition account.
 
-```
+```json
 {
     "Statement": [
         {
@@ -554,7 +554,7 @@ The following example shows an IAM policy that allows access to the admin asset 
 
 The following example shows an IAM policy that allows access to the admin key management console.
 
-```
+```json
 {
    "Version":"2012-10-17"		 	 	 ,
    "Statement":[
@@ -580,7 +580,7 @@ To specify which keys you want a user to be able to access, add the ARNs of the 
 
 The example below grants `Describe` permissions for all CMKs that are registered to a AWS Quick account and `Update` permissons to specific CMKs that are registered to the AWS Quick account.
 
-```
+```json
 {
    "Version":"2012-10-17"		 	 	 ,
    "Statement":[

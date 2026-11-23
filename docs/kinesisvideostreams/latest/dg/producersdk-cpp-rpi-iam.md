@@ -33,7 +33,7 @@ These procedures are meant to help you quickly get started using an AWS access k
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [{

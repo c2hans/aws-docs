@@ -40,7 +40,7 @@ If your EKS cluster was created with eksctl version higher than **0.181.0**, the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -190,7 +190,7 @@ Make sure the IAM Identity creating the pod identity association, such as an EKS
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

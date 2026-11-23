@@ -27,7 +27,7 @@ The role permissions policy named AppIntegrationsServiceLinkedRolePolicy allows 
 
 ****
 
-```
+```json
      {
     "Version":"2012-10-17",
     "Statement": [

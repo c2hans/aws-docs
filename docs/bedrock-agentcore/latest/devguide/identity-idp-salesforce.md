@@ -40,7 +40,7 @@ For more details, refer to Salesforce’s documentation [Define an OpenID Connec
 
 To configure the outbound Salesforce resource provider, use the following:
 
-```
+```json
 {
         "name": "NAME",
         "credentialProviderVendor": "SalesforceOauth2",

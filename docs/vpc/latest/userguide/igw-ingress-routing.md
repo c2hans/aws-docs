@@ -54,7 +54,7 @@ Before starting this tutorial, ensure you have:
 
 1. **Verify your BYOIP pool**: Confirm your pool is ready by running:
 
-   ```
+   ```bash
    aws ec2 describe-public-ipv4-pools --region us-east-1
    ```
 
@@ -120,7 +120,7 @@ Ensure you have not reached your VPC quota limit. For more information, see [Ama
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 create-vpc --cidr-block 10.0.0.0/16 --tag-specifications 'ResourceType=vpc,Tags=[{Key=Name,Value=IGW-Ingress-VPC}]' --region us-east-1
 ```
 
@@ -147,7 +147,7 @@ Complete this step to create an internet gateway and attach it to your VPC to en
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 create-internet-gateway --tag-specifications 'ResourceType=internet-gateway,Tags=[{Key=Name,Value=IGW-Ingress-Gateway}]' --region us-east-1
 
 aws ec2 attach-internet-gateway --internet-gateway-id igw-0123456789abcdef0 --vpc-id vpc-0123456789abcdef0 --region us-east-1
@@ -178,7 +178,7 @@ Complete this step to create a subnet where your target instance will be deploye
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 create-subnet \
     --vpc-id vpc-0123456789abcdef0 \
     --cidr-block 10.0.1.0/24 \
@@ -209,7 +209,7 @@ Complete this step to create a route table for your subnet and associate it with
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 create-route-table \
     --vpc-id vpc-0123456789abcdef0 \
     --tag-specifications 'ResourceType=route-table,Tags=[{Key=Name,Value=Target-Subnet-Route-Table}]' \
@@ -248,7 +248,7 @@ This security group opens SSH ports to all internet traffic for this tutorial. T
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 create-security-group \
     --group-name IGW-Target-SG \
     --description "Security group for IGW ingress routing target instance" \
@@ -301,7 +301,7 @@ Complete this step to launch the EC2 instance that will receive traffic from you
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 run-instances \
     --image-id ami-0abcdef1234567890 \
     --count 1 \
@@ -324,7 +324,7 @@ aws ec2 run-instances \
 
 **To find the ENI ID using AWS CLI:**
 
-```
+```bash
 aws ec2 describe-instances --instance-ids i-0123456789abcdef0 --query 'Reservations[0].Instances[0].NetworkInterfaces[0].NetworkInterfaceId' --output text --region us-east-1
 ```
 
@@ -353,7 +353,7 @@ Complete this step to create a dedicated route table for the internet gateway th
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 create-route-table \
     --vpc-id vpc-0123456789abcdef0 \
     --tag-specifications 'ResourceType=route-table,Tags=[{Key=Name,Value=IGW-Ingress-Route-Table}]' \
@@ -377,7 +377,7 @@ Complete this step to associate your route table with the internet gateway to en
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 associate-route-table \
     --route-table-id rtb-0123456789abcdef0 \
     --gateway-id igw-0123456789abcdef0 \
@@ -403,7 +403,7 @@ Complete this step to associate your BYOIP pool with the internet gateway route 
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 associate-route-table \
     --route-table-id rtb-0123456789abcdef0 \
     --public-ipv4-pool pool-12345678901234567 \
@@ -433,7 +433,7 @@ Complete this step to add a route that directs traffic from your BYOIP range to 
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 create-route \
     --route-table-id rtb-0123456789abcdef0 \
     --destination-cidr-block 203.0.113.0/24 \
@@ -460,13 +460,13 @@ Complete this step to configure your target instance to properly handle traffic 
 
    First, find your network interface name:
 
-   ```
+   ```bash
    ip link show
    ```
 
    Then add the IP address (replace `203.0.113.10` with an IP from your BYOIP range):
 
-   ```
+   ```bash
    sudo ip addr add 203.0.113.10/32 dev eth0
    ```
 
@@ -479,7 +479,7 @@ Complete this step to configure your target instance to properly handle traffic 
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 modify-network-interface-attribute \
     --network-interface-id eni-0abcdef1234567890 \
     --no-source-dest-check \
@@ -503,13 +503,13 @@ Complete this step to add BYOIP addresses to your instance and disable source/de
 
    First, find your network interface name:
 
-   ```
+   ```bash
    ip link show
    ```
 
    Then add the IP address (replace `ens5` with your actual interface name):
 
-   ```
+   ```bash
    sudo ip addr add 203.0.113.10/32 dev ens5
    ```
 
@@ -522,7 +522,7 @@ Complete this step to add BYOIP addresses to your instance and disable source/de
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 modify-network-interface-attribute \
     --network-interface-id eni-0abcdef1234567890 \
     --no-source-dest-check \
@@ -536,13 +536,13 @@ Complete this step to verify that internet traffic is properly routed to your ta
 
 1. On your target instance, monitor incoming traffic using tcpdump:
 
-   ```
+   ```bash
    sudo tcpdump -i any icmp
    ```
 
 1. From another terminal or computer, test connectivity to your BYOIP IP address:
 
-   ```
+   ```bash
    ping 203.0.113.10
    ```
 
@@ -622,7 +622,7 @@ Complete this step to terminate the EC2 instance and stop incurring charges for 
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 terminate-instances --instance-ids i-0123456789abcdef0 --region us-east-1
 ```
 
@@ -647,7 +647,7 @@ Complete this step to detach and delete the internet gateway from your VPC.
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 detach-internet-gateway --internet-gateway-id igw-0123456789abcdef0 --vpc-id vpc-0123456789abcdef0 --region us-east-1
 
 aws ec2 delete-internet-gateway --internet-gateway-id igw-0123456789abcdef0 --region us-east-1
@@ -668,7 +668,7 @@ Complete this step to delete the VPC and all associated resources to complete th
 
 **AWS CLI**
 
-```
+```bash
 aws ec2 delete-vpc --vpc-id vpc-0123456789abcdef0 --region us-east-1
 ```
 

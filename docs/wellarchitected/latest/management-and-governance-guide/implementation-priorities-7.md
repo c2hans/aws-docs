@@ -17,6 +17,8 @@ Depending on your requirements, you may elect to implement more than one version
 
 ![Distribution models for catalog sharing](https://docs.aws.amazon.com/wellarchitected/latest/management-and-governance-guide/images/catalog-sharing-options.png)
 
+*Distribution models for catalog sharing*
+
 ## Curate templates for reuse
 <a name="src-curate"></a>
 

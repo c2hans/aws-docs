@@ -45,7 +45,7 @@ To manage virtual clusters in your AWS account, create an IAM policy with the fo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -120,7 +120,7 @@ To submit jobs on the virtual clusters in your AWS account, create an IAM policy
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -156,7 +156,7 @@ If you haven't created an Amazon S3 bucket, you need to add `s3:CreateBucket` pe
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

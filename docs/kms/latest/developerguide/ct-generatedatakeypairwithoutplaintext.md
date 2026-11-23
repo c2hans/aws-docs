@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-generatedat
 
 The following example shows an AWS CloudTrail log entry for the [GenerateDataKeyPairWithoutPlaintext](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKeyPairWithoutPlaintext.html) operation. This example records an operation that generates an RSA key pair that is encrypted under a symmetric encryption AWS KMS key.
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

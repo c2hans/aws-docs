@@ -27,7 +27,7 @@ The following code example shows how to use `DeleteSubscriptionFilter`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch-logs#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/core/utils/Outcome.h>
 #include <aws/logs/CloudWatchLogsClient.h>
@@ -36,7 +36,7 @@ Include the required files.
 ```
 Delete the subscription filter.
 
-```
+```cpp
         Aws::CloudWatchLogs::CloudWatchLogsClient cwl;
         Aws::CloudWatchLogs::Model::DeleteSubscriptionFilterRequest request;
         request.SetFilterName(filter_name);
@@ -63,7 +63,7 @@ The following code example shows how to use `DescribeSubscriptionFilters`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch-logs#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/core/utils/Outcome.h>
 #include <aws/logs/CloudWatchLogsClient.h>
@@ -74,7 +74,7 @@ Include the required files.
 ```
 List the subscription filters.
 
-```
+```cpp
         Aws::CloudWatchLogs::CloudWatchLogsClient cwl;
         Aws::CloudWatchLogs::Model::DescribeSubscriptionFiltersRequest request;
         request.SetLogGroupName(log_group);
@@ -123,7 +123,7 @@ The following code example shows how to use `PutSubscriptionFilter`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch-logs#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/logs/CloudWatchLogsClient.h>
 #include <aws/logs/model/PutSubscriptionFilterRequest.h>
@@ -132,7 +132,7 @@ Include the required files.
 ```
 Create the subscription filter.
 
-```
+```cpp
         Aws::CloudWatchLogs::CloudWatchLogsClient cwl;
         Aws::CloudWatchLogs::Model::PutSubscriptionFilterRequest request;
         request.SetFilterName(filter_name);

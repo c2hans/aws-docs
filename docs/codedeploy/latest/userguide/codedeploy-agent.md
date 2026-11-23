@@ -148,7 +148,7 @@ For version 1.8.x and earlier, both the rpm and deb distributions ship with star
 
 To manage the CodeDeploy agent, use the `systemctl` utility:
 
-```
+```sh
 sudo systemctl start codedeploy-agent
 sudo systemctl stop codedeploy-agent
 sudo systemctl restart codedeploy-agent
@@ -157,7 +157,7 @@ sudo systemctl status codedeploy-agent
 
 On macOS, the agent runs as the launchd daemon `com.amazon.aws.codedeploy-agent`, defined in `/Library/LaunchDaemons/com.amazon.aws.codedeploy-agent.plist`. launchd starts the agent at boot and restarts it if it crashes. To manage the agent on macOS, use the `launchctl` utility:
 
-```
+```sh
 sudo launchctl bootstrap system /Library/LaunchDaemons/com.amazon.aws.codedeploy-agent.plist
 sudo launchctl bootout system/com.amazon.aws.codedeploy-agent
 sudo launchctl kickstart -k system/com.amazon.aws.codedeploy-agent

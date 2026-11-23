@@ -52,7 +52,7 @@ The multipart threshold decides when an upload switches from a single request to
 
 The following example sets a 32 MiB multipart threshold and 16 MiB parts:
 
-```
+```rust
 use aws_s3_transfer::config::PartSize;
 use aws_s3_transfer::types::ByteSize;
 use aws_s3_transfer::Client;
@@ -82,7 +82,7 @@ Concurrency is the number of in-flight requests the transfer manager runs at onc
 
 With `ConcurrencyMode::Auto`, the default, the transfer manager sizes concurrency from the host it runs on. Set an exact number with `ConcurrencyMode::Explicit`. Higher concurrency can raise throughput but uses more connections and memory.
 
-```
+```rust
 use aws_s3_transfer::config::ConcurrencyMode;
 use aws_s3_transfer::Client;
 
@@ -104,7 +104,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 Read-ahead sets how far a download may prefetch ahead of the consumer. Set a client-wide default on the loader with `read_ahead`, using `ReadAhead::Parts` for an exact number of parts or `ReadAhead::Auto` for the default.
 
-```
+```rust
 use aws_s3_transfer::config::ReadAhead;
 use aws_s3_transfer::Client;
 
@@ -129,7 +129,7 @@ You can also set read-ahead per download, or change it while a download runs. Fo
 
 The memory budget bounds how much payload data the transfer manager buffers at one time across all transfers on the client. To set an explicit budget, build a buffer pool and pass it as `MemoryConfig::Explicit`. Choose the budget with `MemoryBudgetConfig`: `Limit` for an exact size, `Fraction` for a share of detected memory, or `Auto` for the default.
 
-```
+```rust
 use aws_s3_transfer::config::{MemoryBudgetConfig, MemoryConfig};
 use aws_s3_transfer::memory::BufferPool;
 use aws_s3_transfer::types::ByteSize;
@@ -164,7 +164,7 @@ A `Fraction` budget sizes the pool from detected memory. A `Limit` budget sets a
 
 By default, the transfer manager owns and manages its own threads for transfer work. This is the managed runtime, and it suits most applications. To run transfer tasks on your own Tokio runtime instead, use `RuntimeConfig::multi_thread_tokio`.
 
-```
+```rust
 use aws_s3_transfer::config::RuntimeConfig;
 use aws_s3_transfer::Client;
 
@@ -197,7 +197,7 @@ To customize those settings while keeping the partitioned design, build the tran
 
 Set the transport options on the native pool builder. This example selects a TLS provider so the transport uses HTTPS, builds a `ManagedHttpPool` bound to the runtime, sets it as the HTTP client on the shared configuration loaded with `aws-config`, and hands the runtime to the transfer manager through the loader:
 
-```
+```rust
 use aws_config::BehaviorVersion;
 use aws_s3_transfer::config::RuntimeConfig;
 use aws_s3_transfer::Client;
@@ -255,7 +255,7 @@ If you set a plain HTTP client on the shared `SdkConfig` instead, the transfer m
 
 To send requests to a custom endpoint, such as a local test server or an S3-compatible store, set the endpoint URL on the shared configuration and pass it to the loader with `s3_config`. This needs no extra feature.
 
-```
+```rust
 use aws_config::BehaviorVersion;
 use aws_s3_transfer::Client;
 
@@ -279,7 +279,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 Some S3-compatible stores require path-style addressing. To enable it, build an `aws_sdk_s3::config::Builder` from the shared configuration, call `force_path_style`, and pass the builder to the loader's `s3_config`. This path requires the `sdk-v1` feature and the `aws-sdk-s3` dependency. For more information about the feature, see [Add the transfer manager to your project](transfer-manager-s3.md#transfer-manager-s3-dependency).
 
-```
+```rust
 use aws_config::BehaviorVersion;
 use aws_s3_transfer::Client;
 

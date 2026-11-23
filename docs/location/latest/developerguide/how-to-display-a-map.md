@@ -17,7 +17,7 @@ In this example, you will display an interactive map that allows users to zoom, 
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -52,7 +52,7 @@ In this example, you will display an interactive map that allows users to zoom, 
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```
@@ -70,7 +70,7 @@ In this example, you will restrict the map from being panned beyond a defined bo
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -109,7 +109,7 @@ In this example, you will restrict the map from being panned beyond a defined bo
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```
@@ -127,7 +127,7 @@ In this example, you will display a non-interactive map by disabling user intera
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -163,7 +163,7 @@ In this example, you will display a non-interactive map by disabling user intera
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```

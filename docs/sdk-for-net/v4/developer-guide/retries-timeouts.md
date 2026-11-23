@@ -73,7 +73,7 @@ The AWS SDK for .NET enables you to configure request timeouts at the service cl
 
 The AWS SDK for .NET enables you to configure request timeouts on asynchronous calls by using the `CancellationToken` parameter. The following code snippet shows an example. The code throws `System.Threading.Tasks.TaskCanceledException` if the request isn't completed within 10 seconds.
 
-```
+```cs
 string bucketName = "{{amzn-s3-demo-bucket}}";
 string path = "{{pathToBucket}}";
 using (var amazonS3Client = new AmazonS3Client(new AmazonS3Config()))
@@ -111,7 +111,7 @@ The following are the exceptions to the default timeout values. These values are
 
 The following example shows you how to specify *Standard* retry mode, a maximum of 3 retries, a timeout of 10 seconds, and a read/write timeout of 10 seconds (if applicable). The [AmazonS3Client](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/S3/TS3Client.html) constructor is given an [AmazonS3Config](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/S3/TS3Config.html) object.
 
-```
+```csharp
 var s3Client = new AmazonS3Client(
   new AmazonS3Config
   {

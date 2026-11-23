@@ -238,7 +238,7 @@ The templates provided are what is passed into `create` or `update` stack operat
 
 The following example input shows a Guard Hook that will receive a full template and the previously deployed template. The template in this example is using the JSON format.
 
-```
+```json
 HookContext:
   AwsAccountId: 123456789012
   StackId: "arn:aws:cloudformation:us-west-2:123456789012:stack/MyStack/1a2345b6-0000-00a0-a123-00abc0abc000"
@@ -427,7 +427,7 @@ A JSON string of properties of the resource after the change:
 
 The following example input shows a Guard Hook that will receive a full template, the previously deployed template, and a list of resource changes. The template in this example is using the JSON format.
 
-```
+```json
 HookContext:
   AwsAccountId: "00000000"
   StackId: MyStack

@@ -47,13 +47,13 @@ When we publish a new version of the AL2027 repositories, all previous versions 
 
 1. Discover available repository versions.
 
-   ```
+   ```bash
    sudo dnf check-release-update
    ```
 
 1. Upgrade to the version you selected.
 
-   ```
+   ```bash
    sudo dnf upgrade --releasever=<version>
    ```
 

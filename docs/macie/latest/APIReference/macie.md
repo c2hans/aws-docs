@@ -117,7 +117,7 @@ Enables Amazon Macie and specifies the configuration settings for a Macie accoun
 #### PATCH schema
 <a name="macie-request-body-patch-example"></a>
 
-```
+```json
 {
   "findingPublishingFrequency": enum,
   "status": enum
@@ -127,7 +127,7 @@ Enables Amazon Macie and specifies the configuration settings for a Macie accoun
 #### POST schema
 <a name="macie-request-body-post-example"></a>
 
-```
+```json
 {
   "clientToken": "string",
   "findingPublishingFrequency": enum,
@@ -141,7 +141,7 @@ Enables Amazon Macie and specifies the configuration settings for a Macie accoun
 #### Empty Schema schema
 <a name="macie-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -149,7 +149,7 @@ Enables Amazon Macie and specifies the configuration settings for a Macie accoun
 #### GetMacieSessionResponse schema
 <a name="macie-response-body-getmaciesessionresponse-example"></a>
 
-```
+```json
 {
   "createdAt": "string",
   "findingPublishingFrequency": enum,
@@ -162,7 +162,7 @@ Enables Amazon Macie and specifies the configuration settings for a Macie accoun
 #### ValidationException schema
 <a name="macie-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -171,7 +171,7 @@ Enables Amazon Macie and specifies the configuration settings for a Macie accoun
 #### ServiceQuotaExceededException schema
 <a name="macie-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -180,7 +180,7 @@ Enables Amazon Macie and specifies the configuration settings for a Macie accoun
 #### AccessDeniedException schema
 <a name="macie-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -189,7 +189,7 @@ Enables Amazon Macie and specifies the configuration settings for a Macie accoun
 #### ResourceNotFoundException schema
 <a name="macie-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -198,7 +198,7 @@ Enables Amazon Macie and specifies the configuration settings for a Macie accoun
 #### ConflictException schema
 <a name="macie-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -207,7 +207,7 @@ Enables Amazon Macie and specifies the configuration settings for a Macie accoun
 #### ThrottlingException schema
 <a name="macie-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -216,7 +216,7 @@ Enables Amazon Macie and specifies the configuration settings for a Macie accoun
 #### InternalServerException schema
 <a name="macie-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

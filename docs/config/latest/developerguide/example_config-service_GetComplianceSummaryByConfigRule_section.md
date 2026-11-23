@@ -43,7 +43,7 @@ For more information, see [Viewing Compliance Information and Evaluation Results
 **Tools for PowerShell V4**
 **Example 1: This sample returns the number of Config rules that are non-compliant.**
 
-```
+```powershell
 Get-CFGComplianceSummaryByConfigRule -Select ComplianceSummary.NonCompliantResourceCount
 ```
 **Output:**
@@ -58,7 +58,7 @@ False       9
 **Tools for PowerShell V5**
 **Example 1: This sample returns the number of Config rules that are non-compliant.**
 
-```
+```powershell
 Get-CFGComplianceSummaryByConfigRule -Select ComplianceSummary.NonCompliantResourceCount
 ```
 **Output:**

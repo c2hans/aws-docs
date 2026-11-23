@@ -79,7 +79,7 @@ Always check `response.statusCode` in your Output expressions to handle errors g
 
 The following function calls Elemental Inference `GetMetadata` to retrieve contextual metadata for the content window around the current ad break. The `Body` field uses a JSONata expression to construct the request JSON dynamically from `inference.*` variables. It extracts IAB taxonomy categories and GARM brand safety signals, then stores them as player parameters for use in ADS requests.
 
-```
+```JSON
 {
     "FunctionId": "eiContextualMetadata",
     "FunctionType": "AWS_SERVICE_REQUEST",
@@ -104,7 +104,7 @@ The following function calls Elemental Inference `GetMetadata` to retrieve conte
 
 At runtime, the `Body` expression produces a JSON payload like the following:
 
-```
+```JSON
 {
     "outputName": "my-contextual-output",
     "timeSpecification": {

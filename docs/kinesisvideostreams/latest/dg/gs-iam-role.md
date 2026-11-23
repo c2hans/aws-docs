@@ -25,7 +25,7 @@ Follow these procedures to create an IAM policy. This permissions policy allows 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

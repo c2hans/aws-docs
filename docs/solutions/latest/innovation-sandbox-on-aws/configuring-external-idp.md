@@ -30,13 +30,13 @@ Requirements:
 
 You can confirm that a user’s email attribute has been successfully mapped and passed to the correct field in IAM Identity Center by running the following command in the **IDC Account** (Management or delegated account):
 
-```
+```bash
 aws identitystore list-users --identity-store-id $(aws sso-admin list-instances --query "Instances[0].IdentityStoreId" --output text)
 ```
 
 You can confirm that the correct email address is populated in the Emails array as shown below. The Email value should be correct and Primary should be set to true.
 
-```
+```json
 "Emails": [
     {
        "Value": "user@example.com",

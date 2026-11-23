@@ -43,7 +43,7 @@ For more details, refer to [HubSpot’s OAuth quickstart guide](https://develope
 
 To configure HubSpot as an outbound resource provider, use the following:
 
-```
+```json
 {
   "name": "Hubspot",
   "credentialProviderVendor": "HubspotOauth2",

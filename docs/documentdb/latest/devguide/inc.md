@@ -47,7 +47,7 @@ To view a code example for using the `$inc` command, choose the tab for the lang
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function updateWithInc() {
@@ -71,7 +71,7 @@ updateWithInc();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def update_with_inc():

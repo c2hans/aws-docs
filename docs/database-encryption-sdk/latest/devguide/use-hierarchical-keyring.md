@@ -125,7 +125,7 @@ To customize the Default cache, specify the following values:
 ------
 #### [ Java ]
 
-```
+```java
 .cache(CacheType.builder()
         .Default(DefaultCache.builder()
         .entryCapacity({{100}})
@@ -135,7 +135,7 @@ To customize the Default cache, specify the following values:
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 CacheType defaultCache = new CacheType
 {
     Default = new DefaultCache{EntryCapacity = {{100}}}
@@ -145,7 +145,7 @@ CacheType defaultCache = new CacheType
 ------
 #### [ Rust ]
 
-```
+```rust
 let cache: CacheType = CacheType::Default(
     DefaultCache::builder()
         .entry_capacity({{100}})
@@ -167,7 +167,7 @@ To use the MultiThreaded cache, specify the following values:
 ------
 #### [ Java ]
 
-```
+```java
 .cache(CacheType.builder()
         .MultiThreaded(MultiThreadedCache.builder()
         .entryCapacity({{100}})
@@ -178,7 +178,7 @@ To use the MultiThreaded cache, specify the following values:
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 CacheType multithreadedCache = new CacheType
 {
     MultiThreaded = new MultiThreadedCache
@@ -192,7 +192,7 @@ CacheType multithreadedCache = new CacheType
 ------
 #### [ Rust ]
 
-```
+```rust
 CacheType::MultiThreaded(
             MultiThreadedCache::builder()
                     .entry_capacity({{100}})
@@ -233,7 +233,7 @@ To use the StormTracking cache, specify the following values:
 ------
 #### [ Java ]
 
-```
+```java
 .cache(CacheType.builder()
         .StormTracking(StormTrackingCache.builder()
         .entryCapacity({{100}})
@@ -249,7 +249,7 @@ To use the StormTracking cache, specify the following values:
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 CacheType stormTrackingCache = new CacheType
 {
     StormTracking = new StormTrackingCache
@@ -268,7 +268,7 @@ CacheType stormTrackingCache = new CacheType
 ------
 #### [ Rust ]
 
-```
+```rust
 CacheType::StormTracking(
                 StormTrackingCache::builder()
                     .entry_capacity({{100}})
@@ -302,7 +302,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ Java ]
 
-   ```
+   ```java
    // Instantiate the MPL
    final MaterialProviders matProv =
        MaterialProviders.builder()
@@ -328,7 +328,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    // Instantiate the MPL
    var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 
@@ -344,7 +344,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ Rust ]
 
-   ```
+   ```rust
    // Instantiate the MPL
    let mpl_config = MaterialProvidersConfig::builder().build()?;
    let mpl = mpl_client::Client::from_conf(mpl_config)?;
@@ -373,7 +373,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ Java ]
 
-   ```
+   ```java
    // Create a CacheType object for the sharedCryptographicMaterialsCache
    final CacheType sharedCache =
        CacheType.builder()
@@ -384,7 +384,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    // Create a CacheType object for the sharedCryptographicMaterialsCache
    var sharedCache = new CacheType { Shared = sharedCryptographicMaterialsCache };
    ```
@@ -392,7 +392,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ Rust ]
 
-   ```
+   ```rust
    // Create a CacheType object for the shared_cryptographic_materials_cache
    let shared_cache: CacheType = CacheType::Shared(shared_cryptographic_materials_cache);
    ```
@@ -410,7 +410,7 @@ Your Hierarchical keyrings will share the same cache entries in a Shared cache i
 ------
 #### [ Java ]
 
-   ```
+   ```java
    // Create the Hierarchical keyring
    final CreateAwsKmsHierarchicalKeyringInput keyringInput =
        CreateAwsKmsHierarchicalKeyringInput.builder()
@@ -426,7 +426,7 @@ Your Hierarchical keyrings will share the same cache entries in a Shared cache i
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    // Create the Hierarchical keyring
    var createKeyringInput = new CreateAwsKmsHierarchicalKeyringInput
    {
@@ -442,7 +442,7 @@ Your Hierarchical keyrings will share the same cache entries in a Shared cache i
 ------
 #### [ Rust ]
 
-   ```
+   ```rust
    // Create the Hierarchical keyring
    let keyring1 = mpl
        .create_aws_kms_hierarchical_keyring()
@@ -504,7 +504,7 @@ The following examples show how to configure a key store with a static configura
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.kms.KmsClient;
 import software.amazon.cryptography.keystore.KeyStore;
@@ -527,7 +527,7 @@ final KeyStore keystore = KeyStore.builder()
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 using Amazon.DynamoDBv2;
 using Amazon.KeyManagementService;
 using AWS.Cryptography.KeyStore;
@@ -547,7 +547,7 @@ var keystore = new KeyStore(keystoreConfig);
 ------
 #### [ Rust ]
 
-```
+```rust
 use aws_db_esdk::key_store::client as keystore_client;
 use aws_db_esdk::key_store::types::key_store_config::KeyStoreConfig;
 use aws_db_esdk::key_store::types::KmsConfiguration;
@@ -576,7 +576,7 @@ The following examples demonstrate how to create a Hierarchical keyring with a s
 ------
 #### [ Java ]
 
-```
+```java
 final MaterialProviders matProv = MaterialProviders.builder()
         .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
         .build();
@@ -591,7 +591,7 @@ final Keyring hierarchicalKeyring = matProv.CreateAwsKmsHierarchicalKeyring(keyr
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var matProv = new MaterialProviders(new MaterialProvidersConfig());
 var keyringInput = new CreateAwsKmsHierarchicalKeyringInput
 {
@@ -605,7 +605,7 @@ var hierarchicalKeyring = matProv.CreateAwsKmsHierarchicalKeyring(keyringInput);
 ------
 #### [ Rust ]
 
-```
+```rust
 let mpl_config = MaterialProvidersConfig::builder().build()?;
 let mpl = mpl_client::Client::from_conf(mpl_config)?;
 
@@ -632,7 +632,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ Java ]
 
-   ```
+   ```java
    // Create friendly names for each branch-key-id
    class ExampleBranchKeyIdSupplier implements IDynamoDbKeyBranchKeyIdSupplier {
        private static String branchKeyIdForTenant1;
@@ -655,7 +655,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    // Create friendly names for each branch-key-id
     class ExampleBranchKeyIdSupplier : DynamoDbKeyBranchKeyIdSupplierBase {
        private String _branchKeyIdForTenant1;
@@ -677,7 +677,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ Rust ]
 
-   ```
+   ```rust
    // Create friendly names for each branch_key_id
    pub struct ExampleBranchKeyIdSupplier {
        branch_key_id_for_tenant1: String,
@@ -716,7 +716,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ Java ]
 
-   ```
+   ```java
    final MaterialProviders matProv = MaterialProviders.builder()
            .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
            .build();
@@ -736,7 +736,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    var matProv = new MaterialProviders(new MaterialProvidersConfig());
    var keyringInput = new CreateAwsKmsHierarchicalKeyringInput
    {
@@ -754,7 +754,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ Rust ]
 
-   ```
+   ```rs
    let mpl_config = MaterialProvidersConfig::builder().build()?;
    let mpl = mpl_client::Client::from_conf(mpl_config)?;
 
@@ -807,7 +807,7 @@ When you define the [beacon version](using-beacons.md#beacon-version) for your s
 ------
 #### [ Java ]
 
-```
+```java
 keySource(BeaconKeySource.builder()
         .single(SingleKeyStore.builder()
                 .keyId({{branch-key-id}})
@@ -819,7 +819,7 @@ keySource(BeaconKeySource.builder()
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 KeySource = new BeaconKeySource
 {
     Single = new SingleKeyStore
@@ -833,7 +833,7 @@ KeySource = new BeaconKeySource
 ------
 #### [ Rust ]
 
-```
+```rust
  .key_source(BeaconKeySource::Single(
     SingleKeyStore::builder()
         // `keyId` references a beacon key.
@@ -868,7 +868,7 @@ If you have a multitenant database, you must specify the following values when c
   If you do not specify a cache, the Hierarchical keyring automatically uses the Default cache type and sets the entry capacity to 1000.
 The following example creates a Hierarchical keyring with a branch key ID supplier a cache limit TLL of 600 seconds, and an entry capacity of 1000.
 
-```
+```java
 final MaterialProviders matProv = MaterialProviders.builder()
         .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
         .build();
@@ -884,7 +884,7 @@ final CreateAwsKmsHierarchicalKeyringInput keyringInput = CreateAwsKmsHierarchic
 final IKeyring hierarchicalKeyring = matProv.CreateAwsKmsHierarchicalKeyring(keyringInput);
 ```
 
-```
+```cs
 var matProv = new MaterialProviders(new MaterialProvidersConfig());
 var keyringInput = new CreateAwsKmsHierarchicalKeyringInput
 {
@@ -899,7 +899,7 @@ var keyringInput = new CreateAwsKmsHierarchicalKeyringInput
 var hierarchicalKeyring = matProv.CreateAwsKmsHierarchicalKeyring(keyringInput);
 ```
 
-```
+```rust
 let provider_config = MaterialProvidersConfig::builder().build()?;
     let mat_prov = client::Client::from_conf(provider_config)?;
     let kms_keyring = mat_prov

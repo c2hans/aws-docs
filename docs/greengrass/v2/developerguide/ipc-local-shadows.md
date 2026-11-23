@@ -72,7 +72,7 @@ You can reference the following authorization policy examples to help you config
  <a name="phrase-example-uses-recipe-variables-in-configuration"></a>This example uses a feature that is available for v2.6.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md). Greengrass nucleus v2.6.0 adds support for most [recipe variables](component-recipe-reference.md#recipe-variables), such as `{iot:thingName}`, in component configurations. To enable this feature, set the Greengrass nucleus' [interpolateComponentConfiguration](greengrass-nucleus-component.md#greengrass-nucleus-component-configuration-interpolate-component-configuration) configuration option to `true`. For an example that works for all versions of the Greengrass nucleus, see the [example authorization policy for a single core device](#ipc-local-shadows-authorization-example-single-device).
 The following example authorization policy allows the component `com.example.MyShadowInteractionComponent` to interact with the classic device shadow and the named shadow `myNamedShadow` for the core device that runs the component. This policy also allows this component to receive messages on local topics for these shadows.
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.ShadowManager": {
@@ -114,7 +114,7 @@ The following example authorization policy allows the component `com.example.MyS
 }
 ```
 
-```
+```yaml
 accessControl:
   aws.greengrass.ShadowManager:
     'com.example.MyShadowInteractionComponent:shadow:1':
@@ -147,7 +147,7 @@ This feature requires [Greengrass nucleus](greengrass-nucleus-component.md) v2.6
 The following example authorization policy allows the component `com.example.MyShadowInteractionComponent` to interact with all device shadows for client devices whose names start with `MyClientDevice`.
 To enable a core device to interact with client device shadows, you must also configure and deploy the MQTT bridge component. For more information, see [Enable shadow manager to communicate with client devices](work-with-client-device-shadows.md).
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.ShadowManager": {
@@ -177,7 +177,7 @@ To enable a core device to interact with client device shadows, you must also co
 }
 ```
 
-```
+```yaml
 accessControl:
   aws.greengrass.ShadowManager:
     'com.example.MyShadowInteractionComponent:shadow:1':
@@ -200,7 +200,7 @@ accessControl:
 **Example: Allow a single core device to interact with local shadows**
 The following example authorization policy allows the component `com.example.MyShadowInteractionComponent` to interact with the classic device shadow and the named shadow `myNamedShadow` for the device `MyThingName`. This policy also allows this component to receive messages on local topics for these shadows.
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.ShadowManager": {
@@ -242,7 +242,7 @@ The following example authorization policy allows the component `com.example.MyS
 }
 ```
 
-```
+```yaml
 accessControl:
   aws.greengrass.ShadowManager:
     'com.example.MyShadowInteractionComponent:shadow:1':
@@ -274,7 +274,7 @@ accessControl:
  <a name="phrase-example-uses-recipe-variables-in-configuration"></a>This example uses a feature that is available for v2.6.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md). Greengrass nucleus v2.6.0 adds support for most [recipe variables](component-recipe-reference.md#recipe-variables), such as `{iot:thingName}`, in component configurations. To enable this feature, set the Greengrass nucleus' [interpolateComponentConfiguration](greengrass-nucleus-component.md#greengrass-nucleus-component-configuration-interpolate-component-configuration) configuration option to `true`. For an example that works for all versions of the Greengrass nucleus, see the [example authorization policy for a single core device](#interact-with-shadows-react-example-authorization-policy-single-device).
 The following example access control policy allows the custom `com.example.MyShadowReactiveComponent` to receive messages on the `/update/delta` topic for the classic device shadow and the named shadow `myNamedShadow` on each core device that runs the component.
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.ipc.pubsub": {
@@ -293,7 +293,7 @@ The following example access control policy allows the custom `com.example.MySha
 }
 ```
 
-```
+```yaml
 accessControl:
   aws.greengrass.ipc.pubsub:
     "com.example.MyShadowReactiveComponent:pubsub:1":
@@ -308,7 +308,7 @@ accessControl:
 **Example: Allow a single core device to react to local shadow state changes**
 The following example access control policy allows the custom `com.example.MyShadowReactiveComponent` to receive messages on the `/update/delta` topic for the classic device shadow and the named shadow `myNamedShadow` for the device `MyThingName`.
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.ipc.pubsub": {
@@ -327,7 +327,7 @@ The following example access control policy allows the custom `com.example.MySha
 }
 ```
 
-```
+```yaml
 accessControl:
   aws.greengrass.ipc.pubsub:
     "com.example.MyShadowReactiveComponent:pubsub:1":
@@ -419,7 +419,7 @@ The following examples demonstrate how to call this operation in custom componen
 **Example: Get a thing shadow**
 This example uses an `IPCUtils` class to create a connection to the AWS IoT Greengrass Core IPC service. For more information, see [Connect to the AWS IoT Greengrass Core IPC service](interprocess-communication.md#ipc-service-connect).
 
-```
+```java
 package com.aws.greengrass.docs.samples.ipc;
 
 import com.aws.greengrass.docs.samples.ipc.util.IPCUtils;
@@ -497,7 +497,7 @@ public class GetThingShadow {
 
 **Example: Get a thing shadow**
 
-```
+```python
 import awsiot.greengrasscoreipc
 import awsiot.greengrasscoreipc.client as client
 from awsiot.greengrasscoreipc.model import GetThingShadowRequest
@@ -533,7 +533,7 @@ def sample_get_thing_shadow_request(thingName, shadowName):
 
 **Example: Get a thing shadow**
 
-```
+```javascript
 import {
     GetThingShadowRequest
 } from 'aws-iot-device-sdk-v2/dist/greengrasscoreipc/model';
@@ -705,7 +705,7 @@ The following examples demonstrate how to call this operation in custom componen
 **Example: Update a thing shadow**
 This example uses an `IPCUtils` class to create a connection to the AWS IoT Greengrass Core IPC service. For more information, see [Connect to the AWS IoT Greengrass Core IPC service](interprocess-communication.md#ipc-service-connect).
 
-```
+```java
 package com.aws.greengrass.docs.samples.ipc;
 
 import com.aws.greengrass.docs.samples.ipc.util.IPCUtils;
@@ -780,7 +780,7 @@ public class UpdateThingShadow {
 
 **Example: Update a thing shadow**
 
-```
+```python
 import awsiot.greengrasscoreipc
 import awsiot.greengrasscoreipc.client as client
 from awsiot.greengrasscoreipc.model import UpdateThingShadowRequest
@@ -817,7 +817,7 @@ def sample_update_thing_shadow_request(thingName, shadowName, payload):
 
 **Example: Update a thing shadow**
 
-```
+```javascript
 import {
     UpdateThingShadowRequest
 } from 'aws-iot-device-sdk-v2/dist/greengrasscoreipc/model';
@@ -950,7 +950,7 @@ The following examples demonstrate how to call this operation in custom componen
 **Example: Delete a thing shadow**
 This example uses an `IPCUtils` class to create a connection to the AWS IoT Greengrass Core IPC service. For more information, see [Connect to the AWS IoT Greengrass Core IPC service](interprocess-communication.md#ipc-service-connect).
 
-```
+```java
 package com.aws.greengrass.docs.samples.ipc;
 
 import com.aws.greengrass.docs.samples.ipc.util.IPCUtils;
@@ -1025,7 +1025,7 @@ public class DeleteThingShadow {
 
 **Example: Delete a thing shadow**
 
-```
+```python
 import awsiot.greengrasscoreipc
 import awsiot.greengrasscoreipc.client as client
 from awsiot.greengrasscoreipc.model import DeleteThingShadowRequest
@@ -1061,7 +1061,7 @@ def sample_delete_thing_shadow_request(thingName, shadowName):
 
 **Example: Delete a thing shadow**
 
-```
+```javascript
 import {
     DeleteThingShadowRequest
 } from 'aws-iot-device-sdk-v2/dist/greengrasscoreipc/model';
@@ -1195,7 +1195,7 @@ The following examples demonstrate how to call this operation in custom componen
 **Example: List a thing's named shadows**
 This example uses an `IPCUtils` class to create a connection to the AWS IoT Greengrass Core IPC service. For more information, see [Connect to the AWS IoT Greengrass Core IPC service](interprocess-communication.md#ipc-service-connect).
 
-```
+```java
 package com.aws.greengrass.docs.samples.ipc;
 
 import com.aws.greengrass.docs.samples.ipc.util.IPCUtils;
@@ -1282,7 +1282,7 @@ public class ListNamedShadowsForThing {
 
 **Example: List a thing's named shadows**
 
-```
+```python
 import awsiot.greengrasscoreipc
 import awsiot.greengrasscoreipc.client as client
 from awsiot.greengrasscoreipc.model import ListNamedShadowsForThingRequest
@@ -1325,7 +1325,7 @@ def sample_list_named_shadows_for_thing_request(thingName, nextToken, pageSize):
 
 **Example: List a thing's named shadows**
 
-```
+```javascript
 import {
     ListNamedShadowsForThingRequest
 } from 'aws-iot-device-sdk-v2/dist/greengrasscoreipc/model';

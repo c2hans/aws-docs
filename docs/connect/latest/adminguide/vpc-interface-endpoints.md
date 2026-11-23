@@ -48,7 +48,7 @@ For more information, see [Control access to services using endpoint policies](h
 
 The following VPC endpoint policy grants access to the listed Connect Customer Voice ID actions for all principals on all resources.
 
-```
+```json
 {
     "Statement":[
         {
@@ -67,7 +67,7 @@ The following VPC endpoint policy grants access to the listed Connect Customer V
 
 Following is another example. In this one, the VPC endpoint policy grants access to the listed outbound campaigns actions for all principals on all resources.
 
-```
+```json
 {
     "Statement":[
         {

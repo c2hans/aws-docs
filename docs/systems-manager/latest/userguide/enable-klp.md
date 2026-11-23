@@ -33,7 +33,7 @@ When you turn on Kernel Live Patching, if the kernel already running on the mana
 ------
 #### [ Linux & macOS ]
 
-  ```
+  ```sh
   aws ssm send-command \
       --document-name "AWS-ConfigureKernelLivePatching" \
       --parameters "EnableOrDisable=Enable" \
@@ -43,7 +43,7 @@ When you turn on Kernel Live Patching, if the kernel already running on the mana
 ------
 #### [ Windows Server ]
 
-  ```
+  ```sh
   aws ssm send-command ^
       --document-name "AWS-ConfigureKernelLivePatching" ^
       --parameters "EnableOrDisable=Enable" ^

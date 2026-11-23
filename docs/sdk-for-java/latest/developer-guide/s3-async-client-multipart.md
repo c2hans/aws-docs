@@ -18,7 +18,7 @@ When you create an `S3AsyncClient` instance without calling any of the `multipar
 
 **Example**
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.ProcessCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3AsyncClient;
@@ -40,7 +40,7 @@ To enable parallel transfers with default settings, call the `multipartEnabled` 
 
 **Example**
 
-```
+```java
 S3AsyncClient s3AsyncClient2 = S3AsyncClient.builder()
         .multipartEnabled(true)
         .build();
@@ -52,7 +52,7 @@ If you customize the multipart settings, parallel transfers are automatically en
 
 **Example**
 
-```
+```java
 import software.amazon.awssdk.services.s3.S3AsyncClient;
 import static software.amazon.awssdk.transfer.s3.SizeConstant.MB;
 
@@ -68,7 +68,7 @@ S3AsyncClient s3AsyncClient2 = S3AsyncClient.builder()
 
 The Java-based S3 asynchronous client with multipart enabled can efficiently handle input streams where the total size is not known in advance:
 
-```
+```java
 public PutObjectResponse asyncClient_multipart_stream_unknown_size(String bucketName, String key, InputStream inputStream) {
 
     S3AsyncClient s3AsyncClient = S3AsyncClient.builder().multipartEnabled(true).build();

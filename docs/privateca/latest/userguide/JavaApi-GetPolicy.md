@@ -10,7 +10,7 @@ The operation retrieves the resource-based policy attached to a private CA. A re
 
 Related API actions include [PutPolicy](https://docs.aws.amazon.com/privateca/latest/APIReference/API_PutPolicy.html) and [DeletePolicy](https://docs.aws.amazon.com/privateca/latest/APIReference/API_DeletePolicy.html).
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.auth.AWSCredentials;

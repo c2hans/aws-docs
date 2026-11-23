@@ -12,6 +12,6 @@ On November 7, 2025, AWS Thinkbox Deadline 10 will enter maintenance mode. We re
 
 The following command (requires [jq](https://stedolan.github.io/jq/)) installs all of the peer dependencies required by RFDK. Run it from the root of your CDK application directory.
 
-```
+```bash
 npm view --json aws-rfdk peerDependencies | jq '. | to_entries[] | .key + "@" + .value' | xargs npm i --save
 ```

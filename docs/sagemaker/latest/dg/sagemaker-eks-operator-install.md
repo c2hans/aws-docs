@@ -69,7 +69,7 @@ If you install the add-on through the Amazon EKS cluster, first make sure that y
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

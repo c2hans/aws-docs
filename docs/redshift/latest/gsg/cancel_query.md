@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/gsg/cancel_query.html
 
 If you run a query that is taking too long or is consuming excessive resources, cancel the query. For example, create a list of ticket sellers that includes the seller's name and quantity of tickets sold. The following query selects data from the `SALES` table and `USERS` table and joins the two tables by matching SELLERID and USERID in the WHERE clause.
 
-```
+```sql
 SELECT sellerid, firstname, lastname, sum(qtysold)
 FROM sales, users
 WHERE sales.sellerid = users.userid
@@ -40,7 +40,7 @@ The previous query runs in seconds and returns 2,102 rows.
 
 Suppose that you forget to put in the WHERE clause.
 
-```
+```sql
 SELECT sellerid, firstname, lastname, sum(qtysold)
 FROM sales, users
 GROUP BY sellerid, firstname, lastname
@@ -55,7 +55,7 @@ To find the session ID, start a new session and query the STV\_RECENTS table, as
 
 To determine the session ID of a running query, run the following SELECT statement.
 
-```
+```sql
 SELECT user_id, session_id, start_time, query_text
 FROM sys_query_history
 WHERE status='running';
@@ -71,7 +71,7 @@ The result looks something like the following.
 
 To cancel the query with session ID `1073791534`, run the following command.
 
-```
+```sql
 CANCEL 1073791534;
 ```
 
@@ -80,7 +80,7 @@ The CANCEL command doesn't stop a transaction. To stop or roll back a transactio
 
 If the query that you canceled is associated with a transaction, use the ABORT or ROLLBACK command to cancel the transaction and discard any changes made to the data:
 
-```
+```sql
 ABORT;
 ```
 
@@ -99,7 +99,7 @@ By using workload management, you can run queries in different query queues so t
 
 To cancel a query using the superuser queue, run these commands.
 
-```
+```sql
 SET query_group TO 'superuser';
 CANCEL 1073791534;
 RESET query_group;

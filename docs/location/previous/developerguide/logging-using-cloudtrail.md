@@ -48,7 +48,7 @@ CloudTrail log files aren't an ordered stack trace of the public API calls, so t
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateTracker` operation, which creates a tracker resource.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

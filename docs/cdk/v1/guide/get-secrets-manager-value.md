@@ -11,7 +11,7 @@ To use values from AWS Secrets Manager in your AWS CDK app, use the [fromSecretA
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as sm from "@aws-cdk/aws-secretsmanager";
 
 export class SecretsManagerStack extends core.Stack {
@@ -29,7 +29,7 @@ export class SecretsManagerStack extends core.Stack {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const sm = require("@aws-cdk/aws-secretsmanager");
 
 class SecretsManagerStack extends core.Stack {
@@ -51,7 +51,7 @@ module.exports = { SecretsManagerStack }
 ------
 #### [ Python ]
 
-```
+```python
 import aws_cdk.aws_secretsmanager as sm
 
 class SecretsManagerStack(core.Stack):
@@ -68,7 +68,7 @@ class SecretsManagerStack(core.Stack):
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awscdk.services.secretsmanager.Secret;
 import software.amazon.awscdk.services.secretsmanager.SecretAttributes;
 
@@ -92,7 +92,7 @@ public class SecretsManagerStack extends Stack {
 ------
 #### [ C\# ]
 
-```
+```csharp
 using Amazon.CDK.AWS.SecretsManager;
 
 public class SecretsManagerStack : Stack

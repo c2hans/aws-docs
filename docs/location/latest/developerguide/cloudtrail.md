@@ -90,7 +90,7 @@ CloudTrail log files are not an ordered stack trace of API calls. They do not ap
 
  The following example shows a CloudTrail log entry for the `CreateTracker` operation, which creates a tracker resource.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -143,7 +143,7 @@ CloudTrail log files are not an ordered stack trace of API calls. They do not ap
 
  The following example shows a CloudTrail log entry for the `Geocode` operation, which retrieves coordinates, addresses, and other details about a place.
 
-```
+```json
 {
   "eventVersion": "1.09",
   "userIdentity": {

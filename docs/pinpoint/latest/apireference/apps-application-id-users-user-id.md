@@ -111,7 +111,7 @@ Retrieves information about the communication requirements and options that are 
 #### EndpointsResponse schema
 <a name="apps-application-id-users-user-id-response-body-endpointsresponse-example"></a>
 
-```
+```json
 {
   "Item": [
     {
@@ -160,7 +160,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-users-user-id-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

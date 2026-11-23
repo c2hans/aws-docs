@@ -65,7 +65,7 @@ In the following examples, the cached table persists for the entire query. After
 
 The first example demonstrates how to create and cache a new table from query results. This command uses the `AS` keyword without parentheses around the `SELECT` statement. It creates a new table named '`cache_table_identifier`' containing only the rows from '`sourceTable`' where the status is '`active'`. It runs the query, stores the results in the new table, and caches the new table's contents. The original '`sourceTable`' remains unchanged, and subsequent queries must reference '`cache_table_identifier`' to use the cached data.
 
-```
+```SQL
 CACHE TABLE {{cache_table_identifier}} AS
     SELECT * FROM {{sourceTable}}
     WHERE status = 'active';
@@ -76,7 +76,7 @@ CACHE TABLE {{cache_table_identifier}} AS
 
 The second example demonstrates how to cache the results of a query as a new table with a specified name (`cache_table_identifier`), using parentheses around the `SELECT` statement. This command creates a new table named '`cache_table_identifier`' containing only the rows from '`sourceTable`' where the status is '`active'`. It runs the query, stores the results in the new table, and caches the new table's contents. The original '`sourceTable`' remains unchanged. Subsequent queries must reference '`cache_table_identifier`' to use the cached data.
 
-```
+```SQL
 CACHE TABLE {{cache_table_identifier}} AS (
     SELECT * FROM {{sourceTable}}
     WHERE status = 'active'
@@ -91,7 +91,7 @@ The third example demonstrates how to cache an existing table using a different 
 **Note**
 The exact behavior of this syntax varies across database systems. Always verify the correct syntax for your specific AWS service.
 
-```
+```SQL
 CACHE TABLE {{cache_table_identifier }}
 SELECT * FROM {{sourceTable}}
 WHERE status = 'active';

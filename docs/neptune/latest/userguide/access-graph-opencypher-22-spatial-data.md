@@ -75,14 +75,14 @@ If you already have locations stored as `ST_Point` then you can use those locati
 
 1. Set the property
 
-   ```
+   ```cypher
    MATCH (a:airport)
    SET a.location = ST_GeomFromText('POINT (' + a.lon + ' ' + a.lat + ')')
    ```
 
 1. Query using ST\_Distance:
 
-   ```
+   ```cypher
    MATCH (a:airport)
    WHERE a.location IS NOT NULL
    WITH a, ST_Distance(ST_GeomFromText('POINT (-84.4281 33.6367)'), a.location) AS distance
@@ -96,7 +96,7 @@ If you already have locations stored as `ST_Point` then you can use those locati
 
 Most query methods return Geometry values as WKT strings, which are human-readable. If you're using the Bolt driver, Geometry values are returned in WKB (Well-Known Binary) format for efficiency. Convert WKB to a Geometry object in your application:
 
-```
+```java
 try (Session session = driver.session()) {
     Result result = session.run("MATCH (n:airport {code: 'ATL'}) RETURN n.location as geom");
 

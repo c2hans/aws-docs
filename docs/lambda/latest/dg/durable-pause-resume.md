@@ -27,6 +27,7 @@ To pause an execution while an invocation is in progress, use one of the followi
 + Python (`aws-durable-execution-sdk-python`) – 2.1.0
 + Java (`aws-durable-execution-sdk-java`) – 2.3.0
 + Go (`github.com/aws/aws-durable-execution-sdk-go`) – 1.0.0
++ Rust (`aws-durable-execution-sdk`) – 1.0.0
 + C\# (.NET) (`Amazon.Lambda.DurableExecution`) – 2.2.0
 
 ## Pause an execution
@@ -34,7 +35,7 @@ To pause an execution while an invocation is in progress, use one of the followi
 
 To pause an execution, call [PauseDurableExecution](https://docs.aws.amazon.com/lambda/latest/api/API_PauseDurableExecution.html) with the execution ARN. You can include a reason, which Lambda records in the execution history. In the following example, replace the execution ARN and reason with your own values:
 
-```
+```bash
 aws lambda pause-durable-execution \
   --durable-execution-arn {{arn:aws:lambda:us-east-1:123456789012:function:myDurableFunction:my-function-version/durable-execution/my-execution-name/my-execution-id}} \
   --reason "{{Payment service outage}}"
@@ -48,7 +49,7 @@ By default, the execution timeout also pauses. To keep it running, add `--no-exe
 
 To check the status, call [GetDurableExecution](https://docs.aws.amazon.com/lambda/latest/api/API_GetDurableExecution.html). While the execution is `PAUSING` or `PAUSED`, the response includes `PauseDetails`:
 
-```
+```json
 {
     "Status": "PAUSED",
     "PauseDetails": {
@@ -67,7 +68,7 @@ The response includes the reason only if you set `IncludeExecutionData` to `true
 
 To resume an execution, call [ResumeDurableExecution](https://docs.aws.amazon.com/lambda/latest/api/API_ResumeDurableExecution.html). You can resume an execution that is `PAUSED` or `PAUSING`. In the following example, replace the execution ARN and reason with your own values:
 
-```
+```bash
 aws lambda resume-durable-execution \
   --durable-execution-arn {{arn:aws:lambda:us-east-1:123456789012:function:myDurableFunction:my-function-version/durable-execution/my-execution-name/my-execution-id}} \
   --reason "{{Payment service recovered}}"
@@ -135,7 +136,7 @@ To find paused executions, call [ListDurableExecutionsByFunction](https://docs.a
 
 Lambda records `ExecutionPaused` and `ExecutionResumed` events in the execution history. You can view them with [GetDurableExecutionHistory](https://docs.aws.amazon.com/lambda/latest/api/API_GetDurableExecutionHistory.html):
 
-```
+```json
 {
     "EventType": "ExecutionPaused",
     "EventId": 12,

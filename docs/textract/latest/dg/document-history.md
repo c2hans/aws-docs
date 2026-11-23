@@ -9,6 +9,7 @@ The following table describes important changes in each release of the *Amazon T
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Added FAQ page for supported protocols](document-history.md) | Added a new FAQ page with answers to common questions about the AWS JSON and Smithy RPC v2 CBOR wire protocols. For more information, see [ FAQs on supported protocols](https://docs.aws.amazon.com/textract/latest/dg/cbor-faq.html). | November 10, 2026 |
 | [Queries Support Added](document-history.md) | Amazon Textract now supports the use of queries alongside the AnalyzeDocument and GetDocumentAnalysis operations. | April 21, 2022 |
 | [Confused Deputy](document-history.md) | Have included pages detailing how to secure and prevent the Confused Deputy problem in Amazon Textract. | March 29, 2022 |
 | [Update for table detection and analysis](document-history.md) | Amazon Textract now supports merged cells and column headers for table responses. | March 16, 2022 |

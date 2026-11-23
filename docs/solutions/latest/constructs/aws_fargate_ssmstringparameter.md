@@ -27,7 +27,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { FargateToSsmstringparameter, FargateToSsmstringparameterProps } from '@aws-solutions-constructs/aws-fargate-ssmstringparameter';
@@ -41,7 +41,7 @@ const constructProps: FargateToSsmstringparameterProps = {
 new FargateToSsmstringparameter(stack, 'test-construct', constructProps);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_fargate_ssmstringparameter import FargateToSsmstringparameter, FargateToSsmstringparameterProps
 from aws_cdk import (
     Stack,
@@ -56,7 +56,7 @@ FargateToSsmstringparameter(self, 'test_construct',
               string_value="test-string-value"))
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

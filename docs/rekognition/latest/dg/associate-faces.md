@@ -21,7 +21,7 @@ You can use the [AssociateFaces](https://docs.aws.amazon.com/rekognition/latest/
 
    This Java code example associates a face with a user.
 
-   ```
+   ```java
    import java.util.Arrays;
    import java.util.List;
 
@@ -86,7 +86,7 @@ You can use the [AssociateFaces](https://docs.aws.amazon.com/rekognition/latest/
 
    This Python code example associates a face with a user.
 
-   ```
+   ```python
    from botocore.exceptions import ClientError
    import boto3
    import logging

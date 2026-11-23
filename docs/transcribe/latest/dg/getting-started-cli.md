@@ -51,7 +51,7 @@ To start a new transcription, use the `start-transcription-job` command.
 
    Amazon Transcribe responds with:
 
-   ```
+   ```json
    {
        "TranscriptionJob": {
            "TranscriptionJobName": "my-first-transcription-job",
@@ -83,7 +83,7 @@ aws transcribe get-transcription-job \
 
 Amazon Transcribe responds with:
 
-```
+```json
 {
     "TranscriptionJob": {
         "TranscriptionJobName": "my-first-transcription-job",
@@ -127,7 +127,7 @@ aws transcribe list-transcription-jobs \
 
 Amazon Transcribe responds with:
 
-```
+```json
 {
     "NextToken": "A-very-long-string",
     "TranscriptionJobSummaries": [

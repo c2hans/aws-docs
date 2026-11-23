@@ -53,7 +53,7 @@ To view a code example for using the `$in` command, choose the tab for the langu
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function findByIn() {
@@ -73,7 +73,7 @@ findByIn();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def find_by_in():

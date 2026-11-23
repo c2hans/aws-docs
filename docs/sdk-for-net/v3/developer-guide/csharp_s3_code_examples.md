@@ -33,7 +33,7 @@ The following code example shows how to use `CopyObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 Copy an object using a conditional request.
 
-```
+```csharp
     /// <summary>
     /// Copies an object from one Amazon S3 bucket to another with a conditional request.
     /// </summary>
@@ -110,7 +110,7 @@ The following code example shows how to use `CreateBucket`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 Create a bucket with object lock enabled.
 
-```
+```csharp
     /// <summary>
     /// Create a new Amazon S3 bucket with object lock actions.
     /// </summary>
@@ -150,7 +150,7 @@ The following code example shows how to use `DeleteBucketCors`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
         /// <summary>
         /// Deletes a CORS configuration from an Amazon S3 bucket.
         /// </summary>
@@ -175,7 +175,7 @@ The following code example shows how to use `DeleteBucketLifecycle`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
         /// <summary>
         /// This method removes the Lifecycle configuration from the named
         /// S3 bucket.
@@ -204,7 +204,7 @@ The following code example shows how to use `DeleteObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 Delete an object in a non-versioned S3 bucket.
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.S3;
@@ -266,7 +266,7 @@ Delete an object in a non-versioned S3 bucket.
 ```
 Delete an object in a versioned S3 bucket.
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.S3;
@@ -360,7 +360,7 @@ The following code example shows how to use `DeleteObjects`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 Delete multiple objects in a non-versioned S3 bucket.
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -485,7 +485,7 @@ Delete multiple objects in a non-versioned S3 bucket.
 ```
 Delete multiple objects in a versioned S3 bucket.
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -750,7 +750,7 @@ The following code example shows how to use `GetBucketAcl`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
         /// <summary>
         /// Get the access control list (ACL) for the new bucket.
         /// </summary>
@@ -780,7 +780,7 @@ The following code example shows how to use `GetBucketCors`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
         /// <summary>
         /// Retrieve the CORS configuration applied to the Amazon S3 bucket.
         /// </summary>
@@ -809,7 +809,7 @@ The following code example shows how to use `GetBucketEncryption`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/PutBucketEncryption#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get and print the encryption settings of a bucket.
     /// </summary>
@@ -852,7 +852,7 @@ The following code example shows how to use `GetBucketLifecycleConfiguration`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
         /// <summary>
         /// Returns a configuration object for the supplied bucket name.
         /// </summary>
@@ -882,7 +882,7 @@ The following code example shows how to use `GetBucketWebsite`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
                 // Get the website configuration.
                 GetBucketWebsiteRequest getRequest = new GetBucketWebsiteRequest()
                 {
@@ -903,7 +903,7 @@ The following code example shows how to use `GetObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 Get an object using a conditional request.
 
-```
+```csharp
     /// <summary>
     /// Retrieves an object from Amazon S3 with a conditional request.
     /// </summary>
@@ -977,7 +977,7 @@ The following code example shows how to use `GetObjectLegalHold`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/scenarios/S3ObjectLockScenario#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the legal hold details for an S3 object.
     /// </summary>
@@ -1017,7 +1017,7 @@ The following code example shows how to use `GetObjectLockConfiguration`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/scenarios/S3ObjectLockScenario#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the object lock configuration details for an S3 bucket.
     /// </summary>
@@ -1056,7 +1056,7 @@ The following code example shows how to use `GetObjectRetention`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/scenarios/S3ObjectLockScenario#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the retention period for an S3 object.
     /// </summary>
@@ -1096,7 +1096,7 @@ The following code example shows how to use `ListBuckets`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
 namespace ListBucketsExample
 {
     using System;
@@ -1158,7 +1158,7 @@ The following code example shows how to use `ListObjectVersions`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.S3;
@@ -1248,7 +1248,7 @@ The following code example shows how to use `ListObjectsV2`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 List objects with a paginator.
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.S3;
@@ -1306,7 +1306,7 @@ The following code example shows how to use `PutBucketAccelerateConfiguration`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.S3;
@@ -1380,7 +1380,7 @@ The following code example shows how to use `PutBucketAcl`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
         /// <summary>
         /// Creates an Amazon S3 bucket with an ACL to control access to the
         /// bucket and the objects stored in it.
@@ -1425,7 +1425,7 @@ The following code example shows how to use `PutBucketCors`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
         /// <summary>
         /// Add CORS configuration to the Amazon S3 bucket.
         /// </summary>
@@ -1453,7 +1453,7 @@ The following code example shows how to use `PutBucketEncryption`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/PutBucketEncryption#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Set the bucket server side encryption to use AWSKMS with a customer-managed key id.
     /// </summary>
@@ -1505,7 +1505,7 @@ The following code example shows how to use `PutBucketLifecycleConfiguration`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
         /// <summary>
         /// Adds lifecycle configuration information to the S3 bucket named in
         /// the bucketName parameter.
@@ -1536,7 +1536,7 @@ The following code example shows how to use `PutBucketLogging`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
     using System;
     using System.IO;
     using System.Threading.Tasks;
@@ -1698,7 +1698,7 @@ The following code example shows how to use `PutBucketNotificationConfiguration`
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -1785,7 +1785,7 @@ The following code example shows how to use `PutBucketWebsite`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
                 // Put the website configuration.
                 PutBucketWebsiteRequest putRequest = new PutBucketWebsiteRequest()
                 {
@@ -1809,7 +1809,7 @@ The following code example shows how to use `PutObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 Upload an object with server-side encryption.
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.S3;
@@ -1878,7 +1878,7 @@ Upload an object with server-side encryption.
 ```
 Put an object using a conditional request.
 
-```
+```csharp
     /// <summary>
     /// Uploads an object to Amazon S3 with a conditional request. Prevents overwrite using an IfNoneMatch condition for the object key.
     /// </summary>
@@ -1927,7 +1927,7 @@ The following code example shows how to use `PutObjectLegalHold`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/scenarios/S3ObjectLockScenario#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Set or modify a legal hold on an object in an S3 bucket.
     /// </summary>
@@ -1972,7 +1972,7 @@ The following code example shows how to use `PutObjectLockConfiguration`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/scenarios/S3ObjectLockScenario#code-examples).
 Set the object lock configuration of a bucket.
 
-```
+```csharp
     /// <summary>
     /// Enable object lock on an existing bucket.
     /// </summary>
@@ -2015,7 +2015,7 @@ Set the object lock configuration of a bucket.
 ```
 Set the default retention period of a bucket.
 
-```
+```csharp
     /// <summary>
     /// Set or modify a retention period on an S3 bucket.
     /// </summary>
@@ -2078,7 +2078,7 @@ The following code example shows how to use `PutObjectRetention`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/scenarios/S3ObjectLockScenario#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Set or modify a retention period on an object in an S3 bucket.
     /// </summary>
@@ -2124,7 +2124,7 @@ The following code example shows how to use `RestoreObject`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon;
@@ -2217,7 +2217,7 @@ The following code example shows how to create a presigned URL for Amazon S3 and
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/#code-examples).
 Generate a presigned URL that can perform an Amazon S3 action for a limited time.
 
-```
+```csharp
     using System;
     using Amazon;
     using Amazon.S3;
@@ -2287,7 +2287,7 @@ Generate a presigned URL that can perform an Amazon S3 action for a limited time
 ```
 Generate a presigned URL and perform an upload using that URL.
 
-```
+```csharp
     using System;
     using System.IO;
     using System.Net.Http;
@@ -2431,7 +2431,7 @@ The following code example shows how to get started with encryption for Amazon S
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/SSEClientEncryptionExample#code-examples).
 
-```
+```csharp
     using System;
     using System.IO;
     using System.Security.Cryptography;
@@ -2652,7 +2652,7 @@ The following code example shows how to get started with tags for Amazon S3 obje
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/ObjectTagExample#code-examples).
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -2771,7 +2771,7 @@ The following code example shows how to work with S3 object lock features.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/scenarios/S3ObjectLockScenario#code-examples).
 Run an interactive scenario demonstrating Amazon S3 object lock features.
 
-```
+```csharp
 using Amazon.S3;
 using Amazon.S3.Model;
 using Microsoft.Extensions.Configuration;
@@ -3201,7 +3201,7 @@ public static class S3ObjectLockWorkflow
 ```
 A wrapper class for S3 functions.
 
-```
+```csharp
 using System.Net;
 using Amazon.S3;
 using Amazon.S3.Model;
@@ -3625,7 +3625,7 @@ The following code example shows how to add preconditions to Amazon S3 requests.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/scenarios/S3ConditionalRequestsScenario#code-examples).
 Run an interactive scenario demonstrating Amazon S3 conditional request features.
 
-```
+```csharp
 using Amazon.S3;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -3970,7 +3970,7 @@ public static class S3ConditionalRequestsScenario
 ```
 A wrapper class for S3 functions.
 
-```
+```csharp
 using System.Net;
 using Amazon.S3;
 using Amazon.S3.Model;
@@ -4348,7 +4348,7 @@ The following code example shows how to manage access control lists (ACLs) for A
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/ManageACLsExample#code-examples).
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -4544,7 +4544,7 @@ The following code example shows how to perform a multipart copy of an Amazon S3
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/MPUapiCopyObjExample#code-examples).
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -4687,7 +4687,7 @@ For more information, see [Uploading an object using multipart upload](https://d
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/#code-examples).
 Call functions that transfer files to and from an S3 bucket using the Amazon S3 TransferUtility.
 
-```
+```csharp
 global using System.Text;
 global using Amazon.S3;
 global using Amazon.S3.Model;
@@ -4880,7 +4880,7 @@ static async Task DisplayBucketFiles(IAmazonS3 client, string bucketName, string
 ```
 Upload a single file.
 
-```
+```csharp
         /// <summary>
         /// Uploads a single file from the local computer to an S3 bucket.
         /// </summary>
@@ -4926,7 +4926,7 @@ Upload a single file.
 ```
 Upload an entire local directory.
 
-```
+```csharp
         /// <summary>
         /// Uploads all the files in a local directory to a directory in an S3
         /// bucket.
@@ -4975,7 +4975,7 @@ Upload an entire local directory.
 ```
 Download a single file.
 
-```
+```csharp
         /// <summary>
         /// Download a single file from an S3 bucket to the local computer.
         /// </summary>
@@ -5005,7 +5005,7 @@ Download a single file.
 ```
 Download contents of an S3 bucket.
 
-```
+```csharp
         /// <summary>
         /// Downloads the contents of a directory in an S3 bucket to a
         /// directory on the local computer.
@@ -5059,7 +5059,7 @@ Download contents of an S3 bucket.
 ```
 Track the progress of an upload using the TransferUtility.
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.S3;
@@ -5148,7 +5148,7 @@ Track the progress of an upload using the TransferUtility.
 ```
 Upload an object with encryption.
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.IO;
@@ -5299,7 +5299,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 ﻿using System.Threading.Tasks;

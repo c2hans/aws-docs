@@ -28,7 +28,7 @@ Use this procedure to migrate a single device before you migrate your fleet.
 
 Connect to your device and create the system user and group that AWS IoT Greengrass runs as. Replace {{user-name}} and {{group-name}} with the names that you want to use.
 
-```
+```bash
 sudo groupadd --system {{group-name}}
 sudo useradd --system --create-home --shell /sbin/nologin -g {{group-name}} {{user-name}}
 ```
@@ -38,7 +38,7 @@ sudo useradd --system --create-home --shell /sbin/nologin -g {{group-name}} {{us
 
 Stop AWS IoT Greengrass and save the current file ownership structure so that you can restore it if you need to roll back.
 
-```
+```bash
 sudo systemctl stop greengrass.service
 sudo mkdir -p /opt/greengrass-backup
 sudo find /greengrass/v2 -exec stat -c 'chown %U:%G "%n"' {} \; | sudo tee /opt/greengrass-backup/restore_ownership.sh > /dev/null
@@ -53,7 +53,7 @@ The commands in this topic use `/greengrass/v2` as the AWS IoT Greengrass root p
 
 Transfer ownership of the AWS IoT Greengrass directory to the non-root user.
 
-```
+```bash
 sudo chown -R {{user-name}}:{{group-name}} /greengrass/v2
 ```
 
@@ -62,7 +62,7 @@ sudo chown -R {{user-name}}:{{group-name}} /greengrass/v2
 
 Create a drop-in directory and configuration file that tells systemd to run AWS IoT Greengrass as the non-root user with the required Linux capabilities.
 
-```
+```bash
 sudo mkdir -p /etc/systemd/system/greengrass.service.d
 ```
 
@@ -86,7 +86,7 @@ For information about these systemd directives and the required capabilities, se
 
 Run the following commands to reload the systemd daemon and start AWS IoT Greengrass.
 
-```
+```bash
 sudo systemctl daemon-reload
 sudo systemctl start greengrass.service
 ```
@@ -96,7 +96,7 @@ sudo systemctl start greengrass.service
 
 Confirm that AWS IoT Greengrass is running as the non-root user.
 
-```
+```bash
 sudo systemctl status greengrass.service
 ps -ef | grep greengrass
 ```
@@ -105,7 +105,7 @@ The output shows the non-root user as the process owner instead of `root`.
 
 Next, confirm that all deployed components are running. You must deploy the `aws.greengrass.Cli` component on the device to run this command.
 
-```
+```bash
 sudo /greengrass/v2/bin/greengrass-cli component list
 ```
 
@@ -116,7 +116,7 @@ Each component should report a `State` of `RUNNING` or `FINISHED`. `FINISHED` is
 
 If you need to restore AWS IoT Greengrass to run as root, remove the drop-in override, restore file ownership, and restart AWS IoT Greengrass.
 
-```
+```bash
 sudo systemctl stop greengrass.service
 sudo rm -rf /etc/systemd/system/greengrass.service.d
 sudo bash /opt/greengrass-backup/restore_ownership.sh
@@ -129,12 +129,12 @@ Run the verification commands from [Step 6: Verify the migration](#migrate-nonro
 After you confirm the rollback succeeded, you can optionally clean up the migration artifacts:
 + **Backup directory** — You can keep `/opt/greengrass-backup` if you plan to retry the migration later, or remove it:
 
-  ```
+  ```bash
   sudo rm -r /opt/greengrass-backup
   ```
 + **Non-root user and group** — If you no longer plan to run AWS IoT Greengrass as a non-root user, you can remove the user and group that you created in Step 1:
 
-  ```
+  ```bash
   sudo userdel {{user-name}}
   sudo groupdel {{group-name}}
   ```

@@ -62,7 +62,7 @@ To use a dynamically loaded background image with a background replacement filte
 
 The following example policy allows you to use the `VideoFxProcessor`. The `connect-src` definitions aren't specific to a `VideoFxProcessor`. Instead, they're related to the audio and video from an Amazon Chime SDK meeting.
 
-```
+```html
 <head>
     <meta http-equiv="Content-Security-Policy"
         content="base-uri 'self';
@@ -78,7 +78,7 @@ The following example policy allows you to use the `VideoFxProcessor`. The `conn
 
 If you omit any of the required directives, the `VideoFxProcessor` will not instantiate and will be unsupported. In that case, the following (or similar) error appears in the browser console:
 
-```
+```html
 Refused to connect to
 'https://static.sdkassets.chime.aws/ml_media_fx/otherassets/worker.js'
 because it violates the document's content security policy.
@@ -89,7 +89,7 @@ because it violates the document's content security policy.
 
 To limit memory usage, the module prefers to use a `SharedArrayBuffer` for processing. However, this requires that you carefully configure web security. You must set the following headers when serving your application HTML:
 
-```
+```html
 Cross-Origin-Opener-Policy: same-origin
 Cross-Origin-Embedder-Policy: require-corp
 ```

@@ -23,7 +23,7 @@ Requests that don't specify a project ID are associated with the default project
 ------
 #### [ Python ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI(project="proj_123")
@@ -37,7 +37,7 @@ response = client.chat.completions.create(
 ------
 #### [ cURL ]
 
-```
+```bash
 curl -X POST $OPENAI_BASE_URL/responses \
     -H "Authorization: Bearer $OPENAI_API_KEY" \
     -H "Content-Type: application/json" \

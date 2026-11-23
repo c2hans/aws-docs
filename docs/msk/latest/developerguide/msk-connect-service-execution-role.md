@@ -14,7 +14,7 @@ When you create a connector with MSK Connect, you're required to specify an AWS 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -46,7 +46,7 @@ If the Amazon MSK cluster that you want to use with your connector is a cluster 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

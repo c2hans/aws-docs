@@ -53,7 +53,7 @@ Before you begin to work with a MySQL-compatible database as a target for AWS DM
 + Set the database parameter `local_infile = 1` to enable AWS DMS to load data into the target database.
 + Grant the following privileges if you use MySQL-specific premigration assessments.
 
-  ```
+  ```sql
   grant select on mysql.user to <dms_user>;
   grant select on mysql.db to <dms_user>;
   grant select on mysql.tables_priv to <dms_user>;

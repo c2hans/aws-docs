@@ -33,7 +33,7 @@ For information about SVL\_S3LOG, see [SVL\_S3LOG](r_SVL_S3LOG.md).
 
 The following example queries SVCS\_S3LOG for the last query that ran.
 
-```
+```sql
 select *
 from svcs_s3log
 where query = pg_last_query_id()

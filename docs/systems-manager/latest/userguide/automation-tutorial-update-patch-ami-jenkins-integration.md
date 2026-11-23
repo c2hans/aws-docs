@@ -31,7 +31,7 @@ Complete the following tasks before you configure Automation with Jenkins:
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -73,7 +73,7 @@ Use the following procedure to configure the AWS CLI on your Jenkins server.
 
 1. Enter the password found in `/var/lib/jenkins/secrets/initialAdminPassword`. To display your password, run the following command.
 
-   ```
+   ```sh
    sudo cat /var/lib/jenkins/secrets/initialAdminPassword
    ```
 
@@ -109,7 +109,7 @@ Use the following procedure to configure your Jenkins project to invoke Automati
 
 1. In the **Command** field, run an AWS CLI command like the following. Replace each {{example resource placeholder}} with your own information.
 
-   ```
+   ```sh
    aws ssm start-automation-execution \
            --document-name {{runbook name}} \
            --region {{AWS Region of your source AMI}} \
@@ -118,7 +118,7 @@ Use the following procedure to configure your Jenkins project to invoke Automati
 
    The following example command uses the **UpdateMyLatestWindowsAmi** runbook and the Systems Manager Parameter `latestAmi` created in [Update a golden AMI using Automation, AWS Lambda, and Parameter Store](automation-tutorial-update-patch-golden-ami.md).
 
-   ```
+   ```sh
    aws ssm start-automation-execution \
            --document-name UpdateMyLatestWindowsAmi \
            --parameters \

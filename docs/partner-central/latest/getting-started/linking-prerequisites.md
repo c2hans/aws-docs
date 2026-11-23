@@ -83,7 +83,7 @@ If you're an alliance lead or cloud admin, and you already have an IAM user or r
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

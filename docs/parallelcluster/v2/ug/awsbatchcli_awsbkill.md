@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Cancels or terminates jobs submitted in the cluster.
 
-```
+```sh
 awsbkill [ - h ] [ - c {{CLUSTER}} ] [ - r {{REASON}} ] {{job_ids}} [ {{job_ids}} ... ]
 ```
 

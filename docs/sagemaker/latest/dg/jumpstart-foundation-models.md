@@ -24,4 +24,5 @@ For more general information on foundation models, see the paper [On the Opportu
 + [Model sources and license agreements](jumpstart-foundation-models-choose.md)
 + [Foundation model customization](jumpstart-foundation-models-customize.md)
 + [Evaluate a text generation foundation model in Studio](jumpstart-foundation-models-evaluate.md)
++ [JumpStart model leaderboard benchmarks](jumpstart-foundation-models-leaderboard-benchmarks.md)
 + [Example notebooks](jumpstart-foundation-models-example-notebooks.md)

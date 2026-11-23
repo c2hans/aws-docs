@@ -101,7 +101,7 @@ AWS_BEARER_TOKEN_BEDROCK="<provide your Bedrock API key>"
 ------
 #### [ Rerank API ]
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agent-runtime', region_name='us-east-1')

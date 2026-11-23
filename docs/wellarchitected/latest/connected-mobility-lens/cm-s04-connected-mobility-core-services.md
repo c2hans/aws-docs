@@ -34,6 +34,8 @@ Vehicle manufacturers can deliver value-added services to fleet operators and ve
 
 ![Reference architecture diagram for connected mobility core services.](https://docs.aws.amazon.com/wellarchitected/latest/connected-mobility-lens/images/connected-mobility-core-services-refarch.png)
 
+*Connected mobility core services reference architecture*
+
 ** Figure 5: CM-S04 Connected mobility core services reference architecture **
 
 1.  The connected vehicle, with a unique identity principal (X.509 certificate), has hundreds of sensors to collect data. AWS IoT FleetWise Edge Agent collects, stores, and organizes data from vehicle. Based on the campaign defined in AWS IoT FleetWise, the agent decodes signals from the vehicle and sends data payloads through AWS IoT Core.

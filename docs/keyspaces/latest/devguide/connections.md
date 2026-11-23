@@ -102,7 +102,7 @@ To learn more about cross-account access to Amazon Keyspaces using a shared VPC,
 
 To help identify the number of endpoints your application is connected to, you can log the number of peers discovered in the `system.peers` table. The following example is an example of Java code which prints the number of peers after the connection has been established.
 
-```
+```Java
 ResultSet result = session.execute(new SimpleStatement("SELECT * FROM system.peers"));
 
 logger.info("number of Amazon Keyspaces endpoints:" + result.all().stream().count());

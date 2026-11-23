@@ -27,7 +27,7 @@ This documentation will walk you through deployment and usage of dashboards as w
 ## Cloud Intelligence Dashboards at re:invent 2023
 <a name="cloud-intelligence-dashboards-at-reinvent-2023"></a>
 
-[![AWS Videos](https://img.youtube.com/vi/keAfy8f84E0?rel=0/0.jpg)](https://www.youtube.com/watch?v=keAfy8f84E0?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/keAfy8f84E0/0.jpg)](https://www.youtube.com/watch?v=keAfy8f84E0)
 
 ## Recommended User Journey
 <a name="recommended-user-journey"></a>

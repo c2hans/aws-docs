@@ -107,7 +107,7 @@ When CodePipeline runs the action, CodePipeline service role requires the follow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -254,7 +254,7 @@ To view an action configuration with the deploy spec file specified, see the exa
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: DeployEC2
 actions:
 - name: EC2
@@ -279,7 +279,7 @@ actions:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "DeployEC2",
     "actions": [
@@ -319,7 +319,7 @@ actions:
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: DeployEC2
 actions:
 - name: EC2
@@ -343,7 +343,7 @@ actions:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "DeployEC2",
     "actions": [

@@ -40,7 +40,7 @@ The following example uses data from the EVENT table in the TICKIT sample databa
 
 To return the leftmost 5 and rightmost 5 characters from event names that have event IDs between 1000 and 1005, use the following example.
 
-```
+```sql
 SELECT eventid, eventname,
 LEFT(eventname,5) AS left_5,
 RIGHT(eventname,5) AS right_5

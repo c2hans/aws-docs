@@ -66,7 +66,7 @@ Least privilege: The Run-As user needs read access to the Knowledge articles (an
 
 Store the credentials in an AWS Secrets Manager secret in the same AWS Region as your knowledge base with the following key-value pairs:
 
-```
+```json
 {
     "clientId": "{{your-consumer-key}}",
     "clientSecret": "{{your-consumer-secret}}",

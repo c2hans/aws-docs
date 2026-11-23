@@ -23,7 +23,7 @@ Amazon Keyspacescertificates are transitioning to the Amazon Trust Services (ATS
 
 1. Add the following sample code to the cqlapp.pl file.
 
-   ```
+   ```Perl
    use DBI;
    my $user = "{{ServiceUserName}}";
    my $password = "{{ServicePassword}}";

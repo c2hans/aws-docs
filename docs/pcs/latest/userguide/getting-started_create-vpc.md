@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/getting-started_cre
 
  You can create a VPC and subnets with a CloudFormation template. Use the following URL to download the CloudFormation template, then upload the template in the [CloudFormation console](https://console.aws.amazon.com/cloudformation/home#/stacks/create) to create a new CloudFormation stack. For more information, see [Using the CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-using-console.html) in the *AWS CloudFormation User Guide*.
 
-```
+```txt
 https://aws-hpc-recipes.s3.amazonaws.com/main/recipes/net/hpc_large_scale/assets/main.yaml
 ```
 

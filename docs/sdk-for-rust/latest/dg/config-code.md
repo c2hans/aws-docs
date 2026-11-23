@@ -18,7 +18,7 @@ Service clients can be expensive to construct and are generally meant to be shar
 
 To create a client with environment-sourced configuration, use static methods from the `aws-config` crate:
 
-```
+```rust
 let config = aws_config::defaults(BehaviorVersion::latest())
     .load()
     .await;
@@ -30,7 +30,7 @@ Creating a client this way is useful when running on Amazon Elastic Compute Clou
 
 You can explicitly override specific properties. Explicit configuration takes precedence over configuration resolved from the execution environment. The following example loads configuration from the environment, but explicitly overrides the AWS Region:
 
-```
+```rust
 let config = aws_config::defaults(BehaviorVersion::latest())
     .region("us-east-1")
     .load()
@@ -49,7 +49,7 @@ The code `BehaviorVersion::latest()` shown in the prior examples indicates the v
 
 There are some options that can only be configured on a specific service client type. However, most often, you'll still want to load the majority of configuration from the environment, and then specifically add the additional options. The builder pattern is a common pattern within the AWS SDK for Rust crates. You first load the general configuration using `aws_config::defaults`, then use the `from` method to load that configuration into the builder for the service you are working with. You can then set any unique configuration values for that service and call `build`. Lastly, the client is created from this modfied configuration.
 
-```
+```rust
 // Call a static method on aws-config that sources default config values.
 let config = aws_config::defaults(BehaviorVersion::latest())
     .load()
@@ -71,7 +71,7 @@ One way to discover additional methods that are available for a specific type of
 
 To configure a service client with specific values instead of loading a configuration from the environment, you can specify them on the client `Config` builder as shown in the following:
 
-```
+```rust
 let conf = aws_sdk_s3::Config::builder()
     .region("us-east-1")
     .endpoint_resolver(my_endpoint_resolver)

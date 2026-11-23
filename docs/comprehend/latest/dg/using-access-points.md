@@ -40,7 +40,7 @@ The following example creates an Amazon S3 Object Lambda Access Point to control
 
 Create an Amazon S3 Object Lambda Access Point configuration and save the configuration in a file called **config.json**.
 
-```
+```json
 {
     "SupportingAccessPoint": "{{s3-default-access-point-name-arn}}",
     "TransformationConfigurations": [
@@ -111,7 +111,7 @@ The following example creates an Amazon S3 Object Lambda Access Point to redeact
 
 Create an Amazon S3 Object Lambda Access Point configuration and save the configuration in a file called `config.json`.
 
-```
+```json
 {
     "SupportingAccessPoint": "{{s3-default-access-point-name-arn}}",
     "TransformationConfigurations": [

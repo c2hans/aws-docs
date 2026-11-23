@@ -35,7 +35,7 @@ Deleting a repository link only removes the registered link that AWS Proton has 
 
 Run the following command:
 
-```
+```sh
 $ aws proton delete-repository \
     --name {{myrepos/templates}} \
     --provider"{{GITHUB}}"
@@ -43,7 +43,7 @@ $ aws proton delete-repository \
 
 Response:
 
-```
+```json
 {
     "repository": {
         "arn": "arn:aws:proton:region-id:123456789012:repository/github:myrepos/templates",

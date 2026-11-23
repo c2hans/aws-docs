@@ -34,7 +34,7 @@ Edit a template sync configuration branch using the console.
 
 Run the following command.
 
-```
+```sh
 $ aws proton update-template-sync-config \
     --template-name "{{env-template}}" \
     --template-type "{{ENVIRONMENT}}" \
@@ -46,7 +46,7 @@ $ aws proton update-template-sync-config \
 
 The response is as follows.
 
-```
+```json
 {
     "templateSyncConfigDetails": {
         "branch": "{{fargate}}",

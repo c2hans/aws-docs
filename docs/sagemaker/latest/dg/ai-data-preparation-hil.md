@@ -58,6 +58,10 @@ You can also bring your own records with no upstream step at all, which is the u
 
 Start by launching the shared Label Studio application in your Studio domain. It only needs launching once for the whole domain, so check whether somebody has already launched it before you start a new space.
 
+The Label Studio application runs in a shared space, so the domain needs a **Space default execution role** before you can launch the application for the first time. You need domain administrator access to set the role. If you aren't a domain administrator, ask one to set it. For instructions on setting the role, see [Add shared space support to an existing domain](domain-space-create.md#domain-space-add).
+
+Before you set the role, stop every application running in any shared space in the domain. For more information about stopping applications, see [Edit domain settings](domain-edit.md). Label Studio needs no permissions on the role. For information about what the role must not have, see [AWS Identity and Access Management for labeling spaces](label-studio-security.md#label-studio-security-iam).
+
 **To launch the Label Studio application**
 
 1. In the **Applications** list, choose the **Label Studio** tile.
@@ -116,7 +120,7 @@ Unlike the other data preparation steps, human-in-the-loop annotation does not r
 
 What the SDK covers is the step after the review. Once the corrections are merged into your records, you transform and register them as a new dataset version, which is a `DataTransformation` job. The job publishes the fields it accepts as a schema, so print the schema rather than guessing field names. The following Python code example prints that schema, which lists the fields a `DataTransformation` job accepts.
 
-```
+```python
 from sagemaker.ai_registry import DatasetJobConfig, JobCategory
 
 DatasetJobConfig.print_schema(
@@ -224,6 +228,21 @@ Corrections are applied to your dataset as a separate step that you ask for. Not
 These are characteristics of the shipped Label Studio application, measured on the default instance type. They are not service quotas, and no API reports them. Treat them as guidance for sizing a labeling push.
 + **About 8 annotators can save at the same time.** The application stores annotations in a database that takes one writer at a time, so simultaneous saves queue. Past roughly 8 concurrent savers, saves slow down noticeably and the space completes less work overall, not more. The ceiling applies to saving at the same moment, not to how many people are signed in and reading.
 + **A larger instance does not raise that ceiling.** The constraint is the single-writer database, not CPU or memory, so changing the instance type will not buy more concurrency. Stagger annotators across the day instead. The setting worth changing on the application page is the storage volume, not the instance type.
++ **The application runs on 16 instance types.** Unlike the other items in this list, this is a hard limit. A launch request for any other type fails. The error message lists the supported types. This limit is not adjustable: it is not a service quota, so you can't request additional instance types through Service Quotas or AWS Support. The following table lists the supported instance types by family.
+
+<table>
+<thead>
+  <tr><th>Instance family</th><th>Supported instance types</th></tr>
+</thead>
+<tbody>
+  <tr><td>M5</td><td><code>ml.m5.large</code>, <code>ml.m5.xlarge</code>, <code>ml.m5.2xlarge</code>, <code>ml.m5.4xlarge</code></td></tr>
+  <tr><td>M6i</td><td><code>ml.m6i.large</code>, <code>ml.m6i.xlarge</code>, <code>ml.m6i.2xlarge</code>, <code>ml.m6i.4xlarge</code></td></tr>
+  <tr><td>M7i</td><td><code>ml.m7i.large</code>, <code>ml.m7i.xlarge</code>, <code>ml.m7i.2xlarge</code>, <code>ml.m7i.4xlarge</code></td></tr>
+  <tr><td>T3 (burstable)</td><td><code>ml.t3.medium</code> (default), <code>ml.t3.large</code>, <code>ml.t3.xlarge</code>, <code>ml.t3.2xlarge</code></td></tr>
+</tbody>
+</table>
+
+  For more information about pricing, see [Amazon SageMaker pricing](https://aws.amazon.com/sagemaker/pricing/).
 + **Project sizes up to 20,000 records have been tested.** A project of that size imports in seconds, so import time is rarely what you plan around. 20,000 is the largest size that has been tested rather than a proven ceiling, so for more records than that, label them in more than one run. Splitting them across more annotators instead does not help, because each annotator adds a project and the concurrency ceiling still applies.
 + **Annotation data shares the space's 5 GB default storage volume.** Estimate from your own records rather than a fixed per-record figure, because record size varies widely. For input of size `S` holding `N` records, each annotated once, expect the database to grow by about `2S + (0.5 KB × N)`. Do that arithmetic before you create projects, and leave headroom, because the volume is shared with everything else in the space.
 + **Exports accumulate on the same volume.** Every export writes a copy of the project's data to the volume, and those copies are not removed automatically. There is no supported way to delete them from inside the space. Size the volume for all the exports you expect across the life of the project rather than for a single run.
@@ -238,6 +257,20 @@ The lack of role-based access control is a property of the edition, not a settin
 
 Label Studio is not in the Applications list at all
 The application is not offered in that domain, which is a different problem from the space not having been started—starting it is not the fix. Check whether another domain in your account offers it, and ask the person who administers your domains if none does. For more information, see [Limits and quotas](#ai-data-preparation-hil-limits).
+
+This domain has no default space settings
+The Label Studio application page shows this message and disables **Launch application**. The cause is that the domain has no **Space default execution role**, which every shared space needs. Steps 1 and 2 require domain administrator access. If you aren't a domain administrator, ask one to do them.
+
+1. Stop every application running in the domain's shared spaces. For more information about stopping applications, see [Edit domain settings](domain-edit.md).
+
+1. Set the **Space default execution role**. For instructions on setting the role, see [Add shared space support to an existing domain](domain-space-create.md#domain-space-add).
+
+1. Refresh Studio in your browser.
+
+1. Open the Label Studio application page.
+
+1. Choose **Launch application**.
+For information about what the role must not have, see [AWS Identity and Access Management for labeling spaces](label-studio-security.md#label-studio-security-iam).
 
 The agent cannot find a Label Studio application in my domain
 Nobody has started the space yet. This step uses an application that is already running and does not create one. Open **Label Studio** from the **Applications** list in Studio, wait for the space to reach **Running**, then ask again.

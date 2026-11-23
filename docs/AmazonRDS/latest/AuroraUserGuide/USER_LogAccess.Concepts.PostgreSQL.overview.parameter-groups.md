@@ -30,7 +30,7 @@ In the following topics, you can find information about how to set various param
 
 The `rds.log_retention_period` parameter specifies how long your Aurora PostgreSQL DB cluster keeps its log files. The default setting is 3 days (4,320 minutes), but you can set this value to anywhere from 1 day (1,440 minutes) to 7 days (10,080 minutes). Be sure that your Aurora PostgreSQL DB cluster has sufficient storage to hold the log files for the period of time.
 
-We recommend that you have your logs routinely published to Amazon CloudWatch Logs so that you can view and analyze system data long after the logs have been removed from your Aurora PostgreSQL DB cluster. For more information, see [Publishing Aurora PostgreSQL logs to Amazon CloudWatch Logs](AuroraPostgreSQL.CloudWatch.md). After you set up CloudWatch publishing, Aurora doesn't delete a log until after it's published to CloudWatch Logs.
+We recommend that you have your logs routinely published to Amazon CloudWatch Logs so that you can view and analyze system data long after the logs have been removed from your Aurora PostgreSQL DB cluster. For more information, see [Publishing Aurora PostgreSQL logs to Amazon CloudWatch Logs](AuroraPostgreSQL.CloudWatch.md). After you set up CloudWatch publishing, Aurora doesn't delete a log before it's published to CloudWatch Logs, unless the log reaches the end of its retention period ([RDS-EVENT-0610](USER_Events.Messages.md#RDS-EVENT-0610)) or the storage for log files runs low ([RDS-EVENT-0611](USER_Events.Messages.md#RDS-EVENT-0611)).
 
 Amazon Aurora compresses older PostgreSQL logs when storage for the DB instance reaches a threshold. Aurora compresses the files using the gzip compression utility. For more information, see the [gzip](https://www.gzip.org) website.
 
@@ -46,6 +46,8 @@ If there's not enough storage, Aurora might delete compressed PostgreSQL logs be
 ```
 The oldest PostgreSQL log files were deleted due to local storage constraints.
 ```
+
+If Aurora deletes a log file before publishing it to CloudWatch Logs, you also receive [RDS-EVENT-0611](USER_Events.Messages.md#RDS-EVENT-0611). For more information about planning storage for log files, see [Planning storage for Aurora database log files](USER_LogAccess.Aurora.LogStorage.md).
 
 ## Setting log file rotation
 <a name="USER_LogAccess.Concepts.PostgreSQL.log_rotation"></a>

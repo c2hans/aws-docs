@@ -141,7 +141,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-kms-key-update-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "TargetKeyARN": "arn:aws:kms:us-east-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
   "Operation": "Update"
@@ -151,7 +151,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-kms-key-update-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "KeyDescription": "Exmample description of the key to be created.",
   "TargetKeyARN": "arn:aws:kms:us-east-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",

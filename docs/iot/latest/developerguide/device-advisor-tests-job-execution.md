@@ -21,7 +21,7 @@ For more information about these reserved topics, see reserved topics for [AWS I
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 3 minutes. Depending on the AWS IoT Job document or source provided, adjust the timeout value (for example, if a job will take a long time to run, define a longer timeout value for the test case). To run the test, either a valid AWS IoT Job document or an already existing job ID is required. An AWS IoT Job document can be provided as a JSON document or an S3 link. If a job document is provided, providing a job ID is optional. If a job ID is provided, Device Advisor will use that ID while creating the AWS IoT Job on your behalf. If the job document is not provided, you can provide an existing ID that is in the same region as you are running the test case. In this case, Device Advisor will use that AWS IoT Job while running the test case.
 
-```
+```JSON
 "tests": [
    {
       "name":"my_job_execution",

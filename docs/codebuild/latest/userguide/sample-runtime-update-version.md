@@ -46,7 +46,7 @@ This sample demonstrates a project that starts with the Java version 8 runtime, 
 
 1. Switch to an empty directory on your local computer or instance, and then run this Maven command.
 
-   ```
+   ```shell
    mvn archetype:generate "-DgroupId=com.mycompany.app" "-DartifactId=ROOT" "-DarchetypeArtifactId=maven-archetype-webapp" "-DinteractiveMode=false"
    ```
 

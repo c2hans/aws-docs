@@ -32,7 +32,7 @@ aws transcribe start-medical-scribe-job \
 
 The file `my-first-medical-scribe-job.json` contains the following request body.
 
-```
+```json
 {
   "MedicalScribeJobName": "{{my-first-medical-scribe-job}}",
   "Media": {
@@ -61,7 +61,7 @@ The file `my-first-medical-scribe-job.json` contains the following request body.
 
  The following example uses the AWS SDK for Python (Boto3) to make a [start\_medical\_scribe\_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe/client/start_medical_scribe_job.html) request. For more information, see [StartMedicalScribeJob](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMedicalScribeJob.html).
 
-```
+```python
 from __future__ import print_functionimport timeimport boto3
 transcribe = boto3.client('transcribe', '{{us-west-2}}')
 job_name = "{{my-first-medical-scribe-job}}"
@@ -109,7 +109,7 @@ In addition to a transcript, `StartMedicalScribeJob` requests generate a separat
 
  An AWS HealthScribe transcript file (from a `StartMedicalScribeJob` request) has the following format:
 
-```
+```json
 {
   "Conversation": {
     "ConversationId": "{{sampleConversationUUID}}",
@@ -410,7 +410,7 @@ aws transcribe start-medical-scribe-job \
 
 The file `my-first-medical-scribe-job.json` contains the following request body.
 
-```
+```json
 {
   "MedicalScribeJobName": "{{my-first-medical-scribe-job}}",
   "Media": {
@@ -439,7 +439,7 @@ The file `my-first-medical-scribe-job.json` contains the following request body.
 
  A documentation insights file (from a `StartMedicalScribeJob` request) has the following format:
 
-```
+```json
 {
   "ClinicalDocumentation": {
     "Sections": [

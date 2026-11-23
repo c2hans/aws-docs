@@ -104,7 +104,7 @@ An event represents a single request from any source and includes information ab
 
 The following example shows a CloudTrail event that demonstrates the **`ListTopics`**, `CreateTopic`, and `DeleteTopic` actions.
 
-```
+```JSON
 {
   "Records": [
     {
@@ -190,7 +190,7 @@ The following example shows a CloudTrail event that demonstrates the **`ListTopi
 
 The following example shows a CloudTrail event that demonstrates the `Publish` action.
 
-```
+```JSON
 {
   "eventVersion": "1.09",
   "userIdentity": {
@@ -253,7 +253,7 @@ The following example shows a CloudTrail event that demonstrates the `Publish` a
 
 The following example shows a CloudTrail event that demonstrates the `PublishBatch` action.
 
-```
+```JSON
 {
   "eventVersion": "1.09",
   "userIdentity": {

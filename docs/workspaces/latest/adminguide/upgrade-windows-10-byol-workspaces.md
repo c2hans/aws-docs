@@ -205,7 +205,7 @@ The Windows 11 24H2 upgrade process may encounter a critical boot failure during
 
 You can use the following sample PowerShell script to update the registry on your WorkSpaces to enable in-place upgrades. Follow the [Perform an in-place upgrade](#upgrade_byol_procedure), but use this script to update the registry on each WorkSpace.
 
-```
+```powershell
 # AWS WorkSpaces 1.28.20
 # Enable In-Place Update Sample Scripts
 # These registry keys and values will enable scripts to run on the next reboot of the WorkSpace.

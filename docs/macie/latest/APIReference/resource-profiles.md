@@ -86,7 +86,7 @@ Updates the sensitivity score for an S3 bucket.
 #### PATCH schema
 <a name="resource-profiles-request-body-patch-example"></a>
 
-```
+```json
 {
   "sensitivityScoreOverride": integer
 }
@@ -98,7 +98,7 @@ Updates the sensitivity score for an S3 bucket.
 #### GetResourceProfileResponse schema
 <a name="resource-profiles-response-body-getresourceprofileresponse-example"></a>
 
-```
+```json
 {
   "profileUpdatedAt": "string",
   "sensitivityScore": integer,
@@ -120,7 +120,7 @@ Updates the sensitivity score for an S3 bucket.
 #### Empty Schema schema
 <a name="resource-profiles-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -128,7 +128,7 @@ Updates the sensitivity score for an S3 bucket.
 #### ValidationException schema
 <a name="resource-profiles-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -137,7 +137,7 @@ Updates the sensitivity score for an S3 bucket.
 #### ServiceQuotaExceededException schema
 <a name="resource-profiles-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -146,7 +146,7 @@ Updates the sensitivity score for an S3 bucket.
 #### AccessDeniedException schema
 <a name="resource-profiles-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -155,7 +155,7 @@ Updates the sensitivity score for an S3 bucket.
 #### ResourceNotFoundException schema
 <a name="resource-profiles-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -164,7 +164,7 @@ Updates the sensitivity score for an S3 bucket.
 #### ThrottlingException schema
 <a name="resource-profiles-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -173,7 +173,7 @@ Updates the sensitivity score for an S3 bucket.
 #### InternalServerException schema
 <a name="resource-profiles-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

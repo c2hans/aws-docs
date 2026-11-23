@@ -34,7 +34,7 @@ aws emr-serverless start-job-run \
 
 To describe a job, use `get-job-run`. This command returns job-specific configurations and the set capacity for your new job.
 
-```
+```bash
 aws emr-serverless get-job-run \
 --job-run-id {{job-id}} \
 --application-id {{application-id}}
@@ -42,7 +42,7 @@ aws emr-serverless get-job-run \
 
 To list your jobs, use `list-job-runs`. This command returns an abbreviated set of properties that includes job type, state, and other high-level attributes. If you don't want to access all of your jobs, specify the maximum number of jobs you want to access, up to 50. The following example specifies that you want to access your two last job runs.
 
-```
+```bash
 aws emr-serverless list-job-runs \
 --max-results 2 \
 --application-id {{application-id}}
@@ -50,7 +50,7 @@ aws emr-serverless list-job-runs \
 
 To cancel a job, use `cancel-job-run`. Provide the `application-id` and the `job-id` of the job that you want to cancel.
 
-```
+```bash
 aws emr-serverless cancel-job-run \
 --job-run-id {{job-id}} \
 --application-id {{application-id}}

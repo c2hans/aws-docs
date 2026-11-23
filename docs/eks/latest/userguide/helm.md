@@ -13,21 +13,21 @@ The Helm package manager for Kubernetes helps you install and manage application
 **Important**
 Before you can install Helm charts on your Amazon EKS cluster, you must configure `kubectl` to work for Amazon EKS. If you have not already done this, see [Connect kubectl to an EKS cluster by creating a kubeconfig file](create-kubeconfig.md) before proceeding. If the following command succeeds for your cluster, you’re properly configured.
 
-```
+```bash
 kubectl get svc
 ```
 
 1. Run the appropriate command for your client operating system.
    + If you’re using macOS with [Homebrew](https://brew.sh/), install the binaries with the following command.
 
-     ```
+     ```bash
      brew install helm
      ```
    + For more installation options, see [Installing Helm](https://helm.sh/docs/intro/install/) in the Helm Docs.
 **Note**
 If you get a message that `openssl` must first be installed, you can install it with the following command.
 
-```
+```bash
 sudo yum install openssl
 ```
 
@@ -35,13 +35,13 @@ sudo yum install openssl
 
 1. See the version of Helm that you installed.
 
-   ```
+   ```bash
    helm version --template='{{ .Version }}{{ "\n" }}'
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    v3.17.2
    ```
 

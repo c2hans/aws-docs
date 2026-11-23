@@ -28,7 +28,7 @@ To avoid these misinterpretation errors, Jinja escape your CloudFormation dynami
 
 This example is from the CloudFormation User Guide. The AWS Secrets Manager secret-name and json-key segments can be used to retrieve the sign-in credentials stored in the secret.
 
-```
+```yaml
 MyRDSInstance:
   Type: AWS::RDS::DBInstance
   Properties:
@@ -43,7 +43,7 @@ MyRDSInstance:
 To escape the CloudFormation dynamic parameters you can use two different methods:
 + Enclose a block between `{% raw %} and {% endraw %}`:
 
-  ```
+  ```yaml
   '{% raw %}'
   MyRDSInstance:
     Type: AWS::RDS::DBInstance
@@ -58,7 +58,7 @@ To escape the CloudFormation dynamic parameters you can use two different method
   ```
 + Enclose a parameter between `"{{ }}"`:
 
-  ```
+  ```yaml
   MyRDSInstance:
     Type: AWS::RDS::DBInstance
     Properties:

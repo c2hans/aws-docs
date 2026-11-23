@@ -48,7 +48,7 @@ In this step, you run Python code to continuously generate sample records and wr
 
 1. Run the following Python code. You can change the Region to the one you want to use for this example. The `put-record` command in the code writes the JSON records to the stream.
 
-   ```
+   ```python
 
    from enum import Enum
    import json

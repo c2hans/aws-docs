@@ -37,7 +37,7 @@ Amazon Personalize supports specifying datasets, dataset groups, dataset import 
 ------
 #### [ JSON ]
 
-```
+```json
 {
    "AWSTemplateFormatVersion":"2010-09-09",
    "Resources":{
@@ -54,7 +54,7 @@ Amazon Personalize supports specifying datasets, dataset groups, dataset import 
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyDatasetGroup:
@@ -71,7 +71,7 @@ Resources:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -98,7 +98,7 @@ Resources:
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyDataset:
@@ -123,7 +123,7 @@ Resources:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -141,7 +141,7 @@ Resources:
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MySchema:
@@ -163,7 +163,7 @@ Resources:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -185,7 +185,7 @@ Resources:
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MySolution:

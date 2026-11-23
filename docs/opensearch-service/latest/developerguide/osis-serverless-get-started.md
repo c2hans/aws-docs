@@ -32,7 +32,7 @@ In addition, several IAM permissions are required in order to automatically crea
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -88,7 +88,7 @@ First, create a collection to ingest data into. We'll name the collection `inges
    + Allows the pipeline role to write to the collection.
    + Allows you to *read* from the collection. Later, after you ingest some sample data into the pipeline, you'll query the collection to ensure that the data was successfully ingested and written to the index.
 
-     ```
+     ```json
      [
        {
          "Rules": [
@@ -176,7 +176,7 @@ First, get the ingestion URL from the **Pipeline settings** page:
 
 Then, send some sample data to the ingestion path. The following sample request uses [awscurl](https://github.com/okigan/awscurl) to send a single log file to the pipeline:
 
-```
+```curl
 awscurl --service osis --region {{us-east-1}} \
     -X POST \
     -H "Content-Type: application/json" \
@@ -196,7 +196,7 @@ awscurl --service aoss --region {{us-east-1}} \
 
 **Sample response**:
 
-```
+```json
 {
    "took":348,
    "timed_out":false,

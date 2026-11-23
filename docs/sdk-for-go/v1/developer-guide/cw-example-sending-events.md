@@ -44,7 +44,7 @@ To set up and run this example, you must first complete these tasks:
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -73,7 +73,7 @@ Use the following trust relationship when creating the IAM role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -97,7 +97,7 @@ Choose **Copy** to save the code locally.
 
 Create the file `events_schedule_rule.go`. Import the packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -109,7 +109,7 @@ import (
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials`, load your configuration from the shared configuration file `~/.aws/config`, and create a CloudWatch Events client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -120,7 +120,7 @@ svc := cloudwatchevents.New(sess)
 
 Call `PutRule`, supplying a name, `DEMO_EVENT`, ARN of the IAM role you created, `IAM_ROLE_ARN`, and an expression defining the schedule. Finally, display the ARN of the rule.
 
-```
+```go
 result, err := svc.PutRule(&cloudwatchevents.PutRuleInput{
     Name:               aws.String("DEMO_EVENT"),
     RoleArn:            aws.String("IAM_ROLE_ARN"),
@@ -138,7 +138,7 @@ Choose **Copy** to save the code locally.
 
 Create the file `events_put_targets.go`. Import the packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -150,7 +150,7 @@ import (
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials`, load your configuration from the shared configuration file `~/.aws/config`, and create a new CloudWatch Events client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -161,7 +161,7 @@ svc := cloudwatchevents.New(sess)
 
 Call `PutTargets`, supplying a name for the rule, `DEMO_EVENT`. For the target, specify the ARN of the Lambda function you created, `LAMBDA_FUNCTION_ARN`, and the ID of the rule, `myCloudWatchEventsTarget`. Print any errors, or a success message with any targets that failed.
 
-```
+```go
 result, err := svc.PutTargets(&cloudwatchevents.PutTargetsInput{
     Rule: aws.String("DEMO_EVENT"),
     Targets: []*cloudwatchevents.Target{
@@ -183,7 +183,7 @@ Choose **Copy** to save the code locally.
 
 Create the file `events_put_events.go`. Import the packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -195,7 +195,7 @@ import (
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials`, load your configuration from the shared configuration file `~/.aws/config`, and create a CloudWatch Events client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -206,7 +206,7 @@ svc := cloudwatchevents.New(sess)
 
 Call `PutEvents`, supplying key-name value pairs in the `Details` field, and specifying the ARN of the Lambda function you created, `RESOURCE_ARN`. See [PutEventsRequestEntry](https://docs.aws.amazon.com/sdk-for-go/api/service/cloudwatchevents/#PutEventsRequestEntry) for a description of the fields. Finally, display the ingested events.
 
-```
+```go
 result, err := svc.PutEvents(&cloudwatchevents.PutEventsInput{
     Entries: []*cloudwatchevents.PutEventsRequestEntry{
         &cloudwatchevents.PutEventsRequestEntry{

@@ -47,6 +47,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Diagram showing multi-tier architecture deployed across three Availability Zones. Note that Amazon S3 and Amazon DynamoDB are always Multi-AZ automatically. The ELB also is deployed to all three zones.](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/multi-tier-architecture.png)
 
+*Figure 9: Multi-tier architecture deployed across three Availability Zones. Note that Amazon S3 and Amazon DynamoDB are always Multi-AZ automatically. The ELB also is deployed to all three zones.*
+
  **Using multiple AWS Regions**
 
  If you have workloads that require extreme resilience (such as critical infrastructure, health-related applications, or services with stringent customer or mandated availability requirements), you may require additional availability beyond what a single AWS Region can provide. In this case, you should deploy and operate your workload across at least two AWS Regions (assuming that your data residency requirements allow it).

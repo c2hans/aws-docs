@@ -18,7 +18,7 @@ You can list the [Amazon SWF](https://aws.amazon.com/swf/) domains associated wi
 
 The following code demonstrates this procedure:
 
-```
+```java
 public void list_swf_domains(AmazonSimpleWorkflowClient swf)
 {
     ListDomainsRequest request = new ListDomainsRequest();

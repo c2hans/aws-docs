@@ -37,13 +37,13 @@ To keep your custom code compiling, update calls to the following public runtime
 
   Before
 
-  ```
+  ```java
   public void describePreparedStatement(RecordEntity sqlda)
   ```
 
   After
 
-  ```
+  ```java
   public void describePreparedStatement(RangeReference sqlda)
   ```
 + **`ElasticSQLDA` constructor and `setValue(...)` — parameters changed**
@@ -52,14 +52,14 @@ To keep your custom code compiling, update calls to the following public runtime
 
   Before
 
-  ```
+  ```java
   public ElasticSQLDA(SQLDA sqlda, ExecutionContext executionContext)
   public void setValue(int idSQLVAR, byte[] value)
   ```
 
   After
 
-  ```
+  ```java
   public ElasticSQLDA(ISqlca sqlca, ISqlda sqlda, ExecutionContext executionContext)
   public void setValue(int idSQLVAR, ResultSet resultSet, int columnIndex) throws SQLException
   ```
@@ -69,7 +69,7 @@ To keep your custom code compiling, update calls to the following public runtime
 
   Before
 
-  ```
+  ```java
   public boolean lock(String fileId, IRecordObject ro)
   public boolean unlock(IRecordObject ro, String fileId)
   public int close(EOpenMode openMode, String fileId, String partitionName)
@@ -77,7 +77,7 @@ To keep your custom code compiling, update calls to the following public runtime
 
   After
 
-  ```
+  ```java
   public boolean lock(String fileId, IRecordObject ro, boolean underCommitmentControl)
   public boolean unlock(IRecordObject ro, String fileId, boolean underCommitmentControl)
   public int close(EOpenMode openMode, String fileId, String partitionName, boolean underCommitmentControl)
@@ -88,13 +88,13 @@ To keep your custom code compiling, update calls to the following public runtime
 
   Before
 
-  ```
+  ```java
   public EnterBuilder from(RangeReference from)
   ```
 
   After
 
-  ```
+  ```java
   public EnterBuilder from(RecordAdaptable from)
   ```
 + **`BluesamRedisCache` and `BluesamRedisCacheProvider` constructors — parameter added**
@@ -103,7 +103,7 @@ To keep your custom code compiling, update calls to the following public runtime
 
   Before
 
-  ```
+  ```java
   public BluesamRedisCache(Cache cache, RedisTemplate<Object, Object> template, RedissonClient redissonClient,
       BluesamRedisCodec bluesamRedisCodec, long pageSizeInBytes, long timeToLiveMillis, boolean useAsyncBatch,
       boolean useBatchInMemoryAtomic, int deleteAllBatchSize, int readBatchSize, ClearStrategy clearStrategy,
@@ -117,7 +117,7 @@ To keep your custom code compiling, update calls to the following public runtime
 
   After
 
-  ```
+  ```java
   public BluesamRedisCache(Cache cache, RedisTemplate<Object, Object> template, RedissonClient redissonClient,
       BluesamRedisCodec bluesamRedisCodec, long pageSizeInBytes, long timeToLiveMillis, boolean useAsyncBatch,
       boolean useBatchInMemoryAtomic, int deleteAllBatchSize, int readBatchSize, ClearStrategy clearStrategy,
@@ -134,7 +134,7 @@ To keep your custom code compiling, update calls to the following public runtime
 
   Before
 
-  ```
+  ```java
   public HexConvertFormatter(int inputIndex, int length, int outputIndex)
 
   public JfyFormatter(int inputIndex, int inputLength, String shiftCond, String leadCond, String trailCond,
@@ -146,7 +146,7 @@ To keep your custom code compiling, update calls to the following public runtime
 
   After
 
-  ```
+  ```java
   public HexConvertFormatter(int inputIndex, int length, int outputIndex, Charset charset)
 
   public JfyFormatter(int outputIndex, int inputIndex, int inputLength, Map<String, String> options, Charset charset)
@@ -211,13 +211,13 @@ These methods are emitted directly into generated modernized-application code by
 
   Before
 
-  ```
+  ```java
   void writeInto(ExecutionContext executionContext, Context context, RangeReference rangeReference)
   ```
 
   After
 
-  ```
+  ```java
   void writeInto(ExecutionContext executionContext, Context context, RecordAdaptable recordAdaptable)
   ```
 + **`DataUtils.formatBytes(RangeReference, RangeReference)` — return type changed**
@@ -226,13 +226,13 @@ These methods are emitted directly into generated modernized-application code by
 
   Before
 
-  ```
+  ```java
   public static void formatBytes(RangeReference source, RangeReference target)
   ```
 
   After
 
-  ```
+  ```java
   public static int formatBytes(RangeReference source, RangeReference target)
   ```
 + **`Blu4UserSpace.withTransferSize(...)` — parameter type widened**
@@ -241,13 +241,13 @@ These methods are emitted directly into generated modernized-application code by
 
   Before
 
-  ```
+  ```java
   public Blu4UserSpace withTransferSize(ElementaryRangeReference transferSize)
   ```
 
   After
 
-  ```
+  ```java
   public Blu4UserSpace withTransferSize(RangeReference transferSize)
   ```
 
@@ -276,13 +276,13 @@ None. No existing transform, generation, or runtime configuration property was r
 
   Before
 
-  ```
+  ```java
   public void addRecord(byte[] record)
   ```
 
   After
 
-  ```
+  ```java
   public boolean addRecord(byte[] record)
   ```
 

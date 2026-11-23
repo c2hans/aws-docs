@@ -43,6 +43,6 @@ If you launched an instance that was not within the [AWS Free Tier](https://aws.
 
 For more information, see the following topics:
 + [Configuring Amazon Kinesis Agent for Microsoft Windows](configuring-kinesis-agent-windows.md)
-+ [What Is Amazon Kinesis Data Firehose?](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html)
++ [What Is Amazon Data Firehose?](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html)
 + [What Is Amazon S3?](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html)
 + [What is Amazon Athena?](https://docs.aws.amazon.com/athena/latest/ug/what-is.html)

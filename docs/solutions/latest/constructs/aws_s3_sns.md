@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { S3ToSns } from "@aws-solutions-constructs/aws-s3-sns";
@@ -33,7 +33,7 @@ import { S3ToSns } from "@aws-solutions-constructs/aws-s3-sns";
 new S3ToSns(this, 'S3ToSNSPattern', {});
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_s3_sns import S3ToSns
 from aws_cdk import Stack
 from constructs import Construct
@@ -41,7 +41,7 @@ from constructs import Construct
 S3ToSns(self, 'S3ToSNSPattern')
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

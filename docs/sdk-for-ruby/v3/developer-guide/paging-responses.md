@@ -11,7 +11,7 @@ Many AWS operations return truncated results when the payload is too large to re
 
 The simplest way to handle paged response data is to use the built-in enumerator in the response object, as shown in the following example.
 
-```
+```ruby
 s3 = Aws::S3::Client.new
 
 s3.list_objects(bucket:'aws-sdk').each do |response|
@@ -28,7 +28,7 @@ To handle paging yourself, use the response’s `next_page?` method to verify th
 
 If there are more pages, use the `next_page` (notice there is no `?`) method to retrieve the next page of results, as shown in the following example.
 
-```
+```ruby
 s3 = Aws::S3::Client.new
 
 # Get the first page of data

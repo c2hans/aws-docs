@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/attribute-trans-inva
 
 The following example shows an invalid input. In this case, the JSON object passes too many items to a SIP media application.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions": [
@@ -40,7 +40,7 @@ The following example shows an invalid input. In this case, the JSON object pass
 
 The following example shows the response to the previously given input. This output is passed from a SIP media application back to the AWS Lambda function that invoked the application.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{2}},

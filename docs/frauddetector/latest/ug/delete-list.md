@@ -30,7 +30,7 @@ You can delete a list in the Amazon Fraud Detector console, using the API, using
 
 The following example uses the [DeleteList](https://docs.aws.amazon.com/frauddetector/latest/api/API_DeleteList.html) API operation to delete `allow_email_ids`.
 
-```
+```python
 import boto3
                         fraudDetector = boto3.client('frauddetector')
 fraudDetector.delete_list(

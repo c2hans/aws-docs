@@ -15,7 +15,7 @@ Before you begin, verify that an AWS Identity and Access Management (IAM) princi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

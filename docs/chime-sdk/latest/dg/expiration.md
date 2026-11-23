@@ -85,7 +85,7 @@ After the system deletes an expired resource, it sends an `ExpireAppInstanceUser
 
 The following example shows an `AppInstanceUser` event.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

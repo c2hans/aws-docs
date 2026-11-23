@@ -142,7 +142,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-identity-and-access-management-iam-create-lambda-execution-role-ex-min"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-HandleCreateIAMRole-Admin",
   "Region" : "us-east-1",
@@ -159,7 +159,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-identity-and-access-management-iam-create-lambda-execution-role-ex-max"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-HandleCreateIAMRole-Admin",
   "Region" : "us-east-1",

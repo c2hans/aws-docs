@@ -55,7 +55,7 @@ We call your CDK application an *app*, which is represented by the AWS CDK class
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import { App, Stack, StackProps } from '@aws-cdk/core';
 import * as s3 from '@aws-cdk/aws-s3';
 
@@ -76,7 +76,7 @@ new HelloCdkStack(app, "HelloCdkStack");
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const { App , Stack } = require('@aws-cdk/core');
 const s3 = require('@aws-cdk/aws-s3');
 
@@ -97,7 +97,7 @@ new HelloCdkStack(app, "HelloCdkStack");
 ------
 #### [ Python ]
 
-```
+```python
 from aws_cdk.core import App, Stack
 from aws_cdk import aws_s3 as s3
 
@@ -115,7 +115,7 @@ HelloCdkStack(app, "HelloCdkStack")
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awscdk.core.*;
 import software.amazon.awscdk.services.s3.*;
 
@@ -136,7 +136,7 @@ public class HelloCdkStack extends Stack {
 ------
 #### [ C\# ]
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.S3;
 
@@ -171,7 +171,7 @@ Stacks in AWS CDK apps extend the **Stack** base class, as shown in the previous
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 class HelloCdkStack extends Stack {
   constructor(scope: App, id: string, props?: StackProps) {
     super(scope, id, props);
@@ -184,7 +184,7 @@ class HelloCdkStack extends Stack {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 class HelloCdkStack extends Stack {
   constructor(scope, id, props) {
     super(scope, id, props);
@@ -197,7 +197,7 @@ class HelloCdkStack extends Stack {
 ------
 #### [ Python ]
 
-```
+```python
 class HelloCdkStack(core.Stack):
 
     def __init__(self, scope: core.Construct, id: str, **kwargs) -> None:
@@ -209,7 +209,7 @@ class HelloCdkStack(core.Stack):
 ------
 #### [ Java ]
 
-```
+```java
 public class HelloCdkStack extends Stack {
     public HelloCdkStack(final Construct scope, final String id) {
         this(scope, id, null);
@@ -226,7 +226,7 @@ public class HelloCdkStack extends Stack {
 ------
 #### [ C\# ]
 
-```
+```csharp
 public class HelloCdkStack : Stack
 {
     public HelloCdkStack(Construct scope, string id, IStackProps props=null) : base(scope, id, props)
@@ -248,7 +248,7 @@ L1 constructs are exactly the resources defined by CloudFormation—no more, no 
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const bucket = new s3.CfnBucket(this, "amzn-s3-demo-bucket", {
   bucketName: "amzn-s3-demo-bucket"
 });
@@ -257,7 +257,7 @@ const bucket = new s3.CfnBucket(this, "amzn-s3-demo-bucket", {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const bucket = new s3.CfnBucket(this, "amzn-s3-demo-bucket", {
   bucketName: "amzn-s3-demo-bucket"
 });
@@ -266,21 +266,21 @@ const bucket = new s3.CfnBucket(this, "amzn-s3-demo-bucket", {
 ------
 #### [ Python ]
 
-```
+```python
 bucket = s3.CfnBucket(self, "amzn-s3-demo-bucket", bucket_name="amzn-s3-demo-bucket")
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 CfnBucket bucket = new CfnBucket.Builder().bucketName("amzn-s3-demo-bucket").build();
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 var bucket = new CfnBucket(this, "amzn-s3-demo-bucket", new CfnBucketProps
 {
     BucketName= "amzn-s3-demo-bucket"
@@ -294,7 +294,7 @@ In Python, Java, and C\#, L1 construct properties that aren't simple Booleans, s
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const bucket = new s3.CfnBucket(this, "amzn-s3-demo-bucket", {
   bucketName: "amzn-s3-demo-bucket",
   corsConfiguration: {
@@ -309,7 +309,7 @@ const bucket = new s3.CfnBucket(this, "amzn-s3-demo-bucket", {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const bucket = new s3.CfnBucket(this, "amzn-s3-demo-bucket", {
   bucketName: "amzn-s3-demo-bucket",
   corsConfiguration: {
@@ -324,7 +324,7 @@ const bucket = new s3.CfnBucket(this, "amzn-s3-demo-bucket", {
 ------
 #### [ Python ]
 
-```
+```python
 bucket = CfnBucket(self, "amzn-s3-demo-bucket", bucket_name="amzn-s3-demo-bucket",
     cors_configuration=CfnBucket.CorsConfigurationProperty(
         cors_rules=[CfnBucket.CorsRuleProperty(
@@ -338,7 +338,7 @@ bucket = CfnBucket(self, "amzn-s3-demo-bucket", bucket_name="amzn-s3-demo-bucket
 ------
 #### [ Java ]
 
-```
+```java
 CfnBucket bucket = CfnBucket.Builder.create(this, "amzn-s3-demo-bucket")
                         .bucketName("amzn-s3-demo-bucket")
                         .corsConfiguration(new CfnBucket.CorsConfigurationProperty.Builder()
@@ -353,7 +353,7 @@ CfnBucket bucket = CfnBucket.Builder.create(this, "amzn-s3-demo-bucket")
 ------
 #### [ C\# ]
 
-```
+```csharp
 var bucket = new CfnBucket(this, "amzn-s3-demo-bucket", new CfnBucketProps
 {
     BucketName = "amzn-s3-demo-bucket",
@@ -384,7 +384,7 @@ The following example defines an Amazon S3 bucket by creating an instance of the
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as s3 from '@aws-cdk/aws-s3';
 
 // "this" is HelloCdkStack
@@ -396,7 +396,7 @@ new s3.Bucket(this, 'MyFirstBucket', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const s3 = require('@aws-cdk/aws-s3');
 
 // "this" is HelloCdkStack
@@ -408,7 +408,7 @@ new s3.Bucket(this, 'MyFirstBucket', {
 ------
 #### [ Python ]
 
-```
+```python
 from aws_cdk import aws_s3 as s3
 
 # "self" is HelloCdkStack
@@ -418,7 +418,7 @@ s3.Bucket(self, "MyFirstBucket", versioned=True)
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awscdk.services.s3.*;
 
 public class HelloCdkStack extends Stack {
@@ -438,7 +438,7 @@ public class HelloCdkStack extends Stack {
 ------
 #### [ C\# ]
 
-```
+```csharp
 using Amazon.CDK.AWS.S3;
 
 // "this" is HelloCdkStack
@@ -463,7 +463,7 @@ Most constructs accept `props` as their third argument (or in Python, keyword ar
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 new s3.Bucket(this, 'MyEncryptedBucket', {
   encryption: s3.BucketEncryption.KMS,
   websiteIndexDocument: 'index.html'
@@ -473,7 +473,7 @@ new s3.Bucket(this, 'MyEncryptedBucket', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 new s3.Bucket(this, 'MyEncryptedBucket', {
   encryption: s3.BucketEncryption.KMS,
   websiteIndexDocument: 'index.html'
@@ -483,7 +483,7 @@ new s3.Bucket(this, 'MyEncryptedBucket', {
 ------
 #### [ Python ]
 
-```
+```python
 s3.Bucket(self, "MyEncryptedBucket", encryption=s3.BucketEncryption.KMS,
     website_index_document="index.html")
 ```
@@ -491,7 +491,7 @@ s3.Bucket(self, "MyEncryptedBucket", encryption=s3.BucketEncryption.KMS,
 ------
 #### [ Java ]
 
-```
+```java
 Bucket.Builder.create(this, "MyEncryptedBucket")
         .encryption(BucketEncryption.KMS_MANAGED)
         .websiteIndexDocument("index.html").build();
@@ -500,7 +500,7 @@ Bucket.Builder.create(this, "MyEncryptedBucket")
 ------
 #### [ C\# ]
 
-```
+```csharp
 new Bucket(this, "MyEncryptedBucket", new BucketProps
 {
     Encryption = BucketEncryption.KMS_MANAGED,
@@ -522,7 +522,7 @@ For example, almost all AWS constructs have a set of [grant](permissions.md#perm
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const rawData = new s3.Bucket(this, 'raw-data');
 const dataScience = new iam.Group(this, 'data-science');
 rawData.grantRead(dataScience);
@@ -531,7 +531,7 @@ rawData.grantRead(dataScience);
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const rawData = new s3.Bucket(this, 'raw-data');
 const dataScience = new iam.Group(this, 'data-science');
 rawData.grantRead(dataScience);
@@ -540,7 +540,7 @@ rawData.grantRead(dataScience);
 ------
 #### [ Python ]
 
-```
+```python
 raw_data = s3.Bucket(self, 'raw-data')
 data_science = iam.Group(self, 'data-science')
 raw_data.grant_read(data_science)
@@ -549,7 +549,7 @@ raw_data.grant_read(data_science)
 ------
 #### [ Java ]
 
-```
+```java
 Bucket rawData = new Bucket(this, "raw-data");
 Group dataScience = new Group(this, "data-science");
 rawData.grantRead(dataScience);
@@ -558,7 +558,7 @@ rawData.grantRead(dataScience);
 ------
 #### [ C\# ]
 
-```
+```csharp
 var rawData = new Bucket(this, "raw-data");
 var dataScience = new Group(this, "data-science");
 rawData.GrantRead(dataScience);
@@ -571,7 +571,7 @@ Another common pattern is for AWS constructs to set one of the resource's attrib
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const jobsQueue = new sqs.Queue(this, 'jobs');
 const createJobLambda = new lambda.Function(this, 'create-job', {
   runtime: lambda.Runtime.NODEJS_14_X,
@@ -586,7 +586,7 @@ const createJobLambda = new lambda.Function(this, 'create-job', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const jobsQueue = new sqs.Queue(this, 'jobs');
 const createJobLambda = new lambda.Function(this, 'create-job', {
   runtime: lambda.Runtime.NODEJS_14_X,
@@ -601,7 +601,7 @@ const createJobLambda = new lambda.Function(this, 'create-job', {
 ------
 #### [ Python ]
 
-```
+```python
 jobs_queue = sqs.Queue(self, "jobs")
 create_job_lambda = lambda_.Function(self, "create-job",
     runtime=lambda_.Runtime.NODEJS_14_X,
@@ -616,7 +616,7 @@ create_job_lambda = lambda_.Function(self, "create-job",
 ------
 #### [ Java ]
 
-```
+```java
 final Queue jobsQueue = new Queue(this, "jobs");
 Function createJobLambda = Function.Builder.create(this, "create-job")
                 .handler("index.handler")
@@ -629,7 +629,7 @@ Function createJobLambda = Function.Builder.create(this, "create-job")
 ------
 #### [ C\# ]
 
-```
+```csharp
 var jobsQueue = new Queue(this, "jobs");
 var createJobLambda = new Function(this, "create-job", new FunctionProps
 {
@@ -659,7 +659,7 @@ For example, you could declare a construct that represents an Amazon S3 bucket w
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 export interface NotifyingBucketProps {
   prefix?: string;
 }
@@ -678,7 +678,7 @@ export class NotifyingBucket extends Construct {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 class NotifyingBucket extends Construct {
   constructor(scope, id, props = {}) {
     super(scope, id);
@@ -695,7 +695,7 @@ module.exports = { NotifyingBucket }
 ------
 #### [ Python ]
 
-```
+```python
 class NotifyingBucket(core.Construct):
 
     def __init__(self, scope: core.Construct, id: str, *, prefix=None):
@@ -709,7 +709,7 @@ class NotifyingBucket(core.Construct):
 ------
 #### [ Java ]
 
-```
+```java
 public class NotifyingBucket extends Construct {
 
     public NotifyingBucket(final Construct scope, final String id) {
@@ -739,7 +739,7 @@ public class NotifyingBucket extends Construct {
 ------
 #### [ C\# ]
 
-```
+```csharp
 public class NotifyingBucketProps : BucketProps
 {
     public string Prefix { get; set; }
@@ -769,35 +769,35 @@ The `NotifyingBucket` constructor has a typical construct signature: `scope`, `i
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 new NotifyingBucket(this, 'MyNotifyingBucket');
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 new NotifyingBucket(this, 'MyNotifyingBucket');
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 NotifyingBucket(self, "MyNotifyingBucket")
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 new NotifyingBucket(this, "MyNotifyingBucket");
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 new NotifyingBucket(this, "MyNotifyingBucket");
 ```
 
@@ -808,35 +808,35 @@ Or you could use `props` (in Java, an additional parameter) to specify the path 
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 new NotifyingBucket(this, 'MyNotifyingBucket', { prefix: 'images/' });
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 new NotifyingBucket(this, 'MyNotifyingBucket', { prefix: 'images/' });
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 NotifyingBucket(self, "MyNotifyingBucket", prefix="images/")
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 new NotifyingBucket(this, "MyNotifyingBucket", "/images");
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 new NotifyingBucket(this, "MyNotifyingBucket", new NotifyingBucketProps
 {
     Prefix = "/images"
@@ -850,7 +850,7 @@ Typically, you would also want to expose some properties or methods on your cons
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 export class NotifyingBucket extends Construct {
   public readonly topic: sns.Topic;
 
@@ -866,7 +866,7 @@ export class NotifyingBucket extends Construct {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 class NotifyingBucket extends Construct {
 
   constructor(scope, id, props) {
@@ -883,7 +883,7 @@ module.exports = { NotifyingBucket }
 ------
 #### [ Python ]
 
-```
+```python
 class NotifyingBucket(core.Construct):
 
     def __init__(self, scope: core.Construct, id: str, *, prefix=None, **kwargs):
@@ -897,7 +897,7 @@ class NotifyingBucket(core.Construct):
 ------
 #### [ Java ]
 
-```
+```java
 public class NotifyingBucket extends Construct {
 
     public Topic topic = null;
@@ -929,7 +929,7 @@ public class NotifyingBucket extends Construct {
 ------
 #### [ C\# ]
 
-```
+```csharp
 public class NotifyingBucket : Construct
 {
     public readonly Topic topic;
@@ -953,7 +953,7 @@ Now, consumers can subscribe to the topic, for example:
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const queue = new sqs.Queue(this, 'NewImagesQueue');
 const images = new NotifyingBucket(this, '/images');
 images.topic.addSubscription(new sns_sub.SqsSubscription(queue));
@@ -962,7 +962,7 @@ images.topic.addSubscription(new sns_sub.SqsSubscription(queue));
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const queue = new sqs.Queue(this, 'NewImagesQueue');
 const images = new NotifyingBucket(this, '/images');
 images.topic.addSubscription(new sns_sub.SqsSubscription(queue));
@@ -971,7 +971,7 @@ images.topic.addSubscription(new sns_sub.SqsSubscription(queue));
 ------
 #### [ Python ]
 
-```
+```python
 queue = sqs.Queue(self, "NewImagesQueue")
 images = NotifyingBucket(self, prefix="Images")
 images.topic.add_subscription(sns_sub.SqsSubscription(queue))
@@ -980,7 +980,7 @@ images.topic.add_subscription(sns_sub.SqsSubscription(queue))
 ------
 #### [ Java ]
 
-```
+```java
 NotifyingBucket images = new NotifyingBucket(this, "MyNotifyingBucket", "/images");
 images.topic.addSubscription(new SqsSubscription(queue));
 ```
@@ -988,7 +988,7 @@ images.topic.addSubscription(new SqsSubscription(queue));
 ------
 #### [ C\# ]
 
-```
+```csharp
 var queue = new Queue(this, "NewImagesQueue");
 var images = new NotifyingBucket(this, "MyNotifyingBucket", new NotifyingBucketProps
 {

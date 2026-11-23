@@ -70,7 +70,7 @@ For more information, see [AWS Site-to-Site VPN customer gateway devices](https:
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified customer gateway.**
 
-```
+```powershell
 Get-EC2CustomerGateway -CustomerGatewayId cgw-1a2b3c4d
 ```
 **Output:**
@@ -85,7 +85,7 @@ Type              : ipsec.1
 ```
 **Example 2: This example describes any customer gateway whose state is either pending or available.**
 
-```
+```powershell
 $filter = New-Object Amazon.EC2.Model.Filter
 $filter.Name = "state"
 $filter.Values = @( "pending", "available" )
@@ -94,7 +94,7 @@ Get-EC2CustomerGateway -Filter $filter
 ```
 **Example 3: This example describes all your customer gateways.**
 
-```
+```powershell
 Get-EC2CustomerGateway
 ```
 +  For API details, see [DescribeCustomerGateways](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -102,7 +102,7 @@ Get-EC2CustomerGateway
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified customer gateway.**
 
-```
+```powershell
 Get-EC2CustomerGateway -CustomerGatewayId cgw-1a2b3c4d
 ```
 **Output:**
@@ -117,7 +117,7 @@ Type              : ipsec.1
 ```
 **Example 2: This example describes any customer gateway whose state is either pending or available.**
 
-```
+```powershell
 $filter = New-Object Amazon.EC2.Model.Filter
 $filter.Name = "state"
 $filter.Values = @( "pending", "available" )
@@ -126,7 +126,7 @@ Get-EC2CustomerGateway -Filter $filter
 ```
 **Example 3: This example describes all your customer gateways.**
 
-```
+```powershell
 Get-EC2CustomerGateway
 ```
 +  For API details, see [DescribeCustomerGateways](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -49,7 +49,7 @@ To view a code example for using the `$count` command, choose the tab for the la
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function countDocuments() {
@@ -72,7 +72,7 @@ countDocuments();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def count_documents():

@@ -41,7 +41,7 @@ For more information, see [Enabling a virtual multi-factor authentication (MFA) 
 **Tools for PowerShell V4**
 **Example 1: This example retrieves a collection of the virtual MFA devices that are assigned to users in the AWS account. The `User` property of each is an object with details of the IAM user to which the device is assigned.**
 
-```
+```powershell
 Get-IAMVirtualMFADevice -AssignmentStatus Assigned
 ```
 **Output:**
@@ -64,7 +64,7 @@ User             : Amazon.IdentityManagement.Model.User
 **Tools for PowerShell V5**
 **Example 1: This example retrieves a collection of the virtual MFA devices that are assigned to users in the AWS account. The `User` property of each is an object with details of the IAM user to which the device is assigned.**
 
-```
+```powershell
 Get-IAMVirtualMFADevice -AssignmentStatus Assigned
 ```
 **Output:**

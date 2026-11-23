@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/graph
 
 **Restore an analytics graph from a snapshot**
 
-```
+```bash
 aws neptune-graph restore-graph-from-snapshot \
 --graph-name <NEW_GRAPH_NAME> \
 --snapshot-id <SNAPSHOT_ID>

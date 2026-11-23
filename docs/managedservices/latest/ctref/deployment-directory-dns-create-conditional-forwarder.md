@@ -140,7 +140,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-directory-dns-create-conditional-forwarder-ex-min"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-CreateADDNSConditionalForwarder-Admin",
   "Region" : "us-east-1",
@@ -154,7 +154,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-directory-dns-create-conditional-forwarder-ex-max"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-CreateADDNSConditionalForwarder-Admin",
   "Region" : "us-east-1",

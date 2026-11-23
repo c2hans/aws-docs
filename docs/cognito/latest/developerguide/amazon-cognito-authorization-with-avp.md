@@ -101,7 +101,7 @@ when {
 
 The following request body results in an `Allow` response.
 
-```
+```json
 {
    "accesstoken": "{{[John's ID token]}}",
    "action": {
@@ -117,7 +117,7 @@ The following request body results in an `Allow` response.
 
 When you want to specify a principal in a Verified Permissions policy, use the following format:
 
-```
+```cedar
 permit (
    principal == [Namespace]::[Entity]::"[user pool ID]|[user sub]",
    action,
@@ -127,13 +127,13 @@ permit (
 
 The following is an example principal for a user in a user pool with ID `us-east-1_Example` with sub, or user ID, `973db890-092c-49e4-a9d0-912a4c0a20c7`.
 
-```
+```cedar
 principal == {{ExampleCorp}}::{{User}}::"{{us-east-1_Example}}|{{973db890-092c-49e4-a9d0-912a4c0a20c7}}",
 ```
 
 When you want to specify a user group in a Verified Permissions policy, use the following format:
 
-```
+```cedar
 permit (
    principal in [Namespace]::[Group Entity]::"[Group name]",
    action,

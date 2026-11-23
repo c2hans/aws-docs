@@ -9,19 +9,19 @@ Checks the enrollment status, voice authentication or fraud detection results of
 ## Parameter object
 <a name="checkvoiceid-parameter"></a>
 
-```
+```json
 {
  "CheckVoiceIdOption": "enrollmentStatus"
 }
 ```
 
-```
+```json
 {
  "CheckVoiceIdOption": "voiceAuthentication"
 }
 ```
 
-```
+```json
 {
  "CheckVoiceIdOption": "fraudDetection"
 }

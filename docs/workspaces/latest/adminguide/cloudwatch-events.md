@@ -22,7 +22,7 @@ Events emitted for WorkSpaces using DCV require the WorkSpaces client applicatio
 
 Events are represented as JSON objects. The following is example data for a `WorkSpaces Access` event.
 
-```
+```json
 {
     "version": "0",
     "id": "{{64ca0eda-9751-dc55-c41a-1bd50b4fc9b7}}",

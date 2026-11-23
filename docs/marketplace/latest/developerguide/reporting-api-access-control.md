@@ -29,7 +29,7 @@ The `AWSServiceRoleForProcurementInsightsPolicy` must have the following IAM per
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

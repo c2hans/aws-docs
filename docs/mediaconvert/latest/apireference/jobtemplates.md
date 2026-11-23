@@ -82,7 +82,7 @@ Supports CORS preflight requests.
 #### GET schema
 <a name="jobtemplates-request-body-get-example"></a>
 
-```
+```json
 {
   "listBy": enum,
   "category": "string",
@@ -95,7 +95,7 @@ Supports CORS preflight requests.
 #### POST schema
 <a name="jobtemplates-request-body-post-example"></a>
 
-```
+```json
 {
   "description": "string",
   "category": "string",
@@ -1700,7 +1700,7 @@ Supports CORS preflight requests.
 #### ListJobTemplatesResponse schema
 <a name="jobtemplates-response-body-listjobtemplatesresponse-example"></a>
 
-```
+```json
 {
   "jobTemplates": [
     {
@@ -3309,7 +3309,7 @@ Supports CORS preflight requests.
 #### CreateJobTemplateResponse schema
 <a name="jobtemplates-response-body-createjobtemplateresponse-example"></a>
 
-```
+```json
 {
   "jobTemplate": {
     "arn": "string",
@@ -4915,7 +4915,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="jobtemplates-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

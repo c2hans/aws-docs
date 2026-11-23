@@ -99,7 +99,7 @@ aws cloudformation list-hook-results \
 
 Example output:
 
-```
+```json
 {
   "HookResults": [
     {
@@ -137,7 +137,7 @@ aws cloudformation list-hook-results \
 
 Example output:
 
-```
+```json
 {
   "HookResults": [
     {
@@ -171,7 +171,7 @@ aws cloudformation list-hook-results \
 
 Example output:
 
-```
+```json
 {
   "HookResults": [
     {
@@ -208,7 +208,7 @@ aws cloudformation get-hook-result \
 
 Example output:
 
-```
+```json
 {
   "HookResultId": "59ef501c-0ac4-47c0-a193-e071cabf748d",
   "InvocationPoint": "PRE_PROVISION",

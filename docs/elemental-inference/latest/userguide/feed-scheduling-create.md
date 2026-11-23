@@ -22,7 +22,7 @@ aws elemental-inference create-schedule-action \
 
 If the request succeeds, the response contains the new action, with a status of `PENDING`. If the feed already has an action with the same name, the request returns a `ValidationException`. Choose a different name, or delete the existing action first.
 
-```
+```json
 {
   "actionName": "enable-smartcrop-game-1",
   "startConfiguration": {

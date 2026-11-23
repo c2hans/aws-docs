@@ -17,7 +17,7 @@ This page provides a concise workflow for creating and deploying a code-based Ty
 
 Create a TypeScript project that uses the Strands Agents SDK and Amazon Bedrock:
 
-```
+```bash
 agentcore create \
   --name MyTsProject \
   --template agent-typescript-strands
@@ -34,7 +34,7 @@ You can also run `agentcore` with no arguments to open the interactive menu. Out
 
 Start the Runtime locally and open the Agent Inspector:
 
-```
+```bash
 cd MyTsProject
 agentcore dev --mode browser
 ```
@@ -44,21 +44,21 @@ Without `--mode browser`, `agentcore dev` defaults to headless mode and streams 
 ## Build and deploy your agent
 <a name="ts-deploy-runtime"></a>
 
-```
+```bash
 agentcore build
 agentcore deploy
 ```
 
 Check the deployed resources:
 
-```
+```bash
 agentcore status
 ```
 
 ## Invoke your deployed agent
 <a name="ts-test-deployed-agent"></a>
 
-```
+```bash
 agentcore invoke --runtime agent \
   --payload '{"prompt":"Hello, what can you do?"}'
 ```

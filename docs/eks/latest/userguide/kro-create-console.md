@@ -93,7 +93,7 @@ You should see the `ResourceGraphDefinition` resource type listed.
 
  **Using kubectl**
 
-```
+```bash
 kubectl api-resources | grep kro.run
 ```
 

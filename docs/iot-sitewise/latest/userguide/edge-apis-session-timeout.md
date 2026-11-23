@@ -35,7 +35,7 @@ Creating a revised session timeout configuration replaces the device's current c
 
 1. In the **Configuration update** section, under **Configuration to merge**, enter the following JSON:
 
-   ```
+   ```json
    {
        "AWS_SITEWISE_EDGE_SESSION_TIMEOUT_MINUTES": "240"
    }

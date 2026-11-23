@@ -39,7 +39,7 @@ This example represents code in an application that uses the version 1.6.2 or ea
 
 This code uses the `KmsMasterKeyProvider.builder()` method to instantiate an AWS KMS master key provider that uses one AWS KMS key as a wrapping key.
 
-```
+```java
 // Create a master key provider
 // Replace the example key ARN with a valid one
 String awsKmsKey = "{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}";
@@ -55,7 +55,7 @@ The `Builder.build()` and `Builder.withKeysForEncryption()` methods used in the 
 
 To update to a strict mode master key provider, this code replaces calls to deprecated methods with a call to the new `Builder.buildStrict()` method. This example specifies one AWS KMS key as the wrapping key, but the `Builder.buildStrict()` method can take a list of multiple AWS KMS keys.
 
-```
+```java
 // Create a master key provider in strict mode
 // Replace the example key ARN with a valid one from your AWS account.
 String awsKmsKey = "{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}";
@@ -71,7 +71,7 @@ This example represents code in an application that uses version 1.4.1 of the AW
 
 Note that `KMSMasterKey` is not deprecated or removed. When encrypting and decrypting, it uses only the AWS KMS key you specify.
 
-```
+```python
 # Create a master key provider
 # Replace the example key ARN with a valid one
 key_1 = "{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}"
@@ -86,7 +86,7 @@ This example represents code in an application that uses version 1.7.*x* of the 
 
 To update to a strict mode master key provider, this code replaces the call to `KMSMasterKeyProvider()` with a call to `StrictAwsKmsMasterKeyProvider()`.
 
-```
+```python
 # Create a master key provider in strict mode
 # Replace the example key ARNs with valid values from your AWS account
 key_1 = "{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}"
@@ -104,7 +104,7 @@ This example shows how to encrypt and decrypt using the AWS Encryption CLI versi
 
 In version 1.1.7 and earlier, when encrypting, you specify one or more master keys (or *wrapping keys*), such as an AWS KMS key. When decrypting, you can't specify any wrapping keys unless you are using a custom master key provider. The AWS Encryption CLI can use any wrapping key that encrypted a data key.
 
-```
+```bash
 \\ Replace the example key ARN with a valid one
 $ keyArn={{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}
 
@@ -130,7 +130,7 @@ The `--master-keys` parameter is deprecated in version 1.7.*x* and removed in ve
 
 To upgrade to *strict mode*, use the **key** attribute of the `--wrapping-keys` parameter to specify a wrapping key when encrypting and decrypting.
 
-```
+```bash
 \\ Replace the example key ARN with a valid value
 $ keyArn={{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}
 
@@ -169,7 +169,7 @@ This example represents code in an application that uses version 1.7.*x* or late
 
 To instantiate a master key provider in strict mode for encrypting, this example uses the `Builder.buildStrict()` method. To instantiate a master key provider in discovery mode for decrypting, it uses the `Builder.buildDiscovery()` method. The `Builder.buildDiscovery()` method takes a `DiscoveryFilter` that limits the AWS Encryption SDK to AWS KMS keys in the specified AWS partition and accounts.
 
-```
+```java
 // Create a master key provider in strict mode for encrypting
 // Replace the example alias ARN with a valid one from your AWS account.
 String awsKmsKey = "{{arn:aws:kms:us-west-2:111122223333:alias/ExampleAlias}}";
@@ -192,7 +192,7 @@ KmsMasterKeyProvider decryptingKeyProvider = KmsMasterKeyProvider.builder()
 
 To create a master key provider in strict mode for encrypting, this example uses `StrictAwsKmsMasterKeyProvider`. To create a master key provider in discovery mode for decrypting, it uses `DiscoveryAwsKmsMasterKeyProvider` with a `DiscoveryFilter` that limits the AWS Encryption SDK to AWS KMS keys in the specified AWS partition and accounts.
 
-```
+```python
 # Create a master key provider in strict mode
 # Replace the example key ARN and alias ARNs with valid values from your AWS account.
 key_1 = "{{arn:aws:kms:us-west-2:111122223333:alias/ExampleAlias}}"
@@ -222,7 +222,7 @@ When encrypting, this example specifies a wrapping key, which is required. When 
 
 To limit the wrapping keys that the AWS Encryption SDK can use in discovery mode to those in particular AWS accounts, this example uses the `discovery-partition` and `discovery-account` attributes of the `--wrapping-keys` parameter. These optional attributes are valid only when the `discovery` attribute is set to `true`. You must use the `discovery-partition` and `discovery-account` attributes together; neither is valid alone.
 
-```
+```bash
 \\ Replace the example key ARN with a valid value
 $ keyAlias={{arn:aws:kms:us-west-2:111122223333:alias/ExampleAlias}}
 

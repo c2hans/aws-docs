@@ -27,7 +27,7 @@ You can use the search bar to find a specific recommendation using keywords or r
 
 To filter recommendations by state (open or closed):
 
-```
+```bash
 aws wellarchitected list-agent-recommendations \
     --profile-arn "{{arn:aws:wellarchitected:us-east-1:111122223333:agent-profile/my-profile}}" \
     --state OPEN
@@ -35,7 +35,7 @@ aws wellarchitected list-agent-recommendations \
 
 To filter by pillar:
 
-```
+```bash
 aws wellarchitected list-agent-recommendations \
     --profile-arn "{{arn:aws:wellarchitected:us-east-1:111122223333:agent-profile/my-profile}}" \
     --pillar COST_OPTIMIZATION

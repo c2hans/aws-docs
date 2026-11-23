@@ -62,7 +62,7 @@ The following example shows how to create a discovery filter. Before using the c
 ------
 #### [ Java ]
 
-```
+```java
 // Create the discovery filter
 DiscoveryFilter discoveryFilter = DiscoveryFilter.builder()
         .partition("{{aws}}")
@@ -73,7 +73,7 @@ DiscoveryFilter discoveryFilter = DiscoveryFilter.builder()
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var discoveryFilter = new DiscoveryFilter
 {
     Partition = "{{aws}}",
@@ -84,7 +84,7 @@ var discoveryFilter = new DiscoveryFilter
 ------
 #### [ Rust ]
 
-```
+```rs
 // Create discovery filter
 let discovery_filter = DiscoveryFilter::builder()
     .partition("{{aws}}")
@@ -121,7 +121,7 @@ To configure a signed beacon, provide the following values.
 
 The following example defines the signed parts lists locally within the signed beacon configuration.
 
-```
+```java
 List<CompoundBeacon> compoundBeaconList = new ArrayList<>();
 CompoundBeacon exampleCompoundBeacon = CompoundBeacon.builder()
     .name("{{compoundBeaconName}}")
@@ -136,7 +136,7 @@ compoundBeaconList.add(exampleCompoundBeacon);
 
 The following example defines the signed parts lists globally in the beacon version. For more information on defining the beacon version, see [Using beacons](using-beacons.md).
 
-```
+```java
  List<BeaconVersion> beaconVersions = new ArrayList<>();
 beaconVersions.add(
     BeaconVersion.builder()
@@ -164,7 +164,7 @@ beaconVersions.add(
 
 The following example defines the signed parts lists locally within the signed beacon configuration.
 
-```
+```cs
 var compoundBeaconList = new List<CompoundBeacon>();
 var exampleCompoundBeacon = new CompoundBeacon
  {
@@ -180,7 +180,7 @@ compoundBeaconList.Add(exampleCompoundBeacon);
 
 The following example defines the signed parts lists globally in the beacon version. For more information on defining the beacon version, see [Using beacons](using-beacons.md).
 
-```
+```cs
 var beaconVersions = new List<BeaconVersion>
 {
     new BeaconVersion
@@ -225,7 +225,7 @@ Identifies the signed fields included in the signed beacon.
 Each part must include a name, source, and prefix. The source is the `SIGN_ONLY` or `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` field that the part identifies. The source must be a field name or an index referring to the value of a nested field. If your part name identifies the source, you can omit the source and the AWS Database Encryption SDK will automatically use the name as its source. We recommend specifying the source as the part name whenever possible. The prefix can be any string, but it must be unique. No two signed parts in a signed beacon can have the same prefix. We recommend using a short value that distinguishes the part from other parts served by the compound beacon.
 We recommend defining your signed parts globally whenever possible. You might consider defining a signed part locally if you only intend on using it in one compound beacon. A locally defined part cannot have the same prefix or name as a globally defined part.
 
-```
+```java
 List<SignedPart> signedPartList = new ArrayList<>();
     SignedPart signedPartExample = SignedPart.builder()
         .name("{{signedFieldName}}")
@@ -234,7 +234,7 @@ List<SignedPart> signedPartList = new ArrayList<>();
     signedPartList.add(signedPartExample);
 ```
 
-```
+```cs
 var signedPartsList = new List<SignedPart>
 {
     new SignedPart { Name = "{{signedFieldName1}}", Prefix = "S-" },
@@ -264,7 +264,7 @@ Use the following procedures to specify your own constructor list.
 ------
 #### [ Java ]
 
-   ```
+   ```java
    ConstructorPart field1ConstructorPart = ConstructorPart.builder()
            .name("{{Field1}}")
            .required({{true}})
@@ -274,7 +274,7 @@ Use the following procedures to specify your own constructor list.
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    var field1ConstructorPart = new ConstructorPart { Name = "{{Field1}}", Required = {{true}} };
    ```
 
@@ -287,7 +287,7 @@ Use the following procedures to specify your own constructor list.
 ------
 #### [ Java ]
 
-   ```
+   ```java
    // Create a list for Field1.Field2.Field3 queries
    List<ConstructorPart> field123ConstructorPartList = new ArrayList<>();
    field123ConstructorPartList.add(field1ConstructorPart);
@@ -309,7 +309,7 @@ Use the following procedures to specify your own constructor list.
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    // Create a list for Field1.Field2.Field3 queries
     var field123ConstructorPartList = new Constructor
    {
@@ -329,7 +329,7 @@ Use the following procedures to specify your own constructor list.
 ------
 #### [ Java ]
 
-   ```
+   ```java
    List<Constructor> constructorList = new ArrayList<>();
    constructorList.add(field123Constructor);
    constructorList.add(field421Constructor);
@@ -338,7 +338,7 @@ Use the following procedures to specify your own constructor list.
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    var constructorList = new List<Constructor>
    {
        field123Constructor,

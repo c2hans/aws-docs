@@ -43,7 +43,7 @@ Following shows the contents for the `input.json` file. You can use the `destina
 
 **Contents of input.json**
 
-```
+```JSON
 {
    "description": "{{Tunnel to remote device1}}",
    "destinationConfig": {
@@ -55,7 +55,7 @@ Following shows the contents for the `input.json` file. You can use the `destina
 
 Running this command creates a new tunnel and provides you the source and destination access tokens.
 
-```
+```JSON
 {
     "tunnelId": "01234567-89ab-0123-4c56-789a01234bcd",
     "tunnelArn": "arn:aws:iot:{{us-east-1}}:{{123456789012}}:tunnel/01234567-89ab-0123-4c56-789a01234bcd",

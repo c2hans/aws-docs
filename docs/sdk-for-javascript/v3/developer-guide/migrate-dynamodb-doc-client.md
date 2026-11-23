@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 
  Example:
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb"; // ES6 import
 // const { DynamoDBClient } = require("@aws-sdk/client-dynamodb"); // CommonJS import
 import { DynamoDBDocumentClient, PutCommand } from "@aws-sdk/lib-dynamodb"; // ES6 import
@@ -43,7 +43,7 @@ await ddbDocClient.send(
 
  Example:
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, PutCommand } from "@aws-sdk/lib-dynamodb";
 

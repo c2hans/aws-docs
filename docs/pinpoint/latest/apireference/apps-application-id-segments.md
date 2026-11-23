@@ -117,7 +117,7 @@ Retrieves information about the communication requirements and options that are 
 #### POST schema
 <a name="apps-application-id-segments-request-body-post-example"></a>
 
-```
+```json
 {
   "Name": "string",
   "Dimensions": {
@@ -282,7 +282,7 @@ Retrieves information about the communication requirements and options that are 
 #### SegmentsResponse schema
 <a name="apps-application-id-segments-response-body-segmentsresponse-example"></a>
 
-```
+```json
 {
   "Item": [
     {
@@ -465,7 +465,7 @@ Retrieves information about the communication requirements and options that are 
 #### SegmentResponse schema
 <a name="apps-application-id-segments-response-body-segmentresponse-example"></a>
 
-```
+```json
 {
   "Name": "string",
   "Dimensions": {
@@ -643,7 +643,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-segments-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

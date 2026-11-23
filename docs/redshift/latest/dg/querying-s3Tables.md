@@ -48,7 +48,7 @@ In the policy and examples below, replace `us-west-2` with your AWS Region and `
 
 1. Paste in the following JSON policy document:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -147,7 +147,7 @@ Associate the IAM role you configured in Step 1 with your Amazon Redshift cluste
 
 Run the following command to associate an IAM role with an existing cluster or namespace. Replace `my-redshift-cluster` or `my-redshift-namespace` with your cluster identifier or namespace and `111122223333` with your AWS account ID.
 
-```
+```bash
 aws redshift modify-cluster-iam-roles \
     --cluster-identifier my-redshift-cluster \
     --add-iam-roles arn:aws:iam::111122223333:role/RedshiftS3TablesRole
@@ -198,7 +198,7 @@ Before using any of the three query methods below, you must create a resource li
 
 *Using the AWS CLI:*
 
-```
+```bash
 aws glue create-database \
   --region us-west-2 \
   --cli-input-json '{
@@ -231,7 +231,7 @@ For complete syntax details, see [CREATE EXTERNAL SCHEMA](https://docs.aws.amazo
 
 Use the database name and catalog ID from Step 3. Replace `111122223333` with your AWS account ID.
 
-```
+```sql
 CREATE EXTERNAL SCHEMA s3tables_schema
 FROM DATA CATALOG DATABASE 'sales_resource_link'
 IAM_ROLE 'arn:aws:iam::111122223333:role/RedshiftS3TablesRole'
@@ -252,7 +252,7 @@ For complete syntax details, see [CREATE DATABASE](https://docs.aws.amazon.com/r
 
 Replace `111122223333` with your AWS account ID.
 
-```
+```sql
 CREATE DATABASE s3tables_db
 FROM ARN 'arn:aws:glue:us-west-2:111122223333:database/sales_resource_link'
 WITH DATA CATALOG SCHEMA analytics_schema
@@ -282,7 +282,7 @@ To enable federated access to Spectrum:
 
 1. As a cluster administrator, grant the federated user permissions to access the external schema. Replace `my_user` with your IAM role or user name:
 
-   ```
+   ```sql
    GRANT ALL ON SCHEMA awsdatacatalog TO "IAMR:my_user";
    ```
 
@@ -294,12 +294,12 @@ After federated access is configured, verify the mounted schemas and query your 
 
 Verify mounted schemas:
 
-```
+```sql
 SHOW SCHEMAS FROM DATABASE awsdatacatalog;
 ```
 
 Query S3 Tables using the resource link name from Step 3:
 
-```
+```sql
 SELECT * FROM awsdatacatalog.sales_resource_link.transactions;
 ```

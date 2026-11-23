@@ -53,7 +53,7 @@ For example, if you created this account from AWS Organizations and you use a cr
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

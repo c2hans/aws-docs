@@ -25,7 +25,7 @@ If your validator runs in a VPC without outbound internet access, you can fetch 
 
 1. Retrieve the OIDC URL for your Amazon EKS cluster using the AWS CLI.
 
-   ```
+   ```bash
    $ aws eks describe-cluster --name my-cluster --query 'cluster.identity.oidc.issuer'
    "https://oidc.eks.us-west-2.amazonaws.com/id/8EBDXXXX00BAE"
    ```
@@ -36,7 +36,7 @@ Amazon EKS throttles calls to the OIDC endpoint. You should cache the public sig
 **Important**
 Amazon EKS rotates the OIDC signing key every seven days.
 
-   ```
+   ```bash
    $ curl https://oidc.eks.us-west-2.amazonaws.com/id/8EBDXXXX00BAE/keys
    {"keys":[{"kty":"RSA","kid":"2284XXXX4a40","use":"sig","alg":"RS256","n":"wklbXXXXMVfQ","e":"AQAB"}]}
    ```

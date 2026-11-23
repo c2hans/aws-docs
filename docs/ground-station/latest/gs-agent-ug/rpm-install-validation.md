@@ -35,14 +35,14 @@ Tools that you will need to be able to verify this RPM installation are:
 Both tools come by default on Amazon Linux 2 and Amazon Linux 2023. These tools will help to validate that the RPM you are using is the correct version. First download the latest RPM from the S3 bucket (see [Download agent](installing-the-agent.md#download-agent) for instructions on downloading the RPM). Once this file is downloaded, there will be a few things to check:
 +  Calculate the sha256sum of the RPM file. Perform the following action from the command line of the compute instance that you are using:
 
-  ```
+  ```bash
   sha256sum aws-groundstation-agent.rpm
   ```
 
    Compare this value to the section of the table above that corresponds to your instance's Linux OS version. A match shows that the RPM you downloaded is a valid file that AWS Ground Station has vended out to customers. If the hashes do not match, do not install the RPM, and delete it from the compute instance.
 +  Check the MD5 hash of the file as well, to ensure that the RPM has not been compromised. To do this, use the RPM command line tool by running the following command:
 
-  ```
+  ```bash
   rpm -qp --qf '%{SIGMD5}\n' ./aws-groundstation-agent.rpm
   ```
 

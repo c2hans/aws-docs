@@ -160,7 +160,7 @@ The following policy allows a user to access OpenSearch Ingestion within the Ope
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -193,7 +193,7 @@ This policy is an example of a "pipeline admin" policy that allows a user to man
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -236,7 +236,7 @@ This example policy allows a user or other entity to ingest data into an Amazon 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

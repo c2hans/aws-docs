@@ -22,7 +22,7 @@ The AWS SDK for Java 2.x is a major rewrite of the 1.x code base built on top of
 + Version 2.x supports a new shorthand method for creating requests.
 **Example**
 
-  ```
+  ```java
   dynamoDbClient.putItem(request -> request.tableName(TABLE))
   ```
 

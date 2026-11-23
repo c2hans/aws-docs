@@ -47,7 +47,7 @@ The procedure for updating an Amazon SNS event destination is similar to the pro
 **To update an Amazon SNS event destination in the AWS CLI**
 + At the command line, run the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 update-event-destination \
   > --event-destination-name {{eventDestinationName}} \
   > --configuration-set-name {{configurationSet}} \

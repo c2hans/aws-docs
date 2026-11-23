@@ -8,7 +8,7 @@ Run a query and return profile information about that query.
 
 **Syntax**
 
-```
+```text
 FT.PROFILE
 
 <index>

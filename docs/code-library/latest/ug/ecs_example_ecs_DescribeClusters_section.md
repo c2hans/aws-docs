@@ -102,7 +102,7 @@ For more information, see [Amazon ECS Clusters](https://docs.aws.amazon.com/Amaz
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecs#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ecs.EcsClient;
 import software.amazon.awssdk.services.ecs.model.DescribeClustersRequest;
@@ -171,7 +171,7 @@ public class DescribeClusters {
 **Tools for PowerShell V4**
 **Example 1: This cmdlet describes one or more of your ECS clusters.**
 
-```
+```powershell
 Get-ECSClusterDetail -Cluster "LAB-ECS-CL" -Include SETTINGS | Select-Object *
 ```
 **Output:**
@@ -189,7 +189,7 @@ HttpStatusCode   : OK
 **Tools for PowerShell V5**
 **Example 1: This cmdlet describes one or more of your ECS clusters.**
 
-```
+```powershell
 Get-ECSClusterDetail -Cluster "LAB-ECS-CL" -Include SETTINGS | Select-Object *
 ```
 **Output:**
@@ -210,7 +210,7 @@ HttpStatusCode   : OK
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -271,7 +271,7 @@ class EcsWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ecs#code-examples).
 
-```
+```rust
 async fn show_clusters(client: &aws_sdk_ecs::Client) -> Result<(), aws_sdk_ecs::Error> {
     let resp = client.list_clusters().send().await?;
 

@@ -28,7 +28,7 @@ This is useful when you want to:
 
 Calling `GetDocumentContent` requires both `bedrock:Retrieve` and `bedrock:GetDocumentContent` IAM actions on the knowledge base resource. This is because the API internally validates retrieval-level access before returning document content. Make sure your IAM policy includes both actions:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -47,7 +47,7 @@ Calling `GetDocumentContent` requires both `bedrock:Retrieve` and `bedrock:GetDo
 
 When your knowledge base has ACL-based access control enabled, pass `userContext` with the user's identity to ensure document-level permission checks:
 
-```
+```python
 import boto3
 import requests
 
@@ -87,7 +87,7 @@ with open('document.pdf', 'wb') as f:
 
 When ACLs are not configured, omit `userContext`:
 
-```
+```python
 import boto3
 import requests
 
@@ -124,7 +124,7 @@ For cross-account access, the knowledge base owner must attach a **resource poli
 
 The account that owns the knowledge base (for example, `999999999999`) must attach a resource policy granting the caller account (for example, `111111111111`) access:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -149,7 +149,7 @@ This is done through the `PutKnowledgeBaseResourcePolicy` API or through the Ama
 
 The caller's IAM role/user (in account `111111111111`) needs an IAM policy allowing the actions on the cross-account KB ARN:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -167,7 +167,7 @@ The caller's IAM role/user (in account `111111111111`) needs an IAM policy allow
 
 **Step 3: Call the API using the full KB ARN**
 
-```
+```python
 import boto3
 import requests
 
@@ -219,7 +219,7 @@ Results from a native multimodal knowledge base include the following metadata f
 
 For image results, the [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) response returns the image in the `byteContent` field as a base64-encoded data URI, with a `type` of `IMAGE`:
 
-```
+```json
 "retrievalResults": [
     {
         "content": {
@@ -237,7 +237,7 @@ For audio and video results, the [Retrieve](https://docs.aws.amazon.com/bedrock/
 
 The following example shows an audio result:
 
-```
+```json
 "retrievalResults": [
     {
         "content": {
@@ -252,7 +252,7 @@ The following example shows an audio result:
 
 The following example shows a video result:
 
-```
+```json
 "retrievalResults": [
     {
         "content": {

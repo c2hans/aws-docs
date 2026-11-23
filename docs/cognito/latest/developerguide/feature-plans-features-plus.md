@@ -8,12 +8,15 @@ The Plus feature plan has advanced security features for Amazon Cognito user poo
 
 When you switch from the Essentials to the Plus plan, you get all the features in Essentials and the additional features that follow. These include the threat protection set of security options also known as *advanced security features*. To configure your user pools to automatically adapt to threats in your authentication front end, choose the Plus plan for your user pools.
 
+The Plus plan also extends two Essentials features. Point-in-time recovery can restore user data from up to 14 days in the past, compared with 1 day on Essentials. User pools on the Plus plan have a 99.99% Service Commitment in the [Amazon Cognito Service Level Agreement](https://aws.amazon.com/cognito/sla/), compared with 99.9% on Essentials and Lite.
+
 The sections that follows present a brief overview of the features that you can add to your application with the Plus plan. For detailed information, see the following pages.
 
 **Additional resources**
 + Adaptive authentication: [Working with adaptive authentication](cognito-user-pool-settings-adaptive-authentication.md)
 + Compromised credentials: [Working with compromised-credentials detection](cognito-user-pool-settings-compromised-credentials.md)
 + Log export: [Exporting logs from Amazon Cognito user pools](exporting-quotas-and-usage.md)
++ Point-in-time recovery: [Point-in-time recovery for user pools](user-pool-point-in-time-recovery.md)
 
 **Topics**
 + [Threat protection: adaptive authentication](#features-adaptive-authentication)

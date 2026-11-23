@@ -36,7 +36,7 @@ For more information, see [Managing tags with Tag Editor](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This example adds the tag keys "stage" and "version" with values "beta" and "preprod\_test" to an Amazon S3 bucket and an Amazon DynamoDB table. A single call is made to the service to apply the tags.**
 
-```
+```powershell
 $arn1 = "arn:aws:s3:::amzn-s3-demo-bucket"
 $arn2 = "arn:aws:dynamodb:us-west-2:123456789012:table/mytable"
 
@@ -44,7 +44,7 @@ Add-RGTResourceTag -ResourceARNList $arn1,$arn2 -Tag @{ "stage"="beta"; "version
 ```
 **Example 2: This example adds the specified tags and values to an Amazon S3 bucket and an Amazon DynamoDB table. Two calls are made to the service, one for each resource ARN piped into the cmdlet.**
 
-```
+```powershell
 $arn1 = "arn:aws:s3:::amzn-s3-demo-bucket"
 $arn2 = "arn:aws:dynamodb:us-west-2:123456789012:table/mytable"
 
@@ -55,7 +55,7 @@ $arn1,$arn2 | Add-RGTResourceTag -Tag @{ "stage"="beta"; "version"="preprod_test
 **Tools for PowerShell V5**
 **Example 1: This example adds the tag keys "stage" and "version" with values "beta" and "preprod\_test" to an Amazon S3 bucket and an Amazon DynamoDB table. A single call is made to the service to apply the tags.**
 
-```
+```powershell
 $arn1 = "arn:aws:s3:::amzn-s3-demo-bucket"
 $arn2 = "arn:aws:dynamodb:us-west-2:123456789012:table/mytable"
 
@@ -63,7 +63,7 @@ Add-RGTResourceTag -ResourceARNList $arn1,$arn2 -Tag @{ "stage"="beta"; "version
 ```
 **Example 2: This example adds the specified tags and values to an Amazon S3 bucket and an Amazon DynamoDB table. Two calls are made to the service, one for each resource ARN piped into the cmdlet.**
 
-```
+```powershell
 $arn1 = "arn:aws:s3:::amzn-s3-demo-bucket"
 $arn2 = "arn:aws:dynamodb:us-west-2:123456789012:table/mytable"
 

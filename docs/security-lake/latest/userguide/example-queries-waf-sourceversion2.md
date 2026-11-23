@@ -10,7 +10,7 @@ Here are some examples queries for AWS WAFv2 logs for AWS source version 2:
 
 **Post requests from a specific source IP over the past 7 days**
 
-```
+```sql
 SELECT
     time_dt,
     activity_name,
@@ -28,7 +28,7 @@ LIMIT 25
 
 **Requests which matched a firewall type MANAGED\_RULE\_GROUP over the past 7 days**
 
-```
+```sql
 SELECT
     time_dt,
     activity_name,
@@ -50,7 +50,7 @@ LIMIT 25
 
 **Requests which matched a REGEX in a firewall rule over the past 7 days**
 
-```
+```sql
 SELECT
     time_dt,
     activity_name,
@@ -72,7 +72,7 @@ LIMIT 25
 
 **Denied get requests for AWS credentials which triggered AWS WAF rule over the past 7 days**
 
-```
+```sql
 SELECT
     time_dt,
     activity_name,
@@ -92,7 +92,7 @@ LIMIT 25
 
 **Get requests for AWS Credentials, grouped by country over the past 7 days**
 
-```
+```sql
 SELECT count(*) as Total,
     src_endpoint.location.country AS Country,
     activity_name,

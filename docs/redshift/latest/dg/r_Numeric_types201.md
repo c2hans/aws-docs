@@ -89,6 +89,6 @@ In addition to ordinary numeric values, the floating-point types have several sp
 
 For example, to insert not-a-number in column `day_charge` of table `customer_activity` run the following SQL:
 
-```
+```sql
 insert into customer_activity(day_charge) values('NaN');
 ```

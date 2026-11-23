@@ -11,7 +11,7 @@ FDA helps buyers perform the following actions independently for transactions on
 + Begin product usage (license/entitlement activation).
 + Pay for a purchase (invoice generation).
 
-FDA is supported on private offers, creating for software as a service (SaaS) products, for contract and contracts with consumption pricing (CCP), and with or without flexible payments.
+FDA is supported on private offers, creating for software as a service (SaaS) products, for contract and contracts with consumption pricing (CCP), and with or without flexible payments, and for RTB Fabric module products with contract pricing.
 
 When you use future dated agreements, keep the following dates in mind:
 

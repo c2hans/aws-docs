@@ -25,7 +25,7 @@ The FHIR `read` interaction reads the current state of a resource in a HealthLak
 
    SigV4 authorization
 
-   ```
+   ```sh
    curl --request GET \
      'https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/Patient/{{id}}' \
      --aws-sigv4 'aws:amz:region:healthlake' \
@@ -39,7 +39,7 @@ The FHIR `read` interaction reads the current state of a resource in a HealthLak
 
    SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
-   ```
+   ```json
    {
        "AuthorizationStrategy": "SMART_ON_FHIR",
        "FineGrainedAuthorizationEnabled": true,

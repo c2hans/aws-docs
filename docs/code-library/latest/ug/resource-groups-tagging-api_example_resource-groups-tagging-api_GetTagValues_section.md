@@ -39,7 +39,7 @@ For more information, see [What is Tag Editor?](https://docs.aws.amazon.com/tag-
 **Tools for PowerShell V4**
 **Example 1: Returns the value for the specified tag in a region. If the -Region parameter is not specified the cmdlet will attempt to infer the region from the default shell region or EC2 instance metadata.**
 
-```
+```powershell
 Get-RGTTagValue -Key "stage" -Region us-west-2
 ```
 **Output:**
@@ -52,7 +52,7 @@ beta
 **Tools for PowerShell V5**
 **Example 1: Returns the value for the specified tag in a region. If the -Region parameter is not specified the cmdlet will attempt to infer the region from the default shell region or EC2 instance metadata.**
 
-```
+```powershell
 Get-RGTTagValue -Key "stage" -Region us-west-2
 ```
 **Output:**

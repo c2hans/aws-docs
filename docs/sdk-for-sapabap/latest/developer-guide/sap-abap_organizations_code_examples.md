@@ -24,7 +24,7 @@ The following code example shows how to use `AttachPolicy`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/org#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_org->attachpolicy(
           iv_policyid = iv_policy_id
@@ -50,7 +50,7 @@ The following code example shows how to use `CreatePolicy`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/org#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_org->createpolicy(       " oo_result is returned for testing purposes. "
           iv_name        = iv_policy_name
@@ -76,7 +76,7 @@ The following code example shows how to use `DeletePolicy`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/org#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_org->deletepolicy(
           iv_policyid = iv_policy_id ).
@@ -99,7 +99,7 @@ The following code example shows how to use `DescribePolicy`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/org#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_org->describepolicy(     " oo_result is returned for testing purposes. "
           iv_policyid = iv_policy_id ).
@@ -121,7 +121,7 @@ The following code example shows how to use `DetachPolicy`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/org#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_org->detachpolicy(
           iv_policyid = iv_policy_id
@@ -147,7 +147,7 @@ The following code example shows how to use `ListPolicies`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/org#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_org->listpolicies(       " oo_result is returned for testing purposes. "
           iv_filter = iv_filter ).

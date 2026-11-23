@@ -11,7 +11,7 @@ Once you have your change data capture solution in place or have disabled indexi
 
 Define the snapshot under `sourceClusters.<source>.snapshotInfo.snapshots` and submit the workflow:
 
-```
+```bash
 workflow configure edit
 workflow submit
 workflow manage
@@ -50,7 +50,7 @@ Snapshot `indexAllowlist` is the earliest and most restrictive filter. Use metad
 
 To check workflow-managed snapshot creation status:
 
-```
+```bash
 workflow status --resource-view
 workflow log resource datasnapshot.<NAME> -- --tail=100
 ```
@@ -59,14 +59,14 @@ Use `workflow log resource --list` to find the exact `datasnapshot.<NAME>` resou
 
 For a legacy manually configured snapshot, use:
 
-```
+```bash
 console snapshot status
 console snapshot status --deep-check
 ```
 
 Wait for snapshot creation to complete before document backfill starts. A completed manual snapshot status returns output similar to:
 
-```
+```text
 SUCCESS
 Snapshot is SUCCESS.
 Percent completed: 100.00%

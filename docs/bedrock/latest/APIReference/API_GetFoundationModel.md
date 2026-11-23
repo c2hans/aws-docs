@@ -10,7 +10,7 @@ Get details about a Amazon Bedrock foundation model.
 <a name="API_GetFoundationModel_RequestSyntax"></a>
 
 ```
-GET /foundation-models/{{modelIdentifier}} HTTP/1.1
+GET /foundation-models/{{modelIdentifier}}?projectIdentifier={{projectIdentifier}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -23,6 +23,13 @@ The model identifier.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `(arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}::foundation-model/[a-z0-9-]{1,63}[.]{1}([a-z0-9-]{1,63}[.]){0,2}[a-z0-9-]{1,63}([:][a-z0-9-]{1,63}){0,2})|([a-z0-9-]{1,63}[.]{1}[a-z0-9-]{1,63}([.]?[a-z0-9-]{1,63})([:][a-z0-9-]{1,63}){0,2})`
 Required: Yes
+
+ ** [projectIdentifier](#API_GetFoundationModel_RequestSyntax) **   <a name="bedrock-GetFoundationModel-request-uri-projectIdentifier"></a>
+The ID or Amazon Resource Name (ARN) of a project. Amazon Bedrock uses the project's trusted access program participation when determining whether to return the model. The project must belong to your account in the same AWS Region and partition as the request.
+If you omit this parameter or specify `default`, Amazon Bedrock uses your account's participation, including organization inheritance.
+A project that doesn't exist or is archived causes a `ValidationException`. A model outside the project's available model catalog causes a `ResourceNotFoundException`.
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `([a-zA-Z0-9_-]+|arn:aws(-[^:]+)?:bedrock:[0-9a-z-]{1,20}:[0-9]{12}:project/[a-zA-Z0-9_-]+)`
 
 ## Request Body
 <a name="API_GetFoundationModel_RequestBody"></a>

@@ -49,7 +49,7 @@ If you get a message that you exceeded your account quotas for the organization 
 You can use one of the following commands to invite another account to join your organization:
 + AWS CLI: [invite-account-to-organization](https://docs.aws.amazon.com/cli/latest/reference/organizations/invite-account-to-organization.html)
 
-  ```
+  ```bash
   $ aws organizations invite-account-to-organization \
       --target '{"Type": "EMAIL", "Id": "juan@example.com"}' \
       --notes "This is a request for Juan's account to join Bill's organization."

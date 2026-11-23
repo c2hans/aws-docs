@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec-sha
 
 ![AWS Shared Responsibility Model for security. The customer is responsible for security in the cloud: customer data; platform, applications, and identity and access management; operating system, network, and firewall configuration; and client-side and server-side data encryption and network traffic protection. AWS is responsible for security of the cloud: the software layer (compute, storage, database, networking) and the hardware and AWS global infrastructure of Regions, Availability Zones, and edge locations.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/aws-shared-responsibility.png)
 
+*AWS Shared Responsibility Model*
+
  This shared responsibility model also extends to IT controls. Just as the responsibility to operate the IT environment is shared between AWS and its customers, so is the management, operation, and verification of IT controls shared. AWS can help relieve customer burden of operating controls by managing those controls associated with the physical infrastructure deployed in the AWS environment that may previously have been managed by the customer. As every customer is deployed differently in AWS, customers can take advantage of shifting management of certain IT controls to AWS, which results in a (new) distributed control environment. Customers can then use the AWS control and compliance documentation available through [AWS Artifact](https://aws.amazon.com/artifact/) to help perform control evaluation and verification procedures as required. The following are examples of controls that are managed by AWS, AWS customers, or both.
 
  **Inherited controls** – Controls that a customer fully inherits from AWS.

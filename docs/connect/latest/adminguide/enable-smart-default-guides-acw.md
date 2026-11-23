@@ -37,7 +37,7 @@ After you publish the flow, agents see the ACW guide when they enter ACW on cont
 ## Flow schema
 <a name="enable-smart-default-guides-acw-schema"></a>
 
-```
+```json
 {
   "Version": "2019-10-30",
   "StartAction": "e4b91d3f-dda6-4ec8-b51a-57bc96e88c52",

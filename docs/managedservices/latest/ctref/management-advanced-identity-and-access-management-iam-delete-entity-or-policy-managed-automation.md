@@ -138,7 +138,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-identity-and-access-management-iam-delete-entity-or-policy-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "Operation": "Delete"
 }
@@ -147,7 +147,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-identity-and-access-management-iam-delete-entity-or-policy-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "IAM Users": [
     "arn:aws:iam::012345678901:user/!\"#$%&'()*+,-.0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~/UsEr_+=,.@-"

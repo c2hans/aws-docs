@@ -15,7 +15,7 @@ The following examples show the JSON payload sent to your chatbot for each of th
 
 **Example : Invite event**
 
-```
+```json
             {
               "Sender": {
                             "SenderId": "{{user@example.com}}",
@@ -36,7 +36,7 @@ The following examples show the JSON payload sent to your chatbot for each of th
 
 **Example : Mention event**
 
-```
+```json
             {
                 "Sender": {
                             "SenderId": "{{user@example.com}}",
@@ -61,7 +61,7 @@ The `InboundHttpsEndpoint` URL for a Mention event expires 2 minutes after it is
 
 **Example : Remove event**
 
-```
+```json
             {
                 "Sender": {
                             "SenderId": "{{user@example.com}}",

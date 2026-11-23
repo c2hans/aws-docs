@@ -133,7 +133,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-rds-database-stack-update-parameter-group-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-UpdateDBParameterGroup",
   "Region": "us-east-1",
@@ -147,7 +147,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-rds-database-stack-update-parameter-group-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-UpdateDBParameterGroup",
   "Region": "us-east-1",

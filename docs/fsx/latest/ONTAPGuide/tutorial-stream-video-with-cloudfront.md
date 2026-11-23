@@ -135,7 +135,7 @@ Create a CloudFront distribution with the access point alias as the origin domai
 
 1. Save the following configuration to a file named `dist.json`, replacing the placeholders.
 
-   ```
+   ```json
    {
        "CallerReference": "fsxn-media-1",
        "Comment": "FSx for ONTAP media delivery",
@@ -185,7 +185,7 @@ The access point policy grants the CloudFront service principal permission to re
 
 1. Save the following policy to a file named `ap-policy.json`, replacing the placeholders.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [{

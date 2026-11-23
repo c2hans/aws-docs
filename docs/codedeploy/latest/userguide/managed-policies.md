@@ -36,7 +36,7 @@ AWSCodeDeployFullAccess does not provide permissions to operations in other serv
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -106,7 +106,7 @@ AWSCodeDeployFullAccess does not provide permissions to operations in other serv
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -160,7 +160,7 @@ CodeDeploy supports notifications to make users aware of important changes to de
 
 The `AWSCodeDeployFullAccess` managed policy includes the following statements to allow full access to notifications. Users with this managed policy applied can also create and manage Amazon SNS topics for notifications, subscribe and unsubscribe users to topics, and list topics to choose as targets for notification rules.
 
-```
+```asciidoc perl powershell json bash xml gemspec
     {
         "Sid": "CodeStarNotificationsReadWriteAccess",
         "Effect": "Allow",
@@ -219,7 +219,7 @@ The `AWSCodeDeployFullAccess` managed policy includes the following statements t
 
 The `AWSCodeDeployReadOnlyAccess` managed policy includes the following statements to allow read-only access to notifications. Users with this managed policy applied can view notifications for resources, but cannot create, manage, or subscribe to them.
 
-```
+```asciidoc perl powershell json bash xml gemspec
    {
         "Sid": "CodeStarNotificationsPowerUserAccess",
         "Effect": "Allow",
@@ -259,7 +259,7 @@ This policy includes permissions to do the following:
 + `chatbot:DescribeSlackChannelConfiguration` – Allows principals to retrieve information about Slack channel configurations.
 + `sns:ListTopics` – Allows principals to retrieve the list of Amazon SNS topics for notifications.
 
-```
+```asciidoc perl powershell json bash xml gemspec
    {
       "Sid" : "CodeStarNotificationsReadWriteAccess",
       "Effect" : "Allow",

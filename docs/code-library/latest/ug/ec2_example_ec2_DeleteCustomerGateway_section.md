@@ -29,7 +29,7 @@ For more information, see [Delete an AWS Site-to-Site VPN connection and gateway
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified customer gateway. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2CustomerGateway -CustomerGatewayId cgw-1a2b3c4d
 ```
 **Output:**
@@ -45,7 +45,7 @@ Performing operation "Remove-EC2CustomerGateway (DeleteCustomerGateway)" on Targ
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified customer gateway. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2CustomerGateway -CustomerGatewayId cgw-1a2b3c4d
 ```
 **Output:**

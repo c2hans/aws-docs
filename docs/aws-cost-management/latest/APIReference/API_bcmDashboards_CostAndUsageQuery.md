@@ -17,9 +17,9 @@ Required: Yes
 
  ** metrics **   <a name="awscostmanagement-Type-bcmDashboards_CostAndUsageQuery-metrics"></a>
 The specific cost and usage metrics to retrieve.
-Valid values for CostAndUsageQuery metrics are `AmortizedCost`, `BlendedCost`, `NetAmortizedCost`, `NetUnblendedCost`, `NormalizedUsageAmount`, `UnblendedCost`, and `UsageQuantity`.
+Valid values for CostAndUsageQuery metrics are `AmortizedCost`, `BilledCost`, `BlendedCost`, `ContractedCost`, `ListCost`, `NetAmortizedCost`, `NetUnblendedCost`, `NormalizedUsageAmount`, `PublicEquivalentBilledCost`, `PublicOnDemandCost`, `UnblendedCost`, and `UsageQuantity`.
 Type: Array of strings
-Valid Values: `AmortizedCost | BlendedCost | NetAmortizedCost | NetUnblendedCost | NormalizedUsageAmount | UnblendedCost | UsageQuantity | SpendCoveredBySavingsPlans | Hour | Unit | Cost`
+Valid Values: `AmortizedCost | BlendedCost | NetAmortizedCost | NetUnblendedCost | NormalizedUsageAmount | UnblendedCost | ListCost | ContractedCost | BilledCost | PublicEquivalentBilledCost | PublicOnDemandCost | UsageQuantity | SpendCoveredBySavingsPlans | Hour | Unit | Cost`
 Required: Yes
 
  ** timeRange **   <a name="awscostmanagement-Type-bcmDashboards_CostAndUsageQuery-timeRange"></a>

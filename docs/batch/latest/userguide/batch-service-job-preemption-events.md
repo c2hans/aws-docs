@@ -9,7 +9,7 @@ Preemption events are published whenever a preemption sequence starts or complet
 **Example Service Job Preemption Started Event**
 Service job preemption started events are delivered in the following format. For more information about EventBridge parameters, see [Events and Event Patterns](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events.html) in the *Amazon EventBridge User Guide*.
 
-```
+```json
 {
   "version": "0",
   "id": "1b4a511e-2737-226a-a1e7-fc97f1cd9681",
@@ -32,7 +32,7 @@ Service job preemption started events are delivered in the following format. For
 **Example Service Job Preemption Completed Event**
 Service job preemption completed events are delivered in the following format. The `preemptionSummary` field contains details about the preempted attempts, including the count and the most recent preempted attempt information.
 
-```
+```json
 {
   "version": "0",
   "id": "2b1c6151-c166-edf5-822c-211b3bfd46b2",

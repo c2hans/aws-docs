@@ -20,7 +20,7 @@ This policy grants full access to Amazon Comprehend resources including running 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -58,7 +58,7 @@ This policy grants read-only permissions to run all Amazon Comprehend actions **
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

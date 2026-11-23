@@ -118,7 +118,7 @@ Ensure that you have the following before you begin.
 
 1. Update the following AWS KMS key policy template with the correct Amazon EC2 role ARN and `kms:RecipientAttestation:PCR0` value, and then follow the steps in [Key policies in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-overview.html) in the *AWS Key Management Service Developer Guide* to set the policy.
 
-   ```
+   ```json
    {
      "Sid" : "Enable enclave data processing",
      "Effect" : "Allow",
@@ -189,7 +189,7 @@ curl -k --header "Content-Type: application/json" \
 
 The output is similar to the following.
 
-```
+```json
 {
   "enclaveResult": "\"Hello World\\n\""
 }

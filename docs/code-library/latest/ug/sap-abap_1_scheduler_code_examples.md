@@ -26,7 +26,7 @@ The following code example shows how to use `CreateSchedule`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/scd#code-examples).
 
-```
+```sap-abap
     TRY.
         " Constants for time calculations
         DATA lv_start_date TYPE /aws1/scdstartdate.
@@ -113,7 +113,7 @@ The following code example shows how to use `CreateScheduleGroup`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/scd#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example iv_name = 'my-schedule-group'
         DATA(lo_result) = lo_scd->createschedulegroup(
@@ -140,7 +140,7 @@ The following code example shows how to use `DeleteSchedule`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/scd#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example iv_name = 'my-schedule'
         " Example iv_schedule_group_name = 'my-schedule-group'
@@ -167,7 +167,7 @@ The following code example shows how to use `DeleteScheduleGroup`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/scd#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example iv_name = 'my-schedule-group'
         lo_scd->deleteschedulegroup(

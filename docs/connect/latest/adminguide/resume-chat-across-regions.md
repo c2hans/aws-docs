@@ -40,7 +40,7 @@ In addition, grant the Amazon S3 and AWS KMS permissions described in the follow
 
 Buckets in the source and replica Regions must carry the other Region's Connect Customer service-linked role. For example, the Amazon S3 bucket in US East (N. Virginia) must include the US West (Oregon) Connect Customer instance's service-linked role (SLR) ARN; similarly, the Amazon S3 bucket in US West (Oregon) Region must include the US East (N. Virginia) Connect Customer instance's service-linked role (SLR) ARN.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -78,7 +78,7 @@ To obtain the Connect Customer SLR information, navigate to the **Account Overvi
 
 The AWS Key Management Service (AWS KMS) keys in the source and replica Regions must carry the other Region's Connect Customer service-linked role (SLR) ARN. For example, the AWS KMS key in US East (N. Virginia) must include the US West (Oregon) Connect Customer instance's service-linked role (SLR) ARN; similarly, the AWS KMS key in US West (Oregon) must include the US East (N. Virginia) Connect Customer instance's SLR ARN.
 
-```
+```json
 {
     "Sid": "OptionDCrossRegionReplicaSLRDecrypt",
     "Effect": "Allow",

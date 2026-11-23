@@ -37,7 +37,7 @@ aws cognito-idp admin-link-provider-for-user \
 
 The user profile `Carlos` in your user pool now has the following `identities` attribute.
 
-```
+```json
 [{
     "userId": "msp_carlos@example.com",
     "providerName": "ADFS1",

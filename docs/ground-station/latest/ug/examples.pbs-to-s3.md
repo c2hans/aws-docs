@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/examples.pbs-to
 
  All of the following template snippets belong in the Resources section of the CloudFormation template.
 
-```
+```yaml
 Resources:
   # Resources that you would like to create should be placed within the Resources section.
 ```
@@ -25,7 +25,7 @@ Resources:
 
  Given our scenario to deliver a single communication path to Amazon S3, you know that you'll have a single asynchronous delivery path. Per the [Asynchronous data delivery](getting-started.step2.md#getting-started.step2.async-data-delivery) section, you must define a Amazon S3 bucket.
 
-```
+```yaml
   # The S3 bucket where AWS Ground Station will deliver the downlinked data.
   GroundStationS3DataDeliveryBucket:
     Type: AWS::S3::Bucket
@@ -38,7 +38,7 @@ Resources:
 
  In addition, you will need to create the appropriate roles and policies in order to allow AWS Ground Station to use the bucket.
 
-```
+```yaml
   # The IAM role that AWS Ground Station will assume to have permission find and write
   # data to your S3 bucket.
   GroundStationS3DataDeliveryRole:
@@ -86,7 +86,7 @@ Resources:
 
  You'll need a *tracking-config* to set your preference on using autotrack. Selecting *PREFERRED* as autotrack can improve the signal quality, but it isn't required to meet the signal quality due to sufficient JPSS-1 ephemeris quality.
 
-```
+```yaml
   TrackingConfig:
     Type: AWS::GroundStation::Config
     Properties:
@@ -98,7 +98,7 @@ Resources:
 
  Based on the communication path, you'll need to define an *antenna-downlink* config to represent the satellite portion as well as an *s3-recording* to refer to the Amazon S3 bucket you just created.
 
-```
+```yaml
   # The AWS Ground Station Antenna Downlink Config that defines the frequency spectrum used to
   # downlink data from your satellite.
   JpssDownlinkDigIfAntennaConfig:
@@ -136,7 +136,7 @@ Resources:
 
  Now that you have the associated configs, you can use them to construct the dataflow. You'll use the defaults for the remaining parameters.
 
-```
+```yaml
   # The AWS Ground Station Mission Profile that groups the above configurations to define how to downlink data.
   JpssAsynchMissionProfile:
     Type: AWS::GroundStation::MissionProfile

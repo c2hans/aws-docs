@@ -63,7 +63,7 @@ Use NuGet to add the X-Ray SDK for .NET to your application.
 
 The X-Ray SDK for .NET is available from [Nuget](https://www.nuget.org/packages/AWSXRayRecorder/). Install the SDK using the package manager:
 
-```
+```powershell
 Install-Package AWSXRayRecorder -Version 2.10.1
 ```
 

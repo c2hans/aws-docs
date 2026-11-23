@@ -52,7 +52,7 @@ If you attempt to test this feature using the MQTT test client within console, i
 
    The output of the command can look like the following.
 
-   ```
+   ```JSON
    {
    	"thingTypeName": "LightBulb",
    	"thingTypeArn": "arn:aws:iot:us-west-2:123456789012:thingtype/LightBulb",
@@ -79,7 +79,7 @@ If you attempt to test this feature using the MQTT test client within console, i
 
    The output can look like the following.
 
-   ```
+   ```JSON
    {
    	"thingTypeName": "LightBulb",
    	"thingTypeId": "bdf72512-0116-4392-8d79-bf39b17ef73d",

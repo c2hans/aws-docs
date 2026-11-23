@@ -12,7 +12,7 @@ Depending on the use case, builders can use the Kinesis Video Streams parser lib
 
 Media stream pipelines add the following meeting and attendee metadata to each fragment.
 
-```
+```json
 "meetingId"
 "externalMeetingId"
 "attendeeId"

@@ -92,7 +92,7 @@ We recommend one of the following approaches:
 + **Use default Lambda runtime loggers (recommended)**: The default logging libraries provided by Lambda managed runtimes automatically include the request ID in each log entry.
 + **Implement structured JSON logging**: If you're building a [custom runtime](runtimes-custom.md) or need custom logging, implement JSON-formatted logs that include the request ID in each entry. Lambda Managed Instances only support the JSON log format. Include the `requestId` field in your JSON logs to enable filtering by invocation:
 
-  ```
+  ```json
   {
     "timestamp": "2025-01-15T10:30:00.000Z",
     "level": "INFO",

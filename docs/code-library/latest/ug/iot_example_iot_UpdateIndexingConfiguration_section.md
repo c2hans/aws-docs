@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Update the indexing configuration.
 /*!
   \param thingIndexingConfiguration: A ThingIndexingConfiguration object which is ignored if not set.
@@ -78,7 +78,7 @@ For more information, see [Managing Thing Indexing](https://docs.aws.amazon.com/
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -121,7 +121,7 @@ class IoTWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iot#code-examples).
 
-```
+```sap-abap
     CONSTANTS cv_pfl TYPE /aws1/rt_profile_id VALUE 'ZCODE_DEMO'.
     DATA(lo_session) = /aws1/cl_rt_session_aws=>create( cv_pfl ).
     DATA(lo_iot) = /aws1/cl_iot_factory=>create( lo_session ).

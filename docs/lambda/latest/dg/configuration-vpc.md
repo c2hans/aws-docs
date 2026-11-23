@@ -132,7 +132,7 @@ To access private resources, connect your function to private subnets. If your f
 **To attach your function to a VPC**
 + To attach a Lambda function to an Amazon VPC, add the `VpcConfig` property to your function definition as shown in the following example template. For more information about this property, see [AWS::Lambda::Function VpcConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html) in the *CloudFormation User Guide* (the AWS SAM `VpcConfig` property is passed directly to the `VpcConfig` property of an CloudFormation `AWS::Lambda::Function` resource).
 
-  ```
+  ```YAML
   AWSTemplateFormatVersion: '2010-09-09'
   Transform: AWS::Serverless-2016-10-31
 
@@ -197,7 +197,7 @@ You can update your function code to explicitly connect to subnet resources over
 
 **Example — Connect to IPv6 server**
 
-```
+```python
 def connect_to_server(event, context):
     server_address = event['host']
     server_port = event['port']
@@ -240,7 +240,7 @@ To follow the principle of least-privilege access, add a deny policy like the fo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -336,7 +336,7 @@ Note that VPC ID is not an input parameter to the `CreateFunction` or `UpdateFun
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -370,7 +370,7 @@ To deny users access to specific VPCs, use `StringEquals` to check the value of 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -447,7 +447,7 @@ To allow users to access specific VPCs, use `StringEquals` to check the value of
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

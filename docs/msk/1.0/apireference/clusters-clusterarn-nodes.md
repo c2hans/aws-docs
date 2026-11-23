@@ -21,7 +21,7 @@ The broker nodes in the cluster.
 
 Returns a list of the broker nodes in the cluster. The following Python 3.6 example first lists one node of a cluster. Because the cluster has more nodes, the response contains a token that the script then uses to list the remaining nodes.
 
-```
+```PYTHON
 import boto3
 
 client = boto3.client('kafka')
@@ -101,7 +101,7 @@ Enable CORS by returning the correct headers.
 #### ListNodesResponse schema
 <a name="clusters-clusterarn-nodes-response-body-listnodesresponse-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "nodeInfoList": [
@@ -135,7 +135,8 @@ Enable CORS by returning the correct headers.
           "configurationRevision": integer,
           "kafkaVersion": "string",
           "configurationArn": "string"
-        }
+        },
+        "brokerNodeType": enum
       },
       "addedToClusterTime": "string"
     }
@@ -146,7 +147,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="clusters-clusterarn-nodes-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"
@@ -165,10 +166,18 @@ BrokerNodeInfo
 | --- |--- |--- |--- |
 | attachedENIId | string | False | The attached elastic network interface of the broker. |
 | brokerId | number | False | The ID of the broker. |
+| brokerNodeType | [BrokerNodeType](#clusters-clusterarn-nodes-model-brokernodetype) | False | Whether this broker is a Standard broker or an Express broker. A cluster in mixed mode runs brokers of both types, and this field is what tells the two fleets apart. It is reported for every broker, on every cluster, whether or not an upgrade is under way. |
 | clientSubnet | string | False | The client subnet to which this broker node belongs. |
 | clientVpcIpAddress | string | False | The virtual private cloud (VPC) of the client. |
 | currentBrokerSoftwareInfo | [BrokerSoftwareInfo](#clusters-clusterarn-nodes-model-brokersoftwareinfo) | False | Information about the version of software currently deployed on the brokers in the cluster. |
 | endpoints | Array of type string | False | Endpoints for accessing the broker. |
+
+### BrokerNodeType
+<a name="clusters-clusterarn-nodes-model-brokernodetype"></a>
+
+The broker type of an individual broker node. STANDARD: a Standard broker. EXPRESS: an Express broker. A cluster contains brokers of both types while an UpdateBrokerType operation upgrades it in place from Standard brokers to Express brokers.
++ `STANDARD`
++ `EXPRESS`
 
 ### BrokerSoftwareInfo
 <a name="clusters-clusterarn-nodes-model-brokersoftwareinfo"></a>

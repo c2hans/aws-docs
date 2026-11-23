@@ -24,7 +24,7 @@ To delete a phone number override rule using the AWS End User Messaging SMS cons
 
 You can use the [delete-protect-configuration-rule-set-number-override](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/delete-protect-configuration-rule-set-number-override.html) AWS CLI command to delete a phone number rule override.
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 delete-protect-configuration-rule-set-number-override --protect-configuration-id {{ProtectConfigurationID}} --destination-phone-number {{+12065550150}}
 ```
 

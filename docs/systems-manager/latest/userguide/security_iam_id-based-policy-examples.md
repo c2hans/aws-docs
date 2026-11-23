@@ -13,7 +13,7 @@ The following is an example of a permissions policy that allows a user to delete
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [
@@ -71,7 +71,7 @@ To make sure that users and roles can still use the Systems Manager console, als
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -113,7 +113,7 @@ This example shows how you might create a policy that allows IAM users to view t
 You can grant access to a parameter by attaching the following policy to an identity.
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement": [
@@ -153,7 +153,7 @@ The following example grants permissions to perform Systems Manager operations o
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -182,7 +182,7 @@ The following example grants permissions to list all document names that begin w
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -234,7 +234,7 @@ To give a user permission to use this document to send commands on any node they
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -317,7 +317,7 @@ You can use conditions in your identity-based policy to control access to System
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

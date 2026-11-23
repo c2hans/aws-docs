@@ -48,7 +48,7 @@ Create the function using the Lambda console with either the Python or Node.js r
 
 1. In the **Code source** pane, replace the existing code by copying and pasting the following:
 
-   ```
+   ```python
    import json
    import hmac
    import hashlib
@@ -166,7 +166,7 @@ Create the function using the Lambda console with either the Python or Node.js r
 
 1. In the **Code source** pane, replace the existing code by copying and pasting the following:
 
-   ```
+   ```javascript
    import crypto from 'crypto';
 
    export const handler = async (event, context) => {
@@ -288,7 +288,7 @@ For the Lambda Event Function to authenticate the webhook request, it uses a sec
 
 **Example code to generate a secret**
 
-   ```
+   ```python
    import secrets
    webhook_secret = secrets.token_urlsafe(32)
    print(webhook_secret)
@@ -299,7 +299,7 @@ For the Lambda Event Function to authenticate the webhook request, it uses a sec
 
 **Example code to generate a secret (ES module format)**
 
-   ```
+   ```javascript
    import crypto from 'crypto';
    let webhookSecret = crypto.randomBytes(32).toString('base64');
    console.log(webhookSecret)
@@ -345,7 +345,7 @@ Before using an HTTP request to invoke your Event Function using the URL endpoin
 
 To verify the Event Function in the console, you first calculate a webhook signature using the secret you generated earlier in the tutorial with the following test JSON payload:
 
-```
+```json
 {
     "type": "payment.success",
     "orderId": "1234",
@@ -362,7 +362,7 @@ Use either of the following Python or Node.js code examples to calculate the web
 
 1. Save the following code as a file named `calculate_signature.py`. Replace the webhook secret in the code with your own value.
 
-   ```
+   ```python
    import secrets
    import hmac
    import json
@@ -394,7 +394,7 @@ Use either of the following Python or Node.js code examples to calculate the web
 
 1. Save the following code as a file named `calculate_signature.mjs`. Replace the webhook secret in the code with your own value.
 
-   ```
+   ```javascript
    import crypto from 'crypto';
 
    const webhookSecret = "{{arlbSDCP86n_1H90s0fL_Qb2NAHBIBQOyGI0X4Zay4M}}"
@@ -426,7 +426,7 @@ You can now test your function code using a test HTTP request in the console.
 
 1. Replace the existing JSON by copying and pasting the following into the **Event JSON** pane. Replace the webhook signature with the value you calculated in the previous step.
 
-   ```
+   ```json
    {
      "headers": {
        "Content-Type": "application/json",

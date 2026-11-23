@@ -17,7 +17,7 @@ If you encrypt data with a custom KMS key, you must set up the following identit
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -49,7 +49,7 @@ If you encrypt data with a custom KMS key, you must set up the following identit
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -93,7 +93,7 @@ If you encrypt data with a custom KMS key, you must set up the following identit
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

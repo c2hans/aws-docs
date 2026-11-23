@@ -39,7 +39,7 @@ You must configure the secret key with the following resource-based policy so th
 
 ****
 
-       ```
+       ```json
        {
          "Version":"2012-10-17",
          "Statement" : [ {

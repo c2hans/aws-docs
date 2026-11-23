@@ -178,7 +178,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-ec2-stack-create-with-additional-volumes-ex-min"></a>
 
-```
+```json
 {
   "Description" : "Test description",
   "VpcId" : "vpc-12345678901234567",
@@ -196,7 +196,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-ec2-stack-create-with-additional-volumes-ex-max"></a>
 
-```
+```json
 {
   "Description": "This is a test description",
   "VpcId": "vpc-12345678",

@@ -144,7 +144,7 @@ The following table lists the settings in a strategy's `configuration`. Omit a s
 
 The following `memoryStrategies` value declares three strategies. You can pass it to [CreateSpace](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_CreateSpace.html) or `UpdateSpace`.
 
-```
+```json
 [
     {
         "type": "SEMANTIC",

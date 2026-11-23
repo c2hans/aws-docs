@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-application-applicationlocationobject-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationId](#sam-application-applicationlocationobject-applicationid): {{String}}
   [SemanticVersion](#sam-application-applicationlocationobject-semanticversion): {{String}}
 ```
@@ -45,7 +45,7 @@ Example application location object
 #### YAML
 <a name="sam-property-application-applicationlocationobject--examples--my-application--yaml"></a>
 
-```
+```yaml
 Location:
   ApplicationId: 'arn:aws:serverlessrepo:us-east-1:012345678901:applications/my-application'
   SemanticVersion: 1.0.0

@@ -50,7 +50,7 @@ In this procedure you create a Lambda function in the console and test it.
 
 1. Copy and paste the following example code into `index.js`.
 
-   ```
+   ```javascript
    export const handler = async (event) => {
      // TODO implement
      const response = 'Hello World!'
@@ -228,7 +228,7 @@ Amazon Q Developer in chat applications also supports certain simplified AWS CLI
 
 1. The following output is shown:
 
-   ```
+   ```javascript
    ExecutedVersion: $LATEST
    Payload: \"Hello World\"
    StatusCode: 200
@@ -252,7 +252,7 @@ In this step, you update the myHelloWorld function so that it returns an error, 
 
 1. Copy and paste the following example code into the Lambda function code:
 
-   ```
+   ```javascript
    exports.handler = async (event) => {
        throw new Error('this is an error');
    };

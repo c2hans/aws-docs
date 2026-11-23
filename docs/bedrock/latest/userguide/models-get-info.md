@@ -40,7 +40,7 @@ aws bedrock get-foundation-model --model-identifier anthropic.claude-sonnet-4-20
 
 List the Amazon Bedrock foundation models.
 
-```
+```python
 import boto3
 bedrock = boto3.client(service_name='bedrock')
 
@@ -49,7 +49,7 @@ bedrock.list_foundation_models()
 
 List the inference profiles available to your account.
 
-```
+```python
 import boto3
 bedrock = boto3.client(service_name='bedrock')
 
@@ -58,7 +58,7 @@ bedrock.list_inference_profiles()
 
 Get information about Anthropic Claude v2.
 
-```
+```python
 import boto3
 bedrock = boto3.client(service_name='bedrock')
 
@@ -70,7 +70,7 @@ bedrock.get_foundation_model(modelIdentifier='anthropic.claude-sonnet-4-20250514
 
 List the Amazon Bedrock foundation models. Requires AWS credentials in the environment (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and optionally `AWS_SESSION_TOKEN`) and curl 7.75.0 or later for `--aws-sigv4` support.
 
-```
+```bash
 curl -X GET "https://bedrock.us-east-1.amazonaws.com/foundation-models" \
     --aws-sigv4 "aws:amz:us-east-1:bedrock" \
     --user "$AWS_ACCESS_KEY_ID:$AWS_SECRET_ACCESS_KEY"
@@ -78,7 +78,7 @@ curl -X GET "https://bedrock.us-east-1.amazonaws.com/foundation-models" \
 
 Get information about Anthropic Claude v2.
 
-```
+```bash
 curl -X GET "https://bedrock.us-east-1.amazonaws.com/foundation-model/anthropic.claude-sonnet-4-20250514-v1:0" \
     --aws-sigv4 "aws:amz:us-east-1:bedrock" \
     --user "$AWS_ACCESS_KEY_ID:$AWS_SECRET_ACCESS_KEY"
@@ -95,7 +95,7 @@ Model discovery is always on `/v1/models`, including for models whose inference 
 ------
 #### [ OpenAI SDK (Python) ]
 
-```
+```python
 # List all available models using the OpenAI SDK
 # Requires OPENAI_API_KEY and OPENAI_BASE_URL environment variables
 
@@ -112,7 +112,7 @@ for model in models.data:
 ------
 #### [ curl ]
 
-```
+```bash
 # List all available models
 # Requires OPENAI_API_KEY and OPENAI_BASE_URL environment variables
 

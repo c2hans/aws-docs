@@ -33,7 +33,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 
-```
+```rust
 pub async fn create_table(
     client: &Client,
     table: &str,
@@ -86,7 +86,7 @@ The following code example shows how to use `DeleteItem`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 
-```
+```rust
 pub async fn delete_item(
     client: &Client,
     table: &str,
@@ -118,7 +118,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 
-```
+```rust
 pub async fn delete_table(client: &Client, table: &str) -> Result<DeleteTableOutput, Error> {
     let resp = client.delete_table().table_name(table).send().await;
 
@@ -141,7 +141,7 @@ The following code example shows how to use `ListTables`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 
-```
+```rust
 pub async fn list_tables(client: &Client) -> Result<Vec<String>, Error> {
     let paginator = client.list_tables().into_paginator().items().send();
     let table_names = paginator.collect::<Result<Vec<_>, _>>().await?;
@@ -158,7 +158,7 @@ pub async fn list_tables(client: &Client) -> Result<Vec<String>, Error> {
 ```
 Determine whether table exists.
 
-```
+```rust
 pub async fn table_exists(client: &Client, table: &str) -> Result<bool, Error> {
     debug!("Checking for table: {table}");
     let table_list = client.list_tables().send().await;
@@ -179,7 +179,7 @@ The following code example shows how to use `PutItem`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 
-```
+```rust
 pub async fn add_item(client: &Client, item: Item, table: &String) -> Result<ItemOut, Error> {
     let user_av = AttributeValue::S(item.username);
     let type_av = AttributeValue::S(item.p_type);
@@ -233,7 +233,7 @@ The following code example shows how to use `Query`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 Find the movies made in the specified year.
 
-```
+```rust
 pub async fn movies_in_year(
     client: &Client,
     table_name: &str,
@@ -266,7 +266,7 @@ The following code example shows how to use `Scan`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 
-```
+```rust
 pub async fn list_items(client: &Client, table: &str, page_size: Option<i32>) -> Result<(), Error> {
     let page_size = page_size.unwrap_or(10);
     let items: Result<Vec<_>, _> = client
@@ -302,7 +302,7 @@ For more information, see [DynamoDB Local](https://docs.aws.amazon.com/amazondyn
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 
-```
+```rust
 /// Lists your tables from a local DynamoDB instance by setting the SDK Config's
 /// endpoint_url and test_credentials.
 #[tokio::main]
@@ -362,7 +362,7 @@ The following code example shows how to:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 
-```
+```rust
 async fn make_table(
     client: &Client,
     table: &str,
@@ -501,7 +501,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using Rust.
 
-```
+```rust
 use lambda_runtime::{service_fn, tracing, Error, LambdaEvent};
 use aws_lambda_events::{
     event::dynamodb::{Event, EventRecord},
@@ -567,7 +567,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using Rust.
 
-```
+```rust
 use aws_lambda_events::{
     event::dynamodb::{Event, EventRecord, StreamRecord},
     streams::{DynamoDbBatchItemFailure, DynamoDbEventResponse},

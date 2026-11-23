@@ -64,7 +64,7 @@ The managed agents available for agent-specific instructions are:
 + **Grader** – Quality assessment of a completed investigation. This is the agent behind a Review, and its instructions also apply to automatic Reviews. For more information, see [Reviewing investigations](working-with-devops-agent-reviewing-investigations.md).
 + **Code Change Risk Analysis** – Code reviews of pull requests, merge requests, and code changes. For more information, see [Reviewing code changes](code-change-risk-analysis-reviewing-code-changes.md).
 + **Release testing** – Automated UI and API testing against deployed web applications and REST APIs.
-+ **Learning** - Produces and refreshes managed knowledge by reviewing your agent space's past investigations, pipelines, and dependencies. It covers skills, monitor memories, and topology understanding.
++ **Learning** - Produces, refreshes, and maintains managed memories, from topology understanding and monitor root causes to the knowledge graph.
 
 ## Content size guidance
 <a name="content-size-guidance"></a>

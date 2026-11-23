@@ -40,7 +40,7 @@ You can subscribe to an MQTT topic to receive location data as it becomes availa
 
    **Contents of deviceposition.json**
 
-   ```
+   ```JSON
    {
        "WirelessDeviceId": {{"5b58245e-146c-4c30-9703-0ca942e3ff35"}},
 
@@ -154,7 +154,7 @@ To update the position information for a given wireless device, specify the coor
 
 **Sample of the UpdateResourcePosition API operation**
 
-```
+```JSON
 PATCH /resource-positions/{{ResourceIdentifier}}?resourceType=WirelessDevice HTTP/1.1
 {
      "coordinates": [
@@ -180,7 +180,7 @@ The following shows the contents of the `{{deviceposition.json}}` file, which is
 
 **Contents of deviceposition.json**
 
-```
+```JSON
 {
      "coordinates": [
         {{33.33}},
@@ -208,7 +208,7 @@ To get the position information for a given wireless device, use the [ GetResour
 
 **Sample of the GetResourcePosition API operation**
 
-```
+```JSON
 GET /resource-positions/{{ResourceIdentifier}}?resourceType=WirelessDevice HTTP/1.1
 ```
 
@@ -226,7 +226,7 @@ This command returns the position information of your wireless device as a GeoJS
 
 **Contents of get-resource-position-api-response.json**
 
-```
+```JSON
 {
      "coordinates": [
         {{33.33}},

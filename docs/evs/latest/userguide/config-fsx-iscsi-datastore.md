@@ -49,7 +49,7 @@ We recommend that you set the LUN size to 90% of the volume size.
 
 The following is a sample command. Replace the values in angle brackets with your own values.
 
-```
+```bash
 lun create -vserver <svm-name> \
 -path /vol/<volume-name>/<lun-name> \
 -size <datastore-capacity> \
@@ -65,7 +65,7 @@ Next, create an initiator group (`igroup`) that contains the ESX hosts, and map 
 
 1. Create the initiator group. For `-initiator`, use the IQNs that you copied from the iSCSI adapters. The following is a sample command.
 
-   ```
+   ```bash
    igroup create <svm-name> \
    -igroup <igroup-name> \
    -protocol iscsi \
@@ -75,13 +75,13 @@ Next, create an initiator group (`igroup`) that contains the ESX hosts, and map 
 
 1. Confirm that the `igroup` exists.
 
-   ```
+   ```bash
    lun igroup show
    ```
 
 1. Map the LUN to the initiator group. The following is a sample command.
 
-   ```
+   ```bash
    lun mapping create -vserver <svm-name> \
    -path /vol/<volume-name>/<lun-name> \
    -igroup <igroup-name> \
@@ -90,7 +90,7 @@ Next, create an initiator group (`igroup`) that contains the ESX hosts, and map 
 
 1. Confirm that the LUN is created, online, and mapped.
 
-   ```
+   ```bash
    lun show -path /vol/<volume-name>/<lun-name> -fields state,mapped,serial-hex
    ```
 

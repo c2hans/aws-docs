@@ -58,7 +58,7 @@ To view a code example for using the `$changeStream` aggregation stage, choose t
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function example() {
@@ -88,7 +88,7 @@ example();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 import threading
 import time

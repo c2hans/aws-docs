@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/device-t
 
 ![Options for capturing telemetry](https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/images/image2.png)
 
+*Options for capturing telemetry*
+
 1.  One publishing topic and one subscriber. For example, a smart light bulb that publishes its brightness level to a single topic where only a single application can subscribe.
 
 1.  One publishing topic with variables and one subscriber. For example, a collection of smart bulbs publishing their brightness on similar but unique topics. Each subscriber can listen to a unique publish message.

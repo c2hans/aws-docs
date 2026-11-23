@@ -28,7 +28,7 @@ After the catalog is created, all S3 table buckets in your account and Region ar
 
 Use the `glue create-catalog` command to create the `s3tablescatalog` catalog.
 
-```
+```bash
 aws glue create-catalog \
   --name "s3tablescatalog" \
   --catalog-input '{
@@ -59,7 +59,7 @@ Replace {{region}} with your AWS Region and {{account-id}} with your AWS account
 
 After creating the catalog, you can verify that S3 table buckets are mounted by listing the child catalogs:
 
-```
+```bash
 aws glue get-catalogs \
   --parent-catalog-id s3tablescatalog
 ```

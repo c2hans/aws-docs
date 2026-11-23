@@ -185,7 +185,7 @@ In our example, the stage for these changes is `network-vpc`. The stage you targ
 
 1. Run the following CLI command, replacing ` <LOCAL_CONFIG_DIR> ` and ` <ACCOUNT_ID> ` with your environment details:
 
-   ```
+   ```bash
    yarn run ts-node --transpile-only cdk.ts deploy --stage network-vpc --require-approval any-change --config-dir <LOCAL_CONFIG_DIR> --partition aws --region us-east-1 --account <ACCOUNT_ID>
    ```
 
@@ -195,7 +195,7 @@ In our example, the stage for these changes is `network-vpc`. The stage you targ
 
 1. Run the following CLI command again, replacing ` <LOCAL_CONFIG_DIR> ` and ` <ACCOUNT_ID> ` with your environment details:
 
-   ```
+   ```bash
    yarn run ts-node --transpile-only cdk.ts deploy --stage network-vpc --require-approval any-change --config-dir <LOCAL_CONFIG_DIR> --partition aws --region us-east-1 --account <ACCOUNT_ID>
    ```
 

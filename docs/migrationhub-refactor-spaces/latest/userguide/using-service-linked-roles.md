@@ -99,7 +99,7 @@ Elastic Load Balancing; actions
 
 The following is the full policy showing which resources the preceding actions apply to:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

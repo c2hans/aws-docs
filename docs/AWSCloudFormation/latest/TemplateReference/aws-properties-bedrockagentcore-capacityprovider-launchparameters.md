@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```json
 {
   "[CapacityReservationSpecification](#cfn-bedrockagentcore-capacityprovider-launchparameters-capacityreservationspecification)" : {{CapacityReservationSpecification}},
+  "[CpuOptions](#cfn-bedrockagentcore-capacityprovider-launchparameters-cpuoptions)" : {{CpuOptions}},
   "[EphemeralVolumes](#cfn-bedrockagentcore-capacityprovider-launchparameters-ephemeralvolumes)" : {{[ EphemeralBlockDeviceMapping, ... ]}},
   "[InstanceProfileArn](#cfn-bedrockagentcore-capacityprovider-launchparameters-instanceprofilearn)" : {{String}},
   "[InstanceRequirements](#cfn-bedrockagentcore-capacityprovider-launchparameters-instancerequirements)" : {{InstanceRequirements}},
@@ -36,6 +37,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```yaml
   [CapacityReservationSpecification](#cfn-bedrockagentcore-capacityprovider-launchparameters-capacityreservationspecification): {{
     CapacityReservationSpecification}}
+  [CpuOptions](#cfn-bedrockagentcore-capacityprovider-launchparameters-cpuoptions): {{
+    CpuOptions}}
   [EphemeralVolumes](#cfn-bedrockagentcore-capacityprovider-launchparameters-ephemeralvolumes): {{
     - EphemeralBlockDeviceMapping}}
   [InstanceProfileArn](#cfn-bedrockagentcore-capacityprovider-launchparameters-instanceprofilearn): {{String}}
@@ -57,6 +60,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 Property description not available.
 *Required*: No
 *Type*: [CapacityReservationSpecification](aws-properties-bedrockagentcore-capacityprovider-capacityreservationspecification.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`CpuOptions`  <a name="cfn-bedrockagentcore-capacityprovider-launchparameters-cpuoptions"></a>
+Property description not available.
+*Required*: No
+*Type*: [CpuOptions](aws-properties-bedrockagentcore-capacityprovider-cpuoptions.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `EphemeralVolumes`  <a name="cfn-bedrockagentcore-capacityprovider-launchparameters-ephemeralvolumes"></a>

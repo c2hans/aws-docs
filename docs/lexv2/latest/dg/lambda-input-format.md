@@ -9,7 +9,7 @@ The first step in integrating a Lambda function into your Amazon Lex V2 bot is t
 **Note**
 The input format may change without a corresponding change to the `messageVersion`. Your code shouldn't throw an error if new fields are present.
 
-```
+```json
 {
     "messageVersion": "1.0",
     "invocationSource": "DialogCodeHook | FulfillmentCodeHook",
@@ -151,7 +151,7 @@ Information about the bot that processed the request, consisting of the followin
 
 A list of information about intents that Amazon Lex V2 considers possible matches to the user's utterance. Each item is a structure that provides information about the utterance's match to an intent, with the following format:
 
-```
+```json
 {
     "intent": {
         // see Intent for details about the structure
@@ -191,7 +191,7 @@ You can use this information to add `runtimeHints` at the right point in the con
 
 The structure of `proposedNextState` is as follows:
 
-```
+```json
 "proposedNextState": {
     "dialogAction": {
         "slotToElicit": {{string}},
@@ -236,7 +236,7 @@ The current state of the conversation between the user and your Amazon Lex V2 bo
 
 A list of transcriptions that Amazon Lex V2 considers possible matches to the user's utterance. For more information, see [Using voice transcription confidence scores to improve conversations with your Lex V2 bot](using-transcript-confidence-scores.md). Each item is an object with the following format, containing information about one possible transcription:
 
-```
+```json
 {
     "transcription": {{string}},
     "transcriptionConfidence": {{number}},

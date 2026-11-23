@@ -17,7 +17,7 @@ To use this policy, replace `{{<behavior graph ARN>}}` with the graph ARN.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

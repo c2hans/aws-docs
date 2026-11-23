@@ -17,7 +17,7 @@ When you stub a response, the AWS SDK for Ruby disables network traffic and the 
 
 The following example returns stubbed names for the list of Amazon S3 buckets.
 
-```
+```ruby
 require 'aws-sdk'
 
 s3 = Aws::S3::Client.new(stub_responses: true)
@@ -44,7 +44,7 @@ After you supply any stubbed data, the default values no longer apply for any re
 
 The AWS SDK for Ruby validates your stubbed data. If you pass in data of the wrong type, it raises an `ArgumentError` exception. For example, if instead of the previous assignment to `bucket_data`, you used the following:
 
-```
+```ruby
 bucket_data = s3.stub_data(:list_buckets, buckets:['aws-sdk', 'aws-sdk2'])
 ```
 
@@ -60,7 +60,7 @@ expected params[:buckets][1] to be a hash
 
 You can also stub errors that the AWS SDK for Ruby raises for specific methods. The following example displays `Caught Timeout::Error error calling head_bucket on aws-sdk`.
 
-```
+```ruby
 require 'aws-sdk'
 
 s3 = Aws::S3::Client.new(stub_responses: true)

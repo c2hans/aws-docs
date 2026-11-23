@@ -14,7 +14,7 @@ The following code examples show how to use `CreateOpportunity`.
 **SDK for .NET**
 Create an opportunity.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // PDX-License-Identifier: Apache-2.0
 
@@ -137,7 +137,7 @@ namespace AWSExample
 **SDK for Java 2.x**
 Create an opportunity.
 
-```
+```java
 package org.example;
 
 import java.time.Instant;
@@ -372,7 +372,7 @@ public class CreateOpportunity {
 **SDK for Python (Boto3)**
 Create an opportunity.
 
-```
+```python
 #!/usr/bin/env python
 import boto3
 import logging

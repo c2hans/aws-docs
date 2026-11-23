@@ -42,7 +42,7 @@ Some of the following examples use the TICKIT sample database. For more informat
 
 To truncate the commission paid for a given sales transaction, use the following example.
 
-```
+```sql
 SELECT commission, TRUNC(commission)
 FROM sales WHERE salesid=784;
 
@@ -55,7 +55,7 @@ FROM sales WHERE salesid=784;
 
 To truncate the same commission value to the first decimal place, use the following example.
 
-```
+```sql
 SELECT commission, TRUNC(commission,1)
 FROM sales WHERE salesid=784;
 
@@ -68,7 +68,7 @@ FROM sales WHERE salesid=784;
 
 To truncate the commission with a negative value for the second argument, use the following example. Note that `111.15` is rounded down to `110`.
 
-```
+```sql
 SELECT commission, TRUNC(commission,-1)
 FROM sales WHERE salesid=784;
 

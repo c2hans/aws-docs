@@ -23,7 +23,7 @@ Delegate grantees don't receive `License Token Change` or `License Consumption C
 
 To receive all License Manager events, create an EventBridge rule with an event pattern. The following event pattern matches all License Manager events:
 
-```
+```json
 {
  "source": ["aws.license-manager"]
 }
@@ -31,7 +31,7 @@ To receive all License Manager events, create an EventBridge rule with an event 
 
 To match a specific event type, add the `detail-type` field. The following pattern matches only grant changes:
 
-```
+```json
 {
  "source": ["aws.license-manager"],
  "detail-type": ["Grant Change"]

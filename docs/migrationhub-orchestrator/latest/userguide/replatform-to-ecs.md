@@ -59,7 +59,7 @@ The following permissions must also be added to the IAM role used by your instan
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -190,7 +190,7 @@ Your user or role must have the required permissions to use this template. You c
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

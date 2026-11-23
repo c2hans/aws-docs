@@ -19,7 +19,7 @@ For more information on how to setup ML connectors for AWS services, see [Amazon
 
 To create a flow-framework template with connector, you will need to send a `POST` request to your OpenSearch Service domain endpoint. You can use cURL, a sample Python client, Postman, or another method to send a signed request. The `POST` request takes the following format:
 
-```
+```JSON
 POST /_plugins/_flow_framework/workflow
 {
   "name": "Deploy Claude Model",

@@ -10,7 +10,7 @@ Each script takes the monitor URL as its argument and runs five steps. It valida
 
 Run the Linux script as root on Ubuntu 22.04 with a desktop environment present:
 
-```
+```bash
 sudo ./setup_workstation_linux.sh https://{{mystudio.us-west-2}}.deadlinecloud.amazonaws.com/
 ```
 

@@ -18,7 +18,7 @@ JSON represents data in two ways:
 
 Here is an example of a JSON object that contains an array of objects in which the objects represent cards in a card game. Each card is defined by two name-value pairs, one that specifies a unique value to identify that card and another that specifies a URL that points to the corresponding card image.
 
-```
+```javascript
 var cards = [{"CardID":"defaultname", "Image":"defaulturl"},
   {"CardID":"defaultname", "Image":"defaulturl"},
   {"CardID":"defaultname", "Image":"defaulturl"},
@@ -31,7 +31,7 @@ var cards = [{"CardID":"defaultname", "Image":"defaulturl"},
 
 Here is an example of simple JSON used to define the parameters of a call to a Lambda service object.
 
-```
+```javascript
 var pullParams = {
    FunctionName : 'slotPull',
    InvocationType : 'RequestResponse',
@@ -43,7 +43,7 @@ The `pullParams` object is defined by three name-value pairs, separated by comma
 
 When passing parameters to a service object method call, provide the JSON object to the method call, as shown in the following example of invoking a Lambda function.
 
-```
+```javascript
 lambda = new AWS.Lambda({region: 'us-west-2', apiVersion: '2015-03-31'});
 // create JSON object for service call parameters
 var pullParams = {
@@ -66,7 +66,7 @@ lambda.invoke(pullParams, function(err, data) {
 
 JSON provides a standard way to pass data between parts of an application that need to send several values at the same time. The methods of client classes in the API commonly return JSON in the `data` parameter passed to their callback functions. For example, here is a call to the `getBucketCors` method of the Amazon S3 client class.
 
-```
+```javascript
 // call S3 to retrieve CORS configuration for selected bucket
 s3.getBucketCors(bucketParams, function(err, data) {
   if (err) {
@@ -79,7 +79,7 @@ s3.getBucketCors(bucketParams, function(err, data) {
 
 The value of `data` is a JSON object, in this example JSON that describes the current CORS configuration for a specified Amazon S3 bucket.
 
-```
+```javascript
 {
    "CORSRules": [
       {

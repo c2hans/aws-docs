@@ -31,7 +31,7 @@ CodeBuild does not support auto-retry for CodePipeline.
 <a name="auto-retry-build-cli"></a>
 + Run the **create-project** command:
 
-  ```
+  ```bash
   aws codebuild create-project \
       --name "{{<project-name>}}" \
       --auto-retry-limit {{<auto-retry-limit>}} \

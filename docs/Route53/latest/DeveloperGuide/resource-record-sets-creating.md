@@ -47,6 +47,8 @@ To create records for complex routing setups, you can also use the Traffic Flow 
    + [Values specific for multivalue answer records](resource-record-sets-values-multivalue.md)
    + [Values specific for weighted records](resource-record-sets-values-weighted.md)
    + [Values specific for weighted alias records](resource-record-sets-values-weighted-alias.md)
+   + [Values specific for AZ-affinity records](resource-record-sets-values-azaffinity.md)
+   + [Values specific for AZ-affinity alias records](resource-record-sets-values-azaffinity-alias.md)
 
 1. Choose **Create records**.
 **Note**

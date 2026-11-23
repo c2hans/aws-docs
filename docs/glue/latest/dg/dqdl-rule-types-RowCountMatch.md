@@ -8,7 +8,7 @@ Checks the ratio of the row count of the primary dataset and the row count of a 
 
 **Syntax**
 
-```
+```json
 RowCountMatch {{<REFERENCE_DATASET_ALIAS>}} {{<EXPRESSION>}}
 ```
 + **REFERENCE\_DATASET\_ALIAS** – The alias of the reference dataset against which to compare row counts.
@@ -20,6 +20,6 @@ RowCountMatch {{<REFERENCE_DATASET_ALIAS>}} {{<EXPRESSION>}}
 
 The following example rule checks whether the row count of the primary dataset is at least 90% of the row count of the reference dataset.
 
-```
+```json
 RowCountMatch "reference" >= 0.9
 ```

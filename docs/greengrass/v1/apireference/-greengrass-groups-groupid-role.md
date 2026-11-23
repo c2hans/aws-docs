@@ -22,7 +22,7 @@ Associates a role with a group. Your Greengrass core uses the role to access AWS
 
 where used: body; required: true
 
-```
+```json
 {
 "RoleArn": "string"
 }
@@ -45,7 +45,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-role-put-cli"></a>
 
-```
+```bash
 aws greengrass associate-role-to-group \
   --group-id <value> \
   [--role-arn <value>]  \
@@ -55,7 +55,7 @@ aws greengrass associate-role-to-group \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "RoleArn": "string"
@@ -69,7 +69,7 @@ cli-input-json format:
 Success.
  [ AssociateRoleToGroupResponse](definitions-associateroletogroupresponse.md)
 
-```
+```json
 {
 "AssociatedAt": "string"
 }
@@ -84,7 +84,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -120,7 +120,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -172,7 +172,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-role-delete-cli"></a>
 
-```
+```bash
 aws greengrass disassociate-role-from-group \
   --group-id <value>  \
   [--cli-input-json <value>] \
@@ -181,7 +181,7 @@ aws greengrass disassociate-role-from-group \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string"
 }
@@ -194,7 +194,7 @@ cli-input-json format:
 Success.
  [ DisassociateRoleFromGroupResponse](definitions-disassociaterolefromgroupresponse.md)
 
-```
+```json
 {
 "DisassociatedAt": "string"
 }
@@ -209,7 +209,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -245,7 +245,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -297,7 +297,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-role-get-cli"></a>
 
-```
+```bash
 aws greengrass get-associated-role \
   --group-id <value>  \
   [--cli-input-json <value>] \
@@ -306,7 +306,7 @@ aws greengrass get-associated-role \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string"
 }
@@ -319,7 +319,7 @@ cli-input-json format:
 Success.
  [ GetAssociatedRoleResponse](definitions-getassociatedroleresponse.md)
 
-```
+```json
 {
 "AssociatedAt": "string",
 "RoleArn": "string"
@@ -338,7 +338,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -374,7 +374,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

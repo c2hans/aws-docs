@@ -14,6 +14,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 
 ![Diagram showing the effect of an AZ failure.](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/az-failure.jpg)
 
+*Impact of an AZ failure*
+
  In this scenario, each cell that is Single-AZ has one or more replicas of itself in other Availability Zones. But as the word itself indicates, a replica demands a replication layer. This replication layer can vary according to the type of stateful component your cell is using. It could be an Amazon RDS data service, it could be a DynamoDB database, Amazon ElastiCache, an event service like Kinesis or Amazon SQS. Each service will have a different replication strategy as well as the DR approach you take as pilot-light, warm-standby or active-active, as described in the [Disaster Recovery of Workloads on AWS whitepaper](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html).
 
 In the event that a zone becomes unavailable, the same cell replicated in another AZ can take over the work and continue processing customer traffic. But this can also happen in the case of gray failures in one or more components, when an evacuation of a cell is more beneficial than living with the failure until it is detected and corrected.

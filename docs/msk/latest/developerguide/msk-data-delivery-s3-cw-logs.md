@@ -8,7 +8,7 @@ A Channel can publish operational logs to a Amazon CloudWatch Logs log group, in
 
 **Enabling Amazon CloudWatch Logs** — specify the log destination when creating or updating a Channel:
 
-```
+```bash
 aws kafka create-channel \
     --cluster-arn "arn:aws:kafka:us-east-1:123456789012:cluster/my-express-cluster/abc123" \
     --channel-name "orders-s3-channel" \
@@ -24,7 +24,7 @@ aws kafka create-channel \
 
 **Required permissions for logging** — add to the service role:
 
-```
+```json
 {
     "Sid": "CloudWatchLogsAccess",
     "Effect": "Allow",

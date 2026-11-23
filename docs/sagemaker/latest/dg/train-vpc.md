@@ -20,7 +20,7 @@ To use the API, you specify the subnets and security group IDs in the `VpcConfig
 
 The following is an example of the `VpcConfig` parameter that you include in your call to the `CreateTrainingJob` operation:
 
-```
+```json
 VpcConfig: {
       "Subnets": [
           "subnet-0123456789abcdef0",
@@ -85,7 +85,7 @@ The default endpoint policy allows full access to S3 for any user or service in 
 
 The default endpoint policy allows users to install packages from the Amazon Linux and Amazon Linux 2 repositories on the training container. If you don't want users to install packages from that repository, create a custom endpoint policy that explicitly denies access to the Amazon Linux and Amazon Linux 2 repositories. The following is an example of a policy that denies access to these repositories:
 
-```
+```json
 {
     "Statement": [
       {
@@ -104,7 +104,7 @@ The default endpoint policy allows users to install packages from the Amazon Lin
 }
 ```
 
-```
+```json
 {
     "Statement": [
         { "Sid": "AmazonLinux2AMIRepositoryAccess",

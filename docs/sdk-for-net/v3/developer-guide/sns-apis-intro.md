@@ -18,7 +18,7 @@ The AWS SDK for .NET supports Amazon Simple Notification Service (Amazon SNS), w
 
 The following example shows how to list your Amazon SNS topics, the subscriptions to each topic, and the attributes for each topic. This example uses the default [AmazonSimpleNotificationServiceClient](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/SNS/TSNSClient.html).
 
-```
+```csharp
 // using Amazon.SimpleNotificationService;
 // using Amazon.SimpleNotificationService.Model;
 
@@ -81,7 +81,7 @@ do
 
 The following example shows how to send a message to an Amazon SNS topic. The example takes one argument, the ARN of the Amazon SNS topic.
 
-```
+```csharp
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -139,7 +139,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/tree/
 
 The following example shows how to send an SMS message to a telephone number. The example takes one argument, the telephone number, which must be in either of the two formats described in the comments.
 
-```
+```csharp
 using System;
 using System.Linq;
 using System.Threading.Tasks;

@@ -15,7 +15,7 @@ credential_process = /path/to/file/credential_returning_executable.sh --custom-c
 
 The SDK will call the `credential_process` command exactly as given by using PHP's `shell_exec` function and then read JSON data from stdout. The `credential_process` must write credentials to stdout in the following format:
 
-```
+```javascript
 {
     "Version": 1,
     "AccessKeyId": "",
@@ -27,7 +27,7 @@ The SDK will call the `credential_process` command exactly as given by using PHP
 
  `SessionToken` and `Expiration` are optional. If present, the credentials will be treated as temporary.
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 use Aws\S3\S3Client;
 
@@ -45,7 +45,7 @@ $client = new S3Client([
 
 You can use a custom profile or .ini file location by providing arguments to the function that creates the provider.
 
-```
+```php
 $profile = 'production';
 $path = '/full/path/to/credentials.ini';
 

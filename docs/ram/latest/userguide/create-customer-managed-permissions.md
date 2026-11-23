@@ -55,7 +55,7 @@ Customer managed permissions are specific to an AWS Region. Make sure that you c
 
   The following example command creates a managed permission for the `imagebuilder:Component` resource type.
 
-  ```
+  ```bash
   $ aws ram create-permission \
       --name TestCMP \
       --resource-type imagebuilder:Component \
@@ -108,7 +108,7 @@ Each managed permission can have up to five versions, but you can associate only
 
 1. Find the Amazon Resource Name (ARN) of the managed permission for which you want create a new version. Do this by calling [list-permissions](https://docs.aws.amazon.com/cli/latest/reference/ram/list-permissions.html) with the `--permission-type CUSTOMER_MANAGED` parameter to include only customer managed permissions.
 
-   ```
+   ```bash
    $ aws ram list-permissions --permission-type CUSTOMER_MANAGED
    {
        "permissions": [
@@ -130,7 +130,7 @@ Each managed permission can have up to five versions, but you can associate only
 
 1. After you have the ARN, you can call the [create-permission-version](https://docs.aws.amazon.com/cli/latest/reference/ram/create-permission-version.html) operation and provide the updated policy template.
 
-   ```
+   ```bash
    $ aws ram create-permission-version \
        --permission-arn arn:aws:ram:us-east-1:123456789012:permission/TestCMP \
        --policy-template {"Effect":"Allow","Action":["imagebuilder:ListComponents"]}
@@ -185,7 +185,7 @@ You can set another customer managed permission version as the new default versi
 
    The following example command retrieves the current versions for the specified managed permission.
 
-   ```
+   ```bash
    $ aws ram list-permission-versions \
        --permission-arn arn:aws:ram:us-east-1:123456789012:permission/TestCMP
    {
@@ -222,7 +222,7 @@ You can set another customer managed permission version as the new default versi
 
 1. After you have the version number to set as default, you can call the [set-default-permission-version](https://docs.aws.amazon.com/cli/latest/reference/ram/set-default-permission-version.html) operation.
 
-   ```
+   ```bash
    $ aws ram set-default-permission-version \
        --permission-arn arn:aws:ram:us-east-1:123456789012:permission/TestCMP \
        --permission-version 2
@@ -276,7 +276,7 @@ To undeprecate the customer managed permission, choose it, choose **Undeprecate*
 
 1. Run the [update-permission](https://docs.aws.amazon.com/cli/latest/reference/ram/update-permission.html) command with `--status DEPRECATED`.
 
-   ```
+   ```bash
    $ aws ram update-permission \
        --permission-arn arn:aws:ram:us-east-1:123456789012:permission/TestCMP \
        --status DEPRECATED
@@ -324,7 +324,7 @@ You can have up to five versions of each customer managed permission. When a ver
 
 1. After you have the version number, provide it as a parameter to [delete-permission-version](https://docs.aws.amazon.com/cli/latest/reference/ram/delete-permission-version.html).
 
-   ```
+   ```bash
    $ aws ram delete-permission-version \
        --permission-arn arn:aws:ram:us-east-1:123456789012:permission/TestCMP \
        --permission-version 1
@@ -367,7 +367,7 @@ If a customer managed permission is no longer needed, and not in use, you can de
 
 1. Find the ARN of the managed permission you want to delete by calling [list-permissions](https://docs.aws.amazon.com/cli/latest/reference/ram/list-permissions.html) with the `--permission-type CUSTOMER_MANAGED` parameter to include only customer managed permissions.
 
-   ```
+   ```bash
    $ aws ram list-permissions --permission-type CUSTOMER_MANAGED
    {
        "permissions": [
@@ -389,7 +389,7 @@ If a customer managed permission is no longer needed, and not in use, you can de
 
 1. After you have the ARN of the managed permission to delete, provide it as a parameter to [delete-permission](https://docs.aws.amazon.com/cli/latest/reference/ram/delete-permission.html).
 
-   ```
+   ```bash
    $ aws ram delete-permission \
        --permission-arn arn:aws:ram:us-east-1:123456789012:permission/TestCMP
    {

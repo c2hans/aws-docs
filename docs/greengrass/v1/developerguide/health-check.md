@@ -46,7 +46,7 @@ This request returns an array of [worker health information](#health-information
 
 The following example response lists health information objects for all worker processes that were started by AWS IoT Greengrass.
 
-```
+```json
 [
     {
       "FuncArn": "arn:aws:lambda:::function:GGShadowService:1",
@@ -89,7 +89,7 @@ curl --data "@body.json" http://localhost:8000/2016-11-01/health/workers
 
 Here's an example `body.json` request body:
 
-```
+```json
 {
     "FuncArns": [
         "arn:aws:lambda:::function:GGShadowService:1",
@@ -125,7 +125,7 @@ Type: array of strings
 
 The following example response lists [health information objects](#health-information-objects) for the specified workers.
 
-```
+```json
 {
     "Workers": [
         {
@@ -153,7 +153,7 @@ This request returns the following errors:
 400 Invalid request
 The request body is malformed. To resolve this issue, use the following format and resend the request:
 
-```
+```json
 {"FuncArns":["{{function-1-arn}}","{{function-2-arn}}"]}
 ```
 

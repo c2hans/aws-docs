@@ -54,6 +54,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
 
 ![A diagram depicting data lifecycle.](https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/data-lifecycle.png)
 
+*Data lifecycle *
+
 1.  Transferring input data to AWS
 
 1.  Running your simulation with input (hot) data

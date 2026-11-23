@@ -8,7 +8,7 @@ To follow an execution in the console, open the plan and choose the execution fr
 
 With the AWS CLI, use `get-recovery-plan-execution` for the overall status and `list-recovery-plan-execution-steps` for per-step progress. Use `list-recovery-plan-executions` to see the history for a plan, optionally filtered by status.
 
-```
+```bash
 aws drs get-recovery-plan-execution \
     --recovery-plan-execution-arn {{EXECUTION_ARN}}
 

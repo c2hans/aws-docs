@@ -39,7 +39,7 @@ You can use the AWS CLI or the Amazon Location APIs.
 
 The following example is a `CalculateRouteMatrix` request using the route calculator resource {{ExampleCalculator}}. The request specifies calculating the matrix of routes from departure positions [{{-122.7565}}, {{49.0021 }}] and [{{-122.2014}}, {{47.6101}}] to destination positions [{{-122.3394}}, {{47.6159 }}] and [{{-122.4813}}, {{48.7511}}].
 
-```
+```json
 POST /routes/v0/calculators/{{ExampleCalculator}}/calculate/route-matrix
 Content-type: application/json
 {
@@ -74,7 +74,7 @@ By default, the response returns `Distance` in kilometers. You can change the un
 
 **Example**
 
-```
+```json
 POST /routes/v0/calculators/{{ExampleCalculator}}/calculate/route-matrix
 Content-type: application/json
 {
@@ -129,7 +129,7 @@ The following is an example request with the corresponding response when calling
 ------
 #### [ Example request ]
 
-```
+```json
 POST /routes/v0/calculators/{{ExampleCalculator}}/calculate/route-matrix
 Content-type: application/json
 {
@@ -147,7 +147,7 @@ Content-type: application/json
 ------
 #### [ Example response ]
 
-```
+```json
 {
     "RouteMatrix": [
         [

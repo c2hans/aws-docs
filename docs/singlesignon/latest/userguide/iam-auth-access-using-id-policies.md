@@ -40,7 +40,7 @@ This policy is provided for example purposes only. In a production environment, 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -89,7 +89,7 @@ The following permissions policy grants permissions to allow a user to create, m
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -167,7 +167,7 @@ As of October 2020, many of these operations are available only through the AWS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -232,7 +232,7 @@ In some cases, direct modifications to users and groups in IAM Identity Center a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -276,7 +276,7 @@ For a user to work with the IAM Identity Center console without errors, addition
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

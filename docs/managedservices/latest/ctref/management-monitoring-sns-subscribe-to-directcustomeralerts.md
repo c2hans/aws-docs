@@ -146,13 +146,13 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-monitoring-sns-subscribe-to-directcustomeralerts-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-monitoring-sns-subscribe-to-directcustomeralerts-ex-max"></a>
 
-```
+```json
 Example not available.
 ```

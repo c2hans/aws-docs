@@ -61,7 +61,7 @@ Follow these steps to enable the Network modules.
 
    1. Use AWS CLI command to verify, e.g. for us-east-1:
 
-      ```
+      ```bash
       $ aws ec2 describe-instance-type-offerings \
         --location-type availability-zone \
         --filters Name=instance-type,Values=t3.large,m5.xlarge,g4dn.xlarge,r6g.large \

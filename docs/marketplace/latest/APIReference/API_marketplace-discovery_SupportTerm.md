@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # SupportTerm
 
-Defines a support term that includes the refund policy for the offer.
+Describes a support term that includes the refund policy for the offer.
 
 ## Contents
 <a name="API_marketplace-discovery_SupportTerm_Contents"></a>

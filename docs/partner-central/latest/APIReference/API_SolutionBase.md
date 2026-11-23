@@ -46,7 +46,7 @@ Valid Values: `Active | Inactive | Draft`
 Required: Yes
 
  ** Arn **   <a name="AWSPartnerCentral-Type-SolutionBase-Arn"></a>
- The SolutionBase structure provides essential information about a solution.
+The SolutionBase structure provides essential information about a solution.
 Type: String
 Pattern: `S-[0-9]{1,19}`
 Required: No

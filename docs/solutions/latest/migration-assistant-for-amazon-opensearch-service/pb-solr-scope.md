@@ -8,7 +8,7 @@ The migration moves your Apache Solr collections or cores into indexes on the Am
 
 The flow for this path is:
 
-```
+```text
 Pause source writes → Back up Solr to a shared path → Sync backup to Amazon S3 →
 Configure workflow → Submit + monitor → Verify counts and queries → Cut over
 ```

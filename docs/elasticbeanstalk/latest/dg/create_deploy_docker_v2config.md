@@ -89,7 +89,7 @@ Any usage of the ECS IAM task execution role requires the `iam:PassRole` permiss
 **Example policy with `iam:PassRole` permission**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -120,7 +120,7 @@ The following examples combine the previous `iam:PassRole` example with the exam
 **Example Secrets Manager policy combined with `iam:PassRole` permission**
 ****
 
-```
+```json
 {
     "Version": "{{2012-10-17}}",
     "Statement": [
@@ -154,7 +154,7 @@ The following examples combine the previous `iam:PassRole` example with the exam
 **Example Systems Manager policy combined with `iam:PassRole` permission**
 ****
 
-```
+```json
 {
     "Version": "{{2012-10-17}}",
     "Statement": [

@@ -35,7 +35,7 @@ Complete the following steps to manually create an IAM role for your campaign or
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -67,7 +67,7 @@ Complete the following steps to manually create an IAM role for your campaign or
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

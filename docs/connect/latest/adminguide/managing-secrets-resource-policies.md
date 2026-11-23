@@ -19,7 +19,7 @@ Make sure that the resource-based policy for the secret includes the `aws:Source
 
 The following is an example of a resource-based policy that you can attach to your secret.
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -50,7 +50,7 @@ The following is an example of a resource-based policy that you can attach to yo
 
 The following is an example of a resource-based policy that you can attach to your KMS key.
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

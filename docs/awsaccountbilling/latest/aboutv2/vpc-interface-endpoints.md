@@ -45,7 +45,7 @@ For more information, see [Control access to services using endpoint policies](h
 **Example – VPC endpoint policy for Billing and Cost Management actions**
 The following is an example of a custom endpoint policy. When you attach this policy to your interface endpoint, principals that have access to the endpoint can list billing views. All other Billing and Cost Management actions through the endpoint are denied.
 
-```
+```json
 {
     "Statement": [
         {

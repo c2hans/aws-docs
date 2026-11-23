@@ -28,7 +28,7 @@ To create a grant for an AWS KMS key, use the [CreateGrant](https://docs.aws.ama
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -36,7 +36,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -68,7 +68,7 @@ To get detailed information about the grants on an AWS KMS key, use the [ListGra
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -76,7 +76,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -106,7 +106,7 @@ To retire a grant for an AWS KMS key, use the [RetireGrant](https://docs.aws.ama
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -114,7 +114,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -159,7 +159,7 @@ To revoke a grant to an AWS KMS key, use the [RevokeGrant](https://docs.aws.amaz
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -167,7 +167,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',

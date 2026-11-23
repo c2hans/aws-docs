@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/impor
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -67,7 +67,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/impor
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -98,7 +98,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/impor
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "key-consolepolicy-3",

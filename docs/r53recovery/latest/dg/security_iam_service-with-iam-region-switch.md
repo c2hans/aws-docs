@@ -61,7 +61,7 @@ arc-region-switch
 
 To specify multiple actions in a single statement, separate them with commas. For example, the following:
 
-```
+```json
 "Action": [
       "arc-region-switch:{{action1}}",
       "arc-region-switch:{{action2}}"

@@ -74,13 +74,13 @@ The `ebsnvme` script can be found in the [ amazon-ec2-utils Github repo](https:/
 
 1. Modify the permissions for the script to make it executable.
 
-   ```
+   ```bash
    sudo chmod +x ./ebsnvme
    ```
 
 1. Run the `ebsnvme` script and specify the device name for the volume.
 
-   ```
+   ```bash
    sudo ./ebsnvme stats /dev/{{nvme0n1}}
    ```
 
@@ -93,7 +93,7 @@ The `ebsnvme` script can be found in the [ amazon-ec2-utils Github repo](https:/
 
 1. Amazon Linux AMIs released after November 12, 2024 include the latest version of the `nvme-cli` tool. If you are using an older Amazon Linux AMI, update the `nvme-cli` tool.
 
-   ```
+   ```bash
    sudo yum install nvme-cli
    ```
 

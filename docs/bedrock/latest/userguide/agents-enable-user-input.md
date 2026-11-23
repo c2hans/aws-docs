@@ -43,7 +43,7 @@ To enable user input for your agent, send an [CreateActionGroup](https://docs.aw
 
 The following shows the general format of the required fields for enabling user input with an [CreateActionGroup](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html) request.
 
-```
+```json
 CreateAgentActionGroup:
 {
   "actionGroupName": "AskUserAction",

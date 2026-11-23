@@ -27,7 +27,7 @@ The following code example shows how to use `PutRecords`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/kinesis#code-examples).
 
-```
+```javascript
 import { PutRecordsCommand, KinesisClient } from "@aws-sdk/client-kinesis";
 
 /**
@@ -98,7 +98,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/blob/main/integration-kinesis-to-lambda) repository.
 Consuming a Kinesis event with Lambda using JavaScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 exports.handler = async (event, context) => {
@@ -124,7 +124,7 @@ async function getRecordDataAsync(payload) {
 ```
 Consuming a Kinesis event with Lambda using TypeScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import {
@@ -177,7 +177,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/blob/main/integration-kinesis-to-lambda-with-batch-item-handling) repository.
 Reporting Kinesis batch item failures with Lambda using Javascript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 exports.handler = async (event, context) => {
@@ -208,7 +208,7 @@ async function getRecordDataAsync(payload) {
 ```
 Reporting Kinesis batch item failures with Lambda using TypeScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import {

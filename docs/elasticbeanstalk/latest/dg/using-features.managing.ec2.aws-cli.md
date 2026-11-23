@@ -50,7 +50,7 @@ aws elasticbeanstalk create-environment \
 
 **Example**
 
-```
+```json
 ### example options.json ###
 [
   { "Namespace" : "aws:elasticbeanstalk:environment",
@@ -103,7 +103,7 @@ aws elasticbeanstalk create-environment \
 
 **Example**
 
-```
+```json
 ### example options.json ###
 [
   {
@@ -161,7 +161,7 @@ aws elasticbeanstalk update-environment \
 
 **Example 4(a) — Configuration file for single-instance environment (no load balancer)**
 
-```
+```json
 ### example options.json ###
 [
   {
@@ -181,7 +181,7 @@ To update an environment that uses an application load balancer, use the `aws:el
 
 **Example 4(b) — Configuration file for environment with an application load balancer**
 
-```
+```json
 ### example options.json ###
 [
   {
@@ -206,7 +206,7 @@ To update an environment that uses a classic load balancer use the `aws:elb:load
 
 **Example 4(c) — Configuration file for environment with a classic load balancer**
 
-```
+```json
 ### example options.json ###
 [
   {
@@ -244,7 +244,7 @@ aws elasticbeanstalk update-environment \
 
 **Example**
 
-```
+```json
 ### example options.json ###
 [
   {
@@ -290,7 +290,7 @@ aws elasticbeanstalk create-environment \
 
 **Example**
 
-```
+```json
 ### example options.json ###
 [
   {
@@ -336,7 +336,7 @@ aws elasticbeanstalk update-environment \
 
 **Example**
 
-```
+```json
 ### example options.json ###
 [
   {
@@ -381,7 +381,7 @@ aws elasticbeanstalk create-environment \
 
 **Example**
 
-```
+```json
 ### example options.json ###
 [
   {

@@ -56,7 +56,7 @@ You can also define the trust policy for the role using a separate JSON file. In
 **Example trust-policy.json**
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

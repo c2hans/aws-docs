@@ -16,7 +16,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-websocketapi-websocketapiauth-syntax.yaml"></a>
 
-```
+```yaml
 [AuthArn](#sam-websocketapiauth-autharn): {{String}}
 [AuthType](#sam-websocketapiauth-authtype): {{String}}
 [IdentitySource](#sam-websocketapiauth-identitysource): {{List}}
@@ -68,7 +68,7 @@ The name of the authorizer.
 
 The following example configures a Lambda authorizer for a WebSocket API.
 
-```
+```yaml
 Auth:
   AuthType: CUSTOM
   AuthArn: !GetAtt AuthorizerFunction.Arn
@@ -81,7 +81,7 @@ Auth:
 
 The following example configures IAM authorization for a WebSocket API.
 
-```
+```yaml
 Auth:
   AuthType: AWS_IAM
 ```

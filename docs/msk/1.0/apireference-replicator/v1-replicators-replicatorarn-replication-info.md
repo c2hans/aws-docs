@@ -66,7 +66,7 @@ Enable CORS by returning correct headers
 #### PUT schema
 <a name="v1-replicators-replicatorarn-replication-info-request-body-put-example"></a>
 
-```
+```json
 {
   "consumerGroupReplication": {
     "consumerGroupsToExclude": [
@@ -120,7 +120,7 @@ Enable CORS by returning correct headers
 #### UpdateReplicationInfoResponse schema
 <a name="v1-replicators-replicatorarn-replication-info-response-body-updatereplicationinforesponse-example"></a>
 
-```
+```json
 {
   "replicatorArn": "string",
   "replicatorState": enum

@@ -14,7 +14,7 @@ The following code examples show how to get started using AWS IoT.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
 /// <summary>
 /// Hello AWS IoT example.
 /// </summary>
@@ -107,7 +107,7 @@ public class HelloIoT
 **SDK for C\+\+**
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -149,7 +149,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the hello\_iot.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/iot/IoTClient.h>
 #include <aws/iot/model/ListThingsRequest.h>
@@ -220,7 +220,7 @@ int main(int argc, char **argv) {
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iot.IotClient;
 import software.amazon.awssdk.services.iot.model.ListThingsRequest;
@@ -261,7 +261,7 @@ public class HelloIoT {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.iot.IotClient
 import aws.sdk.kotlin.services.iot.model.ListThingsRequest
 
@@ -296,7 +296,7 @@ suspend fun listAllThings() {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 def hello_iot():
     """
     Use the AWS SDK for Python (Boto3) to create an AWS IoT client and list

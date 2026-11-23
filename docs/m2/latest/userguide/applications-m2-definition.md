@@ -39,7 +39,7 @@ Each application definition starts with general information about the template v
 
 Use the following structure to specify the template version and source locations.
 
-```
+```json
 "template-version": "2.0",
     "source-locations": [
         {
@@ -56,7 +56,7 @@ Use the following structure to specify the template version and source locations
 **Note**
 You can use the following syntax if you want to input S3 ARN as s3-bucket :
 
-```
+```json
 "template-version": "2.0",
   "source-locations": [
       {
@@ -97,7 +97,7 @@ The definition section is engine-specific and subject to change. The following s
 ## AWS Transform for mainframe application definition sample
 <a name="applications-m2-definition-ba"></a>
 
-```
+```json
 {
  "template-version": "2.0",
  "source-locations": [
@@ -144,7 +144,7 @@ The definition section is engine-specific and subject to change. The following s
 
 Specify the port you will use to access the application through the AWS Mainframe Modernization-created Elastic Load Balancing. Use the following structure:
 
-```
+```json
 "listeners": [{
             "port": 8194,
             "type": "http"
@@ -162,7 +162,7 @@ Specify the port you will use to access the application through the AWS Mainfram
 
 Specify the location where the engine picks up the application image file using the following structure.
 
-```
+```json
 "ba-application": {
             "app-location": "${s3-source}/murachs-v6/",
             "files-directory": "/m2/mount/myfolder",
@@ -199,7 +199,7 @@ chown myuser:mygroup testclient
 
 Specify the Blusam database and Redis cache using the following structure.
 
-```
+```json
 "blusam": {
             "db": {
                 "nb-threads": 8,
@@ -235,7 +235,7 @@ Specifies the properties of the Redis cache that the application uses to store t
 
 Specify the JMS-MQ connection details for AWS Transform for mainframe application.
 
-```
+```json
 "message-queues": [
   {
       "product-type": "JMS-MQ",
@@ -289,7 +289,7 @@ Specify the JMS-MQ connection details for AWS Transform for mainframe applicatio
 
 Specify the application storage EFS Access point details using the following structure.
 
-```
+```json
 "ba-application": {
             "file-permission-mask": "UMASK002"
 },
@@ -323,7 +323,7 @@ When efs config is provided, files-directory must be specified in the applicatio
 
 The following sample definition section is for the Rocket Software runtime engine, and contains both required and optional elements.
 
-```
+```json
 {
  "template-version": "2.0",
  "source-locations": [
@@ -414,7 +414,7 @@ The content in the definition section of the Rocket Software application definit
 
 Specify a listener using the following structure:
 
-```
+```json
 "listeners": [{
     "port": 5101,
     "type": "tn3270"
@@ -432,7 +432,7 @@ Specifies the type of service listener. For more information, see [Listeners](ht
 
 Specify the data set location using the following structure.
 
-```
+```json
 "dataset-location": {
             "db-locations": [{
                 "name": "Database1",
@@ -451,7 +451,7 @@ Specifies the location of the data sets that the migrated application creates. C
 
 AWS Mainframe Modernization uses Amazon Cognito for authentication and authorization for migrated applications. Specify the Amazon Cognito authentication handler using the following structure.
 
-```
+```json
 "cognito-auth-handler": {
             "user-pool-id": "cognito-idp.{{Region}}.amazonaws.com/{{Region}}_rvYFnQIxL",
             "client-id": "58k05jb8grukjjsudm5hhn1v87",
@@ -479,7 +479,7 @@ You can integrate your application with Active Directory (AD) or any type of LDA
 
 1. Create an AWS Secrets Manager secret with your AD/LDAP details for each AD/LDAP server that you want to use with your application. For information on how to create a secret, see [Create an AWS Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/) in the AWS Secrets Manager User Guide. For secret type, choose **Other type of secret** and include the following key-value pairs.
 
-   ```
+   ```bash
    {
        "connectionPath"       : "<HOST-ADDRESS>:<PORT>",
        "authorizedId"         : "<USER-FULL-DN>",
@@ -514,7 +514,7 @@ Do not create AD users with the username `awsuser` or `mfuser`. These two userna
 
 1. Add the following to your application definition.
 
-   ```
+   ```bash
    "ldap-ad-auth-handler": {
        "ldap-ad-connection-secrets": [LIST OF AD/LDAP SECRETS]
    }
@@ -522,7 +522,7 @@ Do not create AD users with the username `awsuser` or `mfuser`. These two userna
 
    The following is an example.
 
-   ```
+   ```bash
    "ldap-ad-auth-handler": {
        "ldap-ad-connection-secrets": ["arn:aws:secrets:1234:us-east-1:secret:123456"]
    }
@@ -539,7 +539,7 @@ Currently, the LDAP administrator has to provide "alter" permissions on the `cas
 
 1. Create an AWS Secrets Manager with the following keys and values:
 
-   ```
+   ```bash
    {
      "username" : "<USERNAME>",
      "password" : "<PASSWORD>"
@@ -572,7 +572,7 @@ Here is the list of application operations that currently support authorization:
 
 Specify the details required by the batch jobs that run as part of the application using the following structure.
 
-```
+```json
 "batch-settings": {
             "initiators": [{
                 "classes": ["A", "B"],
@@ -591,7 +591,7 @@ Specify the details required by the batch jobs that run as part of the applicati
 **initiators**
 Specifies a batch initiator that starts when the migrated application starts successfully and continues running until the application stops. You can define one or multiple classes per initiator. You can also define multiple initiators. For example:
 
-```
+```json
 "batch-settings": {
             "initiators": [
                 {
@@ -631,7 +631,7 @@ Defines a mapping for the utility and program names used in JCL to the implement
 
 Specify the details required for the CICS transactions that run as part of the application using the following structure.
 
-```
+```json
 "cics-settings": {
             "binary-file-location": "${s3-source}/cics/binaries",
             "csd-file-location": "${s3-source}/cics/def",
@@ -653,7 +653,7 @@ Specifies the system initialization table (SIT) that the migrated application us
 
 Specify a jes printer using the following structure.
 
-```
+```json
 "jes-printers": [
     {
         "name": "printerName",
@@ -695,7 +695,7 @@ You can see more examples of defining the exit module in the [Printers](mf-app-c
 
 Specify the details required for the XA resources that the application requires using the following structure.
 
-```
+```json
 "xa-resources" : [{
             "name": "XASQL",
             "secret-manager-arn": "arn:aws:secrets:1234:us-east-1:secret:123456",
@@ -724,7 +724,7 @@ XA resource definition has been updated to include an optional `xa-connection-ty
 
 Specify the details required for runtime settings to manage permitted environment variables using the following structure.
 
-```
+```json
 "runtime-settings": {
           "base-configuration-location": "${s3-source}/exported.json",
           "environment-variables": {

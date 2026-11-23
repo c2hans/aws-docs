@@ -6,27 +6,27 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 Before submitting, confirm both clusters are reachable and authenticated:
 
-```
+```bash
 console clusters connection-check
 ```
 
 Submit the workflow and watch it through the interactive manager, approving any gated steps after you have inspected them:
 
-```
+```bash
 workflow submit
 workflow manage
 ```
 
 The workflow snapshots the source domain, runs the `evaluateMetadata` and `migrateMetadata` phases, then bulk-indexes documents into the collection. Use the non-interactive status and log views if you prefer to script monitoring:
 
-```
+```bash
 workflow status --live-status
 workflow log all --follow
 ```
 
 To increase backfill throughput, increase `documentBackfillConfig.podReplicas`, resubmit the workflow, and watch the collection’s OCU usage so you do not oversaturate it:
 
-```
+```bash
 workflow configure edit
 workflow submit
 ```

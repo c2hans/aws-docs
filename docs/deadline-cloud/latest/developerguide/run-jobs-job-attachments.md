@@ -34,7 +34,7 @@ To enable job attachments in your queue, add a job attachments configuration to 
 1. Choose your first CloudShell tab, then enter one of the following commands to use an Amazon S3 bucket for job attachments.
    + If you don't have an existing private Amazon S3 bucket, you can create and use a new S3 bucket.
 
-     ```
+     ```bash
      DEV_FARM_BUCKET=$(echo $DEV_FARM_NAME \
          | tr '[:upper:]' '[:lower:]')-$(xxd -l 16 -p /dev/urandom)
      if [ "$AWS_REGION" == "us-east-1" ]; then LOCATION_CONSTRAINT=
@@ -48,20 +48,20 @@ To enable job attachments in your queue, add a job attachments configuration to 
      ```
    + If you already have a private Amazon S3 bucket, you can use it by replacing {{`MY_BUCKET_NAME`}} with the name of your bucket.
 
-     ```
+     ```bash
      DEV_FARM_BUCKET={{MY_BUCKET_NAME}}
      ```
 
 1. After you create or choose your Amazon S3 bucket, add the bucket name to `~/.bashrc` to make the bucket available for other terminal sessions.
 
-   ```
+   ```bash
    echo "DEV_FARM_BUCKET=$DEV_FARM_BUCKET" >> ~/.bashrc
     source ~/.bashrc
    ```
 
 1. Create an AWS Identity and Access Management (IAM) role for the queue.
 
-   ```
+   ```bash
    aws iam create-role --role-name "${DEV_FARM_NAME}QueueRole" \
        --assume-role-policy-document \
            '{
@@ -111,7 +111,7 @@ To enable job attachments in your queue, add a job attachments configuration to 
 
 1. Update your queue to include the job attachments settings and the IAM role.
 
-   ```
+   ```bash
    QUEUE_ROLE_ARN="arn:aws:iam::$(aws sts get-caller-identity \
            --query "Account" --output text):role/${DEV_FARM_NAME}QueueRole"
    aws deadline update-queue \
@@ -127,13 +127,13 @@ To enable job attachments in your queue, add a job attachments configuration to 
 
 1. Confirm that you updated your queue.
 
-   ```
+   ```bash
    deadline queue get
    ```
 
    Output such as the following is shown:
 
-   ```
+   ```yaml
    ...
    jobAttachmentSettings:
      s3BucketName: DEV_FARM_BUCKET
@@ -155,13 +155,13 @@ After you've added the job attachments configuration to your queue, you can subm
 
 1.
 
-   ```
+   ```bash
    cd ~/deadline-cloud-samples/job_bundles/
    ```
 
 1. Submit simple\_file\_job to the queue. When prompted to confirm the upload, enter **y**.
 
-   ```
+   ```bash
    deadline bundle submit simple_file_job \
        -p InFile=simple_job/template.yaml \
        -p OutFile=hash-jobattachments.txt
@@ -169,7 +169,7 @@ After you've added the job attachments configuration to your queue, you can subm
 
 1. To view the job attachments data transfer session log output, run the following command.
 
-   ```
+   ```bash
    JOB_ID=$(deadline config get defaults.job_id)
    SESSION_ID=$(aws deadline list-sessions \
            --farm-id $DEV_FARM_ID \
@@ -182,7 +182,7 @@ After you've added the job attachments configuration to your queue, you can subm
 
 1. List the session actions that were run within the session.
 
-   ```
+   ```bash
    aws deadline list-session-actions \
        --farm-id $DEV_FARM_ID \
        --queue-id $DEV_QUEUE_ID \
@@ -192,7 +192,7 @@ After you've added the job attachments configuration to your queue, you can subm
 
    Output such as the following is shown:
 
-   ```
+   ```json
    {
        "sessionactions": [
            {
@@ -246,7 +246,7 @@ After you've added the job attachments configuration to your queue, you can subm
 
    Output such as the following is shown:
 
-   ```
+   ```screen
    eaa2df5d34b54be5ac34c56a24a8c237b8487231a607eaf530a04d76b89c9cd3  /tmp/openjd/session-123/assetroot-abc/simple_job/template.yaml
    ```
 
@@ -259,19 +259,19 @@ You can use the AWS Command Line Interface (AWS CLI) to upload or download data 
 
 1. Choose your first CloudShell tab, then open the job bundle samples directory.
 
-   ```
+   ```bash
    cd ~/deadline-cloud-samples/job_bundles/
    ```
 
 1. Inspect the job properties.
 
-   ```
+   ```bash
    deadline job get
    ```
 
    Output such as the following is shown:
 
-   ```
+   ```yaml
    parameters:
      Message:
        string: Welcome to AWS Deadline Cloud!
@@ -294,7 +294,7 @@ You can use the AWS Command Line Interface (AWS CLI) to upload or download data 
 
 1. Pretty-print the Amazon S3 manifest object to see the input directory structure for the job.
 
-   ```
+   ```bash
    MANIFEST_SUFFIX=$(aws deadline get-job \
         --farm-id $DEV_FARM_ID \
         --queue-id $DEV_QUEUE_ID \
@@ -306,7 +306,7 @@ You can use the AWS Command Line Interface (AWS CLI) to upload or download data 
 
    Output such as the following is shown:
 
-   ```
+   ```screen
    {
         "hashAlg": "xxh128",
         "manifestVersion": "2023-03-03",
@@ -324,7 +324,7 @@ You can use the AWS Command Line Interface (AWS CLI) to upload or download data 
 
 1. Construct the Amazon S3 prefix that holds manifests for the output job attachments and list the object under it.
 
-   ```
+   ```bash
    SESSION_ACTION=$(aws deadline list-session-actions \
        --farm-id $DEV_FARM_ID \
        --queue-id $DEV_QUEUE_ID \
@@ -341,7 +341,7 @@ You can use the AWS Command Line Interface (AWS CLI) to upload or download data 
 
 1. Get the newest manifest object key for the specific session action id, then pretty-print the manifest objects.
 
-   ```
+   ```bash
    SESSION_ACTION_ID=$(echo $SESSION_ACTION | jq -r .sessionActionId)
     MANIFEST_KEY=$(aws s3api list-objects-v2 \
         --bucket $DEV_FARM_BUCKET \
@@ -355,7 +355,7 @@ You can use the AWS Command Line Interface (AWS CLI) to upload or download data 
 
    You'll see properties of the file `hash-jobattachments.txt` in the output such as the following:
 
-   ```
+   ```screen
    {
         "hashAlg": "xxh128",
         "manifestVersion": "2023-03-03",
@@ -375,7 +375,7 @@ You can use the AWS Command Line Interface (AWS CLI) to upload or download data 
 
 1. View content-addressible Amazon S3 storage output under the `Data` prefix.
 
-   ```
+   ```bash
     FILE_HASH=$(echo $MANIFEST_OBJECT | jq -r .paths[0].hash)
     FILE_PATH=$(echo $MANIFEST_OBJECT | jq -r .paths[0].path)
     aws s3 cp s3://$DEV_FARM_BUCKET/JobAttachments/Data/$FILE_HASH -
@@ -383,7 +383,7 @@ You can use the AWS Command Line Interface (AWS CLI) to upload or download data 
 
    Output such as the following is shown:
 
-   ```
+   ```screen
    eaa2df5d34b54be5ac34c56a24a8c237b8487231a607eaf530a04d76b89c9cd3  /tmp/openjd/session-123/assetroot-abc/simple_job/template.yaml
    ```
 

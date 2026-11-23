@@ -30,7 +30,7 @@ For more information, see [Scheduled scaling for Amazon EC2 Auto Scaling](https:
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified scheduled action for the specified Auto Scaling group. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASScheduledAction -AutoScalingGroupName my-asg -ScheduledAction "myScheduledAction"
 ```
 **Output:**
@@ -43,7 +43,7 @@ Performing operation "Remove-ASScheduledAction (DeleteScheduledAction)" on Targe
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASScheduledAction -AutoScalingGroupName my-asg -ScheduledAction "myScheduledAction" -Force
 ```
 +  For API details, see [DeleteScheduledAction](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -51,7 +51,7 @@ Remove-ASScheduledAction -AutoScalingGroupName my-asg -ScheduledAction "mySchedu
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified scheduled action for the specified Auto Scaling group. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASScheduledAction -AutoScalingGroupName my-asg -ScheduledAction "myScheduledAction"
 ```
 **Output:**
@@ -64,7 +64,7 @@ Performing operation "Remove-ASScheduledAction (DeleteScheduledAction)" on Targe
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASScheduledAction -AutoScalingGroupName my-asg -ScheduledAction "myScheduledAction" -Force
 ```
 +  For API details, see [DeleteScheduledAction](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

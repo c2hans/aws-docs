@@ -18,7 +18,7 @@ When you store your Docker images in Amazon ECR, Elastic Beanstalk automatically
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -126,7 +126,7 @@ Before proceeding, ensure you have set up your credentials in AWS Secrets Manage
    + `.platform/confighooks/prebuild/01login.sh`
    + `.platform/hooks/prebuild/01login.sh`
 
-   ```
+   ```bash
    #!/bin/bash
    echo $PASSWD | docker login -u $USER --password-stdin
    ```
@@ -218,7 +218,7 @@ To enable Amazon ECR Public authentication, add the following permissions to you
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

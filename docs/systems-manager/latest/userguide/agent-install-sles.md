@@ -28,7 +28,7 @@ Use the following steps to manually install SSM Agent on a single instance. This
 1. **Option 1**: Use a `zypper` command:
    + Run the following command:
 
-     ```
+     ```sh
      sudo zypper install amazon-ssm-agent
      ```
    + Enter `y` in response to any prompts.
@@ -36,12 +36,12 @@ Use the following steps to manually install SSM Agent on a single instance. This
    **Option 2**: Use an `rpm` command.
    + Create a temporary directory on the instance.
 
-     ```
+     ```sh
      mkdir /tmp/ssm
      ```
    + Change to the temporary directory.
 
-     ```
+     ```sh
      cd /tmp/ssm
      ```
    + Run the following commands one at a time to download and run the SSM Agent installer.
@@ -50,23 +50,23 @@ Even though URLs in the following commands include an `ec2-downloads-windows` di
 
      x86\_64 instances:
 
-     ```
+     ```sh
      wget https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
      ```
 
      ARM64 instances:
 
-     ```
+     ```sh
      wget https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_arm64/amazon-ssm-agent.rpm
      ```
    + Run the following command.
 
-     ```
+     ```sh
      sudo rpm ‐‐install amazon-ssm-agent.rpm
      ```
    + (Recommended) Run the following command to verify that the agent is running.
 
-     ```
+     ```sh
      sudo systemctl status amazon-ssm-agent
      ```
 
@@ -95,11 +95,11 @@ Even though URLs in the following commands include an `ec2-downloads-windows` di
 
      To activate the agent in these cases, run the following commands.
 
-     ```
+     ```sh
      sudo systemctl enable amazon-ssm-agent
      ```
 
-     ```
+     ```sh
      sudo systemctl start amazon-ssm-agent
      ```
 
@@ -117,7 +117,7 @@ In the following command, replace {{region}} with your own information. For a li
 
 **x86\_64**
 
-```
+```sh
 wget https://s3.{{region}}.amazonaws.com/amazon-ssm-{{region}}/latest/linux_amd64/amazon-ssm-agent.rpm
 ```
 
@@ -126,7 +126,7 @@ sudo rpm ‐‐install amazon-ssm-agent.rpm
 ```
 See the following example.
 
-```
+```sh
 wget https://s3.us-east-2.amazonaws.com/amazon-ssm-us-east-2/latest/linux_amd64/amazon-ssm-agent.rpm
 ```
 
@@ -136,7 +136,7 @@ sudo rpm ‐‐install amazon-ssm-agent.rpm
 
 **ARM64**
 
-```
+```sh
 wget https://s3.{{region}}.amazonaws.com/amazon-ssm-{{region}}/latest/linux_arm64/amazon-ssm-agent.rpm
 ```
 
@@ -145,7 +145,7 @@ sudo rpm ‐‐install amazon-ssm-agent.rpm
 ```
 See the following example.
 
-```
+```sh
 wget https://s3.us-east-2.amazonaws.com/amazon-ssm-us-east-2/latest/linux_arm64/amazon-ssm-agent.rpm
 ```
 

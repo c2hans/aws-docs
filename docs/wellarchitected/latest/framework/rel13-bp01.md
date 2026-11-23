@@ -39,11 +39,15 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel13-b
 
 ![Matrix showing an example workload tiering by criticality — critical, high, medium, and low — with a target RTO and RPO for each tier.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/disaster-recovery-matrix.png)
 
+*Example workload tiering matrix for RTO and RPO*
+
  Objectives of zero downtime or zero data loss are often unachievable and always expensive. Anchor each number to a demonstrated impact so the cost of meeting it is justified.
 
  A workload cannot recover faster than the downstream dependencies it relies on, so its RTO must be achievable given their recovery capabilities. Upstream workloads that depend on yours can force you to a more stringent target than your own analysis suggests. Where data can be regenerated from another source, known as *derived data*, the RPO of those source systems governs how quickly you can rebuild. Objectives can also tighten during peak periods such as sales events or product launches, so account for that variation. The following worksheet helps you capture this analysis consistently for each workload.
 
 ![Worksheet template for capturing recovery objectives per workload, including RTO, RPO, downstream dependencies, upstream constraints, derived data sources, and peak-period variations.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/worksheet.png)
+
+*Worksheet for capturing recovery objectives per workload*
 
 ### Implementation steps
 <a name="implementation-steps"></a>

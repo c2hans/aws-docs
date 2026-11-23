@@ -103,7 +103,7 @@ Updates the criteria and other settings for a findings filter.
 #### PATCH schema
 <a name="findingsfilters-id-request-body-patch-example"></a>
 
-```
+```json
 {
   "action": enum,
   "clientToken": "string",
@@ -123,7 +123,7 @@ Updates the criteria and other settings for a findings filter.
 #### Empty Schema schema
 <a name="findingsfilters-id-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -131,7 +131,7 @@ Updates the criteria and other settings for a findings filter.
 #### GetFindingsFilterResponse schema
 <a name="findingsfilters-id-response-body-getfindingsfilterresponse-example"></a>
 
-```
+```json
 {
   "action": enum,
   "arn": "string",
@@ -151,7 +151,7 @@ Updates the criteria and other settings for a findings filter.
 #### UpdateFindingsFilterResponse schema
 <a name="findingsfilters-id-response-body-updatefindingsfilterresponse-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "id": "string"
@@ -161,7 +161,7 @@ Updates the criteria and other settings for a findings filter.
 #### ValidationException schema
 <a name="findingsfilters-id-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -170,7 +170,7 @@ Updates the criteria and other settings for a findings filter.
 #### ServiceQuotaExceededException schema
 <a name="findingsfilters-id-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -179,7 +179,7 @@ Updates the criteria and other settings for a findings filter.
 #### AccessDeniedException schema
 <a name="findingsfilters-id-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -188,7 +188,7 @@ Updates the criteria and other settings for a findings filter.
 #### ResourceNotFoundException schema
 <a name="findingsfilters-id-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -197,7 +197,7 @@ Updates the criteria and other settings for a findings filter.
 #### ConflictException schema
 <a name="findingsfilters-id-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -206,7 +206,7 @@ Updates the criteria and other settings for a findings filter.
 #### ThrottlingException schema
 <a name="findingsfilters-id-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -215,7 +215,7 @@ Updates the criteria and other settings for a findings filter.
 #### InternalServerException schema
 <a name="findingsfilters-id-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

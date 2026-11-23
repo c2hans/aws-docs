@@ -14,7 +14,8 @@ This is used to indicate the web request component to inspect, in the [FieldToMa
  ** OversizeHandling **   <a name="WAF-Type-Body-OversizeHandling"></a>
 What AWS WAF should do if the body is larger than AWS WAF can inspect.
  AWS WAF does not support inspecting the entire contents of the web request body if the body exceeds the limit for the resource type. When a web request body is larger than the limit, the underlying host service only forwards the contents that are within the limit to AWS WAF for inspection.
-+ For Application Load Balancer and AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
++ For AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
++ For Application Load Balancer, the default limit is 8 KB (8,192 bytes), and you can change the limit in the web ACL `AssociationConfig`.
 + For CloudFront, API Gateway, Amazon Cognito, App Runner, and Verified Access, the default limit is 16 KB (16,384 bytes), and you can increase the limit for each resource type in the web ACL `AssociationConfig`, for additional processing fees.
 + For AWS Amplify, use the CloudFront limit.
 The options for oversize handling are the following:

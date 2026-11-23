@@ -22,7 +22,7 @@ For information about AWS KMS, see the [AWS KMS user guide](https://docs.aws.ama
 Your MediaConvert service role must have permissions to access the specified Secrets Manager secret and AWS KMS key. Add the following permissions to your service role:
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -495,7 +495,7 @@ Use the `AmazonKinesisFullAccess` policy and the following role trust policy for
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

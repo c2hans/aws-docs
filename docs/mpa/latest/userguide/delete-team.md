@@ -51,7 +51,7 @@ You can use one of the following operations:
 
   1. Run the following command to return a list of Amazon Resource Names (ARNs) for your teams:
 
-     ```
+     ```bash
      $ C:\> aws mpa list-approval-teams
      ```
 
@@ -59,7 +59,7 @@ You can use one of the following operations:
 
      Run the following command to request to delete an active team:
 
-     ```
+     ```bash
      $ C:\> aws mpa start-active-approval-team-deletion \
        --arn arn:aws:mpa:{{region}}:{{123456789012}}:approval-team/{{TeamName-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
      ```
@@ -68,13 +68,13 @@ You can use one of the following operations:
 
      Run the following command to get the version ID:
 
-     ```
+     ```bash
      $ C:\> aws mpa get-approval-team --arn arn:aws:mpa:{{region}}:{{123456789012}}:approval-team/{{TeamName-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
      ```
 
      Run the following command to delete an inactive team:
 
-     ```
+     ```bash
      $ C:\> aws mpa delete-inactive-approval-team-version \
        --arn arn:aws:mpa:{{region}}:{{123456789012}}:approval-team/{{TeamName-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
        --version-id {{string}}

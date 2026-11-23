@@ -21,7 +21,7 @@ The following example shows you how to use the AWS Encryption SDK to encrypt and
 
 This example instantiates the AWS Encryption SDK client with the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. For more information, see [Setting your commitment policy](migrate-commitment-policy.md).
 
-```
+```python
 # Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -134,7 +134,7 @@ The following example shows you how to use the AWS Encryption SDK to encrypt and
 
 This example instantiates the AWS Encryption SDK client with the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. For more information, see [Setting your commitment policy](migrate-commitment-policy.md).
 
-```
+```python
 # Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """

@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Describe official AWS ParallelCluster AMIs.
 
-```
+```sh
 pcluster list-official-images [-h]
                 [--architecture {{ARCHITECTURE}}]
                 [--debug]

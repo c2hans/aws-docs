@@ -34,7 +34,7 @@ CloudTrail log files contain one or more log entries. An event represents a sing
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateSubscription` action.
 
-```
+```json
 {
   "eventVersion": "1.09",
   "userIdentity": {

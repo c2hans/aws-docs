@@ -6,20 +6,20 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 Submit the pilot workflow and watch it through the interactive manage interface:
 
-```
+```bash
 workflow submit
 workflow manage
 ```
 
 Metadata migration runs as two gated steps: `evaluateMetadata` (previews what would be applied) and `migrateMetadata` (writes the changes to the target). Inspect the evaluation result, then approve the gates in order:
 
-```
+```bash
 workflow approve step 'evaluatemetadata.*'
 ```
 
 After you have reviewed the evaluation and are satisfied with the candidate indexes, templates, and aliases, approve the metadata migration step:
 
-```
+```bash
 workflow approve step 'migratemetadata.*'
 ```
 

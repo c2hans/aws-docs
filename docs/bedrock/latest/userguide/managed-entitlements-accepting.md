@@ -92,7 +92,7 @@ To activate grants programmatically, use the `CreateGrantVersion` operation. For
 
 The following AWS CLI command activates a grant for all recipients.
 
-```
+```bash
 aws license-manager create-grant-version \
     --region us-east-1 \
     --client-token "$(uuidgen)" \

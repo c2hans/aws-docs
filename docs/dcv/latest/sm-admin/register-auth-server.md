@@ -43,6 +43,6 @@ sudo -u root dcv-session-manager-broker register-auth-server --url https://my-au
 
 **Output**
 
-```
+```json
 Jwk url registered.
 ```

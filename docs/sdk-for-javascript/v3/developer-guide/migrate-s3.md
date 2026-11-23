@@ -35,12 +35,12 @@ Note that this feature can result in additional latency as failed requests are r
 
  For Node.js, you must consume the stream or garbage collect the client or its request handler to keep the connections open to new traffic by freeing sockets.
 
-```
+```typescript
 // v2
 const get = await s3.getObject({ ... }).promise(); // this buffers consumes the stream already.
 ```
 
-```
+```typescript
 // v3, consume the stream to free the socket
 const get = await s3.getObject({ ... }); // object .Body has unconsumed stream
 const str = await get.Body.transformToString(); // consumes the stream

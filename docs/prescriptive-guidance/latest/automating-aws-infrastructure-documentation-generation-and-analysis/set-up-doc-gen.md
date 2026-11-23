@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automating-
 ---
 
 # Set up the Infrastructure Documentation Generator
-<a name="set-up-doc-gen"></a>
 
 This section describes how to build and run the Infrastructure Documentation Generator tool. It provides a systematic approach to setting up both the backend service (FastAPI) and the frontend application (React UI) so that you can scan, analyze, and visualize AWS infrastructure. The backend is responsible for discovering resources, generating documentation, and mapping dependencies. The frontend presents results in an interactive UI. Together, these components form a complete approach for understanding and optimizing AWS environments.
 

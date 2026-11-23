@@ -32,7 +32,7 @@ To serve HTTP traffic directly from a standard web server, use Lambda Web Functi
 ## Event Functions and durable functions
 <a name="whatis-function-types"></a>
 
-[Lambda functions](lambda-functions-chapter.md) run for up to 15 minutes per invocation by default and are ideal for event-driven tasks like processing API requests, handling file uploads, or responding to database changes. On Lambda Managed Instances, functions can run for up to 90 minutes for asynchronous and event source mapping (ESM) invocations. [Durable functions](durable-functions.md) extend this model for workloads that need to run longer and survive interruptions. They automatically checkpoint their progress so they resume reliably after failures, and they can run for up to one year when invoked asynchronously. Use durable functions when you need multi-step workflows, human-in-the-loop approvals, or coordination across services over extended periods.
+[Lambda functions](lambda-functions-chapter.md) run for up to 30 minutes per invocation and are ideal for event-driven tasks like processing API requests, handling file uploads, or responding to database changes. On Lambda Managed Instances, functions can run for up to 90 minutes for asynchronous and event source mapping (ESM) invocations. [Durable functions](durable-functions.md) extend this model for workloads that need to run longer and survive interruptions. They automatically checkpoint their progress so they resume reliably after failures, and they can run for up to one year when invoked asynchronously. Use durable functions when you need multi-step workflows, human-in-the-loop approvals, or coordination across services over extended periods.
 
 ## How Lambda works
 <a name="how-lambda-works"></a>

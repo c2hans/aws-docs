@@ -33,7 +33,7 @@ The following example uses the TICKIT sample database. For more information, see
 
 Use the EXP function to forecast ticket sales based on a continuous growth pattern. In this example, the subquery returns the number of tickets sold in 2008. That result is multiplied by the result of the EXP function, which specifies a continuous growth rate of 7% over 10 years.
 
-```
+```sql
 SELECT (SELECT SUM(qtysold)
 FROM sales, date
 WHERE sales.dateid=date.dateid

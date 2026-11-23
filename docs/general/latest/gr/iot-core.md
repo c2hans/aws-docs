@@ -469,7 +469,7 @@ This table describes the maximum number of transactions per second (TPS) that ca
 
 The levels in the `desired` and `reported` sections of the Device Shadow's JSON state document are counted as shown here for the `desired` object.
 
-```
+```json
 "desired": {
     "one": {
         "two": {

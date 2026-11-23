@@ -29,7 +29,7 @@ Here is a minimal deployable pattern definition, note that the ATS endpoint for 
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { ApiGatewayToIot } from '@aws-solutions-constructs/aws-apigateway-iot';
@@ -39,7 +39,7 @@ new ApiGatewayToIot(this, 'ApiGatewayToIotPattern', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_apigateway_iot import ApiGatewayToIot
 from aws_cdk import Stack
 from constructs import Construct
@@ -49,7 +49,7 @@ ApiGatewayToIot(self, 'ApiGatewayToIotPattern',
 )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

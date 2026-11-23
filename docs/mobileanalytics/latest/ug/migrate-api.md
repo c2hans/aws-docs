@@ -37,7 +37,7 @@ The following examples demonstrate the JSON attributes that you can parse when y
 
 **Example Session Start Event**
 
-```
+```json
 {
   "application_key": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
   "account_id": "111122223333",
@@ -70,7 +70,7 @@ The following examples demonstrate the JSON attributes that you can parse when y
 
 **Example Monetization Event**
 
-```
+```json
 {
   "application_key": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
   "account_id": "111122223333",

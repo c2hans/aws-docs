@@ -20,6 +20,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
 ![ARTF agent deployment architecture on AWS showing the layered architecture within the host provider's VPC, with the auction engine, agent orchestration, ARTF agent fleet, data/ML layer, observability, and security layers, plus Amazon Bedrock AgentCore as a managed alternative](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-08-artf-agent-deployment.jpg)
 
+*ARTF agent deployment architecture on AWS showing the layered architecture within the host provider's VPC, with the auction engine, agent orchestration, ARTF agent fleet, data/ML layer, observability, and security layers, plus Amazon Bedrock AgentCore as a managed alternative*
+
  The architecture consists of the following components:
 
 1.  **Auction Engine**: Receives bid requests through ALB/NLB. Forwards context to the Agent Orchestrator through gRPC/protobuf. Returns the final bid with applied mutations after the Mutation Policy Engine validates and resolves agent proposals.

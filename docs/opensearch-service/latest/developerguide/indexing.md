@@ -39,14 +39,14 @@ To prevent unnecessary confusion, avoid including IP addresses in index names.
 
 Responses from the `_index` and `_bulk` APIs contain quite a bit of information. This information can be useful for troubleshooting requests or for implementing retry logic, but can use considerable bandwidth. In this example, indexing a 32 byte document results in a 339 byte response (including headers):
 
-```
+```json
 PUT {{opensearch-domain}}/more-movies/_doc/1
 {"title": "Back to the Future"}
 ```
 
 **Response**
 
-```
+```json
 {
   "_index": "more-movies",
   "_type": "_doc",
@@ -67,14 +67,14 @@ This response size might seem minimal, but if you index 1,000,000 documents per 
 
 If data transfer costs are a concern, use the `filter_path` parameter to reduce the size of the OpenSearch Service response, but be careful not to filter out fields that you need in order to identify or retry failed requests. These fields vary by client. The `filter_path` parameter works for all OpenSearch Service REST APIs, but is especially useful with APIs that you call frequently, such as the `_index` and `_bulk` APIs:
 
-```
+```json
 PUT {{opensearch-domain}}/more-movies/_doc/1?filter_path=result,_shards.total
 {"title": "Back to the Future"}
 ```
 
 **Response**
 
-```
+```json
 {
   "result": "updated",
   "_shards": {
@@ -85,7 +85,7 @@ PUT {{opensearch-domain}}/more-movies/_doc/1?filter_path=result,_shards.total
 
 Instead of including fields, you can exclude fields with a `-` prefix. `filter_path` also supports wildcards:
 
-```
+```json
 POST {{opensearch-domain}}/_bulk?filter_path=-took,-items.index._*
 { "index": { "_index": "more-movies", "_id": "1" } }
 {"title": "Back to the Future"}
@@ -95,7 +95,7 @@ POST {{opensearch-domain}}/_bulk?filter_path=-took,-items.index._*
 
 **Response**
 
-```
+```json
 {
   "errors": false,
   "items": [

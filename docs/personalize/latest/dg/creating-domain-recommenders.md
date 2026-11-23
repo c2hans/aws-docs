@@ -56,7 +56,7 @@ A high `minRecommendationRequestsPerSecond` will increase your bill. We recommen
 
  Use the following AWS CLI code to create a recommender for a domain use case. Run this code for each of your domain use cases. For `recipeArn`, provide the Amazon Resource Name (ARN) for your use case. The available use cases depend on your domain. For a list of use cases and their ARNs see [Choosing a use case](domain-use-cases.md).
 
-```
+```cmd
 aws personalize create-recommender \
 --name {{recommender name}} \
 --dataset-group-arn {{dataset group ARN}} \
@@ -71,7 +71,7 @@ Create a recommender for a domain use case with the following code. Give your re
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')
@@ -90,7 +90,7 @@ print('Recommender ARN:' + recommender_arn)
 ------
 #### [ SDK for Java 2.x ]
 
-```
+```java
     public static String createRecommender(PersonalizeClient personalizeClient,
             String name,
             String datasetGroupArn,
@@ -146,7 +146,7 @@ print('Recommender ARN:' + recommender_arn)
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 // Get service clients and commands using ES6 syntax.
 import { CreateRecommenderCommand, PersonalizeClient } from
   "@aws-sdk/client-personalize";

@@ -45,7 +45,7 @@ Retrieves information about one or more custom data identifiers.
 #### POST schema
 <a name="custom-data-identifiers-get-request-body-post-example"></a>
 
-```
+```json
 {
   "ids": [
     "string"
@@ -59,7 +59,7 @@ Retrieves information about one or more custom data identifiers.
 #### BatchGetCustomDataIdentifiersResponse schema
 <a name="custom-data-identifiers-get-response-body-batchgetcustomdataidentifiersresponse-example"></a>
 
-```
+```json
 {
   "customDataIdentifiers": [
     {
@@ -80,7 +80,7 @@ Retrieves information about one or more custom data identifiers.
 #### ValidationException schema
 <a name="custom-data-identifiers-get-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -89,7 +89,7 @@ Retrieves information about one or more custom data identifiers.
 #### ServiceQuotaExceededException schema
 <a name="custom-data-identifiers-get-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -98,7 +98,7 @@ Retrieves information about one or more custom data identifiers.
 #### AccessDeniedException schema
 <a name="custom-data-identifiers-get-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -107,7 +107,7 @@ Retrieves information about one or more custom data identifiers.
 #### ResourceNotFoundException schema
 <a name="custom-data-identifiers-get-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -116,7 +116,7 @@ Retrieves information about one or more custom data identifiers.
 #### ConflictException schema
 <a name="custom-data-identifiers-get-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -125,7 +125,7 @@ Retrieves information about one or more custom data identifiers.
 #### ThrottlingException schema
 <a name="custom-data-identifiers-get-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -134,7 +134,7 @@ Retrieves information about one or more custom data identifiers.
 #### InternalServerException schema
 <a name="custom-data-identifiers-get-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

@@ -176,7 +176,7 @@ When you create an evaluation job with one or more custom metrics, Amazon Bedroc
 ------
 #### [ Definition with numerical scale ]
 
-```
+```json
 {
     "customMetricDefinition": {
         "metricName": {{"my_custom_metric"}},
@@ -208,7 +208,7 @@ When you create an evaluation job with one or more custom metrics, Amazon Bedroc
 ------
 #### [ Definition with string scale ]
 
-```
+```json
 {
     "customMetricDefinition": {
         "metricName": {{"my_custom_metric"}},
@@ -240,7 +240,7 @@ When you create an evaluation job with one or more custom metrics, Amazon Bedroc
 ------
 #### [ Definition with no scale ]
 
-```
+```json
 {
     "customMetricDefinition": {
         "metricName": {{"my_custom_metric"}},

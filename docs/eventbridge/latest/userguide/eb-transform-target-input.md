@@ -42,7 +42,7 @@ There are pre-defined variables you can use without defining a JSON path. These 
 
 The following is an example Amazon EC2 event.
 
-```
+```json
 {
   "version": "0",
   "id": "7bf73129-1428-4cd3-a780-95db273d1602",
@@ -71,7 +71,7 @@ When defining a rule in the console, select the **Input Transformer** option und
 **Note**
 EventBridge replaces input transformers at runtime to ensure a valid JSON output. Because of this, put quotes around variables that refer to JSON path parameters, but do not put quotes around variables that refer to JSON objects or arrays.
 
-```
+```json
 {
   "timestamp" : "$.time",
   "instance" : "$.detail.instance-id",

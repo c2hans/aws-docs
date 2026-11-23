@@ -29,7 +29,7 @@ pip install requests-aws4auth
 
 Within the script, replace the `Principal` element with the Amazon Resource Name (ARN) of the user or role that's signing the request. You can also optionally modify the `region`.
 
-```
+```python
 from opensearchpy import OpenSearch, RequestsHttpConnection
 from requests_aws4auth import AWS4Auth
 import boto3
@@ -249,7 +249,7 @@ npm i @opensearch-project/opensearch
 
 Within the script, replace the `Principal` element with the Amazon Resource Name (ARN) of the user or role that's signing the request. You can also optionally modify the `region`.
 
-```
+```javascript
 var AWS = require('aws-sdk');
 var aws4 = require('aws4');
 var {

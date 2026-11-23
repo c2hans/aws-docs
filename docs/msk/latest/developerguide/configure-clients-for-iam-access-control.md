@@ -13,7 +13,7 @@ To enable clients to communicate with an MSK cluster that uses IAM access contro
 
 1. Edit your client.properties configuration file using the following Python Kafka client example. Configuration changes are similar in other languages.
 
-   ```
+   ```python
    from kafka import KafkaProducer
    from kafka.errors import KafkaError
    from kafka.sasl.oauth import AbstractTokenProvider

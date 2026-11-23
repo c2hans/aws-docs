@@ -75,7 +75,7 @@ To enable explainability for a new predictor with the AWS SDK for Python (Boto3)
 
 The following code creates an auto predictor that makes predictions for 24 (`ForecastHorizon`) days (`ForecastFrequency`) in the future, and has `ExplainPredictor` set to true. For information on required and optional parameters see [CreateAutoPredictor](API_CreateAutoPredictor.md).
 
-```
+```python
 import boto3
 
 forecast = boto3.client('forecast')
@@ -126,7 +126,7 @@ To enable Predictor Explainability for an existing predictor with the SDK for Py
 
 For information on required and optional parameters see [CreateExplainability](API_CreateExplainability.md).
 
-```
+```python
 import boto3
 
 forecast = boto3.client('forecast')
@@ -184,7 +184,7 @@ To export a Predictor Explainability with the SDK for Python (Boto3), use the `c
 
 For information on required and optional parameters see [CreateExplainabilityExport](API_CreateExplainabilityExport.md).
 
-```
+```python
 import boto3
 
 forecast = boto3.client('forecast')

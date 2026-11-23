@@ -72,7 +72,7 @@ Example YAML structure:
 ------
 #### [ YAML ]
 
-```
+```yaml
 dag_id: my_data_pipeline
 description: "Process daily data from S3 to Redshift"
 schedule_interval: "0 2 * * *"  # Daily at 2 AM

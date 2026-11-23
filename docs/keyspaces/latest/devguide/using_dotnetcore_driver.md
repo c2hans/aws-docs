@@ -14,7 +14,7 @@ This section shows you how to connect to Amazon Keyspaces by using a .NET Core c
 
 1. The following example uses a .NET Core C\# console project to connect to Amazon Keyspaces and run a query.
 
-   ```
+   ```C#
    using Cassandra;
    using System;
    using System.Collections.Generic;

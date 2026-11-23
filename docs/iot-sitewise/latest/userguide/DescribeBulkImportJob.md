@@ -16,13 +16,13 @@ For completed jobs, review the results to confirm successful data integration. I
 
 Replace {{job-ID}} with the ID of the bulk import job that you want to retrieve.
 
-```
+```json
 aws iotsitewise describe-bulk-import-job --job-id {{job-ID}}
 ```
 
 **Example response**
 
-```
+```json
 {
    "files":[
       {

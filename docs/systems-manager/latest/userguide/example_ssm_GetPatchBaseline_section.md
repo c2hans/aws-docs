@@ -70,7 +70,7 @@ For more information, see [About Patch Baselines](https://docs.aws.amazon.com/sy
 **Tools for PowerShell V4**
 **Example 1: This example displays the details for a patch baseline.**
 
-```
+```powershell
 Get-SSMPatchBaselineDetail -BaselineId "pb-03da896ca3b68b639"
 ```
 **Output:**
@@ -92,7 +92,7 @@ RejectedPatches : {}
 **Tools for PowerShell V5**
 **Example 1: This example displays the details for a patch baseline.**
 
-```
+```powershell
 Get-SSMPatchBaselineDetail -BaselineId "pb-03da896ca3b68b639"
 ```
 **Output:**

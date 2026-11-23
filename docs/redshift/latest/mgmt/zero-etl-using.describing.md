@@ -48,7 +48,7 @@ From the **Zero-ETL integrations** list, you can choose **Share data** to create
 
 To refresh your integration, you can use the [ALTER DATABASE](https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_DATABASE.html) command. Doing so replicates all of the data from your integration source into your destination database. The following example refreshes all synced and failed tables within your zero-ETL integration.
 
-```
+```sql
 ALTER DATABASE sample_integration_db INTEGRATION REFRESH ALL tables;
 ```
 

@@ -11,7 +11,7 @@ This section provides known issue resolution when deploying or running the Migra
 
 Start with the simplest question: is this a deployment problem, an authentication problem, or a workflow problem? These commands give you the fastest first signal:
 
-```
+```bash
 console --version
 console clusters connection-check
 workflow status
@@ -25,7 +25,7 @@ kubectl get pods -n ma
 ### Pods are not starting
 <a name="pods-not-starting"></a>
 
-```
+```bash
 kubectl describe pod <POD_NAME> -n ma
 kubectl logs <POD_NAME> -n ma
 ```
@@ -39,7 +39,7 @@ Common causes:
 ### Pods are pending
 <a name="pods-pending"></a>
 
-```
+```bash
 kubectl get events -n ma --sort-by='.lastTimestamp'
 kubectl describe node <NODE_NAME>
 ```
@@ -51,7 +51,7 @@ This often means the Amazon EKS node group or Karpenter NodePool needs attention
 
 Start from the Migration Console pod:
 
-```
+```bash
 console clusters connection-check
 console clusters curl source /
 console clusters curl target /
@@ -66,7 +66,7 @@ Common causes:
 
 Quick DNS test from the Migration Console pod:
 
-```
+```bash
 kubectl exec -it migration-console-0 -n ma -- nslookup <CLUSTER_ENDPOINT>
 ```
 
@@ -80,7 +80,7 @@ Authentication issues usually show up as HTTP `401`, `403`, or "connection check
 
 Verify that the Kubernetes secret exists in the `ma` namespace and contains the expected keys:
 
-```
+```bash
 kubectl get secret <SECRET_NAME> -n ma
 kubectl get secret <SECRET_NAME> -n ma -o jsonpath='{.data}' | jq 'keys'
 ```
@@ -94,7 +94,7 @@ The Amazon EKS deployment associates an IAM role with the Kubernetes service acc
 
 Check the identity inside the Migration Console pod:
 
-```
+```bash
 kubectl exec -it migration-console-0 -n ma -- aws sts get-caller-identity
 ```
 
@@ -109,7 +109,7 @@ The Migration Console pod does not run under a service account named `migration-
 
 If you are inspecting service accounts or troubleshooting identity, check:
 
-```
+```bash
 kubectl get serviceaccount -n ma
 kubectl describe serviceaccount migration-console-access-role -n ma
 kubectl describe serviceaccount argo-workflow-executor -n ma
@@ -128,7 +128,7 @@ Use `users` for internal accounts and `backend_roles` for identities delivered b
 
 Elasticsearch 7.x:
 
-```
+```bash
 curl -u <admin-user>:<admin-pass> \
   -H 'Content-Type: application/json' \
   -X PUT "https://<cluster>/_opendistro/_security/api/rolesmapping/all_access" \
@@ -137,7 +137,7 @@ curl -u <admin-user>:<admin-pass> \
 
 OpenSearch 1.x and later:
 
-```
+```bash
 curl -u <admin-user>:<admin-pass> \
   -H 'Content-Type: application/json' \
   -X PUT "https://<cluster>/_plugins/_security/api/rolesmapping/all_access" \
@@ -146,7 +146,7 @@ curl -u <admin-user>:<admin-pass> \
 
 On Amazon OpenSearch Service domains that only accept IAM authentication (no admin password), you can map the role by temporarily setting the Migration Assistant IAM role as the master user:
 
-```
+```bash
 aws opensearch update-domain-config \
   --domain-name <DOMAIN_NAME> \
   --advanced-security-options '{"MasterUserOptions":{"MasterUserARN":"<MIGRATION_ROLE_ARN>"}}'
@@ -164,7 +164,7 @@ Do not confuse proxy listener mTLS with source or target cluster `authConfig.mtl
 ## If the workflow fails after submission
 <a name="workflow-fails"></a>
 
-```
+```bash
 workflow status
 workflow log all
 workflow log all --follow
@@ -175,7 +175,7 @@ workflow log all --follow
 
  `workflow submit` automatically stops and replaces an existing workflow with the same name, so this should rarely block you. If you see lingering custom resources after a partial failure, use `workflow reset` instead of deleting Argo workflows directly:
 
-```
+```bash
 workflow reset                # lists migration custom resources
 workflow reset --list         # lists migration custom resources and exits
 workflow reset migration-foo  # delete a specific resource by name
@@ -191,13 +191,13 @@ Avoid `kubectl delete workflow …​`. It bypasses the migration custom resourc
 
 Open the interactive UI:
 
-```
+```bash
 workflow manage
 ```
 
 Or approve the step directly:
 
-```
+```bash
 workflow approve step <STEP_NAME>
 ```
 
@@ -208,7 +208,7 @@ The most common cause for Elasticsearch sources is a missing `repository-s3` plu
 
 Check the source cluster:
 
-```
+```bash
 curl http://<SOURCE_HOST>:9200/_cat/plugins?v
 ```
 
@@ -243,7 +243,7 @@ Backfill reads from snapshots in Amazon S3, so adding RFS workers does not incre
 
 Some Migration Console images install the binaries under `/.venv/bin`:
 
-```
+```bash
 export PATH="/.venv/bin:$PATH"
 /.venv/bin/console --version
 /.venv/bin/workflow configure sample

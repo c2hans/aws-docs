@@ -17,7 +17,7 @@ The following code sample shows how to use the BedrockSessionSaver LangGraph lib
   + This Region for your runtime client and the BedrockSessionSaver must match.
   + It must support Claude 3.5 Sonnet v2 (or the model you are using).
 
-```
+```python
 import boto3
 from typing import Dict, TypedDict, Annotated, Sequence, Union
 from langgraph.graph import StateGraph, END

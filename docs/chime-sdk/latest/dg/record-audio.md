@@ -13,7 +13,7 @@ The following example IAM policy grants the `s3:PutObject` and `s3:PutObjectAcl`
 
 **Example : IAM policy for call recording**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -43,7 +43,7 @@ The following example stops recording when the caller presses the pound key (\#)
 **Note**
 This example uses the `CallId` parameter. You can use the `ParticipantTag` parameter instead, but you can't use both.
 
-```
+```json
 {
     "Type": "RecordAudio",
     "Parameters": {
@@ -128,7 +128,7 @@ This example uses the `CallId` parameter. You can use the `ParticipantTag` param
 
 When the recording ends, the Amazon Chime SDK SIP media application calls the AWS Lambda function and passes to it the ACTION\_SUCCESSFUL event, along with the invocation results.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": INTEGER,
@@ -184,7 +184,7 @@ For validation errors, the SIP media application calls the AWS Lambda function w
 
 When the action fails to record the media on a call leg, the SIP media application invokes an AWS Lambda function with the `ACTION_FAILED` event type. See the following example.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{5}},

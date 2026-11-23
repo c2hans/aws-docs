@@ -38,7 +38,7 @@ By default, AL2027 generates `ed25519` and `ECDSA` host keys. Clients support ei
 
 In the following example, `cloud-config` generates a `rsa` host key with the `ecdsa` and `ed25519` keys.
 
-```
+```yaml
 #cloud-config
  ssh_genkeytypes:
  - ed25519
@@ -48,7 +48,7 @@ In the following example, `cloud-config` generates a `rsa` host key with the `ec
 
 If you use an RSA key pair for public key authentication, your SSH client must support a `rsa-sha2-256` or `rsa-sha2-512` signature. If you're using an incompatible client and can't upgrade, re-enable `ssh-rsa` support on your instance. To re-enable `ssh-rsa` support, activate the `LEGACY` system crypto policy using the following commands.
 
-```
+```sh
 $ sudo dnf install crypto-policies-scripts
 $ sudo update-crypto-policies --set LEGACY
 ```

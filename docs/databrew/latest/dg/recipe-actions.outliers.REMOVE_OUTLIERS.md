@@ -55,7 +55,7 @@ The following shows an example `RecipeAction` to use as member of an example `Re
 
 **Example in YAML**
 
-```
+```yaml
 - Action:
   Operation: REMOVE_OUTLIERS
   Parameters:

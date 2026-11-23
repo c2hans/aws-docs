@@ -32,7 +32,7 @@ The following are some considerations for using the `RetrievalFilter` API for Ne
 
 The following shows an example:
 
-```
+```json
 "vectorSearchConfiguration": {
         "numberOfResults": 5,
         "filter": {

@@ -88,7 +88,7 @@ aws transcribe start-transcription-job \
 
 The file *my-first-redaction-job.json* contains the following request body.
 
-```
+```json
 {
   "TranscriptionJobName": "{{my-first-transcription-job}}",
   "Media": {
@@ -116,7 +116,7 @@ This example uses the AWS SDK for Python (Boto3) to redact content using the `Co
 
 For additional examples using the AWS SDKs, including feature-specific, scenario, and cross-service examples, refer to the [Code examples for Amazon Transcribe using AWS SDKs](service_code_examples.md) chapter.
 
-```
+```python
 from __future__ import print_function
 import time
 import boto3

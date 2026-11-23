@@ -25,7 +25,7 @@ AWS SAM automatically finds any functions within your AWS SAM template that have
 
 In the following `Api` example, the `Ratings` function mounts `ratings.py:handler()` at `/ratings` for `GET` requests:
 
-```
+```yaml
 Ratings:
   Type: AWS::Serverless::Function
   Properties:
@@ -41,7 +41,7 @@ Ratings:
 
 Here is an example `Api` response:
 
-```
+```javascript
 // Example of a Proxy Integration response
 exports.handler = (event, context, callback) => {
     callback(null, {
@@ -68,7 +68,7 @@ To declare environment variables locally that override values defined in your te
 
 To declare environment variables that apply globally to all resources, specify a `Parameters` object like the following:
 
-```
+```json
 {
     "Parameters": {
         "TABLE_NAME": "localtable",
@@ -80,7 +80,7 @@ To declare environment variables that apply globally to all resources, specify a
 
 To declare different environment variables for each resource, specify objects for each resource like the following:
 
-```
+```json
 {
     "MyFunction1": {
         "TABLE_NAME": "localtable",

@@ -14,7 +14,7 @@ The following code examples show how to use `ListSAMLProviders`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List SAML authentication providers.
     /// </summary>
@@ -59,7 +59,7 @@ For more information, see [Creating IAM SAML identity providers](https://docs.aw
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -96,7 +96,7 @@ func (wrapper AccountWrapper) ListSAMLProviders(ctx context.Context) ([]types.SA
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 List the SAML providers.
 
-```
+```javascript
 import { ListSAMLProvidersCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -117,7 +117,7 @@ export const listSamlProviders = async () => {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -134,7 +134,7 @@ $service = new IAMService();
 **Tools for PowerShell V4**
 **Example 1: This example retrieves the list of SAML 2.0 providers created in the current AWS account. It returns the ARN, creation date, and expiration date for each SAML provider.**
 
-```
+```powershell
 Get-IAMSAMLProviderList
 ```
 **Output:**
@@ -149,7 +149,7 @@ arn:aws:iam::123456789012:saml-provider/SAMLADFS    12/23/2014 12:16:55 PM      
 **Tools for PowerShell V5**
 **Example 1: This example retrieves the list of SAML 2.0 providers created in the current AWS account. It returns the ARN, creation date, and expiration date for each SAML provider.**
 
-```
+```powershell
 Get-IAMSAMLProviderList
 ```
 **Output:**
@@ -167,7 +167,7 @@ arn:aws:iam::123456789012:saml-provider/SAMLADFS    12/23/2014 12:16:55 PM      
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def list_saml_providers(count):
     """
     Lists the SAML providers for the account.
@@ -193,7 +193,7 @@ def list_saml_providers(count):
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
 class SamlProviderLister
   # Initializes the SamlProviderLister with IAM client and a logger.
   # @param iam_client [Aws::IAM::Client] The IAM client object.
@@ -227,7 +227,7 @@ end
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn list_saml_providers(
     client: &Client,
 ) -> Result<ListSamlProvidersOutput, SdkError<ListSAMLProvidersError>> {
@@ -244,7 +244,7 @@ pub async fn list_saml_providers(
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_iam->listsamlproviders( ).
         MESSAGE 'Retrieved SAML provider list.' TYPE 'I'.

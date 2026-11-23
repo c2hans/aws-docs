@@ -18,9 +18,10 @@ Required: No
  ** ResourceType **   <a name="Route53-Type-ResourceTagSet-ResourceType"></a>
 The type of the resource.
 + The resource type for health checks is `healthcheck`.
++ The resource type for health check sources is `healthchecksource`.
 + The resource type for hosted zones is `hostedzone`.
 Type: String
-Valid Values: `healthcheck | hostedzone`
+Valid Values: `healthcheck | hostedzone | healthchecksource`
 Required: No
 
  ** Tags **   <a name="Route53-Type-ResourceTagSet-Tags"></a>

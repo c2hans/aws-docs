@@ -17,7 +17,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 The examples use the following imports.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.policybuilder.iam.IamConditionOperator;
@@ -41,7 +41,7 @@ import java.util.List;
 ```
 Create a time-based policy.
 
-```
+```java
         public String timeBasedPolicyExample() {
                 IamPolicy policy = IamPolicy.builder()
                                 .addStatement(b -> b
@@ -67,7 +67,7 @@ Create a time-based policy.
 ```
 Create a policy with multiple conditions.
 
-```
+```java
         public String multipleConditionsExample() {
                 IamPolicy policy = IamPolicy.builder()
                                 .addStatement(b -> b
@@ -97,7 +97,7 @@ Create a policy with multiple conditions.
 ```
 Use principals in a policy.
 
-```
+```java
         public String specifyPrincipalsExample() {
                 IamPolicy policy = IamPolicy.builder()
                                 .addStatement(b -> b
@@ -117,7 +117,7 @@ Use principals in a policy.
 ```
 Allow cross-account access.
 
-```
+```java
         public String allowCrossAccountAccessExample() {
                 IamPolicy policy = IamPolicy.builder()
                                 .addStatement(b -> b
@@ -136,7 +136,7 @@ Allow cross-account access.
 ```
 Build and upload an `IamPolicy`.
 
-```
+```java
         public String createAndUploadPolicyExample(IamClient iam, String accountID, String policyName) {
                 // Build the policy.
                 IamPolicy policy = IamPolicy.builder() // 'version' defaults to "2012-10-17".
@@ -154,7 +154,7 @@ Build and upload an `IamPolicy`.
 ```
 Download and work with an `IamPolicy`.
 
-```
+```java
         public String createNewBasedOnExistingPolicyExample(IamClient iam, String accountID, String policyName,
                         String newPolicyName) {
 

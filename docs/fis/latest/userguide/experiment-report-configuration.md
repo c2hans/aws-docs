@@ -24,7 +24,7 @@ When the experiment ends, the report can be downloaded from the AWS FIS console 
 
  The following is the syntax for the experiment report configuration, an optional section of the experiment template.
 
-```
+```json
 {
     "experimentReportConfiguration": {
         "outputs": {
@@ -80,7 +80,7 @@ We recommend you follow AWS security best practices and restrict the experiment 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":

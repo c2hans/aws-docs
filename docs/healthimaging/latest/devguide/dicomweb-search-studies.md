@@ -43,7 +43,7 @@ Use the `SearchDICOMStudies` API to search for DICOM studies in a HealthImaging 
 ------
 #### [ curl ]
 
-   ```
+   ```sh
    curl --request GET \
      "https://dicom-medical-imaging.us-east-1.amazonaws.com/datastore/{{datastoreId}}/studies[?query]"
      --aws-sigv4 'aws:amz:us-east-1:medical-imaging' \

@@ -94,7 +94,7 @@ By default, DeepAR uses one worker per CPU for inference, if there is sufficient
 
 DeepAR forecasting supports getting inferences by using batch transform from data using the JSON Lines format. In this format, each record is represented on a single line as a JSON object, and lines are separated by newline characters. The format is identical to the JSON Lines format used for model training. For information, see [Input/Output Interface for the DeepAR Algorithm](deepar.md#deepar-inputoutput). For example:
 
-```
+```json
 {"start": "2009-11-01 00:00:00", "target": [4.3, "NaN", 5.1, ...], "cat": [0, 1], "dynamic_feat": [[1.1, 1.2, 0.5, ..]]}
 {"start": "2012-01-30 00:00:00", "target": [1.0, -5.0, ...], "cat": [2, 3], "dynamic_feat": [[1.1, 2.05, ...]]}
 {"start": "1999-01-30 00:00:00", "target": [2.0, 1.0], "cat": [1, 4], "dynamic_feat": [[1.3, 0.4]]}
@@ -109,7 +109,7 @@ Similar to the hosted endpoint inference request format, the `cat` and the `dyna
 
 Unlike hosted endpoint inference, the configuration field is set once for the entire batch inference job using an environment variable named `DEEPAR_INFERENCE_CONFIG`. The value of `DEEPAR_INFERENCE_CONFIG` can be passed when the model is created by calling [`CreateTransformJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTransformJob.html) API. If `DEEPAR_INFERENCE_CONFIG` is missing in the container environment, the inference container uses the following default:
 
-```
+```json
 {
     "num_samples": 100,
     "output_types": ["mean", "quantiles"],
@@ -119,7 +119,7 @@ Unlike hosted endpoint inference, the configuration field is set once for the en
 
 The output is also in JSON Lines format, with one line per prediction, in an order identical to the instance order in the corresponding input file. Predictions are encoded as objects identical to the ones returned by responses in online inference mode. For example:
 
-```
+```json
 { "quantiles": { "0.1": [...], "0.2": [...] }, "samples": [...], "mean": [...] }
 ```
 
@@ -127,7 +127,7 @@ Note that in the [`TransformInput`](https://docs.aws.amazon.com/sagemaker/latest
 
 For example, here is a SageMaker AI [`CreateTransformJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTransformJob.html) request for a DeepAR job with a custom `DEEPAR_INFERENCE_CONFIG`:
 
-```
+```json
 {
    "BatchStrategy": "SingleRecord",
    "Environment": {

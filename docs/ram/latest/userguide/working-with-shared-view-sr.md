@@ -32,7 +32,7 @@ You can use the [list-resources](https://docs.aws.amazon.com/cli/latest/referenc
 
 The following example command displays details about the resource accessible through a resource share in the specified AWS Region from another AWS account.
 
-```
+```bash
 $ aws ram list-resources \
     --region us-east-1 \
     --resource-owner OTHER-ACCOUNTS

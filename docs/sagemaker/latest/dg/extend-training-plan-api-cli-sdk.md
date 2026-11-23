@@ -8,14 +8,14 @@ After selecting an extension offering, use the [`ExtendTrainingPlan`](https://do
 
 The following example uses an AWS CLI command to extend a training plan.
 
-```
+```sh
 aws sagemaker extend-training-plan \
 --training-plan-extension-offering-id "{{tpeo-SHA-256-hash-value}}"
 ```
 
 This JSON document is a sample response from the SageMaker training plans API. The response includes the list of extensions for the training plan.
 
-```
+```JSON
 {
     "TrainingPlanExtensions": [
         {

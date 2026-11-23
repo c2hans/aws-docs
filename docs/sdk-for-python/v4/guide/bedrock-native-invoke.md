@@ -12,7 +12,7 @@ The following example uses the synchronous client to send one Amazon Nova 2 Mess
 
  **Imports**
 
-```
+```python
 import json
 from typing import Any
 
@@ -21,7 +21,7 @@ from aws_sdk_bedrock_runtime import BedrockRuntimeClient
 
 The following helper functions build the model-native request and validate the model-native response.
 
-```
+```python
 def build_native_request(prompt: str) -> dict[str, Any]:
     """Build an Amazon Nova 2 Messages API request."""
     return {
@@ -59,7 +59,7 @@ Serialize the native request to UTF-8 JSON bytes and pass it as `body`. Set `con
 
  **Code**
 
-```
+```python
 def invoke_model(client: BedrockRuntimeClient) -> str:
     """Invoke a Nova model and print its validated native text response."""
     # Model-native request and response schemas vary by model provider.
@@ -79,7 +79,7 @@ def invoke_model(client: BedrockRuntimeClient) -> str:
 
 The entry point creates a synchronous client with `create_client` and runs the request. Run the program with `python invoke_model.py`.
 
-```
+```python
 def main() -> None:
     """Create a synchronous client and run the example."""
     with create_client() as client:

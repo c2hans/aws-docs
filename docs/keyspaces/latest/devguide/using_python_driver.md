@@ -101,7 +101,7 @@ pip install cassandra-sigv4
 
 The following code example shows how to connect to Amazon Keyspaces by using the open-source DataStax Python driver for Cassandra and the SigV4 authentication plugin. The plugin depends on the AWS SDK for Python (Boto3). It uses `boto3.session` to obtain temporary credentials.
 
-```
+```Python
 from cassandra.cluster import Cluster
 from ssl import SSLContext, PROTOCOL_TLSv1_2 , CERT_REQUIRED
 from cassandra.auth import PlainTextAuthProvider

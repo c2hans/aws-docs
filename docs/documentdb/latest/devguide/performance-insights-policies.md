@@ -40,7 +40,7 @@ For users who don't have the `AmazonRDSPerformanceInsightsReadOnly` policy, you 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

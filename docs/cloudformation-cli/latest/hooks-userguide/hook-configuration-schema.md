@@ -23,7 +23,7 @@ The maximum amount of data that a Hook’s configuration can store is 300 KB. Th
 
 The following schema is the structure for a Hook configuration schema.
 
-```
+```json
 {
     "CloudFormationConfiguration": {
         "HookConfiguration": {

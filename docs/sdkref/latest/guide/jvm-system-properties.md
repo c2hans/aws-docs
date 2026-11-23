@@ -20,7 +20,7 @@ You can set JVM system properties several ways.
 
 Set JVM system properties on the command-line when invoking the `java` command by using the `-D` switch. The following command configures the AWS Region globally for all service clients unless you explicitly override the value in code.
 
-```
+```bash
 java -Daws.region=us-east-1 -jar <your_application.jar> <other_arguments>
 ```
 
@@ -58,7 +58,7 @@ Using `[set](https://docs.microsoft.com/en-us/windows-server/administration/wind
 
 You can also set JVM system properties at runtime in code by using the `System.setProperty` method as shown in the following example.
 
-```
+```java
 System.setProperty("aws.region", "us-east-1");
 ```
 

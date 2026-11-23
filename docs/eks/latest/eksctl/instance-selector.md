@@ -13,7 +13,7 @@ eksctl now integrates with the [EC2 instance selector](https://github.com/aws/am
 
 To create a cluster with a single nodegroup that uses instance types matched by the instance selector resource criteria passed to eksctl, run
 
-```
+```console
 eksctl create cluster --instance-selector-vcpus=2 --instance-selector-memory=4
 ```
 
@@ -21,13 +21,13 @@ This will create a cluster and a managed nodegroup with the `instanceTypes` fiel
 
 For unmanaged nodegroups, the `instancesDistribution.instanceTypes` field will be set:
 
-```
+```console
 eksctl create cluster --managed=false --instance-selector-vcpus=2 --instance-selector-memory=4
 ```
 
 The instance selector criteria can also be specified in ClusterConfig:
 
-```
+```yaml
 # instance-selector-cluster.yaml
 ---
 apiVersion: eksctl.io/v1alpha5
@@ -51,7 +51,7 @@ managedNodeGroups:
     cpuArchitecture: x86_64 # default value
 ```
 
-```
+```console
 eksctl create cluster -f instance-selector-cluster.yaml
 ```
 
@@ -66,7 +66,7 @@ An example file can be found [here](https://github.com/eksctl-io/eksctl/blob/mai
 
 The [dry-run](dry-run.md) feature allows you to inspect and change the instances matched by the instance selector before proceeding to creating a nodegroup.
 
-```
+```console
 eksctl create cluster --name development --instance-selector-vcpus=2 --instance-selector-memory=4 --dry-run
 
 apiVersion: eksctl.io/v1alpha5
@@ -91,7 +91,7 @@ managedNodeGroups:
 
 The generated ClusterConfig can then be passed to `eksctl create cluster`:
 
-```
+```console
 eksctl create cluster -f generated-cluster.yaml
 ```
 
@@ -99,7 +99,7 @@ The `instanceSelector` field representing the CLI options will also be added to 
 
 When a ClusterConfig file is passed with `--dry-run`, eksctl will output a ClusterConfig file containing the same set of nodegroups after expanding each nodegroup’s instance selector resource criteria.
 
-```
+```yaml
 # instance-selector-cluster.yaml
 ---
 apiVersion: eksctl.io/v1alpha5
@@ -123,7 +123,7 @@ managedNodeGroups:
     cpuArchitecture: x86_64 # default value
 ```
 
-```
+```console
 eksctl create cluster -f instance-selector-cluster.yaml --dry-run
 
 apiVersion: eksctl.io/v1alpha5

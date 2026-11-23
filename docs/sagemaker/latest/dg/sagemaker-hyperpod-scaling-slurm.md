@@ -30,7 +30,7 @@ With continuous provisioning enabled, you can initiate multiple scaling operatio
 
 Because scaling requests return as soon as HyperPod accepts them, you can track each request using the cluster operation it creates. With the operation, you can see whether HyperPod is still working on the request or has finished, what the request changed on each instance group, and whether a newer request took over. The instance and instance group events that HyperPod records while working on the request carry the operation's ID. You can list only that request's events to find the reason if an instance group doesn't reach its target.
 
-```
+```bash
 aws sagemaker list-cluster-operations --cluster-name my-slurm-cluster --status InProgress
 ```
 
@@ -100,7 +100,7 @@ Prepare a lifecycle configuration script and upload it to an Amazon S3 bucket th
 
 Prepare a `CreateCluster` API request file in JSON format. Set `NodeProvisioningMode` to `Continuous` and provide Slurm topology information in each instance group's `SlurmConfig` field.
 
-```
+```json
 // create_cluster.json
 {
     "ClusterName": "my-training-cluster",
@@ -166,7 +166,7 @@ aws sagemaker create-cluster \
 
 This returns the ARN of the new cluster.
 
-```
+```json
 {
     "ClusterArn": "arn:aws:sagemaker:us-west-2:111122223333:cluster/abcde12345"
 }

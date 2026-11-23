@@ -188,7 +188,7 @@ Having an undo button can evade disasters. It is a best practice to test deploym
 
 You can use Deployments to update a running application. This is typically done by updating the container image. You can use `kubectl` to update a Deployment like this:
 
-```
+```bash
 kubectl --record deployment.apps/nginx-deployment set image nginx-deployment nginx=nginx:1.16.1
 ```
 

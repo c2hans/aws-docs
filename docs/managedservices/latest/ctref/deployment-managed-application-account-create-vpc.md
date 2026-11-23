@@ -150,7 +150,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-managed-application-account-create-vpc-ex-min"></a>
 
-```
+```json
 {
   "VpcName": "TestVPC",
   "Parameters": {
@@ -165,7 +165,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-managed-application-account-create-vpc-ex-max"></a>
 
-```
+```json
 {
   "VpcName": "TestVPC",
   "Parameters": {

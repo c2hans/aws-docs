@@ -12,4 +12,5 @@ After you have followed the instructions in [Enable Amazon Braket ](braket-enabl
 **Topics**
 + [Enable Amazon Braket](braket-enable-overview.md)
 + [Create an Amazon Braket notebook instance](braket-get-started-create-notebook.md)
++ [Use agents in Amazon Braket notebook instances](braket-notebook-agents.md)
 + [Create a Braket notebook instance using CloudFormation](braket-cloudformation.md)

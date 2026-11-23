@@ -22,6 +22,6 @@ aws pinpoint delete-event-stream --application-id {{application-id}}
 
 Use the [`deleteEventStream`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/pinpoint/model/DeleteEventStreamRequest.html) method of the Amazon Pinpoint client:
 
-```
+```java
 pinClient.deleteEventStream(new DeleteEventStreamRequest().withApplicationId(appId));
 ```

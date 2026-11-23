@@ -10,7 +10,7 @@ You can use the `async/await` pattern in your calls to the AWS SDK for JavaScrip
 
 The following example uses async/await to list all of your Amazon DynamoDB tables in `us-west-2`.
 
-```
+```javascript
 var AWS = require("aws-sdk");
 //Create an Amazon DynamoDB client service object.
 dbClient = new AWS.DynamoDB({ region: "us-west-2" });

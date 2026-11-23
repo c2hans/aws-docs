@@ -66,7 +66,7 @@ The structure of the output event flow is described in this section.
 ### 1. UsageEvent
 <a name="sonic-usage-event"></a>
 
-```
+```json
 "event": {
     "usageEvent": {
         "completionId": "string", // unique identifier for completion
@@ -104,7 +104,7 @@ The structure of the output event flow is described in this section.
 ### 2. CompleteStartEvent
 <a name="sonic-completion-start-event"></a>
 
-```
+```json
 "event": {
     "completionStart": {
         "sessionId": "string", // unique identifier
@@ -120,7 +120,7 @@ The structure of the output event flow is described in this section.
 #### ContentStart
 <a name="sonic-text-output-content-start"></a>
 
-```
+```json
 "event": {
     "contentStart": {
         "additionalModelFields": "{\"generationStage\":\"FINAL\"}" | "{\"generationStage\":\"SPECULATIVE\"}",
@@ -140,7 +140,7 @@ The structure of the output event flow is described in this section.
 #### TextOutput
 <a name="sonic-text-output"></a>
 
-```
+```json
 "event": {
     "textOutput": {
         "sessionId": "string", // unique identifier
@@ -155,7 +155,7 @@ The structure of the output event flow is described in this section.
 #### ContentEnd
 <a name="sonic-text-output-content-end"></a>
 
-```
+```json
 "event": {
     "contentEnd": {
         "sessionId": "string", // unique identifier
@@ -174,7 +174,7 @@ The structure of the output event flow is described in this section.
 #### ContentStart
 <a name="sonic-tool-use-content-start"></a>
 
-```
+```json
 "event": {
     "contentStart": {
         "sessionId": "string", // unique identifier
@@ -193,7 +193,7 @@ The structure of the output event flow is described in this section.
 #### ToolUse
 <a name="sonic-tool-use-event"></a>
 
-```
+```json
 "event": {
     "toolUse": {
         "sessionId": "string", // unique identifier
@@ -210,7 +210,7 @@ The structure of the output event flow is described in this section.
 #### ContentEnd
 <a name="sonic-tool-use-content-end"></a>
 
-```
+```json
 "event": {
     "contentEnd": {
         "sessionId": "string", // unique identifier
@@ -229,7 +229,7 @@ The structure of the output event flow is described in this section.
 #### ContentStart
 <a name="sonic-audio-output-content-start"></a>
 
-```
+```json
 "event": {
     "contentStart": {
         "sessionId": "string", // unique identifier
@@ -252,7 +252,7 @@ The structure of the output event flow is described in this section.
 #### AudioOutput
 <a name="sonic-audio-output-event"></a>
 
-```
+```json
 "event": {
     "audioOutput": {
         "sessionId": "string", // unique identifier
@@ -267,7 +267,7 @@ The structure of the output event flow is described in this section.
 #### ContentEnd
 <a name="sonic-audio-output-content-end"></a>
 
-```
+```json
 "event": {
     "contentEnd": {
         "sessionId": "string", // unique identifier
@@ -283,7 +283,7 @@ The structure of the output event flow is described in this section.
 ### 6. CompletionEndEvent
 <a name="sonic-completion-end-event"></a>
 
-```
+```json
 "event": {
     "completionEnd": {
         "sessionId": "string", // unique identifier

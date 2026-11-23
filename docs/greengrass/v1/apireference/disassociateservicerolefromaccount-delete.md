@@ -13,7 +13,7 @@ URI: `DELETE /greengrass/servicerole`
 ## CLI:
 <a name="disassociateservicerolefromaccount-delete-cli"></a>
 
-```
+```bash
 aws greengrass disassociate-service-role-from-account  \
   [--cli-input-json <value>] \
   [--generate-cli-skeleton]
@@ -26,7 +26,7 @@ aws greengrass disassociate-service-role-from-account  \
 Success.
  [ DisassociateServiceRoleFromAccountResponse](definitions-disassociateservicerolefromaccountresponse.md)
 
-```
+```json
 {
 "DisassociatedAt": "string"
 }
@@ -41,7 +41,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

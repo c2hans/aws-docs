@@ -15,7 +15,7 @@ produces: application/json
 ## CLI:
 <a name="updatethingruntimeconfiguration-put-cli"></a>
 
-```
+```bash
 aws greengrass update-thing-runtime-configuration \
     --thing-name <value> \
     [--telemetry-configuration <value>]  \
@@ -25,7 +25,7 @@ aws greengrass update-thing-runtime-configuration \
 
 cli-input-json format:
 
-```
+```json
 {
   "TelemetryConfiguration": {
     "Telemetry": "On|Off"
@@ -41,7 +41,7 @@ cli-input-json format:
 The configuration settings to run telemetry.
 where used: body; required: true
 
-```
+```json
 {
   "TelemetryConfiguration": {
     "Telemetry": "On|Off"
@@ -73,7 +73,7 @@ type: string
 200 response
  [ Empty](definitions-empty.md)
 
-```
+```json
 {
 }
 ```
@@ -85,7 +85,7 @@ type: object
 400 response
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
   "Message": "string",
   "ErrorDetails": [
@@ -120,7 +120,7 @@ type: string
 500 response
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
   "Message": "string",
   "ErrorDetails": [

@@ -8,7 +8,7 @@ You can use POJOs with fluent setters in the DynamoDB mapping API for V1 and wit
 
 For example, the following POJO returns a `Customer` instance from the `setName` method:
 
-```
+```java
 // V1
 
 @DynamoDBTable(tableName ="Customer")
@@ -24,7 +24,7 @@ public class Customer{
 
 However, if you use a version of V2 prior to 2.30.29, `setName` returns a `Customer` instance with a `name` value of `null`.
 
-```
+```java
 // V2 prior to version 2.30.29.
 
 @DynamoDbBean
@@ -38,7 +38,7 @@ public class Customer{
 }
 ```
 
-```
+```java
 // Available in V2 since version 2.30.29.
 
 @DynamoDbBean

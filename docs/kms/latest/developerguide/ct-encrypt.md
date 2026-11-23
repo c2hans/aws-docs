@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-encrypt.htm
 
 The following example shows an AWS CloudTrail log entry for the [Encrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html) operation.
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

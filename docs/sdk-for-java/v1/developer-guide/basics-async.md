@@ -19,7 +19,7 @@ Call the `Future` `isDone()` method to see if the service has provided a respons
 
 Here is an example of an asynchronous operation that calls a Lambda function, receiving a `Future` that can hold an [InvokeResult](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/lambda/model/InvokeResult.html) object. The `InvokeResult` object is retrieved only after `isDone()` is `true`.
 
-```
+```java
 import com.amazonaws.services.lambda.AWSLambdaAsyncClient;
 import com.amazonaws.services.lambda.model.InvokeRequest;
 import com.amazonaws.services.lambda.model.InvokeResult;
@@ -82,7 +82,7 @@ In addition to using the Java `Future` object to monitor the status of asynchron
 
 The major advantage of the callback interface approach is that it frees you from having to poll the `Future` object to find out when the request has completed. Instead, your code can immediately start its next activity, and rely on the SDK to call your handler at the right time.
 
-```
+```java
 import com.amazonaws.services.lambda.AWSLambdaAsync;
 import com.amazonaws.services.lambda.AWSLambdaAsyncClientBuilder;
 import com.amazonaws.services.lambda.model.InvokeRequest;

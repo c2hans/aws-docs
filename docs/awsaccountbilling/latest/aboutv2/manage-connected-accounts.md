@@ -30,7 +30,7 @@ Your IAM administrator grants the role or user base permissions to create and ma
 
 In the following policy, replace {{111122223333}} with your AWS account ID. The `payments:CreateConnectedAccount` and `payments:ListConnectedAccounts` actions don't support resource-level permissions. The wildcard resource is required for those actions. The policy scopes the `payments:GetConnectedAccount` and `payments:DeleteConnectedAccount` actions to connected accounts in your AWS account.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

@@ -19,7 +19,7 @@ On the console pages for creating or editing launch templates, this option is fo
 ------
 #### [ YAML ]
 
-```
+```yaml
 Monitoring:
     Enabled: True
 ```
@@ -27,7 +27,7 @@ Monitoring:
 ------
 #### [ JSON ]
 
-```
+```json
 {"Monitoring": {"Enabled": "True"}}
 ```
 
@@ -48,7 +48,7 @@ On the console pages for creating or editing launch templates, this option is fo
 ------
 #### [ YAML ]
 
-```
+```yaml
 MetadataOptions:
   HttpEndpoint: enabled
   HttpTokens: required
@@ -58,7 +58,7 @@ MetadataOptions:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "MetadataOptions": {
         "HttpEndpoint": "enabled",

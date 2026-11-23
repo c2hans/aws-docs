@@ -8,7 +8,7 @@ Security is the highest priority at AWS. As part of the AWS Cloud shared respons
 
 If you suspect that a principal has accessed a space without authorization, you can take the following actions:
 
-1. **Find out what happened.** Review the space's CloudTrail events to see which operations the principal called, on which space, and when. Data events for the event and memory operations must be enabled on your trail to be recorded. For more information, see [Logging Amazon OpenSearch Memory API calls with AWS CloudTrail](memory-monitoring.md).
+1. **Find out what happened.** Review the space's CloudTrail events to see which operations the principal called, on which space, and when. Data events for the event and memory operations must be enabled on your trail to be recorded. For more information, see [Monitoring Amazon OpenSearch Memory with AWS CloudTrail](memory-cloudtrail.md).
 
 1. **Stop the access.** Remove or restrict the principal's IAM permissions. For a space that uses a customer managed key, you can also remove the principal's access to the key, which makes every request from that principal fail immediately.
 

@@ -13,7 +13,7 @@ The following code examples show how to use `GetRecommendations`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 Get a list of recommended items.
 
-```
+```java
     public static void getRecs(PersonalizeRuntimeClient personalizeRuntimeClient, String campaignArn, String userId) {
 
         try {
@@ -39,7 +39,7 @@ Get a list of recommended items.
 ```
 Get a list of recommended items from a recommender created in a domain dataset group.
 
-```
+```java
     public static void getRecs(PersonalizeRuntimeClient personalizeRuntimeClient, String recommenderArn,
             String userId) {
 
@@ -66,7 +66,7 @@ Get a list of recommended items from a recommender created in a domain dataset g
 ```
 Use a filter when requesting recommendations.
 
-```
+```java
     public static void getFilteredRecs(PersonalizeRuntimeClient personalizeRuntimeClient,
             String campaignArn,
             String userId,
@@ -116,7 +116,7 @@ Use a filter when requesting recommendations.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { GetRecommendationsCommand } from "@aws-sdk/client-personalize-runtime";
 
@@ -146,7 +146,7 @@ run();
 ```
 Get recommendation with a filter (custom dataset group).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { GetRecommendationsCommand } from "@aws-sdk/client-personalize-runtime";
 import { personalizeRuntimeClient } from "./libs/personalizeClients.js";
@@ -175,7 +175,7 @@ run();
 ```
 Get filtered recommendations from a recommender created in a domain dataset group.
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { GetRecommendationsCommand } from "@aws-sdk/client-personalize-runtime";
 import { personalizeRuntimeClient } from "./libs/personalizeClients.js";

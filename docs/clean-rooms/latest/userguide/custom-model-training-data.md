@@ -142,7 +142,7 @@ This service role has permissions to the tables. The service role is assumable o
 
    Run the following code with your specific parameters.
 
-   ```
+   ```Python
    import boto3
    acr_client= boto3.client('cleanrooms')
 

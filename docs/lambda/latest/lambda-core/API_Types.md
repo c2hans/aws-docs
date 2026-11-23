@@ -11,6 +11,7 @@ The order of each element in a data type structure is not guaranteed. Applicatio
 
 The following data types are supported:
 +  [Compatibility](API_Compatibility.md)
++  [ElasticIpConfiguration](API_ElasticIpConfiguration.md)
 +  [NetworkConnectorConfiguration](API_NetworkConnectorConfiguration.md)
 +  [NetworkConnectorSummary](API_NetworkConnectorSummary.md)
 +  [NetworkConnectorVersionSummary](API_NetworkConnectorVersionSummary.md)

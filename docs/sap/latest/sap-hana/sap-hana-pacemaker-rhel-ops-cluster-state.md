@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-r
 
 There are multiple operating system commands that can be run as root or as a user with appropriate permissions. The commands enable you to get an overview of the status of the cluster and its services.
 
-```
+```console
 # pcs status --full
 ```
 
@@ -20,7 +20,7 @@ Note: Omit the `--full` for a more concise output if you do not need to view the
 
 Sample output:
 
-```
+```console
 Cluster name: hacluster
 Cluster Summary:
   * Stack: corosync

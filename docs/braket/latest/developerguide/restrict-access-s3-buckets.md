@@ -13,7 +13,7 @@ The following example restricts permissions to retrieve and place objects into a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -21,9 +21,12 @@ Required: Yes
 
  ** sourceId **   <a name="AWSMarketplaceService-Type-marketplace-discovery_ReviewSourceSummary-sourceId"></a>
 The machine-readable identifier of the review source. This field has one of the following values:
-+  `AWS_MARKETPLACE` – The reviews come from AWS Marketplace.
-+  `G2` – The reviews come from G2.
-+  `PEERSPOT` – The reviews come from PeerSpot.
+AWS\_MARKETPLACE
+The reviews come from AWS Marketplace.
+G2
+The reviews come from G2.
+PEERSPOT
+The reviews come from PeerSpot.
 Type: String
 Valid Values: `AWS_MARKETPLACE | G2 | PEERSPOT`
 Required: Yes
@@ -45,7 +48,7 @@ Valid Range: Minimum value of 0.
 Required: Yes
 
  ** sourceUrl **   <a name="AWSMarketplaceService-Type-marketplace-discovery_ReviewSourceSummary-sourceUrl"></a>
-The URL where the reviews can be accessed at the source.
+The URL where you can read the reviews at their source.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `https?://.*`

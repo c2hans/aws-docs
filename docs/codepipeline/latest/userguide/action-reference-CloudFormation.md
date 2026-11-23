@@ -155,7 +155,7 @@ When CodePipeline runs the action, the CodePipeline service role policy requires
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -218,7 +218,7 @@ Note that the `cloudformation:DescribeStackEvents` permission is optional. It al
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: ExecuteChangeSet
 ActionTypeId:
   Category: Deploy
@@ -243,7 +243,7 @@ InputArtifacts:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "ExecuteChangeSet",
     "ActionTypeId": {

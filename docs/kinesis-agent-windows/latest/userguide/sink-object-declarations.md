@@ -73,7 +73,7 @@ The `KinesisStream` sink type streams log records and events to the Kinesis Data
 
 The following is an example Kinesis Data Streams sink declaration:
 
-```
+```json
 {
     "Id": "TestKinesisStreamSink",
     "SinkType": "KinesisStream",
@@ -105,7 +105,7 @@ The `KinesisFirehose` sink type streams log records and events to the Firehose s
 
 The following is an example Firehose sink declaration:
 
-```
+```json
 {
    "Id": "TestKinesisFirehoseSink",
    "SinkType": "KinesisFirehose",
@@ -141,7 +141,7 @@ The `CloudWatch` sink type streams metrics to the CloudWatch service. You can vi
 
 The following is an example `CloudWatch` sink declaration:
 
-```
+```json
 {
    "Id": "CloudWatchSink",
    "SinkType": "CloudWatch"
@@ -172,7 +172,7 @@ The `CloudWatchLogs` sink type streams log records and events to Amazon CloudWat
 
 The following is an example CloudWatch Logs sink declaration:
 
-```
+```json
 {
    "Id": "MyCloudWatchLogsSink",
    "SinkType": "CloudWatchLogs",
@@ -217,7 +217,7 @@ This sink type supports text decoration attributes. For more information, see [C
 
 An example `FileSystem` sink type configuration is shown in the following example.
 
-```
+```json
 {
 	   "Id": "LocalFileSink",
 	   "SinkType": "FileSystem",
@@ -254,7 +254,7 @@ By acquiring a lock on the destination file and preventing writes to it, you can
 
 The following example shows a `FileSystem` configuration with simulation attributes.
 
-```
+```json
 {
 	   "Id": "LocalFileSink",
 	   "SinkType": "FileSystem",
@@ -332,7 +332,7 @@ Attach the appropriate policies that follow to the IAM user or role that Kinesis
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -361,7 +361,7 @@ To limit authorization to a specific Region, account, or stream name, replace th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -380,7 +380,7 @@ To limit authorization to a specific Region, account, or stream name, replace th
 
 ------
 
-To limit authorization to a specific Region, account, or delivery stream name, replace the appropriate asterisks in the ARN with specific values. For more information, see [Controlling Access with Amazon Kinesis Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/controlling-access.html) in the *Amazon Data Firehose Developer Guide*.
+To limit authorization to a specific Region, account, or delivery stream name, replace the appropriate asterisks in the ARN with specific values. For more information, see [Controlling Access with Amazon Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/controlling-access.html) in the *Amazon Data Firehose Developer Guide*.
 
 #### CloudWatch
 <a name="minimum-permissions-cloud-watch"></a>
@@ -390,7 +390,7 @@ To limit authorization to a specific Region, account, or delivery stream name, r
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -416,7 +416,7 @@ For more information, see [Overview of Managing Access Permissions to Your Cloud
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -452,7 +452,7 @@ To restrict access to a specific Region, account, log group, or log stream, repl
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -497,7 +497,7 @@ Using variable expansion with the `ec2tag` variable prefix requires the `ec2:Des
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -524,7 +524,7 @@ Because the AWS .net SDK does not pick up new credentials automatically, we prov
 
 You can use the `CredentialRef` attribute of any AWS sync configuration to reference a `Credentials` definition where the `CredentialType` attribute is set to `ProfileRefreshingAWSCredentialProvider` as shown in the following example.
 
-```
+```json
 {
     "Sinks": [{
 		      "Id": "myCloudWatchLogsSink",
@@ -572,7 +572,7 @@ Use this key-value pair when no `Format` is specified in the sink declaration. T
 `ObjectDecoration`
 Use this key-value pair when `Format` is specified in the sink declaration to add additional data before record serialization. For example, suppose that an `ObjectDecoration` of `"ComputerName={ComputerName};DT={timestamp:yyyy-MM-dd HH:mm:ss}"` is provided for a sink that specifies JSON `Format`. The resulting JSON streamed to the AWS service associated with the sink type includes the following key-value pairs in addition to the original data from the source:
 
-```
+```json
 {
     ComputerName: "MyComputer2",
     DT: "2017-10-17 21:09:04"
@@ -583,19 +583,19 @@ For an example of using `ObjectDecoration`, see [Tutorial: Stream JSON Log Files
 `ObjectDecorationEx`
 Specifies an expression, which allows for more flexible data extraction and formatting as compared to `ObjectDecoration`. This field can be used when the format of the sink is `json`. The expression syntax is shown in the following.
 
-```
+```json
 "ObjectDecorationEx": "{{attribute1}}={{{expression1}}};{{attribute2}}={{{expression2}}};{{attribute3}}={{{expression3}}}(;...)"
 ```
 For example, the following `ObjectDecorationEx` attribute:
 
-```
+```json
 "ObjectDecorationEx": "host={env:ComputerName};message={upper(_record)};time={format(_timestamp, 'yyyyMMdd')}"
 ```
 Transforms the literal record:
 `System log message`
 Into a JSON object as follows, with the values returned by the expressions:
 
-```
+```json
 {
     "host": "{{EC2AMAZ-1234}}",
     "message": "SYSTEM LOG MESSAGE",
@@ -607,12 +607,12 @@ For more information about formulating expressions, see [Tips for Writing Expres
 `TextDecorationEx`
 Specifies an expression, which allows for more flexible data extraction and formatting as compared to `TextDecoration`, as shown in the following example.
 
-```
+```json
 "TextDecorationEx": "Message '{lower(_record)}' at {format(_timestamp, 'yyyy-MM-dd')}"
 ```
 You can use `TextDecorationEx` to compose JSON objects. Use ‘@{’ to escape open curly brace, as shown in the following example.
 
-```
+```json
 "TextDecorationEx": "@{ \"var\": \"{upper($myvar1)}\" }"
 ```
 
@@ -637,7 +637,7 @@ An expression can be any of the following:
 + A constant expression, for example, `'hello'`, `1`, `1.21`, `null`, `true`, `false`.
 + An invocation expression that calls a function, as shown in the following example.
 
-  ```
+  ```DOS
   regexp_extract('Info: MID 118667291 ICID 197973259 RID 0 To: <jd@acme.com>', 'To: (\\\\S+)', 1)
   ```
 
@@ -651,7 +651,7 @@ Two backslashes are required to escape special characters.
 
 Function invocations can be nested, as shown in the following example.
 
-```
+```json
 format(date(2018, 11, 28), 'MMddyyyy')
 ```
 
@@ -682,7 +682,7 @@ The raw text representation of the event.
 
 Kinesis Agent for Windows supports the following built-in functions. If any of the arguments are `NULL` and the function is not designed to handle `NULL`, a `NULL` object is returned.
 
-```
+```java
 //string functions
 int length(string input)
 string lower(string input)
@@ -730,7 +730,7 @@ If the prefix isn't specified, if there is an environment variable with the same
 
 The following are examples of valid key-value pairs using variable references:
 
-```
+```json
 "LogStream": "LogStream_{instance_id}"
 "LogStream": "LogStream_{hostname}"
 "LogStream": "LogStream_{ec2:local-hostname}"
@@ -740,7 +740,7 @@ The following are examples of valid key-value pairs using variable references:
 
 The `CloudWatchLogs` sink declarations support a special format timestamp variable that allows the timestamp of the original log or event record from the source to alter the name of the log stream. The format is `{timestamp:``timeformat``}`. See the following example:
 
-```
+```json
 "LogStream": "LogStream_{timestamp:yyyyMMdd}"
 ```
 
@@ -774,7 +774,7 @@ To configure a proxy for all the Kinesis Agent for Windows sink types that acces
 
 The following example shows a sink configuration that uses the `Region` environment variable for the value of the `Region` attribute key-value pair. For `RoleARN`, it specifies the EC2 tag key `MyRoleARN`, which evaluates to the value associated with that key.
 
-```
+```json
 "Id": "myCloudWatchLogsSink",
 "SinkType": "CloudWatchLogs",
 "LogGroup": "EC2Logs",
@@ -797,7 +797,7 @@ You can specify a VPC endpoint in the sink configuration for `CloudWatchLogs`, `
 
 You specify the VPC endpoint using the `ServiceURL` property as shown in the following example of a `CloudWatchLogs` sink configuration. Set the value of `ServiceURL` to the value shown on the **VPC endpoint details** tab using the Amazon VPC console.
 
-```
+```json
 {
     "Id": "myCloudWatchLogsSink",
     "SinkType": "CloudWatchLogs",
@@ -816,7 +816,7 @@ If you are currently using the agent with a proxy server, you do not need to cha
 
 You can use the `ProxyHost` and `ProxyPort` properties to configure an alternate proxy as shown in the following example.
 
-```
+```json
 {
     "Id": "myCloudWatchLogsSink",
     "SinkType": "CloudWatchLogs",

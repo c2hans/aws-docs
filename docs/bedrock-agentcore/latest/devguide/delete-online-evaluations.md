@@ -19,7 +19,7 @@ The following code samples demonstrate how to delete online evaluation configura
 
    If you added the configuration with `agentcore add online-eval`, remove it from the project and deploy:
 
-   ```
+   ```bash
    agentcore remove online-eval --name <ONLINE_EVAL_NAME>
    agentcore deploy
    ```
@@ -28,13 +28,13 @@ The following code samples demonstrate how to delete online evaluation configura
 
    To delete a configuration that is not part of a project, delete it by ID:
 
-   ```
+   ```bash
    agentcore eval online-eval delete --id <ONLINE_EVAL_ID>
    ```
 
 1.
 
-   ```
+   ```python
    from bedrock_agentcore_starter_toolkit import Evaluation
 
    # Initialize the evaluation client
@@ -50,7 +50,7 @@ The following code samples demonstrate how to delete online evaluation configura
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client('bedrock-agentcore-control')
@@ -62,7 +62,7 @@ The following code samples demonstrate how to delete online evaluation configura
 
 1.
 
-   ```
+   ```bash
    aws bedrock-agentcore-control delete-online-evaluation-config \
        --online-evaluation-config-id your_config_id
    ```

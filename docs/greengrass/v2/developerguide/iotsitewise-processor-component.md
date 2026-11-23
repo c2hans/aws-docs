@@ -139,14 +139,14 @@ This component uses the following log file.
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.iot.SiteWiseEdgeProcessor.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\aws.iot.SiteWiseEdgeProcessor.log -Tail 10 -Wait
   ```
 

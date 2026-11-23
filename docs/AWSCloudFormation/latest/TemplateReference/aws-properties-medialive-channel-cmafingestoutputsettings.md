@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Channel CmafIngestOutputSettings
-<a name="aws-properties-medialive-channel-cmafingestoutputsettings"></a>
 
 Cmaf Ingest Output Settings
 
@@ -17,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-cmafingestoutputsettings-syntax.json"></a>
 
-```
+```json
 {
   "[NameModifier](#cfn-medialive-channel-cmafingestoutputsettings-namemodifier)" : {{String}}
 }
@@ -26,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-cmafingestoutputsettings-syntax.yaml"></a>
 
-```
+```yaml
   [NameModifier](#cfn-medialive-channel-cmafingestoutputsettings-namemodifier): {{String}}
 ```
 

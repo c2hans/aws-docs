@@ -44,7 +44,7 @@ For more information, see [View information about maintenance windows (AWS CLI)]
 **Tools for PowerShell V4**
 **Example 1: This example gets details about a maintenance window.**
 
-```
+```powershell
 Get-SSMMaintenanceWindow -WindowId "mw-03eb9db42890fb82d"
 ```
 **Output:**
@@ -65,7 +65,7 @@ WindowId                 : mw-03eb9db42890fb82d
 **Tools for PowerShell V5**
 **Example 1: This example gets details about a maintenance window.**
 
-```
+```powershell
 Get-SSMMaintenanceWindow -WindowId "mw-03eb9db42890fb82d"
 ```
 **Output:**

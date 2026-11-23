@@ -24,7 +24,7 @@ The following role can only be used to access one compute environment. The job n
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -62,7 +62,7 @@ The following role can be used to access multiple compute environments. The job 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

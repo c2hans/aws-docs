@@ -14,13 +14,13 @@ Setup and configuration instructions for each web server are different, so this 
 
     **Windows example:**
 
-   ```
+   ```bash
    aws s3 cp s3://migration-factory-<environment name>-<AWS Account Id>-front-end/ C:\inetpub\wwwroot --recursive
    ```
 
     **Linux example:**
 
-   ```
+   ```bash
    aws s3 cp s3://migration-factory-<environment name>-<AWS Account Id>-front-end/ /var/www/html --recursive
    ```
 **Note**

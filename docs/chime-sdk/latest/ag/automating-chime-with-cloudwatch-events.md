@@ -40,7 +40,7 @@ Amazon Chime SDK Voice Connectors send this event when media streaming to Kinesi
 **Example Event data**
 The following is example data for this event.
 
-```
+```json
 {
     "version": "0",
     "id": "12345678-1234-1234-1234-111122223333",
@@ -90,7 +90,7 @@ Amazon Chime SDK Voice Connectors send this event when media streaming to Kinesi
 **Example Event data**
 The following is example data for this event.
 
-```
+```json
 {
     "version": "0",
     "id": "{{12345678-1234-1234-1234-111122223333}}",
@@ -141,7 +141,7 @@ Amazon Chime SDK Voice Connectors send this event when media streaming to Kinesi
 **Example Event data**
 The following is example data for this event.
 
-```
+```json
 {
     "version": "0",
     "id": "{{12345678-1234-1234-1234-111122223333}}",
@@ -179,7 +179,7 @@ Amazon Chime SDK Voice Connectors send this event when media streaming to Kinesi
 **Example Event data**
 The following is example data for this event.
 
-```
+```json
 {
   "version": "0",
   "id": "12345678-1234-1234-1234-111122223333",

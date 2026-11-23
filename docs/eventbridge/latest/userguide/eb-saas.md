@@ -13,6 +13,8 @@ To receive partner events on a Custom Event Bus, create an event source that nam
 
  The following video covers SaaS integrations with EventBridge:
 
+[![AWS Videos](https://img.youtube.com/vi/zxFrM6z8Wdg/0.jpg)](https://www.youtube.com/watch?v=zxFrM6z8Wdg)
+
 **Topics**
 + [Supported SaaS partner integrations](#eb-supported-integrations)
 + [Configuring Amazon EventBridge to receive events from a SaaS integration](#eb-saas-integration)

@@ -34,7 +34,7 @@ You can start a new bulk analysis job by submitting a manifest file and calling 
 
 Use the following command to call the [StartMediaAnalysisJob](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartMediaAnalysisJob.html) operation for analysis with the DetectModerationLabels operation:
 
-```
+```bash
 # Requests
 # Starting DetectModerationLabels job with default settings
 aws rekognition start-media-analysis-job \
@@ -45,7 +45,7 @@ aws rekognition start-media-analysis-job \
 
 You can get information about a given job, such as the Amazon S3 path of the bucket where results and summary files are stored, by using the [GetMediaAnalysisJob](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetMediaAnalysisJob.html) operation. You provide it with a job ID returned by StartMediaAnalysisJob or ListMediaAnalysisJob. Details about individual jobs are only retained for one year.
 
-```
+```bash
 # Request
 aws rekognition get-media-analysis-job \
 --job-id {{customer-job-id}}
@@ -53,7 +53,7 @@ aws rekognition get-media-analysis-job \
 
 You can list all of your bulk analyses by using the [ListMediaAnalysisJobs](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListMediaAnalysisJobs.html) job operation, which returns pages of jobs. With the `max-results` argument, you can specify the maximum number of jobs to return per page, limited to the value of `max-results`. A maximum of 100 results are returned per page. Details about individual jobs are only retained for one year.
 
-```
+```bash
 # Request
 # Specify number of jobs to return per page, limited to max-results.
 aws rekognition list-media-analysis-jobs --max-results 1

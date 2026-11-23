@@ -45,7 +45,7 @@ You can enable cross-zone load balancing for your Classic Load Balancer at any t
 
    The following is an example response:
 
-   ```
+   ```json
    {
       "LoadBalancerAttributes": {
         "CrossZoneLoadBalancing": {
@@ -64,7 +64,7 @@ You can enable cross-zone load balancing for your Classic Load Balancer at any t
 
    The following is an example response:
 
-   ```
+   ```json
    {
        "LoadBalancerAttributes": {
            "ConnectionDraining": {
@@ -115,7 +115,7 @@ To disable cross-zone load balancing, set the `CrossZoneLoadBalancing` attribute
 
    The following is an example response:
 
-   ```
+   ```json
    {
       "LoadBalancerAttributes": {
         "CrossZoneLoadBalancing": {
@@ -134,7 +134,7 @@ To disable cross-zone load balancing, set the `CrossZoneLoadBalancing` attribute
 
    The following is an example response:
 
-   ```
+   ```json
    {
        "LoadBalancerAttributes": {
            "ConnectionDraining": {

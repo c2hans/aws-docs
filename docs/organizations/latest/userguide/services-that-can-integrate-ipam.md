@@ -64,7 +64,7 @@ Use the following AWS CLI commands or API operations to disable trusted service 
 
   Run the following command to disable Amazon VPC IP Address Manager (IPAM) as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations disable-aws-service-access \
       --service-principal ipam.amazonaws.com
   ```

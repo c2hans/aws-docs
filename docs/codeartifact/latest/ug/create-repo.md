@@ -71,7 +71,7 @@ aws codeartifact create-repository --domain {{my_domain}} --domain-owner {{11112
 
 Example output:
 
-```
+```json
 {
     "repository": {
         "name": "{{my_repo}}",
@@ -109,7 +109,7 @@ aws codeartifact create-repository --domain {{my_domain}} --domain-owner {{11112
 
 Example output:
 
-```
+```json
 {
     "repository": {
         "name": "{{my_repo}}",

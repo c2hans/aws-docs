@@ -39,7 +39,7 @@ For more information, see [Control access to VPC endpoints using endpoint polici
 **Example: VPC endpoint policy for specific AWS FIS actions**
 The following VPC endpoint policy grants access to the listed AWS FIS actions on all resources to all principals.
 
-```
+```json
 {
    "Statement":[
       {
@@ -60,7 +60,7 @@ The following VPC endpoint policy grants access to the listed AWS FIS actions on
 **Example: VPC endpoint policy that denies access from a specific AWS account**
 The following VPC endpoint policy denies the specified AWS account access to all actions and resources, but grants all other AWS accounts access to all actions and resources.
 
-```
+```json
 {
    "Statement":[
       {

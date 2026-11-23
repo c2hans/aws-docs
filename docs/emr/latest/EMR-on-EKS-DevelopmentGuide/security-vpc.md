@@ -39,7 +39,7 @@ For more information, see [Controlling Access to Services with VPC Endpoints](ht
 **Example VPC Endpoint Policy to Deny All Access From a Specified AWS Account**
 The following VPC endpoint policy denies AWS account {{123456789012}} all access to resources using the endpoint.
 
-```
+```JSON
 {
     "Statement": [
         {
@@ -65,7 +65,7 @@ The following VPC endpoint policy denies AWS account {{123456789012}} all access
 **Example VPC Endpoint Policy to Allow VPC Access Only to a Specified IAM Principal (User)**
 The following VPC endpoint policy allows full access only to the IAM user {{lijuan}} in AWS account {{123456789012}}. All other IAM principals are denied access using the endpoint.
 
-```
+```JSON
 {
     "Statement": [
         {
@@ -86,7 +86,7 @@ The following VPC endpoint policy allows full access only to the IAM user {{liju
 The following VPC endpoint policy allows only AWS account {{123456789012}} to perform the specified Amazon EMR on EKS actions.
 The actions specified provide the equivalent of read-only access for Amazon EMR on EKS. All other actions on the VPC are denied for the specified account. All other accounts are denied any access. For a list of Amazon EMR on EKS actions, see [Actions, Resources, and Condition Keys for Amazon EMR on EKS](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonemroneksemrcontainers.html).
 
-```
+```JSON
 {
     "Statement": [
         {
@@ -112,7 +112,7 @@ The actions specified provide the equivalent of read-only access for Amazon EMR 
 **Example VPC Endpoint Policy Denying Access to a Specified Virtual Cluster**
 The following VPC endpoint policy allows full access for all accounts and principals, but denies any access for AWS account {{123456789012}} to actions performed on the virtual cluster with cluster ID {{A1B2CD34EF5G}}. Other Amazon EMR on EKS actions that don't support resource-level permissions for virtual clusters are still allowed. For a list of Amazon EMR on EKS actions and their corresponding resource type, see [Actions, Resources, and Condition Keys for Amazon EMR on EKS](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonemroneksemrcontainers.html)- in the *AWS Identity and Access Management User Guide*.
 
-```
+```JSON
 {
     "Statement": [
         {

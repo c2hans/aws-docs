@@ -78,7 +78,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of StopModelInvocationJob.
 
-```
+```json
 POST /model-invocation-job/BATCHJOB1234/stop HTTP/1.1
 ```
 

@@ -44,7 +44,7 @@ The following example AWS Identity and Access Management (IAM) policy provides p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -92,7 +92,7 @@ The following example IAM policy provides permissions for evaluating organizatio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -183,7 +183,7 @@ If the account associated with the identity used to call the `StartReportCreatio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

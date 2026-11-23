@@ -41,7 +41,7 @@ When you use the `aws_cryptosdk_session_new_from_keyring_2` and `aws_cryptosdk_s
 
 For a complete example, see [string.cpp](https://github.com/aws/aws-encryption-sdk-c/blob/master/examples/string.cpp).
 
-```
+```cpp
 /* Load error strings for debugging */
 aws_cryptosdk_load_error_strings();
 
@@ -154,7 +154,7 @@ In versions 2.1.*x* and later, the `--commitment-policy` parameter is optional a
 
 This example sets the commitment policy. It also uses the `--wrapping-keys` parameter that replaces the `--master-keys` parameter beginning in version 1.8.*x*. For details, see [Updating AWS KMS master key providers](migrate-mkps-v2.md). For complete examples, see [Examples of the AWS Encryption CLI](crypto-cli-examples.md).
 
-```
+```bash
 \\ To run this example, replace the fictitious key ARN with a valid value.
 $ keyArn={{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}
 
@@ -188,7 +188,7 @@ In the latest 1.*x* versions, the `Builder` class requires the `Builder.withComm
 
 For a complete example, see [SetCommitmentPolicyExample.java](https://github.com/aws/aws-encryption-sdk-java/blob/master/src/examples/java/com/amazonaws/crypto/examples/v2/SetCommitmentPolicyExample.java).
 
-```
+```java
 // Instantiate the client
 final AwsCrypto crypto = AwsCrypto.builder()
     .withCommitmentPolicy(CommitmentPolicy.ForbidEncryptAllowDecrypt)
@@ -225,7 +225,7 @@ The code for Node.js and the browser are identical for this purpose, except that
 
 The following example encrypts data with an AWS KMS keyring. The new `buildClient` function sets the commitment policy to `FORBID_ENCRYPT_ALLOW_DECRYPT`, the default value in the latest 1.*x* versins. The upgraded `encrypt` and `decrypt` functions that `buildClient` returns enforce the commitment policy you set.
 
-```
+```js
 import { buildClient } from '@aws-crypto/client-node'
 const { encrypt, decrypt } = buildClient(CommitmentPolicy.FORBID_ENCRYPT_ALLOW_DECRYPT)
 
@@ -252,7 +252,7 @@ This example uses the new `EncryptionSDKClient` constructor and sets the commitm
 
 For a complete example, see [set\_commitment.py](https://github.com/aws/aws-encryption-sdk-python/blob/master/examples/src/legacy/set_commitment.py).
 
-```
+```python
 # Instantiate the client
 client = aws_encryption_sdk.EncryptionSDKClient(commitment_policy=CommitmentPolicy.FORBID_ENCRYPT_ALLOW_DECRYPT)
 
@@ -285,7 +285,7 @@ In the AWS Encryption SDK for Rust, you set the commitment policy on an instance
 
 This example sets the commitment policy to `forbid-encrypt-allow-decrypt`.
 
-```
+```rs
 // Configure the commitment policy on the AWS Encryption SDK instance
 let esdk_config = AwsEncryptionSdkConfig::builder()
                     .commitment_policy(ForbidEncryptAllowDecrypt)
@@ -340,7 +340,7 @@ let decryption_response = esdk_client.decrypt()
 ------
 #### [ Go ]
 
-```
+```go
 import (
     "context"
 

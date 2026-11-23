@@ -15,7 +15,7 @@ You can specify these values programmatically in code or have them automatically
 
 To configure a service client with specific values, you can specify them in a lambda function passed to the service client factory method as shown in the following snippet.
 
-```
+```kotlin
 val dynamoDbClient = DynamoDbClient {
     region = "us-east-1"
     credentialsProvider = ProfileCredentialsProvider(profileName = "myprofile")
@@ -34,7 +34,7 @@ When creating a service client, the SDK can inspect locations in the current exe
 
 To create a client with environment-sourced configuration, use the static method `suspend fun fromEnvironment()` on the service client interface:
 
-```
+```kotlin
 val dynamoDbClient = DynamoDbClient.fromEnvironment()
 ```
 
@@ -42,7 +42,7 @@ Creating a client this way is useful when running on Amazon EC2, AWS Lambda, or 
 
 Additionally, you can override specific properties by passing a lambda block to `fromEnvironment`. The following example loads some configuration properties from the environment (e.g., Region) but specifically overrides the credentials provider to use credentials from a profile.
 
-```
+```kotlin
 val dynamoDbClient = DynamoDbClient.fromEnvironment {
     credentialsProvider = ProfileCredentialsProvider(profileName = "myprofile")
 }
@@ -61,7 +61,7 @@ Although credentials-related properties—such as temporary access keys and SSO 
 
 When you no longer need the service client, close it to release any resources that it’s using:
 
-```
+```kotlin
 val dynamoDbClient = DynamoDbClient.fromEnvironment()
 // Invoke several DynamoDB operations.
 dynamoDbClient.close()
@@ -69,7 +69,7 @@ dynamoDbClient.close()
 
 Because service clients extend the [Closeable](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.io/-closeable/index.html) interface, you can use the [use](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.io/use.html) extension to close the client automatically at the end of a block as shown in the following snippet.
 
-```
+```kotlin
 DynamoDbClient.fromEnvironment().use { dynamoDbClient ->
     // Invoke several DynamoDB operations.
 }

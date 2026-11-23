@@ -13,7 +13,7 @@ The AWS for SAP MCP Server emits structured logs to CloudWatch Logs. You can use
 
  **All errors in time range**
 
-```
+```text
 fields @timestamp, @message
 | filter @message like /ERROR/
 | sort @timestamp desc
@@ -22,7 +22,7 @@ fields @timestamp, @message
 
  **Session trace by ID**
 
-```
+```text
 fields @timestamp, @message
 | filter @message like /\[session:<session-id>\]/
 | sort @timestamp asc
@@ -30,7 +30,7 @@ fields @timestamp, @message
 
  **Authentication failures**
 
-```
+```text
 fields @timestamp, @message
 | filter @message like /ODataAuthError|AuthenticationError|401|403/
 | sort @timestamp desc
@@ -39,7 +39,7 @@ fields @timestamp, @message
 
  **Tool execution failures**
 
-```
+```text
 fields @timestamp, @message
 | filter @message like /TOOL CALL END \(FAILURE\)/
 | sort @timestamp desc
@@ -48,7 +48,7 @@ fields @timestamp, @message
 
  **Tool execution latency**
 
-```
+```text
 fields @timestamp, @message
 | filter @message like /Execution Time:/
 | parse @message "Execution Time: *s" as exec_time
@@ -57,7 +57,7 @@ fields @timestamp, @message
 
  **Configuration validation errors at startup**
 
-```
+```text
 fields @timestamp, @message
 | filter @message like /ValidationError|Invalid configuration|ValueError/
 | sort @timestamp desc
@@ -66,7 +66,7 @@ fields @timestamp, @message
 
  **Function import audit log**
 
-```
+```text
 fields @timestamp, @message
 | filter @message like /\[AUDIT\]/
 | sort @timestamp desc

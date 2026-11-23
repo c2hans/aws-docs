@@ -108,7 +108,7 @@ HTTP Status Code: 400
 
 This example illustrates one use of PutCaseEventConfiguration.
 
-```
+```json
 {
   "enabled":true,
   "includedData":{
@@ -134,7 +134,7 @@ This example illustrates one use of PutCaseEventConfiguration.
   }}
 ```
 
-```
+```json
 { }
 ```
 
@@ -143,7 +143,7 @@ This example illustrates one use of PutCaseEventConfiguration.
 
 This example publishes all fields on the case automatically, so new system or custom fields are included without another call to PutCaseEventConfiguration. The caller must be authorized for the wildcard field resource on the domain.
 
-```
+```json
 {
   "enabled":true,
   "includedData":{
@@ -157,7 +157,7 @@ This example publishes all fields on the case automatically, so new system or cu
   }}
 ```
 
-```
+```json
 { }
 ```
 

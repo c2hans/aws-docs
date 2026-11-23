@@ -63,7 +63,7 @@ We recommend that you reuse `/lambda-entrypoint.sh` when you start from the OS-o
 
 Use the exec form of `ENTRYPOINT`, which is a JSON array, so that Lambda can pass the handler to your runtime. With the shell form, Docker stores the entrypoint as `/bin/sh -c`, and your runtime never receives the handler. The following example shows both forms:
 
-```
+```dockerfile
 # Correct: exec form. Lambda passes the handler to the entrypoint.
 ENTRYPOINT ["/var/runtime/bootstrap"]
 
@@ -156,7 +156,7 @@ The example expects the following files in the build context:
 
 The following example shows the `Dockerfile`:
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/provided:al2023
 
 # Install the Python interpreter and pip from the Amazon Linux 2023 repositories.
@@ -175,7 +175,7 @@ RUN chmod 755 /var/runtime/bootstrap
 
 The following example shows the `bootstrap` script. `/lambda-entrypoint.sh` sets `_HANDLER` before the script runs. The script sets the Python search path, and then starts the Python RIC with the handler. If the function sets `AWS_LAMBDA_EXEC_WRAPPER`, the script runs the Python RIC through the wrapper script.
 
-```
+```bash
 #!/bin/sh
 # Function code first, then layers, then the runtime's own libraries.
 export PYTHONPATH="/var/task:/opt/python/lib/python3.14/site-packages:/opt/python:/var/runtime"
@@ -209,7 +209,7 @@ The OS-only base image includes the [runtime interface emulator](https://github.
 
 1. In an empty directory, create a file named `lambda_function.py` with sample function code. The following example returns the Python version of the runtime:
 
-   ```
+   ```python
    import platform
 
    def lambda_handler(event, context):
@@ -218,7 +218,7 @@ The OS-only base image includes the [runtime interface emulator](https://github.
 
 1. From the same directory, run the following command. The command uses the example image URI from [Build and push a runtime image](cmr-base-images.md#cmr-base-images-build). The command mounts the directory as read-only `/var/task`, and passes the handler as the command argument.
 
-   ```
+   ```bash
    docker run --rm --platform linux/arm64 -p 9000:8080 \
      -v "$PWD":/var/task:ro \
      123456789012.dkr.ecr.us-east-1.amazonaws.com/companypython:2026-10-08.1 \
@@ -229,13 +229,13 @@ The OS-only base image includes the [runtime interface emulator](https://github.
 
 1. From a new terminal window, invoke the function with **curl**:
 
-   ```
+   ```bash
    curl "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{}'
    ```
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {"pythonVersion": "3.14.8"}
    ```
 

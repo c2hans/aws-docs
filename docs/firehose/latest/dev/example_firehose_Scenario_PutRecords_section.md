@@ -13,7 +13,7 @@ The following code examples show how to use Firehose to process individual and b
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/firehose#code-examples).
 This example puts individual and batch records to Firehose.
 
-```
+```java
 /**
  * Amazon Firehose Scenario example using Java V2 SDK.
  *
@@ -226,7 +226,7 @@ public class FirehoseScenario {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/firehose/scenarios/firehose-put-actions#code-examples).
 This script puts individual and batch records to Firehose.
 
-```
+```python
 import json
 import logging
 import random
@@ -466,7 +466,7 @@ if __name__ == "__main__":
 ```
 This file contains config for the above script.
 
-```
+```python
 class Config:
     def __init__(self):
         self.delivery_stream_name = "ENTER YOUR DELIVERY STREAM NAME HERE"

@@ -10,7 +10,7 @@ Test case executables contain the test logic that you want to run. A test suite 
 
    In the `MyTestSuite_1.0.0/suite/myTestGroup/myTestCase` folder, create a `myTestCase.py` file with the following content:
 
-   ```
+   ```python
    from idt_client import *
 
    def main():
@@ -25,7 +25,7 @@ Test case executables contain the test logic that you want to run. A test suite 
 
    1. Run an SSH command on the device under test.
 
-      ```
+      ```python
       from idt_client import *
 
       def main():
@@ -47,7 +47,7 @@ Test case executables contain the test logic that you want to run. A test suite 
 
    1. Send the test result to IDT.
 
-      ```
+      ```python
       from idt_client import *
 
       def main():

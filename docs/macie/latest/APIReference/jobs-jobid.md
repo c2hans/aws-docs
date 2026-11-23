@@ -77,7 +77,7 @@ Changes the status of a classification job.
 #### PATCH schema
 <a name="jobs-jobid-request-body-patch-example"></a>
 
-```
+```json
 {
   "jobStatus": enum
 }
@@ -89,7 +89,7 @@ Changes the status of a classification job.
 #### DescribeClassificationJobResponse schema
 <a name="jobs-jobid-response-body-describeclassificationjobresponse-example"></a>
 
-```
+```json
 {
   "allowListIds": [
     "string"
@@ -248,7 +248,7 @@ Changes the status of a classification job.
 #### Empty Schema schema
 <a name="jobs-jobid-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -256,7 +256,7 @@ Changes the status of a classification job.
 #### ValidationException schema
 <a name="jobs-jobid-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -265,7 +265,7 @@ Changes the status of a classification job.
 #### ServiceQuotaExceededException schema
 <a name="jobs-jobid-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -274,7 +274,7 @@ Changes the status of a classification job.
 #### AccessDeniedException schema
 <a name="jobs-jobid-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -283,7 +283,7 @@ Changes the status of a classification job.
 #### ResourceNotFoundException schema
 <a name="jobs-jobid-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -292,7 +292,7 @@ Changes the status of a classification job.
 #### ConflictException schema
 <a name="jobs-jobid-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -301,7 +301,7 @@ Changes the status of a classification job.
 #### ThrottlingException schema
 <a name="jobs-jobid-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -310,7 +310,7 @@ Changes the status of a classification job.
 #### InternalServerException schema
 <a name="jobs-jobid-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

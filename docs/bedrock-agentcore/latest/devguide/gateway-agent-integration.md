@@ -12,7 +12,7 @@ To learn how to create an agent, connect it to a gateway, and invoke it to answe
 
 1.
 
-   ```
+   ```python
    from strands import Agent
    from strands.models import BedrockModel
    from strands.tools.mcp.mcp_client import MCPClient
@@ -62,7 +62,7 @@ To learn how to create an agent, connect it to a gateway, and invoke it to answe
 
 1.
 
-   ```
+   ```python
    from mcp import ClientSession
    from mcp.client.streamable_http import streamablehttp_client
 
@@ -87,7 +87,7 @@ To learn how to create an agent, connect it to a gateway, and invoke it to answe
 
 1.
 
-   ```
+   ```bash
    #!/bin/bash
    # Script to add MCP server to Claude
 

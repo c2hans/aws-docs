@@ -26,7 +26,7 @@ The following code example shows how to use `AssumeRole`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/iam#code-examples).
 
-```
+```swift
 import AWSSTS
 
     public func assumeRole(role: IAMClientTypes.Role, sessionName: String)

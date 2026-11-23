@@ -20,6 +20,6 @@ Choosing a connection from the dropdown menu inserts the following two parameter
 
 For example, the connection string to a pre-configured Amazon Athena data store looks like the following:
 
-```
+```bash
 %%sm_sql --metastore-id {{athena-connection-name}} --metastore-type GLUE_CONNECTION
 ```

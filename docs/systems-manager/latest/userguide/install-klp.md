@@ -33,7 +33,7 @@ For information about applying kernel live patches by running `yum` commands dir
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm send-command \
        --document-name "AWS-RunPatchBaseline" \
        --targets "Key=InstanceIds,Values={{instance-id}}" \
@@ -43,7 +43,7 @@ For information about applying kernel live patches by running `yum` commands dir
 ------
 #### [ Windows Server ]
 
-   ```
+   ```sh
    aws ssm send-command ^
        --document-name "AWS-RunPatchBaseline" ^
        --targets "Key=InstanceIds,Values={{instance-id}}" ^
@@ -59,7 +59,7 @@ For information about applying kernel live patches by running `yum` commands dir
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm send-command \
        --document-name "AWS-RunPatchBaseline" \
        --targets "Key=InstanceIds,Values={{instance-id}}" \
@@ -69,7 +69,7 @@ For information about applying kernel live patches by running `yum` commands dir
 ------
 #### [ Windows Server ]
 
-   ```
+   ```sh
    aws ssm send-command ^
        --document-name "AWS-RunPatchBaseline" ^
        --targets "Key=InstanceIds,Values={{instance-id}}" ^

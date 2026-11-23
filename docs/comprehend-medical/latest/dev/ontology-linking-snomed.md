@@ -116,7 +116,7 @@ The following example input text shows how the `InferSNOMEDCT` operation works. 
 
 The `InferSNOMEDCT` operation returns the following output in JSON format.
 
-```
+```json
 {
     "Entities": [
         {

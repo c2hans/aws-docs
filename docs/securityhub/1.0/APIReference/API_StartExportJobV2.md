@@ -160,7 +160,7 @@ Specify both the bucket ARN and the object ARN in the `Resource` element. `s3:Li
 
 In the following example, replace `amzn-s3-demo-bucket` with the name of your destination bucket, and `111122223333` with your AWS account ID.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -204,7 +204,7 @@ Each permission and condition key in the statement is required for the following
 
 In the following example, replace `aa-example-1` with your AWS Region, `111122223333` with your AWS account ID, and `amzn-s3-demo-bucket` with the name of your destination bucket.
 
-```
+```json
 {
     "Sid": "AllowSecurityHubExportSseKmsWriteViaS3",
     "Effect": "Allow",
@@ -239,7 +239,7 @@ Each permission and condition key in the statement is required for the following
 
 In the following example, replace `111122223333` with your AWS account ID, `ExportCallerRole` with the name of the role that calls `StartExportJobV2`, and `amzn-s3-demo-bucket` with the name of your destination bucket.
 
-```
+```json
 {
     "Sid": "AllowSecurityHubExportCallerKeyAccess",
     "Effect": "Allow",

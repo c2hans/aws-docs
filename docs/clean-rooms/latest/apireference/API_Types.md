@@ -174,6 +174,7 @@ The following data types are supported:
 +  [OutputColumnThreshold](API_OutputColumnThreshold.md)
 +  [PaymentConfiguration](API_PaymentConfiguration.md)
 +  [PopulationAnalysisConfiguration](API_PopulationAnalysisConfiguration.md)
++  [PopulationAnalysisJobParameters](API_PopulationAnalysisJobParameters.md)
 +  [PopulationAnalysisSqlParameters](API_PopulationAnalysisSqlParameters.md)
 +  [PreviewPrivacyImpactParametersInput](API_PreviewPrivacyImpactParametersInput.md)
 +  [PrivacyBudget](API_PrivacyBudget.md)

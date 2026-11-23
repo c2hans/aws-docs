@@ -34,7 +34,7 @@ In this step, you configure input and output for all the states in your workflow
 
 1. Choose the first **Pass** state in your workflow prototype. In the **Output** tab, enter the following under **Result**:
 
-   ```
+   ```json
    {
      "foo": "bar",
      "colors": [
@@ -63,7 +63,7 @@ In this step, you configure input and output for all the states in your workflow
 
    1. Enter the following JSON input to generate the v4 UUIDs for each of the input array items. You use the `States.UUID` intrinsic function to generate the UUIDs.
 
-      ```
+      ```json
       {
         "uuid.$": "States.UUID()"
       }
@@ -90,7 +90,7 @@ You can also view the ASL definition in the [Code editor](workflow-studio.md#wfs
 
    The following example shows the automatically generated Amazon States Language definition for your workflow.
 
-   ```
+   ```json
    {
        "Comment": "Using Map state in Inline mode",
        "StartAt": "Pass",

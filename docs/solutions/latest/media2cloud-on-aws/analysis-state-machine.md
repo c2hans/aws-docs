@@ -29,6 +29,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/anal
 
 ![Analysis workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/analysis-workflow.png)
 
+***Analysis workflow** *
+
 ## Video analysis sub-state machine
 <a name="video-analysis-sub-state-machine"></a>
 
@@ -63,6 +65,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/anal
 
 ![Video analysis sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-video-analysis-sub-state-machine.png)
 
+***Video analysis sub-state machine workflow***
+
 ## Audio analysis sub-state machine
 <a name="audio-analysis-sub-state-machine"></a>
 
@@ -88,6 +92,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/anal
 
 ![Audio analysis sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-audio-analysis-sub-state-machine.png)
 
+***Audio analysis sub-state machine workflow** *
+
 ## Image analysis sub-state machine
 <a name="image-analysis-sub-state-machine"></a>
 
@@ -98,9 +104,13 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/anal
 
 ![Image analysis sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-image-analysis-sub-state-machine.png)
 
+***Image analysis sub-state machine workflow** *
+
 ## Document analysis sub-state machine
 <a name="document-analysis-sub-state-machine"></a>
 +  **Analyze document** – Calls the `AnalyzeDocument` API to extract tabular metadata of the document and stores the results in an S3 proxy bucket. The process repeats until all pages of the document has been processed or when the Lambda runtime is close to the 15-minute limit. In a case where more pages to be processed and the Lambda is approaching the 15-minute limit, the Lambda function sets $.status to **IN\_PROGRESS** and `$.data.cursor` to the current page index to prepare for re-entering the same state to continue where it leaves off.
 +  **Index analysis results** - Indexes the metadata to the OpenSearch service `textract` index.
 
 ![Document analysis sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-document-analysis-sub-state-machine.png)
+
+***Document analysis sub-state machine workflow** *

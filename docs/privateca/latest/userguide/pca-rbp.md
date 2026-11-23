@@ -14,6 +14,8 @@ AWS Private CA also supports RAM customer managed permissions, which allow you t
 
 AWS Certificate Manager (ACM) users with cross-account shared access to a private CA can issue managed certificates that are signed by the CA. When you grant permission to the `IssueCertificate` action, you can restrict the certificate templates used for certificate issuance by adding a `acm-pca:TemplateArn` Condition to the policy.
 
+You can also add X.509 certificate condition keys to the `Allow` statement for `IssueCertificate` to restrict the certificates that cross-account principals can request. Resource-based policies don't support `Deny` statements. For more information, see [Control certificate issuance with X.509 certificate condition keys](certguard-condition-keys.md).
+
 ## Policy examples
 <a name="rbp-policy-examples"></a>
 
@@ -29,7 +31,7 @@ $ aws acm-pca put-policy \
 In addition to specifying the ARN of a CA, the administrator provides an AWS account ID or an AWS Organizations ID that will be granted access to the CA. The JSON of each of the following policies is formatted as a file for readability, but can also be supplied as an inline CLI arguments.
 
 **Note**
-The structure of the JSON resource-based policies shown below must be followed precisely. Only the ID fields for the principals (the AWS account number or the AWS Organizations ID) and the CA ARNs can be configured by customers.
+The following policies are starting points. You can change the actions that you grant and add conditions, such as X.509 certificate condition keys, to fit your needs. For the actions that you can include, see [Customer managed permissions in RAM](pca-cmp.md).
 
 1. **File: policy1.json – Sharing access to a CA with a user in a different account**
 
@@ -46,7 +48,7 @@ The structure of the JSON resource-based policies shown below must be followed p
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [{
@@ -101,7 +103,7 @@ The structure of the JSON resource-based policies shown below must be followed p
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -147,3 +149,75 @@ The structure of the JSON resource-based policies shown below must be followed p
    ```
 
 ------
+
+## Allow connector creation when you use X.509 certificate condition keys
+<a name="connector-permission-check-condition-keys"></a>
+
+When you create a connector with Connector for AD or Connector for SCEP, the connector checks its permissions by sending a test certificate request to `acm-pca:IssueCertificate`, once as its service principal and once with your identity through `aws:CalledVia`. AWS Private CA evaluates your policies for this request and then rejects it by design, so it doesn't issue a certificate. AWS CloudTrail records both test requests as `IssueCertificate` events that failed with a `ValidationException`. These errors are expected. If either request is denied, the event shows an `AccessDenied` error code instead.
+
+The simplest way to keep connector creation working is to grant `acm-pca:IssueCertificate` to the connector without X.509 certificate condition keys (`acm-pca:x509*`). The AWS RAM managed permissions for connectors and the policies in the connector setup topics do this. If you do add these condition keys to a policy that applies to either request, the conditions must permit the values in the following table. Otherwise, connector creation fails with `PRIVATECA_ACCESS_DENIED`. If a `Deny` statement in an SCP, RCP, or identity-based policy applies to the connector's requests, scope it as described in [Before you deploy a policy](certguard-before-you-deploy.md). For information about these keys, see [Control certificate issuance with X.509 certificate condition keys](certguard-condition-keys.md).
+
+| Condition key | Connector for AD | Connector for SCEP |
+| --- | --- | --- |
+| acm-pca:TemplateArn | arn:aws:acm-pca:::template/BlankEndEntityCertificate\_APIPassthrough/V1 | arn:aws:acm-pca:::template/BlankEndEntityCertificate\_APICSRPassthrough/V1 |
+| acm-pca:x509Subject/CN (use a set operator such as ForAllValues:StringEquals) | AWS Private CA Connector for Active Directory permission check | AWS Private CA Connector for SCEP permission check |
+| acm-pca:x509Signature/algorithm | The signing algorithm that the connector uses for your CA key type, for example sha256WithRSAEncryption for an RSA CA | The signing algorithm that the connector uses for your CA key type, for example sha256WithRSAEncryption for an RSA CA |
+| acm-pca:x509Key/algorithm | RSA | RSA |
+| acm-pca:x509Key/size | 2048 | 2048 |
+| acm-pca:x509Validity/durationDays | 1 | 1 |
+| acm-pca:x509Validity/durationHours | 25 (AWS Private CA sets notBefore to 60 minutes before issuance, so the one-day validity period spans 25 hours) | 25 (AWS Private CA sets notBefore to 60 minutes before issuance, so the one-day validity period spans 25 hours) |
+| acm-pca:x509SAN/present | false | false |
+| acm-pca:x509Ext/KeyUsage/present | false | false |
+| acm-pca:x509Ext/ExtendedKeyUsage/present | false | false |
+| acm-pca:x509Ext/BasicConstraints/present | true | true |
+| acm-pca:x509Ext/BasicConstraints/CA | false | false |
+| acm-pca:x509Ext/BasicConstraints/critical | false | false |
+
+The test request also has `acm-pca:x509Subject/empty` set to `false`, and `acm-pca:x509Validity/notBefore` and `acm-pca:x509Validity/notAfter` dates that depend on when you create the connector. It has no other X.509 certificate condition keys. For how absent keys affect `Deny` statements, see [How condition key values are evaluated](certguard-evaluation.md).
+
+The following identity-based policy statement permits the test request that Connector for AD sends with your identity. Replace the CA ARN with your own. For Connector for SCEP, use the SCEP template, common name, and `pca-connector-scep.amazonaws.com`:
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowConnectorPermissionCheck",
+            "Effect": "Allow",
+            "Action": "acm-pca:IssueCertificate",
+            "Resource": "arn:{{aws}}:acm-pca:{{us-east-1}}:{{111122223333}}:certificate-authority/{{11223344-1234-1122-2233-112233445566}}",
+            "Condition": {
+                "ArnLike": {
+                    "acm-pca:TemplateArn": "arn:aws:acm-pca:::template/BlankEndEntityCertificate_APIPassthrough/V*"
+                },
+                "ForAllValues:StringEquals": {
+                    "acm-pca:x509Subject/CN": "AWS Private CA Connector for Active Directory permission check"
+                },
+                "Null": {
+                    "acm-pca:x509Subject/CN": "false"
+                },
+                "StringEquals": {
+                    "acm-pca:x509Key/algorithm": "RSA"
+                },
+                "NumericEquals": {
+                    "acm-pca:x509Key/size": "2048"
+                },
+                "Bool": {
+                    "acm-pca:x509SAN/present": "false",
+                    "acm-pca:x509Ext/BasicConstraints/CA": "false",
+                    "acm-pca:x509Ext/KeyUsage/present": "false",
+                    "acm-pca:x509Ext/ExtendedKeyUsage/present": "false"
+                },
+                "NumericLessThanEquals": {
+                    "acm-pca:x509Validity/durationDays": "1"
+                },
+                "ForAnyValue:StringEquals": {
+                    "aws:CalledVia": "pca-connector-ad.amazonaws.com"
+                }
+            }
+        }
+    ]
+}
+```
+
+The resource-based policy on your CA, which you manage with AWS RAM, authorizes the test request that uses the connector's service principal. Every certificate that the connector issues after it's created also uses the service principal. If you add X.509 certificate condition keys to a AWS RAM customer managed permission or an RCP, the conditions must permit both the values in the preceding table and the certificates that your connector issues.

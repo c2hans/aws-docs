@@ -32,7 +32,7 @@ SYS\_COPY\_JOB\_DETAIL is visible to all users. Superusers can see all rows; reg
 
 The following example returns one row where for ingested entries.
 
-```
+```sql
 SELECT * FROM SYS_COPY_JOB_DETAIL WHERE status ilike '%ingested%' limit 1;
 
 user_id | 100

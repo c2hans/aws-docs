@@ -8,7 +8,7 @@ When you run SELinux in `permissive` mode, SELinux policy isn't enforced. In `pe
 
 To find the current SELinux mode, run the `getenforce` command.
 
-```
+```sh
 getenforce
 Enforcing
 ```
@@ -20,13 +20,13 @@ To change the mode to `permissive`, use the following steps.
 
 1. Edit the `/etc/selinux/config` file to change to `permissive` mode. The `SELINUX` value should look like the following example.
 
-   ```
+   ```sh
    SELINUX=permissive
    ```
 
 1. Restart your system to complete the change to `permissive` mode.
 
-   ```
+   ```sh
    $ sudo reboot
    ```
 
@@ -35,7 +35,7 @@ To change the mode to `permissive`, use the following steps.
 
 As an alternative, when you launch your instance, pass the following `cloud-config` as user-data to enable `permissive` mode.
 
-```
+```yaml
 #cloud-config
 selinux:
   mode: permissive
@@ -43,7 +43,7 @@ selinux:
 
 By default, this setting causes the instance to reboot. For greater stability, we recommend rebooting your instance. However, if you prefer, you can skip the reboot by providing the following `cloud-config`.
 
-```
+```yaml
 #cloud-config
 selinux:
   mode: permissive

@@ -18,7 +18,7 @@ To do so, you must specify a service role with the necessary permissions and tru
 
 ****
 
-     ```
+     ```json
      {
        "Version":"2012-10-17",
        "Statement": [
@@ -72,7 +72,7 @@ To do so, you must specify a service role with the necessary permissions and tru
 
 ****
 
-     ```
+     ```json
      {
        "Version":"2012-10-17",
        "Statement": [

@@ -47,7 +47,7 @@ A state machine is defined by the states it contains and the relationships betwe
 
 The following is an example.
 
-```
+```json
 {
   "Comment": "A Hello World example of the Amazon States Language using a Pass state",
   "StartAt": "HelloWorld",

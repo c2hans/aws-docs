@@ -19,14 +19,14 @@ Use `query` when you know the partition-key value. The key condition must includ
 
  **Imports**
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient
 from aws_sdk_dynamodb.models import AttributeValue
 ```
 
  **Code**
 
-```
+```python
 def query_items(
     client: DynamoDBClient, table_name: str, author: str
 ) -> list[dict[str, AttributeValue]]:
@@ -50,14 +50,14 @@ A query can return a partial result. Continue while `last_evaluated_key` is pres
 
  **Imports**
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient
 from aws_sdk_dynamodb.models import AttributeValue
 ```
 
  **Code**
 
-```
+```python
 def query_items_paginated(
     client: DynamoDBClient,
     table_name: str,
@@ -91,14 +91,14 @@ Use `scan` only when a key-based query can't express the access pattern. DynamoD
 
  **Imports**
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient
 from aws_sdk_dynamodb.models import AttributeValue
 ```
 
  **Code**
 
-```
+```python
 def scan_items(
     client: DynamoDBClient,
     table_name: str,

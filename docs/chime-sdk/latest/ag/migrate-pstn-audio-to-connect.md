@@ -99,7 +99,7 @@ The following sections show the Amazon Connect block that replaces each PSTN Aud
 
 In PSTN Audio, you play an audio file with the `PlayAudio` action.
 
-```
+```json
 {
     "Type": "PlayAudio",
     "Parameters": {
@@ -126,7 +126,7 @@ In Amazon Connect, do the following:
 
 In PSTN Audio, you play a prompt and collect digits with the `PlayAudioAndGetDigits` action.
 
-```
+```json
 {
     "Type": "PlayAudioAndGetDigits",
     "Parameters": {
@@ -171,7 +171,7 @@ Note the following key differences:
 
 In PSTN Audio, you convert text to speech with the `Speak` and `SpeakAndGetDigits` actions.
 
-```
+```json
 {
     "Type": "Speak",
     "Parameters": {
@@ -204,7 +204,7 @@ To insert dynamic values, use `$.Attributes.VariableName` or `$.External.Variabl
 
 In PSTN Audio, you transfer a call to a PSTN endpoint with the `CallAndBridge` action.
 
-```
+```json
 {
     "Type": "CallAndBridge",
     "Parameters": {
@@ -237,7 +237,7 @@ Note the following key differences:
 
 In PSTN Audio, you record a call with the `RecordAudio` action.
 
-```
+```json
 {
     "Type": "RecordAudio",
     "Parameters": {
@@ -270,7 +270,7 @@ Amazon Connect stores recordings in the Amazon S3 bucket that you configured for
 
 In PSTN Audio, you collect digits with the `ReceiveDigits` action.
 
-```
+```json
 {
     "Type": "ReceiveDigits",
     "Parameters": {
@@ -299,7 +299,7 @@ Amazon Connect stores the entered digits in `$.StoredCustomerInput`.
 
 In PSTN Audio, you send DTMF digits with the `SendDigits` action.
 
-```
+```json
 {
     "Type": "SendDigits",
     "Parameters": {
@@ -316,7 +316,7 @@ In Amazon Connect, the **Transfer to phone number** block includes a **Send digi
 
 In PSTN Audio, you end a call with the `Hangup` action.
 
-```
+```json
 {
     "Type": "Hangup",
     "Parameters": {
@@ -333,7 +333,7 @@ In Amazon Connect, add a **Disconnect / hang up** block. This block terminates t
 
 In PSTN Audio, you pause a call with the `Pause` action.
 
-```
+```json
 {
     "Type": "Pause",
     "Parameters": {
@@ -350,7 +350,7 @@ In Amazon Connect, add a **Wait** block, then configure the timeout duration.
 
 In PSTN Audio, you join a Amazon Chime SDK meeting from a call with the `JoinChimeMeeting` action.
 
-```
+```json
 {
     "Type": "JoinChimeMeeting",
     "Parameters": {
@@ -370,7 +370,7 @@ Amazon Connect has no direct equivalent for joining a Amazon Chime SDK meeting f
 
 In PSTN Audio, you store call context with the `TransactionAttributes` action.
 
-```
+```json
 {
     "Type": "TransactionAttributes",
     "Parameters": {
@@ -397,7 +397,7 @@ Reference the attribute later as `$.Attributes.key1`.
 
 In PSTN Audio, you start a bot conversation with the `StartBotConversation` action.
 
-```
+```json
 {
     "Type": "StartBotConversation",
     "Parameters": {
@@ -530,7 +530,7 @@ The following patterns show how common PSTN Audio designs map to Amazon Connect.
 
 The following PSTN Audio Lambda function forwards a call.
 
-```
+```javascript
 exports.handler = async (event) => {
     return {
         SchemaVersion: "1.0",

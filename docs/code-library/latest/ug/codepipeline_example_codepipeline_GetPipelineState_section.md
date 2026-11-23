@@ -72,7 +72,7 @@ For more information, see [View pipeline details and history (CLI)](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example gets general information about the stages for the specified pipeline.**
 
-```
+```powershell
 Get-CPPipelineState -Name CodePipelineDemo
 ```
 **Output:**
@@ -86,7 +86,7 @@ Updated         : 8/13/2015 10:17:54 PM
 ```
 **Example 2: This example gets detailed information about the state of the specified pipeline.**
 
-```
+```powershell
 ForEach ($stageState in (Get-CPPipelineState -Name $arg).StageStates) {
   Write-Output ("For " + $stageState.StageName + ":")
   Write-Output ("  InboundTransitionState:")
@@ -221,7 +221,7 @@ For TestStage:
 **Tools for PowerShell V5**
 **Example 1: This example gets general information about the stages for the specified pipeline.**
 
-```
+```powershell
 Get-CPPipelineState -Name CodePipelineDemo
 ```
 **Output:**
@@ -235,7 +235,7 @@ Updated         : 8/13/2015 10:17:54 PM
 ```
 **Example 2: This example gets detailed information about the state of the specified pipeline.**
 
-```
+```powershell
 ForEach ($stageState in (Get-CPPipelineState -Name $arg).StageStates) {
   Write-Output ("For " + $stageState.StageName + ":")
   Write-Output ("  InboundTransitionState:")

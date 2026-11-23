@@ -33,7 +33,7 @@ The `WHERE` clause is required, and must use one of the following formats:
 + `resource_id = {{arn}}`
 + The following query returns the tags of the specified table.
 
-  ```
+  ```sql
   SELECT * FROM system_schema_mcs.tags WHERE keyspace_name = 'mykeyspace' AND resource_name = 'mytable';
   ```
 

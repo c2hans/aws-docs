@@ -52,7 +52,7 @@ To use AWS CLI commands with CodeCommit, install the AWS CLI. For more informati
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

@@ -53,7 +53,7 @@ You can tag your DataSync task only when creating the task.
 
    You get a response that shows the task that you just created.
 
-   ```
+   ```json
    {
        "TaskArn": "arn:aws:datasync:us-east-2:123456789012:task/task-abcdef01234567890"
    }
@@ -110,7 +110,7 @@ To add, edit, or remove tags from a task execution, you must start the task with
 
    You get a response that shows the task execution that you just started.
 
-   ```
+   ```json
    {
        "TaskExecutionArn": "arn:aws:datasync:us-east-2:123456789012:task/task-abcdef01234567890"
    }

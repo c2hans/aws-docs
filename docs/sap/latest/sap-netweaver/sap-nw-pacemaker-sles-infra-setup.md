@@ -29,7 +29,7 @@ For more information, see [IAM roles for Amazon EC2](https://docs.aws.amazon.com
 
 The SLES STONITH resource agent (`fence_aws` for SLES 15 SP5 and above, or `external/ec2` for older releases) requires permission to start and stop both the nodes of the cluster. Create a policy as shown in the following example. Attach this policy to the IAM role assigned to both Amazon EC2 instances in the cluster.
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -61,7 +61,7 @@ The SLES STONITH resource agent (`fence_aws` for SLES 15 SP5 and above, or `exte
 
 The SLES Overlay IP resource agent (aws-vpc-move-ip) requires permission to modify a routing entry in route tables. Create a policy as shown in the following example. Attach this policy to the IAM role assigned to both Amazon EC2 instances in the cluster.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -108,7 +108,7 @@ In sharing VPC account, create an IAM role to delegate permissions to the EC2 in
 
 After the IAM role has been created, create the following IAM policy on the sharing VPC account, and attach it to an IAM role. Add or remove route table entries as needed.
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -137,7 +137,7 @@ In cluster account, create the following IAM policy, and attach it to an IAM rol
 
  **STS Policy**
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -153,7 +153,7 @@ In cluster account, create the following IAM policy, and attach it to an IAM rol
 
  **STONITH Policy**
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -248,13 +248,13 @@ Identify the EC2 instance IDs for both cluster nodes and determine which route t
 
 For the ASCS:
 
-```
+```console
 $ aws ec2 create-route --route-table-id <routetable_id> --destination-cidr-block <ascs_overlayip>/32 --instance-id <instance_id_1>
 ```
 
 For the ERS:
 
-```
+```console
 $ aws ec2 create-route --route-table-id <routetable_id> --destination-cidr-block <ers_overlayip>/32 --instance-id <instance_id_2>
 ```
 

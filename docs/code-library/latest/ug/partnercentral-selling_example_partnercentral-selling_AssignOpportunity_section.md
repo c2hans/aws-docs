@@ -14,7 +14,7 @@ The following code examples show how to use `AssignOpportunity`.
 **SDK for Java 2.x**
 Reassign an existing Opportunity to another user.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -87,7 +87,7 @@ public class AssignOpportunity {
 **SDK for Python (Boto3)**
 Reassign an existing Opportunity to another user.
 
-```
+```python
 #!/usr/bin/env python
 
 """

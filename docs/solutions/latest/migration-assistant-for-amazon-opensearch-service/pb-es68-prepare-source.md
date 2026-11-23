@@ -8,13 +8,13 @@ Migration Assistant reads the source data from a snapshot in Amazon S3, so the s
 
 1.  **Install the `repository-s3` plugin** on every node of the source cluster, then restart the nodes one at a time so the cluster stays available:
 
-   ```
+   ```bash
    sudo bin/elasticsearch-plugin install repository-s3
    ```
 
 1.  **Grant the source nodes IAM permission to write to the snapshot bucket.** Attach an IAM policy to the instance role used by the Elasticsearch nodes that allows the snapshot operations against your bucket. Replace `<SNAPSHOT_BUCKET>` with your bucket name:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -41,7 +41,7 @@ Migration Assistant reads the source data from a snapshot in Amazon S3, so the s
 
 1.  **Register a snapshot repository** named `migration-repo` on the source cluster. Replace `<SNAPSHOT_BUCKET>` and `<REGION>` with your values:
 
-   ```
+   ```bash
    curl -X PUT "http://<SOURCE_ENDPOINT>:9200/_snapshot/migration-repo" \
      -H "Content-Type: application/json" -d '{
        "type": "s3",
@@ -55,7 +55,7 @@ Migration Assistant reads the source data from a snapshot in Amazon S3, so the s
 
 1.  **Verify the repository** so you catch credential or connectivity problems now rather than mid-migration:
 
-   ```
+   ```bash
    curl -X POST "http://<SOURCE_ENDPOINT>:9200/_snapshot/migration-repo/_verify"
    ```
 

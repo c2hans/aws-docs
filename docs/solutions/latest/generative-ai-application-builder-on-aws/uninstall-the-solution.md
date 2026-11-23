@@ -23,7 +23,7 @@ You can uninstall the Generative AI Application Builder on AWS solution from the
 
 Determine whether the AWS Command Line Interface (AWS CLI) is available in your environment. For installation instructions, see [What Is the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS CLI User Guide*. After confirming that the AWS CLI is available, run the following command.
 
-```
+```bash
 $ aws cloudformation delete-stack --stack-name <installation-stack-name>
 ```
 
@@ -45,7 +45,7 @@ This solution is configured to retain the solution-created Amazon S3 bucket if y
 
 To delete the S3 bucket using AWS CLI, run the following command. You won’t need to empty the bucket first when using the --force option.
 
-```
+```bash
 $ aws s3 rb s3://<bucket-name> --force
 ```
 
@@ -64,7 +64,7 @@ To prevent accidental data loss, this solution is configured to retain the solut
 
 To delete the Amazon Kendra index using AWS CLI, run the following command:
 
-```
+```bash
 $ aws kendra delete-index --id<index-id>
 ```
 

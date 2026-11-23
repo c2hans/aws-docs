@@ -60,7 +60,7 @@ To instrument AWS SDK clients in the [AWS SDK for JavaScript v3](https://docs.aw
 
 **Example [blank-nodejs/function/index.js](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/blank-nodejs/function/index.js) – Tracing an AWS SDK client**
 
-```
+```javascript
 const AWSXRay = require('aws-xray-sdk-core');
 const { LambdaClient, GetAccountSettingsCommand } = require('@aws-sdk/client-lambda');
 

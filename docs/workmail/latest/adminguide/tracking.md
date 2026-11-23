@@ -70,7 +70,7 @@ We recommend using the default settings when enabling email event logging for Am
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -102,7 +102,7 @@ If you're a `WorkMailFullAccess` managed policy user, you must include the term 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

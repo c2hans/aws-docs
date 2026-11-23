@@ -116,7 +116,7 @@ AWS_BEARER_TOKEN_BEDROCK="<provide your Bedrock API key>"
 ------
 #### [ Invoke API ]
 
-```
+```python
 import json
 import boto3
 

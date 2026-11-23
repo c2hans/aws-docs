@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 Compare document counts and spot-check content on the Amazon OpenSearch Service domain before you widen scope:
 
-```
+```bash
 console clusters cat-indices --refresh
 console clusters curl target /<PILOT_INDEX>/_count
 console clusters curl target /<PILOT_INDEX>/_search?size=5&pretty

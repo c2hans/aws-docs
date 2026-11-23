@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::RouterInput FrozenFramesConfiguration
 
-<a name="aws-properties-mediaconnect-routerinput-frozenframesconfiguration-description"></a>The `FrozenFramesConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::RouterInput](aws-resource-mediaconnect-routerinput.md).
+Detects frozen video frames in the router input's source content and reports them through a CloudWatch metric, an EventBridge event, and a router input message.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-routerinput-frozenframesconfiguration-syntax"></a>
@@ -35,14 +35,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-routerinput-frozenframesconfiguration-properties"></a>
 
 `State`  <a name="cfn-mediaconnect-routerinput-frozenframesconfiguration-state"></a>
-Property description not available.
+Indicates whether frozen frames detection is enabled or disabled.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `ENABLED | DISABLED`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ThresholdSeconds`  <a name="cfn-mediaconnect-routerinput-frozenframesconfiguration-thresholdseconds"></a>
-Property description not available.
+The number of consecutive seconds of a frozen frame that MediaConnect must detect before it reports an issue.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `10`

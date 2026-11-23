@@ -34,7 +34,7 @@ It's easier to show than to explain\! Here's some CDK code that creates an Amazo
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 export class MyEcsConstructStack extends core.Stack {
   constructor(scope: core.App, id: string, props?: core.StackProps) {
     super(scope, id, props);
@@ -71,7 +71,7 @@ export class MyEcsConstructStack extends core.Stack {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 class MyEcsConstructStack extends core.Stack {
   constructor(scope, id, props) {
     super(scope, id, props);
@@ -102,7 +102,7 @@ module.exports = { MyEcsConstructStack }
 ------
 #### [ Python ]
 
-```
+```python
 class MyEcsConstructStack(core.Stack):
 
     def __init__(self, scope: core.Construct, id: str, **kwargs) -> None:
@@ -125,7 +125,7 @@ class MyEcsConstructStack(core.Stack):
 ------
 #### [ Java ]
 
-```
+```java
 public class MyEcsConstructStack extends Stack {
 
     public MyEcsConstructStack(final Construct scope, final String id) {
@@ -158,7 +158,7 @@ public class MyEcsConstructStack extends Stack {
 ------
 #### [ C\# ]
 
-```
+```csharp
 public class MyEcsConstructStack : Stack
 {
     public MyEcsConstructStack(Construct scope, string id, IStackProps props=null) : base(scope, id, props)

@@ -39,19 +39,19 @@ Use `iostat` from the `sysstat` package to measure disk write speed.
 
 Install `sysstat`:
 
-```
+```bash
 $ sudo yum install sysstat
 ```
 
 On Debian or Ubuntu, run the following command instead:
 
-```
+```bash
 $ sudo apt-get install sysstat
 ```
 
 Run `iostat` with extended statistics, reporting every 3 seconds:
 
-```
+```bash
 $ iostat -x 3
 ```
 
@@ -80,7 +80,7 @@ Use Performance Monitor (`perfmon`) to measure disk write speed.
 
 Alternatively, use the following PowerShell command to collect write speed samples:
 
-```
+```powershell
 Get-Counter '\PhysicalDisk(*)\Disk Write Bytes/sec' -SampleInterval 3 -MaxSamples 10
 ```
 

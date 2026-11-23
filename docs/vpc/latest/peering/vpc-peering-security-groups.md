@@ -65,7 +65,7 @@ In the following example, the response indicates that security group `sg-bbbb222
 aws ec2 describe-security-group-references --group-id {{sg-bbbb2222}}
 ```
 
-```
+```json
 {
   "SecurityGroupsReferenceSet": [
     {
@@ -110,7 +110,7 @@ In the following example, VPC A `(vpc-aaaaaaaa`) and VPC B were peered, and the 
 aws ec2 describe-stale-security-groups --vpc-id {{vpc-aaaaaaaa}}
 ```
 
-```
+```json
 {
     "StaleSecurityGroupSet": [
         {

@@ -10,7 +10,7 @@ Currently, CodeCatalyst only supports `exec` commands in your devfile. For more 
 
 The following example shows you how to specify `exec` commands in your devfile.
 
-```
+```yaml
 commands:
   - id: setupscript
     exec:
@@ -29,14 +29,14 @@ commands:
 
 After you're connected to your Dev Environment, you can execute defined commands through the terminal.
 
-```
+```sh
 /aws/mde/mde command {{<command-id>}}
 /aws/mde/mde command executescript
 ```
 
 For long running commands, you can use the streaming flag `-s` to output the execution of the command in real time.
 
-```
+```sh
 /aws/mde/mde -s command {{<command-id>}}
 ```
 

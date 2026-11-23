@@ -8,7 +8,7 @@ In addition to setting a custom experiment name, you can also specify a custom n
 
 **Create a pipeline**
 
-```
+```py
 pipeline_name = f"MyPipeline"
 pipeline = Pipeline(
     name=pipeline_name,
@@ -23,7 +23,7 @@ pipeline = Pipeline(
 
 **Pipeline definition file**
 
-```
+```json
 {
   ...,
   "PipelineExperimentConfig": {

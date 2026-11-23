@@ -38,7 +38,7 @@ For more information, see [Get information about multiple on-premises instances]
 **Tools for PowerShell V4**
 **Example 1: This example gets a list of available on-premises instance names.**
 
-```
+```powershell
 Get-CDOnPremiseInstanceList
 ```
 **Output:**
@@ -52,7 +52,7 @@ AssetTag12010298EX-2
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of available on-premises instance names.**
 
-```
+```powershell
 Get-CDOnPremiseInstanceList
 ```
 **Output:**

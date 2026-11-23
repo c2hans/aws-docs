@@ -16,7 +16,7 @@ This policy grants administrative permissions that allow a principal full access
 
 ****
 
-```
+```json
     {
     	"Version":"2012-10-17",
     	"Statement": [{

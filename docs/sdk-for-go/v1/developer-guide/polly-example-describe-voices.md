@@ -12,7 +12,7 @@ Choose `Copy` to save the code locally.
 
 Create the file *pollyDescribeVoices.go*. Import the packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -25,7 +25,7 @@ import (
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials`, load your configuration from the shared configuration file `~/.aws/config`, and create an Amazon Polly client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -35,14 +35,14 @@ svc := polly.New(sess)
 
 Create the input for and call `DescribeVoices`.
 
-```
+```go
 input := &polly.DescribeVoicesInput{LanguageCode: aws.String("en-US")}
 resp, err := svc.DescribeVoices(input)
 ```
 
 Display the name and gender of the voices.
 
-```
+```go
 for _, v := range resp.Voices {
     fmt.Println("Name:   " + *v.Name)
     fmt.Println("Gender: " + *v.Gender)

@@ -13,7 +13,7 @@ You can apply AND logic using multiple property names.
 
 Consider the following policy:
 
-```
+```json
 {
   "customer_interests": ["rugby"],
   "price_usd": [{"numeric": [">", 100]}]
@@ -32,7 +32,7 @@ You can apply OR logic by assigning multiple values to a property name.
 
 Consider the following policy:
 
-```
+```json
 {
    "customer_interests": ["rugby", "football", "baseball"]
 }
@@ -54,7 +54,7 @@ Otherwise `"$or"` is treated as a normal attribute name, the same as other strin
 
 The following policy isn't parsed as an OR relationship because numeric and prefix are reserved keywords.
 
-```
+```json
 {
    "$or": [ {"numeric" : 123}, {"prefix": "abc"} ]
 }
@@ -64,7 +64,7 @@ The following policy isn't parsed as an OR relationship because numeric and pref
 
 Standard `OR`:
 
-```
+```json
 {
   "source": [ "aws.cloudwatch" ],
   "$or": [
@@ -76,27 +76,27 @@ Standard `OR`:
 
 The filter logic for this policy is:
 
-```
+```json
 "source" && ("metricName" || "namespace")
 ```
 
 It matches either of the following sets of message attributes:
 
-```
+```json
 "source": {"Type": "String", "Value": "aws.cloudwatch"},
 "metricName": {"Type": "String", "Value": "CPUUtilization"}
 ```
 
 or
 
-```
+```json
 "source": {"Type": "String", "Value": "aws.cloudwatch"},
 "namespace": {"Type": "String", "Value": "AWS/EC2"}
 ```
 
 It also matches either of the following message bodies:
 
-```
+```json
 {
     "source": "aws.cloudwatch",
     "metricName": "CPUUtilization"
@@ -105,7 +105,7 @@ It also matches either of the following message bodies:
 
 or
 
-```
+```json
 {
     "source": "aws.cloudwatch",
     "namespace": "AWS/EC2"
@@ -117,7 +117,7 @@ or
 
 Consider the following policy:
 
-```
+```json
 {
     "source": [ "aws.cloudwatch" ],
     "$or": [
@@ -135,7 +135,7 @@ Consider the following policy:
 
 The logic for this policy can also be simplified as:
 
-```
+```json
 ("source" AND "metricName")
 OR
 ("source" AND "metricType" AND "metricId")
@@ -147,7 +147,7 @@ The complexity calculation for policies with OR relationships can be simplified 
 
 The total combination is calculated as follows:
 
-```
+```json
 (source * metricName) + (source * metricType * metricId) + (source * metricType * spaceId)
 = (1 * 2) + (1 * 1 * 2) + (1 * 1 * 3)
 = 7
@@ -157,7 +157,7 @@ The total combination is calculated as follows:
 
 Consider the following nested filter policy:
 
-```
+```json
 {
     "$or": [
       { "metricName": [ "CPUUtilization", "ReadLatency" ] },
@@ -175,7 +175,7 @@ Consider the following nested filter policy:
 
 The logic for this policy can be simplified as:
 
-```
+```json
 ("metricName" AND ("detail"."scope" AND "detail"."source")
 OR
 ("metricName" AND ("detail"."scope" AND "detail"."type")
@@ -189,7 +189,7 @@ The calculation for total combinations is the same for non-nested policies excep
 
 The total combination is calculated as follows:
 
-```
+```json
 (2 * 2 * 2) + (2 * 2 * 2) + (2 * 2 * 2) + (2 * 2 * 2) = 32
 ```
 

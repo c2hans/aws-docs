@@ -26,7 +26,7 @@ An AWS account ID is a twelve-digit number, including leading zeros.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -15,7 +15,7 @@ SSM uses exponential backoff for credential refresh retries if it is unable to c
 
 Get the SSM agent version. You can also check the Fleet Manager section of the SSM console:
 
-```
+```bash
 # AL2023, RHEL
 yum info amazon-ssm-agent
 # Ubuntu
@@ -24,7 +24,7 @@ snap list amazon-ssm-agent
 
 Restart the SSM agent:
 
-```
+```bash
 # AL2023, RHEL
 systemctl restart amazon-ssm-agent
 # Ubuntu
@@ -33,13 +33,13 @@ systemctl restart snap.amazon-ssm-agent.amazon-ssm-agent
 
 View SSM agent logs:
 
-```
+```bash
 tail -f /var/log/amazon/ssm/amazon-ssm-agent.log
 ```
 
 Expected log messages during network disconnections:
 
-```
+```bash
 INFO [CredentialRefresher] Credentials ready
 INFO [CredentialRefresher] Next credential rotation will be in 29.995040663666668 minutes
 ERROR [CredentialRefresher] Retrieve credentials produced error: RequestError: send request failed

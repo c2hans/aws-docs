@@ -20,7 +20,7 @@ In this example, you will create and compare maps from two different political v
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -90,7 +90,7 @@ In this example, you will create and compare maps from two different political v
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body { height: 100%; }
 #internationalView, #turkeyView { height: 100%; width: 100%; }

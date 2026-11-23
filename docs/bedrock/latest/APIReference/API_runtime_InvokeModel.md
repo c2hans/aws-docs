@@ -8,7 +8,7 @@ Invokes the specified Amazon Bedrock model to run inference using the prompt and
 
 For example code, see [Invoke model code examples](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-invoke.html#inference-example-invoke).
 
-This operation requires permission for the `bedrock:InvokeModel` action.
+This operation requires permission for the `bedrock:InvokeModel` action on both the inference target and the project. If you omit `projectIdentifier` or specify `default`, this includes permission on the default project for your account.
 
 **Important**
 To deny all inference access to resources that you specify in the modelId field, you need to deny access to the `bedrock:InvokeModel` and `bedrock:InvokeModelWithResponseStream` actions. Doing this also denies access to the resource through the Converse API actions ([Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) and [ConverseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ConverseStream.html)). For more information see [Deny access for inference on specific models](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-deny-inference).
@@ -28,6 +28,7 @@ X-Amzn-Bedrock-GuardrailVersion: {{guardrailVersion}}
 X-Amzn-Bedrock-PerformanceConfig-Latency: {{performanceConfigLatency}}
 X-Amzn-Bedrock-Service-Tier: {{serviceTier}}
 X-Amzn-Bedrock-Request-Metadata: {{requestMetadata}}
+X-Amzn-Bedrock-ProjectIdentifier: {{projectIdentifier}}
 
 {{body}}
 ```
@@ -72,6 +73,12 @@ Required: Yes
  ** [performanceConfigLatency](#API_runtime_InvokeModel_RequestSyntax) **   <a name="bedrock-runtime_InvokeModel-request-performanceConfigLatency"></a>
 Model performance settings for the request.
 Valid Values: `standard | optimized`
+
+ ** [projectIdentifier](#API_runtime_InvokeModel_RequestSyntax) **   <a name="bedrock-runtime_InvokeModel-request-projectIdentifier"></a>
+The ID or Amazon Resource Name (ARN) of the project to use for this invocation. The project must be active and belong to your AWS account and the AWS Region to which you send the request. Specify `default` or omit this field to use the default project for your account.
+For a non-default project, the inference target must resolve to a foundation model or system-defined inference profile. Application inference profiles don't support non-default projects.
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `([a-zA-Z0-9_-]+|arn:aws(|-us-gov|-cn|-iso|-iso-b|-iso-f|-eusc):bedrock:[0-9a-z-]{1,20}:[0-9]{12}:project/[a-zA-Z0-9_-]+)`
 
  ** [requestMetadata](#API_runtime_InvokeModel_RequestSyntax) **   <a name="bedrock-runtime_InvokeModel-request-requestMetadata"></a>
 Key-value pairs that you can use to filter invocation logs.
@@ -190,7 +197,7 @@ Send an invoke request to run inference on a Titan Text G1 - Express model. We s
 #### Sample Request
 <a name="API_runtime_InvokeModel_Example_1_Request"></a>
 
-```
+```http
 POST https://bedrock-runtime.us-east-1.amazonaws.com/model/amazon.titan-text-express-v1/invoke
 
 -H accept: */*
@@ -208,7 +215,7 @@ In the following example, the request sets the `accept` parameter to `image/png`
 #### Sample Request
 <a name="API_runtime_InvokeModel_Example_2_Request"></a>
 
-```
+```http
 POST https://bedrock-runtime.us-east-1.amazonaws.com/model/stability.stable-diffusion-xl-v1/invoke
 
 -H accept: image/png
@@ -226,7 +233,7 @@ This example shows how to use a guardrail with `InvokeModel`.
 #### Sample Request
 <a name="API_runtime_InvokeModel_Example_3_Request"></a>
 
-```
+```http
 POST /model/modelId/invoke HTTP/1.1
 Accept: accept
 Content-Type: contentType
@@ -253,7 +260,7 @@ This is an example response from `InvokeModel` when using a guardrail.
 #### Sample Request
 <a name="API_runtime_InvokeModel_Example_4_Request"></a>
 
-```
+```http
 HTTP/1.1 200
 Content-Type: contentType
 
@@ -278,7 +285,7 @@ The following request calls the US Anthropic Claude 3.5 Sonnet inference profile
 #### Sample Request
 <a name="API_runtime_InvokeModel_Example_5_Request"></a>
 
-```
+```http
 POST /model/us.anthropic.claude-3-5-sonnet-20240620-v1:0/invoke HTTP/1.1
 
 {

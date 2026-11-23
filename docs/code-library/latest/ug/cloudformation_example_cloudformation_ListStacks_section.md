@@ -44,17 +44,17 @@ For more information, see [Managing AWS resources as a single unit with CloudFor
 **Tools for PowerShell V4**
 **Example 1: Returns summary information for all stacks.**
 
-```
+```powershell
 Get-CFNStackSummary
 ```
 **Example 2: Returns summary information for all stacks that are currently being created.**
 
-```
+```powershell
 Get-CFNStackSummary -StackStatusFilter "CREATE_IN_PROGRESS"
 ```
 **Example 3: Returns summary information for all stacks that are currently being created or updated.**
 
-```
+```powershell
 Get-CFNStackSummary -StackStatusFilter @("CREATE_IN_PROGRESS", "UPDATE_IN_PROGRESS")
 ```
 +  For API details, see [ListStacks](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -62,17 +62,17 @@ Get-CFNStackSummary -StackStatusFilter @("CREATE_IN_PROGRESS", "UPDATE_IN_PROGRE
 **Tools for PowerShell V5**
 **Example 1: Returns summary information for all stacks.**
 
-```
+```powershell
 Get-CFNStackSummary
 ```
 **Example 2: Returns summary information for all stacks that are currently being created.**
 
-```
+```powershell
 Get-CFNStackSummary -StackStatusFilter "CREATE_IN_PROGRESS"
 ```
 **Example 3: Returns summary information for all stacks that are currently being created or updated.**
 
-```
+```powershell
 Get-CFNStackSummary -StackStatusFilter @("CREATE_IN_PROGRESS", "UPDATE_IN_PROGRESS")
 ```
 +  For API details, see [ListStacks](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

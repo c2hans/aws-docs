@@ -10,7 +10,7 @@ After subscribing to the model of your choice in AWS Marketplace, you can deploy
 
 For example, the following code deploys a JumpStart model using Jurassic-2 Jumbo Instruct from AI21 Labs:
 
-```
+```python
 from sagemaker.core.resources import ModelPackage
 from sagemaker.serve import ModelBuilder
 

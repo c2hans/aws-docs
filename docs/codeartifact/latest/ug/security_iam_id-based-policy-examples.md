@@ -54,7 +54,7 @@ The following AWS managed policies, which you can attach to users in your accoun
 
 ****
 
-  ```
+  ```json
   {
      "Version":"2012-10-17",
      "Statement": [
@@ -87,7 +87,7 @@ The following AWS managed policies, which you can attach to users in your accoun
 
 ****
 
-  ```
+  ```json
   {
      "Version":"2012-10-17",
      "Statement": [
@@ -126,7 +126,7 @@ You can also create your own custom IAM policies to allow permissions for CodeAr
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -173,7 +173,7 @@ The `codeartifact:GetAuthorizationToken` and `sts:GetServiceBearerToken` permiss
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -213,7 +213,7 @@ The following shows an example of a permissions policy that allows a user to lis
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -240,7 +240,7 @@ The `codeartifact:GetAuthorizationToken` and `sts:GetServiceBearerToken` permiss
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -303,7 +303,7 @@ With this policy, users will only be able to create authorization tokens with a 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -341,7 +341,7 @@ With this policy, users will be able to create tokens that are valid between 15 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

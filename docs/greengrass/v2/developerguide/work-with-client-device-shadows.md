@@ -44,7 +44,7 @@ You can use these configuration examples in the AWS IoT Greengrass console. If y
 **Example: Manage all client device shadows**
 The following MQTT bridge configuration example enables shadow manager to manage all shadows for all client devices.
 
-```
+```json
 {
   "mqttTopicMapping": {
     "ShadowsLocalMqttToPubsub": {
@@ -64,7 +64,7 @@ The following MQTT bridge configuration example enables shadow manager to manage
 **Example: Manage shadows for a client device**
 The following MQTT bridge configuration example enables shadow manager to manage all shadows for a client device named `MyClientDevice`.
 
-```
+```json
 {
   "mqttTopicMapping": {
     "ShadowsLocalMqttToPubsub": {
@@ -84,7 +84,7 @@ The following MQTT bridge configuration example enables shadow manager to manage
 **Example: Manage a named shadow for all client devices**
 The following MQTT bridge configuration example enables shadow manager to manage a shadow named `DeviceConfiguration` for all client devices.
 
-```
+```json
 {
   "mqttTopicMapping": {
     "ShadowsLocalMqttToPubsub": {
@@ -104,7 +104,7 @@ The following MQTT bridge configuration example enables shadow manager to manage
 **Example: Manage all client devices' unnamed shadows**
 The following MQTT bridge configuration example enables shadow manager to manage unnamed shadows, but not named shadows, for all client devices.
 
-```
+```json
 {
   "mqttTopicMapping": {
     "DeleteShadowLocalMqttToPubsub": {

@@ -24,7 +24,7 @@ The following code example shows how to use `BatchGetSecretValue`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/smr#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_filter_name = 'mySecret'
         DATA(lo_result) = lo_smr->batchgetsecretvalue(
@@ -61,7 +61,7 @@ The following code example shows how to use `GetSecretValue`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/smr#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_secret_name = 'MySecretName'
         DATA(lo_result) = lo_smr->getsecretvalue( iv_secretid = iv_secret_name ).

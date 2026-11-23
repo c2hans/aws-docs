@@ -43,6 +43,7 @@ The following actions are supported by Amazon Transcribe Service:
 +  [StartMedicalTranscriptionJob](API_StartMedicalTranscriptionJob.md)
 +  [StartTranscriptionJob](API_StartTranscriptionJob.md)
 +  [TagResource](API_TagResource.md)
++  [TranscribeAudio](API_TranscribeAudio.md)
 +  [UntagResource](API_UntagResource.md)
 +  [UpdateCallAnalyticsCategory](API_UpdateCallAnalyticsCategory.md)
 +  [UpdateLanguageModel](API_UpdateLanguageModel.md)

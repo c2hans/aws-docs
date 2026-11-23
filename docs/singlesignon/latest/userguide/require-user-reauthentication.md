@@ -18,7 +18,7 @@ In the CloudTrail event, the setting appears in `requestParameters.idpSAMLConfig
 
 The following example shows the relevant fields of a CloudTrail event in which an administrator set user re-authentication to **Required**.
 
-```
+```json
 {
   "eventName": "UpdateExternalIdPConfigurationForDirectory",
   "eventSource": "sso-directory.amazonaws.com",

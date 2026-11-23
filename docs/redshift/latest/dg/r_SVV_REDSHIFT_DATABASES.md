@@ -32,7 +32,7 @@ Use the [SHOW DATABASES](r_SHOW_DATABASES.md) command for database discovery. SH
 
 The following example returns the output for SVV\_REDSHIFT\_DATABASES.
 
-```
+```sql
 select database_name, database_owner, database_type, database_options, database_isolation_level
 from  svv_redshift_databases;
 

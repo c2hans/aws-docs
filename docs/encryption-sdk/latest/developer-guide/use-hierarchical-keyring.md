@@ -142,7 +142,7 @@ To customize the Default cache, specify the following values:
 ------
 #### [ Java ]
 
-```
+```java
 .cache(CacheType.builder()
         .Default(DefaultCache.builder()
         .entryCapacity({{100}})
@@ -152,7 +152,7 @@ To customize the Default cache, specify the following values:
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 CacheType defaultCache = new CacheType
 {
     Default = new DefaultCache{EntryCapacity = {{100}}}
@@ -162,7 +162,7 @@ CacheType defaultCache = new CacheType
 ------
 #### [ Python ]
 
-```
+```python
 default_cache = CacheTypeDefault(
     value=DefaultCache(
         entry_capacity={{100}}
@@ -173,7 +173,7 @@ default_cache = CacheTypeDefault(
 ------
 #### [ Rust ]
 
-```
+```rust
 let cache: CacheType = CacheType::Default(
     DefaultCache::builder()
         .entry_capacity({{100}})
@@ -184,7 +184,7 @@ let cache: CacheType = CacheType::Default(
 ------
 #### [ Go ]
 
-```
+```go
 cache := mpltypes.CacheTypeMemberDefault{
 		Value: mpltypes.DefaultCache{
 			EntryCapacity: 100,
@@ -206,7 +206,7 @@ To use the MultiThreaded cache, specify the following values:
 ------
 #### [ Java ]
 
-```
+```java
 .cache(CacheType.builder()
         .MultiThreaded(MultiThreadedCache.builder()
         .entryCapacity({{100}})
@@ -217,7 +217,7 @@ To use the MultiThreaded cache, specify the following values:
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 CacheType multithreadedCache = new CacheType
 {
     MultiThreaded = new MultiThreadedCache
@@ -231,7 +231,7 @@ CacheType multithreadedCache = new CacheType
 ------
 #### [ Python ]
 
-```
+```python
 multithreaded_cache = CacheTypeMultiThreaded(
     value=MultiThreadedCache(
         entry_capacity={{100}},
@@ -243,7 +243,7 @@ multithreaded_cache = CacheTypeMultiThreaded(
 ------
 #### [ Rust ]
 
-```
+```rust
 CacheType::MultiThreaded(
             MultiThreadedCache::builder()
                     .entry_capacity({{100}})
@@ -254,7 +254,7 @@ CacheType::MultiThreaded(
 ------
 #### [ Go ]
 
-```
+```go
 var entryPruningTailSize int32 = 1
 	cache := mpltypes.CacheTypeMemberMultiThreaded{
 		Value: mpltypes.MultiThreadedCache{
@@ -297,7 +297,7 @@ To use the StormTracking cache, specify the following values:
 ------
 #### [ Java ]
 
-```
+```java
 .cache(CacheType.builder()
         .StormTracking(StormTrackingCache.builder()
         .entryCapacity({{100}})
@@ -313,7 +313,7 @@ To use the StormTracking cache, specify the following values:
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 CacheType stormTrackingCache = new CacheType
 {
     StormTracking = new StormTrackingCache
@@ -332,7 +332,7 @@ CacheType stormTrackingCache = new CacheType
 ------
 #### [ Python ]
 
-```
+```python
 storm_tracking_cache = CacheTypeStormTracking(
     value=StormTrackingCache(
         entry_capacity={{100}},
@@ -349,7 +349,7 @@ storm_tracking_cache = CacheTypeStormTracking(
 ------
 #### [ Rust ]
 
-```
+```rust
 CacheType::StormTracking(
                 StormTrackingCache::builder()
                     .entry_capacity({{100}})
@@ -365,7 +365,7 @@ CacheType::StormTracking(
 ------
 #### [ Go ]
 
-```
+```go
 var entryPruningTailSize int32 = 1
 	cache := mpltypes.CacheTypeMemberStormTracking{
 		Value: mpltypes.StormTrackingCache{
@@ -401,7 +401,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ Java ]
 
-   ```
+   ```java
    // Instantiate the MPL
    final MaterialProviders matProv =
        MaterialProviders.builder()
@@ -427,7 +427,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    // Instantiate the MPL
    var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 
@@ -443,7 +443,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ Python ]
 
-   ```
+   ```python
    # Instantiate the MPL
    mat_prov: AwsCryptographicMaterialProviders = AwsCryptographicMaterialProviders(
        config=MaterialProvidersConfig()
@@ -469,7 +469,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ Rust ]
 
-   ```
+   ```rust
    // Instantiate the MPL
    let mpl_config = MaterialProvidersConfig::builder().build()?;
    let mpl = mpl_client::Client::from_conf(mpl_config)?;
@@ -492,7 +492,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ Go ]
 
-   ```
+   ```go
    import (
        "context"
 
@@ -532,7 +532,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ Java ]
 
-   ```
+   ```java
    // Create a CacheType object for the sharedCryptographicMaterialsCache
    final CacheType sharedCache =
        CacheType.builder()
@@ -543,7 +543,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    // Create a CacheType object for the sharedCryptographicMaterialsCache
    var sharedCache = new CacheType { Shared = sharedCryptographicMaterialsCache };
    ```
@@ -551,7 +551,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ Python ]
 
-   ```
+   ```python
    # Create a CacheType object for the shared_cryptographic_materials_cache
    shared_cache: CacheType = CacheTypeShared(
        value=shared_cryptographic_materials_cache
@@ -561,7 +561,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ Rust ]
 
-   ```
+   ```rust
    // Create a CacheType object for the shared_cryptographic_materials_cache
    let shared_cache: CacheType = CacheType::Shared(shared_cryptographic_materials_cache);
    ```
@@ -569,7 +569,7 @@ The following procedures demonstrate how to create a Shared cache with the [Defa
 ------
 #### [ Go ]
 
-   ```
+   ```go
    // Create a CacheType object for the shared_cryptographic_materials_cache
    shared_cache := mpltypes.CacheTypeMemberShared{sharedCryptographicMaterialsCache}
    ```
@@ -587,7 +587,7 @@ Your Hierarchical keyrings will share the same cache entries in a Shared cache i
 ------
 #### [ Java ]
 
-   ```
+   ```java
    // Create the Hierarchical keyring
    final CreateAwsKmsHierarchicalKeyringInput keyringInput =
        CreateAwsKmsHierarchicalKeyringInput.builder()
@@ -603,7 +603,7 @@ Your Hierarchical keyrings will share the same cache entries in a Shared cache i
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    // Create the Hierarchical keyring
    var createKeyringInput = new CreateAwsKmsHierarchicalKeyringInput
    {
@@ -619,7 +619,7 @@ Your Hierarchical keyrings will share the same cache entries in a Shared cache i
 ------
 #### [ Python ]
 
-   ```
+   ```python
    # Create the Hierarchical keyring
    keyring_input: CreateAwsKmsHierarchicalKeyringInput = CreateAwsKmsHierarchicalKeyringInput(
        key_store=keystore,
@@ -637,7 +637,7 @@ Your Hierarchical keyrings will share the same cache entries in a Shared cache i
 ------
 #### [ Rust ]
 
-   ```
+   ```rust
    // Create the Hierarchical keyring
    let keyring1 = mpl
        .create_aws_kms_hierarchical_keyring()
@@ -656,7 +656,7 @@ Your Hierarchical keyrings will share the same cache entries in a Shared cache i
 ------
 #### [ Go ]
 
-   ```
+   ```go
    // Create the Hierarchical keyring
    hkeyringInput := mpltypes.CreateAwsKmsHierarchicalKeyringInput{
        KeyStore:    keyStore1,
@@ -717,7 +717,7 @@ The following examples show how to configure a key store with a static configura
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.kms.KmsClient;
 import software.amazon.cryptography.keystore.KeyStore;
@@ -740,7 +740,7 @@ final KeyStore keystore = KeyStore.builder()
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 using Amazon.DynamoDBv2;
 using Amazon.KeyManagementService;
 using AWS.Cryptography.KeyStore;
@@ -760,7 +760,7 @@ var keystore = new KeyStore(keystoreConfig);
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 from aws_cryptographic_material_providers.keystore import KeyStore
 from aws_cryptographic_material_providers.keystore.config import KeyStoreConfig
@@ -785,7 +785,7 @@ keystore: KeyStore = KeyStore(
 ------
 #### [ Rust ]
 
-```
+```rust
 use aws_esdk::key_store::client as keystore_client;
 use aws_esdk::key_store::types::key_store_config::KeyStoreConfig;
 use aws_esdk::key_store::types::KmsConfiguration;
@@ -805,7 +805,7 @@ let keystore = keystore_client::Client::from_conf(key_store_config)?;
 ------
 #### [ Go ]
 
-```
+```go
 import (
     "context"
 
@@ -850,7 +850,7 @@ The following examples demonstrate how to create a Hierarchical keyring with a s
 ------
 #### [ Java ]
 
-```
+```java
 final MaterialProviders matProv = MaterialProviders.builder()
         .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
         .build();
@@ -865,7 +865,7 @@ final Keyring hierarchicalKeyring = matProv.CreateAwsKmsHierarchicalKeyring(keyr
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var matProv = new MaterialProviders(new MaterialProvidersConfig());
 var keyringInput = new CreateAwsKmsHierarchicalKeyringInput
 {
@@ -879,7 +879,7 @@ var hierarchicalKeyring = matProv.CreateAwsKmsHierarchicalKeyring(keyringInput);
 ------
 #### [ Python ]
 
-```
+```python
 mat_prov: AwsCryptographicMaterialProviders = AwsCryptographicMaterialProviders(
     config=MaterialProvidersConfig()
 )
@@ -898,7 +898,7 @@ hierarchical_keyring: IKeyring = mat_prov.create_aws_kms_hierarchical_keyring(
 ------
 #### [ Rust ]
 
-```
+```rust
 let mpl_config = MaterialProvidersConfig::builder().build()?;
 let mpl = mpl_client::Client::from_conf(mpl_config)?;
 
@@ -914,7 +914,7 @@ let hierarchical_keyring = mpl
 ------
 #### [ Go ]
 
-```
+```go
 matProv, err := mpl.NewClient(mpltypes.MaterialProvidersConfig{})
 if err != nil {
     panic(err)
@@ -949,7 +949,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ Java ]
 
-   ```
+   ```java
    // Define a branch key ID supplier that uses the encryption context to
    // select a branch key ID for each tenant.
    public class ExampleBranchKeyIdSupplier implements IBranchKeyIdSupplier {
@@ -991,7 +991,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    // Define a branch key ID supplier that uses the encryption context to
    // select a branch key ID for each tenant.
    public class ExampleBranchKeySupplier : BranchKeyIdSupplierBase {
@@ -1029,7 +1029,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ Python ]
 
-   ```
+   ```python
    # Define a branch key ID supplier that uses the encryption context to
    # select a branch key ID for each tenant.
    class ExampleBranchKeyIdSupplier(IBranchKeyIdSupplier):
@@ -1067,7 +1067,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ Rust ]
 
-   ```
+   ```rust
    // Define a branch key ID supplier that uses the encryption context to
    // select a branch key ID for each tenant.
    pub struct ExampleBranchKeyIdSupplier {
@@ -1123,7 +1123,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ Go ]
 
-   ```
+   ```go
    // Define a branch key ID supplier that uses the encryption context to
    // select a branch key ID for each tenant.
    type branchKeySupplier struct {
@@ -1161,7 +1161,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ Java ]
 
-   ```
+   ```java
    final MaterialProviders matProv = MaterialProviders.builder()
            .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
            .build();
@@ -1180,7 +1180,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    var matProv = new MaterialProviders(new MaterialProvidersConfig());
    var keyringInput = new CreateAwsKmsHierarchicalKeyringInput
    {
@@ -1198,7 +1198,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ Python ]
 
-   ```
+   ```python
    mat_prov: AwsCryptographicMaterialProviders = AwsCryptographicMaterialProviders(
        config=MaterialProvidersConfig()
    )
@@ -1222,7 +1222,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ Rust ]
 
-   ```
+   ```rust
    let mpl_config = MaterialProvidersConfig::builder().build()?;
    let mpl = mpl_client::Client::from_conf(mpl_config)?;
 
@@ -1238,7 +1238,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
 ------
 #### [ Go ]
 
-   ```
+   ```go
    hkeyringInput := mpltypes.CreateAwsKmsHierarchicalKeyringInput{
        KeyStore:            keyStore,
        BranchKeyIdSupplier: &keySupplier,

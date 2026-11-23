@@ -21,7 +21,7 @@ The following code examples show how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```csharp
     static async Task Main(string[] args)
     {
         _configuration = new ConfigurationBuilder()
@@ -418,7 +418,7 @@ Run the interactive scenario at a command prompt.
 ```
 Create a class that wraps Auto Scaling and Amazon EC2 actions.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates Amazon EC2 Auto Scaling and EC2 management methods.
 /// </summary>
@@ -1307,7 +1307,7 @@ public class AutoScalerWrapper
 ```
 Create a class that wraps Elastic Load Balancing actions.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates Elastic Load Balancer actions.
 /// </summary>
@@ -1601,7 +1601,7 @@ public class ElasticLoadBalancerWrapper
 ```
 Create a class that uses DynamoDB to simulate a recommendation service.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates a DynamoDB table to use as a service that recommends books, movies, and songs.
 /// </summary>
@@ -1744,7 +1744,7 @@ public class Recommendations
 ```
 Create a class that wraps Systems Manager actions.
 
-```
+```csharp
 /// <summary>
 /// Encapsulates Systems Manager parameter operations. This example uses these parameters
 /// to drive the demonstration of resilient architecture, such as failure of a dependency or
@@ -1833,7 +1833,7 @@ public class SmParameterWrapper
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```java
 public class Main {
 
     public static final String fileName = "C:\\AWS\\resworkflow\\recommendations.json"; // Modify file location.
@@ -2267,7 +2267,7 @@ public class Main {
 ```
 Create a class that wraps Auto Scaling and Amazon EC2 actions.
 
-```
+```java
 public class AutoScaler {
 
     private static Ec2Client ec2Client;
@@ -2760,7 +2760,7 @@ public class AutoScaler {
 ```
 Create a class that wraps Elastic Load Balancing actions.
 
-```
+```java
 public class LoadBalancer {
     public ElasticLoadBalancingV2Client elasticLoadBalancingV2Client;
 
@@ -2954,7 +2954,7 @@ public class LoadBalancer {
 ```
 Create a class that uses DynamoDB to simulate a recommendation service.
 
-```
+```java
 public class Database {
 
     private static DynamoDbClient dynamoDbClient;
@@ -3084,7 +3084,7 @@ public class Database {
 ```
 Create a class that wraps Systems Manager actions.
 
-```
+```java
 public class ParameterHelper {
 
     String tableName = "doc-example-resilient-architecture-table";
@@ -3149,7 +3149,7 @@ public class ParameterHelper {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```javascript
 #!/usr/bin/env node
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -3204,7 +3204,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 ```
 Create steps to deploy all of the resources.
 
-```
+```javascript
 import { join } from "node:path";
 import { readFileSync, writeFileSync } from "node:fs";
 import axios from "axios";
@@ -3816,7 +3816,7 @@ export const deploySteps = [
 ```
 Create steps to run the demo.
 
-```
+```javascript
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -4277,7 +4277,7 @@ async function createSsmOnlyInstanceProfile() {
 ```
 Create steps to destroy all of the resources.
 
-```
+```javascript
 import { unlinkSync } from "node:fs";
 
 import { DynamoDBClient, DeleteTableCommand } from "@aws-sdk/client-dynamodb";
@@ -4910,7 +4910,7 @@ async function findAutoScalingGroup(groupName) {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/cross_service/resilient_service#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```python
 class Runner:
     """
     Manages the deployment, demonstration, and destruction of resources for the resilient service.
@@ -5267,7 +5267,7 @@ if __name__ == "__main__":
 ```
 Create a class that wraps Auto Scaling and Amazon EC2 actions.
 
-```
+```python
 class AutoScalingWrapper:
     """
     Encapsulates Amazon EC2 Auto Scaling and EC2 management actions.
@@ -6062,7 +6062,7 @@ class AutoScalingWrapper:
 ```
 Create a class that wraps Elastic Load Balancing actions.
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 
@@ -6397,7 +6397,7 @@ class ElasticLoadBalancerWrapper:
 ```
 Create a class that uses DynamoDB to simulate a recommendation service.
 
-```
+```python
 class RecommendationService:
     """
     Encapsulates a DynamoDB table to use as a service that recommends books, movies,
@@ -6493,7 +6493,7 @@ class RecommendationService:
 ```
 Create a class that wraps Systems Manager actions.
 
-```
+```python
 class ParameterHelper:
     """
     Encapsulates Systems Manager parameters. This example uses these parameters to drive

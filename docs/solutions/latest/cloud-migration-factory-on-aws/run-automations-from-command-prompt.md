@@ -23,7 +23,7 @@ This section describes the steps to download a package from Cloud Migration Fact
 
 1. From the command line, ensure that you are within the root directory of the unzipped package, and run the following command:
 
-```
+```bash
 python [package master script file] [script arguments]
 ```
 
@@ -38,7 +38,7 @@ python [package master script file] [script arguments]
 
 We recommended creating this file once when deploying Cloud Migration Factory on AWS solution, as the content does not change after initial deployment, and stored in a central location on the automation server. This file provides the automation scripts with the Cloud Migration Factory on AWS API endpoints and other key parameters. An example of the default contents of the file is shown here:
 
-```
+```JSON
 {
  "UserApi": "cmfuserapi",
  "VpceId": "",
@@ -59,7 +59,7 @@ Most information required to compose this file for a deployed AWS Cloud Migratio
 
 1. Select **App integration**, which will provide the **App client configuration**.
 
-```
+```yaml
 {
  "UserApi": <UserApi-value>,
  "Region": <Region-value>,

@@ -15,7 +15,7 @@ To update a vehicle, run the following command.
 
 Replace {{file-name}} with the name of the .json file that contains the configuration of your vehicle.
 
-```
+```bash
 aws iotfleetwise update-vehicle --cli-input-json file://{{file-name}}.json
 ```
 
@@ -38,7 +38,7 @@ aws iotfleetwise update-vehicle --cli-input-json file://{{file-name}}.json
 **Important**  <a name="update-attributes-requirement"></a>
 Attributes must be defined in the associated vehicle model before you can add them to individual vehicles.
 
-```
+```json
  {
          "vehicleName": "{{vehicle-name}}",
          "modelManifestArn": "{{model-manifest-arn}}",
@@ -53,12 +53,12 @@ You can associate additional state templates or remove existing associations fro
 + `stateTemplatesToAdd`
 + `stateTemplatesToRemove`
 
-```
+```bash
 aws iotfleetwise update-vehicle --cli-input-json file://{{update-vehicle.json}}
 ```
 Where the `{{update-vehicle.json}}` file contains (for example):
 
-```
+```JSON
 {
     "vehicleName": "{{vehicle-name}}",
     "modelManifestArn": "{{model-manifest-arn}}",
@@ -83,7 +83,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

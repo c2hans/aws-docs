@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # SearchFacets
 
-Returns available facet values for filtering listings, such as categories, pricing models, fulfillment option types, publishers, and customer ratings. Each facet value includes a count of matching listings.
+Retrieves the available facet values for filtering listings, such as categories, pricing models, fulfillment option types, publishers, and customer ratings. Each facet value includes a count of matching listings.
 
 ## Request Syntax
 <a name="API_marketplace-discovery_SearchFacets_RequestSyntax"></a>
@@ -38,27 +38,27 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [facetTypes](#API_marketplace-discovery_SearchFacets_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_SearchFacets-request-facetTypes"></a>
-A list of specific facet types to retrieve. If empty or null, all available facets are returned.
+The facet types to retrieve. If you omit this field or leave it empty, the service returns all available facets.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 30 items.
-Valid Values: `AVERAGE_CUSTOMER_RATING | CATEGORY | PUBLISHER | FULFILLMENT_OPTION_TYPE | PRICING_MODEL | PRICING_UNIT | DEPLOYED_ON_AWS | NUMBER_OF_PRODUCTS`
+Valid Values: `AVERAGE_CUSTOMER_RATING | CATEGORY | PUBLISHER | FULFILLMENT_OPTION_TYPE | PRICING_MODEL | PRICING_UNIT | DEPLOYED_ON_AWS | NUMBER_OF_PRODUCTS | CERTIFICATES | SPECIALIZATION | SPECIALIZATION_CATEGORY | SELLER_ENGAGEMENT | TRUST_CENTER`
 Required: No
 
  ** [filters](#API_marketplace-discovery_SearchFacets_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_SearchFacets-request-filters"></a>
-Filters to apply before retrieving facets. Multiple filters are combined with AND logic. Multiple values within the same filter are combined with OR logic.
+Filters to apply before retrieving facets. A result must match every filter. Within one filter, a result matches if it has any of the values.
 Type: Array of [SearchFilter](API_marketplace-discovery_SearchFilter.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 30 items.
 Required: No
 
  ** [locale](#API_marketplace-discovery_SearchFacets_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_SearchFacets-request-locale"></a>
-A BCP 47 language tag or comma-separated priority list specifying the preferred locale for response content. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If omitted, the service returns content in the default locale.
+The preferred locale for response content, as a Best Current Practice 47 (BCP 47) language tag or a comma-separated priority list of language tags. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If you omit this field, the service returns content in the default locale.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
 Required: No
 
  ** [nextToken](#API_marketplace-discovery_SearchFacets_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_SearchFacets-request-nextToken"></a>
-If `nextToken` is returned, there are more results available. Make the call again using the returned token to retrieve the next page.
+If the service returns `nextToken`, more results are available. The value of `nextToken` is a unique pagination token for each page. Make the call again with the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. An expired pagination token returns a `ValidationException`.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 8192.
 Pattern: `[a-zA-Z0-9+/=]+`
@@ -104,7 +104,7 @@ The following data is returned in JSON format by the service.
  ** [listingFacets](#API_marketplace-discovery_SearchFacets_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_SearchFacets-response-listingFacets"></a>
 A map of facet types to their corresponding facet values. Each facet value includes a display name, internal value, and count of matching listings.
 Type: String to array of [ListingFacet](API_marketplace-discovery_ListingFacet.md) objects map
-Valid Keys: `AVERAGE_CUSTOMER_RATING | CATEGORY | PUBLISHER | FULFILLMENT_OPTION_TYPE | PRICING_MODEL | PRICING_UNIT | DEPLOYED_ON_AWS | NUMBER_OF_PRODUCTS`
+Valid Keys: `AVERAGE_CUSTOMER_RATING | CATEGORY | PUBLISHER | FULFILLMENT_OPTION_TYPE | PRICING_MODEL | PRICING_UNIT | DEPLOYED_ON_AWS | NUMBER_OF_PRODUCTS | CERTIFICATES | SPECIALIZATION | SPECIALIZATION_CATEGORY | SELLER_ENGAGEMENT | TRUST_CENTER`
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
  ** [totalResults](#API_marketplace-discovery_SearchFacets_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_SearchFacets-response-totalResults"></a>
@@ -113,7 +113,7 @@ Type: Long
 Valid Range: Minimum value of 0.
 
  ** [nextToken](#API_marketplace-discovery_SearchFacets_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_SearchFacets-response-nextToken"></a>
-If `nextToken` is returned, there are more results available. Make the call again using the returned token to retrieve the next page.
+If the service returns `nextToken`, more results are available. The value of `nextToken` is a unique pagination token for each page. Make the call again with the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. An expired pagination token returns a `ValidationException`.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 8192.
 Pattern: `[a-zA-Z0-9+/=]+`
@@ -124,7 +124,7 @@ Pattern: `[a-zA-Z0-9+/=]+`
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-You don't have sufficient access to perform this action.
+You don't have sufficient access to perform this operation. For the permissions that each operation requires, see [Access control for the AWS Marketplace Discovery API](https://docs.aws.amazon.com/marketplace/latest/developerguide/discovery-api-access-control.html) in the *AWS Marketplace Developer Guide*.
 HTTP Status Code: 403
 
  ** InternalServerException **
@@ -132,13 +132,19 @@ Unexpected error during processing of the request.
 HTTP Status Code: 500
 
  ** ThrottlingException **
-The request was denied due to request throttling.
+The request was denied due to request throttling. Reduce the frequency of your requests and retry.
 HTTP Status Code: 429
 
  ** ValidationException **
-The input fails to satisfy the constraints specified by the service.
+The input fails to satisfy the constraints specified by the service. Check the `reason` field for the constraint that failed.
  ** reason **
-The reason that the input fails to satisfy the constraints specified by the service.
+The reason that the input fails to satisfy the constraints that the Discovery API specifies. This field has one of the following values:
+INVALID\_PAGINATION\_TOKEN
+The `nextToken` value is malformed, expired, or belongs to a different request. Start the pagination again from the first page.
+MALFORMED\_REQUEST\_PARAMETERS
+One or more request parameters have an invalid value. Correct the parameters that you specified, and then resubmit your request.
+PAGINATION\_LIMIT\_EXCEEDED
+The request asks for results beyond the deepest page that the operation returns. Narrow your request with filters or a more specific search.
 HTTP Status Code: 400
 
 ## See Also

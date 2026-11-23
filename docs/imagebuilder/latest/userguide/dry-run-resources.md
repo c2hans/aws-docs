@@ -49,7 +49,7 @@ An error occurred (DryRunOperationException) when calling the CreateInfrastructu
 
 The following example shows how to validate an infrastructure configuration with the [New-EC2IBInfrastructureConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2IBInfrastructureConfiguration.html) cmdlet. Setting the `DryRun` parameter to `$true` turns the request into a dry run:
 
-```
+```ps
 New-EC2IBInfrastructureConfiguration -Name {{my-example-infrastructure-configuration}} `
     -InstanceProfileName {{EC2InstanceProfileForImageBuilder}} `
     -DryRun $true

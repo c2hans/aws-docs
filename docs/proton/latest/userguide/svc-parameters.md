@@ -40,7 +40,7 @@ You can read parameters related to the service and to other resources in service
 
 The following example is a snippet from a service CloudFormation IaC file. The `environment.outputs.` namespace refers to outputs from the environment IaC file. The `service_instance.inputs.` namespace refers to service instance input parameters. The `service_instance.name` property refers to an AWS Proton resource parameter.
 
-```
+```yaml
 Resources:
   StoreServiceInstanceInputValue:
     Type: AWS::SSM::Parameter

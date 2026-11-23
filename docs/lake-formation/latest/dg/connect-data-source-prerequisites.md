@@ -26,7 +26,7 @@ We recommend that a Lake Formation data lake administrator creates the AWS Glue 
 
 ****
 
-     ```
+     ```json
      {
        "Version":"2012-10-17",
        "Statement": [
@@ -64,7 +64,7 @@ We recommend that a Lake Formation data lake administrator creates the AWS Glue 
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -91,7 +91,7 @@ We recommend that a Lake Formation data lake administrator creates the AWS Glue 
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -162,7 +162,7 @@ We recommend that a Lake Formation data lake administrator creates the AWS Glue 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

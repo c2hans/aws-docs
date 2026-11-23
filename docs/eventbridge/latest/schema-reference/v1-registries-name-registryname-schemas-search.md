@@ -68,7 +68,7 @@ Search the schemas
 #### SearchSchemasOutput schema
 <a name="v1-registries-name-registryname-schemas-search-response-body-searchschemasoutput-example"></a>
 
-```
+```json
 {
   "NextToken": "string",
   "Schemas": [
@@ -91,7 +91,7 @@ Search the schemas
 #### ErrorOutput schema
 <a name="v1-registries-name-registryname-schemas-search-response-body-erroroutput-example"></a>
 
-```
+```json
 {
   "Message": "string",
   "Code": "string"

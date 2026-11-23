@@ -9,7 +9,7 @@ Amazon SageMaker Debugger is no longer open to new customers. Existing customers
 
 Use the `CollectionConfig` API operation to configure tensor collections. Debugger provides pre-built tensor collections that cover a variety of regular expressions (regex) of parameters if using Debugger-supported deep learning frameworks and machine learning algorithms. As shown in the following example code, add the built-in tensor collections you want to debug.
 
-```
+```py
 from sagemaker.core.debugger import CollectionConfig
 
 collection_configs=[
@@ -24,7 +24,7 @@ For a full list of available Debugger built-in collections, see [Debugger Built-
 
 If you want to customize the built-in collections, such as changing the save intervals and tensor regex, use the following `CollectionConfig` template to adjust parameters.
 
-```
+```py
 from sagemaker.core.debugger import CollectionConfig
 
 collection_configs=[
@@ -42,7 +42,7 @@ collection_configs=[
 
 For more information about available parameter keys, see [CollectionConfig](https://sagemaker.readthedocs.io/en/stable/api/training/debugger.html#sagemaker.debugger.CollectionConfig) in the [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable). For example, the following code example shows how you can adjust the save intervals of the "losses" tensor collection at different phases of training: save loss every 100 steps in training phase and validation loss every 10 steps in validation phase.
 
-```
+```py
 from sagemaker.core.debugger import CollectionConfig
 
 collection_configs=[

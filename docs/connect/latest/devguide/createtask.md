@@ -9,7 +9,7 @@ Creates a new task to run an assigned flow.
 ## Parameter object
 <a name="createtask-parameter"></a>
 
-```
+```json
 "Parameters":
 {
         "ContactFlowId": A flow ID or flow ARN. *Must be fully static or a single valid JSONPath identifier*,

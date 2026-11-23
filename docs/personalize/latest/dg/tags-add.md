@@ -54,7 +54,7 @@ You can use the AWS Command Line Interface (AWS CLI) to add tags when you create
 
 To create a new resource and add a tag to it with the AWS CLI, use the appropriate `create` command for the resource and include the `tags` parameter and values. For example, the following command creates a new Domain dataset group named `myDatasetGroup` for the ECOMMERCE domain, and adds the following tags: An `Environment` tag key with a `Test` tag value, and a `Owner` tag key and a `xyzCorp` value.
 
-```
+```cmd
 aws personalize create-dataset-group \
 --name myDatasetGroup \
 --domain ECOMMERCE \
@@ -68,7 +68,7 @@ For information about the commands that you can use to create an Amazon Personal
 
 To add a tag to an existing resource, use the `tag-resource` command. Specify the ARN of the resource and provide the tag key and value in the `tags` parameter.
 
-```
+```cmd
 aws personalize tag-resource \
 --resource-arn {{resource ARN}} \
 --tags tagKey={{key}},tagValue={{value}}
@@ -91,7 +91,7 @@ To create a new resource and add a tag to it with the AWS SDKs, use the appropri
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')
@@ -122,7 +122,7 @@ print('Status: ' + description['status'])
 ------
 #### [ SDK for Java 2.x ]
 
-```
+```java
 public static String createDomainDatasetGroup(PersonalizeClient personalizeClient,
                                               String datasetGroupName,
                                               String domain) {
@@ -165,7 +165,7 @@ The following code shows how to add a tag to an existing Amazon Personalize reso
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 personalize = boto3.client('personalize')
 
@@ -187,7 +187,7 @@ add_tags_response = personalize.tag_resource(
 ------
 #### [ SDK for Java 2.x ]
 
-```
+```java
 public static void tagResource(PersonalizeClient personalizeClient,
                                               String resourceArn,
                                               String domain) {

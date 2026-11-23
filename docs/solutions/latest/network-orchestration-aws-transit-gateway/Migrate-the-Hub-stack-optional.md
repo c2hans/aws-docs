@@ -21,7 +21,7 @@ You cannot directly update v1 to latest due to breaking changes in latest, inclu
 
    Edit the template to remove the `custom:` prefix from the Cognito User Pool attribute:
 
-   ```
+   ```yaml
    # Change from:
    Name: custom:CognitoUserGr
 
@@ -52,7 +52,7 @@ For spoke template, follow the steps provided in [Spoke stack](update-the-spoke-
 
    Edit the template to remove the `custom:` prefix from the Cognito User Pool attribute:
 
-   ```
+   ```yaml
    # Change from:
    Name: custom:CognitoUserGr
 

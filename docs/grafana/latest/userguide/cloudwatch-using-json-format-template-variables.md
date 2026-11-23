@@ -8,6 +8,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/cloudwatch-usin
 
  If `env = 'production', 'staging'`, the following query will return ARNs of EC2 instances for which the `Environment` tag is `production` or `staging`.
 
-```
+```javascript
 resource_arns(us-east-1, ec2:instance, {"Environment":${env:json}})
 ```

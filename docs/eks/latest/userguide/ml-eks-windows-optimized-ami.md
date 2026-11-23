@@ -47,7 +47,7 @@ To install the NVIDIA GRID drivers on your EKS worker nodes, follow the steps ou
 
 For Windows Server Core, which doesn’t have a desktop experience, install NVIDIA GRID drivers silently by using the following commands:
 
-```
+```bash
 $nvidiaInstallerFilePath = nvidia-driver-installer.exe # Replace with path to installer
 $installerArguments = "-s -clean -noreboot -noeula"
 Start-Process -FilePath $nvidiaInstallerFilePath -ArgumentList $installerArguments -Wait -NoNewWindow -PassThru
@@ -57,7 +57,7 @@ Start-Process -FilePath $nvidiaInstallerFilePath -ArgumentList $installerArgumen
 
 Run the following PowerShell command to show diagnostic information about the GPUs on the instance:
 
-```
+```bash
 nvidia-smi
 ```
 
@@ -76,18 +76,18 @@ The device plugin DaemonSet will run on every node as a host process container w
 When running GPU-accelerated containers, the device plugin supports two modes:
 +  **Single-tenancy mode**: This mode dedicates all GPU resources to a single container on the instance. Install the device plugins with single-tenancy support using the following command. See README.md for more information.
 
-  ```
+  ```bash
   kubectl apply -f "https://raw.githubusercontent.com/TensorWorks/directx-device-plugins/main/deployments/default-daemonsets.yml"
   ```
 +  **Multi-tenancy mode**: This mode allows sharing GPU resources among multiple containers on the instance. Install the device plugins with multi-tenancy support using the following command. See README.md for more information.
 
-  ```
+  ```bash
   kubectl apply -f "https://raw.githubusercontent.com/TensorWorks/directx-device-plugins/main/deployments/multitenancy-inline.yml"
   ```
 
   Alternatively, use a ConfigMap to specify the multi-tenancy.
 
-  ```
+  ```bash
   kubectl apply -f "https://raw.githubusercontent.com/TensorWorks/directx-device-plugins/main/deployments/multitenancy-configmap.yml"
   ```
 
@@ -96,7 +96,7 @@ When running GPU-accelerated containers, the device plugin supports two modes:
 
 After you have deployed the device plugin, replace `<namespace>` and run the following command to verify the DirectX Device Plugin is running correctly on all your Windows nodes.
 
-```
+```bash
 kubectl get ds device-plugin-wddm -n <namespace>
 ```
 
@@ -105,7 +105,7 @@ kubectl get ds device-plugin-wddm -n <namespace>
 
 Once the device plugin DaemonSet is running on the GPU-powered Windows worker nodes, use the following command to verify that each node has allocatable GPUs. The corresponding number should match the number of DirectX devices on each node.
 
-```
+```bash
 kubectl get nodes "-o=custom-columns=NAME:.metadata.name,DirectX:.status.allocatable.directx\.microsoft\.com/display"
 ```
 
@@ -116,7 +116,7 @@ Before launching your pods, specify the resource name `directx.microsoft.com/dis
 
 As an example, see the sample command below which launches a `Job` to run Monte Carlo simulation to estimate the value of pi. This example is from the [Kubernetes Device Plugins for DirectX](https://github.com/TensorWorks/DirectX-Device-Plugins) GitHub repository, which has [multiple examples](https://github.com/TensorWorks/DirectX-Device-Plugins/tree/main/examples) to choose from that you can run to test your Windows node GPU capabilities.
 
-```
+```bash
 cat <<EOF | kubectl apply -f -
 apiVersion: batch/v1
 kind: Job

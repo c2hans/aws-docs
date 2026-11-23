@@ -14,5 +14,5 @@ For information about creating machine learning products using the Catalog API, 
 + [Prerequisites for publishing ML product listings](cat-ml-prereqs.md)
 + [Add a new version](ml-add-version.md)
 + [Update version information](ml-update-version.md)
-+ [Update pricing terms](update-pricing-terms.md)
++ [Update pricing terms](ml-update-pricing-terms.md)
 + [Restrict a version](ml-restrict-version.md)

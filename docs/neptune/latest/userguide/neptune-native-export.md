@@ -55,7 +55,7 @@ The export feature involves two separate IAM roles:
 
 The IAM principal calling the export API must have the following Neptune data-access actions in its IAM policy:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -86,7 +86,7 @@ The export API requires *write* permissions to S3, unlike the bulk loader which 
 
 Attach the following permissions policy to the S3 access role:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -114,7 +114,7 @@ Attach the following permissions policy to the S3 access role:
 
 If you specify a `kmsKeyIdentifier` in the export request, add the following permissions to the S3 access role:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -151,7 +151,7 @@ POST https://your-neptune-endpoint:port/export
 ### Request body
 <a name="neptune-native-export-request-body"></a>
 
-```
+```json
 {
   "destination": "string",
   "format": "string",
@@ -197,7 +197,7 @@ Named graph URIs to export (maximum 100). Only data in the specified graphs is e
 ### Response syntax
 <a name="neptune-native-export-response"></a>
 
-```
+```json
 {
   "status": "string",
   "payload": {
@@ -230,7 +230,7 @@ Required. The unique identifier of the export task.
 ### Response syntax
 <a name="neptune-native-export-status-response"></a>
 
-```
+```json
 {
   "status": "string",
   "payload": {
@@ -305,7 +305,7 @@ GET https://your-neptune-endpoint:port/export
 ### Response syntax
 <a name="neptune-native-export-list-response"></a>
 
-```
+```json
 {
   "status": "string",
   "payload": [
@@ -335,7 +335,7 @@ Required. The unique identifier of the export task to cancel.
 ### Response syntax
 <a name="neptune-native-export-cancel-response"></a>
 
-```
+```json
 {
   "status": "string",
   "payload": {
@@ -382,7 +382,7 @@ The IAM role lacks required permissions for S3 or KMS access.
 ### Example error response
 <a name="neptune-native-export-errors-example"></a>
 
-```
+```json
 {
   "code": "BadRequestException",
   "requestId": "request-id",
@@ -397,7 +397,7 @@ The IAM role lacks required permissions for S3 or KMS access.
 ### Start an export
 <a name="neptune-native-export-examples-start"></a>
 
-```
+```bash
 curl -X POST https://your-cluster-endpoint:8182/export \
   -H "Content-Type: application/json" \
   -d '{
@@ -411,7 +411,7 @@ curl -X POST https://your-cluster-endpoint:8182/export \
 ### Start a filtered export (named graphs)
 <a name="neptune-native-export-examples-filtered"></a>
 
-```
+```bash
 curl -X POST https://your-cluster-endpoint:8182/export \
   -H "Content-Type: application/json" \
   -d '{
@@ -431,14 +431,14 @@ curl -X POST https://your-cluster-endpoint:8182/export \
 ### Check export status
 <a name="neptune-native-export-examples-status"></a>
 
-```
+```bash
 curl -X GET "https://your-cluster-endpoint:8182/export?exportId=<id>"
 ```
 
 ### Cancel an export
 <a name="neptune-native-export-examples-cancel"></a>
 
-```
+```bash
 curl -X DELETE "https://your-cluster-endpoint:8182/export?exportId=<id>"
 ```
 

@@ -137,7 +137,7 @@ To deploy a **conformance pack with one or more AWS Config rules**, see the [Pre
 
    You should see output similar to the following.
 
-   ```
+   ```yaml
    {
        "conformancePackArn": "arn:aws:config:us-west-2:{{AccountID}}:conformance-pack/MyConformancePack/{{conformance-pack-ID}}"
    }

@@ -12,6 +12,11 @@ Contains insights that AI generates for a lead. These insights provide automated
 **Note**
 In the following list, the required parameters are described first.
 
+ ** ChannelRecommendation **   <a name="AWSPartnerCentral-Type-LeadInsights-ChannelRecommendation"></a>
+The outreach channel most commonly recommended for leads that share this lead's country, geography, region, and company segment. It includes the days and the Coordinated Universal Time (UTC) hours when that channel is best used. This is guidance for the group of similar leads. It doesn't describe this lead's own contact history. Present only when a recommendation is available for the lead.
+Type: [ChannelRecommendation](API_ChannelRecommendation.md) object
+Required: No
+
  ** LeadReadinessScore **   <a name="AWSPartnerCentral-Type-LeadInsights-LeadReadinessScore"></a>
 A score that indicates the lead's readiness for engagement. Valid values are `Low`, `Medium`, and `High`. Use this score to prioritize leads based on their likelihood of conversion.
 Type: String

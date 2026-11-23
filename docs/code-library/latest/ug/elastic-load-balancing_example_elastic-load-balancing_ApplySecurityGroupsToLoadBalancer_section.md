@@ -38,7 +38,7 @@ For more information, see [Configure security groups for your Classic Load Balan
 **Tools for PowerShell V4**
 **Example 1: This example replaces the current security group for the specified load balancer with the specified security group.**
 
-```
+```powershell
 Join-ELBSecurityGroupToLoadBalancer -LoadBalancerName my-load-balancer -SecurityGroup sg-87654321
 ```
 **Output:**
@@ -48,7 +48,7 @@ sg-87654321
 ```
 **Example 2: To keep the current security group and specify an additional security group, specify both the existing and new security groups.**
 
-```
+```powershell
 Join-ELBSecurityGroupToLoadBalancer -LoadBalancerName my-load-balancer -SecurityGroup @("sg-12345678", "sg-87654321")
 ```
 **Output:**
@@ -62,7 +62,7 @@ sg-87654321
 **Tools for PowerShell V5**
 **Example 1: This example replaces the current security group for the specified load balancer with the specified security group.**
 
-```
+```powershell
 Join-ELBSecurityGroupToLoadBalancer -LoadBalancerName my-load-balancer -SecurityGroup sg-87654321
 ```
 **Output:**
@@ -72,7 +72,7 @@ sg-87654321
 ```
 **Example 2: To keep the current security group and specify an additional security group, specify both the existing and new security groups.**
 
-```
+```powershell
 Join-ELBSecurityGroupToLoadBalancer -LoadBalancerName my-load-balancer -SecurityGroup @("sg-12345678", "sg-87654321")
 ```
 **Output:**

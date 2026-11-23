@@ -17,7 +17,7 @@ The following table summarizes the question types.
 `yesNo`
 A question that Elemental Inference answers with one score. For example:
 
-```
+```json
 {
   "name": "scoreboard_visible",
   "question": "Is a scoreboard graphic visible on screen?"
@@ -27,7 +27,7 @@ A question that Elemental Inference answers with one score. For example:
 `yesNoPerOption`
 A question that you ask separately about each option. Each option gets its own yes score. The scores are independent, so they don't need to add up to any total, and several options can have high scores. Word the question so that it fits any of the options. For example:
 
-```
+```json
 {
   "name": "sponsor_logo",
   "question": "Is the logo of this brand visible?",
@@ -41,7 +41,7 @@ A question that you ask separately about each option. Each option gets its own y
 `chooseOne`
 A multiple-choice question. Elemental Inference returns the option that it selects, plus a score for each option. For example:
 
-```
+```json
 {
   "name": "play_type",
   "question": "What type of play is shown?",

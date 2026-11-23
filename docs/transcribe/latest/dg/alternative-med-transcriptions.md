@@ -57,7 +57,7 @@ To use the AWS Management Console to generate alternative transcriptions, you en
 
 The following request uses the AWS SDK for Python (Boto3) to start a transcription job that generates up to two alternative transcriptions.
 
-```
+```python
 from __future__ import print_function
 import time
 import boto3
@@ -103,7 +103,7 @@ print(status)
 
   The following code shows the contents of `example-start-command.json`.
 
-  ```
+  ```json
   {
         "MedicalTranscriptionJobName": "{{my-first-transcription-job}}",
         "LanguageCode": "en-US",

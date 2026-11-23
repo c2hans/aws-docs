@@ -46,7 +46,7 @@ You can reference the following authorization policy example to help you configu
 The following example authorization policy allows a component to get the value of any secret on the core device.
 We recommend that in a production environment, you reduce the scope of the authorization policy, so that the component retrieves only the secrets that it uses. You can change the `*` wildcard to a list of secret ARNs when you deploy the component.
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.SecretManager": {
@@ -127,7 +127,7 @@ The following examples demonstrate how to call this operation in custom componen
 **Example: Get a secret value**
 This example uses an `IPCUtils` class to create a connection to the AWS IoT Greengrass Core IPC service. For more information, see [Connect to the AWS IoT Greengrass Core IPC service](interprocess-communication.md#ipc-service-connect).
 
-```
+```java
 package com.aws.greengrass.docs.samples.ipc;
 
 import com.aws.greengrass.docs.samples.ipc.util.IPCUtils;
@@ -197,7 +197,7 @@ public class GetSecretValue {
 **Example: Get a secret value**
 This example assumes that you are using version 1.5.4 or later of the AWS IoT Device SDK for Python v2.
 
-```
+```python
 import json
 
 import awsiot.greengrasscoreipc
@@ -228,7 +228,7 @@ secret_json = json.loads(response.secret_value.secret_string)
 
 **Example: Get a secret value**
 
-```
+```javascript
 import {
     GetSecretValueRequest,
 } from 'aws-iot-device-sdk-v2/dist/greengrasscoreipc/model';
@@ -314,7 +314,7 @@ We recommend that in a production environment, you reduce the scope of the autho
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.PrintSecret",
@@ -371,7 +371,7 @@ We recommend that in a production environment, you reduce the scope of the autho
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.PrintSecret
@@ -413,7 +413,7 @@ Manifests:
 
 The following example Python application demonstrates how to use the secret manager IPC service to get the value of a secret on the core device.
 
-```
+```python
 import concurrent.futures
 import json
 import sys
@@ -474,7 +474,7 @@ You can use this example component with the [secret manager component](secret-ma
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    aws secretsmanager create-secret \
      --name MyTestGreengrassSecret \
      --secret-string '{"my-secret-key": "my-secret-value"}'
@@ -483,7 +483,7 @@ You can use this example component with the [secret manager component](secret-ma
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    aws secretsmanager create-secret ^
      --name MyTestGreengrassSecret ^
      --secret-string '{"my-secret-key": "my-secret-value"}'
@@ -492,7 +492,7 @@ You can use this example component with the [secret manager component](secret-ma
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    aws secretsmanager create-secret `
      --name MyTestGreengrassSecret `
      --secret-string '{"my-secret-key": "my-secret-value"}'
@@ -506,7 +506,7 @@ You can use this example component with the [secret manager component](secret-ma
 
 1. Deploy the [secret manager component](secret-manager-component.md) (`aws.greengrass.SecretManager`) with the following configuration merge update. Specify the ARN of the secret that you created earlier.
 
-   ```
+   ```json
    {
      "cloudSecrets": [
        {
@@ -520,7 +520,7 @@ You can use this example component with the [secret manager component](secret-ma
 
 1. Create and deploy the example component in this section with the following configuration merge update. Specify the ARN of the secret that you created earlier.
 
-   ```
+   ```json
    {
      "SecretArn": "{{arn:aws:secretsmanager:us-west-2:123456789012:secret:MyTestGreengrassSecret}}",
      "accessControl": {

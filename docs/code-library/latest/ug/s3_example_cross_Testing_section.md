@@ -15,7 +15,7 @@ The following code example shows how to examples for best-practice techniques wh
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/testing#code-examples).
 Cargo.toml for testing examples.
 
-```
+```rust
 [package]
 name = "testing-examples"
 version = "0.1.0"
@@ -47,7 +47,7 @@ path = "src/main.rs"
 ```
 Unit testing example using automock and a service wrapper.
 
-```
+```rust
 use aws_sdk_s3 as s3;
 #[allow(unused_imports)]
 use mockall::automock;
@@ -189,7 +189,7 @@ mod test {
 ```
 Integration testing example using StaticReplayClient.
 
-```
+```rust
 use aws_sdk_s3 as s3;
 
 #[allow(dead_code)]

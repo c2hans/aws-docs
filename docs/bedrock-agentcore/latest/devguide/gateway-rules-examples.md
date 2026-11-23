@@ -15,7 +15,7 @@ The following example creates a rule that pins a specific IAM principal to a con
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-rule \
        --gateway-identifier my-gateway-abc1234567 \
        --priority 100 \
@@ -48,7 +48,7 @@ The following example creates a rule that pins a specific IAM principal to a con
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -95,7 +95,7 @@ The following example creates a rule with no conditions. This rule matches all t
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-rule \
        --gateway-identifier my-gateway-abc1234567 \
        --priority 1000000 \
@@ -114,7 +114,7 @@ The following example creates a rule with no conditions. This rule matches all t
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -147,7 +147,7 @@ The following example creates a rule that splits traffic between two configurati
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-rule \
        --gateway-identifier my-gateway-abc1234567 \
        --priority 500 \
@@ -184,7 +184,7 @@ The following example creates a rule that splits traffic between two configurati
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -238,7 +238,7 @@ The following example creates a rule that routes requests matching a specific pa
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-rule \
        --gateway-identifier my-gateway-abc1234567 \
        --priority 150 \
@@ -265,7 +265,7 @@ The following example creates a rule that routes requests matching a specific pa
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -304,7 +304,7 @@ The following example creates a rule that splits traffic between two targets. In
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-rule \
        --gateway-identifier my-gateway-abc1234567 \
        --priority 300 \
@@ -335,7 +335,7 @@ The following example creates a rule that splits traffic between two targets. In
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -380,7 +380,7 @@ The following example creates a rule with both condition types and both action t
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-rule \
        --gateway-identifier my-gateway-abc1234567 \
        --priority 50 \
@@ -427,7 +427,7 @@ The following example creates a rule with both condition types and both action t
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -489,7 +489,7 @@ The following example retrieves the details of a specific gateway rule.
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control get-gateway-rule \
        --gateway-identifier my-gateway-abc1234567 \
        --rule-id 12345678-1234-1234-1234-123456789012
@@ -497,7 +497,7 @@ The following example retrieves the details of a specific gateway rule.
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -521,7 +521,7 @@ The following example updates the priority and description of an existing gatewa
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control update-gateway-rule \
        --gateway-identifier my-gateway-abc1234567 \
        --rule-id 12345678-1234-1234-1234-123456789012 \
@@ -531,7 +531,7 @@ The following example updates the priority and description of an existing gatewa
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -555,14 +555,14 @@ The following example lists all rules for a gateway. Results are sorted by prior
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control list-gateway-rules \
        --gateway-identifier my-gateway-abc1234567
    ```
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -584,7 +584,7 @@ The following example deletes a gateway rule.
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control delete-gateway-rule \
        --gateway-identifier my-gateway-abc1234567 \
        --rule-id 12345678-1234-1234-1234-123456789012
@@ -592,7 +592,7 @@ The following example deletes a gateway rule.
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")

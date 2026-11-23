@@ -19,7 +19,7 @@ The role permissions policy allows Systems Manager to complete the following act
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

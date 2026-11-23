@@ -73,7 +73,7 @@ Valid values: `10` to `42900`
 
 **Example: Configuration merge update**
 
-```
+```json
 {
    "port": 2020,
    "credentialRetryInSec": {
@@ -111,14 +111,14 @@ This component uses the same log file as the [Greengrass nucleus](greengrass-nuc
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
   ```
 

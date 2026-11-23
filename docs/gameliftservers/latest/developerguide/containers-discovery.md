@@ -41,13 +41,13 @@ Some containers don't use the server SDK, such as per-instance containers. These
 
 To retrieve container network information, send an HTTP `GET` request to this endpoint. The following example uses `curl`:
 
-```
+```bash
 curl "$GAMELIFT_CONTAINER_DISCOVERY_SERVER_ENDPOINT_V1"
 ```
 
 The discovery server returns a JSON array with one entry for each container running on the instance:
 
-```
+```json
 [
   {
     "containerName": "game-server",

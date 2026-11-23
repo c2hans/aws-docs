@@ -69,7 +69,7 @@ To work with a web ACL in your user pool, your AWS Identity and Access Managemen
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

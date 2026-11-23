@@ -12,6 +12,8 @@ You configure the Outpost subnet route tables to control which path to take to r
 
 ![Diagram showing a visualization of the Outpost service link and LGW network paths](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/outpost-service-link-and-lgw-network-paths.png)
 
+*Visualization of the Outpost service link and LGW network paths*
+
  You should take care when planning application routing to consider both normal operation and limited routing and service availability during network failures. The Service Link path is not available when an Outpost is disconnected from the Region.
 
  You should provision diverse paths and configure dynamic routing between the Outpost LGW and your critical on-premises applications, systems and users. Redundant network paths allow the network to route traffic around failures and ensure that on-premises resources will be able to communicate with workloads running on the Outpost during partial network failures.
@@ -31,6 +33,8 @@ You configure the Outpost subnet route tables to control which path to take to r
  For example, traffic between an EC2 instance running on the Outpost and a VPC Endpoint in the Region will always be routed over the service link.
 
 ![Diagram showing local VPC routing through the implicit routers](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/local-vpc-routing-through-implicit-routers.png)
+
+*Local VPC routing through the implicit routers*
 
 ## Recommended practices for application/workload routing
 <a name="recommended-practices-for-applicationworkload-routing"></a>

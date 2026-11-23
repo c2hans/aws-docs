@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Creates a new cluster.
 
-```
+```sh
 pcluster create [ -h ] [ -c {{CONFIG_FILE}} ] [ -r {{REGION}} ] [ -nw ] [ -nr ]
                 [ -u {{TEMPLATE_URL}} ] [ -t {{CLUSTER_TEMPLATE}} ]
                 [ -p {{EXTRA_PARAMETERS}} ] [ -g {{TAGS}} ]
@@ -66,7 +66,7 @@ When the command is called and begins polling for the status of that call, it's 
 
 **Examples using AWS ParallelCluster version 2.11.7:**
 
-```
+```sh
 $ pcluster create {{mycluster}}
     Beginning cluster creation for cluster: mycluster
 Info: There is a newer version 3.1.4 of AWS ParallelCluster available.

@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Start an EC2 instance.
     /// </summary>
@@ -93,7 +93,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_start_instances
 #
@@ -155,7 +155,7 @@ function ec2_start_instances() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -207,7 +207,7 @@ function aws_cli_error_log() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Start an Amazon Elastic Compute Cloud (Amazon EC2) instance.
 /*!
   \param instanceID: An EC2 instance ID.
@@ -290,7 +290,7 @@ For more information, see [Stop and start Amazon EC2 instances](https://docs.aws
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Starts an Amazon EC2 instance asynchronously and waits until it is in the "running" state.
      *
@@ -334,7 +334,7 @@ For more information, see [Stop and start Amazon EC2 instances](https://docs.aws
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { EC2Client, StartInstancesCommand } from "@aws-sdk/client-ec2";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
@@ -376,7 +376,7 @@ export const main = async ({ instanceIds }) => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun startInstanceSc(instanceId: String) {
     val request =
         StartInstancesRequest {
@@ -402,7 +402,7 @@ suspend fun startInstanceSc(instanceId: String) {
 **Tools for PowerShell V4**
 **Example 1: This example starts the specified instance.**
 
-```
+```powershell
 Start-EC2Instance -InstanceId i-12345678
 ```
 **Output:**
@@ -414,17 +414,17 @@ Amazon.EC2.Model.InstanceState    i-12345678    Amazon.EC2.Model.InstanceState
 ```
 **Example 2: This example starts the specified instances.**
 
-```
+```powershell
 @("i-12345678", "i-76543210") | Start-EC2Instance
 ```
 **Example 3: This example starts the set of instances that are currently stopped. The Instance objects returned by Get-EC2Instance are piped to Start-EC2Instance. The syntax used by this example requires PowerShell version 3 or higher.**
 
-```
+```powershell
 (Get-EC2Instance -Filter @{ Name="instance-state-name"; Values="stopped"}).Instances | Start-EC2Instance
 ```
 **Example 4: With PowerShell version 2, you must use New-Object to create the filter for the Filter parameter.**
 
-```
+```powershell
 $filter = New-Object Amazon.EC2.Model.Filter
 $filter.Name = "instance-state-name"
 $filter.Values = "stopped"
@@ -436,7 +436,7 @@ $filter.Values = "stopped"
 **Tools for PowerShell V5**
 **Example 1: This example starts the specified instance.**
 
-```
+```powershell
 Start-EC2Instance -InstanceId i-12345678
 ```
 **Output:**
@@ -448,17 +448,17 @@ Amazon.EC2.Model.InstanceState    i-12345678    Amazon.EC2.Model.InstanceState
 ```
 **Example 2: This example starts the specified instances.**
 
-```
+```powershell
 @("i-12345678", "i-76543210") | Start-EC2Instance
 ```
 **Example 3: This example starts the set of instances that are currently stopped. The Instance objects returned by Get-EC2Instance are piped to Start-EC2Instance. The syntax used by this example requires PowerShell version 3 or higher.**
 
-```
+```powershell
 (Get-EC2Instance -Filter @{ Name="instance-state-name"; Values="stopped"}).Instances | Start-EC2Instance
 ```
 **Example 4: With PowerShell version 2, you must use New-Object to create the filter for the Filter parameter.**
 
-```
+```powershell
 $filter = New-Object Amazon.EC2.Model.Filter
 $filter.Name = "instance-state-name"
 $filter.Values = "stopped"
@@ -467,7 +467,7 @@ $filter.Values = "stopped"
 ```
 **Example 5: This example validates permissions for starting an EC2 instance using the DryRun parameter without actually starting the instance. Note: This throws an exception if succeeded which is the expected behavior.**
 
-```
+```powershell
 Start-EC2Instance -InstanceId 'i-0abcdef123456' -Region 'us-west-1' -DryRun $true
 ```
 +  For API details, see [StartInstances](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -478,7 +478,7 @@ Start-EC2Instance -InstanceId 'i-0abcdef123456' -Region 'us-west-1' -DryRun $tru
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ec2#code-examples).
 
-```
+```python
 class EC2InstanceWrapper:
     """Encapsulates Amazon Elastic Compute Cloud (Amazon EC2) instance actions using the client interface."""
 
@@ -542,7 +542,7 @@ class EC2InstanceWrapper:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ec2'
 
 # Attempts to start an Amazon Elastic Compute Cloud (Amazon EC2) instance.
@@ -630,7 +630,7 @@ run_me if $PROGRAM_NAME == __FILE__
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 Start an EC2 Instance by instance ID.
 
-```
+```rust
     pub async fn start_instance(&self, instance_id: &str) -> Result<(), EC2Error> {
         tracing::info!("Starting instance {instance_id}");
 
@@ -647,7 +647,7 @@ Start an EC2 Instance by instance ID.
 ```
 Wait for an instance to be in the ready and status ok states, using the Waiters API. Using the Waiters API requires `use aws\_sdk\_ec2::client::Waiters` in the rust file.
 
-```
+```rust
     /// Wait for an instance to be ready and status ok (default wait 60 seconds)
     pub async fn wait_for_instance_ready(
         &self,
@@ -677,7 +677,7 @@ Wait for an instance to be in the ready and status ok states, using the Waiters 
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     DATA lt_instance_ids TYPE /aws1/cl_ec2instidstringlist_w=>tt_instanceidstringlist.
     APPEND NEW /aws1/cl_ec2instidstringlist_w( iv_value = iv_instance_id ) TO lt_instance_ids.
 
@@ -713,7 +713,7 @@ Wait for an instance to be in the ready and status ok states, using the Waiters 
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Start the specified instance.

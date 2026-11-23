@@ -137,7 +137,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-vpc-endpoint-update-policy-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "Region": "us-east-1",
   "VpcEndpointId": "vpce-1a2b3c4d5e6f7g8h9",
@@ -149,7 +149,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-vpc-endpoint-update-policy-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "Region": "us-east-1",
   "VpcEndpointId": "vpce-1a2b3c4d5e6f7g8h9",

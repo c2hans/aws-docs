@@ -40,14 +40,14 @@ The possible modification states are `modifying`, `optimizing`, and `completed`.
 **To monitor progress of a modification**
 Use the [describe-volumes-modifications](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-volumes-modifications.html) command to view the progress of one or more volume modifications. The following example describes the volume modifications for two volumes.
 
-```
+```bash
 aws ec2 describe-volumes-modifications \
     --volume-ids {{vol-11111111111111111}} {{vol-22222222222222222}}
 ```
 
 In the following example output, the volume modifications are still in the `modifying` state. Progress is reported as a percentage.
 
-```
+```json
 {
     "VolumesModifications": [
         {
@@ -79,7 +79,7 @@ In the following example output, the volume modifications are still in the `modi
 
 The next example describes all volumes with a modification state of either `optimizing` or `completed`, and then filters and formats the results to show only modifications that were initiated on or after February 1, 2017:
 
-```
+```bash
 aws ec2 describe-volumes-modifications \
     --filters Name=modification-state,Values="optimizing","completed" \
     --query "VolumesModifications[?StartTime>='2017-02-01'].{ID:VolumeId,STATE:ModificationState}"
@@ -87,7 +87,7 @@ aws ec2 describe-volumes-modifications \
 
 The following is example output with information about two volumes:
 
-```
+```json
 [
     {
         "STATE": "optimizing",
@@ -106,7 +106,7 @@ The following is example output with information about two volumes:
 **To monitor progress of a modification**
 Use the [Get-EC2VolumeModification](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2VolumeModification.html) cmdlet. The following example describes the volume modifications for two volumes.
 
-```
+```powershell
 Get-EC2VolumeModification `
     -VolumeId {{vol-11111111111111111}} {{vol-22222222222222222}}
 ```

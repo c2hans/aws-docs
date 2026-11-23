@@ -90,7 +90,7 @@ The following example shows how to use `BlockPublicPolicy`.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

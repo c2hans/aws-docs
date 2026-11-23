@@ -16,7 +16,7 @@ Before creating the transformer, you must create sample documents in the buckets
 
    1. Save the following JSON code to a file named `sample-purchase-order.json`:
 
-      ```
+      ```json
       {
         "purchaseOrder": {
           "poNumber": "PO789012",

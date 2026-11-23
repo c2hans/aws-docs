@@ -25,6 +25,7 @@ Your application can leverage the key features of the Amazon IVS broadcast SDK:
 | --- | --- |
 | Android | 9.0\+ -- note customers can build with versions 6.0\+ but will not be able to use real-time streaming functionality. |
 | iOS | 14\+ |
+| Linux | x86\_64 (amd64), arm64. glibc 2.34\+, libcurl 7.68\+ |
 
 IVS supports a minimum of 4 major iOS versions and 6 major Android versions. Our current version support may extend beyond these minimums. Customers will be notified via SDK release notes at least 3 months in advance of a major version no longer being supported.
 

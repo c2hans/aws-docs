@@ -9,7 +9,7 @@ Amazon SageMaker Debugger is no longer open to new customers. Existing customers
 
 The `smdebug` Rule API provides an interface to set up your own custom rules. The following python script is a sample of how to construct a custom rule, `CustomGradientRule`. This tutorial custom rule watches if the gradients are getting too large and set the default threshold as 10. The custom rule takes a base trial created by a SageMaker AI estimator when it initiates training job.
 
-```
+```python.py
 from smdebug.rules.rule import Rule
 
 class CustomGradientRule(Rule):

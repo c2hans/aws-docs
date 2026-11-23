@@ -27,7 +27,7 @@ The following code example shows how to use `CreateContact`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ses#code-examples).
 
-```
+```java
       try {
         // Create a new contact with the provided email address in the
         CreateContactRequest contactRequest = CreateContactRequest.builder()
@@ -80,7 +80,7 @@ The following code example shows how to use `CreateContactList`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ses#code-examples).
 
-```
+```java
     try {
       // 2. Create a contact list
       String contactListName = CONTACT_LIST_NAME;
@@ -109,7 +109,7 @@ The following code example shows how to use `CreateEmailIdentity`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ses#code-examples).
 
-```
+```java
     try {
       CreateEmailIdentityRequest createEmailIdentityRequest = CreateEmailIdentityRequest.builder()
           .emailIdentity(verifiedEmail)
@@ -140,7 +140,7 @@ The following code example shows how to use `CreateEmailTemplate`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ses#code-examples).
 
-```
+```java
     try {
       // Create an email template named "weekly-coupons"
       String newsletterHtml = loadFile("resources/coupon_newsletter/coupon-newsletter.html");
@@ -182,7 +182,7 @@ The following code example shows how to use `DeleteContactList`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ses#code-examples).
 
-```
+```java
     try {
       // Delete the contact list
       DeleteContactListRequest deleteContactListRequest = DeleteContactListRequest.builder()
@@ -210,7 +210,7 @@ The following code example shows how to use `DeleteEmailIdentity`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ses#code-examples).
 
-```
+```java
       try {
         // Delete the email identity
         DeleteEmailIdentityRequest deleteIdentityRequest = DeleteEmailIdentityRequest.builder()
@@ -241,7 +241,7 @@ The following code example shows how to use `DeleteEmailTemplate`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ses#code-examples).
 
-```
+```java
     try {
       // Delete the template
       DeleteEmailTemplateRequest deleteTemplateRequest = DeleteEmailTemplateRequest.builder()
@@ -269,7 +269,7 @@ The following code example shows how to use `ListContacts`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ses#code-examples).
 
-```
+```java
       ListContactsRequest contactListRequest = ListContactsRequest.builder()
           .contactListName(CONTACT_LIST_NAME)
           .build();
@@ -297,7 +297,7 @@ The following code example shows how to use `SendEmail`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ses#code-examples).
 Sends a message.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sesv2.model.Body;
 import software.amazon.awssdk.services.sesv2.model.Content;
@@ -403,7 +403,7 @@ public class SendEmail {
 ```
 Sends a message using a template.
 
-```
+```java
       String coupons = Files.readString(Paths.get("resources/coupon_newsletter/sample_coupons.json"));
       for (String emailAddress : contactEmails) {
         SendEmailRequest newsletterRequest = SendEmailRequest.builder()
@@ -425,7 +425,7 @@ Sends a message using a template.
 ```
 Sends a message with header information.
 
-```
+```java
 public class SendwithHeader {
 
     public static void main(String[] args) {
@@ -527,7 +527,7 @@ The following code example shows how to run the Amazon SES API v2 newsletter sce
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ses#code-examples).
 
-```
+```java
     try {
       // 2. Create a contact list
       String contactListName = CONTACT_LIST_NAME;

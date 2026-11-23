@@ -25,7 +25,7 @@ To run the notebook for this tour, you need:
 
 1. At the command prompt, run the following command to clone the [aws/amazon-sagemaker-examples](https://github.com/aws/amazon-sagemaker-examples) GitHub repository.
 
-   ```
+   ```zsh
    $ git clone https://github.com/aws/amazon-sagemaker-examples.git
    ```
 

@@ -40,7 +40,7 @@ Before enabling the Slurm REST API, ensure you have:
 
 1. Add a Slurm REST configuration when creating your cluster.
 
-   ```
+   ```cmd
    aws pcs create-cluster --region {{region}} \
        --cluster-name {{my-cluster}} \
        --scheduler type=SLURM, version={{25.05}} \
@@ -77,7 +77,7 @@ Before enabling the Slurm REST API, ensure you have:
 
 1. Update your cluster with a Slurm REST configuration, as in this example.
 
-   ```
+   ```cmd
    aws pcs update-cluster --cluster-identifier {{my-cluster}} \
        --slurm-configuration 'slurmRest={mode=STANDARD}'
    ```

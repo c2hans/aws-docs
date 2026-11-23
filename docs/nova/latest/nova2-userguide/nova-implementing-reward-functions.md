@@ -16,7 +16,7 @@ Your reward function must accept and return data in the following format:
 
 **Sample input sample to training**
 
-```
+```json
 {
     "messages": [
         {
@@ -43,7 +43,7 @@ The container automatically transforms your data before sending it to your Lambd
 
 Your Lambda function will receive data in this transformed format:
 
-```
+```json
 {
    "id": "123",
     "messages": [
@@ -66,7 +66,7 @@ Your Lambda function will receive data in this transformed format:
 
 **Reward Lambda contract**
 
-```
+```python
 def lambda_handler(event, context):
    return lambda_grader(event)
 
@@ -167,7 +167,7 @@ Implement custom reward functions when you have task-specific evaluation criteri
 
 Your SageMaker execution role must have permissions to invoke your Lambda function. Add this policy to your SageMaker execution role:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -187,7 +187,7 @@ Your SageMaker execution role must have permissions to invoke your Lambda functi
 
 Your Lambda function's execution role needs basic Lambda execution permissions:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -224,7 +224,7 @@ This Lambda function implements a two-stage evaluation process: the `lambda_hand
 + **Score Clamping**: Ensures all scores fall within valid [0.0, 1.0] range
 + **Model Agnostic**: Change JUDGE\_MODEL\_ID to use any Amazon Bedrock model (Nova, Llama, Mistral, etc.)
 
-```
+```python
 """
 LLM Judge Lambda POC - Working implementation using Amazon Bedrock
 """
@@ -336,7 +336,7 @@ def lambda_handler(event, context):
 
 The Lambda receives the same input format as other reward functions:
 
-```
+```json
 {
     "id": "sample-001",
     "messages": [
@@ -360,7 +360,7 @@ The Lambda receives the same input format as other reward functions:
 ### Output format
 <a name="nova-reward-llm-judge-output"></a>
 
-```
+```json
 {
     "id": "sample-001",
     "aggregate_reward_score": 0.85,
@@ -397,7 +397,7 @@ The Lambda's built-in retry logic handles occasional throttling, but sustained h
 
 **Required IAM Policy:**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

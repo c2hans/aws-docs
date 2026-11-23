@@ -37,7 +37,7 @@ The following example illustrates an inline permissions policy with administrati
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement":

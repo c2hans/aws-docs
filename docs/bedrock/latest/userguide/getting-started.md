@@ -97,7 +97,7 @@ The OpenAI-compatible examples use a global system inference profile. If you hav
 ------
 #### [ Messages API ]
 
-      ```
+      ```python
       from anthropic import Anthropic
       from aws_bedrock_token_generator import provide_token
 
@@ -116,7 +116,7 @@ The OpenAI-compatible examples use a global system inference profile. If you hav
 ------
 #### [ Responses API ]
 
-      ```
+      ```python
       from openai import OpenAI
 
       client = OpenAI()
@@ -131,7 +131,7 @@ The OpenAI-compatible examples use a global system inference profile. If you hav
 ------
 #### [ Chat Completions API ]
 
-      ```
+      ```python
       from openai import OpenAI
 
       client = OpenAI()
@@ -146,7 +146,7 @@ The OpenAI-compatible examples use a global system inference profile. If you hav
 ------
 #### [ Converse API ]
 
-      ```
+      ```python
       import boto3
 
       client = boto3.client('bedrock-runtime', region_name='us-east-1')
@@ -165,7 +165,7 @@ The OpenAI-compatible examples use a global system inference profile. If you hav
 ------
 #### [ Invoke API ]
 
-      ```
+      ```python
       import json
       import boto3
 

@@ -23,7 +23,7 @@ The Amazon EKS deployment is removed in two phases: first the Helm release on th
 
 From a terminal with `kubectl` and `helm` configured for the Amazon EKS cluster:
 
-```
+```bash
 helm uninstall -n ma ma
 kubectl -n ma delete pvc --all
 kubectl delete namespace ma
@@ -34,7 +34,7 @@ The `kubectl -n ma delete pvc --all` command removes the Apache Kafka persistent
 ### Step 2: Delete the AWS CloudFormation stack
 <a name="step-2-delete-cfn"></a>
 
-```
+```bash
 aws cloudformation delete-stack --stack-name <STACK_NAME>
 aws cloudformation wait stack-delete-complete --stack-name <STACK_NAME>
 ```
@@ -46,7 +46,7 @@ This removes the Amazon EKS cluster, networking, IAM roles, and supporting AWS r
 
 The default migrations bucket is not automatically deleted. The bucket name follows the format:
 
-```
+```text
 s3://migrations-default-<ACCOUNT_ID>-<STAGE>-<REGION>
 ```
 
@@ -57,7 +57,7 @@ Be deliberate about Amazon S3 cleanup. The bucket is often still useful for:
 
 Delete it only after you are certain you no longer need the contents:
 
-```
+```bash
 aws s3 rb s3://migrations-default-<ACCOUNT_ID>-<STAGE>-<REGION> --force
 ```
 
@@ -101,7 +101,7 @@ To remove all the AWS CDK stacks that the solution creates during a legacy Amazo
 
 Log in to the `bootstrap` container, as described in [Deploy the solution](deploy-the-solution.md), and run the following commands:
 
-```
+```bash
 cd deployment/cdk/opensearch-service-migration
  $ cdk destroy "*" --c contextId=default
 ```
@@ -110,7 +110,7 @@ After the Migration Assistant for Amazon OpenSearch Service solution stacks *(se
 
 Determine whether the AWS Command Line Interface (AWS CLI) is available in your environment. For installation instructions, see [What Is the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS CLI User Guide*. After confirming that the AWS CLI is available, set the default Region to the Region used for deployment. Then run the AWS CLI command to delete the AWS CloudFormation bootstrap stack:
 
-```
+```bash
 export AWS_DEFAULT_REGION=<aws_region>
  $ aws cloudformation delete-stack --stack-name <bootstrap_stack_name>
 ```

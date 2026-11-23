@@ -29,7 +29,7 @@ The [Encrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.ht
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -37,7 +37,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -69,7 +69,7 @@ The `ciphertextBlob` that you specify must be the value of the `CiphertextBlob` 
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -77,7 +77,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -108,7 +108,7 @@ The `ciphertextBlob` that you specify must be the value of the `CiphertextBlob` 
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -116,7 +116,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',

@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 Load the version-matched sample and then edit it down to a minimal pilot configuration:
 
-```
+```bash
 workflow configure sample --load
 workflow configure edit
 ```
 
 Use a configuration like the following for the pilot. It declares the Elasticsearch 6.8 source and its snapshot repository, the Amazon OpenSearch Service target using SigV4 with service `es`, and a `documentBackfillConfig.indexAllowlist` that limits the run to a single pilot index. Multi-type mapping resolution is applied automatically, so there is no field to set for it. Replace the placeholders with your values:
 
-```
+```json
 {
   "sourceClusters": {
     "source": {

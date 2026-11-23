@@ -33,7 +33,7 @@ For information about zero-ETL integrations, see [Working with zero-ETL integrat
 
 The following SQL command displays the log of integrations.
 
-```
+```sql
 select * from sys_integration_activity;
 
           integration_id              | target_database | source |            checkpoint_name                  | checkpoint_type  | checkpoint_bytes | last_commit_timestamp   | modified_tables |   integration_start_time   |    integration_end_time

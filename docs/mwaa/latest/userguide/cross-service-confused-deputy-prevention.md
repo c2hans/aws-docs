@@ -19,7 +19,7 @@ Use the following example to apply the `aws:SourceArn` and `aws:SourceAccount` g
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

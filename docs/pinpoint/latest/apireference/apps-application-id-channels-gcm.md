@@ -140,7 +140,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="apps-application-id-channels-gcm-request-body-put-example"></a>
 
-```
+```json
 {
   "ApiKey": "string",
   "Enabled": boolean,
@@ -155,7 +155,7 @@ Retrieves information about the communication requirements and options that are 
 #### GCMChannelResponse schema
 <a name="apps-application-id-channels-gcm-response-body-gcmchannelresponse-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "IsArchived": boolean,
@@ -176,7 +176,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-channels-gcm-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

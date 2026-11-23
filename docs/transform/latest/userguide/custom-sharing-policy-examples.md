@@ -17,7 +17,7 @@ The simplest way to grant access is with AWS managed policies, plus the AWS Tran
 
 The following policy lets an owner share TDs and manage those shares. Its statements use `"Resource": "*"` because a share's ARN doesn't exist until you create it. The conditions on the first two statements limit which shares they can create and change.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -77,7 +77,7 @@ AWS RAM uses your credentials to call `transform-custom:PutResourcePolicy` when 
 
 The following policy lets a consumer accept shares and run a shared TD with the owner's lessons:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -128,7 +128,7 @@ To let the consumer download the TD, also allow `transform-custom:GetTransformat
 
 The following SCP keeps TD sharing inside your organization:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -149,7 +149,7 @@ This SCP blocks sharing any resource type outside the organization, not just TDs
 
 The following SCP blocks contributing lessons to TDs outside your organization:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

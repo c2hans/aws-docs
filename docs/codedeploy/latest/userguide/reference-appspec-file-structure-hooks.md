@@ -49,7 +49,7 @@ The following are examples of the structure of the `'hooks'` section.
 
 Using YAML:
 
-```
+```yaml
 Hooks:
   - BeforeInstall: "{{BeforeInstallHookFunctionName}}"
   - AfterInstall: "{{AfterInstallHookFunctionName}}"
@@ -60,7 +60,7 @@ Hooks:
 
 Using JSON:
 
-```
+```json
 "Hooks": [
 		{
 			"BeforeInstall": "{{BeforeInstallHookFunctionName}}"
@@ -93,7 +93,7 @@ The deployment is considered to have failed if CodeDeploy is not notified by the
 
  The following is a sample Lambda hook function written in Node.js.
 
-```
+```js
 'use strict';
 
 const aws = require('aws-sdk');
@@ -164,7 +164,7 @@ The following are examples of the structure of the 'hooks' section.
 
 Using YAML:
 
-```
+```yaml
 hooks:
    - BeforeAllowTraffic: {{BeforeAllowTrafficHookFunctionName}}
    - AfterAllowTraffic: {{AfterAllowTrafficHookFunctionName}}
@@ -172,7 +172,7 @@ hooks:
 
 Using JSON:
 
-```
+```json
 "hooks": [{
     "BeforeAllowTraffic": "{{BeforeAllowTrafficHookFunctionName}}"
     },
@@ -193,7 +193,7 @@ The deployment is considered to have failed if CodeDeploy is not notified by the
 
  The following is a sample Lambda hook function written in Node.js.
 
-```
+```js
 'use strict';
 
 const aws = require('aws-sdk');
@@ -363,7 +363,7 @@ The **Start**, **DownloadBundle**, **Install**, **BlockTraffic**, **AllowTraffic
 
 The `'hooks'` section has the following structure:
 
-```
+```yaml
 hooks:
    {{deployment-lifecycle-event-name}}:
      - location: {{script-location}}
@@ -415,7 +415,7 @@ From your hook scripts, you could access the current deployment archive using th
 
 For example, here is how you could access a `data.json` file that resides at the root of your revision on Linux:
 
-```
+```bash
 #!/bin/bash
 
 rootDirectory="/opt/codedeploy-agent/deployment-root" # note: this will be different if you
@@ -426,7 +426,7 @@ data=$(cat dataFile)
 
 As another example, here is how you could access a `data.json` file that resides at the root of your revision using Powershell on Windows:
 
-```
+```powershell
 $rootDirectory="$env:ProgramData\Amazon\CodeDeploy" # note: this will be different if you
                                                     # customize the :root_dir configuration
 $dataFile="$rootDirectory\$env:DEPLOYMENT_GROUP_ID\$env:DEPLOYMENT_ID\deployment-archive\data.json"
@@ -515,7 +515,7 @@ fi
 
 The following script example replaces the text in the specified webpage with text that displays the value of these environment variables. This script must be invoked during the `AfterInstall` deployment lifecycle event:
 
-```
+```js
 #!/usr/bin/python
 
 import os
@@ -537,7 +537,7 @@ fp.close()
 
 Here is an example of a **hooks** entry that specifies two hooks for the `AfterInstall` lifecycle event:
 
-```
+```yaml
 hooks:
    AfterInstall:
      - location: Scripts/RunResourceTests.sh

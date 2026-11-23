@@ -80,7 +80,7 @@ https://sns.us-east-2.amazonaws.com/?Action=ListSubscriptionsByTopic
 #### Sample Response
 <a name="API_ListSubscriptionsByTopic_Example_1_Response"></a>
 
-```
+```xml
 <ListSubscriptionsByTopicResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ListSubscriptionsByTopicResult>
         <Subscriptions>

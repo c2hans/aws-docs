@@ -144,7 +144,7 @@ Default: `120`
 **Example: Configuration merge update**
 The following example configuration specifies to operate the MQTT broker on port 443.
 
-```
+```json
 {
   "moquette": {
     "ssl_port": "443"
@@ -179,14 +179,14 @@ This component uses the same log file as the [Greengrass nucleus](greengrass-nuc
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
   ```
 

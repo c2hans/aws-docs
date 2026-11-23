@@ -143,7 +143,7 @@ MMS capabilities are only available in some countries. For more information on s
 **To request a phone number**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 request-phone-number \
   > --iso-country-code {{XX}} \
   > --message-type {{TRANSACTIONAL}} \
@@ -171,7 +171,7 @@ If you plan to use a 10DLC phone number, you must first register your company an
 
 If the number is successfully added to your account, you see output similar to the following:
 
-```
+```json
 {
     "PhoneNumberArn": "arn:aws:sms-voice:us-east-1:111122223333:phone-number/phone-615790209ea34aea8da9b729fexample",
     "PhoneNumberId": "phone-615790209ea34aea8da9b729fexample",

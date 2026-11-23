@@ -27,7 +27,7 @@ The IAM role that you use to enable conversation logs must have the `iam:PassRol
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

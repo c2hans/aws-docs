@@ -105,7 +105,7 @@ To turn on CimFS for a node, use either of the following methods (see [Bootstrap
 
 The following example shows how to turn on CimFS from the launch template user data:
 
-```
+```powershell
 <powershell>
 [string]$EKSBootstrapScriptFile = "$env:ProgramFiles\Amazon\EKS\Start-EKSBootstrap.ps1"
 & $EKSBootstrapScriptFile -EKSClusterName "my-cluster" -EnableCimFS 3>&1 4>&1 5>&1 6>&1

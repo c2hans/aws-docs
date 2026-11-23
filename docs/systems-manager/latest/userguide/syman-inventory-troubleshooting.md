@@ -40,7 +40,7 @@ There are two reasons why inventory collection never exits the `Pending` status:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

@@ -183,7 +183,7 @@ Use this operation to retrieve information about a control, including a list of 
 #### Sample Request
 <a name="API_GetControl_Example_1_Request"></a>
 
-```
+```json
 aws controlcatalog get-control --control-arn arn:aws:controlcatalog:::control/4b0nsxnd47747up54ytdqesxi --region us-east-1
 ```
 
@@ -194,14 +194,14 @@ aws controlcatalog get-control --control-arn arn:aws:controlcatalog:::control/4b
 #### Sample Request
 <a name="API_GetControl_Example_1_Request"></a>
 
-```
+```json
 aws controlcatalog get-control --control-arn arn:aws:controltower:us-east-1::control/YEHYWYAUIQHZ --region us-east-1
 ```
 
 #### Sample Response
 <a name="API_GetControl_Example_1_Response"></a>
 
-```
+```json
 {
     "Arn": "arn:aws:controlcatalog:::control/4b0nsxnd47747up54ytdqesxi",
     "Aliases": [

@@ -14,7 +14,7 @@ The objective of this stage is to take collected data in bars from previous stag
 ## Bar count
 <a name="_bar_count"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.bar_cnt(input_series)
 ```
 
@@ -30,7 +30,7 @@ aws.finspace.timeseries.spark.summarizer.bar_cnt(input_series)
 ## Close
 <a name="_close"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.close(price)
 ```
 
@@ -44,7 +44,7 @@ Returns the last row, called close as its the closing price of that interval.
 ## First last high low
 <a name="_first_last_high_low"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.first_last_high_low(sort_col: list, price: list) -> list
 ```
 
@@ -53,7 +53,7 @@ aws.finspace.timeseries.spark.summarizer.first_last_high_low(sort_col: list, pri
 ## First last high low presorted
 <a name="_first_last_high_low_presorted"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.*first_last_high_low_presorted*(price: list) -> list
 ```
 
@@ -62,7 +62,7 @@ aws.finspace.timeseries.spark.summarizer.*first_last_high_low_presorted*(price: 
 ## High
 <a name="_high"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.high(price)
 ```
 
@@ -78,7 +78,7 @@ Returns the highest price in that interval.
 ## Low
 <a name="_low"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.low(price)
 ```
 
@@ -94,7 +94,7 @@ Returns the lowest price in that interval.
 ## Low high
 <a name="_low_high"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.lowhigh(value) -> list
 ```
 
@@ -105,7 +105,7 @@ aws.finspace.timeseries.spark.summarizer.lowhigh(value) -> list
 
 The first, high, low, and last value over an interval.
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.ohlc_func(sort_col: list, price: list) -> list
 ```
 
@@ -116,7 +116,7 @@ aws.finspace.timeseries.spark.summarizer.ohlc_func(sort_col: list, price: list) 
 
 The first, high, low, and last value over an interval.
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.ohlc_func_pre_sorted(price: list) -> list
 ```
 
@@ -127,14 +127,14 @@ aws.finspace.timeseries.spark.summarizer.ohlc_func_pre_sorted(price: list) -> li
 
 The first, high, low, and last value over an interval.
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.ohlc_scala(timeseries, values)
 ```
 
 ## Open
 <a name="_open"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.open(price)
 ```
 
@@ -148,7 +148,7 @@ Returns the first row, the opening price over that interval.
 ## Standard deviation
 <a name="_standard_deviation"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.std(price)
 ```
 
@@ -162,7 +162,7 @@ Returns the standard deviation over that interval.
 ## Time Delta
 <a name="_time_delta"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.*time_delta*(time_series: list, ref_date: datetime.date) -> list
 ```
 
@@ -171,7 +171,7 @@ aws.finspace.timeseries.spark.summarizer.*time_delta*(time_series: list, ref_dat
 ## Total volume
 <a name="_total_volume"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.total_volume(volume)
 ```
 
@@ -187,7 +187,7 @@ The total volume over that interval.
 ## Volume and close
 <a name="_volume_and_close"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.volume_and_close(price: list, vol: list) -> list
 ```
 
@@ -196,7 +196,7 @@ aws.finspace.timeseries.spark.summarizer.volume_and_close(price: list, vol: list
 ## Volume weighted average price (VWAP)
 <a name="_volume_weighted_average_price_vwap"></a>
 
-```
+```python
 aws.finspace.timeseries.spark.summarizer.vwap(price, volume)
 ```
 

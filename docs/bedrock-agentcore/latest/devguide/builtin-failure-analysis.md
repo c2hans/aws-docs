@@ -31,7 +31,7 @@ When you run the evaluator in a batch evaluation, the service returns failure in
 
 The following example shows one failure insight in a readable form.
 
-```
+```text
 Failure insight: Tool calls fail because of permission and quota errors
   Affects 3 sessions
   Tool calls that change the state of a service fail because the caller

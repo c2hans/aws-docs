@@ -61,7 +61,7 @@ To view a code example for using the `$rtrim` command, choose the tab for the la
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient, Bson } = require('mongodb');
 
 async function example() {
@@ -98,7 +98,7 @@ example().catch(console.error);
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def example():

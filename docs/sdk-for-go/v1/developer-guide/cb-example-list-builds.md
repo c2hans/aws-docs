@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 The following example displays information about your AWS CodeBuild project builds, including the name of the project, when the build started, and how long each phase of the build took, in seconds.
 
-```
+```go
 package main
 
 import (

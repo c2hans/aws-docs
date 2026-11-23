@@ -63,7 +63,7 @@ In the example, replace:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -111,7 +111,7 @@ The following example shows how to allow only a specific IP address that can mak
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -165,7 +165,7 @@ The following shows a sample IAM policy that authorizes this action:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -189,7 +189,7 @@ The following example shows how to allow only a specific IP address that can mak
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -216,7 +216,7 @@ The following example shows how to restrict specific IP addresses or address ran
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -258,7 +258,7 @@ In the example, replace:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -326,7 +326,7 @@ For this example, you must use the following IAM policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

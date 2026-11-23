@@ -101,7 +101,7 @@ For more information, see [Working with shared environment in AWS Cloud9](https:
 **Tools for PowerShell V4**
 **Example 1: This example gets information about environment members for the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Get-C9EnvironmentMembershipList -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX
 ```
 **Output:**
@@ -121,7 +121,7 @@ UserId        : AIDAJ3LOROMOUXTBSU6EX
 ```
 **Example 2: This example gets information about the owner of the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Get-C9EnvironmentMembershipList -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX -Permission owner
 ```
 **Output:**
@@ -135,7 +135,7 @@ UserId        : AIDAJ3LOROMOUXTBSU6EX
 ```
 **Example 3: This example gets information about the specified environment member for multiple AWS Cloud9 development environments.**
 
-```
+```powershell
 Get-C9EnvironmentMembershipList -UserArn arn:aws:iam::123456789012:user/MyDemoUser
 ```
 **Output:**
@@ -158,7 +158,7 @@ UserId        : AIDAJ3LOROMOUXTBSU6EX
 **Tools for PowerShell V5**
 **Example 1: This example gets information about environment members for the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Get-C9EnvironmentMembershipList -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX
 ```
 **Output:**
@@ -178,7 +178,7 @@ UserId        : AIDAJ3LOROMOUXTBSU6EX
 ```
 **Example 2: This example gets information about the owner of the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Get-C9EnvironmentMembershipList -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX -Permission owner
 ```
 **Output:**
@@ -192,7 +192,7 @@ UserId        : AIDAJ3LOROMOUXTBSU6EX
 ```
 **Example 3: This example gets information about the specified environment member for multiple AWS Cloud9 development environments.**
 
-```
+```powershell
 Get-C9EnvironmentMembershipList -UserArn arn:aws:iam::123456789012:user/MyDemoUser
 ```
 **Output:**

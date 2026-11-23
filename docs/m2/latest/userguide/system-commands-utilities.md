@@ -46,7 +46,7 @@ When an unsupported command is present in the SYSTSIN dataset then a `RuntimeExc
 
 The legacy JCL script (which uses an inlined content of the `SYSTSIN` dataset, using `DD *` directive)
 
-```
+```jcl
 //*********************************************************************
 //* READ THE TEMPORARY INPUT FILE                                     *
 //*********************************************************************
@@ -65,7 +65,7 @@ The legacy JCL script (which uses an inlined content of the `SYSTSIN` dataset, u
 
 and the matching modernized script (in groovy) -- the inlined content of `SYSTSIN` dataset is represented by a "stream" --
 
-```
+```java
 // STEP 067FILEKEY - PGM - IKJEFT01***********************************************
 def step067FILEKEY(Object shell, Map params, Map programResults){
     shell.with {
@@ -131,7 +131,7 @@ For the following cases, a `RuntimeException` will be thrown:
 
 Here is a sample usage from a legacy COBOL program: the data item `CL-COMMANDX` is fitted with commands before being used as argument for the QCMDEXC program call:
 
-```
+```cobol
        INITIALIZE CL-COMMANDX.
 
        STRING
@@ -148,7 +148,7 @@ Here is a sample usage from a legacy COBOL program: the data item `CL-COMMANDX` 
 
 Once modernized into java code, this becomes:
 
-```
+```java
     DataUtils.initialize(ctx.getClCommandx().getClCommandxReference());
     StringConcatenationBuilder.newInstance(ctx.getClCommandx().getClCommandxReference())
         .addDelimitedBySize("CPYF FROMFILE(PLAYERS) TOFILE(")

@@ -317,13 +317,13 @@ Your DL/I calls are **not** rewritten into hand-written SQL in the generated cod
 
 Legacy:
 
-```
+```cobol
 CALL 'CBLTDLI' USING FUNC-GU PCB-MASK SEGMENT-IO-AREA ROOT-SSA.
 ```
 
 Generated Java (conceptually — the same call, routed to the runtime):
 
-```
+```java
 callSubProgram("CBLTDLI", func /*GU*/, pcbMask, segmentIoArea, rootSsa);
 ```
 
@@ -357,7 +357,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Example — browse all summaries, and for each one browse its details (the classic unload pattern):
 
-   ```
+   ```cobol
          * Get next summary (root) in sequence
           CALL 'CBLTDLI' USING FUNC-GN  PCB-MASK PENDING-AUTH-SUMMARY ROOT-SSA.
          * Get next detail under that summary
@@ -366,7 +366,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Generated Java (the call keeps its shape — function code, PCB, I/O area, SSA — and is routed to the runtime):
 
-   ```
+   ```java
    // GN: get next summary
    ctrl.callSubProgram("CBLTDLI", CallBuilder.newInstance()
        .byReference(ctx.getFuncGn().getFuncGnReference())
@@ -392,7 +392,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Example — read the first detail whose timestamp field is greater than a value:
 
-   ```
+   ```cobol
           01 DTL-SSA.
              05 FILLER PIC X(08) VALUE 'PAUTDTL1'.
              05 FILLER PIC X(01) VALUE '('.
@@ -406,7 +406,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Generated Java — the qualified SSA becomes a search argument carrying the operator and value (this is the form produced from a CICS `EXEC DLI GN ... WHERE(field > value)`):
 
-   ```
+   ```java
    ctrl.callSubProgram("CBLTDLI", CallBuilder.newInstance()
        .byReference(ctx.getFuncGn().getFuncGnReference())
        .byReference(ctx.getPautbpcb())
@@ -426,7 +426,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    **ISRT (insert).** For a dependent segment, a prior call must have established position on the parent. Insert of a logical child also creates/links its logical parent and paired segment when the DBD requires it.
 
-   ```
+   ```cobol
          * Establish the parent, then insert the child under it
           CALL 'CBLTDLI' USING FUNC-GU   PCB-MASK PENDING-AUTH-SUMMARY ROOT-SSA.
           CALL 'CBLTDLI' USING FUNC-ISRT PCB-MASK PENDING-AUTH-DETAILS CHILD-SSA.
@@ -434,7 +434,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Generated Java for the ISRT (as it actually appears in the modernized program):
 
-   ```
+   ```java
    ctrl.callSubProgram("CBLTDLI", CallBuilder.newInstance()
        .byReference(ctx.getFuncIsrt().getFuncIsrtReference())
        .byReference(ctx.getPautbpcb())
@@ -445,14 +445,14 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    **DLET (delete).** Requires a preceding hold call (GHU/GHN, or `LOCKED` under EXEC DLI). Deleting a segment cascades to its dependents, and IMS delete rules are honored (for example, deleting a logical parent that still has logical children is rejected).
 
-   ```
+   ```cobol
           CALL 'CBLTDLI' USING FUNC-GHU  PCB-MASK PENDING-AUTH-DETAILS CHILD-SSA.  *> hold
           CALL 'CBLTDLI' USING FUNC-DLET PCB-MASK PENDING-AUTH-DETAILS.           *> delete
    ```
 
    **REPL (replace).** Also requires a preceding hold. Only changed fields are updated; paired segments are updated together.
 
-   ```
+   ```cobol
           CALL 'CBLTDLI' USING FUNC-GHU  PCB-MASK PENDING-AUTH-SUMMARY ROOT-SSA.  *> hold
           MOVE NEW-VALUES TO PENDING-AUTH-SUMMARY.
           CALL 'CBLTDLI' USING FUNC-REPL PCB-MASK PENDING-AUTH-SUMMARY.           *> replace
@@ -460,7 +460,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Generated Java for the hold-then-delete pair (DLET takes no SSA — it deletes the held segment):
 
-   ```
+   ```java
    // GHU: hold
    ctrl.callSubProgram("CBLTDLI", CallBuilder.newInstance()
        .byReference(ctx.getFuncGhu().getFuncGhuReference())
@@ -487,7 +487,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Example — a checkpoint in a batch program:
 
-   ```
+   ```cobol
           EXEC DLI CHKP ID(WK-CHKPT-ID) END-EXEC.
    ```
 
@@ -501,7 +501,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Example:
 
-   ```
+   ```cobol
           CALL 'CBLTDLI' USING FUNC-GHU  PCB-MASK PENDING-AUTH-SUMMARY ROOT-SSA.  *> hold for update
          *  ... modify PENDING-AUTH-SUMMARY ...
           CALL 'CBLTDLI' USING FUNC-REPL PCB-MASK PENDING-AUTH-SUMMARY.           *> update the held segment
@@ -513,7 +513,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Example — a straight GN loop over every root reads them in efficient batches under the covers:
 
-   ```
+   ```cobol
           PERFORM UNTIL END-OF-DB
               CALL 'CBLTDLI' USING FUNC-GN PCB-MASK PENDING-AUTH-SUMMARY ROOT-SSA
               EVALUATE PCB-STATUS
@@ -555,7 +555,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Example — evaluate the status after a keyed read:
 
-   ```
+   ```cobol
           CALL 'CBLTDLI' USING FUNC-GU PCB-MASK PENDING-AUTH-SUMMARY ROOT-SSA.
           EVALUATE PCB-STATUS
               WHEN '  '  PERFORM SEGMENT-FOUND
@@ -566,7 +566,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Generated Java — after the call, the program reads the same 2-byte status field out of the PCB and branches on it (blank = success, `"GE"` = not found), exactly mirroring the COBOL:
 
-   ```
+   ```java
    ctrl.callSubProgram("CBLTDLI", CallBuilder.newInstance()
        .byReference(ctx.getFuncGu().getFuncGuReference())
        .byReference(ctx.getPautbpcb())
@@ -593,7 +593,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Example — a batch program taking a checkpoint and, on an error path, rolling back:
 
-   ```
+   ```cobol
           01 CHKP-FUNCT   PIC X(4) VALUE 'CHKP'.
           01 ROLB-FUNCT   PIC X(4) VALUE 'ROLB'.
           01 CHKP-ID      PIC X(8) VALUE 'RMAD0001'.
@@ -607,7 +607,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Both calls run through the same `CBLTDLI` entry point in the generated Java, exactly as any GU/GN/ISRT call does; the runtime performs the checkpoint or rollback and returns control.
 
-   ```
+   ```java
    // CALL 'CBLTDLI' USING CHKP-FUNCT PCB-MASK CHKP-ID
    ctrl.callSubProgram("CBLTDLI", CallBuilder.newInstance()
        .byReference(ctx.getChkpFunct().getChkpFunctReference())
@@ -618,7 +618,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    A batch `CALL 'CBLTDLI' USING ROLB-FUNCT PCB-MASK` comes out in the same shape:
 
-   ```
+   ```java
    // CALL 'CBLTDLI' USING ROLB-FUNCT PCB-MASK
    ctrl.callSubProgram("CBLTDLI", CallBuilder.newInstance()
        .byReference(ctx.getRolbFunct().getRolbFunctReference())
@@ -635,7 +635,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Example — symbolic checkpoint saving one work area, then restart restoring it:
 
-   ```
+   ```cobol
           01 CHKP-FUNCT  PIC X(4) VALUE 'CHKP'.
           01 XRST-FUNCT  PIC X(4) VALUE 'XRST'.
           01 CHKP-ID     PIC X(8) VALUE 'RMAD0001'.
@@ -651,7 +651,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Generated Java — symbolic CHKP and XRST keep their id and their (length, area) operands on the same `CBLTDLI` call, so the saved/restored areas flow through unchanged:
 
-   ```
+   ```java
    // XRST at start: restore saved areas + reposition after a restart
    ctrl.callSubProgram("CBLTDLI", CallBuilder.newInstance()
        .byReference(ctx.getXrstFunct().getXrstFunctReference())
@@ -681,7 +681,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Example:
 
-   ```
+   ```cobol
          * Insert an IMS segment AND a DB2 row in the same unit of work
           CALL 'CBLTDLI' USING ISRT-FUNCT PCB-MASK SEG-IO CHILD-SSA.
           EXEC SQL INSERT INTO AUTHFRDS (...) VALUES (...) END-EXEC.
@@ -709,7 +709,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Example — check the status after a checkpoint:
 
-   ```
+   ```cobol
           CALL 'CBLTDLI' USING CHKP-FUNCT PCB-MASK CHKP-ID.
           IF PCB-STATUS = SPACES
               CONTINUE
@@ -721,7 +721,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Generated Java — the status check reads the PCB status field back (blank = success, else fail), mirroring the COBOL:
 
-   ```
+   ```java
    // after the CHKP callSubProgram
    if (DataUtils.isBlank(ctx.getPautbpcb().getPautPcbStatusReference())) {
        // CHKP success
@@ -741,7 +741,7 @@ CICS `EXEC DLI` works the same way; its status is returned in the DIB instead of
 
    Conceptual shape of the calls in a hand-written Java program (same arguments as the COBOL calls — function code, PCB, and, for symbolic checkpoint, the id and saved areas):
 
-   ```
+   ```java
    // checkpoint (commit + establish restart point)
    callSubProgram("CBLTDLI", chkpFunc, pcbMask, chkpId);              // basic
    callSubProgram("CBLTDLI", chkpFunc, pcbMask, chkpId, len, area);   // symbolic (saves 'area')

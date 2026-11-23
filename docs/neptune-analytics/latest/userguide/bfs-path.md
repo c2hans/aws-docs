@@ -143,7 +143,7 @@ It is not good practice to use `MATCH(n)` without restriction in query integrati
 
 Here is an example of the output returned by .bfs.path when run against the [ sample air-routes dataset [nodes] on the GitHub website](https://github.com/krlawrence/graph/blob/main/sample-data/air-routes-latest-nodes.csv), and [ sample air-routes dataset [edges] on the GitHub website](https://github.com/krlawrence/graph/blob/main/sample-data/air-routes-latest-edges.csv), when using the following query:
 
-```
+```json
 aws neptune-graph execute-query \
   --graph-identifier ${graphIdentifier} \
   --query-string "MATCH (n:airport {code: 'FLL'})

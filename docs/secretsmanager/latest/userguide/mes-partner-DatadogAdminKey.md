@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "adminApiKey": "{{32-character hex API key}}",
   "adminApiKeyId": "{{API key UUID}}",
@@ -43,7 +43,7 @@ Your Datadog site (for example, `datadoghq.com`, `datadoghq.eu`, `us5.datadoghq.
 
 The following are the metadata fields for Datadog Admin Key:
 
-```
+```json
 {
   "adminSecretArn": "arn:aws:secretsmanager:us-east-1:111122223333:secret:{{DatadogAdminKey}}"
 }

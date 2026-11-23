@@ -27,7 +27,7 @@ The role permissions policy allows Amazon Managed Grafana to complete the follow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -47,7 +47,7 @@ In this example, use a Node.js module to get the current SMS attributes in Amazo
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -66,7 +66,7 @@ This example gets the `DefaultSMSType` attribute, which controls whether SMS mes
 **Note**
 Replace {{ATTRIBUTE\_NAME}} with the name of the attribute.
 
-```
+```javascript
 import { GetSMSAttributesCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -96,7 +96,7 @@ export const getSmsAttributes = async () => {
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node get-sms-attributes.js
 ```
 
@@ -109,7 +109,7 @@ In this example, use a Node.js module to get the current SMS attributes in Amazo
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -123,7 +123,7 @@ This example code can be found [here on GitHub](https://github.com/awsdocs/aws-d
 
 This example sets the `DefaultSMSType` attribute to `Transactional`, which optimizes message delivery to achieve the highest reliability. Pass the parameters to the `SetTopicAttributesCommand` method of the `SNS` client class. To call the `SetSMSAttributesCommand` method, create an asynchronous function invoking an Amazon SNS client service object, passing the parameters object.
 
-```
+```javascript
 import { SetSMSAttributesCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -158,7 +158,7 @@ export const setSmsType = async (defaultSmsType = "Transactional") => {
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node set-sms-attribute-type.js
 ```
 
@@ -171,7 +171,7 @@ In this example, use a Node.js module to check a phone number to see if it has o
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -189,7 +189,7 @@ This example sets the `PhoneNumber` parameter to specify the phone number to che
 
 Replace {{PHONE\_NUMBER}} with the phone number.
 
-```
+```javascript
 import { CheckIfPhoneNumberIsOptedOutCommand } from "@aws-sdk/client-sns";
 
 import { snsClient } from "../libs/snsClient.js";
@@ -220,7 +220,7 @@ export const checkIfPhoneNumberIsOptedOut = async (
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node check-if-phone-number-is-opted-out.js
 ```
 
@@ -233,7 +233,7 @@ In this example, use a Node.js module to get a list of phone numbers that have o
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -247,7 +247,7 @@ Create a Node.js module with the file name `list-phone-numbers-opted-out.js`. Co
 
 Pass the object to the `ListPhoneNumbersOptedOutCommand` method of the `SNS` client class. To call the `ListPhoneNumbersOptedOutCommand` method, create an asynchronous function invoking an Amazon SNS client service object, passing the parameters object.
 
-```
+```javascript
 import { ListPhoneNumbersOptedOutCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -273,7 +273,7 @@ export const listPhoneNumbersOptedOut = async () => {
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node list-phone-numbers-opted-out.js
 ```
 
@@ -286,7 +286,7 @@ In this example, use a Node.js module to send an SMS message to a phone number.
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -305,7 +305,7 @@ This example sets the `PhoneNumber` parameter to specify the phone number to sen
 **Note**
 Replace {{TEXT\_MESSAGE}} with the text message, and {{PHONE\_NUMBER}} with the phone number.
 
-```
+```javascript
 import { PublishCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -343,7 +343,7 @@ export const publish = async (
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node publish-sms.js
 ```
 

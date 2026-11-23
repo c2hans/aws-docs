@@ -37,7 +37,7 @@ For more information, see [Create a Lambda function with the console](https://do
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/lambda/basics#code-examples).
 Define the first Lambda function, which simply increments the specified value.
 
-```
+```swift
 // swift-tools-version: 5.9
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -125,7 +125,7 @@ try await incrementLambdaRuntime.run()
 ```
 Define the second Lambda function, which performs an arithmetic operation on two numbers.
 
-```
+```swift
 // swift-tools-version: 5.9
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -241,7 +241,7 @@ try await calculatorLambdaRuntime.run()
 ```
 Define the main program that will invoke the two Lambda functions.
 
-```
+```swift
 // swift-tools-version: 5.9
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -949,7 +949,7 @@ The following code example shows how to use `CreateFunction`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/lambda/basics#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSLambda
 import Foundation
@@ -989,7 +989,7 @@ The following code example shows how to use `DeleteFunction`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/lambda/basics#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSLambda
 import Foundation
@@ -1014,7 +1014,7 @@ The following code example shows how to use `GetFunction`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/lambda/basics#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSLambda
 import Foundation
@@ -1049,7 +1049,7 @@ The following code example shows how to use `Invoke`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/lambda/basics#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSLambda
 import Foundation
@@ -1099,7 +1099,7 @@ The following code example shows how to use `ListFunctions`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/lambda/basics#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSLambda
 import Foundation
@@ -1142,7 +1142,7 @@ The following code example shows how to use `UpdateFunctionCode`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/lambda/basics#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSLambda
 import Foundation
@@ -1182,7 +1182,7 @@ The following code example shows how to use `UpdateFunctionConfiguration`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/lambda/basics#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSLambda
 import Foundation

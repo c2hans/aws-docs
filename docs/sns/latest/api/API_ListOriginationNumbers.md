@@ -73,7 +73,7 @@ This example illustrates one usage of ListOriginationNumbers.
 #### Sample Request
 <a name="API_ListOriginationNumbers_Example_1_Request"></a>
 
-```
+```xml
 https://sns.us-west-2.amazonaws.com/?Action=ListOriginationNumbers
 &NextToken=AAMAATKBfxv6_MR2sl2KtICrU2ksVr9xAtdrIFgK60DYBC7S9uDbQFIkR6ZUugDSulzDRrnUbhQIlq3ZOg%3D%3D
 &MaxResults=2
@@ -84,7 +84,7 @@ https://sns.us-west-2.amazonaws.com/?Action=ListOriginationNumbers
 #### Sample Response
 <a name="API_ListOriginationNumbers_Example_1_Response"></a>
 
-```
+```xml
 <ListOriginationNumbersResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ListOriginationNumbersResult>
         <NextToken>eyJBd3NBY2NvdW50SWQiOnsicyI6IjU3MjQ1OTY4NzAxNCJ9LCJEZXN0aW5hdGlvblBob25lTnVtYmVyIjp7InMiOiIrMTc3ODk4NjU0MjkifX0=</NextToken>

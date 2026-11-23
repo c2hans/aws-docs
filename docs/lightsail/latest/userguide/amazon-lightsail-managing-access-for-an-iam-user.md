@@ -39,7 +39,7 @@ Follow these steps to create an IAM policy for Lightsail access. For more inform
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

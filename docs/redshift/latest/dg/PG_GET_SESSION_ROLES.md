@@ -13,7 +13,7 @@ To view the roles defined in the Amazon Redshift catalog, query the system view 
 ## Syntax
 <a name="PG_GET_LATE_BINDING_VIEW_COLS-synopsis"></a>
 
-```
+```sql
 pg_get_session_roles()
 ```
 
@@ -32,7 +32,7 @@ The `PG_GET_SESSION_ROLES` function returns one row for each returned session ro
 
 The following example returns one row for each role from the Azure Active Directory IdP. The returned columns are cast to `sess_roles` with columns `name` and `roleid`. Each `name` consists of the Azure Active Directory namespace and a group name in Azure Active Directory.
 
-```
+```sql
 SELECT * FROM pg_get_session_roles() AS sess_roles(name name, roleid integer);
 
 name                  roleid
@@ -46,7 +46,7 @@ my_aad:test_group_5   106208
 
 The following example returns one row for each IAM group that the currently logged in IAM user is a member of. The returned columns are cast to `sess_roles` with columns `name` and `roleid`. Each `name` consists of the IAM namespace and IAM group name.
 
-```
+```sql
 SELECT * FROM pg_get_session_roles() AS sess_roles(name name, roleid integer);
 
 name                  roleid

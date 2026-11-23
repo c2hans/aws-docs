@@ -41,7 +41,7 @@ Using the following values, [create an EventBridge rule](https://docs.aws.amazon
 + For **Rule type**, choose **Rule with an event pattern**.
 + In the **Event pattern** box, add the following pattern:
 
-  ```
+  ```json
   {
     "source": ["aws.geo"],
     "detail-type": ["Location Geofence Event"]
@@ -95,7 +95,7 @@ It's best practice to confirm that the event rule was successfully applied or yo
 
 You can also capture all events from Amazon Location, by just excluding the `detail-type` section. For example:
 
-```
+```json
 {
   "source": [
     "aws.geo"

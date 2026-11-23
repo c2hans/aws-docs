@@ -46,7 +46,7 @@ If *geom* is not a linestring, then an error is returned.
 
 The following SQL returns a point halfway along a linestring.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_LineInterpolatePoint(ST_GeomFromText('LINESTRING(0 0, 5 5, 7 7, 10 10)'), 0.50));
 ```
 
@@ -58,7 +58,7 @@ st_asewkt
 
 The following SQL returns a point 90 percent of the way along a linestring.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_LineInterpolatePoint(ST_GeomFromText('LINESTRING(0 0, 5 5, 7 7, 10 10)'), 0.90));
 ```
 

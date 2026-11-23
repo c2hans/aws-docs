@@ -58,7 +58,7 @@ To create a dataset and a schema using the AWS CLI, you use the the `create-sche
 
 1. Create a schema in Amazon Personalize by running the following command. After you create a schema, you can't make changes to the schema. Replace `schemaName` with the name of the schema, and replace `file://SchemaName.json` with the location of your JSON file. The example shows the file as belonging to the current folder. If you are creating a schema for a dataset in a Domain dataset group, add the `domain` parameter and set it to `ECOMMERCE` or `VIDEO_ON_DEMAND`. For more information about the API, see [CreateSchema](API_CreateSchema.md).
 
-   ```
+   ```json
    aws personalize create-schema \
      --name {{SchemaName}} \
      --schema {{file://SchemaName.json}}
@@ -66,7 +66,7 @@ To create a dataset and a schema using the AWS CLI, you use the the `create-sche
 
    The schema Amazon Resource Name (ARN) is displayed, as shown in the following example:
 
-   ```
+   ```json
    {
      "schemaArn": "arn:aws:personalize:us-west-2:acct-id:schema/SchemaName"
    }
@@ -74,7 +74,7 @@ To create a dataset and a schema using the AWS CLI, you use the the `create-sche
 
 1. Create an empty dataset by running the following command. Provide the dataset group Amazon Resource Name (ARN) from [Creating a dataset group (AWS CLI)](data-prep-ds-group.md#data-prep-creating-ds-group-cli) and schema ARN from the previous step. Dataset type values can be `Interactions`, `Users`, `Items`, `Actions`, or `Action_Interactions`. For more information about the API, see [CreateDataset](API_CreateDataset.md).
 
-   ```
+   ```json
    aws personalize create-dataset \
      --name {{Dataset Name}} \
      --dataset-group-arn {{Dataset Group ARN}} \
@@ -84,7 +84,7 @@ To create a dataset and a schema using the AWS CLI, you use the the `create-sche
 
    The dataset ARN is displayed, as shown in the following example.
 
-   ```
+   ```json
    {
      "datasetArn": "arn:aws:personalize:us-west-2:acct-id:dataset/DatasetName/INTERACTIONS"
    }
@@ -106,7 +106,7 @@ To create a dataset and a schema using the AWS SDKs, you first define a schema i
 ------
 #### [ SDK for Python (Boto3) ]
 
-   ```
+   ```py
    import boto3
 
    personalize = boto3.client('personalize')
@@ -125,7 +125,7 @@ To create a dataset and a schema using the AWS SDKs, you first define a schema i
 ------
 #### [ SDK for Java 2.x ]
 
-   ```
+   ```java
    public static String createSchema(PersonalizeClient personalizeClient, String schemaName, String filePath) {
 
        String schema = null;
@@ -158,7 +158,7 @@ To create a dataset and a schema using the AWS SDKs, you first define a schema i
 ------
 #### [ SDK for JavaScript v3 ]
 
-   ```
+   ```JavaScript
    // Get service clients module and commands using ES6 syntax.
    import { CreateSchemaCommand } from "@aws-sdk/client-personalize";
    import { personalizeClient } from "./libs/personalizeClients.js";
@@ -205,7 +205,7 @@ To create a dataset and a schema using the AWS SDKs, you first define a schema i
 ------
 #### [ SDK for Python (Boto3) ]
 
-   ```
+   ```python
    import boto3
 
    personalize = boto3.client('personalize')
@@ -223,7 +223,7 @@ To create a dataset and a schema using the AWS SDKs, you first define a schema i
 ------
 #### [ SDK for Java 2.x ]
 
-   ```
+   ```java
    public static String createDataset(PersonalizeClient personalizeClient,
                                        String datasetName,
                                        String datasetGroupArn,
@@ -252,7 +252,7 @@ To create a dataset and a schema using the AWS SDKs, you first define a schema i
 ------
 #### [ SDK for JavaScript v3 ]
 
-   ```
+   ```JavaScript
    // Get service clients module and commands using ES6 syntax.
    import { CreateDatasetCommand } from "@aws-sdk/client-personalize";
    import { personalizeClient } from "./libs/personalizeClients.js";

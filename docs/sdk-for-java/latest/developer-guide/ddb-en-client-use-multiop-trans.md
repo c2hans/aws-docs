@@ -15,7 +15,7 @@ After comment line 1 in the following example, the code calls the `transactGetIt
 
 The request returns a list of `[Document](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/Document.html)` objects after comment line 2. The list of documents that is returned contains non-null [Document](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/Document.html) instances of item data in the same order as requested. The `[Document.getItem(MappedTableResource<T> mappedTableResource)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/Document.html#getItem(software.amazon.awssdk.enhanced.dynamodb.MappedTableResource))` method converts an untyped `Document` object into a typed Java object if item data was returned, otherwise the method returns null.
 
-```
+```java
     public static void transactGetItemsExample(DynamoDbEnhancedClient enhancedClient,
                                                DynamoDbTable<ProductCatalog> catalogTable,
                                                DynamoDbTable<MovieActor> movieActorTable) {
@@ -78,7 +78,7 @@ An update operation is requested after comment line 3. `[TransactUpdateItemEnhan
 
 The statement after comment line 4 shows the variation of a delete request that takes a data object. The enhanced client extracts the key values before dispatching the final request.
 
-```
+```java
     public static void transactWriteItems(DynamoDbEnhancedClient enhancedClient,
                                           DynamoDbTable<ProductCatalog> catalogTable,
                                           DynamoDbTable<MovieActor> movieActorTable) {
@@ -107,7 +107,7 @@ The following helper methods provide the data objects for the `add*Item` paramet
 #### Helper methods
 <a name="ddb-en-client-use-multiop-trans-writeitems-basic-helpers"></a>
 
-```
+```java
     public static ProductCatalog getProductCatId2() {
         return ProductCatalog.builder()
                 .id(2)
@@ -180,7 +180,7 @@ The example shows one of each type of operation in a transactional write items r
 
 This guide discusses [expressions](ddb-en-client-expressions.md) in depth in another topic.
 
-```
+```java
     public static void conditionCheckFailExample(DynamoDbEnhancedClient enhancedClient,
                                                  DynamoDbTable<ProductCatalog> catalogTable,
                                                  DynamoDbTable<MovieActor> movieActorTable) {
@@ -221,7 +221,7 @@ The following helper methods are used in the previous code example.
 #### Helper methods
 <a name="ddb-en-client-use-multiop-trans-writeitems-checkcond-helpers"></a>
 
-```
+```java
     private static Expression buildConditionCheckExpression() {
         Map<String, AttributeValue> expressionValue = Map.of(
                 ":year", numberValue(1982));
@@ -296,7 +296,7 @@ The following example shows the use of a condition on a single operation in a tr
 
 [Expressions](ddb-en-client-expressions.md) are discussed later in this guide.
 
-```
+```java
     public static void singleOperationConditionFailExample(DynamoDbEnhancedClient enhancedClient,
                                                            DynamoDbTable<ProductCatalog> catalogTable,
                                                            DynamoDbTable<MovieActor> movieActorTable) {
@@ -341,7 +341,7 @@ The following helper methods are used in the previous code example.
 #### Helper methods
 <a name="ddb-en-client-use-multiop-trans-writeitems-opcondition-helpers"></a>
 
-```
+```java
     public static ProductCatalog getProductCatId2() {
         return ProductCatalog.builder()
                 .id(2)

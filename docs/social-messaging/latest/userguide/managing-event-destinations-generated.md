@@ -47,7 +47,7 @@ The `biz_opaque_callback_data` value is included only on the event that is deliv
 
 The following example shows the message that is published to an Amazon SNS event destination for a failed call handover. The embedded `whatsAppWebhookEntry` uses the `calls` field, includes the `biz_opaque_callback_data` value that you provided, and includes an `errors` array that describes why the hand-off failed.
 
-```
+```json
 {
     "aws_account_id": "111122223333",
     "message_timestamp": "2025-10-03T04:49:25Z",

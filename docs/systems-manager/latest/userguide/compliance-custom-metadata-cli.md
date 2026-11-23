@@ -17,7 +17,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm put-compliance-items \
        --resource-id {{instance_ID}} \
        --resource-type ManagedInstance \
@@ -29,7 +29,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm put-compliance-items ^
        --resource-id {{instance_ID}} ^
        --resource-type ManagedInstance ^
@@ -47,7 +47,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm put-compliance-items \
        --resource-id {{instance_ID}} \
        --resource-type ManagedInstance \
@@ -59,7 +59,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm put-compliance-items ^
        --resource-id {{instance_ID}} ^
        --resource-type ManagedInstance ^
@@ -75,7 +75,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm put-compliance-items \
        --resource-id {{instance_ID}} \
        --resource-type ManagedInstance \
@@ -87,7 +87,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm put-compliance-items ^
        --resource-id {{instance_ID}} ^
        --resource-type ManagedInstance ^
@@ -103,7 +103,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm list-compliance-items \
        --resource-ids {{instance_ID}} \
        --resource-types ManagedInstance \
@@ -113,7 +113,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm list-compliance-items ^
        --resource-ids {{instance_ID}} ^
        --resource-types ManagedInstance ^
@@ -127,7 +127,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm list-compliance-items \
        --resource-ids i-02573cafcfEXAMPLE \
        --resource-type ManagedInstance \
@@ -137,7 +137,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm list-compliance-items ^
        --resource-ids i-02573cafcfEXAMPLE ^
        --resource-type ManagedInstance ^
@@ -149,7 +149,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm list-resource-compliance-summaries \
        --filters Key=OverallSeverity,Values=UNSPECIFIED
    ```
@@ -167,7 +167,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm list-resource-compliance-summaries \
        --filters Key=OverallSeverity,Values=UNSPECIFIED Key=ComplianceType,Values=Association Key=InstanceId,Values=i-02573cafcfEXAMPLE
    ```
@@ -175,7 +175,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm list-resource-compliance-summaries ^
        --filters Key=OverallSeverity,Values=UNSPECIFIED Key=ComplianceType,Values=Association Key=InstanceId,Values=i-02573cafcfEXAMPLE
    ```
@@ -193,7 +193,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm list-resource-compliance-summaries \
        --filters Key=ExecutionType,Values=Command
    ```
@@ -201,7 +201,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm list-resource-compliance-summaries ^
        --filters Key=ExecutionType,Values=Command
    ```
@@ -211,7 +211,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm list-resource-compliance-summaries \
        --filters Key=AWS:InstanceInformation.PlatformType,Values=Windows Key=OverallSeverity,Values=CRITICAL
    ```
@@ -219,7 +219,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm list-resource-compliance-summaries ^
        --filters Key=AWS:InstanceInformation.PlatformType,Values=Windows Key=OverallSeverity,Values=CRITICAL
    ```
@@ -237,7 +237,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm list-compliance-summaries \
        --filters Key=AWS:InstanceInformation.PlatformType,Values=Windows Key=PatchGroup,Values=TestGroup
    ```
@@ -245,7 +245,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm list-compliance-summaries ^
        --filters Key=AWS:InstanceInformation.PlatformType,Values=Windows Key=PatchGroup,Values=TestGroup
    ```
@@ -255,7 +255,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm list-compliance-summaries \
        --filters Key=AWS:InstanceInformation.PlatformType,Values=Windows Key=ExecutionId,Values=4adf0526-6aed-4694-97a5-14522EXAMPLE
    ```
@@ -263,7 +263,7 @@ The following procedure walks you through the process of using the AWS Command L
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm list-compliance-summaries ^
        --filters Key=AWS:InstanceInformation.PlatformType,Values=Windows Key=ExecutionId,Values=4adf0526-6aed-4694-97a5-14522EXAMPLE
    ```

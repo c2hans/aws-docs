@@ -11,7 +11,7 @@ Key policies control access to your customer managed key. Every customer managed
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [

@@ -35,7 +35,7 @@ You can't use these two parameters at the same time. The patching document fails
 
 The following code example for Python shows how to generate the patch baseline override.
 
-```
+```py
 import boto3
 import json
 
@@ -57,7 +57,7 @@ s3.Object(bucket_name=s3_bucket_name, key=s3_file_name).put(Body=json_content)
 
 This produces a patch baseline override like the following.
 
-```
+```json
 [
     {
         "ApprovalRules": {

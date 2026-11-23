@@ -80,9 +80,11 @@ Status change events are published for the following execution states:
 
 If you pause an execution with no invocation in progress, it changes directly to `PAUSED`, so Lambda doesn't send a `PAUSING` event. For more information about pausing executions, see [Pausing and resuming durable executions](durable-pause-resume.md).
 
+Deleting an execution doesn't send a status change event. Instead, when a CloudTrail trail logs `DeleteDurableExecution` data events, CloudTrail sends each call to EventBridge as an `AWS API Call via CloudTrail` event. For more information about getting notified when someone deletes an execution, see [Audit execution deletions](durable-delete.md#durable-cloudtrail-audit-deletions).
+
 The following example shows a durable execution status change event:
 
-```
+```json
 {
   "version": "0",
   "id": "d019b03c-a8a3-9d58-85de-241e96206538",
@@ -111,7 +113,7 @@ Create EventBridge rules to route durable execution status change events to targ
 
 The following example creates a rule that matches all durable execution status changes:
 
-```
+```json
 {
   "source": ["aws.lambda"],
   "detail-type": ["Durable Execution Status Change"]
@@ -120,7 +122,7 @@ The following example creates a rule that matches all durable execution status c
 
 The following example creates a rule that matches only failed executions:
 
-```
+```json
 {
   "source": ["aws.lambda"],
   "detail-type": ["Durable Execution Status Change"],
@@ -132,7 +134,7 @@ The following example creates a rule that matches only failed executions:
 
 The following example creates a rule that matches status changes for a specific function:
 
-```
+```json
 {
   "source": ["aws.lambda"],
   "detail-type": ["Durable Execution Status Change"],
@@ -174,7 +176,7 @@ aws lambda update-function-configuration \
 
 To enable AWS X-Ray tracing using AWS SAM:
 
-```
+```yaml
 Resources:
   MyDurableFunction:
     Type: AWS::Serverless::Function

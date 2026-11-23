@@ -43,7 +43,7 @@ Use the following procedure to reset an AWS Managed Microsoft AD user password w
 
 1. Type the following command and replace the Directory ID, username **jane.doe**, and password **P@ssw0rd** with your Active Directory Directory ID and desired credentials. See [reset-user-password](https://docs.aws.amazon.com/cli/latest/reference/ds/reset-user-password.html) in the *AWS CLI Command Reference* for more information.
 
-```
+```cmd
 aws ds reset-user-password --directory-id {{d-1234567890}} --user-name "{{jane.doe}}" --new-password "{{P@ssw0rd}}"
 ```
 
@@ -58,7 +58,7 @@ Use the following procedure to reset an AWS Managed Microsoft AD user password w
 
 1. Type the following command replacing the username **jane.doe**, the Directory ID, and password **P@ssw0rd** with your Active Directory Directory ID and desired credentials. See [Reset-DSUserPassword Cmdlet](https://docs.aws.amazon.com/powershell/latest/reference/items/Reset-DSUserPassword.html) for more information.
 
-```
+```powershell
 Reset-DSUserPassword -UserName "{{jane.doe}}" -DirectoryId {{d-1234567890}} -NewPassword "{{P@ssw0rd}}"
 ```
 

@@ -27,7 +27,7 @@ The following code example shows how to use `CreateEndpoint`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     DATA lt_production_variants TYPE /aws1/cl_sgmproductionvariant=>tt_productionvariantlist.
     DATA lo_production_variants TYPE REF TO /aws1/cl_sgmproductionvariant.
     DATA oo_ep_config_result TYPE REF TO /aws1/cl_sgmcreateendptcfgout.
@@ -71,7 +71,7 @@ The following code example shows how to use `CreateModel`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     DATA lo_primarycontainer TYPE REF TO /aws1/cl_sgmcontainerdefn.
 
     "Create an ABAP object for the container image based on input variables."
@@ -99,7 +99,7 @@ The following code example shows how to use `CreateTrainingJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     DATA lo_hyperparameters_w TYPE REF TO /aws1/cl_sgmhyperparameters_w.
     DATA lt_hyperparameters TYPE /aws1/cl_sgmhyperparameters_w=>tt_hyperparameters.
     DATA lt_input_data_config TYPE /aws1/cl_sgmchannel=>tt_inputdataconfig.
@@ -210,7 +210,7 @@ The following code example shows how to use `CreateTransformJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     DATA lo_transforminput TYPE REF TO /aws1/cl_sgmtransforminput.
     DATA lo_transformoutput TYPE REF TO /aws1/cl_sgmtransformoutput.
     DATA lo_transformresources TYPE REF TO /aws1/cl_sgmtransformresources.
@@ -263,7 +263,7 @@ The following code example shows how to use `DeleteEndpoint`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     "Delete an endpoint."
     TRY.
         lo_sgm->deleteendpoint(
@@ -294,7 +294,7 @@ The following code example shows how to use `DeleteModel`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_sgm->deletemodel(
                   iv_modelname = iv_model_name ).
@@ -314,7 +314,7 @@ The following code example shows how to use `DescribeTrainingJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sgm->describetrainingjob(      " oo_result is returned for testing purposes. "
           iv_trainingjobname = iv_training_job_name ).
@@ -334,7 +334,7 @@ The following code example shows how to use `ListAlgorithms`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sgm->listalgorithms(         " oo_result is returned for testing purposes. "
           iv_namecontains = iv_name_contains ).
@@ -354,7 +354,7 @@ The following code example shows how to use `ListModels`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sgm->listmodels(           " oo_result is returned for testing purposes. "
           iv_namecontains = iv_name_contains ).
@@ -374,7 +374,7 @@ The following code example shows how to use `ListNotebookInstances`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sgm->listnotebookinstances(        " oo_result is returned for testing purposes. "
           iv_namecontains = iv_name_contains ).
@@ -394,7 +394,7 @@ The following code example shows how to use `ListTrainingJobs`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sgm->listtrainingjobs(       " oo_result is returned for testing purposes. "
           iv_namecontains = iv_name_contains
@@ -421,7 +421,7 @@ The following code example shows how to:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     DATA lo_hyperparameters_w TYPE REF TO /aws1/cl_sgmhyperparameters_w.
     DATA lo_trn_channel TYPE REF TO /aws1/cl_sgmchannel.
     DATA lo_trn_datasource TYPE REF TO /aws1/cl_sgmdatasource.

@@ -89,7 +89,7 @@ For more information, see [Creating associations](https://docs.aws.amazon.com/sy
 **Tools for PowerShell V4**
 **Example 1: This example associates a configuration document with multiple instances. The output returns a list of successful and failed operations, if applicable.**
 
-```
+```powershell
 $option1 = @{InstanceId="i-0cb2b964d3e14fd9f";Name=@("AWS-UpdateSSMAgent")}
 $option2 = @{InstanceId="i-0000293ffd8c57862";Name=@("AWS-UpdateSSMAgent")}
 New-SSMAssociationFromBatch -Entry $option1,$option2
@@ -103,7 +103,7 @@ Failed  Successful
 ```
 **Example 2: This example will show the full details of a successful operation.**
 
-```
+```powershell
 $option1 = @{InstanceId="i-0cb2b964d3e14fd9f";Name=@("AWS-UpdateSSMAgent")}
 $option2 = @{InstanceId="i-0000293ffd8c57862";Name=@("AWS-UpdateSSMAgent")}
 (New-SSMAssociationFromBatch -Entry $option1,$option2).Successful
@@ -113,7 +113,7 @@ $option2 = @{InstanceId="i-0000293ffd8c57862";Name=@("AWS-UpdateSSMAgent")}
 **Tools for PowerShell V5**
 **Example 1: This example associates a configuration document with multiple instances. The output returns a list of successful and failed operations, if applicable.**
 
-```
+```powershell
 $option1 = @{InstanceId="i-0cb2b964d3e14fd9f";Name=@("AWS-UpdateSSMAgent")}
 $option2 = @{InstanceId="i-0000293ffd8c57862";Name=@("AWS-UpdateSSMAgent")}
 New-SSMAssociationFromBatch -Entry $option1,$option2
@@ -127,7 +127,7 @@ Failed  Successful
 ```
 **Example 2: This example will show the full details of a successful operation.**
 
-```
+```powershell
 $option1 = @{InstanceId="i-0cb2b964d3e14fd9f";Name=@("AWS-UpdateSSMAgent")}
 $option2 = @{InstanceId="i-0000293ffd8c57862";Name=@("AWS-UpdateSSMAgent")}
 (New-SSMAssociationFromBatch -Entry $option1,$option2).Successful

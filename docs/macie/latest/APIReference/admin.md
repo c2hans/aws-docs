@@ -100,7 +100,7 @@ Designates an account as the delegated Amazon Macie administrator account for an
 #### POST schema
 <a name="admin-request-body-post-example"></a>
 
-```
+```json
 {
   "adminAccountId": "string",
   "clientToken": "string"
@@ -113,7 +113,7 @@ Designates an account as the delegated Amazon Macie administrator account for an
 #### Empty Schema schema
 <a name="admin-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -121,7 +121,7 @@ Designates an account as the delegated Amazon Macie administrator account for an
 #### ListOrganizationAdminAccountsResponse schema
 <a name="admin-response-body-listorganizationadminaccountsresponse-example"></a>
 
-```
+```json
 {
   "adminAccounts": [
     {
@@ -136,7 +136,7 @@ Designates an account as the delegated Amazon Macie administrator account for an
 #### ValidationException schema
 <a name="admin-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -145,7 +145,7 @@ Designates an account as the delegated Amazon Macie administrator account for an
 #### ServiceQuotaExceededException schema
 <a name="admin-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -154,7 +154,7 @@ Designates an account as the delegated Amazon Macie administrator account for an
 #### AccessDeniedException schema
 <a name="admin-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -163,7 +163,7 @@ Designates an account as the delegated Amazon Macie administrator account for an
 #### ResourceNotFoundException schema
 <a name="admin-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -172,7 +172,7 @@ Designates an account as the delegated Amazon Macie administrator account for an
 #### ConflictException schema
 <a name="admin-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -181,7 +181,7 @@ Designates an account as the delegated Amazon Macie administrator account for an
 #### ThrottlingException schema
 <a name="admin-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -190,7 +190,7 @@ Designates an account as the delegated Amazon Macie administrator account for an
 #### InternalServerException schema
 <a name="admin-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

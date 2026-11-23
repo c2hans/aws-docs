@@ -20,7 +20,7 @@ These steps assume that you use a Raspberry Pi with Raspberry Pi OS. If you use 
 
 1. Find the IP address of your Raspberry Pi to connect to it with SSH. To do so, you can run the following command on your Raspberry Pi.
 
-   ```
+   ```bash
    hostname -I
    ```
 
@@ -28,7 +28,7 @@ These steps assume that you use a Raspberry Pi with Raspberry Pi OS. If you use 
 
    On your development computer, run the following command. Replace {{username}} with the name of the user to sign in, and replace {{pi-ip-address}} with the IP address that you found in the previous step.
 
-   ```
+   ```bash
    ssh {{username}}@{{pi-ip-address}}
    ```
 **Important**
@@ -36,13 +36,13 @@ If your development computer uses an earlier version of Windows, you might not h
 
 1. Install the Java runtime, which AWS IoT Greengrass Core software requires to run. On your Raspberry Pi, use the following commands to install Java 11.
 
-   ```
+   ```bash
    sudo apt install default-jdk
    ```
 
    When the installation completes, run the following command to verify that Java runs on your Raspberry Pi.
 
-   ```
+   ```bash
    java -version
    ```
 
@@ -59,7 +59,7 @@ If your device is a Raspberry Pi, you can complete the following steps to view a
 Open the `/boot/cmdline.txt` file. This file specifies Linux kernel parameters to apply when the Raspberry Pi boots.
 For example, on a Linux-based system, you can run the following command to use GNU nano to open the file.
 
-   ```
+   ```bash
    sudo nano /boot/cmdline.txt
    ```
 Verify that the `/boot/cmdline.txt` file contains the following kernel parameters. The `systemd.unified_cgroup_hierarchy=0` parameter specifies to use cgroups v1 instead of cgroups v2.
@@ -70,7 +70,7 @@ Verify that the `/boot/cmdline.txt` file contains the following kernel parameter
 If the `/boot/cmdline.txt` file doesn't contain these parameters, or it contains these parameters with different values, update the file to contain these parameters and values.
 If you updated the `/boot/cmdline.txt` file, reboot the Raspberry Pi to apply the changes.
 
-   ```
+   ```bash
    sudo reboot
    ```
 
@@ -82,28 +82,28 @@ If you updated the `/boot/cmdline.txt` file, reboot the Raspberry Pi to apply th
 1. Install the Java runtime, which AWS IoT Greengrass Core software requires to run. We recommend that you use [Amazon Corretto](https://aws.amazon.com/corretto/) or [OpenJDK](https://openjdk.java.net/) long-term support versions. Version 8 or higher is required. The following commands show you how to install OpenJDK on your device.
    + For Debian-based or Ubuntu-based distributions:
 
-     ```
+     ```bash
      sudo apt install default-jdk
      ```
    + For Red Hat-based distributions:
 
-     ```
+     ```bash
      sudo yum install java-11-openjdk-devel
      ```
    + For Amazon Linux 2:
 
-     ```
+     ```bash
      sudo amazon-linux-extras install java-openjdk11
      ```
    + For Amazon Linux 2023:
 
-     ```
+     ```bash
      sudo dnf install java-11-amazon-corretto -y
      ```
 
    When the installation completes, run the following command to verify that Java runs on your Linux device.
 
-   ```
+   ```bash
    java -version
    ```
 
@@ -117,7 +117,7 @@ If you updated the `/boot/cmdline.txt` file, reboot the Raspberry Pi to apply th
 
 1. (Optional) Create the default system user and group that runs components on the device. You can also choose to let the AWS IoT Greengrass Core software installer create this user and group during installation with the `--component-default-user` installer argument. For more information, see [Installer arguments](configure-installer.md).
 
-   ```
+   ```bash
    sudo useradd --system --create-home ggc_user
    sudo groupadd --system ggc_group
    ```
@@ -126,7 +126,7 @@ If you updated the `/boot/cmdline.txt` file, reboot the Raspberry Pi to apply th
 
    1. Run the following command to open the `/etc/sudoers` file.
 
-      ```
+      ```bash
       sudo visudo
       ```
 
@@ -179,24 +179,24 @@ If you updated the `/boot/cmdline.txt` file, reboot the Raspberry Pi to apply th
 
 1. <a name="set-up-windows-device-environment-create"></a>Create the default user in the LocalSystem account on the Windows device. Replace {{password}} with a secure password.
 
-   ```
+   ```cmd
    net user /add ggc_user {{password}}
    ```
 **Tip**  <a name="windows-password-expiration-tip"></a>
 Depending on your Windows configuration, the user's password might be set to expire at a date in the future. To ensure your Greengrass applications continue to operate, track when the password expires, and update it before it expires. You can also set the user's password to never expire.
 To check when a user and its password expire, run the following command.
 
-     ```
+     ```cmd
      net user {{ggc_user}} | findstr /C:expires
      ```
 To set a user's password to never expire, run the following command.
 
-     ```
+     ```cmd
      wmic UserAccount where "Name='{{ggc_user}}'" set PasswordExpires=False
      ```
 If you’re using Windows 10 or later where the [`wmic` command is deprecated](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmic), run the following PowerShell command.
 
-     ```
+     ```powershell
      Get-CimInstance -Query "SELECT * from Win32_UserAccount WHERE name = '{{ggc_user}}'" | Set-CimInstance -Property @{PasswordExpires="False"}
      ```
 
@@ -204,7 +204,7 @@ If you’re using Windows 10 or later where the [`wmic` command is deprecated](h
 
 1. <a name="set-up-windows-device-credentials"></a>Use the PsExec utility to store the user name and password for the default user in the Credential Manager instance for the LocalSystem account. Replace {{password}} with the user's password that you set earlier.
 
-   ```
+   ```cmd
    psexec -s cmd /c cmdkey /generic:ggc_user /user:ggc_user /pass:{{password}}
    ```
 

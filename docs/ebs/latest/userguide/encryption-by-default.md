@@ -38,12 +38,12 @@ Encryption by default has no effect on existing EBS volumes or snapshots.
 Use the [get-ebs-encryption-by-default](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-ebs-encryption-by-default.html) command.
 + For a specific Region
 
-  ```
+  ```bash
   aws ec2 get-ebs-encryption-by-default --region {{region}}
   ```
 + For all Regions in your account
 
-  ```
+  ```bash
   echo -e "Region      \t Encrypt \t Key"; \
   echo -e "----------- \t ------- \t -------" ; \
   for region in $(aws ec2 describe-regions --region us-east-1 --query "Regions[*].[RegionName]" --output text);
@@ -59,12 +59,12 @@ Use the [get-ebs-encryption-by-default](https://docs.aws.amazon.com/cli/latest/r
 Use the [enable-ebs-encryption-by-default](https://docs.aws.amazon.com/cli/latest/reference/ec2/enable-ebs-encryption-by-default.html) command.
 + For a specific Region
 
-  ```
+  ```bash
   aws ec2 enable-ebs-encryption-by-default --region {{region}}
   ```
 + For all Regions in your account
 
-  ```
+  ```bash
   echo -e "Region      \t Encrypt \t Key"; \
   echo -e "----------- \t ------- \t -------" ; \
   for region in $(aws ec2 describe-regions --region us-east-1 --query "Regions[*].[RegionName]" --output text);
@@ -80,12 +80,12 @@ Use the [enable-ebs-encryption-by-default](https://docs.aws.amazon.com/cli/lates
 Use the [disable-ebs-encryption-by-default](https://docs.aws.amazon.com/cli/latest/reference/ec2/disable-ebs-encryption-by-default.html) command.
 + For a specific Region
 
-  ```
+  ```bash
   aws ec2 disable-ebs-encryption-by-default --region {{region}}
   ```
 + For all Regions in your account
 
-  ```
+  ```bash
   echo -e "Region      \t Encrypt \t Key"; \
   echo -e "----------- \t ------- \t -------" ; \
   for region in $(aws ec2 describe-regions --region us-east-1 --query "Regions[*].[RegionName]" --output text);
@@ -104,12 +104,12 @@ Use the [disable-ebs-encryption-by-default](https://docs.aws.amazon.com/cli/late
 Use the [Get-EC2EbsEncryptionByDefault](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2EbsEncryptionByDefault.html) cmdlet.
 + For a specific Region
 
-  ```
+  ```powershell
   Get-EC2EbsEncryptionByDefault -Region {{region}}
   ```
 + For all Regions in your account
 
-  ```
+  ```powershell
   (Get-EC2Region).RegionName |
       ForEach-Object {
       [PSCustomObject]@{
@@ -125,12 +125,12 @@ Use the [Get-EC2EbsEncryptionByDefault](https://docs.aws.amazon.com/powershell/l
 Use the [Enable-EC2EbsEncryptionByDefault](https://docs.aws.amazon.com/powershell/latest/reference/items/Enable-EC2EbsEncryptionByDefault.html) cmdlet.
 + For a specific Region
 
-  ```
+  ```powershell
   Enable-EC2EbsEncryptionByDefault -Region {{region}}
   ```
 + For all Regions in your account
 
-  ```
+  ```powershell
   (Get-EC2Region).RegionName |
       ForEach-Object {
       [PSCustomObject]@{
@@ -146,12 +146,12 @@ Use the [Enable-EC2EbsEncryptionByDefault](https://docs.aws.amazon.com/powershel
 Use the [Disable-EC2EbsEncryptionByDefault](https://docs.aws.amazon.com/powershell/latest/reference/items/Disable-EC2EbsEncryptionByDefault.html) cmdlet.
 + For a specific Region
 
-  ```
+  ```powershell
   Disable-EC2EbsEncryptionByDefault -Region {{region}}
   ```
 + For all Regions in your account
 
-  ```
+  ```powershell
   (Get-EC2Region).RegionName |
       ForEach-Object {
       [PSCustomObject]@{
@@ -195,7 +195,7 @@ To change the default encryption key for a Region, use one of the following meth
 
 Use the [modify-ebs-default-kms-key-id](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-ebs-default-kms-key-id.html) command.
 
-```
+```bash
 aws ec2 modify-ebs-default-kms-key-id --kms-key-id {{key-id}} --region {{region}}
 ```
 
@@ -204,7 +204,7 @@ aws ec2 modify-ebs-default-kms-key-id --kms-key-id {{key-id}} --region {{region}
 
 Use the [Edit-EC2EbsDefaultKmsKeyId](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2EbsDefaultKmsKeyId.html) cmdlet.
 
-```
+```powershell
 Edit-EC2EbsDefaultKmsKeyId -KmsKeyId {{key-id}} -Region {{region}}
 ```
 

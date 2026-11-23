@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/freertos/latest/qualificationguide/afq-c
 
 # Example manifest.yml
 
-```
+```yaml
 ---
 # This is an example of the manifest file that is included at the root of all FreeRTOS GitHub repositories.
 

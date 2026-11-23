@@ -53,7 +53,7 @@ You can copy and paste event patterns from this section into EventBridge to crea
 The following event patterns provide examples that you might use in EventBridge for the Region switch capability in ARC.
 + *Select all events from Region switch for PlanExecution*.
 
-  ```
+  ```json
   {
       "source": [ "aws.arc-region-switch" ],
       "detail-type": [ "ARC Region Switch Plan Execution" ]
@@ -61,7 +61,7 @@ The following event patterns provide examples that you might use in EventBridge 
   ```
 + *Select all events from Region switch for PlanEvaluation*.
 
-  ```
+  ```json
       	{
       	"source": [ "aws.arc-region-switch" ],
       	"detail-type": [ "ARC Region Switch Plan Evaluation" ]
@@ -70,7 +70,7 @@ The following event patterns provide examples that you might use in EventBridge 
 
 The following is an example ARC event for a *Region switch plan execution*:
 
-```
+```json
 {
   	"version": "0",
   	"id": "1111111-bbbb-aaaa-cccc-dddddEXAMPLE", # Random uuid
@@ -92,7 +92,7 @@ The following is an example ARC event for a *Region switch plan execution*:
 
 The following is an example ARC event for a *Region switch plan step level execution*:
 
-```
+```json
 {
   	"version": "0",
   	"id": "1111111-bbbb-aaaa-cccc-dddddEXAMPLE", # Random uuid
@@ -120,7 +120,7 @@ The following is an example ARC event for a *Region switch plan evaluation warni
 
 For a Region switch plan evaluation, an event is emitted when a warning is returned. If the warning is not cleared, an event is emitted for the warning only once every 24 hours. When the event is cleared, no further events are emitted for that warning.
 
-```
+```json
 {
   	"version": "0",
   	"id": "05d4d2d5-9c76-bfea-72d2-d4614802adb4", # Random uuid
@@ -159,7 +159,7 @@ If you create or use a CloudWatch log group to use as a target using CloudWatch 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

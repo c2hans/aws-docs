@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 
  The following is an example of a tag policy that reports on Cost Allocation tags:
 
-```
+```json
 {
   "tags": {
     "example-inc:cost-allocation:ApplicationId": {
@@ -58,7 +58,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 
  The following is an example of a tag policy that reports on Disaster Recovery tags:
 
-```
+```json
 {
     "tags": {
         "example-inc:disaster-recovery:rpo": {
@@ -79,5 +79,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
  In this example, the `ExampleInc-CostAllocation` tag policy is attached to the `Workloads` OU, and therefore applies to all the accounts in both the `Prod` and `Test` child OUs. Similarly, the `ExampleInc-DisasterRecovery` tag policy is attached to the `Prod` OU and therefore only applies to accounts below this OU. The [Organizing Your Environment Using Multiple Accounts](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html) whitepaper explores the recommended OU structures in more detail.
 
 ![Diagram showing the attachment of tag policies to an OU structure and the effective policy](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/images/adding-tagging-to-policies-in-ou-structure.png)
+
+*Attachment of tag policies to an OU structure*
 
  Looking at the `marketing-prod` account in the diagram, both tag policies apply to this account, so we have the concept of an *effective policy*, which is the convolution of the policies of a given type that apply to an account. If you primarily manage your resources manually, then you can review the effective policy by visiting the [Resource Groups & Tag Editor:Tag policies](http://console.aws.amazon.com/resource-groups/tag-policies) in the console. If you use infrastructure as code (IaC) or scripting to manage your resources, you can use the [`AWS::Organizations::DescribeEffectivePolicy`](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DescribeEffectivePolicy.html) API call.

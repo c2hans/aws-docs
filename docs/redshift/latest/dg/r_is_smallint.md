@@ -31,7 +31,7 @@ A `SUPER` expression or column.
 
 To check if `5` is a `SMALLINT` using the IS\_SMALLINT function, use the following example.
 
-```
+```sql
 CREATE TABLE t(s SUPER);
 
 INSERT INTO t VALUES (5);

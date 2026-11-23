@@ -47,7 +47,7 @@ Dual-stack endpoints appear in the **Playback configuration details** page under
 
 Specify the dual-stack endpoint URL when you make API calls:
 
-```
+```bash
 aws mediatailor get-playback-configuration \
     --name {{my-config}} \
     --endpoint-url https://mediatailor.{{us-east-1}}.api.aws
@@ -62,7 +62,7 @@ Enable dual-stack in your SDK configuration.
 
 **Python (boto3)**:
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -74,7 +74,7 @@ client = boto3.client(
 
 **JavaScript (AWS SDK v3)**:
 
-```
+```javascript
 import { MediaTailorClient } from "@aws-sdk/client-mediatailor";
 
 const client = new MediaTailorClient({

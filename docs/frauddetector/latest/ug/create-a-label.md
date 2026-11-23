@@ -28,7 +28,7 @@ You can create labels in the Amazon Fraud Detector console, using the [put-label
 
 The following AWS SDK for Python (Boto3) example code creates two labels (fraud, legit) using the [PutLabel](https://docs.aws.amazon.com/frauddetector/latest/api/API_PutLabel.html) API. After creating the labels, you can add them to an event type to classify specific events.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

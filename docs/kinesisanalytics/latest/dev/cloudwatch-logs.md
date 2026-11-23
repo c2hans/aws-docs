@@ -40,7 +40,7 @@ To grant permissions to assume an IAM role, you can attach the following trust p
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -67,7 +67,7 @@ To grant an application permissions to write log events to CloudWatch from a res
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

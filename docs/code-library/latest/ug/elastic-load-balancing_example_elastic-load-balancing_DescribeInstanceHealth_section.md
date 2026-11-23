@@ -87,7 +87,7 @@ For more information, see [Troubleshoot a Classic Load Balancer: Health checks](
 **Tools for PowerShell V4**
 **Example 1: This example describes the state of the instances registered with the specified load balancer.**
 
-```
+```powershell
 Get-ELBInstanceHealth -LoadBalancerName my-load-balancer
 ```
 **Output:**
@@ -100,12 +100,12 @@ Instance has failed at lea... i-12345678                    Instance            
 ```
 **Example 2: This example describes the state of the specified instance registered with the specified load balancer.**
 
-```
+```powershell
 Get-ELBInstanceHealth -LoadBalancerName my-load-balancer -Instance i-12345678
 ```
 **Example 3: This example displays the complete description of the state of the specified instance.**
 
-```
+```powershell
 (Get-ELBInstanceHealth -LoadBalancerName my-load-balancer -Instance i-12345678).Description
 ```
 **Output:**
@@ -118,7 +118,7 @@ Instance has failed at least the UnhealthyThreshold number of health checks cons
 **Tools for PowerShell V5**
 **Example 1: This example describes the state of the instances registered with the specified load balancer.**
 
-```
+```powershell
 Get-ELBInstanceHealth -LoadBalancerName my-load-balancer
 ```
 **Output:**
@@ -131,12 +131,12 @@ Instance has failed at lea... i-12345678                    Instance            
 ```
 **Example 2: This example describes the state of the specified instance registered with the specified load balancer.**
 
-```
+```powershell
 Get-ELBInstanceHealth -LoadBalancerName my-load-balancer -Instance i-12345678
 ```
 **Example 3: This example displays the complete description of the state of the specified instance.**
 
-```
+```powershell
 (Get-ELBInstanceHealth -LoadBalancerName my-load-balancer -Instance i-12345678).Description
 ```
 **Output:**

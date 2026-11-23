@@ -42,6 +42,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/multi-cluster-login
 <a name="slurm-installation"></a>
 + Slurm must be installed in the same location as AWS PCS Slurm installer packages:
 
-  ```
+  ```cmd
   /opt/aws/pcs/scheduler/slurm-{{version}}
   ```

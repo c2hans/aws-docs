@@ -66,7 +66,7 @@ Result
 
 The following query converts the `start_time` and `end_time` to a timestamp.
 
-```
+```sql
 select userid,query,slice,pid,recordtime,start_time,end_time,
 '2000-01-01'::timestamp + (start_time/1000000.0)* interval '1 second' as start_ts,
 '2000-01-01'::timestamp + (end_time/1000000.0)* interval '1 second' as end_ts

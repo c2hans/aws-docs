@@ -32,7 +32,7 @@ Follow the instructions below to migrate your SDK for Java 1.x Maven-based proje
 
    The following example show how to invoke the plugin in `dryRun` mode.
 
-   ```
+   ```bash
    mvn org.openrewrite.maven:rewrite-maven-plugin:{{<rewrite-plugin-version>*}}:dryRun \
      -Drewrite.recipeArtifactCoordinates=software.amazon.awssdk:v2-migration:{{<sdkversion>**}} \
      -Drewrite.activeRecipes=software.amazon.awssdk.v2migration.AwsSdkJavaV1ToV2
@@ -94,7 +94,7 @@ Be sure to use the version of the `rewrite-maven-plugin` shown in the [test file
 
    The following example show how to invoke the plugin in `run` mode.
 
-   ```
+   ```bash
    mvn org.openrewrite.maven:rewrite-maven-plugin:{{<rewrite-plugin-version>*}}:run \
      -Drewrite.recipeArtifactCoordinates=software.amazon.awssdk:v2-migration:{{<sdkversion>**}} \
      -Drewrite.activeRecipes=software.amazon.awssdk.v2migration.AwsSdkJavaV1ToV2
@@ -155,7 +155,7 @@ Follow the instructions below to migrate your SDK for Java 1.x Gradle-based proj
 
    The following example show how to invoke the plugin in `dryRun` mode.
 
-   ```
+   ```bash
    gradle rewriteDryRun --init-script init.gradle \
      -Drewrite.activeRecipes=software.amazon.awssdk.v2migration.AwsSdkJavaV1ToV2
    ```
@@ -164,7 +164,7 @@ Follow the instructions below to migrate your SDK for Java 1.x Gradle-based proj
 
    The following example show how to invoke the plugin in `run` mode.
 
-   ```
+   ```bash
    gradle rewriteRun --init-script init.gradle \
      -Drewrite.activeRecipes=software.amazon.awssdk.v2migration.AwsSdkJavaV1ToV2
    ```
@@ -182,7 +182,7 @@ For some unsupported code modification rules, the migration tool may add a comme
 
 Following the comment, the tool outputs a generic stub of the V2 version of the method or class. For example, in the following output, the migration tool attempted to migrate the V1 S3 client's `setBucketLifecycleConfiguration` method:
 
-```
+```java
 /*AWS SDK for Java v2 migration: Transform for setBucketLifecycleConfiguration method not supported.
 Please manually migrate your code by using builder pattern, update from BucketLifecycleConfiguration.Rule
 to LifecycleRule, StorageClass to TransitionStorageClass, and adjust imports and names.*/

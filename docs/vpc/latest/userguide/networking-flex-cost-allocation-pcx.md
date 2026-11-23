@@ -70,7 +70,7 @@ aws ec2 associate-networking-flex-cost-allocation-policy \
 
 The following template creates the policy and associates it with the VPC.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: FCA policy that allocates VPC peering data transfer by peering connection
 Parameters:

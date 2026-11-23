@@ -28,14 +28,14 @@ Amazon DocumentDB also uses 2dsphere indexes to index Geospatial data. Amazon Do
 
 Let’s consider a scenario where you are building an application for food delivery service. You want to store restaurant latitude and longitude pairs in Amazon DocumentDB. To do so, first create an index on the geospatial field that holds the latitude and longitude pair.
 
-```
+```Python
 use restaurantsdb
 db.usarestaurants.createIndex({location:"2dsphere"})
 ```
 
 The output of this command would look something like this:
 
-```
+```JSON
 {
 	"createdCollectionAutomatically" : true,
 	"numIndexesBefore" : 1,
@@ -46,7 +46,7 @@ The output of this command would look something like this:
 
 Once you have created an index, you can start inserting data into your Amazon DocumentDB collection.
 
-```
+```Python
 db.usarestaurants.insert({
    "state":"Washington",
    "city":"Seattle",
@@ -111,7 +111,7 @@ In this example, you will learn how to find all restaurants (points) sorted by c
 
 To perform such a query, you can use `$geoNear` to calculate distance of set of points from another point. You can also add the `distanceMultiplier` to measure the distance in kilometers.
 
-```
+```Python
 db.usarestaurants.aggregate([
    {
       "$geoNear":{
@@ -132,7 +132,7 @@ db.usarestaurants.aggregate([
 
 The command above would return restaurants sorted by distance (closest to furthest) from the point specified. The output of this command would look something like this
 
-```
+```JSON
 { "_id" : ObjectId("611f3da985009a81ad38e74b"), "state" : "Washington", "city" : "Seattle", "name" : "Noodle House", "rating" : 4.8, "location" : { "type" : "Point", "coordinates" : [ -122.3517, 47.6159 ] }, "DistanceKilometers" : 0.03422834547294996 }
 { "_id" : ObjectId("611f3da185009a81ad38e74a"), "state" : "Washington", "city" : "Seattle", "name" : "Thai Palace", "rating" : 4.8, "location" : { "type" : "Point", "coordinates" : [ -122.3264, 47.6009 ] }, "DistanceKilometers" : 2.5009390081704277 }
 { "_id" : ObjectId("611f3dae85009a81ad38e74c"), "state" : "Washington", "city" : "Seattle", "name" : "Curry House", "rating" : 4.8, "location" : { "type" : "Point", "coordinates" : [ -121.4517, 47.6229 ] }, "DistanceKilometers" : 67.52845344856914 }
@@ -192,7 +192,7 @@ db.usarestaurants.aggregate([
 
 In this example, you will learn how to find all restaurants (points) within 2 kilometers of a specific address (point). To perform such a query, you can use `$nearSphere` within a minimum `$minDistance` and maximum `$maxDistance` from a GeoJSON Point
 
-```
+```Python
 db.usarestaurants.find({
    "location":{
       "$nearSphere":{
@@ -215,7 +215,7 @@ db.usarestaurants.find({
 
 The command above would return restaurants at a maximum distance of 2 kilometers from the point specified. The output of this command would look something like this
 
-```
+```JSON
 { "_id" : ObjectId("611f3da985009a81ad38e74b"), "name" : "Noodle House" }
 ```
 

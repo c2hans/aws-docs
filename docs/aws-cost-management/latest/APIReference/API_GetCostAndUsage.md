@@ -99,7 +99,8 @@ Required: No
 
  ** [Metrics](#API_GetCostAndUsage_RequestSyntax) **   <a name="awscostmanagement-GetCostAndUsage-request-Metrics"></a>
 Which metrics are returned in the query. For more information about blended and unblended rates, see [Why does the "blended" annotation appear on some line items in my bill?](http://aws.amazon.com/premiumsupport/knowledge-center/blended-rates-intro/).
-Valid values are `AmortizedCost`, `BlendedCost`, `NetAmortizedCost`, `NetUnblendedCost`, `NormalizedUsageAmount`, `UnblendedCost`, and `UsageQuantity`.
+Valid values are `AmortizedCost`, `BlendedCost`, `NetAmortizedCost`, `NetUnblendedCost`, `NormalizedUsageAmount`, `UnblendedCost`, `UsageQuantity`, `BilledCost`, `ContractedCost`, `ListCost`, `PublicEquivalentBilledCost`, and `PublicOnDemandCost`.
+ `BilledCost`, `ContractedCost`, `ListCost`, `PublicEquivalentBilledCost`, and `PublicOnDemandCost` are cost analytics metrics. They use the same definitions as the cost analytics columns in Cost and Usage Report (CUR) 2.0.
 If you return the `UsageQuantity` metric, the service aggregates all usage numbers without taking into account the units. For example, if you aggregate `usageQuantity` across all of Amazon EC2, the results aren't meaningful because Amazon EC2 compute hours and data transfer are measured in different units (for example, hours and GB). To get more meaningful `UsageQuantity` metrics, filter by `UsageType` or `UsageTypeGroups`.
  `Metrics` is required for `GetCostAndUsage` requests.
 Type: Array of strings

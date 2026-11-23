@@ -15,7 +15,7 @@ This section shows several example AWS Identity and Access Management (IAM) iden
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -43,7 +43,7 @@ This section shows several example AWS Identity and Access Management (IAM) iden
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

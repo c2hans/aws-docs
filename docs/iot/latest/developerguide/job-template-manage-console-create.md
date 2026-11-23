@@ -20,7 +20,7 @@ The details page contains the following information:
 + The environment on which the remote operations can be performed, such as Linux.
 + The JSON job document that specifies the path to the job handler and the commands to run on the device. For example, the following shows an example job document for the **AWS-Reboot** template. The template shows the path to the job handler and the shell script, `reboot.sh`, that the job handler must run to reboot the device.
 
-  ```
+  ```JSON
   {
     "version": "1.0",
     "steps": [

@@ -49,14 +49,14 @@ You can't delete an environment that has any associated component. To delete suc
 
 Run the following command:
 
-```
+```sh
 $ aws proton delete-environment \
     --name "{{MySimpleEnv}}"
 ```
 
 Response:
 
-```
+```json
 {
     "environment": {
         "arn": "arn:aws:proton:region-id:123456789012:environment/MySimpleEnv",

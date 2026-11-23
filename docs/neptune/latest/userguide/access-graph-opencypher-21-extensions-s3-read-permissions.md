@@ -17,7 +17,7 @@ If your S3 bucket uses server-side encryption with AWS KMS, you must also grant 
 + **`kms:Decrypt`**: Required to perform decryption of the encrypted object so its data can be read by Neptune.
 + **`kms:GenerateDataKey`**: Also required by the S3 API used to retrieve objects to be read.
 
-```
+```json
 {
   "Sid": "NeptuneQueryAccess",
   "Effect": "Allow",

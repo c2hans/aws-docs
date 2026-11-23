@@ -59,7 +59,7 @@ Use the following AWS CLI commands or API operations to enable trusted service a
 
   Run the following command to enable Amazon Elastic Compute Cloud as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations enable-aws-service-access \
       --service-principal ec2.amazonaws.com
   ```
@@ -87,7 +87,7 @@ Use the following AWS CLI commands or API operations to disable trusted service 
 
   Run the following command to disable Amazon Elastic Compute Cloud as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations disable-aws-service-access \
       --service-principal ec2.amazonaws.com
   ```

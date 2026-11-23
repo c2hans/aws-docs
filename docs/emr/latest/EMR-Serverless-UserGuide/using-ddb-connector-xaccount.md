@@ -29,7 +29,7 @@ To set up cross-account access for EMR Serverless, complete the following steps.
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -56,7 +56,7 @@ To set up cross-account access for EMR Serverless, complete the following steps.
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

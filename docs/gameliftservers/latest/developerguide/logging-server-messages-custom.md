@@ -23,7 +23,7 @@ The following instructions show how to configure logging using simplified code e
 
 1. Create a vector of strings that are directory paths to game server log files.
 
-   ```
+   ```cpp
    std::string serverLog("serverOut.log");        // Example server log file
    std::vector<std::string> logPaths;
    logPaths.push_back(serverLog);
@@ -31,7 +31,7 @@ The following instructions show how to configure logging using simplified code e
 
 1. Provide your vector as the [LogParameters](integration-server-sdk-cpp-ref-datatypes.md#integration-server-sdk-cpp-ref-dataypes-log) of your [ProcessParameters](integration-server-sdk-cpp-ref-datatypes.md#integration-server-sdk-cpp-ref-dataypes-process) object.
 
-   ```
+   ```cpp
    Aws::GameLift::Server::ProcessParameters processReadyParameter = Aws::GameLift::Server::ProcessParameters(
        std::bind(&Server::onStartGameSession, this, std::placeholders::_1),
        std::bind(&Server::onProcessTerminate, this),
@@ -43,7 +43,7 @@ The following instructions show how to configure logging using simplified code e
 
 1. Provide the [ProcessParameters](integration-server-sdk-cpp-ref-datatypes.md#integration-server-sdk-cpp-ref-dataypes-process) object when you call [ProcessReady()](integration-server-sdk-cpp-ref-actions.md#integration-server-sdk-cpp-ref-processready).
 
-   ```
+   ```cpp
    Aws::GameLift::GenericOutcome outcome =
       Aws::GameLift::Server::ProcessReady(processReadyParameter);
    ```
@@ -57,14 +57,14 @@ For a more complete example, see [ProcessReady()](integration-server-sdk-cpp-ref
 
 1. Create a list of strings that are directory paths to game server log files.
 
-   ```
+   ```csharp
    List<string> logPaths = new List<string>();
    logPaths.Add("C:\\game\\serverOut.txt");     // Example of a log file that the game server writes
    ```
 
 1. Provide your list as the [LogParameters](integration-server-sdk-csharp-ref-datatypes.md#integration-server-sdk-csharp-ref-dataypes-log) of your [ProcessParameters](integration-server-sdk-csharp-ref-datatypes.md#integration-server-sdk-csharp-ref-dataypes-process) object.
 
-   ```
+   ```csharp
    var processReadyParameter = new ProcessParameters(
        this.OnGameSession,
        this.OnProcessTerminate,
@@ -76,7 +76,7 @@ For a more complete example, see [ProcessReady()](integration-server-sdk-cpp-ref
 
 1. Provide the [ProcessParameters](integration-server-sdk-csharp-ref-datatypes.md#integration-server-sdk-csharp-ref-dataypes-process) object when you call [ProcessReady()](integration-server-sdk-csharp-ref-actions.md#integration-server-sdk-csharp-ref-processready).
 
-   ```
+   ```csharp
    var processReadyOutcome =
       GameLiftServerAPI.ProcessReady(processReadyParameter);
    ```
@@ -93,7 +93,7 @@ Your log files exist after your server process has started. You can write to the
 ------
 #### [ C\+\+ ]
 
-```
+```cpp
 std::freopen("serverOut.log", "w+", stdout);
 std::freopen("serverErr.log", "w+", stderr);
 ```
@@ -101,7 +101,7 @@ std::freopen("serverErr.log", "w+", stderr);
 ------
 #### [ C\# ]
 
-```
+```csharp
 Console.SetOut(new StreamWriter("serverOut.txt"));
 Console.SetError(new StreamWriter("serverErr.txt"));
 ```

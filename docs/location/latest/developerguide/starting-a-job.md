@@ -21,7 +21,7 @@ The following examples show how to start an address validation job. Use these as
 ------
 #### [ Sample request ]
 
-```
+```json
 {
    "Action": "ValidateAddress",
    "Name": "MyFirstValidationJob",
@@ -40,7 +40,7 @@ The following examples show how to start an address validation job. Use these as
 ------
 #### [ Sample response ]
 
-```
+```json
 {
    "CreatedAt": "2024-01-01T00:00:00Z",
    "JobArn": "arn:aws:geo:us-west-2:{{YOUR_ACCOUNT_ID}}:job/MyFirstValidationJob-12345678-abcd-1234-5678-abcdef123456",
@@ -52,7 +52,7 @@ The following examples show how to start an address validation job. Use these as
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws location start-job \
   --action ValidateAddress \
   --execution-role-arn "arn:aws:iam::{{YOUR_ACCOUNT_ID}}:role/LocationServiceJobExecutionRole" \
@@ -72,7 +72,7 @@ The following example includes the `Position` and `CountrySpecificAttributes` ad
 ------
 #### [ Sample request ]
 
-```
+```json
 {
    "Action": "ValidateAddress",
    "Name": "ValidationJobWithFeatures",
@@ -99,7 +99,7 @@ The following example includes the `Position` and `CountrySpecificAttributes` ad
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws location start-job \
   --action ValidateAddress \
   --execution-role-arn "arn:aws:iam::{{YOUR_ACCOUNT_ID}}:role/LocationServiceJobExecutionRole" \

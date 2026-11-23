@@ -13,7 +13,7 @@ The SigV4 service name and IAM action namespace is `aws-external-anthropic`. Act
 
 The following policy allows real-time inference while blocking batch processing, a common requirement for ZDR-sensitive workloads:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -51,7 +51,7 @@ The `Allow` statement enumerates specific `Get*` and `List*` actions rather than
 
 Grants the minimal permissions for an IAM principal that runs inference against one production workspace:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -78,7 +78,7 @@ This policy assumes AWS SigV4 authentication. If the principal authenticates wit
 
 Restricts a role to a single workspace:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -89,10 +89,7 @@ Restricts a role to a single workspace:
     },
     {
       "Effect": "Allow",
-      "Action": [
-        "aws-external-anthropic:CallWithBearerToken",
-        "aws-external-anthropic:AssumeConsole"
-      ],
+      "Action": "aws-external-anthropic:CallWithBearerToken",
       "Resource": "*"
     }
   ]
@@ -101,14 +98,14 @@ Restricts a role to a single workspace:
 
 **Note**
 The `aws-external-anthropic:*` wildcard in the first statement includes account-scoped actions (`CreateWorkspace`, `ListWorkspaces`) that the workspace ARN constraint silently filters out. This is consistent with the "isolation" intent — the role cannot create or enumerate workspaces — but the policy contains permissions that have no effect. See [Provisioning automation](#provisioning-automation) for the account-scoped pattern.
-The second statement grants `CallWithBearerToken` and `AssumeConsole` on all resources because both are route-less actions that don’t bind to a workspace ARN. Omit the second statement if the role uses SigV4 only and never federates to the Claude Console.
+The second statement grants `CallWithBearerToken` on all resources because it is a route-less action that doesn’t bind to a workspace ARN. Omit the second statement if the role uses SigV4 only. The example leaves out `AssumeConsole` because a Claude Console session covers the whole Claude Platform on AWS organization, not one workspace.
 
 ## Example: feature lockdown for a ZDR-sensitive workspace
 <a name="_example_feature_lockdown_for_a_zdr_sensitive_workspace"></a>
 
 Blocks batch processing and file upload on a specific workspace while leaving synchronous inference available. Useful when a workspace handles Zero Data Retention (ZDR) data that must not persist server-side. Attach this policy alongside an Allow policy such as `AnthropicLimitedAccess` or the single-workspace example above; on its own, a Deny-only policy grants no permissions:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -132,7 +129,7 @@ This deny blocks creation only. Other file and batch actions are not denied unle
 
 Grants a CI/CD role the actions needed to create and manage workspaces, without any inference permissions:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -182,7 +179,7 @@ Two capabilities exist:
 
 Control which capability a principal can request with the `aws-external-anthropic:Capability` condition key on the `AssumeConsole` action:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

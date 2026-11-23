@@ -31,7 +31,7 @@ Before you can create a view in the Data Catalog, make sure that you have the fo
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -57,7 +57,7 @@ Before you can create a view in the Data Catalog, make sure that you have the fo
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

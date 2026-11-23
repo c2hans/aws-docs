@@ -21,7 +21,7 @@ If you decide to delete the AWS CloudFormation stack, this solution is configure
 
 To delete the S3 bucket using AWS CLI, run the following command:
 
-```
+```bash
 aws s3 rm s3://<bucket-name> --recursive
 ```
 
@@ -56,6 +56,6 @@ If you deployed the solution with the Migration Tracker, you must delete the Ama
 
 Determine whether the AWS Command Line Interface (AWS CLI) is available in your environment. For installation instructions, refer to [Install or update to the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) in the *AWS CLI User Guide*. After confirming that the AWS CLI is available, run the following command:
 
-```
+```bash
 aws cloudformation delete-stack --stack-name <installation-stack-name>
 ```

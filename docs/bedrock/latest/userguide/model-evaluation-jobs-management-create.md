@@ -63,7 +63,7 @@ Once the status changes **Completed**, then you can view the job's report card.
 
 The following example creates an automatic evaluation job using Python.
 
-```
+```python
 import boto3
 client = boto3.client('bedrock')
 
@@ -112,11 +112,11 @@ print(job_request)
 
 In the AWS CLI, you can use the `help` command to see which parameters are required, and which parameters are optional when specifying `create-evaluation-job` in the AWS CLI.
 
-```
+```bash
 aws bedrock create-evaluation-job help
 ```
 
-```
+```bash
 aws bedrock create-evaluation-job \
 --job-name 'automatic-eval-job-cli-001' \
 --role-arn 'arn:aws:iam::111122223333:role/role-name' \

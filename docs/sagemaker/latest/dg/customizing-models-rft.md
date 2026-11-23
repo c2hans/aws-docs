@@ -22,7 +22,7 @@ RLVR uses a code-based reward function that programmatically verifies whether mo
 
 Each record contains a prompt and reward model metadata. The reward function evaluates model-generated responses during training.
 
-```
+```json
 {
   "data_source": "openai/gsm8k",
   "prompt": [
@@ -60,7 +60,7 @@ If your Lambda reward function returns a malformed payload, RLVR jobs can fail w
 
 Use `RLVRTrainer` for serverless RLVR customization jobs:
 
-```
+```python
 from sagemaker.train import RLVRTrainer
 
 trainer = RLVRTrainer(
@@ -130,7 +130,7 @@ RLAIF uses another LLM as a judge to evaluate model responses based on a natural
 
 Each record contains a prompt and reward model metadata. The LLM judge evaluates model-generated responses during training.
 
-```
+```json
 {
   "data_source": "WeOpenML/PandaLM",
   "prompt": [
@@ -171,7 +171,7 @@ To replace a preset template with your own Jinja prompt, see [RLAIF - Custom Pro
 
 Use `RLAIFTrainer` for serverless RLAIF customization jobs:
 
-```
+```python
 from sagemaker.train import RLAIFTrainer
 
 trainer = RLAIFTrainer(

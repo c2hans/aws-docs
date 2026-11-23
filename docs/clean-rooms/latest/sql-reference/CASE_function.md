@@ -53,7 +53,7 @@ A Boolean expression that evaluates to true or false. If *condition* is true, th
 
 Use a simple CASE expression to replace `New York City` with `Big Apple` in a query against the VENUE table. Replace all other city names with `other`.
 
-```
+```sql
 select venuecity,
   case venuecity
     when 'New York City'
@@ -73,7 +73,7 @@ Baltimore        | other
 
 Use a searched CASE expression to assign group numbers based on the PRICEPAID value for individual ticket sales:
 
-```
+```sql
 select pricepaid,
   case when pricepaid <10000 then 'group 1'
     when pricepaid >10000 then 'group 2'

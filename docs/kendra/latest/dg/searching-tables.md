@@ -35,7 +35,7 @@ The following example shows table excerpt included in the query result. To view 
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 import pprint
 
@@ -83,7 +83,7 @@ for query_result in response["ResultItems"]:
 ------
 #### [ Java ]
 
-```
+```java
 package com.amazonaws.kendra;
 
 import software.amazon.awssdk.services.kendra.KendraClient;

@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/large-model-inferenc
 
 The following code snippet demonstrates how to programatically configure the aforementioned parameters. Replace the {{italicized placeholder text}} in the example with your own information.
 
-```
+```py
 import boto3
 
 aws_region = "{{aws-region}}"

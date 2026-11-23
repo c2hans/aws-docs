@@ -22,7 +22,7 @@ The following code example shows how to accept an agreement cancellation request
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer.agreementCancellation;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -76,7 +76,7 @@ The following code example shows how to accept an agreement payment request init
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer.paymentRequest;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -133,7 +133,7 @@ The following code example shows how to amend a SaaS contract agreement to add o
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -324,7 +324,7 @@ The following code example shows how to amend an AMI agreement with Configurable
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -525,6 +525,103 @@ public class AmendAmiConfigurableUpfrontPricingTermForUsagePricingModel {
 ```
 +  For API details, see [CreateAgreementRequest](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/CreateAgreementRequest) in *AWS SDK for Java 2.x API Reference*.
 
+### Approve an agreement approval
+<a name="marketplace-agreement_AcceptAgreementApproval_java_topic"></a>
+
+The following code example shows how to approve an agreement approval as the administrator of my organization.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```java
+package com.example.awsmarketplace.agreementapi.buyer.agreementApproval;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.AcceptAgreementApprovalRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.BuyerAgreementApprovalApproverInput;
+
+// Approves an agreement approval as the administrator of the buyer's AWS Organization. When the approval
+// is approved, the agreement request is accepted and the agreement is created; GetAgreementRequest returns its
+// agreementId.
+public class AcceptAgreementApproval {
+
+    private static final String AGREEMENT_APPROVAL_ID = "<AGREEMENT APPROVAL ID HERE>";
+    private static final String NOTE = "<APPROVAL NOTE HERE>";
+
+    public static void main(String[] args) {
+        acceptAgreementApproval();
+    }
+
+    private static void acceptAgreementApproval() {
+        MarketplaceAgreementClient marketplaceAgreementClient =
+                MarketplaceAgreementClient.builder()
+                        .httpClient(ApacheHttpClient.builder().build())
+                        .credentialsProvider(ProfileCredentialsProvider.create())
+                        .build();
+
+        AcceptAgreementApprovalRequest request =
+                AcceptAgreementApprovalRequest.builder()
+                        .buyerAgreementApprovalApproverInput(BuyerAgreementApprovalApproverInput.builder()
+                                .agreementApprovalId(AGREEMENT_APPROVAL_ID)
+                                .note(NOTE)
+                                .build())
+                        .build();
+
+        marketplaceAgreementClient.acceptAgreementApproval(request);
+
+        System.out.println("Approved Agreement Approval ID: " + AGREEMENT_APPROVAL_ID);
+    }
+}
+```
++  For API details, see [AcceptAgreementApproval](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/AcceptAgreementApproval) in *AWS SDK for Java 2.x API Reference*.
+
+### Cancel an agreement request
+<a name="marketplace-agreement_CancelAgreementRequest_java_topic"></a>
+
+The following code example shows how to cancel an agreement request that is pending approval.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```java
+package com.example.awsmarketplace.agreementapi.buyer.agreementRequest;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.CancelAgreementRequestRequest;
+
+// Cancels an agreement request that is pending approval, and its approval.
+public class CancelAgreementRequest {
+
+    private static final String AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>";
+
+    public static void main(String[] args) {
+        cancelAgreementRequest();
+    }
+
+    private static void cancelAgreementRequest() {
+        MarketplaceAgreementClient marketplaceAgreementClient =
+                MarketplaceAgreementClient.builder()
+                        .httpClient(ApacheHttpClient.builder().build())
+                        .credentialsProvider(ProfileCredentialsProvider.create())
+                        .build();
+
+        CancelAgreementRequestRequest request =
+                CancelAgreementRequestRequest.builder()
+                        .agreementRequestId(AGREEMENT_REQUEST_ID)
+                        .build();
+
+        marketplaceAgreementClient.cancelAgreementRequest(request);
+
+        System.out.println("Cancelled Agreement Request ID: " + AGREEMENT_REQUEST_ID);
+    }
+}
+```
++  For API details, see [CancelAgreementRequest](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/CancelAgreementRequest) in *AWS SDK for Java 2.x API Reference*.
+
 ### Create a new AMI free trial agreement
 <a name="marketplace-agreement_NewAmiFreeTrial_java_topic"></a>
 
@@ -533,7 +630,7 @@ The following code example shows how to create a new AMI free trial agreement.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -638,7 +735,7 @@ The following code example shows how to create a new SaaS contract agreement wit
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -766,7 +863,7 @@ The following code example shows how to get all agreement IDs.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -860,7 +957,7 @@ The following code example shows how to get all agreements.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -949,7 +1046,7 @@ The following code example shows how to get customer ID from an agreement.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
@@ -995,6 +1092,110 @@ public class GetAgreementCustomerInfo {
 ```
 +  For API details, see [DescribeAgreement](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/DescribeAgreement) in *AWS SDK for Java 2.x API Reference*.
 
+### Get details of an agreement approval
+<a name="marketplace-agreement_GetAgreementApproval_java_topic"></a>
+
+The following code example shows how to get details of an agreement approval, including its approver outcomes.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```java
+package com.example.awsmarketplace.agreementapi.buyer.agreementApproval;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.AgreementApprovalResource;
+import software.amazon.awssdk.services.marketplaceagreement.model.ApproverOutcome;
+import software.amazon.awssdk.services.marketplaceagreement.model.BuyerAgreementApproval;
+import software.amazon.awssdk.services.marketplaceagreement.model.BuyerAgreementApprovalGroup;
+import software.amazon.awssdk.services.marketplaceagreement.model.BuyerAgreementApprovalLevel;
+import software.amazon.awssdk.services.marketplaceagreement.model.GetAgreementApprovalRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.GetAgreementApprovalResponse;
+
+public class GetAgreementApproval {
+
+    private static final String AGREEMENT_APPROVAL_ID = "<AGREEMENT APPROVAL ID HERE>";
+
+    public static void main(String[] args) {
+        getAgreementApproval();
+    }
+
+    private static void getAgreementApproval() {
+        MarketplaceAgreementClient marketplaceAgreementClient =
+                MarketplaceAgreementClient.builder()
+                        .httpClient(ApacheHttpClient.builder().build())
+                        .credentialsProvider(ProfileCredentialsProvider.create())
+                        .build();
+
+        GetAgreementApprovalRequest request =
+                GetAgreementApprovalRequest.builder()
+                        .agreementApprovalId(AGREEMENT_APPROVAL_ID)
+                        .build();
+
+        GetAgreementApprovalResponse response = marketplaceAgreementClient.getAgreementApproval(request);
+        BuyerAgreementApproval approval = response.buyerAgreementApproval();
+
+        System.out.println("Approval Type: " + approval.approvalTypeAsString());
+        System.out.println("Agreement Approval ID: " + approval.agreementApprovalId());
+        System.out.println("Agreement Request ID: " + approval.agreementRequestId());
+        System.out.println("Name: " + approval.name());
+        System.out.println("Status: " + approval.statusAsString());
+        System.out.println("Requester Account ID: " + approval.requester().accountId());
+        System.out.println("Proposer: " + approval.proposer().legalName() + " (" + approval.proposer().accountId() + ")");
+        System.out.println("Offer ID: " + approval.proposalSummary().offerId());
+        if (approval.proposalSummary().offerSetId() != null) {
+            System.out.println("Offer Set ID: " + approval.proposalSummary().offerSetId());
+        }
+        System.out.println("Visibility Scope: " + approval.proposalSummary().visibilityScopeAsString());
+        for (AgreementApprovalResource resource : approval.proposalSummary().resources()) {
+            System.out.println("Resource: " + resource.name() + " (" + resource.id() + ", " + resource.type() + ")");
+        }
+        System.out.println("Plan Reference: " + approval.planInput().planReference());
+        if (approval.planInput().requesterNote() != null) {
+            System.out.println("Requester Note: " + approval.planInput().requesterNote());
+        }
+        System.out.println("Created At: " + approval.createdAt());
+        System.out.println("Updated At: " + approval.updatedAt());
+        System.out.println("Started At: " + approval.startedAt());
+        System.out.println("Expires At: " + approval.expiresAt());
+        System.out.println("Approval Needed By: " + approval.approvalNeededBy());
+        for (BuyerAgreementApprovalLevel level : approval.levels()) {
+            System.out.println("  Level: " + level.name());
+            for (BuyerAgreementApprovalGroup group : level.groups()) {
+                System.out.println("    Required Approvals: " + group.approvalCriteria().requiredApprovalCount());
+                for (ApproverOutcome outcome : group.approvers()) {
+                    printApproverOutcome(outcome);
+                }
+            }
+        }
+    }
+
+    private static void printApproverOutcome(ApproverOutcome outcome) {
+        switch (outcome.type()) {
+            case AWS_ORGANIZATION_APPROVER_OUTCOME:
+                System.out.println("    Organization admin: " + outcome.awsOrganizationApproverOutcome().statusAsString()
+                        + ", approverOutcomeId " + outcome.awsOrganizationApproverOutcome().approverOutcomeId());
+                break;
+            case EMAIL_APPROVER_OUTCOME:
+                System.out.println("    Email approver " + outcome.emailApproverOutcome().emailAddress() + ": "
+                        + outcome.emailApproverOutcome().statusAsString()
+                        + ", approverOutcomeId " + outcome.emailApproverOutcome().approverOutcomeId());
+                break;
+            case PROCUREMENT_TOOL_APPROVER_OUTCOME:
+                System.out.println("    Procurement tool " + outcome.procurementToolApproverOutcome().name() + ": "
+                        + outcome.procurementToolApproverOutcome().statusAsString()
+                        + ", approverOutcomeId " + outcome.procurementToolApproverOutcome().approverOutcomeId());
+                break;
+            default:
+                System.out.println("    Approver: " + outcome);
+        }
+    }
+}
+```
++  For API details, see [GetAgreementApproval](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/GetAgreementApproval) in *AWS SDK for Java 2.x API Reference*.
+
 ### Get details of an agreement cancellation request
 <a name="marketplace-agreement_GetAgreementCancellationRequest_java_topic"></a>
 
@@ -1003,7 +1204,7 @@ The following code example shows how to get details of a specific agreement canc
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer.agreementCancellation;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -1057,7 +1258,7 @@ The following code example shows how to get details of a specific agreement paym
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer.paymentRequest;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -1106,6 +1307,102 @@ public class GetAgreementPaymentRequest {
 ```
 +  For API details, see [GetAgreementPaymentRequest](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/GetAgreementPaymentRequest) in *AWS SDK for Java 2.x API Reference*.
 
+### Get details of an agreement request
+<a name="marketplace-agreement_GetAgreementRequest_java_topic"></a>
+
+The following code example shows how to get details of an agreement request, including whether it requires approval and its expected charges.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```java
+package com.example.awsmarketplace.agreementapi.buyer.agreementRequest;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.ChargeSummary;
+import software.amazon.awssdk.services.marketplaceagreement.model.ExpectedCharge;
+import software.amazon.awssdk.services.marketplaceagreement.model.GetAgreementRequestRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.GetAgreementRequestResponse;
+import software.amazon.awssdk.services.marketplaceagreement.model.ItemizedCharge;
+import software.amazon.awssdk.services.marketplaceagreement.model.Resource;
+
+public class GetAgreementRequest {
+
+    private static final String AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>";
+
+    public static void main(String[] args) {
+        getAgreementRequest();
+    }
+
+    private static void getAgreementRequest() {
+        MarketplaceAgreementClient marketplaceAgreementClient =
+                MarketplaceAgreementClient.builder()
+                        .httpClient(ApacheHttpClient.builder().build())
+                        .credentialsProvider(ProfileCredentialsProvider.create())
+                        .build();
+
+        GetAgreementRequestRequest request =
+                GetAgreementRequestRequest.builder()
+                        .agreementRequestId(AGREEMENT_REQUEST_ID)
+                        .build();
+
+        GetAgreementRequestResponse response = marketplaceAgreementClient.getAgreementRequest(request);
+
+        System.out.println("Agreement Request ID: " + response.agreementRequestId());
+        System.out.println("Agreement Type: " + response.agreementType());
+        System.out.println("Status: " + response.statusAsString());
+        System.out.println("Approval Requirement: " + response.approvalRequirementAsString());
+        if (response.agreementId() != null) {
+            System.out.println("Agreement ID: " + response.agreementId());
+        }
+        System.out.println("Intent: " + response.intentAsString());
+        System.out.println("Created At: " + response.createdAt());
+
+        ChargeSummary chargeSummary = response.chargeSummary();
+        System.out.println("Currency Code: " + chargeSummary.currencyCode());
+        System.out.println("New Agreement Value: " + chargeSummary.newAgreementValue());
+        // Tax fields are returned only when the request was created with tax estimation enabled.
+        if (chargeSummary.estimatedTaxes() != null) {
+            System.out.println("New Agreement Value After Tax: " + chargeSummary.newAgreementValueAfterTax());
+            System.out.println("Estimated Taxes: " + chargeSummary.estimatedTaxes().totalAmount());
+            System.out.println("Invoicing Entity: " + chargeSummary.invoicingEntity());
+        }
+        for (ExpectedCharge charge : chargeSummary.expectedCharges()) {
+            System.out.println("Expected Charge ID: " + charge.id());
+            System.out.println("  Amount: " + charge.amount());
+            if (charge.amountAfterTax() != null) {
+                System.out.println("  Amount After Tax: " + charge.amountAfterTax());
+            }
+            System.out.println("  Timing: " + charge.timingAsString());
+            // Recurring charges of usage-based and recurring payment terms have no time.
+            if (charge.time() != null) {
+                System.out.println("  Time: " + charge.time());
+            }
+            if (charge.purchaseOrderReference() != null) {
+                System.out.println("  Purchase Order Reference: " + charge.purchaseOrderReference());
+            }
+        }
+        for (ItemizedCharge itemizedCharge : chargeSummary.itemizedCharges()) {
+            System.out.println("Itemized Charge: " + itemizedCharge.dimensionKey() + ", quantity "
+                    + itemizedCharge.oldQuantity() + " -> " + itemizedCharge.newQuantity() + ", amount "
+                    + itemizedCharge.incrementalChargeAmount());
+        }
+
+        System.out.println("Proposer Account ID: " + response.proposer().accountId());
+        System.out.println("Offer ID: " + response.proposalSummary().offerId());
+        if (response.proposalSummary().offerSetId() != null) {
+            System.out.println("Offer Set ID: " + response.proposalSummary().offerSetId());
+        }
+        for (Resource resource : response.proposalSummary().resources()) {
+            System.out.println("Resource: " + resource.id() + " (" + resource.type() + ")");
+        }
+    }
+}
+```
++  For API details, see [GetAgreementRequest](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/GetAgreementRequest) in *AWS SDK for Java 2.x API Reference*.
+
 ### Get financial details from an agreement
 <a name="marketplace-agreement_GetAgreementFinancialDetails_java_topic"></a>
 
@@ -1114,7 +1411,7 @@ The following code example shows how to get financial details from an agreement.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
@@ -1175,7 +1472,7 @@ The following code example shows how to get free trial details from an agreement
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -1241,7 +1538,7 @@ The following code example shows how to get information about an agreement.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
@@ -1293,7 +1590,7 @@ The following code example shows how to get product and offer details from an ag
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -1395,7 +1692,7 @@ The following code example shows how to get the EULA of an agreement.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -1452,6 +1749,71 @@ public class GetAgreementTermsEula {
 ```
 +  For API details, see [GetAgreementTerms](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/GetAgreementTerms) in *AWS SDK for Java 2.x API Reference*.
 
+### Get the approval plans of an agreement request
+<a name="marketplace-agreement_GetAgreementRequestApprovalPlans_java_topic"></a>
+
+The following code example shows how to get the approval plans that apply to an agreement request.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```java
+package com.example.awsmarketplace.agreementapi.buyer.agreementRequest;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.AgreementApprovalPlan;
+import software.amazon.awssdk.services.marketplaceagreement.model.Approver;
+import software.amazon.awssdk.services.marketplaceagreement.model.BuyerAgreementApprovalPlan;
+import software.amazon.awssdk.services.marketplaceagreement.model.BuyerAgreementApprovalPlanGroup;
+import software.amazon.awssdk.services.marketplaceagreement.model.BuyerAgreementApprovalPlanLevel;
+import software.amazon.awssdk.services.marketplaceagreement.model.GetAgreementRequestApprovalPlansRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.GetAgreementRequestApprovalPlansResponse;
+
+public class GetAgreementRequestApprovalPlans {
+
+    private static final String AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>";
+
+    public static void main(String[] args) {
+        getAgreementRequestApprovalPlans();
+    }
+
+    private static void getAgreementRequestApprovalPlans() {
+        MarketplaceAgreementClient marketplaceAgreementClient =
+                MarketplaceAgreementClient.builder()
+                        .httpClient(ApacheHttpClient.builder().build())
+                        .credentialsProvider(ProfileCredentialsProvider.create())
+                        .build();
+
+        GetAgreementRequestApprovalPlansRequest request =
+                GetAgreementRequestApprovalPlansRequest.builder()
+                        .agreementRequestId(AGREEMENT_REQUEST_ID)
+                        .build();
+
+        for (GetAgreementRequestApprovalPlansResponse page :
+                marketplaceAgreementClient.getAgreementRequestApprovalPlansPaginator(request)) {
+            for (AgreementApprovalPlan item : page.items()) {
+                BuyerAgreementApprovalPlan plan = item.buyerAgreementApprovalPlan();
+                System.out.println("Plan Reference: " + plan.planReference());
+                System.out.println("Plan Name: " + plan.name());
+                for (BuyerAgreementApprovalPlanLevel level : plan.levels()) {
+                    System.out.println("  Level: " + level.name());
+                    for (BuyerAgreementApprovalPlanGroup group : level.groups()) {
+                        System.out.println("    Required Approvals: " + group.approvalCriteria().requiredApprovalCount());
+                        for (Approver approver : group.approvers()) {
+                            System.out.println("    Approver: " + approver);
+                        }
+                    }
+                }
+                System.out.println("---");
+            }
+        }
+    }
+}
+```
++  For API details, see [GetAgreementRequestApprovalPlans](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/GetAgreementRequestApprovalPlans) in *AWS SDK for Java 2.x API Reference*.
+
 ### Get the auto renewal terms of an agreement
 <a name="marketplace-agreement_GetAgreementAutoRenewal_java_topic"></a>
 
@@ -1460,7 +1822,7 @@ The following code example shows how to get the auto renewal terms of an agreeme
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
@@ -1685,7 +2047,7 @@ The following code example shows how to get the dimensions purchased in an agree
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -1755,7 +2117,7 @@ The following code example shows how to find out whether an agreement will renew
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
@@ -1830,7 +2192,7 @@ The following code example shows how to identify the first agreement in an agree
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
@@ -1886,7 +2248,7 @@ The following code example shows how to get the instances of each dimension purc
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -1965,7 +2327,7 @@ The following code example shows how to get the payment schedule of an agreement
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -2050,7 +2412,7 @@ The following code example shows how to get the pricing per dimension in an agre
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -2124,7 +2486,7 @@ The following code example shows how to get the pricing type of an agreement.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -2517,7 +2879,7 @@ The following code example shows how to get the product type of an agreement.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -2580,7 +2942,7 @@ The following code example shows how to get the status of an agreement.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import static com.example.awsmarketplace.utils.ReferenceCodesConstants.AGREEMENT_ID;
@@ -2631,7 +2993,7 @@ The following code example shows how to get the support terms of an agreement.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -2697,7 +3059,7 @@ The following code example shows how to get the terms of an agreement.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
@@ -2741,6 +3103,126 @@ public class GetAgreementTerms {
 ```
 +  For API details, see [GetAgreementTerms](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/GetAgreementTerms) in *AWS SDK for Java 2.x API Reference*.
 
+### Get the terms of an agreement request
+<a name="marketplace-agreement_GetAgreementRequestTerms_java_topic"></a>
+
+The following code example shows how to get the terms requested in an agreement request.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```java
+package com.example.awsmarketplace.agreementapi.buyer.agreementRequest;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.AgreementRequestTerm;
+import software.amazon.awssdk.services.marketplaceagreement.model.GetAgreementRequestTermsRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.GetAgreementRequestTermsResponse;
+
+public class GetAgreementRequestTerms {
+
+    private static final String AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>";
+
+    public static void main(String[] args) {
+        getAgreementRequestTerms();
+    }
+
+    private static void getAgreementRequestTerms() {
+        MarketplaceAgreementClient marketplaceAgreementClient =
+                MarketplaceAgreementClient.builder()
+                        .httpClient(ApacheHttpClient.builder().build())
+                        .credentialsProvider(ProfileCredentialsProvider.create())
+                        .build();
+
+        GetAgreementRequestTermsRequest request =
+                GetAgreementRequestTermsRequest.builder()
+                        .agreementRequestId(AGREEMENT_REQUEST_ID)
+                        .build();
+
+        for (GetAgreementRequestTermsResponse page :
+                marketplaceAgreementClient.getAgreementRequestTermsPaginator(request)) {
+            for (AgreementRequestTerm term : page.terms()) {
+                System.out.println("Term Type: " + term.type());
+                System.out.println(term);
+                System.out.println("---");
+            }
+        }
+    }
+}
+```
++  For API details, see [GetAgreementRequestTerms](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/GetAgreementRequestTerms) in *AWS SDK for Java 2.x API Reference*.
+
+### List agreement approvals
+<a name="marketplace-agreement_ListAgreementApprovals_java_topic"></a>
+
+The following code example shows how to list the agreement approvals I requested, or that I decide as the administrator of my organization.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```java
+package com.example.awsmarketplace.agreementapi.buyer.agreementApproval;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.AgreementApprovalSummary;
+import software.amazon.awssdk.services.marketplaceagreement.model.ListAgreementApprovalsRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.ListAgreementApprovalsResponse;
+
+public class ListAgreementApprovals {
+
+    // REQUESTER lists the approvals the caller started. AWS_ORGANIZATION_ADMIN lists the approvals the caller
+    // decides as the administrator of its AWS Organization.
+    private static final String PARTY_TYPE = "AWS_ORGANIZATION_ADMIN";
+    private static final String STATUS = "PENDING_APPROVAL";
+
+    public static void main(String[] args) {
+        listAgreementApprovals();
+    }
+
+    private static void listAgreementApprovals() {
+        MarketplaceAgreementClient marketplaceAgreementClient =
+                MarketplaceAgreementClient.builder()
+                        .httpClient(ApacheHttpClient.builder().build())
+                        .credentialsProvider(ProfileCredentialsProvider.create())
+                        .build();
+
+        String nextToken = null;
+
+        do {
+            ListAgreementApprovalsRequest request =
+                    ListAgreementApprovalsRequest.builder()
+                            .partyType(PARTY_TYPE)
+                            .status(STATUS)
+                            .nextToken(nextToken)
+                            .build();
+
+            ListAgreementApprovalsResponse response = marketplaceAgreementClient.listAgreementApprovals(request);
+
+            for (AgreementApprovalSummary summary : response.items()) {
+                System.out.println("Approval Type: " + summary.approvalTypeAsString());
+                System.out.println("Agreement Request ID: " + summary.agreementRequestId());
+                System.out.println("Agreement Approval ID: " + summary.agreementApprovalId());
+                System.out.println("Name: " + summary.name());
+                System.out.println("Status: " + summary.statusAsString());
+                System.out.println("Created At: " + summary.createdAt());
+                System.out.println("Updated At: " + summary.updatedAt());
+                System.out.println("Started At: " + summary.startedAt());
+                System.out.println("Expires At: " + summary.expiresAt());
+                System.out.println("Approval Needed By: " + summary.approvalNeededBy());
+                System.out.println("---");
+            }
+
+            nextToken = response.nextToken();
+        } while (nextToken != null);
+    }
+}
+```
++  For API details, see [ListAgreementApprovals](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/ListAgreementApprovals) in *AWS SDK for Java 2.x API Reference*.
+
 ### List agreement cancellation requests
 <a name="marketplace-agreement_ListAgreementCancellationRequests_java_topic"></a>
 
@@ -2749,7 +3231,7 @@ The following code example shows how to list agreement cancellation requests for
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer.agreementCancellation;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -2813,7 +3295,7 @@ The following code example shows how to list agreement payment requests for agre
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer.paymentRequest;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -2870,6 +3352,126 @@ public class ListAgreementPaymentRequests {
 ```
 +  For API details, see [ListAgreementPaymentRequests](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/ListAgreementPaymentRequests) in *AWS SDK for Java 2.x API Reference*.
 
+### List agreement requests
+<a name="marketplace-agreement_ListAgreementRequests_java_topic"></a>
+
+The following code example shows how to list my agreement requests, filtered by status.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```java
+package com.example.awsmarketplace.agreementapi.buyer.agreementRequest;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.AgreementRequestSummary;
+import software.amazon.awssdk.services.marketplaceagreement.model.ListAgreementRequestsRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.ListAgreementRequestsResponse;
+import software.amazon.awssdk.services.marketplaceagreement.model.Resource;
+
+public class ListAgreementRequests {
+
+    private static final String STATUS = "PENDING_APPROVAL";
+
+    public static void main(String[] args) {
+        listAgreementRequests();
+    }
+
+    private static void listAgreementRequests() {
+        MarketplaceAgreementClient marketplaceAgreementClient =
+                MarketplaceAgreementClient.builder()
+                        .httpClient(ApacheHttpClient.builder().build())
+                        .credentialsProvider(ProfileCredentialsProvider.create())
+                        .build();
+
+        String nextToken = null;
+
+        do {
+            ListAgreementRequestsRequest request =
+                    ListAgreementRequestsRequest.builder()
+                            .status(STATUS)
+                            .nextToken(nextToken)
+                            .build();
+
+            ListAgreementRequestsResponse response = marketplaceAgreementClient.listAgreementRequests(request);
+
+            for (AgreementRequestSummary summary : response.items()) {
+                System.out.println("Agreement Request ID: " + summary.agreementRequestId());
+                System.out.println("Agreement Type: " + summary.agreementType());
+                System.out.println("Status: " + summary.statusAsString());
+                if (summary.agreementId() != null) {
+                    System.out.println("Agreement ID: " + summary.agreementId());
+                }
+                System.out.println("Offer ID: " + summary.proposalSummary().offerId());
+                if (summary.proposalSummary().offerSetId() != null) {
+                    System.out.println("Offer Set ID: " + summary.proposalSummary().offerSetId());
+                }
+                for (Resource resource : summary.proposalSummary().resources()) {
+                    System.out.println("Resource: " + resource.id() + " (" + resource.type() + ")");
+                }
+                System.out.println("---");
+            }
+
+            nextToken = response.nextToken();
+        } while (nextToken != null);
+    }
+}
+```
++  For API details, see [ListAgreementRequests](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/ListAgreementRequests) in *AWS SDK for Java 2.x API Reference*.
+
+### Reject an agreement approval
+<a name="marketplace-agreement_RejectAgreementApproval_java_topic"></a>
+
+The following code example shows how to reject an agreement approval as the administrator of my organization.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```java
+package com.example.awsmarketplace.agreementapi.buyer.agreementApproval;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.BuyerAgreementApprovalRejectionInput;
+import software.amazon.awssdk.services.marketplaceagreement.model.RejectAgreementApprovalRequest;
+
+// Rejects an agreement approval as the administrator of the buyer's AWS Organization. The agreement request
+// is rejected and no agreement is created.
+public class RejectAgreementApproval {
+
+    private static final String AGREEMENT_APPROVAL_ID = "<AGREEMENT APPROVAL ID HERE>";
+    private static final String NOTE = "<REJECTION REASON HERE>";
+
+    public static void main(String[] args) {
+        rejectAgreementApproval();
+    }
+
+    private static void rejectAgreementApproval() {
+        MarketplaceAgreementClient marketplaceAgreementClient =
+                MarketplaceAgreementClient.builder()
+                        .httpClient(ApacheHttpClient.builder().build())
+                        .credentialsProvider(ProfileCredentialsProvider.create())
+                        .build();
+
+        RejectAgreementApprovalRequest request =
+                RejectAgreementApprovalRequest.builder()
+                        .buyerAgreementApprovalRejectionInput(BuyerAgreementApprovalRejectionInput.builder()
+                                .agreementApprovalId(AGREEMENT_APPROVAL_ID)
+                                .note(NOTE)
+                                .build())
+                        .build();
+
+        marketplaceAgreementClient.rejectAgreementApproval(request);
+
+        System.out.println("Rejected Agreement Approval ID: " + AGREEMENT_APPROVAL_ID);
+    }
+}
+```
++  For API details, see [RejectAgreementApproval](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/RejectAgreementApproval) in *AWS SDK for Java 2.x API Reference*.
+
 ### Reject an agreement cancellation request
 <a name="marketplace-agreement_RejectAgreementCancellationRequest_java_topic"></a>
 
@@ -2878,7 +3480,7 @@ The following code example shows how to reject an agreement cancellation request
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer.agreementCancellation;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -2934,7 +3536,7 @@ The following code example shows how to reject an agreement payment request init
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer.paymentRequest;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -2992,7 +3594,7 @@ The following code example shows how to replace a SaaS contract agreement with a
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -3099,7 +3701,7 @@ The following code example shows how to replace a SaaS free trial with a Contrac
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -3253,7 +3855,7 @@ The following code example shows how to replace a SaaS usage-based pricing term 
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -3414,7 +4016,7 @@ The following code example shows how to replace an AMI usage-based pricing term 
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -3627,7 +4229,7 @@ The following code example shows how to search for agreements by end date.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -3720,7 +4322,7 @@ The following code example shows how to search for agreements by the date they w
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -3822,7 +4424,7 @@ The following code example shows how to search for agreements by start date.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -3924,7 +4526,7 @@ The following code example shows how to search for agreements with one custom fi
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -4021,7 +4623,7 @@ The following code example shows how to search for agreements with two custom fi
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.AwsCredentialsProvider;
@@ -4127,7 +4729,7 @@ The following code example shows how to search for the agreements that will rene
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -4233,7 +4835,7 @@ The following code example shows how to search for the agreements the acceptor o
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -4331,6 +4933,84 @@ public class SearchAgreementsAcceptorOptedOut {
 ```
 +  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Java 2.x API Reference*.
 
+### Start the approval of an agreement request
+<a name="marketplace-agreement_StartAgreementApprovals_java_topic"></a>
+
+The following code example shows how to start the approval of an agreement request, optionally with purchase orders.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```java
+package com.example.awsmarketplace.agreementapi.buyer.agreementRequest;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.AgreementApprovalPlanInput;
+import software.amazon.awssdk.services.marketplaceagreement.model.AgreementApprovalPurchaseOrder;
+import software.amazon.awssdk.services.marketplaceagreement.model.AgreementApprovalSummary;
+import software.amazon.awssdk.services.marketplaceagreement.model.BuyerAgreementApprovalPlanInput;
+import software.amazon.awssdk.services.marketplaceagreement.model.StartAgreementApprovalsRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.StartAgreementApprovalsResponse;
+
+public class StartAgreementApprovals {
+
+    private static final String AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>";
+    // planReference of a plan returned by GetAgreementRequestApprovalPlans for this agreement request.
+    private static final String PLAN_REFERENCE = "<PLAN REFERENCE HERE>";
+    private static final String REQUESTER_NOTE = "<NOTE FOR THE APPROVERS HERE>";
+    // Optional: a purchase order for an expected charge, by its id from GetAgreementRequest chargeSummary.
+    private static final String CHARGE_ID = null;
+    private static final String PURCHASE_ORDER_REFERENCE = "<PURCHASE ORDER REFERENCE HERE>";
+
+    public static void main(String[] args) {
+        startAgreementApprovals();
+    }
+
+    private static void startAgreementApprovals() {
+        MarketplaceAgreementClient marketplaceAgreementClient =
+                MarketplaceAgreementClient.builder()
+                        .httpClient(ApacheHttpClient.builder().build())
+                        .credentialsProvider(ProfileCredentialsProvider.create())
+                        .build();
+
+        StartAgreementApprovalsRequest.Builder requestBuilder =
+                StartAgreementApprovalsRequest.builder()
+                        .agreementRequestId(AGREEMENT_REQUEST_ID)
+                        .planInputs(AgreementApprovalPlanInput.fromBuyerAgreementApprovalPlanInput(
+                                BuyerAgreementApprovalPlanInput.builder()
+                                        .planReference(PLAN_REFERENCE)
+                                        .requesterNote(REQUESTER_NOTE)
+                                        .build()));
+        if (CHARGE_ID != null) {
+            requestBuilder.purchaseOrders(AgreementApprovalPurchaseOrder.builder()
+                    .chargeId(CHARGE_ID)
+                    .purchaseOrderReference(PURCHASE_ORDER_REFERENCE)
+                    .build());
+        }
+        StartAgreementApprovalsRequest request = requestBuilder.build();
+
+        StartAgreementApprovalsResponse response = marketplaceAgreementClient.startAgreementApprovals(request);
+
+        for (AgreementApprovalSummary summary : response.approvalSummaries()) {
+            System.out.println("Approval Type: " + summary.approvalTypeAsString());
+            System.out.println("Agreement Request ID: " + summary.agreementRequestId());
+            System.out.println("Agreement Approval ID: " + summary.agreementApprovalId());
+            System.out.println("Name: " + summary.name());
+            System.out.println("Status: " + summary.statusAsString());
+            System.out.println("Created At: " + summary.createdAt());
+            System.out.println("Updated At: " + summary.updatedAt());
+            System.out.println("Started At: " + summary.startedAt());
+            System.out.println("Expires At: " + summary.expiresAt());
+            System.out.println("Approval Needed By: " + summary.approvalNeededBy());
+            System.out.println("---");
+        }
+    }
+}
+```
++  For API details, see [StartAgreementApprovals](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/StartAgreementApprovals) in *AWS SDK for Java 2.x API Reference*.
+
 ### Update purchase orders after agreement acceptance
 <a name="marketplace-agreement_UpdatePurchaseOrdersAfterAgreementAcceptance_java_topic"></a>
 
@@ -4339,7 +5019,7 @@ The following code example shows how to update purchase orders after the agreeme
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;

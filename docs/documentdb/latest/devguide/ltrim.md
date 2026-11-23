@@ -63,7 +63,7 @@ To view a code example for using the `$ltrim` command, choose the tab for the la
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function example() {
@@ -105,7 +105,7 @@ example().catch(console.error);
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def example():

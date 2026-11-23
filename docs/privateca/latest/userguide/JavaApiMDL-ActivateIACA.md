@@ -16,7 +16,7 @@ The example calls the following AWS Private CA API actions:
 + [GetCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_GetCertificate.html)
 + [ImportCertificateAuthorityCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_ImportCertificateAuthorityCertificate.html)
 
-```
+```java
 package com.amazonaws.samples.mdl;
 
 import com.amazonaws.auth.AWSCredentials;

@@ -12,27 +12,27 @@ List all recommendations in your account. Results are paginated and can be filte
 **Example**
 List recommendations:
 
-```
+```bash
 agentcore eval recommendation list
 ```
 In a terminal, this opens an interactive list. For JSON output, for example in scripts, add `--json`.
 Filter by status:
 
-```
+```bash
 agentcore eval recommendation list --status-filter COMPLETED
 ```
 View a single recommendation by ID:
 
-```
+```bash
 agentcore eval recommendation get --id <recommendation-id>
 ```
 Add `--json` for machine-readable output:
 
-```
+```bash
 agentcore eval recommendation list --json
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client("bedrock-agentcore", region_name="us-west-2")
@@ -44,7 +44,7 @@ for rec in response["recommendationSummaries"]:
 ```
 Filter by status:
 
-```
+```python
 response = client.list_recommendations(statusFilter="COMPLETED")
 
 for rec in response["recommendationSummaries"]:
@@ -52,7 +52,7 @@ for rec in response["recommendationSummaries"]:
 ```
 Paginate through all results:
 
-```
+```python
 paginator = client.get_paginator("list_recommendations")
 for page in paginator.paginate(statusFilter="COMPLETED"):
     for rec in page["recommendationSummaries"]:

@@ -11,7 +11,7 @@ The following sample IAM policy describes the required permissions for creating,
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -46,7 +46,7 @@ If providing Network Options when creating a Salesforce connection, the followin
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

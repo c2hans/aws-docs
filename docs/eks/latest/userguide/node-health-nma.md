@@ -108,13 +108,13 @@ The following table lists the well-known XID codes, their meanings, and the defa
 
 To view the current node conditions related to GPU health, run the following command.
 
-```
+```bash
 kubectl get nodes -o custom-columns='NAME:.metadata.name,ACCELERATOR_READY:.status.conditions[?(@.type=="AcceleratedHardwareReady")].status,REASON:.status.conditions[?(@.type=="AcceleratedHardwareReady")].reason'
 ```
 
 To view XID-related events on your cluster, run one of the following commands.
 
-```
+```bash
 kubectl get events | grep -i "NvidiaXID"
 ```
 

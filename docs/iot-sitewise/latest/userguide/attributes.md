@@ -41,7 +41,7 @@ When you define an attribute for an asset model with the AWS IoT SiteWise API, y
 **Example attribute definition**
 The following example demonstrates an attribute that represents an asset's model number with a default value. This object is an example of an [AssetModelProperty](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_AssetModelProperty.html) that contains an [Attribute](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Attribute.html). You can specify this object as a part of the [CreateAssetModel](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAssetModel.html) request payload to create an attribute property. For more information, see [Create an asset model (AWS CLI)](create-asset-models.md#create-asset-model-cli).
 
-```
+```json
 {
 {{...}}
 "assetModelProperties": [

@@ -14,7 +14,7 @@ The following code example shows how to use `DescribeTrail`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudtrail#code-examples).
 
-```
+```cpp
 // Routine which describes the AWS CloudTrail trails in an account.
 /*!
   \param clientConfig: Aws client configuration.

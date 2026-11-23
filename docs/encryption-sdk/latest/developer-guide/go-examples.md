@@ -16,7 +16,7 @@ This example shows the basic pattern for encrypting and decrypting data. It encr
 **Step 1: Instantiate the AWS Encryption SDK.**
 You'll use the methods in the AWS Encryption SDK to encrypt and decrypt data.
 
-```
+```go
 import (
     "context"
 
@@ -36,7 +36,7 @@ if err != nil {
 
 **Step 2: Create an AWS KMS client.**
 
-```
+```go
 cfg, err := config.LoadDefaultConfig(context.TODO())
 if err != nil {
     panic(err)
@@ -48,7 +48,7 @@ kmsClient := kms.NewFromConfig(cfg, func(o *kms.Options) {
 
 **Optional: Create your encryption context.**
 
-```
+```go
 encryptionContext := map[string]string{
     "encryption":                "context",
     "is not":                    "secret",
@@ -61,7 +61,7 @@ encryptionContext := map[string]string{
 **Step 3: Instantiate the material providers library.**
 You'll use the methods in the material providers library to create the keyrings that specify which keys protect your data.
 
-```
+```go
 matProv, err := mpl.NewClient(mpltypes.MaterialProvidersConfig{})
 if err != nil {
     panic(err)
@@ -71,7 +71,7 @@ if err != nil {
 **Step 4: Create an AWS KMS keyring.**
 To create the keyring, call the keyring method with the keyring input object. This example uses the `CreateAwsKmsKeyring` method and specifies one KMS key. The `kmsKeyId` variable represents the key ARN of the KMS key you provide.
 
-```
+```go
 awsKmsKeyringInput := mpltypes.CreateAwsKmsKeyringInput{
     KmsClient: kmsClient,
     KmsKeyId:  kmsKeyId,
@@ -84,7 +84,7 @@ if err != nil {
 
 **Step 5: Encrypt the plaintext.**
 
-```
+```go
 res, err := encryptionClient.Encrypt(context.Background(), esdktypes.EncryptInput{
     Plaintext:         []byte(exampleText),
     EncryptionContext: encryptionContext,
@@ -99,7 +99,7 @@ ciphertext := res.Ciphertext
 
 **Step 6: Decrypt your encrypted data using the same keyring you used on encrypt.**
 
-```
+```go
 decryptOutput, err := encryptionClient.Decrypt(context.Background(), esdktypes.DecryptInput{
     Ciphertext:        ciphertext,
     // Provide the encryption context that was supplied to the encrypt method

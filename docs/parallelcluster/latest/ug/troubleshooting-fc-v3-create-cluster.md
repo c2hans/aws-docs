@@ -156,7 +156,7 @@ If you see `RuntimeError` exception `Cluster state has been set to PROTECTED mod
 
     This indicates that the `OnNodeConfigured` or `OnNodeStart` custom script took a long time to run and caused a timeout error. Check your custom script for issues that might cause it to run for a long time. If your custom script requires a long time to run, consider changing the timeout limit by adding a `DevSettings` section to your cluster configuration file, as shown in the following example:
 
-    ```
+    ```yaml
     DevSettings:
       Timeouts:
         HeadNodeBootstrapTimeout: 2100 # default setting: 2100 seconds
@@ -165,7 +165,7 @@ If you see `RuntimeError` exception `Cluster state has been set to PROTECTED mod
 
     It's possible that the head node wasn't created successfully and the logs can't be found. In this case, you can get additional failure details by checking the CloudFormation stack events and the head node console log. You can retrieve the head node console log through the Amazon EC2 console or by running the following Amazon EC2 CLI command:
 
-    ```
+    ```bash
     aws ec2 get-console-output --instance-id {{HEAD_NODE_INSTANCE_ID}} --output text
     ```
 

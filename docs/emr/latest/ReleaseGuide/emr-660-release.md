@@ -155,7 +155,7 @@ Updated documentation date: June 15, 2022
 
   The workaround for this issue is to run the script below as a Bootstrap Action to disable the Garbage Collection logging parameters in jvm.config while creating or cloning the cluster for Amazon EMR 6.6.0.
 
-  ```
+  ```bash
   #!/bin/bash
     set -ex
     PRESTO_PUPPET_DIR='/var/aws/emr/bigtop-deploy/puppet/modules/trino'

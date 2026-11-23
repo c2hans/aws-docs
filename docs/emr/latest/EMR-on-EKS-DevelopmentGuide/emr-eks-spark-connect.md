@@ -29,7 +29,7 @@ You also need the following standard Amazon EMR on EKS resources. If you already
 
 Add the following permissions to your IAM role to create and interact with a Spark Connect endpoint:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -78,7 +78,7 @@ Each security configuration has a one-to-one relationship with a virtual cluster
 
 Create a security configuration with a system namespace:
 
-```
+```bash
 aws emr-containers create-security-configuration \
   --name "{{security-config-name}}" \
   --security-configuration-data '{
@@ -106,7 +106,7 @@ The `namespace` in the security configuration is the *system namespace* where Sp
 
 Create a virtual cluster associated with the security configuration. You must set `sessionEnabled` to `true` and provide the `securityConfigurationId` from the previous step.
 
-```
+```bash
 aws emr-containers create-virtual-cluster \
   --name "{{virtual-cluster-name}}" \
   --container-provider '{
@@ -134,7 +134,7 @@ After creating a security configuration, create a Spark Connect managed endpoint
 **Note**
 The first Spark Connect endpoint on an EKS cluster takes longer to become `ACTIVE` than subsequent ones. For the first endpoint on the EKS cluster, Amazon EMR on EKS provisions the shared networking components used for connectivity — an internal Network Load Balancer (NLB), a VPC interface endpoint (AWS PrivateLink), and a one-off Envoy router deployment (in the `spark-connect-router` namespace) that routes gRPC traffic to endpoints — which can take several minutes. These components are created only once per EKS cluster and are reused by all later endpoints on that cluster, so subsequent endpoints start up faster.
 
-```
+```bash
 aws emr-containers create-managed-endpoint \
   --virtual-cluster-id {{VIRTUAL_CLUSTER_ID}} \
   --name "spark-connect-endpoint" \
@@ -149,7 +149,7 @@ By default, a Spark Connect managed endpoint starts with *2 executors*. If you d
 
 The following example includes Spark configuration overrides with dynamic allocation and a monitoring configuration to export Spark logs to Amazon S3:
 
-```
+```bash
 aws emr-containers create-managed-endpoint \
   --virtual-cluster-id {{VIRTUAL_CLUSTER_ID}} \
   --name "spark-connect-endpoint" \
@@ -183,7 +183,7 @@ aws emr-containers create-managed-endpoint \
 
 Monitor the endpoint status:
 
-```
+```bash
 aws emr-containers describe-managed-endpoint \
   --virtual-cluster-id {{VIRTUAL_CLUSTER_ID}} \
   --id {{ENDPOINT_ID}}
@@ -200,7 +200,7 @@ After the endpoint is active, obtain session credentials and connect from a PySp
 
 1. Get the auth proxy URL from the endpoint description:
 
-   ```
+   ```bash
    aws emr-containers describe-managed-endpoint \
      --virtual-cluster-id {{VIRTUAL_CLUSTER_ID}} \
      --id {{ENDPOINT_ID}}
@@ -210,7 +210,7 @@ After the endpoint is active, obtain session credentials and connect from a PySp
 
 1. Get a session token for the endpoint:
 
-   ```
+   ```bash
    aws emr-containers get-managed-endpoint-session-credentials \
      --virtual-cluster-identifier {{VIRTUAL_CLUSTER_ID}} \
      --endpoint-identifier {{ENDPOINT_ID}} \
@@ -220,7 +220,7 @@ After the endpoint is active, obtain session credentials and connect from a PySp
 
    The response includes a session token:
 
-   ```
+   ```json
    {
        "id": "{{SESSION_ID}}",
        "credentials": {
@@ -237,7 +237,7 @@ After the endpoint is active, obtain session credentials and connect from a PySp
 
 1. Install the PySpark client matching the Spark version on your endpoint (Spark 3.5.8 for `emr-7.14.0`, Spark 4.1.1 for `emr-spark-8.1.0`):
 
-   ```
+   ```bash
    # For emr-7.14.0
    pip install pyspark[connect]==3.5.8
 
@@ -249,7 +249,7 @@ After the endpoint is active, obtain session credentials and connect from a PySp
 
 1. Connect from PySpark using the auth proxy URL and session token:
 
-   ```
+   ```python
    from pyspark.sql import SparkSession
 
    # Use the authProxyUrl from DescribeManagedEndpoint
@@ -268,7 +268,7 @@ After the endpoint is active, obtain session credentials and connect from a PySp
 
 The following Python script obtains the auth proxy URL and session token, then connects to the Spark Connect endpoint:
 
-```
+```python
 import boto3
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col

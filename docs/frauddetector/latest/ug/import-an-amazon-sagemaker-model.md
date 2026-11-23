@@ -24,7 +24,7 @@ The output configuration specifies the response format of the SageMaker AI model
 **Note**
 The output from a SageMaker AI model must be mapped to a variable with source `EXTERNAL_MODEL_SCORE`. You cannot create these variables in the console using **Variables**. You must instead create them when you configure your model import.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

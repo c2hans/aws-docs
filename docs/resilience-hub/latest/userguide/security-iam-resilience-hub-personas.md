@@ -22,7 +22,7 @@ The following policy grants necessary permissions required for the Infrastructur
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -70,7 +70,7 @@ The following policy grants necessary permissions required for the Business cont
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -108,7 +108,7 @@ The following policy grants necessary permissions required for the Application o
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -164,7 +164,7 @@ The following policy grants necessary permissions required for read-only access.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

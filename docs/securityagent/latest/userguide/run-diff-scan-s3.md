@@ -76,7 +76,7 @@ aws securityagent start-code-review-job \
 ### Using the AWS SDK (Python)
 <a name="_using_the_aws_sdk_python"></a>
 
-```
+```python
 import boto3
 
 client = boto3.client('securityagent')
@@ -95,7 +95,7 @@ print(f"Job started: {response['codeReviewJobId']}")
 ### Using the AWS SDK (JavaScript/TypeScript)
 <a name="_using_the_aws_sdk_javascripttypescript"></a>
 
-```
+```typescript
 import { SecurityAgentClient, StartCodeReviewJobCommand } from '@aws-sdk/client-securityagent';
 
 const client = new SecurityAgentClient({ region: 'us-east-1' });

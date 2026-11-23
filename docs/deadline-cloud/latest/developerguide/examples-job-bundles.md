@@ -8,13 +8,13 @@ A job bundle groups an Open Job Description template with the files and metadata
 
 The following sections describe each example. Submit any example with the Deadline Cloud CLI:
 
-```
+```bash
 deadline bundle submit {{bundle-directory}}
 ```
 
 Or open the GUI submitter:
 
-```
+```bash
 deadline bundle gui-submit {{bundle-directory}}
 ```
 

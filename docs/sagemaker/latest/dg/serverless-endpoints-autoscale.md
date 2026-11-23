@@ -32,7 +32,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints
 
  The following example shows how to register a model named `MyVariant` that is dynamically scaled to have 1 to 10 Provisioned Concurrency value:
 
-```
+```bash
 aws application-autoscaling register-scalable-target \
     --service-namespace sagemaker \
     --scalable-dimension sagemaker:variant:DesiredProvisionedConcurrency \
@@ -112,7 +112,7 @@ Authorization: AUTHPARAMS
 
  The following example shows how to apply a target-tracking scaling policy named `MyScalingPolicy` to a model named `MyVariant`. The policy configuration is saved in a file named `scaling-policy.json`.
 
-```
+```bash
 aws application-autoscaling put-scaling-policy \
     --policy-name MyScalingPolicy \
     --policy-type TargetTrackingScaling \
@@ -206,7 +206,7 @@ Authorization: AUTHPARAMS
 
  The following example shows how to add a scaling action named `MyScalingAction` to a model named `MyVariant` on a recurring schedule. On the specified schedule (every day at 12:15 PM UTC), if the current Provisioned Concurrency is below the value specified for `MinCapacity`. Application Auto Scaling scales out the Provisioned Concurrency to the value specified by `MinCapacity`.
 
-```
+```bash
 aws application-autoscaling put-scheduled-action \
     --scheduled-action-name 'MyScalingAction' \
     --schedule 'cron(15 12 * * ? *)' \

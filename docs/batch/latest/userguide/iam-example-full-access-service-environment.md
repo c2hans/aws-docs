@@ -11,7 +11,7 @@ This policy allows AWS Batch to manage SageMaker AI resources.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

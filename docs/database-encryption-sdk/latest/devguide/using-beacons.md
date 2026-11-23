@@ -31,7 +31,7 @@ After you configure your beacons, you must complete the following steps before y
 ------
 #### [ Java ]
 
-   ```
+   ```java
     List<BeaconVersion> beaconVersions = new ArrayList<>();
    beaconVersions.add(
        BeaconVersion.builder()
@@ -54,7 +54,7 @@ After you configure your beacons, you must complete the following steps before y
 ------
 #### [ C\# / .NET ]
 
-   ```
+   ```cs
    var beaconVersions = new List<BeaconVersion>
    {
        new BeaconVersion
@@ -80,7 +80,7 @@ After you configure your beacons, you must complete the following steps before y
 ------
 #### [ Rust ]
 
-   ```
+   ```rs
    let beacon_version = BeaconVersion::builder()
        .standard_beacons(standard_beacon_list)
        .compound_beacons(compound_beacon_list)

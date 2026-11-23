@@ -25,7 +25,7 @@ Select a tab to see a sample event for a job submitted in Amazon Bedrock.
 
 The following JSON object shows a sample event for when the status of a model customization job has changed:
 
-```
+```json
 {
   "version": "0",
   "id": "UUID",
@@ -74,7 +74,7 @@ To learn about the fields in the **detail** object that are specific to model cu
 
 The following JSON object shows a sample event for when the status of a model customization job has changed:
 
-```
+```json
 {
   "version": "0",
   "id": "a1b2c3d4",
@@ -104,7 +104,7 @@ To learn about the fields in the **detail** object that are specific to batch in
 
 The following JSON object shows a sample event for when the status of a BDA processing job has changed.
 
-```
+```json
 {
     "version": "0",
     "id": "0cc3eaf7-dff6-6f67-0ee0-ae572fccfe84",

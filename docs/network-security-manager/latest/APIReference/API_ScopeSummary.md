@@ -35,6 +35,12 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9 _.:/=+\-@]*`
 Required: No
 
+ ** specializedScopeType **   <a name="networksecuritymanager-Type-ScopeSummary-specializedScopeType"></a>
+The specialized type of the scope, if the scope is built for one specific purpose. A scope with no `specializedScopeType` is a standard scope that you can associate with a deployment. A specialized scope can be used only for the purpose that its type defines and can't be associated with a deployment. This value is set when the scope is created and can't be changed.
+Type: String
+Valid Values: `IGW_FIREWALL_SUBNET_CONNECTIVITY_OVERRIDE`
+Required: No
+
  ** status **   <a name="networksecuritymanager-Type-ScopeSummary-status"></a>
 The current status of the resource: `DRAFT` (unpublished, editable), `ACTIVE` (published, in use), or `DISABLED` (deactivated; changes cannot be published until the resource is re-enabled).
 Type: String

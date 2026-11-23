@@ -61,7 +61,7 @@ Use the [modify-snapshot-attribute](https://docs.aws.amazon.com/cli/latest/refer
 
 For `--attribute`, specify `createVolumePermission`. For `--operation-type`, specify `add`. For `--group-names`, specify `all`.
 
-```
+```bash
 aws ec2 modify-snapshot-attribute \
     --snapshot-id {{snap-0abcdef1234567890}} \
     --attribute createVolumePermission \
@@ -74,7 +74,7 @@ Use the [modify-snapshot-attribute](https://docs.aws.amazon.com/cli/latest/refer
 
 For `--attribute`, specify `createVolumePermission`. For `--operation-type`, specify `add`. For `--user-ids`, specify the 12-digit IDs of the AWS accounts with which to share the snapshots.
 
-```
+```bash
 aws ec2 modify-snapshot-attribute \
     --snapshot-id {{snap-0abcdef1234567890}} \
     --attribute createVolumePermission \
@@ -92,7 +92,7 @@ Use the [Edit-EC2SnapshotAttribute](https://docs.aws.amazon.com/powershell/lates
 
 For `-Attribute`, specify `CreateVolumePermission`. For `-OperationType`, specify `Add`. For `-GroupName`, specify `all`.
 
-```
+```powershell
 Edit-EC2SnapshotAttribute `
     -SnapshotId {{snap-0abcdef1234567890}} `
     -Attribute CreateVolumePermission `
@@ -105,7 +105,7 @@ Use the [Edit-EC2SnapshotAttribute](https://docs.aws.amazon.com/powershell/lates
 
 For `-Attribute`, specify `CreateVolumePermission`. For `-OperationType`, specify `Add`. For `UserId`, specify the 12-digit IDs of the AWS accounts with which to share the snapshots.
 
-```
+```powershell
 Edit-EC2SnapshotAttribute `
     -SnapshotId {{snap-0abcdef1234567890}} `
     -Attribute CreateVolumePermission `

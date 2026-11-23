@@ -115,7 +115,7 @@ For more information, see [Working with DHCP Option Sets](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This example lists your DHCP options sets.**
 
-```
+```powershell
 Get-EC2DhcpOption
 ```
 **Output:**
@@ -129,7 +129,7 @@ DhcpConfigurations                    DhcpOptionsId    Tag
 ```
 **Example 2: This example gets configuration details for the specified DHCP options set.**
 
-```
+```powershell
 (Get-EC2DhcpOption -DhcpOptionsId dopt-1a2b3c4d).DhcpConfigurations
 ```
 **Output:**
@@ -145,7 +145,7 @@ domain-name-servers    {10.0.0.101, 10.0.0.102}
 **Tools for PowerShell V5**
 **Example 1: This example lists your DHCP options sets.**
 
-```
+```powershell
 Get-EC2DhcpOption
 ```
 **Output:**
@@ -159,7 +159,7 @@ DhcpConfigurations                    DhcpOptionsId    Tag
 ```
 **Example 2: This example gets configuration details for the specified DHCP options set.**
 
-```
+```powershell
 (Get-EC2DhcpOption -DhcpOptionsId dopt-1a2b3c4d).DhcpConfigurations
 ```
 **Output:**

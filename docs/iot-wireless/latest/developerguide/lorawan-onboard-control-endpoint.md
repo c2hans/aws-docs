@@ -110,7 +110,7 @@ aws iotwireless create-service-profile \
 
 The following shows a sample response of running the command.
 
-```
+```JSON
 {
     "Arn": "arn:aws:iotwireless:{{region}}:{{acct_number}}:ServiceProfile/1a2345ba-4c5d-67b0-ab67-e0c8342f2857",
     "Id": "1a2345ba-4c5d-67b0-ab67-e0c8342f2857"

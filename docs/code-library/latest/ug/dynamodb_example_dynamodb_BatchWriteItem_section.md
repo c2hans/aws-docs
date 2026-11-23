@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 Writes a batch of items to the movie table.
 
-```
+```csharp
     /// <summary>
     /// Loads the contents of a JSON file into a list of movies to be
     /// added to the DynamoDB table.
@@ -112,7 +112,7 @@ Writes a batch of items to the movie table.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 ##############################################################################
 # function dynamodb_batch_write_item
 #
@@ -181,7 +181,7 @@ function dynamodb_batch_write_item() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -247,7 +247,7 @@ function aws_cli_error_log() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Batch write items from a JSON file.
 /*!
   \sa batchWriteItem()
@@ -511,7 +511,7 @@ For more information, see [Batch Operations](https://docs.aws.amazon.com/amazond
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -574,7 +574,7 @@ func (basics TableBasics) AddMovieBatch(ctx context.Context, movies []Movie, max
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -626,7 +626,7 @@ func (movie Movie) String() string {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb/#code-examples).
 Inserts many items into a table by using the service client.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -708,7 +708,7 @@ public class BatchWriteItems {
 ```
 Inserts many items into a table by using the enhanced client.
 
-```
+```java
 import com.example.dynamodb.Customer;
 import com.example.dynamodb.Music;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
@@ -820,7 +820,7 @@ public class EnhancedBatchWriteItems {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 This example uses the document client to simplify working with items in DynamoDB. For API details see [BatchWrite](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/BatchWriteCommand/).
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
   BatchWriteCommand,
@@ -875,7 +875,7 @@ export const main = async () => {
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/dynamodb#code-examples).
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -926,7 +926,7 @@ ddb.batchWriteItem(params, function (err, data) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
     public function writeBatch(string $TableName, array $Batch, int $depth = 2)
     {
         if (--$depth <= 0) {
@@ -963,7 +963,7 @@ ddb.batchWriteItem(params, function (err, data) {
 **Tools for PowerShell V4**
 **Example 1: Creates a new item, or replaces an existing item with a new item in the DynamoDB tables Music and Songs.**
 
-```
+```powershell
 $item = @{
     SongTitle = 'Somewhere Down The Road'
     Artist = 'No One You Know'
@@ -988,7 +988,7 @@ Set-DDBBatchItem -RequestItem $requestItem
 **Tools for PowerShell V5**
 **Example 1: Creates a new item, or replaces an existing item with a new item in the DynamoDB tables Music and Songs.**
 
-```
+```powershell
 $item = @{
     SongTitle = 'Somewhere Down The Road'
     Artist = 'No One You Know'
@@ -1016,7 +1016,7 @@ Set-DDBBatchItem -RequestItem $requestItem
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1083,7 +1083,7 @@ class Movies:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 class DynamoDBBasics
   attr_reader :dynamo_resource, :table
 
@@ -1126,7 +1126,7 @@ class DynamoDBBasics
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb/#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     /// Populate the movie database from the specified JSON file.

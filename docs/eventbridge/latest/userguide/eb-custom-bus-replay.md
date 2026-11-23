@@ -11,7 +11,7 @@ To deliver events that the bus already holds, create a subscriber with `--starti
 
 When you create a subscriber, `--starting-position` is `LATEST` to receive only events published after the subscriber exists, or `POINT_IN_TIME` to read from retained history. With `POINT_IN_TIME`, `--point-in-time-configuration` sets `PointType` to `HORIZON`, the earliest retained event, or to `TIMESTAMP` with a `StartingPoint`. The starting point must fall inside the retention window: at or after `RetentionWindowStartTime` and not in the future. An optional `EndPoint` stops the subscriber at that time. Omit `EndPoint` and the subscriber reads through the retained events, catches up to live events, and keeps delivering. For that open-ended case, the starting point must also be at least 5 minutes in the past. A subscriber that sets `EndPoint` is exempt from the 5-minute minimum.
 
-```
+```bash
 aws eventsv2 create-subscriber \
     --name reprocess-september \
     --event-bus-arn arn:aws:events:us-east-1:111122223333:event-busv2/orders/EXAMPLE1234567890abcdef \

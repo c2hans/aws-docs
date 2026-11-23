@@ -81,7 +81,7 @@ If a remote participant is being subscribed to (see [Subscribing to Participants
 
 Here is a sample implementation:
 
-```
+```swift
 func stage(_ stage: IVSStage, subscribeConfigurationForParticipant participant: IVSParticipantInfo) -> IVSSubscribeConfiguration {
     let config = IVSSubscribeConfiguration()
 

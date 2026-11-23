@@ -17,7 +17,7 @@ This topic covers the minimum IAM permissions required to access an OpenSearch U
 
 The following IAM policy grants access to the application interface. Attach it to the IAM role that needs access, and replace the placeholder values with your own information:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -32,13 +32,13 @@ The following IAM policy grants access to the application interface. Attach it t
 
 Scoping the resource to a single application ID grants the least privilege that the role needs. To grant access to every application in the account and Region instead, use a wildcard:
 
-```
+```json
 "Resource": "arn:aws:opensearch:{{region}}:{{account-id}}:application/*"
 ```
 
 You can attach the same policy with the AWS CLI:
 
-```
+```sh
 aws iam put-role-policy \
     --role-name {{role-name}} \
     --policy-name OpenSearchAppAccess \
@@ -57,7 +57,7 @@ The action that grants access to the application interface is `opensearch:Applic
 
 If your users also open the application from the AWS Management Console, add the following statement, so they can view the application in the console:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "es:GetApplication",
@@ -70,7 +70,7 @@ If your users also open the application from the AWS Management Console, add the
 
 Set which IAM principals receive administrator privileges inside OpenSearch UI. To grant administrator privileges to all authenticated users, run the following command:
 
-```
+```sh
 aws opensearch update-application \
     --id {{application-id}} \
     --app-configs '[{"key":"opensearchDashboards.dashboardAdmin.users","value":"*"}]' \
@@ -79,7 +79,7 @@ aws opensearch update-application \
 
 To grant administrator privileges to a single role, specify the role ARN:
 
-```
+```sh
 aws opensearch update-application \
     --id {{application-id}} \
     --app-configs '[{"key":"opensearchDashboards.dashboardAdmin.users","value":"arn:aws:iam::{{account-id}}:role/{{role-name}}"}]' \
@@ -99,7 +99,7 @@ You can verify access from a browser with a presigned URL, or programmatically w
 
 The following Python code example generates a Signature Version 4 presigned URL that you open in a browser:
 
-```
+```python
 from botocore.session import Session
 from botocore.auth import SigV4QueryAuth
 from botocore.awsrequest import AWSRequest
@@ -125,7 +125,7 @@ The `/_login/` presigned URL works only in a browser. It does not work with `cur
 
 The following Python code example signs a request to the application endpoint with Signature Version 4 headers:
 
-```
+```python
 from botocore.session import Session
 from botocore.auth import SigV4Auth
 from botocore.awsrequest import AWSRequest

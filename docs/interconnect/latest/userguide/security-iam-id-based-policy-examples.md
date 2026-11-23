@@ -42,7 +42,7 @@ You don’t need to allow minimum console permissions for users that are making 
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -82,7 +82,7 @@ This example shows how you might create a policy that allows IAM users to view t
 
 You can use conditions in your identity-based policy to control access to AWS Interconnect resources based on tags. This example shows how you might create a policy that allows viewing a Connection. However, permission is granted only if the Connection tag `Owner` has the value of that user’s user name. This policy also grants the permissions necessary to complete this action on the console.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

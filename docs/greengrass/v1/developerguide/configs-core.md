@@ -12,7 +12,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
    1. To check whether the daemon is running:
 
-      ```
+      ```bash
       ps aux | grep -E 'greengrass.*daemon'
       ```
 
@@ -20,7 +20,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
    1. To start the daemon:
 
-      ```
+      ```bash
       cd /greengrass/ggc/core/
       sudo ./greengrassd start
       ```

@@ -66,3 +66,12 @@ When enabled, allows the same AWS Identity and Access Management Identity Center
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | sso\_oidc\_cache | Optional | false | sso\_oidc\_cache=true; |
+
+## Credentials cache
+<a name="odbc-v2-driver-sagemaker-idc-credentials-cache"></a>
+
+When set to `1`, the driver saves the Athena connection credentials that Amazon DataZone returns in the driver's cache directory. The driver reuses them across connections and driver processes until two minutes before they expire. Only the value `1` enables the cache.
+
+| **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
+| --- | --- | --- | --- |
+| SageMakerCredentialsCache | Optional | 0 | SageMakerCredentialsCache=1; |

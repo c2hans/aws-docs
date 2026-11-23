@@ -8,10 +8,10 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/curl-minimal.html
 
 If the full functionality of `curl` is required, for example for `gopher://` support, run the following commands to install the `curl-full` and `libcurl-full` packages.
 
-```
+```bash
 $ dnf swap libcurl-minimal libcurl-full
 ```
 
-```
+```bash
 $ dnf swap curl-minimal curl-full
 ```

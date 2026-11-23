@@ -148,7 +148,7 @@ To begin, you select the latest version of the FreeRTOS package, and this will b
 
    1. In the `aws_demos` project, open `demos/include/aws_clientcredential.h` and specify the following values.
 
-      ```
+      ```c
       #define clientcredentialMQTT_BROKER_ENDPOINT[] = "{{Your AWS IoT endpoint}}";
       #define clientcredentialIOT_THING_NAME "{{The AWS IoT thing name of your board}}"
       ```
@@ -163,7 +163,7 @@ To begin, you select the latest version of the FreeRTOS package, and this will b
 
    1. Open the `vendors/renesas/boards/rx65n-rsk/aws_demos/config_files/ota_demo_config.h` file, and specify these values.
 
-      ```
+      ```c
       #define otapalconfigCODE_SIGNING_CERTIFICATE [] = "{{your-certificate-key}}";
       ```
 

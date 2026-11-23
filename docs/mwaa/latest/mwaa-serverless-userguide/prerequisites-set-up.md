@@ -24,7 +24,7 @@ We recommend that you use finer-grained policies. For policy setup, refer to [Ho
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -166,7 +166,7 @@ If you prefer to use Amazon MWAA Serverless with SDKs, you can access AWS builde
 ------
 #### [ CLI ]
 
-   ```
+   ```bash
    [profile mwaa-serverless]
    aws_access_key_id = {{ACCESS-KEY-ID-OF-IAM-USER}}
    aws_secret_access_key = {{SECRET-ACCESS-KEY-ID-OF-IAM-USER}}

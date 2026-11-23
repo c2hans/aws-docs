@@ -16,7 +16,7 @@ This example Python file is stored in the AWS IoT Greengrass Core SDK repository
 
 1. If you aren't working in the US East (N. Virgina) Region, open `carAggregator.py` and change `region_name` in the following line to the AWS Region that's currently selected in the AWS IoT console. For the list of supported AWS Regions, see [AWS IoT Greengrass](https://docs.aws.amazon.com/general/latest/gr/greengrass.html) in the *Amazon Web Services General Reference*.
 
-   ```
+   ```python
    dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
    ```
 

@@ -34,7 +34,7 @@ DATE
 
 The following example returns the date of the last day in the current month.
 
-```
+```sql
 select last_day(sysdate);
 
   last_day
@@ -44,7 +44,7 @@ select last_day(sysdate);
 
 The following example returns the number of tickets sold for each of the last 7 days of the month. The values in the SALETIME column are timestamps.
 
-```
+```sql
 select datediff(day, saletime, last_day(saletime)) as "Days Remaining", sum(qtysold)
 from sales
 where datediff(day, saletime, last_day(saletime)) < 7

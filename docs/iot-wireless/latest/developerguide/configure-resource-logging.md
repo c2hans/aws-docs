@@ -71,7 +71,7 @@ You can also perform this procedure with the API by using the methods in the AWS
 
 1. By default, all resources have log level set to `ERROR`. To set the default log levels, or log levels by resource types for all resources in your account, use the [**update-log-levels-by-resource-types**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/update-log-levels-by-resource-types.html) command. The following example shows how you can create a JSON file, `Input.json`, and provide it as an input to the CLI command. You can use this command to selectively disable logging or override the default log level for specific types of resources and events.
 
-   ```
+   ```JSON
    {
        "DefaultLogLevel": "INFO",
        "FuotaTaskLogOptions":
@@ -158,7 +158,7 @@ The log level you want to use for individual resource types and events. These lo
 
    If you want to remove the log options for wireless devices and wireless gateways, run the following command.
 
-   ```
+   ```JSON
    {
        "DefaultLogLevel":"DISABLED",
        "WirelessDeviceLogOptions": [],
@@ -176,7 +176,7 @@ The **get-log-levels-by-resource-types** command can't directly retrieve the log
 
    When you run the following command, it returns the latest logging information you specified with **update-log-levels-by-resource-types**. For example, if you remove the wireless device and FUOTA task log options, then running the **get-log-levels-by-resource-types** will return these values as `null`.
 
-   ```
+   ```JSON
    {
        "DefaultLogLevel": "INFO",
        "WirelessDeviceLogOptions": null,

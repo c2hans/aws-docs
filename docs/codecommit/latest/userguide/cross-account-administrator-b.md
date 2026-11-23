@@ -53,7 +53,7 @@ Now that you have a group, create the policy that allows members of this group t
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": {

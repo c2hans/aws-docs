@@ -37,7 +37,7 @@ To enable extra compute resources after creating a cluster:
 
 To create a provisioned cluster with extra compute resources for autonomics, use the `create-cluster` command with the `extra-compute-for-automatic-optimization` option.
 
-```
+```bash
 aws redshift create-cluster --cluster-identifier <value> \
 --node-type <value> \
 --cluster-type <value> \
@@ -49,7 +49,7 @@ aws redshift create-cluster --cluster-identifier <value> \
 
 To enable extra compute resources for autonomics on an existing provisioned cluster, use the `modify-cluster` command with the `extra-compute-for-automatic-optimization` option.
 
-```
+```bash
 aws redshift modify-cluster --cluster-identifier <value> \
 --extra-compute-for-automatic-optimization \
 --region <value>
@@ -57,7 +57,7 @@ aws redshift modify-cluster --cluster-identifier <value> \
 
 To disable extra compute resources for autonomics on an existing provisioned cluster, use the `modify-cluster` command with the `no-extra-compute-for-automatic-optimization` option.
 
-```
+```bash
 aws redshift modify-cluster --cluster-identifier <value> \
 --no-extra-compute-for-automatic-optimization \
 --region <value>
@@ -87,7 +87,7 @@ The **Edit autonomics configuration** option might be grayed out if the workgrou
 
 To create a serverless workgroup with extra compute resources allocated for autonomics, use the `create-workgroup` command with the `extra-compute-for-automatic-optimization` option.
 
-```
+```bash
 aws redshift-serverless create-workgroup --base-capacity <value> \
 --namespace-name <value> \
 --workgroup-name <value> \
@@ -97,7 +97,7 @@ aws redshift-serverless create-workgroup --base-capacity <value> \
 
 To enable extra compute resources for autonomics on an existing serverless workgroup, use the `update-workgroup` command with the `--extra-compute-for-automatic-optimization` option.
 
-```
+```bash
 aws redshift-serverless update-workgroup \
 --workgroup-name <value> \
 --extra-compute-for-automatic-optimization \
@@ -106,7 +106,7 @@ aws redshift-serverless update-workgroup \
 
 To disable extra compute resources for autonomics on an existing serverless workgroup, use the `update-workgroup` command with the `--no-extra-compute-for-automatic-optimization` option.
 
-```
+```bash
 aws redshift-serverless update-workgroup \
 --workgroup-name <value> \
 --no-extra-compute-for-automatic-optimization \
@@ -128,7 +128,7 @@ To create a usage limit for extra compute using the console:
 
 To create a usage limit for extra compute using the AWS CLI, use the `create-usage-limit` command with the feature type `extra-compute-for-automatic-optimization`. The `--limit-type` parameter must be set to `time` for this feature type.
 
-```
+```bash
 aws redshift create-usage-limit \
 --cluster-identifier <value> \
 --feature-type extra-compute-for-automatic-optimization \

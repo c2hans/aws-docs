@@ -22,7 +22,7 @@ You configure CDK stack synthesis using the `synthesizer` property of your [`Sta
 
 **Example**
 
-```
+```javascript
 new MyStack(this, 'MyStack', {
   // stack properties
   synthesizer: new DefaultStackSynthesizer({
@@ -31,7 +31,7 @@ new MyStack(this, 'MyStack', {
 });
 ```
 
-```
+```javascript
 new MyStack(this, 'MyStack', {
   // stack properties
   synthesizer: new DefaultStackSynthesizer({
@@ -40,7 +40,7 @@ new MyStack(this, 'MyStack', {
 });
 ```
 
-```
+```python
 MyStack(self, "MyStack",
     # stack properties
     synthesizer=DefaultStackSynthesizer(
@@ -48,7 +48,7 @@ MyStack(self, "MyStack",
 ))
 ```
 
-```
+```java
 new MyStack(app, "MyStack", StackProps.builder()
   // stack properties
   .synthesizer(DefaultStackSynthesizer.Builder.create()
@@ -58,7 +58,7 @@ new MyStack(app, "MyStack", StackProps.builder()
 )
 ```
 
-```
+```csharp
 new MyStack(app, "MyStack", new StackProps
 // stack properties
 {
@@ -69,7 +69,7 @@ new MyStack(app, "MyStack", new StackProps
 });
 ```
 
-```
+```go
 func main() {
   app := awscdk.NewApp(nil)
 
@@ -89,7 +89,7 @@ You can also configure a synthesizer for all CDK stacks in your CDK app using th
 
 **Example**
 
-```
+```javascript
 import { App, Stack, DefaultStackSynthesizer } from 'aws-cdk-lib';
 
 const app = new App({
@@ -100,7 +100,7 @@ const app = new App({
 });
 ```
 
-```
+```javascript
 const { App, Stack, DefaultStackSynthesizer } = require('aws-cdk-lib');
 
 const app = new App({
@@ -111,7 +111,7 @@ const app = new App({
 });
 ```
 
-```
+```python
 from aws_cdk import App, Stack, DefaultStackSynthesizer
 
 app = App(
@@ -122,7 +122,7 @@ app = App(
 )
 ```
 
-```
+```java
 import software.amazon.awscdk.App;
 import software.amazon.awscdk.Stack;
 import software.amazon.awscdk.DefaultStackSynthesizer;
@@ -138,7 +138,7 @@ public class Main {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.Synthesizers;
 
@@ -161,7 +161,7 @@ namespace MyNamespace
 }
 ```
 
-```
+```go
 package main
 
 import (
@@ -231,7 +231,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 ------
 #### [ TypeScript ]
 
-  ```
+  ```javascript
   import * as cdk from 'aws-cdk-lib';
   import { Construct} from 'constructs';
   import * as s3 from 'aws-cdk-lib/aws-s3';
@@ -252,7 +252,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 ------
 #### [ JavaScript ]
 
-  ```
+  ```javascript
   const cdk = require('aws-cdk-lib');
   const s3 = require('aws-cdk-lib/aws-s3');
 
@@ -274,7 +274,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 ------
 #### [ Python ]
 
-  ```
+  ```python
   import aws_cdk as cdk
   from constructs import Construct
   from aws_cdk import Stack
@@ -293,7 +293,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 ------
 #### [ Java ]
 
-  ```
+  ```java
   package com.myorg;
 
   import software.constructs.Construct;
@@ -322,7 +322,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 ------
 #### [ C\# ]
 
-  ```
+  ```csharp
   using Amazon.CDK;
   using Constructs;
   using Amazon.CDK.AWS.S3;
@@ -346,7 +346,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 ------
 #### [ Go ]
 
-  ```
+  ```go
   package main
 
   import (
@@ -382,7 +382,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 
   When we run `cdk synth`, a logical ID in the format of `myBucketunique-hash` gets generated. The following is an example of this resource in the generated AWS CloudFormation template:
 
-  ```
+  ```yaml
   Resources:
     myBucket5AF9C99B:
       Type: AWS::S3::Bucket
@@ -401,7 +401,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 ------
 #### [ TypeScript ]
 
-  ```
+  ```javascript
   import * as cdk from 'aws-cdk-lib';
   import { Construct } from 'constructs';
   import * as s3 from 'aws-cdk-lib/aws-s3';
@@ -443,7 +443,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 ------
 #### [ JavaScript ]
 
-  ```
+  ```javascript
   const cdk = require('aws-cdk-lib');
   const s3 = require('aws-cdk-lib/aws-s3');
   const { Construct } = require('constructs');
@@ -487,7 +487,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 ------
 #### [ Python ]
 
-  ```
+  ```python
   import aws_cdk as cdk
   from constructs import Construct
   from aws_cdk import (
@@ -529,7 +529,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 
   In `my-custom-app/src/main/java/com/myorg/Bar.java`:
 
-  ```
+  ```java
   package com.myorg;
 
   import software.constructs.Construct;
@@ -552,7 +552,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 
   In `my-custom-app/src/main/java/com/myorg/Foo.java`:
 
-  ```
+  ```java
   package com.myorg;
 
   import software.constructs.Construct;
@@ -569,7 +569,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 
   In `my-custom-app/src/main/java/com/myorg/MyCustomAppStack.java`:
 
-  ```
+  ```java
   package com.myorg;
 
   import software.constructs.Construct;
@@ -594,7 +594,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 ------
 #### [ C\# ]
 
-  ```
+  ```csharp
   using Amazon.CDK;
   using Constructs;
   using Amazon.CDK.AWS.S3;
@@ -640,7 +640,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 ------
 #### [ Go ]
 
-  ```
+  ```go
   package main
 
   import (
@@ -711,7 +711,7 @@ When you synthesize a CDK stack to produce a CloudFormation template, logical ID
 
   When we run `cdk synth`, a logical ID in the format of `FooBarBucketunique-hash` gets generated. The following is an example of this resource in the generated AWS CloudFormation template:
 
-  ```
+  ```yaml
   Resources:
     FooBarBucketBA3ED1FA:
       Type: AWS::S3::Bucket

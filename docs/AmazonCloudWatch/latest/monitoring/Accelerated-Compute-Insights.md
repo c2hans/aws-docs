@@ -25,16 +25,30 @@ To use Accelerated Compute Insights, you need the following:
 + An Amazon EKS cluster that runs your inference workloads on accelerated compute nodes, such as NVIDIA GPU nodes
 + The `amazon-cloudwatch-observability` Amazon EKS add-on, version `v7.0.0-eksbuild.1` or later, with OTel Container Insights enabled on the cluster
 
-For the add-on setup steps, see [Quick start: OTel Container Insights on Amazon EKS](container-insights-eks-otel-quickstart.md). For more information about the Accelerated Compute Insights prerequisites, see [Get started with Accelerated Compute Insights](Accelerated-Compute-Insights-Get-Started.md).
+For the add-on setup steps, see [OTel Container Insights quick start](container-insights-eks-otel-quickstart.md). For more information about the Accelerated Compute Insights prerequisites, see [Get started with Accelerated Compute Insights](Accelerated-Compute-Insights-Get-Started.md).
 
 ## Key capabilities
 <a name="Accelerated-Compute-Insights-capabilities"></a>
 
 Accelerated Compute Insights provides the following capabilities for your inference workloads:
-+ **NVIDIA GPU telemetry** – The DCGM exporter provides `DCGM_FI_DEV_*` metrics, which cover utilization, framebuffer memory, temperature, and power, and `DCGM_FI_PROF_*` profiling metrics.
-+ **No per-accelerator configuration** – Accelerator collection needs no configuration flags. A GPU node reports GPU metrics automatically.
-+ **Multi-account and multi-Region views** – With CloudWatch cross-account observability set up, you can see accelerated compute across your source accounts and Regions from one monitoring account. For how to set that up, see [CloudWatch cross-account observability](CloudWatch-Unified-Cross-Account.md).
-+ **Curated views** – Three built-in views: **Overview** for fleet health and utilization, **Workloads** for metrics grouped by inference workload, and **Accelerators** for node-level accelerator metrics.
+
+NVIDIA GPU telemetry
+With the DCGM exporter, you get `DCGM_FI_DEV_*` metrics, which cover utilization, framebuffer memory, temperature, and power, and `DCGM_FI_PROF_*` profiling metrics.
+
+Inference engine metrics
+The vLLM, SGLang, and Ray solutions of OTel Container Insights collect the metrics of your model servers, including the engine metrics of Ray Serve LLM. The SGLang and Ray solutions need add-on version 8.0.0 or later. For more information, see [Solutions](container-insights-eks-otel-solutions.md).
+
+DRA correlation
+On clusters that allocate devices with Kubernetes Dynamic Resource Allocation (DRA), the add-on attributes device metrics to the pods that use them. For more information, see [Correlating DRA-allocated devices to pods with OTel Container Insights](container-insights-eks-otel-dra.md).
+
+No per-accelerator configuration
+Accelerator collection needs no configuration flags. A GPU node reports GPU metrics automatically.
+
+Multi-account and multi-Region views
+With CloudWatch cross-account observability set up, you can see accelerated compute across your source accounts and Regions from one monitoring account. For how to set that up, see [CloudWatch cross-account observability](CloudWatch-Unified-Cross-Account.md).
+
+Curated views
+Three built-in views: **Overview** for fleet health and utilization, **Workloads** for metrics grouped by inference workload, and **Accelerators** for node-level accelerator metrics.
 
 ## Query your accelerator metrics
 <a name="Accelerated-Compute-Insights-query"></a>

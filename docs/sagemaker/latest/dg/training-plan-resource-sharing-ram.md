@@ -57,7 +57,7 @@ You can share a training plan that you own using the AWS RAM console or the AWS 
 
 Use the [create-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html) command. The following AWS CLI command shares a training plan with one AWS account in your organization. Replace the example values with your own:
 
-```
+```sh
 aws ram create-resource-share \
   --name {{my-training-plan-share}} \
   --resource-arns {{arn:aws:sagemaker:us-west-2:111122223333:training-plan/my-training-plan}} \
@@ -97,7 +97,7 @@ Remove the training plan from the resource share. For more information, see [Upd
 
 Use the [disassociate-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/disassociate-resource-share.html) command. The following AWS CLI command removes a training plan from a resource share. Replace the example values with your own:
 
-```
+```sh
 aws ram disassociate-resource-share \
   --resource-share-arn {{arn:aws:ram:us-west-2:111122223333:resource-share/my-training-plan-share}} \
   --resource-arns {{arn:aws:sagemaker:us-west-2:111122223333:training-plan/my-training-plan}} \
@@ -128,7 +128,7 @@ Use the [list-training-plans](https://docs.aws.amazon.com/cli/latest/reference/s
 
 To describe or use a shared training plan, specify its full ARN. A training plan name on its own refers to a plan in your own account. The following command describes a shared training plan:
 
-```
+```sh
 aws sagemaker describe-training-plan \
   --training-plan-name {{arn:aws:sagemaker:us-west-2:111122223333:training-plan/my-training-plan}}
 ```
@@ -140,7 +140,7 @@ aws sagemaker describe-training-plan \
 
 Principals in the consumer account need IAM permission for each action that they call, on the shared training plan's ARN. A policy that allows the action on all resources (`"*"`) already does this. A policy that limits the action to resources in the consumer account doesn't, so add the training plan's ARN to it. The following example policy allows a principal in the consumer account to create training jobs that use a shared training plan:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

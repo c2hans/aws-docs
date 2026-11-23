@@ -35,6 +35,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 
 ![Reference architecture: Hybrid deployment](https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/images/image4.png)
 
+*Reference architecture: Hybrid deployment*
+
  **Workflow steps**
 
 1.  User logs on to the Login Node or HPC Management Portal and submits a job through the mechanism available (for example, scheduler, meta-scheduler, or commercial job submission portals).

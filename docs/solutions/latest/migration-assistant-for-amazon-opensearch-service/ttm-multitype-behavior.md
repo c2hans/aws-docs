@@ -18,7 +18,7 @@ Migration Assistant applies the union strategy by default for any Elasticsearch 
 
 After editing the configuration, resubmit the workflow:
 
-```
+```bash
 workflow configure edit
 workflow submit
 workflow manage

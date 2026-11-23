@@ -216,7 +216,7 @@ This is a sample resource policy used to configure cross-VPC access:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -63,7 +63,7 @@ Some workloads are read-heavy and access the block device through the operating 
 
 To examine the current value of read-ahead for your block devices, use the following command:
 
-```
+```bash
 $ sudo blockdev --report /dev/{{<device>}}
 ```
 
@@ -76,7 +76,7 @@ rw   256   512  4096       4096      8587820544   /dev/<device>
 
 The device shown reports a read-ahead value of 256 (the default). Multiply this number by the sector size (512 bytes) to obtain the size of the read-ahead buffer, which in this case is 128 KiB. To set the buffer value to 1 MiB, use the following command:
 
-```
+```bash
 $ sudo blockdev --setra 2048 /dev/{{<device>}}
 ```
 

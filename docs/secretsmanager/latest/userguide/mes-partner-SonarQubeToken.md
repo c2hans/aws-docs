@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "token": "{{token value}}",
   "tokenName": "{{token name}}",
@@ -43,7 +43,7 @@ projectKey
 
 The following are the metadata fields for SonarQube Token:
 
-```
+```json
 {
   "adminSecretArn": "arn:aws:secretsmanager:us-east-1:111122223333:secret:{{SonarQubeAdmin}}"
 }

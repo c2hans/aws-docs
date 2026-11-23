@@ -39,7 +39,7 @@ Two principals need permissions on the key:
 
 Specify `encrypted` and `kmsKeyId` in the volume’s `ebsConfiguration` when you create the capacity provider:
 
-```
+```bash
 aws bedrock-agentcore-control create-capacity-provider \
   --name "my-encrypted-capacity-provider" \
   --permissions-configuration '{"capacityProviderOperatorRoleArn": "arn:aws:iam::111122223333:role/CapacityProviderOperatorRole"}' \

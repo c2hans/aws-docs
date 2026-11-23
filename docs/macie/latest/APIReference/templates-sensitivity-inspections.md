@@ -52,7 +52,7 @@ Retrieves a subset of information about the sensitivity inspection template for 
 #### ListSensitivityInspectionTemplatesResponse schema
 <a name="templates-sensitivity-inspections-response-body-listsensitivityinspectiontemplatesresponse-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "sensitivityInspectionTemplates": [
@@ -67,7 +67,7 @@ Retrieves a subset of information about the sensitivity inspection template for 
 #### ValidationException schema
 <a name="templates-sensitivity-inspections-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -76,7 +76,7 @@ Retrieves a subset of information about the sensitivity inspection template for 
 #### ServiceQuotaExceededException schema
 <a name="templates-sensitivity-inspections-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -85,7 +85,7 @@ Retrieves a subset of information about the sensitivity inspection template for 
 #### AccessDeniedException schema
 <a name="templates-sensitivity-inspections-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -94,7 +94,7 @@ Retrieves a subset of information about the sensitivity inspection template for 
 #### ThrottlingException schema
 <a name="templates-sensitivity-inspections-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -103,7 +103,7 @@ Retrieves a subset of information about the sensitivity inspection template for 
 #### InternalServerException schema
 <a name="templates-sensitivity-inspections-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

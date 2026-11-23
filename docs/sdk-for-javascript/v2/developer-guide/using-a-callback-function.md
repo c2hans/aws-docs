@@ -8,7 +8,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 
 Each service object method that creates an `AWS.Request` object can accept an anonymous callback function as the last parameter. The signature of this callback function is:
 
-```
+```javascript
 function(error, data) {
     // callback handling code
 }
@@ -18,7 +18,7 @@ This callback function executes when either a successful response or error data 
 
 Typically the code inside the callback function tests for an error, which it processes if one is returned. If an error is not returned, the code then retrieves the data in the response from the `data` parameter. The basic form of the callback function looks like this example.
 
-```
+```javascript
 function(error, data) {
     if (error) {
         // error handling code
@@ -32,7 +32,7 @@ function(error, data) {
 
 In the previous example, the details of either the error or the returned data are logged to the console. Here is an example that shows a callback function passed as part of calling a method on a service object.
 
-```
+```javascript
 new AWS.EC2({apiVersion: '2014-10-01'}).describeInstances(function(error, data) {
   if (error) {
     console.log(error); // an error occurred
@@ -47,7 +47,7 @@ new AWS.EC2({apiVersion: '2014-10-01'}).describeInstances(function(error, data) 
 
 Within the callback function, the JavaScript keyword `this` refers to the underlying `AWS.Response` object for most services. In the following example, the `httpResponse` property of an `AWS.Response` object is used within a callback function to log the raw response data and headers to help with debugging.
 
-```
+```javascript
 new AWS.EC2({apiVersion: '2014-10-01'}).describeInstances(function(error, data) {
   if (error) {
     console.log(error); // an error occurred

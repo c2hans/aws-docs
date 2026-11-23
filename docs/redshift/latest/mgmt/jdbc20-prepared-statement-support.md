@@ -14,7 +14,7 @@ For more information about prepared statements, see "Using Prepared Statements" 
 
 You can prepare a statement that contains multiple queries. For example, the following prepared statement contains two INSERT queries:
 
-```
+```sql
 PreparedStatement pstmt = conn.prepareStatement("INSERT INTO
 MyTable VALUES (1, 'abc'); INSERT INTO CompanyTable VALUES
 (1, 'abc');");
@@ -24,7 +24,7 @@ Take care that these queries don't depend on the results of other queries that a
 
 For example, the following prepared statement, which creates a table and then inserts values into that newly-created table, is not allowed:
 
-```
+```sql
 PreparedStatement pstmt = conn.prepareStatement("CREATE
 TABLE MyTable(col1 int, col2 varchar); INSERT INTO myTable
 VALUES (1, 'abc');");

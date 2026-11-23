@@ -31,7 +31,7 @@ The following shows the contents of the JSON file.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -69,7 +69,7 @@ The following steps show how you create the Lambda function and then a topic rul
    **Contents of lambda-trust-policy.json**
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -94,7 +94,7 @@ The following steps show how you create the Lambda function and then a topic rul
 
       **Contents of base64\_decode.py**
 
-      ```
+      ```python
       // -----------------------------------------------------------
       // ----- Python script to decode incoming binary payload -----
       // -----------------------------------------------------------
@@ -159,7 +159,7 @@ The following steps show how you create the Lambda function and then a topic rul
 
    You can use the `myrule.json` file to specify more details about the rule. For example, the following JSON file shows how to republish to an AWS IoT topic and send a message to a Lambda function.
 
-   ```
+   ```JSON
    {
        "sql": "SELECT * ",
        "actions": [

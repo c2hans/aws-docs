@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Check the availability of a domain name.
     /// </summary>
@@ -70,7 +70,7 @@ For a list of the TLDs that you can use when registering a domain with Route 53,
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
     public static void checkDomainAvailability(Route53DomainsClient route53DomainsClient, String domainSuggestion) {
         try {
             CheckDomainAvailabilityRequest availabilityRequest = CheckDomainAvailabilityRequest.builder()
@@ -95,7 +95,7 @@ For a list of the TLDs that you can use when registering a domain with Route 53,
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 suspend fun checkDomainAvailability(domainSuggestion: String) {
     val availabilityRequest =
         CheckDomainAvailabilityRequest {

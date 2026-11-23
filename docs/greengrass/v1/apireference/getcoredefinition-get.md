@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="getcoredefinition-get-cli"></a>
 
-```
+```bash
 aws greengrass get-core-definition \
   --core-definition-id <value>  \
   [--cli-input-json <value>] \
@@ -24,7 +24,7 @@ aws greengrass get-core-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "CoreDefinitionId": "string"
 }
@@ -45,7 +45,7 @@ type: string
 
  [ DefinitionInformation](definitions-definitioninformation.md)
 
-```
+```json
 {
 "Name": "string",
 "Id": "string",
@@ -94,7 +94,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

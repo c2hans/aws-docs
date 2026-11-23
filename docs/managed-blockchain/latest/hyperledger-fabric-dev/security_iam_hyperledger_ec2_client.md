@@ -25,7 +25,7 @@ For more information, see [IAM roles for Amazon EC2](https://docs.aws.amazon.com
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

@@ -11,7 +11,7 @@ The following examples provide sample code for various multi-shot (longer than 6
 
 In this example, all shots in the video are generated from a single prompt and no input image is provided.
 
-```
+```Python
 import json
 import os
 

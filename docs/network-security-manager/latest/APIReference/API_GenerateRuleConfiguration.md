@@ -56,7 +56,7 @@ Required: Yes
  ** [ruleFirewallType](#API_GenerateRuleConfiguration_RequestSyntax) **   <a name="networksecuritymanager-GenerateRuleConfiguration-request-ruleFirewallType"></a>
 The firewall type of the rule.
 Type: String
-Valid Values: `WAF`
+Valid Values: `WAF | IGW_FIREWALL`
 Required: Yes
 
  ** [ruleType](#API_GenerateRuleConfiguration_RequestSyntax) **   <a name="networksecuritymanager-GenerateRuleConfiguration-request-ruleType"></a>

@@ -45,7 +45,7 @@ The detail section also includes a `mediaInsightsPipelineElementStatuses` field 
 
 This example shows a typical event structure.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -75,7 +75,7 @@ This example shows a typical event structure.
 
 This example shows a typical event structure.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -104,7 +104,7 @@ This example shows a typical event structure.
 
 This example shows a typical event structure.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -135,7 +135,7 @@ Indicates that the service encountered a temporary failure and will attempt to r
 
 This example shows a typical event structure.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -170,7 +170,7 @@ Indicates a failure that requires action from you. Use the `failureReason` to tr
 
 This example shows a typical event structure.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -205,7 +205,7 @@ The following event types may appear whenever a media insights pipeline is creat
 
 This example shows a typical success event.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -236,7 +236,7 @@ This example shows a typical success event.
 
 This example shows a typical failure event.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -271,7 +271,7 @@ The following event types may appear when a media insights pipeline contains mul
 
 This example shows a typical event structure.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -312,7 +312,7 @@ This example shows a typical event structure.
 
 This example shows a typical event structure.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -353,7 +353,7 @@ This example shows a typical event structure.
 
 This example shows a typical event structure.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -394,7 +394,7 @@ This example shows a typical event structure.
 
 This example shows a typical event structure.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -436,7 +436,7 @@ This example shows a typical event structure.
 
 This example shows a typical event structure.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -478,7 +478,7 @@ This example shows a typical event structure.
 
 This example shows a typical event structure.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -519,7 +519,7 @@ This example shows a typical event structure.
 
 This example shows a typical event structure.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -560,7 +560,7 @@ This example shows a typical event structure.
 
 This example shows a typical event structure.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",
@@ -601,7 +601,7 @@ This example shows a typical event structure.
 
 This example shows a typical event structure.
 
-```
+```json
 {
   "version": "0",
   "id": "{{string}}",
@@ -635,7 +635,7 @@ This example shows a typical event structure.
 
 This example shows a typical event structure.
 
-```
+```json
 {
   "version": "0",
   "id": "{{string}}",
@@ -670,7 +670,7 @@ This example shows a typical event structure.
 
 This example shows a typical event structure.
 
-```
+```json
 {
   "version": "0",
   "id": "{{string}}",
@@ -711,7 +711,7 @@ Only Amazon Transcribe and Amazon Transcribe Call Analytics processors support r
 
  This example shows how to create or update a real-time alert configuration through the API.
 
-```
+```json
 {
     "MediaInsightsPipelineConfigurationName": "config_name",
     "ResourceAccessRoleArn": "arn:aws:iam::{{account_id}}:role/{{role_name"}},
@@ -772,7 +772,7 @@ Alerts when an issue is detected in an utterance event. Only Transcribe Call Ana
 
 The following example shows a real-time alert event for a `KeywordMatch` rule.
 
-```
+```json
 {
     "version": "0",
     "id": "{{string}}",

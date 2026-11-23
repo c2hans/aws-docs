@@ -583,7 +583,7 @@ Parameters with the `ApplyType` of `static` must have an `ApplyMethod` of `pendi
 
    Output from this operation looks something like the following (JSON format).
 
-   ```
+   ```json
    {
        "DBClusterParameterGroupName": "sample-parameter-group"
    }
@@ -609,7 +609,7 @@ Parameters with the `ApplyType` of `static` must have an `ApplyMethod` of `pendi
 
    Output from this operation looks something like the following (JSON format).
 
-   ```
+   ```json
    {
        "Parameters": [
            {

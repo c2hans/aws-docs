@@ -21,7 +21,7 @@ The following code example shows the AWSDMSFleetAdvisorServiceRolePolicy policy 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

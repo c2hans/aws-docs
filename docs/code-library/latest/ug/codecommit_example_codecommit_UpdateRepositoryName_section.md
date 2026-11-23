@@ -30,7 +30,7 @@ For more information, see [Change AWS CodeCommit repository settings](https://do
 **Tools for PowerShell V4**
 **Example 1: This example changes the name of the specified repository.**
 
-```
+```powershell
 Update-CCRepositoryName -NewName MyDemoRepo2 -OldName MyDemoRepo
 ```
 +  For API details, see [UpdateRepositoryName](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -38,7 +38,7 @@ Update-CCRepositoryName -NewName MyDemoRepo2 -OldName MyDemoRepo
 **Tools for PowerShell V5**
 **Example 1: This example changes the name of the specified repository.**
 
-```
+```powershell
 Update-CCRepositoryName -NewName MyDemoRepo2 -OldName MyDemoRepo
 ```
 +  For API details, see [UpdateRepositoryName](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

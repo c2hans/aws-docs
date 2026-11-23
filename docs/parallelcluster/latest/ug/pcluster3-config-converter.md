@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Reads a AWS ParallelCluster version 2 configuration file and writes a AWS ParallelCluster version 3 configuration file.
 
-```
+```sh
 pcluster3-config-converter [-h]
                 [-t CLUSTER_TEMPLATE]
                 [-c CONFIG_FILE]

@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Specifies global configuration options related to `pcluster`.
 
-```
+```ini
 [global]
 ```
 
@@ -24,7 +24,7 @@ Defines the name of the `cluster` section that's used for the cluster by default
 
 For example, the following setting specifies that the section that starts `[cluster default]` is used by default.
 
-```
+```ini
 cluster_template = default
 ```
 
@@ -37,7 +37,7 @@ cluster_template = default
 
 The default value is `true`.
 
-```
+```ini
 update_check = true
 ```
 
@@ -53,7 +53,7 @@ The default value is `true`.
 **Warning**
 If `sanity_check` is set to `false`, important checks are skipped. This might cause your configuration to not function as intended.
 
-```
+```ini
 sanity_check = true
 ```
 

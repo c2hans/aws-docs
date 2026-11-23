@@ -25,7 +25,7 @@ Endpoints provide a way to reference specific versions of your harness:
 
 **Example**
 
-```
+```python
 import boto3
 
 control_client = boto3.client('bedrock-agentcore-control', region_name='us-west-2')
@@ -41,7 +41,7 @@ print(response)
 ```
 Or with the AWS CLI:
 
-```
+```bash
 aws bedrock-agentcore-control update-harness-endpoint \
   --harness-id "MyHarness-UuFdkQoXSL" \
   --endpoint-name "production-endpoint" \
@@ -49,7 +49,7 @@ aws bedrock-agentcore-control update-harness-endpoint \
   --description "Updated production endpoint"
 ```
 
-```
+```bash
 agentcore harness endpoint update \
   --id MyHarness-UuFdkQoXSL \
   --qualifier production-endpoint \
@@ -98,7 +98,7 @@ Create a named endpoint to pin an environment to a specific harness version. If 
 
 **Example**
 
-```
+```python
 import boto3
 
 control_client = boto3.client('bedrock-agentcore-control', region_name='us-west-2')
@@ -114,7 +114,7 @@ print(response)
 ```
 Or with the AWS CLI:
 
-```
+```bash
 aws bedrock-agentcore-control create-harness-endpoint \
   --harness-id "MyHarness-UuFdkQoXSL" \
   --endpoint-name "production-endpoint" \
@@ -122,7 +122,7 @@ aws bedrock-agentcore-control create-harness-endpoint \
   --description "Production endpoint pinned to V2"
 ```
 
-```
+```bash
 agentcore harness endpoint create \
   --id MyHarness-UuFdkQoXSL \
   --name production-endpoint \
@@ -137,7 +137,7 @@ You can list all versions of a harness by calling the `ListHarnessVersions` oper
 
 **Example**
 
-```
+```python
 import boto3
 
 control_client = boto3.client('bedrock-agentcore-control', region_name='us-west-2')
@@ -158,7 +158,7 @@ for endpoint in endpoints['endpoints']:
 ```
 Or with the AWS CLI:
 
-```
+```bash
 aws bedrock-agentcore-control list-harness-versions \
   --harness-id "MyHarness-UuFdkQoXSL"
 
@@ -168,7 +168,7 @@ aws bedrock-agentcore-control list-harness-endpoints \
 Both operations support pagination through `maxResults` and `nextToken`. To retrieve the configuration of a single endpoint, call `GetHarnessEndpoint`; to remove one, call `DeleteHarnessEndpoint`.
 These resource commands work without an AgentCore project:
 
-```
+```bash
 agentcore harness version list --id MyHarness-UuFdkQoXSL
 agentcore harness endpoint list --id MyHarness-UuFdkQoXSL
 
@@ -182,7 +182,7 @@ agentcore harness endpoint get \
 ```
 The list commands accept `--max-results` and `--next-token` for pagination. To remove a named endpoint:
 
-```
+```bash
 agentcore harness endpoint delete \
   --id MyHarness-UuFdkQoXSL \
   --qualifier production-endpoint

@@ -24,7 +24,7 @@ To use programmatic execution with EMR Notebooks, you must configure user permis
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -63,7 +63,7 @@ When you programmatically execute EMR Notebooks on an EMR Notebooks cluster, you
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

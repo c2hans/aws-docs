@@ -79,7 +79,7 @@ aws memorydb create-parameter-group ^
 ```
 The output from this command should look something like this.
 
-```
+```json
 {
     "ParameterGroup": {
         "Name": "myRedis6x",

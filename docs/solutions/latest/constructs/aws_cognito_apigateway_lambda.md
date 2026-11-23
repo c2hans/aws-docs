@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { CognitoToApiGatewayToLambda } from '@aws-solutions-constructs/aws-cognito-apigateway-lambda';
@@ -40,7 +40,7 @@ new CognitoToApiGatewayToLambda(this, 'test-cognito-apigateway-lambda', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_cognito_apigateway_lambda import CognitoToApiGatewayToLambda
 from aws_cdk import (
     aws_lambda as _lambda,
@@ -57,7 +57,7 @@ CognitoToApiGatewayToLambda(self, 'test-cognito-apigateway-lambda',
                             )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;
@@ -80,7 +80,7 @@ If you are defining resources and methods on your API (e.g. proxy = false), the
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { CognitoToApiGatewayToLambda } from '@aws-solutions-constructs/aws-cognito-apigateway-lambda';
@@ -104,7 +104,7 @@ resource.addMethod('POST');
 construct.addAuthorizers();
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_cognito_apigateway_lambda import CognitoToApiGatewayToLambda
 from aws_cdk import (
     aws_lambda as _lambda,
@@ -136,7 +136,7 @@ resource.add_method('POST')
 construct.add_authorizers()
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import java.util.HashMap;

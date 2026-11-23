@@ -180,7 +180,7 @@ This example updates the specified user's nickname to Johnny and the user name t
 #### Sample Request
 <a name="API_UpdateUser_Example_1_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -201,7 +201,7 @@ This example updates the specified user's nickname to Johnny and the user name t
 #### Sample Response
 <a name="API_UpdateUser_Example_1_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -218,7 +218,7 @@ This example updates the family name of the specified user to Smith. If you omit
 #### Sample Request
 <a name="API_UpdateUser_Example_2_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -234,7 +234,7 @@ This example updates the family name of the specified user to Smith. If you omit
 #### Sample Response
 <a name="API_UpdateUser_Example_2_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -251,7 +251,7 @@ This example updates the phone number for the specified user.
 #### Sample Request
 <a name="API_UpdateUser_Example_3_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -273,7 +273,7 @@ This example updates the phone number for the specified user.
 #### Sample Response
 <a name="API_UpdateUser_Example_3_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -290,7 +290,7 @@ This example replaces all attributes in `aws:identitystore:enterprise` extension
 #### Sample Request
 <a name="API_UpdateUser_Example_4_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -309,7 +309,7 @@ This example replaces all attributes in `aws:identitystore:enterprise` extension
 #### Sample Response
 <a name="API_UpdateUser_Example_4_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -326,7 +326,7 @@ This example replaces only `department` in `aws:identitystore:enterprise` extens
 #### Sample Request
 <a name="API_UpdateUser_Example_5_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -342,7 +342,7 @@ This example replaces only `department` in `aws:identitystore:enterprise` extens
 #### Sample Response
 <a name="API_UpdateUser_Example_5_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",

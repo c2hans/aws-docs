@@ -73,7 +73,7 @@ Consider a scenario where an employee from the legal department of a company nee
 
 **Claims**
 
-```
+```json
 {
             "...": "other claims",
             "sub" : "57e7b692-4f66-480d-98b8-45a6729b4c88",
@@ -96,7 +96,7 @@ The following permissions policy does two things:
 
 ****
 
-```
+```json
    {
     "Version":"2012-10-17",
     "Statement": [
@@ -130,7 +130,7 @@ The trust policy determines who can assume this role. The trust relationship pol
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

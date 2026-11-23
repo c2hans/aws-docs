@@ -72,7 +72,7 @@ If you plan to enable multiple logs, we recommend publishing each to its own log
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -97,7 +97,7 @@ If you plan to enable multiple logs, we recommend publishing each to its own log
 
    For example, you could add the following condition block to the policy:
 
-   ```
+   ```json
    "Condition": {
        "StringEquals": {
            "aws:SourceAccount": "{{account-id}}"
@@ -190,7 +190,7 @@ In this example, we use CloudFormation to create a log group called `opensearch-
 
 Before you can enable log publishing, you need to create a CloudWatch log group:
 
-```
+```yaml
 Resources:
   OpenSearchLogGroup:
     Type: AWS::Logs::LogGroup
@@ -208,7 +208,7 @@ The template outputs the ARN of the log group. In this case, the ARN is `arn:aws
 
 Using the ARN, create a resource policy that gives OpenSearch Service permissions to write to the log group:
 
-```
+```yaml
 Resources:
  OpenSearchLogPolicy:
    Type: AWS::Logs::ResourcePolicy
@@ -219,7 +219,7 @@ Resources:
 
 Finally, create the following CloudFormation stack, which generates an OpenSearch Service domain with log publishing. The access policy permits the user for the AWS account to make all HTTP requests to the domain.
 
-```
+```yaml
 Resources:
   OpenSearchServiceDomain:
     Type: "AWS::OpenSearchService::Domain"

@@ -69,7 +69,7 @@ For more information, see [Managing AWS resources as a single unit with CloudFor
 **Tools for PowerShell V4**
 **Example 1: Returns descriptions of all the resources associated with the specified stack.**
 
-```
+```powershell
 Get-CFNStackResourceSummary -StackName "myStack"
 ```
 +  For API details, see [ListStackResources](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -77,7 +77,7 @@ Get-CFNStackResourceSummary -StackName "myStack"
 **Tools for PowerShell V5**
 **Example 1: Returns descriptions of all the resources associated with the specified stack.**
 
-```
+```powershell
 Get-CFNStackResourceSummary -StackName "myStack"
 ```
 +  For API details, see [ListStackResources](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

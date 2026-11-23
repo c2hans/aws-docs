@@ -14,7 +14,7 @@ The following code examples show how to use `PutBucketAccelerateConfiguration`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.S3;
@@ -102,7 +102,7 @@ For more information, see [Configuring fast, secure file transfers using Amazon 
 **Tools for PowerShell V4**
 **Example 1: This command enables the transfer acceleration for the given S3 bucket.**
 
-```
+```powershell
 $statusVal = New-Object Amazon.S3.BucketAccelerateStatus('Enabled')
 Write-S3BucketAccelerateConfiguration -BucketName 'amzn-s3-demo-bucket' -AccelerateConfiguration_Status $statusVal
 ```
@@ -111,7 +111,7 @@ Write-S3BucketAccelerateConfiguration -BucketName 'amzn-s3-demo-bucket' -Acceler
 **Tools for PowerShell V5**
 **Example 1: This command enables the transfer acceleration for the given S3 bucket.**
 
-```
+```powershell
 $statusVal = New-Object Amazon.S3.BucketAccelerateStatus('Enabled')
 Write-S3BucketAccelerateConfiguration -BucketName 'amzn-s3-demo-bucket' -AccelerateConfiguration_Status $statusVal
 ```

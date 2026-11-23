@@ -33,7 +33,7 @@ To use instance pools, you replace the `InstanceType` parameter in your producti
 
 The following example creates an endpoint configuration with two instance pools. If `ml.g6.2xlarge` instances are unavailable, SageMaker AI falls back to `ml.g6e.2xlarge`.
 
-```
+```python
 import boto3
 
 sagemaker_client = boto3.client("sagemaker")
@@ -79,7 +79,7 @@ When you use inference components with instance pools, you have two options for 
 
 The following example creates an inference component with per-instance-type specifications:
 
-```
+```python
 sagemaker_client.create_inference_component(
     InferenceComponentName="my-ic",
     EndpointName="my-heterog-endpoint",
@@ -165,7 +165,7 @@ When your instance pools contain instance types with different compute capacitie
 
 The following example creates a target tracking policy that uses a weighted average of `ConcurrentRequestsPerModel` across two instance types. The weights determine how sensitive the scaling policy is to each type's load:
 
-```
+```python
 import boto3
 
 aas_client = boto3.client("application-autoscaling")

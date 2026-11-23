@@ -16,7 +16,7 @@ Verifying the signature of an Amazon SNS message when using HTTP query-based req
 
    For example:
 
-   ```
+   ```bash
    MESSAGE_FILE="message.json"
    FIELDS=("Message" "MessageId" "Subject" "Timestamp" "TopicArn" "Type")
    ```
@@ -25,7 +25,7 @@ If any field contains escaped characters (for example, `\n`), convert them to th
 
 1. Locate the `SigningCertURL` field in the Amazon SNS message. This certificate contains the public key needed to verify the message signature. For example:
 
-   ```
+   ```bash
    SIGNING_CERT_URL=$(jq -r '.SigningCertURL' "$MESSAGE_FILE")
    ```
 
@@ -33,13 +33,13 @@ If any field contains escaped characters (for example, `\n`), convert them to th
 
 1. Download the **X.509 certificate **from the provided URL. For example:
 
-   ```
+   ```bash
    curl -s "$SIGNING_CERT_URL" -o signing_cert.pem
    ```
 
 1. Extract the **public key** from the downloaded X.509 certificate. The public key allows you to decrypt the message's signature and verify its integrity. For example:
 
-   ```
+   ```bash
    openssl x509 -pubkey -noout -in signing_cert.pem > public_key.pem
    ```
 
@@ -49,7 +49,7 @@ If any field contains escaped characters (for example, `\n`), convert them to th
 
 1. Amazon SNS requires the string to sign to follow a strict, fixed field order for verification. **Only the explicitly required fields must be included**—no extra fields can be added. Optional fields, such as `Subject`, must be included only if present in the message and must appear in the exact position defined by the required field order. For example:
 
-   ```
+   ```bash
    KeyNameOne\nValueOne\nKeyNameTwo\nValueTwo\n
    ```
 **Important**
@@ -60,7 +60,7 @@ The example scripts on this page add the trailing newline for you. The shell `ec
 
 1. Construct the **string to sign **using the following format example:
 
-   ```
+   ```bash
    STRING_TO_SIGN=""
    for FIELD in "${FIELDS[@]}"; do
        VALUE=$(jq -r --arg field "$FIELD" '.[$field]' "$MESSAGE_FILE")
@@ -74,7 +74,7 @@ The example scripts on this page add the trailing newline for you. The shell `ec
 
    **Notification message example:**
 
-   ```
+   ```ruby
    Message
    My Test Message
    MessageId
@@ -91,7 +91,7 @@ The example scripts on this page add the trailing newline for you. The shell `ec
 
    **SubscriptionConfirmation example:**
 
-   ```
+   ```makefile
    Message
    Please confirm your subscription
    MessageId
@@ -110,7 +110,7 @@ The example scripts on this page add the trailing newline for you. The shell `ec
 
 1. The `Signature` field in the message is Base64-encoded. You need to **decode** it to compare its **raw binary form** with the **derived hash**. For example:
 
-   ```
+   ```bash
    SIGNATURE=$(jq -r '.Signature' "$MESSAGE_FILE")
    echo "$SIGNATURE" | base64 -d > signature.bin
    ```
@@ -121,7 +121,7 @@ The example scripts on this page add the trailing newline for you. The shell `ec
 
 1. To confirm the authenticity of the Amazon SNS message, generate a **hash** of the constructed string and verify the signature using the **public key**.
 
-   ```
+   ```bash
    openssl dgst -sha256 -verify public_key.pem -signature signature.bin <<< "$STRING_TO_SIGN"
    ```
 
@@ -132,7 +132,7 @@ The example scripts on this page add the trailing newline for you. The shell `ec
 
 The following example script automates the verification process:
 
-```
+```bash
 #!/bin/bash
 
 # Path to the local message file

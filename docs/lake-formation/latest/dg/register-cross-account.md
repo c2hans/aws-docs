@@ -42,7 +42,7 @@ The following procedure assumes that a principal in account 1111-2222-3333, whic
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

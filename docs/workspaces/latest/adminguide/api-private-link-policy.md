@@ -16,7 +16,7 @@ VPC endpoint policies aren't supported for Federal Information Processing Standa
 
 The following example VPC endpoint policy specifies that all users who have access to the VPC interface endpoint are allowed to invoke the Amazon WorkSpaces hosted endpoint named `ws-f9abcdefg`.
 
-```
+```json
 {
      "Statement": [
          {

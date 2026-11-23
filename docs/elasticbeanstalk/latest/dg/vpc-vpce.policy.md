@@ -96,7 +96,7 @@ We recommend that you avoid using wildcard characters (\*) in place of specific 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -157,7 +157,7 @@ We recommend that you avoid using wildcard characters (\*) in place of specific 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -211,7 +211,7 @@ We recommend that you avoid using wildcard characters (\*) in place of specific 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -266,7 +266,7 @@ The following example illustrates how to provide access to an S3 bucket with the
 
 ****
 
-```
+```json
   {
   "Version":"2012-10-17",
   "Statement": [
@@ -303,7 +303,7 @@ We recommend that you avoid using wildcard characters (\*) in place of specific 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

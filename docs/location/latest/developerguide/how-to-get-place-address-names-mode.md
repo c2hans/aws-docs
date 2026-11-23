@@ -19,14 +19,14 @@ Use the `address-names-mode` query parameter set to `Administrative` to return o
 ------
 #### [ Sample request ]
 
-```
+```http
 https://places.geo.eu-central-1.amazonaws.com/v2/place/YourPlaceId?address-names-mode=Administrative&key=Your_Key
 ```
 
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "PlaceId": "<Redacted>",
     "PlaceType": "PointOfInterest",
@@ -41,7 +41,7 @@ https://places.geo.eu-central-1.amazonaws.com/v2/place/YourPlaceId?address-names
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request GET \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/place/YourPlaceId?address-names-mode=Administrative&key=Your_Key'
 ```
@@ -49,7 +49,7 @@ curl --request GET \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places get-place --key ${YourKey} --place-id "YourPlaceId" --address-names-mode Administrative
 ```
 

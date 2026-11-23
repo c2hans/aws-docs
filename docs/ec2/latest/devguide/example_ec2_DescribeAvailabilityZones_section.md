@@ -23,7 +23,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/AutoScalerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of Availability Zones in the AWS Region of the Amazon EC2 Client.
     /// </summary>
@@ -56,7 +56,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! DescribeAvailabilityZones
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -173,7 +173,7 @@ For more information, see [Regions and Zones](https://docs.aws.amazon.com/AWSEC2
 **Tools for PowerShell V4**
 **Example 1: This example describes the Availability Zones for the current region that are available to you.**
 
-```
+```powershell
 Get-EC2AvailabilityZone
 ```
 **Output:**
@@ -187,12 +187,12 @@ Messages    RegionName    State        ZoneName
 ```
 **Example 2: This example describes any Availability Zones that are in an impaired state. The syntax used by this example requires PowerShell version 3 or higher.**
 
-```
+```powershell
 Get-EC2AvailabilityZone -Filter @{ Name="state";Values="impaired" }
 ```
 **Example 3: With PowerShell version 2, you must use New-Object to create the filter.**
 
-```
+```powershell
 $filter = New-Object Amazon.EC2.Model.Filter
 $filter.Name = "state"
 $filter.Values = "impaired"
@@ -204,7 +204,7 @@ Get-EC2AvailabilityZone -Filter $filter
 **Tools for PowerShell V5**
 **Example 1: This example describes the Availability Zones for the current region that are available to you.**
 
-```
+```powershell
 Get-EC2AvailabilityZone
 ```
 **Output:**
@@ -218,12 +218,12 @@ Messages    RegionName    State        ZoneName
 ```
 **Example 2: This example describes any Availability Zones that are in an impaired state. The syntax used by this example requires PowerShell version 3 or higher.**
 
-```
+```powershell
 Get-EC2AvailabilityZone -Filter @{ Name="state";Values="impaired" }
 ```
 **Example 3: With PowerShell version 2, you must use New-Object to create the filter.**
 
-```
+```powershell
 $filter = New-Object Amazon.EC2.Model.Filter
 $filter.Name = "state"
 $filter.Values = "impaired"
@@ -238,7 +238,7 @@ Get-EC2AvailabilityZone -Filter $filter
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ec2#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """
     Encapsulates Amazon EC2 Auto Scaling and EC2 management actions.
@@ -312,7 +312,7 @@ class AutoScalingWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->describeavailabilityzones( ).                        " oo_result is returned for testing purposes. "
         DATA(lt_zones) = oo_result->get_availabilityzones( ).

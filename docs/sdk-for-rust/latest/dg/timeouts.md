@@ -22,7 +22,7 @@ The SDK for Rust provides a default timeout for establishing a connection for a 
 
 The following example shows the configuration of an Amazon S3 client with custom timeout values:
 
-```
+```rust
 let config = aws_config::defaults(BehaviorVersion::latest())
     .timeout_config(
         TimeoutConfig::builder()
@@ -54,7 +54,7 @@ By default, the SDK for Rust enables stalled stream protection for both uploads 
 
 The following example shows a customized `StalledStreamProtectionConfig` that disables upload protection and changes the grace period for no activity to 10 seconds:
 
-```
+```rust
 let config = aws_config::defaults(BehaviorVersion::latest())
     .stalled_stream_protection(
         StalledStreamProtectionConfig::enabled()
@@ -74,7 +74,7 @@ Stalled stream protection is an advanced configuration option. We recommend alte
 
 The following example shows how to disable stalled stream protection completely:
 
-```
+```rust
 let config = aws_config::defaults(BehaviorVersion::latest())
     .stalled_stream_protection(StalledStreamProtectionConfig::disabled())
     .load()

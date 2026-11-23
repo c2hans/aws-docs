@@ -93,7 +93,7 @@ Another secure alternative is to specify an SHA-256 hash of a password string; o
 ```
 In the following example, Amazon Redshift generates and manages the salt.
 
-```
+```sql
 CREATE USER admin PASSWORD 'sha256|Mypassword1';
 ```
 In the following example, a valid SHA-256 digest and 256-bit salt that was used to create the digest are supplied.

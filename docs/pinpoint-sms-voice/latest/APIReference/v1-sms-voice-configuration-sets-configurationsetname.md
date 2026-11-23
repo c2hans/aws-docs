@@ -59,7 +59,7 @@ Deletes an existing configuration set.
 #### DeleteConfigurationSetResponse schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-response-body-deleteconfigurationsetresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -67,7 +67,7 @@ Deletes an existing configuration set.
 #### BadRequestException schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -76,7 +76,7 @@ Deletes an existing configuration set.
 #### NotFoundException schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -85,7 +85,7 @@ Deletes an existing configuration set.
 #### TooManyRequestsException schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-response-body-toomanyrequestsexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -94,7 +94,7 @@ Deletes an existing configuration set.
 #### InternalServiceErrorException schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-response-body-internalserviceerrorexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }

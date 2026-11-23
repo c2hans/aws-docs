@@ -25,7 +25,7 @@ Follow these steps to configure cross-account access to an Amazon S3 bucket for 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -59,7 +59,7 @@ Follow these steps to configure cross-account access to an Amazon S3 bucket for 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
       "Statement": [
@@ -101,7 +101,7 @@ If the Amazon S3 bucket is encrypted with a custom AWS Key Management Service (A
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [
@@ -128,7 +128,7 @@ If the Amazon S3 bucket is encrypted with a custom AWS Key Management Service (A
 
 1. **Update the AWS KMS key policy** – In the bucket owner's account, add the following statement to the AWS KMS key policy to allow the user's import execution role to decrypt objects.
 
-   ```
+   ```json
    {
        "Sid": "Allow use of the key by the destination account",
        "Effect": "Allow",
@@ -152,7 +152,7 @@ If the Amazon S3 bucket is encrypted with a custom AWS Key Management Service (A
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
       "Statement": [

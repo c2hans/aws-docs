@@ -36,7 +36,7 @@ Here is the IAM policy (JSON artifact) attached to the role:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
       "Statement": [
@@ -80,7 +80,7 @@ To deploy this functionality in the management account, the following permission
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
     "Statement": [
@@ -165,7 +165,7 @@ The following artifact shows the trust relationship for `aws-controltower-Admini
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -237,7 +237,7 @@ The following artifact shows the trust relationship for `aws-controltower-ReadOn
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

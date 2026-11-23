@@ -11,7 +11,7 @@ To list the Regions available to your account, call the Ec2Client’s `describeR
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2AsyncClient;
 import software.amazon.awssdk.services.ec2.model.DescribeRegionsResponse;
@@ -21,7 +21,7 @@ import java.util.concurrent.CompletableFuture;
 
  **Code**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2AsyncClient;
 import software.amazon.awssdk.services.ec2.model.DescribeRegionsResponse;
@@ -111,7 +111,7 @@ To list each Availability Zone available to your account, call the Ec2Client’s
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2AsyncClient;
 import software.amazon.awssdk.services.ec2.model.DescribeRegionsResponse;
@@ -123,7 +123,7 @@ import java.util.concurrent.CompletableFuture;
 
 Create the Ec2Client.
 
-```
+```java
         Ec2AsyncClient ec2AsyncClient = Ec2AsyncClient.builder()
             .region(Region.US_EAST_1)
             .build();
@@ -131,7 +131,7 @@ Create the Ec2Client.
 
 Then call describeAvailabilityZones() and retrieve results.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2AsyncClient;
 import software.amazon.awssdk.services.ec2.model.DescribeRegionsResponse;
@@ -223,7 +223,7 @@ You can get your account’s attribute values by invoking the `AccountAttribute`
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2AsyncClient;
 import software.amazon.awssdk.services.ec2.model.DescribeAccountAttributesResponse;
@@ -232,7 +232,7 @@ import java.util.concurrent.CompletableFuture;
 
  **Code**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2AsyncClient;
 import software.amazon.awssdk.services.ec2.model.DescribeAccountAttributesResponse;

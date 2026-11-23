@@ -29,6 +29,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Flowchart detailing the relationship between cost and usage within an organization.](https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/cost-usage-organization-chart.png)
 
+*Cost and usage organization chart*
+
  You can create groupings of costs using cost categories as well. After you create the cost categories (allowing up to 24 hours after creating a cost category for your usage records to be updated with values), they appear in [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/), [AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html), [AWS Cost and Usage Report](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html), and [AWS Cost Anomaly Detection](https://aws.amazon.com/aws-cost-management/aws-cost-anomaly-detection/). In AWS Cost Explorer and AWS Budgets, a cost category appears as an additional billing dimension. You can use this to filter for the specific cost category value, or group by the cost category.
 
 ### Implementation steps

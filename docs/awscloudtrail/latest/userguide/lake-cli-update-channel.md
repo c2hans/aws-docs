@@ -10,7 +10,7 @@ When you run the command, the `--channel` parameter is required.
 
 The following is an example that demonstrates how to update the channel name and destination.
 
-```
+```JSON
 aws cloudtrail update-channel \
 --channel aws:cloudtrail:us-east-1:123456789012:channel/EXAMPLE8-0558-4f7e-a06a-43969EXAMPLE \
 --name "new-channel-name" \

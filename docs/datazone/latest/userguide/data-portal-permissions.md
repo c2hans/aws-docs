@@ -40,7 +40,7 @@ Complete the following procedure to attach the required policy to a user, group,
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -101,7 +101,7 @@ If you create your Amazon DataZone domain with your own KMS key for data encrypt
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

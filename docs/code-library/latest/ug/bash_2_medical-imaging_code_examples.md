@@ -25,7 +25,7 @@ The following code example shows how to use `CreateDatastore`.
 
 **AWS CLI with Bash script**
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -112,7 +112,7 @@ The following code example shows how to use `DeleteDatastore`.
 
 **AWS CLI with Bash script**
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -193,7 +193,7 @@ The following code example shows how to use `GetDatastore`.
 
 **AWS CLI with Bash script**
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -282,7 +282,7 @@ The following code example shows how to use `ListDatastores`.
 
 **AWS CLI with Bash script**
 
-```
+```bash
 ###############################################################################
 # function errecho
 #

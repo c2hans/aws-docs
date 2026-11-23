@@ -56,7 +56,7 @@ You can use `spark.kubernetes.container.image` for customized Docker images. For
 
 You can run `list-job-run` to show the states of job runs, as the following example demonstrates.
 
-```
+```shell
 aws emr-containers list-job-runs --virtual-cluster-id <cluster-id>
 ```
 
@@ -65,7 +65,7 @@ aws emr-containers list-job-runs --virtual-cluster-id <cluster-id>
 
 You can run `describe-job-run` to get more details about the job, such as job state, state details, and job name, as the following example demonstrates.
 
-```
+```shell
 aws emr-containers describe-job-run --virtual-cluster-id {{cluster-id}} --id {{job-run-id}}
 ```
 
@@ -74,6 +74,6 @@ aws emr-containers describe-job-run --virtual-cluster-id {{cluster-id}} --id {{j
 
 You can run `cancel-job-run` to cancel running jobs, as the following example demonstrates.
 
-```
+```shell
 aws emr-containers cancel-job-run --virtual-cluster-id {{cluster-id}} --id {{job-run-id}}
 ```

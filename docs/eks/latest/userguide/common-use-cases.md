@@ -47,4 +47,4 @@ With Nitro Sandboxes, you can run pods from different tenants on the same node. 
 Use Nitro Sandboxes to run untrusted, generated, or agentic AI code inside a hardware-isolated sandbox. You can also remove network access so that the code cannot reach the node, other pods, or the network. For more information, see [Network isolation](sandboxing-network-isolation.md).
 
  **Running regulated and confidential workloads**
-Use confidential pods with Nitro Sandboxes to protect sensitive workload data from the node operator or a compromised parent instance. Attestation gates access to AWS KMS keys. For more information, see [Security model and parent instance trust assumptions](sandboxing-security-model.md).
+Use confidential pods with Nitro Sandboxes to protect sensitive workload data from cluster administrators, node administrators, or a compromised parent instance. Attestation gates access to AWS KMS keys. For more information, see [Security model and parent instance trust assumptions](sandboxing-security-model.md).

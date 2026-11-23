@@ -400,7 +400,7 @@ Use Amazon EMR release 7.8.0 or later for the best trusted identity propagation 
 
 1. Open a Spark notebook and run the following test query:
 
-   ```
+   ```python
    spark.sql("SHOW DATABASES").show()
    ```
 
@@ -408,7 +408,7 @@ Use Amazon EMR release 7.8.0 or later for the best trusted identity propagation 
 
 1. Query the cross-account table:
 
-   ```
+   ```python
    # Query data in Account A through the resource link
    df = spark.sql("SELECT * FROM cross_account_db_link.my_table LIMIT 10")
    df.show()

@@ -18,7 +18,7 @@ The following program is an example of using Amazon Kendra in a Python program. 
 
 1. When the data source is active, it synchronizes the index with the contents of the data source using the [StartDataSourceSyncJob](https://docs.aws.amazon.com/kendra/latest/APIReference/API_StartDataSourceSyncJob.html) operation.
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 import pprint

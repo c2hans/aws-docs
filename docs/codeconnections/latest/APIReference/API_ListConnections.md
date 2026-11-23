@@ -41,14 +41,14 @@ Required: No
  ** [NextToken](#API_ListConnections_RequestSyntax) **   <a name="codeconnections-ListConnections-request-NextToken"></a>
 The token that was returned from the previous `ListConnections` call, which can be used to return the next set of connections in the list.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 1024.
+Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `.*`
 Required: No
 
  ** [ProviderTypeFilter](#API_ListConnections_RequestSyntax) **   <a name="codeconnections-ListConnections-request-ProviderTypeFilter"></a>
 Filters the list of connections to those associated with a specified provider, such as Bitbucket.
 Type: String
-Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps`
+Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps | GitHubEnterpriseCloudDataResidency`
 Required: No
 
 ## Response Syntax
@@ -63,6 +63,7 @@ Required: No
          "ConnectionStatus": "string",
          "HostArn": "string",
          "OwnerAccountId": "string",
+         "ProviderEndpoint": "string",
          "ProviderType": "string"
       }
    ],
@@ -84,7 +85,7 @@ Type: Array of [Connection](API_Connection.md) objects
  ** [NextToken](#API_ListConnections_ResponseSyntax) **   <a name="codeconnections-ListConnections-response-NextToken"></a>
 A token that can be used in the next `ListConnections` call. To view all items in the list, continue to call this operation with each subsequent token until no more `nextToken` values are returned.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 1024.
+Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `.*`
 
 ## Errors

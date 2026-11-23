@@ -42,7 +42,7 @@ Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed
 
 Run the following `Create-Stream` command using the AWS CLI:
 
-```
+```bash
 aws kinesisvideo create-stream \
   --stream-name "{{YourStreamName}}" \
   --data-retention-in-hours {{24}} \
@@ -51,7 +51,7 @@ aws kinesisvideo create-stream \
 
 The response will look like the following:
 
-```
+```json
 {
     "StreamARN": "arn:aws:kinesisvideo:{{us-west-2}}:{{123456789012}}:stream/{{YourStreamName}}/{{1234567890123}}"
 }
@@ -64,7 +64,7 @@ This code snippet shows you how to create a Kinesis video stream using the AWS S
 
 Create the Kinesis Video Streams client. This is the client used to call the [CreateStream](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_CreateStream.html) API.
 
-```
+```js
 const clientConfig = {
     accessKeyId: '{{YourAccessKey}}',
     secretAccessKey: '{{YourSecretKey}}',
@@ -75,7 +75,7 @@ const kinesisVideoClient = new AWS.KinesisVideo(clientConfig);
 
 Use the client to call the `CreateStream` API.
 
-```
+```js
 const createStreamResponse = await kinesisVideoClient
     .createStream({
         StreamName: '{{YourStreamName}}',
@@ -86,7 +86,7 @@ const createStreamResponse = await kinesisVideoClient
 
 Print the response.
 
-```
+```js
 console.log(createStreamResponse.StreamARN);
 ```
 

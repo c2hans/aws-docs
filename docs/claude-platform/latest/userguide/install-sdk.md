@@ -8,7 +8,7 @@ Anthropic’s [client SDKs](https://platform.claude.com/docs/en/api/client-sdks)
 
  **Python**
 
-```
+```bash
 pip install -U "anthropic[aws]"
 ```
 
@@ -17,29 +17,29 @@ On macOS with Homebrew Python or other externally managed Python environments, `
 
  **TypeScript**
 
-```
+```bash
 npm install @anthropic-ai/aws-sdk
 ```
 
  **C\#**
 
-```
+```bash
 dotnet add package Anthropic.Aws
 ```
 
  **Go**
 
-```
+```bash
 go get github.com/anthropics/anthropic-sdk-go
 ```
 
  **Java**
 
-```
+```kotlin
 implementation("com.anthropic:anthropic-java-aws:2.27.0")
 ```
 
-```
+```xml
 <dependency>
   <groupId>com.anthropic</groupId>
   <artifactId>anthropic-java-aws</artifactId>
@@ -49,13 +49,13 @@ implementation("com.anthropic:anthropic-java-aws:2.27.0")
 
  **PHP**
 
-```
+```bash
 composer require anthropic-ai/sdk aws/aws-sdk-php
 ```
 
  **Ruby**
 
-```
+```bash
 gem install anthropic aws-sdk-core
 ```
 

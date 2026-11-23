@@ -24,7 +24,7 @@ We discuss checksums in two request phases: uploading an object and downloading 
 
 You upload objects to Amazon S3 by using the [putObject](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3-2006-03-01.html#putobject) method of the `S3Client`. Use the `ChecksumAlgorithm` pair in the parameter array to enable checksum computation and specify the algorithm.
 
-```
+```php
 $client = new \Aws\S3\S3Client(['region' => 'us-east-2']); // See the note below.
 $result = $client->putObject([
         'Bucket' => '{{amzn-s3-demo-bucket}}',
@@ -50,7 +50,7 @@ A pre-calculated checksum value provided with the request disables automatic com
 
 The following example shows a request with a pre-calculated SHA256 checksum.
 
-```
+```php
 use Aws\S3\S3Client;
 use GuzzleHttp\Psr7;
 
@@ -80,7 +80,7 @@ You can also use checksums with multipart uploads.
 
  As shown in the following example, specify the checksum algorithm as a key-value pair in the `params` array of the [`MultipartUploader` constructor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#___construct).
 
-```
+```php
 $s3Client = new S3Client([
     'region' => 'us-east-1'
 ]);
@@ -101,7 +101,7 @@ When you use the [getObject](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-
 
 The request in the following snippet directs the SDK to validate the checksum in the response by calculating the checksum and comparing the values.
 
-```
+```php
 $result = $client->getObject([
         'Bucket' => '{{amzn-s3-demo-bucket}}',
         'Key' => '{{test-checksum-key}}',

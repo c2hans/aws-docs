@@ -26,7 +26,7 @@ Choose a range constraint based on the application:
 
 Submit any of the samples with the Deadline Cloud CLI:
 
-```
+```bash
 deadline bundle submit {{sample-directory}}
 ```
 

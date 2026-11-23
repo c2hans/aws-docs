@@ -14,7 +14,7 @@ The following code examples show how to list and describe all offers associated 
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.catalogapi;
 
 import java.util.ArrayList;
@@ -119,7 +119,7 @@ public class ListProductPrivateOffers {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 """
 Purpose
 Shows how to use the AWS SDK for Python (Boto3) to retrieve all offer information

@@ -13,7 +13,7 @@ First, create an asynchronous Kinesis client and a [SubscribeToShardRequest](htt
 
  **Imports**
 
-```
+```java
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.atomic.AtomicInteger;
 import org.reactivestreams.Subscriber;
@@ -31,7 +31,7 @@ import software.amazon.awssdk.services.kinesis.model.SubscribeToShardResponseHan
 
  **Code**
 
-```
+```java
         Region region = Region.US_EAST_1;
         KinesisAsyncClient client = KinesisAsyncClient.builder()
         .region(region)
@@ -52,7 +52,7 @@ Using the builder, you can set each lifecycle callback with a method call instea
 
  **Code**
 
-```
+```java
     private static CompletableFuture<Void> responseHandlerBuilder(KinesisAsyncClient client, SubscribeToShardRequest request) {
         SubscribeToShardResponseHandler responseHandler = SubscribeToShardResponseHandler
                 .builder()
@@ -69,7 +69,7 @@ For more control of the publisher, you can use the `publisherTransformer` method
 
  **Code**
 
-```
+```java
     private static CompletableFuture<Void> responseHandlerBuilderPublisherTransformer(KinesisAsyncClient client, SubscribeToShardRequest request) {
         SubscribeToShardResponseHandler responseHandler = SubscribeToShardResponseHandler
                 .builder()
@@ -92,7 +92,7 @@ In this example, you implement the `onEventStream` method, which allows you full
 
  **Code**
 
-```
+```java
     private static CompletableFuture<Void> responseHandlerBuilderClassic(KinesisAsyncClient client, SubscribeToShardRequest request) {
         SubscribeToShardResponseHandler responseHandler = new SubscribeToShardResponseHandler() {
 
@@ -139,7 +139,7 @@ You can use a [Visitor](https://sdk.amazonaws.com/java/api/latest/software/amazo
 
  **Code**
 
-```
+```java
     private static CompletableFuture<Void> responseHandlerBuilderVisitorBuilder(KinesisAsyncClient client, SubscribeToShardRequest request) {
         SubscribeToShardResponseHandler.Visitor visitor = SubscribeToShardResponseHandler.Visitor
                 .builder()
@@ -165,7 +165,7 @@ This code snippet shows an example subscriber.
 
  **Code**
 
-```
+```java
     private static class MySubscriber implements Subscriber<SubscribeToShardEventStream> {
 
         private Subscription subscription;
@@ -203,7 +203,7 @@ You can pass the custom subscriber to the `subscribe` method as shown in the fol
 
  **Code**
 
-```
+```java
     private static CompletableFuture<Void> responseHandlerBuilderSubscriber(KinesisAsyncClient client, SubscribeToShardRequest request) {
         SubscribeToShardResponseHandler responseHandler = SubscribeToShardResponseHandler
                 .builder()
@@ -223,7 +223,7 @@ You can use the [KinesisClient](https://sdk.amazonaws.com/java/api/latest/softwa
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.core.SdkBytes;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.kinesis.KinesisClient;
@@ -237,7 +237,7 @@ In the following Java code example, notice that **StockTrade** object is used as
 
  **Code**
 
-```
+```java
 import software.amazon.awssdk.core.SdkBytes;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.kinesis.KinesisClient;
@@ -361,7 +361,7 @@ To use the library, add it as a dependency. If you’re using Maven, the example
 
  **POM Entry**
 
-```
+```xml
 <dependency>
  <groupId>io.reactivex.rxjava2</groupId>
  <artifactId>rxjava</artifactId>
@@ -371,7 +371,7 @@ To use the library, add it as a dependency. If you’re using Maven, the example
 
  **Imports**
 
-```
+```java
 import java.net.URI;
 import java.util.concurrent.CompletableFuture;
 
@@ -395,7 +395,7 @@ This example uses RxJava in the `onEventStream` lifecycle method. This gives you
 
  **Code**
 
-```
+```java
         SubscribeToShardResponseHandler responseHandler = SubscribeToShardResponseHandler
             .builder()
             .onError(t -> System.err.println("Error during stream - " + t.getMessage()))
@@ -412,7 +412,7 @@ You can also use the `publisherTransformer` method with the `Flowable` publisher
 
  **Code**
 
-```
+```java
         SubscribeToShardResponseHandler responseHandler = SubscribeToShardResponseHandler
             .builder()
             .onError(t -> System.err.println("Error during stream - " + t.getMessage()))

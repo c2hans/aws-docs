@@ -14,11 +14,11 @@ The building blocks for real-time are located in a different namespace than the 
 ### Using a Script Tag
 <a name="broadcast-web-getting-started-imports-script"></a>
 
-The Web broadcast SDK is distributed as a JavaScript library and can be retrieved at [https://web-broadcast.live-video.net/1.41.0/amazon-ivs-web-broadcast.js](https://web-broadcast.live-video.net/1.41.0/amazon-ivs-web-broadcast.js).
+The Web broadcast SDK is distributed as a JavaScript library and can be retrieved at [https://web-broadcast.live-video.net/1.42.0/amazon-ivs-web-broadcast.js](https://web-broadcast.live-video.net/1.42.0/amazon-ivs-web-broadcast.js).
 
 The classes and enums defined in the examples below can be found on the global object `IVSBroadcastClient`:
 
-```
+```javascript
 const { Stage, SubscribeType } = IVSBroadcastClient;
 ```
 
@@ -27,7 +27,7 @@ const { Stage, SubscribeType } = IVSBroadcastClient;
 
 To install the `npm` package:
 
-```
+```bash
 npm install amazon-ivs-web-broadcast
 ```
 
@@ -49,7 +49,7 @@ Your app must request permission to access the user’s camera and microphone, a
 
 Here's an example function showing how you can request and capture permissions for both audio and video devices:
 
-```
+```javascript
 async function handlePermissions() {
    let permissions = {
        audio: false,
@@ -81,7 +81,7 @@ For additional information, see the [Permissions API](https://developer.mozilla.
 
 To see what devices are available to capture, query the browser's [MediaDevices.enumerateDevices()](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/enumerateDevices) method:
 
-```
+```javascript
 const devices = await navigator.mediaDevices.enumerateDevices();
 window.videoDevices = devices.filter((d) => d.kind === 'videoinput');
 window.audioDevices = devices.filter((d) => d.kind === 'audioinput');
@@ -98,7 +98,7 @@ You also can specify an ideal camera resolution using the `width` and `height` c
 
 For real-time streaming, ensure that media is constrained to 720p resolution. Specifically, your `getUserMedia` and `getDisplayMedia` constraint values for width and height must not exceed 921600 (1280\*720) when multiplied together.
 
-```
+```javascript
 const videoConfiguration = {
   maxWidth: 1280,
   maxHeight: 720,

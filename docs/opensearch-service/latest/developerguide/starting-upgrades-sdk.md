@@ -11,7 +11,7 @@ The first sample upgrades a domain in place. The second sample runs a clone-base
 ## In-place upgrade
 <a name="sdk-in-place"></a>
 
-```
+```python
 import boto3
 from botocore.config import Config
 import time
@@ -80,7 +80,7 @@ if __name__ == "__main__":
 
 This sample starts a clone-based upgrade, waits for the cloned cluster to be ready, sends 10 percent of read traffic to the cloned cluster, and then cuts over or cancels. For information about each step, see [Validating, cutting over, and rolling back during a clone-based upgrade](clone-based-upgrade.md).
 
-```
+```python
 import boto3
 import time
 

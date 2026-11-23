@@ -37,7 +37,7 @@ This is not expected to be set, because the value returned in the previous respo
  ** [ReferenceTypes](#API_ListContactReferences_RequestSyntax) **   <a name="connect-ListContactReferences-request-uri-ReferenceTypes"></a>
 The type of reference.
 Array Members: Maximum number of 6 items.
-Valid Values: `URL | ATTACHMENT | CONTACT_ANALYSIS | NUMBER | STRING | DATE | EMAIL | EMAIL_MESSAGE | EMAIL_MESSAGE_PLAIN_TEXT | EMAIL_MESSAGE_PLAIN_TEXT_REDACTED | EMAIL_MESSAGE_REDACTED`
+Valid Values: `URL | ATTACHMENT | CONTACT_ANALYSIS | NUMBER | STRING | DATE | EMAIL | EMAIL_MESSAGE | EMAIL_MESSAGE_PLAIN_TEXT | EMAIL_MESSAGE_PLAIN_TEXT_REDACTED | EMAIL_MESSAGE_REDACTED | VOICEMAIL_RECORDING | VOICEMAIL_RECORDING_REDACTED | VOICEMAIL_ANALYSIS | VOICEMAIL_ANALYSIS_REDACTED`
 Required: Yes
 
 ## Request Body

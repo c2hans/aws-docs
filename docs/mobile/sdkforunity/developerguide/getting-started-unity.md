@@ -73,7 +73,7 @@ Using [Amazon Mobile Analytics](https://aws.amazon.com/mobileanalytics/), you ca
 
 Mobile Analytics defines some settings that can be configured in the awsconfig.xml file:
 
-```
+```csharp
 <mobileAnalytics sessionTimeout = "5"
                  maxDBSize = "5242880"
                  dbWarningThreshold = "0.9"
@@ -119,7 +119,7 @@ For more information about using S3 from Unity applications, see [Amazon Simple 
 
 The default S3 signature is configured as follows:
 
-```
+```csharp
 <s3 useSignatureVersion4="true" />
 ```
 

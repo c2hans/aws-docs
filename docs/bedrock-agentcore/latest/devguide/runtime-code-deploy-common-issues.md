@@ -15,7 +15,7 @@ Common issues and solutions when getting started with Amazon Bedrock AgentCore d
 
  **Solution:** Add s3:GetObject permission in role used to call the Agentcore Runtime create/update API.
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -37,7 +37,7 @@ Common issues and solutions when getting started with Amazon Bedrock AgentCore d
 
  **Solution:** Add kms:Decrypt permission to the role for the specific CMK:
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [

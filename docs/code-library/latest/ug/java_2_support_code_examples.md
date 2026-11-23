@@ -30,7 +30,7 @@ The following code example shows how to get started using Support.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/support#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.support.SupportClient;
 import software.amazon.awssdk.services.support.model.Category;
@@ -127,7 +127,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/support#code-examples).
 Run various Support operations.
 
-```
+```java
 import software.amazon.awssdk.core.SdkBytes;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.support.SupportClient;
@@ -554,7 +554,7 @@ The following code example shows how to use `AddAttachmentsToSet`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/support#code-examples).
 
-```
+```java
     public static String addAttachment(SupportClient supportClient, String fileAttachment) {
         try {
             File myFile = new File(fileAttachment);
@@ -590,7 +590,7 @@ The following code example shows how to use `AddCommunicationToCase`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/support#code-examples).
 
-```
+```java
     public static void addAttachSupportCase(SupportClient supportClient, String caseId, String attachmentSetId) {
         try {
             AddCommunicationToCaseRequest caseRequest = AddCommunicationToCaseRequest.builder()
@@ -621,7 +621,7 @@ The following code example shows how to use `CreateCase`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/support#code-examples).
 
-```
+```java
     public static String createSupportCase(SupportClient supportClient, List<String> sevCatList, String sevLevel) {
         try {
             String serviceCode = sevCatList.get(0);
@@ -656,7 +656,7 @@ The following code example shows how to use `DescribeAttachment`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/support#code-examples).
 
-```
+```java
     public static void describeAttachment(SupportClient supportClient, String attachId) {
         try {
             DescribeAttachmentRequest attachmentRequest = DescribeAttachmentRequest.builder()
@@ -682,7 +682,7 @@ The following code example shows how to use `DescribeCases`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/support#code-examples).
 
-```
+```java
     public static void getOpenCase(SupportClient supportClient) {
         try {
             // Specify the start and end time.
@@ -720,7 +720,7 @@ The following code example shows how to use `DescribeCommunications`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/support#code-examples).
 
-```
+```java
     public static String listCommunications(SupportClient supportClient, String caseId) {
         try {
             String attachId = null;
@@ -759,7 +759,7 @@ The following code example shows how to use `DescribeServices`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/support#code-examples).
 
-```
+```java
     // Return a List that contains a Service name and Category name.
     public static List<String> displayServices(SupportClient supportClient) {
         try {
@@ -815,7 +815,7 @@ The following code example shows how to use `DescribeSeverityLevels`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/support#code-examples).
 
-```
+```java
     public static String displaySevLevels(SupportClient supportClient) {
         try {
             DescribeSeverityLevelsRequest severityLevelsRequest = DescribeSeverityLevelsRequest.builder()
@@ -849,7 +849,7 @@ The following code example shows how to use `ResolveCase`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/support#code-examples).
 
-```
+```java
     public static void resolveSupportCase(SupportClient supportClient, String caseId) {
         try {
             ResolveCaseRequest caseRequest = ResolveCaseRequest.builder()

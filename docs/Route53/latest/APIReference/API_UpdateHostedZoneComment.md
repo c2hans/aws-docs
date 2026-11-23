@@ -53,13 +53,25 @@ HTTP/1.1 200
       <CallerReference>string</CallerReference>
       <Config>
          <Comment>string</Comment>
+         <HostedZoneTier>string</HostedZoneTier>
          <PrivateZone>boolean</PrivateZone>
       </Config>
       <Features>
          <AcceleratedRecoveryStatus>string</AcceleratedRecoveryStatus>
+         <ChangeGuardrails>
+            <ChangeGuardrail>
+               <Name>string</Name>
+               <Status>string</Status>
+            </ChangeGuardrail>
+         </ChangeGuardrails>
+         <ChangeHistory>
+            <RetentionStartsAt>timestamp</RetentionStartsAt>
+            <Status>string</Status>
+         </ChangeHistory>
          <FailureReasons>
             <AcceleratedRecovery>string</AcceleratedRecovery>
          </FailureReasons>
+         <PublicDNSFallbackStatus>string</PublicDNSFallbackStatus>
       </Features>
       <Id>string</Id>
       <LinkedService>

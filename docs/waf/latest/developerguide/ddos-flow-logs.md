@@ -26,7 +26,7 @@ To publish flow logs to Amazon S3, you must configure IAM permissions for the lo
 
 An IAM principal, such as an IAM role or user, must have sufficient permissions to publish flow logs to the Amazon S3 bucket. The IAM policy must include the following permissions:
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -85,7 +85,7 @@ In the preceding policy, replace {{accountID}} with your AWS account ID and {{bu
 
 In addition to the destination-specific permissions, AWS Shield requires explicit authorization that you can send logs from your resources. This provides an additional layer of security. Shield authorizes the `AllowVendedLogDeliveryForResource` action for protection resources that vend logs:
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

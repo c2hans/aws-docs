@@ -55,7 +55,7 @@ Amazon MWAA environments that use Apache Airflow v3.2 or earlier don't include D
 
 1. To read and write Amazon S3 data, set up Amazon S3 access in your SQL before your queries. The following statements load the DuckDB extensions for Amazon S3 and use your environment's execution role for credentials.
 
-   ```
+   ```sql
    INSTALL httpfs;
    LOAD httpfs;
    INSTALL aws;

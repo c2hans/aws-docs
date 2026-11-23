@@ -45,7 +45,7 @@ For more information, see [Create an AWS CodeCommit repository](https://docs.aws
 **Tools for PowerShell V4**
 **Example 1: This example creates a new repository with the specified name and the specified description.**
 
-```
+```powershell
 New-CCRepository -RepositoryName MyDemoRepo -RepositoryDescription "This is a repository for demonstration purposes."
 ```
 **Output:**
@@ -67,7 +67,7 @@ RepositoryName        : MyDemoRepo
 **Tools for PowerShell V5**
 **Example 1: This example creates a new repository with the specified name and the specified description.**
 
-```
+```powershell
 New-CCRepository -RepositoryName MyDemoRepo -RepositoryDescription "This is a repository for demonstration purposes."
 ```
 **Output:**

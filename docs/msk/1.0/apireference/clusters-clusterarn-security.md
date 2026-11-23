@@ -66,7 +66,7 @@ Updates security settings of the specified cluster.
 #### PATCH schema
 <a name="clusters-clusterarn-security-request-body-patch-example"></a>
 
-```
+```json
 {
   "encryptionInfo": {
     "encryptionInTransit": {
@@ -106,7 +106,7 @@ Updates security settings of the specified cluster.
 #### UpdateSecurityResponse schema
 <a name="clusters-clusterarn-security-response-body-updatesecurityresponse-example"></a>
 
-```
+```json
 {
   "clusterArn": "string",
   "clusterOperationArn": "string"
@@ -116,7 +116,7 @@ Updates security settings of the specified cluster.
 #### Error schema
 <a name="clusters-clusterarn-security-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

@@ -22,7 +22,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 Run an interactive scenario demonstrating AWS IoT SiteWise features.
 
-```
+```java
 public class SitewiseScenario {
 
     public static final String DASHES = new String(new char[80]).replace("\0", "-");
@@ -370,7 +370,7 @@ public class SitewiseScenario {
 ```
 A wrapper class for AWS IoT SiteWise SDK methods.
 
-```
+```java
 public class SitewiseActions {
 
     private static final Logger logger = LoggerFactory.getLogger(SitewiseActions.class);
@@ -792,7 +792,7 @@ public class SitewiseActions {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   Scenario,
   ScenarioAction,
@@ -1504,7 +1504,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class IoTSitewiseGettingStarted:
     """
     A scenario that demonstrates how to use Boto3 to manage IoT physical assets using
@@ -1897,7 +1897,7 @@ In this step, we get a description of the portal and display the portal URL.
 ```
 IoTSitewiseWrapper class that wraps AWS IoT SiteWise actions.
 
-```
+```python
 class IoTSitewiseWrapper:
     """Encapsulates AWS IoT SiteWise actions using the client interface."""
 

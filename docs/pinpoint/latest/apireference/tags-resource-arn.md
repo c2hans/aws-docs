@@ -92,7 +92,7 @@ Removes one or more tags (keys and values) from an application, campaign, messag
 #### POST schema
 <a name="tags-resource-arn-request-body-post-example"></a>
 
-```
+```json
 {
   "tags": {
   }
@@ -105,7 +105,7 @@ Removes one or more tags (keys and values) from an application, campaign, messag
 #### tagsModel schema
 <a name="tags-resource-arn-response-body-tagsmodel-example"></a>
 
-```
+```json
 {
   "tags": {
   }

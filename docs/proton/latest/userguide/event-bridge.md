@@ -47,7 +47,7 @@ The following examples show the ways that AWS Proton can send events to EventBri
 
 **Service template**
 
-```
+```json
 {
     "source": "aws.proton",
     "detail-type": ["AWS Proton Service Template Status Change"],
@@ -63,7 +63,7 @@ The following examples show the ways that AWS Proton can send events to EventBri
 
 **Service template version**
 
-```
+```json
 {
     "source": "aws.proton",
     "detail-type": ["AWS Proton Service Template Version Status Change"],
@@ -81,7 +81,7 @@ The following examples show the ways that AWS Proton can send events to EventBri
 
 **Environment**
 
-```
+```json
 {
     "source": "aws.proton",
     "detail-type": ["AWS Proton Environment Status Change"],

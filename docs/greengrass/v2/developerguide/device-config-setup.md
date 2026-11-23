@@ -149,7 +149,7 @@ You must meet the following requirements to allow IDT to use your custom IAM rol
 
 ****
 
-  ```
+  ```json
   {
      "Version":"2012-10-17",
      "Statement":[
@@ -176,7 +176,7 @@ You must meet the following requirements to allow IDT to use your custom IAM rol
 
 ****
 
-  ```
+  ```json
   {
      "Version":"2012-10-17",
      "Statement":[
@@ -212,7 +212,7 @@ You must meet the following requirements to allow IDT to use your custom IAM rol
 
 **Example `passRoleForResources` statement**
 
-  ```
+  ```json
   {
      "Sid":"passRoleForResources",
      "Effect":"Allow",
@@ -231,7 +231,7 @@ You must meet the following requirements to allow IDT to use your custom IAM rol
   ```
 **Example `roleAliasResources` statement**
 
-  ```
+  ```json
   {
      "Sid":"roleAliasResources",
      "Effect":"Allow",
@@ -276,7 +276,7 @@ To run Docker qualification tests, your devices under test must meet the followi
 
   To add `ggc_user`, or the non-root user that you use to run Docker container components, to the `docker` group, run the following command.
 
-  ```
+  ```bash
   sudo usermod -aG docker {{ggc_user}}
   ```
 
@@ -287,7 +287,7 @@ To run Docker qualification tests, your devices under test must meet the followi
 
   To add `ggc_user`, or the user that you use to run Docker container components, to the `docker-users` group, run the following command as an administrator.
 
-  ```
+  ```cmd
   net localgroup docker-users {{ggc_user}} /add
   ```
 
@@ -296,7 +296,7 @@ To run Docker qualification tests, your devices under test must meet the followi
 
   To add `ggc_user`, or the user that you use to run Docker container components, to the `docker-users` group, run the following command as an administrator.
 
-  ```
+  ```ps
   Add-LocalGroupMember -Group docker-users -Member {{ggc_user}}
   ```
 
@@ -314,13 +314,13 @@ To run ML qualification tests, your devices under test must meet the following r
 + On Greengrass core devices running Amazon Linux 2 or Ubuntu 18.04, [GNU C Library](https://www.gnu.org/software/libc/) (glibc) version 2.27 or later installed on the device.
 + On Armv7l devices, such as Raspberry Pi, dependencies for OpenCV-Python installed on the device. Run the following command to install the dependencies.
 
-  ```
+  ```bash
   sudo apt-get install libopenjp2-7 libilmbase23 libopenexr-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libgtk-3-0 libwebp-dev
   ```
 + Raspberry Pi devices that run Raspberry Pi OS Bullseye must meet the following requirements:
   + NumPy 1.22.4 or later installed on the device. Raspberry Pi OS Bullseye includes an earlier version of NumPy, so you can run the following command to upgrade NumPy on the device.
 
-    ```
+    ```bash
     pip3 install --upgrade numpy
     ```
   + The legacy camera stack enabled on the device. Raspberry Pi OS Bullseye includes a new camera stack that is enabled by default and isn't compatible, so you must enable the legacy camera stack.<a name="raspberry-pi-bullseye-enable-legacy-camera-stack"></a>
@@ -329,7 +329,7 @@ To run ML qualification tests, your devices under test must meet the following r
 
     1. Run the following command to open the Raspberry Pi configuration tool.
 
-       ```
+       ```bash
        sudo raspi-config
        ```
 

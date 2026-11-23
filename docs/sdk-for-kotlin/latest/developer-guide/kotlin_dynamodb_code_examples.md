@@ -37,7 +37,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 Create a DynamoDB table.
 
-```
+```kotlin
 suspend fun createScenarioTable(
     tableNameVal: String,
     key: String,
@@ -86,7 +86,7 @@ suspend fun createScenarioTable(
 ```
 Create a helper function to download and extract the sample JSON file.
 
-```
+```kotlin
 // Load data into the table.
 suspend fun loadData(
     tableName: String,
@@ -139,7 +139,7 @@ suspend fun putMovie(
 ```
 Get an item from a table.
 
-```
+```kotlin
 suspend fun getMovie(
     tableNameVal: String,
     keyName: String,
@@ -167,7 +167,7 @@ suspend fun getMovie(
 ```
 Full example.
 
-```
+```kotlin
 suspend fun main() {
     val tableName = "Movies"
     val fileName = "../../../resources/sample_files/movies.json"
@@ -382,7 +382,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun createNewTable(
     tableNameVal: String,
     key: String,
@@ -430,7 +430,7 @@ The following code example shows how to use `DeleteItem`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun deleteDynamoDBItem(
     tableNameVal: String,
     keyName: String,
@@ -461,7 +461,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun deleteDynamoDBTable(tableNameVal: String) {
     val request =
         DeleteTableRequest {
@@ -484,7 +484,7 @@ The following code example shows how to use `GetItem`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun getSpecificItem(
     tableNameVal: String,
     keyName: String,
@@ -519,7 +519,7 @@ The following code example shows how to use `ListTables`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun listAllTables() {
     DynamoDbClient.fromEnvironment { region = "us-east-1" }.use { ddb ->
         val response = ddb.listTables(ListTablesRequest {})
@@ -539,7 +539,7 @@ The following code example shows how to use `PutItem`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun putItemInTable(
     tableNameVal: String,
     key: String,
@@ -581,7 +581,7 @@ The following code example shows how to use `Query`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun queryDynTable(
     tableNameVal: String,
     partitionKeyName: String,
@@ -619,7 +619,7 @@ The following code example shows how to use `Scan`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun scanItems(tableNameVal: String) {
     val request =
         ScanRequest {
@@ -647,7 +647,7 @@ The following code example shows how to use `UpdateItem`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun updateTableItem(
     tableNameVal: String,
     keyName: String,
@@ -726,7 +726,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun main() {
     val ddb = DynamoDbClient.fromEnvironment { region = "us-east-1" }
     val tableName = "MoviesPartiQBatch"
@@ -960,7 +960,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun main() {
     val ddb = DynamoDbClient.fromEnvironment { region = "us-east-1" }
     val tableName = "MoviesPartiQ"

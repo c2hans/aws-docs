@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-api-apidefinition-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#sam-api-apidefinition-bucket): {{String}}
   [Key](#sam-api-apidefinition-key): {{String}}
   [Version](#sam-api-apidefinition-version): {{String}}
@@ -52,7 +52,7 @@ API Definition example
 #### YAML
 <a name="sam-property-api-apidefinition--examples--definition-uri-example--yaml"></a>
 
-```
+```yaml
 DefinitionUri:
   Bucket: amzn-s3-demo-bucket-name
   Key: mykey-name

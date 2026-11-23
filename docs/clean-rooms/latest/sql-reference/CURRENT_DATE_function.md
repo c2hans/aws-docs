@@ -26,7 +26,7 @@ DATE
 
 The following example returns the current date (in the AWS Region where the function runs).
 
-```
+```sql
 select current_date;
 
    date

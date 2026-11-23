@@ -10,6 +10,8 @@ The biggest cause of frustration from users is when the skill doesn’t behave a
 
 ![Screenshot showing an example Alexa Skill design script](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/alexa-skill-example-design-script.png)
 
+*Figure 2: Alexa Skill example design script*
+
  With a basic script in mind, you can use the following techniques before start building a skill:
 +  **Outline the shortest route to completion.**
   + The shortest route to completion is generally when the user gives all information and slots at once, an account is already linked if relevant, and other prerequisites are satisfied in a single invocation of the skill.
@@ -33,6 +35,8 @@ The biggest cause of frustration from users is when the skill doesn’t behave a
 <a name="alexa-ref-arch"></a>
 
 ![Reference architecture diagram for an Alexa Skill](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/reference-architecture-for-alexa-skill.png)
+
+*Figure 3: Reference architecture for an Alexa Skill*
 
 1. **Alexa users** interact with Alexa skills by speaking to Alexa-enabled devices using voice as the primary method of interaction.
 

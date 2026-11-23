@@ -42,7 +42,7 @@ You can deploy the solution multiple times in the same account and Region. You m
 Customers can manually create an IAM role with the minimum required permissions for deployment:
 + WAF Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -73,7 +73,7 @@ Customers can manually create an IAM role with the minimum required permissions 
 ```
 + Lambda Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -91,7 +91,7 @@ Customers can manually create an IAM role with the minimum required permissions 
 ```
 + Firehose Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -107,7 +107,7 @@ Customers can manually create an IAM role with the minimum required permissions 
 ```
 + S3 Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -137,7 +137,7 @@ Customers can manually create an IAM role with the minimum required permissions 
 ```
 + Athena Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -155,7 +155,7 @@ Customers can manually create an IAM role with the minimum required permissions 
 ```
 + Glue Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -180,7 +180,7 @@ Customers can manually create an IAM role with the minimum required permissions 
 ```
 + CloudWatch Logs Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -201,7 +201,7 @@ Customers can manually create an IAM role with the minimum required permissions 
 ```
 + CloudWatch Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -216,7 +216,7 @@ Customers can manually create an IAM role with the minimum required permissions 
 ```
 + SNS Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -231,7 +231,7 @@ Customers can manually create an IAM role with the minimum required permissions 
 ```
 + DynamoDB Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -248,7 +248,7 @@ Customers can manually create an IAM role with the minimum required permissions 
 ```
 + CloudFormation Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -263,7 +263,7 @@ Customers can manually create an IAM role with the minimum required permissions 
 ```
 + Service Catalog App Registry Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -284,7 +284,7 @@ Customers can manually create an IAM role with the minimum required permissions 
 ```
 + X-Ray Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -296,7 +296,7 @@ Customers can manually create an IAM role with the minimum required permissions 
 ```
 + IAM Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -317,7 +317,7 @@ Customers can manually create an IAM role with the minimum required permissions 
 ```
 + EventBridge Permissions
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [

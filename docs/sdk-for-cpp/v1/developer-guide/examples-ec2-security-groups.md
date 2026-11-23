@@ -20,14 +20,14 @@ To create a security group, call the EC2Client’s `CreateSecurityGroup` functio
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/CreateSecurityGroupRequest.h>
 ```
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
 
     Aws::EC2::Model::CreateSecurityGroupRequest request;
@@ -60,18 +60,18 @@ To add ingress rules to your security group, use the EC2Client’s `AuthorizeSec
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/model/AuthorizeSecurityGroupIngressRequest.h>
 ```
 
  **Code**
 
-```
+```cpp
     Aws::EC2::Model::AuthorizeSecurityGroupIngressRequest authorizeSecurityGroupIngressRequest;
     authorizeSecurityGroupIngressRequest.SetGroupId(groupID);
 ```
 
-```
+```cpp
     Aws::String ingressIPRange = "203.0.113.0/24";  // Configure this for your allowed IP range.
     Aws::EC2::Model::IpRange ip_range;
     ip_range.SetCidrIp(ingressIPRange);
@@ -93,7 +93,7 @@ To add ingress rules to your security group, use the EC2Client’s `AuthorizeSec
     authorize_request.AddIpPermissions(permission2);
 ```
 
-```
+```cpp
     Aws::EC2::Model::AuthorizeSecurityGroupIngressOutcome authorizeSecurityGroupIngressOutcome =
             ec2Client.AuthorizeSecurityGroupIngress(authorizeSecurityGroupIngressRequest);
 
@@ -118,7 +118,7 @@ You will receive a [DescribeSecurityGroupsResponse](https://docs.aws.amazon.com/
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/DescribeSecurityGroupsRequest.h>
 #include <aws/ec2/model/DescribeSecurityGroupsResponse.h>
@@ -128,7 +128,7 @@ You will receive a [DescribeSecurityGroupsResponse](https://docs.aws.amazon.com/
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
     Aws::EC2::Model::DescribeSecurityGroupsRequest request;
 
@@ -180,7 +180,7 @@ To delete a security group, call the EC2Client’s `DeleteSecurityGroup` functio
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/DeleteSecurityGroupRequest.h>
 #include <iostream>
@@ -188,7 +188,7 @@ To delete a security group, call the EC2Client’s `DeleteSecurityGroup` functio
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
     Aws::EC2::Model::DeleteSecurityGroupRequest request;
 

@@ -52,7 +52,7 @@ Now that you have a framework and a div placeholder, you can add the map control
 
 1. Add the following script to your file. The text in {{red}} should be replaced with the API key value, map resource name, and place resource name that you created earlier, as well as the region identifier for your region (such as `us-east-1`).
 
-   ```
+   ```javascript
    // Amazon Location Service resource names:
    const mapName = "{{explore.map}}";
    const placesName = "{{explore.place}}";
@@ -86,7 +86,7 @@ Now that you have a framework and a div placeholder, you can add the map control
 
    The `initializeMap()` function is important to understand. It creates a new MapLibre map control (called `mlglMap` locally, but called `map` in the rest of the code) that is used to render the map in your application.
 
-   ```
+   ```js
      // Initialize the map
      const mlglMap = new maplibregl.Map({
        container: "map", // HTML element ID of map element

@@ -18,7 +18,7 @@ If you prefer to reference the prefix list programmatically, you can use the [Ge
 
 **Example Permissions Policy:**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -54,7 +54,7 @@ Note: The list of secret types that are available for secretsmanager:resource/Ty
 
 **Example Trust Policy:**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

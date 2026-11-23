@@ -27,7 +27,7 @@ The triage classifier executes as a deterministic rule engine, not as an LLM pro
 
 The classifier returns a structured result:
 
-```
+```json
 {
   "level": "P1",
   "reason": "Active DTC P0420 (catalyst efficiency below threshold) in degraded mode.",

@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnMetricDataUpda
 + Operands – An array of `MetricGroup`, can support up to two groups.
 + FilterClause – Rule level metric filter for **End Dimension** or grouping. Choosing an End Dimension restricts the usage of metrics, as described in [Metric Data Update - MetricCondition](https://docs.aws.amazon.com/connect/latest/APIReference/OnMetricDataUpdate.html#OnMetricDataUpdate-MetricCondition).
 
-```
+```json
 "Operator": "AND", // "AND or "OR"
 "Operand": MetricGroup[], // Upto 2 array elements
 "FilterClause" {
@@ -31,7 +31,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnMetricDataUpda
 
 Each MetricGroup can have up to compatible 10 MetricConditions grouped by an "AND" or "OR". Up to two MetricGroups are supported within the same Rule Condition.
 
-```
+```json
 "Operands": [
     {
         "Operator": "AND", // "AND or "OR"
@@ -56,7 +56,7 @@ These filters are always required in MetricCondition for the when supported, but
 
 The trailing time period window, in seconds, for which the metric is calculated. All MetricCondition within the same MetricGroup are required to have a consistent MetricDataPeriodSeconds, that is, the exact same filter in all of them, or none of them should have these filters. The time window has to less than 24 hours (< 86400).
 
-```
+```json
 {
     "Type": "MetricDataPeriodSeconds", // Required for Historical mertcis
     "Data": { "Past": 300}
@@ -70,7 +70,7 @@ Supported metrics: `AVG_HANDLE_TIME`, `AVG_QUEUE_ANSWER_TIME`, `AVG_INTERACTION_
 
 This filter is only required for `AGENT_ACTIVITY` metric, and determines the time period window, in seconds, for which the Agent Activity status is held. It has to less than 24 hours (< 86400).
 
-```
+```json
 {
     "Type": "AgentActvityDurationSeconds",
     "Data": { "Past": 300}
@@ -82,7 +82,7 @@ This filter is only required for `AGENT_ACTIVITY` metric, and determines the tim
 
 This filter is only required for `SERVICE_LEVEL_X`, and is defined [here](https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricV2.html#connect-Type-MetricV2-Threshold).
 
-```
+```json
 {
     "Type": "MetricDataThresholdSeconds",
     "Data": { "Comparison": "LT", "ThresholdValue": 300} // Comparison == "LT" only
@@ -99,7 +99,7 @@ Exactly one of the below filters is required for every MetricCondition. If the M
 
 Provide the list of Agent IDs in MetricCondition. Up to 100 values can be provided.
 
-```
+```json
 {
     "Type": "MetricDataFilterByAgent",
     "Data": ["c04377e2-db01-4182-bc02-4285a66279e7", "1e5a6965-7b64-420d-88a8-a83d2a15081d"]
@@ -123,7 +123,7 @@ Agent Hierarchy filters can be any of the five types:
 
 Provide the Agent Hierarchy ID in the filter.
 
-```
+```json
 {
     "Type": "MetricDataFilterByAgentHierarchyLevelFive",
     "Data": ["b99ba702-b84b-4279-abad-5ceda9ff2640"] // One array element only
@@ -138,7 +138,7 @@ Only one value is supported in the filter.
 
 Provide the list of Queue IDs in MetricCondition. Up to 100 values can be provided.
 
-```
+```json
 {
     "Type": "MetricDataFilterByQueue",
     "Data": ["c04377e2-db01-4182-bc02-4285a66279e7", "1e5a6965-7b64-420d-88a8-a83d2a15081d"]
@@ -150,7 +150,7 @@ Provide the list of Queue IDs in MetricCondition. Up to 100 values can be provid
 
 Provide the list of Routing Profile IDs in MetricCondition. Up to 100 values can be provided.
 
-```
+```json
 {
     "Type": "MetricDataFilterByRoutingProfile",
     "Data": ["b653beae-0a34-4f0c-83d3-067c9b8370bf" , "60a4c89a-b485-4bf2-8396-2a151b4e05a7"]
@@ -162,7 +162,7 @@ Provide the list of Routing Profile IDs in MetricCondition. Up to 100 values can
 
 Provide the list of Flow IDs in MetricCondition. Up to 100 values can be provided.
 
-```
+```json
 {
     "Type": "MetricDataFilterByFlow",
     "Data": ["a04377e2-zb01-g182-nc02-a285a66279en", "ae5a6965-zb64-g20d-n8a8-a83d2a15081n"]
@@ -174,7 +174,7 @@ Provide the list of Flow IDs in MetricCondition. Up to 100 values can be provide
 
 Provide the list of flow module IDs in MetricCondition. Up to 100 values can be provided.
 
-```
+```json
 {
     "Type": "MetricDataFilterByFlowModule",
     "Data": ["a04377e2-zb01-g182-nc02-a285a66279en", "ae5a6965-zb64-g20d-n8a8-a83d2a15081n"]
@@ -194,7 +194,7 @@ Flow Outcome Type filter values can be any of the following depending on the fil
 + TRANSFERRED\_TO\_PHONE\_NUMBER
 + RETURNED\_TO\_FLOW
 
-```
+```json
 {
     "Type": "MetricDataFilterByFlowOutcomeType",
     "Data": ["DROPPED", "TRANSFERRED_TO_QUEUE"] // Multiple values can be provided
@@ -211,7 +211,7 @@ The following filters are optional in MetricCondition.
 
 This is an optional filter that is supported in MetricCondition for all metrics. However, if used, it is require to be consistent for every MetricCondition.
 
-```
+```json
 {
     "Type": "MetricDataFilterByChannel",
     "Data": ["VOICE", "CHAT", "TASK"], // any subset of this is valid
@@ -255,7 +255,7 @@ Rule: When any agent with Hierarchy Level 1 (filterValue = b99ba702-b84b-4279-ab
                         had AGENT_ACTIVITY equal to statusId ee8c71b9-49c2-4d00-ab6d-244f2d9a5c58 for the last 600 seconds, then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 ```
 
-```
+```json
 {
     Operator: "EQUALS", // Fixed value
     ComparisonValue: "$.MetricData.AGENT_ACTIVITY",
@@ -290,7 +290,7 @@ For more information about the OLDEST\_CONTACT\_AGE metric, see [GetCurrentMetri
 
 Rule: OLDEST\_CONTACT\_AGE metric value, filtered by listed queues and channels ≥ 900 (15 minutes), then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberGreaterOrEqualTo", // also supports "NumberLessOrEqualTo"
     ComparisonValue: "$.MetricData.OLDEST_CONTACT_AGE",
@@ -325,7 +325,7 @@ For more information about the AGENTS\_AVAILABLE metric, see [GetCurrentMetricDa
 
 Rule: `AGENTS_AVAILABLE` metric value, filtered by listed queues and channels ≤ 5, then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberLessOrEqualTo", // also supports "NumberGreaterOrEqualTo"
     ComparisonValue: "$.MetricData.AGENTS_AVAILABLE",
@@ -360,7 +360,7 @@ For more information about the `CONTACTS_IN_QUEUE` metric, see [GetCurrentMetric
 
 Rule: CONTACTS\_IN\_QUEUE metric value, filtered by listed queues and channels ≥ 100, then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberGreaterOrEqualTo", // also supports "NumberLessOrEqualTo"
     ComparisonValue: "$.MetricData.CONTACTS_IN_QUEUE",
@@ -395,7 +395,7 @@ For more information about the AVG\_QUEUE\_ANSWER\_TIME metric, see [GetCurrentM
 
 Rule: AVG\_QUEUE\_ANSWER\_TIME metric value, over the given duration of 28800 seconds (8 hours), filtered by listed queues and channels ≥ 900 (15 minutes), then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberGreaterOrEqualTo", // also supports "NumberLessOrEqualTo"
     ComparisonValue: "$.MetricData.AVG_QUEUE_ANSWER_TIME",
@@ -436,7 +436,7 @@ For more information about the AVG\_INTERACTION\_TIME metric, see [GetMetricData
 
 Rule: AVG\_INTERACTION\_TIME metric value, over the given duration of 28800 seconds (8 hours), filtered by listed queues and channels ≥ 1800 (30 minutes), then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberGreaterOrEqualTo", // also supports "NumberLessOrEqualTo"
     ComparisonValue: "$.MetricData.AVG_INTERACTION_TIME",
@@ -477,7 +477,7 @@ For more information about the AVG\_HOLD\_TIME metric, see [GetMetricDataV2](htt
 
 Rule: AVG\_HOLD\_TIME metric value, over the given duration of 28800 seconds (8 hours), filtered by listed queues and channels ≥ 1800 (30 minutes), then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberGreaterOrEqualTo", // also supports "NumberLessOrEqualTo"
     ComparisonValue: "$.MetricData.AVG_HOLD_TIME",
@@ -518,7 +518,7 @@ For more information about the AVG\_HANDLE\_TIME metric, see [GetMetricDataV2](h
 
 Rule: AVG\_HANDLE\_TIME metric value, over the given duration of 28800 seconds (8 hours), filtered by listed queues and channels ≥ 1800 (30 minutes), then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberGreaterOrEqualTo", // also supports "NumberLessOrEqualTo"
     ComparisonValue: "$.MetricData.AVG_HANDLE_TIME",
@@ -559,7 +559,7 @@ For more information about the AGENT\_OCCUPANCY metric, see [GetMetricDataV2](ht
 
 Rule: AGENT\_OCCUPANCY metric value, over the given duration of 28800 seconds (8 hours), filtered by listed queues and channels ≥ 80%, then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberGreaterOrEqualTo", // also supports "NumberLessOrEqualTo"
     ComparisonValue: "$.MetricData.AGENT_OCCUPANCY",
@@ -594,7 +594,7 @@ For more information about the SERVICE\_LEVEL metric, see [GetMetricDataV2](http
 
 Rule: SERVICE\_LEVEL metric value, over the given duration of 600 (10 minutes) metric value, over the given duration of 28800 seconds (8 hours), filtered by listed queues and channels ≤ 50%, then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberLessOrEqualTo", // also supports "NumberGreaterOrEqualTo"
     ComparisonValue: "$.MetricData.SERVICE_LEVEL",
@@ -639,7 +639,7 @@ For more information about the FLOWS\_STARTED metric, see [GetMetricDataV2](http
 
 Rule : FLOWS\_STARTED metric value, over the given duration of 300 seconds (5 minutes), filtered by listed flows and channels 10, then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberGreaterOrEqualTo", // also supports "NumberLessOrEqualTo"
     ComparisonValue: "$.MetricData.FLOWS_STARTED",
@@ -680,7 +680,7 @@ For more information about the AVG\_FLOW\_TIME metric, see [GetMetricDataV2](htt
 
 Rule : `AVG_FLOW_TIME` metric value, over the given duration of 300 seconds (5 minutes), filtered by listed flows, flow outcomes and channels >= 600 (10 minutes), then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberGreaterOrEqualTo", // also supports "NumberLessOrEqualTo"
     ComparisonValue: "$.MetricData.AVG_FLOW_TIME",
@@ -727,7 +727,7 @@ For more information about the MAX\_FLOW\_TIME metric, see [GetMetricDataV2](htt
 
 Rule : `MAX_FLOW_TIME` metric value, over the given duration of 300 seconds (5 minutes), filtered by listed flows, flow outcomes and channels >= 600 (10 minutes), then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberGreaterOrEqualTo", // also supports "NumberLessOrEqualTo"
     ComparisonValue: "$.MetricData.MAX_FLOW_TIME",
@@ -774,7 +774,7 @@ For more information about the MIN\_FLOW\_TIME metric, see [GetMetricDataV2](htt
 
 Rule : `MIN_FLOW_TIME` metric value, over the given duration of 300 seconds (5 minutes), filtered by listed flows, flow outcomes and channels >= 600 (10 minutes), then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberGreaterOrEqualTo", // also supports "NumberLessOrEqualTo"
     ComparisonValue: "$.MetricData.MIN_FLOW_TIME",
@@ -821,7 +821,7 @@ For more information about the FLOWS\_OUTCOME metric, see [GetMetricDataV2](http
 
 Rule : `FLOWS_OUTCOME` metric value, over the given duration of 300 seconds (5 minutes), filtered by listed flows, flow outcomes and channels >= 10, then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberGreaterOrEqualTo", // also supports "NumberLessOrEqualTo"
     ComparisonValue: "$.MetricData.FLOWS_OUTCOME",
@@ -868,7 +868,7 @@ For more information about the PERCENT\_FLOWS\_OUTCOME metric, see [GetMetricDat
 
 Rule : `PERCENT_FLOWS_OUTCOME` metric value, over the given duration of 300 seconds (5 minutes), filtered by listed flows, flow outcomes and channels >= 50%, then perform a [RuleAction](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAction.html).
 
-```
+```json
 {
     Operator: "NumberGreaterOrEqualTo", // also supports "NumberLessOrEqualTo"
     ComparisonValue: "$.MetricData.PERCENT_FLOWS_OUTCOME",
@@ -916,7 +916,7 @@ Supported optional filters: `MetricDataFilterByChannel`
 
 A rule with `AGENTS_AVAILABLE`, `OLDEST_CONTACT_AGE`, `CONTACTS_IN_QUEUE` in MetricGroup 1 and `AVG_QUEUE_ANSWER_TIME`, `AVG_HOLD_TIME`, `AVG_INTERACTION_TIME`, `AVG_HANDLE_TIME`, and `SERVICE_LEVEL` in Metric Group 2, both of which have End Dimension = `QUEUE`.
 
-```
+```json
 {
     "Operator": "OR",
     "Operands": [{
@@ -1092,7 +1092,7 @@ A rule with `AGENTS_AVAILABLE`, `OLDEST_CONTACT_AGE`, `CONTACTS_IN_QUEUE` in Met
 
 A rule with `AGENT_OCCUPANCY` in MetricGroup 1 and ` AGENT_ACTIVITY` and MetricGroup 2, with End Dimension = `AGENT`.
 
-```
+```json
 {
     "Operator": "OR",
     "Operands": [{
@@ -1151,7 +1151,7 @@ A rule with `AGENT_OCCUPANCY` in MetricGroup 1 and ` AGENT_ACTIVITY` and MetricG
 
 A rule with `FLOWS_STARTED`, `AVG_FLOW_TIME`, `MAX_FLOW_TIME` in MetricGroup 1 and `FLOWS_OUTCOME`, `PERCENT_FLOWS_OUTCOME` and `MIN_FLOW_TIME` in Metric Group 2, both of which have End Dimension = `FLOW`.
 
-```
+```json
 {
   "Operator": "OR",
   "Operands": [

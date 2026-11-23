@@ -68,7 +68,7 @@ You have three options for handling orphaned KMS keys.
 
 1.  **Schedule the keys for deletion.** Before scheduling deletion, audit AWS CloudTrail for `kms:GenerateDataKey` and `kms:Encrypt` events against each key ID to confirm that no data was encrypted under the key. After you confirm the key was unused, schedule deletion with a 30-day pending window so that you can cancel the deletion if you discover that the key is needed.
 
-   ```
+   ```bash
    aws kms schedule-key-deletion --key-id <key-id> --pending-window-in-days 30
    ```
 

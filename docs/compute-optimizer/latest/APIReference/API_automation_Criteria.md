@@ -45,7 +45,7 @@ Type: Array of [ResourceTagsCriteriaCondition](API_automation_ResourceTagsCriter
 Required: No
 
  ** restartNeeded **   <a name="computeoptimizer-Type-automation_Criteria-restartNeeded"></a>
-Filter criteria indicating whether the recommended action requires a resource restart.
+Filter criteria indicating whether the recommended action requires a resource restart. Valid values are `true` and `false`. Values are case-sensitive unless you use an `IgnoreCase` comparison operator. For example, `StringEquals` with the value `False` matches no recommended actions.
 Type: Array of [StringCriteriaCondition](API_automation_StringCriteriaCondition.md) objects
 Required: No
 

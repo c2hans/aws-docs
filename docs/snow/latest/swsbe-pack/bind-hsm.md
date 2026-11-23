@@ -62,7 +62,7 @@ The common name used here will be used when generating certificate. Remember the
 
 Run the `snowballEdge bind-device` command.
 
-```
+```sh
     snowballEdge bind-device
 
         --device-id:{{unique_id_of_key_management_device}} /
@@ -73,7 +73,7 @@ Run the `snowballEdge bind-device` command.
 
 When the command is successful, it produces the following output:
 
-```
+```sh
     bind-device with <BindDeviceOutput.DeviceId> successful.
 ```
 

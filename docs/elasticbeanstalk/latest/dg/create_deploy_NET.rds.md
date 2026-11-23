@@ -57,7 +57,7 @@ Elastic Beanstalk provides connection information for attached DB instances in e
 
 **Example Helpers.cs - connection string method**
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -91,7 +91,7 @@ Use the connection string to initialize your database context.
 
 **Example DBContext.cs**
 
-```
+```csharp
 using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;

@@ -41,6 +41,13 @@ Type: String
 Valid Values: `valid | invalid | pending-confirmation`
 Required: No
 
+ ** serviceManagementRoleArn **   <a name="devopsagent-Type-AWSConfiguration-serviceManagementRoleArn"></a>
+The Amazon Resource Name (ARN) of the AWS Organizations service-managed role that AIDevOps uses to deploy and manage resources across the accounts in your AWS Organization.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
+Required: No
+
 ## See Also
 <a name="API_AWSConfiguration_SeeAlso"></a>
 

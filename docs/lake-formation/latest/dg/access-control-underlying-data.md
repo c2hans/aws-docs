@@ -33,7 +33,7 @@ When you register a location, you specify an IAM role that grants read/write per
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -77,7 +77,7 @@ For read/write access to underlying data, in addition to Lake Formation permissi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

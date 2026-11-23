@@ -8,7 +8,7 @@ You are advised to use the SageMaker AI config file to set the defaults for the 
 
 The `@step` decorator's configuration in the config file is identical to the `@remote` decorator's configuration. To set up the pipeline role ARN and pipeline tags in the config file, use the `Pipeline` section shown in the following snippet:
 
-```
+```json
 SchemaVersion: '1.0'
 SageMaker:
   Pipeline:
@@ -20,7 +20,7 @@ SageMaker:
 
 For most of the defaults you can set in the configuration file you can also override by passing new values to the `@step` decorator. For example, you can override the instance type set in the config file for your preprocessing step, as shown in the following example:
 
-```
+```py
 @step(instance_type="{{ml.m5.large}}")
 def preprocess(raw_data):
     df = pandas.read_csv(raw_data)
@@ -31,7 +31,7 @@ def preprocess(raw_data):
 A few arguments are not part of the `@step` decorator parameters list—these can be configured for the entire pipeline only through the SageMaker AI configuration file. They are listed as follows:
 + `sagemaker_session` (`sagemaker.session.Session`): The underlying SageMaker AI session to which SageMaker AI delegates service calls. If unspecified, a session is created using a default configuration as follows:
 
-  ```
+  ```json
   SageMaker:
     PythonSDK:
       Modules:
@@ -41,7 +41,7 @@ A few arguments are not part of the `@step` decorator parameters list—these ca
   ```
 + `custom_file_filter` (`CustomFileFilter)`: A `CustomFileFilter` object that specifies the local directories and files to include in the pipeline step. If unspecified, this value defaults to `None`. For `custom_file_filter` to take effect, you must set `IncludeLocalWorkdir` to `True`. The following example shows a configuration that ignores all notebook files, and files and directories named `data`.
 
-  ```
+  ```json
   SchemaVersion: '1.0'
   SageMaker:
     PythonSDK:
@@ -58,7 +58,7 @@ A few arguments are not part of the `@step` decorator parameters list—these ca
 + `s3_root_uri (str)`: The root Amazon S3 folder to which SageMaker AI uploads the code archives and data. If unspecified, the default SageMaker AI bucket is used.
 + `s3_kms_key (str)`: The key used to encrypt the input and output data. You can only configure this argument in the SageMaker AI config file and the argument applies to all steps defined in the pipeline. If unspecified, the value defaults to `None`. See the following snippet for an example S3 KMS key configuration:
 
-  ```
+  ```json
   SchemaVersion: '1.0'
   SageMaker:
     PythonSDK:

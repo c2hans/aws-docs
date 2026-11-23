@@ -147,14 +147,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-standard-stack-update-termination-protection-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-standard-stack-update-termination-protection-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-ManageResourceTerminationProtection",
   "Region": "eu-west-1",

@@ -98,7 +98,8 @@ A virtual firewall to control inbound and outbound traffic.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-mediaconnect-flowvpcinterface-tags"></a>
-Property description not available.
+An array of key-value pairs to apply to this resource.
+For more information, see [Resource tags](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html).
 *Required*: No
 *Type*: Array of [Tag](aws-properties-mediaconnect-flowvpcinterface-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

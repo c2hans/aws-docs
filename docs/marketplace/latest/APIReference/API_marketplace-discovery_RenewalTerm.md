@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # RenewalTerm
 
-Defines a renewal term that enables automatic agreement renewal.
+Describes a renewal term that renews the agreement automatically.
 
 ## Contents
 <a name="API_marketplace-discovery_RenewalTerm_Contents"></a>
@@ -26,7 +26,7 @@ Valid Values: `ByolPricingTerm | ConfigurableUpfrontPricingTerm | FixedUpfrontPr
 Required: Yes
 
  ** adjustmentDeadline **   <a name="AWSMarketplaceService-Type-marketplace-discovery_RenewalTerm-adjustmentDeadline"></a>
-The duration before the agreement end date by which the renewal price is finalized, represented in ISO 8601 format (for example, P30D). Only applicable with `PercentageRange`.
+The duration before the agreement end date by which the renewal price is finalized, represented in ISO 8601 format (for example, P30D). This field applies only with `PercentageRange`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 Pattern: `(.)+`

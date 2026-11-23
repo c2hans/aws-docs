@@ -8,7 +8,7 @@ For devices registered as things in the AWS IoT Core registry, the following pol
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -38,7 +38,7 @@ For devices not registered as things in the AWS IoT Core registry, the following
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

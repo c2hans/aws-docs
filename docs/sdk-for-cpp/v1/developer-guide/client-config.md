@@ -13,7 +13,7 @@ The AWS SDK for C\+\+ includes AWS service client classes that provide functiona
 
 `ClientConfiguration` is a structure in the SDK for C\+\+ that you can instantiate and utilize in your code. The following snippet illustrates using this class to access Amazon S3 through a proxy.
 
-```
+```cpp
 Aws::Client::ClientConfiguration clientConfig;
 clientConfig.proxyHost = "localhost";
 clientConfig.proxyPort = 1234;
@@ -26,7 +26,7 @@ Aws::S3::S3Client(clientConfig);
 
  The `ClientConfiguration` struct declares the following member variables:
 
-```
+```cpp
 Aws::String accountId;
 Aws::String accountIdEndpointMode = "preferred";
 bool allowSystemProxy = false;

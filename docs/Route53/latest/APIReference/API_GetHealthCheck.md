@@ -62,8 +62,10 @@ HTTP/1.1 200
          </ChildHealthChecks>
          <Disabled>boolean</Disabled>
          <EnableSNI>boolean</EnableSNI>
+         <EndpointType>string</EndpointType>
          <FailureThreshold>integer</FailureThreshold>
          <FullyQualifiedDomainName>string</FullyQualifiedDomainName>
+         <HealthCheckSourceId>string</HealthCheckSourceId>
          <HealthThreshold>integer</HealthThreshold>
          <InsufficientDataHealthStatus>string</InsufficientDataHealthStatus>
          <Inverted>boolean</Inverted>

@@ -47,7 +47,7 @@ End users must have the necessary permissions to view and perform specific servi
 
 ****
 
-   ```
+   ```json
    {
    	"Version":"2012-10-17",
    	"Statement": [

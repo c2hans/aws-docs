@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Enable a control for a specified target.
     /// </summary>
@@ -102,7 +102,7 @@ For more information, see [About controls in AWS Control Tower](https://docs.aws
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Enables a control for a specified target.
      *
@@ -211,7 +211,7 @@ For more information, see [About controls in AWS Control Tower](https://docs.aws
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/controltower#code-examples).
 
-```
+```python
 class ControlTowerWrapper:
     """Encapsulates AWS Control Tower and Control Catalog functionality."""
 
@@ -286,7 +286,7 @@ class ControlTowerWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     " Enable the control
     DATA(lo_output) = io_ctt->enablecontrol(
       iv_controlidentifier = iv_control_arn

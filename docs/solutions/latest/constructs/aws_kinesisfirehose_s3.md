@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { KinesisFirehoseToS3 } from '@aws-solutions-constructs/aws-kinesisfirehose-s3';
@@ -33,7 +33,7 @@ import { KinesisFirehoseToS3 } from '@aws-solutions-constructs/aws-kinesisfireho
 new KinesisFirehoseToS3(this, 'test-firehose-s3', {});
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_kinesis_firehose_s3 import KinesisFirehoseToS3
 from aws_cdk import Stack
 from constructs import Construct
@@ -41,7 +41,7 @@ from constructs import Construct
 KinesisFirehoseToS3(self, 'test_firehose_s3')
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

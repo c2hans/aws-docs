@@ -70,7 +70,7 @@ https://sns.us-west-2.amazonaws.com/?Action=ListPlatformApplications
 #### Sample Response
 <a name="API_ListPlatformApplications_Example_1_Response"></a>
 
-```
+```xml
 <ListPlatformApplicationsResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ListPlatformApplicationsResult>
         <PlatformApplications>

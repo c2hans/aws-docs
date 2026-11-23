@@ -19,7 +19,7 @@ Create a project folder and install the required packages:
 **Note**
 On Windows, use: `.venv\Scripts\activate`
 
-```
+```bash
 mkdir agentcore-tools-quickstart
 cd agentcore-tools-quickstart
 python3 -m venv .venv
@@ -28,7 +28,7 @@ source .venv/bin/activate
 
 Install the required packages:
 
-```
+```bash
 pip install bedrock-agentcore strands-agents strands-agents-tools
 ```
 
@@ -42,7 +42,7 @@ These packages provide:
 
 Create a file named `code_interpreter_agent.py` and add the following code:
 
-```
+```python
 from strands import Agent
 from strands_tools.code_interpreter import AgentCoreCodeInterpreter
 
@@ -78,7 +78,7 @@ This code:
 
 Execute the script:
 
-```
+```bash
 python code_interpreter_agent.py
 ```
 

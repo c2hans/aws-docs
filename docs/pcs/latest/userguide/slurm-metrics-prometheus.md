@@ -47,7 +47,7 @@ The following procedure uses shell variables for security group IDs. Set these v
 
 1. Create a dedicated security group for the collector and capture the group ID:
 
-   ```
+   ```cmd
    COLLECTOR_SG_ID=$(aws ec2 create-security-group \
        --group-name "{{pcs-prometheus-collector}}" \
        --description "Security group for managed Prometheus collector" \
@@ -60,7 +60,7 @@ The following procedure uses shell variables for security group IDs. Set these v
 
    Use the `--ip-permissions` form to include a rule description for auditability:
 
-   ```
+   ```cmd
    aws ec2 authorize-security-group-ingress \
        --group-id "$CLUSTER_SG_ID" \
        --ip-permissions \
@@ -69,7 +69,7 @@ The following procedure uses shell variables for security group IDs. Set these v
 
    Alternatively, you can use the shorter form without a rule description:
 
-   ```
+   ```cmd
    aws ec2 authorize-security-group-ingress \
        --group-id "$CLUSTER_SG_ID" \
        --protocol tcp \
@@ -81,7 +81,7 @@ The following procedure uses shell variables for security group IDs. Set these v
 
    Revoke the default allow-all egress rule:
 
-   ```
+   ```cmd
    aws ec2 revoke-security-group-egress \
        --group-id "$COLLECTOR_SG_ID" \
        --ip-permissions '[{"IpProtocol":"-1","IpRanges":[{"CidrIp":"0.0.0.0/0"}]}]'
@@ -89,7 +89,7 @@ The following procedure uses shell variables for security group IDs. Set these v
 
    Add an explicit egress rule to allow the collector to reach the controller on TCP 6817:
 
-   ```
+   ```cmd
    aws ec2 authorize-security-group-egress \
        --group-id "$COLLECTOR_SG_ID" \
        --ip-permissions \
@@ -98,7 +98,7 @@ The following procedure uses shell variables for security group IDs. Set these v
 
    Add an explicit egress rule for HTTPS (TCP 443) to reach the metrics delivery destination (Amazon Managed Service for Prometheus or CloudWatch):
 
-   ```
+   ```cmd
    aws ec2 authorize-security-group-egress \
        --group-id "$COLLECTOR_SG_ID" \
        --ip-permissions \
@@ -107,7 +107,7 @@ The following procedure uses shell variables for security group IDs. Set these v
 
    For tighter control in subnets that use a VPC endpoint for delivery, replace the CIDR range with the VPC endpoint's security group:
 
-   ```
+   ```cmd
    aws ec2 authorize-security-group-egress \
        --group-id "$COLLECTOR_SG_ID" \
        --ip-permissions \
@@ -118,7 +118,7 @@ If you did not revoke the default egress rule, you can skip this step. The defau
 
 1. (Isolated clusters) If your collector subnets have no internet access and use an interface VPC endpoint to reach the destination service, add an inbound rule to the VPC endpoint's security group. This rule allows the collector's HTTPS traffic to reach the endpoint network interfaces. This is a commonly missed step.
 
-   ```
+   ```cmd
    aws ec2 authorize-security-group-ingress \
        --group-id "$VPCE_SG_ID" \
        --ip-permissions \
@@ -129,7 +129,7 @@ If you did not revoke the default egress rule, you can skip this step. The defau
 As a simpler but less restrictive alternative, you can attach the controller's existing security group to the collector if that security group contains a self-referencing rule that allows traffic from itself. This satisfies the connectivity requirement without creating a dedicated group.
 For example, if your cluster's security group (`sg-0abc1234def56789a`) already allows all TCP traffic from itself, pass that security group ID in the `--security-group-ids` parameter when you create the scraper:
 
-```
+```cmd
 aws amp create-scraper \
     --source '{"vpcConfiguration":{"subnetIds":["{{subnet-id-1}}","{{subnet-id-2}}"],"securityGroupIds":["sg-0abc1234def56789a"]}}' \
     ...
@@ -149,7 +149,7 @@ Use the AWS CLI to create a VPC-connected managed collector that scrapes your cl
 
 1. Create a JSON input file named `create-scraper-input.json` with the following structure. Choose the `destination` block that matches your target.
 
-   ```
+   ```json
    {
      "source": {
        "vpcConfiguration": {
@@ -173,7 +173,7 @@ Use the AWS CLI to create a VPC-connected managed collector that scrapes your cl
 
    **Destination: Amazon Managed Service for Prometheus workspace**
 
-   ```
+   ```json
    "destination": {
      "ampConfiguration": {
        "workspaceArn": "arn:aws:aps:{{region}}:{{account-id}}:workspace/{{workspace-id}}"
@@ -183,7 +183,7 @@ Use the AWS CLI to create a VPC-connected managed collector that scrapes your cl
 
    **Destination: CloudWatch dataset**
 
-   ```
+   ```json
    "destination": {
      "cloudWatchConfiguration": {
        "datasetArn": "arn:aws:cloudwatch:{{region}}:{{account-id}}:dataset/default"
@@ -195,7 +195,7 @@ Use the AWS CLI to create a VPC-connected managed collector that scrapes your cl
 
 1. Create the scraper:
 
-   ```
+   ```cmd
    aws amp create-scraper --cli-input-json file://create-scraper-input.json
    ```
 
@@ -203,7 +203,7 @@ Use the AWS CLI to create a VPC-connected managed collector that scrapes your cl
 
 1. Wait for the scraper status to change to `ACTIVE` (typically 5–15 minutes):
 
-   ```
+   ```cmd
    aws amp describe-scraper --scraper-id {{scraper-id}}
    ```
 
@@ -230,13 +230,13 @@ The scrape configuration requires the private IP address of your AWS PCS cluster
 
 1. Run the following command. Replace {{cluster-identifier}} with your cluster name or ID.
 
-   ```
+   ```cmd
    aws pcs get-cluster --cluster-identifier {{cluster-identifier}}
    ```
 
    In the response, locate the `SLURMCTLD` entry in the `endpoints` array. The `privateIpAddress` value is the controller endpoint you need for the scrape configuration. Here is an example:
 
-   ```
+   ```json
    "endpoints": [
        {
            "type": "SLURMCTLD",
@@ -255,7 +255,7 @@ The scrape configuration requires the private IP address of your AWS PCS cluster
 
 1. Alternatively, extract only the controller IP address directly:
 
-   ```
+   ```cmd
    aws pcs get-cluster --cluster-identifier {{cluster-identifier}} \
        --query 'cluster.endpoints[?type==`SLURMCTLD`].privateIpAddress' \
        --output text
@@ -268,7 +268,7 @@ The scrape configuration requires the private IP address of your AWS PCS cluster
 
 The following YAML configuration scrapes four Slurm metrics endpoints (jobs, nodes, scheduler, and partitions) from the cluster controller. Each endpoint is defined as a separate job so that you can identify metrics by source in your queries.
 
-```
+```yaml
 global:
   scrape_interval: 60s
   scrape_timeout: 30s
@@ -332,7 +332,7 @@ After the scraper reaches `ACTIVE` status, the first datapoints appear approxima
 
 Send a SigV4-signed request to list available metric names from your workspace:
 
-```
+```cmd
 awscurl --service aps --region {{region}} \
     "https://aps-workspaces.{{region}}.amazonaws.com/workspaces/{{workspace-id}}/api/v1/label/__name__/values"
 ```
@@ -344,7 +344,7 @@ The calling principal needs `aps:QueryMetrics` and `aps:GetLabels` permissions (
 
 Send a SigV4-signed request to list available metric names from your CloudWatch dataset:
 
-```
+```cmd
 awscurl --service monitoring --region {{region}} \
     "https://monitoring.{{region}}.amazonaws.com/api/v1/label/__name__/values"
 ```
@@ -371,7 +371,7 @@ You query the collected Slurm metrics using PromQL. The same queries work agains
 
 The following example uses `awscurl` to query running jobs from an Amazon Managed Service for Prometheus workspace:
 
-```
+```cmd
 awscurl --service aps --region {{region}} \
     -X POST "https://aps-workspaces.{{region}}.amazonaws.com/workspaces/{{workspace-id}}/api/v1/query" \
     -H "Content-Type: application/x-www-form-urlencoded" \
@@ -388,7 +388,7 @@ The calling principal needs `aps:QueryMetrics`, `aps:GetMetricMetadata`, `aps:Ge
 
 The following example uses `awscurl` to query running jobs from a CloudWatch dataset:
 
-```
+```cmd
 awscurl --service monitoring --region {{region}} \
     -X POST "https://monitoring.{{region}}.amazonaws.com/api/v1/query" \
     -H "Content-Type: application/x-www-form-urlencoded" \
@@ -404,25 +404,25 @@ The following queries work against either destination. Replace {{my-cluster-name
 
 CPU utilization percentage
 
-```
+```promql
 100 * slurm_node_cpus_alloc{cluster="{{my-cluster-name}}"} / slurm_node_cpus{cluster="{{my-cluster-name}}"}
 ```
 
 Pending jobs (queue backlog)
 
-```
+```promql
 slurm_jobs_pending{cluster="{{my-cluster-name}}"}
 ```
 
 Running jobs
 
-```
+```promql
 slurm_jobs_running{cluster="{{my-cluster-name}}"}
 ```
 
 Job throughput
 
-```
+```promql
 slurm_jobs_completed{cluster="{{my-cluster-name}}"}
 ```
 

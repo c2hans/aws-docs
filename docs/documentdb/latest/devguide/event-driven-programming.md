@@ -17,7 +17,7 @@ The `watch()` method returns an instance of [`ChangeStreamIterable`](https://mon
 
 [`ChangeStreamIterable`](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/ChangeStreamIterable.html#startAtOperationTime(org.bson.BsonTimestamp)) implements the core Java interface `Iterable` and can be used with `forEach()`. To capture events using `forEach()`, pass in a callback function to `forEach()` that processes the changed event. The following code snippet shows how to open a change streams on a collection to start change event monitoring:
 
-```
+```java
 ChangeStreamIterable < Document > iterator = collection.watch();
 iterator.forEach(event - > {
     System.out.println("Received a change: " + event);
@@ -26,7 +26,7 @@ iterator.forEach(event - > {
 
 Another way of traversing through all the change events is by opening a cursor that maintains a connection to the cluster and continuously receives new change events as they occur. To obtain a change streams cursor, use the `cursor()` method of [`ChangeStreamIterable`](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/ChangeStreamIterable.html#startAtOperationTime(org.bson.BsonTimestamp)) object. The following code example shows how to monitor change events using cursor:
 
-```
+```java
 try (MongoChangeStreamCursor < ChangeStreamDocument < Document >> cursor = collection.watch().cursor()) {
     System.out.println(cursor.tryNext());
 }
@@ -44,7 +44,7 @@ Time-based operations in change streams offer different approaches to manage the
 
 The following code example retrieves the event associated with the insert document, captures it’s resume token, and then provides that token to start monitoring for events after the insert event. The event is associated with the update event, then gets the cluster time when the update happened and uses that timestamp as a starting point for further processing.
 
-```
+```java
 BsonDocument resumeToken;
 BsonTimestamp resumeTime;
 
@@ -74,6 +74,6 @@ By default, the update change event does not include the full document and it on
 
 This method takes a [`FullDocument`](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-core/com/mongodb/client/model/changestream/FullDocument.html) enum as a parameter. Currently, Amazon DocumentDB only support DEFAULT and `UPDATE_LOOKUP` values. The following code snippet shows how to ask for full document for update events when starting to watch for changes:
 
-```
+```java
 try (MongoChangeStreamCursor < ChangeStreamDocument < Document >> cursor = collection.watch().fullDocument(FullDocument.UPDATE_LOOKUP).cursor())
 ```

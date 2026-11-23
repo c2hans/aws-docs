@@ -81,7 +81,7 @@ For more information about sending email using the Amazon SES API, see [Using th
 
 When you access Amazon SES through the SMTP interface, your SMTP client application assembles the message, so the information you need to provide depends on the application you are using. At a minimum, the SMTP exchange between a client and a server requires a source address, a destination address, and message data.
 
-For more information about sending email using the Amazon SES SMTP interface, see [Using the Amazon SES SMTP interface to send email](send-email-smtp.md).
+For more information about sending email using the Amazon SES SMTP interface, see [Using SMTP to send email](send-email-smtp.md).
 
 ### Amazon SES console
 <a name="send-email-concepts-email-required-information-console"></a>

@@ -63,7 +63,7 @@ Launch Wizard uses AWS Secrets Manager to manage your domain and SQL Server acco
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -14,7 +14,7 @@ The following sample policy describes the required AWS IAM permissions for creat
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -58,7 +58,7 @@ The following IAM permissions are required while using VPC connection for creati
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

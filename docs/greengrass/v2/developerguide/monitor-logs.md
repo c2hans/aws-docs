@@ -53,14 +53,14 @@ The following considerations apply when you use file system logs:
 ------
 #### [ Linux or Unix ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
   ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-  ```
+  ```cmd
   type {{C:\greengrass\v2}}\logs\com.example.HelloWorld.log
   ```
 
@@ -69,7 +69,7 @@ The following considerations apply when you use file system logs:
 ------
 #### [ PowerShell ]
 
-  ```
+  ```ps
   gc {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
   ```
 
@@ -81,14 +81,14 @@ The following considerations apply when you use file system logs:
 ------
 #### [ Linux or Unix ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/{{com.example.HelloWorld}}.log
   ```
 
 ------
 #### [ PowerShell ]
 
-  ```
+  ```ps
   gc {{C:\greengrass\v2}}\logs\{{com.example.HelloWorld}}.log -Tail 10 -Wait
   ```
 
@@ -155,21 +155,21 @@ If you [configure the AWS IoT Greengrass Core software as a system service](conf
 ------
 #### [ Linux or Unix (systemd) ]
 
-   ```
+   ```bash
    sudo journalctl -u greengrass.service
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    type {{C:\greengrass\v2}}\logs\greengrass.wrapper.log
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\logs\greengrass.wrapper.log
    ```
 
@@ -180,14 +180,14 @@ If you [configure the AWS IoT Greengrass Core software as a system service](conf
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    type {{C:\greengrass\v2}}\logs\greengrass.err.log
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\logs\greengrass.err.log
    ```
 
@@ -213,7 +213,7 @@ You can deploy the [log manager component](log-manager-component.md) to configur
 **Note**
 The Greengrass core device's token exchange role must allow the core device to write to CloudWatch Logs, as shown in the following example IAM policy. If you [installed the AWS IoT Greengrass Core software with automatic resource provisioning](quick-installation.md), your core device has these permissions.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -233,7 +233,7 @@ The Greengrass core device's token exchange role must allow the core device to w
 
 To configure a core device to write AWS IoT Greengrass Core software logs to CloudWatch Logs, [create a deployment](create-deployments.md) that specifies a configuration update that sets `uploadToCloudWatch` to `true` for the `aws.greengrass.LogManager` component. AWS IoT Greengrass Core software logs include logs for the [Greengrass nucleus](greengrass-nucleus-component.md) and [plugin components](develop-greengrass-components.md#component-types).
 
-```
+```json
 {
   "logsUploaderConfiguration": {
     "systemLogsConfiguration": {
@@ -245,7 +245,7 @@ To configure a core device to write AWS IoT Greengrass Core software logs to Clo
 
 To configure a core device to write a Greengrass component's logs to CloudWatch Logs, [create a deployment](create-deployments.md) that specifies a configuration update that adds the component to the list of component logging configurations. When you add a component to this list, the log manager component writes its logs to CloudWatch Logs. Component logs include logs for [generic components and Lambda components](develop-greengrass-components.md#component-types).
 
-```
+```json
 {
   "logsUploaderConfiguration": {
     "componentLogsConfigurationMap": {

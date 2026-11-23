@@ -60,4 +60,4 @@ This topic provides recommendations for getting good memories out of Amazon Open
 
 **Use a customer managed key for sensitive data.** With a customer managed key you control and audit access to a space's data and can revoke it. For more information, see [Key management](memory-data-protection.md#memory-key-management).
 
-**Monitor API activity with CloudTrail.** Turn on data events for your spaces to record every event and memory operation. For more information, see [Logging Amazon OpenSearch Memory API calls with AWS CloudTrail](memory-monitoring.md).
+**Monitor API activity with CloudTrail.** Turn on data events for your spaces to record every event and memory operation. For more information, see [Monitoring Amazon OpenSearch Memory with AWS CloudTrail](memory-cloudtrail.md).

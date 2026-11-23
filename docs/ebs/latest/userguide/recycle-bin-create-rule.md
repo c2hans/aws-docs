@@ -75,7 +75,7 @@ You can't lock Region-level retention rules that have exclusion tags.
 **To create a retention rule**
 Use the [create-rule](https://docs.aws.amazon.com/cli/latest/reference/rbin/create-rule.html) AWS CLI command. For `--retention-period`, specify the number of days to retain deleted snapshots in the Recycle Bin. For `--resource-type`, specify `EBS_VOLUME` for volumes, `EBS_SNAPSHOT` for snapshots, or `EC2_IMAGE` for AMIs. To create a tag-level retention rule, for `--resource-tags`, specify the tags to use to identify the resources that are to be retained. To create a Region-level retention rule, omit `--resource-tags`, and optionally specify `--exclude-resource-tags`, to exclude resources that have specific tags. To lock a Region-level retention rule, include `--lock-configuration`, and specify the unlock delay period in days.
 
-```
+```bash
 aws rbin create-rule \
 --retention-period RetentionPeriodValue={{number_of_days}},RetentionPeriodUnit=DAYS \
 --resource-type {{EBS_VOLUME|EBS_SNAPSHOT|EC2_IMAGE}} \
@@ -88,7 +88,7 @@ aws rbin create-rule \
 **Example 1**
 The following example command creates an unlocked Region-level retention rule that retains all deleted snapshots for a period of `7` days.
 
-```
+```bash
 aws rbin create-rule \
 --retention-period RetentionPeriodValue=7,RetentionPeriodUnit=DAYS \
 --resource-type EBS_SNAPSHOT \
@@ -98,7 +98,7 @@ aws rbin create-rule \
 **Example 2**
 The following example command creates a tag-level rule that retains deleted snapshots that are tagged with `purpose=production` for a period of `7` days.
 
-```
+```bash
 aws rbin create-rule \
 --retention-period RetentionPeriodValue=7,RetentionPeriodUnit=DAYS \
 --resource-type EBS_SNAPSHOT \
@@ -109,7 +109,7 @@ aws rbin create-rule \
 **Example 3**
 The following example command creates a locked Region-level retention rule that retains all deleted snapshots for a period of `7` days. The retention rule is locked with an unlock delay period of 7 days.
 
-```
+```bash
 aws rbin create-rule \
 --retention-period RetentionPeriodValue=7,RetentionPeriodUnit=DAYS \
 --resource-type EBS_SNAPSHOT \
@@ -120,7 +120,7 @@ aws rbin create-rule \
 **Example 4**
 The following example command creates an unlocked  Region-level retention rule that retains all deleted snapshots, except snapshots that are tagged with `purpose:testing`, for a period of `7` days.
 
-```
+```bash
 aws rbin create-rule \
 --retention-period RetentionPeriodValue=7,RetentionPeriodUnit=DAYS \
 --resource-type EBS_SNAPSHOT \

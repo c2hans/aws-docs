@@ -46,6 +46,7 @@ Content-type: application/json
    "agentSpaces": [
       {
          "agentSpaceId": "string",
+         "awsSourceMode": "string",
          "createdAt": "string",
          "description": "string",
          "kmsKeyArn": "string",

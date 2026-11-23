@@ -24,7 +24,7 @@ In this step, you note the instance ID and public IP address for the Amazon EC2 
 1. Get the Amazon EC2 instance's ID. To get this, do one of the following:
    + In a terminal session in the AWS Cloud9 IDE for the environment, run the following command to get the Amazon EC2 instance's ID.
 
-     ```
+     ```sh
      curl http://169.254.169.254/latest/meta-data/instance-id
      ```
 
@@ -38,7 +38,7 @@ In this step, you note the instance ID and public IP address for the Amazon EC2 
    + In the IDE for the environment, on the menu bar, choose **Share**. In the **Share this environment** dialog box, make a note of the public IP address in the **Application** box. The public IP address is in this format: `192.0.2.0`.
    + In a terminal session in the IDE for the environment, run the following command to get the Amazon EC2 instance's public IP address.
 
-     ```
+     ```sh
      curl http://169.254.169.254/latest/meta-data/public-ipv4
      ```
 

@@ -101,7 +101,7 @@ The following example request deletes the resource server `MyAPI` from user pool
 #### Sample Request
 <a name="API_DeleteResourceServer_Example_1_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z

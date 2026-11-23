@@ -13,7 +13,7 @@ $ aws iot list-principal-things \
 
 The output can look like the following.
 
-```
+```JSON
 {
     "things": [
         "MyLightBulb1",

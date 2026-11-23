@@ -11,7 +11,7 @@ You can use the following code snippets to describe a scheduled query.
 ------
 #### [  Java  ]
 
-```
+```java
 public void describeScheduledQueries(String scheduledQueryArn) {
     System.out.println("Describing Scheduled Query");
     try {
@@ -32,7 +32,7 @@ public void describeScheduledQueries(String scheduledQueryArn) {
 ------
 #### [  Java v2  ]
 
-```
+```java
 public void describeScheduledQueries(String scheduledQueryArn) {
     System.out.println("Describing Scheduled Query");
     try {
@@ -87,7 +87,7 @@ func (timestreamBuilder TimestreamBuilder) DescribeScheduledQuery(scheduledQuery
 ------
 #### [  Python  ]
 
-```
+```python
 def describe_scheduled_query(self, scheduled_query_arn):
     print("\nDescribing Scheduled Query")
     try:
@@ -109,7 +109,7 @@ def describe_scheduled_query(self, scheduled_query_arn):
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/blob/mainline/sample_apps_reinvent2021/js/schedule-query-example.js).
 
-```
+```javascript
 async function describeScheduledQuery(scheduledQueryArn) {
      console.log("Describing Scheduled Query");
      var params = {
@@ -128,7 +128,7 @@ async function describeScheduledQuery(scheduledQueryArn) {
 ------
 #### [  .NET  ]
 
-```
+```cs
 private async Task DescribeScheduledQuery(string scheduledQueryArn)
  {
      try

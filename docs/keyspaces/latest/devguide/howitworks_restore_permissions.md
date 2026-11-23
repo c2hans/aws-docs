@@ -13,7 +13,7 @@ To successfully restore a table, the IAM principal needs the following minimum p
 
 This is an example of a policy that grants minimum required permissions to a user to restore tables in keyspace `mykeyspace`.
 
-```
+```JSON
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -43,7 +43,7 @@ The `aws:ViaAWSService` condition key allows access when any AWS service makes a
 
 The following is an example of a policy that restricts source traffic to a specific IP address and allows Amazon Keyspaces to restore a table on the principal's behalf.
 
-```
+```JSON
 {
    "Version":"2012-10-17",
    "Statement":[

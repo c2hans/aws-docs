@@ -65,13 +65,13 @@ You can use one of the following operations:
 
   1. Run the following command to return a list of Amazon Resource Names (ARNs) for your IAM Identity Center instances:
 
-     ```
+     ```bash
      $ C:\> aws sso-admin list-instances
      ```
 
   1. Run the following command to create a Multi-party approval identity source with the available IAM Identity Center of your choice:
 
-     ```
+     ```bash
      $ C:\> aws mpa create-identity-source \
        --identity-source-parameters '{
          "IamIdentityCenter": {

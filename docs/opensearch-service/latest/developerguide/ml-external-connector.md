@@ -33,7 +33,7 @@ Set up an IAM role to delegate Secrets Manager permissions to OpenSearch Service
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -61,7 +61,7 @@ Set up an IAM role to delegate Secrets Manager permissions to OpenSearch Service
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -84,7 +84,7 @@ Set up an IAM role to delegate Secrets Manager permissions to OpenSearch Service
 
    We recommend that you use the `aws:SourceAccount` and `aws:SourceArn` condition keys to limit access to specific domain. The `SourceAccount` is the AWS account ID that belongs to the owner of the domain, and the `SourceArn` is the ARN of the domain. For example, you can add the following condition block to the trust policy:
 
-   ```
+   ```json
    "Condition": {
        "StringEquals": {
            "aws:SourceAccount": "{{account-id}}"
@@ -107,7 +107,7 @@ In order to create the connector, you need permission to pass the IAM role to Op
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -162,7 +162,7 @@ Fine-grained access control introduces an additional step when setting up a conn
 
 To create a connector, send a `POST` request to the OpenSearch Service domain endpoint. You can use curl, the sample Python client, Postman, or another method to send a signed request. Note that you can't use a `POST` request in the Kibana console. The request takes the following format:
 
-```
+```json
 POST {{domain-endpoint}}/_plugins/_ml/connectors/_create
 {
     "name": "Cohere Connector: embedding",
@@ -196,7 +196,7 @@ If your domain resides within a virtual private cloud (VPC), your computer must 
 
 The Python client is simpler to automate than a HTTP request and has better re-usability. To create the AI connector with the Python client, save the following sample code to a Python file. The client requires the [AWS SDK for Python (Boto3)](https://aws.amazon.com/sdk-for-python/), [`requests`](https://requests.readthedocs.io/en/latest/), and [`requests-aws4auth`](https://pypi.org/project/requests-aws4auth/) packages.
 
-```
+```python
 import boto3
 import requests
 from requests_aws4auth import AWS4Auth

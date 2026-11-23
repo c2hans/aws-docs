@@ -27,6 +27,8 @@ If you use multiple AD Connectors, it is best practice for each of the AD Connec
 
 ![ASample architecture showing a Windows WorkSpaces with the computer objects created in the Shared Services VPC hosting Managed Active Directory using users from the customer identity domain.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/one-way-trust-ad-onprem.png)
 
+*Figure 11: AWS Microsoft, shared services VPC, and a one-way trust to AD on-premises*
+
  This architecture uses the following components or constructs:
 
 ## AWS

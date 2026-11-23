@@ -42,7 +42,7 @@ You can view the prefix pool for your connection to determine how many prefixes 
 
 Use the [describe-connections](https://docs.aws.amazon.com/cli/latest/reference/directconnect/describe-connections.html) command.
 
-```
+```bash
 aws directconnect describe-connections \
     --connection-id {{dxcon-abc12345}}
 ```
@@ -80,7 +80,7 @@ You can set the prefix allocation for a virtual interface when you create it. Th
 
 Use the [create-private-virtual-interface](https://docs.aws.amazon.com/cli/latest/reference/directconnect/create-private-virtual-interface.html) command. The following example creates a private virtual interface with prefix allocations.
 
-```
+```bash
 aws directconnect create-private-virtual-interface \
     --connection-id {{dxcon-abc12345}} \
     --new-private-virtual-interface '{
@@ -122,7 +122,7 @@ You can update the prefix allocation on an existing virtual interface to increas
 
 Use the [update-virtual-interface-attributes](https://docs.aws.amazon.com/cli/latest/reference/directconnect/update-virtual-interface-attributes.html) command.
 
-```
+```bash
 aws directconnect update-virtual-interface-attributes \
     --virtual-interface-id {{dxvif-abc12345}} \
     --prefix-pool-allocated-count-ipv4 {{500}} \
@@ -154,7 +154,7 @@ You can view the total prefix allocations across all virtual interfaces attached
 
 Use the [describe-direct-connect-gateways](https://docs.aws.amazon.com/cli/latest/reference/directconnect/describe-direct-connect-gateways.html) command.
 
-```
+```bash
 aws directconnect describe-direct-connect-gateways \
     --direct-connect-gateway-id {{d2113d06-a0d8-476b-91a7-8555d9973d12}}
 ```

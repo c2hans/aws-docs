@@ -62,7 +62,7 @@ For information about SVL\_S3QUERY, see [SVL\_S3QUERY](r_SVL_S3QUERY.md).
 
 The following example gets the scan step details for the last query run.
 
-```
+```sql
 select query, segment, elapsed, s3_scanned_rows, s3_scanned_bytes, s3query_returned_rows, s3query_returned_bytes, files
 from svcs_s3query_summary
 where query = pg_last_query_id()

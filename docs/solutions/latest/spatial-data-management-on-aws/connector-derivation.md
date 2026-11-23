@@ -71,7 +71,7 @@ The `s3Lookup` operation reads a file from S3 and parses it into records. It sup
    +  **Role name** must start with `SpatialDataManagementContentDerivation-` (for example, `SpatialDataManagementContentDerivation-MyS3Lookup`).
    +  **Trust policy** must allow the SDMA solution account to assume it:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -93,7 +93,7 @@ The `s3Lookup` operation reads a file from S3 and parses it into records. It sup
 
      If you have AWS CLI access, you can find these values by running:
 
-     ```
+     ```bash
      aws lambda get-function \
        --function-name SpatialDataManagement-ConnectorInvocationFunction \
        --query 'Configuration.Role' --output text
@@ -106,7 +106,7 @@ The `s3Lookup` operation reads a file from S3 and parses it into records. It sup
      Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
    +  **Permissions policy** must grant `s3:GetObject` on the source file:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -131,7 +131,7 @@ For CSV files, the following options are available in the trigger-level `derivat
 
 This example reads a CSV file from S3 and applies metadata to files based on filename matching:
 
-```
+```json
 {
   "s3Config": {
     "bucketName": "amzn-s3-demo-bucket",
@@ -186,7 +186,7 @@ The `restLookup` operation calls a REST API endpoint and parses the response int
    +  **Role name** must start with `SpatialDataManagementContentDerivation-` (for example, `SpatialDataManagementContentDerivation-MyRestLookup`).
    +  **Trust policy** must allow the SDMA connector invocation Lambda to assume it:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -208,7 +208,7 @@ The `restLookup` operation calls a REST API endpoint and parses the response int
 
      If you have AWS CLI access, you can find these values by running:
 
-     ```
+     ```bash
      aws lambda get-function \
        --function-name SpatialDataManagement-ConnectorInvocationFunction \
        --query 'Configuration.Role' --output text
@@ -221,7 +221,7 @@ The `restLookup` operation calls a REST API endpoint and parses the response int
      Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
    +  **Permissions policy** must grant access to the Secrets Manager secret (if using API key, token, or basic auth):
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -239,7 +239,7 @@ The `restLookup` operation calls a REST API endpoint and parses the response int
 
 This example calls a REST API to look up file metadata from an external catalog by project ID:
 
-```
+```json
 {
   "restConfig": {
     "apiBase": "https://api.example.com/v1",
@@ -300,7 +300,7 @@ The `dynamodbLookup` operation performs a GetItem on a DynamoDB table and return
    +  **Role name** must start with `SpatialDataManagementContentDerivation-` (for example, `SpatialDataManagementContentDerivation-MyDynamoDBLookup`).
    +  **Trust policy** must allow the SDMA connector invocation Lambda to assume it:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -322,7 +322,7 @@ The `dynamodbLookup` operation performs a GetItem on a DynamoDB table and return
 
      If you have AWS CLI access, you can find these values by running:
 
-     ```
+     ```bash
      aws lambda get-function \
        --function-name SpatialDataManagement-ConnectorInvocationFunction \
        --query 'Configuration.Role' --output text
@@ -335,7 +335,7 @@ The `dynamodbLookup` operation performs a GetItem on a DynamoDB table and return
      Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
    +  **Permissions policy** must grant `dynamodb:GetItem` on the target table:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -360,7 +360,7 @@ The partition key value can be resolved in two ways:
 
 This example looks up file metadata from a DynamoDB table using the filename as the partition key:
 
-```
+```json
 {
   "securityConfig": {
     "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentDerivation-MyDynamoDBLookup",
@@ -407,7 +407,7 @@ The `dynamodbConfig` at the trigger’s `derivation` level is merged with the co
 
 The `copyFields` configuration provides a shortcut for copying a set of fields from the external record to resource metadata using prefix-based matching. Instead of listing individual field mappings, you specify a source prefix and target prefix:
 
-```
+```json
 "copyFields": {
   "sourcePrefix": "metadata.",
   "targetPrefix": "file."
@@ -421,7 +421,7 @@ This copies all fields starting with `metadata.` from the external record to the
 
 The `recordIdMapping` configuration stores the external record’s identifier as a metadata attribute on the matched resource:
 
-```
+```json
 "recordIdMapping": {
   "target": "file.external_id"
 }

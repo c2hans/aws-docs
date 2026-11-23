@@ -26,7 +26,7 @@ When an input exceeds an operation's batch-size limit, divide it into valid batc
 
 When you have a small, known number of independent operations that can all be in flight at once, pass their coroutines to `asyncio.gather()`. Awaiting `gather()` lets the operations make progress concurrently and returns successful results in input order.
 
-```
+```python
 import asyncio
 
 from aws_sdk_dynamodb import AsyncDynamoDBClient
@@ -51,7 +51,7 @@ If one operation raises an exception, `gather()` propagates it but doesn't autom
 
 Fan-out creates one request for each input item. For a finite input collection of manageable size, this pattern uses `gather()` to collect the results and a semaphore to limit how many SDK calls are active at once.
 
-```
+```python
 import asyncio
 
 from aws_sdk_dynamodb import AsyncDynamoDBClient

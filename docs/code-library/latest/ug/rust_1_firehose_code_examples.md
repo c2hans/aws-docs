@@ -26,7 +26,7 @@ The following code example shows how to use `PutRecordBatch`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/firehose#code-examples).
 
-```
+```rust
 async fn put_record_batch(
     client: &Client,
     stream: &str,

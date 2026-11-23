@@ -31,6 +31,8 @@ Work with your finance team and other relevant stakeholders to understand the re
 
 ![Flowchart detailing the relationship between cost and usage within an organization.](https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/cost-usage-organization-chart.png)
 
+*Cost and usage organization chart.*
+
 ## Implementation steps
 <a name="implementation-steps"></a>
 +  **Define your organization categories:** Meet with stakeholders to define categories that reflect your organization's structure and requirements. These will directly map to the structure of existing financial categories, such as business unit, budget, cost center, or department. Look at the outcomes the cloud delivers for your business, such as training or education, as these are also organization categories. Multiple categories can be assigned to a resource, and a resource can be in multiple different categories, so define as many categories as needed.

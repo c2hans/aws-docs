@@ -33,7 +33,7 @@ For more information, see [Add, modify, and remove routes](https://docs.aws.amaz
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified route from the specified route table. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2Route -RouteTableId rtb-1a2b3c4d -DestinationCidrBlock 0.0.0.0/0
 ```
 **Output:**
@@ -49,7 +49,7 @@ Performing operation "Remove-EC2Route (DeleteRoute)" on Target "rtb-1a2b3c4d".
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified route from the specified route table. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2Route -RouteTableId rtb-1a2b3c4d -DestinationCidrBlock 0.0.0.0/0
 ```
 **Output:**

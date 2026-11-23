@@ -11,7 +11,7 @@ You can follow an auto upgrade with the job, its job runs, the evaluation record
 
 While the job is set to `auto`, `GetJob` returns `AutoUpgradeMetadata`. It shows the source version, the target version, the evaluation status, and the analysis ID. Use the analysis ID to approve or decline an upgrade and to get the summaries.
 
-```
+```bash
 aws glue get-job \
   --job-name my-etl-job \
   --query 'Job.AutoUpgradeMetadata'
@@ -22,7 +22,7 @@ aws glue get-job \
 
 `GlueVersion` in the `GetJobRun` response shows the version that a run actually used, such as `4.0`. It never shows `auto`. Use it to tell apart runs on the current version, upgraded runs, and retries.
 
-```
+```bash
 aws glue get-job-run \
   --job-name my-etl-job \
   --run-id jr_0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef \
@@ -45,7 +45,7 @@ aws glue get-job-run \
 
 The following command gets an evaluation.
 
-```
+```bash
 aws glue get-job-upgrade-analysis \
   --job-name my-etl-job \
   --analysis-id ja-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d
@@ -53,7 +53,7 @@ aws glue get-job-upgrade-analysis \
 
 To find the evaluations for a job, run the following command.
 
-```
+```bash
 aws glue list-job-upgrade-analyses \
   --job-name my-etl-job \
   --filter '{"AnalysisType": "AUTO_UPGRADE"}'
@@ -66,7 +66,7 @@ For what each report contains, see [Summary reports](auto-version-upgrades-how-a
 + **Console** – Choose the job, and then choose the **Upgrade Analysis** tab.
 + **AWS CLI** – Run the following command. The `AutoUpgradeEligibilitySummary` and `AutoUpgradeEvaluationSummary` fields hold download URLs. The URLs are valid for 1 hour. To get new ones, run the command again.
 
-```
+```bash
 aws glue get-job-upgrade-analysis \
   --job-name my-etl-job \
   --analysis-id ja-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d \
@@ -92,7 +92,7 @@ AWS Glue sends an event at each step of an auto upgrade. You can use these event
 
 The following event pattern matches approval requests. You can use it in a rule that sends them to an Amazon SNS topic.
 
-```
+```json
 {
   "source": ["aws.glue-autoversion"],
   "detail-type": ["Auto Version Job State Change"],

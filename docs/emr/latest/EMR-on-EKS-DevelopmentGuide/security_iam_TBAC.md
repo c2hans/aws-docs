@@ -23,7 +23,7 @@ In the following policy example, the StringEquals condition operator tries to ma
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -50,7 +50,7 @@ In the following policy example, the StringEquals condition operator tries to ma
 
 You can also specify multiple tag values using a condition operator. For example, to allow actions on virtual clusters where the `department` tag contains the value `dev` or `test`, you could replace the condition block in the earlier example with the following.
 
-```
+```json
 "Condition": {
         "StringEquals": {
           "aws:ResourceTag/department": ["dev", "test"]
@@ -68,7 +68,7 @@ In the example below, the tag needs to be applied when creating the virtual clus
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -100,7 +100,7 @@ The following policy statement allows a user to create a virtual cluster only if
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -135,7 +135,7 @@ The effect of this policy is to deny a user the permission to add or remove any 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

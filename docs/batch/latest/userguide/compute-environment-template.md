@@ -16,7 +16,7 @@ The `instanceRole` field accepts an instance profile ARN, not a role ARN. The fo
 **Note**
 You can generate a compute environment template with the following AWS CLI command.
 
-```
+```sh
 $ aws batch create-compute-environment --generate-cli-skeleton
 ```
 
@@ -25,7 +25,7 @@ Compute environments must be created in `ENABLED` state.
 
 The following example shows a skeleton template for a **managed Amazon EC2 compute environment**. The `computeResources` block is required when `type` is `MANAGED`.
 
-```
+```json
 {
     "computeEnvironmentName": "",
     "type": "MANAGED",
@@ -68,7 +68,7 @@ The following example shows a skeleton template for a **managed Amazon EC2 compu
 
 The following example shows a skeleton template for an **unmanaged Amazon EC2 compute environment**. The `computeResources` block is not used for `UNMANAGED` compute environments and should be omitted.
 
-```
+```json
 {
     "computeEnvironmentName": "",
     "type": "UNMANAGED",

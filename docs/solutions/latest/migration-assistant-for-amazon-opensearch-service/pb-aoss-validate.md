@@ -11,7 +11,7 @@ Validate the collection in increasing depth before you trust it with production 
 
 Confirm the Migration Console can reach and authenticate to the collection:
 
-```
+```bash
 console clusters connection-check --cluster target
 console clusters curl target /
 ```
@@ -21,7 +21,7 @@ console clusters curl target /
 
 Compare index lists and per-index document counts between the source domain and the collection:
 
-```
+```bash
 console clusters cat-indices --refresh
 console clusters curl target /<index>/_count
 ```
@@ -33,7 +33,7 @@ Document counts on the target may differ slightly from the source if the source 
 
 For a vector-search workload, run representative k-NN queries against the collection and confirm the results match what the source returns for the same query vectors:
 
-```
+```bash
 console clusters curl target /<index>/_search?pretty -XPOST \
   -H 'Content-Type: application/json' \
   -d '{

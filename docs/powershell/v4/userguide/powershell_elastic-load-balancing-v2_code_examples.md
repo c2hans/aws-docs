@@ -28,7 +28,7 @@ The following code example shows how to use `Add-ELB2ListenerCertificate`.
 **Tools for PowerShell V4**
 **Example 1: This example adds additional certificate to the specified Listener.**
 
-```
+```powershell
 Add-ELB2ListenerCertificate -ListenerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener/app/test-alb/3651b4394dd9a24f/3873f123b98f7618' -Certificate @{CertificateArn = 'arn:aws:acm:us-east-1:123456789012:certificate/19478bd5-491d-47d4-b1d7-5217feba1d97'}
 ```
 **Output:**
@@ -48,7 +48,7 @@ The following code example shows how to use `Add-ELB2Tag`.
 **Tools for PowerShell V4**
 **Example 1: This example add new Tag to specified `AWS.Tools.ElasticLoadBalancingV2` resource.**
 
-```
+```powershell
 Add-ELB2Tag -ResourceArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -Tag @{Key = 'productVersion'; Value = '1.0.0'}
 ```
 +  For API details, see [AddTags](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -61,7 +61,7 @@ The following code example shows how to use `Edit-ELB2Listener`.
 **Tools for PowerShell V4**
 **Example 1: This example modifes the specified listeners default action to fixed-response.**
 
-```
+```powershell
 $newDefaultAction = [Amazon.ElasticLoadBalancingV2.Model.Action]@{
     "FixedResponseConfig" = @{
     "ContentType" = "text/plain"
@@ -94,7 +94,7 @@ The following code example shows how to use `Edit-ELB2LoadBalancerAttribute`.
 **Tools for PowerShell V4**
 **Example 1: This example modifes the Attributes of the specified load balancer.**
 
-```
+```powershell
 Edit-ELB2LoadBalancerAttribute -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -Attribute @{Key = 'deletion_protection.enabled'; Value = 'true'}
 ```
 **Output:**
@@ -120,7 +120,7 @@ The following code example shows how to use `Edit-ELB2Rule`.
 **Tools for PowerShell V4**
 **Example 1: This example modifes the specified Listener rule configurations.**
 
-```
+```powershell
 $newRuleCondition = [Amazon.ElasticLoadBalancingV2.Model.RuleCondition]@{
     "PathPatternConfig" = @{
     "Values" = "/login1","/login2","/login3"
@@ -149,7 +149,7 @@ The following code example shows how to use `Edit-ELB2TargetGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example modifes the properties of the specified Target Group.**
 
-```
+```powershell
 Edit-ELB2TargetGroup -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970' -HealthCheckIntervalSecond 60 -HealthCheckPath '/index.html' -HealthCheckPort 8080
 ```
 **Output:**
@@ -182,7 +182,7 @@ The following code example shows how to use `Edit-ELB2TargetGroupAttribute`.
 **Tools for PowerShell V4**
 **Example 1: This example modifies the deregistration\_delay attribute of the specified Target Group.**
 
-```
+```powershell
 Edit-ELB2TargetGroupAttribute -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970' -Attribute @{Key = 'deregistration_delay.timeout_seconds'; Value = 600}
 ```
 **Output:**
@@ -207,7 +207,7 @@ The following code example shows how to use `Get-ELB2AccountLimit`.
 **Tools for PowerShell V4**
 **Example 1: This command lists ELB2 account limits for a given region.**
 
-```
+```powershell
 Get-ELB2AccountLimit
 ```
 **Output:**
@@ -240,7 +240,7 @@ The following code example shows how to use `Get-ELB2Listener`.
 **Tools for PowerShell V4**
 **Example 1: This examples describes listeners of the specified ALB/NLB.**
 
-```
+```powershell
 Get-ELB2Listener -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f'
 ```
 **Output:**
@@ -272,7 +272,7 @@ The following code example shows how to use `Get-ELB2ListenerCertificate`.
 **Tools for PowerShell V4**
 **Example 1: This examples describes the certificate for the specified listener.**
 
-```
+```powershell
 Get-ELB2ListenerCertificate -ListenerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener/app/test-alb/3651b4394dd9a24f/66e10e3aaf5b6d9b'
 ```
 **Output:**
@@ -292,7 +292,7 @@ The following code example shows how to use `Get-ELB2LoadBalancer`.
 **Tools for PowerShell V4**
 **Example 1: This sample displays all the load balancers for the given region.**
 
-```
+```powershell
 Get-ELB2LoadBalancer
 ```
 **Output:**
@@ -321,7 +321,7 @@ The following code example shows how to use `Get-ELB2LoadBalancerAttribute`.
 **Tools for PowerShell V4**
 **Example 1: This command describes the attributes of given Load balancer.**
 
-```
+```powershell
 Get-ELB2LoadBalancerAttribute -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/net/test-elb/238d34ad8d94bc2e'
 ```
 **Output:**
@@ -345,7 +345,7 @@ The following code example shows how to use `Get-ELB2Rule`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the listener rules for the specified Listener ARN.**
 
-```
+```powershell
 Get-ELB2Rule -ListenerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener/app/test-alb/3651b4394dd9a24f/66e10e3aaf5b6d9b'
 ```
 **Output:**
@@ -379,7 +379,7 @@ The following code example shows how to use `Get-ELB2SSLPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This examples lists all available listener policies for ElasticLoadBalancingV2.**
 
-```
+```powershell
 Get-ELB2SSLPolicy
 ```
 **Output:**
@@ -408,7 +408,7 @@ The following code example shows how to use `Get-ELB2Tag`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the Tags for the specified resource.**
 
-```
+```powershell
 Get-ELB2Tag -ResourceArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f'
 ```
 **Output:**
@@ -428,7 +428,7 @@ The following code example shows how to use `Get-ELB2TargetGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified Target Group.**
 
-```
+```powershell
 Get-ELB2TargetGroup -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970'
 ```
 **Output:**
@@ -461,7 +461,7 @@ The following code example shows how to use `Get-ELB2TargetGroupAttribute`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the attributes of the specified Target Group.**
 
-```
+```powershell
 Get-ELB2TargetGroupAttribute -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970'
 ```
 **Output:**
@@ -486,7 +486,7 @@ The following code example shows how to use `Get-ELB2TargetHealth`.
 **Tools for PowerShell V4**
 **Example 1: This example returns the health status of the Targets present in the specified Target Group.**
 
-```
+```powershell
 Get-ELB2TargetHealth -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970'
 ```
 **Output:**
@@ -506,7 +506,7 @@ The following code example shows how to use `New-ELB2Listener`.
 **Tools for PowerShell V4**
 **Example 1: This example creates new ALB listener with the default action 'Forward' to send traffic to specified Target Group.**
 
-```
+```powershell
 $defaultAction = [Amazon.ElasticLoadBalancingV2.Model.Action]@{
   ForwardConfig = @{
     TargetGroups = @(
@@ -543,7 +543,7 @@ The following code example shows how to use `New-ELB2LoadBalancer`.
 **Tools for PowerShell V4**
 **Example 1: This example creates new internet facing Application load balancer with two subnets.**
 
-```
+```powershell
 New-ELB2LoadBalancer -Type application -Scheme internet-facing -IpAddressType ipv4 -Name 'New-Test-ALB' -SecurityGroup 'sg-07c3414abb8811cbd' -subnet 'subnet-c37a67a6','subnet-fc02eea0'
 ```
 **Output:**
@@ -572,7 +572,7 @@ The following code example shows how to use `New-ELB2Rule`.
 **Tools for PowerShell V4**
 **Example 1: This example creates new Listener rule with fixed-response action based on the customer header value for the specified Listener.**
 
-```
+```powershell
 $newRuleAction = [Amazon.ElasticLoadBalancingV2.Model.Action]@{
   "FixedResponseConfig" = @{
     "ContentType" = "text/plain"
@@ -611,7 +611,7 @@ The following code example shows how to use `New-ELB2TargetGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example creates new Target group with the provided parameters.**
 
-```
+```powershell
 New-ELB2TargetGroup -HealthCheckEnabled 1 -HealthCheckIntervalSeconds 30 -HealthCheckPath '/index.html' -HealthCheckPort 80 -HealthCheckTimeoutSecond 5 -HealthyThresholdCount 2 -UnhealthyThresholdCount 5 -Port 80 -Protocol 'HTTP' -TargetType instance -VpcId 'vpc-2cfd7000' -Name 'NewTargetGroup'
 ```
 **Output:**
@@ -644,7 +644,7 @@ The following code example shows how to use `Register-ELB2Target`.
 **Tools for PowerShell V4**
 **Example 1: This example registers 'i-0672a4c4cdeae3111' instance with the specified target group.**
 
-```
+```powershell
 Register-ELB2Target -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970' -Target @{Port = 80; Id = 'i-0672a4c4cdeae3111'}
 ```
 +  For API details, see [RegisterTargets](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -657,7 +657,7 @@ The following code example shows how to use `Remove-ELB2Listener`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified Listener.**
 
-```
+```powershell
 Remove-ELB2Listener -ListenerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener/app/test-alb/3651b4394dd9a24f/66e10e3aaf5b6d9b'
 ```
 **Output:**
@@ -670,7 +670,7 @@ Performing the operation "Remove-ELB2Listener (DeleteListener)" on target "arn:a
 ```
 **Example 2: This example removes specified listener from the Load balancer.**
 
-```
+```powershell
 Remove-ELB2Listener -ListenerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener/app/test-alb/3651b4394dd9a24f/3873f123b98f7618'
 ```
 **Output:**
@@ -691,7 +691,7 @@ The following code example shows how to use `Remove-ELB2ListenerCertificate`.
 **Tools for PowerShell V4**
 **Example 1: This example removes specified certificate from the specified Target group.**
 
-```
+```powershell
 Remove-ELB2ListenerCertificate -Certificate @{CertificateArn = 'arn:aws:acm:us-east-1:123456789012:certificate/19478bd5-491d-47d4-b1d7-5217feba1d97'} -ListenerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener/app/test-alb/3651b4394dd9a24f/3873f123b98f7618'
 ```
 **Output:**
@@ -712,7 +712,7 @@ The following code example shows how to use `Remove-ELB2LoadBalancer`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified Load balancer.**
 
-```
+```powershell
 Remove-ELB2LoadBalancer -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f'
 ```
 **Output:**
@@ -733,7 +733,7 @@ The following code example shows how to use `Remove-ELB2Rule`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified rule from the Listener**
 
-```
+```powershell
 Remove-ELB2Rule -RuleArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener-rule/app/test-alb/3651b4394dd9a24f/3873f123b98f7618/4b25eb10a42e33ab'
 ```
 **Output:**
@@ -754,7 +754,7 @@ The following code example shows how to use `Remove-ELB2Tag`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the tag for the specified key. **
 
-```
+```powershell
 Remove-ELB2Tag -ResourceArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -TagKey 'productVersion'
 ```
 **Output:**
@@ -775,7 +775,7 @@ The following code example shows how to use `Remove-ELB2TargetGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified Target Group.**
 
-```
+```powershell
 Remove-ELB2TargetGroup -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/testsssss/4e0b6076bc6483a7'
 ```
 **Output:**
@@ -796,7 +796,7 @@ The following code example shows how to use `Set-ELB2IpAddressType`.
 **Tools for PowerShell V4**
 **Example 1: This example changes Load balancer IP address type from 'IPv4' to 'DualStack'.**
 
-```
+```powershell
 Set-ELB2IpAddressType -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -IpAddressType dualstack
 ```
 **Output:**
@@ -816,7 +816,7 @@ The following code example shows how to use `Set-ELB2RulePriority`.
 **Tools for PowerShell V4**
 **Example 1: This example changes the priority of the specified listener rule.**
 
-```
+```powershell
 Set-ELB2RulePriority -RulePriority -RulePriority @{Priority = 11; RuleArn = 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener-rule/app/test-alb/3651b4394dd9a24f/a4eb199fa5046f80/dbf4c6dcef3ec6f8'}
 ```
 **Output:**
@@ -838,7 +838,7 @@ The following code example shows how to use `Set-ELB2SecurityGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example adds security group 'sg-07c3414abb8811cbd' to the specified Load balancer.**
 
-```
+```powershell
 Set-ELB2SecurityGroup -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -SecurityGroup 'sg-07c3414abb8811cbd'
 ```
 **Output:**
@@ -856,7 +856,7 @@ The following code example shows how to use `Set-ELB2Subnet`.
 **Tools for PowerShell V4**
 **Example 1: This example modifes the subnets of the specified Load balancer.**
 
-```
+```powershell
 Set-ELB2Subnet -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -Subnet 'subnet-7d8a0a51','subnet-c37a67a6'
 ```
 **Output:**
@@ -877,7 +877,7 @@ The following code example shows how to use `Unregister-ELB2Target`.
 **Tools for PowerShell V4**
 **Example 1: This example deregisters instance 'i-0672a4c4cdeae3111' from the specified Target group.**
 
-```
+```powershell
 $targetDescription = New-Object Amazon.ElasticLoadBalancingV2.Model.TargetDescription
 $targetDescription.Id = 'i-0672a4c4cdeae3111'
 Unregister-ELB2Target -Target $targetDescription -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970'

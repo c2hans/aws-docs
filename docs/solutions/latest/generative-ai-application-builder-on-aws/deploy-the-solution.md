@@ -48,7 +48,7 @@ When performing a standalone deployment, you must do the following:
 
 To create a suitable configuration for a standalone deployment, you can create a required use case from the Deployment dashboard, and copy record from the configuration table. Otherwise, you can craft your own configuration based on the following example for a Bedrock deployment:
 
-```
+```JSON
 {
  "UseCaseName": "SampleUseCase",
  "ConversationMemoryParams": {

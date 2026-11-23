@@ -81,7 +81,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/bulk-
 
 ****
 
-   ```
+   ```json
    {
          "Version":"2012-10-17",
          "Statement": [

@@ -20,7 +20,7 @@ To isolate your queues, you must configure the `Queue Role` to only allow queue 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -62,7 +62,7 @@ You must also set a trust policy on the role. In the following example, replace 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -133,7 +133,7 @@ The job attachments feature doesn't restrict files by file name extension. Two c
 
 You can add the following statement to your `Queue Role` to access custom software in your Amazon S3 bucket. In the following example, replace {{SOFTWARE\_BUCKET\_NAME}} with the name of your S3 bucket and {{BUCKET\_ACCOUNT\_OWNER}} with the AWS account ID that owns the bucket.
 
-```
+```json
 "Statement": [
     {
         "Action": [

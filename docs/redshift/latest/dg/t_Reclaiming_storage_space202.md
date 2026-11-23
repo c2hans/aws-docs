@@ -23,7 +23,7 @@ Amazon Redshift tracks scan queries that use the sort key on each table. Amazon 
 
 For example, consider the following query:
 
-```
+```sql
 select "table", unsorted,vacuum_sort_benefit from svv_table_info order by 1;
 ```
 

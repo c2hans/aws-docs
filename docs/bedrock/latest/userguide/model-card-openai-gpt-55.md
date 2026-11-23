@@ -250,7 +250,7 @@ Use the settings from [Step 4 - Set environment variables](#model-card-openai-gp
 ------
 #### [ Responses API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -265,7 +265,7 @@ print(response)
 ------
 #### [ Chat ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()

@@ -88,7 +88,7 @@ Enable cross-origin resource sharing (CORS) by returning correct headers.
 #### Asset schema
 <a name="assets-id-response-body-asset-example"></a>
 
-```
+```json
 {
   "createdAt": "string",
   "packagingGroupId": "string",

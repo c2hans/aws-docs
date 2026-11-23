@@ -48,7 +48,7 @@ The following differences apply to Amazon SageMaker AI:
          AWS GovCloud (US-East) - `237065988967.dkr.ecr.us-gov-east-1.amazonaws.com`
     + ECR login - authenticate to the applicable account from the preceding list. For example, for the framework account in AWS GovCloud (US-West):
 
-      ```
+      ```sh
       aws ecr get-login-password --region us-gov-west-1 | docker login --username AWS --password-stdin 442386744353.dkr.ecr.us-gov-west-1.amazonaws.com
       ```
     + Image URI format:

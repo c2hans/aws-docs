@@ -57,15 +57,19 @@ Backup gateway is downloadable AWS Backup software that you deploy to your VMwar
 ## Working with Amazon DynamoDB
 <a name="working-with-ddb"></a>
 
-AWS Backup supports backing up and restoring Amazon DynamoDB tables. DynamoDB is a fully-managed NoSQL database service that provides fast and predictable performance with seamless scalability.
+AWS Backup supports backing up and restoring Amazon DynamoDB (DynamoDB) tables. DynamoDB is a fully-managed NoSQL database service that provides fast and predictable performance with seamless scalability.
 
 Since its launch, AWS Backup has always supported DynamoDB. Starting November 2021, AWS Backup also introduced advanced features for DynamoDB backups. Those advanced features include copying your backups across AWS Regions and accounts, tiering backups to cold storage, and using tags for permissions and cost management.
 
 New AWS Backup customers onboarding after November 2021 will have advanced DynamoDB backup features enabled by default.
 
-We recommend all existing AWS Backup customers enable advanced features for DynamoDB. There is no difference in warm backup storage pricing after you enable advanced features, and you can save money by tiering backups to cold storage and optimize your costs by using cost allocation tags.
+We recommend that all existing AWS Backup customers enable advanced features for DynamoDB to also receive incremental backups. Advanced features are a prerequisite for incremental backups. With the incremental launch, enabling advanced features also automatically enables DynamoDB incremental backups. However, if you are an existing customer with advanced features already enabled, incremental is not turned on by default. If you have already enabled advanced features but are still using full backups, you can opt in to incremental backups. Enable the **Incremental Backup** setting under **Advanced Features for DynamoDB** in AWS Backup settings. Before you opt in, review the pricing for DynamoDB incremental backups on the [AWS Backup pricing page](https://aws.amazon.com/backup/pricing/). If you prefer, you can always revert to full backups by turning off the same **Incremental Backup** setting, although you keep advanced features enabled. For instructions on enabling incremental backups, see [Enabling Amazon DynamoDB incremental backups using the console](incremental-ddb-backups.md#incremental-ddb-backups-enable-console).
+
+You can save on backup storage by tiering backups to cold storage, and you can optimize your costs by using cost allocation tags.
 
 For a full list of advanced features and how to enable them, see [Advanced DynamoDB backup](advanced-ddb-backup.md).
+
+With incremental backups, you can capture only the data that changed since your last backup instead of taking a full snapshot each time. This lets you keep frequent backup schedules — recovery point objectives (RPOs) as low as one hour — although you reduce backup storage. AWS Backup supports incremental backups for RPOs up to one week. Incremental backups build on advanced features, so you enable them with the **Incremental Backup** setting after advanced features are turned on. For new AWS Backup customers, incremental backups for DynamoDB are turned on by default. Existing customers opt in. To learn how incremental backups work and how to enable them, see [Amazon DynamoDB incremental backups](incremental-ddb-backups.md).
 + How to back up resources: [Getting started with AWS Backup](getting-started.md)
 + How to restore DynamoDB resources: [Restore a Amazon DynamoDB table](restoring-dynamodb.md)
 

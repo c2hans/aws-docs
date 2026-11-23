@@ -56,7 +56,7 @@ The following example Rust Lambda function code takes in information about an or
 
 **Example `main.rs` Lambda Event Function**
 
-```
+```rust
 use aws_sdk_s3::{Client, primitives::ByteStream};
 use lambda_runtime::{run, service_fn, Error, LambdaEvent};
 use serde::{Deserialize, Serialize};

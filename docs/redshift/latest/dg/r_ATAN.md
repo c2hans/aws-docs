@@ -31,7 +31,7 @@ The input parameter is a `DOUBLE PRECISION` number.
 
 To return the arc tangent of `1` and multiply it by 4, use the following example.
 
-```
+```sql
 SELECT ATAN(1) * 4 AS pi;
 
 +-------------------+
@@ -43,7 +43,7 @@ SELECT ATAN(1) * 4 AS pi;
 
 To convert the arc tangent of `1` to the equivalent number of degrees, use the following example.
 
-```
+```sql
 SELECT (ATAN(1) * 180/(SELECT PI())) AS degrees;
 
 +---------+

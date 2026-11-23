@@ -17,7 +17,7 @@ In this example, you will create a map image with a width of `1024` and a height
 ------
 #### [ Request URL ]
 
-```
+```terminal
 https://maps.geo.eu-central-1.amazonaws.com/v2/static/map?style=Satellite&width=1024&height=1024&zoom=15&center=-123.1156126,49.2767046&key={{API_KEY}}
 ```
 
@@ -38,7 +38,7 @@ The `bbox` format is `{southwest_longitude},{southwest_latitude},{northeast_long
 ------
 #### [ Request URL ]
 
-```
+```terminal
 https://maps.geo.eu-central-1.amazonaws.com/v2/static/map?style=Satellite&width=1024&height=1024&bounding-box=90.00,-21.94,146.25,31.95&key={{API_KEY}}
 ```
 
@@ -59,7 +59,7 @@ The format for bounding positions is `{longitude1},{latitude1},{longitude2},{lat
 ------
 #### [ Request URL ]
 
-```
+```terminal
 https://maps.geo.eu-central-1.amazonaws.com/v2/static/map?style=Satellite&width=1024&height=1024&bounded-positions=2.2945,48.8584,2.3376,48.8606,2.3500,48.8529,2.3076,48.8698,2.2950,48.8738,2.3431,48.8867,2.3372,48.8462,2.3266,48.8600,2.3212,48.8656,2.3317,48.8719&key={{API_KEY}}
 ```
 

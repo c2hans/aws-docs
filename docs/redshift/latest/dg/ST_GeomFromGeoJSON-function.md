@@ -37,7 +37,7 @@ If *geojson\_string* is not valid, then an error is returned.
 
 The following SQL returns a 2D geometry represented in the input GeoJSON.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_GeomFromGeoJSON('{"type":"Point","coordinates":[1,2]}'));
 ```
 
@@ -49,7 +49,7 @@ SELECT ST_AsEWKT(ST_GeomFromGeoJSON('{"type":"Point","coordinates":[1,2]}'));
 
 The following SQL returns a 3DZ geometry represented in the input GeoJSON.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_GeomFromGeoJSON('{"type":"LineString","coordinates":[[1,2,3],[4,5,6],[7,8,9]]}'));
 ```
 
@@ -61,7 +61,7 @@ SELECT ST_AsEWKT(ST_GeomFromGeoJSON('{"type":"LineString","coordinates":[[1,2,3]
 
 The following SQL returns 3DZ geometry when only one point has three coordinates while all other points have two coordinates in the input GeoJSON.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_GeomFromGeoJSON('{"type":"Polygon","coordinates":[[[0, 0],[0, 1, 8],[1, 0],[0, 0]]]}'));
 ```
 

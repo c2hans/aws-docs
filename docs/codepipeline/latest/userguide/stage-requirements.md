@@ -11,7 +11,7 @@ The following example shows the stage level of the pipeline structure in both JS
 ------
 #### [ YAML ]
 
-```
+```YAML
 pipeline:
   name: MyPipeline
   roleArn: >-
@@ -50,7 +50,7 @@ metadata:
 ------
 #### [ JSON ]
 
-```
+```JSON
 {
     "pipeline": {
         "name": "MyPipeline",

@@ -120,7 +120,7 @@ aws globalaccelerator list-custom-routing-endpoint-groups
          --region us-west-2
 ```
 
-```
+```json
 {
     "EndpointGroups": [
         {

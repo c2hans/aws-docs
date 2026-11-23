@@ -11,7 +11,7 @@ Media stream pipelines send the following events. Expand each section to learn m
 
 The Amazon Chime SDK media pipeline sends this event when the media stream pipeline starts receiving audio from the meeting and streaming that audio to KVS. Empty `AttendeeId` and `ExternalUserId` fields indicate that the media pipeline sent mixed audio to the KVS stream.
 
-```
+```json
 {
     "version": "0",
     "id": "5ee6265a-0a40-104e-d8fd-a3b4bdd78483",
@@ -45,7 +45,7 @@ The Amazon Chime SDK media pipeline sends this event when the media stream pipel
 
 The media pipeline sends this event to Event Bridge when streaming to KVS ends.
 
-```
+```json
 {
     "version": "0",
     "id": "5ee6265a-0a40-104e-d8fd-a3b4bdd78483",

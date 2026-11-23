@@ -283,7 +283,7 @@ AWS Glue keeps track of the creation time, last update time, and version of your
 **Example Using a JSON classifier to pull records from an array**
 Suppose that your JSON data is an array of records. For example, the first few lines of your file might look like the following:
 
-```
+```json
 [
   {
     "type": "constituency",
@@ -365,7 +365,7 @@ root
 **Example Using a JSON classifier to examine only parts of a file**
 Suppose that your JSON data follows the pattern of the example JSON file `s3://awsglue-datasets/examples/us-legislators/all/areas.json` drawn from [http://everypolitician.org/](http://everypolitician.org/). Example objects in the JSON file look like the following:
 
-```
+```json
 {
   "type": "constituency",
   "id": "ocd-division\/country:us\/state:ak",

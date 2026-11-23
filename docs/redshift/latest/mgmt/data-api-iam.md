@@ -31,7 +31,7 @@ To run a query on a cluster that is owned by another account, the owning account
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -57,7 +57,7 @@ Finally, the Account A IAM role needs to be able to assume the Account B IAM rol
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -80,7 +80,7 @@ You can specify resource ARNs in your identity-based policy to control access to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -118,7 +118,7 @@ By default, Amazon Redshift Data API treats the IAM role used when calling `Exec
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [
@@ -157,7 +157,7 @@ The following IAM policy allows only the session owner to get statement results.
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [

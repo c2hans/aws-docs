@@ -143,7 +143,7 @@ You configure the Optimized engine during domain creation in the Amazon OpenSear
 
 Use the `create-domain` command with the `--engine-mode` parameter:
 
-```
+```bash
 aws opensearch create-domain \
   --domain-name my-domain \
   --engine-version "OpenSearch_3.5" \

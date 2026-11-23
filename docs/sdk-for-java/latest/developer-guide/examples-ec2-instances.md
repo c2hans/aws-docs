@@ -11,7 +11,7 @@ Create a new Amazon EC2 instance by calling the [Ec2Client](https://sdk.amazonaw
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2Client;
 import software.amazon.awssdk.services.ec2.model.InstanceType;
@@ -24,7 +24,7 @@ import software.amazon.awssdk.services.ec2.model.Ec2Exception;
 
  **Code**
 
-```
+```java
    public static String createEC2Instance(Ec2Client ec2,String name, String amiId ) {
 
         RunInstancesRequest runRequest = RunInstancesRequest.builder()
@@ -73,7 +73,7 @@ To start an Amazon EC2 instance, call the Ec2Client’s [`startInstances`](https
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2Client;
 import software.amazon.awssdk.services.ec2.model.StartInstancesRequest;
@@ -82,7 +82,7 @@ import software.amazon.awssdk.services.ec2.model.StopInstancesRequest;
 
  **Code**
 
-```
+```java
     public static void startInstance(Ec2Client ec2, String instanceId) {
 
         StartInstancesRequest request = StartInstancesRequest.builder()
@@ -103,7 +103,7 @@ To stop an Amazon EC2 instance, call the Ec2Client’s [`stopInstances`](https:/
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2Client;
 import software.amazon.awssdk.services.ec2.model.StartInstancesRequest;
@@ -112,7 +112,7 @@ import software.amazon.awssdk.services.ec2.model.StopInstancesRequest;
 
  **Code**
 
-```
+```java
     public static void stopInstance(Ec2Client ec2, String instanceId) {
 
         StopInstancesRequest request = StopInstancesRequest.builder()
@@ -133,7 +133,7 @@ To reboot an Amazon EC2 instance, call the Ec2Client’s [`rebootInstances`](htt
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2Client;
 import software.amazon.awssdk.services.ec2.model.Ec2Exception;
@@ -142,7 +142,7 @@ import software.amazon.awssdk.services.ec2.model.RebootInstancesRequest;
 
  **Code**
 
-```
+```java
     public static void rebootEC2Instance(Ec2Client ec2, String instanceId) {
 
       try {
@@ -171,7 +171,7 @@ Instances are grouped by *reservation*. Each reservation corresponds to the call
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2Client;
 import software.amazon.awssdk.services.ec2.model.DescribeInstancesRequest;
@@ -183,7 +183,7 @@ import software.amazon.awssdk.services.ec2.model.Ec2Exception;
 
  **Code**
 
-```
+```java
     public static void describeEC2Instances( Ec2Client ec2){
 
         String nextToken = null;
@@ -227,7 +227,7 @@ To start monitoring an instance, you must create a [MonitorInstancesRequest](htt
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2Client;
 import software.amazon.awssdk.services.ec2.model.MonitorInstancesRequest;
@@ -236,7 +236,7 @@ import software.amazon.awssdk.services.ec2.model.UnmonitorInstancesRequest;
 
  **Code**
 
-```
+```java
     public static void monitorInstance( Ec2Client ec2, String instanceId) {
 
         MonitorInstancesRequest request = MonitorInstancesRequest.builder()
@@ -258,7 +258,7 @@ To stop monitoring an instance, create an [UnmonitorInstancesRequest](https://sd
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2Client;
 import software.amazon.awssdk.services.ec2.model.MonitorInstancesRequest;
@@ -267,7 +267,7 @@ import software.amazon.awssdk.services.ec2.model.UnmonitorInstancesRequest;
 
  **Code**
 
-```
+```java
     public static void unmonitorInstance(Ec2Client ec2, String instanceId) {
         UnmonitorInstancesRequest request = UnmonitorInstancesRequest.builder()
                 .instanceIds(instanceId).build();

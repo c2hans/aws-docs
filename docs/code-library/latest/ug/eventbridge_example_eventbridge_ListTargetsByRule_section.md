@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 List all of the targets for a rule using the rule name.
 
-```
+```csharp
     /// <summary>
     /// List all of the targets matching a rule by name.
     /// </summary>
@@ -78,7 +78,7 @@ For more information, see [Event bus targets in Amazon EventBridge](https://docs
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 List all of the targets for a rule by using the rule name.
 
-```
+```java
     public static void listTargets(EventBridgeClient eventBrClient, String ruleName) {
         ListTargetsByRuleRequest ruleRequest = ListTargetsByRuleRequest.builder()
                 .rule(ruleName)
@@ -99,7 +99,7 @@ List all of the targets for a rule by using the rule name.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 suspend fun listTargets(ruleName: String?) {
     val ruleRequest =
         ListTargetsByRuleRequest {

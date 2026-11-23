@@ -10,12 +10,12 @@ As a best-practice for security, keep your Amazon Linux 2 AMIs up-to-date on Sno
 
 You can also get the latest Amazon Linux 2 image ID using the `ssm get-parameters` command in the AWS CLI.
 
-```
+```bash,sh,zsh
   aws ssm get-parameters --names /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2 --query 'Parameters[0].[Value]' --region your-region
 ```
 
 The command returns the latest image ID of the AMI. For example:
 
-```
+```bash,sh,zsh
    ami-0ccb473bada910e74
 ```

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 
 Configure your device trust provider on the endpoint using device posture options. You can set this when you create an endpoint or modify an existing one. Set `Enabled` to `true` to turn on device posture, and provide one or more trust providers. Each trust provider specifies the provider type, your tenant identifier with that provider, and the URL of the provider's public signing key, which Client VPN uses to validate the device posture tokens it receives.
 
-```
+```bash
 aws ec2 create-client-vpn-endpoint \
   --client-cidr-block 10.0.0.0/16 \
   --server-certificate-arn arn:aws:acm:us-east-1:111122223333:certificate/EXAMPLE \

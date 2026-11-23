@@ -24,7 +24,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "Cores": [
   {
@@ -79,7 +79,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-cores-coredefinitionid-versions-post-cli"></a>
 
-```
+```bash
 aws greengrass create-core-definition-version \
   --core-definition-id <value> \
   [--cores <value>] \
@@ -90,7 +90,7 @@ aws greengrass create-core-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "CoreDefinitionId": "string",
 "Cores": [
@@ -112,7 +112,7 @@ cli-input-json format:
 
  [ VersionInformation](definitions-versioninformation.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -140,7 +140,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -207,7 +207,7 @@ type: integer
 ### CLI
 <a name="-greengrass-definition-cores-coredefinitionid-versions-get-cli"></a>
 
-```
+```bash
 aws greengrass list-core-definition-versions \
   --core-definition-id <value> \
   [--next-token <value>] \
@@ -218,7 +218,7 @@ aws greengrass list-core-definition-versions \
 
 cli-input-json format:
 
-```
+```json
 {
 "CoreDefinitionId": "string",
 "NextToken": "string",
@@ -233,7 +233,7 @@ cli-input-json format:
 
  [ ListVersionsResponse](definitions-listversionsresponse.md)
 
-```
+```json
 {
 "Versions": [
   {
@@ -276,7 +276,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

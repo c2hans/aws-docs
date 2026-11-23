@@ -38,7 +38,7 @@ For more information, see [Delete Groups](https://docs.aws.amazon.com/ARG/latest
 **Tools for PowerShell V4**
 **Example 1: This example removes the named resource group**
 
-```
+```powershell
 Remove-RGGroup -GroupName non-tag-cfn-elbv2
 ```
 **Output:**
@@ -58,7 +58,7 @@ Description GroupArn                                                            
 **Tools for PowerShell V5**
 **Example 1: This example removes the named resource group**
 
-```
+```powershell
 Remove-RGGroup -GroupName non-tag-cfn-elbv2
 ```
 **Output:**

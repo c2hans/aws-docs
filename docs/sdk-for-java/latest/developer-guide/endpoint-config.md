@@ -28,7 +28,7 @@ The SDK for Java 2.x provides multiple ways to configure service endpoints. An e
 
 **Example Setting a custom endpoint for an Amazon S3 client**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import java.net.URI;
@@ -48,7 +48,7 @@ Some AWS services support endpoint discovery, where the SDK can automatically di
 
 **Example Enabling endpoint discovery for a DynamoDB client**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 
@@ -65,7 +65,7 @@ In some cases, you might need to override the endpoint for a specific request wh
 
 **Example Overriding the endpoint for a specific request**
 
-```
+```java
 import software.amazon.awssdk.core.SdkRequest;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
@@ -99,7 +99,7 @@ You can configure endpoints using environment variables. The SDK supports servic
 
 **Example Setting an S3 endpoint using environment variables**
 
-```
+```bash
 # For Linux/macOS
 export AWS_ENDPOINT_URL_S3=https://my-custom-s3-endpoint.example.com
 
@@ -119,7 +119,7 @@ set AWS_ENDPOINT_URL_S3=https://my-custom-s3-endpoint.example.com
 
 **Example Setting an S3 endpoint using JVM system properties**
 
-```
+```bash
 java -Daws.endpointUrl.s3=https://my-custom-s3-endpoint.example.com -jar your-application.jar
 ```
 
@@ -167,7 +167,7 @@ java -Daws.endpointUrl.s3=https://my-custom-s3-endpoint.example.com -jar your-ap
 
 **Example Configuring S3-specific endpoint options**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.S3Configuration;
@@ -190,7 +190,7 @@ S3Client s3 = S3Client.builder()
 
 **Example Connecting to DynamoDB local**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import java.net.URI;
@@ -204,7 +204,7 @@ DynamoDbClient dynamoDb = DynamoDbClient.builder()
 
 DynamoDB also supports the use of [account-based endpoints](https://docs.aws.amazon.com/sdkref/latest/guide/feature-account-endpoints.html), which you can configure in code or using external settings. The following example shows how to disable the use of account-based endpoints in code when you create the client (the default settings is *preferred*):
 
-```
+```java
 DynamoDbClient dynamoDbClient = DynamoDbClient.builder()
     .region(Region.US_EAST_1)
     .accountIdEndpointMode(AccountIdEndpointMode.DISABLED)

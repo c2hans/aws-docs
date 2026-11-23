@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/organizati
 
 # Sharing product subscriptions in AWS Marketplace
 
-When you subscribe to products in AWS Marketplace, an agreement is created that grants you a license to use those products. If your AWS account is a member of an organization, you can share that license for Amazon Machine Image (AMI), container, machine learning, data products and Oracle Database@AWS subscriptions with the other accounts in that organization. You must set up license support in AWS Marketplace, and then share this from within AWS License Manager.
+When you subscribe to products in AWS Marketplace, an agreement is created that grants you a license to use those products. If your AWS account is a member of an organization, you can share that license for Amazon Machine Image (AMI), container, machine learning, data products, Oracle Database@AWS, and RTB Fabric module subscriptions with the other accounts in that organization. You must set up license support in AWS Marketplace, and then share this from within AWS License Manager.
 
 **Note**
 For more information about AWS Organizations, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/).

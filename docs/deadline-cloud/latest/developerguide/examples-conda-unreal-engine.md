@@ -16,7 +16,7 @@ To use the recipe:
 
 1. Build and publish the package to your conda channel:
 
-   ```
+   ```bash
    rattler-build publish {{path-to-recipe-file}} --to {{publish-conda-channel}}
    ```
 

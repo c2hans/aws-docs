@@ -19,7 +19,7 @@ For more information, see [ Enabling internet access](https://docs.aws.amazon.co
 
  The configuration for this architecture requires the following settings:
 
-```
+```yaml
 # Note that all values are only provided as examples
 HeadNode:
   ...

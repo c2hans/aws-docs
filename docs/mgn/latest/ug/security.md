@@ -47,7 +47,7 @@ The customer is responsible for making sure that no misconfigurations are presen
 
 An IAM policy is a JSON document that consists of one or more statements. Each statement is structured as follows.
 
-```
+```json
 {
         "Statement": [
                 {

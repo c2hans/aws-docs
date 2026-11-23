@@ -28,7 +28,7 @@ SYS\_AUTO\_TABLE\_OPTIMIZATION is visible only to superusers. For more informati
 
 In the following example, the rows in the result show actions taken by Amazon Redshift.
 
-```
+```sql
 SELECT table_id, alter_table_type, status, event_time, alter_from
 FROM SYS_AUTO_TABLE_OPTIMIZATION;
 

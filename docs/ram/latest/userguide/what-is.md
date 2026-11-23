@@ -19,7 +19,11 @@ AWS Resource Access Manager (AWS RAM) helps you securely share your resources ac
 
 The following video provides a brief introduction to AWS RAM and describes how to create a resource share. For more information, see [Creating a resource share in AWS RAM](working-with-sharing-create.md).
 
+[![AWS Videos](https://img.youtube.com/vi/KL9SICG52zY/0.jpg)](https://www.youtube.com/watch?v=KL9SICG52zY)
+
 The following video demonstrates how to apply AWS managed permissions to your AWS resources. For more information, see [Managing permissions in AWS RAM](security-ram-permissions.md).
+
+[![AWS Videos](https://img.youtube.com/vi/X3HskbPqR2s/0.jpg)](https://www.youtube.com/watch?v=X3HskbPqR2s)
 
 This video demonstrates how to author and associate customer managed permissions following the best practice of least privilege. For more information see, [Creating and using customer managed permissions in AWS RAM](create-customer-managed-permissions.md).
 

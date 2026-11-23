@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/Welcome.html
 Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web service. Route 53 performs four main functions:
 +  **Domain registration** – Route 53 lets you register domain names such as example.com.
 +  **Domain Name System (DNS) service** – Route 53 translates friendly domain names into IP addresses using a global network of authoritative DNS servers, and provides DNS resolution within your VPCs for private hosted zones.
-+  **Health checking** – Route 53 sends automated requests over the internet to your application to verify that it's reachable, available, and functional.
++  **Health checking** – Route 53 sends automated requests to your application, over the internet or from within your VPC for private endpoints, to verify that it's reachable, available, and functional.
 +  **Resolver** – Route 53 Resolver lets you forward DNS queries from a VPC that you created using Amazon VPC to DNS resolvers in your network, and from your network to resolvers in your VPC.
 
 You can use the API to create and manage the following resources:
@@ -29,7 +29,7 @@ Traffic Policies and Traffic Policy Instances
 You can create complex routing configurations, known as traffic policies, that use weighted, latency, failover, and geolocation resource record sets. You can then associate a traffic policy with a domain name or subdomain name, such as www.example.com, by creating a traffic policy instance. When users submit DNS queries for the domain or subdomain, Route 53 responds based on the traffic policy that you used to create the traffic policy instance.
 
 Health Checks
-Route 53 health checks monitor the health and performance of your web applications, web servers, and other resources. At regular intervals that you specify, Route 53 submits automated requests over the internet to your application, server, or other resource to verify that it's reachable, available, and functional.
+Route 53 health checks monitor the health and performance of your web applications, web servers, and other resources. At regular intervals that you specify, Route 53 submits automated requests to your application, server, or other resource, over the internet or from within your VPC for private endpoints, to verify that it's reachable, available, and functional.
 
 Domain Registrations
 When you want to get a new domain name, such as example.com, you can register it with Route 53. You can also transfer the registration for existing domains from other registrars to Route 53.

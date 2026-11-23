@@ -68,7 +68,7 @@ The following example shows an IAM role policy with the Secrets Manager `GetSecr
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

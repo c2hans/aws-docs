@@ -46,7 +46,7 @@ Multi-region keys are not currently supported. The KMS key must be in the same r
 
 The following key policy is automatically configured when deploying via Service Catalog. If you need to manually configure a key, use the following least-privilege policy:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -161,7 +161,7 @@ The Data Retention Service is deployed through AWS Service Catalog. When you lau
 
 The KMS key ARN is also registered via the Wickr Admin SDK endpoint:
 
-```
+```HTTP
 PUT /networks/{{{networkId}}}/serverless-resources
 {
   "s3BucketName": "wickr-drs-{{{networkId}}}-{{{region}}}-{{{suffix}}}",

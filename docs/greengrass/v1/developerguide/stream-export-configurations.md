@@ -57,7 +57,7 @@ This export destination has the following requirements:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -115,7 +115,7 @@ For the list of Regions that AWS IoT SiteWise supports, see [AWS IoT SiteWise en
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -182,7 +182,7 @@ This export destination has the following requirements:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -281,7 +281,7 @@ The following example shows how a Lambda function might read and process status 
 ------
 #### [ Python ]
 
-```
+```python
 import time
 from greengrasssdk.stream_manager import (
     ReadMessagesOptions,
@@ -337,7 +337,7 @@ Python SDK reference: [read\_messages](https://aws.github.io/aws-greengrass-core
 ------
 #### [ Java ]
 
-```
+```java
 import com.amazonaws.greengrass.streammanager.client.StreamManagerClient;
 import com.amazonaws.greengrass.streammanager.client.utils.ValidateAndSerialize;
 import com.amazonaws.greengrass.streammanager.model.ReadMessagesOptions;
@@ -389,7 +389,7 @@ Java SDK reference: [readMessages](https://aws.github.io/aws-greengrass-core-sdk
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const {
     StreamManagerClient, ReadMessagesOptions,
     Status, StatusConfig, StatusLevel, StatusMessage,

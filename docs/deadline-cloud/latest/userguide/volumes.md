@@ -91,7 +91,7 @@ The `persistentVolumeConfiguration` object accepts the following parameters. For
 
 The following AWS CLI example creates a service-managed fleet with persistent storage enabled:
 
-```
+```bash
 aws deadline create-fleet \
     --farm-id {{farm-0123456789abcdef0}} \
     --display-name "Rendering Fleet" \
@@ -127,7 +127,7 @@ When persistent storage is successfully mounted on a worker, Deadline Cloud sets
 
 You can also reference the `DEADLINE_PERSISTENT_MOUNT` environment variable in your own Open Job Description job templates and scripts to store data that should persist across worker lifecycle events. The following example shows a step that writes output to persistent storage:
 
-```
+```yaml
 steps:
   - name: ProcessAssets
     script:
@@ -152,7 +152,7 @@ You can view and manage persistent volumes for your fleet using the Deadline Clo
 
 The following AWS CLI example retrieves the details of a persistent volume:
 
-```
+```bash
 aws deadline get-volume \
     --farm-id {{farm-0123456789abcdef0}} \
     --fleet-id {{fleet-0123456789abcdef0}} \

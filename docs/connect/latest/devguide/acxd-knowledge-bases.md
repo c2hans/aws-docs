@@ -35,14 +35,14 @@ Lists all knowledge bases in the workspace.
 ### Sample Request
 <a name="acxd-knowledge-bases-listknowledgebases-sample-request"></a>
 
-```
+```typescript
 await client.send(new ListKnowledgeBasesCommand({}));
 ```
 
 ### Output
 <a name="acxd-knowledge-bases-listknowledgebases-output"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -91,7 +91,7 @@ Creates a new knowledge base.
 ### Sample Request
 <a name="acxd-knowledge-bases-createknowledgebase-sample-request"></a>
 
-```
+```typescript
 await client.send(new CreateKnowledgeBaseCommand({
   name: "Product FAQ",
   type: "articles",
@@ -110,7 +110,7 @@ await client.send(new CreateKnowledgeBaseCommand({
 ### Output
 <a name="acxd-knowledge-bases-createknowledgebase-output"></a>
 
-```
+```json
 {
   "knowledgeBaseId": "kb-a1b2c3d4-5678-90ab-cdef-1234567890ab",
   "name": "Product FAQ",
@@ -150,7 +150,7 @@ Gets a single knowledge base by ID.
 ### Sample Request
 <a name="acxd-knowledge-bases-getknowledgebase-sample-request"></a>
 
-```
+```typescript
 await client.send(new GetKnowledgeBaseCommand({
     knowledgeBaseId: "kb-a1b2c3d4-5678-90ab-cdef-1234567890ab",
 }));
@@ -159,7 +159,7 @@ await client.send(new GetKnowledgeBaseCommand({
 ### Output
 <a name="acxd-knowledge-bases-getknowledgebase-output"></a>
 
-```
+```json
 {
   "knowledgeBaseId": "kb-a1b2c3d4-5678-90ab-cdef-1234567890ab",
   "name": "Product FAQ",
@@ -205,7 +205,7 @@ Updates an existing knowledge base. Only include fields you want to change.
 ### Sample Request
 <a name="acxd-knowledge-bases-updateknowledgebase-sample-request"></a>
 
-```
+```typescript
 await client.send(new UpdateKnowledgeBaseCommand({
   knowledgeBaseId: "kb-a1b2c3d4-5678-90ab-cdef-1234567890ab",
   name: "Product FAQ",
@@ -225,7 +225,7 @@ await client.send(new UpdateKnowledgeBaseCommand({
 ### Output
 <a name="acxd-knowledge-bases-updateknowledgebase-output"></a>
 
-```
+```json
 {
   "knowledgeBaseId": "kb-a1b2c3d4-5678-90ab-cdef-1234567890ab",
   "name": "Product FAQ",
@@ -263,7 +263,7 @@ Deletes a knowledge base.
 ### Sample Request
 <a name="acxd-knowledge-bases-deleteknowledgebase-sample-request"></a>
 
-```
+```typescript
 await client.send(new DeleteKnowledgeBaseCommand({
   knowledgeBaseId: "kb-a1b2c3d4-5678-90ab-cdef-1234567890ab",
 }));
@@ -297,7 +297,7 @@ Creates a copy of an existing knowledge base with a new ID.
 ### Sample Request
 <a name="acxd-knowledge-bases-cloneknowledgebase-sample-request"></a>
 
-```
+```typescript
 await client.send(new CloneKnowledgeBaseCommand({
   knowledgeBaseId: created.knowledgeBaseId,
   name: "Product FAQ Clone",
@@ -308,7 +308,7 @@ await client.send(new CloneKnowledgeBaseCommand({
 ### Output
 <a name="acxd-knowledge-bases-cloneknowledgebase-output"></a>
 
-```
+```json
 {
   "knowledgeBaseId": "kb-a1b2c3d4-5678-90ab-cdef-1234567890ab",
   "name": "Product FAQ Clone",
@@ -349,7 +349,7 @@ Publishes a knowledge base, triggering indexing and making it available for conv
 ### Sample Request
 <a name="acxd-knowledge-bases-publishknowledgebase-sample-request"></a>
 
-```
+```typescript
 await client.send(new PublishKnowledgeBaseCommand({
   knowledgeBaseId: created.knowledgeBaseId,
   version: "1.0",
@@ -360,7 +360,7 @@ await client.send(new PublishKnowledgeBaseCommand({
 ### Output
 <a name="acxd-knowledge-bases-publishknowledgebase-output"></a>
 
-```
+```json
 {
   "deploymentId": "dep-a1b2c3d4-5678-90ab-cdef-1234567890ab",
   "knowledgeBaseId": "kb-a1b2c3d4-...",
@@ -393,7 +393,7 @@ Gets a specific publication record.
 ### Sample Request
 <a name="acxd-knowledge-bases-getknowledgebasepublication-sample-request"></a>
 
-```
+```typescript
 await client.send(new GetKnowledgeBasePublicationCommand({
   knowledgeBaseId: created.knowledgeBaseId,
   deploymentId: publications.items[0].deploymentId,
@@ -405,7 +405,7 @@ await client.send(new GetKnowledgeBasePublicationCommand({
 
 Same shape as PublishKnowledgeBase output. Status may be `scheduled`, `published`, or `failed`.
 
-```
+```json
 {
   "deploymentId": "dep-a1b2c3d4-5678-90ab-cdef-1234567890ab",
   "knowledgeBaseId": "kb-a1b2c3d4-...",
@@ -439,7 +439,7 @@ Lists all publications for a knowledge base.
 ### Sample Request
 <a name="acxd-knowledge-bases-listknowledgebasepublications-sample-request"></a>
 
-```
+```typescript
 await client.send(new ListKnowledgeBasePublicationsCommand({
       knowledgeBaseId: "kb-a1b2c3d4-...",
 }));
@@ -448,7 +448,7 @@ await client.send(new ListKnowledgeBasePublicationsCommand({
 ### Output
 <a name="acxd-knowledge-bases-listknowledgebasepublications-output"></a>
 
-```
+```json
 {
   "items": [
     {

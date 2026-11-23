@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/gitlab-group-
 + The third filter group specifies a push request with a head commit message matching the regular expression `\[CodeBuild\]`.
 + The fourth filter group specifies a GitLab CI/CD pipeline job request with a CI/CD pipeline name matching the regular expression `\[CI-CodeBuild\]`.
 
-```
+```yaml
 CodeBuildProject:
   Type: AWS::CodeBuild::Project
   Properties:

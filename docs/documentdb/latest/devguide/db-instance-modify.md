@@ -67,7 +67,7 @@ aws docdb modify-db-instance ^
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 {
     "DBInstances": [
         {

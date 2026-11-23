@@ -25,7 +25,7 @@ The first step in setting up `CognitoAWSCredentials` is to create an “identity
 
 The following code example shows how to set up `CognitoAWSCredentials`, which you can then use to make a call to Amazon S3 as an unauthenticated user. This enables you to make calls with just a minimum amount of data required to authenticate the user. User permissions are controlled by the role, so you can configure access as you need.
 
-```
+```csharp
 CognitoAWSCredentials credentials = new CognitoAWSCredentials(
     accountId,        // Account number
     identityPoolId,   // Identity pool ID
@@ -43,7 +43,7 @@ using (var s3Client = new AmazonS3Client(credentials))
 
 The following code example shows how you can start using AWS as an unauthenticated user, then authenticate through Facebook and update the credentials to use Facebook credentials. Using this approach, you can grant different capabilities to authenticated users via the authenticated role. For instance, you might have a phone application that permits users to view content anonymously, but allows them to post if they are logged on with one or more of the configured providers.
 
-```
+```csharp
 CognitoAWSCredentials credentials = new CognitoAWSCredentials(
     accountId, identityPoolId,
     unAuthRoleArn,    // Role for unauthenticated users
@@ -68,7 +68,7 @@ using (var s3Client = new AmazonS3Client(credentials))
 
 The `CognitoAWSCredentials` object provides even more functionality if you use it with the `AmazonCognitoSyncClient` that is part of the AWS SDK for .NET. If you're using both `AmazonCognitoSyncClient` and `CognitoAWSCredentials`, you don't have to specify the `IdentityPoolId` and `IdentityId` properties when making calls with the `AmazonCognitoSyncClient`. These properties are automatically filled in from `CognitoAWSCredentials`. The next code example illustrates this, as well as an event that notifies you whenever the `IdentityId` for `CognitoAWSCredentials` changes. The `IdentityId` can change in some cases, such as when changing from an unauthenticated user to an authenticated one.
 
-```
+```csharp
 CognitoAWSCredentials credentials = GetCognitoAWSCredentials();
 
 // Log identity changes

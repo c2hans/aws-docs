@@ -18,7 +18,7 @@ This section describes how to configure Support in Jira Service Management Cloud
 
 1. The rule you created must have the following event pattern and point to the Amazon SQS queue you created in step 1:
 
-   ```
+   ```JSON
    "EventPattern":{
         {
            "detail-type":[

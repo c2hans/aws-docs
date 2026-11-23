@@ -93,7 +93,7 @@ To access images stored in an Amazon S3 bucket, you must have permission to acce
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -117,7 +117,7 @@ To use an S3 bucket with versioning enabled, add the `s3:GetObjectVersion` actio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -184,7 +184,7 @@ The following is an example of how you might configure Amazon Rekognition for an
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -211,7 +211,7 @@ The following is an example of how you might configure Amazon Rekognition for an
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -235,7 +235,7 @@ The following is an example of how you might configure Amazon Rekognition for an
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

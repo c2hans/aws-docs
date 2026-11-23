@@ -80,7 +80,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of DeleteBotAnalyzerRecommendation.
 
-```
+```json
 DELETE https://models-v2-lex.us-east-1.amazonaws.com/bots/<BotId>/botanalyzer/<RequestId>/
 ```
 
@@ -89,7 +89,7 @@ DELETE https://models-v2-lex.us-east-1.amazonaws.com/bots/<BotId>/botanalyzer/<R
 
 This example illustrates one usage of DeleteBotAnalyzerRecommendation.
 
-```
+```json
 HTTP/1.1 204 No Content
 ```
 

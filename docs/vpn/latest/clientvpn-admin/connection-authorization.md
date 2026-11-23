@@ -35,7 +35,7 @@ The Lambda function takes device attributes, user attributes, and connection att
 **Request schema**
 The Lambda function takes a JSON blob containing the following fields as input.
 
-```
+```json
 {
     "connection-id": {{<connection ID>}},
     "endpoint-id": {{<client VPN endpoint ID>}},
@@ -65,7 +65,7 @@ The Lambda function takes a JSON blob containing the following fields as input.
 **Response schema**
 The Lambda function must return the following fields.
 
-```
+```json
 {
     "allow": {{boolean}},
     "error-msg-on-denied-connection": "",

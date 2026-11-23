@@ -23,7 +23,7 @@ Before you begin, ensure you have:
 
 To configure advanced security settings for your nodes, set the `advancedSecurity` fields in your Node Class specification:
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1
 kind: NodeClass
 metadata:
@@ -49,7 +49,7 @@ spec:
 
 Apply this configuration:
 
-```
+```bash
 kubectl apply -f nodeclass.yaml
 ```
 

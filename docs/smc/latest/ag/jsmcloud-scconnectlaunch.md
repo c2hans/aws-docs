@@ -21,7 +21,7 @@ The `SCConnectLaunch` role baseline contains permissions to Amazon EC2 and Amazo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -65,7 +65,7 @@ The `SCConnectLaunch` role baseline contains permissions to Amazon EC2 and Amazo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -112,7 +112,7 @@ The `SCConnectLaunch` role baseline contains permissions to Amazon EC2 and Amazo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

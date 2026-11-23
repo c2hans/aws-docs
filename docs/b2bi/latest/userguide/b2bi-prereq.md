@@ -99,7 +99,7 @@ Replace all {{user input placeholder}} values with your own information.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "B2BIEdiCapabilityInputPolicy",
@@ -134,7 +134,7 @@ Replace all {{user input placeholder}} values with your own information.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "B2BIEdiCapabilityOutputPolicy",
@@ -180,7 +180,7 @@ Use this policy for encrypted input buckets to allow decryption of files:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "B2BIEdiCapabilityInputKeyPolicy",
@@ -219,7 +219,7 @@ Use this policy for encrypted output buckets to allow encryption of files:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "B2BIEdiCapabilityOutputKeyPolicy",
@@ -257,7 +257,7 @@ If you use the same bucket for both input and output, use either policy and add 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "B2BIEdiCapabilityOutputKeyPolicy",

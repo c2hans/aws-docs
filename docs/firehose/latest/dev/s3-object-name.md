@@ -18,7 +18,7 @@ Following is a list of time zones that Firehose supports for S3 prefix configura
 ------
 #### [ Africa ]
 
-```
+```text
 Africa/Abidjan
 Africa/Accra
 Africa/Addis_Ababa
@@ -72,7 +72,7 @@ Africa/Windhoek
 ------
 #### [ America ]
 
-```
+```text
 America/Adak
 America/Anchorage
 America/Anguilla
@@ -151,7 +151,7 @@ America/Winnipeg
 ------
 #### [ Antarctica ]
 
-```
+```text
 Antarctica/Casey
 Antarctica/DumontDUrville
 Antarctica/Mawson
@@ -162,7 +162,7 @@ Antarctica/Palmer
 ------
 #### [ Asia ]
 
-```
+```text
 Asia/Aden
 Asia/Almaty
 Asia/Amman
@@ -232,7 +232,7 @@ Asia/Yerevan
 ------
 #### [ Atlantic ]
 
-```
+```text
 Atlantic/Azores
 Atlantic/Bermuda
 Atlantic/Canary
@@ -248,7 +248,7 @@ Atlantic/Stanley
 ------
 #### [ Australia ]
 
-```
+```text
 Australia/Adelaide
 Australia/Brisbane
 Australia/Broken_Hill
@@ -262,7 +262,7 @@ Australia/Sydney
 ------
 #### [ Europe ]
 
-```
+```text
 Europe/Amsterdam
 Europe/Andorra
 Europe/Athens
@@ -308,7 +308,7 @@ Europe/Zurich
 ------
 #### [ Indian ]
 
-```
+```text
 Indian/Antananarivo
 Indian/Chagos
 Indian/Christmas
@@ -325,7 +325,7 @@ Indian/Reunion
 ------
 #### [ Pacific ]
 
-```
+```text
 Pacific/Apia
 Pacific/Auckland
 Pacific/Chatham

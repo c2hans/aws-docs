@@ -10,7 +10,7 @@ Queue environments follow the [Open Job Description environment template specifi
 
 To create a queue environment with the AWS CLI:
 
-```
+```bash
 aws deadline create-queue-environment \
     --farm-id {{FARM_ID}} \
     --queue-id {{QUEUE_ID}} \

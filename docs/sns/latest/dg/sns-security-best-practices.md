@@ -77,7 +77,7 @@ To enforce only encrypted connections over HTTPS, add the [`aws:SecureTransport`
 
 ****
 
-```
+```json
 {
     "Id": "ExamplePolicy",
     "Version":"2012-10-17",
@@ -127,7 +127,7 @@ Avoid configuring subscriptions to deliver to a raw http endpoints. Always have 
 
  For example, to confirm an email subscription using AWS CLI, copy the link from “Confirm Subscription” text in the email notification. That URL will give you required information to call the below AWS CLI command.
 
-```
+```bash
 aws sns confirm-subscription --region us-west-2 \
     --topic-arn sns-topic-arn \
     --token token-from-subscribe-notification \

@@ -156,7 +156,7 @@ This example lists the two group memberships for the specified user.
 #### Sample Request
 <a name="API_ListGroupMembershipsForMember_Example_1_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "MemberId": {
@@ -170,7 +170,7 @@ This example lists the two group memberships for the specified user.
 #### Sample Response
 <a name="API_ListGroupMembershipsForMember_Example_1_Response"></a>
 
-```
+```json
 {
      "GroupMemberships": [
         {

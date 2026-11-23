@@ -20,7 +20,7 @@ Supply a same-account IAM role ARN in `role_arn` when creating a session. You ca
 
 The following trust policy allows BMA to assume a role on behalf of the specified account. Replace `111122223333` with your account ID:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [{
@@ -37,7 +37,7 @@ The following trust policy allows BMA to assume a role on behalf of the specifie
 
 The role needs permission to invoke the selected model. For example:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [{
@@ -62,7 +62,7 @@ The example role supports the bundle's integration scenarios. Review its generat
 
 The identity calling `CreateAgentSession` needs `iam:PassRole` on the session role. Add this statement to the client identity's policy, replacing the role ARN:
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": "iam:PassRole",
@@ -80,7 +80,7 @@ Changing `BMA_INFERENCE_ROLE_ARN` does not grant permission to pass a different 
 
 The introductory workflow uses these existing preview action names:
 
-```
+```text
 bedrock-mantle:CreateAgentSession
 bedrock-mantle:GetAgentSession
 bedrock-mantle:ListAgentSessions

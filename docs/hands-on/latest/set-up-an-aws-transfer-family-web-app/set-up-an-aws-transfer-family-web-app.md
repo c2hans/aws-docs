@@ -39,6 +39,8 @@ Before starting this tutorial, you will need:
 
 [![AWS Videos](https://img.youtube.com/vi/Ie9M0qBGrCE/0.jpg)](https://www.youtube.com/watch?v=Ie9M0qBGrCE)
 
+This twenty-one-minute video by Pichaimani Rajesh Kumar, a solutions architect at AWS, provides a walkthrough of the tutorial.
+
 ## Application architecture
 <a name="application-architecture"></a>
 

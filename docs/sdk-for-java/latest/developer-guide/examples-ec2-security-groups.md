@@ -11,7 +11,7 @@ To create a security group, call the Ec2Client’s `createSecurityGroup` method 
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2Client;
 import software.amazon.awssdk.services.ec2.model.CreateSecurityGroupRequest;
@@ -25,7 +25,7 @@ import software.amazon.awssdk.services.ec2.model.IpRange;
 
  **Code**
 
-```
+```java
             CreateSecurityGroupRequest createRequest = CreateSecurityGroupRequest.builder()
                 .groupName(groupName)
                 .description(groupDesc)
@@ -46,7 +46,7 @@ To add ingress rules to your security group, use the Ec2Client’s `authorizeSec
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2Client;
 import software.amazon.awssdk.services.ec2.model.CreateSecurityGroupRequest;
@@ -62,7 +62,7 @@ import software.amazon.awssdk.services.ec2.model.IpRange;
 
 First, create an Ec2Client
 
-```
+```java
         Region region = Region.US_WEST_2;
         Ec2Client ec2 = Ec2Client.builder()
                 .region(region)
@@ -71,7 +71,7 @@ First, create an Ec2Client
 
 Then use the Ec2Client’s `authorizeSecurityGroupIngress` method,
 
-```
+```java
             IpRange ipRange = IpRange.builder()
                 .cidrIp("0.0.0.0/0").build();
 
@@ -123,7 +123,7 @@ To describe your security groups or get information about them, call the Ec2Clie
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2Client;
 import software.amazon.awssdk.services.ec2.model.DescribeSecurityGroupsRequest;
@@ -134,7 +134,7 @@ import software.amazon.awssdk.services.ec2.model.Ec2Exception;
 
  **Code**
 
-```
+```java
      public static void describeEC2SecurityGroups(Ec2Client ec2, String groupId) {
 
         try {
@@ -170,7 +170,7 @@ To delete a security group, call the Ec2Client’s `deleteSecurityGroup` method,
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2Client;
 import software.amazon.awssdk.services.ec2.model.DeleteSecurityGroupRequest;
@@ -179,7 +179,7 @@ import software.amazon.awssdk.services.ec2.model.Ec2Exception;
 
  **Code**
 
-```
+```java
     public static void deleteEC2SecGroup(Ec2Client ec2,String groupId) {
 
         try {

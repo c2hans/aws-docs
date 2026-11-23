@@ -44,7 +44,7 @@ The `AWSHealthFullAccess` policy grants an entity full access to the following:
 **Example : AWSHealthFullAccess**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -98,7 +98,7 @@ For more information, see [Adding Permissions to a User](https://docs.aws.amazon
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -167,7 +167,7 @@ This policy statement grants access to AWS Health Dashboard and any of the `Desc
 **Example : Describe access**
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -189,7 +189,7 @@ This policy statement denies access to AWS Health Dashboard and the AWS Health A
 **Example : Deny access**
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -230,7 +230,7 @@ This policy statement grants access to all AWS Health and AWS Organizations acti
 **Example : Allow AWS Health organizational view access**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -275,7 +275,7 @@ This policy statement denies access to the AWS Organizations actions but allows 
 **Example : Deny AWS Health organizational view access**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -341,7 +341,7 @@ For more information, see [Actions, resources, and condition keys for AWS Health
 This policy statement grants access to AWS Health Dashboard and the AWS Health `Describe*` API operations, but denies access to any AWS Health events that relate to Amazon EC2.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -371,7 +371,7 @@ This policy statement grants access to AWS Health Dashboard and the AWS Health `
 The following policy has the same effect, but uses the `Resource` element instead.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -397,7 +397,7 @@ The following policy has the same effect, but uses the `Resource` element instea
 This policy statement grants access to AWS Health Dashboard and the AWS Health `Describe*` API operations, but denies access to any AWS Health events with the `eventTypeCode` that matches `AWS_EC2_*`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

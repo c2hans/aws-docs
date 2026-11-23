@@ -16,7 +16,7 @@ Make sure you are signed in to the AWS Management Console with the same account 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

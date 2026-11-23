@@ -217,7 +217,7 @@ For more information, see [Service network endpoints](https://docs.aws.amazon.co
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/ec2#code-examples).
 
-```
+```php
     /**
      * @param string $serviceName
      * @param string $vpcId
@@ -248,7 +248,7 @@ For more information, see [Service network endpoints](https://docs.aws.amazon.co
 **Tools for PowerShell V4**
 **Example 1: This example create a new VPC Endpoint for the service com.amazonaws.eu-west-1.s3 in the VPC vpc-0fc1ff23f45b678eb**
 
-```
+```powershell
 New-EC2VpcEndpoint -ServiceName com.amazonaws.eu-west-1.s3 -VpcId vpc-0fc1ff23f45b678eb
 ```
 **Output:**
@@ -263,7 +263,7 @@ ClientToken VpcEndpoint
 **Tools for PowerShell V5**
 **Example 1: This example create a new VPC Endpoint for the service com.amazonaws.eu-west-1.s3 in the VPC vpc-0fc1ff23f45b678eb**
 
-```
+```powershell
 New-EC2VpcEndpoint -ServiceName com.amazonaws.eu-west-1.s3 -VpcId vpc-0fc1ff23f45b678eb
 ```
 **Output:**
@@ -281,7 +281,7 @@ ClientToken VpcEndpoint
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ec2#code-examples).
 
-```
+```python
 class VpcWrapper:
     """Encapsulates Amazon Elastic Compute Cloud (Amazon EC2) Amazon Virtual Private Cloud actions."""
 
@@ -339,7 +339,7 @@ class VpcWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     " iv_vpc_id = 'vpc-abc123'
     " iv_service_name = 'com.amazonaws.region.service'
     TRY.

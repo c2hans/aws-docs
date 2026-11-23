@@ -30,7 +30,7 @@ Type: String
 Required: No
 
  ** EngagementId **   <a name="AWSPartnerCentral-Type-EngagementInvitationSummary-EngagementId"></a>
- The identifier of the Engagement associated with this invitation. This links the invitation to its parent Engagement.
+The identifier of the Engagement associated with this invitation. This links the invitation to its parent Engagement.
 Type: String
 Pattern: `eng-[0-9a-z]{14}`
 Required: No
@@ -60,7 +60,7 @@ Required: No
  ** PayloadType **   <a name="AWSPartnerCentral-Type-EngagementInvitationSummary-PayloadType"></a>
 Describes the type of payload associated with the Engagement Invitation, such as `Opportunity` or `MarketplaceOffer`. This helps partners understand the nature of the engagement request from AWS.
 Type: String
-Valid Values: `OpportunityInvitation | LeadInvitation`
+Valid Values: `OpportunityInvitation | LeadInvitation | AccountPlanningInvitation`
 Required: No
 
  ** Receiver **   <a name="AWSPartnerCentral-Type-EngagementInvitationSummary-Receiver"></a>

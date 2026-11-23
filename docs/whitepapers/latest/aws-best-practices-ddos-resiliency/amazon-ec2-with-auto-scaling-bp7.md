@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 
 ![EC2 Auto Scaling group configuration showing minimum, desired, and maximum instance capacity ranges](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/ec2-auto-scaling-group.png)
 
+*Figure 8 – EC2 Auto Scaling group configuration showing minimum, desired, and maximum instance capacity ranges*
+
  [Amazon EC2 Auto Scaling](https://aws.amazon.com/ec2/autoscaling/) groups are collections of Amazon EC2 instances that provide resizable compute capacity so that you can quickly scale up or down as requirements change. You can scale horizontally by automatically adding instances to your application by [scaling the size of your Amazon EC2 Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/scaling_plan.html), and you can scale vertically by using larger EC2 instance types.
 
 By using [Amazon RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html), you can allow your applications to pool and share database connections to improve their ability to scale and handle unpredictable surges in database traffic. You can also enable storage auto-scaling for an Amazon RDS database instance. See [Managing capacity automatically with Amazon RDS storage autoscaling](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.StorageTypes.html#USER_PIOPS.Autoscaling) for more information.

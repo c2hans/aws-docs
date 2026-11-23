@@ -192,7 +192,7 @@ Annotation types include:
 
 **Example: Add a missing variable and rule using annotations**
 
-```
+```bash
 aws bedrock start-automated-reasoning-policy-build-workflow \
   --policy-arn "arn:aws:bedrock:{{us-east-1}}:{{111122223333}}:automated-reasoning-policy/{{lnq5hhz70wgk}}" \
   --build-workflow-type REFINE_POLICY \
@@ -306,7 +306,7 @@ If your tests return `TRANSLATION_AMBIGUOUS` results or your quality report iden
 ### Resolve ambiguities using the API
 <a name="resolve-ambiguities-api"></a>
 
-```
+```bash
 aws bedrock start-automated-reasoning-policy-build-workflow \
   --policy-arn "arn:aws:bedrock:{{us-east-1}}:{{111122223333}}:automated-reasoning-policy/{{lnq5hhz70wgk}}" \
   --build-workflow-type RESOLVE_POLICY_AMBIGUITIES \

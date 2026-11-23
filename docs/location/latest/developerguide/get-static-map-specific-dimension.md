@@ -16,7 +16,7 @@ In this example, you will create a low-resolution and mid-resolution map image o
 ------
 #### [ Request URL for low-resolution thumbnail ]
 
-```
+```terminal
 https://maps.geo.eu-central-1.amazonaws.com/v2/static/map?style=Satellite&width=200&height=200&zoom=11.5&center=24.9460,60.1690&key={{API_KEY}}
 ```
 
@@ -28,7 +28,7 @@ https://maps.geo.eu-central-1.amazonaws.com/v2/static/map?style=Satellite&width=
 ------
 #### [ Request URL for mid-resolution image ]
 
-```
+```terminal
 https://maps.geo.eu-central-1.amazonaws.com/v2/static/map?style=Satellite&width=700&height=700&zoom=13&center=24.9460,60.1690&key={{API_KEY}}
 ```
 
@@ -47,7 +47,7 @@ In this example, you will generate a map using several must-see places in Helsin
 ------
 #### [ Request URL with padding ]
 
-```
+```terminal
 https://maps.geo.eu-central-1.amazonaws.com/v2/static/map?style=Satellite&width=1024&height=1024&padding=150&bounded-positions=24.9526,60.1692,24.9850,60.1465,24.9270,60.1725,24.9226,60.1826,24.9509,60.1675,24.9566,60.1685,24.9457,60.1674,24.9397,60.1719,24.9414,60.1715,24.9387,60.1720&key={{API_KEY}}
 ```
 
@@ -59,7 +59,7 @@ https://maps.geo.eu-central-1.amazonaws.com/v2/static/map?style=Satellite&width=
 ------
 #### [ Request URL without padding ]
 
-```
+```terminal
 https://maps.geo.eu-central-1.amazonaws.com/v2/static/map?style=Satellite&width=1024&height=1024&bounded-positions=24.9526,60.1692,24.9850,60.1465,24.9270,60.1725,24.9226,60.1826,24.9509,60.1675,24.9566,60.1685,24.9457,60.1674,24.9397,60.1719,24.9414,60.1715,24.9387,60.1720&key={{API_KEY}}
 ```
 

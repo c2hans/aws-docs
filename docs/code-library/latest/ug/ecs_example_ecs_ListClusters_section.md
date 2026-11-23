@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/ECS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List cluster ARNs available.
     /// </summary>
@@ -87,7 +87,7 @@ For more information, see [Amazon ECS clusters](https://docs.aws.amazon.com/Amaz
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecs#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ecs.EcsClient;
 import software.amazon.awssdk.services.ecs.model.ListClustersResponse;
@@ -137,7 +137,7 @@ public class ListClusters {
 **Tools for PowerShell V4**
 **Example 1: This cmdlet returns a list of existing ECS clusters.**
 
-```
+```powershell
 Get-ECSClusterList
 ```
 **Output:**
@@ -151,7 +151,7 @@ arn:aws:ecs:us-west-2:012345678912:cluster/LAB-ECS
 **Tools for PowerShell V5**
 **Example 1: This cmdlet returns a list of existing ECS clusters.**
 
-```
+```powershell
 Get-ECSClusterList
 ```
 **Output:**

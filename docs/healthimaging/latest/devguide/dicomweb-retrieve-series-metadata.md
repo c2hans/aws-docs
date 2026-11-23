@@ -21,7 +21,7 @@ Use the `GetDICOMSeriesMetadata` action to retrieve the metadata for a DICOM ser
 ------
 #### [ Shell ]
 
-   ```
+   ```sh
    curl --request GET \
     'https://dicom-medical-imaging.us-east-1.amazonaws.com/datastore/d9a2a515ab294163a2d2f4069eed584c/studies/1.3.6.1.4.1.5962.1.2.4.20040826285059.5457/series/1.3.6.1.4.1.5962.1.3.4.1.20040825185059.5457/metadata \
      --aws-sigv4 'aws:amz:us-east-1:medical-imaging' \
@@ -38,7 +38,7 @@ Use the `GetDICOMSeriesMetadata` action to retrieve the metadata for a DICOM ser
 ------
 #### [ Shell ]
 
-   ```
+   ```sh
    curl --request GET \
      'https://dicom-medical-imaging.us-east-1.amazonaws.com/datastore/d9a2a515ab294163a2d2f4069eed584c/studies/1.3.6.1.4.1.5962.1.2.4.20040826285059.5457/series/1.3.6.1.4.1.5962.1.3.4.1.20040825185059.5457/metadata?imageSetId=459e50687f121185f747b67bb60d1bc8' \
      --aws-sigv4 'aws:amz:us-east-1:medical-imaging' \

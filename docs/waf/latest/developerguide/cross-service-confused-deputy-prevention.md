@@ -27,7 +27,7 @@ The following example shows how to prevent the confused deputy problem by using 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

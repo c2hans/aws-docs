@@ -30,7 +30,7 @@ In the preceding command, do the following:
 
 When you send a request to the `VerifyOTPMessage` API, it returns a `VerificationResponse` object, which contains a single property, `Valid`. If the reference ID, phone number, and OTP all match the values that Amazon Pinpoint expects, and if the OTP hasn't expired, the value of `Valid` is `true`; otherwise, it is `false`. The following is an example of response for a successful OTP verification:
 
-```
+```json
 {
     "VerificationResponse": {
         "Valid": true

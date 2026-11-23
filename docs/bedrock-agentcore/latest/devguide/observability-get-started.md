@@ -46,7 +46,7 @@ After you enable Transaction Search, it can take ten minutes for spans to become
 
    An example is shown below on how to format your AWS CLI command with `PutResourcePolicy`.
 
-   ```
+   ```bash
    aws logs put-resource-policy --policy-name MyResourcePolicy --policy-document '{ "Version": "2012-10-17", "Statement": [ { "Sid": "TransactionSearchXRayAccess", "Effect": "Allow", "Principal": { "Service": "xray.amazonaws.com" }, "Action": "logs:PutLogEvents", "Resource": [ "arn:partition:logs:region:account-id:log-group:aws/spans:*", "arn:partition:logs:region:account-id:log-group:/aws/application-signals/data:*" ], "Condition": { "ArnLike": { "aws:SourceArn": "arn:partition:xray:region:account-id:*" }, "StringEquals": { "aws:SourceAccount": "account-id" } } } ]}'
    ```
 
@@ -54,7 +54,7 @@ After you enable Transaction Search, it can take ten minutes for spans to become
 
    An example is shown below on how to format your AWS CLI command with `UpdateTraceSegmentDestination`.
 
-   ```
+   ```bash
    aws xray update-trace-segment-destination --destination CloudWatchLogs
    ```
 
@@ -62,7 +62,7 @@ After you enable Transaction Search, it can take ten minutes for spans to become
 
    Configure your desired sampling percentage with `UpdateIndexingRule`.
 
-   ```
+   ```bash
    aws xray update-indexing-rule --name "Default" --rule '{"Probabilistic": {"DesiredSamplingPercentage": number}}'
    ```
 
@@ -101,7 +101,7 @@ For a complete example, refer to the [AgentCore Observability samples on GitHub]
 
 Create a new project, register a Python HTTP Runtime, and initialize its dependencies:
 
-```
+```bash
 npm install -g @aws/agentcore
 agentcore create \
   --name StrandsObservability \
@@ -124,7 +124,7 @@ cd ../..
 
 In the Runtime directory, create your agent entrypoint. The following is an example using the Strands Agents SDK:
 
-```
+```python
 ## app/StrandsClaude/main.py
 from strands import Agent, tool
 from strands_tools import calculator
@@ -165,20 +165,20 @@ if __name__ == "__main__":
 
 Deploy the agent to AgentCore Runtime. The AgentCore CLI handles packaging, deployment, and automatic OTEL instrumentation:
 
-```
+```bash
 agentcore deploy
 ```
 
 After deployment, your agent runs on AgentCore Runtime and is automatically instrumented using OpenTelemetry. Invoke your agent and view the traces, sessions, and metrics on the GenAI Observability dashboard in Amazon CloudWatch:
 
-```
+```bash
 agentcore invoke --runtime StrandsClaude \
   --payload '{"prompt":"What is 2 plus 2?"}'
 ```
 
 Alternatively, you can invoke your agent programmatically using the AWS SDK:
 
-```
+```python
 import boto3, json, uuid
 
 client = boto3.client('bedrock-agentcore')
@@ -203,7 +203,7 @@ For a complete example, see the [Agents on Amazon EKS sample](https://github.com
 ### Configure AWS environment variables
 <a name="configure-aws-environment-variables"></a>
 
-```
+```bash
 export AWS_ACCOUNT_ID=<account id>
 export AWS_DEFAULT_REGION=<default region>
 export AWS_REGION=<region>
@@ -219,7 +219,7 @@ Create a log group and log stream for your agent in Amazon CloudWatch which you 
 ### Configure OpenTelemetry environment variables
 <a name="configure-opentelemetry-environment-variables"></a>
 
-```
+```bash
 export AGENT_OBSERVABILITY_ENABLED=true # Activates the ADOT pipeline
 export OTEL_PYTHON_DISTRO=aws_distro # Uses AWS Distro for OpenTelemetry
 export OTEL_PYTHON_CONFIGURATOR=aws_configurator # Sets AWS configurator for ADOT SDK
@@ -242,7 +242,7 @@ If you set `OTEL_EXPORTER_OTLP_TRACES_HEADERS` to deliver spans to your own log 
 ### Create an agent locally
 <a name="create-agent-locally"></a>
 
-```
+```python
 # Create agent.py -  Strands agent that is a weather assistant
 from strands import Agent
 from strands_tools import http_request
@@ -288,7 +288,7 @@ With `aws-opentelemetry-distro` in your requirements.txt, the `opentelemetry-ins
 
 Use the following command to run your agent with automatic instrumentation:
 
-```
+```bash
 opentelemetry-instrument python agent.py
 ```
 
@@ -301,7 +301,7 @@ You can now view your traces, sessions and metrics on GenAI Observability Dashbo
 
 To correlate traces across multiple agent runs, you can associate a session ID with your telemetry data using OpenTelemetry baggage:
 
-```
+```python
 from opentelemetry import baggage, context
 ctx = baggage.set_baggage("session.id", session_id)
 ```

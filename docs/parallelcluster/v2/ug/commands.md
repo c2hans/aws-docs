@@ -10,7 +10,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 To use `pcluster`, you must have an IAM role with the [permissions](iam.md#example-parallelcluser-policies) required to run it.
 
-```
+```sh
 pcluster [ -h ] ( create | update | delete | start | stop | status | list |
                   instances | ssh | dcv | createami | configure | version ) ...
  pcluster-config [-h] (convert) ...

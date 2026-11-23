@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
 
 ![Genomics report pipeline reference architecture](https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image6.png)
 
+Figure 5: Genomics report pipeline reference architecture
+
 1.  A technician loads a genomic sample on a sequencer.
 
 1.  The genomic sample is sequenced and written to a landing folder that is stored in a local on-premises storage system.

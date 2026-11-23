@@ -77,12 +77,12 @@ It's also helpful to review and understand the following before you proceed:
 Quick setup completes the following tasks on your behalf:
 + **Creates an IAM role** to allow the WorkSpaces service to create elastic network interfaces and list your WorkSpaces directories. This role has the name `workspaces_DefaultRole`.
 + **Creates a virtual private cloud (VPC)**. If you want to use an existing VPC instead, make sure it meets the requirements noted in [Configure a VPC for WorkSpaces Personal](amazon-workspaces-vpc.md), and then follow the steps in one of the tutorials listed in [Create a directory for WorkSpaces Personal](launch-workspaces-tutorials.md). Choose the tutorial that corresponds to the type of Active Directory that you want to use.
-+ **Sets up a Simple AD directory** in the VPC and enables it for WorkDocs. This Simple AD directory is used to store user and WorkSpace information. The first AWS account created by quick setup is your admin AWS account. † The directory also has an Administrator account. For more information, see [What gets created](https://docs.aws.amazon.com/) in the *AWS Directory Service Administration Guide*.
-+ **Creates the specified AWS accounts and adds them to the directory**.
++ **Sets up an IAM Identity Center instance and a WorkSpaces directory**. Quick setup uses your existing IAM Identity Center instance. If you don't have one, quick setup creates an account-level instance. IAM Identity Center stores the user's identity and sign-in information. Quick setup also registers a WorkSpaces directory in the VPC. This directory stores WorkSpace information and is linked to the IAM Identity Center instance. Your WorkSpace launches in this VPC. For more information, see [What is IAM Identity Center?](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) in the *AWS IAM Identity Center User Guide*.
++ **Creates the user in IAM Identity Center**.
 + **Creates WorkSpaces**. Each WorkSpace receives a public IP address to provide internet access. The running mode is AlwaysOn. For more information, see [Manage the running mode in WorkSpaces Personal](running-mode.md).
 + **Sends invitation emails to the specified users**. If your users don't receive their invitation emails, see [Send an invitation email](manage-workspaces-users.md#send-invitation).
 
-† The first AWS account created by quick setup is your admin AWS account. You can't update this AWS account from the WorkSpaces Console. Don't share the information for this account with anyone else. To invite other users to use WorkSpaces, create new AWS accounts for them.
+When you go through quick setup, we create an IAM Identity Center instance for you with MFA and standard authentication enabled. With standard authentication, users sign in to the AWS access portal with their user name and password. With email-based MFA enabled, IAM Identity Center sends a one-time passcode (verification code) to the user's email address as a second factor at sign-in.
 
 #### Step 1: Launch the WorkSpace
 <a name="quick-setup-launch-workspace"></a>
@@ -96,7 +96,9 @@ Using quick setup, you can launch your first WorkSpace in minutes.
 1. Choose **Quick setup**. If you don't see this button, either you have already launched a WorkSpace in this Region, or you aren't using one of the [Regions that support quick setup](#quick-setup-regions). In this case, see [Create a directory for WorkSpaces Personal](launch-workspaces-tutorials.md).
 ![Amazon WorkSpaces dashboard showing service description and setup options.](https://docs.aws.amazon.com/workspaces/latest/adminguide/images/quick-setup.png)
 
-1. For **Identify users**, enter the **Username**, **First Name**. **Last Name**, and **Email**. Then choose **Next**.
+1. For **Identify users**, enter the **Username**, **First Name**, **Last Name**, and **Email**. Then choose **Next**.
+
+   Quick setup creates this user in IAM Identity Center. If your account already has an IAM Identity Center instance, quick setup uses it. If it doesn't, quick setup creates an account-level instance.
 **Note**
 If this is your first time using WorkSpaces, we recommend creating a user for yourself for testing purposes.
 ![User creation form for WorkSpaces with fields for username, first name, last name, and email.](https://docs.aws.amazon.com/workspaces/latest/adminguide/images/identify-users.png)
@@ -106,7 +108,7 @@ If this is your first time using WorkSpaces, we recommend creating a user for yo
 
 1. Review your information. Then choose **Create WorkSpace**.
 
-1. It takes approximately 20 minutes for your WorkSpace to launch. To monitor the progress, go to the left navigation pane and choose **Directories**. You will see a directory being created with an initial status of `REQUESTED` and then `CREATING`.
+1. It takes approximately 20 minutes for your WorkSpace to launch. To monitor the progress, go to the left navigation pane and choose **Directories**. You see a directory being created with an initial status of `REQUESTED` and then `CREATING`.
 
    After the directory has been created and has a status of `ACTIVE`, you can choose **WorkSpaces** in the left navigation pane to monitor the progress of the WorkSpace launch process. The initial status of the WorkSpace is `PENDING`. When the launch is complete, the status is `AVAILABLE` and an invitation is sent to the email address that you specified for each user. If your users don't receive their invitation emails, see [Send an invitation email](manage-workspaces-users.md#send-invitation).
 
@@ -117,7 +119,7 @@ After you receive the invitation email, you can connect to the WorkSpace using t
 
 **To connect to the WorkSpace**
 
-1. If you haven't set up credentials for the user already, open the link in the invitation email and follow the directions. Remember the password that you specify as you will need it to connect to your WorkSpace.
+1. If you haven't set up credentials for the user already, open the link in the invitation email and follow the directions. Remember the password that you specify because you need it to connect to your WorkSpace.
 **Note**
 Passwords are case-sensitive and must be between 8 and 64 characters in length, inclusive. Passwords must contain at least one character from each of the following categories: lowercase letters (a-z), uppercase letters (A-Z), numbers (0-9), and the set \~\!@\#$%^&\*\_-\+=`\|\\(){}[]:;"'<>,.?/.
 
@@ -127,7 +129,7 @@ Passwords are case-sensitive and must be between 8 and 64 characters in length, 
 
 1. Start the client, enter the registration code from the invitation email, and choose **Register**.
 
-1. When prompted to sign in, enter the sign-in credentials, and then choose **Sign In**.
+1. When prompted to sign in, enter the sign-in credentials, and then choose **Sign In**. If you're signing in for the first time and don't have a password yet, we email you a one-time verification code. Enter the code, and then create your password.
 
 1. (Optional) When prompted to save your credentials, choose **Yes**.
 
@@ -139,8 +141,7 @@ For more information about using the client applications, such as setting up mul
 If you are finished with the WorkSpace that you created for this tutorial, you can delete it. For more information, see [Delete a WorkSpace in WorkSpaces Personal](delete-workspaces.md).
 
 **Note**
-Simple AD is made available to you free of charge to use with WorkSpaces. If there are no WorkSpaces being used with your Simple AD directory for 30 consecutive days, this directory will be automatically deregistered for use with Amazon WorkSpaces, and you will be charged for this directory as per the [AWS Directory Service pricing terms](https://aws.amazon.com/directoryservice/pricing/).
-To delete empty directories, see [Delete a directory for WorkSpaces Personal](delete-workspaces-directory.md). If you delete your Simple AD directory, you can always create a new one when you want to start using WorkSpaces again.
+To delete empty directories, see [Delete a directory for WorkSpaces Personal](delete-workspaces-directory.md). If you delete your directory, you can always create a new one when you want to start using WorkSpaces again.
 
 #### Next steps
 <a name="quick-setup-next-steps"></a>
@@ -151,7 +152,7 @@ You can continue to customize the WorkSpace that you just created. For example, 
 + [Manage directories for WorkSpaces Personal](manage-workspaces-directory.md)
 
 To create additional WorkSpaces, do one of the following:
-+ If you want to continue using the VPC and the Simple AD directory that were created by quick setup, you can add WorkSpaces for additional users by following the steps in the [Create a WorkSpace in WorkSpaces Personal](create-workspaces-personal.md) section of the Launch a WorkSpace Using Simple AD tutorial.
++ If you want to continue using the VPC, the IAM Identity Center instance, and the WorkSpaces directory that were created by quick setup, you can add WorkSpaces for additional users by following the steps in the [Create a WorkSpace in WorkSpaces Personal](create-workspaces-personal.md) section.
 + If you need to use another directory type or if you need to use an existing Active Directory, see the appropriate tutorial in [Create a directory for WorkSpaces Personal](launch-workspaces-tutorials.md).
 
 For more information about using the WorkSpaces client applications, such as setting up multiple monitors or using peripheral devices, see [WorkSpaces Clients](https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-clients.html) and [Peripheral Device Support](https://docs.aws.amazon.com/workspaces/latest/userguide/peripheral_devices.html) in the *Amazon WorkSpaces User Guide*.
@@ -189,11 +190,11 @@ Review and understand the following concepts before you proceed:
 
 1. Choose one of the following directory types, and then choose **Next**:
    + AWS Managed Microsoft AD
-   + Simple AD
+   + AWS IAM Identity Center
    + AD Connector
 
 1. Enter the directory information.
 
-1. Choose two subnets in a VPC from two different availability zones. For more information, see [ Configure a VPC with public subnets](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-vpc.html#configure-vpc-public-subnets).
+1. Choose two subnets in a VPC from two different Availability Zones. For more information, see [ Configure a VPC with public subnets](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-vpc.html#configure-vpc-public-subnets).
 
 1. Review your directory's information and choose **Create directory**.

@@ -36,7 +36,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 namespace Iam\Basics;
 
 require 'vendor/autoload.php';
@@ -154,7 +154,7 @@ The following code example shows how to use `AttachRolePolicy`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -201,7 +201,7 @@ The following code example shows how to use `CreatePolicy`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -241,7 +241,7 @@ The following code example shows how to use `CreateRole`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -283,7 +283,7 @@ The following code example shows how to use `CreateServiceLinkedRole`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -309,7 +309,7 @@ The following code example shows how to use `CreateUser`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -340,7 +340,7 @@ The following code example shows how to use `GetAccountPasswordPolicy`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -359,7 +359,7 @@ The following code example shows how to use `GetPolicy`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -380,7 +380,7 @@ The following code example shows how to use `GetRole`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -401,7 +401,7 @@ The following code example shows how to use `ListAttachedRolePolicies`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -430,7 +430,7 @@ The following code example shows how to use `ListGroups`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -460,7 +460,7 @@ The following code example shows how to use `ListPolicies`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -490,7 +490,7 @@ The following code example shows how to use `ListRolePolicies`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -518,7 +518,7 @@ The following code example shows how to use `ListRoles`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -554,7 +554,7 @@ The following code example shows how to use `ListSAMLProviders`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -573,7 +573,7 @@ The following code example shows how to use `ListUsers`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 

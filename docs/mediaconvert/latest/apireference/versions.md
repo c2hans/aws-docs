@@ -52,7 +52,7 @@ Supports CORS preflight requests.
 #### GET schema
 <a name="versions-request-body-get-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "maxResults": integer
@@ -65,7 +65,7 @@ Supports CORS preflight requests.
 #### ListVersionsResponse schema
 <a name="versions-response-body-listversionsresponse-example"></a>
 
-```
+```json
 {
   "versions": [
     {
@@ -80,7 +80,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="versions-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

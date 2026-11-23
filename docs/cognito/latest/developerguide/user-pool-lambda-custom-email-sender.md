@@ -34,7 +34,7 @@ The request that Amazon Cognito passes to this Lambda function is a combination 
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "request": {
         "type": "customEmailSenderRequestV1",
@@ -108,7 +108,7 @@ The Amazon Resource Name (ARN) of the KMS key that you want to use to encrypt an
 
 This example function decrypts the code and, for sign-up events, simulates sending an email message to the user's email address.
 
-```
+```javascript
 import { KmsKeyringNode, buildClient, CommitmentPolicy } from '@aws-crypto/client-node';
 
 // Configure the encryption SDK client with the KMS key from the environment variables

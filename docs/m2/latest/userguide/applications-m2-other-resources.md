@@ -62,7 +62,7 @@ You must store the credentials for the application database securely in AWS Secr
 
 After you create the key, you must update the key policy to grant AWS Mainframe Modernization decrypt permissions. Add the following policy statements:
 
-```
+```json
 {
    "Effect" : "Allow",
    "Principal" : {
@@ -82,7 +82,7 @@ AWS Mainframe Modernization supports encryption in transit on this database. If 
 
  During the key creation process, choose **Resource permissions - optional**, and then choose **Edit permissions**. In the policy editor, add a resource-based policy, such as the following, to retrieve the content of the encrypted fields.
 
-```
+```json
 {
    "Effect" : "Allow",
    "Principal" : {

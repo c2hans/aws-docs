@@ -44,7 +44,7 @@ Some services' AWS Construct Library support is in more than one Construct Libra
 
 The AWS CDK’s core package, which you’ll need in most AWS CDK apps, is imported in Go code as `github.com/aws/aws-cdk-go/awscdk/v2`. Packages for the various services in the AWS Construct Library live under `github.com/aws/aws-cdk-go/awscdk/v2`. For example, the Amazon S3 module’s namespace is `github.com/aws/aws-cdk-go/awscdk/v2/awss3`.
 
-```
+```go
 import (
         "github.com/aws/aws-cdk-go/awscdk/v2/awss3"
         // ...
@@ -58,7 +58,7 @@ Once you have imported the Construct Library modules (Go packages) for the servi
 
 In Go, dependencies versions are defined in `go.mod`. The default `go.mod` is similar to the one shown here.
 
-```
+```go
 module my-package
 
 go 1.16
@@ -111,7 +111,7 @@ All factory functions take three arguments: the `scope` in which the construct i
 
 In Go, props are represented by a specific struct type for each construct. For example, an `awss3.Bucket` takes a props argument of type `awss3.BucketProps`. Use a struct literal to write props arguments.
 
-```
+```go
 var bucket = awss3.NewBucket(stack, jsii.String("amzn-s3-demo-bucket"), &awss3.BucketProps{
     Versioned: jsii.Bool(true),
 })
@@ -124,7 +124,7 @@ In some places, the AWS CDK uses JavaScript arrays or untyped objects as input t
 
 The CDK provides variadic helper functions such as `jsii.Strings` for building slices containing primitive types.
 
-```
+```go
 jsii.Strings("One", "Two", "Three")
 ```
 
@@ -140,7 +140,7 @@ To work with such properties, use the helper functions provided by `jsii` to cre
 
 For example:
 
-```
+```go
 func Arns() *[]*string {
 a := "arn:aws:s3:::bucket1"
 b := "arn:aws:s3:::bucket2"

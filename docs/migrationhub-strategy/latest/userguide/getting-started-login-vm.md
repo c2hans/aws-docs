@@ -17,7 +17,7 @@ This section describes how to sign in to the deployed Migration Hub Strategy Rec
 
 1. Use the following command to connect to the collector using an SSH client.
 
-   ```
+   ```bash,sh,zsh
    ssh ec2-user@CollectorIPAddress
    ```
 
@@ -29,7 +29,7 @@ This section describes how to sign in to the deployed Migration Hub Strategy Rec
 **To sign in to the Strategy Recommendations collector deployed as an Amazon EC2 instance**
 + Use the following command to connect to the collector using an SSH client.
 
-  ```
+  ```bash,sh,zsh
   ssh -i "{{Keyname.pem}}" ec2-user@CollectorIPAddress
   ```
 

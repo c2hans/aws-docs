@@ -9,7 +9,7 @@ AWS TNB supports security group egress rules to automate the provisioning of Ama
 ## Syntax
 <a name="node-networking-security-group-egress-rule-syntax"></a>
 
-```
+```yaml
 AWS.Networking.SecurityGroupEgressRule
   properties:
     ip\_protocol: String
@@ -78,7 +78,7 @@ Type: String
 ## Example
 <a name="node-networking-security-group-egress-rule-example"></a>
 
-```
+```yaml
 SampleSecurityGroupEgressRule:
       type: tosca.nodes.AWS.Networking.SecurityGroupEgressRule
       properties:

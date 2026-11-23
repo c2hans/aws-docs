@@ -63,13 +63,13 @@ Amazon Location Service also provides the ability to search by name or address t
 
    This code starts by setting up the Amazon Location authentication helper to use your API key.
 
-   ```
+   ```js
    const authHelper = await amazonLocationAuthHelper.withAPIKey(apiKey);
    ```
 
    Then it uses that authentication helper, and the region you are using to create a new Amazon Location client.
 
-   ```
+   ```js
    const client = new amazonLocationClient.LocationClient({
        region,
        ...authHelper.getLocationClientConfig(),
@@ -78,7 +78,7 @@ Amazon Location Service also provides the ability to search by name or address t
 
    Next, the code responds to the user choosing a spot on the map control. It does this by catching a MapLibre provided event for `click`.
 
-   ```
+   ```js
    map.on("click", async function(e) {
        ...
      });
@@ -86,7 +86,7 @@ Amazon Location Service also provides the ability to search by name or address t
 
    The MapLibre `click` event provides parameters that include the latitude and longitude that the user chose (`e.lngLat`). Within the `click` event, the code creates the `searchPlaceIndexForPositionCommand` to find the entities at the given latitude and longitude.
 
-   ```
+   ```js
        // Set up parameters for search call
        let params = {
          IndexName: placesName,

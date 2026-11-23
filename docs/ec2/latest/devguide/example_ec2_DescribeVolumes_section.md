@@ -168,7 +168,7 @@ For additional examples using tag filters, see [Working with tags](https://docs.
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified EBS volume.**
 
-```
+```powershell
 Get-EC2Volume -VolumeId vol-12345678
 ```
 **Output:**
@@ -189,7 +189,7 @@ VolumeType       : standard
 ```
 **Example 2: This example describes your EBS volumes that have the status 'available'.**
 
-```
+```powershell
 Get-EC2Volume -Filter @{ Name="status"; Values="available" }
 ```
 **Output:**
@@ -211,7 +211,7 @@ VolumeType       : gp2
 ```
 **Example 3: This example describes all your EBS volumes.**
 
-```
+```powershell
 Get-EC2Volume
 ```
 +  For API details, see [DescribeVolumes](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -219,7 +219,7 @@ Get-EC2Volume
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified EBS volume.**
 
-```
+```powershell
 Get-EC2Volume -VolumeId vol-12345678
 ```
 **Output:**
@@ -240,7 +240,7 @@ VolumeType       : standard
 ```
 **Example 2: This example describes your EBS volumes that have the status 'available'.**
 
-```
+```powershell
 Get-EC2Volume -Filter @{ Name="status"; Values="available" }
 ```
 **Output:**
@@ -262,7 +262,7 @@ VolumeType       : gp2
 ```
 **Example 3: This example describes all your EBS volumes.**
 
-```
+```powershell
 Get-EC2Volume
 ```
 +  For API details, see [DescribeVolumes](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

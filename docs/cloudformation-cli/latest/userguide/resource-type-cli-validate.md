@@ -12,7 +12,7 @@ Validates a project's specification against the appropriate extension schema.
 ## Synopsis
 <a name="resource-type-cli-validate-synopsis"></a>
 
-```
+```sh
 $ cfn validate
 ```
 
@@ -21,6 +21,6 @@ $ cfn validate
 
 The following command validates the extension type project.
 
-```
+```sh
 $ cfn validate
 ```

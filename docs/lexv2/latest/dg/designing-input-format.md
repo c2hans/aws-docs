@@ -8,7 +8,7 @@ The following is the input file format for generating intents and slot types for
 
 The input format is compatible with the output format from Contact Lens for Connect Customer. If you are using Contact Lens, you don't need to modify your transcript files. For more information, see [ Example Contact Lens output files ](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-example-output-files.html). If you are using another contact center application, you must transform your transcript file to this format.
 
-```
+```json
 {
     "Participants": [
         {

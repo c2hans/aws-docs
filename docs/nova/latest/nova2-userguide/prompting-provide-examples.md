@@ -32,7 +32,7 @@ Here, your user is trying to classify incoming customer support tickets into pre
 
 User:
 
-```
+```Markdown
 Please classify the following customer support tickets into one of the categories: "Technical Issue," "Billing Inquiry," or "General Inquiry."
 
 Ticket: "Can you explain why my latest bill is higher than usual? I haven't changed my plan."
@@ -40,7 +40,7 @@ Ticket: "Can you explain why my latest bill is higher than usual? I haven't chan
 
 Assistant:
 
-```
+```Markdown
 The customer support ticket should be classified as a "Billing Inquiry."
 
  Here’s the reasoning:
@@ -90,7 +90,7 @@ In this example, the exemplars are provided as turns, one turn per exemplar, whe
 
 System:
 
-```
+```Markdown
 Your task is to Classify the following texts into the appropriate categories. The categories to classify are:
 
 Categories:
@@ -103,13 +103,13 @@ Categories:
 
 User:
 
-```
+```Markdown
 I have 20$ in my pocket.
 ```
 
 Assistant:
 
-```
+```Markdown
 Category: Wealth
 
 Explanation: The text mentions a specific amount of money, which falls under the category of wealth. The presence of a monetary value directly relates to financial status or economic aspect.
@@ -120,7 +120,7 @@ Explanation: The text mentions a specific amount of money, which falls under the
 
 System:
 
-```
+```Markdown
 Your task is to Classify the following texts into the appropriate categories. The categories to classify are:
 
 Categories:
@@ -133,49 +133,49 @@ Categories:
 
 User:
 
-```
+```Markdown
 I love to eat pizza.
 ```
 
 Assistant:
 
-```
+```Markdown
 Food
 ```
 
 User:
 
-```
+```Markdown
 I enjoy watching movies.
 ```
 
 Assistant:
 
-```
+```Markdown
 Entertainment
 ```
 
 User:
 
-```
+```Markdown
 I am going to the gym after this.
 ```
 
 Assistant:
 
-```
+```Markdown
 Health
 ```
 
 User:
 
-```
+```Markdown
 I have 20$ in my pocket.
 ```
 
 Assistant:
 
-```
+```Markdown
 Wealth
 ```
 
@@ -191,19 +191,19 @@ In this example, you can specify an "Example" section and then list a series of 
 
 System:
 
-```
+```Markdown
 You are an AI assistant helping to draft professional reports for enterprise stakeholders. Ensure the report is formatted in rich text, with headings, bullet points, and highlighted important tasks.
 ```
 
 User:
 
-```
+```Markdown
 Draft a detailed project update report for our stakeholders, summarizing the project milestones achieved, tasks completed, and future plans.
 ```
 
 Assistant:
 
-```
+```Markdown
 # Project Update Report
 
 ## Executive Summary
@@ -295,7 +295,7 @@ This detailed update aims to keep stakeholders informed and reassured about the 
 
 System:
 
-```
+```Markdown
 You are an AI assistant helping to draft professional reports for enterprise stakeholders. Below are a few examples of well-formatted project update reports to guide your response.
 
 <Example 1>
@@ -355,13 +355,13 @@ You are an AI assistant helping to draft professional reports for enterprise sta
 
 User:
 
-```
+```Markdown
 Draft a detailed project update report for our stakeholders, summarizing the project milestones achieved, tasks completed, and future plans.
 ```
 
 Assistant:
 
-```
+```Markdown
 <b>Project Update Report</b><br>
 <i>Date:</i> October 5, 2023<br>
 <hr>

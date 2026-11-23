@@ -73,13 +73,13 @@ The command returns the Network ID and the Member ID, as shown in the following 
 
 The **Networks** page on the console shows a **Status** of **Available** when the network is ready. Alternatively, you can use the `list-networks` command, as shown in the following example, to confirm the network status.
 
-```
+```bash
 aws managedblockchain list-networks
 ```
 
 The command returns information about the network, including an `AVAILABLE` status.
 
-```
+```json
 {
     "Networks": [
         {

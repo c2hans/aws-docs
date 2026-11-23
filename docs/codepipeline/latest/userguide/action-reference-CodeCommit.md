@@ -108,7 +108,7 @@ When CodePipeline runs the action, the CodePipeline service role policy requires
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -141,7 +141,7 @@ When CodePipeline runs the action, the CodePipeline service role policy requires
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: Source
 actionTypeId:
   category: Source
@@ -163,7 +163,7 @@ namespace: SourceVariables
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "Source",
     "actionTypeId": {
@@ -197,7 +197,7 @@ namespace: SourceVariables
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: Source
 actionTypeId:
   category: Source
@@ -220,7 +220,7 @@ namespace: SourceVariables
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "Source",
     "actionTypeId": {

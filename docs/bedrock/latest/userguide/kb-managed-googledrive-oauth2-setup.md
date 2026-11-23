@@ -53,7 +53,7 @@ Use the OAuth 2.0 Playground to obtain a refresh token for the Google user whose
 
 Store the credentials in an AWS Secrets Manager secret with the following key-value pairs:
 
-```
+```json
 {
     "clientId": "{{your-client-id}}",
     "clientSecret": "{{your-client-secret}}",

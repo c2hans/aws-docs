@@ -61,13 +61,13 @@ In addition to the [Model container logs](https://docs.aws.amazon.com/sagemaker/
 
 The new logs are published under the Endpoint Log Group:
 
-```
+```bash
 /aws/sagemaker/Endpoints/{{[EndpointName]}}
 ```
 
 The log stream name consists of:
 
-```
+```bash
 {{[production-variant-name]}}/{{[instance-id]}}/data-log.
 ```
 

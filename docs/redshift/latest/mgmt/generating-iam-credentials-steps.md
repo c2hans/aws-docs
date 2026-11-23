@@ -96,7 +96,7 @@ Your SQL client needs authorization to call the the ` GetClusterCredentialsWithI
 
 1. Attach a permission policy with permission to call the ` redshift:GetClusterCredentialsWithIAM` operation. The following policy sample shows options to allow the operation for specific cluster and database, any database in cluster, and any database in any cluster.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

@@ -174,7 +174,7 @@ If successful, returns the current SDK version as an `FGameLiftStringOutcome` ob
 ### Example
 <a name="integration-server-sdk-unreal-ref-getsdk-example"></a>
 
-```
+```cpp
 Aws::GameLift::AwsStringOutcome SdkVersionOutcome =
     Aws::GameLift::Server::GetSdkVersion();
 ```

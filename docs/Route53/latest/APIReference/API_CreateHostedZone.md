@@ -38,9 +38,17 @@ POST /2013-04-01/hostedzone HTTP/1.1
 <?xml version="1.0" encoding="UTF-8"?>
 <CreateHostedZoneRequest xmlns="https://route53.amazonaws.com/doc/2013-04-01/">
    <CallerReference>{{string}}</CallerReference>
+   <ChangeGuardrails>
+      <ChangeGuardrail>
+         <Name>{{string}}</Name>
+         <Status>{{string}}</Status>
+      </ChangeGuardrail>
+   </ChangeGuardrails>
    <DelegationSetId>{{string}}</DelegationSetId>
+   <EnablePublicDNSFallback>{{boolean}}</EnablePublicDNSFallback>
    <HostedZoneConfig>
       <Comment>{{string}}</Comment>
+      <HostedZoneTier>{{string}}</HostedZoneTier>
       <PrivateZone>{{boolean}}</PrivateZone>
    </HostedZoneConfig>
    <Name>{{string}}</Name>
@@ -71,11 +79,25 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Required: Yes
 
+ ** [ChangeGuardrails](#API_CreateHostedZone_RequestSyntax) **   <a name="Route53-CreateHostedZone-request-ChangeGuardrails"></a>
+Specify the optional Change Guardrails to turn on for the hosted zone. Each entry specifies the name and status of a guardrail. For the guardrail names and statuses, see `ChangeGuardrail`.
+Route 53 turns on the guardrails that the tier of the hosted zone includes, so you don't need to specify them. If you turn on a guardrail that the tier doesn't offer, Route 53 returns an `InvalidInput` error.
+Type: Array of [ChangeGuardrail](API_ChangeGuardrail.md) objects
+Array Members: Minimum number of 1 item.
+Required: No
+
  ** [DelegationSetId](#API_CreateHostedZone_RequestSyntax) **   <a name="Route53-CreateHostedZone-request-DelegationSetId"></a>
 If you want to associate a reusable delegation set with this hosted zone, the ID that Amazon Route 53 assigned to the reusable delegation set when you created it. For more information about reusable delegation sets, see [CreateReusableDelegationSet](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateReusableDelegationSet.html).
 If you are using a reusable delegation set to create a public hosted zone for a subdomain, make sure that the parent hosted zone doesn't use one or more of the same name servers. If you have overlapping nameservers, the operation will cause a `ConflictingDomainsExist` error.
 Type: String
 Length Constraints: Maximum length of 32.
+Required: No
+
+ ** [EnablePublicDNSFallback](#API_CreateHostedZone_RequestSyntax) **   <a name="Route53-CreateHostedZone-request-EnablePublicDNSFallback"></a>
+Specifies whether to enable public DNS fallback for the hosted zone. When public DNS fallback is enabled and a query for a domain name in the private hosted zone matches no existing name (`NXDOMAIN`), Route 53 retries the query against public DNS instead of returning a negative response. Fallback does not occur when the name exists but has no record of the requested type.
+Set to `true` to enable public DNS fallback, or `false` to disable it. The default is `false`.
+Public DNS fallback is supported only for private hosted zones. If you specify `true` for a public hosted zone, the request fails with an `InvalidInput` error.
+Type: Boolean
 Required: No
 
  ** [HostedZoneConfig](#API_CreateHostedZone_RequestSyntax) **   <a name="Route53-CreateHostedZone-request-HostedZoneConfig"></a>
@@ -125,13 +147,25 @@ Location: {{Location}}
       <CallerReference>string</CallerReference>
       <Config>
          <Comment>string</Comment>
+         <HostedZoneTier>string</HostedZoneTier>
          <PrivateZone>boolean</PrivateZone>
       </Config>
       <Features>
          <AcceleratedRecoveryStatus>string</AcceleratedRecoveryStatus>
+         <ChangeGuardrails>
+            <ChangeGuardrail>
+               <Name>string</Name>
+               <Status>string</Status>
+            </ChangeGuardrail>
+         </ChangeGuardrails>
+         <ChangeHistory>
+            <RetentionStartsAt>timestamp</RetentionStartsAt>
+            <Status>string</Status>
+         </ChangeHistory>
          <FailureReasons>
             <AcceleratedRecovery>string</AcceleratedRecovery>
          </FailureReasons>
+         <PublicDNSFallbackStatus>string</PublicDNSFallbackStatus>
       </Features>
       <Id>string</Id>
       <LinkedService>

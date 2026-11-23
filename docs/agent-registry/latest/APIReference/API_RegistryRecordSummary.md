@@ -43,7 +43,7 @@ Required: Yes
  ** recordType **   <a name="agentregistry-Type-RegistryRecordSummary-recordType"></a>
  The type of the registry record. `MCP` is a Model Context Protocol server record, `AGENT` is an Agent-to-Agent (A2A) agent card record, `SKILL` is an agent skills definition record, and `CUSTOM` is a record with a custom descriptor.
 Type: String
-Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY`
+Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY | WEB_BOT`
 Required: Yes
 
  ** recordVersion **   <a name="agentregistry-Type-RegistryRecordSummary-recordVersion"></a>

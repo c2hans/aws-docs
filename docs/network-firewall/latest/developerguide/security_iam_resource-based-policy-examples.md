@@ -23,7 +23,7 @@ For information about sharing resources in Network Firewall, see [Sharing AWS Ne
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

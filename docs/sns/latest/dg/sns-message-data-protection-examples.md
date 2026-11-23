@@ -20,7 +20,7 @@ The following example audits 99% of the messages that flow through the topic by 
 
 **Data protection policy**:
 
-```
+```json
 {
   "Name": "__example_data_protection_policy",
   "Description": "Example data protection policy",
@@ -55,7 +55,7 @@ The following example audits 99% of the messages that flow through the topic by 
 
 **Audit results format example**:
 
-```
+```json
 {
     "messageId": "...",
     "callerPrincipal": "arn:aws:sts::123456789012:assumed-role/ExampleRole",
@@ -78,7 +78,7 @@ The following example audits 99% of the messages that flow through the topic by 
 
 The following example prevents a user from publishing a message to a topic with `CreditCardNumber` by masking the sensitive data from the message content.
 
-```
+```json
 {
   "Name": "__example_data_protection_policy",
   "Description": "Example data protection policy",
@@ -119,7 +119,7 @@ My credit card number is ################
 
 The following example prevents a user from publishing a message to a topic with `CreditCardNumber` by redacting the sensitive data from the message content.
 
-```
+```json
 {
   "Name": "__example_data_protection_policy",
   "Description": "Example data protection policy",
@@ -158,7 +158,7 @@ My credit card number is
 
 The following example prevents a user from receiving a message with `CreditCardNumber` by masking the sensitive data from the message content.
 
-```
+```json
 {
   "Name": "__example_data_protection_policy",
   "Description": "Example data protection policy",
@@ -199,7 +199,7 @@ My credit card number is ----------------
 
 The following example prevents a user from receiving a message with `CreditCardNumber` by redacting the sensitive data from the message content.
 
-```
+```json
 {
   "Name": "__example_data_protection_policy",
   "Description": "Example data protection policy",
@@ -238,7 +238,7 @@ My credit card number is
 
 The following example blocks a user from publishing a message to a topic with `CreditCardNumber` in the message content. Denied payloads in the API response have a status code of "403 AuthorizationError".
 
-```
+```json
 {
   "Name": "__example_data_protection_policy",
   "Description": "Example data protection policy",
@@ -265,7 +265,7 @@ The following example blocks a user from publishing a message to a topic with `C
 
 The following example blocks an AWS account from receiving messages that contain `CreditCardNumber`.
 
-```
+```json
 {
   "Name": "__example_data_protection_policy",
   "Description": "Example data protection policy",
@@ -289,7 +289,7 @@ The following example blocks an AWS account from receiving messages that contain
 
 **Outbound deny results example, logged in Amazon CloudWatch:**
 
-```
+```json
 {
   "notification": {
     "messageMD5Sum": "2e8f58ff2eeed723b56b15493fbfb5a5",

@@ -28,7 +28,7 @@ To use the CLI, the following prerequisites are required:
 ## IAM policy
 <a name="iam-policy"></a>
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -59,7 +59,7 @@ To use the CLI, the following prerequisites are required:
 
 Get started by installing the Python packages required for the CLI module. Navigate to source/cli directory inside the QnABot on AWS codebase and run the following commands to setup Python environment and install dependencies:
 
-```
+```bash
 poetry install
 source $(poetry env info --path)/bin/activate
 ```
@@ -69,13 +69,13 @@ source $(poetry env info --path)/bin/activate
 
 Set the environment variable for your AWS Region. For example, to use the us-east-1 Region, run the following command:
 
-```
+```bash
 export AWS_REGION='us-east-1'
 ```
 
 Set the Python path using the following command:
 
-```
+```bash
 export PYTHONPATH=${PWD}:$PYTHONPATH
 ```
 
@@ -92,7 +92,7 @@ The `qnabot_cli.py` file is located in the `source/aws_solutions/qnabot/cli` dir
 
  **Commands:**
 
-```
+```bash
 export Export QnABot questions and answers from your QnABot setup.
 import Import QnABot questions and answers to your QnABot setup.
 ```
@@ -106,7 +106,7 @@ Import QnABot questions and answers to your QnABot setup. This command requires 
 
  **Options:**
 
-```
+```bash
   -s, --cloudformation-stack-name TEXT
                                   Provide the name of the CloudFormation stack
                                   of your QnABot on AWS deployment  [required]
@@ -139,7 +139,7 @@ A successful import will output status with the following information:
 
  **Example:**
 
-```
+```json
 {
     "number_of_qids_imported": 9,
     "number_of_qids_failed_to_import": 0,
@@ -159,7 +159,7 @@ Export QnABot questions and answers from your QnABot setup. This command require
 
  **Options:**
 
-```
+```bash
 -s, --cloudformation-stack-name TEXT
                                   Provide the name of the CloudFormation stack
                                   of your QnABot on AWS deployment  [required]
@@ -177,7 +177,7 @@ Export QnABot questions and answers from your QnABot setup. This command require
 
 A successful import will output status with the following information:
 
-```
+```json
 {
     "export_directory": <string>,
     "status": "Downloaded",
@@ -188,7 +188,7 @@ A successful import will output status with the following information:
 
  **Example:**
 
-```
+```json
 {
     "export_directory": "../export/qna.json",
     "status": "Downloaded",
@@ -202,7 +202,7 @@ A successful import will output status with the following information:
 
  **Import example:**
 
-```
+```bash
 #!/bin/bash
 export AWS_REGION='us-east-1'
 shell_output=$(python3 qnabot_cli.py import -s qnabot-stack -f ../import/qna_import.json -fmt json)
@@ -219,7 +219,7 @@ fi
 
  **Export example**
 
-```
+```bash
 #!/bin/bash
 export AWS_REGION='us-east-1'
 shell_output=$(python3 qnabot_cli.py export -s qnabot-stack -f ../export/qna_export.json -fmt json)

@@ -37,10 +37,7 @@ Revalidate a finding after you deploy a fix to the environment the original test
 ## Interpret revalidation results
 <a name="_interpret_revalidation_results"></a>
 
-Revalidation runs as its own job. For each finding that it re-tests, revalidation does the following:
-+ Reports whether AWS Security Agent could reproduce the vulnerability.
-+ Updates the finding’s status to match the result. The new status replaces the previous status, including **Accepted**.
-+ Leaves the finding’s status unchanged if the result is inconclusive.
+Revalidation runs as its own job and does not change the original finding. For each finding, revalidation reports whether AWS Security Agent could reproduce the vulnerability.
 
 | Result | What it means |
 | --- | --- |

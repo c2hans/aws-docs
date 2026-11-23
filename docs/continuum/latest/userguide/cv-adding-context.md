@@ -109,7 +109,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    Create an IAM role for collector data access. The role trust policy must allow the AWS Continuum service principal, `continuum.amazonaws.com`, to assume it. The following trust policy limits role assumption to the specified environment:
 
-   ```
+   ```JSON
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -135,7 +135,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    Attach an identity policy that permits the role to request authorization for every collector that can contribute data to the environment:
 
-   ```
+   ```JSON
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -155,7 +155,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    The IAM principal that manages the resource policy must belong to the collector account and have the following permissions for the collector:
 
-   ```
+   ```JSON
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -174,7 +174,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    Use the following collector resource policy:
 
-   ```
+   ```JSON
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -193,7 +193,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    Call `GetResourcePolicy` with the full collector ARN in the `arn` input:
 
-   ```
+   ```JSON
    {
      "arn": "arn:aws:continuum:{{region}}:{{collector-account}}:collectors/{{collector-id}}"
    }
@@ -201,7 +201,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    Copy the `revisionId` from the response. Read the `policy`. Add the `AllowEnvironmentAccount` statement and retain all existing statements. Serialize the complete policy as a JSON string. Call `PutResourcePolicy` with the following input:
 
-   ```
+   ```JSON
    {
      "arn": "arn:aws:continuum:{{region}}:{{collector-account}}:collectors/{{collector-id}}",
      "policy": "{{JSON-serialized-policy-document}}",
@@ -217,7 +217,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    The following example grants the caller these permissions:
 
-   ```
+   ```JSON
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -239,7 +239,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    Then call `AssociateCollector` with the following input:
 
-   ```
+   ```JSON
    {
      "environmentId": "{{environment-id}}",
      "collectorArn": "arn:aws:continuum:{{region}}:{{collector-account}}:collectors/{{collector-id}}",
@@ -253,7 +253,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
 1. To confirm the stored association, call `ListAssociatedCollectors` in the environment account with the following input. The caller needs `continuum:ListAssociatedCollectors` permission for the environment.
 
-   ```
+   ```JSON
    {
      "environmentId": "{{environment-id}}"
    }

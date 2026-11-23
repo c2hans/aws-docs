@@ -18,7 +18,7 @@ Describe the instances that belong to a cluster.
 ## Request syntax
 <a name="describe-cluster-instances-request"></a>
 
-```
+```json
 GET /v3/clusters/{{{clusterName}}}/instances
 {
   "nextToken": "string",
@@ -60,7 +60,7 @@ Required: No
 ## Response syntax
 <a name="describe-cluster-instances-response"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "instances": [
@@ -120,13 +120,13 @@ Type: string
 
 **Request**
 
-```
+```python
 $ describe_cluster_instances({{cluster_name_3x}})
 ```
 
 **200 Response**
 
-```
+```json
 {
   "instances": [
     {

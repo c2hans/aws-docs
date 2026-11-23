@@ -38,7 +38,7 @@ Use the following procedure to set up a Spotify OAuth2 application and obtain th
 
 To configure Spotify as an outbound resource provider, use the following:
 
-```
+```json
 {
   "name": "Spotify",
   "credentialProviderVendor": "SpotifyOauth2",

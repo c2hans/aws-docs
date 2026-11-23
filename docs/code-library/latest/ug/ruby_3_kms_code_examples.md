@@ -26,7 +26,7 @@ The following code example shows how to use `CreateKey`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/kms#code-examples).
 
-```
+```ruby
 require 'aws-sdk-kms' # v2: require 'aws-sdk'
 
 # Create a AWS KMS key.
@@ -58,7 +58,7 @@ The following code example shows how to use `Decrypt`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/kms#code-examples).
 
-```
+```ruby
 require 'aws-sdk-kms' # v2: require 'aws-sdk'
 
 # Decrypted blob
@@ -85,7 +85,7 @@ The following code example shows how to use `Encrypt`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/kms#code-examples).
 
-```
+```ruby
 require 'aws-sdk-kms' # v2: require 'aws-sdk'
 
 # ARN of the AWS KMS key.
@@ -117,7 +117,7 @@ The following code example shows how to use `ReEncrypt`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/kms#code-examples).
 
-```
+```ruby
 require 'aws-sdk-kms' # v2: require 'aws-sdk'
 
 # Human-readable version of the ciphertext of the data to reencrypt.

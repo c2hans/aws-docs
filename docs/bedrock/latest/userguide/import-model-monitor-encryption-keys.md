@@ -81,7 +81,7 @@ Attach the following resource-based policy to the KMS key by following the steps
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "KMS Key Policy",

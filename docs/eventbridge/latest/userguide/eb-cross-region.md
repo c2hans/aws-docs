@@ -8,6 +8,8 @@ You can configure EventBridge to send and receive [events](eb-events.md) between
 
  The following video covers routing events between Regions using the [https://console.aws.amazon.com/events/](https://console.aws.amazon.com/events/), AWS CloudFormation, and AWS Serverless Application Model:
 
+[![AWS Videos](https://img.youtube.com/vi/hrZG1mr6H8I/0.jpg)](https://www.youtube.com/watch?v=hrZG1mr6H8I)
+
 ## Creating rules that send events to a different AWS Region
 <a name="eb-create-rule-cross-region-target"></a>
 

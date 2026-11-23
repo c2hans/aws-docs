@@ -37,7 +37,7 @@ To use the AWS CLI and boto3 as described in the next section, you must use a Py
 
 To check whether you’ve already installed Python and Python3-pip, run the following commands. If running these commands return the version, it means that Python and Python3-pip have been installed correctly.
 
-```
+```python
 python3 -V
 pip3 --version
 ```
@@ -83,7 +83,7 @@ The following steps show you how to configure boto3 (AWS SDK for Python). Before
 **Note**
 `awscli` version `1.26.6` requires PyYAML version that's 3.10 or later, but not later than 5.5.
 
-   ```
+   ```python
    python3 -m pip install botocore-{{version}}-py3-none-any.whl
    python3 -m pip install boto3-{{version}}-py3-none-any.whl
    ```

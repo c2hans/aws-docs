@@ -9,6 +9,4 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 + **User onboarding:** Redirects to AWS IAM service in the AWS Console. For more information, see Onboarding users to your AWS Partner Central account.
 + **Partner Central settings:** Native in the AWS Console. Manage your primary contact details, associated domains, and tags. For more information, see Managing settings in AWS Partner Central.
 + **Marketplace settings:** Redirects to AMMP. [Manage your AWS Marketplace settings](https://docs.aws.amazon.com/marketplace/latest/userguide/seller-account-management.html) including tax information. For more information, see Managing settings in AWS Partner Central.
-+ **Partner Central support:** Redirects to legacy Partner Central experience. Get help from the APN support team on APN-related queries.
-+ **Marketplace support:** Redirects to AMMP. Get help from the Marketplace support team on Marketplace listings and other Marketplace-related queries.
-+ **Marketplace refund support:** Redirects to AMMP. Request support for refunds on AWS Marketplace.
++ **Support:** Native in the AWS Console. Opens the [AWS Partner Central and Marketplace Support page](https://us-east-1.console.aws.amazon.com/partnercentral/support?region=us-east-1) in the AWS Partner Central console. Get instant answers from AWS Partner Central Agents, create support cases, and track your cases.

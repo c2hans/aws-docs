@@ -38,7 +38,7 @@ aws iotwireless create-service-profile \
 
 Running this command generates an ID and an Amazon Resource Name (ARN) for the service profile.
 
-```
+```JSON
 {
     "Arn": "arn:aws:iotwireless:us-east-1:123456789012:ServiceProfile/12345678-a1b2-3c45-67d8-e90fa1b2c34d",
     "Id": "12345678-a1b2-3c45-67d8-e90fa1b2c34d"
@@ -53,7 +53,7 @@ aws iotwireless get-service-profile --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d
 
 Running this command generates the values for the service profile parameters.
 
-```
+```JSON
 {
     "Arn": "arn:aws:iotwireless:us-east-1:651419225604:ServiceProfile/12345678-a1b2-3c45-67d8-e90fa1b2c34d",
     "Id": "12345678-a1b2-3c45-67d8-e90fa1b2c34d",

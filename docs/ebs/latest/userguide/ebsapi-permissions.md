@@ -23,7 +23,7 @@ The following policy allows the *read* EBS direct APIs to be used on snapshots w
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -54,7 +54,7 @@ The following policy allows all of the *read* EBS direct APIs to be used on all 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -95,7 +95,7 @@ The following policy allows the *write* EBS direct APIs to be used on snapshots 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -126,7 +126,7 @@ The following policy allows all of the EBS direct APIs to be used. It also allow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -153,7 +153,7 @@ The following policy allows all of the EBS direct APIs to be used. It also allow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -185,7 +185,7 @@ The following policy allows all of the *write* EBS direct APIs to be used on all
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

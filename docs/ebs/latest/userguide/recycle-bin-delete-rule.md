@@ -27,14 +27,14 @@ You can delete a retention rule using one of the following methods.
 **To delete a retention rule**
 Use the [delete-rule](https://docs.aws.amazon.com/cli/latest/reference/rbin/delete-rule.html) AWS CLI command. For `--identifier`, specify the ID of the retention rule to delete.
 
-```
+```bash
 aws rbin delete-rule --identifier {{rule_ID}}
 ```
 
 **Example**
 The following example command deletes retention rule `6lsJ2Fa9nh9`.
 
-```
+```bash
 aws rbin delete-rule --identifier 6lsJ2Fa9nh9
 ```
 

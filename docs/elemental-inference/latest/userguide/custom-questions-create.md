@@ -43,7 +43,7 @@ This question set has 5 scored items: 2 `yesNo` questions, 2 options in the `yes
 
 The response describes `DRAFT`. The `latestVersion` field is absent, because you haven't published a version yet. If you omit a list in the request, or send it empty, the response doesn't include that list.
 
-```
+```json
 {
   "arn": "arn:aws:elemental-inference:us-west-2:111122223333:question-set/abcd1234efgh5678ijk",
   "id": "abcd1234efgh5678ijk",

@@ -112,7 +112,7 @@ Following is an example key policy which gives a user the permissions they need 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -155,7 +155,7 @@ When you include an encryption context in a request to encrypt data, AWS KMS bin
 
 Voice ID uses the same encryption context in all AWS KMS cryptographic operations, where the key is `aws:voiceid:domain:arn` and the value is the resource Amazon Resource Name (ARN) [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html).
 
-```
+```json
 "encryptionContext": {
    "aws:voiceid:domain:arn": "arn:aws:voiceid:us-west-2:111122223333:domain/sampleDomainId"
 }
@@ -172,7 +172,7 @@ Connect Customer Voice ID uses an encryption context constraint in grants to con
 
 The following are example key policy statements to grant access to a customer managed key for a specific encryption context. The condition in this policy statement requires that the grants have an encryption context constraint that specifies the encryption context.
 
-```
+```json
 {
     "Sid": "Enable DescribeKey",
     "Effect": "Allow",
@@ -208,7 +208,7 @@ The following examples is a sample AWS CloudTrail event for `CreateGrant` operat
 ------
 #### [ CreateGrant ]
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -283,7 +283,7 @@ The following examples is a sample AWS CloudTrail event for `CreateGrant` operat
 ------
 #### [ DescribeKey ]
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -318,7 +318,7 @@ The following examples is a sample AWS CloudTrail event for `CreateGrant` operat
 ------
 #### [ Decrypt ]
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -359,7 +359,7 @@ The following examples is a sample AWS CloudTrail event for `CreateGrant` operat
 ------
 #### [ GenerateDataKeyWithoutPlaintext ]
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -399,7 +399,7 @@ The following examples is a sample AWS CloudTrail event for `CreateGrant` operat
 ------
 #### [ ReEncrypt ]
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -488,7 +488,7 @@ The following examples is a sample AWS CloudTrail event for `CreateGrant` operat
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -559,7 +559,7 @@ An [encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/co
 
  The following are example key policy statements to grant access to a customer managed key for a specific encryption context. The condition in this policy statement requires that the grants have an encryption context constraint that specifies the encryption context.
 
-```
+```json
 {
     "Sid": "Enable DescribeKey",
     "Effect": "Allow",
@@ -596,7 +596,7 @@ An [encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/co
 ------
 #### [ CreateGrant ]
 
-```
+```json
 {
   "eventVersion": "1.09",
   "userIdentity": {
@@ -671,7 +671,7 @@ An [encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/co
 ------
 #### [ GenerateDataKeyWithoutPlainText ]
 
-```
+```json
 {
   "eventVersion": "1.09",
   "userIdentity": {
@@ -730,7 +730,7 @@ An [encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/co
 ------
 #### [ DescribeKey ]
 
-```
+```json
 {
   "eventVersion": "1.09",
   "userIdentity": {
@@ -787,7 +787,7 @@ An [encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/co
 ------
 #### [ Decrypt ]
 
-```
+```json
 {
   "eventVersion": "1.09",
   "userIdentity": {

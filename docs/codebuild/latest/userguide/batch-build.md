@@ -37,7 +37,7 @@ A build graph defines a set of tasks that have dependencies on other tasks in th
 
 The following example defines a build graph that creates a dependency chain.
 
-```
+```yaml
 batch:
   fast-fail: false
   build-graph:
@@ -81,7 +81,7 @@ A build list defines a number of tasks that run in parallel.
 
 The following example defines a build list. The `build1` and `build2` builds will run in parallel.
 
-```
+```yaml
 batch:
   fast-fail: false
   build-list:
@@ -116,7 +116,7 @@ A build matrix defines tasks with different configurations that run in parallel.
 
 The following example shows a build matrix with two buildspec files and three values for an environment variable.
 
-```
+```yaml
 batch:
   build-matrix:
     static:
@@ -158,7 +158,7 @@ A build fanout defines a task that will be split into multiple builds in the bat
 
 The following example defines a build fanout that creates five builds that run in parallel.
 
-```
+```yaml
 version: 0.2
 
 batch:

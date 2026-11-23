@@ -92,7 +92,7 @@ If you use the `SendEmail` or `SendTemplatedEmail` operation, you can specify th
 
 The following example shows how to send an email that includes the `SourceArn` and `ReturnPathArn` attributes using either the `SendEmail` or `SendTemplatedEmail` operation and the [AWS SDK for Python (Boto3)](https://aws.amazon.com/sdk-for-python).
 
-```
+```py
 import boto3
 from botocore.exceptions import ClientError
 

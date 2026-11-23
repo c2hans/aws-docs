@@ -36,7 +36,7 @@ To view additional details about the QPUs you can use with Amazon Braket, see [A
 
 For all devices, you can find further device properties, such as device topology, calibration data, and native gate sets, on the **Devices** tab of the Amazon Braket console or by the `GetDevice` API. When constructing a circuit with the simulators, Amazon Braket requires that you use contiguous qubits or indices. When working with the SDK, the following code example shows how to get access to the device properties for each available device and simulator.
 
-```
+```python
 from braket.aws import AwsDevice
 from braket.devices import LocalSimulator
 

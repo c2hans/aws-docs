@@ -58,7 +58,7 @@ For more information, see [Working with environments in AWS Cloud9](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example gets information about the specified AWS Cloud9 development environments.**
 
-```
+```powershell
 Get-C9EnvironmentData -EnvironmentId 685f892f431b45c2b28cb69eadcdb0EX,1980b80e5f584920801c09086667f0EX
 ```
 **Output:**
@@ -82,7 +82,7 @@ Type        : ssh
 ```
 **Example 2: This example gets information about the lifecycle status of the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 (Get-C9EnvironmentData -EnvironmentId 685f892f431b45c2b28cb69eadcdb0EX).Lifecycle
 ```
 **Output:**
@@ -97,7 +97,7 @@ FailureResource Reason Status
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified AWS Cloud9 development environments.**
 
-```
+```powershell
 Get-C9EnvironmentData -EnvironmentId 685f892f431b45c2b28cb69eadcdb0EX,1980b80e5f584920801c09086667f0EX
 ```
 **Output:**
@@ -121,7 +121,7 @@ Type        : ssh
 ```
 **Example 2: This example gets information about the lifecycle status of the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 (Get-C9EnvironmentData -EnvironmentId 685f892f431b45c2b28cb69eadcdb0EX).Lifecycle
 ```
 **Output:**

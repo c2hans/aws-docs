@@ -50,7 +50,7 @@ You can reference constants in step or loop inputs inside of your YAML document,
 **Examples**
 Constant referenced in step inputs
 
-```
+```YAML
 name: Download AWS CLI version 2
 schemaVersion: 1.0
 constants:
@@ -69,7 +69,7 @@ phases:
 
 Constant referenced in loop inputs
 
-```
+```YAML
 name: PingHosts
 schemaVersion: 1.0
 constants:
@@ -249,7 +249,7 @@ To use Systems Manager parameters in your components, your instance role must ha
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -273,7 +273,7 @@ To access encrypted values, you'll also need the following permissions:
 
 The following example shows how to reference an Systems Manager Parameter Store parameter of Systems Manager parameters in a component:
 
-```
+```yaml
 name: UseSSMParameterVariable
 description: This is a sample component document that prints out the value of an SSM Parameter. Never do this for a SecureString parameter.
 schemaVersion: 1.0
@@ -316,7 +316,7 @@ The `dynamic_variable` in the following example represents the name of an SSM pa
 
 The following example shows how to use the `resolve` function in a YAML component document:
 
-```
+```yaml
 name: SsmParameterTest
 description: This component verifies an SSM parameter variable reference with the echo command.
 schemaVersion: 1.0
@@ -345,7 +345,7 @@ AWSTOE matches environment variable names exactly. A name can contain any charac
 
 The following example shows how to reference an environment variable in a component:
 
-```
+```yaml
 name: UseEnvironmentVariable
 description: This sample component prints out the value of an environment variable.
 schemaVersion: 1.0
@@ -379,7 +379,7 @@ Image Builder provides the following environment variables.
 
 The following example shows how to read Image Builder environment variables in a component:
 
-```
+```yaml
 name: UseImageBuilderEnvironmentVariables
 description: This sample component prints out Image Builder environment variable values.
 schemaVersion: 1.0
@@ -407,7 +407,7 @@ For more information about instance metadata, see [Use instance metadata to mana
 
 The following example shows how to reference an IMDS value in a component:
 
-```
+```yaml
 name: UseInstanceMetadataVariable
 description: This sample component prints out the instance ID from IMDS.
 schemaVersion: 1.0
@@ -449,7 +449,7 @@ To get the instance ID, use the IMDS variable `{{ aws:imds:instance-id }}` rathe
 
 The following example shows how to reference context variables in a component:
 
-```
+```yaml
 name: UseContextVariables
 description: This sample component prints out context variable values.
 schemaVersion: 1.0

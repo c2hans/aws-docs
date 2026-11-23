@@ -29,7 +29,7 @@ The following code example shows how to use `CreateDistribution`.
 The following example uses an Amazon Simple Storage Service (Amazon S3) bucket as a content origin.
 After creating the distribution, the code creates a [CloudFrontWaiter](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudfront/waiters/CloudFrontWaiter.html) to wait until the distribution is deployed before returning the distribution.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.core.internal.waiters.ResponseOrException;
@@ -144,7 +144,7 @@ The following code example shows how to use `CreateFunction`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudfront#code-examples).
 
-```
+```java
 import software.amazon.awssdk.core.SdkBytes;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cloudfront.CloudFrontClient;
@@ -230,7 +230,7 @@ The following code example shows how to use `CreateKeyGroup`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudfront#code-examples).
 A key group requires at least one public key that is used to verify signed URLs or cookies.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.cloudfront.CloudFrontClient;
@@ -261,7 +261,7 @@ The following code example shows how to use `CreatePublicKey`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudfront#code-examples).
 The following code example reads in a public key and uploads it to Amazon CloudFront.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.cloudfront.CloudFrontClient;
@@ -304,7 +304,7 @@ The following code example shows how to use `DeleteDistribution`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudfront#code-examples).
 The following code example updates a distribution to *disabled*, uses a waiter that waits for the change to be deployed, then deletes the distribution.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.core.internal.waiters.ResponseOrException;
@@ -377,7 +377,7 @@ The following code example shows how to use `UpdateDistribution`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudfront#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cloudfront.CloudFrontClient;
 import software.amazon.awssdk.services.cloudfront.model.GetDistributionRequest;
@@ -481,7 +481,7 @@ The following code example shows how to create a multi-tenant distribution and d
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudfront#code-examples).
 The following example demonstrates how to create a multi-tenant distribution with parameters and wildcard certificate.
 
-```
+```java
 import software.amazon.awssdk.core.internal.waiters.ResponseOrException;
 import software.amazon.awssdk.services.cloudfront.CloudFrontClient;
 import software.amazon.awssdk.services.cloudfront.model.ConnectionMode;
@@ -611,7 +611,7 @@ public class CreateMultiTenantDistribution {
 ```
 The following example demonstrates how to create a distribution tenant associated with that template, including utilizing the parameter we declared above. Note that we don't need to add certificate info here because our domain is already covered by the parent template.
 
-```
+```java
 import software.amazon.awssdk.services.cloudfront.CloudFrontClient;
 import software.amazon.awssdk.services.cloudfront.model.CreateConnectionGroupResponse;
 import software.amazon.awssdk.services.cloudfront.model.CreateDistributionTenantResponse;
@@ -668,7 +668,7 @@ public class CreateDistributionTenant {
 ```
 If the viewer certificate was omitted from the parent template, you would need to add certificate info on the tenant(s) associated with it instead. The following example demonstrates how to do so via an ACM certificate arn that covers the necessary domain for the tenant.
 
-```
+```java
 import software.amazon.awssdk.services.cloudfront.CloudFrontClient;
 import software.amazon.awssdk.services.cloudfront.model.CreateConnectionGroupResponse;
 import software.amazon.awssdk.services.cloudfront.model.CreateDistributionTenantResponse;
@@ -730,7 +730,7 @@ public class CreateDistributionTenant {
 ```
 The following example demonstrates how to do so with a CloudFront-hosted managed certificate request. This is ideal if you don't already have traffic towards your domain. In this case, we create a ConnectionGroup to generate a RoutingEndpoint. Then we use that RoutingEndpoint to create DNS records which verify domain ownership and point to CloudFront. CloudFront will then automatically serve a token to validate domain ownership and create a managed certificate.
 
-```
+```java
 import software.amazon.awssdk.services.cloudfront.CloudFrontClient;
 import software.amazon.awssdk.services.cloudfront.model.CreateConnectionGroupResponse;
 import software.amazon.awssdk.services.cloudfront.model.CreateDistributionTenantResponse;
@@ -793,7 +793,7 @@ public class CreateDistributionTenant {
 ```
 The following example demonstrates how to do so with a self-hosted managed certificate request. This is ideal if you have traffic towards your domain and can't tolerate downtime during a migration. At the end of this example, the Tenant will be created in a state awaiting domain validation and DNS setup. Follow steps [here](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/managed-cloudfront-certificates.html\#complete-domain-ownership) to complete setup when you are ready to migrate traffic.
 
-```
+```java
 import software.amazon.awssdk.services.cloudfront.CloudFrontClient;
 import software.amazon.awssdk.services.cloudfront.model.CreateConnectionGroupResponse;
 import software.amazon.awssdk.services.cloudfront.model.CreateDistributionTenantResponse;
@@ -842,7 +842,7 @@ The following code example shows how to delete resources that are used to gain a
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudfront#code-examples).
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.cloudfront.CloudFrontClient;
@@ -906,7 +906,7 @@ The following code example shows how to create signed URLs and cookies that allo
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudfront#code-examples).
 Use the [CannedSignerRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudfront/model/CannedSignerRequest.html) class to sign URLs or cookies with a *canned* policy.
 
-```
+```java
 import software.amazon.awssdk.services.cloudfront.model.CannedSignerRequest;
 
 import java.net.URL;
@@ -938,7 +938,7 @@ public class CreateCannedPolicyRequest {
 ```
 Use the [CustomSignerRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudfront/model/CustomSignerRequest.html) class to sign URLs or cookies with a *custom* policy. The `activeDate` and `ipRange` are optional methods.
 
-```
+```java
 import software.amazon.awssdk.services.cloudfront.model.CustomSignerRequest;
 
 import java.net.URL;
@@ -975,7 +975,7 @@ public class CreateCustomPolicyRequest {
 ```
 The following example demonstrates the use of the [CloudFrontUtilities](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudfront/CloudFrontUtilities.html) class to produce signed cookies and URLs. [View](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/javav2/example_code/cloudfront/src/main/java/com/example/cloudfront/SigningUtilities.java) this code example on GitHub.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.cloudfront.CloudFrontUtilities;

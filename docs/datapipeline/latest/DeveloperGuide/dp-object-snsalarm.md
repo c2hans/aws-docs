@@ -13,7 +13,7 @@ AWS Data Pipeline is no longer available to new customers. Existing customers of
 
 The following is an example of this object type. The values for `node.input` and `node.output` come from the data node or activity that references this object in its `onSuccess` field.
 
-```
+```json
 {
   "id" : "SuccessNotify",
   "name" : "SuccessNotify",

@@ -37,7 +37,7 @@ For more information, see [Blocking public access to your Amazon S3 storage](htt
 **Tools for PowerShell V4**
 **Example 1: This command returns policy status for the given S3 bucket, indicating whether the bucket is public.**
 
-```
+```powershell
 Get-S3BucketPolicyStatus -BucketName 'amzn-s3-demo-bucket'
 ```
 +  For API details, see [GetBucketPolicyStatus](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -45,7 +45,7 @@ Get-S3BucketPolicyStatus -BucketName 'amzn-s3-demo-bucket'
 **Tools for PowerShell V5**
 **Example 1: This command returns policy status for the given S3 bucket, indicating whether the bucket is public.**
 
-```
+```powershell
 Get-S3BucketPolicyStatus -BucketName 'amzn-s3-demo-bucket'
 ```
 +  For API details, see [GetBucketPolicyStatus](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

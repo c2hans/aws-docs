@@ -63,7 +63,7 @@ If, for example, you use [Visual Studio Code](https://code.visualstudio.com/) as
 
 For debugging, you can provide a VS Code with debug configuration similar to the following:
 
-```
+```json
 "configurations": [
     {
         "name": "Cortex Debug",
@@ -109,51 +109,51 @@ The compiler must be in the system's `PATH` variable, or you must specify the lo
 
 For example, if the vendor is Texas Instruments, and the board is the CC3220 Launchpad, and the compiler is GCC for ARM, you can issue the following command to build the source files from the current directory to a directory named `{{build-directory}}`:
 
-```
+```bash
 cmake -DVENDOR=ti -DBOARD=cc3220_launchpad -DCOMPILER=arm-ti -S . -B {{build-directory}}
 ```
 
 **Note**
 If you are using Windows, you must specify the native build system because CMake uses Visual Studio by default. For example:
 
-```
+```bash
 cmake -DVENDOR=ti -DBOARD=cc3220_launchpad -DCOMPILER=arm-ti -S . -B {{build-directory}} -G Ninja
 ```
 Or:
 
-```
+```bash
 cmake -DVENDOR=ti -DBOARD=cc3220_launchpad -DCOMPILER=arm-ti -S . -B {{build-directory}} -G "MinGW Makefiles"
 ```
 
 The regular expressions `${VENDOR}.*` and `${BOARD}.*` are used to search for a matching board, so you don't have to use the full names of the vendor and board for the `VENDOR` and `BOARD` options. Partial names work, provided there is a single match. For example, the following commands generate the same build files from the same source:
 
-```
+```bash
 cmake -DVENDOR=ti -DCOMPILER=arm-ti -S . -B {{build-directory}}
 ```
 
-```
+```bash
 cmake -DBOARD=cc3220 -DCOMPILER=arm-ti -S . -B {{build-directory}}
 ```
 
-```
+```bash
 cmake -DVENDOR=t -DBOARD=cc -DCOMPILER=arm-ti -S . -B {{build-directory}}
 ```
 
 You can use the `CMAKE_TOOLCHAIN_FILE` option if you want to use a toolchain file that is not located in the default directory `cmake/toolchains`. For example:
 
-```
+```bash
 cmake -DBOARD=cc3220 -DCMAKE_TOOLCHAIN_FILE='/path/to/toolchain_file.cmake' -S . -B {{build-directory}}
 ```
 
 If the toolchain file does not use absolute paths for your compiler, and you didn't add your compiler to the `PATH` environment variable, CMake might not be able to find it. To make sure that CMake finds your toolchain file, you can use the `AFR_TOOLCHAIN_PATH` option. This option searches the specified toolchain directory path and the toolchain's subfolder under `bin`. For example:
 
-```
+```bash
 cmake -DBOARD=cc3220 -DCMAKE_TOOLCHAIN_FILE='/path/to/toolchain_file.cmake' -DAFR_TOOLCHAIN_PATH='/path/to/toolchain/' -S . -B {{build-directory}}
 ```
 
 To enable debugging, set the `CMAKE_BUILD_TYPE` to `debug`. With this option enabled, CMake adds debug flags to the compile options, and builds FreeRTOS with debug symbols.
 
-```
+```bash
 # Build with debug symbols
 cmake -DBOARD=cc3220 -DCOMPILER=arm-ti -DCMAKE_BUILD_TYPE=debug -S . -B {{build-directory}}
 ```
@@ -207,7 +207,7 @@ You can build FreeRTOS with a native build system by calling the build system co
 
 For example, if your build file output directory is `<build_dir>`, and you are using Make as your native build system, run the following commands:
 
-```
+```bash
 cd <build_dir>
 make -j4
 ```
@@ -217,23 +217,23 @@ make -j4
 
 You can also use the CMake command-line tool to build FreeRTOS. CMake provides an abstraction layer for calling native build systems. For example:
 
-```
+```bash
 cmake --build {{build_dir}}
 ```
 
 Here are some other common uses of the CMake command-line tool's build mode:
 
-```
+```bash
 # Take advantage of CPU cores.
 cmake --build {{build_dir}} --parallel 8
 ```
 
-```
+```bash
 # Build specific targets.
 cmake --build {{build_dir}} --target afr_kernel
 ```
 
-```
+```bash
 # Clean first, then build.
 cmake --build {{build_dir}} --clean-first
 ```

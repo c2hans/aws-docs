@@ -25,7 +25,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-msk-to-lambda) repository.
 Consuming an Amazon MSK event with Lambda using JavaScript.
 
-```
+```javascript
 exports.handler = async (event) => {
     // Iterate through keys
     for (let key in event.records) {
@@ -42,7 +42,7 @@ exports.handler = async (event) => {
 ```
 Consuming an Amazon MSK event with Lambda using TypeScript.
 
-```
+```javascript
 import { MSKEvent, Context } from "aws-lambda";
 import { Buffer } from "buffer";
 import { Logger } from "@aws-lambda-powertools/logger";

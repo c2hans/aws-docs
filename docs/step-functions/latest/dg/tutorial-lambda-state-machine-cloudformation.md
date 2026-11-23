@@ -21,7 +21,7 @@ Define the trust policy associated with the IAM role for the Lambda function. Th
 ------
 #### [ YAML ]
 
-```
+```yaml
 LambdaExecutionRole:
     Type: "AWS::IAM::Role"
     Properties:
@@ -37,7 +37,7 @@ LambdaExecutionRole:
 ------
 #### [ JSON ]
 
-```
+```json
           "LambdaExecutionRole": {
               "Type": "AWS::IAM::Role",
               "Properties": {
@@ -69,7 +69,7 @@ Ensure that your Lambda function is under the same AWS account and AWS Region as
 ------
 #### [ YAML ]
 
-```
+```yaml
 MyLambdaFunction:
     Type: "AWS::Lambda::Function"
     Properties:
@@ -87,7 +87,7 @@ MyLambdaFunction:
 ------
 #### [ JSON ]
 
-```
+```json
         "MyLambdaFunction": {
               "Type": "AWS::Lambda::Function",
               "Properties": {
@@ -117,7 +117,7 @@ Define the trust policy associated with the IAM role for the state machine execu
 ------
 #### [ YAML ]
 
-```
+```yaml
 StatesExecutionRole:
     Type: "AWS::IAM::Role"
     Properties:
@@ -144,7 +144,7 @@ StatesExecutionRole:
 ------
 #### [ JSON ]
 
-```
+```json
         "StatesExecutionRole": {
               "Type": "AWS::IAM::Role",
               "Properties": {
@@ -196,7 +196,7 @@ Define the Lambda state machine.
 ------
 #### [ YAML ]
 
-```
+```yaml
 MyStateMachine:
     Type: "AWS::StepFunctions::StateMachine"
     Properties:
@@ -221,7 +221,7 @@ MyStateMachine:
 ------
 #### [ JSON ]
 
-```
+```json
         "MyStateMachine": {
               "Type": "AWS::StepFunctions::StateMachine",
               "Properties": {
@@ -263,7 +263,7 @@ Once you understand the components of the CloudFormation template, you can put t
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: "2010-09-09"
      Description: "An example template with an IAM role for a Lambda state machine."
      Resources:
@@ -337,7 +337,7 @@ Once you understand the components of the CloudFormation template, you can put t
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
          "AWSTemplateFormatVersion": "2010-09-09",
          "Description": "An example template with an IAM role for a Lambda state machine.",

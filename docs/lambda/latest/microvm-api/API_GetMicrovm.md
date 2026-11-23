@@ -47,6 +47,7 @@ Content-type: application/json
    "imageArn": "string",
    "imageVersion": "string",
    "ingressNetworkConnectors": [ "string" ],
+   "kmsKeyIdentifier": "string",
    "maximumDurationInSeconds": number,
    "microvmId": "string",
    "startedAt": number,
@@ -101,6 +102,12 @@ The list of ingress network connectors configured for the MicroVM.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
+
+ ** [kmsKeyIdentifier](#API_GetMicrovm_ResponseSyntax) **   <a name="lambdamicrovm-GetMicrovm-response-kmsKeyIdentifier"></a>
+The customer managed AWS Key Management Service (AWS KMS) key that encrypts your MicroVM configuration at rest. If you don't specify a key, your MicroVM uses an AWS owned key.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `(arn:aws[a-z-]*:kms:[a-z0-9-]+:[0-9]{12}:(key|alias)/[a-zA-Z0-9:/_-]+|alias/[a-zA-Z0-9:/_-]+|[a-zA-Z0-9-]+)`
 
  ** [maximumDurationInSeconds](#API_GetMicrovm_ResponseSyntax) **   <a name="lambdamicrovm-GetMicrovm-response-maximumDurationInSeconds"></a>
 The maximum duration in seconds that the MicroVM can exist before being terminated by the platform.

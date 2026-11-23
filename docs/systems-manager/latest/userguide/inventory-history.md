@@ -29,7 +29,7 @@ AWS Config requires AWS Identity and Access Management (IAM) permissions to get 
 
 1. Copy and paste the following JSON sample into a simple text file and save it as recordingGroup.json.
 
-   ```
+   ```json
    {
       "allSupported":false,
       "includeGlobalResourceTypes":false,

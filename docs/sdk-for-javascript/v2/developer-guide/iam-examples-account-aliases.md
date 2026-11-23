@@ -35,7 +35,7 @@ To set up and run this example, you must first complete these tasks:
 
 Create a Node.js module with the file name `iam_createaccountalias.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create a JSON object containing the parameters needed to create an account alias, which includes the alias you want to create. Call the `createAccountAlias` method of the `AWS.IAM` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -66,7 +66,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `iam_listaccountaliases.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create a JSON object containing the parameters needed to list account aliases, which includes the maximum number of items to return. Call the `listAccountAliases` method of the `AWS.IAM` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -86,7 +86,7 @@ iam.listAccountAliases({ MaxItems: 10 }, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node iam_listaccountaliases.js
 ```
 
@@ -97,7 +97,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `iam_deleteaccountalias.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create a JSON object containing the parameters needed to delete an account alias, which includes the alias you want deleted. Call the `deleteAccountAlias` method of the `AWS.IAM` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region

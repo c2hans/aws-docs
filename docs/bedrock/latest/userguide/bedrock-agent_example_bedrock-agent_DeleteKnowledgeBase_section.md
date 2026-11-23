@@ -13,7 +13,7 @@ The following code example shows how to use `DeleteKnowledgeBase`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Delete an Amazon Bedrock knowledge base.
 
-```
+```python
 def delete_knowledge_base(bedrock_agent_client, knowledge_base_id):
     """
     Deletes a knowledge base.

@@ -56,7 +56,7 @@ To log data events in a trail, use the [put-event-selectors](https://docs.aws.am
 **Example Data event log entry of all your account's AMB Access Polygon endpoints requests**
 The following example demonstrates how to use the `put-event-selectors` operation to log all your account's AMB Access Polygon endpoint requests for the trail `my-polygon-trail` in the `us-east-1` Region.
 
-```
+```json
 aws cloudtrail put-event-selectors \
 --region {{us-east-1}} \
 --trail-name {{my-polygon-trail}}  \
@@ -69,7 +69,7 @@ aws cloudtrail put-event-selectors \
 After you subscribe, you can track usage in the S3 bucket that is connected to the trail specified in the previous example.
 The following result shows a CloudTrail data event log entry of the information that's collected by CloudTrail. You can determine that a Polygon JSON-RPC request was made to one of the AMB Access Polygon endpoints, the IP address that the request came from, who made the request, when it was made, and other additional details. Some values in the following example have been obfuscated for security reasons but appear fully in actual log entries.
 
-```
+```JSON
 {
         "eventVersion": "1.09",
         "userIdentity": {

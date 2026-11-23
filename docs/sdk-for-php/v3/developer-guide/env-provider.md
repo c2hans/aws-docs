@@ -16,7 +16,7 @@ You can also set the environment variables in the command line, as shown here.
 
  **Linux**
 
-```
+```ini
 $ export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
    # The access key for your AWS account.
 $ export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
@@ -29,7 +29,7 @@ $ export AWS_SESSION_TOKEN=AQoDYXdzEJr...<remainder of security token>
 
  **Windows**
 
-```
+```ini
 C:\> SET  AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
    # The access key for your AWS account.
 C:\> SET  AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
@@ -42,7 +42,7 @@ C:\> SET AWS_SESSION_TOKEN=AQoDYXdzEJr...<remainder of security token>
 
  `Aws\Credentials\CredentialProvider::env` attempts to load credentials from environment variables.
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 use Aws\S3\S3Client;
 

@@ -118,7 +118,7 @@ For more information, see [Create a Capacity Reservation](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This example creates a new Capacity Reservation with the specified attributes**
 
-```
+```powershell
 Add-EC2CapacityReservation -InstanceType m4.xlarge -InstanceCount 2 -AvailabilityZone eu-west-1b -EbsOptimized True -InstancePlatform Windows
 ```
 **Output:**
@@ -145,7 +145,7 @@ TotalInstanceCount     : 2
 **Tools for PowerShell V5**
 **Example 1: This example creates a new Capacity Reservation with the specified attributes**
 
-```
+```powershell
 Add-EC2CapacityReservation -InstanceType m4.xlarge -InstanceCount 2 -AvailabilityZone eu-west-1b -EbsOptimized True -InstancePlatform Windows
 ```
 **Output:**

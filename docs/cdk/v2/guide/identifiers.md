@@ -22,7 +22,7 @@ Let’s look at an example where we have two constructs with the identifier `MyB
 
 **Example**
 
-```
+```javascript
 import { App, Stack, StackProps } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as s3 from 'aws-cdk-lib/aws-s3';
@@ -40,7 +40,7 @@ new MyStack(app, 'Stack1');
 new MyStack(app, 'Stack2');
 ```
 
-```
+```javascript
 const { App , Stack } = require('aws-cdk-lib');
 const s3 = require('aws-cdk-lib/aws-s3');
 
@@ -57,7 +57,7 @@ new MyStack(app, 'Stack1');
 new MyStack(app, 'Stack2');
 ```
 
-```
+```python
 from aws_cdk import App, Construct, Stack, StackProps
 from constructs import Construct
 from aws_cdk import aws_s3 as s3
@@ -74,7 +74,7 @@ MyStack(app, 'Stack1')
 MyStack(app, 'Stack2')
 ```
 
-```
+```java
 // MyStack.java
 package com.myorg;
 
@@ -109,7 +109,7 @@ public class Main {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using constructs;
 using Amazon.CDK.AWS.S3;
@@ -144,23 +144,23 @@ You can access the path of any construct programmatically, as shown in the follo
 
 **Example**
 
-```
+```javascript
 const path: string = myConstruct.node.path;
 ```
 
-```
+```javascript
 const path = myConstruct.node.path;
 ```
 
-```
+```python
 path = my_construct.node.path
 ```
 
-```
+```java
 String path = myConstruct.getNode().getPath();
 ```
 
-```
+```csharp
 string path = myConstruct.Node.Path;
 ```
 
@@ -173,23 +173,23 @@ In general, your AWS CDK app should not need to know about unique IDs. You can, 
 
 **Example**
 
-```
+```javascript
 const uid: string = Names.uniqueId(myConstruct);
 ```
 
-```
+```javascript
 const uid = Names.uniqueId(myConstruct);
 ```
 
-```
+```python
 uid = Names.unique_id(my_construct)
 ```
 
-```
+```java
 String uid = Names.uniqueId(myConstruct);
 ```
 
-```
+```csharp
 string uid = Names.Uniqueid(myConstruct);
 ```
 
@@ -197,23 +197,23 @@ The *address* is another kind of unique identifier that uniquely distinguishes C
 
 **Example**
 
-```
+```javascript
 const addr: string = myConstruct.node.addr;
 ```
 
-```
+```javascript
 const addr = myConstruct.node.addr;
 ```
 
-```
+```python
 addr = my_construct.node.addr
 ```
 
-```
+```java
 String addr = myConstruct.getNode().getAddr();
 ```
 
-```
+```csharp
 string addr = myConstruct.Node.Addr;
 ```
 
@@ -269,7 +269,7 @@ The following example shows a stack with resources that are defined directly:
 
 **Example**
 
-```
+```javascript
 export class MyStack extends cdk.Stack {
   constructor(scope: Construct, id: string) {
     super(scope, id);
@@ -279,7 +279,7 @@ export class MyStack extends cdk.Stack {
 }
 ```
 
-```
+```javascript
 class MyStack extends cdk.Stack {
   constructor(scope, id) {
     super(scope, id);
@@ -289,7 +289,7 @@ class MyStack extends cdk.Stack {
 }
 ```
 
-```
+```python
 from aws_cdk import (
     Stack,
     aws_s3 as s3,
@@ -305,7 +305,7 @@ class MyStack(Stack):
         )
 ```
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -329,7 +329,7 @@ public class MyStack extends Stack {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 using Amazon.CDK.AWS.S3;
@@ -351,7 +351,7 @@ namespace MyApp
 }
 ```
 
-```
+```go
 package main
 
 import (
@@ -384,7 +384,7 @@ You can extract the bucket into a higher-level construct and preserve the same l
 
 **Example**
 
-```
+```javascript
 class DataPipeline extends Construct {
   constructor(scope: Construct, id: string) {
     super(scope, id);
@@ -401,7 +401,7 @@ export class MyStack extends cdk.Stack {
 }
 ```
 
-```
+```javascript
 class DataPipeline extends Construct {
   constructor(scope, id) {
     super(scope, id);
@@ -418,7 +418,7 @@ class MyStack extends cdk.Stack {
 }
 ```
 
-```
+```python
 from aws_cdk import (
     Stack,
     aws_s3 as s3,
@@ -439,7 +439,7 @@ class MyStack(Stack):
         DataPipeline(self, "DataBucket")
 ```
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -470,7 +470,7 @@ public class MyStack extends Stack {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 using Amazon.CDK.AWS.S3;
@@ -500,7 +500,7 @@ namespace MyApp
 }
 ```
 
-```
+```go
 package main
 
 import (

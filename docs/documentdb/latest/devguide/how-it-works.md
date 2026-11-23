@@ -397,7 +397,7 @@ aws docdb describe-db-cluster-snapshots ^
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 [
     [
         "rds:docdb-2019-01-09-23-55-38-2019-02-13-00-06",

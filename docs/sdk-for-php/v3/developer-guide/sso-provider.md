@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sso-provi
 
 `Aws\Credentials\CredentialProvider::sso` is the single sign-on credential provider. This provider is also known as the AWS IAM Identity Center credential provider.
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 use Aws\S3\S3Client;
 

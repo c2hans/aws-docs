@@ -128,7 +128,7 @@ You can create a configuration set using a JSON file as input to the `aws sesv2 
 
    This example uses a file named `create-configuration-set.json`:
 
-   ```
+   ```json
    {
        "ConfigurationSetName": "{{sample-configuration-set}}",
        "TrackingOptions": {

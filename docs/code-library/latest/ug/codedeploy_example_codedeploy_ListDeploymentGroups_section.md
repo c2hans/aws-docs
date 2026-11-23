@@ -39,7 +39,7 @@ For more information, see [View deployment group details with CodeDeploy](https:
 **Tools for PowerShell V4**
 **Example 1: This example gets a list of deployment groups for the specified application.**
 
-```
+```powershell
 Get-CDDeploymentGroupList -ApplicationName CodeDeployDemoApplication
 ```
 **Output:**
@@ -54,7 +54,7 @@ CodeDeployDemoApplication    {CodeDeployDemoFleet, CodeDeployProductionFleet}
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of deployment groups for the specified application.**
 
-```
+```powershell
 Get-CDDeploymentGroupList -ApplicationName CodeDeployDemoApplication
 ```
 **Output:**

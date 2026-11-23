@@ -43,7 +43,7 @@ The following is the full `AmazonEMRServerlessServiceRolePolicy` policy.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -95,7 +95,7 @@ The following trust policy is attached to this role to allow the EMR Serverless 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -90,7 +90,7 @@ You can customize the migration workflow once it has been created. For more info
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -124,7 +124,7 @@ You can customize the migration workflow once it has been created. For more info
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -175,7 +175,7 @@ You can customize the migration workflow once it has been created. For more info
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -204,7 +204,7 @@ You can customize the migration workflow once it has been created. For more info
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

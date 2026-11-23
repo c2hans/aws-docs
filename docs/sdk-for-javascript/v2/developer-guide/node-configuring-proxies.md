@@ -8,13 +8,13 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 
 If you can't directly connect to the internet, the SDK for JavaScript supports use of HTTP or HTTPS proxies through a third-party HTTP agent, such as [proxy-agent](https://github.com/TooTallNate/proxy-agents/tree/main/packages/proxy-agent). To install proxy-agent, type the following at the command line.
 
-```
+```sh
 npm install proxy-agent --save
 ```
 
 If you decide to use a different proxy, first follow the installation and configuration instructions for that proxy. To use this or another third-party proxy in your application, you must set the `httpOptions` property of ` AWS.Config` to specify the proxy you choose. This example shows ` proxy-agent`.
 
-```
+```javascript
 var AWS = require("aws-sdk");
 var ProxyAgent = require('proxy-agent').ProxyAgent;
 AWS.config.update({

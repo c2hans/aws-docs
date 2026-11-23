@@ -80,7 +80,7 @@ Enable cross-origin resource sharing (CORS) by returning correct headers.
 #### POST schema
 <a name="assets-request-body-post-example"></a>
 
-```
+```json
 {
   "packagingGroupId": "string",
   "sourceArn": "string",
@@ -98,7 +98,7 @@ Enable cross-origin resource sharing (CORS) by returning correct headers.
 #### AssetList schema
 <a name="assets-response-body-assetlist-example"></a>
 
-```
+```json
 {
   "assets": [
     {
@@ -120,7 +120,7 @@ Enable cross-origin resource sharing (CORS) by returning correct headers.
 #### Asset schema
 <a name="assets-response-body-asset-example"></a>
 
-```
+```json
 {
   "createdAt": "string",
   "packagingGroupId": "string",

@@ -14,13 +14,13 @@ Follow these instructions to implement this pattern:
 
 1. Navigate to the landing-zone-accelerator-on-aws folder:
 
-   ```
+   ```bash
    cd landing-zone-accelerator-on-aws
    ```
 
 1. Compress all files and folders inside the landing-zone-accelerator-on-aws folder into a versioned zip archive file and upload it to your S3 bucket:
 
-   ```
+   ```bash
    SOURCE_CODE_BUCKET_NAME=YOUR_BUCKET_NAME
    LZA_VERSION=v1.14.2
    zip -q -T -r ../$LZA_VERSION.zip .  # quiet, test integrity, recursive
@@ -31,26 +31,26 @@ Replace `v1.14.2` with the actual LZA version you are deploying. The zip file mu
 
 1. Install dependencies and build the source code:
 
-   ```
+   ```bash
    yarn install && yarn build
    ```
 
 1. Navigate to the installer folder:
 
-   ```
+   ```bash
    cd packages/\@aws-accelerator/installer/
    ```
 
 1. Synthesize the installer template by running:
 
-   ```
+   ```bash
    cdk synth --context use-s3-source=true
    ```
 
 **Note**
 If your S3 bucket is encrypted with KMS (S3-KMS), you must pass the KMS key ID when synthesizing the template:
 
-```
+```bash
 cdk synth --context use-s3-source=true --context
 s3-source-kms-key-arn=arn:aws:kms:us-east-1:000000000000:key/aaaaaaaa-1111-bbbb-2222-cccccc333333
 ```

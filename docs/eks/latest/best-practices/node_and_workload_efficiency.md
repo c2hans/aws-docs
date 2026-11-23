@@ -163,7 +163,7 @@ As an example, we can scaling on the highest of three values (see below). We sca
 **Note**
 This is just to show the flexibility of the auto-scaling API, we recommend against overly complex rules that can be difficult to troubleshoot in production.
 
-```
+```yaml
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:

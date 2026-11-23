@@ -94,7 +94,7 @@ You can set the `UseInstaller` configuration to `true` to install these librarie
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -124,7 +124,7 @@ You can set the `UseInstaller` configuration to `true` to install these librarie
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -147,7 +147,7 @@ You can set the `UseInstaller` configuration to `true` to install these librarie
 ------
 #### [ Legacy subscription router v2.1.x ]
 
-  ```
+  ```json
   {
     "subscriptions": {
       "aws-greengrass-cloudwatch": {
@@ -163,7 +163,7 @@ You can set the `UseInstaller` configuration to `true` to install these librarie
 ------
 #### [ Legacy subscription router v2.0.x ]
 
-  ```
+  ```json
   {
     "subscriptions": {
       "aws-greengrass-cloudwatch": {
@@ -392,7 +392,7 @@ Default: `false`
 (Optional) The object that contains the [authorization policy](interprocess-communication.md#ipc-authorization-policies) that allows the component to publish and subscribe to the specified topics. If you specify custom values for `InputTopic` and `OutputTopic`, you must update the resource values in this object.
 Default:
 
-```
+```json
 {
   "aws.greengrass.ipc.pubsub": {
     "aws.greengrass.Cloudwatch:pubsub:1": {
@@ -439,7 +439,7 @@ Default:
 
 **Example: Configuration merge update**
 
-```
+```json
 {
   "PublishInterval": 0,
   "PubSubToIoTCore": true
@@ -498,7 +498,7 @@ Default: `true`
 (Optional) The object that contains the [authorization policy](interprocess-communication.md#ipc-authorization-policies) that allows the component to publish and subscribe to the specified topics. If you specify custom values for `InputTopic` and `OutputTopic`, you must update the resource values in this object.
 Default:
 
-```
+```json
 {
   "aws.greengrass.ipc.pubsub": {
     "aws.greengrass.Cloudwatch:pubsub:1": {
@@ -545,7 +545,7 @@ Default:
 
 **Example: Configuration merge update**
 
-```
+```json
 {
   "PublishInterval": 0,
   "PubSubToIoTCore": true
@@ -605,7 +605,7 @@ Default: `PUB_SUB`
 
 **Example: Configuration merge update (container mode)**
 
-```
+```json
 {
   "containerMode": "GreengrassContainer"
 }
@@ -613,7 +613,7 @@ Default: `PUB_SUB`
 
 **Example: Configuration merge update (no container mode)**
 
-```
+```json
 {
   "containerMode": "NoContainer"
 }
@@ -681,7 +681,7 @@ For more information, see [CloudWatch service quotas](https://docs.aws.amazon.co
 
 **Example input**
 
-```
+```json
 {
   "request": {
     "namespace": "Greengrass",
@@ -716,7 +716,7 @@ Component versions 2.0.x publish responses as output data on an MQTT topic by de
 **Example output: Success**
 The response includes the namespace of the metric data and the `RequestId` field from the CloudWatch response.
 
-```
+```json
 {
   "response": {
     "cloudwatch_rid": "70573243-d723-11e8-b095-75ff2EXAMPLE",
@@ -728,7 +728,7 @@ The response includes the namespace of the metric data and the `RequestId` field
 
 **Example output: Failure**
 
-```
+```json
 {
   "response" : {
     "namespace": "Greengrass",
@@ -783,14 +783,14 @@ This component uses the following log file.
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.greengrass.Cloudwatch.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\aws.greengrass.Cloudwatch.log -Tail 10 -Wait
   ```
 

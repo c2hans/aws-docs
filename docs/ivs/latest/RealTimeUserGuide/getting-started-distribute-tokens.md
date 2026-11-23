@@ -43,7 +43,7 @@ To create a new key pair in the console, follow these steps:
 
 To create a new P384 EC key pair with OpenSSL (you might have to install [OpenSSL](https://www.openssl.org/source/) first), follow these steps. This process enables you to access both the private and public keys. You need the public key only if you want to test verification of your tokens.
 
-```
+```javascript
 openssl ecparam -name secp384r1 -genkey -noout -out priv.pem
 openssl ec -in priv.pem -pubout -out public.pem
 ```
@@ -132,7 +132,7 @@ The header specifies:
 + `typ` is the token type, JWT.
 + `kid` is the ARN of the public key used to sign the token. It must be the same ARN returned from the [GetPublicKey](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GetPublicKey.html) API request.
 
-```
+```Java
 {
   "alg": "ES384",
   "typ": "JWT"
@@ -157,7 +157,7 @@ The payload contains data specific to IVS. All fields except `user_id` are manda
 + `attributes` is an optional field where you can specify application-provided attributes to encode into the token and attach to a stage. Map keys and values can contain UTF-8 encoded text. The maximum length of this field is 1 KB total. *This field is exposed to all stage participants and should not be used for personally identifying, confidential, or sensitive information.*
 + `version` must be `1.0`.
 
-  ```
+  ```javascript
   {
     "exp": 1697322063,
     "iat": 1697149263,
@@ -184,7 +184,7 @@ The payload contains data specific to IVS. All fields except `user_id` are manda
 
 To create the signature, use the private key with the algorithm specified in the header (ES384) to sign the encoded header and encoded payload.
 
-```
+```Java
 ECDSASHA384(
   base64UrlEncode(header) + "." +
   base64UrlEncode(payload),
@@ -199,7 +199,7 @@ ECDSASHA384(
 
 1. Assemble the token.
 
-   ```
+   ```Java
    base64UrlEncode(header) + "." +
    base64UrlEncode(payload) + "." +
    base64UrlEncode(signature)
@@ -275,7 +275,7 @@ You can use the AWS SDK to create tokens. Below are instructions for the AWS SDK
 
 **Prerequisite:** To use the code sample below, you need to install the aws-sdk/client-ivs-realtime package. For details, see [Getting started with the AWS SDK for JavaScript](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/getting-started.html).
 
-```
+```javascript
 import { IVSRealTimeClient, CreateParticipantTokenCommand } from "@aws-sdk/client-ivs-realtime";
 
 const ivsRealtimeClient = new IVSRealTimeClient({ region: 'us-west-2' });
@@ -302,7 +302,7 @@ Use the token header described in [Create Participant Tokens with a Key Pair](#g
 ### Token Payload
 <a name="getting-started-distribute-tokens-connection-tokens-payload"></a>
 
-```
+```javascript
 {
     "exp": 1697322063,
     "iat": 1697149263,

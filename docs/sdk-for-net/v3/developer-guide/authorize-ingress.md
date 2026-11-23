@@ -27,7 +27,7 @@ The following snippet adds an inbound rule to a security group for a particular 
 
 The example [at the end of this topic](#authorize-ingress-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method that adds a TCP ingress rule to a security group
     private static async Task AddIngressRule(
@@ -80,7 +80,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c17c13c17c17b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;

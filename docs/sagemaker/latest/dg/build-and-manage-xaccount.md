@@ -45,7 +45,7 @@ When creating your resource share, choose one of two supported permission polici
 
 The `AWSRAMDefaultPermissionSageMakerPipeline` policy allows the following read-only actions:
 
-```
+```JSON
 "sagemaker:DescribePipeline"
 "sagemaker:DescribePipelineDefinitionForExecution"
 "sagemaker:DescribePipelineExecution"
@@ -65,7 +65,7 @@ Be mindful of AWS resource usage when using the extended pipeline execution perm
 
 The extended pipeline execution permission policy allows the following actions:
 
-```
+```JSON
 "sagemaker:DescribePipeline"
 "sagemaker:DescribePipelineDefinitionForExecution"
 "sagemaker:DescribePipelineExecution"

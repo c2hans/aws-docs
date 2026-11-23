@@ -124,7 +124,7 @@ For more information, see [Working with Route Tables](https://docs.aws.amazon.co
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/ec2#code-examples).
 
-```
+```php
     /**
      * @param array $routeTableIds
      * @param array $filters
@@ -162,7 +162,7 @@ For more information, see [Working with Route Tables](https://docs.aws.amazon.co
 **Tools for PowerShell V4**
 **Example 1: This example describes all your route tables.**
 
-```
+```powershell
 Get-EC2RouteTable
 ```
 **Output:**
@@ -190,12 +190,12 @@ VpcPeeringConnectionId  :
 ```
 **Example 2: This example returns details for the specified route table.**
 
-```
+```powershell
 Get-EC2RouteTable -RouteTableId rtb-1a2b3c4d
 ```
 **Example 3: This example describes the route tables for the specified VPC.**
 
-```
+```powershell
 Get-EC2RouteTable -Filter @{ Name="vpc-id"; Values="vpc-1a2b3c4d" }
 ```
 **Output:**
@@ -213,7 +213,7 @@ VpcId           : vpc-1a2b3c4d
 **Tools for PowerShell V5**
 **Example 1: This example describes all your route tables.**
 
-```
+```powershell
 Get-EC2RouteTable
 ```
 **Output:**
@@ -241,12 +241,12 @@ VpcPeeringConnectionId  :
 ```
 **Example 2: This example returns details for the specified route table.**
 
-```
+```powershell
 Get-EC2RouteTable -RouteTableId rtb-1a2b3c4d
 ```
 **Example 3: This example describes the route tables for the specified VPC.**
 
-```
+```powershell
 Get-EC2RouteTable -Filter @{ Name="vpc-id"; Values="vpc-1a2b3c4d" }
 ```
 **Output:**
@@ -267,7 +267,7 @@ VpcId           : vpc-1a2b3c4d
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ec2#code-examples).
 
-```
+```python
 class VpcWrapper:
     """Encapsulates Amazon Elastic Compute Cloud (Amazon EC2) Amazon Virtual Private Cloud actions."""
 
@@ -318,7 +318,7 @@ class VpcWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     " Create filter for VPC ID
     " iv_vpc_id = 'vpc-abc123'
     DATA lt_filters TYPE /aws1/cl_ec2filter=>tt_filterlist.

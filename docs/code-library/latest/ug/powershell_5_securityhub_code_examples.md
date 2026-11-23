@@ -26,7 +26,7 @@ The following code example shows how to use `Get-SHUBFinding`.
 **Tools for PowerShell V5**
 **Example 1: This command retrieves Security Hub findings from Amazon EC2; service.**
 
-```
+```powershell
 $filter = New-Object -TypeName Amazon.SecurityHub.Model.AwsSecurityFindingFilters
 $filter.ResourceType = New-Object -TypeName Amazon.SecurityHub.Model.StringFilter -Property @{
     Comparison = 'PREFIX'
@@ -36,7 +36,7 @@ Get-SHUBFinding -Filter $filter
 ```
 **Example 2: This command retrieves Security Hub findings from AWS account ID 123456789012.**
 
-```
+```powershell
 $filter = New-Object -TypeName Amazon.SecurityHub.Model.AwsSecurityFindingFilters
 $filter.AwsAccountId = New-Object -TypeName Amazon.SecurityHub.Model.StringFilter -Property @{
     Comparison = 'EQUALS'
@@ -46,7 +46,7 @@ Get-SHUBFinding -Filter $filter
 ```
 **Example 3: This command retrieves Security Hub findings generated for standard "pci-dss".**
 
-```
+```powershell
 $filter = New-Object -TypeName Amazon.SecurityHub.Model.AwsSecurityFindingFilters
 $filter.GeneratorId = New-Object -TypeName Amazon.SecurityHub.Model.StringFilter -Property @{
     Comparison = 'PREFIX'
@@ -56,7 +56,7 @@ Get-SHUBFinding -Filter $filter
 ```
 **Example 4: This command retrieves Security Hub critical-severity findings that have a workflow status of NOTIFIED.**
 
-```
+```powershell
 $filter = New-Object -TypeName Amazon.SecurityHub.Model.AwsSecurityFindingFilters
 $filter.SeverityLabel = New-Object -TypeName Amazon.SecurityHub.Model.StringFilter -Property @{
     Comparison = 'EQUALS'

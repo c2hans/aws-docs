@@ -28,7 +28,7 @@ The template loads policies that include an example of how to grant permissions 
 
 If you try to update the permissions for the bus but the policy contains an error, an error message indicates the specific issue in the policy.
 
-```
+```json
   ### Choose which sections to include in the policy to match your use case. ###
   ### Be sure to remove all lines that start with ###, including the ### at the end of the line. ###
 

@@ -79,7 +79,7 @@ https://sns.us-west-2.amazonaws.com/?Action=GetPlatformApplicationAttributes
 #### Sample Response
 <a name="API_GetPlatformApplicationAttributes_Example_1_Response"></a>
 
-```
+```xml
 <GetPlatformApplicationAttributesResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <GetPlatformApplicationAttributesResult>
         <Attributes>

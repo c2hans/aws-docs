@@ -24,6 +24,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
 
 ![An example AWS ParallelCluster architecture.](https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/parallelcluster-architecture.png)
 
+* Example AWS ParallelCluster architecture*
+
  An AWS ParallelCluster architecture enables the following workflow:
 +  Creating a desired configuration through a text file
 +  Launching a cluster through the AWS ParallelCluster Command Line Utility (CLI)

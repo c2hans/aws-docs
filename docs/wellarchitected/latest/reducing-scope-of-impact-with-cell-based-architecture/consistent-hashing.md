@@ -16,6 +16,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 
 ![Diagram showing consistent hashing.](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/consistent-hashing.jpg)
 
+*Consistent hashing*
+
  Advantages:
 +  Changing the number of cells does not requires rebalancing all cells and their customers and tenants
 +  Simple to implement.

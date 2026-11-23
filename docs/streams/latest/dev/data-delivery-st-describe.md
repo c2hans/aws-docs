@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-st-desc
 
  Use the `describe-channel` command and pass the channel ARN (`ChannelARN`) returned by `create-channel`:
 
-```
+```bash
 aws kinesis describe-channel \
     --channel-arn "arn:aws:kinesis:us-east-1:111122223333:channel/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 ```

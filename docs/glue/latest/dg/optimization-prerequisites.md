@@ -19,7 +19,7 @@ The IAM role must have the permissions to read data and update metadata in the D
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -84,7 +84,7 @@ The IAM role must have the permissions to read data and update metadata in the D
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -148,7 +148,7 @@ The IAM role must have the permissions to read data and update metadata in the D
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -174,7 +174,7 @@ The IAM role must have the permissions to read data and update metadata in the D
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -199,7 +199,7 @@ The IAM role must have the permissions to read data and update metadata in the D
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [

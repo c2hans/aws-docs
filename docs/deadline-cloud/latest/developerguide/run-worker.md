@@ -32,7 +32,7 @@ On Windows, it is required that the agent files are installed into Python's glob
 
 1. To allow the worker agent to create the temporary directories for running jobs, create a directory:
 
-   ```
+   ```bash
    sudo mkdir /sessions
    sudo chmod 750 /sessions
    sudo chown cloudshell-user /sessions
@@ -40,7 +40,7 @@ On Windows, it is required that the agent files are installed into Python's glob
 
 1. Run the Deadline Cloud worker agent in developer mode with the variables `DEV_FARM_ID` and `DEV_CMF_ID` that you added to the `~/.bashrc`.
 
-   ```
+   ```bash
    deadline-worker-agent \
        --farm-id $DEV_FARM_ID \
        --fleet-id $DEV_CMF_ID \
@@ -51,7 +51,7 @@ On Windows, it is required that the agent files are installed into Python's glob
 
    As the worker agent initializes and then polls the `UpdateWorkerSchedule` API operation the following output is displayed:
 
-   ```
+   ```screen
    INFO    Worker Agent starting
    [2024-03-27 15:51:01,292][INFO    ] 👋 Worker Agent starting
    [2024-03-27 15:51:01,292][INFO    ] AgentInfo
@@ -67,13 +67,13 @@ On Windows, it is required that the agent files are installed into Python's glob
 
 1. Select your first CloudShell tab, then list the workers in the fleet.
 
-   ```
+   ```bash
    deadline worker list --fleet-id $DEV_CMF_ID
    ```
 
    Output such as the following is displayed:
 
-   ```
+   ```screen
    Displaying 1 of 1 workers starting at 0
 
    - workerId: worker-8c9af877c8734e89914047111f

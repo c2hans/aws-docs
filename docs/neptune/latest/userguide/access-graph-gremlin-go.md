@@ -21,13 +21,13 @@ Before you begin, do the following:
 
 1. Starting from an empty directory, initialize a new Go module:
 
-   ```
+   ```go
    go mod init example.com/gremlinExample
    ```
 
 1. Add gremlin-go as a dependency of your new module:
 
-   ```
+   ```go
    go get github.com/apache/tinkerpop/gremlin-go/v3/driver
    ```
 
@@ -35,7 +35,7 @@ Before you begin, do the following:
 
 1. Copy the following into the `gremlinExample.go` file, replacing {{`(your neptune endpoint)`}} with the address of your Neptune DB instance:
 
-   ```
+   ```go
    package main
 
    import (
@@ -74,7 +74,7 @@ Before you begin, do the following:
 **Note**
 The Neptune TLS certificate format is not currently supported on Go 1.18\+ with macOS, and may give a 509 error when trying to initiate a connection. For local testing, this can be skipped by adding "crypto/tls" to the imports and modifying the `DriverRemoteConnection` settings as follows:
 
-   ```
+   ```go
    // Creating the connection to the server.
    driverRemoteConnection, err := gremlingo.NewDriverRemoteConnection("wss://your-neptune-endpoint:8182/gremlin",
      func(settings *gremlingo.DriverRemoteConnectionSettings) {

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 
 Clone the AVX repository and create a Python virtual environment:
 
-```
+```bash
 cd <cvx-project-root>
 python3 -m venv .venv
 source .venv/bin/activate
@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 Copy the environment template and fill in values from the CMS and ADP stack outputs captured in Step 1:
 
-```
+```bash
 cp .env.example .env
 # Edit .env with your values; key variables:
 #   CMS_STAGE           — CMS deployment stage (e.g., staging, prod)
@@ -30,7 +30,7 @@ cp .env.example .env
 
 Copy the AgentCore runtime configuration template and fill in the execution role ARN and S3 bucket that CDK will create in Step 3:
 
-```
+```bash
 cp .bedrock_agentcore.yaml.example .bedrock_agentcore.yaml
 # Edit .bedrock_agentcore.yaml with:
 #   execution_role — IAM role ARN for the AgentCore runtime (CDK output)

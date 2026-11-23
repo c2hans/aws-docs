@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 
 # ListTasksSortBase
 
- Defines the sorting parameters for listing tasks. This structure allows for specifying the field to sort by and the order of sorting.
+Defines the sorting parameters for listing tasks. This structure allows for specifying the field to sort by and the order of sorting.
 
 ## Contents
 <a name="API_ListTasksSortBase_Contents"></a>
@@ -13,13 +13,13 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 In the following list, the required parameters are described first.
 
  ** SortBy **   <a name="AWSPartnerCentral-Type-ListTasksSortBase-SortBy"></a>
- Specifies the field by which the task list should be sorted.
+Specifies the field by which the task list should be sorted.
 Type: String
 Valid Values: `StartTime`
 Required: Yes
 
  ** SortOrder **   <a name="AWSPartnerCentral-Type-ListTasksSortBase-SortOrder"></a>
- Determines the order in which the sorted results are presented.
+Determines the order in which the sorted results are presented.
 Type: String
 Valid Values: `ASCENDING | DESCENDING`
 Required: Yes

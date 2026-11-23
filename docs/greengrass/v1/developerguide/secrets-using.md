@@ -77,7 +77,7 @@ In the AWS IoT Greengrass API, a secret is a type of group resource. The followi
 
 The secret resource references the ARN of the corresponding Secrets Manager secret and includes two staging labels in addition to `AWSCURRENT`, which is always included.
 
-```
+```bash
 aws greengrass create-resource-definition --name MyGreengrassResources --initial-version '{
     "Resources": [
         {
@@ -112,7 +112,7 @@ For example, to change the set of staging labels for a secret resource:
 **Note**
 To add more resources to the version, include them in the `Resources` array.
 
-   ```
+   ```bash
    aws greengrass create-resource-definition --name MyGreengrassResources --initial-version '{
        "Resources": [
            {
@@ -168,7 +168,7 @@ To allow a Greengrass Lambda function to access a local secret, you configure th
 
   The following example creates a Lambda function that can access the `MyApiKey` secret resource.
 
-  ```
+  ```bash
   aws greengrass create-function-definition --name MyGreengrassFunctions --initial-version '{
       "Functions": [
           {
@@ -197,7 +197,7 @@ To allow a Greengrass Lambda function to access a local secret, you configure th
 
   The following example shows how to use the AWS IoT Greengrass Core SDK for Python to get a secret. It passes the name of the secret to the `get_secret_value` function. `SecretId` can be the name or ARN of the Secrets Manager secret (not the secret resource).
 
-  ```
+  ```python
   import greengrasssdk
 
   secrets_client = greengrasssdk.client("secretsmanager")
@@ -214,7 +214,7 @@ Make sure that your user-defined Lambda functions handle secrets securely and do
 
   The current value of the secret is returned by default. This is the version that the `AWSCURRENT` staging label is attached to. To access a different version, pass the name of the corresponding staging label for the optional `VersionStage` argument. For example:
 
-  ```
+  ```python
   import greengrasssdk
 
   secrets_client = greengrasssdk.client("secretsmanager")

@@ -58,7 +58,7 @@ Now that you've set up and started the Event Bus Relay and configured the partne
 
 Amazon AppFlow encapsulates events from Salesforce in an EventBridge event envelope. The following example shows a Salesforce event received by an EventBridge partner event bus.
 
-```
+```json
 {
     "version": "0",
     "id": "5c42b99e-e005-43b3-c744-07990c50d2cc",

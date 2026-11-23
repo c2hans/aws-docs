@@ -112,7 +112,7 @@ The **Events** tab shows the operations on your cluster alongside its events. To
 
 Use the `list-cluster-operations` command to list operations newest first:
 
-```
+```bash
 aws sagemaker list-cluster-operations \
     --cluster-name my-cluster \
     --sort-by CreationTime \
@@ -126,7 +126,7 @@ Narrow results with filters:
 
 For example, to list scaling operations still in progress:
 
-```
+```bash
 aws sagemaker list-cluster-operations \
     --cluster-name my-cluster \
     --status InProgress \
@@ -135,7 +135,7 @@ aws sagemaker list-cluster-operations \
 
 The following is example output.
 
-```
+```json
 {
     "ClusterOperationSummaries": [
         {
@@ -156,7 +156,7 @@ To find the operation for a request you just made, list the operations on the cl
 
 Use the `describe-cluster-operation` command:
 
-```
+```bash
 aws sagemaker describe-cluster-operation \
     --cluster-name my-cluster \
     --operation-id 4c078808-1f2e-4a6b-9c3d-8e5f7a2b1c0d
@@ -164,7 +164,7 @@ aws sagemaker describe-cluster-operation \
 
 The following is example output for a scale-up of the `gpu-workers` instance group from 4 to 8 nodes.
 
-```
+```json
 {
     "OperationId": "4c078808-1f2e-4a6b-9c3d-8e5f7a2b1c0d",
     "ClusterArn": "arn:aws:sagemaker:us-west-2:111122223333:cluster/abcd1234efgh",
@@ -196,7 +196,7 @@ To wait for a request to finish, call `describe-cluster-operation` periodically 
 
 Use the `--operation-id` filter on `list-cluster-events`:
 
-```
+```bash
 aws sagemaker list-cluster-events \
     --cluster-name my-cluster \
     --operation-id 4c078808-1f2e-4a6b-9c3d-8e5f7a2b1c0d

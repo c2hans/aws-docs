@@ -39,7 +39,7 @@ In the following procedure, the example policy allows this access for a particul
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -117,7 +117,7 @@ Each IAM role contains a *trust policy*, which is a set of rules that specifies 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement":[

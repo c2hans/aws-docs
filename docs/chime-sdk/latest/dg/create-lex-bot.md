@@ -36,7 +36,7 @@ The following example shows a resource-based policy.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -13,7 +13,7 @@ Unless another statement grants them permission to do so, users don't have permi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

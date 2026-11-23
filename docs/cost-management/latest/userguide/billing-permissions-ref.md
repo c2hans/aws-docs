@@ -149,7 +149,7 @@ This managed policy is focused on the user, ensuring that you have the proper pe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -215,7 +215,7 @@ This managed policy allows read only access to AWS Budgets through the AWS Manag
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [
@@ -248,7 +248,7 @@ Allows AWS Budgets to verify access to billing views shared across account bound
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -343,7 +343,7 @@ To stop idle Amazon EC2 instances from Cost Optimization Hub, you also need Amaz
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -377,7 +377,7 @@ This managed policy provides admin access to Cost Optimization Hub.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -444,7 +444,7 @@ Allows split cost allocation data to retrieve AWS Organizations information, if 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -488,7 +488,7 @@ Allows Data Exports to access other AWS services such as Cost Optimization Hub o
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

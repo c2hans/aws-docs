@@ -40,6 +40,13 @@ Content-type: application/json
    "batchEvaluationId": "string",
    "batchEvaluationName": "string",
    "createdAt": "string",
+   "datasetExecutionDetails": {
+      "agentInvocation": { ... },
+      "dataset": {
+         "datasetId": "string",
+         "datasetVersion": "string"
+      }
+   },
    "dataSourceConfig": { ... },
    "description": "string",
    "errorDetails": [ "string" ],
@@ -230,6 +237,10 @@ Pattern: `[a-zA-Z][a-zA-Z0-9_]{0,47}`
  ** [createdAt](#API_GetBatchEvaluation_ResponseSyntax) **   <a name="BedrockAgentCore-GetBatchEvaluation-response-createdAt"></a>
 The timestamp when the batch evaluation was created.
 Type: Timestamp
+
+ ** [datasetExecutionDetails](#API_GetBatchEvaluation_ResponseSyntax) **   <a name="BedrockAgentCore-GetBatchEvaluation-response-datasetExecutionDetails"></a>
+The details of the dataset and agent that the batch evaluation ran, including the dataset version and agent runtime version that the service resolved when the batch evaluation started. This field is present only if the batch evaluation was started with a `datasetExecutionConfig`.
+Type: [DatasetExecutionDetails](API_DatasetExecutionDetails.md) object
 
  ** [dataSourceConfig](#API_GetBatchEvaluation_ResponseSyntax) **   <a name="BedrockAgentCore-GetBatchEvaluation-response-dataSourceConfig"></a>
 The data source configuration specifying where agent traces are pulled from.

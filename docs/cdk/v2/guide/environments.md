@@ -16,7 +16,7 @@ The AWS CDK can determine environments from your credentials and configuration f
 
  **Credentials file**
 
-```
+```toml
 [default]
 aws_access_key_id=ASIAIOSFODNN7EXAMPLE
 aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
@@ -30,7 +30,7 @@ aws_session_token = fcZib3JpZ2luX2IQoJb3JpZ2luX2IQoJb3JpZ2luX2IQoJb3JpZ2luX2IQoJ
 
  **Configuration file**
 
-```
+```toml
 [default]
 region=us-west-2
 output=json
@@ -44,7 +44,7 @@ You can pass environment information from these files in your CDK code through e
 
 The following is an example of specifying these environment variables in your CDK code:
 
-```
+```javascript
 new MyDevStack(app, 'dev', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,
@@ -54,13 +54,13 @@ new MyDevStack(app, 'dev', {
 
 The following is an example of passing values associated with the `user1` profile from your credentials and configuration files to the CDK CLI using the `--profile` option. Values from these files will be passed to your environment variables:
 
-```
+```bash
 $ cdk deploy <myStack> --profile <user1>
 ```
 
 Instead of using values from the credentials and configuration files, you can also hard-code environment values in your CDK code. The following is an example:
 
-```
+```javascript
 const envEU = { account: '238383838383', region: 'eu-west-1' };
 const envUSA = { account: '837873873873', region: 'us-west-2' };
 

@@ -105,7 +105,7 @@ For the findings that are automatically archived with [Suppression rules](findin
 
 An [event pattern](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html) defines the data EventBridge uses to determine whether to send the event to the target. The EventBridge event for GuardDuty has the following format:
 
-```
+```json
 {
          "version": "0",
          "id": "{{cd2d702e-ab31-411b-9344-793ce56b1bc7}}",
@@ -191,7 +191,7 @@ Before you create this rule, create the Lambda function that you want the rule t
 
       1. For **Event pattern**, paste the following custom JSON that will create an alert for medium, high, and critical findings. For more information, see [Findings severity levels](guardduty_findings-severity.md).
 
-         ```
+         ```JSON
          {
            "source": [
              "aws.guardduty"
@@ -308,7 +308,7 @@ Before you create this rule, create the Lambda function that you want the rule t
 
    1. Copy the following code and paste it in the **Input Path** field under the **Target input transformer** section.
 
-      ```
+      ```JSON
       {
           "severity": "$.detail.severity",
           "Account_ID": "$.detail.accountId",
@@ -321,7 +321,7 @@ Before you create this rule, create the Lambda function that you want the rule t
 
    1. Copy the following code and paste it into the **Template** field to format the email.
 
-      ```
+      ```JSON
       {"message":"You have a severity <severity> GuardDuty finding type <Finding_Type> in the <region> Region.\n\nFinding Description:\n<Finding_Description>\n\nFor more details open the GuardDuty console at https://console.aws.amazon.com/guardduty/home?region=<region>#/findings?search=id%3D<Finding_ID>"}
       ```
 **Important**
@@ -390,7 +390,7 @@ When using a delegated GuardDuty administrator account, you can view the events 
 
 You can identify the member account where the GuardDuty finding originated using the `accountId` field of the finding's JSON details. To create a custom event rule for specific member accounts, create a new rule and use the following template in **Event pattern**. Replace {{123456789012}} with the `accountId`of the member account for which you want to trigger the event.
 
-```
+```json
 {
   "source": [
     "aws.guardduty"

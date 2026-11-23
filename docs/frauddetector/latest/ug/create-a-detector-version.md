@@ -22,7 +22,7 @@ Amazon Fraud Detector supports two different rule execution modes: `FIRST_MATCHE
 
 The following example shows a sample request for the `CreateDetectorVersion` API. The rule execution mode is set to `FIRST_MATCHED`, therefore Amazon Fraud Detector will evaluate rules sequentially, first to last, stopping at the first matched rule. Amazon Fraud Detector then provides the outcomes for that single rule during the `GetEventPrediction response`.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 
@@ -55,7 +55,7 @@ ruleExecutionMode = 'FIRST_MATCHED'
 
 To update the status of a detector version, use the `UpdateDetectorVersionStatus` API. The following example updates the detector version status from `DRAFT` to `ACTIVE`. During a `GetEventPrediction` request, if a detector ID is not specified, Amazon Fraud Detector will use the `ACTIVE` version of the detector.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

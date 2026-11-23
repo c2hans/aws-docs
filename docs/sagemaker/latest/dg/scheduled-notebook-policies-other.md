@@ -36,7 +36,7 @@ To add permissions to submit jobs, complete the following steps:
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -174,7 +174,7 @@ If you want to use a custom KMS key, repeat the previous instructions, attaching
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -220,7 +220,7 @@ To modify the job execution role trust relationships, complete the following ste
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -261,7 +261,7 @@ Once submitted, the notebook job needs permissions to access resources. The foll
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

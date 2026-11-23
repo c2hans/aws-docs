@@ -12,7 +12,7 @@ For information about adding policies to an instance profile for EC2 instances, 
 
 If you're using a custom policy on your nodes, update the policy on each node to allow Systems Manager to send output and logs to CloudWatch Logs. Add the following policy objects to your custom policy. For more information about updating an IAM policy, see [Editing IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html) in the *IAM User Guide*.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "logs:DescribeLogGroups",
@@ -40,7 +40,7 @@ If you run commands by using the AWS CLI, specify the `cloud-watch-output-config
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --instance-ids "{{instance ID}}" \
     --document-name "AWS-RunShellScript" \
@@ -51,7 +51,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name "AWS-RunPowerShellScript" ^
     --parameters commands=["echo helloWorld"] ^

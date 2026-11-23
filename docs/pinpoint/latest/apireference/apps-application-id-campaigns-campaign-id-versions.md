@@ -85,7 +85,7 @@ Retrieves information about the communication requirements and options that are 
 #### CampaignsResponse schema
 <a name="apps-application-id-campaigns-campaign-id-versions-response-body-campaignsresponse-example"></a>
 
-```
+```json
 {
   "Item": [
     {
@@ -574,7 +574,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-campaigns-campaign-id-versions-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

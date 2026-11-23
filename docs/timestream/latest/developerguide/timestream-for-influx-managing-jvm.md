@@ -16,7 +16,7 @@ On some Java configurations, the JVM default TTL is set so that it never refresh
 
 You can get the JVM default TTL by retrieving the `networkaddress.cache.ttl` property value:
 
-```
+```bash
 String ttl = java.security.Security.getProperty("networkaddress.cache.ttl");
 ```
 
@@ -25,11 +25,11 @@ The default TTL can vary according to the version of your JVM and whether a secu
 To modify the JVM's TTL, set the networkaddress.cache.ttl property value. Use one of the following methods, depending on your needs:
 To set the property value globally for all applications that use the JVM, set `networkaddress.cache.ttl` in the `$JAVA_HOME/jre/lib/security/java.security` file.
 
-  ```
+  ```bash
   networkaddress.cache.ttl=60
   ```
 To set the property locally for your application only, set `networkaddress.cache.ttl` in your application's initialization code before any network connections are established.
 
-  ```
+  ```bash
   java.security.Security.setProperty("networkaddress.cache.ttl" , "60");
   ```

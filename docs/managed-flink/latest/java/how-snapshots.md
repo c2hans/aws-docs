@@ -121,7 +121,7 @@ This section includes example requests for API actions for using snapshots with 
 
 The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action enables snapshots for an application:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "CurrentApplicationVersionId": 1,
@@ -137,7 +137,7 @@ The following example request for the [`UpdateApplication`](https://docs.aws.ama
 
 The following example request upgrades the application to enhanced snapshot mode. The request sets `SnapshotModeUpdate` and `SnapshotsEnabledUpdate` together. For the limits on a rollback to application snapshots (legacy), see [Roll back after the upgrade](snapshots-upgrade.md#snapshots-upgrade-rollback-behavior).
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "CurrentApplicationVersionId": 1,
@@ -155,7 +155,7 @@ The following example request upgrades the application to enhanced snapshot mode
 
 The following example request for the [`CreateApplicationSnapshot`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplicationSnapshot.html) action creates a snapshot of the current application state:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "SnapshotName": "MyCustomSnapshot"
@@ -164,7 +164,7 @@ The following example request for the [`CreateApplicationSnapshot`](https://docs
 
 For an application in enhanced snapshot mode, use the [`CreateSnapshot`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateSnapshot.html) action. The following example request creates an enhanced snapshot of a running application:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "SnapshotName": "MyApplication-snapshot-1",
@@ -177,7 +177,7 @@ For an application in enhanced snapshot mode, use the [`CreateSnapshot`](https:/
 
 The following example request for the [`ListApplicationSnapshots`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_ListApplicationSnapshots.html) action lists the first 50 snapshots for the current application state:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "Limit": 50
@@ -186,7 +186,7 @@ The following example request for the [`ListApplicationSnapshots`](https://docs.
 
 For enhanced snapshots, use the [`ListSnapshots`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_ListSnapshots.html) action. The following example request lists the first 50 enhanced snapshots in the account and Region. To list the enhanced snapshots of one application, add the optional `SourceApplicationName` filter.
 
-```
+```json
 {
    "Limit": 50
 }
@@ -197,7 +197,7 @@ For enhanced snapshots, use the [`ListSnapshots`](https://docs.aws.amazon.com/ma
 
 The following example request for the [`DescribeApplicationSnapshot`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DescribeApplicationSnapshot.html) action lists details for a specific application snapshot:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "SnapshotName": "MyCustomSnapshot"
@@ -206,7 +206,7 @@ The following example request for the [`DescribeApplicationSnapshot`](https://do
 
 For an enhanced snapshot, use the [`DescribeSnapshot`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DescribeSnapshot.html) action. The request identifies the enhanced snapshot by name only, because the name is unique in the account and Region:
 
-```
+```json
 {
    "SnapshotName": "MyApplication-snapshot-1"
 }
@@ -217,7 +217,7 @@ For an enhanced snapshot, use the [`DescribeSnapshot`](https://docs.aws.amazon.c
 
 The following example request for the [`DeleteApplicationSnapshot`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DeleteApplicationSnapshot.html) action deletes a previously saved snapshot. You can get the `SnapshotCreationTimestamp` value using either [`ListApplicationSnapshots`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_ListApplicationSnapshots.html) or [`DescribeApplicationSnapshot`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DescribeApplicationSnapshot.html):
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "SnapshotName": "MyCustomSnapshot",
@@ -227,7 +227,7 @@ The following example request for the [`DeleteApplicationSnapshot`](https://docs
 
 For an enhanced snapshot, use the [`DeleteSnapshot`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DeleteSnapshot.html) action. Copy the `SnapshotCreationTimestamp` value from the `DescribeSnapshot` response:
 
-```
+```json
 {
    "SnapshotName": "MyApplication-snapshot-1",
    "SnapshotCreationTimestamp": 1767225600
@@ -239,7 +239,7 @@ For an enhanced snapshot, use the [`DeleteSnapshot`](https://docs.aws.amazon.com
 
 The following example request for the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action starts the application using the saved state from a specific snapshot:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "RunConfiguration": {
@@ -253,7 +253,7 @@ The following example request for the [`StartApplication`](https://docs.aws.amaz
 
 For an application in enhanced snapshot mode, identify the enhanced snapshot with `SnapshotArn`, not `SnapshotName`. The caller needs `kinesisanalytics:RestoreFromSnapshot` on the enhanced snapshot. For more information, see [Restore an application from an enhanced snapshot](snapshots-restore.md).
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "RunConfiguration": {
@@ -270,7 +270,7 @@ For an application in enhanced snapshot mode, identify the enhanced snapshot wit
 
 The following example request for the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action starts the application using the most recent snapshot:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "RunConfiguration": {
@@ -288,7 +288,7 @@ The same request works in enhanced snapshot mode. In that mode, Managed Service 
 
 The following example request for the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action starts the application without loading application state, even if a snapshot is present:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "RunConfiguration": {

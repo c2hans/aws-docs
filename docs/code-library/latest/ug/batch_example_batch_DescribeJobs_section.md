@@ -63,7 +63,7 @@ For more information, see [Jobs](https://docs.aws.amazon.com/batch/latest/usergu
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Asynchronously retrieves the status of a specific job.
      *
@@ -91,7 +91,7 @@ For more information, see [Jobs](https://docs.aws.amazon.com/batch/latest/usergu
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def describe_jobs(self, job_ids: list) -> list:
         """
         Describes one or more jobs.

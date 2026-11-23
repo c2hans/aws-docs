@@ -26,7 +26,7 @@ The following code example shows how to use `CreateJob`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/mediaconvert#code-examples).
 
-```
+```cpp
 //! Create an AWS Elemental MediaConvert job.
 /*!
   \param mediaConvertRole: An Amazon Resource Name (ARN) for the AWS Identity and
@@ -257,7 +257,7 @@ The following code example shows how to use `GetJob`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/mediaconvert#code-examples).
 
-```
+```cpp
 //! Retrieve the information for a specific completed transcoding job.
 /*!
   \param jobID: A job ID.
@@ -294,7 +294,7 @@ The following code example shows how to use `ListJobs`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/mediaconvert#code-examples).
 
-```
+```cpp
 //! Retrieve a list of created jobs.
 /*!
   \param clientConfiguration: AWS client configuration.

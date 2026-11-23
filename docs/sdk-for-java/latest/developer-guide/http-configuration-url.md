@@ -35,7 +35,7 @@ Unlike the `Apache5HttpClient`, the `UrlConnectionHttpClient` is not automatical
 
 The following example of a `pom.xml` file shows the dependencies required to use and configure the HTTP client.
 
-```
+```xml
 <dependencyManagement>
    <dependencies>
         <dependency>
@@ -67,7 +67,7 @@ The following Maven and Gradle examples exclude both artifacts from the `s3` dep
 ------
 #### [ Maven ]
 
-```
+```xml
 <dependencies>
     <dependency>
         <groupId>software.amazon.awssdk</groupId>
@@ -128,7 +128,7 @@ The following example creates an `S3Client` and configures the embedded instance
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.http.SdkHttpClient;
 import software.amazon.awssdk.http.urlconnection.UrlConnectionHttpClient;
 import java.net.URI;
@@ -137,7 +137,7 @@ import java.time.Duration;
 
  **Code**
 
-```
+```java
 // Singleton: Use the s3Client for all requests.
 S3Client s3Client =
     S3Client.builder()
@@ -178,7 +178,7 @@ import java.time.Duration;
 
  **Code**
 
-```
+```java
 SdkHttpClient urlHttpClient = UrlConnectionHttpClient.create();
 
 // Singletons: Use the s3Client and dynamoDbClient for all requests.
@@ -211,7 +211,7 @@ If you don't specify an HTTP client for a service client, the SDK chooses one fo
 
 In the following example, the `dynamoDbClient` uses the `UrlConnectionHttpClient`. The `s3Client` doesn't specify an HTTP client, so the SDK uses `Apache5HttpClient`:
 
-```
+```java
 // The dynamoDbClient uses the UrlConnectionHttpClient.
 DynamoDbClient dynamoDbClient = DynamoDbClient.builder()
         .httpClientBuilder(UrlConnectionHttpClient.builder())
@@ -228,7 +228,7 @@ s3Client.close();
 
 To choose the HTTP client for a service client, specify it explicitly:
 
-```
+```java
 DynamoDbClient dynamoDbClient = DynamoDbClient.builder()
         .httpClientBuilder(UrlConnectionHttpClient.builder())
         .build();
@@ -252,7 +252,7 @@ Before version 2.22.0, the SDK threw an `SdkClientException` with the message th
 
 The following code snippet uses the [proxy configuration builder for the URL connection HTTP client](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/urlconnection/ProxyConfiguration.Builder.html).
 
-```
+```java
 SdkHttpClient urlHttpClient = UrlConnectionHttpClient.builder()
                 .proxyConfiguration(ProxyConfiguration.builder()
                         .endpoint(URI.create("http://example.com:1234"))
@@ -273,7 +273,7 @@ $ java -Dhttp.proxyHost=example.com -Dhttp.proxyPort=1234 -Dhttp.proxyUser=usern
 
 The equivalent setup that uses environment variables is:
 
-```
+```java
 // Set the following environment variables.
 // $ export HTTP_PROXY="http://username:password@example.com:1234"
 // $ export NO_PROXY="localhost|host.example.com"

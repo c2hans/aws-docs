@@ -54,7 +54,7 @@ Run the [`create-members`](https://docs.aws.amazon.com/cli/latest/reference/secu
 
 Unlike the manual invitation process, when you run `create-members` to enable an organization account, you don't need to send an invitation.
 
-```
+```NONE
 aws securityhub create-members --account-details '[{"AccountId": "{{<accountId>}}"}]'
 ```
 

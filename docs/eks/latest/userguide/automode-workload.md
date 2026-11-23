@@ -30,7 +30,7 @@ kubectl get nodepools
 
 Sample Output:
 
-```
+```shell
 general-purpose
 ```
 
@@ -51,7 +51,7 @@ In this tutorial you will deploy a sample workload. If you have no nodes, or the
 
 Review the following Kubernetes Deployment and save it as `inflate.yaml`
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:

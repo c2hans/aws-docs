@@ -26,14 +26,14 @@ New to MDAA? We recommend starting with the [MDAA Workshop](https://catalog.us-e
 
 1. Run the CDK bootstrap command. Multiple regions can be specified simultaneously:
 
-```
+```bash
 export CDK_NEW_BOOTSTRAP=1
 cdk bootstrap aws://<AWS Account Number>/<Target Region>...
 ```
 
 For example:
 
-```
+```bash
 export CDK_NEW_BOOTSTRAP=1
 cdk bootstrap aws://123456789012/ca-central-1 aws://123456789012/us-east-1
 ```
@@ -49,7 +49,7 @@ These credentials should have sufficient permissions to create the following res
 
 Run the CDK bootstrap command. Multiple regions can be specified simultaneously:
 
-```
+```bash
 export CDK_NEW_BOOTSTRAP=1
 cdk bootstrap --cloudformation-execution-policies <CDK Deployment IAM Policy Arns> --trust <Source Account Number> aws://<Target AWS Account Number>/<Target Region>...
 ```
@@ -106,67 +106,67 @@ Additional MDAA CLI commands:
 
 Use the -h parameter to print a list of all MDAA CLI parameters
 
-```
+```bash
 <path_to_cloned_repo>/bin/mdaa -h
 ```
 
 Use the -c parameter to specify a config config file. Otherwise MDAA CLI will attempt to use mdaa.yaml from the local directory.
 
-```
+```bash
 <path_to_cloned_repo>/bin/mdaa -c <optional-path-to-mdaa-config-file> <cdk action>
 ```
 
 Specify a < cdk action >, which MDAA CLI will run against every configured module/CDK app:
 
-```
+```bash
 <path_to_cloned_repo>/bin/mdaa <cdk action>
 ```
 
 To list (Terraform validate) all stacks:
 
-```
+```bash
 <path_to_cloned_repo>/bin/mdaa list
 ```
 
 To synth (Terraform validate) all stacks:
 
-```
+```bash
 <path_to_cloned_repo>/bin/mdaa synth
 ```
 
 To diff (Terraform plan) all stacks:
 
-```
+```bash
 <path_to_cloned_repo>/bin/mdaa diff
 ```
 
 To deploy (Terraform deploy) all stacks:
 
-```
+```bash
 <path_to_cloned_repo>/bin/mdaa deploy
 ```
 
 To deploy only env=dev modules/stacks:
 
-```
+```bash
 <path_to_cloned_repo>/bin/mdaa deploy -e dev
 ```
 
 To deploy only domain1 and domain2 modules/stacks:
 
-```
+```bash
 <path_to_cloned_repo>/bin/mdaa deploy -d domain1,domain2
 ```
 
 To deploy only the test\_roles\_module and test\_datalake\_module modules/stacks:
 
-```
+```bash
 <path_to_cloned_repo>/bin/mdaa deploy -m test_roles_module,test_datalake_module
 ```
 
 Any CLI params not recognized by MDAA CLI will be pushed down to the CDK/Terraform CLI. In this example, --no-rollback will be pushed down to CDK:
 
-```
+```bash
 <path_to_cloned_repo>/bin/mdaa deploy --no-rollback
 ```
 
@@ -181,25 +181,25 @@ Install MDAA from your private NPM repository using:
 
 Global Installation:
 
-```
+```bash
 npm install -g @aws-mdaa/cli
 ```
 
 Then, MDAA can be executed globally:
 
-```
+```bash
 mdaa -h
 ```
 
 Optionally, both the MDAA CLI can be instead npm installed in a local directory:
 
-```
+```bash
 npm install @aws-mdaa/cli
 ```
 
 MDAA commands can then be run within the local directory using NPX.
 
-```
+```bash
 npx mdaa -h
 ```
 
@@ -222,7 +222,7 @@ To execute MDAA Modules/CDK apps using the CDK CLI:
 cdk synth -c org=<organization> -c env=<dev|test|prod> -c domain=<domain name> -c module_configs=<app_config_paths> -c tag_configs=<tag_config_paths> -c module_name=<module_name>
 ```
 
-```
+```bash
 cdk synth -c org="sample-org" -c env="dev" -c domain="mdaa1" -c module_configs="warehouse.yaml" -c tag_configs="tags.yaml"  -c module_name="testing"
 ```
 

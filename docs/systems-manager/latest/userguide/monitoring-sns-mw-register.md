@@ -76,7 +76,7 @@ To better manage your task options, this procedure uses the command option `--cl
 
 1. Paste the following contents into the file.
 
-   ```
+   ```json
    {
        "Name": "{{Name}}",
        "Description": "{{Description}}",
@@ -122,7 +122,7 @@ To better manage your task options, this procedure uses the command option `--cl
 
 1. In the directory on your local machine where you saved the file, run the following command.
 
-   ```
+   ```sh
    aws ssm register-task-with-maintenance-window --cli-input-json file://RunCommandTask.json
    ```
 **Important**

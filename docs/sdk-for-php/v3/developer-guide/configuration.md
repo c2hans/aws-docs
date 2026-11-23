@@ -8,7 +8,7 @@ S3 Transfer Manager accepts configuration options to customize its behavior. Pro
 
 The following example configures an S3 Transfer Manager instance:
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\S3TransferManager;

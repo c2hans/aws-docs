@@ -12,7 +12,7 @@ A viewer mTLS configuration.
  ** Mode **   <a name="cloudfront-Type-ViewerMtlsConfig-Mode"></a>
 The viewer mTLS mode.
 Type: String
-Valid Values: `required | optional`
+Valid Values: `required | optional | passthrough`
 Required: No
 
  ** TrustStoreConfig **   <a name="cloudfront-Type-ViewerMtlsConfig-TrustStoreConfig"></a>

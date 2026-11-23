@@ -73,7 +73,7 @@ The base image of the operating system used in this sample is Ubuntu. The sample
 
 `buildspec.yml` (in `{{(root directory name)}}`)
 
-```
+```yaml
 version: 0.2
 
 phases:

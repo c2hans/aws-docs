@@ -16,7 +16,7 @@ Metrics are grouped first by the service namespace, and then by the various dime
 1. In namespace, select ** AWS/SSMForSAP**.
 Use the following command to view the metrics via AWS CLI.
 
-```
+```shell
 aws cloudwatch list-metrics --namespace "AWS/SSMForSAP"
 ```
 

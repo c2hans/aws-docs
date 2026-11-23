@@ -16,7 +16,7 @@ Use the driver metadata API for the following benefits:
 ## Example: Using JDBC DatabaseMetaData.getTables() to retrieve table metadata
 <a name="discovering-metadata-example-jdbc"></a>
 
-```
+```java
 DatabaseMetaData dbmd = connection.getMetaData();
 
 // getTables(catalog, schemaPattern, tableNamePattern, types)
@@ -30,7 +30,7 @@ ResultSet rs = dbmd.getTables("test", "test_pattern", null, new String[] {"TABLE
 ## Example: Using Python cursor.get\_columns() to retrieve column metadata
 <a name="discovering-metadata-example-python"></a>
 
-```
+```python
 cursor: redshift_connector.Cursor = conn.cursor()
 
 # get_columns(catalog, schema_pattern, table_name_pattern, column_name_pattern)
@@ -44,7 +44,7 @@ result: tuple = cursor.get_columns('test', 'test_pattern', 'testabc', '%')
 ## Example: Using ODBC SQLPrimaryKeys() to retrieve primary key metadata
 <a name="discovering-metadata-example-odbc"></a>
 
-```
+```c
 // SQLPrimaryKeys(hstmt, catalog, catalog_len, schema, schema_len, table, table_len)
 //   catalog: "test"         — filters to the database named "test"
 //   schema:  "test_schema"  — filters to the schema named "test_schema"
@@ -68,7 +68,7 @@ The ODBC API does not provide separate functions for listing catalogs or schemas
 
 Call `SQLTables()` with `CatalogName` set to `SQL_ALL_CATALOGS`. Set `SchemaName` and `TableName` to empty strings. The result set returns valid values only in the `TABLE_CAT` column. All other columns contain NULLs.
 
-```
+```c
 // List all catalogs (databases) available on the data source.
 retcode = SQLTables(hstmt,
     (SQLCHAR *)SQL_ALL_CATALOGS, SQL_NTS, // CatalogName = "%" (SQL_ALL_CATALOGS)
@@ -81,7 +81,7 @@ retcode = SQLTables(hstmt,
 
 Call `SQLTables()` with `SchemaName` set to `SQL_ALL_SCHEMAS`. Set `CatalogName` and `TableName` to empty strings.
 
-```
+```c
 // List all schemas available on the data source.
 retcode = SQLTables(hstmt,
     (SQLCHAR *)"", 0,                     // CatalogName = "" (empty string)

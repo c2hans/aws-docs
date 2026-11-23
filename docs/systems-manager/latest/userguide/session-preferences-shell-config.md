@@ -27,7 +27,7 @@ The following are some example commands that can be added to your shell profile.
 
 Change to the bash shell and change to the /usr directory on Linux instances.
 
-```
+```sh
 exec /bin/bash
 cd /usr
 ```
@@ -37,7 +37,7 @@ Output a timestamp and welcome message at the start of a session.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 timestamp=$(date '+%Y-%m-%dT%H:%M:%SZ')
 user=$(whoami)
 echo $timestamp && echo "Welcome $user"'!'
@@ -47,7 +47,7 @@ echo "You have logged in to a production instance. Note that all session activit
 ------
 #### [  Windows  ]
 
-```
+```ps
 $timestamp = (Get-Date).ToString("yyyy-MM-ddTH:mm:ssZ")
 $splitName = (whoami).Split("\")
 $user = $splitName[1]
@@ -63,14 +63,14 @@ View dynamic system activity at the start of a session.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 top
 ```
 
 ------
 #### [  Windows  ]
 
-```
+```ps
 while ($true) { Get-Process | Sort-Object -Descending CPU | Select-Object -First 30; `
 Start-Sleep -Seconds 2; cls
 Write-Host "Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName";

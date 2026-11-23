@@ -277,7 +277,7 @@ When AWS CloudShell launches in a new browser window for the first time, a welco
 
 1. In the AWS CloudShell environment, enter the following command:
 
-   ```
+   ```python
    python3 converter.py
    ```
 
@@ -393,7 +393,7 @@ If you do not have Boto3 installed, run `pip3 install boto3` to install it.
 ------
 #### [ Linux ]
 
-   ```
+   ```python
    python {{path/}}converter.py
    ```
 
@@ -403,7 +403,7 @@ If you do not have Boto3 installed, run `pip3 install boto3` to install it.
 ------
 #### [ macOS ]
 
-   ```
+   ```python
    python {{path/}}converter.py
    ```
 
@@ -413,7 +413,7 @@ If you do not have Boto3 installed, run `pip3 install boto3` to install it.
 ------
 #### [ Windows ]
 
-   ```
+   ```python
    python {{path/}}converter.py
    ```
 

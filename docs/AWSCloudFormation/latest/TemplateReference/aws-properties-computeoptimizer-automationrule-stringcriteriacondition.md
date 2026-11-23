@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-computeoptimizer-automationrule-stringcriteriacondition-properties"></a>
 
 `Comparison`  <a name="cfn-computeoptimizer-automationrule-stringcriteriacondition-comparison"></a>
-The comparison operator used to evaluate the string criteria, such as equals, not equals, or contains.
+The comparison operator used to evaluate the attribute against the specified values. Only operators that begin with `String` are valid. Any other operator returns an `InvalidParameterValueException`.
 *Required*: No
 *Type*: String
 *Allowed values*: `StringEquals | StringNotEquals | StringEqualsIgnoreCase | StringNotEqualsIgnoreCase | StringLike | StringNotLike | NumericEquals | NumericNotEquals | NumericLessThan | NumericLessThanEquals | NumericGreaterThan | NumericGreaterThanEquals`

@@ -35,7 +35,7 @@ For more information, see [Create an application with CodeDeploy](https://docs.a
 **Tools for PowerShell V4**
 **Example 1: This example creates a new application with the specified name.**
 
-```
+```powershell
 New-CDApplication -ApplicationName MyNewApplication
 ```
 **Output:**
@@ -48,7 +48,7 @@ f19e4b61-2231-4328-b0fd-e57f5EXAMPLE
 **Tools for PowerShell V5**
 **Example 1: This example creates a new application with the specified name.**
 
-```
+```powershell
 New-CDApplication -ApplicationName MyNewApplication
 ```
 **Output:**

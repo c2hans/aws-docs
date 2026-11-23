@@ -28,7 +28,7 @@ This section describes the detail fields for the following events:
 
 The `source` and `detail-type` fields are included because they contain specific values for AWS B2B Data Interchange events. For definitions of the other metadata fields that are included in all events, see [Event structure reference](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events-structure.html) in the *Amazon EventBridge User Guide*.
 
-```
+```json
 {
   . . .,
   "detail-type": "string",
@@ -129,7 +129,7 @@ This section describes the detail fields for the following events:
 
 The `source` and `detail-type` fields are included because they contain specific values for AWS B2B Data Interchange events. For definitions of the other metadata fields that are included in all events, see [Event structure reference](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events-structure.html) in the *Amazon EventBridge User Guide*.
 
-```
+```json
 {
    "version": "0",
    "id": "12345678-abcd-efgh-ijkl-mnopqrstuvwx",
@@ -217,7 +217,7 @@ This section describes the detail fields for the following events:
 
 The `source` and `detail-type` fields are included because they contain specific values for AWS B2B Data Interchange events. For definitions of the other metadata fields that are included in all events, see [Event structure reference](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events-structure.html) in the *Amazon EventBridge User Guide*.
 
-```
+```json
 {
   . . .,
   "detail-type": "string",

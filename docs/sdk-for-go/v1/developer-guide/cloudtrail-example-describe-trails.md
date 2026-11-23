@@ -12,7 +12,7 @@ Choose `Copy` to save the code locally.
 
 Create the file *describe\_trails.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "fmt"
 
@@ -23,7 +23,7 @@ import (
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `.aws/credentials` in your home folder, and create a new service client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -34,7 +34,7 @@ svc := cloudtrail.New(sess)
 
 Call **DescribeTrails**. If an error occurs, print the error and exit. If no error occurs, loop through the trails, printing the name of each trail and the bucket.
 
-```
+```go
 resp, err := svc.DescribeTrails(&cloudtrail.DescribeTrailsInput{TrailNameList: nil})
 if err != nil {
     fmt.Println("Got error calling CreateTrail:")

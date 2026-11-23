@@ -9,7 +9,7 @@ If you use `Aws\Credentials\AssumeRoleCredentialProvider` to create credentials 
 **Note**
 To avoid unnecessarily fetching AWS STS credentials on every API operation, you can use the `memoize` function to handle automatically refreshing the credentials when they expire. See the following code for an example.
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 use Aws\Credentials\InstanceProfileProvider;
 use Aws\Credentials\AssumeRoleCredentialProvider;

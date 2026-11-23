@@ -92,7 +92,7 @@ Basic batch transcripts contain two main sections:
 
 Each additional feature you include in your transcription request produces additional information in your transcript.
 
-```
+```json
 {
     "jobName": "my-first-transcription-job",
     "accountId": "111122223333",

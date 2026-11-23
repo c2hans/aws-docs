@@ -33,7 +33,7 @@ If *geom* is null, then null is returned.
 
 The following SQL returns the memory size of a geometry collection.
 
-```
+```sql
 SELECT ST_MemSize(ST_GeomFromText('GEOMETRYCOLLECTION(POLYGON((0 0,10 0,0 10,0 0)),LINESTRING(20 10,20 0,10 0))'))::varchar + ' bytes';
 ```
 

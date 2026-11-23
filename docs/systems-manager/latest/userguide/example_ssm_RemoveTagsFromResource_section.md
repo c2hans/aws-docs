@@ -29,7 +29,7 @@ For more information, see [Working with Patch Manager resources using the AWS CL
 **Tools for PowerShell V4**
 **Example 1: This example removes a tag from a maintenance window. There is no output if the command succeeds.**
 
-```
+```powershell
 Remove-SSMResourceTag -ResourceId "mw-03eb9db42890fb82d" -ResourceType "MaintenanceWindow" -TagKey "Production"
 ```
 +  For API details, see [RemoveTagsFromResource](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -37,7 +37,7 @@ Remove-SSMResourceTag -ResourceId "mw-03eb9db42890fb82d" -ResourceType "Maintena
 **Tools for PowerShell V5**
 **Example 1: This example removes a tag from a maintenance window. There is no output if the command succeeds.**
 
-```
+```powershell
 Remove-SSMResourceTag -ResourceId "mw-03eb9db42890fb82d" -ResourceType "MaintenanceWindow" -TagKey "Production"
 ```
 +  For API details, see [RemoveTagsFromResource](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

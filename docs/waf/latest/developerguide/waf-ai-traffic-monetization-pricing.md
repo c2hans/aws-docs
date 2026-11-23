@@ -53,7 +53,7 @@ To avoid inadvertently blocking human visitors, use the Monetize action only on 
 **Example: Monetize only bot traffic using Bot Control labels**
 The following rule configuration uses Bot Control to classify traffic first, then applies the Monetize action only to requests labeled as bots:
 
-```
+```JSON
 {
   "Name": "MonetizeBotTrafficOnly",
   "Priority": 5,

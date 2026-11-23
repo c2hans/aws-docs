@@ -17,7 +17,7 @@ You must complete the following prerequisites before bringing your own image to 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement":[

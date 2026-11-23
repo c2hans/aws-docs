@@ -139,7 +139,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-host-trend-micro-dsm-exclude-files-and-folders-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "Region": "us-east-1",
   "Parameters":{
@@ -152,6 +152,6 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-host-trend-micro-dsm-exclude-files-and-folders-managed-automation-ex-max"></a>
 
-```
+```json
 Example not available.
 ```

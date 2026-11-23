@@ -16,7 +16,7 @@ The following procedure shows how to describe an Amazon MSK configuration to get
 
 1. The following is an example of a successful response after you run this command.
 
-   ```
+   ```JSON
    {
        "Arn": "arn:aws:kafka:us-east-1:123456789012:configuration/SomeTest/abcdabcd-abcd-1234-abcd-abcd123e8e8e-1",
        "CreationTime": "2019-05-21T00:54:23.591Z",

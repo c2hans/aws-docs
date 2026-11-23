@@ -25,7 +25,7 @@ You can also use the console link [`AmazonEMRFullAccessPolicy_v2`](https://conso
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

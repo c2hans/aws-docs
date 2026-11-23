@@ -12,7 +12,7 @@ Here are examples that illustrate ways to filter the data that is exported.
 ### Example of using `scope` to export only edges
 <a name="export-property-graph-filtering-scope-example"></a>
 
-```
+```json
 {
   "command": "export-pg",
   "params": {
@@ -28,7 +28,7 @@ Here are examples that illustrate ways to filter the data that is exported.
 
 The `nodeLabels` parameter in the following example specifies that only nodes having a `Person` label or a `Post` label should be exported. The `edgeLabels` parameter specifies that only edges with a `likes` label should be exported:
 
-```
+```json
 {
   "command": "export-pg",
   "params": {
@@ -45,7 +45,7 @@ The `nodeLabels` parameter in the following example specifies that only nodes ha
 
 The `filter` object in this example exports `country` nodes with their `type`, `code` and `desc` properties, and also `route` edges with their `dist` property.
 
-```
+```json
 {
   "command": "export-pg",
   "params": {
@@ -80,7 +80,7 @@ The `filter` object in this example exports `country` nodes with their `type`, `
 
 This example uses `gremlinFilter` to export only those nodes and edges created after 2021-10-10 (that is, with a `created` property whose value is greater than 2021-10-10):
 
-```
+```json
 {
   "command": "export-pg",
   "params": {
@@ -96,7 +96,7 @@ This example uses `gremlinFilter` to export only those nodes and edges created a
 
 This example uses `gremlinNodeFilter` to export only deleted nodes (nodes with a Boolean `deleted` property whose value is `true`):
 
-```
+```json
 {
   "command": "export-pg",
   "params": {
@@ -112,7 +112,7 @@ This example uses `gremlinNodeFilter` to export only deleted nodes (nodes with a
 
 This example uses `gremlinEdgeFilter `to export only edges with a `strength` numerical property whose value is 5:
 
-```
+```json
 {
   "command": "export-pg",
   "params": {
@@ -137,7 +137,7 @@ The `nodeLabels` and `edgeLabels` parameters further restrict the output so that
 
 Finally, the `scope` parameter eliminates edges from the export, which leaves only the designated `airport` nodes in the output.
 
-```
+```json
 {
   "command": "export-pg",
   "params": {
@@ -191,7 +191,7 @@ Finally, the `scope` parameter eliminates edges from the export, which leaves on
 
 This example exports triples whose predicate is <http://kelvinlawrence.net/air-routes/objectProperty/route> and whose object is not a literal:
 
-```
+```json
 {
   "command": "export-rdf",
   "params": {
@@ -208,7 +208,7 @@ This example exports triples whose predicate is <http://kelvinlawrence.net/air-r
 
 This example exports triples belonging to the named graph <http://aws.amazon.com/neptune/vocab/v01/DefaultNamedGraph>:
 
-```
+```json
 {
   "command": "export-rdf",
   "params": {

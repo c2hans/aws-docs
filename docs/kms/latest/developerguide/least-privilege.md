@@ -79,7 +79,7 @@ Before using this key policy, replace the example account ID, Region, and trail 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

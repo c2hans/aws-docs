@@ -15,7 +15,7 @@ To use Iceberg on Amazon EMR with the AWS CLI, first create a cluster with the f
 
 1. Create an `configurations.json` file with the following content. For example, if you want to use the Hive metastore as your catalog, your file should have the following content.
 
-   ```
+   ```bash
    [
      {
        "Classification": "trino-connector-iceberg",
@@ -29,7 +29,7 @@ To use Iceberg on Amazon EMR with the AWS CLI, first create a cluster with the f
 
    If you want to use the AWS Glue Data Catalog as your store, your file should have the following content.
 
-   ```
+   ```bash
    [
      {
        "Classification": "trino-connector-iceberg",
@@ -43,7 +43,7 @@ To use Iceberg on Amazon EMR with the AWS CLI, first create a cluster with the f
 
    Starting with Amazon EMR 7.7.0, include the property {{fs.native-s3.enabled=true}}
 
-   ```
+   ```bash
    [
      {
        "Classification": "trino-connector-iceberg",
@@ -58,7 +58,7 @@ To use Iceberg on Amazon EMR with the AWS CLI, first create a cluster with the f
 
 1. Create a cluster with the following configuration, replacing the example Amazon S3 bucket path and key name with your own.
 
-   ```
+   ```bash
    aws emr create-cluster --release-label emr-6.7.0 \
    --applications Name=Trino \
    --region us-east-1 \

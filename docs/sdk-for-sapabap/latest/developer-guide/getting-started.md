@@ -45,7 +45,7 @@ If your SAP system is running on AWS Cloud, then you will be making calls to AWS
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -92,7 +92,7 @@ Ensure that the EC2 instance on which your SAP system is running has an instance
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

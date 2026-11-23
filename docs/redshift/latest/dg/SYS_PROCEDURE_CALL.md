@@ -30,7 +30,7 @@ SYS\_PROCEDURE\_CALL is visible to all users. Superusers can see all rows; regul
 
 The following query returns a nested stored procedure call hierarchy.
 
-```
+```sql
 select query_id, datediff(seconds, start_time, end_time) as elapsed_time, status, trim(query_text) as call, caller_procedure_query_id from sys_procedure_call;
 ```
 

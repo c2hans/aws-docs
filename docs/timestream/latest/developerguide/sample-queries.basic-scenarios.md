@@ -8,7 +8,7 @@ For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon
 
 The following gets the 10 most recently added data points for a table.
 
-```
+```sql
 SELECT * FROM {{<database_name>}}.{{<table_name>}}
 ORDER BY time DESC
 LIMIT 10
@@ -16,7 +16,7 @@ LIMIT 10
 
 The following gets the 5 oldest data points for a specific measure.
 
-```
+```sql
 SELECT * FROM {{<database_name>}}.{{<table_name>}}
 WHERE measure_name = '{{<measure_name>}}'
 ORDER BY time ASC
@@ -25,7 +25,7 @@ LIMIT 5
 
 The following works with nanosecond granularity timestamps.
 
-```
+```sql
 SELECT now() AS time_now
 , now() - (INTERVAL '12' HOUR) AS twelve_hour_earlier -- Compatibility with ANSI SQL
 , now() - 12h AS also_twelve_hour_earlier -- Convenient time interval literals
@@ -39,12 +39,12 @@ Measure values for multi-measure records are identified by column name. Measure 
 
 The following retrieves values for a measure called `speed` from multi-measure records with a `measure_name` of `IoTMulti-stats`.
 
-```
+```sql
 SELECT speed FROM {{<database_name>}}.{{<table_name>}} where measure_name = 'IoTMulti-stats'
 ```
 
 The following retrieves `double` values from single-measure records with a `measure_name` of `load`.
 
-```
+```sql
 SELECT measure_value::double FROM {{<database_name>}}.{{<table_name>}} WHERE measure_name = 'load'
 ```

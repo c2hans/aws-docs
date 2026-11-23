@@ -89,7 +89,7 @@ The key difference from FTA is the inclusion of `AuthorizationConfiguration.Lake
 
 1. In the notebook cell, query your table:
 
-   ```
+   ```python
    spark.sql("select * from {{database_name}}.{{table_name}}").show()
    ```
 

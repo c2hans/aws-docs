@@ -18,13 +18,13 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-st-list
 
  Use the `list-channels` command to list deliveries in the current AWS Region:
 
-```
+```bash
 aws kinesis list-channels
 ```
 
  To list only the deliveries attached to a specific stream, provide a stream filter:
 
-```
+```bash
 aws kinesis list-channels \
     --stream-filter StreamARN="arn:aws:kinesis:us-east-1:111122223333:stream/my-stream"
 ```

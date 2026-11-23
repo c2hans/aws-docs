@@ -59,7 +59,7 @@ Enable CORS by returning correct headers.
 #### ListVpcConnectionsResponse schema
 <a name="vpc-connections-response-body-listvpcconnectionsresponse-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "vpcConnections": [
@@ -78,7 +78,7 @@ Enable CORS by returning correct headers.
 #### Error schema
 <a name="vpc-connections-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

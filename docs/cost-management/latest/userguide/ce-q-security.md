@@ -24,7 +24,7 @@ The quickest way for an administrator to grant users access to the AWS assistant
 
 The following IAM policy statement grants users access to all cost management capabilities in the AWS assistant:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -135,7 +135,7 @@ You can scope down this policy to grant access to only specific cost management 
 
 You can also allow IAM principals to access Cost Explorer and to use the AWS assistant, but restrict them from using the cost analysis or cost optimization capabilities in the AWS assistant, by using the `aws:CalledVia` [global condition key](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-calledvia). The following IAM policy provides an example of using this condition key:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

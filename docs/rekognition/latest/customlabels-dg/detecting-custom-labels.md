@@ -96,7 +96,7 @@ For information about securing `DetectCustomLabels`, see [Securing DetectCustomL
 
     Note that this example assumes that your version of Pillow is >= 8.0.0.
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
    """
@@ -351,7 +351,7 @@ For information about securing `DetectCustomLabels`, see [Securing DetectCustomL
    + The name and location of an image within the Amazon S3 bucket that you used in step 4.
    + The Amazon S3 bucket that contains the image that you used in step 4.
 
-   ```
+   ```java
    /*
       Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
       SPDX-License-Identifier: Apache-2.0
@@ -680,7 +680,7 @@ For information about securing `DetectCustomLabels`, see [Securing DetectCustomL
    + The name and location of an image within the S3 bucket that you used in step 4.
    + The Amazon S3 bucket that contains the image that you used in step 4.
 
-   ```
+   ```java
    /*
       Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
       SPDX-License-Identifier: Apache-2.0

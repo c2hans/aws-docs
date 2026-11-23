@@ -35,7 +35,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps, Aws } from 'aws-cdk-lib';
 import { DynamoDBStreamsToLambdaToElasticSearchAndKibana, DynamoDBStreamsToLambdaToElasticSearchAndKibanaProps } from '@aws-solutions-constructs/aws-dynamodbstreams-lambda-elasticsearch-kibana';
@@ -55,7 +55,7 @@ const constructProps: DynamoDBStreamsToLambdaToElasticSearchAndKibanaProps = {
 new DynamoDBStreamsToLambdaToElasticSearchAndKibana(this, 'test-dynamodbstreams-lambda-elasticsearch-kibana', constructProps);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_dynamodbstreams_lambda_elasticsearch_kibana import DynamoDBStreamsToLambdaToElasticSearchAndKibana, DynamoDBStreamsToLambdaToElasticSearchAndKibanaProps
 from aws_cdk import (
     Stack,
@@ -76,7 +76,7 @@ DynamoDBStreamsToLambdaToElasticSearchAndKibana(
     cognito_domain_name='globallyuniquedomain' + Aws.ACCOUNT_ID)
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Aws;

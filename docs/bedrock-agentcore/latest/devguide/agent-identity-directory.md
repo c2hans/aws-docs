@@ -114,7 +114,7 @@ The agent identity directory integrates with IAM to provide fine-grained access 
 
  **Example IAM policy for directory access**
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [

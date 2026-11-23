@@ -95,7 +95,7 @@ Pipeline-level events are emitted when there is a state change for a pipeline ex
 ------
 #### [ Emitted event ]
 
-```
+```yaml
 {
     "version": "0",
     "id": "01234567-EXAMPLE",
@@ -125,7 +125,7 @@ Pipeline-level events are emitted when there is a state change for a pipeline ex
 ------
 #### [ Processed event ]
 
-```
+```json
 {
     "account": "123456789012",
     "detailType": "CodePipeline Pipeline Execution State Change",
@@ -191,7 +191,7 @@ When a pipeline execution is stopping, it emits an event that sends notification
 ------
 #### [ Emitted event ]
 
-```
+```yaml
 {
     "version": "0",
     "id": "01234567-EXAMPLE",
@@ -217,7 +217,7 @@ When a pipeline execution is stopping, it emits an event that sends notification
 ------
 #### [ Processed event ]
 
-```
+```json
 {
     "account": "123456789012",
     "detailType": "CodePipeline Pipeline Execution State Change",
@@ -293,7 +293,7 @@ When a pipeline execution fails, it emits an event that sends notifications with
 ------
 #### [ Emitted event ]
 
-```
+```yaml
 {
     "version": "0",
     "id": "01234567-EXAMPLE",
@@ -319,7 +319,7 @@ When a pipeline execution fails, it emits an event that sends notifications with
 ------
 #### [ Processed event ]
 
-```
+```json
 {
     "account": "123456789012",
     "detailType": "CodePipeline Pipeline Execution State Change",
@@ -363,7 +363,7 @@ The `execution-trigger` field will have either `tag-name` or `branch-name`, depe
 ------
 #### [ Emitted event ]
 
-```
+```yaml
 {
     "version": "0",
     "id": "01234567-EXAMPLE",
@@ -401,7 +401,7 @@ The `execution-trigger` field will have either `tag-name` or `branch-name`, depe
 ------
 #### [ Processed event ]
 
-```
+```json
 {
     "account": "123456789012",
     "detailType": "CodePipeline Pipeline Execution State Change",
@@ -465,7 +465,7 @@ When a stage execution starts, it emits an event that sends notifications with t
 ------
 #### [ Emitted event ]
 
-```
+```yaml
 {
     "version": "0",
     "id": 01234567-EXAMPLE,
@@ -492,7 +492,7 @@ When a stage execution starts, it emits an event that sends notifications with t
 ------
 #### [ Processed event ]
 
-```
+```json
 {
     "account": "123456789012",
     "detailType": "CodePipeline Stage Execution State Change",
@@ -641,7 +641,7 @@ When an action execution starts, it emits an event that sends notifications with
 ------
 #### [ Emitted event ]
 
-```
+```yaml
 {
     "version": "0",
     "id": 01234567-EXAMPLE,
@@ -685,7 +685,7 @@ When an action execution starts, it emits an event that sends notifications with
 ------
 #### [ Processed event ]
 
-```
+```json
 {
     "account": "123456789012",
     "detailType": "CodePipeline Action Execution State Change",
@@ -737,7 +737,7 @@ When an action execution succeeds, it emits an event that sends notifications wi
 ------
 #### [ Emitted event ]
 
-```
+```yaml
 {
     "version": "0",
     "id": "01234567-EXAMPLE",
@@ -787,7 +787,7 @@ When an action execution succeeds, it emits an event that sends notifications wi
 ------
 #### [ Processed event ]
 
-```
+```json
 {
     "account": "123456789012",
     "detailType": "CodePipeline Action Execution State Change",
@@ -844,7 +844,7 @@ When an action execution fails, it emits an event that sends notifications with 
 ------
 #### [ Emitted event ]
 
-```
+```yaml
 {
     "version": "0",
     "id": "01234567-EXAMPLE",
@@ -886,7 +886,7 @@ When an action execution fails, it emits an event that sends notifications with 
 ------
 #### [ Processed event ]
 
-```
+```json
 {
     "account": "123456789012",
     "detailType": "CodePipeline Action Execution State Change",

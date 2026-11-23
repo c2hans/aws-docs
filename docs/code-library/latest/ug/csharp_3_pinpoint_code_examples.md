@@ -27,7 +27,7 @@ The following code example shows how to use `SendMessages`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Pinpoint#code-examples).
 Send an email message.
 
-```
+```csharp
 using Amazon;
 using Amazon.Pinpoint;
 using Amazon.Pinpoint.Model;
@@ -156,7 +156,7 @@ public class SendEmailMainClass
 ```
 Send an SMS message.
 
-```
+```csharp
 using Amazon;
 using Amazon.Pinpoint;
 using Amazon.Pinpoint.Model;

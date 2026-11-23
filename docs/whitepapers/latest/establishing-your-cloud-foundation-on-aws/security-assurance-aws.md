@@ -10,6 +10,8 @@ Security and Compliance is a shared responsibility between AWS and the customer.
 
 ![A chart showing the shared responsibility model between AWS and cusotmers.](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/shared-responsibility-model.png)
 
+*Shared responsibility model *
+
 ## Security of the Cloud
 <a name="security-of-the-cloud"></a>
 

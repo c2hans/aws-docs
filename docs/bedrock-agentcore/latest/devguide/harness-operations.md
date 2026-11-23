@@ -51,7 +51,7 @@ The following table describes the capabilities that can incur charges when you u
 
 Runtime billing uses per-second active consumption rather than provisioned instance time:
 
-```
+```text
 CPU cost = consumed vCPU-seconds / 3,600 * vCPU-hour rate
 Memory cost = sum of peak GB consumed in each second / 3,600 * GB-hour rate
 ```
@@ -80,7 +80,7 @@ All limits are optional; omit them to use service defaults. Because harness is b
 
 **Example**
 
-```
+```bash
 aws bedrock-agentcore-control update-harness \
   --harness-id "MyHarness-UuFdkQoXSL" \
   --max-iterations 50 \
@@ -90,7 +90,7 @@ aws bedrock-agentcore-control update-harness \
 Or override on a single invocation by passing `maxIterations`, `timeoutSeconds`, or `maxTokens` in `invoke_harness`.
 Set defaults:
 
-```
+```bash
 agentcore add harness \
   --name bounded_agent \
   --max-iterations 50 \
@@ -109,7 +109,7 @@ Apply tags to your harness for cost allocation and access control.
 
 **Example**
 
-```
+```bash
 aws bedrock-agentcore-control create-harness \
   --harness-name "MyHarness" \
   --execution-role-arn "arn:aws:iam::123456789012:role/MyHarnessRole" \
@@ -117,7 +117,7 @@ aws bedrock-agentcore-control create-harness \
 ```
 Set tags when you add the harness:
 
-```
+```bash
 agentcore add harness \
   --name MyHarness \
   --tags '{"team":"platform","environment":"staging"}'

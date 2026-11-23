@@ -183,7 +183,7 @@ All events use the standard EventBridge format. The following examples show the 
 
  **Scheduling event:**
 
-```
+```json
 {
   "Source": "instance-scheduler",
   "DetailType": "Scheduling Action",
@@ -202,7 +202,7 @@ All events use the standard EventBridge format. The following examples show the 
 
  **Registration event:**
 
-```
+```json
 {
   "Source": "instance-scheduler",
   "DetailType": "Resource Registered",

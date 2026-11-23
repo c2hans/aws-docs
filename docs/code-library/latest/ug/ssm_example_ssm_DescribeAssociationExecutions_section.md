@@ -89,7 +89,7 @@ For more information, see [Viewing association histories](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This example returns the executions for the association ID provided**
 
-```
+```powershell
 Get-SSMAssociationExecution -AssociationId 123a45a0-c678-9012-3456-78901234db5e
 ```
 **Output:**
@@ -109,7 +109,7 @@ Status                : Success
 **Tools for PowerShell V5**
 **Example 1: This example returns the executions for the association ID provided**
 
-```
+```powershell
 Get-SSMAssociationExecution -AssociationId 123a45a0-c678-9012-3456-78901234db5e
 ```
 **Output:**

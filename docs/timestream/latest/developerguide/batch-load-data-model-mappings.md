@@ -90,7 +90,7 @@ In the sample, `region`, `location`, and `hostname` are dimensions. Dimensions a
 
 For measures, the value `TargetMultiMeasureAttributeName` will become a column in the Timestream for LiveAnalytics table. You can keep the same name such as in this example. Or you can specify a new one. `MeasureValueType` is one of `DOUBLE`, `BIGINT`, `BOOLEAN`, `VARCHAR`, or `TIMESTAMP`.
 
-```
+```json
 {
   "TimeColumn": "time",
   "TimeUnit": "MILLISECONDS",

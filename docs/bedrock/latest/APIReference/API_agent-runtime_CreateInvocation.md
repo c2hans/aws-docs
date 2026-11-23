@@ -129,7 +129,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of CreateInvocation.
 
-```
+```json
 PUT bedrock-agent-runtime.us-east-1.amazonaws.com/sessions/12345abc-1234-abcd-1234-abcdef123456/invocations/ HTTP/1.1
 Content-type: application/json
 

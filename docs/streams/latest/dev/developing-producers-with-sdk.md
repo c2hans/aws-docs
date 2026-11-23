@@ -49,7 +49,7 @@ A `PutRecords` request can include records with different partition keys. The sc
 
 The following code creates 100 data records with sequential partition keys and puts them in a stream called `DataStream`.
 
-```
+```java
         AmazonKinesisClientBuilder clientBuilder = AmazonKinesisClientBuilder.standard();
 
         clientBuilder.setRegion(regionName);
@@ -84,7 +84,7 @@ Successful records include `SequenceNumber` and `ShardID` values, and unsuccessf
 
 **Example PutRecords request syntax**
 
-```
+```json
 {
     "Records": [
         {
@@ -106,7 +106,7 @@ Successful records include `SequenceNumber` and `ShardID` values, and unsuccessf
 
 **Example PutRecords response syntax**
 
-```
+```json
 {
     "FailedRecordCount”: 1,
     "Records": [
@@ -132,7 +132,7 @@ Records that were unsuccessfully processed can be included in subsequent `PutRec
 
 **Example PutRecords failure handler**
 
-```
+```java
 PutRecordsRequest putRecordsRequest = new PutRecordsRequest();
 putRecordsRequest.setStreamName(myStreamName);
 List<PutRecordsRequestEntry> putRecordsRequestEntryList = new ArrayList<>();
@@ -185,7 +185,7 @@ A partition key is used to group data within the stream. A data record is assign
 
 The following code creates ten data records, distributed across two partition keys, and puts them in a stream called `myStreamName`.
 
-```
+```java
 for (int j = 0; j < 10; j++)
 {
   PutRecordRequest putRecordRequest = new PutRecordRequest();

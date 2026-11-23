@@ -19,7 +19,7 @@ When you store Timestream for InfluxDB user credentials in the secret, use the f
 
 Single-user:
 
-```
+```json
 {
   "engine": "<required: must be set to 'timestream-influxdb'>",
   "username": "<required: username>",
@@ -34,7 +34,7 @@ When you store Timestream for InfluxDB token credentials in the secret, use the 
 
 Multi-user:
 
-```
+```json
 {
   "engine": "<required: must be set to 'timestream-influxdb'>",
   "org": "<required: organization to associate token with>",
@@ -52,7 +52,7 @@ When you store Timestream for InfluxDB admin credentials in the secret, use the 
 
 Admin secret:
 
-```
+```json
 {
   "engine": "<required: must be set to 'timestream-influxdb'>",
   "username": "<required: username>",
@@ -118,7 +118,7 @@ Replace all items listed below in the IAM policy with values from your AWS accou
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -179,7 +179,7 @@ Replace all items listed below in the IAM policy with values from your AWS accou
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

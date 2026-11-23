@@ -59,7 +59,7 @@ These permissions allow you to change the protection pack (web ACL) logging conf
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

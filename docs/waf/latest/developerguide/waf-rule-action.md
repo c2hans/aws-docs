@@ -79,7 +79,7 @@ To implement your AI traffic monetization policies, we use multiple detection te
 ### Example: Monetize rule in JSON
 <a name="waf-rule-action-monetize-example"></a>
 
-```
+```JSON
 {
   "Name": "MonetizeUnverifiedBots",
   "Priority": 5,

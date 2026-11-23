@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "apiKey": "{{32-character hex API key}}",
   "apiKeyId": "{{API key UUID}}"
@@ -27,7 +27,7 @@ The unique identifier (UUID) for the API key. Found via the Datadog API or Organ
 
 The following are the metadata fields for Datadog API Key:
 
-```
+```json
 {
   "adminSecretArn": "arn:aws:secretsmanager:us-east-1:111122223333:secret:{{DatadogAdminKey}}"
 }

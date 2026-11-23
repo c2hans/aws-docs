@@ -64,7 +64,7 @@ Before you set or lower the retention setting, confirm that you no longer need a
 
 The following REST API request sets retention on one or more indexes.
 
-```
+```json
 PUT {{my-index}}/_settings
 {
   "index.data.retention": "7"
@@ -73,7 +73,7 @@ PUT {{my-index}}/_settings
 
 A successful request returns the following response.
 
-```
+```json
 {
   "acknowledged": true
 }
@@ -81,7 +81,7 @@ A successful request returns the following response.
 
 The following REST API request sets retention on all indexes in a collection with a wildcard.
 
-```
+```json
 PUT */_settings
 {
   "index.data.retention": "7"
@@ -90,7 +90,7 @@ PUT */_settings
 
 The following REST API request sets retention on indexes that match a prefix.
 
-```
+```json
 PUT error*/_settings
 {
   "index.data.retention": "30"
@@ -99,7 +99,7 @@ PUT error*/_settings
 
 The following REST API request sets retention on multiple specific indexes.
 
-```
+```json
 PUT access-2024,error-2024/_settings
 {
   "index.data.retention": "7"
@@ -108,7 +108,7 @@ PUT access-2024,error-2024/_settings
 
 The following REST API request removes retention from an index with a `null` value.
 
-```
+```json
 PUT {{my-index}}/_settings
 {
   "index.data.retention": null
@@ -117,7 +117,7 @@ PUT {{my-index}}/_settings
 
 The following REST API request sets retention when you create an index.
 
-```
+```json
 PUT {{my-index}}
 {
   "settings": {
@@ -128,7 +128,7 @@ PUT {{my-index}}
 
 A successful request returns the following response.
 
-```
+```json
 {
   "acknowledged": true,
   "shards_acknowledged": true,
@@ -143,7 +143,7 @@ The `PUT _settings` API applies only to existing indexes. With an index template
 
 The following REST API request creates an index template that applies a 30-day retention setting to new indexes whose names match the `logs-*` pattern.
 
-```
+```json
 PUT _index_template/my-template
 {
   "index_patterns": ["logs-*"],
@@ -157,7 +157,7 @@ PUT _index_template/my-template
 
 A successful request returns the following response.
 
-```
+```json
 {
   "acknowledged": true
 }
@@ -189,7 +189,7 @@ OpenSearch Serverless requires SigV4-signed requests. Use the OpenSearch Java cl
 
 The `index.data.retention` setting isn't available as a typed builder method, so set it with `IndexSettings.Builder.customSettings`. The following example creates an index named {{test-idx}} with a 5-day retention setting. Replace the endpoint and the `Region` with the values for your collection.
 
-```
+```java
 import org.opensearch.client.json.JsonData;
 import org.opensearch.client.opensearch.OpenSearchClient;
 import org.opensearch.client.opensearch.indices.CreateIndexRequest;

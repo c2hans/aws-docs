@@ -59,7 +59,7 @@ To view a code example for using the `$strLenCP` command, choose the tab for the
 
 Here's an example of using the `$strLenCP` operator in a Node.js application with the MongoDB driver:
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function example() {
@@ -88,7 +88,7 @@ example();
 
 Here's an example of using the `$strLenCP` operator in a Python application with the PyMongo driver:
 
-```
+```python
 from pymongo import MongoClient
 
 def example():

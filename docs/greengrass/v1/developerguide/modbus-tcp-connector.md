@@ -73,7 +73,7 @@ Type: A well-formed JSON string that defines the set of supported feedback confi
 
 The following is an example of a `CapabilityConfiguration`:
 
-```
+```json
 {
     "sources": [
         {
@@ -120,7 +120,7 @@ The following is an example of a `CapabilityConfiguration`:
 
 The following CLI command creates a `ConnectorDefinition` with an initial version that contains the Modbus-TCP Protocol Adapter connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '
 {
     "Connectors": [
@@ -148,7 +148,7 @@ This connector doesn't accept MQTT messages as input data.
 
 This connector publishes data to `StreamManager`. You must configure the destination message stream. The output messages are of the following structure:
 
-```
+```json
 {
     "alias": "string",
     "messages": [

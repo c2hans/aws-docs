@@ -10,7 +10,7 @@ First, configure persistent storage on the service-managed fleet. For configurat
 
 Add a Bash array to the queue environment's enter script, and pass the array to `docker container run`:
 
-```
+```bash
 PERSISTENT_MOUNT_ARGS=()
 if [ -n "${DEADLINE_PERSISTENT_MOUNT:-}" ]; then
     PERSISTENT_MOUNT_ARGS=(

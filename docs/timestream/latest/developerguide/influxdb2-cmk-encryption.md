@@ -38,7 +38,7 @@ To create a DB instance with a customer managed key, specify the `--kms-key-id` 
 
 **InfluxDB 2 instance:**
 
-```
+```bash
 aws timestream-influxdb create-db-instance \
     --name {{my-influxdb-instance}} \
     --db-instance-type db.influx.medium \
@@ -52,7 +52,7 @@ aws timestream-influxdb create-db-instance \
 
 **InfluxDB 2 Read Replicas cluster:**
 
-```
+```bash
 aws timestream-influxdb create-db-cluster \
     --name {{my-influxdb-cluster}} \
     --db-instance-type db.influx.medium \
@@ -86,7 +86,7 @@ Before creating a database with a customer managed key, you must configure the k
 
 Add the following statements to your key policy, replacing {{account-id}}, {{caller-role}}, and {{region}} with your values:
 
-```
+```json
 {
     "Sid": "Allow Timestream InfluxDB to use the key for resource allocations",
     "Effect": "Allow",
@@ -141,7 +141,7 @@ The second statement allows the caller's IAM role to describe the key through th
 
 To view the AWS KMS key used by a DB instance or cluster, use the `GetDbInstance` or `GetDbCluster` API. The response includes the `kmsKeyId` field if a customer managed key was specified during creation.
 
-```
+```bash
 aws timestream-influxdb get-db-instance \
     --db-instance-identifier {{my-influxdb-instance}}
 ```

@@ -44,7 +44,7 @@ For more information, see [Share a Systems Manager Document](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: This example lists all the versions for a document.**
 
-```
+```powershell
 Get-SSMDocumentVersionList -Name "RunShellScript"
 ```
 **Output:**
@@ -59,7 +59,7 @@ CreatedDate          DocumentVersion IsDefaultVersion Name
 **Tools for PowerShell V5**
 **Example 1: This example lists all the versions for a document.**
 
-```
+```powershell
 Get-SSMDocumentVersionList -Name "RunShellScript"
 ```
 **Output:**

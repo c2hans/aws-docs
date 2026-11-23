@@ -137,11 +137,11 @@ HTTP Status Code: 400
 
 Following is an example of a content attribute.
 
-```
+```json
 { }
 ```
 
-```
+```json
 {
   "name": "My layout",
   "content": {

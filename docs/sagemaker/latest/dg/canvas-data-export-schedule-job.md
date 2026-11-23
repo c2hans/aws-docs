@@ -13,7 +13,7 @@ When you create a job, you must specify an IAM role that has permissions to crea
 
 Add the following trust policy to the role to allow EventBridge to assume it.
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {

@@ -28,7 +28,7 @@ The following is an example of the JSON for a basic cluster policy, similar to t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -64,7 +64,7 @@ To set up multi-VPC private connectivity between a Kafka client and an MSK clust
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

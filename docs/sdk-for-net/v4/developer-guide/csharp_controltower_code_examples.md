@@ -34,7 +34,7 @@ The following code example shows how to get started using AWS Control Tower.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
 using Amazon.ControlTower;
 using Amazon.ControlTower.Model;
 using Microsoft.Extensions.DependencyInjection;
@@ -121,7 +121,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 Run an interactive scenario demonstrating AWS Control Tower features.
 
-```
+```csharp
 using Amazon.ControlCatalog;
 using Amazon.ControlTower;
 using Amazon.ControlTower.Model;
@@ -412,7 +412,7 @@ public class ControlTowerBasics
 ```
 Wrapper methods that are called by the scenario to manage Aurora actions.
 
-```
+```csharp
 using Amazon.ControlCatalog;
 using Amazon.ControlCatalog.Model;
 using Amazon.ControlTower;
@@ -913,7 +913,7 @@ The following code example shows how to use `DisableBaseline`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Disable a baseline for a specific target and wait for the operation to complete.
     /// </summary>
@@ -967,7 +967,7 @@ The following code example shows how to use `DisableControl`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Disable a control for a specified target.
     /// </summary>
@@ -1023,7 +1023,7 @@ The following code example shows how to use `EnableBaseline`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Enable a baseline for the specified target.
     /// </summary>
@@ -1096,7 +1096,7 @@ The following code example shows how to use `EnableControl`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Enable a control for a specified target.
     /// </summary>
@@ -1160,7 +1160,7 @@ The following code example shows how to use `GetBaselineOperation`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the status of a baseline operation.
     /// </summary>
@@ -1200,7 +1200,7 @@ The following code example shows how to use `GetControlOperation`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the status of a control operation.
     /// </summary>
@@ -1240,7 +1240,7 @@ The following code example shows how to use `ListBaselines`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List all baselines.
     /// </summary>
@@ -1277,7 +1277,7 @@ The following code example shows how to use `ListEnabledBaselines`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List all enabled baselines.
     /// </summary>
@@ -1314,7 +1314,7 @@ The following code example shows how to use `ListEnabledControls`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List enabled controls for a target organizational unit.
     /// </summary>
@@ -1362,7 +1362,7 @@ The following code example shows how to use `ListLandingZones`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List the AWS Control Tower landing zones for an account.
     /// </summary>
@@ -1399,7 +1399,7 @@ The following code example shows how to use `ResetEnabledBaseline`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/ControlTower#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Reset an enabled baseline for a specific target.
     /// </summary>

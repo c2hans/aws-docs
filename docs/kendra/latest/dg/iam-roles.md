@@ -39,7 +39,7 @@ A role policy to allow Amazon Kendra to access a CloudWatch log.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -85,7 +85,7 @@ A role policy to allow Amazon Kendra to access AWS Secrets Manager. If you are u
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -156,7 +156,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -191,7 +191,7 @@ A required role policy to allow Amazon Kendra to access an Amazon S3 bucket.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -217,7 +217,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -243,7 +243,7 @@ An optional role policy to allow Amazon Kendra to use an AWS KMS customer master
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -283,7 +283,7 @@ You can connect an Adobe Experience Manager data source to Amazon Kendra through
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -346,7 +346,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -379,7 +379,7 @@ You can connect an Alfresco data source to Amazon Kendra through Amazon VPC. If 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -442,7 +442,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -477,7 +477,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -512,7 +512,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -546,7 +546,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -584,7 +584,7 @@ If you have encrypted the Amazon S3 bucket that contains the SSL certificate use
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -612,7 +612,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -647,7 +647,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -682,7 +682,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -717,7 +717,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -752,7 +752,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -786,7 +786,7 @@ A required role policy to allow Amazon Kendra to use an Amazon S3 bucket as a da
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -831,7 +831,7 @@ An optional role policy to allow Amazon Kendra to use an AWS KMS customer master
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -861,7 +861,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -892,7 +892,7 @@ A bucket policy to allow the Amazon S3 data source role to access the Amazon S3 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -931,7 +931,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -962,7 +962,7 @@ You can connect an Amazon Kendra Web Crawler data source to Amazon Kendra throug
 
 If you store your seed URLs or sitemaps in an Amazon S3 bucket, you must add this permission to the role.
 
-```
+```json
 ,
 {"Effect": "Allow",
      "Action": [
@@ -981,7 +981,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -1014,7 +1014,7 @@ You can connect a Box data source to Amazon Kendra through Amazon VPC. If you ar
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1077,7 +1077,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -1113,7 +1113,7 @@ You can connect a Confluence data source to Amazon Kendra through Amazon VPC. If
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1165,7 +1165,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -1202,7 +1202,7 @@ A role policy to allow Amazon Kendra to connect to Confluence.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1265,7 +1265,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -1298,7 +1298,7 @@ You can connect a Dropbox data source to Amazon Kendra through Amazon VPC. If yo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1361,7 +1361,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -1394,7 +1394,7 @@ You can connect a Drupal data source to Amazon Kendra through Amazon VPC. If you
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1457,7 +1457,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -1490,7 +1490,7 @@ You can connect a GitHub data source to Amazon Kendra through Amazon VPC. If you
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1553,7 +1553,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -1586,7 +1586,7 @@ You can connect a Gmail data source to Amazon Kendra through Amazon VPC. If you 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1649,7 +1649,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -1683,7 +1683,7 @@ The following IAM policy provides the necessary permissions:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1733,7 +1733,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -1768,7 +1768,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -1801,7 +1801,7 @@ You can connect a Jira data source to Amazon Kendra through Amazon VPC. If you a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1864,7 +1864,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -1898,7 +1898,7 @@ The following IAM policy provides the necessary permissions:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1948,7 +1948,7 @@ If you are storing the list of users to index in an Amazon S3 bucket, you must a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -2008,7 +2008,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -2042,7 +2042,7 @@ The following IAM policy provides the necessary permissions:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -2092,7 +2092,7 @@ If you are storing the list of users to index in an Amazon S3 bucket, you must a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -2152,7 +2152,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -2191,7 +2191,7 @@ You can connect a Microsoft SharePoint data source to Amazon Kendra through Amaz
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -2252,7 +2252,7 @@ If you have encrypted the Amazon S3 bucket that contains the SSL certificate use
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -2278,7 +2278,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -2318,7 +2318,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -2353,7 +2353,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -2388,7 +2388,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -2422,7 +2422,7 @@ The following IAM policy provides the necessary permissions:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -2472,7 +2472,7 @@ If you are storing the list of users to index in an Amazon S3 bucket, you must a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -2532,7 +2532,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -2567,7 +2567,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -2602,7 +2602,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -2637,7 +2637,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -2670,7 +2670,7 @@ You can connect a Quip data source to Amazon Kendra through Amazon VPC. If you a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -2733,7 +2733,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -2766,7 +2766,7 @@ You can connect a Salesforce data source to Amazon Kendra through Amazon VPC. If
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -2816,7 +2816,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -2849,7 +2849,7 @@ You can connect a ServiceNow data source to Amazon Kendra through Amazon VPC. If
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -2899,7 +2899,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -2932,7 +2932,7 @@ You can connect a Slack data source to Amazon Kendra through Amazon VPC. If you 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -2995,7 +2995,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -3028,7 +3028,7 @@ You can connect a Zendesk data source to Amazon Kendra through Amazon VPC. If yo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -3091,7 +3091,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -3116,7 +3116,7 @@ If you use a virtual private cloud (VPC) to connect to your data source, you mus
 ### VPC IAM role
 <a name="vpc-role"></a>
 
-```
+```json
 {
       "Effect": "Allow",
       "Action": [
@@ -3189,7 +3189,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -3221,7 +3221,7 @@ A required role policy to allow Amazon Kendra to access an Amazon S3 bucket.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -3247,7 +3247,7 @@ An optional role policy to allow Amazon Kendra to use an AWS KMS customer master
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -3280,7 +3280,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -3312,7 +3312,7 @@ A required role policy to allow Amazon Kendra to use the Amazon S3 file as your 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -3337,7 +3337,7 @@ An optional role policy to allow Amazon Kendra to use an AWS KMS customer master
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -3363,7 +3363,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -3395,7 +3395,7 @@ A required role policy to allow Amazon Kendra to use the Amazon S3 file as your 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -3420,7 +3420,7 @@ An optional role policy to allow Amazon Kendra to use an AWS KMS customer master
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -3446,7 +3446,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -3480,7 +3480,7 @@ A required role policy to allow Amazon Kendra to access IAM Identity Center.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -3522,7 +3522,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -3554,7 +3554,7 @@ A required role policy to allow Amazon Kendra to access `Query` operations, `Que
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -3624,7 +3624,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -3658,7 +3658,7 @@ A required role policy to allow Amazon Kendra to run `PreExtractionHookConfigura
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -3711,7 +3711,7 @@ An optional role policy to allow Amazon Kendra to run `PreExtractionHookConfigur
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -3754,7 +3754,7 @@ A trust policy to allow Amazon Kendra to assume a role.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

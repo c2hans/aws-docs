@@ -79,7 +79,7 @@ Create a permissions policy that allows Lambda to get objects from an Amazon S3 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -190,7 +190,7 @@ The Lambda Event Function retrieves the key name of the uploaded object and the 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using .NET.
 
-   ```
+   ```csharp
    // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    // SPDX-License-Identifier: Apache-2.0
    ﻿using System.Threading.Tasks;
@@ -256,7 +256,7 @@ Consuming an S3 event with Lambda using .NET.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using Go.
 
-   ```
+   ```go
    // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    // SPDX-License-Identifier: Apache-2.0
    package main
@@ -308,7 +308,7 @@ Consuming an S3 event with Lambda using Go.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using Java.
 
-   ```
+   ```java
    // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    // SPDX-License-Identifier: Apache-2.0
    package example;
@@ -362,7 +362,7 @@ Consuming an S3 event with Lambda using Java.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using JavaScript.
 
-   ```
+   ```javascript
    import { S3Client, HeadObjectCommand } from "@aws-sdk/client-s3";
 
    const client = new S3Client();
@@ -392,7 +392,7 @@ Consuming an S3 event with Lambda using JavaScript.
    ```
 Consuming an S3 event with Lambda using TypeScript.
 
-   ```
+   ```javascript
    // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    // SPDX-License-Identifier: Apache-2.0
    import { S3Event } from 'aws-lambda';
@@ -428,7 +428,7 @@ Consuming an S3 event with Lambda using TypeScript.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using PHP.
 
-   ```
+   ```php
    <?php
 
    use Bref\Context\Context;
@@ -482,7 +482,7 @@ Consuming an S3 event with Lambda using PHP.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using Python.
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
    import json
@@ -516,7 +516,7 @@ Consuming an S3 event with Lambda using Python.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using Ruby.
 
-   ```
+   ```ruby
    require 'json'
    require 'uri'
    require 'aws-sdk'
@@ -549,7 +549,7 @@ Consuming an S3 event with Lambda using Ruby.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using Rust.
 
-   ```
+   ```rust
    // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    // SPDX-License-Identifier: Apache-2.0
    use aws_lambda_events::event::s3::S3Event;
@@ -660,7 +660,7 @@ You can see this error if you previously configured a trigger for another Lambda
    + Replace both instances of `amzn-s3-demo-bucket` with the name of your own Amazon S3 bucket.
    + Replace `test%2FKey` with the name of the test object you uploaded to your bucket earlier (for example, `HappyFace.jpg`).
 
-   ```
+   ```JSON
    {
      "Records": [
        {

@@ -62,7 +62,7 @@ For more information, see [Managing Amazon EFS file systems](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: Returns the collection of all file systems owned by the caller's account in the region.**
 
-```
+```powershell
 Get-EFSFileSystem
 ```
 **Output:**
@@ -84,12 +84,12 @@ FileSystemId         : fs-4d3c2b1a
 ```
 **Example 2: Returns the details of the specified file system.**
 
-```
+```powershell
 Get-EFSFileSystem -FileSystemId fs-1a2b3c4d
 ```
 **Example 3: Returns the details of a file system using the idempotency creation token that was specified at the time the file system was created.**
 
-```
+```powershell
 Get-EFSFileSystem -CreationToken 1a2bff54-85e0-4747-bd95-7bc172c4f555
 ```
 +  For API details, see [DescribeFileSystems](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -97,7 +97,7 @@ Get-EFSFileSystem -CreationToken 1a2bff54-85e0-4747-bd95-7bc172c4f555
 **Tools for PowerShell V5**
 **Example 1: Returns the collection of all file systems owned by the caller's account in the region.**
 
-```
+```powershell
 Get-EFSFileSystem
 ```
 **Output:**
@@ -119,12 +119,12 @@ FileSystemId         : fs-4d3c2b1a
 ```
 **Example 2: Returns the details of the specified file system.**
 
-```
+```powershell
 Get-EFSFileSystem -FileSystemId fs-1a2b3c4d
 ```
 **Example 3: Returns the details of a file system using the idempotency creation token that was specified at the time the file system was created.**
 
-```
+```powershell
 Get-EFSFileSystem -CreationToken 1a2bff54-85e0-4747-bd95-7bc172c4f555
 ```
 +  For API details, see [DescribeFileSystems](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

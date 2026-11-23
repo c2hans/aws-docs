@@ -65,7 +65,7 @@ To view account state values in API responses, use AWS CLI version 2.29.0 or lat
 
   The following example shows how to retrieve the details about a specified account including its `State` value.
 
-  ```
+  ```bash
   $ aws organizations describe-account --account-id 123456789012
 
   {

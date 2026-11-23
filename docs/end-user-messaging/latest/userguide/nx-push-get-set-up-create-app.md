@@ -36,14 +36,14 @@ An application is a storage container for your AWS End User Messaging Push setti
 
 Create the application with the [create-app](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/create-app.html) command. The response includes the application `Id`, which you use when you enable channels and send.
 
-```
+```bsh
 $ aws pinpoint create-app \
 > --create-application-request {{Name=ExampleApp}}
 ```
 
 Enable a push channel on the application by providing that channel's credentials. For example, enable the APNs channel with [update-apns-channel](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/update-apns-channel.html), or the FCM channel with [update-gcm-channel](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/update-gcm-channel.html). Replace {{applicationId}} with the `Id` from the previous command.
 
-```
+```bsh
 $ aws pinpoint update-apns-channel \
 > --application-id {{applicationId}} \
 > --apns-channel-request Enabled=true

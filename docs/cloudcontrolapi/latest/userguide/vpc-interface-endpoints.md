@@ -41,7 +41,7 @@ For more information, see [Control access to VPC endpoints using endpoint polici
 VPCE endpoint policy details are not passed to any downstream services invoked by Cloud Control API for evaluation. Because of this, policies specifying actions or resources that belong to downstream services are not enforced.
 For example, suppose you created an Amazon EC2 instance in a VPC instance with a VPC endpoint for Cloud Control API in a subnet with no Internet access. Next, you attach the following VPC endpoint policy to the VPCE:
 
-```
+```json
 {
   "Statement": [
     {
@@ -62,7 +62,7 @@ If a user with administrator access then sends a request to access an Amazon S3 
 **Example: VPC endpoint policy for Cloud Control API actions**
 The following is an example of an endpoint policy for Cloud Control API. When attached to an endpoint, this policy grants access to the listed Cloud Control API actions for all principals on all resources. The following example denies all users the permission to create resources through the VPC endpoint, and allows full access to all other actions on the Cloud Control API service.
 
-```
+```json
 {
   "Statement": [
     {

@@ -161,7 +161,7 @@ All configuration options provided for the MQTT long duration test are optional.
 **OPERATIONS**
 The list of operations that the device performs, such as `CONNECT`, `PUBLISH` and `SUBSCRIBE`. The test case runs scenarios based on the specified operations. Operations that aren't specified are assumed valid.
 
-```
+```json
 {
 "OPERATIONS": ["PUBLISH", "SUBSCRIBE"]
 //by default the test assumes device can CONNECT
@@ -173,7 +173,7 @@ Based on the operations selected, the test case runs scenarios to validate the d
 + **Basic Scenarios** are simple tests that validate if the device can perform the operations selected above as part of the configuration. These are pre-selected based on the operations specified in the configuration. No more input is required in the configuration.
 + **Advanced Scenarios** are more complex scenarios that are performed against the device to validate if the device follows best practices when met with real world conditions. These are optional and can be passed as an array of scenarios to the configuration input of the test suite.
 
-```
+```json
 {
     "SCENARIOS": [      // list of advanced scenarios
                 "PUBACK_QOS_1",
@@ -204,7 +204,7 @@ The format of the message payload that the device expects when the test case pub
 
 **API test case definition:**
 
-```
+```json
 {
 "tests":[
    {

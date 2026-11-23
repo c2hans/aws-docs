@@ -35,7 +35,7 @@ The IDT-FreeRTOS UI doesn't support Microsoft Internet Explorer.
 
 You can download a release of FreeRTOS from [GitHub](https://github.com/aws/amazon-freertos) with the following command:
 
-```
+```bash
 git clone --branch <{{FREERTOS_RELEASE_VERSION}}> --recurse-submodules https://github.com/aws/amazon-freertos.git
 cd amazon-freertos
 git submodule update --checkout --init --recursive

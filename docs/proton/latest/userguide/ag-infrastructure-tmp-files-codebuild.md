@@ -27,7 +27,7 @@ The following manifest file specifies CodeBuild provisioning, and includes the c
 
 **Example infrastructure/manifest.yaml**
 
-```
+```yaml
 infrastructure:
   templates:
     - rendering_engine: codebuild
@@ -60,7 +60,7 @@ The following schema file defines parameters for the environment. Your AWS CDK c
 
 **Example schema/schema.yaml**
 
-```
+```yaml
 schema:
   format:
     openapi: "3.0.0"
@@ -88,7 +88,7 @@ The following files are an example to a Node.js CDK project.
 
 **Example infrastructure/package.json**
 
-```
+```json
 {
   "name": "ProtonEnvironment",
   "version": "0.1.0",
@@ -120,7 +120,7 @@ The following files are an example to a Node.js CDK project.
 
 **Example infrastructure/tsconfig.json**
 
-```
+```json
 {
   "compilerOptions": {
     "target": "ES2018",
@@ -157,7 +157,7 @@ The following files are an example to a Node.js CDK project.
 
 **Example infrastructure/cdk.json**
 
-```
+```json
 {
   "app": "npx ts-node --prefer-ts-exts bin/ProtonEnvironment.ts",
   "outputsFile": "proton-outputs.json",
@@ -195,7 +195,7 @@ The following files are an example to a Node.js CDK project.
 
 **Example infrastructure/bin/ProtonEnvironment.ts**
 
-```
+```js
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
@@ -207,7 +207,7 @@ new ProtonEnvironmentStack(app, 'ProtonEnvironmentStack', {});
 
 **Example infrastructure/lib/ProtonEnvironmentStack.ts**
 
-```
+```js
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as cdk from 'aws-cdk-lib';
@@ -240,7 +240,7 @@ When you create an environment using a CodeBuild-based provisioning template, AW
 
 **Example infrastructure/proton-inputs.json**
 
-```
+```json
 {
   "environment": {
     "name": "myenv",

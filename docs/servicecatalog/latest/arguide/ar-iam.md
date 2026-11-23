@@ -34,7 +34,7 @@ The permissions that you have through AWS Identity and Access Management (IAM) m
 
  ** Example: warning message **
 
-```
+```json
 User: arn:aws:iam::123456789012:user/mateojackson is not authorized to perform: awes:GetWidget on resource: my-example-widget
 ```
 

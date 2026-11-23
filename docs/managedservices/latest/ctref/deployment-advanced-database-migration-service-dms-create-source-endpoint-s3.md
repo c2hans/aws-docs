@@ -148,14 +148,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-database-migration-service-dms-create-source-endpoint-s3-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="deployment-advanced-database-migration-service-dms-create-source-endpoint-s3-ex-max"></a>
 
-```
+```json
 {
   "Description": "This is a test description",
   "Name": "Test Stack",

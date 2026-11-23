@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/pause.html
 
 Pause a call for a specified time.
 
-```
+```json
 {
     "Type": "Pause",
     "Parameters": {

@@ -65,7 +65,7 @@ For information about updating a stream using the AWS CLI, see the [Kinesis CLI 
 
 To configure warm throughput using the AWS CLI, use the `update-stream-warm-throughput` command. For example:
 
-```
+```bash
 aws kinesis update-stream-warm-throughput \
     --stream-arn arn:aws:kinesis:us-east-1:123456789012:stream/my-stream \
     --warm-throughput-mi-bps=200
@@ -73,7 +73,7 @@ aws kinesis update-stream-warm-throughput \
 
 To lower capacity, reconfigure `warm-throughput-mi-bps` to the same or a lower value:
 
-```
+```bash
 aws kinesis update-stream-warm-throughput \
     --stream-arn arn:aws:kinesis:us-east-1:123456789012:stream/my-stream \
     --warm-throughput-mi-bps=50

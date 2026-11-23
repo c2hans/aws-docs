@@ -15,6 +15,11 @@ When you update a firewall, for example to add a subnet association or change a 
 ## Contents
 <a name="API_SyncState_Contents"></a>
 
+ ** AddressTranslations **   <a name="networkfirewall-Type-SyncState-AddressTranslations"></a>
+The public IP addresses that an internet gateway firewall uses for network address translation in this Availability Zone. Network Firewall allocates these addresses in your account and adds or removes addresses automatically based on traffic. This setting is only present for an internet gateway firewall.
+Type: [AddressTranslations](API_AddressTranslations.md) object
+Required: No
+
  ** Attachment **   <a name="networkfirewall-Type-SyncState-Attachment"></a>
 The configuration and status for a single firewall subnet. For each configured subnet, Network Firewall creates the attachment by instantiating the firewall endpoint in the subnet so that it's ready to take traffic.
 Type: [Attachment](API_Attachment.md) object

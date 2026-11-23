@@ -28,7 +28,7 @@ CloudTrail log files can contain one or more log entries where each entry is mad
 
 The following example shows a CloudTrail log entry that demonstrates the CodeDeploy create deployment group action:
 
-```
+```yaml
 {
 	"Records": [{
 		"eventVersion": "1.02",

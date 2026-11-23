@@ -75,7 +75,7 @@ The following is an example of a custom endpoint policy. When you attach this re
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -97,7 +97,7 @@ The following is an example of a custom endpoint policy. When you attach this re
 **Example: VPC endpoint policy for Amazon Bedrock Mantle actions**
 The following is an example of a custom endpoint policy. When you attach this resource-based policy to your interface endpoint, it grants access to the listed Amazon Bedrock Mantle actions for all principals on all resources.
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -124,7 +124,7 @@ After you create your VPC endpoint, you can route Amazon Bedrock API calls throu
 
 Use the `--endpoint-url` flag to route requests through your VPC endpoint:
 
-```
+```bash
 aws bedrock-runtime invoke-model \
     --model-id anthropic.claude-sonnet-4-6-v1 \
     --body '{"anthropic_version": "bedrock-2023-05-31", "max_tokens": 1024, "messages": [{"role": "user", "content": "Hello"}]}' \
@@ -137,7 +137,7 @@ aws bedrock-runtime invoke-model \
 
 Pass the `endpoint_url` parameter when creating the client. This approach works for AWS Lambda functions and any application using the AWS SDK:
 
-```
+```python
 import boto3
 
 client = boto3.client(

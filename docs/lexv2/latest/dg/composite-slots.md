@@ -42,7 +42,7 @@ The composite slot differs from a multi-valued slot. The composite slot is compr
 
 For a composite slot, Amazon Lex returns a value for each subslot in the response to the `RecognizeText` or `RecognizeUtterance` operation. The following is the slot information returned for the utterance: "I want to schedule a service for my “2021 White Toyota Camry" from the CarService bot.
 
-```
+```json
 "slots": {
     "CarType": {
         "value": {

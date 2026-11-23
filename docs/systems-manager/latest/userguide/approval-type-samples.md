@@ -28,7 +28,7 @@ The following sample illustrates part of the YAML code for this configuration.
 **Note**
 This version of the YAML code include an additional input, `MinRequiredApprovals` (with an initial capital `M`). The value for this input indicates how many approvals are required from among all available reviewers. Note also that the `minRequiredApprovals` (lowercase initial `m`) value for each approver in the `Approvers` list is `0` (zero). This indicates that the approver can contribute to the overall approvals but is not required to do so.
 
-```
+```yaml
 schemaVersion: "0.3"
 emergencyChange: false
 autoApprovable: false
@@ -72,7 +72,7 @@ The following sample illustrates part of the YAML code for this configuration.
 **Note**
 Observe that the value for each `minRequiredApprovals` approver is `1`. This indicates that one approval is required from each approver.
 
-```
+```yaml
 schemaVersion: "0.3"
 emergencyChange: false
 autoApprovable: false
@@ -111,7 +111,7 @@ In the combined per-level and per-line approval setup shown in the following ima
 
 ![Approval level showing three approvals required for the level but four required at the line level.](https://docs.aws.amazon.com/systems-manager/latest/userguide/images/Add-approval-3.png)
 
-```
+```yaml
 schemaVersion: "0.3"
 emergencyChange: false
 autoApprovable: false

@@ -24,7 +24,7 @@ You might have code like the following in your application. This example creates
 ------
 #### [ C ]
 
-```
+```cpp
 struct aws_cryptosdk_keyring *kms_regional_keyring = Aws::Cryptosdk::KmsKeyring::Builder()
        .WithKmsClient(create_kms_client(Aws::Region::US_WEST_2)).BuildDiscovery());
 ```
@@ -32,7 +32,7 @@ struct aws_cryptosdk_keyring *kms_regional_keyring = Aws::Cryptosdk::KmsKeyring:
 ------
 #### [ JavaScript Browser ]
 
-```
+```js
 const clientProvider = getClient(KMS, { credentials })
 
 const discovery = true
@@ -43,7 +43,7 @@ const keyring = new KmsKeyringBrowser({ clientProvider, discovery })
 ------
 #### [ JavaScript Node.js ]
 
-```
+```js
 const discovery = true
 const clientProvider = limitRegions(['us-west-2'], getKmsClient)
 const keyring = new KmsKeyringNode({ clientProvider, discovery })
@@ -58,7 +58,7 @@ Beginning in version 1.7.*x*, you can add a discovery filter to any AWS KMS disc
 
 For a complete example, see [kms\_discovery.cpp](https://github.com/aws/aws-encryption-sdk-c/blob/master/examples/kms_discovery.cpp).
 
-```
+```cpp
 std::shared_ptr<KmsKeyring::DiscoveryFilter> discovery_filter(
     KmsKeyring::DiscoveryFilter::Builder("{{aws}}")
         .AddAccount("{{111122223333}}")
@@ -72,7 +72,7 @@ struct aws_cryptosdk_keyring *kms_regional_keyring = Aws::Cryptosdk::KmsKeyring:
 ------
 #### [ JavaScript Browser ]
 
-```
+```js
 const clientProvider = getClient(KMS, { credentials })
 
 const discovery = true
@@ -88,7 +88,7 @@ const keyring = new KmsKeyringBrowser(clientProvider, {
 
 For a complete example, see [kms\_filtered\_discovery.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-node/src/kms_filtered_discovery.ts).
 
-```
+```js
 const discovery = true
 const clientProvider = limitRegions(['us-west-2'], getKmsClient)
 const keyring = new KmsKeyringNode({

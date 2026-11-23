@@ -24,7 +24,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "Loggers": [
   {
@@ -83,7 +83,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-loggers-loggerdefinitionid-versions-post-cli"></a>
 
-```
+```bash
 aws greengrass create-logger-definition-version \
   --logger-definition-id <value> \
   [--loggers <value>] \
@@ -94,7 +94,7 @@ aws greengrass create-logger-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "LoggerDefinitionId": "string",
 "Loggers": [
@@ -117,7 +117,7 @@ cli-input-json format:
 
  [ VersionInformation](definitions-versioninformation.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -145,7 +145,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -212,7 +212,7 @@ type: integer
 ### CLI
 <a name="-greengrass-definition-loggers-loggerdefinitionid-versions-get-cli"></a>
 
-```
+```bash
 aws greengrass list-logger-definition-versions \
   --logger-definition-id <value> \
   [--next-token <value>] \
@@ -223,7 +223,7 @@ aws greengrass list-logger-definition-versions \
 
 cli-input-json format:
 
-```
+```json
 {
 "LoggerDefinitionId": "string",
 "NextToken": "string",
@@ -238,7 +238,7 @@ cli-input-json format:
 
  [ ListVersionsResponse](definitions-listversionsresponse.md)
 
-```
+```json
 {
 "Versions": [
   {
@@ -281,7 +281,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

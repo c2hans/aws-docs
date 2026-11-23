@@ -18,7 +18,7 @@ The AWS Cloud9 Integrated Development Environment (IDE) supports setting custom 
 
 You can set command-level custom environment variables as you run a command in your AWS Cloud9 development environment. To test this behavior, create a file named `script.sh` with the following code:
 
-```
+```sh
 #!/bin/bash
 
 echo $MY_ENV_VAR
@@ -26,7 +26,7 @@ echo $MY_ENV_VAR
 
 If you run the following command, the terminal displays `Terminal session`:
 
-```
+```sh
 MY_ENV_VAR='Terminal session' sh ./script.sh
 ```
 
@@ -37,7 +37,7 @@ If you set the custom environment variable by using multiple approaches describe
 
 You can set custom user environment variables in the `~/.bash_profile` file in your environment. To test this behavior, add the following code to the `~/.bash_profile` file in your environment:
 
-```
+```sh
 export MY_ENV_VAR='.bash_profile file'
 ```
 
@@ -48,7 +48,7 @@ If you then run `sh ./script.sh` from the command line, the terminal displays `.
 
 You can set local custom environment variables in a terminal session by running the ** `export` ** command. To test this behavior, run the following command in a terminal session:
 
-```
+```sh
 export MY_ENV_VAR='Command line export'
 ```
 
@@ -61,7 +61,7 @@ If you set the same custom environment variable with the ** `export` ** command 
 
 You can set custom user environment variables in the `~/.bashrc` file in your environment. To test this behavior, add the following code to the `~/.bashrc` file in your environment:
 
-```
+```sh
 export MY_ENV_VAR='.bashrc file'
 ```
 

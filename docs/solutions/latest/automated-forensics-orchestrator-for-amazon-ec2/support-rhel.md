@@ -17,7 +17,7 @@ To build a symbol:
 
 1. To initiate the build, add these input parameters.
 
-   ```
+   ```json
    {
        "amiId": "ami-0b6c020bf93af9ce1",
        "distribution": "RHEL8"

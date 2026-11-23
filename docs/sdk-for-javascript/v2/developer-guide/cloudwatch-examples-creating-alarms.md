@@ -36,7 +36,7 @@ To set up and run this example, you must first complete these tasks:
 
 Create a Node.js module with the file name `cw_describealarms.js`. Be sure to configure the SDK as previously shown. To access CloudWatch, create an `AWS.CloudWatch` service object. Create a JSON object to hold the parameters for retrieving alarm descriptions, limiting the alarms returned to those with a state of `INSUFFICIENT_DATA`. Then call the `describeAlarms` method of the `AWS.CloudWatch` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -59,7 +59,7 @@ cw.describeAlarms({ StateValue: "INSUFFICIENT_DATA" }, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node cw_describealarms.js
 ```
 
@@ -70,7 +70,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `cw_putmetricalarm.js`. Be sure to configure the SDK as previously shown. To access CloudWatch, create an `AWS.CloudWatch` service object. Create a JSON object for the parameters needed to create an alarm based on a metric, in this case the CPU utilization of an Amazon EC2 instance. The remaining parameters are set so the alarm triggers when the metric exceeds a threshold of 70 percent. Then call the `describeAlarms` method of the `AWS.CloudWatch` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -110,7 +110,7 @@ cw.putMetricAlarm(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node cw_putmetricalarm.js
 ```
 
@@ -121,7 +121,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `cw_deletealarms.js`. Be sure to configure the SDK as previously shown. To access CloudWatch, create an `AWS.CloudWatch` service object. Create a JSON object to hold the names of the alarms you want to delete. Then call the `deleteAlarms` method of the `AWS.CloudWatch` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -145,7 +145,7 @@ cw.deleteAlarms(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node cw_deletealarms.js
 ```
 

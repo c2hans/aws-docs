@@ -52,7 +52,7 @@ If you aren't seeing metrics published in the CloudWatch dashboard, make sure th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

@@ -8,7 +8,7 @@ A *policy* is a statement that either permits or forbids a *principal* to take o
 
 You can optionally assign a policy name to a policy. Policy names must be unique for all policies within the policy store and prefixed with `name/`. You can use a policy name in place of the policy ID in control plane operations that accept a `policyId` parameter. The following example uses a policy name to retrieve a policy with `GetPolicy`.
 
-```
+```bash
 $ aws verifiedpermissions get-policy \
     --policy-id name/example-policy \
     --policy-store-id PSEXAMPLEabcdefg111111

@@ -8,7 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 Creates a related item (comments, tasks, and contacts) and associates it with a case.
 
-There's a quota for the number of fields allowed in a Custom type related item. See [Connect Customer Cases quotas](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-service-limits.html#cases-quotas).
+There are quotas for the number of fields that you can add to a Custom type related item and for the number of service level agreements (SLAs) that you can attach to a case. See [Connect Customer Cases quotas](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-service-limits.html#cases-quotas).
 
  **Use cases**
 

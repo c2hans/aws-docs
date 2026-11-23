@@ -54,7 +54,7 @@ The following is an example of an endpoint policy for Quick. When attached to an
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -124,7 +124,7 @@ For more information, see [Controlling access to services with VPC endpoints](ht
 **Example: VPC endpoint policy for Quick API actions**
 The following is an example of an endpoint policy for Quick APIs. When attached to an endpoint, this policy grants access to all Quick actions for specific Quick actions and conditions.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

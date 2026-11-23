@@ -17,7 +17,7 @@ In the following trust policy, the service principals listed in the `Principal` 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

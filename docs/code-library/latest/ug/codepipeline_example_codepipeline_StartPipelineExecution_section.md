@@ -35,7 +35,7 @@ For more information, see [Start a pipeline manually](https://docs.aws.amazon.co
 **Tools for PowerShell V4**
 **Example 1: This example starts running the specified pipeline.**
 
-```
+```powershell
 Start-CPPipelineExecution -Name CodePipelineDemo
 ```
 +  For API details, see [StartPipelineExecution](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -43,7 +43,7 @@ Start-CPPipelineExecution -Name CodePipelineDemo
 **Tools for PowerShell V5**
 **Example 1: This example starts running the specified pipeline.**
 
-```
+```powershell
 Start-CPPipelineExecution -Name CodePipelineDemo
 ```
 +  For API details, see [StartPipelineExecution](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -144,7 +144,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of SearchRelatedItems.
 
-```
+```json
 {
   "maxResults": 25,
   "filters": [
@@ -157,7 +157,7 @@ This example illustrates one usage of SearchRelatedItems.
 }
 ```
 
-```
+```json
 {
   "nextToken": null,
   "relatedItems": [

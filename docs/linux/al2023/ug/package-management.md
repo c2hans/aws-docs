@@ -10,7 +10,7 @@ DNF is similar to YUM in its usage. Many DNF commands and command options are th
 
 For example, for the following AL2 `yum` commands:
 
-```
+```sh
 $ sudo yum install packagename
 $ sudo yum search packagename
 $ sudo yum remove packagename
@@ -18,7 +18,7 @@ $ sudo yum remove packagename
 
 In AL2023, they become the following commands:
 
-```
+```sh
 $ sudo dnf install packagename
 $ sudo dnf search packagename
 $ sudo dnf remove packagename

@@ -66,7 +66,7 @@ The following command example shows how to use the **list-workflows** command wi
 
 **Example: list all image workflows**
 
-```
+```sh
 aws imagebuilder list-workflows
 ```
 
@@ -107,7 +107,7 @@ When you run the **list-workflows** command, you can apply filters to streamline
 
 **Example: filter for build workflows**
 
-```
+```sh
 aws imagebuilder list-workflows --filters name="{{type}}",values="{{BUILD}}"
 ```
 
@@ -133,7 +133,7 @@ To get the details for a specific image workflow version, run the [get-workflow]
 
 **Example: get workflow details**
 
-```
+```sh
 aws imagebuilder get-workflow \
     --workflow-build-version-arn arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:workflow/build/{{example-build-workflow}}/{{1.0.0}}/{{1}}
 ```
@@ -147,19 +147,19 @@ When you run the [Get-EC2IBWorkflowList](https://docs.aws.amazon.com/powershell/
 
 The following example shows how to use the `Get-EC2IBWorkflowList` cmdlet without filters to list all of the Image Builder image workflow resources that you own or have access to:
 
-```
+```ps
 Get-EC2IBWorkflowList
 ```
 
 When you run the `Get-EC2IBWorkflowList` cmdlet, you can apply filters to streamline the results, as shown in the following example, which filters results by workflow type:
 
-```
+```ps
 Get-EC2IBWorkflowList -Filter @{Name="type";Values="{{BUILD}}"}
 ```
 
 To get the details for a specific image workflow version, run the [Get-EC2IBWorkflow](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBWorkflow.html) cmdlet:
 
-```
+```ps
 Get-EC2IBWorkflow `
     -WorkflowBuildVersionArn arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:workflow/build/{{example-build-workflow}}/{{1.0.0}}/{{1}}
 ```

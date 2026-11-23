@@ -87,10 +87,12 @@ You can import a custom agent's system prompt directly from a Markdown file in a
    + **Name** – A unique identifier for your agent. Use lowercase letters, numbers, and hyphens only (maximum 64 characters). Must not start or end with a hyphen.
    + **Repository URL** – A link to a single Markdown (`.md`) file containing the agent's system prompt. For example: `https://github.com/my-org/my-repo/blob/main/my-agent.md`. For GitHub Enterprise Server or GitHub Enterprise Cloud with data residency, use your instance URL instead. For example: `https://github.example.com/my-org/my-repo/blob/main/my-agent.md`. If the URL does not end in `.md`, a warning appears. The import fails if the file is not Markdown.
    + **Skills** (optional) – Select skills from your Agent Space to provide additional domain knowledge or capabilities to the agent.
+   + **Tools** (optional) – Select the MCP tools the agent can use.
+   + **Memory stores** (optional) – Select the memory stores the agent can access. The agent reads the stores you attach and can write to attached custom stores; managed stores are read-only.
 
 1. Choose **Import agent**.
 
-The repository file supplies only the system prompt. The name and skills come from the form.
+The repository file supplies only the system prompt. The name, skills, tools, and memory stores come from the form.
 
 After creation, you are redirected to the agent's detail page where you can view the configuration, run the agent, or set up triggers.
 
@@ -118,6 +120,8 @@ When you update the Markdown file in your repository, open the imported agent's 
 The [AWS DevOps Agent Tools repository](https://github.com/aws/tools-for-devops-agent) includes pre-built custom agent configurations for recurring operational tasks such as health reports, operational reviews, and service quota monitoring. The repository is maintained by the AWS DevOps Agent service team, and all contributions go through the same security review bar before being added. To browse what's available, see the [custom agents catalog](https://aws.github.io/tools-for-devops-agent/custom-agents/) on the GitHub website.
 
 To use a community custom agent, import it from the repository using the **Import from repository** flow on the **Agents** page. Copy the URL of the agent's Markdown file and paste it as the repository URL. For details, see [Importing a custom agent from a repository](#importing-a-custom-agent-from-a-repository).
+
+Some community custom agents are also available as templates in Chat. For example, to keep a memory store in sync with a Confluence page tree or space, see [Syncing a source with a custom agent](devops-agent-memories-custom-memories.html#syncing-a-source-with-a-custom-agent).
 
 ## Writing a system prompt
 <a name="writing-a-system-prompt"></a>
@@ -231,4 +235,4 @@ Remove the directives store from cluster-audit-agent.
 
 Attach only the stores that are relevant to the agent's purpose. As with tools, a focused set follows the principle of least privilege and keeps the agent's decisions consistent.
 
-For more information about memory, see [DevOps Agent Memories](about-aws-devops-agent-devops-agent-memories.md). For attachment limits, see [Quotas](quotas.md).
+For more information about memory, see [DevOps Agent Memories](about-aws-devops-agent-devops-agent-memories-index.md). For attachment limits, see [Quotas](quotas.md).

@@ -141,7 +141,7 @@ For each type of check, you can move the slider or input a threshold value from 
 
 Configure contextual grounding checks for your guardrail by sending a [CreateGuardrail](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateGuardrail.html) request. The request format is as follows:
 
-```
+```json
 POST /guardrails HTTP/1.1
 Content-type: application/json
 
@@ -183,7 +183,7 @@ Content-type: application/json
 
 To mark the grounding source and query within the input, use the following tags that work the same way as input tags. These tags are `amazon-bedrock-guardrails-groundingSource_xyz` and `amazon-bedrock-guardrails-query_xyz`, where `xyz` is the tag suffix. For example:
 
-```
+```json
 {
     "text": """
 <amazon-bedrock-guardrails-groundingSource_xyz>London is the capital of UK. Tokyo is the capital of Japan. </amazon-bedrock-guardrails-groundingSource_xyz>
@@ -206,7 +206,7 @@ The behavior of the remaining policies depends on whether you use `guardContent`
 
 To have grounding source or query content also evaluated by the remaining policies, nest the contextual grounding tag inside a `guardContent` tag:
 
-```
+```json
 <amazon-bedrock-guardrails-guardContent_xyz><amazon-bedrock-guardrails-groundingSource_xyz>London is the capital of UK. Tokyo is the capital of Japan.</amazon-bedrock-guardrails-groundingSource_xyz></amazon-bedrock-guardrails-guardContent_xyz>
 
 <amazon-bedrock-guardrails-query_xyz>What is the capital of Japan?</amazon-bedrock-guardrails-query_xyz>
@@ -219,7 +219,7 @@ In this example, the grounding source content is both used as the contextual gro
 
 To mark the grounding source and query for Converse APIs, use the qualifiers field in each guard content block. For example:
 
-```
+```json
 [
     {
         "role": "user",
@@ -262,7 +262,7 @@ If you want your grounding source or query content to also be evaluated by other
 
 Using contextual grounding check with `ApplyGuardrail` is similar to using it with the Converse APIs. To mark the grounding source and query for `ApplyGuardrail`, use the qualifiers field in each content block. However, because a model is not invoked with `ApplyGuardrail`, you must also provide an extra content block with the content to be guarded. This content block can be optionally qualified with guard\_content and is equivalent to the model response in the Invoke\* or Converse\* APIs. For example:
 
-```
+```json
 [
     {
         "text": {

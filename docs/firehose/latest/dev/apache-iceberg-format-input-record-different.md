@@ -132,7 +132,7 @@ For more information, see the [Route incoming records to a single Iceberg table]
 
 This Lambda function is a sample Python code that parses the incoming stream records and adds required fields to specify how the data should be written to specific tables. You can use this sample code to add the metadata section for routing information.
 
-```
+```python
 import json
 import base64
 

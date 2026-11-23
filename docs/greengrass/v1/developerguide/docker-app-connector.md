@@ -81,7 +81,7 @@ We recommend that you install a credentials store to secure the local copies of 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -118,7 +118,7 @@ Permissions in the group role can be assumed by all Lambda functions and connect
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -571,7 +571,7 @@ Valid pattern: `^[1-9]{1}[0-9]{0,3}$`
 
 The following CLI command creates a `ConnectorDefinition` with an initial version that contains the Greengrass Docker application deployment connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -611,7 +611,7 @@ This connector publishes the status of the `docker-compose up` command as output
 
 **Example output: Success**
 
-```
+```json
 {
   "status":"success",
   "GreengrassDockerApplicationDeploymentStatus":"Successfully triggered docker-compose up",
@@ -623,7 +623,7 @@ This connector publishes the status of the `docker-compose up` command as output
 
 **Example output: Failure**
 
-```
+```json
 {
   "status":"fail",
   "error_message":"{{description of error}}",
@@ -775,7 +775,7 @@ This procedure assumes that you have already created a Greengrass group and a Gr
 
 ****
 
-           ```
+           ```json
            {
              "Version":"2012-10-17",
              "Statement": [
@@ -861,7 +861,7 @@ The maximum size of a shadow document is 8 KB. For more information, see [AWS Io
 
 Include the following code snippet in the Docker image that you reference in your Compose file. This is the Greengrass device code. Also, add code in your Docker container that starts the Greengrass device inside the container. It can run as a separate process in the image or in a separate thread.
 
-```
+```python
 import os
 import sys
 import time

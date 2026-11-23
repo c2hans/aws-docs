@@ -46,7 +46,7 @@ The shared AWS credentials file will almost always have a profile named *default
 
 The `[default]` profile typically looks something like the following.
 
-```
+```ini
 [default]
 aws_access_key_id = AKIAIOSFODNN7EXAMPLE
 aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
@@ -57,7 +57,7 @@ aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 This example shows you how to create a profile and save it to the shared AWS credentials file programmatically. It uses the following classes of the [Amazon.Runtime.CredentialManagement](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Runtime/NRuntimeCredentialManagement.html) namespace: [CredentialProfileOptions](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Runtime/TCredentialProfileOptions.html), [CredentialProfile](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Runtime/TCredentialProfile.html), and [SharedCredentialsFile](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Runtime/TSharedCredentialsFile.html).
 
-```
+```csharp
 using Amazon.Runtime.CredentialManagement;
 ...
 
@@ -84,7 +84,7 @@ Code such as this generally shouldn't be in your application. If you include it 
 
 The following is the profile that's created by this example.
 
-```
+```ini
 [my_new_profile]
 aws_access_key_id=AKIAIOSFODNN7EXAMPLE
 aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
@@ -95,7 +95,7 @@ aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 This example shows you how to programmatically update the profile that was created earlier. It uses the following classes of the [Amazon.Runtime.CredentialManagement](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Runtime/NRuntimeCredentialManagement.html) namespace: [CredentialProfile](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Runtime/TCredentialProfile.html) and [SharedCredentialsFile](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Runtime/TSharedCredentialsFile.html). It also uses the [RegionEndpoint](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TRegionEndpoint.html) class of the [Amazon](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/N.html) namespace.
 
-```
+```csharp
 using Amazon.Runtime.CredentialManagement;
 ...
 
@@ -116,7 +116,7 @@ void AddRegion(string profileName, RegionEndpoint region)
 
 The following is the updated profile.
 
-```
+```ini
 [my_new_profile]
 aws_access_key_id=AKIAIOSFODNN7EXAMPLE
 aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY

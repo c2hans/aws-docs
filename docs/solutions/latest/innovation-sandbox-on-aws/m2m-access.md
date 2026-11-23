@@ -25,7 +25,7 @@ Deploy one AWS CloudFormation stack for each client into the **Hub account** (th
 
 Deploy the stack from the solution’s published CloudFormation template using the AWS CloudFormation console or the AWS CLI. The template is available at:
 
-```
+```text
 https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-M2mClient.template
 ```
 
@@ -61,13 +61,13 @@ The solution source distribution includes a generated AWS CLI model and installe
 
 After installation, you can call modeled solution operations with commands such as:
 
-```
+```bash
 aws isb list-lease-templates --profile isb-m2m-deploy-pipeline
 ```
 
 The installer requires Python 3 and AWS CLI version 2.13.0 or later. From the repository root:
 
-```
+```bash
 ./scripts/m2m/assume-m2m-role.sh \
   --client-stack InnovationSandbox-M2mClient-Admin-deploy-pipeline \
   --output profile

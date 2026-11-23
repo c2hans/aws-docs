@@ -36,7 +36,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-stack-patching-configuration-update-ex-min"></a>
 
-```
+```json
 {
   "StackId": "stack-12345678901234567"
 }
@@ -45,7 +45,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-stack-patching-configuration-update-ex-max"></a>
 
-```
+```json
 {
   "StackId": "stack-12345678901234567",
   "MaintenanceWindow": {

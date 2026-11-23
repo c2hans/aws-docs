@@ -36,7 +36,7 @@ To specify attribute actions when you use the [DynamoDBEncryptor](https://aws.gi
 
 The valid values are for the attribute actions are defined in the `EncryptionFlags` enumerated type. You can use `ENCRYPT` and `SIGN` together, use `SIGN` alone, or omit both. However, if you use `ENCRYPT` alone, the DynamoDB Encryption Client throws an error. You cannot encrypt an attribute that you don't sign.
 
-```
+```java
 ENCRYPT
 SIGN
 ```
@@ -48,7 +48,7 @@ If you specify a primary key in the encryption context and then specify `ENCRYPT
 
 For example, the following Java code creates an `actions` HashMap that encrypts and signs all attributes in the `record` item. The exceptions are the partition key and sort key attributes, which are signed but not encrypted, and the `test` attribute, which is not signed or encrypted.
 
-```
+```java
 final EnumSet<EncryptionFlags> signOnly = EnumSet.of(EncryptionFlags.SIGN);
 final EnumSet<EncryptionFlags> encryptAndSign = EnumSet.of(EncryptionFlags.ENCRYPT, EncryptionFlags.SIGN);
 final Map<String, Set<EncryptionFlags>> actions = new HashMap<>();
@@ -73,7 +73,7 @@ for (final String attributeName : record.keySet()) {
 
 Then, when you call the [encryptRecord](https://aws.github.io/aws-database-encryption-sdk-dynamodb/com/amazonaws/services/dynamodbv2/datamodeling/sdkv2/encryption/DynamoDBEncryptor.html#encryptRecord-java.util.Map-java.util.Map-com.amazonaws.services.dynamodbv2.datamodeling.sdkv2.encryption.EncryptionContext-) method of the `DynamoDBEncryptor`, specify the map as the value of the `attributeFlags` parameter. For example, this call to `encryptRecord` uses the `actions` map.
 
-```
+```java
 // Encrypt the plaintext record
 final Map<String, AttributeValue> encrypted_record = encryptor.encryptRecord(record, actions, encryptionContext);
 ```

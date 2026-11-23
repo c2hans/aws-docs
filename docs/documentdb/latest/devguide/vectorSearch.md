@@ -120,7 +120,7 @@ To view a code example for using the `$vectorSearch` command, choose the tab for
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function findSimilarProducts(queryVector) {
@@ -149,7 +149,7 @@ findSimilarProducts([0.1, 0.2, 0.3]);
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def find_similar_products(query_vector):

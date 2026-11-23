@@ -51,7 +51,7 @@ Retrieves (queries) aggregated usage data for an account.
 #### GetUsageTotalsResponse schema
 <a name="usage-response-body-getusagetotalsresponse-example"></a>
 
-```
+```json
 {
   "timeRange": enum,
   "usageTotals": [
@@ -67,7 +67,7 @@ Retrieves (queries) aggregated usage data for an account.
 #### ValidationException schema
 <a name="usage-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -76,7 +76,7 @@ Retrieves (queries) aggregated usage data for an account.
 #### ServiceQuotaExceededException schema
 <a name="usage-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -85,7 +85,7 @@ Retrieves (queries) aggregated usage data for an account.
 #### AccessDeniedException schema
 <a name="usage-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -94,7 +94,7 @@ Retrieves (queries) aggregated usage data for an account.
 #### ResourceNotFoundException schema
 <a name="usage-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -103,7 +103,7 @@ Retrieves (queries) aggregated usage data for an account.
 #### ConflictException schema
 <a name="usage-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -112,7 +112,7 @@ Retrieves (queries) aggregated usage data for an account.
 #### ThrottlingException schema
 <a name="usage-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -121,7 +121,7 @@ Retrieves (queries) aggregated usage data for an account.
 #### InternalServerException schema
 <a name="usage-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

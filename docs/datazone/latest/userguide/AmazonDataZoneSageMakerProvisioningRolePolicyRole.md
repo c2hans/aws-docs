@@ -13,7 +13,7 @@ The `AmazonDataZoneSageMakerProvisioningRolePolicyRole` role has the following i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -43,7 +43,7 @@ The `AmazonDataZoneSageMakerProvisioningRolePolicyRole` role has the following t
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

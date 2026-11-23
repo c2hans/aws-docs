@@ -152,7 +152,7 @@ You must select an Amazon VPC where your Amazon FSx (Windows) resides. You inclu
 + **Identity crawler**—Specify whether to turn on Amazon Kendra’s identity crawler. The identity crawler uses the access control list (ACL) information for your documents to filter search results based on the user or their group access to documents. If you have an ACL for your documents and choose to use your ACL, you can then also choose to turn on Amazon Kendra’s identity crawler to configure [user context filtering](https://docs.aws.amazon.com/kendra/latest/dg/user-context-filter.html#context-filter-user-incl-datasources) of search results. Otherwise, if identity crawler is turned off, all documents can be publicly searched. If you want to use access control for your documents and identity crawler is turned off, you can alternatively use the [PutPrincipalMapping](https://docs.aws.amazon.com/kendra/latest/APIReference/API_PutPrincipalMapping.html) API to upload user and group access information for user context filtering.
 + **Secret Amazon Resource Name (ARN)**—Provide the Amazon Resource Name (ARN) of an Secrets Manager secret that contains the authentication credentials for your Amazon FSx (Windows) account. The secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "username": "{{user@corp.example.com}}",
       "password": "{{password}}"

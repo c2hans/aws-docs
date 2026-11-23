@@ -81,7 +81,7 @@ This solution allows you to send test events using Lambda test events in the sam
 
 1. In the **Event JSON** window, input the following event (set test-type to either `ERROR` or `WARN`):
 
-   ```
+   ```json
    {
      "detail-type": "QM Lambda Test Event",
      "test-type": "WARN"

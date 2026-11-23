@@ -16,7 +16,7 @@ This solution is configured to retain the solution-created S3 buckets if you dec
 
 To delete the S3 bucket using AWS CLI, run the following command:
 
-```
+```bash
 $ aws s3 rb s3://<bucket-name> --force
 ```
 

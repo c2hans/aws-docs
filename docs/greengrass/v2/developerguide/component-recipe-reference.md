@@ -338,7 +338,7 @@ We recommend that you use only lowercase letters for each selection key to avoid
 
 **Example global lifecycle with top-level selection keys**
 
-```
+```yaml
 Lifecycle:
   key1:
     install:
@@ -354,7 +354,7 @@ Lifecycle:
 
 **Example global lifecycle with bottom-level selection keys**
 
-```
+```yaml
 Lifecycle:
   install:
     Script:
@@ -365,7 +365,7 @@ Lifecycle:
 
 **Example global lifecycle with multiple levels of selection keys**
 
-```
+```yaml
 Lifecycle:
   key1:
     install:
@@ -462,7 +462,7 @@ The following recipe describes a Hello World component that runs a Python script
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.HelloWorld",
@@ -498,7 +498,7 @@ The following recipe describes a Hello World component that runs a Python script
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.HelloWorld
@@ -531,7 +531,7 @@ The following recipe describes a component that installs Python. This component 
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.PythonRuntime",
@@ -555,7 +555,7 @@ The following recipe describes a component that installs Python. This component 
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.PythonRuntime
@@ -582,7 +582,7 @@ The following component recipe uses several recipe fields.
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.FooService",
@@ -650,7 +650,7 @@ The following component recipe uses several recipe fields.
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.FooService

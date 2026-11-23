@@ -87,13 +87,13 @@ When you reach the "Get ESP-IDF" instructions under **Next Steps**, stop, and th
 
    1. Navigate to the FreeRTOS download directory, and then run the following script to download and install the espressif toolchain for your platform.
 
-      ```
+      ```bash
       vendors/espressif/esp-idf/install.sh
       ```
 
    1. Add the ESP-IDF toolchain tools to your terminal's path with the following command.
 
-      ```
+      ```bash
       source vendors/espressif/esp-idf/export.sh
       ```
 
@@ -107,13 +107,13 @@ When you reach the "Get ESP-IDF" instructions under **Next Steps**, stop, and th
 
    1. Navigate to the FreeRTOS download directory, and then run the following script to download and install the Espressif toolchain for your platform.
 
-      ```
+      ```bash
       vendors/espressif/esp-idf/install.sh
       ```
 
    1. Add the ESP-IDF toolchain tools to your terminal's path with the following command.
 
-      ```
+      ```bash
       source vendors/espressif/esp-idf/export.sh
       ```
 
@@ -168,7 +168,7 @@ You can use Espressif's IDF utility (`idf.py`) to generate the build files, buil
 **Note**
 Some setups might require that you use the port option "`-p port-name`" with `idf.py` to specify the correct port, as in the following example.
 
-```
+```bash
 idf.py -p /dev/cu.usbserial-00101301B flash
 ```
 
@@ -179,20 +179,20 @@ idf.py -p /dev/cu.usbserial-00101301B flash
 1. In a command line window, enter the following command to add the ESP-IDF tools to your terminal's PATH:
 **Windows ("Command" app)**
 
-   ```
+   ```bash
    vendors\espressif\esp-idf\export.bat
    ```
 **Windows ("ESP-IDF 4.x CMD" app)**
 (This has already been done when you opened the app.)
 **Linux / macOS**
 
-   ```
+   ```bash
    source vendors/espressif/esp-idf/export.sh
    ```
 
 1. Configure cmake in the `build` directory and build the firmware image with the following command.
 
-   ```
+   ```bash
    idf.py -DVENDOR=espressif -DBOARD=esp32_ecc608a_devkitc -DCOMPILER=xtensa-esp32 build
    ```
 
@@ -221,30 +221,30 @@ idf.py -p /dev/cu.usbserial-00101301B flash
 
 1. Erase your development board's flash memory with the following command.
 
-   ```
+   ```bash
    idf.py erase_flash
    ```
 
 1. Use the `idf.py` script to flash the application binary to your board.
 
-   ```
+   ```bash
    idf.py flash
    ```
 
 1. Monitor the output from your board's serial port with the following command.
 
-   ```
+   ```bash
    idf.py monitor
    ```
 **Note**
 You can combine these commands as in the following example.
 
-     ```
+     ```bash
      idf.py erase_flash flash monitor
      ```
 For certain host machine setups, you must specify the port when you flash the board as in the following example.
 
-     ```
+     ```bash
      idf.py erase_flash flash monitor -p /dev/ttyUSB1
      ```
 
@@ -260,44 +260,44 @@ Besides using the `idf.py` script provided by the IDF SDK to build and run your 
 1. Run the following script to add the ESP-IDF tools to your shell's PATH.
 **Windows**
 
-   ```
+   ```bash
    vendors\espressif\esp-idf\export.bat
    ```
 **Linux / macOS**
 
-   ```
+   ```bash
    source vendors/espressif/esp-idf/export.sh
    ```
 
 1. Enter the following command to generate the build files.
 **With Unix Makefiles**
 
-   ```
+   ```bash
    cmake -DVENDOR=espressif -DBOARD=esp32_plus_ecc608a_devkitc -DCOMPILER=xtensa-esp32 -S . -B ./{{YOUR_BUILD_DIRECTORY}} -DAFR_ENABLE_ALL_MODULES=1 -DAFR_ENABLE_TESTS=0
    ```
 **With Ninja**
 
-   ```
+   ```bash
    cmake -DVENDOR=espressif -DBOARD=esp32_plus_ecc608a_devkitc -DCOMPILER=xtensa-esp32 -S . -B ./{{YOUR_BUILD_DIRECTORY}} -DAFR_ENABLE_ALL_MODULES=1 -DAFR_ENABLE_TESTS=0 -GNinja
    ```
 
 1. Erase the flash and then flash the board.
 **With Unix Makefiles**
 
-   ```
+   ```bash
    make -C ./{{YOUR_BUILD_DIRECTORY}} erase_flash
    ```
 
-   ```
+   ```bash
    make -C ./{{YOUR_BUILD_DIRECTORY}} flash
    ```
 **With Ninja**
 
-   ```
+   ```bash
    ninja -C ./{{YOUR_BUILD_DIRECTORY}} erase_flash
    ```
 
-   ```
+   ```bash
    ninja -C ./{{YOUR_BUILD_DIRECTORY}} flash
    ```
 

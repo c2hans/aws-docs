@@ -48,7 +48,7 @@ The following code example shows how to a Spring Boot app that generates videos 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Generate videos from text prompts using Amazon Bedrock and Nova-Reel.
 
-```
+```java
 import org.springframework.stereotype.Service;
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
 import software.amazon.awssdk.core.document.Document;
@@ -161,7 +161,7 @@ The following code example shows how to build a typical interaction between an a
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 The primary execution of the scenario flow. This scenario orchestrates the conversation between the user, the Amazon Bedrock Converse API, and a weather tool.
 
-```
+```java
 /*
  This demo illustrates a tool use scenario using Amazon Bedrock's Converse API and a weather tool.
  The program interacts with a foundation model on Amazon Bedrock to provide weather information based on user
@@ -466,7 +466,7 @@ public class BedrockScenario {
 ```
 The weather tool used by the demo. This file defines the tool specification and implements the logic to retrieve weather data using from the Open-Meteo API.
 
-```
+```java
 public class WeatherTool {
 
     private static final Logger logger = LoggerFactory.getLogger(WeatherTool.class);
@@ -589,7 +589,7 @@ public class WeatherTool {
 ```
 The Converse API action with a tool configuration.
 
-```
+```java
     /**
      * Sends an asynchronous converse request to the AI model.
      *
@@ -647,7 +647,7 @@ The following code example shows how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova using Bedrock's Converse API with the async Java client.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.bedrockruntime.BedrockRuntimeAsyncClient;
@@ -732,7 +732,7 @@ public class ConverseAsync {
 ```
 Send a text message to Amazon Nova, using Bedrock's Converse API.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.core.exception.SdkClientException;
 import software.amazon.awssdk.regions.Region;
@@ -823,7 +823,7 @@ The following code example shows how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.bedrockruntime.BedrockRuntimeAsyncClient;
@@ -927,7 +927,7 @@ The following code example shows how to build a typical interaction between an a
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 The primary execution of the scenario flow. This scenario orchestrates the conversation between the user, the Amazon Bedrock Converse API, and a weather tool.
 
-```
+```java
 /*
  This demo illustrates a tool use scenario using Amazon Bedrock's Converse API and a weather tool.
  The program interacts with a foundation model on Amazon Bedrock to provide weather information based on user
@@ -1232,7 +1232,7 @@ public class BedrockScenario {
 ```
 The weather tool used by the demo. This file defines the tool specification and implements the logic to retrieve weather data using from the Open-Meteo API.
 
-```
+```java
 public class WeatherTool {
 
     private static final Logger logger = LoggerFactory.getLogger(WeatherTool.class);
@@ -1355,7 +1355,7 @@ public class WeatherTool {
 ```
 The Converse API action with a tool configuration.
 
-```
+```java
     /**
      * Sends an asynchronous converse request to the AI model.
      *
@@ -1413,7 +1413,7 @@ The following code example shows how to invoke Amazon Nova Canvas on Amazon Bedr
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Create an image with Amazon Nova Canvas.
 
-```
+```java
 import org.json.JSONObject;
 import org.json.JSONPointer;
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -1522,7 +1522,7 @@ The following code example shows how to invoke Amazon Titan Image on Amazon Bedr
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Create an image with the Amazon Titan Image Generator.
 
-```
+```java
 // Create an image with the Amazon Titan Image Generator.
 
 import org.json.JSONObject;
@@ -1619,7 +1619,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Create your first embedding with Titan Text Embeddings V2.
 
-```
+```java
 // Generate and print an embedding with Amazon Titan Text Embeddings.
 
 import org.json.JSONObject;
@@ -1684,7 +1684,7 @@ public class InvokeModel {
 ```
 Invoke Titan Text Embeddings V2 configuring the number of dimensions and normalization.
 
-```
+```java
     /**
      * Invoke Amazon Titan Text Embeddings V2 with additional inference parameters.
      *
@@ -1746,7 +1746,7 @@ The following code example shows how to send a text message to Anthropic Claude,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API.
 
-```
+```java
 // Use the Converse API to send a text message to Anthropic Claude.
 
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -1808,7 +1808,7 @@ public class Converse {
 ```
 Send a text message to Anthropic Claude, using Bedrock's Converse API with the async Java client.
 
-```
+```java
 // Use the Converse API to send a text message to Anthropic Claude
 // with the async Java client.
 
@@ -1896,7 +1896,7 @@ The following code example shows how to send a text message to Anthropic Claude,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```java
 // Use the Converse API to send a text message to Anthropic Claude
 // and print the response stream.
 
@@ -1969,7 +1969,7 @@ The following code example shows how to use Anthropic Claude 3.7 Sonnet's reason
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Use Anthropic Claude 3.7 Sonnet's reasoning capability with the asynchronous Bedrock runtime client.
 
-```
+```java
 import com.example.bedrockruntime.models.anthropicClaude.lib.ReasoningResponse;
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.core.document.Document;
@@ -2064,7 +2064,7 @@ public class ReasoningAsync {
 ```
 Use Anthropic Claude 3.7 Sonnet's reasoning capability with the synchronous Bedrock runtime client.
 
-```
+```java
 import com.example.bedrockruntime.models.anthropicClaude.lib.ReasoningResponse;
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.core.document.Document;
@@ -2163,7 +2163,7 @@ The following code example shows how to use Anthropic Claude 3.7 Sonnet's reason
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Use Anthropic Claude 3.7 Sonnet's reasoning capability to generate streaming text responses.
 
-```
+```java
 import com.example.bedrockruntime.models.anthropicClaude.lib.ReasoningResponse;
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.core.document.Document;
@@ -2289,7 +2289,7 @@ The following code example shows how to send a text message to Meta Llama, using
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Send a text message to Meta Llama, using Bedrock's Converse API.
 
-```
+```java
 // Use the Converse API to send a text message to Meta Llama.
 
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -2351,7 +2351,7 @@ public class Converse {
 ```
 Send a text message to Meta Llama, using Bedrock's Converse API with the async Java client.
 
-```
+```java
 // Use the Converse API to send a text message to Meta Llama
 // with the async Java client.
 
@@ -2439,7 +2439,7 @@ The following code example shows how to send a text message to Meta Llama, using
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Send a text message to Meta Llama, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```java
 // Use the Converse API to send a text message to Meta Llama
 // and print the response stream.
 
@@ -2516,7 +2516,7 @@ The following code example shows how to send a text message to Mistral, using Be
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Send a text message to Mistral, using Bedrock's Converse API.
 
-```
+```java
 // Use the Converse API to send a text message to Mistral.
 
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -2579,7 +2579,7 @@ public class Converse {
 ```
 Send a text message to Mistral, using Bedrock's Converse API with the async Java client.
 
-```
+```java
 // Use the Converse API to send a text message to Mistral
 // with the async Java client.
 
@@ -2667,7 +2667,7 @@ The following code example shows how to send a text message to Mistral, using Be
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Send a text message to Mistral, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```java
 // Use the Converse API to send a text message to Mistral
 // and print the response stream.
 
@@ -2743,7 +2743,7 @@ The following code example shows how to invoke Stability.ai Stable Image Core on
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Create an image with Stable Diffusion.
 
-```
+```java
 // Create an image with Stability AI Stable Image Core.
 
 import org.json.JSONObject;

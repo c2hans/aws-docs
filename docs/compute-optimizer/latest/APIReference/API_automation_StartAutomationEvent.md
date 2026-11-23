@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
  Initiates a one-time, on-demand automation for the specified recommended action.
 
 **Note**
-Management accounts and delegated administrators can only initiate recommended actions for associated member accounts. You can associate a member account using `AssociateAccounts`.
+Management accounts and delegated administrators can initiate recommended actions for member accounts that are associated using `AssociateAccounts` or have an applicable organization enrollment configuration with `organizationRuleMode` set to `AnyAllowed`.
 
 ## Request Syntax
 <a name="API_automation_StartAutomationEvent_RequestSyntax"></a>
@@ -78,19 +78,19 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
  You do not have sufficient permissions to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ForbiddenException **
  You are not authorized to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** IdempotencyTokenInUseException **
  The specified client token is already in use.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** IdempotentParameterMismatchException **
 Exception thrown when the same client token is used with different parameters, indicating a mismatch in idempotent request parameters.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
  An internal error occurred while processing the request.
@@ -102,23 +102,23 @@ HTTP Status Code: 400
 
  ** OptInRequiredException **
  The account must be opted in to Compute Optimizer Automation before performing this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ResourceNotFoundException **
  The specified resource was not found.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ServiceQuotaExceededException **
  The request would exceed service quotas.
-HTTP Status Code: 400
+HTTP Status Code: 402
 
  ** ServiceUnavailableException **
  The service is temporarily unavailable.
-HTTP Status Code: 500
+HTTP Status Code: 503
 
  ** ThrottlingException **
  The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_automation_StartAutomationEvent_SeeAlso"></a>

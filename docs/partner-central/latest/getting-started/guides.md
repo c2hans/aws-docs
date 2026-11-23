@@ -42,7 +42,7 @@ To use **Guides**, your IAM role must have permission to view AWS Partner Centra
 + Attach an AWS managed policy for AWS Partner Central that includes access to Guides, such as `AWSPartnerCentralFullAccess`, `AWSPartnerCentralOpportunityManagement`, `AWSPartnerCentralChannelManagement`, `AWSPartnerCentralMarketingManagement`, or `PartnerCentralIncentiveBenefitManagement`. For more information, see [AWS managed policies for AWS Partner Central users](https://docs.aws.amazon.com/partner-central/latest/getting-started/managed-policies.html).
 + Create a customer managed policy that grants access only to AWS Partner Central content. The following example policy grants permission to search, list, and view AWS Partner Central content.
 
-  ```
+  ```json
   {
     "Version": "2012-10-17",
     "Statement": [

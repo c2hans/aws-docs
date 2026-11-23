@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-doc
 
 You can search the AWS Systems Manager (SSM) document store for SSM documents by using either free text search or a filter-based search. You can also favorite documents to help you find frequently used SSM documents. The following sections describes how to use these features.
 
+To find Automation runbooks by the clouds that they run on, use the **Cloud providers** filter or the `CloudProviders` filter key. For more information, see [Specifying cloud providers for SSM documents](documents-cloud-providers.md).
+
 ## Using free text search
 <a name="ssm-documents-searching-free-text"></a>
 

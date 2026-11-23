@@ -17,7 +17,7 @@ You can update your runtime by modifying parameters in the `.rpdk-config` and `t
 
    The following is an example `.rpdk-config` using the `java17` runtime:
 
-   ```
+   ```json
    {
        "typeName": "AWS::DirectoryService::SimpleAD",
        "language": "java",
@@ -41,7 +41,7 @@ You can update your runtime by modifying parameters in the `.rpdk-config` and `t
 
    The following is an example `template.yml` file using the `java17` runtime:
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: "2010-09-09"
    Transform: AWS::Serverless-2016-10-31
    Description: AWS SAM template for the AWS::DirectoryService::SimpleAD resource type
@@ -78,7 +78,7 @@ You can update your runtime by modifying parameters in the `.rpdk-config` and `t
 
    The following is an example `.rpdk-config` file using the `provided.al2` runtime:
 
-   ```
+   ```json
    {
        "typeName": "Example::GitHub::Repo",
        "language": "go",
@@ -100,7 +100,7 @@ You can update your runtime by modifying parameters in the `.rpdk-config` and `t
 
    The following is an example `template.yml` file using the `provided.al2` runtime:
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: "2010-09-09"
    Transform: AWS::Serverless-2016-10-31
    Description: AWS SAM template for the Example::GitHub::Repo resource type
@@ -148,7 +148,7 @@ You can update your runtime by modifying parameters in the `.rpdk-config` and `t
 
    The following is an example `.rpdk-config` file using the `python3.11` runtime:
 
-   ```
+   ```json
    {
        "artifact_type": "RESOURCE",
        "typeName": "AWS::EC2::Instance",
@@ -179,7 +179,7 @@ You can update your runtime by modifying parameters in the `.rpdk-config` and `t
 
    The following is an example `template.yml` file using the `python3.11` runtime:
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: "2010-09-09"
    Transform: AWS::Serverless-2016-10-31
    Description: AWS SAM template for the AWS::EC2::Instance resource type
@@ -212,7 +212,7 @@ You can update your runtime by modifying parameters in the `.rpdk-config` and `t
 
 1. In the `.rpdk-config` file, change the `runtime` parameter to `nodejs18.x`.
 
-   ```
+   ```json
    {
        "artifact_type": "RESOURCE",
        "typeName": "Dynatrace::Environment::Metric",
@@ -252,7 +252,7 @@ You can update your runtime by modifying parameters in the `.rpdk-config` and `t
 
    The following is an example `template.yml` file using the `nodejs18.x` runtime:
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: "2010-09-09"
    Transform: AWS::Serverless-2016-10-31
    Description: AWS SAM template for the Dynatrace::Environment::Metric resource type

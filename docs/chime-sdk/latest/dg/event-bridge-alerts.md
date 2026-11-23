@@ -8,7 +8,7 @@ The Amazon Chime SDK delivers EventBridge events when an error prevents it from 
 
 The following example shows a typical failure event.
 
-```
+```json
 {
   version: '0',
   id: '{{12345678-1234-1234-1234-111122223333}}',

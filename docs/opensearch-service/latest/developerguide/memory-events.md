@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 
 # Working with events in Amazon OpenSearch Memory
 
-In Amazon OpenSearch Memory, an *event* is content that your agent sends to a space: a set of conversation turns, a JSON object, or a document in Amazon S3. OpenSearch Memory stores the event as you sent it and extracts memories from it according to the space's strategies.
+In Amazon OpenSearch Memory, an *event* is content that your agent sends to a space: a set of conversation turns or a JSON object. OpenSearch Memory stores the event as you sent it and extracts memories from it according to the space's strategies.
 
 OpenSearch Memory provides the following event operations. Every one of them takes the ID of the space.
 + [CreateEvent](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_CreateEvent.html) – Send an event.
@@ -34,11 +34,11 @@ To send an event, call `CreateEvent` with the space ID, an `actorId`, and a `pay
 
 The following example sends a two-turn conversation. The request is in a file named `event.json`.
 
-```
+```bash
 aws opensearchmemory create-event --cli-input-json file://event.json
 ```
 
-```
+```json
 {
     "spaceId": "sp-02864597b164",
     "actorId": "user-123",
@@ -63,7 +63,7 @@ aws opensearchmemory create-event --cli-input-json file://event.json
 
 The response returns the event's ID, actor, session, and timestamp.
 
-```
+```json
 {
     "event": {
         "eventId": "ev-8f3a2c1d9b7e",
@@ -92,7 +92,7 @@ Conversation turns, in order. Set `payload.conversational.unified.source.object.
 
 A JSON object, for content that isn't a conversation, such as a tool result or a record your agent produced. Set `payload.structuredData.source.json` to the object. The object can be up to 1 MiB and nested up to 10 levels deep. Structured data is always JSON, so it has no content type.
 
-```
+```json
 {
     "spaceId": "sp-02864597b164",
     "actorId": "user-123",
@@ -112,34 +112,6 @@ A JSON object, for content that isn't a conversation, such as a tool result or a
 }
 ```
 
-### Blob
-<a name="memory-events-payloads-blob"></a>
-
-A document stored in Amazon S3. Set `payload.blob.contentType` to the document's type and `payload.blob.source.s3Location.uri` to the object's S3 URI. The following content types are supported:
-+ `application/pdf`
-+ `image/png`
-+ `image/jpeg`
-
-```
-{
-    "spaceId": "sp-02864597b164",
-    "actorId": "user-123",
-    "sessionId": "release-2026-11-02",
-    "payload": {
-        "blob": {
-            "contentType": "application/pdf",
-            "source": {
-                "s3Location": { "uri": "s3://amzn-s3-demo-bucket/runbooks/checkout.pdf" }
-            }
-        }
-    }
-}
-```
-
-OpenSearch Memory reads the object with your credentials when you call `CreateEvent`, so you need `s3:GetObject` permission on the object. If the object is encrypted with a customer managed key (SSE-KMS), you also need `kms:Decrypt` on that key. The bucket must be in the same Region as the space. OpenSearch Memory reads the document's content for extraction and search, but doesn't store a copy of the object in the event. `GetEvent` returns the S3 URI you supplied.
-
-A blob event has no turns. Its content is split into passages, which are extracted like conversation turns and can be found with `SearchEvents`. OpenSearch Memory extracts memories from a blob even when `infer` is `false`.
-
 ## Reading events
 <a name="memory-events-read"></a>
 
@@ -148,7 +120,7 @@ A blob event has no turns. Its content is split into passages, which are extract
 
 To read one event, including its payload, call `GetEvent` with the space ID and event ID.
 
-```
+```bash
 aws opensearchmemory get-event \
     --space-id sp-02864597b164 \
     --event-id ev-8f3a2c1d9b7e
@@ -156,7 +128,7 @@ aws opensearchmemory get-event \
 
 To read up to 10 events in one call, call `BatchGetEvent` with a list of event IDs. The response returns the events in the order you requested them. An event that couldn't be returned is listed in `errors` with a code that explains why, such as `RESOURCE_NOT_FOUND`, instead of failing the whole call.
 
-```
+```bash
 aws opensearchmemory batch-get-event \
     --space-id sp-02864597b164 \
     --event-ids ev-8f3a2c1d9b7e ev-1c2d3e4f5a6b
@@ -172,7 +144,7 @@ aws opensearchmemory batch-get-event \
 
 To list the events of one session in time order, call `ListEvents` with the space ID, `actorId`, and `sessionId`. The response returns each event's ID, timestamp, and metadata, but not its payload. Use `GetEvent` or `BatchGetEvent` to read the payloads you need.
 
-```
+```bash
 aws opensearchmemory list-events \
     --space-id sp-02864597b164 \
     --actor-id user-123 \
@@ -193,7 +165,7 @@ You can narrow the list with the following parameters:
 
 To find events by what they say rather than by when they happened, call `SearchEvents` with the space ID, an `actorId`, and a query. The query uses the same subset of the OpenSearch Query DSL as [SearchMemories](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_SearchMemories.html), with the fields `text` and `vector`. Each search covers one actor. To narrow it to specific conversations, add up to 10 `sessionIds`.
 
-```
+```bash
 aws opensearchmemory search-events \
     --space-id sp-02864597b164 \
     --actor-id user-123 \
@@ -213,7 +185,7 @@ You can't undo deleting an event.
 
 To delete an event, call `DeleteEvent` with the space ID and event ID. You can supply `actorId` and `sessionId` to check the event's owner first.
 
-```
+```bash
 aws opensearchmemory delete-event \
     --space-id sp-02864597b164 \
     --event-id ev-8f3a2c1d9b7e \
@@ -236,7 +208,7 @@ The following rules apply to metadata:
 
 In a query, refer to a tag as `metadata.key`. For example, the following `SearchMemories` query finds memories about recipes that have the tag `channel` set to `web`.
 
-```
+```json
 {
     "bool": {
         "must":   [ { "match": { "memory_text": "recipes" } } ],

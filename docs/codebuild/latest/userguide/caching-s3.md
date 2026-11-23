@@ -24,27 +24,27 @@ To learn more about the cache syntax in buildspec file, see [cache](build-spec-r
 
 A cache key can include shell commands and environment variables to make it unique, enabling automatic cache updates when the key changes. For example, you can define a key using the hash of the `package-lock.json` file. When the dependencies in that file change, the hash—and therefore the cache key—changes, triggering the automatic creation of a new cache.
 
-```
+```yaml
 cache:
     key: npm-key-$(codebuild-hash-files package-lock.json)
 ```
 
 CodeBuild will evaluate the expression `$(codebuild-hash-files package-lock.json)` to get the final key:
 
-```
+```yaml
 npm-key-abc123
 ```
 
 You can also define a cache key using environment variables, such as `CODEBUILD_RESOLVED_SOURCE_VERSION`. This ensures that whenever your source changes, a new key is generated, resulting in a new cache being saved automatically:
 
-```
+```yaml
 cache:
    key: npm-key-$CODEBUILD_RESOLVED_SOURCE_VERSION
 ```
 
 CodeBuild will evaluate the expression and get the final key:
 
-```
+```yaml
 npm-key-046e8b67481d53bdc86c3f6affdd5d1afae6d369
 ```
 
@@ -53,13 +53,13 @@ npm-key-046e8b67481d53bdc86c3f6affdd5d1afae6d369
 
 `codebuild-hash-files` is a CLI tool that calculates a SHA-256 hash for a set of files in the CodeBuild source directory using glob patterns:
 
-```
+```yaml
 codebuild-hash-files {{<glob-pattern-1>}} {{<glob-pattern-2>}} ...
 ```
 
 Here are some examples using `codebuild-hash-files`:
 
-```
+```yaml
 codebuild-hash-files package-lock.json
 codebuild-hash-files '**/*.md'
 ```
@@ -69,7 +69,7 @@ codebuild-hash-files '**/*.md'
 
 The cache version is a hash generated from the paths of the directories being cached. If two caches have different versions, they are treated as distinct caches during the matching process. For example, the following two caches are considered different because they reference different paths:
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -82,7 +82,7 @@ cache:
     - "pip-dependencies/**/*"
 ```
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -127,7 +127,7 @@ This ensures consistency and enables cache sharing across projects.
 
 You can use the `--cache` parameter in the AWS CLI to specify a cache namespace.
 
-```
+```bash
 --cache '{"type": "S3", "location": "{{your-s3-bucket}}", "cacheNamespace": "{{test-cache-namespace}}"}'
 ```
 
@@ -147,7 +147,7 @@ Here are several buildspec examples for common languages:
 
 If your project includes a `package-lock.json` file and uses `npm` to manage Node.js dependencies, the following example shows how to set up caching. By default, `npm` installs dependencies into the `node_modules` directory.
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -165,7 +165,7 @@ cache:
 
 If your project includes a `requirements.txt` file and uses pip to manage Python dependencies, the following example demonstrates how to configure caching. By default, pip installs packages into the system's `site-packages` directory.
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -180,7 +180,7 @@ cache:
 
 Additionally, you can install dependencies into a specific directory and configure caching for that directory.
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -198,7 +198,7 @@ cache:
 
 If your project includes a `Gemfile.lock` file and uses `Bundler` to manage gem dependencies, the following example demonstrates how to configure caching effectively.
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -216,7 +216,7 @@ cache:
 
 If your project includes a `go.sum` file and uses Go modules to manage dependencies, the following example demonstrates how to configure caching. By default, Go modules are downloaded and stored in the `${GOPATH}/pkg/mod` directory.
 
-```
+```yaml
 version: 0.2
 
 phases:

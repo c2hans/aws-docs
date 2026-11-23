@@ -121,7 +121,7 @@ To generate CloudTrail logs for these API operations, you must activate data eve
 
 You can also add identity pools event selectors to your trail with the following CLI command.
 
-```
+```sh
 aws cloudtrail put-event-selectors --trail-name {{<trail name>}} --advanced-event-selectors \
 "{\
    \"Name\": \"Cognito Selector\",\

@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Support#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Resolve a support case by caseId.
     /// </summary>
@@ -64,7 +64,7 @@ For more information, see [Case management](https://docs.aws.amazon.com/awssuppo
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/support#code-examples).
 
-```
+```java
     public static void resolveSupportCase(SupportClient supportClient, String caseId) {
         try {
             ResolveCaseRequest caseRequest = ResolveCaseRequest.builder()
@@ -88,7 +88,7 @@ For more information, see [Case management](https://docs.aws.amazon.com/awssuppo
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/support#code-examples).
 
-```
+```javascript
 import { ResolveCaseCommand } from "@aws-sdk/client-support";
 
 import { client } from "../libs/client.js";
@@ -116,7 +116,7 @@ const main = async () => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/support#code-examples).
 
-```
+```kotlin
 suspend fun resolveSupportCase(caseIdVal: String) {
     val caseRequest =
         ResolveCaseRequest {
@@ -136,7 +136,7 @@ suspend fun resolveSupportCase(caseIdVal: String) {
 **Tools for PowerShell V4**
 **Example 1: Returns the initial state of the specified case and the current state after the call to resolve it is completed.**
 
-```
+```powershell
 Resolve-ASACase -CaseId "case-12345678910-2013-c4c1d2bf33c5cf47"
 ```
 +  For API details, see [ResolveCase](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -144,7 +144,7 @@ Resolve-ASACase -CaseId "case-12345678910-2013-c4c1d2bf33c5cf47"
 **Tools for PowerShell V5**
 **Example 1: Returns the initial state of the specified case and the current state after the call to resolve it is completed.**
 
-```
+```powershell
 Resolve-ASACase -CaseId "case-12345678910-2013-c4c1d2bf33c5cf47"
 ```
 +  For API details, see [ResolveCase](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -155,7 +155,7 @@ Resolve-ASACase -CaseId "case-12345678910-2013-c4c1d2bf33c5cf47"
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/support#code-examples).
 
-```
+```python
 class SupportWrapper:
     """Encapsulates Support actions."""
 

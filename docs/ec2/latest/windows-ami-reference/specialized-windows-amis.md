@@ -36,7 +36,7 @@ AWS Windows AMIs are available in Chinese, Czech, Dutch, English, French, Germa
 
 Use the [get-parameters-by-path](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters-by-path.html) command to retrieve the latest English-language AWS Windows AMIs.
 
-```
+```bash
 aws ssm get-parameters-by-path \
     --path "/aws/service/ami-windows-latest" \
     --recursive \
@@ -49,7 +49,7 @@ aws ssm get-parameters-by-path \
 
 Use the [Get-SSMLatestEC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-SSMLatestEC2Image.html) cmdlet to retrieve the latest English-language AWS Windows AMIs.
 
-```
+```ps
 Get-SSMLatestEC2Image `
     -Path ami-windows-latest `
     -ImageName *Windows_Server-*{{English}}* |
@@ -68,7 +68,7 @@ Windows Server 2016 and 2019 AMIs include the EC2Launch v1 agent. Amazon also pr
 
 Use the [get-parameters-by-path](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters-by-path.html) command to retrieve the latest AWS Windows AMIs that include the EC2Launch v2 agent.
 
-```
+```bash
 aws ssm get-parameters-by-path \
     --path "/aws/service/ami-windows-latest" \
     --recursive \
@@ -81,7 +81,7 @@ aws ssm get-parameters-by-path \
 
 Use the [Get-SSMLatestEC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-SSMLatestEC2Image.html) cmdlet to retrieve the latest AWS Windows AMIs that include the EC2Launch v2 agent.
 
-```
+```ps
 Get-SSMLatestEC2Image `
     -Path ami-windows-latest `
     -ImageName EC2LaunchV2-Windows* |
@@ -100,7 +100,7 @@ Windows Server 2025 AMIs use UEFI boot mode by default, which is not supported o
 
 Use the [get-parameters-by-path](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters-by-path.html) command to retrieve the latest BIOS AWS Windows AMIs.
 
-```
+```bash
 aws ssm get-parameters-by-path \
     --path "/aws/service/ami-windows-latest" \
     --recursive \
@@ -113,7 +113,7 @@ aws ssm get-parameters-by-path \
 
 Use the [Get-SSMLatestEC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-SSMLatestEC2Image.html) cmdlet to retrieve the latest BIOS AWS Windows AMIs.
 
-```
+```ps
 Get-SSMLatestEC2Image `
     -Path ami-windows-latest `
     -ImageName BIOS-Windows* |

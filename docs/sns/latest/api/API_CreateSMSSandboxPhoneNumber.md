@@ -70,7 +70,7 @@ This example illustrates one usage of CreateSMSSandboxPhoneNumber.
 #### Sample Request
 <a name="API_CreateSMSSandboxPhoneNumber_Example_1_Request"></a>
 
-```
+```xml
 https://sns.us-west-2.amazonaws.com/?Action=CreateSMSSandboxPhoneNumber
 &PhoneNumber=%2B12065550100
 &LanguageCode=en-US
@@ -81,7 +81,7 @@ https://sns.us-west-2.amazonaws.com/?Action=CreateSMSSandboxPhoneNumber
 #### Sample Response
 <a name="API_CreateSMSSandboxPhoneNumber_Example_1_Response"></a>
 
-```
+```xml
 <CreateSMSSandboxPhoneNumberResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <CreateSMSSandboxPhoneNumberResult>
     </CreateSMSSandboxPhoneNumberResult>

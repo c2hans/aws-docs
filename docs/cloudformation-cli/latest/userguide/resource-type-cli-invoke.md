@@ -12,7 +12,7 @@ Performs contract tests on the specified handler of an extension type.
 ## Synopsis
 <a name="resource-type-cli-invoke-synopsis"></a>
 
-```
+```sh
 $ cfn invoke
     [--endpoint <value>]
     [--function-name <value>]

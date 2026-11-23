@@ -30,7 +30,7 @@ The following sample policy demonstrates the [least privilege](https://docs.aws.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -59,7 +59,7 @@ The role must have the following [trust relationship](https://docs.aws.amazon.co
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -86,7 +86,7 @@ Create an OpenSearch Serverless collection with the following settings. For inst
 
 Create a [data access policy](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-data-access.html) for the collection that grants the required permissions to the pipeline role. For example:
 
-```
+```json
 [
   {
     "Rules": [
@@ -125,7 +125,7 @@ During pipeline creation, OpenSearch Ingestion checks for the existence of the s
 
 For example:
 
-```
+```json
 {
    "Rules":[
       {

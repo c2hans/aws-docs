@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 
 **Example**
 
-```
+```json
 {
  "version":"0",
  "detail-type":"Registry Record State changed to Pending Approval",
@@ -32,7 +32,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 }
 ```
 
-```
+```json
 {
  "version":"0",
  "detail-type":"Registry Record State changed to Pending Approval",

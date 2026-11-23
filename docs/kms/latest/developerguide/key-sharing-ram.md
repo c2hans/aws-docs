@@ -138,13 +138,13 @@ You can use the `ListKeyPolicies` operation to find out whether a KMS key has an
 
 The following AWS CLI example uses the [list-key-policies](https://docs.aws.amazon.com/cli/latest/reference/kms/list-key-policies.html) command to get the names of the key policies of a shared KMS key. Replace `{{1234abcd-12ab-34cd-56ef-1234567890ab}}` with the key ID or key ARN of your KMS key.
 
-```
+```bash
 $ aws kms list-key-policies --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
 ```
 
 The output shows that the KMS key has a `default` key policy and an `AWS_RAM` key policy.
 
-```
+```json
 {
     "PolicyNames": [
         "AWS_RAM",
@@ -155,13 +155,13 @@ The output shows that the KMS key has a `default` key policy and an `AWS_RAM` ke
 
 The following AWS CLI example uses the [get-key-policy](https://docs.aws.amazon.com/cli/latest/reference/kms/get-key-policy.html) command to get the `AWS_RAM` key policy of a KMS key that is shared with one AWS account by using the default managed permission. The `--query Policy` and `--output text` parameters return only the key policy document, rather than a JSON object that contains it.
 
-```
+```bash
 $ aws kms get-key-policy --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} --policy-name AWS_RAM --query Policy --output text
 ```
 
 The output is similar to the following key policy document, which is formatted here for readability. AWS RAM sets the statement IDs (`Sid`), which are shown here as placeholders.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -271,7 +271,7 @@ The following AWS CLI example shares a KMS key with the AWS account `44445555666
 
 The example uses the ARN of the default AWS managed permission for KMS keys. To use a different managed permission, replace the value of `--permission-arns` with the ARN of that managed permission.
 
-```
+```bash
 $ aws ram create-resource-share \
     --name {{my-key-share}} \
     --resource-arns {{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}} \
@@ -318,7 +318,7 @@ Use the [disassociate-resource-share](https://docs.aws.amazon.com/cli/latest/ref
 
 The following AWS CLI example uses the `disassociate-resource-share` command to remove a KMS key from a resource share. Replace `{{resource-share-arn}}` with the ARN of your resource share, and `{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}` with the key ARN of the KMS key.
 
-```
+```bash
 $ aws ram disassociate-resource-share \
 --resource-share-arn {{resource-share-arn}} \
 --resource-arns {{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}
@@ -367,13 +367,13 @@ As a consumer, use the [list-keys](https://docs.aws.amazon.com/cli/latest/refere
 
 The following AWS CLI example lists the KMS keys that are shared with you.
 
-```
+```bash
 $ aws kms list-keys --resource-owners OTHER_ACCOUNTS_VIA_RAM
 ```
 
 The output lists two KMS keys that the AWS account `111122223333` shared with you. The key ARN of each KMS key contains the owner's account ID.
 
-```
+```json
 {
     "Keys": [
         {
@@ -407,7 +407,7 @@ Use the following preventative practices to avoid unintended sharing and access:
 When you create or change a resource share that includes a KMS key, AWS RAM writes the `AWS_RAM` key policy. It does this by calling `PutKeyPolicy` on your behalf. The principal that makes the AWS RAM request needs permission to call the AWS RAM operation, such as `ram:CreateResourceShare` or `ram:AssociateResourceShare`, and `kms:PutKeyPolicy` permission on the KMS key.
 To let a principal share a KMS key without letting it change the `default` key policy, allow `kms:PutKeyPolicy` only when the value of the [kms:PolicyName](conditions-kms.md#conditions-kms-policy-name) condition key is `AWS_RAM`. With the following key policy statement, the `kms-key-sharing-role` role can share the KMS key through AWS RAM. In a key policy, the `"*"` in the `Resource` element means this KMS key. To use this example, replace the account ID and role name with your own.
 
-```
+```json
 {
   "Sid": "AllowSharingThroughRAM",
   "Effect": "Allow",
@@ -429,7 +429,7 @@ Principals that have `kms:PutKeyPolicy` permission without a `kms:PolicyName` co
 Use service control policies (SCPs) to limit which principals can share KMS keys. The `ram:RequestedResourceType` condition key identifies requests that share KMS keys, whose resource type is `kms:Key`.
 For example, the following SCP restricts sharing of KMS keys to the `kms-key-sharing-role` role in one account. It uses the `StringEqualsIfExists` operator, so it also applies to requests that don't specify a resource type, such as adding principals to an existing resource share. To use this example, replace the account ID and role name with your own.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

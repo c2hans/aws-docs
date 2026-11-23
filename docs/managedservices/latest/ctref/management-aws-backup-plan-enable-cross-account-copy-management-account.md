@@ -146,14 +146,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-aws-backup-plan-enable-cross-account-copy-management-account-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-aws-backup-plan-enable-cross-account-copy-management-account-ex-max"></a>
 
-```
+```json
 {
     "DocumentName": "AWSManagedServices-HandleConfigureCrossAccountBackupInManagementAccount-Admin",
     "Region": "us-east-1",

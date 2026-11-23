@@ -18,25 +18,25 @@ If you want a device to continue authenticating with AWS IoT but you no longer w
 
    1. Stop the service.
 
-      ```
+      ```bash
       sudo systemctl stop greengrass.service
       ```
 
    1. Disable the service.
 
-      ```
+      ```bash
       sudo systemctl disable greengrass.service
       ```
 
    1. Remove the service.
 
-      ```
+      ```bash
       sudo rm /etc/systemd/system/greengrass.service
       ```
 
    1. Verify that the service is deleted.
 
-      ```
+      ```bash
       sudo systemctl daemon-reload && sudo systemctl reset-failed
       ```
 
@@ -48,19 +48,19 @@ You must run Command Prompt as an administrator to run these commands.
 
    1. Stop the service.
 
-      ```
+      ```cmd
       sc stop "greengrass"
       ```
 
    1. Disable the service.
 
-      ```
+      ```cmd
       sc config "greengrass" start=disabled
       ```
 
    1. Remove the service.
 
-      ```
+      ```cmd
       sc delete "greengrass"
       ```
 
@@ -74,25 +74,25 @@ You must run PowerShell as an administrator to run these commands.
 
    1. Stop the service.
 
-      ```
+      ```powershell
       Stop-Service -Name "greengrass"
       ```
 
    1. Disable the service.
 
-      ```
+      ```powershell
       Set-Service -Name "greengrass" -Status stopped -StartupType disabled
       ```
 
    1. Remove the service.
       + For PowerShell 6.0 and later:
 
-        ```
+        ```powershell
         Remove-Service -Name "greengrass" -Confirm:$false -Verbose
         ```
       + For PowerShell versions earlier than 6.0 :
 
-        ```
+        ```powershell
         Get-Item HKLM:\SYSTEM\CurrentControlSet\Services\greengrass | Remove-Item -Force -Verbose
         ```
 
@@ -105,21 +105,21 @@ You must run PowerShell as an administrator to run these commands.
 ------
 #### [ Linux ]
 
-   ```
+   ```bash
    sudo rm -rf {{/greengrass/v2}}
    ```
 
 ------
 #### [ Windows (Command Prompt) ]
 
-   ```
+   ```cmd
    rmdir /s /q {{C:\greengrass\v2}}
    ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-   ```
+   ```ps
    cmd.exe /c "rmdir /s /q {{C:\greengrass\v2}}"
    ```
 
@@ -139,6 +139,6 @@ You must run PowerShell as an administrator to run these commands.
      1. In the confirmation modal, choose **Delete**.
    + To delete a core device with the AWS Command Line Interface, use the [DeleteCoreDevice](https://docs.aws.amazon.com/greengrass/v2/APIReference/API_DeleteCoreDevice.html) operation. Run the following command, and replace {{MyGreengrassCore}} with the name of the core device.
 
-     ```
+     ```bash
      aws greengrassv2 delete-core-device --core-device-thing-name {{MyGreengrassCore}}
      ```

@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_regio
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -25,7 +25,7 @@ The following example shows two variations of how you can work with the `listTab
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbAsyncClient;
 import software.amazon.awssdk.services.dynamodb.model.ListTablesRequest;
@@ -40,7 +40,7 @@ import java.util.concurrent.CompletableFuture;
 ------
 #### [ whenComplete() variation ]
 
-```
+```java
 public class DynamoDbAsyncListTables {
 
     public static void main(String[] args) {
@@ -76,7 +76,7 @@ public class DynamoDbAsyncListTables {
 ------
 #### [ handle() variation ]
 
-```
+```java
 public class DynamoDbAsyncListTables {
 
     public static void main(String[] args) {
@@ -119,7 +119,7 @@ The following example uploads a file to Amazon S3 asynchronously by using the as
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.core.async.AsyncRequestBody;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3AsyncClient;
@@ -131,7 +131,7 @@ import java.util.concurrent.CompletableFuture;
 
  **Code**
 
-```
+```java
 /**
  * To run this AWS code example, ensure that you have setup your development environment, including your AWS credentials.
  *
@@ -198,7 +198,7 @@ The following example gets a file from Amazon S3 by using the asynchronous form 
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.core.async.AsyncResponseTransformer;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3AsyncClient;
@@ -210,7 +210,7 @@ import java.util.concurrent.CompletableFuture;
 
  **Code**
 
-```
+```java
 /**
  * To run this AWS code example, ensure that you have setup your development environment, including your AWS credentials.
  *
@@ -279,7 +279,7 @@ You can specify a specific JDK implementation of `ExecutorService` when you buil
 
  **Code**
 
-```
+```java
 S3AsyncClient clientThread = S3AsyncClient.builder()
   .asyncConfiguration(
     b -> b.advancedOption(SdkAdvancedAsyncClientOption
@@ -292,7 +292,7 @@ S3AsyncClient clientThread = S3AsyncClient.builder()
 
 To optimize performance, you can manage your own thread pool executor, and include it when you configure your client.
 
-```
+```java
 ThreadPoolExecutor executor = new ThreadPoolExecutor(50, 50,
     10, TimeUnit.SECONDS,
     new LinkedBlockingQueue<>({{<custom_value>}}),

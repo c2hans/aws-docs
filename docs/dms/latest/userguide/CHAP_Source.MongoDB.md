@@ -433,6 +433,7 @@ The following are limitations when using MongoDB as a source for AWS DMS:
   + Timeseries collection migration
 **Note**
 A timeseries collection migrated in the full-load phase will be converted to a normal collection in Amazon DocumentDB, because DocumentDB doesn't support timeseries collections.
++ AWS DMS does not support MongoDB Atlas as a source. This configuration has not been tested or certified, so some features might not work as expected.
 
 ## Endpoint configuration settings when using MongoDB as a source for AWS DMS
 <a name="CHAP_Source.MongoDB.Configuration"></a>

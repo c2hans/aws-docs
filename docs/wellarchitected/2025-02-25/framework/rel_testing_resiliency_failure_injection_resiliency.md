@@ -51,6 +51,8 @@ Chaos engineering is the discipline of experimenting on a system in order to bui
 
 ![Diagram showing AWS Fault Injection Service integrates with AWS resources to allow you to run fault injection experiments for your workloads.](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/fault-injection-simulator.png)
 
+*AWS Fault Injection Service integrates with AWS resources to allow you to run fault injection experiments for your workloads.*
+
 There are also several third-party options for fault injection experiments. These include open-source tools such as [Chaos Toolkit](https://chaostoolkit.org/), [Chaos Mesh](https://chaos-mesh.org/), and [Litmus Chaos](https://litmuschaos.io/), as well as commercial options like Gremlin. To expand the scope of faults that can be injected on AWS, AWS FIS [integrates with Chaos Mesh and Litmus Chaos](https://aws.amazon.com/about-aws/whats-new/2022/07/aws-fault-injection-simulator-supports-chaosmesh-litmus-experiments/), allowing you to coordinate fault injection workflows among multiple tools. For example, you can run a stress test on a pod’s CPU using Chaos Mesh or Litmus faults while terminating a randomly selected percentage of cluster nodes using AWS FIS fault actions.
 
 ## Implementation steps
@@ -74,6 +76,7 @@ There are also several third-party options for fault injection experiments. Thes
 
 1.  For each experiment that you perform, follow the chaos engineering and continuous resilience flywheel in the following figure.
 ![Diagram of the chaos engineering and continuous resilience flywheel, showing the Improvement, Steady state, Hypothesis, Run experiment, and Verify phases.](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/chaos-engineering-flywheel.png)
+   *Chaos engineering and continuous resilience flywheel, using the scientific method by Adrian Hornsby.*
 
    1.  Define steady state as some measurable output of a workload that indicates normal behavior.
 

@@ -74,7 +74,7 @@ Enables CORS by returning correct headers.
 #### POST schema
 <a name="readinesschecks-request-body-post-example"></a>
 
-```
+```json
 {
   "readinessCheckName": "string",
   "resourceSetName": "string",
@@ -89,7 +89,7 @@ Enables CORS by returning correct headers.
 #### ListReadinessChecksResult schema
 <a name="readinesschecks-response-body-listreadinesschecksresult-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "readinessChecks": [
@@ -107,7 +107,7 @@ Enables CORS by returning correct headers.
 #### ReadinessCheckOutput schema
 <a name="readinesschecks-response-body-readinesscheckoutput-example"></a>
 
-```
+```json
 {
   "resourceSet": "string",
   "readinessCheckName": "string",

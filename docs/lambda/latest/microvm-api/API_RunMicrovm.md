@@ -25,6 +25,7 @@ Content-type: application/json
    "imageIdentifier": "{{string}}",
    "imageVersion": "{{string}}",
    "ingressNetworkConnectors": [ "{{string}}" ],
+   "kmsKeyIdentifier": "{{string}}",
    "logging": { ... },
    "maximumDurationInSeconds": {{number}},
    "runHookPayload": "{{string}}"
@@ -86,6 +87,14 @@ Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
+ ** [kmsKeyIdentifier](#API_RunMicrovm_RequestSyntax) **   <a name="lambdamicrovm-RunMicrovm-request-kmsKeyIdentifier"></a>
+The customer managed AWS Key Management Service (AWS KMS) key that encrypts your MicroVM configuration at rest. To use this operation, you must have permission to use the key. Specify the key ARN or the alias ARN.
+If you don't specify a key, your MicroVM uses an AWS owned key.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `(arn:aws[a-z-]*:kms:[a-z0-9-]+:[0-9]{12}:(key|alias)/[a-zA-Z0-9:/_-]+|alias/[a-zA-Z0-9:/_-]+|[a-zA-Z0-9-]+)`
+Required: No
+
  ** [logging](#API_RunMicrovm_RequestSyntax) **   <a name="lambdamicrovm-RunMicrovm-request-logging"></a>
 The logging configuration for this MicroVM instance. Specify {"cloudWatch": {"logGroup": "..."}} to stream application logs to a custom CloudWatch log group, or {"disabled": {}} to turn off logging.
 Type: [Logging](API_Logging.md) object
@@ -99,7 +108,7 @@ Valid Range: Minimum value of 1. Maximum value of 28800.
 Required: No
 
  ** [runHookPayload](#API_RunMicrovm_RequestSyntax) **   <a name="lambdamicrovm-RunMicrovm-request-runHookPayload"></a>
-Per-MicroVM initialization data delivered as the request body of the /run lifecycle hook. Use to pass tenant-specific configuration such as session IDs or secret references. Maximum: 16,384 bytes.
+Per-MicroVM initialization data delivered as the request body of the /run lifecycle hook. Use to pass tenant-specific configuration such as session IDs or secret references.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 4096.
 Required: No
@@ -123,6 +132,7 @@ Content-type: application/json
    "imageArn": "string",
    "imageVersion": "string",
    "ingressNetworkConnectors": [ "string" ],
+   "kmsKeyIdentifier": "string",
    "maximumDurationInSeconds": number,
    "microvmId": "string",
    "startedAt": number,
@@ -177,6 +187,12 @@ The list of ingress network connectors configured for the MicroVM.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
+
+ ** [kmsKeyIdentifier](#API_RunMicrovm_ResponseSyntax) **   <a name="lambdamicrovm-RunMicrovm-response-kmsKeyIdentifier"></a>
+The customer managed AWS Key Management Service (AWS KMS) key that encrypts your MicroVM configuration at rest. If you don't specify a key, your MicroVM uses an AWS owned key.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `(arn:aws[a-z-]*:kms:[a-z0-9-]+:[0-9]{12}:(key|alias)/[a-zA-Z0-9:/_-]+|alias/[a-zA-Z0-9:/_-]+|[a-zA-Z0-9-]+)`
 
  ** [maximumDurationInSeconds](#API_RunMicrovm_ResponseSyntax) **   <a name="lambdamicrovm-RunMicrovm-response-maximumDurationInSeconds"></a>
 The maximum duration in seconds that the MicroVM can exist.

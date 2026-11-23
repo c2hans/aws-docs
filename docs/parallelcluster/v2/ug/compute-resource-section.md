@@ -10,7 +10,7 @@ Defines configuration settings for a compute resource. [`[compute_resource]` sec
 
 The format is `[compute_resource {{<compute-resource-name>}}]`. {{compute-resource-name}} must start with a letter, contain no more than 30 characters, and only contain letters, numbers, hyphens (-), and underscores (\_).
 
-```
+```ini
 [compute_resource cr1]
 instance_type = c5.xlarge
 min_count = 0
@@ -36,7 +36,7 @@ Support for the [`[compute_resource]` section](compute-resource-section.md) was 
 
 Defaults to `0`.
 
-```
+```ini
 initial_count = 2
 ```
 
@@ -47,7 +47,7 @@ initial_count = 2
 
 **(Required)** Defines the Amazon EC2 instance type that's used for this compute resource. The architecture of the instance type must be the same as the architecture used for the [`master_instance_type`](cluster-definition.md#master-instance-type) setting. The `instance_type` setting must be unique for each [`[compute_resource]` section](compute-resource-section.md) referenced by a [`[queue]` section](queue-section.md). This setting replaces the [`compute_instance_type`](cluster-definition.md#compute-instance-type) setting.
 
-```
+```ini
 instance_type = t2.micro
 ```
 
@@ -60,7 +60,7 @@ instance_type = t2.micro
 
 Defaults to `10`.
 
-```
+```ini
 max_count = 10
 ```
 
@@ -76,7 +76,7 @@ The update policy did not support changing the `max_count` setting until the com
 
 Defaults to `0`.
 
-```
+```ini
 min_count = 1
 ```
 
@@ -94,7 +94,7 @@ If you don't specify a value, you're charged the Spot price, capped at the On-De
 
 For assistance finding a Spot Instance that meets your needs, see the [Spot Instance advisor](https://aws.amazon.com/ec2/spot/instance-advisor/).
 
-```
+```ini
 spot_price = 1.50
 ```
 

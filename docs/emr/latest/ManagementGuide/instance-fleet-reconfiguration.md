@@ -162,7 +162,7 @@ In the following examples, replace **j-2AL4XXXXXX5T9** with your cluster ID, and
 
 The following code snippet provides a new configuration for an instance fleet using the AWS SDK for Java.
 
-```
+```java
 AWSCredentials credentials = new BasicAWSCredentials("access-key", "secret-key");
 AmazonElasticMapReduce emr = new AmazonElasticMapReduceClient(credentials);
 

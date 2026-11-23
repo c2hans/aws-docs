@@ -134,7 +134,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-route-53-resolver-associate-vpc-with-resolver-rule-ex-min"></a>
 
-```
+```json
 {
     "DocumentName": "AWSManagedServices-AssociateVPCWithResolverRule",
     "Region": "us-east-1",
@@ -148,7 +148,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-route-53-resolver-associate-vpc-with-resolver-rule-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-AssociateVPCWithResolverRule",
   "Region": "us-east-1",

@@ -23,7 +23,7 @@ To disable Amazon Q in your domain, you must update your permissions to use deny
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

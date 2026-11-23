@@ -22,7 +22,7 @@ The first role in the chain must be a role attached to the cluster. The first ro
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -47,7 +47,7 @@ A role that passes to another role must establish a trust relationship with the 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -71,7 +71,7 @@ The following trust policy establishes a trust relationship with the owner of `R
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

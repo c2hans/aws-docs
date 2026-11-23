@@ -51,7 +51,7 @@ For more information, see [Developing Producers Using the Amazon Kinesis Data St
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/kinesis#code-examples).
 
-```
+```javascript
 import { PutRecordsCommand, KinesisClient } from "@aws-sdk/client-kinesis";
 
 /**
@@ -116,7 +116,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
     def put_records(self, stream_name, records):
         """
         Writes multiple data records into a Kinesis data stream in a single call.

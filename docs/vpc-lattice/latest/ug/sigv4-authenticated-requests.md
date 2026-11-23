@@ -24,7 +24,7 @@ This example sends the signed requests over a secure connection to a service reg
 
 To install the `botocore` and `awscrt` packages, use the following command. For more information, see [AWS CRT Python](https://pypi.org/project/awscrt/).
 
-```
+```shell
 pip install botocore awscrt
 ```
 
@@ -35,7 +35,7 @@ In the following example, replace the placeholder values with your own values.
 ------
 #### [ SIGv4 ]
 
-```
+```python
 from botocore import crt
 import requests
 from botocore.awsrequest import AWSRequest
@@ -60,7 +60,7 @@ if __name__ == '__main__':
 ------
 #### [ SIGv4A ]
 
-```
+```python
 from botocore import crt
 import requests
 from botocore.awsrequest import AWSRequest
@@ -92,7 +92,7 @@ This example shows how you can perform request signing by using custom intercept
 ------
 #### [ SIGv4 ]
 
-```
+```java
 package com.example;
 
 import software.amazon.awssdk.http.auth.aws.signer.AwsV4HttpSigner;
@@ -183,7 +183,7 @@ public class sigv4 {
 
 This example requires an additional dependency on `software.amazon.awssdk:http-auth-aws-crt`.
 
-```
+```java
 package com.example;
 
 import software.amazon.awssdk.http.auth.aws.signer.AwsV4aHttpSigner;
@@ -288,7 +288,7 @@ If the `AWS_REGION` environment variable exists, the example uses the Region spe
 ------
 #### [ SIGv4 ]
 
-```
+```java
 const https = require('https')
 const crt = require('aws-crt')
 const { HttpRequest } = require('aws-crt/dist/native/http')
@@ -351,7 +351,7 @@ sigV4Sign('GET', process.argv[2], 'vpc-lattice-svcs', algorithm).then(
 ------
 #### [ SIGv4A ]
 
-```
+```java
 const https = require('https')
 const crt = require('aws-crt')
 const { HttpRequest } = require('aws-crt/dist/native/http')
@@ -421,7 +421,7 @@ This example uses the [Smithy code generators for Go](https://github.com/aws/smi
 ------
 #### [ SIGv4 ]
 
-```
+```go
 package main
 
 import (
@@ -542,7 +542,7 @@ func main() {
 ------
 #### [ SIGv4A ]
 
-```
+```go
 package main
 
 import (
@@ -663,7 +663,7 @@ func main() {
 
 This example uses the [AWS SDK for the Go programming language](https://github.com/aws/aws-sdk-go-v2/) to handle request signing for GRPC requests. This can be used with the [echo server](https://github.com/grpc/grpc-go/tree/master/examples/features/proto/echo) from the GRPC sample code repository.
 
-```
+```go
 package main
 
 import (

@@ -24,7 +24,7 @@ The following table describes each test layer, what it validates, and where it r
 
 Use a local fallback for `AWS_LAMBDA_HTTP_ENDPOINT`, as shown in the [Minimal Express application](web-functions-samples.md#web-functions-samples-express). You can also set the variable explicitly to test the same startup path used by Lambda:
 
-```
+```bash
 AWS_LAMBDA_HTTP_ENDPOINT=127.0.0.1:3000 node index.js
 ```
 
@@ -47,7 +47,7 @@ Run concurrent requests during local integration tests. Check for global request
 
 Web Functions run on Arm64. When a package contains native dependencies, build and test those dependencies for Linux Arm64 rather than reusing artifacts from an x86-64 development computer. For example, you can install production dependencies in an Arm64 container:
 
-```
+```bash
 docker run --rm --platform linux/arm64 \
     --volume "$PWD":/app \
     --workdir /app \

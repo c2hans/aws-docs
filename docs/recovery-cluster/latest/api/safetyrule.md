@@ -71,7 +71,7 @@ Update a safety rule (an assertion rule or gating rule). You can only update the
 #### POST schema
 <a name="safetyrule-request-body-post-example"></a>
 
-```
+```json
 {
   "AssertionRule": {
     "ControlPanelArn": "string",
@@ -111,7 +111,7 @@ Update a safety rule (an assertion rule or gating rule). You can only update the
 #### PUT schema
 <a name="safetyrule-request-body-put-example"></a>
 
-```
+```json
 {
   "GatingRuleUpdate": {
     "SafetyRuleArn": "string",
@@ -132,7 +132,7 @@ Update a safety rule (an assertion rule or gating rule). You can only update the
 #### CreateSafetyRuleResponse schema
 <a name="safetyrule-response-body-createsafetyruleresponse-example"></a>
 
-```
+```json
 {
   "AssertionRule": {
     "Status": enum,
@@ -175,7 +175,7 @@ Update a safety rule (an assertion rule or gating rule). You can only update the
 #### UpdateSafetyRuleResponse schema
 <a name="safetyrule-response-body-updatesafetyruleresponse-example"></a>
 
-```
+```json
 {
   "AssertionRule": {
     "Status": enum,
@@ -218,7 +218,7 @@ Update a safety rule (an assertion rule or gating rule). You can only update the
 #### ValidationException schema
 <a name="safetyrule-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -227,7 +227,7 @@ Update a safety rule (an assertion rule or gating rule). You can only update the
 #### ResourceNotFoundException schema
 <a name="safetyrule-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -236,7 +236,7 @@ Update a safety rule (an assertion rule or gating rule). You can only update the
 #### InternalServerException schema
 <a name="safetyrule-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

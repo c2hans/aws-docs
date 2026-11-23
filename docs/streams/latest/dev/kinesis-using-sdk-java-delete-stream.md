@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kinesis-using-sdk-jav
 
 You can delete a stream with the Kinesis Data Streams console, or programmatically. To delete a stream programmatically, use `DeleteStreamRequest`, as shown in the following code.
 
-```
+```java
 DeleteStreamRequest deleteStreamRequest = new DeleteStreamRequest();
 deleteStreamRequest.setStreamName(myStreamName);
 client.deleteStream(deleteStreamRequest);

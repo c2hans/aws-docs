@@ -78,7 +78,7 @@ These are in addition to the following actions:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -111,7 +111,7 @@ These are in addition to the following actions:
 
  AWS CloudTrail captures all API calls *events*. This includes API calls whenever EventBridge Scheduler uses your customer managed key to decrypt your data. The following example shows a CloudTrail event entry that demonstrates EventBridge Scheduler using the `kms:Decrypt` action using a customer managed key.
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {

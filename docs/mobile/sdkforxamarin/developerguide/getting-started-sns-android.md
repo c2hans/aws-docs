@@ -86,7 +86,7 @@ Follow Step 4 of the instructions in [Setting Up the AWS Mobile SDK for .NET and
 ## Create an SNS client
 <a name="create-an-sns-client"></a>
 
-```
+```csharp
 var snsClient = new AmazonSimpleNotificationServiceClient(credentials, region);
 ```
 
@@ -95,7 +95,7 @@ var snsClient = new AmazonSimpleNotificationServiceClient(credentials, region);
 
 In order to register for remote notifications on Android, you will need to create a BroadcastReceiver which can receive Google Cloud messages. Change the package name below where prompted to do so:
 
-```
+```csharp
 [BroadcastReceiver(Permission = "com.google.android.c2dm.permission.SEND")]
 [IntentFilter(new string[] {
       "com.google.android.c2dm.intent.RECEIVE"
@@ -134,7 +134,7 @@ public class GCMBootReceiver: BroadcastReceiver {
 
 Below is the service that receives the push notification from the BroadcastReceiver and displays the notification on the device’s notification bar:
 
-```
+```csharp
 [Service]
  public class GCMIntentService: IntentService {
   static PowerManager.WakeLock sWakeLock;

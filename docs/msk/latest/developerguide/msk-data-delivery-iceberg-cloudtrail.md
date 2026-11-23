@@ -8,7 +8,7 @@ All Channel API calls are logged in AWS CloudTrail: `CreateChannel`, `DescribeCh
 
 The following is an example CloudTrail event.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "eventSource": "kafka.amazonaws.com",

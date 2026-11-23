@@ -21,7 +21,7 @@ To get the template, you download it from the console. You can edit the template
 
 Alternatively, you can copy the JSON template from the following code example.
 
-```
+```json
 {
     "openapi": "3.0.0",
     "info": {

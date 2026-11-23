@@ -84,7 +84,7 @@ For preview dialing mode, a contact is enqueued only when there is a [Transfer t
 Preview dialing mode does not support [agent whisper flow](create-contact-flow.md#contact-flow-types), however the [outbound whisper flow](create-contact-flow.md#contact-flow-types) can play the intended whisper to the agent.
 For preview dialing mode, please adjust contact flow to use profile id as the default search key in the agent workspace. For more information, see [ Use contact attributes to autopopulate customer profiles](https://docs.aws.amazon.com/connect/latest/adminguide/auto-pop-customer-profile.html).
 
-  ```
+  ```json
   {
     "profileSearchKey": "_profileId",
     "profileSearchValue": "$.Attributes.connect_customer-profile_profile-id"

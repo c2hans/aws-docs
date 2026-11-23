@@ -34,7 +34,7 @@ Changes to the service reference information may take up to 24 hours to be refle
 
    The following example shows a partial list of services and URLs for their respective reference information:
 
-   ```
+   ```JSON
    [
        {
            "service": "s3",
@@ -52,7 +52,7 @@ Changes to the service reference information may take up to 24 hours to be refle
 
    The following example shows a partial list of global condition keys:
 
-   ```
+   ```JSON
    [ {
      "Name" : "aws:AssumedRoot",
      "Description" : "Filters access based on whether the request was made using temporary security credentials for AssumeRoot",
@@ -80,7 +80,7 @@ Changes to the service reference information may take up to 24 hours to be refle
 
    The following example shows a partial list of mappings:
 
-   ```
+   ```JSON
    {
      "SDK" : {
        "Python" : {
@@ -108,7 +108,7 @@ Changes to the service reference information may take up to 24 hours to be refle
 
    The following example shows a partial list of service reference information for Amazon S3:
 
-   ```
+   ```JSON
    {
        "Name": "s3",
        "ServiceName": "S3",
@@ -292,7 +292,7 @@ It's also possible for all properties to be `false`, as seen with Amazon S3's `G
 
 These properties can be used to generate insights for services. The following example shows which permissions with the `s3` prefix allow mutating resources:
 
-```
+```JSON
 > curl https://servicereference.us-east-1.amazonaws.com/v1/s3/s3.json | \
     jq '.Actions[] | select(.Annotations.Properties.IsWrite == true) | .Name'
 
@@ -306,7 +306,7 @@ These properties can be used to generate insights for services. The following ex
 
 The following example shows which permissions with the `s3` prefix grant access to data rather than to service configuration:
 
-```
+```JSON
 > curl https://servicereference.us-east-1.amazonaws.com/v1/s3/s3.json | \
     jq '.Actions[] | select(.Annotations.Properties.IsDataPlane == true) | .Name'
 
@@ -320,7 +320,7 @@ The following example shows which permissions with the `s3` prefix grant access 
 
 The following example shows which action condition keys with the `lambda` prefix you can use to limit access to permission management actions:
 
-```
+```JSON
 > curl https://servicereference.us-east-1.amazonaws.com/v1/lambda/lambda.json | \
     jq '.Actions[] | select(.Annotations.Properties.IsPermissionManagement == true) | {Name: .Name, ActionConditionKeys: (.ActionConditionKeys // [])}'
 

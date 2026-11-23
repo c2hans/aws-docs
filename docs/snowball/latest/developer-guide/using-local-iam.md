@@ -150,7 +150,7 @@ Use the following policy to allow the GetUser call for a sample user through the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -176,7 +176,7 @@ Use the following policy to allow full access to the Amazon S3 API.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -203,7 +203,7 @@ Use the following policy to allow full access to the Amazon S3 API.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -235,7 +235,7 @@ Use the following policy to allow List, Get, and Put Access to a specific S3 buc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -264,7 +264,7 @@ Use the following policy to allow List, Get, and Put Access to a specific S3 buc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -289,7 +289,7 @@ Use the following policy to allow List, Get, and Put Access to a specific S3 buc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -317,7 +317,7 @@ Use the following policy to allow List, Get, and Put Access to a specific S3 buc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -378,7 +378,7 @@ The following is an example of a trust policy. For more information about trust 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

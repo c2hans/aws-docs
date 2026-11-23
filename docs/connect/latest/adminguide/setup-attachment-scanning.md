@@ -22,7 +22,7 @@ For every attachment uploaded through Connect Customer a request is sent with in
 
 Following is an example JSON request for scanning:
 
-```
+```json
 {
     "Version": "1.0",
     "InstanceId": "{{your instance ID}}",
@@ -45,7 +45,7 @@ Following is an example JSON request for scanning:
 ### Required response
 <a name="response-scanning"></a>
 
-```
+```json
 {
    "Status": "APPROVED" | "REJECTED"
 }

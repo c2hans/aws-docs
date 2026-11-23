@@ -8,7 +8,7 @@ Checks the *correlation* between two columns against a given expression. AWS Glu
 
 **Syntax**
 
-```
+```json
 ColumnCorrelation {{<COL_1_NAME>}} {{<COL_2_NAME>}} {{<EXPRESSION>}}
 ```
 + **COL\_1\_NAME** – The name of the first column that you want to evaluate the data quality rule against.
@@ -23,11 +23,11 @@ ColumnCorrelation {{<COL_1_NAME>}} {{<COL_2_NAME>}} {{<EXPRESSION>}}
 
 The following example rule checks whether the correlation coefficient between the columns `height` and `weight` has a strong positive correlation (a coefficient value greater than 0.8).
 
-```
+```json
 ColumnCorrelation "height" "weight" > 0.8
 ```
 
-```
+```json
 ColumnCorrelation "weightinkgs" "Salary" > 0.8 where "weightinkgs > 40"
 ```
 

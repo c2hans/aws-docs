@@ -39,7 +39,7 @@ Amazon Personalize configuration is limited to resources without 'ams-' or 'mc-'
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Id": "key-consolepolicy-3",
@@ -65,7 +65,7 @@ Amazon Personalize configuration is limited to resources without 'ams-' or 'mc-'
 
 ****
 
-  ```
+  ```json
   {
   "Version":"2012-10-17",
   "Id": "PersonalizeS3BucketAccessPolicy",

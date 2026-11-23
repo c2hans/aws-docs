@@ -118,7 +118,7 @@ If you specify a name, you can't perform updates that require replacement of thi
 The metadata configuration for the vector index.
 *Required*: No
 *Type*: [MetadataConfiguration](aws-properties-s3vectors-index-metadataconfiguration.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-s3vectors-index-tags"></a>
 Property description not available.

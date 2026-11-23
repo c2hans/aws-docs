@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Start a transcription job for a media file. This method returns
     /// as soon as the job is started.
@@ -473,7 +473,7 @@ For more information, see [Improving Domain-Specific Transcription Accuracy with
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/transcribe#code-examples).
 Start a transcription job.
 
-```
+```javascript
 // Import the required AWS SDK clients and commands for Node.js
 import { StartTranscriptionJobCommand } from "@aws-sdk/client-transcribe";
 import { transcribeClient } from "./libs/transcribeClient.js";
@@ -505,7 +505,7 @@ run();
 ```
 Create the client.
 
-```
+```javascript
 import { TranscribeClient } from "@aws-sdk/client-transcribe";
 // Set the AWS Region.
 const REGION = "REGION"; //e.g. "us-east-1"
@@ -522,7 +522,7 @@ export { transcribeClient };
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/transcribe#code-examples).
 
-```
+```python
 def start_job(
     job_name,
     media_uri,
@@ -574,7 +574,7 @@ def start_job(
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tnb#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_media) = NEW /aws1/cl_tnbmedia( iv_mediafileuri = iv_media_uri ).
         DATA(lo_settings) = NEW /aws1/cl_tnbsettings( ).

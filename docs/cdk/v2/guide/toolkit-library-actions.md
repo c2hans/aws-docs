@@ -16,7 +16,7 @@ The `synth` action generates a cloud assembly from your cloud assembly source. F
 
 Here’s how to use the `synth` action to create a cloud assembly:
 
-```
+```typescript
 // Create a toolkit instance
 const toolkit = new Toolkit();
 
@@ -43,7 +43,7 @@ Using a cloud assembly can optimize performance when you need to perform multipl
 
 The `list` action retrieves information about the stacks in your CDK application, including their dependencies and current status. Use this action to inspect your infrastructure before deployment or to generate reports.
 
-```
+```typescript
 import { StackSelectionStrategy } from '@aws-cdk/toolkit-lib';
 
 // Get information about specific stacks
@@ -65,7 +65,7 @@ for (const stack of stackDetails) {
 
 The `deploy` action provisions or updates your infrastructure in AWS using the cloud assembly produced during synthesis. For an introduction to deploying, see [Deploy AWS CDK applications](deploy.md). You can control deployment options such as stack selection, parameter values, and rollback behavior.
 
-```
+```typescript
 // Deploy stacks with parameter values
 await toolkit.deploy(cloudAssemblySource, {
   parameters: StackParameters.exactly({
@@ -78,7 +78,7 @@ await toolkit.deploy(cloudAssemblySource, {
 
 The deploy action supports different deployment methods to accommodate various workflows. For most scenarios, especially in production environments, we recommend using the default deployment method which uses CloudFormation change sets. For development environments where iteration speed is important, you can use alternative methods like hotswap.
 
-```
+```typescript
 import { StackSelectionStrategy } from '@aws-cdk/toolkit-lib';
 
 // Deploy using default deployment method (recommended for production)
@@ -113,7 +113,7 @@ The refactor action automatically computes mappings by comparing your current co
 
 Once it computes the mappings, the refactor action uses CloudFormation’s refactoring API to update the logical IDs of resources without replacing them. If it encounters ambiguous mappings (where multiple possible mappings exist), you can provide explicit overrides to resolve these ambiguities.
 
-```
+```typescript
 // Perform refactoring operation to preserve resources
 await toolkit.refactor(cloudAssemblySource);
 
@@ -144,7 +144,7 @@ For more information about CDK refactoring, including how it works and when to u
 
 The `rollback` action returns a stack to its last stable state when a deployment fails and cannot be automatically reversed. Use this action to recover from failed deployments that require manual intervention.
 
-```
+```typescript
 import { StackSelectionStrategy } from '@aws-cdk/toolkit-lib';
 
 // Roll back stacks to their last stable state
@@ -165,7 +165,7 @@ The `watch` action continuously monitors your CDK app for local file changes and
 **Warning**
 Hotswap deployments update resources directly without going through CloudFormation when possible, making updates faster during development. This is enabled by default for the `watch` command. While this speeds up the development cycle, it introduces drift between your CloudFormation templates and deployed resources. Therefore, we recommend that you don’t use hotswaps in production environments.
 
-```
+```typescript
 import { StackSelectionStrategy } from '@aws-cdk/toolkit-lib';
 
 // Start watching for changes
@@ -192,7 +192,7 @@ The `destroy` action removes CDK stacks and their associated resources from AWS.
 **Important**
 The destroy action permanently removes resources without prompting for confirmation, unlike the CLI version of this command. Make sure you have backups of any important data before destroying stacks.
 
-```
+```typescript
 import { StackSelectionStrategy } from '@aws-cdk/toolkit-lib';
 
 // Remove specific stacks and their resources

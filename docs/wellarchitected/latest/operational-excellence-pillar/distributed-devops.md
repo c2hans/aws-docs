@@ -14,6 +14,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Distributed DevOps model diagram](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/images/distributed-devops.en.png)
 
+*Distributed DevOps*
+
  For this example, we treat governance as centralized elsewhere within the organization. Standards are distributed, provided, or shared to the application and platform teams.
 
  Use tools or services that help you centrally govern your environments across accounts, such as [AWS Organizations](https://aws.amazon.com/organizations/). Services like [AWS Control Tower](https://aws.amazon.com/controltower/features/) expand this management capability by helping you define blueprints (supporting your operating models) for the setup of accounts, apply ongoing governance using AWS Organizations, and automate provisioning of new accounts.

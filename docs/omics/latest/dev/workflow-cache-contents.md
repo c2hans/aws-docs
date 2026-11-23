@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflow-cache-contents
 
 HealthOmics organizes your run cache with the following structure in your S3 bucket:
 
-```
+```bash
 s3://{cache.S3location}/{cache.uuid}/runID/taskID/{cacheentry.uuid}/
 ```
 

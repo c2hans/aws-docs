@@ -25,7 +25,7 @@ In AWS IoT Greengrass, you can configure sample [machine learning components](pe
 
 In the [AWS IoT Greengrass console](https://console.aws.amazon.com/greengrass), the component page displays the default configuration of that component. For example, the default configuration of the TensorFlow Lite image classification component looks like the following:
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.ipc.mqttproxy": {
@@ -83,7 +83,7 @@ This section describes how to deploy a modified component from the AWS IoT Green
 
    1. Under **Configuration update**, enter the configuration values that you want to update. For example, enter the following configuration update in the **Configuration to merge** box to change the inference interval to 15 seconds, and instruct the component to look for the image named `custom.jpg` in the `/custom-ml-inference/images/` folder.
 
-      ```
+      ```json
       {
         "InferenceInterval": "15",
         "ImageName": "custom.jpg",
@@ -153,7 +153,7 @@ Do not change the name of the component.
 ------
 #### [ Linux, macOS, or Unix ]
 
-   ```
+   ```bash
    aws greengrassv2 get-component \
        --arn {{<arn>}} \
        --recipe-output-format {{<recipe-format>}} \
@@ -164,7 +164,7 @@ Do not change the name of the component.
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    aws greengrassv2 get-component ^
        --arn {{<arn>}} ^
        --recipe-output-format {{<recipe-format>}} ^
@@ -177,7 +177,7 @@ Do not change the name of the component.
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    aws greengrassv2 get-component `
        --arn {{<arn>}} `
        --recipe-output-format {{<recipe-format>}} `
@@ -201,7 +201,7 @@ Do not change the name of the component.
 
 1. Run the following command to create a new component using the recipe you retrieved and modified.
 
-   ```
+   ```bash
    aws greengrassv2 create-component-version \
        --inline-recipe fileb://{{path/to/component/recipe}}
    ```
@@ -237,7 +237,7 @@ You can use the recipe of an existing public machine learning component as a tem
 ------
 #### [ Linux, macOS, or Unix ]
 
-  ```
+  ```bash
   aws greengrassv2 get-component \
       --arn {{<arn>}} \
       --recipe-output-format {{<recipe-format>}} \
@@ -248,7 +248,7 @@ You can use the recipe of an existing public machine learning component as a tem
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-  ```
+  ```cmd
   aws greengrassv2 get-component ^
       --arn {{<arn>}} ^
       --recipe-output-format {{<recipe-format>}} ^
@@ -261,7 +261,7 @@ You can use the recipe of an existing public machine learning component as a tem
 ------
 #### [ PowerShell ]
 
-  ```
+  ```ps
   aws greengrassv2 get-component `
       --arn {{<arn>}} `
       --recipe-output-format {{<recipe-format>}} `
@@ -328,7 +328,7 @@ Create your inference code and then upload it to an S3 bucket. For information a
 ------
 #### [ Linux, macOS, or Unix ]
 
-   ```
+   ```bash
    aws greengrassv2 get-component \
        --arn arn:aws:greengrass:{{region}}:aws:components:aws.greengrass.DLRImageClassification:versions:{{version}} \
        --recipe-output-format {{JSON | YAML}} \
@@ -339,7 +339,7 @@ Create your inference code and then upload it to an S3 bucket. For information a
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    aws greengrassv2 get-component ^
        --arn arn:aws:greengrass:{{region}}:aws:components:aws.greengrass.DLRImageClassification:versions:{{version}} ^
        --recipe-output-format {{JSON | YAML}} ^
@@ -352,7 +352,7 @@ Create your inference code and then upload it to an S3 bucket. For information a
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    aws greengrassv2 get-component `
        --arn arn:aws:greengrass:{{region}}:aws:components:aws.greengrass.DLRImageClassification:versions:{{version}} `
        --recipe-output-format {{JSON | YAML}} `
@@ -374,7 +374,7 @@ Create your inference code and then upload it to an S3 bucket. For information a
 ------
 #### [ JSON ]
 
-     ```
+     ```json
      {
          "{{<runtime-component>}}": {
              "VersionRequirement": "{{<version>}}",
@@ -386,7 +386,7 @@ Create your inference code and then upload it to an S3 bucket. For information a
 ------
 #### [ YAML ]
 
-     ```
+     ```yaml
      {{<runtime-component>}}:
          VersionRequirement: "{{<version>}}"
          DependencyType: HARD
@@ -400,7 +400,7 @@ Create your inference code and then upload it to an S3 bucket. For information a
 ------
 #### [ JSON ]
 
-     ```
+     ```json
      {
          "variant.DLR.ImageClassification.ModelStore": {
              "VersionRequirement": "{{<version>}}",
@@ -412,7 +412,7 @@ Create your inference code and then upload it to an S3 bucket. For information a
 ------
 #### [ YAML ]
 
-     ```
+     ```yaml
      variant.DLR.ImageClassification.ModelStore:
          VersionRequirement: "{{<version>}}"
          DependencyType: HARD
@@ -425,7 +425,7 @@ Create your inference code and then upload it to an S3 bucket. For information a
 ------
 #### [ JSON ]
 
-     ```
+     ```json
      {
          "{{<custom-model-component>}}": {
              "VersionRequirement": "{{<version>}}",
@@ -437,7 +437,7 @@ Create your inference code and then upload it to an S3 bucket. For information a
 ------
 #### [ YAML ]
 
-     ```
+     ```yaml
      {{<custom-model-component>}}:
          VersionRequirement: "{{<version>}}"
          DependencyType: HARD
@@ -452,7 +452,7 @@ Create your inference code and then upload it to an S3 bucket. For information a
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
      "accessControl": {
        "aws.greengrass.ipc.mqttproxy": {
@@ -481,7 +481,7 @@ Create your inference code and then upload it to an S3 bucket. For information a
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    accessControl:
        aws.greengrass.ipc.mqttproxy:
            'aws.greengrass.ImageClassification:mqttproxy:1':
@@ -506,7 +506,7 @@ Create your inference code and then upload it to an S3 bucket. For information a
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
      "Manifests": [
        {
@@ -539,7 +539,7 @@ Create your inference code and then upload it to an S3 bucket. For information a
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    Manifests:
      - Platform:
          os: linux
@@ -588,7 +588,7 @@ Use the AWS IoT Greengrass console or the AWS CLI to create a component using th
 
 Run the following command to create a new custom component using the recipe that you created.
 
-```
+```bash
 aws greengrassv2 create-component-version \
     --inline-recipe fileb://{{path/to/recipe/file}}
 ```

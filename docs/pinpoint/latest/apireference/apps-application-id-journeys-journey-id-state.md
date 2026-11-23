@@ -78,7 +78,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="apps-application-id-journeys-journey-id-state-request-body-put-example"></a>
 
-```
+```json
 {
   "State": enum
 }
@@ -90,7 +90,7 @@ Retrieves information about the communication requirements and options that are 
 #### JourneyResponse schema
 <a name="apps-application-id-journeys-journey-id-state-response-body-journeyresponse-example"></a>
 
-```
+```json
 {
   "Name": "string",
   "Schedule": {
@@ -210,7 +210,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-journeys-journey-id-state-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

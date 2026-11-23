@@ -32,7 +32,7 @@ The following code example shows how to get started using Amazon Bedrock Runtime
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import {
   BedrockRuntimeClient,
@@ -111,7 +111,7 @@ The following code example shows how to build a typical interaction between an a
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime/scenarios/converse_tool_scenario#code-examples).
 The primary execution of the scenario flow. This scenario orchestrates the conversation between the user, the Amazon Bedrock Converse API, and a weather tool.
 
-```
+```javascript
 /* Before running this JavaScript code example, set up your development environment, including your credentials.
 This demo illustrates a tool use scenario using Amazon Bedrock's Converse API and a weather tool.
 The script interacts with a foundation model on Amazon Bedrock to provide weather information based on user
@@ -436,7 +436,7 @@ The following code example shows how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova, using Bedrock's Converse API.
 
-```
+```javascript
 // This example demonstrates how to use the Amazon Nova foundation models to generate text.
 // It shows how to:
 // - Set up the Amazon Bedrock runtime client
@@ -503,7 +503,7 @@ try {
 ```
 Send a conversation of messages to Amazon Nova using Bedrock's Converse API with a tool configuration.
 
-```
+```javascript
 // This example demonstrates how to send a conversation of messages to Amazon Nova using Bedrock's Converse API with a tool configuration.
 // It shows how to:
 // - 1. Set up the Amazon Bedrock runtime client
@@ -702,7 +702,7 @@ The following code example shows how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```javascript
 // This example demonstrates how to use the Amazon Nova foundation models
 // to generate streaming text responses.
 // It shows how to:
@@ -785,7 +785,7 @@ The following code example shows how to build a typical interaction between an a
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime/scenarios/converse_tool_scenario#code-examples).
 The primary execution of the scenario flow. This scenario orchestrates the conversation between the user, the Amazon Bedrock Converse API, and a weather tool.
 
-```
+```javascript
 /* Before running this JavaScript code example, set up your development environment, including your credentials.
 This demo illustrates a tool use scenario using Amazon Bedrock's Converse API and a weather tool.
 The script interacts with a foundation model on Amazon Bedrock to provide weather information based on user
@@ -1110,7 +1110,7 @@ The following code example shows how to invoke Amazon Nova Canvas on Amazon Bedr
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
 Create an image with Amazon Nova Canvas.
 
-```
+```javascript
 import {
   BedrockRuntimeClient,
   InvokeModelCommand,
@@ -1213,7 +1213,7 @@ The following code example shows how to send a text message to Anthropic Claude,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API.
 
-```
+```javascript
 // Use the Conversation API to send a text message to Anthropic Claude.
 
 import {
@@ -1269,7 +1269,7 @@ The following code example shows how to send a text message to Anthropic Claude,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```javascript
 // Use the Conversation API to send a text message to Anthropic Claude.
 
 import {
@@ -1331,7 +1331,7 @@ The following code example shows how to send a text message to Meta Llama, using
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
 Send a text message to Meta Llama, using Bedrock's Converse API.
 
-```
+```javascript
 // Use the Conversation API to send a text message to Meta Llama.
 
 import {
@@ -1385,7 +1385,7 @@ The following code example shows how to send a text message to Meta Llama, using
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
 Send a text message to Meta Llama, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```javascript
 // Use the Conversation API to send a text message to Meta Llama.
 
 import {
@@ -1445,7 +1445,7 @@ The following code example shows how to send a text message to Mistral, using Be
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
 Send a text message to Mistral, using Bedrock's Converse API.
 
-```
+```javascript
 // Use the Conversation API to send a text message to Mistral.
 
 import {
@@ -1499,7 +1499,7 @@ The following code example shows how to send a text message to Mistral, using Be
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
 Send a text message to Mistral, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```javascript
 // Use the Conversation API to send a text message to Mistral.
 
 import {

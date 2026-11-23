@@ -48,7 +48,7 @@ Use the following procedure to set up a Google OAuth2 application and obtain the
 
 To configure the outbound Google resource provider, use the following:
 
-```
+```json
 {
         "name": "NAME",
         "credentialProviderVendor": "GoogleOauth2",

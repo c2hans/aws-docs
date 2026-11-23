@@ -39,7 +39,7 @@ To set up and run this example, first complete these tasks:
 
 Create a Node.js module with the file name `ec2_describeaddresses.js`. Be sure to configure the SDK as previously shown. To access Amazon EC2, create an `AWS.EC2` service object. Create a JSON object to pass as parameters, filtering the addresses returned by those in your VPC. To retrieve descriptions of all your Elastic IP addresses, omit a filter from the parameters JSON. Then call the `describeAddresses` method of the Amazon EC2 service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -64,7 +64,7 @@ ec2.describeAddresses(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```sh
 node ec2_describeaddresses.js
 ```
 
@@ -79,7 +79,7 @@ If the call succeeds, the `data` parameter to the callback function has an `Allo
 
 Create a JSON object for the parameters used to associate an Elastic IP address to an Amazon EC2 instance, including the `AllocationId` from the newly allocated address and the `InstanceId` of the Amazon EC2 instance. Then call the `associateAddresses` method of the Amazon EC2 service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -116,7 +116,7 @@ ec2.allocateAddress(paramsAllocateAddress, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```sh
 node ec2_allocateaddress.js
 ```
 
@@ -127,7 +127,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `ec2_releaseaddress.js`. Be sure to configure the SDK as previously shown. To access Amazon EC2, create an `AWS.EC2` service object. Create a JSON object for the parameters used to release an Elastic IP address, which in this case specifies the `AllocationId` for the Elastic IP address. Releasing an Elastic IP address also disassociates it from any Amazon EC2 instance. Call the `releaseAddress` method of the Amazon EC2 service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -152,7 +152,7 @@ ec2.releaseAddress(paramsReleaseAddress, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```sh
 node ec2_releaseaddress.js
 ```
 

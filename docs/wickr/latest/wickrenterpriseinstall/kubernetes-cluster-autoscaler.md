@@ -32,7 +32,7 @@ If you did not use the WickrEnterpriseCDK to install your Wickr Environment on A
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

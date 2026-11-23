@@ -16,7 +16,7 @@ Use the signalsToFetch syntax to configure how the signal information can be fet
 Signals to fetch allows the collection of DTC information. For example, you can create a signal of string type named `DTC_Info` that can contain DTC information for every engine control unit (ECU). Or, you can filter for a specific ECU.
 + `SignalFetchInformation` structure and param definitions.
 
-  ```
+  ```json
   structure SignalFetchInformation {
       @required
       fullyQualifiedName: NodePath,
@@ -46,7 +46,7 @@ isNull(signalFqdn:String): Boolean
 
 **Example usage**
 
-```
+```bash
 isNull($variable.`Vehicle.ECU1.DTC_INFO`) == false
 
 We want to make sure DTC_Info signal is being generated
@@ -68,7 +68,7 @@ custom_function(functionName:String, params: varargs{{Expression}}): Void
 
 **Example usage**
 
-```
+```json
 {
        "fullyQualifiedName":"Vehicle.ECU1.DTC_INFO",
        "signalFetchConfig":{

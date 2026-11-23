@@ -47,7 +47,7 @@ You can create only one Amazon Redshift IdC application of type Lakehouse per AW
 
 Redshift Lakehouse IdC application creation requires an IAM role from your account with certain IAM permissions. Your IAM role used in your Redshift IdC Applications should have the following trust relationship to allow Redshift to assume it and set context for IdC identity propagation.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

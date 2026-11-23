@@ -75,7 +75,7 @@ This procedure describes how to create a Debezium source connector.
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -136,7 +136,7 @@ This procedure describes how to create a Debezium source connector.
 
       For Debezium 2.x versions, copy the following JSON and paste it in a new file. Replace the {{<placeholder>}} strings with values that correspond to your scenario.
 
-      ```
+      ```JSON
       {
       	"connectorConfiguration": {
       		"connector.class": "io.debezium.connector.mysql.MySqlConnector",
@@ -206,7 +206,7 @@ This procedure describes how to create a Debezium source connector.
 
       For Debezium 1.x versions, copy the following JSON and paste it in a new file. Replace the {{<placeholder>}} strings with values that correspond to your scenario.
 
-      ```
+      ```JSON
       {
       	"connectorConfiguration": {
       		"connector.class": "io.debezium.connector.mysql.MySqlConnector",

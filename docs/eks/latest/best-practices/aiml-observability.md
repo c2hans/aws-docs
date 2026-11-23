@@ -141,7 +141,7 @@ As discussed in the [Consider Monitoring Core Training & Fine-Tuning Metrics](#a
 
 This sample demonstrates how to instrument your training application to expose `gpu_memory_usage_bytes` as a histogram using the AWS-native approach. Note that your AI/ML container must be configured to emit structured logs in CloudWatch [Embedded Metrics Format (EMF)](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html) format. CloudWatch logs parses EMF and publishes the metrics. Use [aws\_embedded\_metrics](https://github.com/awslabs/aws-embedded-metrics-python) in your training application to send structured logs in EMF format to CloudWatch Logs, which extracts GPU metrics.
 
-```
+```json
 from aws_embedded_metrics import metric_scope
 import torch
 import numpy as np
@@ -174,7 +174,7 @@ for epoch in range(20):
 
 This sample demonstrates how to instrument your training application to expose `gpu_memory_usage_bytes`` as a histogram using the Prometheus client library in Python.
 
-```
+```json
 from prometheus_client import Histogram
 from prometheus_client import start_http_server
 import pynvml
@@ -217,7 +217,7 @@ As discussed in the [Consider Monitoring Core Training & Fine-Tuning Metrics](#a
 
 This sample demonstrates how to create a custom histogram metric in your inference application for inference\_request\_duration\_seconds using AWS CloudWatch Embedded Metric Format.
 
-```
+```json
 import boto3
 import time
 from aws_embedded_metrics import metric_scope, MetricsLogger
@@ -251,7 +251,7 @@ process_inference_request()
 
 This sample demonstrates how to create a custom histogram metric in your inference application for inference\_request\_duration\_seconds using the Prometheus client library in Python:
 
-```
+```json
 from prometheus_client import Histogram
 from prometheus_client import start_http_server
 import time
@@ -278,7 +278,7 @@ As discussed in the [Consider Monitoring Core Training & Fine-Tuning Metrics](#a
 
 This sample demonstrates how to create a custom histogram metric in your inference application for token\_processing\_duration\_seconds using AWS CloudWatch Embedded Metric Format. It uses dimensions (`set\_dimension`) with a custom `get_duration_bucket` function to categorize durations into buckets (e.g., "⇐0.01", ">1").
 
-```
+```json
 import boto3
 import time
 from aws_embedded_metrics import metric_scope, MetricsLogger
@@ -318,7 +318,7 @@ def process_tokens(input_text: str, model, tokenizer, metrics: MetricsLogger):
 
 This sample demonstrates how to create a custom histogram metric in your inference application for token\_processing\_duration\_seconds using the Prometheus client library in Python.
 
-```
+```json
 from prometheus_client import Histogram
 from prometheus_client import start_http_server
 import time
@@ -344,7 +344,7 @@ As discussed in the [Consider Monitoring Core Training & Fine-Tuning Metrics](#a
 
 This sample demonstrates how to instrument your batch application to expose checkpoint\_restore\_duration\_seconds as a histogram using CloudWatch Insights:
 
-```
+```json
 import boto3
 import time
 import torch
@@ -374,7 +374,7 @@ def load_checkpoint(model, checkpoint_path: str, metrics: MetricsLogger):
 
 This sample demonstrates how to instrument your batch application to expose `checkpoint_restore_duration_seconds` as a histogram using the Prometheus client library in Python:
 
-```
+```json
 from prometheus_client import Histogram
 from prometheus_client import start_http_server
 import torch

@@ -8,7 +8,7 @@ In Verified Permissions, policy templates are policies with placeholders for the
 
 You can optionally assign a policy template name to a policy template. Policy template names must be unique within the policy store and prefixed with `name/`. You can use a policy template name in place of the policy template ID in control plane operations that accept a `policyTemplateId` parameter. Only `GetPolicyTemplate` and `ListPolicyTemplates` return the name in the output. The following example uses a policy template name to retrieve a policy template with `GetPolicyTemplate`.
 
-```
+```bash
 $ aws verifiedpermissions get-policy-template \
     --policy-template-id name/example-policy-template \
     --policy-store-id PSEXAMPLEabcdefg111111
@@ -16,7 +16,7 @@ $ aws verifiedpermissions get-policy-template \
 
 For example, the following policy template provides `Read`, `Edit`, and `Comment` permissions for the principal and resource that use the policy template.
 
-```
+```cedar
 permit(
   principal == ?principal,
   action in [Action::"Read", Action::"Edit", Action::"Comment"],

@@ -142,7 +142,7 @@ The new configuration revision replaces the existing configuration. Keep any oth
 
 1. Create or update an Amazon MSK configuration.
 
-   ```
+   ```bash
    aws kafka create-configuration \
        --name tls13-additive \
        --kafka-versions {{kafka-version}} \
@@ -151,7 +151,7 @@ The new configuration revision replaces the existing configuration. Keep any oth
 
 1. Apply the configuration revision to your cluster with either `UpdateClusterConfiguration` or `UpdateClusterKafkaVersion`.
 
-   ```
+   ```bash
    aws kafka update-cluster-configuration \
        --cluster-arn {{cluster-arn}} \
        --current-version {{current-cluster-version}} \
@@ -172,11 +172,11 @@ You can also set `tls.security.policy` in the `ServerProperties` of an `AWS::MSK
 
 Get the configuration ARN and revision applied to your cluster, and then read the revision.
 
-```
+```bash
 aws kafka describe-cluster --cluster-arn {{cluster-arn}}
 ```
 
-```
+```bash
 aws kafka describe-configuration-revision \
     --arn {{configuration-arn}} \
     --revision {{revision}}
@@ -201,7 +201,7 @@ When you roll back to `MSK-TLS1.2-Default-2026`, the cluster no longer accepts T
 
 Before you roll back, confirm the current policy and the cluster state. The cluster must be `ACTIVE`. If an update is in progress, wait for it to complete.
 
-```
+```bash
 aws kafka describe-cluster --cluster-arn {{cluster-arn}} \
     --query "ClusterInfo.{State:State,CurrentVersion:CurrentVersion,Configuration:CurrentBrokerSoftwareInfo}"
 ```
@@ -218,7 +218,7 @@ aws kafka describe-cluster --cluster-arn {{cluster-arn}} \
 
 1. Create a new revision of your configuration.
 
-   ```
+   ```bash
    aws kafka update-configuration \
        --arn {{configuration-arn}} \
        --server-properties fileb://server.properties
@@ -228,7 +228,7 @@ aws kafka describe-cluster --cluster-arn {{cluster-arn}} \
 
 1. Apply the new revision to your cluster.
 
-   ```
+   ```bash
    aws kafka update-cluster-configuration \
        --cluster-arn {{cluster-arn}} \
        --current-version {{current-cluster-version}} \
@@ -237,7 +237,7 @@ aws kafka describe-cluster --cluster-arn {{cluster-arn}} \
 
 1. Wait for the update to complete. Amazon MSK performs a rolling restart. As each broker restarts with the new policy, it accepts the connections that the new policy allows. When the operation state is `UPDATE_COMPLETE`, every broker uses the new policy.
 
-   ```
+   ```bash
    aws kafka describe-cluster-operation \
        --cluster-operation-arn {{operation-arn}} \
        --query "ClusterOperationInfo.OperationState"
@@ -247,7 +247,7 @@ aws kafka describe-cluster --cluster-arn {{cluster-arn}} \
 
 1. Confirm the rollback. Check the applied policy, and then confirm that a client limited to TLS 1.2 can connect.
 
-   ```
+   ```bash
    openssl s_client -connect {{broker-endpoint}}:{{port}} -tls1_2
    ```
 

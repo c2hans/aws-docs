@@ -41,7 +41,7 @@ You can customize caching behavior when building credential providers:
 
 Controls when credentials are considered stale and need refreshing:
 
-```
+```java
 .staleTime(Duration.ofMinutes(2))  // Consider stale 2 minutes before expiration.
 ```
 
@@ -50,7 +50,7 @@ Controls when credentials are considered stale and need refreshing:
 
 Determines when to start refreshing credentials before they expire:
 
-```
+```java
 .prefetchTime(Duration.ofMinutes(10))  // Start refresh 10 minutes before expiration.
 ```
 
@@ -59,7 +59,7 @@ Determines when to start refreshing credentials before they expire:
 
 Enables background credential refreshing:
 
-```
+```java
 .asyncCredentialUpdateEnabled(true)  // Refresh credentials in background thread.
 ```
 
@@ -68,7 +68,7 @@ Enables background credential refreshing:
 
 For STS-based providers, controls how long temporary credentials remain valid:
 
-```
+```java
 .refreshRequest(r -> r.durationSeconds(3600))  // 1 hour session.
 ```
 
@@ -79,7 +79,7 @@ As an example of configuring caching for a credentials provider implementation, 
 
 The following shows an example that creates an `[StsAssumeRoleCredentialsProvider](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sts/auth/StsAssumeRoleCredentialsProvider.html)` that uses a background thread to pre-fetch credentials by setting the `[asyncCredentialUpdateEnabled](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sts/auth/StsCredentialsProvider.BaseBuilder.html#asyncCredentialUpdateEnabled(java.lang.Boolean))` property to `true` on the builder:
 
-```
+```java
 StsAssumeRoleCredentialsProvider provider = StsAssumeRoleCredentialsProvider.builder()
     .refreshRequest(r -> r
         .roleArn("arn:aws:iam::111122223333:role/example-role")

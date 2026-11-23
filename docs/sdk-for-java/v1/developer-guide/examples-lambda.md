@@ -22,7 +22,7 @@ To pass payload data to a function, invoke the [InvokeRequest](https://docs.aws.
 
  **Imports**
 
-```
+```java
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.lambda.AWSLambda;
@@ -38,7 +38,7 @@ import java.nio.charset.StandardCharsets;
 
 The following code example demonstrates how to invoke a Lambda function.
 
-```
+```java
         String functionName = args[0];
 
         InvokeRequest invokeRequest = new InvokeRequest()
@@ -77,7 +77,7 @@ Build an [AWSLambda](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/a
 
  **Imports**
 
-```
+```java
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.lambda.AWSLambda;
@@ -93,7 +93,7 @@ import java.util.List;
 
 The following Java code example demonstrates how to retrieve a list of Lambda function names.
 
-```
+```java
         ListFunctionsResult functionResult = null;
 
         try {
@@ -125,7 +125,7 @@ Build an [AWSLambda](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/a
 
  **Imports**
 
-```
+```java
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.lambda.AWSLambda;
@@ -138,7 +138,7 @@ import com.amazonaws.services.lambda.model.DeleteFunctionRequest;
 
 The following Java code demonstrates how to delete a Lambda function.
 
-```
+```java
         String functionName = args[0];
         try {
             AWSLambda awsLambda = AWSLambdaClientBuilder.standard()

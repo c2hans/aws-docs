@@ -147,14 +147,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-standard-stack-stop-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-standard-stack-stop-ex-max"></a>
 
-```
+```json
 {
   "StackId": "stack-f16bbbeea61df041f"
 }

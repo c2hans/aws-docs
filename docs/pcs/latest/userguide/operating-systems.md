@@ -32,7 +32,7 @@ You can use the[ official Rocky Linux 9 AMIs](https://rockylinux.org/cloud-image
 
   1. ssh into the instance and run the following command:
 
-     ```
+     ```sh
      sudo yum -y update
      ```
 

@@ -38,7 +38,7 @@ SVL\_S3LIST only contains queries run on main provisioned clusters. It doesn't c
 
 The following example queries SVL\_S3LIST for the last query to run.
 
-```
+```sql
 select *
 from svl_s3list
 where query = pg_last_query_id()

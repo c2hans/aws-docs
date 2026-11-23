@@ -74,7 +74,7 @@ You can use one of the following operations:
 
   Run the following command to return a list of Amazon Resource Names (ARNs) for your teams:
 
-  ```
+  ```bash
   $ C:\> aws mpa list-approval-teams
   ```
 

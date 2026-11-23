@@ -26,13 +26,13 @@ If you have an existing agent built with the [Strands Agents SDK](https://strand
 
 Install the `mcp-proxy-for-aws` package:
 
-```
+```bash
 pip install mcp-proxy-for-aws
 ```
 
 Then update your MCP client to point to the gateway URL with IAM authentication:
 
-```
+```python
 from mcp_proxy_for_aws.client import aws_iam_streamablehttp_client
 from strands.tools.mcp.mcp_client import MCPClient
 

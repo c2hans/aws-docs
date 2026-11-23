@@ -46,7 +46,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops05-b
 
 1.  **Choose a central repository and template:** Store playbooks in your documentation wiki or version control system so investigators can find them under pressure. Use a shared Markdown template so every playbook captures the same metadata, including stakeholders and a communication plan. A playbook template carries more than a runbook template does, because investigation depends on keeping people informed.
 
-   ```
+   ```markdown
    # Playbook title
    ## Playbook info
    | Playbook ID | Description | Tools used | Special permissions | Author | Last updated | Escalation contact | Stakeholders | Communication plan |

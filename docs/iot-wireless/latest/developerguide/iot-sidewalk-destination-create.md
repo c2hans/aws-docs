@@ -53,7 +53,7 @@ aws iotwireless create-destination --name {{SidewalkDestination}} \
 
 Running this command returns the destination details, which include the Amazon Resource Name (ARN) and the destination name.
 
-```
+```JSON
 {
     "Arn": "arn:aws:iotwireless:{{us-east-1}}:{{123456789012}}:Destination/{{SidewalkDestination}}",
     "Name": "{{SidewalkDestination}}"

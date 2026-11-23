@@ -22,24 +22,24 @@ For Java applications connecting to Timestream for InfluxDB for InfluxDB 3 clust
 
 Check your current TTL setting:
 
-```
+```java
 String ttl = java.security.Security.getProperty("networkaddress.cache.ttl");
 ```
 
 Configure the TTL using one of these methods:
 + **Global configuration** — Set `networkaddress.cache.ttl` in `$JAVA_HOME/jre/lib/security/java.security`:
 
-  ```
+  ```bash
   networkaddress.cache.ttl=0
   ```
 + **Application-specific configuration** — Set the property in your application initialization code before establishing network connections:
 
-  ```
+  ```java
   java.security.Security.setProperty("networkaddress.cache.ttl", "0");
   ```
 + **JVM argument** — Pass as a system property when starting your application:
 
-  ```
+  ```bash
   java -Dsun.net.inetaddr.ttl=0 -jar your-application.jar
   ```
 
@@ -55,7 +55,7 @@ If TTL configuration is insufficient — for example, due to intermediate OS-lev
 
 1. Identify the authoritative nameserver for your cluster endpoint:
 
-   ```
+   ```bash
    dig <cluster-endpoint> NS
    ```
 
@@ -63,7 +63,7 @@ If TTL configuration is insufficient — for example, due to intermediate OS-lev
 
 1. Query the authoritative nameserver directly to bypass caches:
 
-   ```
+   ```bash
    dig @ns-1458.awsdns-54.org <cluster-endpoint>
    ```
 
@@ -73,7 +73,7 @@ If TTL configuration is insufficient — for example, due to intermediate OS-lev
 
 **Example:**
 
-```
+```bash
 # Find authoritative nameserver
 dig my-cluster.timestream-influxdb.us-east-1.amazonaws.com NS
 

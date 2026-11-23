@@ -39,7 +39,7 @@ To get started, create a new Go file named `ec2_describe_security_groups.go`.
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "fmt"
     "os"
@@ -54,7 +54,7 @@ import (
 
 In the `main` function, get the security group ID that is passed in.
 
-```
+```go
 if len(os.Args) < 2 {
     exitErrorf("Security Group ID required\nUsage: %s group_id ...",
         filepath.Base(os.Args[0]))
@@ -64,7 +64,7 @@ groupIds := os.Args[1:]
 
 Initialize a session and create an EC2 service client.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -75,7 +75,7 @@ svc := ec2.New(sess)
 
 Obtain and print out the security group descriptions. You will explicitly check for errors caused by an invalid group ID.
 
-```
+```go
 result, err := svc.DescribeSecurityGroups(&ec2.DescribeSecurityGroupsInput{
     GroupIds: aws.StringSlice(groupIds),
 })
@@ -99,7 +99,7 @@ for _, group := range result.SecurityGroups {
 
 The following utility function is used by this example to display errors.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -117,7 +117,7 @@ This example creates a new security group with the given name and description fo
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "flag"
     "fmt"
@@ -132,7 +132,7 @@ import (
 
 Get the parameters (name, description, and optional ID of the VPC) that are passed in to the routine.
 
-```
+```go
 namePtr := flag.String("n", "", "Group Name")
 descPtr := flag.String("d", "", "Group Description")
 vpcIDPtr := flag.String("vpc", "", "(Optional) VPC ID to associate security group with")
@@ -147,7 +147,7 @@ if *namePtr == "" || *descPtr == "" {
 
 Create a session and Amazon EC2 client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -157,7 +157,7 @@ svc := ec2.New(sess)
 
 Create an Amazon EC2 client. If the VPC ID was not provided, retrieve the first one in the account.
 
-```
+```go
 if *vpcIDPtr == "" {
     // Get a list of VPCs so we can associate the group with the first VPC.
     result, err := svc.DescribeVpcs(nil)
@@ -174,7 +174,7 @@ if *vpcIDPtr == "" {
 
 Create the security group with the VPC ID, name, and description.
 
-```
+```go
 createRes, err := svc.CreateSecurityGroup(&ec2.CreateSecurityGroupInput{
     GroupName:   aws.String(*namePtr),
     Description: aws.String(*descPtr),
@@ -198,7 +198,7 @@ fmt.Printf("Created security group %s with VPC %s.\n",
 
 Add permissions to the security group.
 
-```
+```go
 _, err = svc.AuthorizeSecurityGroupIngress(&ec2.AuthorizeSecurityGroupIngressInput{
     GroupName: aws.String(*namePtr),
     IpPermissions: []*ec2.IpPermission{
@@ -230,7 +230,7 @@ fmt.Println("Successfully set security group ingress")
 
 The following utility function is used by this example.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -248,7 +248,7 @@ This example deletes a security group with the given group ID.
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "fmt"
     "os"
@@ -263,7 +263,7 @@ import (
 
 Get the group ID that is passed in to the routine.
 
-```
+```go
 if len(os.Args) != 2 {
     exitErrorf("Security Group ID required\nUsage: %s group_id",
         filepath.Base(os.Args[0]))
@@ -273,7 +273,7 @@ groupID := os.Args[1]
 
 Create a session.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -284,7 +284,7 @@ svc := ec2.New(sess)
 
 Then delete the security group with the group ID that is passed in.
 
-```
+```go
 _, err = svc.DeleteSecurityGroup(&ec2.DeleteSecurityGroupInput{
     GroupId: aws.String(groupID),
 })
@@ -305,7 +305,7 @@ fmt.Printf("Successfully delete security group %q.\n", groupID)
 
 This example uses the following utility function.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)

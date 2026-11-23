@@ -28,7 +28,7 @@ A success banner appears: *Successfully deleted association from {tgw-attach-id}
 **To disassociate a policy table using the AWS CLI**
 Use the [disassociate-transit-gateway-policy-table](https://docs.aws.amazon.com/cli/latest/reference/ec2/disassociate-transit-gateway-policy-table.html) command.
 
-```
+```bash
 aws ec2 disassociate-transit-gateway-policy-table \
     --transit-gateway-policy-table-id tgw-ptb-0ca78a549EXAMPLE \
     --transit-gateway-attachment-id tgw-attach-0def6EXAMPLE
@@ -36,7 +36,7 @@ aws ec2 disassociate-transit-gateway-policy-table \
 
 Example response. The association transitions to the `disassociating` state:
 
-```
+```json
 {
     "Association": {
         "TransitGatewayPolicyTableId": "tgw-ptb-0ca78a549EXAMPLE",

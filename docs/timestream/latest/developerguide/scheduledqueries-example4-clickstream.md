@@ -40,7 +40,7 @@ The following describes the measures for the base table. A *base table* refers t
 + **data** – multi
 + **dimensions**:
 
-  ```
+  ```json
   [ ( user_group, varchar ),( user_id, varchar ),( session_id, varchar ),( ip_address, varchar ),( event, varchar ) ]
   ```
 
@@ -49,7 +49,7 @@ The following describes the measures for the base table. A *base table* refers t
 
 The following is an ad-hoc query that gathers counts by a 5-minute aggregate in a given time range.
 
-```
+```sql
 SELECT BIN(time, 5m) as time,
 channel,
 product_id,
@@ -75,7 +75,7 @@ Row count:5
 
 The following is a scheduled query that runs every 5 minutes.
 
-```
+```sql
 SELECT BIN(time, 5m) as time, channel as measure_name, product_id, product,
 SUM(quantity) as product_quantity
 FROM "clickstream"."shopping"
@@ -89,7 +89,7 @@ GROUP BY BIN(time, 5m), channel, product_id, product
 
 The following is an ad-hoc query on a derived table. A *derived table* refers to a Timestream table that contains the results of a scheduled query.
 
-```
+```sql
 SELECT time, measure_name, product_id,product_quantity
 FROM "clickstream"."aggregate"
 WHERE time BETWEEN '2023-05-11 10:10:00.000000000' AND '2023-05-11 10:30:00.000000000'

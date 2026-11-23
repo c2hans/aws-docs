@@ -226,7 +226,7 @@ aws emr-serverless create-application \
 **Important**
 **AWS CLI version requirement:** The `--identity-center-configuration`, `--interactive-configuration`, and `--runtime-configuration` flags require AWS CLI v2.15\+. If you receive "Unknown options" errors, either upgrade your AWS CLI or use Python boto3 (v1.35\+) as an alternative:
 
-```
+```python
 import boto3
 
 session = boto3.Session(profile_name='{{your-profile}}', region_name='{{your-region}}')
@@ -427,7 +427,7 @@ Replace the following values:
 **Important**
 The `create-connection` API requires the caller to be a member of the DataZone project. If you receive an `AccessDeniedException`, add your IAM role as a project contributor before creating the connection:
 
-```
+```python
 import boto3
 
 session = boto3.Session(profile_name='{{your-profile}}', region_name='{{your-region}}')
@@ -507,7 +507,7 @@ Amazon SageMaker Unified Studio currently supports adding existing Amazon EMR on
 
 1. In a new notebook cell, run the following PySpark queries:
 
-   ```
+   ```python
    %%pyspark my-emr-serverless-connection
    spark.sql("SHOW DATABASES").show()
 

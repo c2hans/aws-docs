@@ -75,7 +75,7 @@ aws memorydb describe-reserved-nodes-offerings
 
 This produces output similar to the following:
 
-```
+```json
 {
     "ReservedNodesOfferings": [
         {
@@ -129,7 +129,7 @@ The Reservation ID is a unique customer-specified identifier to track this reser
 
 This produces output similar to the following:
 
-```
+```json
 {
     "ReservedNode": {
         "ReservationId": "reservation",
@@ -162,7 +162,7 @@ aws memorydb describe-reserved-nodes
 
 This produces output similar to the following:
 
-```
+```json
 {
     "ReservedNodes": [
         {

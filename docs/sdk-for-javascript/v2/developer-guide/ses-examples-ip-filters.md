@@ -35,7 +35,7 @@ To set up and run this example, you must first complete these tasks:
 
 Configure the SDK for JavaScript by creating a global configuration object then setting the Region for your code. In this example, the Region is set to `us-west-2`.
 
-```
+```javascript
 // Load the SDK for JavaScript
 var AWS = require('aws-sdk');
 // Set the Region
@@ -49,7 +49,7 @@ In this example, use a Node.js module to send email with Amazon SES. Create a No
 
 Create an object to pass the parameter values that define the IP filter, including the filter name, an IP address or range of addresses to filter, and whether to allow or block email traffic from the filtered addresses. To call the `createReceiptFilter` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -83,7 +83,7 @@ sendPromise
 
 To run the example, type the following at the command line. The filter is created in Amazon SES.
 
-```
+```javascript
 node ses_createreceiptfilter.js
 ```
 
@@ -96,7 +96,7 @@ In this example, use a Node.js module to send email with Amazon SES. Create a No
 
 Create an empty parameters object. To call the `listReceiptFilters` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -119,7 +119,7 @@ sendPromise
 
 To run the example, type the following at the command line. Amazon SES returns the filter list.
 
-```
+```javascript
 node ses_listreceiptfilters.js
 ```
 
@@ -132,7 +132,7 @@ In this example, use a Node.js module to send email with Amazon SES. Create a No
 
 Create an object to pass the name of the IP filter to delete. To call the `deleteReceiptFilter` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -155,7 +155,7 @@ sendPromise
 
 To run the example, type the following at the command line. The filter is deleted from Amazon SES.
 
-```
+```javascript
 node ses_deletereceiptfilter.js
 ```
 

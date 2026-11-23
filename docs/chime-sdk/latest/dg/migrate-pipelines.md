@@ -50,12 +50,12 @@ The following list provides more information about the differences between the C
 The Amazon Chime SDK namespace uses the `AWS.Chime` formal name. The Amazon Chime SDK Media Pipelines namespace uses the `AWS.ChimeSDKMediaPipelines` formal name. The precise format of the name varies by platform.
 For example, this line of Node.js code addresses the `chime` namespace:
 
-```
+```node.js
 const chimeMediaPipelines = AWS.Chime();
 ```
 To migrate to the Media Pipelines SDK namespace, update that code with the new namespace and the endpoint region.
 
-```
+```node.js
 const chimeMediaPipelines = AWS.ChimeSDKMediaPipelines({ region: "eu-central-1" });
 ```
 

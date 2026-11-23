@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SageMaker#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a pipeline from a JSON definition, or update it if the pipeline already exists.
     /// </summary>
@@ -61,7 +61,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```java
     // Create a pipeline from the example pipeline JSON.
     public static void setupPipeline(SageMakerClient sageMakerClient, String filePath, String roleArn,
             String functionArn, String pipelineName) {
@@ -108,7 +108,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sagemaker#code-examples).
 A function that creates a SageMaker AI pipeline using a locally provided JSON definition.
 
-```
+```javascript
 /**
  * Create the Amazon SageMaker pipeline using a JSON pipeline definition. The definition
  * can also be provided as an Amazon S3 object using PipelineDefinitionS3Location.
@@ -181,7 +181,7 @@ export async function createSagemakerPipeline({
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```kotlin
 // Create a pipeline from the example pipeline JSON.
 suspend fun setupPipeline(filePath: String?, roleArnVal: String?, functionArnVal: String?, pipelineNameVal: String?) {
     println("Setting up the pipeline.")

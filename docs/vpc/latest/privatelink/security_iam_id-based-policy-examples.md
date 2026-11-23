@@ -26,7 +26,7 @@ By default, users do not have permission to work with endpoints. You can create 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":[
@@ -53,7 +53,7 @@ You can use the `ec2:VpceServiceOwner` condition key to control what VPC endpoin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -97,7 +97,7 @@ You can use the `ec2:VpceServicePrivateDnsName` condition key to control what VP
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -134,7 +134,7 @@ You can use the `ec2:VpceServiceName` condition key to control what VPC endpoint
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -18,7 +18,7 @@ You can suppress notices in the following ways:
   ```
 + Suppress all notices indefinitely through context in the project’s `cdk.json` file:
 
-  ```
+  ```json
   {
     "notices": false,
     "context": {

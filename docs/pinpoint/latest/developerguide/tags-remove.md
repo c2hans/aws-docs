@@ -15,7 +15,7 @@ To remove a tag from multiple Amazon Pinpoint resources in a single operation, u
 
 To remove a tag from a resource by using the Amazon Pinpoint REST API, send a DELETE request to the [Tags](https://docs.aws.amazon.com/pinpoint/latest/apireference/rest-api-tags.html) URI. In the URI, include the Amazon Resource Name (ARN) of the resource that you want to remove a tag from, followed by the `tagKeys` parameter and the tag to remove. For example:
 
-```
+```HTTP
 https://{{endpoint}}/v1/tags/{{resource-arn}}?tagKeys={{key}}
 ```
 
@@ -28,7 +28,7 @@ All the parameters should be URL encoded.
 
 To remove multiple tag keys and their associated values from a resource, append the `tagKeys` parameter and argument for each additional tag to remove, separated by an ampersand (&). For example:
 
-```
+```HTTP
 https://{{endpoint}}/v1/tags/{{resource-arn}}?tagKeys={{key1}}&tagKeys={{key2}}
 ```
 
@@ -42,7 +42,7 @@ To remove a tag from a resource by using the AWS CLI, run the `untag-resource` c
 ------
 #### [ Linux, macOS, or Unix ]
 
-```
+```shell
 $ aws pinpoint untag-resource \
   --resource-arn {{resource-arn}} \
   --tag-keys {{key1}} {{key2}}
@@ -51,7 +51,7 @@ $ aws pinpoint untag-resource \
 ------
 #### [ Windows Command Prompt ]
 
-```
+```cmd
 C:\> aws pinpoint untag-resource ^
      --resource-arn {{resource-arn}} ^
      --tag-keys {{key1}} {{key2}}

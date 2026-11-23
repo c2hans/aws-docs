@@ -78,7 +78,7 @@ The following is an example policy that allows the user with the ID `12345678901
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

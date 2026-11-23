@@ -11,7 +11,7 @@ You might encounter the error `Cannot find version for aurora-postgresql` during
 
 1. Search the RDS engine versions with the following AWS CLI.
 
-   ```
+   ```bash
    aws rds describe-db-engine-versions --engine aurora-postgresql --query '*[].[EngineVersion]' --output text --region <region>
    ```
 

@@ -35,7 +35,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 This is an example log entry for creating a trading capability.
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {

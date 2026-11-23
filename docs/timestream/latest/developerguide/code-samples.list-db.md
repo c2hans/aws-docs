@@ -14,7 +14,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java  ]
 
-```
+```java
     public void listDatabases() {
         System.out.println("Listing databases");
         ListDatabasesRequest request = new ListDatabasesRequest();
@@ -42,7 +42,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java v2  ]
 
-```
+```java
     public void listDatabases() {
         System.out.println("Listing databases");
         ListDatabasesRequest request = ListDatabasesRequest.builder().maxResults(2).build();
@@ -57,7 +57,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Go  ]
 
-```
+```go
 // List databases.
     listDatabasesMaxResult := int64(15)
 
@@ -79,7 +79,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Python  ]
 
-```
+```python
     def list_databases(self):
         print("Listing databases")
         try:
@@ -101,7 +101,7 @@ The following snippet uses AWS SDK for JavaScript v3. For more information about
 
 Also see [Class ListDatabasesCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-timestream-write/classes/listdatabasescommand.html) and [ListDatabases](https://docs.aws.amazon.com/timestream/latest/developerguide/API_ListDatabases.html).
 
-```
+```javascript
 import { TimestreamWriteClient, ListDatabasesCommand } from "@aws-sdk/client-timestream-write";
 const writeClient = new TimestreamWriteClient({ region: "us-east-1" });
 
@@ -136,7 +136,7 @@ async function getDatabasesList(nextToken) {
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/sample_apps/js).
 
-```
+```javascript
 async function listDatabases() {
     console.log("Listing databases:");
     const databases = await getDatabasesList(null);
@@ -173,7 +173,7 @@ function getDatabasesList(nextToken, databases = []) {
 ------
 #### [  .NET  ]
 
-```
+```cs
         public async Task ListDatabases()
         {
             Console.WriteLine("Listing Databases");

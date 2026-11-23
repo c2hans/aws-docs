@@ -113,7 +113,7 @@ The following are policy statement examples you can add for providers to decrypt
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

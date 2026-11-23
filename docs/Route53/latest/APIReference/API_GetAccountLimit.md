@@ -26,11 +26,12 @@ The request uses the following URI parameters.
  ** [Type](#API_GetAccountLimit_RequestSyntax) **   <a name="Route53-GetAccountLimit-request-uri-Type"></a>
 The limit that you want to get. Valid values include the following:
 +  **MAX\_HEALTH\_CHECKS\_BY\_OWNER**: The maximum number of health checks that you can create using the current account.
++  **MAX\_HEALTH\_CHECK\_SOURCES\_BY\_OWNER**: The maximum number of health check sources that you can create using the current account.
 +  **MAX\_HOSTED\_ZONES\_BY\_OWNER**: The maximum number of hosted zones that you can create using the current account.
 +  **MAX\_REUSABLE\_DELEGATION\_SETS\_BY\_OWNER**: The maximum number of reusable delegation sets that you can create using the current account.
 +  **MAX\_TRAFFIC\_POLICIES\_BY\_OWNER**: The maximum number of traffic policies that you can create using the current account.
 +  **MAX\_TRAFFIC\_POLICY\_INSTANCES\_BY\_OWNER**: The maximum number of traffic policy instances that you can create using the current account. (Traffic policy instances are referred to as traffic flow policy records in the Amazon Route 53 console.)
-Valid Values: `MAX_HEALTH_CHECKS_BY_OWNER | MAX_HOSTED_ZONES_BY_OWNER | MAX_TRAFFIC_POLICY_INSTANCES_BY_OWNER | MAX_REUSABLE_DELEGATION_SETS_BY_OWNER | MAX_TRAFFIC_POLICIES_BY_OWNER`
+Valid Values: `MAX_HEALTH_CHECKS_BY_OWNER | MAX_HOSTED_ZONES_BY_OWNER | MAX_TRAFFIC_POLICY_INSTANCES_BY_OWNER | MAX_REUSABLE_DELEGATION_SETS_BY_OWNER | MAX_TRAFFIC_POLICIES_BY_OWNER | MAX_HEALTH_CHECK_SOURCES_BY_OWNER`
 Required: Yes
 
 ## Request Body

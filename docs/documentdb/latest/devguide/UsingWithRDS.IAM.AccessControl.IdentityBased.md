@@ -17,7 +17,7 @@ The following is an example of an IAM policy.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -86,7 +86,7 @@ The following permissions policy grants permissions to a user to run all of the 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -112,7 +112,7 @@ The following permissions policy grants permissions to prevent a user from delet
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -138,7 +138,7 @@ The following permissions policy denies permissions to a user from creating an A
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

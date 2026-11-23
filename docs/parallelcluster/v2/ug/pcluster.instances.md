@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Displays a list of all instances in a cluster.
 
-```
+```sh
 pcluster instances [ -h ] [ -c {{CONFIG_FILE}} ] [ -r {{REGION}} ] {{cluster_name}}
 ```
 

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/yield-optimization
 
 The simplest valid template. Good starting point for testing. Uses session variables for device identification so it works for real viewers.
 
-```
+```JSON
 {
   "app": {
     "bundle": "com.example.myapp",

@@ -48,7 +48,7 @@ If the result is larger than a 64-KB `VARCHAR`, then an error is returned.
 
 The following SQL returns the GeoJSON representation of a linestring.
 
-```
+```sql
 SELECT ST_AsGeoJSON(ST_GeomFromText('LINESTRING(3.141592653589793 -6.283185307179586,2.718281828459045 -1.414213562373095)'));
 ```
 
@@ -60,7 +60,7 @@ st_asgeojson
 
 The following SQL returns the GeoJSON representation of a linestring. The coordinates of the geometries are displayed with six digits of precision.
 
-```
+```sql
 SELECT ST_AsGeoJSON(ST_GeomFromText('LINESTRING(3.141592653589793 -6.283185307179586,2.718281828459045 -1.414213562373095)'), 6);
 ```
 
@@ -72,7 +72,7 @@ st_asgeojson
 
 The following SQL returns the GeoJSON representation of a geography.
 
-```
+```sql
 SELECT ST_AsGeoJSON(ST_GeogFromText('LINESTRING(110 40, 2 3, -10 80, -7 9)'));
 ```
 

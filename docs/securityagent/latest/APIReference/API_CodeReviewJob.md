@@ -83,7 +83,7 @@ Required: No
  ** status **   <a name="securityagent-Type-CodeReviewJob-status"></a>
 The current status of the code review job.
 Type: String
-Valid Values: `IN_PROGRESS | STOPPING | STOPPED | FAILED | COMPLETED`
+Valid Values: `IN_PROGRESS | STOPPING | STOPPED | PAUSING | PAUSED | FAILED | COMPLETED`
 Required: No
 
  ** steps **   <a name="securityagent-Type-CodeReviewJob-steps"></a>

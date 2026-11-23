@@ -36,7 +36,7 @@ The following is a hypothetical sequence that might occur:
 ------
 #### [ Function details ]
 
-   ```
+   ```json
    HTTP/1.1 200
    x-amzn-bedrock-agent-content-type: application/json
    x-amz-bedrock-agent-session-id: session0
@@ -70,7 +70,7 @@ The following is a hypothetical sequence that might occur:
 ------
 #### [ OpenAPI schema ]
 
-   ```
+   ```json
    HTTP/1.1 200
    x-amzn-bedrock-agent-content-type: application/json
    x-amz-bedrock-agent-session-id: session0
@@ -109,7 +109,7 @@ The following is a hypothetical sequence that might occur:
 ------
 #### [ Function details ]
 
-   ```
+   ```json
    POST https://bedrock-agent-runtime.us-east-1.amazonaws.com/agents/{{AGENT12345}}/agentAliases/TSTALIASID/sessions/abb/text
 
    {
@@ -134,7 +134,7 @@ The following is a hypothetical sequence that might occur:
 ------
 #### [ OpenAPI schema ]
 
-   ```
+   ```json
    POST https: //bedrock-agent-runtime.us-east-1.amazonaws.com/agents/AGENT12345/agentAliases/TSTALIASID/sessions/abb/text
 
    {
@@ -169,7 +169,7 @@ If you are using [multi-agent collaboration](agents-multi-agent-collaboration.md
 ------
 #### [ Function details ]
 
-```
+```json
 HTTP/1.1 200
 x-amzn-bedrock-agent-content-type: application/json
 x-amz-bedrock-agent-session-id: session0
@@ -205,7 +205,7 @@ Content-type: application/json
 ------
 #### [ OpenAPI Schema ]
 
-```
+```json
 HTTP/1.1 200
 x-amzn-bedrock-agent-content-type: application/json
 x-amz-bedrock-agent-session-id: session0
@@ -244,7 +244,7 @@ Invoker of supervisor agent sends the results in the `sessionState` field back t
 ------
 #### [ Function details ]
 
-```
+```json
 POST https://bedrock-agent-runtime.us-east-1.amazonaws.com/agents/AGENT12345/agentAliases/TSTALIASID/sessions/abb/text
 
 {
@@ -270,7 +270,7 @@ POST https://bedrock-agent-runtime.us-east-1.amazonaws.com/agents/AGENT12345/age
 ------
 #### [ OpenAPI Schema ]
 
-```
+```json
 POST https: //bedrock-agent-runtime.us-east-1.amazonaws.com/agents/AGENT12345/agentAliases/TSTALIASID/sessions/abb/text
 
 {

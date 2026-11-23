@@ -36,7 +36,7 @@ For information about SVCS\_S3PARTITION, see [SVCS\_S3PARTITION\_SUMMARY](r_SVCS
 
 The following example gets the partition scan details for the last query completed.
 
-```
+```sql
 select query, segment, assignment, min_starttime, max_endtime, min_duration, avg_duration
 from svl_s3partition_summary
 where query = pg_last_query_id()

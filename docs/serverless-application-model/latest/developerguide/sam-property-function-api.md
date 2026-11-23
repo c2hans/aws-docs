@@ -18,7 +18,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-api-syntax.yaml"></a>
 
-```
+```yaml
   [Auth](#sam-function-api-auth): {{ApiFunctionAuth}}
   [Method](#sam-function-api-method): {{String}}
   [Path](#sam-function-api-path): {{String}}
@@ -96,7 +96,7 @@ When you specify this property, AWS SAM modifies your OpenAPI definition. The Op
 #### YAML
 <a name="sam-property-function-api--examples--apievent--yaml"></a>
 
-```
+```yaml
 Events:
   ApiEvent:
     Type: Api

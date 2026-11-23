@@ -71,3 +71,4 @@ For the version of components installed with Spark in this release, see [Release
 + [Using Amazon Redshift integration for Apache Spark with Amazon EMR](emr-spark-redshift.md)
 + [Spark release history](Spark-release-history.md)
 + [Using materialized views with Amazon EMR](emr-spark-materialized-views.md)
++ [Fine-grained access control with Lake Formation](emr-spark-fgac.md)

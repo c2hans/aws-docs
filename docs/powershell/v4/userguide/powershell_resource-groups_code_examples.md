@@ -28,7 +28,7 @@ The following code example shows how to use `Add-RGResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This example adds tag key 'Instances' with value 'workboxes' to the given resource group arn**
 
-```
+```powershell
 Add-RGResourceTag -Tag @{Instances="workboxes"} -Arn arn:aws:resource-groups:eu-west-1:123456789012:group/workboxes
 ```
 **Output:**
@@ -48,7 +48,7 @@ The following code example shows how to use `Find-RGResource`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a ResourceQuery for Instance resource types with tag filters and finds resources. **
 
-```
+```powershell
 $query = [Amazon.ResourceGroups.Model.ResourceQuery]::new()
 $query.Type = [Amazon.ResourceGroups.QueryType]::TAG_FILTERS_1_0
 $query.Query = ConvertTo-Json -Compress -Depth 4 -InputObject @{
@@ -78,7 +78,7 @@ The following code example shows how to use `Get-RGGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves resource group as per the group name**
 
-```
+```powershell
 Get-RGGroup -GroupName auto-no
 ```
 **Output:**
@@ -98,7 +98,7 @@ The following code example shows how to use `Get-RGGroupList`.
 **Tools for PowerShell V4**
 **Example 1: This example lists resource group already created.**
 
-```
+```powershell
 Get-RGGroupList
 ```
 **Output:**
@@ -120,7 +120,7 @@ The following code example shows how to use `Get-RGGroupQuery`.
 **Tools for PowerShell V4**
 **Example 1: This example fetches the resource query for the given resource group**
 
-```
+```powershell
 Get-RGGroupQuery -GroupName auto-no | Select-Object -ExpandProperty ResourceQuery
 ```
 **Output:**
@@ -140,7 +140,7 @@ The following code example shows how to use `Get-RGGroupResourceList`.
 **Tools for PowerShell V4**
 **Example 1: This example lists group resources on the basis of filtered by resource type**
 
-```
+```powershell
 Get-RGGroupResourceList -Filter @{Name="resource-type";Values="AWS::EC2::Instance"} -GroupName auto-yes | Select-Object -ExpandProperty ResourceIdentifiers
 ```
 **Output:**
@@ -163,7 +163,7 @@ The following code example shows how to use `Get-RGResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This example lists tags for the given resource group arn**
 
-```
+```powershell
 Get-RGResourceTag -Arn arn:aws:resource-groups:eu-west-1:123456789012:group/workboxes
 ```
 **Output:**
@@ -183,7 +183,7 @@ The following code example shows how to use `New-RGGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new tag-based AWS Resource Groups resource group named TestPowerShellGroup. The group includes Amazon EC2 instances in the current region that are tagged with the tag key "Name", and tag value "test2". The command returns the query and type of group, and the results of the operation.**
 
-```
+```powershell
 $ResourceQuery = New-Object -TypeName Amazon.ResourceGroups.Model.ResourceQuery
 $ResourceQuery.Type = "TAG_FILTERS_1_0"
 $ResourceQuery.Query = '{"ResourceTypeFilters":["AWS::EC2::Instance"],"TagFilters":[{"Key":"Name","Values":["test2"]}]}'
@@ -216,7 +216,7 @@ The following code example shows how to use `Remove-RGGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the named resource group**
 
-```
+```powershell
 Remove-RGGroup -GroupName non-tag-cfn-elbv2
 ```
 **Output:**
@@ -241,7 +241,7 @@ The following code example shows how to use `Remove-RGResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This example removes mentioned tag from the resource group**
 
-```
+```powershell
 Remove-RGResourceTag -Arn arn:aws:resource-groups:eu-west-1:123456789012:group/workboxes -Key Instances
 ```
 **Output:**
@@ -266,7 +266,7 @@ The following code example shows how to use `Update-RGGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example updates the description of the group**
 
-```
+```powershell
 Update-RGGroup -GroupName auto-yes -Description "Instances auto-remove"
 ```
 **Output:**
@@ -286,7 +286,7 @@ The following code example shows how to use `Update-RGGroupQuery`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a query object and updates the query for the group.**
 
-```
+```powershell
 $query = [Amazon.ResourceGroups.Model.ResourceQuery]::new()
 $query.Type = [Amazon.ResourceGroups.QueryType]::TAG_FILTERS_1_0
 $query.Query = @{

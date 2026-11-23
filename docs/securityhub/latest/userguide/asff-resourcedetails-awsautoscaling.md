@@ -17,7 +17,7 @@ The following is an example `AwsAutoScalingAutoScalingGroup` finding in the AWS 
 
 **Example**
 
-```
+```JSON
 "AwsAutoScalingAutoScalingGroup": {
         "CreatedTime": "2017-10-17T14:47:11Z",
         "HealthCheckGracePeriod": 300,

@@ -24,7 +24,7 @@ The following code example shows how to get started using Amazon EC2.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/EC2#code-examples).
 
-```
+```csharp
 namespace EC2Actions;
 
 public class HelloEc2

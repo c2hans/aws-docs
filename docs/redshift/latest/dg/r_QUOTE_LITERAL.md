@@ -31,7 +31,7 @@ The QUOTE\_LITERAL function returns a `CHAR` or `VARCHAR` string that is the sam
 
 To return the string `''CAT''` with SINGLE quotation marks, use the following example.
 
-```
+```sql
 SELECT QUOTE_LITERAL('''CAT''');
 
 +---------------+
@@ -45,7 +45,7 @@ The following examples use data from the CATEGORY table in the TICKIT sample dat
 
 To return the CATNAME column surrounded by single quotation marks, use the following example.
 
-```
+```sql
 SELECT catid, QUOTE_LITERAL(catname)
 FROM category
 ORDER BY 1,2;
@@ -69,7 +69,7 @@ ORDER BY 1,2;
 
 To return the CATID column surrounded by single quotation marks, use the following example.
 
-```
+```sql
 SELECT QUOTE_LITERAL(catid), catname
 FROM category
 ORDER BY 1,2;

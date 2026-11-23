@@ -38,7 +38,7 @@ For more information, see [What is Tag Editor?](https://docs.aws.amazon.com/tag-
 **Tools for PowerShell V4**
 **Example 1: Returns all tag keys in the specified region. If the -Region parameter is not specified the cmdlet will attempt to infer the region from the default shell region or EC2 instance metadata. Note that the tag keys are not returned in any specific order.**
 
-```
+```powershell
 Get-RGTTagKey -region us-west-2
 ```
 **Output:**
@@ -52,7 +52,7 @@ stage
 **Tools for PowerShell V5**
 **Example 1: Returns all tag keys in the specified region. If the -Region parameter is not specified the cmdlet will attempt to infer the region from the default shell region or EC2 instance metadata. Note that the tag keys are not returned in any specific order.**
 
-```
+```powershell
 Get-RGTTagKey -region us-west-2
 ```
 **Output:**

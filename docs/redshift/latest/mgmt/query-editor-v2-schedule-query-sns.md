@@ -13,7 +13,7 @@ For the Amazon SNS topic that you specify to send email notifications, create th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "__default_policy_ID",

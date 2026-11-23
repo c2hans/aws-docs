@@ -33,7 +33,7 @@ To generate the `seed.iso` boot image, you need two configuration files:
 
    1. Open the `meta-data` file using your preferred editor and add the following.
 
-      ```
+      ```yaml
       local-hostname: {{vm_hostname}}
       # eth0 is the default network interface enabled in the image. You can configure static network settings with an entry like the following.
       network-interfaces: |
@@ -58,7 +58,7 @@ To generate the `seed.iso` boot image, you need two configuration files:
 
    1. Open the `user-data` file using your preferred editor and add the following.
 
-      ```
+      ```yaml
       #cloud-config
       #vim:syntax=yaml
       users:
@@ -74,7 +74,7 @@ To generate the `seed.iso` boot image, you need two configuration files:
 
    1. (Optional) By default, cloud-init applies network settings each time the VM boots. Add the following to prevent cloud-init from applying network settings at each boot, and to retain the network settings applied during the first boot.
 
-      ```
+      ```yaml
       # NOTE: Cloud-init applies network settings on every boot by default. To retain network settings
       # from first boot, add the following ‘write_files’ section:
       write_files:

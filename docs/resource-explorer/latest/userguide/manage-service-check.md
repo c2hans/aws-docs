@@ -35,7 +35,7 @@ You can check which Regions have user-owned indexes (providing full results) ver
 **To check index types and result completeness by Region**
 Run the following command to see which AWS Regions have user-owned indexes (providing complete results). Regions not listed have only Resource Explorer-owned indexes (providing partial results).
 
-```
+```bash
 $ aws resource-explorer-2 list-indexes
 {
     "Indexes": [

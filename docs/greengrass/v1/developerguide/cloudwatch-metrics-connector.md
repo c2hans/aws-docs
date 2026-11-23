@@ -45,7 +45,7 @@ This configures your device to meet the Python requirement for AWS IoT Greengras
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -78,7 +78,7 @@ This configures your device to meet the Python requirement for AWS IoT Greengras
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -195,7 +195,7 @@ Valid pattern: `^([2-9]\d{3}|[1-9]\d{4,})$`
 
 The following CLI command creates a `ConnectorDefinition` with an initial version that contains the CloudWatch Metrics connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -281,7 +281,7 @@ For more information, see [CloudWatch limits](https://docs.aws.amazon.com/Amazon
 
 **Example input**
 
-```
+```json
 {
    "request": {
        "namespace": "Greengrass",
@@ -313,7 +313,7 @@ This connector publishes status information as output data on an MQTT topic.
 **Example output: Success**
 The response includes the namespace of the metric data and the `RequestId` field from the CloudWatch response.
 
-```
+```json
 {
    "response": {
         "cloudwatch_rid":"70573243-d723-11e8-b095-75ff2EXAMPLE",
@@ -325,7 +325,7 @@ The response includes the namespace of the metric data and the `RequestId` field
 
 **Example output: Failure**
 
-```
+```json
 {
    "response" : {
         "namespace": "Greengrass",
@@ -377,7 +377,7 @@ The [Get started with connectors (console)](connectors-console.md) and [Get star
 
 The following example Lambda function sends an input message to the connector.
 
-```
+```python
 import greengrasssdk
 import time
 import json

@@ -18,7 +18,7 @@ The following is an example IAM policy. If some permissions are not needed, you 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

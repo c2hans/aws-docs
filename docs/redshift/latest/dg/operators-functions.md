@@ -185,7 +185,7 @@ When you set the `enable_large_strings_opt_in` parameter to `Yes`, [String funct
 
 The following example uses SUBSTRING to extract the preview of a string with size 5,000,000 bytes stored in a SUPER JSON object
 
-```
+```SQL
 CREATE TABLE customer_data (
    customer_id INT,
    profile SUPER
@@ -209,7 +209,7 @@ FROM customer_data;
 
 The following example demonstrates LEFT, RIGHT, and CONCAT functions on string literals from a SUPER array:
 
-```
+```SQL
 CREATE TABLE documents (
    doc_id INT,
    chapters SUPER
@@ -234,7 +234,7 @@ FROM documents;
 
 The following example stores standalone string in SUPER:
 
-```
+```SQL
 CREATE TABLE text_storage (
    text_id INT,
    content SUPER

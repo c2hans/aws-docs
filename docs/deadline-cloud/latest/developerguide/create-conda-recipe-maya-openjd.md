@@ -24,7 +24,7 @@ The `maya-openjd` package depends on two other packages from the Deadline Cloud 
 
 Build the `deadline` package.
 
-```
+```bash
 rattler-build publish deadline/recipe/recipe.yaml \
     --to file://$HOME/my-conda-channel \
     --build-number=+1 \
@@ -33,7 +33,7 @@ rattler-build publish deadline/recipe/recipe.yaml \
 
 Build the `openjd-adaptor-runtime` package.
 
-```
+```bash
 rattler-build publish openjd-adaptor-runtime/recipe/recipe.yaml \
     --to file://$HOME/my-conda-channel \
     --build-number=+1 \
@@ -42,7 +42,7 @@ rattler-build publish openjd-adaptor-runtime/recipe/recipe.yaml \
 
 Build the `maya-openjd` package.
 
-```
+```bash
 rattler-build publish maya-openjd/recipe/recipe.yaml \
     --to file://$HOME/my-conda-channel \
     --build-number=+1 \

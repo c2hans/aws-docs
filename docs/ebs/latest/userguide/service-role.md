@@ -25,7 +25,7 @@ If you are using the Amazon Data Lifecycle Manager console, Amazon Data Lifecycl
 
 If you are not using the console, you can manually create the service roles using the [create-default-role](https://docs.aws.amazon.com/cli/latest/reference/dlm/create-default-role.html) command. For `--resource-type`, specify `snapshot` to create AWSDataLifecycleManagerDefaultRole, or `image` to create AWSDataLifecycleManagerDefaultRoleForAMIManagement.
 
-```
+```bash
 $ aws dlm create-default-role --resource-type {{snapshot|image}}
 ```
 
@@ -46,7 +46,7 @@ As an alternative to using the default service roles, you can create custom IAM 
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -154,7 +154,7 @@ As an alternative to using the default service roles, you can create custom IAM 
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -222,7 +222,7 @@ As an alternative to using the default service roles, you can create custom IAM 
 
 ****
 
-      ```
+      ```json
       {
       	"Version":"2012-10-17",
       	"Statement": [{
@@ -239,7 +239,7 @@ As an alternative to using the default service roles, you can create custom IAM 
 
       We recommend that you use the `aws:SourceAccount` and `aws:SourceArn` condition keys to protect yourself against the [confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html). For example, you could add the following condition block to the previous trust policy. The `aws:SourceAccount` is the owner of the lifecycle policy and the `aws:SourceArn` is the ARN of the lifecycle policy. If you don't know the lifecycle policy ID, you can replace that portion of the ARN with a wildcard (`*`) and then update the trust policy after you create the lifecycle policy.
 
-      ```
+      ```json
       "Condition": {
           "StringEquals": {
               "aws:SourceAccount": "{{account_id}}"

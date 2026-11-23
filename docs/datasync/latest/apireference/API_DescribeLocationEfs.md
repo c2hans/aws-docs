@@ -114,7 +114,7 @@ HTTP Status Code: 400
 
 The following example shows how to get information about a specific Amazon EFS file system location.
 
-```
+```json
 {
   "LocationArn": "arn:aws:datasync:us-east-2:111222333444:location/loc-12abcdef012345678"
 }
@@ -125,7 +125,7 @@ The following example shows how to get information about a specific Amazon EFS f
 
 The following example returns location details about an Amazon EFS file system.
 
-```
+```json
 {
     "CreationTime": 1653319021.353,
     "Ec2Config": {
@@ -144,7 +144,7 @@ The following example returns location details about an Amazon EFS file system.
 
 The following example returns location details about an Amazon EFS file system with restricted access, including the `AccessPointArn`, `FileSystemAccessRoleArn`, and `InTransitEncryption` elements.
 
-```
+```json
 {
     "CreationTime": 1653319021.353,
     "AccessPointArn": "arn:aws:elasticfilesystem:us-east-2:111222333444:access-point/fsap-1234567890abcdef0",

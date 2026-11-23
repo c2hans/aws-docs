@@ -140,7 +140,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="apps-application-id-channels-voice-request-body-put-example"></a>
 
-```
+```json
 {
   "Enabled": boolean
 }
@@ -152,7 +152,7 @@ Retrieves information about the communication requirements and options that are 
 #### VoiceChannelResponse schema
 <a name="apps-application-id-channels-voice-response-body-voicechannelresponse-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "IsArchived": boolean,
@@ -170,7 +170,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-channels-voice-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

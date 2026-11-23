@@ -54,17 +54,17 @@ To sign in or configure a profile follow the below steps.
 We have three different modules for PowerShell - `AWS.Tools`, `AWSPowerShell.NetCore` and `AWSPowerShell`. See [What are the AWS Tools for PowerShell?](pstools-welcome.md) for more information.
    + In your PowerShell terminal, run the cmdlet. This will use the `default` profile.
 
-     ```
+     ```text
      PS > Invoke-AWSLogin
      ```
    + To sign in to a named profile or create a new one, use the `-ProfileName` parameter.
 
-     ```
+     ```text
      PS > Invoke-AWSLogin -ProfileName 'my-dev-profile'
      ```
    + If this is a new profile or no AWS Region has been specified or configured in any of your previous profiles/environment variables, the cmdlet prompts you to provide a region.
 
-     ```
+     ```text
      Press Ctrl+C to cancel the following login prompts.
 
      Specify AWS Region
@@ -79,7 +79,7 @@ We have three different modules for PowerShell - `AWS.Tools`, `AWSPowerShell.Net
 
 1. The AWS Tools for PowerShell attempts to open your default browser for the sign in process of your AWS account.
 
-   ```
+   ```text
    Using region 'us-west-2'
    Attempting to open the login page for 'us-west-2' in your default browser.
    If the browser does not open, use the following URL to complete your login:
@@ -89,12 +89,12 @@ We have three different modules for PowerShell - `AWS.Tools`, `AWSPowerShell.Net
    ```
    + If the device using AWS Tools for PowerShell does not have a browser, you can use the `-Remote` parameter to provide a URL for you to open on a browser-enabled device.
 
-     ```
+     ```text
      PS > Invoke-AWSLogin -Remote
      ```
    + If you used the `-Remote` parameter, instructions to manually start the sign in process are displayed based on the type of authorization you are using. The URL displayed is a unique URL starting with: https://signin.us-east-1.amazonaws.com/authorize. Once you complete the browser log in, you will need to copy and paste the resulting authorization code back in the terminal.
 
-     ```
+     ```text
      Press Ctrl+C to cancel the following login prompts.
      Using region 'us-west-2' determined by profile/environment defaults. To override, specify '-Region' parameter.
      Please complete the login workflow via the following URL:
@@ -107,7 +107,7 @@ We have three different modules for PowerShell - `AWS.Tools`, `AWSPowerShell.Net
 1. In the browser, select your credentials to use from the displayed list and then return to your terminal.
    + If the profile you are configuring has a previously configured login session that does not match your new session, the AWS Tools for PowerShell prompts you to confirm that you are switching the session that corresponds to the existing profile.
 
-     ```
+     ```text
      WARNING: Previously profile default was configured for arn:aws:iam::0123456789012:user/ReadOnly,
                      and is now being updated to arn:aws:iam::0123456789012:user/Admin.
 
@@ -116,7 +116,7 @@ We have three different modules for PowerShell - `AWS.Tools`, `AWSPowerShell.Net
 
 1. A final message describes the completed profile configuration.
 
-   ```
+   ```text
    Login completed successfully for profile 'my-dev-profile'.
    ```
 
@@ -127,7 +127,7 @@ We have three different modules for PowerShell - `AWS.Tools`, `AWSPowerShell.Net
 
 These steps result in creating the default or specified profile in the config file that looks like the following:
 
-```
+```text
 [default]
 login_session = arn:aws:iam::0123456789012:user/username
 region = us-east-1
@@ -142,13 +142,13 @@ region = us-east-1
 
 Once signed in, you can use your credentials to invoke Tools for PowerShell cmdlets with the associated profile. The following example calls the `Get-STSCallerIdentity` cmdlet using the default profile:
 
-```
+```text
 PS > Get-STSCallerIdentity
 ```
 
 To check for a specific session, use the `-ProfileName` parameter.
 
-```
+```text
 PS > Get-STSCallerIdentity -ProfileName 'my-dev-profile'
 ```
 
@@ -159,19 +159,19 @@ The temporary credential token will expire in 15 minutes, but the AWS Tools for 
 
 When you are done with your session, you can let your credentials expire, or run the `Invoke-AWSLogout` cmdlet to delete your cached credentials. If no profile is specified in the CLI or in the AWS\_PROFILE environment variable, the command signs you out of your default profile. The following example signs you out of your default profile.
 
-```
+```text
 PS > Invoke-AWSLogout
 ```
 
 To sign out of a specific profile session, use the `-ProfileName` parameter.
 
-```
+```text
 PS > Invoke-AWSLogout -ProfileName 'my-dev-profile'
 ```
 
 To sign out of all the profile sessions you've logged in, use the `-All` parameter.
 
-```
+```text
 PS > Invoke-AWSLogout -All
 ```
 
@@ -199,14 +199,14 @@ The following procedure updates the shared AWS `config` file with SSO informatio
 
    For example, if installing the modularized version of the Tools for PowerShell on Windows, you would most likely run commands similar to the following:
 
-   ```
+   ```text
    Install-Module -Name AWS.Tools.Installer
    Install-AWSToolsModule AWS.Tools.Common
    ```
 
 1. Run the following command. Replace the example property values with values from your IAM Identity Center configuration. For information about these properties and how to find them, see [IAM Identity Center credential provider settings](https://docs.aws.amazon.com/sdkref/latest/guide/feature-sso-credentials.html#feature-sso-credentials-profile) in the *AWS SDKs and Tools Reference Guide*.
 
-   ```
+   ```text
    $params = @{
      ProfileName = 'my-sso-profile'
      AccountId = '{{111122223333}}'
@@ -254,7 +254,7 @@ The following procedure updates the shared AWS `config` file with SSO informatio
 
 Before running commands that accesses AWS services, you need an active AWS access portal session so that the Tools for PowerShell can use IAM Identity Center authentication to resolve credentials. To sign in to the AWS access portal, run the following command in PowerShell, where `-ProfileName my-sso-profile` is the name of the profile that was created in the shared `config` file when you followed the procedure in the previous section of this topic.
 
-```
+```text
 Invoke-AWSSSOLogin -ProfileName my-sso-profile
 ```
 
@@ -266,7 +266,7 @@ The Tools for PowerShell informs you that SSO login was successful.
 
 To test if you already have an active session, run the following command after installing or importing the `AWS.Tools.SecurityToken` module as needed.
 
-```
+```text
 Get-STSCallerIdentity -ProfileName my-sso-profile
 ```
 
@@ -282,7 +282,7 @@ The following is an example of how to use IAM Identity Center with the Tools for
 
 Install or import the `AWS.Tools.S3` module as needed and then use the following PowerShell command to display a list of the S3 buckets.
 
-```
+```text
 Get-S3Bucket -ProfileName my-sso-profile
 ```
 

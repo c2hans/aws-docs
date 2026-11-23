@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="createdevicedefinition-post-cli"></a>
 
-```
+```bash
 aws greengrass create-device-definition \
   [--name <value>] \
   [--initial-version <value>] \
@@ -27,7 +27,7 @@ aws greengrass create-device-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "Name": "string",
 "InitialVersion": {
@@ -56,7 +56,7 @@ cli-input-json format:
 Information required to create a device definition.
 where used: body; required: true
 
-```
+```json
 {
 "Name": "string",
 "InitialVersion": {
@@ -120,7 +120,7 @@ type: string
 
  [ DefinitionInformation](definitions-definitioninformation.md)
 
-```
+```json
 {
 "Name": "string",
 "Id": "string",
@@ -160,7 +160,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

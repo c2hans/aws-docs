@@ -9,7 +9,7 @@ Creates a new case using an existing case template. Templates come with predefin
 ## Parameter object
 <a name="createcase-parameter"></a>
 
-```
+```json
 "Parameters": {
         "LinkContactToCase": "true" or "false", If set to true, cases will open automatically when the agent accepts the contact.
         "CaseTemplateId": A templateId aligned with the existing case templateName

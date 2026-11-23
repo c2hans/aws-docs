@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # EksAddOnFulfillmentOption
 
-Describes an Amazon EKS add-on fulfillment option.
+Describes an Amazon Elastic Kubernetes Service (Amazon EKS) add-on fulfillment option.
 
 ## Contents
 <a name="API_marketplace-discovery_EksAddOnFulfillmentOption_Contents"></a>
@@ -49,7 +49,7 @@ Type: Array of [EksAddOnOperatingSystem](API_marketplace-discovery_EksAddOnOpera
 Required: No
 
  ** releaseNotes **   <a name="AWSMarketplaceService-Type-marketplace-discovery_EksAddOnFulfillmentOption-releaseNotes"></a>
-Release notes describing changes in this version of the fulfillment option.
+Release notes that describe the changes in this version of the fulfillment option.
 Type: String
 Required: No
 

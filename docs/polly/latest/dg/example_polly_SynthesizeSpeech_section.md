@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Polly#code-examples).
 
-```
+```csharp
     using System;
     using System.IO;
     using System.Threading.Tasks;
@@ -90,7 +90,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 ```
 Synthesize speech from text using speech marks with Amazon Polly using an AWS SDK.
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.IO;
@@ -147,7 +147,7 @@ Synthesize speech from text using speech marks with Amazon Polly using an AWS SD
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/polly#code-examples).
 
-```
+```java
 import javazoom.jl.decoder.JavaLayerException;
 import software.amazon.awssdk.core.ResponseInputStream;
 import software.amazon.awssdk.regions.Region;
@@ -243,7 +243,7 @@ public class PollyDemo {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/polly#code-examples).
 
-```
+```python
 class PollyWrapper:
     """Encapsulates Amazon Polly functions."""
 
@@ -313,7 +313,7 @@ class PollyWrapper:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/polly#code-examples).
 
-```
+```ruby
 require 'aws-sdk-polly' # In v2: require 'aws-sdk'
 
 begin
@@ -371,7 +371,7 @@ end
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/polly#code-examples).
 
-```
+```rust
 async fn synthesize(client: &Client, filename: &str) -> Result<(), Error> {
     let content = fs::read_to_string(filename);
 
@@ -412,7 +412,7 @@ async fn synthesize(client: &Client, filename: &str) -> Result<(), Error> {
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ply#code-examples).
 
-```
+```sap-abap
     TRY.
         " Only pass optional language code if it has a value
         IF iv_lang_code IS NOT INITIAL.

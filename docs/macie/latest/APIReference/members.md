@@ -75,7 +75,7 @@ Associates an account with an Amazon Macie administrator account.
 #### POST schema
 <a name="members-request-body-post-example"></a>
 
-```
+```json
 {
   "account": {
     "accountId": "string",
@@ -92,7 +92,7 @@ Associates an account with an Amazon Macie administrator account.
 #### ListMembersResponse schema
 <a name="members-response-body-listmembersresponse-example"></a>
 
-```
+```json
 {
   "members": [
     {
@@ -115,7 +115,7 @@ Associates an account with an Amazon Macie administrator account.
 #### CreateMemberResponse schema
 <a name="members-response-body-creatememberresponse-example"></a>
 
-```
+```json
 {
   "arn": "string"
 }
@@ -124,7 +124,7 @@ Associates an account with an Amazon Macie administrator account.
 #### ValidationException schema
 <a name="members-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -133,7 +133,7 @@ Associates an account with an Amazon Macie administrator account.
 #### ServiceQuotaExceededException schema
 <a name="members-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -142,7 +142,7 @@ Associates an account with an Amazon Macie administrator account.
 #### AccessDeniedException schema
 <a name="members-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -151,7 +151,7 @@ Associates an account with an Amazon Macie administrator account.
 #### ResourceNotFoundException schema
 <a name="members-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -160,7 +160,7 @@ Associates an account with an Amazon Macie administrator account.
 #### ConflictException schema
 <a name="members-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -169,7 +169,7 @@ Associates an account with an Amazon Macie administrator account.
 #### ThrottlingException schema
 <a name="members-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -178,7 +178,7 @@ Associates an account with an Amazon Macie administrator account.
 #### InternalServerException schema
 <a name="members-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

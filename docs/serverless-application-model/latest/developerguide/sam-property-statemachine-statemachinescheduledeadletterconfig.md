@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-statemachine-statemachinescheduledeadletterconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#sam-statemachine-statemachinescheduledeadletterconfig-arn): {{String}}
   [QueueLogicalId](#sam-statemachine-statemachinescheduledeadletterconfig-queuelogicalid): {{String}}
   [Type](#sam-statemachine-statemachinescheduledeadletterconfig-type): {{String}}
@@ -56,7 +56,7 @@ DeadLetterConfig
 #### YAML
 <a name="sam-property-statemachine-statemachinescheduledeadletterconfig--examples--deadletterconfig--yaml"></a>
 
-```
+```yaml
 DeadLetterConfig:
   Type: SQS
   QueueLogicalId: MyDLQ

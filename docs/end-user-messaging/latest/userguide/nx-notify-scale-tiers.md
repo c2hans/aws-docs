@@ -32,7 +32,7 @@ The tier upgrade process uses the existing registration system.
 
 1. Create a brand verification registration.
 
-   ```
+   ```bsh
    $ aws pinpoint-sms-voice-v2 create-registration \
    > --registration-type MANAGED_ROUTES_BRAND_VERIFICATION
    ```
@@ -41,7 +41,7 @@ The tier upgrade process uses the existing registration system.
 
 1. Submit the registration.
 
-   ```
+   ```bsh
    $ aws pinpoint-sms-voice-v2 submit-registration-version \
    > --registration-id {{reg-1234567890abcdef0}}
    ```

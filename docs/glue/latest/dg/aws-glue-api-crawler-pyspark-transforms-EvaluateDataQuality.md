@@ -48,7 +48,7 @@ dqResults.toDF().show()
 ### Output
 <a name="pyspark-EvaluateDataQuality-example-output"></a>
 
-```
+```json
 root
 |-- Rule: string
 |-- Outcome: string

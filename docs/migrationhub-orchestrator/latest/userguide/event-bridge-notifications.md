@@ -14,7 +14,7 @@ When you are creating a notification configuration, you can specify an **Advance
 The following JSON samples can be used as advanced filters for your notification configurations to support common use cases.
 + Receive a notification when a workflow fails:
 
-  ```
+  ```json
   {
     "detail": {
       "$or": [
@@ -34,7 +34,7 @@ The following JSON samples can be used as advanced filters for your notification
   ```
 + Receive a notification when a workflow’s step changes:
 
-  ```
+  ```json
   {
     "detail": {
       "resourceType": [
@@ -45,7 +45,7 @@ The following JSON samples can be used as advanced filters for your notification
   ```
 + Receive a notification when a workflow requires manual input:
 
-  ```
+  ```json
   {
     "detail": {
       "status": [

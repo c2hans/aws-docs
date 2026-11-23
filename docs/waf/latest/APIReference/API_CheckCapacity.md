@@ -267,6 +267,18 @@ Returns the web ACL capacity unit (WCU) requirements for a specified scope and s
                            }
                         }
                      },
+                     "AWSManagedRulesAISecurityRuleSet": {
+                        "BedrockGuardrails": {
+                           "Disable": {
+                           },
+                           "ProtectRequestAndResponse": {
+                              "RoleArn": "{{string}}"
+                           },
+                           "ProtectRequestOnly": {
+                              "RoleArn": "{{string}}"
+                           }
+                        }
+                     },
                      "AWSManagedRulesAntiDDoSRuleSet": {
                         "ClientSideActionConfig": {
                            "Challenge": {

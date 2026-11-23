@@ -28,7 +28,7 @@ For any AWS KMS Key in AWS KMS, you can control who has access to those keys and
 
 For example, the following policy uses the kms:ViaService condition to allow a customer managed AWS KMS Key to be used for the specified actions only when the request comes from Amazon EC2 or Amazon RDS in a specific Region (us-west-2) on behalf of a specific user (ExampleUser).
 
-```
+```json
 {
 “Version”: “2012-10-17”,
 “Statement”: [

@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 The following example sends the message supplied on the command line to all subscribers to the Amazon SNS topic with the ARN specified on the command line.
 
-```
+```go
 package main
 
 import (

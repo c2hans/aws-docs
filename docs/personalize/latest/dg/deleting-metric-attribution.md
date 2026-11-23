@@ -33,7 +33,7 @@ You delete a metric attribution on the overview page for your metric attribution
 
 To delete a metric attribution with the AWS CLI, use the `delete-metric-attribution` command as follows.
 
-```
+```cmd
 aws personalize delete-metric-attribution --metric-attribution-arn {{metric attribution ARN}}
 ```
 
@@ -45,7 +45,7 @@ aws personalize delete-metric-attribution --metric-attribution-arn {{metric attr
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')
@@ -58,7 +58,7 @@ response = personalize.delete_metric_attribution(
 ------
 #### [ SDK for Java 2.x ]
 
-```
+```java
 public static void deleteMetricAttribution(PersonalizeClient client, String metricAttributionArn) {
 
     try {
@@ -81,7 +81,7 @@ public static void deleteMetricAttribution(PersonalizeClient client, String metr
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 // Get service clients and commands using ES6 syntax.
 import { DeleteMetricAttributionCommand, PersonalizeClient } from
   "@aws-sdk/client-personalize";

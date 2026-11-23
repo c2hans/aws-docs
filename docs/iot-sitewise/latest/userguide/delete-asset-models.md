@@ -51,7 +51,7 @@ Use the [DeleteAssetModel](https://docs.aws.amazon.com/iot-sitewise/latest/APIRe
 
 1. Run the following command to list all assets created from the model. Replace {{asset-model-id}} with the ID or the external ID of the asset model.
 
-   ```
+   ```bash
    aws iotsitewise list-assets --asset-model-id {{asset-model-id}}
    ```
 
@@ -61,7 +61,7 @@ Use the [DeleteAssetModel](https://docs.aws.amazon.com/iot-sitewise/latest/APIRe
 
 1. Run the following command to delete the asset model. Replace {{asset-model-id}} with the ID or external ID of the asset model.
 
-   ```
+   ```bash
    aws iotsitewise delete-asset-model --asset-model-id {{asset-model-id}}
    ```
 

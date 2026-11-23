@@ -26,7 +26,7 @@ For non-production environments, you can configure your credentials in the appse
 
 1. Add AWS settings to appsettings.Development.json. The configuration below sets `Profile` and `Region`.
 
-   ```
+   ```js
    {
        "AWS": {
            "Profile": "local-test-profile",

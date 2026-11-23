@@ -43,7 +43,7 @@ The player object is `IVSPlayer`. It can be initialized as shown below:
 ------
 #### [ Swift ]
 
-```
+```swift
 import AmazonIVSPlayer
 
 let player = IVSPlayer()
@@ -52,7 +52,7 @@ let player = IVSPlayer()
 ------
 #### [ Objective-C ]
 
-```
+```objectivec
 #import <AmazonIVSPlayer/AmazonIVSPlayer.h>
 
 IVSPlayer *player = [[IVSPlayer alloc] init];
@@ -68,7 +68,7 @@ Delegate callbacks provide information on playback state, events, and errors. Al
 ------
 #### [ Swift ]
 
-```
+```swift
 // Self must conform to IVSPlayer.Delegate
 player.delegate = self
 ```
@@ -76,7 +76,7 @@ player.delegate = self
 ------
 #### [ Objective-C ]
 
-```
+```objectivec
 // Self must conform to IVSPlayer.Delegate
 player.delegate = self
 ```
@@ -93,7 +93,7 @@ In both cases, display the video from a player instance by using the `player` pr
 ------
 #### [ Swift ]
 
-```
+```swift
 // When using IVSPlayerView:
 playerView.player = player
 
@@ -104,7 +104,7 @@ playerLayer.player = player
 ------
 #### [ Objective-C ]
 
-```
+```objectivec
 // When using IVSPlayerView:
 playerView.player = player;
 
@@ -122,14 +122,14 @@ The player loads the stream asynchronously. Its state indicates when it is ready
 ------
 #### [ Swift ]
 
-```
+```swift
 player.load(url)
 ```
 
 ------
 #### [ Objective-C ]
 
-```
+```objectivec
 [player load:url];
 ```
 
@@ -143,7 +143,7 @@ When the player is ready, use `play` to begin playback. Use the delegate interfa
 ------
 #### [ Swift ]
 
-```
+```swift
 func player(_ player: IVSPlayer, didChangeState state: IVSPlayer.State) {
     if state == .ready {
         player.play()
@@ -154,7 +154,7 @@ func player(_ player: IVSPlayer, didChangeState state: IVSPlayer.State) {
 ------
 #### [ Objective-C ]
 
-```
+```objectivec
 - (void)player:(IVSPlayer *)player didChangeState:(IVSPlayerState)state {
     if (state == IVSPlayerStateReady) {
         [player play];
@@ -172,7 +172,7 @@ The player does not support playback while the app is in the background, but it 
 ------
 #### [ Swift ]
 
-```
+```swift
 override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -190,7 +190,7 @@ override func viewDidLoad() {
 ------
 #### [ Objective-C ]
 
-```
+```objectivec
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -228,7 +228,7 @@ The following simple, view-controller snippet loads and plays a URL in a player 
 ------
 #### [ Swift ]
 
-```
+```swift
 import AmazonIVSPlayer
 
 class MyViewController: UIViewController {
@@ -271,7 +271,7 @@ extension MyViewController: IVSPlayer.Delegate {
 ------
 #### [ Objective-C ]
 
-```
+```objectivec
 // MyViewController.h
 
 @class IVSPlayerView;

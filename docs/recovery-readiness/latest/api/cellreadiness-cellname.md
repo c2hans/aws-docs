@@ -69,7 +69,7 @@ Enable CORS by returning correct headers.
 #### GetCellReadinessSummaryOutput schema
 <a name="cellreadiness-cellname-response-body-getcellreadinesssummaryoutput-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "readiness": enum,

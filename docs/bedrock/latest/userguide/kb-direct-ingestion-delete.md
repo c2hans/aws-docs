@@ -29,7 +29,7 @@ To delete specific documents from your data source through the Amazon Bedrock AP
 For each document that you want to delete, add a [DocumentIdentifier](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DocumentIdentifier.html) item in the `documentIdentifiers` array in one of the following formats:
 + If the data source is a custom one, specify the ID of the document in the `id` field:
 
-  ```
+  ```json
   {
       "custom": {
           "id": "string"
@@ -39,7 +39,7 @@ For each document that you want to delete, add a [DocumentIdentifier](https://do
   ```
 + If the data source is an Amazon S3 one, specify the S3 URI of the document in the `uri` field:
 
-  ```
+  ```json
   {
       "dataSourceType": "S3",
       "s3": {

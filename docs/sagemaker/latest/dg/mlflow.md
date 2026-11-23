@@ -174,7 +174,7 @@ All MLflow App data plane calls are recorded under the single event name `CallMl
 
 The following is an example `CallMlflowApp` data event for a `search_experiments` call, with account-specific values redacted:
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

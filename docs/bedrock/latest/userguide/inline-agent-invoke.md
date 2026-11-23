@@ -38,7 +38,7 @@ The following fields are optional:
 
 The following `InvokeInlineAgent` API example provides complete inline agent configurations including the foundation model, instructions, action groups with code interpreter, guardrails, and knowledge bases.
 
-```
+```go
 response = bedrock_agent_runtime.invoke_inline_agent(
     // Initialization parameters: cannot be changed for a conversation
     sessionId='uniqueSessionId',
@@ -98,7 +98,7 @@ response = bedrock_agent_runtime.invoke_inline_agent(
 
 You can include model reasoning parameters in the request. The following is an example of a single prompt that turns on model reasoning in the `additionalModelRequestFields`.
 
-```
+```JSON
 {
     "basePromptTemplate": " ... ",
     "inferenceConfiguration": {

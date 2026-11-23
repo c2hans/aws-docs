@@ -22,7 +22,7 @@ To modify the JVM’s TTL, set the [networkaddress.cache.ttl](https://docs.oracl
 
 Call [`java.security.Security.setProperty()`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/Security.html) early in your application startup, before any AWS SDK clients are created and before any network requests are made:
 
-```
+```java
 import java.security.Security;
 
 public class MyApplication {
@@ -41,7 +41,7 @@ Set the `networkaddress.cache.ttl` property in the `$JAVA_HOME/jre/lib/security/
 
 The following is a snippet from a `java.security` file that shows the TTL cache set to 5 seconds.
 
-```
+```ini
 #
 # The Java-level namelookup cache policy for successful lookups:
 #

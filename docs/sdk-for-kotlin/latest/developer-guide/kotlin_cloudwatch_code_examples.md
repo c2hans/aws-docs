@@ -28,7 +28,7 @@ The following code example shows how to get started using CloudWatch.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 /**
 Before running this Kotlin code example, set up your development environment,
 including your credentials.
@@ -91,7 +91,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 Run an interactive scenario demonstrating the CloudWatch OpenTelemetry experience.
 
-```
+```kotlin
 /**
  Before running this Kotlin code example, set up your development environment,
  including your credentials.
@@ -645,7 +645,7 @@ suspend fun listNameSpaces(): ArrayList<String> {
 ```
 The OpenTelemetry functions that the scenario calls.
 
-```
+```kotlin
 suspend fun getOTelEnrichmentStatus(): OTelEnrichmentStatus? {
     CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
         val response = cwClient.getOTelEnrichment(GetOTelEnrichmentRequest {})
@@ -876,7 +876,7 @@ The following code example shows how to use `DeleteAlarmMuteRule`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun deleteAlarmMuteRule(muteRuleName: String) {
     val request =
         DeleteAlarmMuteRuleRequest {
@@ -899,7 +899,7 @@ The following code example shows how to use `DeleteAlarms`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun deleteAlarm(alarmNameVal: String) {
     val request =
         DeleteAlarmsRequest {
@@ -922,7 +922,7 @@ The following code example shows how to use `DeleteAnomalyDetector`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun deleteAnomalyDetector(
     namespaceVal: String,
     metricNameVal: String,
@@ -955,7 +955,7 @@ The following code example shows how to use `DeleteDashboards`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun deleteDashboard(dashboardName: String) {
     val dashboardsRequest =
         DeleteDashboardsRequest {
@@ -977,7 +977,7 @@ The following code example shows how to use `DescribeAlarmContributors`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun describeAlarmContributors(alarmNameVal: String): List<AlarmContributor> {
     val contributors = mutableListOf<AlarmContributor>()
 
@@ -1026,7 +1026,7 @@ The following code example shows how to use `DescribeAlarmHistory`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun getAlarmHistory(
     alarmNameVal: String,
     startDateVal: String,
@@ -1067,7 +1067,7 @@ The following code example shows how to use `DescribeAlarms`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun desCWAlarms() {
     CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
         val response = cwClient.describeAlarms(DescribeAlarmsRequest {})
@@ -1087,7 +1087,7 @@ The following code example shows how to use `DescribeAlarmsForMetric`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun describeAlarmsForMetric(
     namespaceVal: String,
     metricNameVal: String,
@@ -1122,7 +1122,7 @@ The following code example shows how to use `DescribeAnomalyDetectors`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun describeAnomalyDetectors(
     namespaceVal: String,
     metricNameVal: String,
@@ -1153,7 +1153,7 @@ The following code example shows how to use `DisableAlarmActions`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun disableActions(alarmName: String) {
     val request =
         DisableAlarmActionsRequest {
@@ -1175,7 +1175,7 @@ The following code example shows how to use `EnableAlarmActions`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun enableActions(alarm: String) {
     val request =
         EnableAlarmActionsRequest {
@@ -1198,7 +1198,7 @@ The following code example shows how to use `GetAlarmMuteRule`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun getAlarmMuteRule(muteRuleName: String): GetAlarmMuteRuleResponse {
     CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
         val response =
@@ -1226,7 +1226,7 @@ The following code example shows how to use `GetMetricData`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun getMetData() {
     val start =
         aws.smithy.kotlin.runtime.time.Instant
@@ -1284,7 +1284,7 @@ The following code example shows how to use `GetMetricStatistics`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun getAndDisplayMetricStatistics(
     nameSpaceVal: String,
     metVal: String,
@@ -1334,7 +1334,7 @@ The following code example shows how to use `GetMetricWidgetImage`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun getAndOpenMetricImage(fileName: String) {
     println("Getting image data for a custom metric.")
     val myJSON = """{
@@ -1379,7 +1379,7 @@ The following code example shows how to use `GetOTelEnrichment`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun getOTelEnrichmentStatus(): OTelEnrichmentStatus? {
     CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
         val response = cwClient.getOTelEnrichment(GetOTelEnrichmentRequest {})
@@ -1405,7 +1405,7 @@ The following code example shows how to use `ListAlarmMuteRules`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun listAlarmMuteRules(alarmNameVal: String? = null): List<AlarmMuteRuleSummary> {
     val summaries = mutableListOf<AlarmMuteRuleSummary>()
 
@@ -1441,7 +1441,7 @@ The following code example shows how to use `ListDashboards`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun listDashboards() {
     CloudWatchClient { region = "us-east-1" }.use { cwClient ->
         cwClient
@@ -1464,7 +1464,7 @@ The following code example shows how to use `ListMetrics`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun listMets(namespaceVal: String?): ArrayList<String>? {
     val metList = ArrayList<String>()
     val request =
@@ -1493,7 +1493,7 @@ The following code example shows how to use `PutAlarmMuteRule`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun putAlarmMuteRule(
     muteRuleName: String,
     expressionVal: String,
@@ -1547,7 +1547,7 @@ The following code example shows how to use `PutAnomalyDetector`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun addAnomalyDetector(
     namespaceVal: String,
     metricNameVal: String,
@@ -1580,7 +1580,7 @@ The following code example shows how to use `PutDashboard`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun createDashboard(
     dashboardNameVal: String,
     dashboardBodyVal: String,
@@ -1618,7 +1618,7 @@ The following code example shows how to use `PutMetricAlarm`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 
-```
+```kotlin
 suspend fun putPromQlMetricAlarm(
     alarmNameVal: String,
     queryVal: String,
@@ -1658,7 +1658,7 @@ suspend fun putPromQlMetricAlarm(
 ```
 Create an alarm that evaluates a single CloudWatch metric.
 
-```
+```kotlin
 suspend fun putMetricAlarm(
     alarmNameVal: String,
     instanceIdVal: String,
@@ -1701,7 +1701,7 @@ The following code example shows how to use `PutMetricData`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun addMetricData(
     namespaceVal: String,
     metricNameVal: String,
@@ -1748,7 +1748,7 @@ The following code example shows how to use `StartOTelEnrichment`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun startOTelEnrichment() {
     CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
         cwClient.startOTelEnrichment(StartOTelEnrichmentRequest {})
@@ -1766,7 +1766,7 @@ The following code example shows how to use `StopOTelEnrichment`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun stopOTelEnrichment() {
     CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
         cwClient.stopOTelEnrichment(StopOTelEnrichmentRequest {})

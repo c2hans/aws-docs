@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Set the desired capacity of an Auto Scaling group.
     /// </summary>
@@ -49,7 +49,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/autoscaling#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -96,7 +96,7 @@ For more information, see [Manual scaling for Amazon EC2 Auto Scaling](https://d
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
     public static void setDesiredCapacity(AutoScalingClient autoScalingClient, String groupName) {
         try {
             SetDesiredCapacityRequest capacityRequest = SetDesiredCapacityRequest.builder()
@@ -121,7 +121,7 @@ For more information, see [Manual scaling for Amazon EC2 Auto Scaling](https://d
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun setDesiredCapacity(groupName: String) {
     val capacityRequest =
         SetDesiredCapacityRequest {
@@ -143,7 +143,7 @@ suspend fun setDesiredCapacity(groupName: String) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function setDesiredCapacity($autoScalingGroupName, $desiredCapacity)
     {
         return $this->autoScalingClient->setDesiredCapacity([
@@ -160,12 +160,12 @@ suspend fun setDesiredCapacity(groupName: String) {
 **Tools for PowerShell V4**
 **Example 1: This example sets the size of the specified Auto Scaling group.**
 
-```
+```powershell
 Set-ASDesiredCapacity -AutoScalingGroupName my-asg -DesiredCapacity 2
 ```
 **Example 2: This example sets the size of the specified Auto Scaling group and waits for the cooldown period to complete before scaling to the new size.**
 
-```
+```powershell
 Set-ASDesiredCapacity -AutoScalingGroupName my-asg -DesiredCapacity 2 -HonorCooldown $true
 ```
 +  For API details, see [SetDesiredCapacity](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -173,12 +173,12 @@ Set-ASDesiredCapacity -AutoScalingGroupName my-asg -DesiredCapacity 2 -HonorCool
 **Tools for PowerShell V5**
 **Example 1: This example sets the size of the specified Auto Scaling group.**
 
-```
+```powershell
 Set-ASDesiredCapacity -AutoScalingGroupName my-asg -DesiredCapacity 2
 ```
 **Example 2: This example sets the size of the specified Auto Scaling group and waits for the cooldown period to complete before scaling to the new size.**
 
-```
+```powershell
 Set-ASDesiredCapacity -AutoScalingGroupName my-asg -DesiredCapacity 2 -HonorCooldown $true
 ```
 +  For API details, see [SetDesiredCapacity](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -189,7 +189,7 @@ Set-ASDesiredCapacity -AutoScalingGroupName my-asg -DesiredCapacity 2 -HonorCool
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -240,7 +240,7 @@ class AutoScalingWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
     pub async fn scale_desired_capacity(&self, capacity: i32) -> Result<(), ScenarioError> {
         // 7. SetDesiredCapacity: set desired capacity to 2.
         //   Wait for a second instance to launch.
@@ -268,7 +268,7 @@ class AutoScalingWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: iv_group_name = 'my-auto-scaling-group'
     " Example: iv_capacity = 2
 

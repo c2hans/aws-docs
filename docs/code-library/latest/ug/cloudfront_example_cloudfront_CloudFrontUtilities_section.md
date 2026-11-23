@@ -15,7 +15,7 @@ The following code example shows how to create signed URLs and cookies that allo
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudfront#code-examples).
 Use the [CannedSignerRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudfront/model/CannedSignerRequest.html) class to sign URLs or cookies with a *canned* policy.
 
-```
+```java
 import software.amazon.awssdk.services.cloudfront.model.CannedSignerRequest;
 
 import java.net.URL;
@@ -47,7 +47,7 @@ public class CreateCannedPolicyRequest {
 ```
 Use the [CustomSignerRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudfront/model/CustomSignerRequest.html) class to sign URLs or cookies with a *custom* policy. The `activeDate` and `ipRange` are optional methods.
 
-```
+```java
 import software.amazon.awssdk.services.cloudfront.model.CustomSignerRequest;
 
 import java.net.URL;
@@ -84,7 +84,7 @@ public class CreateCustomPolicyRequest {
 ```
 The following example demonstrates the use of the [CloudFrontUtilities](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudfront/CloudFrontUtilities.html) class to produce signed cookies and URLs. [View](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/javav2/example_code/cloudfront/src/main/java/com/example/cloudfront/SigningUtilities.java) this code example on GitHub.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.cloudfront.CloudFrontUtilities;

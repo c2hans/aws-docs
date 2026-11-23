@@ -80,7 +80,7 @@ echo -n {{TOKEN_VALUE}} | openssl dgst -sha256 -sign {{PEM encoded RSA private k
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const crypto = require('crypto')
 
 const key = "{{PEM encoded RSA private key}}"

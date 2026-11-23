@@ -24,7 +24,7 @@ Even if you configure a completely open resource-based access policy, *all* requ
 
   If you use one of the SDKs, such as [Boto 3](https://docs.aws.amazon.com/boto3/latest/reference/services/opensearch.html#OpenSearchService.Client.update_domain_config), the SDK automatically handles the request signing:
 
-  ```
+  ```python
   import boto3
 
   client = boto3.client(es)

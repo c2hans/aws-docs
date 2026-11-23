@@ -32,7 +32,7 @@ As a best practice for security purposes, replace the {{\*}} with specific knowl
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -67,7 +67,7 @@ Attach the following policy to provide permissions for the role to use Amazon Be
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -98,7 +98,7 @@ Attach the following policy to provide permissions for the role to use Amazon Be
 
 If you use the TwelveLabs Marengo Embed 3.0 embedding model, the knowledge base invokes the model both synchronously and asynchronously, so the role needs permissions for both. Attach the following statements, replacing {{${Region}}} and {{${AccountId}}} with the AWS Region and account ID for your knowledge base, and {{${InferenceProfileId}}} with the ID of the inference profile that you use. The `foundation-model` ARN uses `*` for the Region instead of a specific Region. This is required because a cross-region inference profile can route the model invocation to the underlying foundation model in any of its member AWS Regions.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -139,7 +139,7 @@ The multimodal storage destination is the Amazon S3 bucket that is used for proc
 
 Attach the following policy to provide permissions for the role to read, write, and delete this content. Replace {{amzn-s3-demo-bucket}} with the name of your multimodal storage bucket.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -194,7 +194,7 @@ If you encrypted the data source with a AWS KMS key, attach permissions to decry
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -243,7 +243,7 @@ Attach the following policy to provide permissions for the role to access Conflu
 `secretsmanager:PutSecretValue` is only necessary if you use OAuth 2.0 authentication with a refresh token.
 Confluence OAuth2.0 **access** token has a default expiry time of 60 minutes. If this token expires while your data source is syncing (sync job), Amazon Bedrock will use the provided **refresh** token to regenerate this token. This regeneration refreshes both the access and refresh tokens. To keep the tokens updated from the current sync job to the next sync job, Amazon Bedrock requires write/put permissions for your secret credentials.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{
@@ -263,7 +263,7 @@ Confluence OAuth2.0 **access** token has a default expiry time of 60 minutes. If
 
 Attach the following policy to provide permissions for the role to access Microsoft SharePoint.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{
@@ -281,7 +281,7 @@ Attach the following policy to provide permissions for the role to access Micros
 **Note**
 If you use certificate-based authentication (X.509) and store your certificate in an Amazon S3 bucket, you must also grant `s3:GetObject` permission to the service role for the bucket and key where the certificate file (.pfx or .pem) is stored. The following example shows the additional policy statement required:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{
@@ -301,7 +301,7 @@ If you use certificate-based authentication (X.509) and store your certificate i
 
 Attach the following policy to provide permissions for the role to access websites through the Web Crawler. If your website requires authentication, include permissions to access the AWS Secrets Manager secret that stores your credentials.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{
@@ -321,7 +321,7 @@ Attach the following policy to provide permissions for the role to access websit
 
 Attach the following policy to provide permissions for the role to access Microsoft OneDrive.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{
@@ -341,7 +341,7 @@ Attach the following policy to provide permissions for the role to access Micros
 
 Attach the following policy to provide permissions for the role to access Google Drive.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{

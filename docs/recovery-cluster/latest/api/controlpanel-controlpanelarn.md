@@ -86,7 +86,7 @@ Deletes a control panel.
 #### DescribeControlPanelResponse schema
 <a name="controlpanel-controlpanelarn-response-body-describecontrolpanelresponse-example"></a>
 
-```
+```json
 {
   "ControlPanel": {
     "ClusterArn": "string",
@@ -103,7 +103,7 @@ Deletes a control panel.
 #### DeleteControlPanelResponse schema
 <a name="controlpanel-controlpanelarn-response-body-deletecontrolpanelresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -111,7 +111,7 @@ Deletes a control panel.
 #### ValidationException schema
 <a name="controlpanel-controlpanelarn-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -120,7 +120,7 @@ Deletes a control panel.
 #### AccessDeniedException schema
 <a name="controlpanel-controlpanelarn-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -129,7 +129,7 @@ Deletes a control panel.
 #### ResourceNotFoundException schema
 <a name="controlpanel-controlpanelarn-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -138,7 +138,7 @@ Deletes a control panel.
 #### ConflictException schema
 <a name="controlpanel-controlpanelarn-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -147,7 +147,7 @@ Deletes a control panel.
 #### ThrottlingException schema
 <a name="controlpanel-controlpanelarn-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -156,7 +156,7 @@ Deletes a control panel.
 #### InternalServerException schema
 <a name="controlpanel-controlpanelarn-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

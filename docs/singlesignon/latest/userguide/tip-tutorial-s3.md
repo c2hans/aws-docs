@@ -47,7 +47,7 @@ Ensure the S3 locations of the AWS Glue tables you want to grant access to are i
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -146,7 +146,7 @@ Ensure the S3 locations of the AWS Glue tables you want to grant access to are i
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

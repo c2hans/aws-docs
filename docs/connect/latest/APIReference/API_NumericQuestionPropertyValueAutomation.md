@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_NumericQ
 
 # NumericQuestionPropertyValueAutomation
 
-Information about the property value used in automation of a numeric questions. Label values are associated with minimum and maximum values for the numeric question.
+Information about the property value used in automation of a numeric question. Label values are associated with minimum and maximum values for the numeric question.
 + Sentiment scores have a minimum value of -5 and maximum value of 5.
 +  Duration labels, such as `NON_TALK_TIME`, `CONTACT_DURATION`, `AGENT_INTERACTION_DURATION`, `CUSTOMER_HOLD_TIME` have a minimum value of 0 and maximum value of 63072000.
 + Percentages have a minimum value of 0 and maximum value of 100.
@@ -16,7 +16,7 @@ Information about the property value used in automation of a numeric questions. 
  ** Label **   <a name="connect-Type-NumericQuestionPropertyValueAutomation-Label"></a>
 The property label of the automation.
 Type: String
-Valid Values: `OVERALL_CUSTOMER_SENTIMENT_SCORE | OVERALL_AGENT_SENTIMENT_SCORE | CUSTOMER_SENTIMENT_SCORE_WITHOUT_AGENT | CUSTOMER_SENTIMENT_SCORE_WITH_AGENT | NON_TALK_TIME | NON_TALK_TIME_PERCENTAGE | NUMBER_OF_INTERRUPTIONS | CONTACT_DURATION | AGENT_INTERACTION_DURATION | CUSTOMER_HOLD_TIME | LONGEST_HOLD_DURATION | NUMBER_OF_HOLDS | AGENT_INTERACTION_AND_HOLD_DURATION`
+Valid Values: `OVERALL_CUSTOMER_SENTIMENT_SCORE | OVERALL_AGENT_SENTIMENT_SCORE | CUSTOMER_SENTIMENT_SCORE_WITHOUT_AGENT | CUSTOMER_SENTIMENT_SCORE_WITH_AGENT | NON_TALK_TIME | NON_TALK_TIME_PERCENTAGE | NUMBER_OF_INTERRUPTIONS | CONTACT_DURATION | AGENT_INTERACTION_DURATION | CUSTOMER_HOLD_TIME | LONGEST_HOLD_DURATION | NUMBER_OF_HOLDS | AGENT_INTERACTION_AND_HOLD_DURATION | AI_SESSION_SELF_SERVICE_DURATION | AI_SESSION_GOAL_SUCCESS_RATE | AI_SESSION_COMPLETENESS_SCORE | AI_SESSION_FAITHFULNESS_SCORE | AI_AGENT_MAX_PROMPT_LATENCY | AI_TOOL_MAX_LATENCY | AI_TOOL_SELECTION_ACCURACY | AI_TOOL_PARAMETER_ACCURACY | AI_TOOL_UTILIZATION_ACCURACY`
 Required: Yes
 
 ## See Also

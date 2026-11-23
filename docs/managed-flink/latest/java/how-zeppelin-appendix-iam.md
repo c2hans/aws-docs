@@ -25,7 +25,7 @@ The following example policy grants permissions to access a AWS Glue database.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -113,7 +113,7 @@ The following policy grants permissions to read from a Kinesis Stream used as a 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -158,7 +158,7 @@ The following policy grants permissions to write to a Kinesis Stream used as a d
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

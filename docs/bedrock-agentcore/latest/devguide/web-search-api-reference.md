@@ -44,7 +44,7 @@ Each result contains the following fields:
 
 The following example shows a response body with one result:
 
-```
+```json
 {
     "results": [
         {

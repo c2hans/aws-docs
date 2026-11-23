@@ -80,7 +80,7 @@ For more information, see [Viewing Compliance Information and Evaluation Results
 **Tools for PowerShell V4**
 **Example 1: This sample returns the number of resources that are compliant or noncompliant and converts the output to json.**
 
-```
+```powershell
 Get-CFGComplianceSummaryByResourceType -Select ComplianceSummariesByResourceType.ComplianceSummary | ConvertTo-Json
 {
   "ComplianceSummaryTimestamp": "2019-12-14T06:14:49.778Z",
@@ -99,7 +99,7 @@ Get-CFGComplianceSummaryByResourceType -Select ComplianceSummariesByResourceType
 **Tools for PowerShell V5**
 **Example 1: This sample returns the number of resources that are compliant or noncompliant and converts the output to json.**
 
-```
+```powershell
 Get-CFGComplianceSummaryByResourceType -Select ComplianceSummariesByResourceType.ComplianceSummary | ConvertTo-Json
 {
   "ComplianceSummaryTimestamp": "2019-12-14T06:14:49.778Z",

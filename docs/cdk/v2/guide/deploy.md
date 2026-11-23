@@ -64,37 +64,37 @@ The CDK CLI needs to know how to run your CDK app. If you created the project fr
 
 **Example**
 
-```
+```json
 {
   "app": "npx ts-node --prefer-ts-exts bin/my-app.ts"
 }
 ```
 
-```
+```json
 {
   "app": "node bin/my-app.js"
 }
 ```
 
-```
+```json
 {
     "app": "python app.py"
 }
 ```
 
-```
+```json
 {
   "app": "mvn -e -q compile exec:java"
 }
 ```
 
-```
+```json
 {
   "app": "dotnet run -p src/MyApp/MyApp.csproj"
 }
 ```
 
-```
+```json
 {
   "app": "go mod download && go run my-app.go"
 }

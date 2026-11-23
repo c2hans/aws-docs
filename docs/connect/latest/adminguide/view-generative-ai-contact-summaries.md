@@ -150,7 +150,7 @@ Each contact has no more than one summary generated. Not all contacts will have 
 
 If a summary is not generated, an error message is displayed on the **Contact details** and **Contact search** pages. In addition, the ReasonCode for the error appears in the `ContactSummary` object in the conversational analytics output file, similar to the following example:
 
-```
+```json
 "JobDetails": {
     "SkippedAnalysis": [
       {
@@ -164,7 +164,7 @@ If a summary is not generated, an error message is displayed on the **Contact de
 Following is a list of error messages that might be displayed on the Contact details or search pages if a summary is not generated. Also listed is the associated reason code that appears in the conversational analytics output file.
 + **Summary could not be generated due to exceeding quota of concurrent summaries**. ReasonCode: `QUOTA_EXCEEDED`.
 
-  If you receive this message, we recommend that you [submit a ticket](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase&limitType=service-code-connect) to increase the [Concurrent post-contact summary jobs](amazon-connect-service-limits.md#contactlens-quotas) quota.
+  If you receive this message, request an increase to the [Concurrent agent interaction summaries per instance](amazon-connect-service-limits.md#contactlens-quotas) quota in the Service Quotas console.
 + **Summary could not be generated due to not enough eligible conversation**. ReasonCode: `INSUFFICIENT_CONVERSATION_CONTENT`.
 
   For voice, there must be 1 utterance from each participant. For chat, there must be 1 message of supported types from each participant. Supported message types are `text/plain` and `text/markdown`. Messages of other types, such as `application/json`, are not used for the summary.
@@ -173,5 +173,5 @@ Following is a list of error messages that might be displayed on the Contact det
   This error is returned if the enabled summary is incompatible with other conversational analytics settings, particularly if it's enabled for an unsupported locale.
 + **Summary cannot be provided because it failed to satisfy security and quality guardrails**. ReasonCode: `FAILED_SAFETY_GUIDELINES`.
 
-  This error can occur in Connect Customer for Concurrent post-contact summary jobs. Connect Customer passes contact data to Amazon Bedrock for summary generation. If the contact data contains unredacted Personally Identifiable Information (PII), the safety guidelines of Amazon Bedrock are triggered. As a result, Amazon Bedrock refuses to generate the summary to protect sensitive information, leading to the error in Connect Customer.
+  This error can occur in Connect Customer for Concurrent agent interaction summaries per instance. Connect Customer passes contact data to Amazon Bedrock for summary generation. If the contact data contains unredacted Personally Identifiable Information (PII), the safety guidelines of Amazon Bedrock are triggered. As a result, Amazon Bedrock refuses to generate the summary to protect sensitive information, leading to the error in Connect Customer.
 + Internal system error. ReasonCode: `INTERNAL_ERROR`

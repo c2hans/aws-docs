@@ -37,7 +37,7 @@ If *point* is not a `POINT`, then an error is returned.
 
 The following SQL returns the second coordinate of a point.
 
-```
+```sql
 SELECT ST_Y(ST_Point(1,2));
 ```
 

@@ -38,7 +38,7 @@ For more information, see [Logging requests with server access logging](https://
 **Tools for PowerShell V4**
 **Example 1: This command returns the logging status for the specified bucket.**
 
-```
+```powershell
 Get-S3BucketLogging -BucketName 'amzn-s3-demo-bucket'
 ```
 **Output:**
@@ -53,7 +53,7 @@ testbucket1        {}     testprefix
 **Tools for PowerShell V5**
 **Example 1: This command returns the logging status for the specified bucket.**
 
-```
+```powershell
 Get-S3BucketLogging -BucketName 'amzn-s3-demo-bucket'
 ```
 **Output:**

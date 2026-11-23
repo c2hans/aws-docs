@@ -24,7 +24,9 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/m
 
  This decision guide will help you ask the right questions, evaluate your criteria and business problem, and determine which services are the best fit for your needs.
 
-[![AWS Videos](https://img.youtube.com/vi/GBIkeMemh2E?start=110&end=495/0.jpg)](https://www.youtube.com/watch?v=GBIkeMemh2E?start=110&end=495)
+[![AWS Videos](https://img.youtube.com/vi/GBIkeMemh2E/0.jpg)](https://www.youtube.com/watch?v=GBIkeMemh2E)
+
+In this 7 minute video excerpt, Rajneesh Singh, general manager of Amazon SageMaker AI Low-Code/No-Code team at AWS, explains how machine learning can address business problems.
 
 ## Understand
 <a name="understand"></a>

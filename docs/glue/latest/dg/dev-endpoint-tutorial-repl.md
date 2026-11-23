@@ -44,7 +44,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dev-endpoint-tutorial-rep
 
 1. Now you can try executing the following simple script, line by line, in the shell:
 
-   ```
+   ```python
    import sys
    from pyspark.context import SparkContext
    from awsglue.context import GlueContext

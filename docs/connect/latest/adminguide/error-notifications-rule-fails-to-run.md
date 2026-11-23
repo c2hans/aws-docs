@@ -21,7 +21,7 @@ You can also add to the pattern to be notified when a specific event code occurs
 
 The format of a notification looks like the following sample:
 
-```
+```JSON
 {
   "version": "0",
   "id": "8d122163-6c07-f8cb-06e7-373a1bcf8fc6",

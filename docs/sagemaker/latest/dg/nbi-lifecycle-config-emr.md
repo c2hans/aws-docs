@@ -39,7 +39,7 @@ The process requires three procedures using the Amazon SageMaker AI console:
 
 1. Add the following code to the lifecycle configuration script:
 
-   ```
+   ```sh
    # OVERVIEW
    # This script connects an Amazon EMR cluster to an Amazon SageMaker notebook instance that uses Sparkmagic.
    #

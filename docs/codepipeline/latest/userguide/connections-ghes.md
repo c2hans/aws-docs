@@ -148,7 +148,7 @@ A host created through the AWS CLI is in `Pending` status by default. After you 
 
 1. Open a terminal (Linux, macOS, or Unix) or command prompt (Windows). Use the AWS CLI to run the **create-host** command, specifying the `--name`, `--provider-type`, and `--provider-endpoint` for your connection. In this example, the third-party provider name is `GitHubEnterpriseServer` and the endpoint is `my-instance.dev`.
 
-   ```
+   ```shell
    aws codestar-connections create-host --name MyHost --provider-type GitHubEnterpriseServer --provider-endpoint "https://my-instance.dev"
    ```
 

@@ -27,7 +27,7 @@ Valid Range: Minimum value of 3600. Maximum value of 43200.
 Required: No
 
  ** MaxSigninSessionDuration **
-The maximum duration (in seconds) of an AWS Sign-In session for users who sign in with the specified role. This setting can have a value from 1 hour (3600 seconds) to 90 days (7776000 seconds), inclusive, and replaces any value currently configured for the role. This setting is independent of `MaxSessionDuration`.
+The maximum AWS Sign-In duration (in seconds) for users who authenticate with the specified role through OAuth-based flows (`signin:CreateOAuth2Token`), such as the AWS CLI (`aws login`), AWS SDKs, and MCP clients. This setting does not affect AWS Management Console browser sessions or traditional STS sessions. This setting can have a value from 1 hour (3600 seconds) to 90 days (7776000 seconds), inclusive, and overrides any value currently configured for the role. This setting is independent of `MaxSessionDuration`. If this parameter is not set, the default session duration equals the role's `MaxSessionDuration`.
 If you omit both this parameter and `ResetMaxSigninSessionDuration`, the current setting is unchanged. You cannot specify this parameter and set `ResetMaxSigninSessionDuration` to `true` in the same request.
 Changes to this setting apply to new sign-in sessions. Sessions that are already established are not affected.
 You cannot set this value on a service-linked role.
@@ -36,7 +36,7 @@ Valid Range: Minimum value of 3600. Maximum value of 7776000.
 Required: No
 
  ** ResetMaxSigninSessionDuration **
-Specifies whether to clear the role's maximum sign-in session duration. Set this value to `true` to return the setting to its unset state, so that the existing sign-in session behavior applies. When the setting is unset, the role's `MaxSigninSessionDuration` is omitted from responses.
+Specifies whether to clear the role's maximum sign-in session duration. Set this value to `true` to return the setting to its unset state, so that the existing sign-in session behavior applies.
 If you set this value to `false` or omit it, the current setting is not cleared. You cannot set this value to `true` and specify `MaxSigninSessionDuration` in the same request. Clearing a setting that is already unset has no effect.
 You cannot reset this value on a service-linked role.
 Type: Boolean

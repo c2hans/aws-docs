@@ -132,7 +132,7 @@ If your account uses the Quick-managed role (`aws-quicksight-agent-registry-role
 
 If your account uses a customer-managed service role, attach a policy with the following permissions, scoped to the registry that you are connecting. Replace the example resource ARN with your registry's ARN.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

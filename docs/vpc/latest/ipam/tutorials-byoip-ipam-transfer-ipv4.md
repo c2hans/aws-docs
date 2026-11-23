@@ -49,7 +49,7 @@ aws ec2 describe-ipams --region us-east-1 --profile ipam-account
 
 In the output, you'll see your public scope ID. Note the values for `PublicDefaultScopeId`. You will need it in the next step.
 
-```
+```json
 {
  "Ipams": [
         {
@@ -92,7 +92,7 @@ When you create the pool, you must include `--aws-service ec2`. The service you 
 
    In the output, you'll see `create-in-progress`, which indicates that pool creation is in progress.
 
-   ```
+   ```json
    {
        "IpamPool": {
            "OwnerId": "123456789012",
@@ -121,7 +121,7 @@ When you create the pool, you must include `--aws-service ec2`. The service you 
 
    The following example output shows the state of the pool. You will need the **OwnerId** in the next step.
 
-   ```
+   ```json
    {
        "IpamPools": [
            {
@@ -157,7 +157,7 @@ Follow the steps in this section to share an IPAM pool using AWS RAM so that ano
    aws ram list-permissions --region us-east-1 --profile ipam-account --resource-type ec2:IpamPool
    ```
 
-   ```
+   ```json
    {
        "permissions": [
            {
@@ -192,7 +192,7 @@ Follow the steps in this section to share an IPAM pool using AWS RAM so that ano
    aws ram create-resource-share --region us-east-1 --profile ipam-account --name PoolShare2 --resource-arns arn:aws:ec2::123456789012:ipam-pool/ipam-pool-0a03d430ca3f5c035 --principals 111122223333 --permission-arns arn:aws:ram::aws:permission/AWSRAMPermissionIpamPoolByoipCidrImport
    ```
 
-   ```
+   ```json
    {
        "resourceShare": {
            "resourceShareArn": "arn:aws:ram:us-east-1:123456789012:resource-share/7993758c-a4ea-43ad-be12-b3abaffe361a",
@@ -212,7 +212,7 @@ Follow the steps in this section to share an IPAM pool using AWS RAM so that ano
    aws ram create-resource-share --region us-east-1 --profile ipam-account --name PoolShare1 --resource-arns arn:aws:ec2::123456789012:ipam-pool/ipam-pool-0a03d430ca3f5c035 --principals 111122223333 --permission-arns arn:aws:ram::aws:permission/AWSRAMDefaultPermissionsIpamPool
    ```
 
-   ```
+   ```json
    {
        "resourceShare": {
            "resourceShareArn": "arn:aws:ram:us-east-1:123456789012:resource-share/8d1e229b-2830-4cf4-8b10-19c889235a2f",
@@ -275,7 +275,7 @@ Use the following AWS CLI commands transfer a BYOIP CIDR to the IPAM pool using 
 
    In the output, you'll see the CIDR pending provision.
 
-   ```
+   ```json
    {
        "ByoipCidr": {
            "Cidr": "130.137.249.0/24",
@@ -292,7 +292,7 @@ Use the following AWS CLI commands transfer a BYOIP CIDR to the IPAM pool using 
 
    The following example output shows the state.
 
-   ```
+   ```json
    {
        "ByoipCidr": {
            "Cidr": "130.137.249.0/24",
@@ -317,7 +317,7 @@ Follow the steps in this section to view the CIDR in IPAM. This step should be p
 
   The output shows the allocation in IPAM.
 
-  ```
+  ```json
   {
       "IpamPoolAllocations": [
           {
@@ -344,7 +344,7 @@ Follow the steps in this section to remove the resources you created in this tut
    aws ram get-resource-shares --region us-east-1 --profile ipam-account --name PoolShare1 --resource-owner SELF
    ```
 
-   ```
+   ```json
    {
        "resourceShares": [
            {
@@ -367,7 +367,7 @@ Follow the steps in this section to remove the resources you created in this tut
    aws ram delete-resource-share --region us-east-1 --profile ipam-account --resource-share-arn arn:aws:ram:us-east-1:123456789012:resource-share/8d1e229b-2830-4cf4-8b10-19c889235a2f
    ```
 
-   ```
+   ```json
    {
        "returnValue": true
    }
@@ -383,7 +383,7 @@ Follow the steps in this section to remove the resources you created in this tut
 
    The output shows the allocation in IPAM.
 
-   ```
+   ```json
    {
        "IpamPoolAllocations": [
            {
@@ -415,7 +415,7 @@ Follow the steps in this section to remove the resources you created in this tut
 
    In the output, you'll see the IP addresses count in your public IPv4 pool.
 
-   ```
+   ```json
    {
        "PublicIpv4Pools": [
            {
@@ -439,7 +439,7 @@ Follow the steps in this section to remove the resources you created in this tut
 
    In the output, you can see the delete state.
 
-   ```
+   ```json
    {
        "IpamPool": {
            "OwnerId": "123456789012",

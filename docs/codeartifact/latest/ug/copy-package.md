@@ -25,7 +25,7 @@ Calling `put-repository-permissions-policy` will replace the current repository 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -52,7 +52,7 @@ Calling `put-repository-permissions-policy` will replace the current repository 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

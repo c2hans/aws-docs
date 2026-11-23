@@ -13,7 +13,7 @@ You can use the following `test-windows-2022.yaml` as reference for creating sel
 **Note**
 You must use `eksctl` version [0.116.0](https://github.com/weaveworks/eksctl/releases/tag/v0.116.0) or later to run self-managed Windows Server 2022 nodes.
 
-```
+```yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
@@ -37,6 +37,6 @@ nodeGroups:
 
 The node groups can then be created using the following command.
 
-```
+```bash
 eksctl create cluster -f test-windows-2022.yaml
 ```

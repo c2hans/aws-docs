@@ -23,7 +23,7 @@ The user that alters a table needs the proper privilege for the command to succe
 ## Syntax
 <a name="r_ALTER_TABLE-synopsis"></a>
 
-```
+```sql
 ALTER TABLE table_name
 {
 ADD table_constraint
@@ -78,7 +78,7 @@ To reduce the time to run the ALTER TABLE command, you can combine some clauses 
 
 Amazon Redshift supports the following combinations of the ALTER TABLE clauses:
 
-```
+```sql
 ALTER TABLE tablename ALTER SORTKEY (column_list), ALTER DISTKEY column_Id;
 ALTER TABLE tablename ALTER DISTKEY column_Id, ALTER SORTKEY (column_list);
 ALTER TABLE tablename ALTER SORTKEY (column_list), ALTER DISTSTYLE ALL;

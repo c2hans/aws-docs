@@ -28,7 +28,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/rds#code-examples).
 
-```
+```php
 require __DIR__ . '/vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -69,7 +69,7 @@ The following code example shows how to use `CreateDBSnapshot`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/rds#code-examples).
 
-```
+```php
 require __DIR__ . '/vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -102,7 +102,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/rds#code-examples).
 
-```
+```php
 require __DIR__ . '/vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -134,7 +134,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/rds#code-examples).
 
-```
+```php
 require __DIR__ . '/vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -196,7 +196,7 @@ The following code example shows how to implement a Lambda function that connect
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-connect-rds-iam) repository.
 Connecting to an Amazon RDS database in a Lambda function using PHP.
 
-```
+```php
 <?php
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0

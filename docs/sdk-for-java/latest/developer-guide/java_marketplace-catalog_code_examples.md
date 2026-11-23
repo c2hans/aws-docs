@@ -31,7 +31,7 @@ The following code example shows how to add a dimension to an existing AMI produ
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -105,7 +105,7 @@ The following code example shows how to add a region where an AMI product is dep
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -136,7 +136,7 @@ The following code example shows how to create a public or limited AMI product a
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -406,7 +406,7 @@ The following code example shows how to create a public or limited AMI product a
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -660,7 +660,7 @@ The following code example shows how to create a public or limited AMI product a
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -908,7 +908,7 @@ The following code example shows how to create an draft AMI product with a draft
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -947,7 +947,7 @@ The following code example shows how to restrict a region where an AMI product i
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -977,7 +977,7 @@ The following code example shows how to restrict product visibility.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1005,7 +1005,7 @@ The following code example shows how to specify whether AMI assets are deployed 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1040,7 +1040,7 @@ The following code example shows how to create a draft CPPO for any product type
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1069,7 +1069,7 @@ The following code example shows how to create a resale authorization replacemen
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1206,7 +1206,7 @@ The following code example shows how to list all CPPOs created by a channel part
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.catalogapi;
 
 import java.util.ArrayList;
@@ -1310,7 +1310,7 @@ The following code example shows how to list all shared resale authorizations av
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.catalogapi;
 
 import java.util.ArrayList;
@@ -1387,7 +1387,7 @@ The following code example shows how to publish a CPPO and append a buyer EULA.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1482,7 +1482,7 @@ The following code example shows how to publish a CPPO using one-time resale aut
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1567,7 +1567,7 @@ The following code example shows how to publish a draft CPPO and update price ma
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1652,7 +1652,7 @@ The following code example shows how to update the expiration date of a CPPO to 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1683,7 +1683,7 @@ The following code example shows how to create a draft container product with a 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog":"AWSMarketplace",
     "changeSet":[
@@ -1722,7 +1722,7 @@ The following code example shows how to create a limited container product with 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -1943,7 +1943,7 @@ The following code example shows how to describe all entities in a single call.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.catalogapi;
 
 import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
@@ -2014,7 +2014,7 @@ The following code example shows how to list and describe all offers associated 
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.catalogapi;
 
 import java.util.ArrayList;
@@ -2125,7 +2125,7 @@ The following code example shows how to add a free trial to the public offer of 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -2185,7 +2185,7 @@ The following code example shows how to create a custom dimension for a SaaS pro
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -2329,7 +2329,7 @@ The following code example shows how to create a draft private offer for an AMI 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -2357,7 +2357,7 @@ The following code example shows how to create a private offer with contract and
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -2505,7 +2505,7 @@ The following code example shows how to create a private offer with contract pri
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -2664,7 +2664,7 @@ The following code example shows how to create a private offer with contract pri
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -2789,7 +2789,7 @@ The following code example shows how to create a private offer with contract pri
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -2915,7 +2915,7 @@ The following code example shows how to create a private offer with hourly annua
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -3085,7 +3085,7 @@ The following code example shows how to create a private offer with hourly annua
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -3240,7 +3240,7 @@ The following code example shows how to create a private offer with hourly prici
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -3373,7 +3373,7 @@ The following code example shows how to create a private offer with subscription
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -3510,7 +3510,7 @@ The following code example shows how to create a private offer with tiered contr
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -3640,7 +3640,7 @@ The following code example shows how to create a replacement private offer from 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -3776,7 +3776,7 @@ The following code example shows how to create a public free trial offer with su
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -3866,7 +3866,7 @@ The following code example shows how to describe a public offer.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.catalogapi;
 
 import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
@@ -3921,7 +3921,7 @@ The following code example shows how to replace the standalone free trial offer 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -3991,7 +3991,7 @@ The following code example shows how to set the expiration date of a private off
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4018,7 +4018,7 @@ The following code example shows how to list all private offers.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.catalogapi;
 
 import java.util.ArrayList;
@@ -4145,7 +4145,7 @@ The following code example shows how to list released public and private offers 
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.catalogapi;
 
 import java.util.ArrayList;
@@ -4248,7 +4248,7 @@ The following code example shows how to update an offer to apply a contract with
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4322,7 +4322,7 @@ The following code example shows how to update an offer to apply hourly annual p
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4388,7 +4388,7 @@ The following code example shows how to update an offer to apply targeting to sp
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4423,7 +4423,7 @@ The following code example shows how to update name and description of a public 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4461,7 +4461,7 @@ The following code example shows how to update the EULA of an offer.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4490,7 +4490,7 @@ The following code example shows how to update the expiration date of a private 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4518,7 +4518,7 @@ The following code example shows how to update the free trial duration of a publ
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4578,7 +4578,7 @@ The following code example shows how to update the refund policy of an offer.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4613,7 +4613,7 @@ The following code example shows how to describe an AMI, SaaS, or Container prod
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.catalogapi;
 
 import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
@@ -4667,7 +4667,7 @@ The following code example shows how to list all AMI, SaaS, or Container product
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.catalogapi;
 
 import java.util.ArrayList;
@@ -4811,7 +4811,7 @@ The following code example shows how to create draft resale authorization for an
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4841,7 +4841,7 @@ The following code example shows how to describe a resale authorization.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.catalogapi;
 
 import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
@@ -4896,7 +4896,7 @@ The following code example shows how to publish a one-time resale authorization 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -4999,7 +4999,7 @@ The following code example shows how to publish multi-use resale authorization w
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5102,7 +5102,7 @@ The following code example shows how to publish multi-use resale authorization w
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5205,7 +5205,7 @@ The following code example shows how to publish multi-use resale authorization w
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5316,7 +5316,7 @@ The following code example shows how to publish multi-use resale authorization w
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5438,7 +5438,7 @@ The following code example shows how to publish multi-use resale authorization w
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5531,7 +5531,7 @@ The following code example shows how to publish multi-use resale authorization w
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5624,7 +5624,7 @@ The following code example shows how to publish multi-use resale authorization w
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5726,7 +5726,7 @@ The following code example shows how to publish multi-use resale authorization w
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5838,7 +5838,7 @@ The following code example shows how to publish one-time resale authorization fo
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -5957,7 +5957,7 @@ The following code example shows how to publish one-time resale authorization fo
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6060,7 +6060,7 @@ The following code example shows how to publish one-time resale authorization fo
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6182,7 +6182,7 @@ The following code example shows how to publish one-time resale authorization fo
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6285,7 +6285,7 @@ The following code example shows how to publish one-time resale authorization fo
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6360,7 +6360,7 @@ The following code example shows how to restrict resale authorization.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6386,7 +6386,7 @@ The following code example shows how to update name and description of one-time 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6418,7 +6418,7 @@ The following code example shows how to create a draft SaaS product with a draft
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog":"AWSMarketplace",
     "ChangeSet": [
@@ -6457,7 +6457,7 @@ The following code example shows how to create a public or limited SaaS product 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6699,7 +6699,7 @@ The following code example shows how to create a public or limited SaaS product 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -6957,7 +6957,7 @@ The following code example shows how to create a public or limited SaaS product 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -7171,7 +7171,7 @@ The following code example shows how to publish a SaaS product and associated pu
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog":"AWSMarketplace",
     "ChangeSet": [
@@ -7411,7 +7411,7 @@ The following code example shows how to publish a SaaS product and associated pu
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 
-```
+```java
 {
     "Catalog":"AWSMarketplace",
     "ChangeSet": [
@@ -7440,7 +7440,7 @@ The following code example shows how to update dimensions on an AMI or SaaS prod
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -7478,7 +7478,7 @@ The following code example shows how to define utilities to start a changeset.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 Utility to load a changeset from a JSON file and start processing it.
 
-```
+```java
 package com.example.awsmarketplace.catalogapi;
 
 import java.io.ByteArrayInputStream;

@@ -27,7 +27,7 @@ The following code example shows how to use `ListFoundationModels`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/bedrock#code-examples).
 List the available Amazon Bedrock foundation models.
 
-```
+```php
     public function listFoundationModels()
     {
         $bedrockClient = new BedrockClient([

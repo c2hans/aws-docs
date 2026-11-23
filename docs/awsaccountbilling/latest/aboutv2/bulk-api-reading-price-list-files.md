@@ -32,7 +32,7 @@ The information about the service index file includes the URL where you can down
 
 The service index file looks like the following.
 
-```
+```json
 {
    "formatVersion":"The version number for the offer index format",
    "disclaimer":"The disclaimers for this offer index",

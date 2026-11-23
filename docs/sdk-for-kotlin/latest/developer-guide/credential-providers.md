@@ -22,7 +22,7 @@ When not explicitly specified at client construction, the SDK for Kotlin uses a 
 
 To use the default chain to supply credentials in your application, create a service client without explicitly providing a `credentialsProvider` property.
 
-```
+```kotlin
 val ddb = DynamoDbClient {
     region = "us-east-2"
 }
@@ -82,7 +82,7 @@ You can specify a credentials provider instead of using the default provider cha
 
 For example, to use the credentials for an assumed IAM role, specify an [`StsAssumeRoleCredentialsProvider`](/sdk-for-kotlin/api/latest/aws-config/aws.sdk.kotlin.runtime.auth.credentials/-sts-assume-role-credentials-provider/index.html) when you create the client:
 
-```
+```kotlin
 val ddb = DynamoDbClient {
     region = "us-east-1"
     credentialsProvider = StsAssumeRoleCredentialsProvider()
@@ -99,7 +99,7 @@ The default chain caches credentials automatically. Standalone providers don’t
 
 To cache credentials with a standalone provider, use the `CachedCredentialsProvider` class:
 
-```
+```kotlin
 val ddb = DynamoDbClient {
      region = "us-east-1"
      credentialsProvider = CachedCredentialsProvider(StsAssumeRoleCredentialsProvider())
@@ -108,7 +108,7 @@ val ddb = DynamoDbClient {
 
 Alternatively, use the `cached()` extension function for more concise code:
 
-```
+```kotlin
 val ddb = DynamoDbClient {
       region = "us-east-1"
       credentialsProvider = StsAssumeRoleCredentialsProvider().cached()

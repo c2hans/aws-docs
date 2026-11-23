@@ -22,7 +22,7 @@ Applications represent deployments in target clusters. Each Application defines 
 
 Define an Application that deploys from a Git repository:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -44,13 +44,13 @@ Use `destination.name` with the cluster name you used when registering the clust
 
 Apply the Application:
 
-```
+```bash
 kubectl apply -f application.yaml
 ```
 
 View the Application status:
 
-```
+```bash
 kubectl get application guestbook -n argocd
 ```
 
@@ -63,7 +63,7 @@ You can create Applications outside the primary Argo CD namespace. Before you cr
 
 The following example creates an Application in the `team-a-gitops` namespace that uses the `team-a` project:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -82,7 +82,7 @@ spec:
 
 Apply and view the Application in its source namespace:
 
-```
+```bash
 kubectl apply -f application.yaml
 kubectl get application guestbook -n team-a-gitops
 ```
@@ -94,7 +94,7 @@ When you use the Argo CD CLI or UI, identify an Application in an additional nam
 
  **Git repository**:
 
-```
+```yaml
 spec:
   source:
     repoURL: https://github.com/example/my-app
@@ -104,7 +104,7 @@ spec:
 
  **Specific Git tag or commit**:
 
-```
+```yaml
 spec:
   source:
     targetRevision: v1.2.0  # or commit SHA
@@ -112,7 +112,7 @@ spec:
 
  **Helm chart**:
 
-```
+```yaml
 spec:
   source:
     repoURL: https://github.com/example/helm-charts
@@ -128,7 +128,7 @@ spec:
 
  **Helm chart with values from external Git repository** (multi-source pattern):
 
-```
+```yaml
 spec:
   sources:
   - repoURL: https://github.com/example/helm-charts
@@ -146,7 +146,7 @@ For more information, see [Helm Value Files from External Git Repository](https:
 
  **Helm chart from ECR**:
 
-```
+```yaml
 spec:
   source:
     repoURL: oci://{{account-id}}.dkr.ecr.{{region}}.amazonaws.com/{{repository-name}}
@@ -158,7 +158,7 @@ If the Capability Role has the required ECR permissions, the repository is used 
 
  **Git repository from CodeCommit**:
 
-```
+```yaml
 spec:
   source:
     repoURL: https://git-codecommit.{{region}}.amazonaws.com/v1/repos/{{repository-name}}
@@ -170,7 +170,7 @@ If the Capability Role has the required CodeCommit permissions, the repository i
 
  **Git repository from CodeConnections**:
 
-```
+```yaml
 spec:
   source:
     repoURL: https://codeconnections.{{region}}.amazonaws.com/git-http/{{account-id}}/{{region}}/{{connection-id}}/{{owner}}/{{repository}}.git
@@ -182,7 +182,7 @@ The repository URL format is derived from the CodeConnections connection ARN. If
 
  **Kustomize**:
 
-```
+```yaml
 spec:
   source:
     repoURL: https://github.com/example/kustomize-app
@@ -199,7 +199,7 @@ The source hydrator renders your manifests (for example, from Helm charts or Kus
 
 To turn on the source hydrator, add `hydrator.enabled: "true"` to the `data` section of the `argocd-cmd-params-cm` ConfigMap in the primary Argo CD namespace. Keep any existing keys in the ConfigMap.
 
-```
+```yaml
 data:
   hydrator.enabled: "true"
 ```
@@ -216,7 +216,7 @@ Argo CD uses separate credentials for pushing and pulling to provide better isol
 
 For AWS CodeCommit, the Capability Role provides pull credentials when it has `codecommit:GitPull` permission. You don’t need a pull Repository Secret. Create a write Repository Secret to identify the repository that receives the hydrated output. The Secret doesn’t contain stored credentials because authentication uses the Capability Role. In the following examples, replace `region` with your AWS Region and `repository-name` with your CodeCommit repository name.
 
-```
+```yaml
 apiVersion: v1
 kind: Secret
 metadata:
@@ -235,7 +235,7 @@ The `syncSource.path` field must point to a subdirectory. Hydrating to the repos
 
 Create an Application with `spec.sourceHydrator` instead of `spec.source`:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -271,14 +271,14 @@ Control how Argo CD syncs applications.
 
 Applications require manual approval to sync:
 
-```
+```yaml
 spec:
   syncPolicy: {}  # No automated sync
 ```
 
 Manually trigger sync:
 
-```
+```bash
 kubectl patch application guestbook -n argocd \
   --type merge \
   --patch '{"operation": {"initiatedBy": {"username": "admin"}, "sync": {}}}'
@@ -288,7 +288,7 @@ kubectl patch application guestbook -n argocd \
 
 Applications automatically sync when Git changes are detected:
 
-```
+```yaml
 spec:
   syncPolicy:
     automated: {}
@@ -298,7 +298,7 @@ spec:
 
 Automatically revert manual changes to the cluster:
 
-```
+```yaml
 spec:
   syncPolicy:
     automated:
@@ -311,7 +311,7 @@ When enabled, Argo CD reverts any manual changes made directly to the cluster, e
 
 Automatically delete resources removed from Git:
 
-```
+```yaml
 spec:
   syncPolicy:
     automated:
@@ -323,7 +323,7 @@ Pruning will delete resources from your cluster. Use with caution in production 
 
  **Combined automated sync**:
 
-```
+```yaml
 spec:
   syncPolicy:
     automated:
@@ -337,7 +337,7 @@ spec:
 
 Configure retry behavior for failed syncs:
 
-```
+```yaml
 spec:
   syncPolicy:
     retry:
@@ -357,7 +357,7 @@ Additional sync configuration:
 
  **Create namespace if it does not exist**:
 
-```
+```yaml
 spec:
   syncPolicy:
     syncOptions:
@@ -368,7 +368,7 @@ spec:
 
 Useful when applying resources that depend on CRDs that do not exist yet (like kro instances):
 
-```
+```yaml
 spec:
   syncPolicy:
     syncOptions:
@@ -379,7 +379,7 @@ This can also be applied to specific resources using a label on the resource its
 
  **Validate resources before applying**:
 
-```
+```yaml
 spec:
   syncPolicy:
     syncOptions:
@@ -388,7 +388,7 @@ spec:
 
  **Apply out of sync only**:
 
-```
+```yaml
 spec:
   syncPolicy:
     syncOptions:
@@ -410,7 +410,7 @@ For details, see [Sync Waves](https://argo-cd.readthedocs.io/en/stable/user-guid
 
 Prevent Argo CD from syncing specific fields that are managed by other controllers (like HPA managing replicas):
 
-```
+```yaml
 spec:
   ignoreDifferences:
   - group: apps
@@ -428,7 +428,7 @@ Deploy the same application to multiple environments:
 
  **Development**:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -447,7 +447,7 @@ spec:
 
  **Production**:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -473,7 +473,7 @@ spec:
 
  **View Application status**:
 
-```
+```bash
 kubectl get application my-app -n argocd
 ```
 
@@ -487,7 +487,7 @@ Rollback to a previous revision using the Argo CD UI, the Argo CD CLI, or by upd
 
 Using the Argo CD CLI:
 
-```
+```bash
 argocd app rollback my-app <revision-id>
 ```
 

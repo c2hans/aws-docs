@@ -12,7 +12,7 @@ The following code examples show how to use `GetPersonalizedRanking`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static List<PredictedItem> getRankedRecs(PersonalizeRuntimeClient personalizeRuntimeClient,
             String campaignArn,
             String userId,
@@ -52,7 +52,7 @@ The following code examples show how to use `GetPersonalizedRanking`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { GetPersonalizedRankingCommand } from "@aws-sdk/client-personalize-runtime";
 import { personalizeRuntimeClient } from "./libs/personalizeClients.js";

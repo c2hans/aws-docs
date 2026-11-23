@@ -74,7 +74,7 @@ To view a code example for using the `$indexStats` command, choose the tab for t
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function indexStats() {
@@ -93,7 +93,7 @@ indexStats();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def index_stats():

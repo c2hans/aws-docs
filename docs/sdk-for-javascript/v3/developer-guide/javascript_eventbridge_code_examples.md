@@ -30,7 +30,7 @@ The following code example shows how to use `PutEvents`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/eventbridge#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import {
   EventBridgeClient,
   PutEventsCommand,
@@ -86,7 +86,7 @@ The following code example shows how to use `PutRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/eventbridge#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { EventBridgeClient, PutRuleCommand } from "@aws-sdk/client-eventbridge";
 
 export const putRule = async (
@@ -132,7 +132,7 @@ The following code example shows how to use `PutTargets`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/eventbridge#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import {
   EventBridgeClient,
   PutTargetsCommand,

@@ -33,7 +33,7 @@ The input parameter is a `DOUBLE PRECISION` number.
 
 To return the base 10 logarithm of the number 100, use the following example.
 
-```
+```sql
 SELECT DLOG10(100);
 
 +--------+

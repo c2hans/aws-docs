@@ -25,7 +25,7 @@ In the following command, do the following:
 + Replace {{https://example.com/unsub}} with your unsubscribe link.
 + Replace {{example123456}} with a unique identifier for the recipient.
 
-```
+```bsh
 aws pinpoint send-messages --application-id {{AppId}} --message-request '{
  "Addresses": {
    "{{richard_roe@example.com}}": {

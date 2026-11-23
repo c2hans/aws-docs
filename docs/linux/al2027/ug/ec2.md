@@ -48,7 +48,7 @@ In the AWS CLI, you can use an AMI SSM parameter value to launch a new instance 
 **Note**
 Each of the following items in the command is a placeholder. Replace them with your own values: {{m5.xlarge}}, {{us-east-1}}, {{my-key-pair}}, and {{sg-004a7650}}.
 
-```
+```sh
 $ aws ec2 run-instances \
   --image-id \
     resolve:ssm:/aws/service/ami-amazon-linux-latest/al2027-preview-ami-kernel-default-x86_64 \
@@ -83,7 +83,7 @@ You can launch a specific AL2027 AMI using the AMI ID. You can determine which A
 
 After your instance is running, connect to it using SSH:
 
-```
+```bash
 ssh -i <your-key.pem> ec2-user@<instance-public-ip>
 ```
 

@@ -28,7 +28,7 @@ Following, you'll find a reference for each of the mandatory controls available 
 +  The AWS CloudTrail integration tied to the manifest `centralizedLogging` configuration has two new controls starting landing zone 4.0
   + Disallow changes to Amazon SNS subscriptions and topics managed by AWS Control Tower
 
-    ```
+    ```json
     {
         "Version": "2012-10-17",
         "Statement": [
@@ -60,7 +60,7 @@ Following, you'll find a reference for each of the mandatory controls available 
     ```
   + Disallow modifications to Amazon S3 buckets managed by AWS Control Tower
 
-    ```
+    ```json
     {
         "Version": "2012-10-17",
         "Statement": [
@@ -103,7 +103,7 @@ Following, you'll find a reference for each of the mandatory controls available 
 +  The AWS Config integration has a new control starting landing zone 4.0
   + Disallow modifications to AWS Config recorder Amazon S3 buckets managed by AWS Control Tower
 
-    ```
+    ```json
     {
          "Version": "2012-10-17",
          "Statement": [
@@ -208,7 +208,7 @@ The artifact for this control is the following service control policy (SCP).
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -243,7 +243,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -278,7 +278,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -314,7 +314,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -349,7 +349,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -494,7 +494,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -534,7 +534,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -574,7 +574,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -612,7 +612,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -650,7 +650,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -688,7 +688,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -726,7 +726,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -767,7 +767,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -806,7 +806,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -847,7 +847,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -888,7 +888,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -990,7 +990,7 @@ The former artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -1038,7 +1038,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -1085,7 +1085,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -1126,7 +1126,7 @@ The artifact for this control is the following SCP.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

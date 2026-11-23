@@ -33,7 +33,7 @@ If you are upgrading from v1.4.x, update all stacks or StackSets as follows:
 
 1. If the Web UI is enabled and you updated parameters such as `TicketGenFunctionName`, invalidate the CloudFront cache to reflect changes immediately:
 
-   ```
+   ```bash
    aws cloudfront create-invalidation \
      --distribution-id <distribution-id> \
      --paths "/aws-exports.json"

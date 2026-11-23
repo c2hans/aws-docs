@@ -173,13 +173,13 @@ To apply the same change to existing instances, append the following options to 
 
 1.
 
-   ```
+   ```sh
    $ echo 'RES_OPTIONS="timeout:2 attempts:5"' | sudo tee -a /etc/sysconfig/network-scripts/ifcfg-eth0
    ```
 
 1.
 
-   ```
+   ```sh
    $ echo 'options timeout:2 attempts:5' | sudo tee -a /etc/resolv.conf
    ```
 
@@ -200,13 +200,13 @@ If you prefer the previous behavior, you can enable NUMA balancing using sysctl:
 
 1.
 
-   ```
+   ```sh
    $ sudo sysctl -w 'kernel.numa_balancing=1'
    ```
 
 1.
 
-   ```
+   ```sh
    $ echo 'kernel.numa_balancing = 1' | sudo tee /etc/sysctl.d/50-numa-balancing.conf
    ```
 

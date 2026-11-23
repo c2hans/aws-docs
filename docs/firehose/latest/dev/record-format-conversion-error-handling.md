@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/record-format-conver
 
 When Amazon Data Firehose can't parse or deserialize a record (for example, when the data doesn't match the schema), it writes it to Amazon S3 with an error prefix. If this write fails, Amazon Data Firehose retries it forever, blocking further delivery. For each failed record, Amazon Data Firehose writes a JSON document with the following schema:
 
-```
+```JSON
 {
   "attemptsMade": long,
   "arrivalTimestamp": long,

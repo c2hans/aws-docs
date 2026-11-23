@@ -38,7 +38,7 @@ The following example uses data from the CATEGORY table in the TICKIT sample dat
 
 To repeat the value of the CATID column in the CATEGORY table three times, use the following example.
 
-```
+```sql
 SELECT catid, REPEAT(catid,3)
 FROM category
 ORDER BY 1,2;
@@ -62,7 +62,7 @@ ORDER BY 1,2;
 
 When you set the `enable_large_strings_opt_in` parameter to `Yes`, you can generate strings up to 16,000,000 bytes. The following example shows this behavior.
 
-```
+```SQL
 SELECT
     LEN(REPEAT('X', 5000000)) AS five_million_bytes,
     LEN(REPEAT('Y', 16000000)) AS sixteen_million_bytes;

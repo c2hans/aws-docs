@@ -33,7 +33,7 @@ The following example role trust policy grants access to a role under the follow
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -74,7 +74,7 @@ When you set permissions with IAM policies for authenticated access or guest acc
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

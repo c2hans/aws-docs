@@ -22,7 +22,7 @@ The following example shows configuration of an HTTP client during the initializ
 ### Imports
 <a name="basic-config-ex-imports"></a>
 
-```
+```kotlin
 import aws.sdk.kotlin.services.dynamodb.DynamoDbClient
 import kotlin.time.Duration.Companion.seconds
 ```
@@ -30,7 +30,7 @@ import kotlin.time.Duration.Companion.seconds
 ### Code
 <a name="basic-config-ex-code"></a>
 
-```
+```kotlin
 DynamoDbClient {
     region = "us-east-2"
     httpClient {
@@ -58,7 +58,7 @@ The following example specifies the [OkHttpEngine](/smithy-kotlin/api/latest/htt
 #### Imports
 <a name="http-config-specify-engine-imports"></a>
 
-```
+```kotlin
 import aws.sdk.kotlin.services.dynamodb.DynamoDbClient
 import aws.smithy.kotlin.runtime.http.engine.okhttp.OkHttpEngine
 ```
@@ -66,7 +66,7 @@ import aws.smithy.kotlin.runtime.http.engine.okhttp.OkHttpEngine
 #### Code
 <a name="http-config-specify-engine-code"></a>
 
-```
+```kotlin
 DynamoDbClient {
     region = "us-east-2"
     httpClient(OkHttpEngine) {  // The first parameter specifies the HTTP engine type.
@@ -88,14 +88,14 @@ To use configuration parameters specific to an HTTP engine, you must add the eng
 
 Replace {{X.Y.Z}} with the version you’re using in your app or with the [latest version available](https://github.com/smithy-lang/smithy-kotlin/releases/latest).
 
-```
+```kotlin
 implementation(platform("aws.smithy.kotlin:bom:{{X.Y.Z}}"))
 implementation("aws.smithy.kotlin:http-client-engine-okhttp")
 ```
 
 For the [`CrtHttpEngine`](/smithy-kotlin/api/latest/http-client-engine-crt/aws.smithy.kotlin.runtime.http.engine.crt/-crt-http-engine/index.html), add the following dependency.
 
-```
+```kotlin
 implementation(platform("aws.smithy.kotlin:bom:{{X.Y.Z}}"))
 implementation("aws.smithy.kotlin:http-client-engine-crt")
 ```
@@ -115,7 +115,7 @@ The following code example shows code that keeps the HTTP client stays alive whi
 ##### Imports
 <a name="http-client-explicit-usage-ex-imports"></a>
 
-```
+```kotlin
 import aws.sdk.kotlin.services.dynamodb.DynamoDbClient
 import aws.smithy.kotlin.runtime.http.engine.okhttp.OkHttpEngine
 import kotlin.time.Duration.Companion.seconds
@@ -124,7 +124,7 @@ import kotlin.time.Duration.Companion.seconds
 ##### Code
 <a name="http-client-explicit-usage-ex-code"></a>
 
-```
+```kotlin
 OkHttpEngine {
     maxConcurrency = 64u
     connectTimeout = 10.seconds
@@ -159,7 +159,7 @@ Because the polling loop uses blocking reads, engine calls to acquire or close a
 #### Imports
 <a name="http-idle-connection-ex-imports"></a>
 
-```
+```kotlin
 import aws.sdk.kotlin.services.s3.S3Client
 import aws.smithy.kotlin.runtime.http.engine.okhttp.OkHttpEngine
 import kotlin.time.Duration.Companion.milliseconds
@@ -168,7 +168,7 @@ import kotlin.time.Duration.Companion.milliseconds
 #### Code
 <a name="http-idle-connection-ex-code"></a>
 
-```
+```kotlin
 S3Client.fromEnvironment {
     httpEngine(OkHttpEngine) {
         connectionIdlePollingInterval = 50.milliseconds

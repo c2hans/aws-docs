@@ -133,7 +133,7 @@ We recommend using https:// for your production websites and applications.
 
      You must implement the callback function in the embedded snippet, as shown in the following example.
 
-     ```
+     ```json
      amazon_connect('authenticate', function(callback) {
        window.fetch('/token').then(res => {
          res.json().then(data => {
@@ -179,7 +179,7 @@ When your customers interact with the Start chat icon on your website, the commu
 
 The following code snippet shows an example of how to generate a JWT in Python:
 
-```
+```python
 import jwt
 import datetime
 CONNECT_SECRET = "{{your-securely-stored-jwt-secret}}"

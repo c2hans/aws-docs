@@ -32,7 +32,7 @@ Use the AWS IoT SiteWise console to update an asset property alias.
 
  To update an alias on an asset property, run the following command:
 
-```
+```JSON
     aws iotsitewise update-asset-property \
         --asset-id <asset-ID> \
         --property-id <property-ID> \

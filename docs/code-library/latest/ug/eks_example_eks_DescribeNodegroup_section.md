@@ -80,7 +80,7 @@ For more information, see [Simplify node lifecycle with managed node groups](htt
 **Tools for PowerShell V4**
 **Example 1: This cmdlet returns descriptive information about an Amazon EKS node group.**
 
-```
+```powershell
 Get-EKSNodegroup -NodegroupName "ProdEKSNodeGroup" -ClusterName "PROD"
 ```
 **Output:**
@@ -111,7 +111,7 @@ Version        : 1.14
 **Tools for PowerShell V5**
 **Example 1: This cmdlet returns descriptive information about an Amazon EKS node group.**
 
-```
+```powershell
 Get-EKSNodegroup -NodegroupName "ProdEKSNodeGroup" -ClusterName "PROD"
 ```
 **Output:**

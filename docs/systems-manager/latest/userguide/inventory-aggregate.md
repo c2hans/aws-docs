@@ -210,7 +210,7 @@ aws ssm get-inventory --aggregators '[{"Expression": "AWS:Application.Name", "Ag
 
 If you prefer, you can create an aggregation expression with one or more inventory types and data types in a JSON file and call the file from the AWS CLI. The JSON in the file must use the following syntax.
 
-```
+```json
 [
        {
            "Expression": "string",
@@ -227,7 +227,7 @@ You must save the file with the .json file extension.
 
 Here is an example that uses multiple inventory types and data types.
 
-```
+```json
 [
        {
            "Expression": "AWS:Application.Name",
@@ -337,7 +337,7 @@ Groups don't return data type counts. Also, you can't drill-down into the result
 
 If you prefer, you can create an aggregation expression with one or more inventory types in a JSON file and call the file from the AWS CLI. The JSON in the file must use the following syntax:
 
-```
+```json
 {
    "Aggregators":[
       {
@@ -390,7 +390,7 @@ aws ssm get-inventory --aggregators 'Groups=[{Name=ApplicationORFile,Filters=[{K
 
 If you prefer to use a file, copy and paste the following sample into a file and save it as input.json.
 
-```
+```json
 {
    "Aggregators":[
       {

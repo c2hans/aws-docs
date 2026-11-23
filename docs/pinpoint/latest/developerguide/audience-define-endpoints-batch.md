@@ -35,7 +35,7 @@ Where:
 **Example Endpoint batch request file**
 The example `update-endpoints-batch` command uses a JSON file as the argument for the `--endpoint-request` parameter. This file contains a batch of endpoint definitions like the following:
 
-```
+```json
 {
     "Item": [
         {
@@ -97,7 +97,7 @@ You can use the Amazon Pinpoint API in your Java applications by using the clien
 **Example Code**
 To submit an endpoint batch request, initialize an `EndpointBatchRequest` object, and pass it to the `updateEndpointsBatch` method of the `AmazonPinpoint` client. The following example populates an `EndpointBatchRequest` object with two `EndpointBatchItem` objects:
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.UpdateEndpointsBatchResponse;
@@ -113,7 +113,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 ```
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.UpdateEndpointsBatchResponse;
@@ -258,7 +258,7 @@ To submit an endpoint batch request, issue a `PUT` request to the [Endpoints](ht
 Where {{application-id}} is the ID of the Amazon Pinpoint project in which you're adding or updating the endpoints.
 In your request, include the required headers, and provide the [EndpointBatchRequest](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints.html#apps-application-id-endpoints-schemas) JSON as the body:
 
-```
+```http
 PUT /v1/apps/{{application_id}}/endpoints HTTP/1.1
 Host: pinpoint.us-east-1.amazonaws.com
 Content-Type: application/json

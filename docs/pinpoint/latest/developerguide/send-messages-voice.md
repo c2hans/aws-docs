@@ -17,7 +17,7 @@ Use this example to send a voice message by using the [AWS SDK for Java](https:/
 
 This example assumes that you're using a shared credentials file to specify the Access Key and Secret Access Key for an existing user. For more information, see [Set up AWS credentials and Region for development](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/setup.html#setup-credentials) in the *AWS SDK for Java Developer Guide*.
 
-```
+```java
 import software.amazon.awssdk.core.client.config.ClientOverrideConfiguration;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpointsmsvoice.PinpointSmsVoiceClient;
@@ -32,7 +32,7 @@ import java.util.List;
 import java.util.Map;
 ```
 
-```
+```java
 import software.amazon.awssdk.core.client.config.ClientOverrideConfiguration;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpointsmsvoice.PinpointSmsVoiceClient;
@@ -151,7 +151,7 @@ Use this example to send a voice message by using the AWS SDK for JavaScript in 
 
 This example assumes that you're using a shared credentials file to specify the Access Key and Secret Access Key for an existing user. For more information, see [Setting credentials](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/setting-credentials.html) in the *AWS SDK for JavaScript in Node.js Developer Guide*.
 
-```
+```js
 "use strict";
 
 var AWS = require("aws-sdk");
@@ -240,7 +240,7 @@ Use this example to send a voice message by using the AWS SDK for Python (Boto3)
 
 This example assumes that you're using a shared credentials file to specify the Access Key and Secret Access Key for an existing user. For more information, see [Credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html) in the *AWS SDK for Python (Boto3) API Reference*.
 
-```
+```py
 import logging
 import boto3
 from botocore.exceptions import ClientError

@@ -16,7 +16,7 @@ The samples repository on the GitHub website includes conda recipes for the foll
 
 Submit a Blender 4.5 build job from the `conda_recipes` directory of the samples repository:
 
-```
+```bash
 ./submit-package-job blender-4.5
 ```
 

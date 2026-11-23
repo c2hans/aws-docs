@@ -89,7 +89,7 @@ To view a code example for using the `$dateToString` command, choose the tab for
 
 Here's an example of using the `$dateToString` operator in a Node.js application:
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function example() {
@@ -123,7 +123,7 @@ example();
 
 Here's an example of using the `$dateToString` operator in a Python application:
 
-```
+```python
 from pymongo import MongoClient
 
 def example():

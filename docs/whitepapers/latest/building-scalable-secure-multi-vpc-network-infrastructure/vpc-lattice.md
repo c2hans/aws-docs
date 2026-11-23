@@ -22,4 +22,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 
 ![A diagram depicting VPC Lattice communication flows](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/vpc-lattice.png)
 
+*VPC Lattice communication flows*
+
  More details can be found in the [VPC Lattice user guide](https://docs.aws.amazon.com/vpc-lattice/latest/ug/what-is-vpc-lattice.html ).

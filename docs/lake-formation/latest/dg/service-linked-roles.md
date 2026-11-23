@@ -35,7 +35,7 @@ For example, after you register the location `s3://my-kinesis-test/logs`, Lake F
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

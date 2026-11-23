@@ -28,7 +28,7 @@ This code creates a new IAM user.
 
 Create a new Go file named `iam_createaccountalias.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -43,7 +43,7 @@ import (
 
 Set up a session and an IAM client.
 
-```
+```go
 func main() {
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
@@ -55,7 +55,7 @@ func main() {
 
 The code takes the new alias as an argument, and then calls `CreateAccountAlias` with the alias name.
 
-```
+```go
     _, err = svc.CreateAccountAlias(&iam.CreateAccountAliasInput{
         AccountAlias: &os.Args[1],
     })
@@ -77,7 +77,7 @@ This code lists the aliases for your IAM account.
 
 Create a new Go file named `iam_listaccountaliases.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -91,7 +91,7 @@ import (
 
 Set up a session and an IAM client.
 
-```
+```go
 func main() {
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
@@ -103,7 +103,7 @@ func main() {
 
 The code calls `ListAccountAliases`, specifying to return a maximum of 10 items.
 
-```
+```go
     result, err := svc.ListAccountAliases(&iam.ListAccountAliasesInput{
         MaxItems: aws.Int64(10),
     })
@@ -131,7 +131,7 @@ This code deletes a specified IAM account alias.
 
 Create a new Go file with the name `iam_deleteaccountalias.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -146,7 +146,7 @@ import (
 
 Set up a session and an IAM client.
 
-```
+```go
 func main() {
     // Initialize a session in us-west-2 that the SDK will use to load
     // credentials from the shared credentials file ~/.aws/credentials.
@@ -160,7 +160,7 @@ func main() {
 
 The code calls `ListAccountAliases`, specifying to return a maximum of 10 items.
 
-```
+```go
     _, err = svc.DeleteAccountAlias(&iam.DeleteAccountAliasInput{
         AccountAlias: &os.Args[1],
     })

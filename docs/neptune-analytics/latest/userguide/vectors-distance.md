@@ -95,7 +95,7 @@ RETURN n, m, distance
 
 Here is an example of the output returned by `.vectors.distance` when run against a sample Wikipedia dataset using the following query:
 
-```
+```json
 aws neptune-graph execute-query \
   --graph-identifier ${graphIdentifier} \
   --query-string "MATCH (n{`~id`: '0'})

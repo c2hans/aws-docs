@@ -181,7 +181,7 @@ The following tables describe the available properties and configurations for al
 
 The following example demonstrates how to configure the CloudWatch agent to stop exporting all system metrics.
 
-```
+```bash,sh,zsh
 [
   {
     "Classification": "emr-metrics",
@@ -199,7 +199,7 @@ The following example demonstrates how to configure the CloudWatch agent to stop
 
 The following example configures the CloudWatch agent to export the default system metrics. Doing so is a quick way to reset the agent back to only exporting the default system metrics if you've already reconfigured the system metrics at least once. This reset also removes any application metrics that were reconfigured before.
 
-```
+```bash,sh,zsh
 [
   {
     "Classification": "emr-metrics",
@@ -211,7 +211,7 @@ The following example configures the CloudWatch agent to export the default syst
 
 The following example configures the cluster to export the `cpu`, `mem`, and the `disk` metrics.
 
-```
+```bash,sh,zsh
 [
   {
     "Classification": "emr-metrics",
@@ -263,7 +263,7 @@ The previous example configuration has the following properties:
 
 The following example configures the CloudWatch agent to stop exporting metrics for the Hadoop Namenode service.
 
-```
+```bash,sh,zsh
 [
   {
     "Classification": "emr-metrics",
@@ -281,7 +281,7 @@ The following example configures the CloudWatch agent to stop exporting metrics 
 
 The following example configures a cluster to export Hadoop application metrics.
 
-```
+```bash,sh,zsh
 [
   {
     "Classification": "emr-metrics",
@@ -327,7 +327,7 @@ The following example demonstrates how to configure the CloudWatch agent to expo
 
 If you are currently exporting metrics to Amazon Managed Service for Prometheus and want to reconfigure the metrics for the cluster and continue exporting metrics to Amazon Managed Service for Prometheus, you must include the properties `metrics_destination` and `prometheus_endpoint`.
 
-```
+```bash,sh,zsh
 [
   {
     "Classification": "emr-metrics",
@@ -342,7 +342,7 @@ If you are currently exporting metrics to Amazon Managed Service for Prometheus 
 
 To use the CloudWatch agent to export metrics to CloudWatch, use the following example.
 
-```
+```bash,sh,zsh
 [
   {
     "Classification": "emr-metrics",

@@ -30,7 +30,7 @@ TIMESTAMP
 
 The following example uses the SYSDATE function to return the full timestamp for the current date.
 
-```
+```sql
 select sysdate;
 
 timestamp
@@ -40,7 +40,7 @@ timestamp
 
 The following example uses the SYSDATE function inside the TRUNC function to return the current date without the time.
 
-```
+```sql
 select trunc(sysdate);
 
 trunc
@@ -50,7 +50,7 @@ trunc
 
 The following query returns sales information for dates that fall between the date when the query is issued and whatever date is 120 days earlier.
 
-```
+```sql
 select salesid, pricepaid, trunc(saletime) as saletime, trunc(sysdate) as now
 from sales
 where saletime between trunc(sysdate)-120 and trunc(sysdate)

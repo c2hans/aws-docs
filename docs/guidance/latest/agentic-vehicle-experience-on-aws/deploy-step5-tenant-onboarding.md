@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 
 After a fresh CDK deploy, seed the demo personas and tenant records. The `seed-staging` Makefile target runs all seed scripts. You can also run the individual scripts directly:
 
-```
+```bash
 # For staging — these are invoked automatically by make deploy-staging
 # Replace <stage> and <region> with your target values
 

@@ -25,7 +25,7 @@ $ npm i react react-dom @cloudscape-design/components @cloudscape-design/global-
 
 You must create an alias for importing the `dcv` module, since it is an external dependency for Amazon DCV Web UI SDK. For instance, if you are using webpack to bundle your web app, you can use the [ resolve.alias](https://webpack.js.org/configuration/resolve/#resolvealias) option like so:
 
-```
+```javascript
 const path = require('path');
 
 module.exports = {
@@ -40,7 +40,7 @@ module.exports = {
 
 If you are using rollup for bundling, you can install [ @rollup/plugin-alias](https://www.npmjs.com/package/@rollup/plugin-alias), and use it like so:
 
-```
+```javascript
 import alias from '@rollup/plugin-alias';
 const path = require('path');
 
@@ -63,7 +63,7 @@ module.exports = {
 
 For example:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en" style="height: 100%;">
   <head>
@@ -83,7 +83,7 @@ For example:
 
  First, from the `index.js` file, import `React` , `ReactDOM` and your top level `App` component.
 
-```
+```javascript
 import React from "react";
 import ReactDOM from 'react-dom';
 import App from './App';
@@ -91,7 +91,7 @@ import App from './App';
 
 Render the top level container node of your app.
 
-```
+```javascript
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -102,7 +102,7 @@ ReactDOM.render(
 
  In the `App.js` file, import the Amazon DCV Web Client SDK as a ESM module, the `DCVViewer` React component from the Amazon DCV Web UI SDK, `React` and the `Cloudscape Design Global Styles` package.
 
-```
+```javascript
 import React from "react";
 import dcv from "dcv";
 import "@cloudscape-design/global-styles/index.css";
@@ -111,7 +111,7 @@ import {DCVViewer} from "./dcv-ui/dcv-ui.js";
 
  Following is an example showing how to authenticate against the Amazon DCV Server and render the `DCVViewer` React component from Amazon DCV Web UI SDK, provided the authentication was successful.
 
-```
+```javascript
 const LOG_LEVEL = dcv.LogLevel.INFO;
 const SERVER_URL = "https://your-dcv-server-url:port/";
 const BASE_URL = "/static/js/dcvjs";

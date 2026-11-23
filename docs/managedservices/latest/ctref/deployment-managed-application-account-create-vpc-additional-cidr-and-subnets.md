@@ -188,13 +188,13 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-managed-application-account-create-vpc-additional-cidr-and-subnets-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="deployment-managed-application-account-create-vpc-additional-cidr-and-subnets-ex-max"></a>
 
-```
+```json
 Example not available.
 ```

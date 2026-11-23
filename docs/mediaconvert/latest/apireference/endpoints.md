@@ -52,7 +52,7 @@ Supports CORS preflight requests.
 #### POST schema
 <a name="endpoints-request-body-post-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "maxResults": integer,
@@ -66,7 +66,7 @@ Supports CORS preflight requests.
 #### DescribeEndpointsResponse schema
 <a name="endpoints-response-body-describeendpointsresponse-example"></a>
 
-```
+```json
 {
   "endpoints": [
     {
@@ -80,7 +80,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="endpoints-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

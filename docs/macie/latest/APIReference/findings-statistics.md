@@ -45,7 +45,7 @@ Retrieves (queries) aggregated statistical data about findings.
 #### POST schema
 <a name="findings-statistics-request-body-post-example"></a>
 
-```
+```json
 {
   "findingCriteria": {
     "criterion": {
@@ -66,7 +66,7 @@ Retrieves (queries) aggregated statistical data about findings.
 #### GetFindingStatisticsResponse schema
 <a name="findings-statistics-response-body-getfindingstatisticsresponse-example"></a>
 
-```
+```json
 {
   "countsByGroup": [
     {
@@ -80,7 +80,7 @@ Retrieves (queries) aggregated statistical data about findings.
 #### ValidationException schema
 <a name="findings-statistics-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -89,7 +89,7 @@ Retrieves (queries) aggregated statistical data about findings.
 #### ServiceQuotaExceededException schema
 <a name="findings-statistics-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -98,7 +98,7 @@ Retrieves (queries) aggregated statistical data about findings.
 #### AccessDeniedException schema
 <a name="findings-statistics-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -107,7 +107,7 @@ Retrieves (queries) aggregated statistical data about findings.
 #### ResourceNotFoundException schema
 <a name="findings-statistics-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -116,7 +116,7 @@ Retrieves (queries) aggregated statistical data about findings.
 #### ConflictException schema
 <a name="findings-statistics-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -125,7 +125,7 @@ Retrieves (queries) aggregated statistical data about findings.
 #### ThrottlingException schema
 <a name="findings-statistics-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -134,7 +134,7 @@ Retrieves (queries) aggregated statistical data about findings.
 #### InternalServerException schema
 <a name="findings-statistics-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

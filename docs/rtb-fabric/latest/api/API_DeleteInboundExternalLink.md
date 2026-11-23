@@ -64,7 +64,7 @@ Pattern: `link-[a-z0-9-]{1,25}`
  ** [status](#API_DeleteInboundExternalLink_ResponseSyntax) **   <a name="rtbfabric-DeleteInboundExternalLink-response-status"></a>
 The status of the request.
 Type: String
-Valid Values: `PENDING_CREATION | PENDING_REQUEST | REQUESTED | ACCEPTED | ACTIVE | REJECTED | FAILED | PENDING_DELETION | DELETED | PENDING_UPDATE | PENDING_ISOLATION | ISOLATED | PENDING_RESTORATION`
+Valid Values: `PENDING_CREATION | PENDING_REQUEST | REQUESTED | ACCEPTED | ACTIVE | REJECTED | FAILED | PENDING_DELETION | DELETED | PENDING_UPDATE | PENDING_ISOLATION | ISOLATED | PENDING_RESTORATION | CREATE_FAILED | DELETE_FAILED`
 
 ## Errors
 <a name="API_DeleteInboundExternalLink_Errors"></a>
@@ -92,7 +92,7 @@ The request was denied due to request throttling.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request could not be completed because it fails satisfy the constraints specified by the service.
+The request could not be completed because it fails to satisfy the constraints specified by the service.
 HTTP Status Code: 400
 
 ## See Also

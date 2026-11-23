@@ -1005,7 +1005,7 @@ aws ec2 describe-vpc-endpoint-services \
 
 The following is example output. `VpcEndpointPolicySupported` indicates whether [endpoint policies](vpc-endpoints-access.md) are supported. `SupportedIpAddressTypes` indicates which IP address types are supported .
 
-```
+```json
 {
     "ServiceDetails": [
         {

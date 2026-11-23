@@ -107,7 +107,7 @@ Updates the settings for an allow list.
 #### PUT schema
 <a name="allow-lists-id-request-body-put-example"></a>
 
-```
+```json
 {
   "criteria": {
     "regex": "string",
@@ -127,7 +127,7 @@ Updates the settings for an allow list.
 #### Empty Schema schema
 <a name="allow-lists-id-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -135,7 +135,7 @@ Updates the settings for an allow list.
 #### GetAllowListResponse schema
 <a name="allow-lists-id-response-body-getallowlistresponse-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "createdAt": "string",
@@ -162,7 +162,7 @@ Updates the settings for an allow list.
 #### UpdateAllowListResponse schema
 <a name="allow-lists-id-response-body-updateallowlistresponse-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "id": "string"
@@ -172,7 +172,7 @@ Updates the settings for an allow list.
 #### ValidationException schema
 <a name="allow-lists-id-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -181,7 +181,7 @@ Updates the settings for an allow list.
 #### AccessDeniedException schema
 <a name="allow-lists-id-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -190,7 +190,7 @@ Updates the settings for an allow list.
 #### ResourceNotFoundException schema
 <a name="allow-lists-id-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -199,7 +199,7 @@ Updates the settings for an allow list.
 #### ThrottlingException schema
 <a name="allow-lists-id-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -208,7 +208,7 @@ Updates the settings for an allow list.
 #### InternalServerException schema
 <a name="allow-lists-id-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

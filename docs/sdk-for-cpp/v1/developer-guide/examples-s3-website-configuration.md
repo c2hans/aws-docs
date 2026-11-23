@@ -24,7 +24,7 @@ Setting an index document is *required*; all other parameters are optional.
 
  **Code**
 
-```
+```cpp
 bool AwsDoc::S3::putWebsiteConfig(const Aws::String &bucketName,
                                   const Aws::String &indexPage, const Aws::String &errorPage,
                                   const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -73,7 +73,7 @@ The configuration will be returned as a [GetBucketWebsiteResult](https://docs.aw
 
  **Code**
 
-```
+```cpp
 bool AwsDoc::S3::getWebsiteConfig(const Aws::String &bucketName,
                                   const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client s3Client(clientConfig);
@@ -117,7 +117,7 @@ To delete an Amazon S3 bucket’s website configuration, call the `S3Client`’s
 
  **Code**
 
-```
+```cpp
 bool AwsDoc::S3::deleteBucketWebsite(const Aws::String &bucketName,
                                      const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client client(clientConfig);

@@ -49,7 +49,7 @@ Type: Array of [ContainerOperatingSystem](API_marketplace-discovery_ContainerOpe
 Required: No
 
  ** releaseNotes **   <a name="AWSMarketplaceService-Type-marketplace-discovery_ContainerFulfillmentOption-releaseNotes"></a>
-Release notes describing changes in this version of the fulfillment option.
+Release notes that describe the changes in this version of the fulfillment option.
 Type: String
 Required: No
 

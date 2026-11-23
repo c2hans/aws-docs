@@ -101,13 +101,13 @@ First create a folder to contain the generated build files ({{build-folder}}).
 
 Use the following command to generate build files:
 
-```
+```bash
 cmake -DVENDOR=st -DBOARD=stm32l475_discovery -DCOMPILER=arm-gcc -S {{freertos}} -B {{build-folder}}
 ```
 
 If `arm-none-eabi-gcc` is not in your shell path, you also need to set the `AFR_TOOLCHAIN_PATH` CMake variable. For example:
 
-```
+```bash
 -D AFR_TOOLCHAIN_PATH=/home/user/opt/gcc-arm-none-eabi/bin
 ```
 

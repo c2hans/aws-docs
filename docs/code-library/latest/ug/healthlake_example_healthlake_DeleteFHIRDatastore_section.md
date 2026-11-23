@@ -37,7 +37,7 @@ For more information, see [Deleting a HealthLake data store](https://docs.aws.am
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """
@@ -72,7 +72,7 @@ For more information, see [Deleting a HealthLake data store](https://docs.aws.am
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/hll#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = 'a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6'
         oo_result = lo_hll->deletefhirdatastore(

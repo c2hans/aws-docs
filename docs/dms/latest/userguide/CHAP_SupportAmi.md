@@ -45,7 +45,7 @@ If you want to run the diagnostic tests on your replication instance using the m
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

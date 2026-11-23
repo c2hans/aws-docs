@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::SourceEndpoint StandardSourceEndpointConfiguration
 
-<a name="aws-properties-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-description"></a>The `StandardSourceEndpointConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::SourceEndpoint](aws-resource-mediaconnect-sourceendpoint.md).
+The configuration settings for a standard source endpoint.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-syntax"></a>
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-properties"></a>
 
 `Name`  <a name="cfn-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-name"></a>
-Property description not available.
+The name of the source endpoint.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9]([a-zA-Z0-9\-_]*[a-zA-Z0-9])?$`
@@ -52,26 +52,32 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Protocol`  <a name="cfn-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-protocol"></a>
-Property description not available.
+The protocol used by the source endpoint. Valid values include the following:
++ `RTP` – Real-time Transport Protocol.
++ `RIST` – Reliable Internet Stream Transport.
++ `SRT_CALLER` – Secure Reliable Transport (SRT) in caller mode.
++ `SRT_LISTENER` – Secure Reliable Transport (SRT) in listener mode.
 *Required*: No
 *Type*: String
 *Allowed values*: `RTP | RIST | SRT_CALLER | SRT_LISTENER`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ProtocolConfiguration`  <a name="cfn-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-protocolconfiguration"></a>
-Property description not available.
+The protocol configuration for the source endpoint.
 *Required*: Yes
 *Type*: [StandardSourceEndpointProtocolConfiguration](aws-properties-mediaconnect-sourceendpoint-standardsourceendpointprotocolconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourceNetworkingConfiguration`  <a name="cfn-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-sourcenetworkingconfiguration"></a>
-Property description not available.
+The networking configuration for the source endpoint, which determines whether it is publicly accessible or in a virtual private cloud (VPC).
 *Required*: Yes
 *Type*: [StandardSourceEndpointNetworkingConfiguration](aws-properties-mediaconnect-sourceendpoint-standardsourceendpointnetworkingconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourceNetworkingType`  <a name="cfn-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-sourcenetworkingtype"></a>
-Property description not available.
+The networking type of the source endpoint. Valid values include the following:
++ `PUBLIC` – The source endpoint is publicly accessible.
++ `VPC` – The source endpoint is in a virtual private cloud (VPC).
 *Required*: No
 *Type*: String
 *Allowed values*: `PUBLIC | VPC`

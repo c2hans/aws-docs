@@ -21,7 +21,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge Scheduler#code-examples).
 Run the scenario.
 
-```
+```csharp
 using System.Text.RegularExpressions;
 using Amazon.CloudFormation;
 using Amazon.CloudFormation.Model;
@@ -674,7 +674,7 @@ public class SchedulerWorkflow
 ```
 Wrapper for service operations.
 
-```
+```csharp
 using Amazon.Scheduler;
 using Amazon.Scheduler.Model;
 using Microsoft.Extensions.Logging;
@@ -883,7 +883,7 @@ public class SchedulerWrapper
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/scheduler#code-examples).
 Run the scenario.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.scheduler.model.SchedulerException;
@@ -1249,7 +1249,7 @@ public class EventbridgeSchedulerScenario {
 ```
 Wrapper for service operations.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.core.client.config.ClientOverrideConfiguration;
@@ -1487,7 +1487,7 @@ public class EventbridgeSchedulerActions {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/scheduler#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class SchedulerScenario:
     """
     A scenario that demonstrates how to use Boto3 to schedule and receive events using
@@ -1740,7 +1740,7 @@ if __name__ == "__main__":
 ```
 SchedulerWrapper class that wraps Amazon EventBridge Scheduler actions.
 
-```
+```python
 class SchedulerWrapper:
     def __init__(self, eventbridge_scheduler_client: client):
         self.scheduler_client = eventbridge_scheduler_client

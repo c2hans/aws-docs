@@ -102,7 +102,7 @@ The following example shows a valid configuration for a deploy action that uses 
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: ActionName
 ActionTypeId:
   Category: Deploy
@@ -122,7 +122,7 @@ Configuration:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "ActionName",
     "ActionTypeId": {

@@ -11,7 +11,7 @@ Before you can manage nodes by using Run Command, configure an AWS Identity and 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -76,7 +76,7 @@ You can restrict command execution to specific managed nodes by creating an IAM 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -118,7 +118,7 @@ You can create IAM policies that allow a user to run commands on managed nodes t
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -172,7 +172,7 @@ You can also create IAM policies that allows a user to run commands on multiple 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

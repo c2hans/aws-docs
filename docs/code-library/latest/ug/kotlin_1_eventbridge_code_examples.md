@@ -30,7 +30,7 @@ The following code example shows how to get started using EventBridge.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.eventbridge.EventBridgeClient
 import aws.sdk.kotlin.services.eventbridge.model.ListEventBusesRequest
 import aws.sdk.kotlin.services.eventbridge.model.ListEventBusesResponse
@@ -71,7 +71,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 /*
  Before running this Kotlin code example, set up your development environment,
  including your credentials.
@@ -822,7 +822,7 @@ The following code example shows how to use `DeleteRule`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 suspend fun deleteRuleByName(ruleName: String?) {
     val ruleRequest =
         DeleteRuleRequest {
@@ -844,7 +844,7 @@ The following code example shows how to use `DescribeRule`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 suspend fun checkRule(eventRuleName: String?) {
     val ruleRequest =
         DescribeRuleRequest {
@@ -867,7 +867,7 @@ The following code example shows how to use `DisableRule`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 suspend fun changeRuleState(
     eventRuleName: String,
     isEnabled: Boolean?,
@@ -903,7 +903,7 @@ The following code example shows how to use `EnableRule`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 suspend fun changeRuleState(
     eventRuleName: String,
     isEnabled: Boolean?,
@@ -939,7 +939,7 @@ The following code example shows how to use `ListRuleNamesByTarget`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 suspend fun listTargetRules(topicArnVal: String?) {
     val ruleNamesByTargetRequest =
         ListRuleNamesByTargetRequest {
@@ -964,7 +964,7 @@ The following code example shows how to use `ListRules`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 suspend fun listRules() {
     val rulesRequest =
         ListRulesRequest {
@@ -991,7 +991,7 @@ The following code example shows how to use `ListTargetsByRule`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 suspend fun listTargets(ruleName: String?) {
     val ruleRequest =
         ListTargetsByRuleRequest {
@@ -1016,7 +1016,7 @@ The following code example shows how to use `PutEvents`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 suspend fun triggerCustomRule(email: String) {
     val json =
         "{" +
@@ -1053,7 +1053,7 @@ The following code example shows how to use `PutRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 Create a scheduled rule.
 
-```
+```kotlin
 suspend fun createScRule(
     ruleName: String?,
     cronExpression: String?,
@@ -1075,7 +1075,7 @@ suspend fun createScRule(
 ```
 Create a rule that triggers when an object is added to an Amazon Simple Storage Service bucket.
 
-```
+```kotlin
 // Create a new event rule that triggers when an Amazon S3 object is created in a bucket.
 suspend fun addEventRule(
     roleArnVal: String?,
@@ -1118,7 +1118,7 @@ The following code example shows how to use `PutTargets`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 // Add a rule that triggers an SNS target when a file is uploaded to an S3 bucket.
 suspend fun addSnsEventRule(
     ruleName: String?,
@@ -1152,7 +1152,7 @@ suspend fun addSnsEventRule(
 ```
 Add an input transformer to a target for a rule.
 
-```
+```kotlin
 suspend fun updateCustomRuleTargetWithTransform(
     topicArn: String?,
     ruleName: String?,
@@ -1193,7 +1193,7 @@ The following code example shows how to use `RemoveTargets`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 suspend fun deleteTargetsFromRule(eventRuleName: String?) {
     // First, get all targets that will be deleted.
     val request =

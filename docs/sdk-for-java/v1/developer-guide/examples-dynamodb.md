@@ -31,7 +31,7 @@ If you want to opt out of the account-based routing, you have four options:
 
 The following snippet is an example of how to disable account-based routing by configuring a DynamoDB service client:
 
-```
+```java
 ClientConfiguration config = new ClientConfiguration()
     .withAccountIdEndpointMode(AccountIdEndpointMode.DISABLED);
 AWSCredentialsProvider credentialsProvider = new EnvironmentVariableCredentialsProvider();

@@ -58,7 +58,7 @@ For more information, see [Managing AWS resources as a single unit with CloudFor
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/user_pools_and_lambda_triggers#code-examples).
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -97,12 +97,12 @@ func (actor CloudFormationActions) GetOutputs(ctx context.Context, stackName str
 **Tools for PowerShell V4**
 **Example 1: Returns a collection of Stack instances describing all of the user's stacks.**
 
-```
+```powershell
 Get-CFNStack
 ```
 **Example 2: Returns a Stack instance describing the specified stack**
 
-```
+```powershell
 Get-CFNStack -StackName "myStack"
 ```
 +  For API details, see [DescribeStacks](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -110,12 +110,12 @@ Get-CFNStack -StackName "myStack"
 **Tools for PowerShell V5**
 **Example 1: Returns a collection of Stack instances describing all of the user's stacks.**
 
-```
+```powershell
 Get-CFNStack
 ```
 **Example 2: Returns a Stack instance describing the specified stack**
 
-```
+```powershell
 Get-CFNStack -StackName "myStack"
 ```
 +  For API details, see [DescribeStacks](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

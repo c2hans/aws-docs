@@ -30,7 +30,7 @@ The policy's default version is the version that defines the permissions for the
 ## JSON policy document
 <a name="SystemAdministrator-json"></a>
 
-```
+```json
 {
   "Statement" : [
     {

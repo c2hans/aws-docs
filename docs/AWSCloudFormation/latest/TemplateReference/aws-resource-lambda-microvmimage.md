@@ -145,7 +145,10 @@ Lifecycle hook configuration for MicroVMs and MicroVM images.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `KmsKeyIdentifier`  <a name="cfn-lambda-microvmimage-kmskeyidentifier"></a>
-Property description not available.
+The customer managed AWS Key Management Service (AWS KMS) key that encrypts the contents and metadata of your MicroVM image version. You must have permission to use the key. Specify the key in one of the following formats:
++ Key ARN
++ Alias ARN
+If you don't specify a key, your MicroVM image version uses an AWS owned key.
 *Required*: No
 *Type*: String
 *Pattern*: `^(arn:aws[a-z-]*:kms:[a-z0-9-]+:[0-9]{12}:(key|alias)/[a-zA-Z0-9:/_-]+|alias/[a-zA-Z0-9:/_-]+|[a-zA-Z0-9-]+)$`

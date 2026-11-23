@@ -32,7 +32,7 @@ The output includes the information that "Paul Santos" has the type `NAME`, "111
 
  For example, the input text mentioned previously produces the following response:
 
-```
+```json
 {
     "Entities": [
         {

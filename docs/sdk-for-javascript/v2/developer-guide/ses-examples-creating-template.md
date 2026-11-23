@@ -39,7 +39,7 @@ In this example, use a Node.js module to create an email template to use with Am
 
 Create an object to pass the parameters for the `listTemplates` method of the `AWS.SES` client class. To call the `listTemplates` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -62,7 +62,7 @@ templatePromise
 
 To run the example, type the following at the command line. Amazon SES returns the list of templates.
 
-```
+```javascript
 node ses_listtemplates.js
 ```
 
@@ -75,7 +75,7 @@ In this example, use a Node.js module to get an email template to use with Amazo
 
 Create an object to pass the `TemplateName` parameter for the `getTemplate` method of the `AWS.SES` client class. To call the `getTemplate` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js.
 var AWS = require("aws-sdk");
 // Set the AWS Region.
@@ -98,7 +98,7 @@ templatePromise
 
 To run the example, type the following at the command line. Amazon SES returns the template details.
 
-```
+```javascript
 node ses_gettemplate.js
 ```
 
@@ -111,7 +111,7 @@ In this example, use a Node.js module to create an email template to use with Am
 
 Create an object to pass the parameters for the `createTemplate` method of the `AWS.SES` client class, including `TemplateName`, `HtmlPart`, `SubjectPart`, and `TextPart`. To call the `createTemplate` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -144,7 +144,7 @@ templatePromise
 
 To run the example, type the following at the command line. The template is added to Amazon SES.
 
-```
+```javascript
 node ses_createtemplate.js
 ```
 
@@ -157,7 +157,7 @@ In this example, use a Node.js module to create an email template to use with Am
 
 Create an object to pass the `Template` parameter values you want to update in the template, with the required `TemplateName` parameter passed to the `updateTemplate` method of the `AWS.SES` client class. To call the `updateTemplate` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -190,7 +190,7 @@ templatePromise
 
 To run the example, type the following at the command line. Amazon SES returns the template details.
 
-```
+```javascript
 node ses_updatetemplate.js
 ```
 
@@ -203,7 +203,7 @@ In this example, use a Node.js module to create an email template to use with Am
 
 Create an object to pass the required`TemplateName` parameter to the `deleteTemplate` method of the `AWS.SES` client class. To call the `deleteTemplate` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -226,7 +226,7 @@ templatePromise
 
 To run the example, type the following at the command line. Amazon SES returns the template details.
 
-```
+```javascript
 node ses_deletetemplate.js
 ```
 

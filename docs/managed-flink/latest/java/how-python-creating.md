@@ -22,7 +22,7 @@ Managed Service for Apache Flink does not support the `pyModule`, `pyExecutable`
 
 The following example json snippet demonstrates how to specify file locations within your application's zip file:
 
-```
+```json
 "ApplicationConfiguration": {
     "EnvironmentProperties": {
       "PropertyGroups": [

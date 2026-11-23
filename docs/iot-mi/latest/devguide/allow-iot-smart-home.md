@@ -13,7 +13,7 @@ Attach a resource policy with at least the following minimal permissions to your
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "default",

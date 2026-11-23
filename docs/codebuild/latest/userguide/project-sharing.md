@@ -58,7 +58,7 @@ Use the [put-resource-policy](https://docs.aws.amazon.com/cli/latest/reference/c
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement":[{
@@ -81,7 +81,7 @@ Use the [put-resource-policy](https://docs.aws.amazon.com/cli/latest/reference/c
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement":[{
@@ -104,19 +104,19 @@ Use the [put-resource-policy](https://docs.aws.amazon.com/cli/latest/reference/c
 
 1. Run the [put-resource-policy](https://docs.aws.amazon.com/cli/latest/reference/codebuild/put-resource-policy.html) command.
 
-   ```
+   ```bash
    aws codebuild put-resource-policy --resource-arn {{<project-arn>}} --policy file://policy.json
    ```
 
 1. Get the AWS RAM resource share ARN.
 
-   ```
+   ```bash
    aws ram list-resources --resource-owner SELF --resource-arns {{<project-arn>}}
    ```
 
    This will return a response similar to this:
 
-   ```
+   ```json
    {
      "resources": [
        {
@@ -134,7 +134,7 @@ Use the [put-resource-policy](https://docs.aws.amazon.com/cli/latest/reference/c
 
 1. Run the AWS RAM [promote-resource-share-created-from-policy](https://docs.aws.amazon.com/cli/latest/reference/ram/promote-resource-share-created-from-policy.html) command.
 
-   ```
+   ```bash
    aws ram promote-resource-share-created-from-policy --resource-share-arn {{<resource-share-arn>}}
    ```
 

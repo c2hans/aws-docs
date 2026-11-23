@@ -27,7 +27,7 @@ The namespace in this example, `hyperpod-ns-test-team`, is created in Kubernetes
 
 Example response:
 
-```
+```json
 [
     {
         "Cluster": "hyperpod-eks-test-{{cluster-id}}",
@@ -69,7 +69,7 @@ hyperpod start-job --config-file ./{{yaml-configuration-file-name}}.yaml
 
 The following is an example YAML configuration file that is equivalent to submitting a job as discussed above.
 
-```
+```yaml
 defaults:
   - override hydra/job_logging: stdout
 hydra:
@@ -117,7 +117,7 @@ When submitting the job, include your queue name and priority class labels. For 
 
 The following YAML configuration snippet demonstrates how to add labels to your original configuration file to ensure your task appears in the **Dashboard** tab:
 
-```
+```yaml
 metadata:
     name: {{job-name}}
     namespace: hyperpod-ns-{{team-name}}
@@ -137,7 +137,7 @@ hyperpod list-jobs
 
 Example response:
 
-```
+```json
 {
     "jobs": [
         {
@@ -162,7 +162,7 @@ hyperpod get-job --job-name hyperpod-cli-test
 
 Example response:
 
-```
+```json
 {
     "Name": "hyperpod-cli-test",
     "Namespace": "hyperpod-ns-test-team",

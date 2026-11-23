@@ -50,7 +50,7 @@ In the following example, replace each {{*user input placeholder*}} with your ow
 **Example — Sample Amazon S3 bucket policy**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "FinSpaceServiceAccess",

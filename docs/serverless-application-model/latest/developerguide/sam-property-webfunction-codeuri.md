@@ -18,7 +18,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-webfunction-codeuri-syntax.yaml"></a>
 
-```
+```yaml
 [Bucket](#sam-webfunction-codeuri-bucket): {{String}}
 [Key](#sam-webfunction-codeuri-key): {{String}}
 [Version](#sam-webfunction-codeuri-version): {{String}}
@@ -51,7 +51,7 @@ The version ID of the deployment package object. Specify a version to pin the re
 ### Object form
 <a name="sam-property-webfunction-codeuri-example-object"></a>
 
-```
+```yaml
 CodeUri:
   Bucket: amzn-s3-demo-bucket
   Key: webfn.zip
@@ -61,6 +61,6 @@ CodeUri:
 ### URI form
 <a name="sam-property-webfunction-codeuri-example-uri"></a>
 
-```
+```yaml
 CodeUri: s3://amzn-s3-demo-bucket/webfn.zip?versionId={{object-version-id}}
 ```

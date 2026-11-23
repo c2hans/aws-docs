@@ -138,7 +138,7 @@ This example retrieves the user ID based on the user name.
 #### Sample Request
 <a name="API_GetUserId_Example_1_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "AlternateIdentifier": {
@@ -153,7 +153,7 @@ This example retrieves the user ID based on the user name.
 #### Sample Response
 <a name="API_GetUserId_Example_1_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",

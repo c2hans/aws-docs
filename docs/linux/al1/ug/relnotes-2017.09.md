@@ -44,19 +44,19 @@ BBR is not enabled by default. You can enable it on your Amazon EC2 Instance via
 
 1.
 
-   ```
+   ```sh
    $ sudo modprobe tcp_bbr
    ```
 
 1.
 
-   ```
+   ```sh
    $ sudo modprobe sch_fq
    ```
 
 1.
 
-   ```
+   ```sh
    $ sudo sysctl -w net.ipv4.tcp_congestion_control=bbr
    ```
 
@@ -64,13 +64,13 @@ Persistent configuration should look like:
 
 1.
 
-   ```
+   ```sh
    $ sudo su -
    ```
 
 1.
 
-   ```
+   ```sh
    $ cat <<EOF>> /etc/sysconfig/modules/tcpcong.modules
    >#!/bin/bash
    > exec /sbin/modprobe tcp_bbr >/dev/null 2>&1
@@ -80,13 +80,13 @@ Persistent configuration should look like:
 
 1.
 
-   ```
+   ```sh
    $ chmod 755 /etc/sysconfig/modules/tcpcong.modules
    ```
 
 1.
 
-   ```
+   ```sh
    $ echo "net.ipv4.tcp_congestion_control = bbr" >> /etc/sysctl.d/00-tcpcong.conf
    ```
 

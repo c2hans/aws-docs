@@ -40,7 +40,7 @@ If *geom* is empty, then NULL is returned.
 
 The following SQL returns the H3 cell ID from point `0,0`, and resolution `10`.
 
-```
+```sql
 SELECT H3_FromPoint(ST_GeomFromText('POINT(0 0)'), 10);
 ```
 

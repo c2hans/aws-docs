@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition :
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { LambdaToS3 } from '@aws-solutions-constructs/aws-lambda-s3';
@@ -40,7 +40,7 @@ new LambdaToS3(this, 'LambdaToS3Pattern', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_lambda_s3 import LambdaToS3
 from aws_cdk import (
     aws_lambda as _lambda,
@@ -57,7 +57,7 @@ LambdaToS3(self, 'LambdaToS3Pattern',
         )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

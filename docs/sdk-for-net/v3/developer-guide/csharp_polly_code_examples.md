@@ -31,7 +31,7 @@ The following code example shows how to use `DeleteLexicon`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Polly#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Polly;
@@ -92,7 +92,7 @@ The following code example shows how to use `DescribeVoices`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Polly#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Polly;
@@ -163,7 +163,7 @@ The following code example shows how to use `GetLexicon`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Polly#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Polly;
@@ -213,7 +213,7 @@ The following code example shows how to use `ListLexicons`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Polly#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Polly;
@@ -272,7 +272,7 @@ The following code example shows how to use `PutLexicon`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Polly#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Polly;
@@ -329,7 +329,7 @@ The following code example shows how to use `SynthesizeSpeech`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Polly#code-examples).
 
-```
+```csharp
     using System;
     using System.IO;
     using System.Threading.Tasks;
@@ -404,7 +404,7 @@ The following code example shows how to use `SynthesizeSpeech`.
 ```
 Synthesize speech from text using speech marks with Amazon Polly using an AWS SDK.
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.IO;

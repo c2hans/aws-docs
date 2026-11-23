@@ -35,7 +35,7 @@ At this point, you've removed all permissions from the APi key and you won't be 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

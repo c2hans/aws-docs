@@ -92,7 +92,7 @@ If you want to store your report in an S3 bucket that's owned by another account
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -140,14 +140,14 @@ For example, if you're using Amazon Inspector in the Middle East (Bahrain) Regio
 
      To store reports for additional accounts in the bucket, add the account ID for each additional account to this condition. For example:
 
-     ```
+     ```JSON
      "aws:SourceAccount": ["111122223333","444455556666","123456789012"]
      ```
    + [aws:SourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) – This condition restricts access to the bucket based on the source of the objects that are being added to the bucket. It prevents other AWS services from adding objects to the bucket. It also prevents Amazon Inspector from adding objects to the bucket while performing other actions for your account. More specifically, the condition allows Amazon Inspector to add objects to the bucket only if the objects are findings reports, and only if those reports are created by the account and in the Region specified in the condition.
 
      To allow Amazon Inspector to perform the specified actions for additional accounts, add Amazon Resource Names (ARNs) for each additional account to this condition. For example:
 
-     ```
+     ```JSON
      "aws:SourceArn": [
          "arn:aws:inspector2:{{Region}}:{{111122223333}}:report/*",
          "arn:aws:inspector2:{{Region}}:{{444455556666}}:report/*",
@@ -185,7 +185,7 @@ After you determine which KMS key you want to use, give Amazon Inspector permiss
 
 1. Copy the following example statement to your clipboard:
 
-   ```
+   ```JSON
    {
        "Sid": "Allow Amazon Inspector to use the key",
        "Effect": "Allow",
@@ -223,14 +223,14 @@ If you're using Amazon Inspector in a manually enabled AWS Region, also add the 
 
      To allow Amazon Inspector to perform the specified actions for additional accounts, add the account ID for each additional account to this condition. For example:
 
-     ```
+     ```JSON
      "aws:SourceAccount": ["111122223333","444455556666","123456789012"]
      ```
    + [aws:SourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) – This condition prevents other AWS services from performing the specified actions. It also prevents Amazon Inspector from using the key while performing other actions for your account. In other words, it allows Amazon Inspector to encrypt S3 objects with the key only if the objects are findings reports, and only if those reports are created by the account and in the Region specified in the condition.
 
      To allow Amazon Inspector to perform the specified actions for additional accounts, add ARNs for each additional account to this condition. For example:
 
-     ```
+     ```JSON
      "aws:SourceArn": [
          "arn:aws:inspector2:us-east-1:111122223333:report/*",
          "arn:aws:inspector2:us-east-1:444455556666:report/*",

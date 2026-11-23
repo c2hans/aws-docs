@@ -34,7 +34,7 @@ The following code example shows how to get started using Amazon S3.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3#code-examples).
 
-```
+```python
 import boto3
 
 def hello_s3():
@@ -93,7 +93,7 @@ The following code example shows how to:
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 import io
 import os
 import uuid
@@ -215,7 +215,7 @@ The following code example shows how to use `CopyObject`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class ObjectWrapper:
     """Encapsulates S3 object actions."""
 
@@ -258,7 +258,7 @@ class ObjectWrapper:
 ```
 Copy an object using a conditional request.
 
-```
+```python
 class S3ConditionalRequests:
     """Encapsulates S3 conditional request operations."""
 
@@ -324,7 +324,7 @@ The following code example shows how to use `CreateBucket`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 Create a bucket with default settings.
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -364,7 +364,7 @@ class BucketWrapper:
 ```
 Create a versioned bucket with a lifecycle configuration.
 
-```
+```python
 def create_versioned_bucket(bucket_name, prefix):
     """
     Creates an Amazon S3 bucket, enables it for versioning, and configures a lifecycle
@@ -443,7 +443,7 @@ The following code example shows how to use `DeleteBucket`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -477,7 +477,7 @@ The following code example shows how to use `DeleteBucketCors`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -512,7 +512,7 @@ The following code example shows how to use `DeleteBucketLifecycle`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -550,7 +550,7 @@ The following code example shows how to use `DeleteBucketPolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -586,7 +586,7 @@ The following code example shows how to use `DeleteObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 Delete an object.
 
-```
+```python
 class ObjectWrapper:
     """Encapsulates S3 object actions."""
 
@@ -620,7 +620,7 @@ class ObjectWrapper:
 ```
 Roll an object back to a previous version by deleting later versions of the object.
 
-```
+```python
 def rollback_object(bucket, object_key, version_id):
     """
     Rolls back an object to an earlier version by deleting all versions that
@@ -667,7 +667,7 @@ def rollback_object(bucket, object_key, version_id):
 ```
 Revive a deleted object by removing the object's active delete marker.
 
-```
+```python
 def revive_object(bucket, object_key):
     """
     Revives a versioned object that was deleted by removing the object's active
@@ -713,7 +713,7 @@ def revive_object(bucket, object_key):
 ```
 Create a Lambda handler that removes a delete marker from an S3 object. This handler can be used to efficiently clean up extraneous delete markers in a versioned bucket.
 
-```
+```python
 import logging
 from urllib import parse
 import boto3
@@ -832,7 +832,7 @@ The following code example shows how to use `DeleteObjectAnnotation`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object_annotations#code-examples).
 
-```
+```python
     def delete_object_annotation(
         self,
         bucket_name: str,
@@ -882,7 +882,7 @@ The following code example shows how to use `DeleteObjects`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 Delete a set of objects by using a list of object keys.
 
-```
+```python
 class ObjectWrapper:
     """Encapsulates S3 object actions."""
 
@@ -933,7 +933,7 @@ class ObjectWrapper:
 ```
 Delete all objects in a bucket.
 
-```
+```python
 class ObjectWrapper:
     """Encapsulates S3 object actions."""
 
@@ -961,7 +961,7 @@ class ObjectWrapper:
 ```
 Permanently delete a versioned object by deleting all of its versions.
 
-```
+```python
 def permanently_delete_object(bucket, object_key):
     """
     Permanently deletes a versioned object by deleting all of its versions.
@@ -988,7 +988,7 @@ The following code example shows how to use `GetBucketAcl`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -1027,7 +1027,7 @@ The following code example shows how to use `GetBucketCors`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -1066,7 +1066,7 @@ The following code example shows how to use `GetBucketLifecycleConfiguration`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -1109,7 +1109,7 @@ The following code example shows how to use `GetBucketPolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -1148,7 +1148,7 @@ The following code example shows how to use `GetObject`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class ObjectWrapper:
     """Encapsulates S3 object actions."""
 
@@ -1185,7 +1185,7 @@ class ObjectWrapper:
 ```
 Get an object using a conditional request.
 
-```
+```python
 class S3ConditionalRequests:
     """Encapsulates S3 conditional request operations."""
 
@@ -1246,7 +1246,7 @@ The following code example shows how to use `GetObjectAcl`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class ObjectWrapper:
     """Encapsulates S3 object actions."""
 
@@ -1287,7 +1287,7 @@ The following code example shows how to use `GetObjectAnnotation`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object_annotations#code-examples).
 
-```
+```python
     def get_object_annotation(
         self,
         bucket_name: str,
@@ -1346,7 +1346,7 @@ The following code example shows how to use `GetObjectLegalHold`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object-locking#code-examples).
 Put an object legal hold.
 
-```
+```python
 def get_legal_hold(s3_client, bucket: str, key: str) -> None:
     """
     Get the legal hold status of a specific file in a bucket.
@@ -1386,7 +1386,7 @@ The following code example shows how to use `GetObjectLockConfiguration`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object-locking#code-examples).
 Get the object lock configuration.
 
-```
+```python
 def is_object_lock_enabled(s3_client, bucket: str) -> bool:
     """
     Check if object lock is enabled for a bucket.
@@ -1420,7 +1420,7 @@ The following code example shows how to use `HeadBucket`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -1460,7 +1460,7 @@ The following code example shows how to use `ListBuckets`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -1501,7 +1501,7 @@ The following code example shows how to use `ListObjectAnnotations`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object_annotations#code-examples).
 
-```
+```python
     def list_object_annotations(
         self,
         bucket_name: str,
@@ -1564,7 +1564,7 @@ The following code example shows how to use `ListObjectsV2`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class ObjectWrapper:
     """Encapsulates S3 object actions."""
 
@@ -1609,7 +1609,7 @@ The following code example shows how to use `PutBucketAcl`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -1657,7 +1657,7 @@ The following code example shows how to use `PutBucketCors`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -1695,7 +1695,7 @@ The following code example shows how to use `PutBucketLifecycleConfiguration`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -1740,7 +1740,7 @@ The following code example shows how to use `PutBucketPolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -1776,7 +1776,7 @@ The following code example shows how to use `PutObject`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class ObjectWrapper:
     """Encapsulates S3 object actions."""
 
@@ -1825,7 +1825,7 @@ class ObjectWrapper:
 ```
 Upload an object using a conditional request.
 
-```
+```python
 class S3ConditionalRequests:
     """Encapsulates S3 conditional request operations."""
 
@@ -1874,7 +1874,7 @@ The following code example shows how to use `PutObjectAcl`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class ObjectWrapper:
     """Encapsulates S3 object actions."""
 
@@ -1920,7 +1920,7 @@ The following code example shows how to use `PutObjectAnnotation`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object_annotations#code-examples).
 
-```
+```python
     def put_object_annotation(
         self,
         bucket_name: str,
@@ -1974,7 +1974,7 @@ The following code example shows how to use `PutObjectLegalHold`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object-locking#code-examples).
 Put an object legal hold.
 
-```
+```python
 def set_legal_hold(s3_client, bucket: str, key: str) -> None:
     """
     Set a legal hold on a specific file in a bucket.
@@ -2012,7 +2012,7 @@ The following code example shows how to use `PutObjectLockConfiguration`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object-locking#code-examples).
 Put object lock configuration.
 
-```
+```python
         s3_client.put_object_lock_configuration(
             Bucket=bucket,
             ObjectLockConfiguration={"ObjectLockEnabled": "Disabled", "Rule": {}},
@@ -2029,7 +2029,7 @@ The following code example shows how to use `PutObjectRetention`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object-locking#code-examples).
 Put an object retention.
 
-```
+```python
             s3_client.put_object_retention(
                 Bucket=bucket,
                 Key=key,
@@ -2052,7 +2052,7 @@ The following code example shows how to create a presigned URL for Amazon S3 and
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 Generate a presigned URL that can perform an S3 action for a limited time. Use the Requests package to make a request with the URL.
 
-```
+```python
 import argparse
 import logging
 import boto3
@@ -2135,7 +2135,7 @@ if __name__ == "__main__":
 ```
 Generate a presigned POST request to upload a file.
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -2261,7 +2261,7 @@ The following code example shows how to add preconditions to Amazon S3 requests.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/conditional_requests#code-examples).
 Run an interactive scenario demonstrating Amazon S3 conditional requests.
 
-```
+```python
 """
 Purpose
 
@@ -2547,7 +2547,7 @@ if __name__ == "__main__":
 ```
 A wrapper class that defines the conditional request operations.
 
-```
+```python
 import boto3
 import logging
 
@@ -2691,7 +2691,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object_annotations#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 import logging
 import random
 import string
@@ -2977,7 +2977,7 @@ if __name__ == "__main__":
 ```
 Create a class that wraps Amazon S3 Object Annotations operations.
 
-```
+```python
 class S3AnnotationsWrapper:
     """Encapsulates Amazon S3 Object Annotations operations."""
 
@@ -3039,7 +3039,7 @@ For more information, see [Uploading an object using multipart upload](https://d
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/file_transfer#code-examples).
 Create functions that transfer files using several of the available transfer manager settings. Use a callback class to write callback progress during file transfer.
 
-```
+```python
 import sys
 import threading
 
@@ -3233,7 +3233,7 @@ def download_with_sse(
 ```
 Demonstrate the transfer manager functions and report results.
 
-```
+```python
 import hashlib
 import os
 import platform
@@ -3595,7 +3595,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_versioning#code-examples).
 Create functions that wrap S3 actions.
 
-```
+```python
 def create_versioned_bucket(bucket_name, prefix):
     """
     Creates an Amazon S3 bucket, enables it for versioning, and configures a lifecycle
@@ -3769,7 +3769,7 @@ def permanently_delete_object(bucket, object_key):
 ```
 Upload the stanza of a poem to a versioned object and perform a series of actions on it.
 
-```
+```python
 def usage_demo_single_object(obj_prefix="demo-versioning/"):
     """
     Demonstrates usage of versioned object functions. This demo uploads a stanza
@@ -3879,7 +3879,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using Python.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 import json

@@ -40,7 +40,7 @@ If typing `python` at the command line results in a message about installing Pyt
 
 You create a new AWS CDK project by invoking `cdk init` in an empty directory. Use the `--language` option and specify `python`:
 
-```
+```bash
 $ mkdir my-project
 $ cd my-project
 $ cdk init app --language python
@@ -50,7 +50,7 @@ $ cdk init app --language python
 
 To work with the new project, activate its virtual environment. This allows the project’s dependencies to be installed locally in the project folder, instead of globally.
 
-```
+```bash
 $ source .venv/bin/activate
 ```
 
@@ -63,7 +63,7 @@ Activate the project’s virtual environment whenever you start working on it. O
 
 After activating your virtual environment for the first time, install the app’s standard dependencies:
 
-```
+```bash
 $ python -m pip install -r requirements.txt
 ```
 
@@ -72,13 +72,13 @@ $ python -m pip install -r requirements.txt
 
 Use the Python package installer, `pip`, to install and update AWS Construct Library modules for use by your apps, as well as other packages you need. `pip` also installs the dependencies for those modules automatically. If your system does not recognize `pip` as a standalone command, invoke `pip` as a Python module, like this:
 
-```
+```bash
 $ python -m pip <PIP-COMMAND>
 ```
 
 Most AWS CDK constructs are in `aws-cdk-lib`. Experimental modules are in separate modules named like `aws-cdk.<SERVICE-NAME>.alpha`. The service name includes an *aws* prefix. If you’re unsure of a module’s name, [search for it at PyPI](https://pypi.org/search/?q=aws-cdk). For example, the command below installs the AWS CodeStar library.
 
-```
+```bash
 $ python -m pip install aws-cdk.aws-codestar-alpha
 ```
 
@@ -89,7 +89,7 @@ The [Python edition of the CDK API Reference](https://docs.aws.amazon.com/cdk/ap
 
 The names used for importing AWS Construct Library modules into your Python code look like the following.
 
-```
+```python
 import aws_cdk.aws_s3 as s3
 import aws_cdk.aws_lambda as lambda_
 ```
@@ -97,17 +97,17 @@ import aws_cdk.aws_lambda as lambda_
 We recommend the following practices when importing AWS CDK classes and AWS Construct Library modules in your applications. Following these guidelines will help make your code consistent with other AWS CDK applications as well as easier to understand.
 + Generally, import individual classes from top-level `aws_cdk`.
 
-  ```
+  ```python
   from aws_cdk import App, Construct
   ```
 + If you need many classes from the `aws_cdk`, you may use a namespace alias of `cdk` instead of importing individual classes. Avoid doing both.
 
-  ```
+  ```python
   import aws_cdk as cdk
   ```
 + Generally, import AWS Construct Libraries using short namespace aliases.
 
-  ```
+  ```python
   import aws_cdk.aws_s3 as s3
   ```
 
@@ -119,7 +119,7 @@ You can edit `requirements.txt` to allow upgrades; simply replace the `==` prece
 
 With `requirements.txt` edited appropriately to allow upgrades, issue this command to upgrade your project’s installed modules at any time:
 
-```
+```bash
 $ pip install --upgrade -r requirements.txt
 ```
 
@@ -163,7 +163,7 @@ The `pip freeze` command outputs the versions of all installed dependencies in a
 
 In libraries, dependencies are specified in `setup.py`, so that transitive dependencies are automatically downloaded when the package is consumed by an application. Otherwise, every application that wants to use your package needs to copy your dependencies into their `requirements.txt`. An example `setup.py` is shown here.
 
-```
+```python
 from setuptools import setup
 
 setup(
@@ -205,7 +205,7 @@ In Python, props are expressed as keyword arguments. If an argument contains nes
 
 For example, in a Amazon S3 bucket’s `add_lifecycle_rule` method, the `transitions` property is a list of `Transition` instances.
 
-```
+```python
 bucket.add_lifecycle_rule(
   transitions=[
     Transition(
@@ -218,7 +218,7 @@ bucket.add_lifecycle_rule(
 
 When extending a class or overriding a method, you may want to accept additional arguments for your own purposes that are not understood by the parent class. In this case you should accept the arguments you don’t care about using the \*\*kwargs idiom, and use keyword-only arguments to accept the arguments you’re interested in. When calling the parent’s constructor or the overridden method, pass only the arguments it is expecting (often just \*\*kwargs). Passing arguments that the parent class or method doesn’t expect results in an error.
 
-```
+```python
 class MyConstruct(Construct):
     def __init__(self, id, *, MyProperty=42, **kwargs):
         super().__init__(self, id, **kwargs)
@@ -232,7 +232,7 @@ A future release of the AWS CDK could coincidentally add a new property with a n
 
 The AWS CDK uses `None` to represent missing or undefined values. When working with \*\*kwargs, use the dictionary’s `get()` method to provide a default value if a property is not provided. Avoid using `kwargs[…​]`, as this raises `KeyError` for missing values.
 
-```
+```bash
 encrypted = kwargs.get("encrypted")         # None if no property "encrypted" exists
 encrypted = kwargs.get("encrypted", False)  # specify default of False if property is missing
 ```
@@ -246,7 +246,7 @@ Python doesn’t have an interface feature as some other languages do, though it
 
 To indicate that a class implements a particular interface, you can use the `@jsii.implements` decorator:
 
-```
+```python
 from aws_cdk import IAspect, IConstruct
 import jsii
 
@@ -279,7 +279,7 @@ Visual Studio Code with Pylance provides real-time type checking as you write co
 
 1. Configure strict type checking in `.vscode/settings.json`:
 
-   ```
+   ```json
    {
      "python.languageServer": "Pylance",
      "python.analysis.typeCheckingMode": "strict"
@@ -297,14 +297,14 @@ For CI/CD pipelines or pre-commit validation, use one of these type checkers:
 
  **MyPy (Python-based):**
 
-```
+```bash
 pip install mypy
 mypy app.py
 ```
 
  **Pyright (faster, JavaScript-based, same engine as Pylance):**
 
-```
+```bash
 npm install -g pyright
 pyright app.py
 ```

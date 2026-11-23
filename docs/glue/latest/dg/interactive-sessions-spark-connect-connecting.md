@@ -15,13 +15,13 @@ Use the AWS SDK for Python (Boto3) to create a session, get the Spark Connect en
 
 1. Install the required libraries.
 
-   ```
+   ```bash
    pip install boto3 "pyspark==3.5.6" pandas pyarrow grpcio grpcio-status
    ```
 
 1. Create an AWS Glue Spark Connect session.
 
-   ```
+   ```python
    import time
    import urllib.parse
 
@@ -44,7 +44,7 @@ Use the AWS SDK for Python (Boto3) to create a session, get the Spark Connect en
 
 1. Wait for the session to reach `READY` state. The session typically takes 20–30 seconds to reach `READY` state.
 
-   ```
+   ```python
    session_id = "{{my-spark-connect-session}}"
    while True:
        status = glue.get_session(Id=session_id)["Session"]["Status"]
@@ -55,7 +55,7 @@ Use the AWS SDK for Python (Boto3) to create a session, get the Spark Connect en
 
 1. Retrieve the Spark Connect endpoint and build the authenticated remote URL.
 
-   ```
+   ```python
    def get_remote_url(glue, session_id):
        """Get endpoint and construct the authenticated remote URL."""
        resp = glue.get_session_endpoint(SessionId=session_id)
@@ -73,14 +73,14 @@ Use the AWS SDK for Python (Boto3) to create a session, get the Spark Connect en
 
 1. Start the Spark session.
 
-   ```
+   ```python
    spark = SparkSession.builder.remote(remote).getOrCreate()
    spark.version
    ```
 
 1. (Optional) Set up automatic token refresh. The authentication token expires after the duration indicated by `AuthTokenExpirationTime`. Use a background thread to refresh the token before it expires.
 
-   ```
+   ```python
    import threading
 
    def reconnect():
@@ -105,7 +105,7 @@ Use the AWS SDK for Python (Boto3) to create a session, get the Spark Connect en
 
 1. Read data from the AWS Glue Data Catalog.
 
-   ```
+   ```python
    df = spark.read.table("{{my_database}}.{{my_table}}")
    df.show()
    ```
@@ -117,13 +117,13 @@ If you use [Notebooks in Amazon SageMaker Unified Studio](https://docs.aws.amazo
 
 1. Install the `sagemaker-studio` library.
 
-   ```
+   ```bash
    pip install sagemaker-studio
    ```
 
 1. Initialize a Spark session using your AWS Glue Spark Connect connection.
 
-   ```
+   ```python
    from sagemaker_studio import sparkutils
 
    spark = sparkutils.init(connection_name="{{my-glue-spark-connection}}")
@@ -131,7 +131,7 @@ If you use [Notebooks in Amazon SageMaker Unified Studio](https://docs.aws.amazo
 
 1. Read data from the AWS Glue Data Catalog.
 
-   ```
+   ```python
    df = spark.read.table("{{my_database}}.{{my_table}}")
    df.show()
    ```

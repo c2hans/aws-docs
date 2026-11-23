@@ -25,7 +25,7 @@ The following section describes how to create the AWS Service Management Connect
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-onsuccess-syntax.yaml"></a>
 
-```
+```yaml
   [Destination](#sam-function-onsuccess-destination): {{String}}
   [Type](#sam-function-onsuccess-type): {{String}}
 ```
@@ -47,7 +47,7 @@ In this example no Destination is given for the SQS OnSuccess configuration, so 
 #### YAML
 <a name="sam-property-function-onsuccess--examples--eventinvoke-configuration-example-with-sqs-and-lambda-destinations--yaml"></a>
 
-```
+```yaml
 EventInvokeConfig:
   DestinationConfig:
     OnSuccess:
@@ -65,7 +65,7 @@ In this example a Destination is given for an SNS topic declared in the template
 #### YAML
 <a name="sam-property-function-onsuccess--examples--eventinvoke-configuration-example-with-sns-destination--yaml"></a>
 
-```
+```yaml
 EventInvokeConfig:
   DestinationConfig:
     OnSuccess:

@@ -35,7 +35,7 @@ aws transcribe update-language-model \
 
 The file *my-updated-language-model.json* contains the following request body.
 
-```
+```json
 {
   "ModelName": "{{my-first-language-model}}",
   "EncryptionConfiguration": {

@@ -67,7 +67,7 @@ To use layered encoding with simulcast, you must [have enabled the feature](#rea
 
 **Android**
 
-```
+```java
 // Enable Simulcast
 StageVideoConfiguration config = new StageVideoConfiguration();
 config.simulcast.setEnabled(true);
@@ -79,7 +79,7 @@ ImageLocalStageStream cameraStream = new ImageLocalStageStream(frontCamera, conf
 
 **iOS**
 
-```
+```objectivec
 // Enable Simulcast
 let config = IVSLocalStageStreamVideoConfiguration()
 config.simulcast.enabled = true
@@ -91,7 +91,7 @@ let cameraStream = IVSLocalStageStream(device: camera, configuration: config)
 
 **Web**
 
-```
+```javascript
 // Enable Simulcast
 let cameraStream = new LocalStageStream(cameraDevice, {
    simulcast: { enabled: true }
@@ -124,7 +124,7 @@ To change the bitrate of your video stream, use the following configuration samp
 
 **Android**
 
-```
+```java
 StageVideoConfiguration config = new StageVideoConfiguration();
 
 // Update Max Bitrate to 1.5mbps
@@ -137,7 +137,7 @@ ImageLocalStageStream cameraStream = new ImageLocalStageStream(frontCamera, conf
 
 **iOS**
 
-```
+```swift
 let config = IVSLocalStageStreamVideoConfiguration();
 
 // Update Max Bitrate to 1.5mbps
@@ -150,7 +150,7 @@ let cameraStream = IVSLocalStageStream(device: camera, configuration: config);
 
 **Web**
 
-```
+```javascript
 let cameraStream = new LocalStageStream(camera.getVideoTracks()[0], {
    // Update Max Bitrate to 1.5mbps or 1500kbps
    maxBitrate: 1500
@@ -166,7 +166,7 @@ To change the framerate of your video stream, use the following configuration sa
 
 **Android**
 
-```
+```java
 StageVideoConfiguration config = new StageVideoConfiguration();
 
 // Update target framerate to 10fps
@@ -179,7 +179,7 @@ ImageLocalStageStream cameraStream = new ImageLocalStageStream(frontCamera, conf
 
 **iOS**
 
-```
+```swift
 let config = IVSLocalStageStreamVideoConfiguration();
 
 // Update target framerate to 10fps
@@ -192,7 +192,7 @@ let cameraStream = IVSLocalStageStream(device: camera, configuration: config);
 
 **Web**
 
-```
+```javascript
 // Note: On web it is also recommended to configure the framerate of your device from userMedia
 const camera = await navigator.mediaDevices.getUserMedia({
    video: {
@@ -217,7 +217,7 @@ To change the bitrate and stereo settings of your audio stream, use the followin
 
 **Web**
 
-```
+```javascript
 // Note: Disable autoGainControl, echoCancellation, and noiseSuppression when enabling stereo.
 const camera = await navigator.mediaDevices.getUserMedia({
    audio: {
@@ -240,7 +240,7 @@ let audioStream = new LocalStageStream(camera.getAudioTracks()[0], {
 
 **Android**
 
-```
+```java
 StageAudioConfiguration config = new StageAudioConfiguration();
 
 // Update Max Bitrate to 96Kbps. Default is 64Kbps.
@@ -253,7 +253,7 @@ AudioLocalStageStream microphoneStream = new AudioLocalStageStream(microphone, c
 
 **iOS**
 
-```
+```swift
 let config = IVSLocalStageStreamConfiguration();
 
 // Update Max Bitrate to 96Kbps. Default is 64Kbps.
@@ -279,7 +279,7 @@ The examples below use a minimum delay preset of `MEDIUM`. See the SDK reference
 
 **Web**
 
-```
+```javascript
 const strategy = {
    subscribeConfiguration: (participant) => {
       return {
@@ -294,7 +294,7 @@ const strategy = {
 
 **Android**
 
-```
+```java
 @Override
 public SubscribeConfiguration subscribeConfigrationForParticipant(@NonNull Stage stage, @NonNull ParticipantInfo participantInfo) {
     SubscribeConfiguration config = new SubscribeConfiguration();
@@ -307,7 +307,7 @@ public SubscribeConfiguration subscribeConfigrationForParticipant(@NonNull Stage
 
 **iOS**
 
-```
+```swift
 func stage(_ stage: IVSStage, subscribeConfigurationForParticipant participant: IVSParticipantInfo) -> IVSSubscribeConfiguration {
     let config = IVSSubscribeConfiguration()
     try! config.jitterBuffer.setMinDelay(.medium())
@@ -328,7 +328,7 @@ Create and retain the `RealTimeConnection` for the duration of the browsing sess
 
 The following example adds the `RealTimeConnection` lifecycle to the MainViewModel used in the Android sample. The view model implements Stage.Strategy and StageRenderer.
 
-```
+```kotlin
 private var realTimeConnection: RealTimeConnection? = null
 private var stage: Stage? = null
 
@@ -388,7 +388,7 @@ Call `release()` when the application no longer needs the `RealTimeConnection`. 
 
 The following example assumes that the application obtains a connection token when the user begins the multi-stage flow and obtains a participant token for each stage that the user joins.
 
-```
+```swift
 private var realTimeConnection: IVSRealTimeConnection?
 private var stage: IVSStage?
 
@@ -436,7 +436,7 @@ Keep a strong reference to `IVSRealTimeConnection` while stages use it. Calling 
 
 The following example demonstrates how to create a `RealTimeConnection` and pass it to a `Stage` instance.
 
-```
+```typescript
 const connection = new RealTimeConnection(CONNECTION_TOKEN);
 
 // Optional: Open the connection ahead of time. Otherwise, the first join() opens it.

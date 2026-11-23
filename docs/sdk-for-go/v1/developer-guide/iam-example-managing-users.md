@@ -31,7 +31,7 @@ This code creates a new IAM user.
 
 Create a new Go file named `iam_createuser.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "fmt"
     "os"
@@ -45,7 +45,7 @@ import (
 
 The code takes the new user name as an argument, and then calls `GetUser` with the user name.
 
-```
+```go
 // Initialize a session in us-west-2 that the SDK will use to load
 // credentials from the shared credentials file ~/.aws/credentials.
 sess, err := session.NewSession(&aws.Config{
@@ -62,7 +62,7 @@ _, err = svc.GetUser(&iam.GetUserInput{
 
 If you receive a `NoSuchEntity` error, call `CreateUser` because the user doesn’t exist.
 
-```
+```go
 if awserr, ok := err.(awserr.Error); ok && awserr.Code() == iam.ErrCodeNoSuchEntityException {
     result, err := svc.CreateUser(&iam.CreateUserInput{
         UserName: &os.Args[1],
@@ -88,7 +88,7 @@ You can get a list of the users in your account and print the list to the consol
 
 Create a new Go file named `iam_listusers.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "fmt"
 
@@ -100,7 +100,7 @@ import (
 
 Set up a new IAM client.
 
-```
+```go
 // Initialize a session in us-west-2 that the SDK will use to load
 // credentials from the shared credentials file ~/.aws/credentials.
 sess, err := session.NewSession(&aws.Config{
@@ -113,7 +113,7 @@ svc := iam.New(sess)
 
 Call `ListUsers` and print the results.
 
-```
+```go
 result, err := svc.ListUsers(&iam.ListUsersInput{
     MaxItems: aws.Int64(10),
 })
@@ -140,7 +140,7 @@ In this example, you change the name of an IAM user to a new value.
 
 Create a new Go file named `iam_updateuser.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "fmt"
     "os"
@@ -153,7 +153,7 @@ import (
 
 Set up a new IAM client.
 
-```
+```go
 // Initialize a session in us-west-2 that the SDK will use to load
 // credentials from the shared credentials file ~/.aws/credentials.
 sess, err := session.NewSession(&aws.Config{
@@ -166,7 +166,7 @@ svc := iam.New(sess)
 
 Call `UpdateUser`, passing in the original user name and the new name, and print the results.
 
-```
+```go
 result, err := svc.UpdateUser(&iam.UpdateUserInput{
     UserName:    &os.Args[1],
     NewUserName: &os.Args[2],
@@ -189,7 +189,7 @@ In this example, you delete an IAM user.
 
 Create a new Go file named `iam_deleteuser.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "fmt"
     "os"
@@ -203,7 +203,7 @@ import (
 
 Set up a new IAM client.
 
-```
+```go
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
     )
@@ -212,7 +212,7 @@ Set up a new IAM client.
 
 Call `DeleteUser`, passing in the user name, and print the results. If the user doesn’t exist, display an error.
 
-```
+```go
     _, err = svc.DeleteUser(&iam.DeleteUserInput{
         UserName: &os.Args[1],
     })
@@ -238,7 +238,7 @@ In this example, you list the IAM users who have administrator privileges (a pol
 
 Create a new Go file named `IamGetAdmins.go`. Import the following packages.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -251,7 +251,7 @@ import (
 
 Create a method to determine whether a user has a policy that has administrator privileges.
 
-```
+```go
 func UserPolicyHasAdmin(user *iam.UserDetail, admin string) bool {
     for _, policy := range user.UserPolicyList {
         if *policy.PolicyName == admin {
@@ -265,7 +265,7 @@ func UserPolicyHasAdmin(user *iam.UserDetail, admin string) bool {
 
 Create a method to determine whether a user has an attached policy that has administrator privileges.
 
-```
+```go
 func AttachedUserPolicyHasAdmin(user *iam.UserDetail, admin string) bool {
     for _, policy := range user.AttachedManagedPolicies {
         if *policy.PolicyName == admin {
@@ -279,7 +279,7 @@ func AttachedUserPolicyHasAdmin(user *iam.UserDetail, admin string) bool {
 
 Create a method that determines whether a group has a policy that has adminstrator privileges.
 
-```
+```go
 func GroupPolicyHasAdmin(svc *iam.IAM, group *iam.Group, admin string) bool {
     input := &iam.ListGroupPoliciesInput{
         GroupName: group.GroupName,
@@ -304,7 +304,7 @@ func GroupPolicyHasAdmin(svc *iam.IAM, group *iam.Group, admin string) bool {
 
 Create a method that determines whether a group has an attached policy that has administrator privileges.
 
-```
+```go
 func AttachedGroupPolicyHasAdmin(svc *iam.IAM, group *iam.Group, admin string) bool {
     input := &iam.ListAttachedGroupPoliciesInput{GroupName: group.GroupName}
     result, err := svc.ListAttachedGroupPolicies(input)
@@ -326,7 +326,7 @@ func AttachedGroupPolicyHasAdmin(svc *iam.IAM, group *iam.Group, admin string) b
 
 Create a method that determines whether any group to which the user belongs has administrator privileges.
 
-```
+```go
 func UsersGroupsHaveAdmin(svc *iam.IAM, user *iam.UserDetail, admin string) bool {
     input := &iam.ListGroupsForUserInput{UserName: user.UserName}
     result, err := svc.ListGroupsForUser(input)
@@ -356,7 +356,7 @@ func UsersGroupsHaveAdmin(svc *iam.IAM, user *iam.UserDetail, admin string) bool
 
 Create a method that determines whether a user has administrator privileges.
 
-```
+```go
 func IsUserAdmin(svc *iam.IAM, user *iam.UserDetail, admin string) bool {
     // Check policy, attached policy, and groups (policy and attached policy)
     policyHasAdmin := UserPolicyHasAdmin(user, admin)
@@ -380,7 +380,7 @@ func IsUserAdmin(svc *iam.IAM, user *iam.UserDetail, admin string) bool {
 
 Create a main method with an IAM client in `us-west-2`. Create variables to keep track of how many users we have and how many of those have administrator privileges.
 
-```
+```go
 sess, err := session.NewSession()
 if err != nil {
     fmt.Println("Got error creating new session")
@@ -396,7 +396,7 @@ numAdmins := 0
 
 Create the input for and call `GetAccountAuthorizationDetails`. If there is an error, print an error message and quit.
 
-```
+```go
 user := "User"
 input := &iam.GetAccountAuthorizationDetailsInput{Filter: []*string{&user}}
 resp, err := svc.GetAccountAuthorizationDetails(input)
@@ -409,7 +409,7 @@ if err != nil {
 
 Loop through the users. If a user has adminstrator privileges, print their name and increment the number of users who have adminstrator privileges.
 
-```
+```go
 adminName := "AdministratorAccess"
 
 // Wade through resulting users
@@ -427,7 +427,7 @@ for _, user := range resp.UserDetailList {
 
 If we did not get all of the users in the first call to `GetAccountAuthorizationDetails`, loop through the next set of users and determine which of those have adminstrator privileges.
 
-```
+```go
 for *resp.IsTruncated {
     input := &iam.GetAccountAuthorizationDetailsInput{Filter: []*string{&user}, Marker: resp.Marker}
     resp, err = svc.GetAccountAuthorizationDetails(input)
@@ -453,7 +453,7 @@ for *resp.IsTruncated {
 
 Finally, display the number of users who have administrator access.
 
-```
+```go
 fmt.Println("")
 fmt.Println("Found", numAdmins, "admin(s) out of", numUsers, "user(s).")
 ```

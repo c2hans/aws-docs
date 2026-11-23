@@ -32,6 +32,8 @@ Implement bulkhead architectures (also known as cell-based architectures) to res
 
 ![Diagram showing Cell-based architecture](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/images/cell-based-architecture.png)
 
+*Figure 11: Cell-based architecture*
+
  **Implementation steps**
 
  When designing a cell-based architecture, there are several design considerations to consider:

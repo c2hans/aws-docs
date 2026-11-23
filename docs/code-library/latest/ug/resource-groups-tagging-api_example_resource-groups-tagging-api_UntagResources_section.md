@@ -36,7 +36,7 @@ For more information, see [Managing tags with Tag Editor](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: Removes the tag keys "stage" and "version", and the associated values, from an Amazon S3 bucket and an Amazon DynamoDB table. A single call is made to the service to remove the tags. Before the tags are removed the cmdlet will prompt for confirmation. To bypass confirmation add the -Force parameter.**
 
-```
+```powershell
 $arn1 = "arn:aws:s3:::amzn-s3-demo-bucket"
 $arn2 = "arn:aws:dynamodb:us-west-2:123456789012:table/mytable"
 
@@ -44,7 +44,7 @@ Remove-RGTResourceTag -ResourceARNList $arn1,$arn2 -TagKey "stage","version"
 ```
 **Example 2: Removes the tag keys "stage" and "version", and the associated values, from an Amazon S3 bucket and an Amazon DynamoDB table. Two calls are made to the service, one for each resource ARN piped into the cmdlet. Before each call the cmdlet will prompt for confirmation. To bypass confirmation add the -Force parameter.**
 
-```
+```powershell
 $arn1 = "arn:aws:s3:::amzn-s3-demo-bucket"
 $arn2 = "arn:aws:dynamodb:us-west-2:123456789012:table/mytable"
 
@@ -55,7 +55,7 @@ $arn1,$arn2 | Remove-RGTResourceTag -TagKey "stage","version"
 **Tools for PowerShell V5**
 **Example 1: Removes the tag keys "stage" and "version", and the associated values, from an Amazon S3 bucket and an Amazon DynamoDB table. A single call is made to the service to remove the tags. Before the tags are removed the cmdlet will prompt for confirmation. To bypass confirmation add the -Force parameter.**
 
-```
+```powershell
 $arn1 = "arn:aws:s3:::amzn-s3-demo-bucket"
 $arn2 = "arn:aws:dynamodb:us-west-2:123456789012:table/mytable"
 
@@ -63,7 +63,7 @@ Remove-RGTResourceTag -ResourceARNList $arn1,$arn2 -TagKey "stage","version"
 ```
 **Example 2: Removes the tag keys "stage" and "version", and the associated values, from an Amazon S3 bucket and an Amazon DynamoDB table. Two calls are made to the service, one for each resource ARN piped into the cmdlet. Before each call the cmdlet will prompt for confirmation. To bypass confirmation add the -Force parameter.**
 
-```
+```powershell
 $arn1 = "arn:aws:s3:::amzn-s3-demo-bucket"
 $arn2 = "arn:aws:dynamodb:us-west-2:123456789012:table/mytable"
 

@@ -8,6 +8,8 @@ The Amplify Hosting deployment specification is a file system based specificatio
 
 For a video demonstration that explains how to use the deployment specification, see *How to host any website using AWS Amplify* on the Amazon Web Services YouTube channel.
 
+[![AWS Videos](https://img.youtube.com/vi/iOlIrU3bhSE/0.jpg)](https://www.youtube.com/watch?v=iOlIrU3bhSE)
+
 The following is an example of the folder structure that Amplify expects for the deployment bundle. At a high level, it has a folder named `static`, a folder named `compute` and a deployment manifest file named `deploy-manifest.json`.
 
 ```

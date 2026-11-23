@@ -18,7 +18,7 @@ The definitions in the metadata file overwrite the default settings you specifie
 
 The following example metadata files shows all available variable definitions.
 
-```
+```yaml
 {
  "srcVideo": "string",
  "archiveSource": "DISABLED|GLACIER|DEEP_ARCHIVE",
@@ -39,7 +39,7 @@ The following example metadata files shows all available variable definitions.
 
 The following sample JSON metadata file will overwrite the default settings for the **Archive Source Content** and **Enable Frame Capture** AWS CloudFormation template parameters for the `example.mpg` file. The file will also set the job template for AWS Elemental MediaConvert to `custom-job-template`.
 
-```
+```yaml
 {
  "srcVideo": "example.mpg",
  "archiveSource": "GLACIER",

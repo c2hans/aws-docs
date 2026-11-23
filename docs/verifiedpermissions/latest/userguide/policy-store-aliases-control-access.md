@@ -16,7 +16,7 @@ To create a policy store alias, the principal needs the following permissions fo
 
   The following example policy statement specifies a particular policy store alias in a `Resource` element. But you can list multiple policy store alias ARNs or specify a policy store alias pattern, such as `"sample*"`. You can also specify a `Resource` value of `"*"` to allow the principal to create any policy store alias in the AWS account and Region.
 
-  ```
+  ```json
   {
     "Sid": "IAMPolicyForCreateAlias",
     "Effect": "Allow",
@@ -26,7 +26,7 @@ To create a policy store alias, the principal needs the following permissions fo
   ```
 + `verifiedpermissions:CreatePolicyStoreAlias` for the associated policy store. This permission must be provided in an IAM policy.
 
-  ```
+  ```json
   {
     "Sid": "PolicyStorePermissionForAlias",
     "Effect": "Allow",
@@ -42,7 +42,7 @@ To get details about a specific policy store alias, the principal must have `ver
 
 The following example policy statement gives the principal permission to get a specific policy store alias.
 
-```
+```json
 {
   "Sid": "IAMPolicyForGetAlias",
   "Effect": "Allow",
@@ -58,7 +58,7 @@ To list policy store aliases in the AWS account and Region, the principal must h
 
 For example, the following IAM policy statement gives the principal permission to list all policy store aliases in the AWS account.
 
-```
+```json
 {
   "Sid": "IAMPolicyForListingAliases",
   "Effect": "Allow",
@@ -79,7 +79,7 @@ The principal needs `verifiedpermissions:DeletePolicyStoreAlias` permission for 
 
 The following example policy statement specifies the policy store alias in a `Resource` element. But you can list multiple policy store alias ARNs or specify a policy store alias pattern, such as `"sample*"`. You can also specify a `Resource` value of `"*"` to allow the principal to delete any policy store alias in the AWS account and Region.
 
-```
+```json
 {
   "Sid": "IAMPolicyForDeleteAlias",
   "Effect": "Allow",
@@ -99,7 +99,7 @@ For example, if the `IsAuthorized` operation is performed using a policy store a
 
 The following example policy grants permission to call `IsAuthorized` using a specific policy store alias.
 
-```
+```json
 {
   "Sid": "IAMPolicyForAliasUsage",
   "Effect": "Allow",
@@ -116,7 +116,7 @@ The following example policy grants permission to call `IsAuthorized` using a sp
 
 To limit which policy store aliases a principal can use, restrict the `verifiedpermissions:GetPolicyStoreAlias` permission. For example, the following policy allows the principal to use any policy store alias except those beginning with `Restricted`.
 
-```
+```json
 {
   "Sid": "IAMPolicyForAliasAllow",
   "Effect": "Allow",

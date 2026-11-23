@@ -32,7 +32,7 @@ The following example task is to download all the files in an Amazon Simple Stor
 
 1.  Iterate over the list, downloading each file in turn
 
-```
+```rust
 use aws_sdk_s3::{Client, Error};
 const EXAMPLE_BUCKET: &str = "amzn-s3-demo-bucket";  // Update to name of bucket you own.
 
@@ -57,7 +57,7 @@ async fn build_client_and_list_objects_to_download() -> (Client, Vec<String>) {
 }
 ```
 
-```
+```rust
 #[tokio::main]
 async fn main() {
     let (client, objects_to_download) =
@@ -117,7 +117,7 @@ While the AWS SDKs are intended to be `async`-runtime-agnostic, we recommend the
 In the following modified example, we use [`futures_util::future::join_all`](https://docs.rs/futures-util/latest/futures_util/future/fn.join_all.html) to run **ALL** `get_object` requests concurrently. Run the following command to add a new dependency to your project:
 + `cargo add futures-util`
 
-```
+```rust
 #[tokio::main]
 async fn main() {
     let (client, objects_to_download) =
@@ -154,7 +154,7 @@ async fn main() {
 
 To fix both of these issues, we must limit the amount of requests that we're sending at any one time. We'll do this with a `tokio` [semaphore](https://docs.rs/tokio/latest/tokio/sync/struct.Semaphore.html):
 
-```
+```rust
 use std::sync::Arc;
 use tokio::sync::Semaphore;
 const CONCURRENCY_LIMIT: usize = 50;
@@ -214,7 +214,7 @@ We've fixed the potential memory usage issue by moving the request creation into
 Run the following command to add a new dependency to your project:
 + `cargo add tokio --features=rt-multi-thread`
 
-```
+```rust
 // Set this based on the amount of cores your target machine has.
 const THREADS: usize = 8;
 

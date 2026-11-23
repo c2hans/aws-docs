@@ -42,7 +42,7 @@ If *geom* is a `GEOMETRYCOLLECTION`, then an error is returned.
 
 The following SQL returns the boundary of the input polygon as a multilinestring.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Boundary(ST_GeomFromText('POLYGON((0 0,10 0,10 10,0 10,0 0),(1 1,1 2,2 1,1 1))')));
 ```
 

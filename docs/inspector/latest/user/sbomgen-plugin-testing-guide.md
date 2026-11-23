@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbomgen-plugin-tes
 
  For general plugin authoring, see the [Plugin developer guide](sbomgen-plugin-developer-guide.md). For the complete function catalog (including the `testing.*` API), see the [Plugin API reference](sbomgen-plugin-api-reference.md).
 
-```
+```lua
 -- init_test.lua (next to init.lua)
 function test_discovers_curl_version()
     local result = testing.scan_directory("_testdata/include/curl")
@@ -18,7 +18,7 @@ function test_discovers_curl_version()
 end
 ```
 
-```
+```bash
 # Run every test under a plugin directory
 inspector-sbomgen plugin test --path ./my-plugins
 
@@ -48,7 +48,7 @@ my-plugin/
 
  Any global function starting with `test_` is discovered and executed:
 
-```
+```lua
 function test_finds_libcurl()
     local result = testing.scan_directory("_testdata/include/curl")
     testing.assert_equals(1, #result.findings)
@@ -64,7 +64,7 @@ end
 ### 3. Run tests
 <a name="sbomgen-plugin-testing-guide-3-run-tests"></a>
 
-```
+```bash
 inspector-sbomgen plugin test --path ./my-plugin
 ```
 
@@ -108,7 +108,7 @@ my-plugins/
 
  Test files reference fixtures with relative paths:
 
-```
+```lua
 local result = testing.scan_directory("_testdata/include/curl")
 ```
 
@@ -122,7 +122,7 @@ local result = testing.scan_directory("_testdata/include/curl")
 
  Each scan function creates an artifact, runs the plugin's discovery → collection pipeline, and returns findings. The test author never manually creates artifacts, event buses, or registries.
 
-```
+```lua
 -- Scan a directory of test fixtures (most common)
 local result = testing.scan_directory("_testdata/curl")
 
@@ -150,7 +150,7 @@ local result = testing.scan_container("_testdata/images/alpine.tar")
 ### Result Table
 <a name="sbomgen-plugin-testing-guide-result-table"></a>
 
-```
+```lua
 result.findings              -- array of finding tables
 result.findings[1].name      -- package name (string)
 result.findings[1].version   -- package version (string)
@@ -163,7 +163,7 @@ result.findings[1].children      -- array of nested finding tables (same shape)
 ### Assertions
 <a name="sbomgen-plugin-testing-guide-assertions"></a>
 
-```
+```lua
 -- Equality
 testing.assert_equals(expected, actual, message?)
 testing.assert_not_equals(expected, actual, message?)
@@ -196,7 +196,7 @@ testing.skip(message)    -- skip the current test (not a failure)
 ## Running Tests
 <a name="sbomgen-plugin-testing-guide-running-tests"></a>
 
-```
+```bash
 # Run all tests under a plugin directory
 inspector-sbomgen plugin test --path ./my-plugins
 
@@ -232,7 +232,7 @@ ok    3 tests passed
 
  The test file is loaded into the same Lua VM as the plugin's `init.lua`. Global functions defined in the plugin are callable from tests. To test helper functions, expose them as globals or in a module table:
 
-```
+```lua
 -- init.lua
 M = {}
 function M.parse_version(raw)
@@ -245,7 +245,7 @@ function collect(file_path)
 end
 ```
 
-```
+```lua
 -- init_test.lua
 function test_parse_version_extracts_semver()
     testing.assert_equals("1.2.3", M.parse_version("curl/1.2.3"))

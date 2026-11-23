@@ -11,7 +11,7 @@ Use the following policy to submit jobs that use the `jobDefA` job definition to
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

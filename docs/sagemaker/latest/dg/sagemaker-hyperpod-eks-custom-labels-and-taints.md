@@ -30,7 +30,7 @@ The `KubernetesConfig` parameter is declarative, meaning you specify the complet
 
 When creating a new SageMaker HyperPod cluster, include the `KubernetesConfig` parameter in your instance group configuration. The following example shows how to create a cluster with custom labels and taints:
 
-```
+```json
 {
     "ClusterName": "my-cluster",
     "InstanceGroups": [{
@@ -82,7 +82,7 @@ In this example:
 
 You can modify labels and taints on an existing cluster using the `UpdateCluster` API. The following example shows how to update the `KubernetesConfig` for an instance group:
 
-```
+```json
 {
     "ClusterName": "my-cluster",
     "InstanceGroups": [{
@@ -116,7 +116,7 @@ SageMaker HyperPod provides APIs to monitor the status of labels and taints as t
 
 Use the `DescribeCluster` API to view the current and desired states of labels and taints at the instance group level. The following example shows the response structure:
 
-```
+```json
 {
     "ClusterName": "my-cluster",
     "ClusterStatus": "InService",
@@ -158,7 +158,7 @@ When the `CurrentLabels` match `DesiredLabels` and `CurrentTaints` match `Desire
 
 For node-level details, use the `DescribeClusterNode` API to check the label and taint configuration of individual nodes. The following example shows the response structure:
 
-```
+```json
 {
     "NodeDetails": {
         "InstanceId": {{"i-0123456789abcdef0"}},

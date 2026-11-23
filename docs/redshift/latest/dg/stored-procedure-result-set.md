@@ -17,7 +17,7 @@ To return a cursor, create a procedure with an INOUT argument defined with a `re
 
 The following example creates a procedure named `get_result_set` with an INOUT argument named `rs_out` using the `refcursor` data type. The procedure opens the cursor using a SELECT statement.
 
-```
+```sql
 CREATE OR REPLACE PROCEDURE get_result_set (param IN integer, rs_out INOUT refcursor)
 AS $$
 BEGIN
@@ -28,7 +28,7 @@ $$ LANGUAGE plpgsql;
 
 The following CALL command opens the cursor with the name `mycursor`. Use cursors only within transactions.
 
-```
+```sql
 BEGIN;
 CALL get_result_set(1, 'mycursor');
 ```
@@ -57,7 +57,7 @@ A cursor returned by a stored procedure is subject to the same constraints and p
 
 The following example shows the calling of the `get_result_set` stored procedure using a `refcursor` data type from JDBC. The literal `'mycursor'` (the name of the cursor) is passed to the `prepareStatement`. Then the results are fetched from the `ResultSet`.
 
-```
+```sql
 static void refcursor_example(Connection conn) throws SQLException {
     conn.setAutoCommit(false);
     PreparedStatement proc = conn.prepareStatement("CALL get_result_set(1, 'mycursor')");

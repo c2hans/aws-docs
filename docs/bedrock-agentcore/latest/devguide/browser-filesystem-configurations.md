@@ -113,7 +113,7 @@ Your browser execution role must include permissions to mount the file system.
 
  **IAM permissions for S3 Files**
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": [
@@ -132,7 +132,7 @@ Your browser execution role must include permissions to mount the file system.
 
  **IAM permissions for EFS**
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": [
@@ -181,7 +181,7 @@ The following sections show both API calls for each file system type.
 
 1.
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-browser \
      --name "data-browser" \
      --execution-role-arn "arn:aws:iam::<account-id>:role/BrowserExecutionRole" \
@@ -203,7 +203,7 @@ The following sections show both API calls for each file system type.
 
 1. Python example using boto3 to create a browser with an S3 Files access point.
 
-   ```
+   ```python
    import boto3
 
    cp = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -236,7 +236,7 @@ The following sections show both API calls for each file system type.
 
 1.
 
-   ```
+   ```bash
    aws bedrock-agentcore start-browser-session \
      --browser-identifier "<browser-id>" \
      --name "byos-session" \
@@ -252,7 +252,7 @@ The following sections show both API calls for each file system type.
 
 1. Python example using boto3 to start a browser session with an S3 Files access point.
 
-   ```
+   ```python
    import boto3
 
    dp = boto3.client("bedrock-agentcore", region_name="us-west-2")
@@ -284,7 +284,7 @@ The following sections show both API calls for each file system type.
 
 1.
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-browser \
      --name "shared-tools-browser" \
      --execution-role-arn "arn:aws:iam::<account-id>:role/BrowserExecutionRole" \
@@ -306,7 +306,7 @@ The following sections show both API calls for each file system type.
 
 1. Python example using boto3 to create a browser with an EFS access point.
 
-   ```
+   ```python
    import boto3
 
    cp = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -339,7 +339,7 @@ The following sections show both API calls for each file system type.
 
 1.
 
-   ```
+   ```bash
    aws bedrock-agentcore start-browser-session \
      --browser-identifier "<browser-id>" \
      --name "byos-session" \
@@ -355,7 +355,7 @@ The following sections show both API calls for each file system type.
 
 1. Python example using boto3 to start a browser session with an EFS access point.
 
-   ```
+   ```python
    import boto3
 
    dp = boto3.client("bedrock-agentcore", region_name="us-west-2")
@@ -383,7 +383,7 @@ The following sections show both API calls for each file system type.
 
 You can attach multiple access points (up to the limits below) in a single call by adding more entries to `filesystemConfigurations`. Each entry must use a unique mount path.
 
-```
+```python
 filesystemConfigurations=[
     {
         "s3FilesConfiguration": {

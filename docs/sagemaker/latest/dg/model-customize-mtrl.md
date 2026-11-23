@@ -50,6 +50,7 @@ Here are some signals that point toward it:
 | GPT-OSS-20B | IAD (us-east-1), PDX (us-west-2) |
 | Gemma-4-31B-it | PDX (us-west-2) |
 | Qwen 3.6 27B | PDX (us-west-2) |
+| Qwen 3.8 27B | PDX (us-west-2) |
 
 ### Pricing
 <a name="model-customize-mtrl-pricing"></a>

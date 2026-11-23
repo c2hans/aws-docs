@@ -90,7 +90,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/tags-resou
 #### POST schema
 <a name="tags-resource-arn-request-body-post-example"></a>
 
-```
+```json
 {
   "tags": {
   }
@@ -103,7 +103,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/tags-resou
 #### TagsModel schema
 <a name="tags-resource-arn-response-body-tagsmodel-example"></a>
 
-```
+```json
 {
   "tags": {
   }
@@ -113,7 +113,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/tags-resou
 #### InvalidRequest schema
 <a name="tags-resource-arn-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -122,7 +122,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/tags-resou
 #### AccessDenied schema
 <a name="tags-resource-arn-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -131,7 +131,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/tags-resou
 #### ResourceNotFound schema
 <a name="tags-resource-arn-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -140,7 +140,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/tags-resou
 #### InternalServiceError schema
 <a name="tags-resource-arn-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

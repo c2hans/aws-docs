@@ -19,7 +19,7 @@ According to the CPIX 2.4 specification, the value of the `ContentKey@commonEncr
 
 The following example shows a CPIX document with a single, non encrypted, content key:
 
-```
+```xml
 <cpix:CPIX contentId="abc123" version="2.4" xmlns:cpix="urn:dashif:org:cpix" xmlns:pskc="urn:ietf:params:xml:ns:keyprov:pskc">
 	<cpix:ContentKeyList>
 		<cpix:ContentKey explicitIV="OFj2IjCsPJFfMAxmQxLGPw==" kid="98ee5596-cd3e-a20d-163a-e382420c6eff" commonEncryptionScheme="cbcs">
@@ -49,7 +49,7 @@ This is a mandatory section, relevant for both Live and VOD streaming, defining 
 
 The following example shows a DRM system list with a single PlayReady DRM system specification:
 
-```
+```xml
 <cpix:DRMSystemList>
 	<cpix:DRMSystem kid="98ee5596-cd3e-a20d-163a-e382420c6eff" systemId="9a04f079-9840-4286-ab92-e65be0885f95">
 		<cpix:HLSSignalingData playlist="media">HicXmbZ2m[...]4==</cpix:HLSSignalingData>
@@ -110,7 +110,7 @@ The <cpix:ContentKeyUsageRuleList> element can contain one or several <cpix:Cont
 
 The following example shows a simple list with only one rule applying a single content key to all audio and video tracks during a specific crypto period.
 
-```
+```xml
 <cpix:ContentKeyUsageRuleList>
 	<cpix:ContentKeyUsageRule kid="98ee5596-cd3e-a20d-163a-e382420c6eff" intendedTrackType="ALL">
 		<cpix:KeyPeriodFilter periodId="keyPeriod_0909829f-40ff-4625-90fa-75da3e53278f"/>

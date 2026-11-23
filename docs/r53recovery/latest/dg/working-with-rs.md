@@ -35,5 +35,6 @@ The following sections provide detailed information and steps for creating a pla
 + [Create child plans](working-with-rs-child-plan.md)
 + [Create triggers](working-with-rs-triggers.md)
 + [Execute a plan](plan-execution-rs.md)
++ [Plan execution lifecycle](plan-execution-lifecycle-rs.md)
 
 The procedures in this section illustrate how to work with plans, workflows, execution blocks, and triggers by using the AWS Management Console. To work with Region switch API operations instead, see [Region switch API operations](actions.region-switch.md).

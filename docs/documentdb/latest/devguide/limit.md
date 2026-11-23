@@ -55,7 +55,7 @@ To view a code example for using the `$limit` command, choose the tab for the la
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function limitExample() {
@@ -94,7 +94,7 @@ limitExample();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def limit_example():

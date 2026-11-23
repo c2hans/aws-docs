@@ -24,7 +24,7 @@ The following code example shows how to use `CreateBatchInferenceJob`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
         public static String createPersonalizeBatchInferenceJob(PersonalizeClient personalizeClient,
                         String solutionVersionArn,
                         String jobName,
@@ -125,7 +125,7 @@ The following code example shows how to use `CreateCampaign`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static String createPersonalCompaign(PersonalizeClient personalizeClient, String solutionVersionArn,
             String name) {
 
@@ -156,7 +156,7 @@ The following code example shows how to use `CreateDataset`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static String createDataset(PersonalizeClient personalizeClient,
             String datasetName,
             String datasetGroupArn,
@@ -192,7 +192,7 @@ The following code example shows how to use `CreateDatasetExportJob`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static String createDatasetExportJob(PersonalizeClient personalizeClient,
             String jobName,
             String datasetArn,
@@ -260,7 +260,7 @@ The following code example shows how to use `CreateDatasetGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static String createDatasetGroup(PersonalizeClient personalizeClient, String datasetGroupName) {
 
         try {
@@ -276,7 +276,7 @@ The following code example shows how to use `CreateDatasetGroup`.
 ```
 Create a domain dataset group.
 
-```
+```java
     public static String createDomainDatasetGroup(PersonalizeClient personalizeClient,
             String datasetGroupName,
             String domain) {
@@ -303,7 +303,7 @@ The following code example shows how to use `CreateDatasetImportJob`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static String createPersonalizeDatasetImportJob(PersonalizeClient personalizeClient,
             String jobName,
             String datasetArn,
@@ -370,7 +370,7 @@ The following code example shows how to use `CreateEventTracker`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static String createEventTracker(PersonalizeClient personalizeClient, String eventTrackerName,
             String datasetGroupArn) {
 
@@ -433,7 +433,7 @@ The following code example shows how to use `CreateFilter`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static String createFilter(PersonalizeClient personalizeClient,
             String filterName,
             String datasetGroupArn,
@@ -463,7 +463,7 @@ The following code example shows how to use `CreateRecommender`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static String createRecommender(PersonalizeClient personalizeClient,
             String name,
             String datasetGroupArn,
@@ -525,7 +525,7 @@ The following code example shows how to use `CreateSchema`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static String createSchema(PersonalizeClient personalizeClient, String schemaName, String filePath) {
 
         String schema = null;
@@ -556,7 +556,7 @@ The following code example shows how to use `CreateSchema`.
 ```
 Create a schema with a domain.
 
-```
+```java
     public static String createDomainSchema(PersonalizeClient personalizeClient, String schemaName, String domain,
             String filePath) {
 
@@ -597,7 +597,7 @@ The following code example shows how to use `CreateSolution`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static String createPersonalizeSolution(PersonalizeClient personalizeClient,
             String datasetGroupArn,
             String solutionName,
@@ -630,7 +630,7 @@ The following code example shows how to use `CreateSolutionVersion`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static String createPersonalizeSolutionVersion(PersonalizeClient personalizeClient, String solutionArn) {
         long maxTime = 0;
         long waitInMilliseconds = 30 * 1000; // 30 seconds
@@ -711,7 +711,7 @@ The following code example shows how to use `DeleteCampaign`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static void deleteSpecificCampaign(PersonalizeClient personalizeClient, String campaignArn) {
         try {
             DeleteCampaignRequest campaignRequest = DeleteCampaignRequest.builder()
@@ -737,7 +737,7 @@ The following code example shows how to use `DeleteEventTracker`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static void deleteEventTracker(PersonalizeClient personalizeClient, String eventTrackerArn) {
         try {
             DeleteEventTrackerRequest deleteEventTrackerRequest = DeleteEventTrackerRequest.builder()
@@ -764,7 +764,7 @@ The following code example shows how to use `DeleteSolution`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static void deleteGivenSolution(PersonalizeClient personalizeClient, String solutionArn) {
 
         try {
@@ -791,7 +791,7 @@ The following code example shows how to use `DescribeCampaign`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static void describeSpecificCampaign(PersonalizeClient personalizeClient, String campaignArn) {
 
         try {
@@ -820,7 +820,7 @@ The following code example shows how to use `DescribeRecipe`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static void describeSpecificRecipe(PersonalizeClient personalizeClient, String recipeArn) {
 
         try {
@@ -847,7 +847,7 @@ The following code example shows how to use `DescribeSolution`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static void describeSpecificSolution(PersonalizeClient personalizeClient, String solutionArn) {
 
         try {
@@ -874,7 +874,7 @@ The following code example shows how to use `ListCampaigns`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static void listAllCampaigns(PersonalizeClient personalizeClient, String solutionArn) {
 
         try {
@@ -906,7 +906,7 @@ The following code example shows how to use `ListDatasetGroups`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static void listDSGroups(PersonalizeClient personalizeClient) {
 
         try {
@@ -937,7 +937,7 @@ The following code example shows how to use `ListRecipes`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static void listAllRecipes(PersonalizeClient personalizeClient) {
 
         try {
@@ -968,7 +968,7 @@ The following code example shows how to use `ListSolutions`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static void listAllSolutions(PersonalizeClient personalizeClient, String datasetGroupArn) {
 
         try {
@@ -1000,7 +1000,7 @@ The following code example shows how to use `UpdateCampaign`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```java
     public static String updateCampaign(PersonalizeClient personalizeClient,
             String campaignArn,
             String solutionVersionArn,

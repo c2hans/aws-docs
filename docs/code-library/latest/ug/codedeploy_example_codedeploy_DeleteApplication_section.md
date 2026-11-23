@@ -29,7 +29,7 @@ For more information, see [Delete an application in CodeDeploy](https://docs.aws
 **Tools for PowerShell V4**
 **Example 1: This example deletes the application with the specified name. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the application without a prompt.**
 
-```
+```powershell
 Remove-CDApplication -ApplicationName MyNewApplication
 ```
 +  For API details, see [DeleteApplication](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -37,7 +37,7 @@ Remove-CDApplication -ApplicationName MyNewApplication
 **Tools for PowerShell V5**
 **Example 1: This example deletes the application with the specified name. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the application without a prompt.**
 
-```
+```powershell
 Remove-CDApplication -ApplicationName MyNewApplication
 ```
 +  For API details, see [DeleteApplication](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

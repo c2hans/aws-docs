@@ -26,4 +26,4 @@ The following video explains more about managing professional services products 
 ## Getting help
 <a name="proserv-help"></a>
 
- For assistance with your professional services products, contact your business development partner for AWS Marketplace or the [AWS Marketplace Seller Operations](https://aws.amazon.com/marketplace/management/contact-us/) team.
+ For assistance with your professional services products, contact your business development partner for AWS Marketplace or the AWS Marketplace support team on the [AWS Partner Central and Marketplace Support page](https://us-east-1.console.aws.amazon.com/partnercentral/support?region=us-east-1) in the AWS Partner Central console.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 
 Within a source resource, you can define multiple connectors, each with a different destination resource.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...

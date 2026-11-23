@@ -81,7 +81,7 @@ For example, you could create a policy to allow importing and exporting to AWS D
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

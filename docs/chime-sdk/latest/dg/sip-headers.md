@@ -15,7 +15,7 @@ The `Participants` section of a Lambda function contains the `SipHeaders` field.
 
 This example shows an expected response when an AWS Lambda invocation contains SIP headers.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": 3,
@@ -54,7 +54,7 @@ This example shows an expected response when an AWS Lambda invocation contains S
 
 The following example shows a successful [CallAndBridge](call-and-bridge.md) action, due to an invalid entry for the `SipHeaders` parameter.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions":[
@@ -87,7 +87,7 @@ The following example shows a successful [CallAndBridge](call-and-bridge.md) act
 
 The following example shows a failed [CallAndBridge](call-and-bridge.md) action caused by an invalid `SipHeaders` parameter.
 
-```
+```json
 {
     "SchemaVersion":"1.0",
     "Sequence":3,

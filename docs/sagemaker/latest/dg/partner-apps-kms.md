@@ -64,7 +64,7 @@ The following policy statement is used for the administrator who is creating Par
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "example-key-policy",
@@ -101,7 +101,7 @@ The following policy statement is for the user of the Partner AI Apps.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id":"example-key-policy",

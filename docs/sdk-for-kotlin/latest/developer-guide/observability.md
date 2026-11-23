@@ -24,7 +24,7 @@ To use the global telemetry provider, first update your project dependencies to 
 
 Replace {{X.Y.Z}} with the version you’re using in your app or with the [latest version available](https://github.com/smithy-lang/smithy-kotlin/releases/latest).
 
-```
+```kotlin
 dependencies {
     implementation(platform("aws.smithy.kotlin:bom:{{X.Y.Z}}"))
     implementation("aws.smithy.kotlin:telemetry-defaults")
@@ -34,7 +34,7 @@ dependencies {
 
 Then set the global telemetry provider before creating a service client as shown in the following code.
 
-```
+```kotlin
 import aws.sdk.kotlin.services.s3.S3Client
 import aws.smithy.kotlin.runtime.telemetry.GlobalTelemetryProvider
 import kotlinx.coroutines.runBlocking
@@ -58,7 +58,7 @@ fun getConfiguredProvider(): TelemetryProvider {
 
 You can configure an individual service client with a specific telemetry provider (other than the global one). This is shown in the following example.
 
-```
+```kotlin
 import aws.sdk.kotlin.services.s3.S3Client
 import kotlinx.coroutines.runBlocking
 

@@ -10,7 +10,7 @@ To get a list of grants for a KMS key, use the AWS KMS [ListGrants](https://docs
 
 For example, the following is a JSON representation of a grant that was obtained from the [list-grants](https://docs.aws.amazon.com/cli/latest/reference/kms/list-grants.html) command in the AWS CLI.
 
-```
+```json
 {"Grants": [{
   "Operations": ["Decrypt"],
   "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
@@ -28,7 +28,7 @@ To find out who or what has access to use the KMS key, look for the `"GranteePri
 
 The following is another example of a JSON representation of a grant that was obtained from the [list-grants](https://docs.aws.amazon.com/cli/latest/reference/kms/list-grants.html) command in the AWS CLI. In the following example, the grantee principal is another AWS account.
 
-```
+```json
 {"Grants": [{
   "Operations": ["Encrypt"],
   "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
@@ -42,7 +42,7 @@ The following is another example of a JSON representation of a grant that was ob
 
 The following example shows a grant created with `GranteeServicePrincipal`. Notice that the response includes a `GranteeServicePrincipal` field instead of `GranteePrincipal`, and the `Constraints` field contains a `SourceArn` value that restricts the grant to a specific AWS resource.
 
-```
+```json
 {"Grants": [{
   "Operations": ["Encrypt", "Decrypt", "GenerateDataKey", "DescribeKey"],
   "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",

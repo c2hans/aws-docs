@@ -46,7 +46,7 @@ Integrations such as the full-text-search integration with ElasticSearch are als
 
    The `initiateDatabaseReset` request returns the reset token in its JSON response, like this:
 
-   ```
+   ```json
    {
      "status" : "200 OK",
      "payload" : {
@@ -88,7 +88,7 @@ Integrations such as the full-text-search integration with ElasticSearch are als
 
    The request returns a JSON response. If the request is accepted, the response is:
 
-   ```
+   ```json
    {
      "status" : "200 OK"
    }
@@ -96,7 +96,7 @@ Integrations such as the full-text-search integration with ElasticSearch are als
 
    If the token you sent doesn't match the one that was issued, the response looks like this:
 
-   ```
+   ```json
    {
      "code" : "InvalidParameterException",
      "requestId":"{{token_guid}}",
@@ -148,7 +148,7 @@ You can also perform the reset in two steps, just as with the REST API:
 
 The response is:
 
-```
+```json
 {
   "status" : "200 OK",
   "payload" : {
@@ -165,7 +165,7 @@ Then do:
 
 The response is:
 
-```
+```json
 {
   "status" : "200 OK"
 }

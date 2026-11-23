@@ -97,7 +97,7 @@ For more information, see [Amazon EC2 billing and purchasing options](https://do
 **Tools for PowerShell V4**
 **Example 1: This example launches the specified Scheduled Instance.**
 
-```
+```powershell
 New-EC2ScheduledInstance -ScheduledInstanceId sci-1234-1234-1234-1234-123456789012 -InstanceCount 1 `
 -IamInstanceProfile_Name my-iam-role `
 -LaunchSpecification_ImageId ami-12345678 `
@@ -110,7 +110,7 @@ New-EC2ScheduledInstance -ScheduledInstanceId sci-1234-1234-1234-1234-1234567890
 **Tools for PowerShell V5**
 **Example 1: This example launches the specified Scheduled Instance.**
 
-```
+```powershell
 New-EC2ScheduledInstance -ScheduledInstanceId sci-1234-1234-1234-1234-123456789012 -InstanceCount 1 `
 -IamInstanceProfile_Name my-iam-role `
 -LaunchSpecification_ImageId ami-12345678 `

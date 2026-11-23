@@ -41,7 +41,7 @@ To see the processing status of your custom vocabulary, use the [`GetMedicalVoca
 
 The following is an example request using the AWS SDK for Python (Boto3) to create a custom vocabulary.
 
-```
+```python
 from __future__ import print_function
 import time
 import boto3

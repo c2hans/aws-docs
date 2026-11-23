@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::RouterOutput TlsEncryption
 
-<a name="aws-properties-mediaconnect-routeroutput-tlsencryption-description"></a>The `TlsEncryption` property type specifies Property description not available. for an [AWS::MediaConnect::RouterOutput](aws-resource-mediaconnect-routeroutput.md).
+The Transport Layer Security (TLS) encryption settings used to establish a secure connection to a destination.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-routeroutput-tlsencryption-syntax"></a>
@@ -36,13 +36,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-routeroutput-tlsencryption-properties"></a>
 
 `EncryptionConfiguration`  <a name="cfn-mediaconnect-routeroutput-tlsencryption-encryptionconfiguration"></a>
-Property description not available.
+The configuration settings for the specified TLS encryption type.
 *Required*: Yes
 *Type*: [TlsEncryptionConfiguration](aws-properties-mediaconnect-routeroutput-tlsencryptionconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EncryptionType`  <a name="cfn-mediaconnect-routeroutput-tlsencryption-encryptiontype"></a>
-Property description not available.
+The type of TLS encryption to use for the connection.
 *Required*: No
 *Type*: String
 *Allowed values*: `PUBLIC`

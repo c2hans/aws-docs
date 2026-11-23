@@ -44,6 +44,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![A flowchart that describes the options you should consider when determining if you need deterministic performance in your networking or not.](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/deterministic-networking-flowchart.png)
 
+*Deterministic performance flowchart*
+
 ## Resources
 <a name="resources"></a>
 

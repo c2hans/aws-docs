@@ -150,7 +150,7 @@ OPENAI_BASE_URL="https://bedrock-mantle.us-west-2.api.aws/openai/v1"
 ------
 #### [ Chat Completions API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -167,7 +167,7 @@ print(response)
 ------
 #### [ Responses API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -185,7 +185,7 @@ print(response)
 <a name="model-card-xai-grok-4-3-considerations"></a>
 + **Reasoning effort** — Reasoning is always active by default. You can configure effort through the `reasoning` parameter: `{"effort": "none"}` (disables reasoning), `"low"` (default), `"medium"`, or `"high"`. Reasoning content is encrypted and can be returned by passing `include: ["reasoning.encrypted_content"]` in the Responses API request. You can send the encrypted content back in subsequent turns to provide reasoning context for multi-turn conversations. The Chat Completions API does not return reasoning tokens.
 
-  ```
+  ```python
   response = client.responses.create(
       model="xai.grok-4.3",
       reasoning={"effort": "high"},

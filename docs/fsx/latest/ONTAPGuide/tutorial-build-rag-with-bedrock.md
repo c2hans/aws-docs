@@ -136,7 +136,7 @@ When you create the knowledge base using the Amazon Bedrock console in [Step 4: 
 
 1. Save the following trust policy as `kb-trust-policy.json`. It allows Amazon Bedrock to assume the role. Replace {{account-id}} with your AWS account ID.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [{
@@ -150,7 +150,7 @@ When you create the knowledge base using the Amazon Bedrock console in [Step 4: 
 
 1. Save the following permissions policy as `kb-permissions.json`. It grants access to the embedding model, the Amazon S3 access point, and the vector store. Replace the placeholders with your values.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

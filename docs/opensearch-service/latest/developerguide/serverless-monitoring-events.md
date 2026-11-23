@@ -32,7 +32,7 @@ OpenSearch Serverless sends this event when your search or index OCU usage reach
 
 The following is an example event of this type (search OCU):
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -51,7 +51,7 @@ The following is an example event of this type (search OCU):
 
 The following is an example event of this type (index OCU):
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -76,7 +76,7 @@ OpenSearch Serverless sends this event when your search or index OCU usage reach
 
 The following is an example event of this type (search OCU):
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",
@@ -95,7 +95,7 @@ The following is an example event of this type (search OCU):
 
 The following is an example event of this type (index OCU):
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",

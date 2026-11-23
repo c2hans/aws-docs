@@ -146,7 +146,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-managed-management-account-create-custom-scp-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "TargetId": "ou-96dv-e18n036l",
   "CustomServiceControlPolicy": ""
@@ -156,7 +156,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-managed-management-account-create-custom-scp-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "TargetId": "ou-96dv-e18n036l",
   "CustomServiceControlPolicy": "",

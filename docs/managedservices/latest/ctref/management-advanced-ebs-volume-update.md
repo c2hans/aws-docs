@@ -139,7 +139,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-ebs-volume-update-ex-min"></a>
 
-```
+```json
 {
   "VpcId": "vpc-1234567890abcdef0",
   "StackId": "stack-a1b2c3d4e5f67890e",
@@ -150,7 +150,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-ebs-volume-update-ex-max"></a>
 
-```
+```json
 {
   "VpcId": "vpc-1234567890abcdef0",
   "StackId": "stack-a1b2c3d4e5f67890e",

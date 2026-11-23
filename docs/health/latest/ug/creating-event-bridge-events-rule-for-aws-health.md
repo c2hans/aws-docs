@@ -18,7 +18,7 @@ For a new or existing rule, use the [PutRule](https://docs.aws.amazon.com/eventb
 **Example: Setting up rules for issues for only the Amazon EC2 service**
 The following event pattern creates a rule to monitor issue events for the Amazon EC2 service.
 
-```
+```JSON
 {
   "detail": {
     "eventTypeCategory": [
@@ -40,7 +40,7 @@ The following event pattern creates a rule to monitor issue events for the Amazo
 **Example: Setting up rules for all action required AWS Health events, including planned lifecycle events**
 The following event pattern creates a rule to monitor all AWS Health events that require action, including planned lifecycle events.
 
-```
+```JSON
 {
   "detail": {
     "eventTypeCategory": [
@@ -63,7 +63,7 @@ The following event pattern creates a rule to monitor all AWS Health events that
 **Example: Setting up rules for all AWS Health events for multiple services and event type categories**
 The following event pattern creates a rule to monitor events for the `issue`, `accountNotification`, and `scheduledChange` event type categories for three AWS services: Amazon EC2 Auto Scaling, Amazon VPC, and Amazon EC2.
 
-```
+```JSON
 {
   "detail": {
     "eventTypeCategory": [

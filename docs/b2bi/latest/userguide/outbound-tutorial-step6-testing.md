@@ -10,7 +10,7 @@ Testing ensures your complete outbound workflow functions correctly before proce
 
 1. Create a test JSON file named `test-purchase-order.json` with this content:
 
-   ```
+   ```json
    {
      "purchaseOrder": {
        "poNumber": "TEST-PO-001",

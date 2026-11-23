@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon Location Servic
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -148,7 +148,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 Run an interactive scenario demonstrating Amazon Location Service features.
 
-```
+```java
 /*
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -543,7 +543,7 @@ public class LocationScenario {
 ```
 A wrapper class for Amazon Location Service SDK methods.
 
-```
+```java
 public class LocationActions {
 
     private static LocationAsyncClient locationAsyncClient;
@@ -1152,7 +1152,7 @@ The following code example shows how to use `BatchUpdateDevicePosition`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Updates the position of a device in the location tracking system.
      *
@@ -1198,7 +1198,7 @@ The following code example shows how to use `CalculateRoute`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Calculates the distance between two locations asynchronously.
      *
@@ -1240,7 +1240,7 @@ The following code example shows how to use `CreateGeofenceCollection`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Creates a new geofence collection.
      *
@@ -1275,7 +1275,7 @@ The following code example shows how to use `CreateKey`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Creates a new API key with the specified name and restrictions.
      *
@@ -1319,7 +1319,7 @@ The following code example shows how to use `CreateMap`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Creates a new map with the specified name and configuration.
      *
@@ -1361,7 +1361,7 @@ The following code example shows how to use `CreateRouteCalculator`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Creates a new route calculator with the specified name and data source.
      *
@@ -1396,7 +1396,7 @@ The following code example shows how to use `CreateTracker`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Creates a new tracker resource in your AWS account, which you can use to track the location of devices.
      *
@@ -1433,7 +1433,7 @@ The following code example shows how to use `DeleteGeofenceCollection`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Deletes a geofence collection asynchronously.
      *
@@ -1469,7 +1469,7 @@ The following code example shows how to use `DeleteKey`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Deletes the specified key from the key-value store.
      *
@@ -1506,7 +1506,7 @@ The following code example shows how to use `DeleteMap`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Deletes a map with the specified name.
      *
@@ -1542,7 +1542,7 @@ The following code example shows how to use `DeleteRouteCalculator`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Deletes a route calculator from the system.
      *
@@ -1581,7 +1581,7 @@ The following code example shows how to use `DeleteTracker`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Deletes a tracker with the specified name.
      *
@@ -1620,7 +1620,7 @@ The following code example shows how to use `GetDevicePosition`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Retrieves the position of a device using the provided LocationClient.
      *
@@ -1656,7 +1656,7 @@ The following code example shows how to use `PutGeofence`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Adds a new geofence to the specified collection.
      *

@@ -40,7 +40,7 @@ Capability resources have a status that indicates their current state. You can v
 
  ** AWS CLI**:
 
-```
+```bash
 aws eks describe-capability \
   --region region-code \
   --cluster-name my-cluster \
@@ -104,13 +104,13 @@ You can list all capability resources on a cluster.
 
 Use the `list-capabilities` command to view all capabilities on your cluster. Replace {{region-code}} with the AWS Region that your cluster is in and replace {{my-cluster}} with the name of your cluster.
 
-```
+```bash
 aws eks list-capabilities \
   --region {{region-code}} \
   --cluster-name {{my-cluster}}
 ```
 
-```
+```json
 {
     "capabilities": [
         {
@@ -166,7 +166,7 @@ Get detailed information about a specific capability, including its configuratio
 
 Use the `describe-capability` command to view detailed information. Replace {{region-code}} with the AWS Region that your cluster is in, replace {{my-cluster}} with the name of your cluster, and replace {{capability-name}} with the name you gave your capability when you created it (for example, `my-ack`, `my-argocd`, or `my-kro`).
 
-```
+```bash
 aws eks describe-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \
@@ -175,7 +175,7 @@ aws eks describe-capability \
 
  **Example output:**
 
-```
+```json
 {
   "capability": {
     "capabilityName": "my-ack",
@@ -209,7 +209,7 @@ EKS capability resources are fully managed, including patching and version updat
 
 Use the `update-capability` command to modify a capability:
 
-```
+```bash
 aws eks update-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \
@@ -227,7 +227,7 @@ For an ACK capability, you can change the type-specific settings in the `ack` ob
 
 The following example turns cross-namespace reference resolution on and replaces the set of disabled services with a single service (`iam`). Replace {{region-code}} with the AWS Region that your cluster is in, replace {{my-cluster}} with the name of your cluster, and replace {{my-ack}} with the name of your ACK capability.
 
-```
+```bash
 aws eks update-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \
@@ -284,7 +284,7 @@ Use the `delete-capability` command to delete a capability resource:
 
 Replace {{region-code}} with the AWS Region that your cluster is in, replace {{my-cluster}} with the name of your cluster, and replace {{capability-name}} with the capability name to delete.
 
-```
+```bash
 aws eks delete-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \

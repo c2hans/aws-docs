@@ -50,7 +50,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 
 1.  **Validate policies with custom policy checks**: Create organization-specific validation rules to verify that new policies comply with your security standards and regulatory requirements. You can find examples of reference policies and learn how to set up and run policy checks for new access through the [IAM Access Analyzer custom policy checks samples](https://github.com/aws-samples/iam-access-analyzer-custom-policy-check-samples) repository on GitHub. To run this policy check, use the AWS CLI and invoke the [check-no-new-access](https://docs.aws.amazon.com/cli/latest/reference/accessanalyzer/check-no-new-access.html) command. Define a reference policy that sets guardrails around what you consider acceptable, develop a candidate policy that you want to validate, and then specify the policy-type to perform the analysis.
 
-   ```
+   ```bash
    AWS accessanalyzer check-no-new-access --existing-policy-document file://reference-policy.json --new-policy-document file://candidate-policy.json --policy-type IDENTITY_POLICY
    ```
 

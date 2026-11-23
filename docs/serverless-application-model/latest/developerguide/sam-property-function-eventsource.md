@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-eventsource-syntax.yaml"></a>
 
-```
+```yaml
   [Properties](#sam-function-eventsource-properties): {{AlexaSkill | Api | CloudWatchEvent | CloudWatchLogs | Cognito | DocumentDB | DynamoDB | EventBridgeRule | HttpApi | IoTRule | Kinesis | MQ | MSK | S3 | Schedule | ScheduleV2 | SelfManagedKafka | SNS | SQS}}
   [Type](#sam-function-eventsource-type): {{String}}
 ```
@@ -46,7 +46,7 @@ Example of using an API event
 #### YAML
 <a name="sam-property-function-eventsource--examples--apievent--yaml"></a>
 
-```
+```yaml
 ApiEvent:
   Type: Api
   Properties:

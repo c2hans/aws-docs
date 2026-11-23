@@ -19,7 +19,7 @@ To use the `ClientConfig` parameter, you can specify it on the command line as a
 
 ******Defining a `ClientConfig` object**
 
-```
+```ps
 $s3Config = New-Object -TypeName Amazon.S3.AmazonS3Config
 $s3Config.ForcePathStyle = $true
 $s3Config.Timeout = [TimeSpan]::FromMilliseconds(150000)
@@ -28,7 +28,7 @@ Get-S3Object -BucketName <BUCKET_NAME> -ClientConfig $s3Config
 
 **Adding `ClientConfig` properties by using PowerShell splatting**
 
-```
+```ps
 $params=@{
     ClientConfig=@{
         ForcePathStyle=$true
@@ -45,7 +45,7 @@ Get-S3Object @params
 
 When using PowerShell splatting, if you specify a `ClientConfig` property that doesn't exist, the AWS Tools for PowerShell doesn't detect the error until runtime, at which time it returns an exception. Modifying the example from above:
 
-```
+```ps
 $params=@{
     ClientConfig=@{
         ForcePathStyle=$true
@@ -60,7 +60,7 @@ Get-S3Object @params
 
 This example produces an exception similar to the following:
 
-```
+```text
 Cannot bind parameter 'ClientConfig'. Cannot create object of type "Amazon.S3.AmazonS3Config". The UndefinedProperty property was not found for the Amazon.S3.AmazonS3Config object.
 ```
 

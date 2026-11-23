@@ -18,7 +18,7 @@ You can specify a maximum of 10 events per call to `putEvents`.
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.cloudwatchevents.AmazonCloudWatchEvents;
 import com.amazonaws.services.cloudwatchevents.AmazonCloudWatchEventsClientBuilder;
 import com.amazonaws.services.cloudwatchevents.model.PutEventsRequest;
@@ -28,7 +28,7 @@ import com.amazonaws.services.cloudwatchevents.model.PutEventsResult;
 
  **Code**
 
-```
+```java
 final AmazonCloudWatchEvents cwe =
     AmazonCloudWatchEventsClientBuilder.defaultClient();
 
@@ -54,7 +54,7 @@ To create or update a rule, call the AmazonCloudWatchEventsClient’s `putRule` 
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.cloudwatchevents.AmazonCloudWatchEvents;
 import com.amazonaws.services.cloudwatchevents.AmazonCloudWatchEventsClientBuilder;
 import com.amazonaws.services.cloudwatchevents.model.PutRuleRequest;
@@ -64,7 +64,7 @@ import com.amazonaws.services.cloudwatchevents.model.RuleState;
 
  **Code**
 
-```
+```java
 final AmazonCloudWatchEvents cwe =
     AmazonCloudWatchEventsClientBuilder.defaultClient();
 
@@ -86,7 +86,7 @@ To add a target to a rule, call the AmazonCloudWatchEventsClient’s `putTargets
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.cloudwatchevents.AmazonCloudWatchEvents;
 import com.amazonaws.services.cloudwatchevents.AmazonCloudWatchEventsClientBuilder;
 import com.amazonaws.services.cloudwatchevents.model.PutTargetsRequest;
@@ -96,7 +96,7 @@ import com.amazonaws.services.cloudwatchevents.model.Target;
 
  **Code**
 
-```
+```java
 final AmazonCloudWatchEvents cwe =
     AmazonCloudWatchEventsClientBuilder.defaultClient();
 

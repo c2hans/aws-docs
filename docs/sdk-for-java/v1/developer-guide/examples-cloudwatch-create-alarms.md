@@ -13,7 +13,7 @@ To create an alarm based on a CloudWatch metric, call the AmazonCloudWatchClient
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.cloudwatch.AmazonCloudWatch;
 import com.amazonaws.services.cloudwatch.AmazonCloudWatchClientBuilder;
 import com.amazonaws.services.cloudwatch.model.ComparisonOperator;
@@ -26,7 +26,7 @@ import com.amazonaws.services.cloudwatch.model.Statistic;
 
  **Code**
 
-```
+```java
 final AmazonCloudWatch cw =
     AmazonCloudWatchClientBuilder.defaultClient();
 
@@ -60,7 +60,7 @@ To list the CloudWatch alarms that you have created, call the AmazonCloudWatchCl
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.cloudwatch.AmazonCloudWatch;
 import com.amazonaws.services.cloudwatch.AmazonCloudWatchClientBuilder;
 import com.amazonaws.services.cloudwatch.model.DescribeAlarmsRequest;
@@ -70,7 +70,7 @@ import com.amazonaws.services.cloudwatch.model.MetricAlarm;
 
  **Code**
 
-```
+```java
 final AmazonCloudWatch cw =
     AmazonCloudWatchClientBuilder.defaultClient();
 
@@ -107,7 +107,7 @@ To delete CloudWatch alarms, call the AmazonCloudWatchClient’s `deleteAlarms` 
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.cloudwatch.AmazonCloudWatch;
 import com.amazonaws.services.cloudwatch.AmazonCloudWatchClientBuilder;
 import com.amazonaws.services.cloudwatch.model.DeleteAlarmsRequest;
@@ -116,7 +116,7 @@ import com.amazonaws.services.cloudwatch.model.DeleteAlarmsResult;
 
  **Code**
 
-```
+```java
 final AmazonCloudWatch cw =
     AmazonCloudWatchClientBuilder.defaultClient();
 

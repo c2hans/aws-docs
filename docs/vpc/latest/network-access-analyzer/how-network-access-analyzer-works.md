@@ -88,7 +88,7 @@ The following network configurations are not supported by Network Access Analyze
 
 **Transit gateways**
 + Network Access Analyzer does not support paths through AWS Transit Gateway peering connections to other regions or accounts, or AWS Transit Gateway direct connections.
-+ Network Access Analyzer does not yet support analysis of transit gateway policy tables.
++ Network Access Analyzer does not yet support analysis of 1:1 NAT on transit gateway attachments.
 
 ## Limitations
 <a name="analyzer-limitations"></a>

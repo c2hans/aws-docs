@@ -49,7 +49,7 @@ aws memorydb update-cluster ^
 
 It returns the following JSON response:
 
-```
+```json
 {
     "Cluster": {
         "Name": "my-cluster",

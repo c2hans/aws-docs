@@ -46,7 +46,7 @@ If copying from the console instructions, the following values should be updated
    + Replace {{proj\_name}} with your CodeCatalyst project name.
    + Replace {{repo\_name}} with your CodeCatalyst package repository name.
 
-   ```
+   ```xml
    <profiles>
      <profile>
        <id>{{repo_name}}</id>
@@ -70,7 +70,7 @@ If copying from the console instructions, the following values should be updated
    + Replace {{username}} with your CodeCatalyst user name.
    + Replace {{PAT}} with your CodeCatalyst PAT.
 
-   ```
+   ```xml
    <servers>
      <server>
        <id>{{repo_name}}</id>
@@ -159,7 +159,7 @@ You will not be able to see or copy your PAT again after you close the dialog bo
 
 1. Add a `<servers>` section to `settings.xml` with a reference to the `CodeCatalyst_ARTIFACTS_TOKEN` environment variable so that Maven passes the token in HTTP requests.
 
-   ```
+   ```xml
    <settings>
    ...
        <servers>
@@ -175,7 +175,7 @@ You will not be able to see or copy your PAT again after you close the dialog bo
 
 1. Add a `<distributionManagement>` section to your project's `pom.xml`.
 
-   ```
+   ```xml
    <project>
    ...
         <distributionManagement>

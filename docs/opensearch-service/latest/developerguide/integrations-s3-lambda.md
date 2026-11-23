@@ -27,7 +27,7 @@ Deployment packages are ZIP or JAR files that contain your code and its dependen
 
 1. Create a file within the directory named `sample.py`:
 
-   ```
+   ```python
    import boto3
    import re
    import requests

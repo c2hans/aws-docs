@@ -124,7 +124,7 @@ Share transformation definitions with other AWS accounts, OUs, or your organizat
 
 Share a published transformation definition with one target.
 
-```
+```bash
 atx custom def share create -n {{transformation-name}} --target {{target}} [--managed-policy {{name}}]
 ```
 
@@ -141,7 +141,7 @@ The following table describes the options for `share create`.
 
 List the shares that you own, or the shares and invitations for your account.
 
-```
+```bash
 atx custom def share list --outgoing    # Shares you own
 atx custom def share list --incoming    # Invitations and accepted shares
 ```
@@ -158,7 +158,7 @@ The following table describes the options for `share list`.
 
 Change the managed permission of a share that you own.
 
-```
+```bash
 atx custom def share update {{share-id}} --managed-policy {{name}}
 ```
 
@@ -173,7 +173,7 @@ The following table describes the options for `share update`.
 
 Revoke a share that you own. The consumer loses access.
 
-```
+```bash
 atx custom def share revoke {{share-id}} [--yes]
 ```
 
@@ -181,7 +181,7 @@ atx custom def share revoke {{share-id}} [--yes]
 
 Accept an invitation to a share.
 
-```
+```bash
 atx custom def share accept {{share-id}} [--yes]
 ```
 
@@ -189,7 +189,7 @@ atx custom def share accept {{share-id}} [--yes]
 
 Decline an invitation to a share.
 
-```
+```bash
 atx custom def share decline {{share-id}} [--yes]
 ```
 

@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 
  Run the `put-parameter` command to create a `String` parameter named `/myapp/dev/log-level` with the value `INFO`. Because you don't specify a tier in this example, Parameter Store creates this parameter in the default standard tier.
 
-```
+```bash
 aws ssm put-parameter \
     --region us-east-1 \
     --name "/myapp/dev/log-level" \
@@ -33,7 +33,7 @@ aws ssm put-parameter \
 
 Run the [get-parameter](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameter.html) command to retrieve the value of a single parameter. The following example retrieves the value of the `/myapp/dev/log-level` parameter.
 
-```
+```bash
 aws ssm get-parameter \
     --region us-east-1 \
     --name "/myapp/dev/log-level"
@@ -41,7 +41,7 @@ aws ssm get-parameter \
 
  The following sample output prints the value of the parameter and related metadata.
 
-```
+```bash
 {
     "Parameter": {
         "Name": "/myapp/dev/log-level",
@@ -60,7 +60,7 @@ aws ssm get-parameter \
 
  Run the following command to create a `StringList` parameter named `/myapp/dev/subnet-ids` with three comma-separated subnet IDs.
 
-```
+```bash
 aws ssm put-parameter \
     --region us-east-1 \
     --name "/myapp/dev/subnet-ids" \
@@ -73,7 +73,7 @@ aws ssm put-parameter \
 
  Run the [get-parameters](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters.html) command to specify up to 10 parameters in a list. The following example specifies the `/myapp/dev/log-level` and `/myapp/dev/subnet-ids` parameters by name.
 
-```
+```bash
 aws ssm get-parameters \
     --region us-east-1 \
     --names "/myapp/dev/log-level" "/myapp/dev/subnet-ids"
@@ -86,7 +86,7 @@ Use `SecureString` for configuration values that require encryption, such as ser
 
 Run the following command to create a `SecureString` parameter named `/myapp/dev/vendor/merchant-id` with the encrypted value `merchant-739482`.
 
-```
+```bash
 aws ssm put-parameter \
     --region us-east-1 \
     --name "/myapp/dev/vendor/merchant-id" \
@@ -99,7 +99,7 @@ If you manage credentials such as usernames, passwords, or any other secrets, we
 
 Run the following command to see what happens when you retrieve a `SecureString` value without decrypting it.
 
-```
+```bash
 aws ssm get-parameter \
     --region us-east-1 \
     --name "/myapp/dev/vendor/merchant-id"
@@ -107,7 +107,7 @@ aws ssm get-parameter \
 
 The output shows that encrypted value, not the plaintext.
 
-```
+```bash
 {
     "Parameter": {
         "Name": "/myapp/dev/vendor/merchant-id",
@@ -123,7 +123,7 @@ The output shows that encrypted value, not the plaintext.
 
  Run the following command to retrieve the plaintext value of the `/myapp/dev/vendor/merchant-id` parameter. The `--with-decryption` option tells Parameter Store to return the decrypted value.
 
-```
+```bash
 aws ssm get-parameter \
     --region us-east-1 \
     --name "/myapp/dev/vendor/merchant-id" \
@@ -151,7 +151,7 @@ The following output shows the plaintext value.
 
  Run the following command to update the value of the `/myapp/dev/log-level` parameter from `INFO` to `DEBUG`. The `--overwrite` option allows the command to replace the existing value.
 
-```
+```bash
 aws ssm put-parameter \
     --region us-east-1 \
     --name "/myapp/dev/log-level" \
@@ -162,7 +162,7 @@ aws ssm put-parameter \
 
  Parameter Store creates a new version of the parameter each time you update it, as shown in the output.
 
-```
+```bash
 {
     "Version": 2,
     "Tier": "Standard"
@@ -171,7 +171,7 @@ aws ssm put-parameter \
 
  Run the [get-parameter-history](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameter-history.html) command to view the history of the `/myapp/dev/log-level` parameter.
 
-```
+```bash
 aws ssm get-parameter-history \
     --region us-east-1 \
     --name "/myapp/dev/log-level"
@@ -179,7 +179,7 @@ aws ssm get-parameter-history \
 
  The response includes previous versions of the parameter, including the version number, value, type, and last modified date.
 
-```
+```json
 {
     "Parameters": [
         {
@@ -207,7 +207,7 @@ aws ssm get-parameter-history \
 
  Run the [get-parameters-by-path](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters-by-path.html) command to retrieve parameters under the `/myapp/dev/` path. The `--recursive` option includes parameters in lower levels of the hierarchy.
 
-```
+```bash
 aws ssm get-parameters-by-path \
     --region us-east-1 \
     --path "/myapp/dev/" \
@@ -216,7 +216,7 @@ aws ssm get-parameters-by-path \
 
 The output shows both parameters that you created. The `SecureString` parameter is encrypted.
 
-```
+```text
 {
     "Parameters": [
         {
@@ -243,7 +243,7 @@ The output shows both parameters that you created. The `SecureString` parameter 
 
  Run the following command to retrieve parameters under the `/myapp/dev/` path and return decrypted values for any `SecureString` parameters that the principal is authorized to decrypt.
 
-```
+```bash
 aws ssm get-parameters-by-path \
     --region us-east-1 \
     --path "/myapp/dev/" \
@@ -256,7 +256,7 @@ aws ssm get-parameters-by-path \
 
  Run the following command to delete the `/myapp/dev/log-level` parameter.
 
-```
+```bash
 aws ssm delete-parameter \
     --region us-east-1 \
     --name "/myapp/dev/log-level"
@@ -267,7 +267,7 @@ aws ssm delete-parameter \
 
  Run the following command to delete the remaining example parameters.
 
-```
+```bash
 aws ssm delete-parameters \
     --region us-east-1 \
     --names "/myapp/dev/subnet-ids" "/myapp/dev/vendor/merchant-id"

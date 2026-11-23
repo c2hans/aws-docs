@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-capacityprovider-scalingconfig-syntax.yaml"></a>
 
-```
+```yaml
 [MaxVCpuCount](#sam-capacityprovider-scalingconfig-maxvcpucount): {{Integer}}
 [AverageCPUUtilization](#sam-capacityprovider-scalingconfig-averagecpuutilization): {{Double}}
 [AverageGPUUtilization](#sam-capacityprovider-scalingconfig-averagegpuutilization): {{Double}}
@@ -50,7 +50,7 @@ If you specify both `AverageCPUUtilization` and `AverageGPUUtilization`, AWS SAM
 
 The following example shows a scaling configuration with maximum VCpu count and average CPU utilization.
 
-```
+```yaml
 ScalingConfig:
   MaxVCpuCount: 10
   AverageCPUUtilization: 70.0
@@ -61,7 +61,7 @@ ScalingConfig:
 
 The following example shows a scaling configuration for GPU functions that scales on average GPU utilization.
 
-```
+```yaml
 ScalingConfig:
   MaxVCpuCount: 100
   AverageGPUUtilization: 70.0

@@ -30,7 +30,7 @@ To create a [KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/conc
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -38,7 +38,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -67,7 +67,7 @@ To generate a data encryption key, use the [GenerateDataKey](https://docs.aws.am
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -75,7 +75,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -107,7 +107,7 @@ To get detailed information about a KMS key, including the KMS key’s Amazon Re
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -115,7 +115,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -143,7 +143,7 @@ To get the ID and ARN of the KMS key, use the [ListAliases](https://docs.aws.ama
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -151,7 +151,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -179,7 +179,7 @@ To enable a disabled KMS key, use the [EnableKey](https://docs.aws.amazon.com/km
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -187,7 +187,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',
@@ -215,7 +215,7 @@ To disable a KMS key, use the [DisableKey](https://docs.aws.amazon.com/kms/lates
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -223,7 +223,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $KmsClient = new Aws\Kms\KmsClient([
     'profile' => 'default',
     'version' => '2014-11-01',

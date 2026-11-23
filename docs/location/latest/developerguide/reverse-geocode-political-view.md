@@ -20,7 +20,7 @@ The Amazon Location Service allows you to specify a political view to ensure you
 ------
 #### [ Sample Request ]
 
-```
+```json
 {
     "QueryPosition": [
         33.95876,
@@ -33,7 +33,7 @@ The Amazon Location Service allows you to specify a political view to ensure you
 ------
 #### [ Sample Response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -75,7 +75,7 @@ The Amazon Location Service allows you to specify a political view to ensure you
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/reverse-geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -91,7 +91,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places reverse-geocode --key ${YourKey} --query-position 33.95876 45.46824 --political-view "RUS"
 ```
 

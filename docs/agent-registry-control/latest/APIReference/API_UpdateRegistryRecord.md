@@ -186,6 +186,36 @@ Content-type: application/json
                   }
                }
             }
+         },
+         "signatureAgentCard": {
+            "optionalValue": {
+               "additionalData": {
+                  "optionalValue": {
+                     "category": {
+                        "optionalValue": "{{string}}"
+                     }
+                  }
+               },
+               "data": {
+                  "optionalValue": "{{string}}"
+               },
+               "dataSchemaVersion": {
+                  "optionalValue": "{{string}}"
+               },
+               "source": {
+                  "optionalValue": {
+                     "fromUrl": {
+                        "credentialProviderConfigurations": [
+                           {
+                              "credentialProvider": { ... },
+                              "credentialProviderType": "{{string}}"
+                           }
+                        ],
+                        "url": "{{string}}"
+                     }
+                  }
+               }
+            }
          }
       }
    },
@@ -276,7 +306,7 @@ Required: No
  ** [recordType](#API_UpdateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-request-recordType"></a>
 The updated type of the registry record. Omit to leave the record type unchanged.
 Type: String
-Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY`
+Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY | WEB_BOT`
 Required: No
 
  ** [recordVersion](#API_UpdateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-request-recordVersion"></a>
@@ -407,6 +437,24 @@ Content-type: application/json
                "url": "string"
             }
          }
+      },
+      "signatureAgentCard": {
+         "additionalData": {
+            "category": "string"
+         },
+         "data": "string",
+         "dataSchemaVersion": "string",
+         "source": {
+            "fromUrl": {
+               "credentialProviderConfigurations": [
+                  {
+                     "credentialProvider": { ... },
+                     "credentialProviderType": "string"
+                  }
+               ],
+               "url": "string"
+            }
+         }
       }
    },
    "displayName": "string",
@@ -505,7 +553,7 @@ Pattern: `[a-zA-Z0-9]{12}`
  ** [recordType](#API_UpdateRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-response-recordType"></a>
 The type of the registry record, such as MCP, AGENT, SKILL, or CUSTOM.
 Type: String
-Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY`
+Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY | WEB_BOT`
 
  ** [recordVersion](#API_UpdateRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-response-recordVersion"></a>
 The version identifier of the registry record.

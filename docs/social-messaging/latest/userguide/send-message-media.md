@@ -13,7 +13,7 @@ WhatsApp stores media files for 30 days before deleting them, see [Upload Media]
 
 1. Upload the media file to WhatsApp using the [post-whatsapp-message-media](https://docs.aws.amazon.com/cli/latest/reference/socialmessaging/post-whatsapp-message-media.html) command. On successful completion, the command will return the {{{MEDIA\_ID}}}, which is required for sending the media message.
 
-   ```
+   ```bsh
    aws socialmessaging post-whatsapp-message-media --origination-phone-number-id {{{ORIGINATION_PHONE_NUMBER_ID}}}  --source-s3-file bucketName={{{BUCKET}}},key={{{MEDIA_FILE}}}
    ```
 
@@ -24,19 +24,19 @@ WhatsApp stores media files for 30 days before deleting them, see [Upload Media]
 
    You can also upload using a [presign url](managing-media-files-s3.md#managing-media-files-s3.title) by using `--source-s3-presigned-url` instead of `--source-s3-file`. You must add `Content-Type` in the `headers` field. If you use both then an `InvalidParameterException` is returned.
 
-   ```
+   ```bsh
    --source-s3-presigned-url headers={"{{Name}}":"{{Value}}"},url={{https://BUCKET.s3.REGION/MEDIA_FILE}}
    ```
 
 1. Use the [send-whatsapp-message](https://docs.aws.amazon.com/cli/latest/reference/socialmessaging/send-whatsapp-message.html) command to send the media message.
 
-   ```
+   ```bsh
    aws socialmessaging send-whatsapp-message --message '{"messaging_product":"whatsapp","to":"'{{{PHONE_NUMBER}}}'","type":"image","image":{"id":"'{{{MEDIA_ID}}}'"}}' --origination-phone-number-id {{{ORIGINATION_PHONE_NUMBER_ID}}} --meta-api-version v20.0
    ```
 **Note**
 You must specify base64 encoding when you use the AWS CLI version 2. This can be done by adding the AWS CLI paramater `--cli-binary-format raw-in-base64-out` or changing the AWS CLI global configuration file. For more information, see [`cli_binary_format`](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-settings) in the *AWS Command Line Interface User Guide for Version 2*.
 
-   ```
+   ```bsh
    aws socialmessaging send-whatsapp-message --message '{"messaging_product":"whatsapp","to":"'{{{PHONE_NUMBER}}}'","type":"image","image":{"id":"'{{{MEDIA_ID}}}'"}}' --origination-phone-number-id {{{ORIGINATION_PHONE_NUMBER_ID}}} --meta-api-version v20.0 --cli-binary-format raw-in-base64-out
    ```
 
@@ -47,7 +47,7 @@ You must specify base64 encoding when you use the AWS CLI version 2. This can be
 
 1. When you no longer need the media file, you can delete it from WhatsApp using the [delete-whatsapp-message-media](https://docs.aws.amazon.com/cli/latest/reference/socialmessaging/delete-whatsapp-media-message.html) command. This only removes the media file from WhatsApp and not your Amazon S3 bucket.
 
-   ```
+   ```bsh
    aws socialmessaging delete-whatsapp-message-media --media-id {{{MEDIA_ID}}} --origination-phone-number-id {{{ORIGINATION_PHONE_NUMBER_ID}}}
    ```
 

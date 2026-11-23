@@ -20,7 +20,7 @@ In [Create service client requests](the-request-object.md), the ` ListTablesComm
 
 If a command fails, it throws an exception. The following code snippet shows a way of handling a service exception.
 
-```
+```javascript
 try {
   await client.send({{someCommand}});
 } catch (e) {

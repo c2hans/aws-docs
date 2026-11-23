@@ -43,7 +43,7 @@ Cluster versions aren't simple integers. To find the current version of the clus
 
    The output of this `update-broker-count` operation looks like the following JSON.
 
-   ```
+   ```JSON
    {
 
        "ClusterArn": "arn:aws:kafka:us-east-1:012345678012:cluster/exampleClusterName/abcdefab-1234-abcd-5678-cdef0123ab01-2",
@@ -59,7 +59,7 @@ Cluster versions aren't simple integers. To find the current version of the clus
 
    The output of this `describe-cluster-operation` command looks like the following JSON example.
 
-   ```
+   ```JSON
    {
        "ClusterOperationInfo": {
            "ClientRequestId": "c0b7af47-8591-45b5-9c0c-909a1a2c99ea",

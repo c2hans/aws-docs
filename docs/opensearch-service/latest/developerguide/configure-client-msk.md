@@ -32,7 +32,7 @@ Before you create your OpenSearch Ingestion pipeline, perform the following step
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -72,7 +72,7 @@ Before you create your OpenSearch Ingestion pipeline, perform the following step
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -138,7 +138,7 @@ Before you create your OpenSearch Ingestion pipeline, perform the following step
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -187,7 +187,7 @@ After you have your Amazon MSK provisoned or serverless cluster set up, add the 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -235,7 +235,7 @@ After you have your Amazon MSK provisoned or serverless cluster set up, add the 
 
 You can then configure an OpenSearch Ingestion pipeline like the following, which specifies Kafka as the source:
 
-```
+```yaml
 version: "2"
 log-pipeline:
   source:
@@ -273,7 +273,7 @@ When you use OpenSearch Ingestion with Amazon MSK, you can use the AVRO data for
 
 To use this option, enable the schema `type` in your pipeline configuration:
 
-```
+```yaml
 schema:
   type: "aws_glue"
 ```

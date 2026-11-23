@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/mo
 
 ![Diagram showing a modern data architecture](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/images/modern-data-architecture.png)
 
+*Figure 1: Modern data architecture*
+
  There are three different patterns for data movement. They can be described as follows:
 
  **Inside-out data movement:** A subset of data in a data lake is sometimes moved to a data store, such as an Amazon OpenSearch Service cluster or an Amazon Neptune cluster. This pattern supports specialized analytics, such as search analytics, building knowledge graphs, or both. For example, enterprises send information from structured sources (such as relational databases), unstructured sources (such as metadata, media, or spreadsheets) and other assets to a data lake. From there, it is moved to Amazon Neptune to build a knowledge graph. We refer to this kind of data movement as inside-out.

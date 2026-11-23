@@ -55,7 +55,7 @@ For more information, see [Understanding Command Statuses](https://docs.aws.amaz
 **Tools for PowerShell V4**
 **Example 1: This example displays the details of a command executed on an instance.**
 
-```
+```powershell
 Get-SSMCommandInvocationDetail -InstanceId "i-0cb2b964d3e14fd9f" -CommandId "b8eac879-0541-439d-94ec-47a80d554f44"
 ```
 **Output:**
@@ -82,7 +82,7 @@ StatusDetails          : Success
 **Tools for PowerShell V5**
 **Example 1: This example displays the details of a command executed on an instance.**
 
-```
+```powershell
 Get-SSMCommandInvocationDetail -InstanceId "i-0cb2b964d3e14fd9f" -CommandId "b8eac879-0541-439d-94ec-47a80d554f44"
 ```
 **Output:**

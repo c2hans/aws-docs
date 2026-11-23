@@ -64,7 +64,7 @@ Supports CORS preflight requests.
 #### GET schema
 <a name="jobsqueries-id-request-body-get-example"></a>
 
-```
+```json
 {
   "id": "string"
 }
@@ -76,7 +76,7 @@ Supports CORS preflight requests.
 #### GetJobsQueryResultsResponse schema
 <a name="jobsqueries-id-response-body-getjobsqueryresultsresponse-example"></a>
 
-```
+```json
 {
   "jobs": [
     {
@@ -1776,7 +1776,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="jobsqueries-id-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

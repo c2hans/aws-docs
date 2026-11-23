@@ -139,7 +139,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-ec2-instance-stack-change-time-zone-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-SetInstanceTimeZone",
   "Region": "us-east-1",
@@ -154,7 +154,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-ec2-instance-stack-change-time-zone-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-SetInstanceTimeZone",
   "Region": "us-east-1",

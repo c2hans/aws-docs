@@ -62,7 +62,7 @@ For more information, see [View CodeDeploy deployment details](https://docs.aws.
 **Tools for PowerShell V4**
 **Example 1: This example gets summary information about the specified deployment.**
 
-```
+```powershell
 Get-CDDeployment -DeploymentId d-QZMRGSTEX
 ```
 **Output:**
@@ -85,7 +85,7 @@ Status                        : Succeeded
 ```
 **Example 2: This example gets information about the status of instances that are participating in the specified deployment.**
 
-```
+```powershell
 (Get-CDDeployment -DeploymentId d-QZMRGSTEX).DeploymentOverview
 ```
 **Output:**
@@ -99,7 +99,7 @@ Succeeded  : 3
 ```
 **Example 3: This example gets information about the application revision for the specified deployment.**
 
-```
+```powershell
 (Get-CDDeployment -DeploymentId d-QZMRGSTEX).Revision.S3Location
 ```
 **Output:**
@@ -116,7 +116,7 @@ Version    :
 **Tools for PowerShell V5**
 **Example 1: This example gets summary information about the specified deployment.**
 
-```
+```powershell
 Get-CDDeployment -DeploymentId d-QZMRGSTEX
 ```
 **Output:**
@@ -139,7 +139,7 @@ Status                        : Succeeded
 ```
 **Example 2: This example gets information about the status of instances that are participating in the specified deployment.**
 
-```
+```powershell
 (Get-CDDeployment -DeploymentId d-QZMRGSTEX).DeploymentOverview
 ```
 **Output:**
@@ -153,7 +153,7 @@ Succeeded  : 3
 ```
 **Example 3: This example gets information about the application revision for the specified deployment.**
 
-```
+```powershell
 (Get-CDDeployment -DeploymentId d-QZMRGSTEX).Revision.S3Location
 ```
 **Output:**

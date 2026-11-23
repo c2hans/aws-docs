@@ -129,9 +129,9 @@ With cross-account roles, a missing or misconfigured `DRSCrossAccountAgentAuthor
 
 **Resolution:**
 
-1. On the computer that runs the Failback Client, confirm that the Failback Client is still running and check its status. While it connects, it shows `Establishing a connection between the Failback Client and the AWS Replication Agent running on the Recovery Instance over port 1500...`. When it succeeds, it shows `Connection established. Replication in progress...`. If it reports a failure, follow the message and see [Failback Client errors](failback-client-errors.md).
+1. On the computer that runs the Failback Client, confirm that the Failback Client is still running and check its status. While it connects, it shows `Establishing a connection between the Failback Client and the AWS Replication Agent running on the Recovery Instance over port 1500...`. When it succeeds, it shows `Connection established. Replication in progress...`. If it reports a failure, follow the message and see [Failback Client errors](failback-client-errors.md). If it reports that it could not establish the connection, see [DRS-FAILBACK-009: Could not establish replication connection to recovery instance](failback-client-errors.md#Troubleshooting-Failback-replication-connection) for the Failback Client side.
 
-1. Confirm that the Failback Client can reach the recovery instance on TCP port 1500. The Failback Client connects to the private IP address of the recovery instance when you choose **Use private IP** in the failback replication settings. Otherwise, it connects to the public IP address. See [Use private IP](recovery-instances-details.md#recovery-instances-details-failback-replication-settings-private-ip). From the Failback Client network, test the connection to that address on TCP port 1500. On Linux:
+1. Confirm that the Failback Client can reach the recovery instance on TCP port 1500. The Failback Client connects to the IPv6 address of the recovery instance when the failback replication settings use IPv6. It connects to the private IP address of the recovery instance when you choose **Use private IP** in the failback replication settings. Otherwise, it connects to the public IP address. See [Use private IP](recovery-instances-details.md#recovery-instances-details-failback-replication-settings-private-ip). From the Failback Client network, test the connection to that address on TCP port 1500. On Linux:
 
    ```
    nc -zv {{recovery-instance-ip}} 1500
@@ -145,7 +145,7 @@ With cross-account roles, a missing or misconfigured `DRSCrossAccountAgentAuthor
 
    If the test connects, the agent can log the DRS-REPL-004 error once. You can ignore that entry. If the test fails, continue with the next step.
 
-1. Confirm that the security group and network ACL for the recovery instance allow inbound TCP traffic on port 1500 from the Failback Client. See [Error: Failed to get recovery instance volumes](failback-client-errors.md#Troubleshooting-Failback-get-volumes). Also verify that your environment meets the requirements in [Failback prerequisites](failback-performing.md#failback-performing-prerequisites).
+1. Confirm that the security group and network ACL for the recovery instance allow inbound TCP traffic on port 1500 from the Failback Client. Also verify that your environment meets the requirements in [Failback prerequisites](failback-performing.md#failback-performing-prerequisites).
 
 1. If the error persists, contact AWS Support.
 

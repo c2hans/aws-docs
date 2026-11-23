@@ -12,7 +12,7 @@ Each batch translation job also generates an auxiliary file that contains inform
 
 The following is an example of a batch translation auxiliary file.
 
-```
+```json
 {
   "sourceLanguageCode": "en",
   "targetLanguageCode": "fr",

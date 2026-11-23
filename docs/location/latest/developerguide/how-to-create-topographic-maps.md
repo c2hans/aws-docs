@@ -17,7 +17,7 @@ The Terrain feature allows you to visualize Hillshade, elevation changes and rel
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -49,7 +49,7 @@ The Terrain feature allows you to visualize Hillshade, elevation changes and rel
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```
@@ -67,7 +67,7 @@ Amazon Location Service allows you to add Contour Density features to your map. 
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -99,7 +99,7 @@ Amazon Location Service allows you to add Contour Density features to your map. 
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```
@@ -117,7 +117,7 @@ With Amazon Location Service you to combine both Hillshade and Contour Density f
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -149,7 +149,7 @@ With Amazon Location Service you to combine both Hillshade and Contour Density f
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```

@@ -45,7 +45,7 @@ The following tabbed list displays some examples for approval teams.
 
 The following example shows a CloudTrail event for an asynchronous deletion approval failure:
 
-```
+```JSON
 {
     "eventVersion": "[default]",
     "userIdentity": {
@@ -85,7 +85,7 @@ The following example shows a CloudTrail event for an asynchronous deletion appr
 
 The following example shows a CloudTrail event for an asynchronous deletion approval success:
 
-```
+```JSON
 {
     "eventName": "TeamDeletionApprovalSuccess",
     "serviceEventDetails": {
@@ -100,7 +100,7 @@ The following example shows a CloudTrail event for an asynchronous deletion appr
 
 The following example shows a CloudTrail event for an asynchronous update activation failure:
 
-```
+```JSON
 {
     "eventName": "TeamUpdateActivationFailure",
     "serviceEventDetails": {
@@ -115,7 +115,7 @@ The following example shows a CloudTrail event for an asynchronous update activa
 
 The following example shows a CloudTrail event for an asynchronous update activation success:
 
-```
+```JSON
 {
     "eventName": "TeamUpdateActivationSuccess",
     "serviceEventDetails": {
@@ -129,7 +129,7 @@ The following example shows a CloudTrail event for an asynchronous update activa
 
 The following example shows a CloudTrail event for an asynchronous update approval failure:
 
-```
+```JSON
 {
     "eventName": "TeamUpdateApprovalFailure",
     "serviceEventDetails": {
@@ -145,7 +145,7 @@ The following example shows a CloudTrail event for an asynchronous update approv
 
 The following example shows a CloudTrail event for an asynchronous update approval success:
 
-```
+```JSON
 {
     "eventName": "TeamUpdateApprovalSuccess",
     "serviceEventDetails": {
@@ -161,7 +161,7 @@ The following example shows a CloudTrail event for an asynchronous update approv
 
 The following example shows a CloudTrail event for an asynchronous validation failure during an update:
 
-```
+```JSON
 {
     "eventName": "TeamUpdateValidationFailure",
     "serviceEventDetails": {
@@ -176,7 +176,7 @@ The following example shows a CloudTrail event for an asynchronous validation fa
 
 The following example shows a CloudTrail event for an asynchronous validation success during an update:
 
-```
+```JSON
 {
     "eventName": "TeamUpdateValidationSuccess",
     "serviceEventDetails": {
@@ -192,7 +192,7 @@ The following example shows a CloudTrail event for an asynchronous validation su
 
 The following example shows a CloudTrail event for an asynchronous activation success during creation:
 
-```
+```JSON
 {
     "eventName": "TeamCreationActivationSuccess",
     "serviceEventDetails": {
@@ -206,7 +206,7 @@ The following example shows a CloudTrail event for an asynchronous activation su
 
 The following example shows a CloudTrail event for an asynchronous activation failure during creation:
 
-```
+```JSON
 {
     "eventName": "TeamCreationActivationFailure",
     "serviceEventDetails": {
@@ -221,7 +221,7 @@ The following example shows a CloudTrail event for an asynchronous activation fa
 
 The following example shows a CloudTrail event for an asynchronous validation failure during creation:
 
-```
+```JSON
 {
     "eventName": "TeamCreationValidationFailure",
     "serviceEventDetails": {
@@ -236,7 +236,7 @@ The following example shows a CloudTrail event for an asynchronous validation fa
 
 The following example shows a CloudTrail event for an asynchronous validation success during creation:
 
-```
+```JSON
 {
     "eventName": "TeamCreationValidationSuccess",
     "serviceEventDetails": {
@@ -255,7 +255,7 @@ The following tabbed list displays some examples for approval sessions.
 
 The following example shows a CloudTrail event for an asynchronous session expiration:
 
-```
+```JSON
 {
     "eventVersion": "[default]",
     "userIdentity": {
@@ -297,7 +297,7 @@ The following example shows a CloudTrail event for an asynchronous session expir
 
 The following example shows a CloudTrail event for a session cancellation due to team configuration changes:
 
-```
+```JSON
 {
     "eventName": "SessionCancellation",
     "serviceEventDetails": {
@@ -315,7 +315,7 @@ The following example shows a CloudTrail event for a session cancellation due to
 
 The following example shows a CloudTrail event for a session cancellation due to team deletion:
 
-```
+```JSON
 {
     "eventName": "SessionCancellation",
     "serviceEventDetails": {
@@ -333,7 +333,7 @@ The following example shows a CloudTrail event for a session cancellation due to
 
 The following example shows a CloudTrail event for a user-initiated session cancellation:
 
-```
+```JSON
 {
     "eventName": "SessionCancellation",
     "serviceEventDetails": {
@@ -351,7 +351,7 @@ The following example shows a CloudTrail event for a user-initiated session canc
 
 The following example shows a CloudTrail event for an asynchronous validation success:
 
-```
+```JSON
 {
     "eventName": "SessionValidationSuccess",
     "serviceEventDetails": {
@@ -365,7 +365,7 @@ The following example shows a CloudTrail event for an asynchronous validation su
 
 The following example shows a CloudTrail event for an approved session:
 
-```
+```JSON
 {
     "eventName": "SessionApproved",
     "serviceEventDetails": {
@@ -382,7 +382,7 @@ The following example shows a CloudTrail event for an approved session:
 
 The following example shows a CloudTrail event for a rejected session:
 
-```
+```JSON
 {
     "eventName": "SessionApproved",
     "serviceEventDetails": {
@@ -406,7 +406,7 @@ The following tabbed list displays some examples for standard success flow.
 
 The following example shows a CloudTrail event that demonstrates the `CancelSession` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -471,7 +471,7 @@ The following example shows a CloudTrail event that demonstrates the `CancelSess
 
 The following example shows a CloudTrail event that demonstrates the `CreateApprovalTeam` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -563,7 +563,7 @@ The following example shows a CloudTrail event that demonstrates the `CreateAppr
 
 The following example shows a CloudTrail event that demonstrates the `CreateIdentitySource` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -626,7 +626,7 @@ The following example shows a CloudTrail event that demonstrates the `CreateIden
 
 The following example shows a CloudTrail event that demonstrates the `DeleteIdentitySource` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -686,7 +686,7 @@ The following example shows a CloudTrail event that demonstrates the `DeleteIden
 
 The following example shows a CloudTrail event that demonstrates the `DeleteInactiveApprovalTeamVersion` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -747,7 +747,7 @@ The following example shows a CloudTrail event that demonstrates the `DeleteInac
 
 The following example shows a CloudTrail event that demonstrates the `DeleteResourcePolicy` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -809,7 +809,7 @@ The following example shows a CloudTrail event that demonstrates the `DeleteReso
 
 The following example shows a CloudTrail event that demonstrates the `GetApprovalTeam` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -869,7 +869,7 @@ The following example shows a CloudTrail event that demonstrates the `GetApprova
 
 The following example shows a CloudTrail event that demonstrates the `GetIdentitySource` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -929,7 +929,7 @@ The following example shows a CloudTrail event that demonstrates the `GetIdentit
 
 The following example shows a CloudTrail event that demonstrates the `GetPolicyVersion` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -982,7 +982,7 @@ The following example shows a CloudTrail event that demonstrates the `GetPolicyV
 
 The following example shows a CloudTrail event that demonstrates the `GetResourcePolicy` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1044,7 +1044,7 @@ The following example shows a CloudTrail event that demonstrates the `GetResourc
 
 The following example shows a CloudTrail event that demonstrates the `GetSession` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1109,7 +1109,7 @@ The following example shows a CloudTrail event that demonstrates the `GetSession
 
 The following example shows a CloudTrail event that demonstrates the `ListApprovalTeams` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1162,7 +1162,7 @@ The following example shows a CloudTrail event that demonstrates the `ListApprov
 
 The following example shows a CloudTrail event that demonstrates the `ListIdentitySources` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1213,7 +1213,7 @@ The following example shows a CloudTrail event that demonstrates the `ListIdenti
 
 The following example shows a CloudTrail event that demonstrates the `ListPolicies` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1264,7 +1264,7 @@ The following example shows a CloudTrail event that demonstrates the `ListPolici
 
 The following example shows a CloudTrail event that demonstrates the `ListPolicyVersions` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1317,7 +1317,7 @@ The following example shows a CloudTrail event that demonstrates the `ListPolicy
 
 The following example shows a CloudTrail event that demonstrates the `ListResourcePolicies` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1381,7 +1381,7 @@ The following example shows a CloudTrail event that demonstrates the `ListResour
 
 The following example shows a CloudTrail event that demonstrates the `ListSessions` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1449,7 +1449,7 @@ The following example shows a CloudTrail event that demonstrates the `ListSessio
 
 The following example shows a CloudTrail event that demonstrates the `ListTagsForResource` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1502,7 +1502,7 @@ The following example shows a CloudTrail event that demonstrates the `ListTagsFo
 
 The following example shows a CloudTrail event that demonstrates the `PutResourcePolicy` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1567,7 +1567,7 @@ The following example shows a CloudTrail event that demonstrates the `PutResourc
 
 The following example shows a CloudTrail event that demonstrates the `StartActiveApprovalTeamDeletion` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1629,7 +1629,7 @@ The following example shows a CloudTrail event that demonstrates the `StartActiv
 
 The following example shows a CloudTrail event that demonstrates the `StartSession` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1701,7 +1701,7 @@ The following example shows a CloudTrail event that demonstrates the `StartSessi
 
 The following example shows a CloudTrail event that demonstrates the `TagResource` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1755,7 +1755,7 @@ The following example shows a CloudTrail event that demonstrates the `TagResourc
 
 The following example shows a CloudTrail event that demonstrates the `UntagResource` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1809,7 +1809,7 @@ The following example shows a CloudTrail event that demonstrates the `UntagResou
 
 The following example shows a CloudTrail event that demonstrates the `UpdateApprovalTeam` operation.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1875,7 +1875,7 @@ The following tabbed list displays some examples the access denied flow.
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `CreateIdentitySource` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1928,7 +1928,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `GetIdentitySource` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -1981,7 +1981,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `DeleteIdentitySource` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2034,7 +2034,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `ListIdentitySources` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2087,7 +2087,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `CreateApprovalTeam` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2140,7 +2140,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `UpdateApprovalTeam` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2193,7 +2193,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `GetApprovalTeam` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2246,7 +2246,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `ListApprovalTeams` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2299,7 +2299,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `StartActiveApprovalTeamDeletion` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2352,7 +2352,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `DeleteInactiveApprovalTeamVersion` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2405,7 +2405,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `GetSession` operation due to an explicit deny in an identity-based policy.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2458,7 +2458,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `ListSessions` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2511,7 +2511,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `CancelSession` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2564,7 +2564,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `StartSession` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2617,7 +2617,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `GetPolicyVersion` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2670,7 +2670,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `ListPolicies` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2723,7 +2723,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `ListPolicyVersions` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2776,7 +2776,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `ListResourcePolicies` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2829,7 +2829,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `GetResourcePolicy` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2882,7 +2882,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `PutResourcePolicy` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2935,7 +2935,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `DeleteResourcePolicy` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -2988,7 +2988,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `ListTagsForResource` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -3041,7 +3041,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `TagResource` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -3094,7 +3094,7 @@ The following example shows a CloudTrail event that demonstrates an unsuccessful
 
 The following example shows a CloudTrail event that demonstrates an unsuccessful `UntagResource` operation due to insufficient permissions.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -3151,7 +3151,7 @@ The following tabbed list displays some examples for the Multi-party approval in
 
 The following example shows a CloudTrail event that demonstrates the `CreateApplication` operation for the Multi-party approval integration with IAM Identity Center.
 
-```
+```JSON
 {
   "eventVersion": "1.09",
   "userIdentity": {
@@ -3221,7 +3221,7 @@ The following example shows a CloudTrail event that demonstrates the `CreateAppl
 
 The following example shows a CloudTrail event that demonstrates the `DescribeInstance` operation for the Multi-party approval integration with IAM Identity Center.
 
-```
+```JSON
 {
   "eventVersion": "1.09",
   "userIdentity": {
@@ -3270,7 +3270,7 @@ The following example shows a CloudTrail event that demonstrates the `DescribeIn
 
 The following example shows a CloudTrail event that demonstrates the `PutApplicationAuthenticationMethod` operation for the Multi-party approval integration with IAM Identity Center.
 
-```
+```JSON
 {
   "eventVersion": "1.09",
   "userIdentity": {
@@ -3354,7 +3354,7 @@ The following example shows a CloudTrail event that demonstrates the `PutApplica
 
 The following example shows a CloudTrail event that demonstrates the `DescribeInstance` operation for the Multi-party approval integration with IAM Identity Center.
 
-```
+```JSON
 {
   "eventVersion": "1.09",
   "userIdentity": {
@@ -3403,7 +3403,7 @@ The following example shows a CloudTrail event that demonstrates the `DescribeIn
 
 The following example shows a CloudTrail event that demonstrates the `PutApplicationAuthenticationMethod` operation for the Multi-party approval integration with IAM Identity Center.
 
-```
+```JSON
 {
   "eventVersion": "1.09",
   "userIdentity": {
@@ -3487,7 +3487,7 @@ The following example shows a CloudTrail event that demonstrates the `PutApplica
 
 The following example shows a CloudTrail event that demonstrates the `PutApplicationGrant` operation for the Multi-party approval integration with IAM Identity Center.
 
-```
+```JSON
 {
   "eventVersion": "1.09",
   "userIdentity": {
@@ -3552,7 +3552,7 @@ The following example shows a CloudTrail event that demonstrates the `PutApplica
 
 The following example shows a CloudTrail event that demonstrates the `PutApplicationAccessScope` operation for the Multi-party approval integration with IAM Identity Center.
 
-```
+```JSON
 {
   "eventVersion": "1.09",
   "userIdentity": {
@@ -3614,7 +3614,7 @@ The following example shows a CloudTrail event that demonstrates the `PutApplica
 
 The following example shows a CloudTrail event that demonstrates the `PutApplicationAssignmentConfiguration` operation for the Multi-party approval integration with IAM Identity Center.
 
-```
+```JSON
 {
   "eventVersion": "1.09",
   "userIdentity": {
@@ -3676,7 +3676,7 @@ The following example shows a CloudTrail event that demonstrates the `PutApplica
 
 The following example shows a CloudTrail event that demonstrates the `Authenticate` operation for the Multi-party approval integration with IAM Identity Center.
 
-```
+```JSON
 {
   "eventVersion": "1.10",
   "userIdentity": {

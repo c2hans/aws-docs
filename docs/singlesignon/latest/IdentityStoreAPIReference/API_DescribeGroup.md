@@ -192,7 +192,7 @@ This example retrieves the group name and description for a group called Develop
 #### Sample Request
 <a name="API_DescribeGroup_Example_1_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "GroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
@@ -202,7 +202,7 @@ This example retrieves the group name and description for a group called Develop
 #### Sample Response
 <a name="API_DescribeGroup_Example_1_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "GroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",

@@ -14,7 +14,7 @@ The following code examples show how to use `GetThingShadow`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Gets the Thing's shadow information.
     /// </summary>
@@ -56,7 +56,7 @@ The following code examples show how to use `GetThingShadow`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Get the shadow of an AWS IoT thing.
 /*!
   \param thingName: The name for the thing.
@@ -126,7 +126,7 @@ For more information, see [Device Shadow Service Data Flow](https://docs.aws.ama
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
     /**
      * Retrieves the payload of a Thing's shadow asynchronously.
      *
@@ -171,7 +171,7 @@ For more information, see [Device Shadow Service Data Flow](https://docs.aws.ama
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun getPayload(thingNameVal: String?) {
     val getThingShadowRequest =
         GetThingShadowRequest {
@@ -194,7 +194,7 @@ suspend fun getPayload(thingNameVal: String?) {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -245,7 +245,7 @@ class IoTWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iop#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_iop->getthingshadow( iv_thingname = iv_thing_name ).
 

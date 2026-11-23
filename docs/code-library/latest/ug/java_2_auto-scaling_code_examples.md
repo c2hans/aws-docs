@@ -33,7 +33,7 @@ The following code example shows how to get started using Auto Scaling.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.autoscaling.AutoScalingClient;
 import software.amazon.awssdk.services.autoscaling.model.AutoScalingGroup;
@@ -86,7 +86,7 @@ The following code example shows how to:
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
 /**
  * Before running this SDK for Java (v2) code example, set up your development
  * environment, including your credentials.
@@ -577,7 +577,7 @@ The following code example shows how to use `CreateAutoScalingGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
 import software.amazon.awssdk.core.waiters.WaiterResponse;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.autoscaling.AutoScalingClient;
@@ -672,7 +672,7 @@ The following code example shows how to use `DeleteAutoScalingGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.autoscaling.AutoScalingClient;
 import software.amazon.awssdk.services.autoscaling.model.AutoScalingException;
@@ -738,7 +738,7 @@ The following code example shows how to use `DescribeAutoScalingGroups`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.autoscaling.AutoScalingClient;
 import software.amazon.awssdk.services.autoscaling.model.AutoScalingException;
@@ -820,7 +820,7 @@ The following code example shows how to use `DescribeAutoScalingInstances`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
     public static void describeAutoScalingInstance(AutoScalingClient autoScalingClient, String id) {
         try {
             DescribeAutoScalingInstancesRequest describeAutoScalingInstancesRequest = DescribeAutoScalingInstancesRequest
@@ -851,7 +851,7 @@ The following code example shows how to use `DescribeScalingActivities`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
     public static void describeScalingActivities(AutoScalingClient autoScalingClient, String groupName) {
         try {
             DescribeScalingActivitiesRequest scalingActivitiesRequest = DescribeScalingActivitiesRequest.builder()
@@ -883,7 +883,7 @@ The following code example shows how to use `DisableMetricsCollection`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
     public static void disableMetricsCollection(AutoScalingClient autoScalingClient, String groupName) {
         try {
             DisableMetricsCollectionRequest disableMetricsCollectionRequest = DisableMetricsCollectionRequest.builder()
@@ -910,7 +910,7 @@ The following code example shows how to use `EnableMetricsCollection`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
     public static void enableMetricsCollection(AutoScalingClient autoScalingClient, String groupName) {
         try {
             EnableMetricsCollectionRequest collectionRequest = EnableMetricsCollectionRequest.builder()
@@ -938,7 +938,7 @@ The following code example shows how to use `SetDesiredCapacity`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
     public static void setDesiredCapacity(AutoScalingClient autoScalingClient, String groupName) {
         try {
             SetDesiredCapacityRequest capacityRequest = SetDesiredCapacityRequest.builder()
@@ -965,7 +965,7 @@ The following code example shows how to use `TerminateInstanceInAutoScalingGroup
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
     public static void terminateInstanceInAutoScalingGroup(AutoScalingClient autoScalingClient, String instanceId) {
         try {
             TerminateInstanceInAutoScalingGroupRequest request = TerminateInstanceInAutoScalingGroupRequest.builder()
@@ -992,7 +992,7 @@ The following code example shows how to use `UpdateAutoScalingGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
     public static void updateAutoScalingGroup(AutoScalingClient autoScalingClient, String groupName,
             String launchTemplateName) {
         try {
@@ -1043,7 +1043,7 @@ The following code example shows how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```java
 public class Main {
 
     public static final String fileName = "C:\\AWS\\resworkflow\\recommendations.json"; // Modify file location.
@@ -1477,7 +1477,7 @@ public class Main {
 ```
 Create a class that wraps Auto Scaling and Amazon EC2 actions.
 
-```
+```java
 public class AutoScaler {
 
     private static Ec2Client ec2Client;
@@ -1970,7 +1970,7 @@ public class AutoScaler {
 ```
 Create a class that wraps Elastic Load Balancing actions.
 
-```
+```java
 public class LoadBalancer {
     public ElasticLoadBalancingV2Client elasticLoadBalancingV2Client;
 
@@ -2164,7 +2164,7 @@ public class LoadBalancer {
 ```
 Create a class that uses DynamoDB to simulate a recommendation service.
 
-```
+```java
 public class Database {
 
     private static DynamoDbClient dynamoDbClient;
@@ -2294,7 +2294,7 @@ public class Database {
 ```
 Create a class that wraps Systems Manager actions.
 
-```
+```java
 public class ParameterHelper {
 
     String tableName = "doc-example-resilient-architecture-table";

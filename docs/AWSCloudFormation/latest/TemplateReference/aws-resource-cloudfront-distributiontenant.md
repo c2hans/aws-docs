@@ -23,10 +23,12 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ConnectionGroupId](#cfn-cloudfront-distributiontenant-connectiongroupid)" : {{String}},
       "[Customizations](#cfn-cloudfront-distributiontenant-customizations)" : {{Customizations}},
       "[DistributionId](#cfn-cloudfront-distributiontenant-distributionid)" : {{String}},
+      "[DomainMappings](#cfn-cloudfront-distributiontenant-domainmappings)" : {{[ DomainMapping, ... ]}},
       "[Domains](#cfn-cloudfront-distributiontenant-domains)" : {{[ String, ... ]}},
       "[Enabled](#cfn-cloudfront-distributiontenant-enabled)" : {{Boolean}},
       "[ManagedCertificateRequest](#cfn-cloudfront-distributiontenant-managedcertificaterequest)" : {{ManagedCertificateRequest}},
       "[Name](#cfn-cloudfront-distributiontenant-name)" : {{String}},
+      "[OnDomainTakeover](#cfn-cloudfront-distributiontenant-ondomaintakeover)" : {{String}},
       "[Parameters](#cfn-cloudfront-distributiontenant-parameters)" : {{[ Parameter, ... ]}},
       "[Tags](#cfn-cloudfront-distributiontenant-tags)" : {{[ Tag, ... ]}}
     }
@@ -43,12 +45,15 @@ Properties:
   [Customizations](#cfn-cloudfront-distributiontenant-customizations): {{
     Customizations}}
   [DistributionId](#cfn-cloudfront-distributiontenant-distributionid): {{String}}
+  [DomainMappings](#cfn-cloudfront-distributiontenant-domainmappings): {{
+    - DomainMapping}}
   [Domains](#cfn-cloudfront-distributiontenant-domains): {{
     - String}}
   [Enabled](#cfn-cloudfront-distributiontenant-enabled): {{Boolean}}
   [ManagedCertificateRequest](#cfn-cloudfront-distributiontenant-managedcertificaterequest): {{
     ManagedCertificateRequest}}
   [Name](#cfn-cloudfront-distributiontenant-name): {{String}}
+  [OnDomainTakeover](#cfn-cloudfront-distributiontenant-ondomaintakeover): {{String}}
   [Parameters](#cfn-cloudfront-distributiontenant-parameters): {{
     - Parameter}}
   [Tags](#cfn-cloudfront-distributiontenant-tags): {{
@@ -76,6 +81,13 @@ The ID of the multi-tenant distribution.
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`DomainMappings`  <a name="cfn-cloudfront-distributiontenant-domainmappings"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [DomainMapping](aws-properties-cloudfront-distributiontenant-domainmapping.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Domains`  <a name="cfn-cloudfront-distributiontenant-domains"></a>
 The domains associated with the distribution tenant.
 *Required*: Yes
@@ -99,6 +111,13 @@ The name of the distribution tenant.
 *Required*: Yes
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`OnDomainTakeover`  <a name="cfn-cloudfront-distributiontenant-ondomaintakeover"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `allow | reject`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Parameters`  <a name="cfn-cloudfront-distributiontenant-parameters"></a>
 A list of parameter values to add to the resource. A parameter is specified as a key-value pair. A valid parameter value must exist for any parameter that is marked as required in the multi-tenant distribution.

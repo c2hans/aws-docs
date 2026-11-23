@@ -21,7 +21,7 @@ While automated snapshots are paused, your domain has reduced data protection. Y
 
 To pause automated snapshots, include the following parameters when you update your domain configuration:
 
-```
+```json
 POST https://es.{{us-east-1}}.amazonaws.com/2021-01-01/opensearch/domain/{{my-domain}}/config
 {
   "AutomatedSnapshotPauseOptions": {

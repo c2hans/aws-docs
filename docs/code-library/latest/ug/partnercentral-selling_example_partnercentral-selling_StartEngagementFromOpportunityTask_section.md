@@ -14,7 +14,7 @@ The following code examples show how to use `StartEngagementFromOpportunityTask`
 **SDK for Java 2.x**
 Initiates the engagement process from an existing opportunity by accepting the engagement invitation and creating a corresponding opportunity in the partner’s system.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -77,7 +77,7 @@ public class StartEngagementFromOpportunityTask {
 **SDK for Python (Boto3)**
 Initiates the engagement process from an existing opportunity by accepting the engagement invitation and creating a corresponding opportunity in the partner’s system.
 
-```
+```python
 #!/usr/bin/env python
 
 """

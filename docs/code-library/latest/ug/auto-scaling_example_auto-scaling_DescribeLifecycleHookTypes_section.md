@@ -37,7 +37,7 @@ For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example lists the lifecycle hook types supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASLifecycleHookType
 ```
 **Output:**
@@ -51,7 +51,7 @@ auto-scaling:EC2_INSTANCE_TERMINATING
 **Tools for PowerShell V5**
 **Example 1: This example lists the lifecycle hook types supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASLifecycleHookType
 ```
 **Output:**

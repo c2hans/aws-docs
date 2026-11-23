@@ -240,7 +240,7 @@ The simplest way to do this is to add the role as a key user as described in the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -16,6 +16,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel-ava
 
 ![Formula defining availability as available-for-use time divided by total time.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/availability-formula.png)
 
+*Availability calculated from available time and total time*
+
 +  Availability is a percentage of uptime, such as 99.9 percent, over a period of time.
 +  Common shorthand refers only to the number of nines. "Five nines," for example, means 99.999 percent available.
 +  Some teams exclude scheduled downtime, such as planned maintenance, from total time. This is not advised, because your users still want to use the service during those times.
@@ -34,6 +36,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel-ava
 
 ![Formula defining availability as the number of successful responses divided by the number of valid requests.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/availability-formula-requests.png)
 
+*Availability calculated from successful responses and valid requests*
+
  This is often measured over one-minute or five-minute periods, and a monthly uptime percentage is calculated from the average of those periods. A period with no requests counts as 100 percent available.
 
  **Calculating availability with hard dependencies.** Many systems have hard dependencies on other systems, where an interruption in a dependency directly interrupts the invoking system. This is different from a soft dependency, where the application compensates for a dependency failure. Where hard dependencies exist, the invoking system's availability is the product of the dependencies' availabilities. A system designed for 99.99 percent availability with hard dependencies on two independent systems, each designed for 99.99 percent, can theoretically achieve 99.97 percent:
@@ -46,6 +50,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel-ava
 
 ![Diagram of two dependencies with the same availability arranged in parallel, so the combined component stays available if either path works.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/image2.png)
 
+*Availability of two redundant dependencies in parallel*
+
  99.9999% = 100% − (0.1% × 0.1%)
 
  As a shortcut, if the availabilities all consist solely of the digit nine, sum the count of nines. Two redundant, independent components with three nines each give six nines.
@@ -53,6 +59,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel-ava
  **Calculating dependency availability.** Some dependencies publish their availability, including availability design goals for many AWS services. Where a dependency does not publish this, you can estimate it from the mean time between failure (MTBF) and the mean time to recover (MTTR):
 
 ![Formula estimating availability as mean time between failures (MTBF) divided by the sum of MTBF and mean time to repair (MTTR).](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/avail-est-formula.png)
+
+*Estimated availability from MTBF and MTTR*
 
  For example, an MTBF of 150 days and an MTTR of 1 hour give an availability estimate of 99.97 percent. For more detail, see [Availability and beyond: understanding and improving the resilience of distributed systems on AWS](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/availability-and-beyond-improving-resilience.html).
 
@@ -66,6 +74,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel-ava
 +  **Recovery point objective (RPO)** is the maximum acceptable time since the last data recovery point. It sets the acceptable loss of data between the last recovery point and the interruption. RPO is defined by the organization.
 
 ![Timeline with a disaster event in the center, the recovery point (RPO) and the data-loss window before it, and the recovery time (RTO) and the downtime window after it.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/business-continuity.png)
+
+*The relationship of RPO (Recovery Point Objective), RTO (Recovery Time Objective), and the disaster event*
 
  RTO is similar to MTTR in that both measure the time between the start of an availability-affecting event and recovery. MTTR is a mean taken over several availability-affecting events over a period, while RTO is a target, the maximum value allowed, for a single availability-affecting event.
 

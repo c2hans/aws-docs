@@ -52,7 +52,7 @@ To enable this sort of configuration, you need a resource-based policy that spec
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -159,7 +159,7 @@ Regardless of your Region, you can configure Dashboards to use a different Web M
 
 1. Change `enabled` to `true` and `url` to the URL of a valid WMS map server:
 
-   ```
+   ```json
    {
      "enabled": true,
      "url": "{{wms-server-url}}",

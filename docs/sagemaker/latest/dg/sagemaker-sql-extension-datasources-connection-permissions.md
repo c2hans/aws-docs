@@ -30,7 +30,7 @@ We strongly recommend scoping down this policy to only the actions and resources
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -133,7 +133,7 @@ For more information, see *Example IAM permissions policies* in [Athena document
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -224,7 +224,7 @@ We strongly recommend scoping down this policy to only the resources required.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -279,7 +279,7 @@ We strongly recommend scoping down this policy to only the resources required.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -348,7 +348,7 @@ We strongly recommend scoping down this policy to only the resources required.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -421,7 +421,7 @@ To achieve this, administrators must grant the execution role used by the user p
 
 This permission restricts access to AWS Glue connections based on a specific user profile tag value. Update the `UserProfile` tag value with the profile name of the user you want to target.
 
-```
+```JSON
 "Action": [
     "glue:GetConnection",
     "glue:GetConnections"
@@ -438,7 +438,7 @@ This permission restricts access to AWS Glue connections based on a specific use
 
 This permission restricts the ability to create, update, and delete user-created connections to only the connections created by the user profile with the specified `UserProfile` tag value.
 
-```
+```JSON
 "Action": [
     "glue:DeleteConnection",
     "glue:UpdateConnection",

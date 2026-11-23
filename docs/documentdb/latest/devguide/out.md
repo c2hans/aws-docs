@@ -62,7 +62,7 @@ To view a code example for using the `$out` command, choose the tab for the lang
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function demo_out_operator() {
@@ -90,7 +90,7 @@ demo_out_operator();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def demo_out_operator():

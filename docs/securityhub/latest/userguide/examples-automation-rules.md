@@ -13,7 +13,7 @@ In this example, the rule criteria are matched when the `ResourceId` in a findin
 
 **Example API request**:
 
-```
+```json
 {
     "IsTerminal": {{true}},
     "RuleName": "{{Elevate severity of findings that relate to important resources}}",
@@ -112,7 +112,7 @@ In this example, the rule criteria are matched when a `HIGH` severity finding is
 
 **Example API request**:
 
-```
+```json
 {
     "IsTerminal": {{false}},
     "RuleName": "{{Elevate severity for production accounts}}",
@@ -223,7 +223,7 @@ In this example, the rule criteria are matched for `INFORMATIONAL` severity find
 
 **Example API request**:
 
-```
+```json
 {
     "IsTerminal": {{false}},
     "RuleName": "{{Suppress informational findings}}",

@@ -17,7 +17,7 @@ aws codeartifact list-repositories
 
 Sample output:
 
-```
+```json
 {
     "repositories": [
         {
@@ -62,7 +62,7 @@ aws codeartifact list-repositories-in-domain --domain {{my_domain}} --domain-own
 
 The output shows that some of the repositories are administered by different AWS accounts.
 
-```
+```json
 {
     "repositories": [
         {

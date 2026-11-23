@@ -51,7 +51,7 @@ The following examples show the format of the code to enter in the code box:
 
 The following example takes the first `DynamicFrame` received, converts it to a `DataFrame` to apply the native filter method (keeping only records that have over 1000 votes), then converts it back to a `DynamicFrame` before returning it.
 
-```
+```python
 def FilterHighVoteCounts (glueContext, dfc) -> DynamicFrameCollection:
     df = dfc.select(list(dfc.keys())[0]).toDF()
     df_filtered = df.filter(df["vote_count"] > 1000)

@@ -10,7 +10,7 @@ Once you have started a Code Interpreter session, you can execute code in the se
 
 1. To execute code using the AWS SDK for Python, use the `invoke_code_interpreter` method:
 
-   ```
+   ```python
    import boto3
    import json
 
@@ -44,7 +44,7 @@ Once you have started a Code Interpreter session, you can execute code in the se
 
 1. To execute code in a code interpreter session using the API, use the following call:
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X POST \
      "https://bedrock-agentcore.<Region>.amazonaws.com/code-interpreters/aws.codeinterpreter.v1/tools/invoke" \

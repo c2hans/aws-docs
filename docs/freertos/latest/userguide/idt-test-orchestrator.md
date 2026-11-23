@@ -25,7 +25,7 @@ The test orchestrator replaces the IDT state machine. We strongly recommend that
 
 You can use the following template to configure your own `{{custom-test-suite-folder}}/suite/test_orchestrator.yaml` file:
 
-```
+```yaml
 Aliases:
   {{string}}: {{context-expression}}
 
@@ -58,7 +58,7 @@ You can use context expressions to store context queries that allow you to acces
 **Example**
 **Example**
 
-```
+```yaml
 Aliases:
     FizzChosen: "'{{$pool.features[?(@.name == 'Fizz')].value[0]}}' == 'yes'"
     BuzzChosen: "'{{$pool.features[?(@.name == 'Buzz')].value[0]}}' == 'yes'"
@@ -75,7 +75,7 @@ A context expression that evaluates to a Boolean value. If the evaluated value i
 The list of test descriptors.
 Each test descriptor uses the test group ID and one or more test case IDs to identify the individual tests to run from a specific test group. The test descriptor uses the following format:
 
-```
+```yaml
 GroupId: {{group-id}}
 CaseIds: [{{test-id}}, {{test-id}}] # optional
 ```
@@ -84,7 +84,7 @@ CaseIds: [{{test-id}}, {{test-id}}] # optional
 **Example**
 The following example uses generic context expressions that you can define as `Aliases`.
 
-```
+```yaml
 ConditionalTests:
     - Condition: "{{$aliases.Condition1}}"
       Tests:
@@ -121,7 +121,7 @@ The value for `Order` must also meet the following requirements:
 For a test suite that contains test groups A, B, C, D, and E, the following list of examples shows different ways to specify that IDT should first run test group A, then run test group B, and then run test groups C, D, and E in any order.
 +
 
-  ```
+  ```yaml
   Order:
       - - A
         - B
@@ -129,7 +129,7 @@ For a test suite that contains test groups A, B, C, D, and E, the following list
   ```
 +
 
-  ```
+  ```yaml
   Order:
       - - A
         - B
@@ -137,7 +137,7 @@ For a test suite that contains test groups A, B, C, D, and E, the following list
   ```
 +
 
-  ```
+  ```yaml
   Order:
       - - A
         - B
@@ -166,7 +166,7 @@ A context expression that evaluates to a Boolean value. If the evaluated value i
 Optional. The list of test descriptors. All of the tests that are specified in this list must pass for the feature to be supported.
 Each test descriptor in this list uses the test group ID and one or more test case IDs to identify the individual tests to run from a specific test group. The test descriptor uses the following format:
 
-```
+```yaml
 GroupId: {{group-id}}
 CaseIds: [{{test-id}}, {{test-id}}] # optional
 ```
@@ -175,7 +175,7 @@ You must specify either `Tests` or `OneOfTests` for each feature in the `Feature
 Optional. The list of test descriptors. At least one of the tests that are specified in this list must pass for the feature to be supported.
 Each test descriptor in this list uses the test group ID and one or more test case IDs to identify the individual tests to run from a specific test group. The test descriptor uses the following format:
 
-```
+```yaml
 GroupId: {{group-id}}
 CaseIds: [{{test-id}}, {{test-id}}] # optional
 ```
@@ -190,7 +190,7 @@ The test orchestrator context is a read-only JSON document that contains data th
 
 The test orchestrator context uses the following format:
 
-```
+```json
 {
     "pool": {
         {{<device-json-pool-element>}}

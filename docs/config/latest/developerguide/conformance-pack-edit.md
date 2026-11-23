@@ -73,7 +73,7 @@ If you are editing a conformance pack that you added previously, use the same `P
 
    You should see output similar to the following.
 
-   ```
+   ```yaml
    {
        "conformancePackArn": "arn:aws:config:us-west-2:{{AccountID}}:conformance-pack/MyConformancePack/{{conformance-pack-ID}}"
    }

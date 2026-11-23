@@ -32,7 +32,7 @@ This example demonstrates how to start a Amazon Transcribe medical transcription
 
 Create a `libs` directory, and create a Node.js module with the file name `transcribeClient.js`. Copy and paste the code below into it, which creates the Amazon Transcribe client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import  { TranscribeClient }  from  "@aws-sdk/client-transcribe";
 // Set the AWS Region.
 const REGION = "REGION"; //e.g. "us-east-1"
@@ -48,7 +48,7 @@ Create a Node.js module with the file name `transcribe-create-medical-job.js`. M
 **Note**
 Replace {{MEDICAL\_JOB\_NAME}} with a name for the medical transcription job. For {{OUTPUT\_BUCKET\_NAME}} specify the Amazon S3 bucket where the output is saved. For {{JOB\_TYPE}} specify types of job. For {{SOURCE\_LOCATION}} specify the location of the source file. For {{SOURCE\_FILE\_LOCATION}} specify the location of the input media file.
 
-```
+```javascript
 // Import the required AWS SDK clients and commands for Node.js
 import { StartMedicalTranscriptionJobCommand } from "@aws-sdk/client-transcribe";
 import { transcribeClient } from "./libs/transcribeClient.js";
@@ -85,7 +85,7 @@ run();
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node transcribe-create-medical-job.js
 ```
 
@@ -98,7 +98,7 @@ This example shows how to list the Amazon Transcribe transcription jobs using th
 
 Create a `libs` directory, and create a Node.js module with the file name `transcribeClient.js`. Copy and paste the code below into it, which creates the Amazon Transcribe client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { TranscribeClient } from "@aws-sdk/client-transcribe";
 // Set the AWS Region.
 const REGION = "REGION"; //e.g. "us-east-1"
@@ -114,7 +114,7 @@ Create a Node.js module with the file name `transcribe-list-medical-jobs.js`. Ma
 **Note**
 Replace {{KEYWORD}} with a keyword that the returned jobs name must contain.
 
-```
+```javascript
 // Import the required AWS SDK clients and commands for Node.js
 
 import { ListMedicalTranscriptionJobsCommand } from "@aws-sdk/client-transcribe";
@@ -141,7 +141,7 @@ run();
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node transcribe-list-medical-jobs.js
 ```
 
@@ -154,7 +154,7 @@ This example shows how to delete an Amazon Transcribe transcription job using th
 
 Create a `libs` directory, and create a Node.js module with the file name `transcribeClient.js`. Copy and paste the code below into it, which creates the Amazon Transcribe client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import  { TranscribeClient }  from  "@aws-sdk/client-transcribe";
 // Set the AWS Region.
 const REGION = "REGION"; //e.g. "us-east-1"
@@ -170,7 +170,7 @@ Create a Node.js module with the file name `transcribe-delete-job.js`. Make sure
 **Note**
 Replace {{JOB\_NAME}} with the name of the job to delete.
 
-```
+```javascript
 // Import the required AWS SDK clients and commands for Node.js
 import { DeleteMedicalTranscriptionJobCommand } from "@aws-sdk/client-transcribe";
 import { transcribeClient } from "./libs/transcribeClient.js";
@@ -196,7 +196,7 @@ run();
 
 To run the example, enter the following at the command prompt.
 
-```
+```shell
 node transcribe-delete-medical-job.js
 ```
 

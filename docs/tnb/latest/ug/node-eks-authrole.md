@@ -9,7 +9,7 @@ An AuthRole allows you to add IAM roles to the Amazon EKS cluster `aws-auth` `Co
 ## Syntax
 <a name="node-eks-authrole-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Compute.EKS.AuthRole:
   properties:
     role\_mappings: List
@@ -44,7 +44,7 @@ Type: List
 ## Example
 <a name="node-eks-authrole-example"></a>
 
-```
+```yaml
 EKSAuthMapRoles:
     type: tosca.nodes.AWS.Compute.EKS.AuthRole
     properties:

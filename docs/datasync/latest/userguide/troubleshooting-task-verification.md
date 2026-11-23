@@ -170,7 +170,7 @@ You might notice in your logs a mismatch in an object’s Amazon S3 [system-defi
 
 **Enhanced mode log example**
 
-```
+```json
 {
     "Action": "VERIFY",
     "Source": {

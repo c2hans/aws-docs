@@ -36,7 +36,7 @@ To create a notebook, you must use a role with admin permissions or that has the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -34,7 +34,7 @@ If you already have an IAM role to access Amazon Redshift, you can type the ARN 
 The IAM role must have the following contents:
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

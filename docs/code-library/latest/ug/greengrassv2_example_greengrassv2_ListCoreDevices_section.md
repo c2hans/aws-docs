@@ -43,7 +43,7 @@ For more information, see [Check core device status](https://docs.aws.amazon.com
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 
-```
+```python
     def list_core_devices(self, status: Optional[str] = None) -> list[dict[str, Any]]:
         """
         Lists Greengrass core devices registered in the account.

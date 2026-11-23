@@ -16,7 +16,7 @@ It is important to add the appropriate trust policy for each role so that it can
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -54,7 +54,7 @@ To allow a user to set roles with permissions in excess of the user's existing p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -117,13 +117,13 @@ You can set up rule-based mapping for identity providers in the AWS CLI or API w
 
 For example, the following AWS CLI command adds a rule that assigns the role `arn:aws:iam::123456789012:role/Sacramento_team_S3_admin` to users in your Sacramento location who were authenticated by OIDC IdP `arn:aws:iam::123456789012:oidc-provider/myOIDCIdP`:
 
-```
+```bat
 aws cognito-identity set-identity-pool-roles --region us-east-1 --cli-input-json file://role-mapping.json
 ```
 
 **Contents of `role-mapping.json`**:
 
-```
+```json
 {
     "IdentityPoolId": "us-east-1:12345678-corner-cafe-123456790ab",
     "Roles": {

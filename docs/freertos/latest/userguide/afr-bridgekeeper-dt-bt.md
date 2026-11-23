@@ -43,7 +43,7 @@ The Yocto image should only be used for testing with AWS IoT Device Tester for F
 
       1. To connect your Raspberry Pi over Wi-Fi, open `/etc/wpa_supplicant.conf` on the Raspberry Pi and add your Wi-Fi credentials to the `Network` configuration.
 
-         ```
+         ```json
          ctrl_interface=/var/run/wpa_supplicant
          ctrl_interface_group=0
          update_config=1
@@ -97,7 +97,7 @@ The `ssh-copy-id` command assumes the public key is named `id_rsa.pub`. On macOS
 
       1. Add the following information about your Raspberry Pi to the file, replacing {{rasp-pi-ip-address}} with the IP address of your Raspberry Pi.
 
-         ```
+         ```json
          [
              {
                  "id": "ble-test-raspberry-pi",
@@ -119,7 +119,7 @@ The `ssh-copy-id` command assumes the public key is named `id_rsa.pub`. On macOS
 
       1. If you didn't choose to use public key authentication for SSH, add the following to the `connectivity` section of the `resource.json` file.
 
-         ```
+         ```json
          "connectivity": {
              "protocol": "ssh",
              "ip": "{{rasp-pi-ip-address}}",
@@ -135,7 +135,7 @@ The `ssh-copy-id` command assumes the public key is named `id_rsa.pub`. On macOS
 
       1. (Optional) If you chose to use public key authentication for SSH, add the following to the `connectivity` section of the `resource.json` file.
 
-         ```
+         ```json
          "connectivity": {
              "protocol": "ssh",
              "ip": "{{rasp-pi-ip-address}}",
@@ -154,7 +154,7 @@ The `ssh-copy-id` command assumes the public key is named `id_rsa.pub`. On macOS
 
 In your `device.json` file, set the `BLE` feature to `Yes`. If you are starting with a `device.json` file from before Bluetooth tests were available, you need to add the feature for BLE to the `features` array:
 
-```
+```json
 {
     ...
     "features": [

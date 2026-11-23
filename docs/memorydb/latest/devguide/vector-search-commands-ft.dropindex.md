@@ -8,7 +8,7 @@ Drop an index. The index definition and associated content are deleted. Keys are
 
 **Syntax**
 
-```
+```text
 FT.DROPINDEX <index-name>
 ```
 

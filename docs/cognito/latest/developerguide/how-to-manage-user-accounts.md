@@ -84,7 +84,7 @@ Users can immediately sign in to accounts after you enable them. User accounts a
 
 Users can delete their accounts with the self-service access-token-authorized [DeleteUser](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DeleteUser.html) API operation. The following is an example `DeleteUser` request body.
 
-```
+```json
 {
    "AccessToken": "{{eyJra456defEXAMPLE}}"
 }

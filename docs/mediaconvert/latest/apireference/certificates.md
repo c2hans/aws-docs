@@ -52,7 +52,7 @@ Supports CORS preflight requests.
 #### POST schema
 <a name="certificates-request-body-post-example"></a>
 
-```
+```json
 {
   "arn": "string"
 }
@@ -64,7 +64,7 @@ Supports CORS preflight requests.
 #### AssociateCertificateResponse schema
 <a name="certificates-response-body-associatecertificateresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -72,7 +72,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="certificates-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

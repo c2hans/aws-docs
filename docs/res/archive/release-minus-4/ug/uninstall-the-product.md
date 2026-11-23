@@ -20,7 +20,7 @@ You can uninstall the Research and Engineering Studio on AWS product from the AW
 
 Determine whether the AWS Command Line Interface (AWS CLI) is available in your environment. For installation instructions, see [ What Is the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS CLI User Guide*. After confirming that the AWS CLI is available and configured to the administrator account in the Region where the product was deployed, run the following command.
 
-```
+```bash
 $ aws cloudformation delete-stack --stack-name {{<RES-stack-name>}}
 ```
 
@@ -55,7 +55,7 @@ This product is configured to retain the product-created Amazon S3 bucket (for d
 
 To delete S3 buckets using AWS CLI, run the following command:
 
-```
+```bash
 $ aws s3 rb s3://<bucket-name> --force
 ```
 

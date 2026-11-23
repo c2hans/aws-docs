@@ -49,7 +49,7 @@ You can create a service sync configuration using the console or AWS CLI.
 **Create a service sync configuration using the AWS CLI**
 + Run the following command.
 
-  ```
+  ```sh
   $ aws proton create-service-sync-config \
       --resource "{{service-arn}}" \
       --repository-provider "{{GITHUB}}" \
@@ -60,7 +60,7 @@ You can create a service sync configuration using the console or AWS CLI.
 
   The response is as follows.
 
-  ```
+  ```json
   {
       "serviceSyncConfig": {
           "branch": "main",

@@ -33,7 +33,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-resources-resourcedefinitionid-versions-resourcedefinitionversionid-get-cli"></a>
 
-```
+```bash
 aws greengrass get-resource-definition-version \
   --resource-definition-id <value> \
   --resource-definition-version-id <value>  \
@@ -43,7 +43,7 @@ aws greengrass get-resource-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "ResourceDefinitionId": "string",
 "ResourceDefinitionVersionId": "string"
@@ -57,7 +57,7 @@ cli-input-json format:
 Success.
  [ GetResourceDefinitionVersionResponse](definitions-getresourcedefinitionversionresponse.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -236,7 +236,7 @@ type: array
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

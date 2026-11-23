@@ -93,7 +93,7 @@ The [AWS IoT Greengrass Component SDK](https://github.com/aws-greengrass/aws-gre
 
 1. Use the following code to create the IPC client.
 
-   ```
+   ```java
    try (GreengrassCoreIPCClientV2 ipcClient = GreengrassCoreIPCClientV2.builder().build()) {
        // Use client.
    } catch (Exception e) {
@@ -113,7 +113,7 @@ The [AWS IoT Greengrass Component SDK](https://github.com/aws-greengrass/aws-gre
 
 1. Create a connection to the AWS IoT Greengrass Core IPC service. Use the following code to create the IPC client.
 
-   ```
+   ```python
    from awsiot.greengrasscoreipc.clientv2 import GreengrassCoreIPCClientV2
 
    try:
@@ -165,7 +165,7 @@ The [AWS IoT Greengrass Component SDK](https://github.com/aws-greengrass/aws-gre
 
 1. In your component code, create a connection to the AWS IoT Greengrass Core IPC service to create an IPC client (`Aws::Greengrass::GreengrassCoreIpcClient`). You must define an IPC connection lifecycle handler that handles IPC connection, disconnection, and error events. The following example creates an IPC client and an IPC connection lifecycle handler that prints when the IPC client connects, disconnects, and encounters errors.
 
-   ```
+   ```cpp
    #include <iostream>
 
    #include <aws/crt/Api.h>
@@ -245,7 +245,7 @@ The [AWS IoT Greengrass Component SDK](https://github.com/aws-greengrass/aws-gre
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
      {{...}}
      "Manifests": [
@@ -269,7 +269,7 @@ The [AWS IoT Greengrass Component SDK](https://github.com/aws-greengrass/aws-gre
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    {{...}}
    Manifests:
      - Lifecycle:
@@ -300,7 +300,7 @@ The [AWS IoT Greengrass Component SDK](https://github.com/aws-greengrass/aws-gre
 
 1. Use the following code to create the IPC client.
 
-   ```
+   ```javascript
    import * as greengrascoreipc from 'aws-iot-device-sdk-v2';
 
    let client = greengrascoreipc.createClient();
@@ -308,7 +308,7 @@ The [AWS IoT Greengrass Component SDK](https://github.com/aws-greengrass/aws-gre
 
 1. Use the following code to establish a connection from your component to the Greengrass nucleus.
 
-   ```
+   ```javascript
    await client.connect();
    ```
 
@@ -329,7 +329,7 @@ Authorization policies use the following format. This object is the `accessContr
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "{{IPC service identifier}}": {
     "{{policyId}}": {
@@ -350,7 +350,7 @@ Authorization policies use the following format. This object is the `accessContr
 ------
 #### [ YAML ]
 
-```
+```yaml
 {{IPC service identifier}}:
   {{policyId}}:
     policyDescription: {{description}}
@@ -401,7 +401,7 @@ You can reference the following authorization policy examples to help you config
 **Example component recipe with an authorization policy**
 The following example component recipe includes an `accessControl` object defines an authorization policy. This policy authorizes the `com.example.HelloWorld` component to publish to the `test/topic` topic.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.HelloWorld",
@@ -435,7 +435,7 @@ The following example component recipe includes an `accessControl` object define
 }
 ```
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.HelloWorld
@@ -462,7 +462,7 @@ Manifests:
 The following example configuration update in a deployment specifies to configure a component with an `accessControl` object that defines an authorization policy. This policy authorizes the `com.example.HelloWorld` component to publish to the `test/topic` topic.
 **Configuration to merge**
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.ipc.pubsub": {
@@ -481,12 +481,12 @@ The following example configuration update in a deployment specifies to configur
 ```
 The following command creates a deployment to a core device.
 
-```
+```bash
 aws greengrassv2 create-deployment --cli-input-json file://hello-world-deployment.json
 ```
 The `hello-world-deployment.json` file contains the following JSON document.
 
-```
+```json
 {
   "targetArn": "arn:aws:iot:us-west-2:123456789012:thing/MyGreengrassCore",
   "deploymentName": "Deployment for MyGreengrassCore",
@@ -502,7 +502,7 @@ The `hello-world-deployment.json` file contains the following JSON document.
 ```
 The following [Greengrass CLI](greengrass-cli-component.md) command creates a local deployment on a core device.
 
-```
+```bash
 sudo greengrass-cli deployment create \
   --recipeDir recipes \
   --artifactDir artifacts \
@@ -511,7 +511,7 @@ sudo greengrass-cli deployment create \
 ```
 The `hello-world-configuration.json` file contains the following JSON document.
 
-```
+```json
 {
   "com.example.HelloWorld": {
     "MERGE": {
@@ -632,7 +632,7 @@ The following example demonstrates how to use the [SubscribeToTopic](ipc-publish
 
 **Example: Subscribe to local publish/subscribe messages**  <a name="ipc-operation-subscribetotopic-example-java-v2"></a>
 
-```
+```java
 package com.aws.greengrass.docs.samples.ipc;
 
 import software.amazon.awssdk.aws.greengrass.GreengrassCoreIPCClientV2;
@@ -708,7 +708,7 @@ public class SubscribeToTopicV2 {
 
 **Example: Subscribe to local publish/subscribe messages**  <a name="ipc-operation-subscribetotopic-example-python-v2"></a>
 
-```
+```python
 import sys
 import time
 import traceback
@@ -774,7 +774,7 @@ if __name__ == '__main__':
 
 **Example: Subscribe to local publish/subscribe messages**  <a name="ipc-operation-subscribetotopic-example-cpp"></a>
 
-```
+```cpp
 #include <iostream>
 
 #include </crt/Api.h>
@@ -888,7 +888,7 @@ int main() {
 
 **Example: Subscribe to local publish/subscribe messages**  <a name="ipc-operation-subscribetotopic-example-nodejs"></a>
 
-```
+```javascript
 import * as greengrasscoreipc from "aws-iot-device-sdk-v2/dist/greengrasscoreipc";
 import {SubscribeToTopicRequest, SubscriptionResponseMessage} from "aws-iot-device-sdk-v2/dist/greengrasscoreipc/model";
 import {RpcError} from "aws-iot-device-sdk-v2/dist/eventstream_rpc";
@@ -963,7 +963,7 @@ const subscribeToTopic = new SubscribeToTopic();
 
 **Example: Subscribe to local publish/subscribe messages**
 
-```
+```rust
 use gg_sdk::{Sdk, SubscribeToTopicPayload};
 use std::{thread, time::Duration};
 
@@ -1002,7 +1002,7 @@ fn main() {
 
 **Example: Subscribe to local publish/subscribe messages**
 
-```
+```c
 #include <assert.h>
 #include <gg/error.h>
 #include <gg/ipc/client.h>
@@ -1082,7 +1082,7 @@ int main(void) {
 
 **Example: Subscribe to local publish/subscribe messages**
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <gg/object.hpp>
 #include <unistd.h>

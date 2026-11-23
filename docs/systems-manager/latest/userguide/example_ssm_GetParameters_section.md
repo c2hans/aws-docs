@@ -118,7 +118,7 @@ For more information, see [Working with parameter labels](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This example lists the values for a parameter.**
 
-```
+```powershell
 Get-SSMParameterValue -Name "Welcome"
 ```
 **Output:**
@@ -130,7 +130,7 @@ InvalidParameters Parameters
 ```
 **Example 2: This example lists the details of the value.**
 
-```
+```powershell
 (Get-SSMParameterValue -Name "Welcome").Parameters
 ```
 **Output:**
@@ -145,7 +145,7 @@ Welcome String Good day, Sunshine!
 **Tools for PowerShell V5**
 **Example 1: This example lists the values for a parameter.**
 
-```
+```powershell
 Get-SSMParameterValue -Name "Welcome"
 ```
 **Output:**
@@ -157,7 +157,7 @@ InvalidParameters Parameters
 ```
 **Example 2: This example lists the details of the value.**
 
-```
+```powershell
 (Get-SSMParameterValue -Name "Welcome").Parameters
 ```
 **Output:**

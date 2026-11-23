@@ -54,7 +54,7 @@ When you create or retrieve Image Builder resources, Image Builder automatically
 
 For example, when you create a component with version `1.2.3`, Image Builder returns:
 
-```
+```json
 {
     "componentBuildVersionArn": "arn:aws:imagebuilder:us-west-2:123456789012:component/my-component/1.2.3/1",
     "latestVersionReferences": {

@@ -44,7 +44,7 @@ In the AWS Identity and Access Management console, configure your IAM roles to h
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -76,7 +76,7 @@ To learn more about IAM roles, see [Roles (Delegation and Federation)](https://d
 
 Your application needs to import the Google Play services. You can download the latest version of the Google Play SDK via the [Android SDK manager](http://developer.android.com/tools/help/sdk-manager.html). Follow the Android documentation on [Android Implementation](https://developers.google.com/instance-id/guides/android-implementation) to register your app and receive a registration ID from GCM. Once you have the registration ID, you need to register the device with Amazon Cognito, as shown in the snippet below:
 
-```
+```java
 String registrationId = "MY_GCM_REGISTRATION_ID";
 try {
     client.registerDevice("GCM", registrationId);
@@ -89,7 +89,7 @@ try {
 
 You can now subscribe a device to receive updates from a particular dataset:
 
-```
+```java
 Dataset trackedDataset = client.openOrCreateDataset("myDataset");
 if (client.isDeviceRegistered()) {
     try {
@@ -104,7 +104,7 @@ if (client.isDeviceRegistered()) {
 
 To stop receiving push notifications from a dataset, simply call the unsubscribe method. To subscribe to all datasets (or a specific subset) in the `CognitoSyncManager` object, use `subscribeAll()`:
 
-```
+```java
 if (client.isDeviceRegistered()) {
     try {
         client.subscribeAll();
@@ -118,7 +118,7 @@ if (client.isDeviceRegistered()) {
 
 In your implementation of the [Android BroadcastReceiver](http://developer.android.com/reference/android/content/BroadcastReceiver.html) object, you can check the latest version of the modified dataset and decide if your app needs to synchronize again:
 
-```
+```java
 @Override
 public void onReceive(Context context, Intent intent) {
 
@@ -162,7 +162,7 @@ The following keys are available in the push notification payload:
 
 To obtain a device token for your app, follow the Apple documentation on Registering for Remote Notifications. Once you've received the device token as an NSData object from APNs, you'll need to register the device with Amazon Cognito using the `registerDevice:` method of the sync client, as shown below:
 
-```
+```objectivec
 AWSCognito *syncClient = [AWSCognito defaultCognito];
     [[syncClient registerDevice: devToken] continueWithBlock:^id(AWSTask *task) {
         if(task.error){
@@ -177,7 +177,7 @@ AWSCognito *syncClient = [AWSCognito defaultCognito];
 
 In debug mode, your device registers with the APNs sandbox; in release mode, it registers with APNs. To receive updates from a particular dataset, use the `subscribe` method:
 
-```
+```objectivec
 [[[syncClient openOrCreateDataset:@"MyDataset"] subscribe] continueWithBlock:^id(AWSTask *task) {
         if(task.error){
             NSLog(@"Unable to subscribe to dataset: %@", task.error);
@@ -191,7 +191,7 @@ In debug mode, your device registers with the APNs sandbox; in release mode, it 
 
 To stop receiving push notifications from a dataset, simply call the `unsubscribe` method:
 
-```
+```objectivec
 [[[syncClient openOrCreateDataset:@”MyDataset”] unsubscribe] continueWithBlock:^id(AWSTask *task) {
         if(task.error){
             NSLog(@"Unable to unsubscribe from dataset: %@", task.error);
@@ -205,7 +205,7 @@ To stop receiving push notifications from a dataset, simply call the `unsubscrib
 
 To subscribe to all datasets in the `AWSCognito` object, call `subscribeAll`:
 
-```
+```objectivec
 [[syncClient subscribeAll] continueWithBlock:^id(AWSTask *task) {
         if(task.error){
             NSLog(@"Unable to subscribe to all datasets: %@", task.error);
@@ -221,7 +221,7 @@ Before calling `subscribeAll`, be sure to synchronize at least once on each data
 
 To react to push notifications, you need to implement the `didReceiveRemoteNotification` method in your app delegate:
 
-```
+```objectivec
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
     {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"CognitoPushNotification" object:userInfo];
@@ -230,14 +230,14 @@ To react to push notifications, you need to implement the `didReceiveRemoteNotif
 
 If you post a notification using notification handler, you can then respond to the notification elsewhere in the application where you have a handle to your dataset. If you subscribe to the notification like this ...
 
-```
+```objectivec
 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceivePushSync:)
     name: :@"CognitoPushNotification" object:nil];
 ```
 
 ...you can act on the notification like this:
 
-```
+```objectivec
 - (void)didReceivePushSync:(NSNotification*)notification
     {
         NSDictionary * data = [(NSDictionary *)[notification object] objectForKey:@"data"];
@@ -266,7 +266,7 @@ The following keys are available in the push notification payload:
 
 To obtain a device token for your app, follow the Apple documentation on Registering for Remote Notifications. Once you've received the device token as an NSData object from APNs, you'll need to register the device with Amazon Cognito using the registerDevice: method of the sync client, as shown below:
 
-```
+```swift
 let syncClient = AWSCognito.default()
 syncClient.registerDevice(devToken).continueWith(block: { (task: AWSTask!) -> AnyObject! in
     if (task.error != nil) {
@@ -281,7 +281,7 @@ syncClient.registerDevice(devToken).continueWith(block: { (task: AWSTask!) -> An
 
 In debug mode, your device registers with the APNs sandbox; in release mode, it registers with APNs. To receive updates from a particular dataset, use the `subscribe` method:
 
-```
+```swift
 syncClient.openOrCreateDataset("MyDataset").subscribe().continueWith(block: { (task: AWSTask!) -> AnyObject! in
   if (task.error != nil) {
       print("Unable to subscribe to dataset: " + task.error.localizedDescription)
@@ -295,7 +295,7 @@ syncClient.openOrCreateDataset("MyDataset").subscribe().continueWith(block: { (t
 
 To stop receiving push notifications from a dataset, call the `unsubscribe` method:
 
-```
+```swift
 syncClient.openOrCreateDataset("MyDataset").unsubscribe().continueWith(block: { (task: AWSTask!) -> AnyObject! in
   if (task.error != nil) {
       print("Unable to unsubscribe to dataset: " + task.error.localizedDescription)
@@ -309,7 +309,7 @@ syncClient.openOrCreateDataset("MyDataset").unsubscribe().continueWith(block: { 
 
 To subscribe to all datasets in the `AWSCognito` object, call `subscribeAll`:
 
-```
+```swift
 syncClient.openOrCreateDataset("MyDataset").subscribeAll().continueWith(block: { (task: AWSTask!) -> AnyObject! in
   if (task.error != nil) {
       print("Unable to subscribe to all datasets: " + task.error.localizedDescription)
@@ -325,7 +325,7 @@ Before calling `subscribeAll`, be sure to synchronize at least once on each data
 
 To react to push notifications, you need to implement the `didReceiveRemoteNotification` method in your app delegate:
 
-```
+```swift
 func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject],
   fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
         NSNotificationCenter.defaultCenter().postNotificationName("CognitoPushNotification", object: userInfo)
@@ -334,7 +334,7 @@ func application(application: UIApplication, didReceiveRemoteNotification userIn
 
 If you post a notification using notification handler, you can then respond to the notification elsewhere in the application where you have a handle to your dataset. If you subscribe to the notification like this ...
 
-```
+```swift
 NSNotificationCenter.defaultCenter().addObserver(observer:self,
    selector:"didReceivePushSync:",
    name:"CognitoPushNotification",
@@ -343,7 +343,7 @@ NSNotificationCenter.defaultCenter().addObserver(observer:self,
 
 ...you can act on the notification like this:
 
-```
+```swift
 func didReceivePushSync(notification: NSNotification) {
     if let data = (notification.object as! [String: AnyObject])["data"] as? [String: AnyObject] {
         let identityId = data["identityId"] as! String

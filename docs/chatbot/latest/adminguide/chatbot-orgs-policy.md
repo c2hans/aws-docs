@@ -35,7 +35,7 @@ Chat application policies are limited to AWS account access to Amazon Q Develope
 
 The following policy allows restricted Amazon Q Developer in chat applications access for selected Slack workspaces and a Microsoft Teams tenant.
 
-```
+```json
 {
     "chatbot":{
        "platforms":{

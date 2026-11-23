@@ -50,6 +50,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd02-b
 
 ![Flow diagram of the six iterative phases a team moves through when implementing data perimeter controls.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/data_perimeter_phases.png)
 
+*Six iterative phases of data perimeter implementation*
+
 ### Implementation steps
 <a name="implementation-steps"></a>
 

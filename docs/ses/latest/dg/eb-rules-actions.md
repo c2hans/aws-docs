@@ -150,7 +150,7 @@ Add header does not accept `ActionFailurePolicy`.
 
 The following command creates a rule set with one Add header action:
 
-```
+```bash
 PROMPT> aws mailmanager create-rule-set \
   --region {{us-east-1}} \
   --rule-set-name {{add-header-example}} \
@@ -276,7 +276,7 @@ The public API marks `ReplaceWith` as optional, but action processing requires t
 
 The following command creates a rule set that replaces `orders@example.com` with `processing@example.net`. Replace the AWS Region, rule set name, source recipient, and replacement recipient with your values:
 
-```
+```bash
 PROMPT> aws mailmanager create-rule-set \
   --region {{us-east-1}} \
   --rule-set-name {{replace-recipient-example}} \
@@ -398,7 +398,7 @@ For the trust policy, see [Permission and trust polices to execute rule actions]
 
 The following command creates a rule set that writes email to the `orders` prefix and stops processing if storage fails with a customer configuration error. Replace the AWS Region, account ID, role name, bucket name, and rule set name with your values:
 
-```
+```bash
 PROMPT> aws mailmanager create-rule-set \
   --region {{us-east-1}} \
   --rule-set-name {{write-to-s3-example}} \
@@ -498,7 +498,7 @@ Separate permissions can be required when you create or update an archive that u
 
 The following command creates a rule set that writes email to the existing archive `ar-id-1234`. Replace the AWS Region, archive ID, and rule set name with your values:
 
-```
+```bash
 PROMPT> aws mailmanager create-rule-set \
   --region {{us-east-1}} \
   --rule-set-name {{archive-action-example}} \
@@ -561,7 +561,7 @@ Actions:
 
 With `PayloadType` set to `CONTENT` and `Encoding` set to `UTF-8`, the notification has the following structure. Fields without values are omitted:
 
-```
+```json
 {
   "notificationType": "Received",
   "mail": {
@@ -685,7 +685,7 @@ For current encrypted-topic requirements, see [Managing Amazon SNS encryption ke
 
 The following command creates a rule set with one Publish to SNS action:
 
-```
+```bash
 PROMPT> aws mailmanager create-rule-set \
   --region {{us-east-1}} \
   --rule-set-name {{publish-to-sns-example}} \
@@ -760,7 +760,7 @@ The action sends one event containing email metadata, headers, authentication re
 
 The following example shows the event for an `EVENT` invocation after an earlier action adds `X-Route: orders`. Fields without values are omitted:
 
-```
+```json
 {
   "Records": [
     {
@@ -858,21 +858,21 @@ For `REQUEST_RESPONSE`, return a JSON object containing one of the following dis
 
 `CONTINUE`
 
-```
+```json
 {"disposition": "CONTINUE"}
 ```
 Runs the next action and later rules for the selected recipients.
 
 `STOP_RULE`
 
-```
+```json
 {"disposition": "STOP_RULE"}
 ```
 Skips the remaining actions in the current rule for the selected recipients. Later rules can still process those recipients.
 
 `STOP_RULE_SET`
 
-```
+```json
 {"disposition": "STOP_RULE_SET"}
 ```
 Stops all remaining rule-set processing for the selected recipients.
@@ -911,7 +911,7 @@ The rule action's IAM role must trust the SES service principal and allow `lambd
 
 The following command creates a rule set containing one asynchronous Lambda action. Replace the AWS Region, account ID, function name, and IAM role name with your values:
 
-```
+```bash
 PROMPT> aws mailmanager create-rule-set \
   --region {{us-east-1}} \
   --rule-set-name {{invoke-lambda-example}} \
@@ -1043,7 +1043,7 @@ For the trust policy, see [Permission and trust polices to execute rule actions]
 
 The following command creates a rule set that adds email documents to a Q Business index. Replace the AWS Region, application ID, index ID, account ID, role name, and rule set name with your values:
 
-```
+```bash
 PROMPT> aws mailmanager create-rule-set \
   --region {{us-east-1}} \
   --rule-set-name {{q-business-example}} \
@@ -1166,7 +1166,7 @@ An authenticated relay can require an AWS Secrets Manager resource policy that a
 
 The following command creates a rule set that uses the existing relay `rl-0123456789abcdef`. Replace the AWS Region, relay ID, and rule set name with your values:
 
-```
+```bash
 PROMPT> aws mailmanager create-rule-set \
   --region {{us-east-1}} \
   --rule-set-name {{smtp-relay-example}} \
@@ -1296,7 +1296,7 @@ For the trust policy, see [Permission and trust polices to execute rule actions]
 
 The following command creates a rule set with one Send to internet action:
 
-```
+```bash
 PROMPT> aws mailmanager create-rule-set \
   --region {{us-east-1}} \
   --rule-set-name {{send-to-internet-example}} \
@@ -1410,7 +1410,7 @@ The rule action's IAM role must trust the SES service principal and allow `workm
 
 The following command creates a rule set that delivers selected recipients to a WorkMail organization. Replace the AWS Region, account ID, organization ID, role name, and rule set name with your values:
 
-```
+```bash
 PROMPT> aws mailmanager create-rule-set \
   --region {{us-east-1}} \
   --rule-set-name {{workmail-delivery-example}} \
@@ -1510,7 +1510,7 @@ The rule's `Conditions` and `Unless` lists determine which recipients the action
 
 The following command creates a rule set that drops only `blocked@example.com`:
 
-```
+```bash
 PROMPT> aws mailmanager create-rule-set \
   --region {{us-east-1}} \
   --rule-set-name {{drop-example}} \
@@ -1666,7 +1666,7 @@ For the trust policy, see [Permission and trust polices to execute rule actions]
 
 The following command creates a rule set with one Bounce action:
 
-```
+```bash
 PROMPT> aws mailmanager create-rule-set \
   --region {{us-east-1}} \
   --rule-set-name {{bounce-example}} \

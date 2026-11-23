@@ -9,7 +9,7 @@ You send an MMS message with the `SendMediaMessage` operation, referencing media
 **To send an MMS message**
 + Use the [send-media-message](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/send-media-message.html) command. The only required parameters are `destination-phone-number` and `origination-identity`. Omit `media-urls` for a text-only message, or `message-body` for a media-only message. You can include only one media file per message, so `media-urls` takes a single Amazon S3 URI.
 
-  ```
+  ```bsh
   aws pinpoint-sms-voice-v2 --region {{us-east-1}} send-media-message \\
       --destination-phone-number {{+12065550150}} \\
       --origination-identity {{pool-a1b2c3d4e5f6g7h8i}} \\
@@ -21,7 +21,7 @@ You send an MMS message with the `SendMediaMessage` operation, referencing media
 
 If AWS End User Messaging accepts the command, you receive a `MessageId`. This means only that the command was received, not that the device has received the message. For error codes, see [SendMediaMessage Errors](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendMediaMessage.html#API_SendMediaMessage_Errors).
 
-```
+```json
 {
    "MessageId": "string"
 }

@@ -37,7 +37,7 @@ Certificates issued from public CAs cannot be used as trust anchors.
 
 1. In **Trust anchor name**, enter a name for the trust anchor.
 
-1. (Optional) In **Alias**, enter an alias for the trust anchor. You can use the trust anchor's alias ARN in place of its ARN, for example in your credential helper configuration. For more information, see [Resource aliases](resource-aliases.md).
+1. (Optional) In **Alias**, enter an alias for the trust anchor. You can use the trust anchor's alias ARN in place of its canonical ARN, for example in your credential helper configuration. For more information, see [Resource aliases](resource-aliases.md).
 
 1. For **Certificate authority (CA) source**, do one of the following:
    + To use an AWS Private CA resource, choose **AWS Private CA**. In the **AWS Private CA** table, choose the AWS Private CA resource.
@@ -69,7 +69,7 @@ Before you can create an IAM Roles Anywhere profile, you need at least one IAM r
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

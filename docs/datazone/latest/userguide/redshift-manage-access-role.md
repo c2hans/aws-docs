@@ -13,7 +13,7 @@ The default `AmazonDataZoneRedshiftAccess-<region>-<domainId>` role has the foll
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -41,7 +41,7 @@ The default `AmazonDataZoneRedshiftManageAccessRole<timestamp>` has the followin
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

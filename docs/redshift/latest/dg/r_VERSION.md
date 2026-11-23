@@ -28,7 +28,7 @@ Returns a CHAR or VARCHAR string.
 
 The following example shows the cluster version information of the current cluster:
 
-```
+```sql
 select version();
 ```
 

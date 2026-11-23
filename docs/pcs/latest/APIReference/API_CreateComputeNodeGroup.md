@@ -25,6 +25,18 @@ Creates a managed set of compute nodes. You associate a compute node group with 
          "instanceType": "{{string}}"
       }
    ],
+   "instanceHealthChecks": {
+      "deepHealthChecks": {
+         "onStart": {
+            "profile": "{{string}}",
+            "repairAction": "{{string}}"
+         }
+      },
+      "healthMonitoring": {
+         "mode": "{{string}}",
+         "repairAction": "{{string}}"
+      }
+   },
    "launchTemplateMode": "{{string}}",
    "nodeLifecycleActions": {
       "scriptCachingPolicy": "{{string}}",
@@ -136,6 +148,11 @@ A list of EC2 instance configurations that AWS PCS can provision in the compute 
 Type: Array of [InstanceConfig](API_InstanceConfig.md) objects
 Required: Yes
 
+ ** [instanceHealthChecks](#API_CreateComputeNodeGroup_RequestSyntax) **   <a name="PCS-CreateComputeNodeGroup-request-instanceHealthChecks"></a>
+The instance health check settings for the compute node group. Instance health checks detect faults on instances in the compute node group and respond with the repair action that you choose. You can configure health monitoring, deep health checks, or both. You can't specify an empty object (`{}`). Instance health checks require Slurm version 26.05 or later.
+Type: [InstanceHealthChecksRequest](API_InstanceHealthChecksRequest.md) object
+Required: No
+
  ** [launchTemplateMode](#API_CreateComputeNodeGroup_RequestSyntax) **   <a name="PCS-CreateComputeNodeGroup-request-launchTemplateMode"></a>
 Specifies whether the compute node group uses a custom launch template or a launch template that AWS PCS manages. The default value is `CUSTOM`.
 If the value is `CUSTOM`, provide `customLaunchTemplate`. If the value is `MANAGED`, omit `customLaunchTemplate` and provide `amiId` and `securityGroupIds`.
@@ -221,6 +238,18 @@ Required: No
             "instanceType": "string"
          }
       ],
+      "instanceHealthChecks": {
+         "deepHealthChecks": {
+            "onStart": {
+               "profile": "string",
+               "repairAction": "string"
+            }
+         },
+         "healthMonitoring": {
+            "mode": "string",
+            "repairAction": "string"
+         }
+      },
       "launchTemplateMode": "string",
       "modifiedAt": "string",
       "name": "string",

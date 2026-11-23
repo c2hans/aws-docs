@@ -29,7 +29,7 @@ To set up the Trainium Kubernetes environment, do the following:
 
 1. Virtual environment setup. Make sure you're using Python 3.9 or greater.
 
-   ```
+   ```bash
    python3 -m venv ${PWD}/venv
    source venv/bin/activate
    ```
@@ -37,7 +37,7 @@ To set up the Trainium Kubernetes environment, do the following:
 1. Install the dependencies
    + (Recommended) Use the following HyperPod command-line tool
 
-     ```
+     ```bash
      # install HyperPod command line tools
      git clone https://github.com/aws/sagemaker-hyperpod-cli
      cd sagemaker-hyperpod-cli
@@ -45,7 +45,7 @@ To set up the Trainium Kubernetes environment, do the following:
      ```
    + If you're using SageMaker HyperPod recipes, specify the following
 
-     ```
+     ```bash
      # install SageMaker HyperPod Recipes.
      git clone --recursive git@github.com:aws/sagemaker-hyperpod-recipes.git
      cd sagemaker-hyperpod-recipes
@@ -58,7 +58,7 @@ To set up the Trainium Kubernetes environment, do the following:
 
 1. Connect to your Kubernetes cluster
 
-   ```
+   ```bash
    aws eks update-kubeconfig --region "${CLUSTER_REGION}" --name "${CLUSTER_NAME}"
    hyperpod connect-cluster --cluster-name "${CLUSTER_NAME}" [--region "${CLUSTER_REGION}"] [--namespace <namespace>]
    ```
@@ -73,11 +73,11 @@ We recommend using the SageMaker HyperPod command-line interface (CLI) tool to s
 + `your_model_config`: The model configuration from the environment setup section
 + (Optional) You can provide the HuggingFace token if you need pre-trained weights from HuggingFace by setting the following key-value pair:
 
-  ```
+  ```bash
   "recipes.model.hf_access_token": "{{<your_hf_token>}}"
   ```
 
-```
+```bash
 hyperpod start-job --recipe training/llama/hf_llama3_8b_seq8k_trn1x4_pretrain \
 --persistent-volume-claims fsx-claim:data \
 --override-parameters \
@@ -95,7 +95,7 @@ hyperpod start-job --recipe training/llama/hf_llama3_8b_seq8k_trn1x4_pretrain \
 
 After you've submitted a training job, you can use the following command to verify if you submitted it successfully.
 
-```
+```bash
 kubectl get pods
 NAME                              READY   STATUS             RESTARTS        AGE
 hf-llama3-<your-alias>-worker-0   0/1     running         0               36s
@@ -103,13 +103,13 @@ hf-llama3-<your-alias>-worker-0   0/1     running         0               36s
 
 If the `STATUS` is `PENDING` or `ContainerCreating`, run the following command to get more details.
 
-```
+```bash
 kubectl describe pod {{name_of_pod}}
 ```
 
 After the job `STATUS` changes to `Running`, you can examine the log by using the following command.
 
-```
+```bash
 kubectl logs {{name_of_pod}}
 ```
 
@@ -121,7 +121,7 @@ The `STATUS` will turn to `Completed` when you run `kubectl get pods`.
 Alternatively, use SageMaker HyperPod recipes to submit your training job. To submit the training job using a recipe, update `k8s.yaml` and `config.yaml`. Run the bash script for the model to launch it.
 + In `k8s.yaml`, update persistent\_volume\_claims to mount the Amazon FSx claim to the /data directory in the compute nodes
 
-  ```
+  ```yaml
   persistent_volume_claims:
     - claimName: fsx-claim
       mountPath: data
@@ -132,11 +132,11 @@ Alternatively, use SageMaker HyperPod recipes to submit your training job. To su
 
   (Optional) You can provide the HuggingFace token if you need pre-trained weights from HuggingFace by setting the following key-value pair:
 
-  ```
+  ```bash
   recipes.model.hf_access_token={{<your_hf_token>}}
   ```
 
-  ```
+  ```bash
    #!/bin/bash
   #Users should set up their cluster type in /recipes_collection/config.yaml
   IMAGE="{{<your_neuron_contrainer>}}"
@@ -159,13 +159,13 @@ Alternatively, use SageMaker HyperPod recipes to submit your training job. To su
   ```
 + Launch the job
 
-  ```
+  ```bash
   bash launcher_scripts/llama/run_hf_llama3_8b_seq8k_trn1x4_pretrain.sh
   ```
 
 After you've submitted a training job, you can use the following command to verify if you submitted it successfully.
 
-```
+```bash
 kubectl get pods
 NAME                             READY   STATUS             RESTARTS        AGE
 hf-llama3-<your-alias>-worker-0   0/1     running         0               36s
@@ -173,13 +173,13 @@ hf-llama3-<your-alias>-worker-0   0/1     running         0               36s
 
 If the `STATUS` is at `PENDING` or `ContainerCreating`, run the following command to get more details.
 
-```
+```bash
 kubectl describe pod {{name_of_pod}}
 ```
 
 After the job STATUS changes to Running, you can examine the log by using the following command.
 
-```
+```bash
 kubectl logs {{name_of_pod}}
 ```
 

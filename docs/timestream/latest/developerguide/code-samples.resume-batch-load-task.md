@@ -11,7 +11,7 @@ You can use the following code snippets to resume batch load tasks.
 ------
 #### [  Java  ]
 
-```
+```java
     public void resumeBatchLoadTask(String taskId) {
             try {
                     amazonTimestreamWrite
@@ -29,7 +29,7 @@ You can use the following code snippets to resume batch load tasks.
 ------
 #### [  Go  ]
 
-```
+```go
 package main
 
 import (
@@ -78,7 +78,7 @@ func main() {
 ------
 #### [  Python  ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -112,7 +112,7 @@ The following snippet uses AWS SDK for JavaScript v3. For more information about
 
 For API details, see [Class CreateBatchLoadCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-timestream-write/classes/describebatchloadtaskcommand.html) and [CreateBatchLoadTask](https://docs.aws.amazon.com/timestream/latest/developerguide/API_CreateBatchLoadTask.html).
 
-```
+```javascript
 import { TimestreamWriteClient, ResumeBatchLoadTaskCommand } from "@aws-sdk/client-timestream-write";
 const writeClient = new TimestreamWriteClient({ region: "{{<region>}}", endpoint: "{{<endpoint>}}" });
 
@@ -134,7 +134,7 @@ try {
 ------
 #### [  .NET  ]
 
-```
+```cs
 using System;
 using System.IO;
 using System.Collections.Generic;

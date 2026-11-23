@@ -12,7 +12,7 @@ By default, Connect Customer communicates with the following endpoints:
 
 You can specify a different provider Region alongside your API key as part of the JSON object:
 
-```
+```json
 {
   "apiToken": "XXXXX",
   "apiTokenRegion": "xx"

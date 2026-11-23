@@ -19,7 +19,7 @@ To configure `Clojure` to fetch dependencies from a CodeArtifact repository, you
 **Note**
 Clojure expects the settings.xml file to be located at `~/.m2/settings.xml`. If elsewhere, create the file in this location.
 
-   ```
+   ```xml
    <settings>
    ...
        <servers>

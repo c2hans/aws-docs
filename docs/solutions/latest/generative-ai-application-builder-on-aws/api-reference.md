@@ -28,7 +28,7 @@ OpenAPI and Swagger files can also be exported from API Gateway for easier integ
 
 See below for an example of a POST payload to the `/deployments` endpoint, which will create a new use case.
 
-```
+```json
 {
  "UseCaseName": "usecase1",
  "UseCaseDescription": "Description of the use case to be deployed. For display purposes", // optional
@@ -177,7 +177,7 @@ If you’re directly integrating with the `/sendMessage` API, you must adhere to
 
  *Request Payload*
 
-```
+```json
 {
  "action": "sendMessage",
  "question": "the message to send to the api",
@@ -201,7 +201,7 @@ If you’re directly integrating with the `/sendMessage` API, you must adhere to
 
 The WebSocket API will respond with 1 (if streaming is disabled) or many (if streaming is enabled) JSON objects structured as follows for each query.
 
-```
+```json
 {
  "data": "some data",
  "conversationId": "id",
@@ -217,7 +217,7 @@ The WebSocket API will respond with 1 (if streaming is disabled) or many (if str
 
 If you have configured your RAG use case to return source documents, you will also receive the following payload at the end of every response for each source document used to create the response.
 
-```
+```json
 {
  "sourceDocument": {
  "excerpt": "some excerpt from the",
@@ -245,7 +245,7 @@ If you have configured your RAG use case to return source documents, you will al
 
 Below is an example of a POST payload to the `/feedback/{useCaseId}` endpoint, which will submit user feedback for a specific use case:
 
-```
+```json
 {
   "useCaseRecordKey": "12345678-12345678",
   "conversationId": "12345678-1234-1234-1234-123456789012",
@@ -275,7 +275,7 @@ If you’re directly integrating with the `/invokeAgent API`, you must adhere to
 
  *Request payload*
 
-```
+```json
 {
 "action": "invokeAgent",
 "inputText": "User query to the agent",
@@ -297,7 +297,7 @@ If you’re directly integrating with the `/invokeAgent API`, you must adhere to
 
 The WebSocket API will respond with one (if streaming is disabled) or many (if streaming is enabled) JSON objects structured as follows for each query.
 
-```
+```json
 {
  "data" "some data",
  "conversationId": "id",

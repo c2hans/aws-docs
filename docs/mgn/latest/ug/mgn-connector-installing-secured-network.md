@@ -52,7 +52,7 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/mgn-connector-installing-s
 
 1.  **`com.amazonaws.{{region}}.mgn`** – The endpoint for MGN. This endpoint is required by the MGN connector, the AWS Replication Agent, and their respective installers. If a VPCE Policy is used (to scope down access), add the following statement to your policy:
 
-   ```
+   ```json
    {
        "Effect": "Allow",
        "Principal": "*",

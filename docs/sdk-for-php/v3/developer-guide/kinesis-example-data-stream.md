@@ -33,7 +33,7 @@ To create a Kinesis data stream, use the [CreateStream](https://docs.aws.amazon.
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -41,7 +41,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $kinesisClient = new Aws\Kinesis\KinesisClient([
     'profile' => 'default',
     'version' => '2013-12-02',
@@ -73,7 +73,7 @@ To retrieve details about a specified Kinesis data stream, use the [DescribeStre
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -81,7 +81,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $kinesisClient = new Aws\Kinesis\KinesisClient([
     'profile' => 'default',
     'version' => '2013-12-02',
@@ -111,7 +111,7 @@ To list your Kinesis data streams, use the [ListStreams](https://docs.aws.amazon
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -119,7 +119,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $kinesisClient = new Aws\Kinesis\KinesisClient([
     'profile' => 'default',
     'version' => '2013-12-02',
@@ -145,7 +145,7 @@ To write a single data record to a Kinesis data stream, use the [PutRecord](http
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -153,7 +153,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $kinesisClient = new Aws\Kinesis\KinesisClient([
     'profile' => 'default',
     'version' => '2013-12-02',
@@ -188,7 +188,7 @@ To delete a Kinesis data stream, use the [DeleteStream](https://docs.aws.amazon.
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -196,7 +196,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $kinesisClient = new Aws\Kinesis\KinesisClient([
     'profile' => 'default',
     'version' => '2013-12-02',

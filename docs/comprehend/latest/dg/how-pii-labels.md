@@ -16,7 +16,7 @@ Amazon Comprehend provides the following information for each label:
 
 The input text example above results in the following JSON output.
 
-```
+```json
 {
     "Labels": [
         {

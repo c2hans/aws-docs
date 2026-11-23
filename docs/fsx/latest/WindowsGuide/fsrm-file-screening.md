@@ -84,7 +84,7 @@ Creates a file screen that blocks users from saving specified types of files to 
 
 1. Create a basic active file screen that blocks Audio Files.
 
-   ```
+   ```powershell
    Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
        New-FSxFSRMFileScreen -Folder "share\department" -IncludeGroup "Audio and Video Files"
    }
@@ -92,7 +92,7 @@ Creates a file screen that blocks users from saving specified types of files to 
 
 1. Create a file screen that blocks video files and generates an event log entry when a user attempts to save a video file.
 
-   ```
+   ```powershell
    $notifications = [System.Collections.ArrayList]@()
    $eventNotification = @{
        ActionType = "Event"
@@ -119,7 +119,7 @@ Retrieves one or more file screens from your file system.
 
 1. Retrieve all file screens on the file system.
 
-   ```
+   ```powershell
    Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
        Get-FSxFSRMFileScreen
    }
@@ -142,7 +142,7 @@ Modifies the properties of an existing file screen.
 
 1. Modify the description and file groups for a file screen.
 
-   ```
+   ```powershell
    $includeGroups = @("Audio and Video Files")
    Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ArgumentList $includeGroups -ScriptBlock {
        param($includeGroups)
@@ -152,7 +152,7 @@ Modifies the properties of an existing file screen.
 
 1. Set a file screen to active mode and add notifications.
 
-   ```
+   ```powershell
    $notifications = [System.Collections.ArrayList]@()
    $eventNotification = @{
        ActionType = "Event"
@@ -180,7 +180,7 @@ Removes a file screen from a specified folder.
 
 1. Remove a file screen from a specific folder.
 
-   ```
+   ```powershell
    Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
        Remove-FSxFSRMFileScreen -Folder "share\projects" -PassThru
    }
@@ -199,7 +199,7 @@ Resets a file screen to match the settings of a specified template.
 
 1. Reset a file screen to match the settings defined in a file screen template.
 
-   ```
+   ```powershell
    Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
        Reset-FSxFSRMFileScreen -Folder "share\department" -Template "Block Audio Files"
    }
@@ -222,7 +222,7 @@ The `Get-FSxFSRMFileScreenTemplate` command retrieves one or more file screen te
 
  1. Retrieve all file screen templates.
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Get-FSxFSRMFileScreenTemplate
 }
@@ -254,7 +254,7 @@ The `New-FSxFSRMFileScreenTemplate` command creates a file screen template that 
 
  1. Create a file screen template with notifications.
 
-```
+```powershell
 $notifications = [System.Collections.ArrayList]@()
 $eventNotif = @{
     ActionType = "Event"
@@ -284,7 +284,7 @@ The `Remove-FSxFSRMFileScreenTemplate` command removes one or more file screen t
 
  1. Remove a single file screen template.
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Remove-FSxFSRMFileScreenTemplate -Name "Block Executables" -PassThru
 }
@@ -311,7 +311,7 @@ The `Set-FSxFSRMFileScreenTemplate` command modifies the properties of existing 
 
  1. Update a file screen template with new file groups.
 
-```
+```powershell
 $includeGroups = @("Audio and Video Files")
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ArgumentList $includeGroups -ScriptBlock {
     param($includeGroups)
@@ -321,7 +321,7 @@ Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationN
 
  2. Update a file screen template to active mode and update all derived file screens.
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Set-FSxFSRMFileScreenTemplate -Name "Block Executables" -Active:$true -UpdateDerived
 }
@@ -346,7 +346,7 @@ The `New-FSxFSRMFileScreenException` command creates a file screen exception tha
 
  1. Create a file screen exception for a specific folder and file group.
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     New-FSxFSRMFileScreenException -Folder "share\department" -IncludeGroup "Text Files"
 }
@@ -354,7 +354,7 @@ Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationN
 
  2. Create a file screen exception with multiple file groups.
 
-```
+```powershell
 $includeGroups = @("Audio and Video Files", "Documents")
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ArgumentList $includeGroups -ScriptBlock {
     param($includeGroups)
@@ -376,7 +376,7 @@ The `Get-FSxFSRMFileScreenException` command retrieves one or more file screen e
 
  1. Retrieve all file screen exceptions on the file system.
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Get-FSxFSRMFileScreenException
 }
@@ -384,7 +384,7 @@ Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationN
 
  2. Retrieve the file screen exception for a specific folder.
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Get-FSxFSRMFileScreenException -Folder "share\department"
 }
@@ -405,7 +405,7 @@ The `Remove-FSxFSRMFileScreenException` command removes a file screen exception 
 
  1. Remove a file screen exception from a specific folder.
 
-```
+```powershell
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
     Remove-FSxFSRMFileScreenException -Folder "share\projects" -PassThru
 }
@@ -428,7 +428,7 @@ The `Set-FSxFSRMFileScreenException` command modifies the properties of a file s
 
  1. Update the allowed file groups for a file screen exception.
 
-```
+```powershell
 $includeGroups = @("Audio and Video Files")
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ArgumentList $includeGroups -ScriptBlock {
     param($includeGroups)

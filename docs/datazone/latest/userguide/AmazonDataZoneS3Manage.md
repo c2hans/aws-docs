@@ -13,7 +13,7 @@ This role has the following inline permissions policy attached.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -103,7 +103,7 @@ The AmazonDataZoneS3Manage-<region>-<domainId> has the following trust policy at
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

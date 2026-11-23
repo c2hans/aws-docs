@@ -38,7 +38,7 @@ To allow the Amazon Pinpoint Email API to assume the IAM role and perform the ac
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -73,7 +73,7 @@ To allow the Amazon Pinpoint Email API to send email event data to a Firehose de
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

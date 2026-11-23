@@ -236,7 +236,7 @@ After comment lines 1 and 2 in the definition of `PERSON_TABLE_SCHEMA`, you see 
 #### Static schema code
 <a name="ddb-en-client-adv-features-nested-map-builder-code"></a>
 
-```
+```java
     // Abstract table schema that cannot be used to work with a DynamoDB table,
     // but can be used as a nested schema.
     public static final TableSchema<Address> TABLE_SCHEMA_ADDRESS = TableSchema.builder(Address.class)
@@ -318,7 +318,7 @@ The second scan uses the [`addNestedAttributeToProject()`](https://sdk.amazonaws
 
 The third scan operation uses the [`attributesToProject()`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/ScanEnhancedRequest.Builder.html#attributesToProject(java.lang.String...)) builder method to return the data for the first-level attribute, `hobbies`. The attribute type of `hobbies` is a set. To access the items, iterate over the set.
 
-```
+```java
         personDynamoDbTable = getDynamoDbEnhancedClient().table("Person", PERSON_TABLE_SCHEMA);
         PersonUtils.createPersonTable(personDynamoDbTable, getDynamoDbClient());
         // Use a utility class to add items to the Person table.
@@ -380,7 +380,7 @@ hobby 11
 If the `attributesToProject()` method follows any other builder method that adds attributes that you want to project, the list of attribute names supplied to the `attributesToProject()` replaces all other attribute names.
 A scan performed with the `ScanEnhancedRequest` instance in the following snippet returns only hobby data.
 
-```
+```java
 ScanEnhancedRequest lastOverwrites = ScanEnhancedRequest.builder()
         .addNestedAttributeToProject(
                 NestedAttributeName.create("addresses", "work", "street"))
@@ -399,7 +399,7 @@ Person{id=null, firstName='null', lastName='null', age=null, addresses=null, pho
 ```
 The following code snippet uses the `attributesToProject()` method first. This ordering preserves all other requested attributes.
 
-```
+```java
 ScanEnhancedRequest attributesPreserved = ScanEnhancedRequest.builder()
         // Use 'attributesToProject()' first so that the method call does not replace all other attributes
         // that you want to project.
@@ -424,7 +424,7 @@ You can use complex types in expressions, such as filter expressions and conditi
 
 The following example show two filter expressions that are used in scan operations. The filter expressions specify the match conditions for items you want in the results. The example uses `Person`, `Address`, and `PhoneNumber` classes shown previously.
 
-```
+```java
     public void scanUsingFilterOfNestedAttr() {
         // The following is a filter expression for an attribute that is a map of Address objects.
         // By using this filter expression, the SDK returns Person objects that have an address
@@ -466,7 +466,7 @@ The following example show two filter expressions that are used in scan operatio
 ### Helper method that populates the table
 <a name="nested-expressions-helper-method"></a>
 
-```
+```java
     public static void populateDatabase() {
         Person person1 = new Person();
         person1.setId(1);
@@ -529,7 +529,7 @@ The following example show two filter expressions that are used in scan operatio
 ### JSON representation of items in the database
 <a name="nested-attributes-expression-json-items"></a>
 
-```
+```json
 {
  "id": 1,
  "addresses": {
@@ -607,7 +607,7 @@ By using this approach, you ensure that no data is lost on update. The DynamoDB 
 
 The following example demonstrates that no data is lost if you first retrieve the item before updating it.
 
-```
+```java
     public void retrieveThenUpdateExample()  {
         // Assume that we ran this code yesterday.
         Person person = new Person();
@@ -655,7 +655,7 @@ To update an item in DynamoDB, you can provide a new object that has only the pr
 
 To specify which null-valued properties you want the SDK to ignore, provide an `IgnoreNullsMode` enum when you build the [`UpdateItemEnhancedRequest`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/UpdateItemEnhancedRequest.Builder.html). As an example of using one of the enumerated values, the following snippet uses the `IgnoreNullsMode.SCALAR_ONLY` mode.
 
-```
+```java
 // Create a new Person object to update the existing item in DynamoDB.
 Person personForUpdate = new Person();
 personForUpdate.setId(1);
@@ -748,7 +748,7 @@ When you provide an object with a bean or map to the `updateItem` method, the SD
 
 Working from our previous example that shows the retrieval of the item first, let's attempt to update the `city` attribute of `mainAddress` without the retrieval.
 
-```
+```java
 /* The retrieval example saved the Person object with a 'mainAddress' property whose 'city' property value is "MyCity".
 /* Note that we create a new Person with only the necessary information to update the city value
 of the mainAddress. */
@@ -834,7 +834,7 @@ The following two examples show uses of the `MAPS_ONLY` and `SCALAR_ONLY` enumer
 ##### `IgnoreNullsMode.MAPS_ONLY` example
 <a name="scalar-only-example"></a>
 
-```
+```java
     public void mapsOnlyModeExample() {
         // Assume that we ran this code yesterday.
         Person person = new Person();
@@ -865,7 +865,7 @@ The following two examples show uses of the `MAPS_ONLY` and `SCALAR_ONLY` enumer
 ##### `IgnoreNullsMode.SCALAR_ONLY example`
 <a name="maps-only-example"></a>
 
-```
+```java
     public void scalarOnlyExample() {
         // Assume that we ran this code yesterday.
         Person person = new Person();

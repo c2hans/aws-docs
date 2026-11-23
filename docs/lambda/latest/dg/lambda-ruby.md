@@ -52,7 +52,7 @@ Your Lambda function comes with a CloudWatch Logs log group. The function runtim
 
 The version of the AWS SDK included in the Ruby runtime depends on the runtime version and your AWS Region. The AWS SDK for Ruby is designed to be modular and is separated by AWS service. To find the version number of a particular service gem included in the runtime you're using, create a Lambda Event Function with code in the following format. Replace `aws-sdk-s3` and `Aws::S3`with the name of the service gems your code uses.
 
-```
+```Ruby
 require 'aws-sdk-s3'
 
 def lambda_handler(event:, context:)

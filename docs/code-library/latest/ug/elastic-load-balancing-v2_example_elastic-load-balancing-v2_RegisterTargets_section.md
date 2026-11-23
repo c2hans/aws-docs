@@ -63,7 +63,7 @@ For more information, see [Use Lambda functions as targets of an Application Loa
 **Tools for PowerShell V4**
 **Example 1: This example registers 'i-0672a4c4cdeae3111' instance with the specified target group.**
 
-```
+```powershell
 Register-ELB2Target -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970' -Target @{Port = 80; Id = 'i-0672a4c4cdeae3111'}
 ```
 +  For API details, see [RegisterTargets](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -71,7 +71,7 @@ Register-ELB2Target -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:1234
 **Tools for PowerShell V5**
 **Example 1: This example registers 'i-0672a4c4cdeae3111' instance with the specified target group.**
 
-```
+```powershell
 Register-ELB2Target -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970' -Target @{Port = 80; Id = 'i-0672a4c4cdeae3111'}
 ```
 +  For API details, see [RegisterTargets](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

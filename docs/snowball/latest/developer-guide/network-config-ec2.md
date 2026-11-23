@@ -129,7 +129,7 @@ If you added direct networking to your existing device by performing an in-the-f
 ------
 #### [ Amazon Linux 2 ]
 
-   ```
+   ```bash
    # Mac address of the direct network interface.
    # You got this when you created the direct network interface.
    DNI_MAC=[{{MAC ADDRESS FROM CREATED DNI}}]

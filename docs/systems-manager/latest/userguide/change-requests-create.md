@@ -184,7 +184,7 @@ You can create a change request using the AWS Command Line Interface (AWS CLI) b
 This sample JSON creates a change request using the `AWS-HelloWorldChangeTemplate` change template and `AWS-HelloWorld` runbook. To help you adapt this sample for your own change requests, see [StartChangeRequestExecution](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_StartChangeRequestExecution.html) in the *AWS Systems Manager API Reference* for information about all available parameters
 For more information about approvals for change requests, see [About change request approvals](#cm-approvals-requests).
 
-   ```
+   ```json
    {
        "ChangeRequestName": "MyChangeRequest",
        "DocumentName": "AWS-HelloWorldChangeTemplate",
@@ -227,7 +227,7 @@ For more information about approvals for change requests, see [About change requ
 
 1. In the directory where you created the JSON file, run the following command.
 
-   ```
+   ```sh
    aws ssm start-change-request-execution --cli-input-json file://{{MyChangeRequest}}.json
    ```
 

@@ -21,7 +21,7 @@ For more code examples, see [Code examples](https://docs.aws.amazon.com/pinpoint
 
 The following example demonstrates how to import a segment by using the AWS SDK for Java.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.CreateImportJobRequest;
@@ -32,7 +32,7 @@ import software.amazon.awssdk.services.pinpoint.model.CreateImportJobResponse;
 import software.amazon.awssdk.services.pinpoint.model.PinpointException;
 ```
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.CreateImportJobRequest;

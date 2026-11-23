@@ -17,7 +17,7 @@ The following workflow example is for illustrative purposes, and will not work w
 **Note**
 In the YAML code that follows, you can omit the `Connections:` sections if you want. If you omit these sections, you must ensure that the role specified in the **Default IAM role** field in your environment includes the permissions and trust policies required by the **AWS CDK bootstrap** and **AWS CDK deploy** actions. For more information about setting up an environment with a default IAM role, see [Creating an environment](deploy-environments-creating-environment.md). For more information about the permissions and trust policies required by the **AWS CDK bootstrap** and **AWS CDK deploy** actions, see the description of the `Role` property in the ['AWS CDK bootstrap' action YAML](cdk-boot-action-ref.md) and ['AWS CDK deploy' action YAML](cdk-dep-action-ref.md).
 
-```
+```yaml
 Name: codecatalyst-cdk-deploy-workflow
 SchemaVersion: 1.0
 

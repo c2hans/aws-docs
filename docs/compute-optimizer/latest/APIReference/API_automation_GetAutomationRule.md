@@ -91,6 +91,9 @@ Required: Yes
    "name": "string",
    "organizationConfiguration": {
       "accountIds": [ "string" ],
+      "excludedAccountIds": [ "string" ],
+      "excludedOrganizationalUnitIds": [ "string" ],
+      "organizationalUnitIds": [ "string" ],
       "ruleApplyOrder": "string"
    },
    "priority": "string",
@@ -149,7 +152,7 @@ Length Constraints: Minimum length of 0. Maximum length of 128.
 Pattern: `[a-zA-Z0-9_-]*`
 
  ** [organizationConfiguration](#API_automation_GetAutomationRule_ResponseSyntax) **   <a name="computeoptimizer-automation_GetAutomationRule-response-organizationConfiguration"></a>
-Configuration settings for organization-wide automation rules.
+Configuration settings that define the scope of an organization-wide automation rule. Each organizational unit (OU) list can contain up to 150 OUs or organization roots, and each account list can contain up to 50 accounts. Each included OU or organization root must have an effective organization rule mode of `AnyAllowed`. Exclusions take precedence over inclusions. An account that is in an included OU and is also excluded is excluded. The rule doesn't apply to the management account when the account is reached through an OU or the organization root.
 Type: [OrganizationConfiguration](API_automation_OrganizationConfiguration.md) object
 
  ** [priority](#API_automation_GetAutomationRule_ResponseSyntax) **   <a name="computeoptimizer-automation_GetAutomationRule-response-priority"></a>
@@ -201,11 +204,11 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
  You do not have sufficient permissions to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ForbiddenException **
  You are not authorized to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** InternalServerException **
  An internal error occurred while processing the request.
@@ -217,19 +220,19 @@ HTTP Status Code: 400
 
  ** OptInRequiredException **
  The account must be opted in to Compute Optimizer Automation before performing this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ResourceNotFoundException **
  The specified resource was not found.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ServiceUnavailableException **
  The service is temporarily unavailable.
-HTTP Status Code: 500
+HTTP Status Code: 503
 
  ** ThrottlingException **
  The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_automation_GetAutomationRule_SeeAlso"></a>

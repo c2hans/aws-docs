@@ -22,7 +22,7 @@ Now that you've successfully deployed your application revision, on the developm
 
 1. Revise the contents of the `index.html` file to change the background color and some of the text on the webpage, and then save the file:
 
-   ```
+   ```html
    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
    <html>
    <head>

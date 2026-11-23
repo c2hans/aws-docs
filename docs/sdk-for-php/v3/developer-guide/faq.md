@@ -31,7 +31,7 @@ We don’t recommend using `latest` in a production application because pulling 
 
 A `region` option is required when creating a client, and is specified using a string value. For a list of available AWS Regions and endpoints, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) in the AWS General Reference.
 
-```
+```php
 // Set the Region to the EU (Frankfurt) Region.
 $s3 = new Aws\S3\S3Client([
     'region'  => 'eu-central-1',
@@ -53,7 +53,7 @@ For more information, see [PHP filesize: Return values](http://docs.php.net/manu
 
 You can get debug information, including the data sent over the wire, using the `debug` option in a client constructor. When this option is set to `true`, all of the mutations of the command being executed, the request being sent, the response being received, and the result being processed are emitted to STDOUT. This includes the data that is sent and received over the wire.
 
-```
+```php
 $s3Client = new Aws\S3\S3Client([
     'region'  => 'us-standard',
     'version' => '2006-03-01',
@@ -105,7 +105,7 @@ The AWS SDK for PHP doesn’t currently run on HHVM, and won’t be able to unti
 
 You can disable SSL by setting the `scheme` parameter in a client factory method to ‘http’. It is important to note that not all services support `http` access. See [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) in the AWS General Reference for a list of regions, endpoints, and the supported schemes.
 
-```
+```php
 $client = new Aws\DynamoDb\DynamoDbClient([
     'version' => '2012-08-10',
     'region'  => 'us-west-2',
@@ -135,7 +135,7 @@ See [decode\_content](guide_configuration.md#http-decode-content) for an example
 
 You can disable body signing by setting the `ContentSHA256` parameter in the command object to `Aws\Signature\S3SignatureV4::UNSIGNED_PAYLOAD`. Then the AWS SDK for PHP will use it as the ‘x-amz-content-sha-256’ header and the body checksum in the canonical request.
 
-```
+```php
 $s3Client = new Aws\S3\S3Client([
     'version' => '2006-03-01',
     'region'  => 'us-standard'
@@ -171,7 +171,7 @@ Besides AWS SDK for PHP-customized `Exception` classes, each AWS service client 
 
 Error code information is available with [getAwsErrorCode()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#_getAwsErrorCode) from `Aws\Exception\AwsException`.
 
-```
+```php
 $sns = new \Aws\Sns\SnsClient([
     'region' => 'us-west-2',
     'version' => 'latest',

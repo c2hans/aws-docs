@@ -12,4 +12,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 
 ![Chart showing the machine learning lifecycle with the performance evaluation pipeline added in purple.](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/images/ml-lifecycle-preformance-evaluation-pipeline-added.png)
 
+*Figure 13: ML lifecycle with performance evaluation pipeline added*
+
  Figure 13 includes the model performance evaluation, the *data prepare* and CI/CD/CT pipelines that fine-tune data and algorithms, re-training, and evaluation of model results.

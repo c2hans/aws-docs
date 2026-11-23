@@ -26,7 +26,7 @@ The following code example shows how to use `AssociateKmsKey`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/CloudWatchLogs#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.CloudWatchLogs;
@@ -78,7 +78,7 @@ The following code example shows how to use `CancelExportTask`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/CloudWatchLogs#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.CloudWatchLogs;
@@ -126,7 +126,7 @@ The following code example shows how to use `CreateExportTask`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/CloudWatchLogs#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.CloudWatchLogs;
@@ -181,7 +181,7 @@ The following code example shows how to use `CreateLogGroup`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/CloudWatchLogs#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.CloudWatchLogs;
@@ -230,7 +230,7 @@ The following code example shows how to use `CreateLogStream`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/CloudWatchLogs#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.CloudWatchLogs;
@@ -281,7 +281,7 @@ The following code example shows how to use `DeleteLogGroup`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/CloudWatchLogs#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.CloudWatchLogs;
@@ -322,7 +322,7 @@ The following code example shows how to use `DescribeExportTasks`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/CloudWatchLogs#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.CloudWatchLogs;
@@ -371,7 +371,7 @@ The following code example shows how to use `DescribeLogGroups`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/CloudWatchLogs#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.CloudWatchLogs;
@@ -440,14 +440,14 @@ The following code example shows how to use `StartLiveTail`.
 **SDK for .NET**
 Include the required files.
 
-```
+```csharp
 using Amazon;
 using Amazon.CloudWatchLogs;
 using Amazon.CloudWatchLogs.Model;
 ```
 Start the Live Tail session.
 
-```
+```csharp
             var client = new AmazonCloudWatchLogsClient();
             var request = new StartLiveTailRequest
             {
@@ -467,7 +467,7 @@ Start the Live Tail session.
 ```
 You can handle the events from the Live Tail session in two ways:
 
-```
+```csharp
             /* Method 1
             * 1). Asynchronously loop through the event stream
             * 2). Set a timer to dispose the stream and stop the Live Tail session at the end.
@@ -502,7 +502,7 @@ You can handle the events from the Live Tail session in two ways:
             }
 ```
 
-```
+```csharp
             /* Method 2
             * 1). Add event handlers to each event variable
             * 2). Start processing the stream and wait for a timeout using AutoResetEvent

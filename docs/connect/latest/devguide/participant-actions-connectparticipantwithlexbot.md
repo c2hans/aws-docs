@@ -9,7 +9,7 @@ Connects the participant with the specified Amazon Lex bot. When the interaction
 ## Action syntax
 <a name="connectparticipantwithlexbot-action-syntax"></a>
 
-```
+```json
 {
       "Parameters": {
         "PromptId": "string",

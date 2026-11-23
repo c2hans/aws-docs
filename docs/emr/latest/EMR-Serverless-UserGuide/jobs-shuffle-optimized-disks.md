@@ -24,7 +24,7 @@ See the following steps to use shuffle-optimized disks in your workflows.
 
 1. Create an EMR Serverless release 7.1.0 application with the following command.
 
-   ```
+   ```bash,sh,zsh
    aws emr-serverless create-application \
      --type "SPARK" \
      --name my-application-name \
@@ -34,7 +34,7 @@ See the following steps to use shuffle-optimized disks in your workflows.
 
 1. Configure your Spark job to include the parameters `spark.emr-serverless.driver.disk.type` and/or `spark.emr-serverless.executor.disk.type` to run with shuffle-optimized disks. You can use either one or both parameters, depending on your use case.
 
-   ```
+   ```bash,sh,zsh
    aws emr-serverless start-job-run \
        --application-id {{application-id}} \
        --execution-role-arn {{job-role-arn}} \
@@ -60,7 +60,7 @@ See the following steps to use shuffle-optimized disks in your workflows.
 
 1. Create an EMR Serverless release 7.1.0 application with the following command.
 
-   ```
+   ```bash,sh,zsh
    aws emr-serverless create-application \
      --type "HIVE" \
      --name my-application-name \
@@ -70,7 +70,7 @@ See the following steps to use shuffle-optimized disks in your workflows.
 
 1. Configure your Hive job to include the parameters `hive.driver.disk.type` and/or `hive.tez.disk.type` to run with shuffle-optimized disks. You can use either one or both parameters, depending on your use case.
 
-   ```
+   ```bash,sh,zsh
    aws emr-serverless start-job-run \
        --application-id {{application-id}} \
        --execution-role-arn {{job-role-arn}} \
@@ -112,7 +112,7 @@ When this application runs Spark jobs, it first consumes the pre-initialized wor
 ------
 #### [ Spark ]
 
-```
+```bash,sh,zsh
 aws emr-serverless create-application \
   --type "SPARK" \
   --name {{<my-application-name>}} \
@@ -146,7 +146,7 @@ aws emr-serverless create-application \
 ------
 #### [ Hive ]
 
-```
+```bash,sh,zsh
 aws emr-serverless create-application \
   --type "HIVE" \
   --name {{<my-application-name>}} \

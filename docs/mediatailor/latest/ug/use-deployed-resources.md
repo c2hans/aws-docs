@@ -55,7 +55,7 @@ For more information about MediaTailor URL structure, see [Set up CDN integratio
 
 After you have your playback URL, you need to configure a video player to use it. For broadcast professionals, this is similar to configuring a player for any HLS or DASH stream, but now the stream will include personalized ads. Here's a simple example using the popular HLS.js player:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>

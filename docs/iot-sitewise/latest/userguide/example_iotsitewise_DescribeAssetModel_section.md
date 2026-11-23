@@ -88,7 +88,7 @@ For more information, see [Check the status of an asset or component model](http
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
     /**
      * Retrieves the property IDs associated with a specific asset model.
      *
@@ -124,7 +124,7 @@ For more information, see [Check the status of an asset or component model](http
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   DescribeAssetModelCommand,
   IoTSiteWiseClient,

@@ -75,7 +75,7 @@ A few examples are pre-shared keys for VPN creation, confidential keys such as A
 
 Example:
 
-```
+```json
 {
  "Action": "secretsmanager:*",
  "Resource": [

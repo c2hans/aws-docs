@@ -14,7 +14,7 @@ The following example AWS Systems Manager runbook performs these actions:
 ------
 #### [ YAML ]
 
-```
+```yaml
     ---
     description: Custom Automation Backup and Recovery Example
     schemaVersion: '0.3'
@@ -84,7 +84,7 @@ The following example AWS Systems Manager runbook performs these actions:
 ------
 #### [ JSON ]
 
-```
+```json
     {
        "description": "Custom Automation Backup and Recovery Example",
        "schemaVersion": "0.3",

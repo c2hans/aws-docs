@@ -30,7 +30,7 @@ The following code example shows how to get started using Auto Scaling.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
 namespace AutoScalingActions;
 
 using Amazon.AutoScaling;
@@ -83,7 +83,7 @@ The following code example shows how to:
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
 global using Amazon.AutoScaling;
 global using Amazon.AutoScaling.Model;
 global using Amazon.CloudWatch;
@@ -426,7 +426,7 @@ public class UIWrapper
 ```
 Define functions that are called by the scenario to manage launch templates and metrics. These functions wrap Auto Scaling, Amazon EC2, and CloudWatch actions.
 
-```
+```csharp
 namespace AutoScalingActions;
 
 using Amazon.AutoScaling;
@@ -977,7 +977,7 @@ The following code example shows how to use `CreateAutoScalingGroup`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a new Amazon EC2 Auto Scaling group.
     /// </summary>
@@ -1032,7 +1032,7 @@ The following code example shows how to use `DescribeAutoScalingGroups`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get data about the instances in an Amazon EC2 Auto Scaling group.
     /// </summary>
@@ -1085,7 +1085,7 @@ The following code example shows how to use `DescribeAutoScalingInstances`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get data about the instances in an Amazon EC2 Auto Scaling group.
     /// </summary>
@@ -1138,7 +1138,7 @@ The following code example shows how to use `DescribeScalingActivities`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Retrieve a list of the Amazon EC2 Auto Scaling activities for an
     /// Amazon EC2 Auto Scaling group.
@@ -1173,7 +1173,7 @@ The following code example shows how to use `DisableMetricsCollection`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Disable the collection of metric data for an Amazon EC2 Auto Scaling
     /// group.
@@ -1202,7 +1202,7 @@ The following code example shows how to use `EnableMetricsCollection`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Enable the collection of metric data for an Auto Scaling group.
     /// </summary>
@@ -1236,7 +1236,7 @@ The following code example shows how to use `SetDesiredCapacity`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Set the desired capacity of an Auto Scaling group.
     /// </summary>
@@ -1270,7 +1270,7 @@ The following code example shows how to use `TerminateInstanceInAutoScalingGroup
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Terminate all instances in the Auto Scaling group in preparation for
     /// deleting the group.
@@ -1309,7 +1309,7 @@ The following code example shows how to use `UpdateAutoScalingGroup`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Update the capacity of an Auto Scaling group.
     /// </summary>

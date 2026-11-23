@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::RouterInput SilentAudioConfiguration
 
-<a name="aws-properties-mediaconnect-routerinput-silentaudioconfiguration-description"></a>The `SilentAudioConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::RouterInput](aws-resource-mediaconnect-routerinput.md).
+Detects silent audio in the router input's source content and reports it through a CloudWatch metric, an EventBridge event, and a router input message.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-routerinput-silentaudioconfiguration-syntax"></a>
@@ -35,14 +35,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-routerinput-silentaudioconfiguration-properties"></a>
 
 `State`  <a name="cfn-mediaconnect-routerinput-silentaudioconfiguration-state"></a>
-Property description not available.
+Indicates whether silent audio detection is enabled or disabled.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `ENABLED | DISABLED`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ThresholdSeconds`  <a name="cfn-mediaconnect-routerinput-silentaudioconfiguration-thresholdseconds"></a>
-Property description not available.
+The number of consecutive seconds of silence that MediaConnect must detect before it reports an issue.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `10`

@@ -34,7 +34,7 @@ The fifth stage deploys the AI layer: Aurora PostgreSQL Serverless v2 with the p
 
 After each stage, the reference implementation includes verification queries to confirm the expected resources exist and are in the correct state. For the data layer, this means confirming the S3 prefix structure is populated and Athena can execute a count query against the core tables. For the Quick Suite layer, this means confirming datasets and dashboards are listed under the account. For the Bedrock layer, this means confirming knowledge bases and agents are registered.
 
-```
+```bash
 # Example: confirm S3 data lake prefix is populated
 aws s3 ls s3://automotive-cx-data-lake-<ACCOUNT-ID>/raw/
 

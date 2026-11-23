@@ -11,7 +11,7 @@ The following example policy grants the account 111122223333 permission to publi
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

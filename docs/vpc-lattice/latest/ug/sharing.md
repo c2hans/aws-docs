@@ -171,7 +171,7 @@ Sent to the entity owner when an entity consumer calls [GetServiceNetworkVpcAsso
 
 The following is an example entry for the `CreateServiceNetworkServiceAssociationBySharee` event.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

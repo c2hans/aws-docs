@@ -77,7 +77,7 @@ https://sns.us-east-2.amazonaws.com/?Action=GetDataProtectionPolicy
 #### Sample Response
 <a name="API_GetDataProtectionPolicy_Example_1_Response"></a>
 
-```
+```xml
 <GetDataProtectionPolicyResponse xmlns="http://sns.amazonaws.com/doc/2010-03-31/">
     <GetDataProtectionPolicyResult>
         <DataProtectionPolicy>{&quot;Name&quot;:&quot;__default_payload_policy&quot;,&quot;Description&quot;:&quot;Default payload policy&quot;,&quot;Version&quot;:&quot;2021-06-01&quot;,&quot;Statement&quot;:[{&quot;Sid&quot;:&quot;__deny_statement&quot;,&quot;DataDirection&quot;:&quot;Inbound&quot;,&quot;Principal&quot;:[&quot;*&quot;],&quot;DataIdentifier&quot;:[&quot;arn:aws:dataprotection::aws:data-identifier/Name&quot;],&quot;Operation&quot;:{&quot;Deny&quot;:{}}}]}</DataProtectionPolicy>

@@ -72,7 +72,7 @@ Use the following information to help troubleshoot problems with creating `aws:e
   + In the Parameter Store section of the Systems Manager console, refresh the list of parameters periodically to search for the new or updated parameter details.
   + Use the **GetParameter** command to check for the new or updated parameter. For example, using the AWS Command Line Interface (AWS CLI):
 
-    ```
+    ```bash
     aws ssm get-parameter name {{MyParameter}}
     ```
 

@@ -20,7 +20,7 @@ module-info          modules              null                 openmpi/4.1.0    
 
 To load a module, run `module load modulename`. You can add this to the script used to run `mpirun`.
 
-```
+```sh
 $ module load armpl
 
 Use of the free of charge version of Arm Performance Libraries is subject to the terms and

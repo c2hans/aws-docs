@@ -36,7 +36,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry for the `CreateResourceShare` action. In this example, the caller uses temporary credentials from a role session. We recommend temporary credentials over long-term access keys.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -87,7 +87,7 @@ The following example shows a CloudTrail log entry for the `CreateResourceShare`
 
 The following example shows a CloudTrail log entry for the `CreateResourceShareAssociation` management event. AWS RAM emits this event when an association of a principal, resource, permission, or source with a resource share is successfully completed.
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -127,7 +127,7 @@ The following example shows a CloudTrail log entry for the `CreateResourceShareA
 
 The following example shows a CloudTrail log entry for the `RemoveResourceShareAssociation` management event. AWS RAM emits this event when an association of a principal, resource, permission, or source with a resource share is successfully removed.
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

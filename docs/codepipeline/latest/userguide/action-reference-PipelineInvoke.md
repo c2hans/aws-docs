@@ -93,7 +93,7 @@ When CodePipeline runs the action, the CodePipeline service role policy requires
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: Invoke-pipeline
 actionTypeId:
   category: Invoke
@@ -111,7 +111,7 @@ Value":"zq8mjNEXAMPLE"}]'
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "Invoke-pipeline",
     "actionTypeId": {

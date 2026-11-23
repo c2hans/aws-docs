@@ -70,7 +70,7 @@ https://sns.us-east-2.amazonaws.com/?Action=ListSubscriptions
 #### Sample Response
 <a name="API_ListSubscriptions_Example_1_Response"></a>
 
-```
+```xml
 <ListSubscriptionsResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ListSubscriptionsResult>
         <Subscriptions>

@@ -139,7 +139,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-host-trend-micro-dsm-add-login-read-only-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-CreateEPSDSMReadOnlyUser",
   "Region": "us-east-1",
@@ -152,7 +152,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-host-trend-micro-dsm-add-login-read-only-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-CreateEPSDSMReadOnlyUser",
   "Region": "us-east-1",

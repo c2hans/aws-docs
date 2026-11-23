@@ -50,7 +50,7 @@ You can associate a customer managed key with an encrypted snapshot, disassociat
 **To associate a KMS key with a snapshot**
 Use the [associate-kms-key-id](https://docs.aws.amazon.com/cli/latest/reference/ec2/associate-kms-key-id.html) command. The following example associates a customer managed key with a snapshot.
 
-```
+```bash
 aws ec2 associate-kms-key-id \
     --snapshot-id {{snap-1234567890abcdef0}} \
     --kms-key-id {{arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}
@@ -59,7 +59,7 @@ aws ec2 associate-kms-key-id \
 **To disassociate a KMS key from a snapshot**
 Use the [disassociate-kms-key-id](https://docs.aws.amazon.com/cli/latest/reference/ec2/disassociate-kms-key-id.html) command. The following example disassociates a KMS key from a snapshot.
 
-```
+```bash
 aws ec2 disassociate-kms-key-id \
     --snapshot-id {{snap-1234567890abcdef0}} \
     --kms-key-id {{arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}
@@ -68,7 +68,7 @@ aws ec2 disassociate-kms-key-id \
 **To view the KMS keys associated with a snapshot**
 Use the [describe-snapshots](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-snapshots.html) command and check the `AssociatedKmsKeys` field. The following example describes a snapshot.
 
-```
+```bash
 aws ec2 describe-snapshots \
     --filters Name=snapshot-id,Values={{snap-1234567890abcdef0}}
 ```
@@ -79,7 +79,7 @@ aws ec2 describe-snapshots \
 **To associate a KMS key with a snapshot**
 Use the [Register-EC2KmsKeyId](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2KmsKeyId.html) cmdlet. The following example associates a customer managed key with a snapshot.
 
-```
+```powershell
 Register-EC2KmsKeyId `
     -SnapshotId {{snap-1234567890abcdef0}} `
     -KmsKeyId {{arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}
@@ -88,7 +88,7 @@ Register-EC2KmsKeyId `
 **To disassociate a KMS key from a snapshot**
 Use the [Unregister-EC2KmsKeyId](https://docs.aws.amazon.com/powershell/latest/reference/items/Unregister-EC2KmsKeyId.html) cmdlet. The following example disassociates a KMS key from a snapshot.
 
-```
+```powershell
 Unregister-EC2KmsKeyId `
     -SnapshotId {{snap-1234567890abcdef0}} `
     -KmsKeyId {{arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}
@@ -97,7 +97,7 @@ Unregister-EC2KmsKeyId `
 **To view the KMS keys associated with a snapshot**
 Use the [Get-EC2Snapshot](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Snapshot.html) cmdlet and check the `AssociatedKmsKeys` property. The following example describes a snapshot.
 
-```
+```powershell
 Get-EC2Snapshot `
     -SnapshotId {{snap-1234567890abcdef0}}
 ```

@@ -55,7 +55,7 @@ For more information, see [Step 4: Create a Managed-Instance Activation for a Hy
 **Tools for PowerShell V4**
 **Example 1: This example provides details about the activations on your account.**
 
-```
+```powershell
 Get-SSMActivation
 ```
 **Output:**
@@ -76,7 +76,7 @@ RegistrationsCount  : 0
 **Tools for PowerShell V5**
 **Example 1: This example provides details about the activations on your account.**
 
-```
+```powershell
 Get-SSMActivation
 ```
 **Output:**

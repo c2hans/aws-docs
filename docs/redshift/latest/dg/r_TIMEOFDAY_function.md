@@ -25,7 +25,7 @@ VARCHAR
 
 The following example returns the current date and time by using the TIMEOFDAY function.
 
-```
+```sql
 select timeofday();
 
 timeofday

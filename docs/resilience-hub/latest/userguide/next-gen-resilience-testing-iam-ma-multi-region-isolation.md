@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 
 Attach the following permissions policy to the target role for the **Multi-Region: isolation** template.
 
-```
+```json
 {
   "Version": "2012-10-17"		 	 	 ,
   "Statement": [

@@ -56,7 +56,7 @@ If you don’t have an existing Facebook app, you will see a different option. C
 
 To configure Facebook as an outbound resource provider, use the following:
 
-```
+```json
 {
   "name": "Facebook",
   "credentialProviderVendor": "FacebookOauth2",

@@ -90,7 +90,7 @@ Use an object schema. Put all fields in `required`. Set `additionalProperties` t
 **Important**
 For JSON Schema output with the Converse API, you must set `additionalModelRequestFields.text.format.strict` to `true`, in addition to specifying the schema in `outputConfig`. Include the following field in your request.
 
-```
+```json
 {
   "additionalModelRequestFields": {
     "text": {
@@ -255,7 +255,7 @@ On the `bedrock-runtime` endpoint, limits are managed as tokens per minute (TPM)
 
 **Step 3 - Get the SDK:** You must have Python installed to use this guide. Then install the OpenAI SDK.
 
-```
+```bash
 pip install openai
 ```
 
@@ -267,7 +267,7 @@ Set up your environment to use the API key for authentication.
 ------
 #### [ bedrock-mantle ]
 
-```
+```bash
 OPENAI_API_KEY="<provide your Bedrock API key>"
 OPENAI_BASE_URL="https://bedrock-mantle.us-west-2.api.aws/openai/v1"
 ```
@@ -275,7 +275,7 @@ OPENAI_BASE_URL="https://bedrock-mantle.us-west-2.api.aws/openai/v1"
 ------
 #### [ bedrock-runtime ]
 
-```
+```bash
 OPENAI_API_KEY="<provide your Bedrock API key>"
 OPENAI_BASE_URL="https://bedrock-runtime.us-west-2.amazonaws.com/openai/v1"
 ```
@@ -298,7 +298,7 @@ Use the settings from [Step 4 - Set environment variables](#model-card-openai-gp
 ------
 #### [ Responses API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -313,7 +313,7 @@ print(response)
 ------
 #### [ Chat ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -335,7 +335,7 @@ Use the settings from [Step 4 - Set environment variables](#model-card-openai-gp
 ------
 #### [ Responses API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -354,11 +354,11 @@ print(response)
 
 Set `OPENAI_API_KEY` to your Amazon Bedrock API key. This example uses the `bedrock-mantle` endpoint in `us-east-1`.
 
-```
+```bash
 export OPENAI_API_KEY="<your Amazon Bedrock API key>"
 ```
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI(

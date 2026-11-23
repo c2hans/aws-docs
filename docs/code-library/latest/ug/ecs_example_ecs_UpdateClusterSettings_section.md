@@ -52,7 +52,7 @@ For more information, see [Modifying Account Settings](https://docs.aws.amazon.c
 **Tools for PowerShell V4**
 **Example 1: This cmdlet modifies the settings to use for an ECS cluster.**
 
-```
+```powershell
 Update-ECSClusterSetting -Cluster "LAB-ECS-CL" -Setting @{Name="containerInsights"; Value="disabled"}
 ```
 **Output:**
@@ -78,7 +78,7 @@ Tags                              : {}
 **Tools for PowerShell V5**
 **Example 1: This cmdlet modifies the settings to use for an ECS cluster.**
 
-```
+```powershell
 Update-ECSClusterSetting -Cluster "LAB-ECS-CL" -Setting @{Name="containerInsights"; Value="disabled"}
 ```
 **Output:**

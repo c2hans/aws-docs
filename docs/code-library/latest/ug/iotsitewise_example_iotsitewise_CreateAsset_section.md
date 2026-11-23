@@ -43,7 +43,7 @@ For more information, see [Creating assets](https://docs.aws.amazon.com/iot-site
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
     /**
      * Creates an asset with the specified name and asset model Id.
      *
@@ -80,7 +80,7 @@ For more information, see [Creating assets](https://docs.aws.amazon.com/iot-site
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   CreateAssetCommand,
   IoTSiteWiseClient,
@@ -121,7 +121,7 @@ export const main = async ({ assetName, assetModelId }) => {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 
-```
+```python
 class IoTSitewiseWrapper:
     """Encapsulates AWS IoT SiteWise actions using the client interface."""
 
@@ -180,7 +180,7 @@ class IoTSitewiseWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ios->createasset(
           iv_assetname = iv_asset_name

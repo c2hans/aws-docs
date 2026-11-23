@@ -196,7 +196,7 @@ The following IAM policy provides the necessary permissions for manually startin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

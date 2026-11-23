@@ -8,7 +8,7 @@ Not all exceptions should be retried. For example, syntax errors, authentication
 
 The following shows an example of an exponential backoff and retry pattern for handling `ConcurrentModificationException` errors:
 
-```
+```java
 public static void main() {
   try (Driver driver = getDriver(HOST_BOLT, getDefaultConfig())) {
     retriableOperation(driver, "CREATE (n {prop:'1'})")

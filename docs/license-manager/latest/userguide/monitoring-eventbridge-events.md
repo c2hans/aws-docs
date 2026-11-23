@@ -16,7 +16,7 @@ The fields in the `detail` object depend on the event type. The following exampl
 
 The following example shows a `License Change` event for a new license:
 
-```
+```json
 {
  "version": "0",
  "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -44,7 +44,7 @@ The following example shows a `License Change` event for a new license:
 
 The following example shows a `Grant Change` event for a new grant that is pending acceptance:
 
-```
+```json
 {
  "version": "0",
  "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
@@ -73,7 +73,7 @@ The following example shows a `Grant Change` event for a new grant that is pendi
 
 The following example shows a `License Token Change` event for a new license token:
 
-```
+```json
 {
  "version": "0",
  "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",

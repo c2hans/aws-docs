@@ -32,7 +32,7 @@ You can view capability health and status issues in the EKS console or using the
 
  ** AWS CLI**:
 
-```
+```bash
 # View capability status and health
 aws eks describe-capability \
   --region {{region-code}} \
@@ -51,7 +51,7 @@ aws eks describe-capability \
 
  **Check resource status**:
 
-```
+```bash
 # Describe the resource to see conditions and events
 kubectl describe bucket {{my-bucket}} -n default
 
@@ -64,7 +64,7 @@ kubectl get events --field-selector involvedObject.name={{my-bucket}} -n default
 
  **Verify IAM permissions**:
 
-```
+```bash
 # View the Capability Role's policies
 aws iam list-attached-role-policies --role-name {{my-ack-capability-role}}
 aws iam list-role-policies --role-name {{my-ack-capability-role}}
@@ -78,7 +78,7 @@ aws iam get-role-policy --role-name {{my-ack-capability-role}} --policy-name {{p
 
 ACK only tracks resources it creates through Kubernetes manifests. To manage existing AWS resources with ACK, use the adoption feature.
 
-```
+```yaml
 apiVersion: s3.services.k8s.aws/v1alpha1
 kind: Bucket
 metadata:
@@ -98,7 +98,7 @@ If resources are not being created in a target AWS account when using IAM Role S
 
  **Verify trust relationship**:
 
-```
+```bash
 # Check the trust policy in the target account role
 aws iam get-role --role-name {{cross-account-ack-role}} --query 'Role.AssumeRolePolicyDocument'
 ```
@@ -107,7 +107,7 @@ The trust policy must allow the source account’s Capability Role to assume it.
 
  **Confirm IAMRoleSelector configuration**:
 
-```
+```bash
 # List IAMRoleSelectors (cluster-scoped)
 kubectl get iamroleselector
 
@@ -119,7 +119,7 @@ kubectl describe iamroleselector {{my-selector}}
 
 IAMRoleSelectors are cluster-scoped resources but target specific namespaces. Ensure your ACK resources are in a namespace that matches the IAMRoleSelector’s namespace selector:
 
-```
+```bash
 # Check resource namespace
 kubectl get bucket {{my-cross-account-bucket}} -n {{production}}
 
@@ -134,7 +134,7 @@ kubectl get iamroleselector {{my-selector}} -o jsonpath='{.spec.namespaceSelecto
 
 Verify that the IAMRoleSelector was successfully matched to your resource by checking the `ACK.IAMRoleSelected` condition:
 
-```
+```bash
 # Check if IAMRoleSelector was matched
 kubectl get bucket {{my-cross-account-bucket}} -n {{production}} -o jsonpath='{.status.conditions[?(@.type=="ACK.IAMRoleSelected")]}'
 ```
@@ -145,7 +145,7 @@ If the condition is `False` or missing, the IAMRoleSelector’s namespace select
 
 The Capability Role needs `sts:AssumeRole` and `sts:TagSession` permissions for the target account role:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -167,14 +167,14 @@ If you delete a Kubernetes resource whose ACK service is listed in the capabilit
 
 To confirm, check for a deletion timestamp and a remaining ACK finalizer:
 
-```
+```bash
 kubectl get bucket {{my-bucket}} -n {{my-namespace}} \
   -o jsonpath='{.metadata.deletionTimestamp}{"\n"}{.metadata.finalizers}{"\n"}'
 ```
 
 Then confirm that the service is turned off for the capability:
 
-```
+```bash
 aws eks describe-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \
@@ -184,7 +184,7 @@ aws eks describe-capability \
 
 To resolve this, re-enable the service so that its controller runs and completes the deletion. Remove the service from `disabledServices`, passing the complete list of services that you want to remain turned off. If this service was the only one turned off, specify an empty list. The following example re-enables `s3` while leaving `ec2` and `iam` turned off:
 
-```
+```bash
 aws eks update-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \
@@ -197,7 +197,7 @@ After the capability returns to `ACTIVE`, the controller processes the pending d
 **Warning**
 Removing the finalizer by hand deletes the Kubernetes resource but leaves the AWS resource in place, with no record of it in your cluster. Only do this if you intend to keep the AWS resource and manage it outside of ACK, or if you have already deleted it another way.
 
-```
+```bash
 kubectl patch bucket {{my-bucket}} -n {{my-namespace}} \
   --type merge -p '{"metadata":{"finalizers":[]}}'
 ```

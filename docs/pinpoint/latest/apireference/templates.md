@@ -74,7 +74,7 @@ Retrieves information about the communication requirements and options that are 
 #### TemplatesResponse schema
 <a name="templates-response-body-templatesresponse-example"></a>
 
-```
+```json
 {
   "Item": [
     {
@@ -97,7 +97,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="templates-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

@@ -66,7 +66,7 @@ For more information, see [Creating Systems Manager Documents](https://docs.aws.
 **Tools for PowerShell V4**
 **Example 1: This example returns information about a document.**
 
-```
+```powershell
 Get-SSMDocumentDescription -Name "RunShellScript"
 ```
 **Output:**
@@ -93,7 +93,7 @@ Status          : Active
 **Tools for PowerShell V5**
 **Example 1: This example returns information about a document.**
 
-```
+```powershell
 Get-SSMDocumentDescription -Name "RunShellScript"
 ```
 **Output:**
@@ -123,7 +123,7 @@ Status          : Active
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_ssm->describedocument( iv_name = iv_name ).
         DATA(lo_document) = lo_result->get_document( ).

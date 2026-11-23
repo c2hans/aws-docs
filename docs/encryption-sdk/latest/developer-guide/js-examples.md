@@ -25,7 +25,7 @@ Step 1: Set the commitment policy.
 Beginning in version 1.7.*x* of the AWS Encryption SDK for JavaScript, you can set the commitment policy when you call the new `buildClient` function that instantiates an AWS Encryption SDK client. The `buildClient` function takes an enumerated value that represents your commitment policy. It returns updated `encrypt` and `decrypt` functions that enforce your commitment policy when you encrypt and decrypt.
 The following examples use the `buildClient` function to specify the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. You can also use the `buildClient` to limit the number of encrypted data keys in an encrypted message. For more information, see [Limiting encrypted data keys](configure.md#config-limit-keys).
 
-```
+```js
 import {
   KmsKeyringBrowser,
   KMS,
@@ -39,7 +39,7 @@ const { encrypt, decrypt } = buildClient(
 )
 ```
 
-```
+```js
 import {
   KmsKeyringNode,
   buildClient,
@@ -59,7 +59,7 @@ If you plan to reuse your AWS KMS keyring for decrypting, you must use key ARNs 
 Before running this code, replace the example AWS KMS key identifiers with valid identifiers. You must have the [permissions required to use the AWS KMS keys](use-kms-keyring.md#kms-keyring-permissions) in the keyring.
 Begin by providing your credentials to the browser. The AWS Encryption SDK for JavaScript examples use the [webpack.DefinePlugin](https://webpack.js.org/plugins/define-plugin/), which replaces the credential constants with your actual credentials. But you can use any method to provide your credentials. Then, use the credentials to create an AWS KMS client.
 
-```
+```javascript
 declare const credentials: {accessKeyId: string, secretAccessKey:string, sessionToken:string }
 
 const clientProvider = getClient(KMS, {
@@ -72,14 +72,14 @@ const clientProvider = getClient(KMS, {
 ```
 Next, specify the AWS KMS keys for the generator key and additional key. Then, create an AWS KMS keyring using the AWS KMS client and the AWS KMS keys.
 
-```
+```javascript
 const generatorKeyId = '{{arn:aws:kms:us-west-2:111122223333:alias/EncryptDecrypt}}'
 const keyIds = ['{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}']
 
 const keyring = new KmsKeyringBrowser({ clientProvider, generatorKeyId, keyIds })
 ```
 
-```
+```javascript
 const generatorKeyId = '{{arn:aws:kms:us-west-2:111122223333:alias/EncryptDecrypt}}'
 const keyIds = ['{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}']
 
@@ -90,7 +90,7 @@ Step 3: Set the encryption context.
 An [encryption context](concepts.md#encryption-context) is arbitrary, non-secret additional authenticated data. When you provide an encryption context on encrypt, the AWS Encryption SDK cryptographically binds the encryption context to the ciphertext so that the same encryption context is required to decrypt the data. Using an encryption context is optional, but we recommend it as a best practice.
 Create a simple object that includes the encryption context pairs. The key and value in each pair must be a string.
 
-```
+```javascript
 const context = {
   stage: 'demo',
   purpose: 'simple demonstration app',
@@ -98,7 +98,7 @@ const context = {
 }
 ```
 
-```
+```javascript
 const context = {
   stage: 'demo',
   purpose: 'simple demonstration app',
@@ -111,13 +111,13 @@ To encrypt the plaintext data, call the `encrypt` function. Pass in the AWS KMS 
 The `encrypt` function returns an [encrypted message](concepts.md#message) (`result`) that contains the encrypted data, the encrypted data keys, and important metadata, including the encryption context and signature.
 You can [decrypt this encrypted message](#javascript-example-decrypt) by using the AWS Encryption SDK for any supported programming language.
 
-```
+```javascript
 const plaintext = new Uint8Array([1, 2, 3, 4, 5])
 
 const { result } = await encrypt(keyring, plaintext, { encryptionContext: context })
 ```
 
-```
+```javascript
 const plaintext = 'asdf'
 
 const { result } = await encrypt(keyring, plaintext, { encryptionContext: context })
@@ -134,7 +134,7 @@ Step 1: Set the commitment policy.
 Beginning in version 1.7.*x* of the AWS Encryption SDK for JavaScript, you can set the commitment policy when you call the new `buildClient` function that instantiates an AWS Encryption SDK client. The `buildClient` function takes an enumerated value that represents your commitment policy. It returns updated `encrypt` and `decrypt` functions that enforce your commitment policy when you encrypt and decrypt.
 The following examples use the `buildClient` function to specify the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. You can also use the `buildClient` to limit the number of encrypted data keys in an encrypted message. For more information, see [Limiting encrypted data keys](configure.md#config-limit-keys).
 
-```
+```js
 import {
   KmsKeyringBrowser,
   KMS,
@@ -148,7 +148,7 @@ const { encrypt, decrypt } = buildClient(
 )
 ```
 
-```
+```js
 import {
   KmsKeyringNode,
   buildClient,
@@ -168,7 +168,7 @@ If you use the same keyring for encrypting and decrypting, use key ARNs to ident
 In this example, we create a keyring that includes only one of the AWS KMS keys in the encryption keyring. Before running this code, replace the example key ARN with a valid one. You must have `kms:Decrypt` permission on the AWS KMS key.
 Begin by providing your credentials to the browser. The AWS Encryption SDK for JavaScript examples use the [webpack.DefinePlugin](https://webpack.js.org/plugins/define-plugin/), which replaces the credential constants with your actual credentials. But you can use any method to provide your credentials. Then, use the credentials to create an AWS KMS client.
 
-```
+```javascript
 declare const credentials: {accessKeyId: string, secretAccessKey:string, sessionToken:string }
 
 const clientProvider = getClient(KMS, {
@@ -181,13 +181,13 @@ const clientProvider = getClient(KMS, {
 ```
 Next, create an AWS KMS keyring using the AWS KMS client. This example uses just one of the AWS KMS keys from the encryption keyring.
 
-```
+```javascript
 const keyIds = ['{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}']
 
 const keyring = new KmsKeyringBrowser({ clientProvider, keyIds })
 ```
 
-```
+```javascript
 const keyIds = ['{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}']
 
 const keyring = new KmsKeyringNode({ keyIds })
@@ -197,11 +197,11 @@ Step 3: Decrypt the data.
 Next, call the `decrypt` function. Pass in the decryption keyring that you just created (`keyring`) and the [encrypted message](concepts.md#message) that the `encrypt` function returned (`result`). The AWS Encryption SDK uses the keyring to decrypt one of the encrypted data keys. Then it uses the plaintext data key to decrypt the data.
 If the call succeeds, the `plaintext` field contains the plaintext (decrypted) data. The `messageHeader` field contains metadata about the decryption process, including the encryption context that was used to decrypt the data.
 
-```
+```javascript
 const { plaintext, messageHeader } = await decrypt(keyring, result)
 ```
 
-```
+```javascript
 const { plaintext, messageHeader } = await decrypt(keyring, result)
 ```
 
@@ -210,7 +210,7 @@ The [encryption context](concepts.md#encryption-context) that was used to decryp
 When verifying the encryption context, do not require an exact match. When you use an encryption algorithm with signing, the [cryptographic materials manager](concepts.md#crypt-materials-manager) (CMM) adds the public signing key to the encryption context before encrypting the message. But all of the encryption context pairs that you submitted should be included in the encryption context that was returned.
 First, get the encryption context from the message header. Then, verify that each key-value pair in the original encryption context (`context`) matches a key-value pair in the returned encryption context (`encryptionContext`).
 
-```
+```javascript
 const { encryptionContext } = messageHeader
 
 Object
@@ -220,7 +220,7 @@ Object
 })
 ```
 
-```
+```javascript
 const { encryptionContext } = messageHeader
 
 Object

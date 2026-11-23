@@ -29,7 +29,7 @@ The following code example shows how to use `AdminGetUser`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity-provider#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSCognitoIdentityProvider
 
@@ -74,7 +74,7 @@ The following code example shows how to use `AdminInitiateAuth`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity-provider#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSCognitoIdentityProvider
 
@@ -137,7 +137,7 @@ The following code example shows how to use `AdminRespondToAuthChallenge`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity-provider#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSCognitoIdentityProvider
 
@@ -210,7 +210,7 @@ The following code example shows how to use `AssociateSoftwareToken`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity-provider#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSCognitoIdentityProvider
 
@@ -258,7 +258,7 @@ The following code example shows how to use `ConfirmSignUp`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity-provider#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSCognitoIdentityProvider
 
@@ -302,7 +302,7 @@ The following code example shows how to use `ListUsers`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity-provider#code-examples).
 
-```
+```swift
         do {
             let output = try await cognitoClient.listUsers(
                 input: ListUsersInput(
@@ -340,7 +340,7 @@ The following code example shows how to use `ResendConfirmationCode`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity-provider#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSCognitoIdentityProvider
 
@@ -387,7 +387,7 @@ The following code example shows how to use `SignUp`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity-provider#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSCognitoIdentityProvider
 
@@ -448,7 +448,7 @@ The following code example shows how to use `VerifySoftwareToken`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity-provider#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSCognitoIdentityProvider
 
@@ -510,7 +510,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity-provider#code-examples).
 The `Package.swift` file.
 
-```
+```swift
 // swift-tools-version: 5.9
 //
 // The swift-tools-version declares the minimum version of Swift required to
@@ -552,7 +552,7 @@ let package = Package(
 ```
 The Swift code file.
 
-```
+```swift
 // An example demonstrating various features of Amazon Cognito. Before running
 // this Swift code example, set up your development environment, including
 // your credentials.

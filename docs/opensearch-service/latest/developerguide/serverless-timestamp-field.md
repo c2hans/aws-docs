@@ -27,7 +27,7 @@ You specify the timestamp field for an index with the `index.timestamp_field` in
 
 The following OpenSearch REST API request creates an index that designates a field named `event-time` as the timestamp field. Replace {{my-logs}} with your index name and {{event-time}} with the name of the field that you want to use as the timestamp field.
 
-```
+```json
 PUT /{{my-logs}}
 {
   "settings": {

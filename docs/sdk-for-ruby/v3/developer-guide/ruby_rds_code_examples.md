@@ -26,7 +26,7 @@ The following code example shows how to get started using Amazon RDS.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/rds#code-examples).
 
-```
+```ruby
 require 'aws-sdk-rds'
 require 'logger'
 
@@ -79,7 +79,7 @@ The following code example shows how to use `CreateDBSnapshot`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/rds#code-examples).
 
-```
+```ruby
 require 'aws-sdk-rds' # v2: require 'aws-sdk'
 
 # Create a snapshot for an Amazon Relational Database Service (Amazon RDS)
@@ -108,7 +108,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/rds#code-examples).
 
-```
+```ruby
 require 'aws-sdk-rds' # v2: require 'aws-sdk'
 
 # List all Amazon Relational Database Service (Amazon RDS) DB instances.
@@ -138,7 +138,7 @@ The following code example shows how to use `DescribeDBParameterGroups`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/rds#code-examples).
 
-```
+```ruby
 require 'aws-sdk-rds' # v2: require 'aws-sdk'
 
 # List all Amazon Relational Database Service (Amazon RDS) parameter groups.
@@ -168,7 +168,7 @@ The following code example shows how to use `DescribeDBParameters`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/rds#code-examples).
 
-```
+```ruby
 require 'aws-sdk-rds' # v2: require 'aws-sdk'
 
 # List all Amazon Relational Database Service (Amazon RDS) parameter groups.
@@ -198,7 +198,7 @@ The following code example shows how to use `DescribeDBSnapshots`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/rds#code-examples).
 
-```
+```ruby
 require 'aws-sdk-rds' # v2: require 'aws-sdk'
 
 # List all Amazon Relational Database Service (Amazon RDS) DB instance
@@ -233,7 +233,7 @@ The following code example shows how to implement a Lambda function that connect
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-connect-rds-iam) repository.
 Connecting to an Amazon RDS database in a Lambda function using Ruby.
 
-```
+```ruby
 # Ruby code here.
 
 require 'aws-sdk-rds'

@@ -68,7 +68,7 @@ The following steps take a cluster with many nodes and consolidate it into a big
 
    This command returns an option list with recommended node types, number of nodes, and disk utilization for each option. For this example, the preceding command lists the following possible node configurations. We choose to restore into a four-node cluster.
 
-   ```
+   ```json
    {
        "NodeConfigurationOptionList": [
            {

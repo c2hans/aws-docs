@@ -44,7 +44,7 @@ Amazon MWAA has configured Apache Airflow to read and write logs directly from a
 
 If tasks are failing in a workflow and you can't locate any logs for the failed tasks, check if you are setting the `queue` parameter in your default arguments, as listed in the following.
 
-```
+```python
 from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from airflow.utils.dates import days_ago
@@ -67,7 +67,7 @@ To resolve the issue, remove `queue` from your code, and invoke the DAG again.
 ### I get a `ResourceAlreadyExistsException` error in CloudTrail
 <a name="t-cloudtrail"></a>
 
-```
+```json
 "errorCode": "ResourceAlreadyExistsException",
     "errorMessage": "The specified log stream already exists",
     "requestParameters": {

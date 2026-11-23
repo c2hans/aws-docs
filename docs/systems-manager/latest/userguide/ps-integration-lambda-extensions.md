@@ -51,7 +51,7 @@ Localhost port
 Use `localhost` in your GET requests. The extension makes requests to localhost port 2773. You do not need to specify an external or internal endpoint to use the extension. You can configure the port by setting the [environment variable](#ps-integration-lambda-extensions-config) `PARAMETERS_SECRETS_EXTENSION_HTTP_PORT`.
 For example, in Python, your GET URL might look something like the following example.
 
-```
+```python
 parameter_url = ('http://localhost:' + port + '/systemsmanager/parameters/get/?name=' + ssm_parameter_path)
 ```
 
@@ -64,7 +64,7 @@ To retrieve parameters from the extension cache, the header of your GET request 
 Example
 The following example in Python demonstrates a basic request to retrieve the value of a cached parameter. Resolve the session token inside the handler function, not at initialization time, so the token stays fresh after a SnapStart restore.
 
-```
+```py
 import urllib.request
 import urllib.error
 import json

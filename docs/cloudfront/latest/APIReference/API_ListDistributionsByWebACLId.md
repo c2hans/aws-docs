@@ -303,6 +303,7 @@ HTTP/1.1 200
                      <HTTPPort>integer</HTTPPort>
                      <HTTPSPort>integer</HTTPSPort>
                      <IpAddressType>string</IpAddressType>
+                     <OriginHttpVersion>string</OriginHttpVersion>
                      <OriginKeepaliveTimeout>integer</OriginKeepaliveTimeout>
                      <OriginMtlsConfig>
                         <ClientCertificateArn>string</ClientCertificateArn>
@@ -330,8 +331,10 @@ HTTP/1.1 200
                      <OriginReadTimeout>integer</OriginReadTimeout>
                   </S3OriginConfig>
                   <VpcOriginConfig>
+                     <OriginHttpVersion>string</OriginHttpVersion>
                      <OriginKeepaliveTimeout>integer</OriginKeepaliveTimeout>
                      <OriginReadTimeout>integer</OriginReadTimeout>
+                     <OwnerAccountId>string</OwnerAccountId>
                      <VpcOriginId>string</VpcOriginId>
                   </VpcOriginConfig>
                </Origin>

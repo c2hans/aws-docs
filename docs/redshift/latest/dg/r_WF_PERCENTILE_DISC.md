@@ -46,7 +46,7 @@ The same data type as the ORDER BY expression in the WITHIN GROUP clause.
 
 The following examples use the WINSALES table. For a description of the WINSALES table, see [Sample table for window function examples](c_Window_functions.md#r_Window_function_example).
 
-```
+```sql
 SELECT sellerid, qty, PERCENTILE_DISC(0.5)
 WITHIN GROUP (ORDER BY qty)
 OVER() AS MEDIAN FROM winsales;
@@ -90,7 +90,7 @@ OVER(PARTITION BY sellerid) AS MEDIAN FROM winsales;
 
 To find PERCENTILE\_DISC(0.25) and PERCENTILE\_DISC(0.75) for the quantity when partitioned by the seller ID, use the following examples.
 
-```
+```sql
 SELECT sellerid, qty, PERCENTILE_DISC(0.25)
 WITHIN GROUP (ORDER BY qty)
 OVER(PARTITION BY sellerid) AS quartile1 FROM winsales;

@@ -60,7 +60,7 @@ To use the following workflow you must have version 3.0.0 or later of the SageMa
 
 For models that require the acceptance of an end-user license agreement, you must explicitly declare EULA acceptance when deploying your JumpStart model.
 
-```
+```python
 from sagemaker.serve import ModelBuilder
 from sagemaker.core.jumpstart.configs import JumpStartConfig
 
@@ -84,7 +84,7 @@ For fine-tuning models that require the acceptance of an end-user license agreem
 **Note**
 The following example sets `accept_eula=False`. To accept the EULA, you must change the value to `True`.
 
-```
+```python
 from sagemaker.train import ModelTrainer
 from sagemaker.train.configs import InputData
 from sagemaker.core.jumpstart.configs import JumpStartConfig

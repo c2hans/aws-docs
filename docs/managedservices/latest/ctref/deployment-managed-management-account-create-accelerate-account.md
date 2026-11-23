@@ -143,7 +143,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-managed-management-account-create-accelerate-account-ex-min"></a>
 
-```
+```json
 {
   "AccountName": "AccountName",
   "AccountEmail": "nobody@amazon.com",
@@ -160,7 +160,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-managed-management-account-create-accelerate-account-ex-max"></a>
 
-```
+```json
 {
   "AccountName": "AccountName",
   "AccountEmail": "nobody@amazon.com",

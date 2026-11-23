@@ -110,7 +110,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of DeleteBotReplica.
 
-```
+```json
 DELETE https://models-v2-lex.us-east-1.amazonaws.com/bots/BOT1234567/replicas/us-west-2
 {
     "replicaRegion": "us-west-2"
@@ -122,7 +122,7 @@ DELETE https://models-v2-lex.us-east-1.amazonaws.com/bots/BOT1234567/replicas/us
 
 This example illustrates one usage of DeleteBotReplica.
 
-```
+```json
 {
     "botId": "BOT1234567",
     "botReplicaStatus": "Deleting",

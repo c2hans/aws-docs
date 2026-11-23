@@ -62,7 +62,7 @@ To dive deep into sharded data parallelism and learn how to set it up or use a c
 
 *Pipeline parallelism* partitions the set of layers or operations across the set of devices, leaving each operation intact. When you specify a value for the number of model partitions (`pipeline_parallel_degree`), the total number of GPUs (`processes_per_host`) must be divisible by the number of the model partitions. To set this up properly, you have to specify the correct values for the `pipeline_parallel_degree` and `processes_per_host` parameters. The simple math is as follows:
 
-```
+```txt
 (pipeline_parallel_degree) x (data_parallel_degree) = processes_per_host
 ```
 

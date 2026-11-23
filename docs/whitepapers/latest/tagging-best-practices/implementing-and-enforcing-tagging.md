@@ -45,7 +45,7 @@ aws:cloudformation:logical-id
 
 The following is an example of a CloudFormation Guard rule:
 
-```
+```json
 let all_asgs = Resources.*[ Type == 'AWS::AutoScaling::AutoScalingGroup' ]
 
 rule tags_asg_automation_EnvironmentId when %all_asgs !empty {
@@ -87,7 +87,7 @@ rule tags_asg_costAllocation_CostCenter when %all_asgs !empty {
 
  The following is an example of a tag policy that reports and/or enforces Cost Allocation tags:
 
-```
+```json
 {
   "tags": {
     "example-inc:cost-allocation:ApplicationId": {
@@ -184,7 +184,7 @@ rule tags_asg_costAllocation_CostCenter when %all_asgs !empty {
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

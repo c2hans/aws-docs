@@ -146,14 +146,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-vpc-create-dhcp-option-set-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="deployment-advanced-vpc-create-dhcp-option-set-ex-max"></a>
 
-```
+```json
 {
     "DocumentName": "AWSManagedServices-CreateDhcpOptionSet",
     "Region": "us-east-1",

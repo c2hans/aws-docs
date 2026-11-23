@@ -58,7 +58,7 @@ You can delete SVM peer relationships through the ONTAP CLI. To access the ONTAP
 
 1. Check for SVM peer relationships by using the following command. Replace `{{svm_name}}` with the name of your SVM.
 
-   ```
+   ```json
    FsxId123456789::> vserver peer show -vserver {{svm_name}}
    ```
 
@@ -77,7 +77,7 @@ You can delete SVM peer relationships through the ONTAP CLI. To access the ONTAP
 
 1. Delete each SVM peer relationship by using the following command. Replace `{{svm_name}}`, and `{{remote_svm_name}}` with your actual values.
 
-   ```
+   ```json
    FsxId123456789abcdef::> vserver peer delete -vserver {{svm_name}} -peer-vserver {{remote_svm_name}}
    ```
 
@@ -97,7 +97,7 @@ Amazon FSx backups use SnapMirror to create point-in-time, incremental backups o
 
 1. List your SnapMirror relationships on the destination file system by using the following command. Replace `{{svm_name}}` with the name of your SVM.
 
-   ```
+   ```json
    FsxId123456789abcdef::> snapmirror show -vserver {{svm_name}}
    ```
 
@@ -114,7 +114,7 @@ Amazon FSx backups use SnapMirror to create point-in-time, incremental backups o
 
 1. Delete your SnapMirror relationship by running the following command on the destination file system.
 
-   ```
+   ```json
    FsxId123456789abcdef::> snapmirror release -destination-path destSvm:destVol -source-path sourceSvm:sourceVol -force true
    ```
 
@@ -127,7 +127,7 @@ You can disable Kerberos on a LIF through the ONTAP CLI. To access the ONTAP CLI
 
 1. Enter diagnostic mode in the ONTAP CLI by using the following command.
 
-   ```
+   ```json
    FsxId123456789abcdef::> set diag
    ```
 
@@ -140,7 +140,7 @@ You can disable Kerberos on a LIF through the ONTAP CLI. To access the ONTAP CLI
 
 1. Check which interfaces have Kerberos enabled. Replace `{{svm_name}}` with the name of your SVM.
 
-   ```
+   ```json
    FsxId123456789abcdef::> kerberos interface show -vserver {{svm_name}}
    ```
 
@@ -158,7 +158,7 @@ You can disable Kerberos on a LIF through the ONTAP CLI. To access the ONTAP CLI
 
 1. Disable the Kerberos LIF by using the following command. Replace `{{svm_name}}` with the name of your SVM. You'll need to provide the Active Directory username and password that you used to join this SVM to your Active Directory.
 
-   ```
+   ```json
    FsxId123456789abcdef::> kerberos interface disable -vserver {{svm_name}} -lif nfs_smb_management_1
    ```
 
@@ -177,7 +177,7 @@ You can disable Kerberos on a LIF through the ONTAP CLI. To access the ONTAP CLI
 
 1. Verify that Kerberos is disabled on the SVM by using the following command. Replace `{{svm_name}}` with the name of your SVM.
 
-   ```
+   ```json
    FsxId123456789abcdef::> kerberos interface show -vserver {{svm_name}}
    ```
 
@@ -199,7 +199,7 @@ You can disable Kerberos on a LIF through the ONTAP CLI. To access the ONTAP CLI
 **Important**
 The following command can strand the computer object of your SVM on your Active Directory.
 
-   ```
+   ```json
    FsxId123456789abcdef::> kerberos interface disable -vserver {{svm_name}} -lif nfs_smb_management_1 -force true
    ```
 
@@ -222,7 +222,7 @@ This procedure can strand the computer object of your SVM on your Active Directo
 
 1. Enter advanced mode in the ONTAP CLI by using the following command.
 
-   ```
+   ```json
    FsxId123456789abcdef::> set adv
    ```
 
@@ -236,7 +236,7 @@ This procedure can strand the computer object of your SVM on your Active Directo
 
 1. Delete the DNS for your Active Directory by using the following command. Replace `{{svm_name}}` with the name of your SVM.
 
-   ```
+   ```json
    FsxId123456789abcdef::> vserver services name-service dns dynamic-update record delete -vserver {{svm_name}} -lif nfs_smb_management_1
    ```
 **Note**
@@ -244,7 +244,7 @@ If the DNS record has already been deleted or if the DNS server is unreachable, 
 
 1. Disable the DNS by using the following command. Replace `{{svm_name}}` with the name of your SVM.
 
-   ```
+   ```json
    FsxId123456789abcdef::> vserver services name-service dns dynamic-update modify -vserver {{svm_name}} -is-enabled false -use-secure false
    ```
 
@@ -259,7 +259,7 @@ If the DNS record has already been deleted or if the DNS server is unreachable, 
 
 1. Unjoin the device from Active Directory. Replace `{{svm_name}}` with the name of your SVM.
 
-   ```
+   ```json
    FsxId123456789abcdef::> vserver cifs delete -vserver {{svm_name}}
    ```
 
@@ -284,13 +284,13 @@ You can't delete volumes that are the origin volumes for a FlexCache relationshi
 
 1. Check for FlexCache relationships by using the following command.
 
-   ```
+   ```json
    FsxId123456789abcdef::> volume flexcache origin show-caches
    ```
 
 1. Delete any cache relationships by using the following command. Replace `{{dest_svm_name}}`, and `{{dest_vol_name}}` with your actual values.
 
-   ```
+   ```json
    FsxId123456789abcdef::> volume flexcache delete -vserver {{dest_svm_name}} -volume {{dest_vol_name}}
    ```
 

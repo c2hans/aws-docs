@@ -127,7 +127,7 @@ To create a table, go to the [DynamoDB console](https://console.aws.amazon.com/d
 
 To use DynamoDB in an application, you must set the correct permissions. The following IAM policy allows the user to delete, get, put, query, scan, and update items in a specific DynamoDB table, which is identified by [ARN](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html):
 
-```
+```csharp
 {
   "Statement": [
     {

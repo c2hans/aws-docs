@@ -32,7 +32,7 @@ You use the IAM `Condition` element to implement a fine-grained access control p
 
 The video below explains fine-grained access control in DynamoDB using IAM policy conditions.
 
-[![AWS Videos](https://img.youtube.com/vi/LbEmo_yulb0?si=VTSlNHVocAEYwhJi/0.jpg)](https://www.youtube.com/watch?v=LbEmo_yulb0?si=VTSlNHVocAEYwhJi)
+[![AWS Videos](https://img.youtube.com/vi/LbEmo_yulb0/0.jpg)](https://www.youtube.com/watch?v=LbEmo_yulb0)
 
 ## Understanding Fine-Grained Access Control in DynamoDB
 <a name="FGAC_DDB.UnderstandingFineGrainedAccess"></a>

@@ -28,7 +28,7 @@ This policy grants administrative permission to all Amazon Comprehend Medical ac
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [

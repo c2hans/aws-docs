@@ -30,7 +30,7 @@ Before using AWS IoT SiteWise, the following must be completed:
 
   Use the following IAM role as a template for the required role:
 
-  ```
+  ```json
 
   // trust relationships
    {

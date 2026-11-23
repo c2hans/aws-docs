@@ -15,13 +15,13 @@ The BrowserLiveView component requires a SigV4-presigned Live View URL. After st
 
 Install the Amazon Bedrock AgentCore TypeScript SDK:
 
-```
+```bash
 npm install bedrock-agentcore
 ```
 
 Import the BrowserLiveView component and render it with the presigned URL. The component handles WebSocket connection, DCV protocol negotiation, video stream decoding, and frame rendering. It auto-scales to fit its parent container while preserving aspect ratio.
 
-```
+```javascript
 import { BrowserLiveView }
   from 'bedrock-agentcore/browser/live-view'
 

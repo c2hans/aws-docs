@@ -604,7 +604,7 @@ HTTP Status Code: 400
 
 The following example creates a managed knowledge base that uses a multimodal embedding model. The `modelConfiguration` field configures dynamic segmentation for audio and fixed-length segmentation for video.
 
-```
+```json
 PUT /knowledgebases/ HTTP/1.1
 Content-type: application/json
 

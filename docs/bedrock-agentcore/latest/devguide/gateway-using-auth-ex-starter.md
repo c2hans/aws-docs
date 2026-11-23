@@ -8,7 +8,7 @@ When you add a gateway, set the inbound authorizer with `--authorizer-type`. If 
 
 For example, add a gateway that validates tokens issued by an existing identity provider:
 
-```
+```bash
 agentcore add gateway \
   --name MyGateway \
   --protocol-type MCP \
@@ -23,7 +23,7 @@ agentcore add gateway \
 
 Declare the OAuth credential for the target in the project, then add an external MCP server target that uses it:
 
-```
+```bash
 printf '%s' "$CLIENT_SECRET" | agentcore add credentials oauth \
   --name MyOauthCredential \
   --client-id <CLIENT_ID> \
@@ -44,7 +44,7 @@ agentcore deploy
 
 To invoke the gateway with the CLI, obtain a bearer token from your identity provider and run:
 
-```
+```bash
 agentcore invoke --gateway MyGateway \
   --path /mcp \
   --method POST \

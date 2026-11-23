@@ -38,7 +38,7 @@ To set up and run this example, first complete these tasks:
 
 Create a Node.js module with the file name `ddbdoc_get.js`. Be sure to configure the SDK as previously shown. To access DynamoDB, create an `AWS.DynamoDB.DocumentClient` object. Create a JSON object containing the parameters needed get an item from the table, which in this example includes the name of the table, the name of the hash key in that table, and the value of the hash key for the item you want to get. Call the `get` method of the DynamoDB document client.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -63,7 +63,7 @@ docClient.get(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ddbdoc_get.js
 ```
 
@@ -74,7 +74,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `ddbdoc_put.js`. Be sure to configure the SDK as previously shown. To access DynamoDB, create an `AWS.DynamoDB.DocumentClient` object. Create a JSON object containing the parameters needed to write an item to the table, which in this example includes the name of the table and a description of the item to add or update that includes the hashkey and value as well as names and values for attributes to set on the item. Call the `put` method of the DynamoDB document client.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -103,7 +103,7 @@ docClient.put(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ddbdoc_put.js
 ```
 
@@ -114,7 +114,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `ddbdoc_update.js`. Be sure to configure the SDK as previously shown. To access DynamoDB, create an `AWS.DynamoDB.DocumentClient` object. Create a JSON object containing the parameters needed to write an item to the table, which in this example includes the name of the table, the key of the item to update, a set of `UpdateExpressions` that define the attributes of the item to update with tokens you assign values to in the `ExpressionAttributeValues` parameters. Call the `update` method of the DynamoDB document client.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -151,7 +151,7 @@ docClient.update(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ddbdoc_update.js
 ```
 
@@ -164,7 +164,7 @@ This example queries a table that contains episode information about a video ser
 
 Create a Node.js module with the file name `ddbdoc_query.js`. Be sure to configure the SDK as previously shown. To access DynamoDB, create an `AWS.DynamoDB.DocumentClient` object. Create a JSON object containing the parameters needed to query the table, which in this example includes the table name, the `ExpressionAttributeValues` needed by the query, and a `KeyConditionExpression` that uses those values to define which items the query returns. Call the `query` method of the DynamoDB document client.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -195,7 +195,7 @@ docClient.query(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ddbdoc_query.js
 ```
 
@@ -206,7 +206,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `ddbdoc_delete.js`. Be sure to configure the SDK as previously shown. To access DynamoDB, create an `AWS.DynamoDB.DocumentClient` object. Create a JSON object containing the parameters needed to delete an item in the table, which in this example includes the name of the table as well as a the name and value of the hashkey of the item you want to delete. Call the `delete` method of the DynamoDB document client.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -233,7 +233,7 @@ docClient.delete(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ddbdoc_delete.js
 ```
 

@@ -72,7 +72,7 @@ AWS Identity and Access Management (IAM) is the AWS service that you use to gain
 
 ****
 
-   ```
+   ```json
      {
      "Version":"2012-10-17",
        "Statement": [
@@ -113,7 +113,7 @@ AWS Identity and Access Management (IAM) is the AWS service that you use to gain
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [
@@ -194,7 +194,7 @@ In IAM, you can apply the following policy to the administrator user who creates
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -224,7 +224,7 @@ If you choose to add the preceding policy to the admin user, you must use the fo
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

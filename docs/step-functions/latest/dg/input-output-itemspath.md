@@ -17,7 +17,7 @@ You can use `ItemsPath` in the *Distributed Map state* only if you use a JSON in
 
 The value of `ItemsPath` must be a [Reference Path](amazon-states-language-paths.md#amazon-states-language-reference-paths), and that path must evaluate to a JSON array or object. For instance, consider input to a `Map` state that includes two arrays, like the following example.
 
-```
+```json
 {
   "ThingsPiratesSay": [
     {
@@ -49,7 +49,7 @@ The value of `ItemsPath` must be a [Reference Path](amazon-states-language-paths
 
 In this case, you could specify which array to use for `Map` state iterations by selecting it with `ItemsPath`. The following state machine definition specifies the `ThingsPiratesSay` array in the input using `ItemsPath`.It then runs an iteration of the `SayWord` pass state for each item in the `ThingsPiratesSay` array.
 
-```
+```json
 {
   "StartAt": "PiratesSay",
   "States": {
@@ -73,7 +73,7 @@ In this case, you could specify which array to use for `Map` state iterations by
 
 For nested JSON objects, you can use `ItemsPath` to select a specific object within the input. Consider the following input with nested configuration data:
 
-```
+```json
 {
   "environment": "production",
   "servers": {
@@ -91,7 +91,7 @@ For nested JSON objects, you can use `ItemsPath` to select a specific object wit
 
 To iterate over the web servers object, you would set `ItemsPath` to `$.servers.web`:
 
-```
+```json
 {
   "StartAt": "ProcessWebServers",
   "States": {

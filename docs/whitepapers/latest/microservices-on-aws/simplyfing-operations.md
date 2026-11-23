@@ -21,6 +21,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 
 ![Diagram showing AWS Serverless Application Model (AWS SAM)](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/aws-sam.png)
 
+*Figure 2: AWS Serverless Application Model (AWS SAM)*
+
 ## Abstracting multi-tenancy complexities
 <a name="abstracting-multi-tenancy-complexities"></a>
 
@@ -36,3 +38,5 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
  Figure 3 illustrates how API Gateway handles API calls and interacts with other components. Requests from mobile devices, websites, or other backend services are routed to the closest CloudFront Point of Presence (PoP) to reduce latency and provide an optimal user experience.
 
 ![Diagram showing API Gateway call flow](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/api-gateway-call-flow.png)
+
+*Figure 3: API Gateway call flow*

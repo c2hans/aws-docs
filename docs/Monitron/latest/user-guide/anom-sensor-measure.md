@@ -20,7 +20,7 @@ If temperature or vibration levels inconsistently rise above the modified thresh
 
 |  |  |
 | --- |--- |
-|  ![Notifications list showing alarm and warning entries with position names, vibration and temperature detection details.](https://docs.aws.amazon.com/Monitron/latest/user-guide/images/mobileapp_notification.png)  |  ![Notifications panel showing alarms and warnings for positions with vibration and temperature alerts.](https://docs.aws.amazon.com/Monitron/latest/user-guide/images/webapp_notification.png)  |
+|  ![Notifications list showing alarm and warning entries with position names, vibration and temperature detection details.](https://docs.aws.amazon.com/Monitron/latest/user-guide/images/mobileapp_notification.png)<br />a mobile app notification  |  ![Notifications panel showing alarms and warnings for positions with vibration and temperature alerts.](https://docs.aws.amazon.com/Monitron/latest/user-guide/images/webapp_notification.png)<br />a web app notification  |
 
 In this example, the Position 3 sensor has detected a persistent increase in temperature and vibration, indicating that a potential failure needs to be investigated.
 

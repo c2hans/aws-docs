@@ -24,7 +24,7 @@ Deleting a parameter removes all versions of it. Once deleted, the parameter and
 **To delete a parameter using the AWS CLI**
 + Run the following command:
 
-  ```
+  ```sh
   aws ssm delete-parameter --name "{{my-parameter}}"
   ```
 

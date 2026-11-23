@@ -15,7 +15,7 @@ Following is an adaptation of the StateFun Python example for Managed Service fo
 
 Instead of using a customer container for the Stateful Functions runtime, customers can compile a Flink application jar that just invokes the Stateful Functions runtime and contains the required dependencies. For Flink 1.13, the required dependencies look similar to this:
 
-```
+```json
 <dependency>
  <groupId>org.apache.flink</groupId>
  <artifactId>statefun-flink-distribution</artifactId>

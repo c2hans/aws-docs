@@ -54,7 +54,7 @@ To configure custom orchestration using the API operations, send an [UpdateAgent
 
 The following is a react example that shows the chain of thought orchestration. In this example, after each step Amazon Bedrock agent asks the model to predict the next action. Note that the first state of any conversation is always `START`. Events are the responses which the function sends as response to Amazon Bedrock agents.
 
-```
+```json
 function react_chain_of_thought_orchestration(event) {
                     const incomingState = event.state;
 
@@ -103,7 +103,7 @@ The following example shows the chain of thought orchestration. In this example,
 
 The Payload structure to orchestration Lambda
 
-```
+```json
 {
     "version": "1.0",
     "state": "START | MODEL_INVOKED | TOOL_INVOKED | APPLY_GUARDRAIL_INVOKED | {{user-defined}}",
@@ -152,7 +152,7 @@ The Payload structure to orchestration Lambda
 
 The payload structure from orchestration lambda
 
-```
+```json
 {
     "version": "1.0",
     "actionEvent": "INVOKE_MODEL | INVOKE_TOOL | APPLY_GUARDRAIL | FINISH | {{user defined}}",
@@ -177,7 +177,7 @@ The payload structure from orchestration lambda
 
 Example of a START\_STATE sent from Amazon Bedrock Agents to the orchestrator Lambda
 
-```
+```json
 {
     "version": "1.0",
     "state": "START",
@@ -192,7 +192,7 @@ Example of a START\_STATE sent from Amazon Bedrock Agents to the orchestrator La
 
 In response if the orchestration Lambda decides to send a INVOKE\_MODEL EVENT response, it might look similar to the following:
 
-```
+```json
 {
     "version": "1.0",
     "actionEvent": "INVOKE_MODEL",
@@ -210,7 +210,7 @@ In response if the orchestration Lambda decides to send a INVOKE\_MODEL EVENT re
 
 Example of a INVOKE\_TOOL\_EVENT using Converse API
 
-```
+```joson
 {
     "version": "1.0",
     "actionEvent": "INVOKE_TOOL",

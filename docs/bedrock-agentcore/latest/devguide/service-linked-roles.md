@@ -137,10 +137,7 @@ You can view the complete policy at [BedrockAgentCoreRuntimeIdentityServiceRoleP
             "bedrock-agentcore:GetWorkloadAccessTokenForJWT",
             "bedrock-agentcore:GetWorkloadAccessTokenForUserId"
         ],
-        "Resource": [
-            "arn:aws:bedrock-agentcore:*:*:workload-identity-directory/default",
-            "arn:aws:bedrock-agentcore:*:*:workload-identity-directory/default/workload-identity/*"
-        ]
+        "Resource": "*"
     }
 }
 ```

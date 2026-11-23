@@ -11,7 +11,7 @@ To develop Wickr IO integrations in languages other than JavaScript such as Pyth
 ## Set up your Python app
 <a name="python-setup"></a>
 
-```
+```python
 import requests
 import json
 
@@ -23,7 +23,7 @@ PARAMS = {'Accept': '*/*', 'Content-Type': 'application/json',
 ## Send 1-to-1 Message
 <a name="python-send-1to1-message"></a>
 
-```
+```python
 data = {
     "message": "Welcome to AWS Wickr! This message will self-destruct eventually.",
     "users": [
@@ -39,7 +39,7 @@ print(sendMessage.content)
 ## Add Room
 <a name="python-add-room"></a>
 
-```
+```python
 data = {
     "room": {
         "title": "Security Group room for Sports in Bot Testing Network",
@@ -66,7 +66,7 @@ print(room)
 ## Send Room message
 <a name="python-send-room-message"></a>
 
-```
+```python
 data = {
     "message": "Welcome to AWS Wickr! This message will self-destruct eventually.",
     "vgroupid": "examplevgroupid"
@@ -80,7 +80,7 @@ print(sendMessage.content)
 ## Get Statistics
 <a name="python-get-statistics"></a>
 
-```
+```python
 getStatistics = requests.get(URL + "/Statistics",
                              headers=PARAMS)
 print(getStatistics.json())
@@ -89,7 +89,7 @@ print(getStatistics.json())
 ## Delete Statistics
 <a name="python-delete-statistics"></a>
 
-```
+```python
 deleteStatistics = requests.delete(URL + "/Statistics",
                                    headers=PARAMS)
 print(deleteStatistics.content)
@@ -98,7 +98,7 @@ print(deleteStatistics.content)
 ## Get Room
 <a name="python-get-room"></a>
 
-```
+```python
 payload = {
     'vgroupid': room}
 getRoom = requests.get(URL + "/Rooms/{0}".format(room),
@@ -109,7 +109,7 @@ print(getRoom.json())
 ## Modify Room
 <a name="python-modify-room"></a>
 
-```
+```python
 data = {
         "title": "Modified room",
         "description": "Testing ModifyRoom command",
@@ -125,7 +125,7 @@ print(modifyRoom.content)
 ## Add Group Convo
 <a name="python-add-group-convo"></a>
 
-```
+```python
 data = {
     "groupconvo": {
         "members": [
@@ -147,7 +147,7 @@ print(groupConvo)
 ## Get Group Convos (All)
 <a name="python-get-group-convos"></a>
 
-```
+```python
 getGroupConvos = requests.get(URL + "/GroupConvo",
                               headers=PARAMS)
 print(getGroupConvos.json())
@@ -156,7 +156,7 @@ print(getGroupConvos.json())
 ## Get Group Convo (One)
 <a name="python-get-group-convo"></a>
 
-```
+```python
 getGroupConvo = requests.get(URL + "/GroupConvo/{0}".format(groupConvo),
                              headers=PARAMS)
 print(getGroupConvo.json())
@@ -165,7 +165,7 @@ print(getGroupConvo.json())
 ## Delete Group Convo (One)
 <a name="python-delete-group-convo"></a>
 
-```
+```python
 deleteGroupConvo = requests.delete(URL + "/GroupConvo/{0}".format(groupConvo),
                                    headers=PARAMS)
 print(deleteGroupConvo.content)
@@ -174,7 +174,7 @@ print(deleteGroupConvo.content)
 ## Get Message
 <a name="python-get-message"></a>
 
-```
+```python
 getMessage = requests.get(URL + "/Messages",
                           headers=PARAMS)
 print(getMessage.json())
@@ -183,7 +183,7 @@ print(getMessage.json())
 ## Set MsgRecvCallback
 <a name="python-set-msgrecvcallback"></a>
 
-```
+```python
 payload = {'callbackurl': 'http://localhost:8080/apps/callback'}
 setMsgRecvCallback = requests.post(URL + "/MsgRecvCallback",
                                    headers=PARAMS,
@@ -194,7 +194,7 @@ print(setMsgRecvCallback.content)
 ## Get MsgRecvCallback
 <a name="python-get-msgrecvcallback"></a>
 
-```
+```python
 getMsgRecvCallback = requests.get(URL + "/MsgRecvCallback",
                                   headers=PARAMS)
 print(getMsgRecvCallback.content)
@@ -203,7 +203,7 @@ print(getMsgRecvCallback.content)
 ## Delete MsgRecvCallback
 <a name="python-delete-msgrecvcallback"></a>
 
-```
+```python
 deleteMsgRecvCallback = requests.delete(URL + "/MsgRecvCallback",
                                         headers=PARAMS)
 print(deleteMsgRecvCallback.content)
@@ -212,7 +212,7 @@ print(deleteMsgRecvCallback.content)
 ## Complete Python Bot Example
 <a name="python-bot-development-example"></a>
 
-```
+```python
 import requests
 import json
 import time

@@ -6,7 +6,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 # `build_image`
 
-```
+```python
 build_image(image_configuration, image_id, suppress_validators, validation_failure_level, dry_run, rollback_on_failure, region)
 ```
 

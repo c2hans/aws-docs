@@ -10,7 +10,7 @@ The following code example shows how to get a Secrets Manager secret value.
 
 **Required permissions: **`secretsmanager:GetSecretValue`
 
-```
+```kotlin
 suspend fun getValue(secretName: String?) {
     val valueRequest =
         GetSecretValueRequest {

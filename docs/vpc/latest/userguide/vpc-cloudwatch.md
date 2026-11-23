@@ -70,7 +70,7 @@ aws cloudwatch put-metric-alarm --cli-input-json file://{{nau-alarm.json}}
 
 The following is an example of `nau-alarm.json`.
 
-```
+```json
 {
     "Namespace": "AWS/EC2",
     "MetricName": "NetworkAddressUsage",

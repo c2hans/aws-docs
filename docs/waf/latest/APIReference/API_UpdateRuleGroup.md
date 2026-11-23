@@ -327,6 +327,18 @@ The following are examples of the temporary inconsistencies that you might notic
                            }
                         }
                      },
+                     "AWSManagedRulesAISecurityRuleSet": {
+                        "BedrockGuardrails": {
+                           "Disable": {
+                           },
+                           "ProtectRequestAndResponse": {
+                              "RoleArn": "{{string}}"
+                           },
+                           "ProtectRequestOnly": {
+                              "RoleArn": "{{string}}"
+                           }
+                        }
+                     },
                      "AWSManagedRulesAntiDDoSRuleSet": {
                         "ClientSideActionConfig": {
                            "Challenge": {

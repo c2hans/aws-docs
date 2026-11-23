@@ -68,7 +68,7 @@ Retrieves the list of applications nested in the containing application.
 #### ApplicationDependencyPage schema
 <a name="applications-applicationid-dependencies-response-body-applicationdependencypage-example"></a>
 
-```
+```json
 {
   "dependencies": [
     {
@@ -83,7 +83,7 @@ Retrieves the list of applications nested in the containing application.
 #### BadRequestException schema
 <a name="applications-applicationid-dependencies-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -93,7 +93,7 @@ Retrieves the list of applications nested in the containing application.
 #### ForbiddenException schema
 <a name="applications-applicationid-dependencies-response-body-forbiddenexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -103,7 +103,7 @@ Retrieves the list of applications nested in the containing application.
 #### NotFoundException schema
 <a name="applications-applicationid-dependencies-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -113,7 +113,7 @@ Retrieves the list of applications nested in the containing application.
 #### TooManyRequestsException schema
 <a name="applications-applicationid-dependencies-response-body-toomanyrequestsexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -123,7 +123,7 @@ Retrieves the list of applications nested in the containing application.
 #### InternalServerErrorException schema
 <a name="applications-applicationid-dependencies-response-body-internalservererrorexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"

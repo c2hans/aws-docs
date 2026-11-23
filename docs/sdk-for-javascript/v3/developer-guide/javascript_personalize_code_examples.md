@@ -26,7 +26,7 @@ The following code example shows how to use `CreateBatchInferenceJob`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateBatchInferenceJobCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";
@@ -76,7 +76,7 @@ The following code example shows how to use `CreateBatchSegmentJob`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateBatchSegmentJobCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";
@@ -126,7 +126,7 @@ The following code example shows how to use `CreateCampaign`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 
 import { CreateCampaignCommand } from "@aws-sdk/client-personalize";
@@ -165,7 +165,7 @@ The following code example shows how to use `CreateDataset`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateDatasetCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";
@@ -204,7 +204,7 @@ The following code example shows how to use `CreateDatasetExportJob`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateDatasetExportJobCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";
@@ -248,7 +248,7 @@ The following code example shows how to use `CreateDatasetGroup`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 
 import { CreateDatasetGroupCommand } from "@aws-sdk/client-personalize";
@@ -277,7 +277,7 @@ run(createDatasetGroupParam);
 ```
 Create a domain dataset group.
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateDatasetGroupCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";
@@ -315,7 +315,7 @@ The following code example shows how to use `CreateDatasetImportJob`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateDatasetImportJobCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";
@@ -357,7 +357,7 @@ The following code example shows how to use `CreateEventTracker`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateEventTrackerCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";
@@ -394,7 +394,7 @@ The following code example shows how to use `CreateFilter`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateFilterCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";
@@ -431,7 +431,7 @@ The following code example shows how to use `CreateRecommender`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateRecommenderCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";
@@ -469,7 +469,7 @@ The following code example shows how to use `CreateSchema`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateSchemaCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";
@@ -508,7 +508,7 @@ run();
 ```
 Create a schema with a domain.
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateSchemaCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";
@@ -558,7 +558,7 @@ The following code example shows how to use `CreateSolution`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateSolutionCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";
@@ -595,7 +595,7 @@ The following code example shows how to use `CreateSolutionVersion`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateSolutionVersionCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";

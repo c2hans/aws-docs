@@ -62,7 +62,7 @@ These procedures create a name and email address for your chatbot. Chatbot names
 
 The following sample code demonstrates how to integrate a chatbot using the AWS SDK for Java.
 
-```
+```java
 CreateBotRequest createBotRequest = new CreateBotRequest()
     .withAccountId("{{chimeAccountId}}")
     .withDisplayName("{{exampleBot}}")

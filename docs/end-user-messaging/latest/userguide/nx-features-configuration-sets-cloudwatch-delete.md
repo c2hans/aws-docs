@@ -31,7 +31,7 @@ The process for deleting an event destination is the same regardless of the type
 **To delete an CloudWatch event destination in the AWS CLI**
 + At the command line, run the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 delete-event-destination \
   > --event-destination-name {{eventDestinationName}} \
   > --configuration-set-name {{configurationSetName}}

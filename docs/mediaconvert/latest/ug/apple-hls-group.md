@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/apple-hls-group.h
 
 The following is an Amazon EventBridge sample event for a job with a `COMPLETE` status. It includes output file path information for an Apple HLS group.
 
-```
+```JSON
 {
     "detail": {
         "status": "COMPLETE",

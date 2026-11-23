@@ -21,6 +21,8 @@ We strongly recommend that you never put confidential or sensitive information, 
 
  The Device Farm endpoints only support signed HTTPS (SSL/TLS) requests except where otherwise noted. All content retrieved from or placed in Amazon S3 through upload URLs is encrypted using SSL/TLS. For more information on how HTTPS requests are signed in AWS, see [Signing AWS API requests](https://docs.aws.amazon.com/general/latest/gr/signing_aws_api_requests.html) in the AWS General Reference.
 
+Device Connect for AWS Device Farm connects to your remote access session only over TLS.
+
 It is your responsibility to encrypt and secure any communications that your tested applications make and any applications installed in the process of running on-device tests.
 
 ## Encryption at rest

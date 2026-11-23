@@ -81,7 +81,7 @@ For a complete list of exceptions that may be thrown by each service client, con
 
 To determine if the SDK considers an exception retryable, check the `isRetryable` property on caught exceptions:
 
-```
+```kotlin
 try {
     dynamoDbClient.putItem {
         tableName = "MyTable"
@@ -124,7 +124,7 @@ When network issues persist through all retry attempts, your code catches [`Clie
 
 Use the following pattern to handle these exceptions in your application:
 
-```
+```kotlin
 try {
     s3Client.getObject {
         bucket = "amzn-s3-demo-bucket"
@@ -155,7 +155,7 @@ The following sections show how to customize the SDK’s retry behavior for your
 
 You can customize the default maximum attempts (3) in the [retryStrategy DSL block](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.retries/-standard-retry-strategy/-config/-builder/index.html) during client construction.
 
-```
+```kotlin
 val dynamoDb = DynamoDbClient.fromEnvironment {
     retryStrategy {
         maxAttempts = 5
@@ -167,7 +167,7 @@ With the DynamoDB service client shown in the previous snippet, the SDK tries AP
 
 You can disable automatic retries completely by setting the maximum attempts to one as shown in the following snippet.
 
-```
+```kotlin
 val dynamoDb = DynamoDbClient.fromEnvironment {
     retryStrategy {
         maxAttempts = 1  // The SDK makes no retries.
@@ -184,7 +184,7 @@ Finally, random jitter is applied to the delays between all attempts. The jitter
 
 Delay parameters are configurable in the [delayProvider DSL block](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.retries.delay/-exponential-backoff-with-jitter/-config/index.html).
 
-```
+```kotlin
 val dynamoDb = DynamoDbClient.fromEnvironment {
     retryStrategy {
         delayProvider {
@@ -227,7 +227,7 @@ When the circuit breaker activates (token bucket reaches zero capacity), the SDK
 
 The token bucket parameters are configurable in the [tokenBucket DSL block](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.retries.delay/-standard-retry-token-bucket/-config/index.html):
 
-```
+```kotlin
 val dynamoDb = DynamoDbClient.fromEnvironment {
     retryStrategy {
         tokenBucket {
@@ -266,7 +266,7 @@ The rate adapts in real time to changing service conditions and traffic patterns
 
 You select the adaptive retry strategy by providing an additional parameter to the `retryStrategy` method. The rate limiter parameters are configurable in the [rateLimiter DSL block](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.retries.delay/-adaptive-rate-limiter/-config/index.html).
 
-```
+```kotlin
 val dynamoDb = DynamoDbClient.fromEnvironment {
     retryStrategy(AdaptiveRetryStrategy) {
         maxAttempts = 10

@@ -40,7 +40,7 @@ For more information, see [Placement groups for your Amazon EC2 instances](https
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified placement group.**
 
-```
+```powershell
 Get-EC2PlacementGroup -GroupName my-placement-group
 ```
 **Output:**
@@ -55,7 +55,7 @@ my-placement-group    available    cluster
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified placement group.**
 
-```
+```powershell
 Get-EC2PlacementGroup -GroupName my-placement-group
 ```
 **Output:**

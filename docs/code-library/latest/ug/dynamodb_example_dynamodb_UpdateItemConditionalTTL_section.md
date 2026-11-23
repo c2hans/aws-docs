@@ -14,7 +14,7 @@ The following code examples show how to conditionally update an item's TTL.
 **SDK for Java 2.x**
 Update TTL on on an existing DynamoDB Item in a table, with a condition.
 
-```
+```java
 package com.amazon.samplelib.ttl;
 
 import com.amazon.samplelib.CodeSampleUtils;
@@ -162,7 +162,7 @@ public class UpdateTTLConditional {
 **SDK for JavaScript (v3)**
 Update TTL on on an existing DynamoDB Item in a table, with a condition.
 
-```
+```javascript
 import { DynamoDBClient, UpdateItemCommand } from "@aws-sdk/client-dynamodb";
 import { marshall, unmarshall } from "@aws-sdk/util-dynamodb";
 
@@ -215,7 +215,7 @@ export const updateItemConditional = async (tableName, partitionKey, sortKey, re
 **SDK for Python (Boto3)**
 Update TTL on on an existing DynamoDB Item in a table, with a condition.
 
-```
+```python
 from datetime import datetime, timedelta
 
 import boto3

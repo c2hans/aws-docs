@@ -18,7 +18,7 @@ Before you create your first `DeviceDiscovery` or `Stage` object, the `StageAudi
 ------
 #### [ Android (Kotlin) ]
 
-```
+```kotlin
 StageAudioManager.getInstance(context).setPreset(StageAudioManager.UseCasePreset.VIDEO_CHAT) // The default value
 
 val deviceDiscovery = DeviceDiscovery(context)
@@ -30,7 +30,7 @@ val stage = Stage(context, token, this)
 ------
 #### [ iOS (Swift) ]
 
-```
+```swift
 IVSStageAudioManager.sharedInstance().setPreset(.videoChat) // The default value
 
 let deviceDiscovery = IVSDeviceDiscovery()
@@ -106,7 +106,7 @@ Note: When using these audio SDK methods, it is possible to incorrectly configur
 ------
 #### [ Android (Kotlin) ]
 
-```
+```kotlin
 // This would act similar to the Subscribe Only preset, but it uses a different ContentType.
 StageAudioManager.getInstance(context)
     .setConfiguration(StageAudioManager.Source.GENERIC,
@@ -121,7 +121,7 @@ val stage = Stage(context, token, this)
 ------
 #### [ iOS (Swift) ]
 
-```
+```swift
 // This would act similar to the Subscribe Only preset, but it uses a different mode and options.
 IVSStageAudioManager.sharedInstance()
     .setCategory(.playback,

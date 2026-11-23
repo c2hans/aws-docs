@@ -23,7 +23,7 @@ If your OpenSearch Service and Amazon Personalize resources are in separate acco
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [{

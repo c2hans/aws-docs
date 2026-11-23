@@ -37,7 +37,7 @@ aws omics get-annotation-import-job --job-id 9e4198fb-fa85-446c-9301-9b823a1a8ba
 
 You receive the following response, including the annotation fields.
 
-```
+```json
 {
           "creationTime": "2023-04-11T19:09:25.049767+00:00",
           "destinationName": "parsingannotationstore",
@@ -65,7 +65,7 @@ aws omics list-annotation-import-jobs --ids 9e4198fb-fa85-446c-9301-9b823a1a8ba8
 
 The response includes the details and statuses of your annotation store import jobs.
 
-```
+```json
 {
           "annotationImportJobs": [
           {

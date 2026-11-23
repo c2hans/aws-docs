@@ -19,7 +19,7 @@ For more information, see [Displaying bounding boxes](https://docs.aws.amazon.co
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 Create classes to wrap Amazon Rekognition functions.
 
-```
+```python
 import logging
 from pprint import pprint
 import boto3
@@ -233,7 +233,7 @@ class RekognitionImage:
 ```
 Create helper functions to draw bounding boxes and polygons.
 
-```
+```python
 import io
 import logging
 from PIL import Image, ImageDraw
@@ -281,7 +281,7 @@ def show_polygons(image_bytes, polygons, color):
 ```
 Create classes to parse objects returned by Amazon Rekognition.
 
-```
+```python
 class RekognitionFace:
     """Encapsulates an Amazon Rekognition face."""
 
@@ -526,7 +526,7 @@ class RekognitionText:
 ```
 Use the wrapper classes to detect elements in images and display their bounding boxes. The images used in this example can be found on GitHub along with instructions and more code.
 
-```
+```python
 def usage_demo():
     print("-" * 88)
     print("Welcome to the Amazon Rekognition image detection demo!")

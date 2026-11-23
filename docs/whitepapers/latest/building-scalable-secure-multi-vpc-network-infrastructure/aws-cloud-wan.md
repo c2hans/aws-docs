@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 
 ![A diagram depicting AWS Cloud WAN connectivity](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/cloud-wan-diagram.png)
 
+*Cloud WAN Block Diagram*
+
  Manage your global network through the AWS Network Manager user interface and APIs. The global network is the root-level container for all your network objects; the core network is the part of your global network managed by AWS. A core network policy (CNP) is a single versioned policy document that defines all aspects of your core network. Attachments are any connections or resources you wand to add to your core network. A core network edge (CNE) is a local connection point for attachments that comply with the policy. Network segments are routing domains which, by default, allow communication only within a segment.
 
  To use CloudWAN:

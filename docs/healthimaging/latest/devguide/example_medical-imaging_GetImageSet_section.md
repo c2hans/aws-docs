@@ -40,7 +40,7 @@ Output:
 
 **SDK for Java 2.x**
 
-```
+```java
     public static GetImageSetResponse getMedicalImageSet(MedicalImagingClient medicalImagingClient,
             String datastoreId,
             String imagesetId,
@@ -71,7 +71,7 @@ Output:
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { GetImageSetCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -124,7 +124,7 @@ export const getImageSet = async (
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -161,7 +161,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -173,7 +173,7 @@ The following code instantiates the MedicalImagingWrapper object.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         " iv_image_set_id = '1234567890123456789012345678901234567890'

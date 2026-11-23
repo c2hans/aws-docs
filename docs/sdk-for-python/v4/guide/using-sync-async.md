@@ -27,7 +27,7 @@ Both clients hold network resources until you close them. Leaving the `with` or 
 ------
 #### [ Synchronous client ]
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient, DynamoDBConfig
 
 def main() -> None:
@@ -43,7 +43,7 @@ if __name__ == "__main__":
 ------
 #### [ Asynchronous client ]
 
-```
+```python
 import asyncio
 
 from aws_sdk_dynamodb import AsyncDynamoDBClient, AsyncDynamoDBConfig

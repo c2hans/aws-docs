@@ -15,7 +15,7 @@ These examples demonstrate how to execute code in a Code Interpreter session.
 
 1.
 
-   ```
+   ```python
    params = {
          "language": "python",
          "code": "print(\"Hello, world!\")"
@@ -32,7 +32,7 @@ These examples demonstrate how to execute code in a Code Interpreter session.
 
 1.
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X POST \
      "https://bedrock-agentcore.<Region>.amazonaws.com/code-interpreters/aws.codeinterpreter.v1/tools/invoke" \
@@ -62,7 +62,7 @@ These examples demonstrate how to execute terminal commands in a Code Interprete
 
 1.
 
-   ```
+   ```python
    params = {
          "command": "ls -l"
        }
@@ -78,7 +78,7 @@ These examples demonstrate how to execute terminal commands in a Code Interprete
 
 1.
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X POST \
      "https://bedrock-agentcore.<Region>.amazonaws.com/code-interpreters/aws.codeinterpreter.v1/tools/invoke" \
@@ -102,7 +102,7 @@ These examples demonstrate how to execute terminal commands in a Code Interprete
 
 1.
 
-   ```
+   ```python
    params = {
          "command": "sleep 15 && echo Task completed successfully"
        }
@@ -118,7 +118,7 @@ These examples demonstrate how to execute terminal commands in a Code Interprete
 
 1.
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X POST \
      "https://bedrock-agentcore.<Region>.amazonaws.com/code-interpreters/aws.codeinterpreter.v1/tools/invoke" \
@@ -142,7 +142,7 @@ These examples demonstrate how to execute terminal commands in a Code Interprete
 
 1.
 
-   ```
+   ```python
    params = {
          "taskId": "<your-task-id>"
        }
@@ -158,7 +158,7 @@ These examples demonstrate how to execute terminal commands in a Code Interprete
 
 1.
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X POST \
      "https://bedrock-agentcore.<Region>.amazonaws.com/code-interpreters/aws.codeinterpreter.v1/tools/invoke" \
@@ -182,7 +182,7 @@ These examples demonstrate how to execute terminal commands in a Code Interprete
 
 1.
 
-   ```
+   ```python
    params = {
          "taskId": "<your-task-id>"
        }
@@ -198,7 +198,7 @@ These examples demonstrate how to execute terminal commands in a Code Interprete
 
 1.
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X POST \
      "https://bedrock-agentcore.<Region>.amazonaws.com/code-interpreters/aws.codeinterpreter.v1/tools/invoke" \
@@ -227,7 +227,7 @@ These examples demonstrate how to manage files in a Code Interpreter session.
 
 1.
 
-   ```
+   ```python
    params = {
            "content": [{"path": "dir1/samename.txt", "text": "File in dir1"}]
        }
@@ -243,7 +243,7 @@ These examples demonstrate how to manage files in a Code Interpreter session.
 
 1.
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X POST \
      "https://bedrock-agentcore.<Region>.amazonaws.com/code-interpreters/aws.codeinterpreter.v1/tools/invoke" \
@@ -267,7 +267,7 @@ These examples demonstrate how to manage files in a Code Interpreter session.
 
 1.
 
-   ```
+   ```python
    params = {
          "paths": ["tmp.txt"]
        }
@@ -283,7 +283,7 @@ These examples demonstrate how to manage files in a Code Interpreter session.
 
 1.
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X POST \
      "https://bedrock-agentcore.<Region>.amazonaws.com/code-interpreters/aws.codeinterpreter.v1/tools/invoke" \
@@ -307,7 +307,7 @@ These examples demonstrate how to manage files in a Code Interpreter session.
 
 1.
 
-   ```
+   ```python
    params = {
          "paths": ["tmp.txt"]
        }
@@ -323,7 +323,7 @@ These examples demonstrate how to manage files in a Code Interpreter session.
 
 1.
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X POST \
      "https://bedrock-agentcore.<Region>.amazonaws.com/code-interpreters/aws.codeinterpreter.v1/tools/invoke" \
@@ -347,7 +347,7 @@ These examples demonstrate how to manage files in a Code Interpreter session.
 
 1.
 
-   ```
+   ```python
    params = {
          "directoryPath": ""
        }
@@ -363,7 +363,7 @@ These examples demonstrate how to manage files in a Code Interpreter session.
 
 1.
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X POST \
      "https://bedrock-agentcore.<Region>.amazonaws.com/code-interpreters/aws.codeinterpreter.v1/tools/invoke" \

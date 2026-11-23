@@ -106,7 +106,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/eventbridg
 #### PATCH schema
 <a name="eventbridge-rule-template-groups-identifier-request-body-patch-example"></a>
 
-```
+```json
 {
   "description": "string"
 }
@@ -118,7 +118,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/eventbridg
 #### GetEventBridgeRuleTemplateGroupResponseContent schema
 <a name="eventbridge-rule-template-groups-identifier-response-body-geteventbridgeruletemplategroupresponsecontent-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "createdAt": "string",
@@ -132,7 +132,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/eventbridg
 #### UpdateEventBridgeRuleTemplateGroupResponseContent schema
 <a name="eventbridge-rule-template-groups-identifier-response-body-updateeventbridgeruletemplategroupresponsecontent-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "createdAt": "string",
@@ -146,7 +146,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/eventbridg
 #### BadRequestExceptionResponseContent schema
 <a name="eventbridge-rule-template-groups-identifier-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -155,7 +155,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/eventbridg
 #### ForbiddenExceptionResponseContent schema
 <a name="eventbridge-rule-template-groups-identifier-response-body-forbiddenexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -164,7 +164,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/eventbridg
 #### NotFoundExceptionResponseContent schema
 <a name="eventbridge-rule-template-groups-identifier-response-body-notfoundexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -173,7 +173,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/eventbridg
 #### ConflictExceptionResponseContent schema
 <a name="eventbridge-rule-template-groups-identifier-response-body-conflictexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -182,7 +182,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/eventbridg
 #### TooManyRequestsExceptionResponseContent schema
 <a name="eventbridge-rule-template-groups-identifier-response-body-toomanyrequestsexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -191,7 +191,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/eventbridg
 #### InternalServerErrorExceptionResponseContent schema
 <a name="eventbridge-rule-template-groups-identifier-response-body-internalservererrorexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

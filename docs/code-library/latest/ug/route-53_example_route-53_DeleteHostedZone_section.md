@@ -39,7 +39,7 @@ For more information, see [Deleting a public hosted zone](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: Deletes the hosted zone with the specified ID. You will be prompted for confirmation before the command proceeds unless you add the -Force switch parameter.**
 
-```
+```powershell
 Remove-R53HostedZone -Id Z1PA6795UKMFR9
 ```
 +  For API details, see [DeleteHostedZone](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -47,7 +47,7 @@ Remove-R53HostedZone -Id Z1PA6795UKMFR9
 **Tools for PowerShell V5**
 **Example 1: Deletes the hosted zone with the specified ID. You will be prompted for confirmation before the command proceeds unless you add the -Force switch parameter.**
 
-```
+```powershell
 Remove-R53HostedZone -Id Z1PA6795UKMFR9
 ```
 +  For API details, see [DeleteHostedZone](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -26,7 +26,7 @@ Here is the inline policy (JSON artifact) attached to the `AWSAFTAdmin` role:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -51,7 +51,7 @@ The following JSON artifact shows the trust relationship for the `AWSAFTAdmin` r
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -88,7 +88,7 @@ Trust policy for `AWSAFTExecution`
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -122,7 +122,7 @@ Trust policy for `AWSAFTService`
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

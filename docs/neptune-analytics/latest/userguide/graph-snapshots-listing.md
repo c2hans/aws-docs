@@ -11,13 +11,13 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/graph
 
 **List all graph snapshots**
 
-```
+```bash
 aws neptune-graph list-graph-snapshots
 ```
 
 **Look up a single graph snapshot**
 
-```
+```bash
 aws neptune-graph get-graph-snapshot \
 --snapshot-id <SNAPSHOT_ID>
 ```

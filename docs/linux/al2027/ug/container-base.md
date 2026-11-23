@@ -16,7 +16,7 @@ The base container image is available in the [Amazon ECR Public Gallery](https:/
 
 Run the following command to authenticate Docker to Amazon ECR Public. Always use the `us-east-1` Region when you retrieve an Amazon ECR Public authentication token. The token is valid for 12 hours.
 
-```
+```sh
 $ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
 ```
 
@@ -29,13 +29,13 @@ For more information, see [Registry authentication in Amazon ECR Public](https:/
 
 1. Pull the image from Amazon ECR Public.
 
-   ```
+   ```sh
    $ docker pull public.ecr.aws/amazonlinux/amazonlinux:2027
    ```
 
 1. Run an interactive shell in the container.
 
-   ```
+   ```sh
    $ docker run --rm -it public.ecr.aws/amazonlinux/amazonlinux:2027 /bin/bash
    ```
 

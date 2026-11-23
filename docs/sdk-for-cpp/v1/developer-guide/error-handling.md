@@ -8,7 +8,7 @@ The AWS SDK for C\+\+ does not use exceptions; however, you can use exceptions i
 
  **Example of handling error conditions**
 
-```
+```cpp
 bool CreateTableAndWaitForItToBeActive()
 {
   CreateTableRequest createTableRequest;

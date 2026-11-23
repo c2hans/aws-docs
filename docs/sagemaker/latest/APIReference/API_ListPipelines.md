@@ -40,7 +40,7 @@ Type: Timestamp
 Required: No
 
  ** [ManagedBy](#API_ListPipelines_RequestSyntax) **   <a name="sagemaker-ListPipelines-request-ManagedBy"></a>
-Filters the pipelines by who manages them. Specify `AWS` to return pipelines that AWS manages, or `CUSTOMER` to return pipelines that you created. If you don't specify a value, the response includes both.
+Filters the pipelines by who manages them. Specify `AWS` to return pipelines that AWS manages, or `CUSTOMER` to return pipelines that you created. If you don't specify a value, the response includes only pipelines that you created.
 Type: String
 Valid Values: `AWS | CUSTOMER`
 Required: No

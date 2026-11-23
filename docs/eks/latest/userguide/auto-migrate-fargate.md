@@ -24,7 +24,7 @@ Furthermore, EKS Auto Mode allows customers to achieve the same isolation model 
 
 To replicate Fargate’s pod isolation model where each pod runs on its own dedicated instance, you can use Kubernetes topology spread constraints. This is the recommended approach for controlling pod distribution across nodes:
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -66,7 +66,7 @@ EKS Auto Mode will automatically provision new EC2 instances as needed to satisf
 
 Alternatively, you can use pod anti-affinity rules for stricter isolation:
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -114,7 +114,7 @@ Before beginning the migration, ensure you have:
 
 1. Check if the EKS cluster with Fargate is running:
 
-   ```
+   ```bash
    kubectl get node
    ```
 
@@ -126,7 +126,7 @@ Before beginning the migration, ensure you have:
 
 1. Check running pods:
 
-   ```
+   ```bash
    kubectl get pod -A
    ```
 
@@ -138,7 +138,7 @@ Before beginning the migration, ensure you have:
 
 1. Create a deployment in a file called `deployment_fargate.yaml`:
 
-   ```
+   ```bash
    apiVersion: apps/v1
    kind: Deployment
    metadata:
@@ -166,7 +166,7 @@ Before beginning the migration, ensure you have:
 
 1. Apply the deployment:
 
-   ```
+   ```bash
    kubectl apply -f deployment_fargate.yaml
    ```
 
@@ -176,7 +176,7 @@ Before beginning the migration, ensure you have:
 
 1. Check the pods and deployments:
 
-   ```
+   ```bash
    kubectl get pod,deploy
    ```
 
@@ -192,7 +192,7 @@ Before beginning the migration, ensure you have:
 
 1. Check the node:
 
-   ```
+   ```bash
    kubectl get node -owide
    ```
 
@@ -210,7 +210,7 @@ Before beginning the migration, ensure you have:
 
 1. Check the nodepool:
 
-   ```
+   ```bash
    kubectl get nodepool
    ```
 
@@ -229,7 +229,7 @@ To migrate a workload from Fargate to EKS Auto Mode, apply the annotation `eks.a
 
 1. Modify your deployments (for example, the `deployment_fargate.yaml` file) to change the compute type to `ec2`:
 
-   ```
+   ```bash
    apiVersion: apps/v1
    kind: Deployment
    metadata:
@@ -257,13 +257,13 @@ To migrate a workload from Fargate to EKS Auto Mode, apply the annotation `eks.a
 
 1. Apply the deployment. This change allows the workload to be scheduled on the new EKS Auto Mode nodes:
 
-   ```
+   ```bash
    kubectl apply -f deployment_fargate.yaml
    ```
 
 1. Check that the deployment is running in the EKS Auto Mode cluster:
 
-   ```
+   ```bash
    kubectl get pod -o wide
    ```
 
@@ -276,7 +276,7 @@ To migrate a workload from Fargate to EKS Auto Mode, apply the annotation `eks.a
 
 1. Verify there is no Fargate node running and deployment running in the EKS Auto Mode managed nodes:
 
-   ```
+   ```bash
    kubectl get node -owide
    ```
 
@@ -295,7 +295,7 @@ Repeat Step 3 for each workload you want to migrate. This allows you to move wor
 
 Once all workloads have been migrated, you can remove the original `fargate` profile. Replace {{<fargate profile name>}} with the name of your Fargate profile:
 
-```
+```bash
 aws eks delete-fargate-profile --cluster-name eks-fargate-demo-cluster --fargate-profile-name <fargate profile name>
 ```
 
@@ -304,6 +304,6 @@ aws eks delete-fargate-profile --cluster-name eks-fargate-demo-cluster --fargate
 
 Because EKS Auto Mode handles CoreDNS, scale the `coredns` deployment down to 0:
 
-```
+```bash
 kubectl scale deployment coredns -n kube-system --replicas=0
 ```

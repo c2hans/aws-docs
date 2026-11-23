@@ -9,7 +9,7 @@ To use Local Network Interface (LNI) on your Outposts server, you must first ena
 **To enable LNI using the AWS CLI**
 Run the following command, replacing the subnet ID with your Outpost subnet:
 
-```
+```bash
 aws ec2 modify-subnet-attribute \
     --subnet-id {{subnet-xxxxxxxxx}} \
     --enable-lni-at-device-index 1

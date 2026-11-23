@@ -135,7 +135,7 @@ The `DetectDominantLanguage` operation returns a [DominantLanguage](https://docs
 
 The following example is the response from the `DetectDominantLanguage` operation.
 
-```
+```json
 {
     "Languages": [
         {

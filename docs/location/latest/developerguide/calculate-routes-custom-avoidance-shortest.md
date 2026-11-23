@@ -19,7 +19,7 @@ The CalculateRoutes API helps you to find the shortest routes between origin and
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "Origin": [
         -123.118105,
@@ -37,7 +37,7 @@ The CalculateRoutes API helps you to find the shortest routes between origin and
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "LegGeometryFormat": "FlexiblePolyline",
     "Notices": [],
@@ -179,7 +179,7 @@ The CalculateRoutes API helps you to find the shortest routes between origin and
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.eu-central-1.amazonaws.com/v2/routes?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -200,7 +200,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes calculate-routes --key ${YourKey} \
 --origin -123.118105 49.282423 \
 --destination -123.020098 49.232872 \

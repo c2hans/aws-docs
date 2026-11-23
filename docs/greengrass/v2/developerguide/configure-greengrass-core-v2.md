@@ -64,27 +64,27 @@ WantedBy=multi-user.target
 After you configure the system service, you can run the following commands to configure starting the device on boot and to start or stop the AWS IoT Greengrass Core software.
 + To check the status of the service (systemd)
 
-  ```
+  ```bash
   sudo systemctl status greengrass.service
   ```
 + To enable the nucleus to start when the device boots.
 
-  ```
+  ```bash
   sudo systemctl enable greengrass.service
   ```
 + To stop the nucleus from starting when the device boots.
 
-  ```
+  ```bash
   sudo systemctl disable greengrass.service
   ```
 + To start the AWS IoT Greengrass Core software.
 
-  ```
+  ```bash
   sudo systemctl start greengrass.service
   ```
 + To stop the AWS IoT Greengrass Core software.
 
-  ```
+  ```bash
   sudo systemctl stop greengrass.service
   ```
 
@@ -99,27 +99,27 @@ After you configure the service, you can run the following commands to configure
 #### [ Windows Command Prompt (CMD) ]
 + To check the status of the service
 
-  ```
+  ```cmd
   sc query "greengrass"
   ```
 + To enable the nucleus to start when the device boots.
 
-  ```
+  ```cmd
   sc config "greengrass" start=auto
   ```
 + To stop the nucleus from starting when the device boots.
 
-  ```
+  ```cmd
   sc config "greengrass" start=disabled
   ```
 + To start the AWS IoT Greengrass Core software.
 
-  ```
+  ```cmd
   sc start "greengrass"
   ```
 + To stop the AWS IoT Greengrass Core software.
 
-  ```
+  ```cmd
   sc stop "greengrass"
   ```
 **Note**  <a name="windows-ignore-shutdown-signal-behavior-note"></a>
@@ -129,27 +129,27 @@ On Windows devices, the AWS IoT Greengrass Core software ignores this shutdown s
 #### [ PowerShell ]
 + To check the status of the service
 
-  ```
+  ```powershell
   Get-Service -Name "greengrass"
   ```
 + To enable the nucleus to start when the device boots.
 
-  ```
+  ```powershell
   Set-Service -Name "greengrass" -Status stopped -StartupType automatic
   ```
 + To stop the nucleus from starting when the device boots.
 
-  ```
+  ```powershell
   Set-Service -Name "greengrass" -Status stopped -StartupType disabled
   ```
 + To start the AWS IoT Greengrass Core software.
 
-  ```
+  ```powershell
   Start-Service -Name "greengrass"
   ```
 + To stop the AWS IoT Greengrass Core software.
 
-  ```
+  ```powershell
   Stop-Service -Name "greengrass"
   ```
 **Note**  <a name="windows-ignore-shutdown-signal-behavior-note"></a>
@@ -169,7 +169,7 @@ Depending on your requirements, you can run AWS IoT Greengrass Core software wit
 **Reduced memory allocation**
 To run AWS IoT Greengrass Core software with reduced memory allocation, we recommend that you use the following example configuration merge update to set JVM options in your nucleus configuration:
 
-```
+```json
 {
   "jvmOptions": "-XX:+UseSerialGC -XX:TieredStopAtLevel=1"
 }
@@ -178,7 +178,7 @@ To run AWS IoT Greengrass Core software with reduced memory allocation, we recom
 **Minimum memory allocation**
 To run AWS IoT Greengrass Core software with minimum memory allocation, we recommend that you use the following example configuration merge update to set JVM options in your nucleus configuration:
 
-```
+```json
 {
   "jvmOptions": "-Xmx32m -XX:+UseSerialGC -Xint"
 }
@@ -277,7 +277,7 @@ You can also set the default user when you install the AWS IoT Greengrass Core s
 ------
 #### [ Linux ]
 
-```
+```json
 {
   "runWithDefault": {
     "posixUser": "ggc_user:ggc_group"
@@ -288,7 +288,7 @@ You can also set the default user when you install the AWS IoT Greengrass Core s
 ------
 #### [ Windows ]
 
-```
+```json
 {
   "runWithDefault": {
     "windowsUser": "ggc_user"
@@ -303,7 +303,7 @@ The user that you specify must exist, and the user name and password for this us
 
 The following example defines a deployment for a Linux-based device that configures `ggc_user` as the default user and `ggc_group` as the default group. The `merge` configuration update requires a serialized JSON object.
 
-```
+```json
 {
   "components": {
     "aws.greengrass.Nucleus": {
@@ -350,7 +350,7 @@ You can configure system resource limits for each component and for each core de
 
 You can deploy the [Greengrass nucleus component](greengrass-nucleus-component.md) to configure the default system resource limits for a core device. To configure the default system resource limits, [create a deployment](create-deployments.md) that specifies the following configuration update for the `aws.greengrass.Nucleus` component.
 
-```
+```json
 {
   "runWithDefault": {
     "systemResourceLimits": {
@@ -363,7 +363,7 @@ You can deploy the [Greengrass nucleus component](greengrass-nucleus-component.m
 
 The following example defines a deployment that configures the CPU time limit to `2`, which is equivalent to 50% usage on a device with 4 CPU cores. This example also configures the memory usage to 100 MB.
 
-```
+```json
 {
   "components": {
     "aws.greengrass.Nucleus": {
@@ -417,7 +417,7 @@ You can use a deployment to configure MQTT over port 443 on a single core device
 
 To configure MQTT over port 443, [create a deployment](create-deployments.md) that specifies the following configuration update for the `aws.greengrass.Nucleus` component.
 
-```
+```json
 {
   "mqtt": {
     "port": 443
@@ -427,7 +427,7 @@ To configure MQTT over port 443, [create a deployment](create-deployments.md) th
 
 The following example defines a deployment that configures MQTT over port 443. The `merge` configuration update requires a serialized JSON object.
 
-```
+```json
 {
   "components": {
     "aws.greengrass.Nucleus": {
@@ -463,7 +463,7 @@ You can use a deployment to configure HTTPS over port 443 on a single core devic
 
 To configure HTTPS over port 443, [create a deployment](create-deployments.md) that specifies the following configuration update for the `aws.greengrass.Nucleus` component.
 
-```
+```json
 {
   "greengrassDataPlanePort": 443
 }
@@ -471,7 +471,7 @@ To configure HTTPS over port 443, [create a deployment](create-deployments.md) t
 
 The following example defines a deployment that configures HTTPS over port 443. The `merge` configuration update requires a serialized JSON object.
 
-```
+```json
 {
   "components": {
     "aws.greengrass.Nucleus": {
@@ -516,7 +516,7 @@ You can use a deployment to configure a network proxy on a single core device or
 
 To configure a network proxy, [create a deployment](create-deployments.md) for the `aws.greengrass.Nucleus` component that merges the following configuration update. This configuration update contains the [networkProxy object](#network-proxy-object).
 
-```
+```json
 {
   "networkProxy": {
     "noProxyAddresses": "http://192.168.0.1,www.example.com",
@@ -529,7 +529,7 @@ To configure a network proxy, [create a deployment](create-deployments.md) for t
 
 The following example defines a deployment that configures a network proxy. The `merge` configuration update requires a serialized JSON object.
 
-```
+```json
 {
   "components": {
     "aws.greengrass.Nucleus": {
@@ -639,7 +639,7 @@ To enable dualstack endpoints for IPv6:
 
 **Example code for deployment:**
 
-```
+```JSON
 {
     "jvmOptions": "-Daws.useDualstackEndpoint=true",
     "s3EndpointType":"DUALSTACK"
@@ -648,7 +648,7 @@ To enable dualstack endpoints for IPv6:
 
 **Example `config.yaml` through manual provisioning:**
 
-```
+```yaml
 ---
 system:
   ...

@@ -43,7 +43,7 @@ If your cluster is using ZooKeeper mode, you can use the steps below to get the 
 
    The output of this `describe-cluster` command looks like the following JSON example.
 
-   ```
+   ```JSON
    {
        "ClusterInfo": {
            "BrokerNodeGroupInfo": {

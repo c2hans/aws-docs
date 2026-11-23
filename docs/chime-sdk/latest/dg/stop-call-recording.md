@@ -8,7 +8,7 @@ The `StopCallRecording` action stops the recording of a call leg. Recording stop
 
 The following example stops recording for the `call-id-1` call leg.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions":[

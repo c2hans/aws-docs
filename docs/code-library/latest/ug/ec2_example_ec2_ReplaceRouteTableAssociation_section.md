@@ -36,7 +36,7 @@ For more information, see [Manage subnet route tables](https://docs.aws.amazon.c
 **Tools for PowerShell V4**
 **Example 1: This example associates the specified route table with the subnet for the specified route table association.**
 
-```
+```powershell
 Set-EC2RouteTableAssociation -RouteTableId rtb-1a2b3c4d -AssociationId rtbassoc-12345678
 ```
 **Output:**
@@ -49,7 +49,7 @@ rtbassoc-87654321
 **Tools for PowerShell V5**
 **Example 1: This example associates the specified route table with the subnet for the specified route table association.**
 
-```
+```powershell
 Set-EC2RouteTableAssociation -RouteTableId rtb-1a2b3c4d -AssociationId rtbassoc-12345678
 ```
 **Output:**

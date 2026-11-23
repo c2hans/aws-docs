@@ -43,7 +43,7 @@ To use DMS Schema Conversion, create the following five IAM roles. Each role mus
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -66,7 +66,7 @@ To use DMS Schema Conversion, create the following five IAM roles. Each role mus
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -99,7 +99,7 @@ Each role requires the following trust policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

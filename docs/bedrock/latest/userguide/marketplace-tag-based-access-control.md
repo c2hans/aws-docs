@@ -27,7 +27,7 @@ To find the corresponding SageMaker AI actions for each operation, see the `Amaz
 
 Use this policy to deny deletion of SageMaker AI endpoints tagged with `env=prod` when requests come through Amazon Bedrock.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

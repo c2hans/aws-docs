@@ -126,7 +126,7 @@ The following example shows how you can write an IAM policy denying access to a 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

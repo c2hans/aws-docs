@@ -45,7 +45,7 @@ SYS\_EXTERNAL\_QUERY\_DETAIL is visible to all users. Superusers can see all row
 
 The following query shows the external query details.
 
-```
+```sql
 SELECT query_id,
        segment_id,
        start_time,

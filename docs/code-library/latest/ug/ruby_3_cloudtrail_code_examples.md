@@ -26,7 +26,7 @@ The following code example shows how to use `CreateTrail`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudtrail#code-examples).
 
-```
+```ruby
 require 'aws-sdk-cloudtrail' # v2: require 'aws-sdk'
 require 'aws-sdk-s3'
 require 'aws-sdk-sts'
@@ -97,7 +97,7 @@ The following code example shows how to use `DeleteTrail`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudtrail#code-examples).
 
-```
+```ruby
   client.delete_trail({
                         name: trail_name # required
                       })
@@ -118,7 +118,7 @@ The following code example shows how to use `ListTrails`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudtrail#code-examples).
 
-```
+```ruby
 require 'aws-sdk-cloudtrail' # v2: require 'aws-sdk'
 
 def describe_trails_example(client)
@@ -141,7 +141,7 @@ The following code example shows how to use `LookupEvents`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudtrail#code-examples).
 
-```
+```ruby
 require 'aws-sdk-cloudtrail' # v2: require 'aws-sdk'
 
 # @param [Object] client

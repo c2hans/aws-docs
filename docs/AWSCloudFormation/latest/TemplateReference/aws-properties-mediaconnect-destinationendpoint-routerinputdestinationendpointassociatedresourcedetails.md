@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::DestinationEndpoint RouterInputDestinationEndpointAssociatedResourceDetails
 
-<a name="aws-properties-mediaconnect-destinationendpoint-routerinputdestinationendpointassociatedresourcedetails-description"></a>The `RouterInputDestinationEndpointAssociatedResourceDetails` property type specifies Property description not available. for an [AWS::MediaConnect::DestinationEndpoint](aws-resource-mediaconnect-destinationendpoint.md).
+The details of the router input that is associated with a destination endpoint.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-routerinputdestinationendpointassociatedresourcedetails-syntax"></a>
@@ -37,19 +37,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-routerinputdestinationendpointassociatedresourcedetails-properties"></a>
 
 `MaximumBitrate`  <a name="cfn-mediaconnect-destinationendpoint-routerinputdestinationendpointassociatedresourcedetails-maximumbitrate"></a>
-Property description not available.
+The maximum bitrate of the router input, in bits per second.
 *Required*: Yes
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-mediaconnect-destinationendpoint-routerinputdestinationendpointassociatedresourcedetails-name"></a>
-Property description not available.
+The name of the router input.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `State`  <a name="cfn-mediaconnect-destinationendpoint-routerinputdestinationendpointassociatedresourcedetails-state"></a>
-Property description not available.
+The state of the router input.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `CREATING | STANDBY | STARTING | ACTIVE | STOPPING | DELETING | UPDATING | ERROR | RECOVERING | MIGRATING`

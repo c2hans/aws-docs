@@ -23,7 +23,7 @@ To allow a role to perform these actions, attach the following policy to the rol
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -74,7 +74,7 @@ Attach the following policy to the role:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

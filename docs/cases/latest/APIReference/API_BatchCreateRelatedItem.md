@@ -186,7 +186,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of BatchCreateRelatedItem.
 
-```
+```json
 {
   "domainId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
   "content": {
@@ -202,7 +202,7 @@ This example illustrates one usage of BatchCreateRelatedItem.
 }
 ```
 
-```
+```json
 {
   "successfulItems": [
     {

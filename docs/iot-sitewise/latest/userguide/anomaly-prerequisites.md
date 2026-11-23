@@ -15,7 +15,7 @@ Follow these steps to update your AWS CLI configuration, and access the computat
 + Install the latest awscli version `aws-cli`.
 + Verify the installation by checking for the new APIs:
 
-  ```
+  ```bash
   aws iotsitewise help
   ```
 
@@ -40,7 +40,7 @@ To set up anomaly detection, you must have the following requirements and the [U
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -74,7 +74,7 @@ To set up anomaly detection, you must have the following requirements and the [U
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -109,7 +109,7 @@ To set up anomaly detection, you must have the following requirements and the [U
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

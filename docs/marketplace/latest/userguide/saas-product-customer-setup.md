@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-produc
 
 # Onboarding customers to your SaaS product through AWS Marketplace
 
- With software as a service (SaaS) subscriptions and SaaS contracts, your customers subscribe to your products through AWS Marketplace but access the product in your AWS environment. After subscribing to the product, your customer is directed to a website you create and manage as a part of your SaaS product to register their account and conﬁgure the product.
+ With software as a service (SaaS) subscriptions and SaaS contracts, your customers subscribe to your products through AWS Marketplace and then access the product where you host it. After subscribing to the product, your customer is directed to a website you create and manage as a part of your SaaS product to register their account and conﬁgure the product.
 
 When creating your SaaS product listing, you provide a URL to your registration landing page. We use that URL to redirect customers to your registration landing page after they subscribe. On your software's registration landing page, you collect the information that is required to create an account for the customer. We recommend collecting your customer’s email addresses if you plan to contact them through email for usage notifications.
 
@@ -12,6 +12,9 @@ The registration landing page must be able to identify and accept the `x-amzn-ma
 
 **Note**
 The registration token resolves to a specific subscribed customer and each generated token has an expiration window of 4 hours. As long as the caller is calling the API with the same token, it will keep returning the same response values until the token expires.
+
+**Note**
+Buyers who purchase through AWS Marketplace Express Checkout onboard the same way and have a valid AWS account ID. For details, see [Customer onboarding and integration](saas-express-checkout.md#saas-express-checkout-onboarding) for Express Checkout.
 
 ## Configuring your SaaS product to accept new buyers
 <a name="configuring-your-saas-application-to-accept-new-customers"></a>

@@ -40,7 +40,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 Run an interactive scenario demonstrating the CloudWatch OpenTelemetry experience.
 
-```
+```ruby
 DASHES = ('-' * 80).freeze
 DEFAULT_QUERY = 'avg by (host) (system_cpu_utilization) > 80'.freeze
 
@@ -560,7 +560,7 @@ The following code example shows how to use `DeleteAlarmMuteRule`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 # Deletes an alarm mute rule. The alarms it targeted resume firing their actions.
 #
 # @param cloudwatch_client [Aws::CloudWatch::Client] An initialized CloudWatch client.
@@ -584,7 +584,7 @@ The following code example shows how to use `DescribeAlarmContributors`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 # Gets the contributors for a PromQL alarm. Each contributor is one series that the
 # alarm's query matched, identified by its label set. This is how you find out which
 # hosts, services, or pods are breaching, rather than only that something is.
@@ -622,7 +622,7 @@ The following code example shows how to use `DescribeAlarms`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 require 'aws-sdk-cloudwatch'
 
 # Lists the names of available Amazon CloudWatch alarms.
@@ -654,7 +654,7 @@ The following code example shows how to use `DescribeAlarmsForMetric`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 #
 # @param cloudwatch_client [Aws::CloudWatch::Client]
 #   An initialized CloudWatch client.
@@ -750,7 +750,7 @@ The following code example shows how to use `DisableAlarmActions`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 # Disables an alarm in Amazon CloudWatch.
 #
 # Prerequisites.
@@ -843,7 +843,7 @@ The following code example shows how to use `GetAlarmMuteRule`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 # Gets the full configuration of an alarm mute rule, including its schedule, the alarms
 # it targets, and whether it is currently SCHEDULED, ACTIVE, or EXPIRED.
 #
@@ -868,7 +868,7 @@ The following code example shows how to use `GetOTelEnrichment`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 # Gets the current OTel enrichment status for the account.
 #
 # @param cloudwatch_client [Aws::CloudWatch::Client] An initialized CloudWatch client.
@@ -890,7 +890,7 @@ The following code example shows how to use `ListAlarmMuteRules`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 # Lists the alarm mute rules in the account, optionally filtered to the rules that
 # target one alarm.
 #
@@ -929,7 +929,7 @@ The following code example shows how to use `ListMetrics`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 # Lists available metrics for a metric namespace in Amazon CloudWatch.
 #
 # @param cloudwatch_client [Aws::CloudWatch::Client]
@@ -1017,7 +1017,7 @@ The following code example shows how to use `PutAlarmMuteRule`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 # Creates or updates an alarm mute rule. While a mute rule is active the targeted alarms
 # keep evaluating and keep transitioning between states, but their configured actions do
 # not fire. This is the supported way to suppress notifications during a known
@@ -1080,7 +1080,7 @@ The following code example shows how to use `PutMetricAlarm`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 
-```
+```ruby
 # Creates or updates an alarm that evaluates a PromQL query.
 #
 # A PromQL alarm differs from a classic metric alarm in a few ways. The query can match
@@ -1136,7 +1136,7 @@ end
 ```
 Create an alarm that evaluates a single CloudWatch metric.
 
-```
+```ruby
 # Creates or updates an alarm in Amazon CloudWatch.
 #
 # @param cloudwatch_client [Aws::CloudWatch::Client]
@@ -1229,7 +1229,7 @@ The following code example shows how to use `PutMetricData`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 require 'aws-sdk-cloudwatch'
 
 # Adds a datapoint to a metric in Amazon CloudWatch.
@@ -1300,7 +1300,7 @@ The following code example shows how to use `StartOTelEnrichment`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 # Turns on OTel enrichment for the account. Once enrichment is running, CloudWatch vended
 # metrics that carry a resource identifier dimension, such as the Amazon EC2
 # CPUUtilization metric with its InstanceId dimension, are decorated with resource ARN
@@ -1332,7 +1332,7 @@ The following code example shows how to use `StopOTelEnrichment`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 # Turns off OTel enrichment for the account. Existing PromQL alarms are not deleted, but
 # vended metrics stop being enriched with resource ARN and tag labels, so queries that
 # select on those labels stop matching.
@@ -1366,7 +1366,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 Define wrapper code that calls the CloudWatch OpenTelemetry operations.
 
-```
+```ruby
 # Turns on OTel enrichment for the account. Once enrichment is running, CloudWatch vended
 # metrics that carry a resource identifier dimension, such as the Amazon EC2
 # CPUUtilization metric with its InstanceId dimension, are decorated with resource ARN
@@ -1601,7 +1601,7 @@ end
 ```
 Alarm on OpenTelemetry metrics with a PromQL query, inspect the contributors to the alarm, and mute it.
 
-```
+```ruby
 # Turns on OpenTelemetry enrichment if the account doesn't already have it on. Enrichment
 # is an account-wide setting, so an example should only turn it off again if it was the
 # one that turned it on.

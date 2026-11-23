@@ -15,7 +15,7 @@ The following code examples show how to use the messages API.
 
 This example shows how to send a single turn user message and a user turn with a prefilled assistant message to an Anthropic Claude 3 Sonnet model.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -99,7 +99,7 @@ The following examples show how to pass an image and prompt text in a multimodal
 
 The following example shows how to send a multimodal prompt to Anthropic Claude 3 Sonnet with [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html).
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -200,7 +200,7 @@ if __name__ == "__main__":
 
 The following example shows how to stream the response from a multimodal prompt sent to Anthropic Claude 3 Sonnet with [InvokeModelWithResponseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html).
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """

@@ -140,7 +140,7 @@ Currently, you must edit the MediaTek package that is included with Keil μVisio
 
 1. From the menu, choose **Debug**, and then choose **Stop** to pause the code execution. The program counter stops at the following line:
 
-   ```
+   ```json
    { volatile int wait_ice = 1 ; while ( wait_ice ) ; }
    ```
 

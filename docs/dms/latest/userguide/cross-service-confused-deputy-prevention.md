@@ -30,7 +30,7 @@ The following example shows policies for using the `dms-vpc-role` role with the 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -66,7 +66,7 @@ The following example shows a trust policy with confused deputy conditions that 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -105,7 +105,7 @@ The following example shows a trust policy with confused deputy conditions that 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -146,7 +146,7 @@ The following example shows a trust policy with a confused deputy condition that
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

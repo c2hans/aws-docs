@@ -43,7 +43,7 @@ In this example, use a Node.js module to create an Amazon SNS topic.
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -60,7 +60,7 @@ Create an object to pass the `Name` for the new topic to the `CreateTopicCommand
 **Note**
 Replace {{TOPIC\_NAME}} with the name of the topic.
 
-```
+```javascript
 import { CreateTopicCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -89,7 +89,7 @@ export const createTopic = async (topicName = "TOPIC_NAME") => {
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node create-topic.js
 ```
 
@@ -102,7 +102,7 @@ In this example, use a Node.js module to list all Amazon SNS topics.
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -116,7 +116,7 @@ Create a Node.js module with the file name `list-topics.js`. Configure the SDK a
 
 Create an empty object to pass to the `ListTopicsCommand` method of the `SNS` client class. To call the `ListTopicsCommand` method, create an asynchronous function invoking an Amazon SNS service object, passing the parameters object. The `data` returned contains an array of your topic Amazon Resource Names (ARNs).
 
-```
+```javascript
 import { ListTopicsCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -140,7 +140,7 @@ export const listTopics = async () => {
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node list-topics.js
 ```
 
@@ -153,7 +153,7 @@ In this example, use a Node.js module to delete an Amazon SNS topic.
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -170,7 +170,7 @@ Create an object containing the `TopicArn` of the topic to delete to pass to the
 **Note**
 Replace {{TOPIC\_ARN}} with the Amazon Resource Name (ARN) of the topic you are deleting.
 
-```
+```javascript
 import { DeleteTopicCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -197,7 +197,7 @@ export const deleteTopic = async (topicArn = "TOPIC_ARN") => {
 
 To run the example, enter the following at the command prompt.
 
-```
+```bash
 node delete-topic.js
 ```
 
@@ -210,7 +210,7 @@ In this example, use a Node.js module to retrieve attributes of an Amazon SNS to
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -227,7 +227,7 @@ Create an object containing the `TopicArn` of a topic to delete to pass to the `
 **Note**
 Replace {{TOPIC\_ARN}} with the ARN of the topic.
 
-```
+```javascript
 import { GetTopicAttributesCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -268,7 +268,7 @@ export const getTopicAttributes = async (topicArn = "TOPIC_ARN") => {
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node get-topic-attributes.js
 ```
 
@@ -281,7 +281,7 @@ In this example, use a Node.js module to set the mutable attributes of an Amazon
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -298,7 +298,7 @@ Create an object containing the parameters for the attribute update, including t
 **Note**
 Replace {{ATTRIBUTE\_NAME}} with the name of the attribute you are setting, {{TOPIC\_ARN}} with the Amazon Resource Name (ARN) of the topic whose attributes you want to set, and {{NEW\_ATTRIBUTE\_VALUE}} with the new value for that attribute.
 
-```
+```javascript
 import { SetTopicAttributesCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -331,7 +331,7 @@ export const setTopicAttributes = async (
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node set-topic-attributes.js
 ```
 

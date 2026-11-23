@@ -8,7 +8,7 @@ Delete an existing alias for an index.
 
 **Syntax**
 
-```
+```text
 FT.ALIASDEL <alias>
 ```
 

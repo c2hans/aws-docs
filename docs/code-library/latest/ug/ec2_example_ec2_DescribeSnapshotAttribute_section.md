@@ -41,7 +41,7 @@ For more information, see [Share an Amazon EBS snapshot](https://docs.aws.amazon
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified attribute of the specified snapshot.**
 
-```
+```powershell
 Get-EC2SnapshotAttribute -SnapshotId snap-12345678 -Attribute ProductCodes
 ```
 **Output:**
@@ -53,7 +53,7 @@ CreateVolumePermissions    ProductCodes    SnapshotId
 ```
 **Example 2: This example describes the specified attribute of the specified snapshot.**
 
-```
+```powershell
 (Get-EC2SnapshotAttribute -SnapshotId snap-12345678 -Attribute CreateVolumePermission).CreateVolumePermissions
 ```
 **Output:**
@@ -68,7 +68,7 @@ all
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified attribute of the specified snapshot.**
 
-```
+```powershell
 Get-EC2SnapshotAttribute -SnapshotId snap-12345678 -Attribute ProductCodes
 ```
 **Output:**
@@ -80,7 +80,7 @@ CreateVolumePermissions    ProductCodes    SnapshotId
 ```
 **Example 2: This example describes the specified attribute of the specified snapshot.**
 
-```
+```powershell
 (Get-EC2SnapshotAttribute -SnapshotId snap-12345678 -Attribute CreateVolumePermission).CreateVolumePermissions
 ```
 **Output:**

@@ -2592,6 +2592,34 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   CancelTimeOff  **
+  - **SDK client:** connectscheduling
+  - **IAM action:**  [connect:CancelTimeOff](#list_connect-action-CancelTimeOff)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   CreateTimeOff  **
+  - **SDK client:** connectscheduling
+  - **IAM action:**  [connect:CreateTimeOff](#list_connect-action-CreateTimeOff)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   GetTimeOff  **
+  - **SDK client:** connectscheduling
+  - **IAM action:**  [connect:GetTimeOff](#list_connect-action-GetTimeOff)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   PutTimeOffBalance  **
+  - **SDK client:** connectscheduling
+  - **IAM action:**  [connect:PutTimeOffBalance](#list_connect-action-PutTimeOffBalance)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 ## Actions defined by Amazon Connect
 <a name="list_connect-actions-as-permissions"></a>
 
@@ -2607,6 +2635,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to federate into an Amazon Connect instance (Log in for emergency access functionality in the Amazon Connect console)
   - **Resource types (\*required):** [instance\*](#list_connect-resource-instance)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [ApproveTimeOff](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-scheduling_ApproveTimeOff.html)  **
+  - **Description:** Grants permission to approve a time off request for a user in an Amazon Connect instance
+  - **Resource types (\*required):** [user\*](#list_connect-resource-user)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Write
 
 - **   [AssociateAnalyticsDataSet](API_AssociateAnalyticsDataSet.html)  **
@@ -2779,6 +2813,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to batch update values in a data table in an Amazon Connect instance
   - **Resource types (\*required):** [data-table\*](#list_connect-resource-data-table)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:ExpressionValue](#list_connect-connect_ExpressionValue)<br />[connect:InstanceId](#list_connect-connect_InstanceId)<br />[connect:PrimaryAttribute/${PrimaryAttribute}](#list_connect-connect_PrimaryAttribute___PrimaryAttribute_)
+  - **Access level:** Write
+
+- **   [CancelTimeOff](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-scheduling_CancelTimeOff.html)  **
+  - **Description:** Grants permission to cancel a time off request for a user in an Amazon Connect instance
+  - **Resource types (\*required):** [user\*](#list_connect-resource-user)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Write
 
 - **   [ClaimPhoneNumber](https://docs.aws.amazon.com/connect/latest/APIReference/API_ClaimPhoneNumber.html)  **
@@ -2986,6 +3026,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create a task template in an Amazon Connect instance
   - **Resource types (\*required):** [task-template\*](#list_connect-resource-task-template)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [CreateTimeOff](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-scheduling_CreateTimeOff.html)  **
+  - **Description:** Grants permission to create a time off request for a user in an Amazon Connect instance
+  - **Resource types (\*required):** [user\*](#list_connect-resource-user)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Write
 
 - **   [CreateTrafficDistributionGroup](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateTrafficDistributionGroup.html)  **
@@ -3690,6 +3736,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Read
 
+- **   [GetTimeOff](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-scheduling_GetTimeOff.html)  **
+  - **Description:** Grants permission to get a time off request for a user in an Amazon Connect instance
+  - **Resource types (\*required):** [user\*](#list_connect-resource-user)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Access level:** Read
+
 - **   [GetTrafficDistribution](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetTrafficDistribution.html)  **
   - **Description:** Grants permission to read traffic distribution for a traffic distribution group
   - **Resource types (\*required):** [traffic-distribution-group\*](#list_connect-resource-traffic-distribution-group)
@@ -4161,11 +4213,23 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [instance\*](#list_connect-resource-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Write
 
+- **   [PutTimeOffBalance](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-scheduling_PutTimeOffBalance.html)  **
+  - **Description:** Grants permission to set the time off balance of a user for a shift activity in an Amazon Connect instance
+  - **Resource types (\*required):** [user\*](#list_connect-resource-user)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Access level:** Write
+
 - **   [PutUserStatus](https://docs.aws.amazon.com/connect/latest/APIReference/API_PutUserStatus.html)  **
   - **Description:** Grants permission to switch User Status in an Amazon Connect instance
   - **Resource types (\*required):** [agent-status\*](#list_connect-resource-agent-status) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Resource types (\*required):** [instance\*](#list_connect-resource-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Resource types (\*required):** [user\*](#list_connect-resource-user) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Access level:** Write
+
+- **   [RejectTimeOff](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-scheduling_RejectTimeOff.html)  **
+  - **Description:** Grants permission to reject a time off request for a user in an Amazon Connect instance
+  - **Resource types (\*required):** [user\*](#list_connect-resource-user)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Write
 
 - **   [ReleasePhoneNumber](https://docs.aws.amazon.com/connect/latest/APIReference/API_ReleasePhoneNumber.html)  **

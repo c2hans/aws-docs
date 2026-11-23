@@ -58,7 +58,7 @@ You can also create a Next Generation policy with the AWS CLI. Each section can 
 }
 ```
 
-```
+```sh
 aws network-firewall create-firewall-policy-v2 \
 --firewall-policy-v2-name example-policy \
 --firewall-policy-v2 file://policy.json \

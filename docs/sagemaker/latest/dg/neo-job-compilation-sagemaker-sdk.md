@@ -11,7 +11,7 @@ You must set `MMS_DEFAULT_RESPONSE_TIMEOUT` environment variable to `500` when c
 
  The following is an example of how you can compile a model using the `trained_model_estimator` object:
 
-```
+```python
 # Neo compilation in V3 uses ModelBuilder.optimize() with compilation_config
 from sagemaker.serve import ModelBuilder
 

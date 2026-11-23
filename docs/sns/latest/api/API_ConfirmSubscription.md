@@ -92,7 +92,7 @@ https://sns.us-east-2.amazonaws.com/?Action=ConfirmSubscription
 #### Sample Response
 <a name="API_ConfirmSubscription_Example_1_Response"></a>
 
-```
+```xml
 <ConfirmSubscriptionResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ConfirmSubscriptionResult>
         <SubscriptionArn>arn:aws:sns:us-east-2:123456789012:My-Topic:80289ba6-0fd4-4079-afb4-ce8c8260f0ca</SubscriptionArn>

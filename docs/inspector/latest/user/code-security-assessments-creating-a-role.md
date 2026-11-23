@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/code-security-asse
 
  Use the following CloudFormation template to automate the creation of the IAM role for private network connectivity. You can customize the role name in the template.
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -106,7 +106,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/code-security-asse
 
 1.  In the policy editor, choose the **JSON** tab and paste the following policy document:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -148,7 +148,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/code-security-asse
 
 1.  Update the trust policy to allow Amazon Inspector to assume the role. Choose **Edit** in the **Trust relationships** section and replace the trust policy with:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

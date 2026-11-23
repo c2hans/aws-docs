@@ -77,7 +77,7 @@ Sends an Amazon Macie membership invitation to one or more accounts.
 #### POST schema
 <a name="invitations-request-body-post-example"></a>
 
-```
+```json
 {
   "accountIds": [
     "string"
@@ -93,7 +93,7 @@ Sends an Amazon Macie membership invitation to one or more accounts.
 #### ListInvitationsResponse schema
 <a name="invitations-response-body-listinvitationsresponse-example"></a>
 
-```
+```json
 {
   "invitations": [
     {
@@ -110,7 +110,7 @@ Sends an Amazon Macie membership invitation to one or more accounts.
 #### CreateInvitationsResponse schema
 <a name="invitations-response-body-createinvitationsresponse-example"></a>
 
-```
+```json
 {
   "unprocessedAccounts": [
     {
@@ -125,7 +125,7 @@ Sends an Amazon Macie membership invitation to one or more accounts.
 #### ValidationException schema
 <a name="invitations-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -134,7 +134,7 @@ Sends an Amazon Macie membership invitation to one or more accounts.
 #### ServiceQuotaExceededException schema
 <a name="invitations-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -143,7 +143,7 @@ Sends an Amazon Macie membership invitation to one or more accounts.
 #### AccessDeniedException schema
 <a name="invitations-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -152,7 +152,7 @@ Sends an Amazon Macie membership invitation to one or more accounts.
 #### ResourceNotFoundException schema
 <a name="invitations-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -161,7 +161,7 @@ Sends an Amazon Macie membership invitation to one or more accounts.
 #### ConflictException schema
 <a name="invitations-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -170,7 +170,7 @@ Sends an Amazon Macie membership invitation to one or more accounts.
 #### ThrottlingException schema
 <a name="invitations-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -179,7 +179,7 @@ Sends an Amazon Macie membership invitation to one or more accounts.
 #### InternalServerException schema
 <a name="invitations-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

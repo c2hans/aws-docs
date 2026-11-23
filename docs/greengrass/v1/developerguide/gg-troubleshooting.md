@@ -84,7 +84,7 @@ Open `config.json` (located in `/{{greengrass-root}}/config`) and check the `cry
 
 Open `config.json` (located in `/{{greengrass-root}}/config`). In the `runtime` object, add the `postStartHealthCheckTimeout` property and set the value to a number greater than 30000. Add a comma where needed to create a valid JSON document. For example:
 
-```
+```json
   ...
   "runtime" : {
     "cgroup" : {
@@ -105,7 +105,7 @@ Open `config.json` (located in `/{{greengrass-root}}/config`). In the `runtime` 
 
 **Solution:** You might see this error when the AWS IoT Greengrass Core software does not start. If you deployed a [Lambda executable](lambda-functions.md#lambda-executables) to the core, check the function's `Handler` property in the `group.json` file (located in /{{greengrass-root}}/ggc/deployment/group). If the handler is not the exact name of your compiled executable, replace the contents of the `group.json` file with an empty JSON object (`{}`), and run the following commands to start AWS IoT Greengrass:
 
-```
+```bash
 cd /greengrass/ggc/core/
 sudo ./greengrassd start
 ```
@@ -124,7 +124,7 @@ Assuming that you added the function to your Greengrass group by alias (recommen
 
 **Solution:** You might see this error when the AWS IoT Greengrass Core software does not start. Open the `group.json` file (located in `/{{greengrass-root}}/ggc/deployment/group`), replace the contents of the file with an empty JSON object (`{}`), and run the following commands to start AWS IoT Greengrass:
 
-```
+```bash
 cd /greengrass/ggc/core/
 sudo ./greengrassd start
 ```
@@ -136,7 +136,7 @@ Then follow the steps in the [To cache messages in local storage](gg-core.md#con
 
 **Solution:** You might see this error in `GGCloudSpooler.log` when the Greengrass core is unable to send MQTT messages to AWS IoT Core. This can occur if the core environment has limited bandwidth and high latency. If you're running AWS IoT Greengrass v1.10.2 or later, try increasing the `mqttOperationTimeout` value in the [config.json](gg-core.md#config-json) file. If the property is not present, add it to the `coreThing` object. For example:
 
-```
+```json
 {
   "coreThing": {
     "mqttOperationTimeout": 10,
@@ -175,7 +175,7 @@ See [Troubleshooting shadow synchronization timeout issues](#troubleshooting-sha
 
 Use the following command and then restart the AWS IoT Greengrass Core software.
 
-```
+```bash
 ulimit -n 2048
 ```
 
@@ -202,7 +202,7 @@ In this example, the limit is increased to 2048. Choose a value appropriate for 
 
 **Solution:** Depending on your runtime and the executables used by the Lambda function to create connections, you might also receive connection timeout errors. Make sure your Lambda functions use the appropriate proxy configuration to connect through the network proxy. AWS IoT Greengrass passes the proxy configuration to user-defined Lambda functions through the `http_proxy`, `https_proxy`, and `no_proxy` environment variables. They can be accessed as shown in the following Python snippet.
 
-```
+```python
 import os
 print(os.environ['http_proxy'])
 ```
@@ -223,7 +223,7 @@ To resolve this issue, you can change the client ID used by the other device for
 
 1. Run the following command to stop the Greengrass daemon:
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ggc/core/
    sudo ./greengrassd stop
    ```
@@ -232,13 +232,13 @@ To resolve this issue, you can change the client ID used by the other device for
 
 1. In the `coreThing` object, add the `coreClientId` property, and set the value to your custom client ID. The value must be between 1 and 128 characters. It must be unique in the current AWS Region for the AWS account.
 
-   ```
+   ```json
    "coreClientId": "MyCustomClientId"
    ```
 
 1. Start the daemon.
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ggc/core/
    sudo ./greengrassd start
    ```
@@ -294,7 +294,7 @@ To resolve this issue, do the following:
 1. If you still get this error after you upgrade the AWS IoT Greengrass Core software, set the `system.useOverlayWithTmpfs` property to `true` in the [config.json](gg-core.md#config-json) file.
 **Example**
 
-   ```
+   ```json
    {
      "system": {
        "useOverlayWithTmpfs": true
@@ -353,7 +353,7 @@ W: GPG error: https://dnw9lb6lzp2d8.cloudfront.net stable InRelease: The followi
 
 This error occurs because AWS IoT Greengrass no longer offers the option to install or update the AWS IoT Greengrass core software from the APT repository. To successfully run `apt update`, remove the AWS IoT Greengrass repository from the device's sources list.
 
-```
+```bash
 sudo rm /etc/apt/sources.list.d/greengrass.list
 sudo apt update
 ```
@@ -476,7 +476,7 @@ These AWS CLI commands use example values for the group and deployment ID. When 
 
   1. To check whether the daemon is running:
 
-     ```
+     ```bash
      ps aux | grep -E 'greengrass.*daemon'
      ```
 
@@ -486,7 +486,7 @@ These AWS CLI commands use example values for the group and deployment ID. When 
 
   1. To start the daemon:
 
-     ```
+     ```bash
      cd /greengrass/ggc/core/
      sudo ./greengrassd start
      ```
@@ -504,7 +504,7 @@ Or, disable stream manager and then deploy the group. For more information, see 
 
 **Solution:** Run the following commands in your core device terminal to restart the AWS IoT Greengrass daemon.
 
-```
+```bash
 cd /greengrass/ggc/core/
 sudo ./greengrassd stop
 sudo ./greengrassd start
@@ -579,12 +579,12 @@ By default, the root CA certificate file is located in `/{{greengrass-root}}/cer
 
 You can use the following commands and output to test for this issue. Replace the {{region}} placeholder in the endpoints with your AWS Region.
 
-```
+```bash
 $ ping greengrass-ats.iot.{{region}}.amazonaws.com
 ping: greengrass-ats.iot.{{region}}.amazonaws.com: Name or service not known
 ```
 
-```
+```bash
 $ systemd-resolve greengrass-ats.iot.{{region}}.amazonaws.com
 greengrass-ats.iot.{{region}}.amazonaws.com: resolve call failed: DNSSEC validation failed: failed-auxiliary
 ```
@@ -814,7 +814,7 @@ You can also configure the core to establish persistent sessions with AWS IoT. T
 
 Significant delays in communication between a Greengrass core device and the cloud might cause shadow synchronization to fail because of a timeout. In this case, you should see log entries similar to the following:
 
-```
+```bash
 [2017-07-20T10:01:58.006Z][ERROR]-cloud_shadow_client.go:57,Cloud shadow client error: unable to get cloud shadow what_the_thing_is_named for synchronization. Get https://1234567890abcd.iot.us-west-2.amazonaws.com:8443/things/what_the_thing_is_named/shadow: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
 [2017-07-20T10:01:58.006Z][WARN]-sync_manager.go:263,Failed to get cloud copy: Get https://1234567890abcd.iot.us-west-2.amazonaws.com:8443/things/what_the_thing_is_named/shadow: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
 [2017-07-20T10:01:58.006Z][ERROR]-sync_manager.go:375,Failed to execute sync operation {what_the_thing_is_named VersionDiscontinued []}"
@@ -822,7 +822,7 @@ Significant delays in communication between a Greengrass core device and the clo
 
 A possible fix is to configure the amount of time that the core device waits for a host response. Open the [config.json](gg-core.md#config-json) file in `{{greengrass-root}}/config` and add a `system.shadowSyncTimeout` field with a timeout value in seconds. For example:
 
-```
+```json
 {
   "system": {
     "shadowSyncTimeout": 10

@@ -26,9 +26,13 @@ Publication date: **March 24, 2022** ([Document revisions](document-revisions.md
 
 ![A diagram depicting mesh generation.](https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/mesh-generation.jpeg)
 
+* Mesh generation *
+
 +  **Solve for the solution** — This step is the primary focus of this whitepaper. For some solutions, tens of thousands of cores (processors) run over weeks to achieve a solution. Conversely, some jobs may run in just minutes when scaled out appropriately.
 
    There are choices for model equations depending on the desired solution fidelity. The [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations) form the basis of the solved equations for most fluid calculations. The addition of chemical reactions, liquid and gas multi-phase flows, and many other physical properties create increasing complexity. For example, increasing the fidelity of turbulence modeling is achieved with various approximate equation sets such as Reynolds Average Navier-Stokes (RANS), Large Eddy Simulation (LES), Delayed Detached Eddy Simulation (DDES), and Direct Numerical Simulation (DNS). These approaches typically do not change the fundamental computational characteristics or scaling of the simulation.
 +  **Post process through visualization** — Examples of this step include the creation of images, video, and post processing of flow fields, such as creating total forces and moments. Similar to the geometry and mesh steps, this can be graphics and memory intensive, and graphics processing units (GPUs) are often favored.
 
 ![A diagram depicting post-processing visualization.](https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/post-processing-visualization.png)
+
+* Post-processing visualization*

@@ -179,7 +179,7 @@ Pauses Amazon DynamoDB multi-Region global table replication to any replica tabl
 **Multi-Region strongly consistent (MRSC) global tables**
 The following statements will be dynamically appended to the policy for the target DynamoDB MRSC global table:
 
-```
+```json
 {
    "Statement":[
       {
@@ -232,7 +232,7 @@ Target Amazon DynamoDB MRSC global tables are subject to an additional quota. Th
 **Multi-Region eventually consistent (MREC) global tables**
 The following two statements will be dynamically appended to the policy for the target DynamoDB MREC global table:
 
-```
+```json
 {
    "Statement":[
       {
@@ -288,7 +288,7 @@ The following two statements will be dynamically appended to the policy for the 
 
 The following statement will be dynamically appended to the stream policy for the target DynamoDB MREC global table:
 
-```
+```json
 {
    "Statement":[
       {

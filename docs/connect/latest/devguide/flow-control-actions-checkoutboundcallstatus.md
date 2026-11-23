@@ -9,7 +9,7 @@ Engages with the output provided by an answering machine, and provides branches 
 ## Parameter object
 <a name="checkoutboundcallstatus-parameter"></a>
 
-```
+```json
 {
 
 }

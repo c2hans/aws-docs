@@ -19,37 +19,37 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/typescript.html
 
 1. Check what *alternatives* is configured for
 
-   ```
+   ```sh
    alternatives --list
    ```
 
 1. Check *tsc*'s current configuration
 
-   ```
+   ```sh
    alternatives --display tsc
    ```
 
 1. Interactively change the tsc version
 
-   ```
+   ```sh
    alternatives --config tsc
    ```
 
 1. Switch to manual mode and select a specific version
 
-   ```
+   ```sh
    alternatives --set tsc /usr/bin/tsc-{MAJOR_VERSION}
    ```
 
 1. Switch back to auto version selection mode
 
-   ```
+   ```sh
    alternatives --auto tsc
    ```
 
  An example of installing and using several versions of Node and a TS compiler on the same system:
 
-```
+```sh
 # Check the AL2023 release
 $ cat /etc/amazon-linux-release
 Amazon Linux release 2023.9.20250929 (Amazon Linux)

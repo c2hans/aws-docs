@@ -111,7 +111,11 @@ The input fails to satisfy the constraints specified by the service.
  ** fields **
 The fields that caused the validation error.
  ** reason **
-The reason the request failed validation.
+The reason the request failed validation. If Amazon Polly can't use the AWS KMS key that you specified in `CreateVoice`, `fields` names `CustomerManagedEncryption.KmsKeyArn` and the reason is one of the following:
+kmsKeyNotFound
+No key with the specified ARN exists.
+kmsKeyUnusable
+The key is disabled, scheduled for deletion, or missing its key material, or it isn't a symmetric encryption key.
 HTTP Status Code: 400
 
 ## See Also

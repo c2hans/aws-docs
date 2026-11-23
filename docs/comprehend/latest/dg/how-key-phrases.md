@@ -17,7 +17,7 @@ The operations return a list of [KeyPhrase](https://docs.aws.amazon.com/comprehe
 
 The following example is the response from the `DetectKeyPhrases` operation.
 
-```
+```json
 {
     "LanguageCode": "en",
     "KeyPhrases": [

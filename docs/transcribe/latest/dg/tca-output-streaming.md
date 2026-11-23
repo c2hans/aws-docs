@@ -15,7 +15,7 @@ The following sections show examples of JSON output for real-time Call Analytics
 
 Here's what a category match looks like in your transcription output. This example shows that the audio from the 19010 millisecond timestamp to the 22690 millisecond timestamp is a match to the 'network-complaint' category. In this case, the custom 'network-complaint' category required that the customer said "*network issues*" (exact word match).
 
-```
+```json
 "CategoryEvent": {
     "MatchedCategories": [
         "{{network-complaint}}"
@@ -38,7 +38,7 @@ Here's what a category match looks like in your transcription output. This examp
 
 Here's what an issue detection match looks like in your transcription output. This example shows that the text from character 26 to character 62 describes an issue.
 
-```
+```json
 "UtteranceEvent": {
     {{...}}
     "Transcript": "{{Wang Xiulan I'm tired of the network issues my phone is having.}}",
@@ -59,7 +59,7 @@ Here's what an issue detection match looks like in your transcription output. Th
 
 Here's what sentiment analysis looks like in your transcription output.
 
-```
+```json
 "UtteranceEvent": {
     {{...}}
     "Sentiment": "{{NEGATIVE}}",
@@ -72,7 +72,7 @@ Here's what sentiment analysis looks like in your transcription output.
 
 Here's what PII identification looks like in your transcription output.
 
-```
+```json
 "Entities": [
     {
         "Content": "{{Wang Xiulan}}",
@@ -90,7 +90,7 @@ Here's what PII identification looks like in your transcription output.
 
 Here's what PII redaction looks like in your transcription output.
 
-```
+```json
 "Content": "{{[NAME]. Hi, [NAME]. I'm [NAME] Happy to be helping you today.}}",
 "Redaction": {
     "RedactedTimestamps": [
@@ -115,7 +115,7 @@ Here's what PII redaction looks like in your transcription output.
 
 Here's what Language identification looks like in your transcription output.
 
-```
+```json
 {
   "LanguageCode": "en-US",
   "LanguageIdentification": [
@@ -136,7 +136,7 @@ Here's what Language identification looks like in your transcription output.
 
 For brevity, some content is replaced with ellipses in the following transcription output.
 
-```
+```json
 {
     "CallAnalyticsTranscriptResultStream": {
         "BadRequestException": {},

@@ -46,7 +46,7 @@ Lists conversation transcripts with filters.
 ### Sample Request
 <a name="acxd-conversations-listconversations-sample-request"></a>
 
-```
+```typescript
 await client.send(new ListConversationsCommand({
       startTimestamp: sevenDaysAgo.toISOString(),
       endTimestamp: now.toISOString(),
@@ -57,7 +57,7 @@ await client.send(new ListConversationsCommand({
 ### Output
 <a name="acxd-conversations-listconversations-output"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -100,7 +100,7 @@ Gets a single conversation's full transcript.
 ### Sample Request
 <a name="acxd-conversations-getconversation-sample-request"></a>
 
-```
+```typescript
 await client.send(new GetConversationCommand({
   conversationIdentifier: "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
 }));
@@ -109,7 +109,7 @@ await client.send(new GetConversationCommand({
 ### Output
 <a name="acxd-conversations-getconversation-output"></a>
 
-```
+```json
 {
   "conversationId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
   "timestamp": "2026-08-01T12:00:00.000Z",

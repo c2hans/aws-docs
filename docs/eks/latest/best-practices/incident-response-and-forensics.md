@@ -19,13 +19,13 @@ Your first course of action should be to isolate the damage. Start by identifyin
 
 If you know the name and namespace of the offending pod, you can identify the worker node running the pod as follows:
 
-```
+```bash
 kubectl get pods <name> --namespace <namespace> -o=jsonpath='{.spec.nodeName}{"\n"}'
 ```
 
 If a [Workload Resource](https://kubernetes.io/docs/concepts/workloads/controllers/) such as a Deployment has been compromised, it is likely that all the pods that are part of the workload resource are compromised. Use the following command to list all the pods of the Workload Resource and the nodes they are running on:
 
-```
+```bash
 selector=$(kubectl get deployments <name> \
  --namespace <namespace> -o json | jq -j \
 '.spec.selector.matchLabels | to_entries | .[] | "\(.key)=\(.value)"')
@@ -41,7 +41,7 @@ The above command is for deployments. You can run the same command for other wor
 
 In some cases, you may identify that a service account is compromised. It is likely that pods using the identified service account are compromised. You can identify all the pods using the service account and nodes they are running on with the following command:
 
-```
+```bash
 kubectl get pods -o json --namespace <namespace> | \
     jq -r '.items[] |
     select(.spec.serviceAccount == "<service account name>") |
@@ -53,7 +53,7 @@ kubectl get pods -o json --namespace <namespace> | \
 
 In some cases, you may discover that a container image being used in pods on your cluster is malicious or compromised. A container image is malicious or compromised, if it was found to contain malware, is a known bad image or has a CVE that has been exploited. You should consider all the pods using the container image compromised. You can identify the pods using the image and nodes they are running on with the following command:
 
-```
+```bash
 IMAGE=<Name of the malicious/compromised image>
 
 kubectl get pods -o json --all-namespaces | \
@@ -67,7 +67,7 @@ kubectl get pods -o json --all-namespaces | \
 
 A deny all traffic rule may help stop an attack that is already underway by severing all connections to the pod. The following Network Policy will apply to a pod with the label `app=web`.
 
-```
+```yaml
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

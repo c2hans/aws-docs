@@ -74,7 +74,7 @@ Properties:
 <a name="aws-resource-mediaconnect-flowsource-properties"></a>
 
 `Decryption`  <a name="cfn-mediaconnect-flowsource-decryption"></a>
- The type of encryption that is used on the content ingested from this source. Allowable encryption types: static-key.
+ The type of encryption that is used on the content ingested from this source. Allowable encryption types: `static-key`, `speke`, and `srt-password`.
 *Required*: No
 *Type*: [Encryption](aws-properties-mediaconnect-flowsource-encryption.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

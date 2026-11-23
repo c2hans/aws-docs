@@ -11,7 +11,7 @@ You use the `Transfer` class in AWS SDK for PHP Version 3 to upload entire direc
 
 The [`Aws\S3\Transfer`](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html) object performs the transfers. The following example shows how to recursively upload a local directory of files to an Amazon S3 bucket.
 
-```
+```php
 // Create an S3 client.
 $client = new \Aws\S3\S3Client([
     'region'  => 'us-west-2',
@@ -37,7 +37,7 @@ The previous example demonstrates the minimum amount of code needed to perform a
 
 You can upload the local files to a “subfolder” of an Amazon S3 bucket by providing a key prefix in the `s3://` URI. The following example uploads the local files on disk to the `bucket` bucket and stores the files under the `foo` key prefix.
 
-```
+```php
 $source = '/path/to/source/files';
 $dest = 's3://bucket/foo';
 $directoryTransfer = new \Aws\S3\Transfer($client, $source, $dest);
@@ -49,7 +49,7 @@ $directoryTransfer->transfer();
 
 You can recursively download an Amazon S3 bucket to a local directory on disk by specifying the `$source` argument as an Amazon S3 URI (e.g., `s3://bucket`) and the `$dest` argument as the path to a local directory.
 
-```
+```php
 // Where the files will be sourced from.
 $source = 's3://bucket';
 
@@ -65,7 +65,7 @@ The SDK automatically creates any necessary directories when downloading the obj
 
 You can include a key prefix in the Amazon S3 URI after the bucket to download only objects stored under a “pseudo-folder”. The following example downloads only files stored under the “/foo” key prefix of the given bucket.
 
-```
+```php
 $source = 's3://bucket/foo';
 $dest = '/path/to/destination/dir';
 $directoryTransfer = new \Aws\S3\Transfer($client, $source, $dest);
@@ -108,7 +108,7 @@ Set to `true` to print out debug information for transfers. Set to an `fopen()` 
 
 The `Transfer` object is an instance of `GuzzleHttp\Promise\PromisorInterface`. This means that the transfer can occur asynchronously and is initiated by calling the `promise` method of the object.
 
-```
+```php
 $source = '/path/to/source/files';
 $dest = 's3://bucket';
 $directoryTransfer = new \Aws\S3\Transfer($client, $source, $dest);
@@ -124,7 +124,7 @@ $promise->then(function () {
 
 The promise is rejected if any file fails to transfer. You can handle the failed transfer asynchronously using the `otherwise` method of the promise. The `otherwise` function accepts a callback to invoke when an error occurs. The callback accepts the `$reason` for the rejection, which typically is an instance of `Aws\Exception\AwsException` (although a value of **any** type can be delivered to the callback).
 
-```
+```php
 $promise->otherwise(function ($reason) {
     echo 'Transfer failed: ';
     var_dump($reason);
@@ -138,7 +138,7 @@ Because the `Transfer` object returns a promise, these transfers can occur concu
 
 By adding a callback to the constructor, you can customize the options that the `Transfer` executes.
 
-```
+```php
 $uploader = new Transfer($s3Client, $source, $dest, [
     'before' => function (\Aws\Command $command) {
         // Commands can vary for multipart uploads, so check which command

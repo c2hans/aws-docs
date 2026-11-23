@@ -129,7 +129,7 @@ Now that everything is in place, test adding a file to the Amazon S3 bucket, and
 
 The following example shows a typical input to the state machine execution.
 
-```
+```json
 {
     "version": "0",
     "id": "6c540ad4-0671-9974-6511-756fbd7771c3",

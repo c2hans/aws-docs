@@ -43,7 +43,7 @@ Under these rules, the following example policy is considered public.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "efs-policy-wizard-15ad9567-2546-4bbb-8168-5541b6fc0e55",
@@ -74,7 +74,7 @@ You can make this file system policy non-public by using the EFS condition key `
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "efs-policy-wizard-15ad9567-2546-4bbb-8168-5541b6fc0e55",

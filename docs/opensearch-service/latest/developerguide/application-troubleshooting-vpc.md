@@ -18,7 +18,7 @@ When an OpenSearch UI application cannot reach a domain in a VPC, the cause is u
 
 The most common VPC problem is that the OpenSearch UI service is not authorized to access the VPC endpoint. Check whether the authorization exists:
 
-```
+```sh
 aws opensearch list-vpc-endpoint-access \
     --domain-name {{domain-name}} \
     --region {{region}}
@@ -26,7 +26,7 @@ aws opensearch list-vpc-endpoint-access \
 
 If the response does not include `application.opensearchservice.amazonaws.com`, authorize it:
 
-```
+```sh
 aws opensearch authorize-vpc-endpoint-access \
     --domain-name {{domain-name}} \
     --service application.opensearchservice.amazonaws.com \
@@ -42,7 +42,7 @@ Serverless collections use a network policy instead of endpoint authorization. T
 
 Even when endpoint access is authorized, the security group of the domain must allow inbound traffic on TCP port 443. The following commands find the security group and review its inbound rules. Replace the {{placeholder values}} with your own information:
 
-```
+```sh
 aws opensearch describe-domain \
     --domain-name {{domain-name}} \
     --region {{region}} \
@@ -56,7 +56,7 @@ aws ec2 describe-security-groups \
 
 To add an inbound rule, specify either your VPC CIDR block or, for tighter control, the security group of the VPC endpoint as the source:
 
-```
+```sh
 aws ec2 authorize-security-group-ingress \
     --group-id {{security-group-id}} \
     --protocol tcp \
@@ -79,7 +79,7 @@ The following table lists common security group mistakes.
 
 VPC endpoints rely on DNS to route traffic. Both `enableDnsSupport` and `enableDnsHostnames` must be `true` on the VPC. The following commands check each attribute and enable it if required. Replace the {{placeholder values}} with your own information:
 
-```
+```sh
 aws ec2 describe-vpc-attribute \
     --vpc-id {{vpc-id}} \
     --attribute enableDnsSupport \
@@ -114,7 +114,7 @@ Intermittent connectivity usually reflects a transient condition rather than a c
 
 Check whether the domain is processing a change:
 
-```
+```sh
 aws opensearch describe-domain \
     --domain-name {{domain-name}} \
     --query 'DomainStatus.Processing'

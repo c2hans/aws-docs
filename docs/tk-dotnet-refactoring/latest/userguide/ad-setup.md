@@ -81,7 +81,7 @@ Add the policy below to the secret. The policy contains the following ARNs:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [

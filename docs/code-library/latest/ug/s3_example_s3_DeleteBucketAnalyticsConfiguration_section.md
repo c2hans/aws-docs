@@ -30,7 +30,7 @@ For more information, see [Amazon S3 analytics - Storage Class Analysis](https:/
 **Tools for PowerShell V4**
 **Example 1: The command removes the analytics filter with name 'testfilter' in the given S3 bucket.**
 
-```
+```powershell
 Remove-S3BucketAnalyticsConfiguration -BucketName 'amzn-s3-demo-bucket' -AnalyticsId 'testfilter'
 ```
 +  For API details, see [DeleteBucketAnalyticsConfiguration](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -38,7 +38,7 @@ Remove-S3BucketAnalyticsConfiguration -BucketName 'amzn-s3-demo-bucket' -Analyti
 **Tools for PowerShell V5**
 **Example 1: The command removes the analytics filter with name 'testfilter' in the given S3 bucket.**
 
-```
+```powershell
 Remove-S3BucketAnalyticsConfiguration -BucketName 'amzn-s3-demo-bucket' -AnalyticsId 'testfilter'
 ```
 +  For API details, see [DeleteBucketAnalyticsConfiguration](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

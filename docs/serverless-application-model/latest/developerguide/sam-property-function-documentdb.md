@@ -14,7 +14,7 @@ To declare this entity in your AWS SAM template, use the following syntax.
 ### YAML
 <a name="sam-property-function-documentdb-syntax-yaml"></a>
 
-```
+```yaml
 BatchSize: {{Integer}}
 Cluster: [{{String}}](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-filtercriteria.html)
 CollectionName: {{String}}
@@ -123,7 +123,7 @@ The time from which to start reading, in Unix time seconds. Define `StartingPosi
 ### Amazon DocumentDB event source
 <a name="sam-property-function-documentdb-examples-example1"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...

@@ -9,7 +9,7 @@ To run guardrail checks, send an `InvokeGuardrailChecks` request to the Amazon B
 ## Request format
 <a name="guardrails-use-invoke-guardrail-checks-request"></a>
 
-```
+```json
 {
   "messages": [
     {
@@ -42,7 +42,7 @@ To run guardrail checks, send an `InvokeGuardrailChecks` request to the Amazon B
 ## Response format
 <a name="guardrails-use-invoke-guardrail-checks-response"></a>
 
-```
+```json
 {
   "results": {
     "contentFilter":        { "results": [ ... ] },

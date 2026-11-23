@@ -45,7 +45,7 @@ An event represents a single request from any source. It includes information ab
 
 The following example shows a CloudTrail log entry that demonstrates the `DeletePipeline` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

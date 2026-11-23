@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 
 All Admin API requests require authentication through Amazon Cognito:
 
-```
+```http
 Authorization: Bearer <cognito-jwt-token>
 Content-Type: application/json
 ```

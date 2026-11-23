@@ -30,7 +30,7 @@ For more information, see [AWS Site-to-Site VPN routing options](https://docs.aw
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified static route from the specified VPN connection. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2VpnConnectionRoute -VpnConnectionId vpn-12345678 -DestinationCidrBlock 11.12.0.0/16
 ```
 **Output:**
@@ -46,7 +46,7 @@ Performing operation "Remove-EC2VpnConnectionRoute (DeleteVpnConnectionRoute)" o
 **Tools for PowerShell V5**
 **Example 1: This example removes the specified static route from the specified VPN connection. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2VpnConnectionRoute -VpnConnectionId vpn-12345678 -DestinationCidrBlock 11.12.0.0/16
 ```
 **Output:**

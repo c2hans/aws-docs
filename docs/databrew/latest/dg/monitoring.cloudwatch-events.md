@@ -14,7 +14,7 @@ DataBrew reports an event to CloudWatch Events whenever the state of a resource 
 
 Following are examples of several events, showing various states of a DataBrew job: `SUCCEEDED`, `FAILED`, `TIMEOUT`, and `STOPPED`.
 
-```
+```json
 {
   "version": "0",
   "id": "abcdef00-1234-5678-9abc-def012345678",

@@ -291,7 +291,7 @@ The following is an example of a user managed policy that allows Notation to int
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

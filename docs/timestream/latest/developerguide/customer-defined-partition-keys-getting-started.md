@@ -16,7 +16,7 @@ You can use the following code snippets to create a table with a dimension type 
 ------
 #### [  Java  ]
 
-```
+```java
 public void createTableWithDimensionTypePartitionKeyExample() {
         System.out.println("Creating table");
         CreateTableRequest createTableRequest = new CreateTableRequest();
@@ -48,7 +48,7 @@ public void createTableWithDimensionTypePartitionKeyExample() {
 ------
 #### [  Java v2  ]
 
-```
+```java
 public void createTableWithDimensionTypePartitionKeyExample() {
         System.out.println("Creating table");
         final RetentionProperties retentionProperties = RetentionProperties.builder()
@@ -83,7 +83,7 @@ public void createTableWithDimensionTypePartitionKeyExample() {
 ------
 #### [  Go v1 ]
 
-```
+```go
 func createTableWithDimensionTypePartitionKeyExample(){
         // Can specify enforcement level with OPTIONAL or REQUIRED
         partitionKeyWithDimensionAndOptionalEnforcement := []*timestreamwrite.PartitionKey{
@@ -119,7 +119,7 @@ func createTableWithDimensionTypePartitionKeyExample(){
 ------
 #### [  Go v2 ]
 
-```
+```go
   func (timestreamBuilder TimestreamBuilder) CreateTableWithDimensionTypePartitionKeyExample() error {
          partitionKeyWithDimensionAndOptionalEnforcement := []types.PartitionKey{
              {
@@ -159,7 +159,7 @@ func createTableWithDimensionTypePartitionKeyExample(){
 ------
 #### [  Python  ]
 
-```
+```python
 def create_table_with_measure_name_type_partition_key(self):
         print("Creating table")
         retention_properties = {

@@ -38,7 +38,7 @@ For more information, see [Tagging Lambda Functions](https://docs.aws.amazon.com
 **Tools for PowerShell V4**
 **Example 1: Retrieves the tags and their values currently set on the specified function.**
 
-```
+```powershell
 Get-LMResourceTag -Resource "arn:aws:lambda:us-west-2:123456789012:function:MyFunction"
 ```
 **Output:**
@@ -55,7 +55,7 @@ Washington Olympia
 **Tools for PowerShell V5**
 **Example 1: Retrieves the tags and their values currently set on the specified function.**
 
-```
+```powershell
 Get-LMResourceTag -Resource "arn:aws:lambda:us-west-2:123456789012:function:MyFunction"
 ```
 **Output:**

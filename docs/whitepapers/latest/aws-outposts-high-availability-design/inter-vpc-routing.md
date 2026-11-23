@@ -8,6 +8,8 @@ Resources on two separate Outposts deployed in different VPCs can communicate ea
 
 ![Diagram showing network paths for multiple VPC with multiple logical Outposts](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-50-multiple-vpc-multiple-outposts-networking-path.png)
 
+*Network paths for multiple VPC with multiple logical Outposts*
+
 Recommended practices for protecting against larger failure modes:
 + Deploy multiple Outposts anchored to multiple AZs and Regions.
 + Use separate VPCs for each Outpost in a multi-Outpost deployment.

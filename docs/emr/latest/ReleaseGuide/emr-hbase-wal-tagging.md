@@ -15,7 +15,7 @@ The following example IAM policy illustrates a scenario that allows workspace CR
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -47,7 +47,7 @@ The following example IAM policy illustrates a scenario that allows workspace CR
 
 To verify that the tag is now required for workspace operations, use the [Amazon EMR WAL (EMRWAL) CLI reference](emrwalcli-ref.md) to call the [`listTagsForResource`](emrwalcli-ref.md#emrwalcli-ref-listtagsforresource) command on `tagAllowResourceTag` for the workspace with the desired resource tag. If you configured the condition correctly, the command will succeed.
 
-```
+```bash,sh,zsh
 emrwal listTagsForResource -r us-east-1 -arn arn:aws:emrwal:us-east-1:{{arn}}:workspace/tagAllowResourceTag
 Tag(Key=resource_tag_allow_test_key, Value=resource_tag_allow_test_value)
 ```

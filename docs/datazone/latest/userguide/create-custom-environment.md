@@ -26,7 +26,7 @@ When you create your custom role, make sure that it trusts `datazone.amazonaws.c
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [

@@ -20,7 +20,7 @@ Every layer of the image must be encrypted. Isolated and confidential pods do no
 + The `nitro-sandbox-keyprovider` binary installed on your build machine.
 + An ocicrypt keyprovider configuration file at `/etc/ocicrypt.json`:
 
-  ```
+  ```json
   {
     "key-providers": {
       "awskms": {
@@ -39,7 +39,7 @@ Every layer of the image must be encrypted. Isolated and confidential pods do no
 
 Use `skopeo` to copy an image from a source registry to a destination registry, encrypting layers in transit:
 
-```
+```bash
 OCICRYPT_KEYPROVIDER_CONFIG=/etc/ocicrypt.json \
   skopeo copy \
     --encryption-key provider:awskms:arn:aws:kms:region-code:111122223333:key/mrk-example \
@@ -55,7 +55,7 @@ OCICRYPT_KEYPROVIDER_CONFIG=/etc/ocicrypt.json \
 
 Generate a Cedar policy the same way as for unencrypted images. Pass `--with-pod-identity` so the sandbox receives the Pod Identity token it uses to call AWS KMS:
 
-```
+```bash
 eks-nitro-sandbox-genpolicy --with-pod-identity manifest.yaml
 ```
 
@@ -75,7 +75,7 @@ To pin groups exactly even with an encrypted image, set `securityContext.supplem
 
 Recommended workaround — set `securityContext` in the pod spec:
 
-```
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -101,7 +101,7 @@ spec:
 
 1. Apply the manifest:
 
-   ```
+   ```bash
    kubectl apply -f manifest.yaml
    ```
 

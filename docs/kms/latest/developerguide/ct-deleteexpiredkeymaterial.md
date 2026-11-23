@@ -8,7 +8,7 @@ When you import key material into an AWS KMS key (KMS key), you can set an expir
 
 The following example shows an AWS CloudTrail log entry generated when AWS KMS deletes the expired key material.
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

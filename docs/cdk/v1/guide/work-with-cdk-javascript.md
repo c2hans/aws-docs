@@ -92,17 +92,17 @@ In JavaScript, you import modules into your code under the same name you use to 
 + Use `require()`, not ES6-style `import` directives. Older versions of Node.js do not support ES6 imports, so using the older syntax is more widely compatible. (If you really want to use ES6 imports, use [esm](https://www.npmjs.com/package/esm) to ensure your project is compatible with all supported versions of Node.js.)
 + Generally, import individual classes from `@aws-cdk/core`.
 
-  ```
+  ```javascript
   const { App, Construct } = require('@aws-cdk/core');
   ```
 + If you need many classes from the core module, you may use a namespace alias of `cdk` instead of importing the individual classes. Avoid doing both.
 
-  ```
+  ```javascript
   const cdk = require('@aws-cdk/core');
   ```
 + Generally, import AWS Construct Libraries using short namespace aliases.
 
-  ```
+  ```javascript
   const s3 = require('@aws-cdk/aws-s3');
   ```
 
@@ -123,7 +123,7 @@ When subclassing an AWS Construct Library class (or overriding a method that tak
 
 A future release of the AWS CDK could coincidentally add a new property with a name you used for your own property. Passing the value you receive up the inheritance chain can then cause unexpected behavior. It's safer to pass a shallow copy of the props you received with your property removed or set to `undefined`. For example:
 
-```
+```javascript
 super(scope, name, {...props, encryptionKeys: undefined});
 ```
 
@@ -134,7 +134,7 @@ Alternatively, name your properties so that it is clear that they belong to your
 
 Missing values in an object (such as `props`) have the value `undefined` in JavaScript. The usual techniques apply for dealing with these. For example, a common idiom for accessing a property of a value that may be undefined is as follows:
 
-```
+```javascript
 // a may be undefined, but if it is not, it may have an attribute b
 // c is undefined if a is undefined, OR if a doesn't have an attribute b
 let c = a && a.b;
@@ -142,7 +142,7 @@ let c = a && a.b;
 
 However, if `a` could have some other "falsy" value besides `undefined`, it is better to make the test more explicit. Here, we'll take advantage of the fact that `null` and `undefined` are equal to test for them both at once:
 
-```
+```javascript
 let c = a == null ? a : a.b;
 ```
 
@@ -187,7 +187,7 @@ Imports can be replaced with calls to the `require()` function.
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as cdk from '@aws-cdk/core';
 import { Bucket, BucketPolicy } from '@aws-cdk/aws-s3';
 ```
@@ -195,7 +195,7 @@ import { Bucket, BucketPolicy } from '@aws-cdk/aws-s3';
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const cdk = require('@aws-cdk/core');
 const { Bucket, BucketPolicy } = require('@aws-cdk/aws-s3');
 ```
@@ -207,7 +207,7 @@ Exports can be assigned to the `module.exports` object.
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 export class Stack1 extends cdk.Stack {
   // ...
 }
@@ -220,7 +220,7 @@ export class Stack2 extends cdk.Stack {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 class Stack1 extends cdk.Stack {
   // ...
 }
@@ -250,7 +250,7 @@ To convert type-annotated code to JavaScript, remove the colon and the type. Cla
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 var encrypted: boolean = true;
 
 class myStack extends core.Stack {
@@ -266,7 +266,7 @@ function makeEnv(account: string, region: string) : object {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 var encrypted = true;
 
 class myStack extends core.Stack {
@@ -283,7 +283,7 @@ function makeEnv(account, region) {
 
 In TypeScript, interfaces are used to give bundles of required and optional properties, and their types, a name. You can then use the interface name as a type annotation. TypeScript will make sure that the object you use as, for example, an argument to a function has the required properties of the right types.
 
-```
+```javascript
 interface myFuncProps {
     code: lambda.Code,
     handler?: string

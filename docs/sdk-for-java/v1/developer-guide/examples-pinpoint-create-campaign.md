@@ -15,7 +15,7 @@ Before creating a new campaign, you must define a [Schedule](https://docs.aws.am
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.pinpoint.AmazonPinpoint;
 import com.amazonaws.services.pinpoint.AmazonPinpointClientBuilder;
 import com.amazonaws.services.pinpoint.model.CreateCampaignRequest;
@@ -30,7 +30,7 @@ import com.amazonaws.services.pinpoint.model.WriteCampaignRequest;
 
  **Code**
 
-```
+```java
 Schedule schedule = new Schedule()
         .withStartTime("IMMEDIATE");
 
@@ -54,7 +54,7 @@ Then create a new campaign in Amazon Pinpoint by providing the [WriteCampaignReq
 
  **Code**
 
-```
+```java
 CreateCampaignRequest createCampaignRequest = new CreateCampaignRequest()
         .withApplicationId(appId).withWriteCampaignRequest(request);
 

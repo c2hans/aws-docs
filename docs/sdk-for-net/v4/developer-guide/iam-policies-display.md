@@ -26,7 +26,7 @@ The following snippet finds the default version of the given IAM policy.
 
 The example [at the end of this topic](#iam-policies-display-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to determine the default version of an IAM policy
     // Returns a string with the version
@@ -60,7 +60,7 @@ The following snippet displays the policy document in JSON of the given IAM poli
 
 The example [at the end of this topic](#iam-policies-display-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to retrieve and display the policy document of an IAM policy
     private static async Task ShowPolicyDocument(
@@ -109,7 +109,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c23c23c19b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Web;
 using System.Threading.Tasks;

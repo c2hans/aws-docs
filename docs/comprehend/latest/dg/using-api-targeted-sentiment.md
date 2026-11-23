@@ -54,7 +54,7 @@ For the `cli-input-json` parameter you supply the path to a JSON file that conta
 
 If the request to start the job was successful, you will receive the following response:
 
-```
+```json
 {
     "JobStatus": "SUBMITTED",
     "JobArn": "{{job ARN}}"

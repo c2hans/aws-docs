@@ -293,7 +293,7 @@ aws docdb describe-pending-maintenance-actions \
 
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "PendingMaintenanceActions": [
         {

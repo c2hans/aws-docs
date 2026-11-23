@@ -37,7 +37,7 @@ To attach an Amazon S3 policy to your Amazon Personalize role do the following:
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "PersonalizeS3BucketAccessPolicy",
@@ -90,7 +90,7 @@ To complete a batch worklfow, Amazon Personalize needs permission to access and 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "PersonalizeS3BucketAccessPolicy",
@@ -119,7 +119,7 @@ To complete a batch worklfow, Amazon Personalize needs permission to access and 
 
 To export a dataset, your Amazon Personalize service role needs permission to use the `PutObject` and `ListBucket` Actions on your Amazon S3 bucket. The following example policy grants Amazon Personalize `PutObject` and `ListBucket` permissions. Replace `amzn-s3-demo-bucket` with the name of your bucket and attach the policy to your service role for Amazon Personalize. For information about attaching policies to a service role see [Attaching an Amazon S3 policy to your Amazon Personalize service role](#attaching-s3-policy-to-role).
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Id": "PersonalizeS3BucketAccessPolicy",
@@ -152,7 +152,7 @@ For more information on Amazon S3 bucket policies, see [How Do I Add an S3 Bucke
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "PersonalizeS3BucketAccessPolicy",
@@ -190,7 +190,7 @@ For more information on adding an Amazon S3 bucket policy to a bucket, see [How 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "PersonalizeS3BucketAccessPolicy",
@@ -222,7 +222,7 @@ For more information on adding an Amazon S3 bucket policy to a bucket, see [How 
 
 To export a dataset, Amazon Personalize needs permission to use the `PutObject` and `ListBucket` Actions on your Amazon S3 bucket. The following example policy grants the Amazon Personalize principle `PutObject` and `ListBucket` permissions. Replace `amzn-s3-demo-bucket` with the name of your bucket and attach the policy to your bucket. For information on adding an Amazon S3 bucket policy to a bucket, see [How Do I Add an S3 Bucket Policy?](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/add-bucket-policy.html) in the Amazon Simple Storage Service User Guide.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Id": "PersonalizeS3BucketAccessPolicy",

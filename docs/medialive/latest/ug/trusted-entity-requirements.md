@@ -79,7 +79,7 @@ Each row in the column describes a task or set of related tasks that the MediaLi
 
 The following sample policy grants the trusted entity the permissions that MediaLive needs to deliver source media to Elemental Inference and to read the metadata that Elemental Inference produces. If the channels use any Elemental Inference features, add this statement to a policy that you attach to the trusted entity role, or attach it as a separate policy.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

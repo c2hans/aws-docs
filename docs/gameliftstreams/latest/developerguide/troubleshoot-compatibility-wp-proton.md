@@ -17,7 +17,7 @@ To install Proton on your Ubuntu 22.04 LTS machine, use the following script to 
 
 1. Copy and paste the following code into a file called `proton-setup.sh` on your Ubuntu 22.04 LTS machine.
 
-   ```
+   ```bash
    #!/bin/bash
    # This is a script to build Proton. The default build is a tag from the
    # experimental_9.0 branch of Proton, but can be changed as a parameter to this script.
@@ -75,17 +75,17 @@ To install Proton on your Ubuntu 22.04 LTS machine, use the following script to 
    +  **Built-in Proton versions**
      + For Proton 10.0-4 (`PROTON-20260204`), use [proton-10.0-4](https://github.com/ValveSoftware/Proton/tree/proton-10.0-4).
 
-       ```
+       ```bash
        proton-setup.sh proton-10.0-4
        ```
      + For Proton 9.0-2 (`PROTON-20250516`), use [experimental-9.0-20241121b](https://github.com/ValveSoftware/Proton/tree/experimental-9.0-20241121b).
 
-       ```
+       ```bash
        proton-setup.sh experimental-9.0-20241121b
        ```
      + For Proton 8.0-5 (`PROTON-20241007`), use [experimental-8.0-20240205](https://github.com/ValveSoftware/Proton/tree/experimental-8.0-20240205).
 
-       ```
+       ```bash
        proton-setup.sh experimental-8.0-20240205
        ```
 
@@ -96,7 +96,7 @@ To install Proton on your Ubuntu 22.04 LTS machine, use the following script to 
 
       For a custom Proton version, we recommend using the Proton experimental\_8.0 branch.
 
-     ```
+     ```bash
      proton-setup.sh experimental_8.0
      ```
    +  **Other custom Proton versions**

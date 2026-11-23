@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-cognito-syntax.yaml"></a>
 
-```
+```yaml
   [Trigger](#sam-function-cognito-trigger): {{List}}
   [UserPool](#sam-function-cognito-userpool): {{String}}
 ```
@@ -45,7 +45,7 @@ Cognito Event Example
 #### YAML
 <a name="sam-property-function-cognito--examples--cognito-event--yaml"></a>
 
-```
+```yaml
 CognitoUserPoolPreSignup:
   Type: Cognito
   Properties:

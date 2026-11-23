@@ -23,7 +23,7 @@ The following table shows the token specifications supported by the grammar slot
 
 **Example**
 
-```
+```xml
 <rule id="state" scope="public">
     <one-of>
         <item>FL</item>

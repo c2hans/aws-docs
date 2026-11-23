@@ -38,7 +38,7 @@ For more information, see [Security groups for your Application Load Balancer](h
 **Tools for PowerShell V4**
 **Example 1: This example adds security group 'sg-07c3414abb8811cbd' to the specified Load balancer.**
 
-```
+```powershell
 Set-ELB2SecurityGroup -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -SecurityGroup 'sg-07c3414abb8811cbd'
 ```
 **Output:**
@@ -51,7 +51,7 @@ sg-07c3414abb8811cbd
 **Tools for PowerShell V5**
 **Example 1: This example adds security group 'sg-07c3414abb8811cbd' to the specified Load balancer.**
 
-```
+```powershell
 Set-ELB2SecurityGroup -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -SecurityGroup 'sg-07c3414abb8811cbd'
 ```
 **Output:**

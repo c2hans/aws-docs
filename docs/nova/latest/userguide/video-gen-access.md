@@ -30,7 +30,7 @@ To initiate the generation of a video, call `start_async_invoke()`. This creates
 + **modelInput** (Required) – Defines all of the video generation parameters specific to the Amazon Nova Reel model. For more information, see [Video generation input parameters](#video-gen-input-params).
 + **outputDataConfig** (Required) – Defines where the generated video should be saved. The value must have the following structure:
 
-  ```
+  ```JSON
   {
       "s3OutputDataConfig": {
           "s3Uri": {{string (S3 URL starting with "s3://")}}
@@ -48,7 +48,7 @@ Refer to the following parameter descriptions for information about how to gener
 
 The following structure defines an video generation job for Amazon Nova Reel:
 
-```
+```JSON
 {
     "taskType": "TEXT_VIDEO",
     "textToVideoParams": {
@@ -81,7 +81,7 @@ These input parameters are necessary to create the video generation job:
 **imageSource schema**
 When you use an image as the input, use the following structure to include the image in your request:
 
-```
+```JSON
 {
     "format": "png" | "jpeg"
     "source": {
@@ -98,7 +98,7 @@ When you use an image as the input, use the following structure to include the i
 
 You can generate videos up to two minutes long, in six second increments, with just a text prompt using the `MULTI_SHOT_AUTOMATED` task. You can provide a text prompt of up to 4000 characters but can't provide an input image.
 
-```
+```JSON
 {
     "taskType": "MULTI_SHOT_AUTOMATED",
     "multiShotAutomatedParams": {
@@ -127,7 +127,7 @@ These input parameters are necessary to create the video generation job:
 
 You can use the `MULTI_SHOT_MANUAL` task to generate videos up to two minutes long with multiple text prompts and input images. For each six second shot in the video, you can provide a text prompt with an optional input image. The duration of the video is determined based on the number shots that you specify.
 
-```
+```JSON
 model_input = {
   "taskType": "MULTI_SHOT_MANUAL",
   "multiShotManualParams": {
@@ -193,7 +193,7 @@ The video generation process will result in the following files being written to
 
 There are two ways to check on the progress of a video generation job. If you have a reference to the invocation ARN that was returned when starting the invocation, you can use the `get_async_invoke()` method of the Amazon Bedrock Runtime.
 
-```
+```Python
 response = bedrock_runtime.get_async_invoke(
     invocationArn="arn:AWS:bedrock:us-east-1:{{account-id}}:async-invoke/{{invocation-id}}"
 )
@@ -206,7 +206,7 @@ The status of a job will be "Completed", "InProgress", or "Failed". For more det
 
 If you do not have a reference to the invocation ARN, or if you want to check the status for multiple jobs at once, you can use the `list_async_invokes()` method of the Amazon Bedrock Runtime.
 
-```
+```Python
 invocations_details = bedrock_runtime.list_async_invokes(
     maxResults=10,  # (Optional)
     statusEquals="InProgress",  # (Optional) Can be "Completed", "InProgress", or "Failed". Omit this argument to list all jobs, regardless of status.
@@ -227,7 +227,7 @@ For a successful video generation request, the file contains the location of eac
 
 The schema of this JSON file is provided below.
 
-```
+```JSON
 {
     "schemaVersion": string,
     "shots": [{

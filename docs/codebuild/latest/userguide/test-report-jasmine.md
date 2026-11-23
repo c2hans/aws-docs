@@ -12,13 +12,13 @@ The procedure requires the following prerequisites:
 
 Add the [`jasmine-reporters`](https://www.npmjs.com/package/jasmine-reporters) package to the `devDependencies` section of your project's `package.json` file. This package has a collection of JavaScript reporter classes that can be used with Jasmine.
 
-```
+```bash
 npm install --save-dev jasmine-reporters
 ```
 
 If it's not already present, add the `test` script to your project's `package.json` file. The `test` script ensures that Jasmine is called when **npm test** is run.
 
-```
+```json
 {
   "scripts": {
     "test": "npx jasmine"
@@ -38,7 +38,7 @@ A Node.js project with Jasmine will, by default, have a `spec` sub-directory, wh
 
 To configure Jasmine to generate reports in the `JunitXML` format, instantiate the `JUnitXmlReporter` reporter by adding the following code to your tests.
 
-```
+```javascript
 var reporters = require('jasmine-reporters');
 
 var junitReporter = new reporters.JUnitXmlReporter({
@@ -52,7 +52,7 @@ jasmine.getEnv().addReporter(junitReporter);
 
 To configure Jasmine to generate reports in the `NunitXML` format, instantiate the `NUnitXmlReporter` reporter by adding the following code to your tests.
 
-```
+```javascript
 var reporters = require('jasmine-reporters');
 
 var nunitReporter = new reporters.NUnitXmlReporter({
@@ -68,7 +68,7 @@ The test reports are exported to the file specified by {{<test report directory>
 
 In your `buildspec.yml` file, add/update the following sections.
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -90,6 +90,6 @@ reports:
 
 If you are using the `NunitXml` report format, change the `file-format` value to the following.
 
-```
+```yaml
     file-format: NUNITXML
 ```

@@ -15,6 +15,9 @@ Use the AWS Serverless Application Model Command Line Interface (AWS SAM CLI) `
 **Note**
 `sam local invoke` supports durable functions with automatic checkpointing and replay capabilities. When invoking durable functions locally, execution state is automatically managed.
 
+**Note**
+`sam local invoke` supports functions that use a customer-managed runtime. For more information, see [Testing and debugging functions that use customer-managed runtimes](test-and-debug-customer-managed-runtimes.md).
+
 ## Prerequisites
 <a name="using-sam-cli-local-invoke-prerequisites"></a>
 
@@ -72,7 +75,7 @@ When using `sam local invoke`, the Lambda function runtime output (for example, 
 
 The following is an example of a basic Lambda function:
 
-```
+```python
 def handler(event, context):
     print("some log") # this goes to stderr
     return "hello world" # this goes to stdout
@@ -169,7 +172,7 @@ $ sam local generate-event {{apigateway http-api-proxy > events/apigateway_event
 
 Next, we modify our Lambda function to return a parameter value from the event.
 
-```
+```python
 def lambda_handler(event, context):
     print("HelloWorldFunction invoked")
     return {
@@ -202,7 +205,7 @@ REPORT RequestId: 59535d0d-3d9e-493d-8c98-6264e8e961b8  Init Duration: 1.63 ms  
 
 This application has a Lambda function that uses an environment variable for an Amazon DynamoDB table name. The following is an example of the function defined in the AWS SAM template:
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Transform: AWS::Serverless-2016-10-31
 ...
@@ -223,7 +226,7 @@ Resources:
 
 We want to locally test our Lambda function while having it interact with our DynamoDB table in the cloud. To do this, we create our environment variables file and save it in our project's root directory as `locals.json`. The value provided here for `SAMPLE_TABLE` references our DynamoDB table in the cloud.
 
-```
+```json
 {
     "getAllItemsFunction": {
         "SAMPLE_TABLE": "dev-demo-SampleTable-1U991234LD5UM98"

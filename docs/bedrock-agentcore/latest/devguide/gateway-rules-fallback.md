@@ -24,7 +24,7 @@ Start with a rule that routes a model to a specific target, without fallback. Us
 
 The following AWS CLI command creates a rule that routes `gpt-5.5` to the `bedrock-mantle` target:
 
-```
+```bash
 aws bedrock-agentcore-control create-gateway-rule \
     --gateway-identifier my-gateway-abc1234567 \
     --priority 100 \
@@ -67,7 +67,7 @@ Once a streaming response has started, the gateway can no longer fall back; the 
 
 The following AWS CLI command creates a rule that routes `gpt-5.5` to `bedrock-mantle` and adds a fallback chain. It tries `gpt-5.5` on `bedrock-mantle` first. If that fails, it tries `gpt-5.5` on `openai`. Only if neither can serve the request does it degrade to `gpt-5.4` on `bedrock-mantle`. The primary falls back on `429` and `5XX`, on a connection error or first-byte timeout, and on an unroutable target, with a 5-second first-byte timeout. The two fallback destinations take the service defaults.
 
-```
+```bash
 aws bedrock-agentcore-control create-gateway-rule \
     --gateway-identifier my-gateway-abc1234567 \
     --priority 100 \

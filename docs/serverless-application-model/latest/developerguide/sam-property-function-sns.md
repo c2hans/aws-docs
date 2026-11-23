@@ -16,7 +16,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-sns-syntax.yaml"></a>
 
-```
+```yaml
   [FilterPolicy](#sam-function-sns-filterpolicy): {{[SnsFilterPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-filterpolicy)}}
   FilterPolicyScope: {{String}}
   RedrivePolicy: {{Json}}
@@ -80,7 +80,7 @@ SNS Event Source Example
 #### YAML
 <a name="sam-property-function-sns--examples--sns-event-source-example--yaml"></a>
 
-```
+```yaml
 Events:
   SNSEvent:
     Type: SNS

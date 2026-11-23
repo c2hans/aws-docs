@@ -49,7 +49,7 @@ On Amazon Linux 2 and Amazon Linux 2023 managed nodes, the patch installation wo
 
      For Amazon Linux 2023, the equivalent dnf command for this workflow is:
 
-     ```
+     ```sh
      sudo dnf upgrade-minimal --sec-severity=Critical --sec-severity=Important --bugfix -y
      ```
 
@@ -57,13 +57,13 @@ On Amazon Linux 2 and Amazon Linux 2023 managed nodes, the patch installation wo
 
      For Amazon Linux 2 if a baseline with **Include nonsecurity updates** is selected, has a SEVERITY list of `[Critical, Important]` and a CLASSIFICATION list of `[Security, Bugfix]`, the equivalent yum command is:
 
-     ```
+     ```sh
      sudo yum update --security --sec-severity=Critical,Important --bugfix -y
      ```
 
      For Amazon Linux 2023, the equivalent dnf command is:
 
-     ```
+     ```sh
      sudo dnf upgrade --security --sec-severity=Critical --sec-severity=Important --bugfix -y
      ```
 **Note**
@@ -278,13 +278,13 @@ On AlmaLinux, Red Hat Enterprise Linux, and Rocky Linux managed nodes, the patch
      In some cases, a patch specified in `updateinfo.xml` might no longer be available in a configured repo. Configured repos usually have only the latest version of a patch, which is a cumulative roll-up of all prior updates, but the latest version might not match the patch baseline rules and is omitted from the patching operation.
    + **Commands**: For RHEL 7, the equivalent yum command for this workflow is:
 
-     ```
+     ```bash
      sudo yum update-minimal --sec-severity=Critical,Important --bugfix -y
      ```
 
      For AlmaLinux, RHEL 8, and Rocky Linux , the equivalent dnf commands for this workflow are:
 
-     ```
+     ```bash
      sudo dnf update-minimal --sec-severity=Critical --bugfix -y ; \
      sudo dnf update-minimal --sec-severity=Important --bugfix -y
      ```
@@ -304,7 +304,7 @@ For example, `dnf upgrade-minimal --security` installs the *minimal* versions of
 
      For AlmaLinux 8 and 9, RHEL 8, 9, and 10, and Rocky Linux 8, 9, and 10, the equivalent dnf command for this workflow is:
 
-     ```
+     ```bash
      sudo dnf update --security --bugfix -y
      ```
 **Note**

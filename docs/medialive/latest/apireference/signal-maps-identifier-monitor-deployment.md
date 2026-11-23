@@ -84,7 +84,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### POST schema
 <a name="signal-maps-identifier-monitor-deployment-request-body-post-example"></a>
 
-```
+```json
 {
   "dryRun": boolean
 }
@@ -96,7 +96,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### StartDeleteMonitorDeploymentResponseContent schema
 <a name="signal-maps-identifier-monitor-deployment-response-body-startdeletemonitordeploymentresponsecontent-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "cloudWatchAlarmTemplateGroupIds": [
@@ -134,7 +134,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### StartMonitorDeploymentResponseContent schema
 <a name="signal-maps-identifier-monitor-deployment-response-body-startmonitordeploymentresponsecontent-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "cloudWatchAlarmTemplateGroupIds": [
@@ -172,7 +172,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### BadRequestExceptionResponseContent schema
 <a name="signal-maps-identifier-monitor-deployment-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -181,7 +181,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### ForbiddenExceptionResponseContent schema
 <a name="signal-maps-identifier-monitor-deployment-response-body-forbiddenexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -190,7 +190,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### NotFoundExceptionResponseContent schema
 <a name="signal-maps-identifier-monitor-deployment-response-body-notfoundexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -199,7 +199,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### ConflictExceptionResponseContent schema
 <a name="signal-maps-identifier-monitor-deployment-response-body-conflictexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -208,7 +208,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### TooManyRequestsExceptionResponseContent schema
 <a name="signal-maps-identifier-monitor-deployment-response-body-toomanyrequestsexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -217,7 +217,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### InternalServerErrorExceptionResponseContent schema
 <a name="signal-maps-identifier-monitor-deployment-response-body-internalservererrorexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

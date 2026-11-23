@@ -31,7 +31,7 @@ You can configure the columns Amazon Personalize uses when training with the Ama
 
 To exclude columns from training, provide the `excludedDatasetColumns` object in the `trainingDataConfig` as part of the solution configuration. For each key, provide the dataset type. For each value, provide the list of columns to exclude. The following code shows how to exclude columns from training when you create a solution with the AWS CLI.
 
-```
+```cmd
 aws personalize create-solution \
 --name {{solution name}} \
 --dataset-group-arn {{dataset group ARN}} \
@@ -44,7 +44,7 @@ aws personalize create-solution \
 
 To exclude columns from training, provide the `excludedDatasetColumns` object in the `trainingDataConfig` as part of the solution configuration. For each key, provide the dataset type. For each value, provide the list of columns to exclude. The following code shows how to exclude columns from training when you create a solution with the AWS SDK for Python (Boto3).
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')

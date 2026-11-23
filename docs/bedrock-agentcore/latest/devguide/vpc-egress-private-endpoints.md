@@ -138,7 +138,7 @@ PROMPT> aws ec2 describe-subnets --subnet-ids subnet-12345678 --query 'Subnets[0
 
 To create a resource with a managed private endpoint, include the `privateEndpoint.managedVpcResource` block in your create request.
 
-```
+```json
 {
   ...
   "privateEndpoint": {
@@ -178,7 +178,7 @@ Tags to apply to the managed VPC Lattice resource gateway. The tag key `BedrockA
 
 After the resource is created, call the relevant Get API (for example, `GetGatewayTarget` ) to view the managed VPC Lattice resources that AgentCore created on your behalf. These are returned in the `privateEndpointManagedResources` field of the response:
 
-```
+```json
 {
   ...
   "status": "READY",
@@ -219,7 +219,7 @@ Before creating a gateway target with a self-managed private endpoint, complete 
 
 1.  **Create a Resource Gateway** in your VPC using the VPC Lattice console or the `CreateResourceGateway` API. Associate it with the subnets and security groups that have access to your private resource.
 
-   ```
+   ```bash
    aws vpc-lattice create-resource-gateway \
      --name my-resource-gateway \
      --vpc-identifier vpc-0abc123def456 \
@@ -230,7 +230,7 @@ Before creating a gateway target with a self-managed private endpoint, complete 
 
 1.  **Create a Resource Configuration** that points to your private endpoint. Use the ARN of the resource gateway you created in the previous step.
 
-   ```
+   ```bash
    aws vpc-lattice create-resource-configuration \
      --name my-resource-config \
      --type SINGLE \
@@ -241,7 +241,7 @@ Before creating a gateway target with a self-managed private endpoint, complete 
 
 1.  **If the resource is in a different account** than the AgentCore owner account, share the resource configuration with the AgentCore owner account using AWS RAM:
 
-   ```
+   ```bash
    aws ram create-resource-share \
      --name my-resource-config-share \
      --resource-arns <resource-configuration-arn> \
@@ -254,7 +254,7 @@ Before creating a gateway target with a self-managed private endpoint, complete 
 
 Your IAM principal also needs the following permissions to allow AgentCore to associate the resource configuration with the AgentCore service network on your behalf:
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -278,7 +278,7 @@ Your IAM principal also needs the following permissions to allow AgentCore to as
 
 To create a resource with a self-managed private endpoint, include the `privateEndpoint.selfManagedLatticeResource` block in your create request:
 
-```
+```json
 {
   ...
   "privateEndpoint": {
@@ -309,7 +309,7 @@ The following steps summarize the cross-account setup:
 
 1.  **In the resource owner account** : Share the resource configuration with the gateway owner account using AWS RAM:
 
-   ```
+   ```bash
    aws ram create-resource-share \
      --name my-resource-config-share \
      --resource-arns <resource-configuration-arn> \
@@ -318,7 +318,7 @@ The following steps summarize the cross-account setup:
 
 1.  **In the gateway owner account** : Accept the resource share:
 
-   ```
+   ```bash
    aws ram accept-resource-share-invitation \
      --resource-share-invitation-arn <invitation-arn>
    ```
@@ -350,7 +350,7 @@ The following steps describe the traffic flow when a routing domain is used:
 
 The following example shows how to create a gateway target for a private API Gateway using its VPCE domain as the routing domain. The target URL is the private API Gateway hostname, and the `routingDomain` is the VPCE DNS name:
 
-```
+```json
 {
   "name": "my-private-apigw-target",
   "privateEndpoint": {
@@ -411,7 +411,7 @@ Create a target group with target type `ip` that points to your private resource
 
 Create an HTTPS listener on port 443 using the public ACM certificate. Add a listener rule that transforms the Host header from the public domain to the private resource’s domain before forwarding.
 
-```
+```bash
 aws elbv2 create-listener \
   --load-balancer-arn <alb-arn> \
   --protocol HTTPS \
@@ -428,7 +428,7 @@ aws elbv2 create-listener \
 
 Then modify the listener rule to add the host header transform:
 
-```
+```bash
 aws elbv2 modify-rule \
   --rule-arn <default-rule-arn> \
   --actions '[{
@@ -450,7 +450,7 @@ aws elbv2 modify-rule \
 
 Use the ALB DNS name as the `routingDomain` and the public cert domain as the target URL.
 
-```
+```json
 {
   ...
   "privateEndpoint": {

@@ -106,7 +106,7 @@ To update an existing AWS IoT SiteWise real-time destination, first use the `Des
 Use the [UpdateGatewayCapabilityConfiguration](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateGatewayCapabilityConfiguration.html) API to configure the publisher.
 Set the `capabilityNamespace` parameter to `iotsitewise:publisher:3`.
 
-```
+```json
 {
     "sources": [
         {

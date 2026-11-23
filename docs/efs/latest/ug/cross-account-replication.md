@@ -36,7 +36,7 @@ The following are the general steps for creating an IAM role with custom trust p
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -60,7 +60,7 @@ The following are the general steps for creating an IAM role with custom trust p
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -111,7 +111,7 @@ To allow the source account permission to replicate to the destination file syst
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -157,7 +157,7 @@ To allow the destination account permission to delete the replication configurat
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "efs-policy-wizard-15ad9567-2546-4bbb-8168-5541b6fc0e55",

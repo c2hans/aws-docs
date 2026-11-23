@@ -26,7 +26,7 @@ The following code example shows how to use `CreateOpportunity`.
 **SDK for .NET**
 Create an opportunity.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // PDX-License-Identifier: Apache-2.0
 
@@ -151,7 +151,7 @@ The following code example shows how to use `GetOpportunity`.
 **SDK for .NET**
 Get an opportunity.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // PDX-License-Identifier: Apache-2.0
 
@@ -216,7 +216,7 @@ The following code example shows how to use `ListOpportunities`.
 **SDK for .NET**
 List opportunities.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // PDX-License-Identifier: Apache-2.0
 

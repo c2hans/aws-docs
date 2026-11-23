@@ -55,7 +55,7 @@ To initialize a Raw ECDH keyring with the `RawPrivateKeyToStaticPublicKey` key a
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 // Instantiate material providers
 var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 	    var BobPrivateKey = new MemoryStream(new byte[] { });
@@ -85,7 +85,7 @@ var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 
 The following Java example uses the `RawPrivateKeyToStaticPublicKey` key agreement schema to statically configure the sender's private key and the recipient's public key. Both key pairs are on the `ECC_NIST_P256` curve.
 
-```
+```java
 private static void StaticRawKeyring() {
     // Instantiate material providers
     final MaterialProviders materialProviders =
@@ -122,7 +122,7 @@ private static void StaticRawKeyring() {
 
 The following Python example uses the `raw_ecdh_static_configuration` key agreement schema to statically configure the sender's private key and the recipient's public key. Both key pairs must be on the same curve.
 
-```
+```rust
 // Create keyring input
 let raw_ecdh_static_configuration_input =
     RawPrivateKeyToStaticPublicKeyInput::builder()
@@ -175,7 +175,7 @@ To initialize a Raw ECDH keyring with the `EphemeralPrivateKeyToStaticPublicKey`
 
 The following example creates a Raw ECDH keyring with the `EphemeralPrivateKeyToStaticPublicKey` key agreement schema. On encrypt, the keyring will create a new key pair locally on the specified `ECC_NIST_P256` curve.
 
-```
+```cs
 // Instantiate material providers
 var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 	    var AlicePublicKey = new MemoryStream(new byte[] { });
@@ -203,7 +203,7 @@ var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 
 The following example creates a Raw ECDH keyring with the `EphemeralPrivateKeyToStaticPublicKey` key agreement schema. On encrypt, the keyring will create a new key pair locally on the specified `ECC_NIST_P256` curve.
 
-```
+```java
 private static void EphemeralRawEcdhKeyring() {
     // Instantiate material providers
     final MaterialProviders materialProviders =
@@ -236,7 +236,7 @@ private static void EphemeralRawEcdhKeyring() {
 
 The following example creates a Raw ECDH keyring with the `ephemeral_raw_ecdh_static_configuration` key agreement schema. On encrypt, the keyring will create a new key pair locally on the specified curve.
 
-```
+```rs
 // Create EphemeralPrivateKeyToStaticPublicKeyInput
 let ephemeral_raw_ecdh_static_configuration_input =
     EphemeralPrivateKeyToStaticPublicKeyInput::builder()
@@ -285,7 +285,7 @@ To initialize a Raw ECDH keyring with the `PublicKeyDiscovery` key agreement sch
 
 The following example creates a Raw ECDH keyring with the `PublicKeyDiscovery` key agreement schema. This keyring can decrypt any record where the public key of the specified private key matches the recipient's public key stored in the material description field of the encrypted record.
 
-```
+```cs
 // Instantiate material providers
 var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 	    var AlicePrivateKey = new MemoryStream(new byte[] { });
@@ -313,7 +313,7 @@ var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 
 The following example creates a Raw ECDH keyring with the `PublicKeyDiscovery` key agreement schema. This keyring can decrypt any record where the public key of the specified private key matches the recipient's public key stored in the material description field of the encrypted record.
 
-```
+```java
 private static void RawEcdhDiscovery() {
     // Instantiate material providers
     final MaterialProviders materialProviders =
@@ -347,7 +347,7 @@ private static void RawEcdhDiscovery() {
 
 The following example creates a Raw ECDH keyring with the `discovery_raw_ecdh_static_configuration` key agreement schema. This keyring can decrypt any message where the public key of the specified private key matches the recipient's public key stored on the message ciphertext.
 
-```
+```rs
 // Create PublicKeyDiscoveryInput
 let discovery_raw_ecdh_static_configuration_input =
     PublicKeyDiscoveryInput::builder()

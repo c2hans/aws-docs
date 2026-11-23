@@ -52,7 +52,7 @@ As a security best practice, we recommend you include condition keys in the key 
 
 ****
 
-```
+```json
 {
   "Id": "CMKKeyPolicy",
   "Version":"2012-10-17",

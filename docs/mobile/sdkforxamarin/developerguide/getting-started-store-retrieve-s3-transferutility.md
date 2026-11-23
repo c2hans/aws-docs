@@ -56,7 +56,7 @@ All new AWS regions created after January 2014 only support Signature Version 4.
 
 If your bucket is in one of the regions that does not support Signature Version 2 requests as listed on [this page](https://docs.aws.amazon.com/general/latest/gr/signature-version-2.html), you must set the AWSConfigsS3.UseSignatureVersion4 property to “true” like so:
 
-```
+```csharp
 AWSConfigsS3.UseSignatureVersion4 = true;
 ```
 
@@ -67,7 +67,7 @@ For more information on AWS Signature versions, see [Authenticating Requests (AW
 
 Create an S3 client, passing it your AWS credentials object, and then pass the S3 client to the transfer utility, like so:
 
-```
+```csharp
 var s3Client = new AmazonS3Client(credentials,region);
 var transferUtility = new TransferUtility(s3Client);
 ```
@@ -79,7 +79,7 @@ To upload a file to S3, call `Upload` on the Transfer Utility object, passing th
 +  `file` - String name of the file that you want to upload
 +  `bucketName` - String name of the S3 bucket to store the file
 
-```
+```csharp
 transferUtility.Upload(
   Path.Combine(Environment.SpecialFolder.ApplicationData,"file"),
   "bucketName"
@@ -96,7 +96,7 @@ To download a file from S3, call `Download` on the Transfer Utility object, pass
 +  `bucketName` - String name of the S3 bucket from which you want to download the file
 +  `key` - A string representing the name of the S3 object (a file in this case) to download
 
-```
+```csharp
 transferUtility.Download(
   Path.Combine(Environment.SpecialFolder.ApplicationData,"file"),
   "bucketName",

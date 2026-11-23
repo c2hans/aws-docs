@@ -166,6 +166,24 @@ To configure trigger filters:
 
 You can define up to 5 filter groups per project, with up to 20 patterns per group. Each pattern must be a valid regular expression of up to 256 characters. If you don't add any filter groups, reviews trigger on all applicable events for all target branches.
 
+## (Optional) Permissions for directed actions
+<a name="optional-permissions-for-directed-actions"></a>
+
+To allow approved write actions on GitLab (directed actions), make sure the connection has the permissions below. Directed actions must also be enabled on the agent space, and you approve each action in chat before it runs. For more information, see [Working with directed actions](working-with-devops-agent-working-with-directed-actions.md).
+
+The personal access token you create during registration already includes the `api` scope, which grants read and write API access, so you do not need an additional scope. For a fine-grained token, the following table lists the permissions to grant:
+
+| Resource | Permission | Used for |
+| --- | --- | --- |
+| Work item | Read, Create, Update | Issues and issue comments |
+| Merge request | Read, Create, Update | Merge requests and merge request comments |
+| Branch | Read, Create | Creating branches |
+| Pipeline | Read, Update | Retrying a pipeline |
+| Deployment | Read, Update | Rolling back a deployment |
+| Environment | Read, Update | Rolling back a deployment |
+
+In all cases, the token's user needs a role on each project that permits the action. GitLab requires at least the **Developer** role; some deployment actions require **Maintainer**.
+
 ## Troubleshooting
 <a name="troubleshooting"></a>
 

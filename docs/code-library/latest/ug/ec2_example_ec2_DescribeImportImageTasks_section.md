@@ -80,7 +80,7 @@ For more information, see [Import a VM to Amazon EC2 as an image using VM Import
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified image import task.**
 
-```
+```powershell
 Get-EC2ImportImageTask -ImportTaskId import-ami-hgfedcba
 ```
 **Output:**
@@ -100,7 +100,7 @@ StatusMessage   :
 ```
 **Example 2: This example describes all your image import tasks.**
 
-```
+```powershell
 Get-EC2ImportImageTask
 ```
 **Output:**
@@ -135,7 +135,7 @@ StatusMessage   :
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified image import task.**
 
-```
+```powershell
 Get-EC2ImportImageTask -ImportTaskId import-ami-hgfedcba
 ```
 **Output:**
@@ -155,7 +155,7 @@ StatusMessage   :
 ```
 **Example 2: This example describes all your image import tasks.**
 
-```
+```powershell
 Get-EC2ImportImageTask
 ```
 **Output:**

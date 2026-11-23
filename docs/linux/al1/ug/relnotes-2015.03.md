@@ -44,11 +44,11 @@ Python 2.7 is now used for the core system packages, including `yum` and `cloud-
 
 We've added Python 2.7 support for all of our existing Python 2.6 modules. For a full list, use yum's search command:
 
-```
+```sh
 $ yum search python27
 ```
 
-```
+```sh
 $ yum search python26
 ```
 
@@ -56,13 +56,13 @@ $ yum search python26
 
 **Default to 2.7**
 
-```
+```sh
 $ sudo alternatives --set python /usr/bin/python2.7
 ```
 
 **Default to 2.6**
 
-```
+```sh
 $ sudo alternatives --set python /usr/bin/python2.6
 ```
 
@@ -74,19 +74,19 @@ These examples assume you've installed `python27-pip` and `python27-virtualenv` 
 
 **Example To install a package system-wide without changing your default Python interpreter**
 
-```
+```sh
 $ sudo pip-2.7 install modulename
 ```
 
 **Example To install a package system-wide after you've changed your default with alternatives**
 
-```
+```sh
 $ sudo pip install modulename
 ```
 
 **Example To install a package in a virtualenv so that it doesn't impact your system python**
 
-```
+```sh
 $ virtualenv-2.7 myproject && cd myproject
 $ source bin/activate
 $ pip install modulename
@@ -99,7 +99,7 @@ As part of our improvements to the Python experience, we've added Python 3.4 to 
 
 **Example commands:**
 
-```
+```sh
 $ yum search python34
 $ sudo yum install python34-virtualenv
 $ sudo alternatives --set python /usr/bin/python3.4

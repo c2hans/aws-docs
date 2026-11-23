@@ -20,13 +20,13 @@ To take full advantage of the AWS SDK for JavaScript v3, we recommend using the 
 
 The collection of codemod scripts in [aws-sdk-js-codemod](https://www.npmjs.com/package/aws-sdk-js-codemod) helps migrate your existing AWS SDK for JavaScript (v2) application to use v3 APIs. You can run the transform as follows.
 
-```
+```sh
 $ npx aws-sdk-js-codemod -t v2-to-v3 PATH...
 ```
 
 For example, consider you have the following code, which creates a Amazon DynamoDB client from v2 and calls `listTables` operation.
 
-```
+```javascript
 // example.ts
 import AWS from "aws-sdk";
 
@@ -39,13 +39,13 @@ await client.listTables({}).promise()
 
 You can run our `v2-to-v3` transform on `example.ts` as follows.
 
-```
+```sh
 $ npx aws-sdk-js-codemod -t v2-to-v3 example.ts
 ```
 
 The transform will convert the DynamoDB import to v3, create v3 client and call the `listTables` operation as follows.
 
-```
+```javascript
 // example.ts
 import { DynamoDB } from "@aws-sdk/client-dynamodb";
 
@@ -79,7 +79,7 @@ The code examples for v3 in this guide are written in ECMAScript 6 (ES6). ES6 br
 
 Version 2 of the SDK for JavaScript (v2) required you to use the entire AWS SDK, as follows.
 
-```
+```javascript
 var AWS = require("aws-sdk");
 ```
 
@@ -87,13 +87,13 @@ Loading the entire SDK isn’t an issue if your application is using many AWS se
 
 In v3, you can load and use only the individual AWS Services you need. This is shown in the following example, which gives you access to Amazon DynamoDB (DynamoDB).
 
-```
+```javascript
 import { DynamoDB } from "@aws-sdk/client-dynamodb";
 ```
 
 Not only can you load and use individual AWS services, but you can also load and use only the service commands you need. This is shown in the following examples, which gives you access to DynamoDB client and the `ListTablesCommand` command.
 
-```
+```javascript
 import {
   DynamoDBClient,
   ListTablesCommand
@@ -103,12 +103,12 @@ import {
 **Important**
 You should not import submodules into modules. For example, the following code might result in errors.
 
-```
+```javascript
 import { CognitoIdentity } from "@aws-sdk/client-cognito-identity/CognitoIdentity";
 ```
 The following is the correct code.
 
-```
+```javascript
 import { CognitoIdentity } from "@aws-sdk/client-cognito-identity";
 ```
 
@@ -117,7 +117,7 @@ import { CognitoIdentity } from "@aws-sdk/client-cognito-identity";
 
 In Version 2 (v2), a simple code example that lists all of your Amazon DynamoDB tables in the `us-west-2` Region might look like the following.
 
-```
+```javascript
 var AWS = require("aws-sdk");
 // Set the Region
 AWS.config.update({ region: "us-west-2" });
@@ -136,7 +136,7 @@ ddb.listTables({ Limit: 10 }, function (err, data) {
 
 v3 looks like the following.
 
-```
+```javascript
 import {
   DynamoDBClient,
   ListTablesCommand
@@ -157,7 +157,7 @@ try {
 
 The `aws-sdk` package adds about 40 MB to your application. Replacing `var AWS = require("aws-sdk")` with `import {DynamoDB} from "@aws-sdk/client-dynamodb"` reduces that overhead to about 3 MB. Restricting the import to just the DynamoDB client and `ListTablesCommand` command reduces the overhead to less than 100 KB.
 
-```
+```javascript
 // Load the DynamoDB client and ListTablesCommand command for Node.js
 import {
   DynamoDBClient,
@@ -180,19 +180,19 @@ v3 provides a set of commands for each AWS Service package to enable you to perf
 
 You must import the commands you want to use. For example, the following code loads the DynamoDB service, and the `CreateTableCommand` command.
 
-```
+```javascript
 import { DynamoDB, CreateTableCommand } from "@aws-sdk/client-dynamodb";
 ```
 
 To call these commands in the recommended async/await pattern, use the following syntax.
 
-```
+```javascript
 {{CLIENT}}.send(new {{XXX}}Command);
 ```
 
 For example, the following example creates a DynamoDB table using the recommended async/await pattern.
 
-```
+```javascript
 import { DynamoDB, CreateTableCommand } from "@aws-sdk/client-dynamodb";
 const dynamodb = new DynamoDB({ region: "us-west-2" });
 const tableParams = {
@@ -212,7 +212,7 @@ try {
 
 To use v2 commands in the SDK for JavaScript, you import the full AWS Service packages, as demonstrated in the following code.
 
-```
+```javascript
 const { DynamoDB } = require('@aws-sdk/client-dynamodb');
 ```
 
@@ -224,7 +224,7 @@ const { DynamoDB } = require('@aws-sdk/client-dynamodb');
 
 The following example uses the v2 `createTable` command to create a DynamoDB table using the recommended async/await pattern.
 
-```
+```javascript
 const { DynamoDB } = require('@aws-sdk/client-dynamodb');
 const dynamoDB = new DynamoDB({ region: 'us-west-2' });
 var tableParams = {
@@ -244,7 +244,7 @@ run();
 
 The following example uses the v2 `createBucket` command to create an Amazon S3 bucket using the callback pattern.
 
-```
+```javascript
 const { S3 } = require('@aws-sdk/client-s3');
 const s3 = new S3({ region: 'us-west-2' });
 var bucketParams = {
@@ -271,7 +271,7 @@ In v3, you can use a new middleware stack to control the lifecycle of an operati
 
 The following example adds a custom header to a Amazon DynamoDB client (which we created and showed earlier) using middleware. The first argument is a function that accepts `next`, which is the next middleware stage in the stack to call, and `context`, which is an object that contains some information about the operation being called. The function returns a function that accepts `args`, which is an object that contains the parameters passed to the operation and the request. It returns the result from calling the next middleware with `args`.
 
-```
+```javascript
 dbclient.middlewareStack.add(
   (next, context) => args => {
     args.request.headers["Custom-Header"] = "value";

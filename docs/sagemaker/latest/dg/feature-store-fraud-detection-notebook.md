@@ -32,7 +32,7 @@ To start using Feature Store, create a SageMaker AI session, Boto3 session, and 
 **Note**
 The role that you use to run the notebook must have the following managed policies attached to it: `AmazonSageMakerFullAccess` and `AmazonSageMakerFeatureStoreAccess`. For information about adding policies to your IAM role, see [Adding policies to your IAM role](feature-store-adding-policies.md).
 
-```
+```python
 import boto3
 import sagemaker
 from sagemaker.core.helper.session_helper import Session
@@ -61,7 +61,7 @@ feature_store_session = Session(
 
 Load your data into data frames for each of your features. You use these data frames after you set up the feature group. In the fraud detection example, you can see these steps in the following code.
 
-```
+```python
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

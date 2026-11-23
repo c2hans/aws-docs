@@ -4,7 +4,9 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_StartSpeec
 
 # StartSpeechSynthesisTask
 
-Allows the creation of an asynchronous synthesis task, by starting a new `SpeechSynthesisTask`. This operation requires all the standard information needed for speech synthesis, plus the name of an Amazon S3 bucket for the service to store the output of the synthesis task and two optional parameters (`OutputS3KeyPrefix` and `SnsTopicArn`). Once the synthesis task is created, this operation will return a `SpeechSynthesisTask` object, which will include an identifier of this task as well as the current status. The `SpeechSynthesisTask` object is available for 72 hours after starting the asynchronous synthesis task.
+Starts an asynchronous synthesis task by creating a new `SpeechSynthesisTask`. This operation requires all the standard information needed for speech synthesis, plus the name of an Amazon S3 bucket for the service to store the output of the synthesis task and two optional parameters (`OutputS3KeyPrefix` and `SnsTopicArn`). After Amazon Polly creates the synthesis task, the operation returns a `SpeechSynthesisTask` object that includes an identifier for the task and its current status. The `SpeechSynthesisTask` object is available for 72 hours after you start the asynchronous synthesis task.
+
+To use a custom voice, specify its ID in `VoiceId`. The voice must be in `active` status. If the voice is in `pending` or `failed` status, the request fails with `ConflictException`. If no custom voice with the specified ID exists in your account and Region, the request fails with `ResourceNotFoundException`. If the custom voice uses a customer managed key, you need `kms:Decrypt` permission on the key. If you disable the key or schedule it for deletion before the task runs, the task fails and `TaskStatusReason` describes the cause.
 
 ## Request Syntax
 <a name="API_StartSpeechSynthesisTask_RequestSyntax"></a>
@@ -111,7 +113,7 @@ Valid Values: `ssml | text`
 Required: No
 
  ** [VoiceId](#API_StartSpeechSynthesisTask_RequestSyntax) **   <a name="polly-StartSpeechSynthesisTask-request-VoiceId"></a>
-Voice ID to use for the synthesis.
+The voice ID to use for the synthesis. To use a custom voice, specify the voice ID that `CreateVoice` returned, for example, `vc-9a8fa85dd3`. You can't specify the ARN of a voice.
 Type: String
 Valid Values: `Aditi | Amy | Astrid | Bianca | Brian | Camila | Carla | Carmen | Celine | Chantal | Conchita | Cristiano | Dora | Emma | Enrique | Ewa | Filiz | Gabrielle | Geraint | Giorgio | Gwyneth | Hans | Ines | Ivy | Jacek | Jan | Joanna | Joey | Justin | Karl | Kendra | Kevin | Kimberly | Lea | Liv | Lotte | Lucia | Lupe | Mads | Maja | Marlene | Mathieu | Matthew | Maxim | Mia | Miguel | Mizuki | Naja | Nicole | Olivia | Penelope | Raveena | Ricardo | Ruben | Russell | Salli | Seoyeon | Takumi | Tatyana | Vicki | Vitoria | Zeina | Zhiyu | Aria | Ayanda | Arlet | Hannah | Arthur | Daniel | Liam | Pedro | Kajal | Hiujin | Laura | Elin | Ida | Suvi | Ola | Hala | Andres | Sergio | Remi | Adriano | Thiago | Ruth | Stephen | Kazuha | Tomoko | Niamh | Sofie | Lisa | Isabelle | Zayd | Danielle | Gregory | Burcu | Jitka | Sabrina | Jasmine | Jihye | Ambre | Beatrice | Florian | Lennart | Lorenzo | Tiffany | Arjun | Carlos | Carolina | Curtis | Hyunduk | Kenneth | Kiara | Leo | Nate | Tina`
 Required: Yes
@@ -160,6 +162,14 @@ Type: [SynthesisTask](API_SynthesisTask.md) object
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** ConflictException **
+The request conflicts with the current state of the resource. For a custom voice, the voice isn't in the status that the operation requires. Check the status with `GetVoice`, and then try again.
+ ** resourceId **
+The ID of the resource that the request conflicts with.
+ ** resourceType **
+The type of the resource that the request conflicts with.
+HTTP Status Code: 409
+
  ** EngineNotSupportedException **
 This engine is not compatible with the voice that you have designated. Choose a new voice that is compatible with the engine or change the engine and restart the operation.
 HTTP Status Code: 400
@@ -196,6 +206,14 @@ HTTP Status Code: 404
  ** MarksNotSupportedForFormatException **
 Speech marks are not supported for the `OutputFormat` selected. Speech marks are only available for content in `json` format.
 HTTP Status Code: 400
+
+ ** ResourceNotFoundException **
+Amazon Polly can't find the specified resource. Verify that the resource exists in the AWS account and Region of the request and that its ARN or ID is spelled correctly, and then try again.
+ ** resourceId **
+The identifier of the resource that wasn't found.
+ ** resourceType **
+The type of the resource that wasn't found.
+HTTP Status Code: 404
 
  ** ServiceFailureException **
 An unknown condition has caused a service failure.

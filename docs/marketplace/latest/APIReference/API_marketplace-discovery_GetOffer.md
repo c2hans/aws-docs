@@ -37,7 +37,7 @@ Pattern: `[\w\-]+`
 Required: Yes
 
  ** [locale](#API_marketplace-discovery_GetOffer_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOffer-request-locale"></a>
-A BCP 47 language tag or comma-separated priority list specifying the preferred locale for response content. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If omitted, the service returns content in the default locale.
+The preferred locale for response content, as a Best Current Practice 47 (BCP 47) language tag or a comma-separated priority list of language tags. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If you omit this field, the service returns content in the default locale.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
@@ -103,7 +103,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [agreementProposalId](#API_marketplace-discovery_GetOffer_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOffer-response-agreementProposalId"></a>
-An encoded string to be passed by the acceptor of the terms when creating an agreement.
+An encoded string that you pass when you accept the terms and create an agreement.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[A-Za-z0-9_/-]+`
@@ -114,7 +114,7 @@ Type: Array of [OfferAssociatedEntity](API_marketplace-discovery_OfferAssociated
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
  ** [badges](#API_marketplace-discovery_GetOffer_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOffer-response-badges"></a>
-Badges indicating special attributes of the offer, such as private pricing, future dated, or replacement offer.
+Badges indicating special attributes of the offer, such as private pricing, future-dated, or replacement offer.
 Type: Array of [PurchaseOptionBadge](API_marketplace-discovery_PurchaseOptionBadge.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
 
@@ -131,7 +131,7 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\w\-]+`
 
  ** [pricingModel](#API_marketplace-discovery_GetOffer_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOffer-response-pricingModel"></a>
-The pricing model that determines how buyers are charged, such as usage-based, contract, BYOL, or free.
+The pricing model that determines how you are charged, such as usage-based, contract, Bring Your Own License (BYOL), or free.
 Type: [PricingModel](API_marketplace-discovery_PricingModel.md) object
 
  ** [sellerOfRecord](#API_marketplace-discovery_GetOffer_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOffer-response-sellerOfRecord"></a>
@@ -139,26 +139,26 @@ The entity responsible for selling the product under this offer.
 Type: [SellerInformation](API_marketplace-discovery_SellerInformation.md) object
 
  ** [availableFromTime](#API_marketplace-discovery_GetOffer_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOffer-response-availableFromTime"></a>
-The date and time when the offer became available to the buyer.
+The date and time when the offer became available to you.
 Type: Timestamp
 
  ** [expirationTime](#API_marketplace-discovery_GetOffer_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOffer-response-expirationTime"></a>
-The date and time until when the offer can be procured. This value is null for offers that never expire.
+The date and time until which you can procure the offer. This value is null for offers that never expire.
 Type: Timestamp
 
  ** [locale](#API_marketplace-discovery_GetOffer_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOffer-response-locale"></a>
-The locale of the returned content. Indicates whether the response contains content in the requested locale, or fell back to the default locale. See `Locale` for details.
+The locale of the returned content. This value indicates whether the response contains content in the requested locale or fell back to the default locale. See `Locale` for details.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
 
  ** [offerName](#API_marketplace-discovery_GetOffer_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOffer-response-offerName"></a>
-The display name of the offer. This is free-form text provided by the seller.
+The display name of the offer. The seller provides this free-form text.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 255.
 
  ** [replacementAgreementId](#API_marketplace-discovery_GetOffer_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOffer-response-replacementAgreementId"></a>
-The identifier of the existing agreement that this offer would replace. Enables agreement-based offer functionality.
+The identifier of the existing agreement that this offer would replace.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[A-Za-z0-9_/-]+`
@@ -169,7 +169,7 @@ Pattern: `[A-Za-z0-9_/-]+`
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-You don't have sufficient access to perform this action.
+You don't have sufficient access to perform this operation. For the permissions that each operation requires, see [Access control for the AWS Marketplace Discovery API](https://docs.aws.amazon.com/marketplace/latest/developerguide/discovery-api-access-control.html) in the *AWS Marketplace Developer Guide*.
 HTTP Status Code: 403
 
  ** InternalServerException **
@@ -177,17 +177,23 @@ Unexpected error during processing of the request.
 HTTP Status Code: 500
 
  ** ResourceNotFoundException **
-The specified resource doesn't exist.
+The specified resource doesn't exist. Verify that the identifier is correct.
 HTTP Status Code: 404
 
  ** ThrottlingException **
-The request was denied due to request throttling.
+The request was denied due to request throttling. Reduce the frequency of your requests and retry.
 HTTP Status Code: 429
 
  ** ValidationException **
-The input fails to satisfy the constraints specified by the service.
+The input fails to satisfy the constraints specified by the service. Check the `reason` field for the constraint that failed.
  ** reason **
-The reason that the input fails to satisfy the constraints specified by the service.
+The reason that the input fails to satisfy the constraints that the Discovery API specifies. This field has one of the following values:
+INVALID\_PAGINATION\_TOKEN
+The `nextToken` value is malformed, expired, or belongs to a different request. Start the pagination again from the first page.
+MALFORMED\_REQUEST\_PARAMETERS
+One or more request parameters have an invalid value. Correct the parameters that you specified, and then resubmit your request.
+PAGINATION\_LIMIT\_EXCEEDED
+The request asks for results beyond the deepest page that the operation returns. Narrow your request with filters or a more specific search.
 HTTP Status Code: 400
 
 ## See Also

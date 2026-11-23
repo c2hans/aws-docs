@@ -15,7 +15,7 @@ Type: [DateTimeRange](API_bcmDashboards_DateTimeRange.md) object
 Required: Yes
 
  ** filter **   <a name="awscostmanagement-Type-bcmDashboards_CostAnomalyDetectedQuery-filter"></a>
-The filter expression to apply to detected anomalies. Supports filtering by anomaly dimensions such as `SEVERITY`, `ASSESSMENT`, `MONITOR_TYPE`, and `ANOMALY_ID`.
+The filter expression to apply to detected anomalies. Supports filtering by `SEVERITY`, `ASSESSMENT`, `SERVICE`, `USAGE_TYPE`, `REGION`, `MONITOR_TYPE`, `LINKED_ACCOUNT`, and `ANOMALY_ID`.
 Type: [Expression](API_bcmDashboards_Expression.md) object
 Required: No
 

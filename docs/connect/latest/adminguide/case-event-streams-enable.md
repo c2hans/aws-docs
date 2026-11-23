@@ -40,7 +40,7 @@ You can enable **Case event configuration** directly from the console instead of
 
 Run the following command to enable case event streams for your Cases domain. After this command runs, when cases are created or updated, an event is published to the default-bus of the EventBridge service in your account (it must be in the same AWS Region as your Cases domain).
 
-```
+```bash
 aws connectcases put-case-event-configuration --domain-id {{dad5efb6-8485-4a55-8241-98a88EXAMPLE}} --event-bridge enabled=true
 ```
 
@@ -49,7 +49,7 @@ By default, the events published by Connect Customer Cases only contain metadata
 **Note**
 If you want to include a custom field in the event, use the custom field ID. For instructions about how to locate the custom field ID, see [Find the custom field ID](cases-block.md#get-case-properties-find-uuid).
 
-```
+```json
 # You can include any other field defined in your cases domain in the fields section.
 # To list the fields that are defined in your cases domain, call the Cases ListFields API.
 # To include case fields that you create (custom fields) in the event, enter the custom field ID.
@@ -81,7 +81,7 @@ aws connectcases put-case-event-configuration --domain-id {{YOUR_CASES_DOMAIN_ID
 
 Next, create an Amazon SQS queue and set that as a target for the Connect Customer Cases events on your EventBridge bus so that all the case events are delivered to the SQS queue for later processing.
 
-```
+```json
 # Create an SQS queue
 aws sqs create-queue --queue-name case-events-queue --attributes "{\"Policy\": \"{ \\\"Version\\\": \\\"2012-10-17\\\", \\\"Statement\\\": [{ \\\"Sid\\\": \\\"case-event-subscription\\\", \\\"Effect\\\": \\\"Allow\\\", \\\"Principal\\\": { \\\"Service\\\": \\\"events.amazonaws.com\\\"}, \\\"Action\\\": \\\"SQS:SendMessage\\\", \\\"Resource\\\": \\\"*\\\"}]}\"}"
 

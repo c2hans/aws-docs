@@ -20,7 +20,7 @@ To access the AWS Elemental MediaConnect console, you must have a policy that de
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -79,7 +79,7 @@ Every user of AWS Elemental MediaConnect must have a policy that defines permiss
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -133,7 +133,7 @@ This example IAM policy allows AWS Elemental MediaConnect to create and manage n
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

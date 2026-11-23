@@ -29,7 +29,7 @@ The following code example shows how to use `CreateVault`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -65,7 +65,7 @@ The following code example shows how to use `DeleteArchive`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -101,7 +101,7 @@ The following code example shows how to use `DeleteVault`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -135,7 +135,7 @@ The following code example shows how to use `DeleteVaultNotifications`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -169,7 +169,7 @@ The following code example shows how to use `DescribeJob`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -211,7 +211,7 @@ The following code example shows how to use `GetJobOutput`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -254,7 +254,7 @@ The following code example shows how to use `GetVaultNotifications`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -297,7 +297,7 @@ The following code example shows how to use `InitiateJob`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 Retrieve a vault inventory.
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -328,7 +328,7 @@ class GlacierWrapper:
 ```
 Retrieve an archive from a vault.
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -367,7 +367,7 @@ The following code example shows how to use `ListJobs`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -420,7 +420,7 @@ The following code example shows how to use `ListVaults`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -451,7 +451,7 @@ The following code example shows how to use `SetVaultNotifications`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -507,7 +507,7 @@ The following code example shows how to use `UploadArchive`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -563,7 +563,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 Create a class that wraps Amazon Glacier operations.
 
-```
+```python
 import argparse
 import logging
 import os
@@ -726,7 +726,7 @@ class GlacierWrapper:
 ```
 Call functions on the wrapper class to create a vault and upload a file, then configure the vault to publish notifications and initiate a job to retrieve the archive.
 
-```
+```python
 def upload_demo(glacier, vault_name, topic_arn):
     """
     Shows how to:
@@ -795,7 +795,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 Create a class that wraps Amazon Glacier operations.
 
-```
+```python
 import argparse
 import logging
 import os
@@ -901,7 +901,7 @@ class GlacierWrapper:
 ```
 Call functions on the wrapper class to get archive content from a completed job, then delete the archive.
 
-```
+```python
 def retrieve_demo(glacier, vault_name):
     """
     Shows how to:

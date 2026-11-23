@@ -18,7 +18,7 @@ In AWS Glue, you can control access to resources using an AWS Identity and Acces
 
 Data Catalog resources have a hierarchical structure, with `catalog` as the root.
 
-```
+```json
 arn:aws:glue:{{region}}:{{account-id}}:catalog
 ```
 
@@ -55,7 +55,7 @@ arn:aws:glue:us-east-1:123456789012:table/default/*
 **Important**
 All operations performed on a Data Catalog resource require permission on the resource and all the ancestors of that resource. For example, to create a partition for a table requires permission on the table, database, and catalog where the table is located. The following example shows the permission required to create partitions on table `PrivateTable` in database `PrivateDatabase` in the Data Catalog.
 
-```
+```json
 {
    "Sid": "GrantCreatePartitions",
    "Effect": "Allow",
@@ -71,7 +71,7 @@ All operations performed on a Data Catalog resource require permission on the re
 ```
 In addition to permission on the resource and all its ancestors, all delete operations require permission on all children of that resource. For example, deleting a database requires permission on all the tables and user-defined functions in the database, in addition to the database and the catalog where the database is located. The following example shows the permission required to delete database `PrivateDatabase` in the Data Catalog.
 
-```
+```json
 {
    "Sid": "GrantDeleteDatabase",
    "Effect": "Allow",
@@ -120,7 +120,7 @@ Suppose that you want to allow a user to call the `GetDevEndpoint` operation. Th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -143,7 +143,7 @@ The following policy allows `UpdateDevEndpoint` access to resources that match `
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -166,7 +166,7 @@ You can combine the two policies as in the following example. You might see `Ent
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -192,7 +192,7 @@ Some AWS Glue API operations retrieve multiple items (such as multiple developme
 
 For example, to include `GetDevEndpoints` in the policy, the resource must be scoped to the wildcard (\*). The singular operations (`GetDevEndpoint`, `CreateDevEndpoint`, and `DeleteDevendpoint`) are also scoped to all (\*) resources in the example.
 
-```
+```json
 {
             "Sid": "PluralAPIIncluded",
             "Effect": "Allow",
@@ -215,7 +215,7 @@ Some AWS Glue API operations retrieve multiple items (such as multiple developme
 
 For example, to allow access to a specific development endpoint, include `BatchGetDevEndpoints` in the policy with its resource ARN.
 
-```
+```json
 {
             "Sid": "BatchGetAPIIncluded",
             "Effect": "Allow",

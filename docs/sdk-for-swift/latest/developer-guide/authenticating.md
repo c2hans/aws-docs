@@ -28,7 +28,7 @@ This method includes installing the AWS CLI for ease of configuration and for re
 
   The following sample `config` file shows a default profile set up with SSO token provider configuration. The profile's `sso_session` setting refers to the named [`sso-session` section](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html#section-session). The `sso-session` section contains settings to initiate an AWS access portal session.
 
-  ```
+  ```ini
   [default]
   sso_session = my-sso
   sso_account_id = {{111122223333}}
@@ -47,7 +47,7 @@ This method includes installing the AWS CLI for ease of configuration and for re
 
 Before running an application that accesses AWS services, you need an active AWS access portal session for the SDK to use IAM Identity Center authentication to resolve credentials. Depending on your configured session lengths, your access will eventually expire and the SDK will encounter an authentication error. To sign in to the AWS access portal, run the following command in the AWS CLI.
 
-```
+```bash
 $ aws sso login
 ```
 
@@ -55,7 +55,7 @@ If you followed the guidance and have a default profile setup, you do not need t
 
 To optionally test if you already have an active session, you can run the following AWS CLI command.
 
-```
+```bash
 $ aws sts get-caller-identity
 ```
 

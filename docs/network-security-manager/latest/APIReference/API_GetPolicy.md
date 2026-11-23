@@ -44,6 +44,15 @@ Content-type: application/json
    "isSnapshot": boolean,
    "policyArn": "string",
    "policyConfiguration": {
+      "igwFirewallConfig": {
+         "defaultSubnetConnectivity": "string",
+         "subnetConnectivityOverrides": [
+            {
+               "connectivityType": "string",
+               "scopes": [ "string" ]
+            }
+         ]
+      },
       "remediationEnabled": boolean,
       "resourcesCleanUp": boolean,
       "wafConfig": {
@@ -77,7 +86,7 @@ Array Members: Minimum number of 0 items. Maximum number of 100 items.
  ** [firewallType](#API_GetPolicy_ResponseSyntax) **   <a name="networksecuritymanager-GetPolicy-response-firewallType"></a>
 The firewall type associated with the resource.
 Type: String
-Valid Values: `WAF | SHIELD_ADVANCED`
+Valid Values: `WAF | SHIELD_ADVANCED | IGW_FIREWALL`
 
  ** [hasPublishedVersion](#API_GetPolicy_ResponseSyntax) **   <a name="networksecuritymanager-GetPolicy-response-hasPublishedVersion"></a>
 Specifies whether a published version of the resource exists.

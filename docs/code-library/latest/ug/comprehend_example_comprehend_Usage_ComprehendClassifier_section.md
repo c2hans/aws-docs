@@ -19,7 +19,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 Create a wrapper class to call Amazon Comprehend document classifier actions.
 
-```
+```python
 class ComprehendClassifier:
     """Encapsulates an Amazon Comprehend custom classifier."""
 
@@ -217,7 +217,7 @@ class ComprehendClassifier:
 ```
 Create a class to help run the scenario.
 
-```
+```python
 class ClassifierDemo:
     """
     Encapsulates functions used to run the demonstration.
@@ -388,7 +388,7 @@ class ClassifierDemo:
 ```
 Train a classifier on a set of GitHub issues with known labels, then send a second set of GitHub issues to the classifier so that they can be labeled.
 
-```
+```python
 def usage_demo():
     print("-" * 88)
     print("Welcome to the Amazon Comprehend custom document classifier demo!")

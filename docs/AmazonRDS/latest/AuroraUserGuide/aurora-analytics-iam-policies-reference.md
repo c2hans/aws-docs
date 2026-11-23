@@ -30,10 +30,11 @@ The following table summarizes the permissions that Aurora PostgreSQL requires f
 | Apache Iceberg, Amazon S3 Tables by table ARN | Amazon S3 Tables | s3tables:GetTable, s3tables:GetTableBucket, s3tables:GetTableData, s3tables:GetNamespace | Table bucket, table |
 | Any of the preceding, with SSE-KMS encryption | \+ AWS KMS | kms:Decrypt | KMS key |
 
-Three points affect how much you need to grant:
+The following points affect how much you need to grant:
 + `s3:ListBucket` is required only when Aurora PostgreSQL must discover files. A location that names an exact object key needs no listing. Iceberg tables need no listing either, because Iceberg manifests carry the exact key of every data file. Crawler-registered Parquet tables in AWS Glue store a folder path rather than a manifest, which means listing is required for those.
 + Amazon S3 Tables requires four `s3tables` actions, not one. Resolving a table is a multi-step operation in the Amazon S3 Tables service: the table bucket, the namespace, the table metadata, and the table data are each authorized separately. Granting only `s3tables:GetTableData` results in an access denied error naming `s3tables:GetTableBucket`.
 + Cross-account access requires permissions on both sides. The examples in this section are same-account. When another account owns the data, the resource policy in the data owner's account and the IAM policy in your account must both allow the action.
++ Lake Formation-governed tables still need Amazon S3 permissions. Aurora PostgreSQL currently reads the data with the role's own `s3:GetObject` permission, because Lake Formation doesn't provide temporary credentials to Aurora PostgreSQL. A Lake Formation `SELECT` grant alone isn't enough. For more information, see [Lake Formation access control](aurora-analytics-limitations.md#aurora-analytics-limitations-access-control).
 
 ## Example policies
 <a name="aurora-analytics-iam-examples"></a>

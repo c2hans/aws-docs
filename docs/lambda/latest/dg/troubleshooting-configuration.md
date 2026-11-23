@@ -32,7 +32,7 @@ While Lambda doesn't allow you to modify CPU configuration directly, CPU is indi
 ## Timeouts
 <a name="timeouts"></a>
 
- [Timeouts](https://docs.aws.amazon.com/lambda/latest/dg/configuration-console.html) for Lambda functions can be set between 1 and 900 seconds (15 minutes). For functions using AWS Lambda Managed Instances, asynchronous invocations and event source mapping invocations (except Amazon MQ and Amazon DocumentDB) support a maximum allowed value of 5,400 seconds (90 minutes). By default, the Lambda console sets this to 3 seconds. The timeout value is a safety valve that ensures functions do not run indefinitely. After the timeout value is reached, Lambda stops the function invocation.
+ [Timeouts](https://docs.aws.amazon.com/lambda/latest/dg/configuration-console.html) for Lambda functions can be set between 1 and 1,800 seconds (30 minutes). For functions using AWS Lambda Managed Instances, asynchronous invocations and event source mapping invocations (except Amazon MQ and Amazon DocumentDB) support a maximum allowed value of 5,400 seconds (90 minutes). By default, the Lambda console sets this to 3 seconds. The timeout value is a safety valve that ensures functions do not run indefinitely. After the timeout value is reached, Lambda stops the function invocation.
 
 If a timeout value is set close to the average duration of a function, this increases the risk that the function times out unexpectedly. The duration of a function can vary based on the amount of data transfer and processing, and the latency of any services the function interacts with. Common causes of timeout include:
 + When downloading data from S3 buckets or other data stores, the download is larger or takes longer than average.
@@ -96,7 +96,7 @@ When run against the log group for this function, this shows that timeouts were 
 
 For function code that uses asynchronous patterns, it's possible for the callback results from one invocation to be returned in a future invocation. This example uses Node.js, but the same logic can apply to other runtimes using asynchronous patterns. The function uses the traditional callback syntax in JavaScript. It calls an asynchronous function with an incremental counter that tracks the number of invocations:
 
-```
+```javascript
 let seqId = 0
 
 exports.handler = async (event, context) => {
@@ -127,7 +127,7 @@ After it resumes, JavaScript continues processing the event loop, which in this 
 
 This creates the potential for private data from a previous invocation to appear in a subsequent invocation. There are two ways to prevent or detect this behavior. First, JavaScript provides the [async and await keywords](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) to simplify asynchronous development and also force code execution to wait for an asynchronous call to complete. The function above can be rewritten using this approach as follows:
 
-```
+```javascript
 let seqId = 0
 exports.handler = async (event) => {
     console.log(`Starting: sequence Id=${++seqId}`)
@@ -154,7 +154,7 @@ Using this syntax prevents the handler from exiting before the asynchronous func
 
 Generally, you should make sure any background processes or callbacks in the code are complete before the code exits. If this is not possible in your use case, you can use an identifier to ensure that the callback belongs to the current invocation. To do this, you can use the *awsRequestId* provided by the context object. By passing this value to the asynchronous callback, you can compare the passed value with the current value to detect if the callback originated from another invocation:
 
-```
+```javascript
 let currentContext
 
 exports.handler = async (event, context) => {

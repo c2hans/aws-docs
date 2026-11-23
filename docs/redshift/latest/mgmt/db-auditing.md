@@ -176,7 +176,7 @@ The bucket policy uses the following format. {{ServiceName}} and {{BucketName}} 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -208,7 +208,7 @@ The following example is a bucket policy for the US East (N. Virginia) Region an
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -78,7 +78,7 @@ To bind-mount the `{{/greengrass/v2}}/logs` directory, do one of the following w
 
   Modify the `volumes` block in the Compose file to include the following line before you run your `docker-compose up` command.
 
-  ```
+  ```yaml
   volumes:
    - {{/tmp/logs}}:{{/greengrass/v2}}/logs:ro
   ```
@@ -93,12 +93,12 @@ For information about running Greengrass Docker containers, see [Run AWS IoT Gre
 When you use `docker exec` to run commands inside the Docker container, those commands are not captured in the Docker logs. Logging your commands in the Docker logs can help you investigate the state of the Greengrass Docker container. Do one of the following:
 + Run the following command in a separate terminal to attach your terminal's standard input, output, and error to the running container. This enables you to view and control the Docker container from your current terminal.
 
-  ```
+  ```bash
   docker attach {{container-id}}
   ```
 + Run the following command in a separate terminal. This enables you to run your commands in interactive mode, even if the container is not attached.
 
-  ```
+  ```bash
   docker exec -it {{container-id}} sh -c "{{command}} > /proc/1/fd/1"
   ```
 

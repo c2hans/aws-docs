@@ -16,7 +16,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-iotrule-syntax.yaml"></a>
 
-```
+```yaml
   [AwsIotSqlVersion](#sam-function-iotrule-awsiotsqlversion): {{String}}
   [Sql](#sam-function-iotrule-sql): {{String}}
 ```
@@ -47,7 +47,7 @@ IOT Rule Example
 #### YAML
 <a name="sam-property-function-iotrule--examples--iot-rule--yaml"></a>
 
-```
+```yaml
 IoTRule:
   Type: IoTRule
   Properties:

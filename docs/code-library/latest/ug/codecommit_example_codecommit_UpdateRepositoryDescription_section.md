@@ -30,7 +30,7 @@ For more information, see [Change AWS CodeCommit repository settings](https://do
 **Tools for PowerShell V4**
 **Example 1: This example changes the description for the specified repository.**
 
-```
+```powershell
 Update-CCRepositoryDescription -RepositoryName MyDemoRepo -RepositoryDescription "This is an updated description."
 ```
 +  For API details, see [UpdateRepositoryDescription](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -38,7 +38,7 @@ Update-CCRepositoryDescription -RepositoryName MyDemoRepo -RepositoryDescription
 **Tools for PowerShell V5**
 **Example 1: This example changes the description for the specified repository.**
 
-```
+```powershell
 Update-CCRepositoryDescription -RepositoryName MyDemoRepo -RepositoryDescription "This is an updated description."
 ```
 +  For API details, see [UpdateRepositoryDescription](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

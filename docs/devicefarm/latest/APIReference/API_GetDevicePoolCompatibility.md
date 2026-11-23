@@ -173,7 +173,8 @@ Required: No
             "resolution": {
                "height": number,
                "width": number
-            }
+            },
+            "type": "string"
          },
          "incompatibilityMessages": [
             {
@@ -230,7 +231,8 @@ Required: No
             "resolution": {
                "height": number,
                "width": number
-            }
+            },
+            "type": "string"
          },
          "incompatibilityMessages": [
             {

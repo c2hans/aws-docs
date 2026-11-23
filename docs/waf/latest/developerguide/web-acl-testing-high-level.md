@@ -23,6 +23,8 @@ Perform these steps first in a test environment, then in production.
 
    Prepare your monitoring environment, switch your new AWS WAF protections to count mode for testing, and create any resource associations that you need.
 
+   To monitor your protection packs (web ACLs) across AWS Regions with security analytics, enable security analytics in the analytics configuration of each protection pack (web ACL). For more information, see [Enabling security analytics for a protection pack (web ACL)](web-acl-security-analytics-enabling.md).
+
    See [Preparing for testing your AWS WAF protections](web-acl-testing-prep.md).
 
 1.

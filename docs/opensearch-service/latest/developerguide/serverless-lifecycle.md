@@ -30,7 +30,7 @@ You define the retention period with one of the following formats:
 
 In the following sample policy, the first rule specifies a retention period of 15 days for all indexes within the collection `marketing`. The second rule specifies that all index names that begin with `log` in the `finance` collection have no retention period set and will be retained indefinitely.
 
-```
+```json
 {
    "lifeCyclePolicyDetail": {
       "type": "retention",
@@ -62,7 +62,7 @@ In the following sample policy, the first rule specifies a retention period of 1
 
 In the following sample policy rule, OpenSearch Serverless indefinitely retains the data in all indexes for all collections within the account.
 
-```
+```json
 {
    "Rules": [
       {
@@ -94,7 +94,7 @@ The following identity-based access policy allows a user to view all data lifecy
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -131,7 +131,7 @@ There can be situations where data lifecycle policy rules overlap, within or acr
 
 For example, in the following policy, two rules apply to an index `index/sales/logstash`. In this situation, the second rule takes precedence because `index/sales/log*` is the longest match to `index/sales/logstash`. Therefore, OpenSearch Serverless sets no retention period for the index.
 
-```
+```json
 {
       "Rules":[
          {
@@ -172,7 +172,7 @@ The second rule targets indexes matching the `auto*/gear` pattern (`index/auto*/
 
 The third rule applies specifically to the `tires` index and has no minimum retention period, meaning that data in this index can be deleted or archived immediately or based on other criteria. These rules help manage the retention of index data with varying retention times or no retention restrictions.
 
-```
+```json
 {
   "Rules": [
     {

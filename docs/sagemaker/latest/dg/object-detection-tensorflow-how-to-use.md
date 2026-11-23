@@ -15,7 +15,7 @@ Default hyperparameter values are different for different models. For example, f
 
 This example uses the [`PennFudanPed`](https://www.cis.upenn.edu/~jshi/ped_html/#pub1) dataset, which contains images of pedestriants in the street. We pre-downloaded the dataset and made it available with Amazon S3. To fine-tune your model, call `.train()` using the Amazon S3 location of your training dataset.
 
-```
+```python
 from sagemaker.core import image_uris
 from sagemaker.core import model_uris, script_uris, hyperparameters
 from sagemaker.train import ModelTrainer

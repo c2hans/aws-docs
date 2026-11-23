@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/auth-refreshing.h
 
  When the access token expires, exchange the refresh token for a new one, rather than a fresh sign-in:
 
-```
+```bash
 curl -X POST https://oauth.awsevents.com/oauth2/token \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "grant_type=refresh_token" \

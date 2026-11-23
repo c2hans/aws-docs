@@ -8,7 +8,7 @@ Deploy the Org-Management stack to the AWS Organizations management account.
 
 1. Review the changes that AWS CDK deploys.
 
-   ```
+   ```bash
    $ npm run cdk -- diff account-assessment-for-aws-organizations-org-management \
        --profile "${PROFILE_ORG_MGMT}" \
        --no-change-set
@@ -16,7 +16,7 @@ Deploy the Org-Management stack to the AWS Organizations management account.
 
 1. Deploy the stack.
 
-   ```
+   ```bash
    $ npm run deployOrgMgmt -- \
        --parameters DeploymentNamespace="${DEPLOYMENT_NAMESPACE}" \
        --parameters HubAccountId="${HUB_ACCOUNT_ID}" \

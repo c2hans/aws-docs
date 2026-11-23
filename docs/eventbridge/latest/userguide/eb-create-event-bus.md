@@ -8,6 +8,8 @@ You can create a custom [event bus](eb-event-bus.md) to receive [events](eb-even
 
  The following video goes through creating event buses:
 
+[![AWS Videos](https://img.youtube.com/vi/ZcG3kFmS8es/0.jpg)](https://www.youtube.com/watch?v=ZcG3kFmS8es)
+
 **To create a Custom Event Bus - Classic**
 
 1. Open the Amazon EventBridge console at [https://console.aws.amazon.com/events/](https://console.aws.amazon.com/events/).

@@ -26,7 +26,7 @@ The following topics explain how to turn on or off the `sourceIdentity` configur
 
 ****
 
-    ```
+    ```json
     {
         "Version":"2012-10-17",
         "Statement": [

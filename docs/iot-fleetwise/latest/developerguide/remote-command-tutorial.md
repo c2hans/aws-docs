@@ -71,7 +71,7 @@ In this example, replace:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -151,7 +151,7 @@ When using the `AWS-IoT-FleetWise` namespace, you must ensure that the `Name` fi
 
    The following output shows a sample response from the CLI, where `ap-south-1` and `123456789012` are examples of the AWS Region and AWS account ID.
 
-   ```
+   ```json
    {
        "commandId": "TurnOffSteeringMode",
        "commandArn": "arn:aws:iot:ap-south-1:123456789012:command/TurnOffSteeringMode"
@@ -174,7 +174,7 @@ If you create more than one command, you can use the `ListCommands` API to list 
 
    Running this command generates the following response. You'll see the time when the command was created and when it was last updated, any parameters that you specified, and whether the command is available to run on the device.
 
-   ```
+   ```json
    {
        "commandId": "TurnOffSteeringMode",
        "commandArn": "arn:aws:iot:ap-south-1:123456789012:command/TurnOffSteeringMode",
@@ -209,7 +209,7 @@ If you create more than one command, you can use the `ListCommands` API to list 
 
    Running this command returns a command execution ID. You can use this ID to query the command execution status, details, and command execution history.
 
-   ```
+   ```json
    {
        "executionId": "07e4b780-7eca-4ffd-b772-b76358da5542"
    }
@@ -234,7 +234,7 @@ If you start more than one command execution, you can use the `ListCommandExecut
 
    Running this command returns information about the command execution, the execution status, the time when it started executing, and the time when it was completed. For example, the following response shows that the command execution succeeded on the target device and the steering mode was turned off.
 
-   ```
+   ```json
    {
        "executionId": "07e4b780-7eca-4ffd-b772-b76358da5542",
        "commandArn": "arn:aws:iot:ap-south-1:123456789012:command/TurnOffSteeringMode",
@@ -284,7 +284,7 @@ Alternatively, you can also deprecate a command if it's outdated and you might n
 **Note**
 You can also use the `update-command` CLI to update the display name and description of a command. For additional information, see [Update or deprecate a command resource](create-manage-remote-command-cli.md#update-remote-command-cli).
 
-   ```
+   ```json
    {
        "commandId": "TurnOffSteeringMode",
        "deprecated": true,

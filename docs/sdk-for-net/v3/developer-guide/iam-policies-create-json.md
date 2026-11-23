@@ -27,7 +27,7 @@ The following snippet creates an IAM managed policy with the given name and poli
 
 The example [at the end of this topic](#iam-policies-create-json-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to create an IAM policy from a JSON file
     private static async Task<CreatePolicyResponse> CreateManagedPolicy(
@@ -63,7 +63,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c19c21c17b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -214,7 +214,7 @@ namespace IamCreatePolicyFromJson
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Id"  : "DotnetTutorialPolicy",

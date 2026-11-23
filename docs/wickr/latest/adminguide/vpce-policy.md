@@ -73,7 +73,7 @@ The following are example VPC endpoint policies for Wickr Messaging.
 
 The following VPC endpoint policy allows access only to the Wickr network with the specified network ID. All traffic to other Wickr networks through this endpoint is denied.
 
-```
+```json
 {
     "Statement": [
         {
@@ -91,7 +91,7 @@ The following VPC endpoint policy allows access only to the Wickr network with t
 
 The following VPC endpoint policy allows access to a Wickr network only if the request originates from the specified VPC. This is useful when you have multiple VPC endpoints configured and you want to restrict which VPCs can reach your Wickr network.
 
-```
+```json
 {
     "Statement": [
         {
@@ -114,7 +114,7 @@ The following VPC endpoint policy allows access to a Wickr network only if the r
 
 The following VPC endpoint policy allows access to a Wickr network only through the specified VPC endpoint. This is useful when you have multiple VPC endpoints and you want to limit which endpoint can be used to reach a specific Wickr network.
 
-```
+```json
 {
     "Statement": [
         {
@@ -137,7 +137,7 @@ The following VPC endpoint policy allows access to a Wickr network only through 
 
 The following VPC endpoint policy denies access to all Wickr networks except the specified network. This is useful when you want to ensure that only your organization's Wickr network is accessible through the VPC endpoint, and all other networks are blocked. Unlike the allow-only policy, this explicit deny can't be overridden by other policy statements.
 
-```
+```json
 {
     "Statement": [
         {
@@ -168,7 +168,7 @@ The first statement denies all Wickr actions when the request doesn't come from 
 
 The following VPC endpoint policy allows access to a Wickr network only when all specified conditions are met: the request must originate from a specific VPC, through a specific VPC endpoint, and from a VPC endpoint owned by a specific AWS account.
 
-```
+```json
 {
     "Statement": [
         {
@@ -199,7 +199,7 @@ For Wickr Admin endpoints, VPC endpoint policies support all the same policy ele
 **Restrict access to a specific Wickr network**
 The following VPC endpoint policy allows all Wickr Admin actions, but only for the specified network resource.
 
-```
+```json
 {
     "Statement": [
         {
@@ -215,7 +215,7 @@ The following VPC endpoint policy allows all Wickr Admin actions, but only for t
 **Allow only read-only access to a specific Wickr network**
 The following VPC endpoint policy allows only read-only Wickr Admin actions on a specific network through the endpoint. Write operations such as creating or deleting networks are not permitted.
 
-```
+```json
 {
     "Statement": [
         {
@@ -240,7 +240,7 @@ The following VPC endpoint policy allows only read-only Wickr Admin actions on a
 
 If you don't attach a custom policy to a VPC endpoint, the default endpoint policy is applied. The default policy allows full access to Wickr through the endpoint.
 
-```
+```json
 {
     "Statement": [
         {

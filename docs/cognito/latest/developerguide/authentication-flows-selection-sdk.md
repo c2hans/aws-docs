@@ -73,7 +73,7 @@ To [configure your app client](authentication-implement.md) for choice-based aut
 
 The following partial [CreateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPool.html) or [UpdateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPool.html) request body configures all available options for choice-based authentication.
 
-```
+```json
 "Policies": {
     "SignInPolicy": {
         "AllowedFirstAuthFactors": [

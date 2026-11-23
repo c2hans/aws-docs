@@ -9,7 +9,7 @@ Sends audio to Connect Customer Voice ID to verify the caller's identity and mat
 ## Parameter object
 <a name="startvoiceidstream-parameter"></a>
 
-```
+```json
 {
 
 }

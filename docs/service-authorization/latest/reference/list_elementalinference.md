@@ -291,12 +291,14 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to add tags to a resource
   - **Resource types (\*required):** [dictionary](#list_elementalinference-resource-dictionary) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_elementalinference-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_elementalinference-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_elementalinference-aws_TagKeys)
   - **Resource types (\*required):** [feed](#list_elementalinference-resource-feed) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_elementalinference-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_elementalinference-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_elementalinference-aws_TagKeys)
+  - **Resource types (\*required):** question-set / **Condition keys:** [aws:RequestTag/${TagKey}](#list_elementalinference-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_elementalinference-aws_TagKeys)
   - **Access level:** Tagging, Write
 
 - **   [UntagResource](https://docs.aws.amazon.com/elemental-inference/latest/APIReference/API_UntagResource.html)  **
   - **Description:** Grants permission to remove tags from a resource
   - **Resource types (\*required):** [dictionary](#list_elementalinference-resource-dictionary) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elementalinference-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_elementalinference-aws_TagKeys)
   - **Resource types (\*required):** [feed](#list_elementalinference-resource-feed) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elementalinference-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_elementalinference-aws_TagKeys)
+  - **Resource types (\*required):** question-set / **Condition keys:** [aws:TagKeys](#list_elementalinference-aws_TagKeys)
   - **Access level:** Tagging, Write
 
 - **   [UpdateDictionary](https://docs.aws.amazon.com/elemental-inference/latest/APIReference/API_UpdateDictionary.html)  **

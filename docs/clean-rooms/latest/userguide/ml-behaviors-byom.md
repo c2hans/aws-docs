@@ -26,7 +26,7 @@ When accessing membership and collaboration resources in context of Clean Rooms 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

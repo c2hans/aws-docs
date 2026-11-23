@@ -26,7 +26,7 @@ As a best practice, you should treat your Windows worker nodes as if they were e
 
 Disable RDP connections on Windows nodes during the deployment by passing the value **false** on the ssh property, as the example below:
 
-```
+```yaml
 nodeGroups:
 - name: windows-ng
   instanceType: c5.xlarge
@@ -41,7 +41,7 @@ If access to the Windows node is needed, use [AWS System Manager Session Manager
 
 In order to use System Manager Session Manager an additional IAM policy must be applied to the IAM role used to launch the Windows worker node. Below is an example where the **AmazonSSMManagedInstanceCore** is specified in the `eksctl` cluster manifest:
 
-```
+```yaml
  nodeGroups:
 - name: windows-ng
   instanceType: c5.xlarge

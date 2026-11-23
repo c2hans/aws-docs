@@ -48,6 +48,9 @@ Supported operators: `EQUALS`, `IN`, `NOT_IN`
 AVAILABILITY
 The current availability of the device. Valid values are AVAILABLE, HIGHLY\_AVAILABLE, BUSY, or TEMPORARY\_NOT\_AVAILABLE.
 Supported operators: `EQUALS`
+DEVICE\_TYPE
+The device type. Valid values are PHYSICAL or VIRTUAL.
+Supported operators: `EQUALS`
 FLEET\_TYPE
 The fleet type. Valid values are PUBLIC or PRIVATE.
 Supported operators: `EQUALS`

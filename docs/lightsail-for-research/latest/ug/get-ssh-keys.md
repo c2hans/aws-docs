@@ -41,13 +41,13 @@ This procedure applies to you if your local computer uses a Windows operating sy
 
 1. Enter the following command to get the Lightsail DKP for a specific AWS Region. This command saves the information to a `dkp-details.json` file. In the command, replace `{{region-code}}` with the code of the AWS Region in which the virtual computer was created, such as `us-east-2`.
 
-   ```
+   ```cmd
    aws lightsail download-default-key-pair --region {{region-code}} > dkp-details.json
    ```
 
    **Example**
 
-   ```
+   ```cmd
    aws lightsail download-default-key-pair --region {{us-east-2}} > dkp-details.json
    ```
 
@@ -56,7 +56,7 @@ This procedure applies to you if your local computer uses a Windows operating sy
 
 1. Enter the following command to extract the private key information from the `dkp-details.json` file and add it to a new `dkp_rsa` private key file.
 
-   ```
+   ```cmd
    type dkp-details.json | jq -r ".privateKeyBase64" > dkp_rsa
    ```
 
@@ -74,13 +74,13 @@ This procedure applies to you if your local computer uses a Linux, Unix, or a ma
 
 1. Enter the following command to get the Lightsail DKP for a specific AWS Region. This command saves the information to a `dkp-details.json` file. In the command, replace `{{region-code}}` with the code of the AWS Region in which the virtual computer was created, such as `us-east-2`.
 
-   ```
+   ```cmd
    aws lightsail download-default-key-pair --region {{region-code}} > dkp-details.json
    ```
 
    **Example**
 
-   ```
+   ```cmd
    aws lightsail download-default-key-pair --region {{us-east-2}} > dkp-details.json
    ```
 
@@ -89,7 +89,7 @@ This procedure applies to you if your local computer uses a Linux, Unix, or a ma
 
 1. Enter the following command to extract the private key information from the `dkp-details.json` file and add it to a new `dkp_rsa` private key file.
 
-   ```
+   ```cmd
    cat dkp-details.json | jq -r '.privateKeyBase64' > dkp_rsa
    ```
 
@@ -98,7 +98,7 @@ This procedure applies to you if your local computer uses a Linux, Unix, or a ma
 
 1. Enter the following command to set permissions for the `dkp_rsa` file.
 
-   ```
+   ```cmd
    chmod 600 dkp_rsa
    ```
 

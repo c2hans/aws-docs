@@ -39,6 +39,11 @@ The patch for the MCP server descriptor.
 Type: [UpdatedMcpServerDescriptor](API_UpdatedMcpServerDescriptor.md) object
 Required: No
 
+ ** signatureAgentCard **   <a name="agentregistrycontrol-Type-UpdatedDescriptorsFields-signatureAgentCard"></a>
+The patch for the signature agent card descriptor.
+Type: [UpdatedSignatureAgentCardDescriptor](API_UpdatedSignatureAgentCardDescriptor.md) object
+Required: No
+
 ## See Also
 <a name="API_UpdatedDescriptorsFields_SeeAlso"></a>
 

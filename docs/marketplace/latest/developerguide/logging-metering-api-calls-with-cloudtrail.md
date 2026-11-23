@@ -40,7 +40,7 @@ For more information, see [CloudTrail userIdentity element](https://docs.aws.ama
 
 The following example shows a CloudTrail log entry that demonstrates the `BatchMeterUsage` action from the AWS Marketplace Metering API. When the seller [sends metering records to report their customers' usage](https://docs.aws.amazon.com/marketplace/latest/userguide/metering-for-usage.html) for a software as a service (SaaS) product listed in AWS Marketplace, this CloudTrail log entry is logged in the seller's AWS account.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -98,7 +98,7 @@ The following example shows a CloudTrail log entry that demonstrates the `BatchM
 
 The following example shows a CloudTrail log entry that demonstrates the `RegisterUsage` action from the AWS Marketplace Metering API. When an hourly priced container product from AWS Marketplace is deployed in the buyer's AWS account, the software in the container calls `RegisterUsage` within the buyer's AWS account to initiate the hourly metering for that Amazon Elastic Container Service (Amazon ECS) task or Amazon Elastic Kubernetes Service (Amazon EKS) pod. This CloudTrail log entry is logged in the buyer's AWS account.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -150,7 +150,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Regist
 
 The following example shows a CloudTrail log entry that demonstrates the `MeterUsage` action from the AWS Marketplace Metering API for containers on Amazon EKS. When a container product with [custom metering](https://docs.aws.amazon.com/marketplace/latest/userguide/container-metering-meterusage.html) from AWS Marketplace is deployed in the buyer's AWS account, the software in the container calls `MeterUsage` within the buyer's AWS account to report each hour. This CloudTrail log entry is logged in the buyer's AWS account.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -204,7 +204,7 @@ The following example shows a CloudTrail log entry that demonstrates the `MeterU
 
 The following example shows a CloudTrail log entry that demonstrates the `MeterUsage` action from the AWS Marketplace Metering API for Amazon Machine Images (AMIs). When an AMI product with custom metering from AWS Marketplace is deployed in the buyer's AWS account, the software from the AMI calls `MeterUsage` within the buyer's AWS account to report usage each hour. This CloudTrail log entry is logged in the buyer's AWS account.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

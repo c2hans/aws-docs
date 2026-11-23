@@ -15,7 +15,7 @@ The following code example shows a typical bucket policy.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -48,7 +48,7 @@ The Audio Service reads and writes to your S3 bucket on behalf of your Sip Media
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -77,7 +77,7 @@ The Audio Service reads and writes to your S3 bucket on behalf of your Sip Media
 
 The following code example shows a typical action.
 
-```
+```json
 {
     "Type": "PlayAudio",
     "Parameters": {
@@ -140,7 +140,7 @@ The SIP media application tries to play the audio from the source URL. You can u
 
 When the last instruction in a dialplan is `PlayAudio` and the file finishes playback, or if a user stops playback with a key press, the application invokes the AWS Lambda function with the event shown in the following example.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": INTEGER,
@@ -171,7 +171,7 @@ When the validation file contains errors, or an error occurs while running an ac
 
 The following code example shows a typical invocation failure.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": 2,

@@ -34,7 +34,7 @@ Ray interactive development requires version 0.2.0 or later of the Spaces add-on
 
 The add-on turns on Ray integration with the following defaults. Change them in the add-on configuration when your workload needs different values.
 
-```
+```json
 {
   "jupyter-k8s-aws-hyperpod": {
     "rayIntegration": {

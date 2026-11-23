@@ -20,13 +20,13 @@ The following are instructions for using a custom version of the AWS ParallelClu
 
 1. Detect the current version of the AWS ParallelCluster node.
 
-   ```
+   ```sh
    _version=$(grep "version = \"" ${_nodeDir}/setup.py |awk '{print $3}' | tr -d \")
    ```
 
 1. Create an archive of the AWS ParallelCluster Node.
 
-   ```
+   ```sh
    cd "${_nodeDir}"
    _stashName=$(git stash create)
    git archive --format tar --prefix="aws-parallelcluster-node-${_version}/" "${_stashName:-HEAD}" | gzip > "aws-parallelcluster-node-${_version}.tgz"
@@ -34,14 +34,14 @@ The following are instructions for using a custom version of the AWS ParallelClu
 
 1. Create an Amazon S3 bucket and upload the archive into the bucket. Give public readable permission through a public-read ACL.
 
-   ```
+   ```sh
    _bucket={{<the bucket name>}}
    aws s3 cp --acl public-read aws-parallelcluster-node-${_version}.tgz s3://${_bucket}/node/aws-parallelcluster-node-${_version}.tgz
    ```
 
 1. Add the following variable to the AWS ParallelCluster configuration file, under the [`[cluster]` section](cluster-definition.md).
 
-   ```
+   ```ini
    extra_json = { "cluster" : { "custom_node_package" : "https://${_bucket}.s3.{{<the bucket region>}}.amazonaws.com/node/aws-parallelcluster-node-${_version}.tgz", "skip_install_recipes" : "no" } }
    ```
 **Note**

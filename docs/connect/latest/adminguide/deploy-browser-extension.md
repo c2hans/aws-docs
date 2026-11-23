@@ -76,7 +76,7 @@ Configure the **ExtensionSettings** policy for each browser with the following p
 
 **Google Chrome and Microsoft Edge**
 
-```
+```json
 {
   "cjmichfmnimgeoadokmeaiclklkdccod": {
     "installation_mode": "force_installed",
@@ -87,7 +87,7 @@ Configure the **ExtensionSettings** policy for each browser with the following p
 
 **Mozilla Firefox**
 
-```
+```json
 {
   "amazon_connect_extension@amazon.com": {
     "installation_mode": "force_installed",
@@ -217,7 +217,7 @@ To actively prevent the extension from being installed or used, change the polic
 
 **Google Chrome and Microsoft Edge**
 
-```
+```json
 {
   "cjmichfmnimgeoadokmeaiclklkdccod": {
     "installation_mode": "blocked"
@@ -227,7 +227,7 @@ To actively prevent the extension from being installed or used, change the polic
 
 **Mozilla Firefox**
 
-```
+```json
 {
   "amazon_connect_extension@amazon.com": {
     "installation_mode": "blocked"

@@ -23,7 +23,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/S3#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Shows how to download an object from an Amazon S3 bucket to the
     /// local computer.
@@ -67,7 +67,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 Get an object using a conditional request.
 
-```
+```csharp
     /// <summary>
     /// Retrieves an object from Amazon S3 with a conditional request.
     /// </summary>
@@ -139,7 +139,7 @@ Get an object using a conditional request.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/s3#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -189,7 +189,7 @@ function download_object_from_bucket() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::getObject(const Aws::String &objectKey,
                            const Aws::String &fromBucket,
                            const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -274,7 +274,7 @@ For more information, see [Downloading objects](https://docs.aws.amazon.com/Amaz
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -340,7 +340,7 @@ func (basics BucketBasics) DownloadFile(ctx context.Context, bucketName string, 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/s3#code-examples).
 Read data as a byte array using an [S3Client](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html).
 
-```
+```java
     /**
      * Asynchronously retrieves the bytes of an object from an Amazon S3 bucket and writes them to a local file.
      *
@@ -374,7 +374,7 @@ Read data as a byte array using an [S3Client](https://sdk.amazonaws.com/java/api
 ```
 Use an [S3TransferManager](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/S3TransferManager.html) to [download an object](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/S3TransferManager.html#downloadFile(software.amazon.awssdk.transfer.s3.DownloadFileRequest)) in an S3 bucket to a local file. View the [complete file](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/javav2/example_code/s3/src/main/java/com/example/s3/transfermanager/DownloadFile.java) and [test](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/javav2/example_code/s3/src/test/java/TransferManagerTest.java).
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.core.exception.SdkException;
@@ -410,7 +410,7 @@ import java.util.UUID;
 ```
 Read tags that belong to an object using an [S3Client](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.GetObjectTaggingRequest;
@@ -488,7 +488,7 @@ public class GetObjectTags {
 ```
 Get a URL for an object using an [S3Client](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.GetUrlRequest;
@@ -560,7 +560,7 @@ public class GetObjectUrl {
 ```
 Get an object by using the S3Presigner client object using an [S3Client](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html).
 
-```
+```java
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -668,7 +668,7 @@ public class GetObjectPresignedUrl {
 ```
 Get an object by using a ResponseTransformer object and [S3Client](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html).
 
-```
+```java
 import software.amazon.awssdk.core.ResponseBytes;
 import software.amazon.awssdk.core.sync.ResponseTransformer;
 import software.amazon.awssdk.regions.Region;
@@ -767,7 +767,7 @@ public class GetObjectData {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Download the object.
 
-```
+```javascript
 import {
   GetObjectCommand,
   NoSuchKey,
@@ -809,7 +809,7 @@ export const main = async ({ bucketName, key }) => {
 ```
 Download the object on condition its ETag matches the one provided.
 
-```
+```javascript
 import {
   GetObjectCommand,
   NoSuchKey,
@@ -888,7 +888,7 @@ if (isMain(import.meta.url)) {
 ```
 Download the object on condition its ETag does not match the one provided.
 
-```
+```javascript
 import {
   GetObjectCommand,
   NoSuchKey,
@@ -967,7 +967,7 @@ if (isMain(import.meta.url)) {
 ```
 Download the object using on condition it has been created or modified in a given timeframe.
 
-```
+```javascript
 import {
   GetObjectCommand,
   NoSuchKey,
@@ -1043,7 +1043,7 @@ if (isMain(import.meta.url)) {
 ```
 Download the object using on condition it has not been created or modified in a given timeframe.
 
-```
+```javascript
 import {
   GetObjectCommand,
   NoSuchKey,
@@ -1126,7 +1126,7 @@ if (isMain(import.meta.url)) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 
-```
+```kotlin
 suspend fun getObjectBytes(
     bucketName: String,
     keyName: String,
@@ -1156,7 +1156,7 @@ suspend fun getObjectBytes(
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 Get an object.
 
-```
+```php
         $s3client = new Aws\S3\S3Client(['region' => 'us-west-2']);
 
         try {
@@ -1180,17 +1180,17 @@ Get an object.
 **Tools for PowerShell V4**
 **Example 1: This command retrieves item "sample.txt" from bucket "amzn-s3-demo-bucket" and saves it to a file named "local-sample.txt" in the current location. The file "local-sample.txt" does not have to exist before this command is called.**
 
-```
+```powershell
 Read-S3Object -BucketName amzn-s3-demo-bucket -Key sample.txt -File local-sample.txt
 ```
 **Example 2: This command retrieves virtual directory "DIR" from bucket "amzn-s3-demo-bucket" and saves it to a folder named "Local-DIR" in the current location. The folder "Local-DIR" does not have to exist before this command is called.**
 
-```
+```powershell
 Read-S3Object -BucketName amzn-s3-demo-bucket -KeyPrefix DIR -Folder Local-DIR
 ```
 **Example 3: Downloads all objects with keys ending in '.json' from buckets with 'config' in the bucket name to files in the specified folder. The object keys are used to set the filenames.**
 
-```
+```powershell
 Get-S3Bucket | ? { $_.BucketName -like '*config*' } | Get-S3Object | ? { $_.Key -like '*.json' } | Read-S3Object -Folder C:\ConfigObjects
 ```
 +  For API details, see [GetObject](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1198,42 +1198,42 @@ Get-S3Bucket | ? { $_.BucketName -like '*config*' } | Get-S3Object | ? { $_.Key 
 **Tools for PowerShell V5**
 **Example 1: This command retrieves item "sample.txt" from bucket "amzn-s3-demo-bucket" and saves it to a file named "local-sample.txt" in the current location. The file "local-sample.txt" does not have to exist before this command is called.**
 
-```
+```powershell
 Read-S3Object -BucketName amzn-s3-demo-bucket -Key sample.txt -File local-sample.txt
 ```
 **Example 2: This command retrieves virtual directory "DIR" from bucket "amzn-s3-demo-bucket" and saves it to a folder named "Local-DIR" in the current location. The folder "Local-DIR" does not have to exist before this command is called.**
 
-```
+```powershell
 Read-S3Object -BucketName amzn-s3-demo-bucket -KeyPrefix DIR -Folder Local-DIR
 ```
 **Example 3: Downloads all objects with keys ending in '.json' from buckets with 'config' in the bucket name to files in the specified folder. The object keys are used to set the filenames.**
 
-```
+```powershell
 Get-S3Bucket | ? { $_.BucketName -like '*config*' } | Get-S3Object | ? { $_.Key -like '*.json' } | Read-S3Object -Folder C:\ConfigObjects
 ```
 **Example 4: Downloads a single object using multipart parallel download for improved performance on large files.**
 
-```
+```powershell
 Read-S3Object -BucketName amzn-s3-demo-bucket -Key sample.txt -File local-sample.txt -UseMultipartDownload
 ```
 **Example 5: Downloads a large object using RANGE mode with a custom 64MB part size. RANGE mode uses HTTP byte-range requests and works for all objects regardless of how they were uploaded.**
 
-```
+```powershell
 Read-S3Object -BucketName amzn-s3-demo-bucket -Key large-file.zip -File local-large-file.zip -UseMultipartDownload -MultipartDownloadType RANGE -PartSize 64MB
 ```
 **Example 6: Downloads all objects with the key prefix "data/" to a local folder using multipart download with concurrent file downloads.**
 
-```
+```powershell
 Read-S3Object -BucketName amzn-s3-demo-bucket -KeyPrefix data/ -Folder C:\local-data -UseMultipartDownload -DownloadFilesConcurrently
 ```
 **Example 7: Downloads a single object using multipart download with 20 concurrent connections for maximum throughput on high-bandwidth networks.**
 
-```
+```powershell
 Read-S3Object -BucketName amzn-s3-demo-bucket -Key large-file.zip -File local-large-file.zip -UseMultipartDownload -ConcurrentServiceRequest 20
 ```
 **Example 8: Downloads all objects with the key prefix "data/" to a local folder using multipart download, continuing past individual file failures instead of aborting.**
 
-```
+```powershell
 Read-S3Object -BucketName amzn-s3-demo-bucket -KeyPrefix data/ -Folder C:\local-data -UseMultipartDownload -FailurePolicy ContinueOnFailure
 ```
 +  For API details, see [GetObject](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -1244,7 +1244,7 @@ Read-S3Object -BucketName amzn-s3-demo-bucket -KeyPrefix data/ -Folder C:\local-
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class ObjectWrapper:
     """Encapsulates S3 object actions."""
 
@@ -1281,7 +1281,7 @@ class ObjectWrapper:
 ```
 Get an object using a conditional request.
 
-```
+```python
 class S3ConditionalRequests:
     """Encapsulates S3 conditional request operations."""
 
@@ -1341,7 +1341,7 @@ class S3ConditionalRequests:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 Get an object.
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 object actions.
@@ -1381,7 +1381,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 ```
 Get an object and report its server-side encryption state.
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 object actions.
@@ -1426,7 +1426,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 async fn get_object(client: Client, opt: Opt) -> Result<usize, S3ExampleError> {
     trace!("bucket:      {}", opt.bucket);
     trace!("object:      {}", opt.object);
@@ -1470,7 +1470,7 @@ async fn get_object(client: Client, opt: Opt) -> Result<usize, S3ExampleError> {
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->getobject(           " oo_result is returned for testing purposes. "
                   iv_bucket = iv_bucket_name
@@ -1491,7 +1491,7 @@ async fn get_object(client: Client, opt: Opt) -> Result<usize, S3ExampleError> {
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3/basics#code-examples).
 
-```
+```swift
 import AWSS3
 
     public func downloadFile(bucket: String, key: String, to: String) async throws {
@@ -1521,7 +1521,7 @@ import AWSS3
     }
 ```
 
-```
+```swift
 import AWSS3
 
     public func readFile(bucket: String, key: String) async throws -> Data {

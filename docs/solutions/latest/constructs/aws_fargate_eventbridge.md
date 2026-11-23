@@ -24,7 +24,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { FargateToEventbridge, FargateToEventbridgeProps } from '@aws-solutions-constructs/aws-fargate-eventbridge';
@@ -37,7 +37,7 @@ const constructProps: FargateToEventbridgeProps = {
 new FargateToEventbridge(this, 'test-construct', constructProps);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_fargate_eventbridge import FargateToEventbridge, FargateToEventbridgeProps
 from aws_cdk import (
     Stack
@@ -49,7 +49,7 @@ FargateToEventbridge(self, 'test_construct',
             ecr_repository_arn="arn:aws:ecr:us-east-1:123456789012:repository/your-ecr-repo")
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

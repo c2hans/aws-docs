@@ -40,7 +40,7 @@ For more information, see [Manage tags](https://docs.aws.amazon.com/ARG/latest/u
 **Tools for PowerShell V4**
 **Example 1: This example adds tag key 'Instances' with value 'workboxes' to the given resource group arn**
 
-```
+```powershell
 Add-RGResourceTag -Tag @{Instances="workboxes"} -Arn arn:aws:resource-groups:eu-west-1:123456789012:group/workboxes
 ```
 **Output:**
@@ -55,7 +55,7 @@ arn:aws:resource-groups:eu-west-1:123456789012:group/workboxes {[Instances, work
 **Tools for PowerShell V5**
 **Example 1: This example adds tag key 'Instances' with value 'workboxes' to the given resource group arn**
 
-```
+```powershell
 Add-RGResourceTag -Tag @{Instances="workboxes"} -Arn arn:aws:resource-groups:eu-west-1:123456789012:group/workboxes
 ```
 **Output:**

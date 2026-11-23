@@ -30,7 +30,7 @@ The following code example shows how to get started using Athena.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 
-```
+```python
 def hello_athena(athena_client: BaseClient) -> None:
     """
     Lists Amazon Athena workgroups. Demonstrates basic connectivity to the
@@ -89,7 +89,7 @@ The following code example shows how to learn Athena basics.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class AthenaScenario:
     """Runs the Amazon Athena basics scenario."""
 
@@ -535,7 +535,7 @@ class AthenaScenario:
 ```
 Create a class that wraps Athena operations.
 
-```
+```python
 class AthenaWrapper:
     """Encapsulates Amazon Athena operations."""
 
@@ -577,7 +577,7 @@ The following code example shows how to use `CreateNamedQuery`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 
-```
+```python
     def create_named_query(
         self,
         name: str,
@@ -630,7 +630,7 @@ The following code example shows how to use `CreateWorkGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 
-```
+```python
     def create_work_group(
         self,
         name: str,
@@ -679,7 +679,7 @@ The following code example shows how to use `DeleteNamedQuery`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 
-```
+```python
     def delete_named_query(self, named_query_id: str) -> None:
         """
         Deletes a named query by its ID.
@@ -711,7 +711,7 @@ The following code example shows how to use `DeleteWorkGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 
-```
+```python
     def delete_work_group(self, name: str, recursive: bool = True) -> None:
         """
         Deletes the specified workgroup.
@@ -748,7 +748,7 @@ The following code example shows how to use `GetNamedQuery`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 
-```
+```python
     def get_named_query(self, named_query_id: str) -> Dict[str, Any]:
         """
         Returns the details of a single named (saved) query, including its
@@ -784,7 +784,7 @@ The following code example shows how to use `GetQueryExecution`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 
-```
+```python
     def get_query_execution(self, query_execution_id: str) -> Dict[str, Any]:
         """
         Returns information about a single query execution.
@@ -825,7 +825,7 @@ The following code example shows how to use `GetQueryResults`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 
-```
+```python
     def get_query_results(self, query_execution_id: str) -> Dict[str, Any]:
         """
         Retrieves the results of a completed query execution using pagination.
@@ -890,7 +890,7 @@ The following code example shows how to use `GetWorkGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 
-```
+```python
     def get_work_group(self, name: str) -> Dict[str, Any]:
         """
         Returns information about the specified workgroup.
@@ -925,7 +925,7 @@ The following code example shows how to use `ListNamedQueries`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 
-```
+```python
     def list_named_queries(self, work_group: str) -> List[str]:
         """
         Lists named query IDs in the specified workgroup using pagination.
@@ -967,7 +967,7 @@ The following code example shows how to use `ListQueryExecutions`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 
-```
+```python
     def list_query_executions(self, work_group: str) -> List[str]:
         """
         Lists query execution IDs for the specified workgroup using pagination.
@@ -1009,7 +1009,7 @@ The following code example shows how to use `StartQueryExecution`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 
-```
+```python
     def start_query_execution(
         self,
         query_string: str,

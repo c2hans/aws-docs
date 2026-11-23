@@ -42,7 +42,7 @@ If *srid* does not exist, then an error is returned.
 
 The following SQL transforms the SRID of an empty geometry collection.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Transform(ST_GeomFromText('GEOMETRYCOLLECTION EMPTY', 3857), 4326));
 ```
 
@@ -54,7 +54,7 @@ SELECT ST_AsEWKT(ST_Transform(ST_GeomFromText('GEOMETRYCOLLECTION EMPTY', 3857),
 
 The following SQL transforms the SRID of a linestring.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Transform(ST_GeomFromText('LINESTRING(110 40, 2 3, -10 80, -7 9, -22 -33)', 4326), 26918));
 ```
 
@@ -66,7 +66,7 @@ SELECT ST_AsEWKT(ST_Transform(ST_GeomFromText('LINESTRING(110 40, 2 3, -10 80, -
 
 The following SQL transforms the SRID of a polygon.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_Transform(ST_GeomFromText('POLYGON Z ((-10 10 -7, -65 10 -6, -10 64 -5, -10 10 -7), (-11 11 5, -11 12 6, -12 11 7, -11 11 5))', 6989), 6317));
 ```
 

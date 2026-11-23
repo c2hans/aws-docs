@@ -8,7 +8,7 @@ Starting with Amazon EMR on EKS release 6.9.0, in Amazon EMR Studio you can adju
 
 The following example shows a sample payload that you can use to modify memory, cores, and other properties for the Spark driver and executor. For the `conf` settings, you can configure any Spark configuration mentioned in the [Apache Spark configuration documentation](https://spark.apache.org/docs/latest/configuration.html).
 
-```
+```python,py
 %%configure -f
 {
   "driverMemory": "16G",
@@ -24,7 +24,7 @@ The following example shows a sample payload that you can use to modify memory, 
 
 The following example shows a sample payload that you can use to add files, pyFiles, and jar dependencies to a Spark runtime.
 
-```
+```python,py
 %%configure -f
 {
   "files": "s3://{{amzn-s3-demo-bucket-emr-eks/sample_file}}.txt",

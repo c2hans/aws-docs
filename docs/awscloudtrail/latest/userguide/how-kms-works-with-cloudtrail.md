@@ -34,7 +34,7 @@ The `GenerateDataKey` request includes the following information for the [encryp
 
 The `GenerateDataKey` request results in an entry in your CloudTrail logs similar to the following example. When you see a log entry like this one, you can determine that CloudTrail called the AWS KMS `GenerateDataKey` operation for a specific trail. AWS KMS created the data key under a specific KMS key.
 
-```
+```JSON
 {
     "eventVersion": "1.09",
     "userIdentity": {
@@ -84,7 +84,7 @@ The `GenerateDataKey` request includes the following information for the [encryp
 
 Each `GenerateDataKey` request results in an entry in your CloudTrail logs similar to the following example. When you see a log entry like this one, you can determine that CloudTrail called the AWS KMS `GenerateDataKey` operation for a specific trail to protect a specific log file. AWS KMS created the data key under the specified KMS key, shown twice in the same log entry.
 
-```
+```JSON
 {
     "eventVersion": "1.09",
     "userIdentity": {
@@ -135,7 +135,7 @@ The `Decrypt` request includes the following information for the [encryption con
 
 Each `Decrypt` request results in an entry in your CloudTrail logs similar to the following example. When you see a log entry like this one, you can determine that an assumed role called the AWS KMS `Decrypt` operation for a specific trail and a specific log file. AWS KMS decrypted the data key under a specific KMS key.
 
-```
+```JSON
 {
     "eventVersion": "1.09",
     "userIdentity": {

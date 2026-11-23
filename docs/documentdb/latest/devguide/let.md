@@ -78,7 +78,7 @@ To view a code example for using the `$let` command, choose the tab for the lang
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function calculateRectangleAreas() {
@@ -115,7 +115,7 @@ calculateRectangleAreas();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def calculate_rectangle_areas():

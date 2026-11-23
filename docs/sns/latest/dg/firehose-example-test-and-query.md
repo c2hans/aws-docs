@@ -16,7 +16,7 @@ This topic explains how to test the [message archiving and analytics example use
 
 1. On the **Publish message to topic** page, enter the following for the message body. Add a newline character at the end of the message.
 
-   ```
+   ```json
    {"BookingDate":"2020-12-15","BookingTime":"2020-12-15 04:15:05","Destination":"Miami","FlyingFrom":"Vancouver","TicketNumber":"abcd1234"}
    ```
 
@@ -38,7 +38,7 @@ This topic explains how to test the [message archiving and analytics example use
 
    For example, assume that the `notifications` table in the `default` schema contains the following data:
 
-   ```
+   ```json
    {"BookingDate":"2020-12-15","BookingTime":"2020-12-15 04:15:05","Destination":"Miami","FlyingFrom":"Vancouver","TicketNumber":"abcd1234"}
    {"BookingDate":"2020-12-15","BookingTime":"2020-12-15 11:30:15","Destination":"Miami","FlyingFrom":"Omaha","TicketNumber":"efgh5678"}
    {"BookingDate":"2020-12-15","BookingTime":"2020-12-15 3:30:10","Destination":"Miami","FlyingFrom":"NewYork","TicketNumber":"ijkl9012"}
@@ -47,7 +47,7 @@ This topic explains how to test the [message archiving and analytics example use
 
    To find the top destination, run the following query:
 
-   ```
+   ```sql
    SELECT destination
    FROM default.notifications
    GROUP BY destination
@@ -57,7 +57,7 @@ This topic explains how to test the [message archiving and analytics example use
 
    To query for tickets sold during a specific date and time range, run a query like the following:
 
-   ```
+   ```sql
    SELECT *
    FROM default.notifications
    WHERE bookingtime

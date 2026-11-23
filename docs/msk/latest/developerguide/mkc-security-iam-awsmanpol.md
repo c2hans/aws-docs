@@ -24,7 +24,7 @@ You can attach the `AmazonMSKConnectReadOnlyAccess` policy to your IAM identitie
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -82,7 +82,7 @@ You can't attach KafkaConnectServiceRolePolicy to your IAM entities. This policy
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

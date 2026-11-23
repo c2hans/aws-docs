@@ -30,7 +30,7 @@ The following code example shows how to get started using AWS IoT SiteWise.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   paginateListAssetModels,
   IoTSiteWiseClient,
@@ -86,7 +86,7 @@ The following code example shows how to:
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   Scenario,
   ScenarioAction,
@@ -802,7 +802,7 @@ The following code example shows how to use `BatchPutAssetPropertyValue`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   BatchPutAssetPropertyValueCommand,
   IoTSiteWiseClient,
@@ -842,7 +842,7 @@ The following code example shows how to use `CreateAsset`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   CreateAssetCommand,
   IoTSiteWiseClient,
@@ -885,7 +885,7 @@ The following code example shows how to use `CreateAssetModel`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   CreateAssetModelCommand,
   IoTSiteWiseClient,
@@ -927,7 +927,7 @@ The following code example shows how to use `CreateGateway`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   CreateGatewayCommand,
   IoTSiteWiseClient,
@@ -969,7 +969,7 @@ The following code example shows how to use `DeleteAsset`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   DeleteAssetCommand,
   IoTSiteWiseClient,
@@ -1011,7 +1011,7 @@ The following code example shows how to use `DeleteAssetModel`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   DeleteAssetModelCommand,
   IoTSiteWiseClient,
@@ -1053,7 +1053,7 @@ The following code example shows how to use `DeleteGateway`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   DeleteGatewayCommand,
   IoTSiteWiseClient,
@@ -1095,7 +1095,7 @@ The following code example shows how to use `DescribeAssetModel`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   DescribeAssetModelCommand,
   IoTSiteWiseClient,
@@ -1137,7 +1137,7 @@ The following code example shows how to use `DescribeGateway`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   DescribeGatewayCommand,
   IoTSiteWiseClient,
@@ -1179,7 +1179,7 @@ The following code example shows how to use `GetAssetPropertyValue`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   GetAssetPropertyValueCommand,
   IoTSiteWiseClient,
@@ -1221,7 +1221,7 @@ The following code example shows how to use `ListAssetModels`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   ListAssetModelsCommand,
   IoTSiteWiseClient,

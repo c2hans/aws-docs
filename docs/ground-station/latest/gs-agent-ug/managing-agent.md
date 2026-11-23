@@ -24,7 +24,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/managi
 ## AWS Ground Station Agent start
 <a name="gs-agent-start"></a>
 
-```
+```bash
 #start
 sudo systemctl start aws-groundstation-agent
 
@@ -34,7 +34,7 @@ systemctl status aws-groundstation-agent
 
 Should produce output showing agent is **active**.
 
-```
+```bash
 aws-groundstation-agent.service - aws-groundstation-agent
 Loaded: loaded (/usr/lib/systemd/system/aws-groundstation-agent.service; enabled; vendor preset: disabled)
 Active: active (running) since Tue 2023-03-14 00:39:08 UTC; 1 day 13h ago
@@ -47,7 +47,7 @@ CGroup: /system.slice/aws-groundstation-agent.service
 ## AWS Ground Station Agent stop
 <a name="gs-agent-stop"></a>
 
-```
+```bash
 #stop
 sudo systemctl stop aws-groundstation-agent
 
@@ -57,7 +57,7 @@ systemctl status aws-groundstation-agent
 
  Should produce output showing agent is **inactive** (stopped).
 
-```
+```bash
 aws-groundstation-agent.service - aws-groundstation-agent
 Loaded: loaded (/usr/lib/systemd/system/aws-groundstation-agent.service; enabled; vendor preset: disabled)
 Active: inactive (dead) since Thu 2023-03-09 15:35:08 UTC; 6min ago
@@ -73,7 +73,7 @@ Main PID: 84182 (code=exited, status=0/SUCCESS)
 
 1. Stop the agent.
 
-   ```
+   ```bash
    #stop
    sudo systemctl stop aws-groundstation-agent
 
@@ -83,7 +83,7 @@ Main PID: 84182 (code=exited, status=0/SUCCESS)
 
 1. Update the agent.
 
-   ```
+   ```bash
    sudo yum update ${MY_RPM_FILE_PATH}
 
    # check the new version has been installed correctly by comparing the agent version with the starting agent version
@@ -106,7 +106,7 @@ Main PID: 84182 (code=exited, status=0/SUCCESS)
 
 1. Downgrade the agent.
 
-   ```
+   ```bash
    # get the starting agent version
    yum info aws-groundstation-agent
 
@@ -134,7 +134,7 @@ Main PID: 84182 (code=exited, status=0/SUCCESS)
 
  Uninstalling the agent will rename /opt/aws/groundstation/etc/aws-gs-agent-config.json to /opt/aws/groundstation/etc/aws-gs-agent-config.json.rpmsave. Installing the agent again on the same instance again will write default values for aws-gs-agent-config.json and will need to be updated with the correct values corresponding to your AWS resources. See [Agent config file](configuring-agent.md#agent-config-file).
 
-```
+```bash
 sudo yum remove aws-groundstation-agent
 ```
 
@@ -143,13 +143,13 @@ sudo yum remove aws-groundstation-agent
 
  The agent status is either **active** (agent is running) or **inactive** (agent is stopped).
 
-```
+```bash
 systemctl status aws-groundstation-agent
 ```
 
  An example output shows that the agent is installed, **inactive** state (stopped) and **enabled** (start service on boot).
 
-```
+```bash
 aws-groundstation-agent.service - aws-groundstation-agent
 Loaded: loaded (/usr/lib/systemd/system/aws-groundstation-agent.service; enabled; vendor preset: disabled)
 Active: inactive (dead) since Thu 2023-03-09 15:35:08 UTC; 6min ago
@@ -161,7 +161,7 @@ Main PID: 84182 (code=exited, status=0/SUCCESS)
 ## AWS Ground Station Agent RPM info
 <a name="gs-agent-rpm-info"></a>
 
-```
+```bash
 yum info aws-groundstation-agent
 ```
 
@@ -170,7 +170,7 @@ yum info aws-groundstation-agent
 **Note**
 “Version” might be different based on latest agent published version.
 
-```
+```bash
 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
 Installed Packages
 Name        : aws-groundstation-agent

@@ -101,7 +101,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of ListSessions.
 
-```
+```json
 POST bedrock-agent-runtime.us-east-1.amazonaws.com/sessions/?maxResults=10&nextToken=nextToken HTTP/1.1
 ```
 

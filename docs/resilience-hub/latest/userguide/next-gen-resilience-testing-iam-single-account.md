@@ -10,7 +10,7 @@ For a single-account test, create one execution role with a trust policy that al
 
 The execution role must trust the AWS FIS service. The trust policy is the same for every test template. The `aws:SourceAccount` and `aws:SourceArn` conditions protect against the [confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html), so that only experiments owned by your account can assume the role.
 
-```
+```json
 {
   "Version": "2012-10-17"		 	 	 ,
   "Statement": [

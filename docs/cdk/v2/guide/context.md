@@ -115,13 +115,13 @@ reset. It will be refreshed on the next SDK synthesis run.
 
 Therefore, if you want to update to the latest version of the Amazon Linux AMI, use the preceding example to do a controlled update of the context value and reset it. Then, synthesize and deploy your app again.
 
-```
+```bash
 $ cdk synth
 ```
 
 To clear all of the stored context values for your app, run `cdk context --clear`, as follows.
 
-```
+```bash
 $ cdk context --clear
 ```
 
@@ -132,13 +132,13 @@ Only context values stored in `cdk.context.json` can be reset or cleared. The AW
 
 Use the `--context` (`-c` for short) option to pass runtime context values to your CDK app during synthesis or deployment.
 
-```
+```bash
 $ cdk synth --context key=value MyStack
 ```
 
 To specify multiple context values, repeat the `--context` option any number of times, providing one key-value pair each time.
 
-```
+```bash
 $ cdk synth --context key1=value1 --context key2=value2 MyStack
 ```
 
@@ -153,7 +153,7 @@ Following is an example of using an existing Amazon VPC using AWS CDK context.
 
 **Example**
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import { Construct } from 'constructs';
@@ -178,7 +178,7 @@ export class ExistsVpcStack extends cdk.Stack {
 }
 ```
 
-```
+```javascript
 const cdk = require('aws-cdk-lib');
 const ec2 = require('aws-cdk-lib/aws-ec2');
 
@@ -204,7 +204,7 @@ class ExistsVpcStack extends cdk.Stack {
 module.exports = { ExistsVpcStack }
 ```
 
-```
+```python
 import aws_cdk as cdk
 import aws_cdk.aws_ec2 as ec2
 from constructs import Construct
@@ -224,7 +224,7 @@ class ExistsVpcStack(cdk.Stack):
             value=pubsubnets.subnet_ids.to_string())
 ```
 
-```
+```java
 import software.amazon.awscdk.CfnOutput;
 
 import software.amazon.awscdk.services.ec2.Vpc;
@@ -255,7 +255,7 @@ public class ExistsVpcStack extends Stack {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.EC2;
 using Constructs;
@@ -284,7 +284,7 @@ class ExistsVpcStack : Stack
 
 You can use `cdk diff` to see the effects of passing in a context value on the command line:
 
-```
+```bash
 $ cdk diff -c vpcid=vpc-0cb9c31031d0d3e22
 ```
 
@@ -296,7 +296,7 @@ Outputs
 
 The resulting context values can be viewed as shown here.
 
-```
+```bash
 $ cdk context -j
 ```
 

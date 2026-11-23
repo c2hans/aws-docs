@@ -13,7 +13,7 @@ AWS service calls can fail for reasons that your application must anticipate. Fo
 
 Modeled exceptions describe failures that a service operation can return. The following example catches `ResourceNotFoundException` because a missing DynamoDB table is an expected result for this application. It lets every other failure propagate.
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient
 from aws_sdk_dynamodb.models import ResourceNotFoundException
 
@@ -34,7 +34,7 @@ An application boundary is a place where unhandled failures receive one common r
 
 The following example catches `SmithyError` after `table_exists` has handled the specific failure that it understands. The boundary translates any remaining SDK failure into an application error.
 
-```
+```python
 from smithy_core.exceptions import SmithyError
 
 def safely_check_table(client: DynamoDBClient, table_name: str) -> bool:

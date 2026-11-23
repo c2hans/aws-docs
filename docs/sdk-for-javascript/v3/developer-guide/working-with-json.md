@@ -18,7 +18,7 @@ JSON represents data in two ways:
 
 Here is an example of a JSON object that contains an array of objects in which the objects represent cards in a card game. Each card is defined by two name-value pairs, one that specifies a unique value to identify that card and another that specifies a URL that points to the corresponding card image.
 
-```
+```javascript
 var cards = [
   {"CardID":"defaultname", "Image":"defaulturl"},
   {"CardID":"defaultname", "Image":"defaulturl"},
@@ -33,7 +33,7 @@ var cards = [
 
 Here is an example of simple JSON used to define the parameters of a call to an AWS Lambda service object.
 
-```
+```javascript
 const params = {
    FunctionName : funcName,
    Payload : JSON.stringify(payload),
@@ -45,7 +45,7 @@ The `params` object is defined by three name-value pairs, separated by commas wi
 
 When passing parameters to a service object method call, provide the JSON object to the method call, as shown in the following example of invoking a Lambda function.
 
-```
+```javascript
 const invoke = async (funcName, payload) => {
   const client = new LambdaClient({});
   const command = new InvokeCommand({

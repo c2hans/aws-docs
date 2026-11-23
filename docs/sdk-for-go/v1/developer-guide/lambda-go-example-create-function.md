@@ -16,7 +16,7 @@ The following example creates the Lambda function `functionName` in the `us-west
 
 The first step is to import the packages we use in the example.
 
-```
+```go
 import (
     "flag"
     "fmt"
@@ -29,7 +29,7 @@ import (
 
 Get the zip file name, bucket name, function name, handler, ARN, and runtime values from the command line. If any are missing, print and error message and quit.
 
-```
+```go
 zipFile := flag.String("z", "", "The name of the ZIP file, without the .zip extension.")
 bucket := flag.String("b", "", "the name of bucket to which the ZIP file is uploaded.")
 function := flag.String("f", "", "The name of the Lambda function.")
@@ -47,7 +47,7 @@ if *zipFile == "" || *bucket == "" || *function == "" || *handler == "" || *role
 
 Create the session and Lambda client and get the contents of the zip file. If you cannot read the zip file contents, print an error message and quit.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -55,7 +55,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Next, create the structures for the input argument to the `CreateFunction` function.
 
-```
+```go
 createCode := &lambda.FunctionCode{
     //      S3Bucket:        bucket,
     //      S3Key:           zipFile,
@@ -74,6 +74,6 @@ createArgs := &lambda.CreateFunctionInput{
 
 Finally, call `CreateFunction` and display a message with the result of the call.
 
-```
+```go
 result, err := svc.CreateFunction(createArgs)
 ```

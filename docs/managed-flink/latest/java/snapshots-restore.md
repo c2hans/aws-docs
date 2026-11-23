@@ -44,7 +44,7 @@ For a `StartApplication` request, Managed Service for Apache Flink checks the ca
 
 1. Send a `StartApplication` request for your application with the snapshot ARN. If the request fails, see [Troubleshoot restore errors](#snapshots-restore-errors) for the cause and the fix.
 
-   ```
+   ```json
    {
      "ApplicationName": "MyApplication",
      "RunConfiguration": {
@@ -58,7 +58,7 @@ For a `StartApplication` request, Managed Service for Apache Flink checks the ca
 
    To send the same request, run the following AWS CLI command:
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 start-application \
        --application-name MyApplication \
        --run-configuration '{"ApplicationRestoreConfiguration": {"ApplicationRestoreType": "RESTORE_FROM_CUSTOM_SNAPSHOT", "SnapshotArn": "arn:aws:kinesisanalytics:aa-example-1:111122223333:snapshot/MyApplication-snapshot-1"}}'
@@ -74,7 +74,7 @@ For a `StartApplication` request, Managed Service for Apache Flink checks the ca
 
 1. Send an `UpdateApplication` request for your application. Set `CurrentApplicationVersionId` to the value from the previous step.
 
-   ```
+   ```json
    {
      "ApplicationName": "MyApplication",
      "CurrentApplicationVersionId": 3,
@@ -89,7 +89,7 @@ For a `StartApplication` request, Managed Service for Apache Flink checks the ca
 
    To send the same request, run the following AWS CLI command:
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 update-application \
        --application-name MyApplication \
        --current-application-version-id 3 \
@@ -120,7 +120,7 @@ A `CreateSnapshot` request can be in progress when you send one of these request
 
 The following example request starts an application from the latest enhanced snapshot.
 
-```
+```json
 {
   "ApplicationName": "MyApplication",
   "RunConfiguration": {
@@ -133,7 +133,7 @@ The following example request starts an application from the latest enhanced sna
 
 To send the same request, run the following AWS CLI command:
 
-```
+```bash
 PROMPT> aws kinesisanalyticsv2 start-application \
     --application-name MyApplication \
     --run-configuration '{"ApplicationRestoreConfiguration": {"ApplicationRestoreType": "RESTORE_FROM_LATEST_SNAPSHOT"}}'
@@ -152,7 +152,7 @@ The caller needs `kinesisanalytics:RestoreFromSnapshot` on the snapshot ARN and 
 
 The target application can have `SnapshotsEnabled` set to `true`. In that case, the caller also needs `kinesisanalytics:CreateSystemSnapshot` on the target application. Without this action, the request returns `AccessDeniedException`. The following example policy allows the caller to start `MyApplication2` from `MyApplication-snapshot-1`.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -195,7 +195,7 @@ The target application must be able to read the state in the enhanced snapshot. 
 
 1. Send a `StartApplication` request for the target application with the snapshot ARN.
 
-   ```
+   ```json
    {
      "ApplicationName": "MyApplication2",
      "RunConfiguration": {
@@ -209,7 +209,7 @@ The target application must be able to read the state in the enhanced snapshot. 
 
    To send the same request, run the following AWS CLI command:
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 start-application \
        --application-name MyApplication2 \
        --run-configuration '{"ApplicationRestoreConfiguration": {"ApplicationRestoreType": "RESTORE_FROM_CUSTOM_SNAPSHOT", "SnapshotArn": "arn:aws:kinesisanalytics:aa-example-1:111122223333:snapshot/MyApplication-snapshot-1"}}'
@@ -220,7 +220,7 @@ The target application must be able to read the state in the enhanced snapshot. 
 
 To start an application without state, set `ApplicationRestoreType` to `SKIP_RESTORE_FROM_SNAPSHOT`. With this value, Managed Service for Apache Flink does not check `kinesisanalytics:RestoreFromSnapshot`.
 
-```
+```json
 {
   "ApplicationName": "MyApplication",
   "RunConfiguration": {
@@ -233,7 +233,7 @@ To start an application without state, set `ApplicationRestoreType` to `SKIP_RES
 
 To send the same request, run the following AWS CLI command:
 
-```
+```bash
 PROMPT> aws kinesisanalyticsv2 start-application \
     --application-name MyApplication \
     --run-configuration '{"ApplicationRestoreConfiguration": {"ApplicationRestoreType": "SKIP_RESTORE_FROM_SNAPSHOT"}}'
@@ -264,13 +264,13 @@ A rollback to the version before the upgrade returns the application to applicat
 
 1. Send a `RollbackApplication` request for your application. Set `CurrentApplicationVersionId` to the value from the previous step.
 
-   ```
+   ```json
    { "ApplicationName": "MyApplication", "CurrentApplicationVersionId": 4 }
    ```
 
    To send the same request, run the following AWS CLI command:
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 rollback-application \
        --application-name MyApplication \
        --current-application-version-id 4

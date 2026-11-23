@@ -67,7 +67,7 @@ The following table lists the X-Ray resource types for which you can log data ev
 
 You can configure advanced event selectors to filter on the `eventName` and `readOnly` fields to log only those events that are important to you. However, you cannot select events by adding the `resources.ARN` field selector, because X-Ray traces do not have ARNs. For more information about these fields, see [AdvancedFieldSelector](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*. The following is an example of how to run the [`put-event-selectors`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/put-event-selectors.html) AWS CLI command to log data events on a CloudTrail trail. You must run the command in or specify the Region in which the trail was created; otherwise, the operation returns an `InvalidHomeRegionException` exception.
 
-```
+```bash
 aws cloudtrail put-event-selectors --trail-name myTrail --advanced-event-selectors \
 '{
    "AdvancedEventSelectors": [
@@ -93,7 +93,7 @@ The following is an example of the X-Ray GetEncryptionConfig log entry in CloudT
 
 **Example**
 
-```
+```JSON
 {
     "eventVersion"=>"1.05",
     "userIdentity"=>{
@@ -138,7 +138,7 @@ The following is an example of the X-Ray PutTraceSegments data event log entry i
 
 **Example**
 
-```
+```JSON
 {
   "eventVersion": "1.09",
   "userIdentity": {

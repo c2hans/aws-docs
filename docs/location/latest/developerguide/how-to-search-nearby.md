@@ -22,7 +22,7 @@ In this example, the search is conducted from a position in Dubai with latitude 
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryPosition": [
         55.30884,
@@ -34,7 +34,7 @@ In this example, the search is conducted from a position in Dubai with latitude 
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -119,7 +119,7 @@ In this example, the search is conducted from a position in Dubai with latitude 
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/search-nearby?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -135,7 +135,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places search-nearby --key ${YourKey} \
 --query-position 55.30884 25.26951 \
 --max-results 2

@@ -66,7 +66,7 @@ Enable CORS by returning the correct headers.
 #### PUT schema
 <a name="clusters-clusterarn-reboot-broker-request-body-put-example"></a>
 
-```
+```json
 {
   "brokerIds": [
     "string"
@@ -80,7 +80,7 @@ Enable CORS by returning the correct headers.
 #### RebootBrokerResponse schema
 <a name="clusters-clusterarn-reboot-broker-response-body-rebootbrokerresponse-example"></a>
 
-```
+```json
 {
   "clusterArn": "string",
   "clusterOperationArn": "string"
@@ -90,7 +90,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="clusters-clusterarn-reboot-broker-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

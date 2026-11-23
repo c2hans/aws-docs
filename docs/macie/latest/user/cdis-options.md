@@ -64,6 +64,8 @@ You can test detection criteria by using the Amazon Macie console or the Amazon 
 
 For a demonstration of how keywords can help you find sensitive data and avoid false positives, watch the following video:
 
+[![AWS Videos](https://img.youtube.com/vi/GBaIAwLYN-o/0.jpg)](https://www.youtube.com/watch?v=GBaIAwLYN-o)
+
 ## Severity settings for findings
 <a name="cdis-finding-severity"></a>
 

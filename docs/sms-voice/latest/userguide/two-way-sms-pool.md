@@ -42,7 +42,7 @@ You can use the [update-pool](https://docs.aws.amazon.com/cli/latest/reference/p
 
 At the command line, enter the following command:
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 update-pool \
 > --pool-id {{poolid}} \
 > --two-way-channel-arn {{TwoWayARN}} \

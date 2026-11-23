@@ -35,7 +35,7 @@ The `CallExecutor` from Retry4j may not be thread-safe. Consider having each thr
 **Note**
  The following example has been updated to include the use of requestInterceptor(). This was added in TinkerPop 3.6.6. Prior to TinkerPop version 3.6.6, the code example used handshakeInterceptor(), which was deprecated with that release.
 
-```
+```java
 package com.amazonaws.examples.social;
 
 import com.amazonaws.services.lambda.runtime.Context;
@@ -229,7 +229,7 @@ If you want to include reconnect logic in your function, see [Java reconnect sam
 ### Javascript code
 <a name="lambda-functions-examples-javascript-code"></a>
 
-```
+```js
 const gremlin = require('gremlin');
 const async = require('async');
 const {getUrlAndHeaders} = require('gremlin-aws-sigv4/lib/utils');
@@ -352,7 +352,7 @@ Here are some things to notice about the following Python AWS Lambda example fun
 + It sets `pool_size=1` to keep from creating an unnecessary connection pool.
 + Requires the Python 3.10 or later Lambda runtime, because the `gremlinpython` library aligned with TinkerPop 3.8.0 requires Python 3.10 or later.
 
-```
+```python
 import os, sys, backoff, math
 from random import randint
 from gremlin_python import statics

@@ -26,7 +26,7 @@ The following code example shows how to use `CreateCluster`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ecs#code-examples).
 
-```
+```rust
 async fn make_cluster(client: &aws_sdk_ecs::Client, name: &str) -> Result<(), aws_sdk_ecs::Error> {
     let cluster = client.create_cluster().cluster_name(name).send().await?;
     println!("cluster created: {:?}", cluster);
@@ -44,7 +44,7 @@ The following code example shows how to use `DeleteCluster`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ecs#code-examples).
 
-```
+```rust
 async fn remove_cluster(
     client: &aws_sdk_ecs::Client,
     name: &str,
@@ -65,7 +65,7 @@ The following code example shows how to use `DescribeClusters`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ecs#code-examples).
 
-```
+```rust
 async fn show_clusters(client: &aws_sdk_ecs::Client) -> Result<(), aws_sdk_ecs::Error> {
     let resp = client.list_clusters().send().await?;
 

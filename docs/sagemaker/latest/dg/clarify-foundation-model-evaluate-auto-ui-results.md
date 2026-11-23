@@ -13,7 +13,7 @@ The `output.json` file contains aggregate scores for your selected datasets and 
 
 The following is an example output
 
-```
+```json
 {
     "evaluations": [{
         "evaluation_name": "factual_knowledge",

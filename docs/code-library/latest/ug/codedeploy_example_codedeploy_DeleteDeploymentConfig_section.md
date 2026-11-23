@@ -29,7 +29,7 @@ For more information, see [Delete a deployment configuration with CodeDeploy](ht
 **Tools for PowerShell V4**
 **Example 1: This example deletes the deployment configuration with the specified name. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the deployment configuration without a prompt.**
 
-```
+```powershell
 Remove-CDDeploymentConfig -DeploymentConfigName AtLeastTwoHealthyHosts
 ```
 +  For API details, see [DeleteDeploymentConfig](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -37,7 +37,7 @@ Remove-CDDeploymentConfig -DeploymentConfigName AtLeastTwoHealthyHosts
 **Tools for PowerShell V5**
 **Example 1: This example deletes the deployment configuration with the specified name. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the deployment configuration without a prompt.**
 
-```
+```powershell
 Remove-CDDeploymentConfig -DeploymentConfigName AtLeastTwoHealthyHosts
 ```
 +  For API details, see [DeleteDeploymentConfig](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

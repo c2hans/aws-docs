@@ -222,7 +222,7 @@ Name=TargetGroup,Value=targetgroup/my-targets/73e2d6bc24d8a067 \
 
 The following is example output:
 
-```
+```json
 {
     "Datapoints": [
         {

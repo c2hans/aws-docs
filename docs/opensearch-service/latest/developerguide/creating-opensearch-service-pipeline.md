@@ -49,7 +49,7 @@ To create your OpenSearch Ingestion pipeline, you must first create a pipeline r
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -119,7 +119,7 @@ You can specify multiple public OpenSearch Service domains as destinations for y
 
 In the following example, incoming data is conditionally routed to different OpenSearch Service domains:
 
-```
+```yaml
 ...
   route:
     - 2xx_status: "/response >= 200 and /response < 300"

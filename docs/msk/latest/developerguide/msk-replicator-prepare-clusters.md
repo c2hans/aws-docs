@@ -29,7 +29,7 @@ Update the source cluster policy with the following JSON. Replace the placeholde
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

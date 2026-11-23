@@ -30,7 +30,7 @@ Before using the Slurm REST API, ensure you have:
 
 1. Create a job submission request with the required parameters:
 
-   ```
+   ```json
    {
      "job": {
        "name": "my-job",
@@ -45,7 +45,7 @@ Before using the Slurm REST API, ensure you have:
 
 1. Submit the job using an HTTP POST request:
 
-   ```
+   ```sh
    curl -X POST \
      -H "Authorization: Bearer {{<jwt>}}" \
      -H "Content-Type: application/json" \
@@ -59,14 +59,14 @@ Before using the Slurm REST API, ensure you have:
 
 1. Get information about a specific job:
 
-   ```
+   ```sh
    curl -X GET -H "Authorization: Bearer {{<jwt>}}" \
        http://{{<privateIpAddress>}}:6820/slurm/v0.0.43/job/{{<job-id>}}
    ```
 
 1. List all jobs for the authenticated user:
 
-   ```
+   ```sh
    curl -X GET -H "Authorization: Bearer {{<jwt>}}" \
        http://{{<privateIpAddress>}}:6820/slurm/v0.0.43/jobs
    ```
@@ -74,7 +74,7 @@ Before using the Slurm REST API, ensure you have:
 **To cancel a job**
 + Send a DELETE request to cancel a specific job:
 
-  ```
+  ```sh
   curl -X DELETE -H "Authorization: Bearer {{<jwt>}}" \
       http://{{<privateIpAddress>}}:6820/slurm/v0.0.43/job/{{<job-id>}}
   ```

@@ -78,7 +78,7 @@ You can use the Amazon Lex V2 console to create and manage a custom vocabulary, 
 
 1. Use the `ListCustomVocabularyItems` operation to view the custom vocabulary entries. The request body will look like this:
 
-   ```
+   ```json
    {
       "maxResults": number,
       "nextToken": "string"
@@ -89,7 +89,7 @@ You can use the Amazon Lex V2 console to create and manage a custom vocabulary, 
 
 1. The response from the `ListCustomVocabularyItems` operation looks like this:
 
-   ```
+   ```json
    {
       "botId": "string",
       "botVersion": "string",
@@ -111,7 +111,7 @@ You can use the Amazon Lex V2 console to create and manage a custom vocabulary, 
 
 1. After the custom vocabulary has been created, use the `BatchCreateCustomVocabularyItem` operation to create new custom vocabulary entries. The request body will look like this:
 
-   ```
+   ```json
    {
       "customVocabularyItemList": [
            {
@@ -127,7 +127,7 @@ You can use the Amazon Lex V2 console to create and manage a custom vocabulary, 
 
 1. The response from the `BatchCreateCustomVocabularyItem` will look like this:
 
-   ```
+   ```json
    {
        "botId": "string",
        "botVersion": "string",
@@ -164,7 +164,7 @@ You can use the Amazon Lex V2 console to create and manage a custom vocabulary, 
 
 1. After the custom vocabulary has been created, use the `BatchDeleteCustomVocabularyItem` operation to delete existing custom vocabulary entries. The request body will look like this:
 
-   ```
+   ```json
    {
       "customVocabularyItemList": [
            {
@@ -176,7 +176,7 @@ You can use the Amazon Lex V2 console to create and manage a custom vocabulary, 
 
 1. The response from the `BatchDeleteCustomVocabularyItem` will look like this:
 
-   ```
+   ```json
    {
        "botId": "string",
        "botVersion": "string",
@@ -211,7 +211,7 @@ You can use the Amazon Lex V2 console to create and manage a custom vocabulary, 
 
 1. After the custom vocabulary has been created, use the `BatchUpdateCustomVocabularyItem` operation to update existing custom vocabulary entries. The request body will look like this:
 
-   ```
+   ```json
    {
       "customVocabularyItemList": [
            {
@@ -228,7 +228,7 @@ You can use the Amazon Lex V2 console to create and manage a custom vocabulary, 
 
 1. The response from the `BatchUpdateCustomVocabularyItem` will look like this:
 
-   ```
+   ```json
    {
        "botId": "string",
        "botVersion": "string",

@@ -36,7 +36,7 @@ The following example uses resource-level permissions to grant permission to get
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -58,7 +58,7 @@ The following example uses resource-level permissions to grant permission to get
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

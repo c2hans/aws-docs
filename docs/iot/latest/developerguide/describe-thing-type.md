@@ -12,7 +12,7 @@ $ aws iot describe-thing-type --thing-type-name "LightBulb"
 
 The **DescribeThingType** command returns information about the specified type:
 
-```
+```JSON
 {
     "thingTypeProperties": {
         "searchableAttributes": [

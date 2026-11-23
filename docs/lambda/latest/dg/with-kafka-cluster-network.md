@@ -46,7 +46,7 @@ If your cluster uses authentication, you can also restrict the endpoint policy f
 
 **Example VPC endpoint policy — Secrets Manager endpoint**
 
-```
+```JSON
 {
       "Statement": [
           {
@@ -71,7 +71,7 @@ The following example VPC endpoint policies show how to grant the required acces
 
 **Example VPC Endpoint policy — AWS STS endpoint**
 
-```
+```JSON
 {
       "Statement": [
           {
@@ -90,7 +90,7 @@ The following example VPC endpoint policies show how to grant the required acces
 
 **Example VPC Endpoint policy — Lambda endpoint**
 
-```
+```JSON
 {
       "Statement": [
           {

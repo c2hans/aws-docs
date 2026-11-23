@@ -152,7 +152,7 @@ limit 5;
 
 The following example uses the `~~*` operator to do a case-insensitive (ILIKE) search for cities that start with "Ag".
 
-```
+```sql
 select distinct city from users where city ~~* 'Ag%' order by city;
 
 city

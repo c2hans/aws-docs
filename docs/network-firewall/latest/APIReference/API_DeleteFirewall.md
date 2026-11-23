@@ -19,7 +19,8 @@ Deleting a proxy mode firewall detaches its NAT gateways. To also delete the NAT
 {
    "DeleteAssociatedNatGateways": {{boolean}},
    "FirewallArn": "{{string}}",
-   "FirewallName": "{{string}}"
+   "FirewallName": "{{string}}",
+   "FirewallType": "{{string}}"
 }
 ```
 
@@ -54,6 +55,15 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `^[a-zA-Z0-9-]+$`
 Required: No
 
+ ** [FirewallType](#API_DeleteFirewall_RequestSyntax) **   <a name="networkfirewall-DeleteFirewall-request-FirewallType"></a>
+The type of firewall that the request targets. Network Firewall supports the following firewall types:
++  `IGW_FIREWALL` - An internet gateway firewall, which AWS Network Security Manager creates and manages for a VPC.
++  `FIREWALL` - A standard Network Firewall firewall.
+If you specify the firewall ARN, the type must match the resource type in the ARN. If you specify only the firewall name, Network Firewall uses this value to identify the firewall. If you don't specify a type, the default is `FIREWALL`.
+Type: String
+Valid Values: `FIREWALL | IGW_FIREWALL`
+Required: No
+
 ## Response Syntax
 <a name="API_DeleteFirewall_ResponseSyntax"></a>
 
@@ -80,6 +90,9 @@ Required: No
       "FirewallName": "string",
       "FirewallPolicyArn": "string",
       "FirewallPolicyChangeProtection": boolean,
+      "IgwFirewallConfiguration": {
+         "EnforcementMode": "string"
+      },
       "NatGatewayCreateMappings": [
          {
             "AllocationIds": [ "string" ],
@@ -145,6 +158,10 @@ Required: No
       "Status": "string",
       "SyncStates": {
          "string" : {
+            "AddressTranslations": {
+               "PublicIPv4Addresses": [ "string" ],
+               "PublicIPv6Addresses": [ "string" ]
+            },
             "Attachment": {
                "DnsName": "string",
                "EndpointId": "string",

@@ -110,7 +110,7 @@ The following is an IAM policy example for a state machine that accesses a speci
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -135,7 +135,7 @@ The following is an IAM policy example for a state machine that accesses a speci
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -160,7 +160,7 @@ The following is an IAM policy example for a state machine that provides full ac
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -186,7 +186,7 @@ The following is an IAM policy example for a state machine to access a specific 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -223,7 +223,7 @@ The following is an IAM policy example for a state machine to access a specific 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -259,7 +259,7 @@ The following is an IAM policy example for a state machine that provides full ac
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -296,7 +296,7 @@ The following is an IAM policy example for a state machine to access a specific 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -344,7 +344,7 @@ The following is an IAM policy example for a state machine to access a custom mo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -391,7 +391,7 @@ The following is an IAM policy example for a state machine that provides full ac
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

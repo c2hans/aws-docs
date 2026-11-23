@@ -10,6 +10,8 @@ Route 53 resolver Inbound endpoints forward DNS queries they receive from outsid
 
 ![Diagram showing Route 53 resolver on Outposts](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-51-route53-resolver-outposts.png)
 
+*Route 53 resolver on Outposts*
+
 ## Route 53 Resolver on Outposts considerations
 <a name="route53-considerations"></a>
 

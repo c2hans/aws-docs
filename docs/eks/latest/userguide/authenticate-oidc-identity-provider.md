@@ -41,7 +41,7 @@ You can associate an identity provider using `eksctl` or the AWS Management Cons
 
 1. Create a file named `associate-identity-provider.yaml` with the following contents. Replace the example values with your own. The values in the `identityProviders` section are obtained from your OIDC identity provider. Values are only required for the `name`, `type`, `issuerUrl`, and `clientId` settings under `identityProviders`.
 
-   ```
+   ```yaml
    ---
    apiVersion: eksctl.io/v1alpha5
    kind: ClusterConfig
@@ -69,7 +69,7 @@ Don’t specify `system:`, or any portion of that string, for `groupsPrefix` or 
 
 1. Create the provider.
 
-   ```
+   ```bash
    eksctl associate identityprovider -f associate-identity-provider.yaml
    ```
 
@@ -111,7 +111,7 @@ Don’t specify `system:`, or any portion of that string, for `groupsPrefix` or 
 
 If you want to prevent an OIDC identity provider from being associated with a cluster, create and associate the following IAM policy to the IAM accounts of your Amazon EKS administrators. For more information, see [Creating IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) and [Adding IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console) in the *IAM User Guide* and [Actions](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticcontainerserviceforkubernetes.html) in the Service Authorization Reference.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -138,7 +138,7 @@ If you want to prevent an OIDC identity provider from being associated with a cl
 
 The following example policy allows OIDC identity provider association if the `clientID` is `kubernetes` and the `issuerUrl` is `https://cognito-idp.us-west-2.amazonaws.com/*`.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

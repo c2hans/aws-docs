@@ -18,7 +18,7 @@ Nodes with GPU partition configuration go through several states:
 ## Monitoring Node States
 <a name="sagemaker-hyperpod-eks-gpu-partitioning-labels-monitoring"></a>
 
-```
+```bash
 # Check node health status
 kubectl get nodes -l sagemaker.amazonaws.com/node-health-status=Schedulable
 
@@ -34,7 +34,7 @@ kubectl describe node {{NODE_NAME}} | grep -A 5 "Conditions:"
 
 You can manage MIG configuration with custom labels and taints to label your GPU partitions and apply them across instances:
 
-```
+```json
 {
   "KubernetesConfig": {
     "Labels": {

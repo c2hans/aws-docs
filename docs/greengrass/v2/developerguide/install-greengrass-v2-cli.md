@@ -14,21 +14,21 @@ These steps do not apply to nucleus lite.
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    cd ~
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    cd %USERPROFILE%
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    cd ~
    ```
 
@@ -39,21 +39,21 @@ These steps do not apply to nucleus lite.
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip > greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip > greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    iwr -Uri https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip -OutFile greengrass-nucleus-latest.zip
    ```
 
@@ -66,21 +66,21 @@ These steps do not apply to nucleus lite.
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    unzip greengrass-nucleus-latest.zip -d {{GreengrassInstaller}} && rm greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    mkdir {{GreengrassInstaller}} && tar -xf greengrass-nucleus-latest.zip -C {{GreengrassInstaller}} && del greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Expand-Archive -Path greengrass-nucleus-latest.zip -DestinationPath .\\{{GreengrassInstaller}}
    rm greengrass-nucleus-latest.zip
    ```
@@ -120,7 +120,7 @@ The thing group name can't contain colon (`:`) characters.
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo -E java -Droot="{{/greengrass/v2}}" -Dlog.store=FILE \
      -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar \
      --aws-region {{region}} \
@@ -138,7 +138,7 @@ The thing group name can't contain colon (`:`) characters.
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    java -Droot="{{C:\greengrass\v2}}" "-Dlog.store=FILE" ^
      -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar ^
      --aws-region {{region}} ^
@@ -156,7 +156,7 @@ The thing group name can't contain colon (`:`) characters.
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    java -Droot="{{C:\greengrass\v2}}" "-Dlog.store=FILE" `
      -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar `
      --aws-region {{region}} `

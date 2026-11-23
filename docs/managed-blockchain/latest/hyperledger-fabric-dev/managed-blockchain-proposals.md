@@ -74,13 +74,13 @@ Proposals have one of the following statuses:
 **To view proposals for a network using the AWS CLI**
 + Enter a command similar to the following example. Replace {{n-MWY63ZJZU5HGNCMBQER7IN6OIU}} with the network ID for which you want to list proposals.
 
-  ```
+  ```bash
   aws managedblockchain list-proposals --network-id {{n-MWY63ZJZU5HGNCMBQER7IN6OIU}}
   ```
 
   The command returns output similar to the following:
 
-  ```
+  ```json
   {
       "Proposals": [
           {
@@ -100,13 +100,13 @@ Proposals have one of the following statuses:
 **To view the details of a proposal using the AWS CLI**
 + Enter a command similar to the following. Replace {{n-MWY63ZJZU5HGNCMBQER7IN6OIU}} with the network ID and {{p-ZR7KUD2YYNESLNG6RQ33X3FUFE}} with the proposal ID to view.
 
-  ```
+  ```bash
   aws managedblockchain get-proposal --network-id {{n-MWY63ZJZU5HGNCMBQER7IN6OIU}} --proposal-id {{p-ZR7KUD2YYNESLNG6RQ33X3FUFE}}
   ```
 
   The command returns output similar to the following:
 
-  ```
+  ```json
   {
      "Proposal": {
         "Actions": {
@@ -152,7 +152,7 @@ You can use the AWS Management Console, the AWS CLI `vote-on-proposal` command, 
 <a name="w2aac27c11b5b3"></a>
 + Use the `vote-on-proposal` command as shown in the following example. Replace the values of `--network-id`, `--member-id`, and `--vote` as appropriate.
 
-  ```
+  ```bash
   aws managedblockchain vote-on-proposal --network-id n-MWY63ZJZU5HGNCMBQER7IN6OIU --proposal-id p-ZR7KUD2YYNESLNG6RQ33X3FUFE --member-id m-K46ICRRXJRCGRNNS4ES4XUUS5A --vote YES
   ```
 

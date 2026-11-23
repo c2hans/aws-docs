@@ -30,7 +30,7 @@ The Systems Manager Agent uses an AWS Identity and Access Management (IAM) servi
 
 Greengrass core devices use an IAM service role, called the token exchange role, to interact with AWS services. Each core device has a token exchange role that you create when you [install the AWS IoT Greengrass Core software](install-greengrass-core-v2.md). Many Greengrass components, such as the Systems Manager Agent, require additional permissions on this role. The Systems Manager agent component requires the following permissions, which include permission to use the role that you created in [Step 2: Create an IAM service role for Systems Manager](#create-ssm-service-role).
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -74,7 +74,7 @@ If you haven't already done so, add these permissions to the core device's token
 
    1. Paste the following policy into the JSON editor. Replace {{SSMServiceRole}} with the name of the service role that you created in [Step 2: Create an IAM service role for Systems Manager](#create-ssm-service-role).
 
-      ```
+      ```json
       {
         "Version": "2012-10-17",
         "Statement": [
@@ -122,7 +122,7 @@ If you haven't already done so, add these permissions to the core device's token
 
 1. Create a file called `ssm-agent-component-policy.json` and copy the following JSON into the file. Replace {{SSMServiceRole}} with the name of the service role that you created in [Step 2: Create an IAM service role for Systems Manager](#create-ssm-service-role).
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -152,7 +152,7 @@ If you haven't already done so, add these permissions to the core device's token
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    aws iam create-policy \
      --policy-name {{GreengrassSSMAgentComponentPolicy}} \
      --policy-document file://ssm-agent-component-policy.json
@@ -161,7 +161,7 @@ If you haven't already done so, add these permissions to the core device's token
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    aws iam create-policy ^
      --policy-name {{GreengrassSSMAgentComponentPolicy}} ^
      --policy-document file://ssm-agent-component-policy.json
@@ -170,7 +170,7 @@ If you haven't already done so, add these permissions to the core device's token
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    aws iam create-policy `
      --policy-name {{GreengrassSSMAgentComponentPolicy}} `
      --policy-document file://ssm-agent-component-policy.json
@@ -187,7 +187,7 @@ If you haven't already done so, add these permissions to the core device's token
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    aws iam attach-role-policy \
      --role-name {{GreengrassV2TokenExchangeRole}} \
      --policy-arn arn:aws:iam::{{123456789012}}:policy/{{GreengrassSSMAgentComponentPolicy}}
@@ -196,7 +196,7 @@ If you haven't already done so, add these permissions to the core device's token
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    aws iam attach-role-policy ^
      --role-name {{GreengrassV2TokenExchangeRole}} ^
      --policy-arn arn:aws:iam::{{123456789012}}:policy/{{GreengrassSSMAgentComponentPolicy}}
@@ -205,7 +205,7 @@ If you haven't already done so, add these permissions to the core device's token
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    aws iam attach-role-policy `
      --role-name {{GreengrassV2TokenExchangeRole}} `
      --policy-arn arn:aws:iam::{{123456789012}}:policy/{{GreengrassSSMAgentComponentPolicy}}
@@ -241,7 +241,7 @@ Complete the following steps to deploy and configure the Systems Manager Agent c
 
    1. In the **Configure aws.greengrass.SystemsManagerAgent** modal, under **Configuration update**, in **Configuration to merge**, enter the following configuration update. Replace {{SSMServiceRole}} with the name of the service role that you created in [Step 2: Create an IAM service role for Systems Manager](#create-ssm-service-role).
 
-      ```
+      ```json
       {
         "SSMRegistrationRole": "{{SSMServiceRole}}",
         "SSMOverrideExistingRegistration": false
@@ -266,7 +266,7 @@ To deploy the Systems Manager Agent component, create a deployment document that
 
 The following example partial deployment document specifies to use a service role named `SSMServiceRole`. Replace {{SSMServiceRole}} with the name of the service role that you created in [Step 2: Create an IAM service role for Systems Manager](#create-ssm-service-role).
 
-```
+```json
 {
   {{...}},
   "components": {
@@ -329,7 +329,7 @@ When the Systems Manager Agent component runs, it registers the core device as a
 <a name="verify-ssm-registration-cli"></a>
 + Use the [DescribeInstanceInformation](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeInstanceInformation.html) operation to get the list of managed nodes that match a filter that you specify. Run the following command to verify whether a core device is registered as a managed node. Replace {{MyGreengrassCore}} with the name of the core device to verify.
 
-  ```
+  ```bash
   aws ssm describe-instance-information --filter Key=SourceIds,Values={{MyGreengrassCore}} Key=SourceTypes,Values=AWS::IoT::Thing
   ```
 

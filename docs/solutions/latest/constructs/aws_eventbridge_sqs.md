@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps, Duration } from 'aws-cdk-lib';
 import * as events from 'aws-cdk-lib/aws-events';
@@ -51,7 +51,7 @@ const policyStatement = new iam.PolicyStatement({
 constructStack.encryptionKey?.addToResourcePolicy(policyStatement);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_eventbridge_sqs import EventbridgeToSqsProps, EventbridgeToSqs
 from aws_cdk import (
     aws_events as events,
@@ -78,7 +78,7 @@ policy_statement = iam.PolicyStatement(
 construct_stack.encryption_key.add_to_resource_policy(policy_statement)
 ```
 
-```
+```java
 import software.constructs.Construct;
 import java.util.List;
 

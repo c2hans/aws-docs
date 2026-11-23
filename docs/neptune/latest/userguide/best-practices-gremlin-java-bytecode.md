@@ -12,7 +12,7 @@ There are advantages to using bytecode rather than a string when submitting quer
 
 In other words, rather than submit a query like this:
 
-```
+```java
   final Cluster cluster = Cluster.build("localhost")
                                  .port(8182)
                                  .maxInProcessPerConnection(32)
@@ -31,7 +31,7 @@ In other words, rather than submit a query like this:
 
 Instead, submit the query using bytecode, like this:
 
-```
+```java
   final Cluster cluster = Cluster.build("localhost")
                                  .port(8182)
                                  .maxInProcessPerConnection(32)

@@ -148,7 +148,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-database-migration-service-dms-start-replication-task-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-StartDmsTask",
   "Region": "us-east-1",
@@ -162,7 +162,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-database-migration-service-dms-start-replication-task-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-StartDmsTask",
   "Region": "us-east-1",

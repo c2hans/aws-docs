@@ -18,7 +18,7 @@ In this topic, weâ€™ll rewrite the activity worker from `helloswf`, using Javaâ€
 
 Here is the complete code:
 
-```
+```java
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 

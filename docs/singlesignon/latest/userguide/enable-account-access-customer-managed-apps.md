@@ -63,7 +63,7 @@ You can use the `PutApplicationAccessScope` API to programmatically enable the `
 
 **AWS CLI**
 
-```
+```bash
 aws sso-admin put-application-access-scope \
   --application-arn arn:aws:sso::{{123456789012}}:application/{{ssoins-1234567890abcdef}}/{{apl-1234567890abcdef}} \
   --scope "sso:account:access"
@@ -71,7 +71,7 @@ aws sso-admin put-application-access-scope \
 
 **API request:**
 
-```
+```json
 {
   "ApplicationArn": "arn:aws:sso::{{123456789012}}:application/{{ssoins-1234567890abcdef}}/{{apl-1234567890abcdef}}",
   "Scope": "sso:account:access"

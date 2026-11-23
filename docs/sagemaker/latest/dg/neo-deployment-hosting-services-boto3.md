@@ -16,7 +16,7 @@ After you have satisfied the [ prerequisites](https://docs.aws.amazon.com/sagema
 
 The following example shows how to use these APIs to deploy a model compiled with Neo:
 
-```
+```python
 import boto3
 client = boto3.client('sagemaker')
 
@@ -67,7 +67,7 @@ If you did not train your model using SageMaker AI, specify the following enviro
 ------
 #### [ MXNet and PyTorch ]
 
-```
+```json
 "Environment": {
     "SAGEMAKER_PROGRAM": "inference.py",
     "SAGEMAKER_SUBMIT_DIRECTORY": {{"/opt/ml/model/code"}},
@@ -80,7 +80,7 @@ If you did not train your model using SageMaker AI, specify the following enviro
 ------
 #### [ TensorFlow ]
 
-```
+```json
 "Environment": {
     "SAGEMAKER_PROGRAM": "inference.py",
     "SAGEMAKER_SUBMIT_DIRECTORY": {{"/opt/ml/model/code"}},

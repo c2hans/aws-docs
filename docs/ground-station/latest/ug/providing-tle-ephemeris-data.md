@@ -33,7 +33,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/providing-tle-e
 
  The following is an example TLE set for a satellite with satellite catalog number 100,000. The Alpha-5 encoding represents this as `A0000` in columns 3–7 of each TLE line:
 
-```
+```json
 [
     {
         "tleLine1": "1 A0000U 26001A   26120.50000000  .00000072  00000-0  24500-4 0  9991",
@@ -64,7 +64,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/providing-tle-e
 
  A TLE set is a JSON formatted object that strings one or more TLEs together to construct a continuous trajectory. The TLEs in the TLE set must form a continuous set that we can use to construct a trajectory (i.e. no gaps in time between TLEs in a TLE set). An example TLE set is shown below:
 
-```
+```json
 [
     {
         "tleLine1": "1 25994U 99068A   20318.54719794  .00000075  00000-0  26688-4 0  9997",
@@ -90,7 +90,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/providing-tle-e
 
  A TLE set can be uploaded via the AWS Ground Station boto3 client as follows:
 
-```
+```python
 import boto3
 from datetime import datetime, timedelta, timezone
 
@@ -125,7 +125,7 @@ print(f"Created TLE ephemeris with ID: {tle_ephemeris['ephemerisId']}")
 
  This call will return an ephemerisId that can be used to reference the ephemeris in the future. For example, we can use the provided ephemerisId from the call above to poll for the status of the ephemeris:
 
-```
+```python
 import boto3
 from datetime import datetime, timedelta, timezone
 import time
@@ -173,7 +173,7 @@ print(f"Status: {response['status']}")
 
  An example response from the [DescribeEphemeris](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_DescribeEphemeris.html) action is provided below
 
-```
+```json
 {
   "creationTime": 1620254718.765,
   "enabled": true,
@@ -200,7 +200,7 @@ print(f"Status: {response['status']}")
 
  Below is an example of uploading a TLE ephemeris file from an S3 bucket
 
-```
+```python
 import boto3
 from datetime import datetime, timedelta, timezone
 import json

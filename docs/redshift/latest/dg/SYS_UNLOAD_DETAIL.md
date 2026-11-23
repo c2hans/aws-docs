@@ -31,7 +31,7 @@ SYS\_UNLOAD\_DETAIL is visible to all users. Superusers can see all rows; regula
 
 The following query shows the unloaded query details, including format, rows, and file count of unload command.
 
-```
+```sql
 select query_id, substring(file_name, 0, 50), transfer_size, file_format from sys_unload_detail;
 ```
 

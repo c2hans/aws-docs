@@ -18,7 +18,7 @@ You can attach `[Prefix]-Installer-Role-Policy` to your IAM entities. Before you
 
 Permissions defined in this policy document specify which actions are allowed or denied.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -241,7 +241,7 @@ You can attach `[Prefix]-ControlPlane-Role-Policy` to your IAM entities. Before 
 
 Permissions defined in this policy document specify which actions are allowed or denied.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -303,7 +303,7 @@ You can attach `[Prefix]-Worker-Role-Policy` to your IAM entities. Before you ca
 
 Permissions defined in this policy document specify which actions are allowed or denied.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -329,7 +329,7 @@ You can attach `[Prefix]-Support-Role-Policy` to your IAM entities. Before you c
 
 Permissions defined in this policy document specify which actions are allowed or denied.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

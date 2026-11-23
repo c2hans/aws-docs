@@ -70,7 +70,7 @@ To configure a rolling deployment, use the following example and fields:
   + `MaximumBatchSize` — Specify the `Type` of batch you want to use (either instance count or overall percentage of your fleet) and the `Value`, or the size of each batch.
   + `RollbackMaximumBatchSize` — Use this object to specify the rollback strategy in case an alarm trips. Specify the `Type` of batch you want to use (either instance count or overall percentage of your fleet), and the `Value`, or the size of each batch. If you don’t specify these fields, or if you set the value to 100% of your endpoint, then SageMaker AI uses a blue/green rollback strategy and rolls all traffic back to the old fleet when an alarm trips.
 
-```
+```python
 import boto3
 client = boto3.client("sagemaker")
 

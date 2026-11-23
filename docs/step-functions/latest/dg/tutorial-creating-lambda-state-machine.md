@@ -38,7 +38,7 @@ Ensure that your Lambda function is under the same AWS account and AWS Region as
 
 1. Copy the following code for the Lambda function into the **Code source** section of the **{{HelloFunction}}** page.
 
-   ```
+   ```javascript
    export const handler = async (event) => {
        return "Hello from " + event.who + "!";
    };
@@ -59,7 +59,7 @@ Test your Lambda function to see it in operation.
 
 1. Replace the **Event JSON** data with the following.
 
-   ```
+   ```json
    {
        "who": "AWS Step Functions"
    }
@@ -135,7 +135,7 @@ Step Functions accepts names for state machines, executions, activities, and lab
 
 1. In the **Input** area, replace the example execution data with the following.
 
-   ```
+   ```json
    {
        "who" : "AWS Step Functions"
    }

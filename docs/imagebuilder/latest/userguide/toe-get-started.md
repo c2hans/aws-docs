@@ -95,7 +95,7 @@ The following are example *Hello World* component documents to help you get star
 
 Some of the Linux component examples in this guide refer to a component document file named `hello-world-linux.yml`. You can use the following document to get started with those examples.
 
-```
+```yaml
 name: Hello World
 description: This is hello world testing document for Linux.
 schemaVersion: 1.0
@@ -128,7 +128,7 @@ phases:
 
 Some of the Windows component examples in this guide refer to a component document file named `hello-world-windows.yml`. You can use the following document to get started with those examples.
 
-```
+```yaml
 name: Hello World
 description: This is Hello World testing document for Windows.
 schemaVersion: 1.0
@@ -161,7 +161,7 @@ phases:
 
 Some of the macOS component examples in this guide refer to a component document file named `hello-world-macos.yml`. You can use the following document to get started with those examples.
 
-```
+```yaml
 name: Hello World
 description: This is hello world testing document for macOS.
 schemaVersion: 1.0
@@ -201,13 +201,13 @@ The AWSTOE application can validate only the component syntax for the current op
 
 Linux or macOS
 
-```
+```sh
 awstoe validate --documents /home/user/hello-world.yml
 ```
 
 Windows
 
-```
+```sh
 awstoe.exe validate --documents C:\Users\user\Documents\hello-world.yml
 ```
 
@@ -226,55 +226,55 @@ To run specific phases in single or multiple documents, use the following comman
 
 Single phase
 
-```
+```sh
 awstoe run --documents hello-world.yml --phases build
 ```
 
 Multiple phases
 
-```
+```sh
 awstoe run --documents {{hello-world.yml}} --phases build,test
 ```
 
 **Document run**
 Run all phases in a single document
 
-```
+```sh
 awstoe run --documents {{documentName.yaml}}
 ```
 
 Run all phases in multiple documents
 
-```
+```sh
 awstoe run --documents {{documentName1.yaml}},{{documentName2.yaml}}
 ```
 
 Enter Amazon S3 information to upload AWSTOE logs from a user-defined local path (recommended)
 
-```
+```sh
 awstoe run --documents {{documentName.yaml}} --log-s3-bucket-name {{amzn-s3-demo-destination-bucket}} --log-s3-key-prefix {{S3KeyPrefix}} --log-s3-bucket-owner {{S3BucketOwner}} --log-directory {{local_path}}
 ```
 
 Run all phases in a single document, and display all logs on the console
 
-```
+```sh
 awstoe run --documents {{documentName.yaml}} --trace
 ```
 
 Example command
 
-```
+```sh
 awstoe run --documents {{s3://bucket/key/doc.yaml}} --phases {{build,validate}}
 ```
 
 Run document with unique ID
 
-```
+```sh
 awstoe run --documents {{documentName.yaml}} --execution-id {{user-provided-id}} --phases {{build,test}}
 ```
 
 Get help with AWSTOE
 
-```
+```sh
 awstoe --help
 ```

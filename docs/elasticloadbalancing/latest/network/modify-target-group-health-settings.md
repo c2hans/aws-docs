@@ -63,7 +63,7 @@ aws elbv2 modify-target-group-attributes \
 **To modify target group health settings**
 Update the [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html) resource. The following example sets the healthy threshold for both unhealthy state actions to 50%.
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'

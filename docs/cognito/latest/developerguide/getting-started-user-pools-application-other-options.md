@@ -45,33 +45,33 @@ To build this application, you must set up a developer environment. The develope
 
 1. Sign in to your developer environment and navigate to the parent directory for your application.
 
-   ```
+   ```shell
    cd {{~/path/to/project/folder/}}
    ```
 
 1. Create a new React service.
 
-   ```
+   ```shell
    npm create vite@latest frontend-client -- --template react-ts
    ```
 
 1. Clone the `cognito-developer-guide-react-example` [project folder](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider/scenarios/cognito-developer-guide-react-example) from the AWS code examples repository on GitHub.
 
-   ```
+   ```shell
    cd {{~/some/other/path}}
    ```
 
-   ```
+   ```shell
    git clone https://github.com/awsdocs/aws-doc-sdk-examples.git
    ```
 
-   ```
+   ```shell
    cp -r ./aws-doc-sdk-examples/javascriptv3/example_code/cognito-identity-provider/scenarios/cognito-developer-guide-react-example/frontend-client {{~/path/to/project/folder/}}
    ```
 
 1. Navigate to the `src` directory in your project.
 
-   ```
+   ```shell
    cd {{~/path/to/project/folder/}}frontend-client/src
    ```
 
@@ -87,13 +87,13 @@ To build this application, you must set up a developer environment. The develope
 
 1. Install your application.
 
-   ```
+   ```shell
    npm install
    ```
 
 1. Launch the application.
 
-   ```
+   ```shell
    npm run dev
    ```
 

@@ -30,7 +30,7 @@ For more information, see [Configure sticky sessions for your Classic Load Balan
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified policy from the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-ELBLoadBalancerPolicy -LoadBalancerName my-load-balancer -PolicyName my-duration-cookie-policy
 ```
 **Output:**
@@ -46,7 +46,7 @@ Performing operation "Remove-ELBLoadBalancerPolicy (DeleteLoadBalancerPolicy)" o
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified policy from the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-ELBLoadBalancerPolicy -LoadBalancerName my-load-balancer -PolicyName my-duration-cookie-policy
 ```
 **Output:**

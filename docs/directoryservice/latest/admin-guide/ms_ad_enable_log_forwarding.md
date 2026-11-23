@@ -63,7 +63,7 @@ aws logs create-log-group --log-group-name '/aws/directoryservice/{{d-1111111111
 ------
 #### [ PowerShell Command ]
 
-```
+```powershell
 New-CWLLogGroup -LogGroupName '/aws/directoryservice/{{d-1111111111}}'
 ```
 
@@ -89,11 +89,11 @@ aws logs put-resource-policy --policy-name DSLogSubscription --policy-document
 ------
 #### [ PowerShell Command ]
 
-```
+```powershell
 $PolicyDocument = Get-Content .\DSPolicy.json –Raw
 ```
 
-```
+```powershell
 Write-CWLResourcePolicy -PolicyName DSLogSubscription -PolicyDocument $PolicyDocument
 ```
 
@@ -114,7 +114,7 @@ aws ds create-log-subscription --directory-id '{{d-1111111111}}' --log-group-nam
 ------
 #### [ PowerShell Command ]
 
-```
+```powershell
 New-DSLogSubscription -DirectoryId '{{d-1111111111}}' -LogGroupName '/aws/directoryservice/{{d-1111111111}}'
 ```
 

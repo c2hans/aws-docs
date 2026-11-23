@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/tools-graphql-c
 
   The changes file uses the following JSON format:
 
-  ```
+  ```json
   [
     {
       "type": "{{(GraphQL type name)}}",
@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/tools-graphql-c
 
 + **`--input-graphdb-schema {{(schema text)}}`**   –   Instead of running the utility against a Neptune database, you can express a graphdb schema in text form to use as input. A graphdb schema has a JSON format like this:
 
-  ```
+  ```json
   {
     "nodeStructures": [
       { "label":"nodelabel1",

@@ -155,7 +155,7 @@ To test the widget locally, you'll create a simple HTML file that loads the Comm
 
 1. Create a new file called `index.html` in your test folder with the following content:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>

@@ -71,7 +71,7 @@ The `CommandToDeployGroup` statement in the example shows how to output a comple
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS IoT Greengrass example template that creates a group version with a core, device, function, logger, subscription, and resources.",
@@ -421,7 +421,7 @@ The `CommandToDeployGroup` statement in the example shows how to output a comple
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   AWS IoT Greengrass example template that creates a group version with a core,

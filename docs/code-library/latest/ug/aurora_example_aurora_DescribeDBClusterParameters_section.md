@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Describe the cluster parameters in a parameter group.
     /// </summary>
@@ -56,7 +56,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/aurora#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -127,7 +127,7 @@ bool AwsDoc::Aurora::getDBCLusterParameters(const Aws::String &parameterGroupNam
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -174,7 +174,7 @@ func (clusters *DbClusters) GetParameters(ctx context.Context, parameterGroupNam
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void describeDbClusterParameters(RdsClient rdsClient, String dbCLusterGroupName, int flag) {
         try {
             DescribeDbClusterParametersRequest dbParameterGroupsRequest;
@@ -221,7 +221,7 @@ func (clusters *DbClusters) GetParameters(ctx context.Context, parameterGroupNam
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun describeDbClusterParameters(
     dbCLusterGroupName: String?,
     flag: Int,
@@ -265,7 +265,7 @@ suspend fun describeDbClusterParameters(
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -326,7 +326,7 @@ class AuroraWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     // Get the parameter group. rds.DescribeDbClusterParameterGroups
     // Get parameters in the group. This is a long list so you will have to paginate. Find the auto_increment_offset and auto_increment_increment parameters (by ParameterName). rds.DescribeDbClusterParameters
     // Parse the ParameterName, Description, and AllowedValues values and display them.
@@ -436,7 +436,7 @@ async fn test_scenario_cluster_parameters_error() {
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rds#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA lv_marker TYPE /aws1/rdsstring VALUE ''.
         DATA lt_all_parameters TYPE /aws1/cl_rdsparameter=>tt_parameterslist.

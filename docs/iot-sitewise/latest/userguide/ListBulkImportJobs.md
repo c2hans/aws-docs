@@ -11,13 +11,13 @@ Use the [ListBulkImportJobs](https://docs.aws.amazon.com/iot-sitewise/latest/API
 
 ListBulkImportJobs is particularly useful for getting a comprehensive overview of all your bulk import jobs. This can help you track multiple data imports, identify any jobs that require attention, and maintain an organized workflow. The operation supports pagination, allowing you to retrieve large numbers of job summaries efficiently. You can use the job IDs returned by this operation with the [DescribeBulkImportJob](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeBulkImportJob.html) operation to retrieve more detailed information about specific jobs. This two-step process allows you to first get a high-level view of all jobs, and then drill down into the details of jobs of interest. When using `ListBulkImportJobs`, you can apply filters to narrow down the results. For example, you can filter jobs based on their status to retrieve only completed jobs or only running jobs. This feature helps you focus on the most relevant information for your current task. The operation also returns a `nextToken` if there are more results available. You can use this token in subsequent calls to retrieve the next set of job summaries, enabling you to iterate through all your bulk import jobs even if you have a large number of them. The following example demonstrates how to use `ListBulkImportJobs` with the AWS CLI to retrieve a list of completed jobs.
 
-```
+```json
 aws iotsitewise list-bulk-import-jobs --filter COMPLETED
 ```
 
 **Example Response for completed jobs filter**
 
-```
+```json
 {
    "jobSummaries":[
       {
@@ -36,6 +36,6 @@ aws iotsitewise list-bulk-import-jobs --filter COMPLETED
 
 This command demonstrates how to use `ListBulkImportJobs` to retrieve a list of jobs that completed with failures. The maximum is set to 50 results and we're using a next token for paginated results.
 
-```
+```json
 aws iotsitewise list-bulk-import-jobs --filter COMPLETED_WITH_FAILURES --max-results 50 --next-token "string"
 ```

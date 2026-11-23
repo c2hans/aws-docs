@@ -28,7 +28,7 @@ If this is an organization event data store, the event data store ARN must inclu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

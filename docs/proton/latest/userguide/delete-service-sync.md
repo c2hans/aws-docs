@@ -24,14 +24,14 @@ You can delete a service sync configuration using the console or AWS CLI.
 
 Run the following command.
 
-```
+```sh
 $ aws proton delete-service-sync-config \
     --service-name "{{service name}}"
 ```
 
 The response is as follows.
 
-```
+```json
 {
     "serviceSyncConfig": {
         "branch": "main",

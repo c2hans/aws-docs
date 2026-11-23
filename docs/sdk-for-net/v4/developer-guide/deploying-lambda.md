@@ -26,7 +26,7 @@ Before you start using the .NET CLI to deploy Lambda functions, you must meet th
 + Confirm that you have the .NET CLI installed. For example: `dotnet --version`. If needed, go to [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download) to install it.
 + Set up the .NET CLI to work with Lambda. For a description of how to do so, see [.NET Core CLI](https://docs.aws.amazon.com/lambda/latest/dg/csharp-package-cli.html) in the *AWS Lambda Developer Guide*. In that procedure, the following is the deployment command:
 
-  ```
+  ```text
   dotnet lambda deploy-function MyFunction {{--function-role role}}
   ```
 
@@ -37,7 +37,7 @@ Before you start using the .NET CLI to deploy Lambda functions, you must meet th
 
 To list the Lambda commands that are available through the .NET CLI, open a command prompt or terminal and enter `dotnet lambda --help`. The command output will be similar to the following:
 
-```
+```text
 Amazon Lambda Tools for .NET applications
 Project Home: https://github.com/aws/aws-extensions-for-dotnet-cli, https://github.com/aws/aws-lambda-dotnet
 
@@ -70,7 +70,7 @@ The following instructions assume that you've created an AWS Lambda .NET project
 
 After successful completion, the message **New Lambda function created** is displayed.
 
-```
+```text
 Executing publish command
 ...
 (etc.)

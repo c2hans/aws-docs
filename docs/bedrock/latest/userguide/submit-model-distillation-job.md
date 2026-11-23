@@ -111,7 +111,7 @@ You can include the following optional fields for extra configurations.
 
 The following is an example snippet from [CreateModelCustomizationJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelCustomizationJob.html) API. This example uses the prompt-response pairs in the invocation log as the input data source and specifies the filter for selecting prompt-response pairs.
 
-```
+```api
 "trainingDataConfig": {
     "invocationLogsConfig": {
         "usePromptResponse": true,

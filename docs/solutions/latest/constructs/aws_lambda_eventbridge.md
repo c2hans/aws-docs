@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps, Aws } from 'aws-cdk-lib';
 import { LambdaToEventbridge, LambdaToEventbridgeProps } from "@aws-solutions-constructs/aws-lambda-eventbridge";
@@ -40,7 +40,7 @@ new LambdaToEventbridge(this, 'LambdaToEventbridgePattern', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_lambda_eventbridge import LambdaToEventbridge
 from aws_cdk import (
     aws_lambda as _lambda,
@@ -57,7 +57,7 @@ LambdaToEventbridge(self, 'LambdaToEventbridgePattern',
                     )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

@@ -14,7 +14,7 @@ The following code example shows how to copy Amazon SES email and domain identit
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 import argparse
 import json
 import logging

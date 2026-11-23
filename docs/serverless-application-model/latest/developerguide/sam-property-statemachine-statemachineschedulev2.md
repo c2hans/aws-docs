@@ -16,7 +16,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-statemachine-statemachineschedulev2-syntax.yaml"></a>
 
-```
+```yaml
 DeadLetterConfig: {{DeadLetterConfig}}
 [Description](#sam-statemachine-statemachineschedulev2-description): {{String}}
 [EndDate](#sam-statemachine-statemachineschedulev2-enddate): {{String}}
@@ -143,7 +143,7 @@ The state of the schedule.
 ### Basic example of defining a ScheduleV2 resource
 <a name="sam-property-statemachine-statemachineschedulev2--examples--example1"></a>
 
-```
+```yaml
 StateMachine:
   Type: AWS::Serverless::StateMachine
   Properties:

@@ -33,7 +33,7 @@ The sections in this topic describe an example request from a client application
 
 The Lambda function created in this topic is triggered when HealthLake receives a requests to a SMART on FHIR enabled data store. The request from the client application contains a REST API call, and an authorization header containing an access token.
 
-```
+```HTTP
 GET https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/
 Authorization: Bearer i8hweunweunweofiwweoijewiwe
 ```
@@ -44,7 +44,7 @@ The example Lambda function in this topic uses AWS Secrets Manager to obscure cr
 The example Lambda function shows you how to validate an FHIR REST request sent to a SMART on FHIR enabled data store. To see step-by-steps directions on how to implement this Lambda function, see [Creating a Lambda function using the AWS Management Console](#create-lambda-console).
 If the FHIR REST API request does not contain a valid data store endpoint, access token, and REST operation the Lambda function will fail. To learn more about the required authorization server elements, see [Required claims](reference-smart-on-fhir-authentication.md#server-response).
 
-```
+```python
 import base64
 import boto3
 import logging
@@ -120,7 +120,7 @@ The following procedure assumes you've already created the service role that you
 
    If you've not yet created the service role for the Lambda function to use you'll need to create it before the sample Lambda function will work. To learn more about creating a service role for the Lambda function, see [Creating a HealthLake service role for use in the AWS Lambda function used to decode a JWT](#smart-on-fhir-lambda-service-role).
 
-   ```
+   ```python
    import base64
    import boto3
    import logging
@@ -184,7 +184,7 @@ You can modify a Lambda function's execution role by searching for it in the IAM
 Adding the IAM action `GetSecretValue` to execution role grants the necessary permission for the sample Lambda function to work.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -265,7 +265,7 @@ Use this procedure to create a service role. When you create a service you will 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

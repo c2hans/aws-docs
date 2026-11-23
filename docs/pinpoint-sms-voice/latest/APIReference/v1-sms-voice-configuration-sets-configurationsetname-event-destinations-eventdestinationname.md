@@ -84,7 +84,7 @@ Deletes an event destination from a configuration set.
 #### PUT schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-eventdestinationname-request-body-put-example"></a>
 
-```
+```json
 {
   "EventDestination": {
     "SnsDestination": {
@@ -112,7 +112,7 @@ Deletes an event destination from a configuration set.
 #### UpdateConfigurationSetEventDestinationResponse schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-eventdestinationname-response-body-updateconfigurationseteventdestinationresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -120,7 +120,7 @@ Deletes an event destination from a configuration set.
 #### DeleteConfigurationSetEventDestinationResponse schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-eventdestinationname-response-body-deleteconfigurationseteventdestinationresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -128,7 +128,7 @@ Deletes an event destination from a configuration set.
 #### BadRequestException schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-eventdestinationname-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -137,7 +137,7 @@ Deletes an event destination from a configuration set.
 #### NotFoundException schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-eventdestinationname-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -146,7 +146,7 @@ Deletes an event destination from a configuration set.
 #### TooManyRequestsException schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-eventdestinationname-response-body-toomanyrequestsexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -155,7 +155,7 @@ Deletes an event destination from a configuration set.
 #### InternalServiceErrorException schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-eventdestinationname-response-body-internalserviceerrorexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }

@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 
  AWS Agent Registry can automatically synchronize record metadata from external sources by connecting to the provided URL with outbound credentials. When you provide a URL and credential provider (Optional for public resources that do not require any Authorization to access), the system extracts server and tool definitions and populates the record’s descriptors conforming to the official protocol schemas. It also updates the record’s name, description, and version if those values are found at the source.
 
+This page covers MCP server and A2A agent card records. Skill records can also synchronize, either SKILL.md only or a full skill package, from an Amazon S3 object or a GitHub folder. Skill synchronization uses its own source members, credentials, and permissions. It sets the record’s name and description from the `name` and `description` in SKILL.md, as the synchronization on this page does from its source, but it doesn’t change the record’s version. For information about skill synchronization, see [Synchronize a skill from Amazon S3](registry-skill-sync-s3.md) and [Synchronize a skill from GitHub](registry-skill-sync-github.md).
+
 ## Synchronize from a public MCP server
 <a name="registry-sync-public"></a>
 
@@ -26,7 +28,7 @@ For Public MCP servers that don’t require authentication or authorization:
 
 1. In the **Registry records** section, choose **Create record**.
 
-1. Choose **Synchronize from endpoint**.
+1. Choose **Synchronize from source**.
 
 1. Under **Record details**, for **Type**, choose **MCP**. The **Descriptor** is set to **MCP server**.
 
@@ -59,7 +61,7 @@ The record is created in CREATING status. The registry connects to the endpoint,
 
 **Example**
 
-```
+```bash
 aws agent-registry-control create-registry-record \
   --registry-id $REGISTRY_ID \
   --name "aws-knowledge-server" \
@@ -77,7 +79,7 @@ aws agent-registry-control create-registry-record \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control create-registry-record \
   --registry-id $REGISTRY_ID \
   --name "aws-knowledge-server" \
@@ -97,7 +99,7 @@ aws bedrock-agentcore-control create-registry-record \
 
 **Example**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')
@@ -121,7 +123,7 @@ print(f"Record ARN: {response['recordArn']}")
 print(f"Status: {response['status']}")  # CREATING
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control')
@@ -142,7 +144,7 @@ print(f"Status: {response['status']}")  # CREATING
 ```
 
 **Note**
-In the `agent-registry` namespace, sync configuration moves inside each descriptor as `source` (only supported on `mcpServer` and `a2aAgentCard` primary descriptors). The top-level `synchronizationType`/`synchronizationConfiguration` fields no longer exist.
+In the `agent-registry` namespace, sync configuration moves inside each descriptor as `source`. It’s supported on the `mcpServer` and `a2aAgentCard` primary descriptors, and for skill records on `agentSkillsDefinition.additionalData.skillMd` and `agentSkillsDefinition.additionalData.skillPackage`. For skill sources, see [Synchronize a skill from Amazon S3](registry-skill-sync-s3.md) and [Synchronize a skill from GitHub](registry-skill-sync-github.md). The top-level `synchronizationType`/`synchronizationConfiguration` fields no longer exist.
 
 The record is created in CREATING status. The synchronization time varies from seconds to minutes, depending on the size of the metadata. After synchronization completes, it transitions to DRAFT with descriptors extracted from the MCP server, including server and tools definitions.
 
@@ -160,7 +162,7 @@ When the MCP server is protected by OAuth, you will need to create an M2M client
 
 1. In the **Registry records** section, choose **Create record**.
 
-1. Choose **Synchronize from endpoint**.
+1. Choose **Synchronize from source**.
 
 1. Under **Record details**, for **Type**, choose **MCP**. The **Descriptor** is set to **MCP server**.
 
@@ -209,7 +211,7 @@ The record is created in CREATING status. The registry connects to the endpoint 
 
 **Example**
 
-```
+```bash
 aws agent-registry-control create-registry-record \
   --registry-id $REGISTRY_ID \
   --name "oauth-mcp-server" \
@@ -238,7 +240,7 @@ aws agent-registry-control create-registry-record \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control create-registry-record \
   --registry-id $REGISTRY_ID \
   --name "oauth-mcp-server" \
@@ -272,7 +274,7 @@ aws bedrock-agentcore-control create-registry-record \
 **Note**
 These sync-related IAM permissions authorize workload identity and OAuth credential provider resources managed by AgentCore Identity. Those resources intentionally remain under the `bedrock-agentcore` namespace, so this policy does not change.
 
-```
+```json
 {
     "Statement":
     [
@@ -327,7 +329,7 @@ Besides the IAM role, you must specify the `service` field for SigV4 signing. If
 
 1. In the **Registry records** section, choose **Create record**.
 
-1. Choose **Synchronize from endpoint**.
+1. Choose **Synchronize from source**.
 
 1. Under **Record details**, for **Type**, choose **MCP**. The **Descriptor** is set to **MCP server**.
 
@@ -372,7 +374,7 @@ The record is created in CREATING status. The registry connects to the endpoint 
 
 **Example**
 
-```
+```bash
 aws agent-registry-control create-registry-record \
   --registry-id $REGISTRY_ID \
   --name "gateway-mcp-server" \
@@ -402,7 +404,7 @@ aws agent-registry-control create-registry-record \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control create-registry-record \
   --registry-id $REGISTRY_ID \
   --name "gateway-mcp-server" \
@@ -435,9 +437,9 @@ aws bedrock-agentcore-control create-registry-record \
  **Additional IAM permissions required:**
 
 **Note**
-This `iam:PassRole` policy authorizes registry to hand off a role to AgentCore Identity for outbound sync. The `iam:PassedToService` condition value `bedrock-agentcore.amazonaws.com` refers to the AgentCore Identity service principal and does not change.
+This policy applies to the `agent-registry` namespace. It lets the caller pass the sync role to AWS Agent Registry, which uses the role for outbound sync. The `iam:PassedToService` condition value `agent-registry.amazonaws.com` is the AWS Agent Registry service principal. The `AgentRegistryFullAccess` managed policy uses the same condition. For the `bedrock-agentcore` namespace, use the values in the **Amazon Bedrock AgentCore namespace** tab of the publisher policy in [Publisher permissions](registry-prerequisites.md#registry-prereq-publisher-permissions).
 
-```
+```json
 {
     "Statement":
     [
@@ -455,7 +457,7 @@ This `iam:PassRole` policy authorizes registry to hand off a role to AgentCore I
             {
                 "StringEquals":
                 {
-                    "iam:PassedToService": "bedrock-agentcore.amazonaws.com"
+                    "iam:PassedToService": "agent-registry.amazonaws.com"
                 }
             }
         }
@@ -477,7 +479,7 @@ Provide the agent card URL or the agent’s base URL where `.well-known/agent-ca
 
 1. In the **Registry records** section, choose **Create record**.
 
-1. Choose **Synchronize from endpoint**.
+1. Choose **Synchronize from source**.
 
 1. Under **Record details**, for **Type**, choose **Agent**. The **Descriptor** is set to **A2A Agent Card**.
 
@@ -522,7 +524,7 @@ The record is created in CREATING status. The registry connects to the endpoint,
 
 **Example**
 
-```
+```bash
 aws agent-registry-control create-registry-record \
   --registry-id $REGISTRY_ID \
   --name "travel-agent" \
@@ -540,7 +542,7 @@ aws agent-registry-control create-registry-record \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control create-registry-record \
   --registry-id $REGISTRY_ID \
   --name "travel-agent" \
@@ -554,7 +556,7 @@ You can also specify credential providers for A2A synchronization, for example y
 
 **Example**
 
-```
+```bash
 aws agent-registry-control create-registry-record \
   --registry-id $REGISTRY_ID \
   --name "a2a_agent_record" \
@@ -580,7 +582,7 @@ aws agent-registry-control create-registry-record \
   }"
 ```
 
-```
+```bash
 aws bedrock-agentcore-control create-registry-record \
   --registry-id $REGISTRY_ID \
   --name "a2a_agent_record" \
@@ -608,7 +610,7 @@ aws bedrock-agentcore-control create-registry-record \
 ### Console
 <a name="registry-sync-trigger-console"></a>
 
-1. Open the record detail page for an MCP or Agent record that has synchronization configured.
+1. Open the record detail page for an MCP, Agent, or Skills record that has synchronization configured.
 
 **Example**
 
@@ -621,9 +623,14 @@ Alternatively, you can trigger synchronization during editing:
 
 1. From the record detail page, choose **Manage**, then choose **Edit**.
 
-1. Under **Synchronize from endpoint**, select the **Re-sync from endpoint** checkbox.
+1. Select the checkbox that triggers synchronization:
+
+   1. For an MCP or Agent record, under **Source**, select **Trigger synchronization**.
+
+   1. For a Skills record, under **Skill content source**, with **Synchronize from source** chosen, select **Trigger synchronization**. For a GitHub source, you can also select **Re-authorize GitHub access** to approve GitHub access again, for example to use another GitHub account.
 
 1. Choose **Save changes**.
+If a Skills record’s GitHub source needs a user to approve access, the console shows **Authorize on GitHub**, and the record has the status **Update pending authorization** until the approval completes.
 
 1. From the record detail page in the [Bedrock-AgentCore console](https://console.aws.amazon.com/bedrock-agentcore/home?region=us-east-1#), choose the **Sync** button in the header actions.
 
@@ -645,7 +652,7 @@ The record transitions to UPDATING status during synchronization. After completi
 
 **Example**
 
-```
+```bash
 aws agent-registry-control update-registry-record \
   --registry-id $REGISTRY_ID \
   --record-id $RECORD_ID \
@@ -653,7 +660,7 @@ aws agent-registry-control update-registry-record \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control update-registry-record \
   --registry-id $REGISTRY_ID \
   --record-id $RECORD_ID \
@@ -666,7 +673,7 @@ aws bedrock-agentcore-control update-registry-record \
 
 **Example**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')
@@ -679,7 +686,7 @@ response = client.update_registry_record(
 print(f"Status: {response['status']}")
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control')
@@ -694,5 +701,11 @@ print(f"Status: {response['status']}")
 
 **Note**
 If the record is in a non-DRAFT status (e.g., APPROVED), the update creates a new DRAFT revision. The approved revision remains discoverable.
+
+For a skill record, `triggerSynchronization` reads the record’s Amazon S3 object or GitHub folder again, and replaces the skill’s markdown and, for a package source, its package. For a GitHub source:
++ If a GitHub user must approve access first, the response has `status` `UPDATE_PENDING_AUTH` and an `authorizationData` member with the authorization URL.
++ To approve access again even when the current approval still works, for example to use another GitHub account, also set `forceAuthentication` to `true` (`--force-authentication` in the AWS CLI).
+
+For more information, see [Synchronize a skill from Amazon S3](registry-skill-sync-s3.md) and [Synchronize a skill from GitHub](registry-skill-sync-github.md).
 
  **Troubleshooting** : see [Record synchronization errors](registry-troubleshooting.md#registry-troubleshooting-sync-errors).

@@ -18,7 +18,7 @@ curl -G https://{{your-neptune-endpoint}}:{{port}}/status
 
 The status response then specifies whether DFE is enabled or not:
 
-```
+```json
 {
   "status":"healthy",
   "startTime":"Wed Dec 29 02:29:24 UTC 2021",

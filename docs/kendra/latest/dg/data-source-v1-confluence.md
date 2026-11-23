@@ -172,7 +172,7 @@ You must specify the following using [ConfluenceConfiguration](https://docs.aws.
 
   If you use your Confluence user name and password as authentication credentials, you store the following credentials as a JSON structure in your Secrets Manager secret:
 
-  ```
+  ```json
   {
       "username": "{{user name}}",
       "password": "{{password}}"
@@ -181,7 +181,7 @@ You must specify the following using [ConfluenceConfiguration](https://docs.aws.
 
   If you use a personal access token to connect Confluence Server to Amazon Kendra, you store the following credentials as a JSON structure in your Secrets Manager secret:
 
-  ```
+  ```json
   {
       "patToken": "{{personal access token}}"
   }
@@ -189,7 +189,7 @@ You must specify the following using [ConfluenceConfiguration](https://docs.aws.
 
   If you use Confluence Cloud, you use your Confluence user name and an API token, configured in Confluence, as your password. You store the following credentials as a JSON structure in your Secrets Manager secret:
 
-  ```
+  ```json
   {
       "username": "{{user name}}",
       "password": "{{API token}}"

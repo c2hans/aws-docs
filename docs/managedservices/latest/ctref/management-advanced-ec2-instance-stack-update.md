@@ -146,7 +146,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-ec2-instance-stack-update-ex-min"></a>
 
-```
+```json
 {
   "VpcId": "vpc-1234567890abcdef0",
   "StackId": "stack-1234567890abcdef0",
@@ -158,7 +158,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-ec2-instance-stack-update-ex-max"></a>
 
-```
+```json
 {
   "VpcId": "vpc-12345678",
   "StackId": "stack-1234567890abcdef0",

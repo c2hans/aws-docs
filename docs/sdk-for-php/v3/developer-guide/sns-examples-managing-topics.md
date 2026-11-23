@@ -35,7 +35,7 @@ Each topic name in your AWS account must be unique.
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -44,7 +44,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -71,7 +71,7 @@ To list up to 100 existing topics in the current AWS Region, use the [ListTopics
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -80,7 +80,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -105,7 +105,7 @@ Any messages that have not been delivered yet to subscribers will also be delete
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -114,7 +114,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -141,7 +141,7 @@ To retrieve properties of a single existing topic, use the [GetTopicAttributes](
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -150,7 +150,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',
@@ -179,7 +179,7 @@ You can set only the `Policy`, `DisplayName`, and `DeliveryPolicy` attributes.
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -188,7 +188,7 @@ use Aws\Sns\SnsClient;
 
  **Sample Code**
 
-```
+```php
 $SnSclient = new SnsClient([
     'profile' => 'default',
     'region' => 'us-east-1',

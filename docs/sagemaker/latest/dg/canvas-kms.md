@@ -30,7 +30,7 @@ The simplest way to grant your role permission to use the key is to modify the k
 
 1. Modify the key's policy to grant permissions for the `kms:GenerateDataKey` and `kms:Decrypt` actions to the IAM role. Additionally, if you're modifying the key policy that encrypts your Canvas application storage in the Studio space, grant the `kms:CreateGrant` action. You can add a statement that's similar to the following:
 
-   ```
+   ```json
    {
      "Sid": "ExampleStmt",
      "Action": [

@@ -19,7 +19,7 @@ The OptimizeWaypoints API also calculates the optimal route between a set of way
 ------
 #### [ Sample Request ]
 
-```
+```json
 {
     "Origin": [
         -123.095740,
@@ -81,7 +81,7 @@ The OptimizeWaypoints API also calculates the optimal route between a set of way
 ------
 #### [ Sample Response ]
 
-```
+```json
 {
     "Connections": [
         {
@@ -160,7 +160,7 @@ The OptimizeWaypoints API also calculates the optimal route between a set of way
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.eu-central-1.amazonaws.com/v2/optimize-waypoints?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -225,7 +225,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes optimize-waypoints --key ${YourKey} \
 --origin -123.095740 49.274426 \
 --waypoints '[{"Position": [-123.115193 , 49.280596], "SideOfStreet": {"Position": [-123.089557, 49.271774], "UseWith": "AnyStreet"}, "AccessHours": {"From": {"DayOfWeek": "Saturday", "TimeOfDay": "00:02:42Z"}, "To": {"DayOfWeek": "Friday", "TimeOfDay": "1:33:36+02:50"}}, "Heading": 250, "ServiceDuration": 200}, {"Position": [-123.089557, 49.271774], "AccessHours": {"From": {"DayOfWeek": "Monday", "TimeOfDay": "00:02:42Z"}, "To": {"DayOfWeek": "Tuesday", "TimeOfDay": "1:33:36+02:50"}}, "ServiceDuration": 200}]' \

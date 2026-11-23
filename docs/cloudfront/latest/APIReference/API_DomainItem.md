@@ -14,6 +14,14 @@ The domain name.
 Type: String
 Required: Yes
 
+ ** ServeOn **   <a name="cloudfront-Type-DomainItem-ServeOn"></a>
+Specifies which requests for this domain CloudFront routes to the distribution tenant. Valid values are:
++  `any` – CloudFront routes requests for this domain to the distribution tenant regardless of the IP address that they arrive on. This is the default if you don't specify a value.
++  `anycast-ip-list-only` – CloudFront routes requests for this domain to the distribution tenant only when they arrive on the Anycast static IPs of the distribution tenant's connection group. CloudFront treats requests that arrive on other IP addresses as requests for an unknown domain.
+Type: String
+Valid Values: `any | anycast-ip-list-only`
+Required: No
+
 ## See Also
 <a name="API_DomainItem_SeeAlso"></a>
 

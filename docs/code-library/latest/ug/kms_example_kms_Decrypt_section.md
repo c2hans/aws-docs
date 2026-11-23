@@ -76,7 +76,7 @@ For more information, see [Asymmetric keys in AWS KMS](https://docs.aws.amazon.c
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Asynchronously decrypts the given encrypted data using the specified key ID.
      *
@@ -116,7 +116,7 @@ For more information, see [Asymmetric keys in AWS KMS](https://docs.aws.amazon.c
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/kms#code-examples).
 
-```
+```kotlin
 suspend fun encryptData(keyIdValue: String): ByteArray? {
     val text = "This is the text to encrypt by using the AWS KMS Service"
     val myBytes: ByteArray = text.toByteArray()
@@ -163,7 +163,7 @@ suspend fun decryptData(
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @param string $ciphertext
@@ -192,7 +192,7 @@ suspend fun decryptData(
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyEncrypt:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -234,7 +234,7 @@ class KeyEncrypt:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/kms#code-examples).
 
-```
+```ruby
 require 'aws-sdk-kms' # v2: require 'aws-sdk'
 
 # Decrypted blob
@@ -259,7 +259,7 @@ puts resp.plaintext
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kms#code-examples).
 
-```
+```rust
 async fn decrypt_key(client: &Client, key: &str, filename: &str) -> Result<(), Error> {
     // Open input text file and get contents as a string
     // input is a base-64 encoded string, so decode it:
@@ -296,7 +296,7 @@ async fn decrypt_key(client: &Client, key: &str, filename: &str) -> Result<(), E
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         " iv_ciphertext_blob contains the encrypted data

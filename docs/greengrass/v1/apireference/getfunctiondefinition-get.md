@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="getfunctiondefinition-get-cli"></a>
 
-```
+```bash
 aws greengrass get-function-definition \
   --function-definition-id <value>  \
   [--cli-input-json <value>] \
@@ -24,7 +24,7 @@ aws greengrass get-function-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "FunctionDefinitionId": "string"
 }
@@ -45,7 +45,7 @@ type: string
 Success.
  [ DefinitionInformation](definitions-definitioninformation.md)
 
-```
+```json
 {
 "Name": "string",
 "Id": "string",
@@ -94,7 +94,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

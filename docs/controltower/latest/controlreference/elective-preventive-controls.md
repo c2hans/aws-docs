@@ -455,7 +455,7 @@ A typical use case for this control is a situation in which you do not wish to a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

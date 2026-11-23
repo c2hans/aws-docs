@@ -12,4 +12,6 @@ Application stacks are organized into architectural layers so that stacks can be
 
 ![A diagram depicting OpsWorks showing DevOps features and architecture.](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/images/aws-opworks.png)
 
+**OpsWorks showing DevOps features and architecture**
+
  AWS OpsWorks also supports the DevOps practices of monitoring and logging (covered in the next section). Monitoring support is provided by Amazon CloudWatch. All lifecycle events are logged, and a separate Chef log documents any Chef recipes that are run, along with any exceptions.

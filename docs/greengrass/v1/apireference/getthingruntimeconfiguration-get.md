@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="getthingruntimeconfiguration-get-cli"></a>
 
-```
+```bash
 aws greengrass get-thing-runtime-configuration  \
     --thing-name <value> \
     [--cli-input-json <value>] \
@@ -45,7 +45,7 @@ type: string
 200 response
  [ GetThingRuntimeConfigurationResponse](definitions-getthingruntimeconfigurationresponse.md)
 
-```
+```json
 {
   "RuntimeConfiguration": {
     "TelemetryConfiguration": {
@@ -78,7 +78,7 @@ enum: ["InSync", "OutOfSync"]
 400 response
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
   "Message": "string",
   "ErrorDetails": [
@@ -114,7 +114,7 @@ type: string
 500 response
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
   "Message": "string",
   "ErrorDetails": [

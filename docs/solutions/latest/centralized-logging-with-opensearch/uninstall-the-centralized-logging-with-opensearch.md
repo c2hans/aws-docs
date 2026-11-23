@@ -20,13 +20,13 @@ Delete all the log ingestion before deleting an application log pipeline.
 1. Uninstall/Disable the Fluent Bit agent.
    + EC2 (Optional): after removing the log ingestion from Instance Group. Fluent Bit will automatically stop ship logs, it is optional for you to stop the Fluent Bit in your instances. Here are the commands for stopping Fluent Bit agent.
 
-     ```
+     ```bash
      sudo service fluent-bit stop
         sudo systemctl disable fluent-bit.service
      ```
    + EKS DaemonSet (Mandatory): if you have chosen to deploy the Fluent Bit agent using DaemonSet, you must delete your Fluent Bit agent. Otherwise, the agent will continue to ship logs to Centralized Logging with OpenSearch pipelines.
 
-     ```
+     ```bash
      kubectl delete -f ~/fluent-bit-logging.yaml
      ```
    + EKS SideCar (Mandatory): remove the fluent-bit agent in your .yaml file, and restart your pod.

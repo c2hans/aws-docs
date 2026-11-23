@@ -60,7 +60,7 @@ You can use the [put-opted-out-number](https://docs.aws.amazon.com/cli/latest/re
 
 At the command line, enter the following command:
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 put-opted-out-number \
 > --opt-out-list-name {{optOutListName}} \
 > --opted-out-number {{+12065550123}}
@@ -96,7 +96,7 @@ You can use the [delete-opted-out-number](https://docs.aws.amazon.com/cli/latest
 
 At the command line, enter the following command:
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 delete-opted-out-number \
 > --opt-out-list-name {{optOutListName}} \
 > --opted-out-number {{+12065550123}}

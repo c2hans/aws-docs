@@ -8,6 +8,9 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following re
 
 **Topics**
 + [Apache Kafka Versions](kafka-versions.md)
++ [Assessment](clusters-clusterarn-assessments-assessmentarn.md)
++ [Assessment Findings](clusters-clusterarn-assessments-assessmentarn-findings.md)
++ [Assessments](clusters-clusterarn-assessments.md)
 + [BootstrapBrokers](clusters-clusterarn-bootstrap-brokers.md)
 + [Broker Count](clusters-clusterarn-nodes-count.md)
 + [Broker Storage](clusters-clusterarn-nodes-storage.md)
@@ -35,9 +38,12 @@ The Amazon Managed Streaming for Apache Kafka REST API includes the following re
 + [Monitoring Properties](clusters-clusterarn-monitoring.md)
 + [Reboot Broker](clusters-clusterarn-reboot-broker.md)
 + [Scram Secrets](clusters-clusterarn-scram-secrets.md)
++ [Stop Topic Reassignment](clusters-clusterarn-topic-reassignments-topicreassignmentoperationarn-stop.md)
 + [Tags](tags-resourcearn.md)
 + [Topic](clusters-clusterarn-topics-topicname.md)
 + [Topic Partitions](clusters-clusterarn-topics-topicname-partitions.md)
++ [Topic Reassignment](clusters-clusterarn-topic-reassignments-topicreassignmentoperationarn.md)
++ [Topic Reassignments](clusters-clusterarn-topic-reassignments.md)
 + [Topics](clusters-clusterarn-topics.md)
 + [UpdateStorage](clusters-clusterarn-storage.md)
 + [Vpc-connection](vpc-connection.md)

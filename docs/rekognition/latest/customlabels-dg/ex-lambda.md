@@ -63,7 +63,7 @@ Later you add the source code and optionally a layer to the Lambda function.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -94,7 +94,7 @@ Later you add the source code and optionally a layer to the Lambda function.
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -181,7 +181,7 @@ In this step, you add Python code to your Lambda function by using the Lambda co
 
 1. In **Code source**, replace the code in **lambda\_function.py** with the following:
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
 
@@ -313,7 +313,7 @@ For more information about invoking a Lambda function from your code, see [Invok
 
 1. Save the following code to a file named `client.py`.
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
 

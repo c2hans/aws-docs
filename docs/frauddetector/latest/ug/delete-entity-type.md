@@ -32,7 +32,7 @@ An entity type can be deleted in Amazon Fraud Detector console, using the [delet
 
 The following AWS SDK for Python (Boto3) example code deletes the entity type *customer* using the [DeleteEntityType](https://docs.aws.amazon.com/frauddetector/latest/api/API_DeleteEntityType.html) API.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

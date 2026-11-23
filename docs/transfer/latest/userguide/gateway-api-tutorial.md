@@ -176,7 +176,7 @@ The `{{role-id}}` is unique to the user role that you create. The policy attache
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

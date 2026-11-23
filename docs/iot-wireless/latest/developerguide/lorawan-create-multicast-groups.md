@@ -103,7 +103,7 @@ Alternatively, you can specify default session parameters, such as the downlink 
 
    **Contents of input.json**
 
-   ```
+   ```JSON
    {
       "Description": "Multicast group to send downlink payload and perform FUOTA.",
       "LoRaWAN": {
@@ -141,7 +141,7 @@ Alternatively, you can specify default session parameters, such as the downlink 
 
      **Contents of input.json**
 
-     ```
+     ```JSON
      {
           "QueryString":"DeviceProfileName: MyWirelessDevice AND DeviceProfileId: d6d8ef8e-7045-496d-b3f4-ebcaa1d564bf",
           "Tags": [

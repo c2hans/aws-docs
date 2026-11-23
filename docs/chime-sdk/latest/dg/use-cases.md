@@ -23,7 +23,7 @@ To implement the following use case, you need at least one phone number in your 
 
 When Amazon Chime SDK receives a call to the phone number specified in the rule, the PSTN audio service invokes a AWS Lambda function with the `NEW_INBOUND_CALL` invocation event type.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{1}},
@@ -56,7 +56,7 @@ Audio files have the following requirements:
 + You must use PCM WAV files of no more than 50 MB in size. The Amazon Chime SDK recommends 8 KHz mono.
 + The S3 metadata for each WAV file must contain `{'ContentType': 'audio/wav'}`.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions": [
@@ -101,7 +101,7 @@ Audio files have the following requirements:
 
 The SIP media application runs these actions on call leg A. Assuming the `PlayAudioAndGetDigits` action receives the digits, the SIP media application invokes the AWS Lambda function with the `ACTION_SUCCESSFUL` event type.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{2}},
@@ -138,7 +138,7 @@ The SIP media application runs these actions on call leg A. Assuming the `PlayAu
 
 You can program an AWS Lambda function to identify the caller based on the `CallDetails` data. You can also validate the meeting PIN received earlier. Assuming a correct PIN, you then use the [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeeting.html) and [CreateAttendee](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateAttendee.html) APIs to create the Amazon Chime SDK meeting and generate the join token used by the meeting attendee. The AWS Lambda function responds with the action to join the Amazon Chime SDK meeting.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions": [
@@ -154,7 +154,7 @@ You can program an AWS Lambda function to identify the caller based on the `Call
 
 Assuming the `JoinToken` is valid, the SIP media application joins the Amazon Chime SDK meeting and invokes a AWS Lambda function with the `ACTION_SUCCESSFUL` event, where `CallDetails` contains the data from the SIP media application and the Chime Media service (`LEG-B`)
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{3}},
@@ -206,7 +206,7 @@ If you want to stop running actions on the call or call leg at this point, you c
 
 After the caller hangs up, the SIP media application invokes the AWS Lambda function with the `HANGUP` event.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{4}},

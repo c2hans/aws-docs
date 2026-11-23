@@ -21,7 +21,7 @@ In the following policy, the ﬁrst permission, `aws-marketplace:ResolveCustomer
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -52,7 +52,7 @@ Use the following IAM policy for AMI products.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -81,7 +81,7 @@ Use the following IAM policy for container products.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

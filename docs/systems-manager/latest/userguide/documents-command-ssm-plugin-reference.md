@@ -10,7 +10,7 @@ Systems Manager determines the actions to perform on a managed instance by readi
 
 For plugins that accept String parameters, such as `aws:runShellScript` and `aws:runPowerShellScript`, the `interpolationType` parameter can be used to enhance security by treating parameter inputs as string literals rather than potentially executable commands. For example:
 
-```
+```json
 {
     "schemaVersion": "2.2",
     "description": "runShellScript with command strings stored as Parameter Store parameter",
@@ -79,7 +79,7 @@ Required: No
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 schemaVersion: '2.2'
 description: Shared inputs example
@@ -112,7 +112,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
    "schemaVersion": "2.2",
    "description": "Shared inputs example",
@@ -171,7 +171,7 @@ Install, repair, or uninstall applications on an EC2 instance. This plugin only 
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 schemaVersion: '2.2'
 description: aws:applications plugin
@@ -190,7 +190,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "schemaVersion":"2.2",
   "description":"aws:applications",
@@ -221,7 +221,7 @@ mainSteps:
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 runtimeConfig:
   aws:applications:
@@ -236,7 +236,7 @@ runtimeConfig:
 ------
 #### [ JSON ]
 
-```
+```json
 {
    "runtimeConfig":{
       "aws:applications":{
@@ -327,7 +327,7 @@ The destination where your log data is sent. You can add more sections with uniq
 ### Syntax
 <a name="cloudWatch-syntax"></a>
 
-```
+```json
 "runtimeConfig":{
         "aws:cloudWatch":{
             "settings":{
@@ -517,7 +517,7 @@ Required: Yes
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 schemaVersion: '2.2'
 description: aws:configureDocker
@@ -539,7 +539,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "schemaVersion": "2.2",
   "description": "aws:configureDocker plugin",
@@ -595,7 +595,7 @@ Available AWS packages for Linux operating systems include the following: `Amazo
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 schemaVersion: '2.2'
 description: aws:configurePackage
@@ -627,7 +627,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
    "schemaVersion": "2.2",
    "description": "aws:configurePackage",
@@ -711,7 +711,7 @@ Join an EC2 instance to a domain. This plugin runs on Linux and Windows Server o
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 schemaVersion: '2.2'
 description: aws:domainJoin
@@ -745,7 +745,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "schemaVersion": "2.2",
   "description": "aws:domainJoin",
@@ -795,7 +795,7 @@ mainSteps:
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 runtimeConfig:
   aws:domainJoin:
@@ -809,7 +809,7 @@ runtimeConfig:
 ------
 #### [ JSON ]
 
-```
+```json
 {
    "runtimeConfig":{
       "aws:domainJoin":{
@@ -888,7 +888,7 @@ For examples, see [Join an Amazon EC2 Instance to your AWS Managed Microsoft AD]
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 schemaVersion: '2.2'
 description: aws:downloadContent
@@ -911,7 +911,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "schemaVersion": "2.2",
   "description": "aws:downloadContent",
@@ -979,7 +979,7 @@ Required: Yes
 **Note**
 This `tokenInfo` field is the only SSM document plugin field that supports a SecureString parameter. SecureString parameters aren't supported for any other fields, nor for any other SSM document plugins.
 
-```
+```json
 {
     "owner":"TestUser",
     "repository":"{{GitHubTest}}",
@@ -1073,7 +1073,7 @@ Additionally, you can specify the following optional parameters:
 + path: The URL to the file or directory you want to download from Amazon S3.
 When downloading a file from an S3 bucket, the .etag files are generated in the download directory.
 
-```
+```json
 {
     "path": "https://s3.amazonaws.com/{{amzn-s3-demo-bucket}}/powershell/helloPowershell.ps1"
 }
@@ -1081,14 +1081,14 @@ When downloading a file from an S3 bucket, the .etag files are generated in the 
  **For sourceType `SSMDocument`, specify *one* of the following:**
 + name: The name and version of the document in the following format: `name:version`. Version is optional.
 
-  ```
+  ```json
   {
       "name": "Example-RunPowerShellScript:3"
   }
   ```
 + name: The ARN for the document in the following format: `arn:aws:ssm:{{region}}:{{account_id}}:document/{{document_name}}`
 
-  ```
+  ```json
   {
      "name":"arn:aws:ssm:us-east-2:3344556677:document/MySharedDoc"
   }
@@ -1113,7 +1113,7 @@ Install PowerShell modules on an Amazon EC2 instance. This plugin only runs on W
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 schemaVersion: '2.2'
 description: aws:psModule
@@ -1132,7 +1132,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "schemaVersion": "2.2",
   "description": "aws:psModule",
@@ -1162,7 +1162,7 @@ mainSteps:
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 runtimeConfig:
   aws:psModule:
@@ -1177,7 +1177,7 @@ runtimeConfig:
 ------
 #### [ JSON ]
 
-```
+```json
 {
    "runtimeConfig":{
       "aws:psModule":{
@@ -1239,7 +1239,7 @@ Required: No
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 schemaVersion: '2.2'
 description: aws:refreshAssociation
@@ -1259,7 +1259,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "schemaVersion": "2.2",
   "description": "aws:refreshAssociation",
@@ -1307,7 +1307,7 @@ Required: No
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 mainSteps:
 - action: aws:runDockerAction
@@ -1330,7 +1330,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
    "mainSteps":[
       {
@@ -1434,7 +1434,7 @@ Required: No
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 schemaVersion: '2.2'
 description: aws:runDocument
@@ -1455,7 +1455,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "schemaVersion": "2.2",
   "description": "aws:runDocument",
@@ -1515,7 +1515,7 @@ Run PowerShell scripts or specify the path to a script to run. This plugin runs 
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 schemaVersion: '2.2'
 description: aws:runPowerShellScript
@@ -1537,7 +1537,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "schemaVersion": "2.2",
   "description": "aws:runPowerShellScript",
@@ -1571,7 +1571,7 @@ mainSteps:
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 runtimeConfig:
   aws:runPowerShellScript:
@@ -1585,7 +1585,7 @@ runtimeConfig:
 ------
 #### [ JSON ]
 
-```
+```json
 {
    "runtimeConfig":{
       "aws:runPowerShellScript":{
@@ -1636,7 +1636,7 @@ Run Linux shell scripts or specify the path to a script to run. This plugin only
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 schemaVersion: '2.2'
 description: aws:runShellScript
@@ -1658,7 +1658,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "schemaVersion": "2.2",
   "description": "aws:runShellScript",
@@ -1692,7 +1692,7 @@ mainSteps:
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 runtimeConfig:
   aws:runShellScript:
@@ -1705,7 +1705,7 @@ runtimeConfig:
 ------
 #### [ JSON ]
 
-```
+```json
 {
    "runtimeConfig":{
       "aws:runShellScript":{
@@ -1761,7 +1761,7 @@ An instance can have only one inventory association configured at a time. If you
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 mainSteps:
 - action: aws:softwareInventory
@@ -1782,7 +1782,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
    "mainSteps":[
       {
@@ -1884,7 +1884,7 @@ Update the EC2Config service to the latest version or specify an older version. 
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 schemaVersion: '2.2'
 description: aws:updateAgent
@@ -1899,7 +1899,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "schemaVersion": "2.2",
   "description": "aws:updateAgent",
@@ -1924,7 +1924,7 @@ mainSteps:
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 runtimeConfig:
   aws:updateAgent:
@@ -1938,7 +1938,7 @@ runtimeConfig:
 ------
 #### [ JSON ]
 
-```
+```json
 {
    "runtimeConfig":{
       "aws:updateAgent":{
@@ -1992,7 +1992,7 @@ Update the SSM Agent to the latest version or specify an older version. This plu
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 schemaVersion: '2.2'
 description: aws:updateSsmAgent
@@ -2018,7 +2018,7 @@ mainSteps:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "schemaVersion": "2.2",
   "description": "aws:updateSsmAgent",
@@ -2055,7 +2055,7 @@ mainSteps:
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 runtimeConfig:
   aws:updateSsmAgent:
@@ -2068,7 +2068,7 @@ runtimeConfig:
 ------
 #### [ JSON ]
 
-```
+```json
 {
    "runtimeConfig":{
       "aws:updateSsmAgent":{

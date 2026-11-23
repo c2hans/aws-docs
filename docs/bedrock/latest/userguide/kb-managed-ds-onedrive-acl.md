@@ -47,7 +47,7 @@ ACL configuration is permanent. You cannot enable ACLs on a data source created 
 
 When ACLs are enabled for OneDrive, you must include a `certificateS3Path` in the `connectionConfiguration` pointing to a PKCS\#12 (`.p12`) certificate file in Amazon S3. This certificate is used for real-time ACL verification against the SharePoint REST API. The `certificateS3Path` is not required when ACLs are disabled.
 
-```
+```json
 "connectorParameters": {
     "type": "ONEDRIVE",
     "version": "1",

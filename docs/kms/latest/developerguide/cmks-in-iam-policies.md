@@ -26,7 +26,7 @@ For example, the following IAM policy statement allows the principal to call the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -53,7 +53,7 @@ To apply the permission to all KMS keys in a particular trusted AWS account, you
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -82,7 +82,7 @@ For example, the following policy statement uses a `Deny` effect to prohibit the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -107,7 +107,7 @@ The following policy statement uses a wildcard character alone to represent all 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

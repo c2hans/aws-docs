@@ -23,7 +23,7 @@ You can also perform operations using version 2 (V2) commands when using the V3 
 
 For example, to list your Amazon DynamoDB tables in `us-west-2`, you can do it with async/await.
 
-```
+```javascript
 import {
   DynamoDBClient,
   ListTablesCommand

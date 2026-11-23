@@ -8,13 +8,13 @@ Manage origin configurations that define source locations for images.
 
  **List Origins**
 
-```
+```http
 GET /origins?nextToken={token}
 ```
 
 Response:
 
-```
+```json
 {
   "items": [
     {
@@ -35,7 +35,7 @@ Response:
 
  **Create Origin**
 
-```
+```http
 POST /origins
 {
   "originName": "my-s3-origin",
@@ -51,13 +51,13 @@ You can define up to 20 `originHeaders` for an origin. Each header name can be u
 
  **Get Origin**
 
-```
+```http
 GET /origins/{originId}
 ```
 
  **Update Origin**
 
-```
+```http
 PUT /origins/{originId}
 {
   "originName": "updated-origin-name",
@@ -67,6 +67,6 @@ PUT /origins/{originId}
 
  **Delete Origin**
 
-```
+```http
 DELETE /origins/{originId}
 ```

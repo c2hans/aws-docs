@@ -44,7 +44,7 @@ The following is an example.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -68,7 +68,7 @@ Create a new policy for your role using the following example. Replace the accou
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

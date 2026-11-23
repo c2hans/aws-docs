@@ -542,7 +542,7 @@ The attribute is immutable. You set an attribute's mutability when you create th
 **Solution**
 Write or map only mutable attributes. To list the immutable attributes in your user pool, run the following AWS CLI command:
 
-```
+```bash
 aws cognito-idp describe-user-pool --user-pool-id {{user-pool-id}} --query 'UserPool.SchemaAttributes[?Mutable==`false`].Name'
 ```
 
@@ -656,7 +656,7 @@ A user is missing a value for an attribute that is required in your user pool, o
 + Sign in to your identity provider and review the attributes that it sends to Amazon Cognito. Verify that the IdP is configured to send the required attribute using the correct name.
 + For immutable attributes, run the following AWS CLI command to identify them:
 
-  ```
+  ```bash
   aws cognito-idp describe-user-pool --user-pool-id {{user-pool-id}} --query 'UserPool.SchemaAttributes[?Mutable==`false`].Name'
   ```
 + In the SAML attribute mappings of your IdP, delete any mapping that targets an immutable Amazon Cognito attribute. Alternately, update the destination attribute to a different, mutable attribute.

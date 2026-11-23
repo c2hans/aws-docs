@@ -36,7 +36,7 @@ The recommended method for handling SDK references is to download and install ju
 
       **On Linux and macOS:**
 
-      ```
+      ```ini
       <ItemGroup>
         <Reference Include="./AwsAssemblies/AWSSDK.Core.dll" />
         <Reference Include="./AwsAssemblies/AWSSDK.S3.dll" />
@@ -45,7 +45,7 @@ The recommended method for handling SDK references is to download and install ju
 
       **On Windows:**
 
-      ```
+      ```ini
       <ItemGroup>
         <Reference Include="AwsAssemblies\AWSSDK.Core.dll" />
         <Reference Include="AwsAssemblies\AWSSDK.S3.dll" />

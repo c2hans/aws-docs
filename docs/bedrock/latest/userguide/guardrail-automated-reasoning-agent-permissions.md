@@ -10,7 +10,7 @@ Update the `AmazonBedrockAgentBedrockApplyGuardrailPolicy` policy on your agent'
 
 The following example shows the complete statements list:
 
-```
+```json
     "Statement": [
         {
             "Sid": "AmazonBedrockAgentBedrockApplyGuardrailPolicyProd",

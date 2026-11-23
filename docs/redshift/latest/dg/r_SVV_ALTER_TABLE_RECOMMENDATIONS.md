@@ -27,7 +27,7 @@ SVV\_ALTER\_TABLE\_RECOMMENDATIONS is visible only to superusers. For more infor
 
 In the following example, the rows in the result show recommendations for distribution key and sort key. The rows also show whether the recommendations are eligible for Amazon Redshift to automatically apply them.
 
-```
+```sql
 select type, database, table_id, group_id, ddl, auto_eligible
 from svv_alter_table_recommendations;
 ```

@@ -47,7 +47,7 @@ Retrieves (queries) statistical data and other information about one or more S3 
 #### POST schema
 <a name="datasources-s3-request-body-post-example"></a>
 
-```
+```json
 {
   "criteria": {
   },
@@ -66,7 +66,7 @@ Retrieves (queries) statistical data and other information about one or more S3 
 #### DescribeBucketsResponse schema
 <a name="datasources-s3-response-body-describebucketsresponse-example"></a>
 
-```
+```json
 {
   "buckets": [
     {
@@ -167,7 +167,7 @@ Retrieves (queries) statistical data and other information about one or more S3 
 #### ValidationException schema
 <a name="datasources-s3-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -176,7 +176,7 @@ Retrieves (queries) statistical data and other information about one or more S3 
 #### ServiceQuotaExceededException schema
 <a name="datasources-s3-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -185,7 +185,7 @@ Retrieves (queries) statistical data and other information about one or more S3 
 #### AccessDeniedException schema
 <a name="datasources-s3-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -194,7 +194,7 @@ Retrieves (queries) statistical data and other information about one or more S3 
 #### ResourceNotFoundException schema
 <a name="datasources-s3-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -203,7 +203,7 @@ Retrieves (queries) statistical data and other information about one or more S3 
 #### ConflictException schema
 <a name="datasources-s3-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -212,7 +212,7 @@ Retrieves (queries) statistical data and other information about one or more S3 
 #### ThrottlingException schema
 <a name="datasources-s3-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -221,7 +221,7 @@ Retrieves (queries) statistical data and other information about one or more S3 
 #### InternalServerException schema
 <a name="datasources-s3-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

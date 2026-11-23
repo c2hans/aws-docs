@@ -93,7 +93,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of DeleteAgentActionGroup.
 
-```
+```json
 DELETE /agents/ABCDEFGHIJ/agentversions/1/actiongroups/ABCDEFGHIJ/ HTTP/1.1
 ```
 

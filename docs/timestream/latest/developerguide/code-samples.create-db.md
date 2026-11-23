@@ -14,7 +14,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java  ]
 
-```
+```java
    public void createDatabase() {
         System.out.println("Creating database");
         CreateDatabaseRequest request = new CreateDatabaseRequest();
@@ -31,7 +31,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java v2  ]
 
-```
+```java
     public void createDatabase() {
         System.out.println("Creating database");
         CreateDatabaseRequest request = CreateDatabaseRequest.builder().databaseName(DATABASE_NAME).build();
@@ -47,7 +47,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Go  ]
 
-```
+```go
 // Create database.
     createDatabaseInput := &timestreamwrite.CreateDatabaseInput{
         DatabaseName: aws.String(*databaseName),
@@ -68,7 +68,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Python  ]
 
-```
+```python
     def create_database(self):
         print("Creating Database")
         try:
@@ -87,7 +87,7 @@ The following snippet uses AWS SDK for JavaScript v3. For more information about
 
 Also see [Class CreateDatabaseCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-timestream-write/classes/createdatabasecommand.html) and [CreateDatabase](https://docs.aws.amazon.com/timestream/latest/developerguide/API_CreateDatabase.html).
 
-```
+```javascript
 import { TimestreamWriteClient, CreateDatabaseCommand } from "@aws-sdk/client-timestream-write";
 const writeClient = new TimestreamWriteClient({ region: "us-east-1" });
 
@@ -111,7 +111,7 @@ try {
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/sample_apps/js).
 
-```
+```javascript
 async function createDatabase() {
     console.log("Creating Database");
     const params = {
@@ -138,7 +138,7 @@ async function createDatabase() {
 ------
 #### [  .NET  ]
 
-```
+```cs
         public async Task CreateDatabase()
         {
             Console.WriteLine("Creating Database");

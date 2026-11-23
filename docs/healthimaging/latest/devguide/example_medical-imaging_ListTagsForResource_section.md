@@ -54,7 +54,7 @@ Output:
 
 **SDK for Java 2.x**
 
-```
+```java
     public static ListTagsForResourceResponse listMedicalImagingResourceTags(MedicalImagingClient medicalImagingClient,
             String resourceArn) {
         try {
@@ -79,7 +79,7 @@ Output:
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { ListTagsForResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -116,7 +116,7 @@ export const listTagsForResource = async (
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -144,7 +144,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -156,7 +156,7 @@ The following code instantiates the MedicalImagingWrapper object.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_resource_arn = 'arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012'
         oo_result = lo_mig->listtagsforresource( iv_resourcearn = iv_resource_arn ).

@@ -67,7 +67,7 @@ Adding an index never prevents a processing job from running. In either case the
 
 Set the indexed image as `ImageUri` in [AppSpecification](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AppSpecification.html):
 
-```
+```json
 "AppSpecification": {
   "ImageUri": "111122223333.dkr.ecr.us-east-1.amazonaws.com/repository-name:soci-indexed-image-tag",
   "ContainerEntrypoint": ["python3", "/opt/ml/processing/input/code/preprocessing.py"]
@@ -76,7 +76,7 @@ Set the indexed image as `ImageUri` in [AppSpecification](https://docs.aws.amazo
 
 With the SageMaker Python SDK:
 
-```
+```python
 from sagemaker.core.processing import ScriptProcessor
 
 processor = ScriptProcessor(

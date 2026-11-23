@@ -59,7 +59,7 @@ Create an Amazon Kinesis data stream and populate the records as follows:
 
 1. To write records to a Kinesis data stream in a production environment, we recommend using either the [Kinesis Producer Library](https://docs.aws.amazon.com/streams/latest/dev/developing-producers-with-kpl.html) or [Kinesis Data Streams API](https://docs.aws.amazon.com/streams/latest/dev/developing-producers-with-sdk.html). For simplicity, this example uses the following Python script to generate records. Run the code to populate the sample ticker records. This simple code continuously writes a group of six records with the same random `EVENT_TIME` and ticker symbol to the stream, over the course of one minute. Keep the script running so that you can generate the application schema in a later step.
 
-   ```
+   ```python
 
    import datetime
    import json

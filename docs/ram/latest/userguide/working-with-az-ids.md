@@ -29,7 +29,7 @@ You can use AZ IDs to determine the location of resources in one account relativ
 **To view the AZ IDs for the Availability Zones in your account**
 The following example command shows the AZ IDs for the Availability Zones in the us-west-2 Region and how they are mapped for the calling AWS account.
 
-```
+```bash
 $ aws ec2 describe-availability-zones \
     --region us-west-2
 {

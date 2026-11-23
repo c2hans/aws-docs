@@ -37,7 +37,7 @@ It is recommended for the role to have the following conditions and resource sco
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

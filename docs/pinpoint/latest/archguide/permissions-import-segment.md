@@ -22,7 +22,7 @@ To allow Amazon Pinpoint to assume the IAM role and perform the actions allowed 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

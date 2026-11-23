@@ -17,6 +17,8 @@ AWS Batch is a fully managed service that helps you run large-scale compute work
 
 ![AWS Batch reference architecture](https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/images/image1.png)
 
+*AWS Batch reference architecture*
+
  **Workflow steps**
 
 1.  User creates a container containing applications and their dependencies, uploads the container to the Amazon Elastic Container Registry or another container registry (for example, DockerHub), and creates a job definition to AWS Batch.

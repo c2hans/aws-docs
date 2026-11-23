@@ -14,7 +14,7 @@ Each SVM has four endpoints that are used to access data or to manage the SVM us
 + `Management` – For managing SVMs using the NetApp ONTAP CLI or API, or NetApp Console
 
 **Note**
-The iSCSI protocol is available on all file systems that have 6 or fewer [high-availability pairs (HA) pairs](HA-pairs.md). The NVMe/TCP protocol is available on second-generation file systems that have 6 or fewer HA pairs.
+The iSCSI protocol is available on all file systems that have 6 or fewer [high-availability pairs (HA) pairs](HA-pairs.md). The NVMe/TCP protocol is available on second-generation and third-generation file systems that have 6 or fewer HA pairs.
 
 **Topics**
 + [Supported clients](#supported-clients-fsx)

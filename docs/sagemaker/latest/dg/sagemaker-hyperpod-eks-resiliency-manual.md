@@ -26,7 +26,7 @@ To reboot a node you can use the BatchRebootClusterNodes API.
 
  Here is an example of running the reboot operation on two Instances of a cluster using the AWS Command Line Interface:
 
-```
+```sh
  aws sagemaker batch-reboot-cluster-nodes \
         --cluster-name arn:aws:sagemaker:ap-northeast-1:123456789:cluster/test-cluster \
         --node-ids i-0123456789abcdef0 i-0fedcba9876543210
@@ -38,7 +38,7 @@ To replace a node you can use the BatchReplaceClusterNodes API as follows
 
  Here is an example of running the replace operation on two Instances of a cluster using the AWS Command Line Interface:
 
-```
+```sh
  aws sagemaker batch-replace-cluster-nodes \
         --cluster-name arn:aws:sagemaker:ap-northeast-1:123456789:cluster/test-cluster \
         --node-ids i-0123456789abcdef0 i-0fedcba9876543210

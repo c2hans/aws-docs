@@ -10,7 +10,7 @@ This topic describes how to create, list, delete, and get the URL of an Amazon S
 
 The `sqsClient` variable that is used in the following examples can be created from the following snippet.
 
-```
+```java
 SqsClient sqsClient = SqsClient.create();
 ```
 
@@ -23,7 +23,7 @@ Use the `SqsClient’s` `createQueue` method, and provide a `[CreateQueueRequest
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.*;
@@ -32,7 +32,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
             CreateQueueRequest createQueueRequest = CreateQueueRequest.builder()
                 .queueName(queueName)
                 .build();
@@ -53,7 +53,7 @@ You can supply a queue name prefix to the `[ListQueuesRequest](https://sdk.amazo
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.*;
@@ -62,7 +62,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
         String prefix = "que";
 
         try {
@@ -88,7 +88,7 @@ The following code shows how to get the URL for a queue by calling the `SqsClien
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.*;
@@ -97,7 +97,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
             GetQueueUrlResponse getQueueUrlResponse =
                 sqsClient.getQueueUrl(GetQueueUrlRequest.builder().queueName(queueName).build());
             String queueUrl = getQueueUrlResponse.queueUrl();
@@ -113,7 +113,7 @@ Provide the queue’s [URL](#sqs-get-queue-url) to the `[DeleteQueueRequest](htt
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.*;
@@ -122,7 +122,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
     public static void deleteSQSQueue(SqsClient sqsClient, String queueName) {
 
         try {

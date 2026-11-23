@@ -10,7 +10,7 @@ Each operation builder has a `customize` method available to create a `Customiza
 
 The following example shows the creation of an Amazon S3 client that calls two operations, the second of which is overridden to send to a different AWS Region. All of Amazon S3's object invocations use the `us-east-1` region except for when the API call is explicitly overridden to use the modified `us-west-2`.
 
-```
+```rust
 use aws_config::{BehaviorVersion, Region};
 
 let config = aws_config::defaults(BehaviorVersion::latest())

@@ -25,7 +25,7 @@ Initialize a Greengrass component folder from a component template or community 
 If the component uses the [zip build system](gdk-cli-configuration-file.md#gdk-cli-configuration-file-build-system), the GDK CLI zips certain files in the component's folder into a zip file with the same name as the component folder. For example, if the component folder's name is `HelloWorld`, the GDK CLI creates a zip file named `HelloWorld.zip`. In the component recipe, the zip artifact name must match the name of the component folder. If you use GDK CLI version 1.0.0 on a Windows device, the component folder and zip file names must contain only lowercase letters.
 If you initialize a template or community component that uses the zip build system to a folder with a different name than the template or component, you must change the zip artifact name in the component recipe. Update the `Artifacts` and `Lifecycle` definitions such that the zip file name matches the name of the component folder. The following example highlights the zip file name in the `Artifacts` and `Lifecycle` definitions.
 
-```
+```json
 {
   {{...}}
   "Manifests": [
@@ -47,7 +47,7 @@ If you initialize a template or community component that uses the zip build syst
 }
 ```
 
-```
+```python
 ---
 {{...}}
 Manifests:

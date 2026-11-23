@@ -96,7 +96,7 @@ Create a new text file in this directory named `application.py` with the followi
 
 **Example `~/eb-flask/application.py`**
 
-```
+```python
 from flask import Flask
 
 # print a nice greeting.

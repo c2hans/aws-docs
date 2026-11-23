@@ -65,7 +65,7 @@ This solution was tested using the following components:
 
 1. On the **Program.cs** tab, paste the following code:
 
-   ```
+   ```cs
     1. using Amazon;
     2. using System;
     3. using System.Collections.Generic;
@@ -214,7 +214,7 @@ The following procedure shows you how to use [Eclipse IDE for Java EE Developers
 
 1. Replace the entire contents of `AmazonSESSample.java` with the following code:
 
-   ```
+   ```java
     1. package com.amazonaws.samples;
     2.
     3. import java.io.IOException;
@@ -321,7 +321,7 @@ This topic shows how to use the [AWS SDK for PHP](https://aws.amazon.com/sdk-for
 
 1. In a text editor, create a file named `amazon-ses-sample.php`. Paste the following code:
 
-   ```
+   ```php
     1. <?php
     2.
     3. // If necessary, modify the path in the require statement below to refer to the
@@ -440,7 +440,7 @@ This topic shows how to use the [AWS SDK for Ruby](https://aws.amazon.com/sdk-fo
 
 1. In a text editor, create a file named `amazon-ses-sample.rb`. Paste the following code into the file:
 
-   ```
+   ```rb
     1. require 'aws-sdk'
     2.
     3. # Replace sender@example.com with your "From" address.
@@ -546,7 +546,7 @@ This topic shows how to use the [AWS SDK for Python (Boto3)](https://aws.amazon.
 
 1. In a text editor, create a file named `amazon-ses-sample.py`. Paste the following code into the file:
 
-   ```
+   ```py
     1. import boto3
     2. from botocore.exceptions import ClientError
     3.

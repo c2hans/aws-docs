@@ -61,7 +61,7 @@ To view a code example for using the `$[<identifier>]` operator, choose the tab 
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function updateDocument() {
@@ -87,7 +87,7 @@ updateDocument();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def update_document():

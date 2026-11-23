@@ -52,7 +52,7 @@ For more information, see [Creating and Managing Streams](https://docs.aws.amazo
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
     def describe_stream_summary(self, stream_name):
         """
         Provides a summarized description of a Kinesis data stream.

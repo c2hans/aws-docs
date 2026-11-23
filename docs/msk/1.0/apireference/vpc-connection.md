@@ -52,7 +52,7 @@ Enable CORS by returning correct headers.
 #### POST schema
 <a name="vpc-connection-request-body-post-example"></a>
 
-```
+```json
 {
   "clientSubnets": [
     "string"
@@ -74,7 +74,7 @@ Enable CORS by returning correct headers.
 #### CreateVpcConnectionResponse schema
 <a name="vpc-connection-response-body-createvpcconnectionresponse-example"></a>
 
-```
+```json
 {
   "vpcConnectionArn": "string",
   "clientSubnets": [
@@ -95,7 +95,7 @@ Enable CORS by returning correct headers.
 #### Error schema
 <a name="vpc-connection-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

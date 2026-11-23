@@ -11,7 +11,7 @@ Use the Durable Execution testing SDKs to run and inspect executions both locall
 
 When you use the cloud runner or `sam remote invoke` to test a deployed durable function, the calling principal needs permission to invoke the function and to read its execution history. Attach the following permissions to your test caller:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

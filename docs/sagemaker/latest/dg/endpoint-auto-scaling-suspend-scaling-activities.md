@@ -24,7 +24,7 @@ After you configure auto scaling, you have the following options if you need to 
 
   The following is an example of a target tracking configuration for a scaling policy that will scale out but not scale in.
 
-  ```
+  ```json
   {
       "TargetValue": {{70.0}},
       "PredefinedMetricSpecification":

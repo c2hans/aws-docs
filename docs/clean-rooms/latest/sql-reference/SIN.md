@@ -29,7 +29,7 @@ A `DOUBLE PRECISION` number in radians.
 
 To return the sine of `-PI`, use the following example.
 
-```
+```sql
 SELECT SIN(-PI());
 
 +-------------------------+

@@ -15,7 +15,7 @@ The reason for this error is that the account has never used the [AWS AppSync](h
 
 You can also go to [AWS CloudShell](https://aws.amazon.com/cloudshell/) or the local terminal and run the following AWS CLI command to Link AWS AppSync Role
 
-```
+```bash
 aws iam create-service-linked-role --aws-service-name appsync.amazonaws.com
 ```
 
@@ -42,7 +42,7 @@ Fluent-bit agent reports PutRecords API responded with error='InvalidSignatureEx
 
 Restart the fluent-bit agent. For example, on EC2 with Amazon Linux2, run the following command:
 
-```
+```bash
 sudo service fluent-bit restart
 ```
 

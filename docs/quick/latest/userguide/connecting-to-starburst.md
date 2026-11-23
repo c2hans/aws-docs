@@ -78,7 +78,7 @@ The following key/value pairs are required for token-based OAuth secrets:
 
 After you create a secret in Secrets Manager that contains your Starburst OAuth credentials and have connected your Quick account to Secrets Manager, you can establish a data source connection between Quick Sight and Starburst with the Quick Sight APIs and SDK. The following example creates a Starburst data source connection using token OAuth client credentials.
 
-```
+```json
 {
     "AwsAccountId": "{{AWSACCOUNTID}}",
     "DataSourceId": "{{DATASOURCEID}}",

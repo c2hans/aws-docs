@@ -18,7 +18,7 @@ When you query system tables, follow these practices:
 ## Example Anti-pattern vs. Recommended Queries
 <a name="r_QUERY_LIST-examples"></a>
 
-```
+```sql
 -- Avoid:
 SELECT * FROM svv_all_columns;
 
@@ -26,7 +26,7 @@ SELECT * FROM svv_all_columns;
 SELECT * FROM svv_all_columns WHERE database_name = 'dev' and schema_name = 'public' AND table_name = 'sales';
 ```
 
-```
+```sql
 -- Avoid:
 SELECT * FROM svv_all_columns WHERE LOWER(schema_name) = 'public';
 
@@ -34,7 +34,7 @@ SELECT * FROM svv_all_columns WHERE LOWER(schema_name) = 'public';
 SELECT * FROM svv_all_columns WHERE schema_name = 'public' AND table_name LIKE 'sales%';
 ```
 
-```
+```sql
 -- Avoid:
 SELECT * FROM svv_all_columns WHERE database_name || '.' || schema_name || '.' || table_name = 'dev.public.sales';
 
@@ -42,7 +42,7 @@ SELECT * FROM svv_all_columns WHERE database_name || '.' || schema_name || '.' |
 SELECT * FROM svv_all_columns WHERE database_name = 'dev' and schema_name = 'public' AND table_name = 'sales';
 ```
 
-```
+```sql
 -- Avoid:
 SELECT * FROM svv_all_columns WHERE CONCAT(database_name, '.', schema_name) = 'dev.public';
 

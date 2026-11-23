@@ -24,7 +24,7 @@ The following example template creates a virtual private cloud (VPC) and Refacto
 
 **Example YAML Refactor Spaces template**
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: This creates resources in one account.
 Resources:

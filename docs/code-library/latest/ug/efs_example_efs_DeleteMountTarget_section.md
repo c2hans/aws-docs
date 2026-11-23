@@ -29,7 +29,7 @@ For more information, see [Creating mount targets](https://docs.aws.amazon.com/e
 **Tools for PowerShell V4**
 **Example 1: Deletes the specified mount target. You are prompted for confirmation before the operation proceeds. To suppress the prompt use the `-Force` switch. Note that this operation forcibly breaks any mounts of the file system via the target - you may want to consider unmounting the file system before running this command, if feasible.**
 
-```
+```powershell
 Remove-EFSMountTarget -MountTargetId fsmt-1a2b3c4d
 ```
 +  For API details, see [DeleteMountTarget](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -37,7 +37,7 @@ Remove-EFSMountTarget -MountTargetId fsmt-1a2b3c4d
 **Tools for PowerShell V5**
 **Example 1: Deletes the specified mount target. You are prompted for confirmation before the operation proceeds. To suppress the prompt use the `-Force` switch. Note that this operation forcibly breaks any mounts of the file system via the target - you may want to consider unmounting the file system before running this command, if feasible.**
 
-```
+```powershell
 Remove-EFSMountTarget -MountTargetId fsmt-1a2b3c4d
 ```
 +  For API details, see [DeleteMountTarget](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

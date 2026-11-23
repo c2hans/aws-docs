@@ -36,7 +36,7 @@ For more information, see [Using Resource-based Policies for AWS Lambda](https:/
 **Tools for PowerShell V4**
 **Example 1: This sample displays the Function policy of the Lambda function**
 
-```
+```powershell
 Get-LMPolicy -FunctionName test -Select Policy
 ```
 **Output:**
@@ -49,7 +49,7 @@ Get-LMPolicy -FunctionName test -Select Policy
 **Tools for PowerShell V5**
 **Example 1: This sample displays the Function policy of the Lambda function**
 
-```
+```powershell
 Get-LMPolicy -FunctionName test -Select Policy
 ```
 **Output:**

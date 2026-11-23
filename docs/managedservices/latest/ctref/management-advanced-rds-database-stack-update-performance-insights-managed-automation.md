@@ -143,7 +143,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-rds-database-stack-update-performance-insights-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "DBIdentifierArn": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance",
   "PerformanceInsights": "true"
@@ -153,7 +153,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-rds-database-stack-update-performance-insights-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "DBIdentifierArn": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance",
   "PerformanceInsights": "true",

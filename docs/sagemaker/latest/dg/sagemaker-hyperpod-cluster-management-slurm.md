@@ -74,7 +74,7 @@ When you write a [CreateCluster](https://docs.aws.amazon.com/sagemaker/latest/AP
 
 Use [`aws sagemaker add-tags`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/add-tags.html) as follows.
 
-```
+```sh
 aws sagemaker add-tags --resource-arn {{cluster_ARN}} --tags Key={{string}},Value={{string}}
 ```
 
@@ -82,7 +82,7 @@ aws sagemaker add-tags --resource-arn {{cluster_ARN}} --tags Key={{string}},Valu
 
 Use [`aws sagemaker delete-tags`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/delete-tags.html) as follows.
 
-```
+```sh
 aws sagemaker delete-tags --resource-arn {{cluster_ARN}} --tag-keys {{"tag_key"}}
 ```
 
@@ -90,6 +90,6 @@ aws sagemaker delete-tags --resource-arn {{cluster_ARN}} --tag-keys {{"tag_key"}
 
 Use [`aws sagemaker list-tags`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/list-tags.html) as follows.
 
-```
+```sh
 aws sagemaker list-tags --resource-arn {{cluster_ARN}}
 ```

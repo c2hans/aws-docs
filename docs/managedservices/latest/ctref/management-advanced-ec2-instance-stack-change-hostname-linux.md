@@ -142,7 +142,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-ec2-instance-stack-change-hostname-linux-ex-min"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-ChangeHostname",
   "Region" : "us-east-1",
@@ -160,7 +160,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-ec2-instance-stack-change-hostname-linux-ex-max"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-ChangeHostname",
   "Region" : "us-east-1",

@@ -22,7 +22,7 @@ Complete the following steps to delete the `scene-intelligence-with-rosbag-on-aw
 
 Determine whether the AWS Command Line Interface (AWS CLI) is available in your environment. For installation instructions, see [What Is the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS CLI User Guide*. After confirming that the AWS CLI is available, run the following command.
 
-```
+```bash
 $ aws cloudformation delete-stack --stack-name scene-intelligence-with-rosbag-on-aws-create
 
 $ aws cloudformation wait stack-delete-complete --stack-name scene-intelligence-with-rosbag-on-aws-create

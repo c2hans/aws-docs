@@ -17,7 +17,7 @@ Users should consult the documentation of the the Java platform they are using w
 
 Using OpenJDK, the following code shows the use of [SSLContext](https://devdocs.io/openjdk~17/java.base/javax/net/ssl/sslcontext#getSupportedSSLParameters()) to print which TLS/SSL versions are supported.
 
-```
+```java
 System.out.println(Arrays.toString(SSLContext.getDefault().getSupportedSSLParameters().getProtocols()));
 ```
 
@@ -31,7 +31,7 @@ To see the SSL handshake in action and what version of TLS is used, you can use 
 
 For example, run a Java applications that uses TLS.
 
-```
+```java
 java app.jar -Djavax.net.debug=ssl:handshake
 ```
 
@@ -60,7 +60,7 @@ The SDK for Java always prefers the latest TLS version supported by the platform
 
 For the Apache, Netty, and URL Connection HTTP clients, which use the Java TLS stack, use the system property `jdk.tls.client.protocols`. For example, to enforce TLS 1.3 for SDK service clients, provide the following system property.
 
-```
+```java
 java -Djdk.tls.client.protocols=TLSv1.3 -jar app.jar
 ```
 
@@ -78,7 +78,7 @@ Uses the platform's default TLS version negotiation behavior.
 
 The following example creates a synchronous AWS CRT HTTP client that enforces TLS 1.3 as the minimum version.
 
-```
+```java
 import software.amazon.awssdk.http.crt.AwsCrtHttpClient;
 import software.amazon.awssdk.http.crt.TlsVersion;
 
@@ -89,7 +89,7 @@ AwsCrtHttpClient httpClient = AwsCrtHttpClient.builder()
 
 The following example creates an asynchronous AWS CRT HTTP client that enforces TLS 1.3 as the minimum version.
 
-```
+```java
 import software.amazon.awssdk.http.crt.AwsCrtAsyncHttpClient;
 import software.amazon.awssdk.http.crt.TlsVersion;
 
@@ -100,7 +100,7 @@ AwsCrtAsyncHttpClient asyncHttpClient = AwsCrtAsyncHttpClient.builder()
 
 You can then pass the configured HTTP client to an AWS service client.
 
-```
+```java
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.http.crt.AwsCrtHttpClient;
 import software.amazon.awssdk.http.crt.TlsVersion;

@@ -91,14 +91,14 @@ During installation, the component adds a symbolic link to `greengrass-cli` in t
 ------
 #### [ Linux or Unix ]
 
-```
+```bash
 {{/greengrass/v2}}/bin/greengrass-cli help
 ```
 
 ------
 #### [ Windows ]
 
-```
+```cmd
 {{C:\greengrass\v2}}\bin\greengrass-cli help
 ```
 

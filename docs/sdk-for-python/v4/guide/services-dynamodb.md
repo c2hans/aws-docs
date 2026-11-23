@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/services-dynamod
 
 Install the `aws-sdk-dynamodb` package before you run the examples.
 
-```
+```bash
 python -m pip install aws-sdk-dynamodb
 ```
 
@@ -23,13 +23,13 @@ Configure an AWS Region and credentials before you run the examples. For more in
 
  **Imports**
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient, DynamoDBConfig
 ```
 
  **Code**
 
-```
+```python
 def create_client() -> DynamoDBClient:
     config = DynamoDBConfig.resolve()
     return DynamoDBClient(config=config)

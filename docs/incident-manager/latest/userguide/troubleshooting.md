@@ -24,7 +24,7 @@ If you encounter issues while using AWS Systems Manager Incident Manager, you ca
 **Problem 3**: The secrets doesn't have a resource-based policy attached that allows access to the Incident Manager service principal, `ssm-incidents.amazonaws.com`.
 + **Solution**: Create or update the resource-based policy for the secret and include the following permission:
 
-  ```
+  ```json
   {
       "Effect": "Allow",
       "Principal": {

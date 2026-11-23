@@ -124,7 +124,7 @@ AWS_BEARER_TOKEN_BEDROCK="<provide your Bedrock API key>"
 
 **Step 5 - Run your first inference request:** This model uses `StartAsyncInvoke`. Save the file as `bedrock-first-request.py`
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-runtime', region_name='us-east-1')

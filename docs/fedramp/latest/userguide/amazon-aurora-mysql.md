@@ -316,7 +316,7 @@ Choose the appropriate policy based on your role:
 
  **Testing this policy:**
 
-```
+```bash
 # Verify read access works
 aws rds describe-db-instances
 aws rds describe-db-clusters
@@ -327,7 +327,7 @@ aws rds modify-db-instance --db-instance-identifier test-db
 
  **Policy JSON:**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -361,7 +361,7 @@ aws rds modify-db-instance --db-instance-identifier test-db
 
  **Testing this policy:**
 
-```
+```bash
 # Verify operator access works (requires MFA)
 aws rds modify-db-cluster --db-cluster-identifier <cluster-id> --apply-immediately
 
@@ -371,7 +371,7 @@ aws rds delete-db-cluster --db-cluster-identifier <cluster-id>
 
  **Policy JSON:**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -412,7 +412,7 @@ aws rds delete-db-cluster --db-cluster-identifier <cluster-id>
 
  **Testing this policy:**
 
-```
+```bash
 # Verify full admin access works (requires MFA)
 aws rds create-db-cluster --db-cluster-identifier new-cluster --engine aurora-mysql
 aws rds delete-db-cluster --db-cluster-identifier old-cluster --skip-final-snapshot
@@ -420,7 +420,7 @@ aws rds delete-db-cluster --db-cluster-identifier old-cluster --skip-final-snaps
 
  **Policy JSON:**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -457,7 +457,7 @@ The below are several items you should consider implementing.
 
    Create dedicated KMS key for encrypting Aurora MySQL cluster
 
-   ```
+   ```bash
    # Create KMS key for Aurora encryption
    aws kms create-key --description 'Aurora MySQL Encryption Key' --key-usage ENCRYPT_DECRYPT
    # Create alias for the key
@@ -468,7 +468,7 @@ The below are several items you should consider implementing.
 
    Create Aurora cluster with encryption enabled and secure master user configuration
 
-   ```
+   ```bash
    # Create encrypted Aurora MySQL cluster
    aws rds create-db-cluster \
      --db-cluster-identifier my-aurora-cluster \
@@ -486,7 +486,7 @@ The below are several items you should consider implementing.
 
    Enable SSL enforcement and comprehensive audit logging
 
-   ```
+   ```bash
    # Create parameter group with SSL enforcement
    aws rds create-db-cluster-parameter-group \
      --db-cluster-parameter-group-name aurora-mysql-secure \
@@ -519,7 +519,7 @@ Amazon Aurora MySQL requires implementation of privileged account security contr
 
    Configure Amazon Aurora MySQL with minimal required permissions for administrative accounts
 
-   ```
+   ```bash
    # Create least privilege IAM policy for Amazon Aurora MySQL administration
    aws iam create-policy --policy-name ServiceAdminPolicy --policy-document file://admin-policy.json
    # Attach policy to administrative role
@@ -530,7 +530,7 @@ Amazon Aurora MySQL requires implementation of privileged account security contr
 
    Require MFA for all privileged operations and administrative access
 
-   ```
+   ```bash
    # Create MFA-required policy condition
    # Add MFA condition to administrative policies
    # Verify MFA enforcement for privileged operations
@@ -540,7 +540,7 @@ Amazon Aurora MySQL requires implementation of privileged account security contr
 
    Enable comprehensive logging and monitoring of all privileged account activities
 
-   ```
+   ```bash
    # Enable CloudTrail for API logging
    aws cloudtrail create-trail --name ServicePrivilegedAccess --s3-bucket-name audit-logs
    # Configure CloudWatch alarms for privileged operations
@@ -596,7 +596,7 @@ Export Aurora MySQL configuration using AWS CLI describe commands in JSON format
 
  **API Command:**
 
-```
+```bash
 Configure via AWS RDS APIs for Aurora MySQL cluster management
 ```
 

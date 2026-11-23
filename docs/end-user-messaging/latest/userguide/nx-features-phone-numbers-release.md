@@ -30,7 +30,7 @@ To release a phone number from your AWS End User Messaging account using the AWS
 
 You can use the [release-phone-number](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/release-phone-number.html) CLI to *release* phone numbers from your account.
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 release-phone-number \
 > --phone-number-id {{phoneNumberId}}
 ```

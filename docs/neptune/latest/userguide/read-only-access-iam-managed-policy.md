@@ -14,7 +14,7 @@ This policy was updated on 2022-07-21 to include read-only data-access permissio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

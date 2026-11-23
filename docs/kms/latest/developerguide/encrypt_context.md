@@ -45,7 +45,7 @@ The [kms:EncryptionContext:](conditions-kms.md#conditions-kms-encryption-context
 
 For example, the following key policy statement allows the `RoleForExampleApp` role to use the KMS key in `Decrypt` operations. It uses the `kms:EncryptionContext:context-key` condition key to allow this permission only when the encryption context in the request includes an `AppName:ExampleApp` encryption context pair.
 
-```
+```json
 {
   "Effect": "Allow",
   "Principal": {
@@ -81,7 +81,7 @@ $ aws kms create-grant \
 
 A request like the following from the grantee principal would satisfy the `EncryptionContextEquals` constraint.
 
-```
+```bash
 $ aws kms generate-data-key \
     --key-id 1234abcd-12ab-34cd-56ef-1234567890ab \
     --key-spec AES_256 \

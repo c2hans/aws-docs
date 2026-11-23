@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Conte
 
 # ContentRedaction
 
-Makes it possible to redact or flag specified personally identifiable information (PII) in your transcript. If you use `ContentRedaction`, you must also include the sub-parameters: `RedactionOutput` and `RedactionType`. You can optionally include `PiiEntityTypes` to choose which types of PII you want to redact.
+Makes it possible to redact specified personally identifiable information (PII) in your transcript. If you use `ContentRedaction`, you must also include the sub-parameters: `RedactionOutput` and `RedactionType`. You can optionally include `PiiEntityTypes` to choose which types of PII you want to redact.
 
 ## Contents
 <a name="API_ContentRedaction_Contents"></a>
@@ -12,7 +12,7 @@ Makes it possible to redact or flag specified personally identifiable informatio
  ** RedactionOutput **   <a name="transcribe-Type-ContentRedaction-RedactionOutput"></a>
 Specify if you want only a redacted transcript, or if you want a redacted and an unredacted transcript.
 When you choose `redacted` Amazon Transcribe creates only a redacted transcript.
-When you choose `redacted_and_unredacted` Amazon Transcribe creates a redacted and an unredacted transcript (as two separate files).
+When you choose `redacted_and_unredacted` Amazon Transcribe creates a redacted and an unredacted transcript. For batch jobs, Amazon Transcribe creates two separate files. For `TranscribeAudio`, Amazon Transcribe returns them in `RedactedResults` and `Results`, or writes them as two separate files if you use `OutputConfiguration`.
 Type: String
 Valid Values: `redacted | redacted_and_unredacted`
 Required: Yes

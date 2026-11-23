@@ -78,7 +78,7 @@ nitro-cli build-enclave --docker-uri {{sample:latest}} --output-file {{sample.ei
 
 **Output**
 
-```
+```json
 Enclave Image successfully created.
 {
   "Measurements": {
@@ -100,7 +100,7 @@ nitro-cli build-enclave --docker-uri {{sample:latest}} --output-file {{sample.ei
 
 **Output**
 
-```
+```json
 Enclave Image successfully created.{
 "Measurements": {
 "HashAlgorithm": "Sha384 { ... }",

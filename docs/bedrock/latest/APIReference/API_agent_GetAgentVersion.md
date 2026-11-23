@@ -140,7 +140,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of GetAgentVersion.
 
-```
+```json
 GET /agents/agentId/agentversions/agentVersion/ HTTP/1.1
 ```
 

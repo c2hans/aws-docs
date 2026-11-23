@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 
 The following is an example of the specifications required to create a single-node deployment with SAP software installed:
 
-```
+```json
 {
     "applicationName": "ExampleApp",
     "DisableDeploymentRollback": "Yes",
@@ -53,7 +53,7 @@ The following is an example of the specifications required to create a single-no
 
 The following is an example of the specifications required to create a single-node deployment with only infrastructure resources:
 
-```
+```json
 {
     "applicationName": "ExampleApp2",
     "DisableDeploymentRollback": "Yes",

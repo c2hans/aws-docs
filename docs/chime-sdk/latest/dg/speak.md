@@ -22,7 +22,7 @@ Use of Amazon Polly is subject to the [ AWS Service Terms ](https://aws.amazon.c
 
 The following example shows a typical use of the `Speak` action.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions":[
@@ -82,7 +82,7 @@ The following example shows a typical use of the `Speak` action.
 
 The following example shows a typical `ACTION_SUCCESSFUL` event for an action which synthesizes the text "Hello World" into speech, in English, using the Amazon Polly's `Joanna` voice.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{3}},
@@ -109,7 +109,7 @@ The following example shows a typical `ACTION_SUCCESSFUL` event for an action wh
 
 The following example shows a typical `ACTION_FAILED` event for the same event used in the previous example.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence":{{2}},

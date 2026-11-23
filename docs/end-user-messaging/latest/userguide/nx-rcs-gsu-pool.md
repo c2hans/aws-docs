@@ -26,7 +26,7 @@ To create a pool from the console or the AWS CLI, choose the tab that matches ho
 
 Use the [create-pool](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/create-pool.html) command, passing your AWS RCS Agent as {{originationIdentity}}. To add the SMS numbers for fallback, use [associate-origination-identity](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/associate-origination-identity.html).
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 create-pool \
 > --origination-identity {{rcsAgentId}} \
 > --iso-country-code {{XX}} \
@@ -35,7 +35,7 @@ $ aws pinpoint-sms-voice-v2 create-pool \
 
 To add an SMS number to the pool for fallback, use [associate-origination-identity](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/associate-origination-identity.html). Replace {{poolId}} with the pool and {{originationIdentity}} with the SMS number to add.
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 associate-origination-identity \
 > --pool-id {{poolId}} \
 > --origination-identity {{originationIdentity}} \

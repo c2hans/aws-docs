@@ -9,7 +9,7 @@ Defines an AWS network service (NS) node.
 ## Syntax
 <a name="node-ns-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.NS:
   properties:
     descriptor\_id: String
@@ -40,7 +40,7 @@ Type: String
 ## Example
 <a name="node-ns-example"></a>
 
-```
+```yaml
 SampleNS:
   type: tosca.nodes.AWS.NS
   properties:

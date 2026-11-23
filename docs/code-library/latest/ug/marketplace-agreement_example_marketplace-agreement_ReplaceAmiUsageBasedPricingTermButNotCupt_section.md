@@ -14,7 +14,7 @@ The following code examples show how to replace an AMI usage-based pricing term 
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -225,7 +225,7 @@ public class ReplaceAmiUsageBasedPricingTermButNotCupt {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     CreateAgreementRequestCommand,
@@ -405,7 +405,7 @@ replaceAmiUsageWhenCuptExists();
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 """
 Demonstrates how to replace an AMI agreement with usageBasedPricingTerm with a new offer while
 the agreement with ConfigurableUpfrontPricingTerm (CUPT) is still active, using the

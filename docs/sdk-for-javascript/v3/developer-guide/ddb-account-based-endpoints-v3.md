@@ -17,7 +17,7 @@ If you want to opt out of the account-based routing, you have the following opti
 
 The following snippet is an example of how to disable account-based routing by configuring a DynamoDB service client:
 
-```
+```javascript
 const ddbClient = new DynamoDBClient({
   region: "us-west-2",
   accountIdEndpointMode: "disabled" // Disable account ID in the endpoint

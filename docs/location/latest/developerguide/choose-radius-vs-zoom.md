@@ -14,7 +14,7 @@ In this example, you will create a map image of Sri Lanka using the `radius` par
 ------
 #### [ Request URL ]
 
-```
+```terminal
 https://maps.geo.eu-central-1.amazonaws.com/v2/static/map?style=Satellite&width=700&height=700&center=80.60596,7.76671&radius=235000&scale-unit=KilometersMiles&key={{API_KEY}}
 ```
 
@@ -33,7 +33,7 @@ In this example, you will create a map image of Sri Lanka using the `zoom` param
 ------
 #### [ Request URL ]
 
-```
+```terminal
 https://maps.geo.eu-central-1.amazonaws.com/v2/static/map?style=Satellite&width=700&height=700&zoom=8&center=80.60596,7.76671&scale-unit=KilometersMiles&key={{API_KEY}}
 ```
 

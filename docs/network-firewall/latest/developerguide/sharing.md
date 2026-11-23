@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/s
 
 You can share Network Firewall firewalls, firewall policies, rule groups, and container associations with other AWS accounts. When you share a firewall, other accounts can use your firewall's protections in their VPCs through VPC endpoint associations. When you share firewall policies or rule groups, other accounts can use these resources in their own firewalls.
 
+When you share a NAT/Proxy firewall, other accounts can create VPC endpoint associations to use the firewall's explicit proxy from their VPCs. Their traffic leaves through the firewall's NAT gateways. For information about using the proxy from other VPCs, see [Using the proxy from other VPCs](nfw-proxy-managing.md#nfw-proxy-vpc-endpoint-associations).
+
 The owner of a firewall, firewall policy, rule group, or container association can share a resource with:
 + Specific AWS accounts inside or outside of its organization in AWS Organizations
 + An organizational unit inside its organization in AWS Organizations

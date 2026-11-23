@@ -28,7 +28,7 @@ For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon
 
 To reboot a cluster using the AWS CLI:
 
-```
+```sh
 aws timestream-influxdb reboot-db-cluster \
   --region us-east-1 \
   --identifier "my-influxdb3-cluster"

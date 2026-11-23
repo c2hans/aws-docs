@@ -26,7 +26,7 @@ The following code example shows how to use `Get-GLCJob`.
 **Tools for PowerShell V4**
 **Example 1: Returns details of the specified job. When the job completes successfully the Read-GCJobOutput cmdlet can be used to retrieve the contents of the job (an archive or inventory list) to the local file system.**
 
-```
+```powershell
 Get-GLCJob -VaultName myvault -JobId "op1x...JSbthM"
 ```
 **Output:**
@@ -64,7 +64,7 @@ The following code example shows how to use `New-GLCVault`.
 **Tools for PowerShell V4**
 **Example 1: Creates a new vault for the user's account. As no value was supplied to the -AccountId parameter the cmdlets uses a default of "-" indicating the current account.**
 
-```
+```powershell
 New-GLCVault -VaultName myvault
 ```
 **Output:**
@@ -82,7 +82,7 @@ The following code example shows how to use `Read-GLCJobOutput`.
 **Tools for PowerShell V4**
 **Example 1: Downloads the archive content that was scheduled for retrieval in the specified job and stores the contents into a file on disk. The download validates the checksum for you, if one is available. If desired the entire response including the checksum can be returned by specifying `-Select '*'`.**
 
-```
+```powershell
 Read-GLCJobOutput -VaultName myvault -JobId "HSWjArc...Zq2XLiW" -FilePath "c:\temp\blue.bin"
 ```
 +  For API details, see [GetJobOutput](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -95,7 +95,7 @@ The following code example shows how to use `Start-GLCJob`.
 **Tools for PowerShell V4**
 **Example 1: Starts a job to retrieve an archive from the specified vault owned by the user. The status of the job can be checked using the Get-GLCJob cmdlet. When the job completes successfully the Read-GCJobOutput cmdlet can be used to retrieve the contents of the archive to the local file system.**
 
-```
+```powershell
 Start-GLCJob -VaultName myvault -JobType "archive-retrieval" -JobDescription "archive retrieval" -ArchiveId "o9O9j...TX-TpIhQJw"
 ```
 **Output:**
@@ -115,7 +115,7 @@ The following code example shows how to use `Write-GLCArchive`.
 **Tools for PowerShell V4**
 **Example 1: Uploads a single file to the specified vault, returning the archive ID and computed checksum.**
 
-```
+```powershell
 Write-GLCArchive -VaultName myvault -FilePath c:\temp\blue.bin
 ```
 **Output:**
@@ -127,7 +127,7 @@ C:\temp\blue.bin            o9O9jUUs...TTX-TpIhQJw 79f3e...f4395b
 ```
 **Example 2: Uploads the contents of a folder hierarchy to the specified vault in the user's account. For each file uploaded the cmdlet emits the filename, corresponding archive ID and the computed checksum of the archive.**
 
-```
+```powershell
 Write-GLCArchive -VaultName myvault -FolderPath . -Recurse
 ```
 **Output:**

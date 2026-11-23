@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/config-setting
 
 Build, flash, and test settings are made in the `configs/userdata.json` file. We support Echo Server configuration by loading both the client and server certificates and keys in the `customPath`. For more information, see [Setting up an echo server](https://docs.aws.amazon.com/freertos/latest/portingguide/afr-echo-server.html) in the *FreeRTOS Porting Guide*. The following JSON example shows how you can configure IDT for FreeRTOS to test multiple devices:
 
-```
+```json
 {
     "sourcePath": "{{/absolute-path-to/freertos}}",
     "vendorPath": "{{testData.sourcePath}}/vendors/{{vendor-name}}/boards/{{board-name}}",
@@ -128,19 +128,19 @@ The following lists the attributes used in `userdata.json`:
 **`sourcePath`**
 The path to the root of the ported FreeRTOS source code. For parallel testing with an SDK, the `sourcePath` can be set using the `{{userData.sdkConfiguration.path}}` place holder. For example:
 
-```
+```json
 { "sourcePath":"{{userData.sdkConfiguration.path}}/{{freertos}}" }
 ```
 
 **`vendorPath`**
 The path to the vendor specific FreeRTOS code. For serial testing, the `vendorPath` can be set as an absolute path. For example:
 
-```
+```json
 { "vendorPath":"C:/{{path-to-freertos}}/vendors/espressif/boards/{{esp32}}" }
 ```
 For parallel testing, the `vendorPath` can be set using the `{{testData.sourcePath}}` place holder. For example:
 
-```
+```json
 { "vendorPath":"{{testData.sourcePath}}/vendors/espressif/boards/esp32" }
 ```
 The `vendorPath` variable is only necessary when running without an SDK, it can be removed otherwise.

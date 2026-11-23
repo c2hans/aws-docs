@@ -20,7 +20,7 @@ To create a CloudWatch Events rule, you will need an AWS Identity and Access Man
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

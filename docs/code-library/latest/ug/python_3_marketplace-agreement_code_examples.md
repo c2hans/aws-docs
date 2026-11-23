@@ -24,7 +24,7 @@ The following code example shows how to accept an agreement cancellation request
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 import sys
 import os
 
@@ -67,7 +67,7 @@ The following code example shows how to accept an agreement payment request init
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 import sys
 import os
 
@@ -113,7 +113,7 @@ The following code example shows how to amend a SaaS contract agreement to add o
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 """
 Demonstrates how to create a SaaS agreement with CONTRACT pricing model and then turn on
 the auto-renewal setting using the AWS Marketplace Agreement Service APIs.
@@ -279,7 +279,7 @@ The following code example shows how to amend an AMI agreement with Configurable
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 """
 Demonstrates how to create an AMI agreement with ConfigurableUpfrontPricingTerm and then amend
 the dimension quantity using the AWS Marketplace Agreement Service APIs.
@@ -449,6 +449,84 @@ if __name__ == "__main__":
 ```
 +  For API details, see [CreateAgreementRequest](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/CreateAgreementRequest) in *AWS SDK for Python (Boto3) API Reference*.
 
+### Approve an agreement approval
+<a name="marketplace-agreement_AcceptAgreementApproval_python_3_topic"></a>
+
+The following code example shows how to approve an agreement approval as the administrator of my organization.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```python
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+import boto3
+
+# Approves an agreement approval as the administrator of the buyer's AWS Organization. When the approval
+# is approved, the agreement request is accepted and the agreement is created; GetAgreementRequest returns its
+# agreementId.
+class AcceptAgreementApproval:
+
+    AGREEMENT_APPROVAL_ID = "<AGREEMENT APPROVAL ID HERE>"
+    NOTE = "<APPROVAL NOTE HERE>"
+
+    @staticmethod
+    def accept_agreement_approval():
+        client = boto3.client("marketplace-agreement")
+
+        approver_input = {
+            "agreementApprovalId": AcceptAgreementApproval.AGREEMENT_APPROVAL_ID,
+            "note": AcceptAgreementApproval.NOTE,
+        }
+
+        client.accept_agreement_approval(buyerAgreementApprovalApproverInput=approver_input)
+
+        print("Approved Agreement Approval ID: " + AcceptAgreementApproval.AGREEMENT_APPROVAL_ID)
+
+if __name__ == "__main__":
+    AcceptAgreementApproval.accept_agreement_approval()
+```
++  For API details, see [AcceptAgreementApproval](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/AcceptAgreementApproval) in *AWS SDK for Python (Boto3) API Reference*.
+
+### Cancel an agreement request
+<a name="marketplace-agreement_CancelAgreementRequest_python_3_topic"></a>
+
+The following code example shows how to cancel an agreement request that is pending approval.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```python
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+import boto3
+
+# Cancels an agreement request that is pending approval, and its approval.
+class CancelAgreementRequest:
+
+    AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>"
+
+    @staticmethod
+    def cancel_agreement_request():
+        client = boto3.client("marketplace-agreement")
+
+        client.cancel_agreement_request(
+            agreementRequestId=CancelAgreementRequest.AGREEMENT_REQUEST_ID,
+        )
+
+        print("Cancelled Agreement Request ID: " + CancelAgreementRequest.AGREEMENT_REQUEST_ID)
+
+if __name__ == "__main__":
+    CancelAgreementRequest.cancel_agreement_request()
+```
++  For API details, see [CancelAgreementRequest](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/CancelAgreementRequest) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### Create a new AMI free trial agreement
 <a name="marketplace-agreement_NewAmiFreeTrial_python_3_topic"></a>
 
@@ -457,7 +535,7 @@ The following code example shows how to create a new AMI free trial agreement.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 """
 Demonstrates how to create an AMI Free Trial agreement
 using the AWS Marketplace Agreement Service APIs.
@@ -537,7 +615,7 @@ The following code example shows how to create a new SaaS contract agreement wit
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 """
 Demonstrates how to create a SaaS agreement with CONTRACT pricing model with upfront payment
 using the AWS Marketplace Agreement Service APIs.
@@ -644,7 +722,7 @@ The following code example shows how to get all agreement IDs.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -722,7 +800,7 @@ The following code example shows how to get all agreements.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -801,7 +879,7 @@ The following code example shows how to get customer ID from an agreement.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -850,6 +928,86 @@ if __name__ == "__main__":
 ```
 +  For API details, see [DescribeAgreement](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/DescribeAgreement) in *AWS SDK for Python (Boto3) API Reference*.
 
+### Get details of an agreement approval
+<a name="marketplace-agreement_GetAgreementApproval_python_3_topic"></a>
+
+The following code example shows how to get details of an agreement approval, including its approver outcomes.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```python
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+import boto3
+
+class GetAgreementApproval:
+
+    AGREEMENT_APPROVAL_ID = "<AGREEMENT APPROVAL ID HERE>"
+
+    @staticmethod
+    def get_agreement_approval():
+        client = boto3.client("marketplace-agreement")
+
+        response = client.get_agreement_approval(
+            agreementApprovalId=GetAgreementApproval.AGREEMENT_APPROVAL_ID,
+        )
+        approval = response["buyerAgreementApproval"]
+
+        print("Approval Type: " + approval["approvalType"])
+        print("Agreement Approval ID: " + approval["agreementApprovalId"])
+        print("Agreement Request ID: " + approval["agreementRequestId"])
+        print("Name: " + approval["name"])
+        print("Status: " + approval["status"])
+        print("Requester Account ID: " + approval["requester"]["accountId"])
+        print("Proposer: " + approval["proposer"]["legalName"] + " (" + approval["proposer"]["accountId"] + ")")
+        proposal_summary = approval["proposalSummary"]
+        print("Offer ID: " + proposal_summary["offerId"])
+        if "offerSetId" in proposal_summary:
+            print("Offer Set ID: " + proposal_summary["offerSetId"])
+        print("Visibility Scope: " + proposal_summary["visibilityScope"])
+        for resource in proposal_summary.get("resources", []):
+            print("Resource: " + resource["name"] + " (" + resource["id"] + ", " + resource["type"] + ")")
+        print("Plan Reference: " + approval["planInput"]["planReference"])
+        if "requesterNote" in approval["planInput"]:
+            print("Requester Note: " + approval["planInput"]["requesterNote"])
+        print("Created At: " + str(approval["createdAt"]))
+        print("Updated At: " + str(approval["updatedAt"]))
+        print("Started At: " + str(approval.get("startedAt", "")))
+        print("Expires At: " + str(approval.get("expiresAt", "")))
+        print("Approval Needed By: " + str(approval["approvalNeededBy"]))
+        for level in approval["levels"]:
+            print("  Level: " + str(level.get("name", "")))
+            for group in level["groups"]:
+                print("    Required Approvals: " + str(group["approvalCriteria"]["requiredApprovalCount"]))
+                for outcome in group["approvers"]:
+                    GetAgreementApproval.print_approver_outcome(outcome)
+
+    @staticmethod
+    def print_approver_outcome(outcome):
+        if "awsOrganizationApproverOutcome" in outcome:
+            admin = outcome["awsOrganizationApproverOutcome"]
+            print("    Organization admin: " + admin["status"]
+                  + ", approverOutcomeId " + str(admin.get("approverOutcomeId", "")))
+        elif "emailApproverOutcome" in outcome:
+            email = outcome["emailApproverOutcome"]
+            print("    Email approver " + email["emailAddress"] + ": " + email["status"]
+                  + ", approverOutcomeId " + str(email.get("approverOutcomeId", "")))
+        elif "procurementToolApproverOutcome" in outcome:
+            tool = outcome["procurementToolApproverOutcome"]
+            print("    Procurement tool " + str(tool.get("name", "")) + ": " + tool["status"]
+                  + ", approverOutcomeId " + str(tool.get("approverOutcomeId", "")))
+        else:
+            print("    Approver: " + str(outcome))
+
+if __name__ == "__main__":
+    GetAgreementApproval.get_agreement_approval()
+```
++  For API details, see [GetAgreementApproval](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/GetAgreementApproval) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### Get details of an agreement cancellation request
 <a name="marketplace-agreement_GetAgreementCancellationRequest_python_3_topic"></a>
 
@@ -858,7 +1016,7 @@ The following code example shows how to get details of a specific agreement canc
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 import sys
 import os
 
@@ -901,7 +1059,7 @@ The following code example shows how to get details of a specific agreement paym
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 import sys
 import os
 
@@ -939,6 +1097,80 @@ if __name__ == "__main__":
 ```
 +  For API details, see [GetAgreementPaymentRequest](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/GetAgreementPaymentRequest) in *AWS SDK for Python (Boto3) API Reference*.
 
+### Get details of an agreement request
+<a name="marketplace-agreement_GetAgreementRequest_python_3_topic"></a>
+
+The following code example shows how to get details of an agreement request, including whether it requires approval and its expected charges.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```python
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+import boto3
+
+class GetAgreementRequest:
+
+    AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>"
+
+    @staticmethod
+    def get_agreement_request():
+        client = boto3.client("marketplace-agreement")
+
+        response = client.get_agreement_request(
+            agreementRequestId=GetAgreementRequest.AGREEMENT_REQUEST_ID,
+        )
+
+        print("Agreement Request ID: " + response["agreementRequestId"])
+        print("Agreement Type: " + str(response.get("agreementType", "")))
+        print("Status: " + str(response.get("status", "")))
+        print("Approval Requirement: " + str(response.get("approvalRequirement", "")))
+        if "agreementId" in response:
+            print("Agreement ID: " + response["agreementId"])
+        print("Intent: " + str(response.get("intent", "")))
+        print("Created At: " + str(response.get("createdAt", "")))
+
+        charge_summary = response["chargeSummary"]
+        print("Currency Code: " + str(charge_summary.get("currencyCode", "")))
+        print("New Agreement Value: " + str(charge_summary.get("newAgreementValue", "")))
+        # Tax fields are returned only when the request was created with tax estimation enabled.
+        if "estimatedTaxes" in charge_summary:
+            print("New Agreement Value After Tax: " + str(charge_summary.get("newAgreementValueAfterTax", "")))
+            print("Estimated Taxes: " + str(charge_summary["estimatedTaxes"].get("totalAmount", "")))
+            print("Invoicing Entity: " + str(charge_summary.get("invoicingEntity", "")))
+        for charge in charge_summary.get("expectedCharges", []):
+            print("Expected Charge ID: " + str(charge.get("id", "")))
+            print("  Amount: " + str(charge.get("amount", "")))
+            if "amountAfterTax" in charge:
+                print("  Amount After Tax: " + charge["amountAfterTax"])
+            print("  Timing: " + str(charge.get("timing", "")))
+            # Recurring charges of usage-based and recurring payment terms have no time.
+            if "time" in charge:
+                print("  Time: " + str(charge["time"]))
+            if "purchaseOrderReference" in charge:
+                print("  Purchase Order Reference: " + charge["purchaseOrderReference"])
+        for itemized_charge in charge_summary.get("itemizedCharges", []):
+            print("Itemized Charge: " + str(itemized_charge.get("dimensionKey", "")) + ", quantity "
+                  + str(itemized_charge.get("oldQuantity", "")) + " -> " + str(itemized_charge.get("newQuantity", ""))
+                  + ", amount " + str(itemized_charge.get("incrementalChargeAmount", "")))
+
+        print("Proposer Account ID: " + str(response["proposer"].get("accountId", "")))
+        proposal_summary = response["proposalSummary"]
+        print("Offer ID: " + str(proposal_summary.get("offerId", "")))
+        if "offerSetId" in proposal_summary:
+            print("Offer Set ID: " + proposal_summary["offerSetId"])
+        for resource in proposal_summary.get("resources", []):
+            print("Resource: " + resource["id"] + " (" + resource["type"] + ")")
+
+if __name__ == "__main__":
+    GetAgreementRequest.get_agreement_request()
+```
++  For API details, see [GetAgreementRequest](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/GetAgreementRequest) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### Get financial details from an agreement
 <a name="marketplace-agreement_GetAgreementFinancialDetails_python_3_topic"></a>
 
@@ -947,7 +1179,7 @@ The following code example shows how to get financial details from an agreement.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1013,7 +1245,7 @@ The following code example shows how to get free trial details from an agreement
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1087,7 +1319,7 @@ The following code example shows how to get information about an agreement.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1149,7 +1381,7 @@ The following code example shows how to get product and offer details from an ag
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1272,7 +1504,7 @@ The following code example shows how to get the EULA of an agreement.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1360,6 +1592,49 @@ if __name__ == "__main__":
 ```
 +  For API details, see [GetAgreementTerms](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/GetAgreementTerms) in *AWS SDK for Python (Boto3) API Reference*.
 
+### Get the approval plans of an agreement request
+<a name="marketplace-agreement_GetAgreementRequestApprovalPlans_python_3_topic"></a>
+
+The following code example shows how to get the approval plans that apply to an agreement request.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```python
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+import boto3
+
+class GetAgreementRequestApprovalPlans:
+
+    AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>"
+
+    @staticmethod
+    def get_agreement_request_approval_plans():
+        client = boto3.client("marketplace-agreement")
+
+        paginator = client.get_paginator("get_agreement_request_approval_plans")
+        for page in paginator.paginate(agreementRequestId=GetAgreementRequestApprovalPlans.AGREEMENT_REQUEST_ID):
+            for item in page["items"]:
+                plan = item["buyerAgreementApprovalPlan"]
+                print("Plan Reference: " + plan["planReference"])
+                print("Plan Name: " + str(plan.get("name", "")))
+                for level in plan["levels"]:
+                    print("  Level: " + str(level.get("name", "")))
+                    for group in level["groups"]:
+                        print("    Required Approvals: " + str(group["approvalCriteria"]["requiredApprovalCount"]))
+                        for approver in group["approvers"]:
+                            print("    Approver: " + str(approver))
+                print("---")
+
+if __name__ == "__main__":
+    GetAgreementRequestApprovalPlans.get_agreement_request_approval_plans()
+```
++  For API details, see [GetAgreementRequestApprovalPlans](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/GetAgreementRequestApprovalPlans) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### Get the auto renewal terms of an agreement
 <a name="marketplace-agreement_GetAgreementAutoRenewal_python_3_topic"></a>
 
@@ -1368,7 +1643,7 @@ The following code example shows how to get the auto renewal terms of an agreeme
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1624,7 +1899,7 @@ The following code example shows how to get the dimensions purchased in an agree
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1726,7 +2001,7 @@ The following code example shows how to find out whether an agreement will renew
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1817,7 +2092,7 @@ The following code example shows how to identify the first agreement in an agree
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1882,7 +2157,7 @@ The following code example shows how to get the instances of each dimension purc
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -1975,7 +2250,7 @@ The following code example shows how to get the payment schedule of an agreement
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -2084,7 +2359,7 @@ The following code example shows how to get the pricing per dimension in an agre
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -2191,7 +2466,7 @@ The following code example shows how to get the pricing type of an agreement.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -2521,7 +2796,7 @@ The following code example shows how to get the product type of an agreement.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -2588,7 +2863,7 @@ The following code example shows how to get the status of an agreement.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -2645,7 +2920,7 @@ The following code example shows how to get the support terms of an agreement.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -2711,6 +2986,103 @@ if __name__ == "__main__":
 ```
 +  For API details, see [GetAgreementTerms](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/GetAgreementTerms) in *AWS SDK for Python (Boto3) API Reference*.
 
+### Get the terms of an agreement request
+<a name="marketplace-agreement_GetAgreementRequestTerms_python_3_topic"></a>
+
+The following code example shows how to get the terms requested in an agreement request.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```python
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+import boto3
+
+import json
+
+class GetAgreementRequestTerms:
+
+    AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>"
+
+    @staticmethod
+    def get_agreement_request_terms():
+        client = boto3.client("marketplace-agreement")
+
+        paginator = client.get_paginator("get_agreement_request_terms")
+        for page in paginator.paginate(agreementRequestId=GetAgreementRequestTerms.AGREEMENT_REQUEST_ID):
+            for term in page["terms"]:
+                term_type, term_value = next(iter(term.items()))
+                print("Term Type: " + term_type)
+                print(json.dumps(term_value, indent=2, default=str))
+                print("---")
+
+if __name__ == "__main__":
+    GetAgreementRequestTerms.get_agreement_request_terms()
+```
++  For API details, see [GetAgreementRequestTerms](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/GetAgreementRequestTerms) in *AWS SDK for Python (Boto3) API Reference*.
+
+### List agreement approvals
+<a name="marketplace-agreement_ListAgreementApprovals_python_3_topic"></a>
+
+The following code example shows how to list the agreement approvals I requested, or that I decide as the administrator of my organization.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```python
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+import boto3
+
+class ListAgreementApprovals:
+
+    # REQUESTER lists the approvals the caller started. AWS_ORGANIZATION_ADMIN lists the approvals the caller
+    # decides as the administrator of its AWS Organization.
+    PARTY_TYPE = "AWS_ORGANIZATION_ADMIN"
+    STATUS = "PENDING_APPROVAL"
+
+    @staticmethod
+    def list_agreement_approvals():
+        client = boto3.client("marketplace-agreement")
+
+        next_token = None
+
+        while True:
+            kwargs = {"partyType": ListAgreementApprovals.PARTY_TYPE, "status": ListAgreementApprovals.STATUS}
+            if next_token:
+                kwargs["nextToken"] = next_token
+
+            response = client.list_agreement_approvals(**kwargs)
+
+            for summary in response["items"]:
+                print("Approval Type: " + summary["approvalType"])
+                print("Agreement Request ID: " + summary["agreementRequestId"])
+                print("Agreement Approval ID: " + summary["agreementApprovalId"])
+                print("Name: " + summary["name"])
+                print("Status: " + summary["status"])
+                print("Created At: " + str(summary["createdAt"]))
+                print("Updated At: " + str(summary["updatedAt"]))
+                print("Started At: " + str(summary.get("startedAt", "")))
+                print("Expires At: " + str(summary.get("expiresAt", "")))
+                print("Approval Needed By: " + str(summary["approvalNeededBy"]))
+                print("---")
+
+            next_token = response.get("nextToken")
+            if not next_token:
+                break
+
+if __name__ == "__main__":
+    ListAgreementApprovals.list_agreement_approvals()
+```
++  For API details, see [ListAgreementApprovals](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/ListAgreementApprovals) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### List agreement cancellation requests
 <a name="marketplace-agreement_ListAgreementCancellationRequests_python_3_topic"></a>
 
@@ -2719,7 +3091,7 @@ The following code example shows how to list agreement cancellation requests for
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 import sys
 import os
 
@@ -2772,7 +3144,7 @@ The following code example shows how to list agreement payment requests for agre
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 import sys
 import os
 
@@ -2818,6 +3190,103 @@ if __name__ == "__main__":
 ```
 +  For API details, see [ListAgreementPaymentRequests](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/ListAgreementPaymentRequests) in *AWS SDK for Python (Boto3) API Reference*.
 
+### List agreement requests
+<a name="marketplace-agreement_ListAgreementRequests_python_3_topic"></a>
+
+The following code example shows how to list my agreement requests, filtered by status.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```python
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+import boto3
+
+class ListAgreementRequests:
+
+    STATUS = "PENDING_APPROVAL"
+
+    @staticmethod
+    def list_agreement_requests():
+        client = boto3.client("marketplace-agreement")
+
+        next_token = None
+
+        while True:
+            kwargs = {"status": ListAgreementRequests.STATUS}
+            if next_token:
+                kwargs["nextToken"] = next_token
+
+            response = client.list_agreement_requests(**kwargs)
+
+            for summary in response.get("items", []):
+                print("Agreement Request ID: " + summary["agreementRequestId"])
+                print("Agreement Type: " + str(summary.get("agreementType", "")))
+                print("Status: " + str(summary.get("status", "")))
+                if "agreementId" in summary:
+                    print("Agreement ID: " + summary["agreementId"])
+                proposal_summary = summary["proposalSummary"]
+                print("Offer ID: " + str(proposal_summary.get("offerId", "")))
+                if "offerSetId" in proposal_summary:
+                    print("Offer Set ID: " + proposal_summary["offerSetId"])
+                for resource in proposal_summary.get("resources", []):
+                    print("Resource: " + resource["id"] + " (" + resource["type"] + ")")
+                print("---")
+
+            next_token = response.get("nextToken")
+            if not next_token:
+                break
+
+if __name__ == "__main__":
+    ListAgreementRequests.list_agreement_requests()
+```
++  For API details, see [ListAgreementRequests](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/ListAgreementRequests) in *AWS SDK for Python (Boto3) API Reference*.
+
+### Reject an agreement approval
+<a name="marketplace-agreement_RejectAgreementApproval_python_3_topic"></a>
+
+The following code example shows how to reject an agreement approval as the administrator of my organization.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```python
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+import boto3
+
+# Rejects an agreement approval as the administrator of the buyer's AWS Organization. The agreement request
+# is rejected and no agreement is created.
+class RejectAgreementApproval:
+
+    AGREEMENT_APPROVAL_ID = "<AGREEMENT APPROVAL ID HERE>"
+    NOTE = "<REJECTION REASON HERE>"
+
+    @staticmethod
+    def reject_agreement_approval():
+        client = boto3.client("marketplace-agreement")
+
+        rejection_input = {
+            "agreementApprovalId": RejectAgreementApproval.AGREEMENT_APPROVAL_ID,
+            "note": RejectAgreementApproval.NOTE,
+        }
+
+        client.reject_agreement_approval(buyerAgreementApprovalRejectionInput=rejection_input)
+
+        print("Rejected Agreement Approval ID: " + RejectAgreementApproval.AGREEMENT_APPROVAL_ID)
+
+if __name__ == "__main__":
+    RejectAgreementApproval.reject_agreement_approval()
+```
++  For API details, see [RejectAgreementApproval](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/RejectAgreementApproval) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### Reject an agreement cancellation request
 <a name="marketplace-agreement_RejectAgreementCancellationRequest_python_3_topic"></a>
 
@@ -2826,7 +3295,7 @@ The following code example shows how to reject an agreement cancellation request
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 import sys
 import os
 
@@ -2871,7 +3340,7 @@ The following code example shows how to reject an agreement payment request init
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 import sys
 import os
 
@@ -2918,7 +3387,7 @@ The following code example shows how to replace a SaaS contract agreement with a
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 """
 Demonstrates how to replace an existing SaaS agreement with CONTRACT pricing model with a new
 Agreement-Based Offer (ABO) using the AWS Marketplace Agreement Service APIs.
@@ -3006,7 +3475,7 @@ The following code example shows how to replace a SaaS free trial with a Contrac
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 """
 Demonstrates how to create a SaaS free trial agreement and then replace it with a
 paid Contract with Consumption Pricing (CCP) offer using the AWS Marketplace Agreement Service APIs.
@@ -3141,7 +3610,7 @@ The following code example shows how to replace a SaaS usage-based pricing term 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 """
 Demonstrates how to create a SaaS agreement with usageBasedPricingTerm (UBPT) and then replace it
 with a new offer using the AWS Marketplace Agreement Service APIs.
@@ -3272,7 +3741,7 @@ The following code example shows how to replace an AMI usage-based pricing term 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 """
 Demonstrates how to replace an AMI agreement with usageBasedPricingTerm with a new offer while
 the agreement with ConfigurableUpfrontPricingTerm (CUPT) is still active, using the
@@ -3454,7 +3923,7 @@ The following code example shows how to search for agreements by account ID.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -3548,7 +4017,7 @@ The following code example shows how to search for agreements by agreement ID.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -3647,7 +4116,7 @@ The following code example shows how to search for agreements by end date.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -3740,7 +4209,7 @@ The following code example shows how to search for agreements by the date they w
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -3836,7 +4305,7 @@ The following code example shows how to search for agreements by offer ID.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -3932,7 +4401,7 @@ The following code example shows how to search for agreements by product ID.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -4028,7 +4497,7 @@ The following code example shows how to search for agreements by start date.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -4124,7 +4593,7 @@ The following code example shows how to search for agreements by status.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -4214,7 +4683,7 @@ The following code example shows how to search for the agreements that will rene
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -4307,7 +4776,7 @@ The following code example shows how to search for the agreements the acceptor o
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -4397,6 +4866,75 @@ if __name__ == "__main__":
 ```
 +  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Python (Boto3) API Reference*.
 
+### Start the approval of an agreement request
+<a name="marketplace-agreement_StartAgreementApprovals_python_3_topic"></a>
+
+The following code example shows how to start the approval of an agreement request, optionally with purchase orders.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```python
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+import boto3
+
+class StartAgreementApprovals:
+
+    AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>"
+    # planReference of a plan returned by GetAgreementRequestApprovalPlans for this agreement request.
+    PLAN_REFERENCE = "<PLAN REFERENCE HERE>"
+    REQUESTER_NOTE = "<NOTE FOR THE APPROVERS HERE>"
+    # Optional: a purchase order for an expected charge, by its id from GetAgreementRequest chargeSummary.
+    CHARGE_ID = None
+    PURCHASE_ORDER_REFERENCE = "<PURCHASE ORDER REFERENCE HERE>"
+
+    @staticmethod
+    def start_agreement_approvals():
+        client = boto3.client("marketplace-agreement")
+
+        kwargs = {
+            "agreementRequestId": StartAgreementApprovals.AGREEMENT_REQUEST_ID,
+            "planInputs": [
+                {
+                    "buyerAgreementApprovalPlanInput": {
+                        "planReference": StartAgreementApprovals.PLAN_REFERENCE,
+                        "requesterNote": StartAgreementApprovals.REQUESTER_NOTE,
+                    }
+                }
+            ],
+        }
+        if StartAgreementApprovals.CHARGE_ID:
+            kwargs["purchaseOrders"] = [
+                {
+                    "chargeId": StartAgreementApprovals.CHARGE_ID,
+                    "purchaseOrderReference": StartAgreementApprovals.PURCHASE_ORDER_REFERENCE,
+                }
+            ]
+
+        response = client.start_agreement_approvals(**kwargs)
+
+        for summary in response["approvalSummaries"]:
+            print("Approval Type: " + summary["approvalType"])
+            print("Agreement Request ID: " + summary["agreementRequestId"])
+            print("Agreement Approval ID: " + summary["agreementApprovalId"])
+            print("Name: " + summary["name"])
+            print("Status: " + summary["status"])
+            print("Created At: " + str(summary["createdAt"]))
+            print("Updated At: " + str(summary["updatedAt"]))
+            print("Started At: " + str(summary.get("startedAt", "")))
+            print("Expires At: " + str(summary.get("expiresAt", "")))
+            print("Approval Needed By: " + str(summary["approvalNeededBy"]))
+            print("---")
+
+if __name__ == "__main__":
+    StartAgreementApprovals.start_agreement_approvals()
+```
++  For API details, see [StartAgreementApprovals](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/StartAgreementApprovals) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### Update purchase orders after agreement acceptance
 <a name="marketplace-agreement_UpdatePurchaseOrdersAfterAgreementAcceptance_python_3_topic"></a>
 
@@ -4405,7 +4943,7 @@ The following code example shows how to update purchase orders after the agreeme
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 """
 Demonstrates how to associate a purchase order reference with a SaaS agreement with CONTRACT
 pricing model using the AWS Marketplace Agreement Service APIs.

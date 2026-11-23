@@ -12,13 +12,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-raw-cg
 
 1.  Install the `libcgroup-tools` package.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo dnf install {{libcgroup-tools}}
    ```
 
 1.  Create a `cgroup` with the `memory` and `cpu` controllers, and give it a name (`our-example-limits`). Using the `-a` and `-t` options to allow the `ec2-user` user to control the tunables of the `cgroup`
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo cgcreate -a {{ec2-user}} -t {{ec2-user}} -g memory,cpu:{{our-example-limits}}
    ```
 
@@ -28,19 +28,19 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-raw-cg
 
 1.  Limit memory usage of all processes in our `cgroup` to 100 million bytes.
 
-   ```
+   ```bash
    [ec2-user ~]$ echo {{100000000}} > /sys/fs/cgroup/{{our-example-limits}}/memory.max
    ```
 **Note**
  Amazon Linux 2 uses `cgroup-v1` rather than the `cgroup-v2` that Amazon Linux 2023 uses. This means that some tunables are different. To limit memory usage on AL2, the below tunable is used instead.
 
-   ```
+   ```bash
    [ec2-user ~]$ echo {{10000000}} > /sys/fs/cgroup/memory/{{our-example-limits}}/memory.limit_in_bytes
    ```
 
 1.  Limit CPU usage of all processes in our `cgroup` to 10%. The format of the `cpu.max` file is `$MAX $PERIOD`, limiting the group to consuming `$MAX` for every `$PERIOD`.
 
-   ```
+   ```bash
    [ec2-user ~]$ echo {{10000 100000}} > /sys/fs/cgroup/{{our-example-limits}}/cpu.max
    ```
 
@@ -48,13 +48,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-raw-cg
 
 1.  The below example runs `stress-ng` (which can be installed by running `dnf install -y stress-ng`) in the `our-example-limits` cgroup. While the `stress-ng` command is running, you can observe using `top` that it is limited to 10% of CPU time.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo cgexec -g memory,cpu:our-example-limits {{stress-ng --cpu 1}}
    ```
 
 1. Clean up by removing the cgroup
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo cgdelete -g memory,cpu:{{our-example-limits}}
    ```
 

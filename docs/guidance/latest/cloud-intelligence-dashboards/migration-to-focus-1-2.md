@@ -85,13 +85,13 @@ To bring in the new FOCUS 1.2 columns and update the FOCUS Dashboard to version 
 
 1. Install or upgrade the CID CLI tool:
 
-   ```
+   ```bash
    pip3 install --upgrade cid-cmd
    ```
 
 1. Run the following command to update the dashboard and all dependent views:
 
-   ```
+   ```bash
    cid-cmd update --recursive --force --dashboard-id focus-dashboard
    ```
 
@@ -121,7 +121,7 @@ Thanks in advance,
 
 You can also use the following command in CloudShell to create this case via command line:
 
-```
+```bash
 aws support create-case \
     --subject "Backfill Data" \
     --service-code "billing" \
@@ -140,7 +140,7 @@ Make sure you create the case from your Source Accounts (typically Management/Pa
 
 Run the following command to check dataset status in Amazon Quick Sight:
 
-```
+```bash
 cid-cmd status --dashboard-id focus-dashboard
 ```
 

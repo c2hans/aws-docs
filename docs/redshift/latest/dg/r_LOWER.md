@@ -34,7 +34,7 @@ The following example uses data from the CATEGORY table in the TICKIT sample dat
 
 To convert the `VARCHAR` strings in the CATNAME column to lowercase, use the following example.
 
-```
+```sql
 SELECT catname, LOWER(catname) FROM category ORDER BY 1,2;
 
 +-----------+-----------+

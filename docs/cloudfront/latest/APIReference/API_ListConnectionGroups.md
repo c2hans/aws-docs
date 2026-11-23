@@ -70,6 +70,9 @@ HTTP/1.1 200
          <Name>string</Name>
          <RoutingEndpoint>string</RoutingEndpoint>
          <Status>string</Status>
+         <ViewerFallback>
+            <DistributionId>string</DistributionId>
+         </ViewerFallback>
       </ConnectionGroupSummary>
    </ConnectionGroups>
    <NextMarker>string</NextMarker>

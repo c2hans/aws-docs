@@ -12,7 +12,7 @@ CloudTrail log entries for this operation recorded on or after December 2022 inc
 
 The following example shows a CloudTrail log entry for `UpdatePrimaryRegion` in the Region where the multi-Region key changed from a primary key to a replica key (us-west-2). The `primaryRegion` field shows the Region that now hosts the primary key (ap-northeast-1).
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -55,7 +55,7 @@ The following example shows a CloudTrail log entry for `UpdatePrimaryRegion` in 
 
 The following example represents the CloudTrail log entry for `UpdatePrimaryRegion` in the Region where the multi-Region key changed from a replica key to a primary key (ap-northeast-1). This log entry doesn't identify the previous primary Region.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

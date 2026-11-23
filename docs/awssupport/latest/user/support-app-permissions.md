@@ -168,7 +168,7 @@ You must have the `AWSServiceRoleForServiceQuotas` role in your account to reque
 + Use the [Service Quotas](https://console.aws.amazon.com/servicequotas) console to request a quota increase. After you make a successful request, Service Quotas creates this role for you automatically. Then, you can use the AWS Support App to request quota increases in Slack. For more information, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html).
 + Update the IAM policy attached to your role. This grants the role permission to Service Quotas. The following section in the [Example IAM policy](#example-support-app-policy) allows the AWS Support App to create the Service Quotas role for you.
 
-  ```
+  ```json
   {
       "Effect": "Allow",
       "Action": "iam:CreateServiceLinkedRole",

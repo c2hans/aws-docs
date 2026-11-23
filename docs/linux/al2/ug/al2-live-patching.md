@@ -57,7 +57,7 @@ The following policy illustrates how to restrict access to identities and resour
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

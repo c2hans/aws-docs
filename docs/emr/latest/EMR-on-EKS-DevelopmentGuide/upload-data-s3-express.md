@@ -25,7 +25,7 @@ Follow these steps to get started with S3 Express One Zone
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -49,7 +49,7 @@ Follow these steps to get started with S3 Express One Zone
 
    To change the `s3` scheme, specify the following cluster configurations:
 
-   ```
+   ```bash,sh,zsh
    [
      {
        "Classification": "core-site",
@@ -63,7 +63,7 @@ Follow these steps to get started with S3 Express One Zone
 
    To change the s3n scheme, specify the following cluster configurations:
 
-   ```
+   ```bash,sh,zsh
    [
      {
        "Classification": "core-site",
@@ -87,6 +87,6 @@ Follow these steps to get started with S3 Express One Zone
 
 1. In your spark-submit configuration, use the web identity credential provider.
 
-   ```
+   ```bash,sh,zsh
    "spark.hadoop.fs.s3a.aws.credentials.provider=com.amazonaws.auth.WebIdentityTokenCredentialsProvider"
    ```

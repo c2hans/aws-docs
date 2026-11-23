@@ -13,7 +13,7 @@ To assign custom inventory to a node, you can either use the Systems Manager [Pu
 
 The following example JSON file with custom inventory specifies rack information about an on-premises server. This examples specifies one type of custom inventory data (`"TypeName": "Custom:RackInformation"`), with multiple entries under `Content` that describe the data.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "TypeName": "Custom:RackInformation",
@@ -29,7 +29,7 @@ The following example JSON file with custom inventory specifies rack information
 
 You can also specify distinct entries in the `Content` section, as shown in the following example.
 
-```
+```json
 {
 "SchemaVersion": "1.0",
 "TypeName": "Custom:PuppetModuleInfo",
@@ -47,7 +47,7 @@ You can also specify distinct entries in the `Content` section, as shown in the 
 
 The JSON schema for custom inventory requires `SchemaVersion`, `TypeName`, and `Content` sections, but you can define the information in those sections.
 
-```
+```json
 {
     "SchemaVersion": "{{user_defined}}",
     "TypeName": "Custom:{{user_defined}}",
@@ -356,7 +356,7 @@ To help you understand the contents of the delete inventory summary, consider th
 
 RackSpace custom inventory 1
 
-```
+```json
 {
    "CaptureTime":"2018-02-19T10:48:55Z",
    "TypeName":"CustomType:RackSpace",
@@ -371,7 +371,7 @@ RackSpace custom inventory 1
 
 RackSpace custom inventory 2
 
-```
+```json
 {
    "CaptureTime":"2018-02-19T10:48:55Z",
    "TypeName":"CustomType:RackSpace",
@@ -386,7 +386,7 @@ RackSpace custom inventory 2
 
 RackSpace custom inventory 3
 
-```
+```json
 {
    "CaptureTime":"2018-02-19T10:48:55Z",
    "TypeName":"CustomType:RackSpace",
@@ -437,7 +437,7 @@ The user runs the following command to delete the Custom:RackSpace inventory.
 **Note**
 The output of this command doesn't show the deletion progress. For this reason, `TotalCount` and `RemainingCount` are always the same because the system hasn't deleted anything yet. You can use the `describe-inventory-deletions` command to show the deletion progress.
 
-```
+```json
 aws ssm delete-inventory --type-name "Custom:RackSpace"
 ```
 

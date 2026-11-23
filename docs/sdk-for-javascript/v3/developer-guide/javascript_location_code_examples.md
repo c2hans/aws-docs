@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon Location Servic
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import {
   LocationClient,
@@ -92,7 +92,7 @@ The following code example shows how to:
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/scenarios#code-examples).
 
-```
+```javascript
 /*
 Before running this JavaScript code example, set up your development environment, including your credentials.
 This demo illustrates how to use the AWS SDK for JavaScript (v3) to work with Amazon Location Service.
@@ -739,7 +739,7 @@ The following code example shows how to use `BatchUpdateDevicePosition`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/actions#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import {
   BatchUpdateDevicePositionCommand,
@@ -784,7 +784,7 @@ The following code example shows how to use `CalculateRoute`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/actions#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import {
   CalculateRouteCommand,
@@ -832,7 +832,7 @@ The following code example shows how to use `CreateGeofenceCollection`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/actions#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import {
   ConflictException,
@@ -873,7 +873,7 @@ The following code example shows how to use `CreateMap`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/actions#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import { CreateMapCommand, LocationClient } from "@aws-sdk/client-location";
 import data from "./inputs.json" with { type: "json" };
@@ -906,7 +906,7 @@ The following code example shows how to use `CreateRouteCalculator`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/actions#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import {
   ConflictException,
@@ -951,7 +951,7 @@ The following code example shows how to use `CreateTracker`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/actions#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import { CreateTrackerCommand, LocationClient } from "@aws-sdk/client-location";
 import data from "./inputs.json" with { type: "json" };
@@ -984,7 +984,7 @@ The following code example shows how to use `DeleteGeofenceCollection`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/actions#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import {
   DeleteGeofenceCollectionCommand,
@@ -1026,7 +1026,7 @@ The following code example shows how to use `DeleteMap`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/actions#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import {
   DeleteMapCommand,
@@ -1064,7 +1064,7 @@ The following code example shows how to use `DeleteRouteCalculator`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/actions#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import {
   DeleteRouteCalculatorCommand,
@@ -1106,7 +1106,7 @@ The following code example shows how to use `DeleteTracker`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/actions#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import {
   DeleteTrackerCommand,
@@ -1144,7 +1144,7 @@ The following code example shows how to use `GetDevicePosition`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/actions#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import {
   GetDevicePositionCommand,
@@ -1192,7 +1192,7 @@ The following code example shows how to use `PutGeofence`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/actions#code-examples).
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import {
   PutGeofenceCommand,

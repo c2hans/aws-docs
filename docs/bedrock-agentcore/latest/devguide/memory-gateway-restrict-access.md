@@ -8,7 +8,7 @@ The fine-grained access control policies on your gateway govern requests that ar
 
 The gateway stamps the `aws:SourceArn` condition key with its gateway ARN on every request it forwards, in both outbound credential modes. The following resource-based policy allows Memory access only when `aws:SourceArn` matches your gateway ARN. Replace the example account, Region, resource ids, and caller principal with your own.
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [

@@ -139,7 +139,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-ami-encrypt-ex-min"></a>
 
-```
+```json
 {
   "AmiId" : "ami-01234567890abcdef",
   "VpcId" : "vpc-01234567890abcdef"
@@ -149,7 +149,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-ami-encrypt-ex-max"></a>
 
-```
+```json
 {
   "AmiId" : "ami-12345678",
   "VpcId" : "vpc-12345678",

@@ -34,7 +34,7 @@ The following code example shows how to get started using Lambda.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/lambda#code-examples).
 
-```
+```javascript
 import { LambdaClient, paginateListFunctions } from "@aws-sdk/client-lambda";
 
 const client = new LambdaClient({});
@@ -74,7 +74,7 @@ For more information, see [Create a Lambda function with the console](https://do
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/lambda/scenarios/basic#code-examples).
 Create an AWS Identity and Access Management (IAM) role that grants Lambda permission to write to logs.
 
-```
+```javascript
     logger.log(`Creating role (${NAME_ROLE_LAMBDA})...`);
     const response = await createRole(NAME_ROLE_LAMBDA);
 
@@ -98,7 +98,7 @@ export const attachRolePolicy = (policyArn, roleName) => {
 ```
 Create a Lambda function and upload handler code.
 
-```
+```javascript
 const createFunction = async (funcName, roleArn) => {
   const client = new LambdaClient({});
   const code = await readFile(`${dirname}../functions/${funcName}.zip`);
@@ -118,7 +118,7 @@ const createFunction = async (funcName, roleArn) => {
 ```
 Invoke the function with a single parameter and get results.
 
-```
+```javascript
 const invoke = async (funcName, payload) => {
   const client = new LambdaClient({});
   const command = new InvokeCommand({
@@ -135,7 +135,7 @@ const invoke = async (funcName, payload) => {
 ```
 Update the function code and configure its Lambda environment with an environment variable.
 
-```
+```javascript
 const updateFunctionCode = async (funcName, newFunc) => {
   const client = new LambdaClient({});
   const code = await readFile(`${dirname}../functions/${newFunc}.zip`);
@@ -165,7 +165,7 @@ const updateFunctionConfiguration = async (funcName) => {
 ```
 List the functions for your account.
 
-```
+```javascript
 const listFunctions = () => {
   const client = new LambdaClient({});
   const command = new ListFunctionsCommand({});
@@ -175,7 +175,7 @@ const listFunctions = () => {
 ```
 Delete the IAM role and the Lambda function.
 
-```
+```javascript
 import { DeleteRoleCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -218,7 +218,7 @@ The following code example shows how to use `CreateFunction`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/lambda#code-examples).
 
-```
+```javascript
 const createFunction = async (funcName, roleArn) => {
   const client = new LambdaClient({});
   const code = await readFile(`${dirname}../functions/${funcName}.zip`);
@@ -246,7 +246,7 @@ The following code example shows how to use `DeleteFunction`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/lambda#code-examples).
 
-```
+```javascript
 /**
  * @param {string} funcName
  */
@@ -266,7 +266,7 @@ The following code example shows how to use `GetFunction`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/lambda#code-examples).
 
-```
+```javascript
 const getFunction = (funcName) => {
   const client = new LambdaClient({});
   const command = new GetFunctionCommand({ FunctionName: funcName });
@@ -283,7 +283,7 @@ The following code example shows how to use `Invoke`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/lambda#code-examples).
 
-```
+```javascript
 const invoke = async (funcName, payload) => {
   const client = new LambdaClient({});
   const command = new InvokeCommand({
@@ -308,7 +308,7 @@ The following code example shows how to use `ListFunctions`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/lambda#code-examples).
 
-```
+```javascript
 const listFunctions = () => {
   const client = new LambdaClient({});
   const command = new ListFunctionsCommand({});
@@ -326,7 +326,7 @@ The following code example shows how to use `UpdateFunctionCode`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/lambda#code-examples).
 
-```
+```javascript
 const updateFunctionCode = async (funcName, newFunc) => {
   const client = new LambdaClient({});
   const code = await readFile(`${dirname}../functions/${newFunc}.zip`);
@@ -352,7 +352,7 @@ The following code example shows how to use `UpdateFunctionConfiguration`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/lambda#code-examples).
 
-```
+```javascript
 const updateFunctionConfiguration = async (funcName) => {
   const client = new LambdaClient({});
   const config = readFileSync(`${dirname}../functions/config.json`).toString();
@@ -383,7 +383,7 @@ The following code example shows how to automatically confirm known Amazon Cogni
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-pools-triggers#code-examples).
 Configure an interactive "Scenario" run. The JavaScript (v3) examples share a Scenario runner to streamline complex examples. The complete source code is on GitHub.
 
-```
+```javascript
 import { AutoConfirm } from "./scenario-auto-confirm.js";
 
 /**
@@ -431,7 +431,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 ```
 This Scenario demonstrates auto-confirming a known user. It orchestrates the example steps.
 
-```
+```javascript
 import { wait } from "@aws-doc-sdk-examples/lib/utils/util-timers.js";
 import {
   Scenario,
@@ -786,7 +786,7 @@ export const AutoConfirm = (context) =>
 ```
 These are steps that are shared with other Scenarios.
 
-```
+```javascript
 import {
   ScenarioAction,
   ScenarioInput,
@@ -834,7 +834,7 @@ export const logCleanUpReminder = new ScenarioOutput(
 ```
 A handler for the `PreSignUp` trigger with a Lambda function.
 
-```
+```javascript
 import type { PreSignUpTriggerEvent, Handler } from "aws-lambda";
 import type { UserRepository } from "./user-repository";
 import { DynamoDBUserRepository } from "./user-repository";
@@ -909,7 +909,7 @@ export const handler: Handler = async (event: PreSignUpTriggerEvent) => {
 ```
 Module of CloudWatch Logs actions.
 
-```
+```javascript
 import {
   CloudWatchLogsClient,
   GetLogEventsCommand,
@@ -979,7 +979,7 @@ export const getLogEvents = async ({
 ```
 Module of Amazon Cognito actions.
 
-```
+```javascript
 import {
   AdminGetUserCommand,
   CognitoIdentityProviderClient,
@@ -1116,7 +1116,7 @@ export const deleteUser = async ({ region, accessToken }) => {
 ```
 Module of DynamoDB actions.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
   BatchWriteCommand,
@@ -1186,7 +1186,7 @@ The following code example shows how to create an application that analyzes cust
 + Amazon Polly synthesizes an audio file from the extracted text.
  The full app can be deployed with the AWS CDK. For source code and deployment instructions, see the project in [ GitHub](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/feedback-sentiment-analyzer). The following excerpts show how the AWS SDK for JavaScript is used inside of Lambda functions.
 
-```
+```javascript
 import {
   ComprehendClient,
   DetectDominantLanguageCommand,
@@ -1227,7 +1227,7 @@ export const handler = async (extractTextOutput) => {
 };
 ```
 
-```
+```javascript
 import {
   DetectDocumentTextCommand,
   TextractClient,
@@ -1264,7 +1264,7 @@ export const handler = async (eventBridgeS3Event) => {
 };
 ```
 
-```
+```javascript
 import { PollyClient, SynthesizeSpeechCommand } from "@aws-sdk/client-polly";
 import { S3Client } from "@aws-sdk/client-s3";
 import { Upload } from "@aws-sdk/lib-storage";
@@ -1305,7 +1305,7 @@ export const handler = async (sourceDestinationConfig) => {
 };
 ```
 
-```
+```javascript
 import {
   TranslateClient,
   TranslateTextCommand,
@@ -1396,7 +1396,7 @@ The following code example shows how to implement a Lambda function that connect
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-connect-rds-iam) repository.
 Connecting to an Amazon RDS database in a Lambda function using JavaScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 /*
@@ -1457,7 +1457,7 @@ export const handler = async (event) => {
 ```
 Connecting to an Amazon RDS database in a Lambda function using TypeScript.
 
-```
+```javascript
 import { Signer } from "@aws-sdk/rds-signer";
 import mysql from 'mysql2/promise';
 
@@ -1532,7 +1532,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/blob/main/integration-kinesis-to-lambda) repository.
 Consuming a Kinesis event with Lambda using JavaScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 exports.handler = async (event, context) => {
@@ -1558,7 +1558,7 @@ async function getRecordDataAsync(payload) {
 ```
 Consuming a Kinesis event with Lambda using TypeScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import {
@@ -1611,7 +1611,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using JavaScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 exports.handler = async (event, context) => {
@@ -1629,7 +1629,7 @@ const logDynamoDBRecord = (record) => {
 ```
 Consuming a DynamoDB event with Lambda using TypeScript.
 
-```
+```javascript
 export const handler = async (event, context) => {
     console.log(JSON.stringify(event, null, 2));
     event.Records.forEach(record => {
@@ -1652,7 +1652,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using JavaScript.
 
-```
+```javascript
 console.log('Loading function');
 exports.handler = async (event, context) => {
     event.events.forEach(record => {
@@ -1670,7 +1670,7 @@ const logDocumentDBEvent = (record) => {
 ```
 Consuming a Amazon DocumentDB event with Lambda using TypeScript
 
-```
+```javascript
 import { DocumentDBEventRecord, DocumentDBEventSubscriptionContext } from 'aws-lambda';
 
 console.log('Loading function');
@@ -1702,7 +1702,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-msk-to-lambda) repository.
 Consuming an Amazon MSK event with Lambda using JavaScript.
 
-```
+```javascript
 exports.handler = async (event) => {
     // Iterate through keys
     for (let key in event.records) {
@@ -1719,7 +1719,7 @@ exports.handler = async (event) => {
 ```
 Consuming an Amazon MSK event with Lambda using TypeScript.
 
-```
+```javascript
 import { MSKEvent, Context } from "aws-lambda";
 import { Buffer } from "buffer";
 import { Logger } from "@aws-lambda-powertools/logger";
@@ -1764,7 +1764,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using JavaScript.
 
-```
+```javascript
 import { S3Client, HeadObjectCommand } from "@aws-sdk/client-s3";
 
 const client = new S3Client();
@@ -1794,7 +1794,7 @@ export const handler = async (event, context) => {
 ```
 Consuming an S3 event with Lambda using TypeScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import { S3Event } from 'aws-lambda';
@@ -1832,7 +1832,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/blob/main/integration-sns-to-lambda) repository.
 Consuming an SNS event with Lambda using JavaScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 exports.handler = async (event, context) => {
@@ -1855,7 +1855,7 @@ async function processMessageAsync(record) {
 ```
 Consuming an SNS event with Lambda using TypeScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import { SNSEvent, Context, SNSHandler, SNSEventRecord } from "aws-lambda";
@@ -1891,7 +1891,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/blob/main/integration-sqs-to-lambda) repository.
 Consuming an SQS event with Lambda using JavaScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 exports.handler = async (event, context) => {
@@ -1914,7 +1914,7 @@ async function processMessageAsync(message) {
 ```
 Consuming an SQS event with Lambda using TypeScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import { SQSEvent, Context, SQSHandler, SQSRecord } from "aws-lambda";
@@ -1950,7 +1950,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/blob/main/integration-kinesis-to-lambda-with-batch-item-handling) repository.
 Reporting Kinesis batch item failures with Lambda using Javascript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 exports.handler = async (event, context) => {
@@ -1981,7 +1981,7 @@ async function getRecordDataAsync(payload) {
 ```
 Reporting Kinesis batch item failures with Lambda using TypeScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import {
@@ -2040,7 +2040,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using JavaScript.
 
-```
+```javascript
 export const handler = async (event) => {
   const records = event.Records;
   let curRecordSequenceNumber = "";
@@ -2060,7 +2060,7 @@ export const handler = async (event) => {
 ```
 Reporting DynamoDB batch item failures with Lambda using TypeScript.
 
-```
+```javascript
 import {
   DynamoDBBatchResponse,
   DynamoDBBatchItemFailure,
@@ -2096,7 +2096,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using JavaScript.
 
-```
+```javascript
 // Node.js 20.x Lambda runtime, AWS SDK for Javascript V3
 export const handler = async (event, context) => {
     const batchItemFailures = [];
@@ -2119,7 +2119,7 @@ async function processMessageAsync(record, context) {
 ```
 Reporting SQS batch item failures with Lambda using TypeScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import { SQSEvent, SQSBatchResponse, Context, SQSBatchItemFailure, SQSRecord } from 'aws-lambda';

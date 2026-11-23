@@ -18,7 +18,7 @@ The example code in this section can be [found in its entirety on GitHub](https:
 
 The `*Output` structs returned by functions that receive incoming data contain a `body` property whose value is a `ByteStream`. The `ByteStream` returns its data either as a Swift `Data` object or as a Smithy `[ReadableStream](https://sdk.amazonaws.com/swift/api/smithy/latest/documentation/smithy/readablestream)`, from which you can read the data.
 
-```
+```swift
     /// Download a file from the specified bucket.
     ///
     /// - Parameters:
@@ -126,7 +126,7 @@ If the returned `GetObjectOutput` object's `body` property matches `.data`, the 
 
 When sending data to an AWS service, you can use a `ByteStream` to send data too large to reasonably store in memory in its entirety, or data that is being generated in real time.
 
-```
+```swift
     /// Upload a file to the specified bucket.
     ///
     /// - Parameters:

@@ -11,7 +11,7 @@ The following shows an example of the `pom.xml` file for a project that uses Ama
 **Example of POM**
 This example shows a `pom.xml` file entry for a project that uses both 1.x and 2.x versions of the SDK.
 
-```
+```xml
 <dependencyManagement>
     <dependencies>
         <dependency>

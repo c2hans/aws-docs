@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from "constructs";
 import { Stack, StackProps } from "aws-cdk-lib";
 import {
@@ -50,7 +50,7 @@ new ApiGateApiGatewayV2WebSocketToSqswayToSqs(this, "ApiGatewayV2WebSocketToSqsP
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_apigateway_sqs import ApiGatewayV2WebSocketToSqs
 from aws_cdk.aws_apigatewayv2_authorizers import WebSocketLambdaAuthorizer
 from aws_cdk import Stack
@@ -70,7 +70,7 @@ ApiGatewayV2WebSocketToSqs(self, 'ApiGatewayV2WebSocketToSqsPattern',
 )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

@@ -39,7 +39,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -86,7 +86,7 @@ For example, imagine you have a group of entry-level developers. You can create 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -119,7 +119,7 @@ This example shows how you might create a policy that allows users to interact w
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -160,7 +160,7 @@ The following sample policy allows the "describe" and "update" actions for users
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -192,7 +192,7 @@ The [BatchUpdateCase](https://docs.aws.amazon.com/connect/latest/APIReference/AP
 
 A policy that grants these actions without a `cases:IsBatchAction` condition allows both batch and single-case operations. With the following sample policy, you can update cases and create related items in both batch and single-case operations.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -214,7 +214,7 @@ A policy that grants these actions without a `cases:IsBatchAction` condition all
 
 With the following sample policy, you can update cases and create related items in batch operations only.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -241,7 +241,7 @@ With the following sample policy, you can update cases and create related items 
 
 An `Allow` statement without a `cases:IsBatchAction` condition permits both batch and single-case operations. To allow only single-case operations, add an explicit `Deny` statement for requests where `cases:IsBatchAction` is `true` or the condition key is missing. An explicit `Deny` overrides any `Allow`, so batch operations stay blocked even if another policy allows them. With the following sample policy, you can only update cases and create related items in single-case operations. The policy denies these actions for batch operations.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -282,7 +282,7 @@ The following sample policy allows the create actions for users with specific re
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -317,7 +317,7 @@ The following sample policy allows event integrations to be created, listed, and
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -346,7 +346,7 @@ The following sample policy allows agent assist assistants to be created, listed
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [
@@ -395,7 +395,7 @@ The following sample policy allows agent assist assistants to be created, listed
 
 Onboarding permissions: The following sample policy allows Connect Customer instances to be onboarded to outbound campaigns.
 
-```
+```json
 "Sid": "VisualEditor0",
              "Effect": "Allow",
              "Action": [
@@ -447,7 +447,7 @@ To disable outbound campaigns for an instance, add the following permissions:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -484,7 +484,7 @@ To disable outbound campaigns for an instance, add the following permissions:
 
 Management permissions: The following sample policy allows all read and write operations on outbound campaigns.
 
-```
+```json
 {
     "Sid": "AllowConnectCampaignsOperations",
     "Effect": "Allow",
@@ -508,7 +508,7 @@ Management permissions: The following sample policy allows all read and write op
 
 ReadOnly permissions: The following sample policy allows read-only access to the campaigns.
 
-```
+```json
 {
     "Sid": "AllowConnectCampaignsReadOnlyOperations",
     "Effect": "Allow",
@@ -524,7 +524,7 @@ ReadOnly permissions: The following sample policy allows read-only access to the
 
 Tag-based permissions: The following sample policy restricts access to the campaigns integrated with a particular Connect Customer instance using tags. More permissions can be added based on the use case.
 
-```
+```json
 {
     "Sid": "AllowConnectCampaignsOperations",
     "Effect": "Allow",

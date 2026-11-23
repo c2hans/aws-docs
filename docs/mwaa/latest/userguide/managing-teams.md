@@ -89,7 +89,7 @@ Use the `--teams` parameter of the `create-environment` and `update-environment`
 
 **Example Create an environment with two teams**  <a name="managing-teams-api-create-example"></a>
 
-```
+```bash
 aws mwaa create-environment \
   --name {{my-multi-team-environment}} \
   --airflow-version 3.3.1 \
@@ -115,7 +115,7 @@ aws mwaa create-environment \
 
 **Example Add a team to an existing environment**  <a name="managing-teams-api-update-example"></a>
 
-```
+```bash
 aws mwaa update-environment \
   --name {{my-multi-team-environment}} \
   --teams '{
@@ -159,7 +159,7 @@ Use the `Remove` field of the `--teams` parameter.
 
 **Example Remove two teams**  <a name="managing-teams-api-remove-example"></a>
 
-```
+```bash
 aws mwaa update-environment \
   --name {{my-multi-team-environment}} \
   --teams '{

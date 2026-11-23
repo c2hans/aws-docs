@@ -31,7 +31,7 @@ The following code example shows how to get started using Amazon Bedrock.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Bedrock#code-examples).
 
-```
+```csharp
 using Amazon;
 using Amazon.Bedrock;
 using Amazon.Bedrock.Model;
@@ -112,7 +112,7 @@ The following code example shows how to use `ListFoundationModels`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Bedrock#code-examples).
 List the available Bedrock foundation models.
 
-```
+```csharp
     /// <summary>
     /// List foundation models.
     /// </summary>

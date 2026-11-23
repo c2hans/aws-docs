@@ -14,7 +14,7 @@ The following code examples show how to use `ListEngagementInvitations`.
 **SDK for Java 2.x**
 Retrieves a list of engagement invitations sent to the partner.
 
-```
+```java
 package org.example;
 
 import java.util.ArrayList;
@@ -74,7 +74,7 @@ public class ListEngagementInvitations {
 **SDK for Python (Boto3)**
 Retrieves a list of engagement invitations sent to the partner.
 
-```
+```python
 #!/usr/bin/env python
 
 """

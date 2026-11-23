@@ -139,7 +139,7 @@ You can copy snapshots from one Region to another. You can copy an unencrypted s
 **To copy a snapshot to another Region**
 Use the [copy-snapshot](https://docs.aws.amazon.com/cli/latest/reference/ec2/copy-snapshot.html) command. The following example copies the specified snapshot from the source Region to the current Region, which is specified by the `--region` option.
 
-```
+```bash
 aws ec2 copy-snapshot \
     --source-snapshot-id {{snap-0abcdef1234567890}} \
     --source-region {{us-east-1}} \
@@ -149,7 +149,7 @@ aws ec2 copy-snapshot \
 **To copy an unencrypted snapshot to an encrypted snapshot**
 Use the [copy-snapshot](https://docs.aws.amazon.com/cli/latest/reference/ec2/copy-snapshot.html) command. The following example copies the specified unencrypted snapshot from the source Region to the current Region, encrypting the new snapshot using the specified KMS key.
 
-```
+```bash
 aws ec2 copy-snapshot \
     --source-snapshot-id {{snap-0abcdef1234567890}} \
     --source-region {{us-east-1}} \
@@ -163,7 +163,7 @@ aws ec2 copy-snapshot \
 **To copy a snapshot to another Region**
 Use the [Copy-EC2Snapshot](https://docs.aws.amazon.com/powershell/latest/reference/items/Copy-EC2Snapshot.html) cmdlet. The following example copies the specified snapshot from the source Region to the current Region, which is specified by the `--region` option.
 
-```
+```powershell
  Copy-EC2Snapshot `
     -SourceSnapshotId {{snap-0abcdef1234567890}} `
     -SourceRegion {{us-east-1}} `
@@ -173,7 +173,7 @@ Use the [Copy-EC2Snapshot](https://docs.aws.amazon.com/powershell/latest/referen
 **To copy an unencrypted snapshot to an encrypted snapshot**
 Use the [Copy-EC2Snapshot](https://docs.aws.amazon.com/powershell/latest/reference/items/Copy-EC2Snapshot.html) cmdlet. The following example copies the specified unencrypted snapshot from the source Region to the current Region, encrypting the new snapshot using the specified KMS key.
 
-```
+```powershell
  Copy-EC2Snapshot `
     -SourceSnapshotId {{snap-0abcdef1234567890}} `
     -SourceRegion {{us-east-1}} `

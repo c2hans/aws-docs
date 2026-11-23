@@ -14,7 +14,7 @@ The following code examples show how to get started using Step Functions.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
 namespace StepFunctionsActions;
 
 using Amazon.StepFunctions;
@@ -57,7 +57,7 @@ public class HelloStepFunctions
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 Java version of Hello.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sfn.SfnClient;
 import software.amazon.awssdk.services.sfn.model.ListStateMachinesResponse;
@@ -108,7 +108,7 @@ public class ListStateMachines {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.sfn.SfnClient
 import aws.sdk.kotlin.services.sfn.model.ListStateMachinesRequest
 
@@ -147,7 +147,7 @@ suspend fun listMachines() {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 import boto3
 
 def hello_stepfunctions(stepfunctions_client):

@@ -19,7 +19,7 @@ Goals for this project:
 
 Before we begin, make sure to prepare your development environment as described in [Set up](setting-up.md). To make sure you're set up properly, use the following command. This makes sure that Swift is available and which version it is.
 
-```
+```console
 $ swift --version
 ```
 
@@ -49,7 +49,7 @@ With the Swift tools installed, open a terminal session using your favorite term
 
 At the terminal prompt, go to the directory where you want to create the project. Then, enter the following series of commands to create an empty Swift project for a standard executable program.
 
-```
+```console
 $ mkdir ListBuckets
 $ cd ListBuckets
 $ swift package init --type executable
@@ -67,13 +67,13 @@ ListBuckets/
 
 Open your created project in your preferred text editor or IDE. On macOS, you can open the project in Xcode with the following:
 
-```
+```console
 $ xed .
 ```
 
 As another example, you can open the project in Visual Studio Code with the following:
 
-```
+```console
 $ code .
 ```
 
@@ -84,7 +84,7 @@ After opening the project in your editor, open the `Package.swift` file. This is
 
 The first line of every `Package.swift` file must be a comment specifying the minimum version of the Swift toolchain needed to build the project. This isn't only informational. The version specified here can change the behavior of the tools for compatibility purposes. The AWS SDK for Swift requires at least version 6.0 of the Swift tools.
 
-```
+```swift
 // swift-tools-version:6.0
 ```
 
@@ -93,7 +93,7 @@ The first line of every `Package.swift` file must be a comment specifying the mi
 
 For projects whose target operating systems include any Apple platform, add or update the `[platforms](https://developer.apple.com/documentation/packagedescription/package/platforms)` property to include a list of the supported Apple platforms and minimum required versions. This list only specifies support for Apple platforms and doesn't preclude building for other platforms.
 
-```
+```swift
     // Let Xcode know the minimum Apple platforms supported.
     platforms: [
         .macOS(.v11),
@@ -108,7 +108,7 @@ In this excerpt, the supported Apple platforms are macOS (version 11.0 and highe
 
 The package dependency list needs to include the AWS SDK for Swift. This tells the Swift compiler to fetch the SDK and its dependencies before attempting to build the project.
 
-```
+```swift
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(
@@ -123,7 +123,7 @@ The package dependency list needs to include the AWS SDK for Swift. This tells t
 
 Now that the package depends on the AWS SDK for Swift, add a dependency to the executable program's target. Indicate that it relies on Amazon S3, which is offered by the SDK's `AWSS3` product.
 
-```
+```swift
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
@@ -141,7 +141,7 @@ Now that the package depends on the AWS SDK for Swift, add a dependency to the e
 
 The example program's Swift code is found in the `Source/entry.swift` file. This file begins by importing the needed Swift modules, using the `import` statement.
 
-```
+```swift
 import AWSClientRuntime
 import AWSS3
 import Foundation
@@ -157,7 +157,7 @@ After you add the SDK for Swift to your project and import the service you want 
 
 Each AWS service is represented by a specific client class in the AWS SDK for Swift. For example, while the Amazon DynamoDB client class is called `[DynamoDBClient](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient)`, the class for Amazon Simple Storage Service is `S3Client`. To use Amazon S3 in this example, first create an `[S3Client](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client)` object on which to call the SDK's Amazon S3 functions.
 
-```
+```swift
         // To set the Region programmatically, pass it to the initializer:
         //   let configuration = try await S3Client.S3ClientConfig(region: "us-east-2")
         let configuration = try await S3Client.S3ClientConfig()
@@ -169,7 +169,7 @@ Each AWS service is represented by a specific client class in the AWS SDK for Sw
 
 To issue a request to an AWS service, call the corresponding function on the service's client object. Each function's inputs are specified using a function-specific input structure as the value of the function's `input` parameter. For example, when calling `[S3Client.listBuckets(input:)](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/listbuckets(input:))`, `input` is a structure of type `[ListBucketsInput](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/listbucketsinput)`.
 
-```
+```swift
         // Use "Paginated" to get all the buckets.
         // This lets the SDK handle the 'continuationToken' in "ListBucketsOutput".
         let pages = client.listBucketsPaginated(
@@ -184,7 +184,7 @@ Functions defined by the AWS SDK for Swift run asynchronously, so the example us
 
 This example's main program calls `getBucketNames()` to get an array containing all of the bucket names. That function is defined as follows.
 
-```
+```swift
 // Return an array containing the names of all available buckets.
 //
 // - Returns: An array of strings listing the buckets.
@@ -233,7 +233,7 @@ This function starts by creating an Amazon S3 client and calling its `[listBucke
 
 To allow the use of asynchronous functions from within `main()`, use Swift's `@main` attribute to create an object that contains a static `async` function called `main()`. Swift will use this as the program entry point.
 
-```
+```swift
 @main
 struct Main {
     static func main() async {

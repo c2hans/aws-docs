@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
 ![Diagram that shows securely accessing AWS resources over the internet.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-client-vpn-remote-access.png)
 
+AWS Client VPN Remote Access
+
  The remote clients can be the AWS Client VPN for Desktop, or third-party OpenVPN VPN clients, with authentication by either Active Directory or mutual certificate authentication.
 
 ## Additional resources

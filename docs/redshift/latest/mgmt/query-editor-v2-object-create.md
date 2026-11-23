@@ -35,13 +35,13 @@ For information about databases, see [CREATE DATABASE](https://docs.aws.amazon.c
 
    When you choose the optional step to query a database created from a AWS Glue Data Catalog, connect to your Amazon Redshift database in the cluster or workgroup (for example, the default database `dev`), and use three-part notation (database.schema.table) that references the database name you created when you selected **Create using AWS Glue Data Catalog**, the schema you named in **Data catalog schema**, and the table in the AWS Glue Data Catalog. Similar to:
 
-   ```
+   ```sql
    SELECT * FROM {{glue-database}}.{{glue-schema}}.{{glue-table}}
    ```
 **Note**
 Confirm that you are connected to the default database using the connection method **Temporary credentials using your IAM identity**, and that your IAM credentials have been granted usage privilege to the AWS Glue database.
 
-   ```
+   ```sql
    GRANT USAGE ON DATABASE {{glue-database}} to "IAM:MyIAMUser"
    ```
 
@@ -81,7 +81,7 @@ The following example describes a specific scenario that was used to create a da
 **Note**
 In the query editor v2 editor view, the selected cluster is `cluster-view`. The selected database is `dev`. The database `see_datashare_base` is listed but is not enabled for direct connection. You choose the `dev` database and reference `see_datashare_base` in the SQL you run.
 
-   ```
+   ```sql
    SELECT * FROM "see_datashare_base"."public"."category2";
    ```
 
@@ -109,7 +109,7 @@ The following example describes a specific scenario that was used to create a da
 **Note**
 In the query editor v2 editor view, the selected cluster is `cluster-view`. The selected database is `dev`. The database `data_catalog_database` is listed but is not enabled for direct connection. You choose the `dev` database and reference `data_catalog_database` in the SQL you run.
 
-   ```
+   ```sql
    SELECT * FROM "data_catalog_database"."myschema"."category3";
    ```
 

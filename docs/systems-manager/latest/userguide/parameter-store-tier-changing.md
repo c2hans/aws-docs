@@ -36,7 +36,7 @@ The following procedure shows how to use the AWS CLI to set the default paramete
 
 1. Open the AWS CLI and run the following command to set the default parameter tier setting for a specific AWS Region in an AWS account.
 
-   ```
+   ```bash
    aws ssm update-service-setting \
        --region {{region}} \
        --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/parameter-store/default-parameter-tier \
@@ -51,7 +51,7 @@ The following procedure shows how to use the AWS CLI to set the default paramete
 
 1. Run the following command to view the current default parameter tier service settings for Parameter Store in the current AWS account and AWS Region.
 
-   ```
+   ```bash
    aws ssm get-service-setting \
        --region {{region}} \
        --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/parameter-store/default-parameter-tier
@@ -59,7 +59,7 @@ The following procedure shows how to use the AWS CLI to set the default paramete
 
    The command returns output similar to the following.
 
-   ```
+   ```json
    {
        "ServiceSetting": {
            "SettingId": "/ssm/parameter-store/default-parameter-tier",
@@ -83,7 +83,7 @@ The following procedure shows how to use the Tools for Windows PowerShell to set
 
 1. Set the Parameter Store default tier in the current AWS account and AWS Region using the AWS Tools for PowerShell (Tools for PowerShell).
 
-   ```
+   ```powershell
    Update-SSMServiceSetting -SettingId "arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/parameter-store/default-parameter-tier" -SettingValue "{{tier-option}}" -Region {{region}}
    ```
 
@@ -95,7 +95,7 @@ The following procedure shows how to use the Tools for Windows PowerShell to set
 
 1. Run the following command to view the current default parameter tier service settings for Parameter Store in the current AWS account and AWS Region.
 
-   ```
+   ```powershell
    Get-SSMServiceSetting -SettingId "arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/parameter-store/default-parameter-tier" -Region {{region}}
    ```
 
@@ -103,7 +103,7 @@ The following procedure shows how to use the Tools for Windows PowerShell to set
 
    The command returns output similar to the following.
 
-   ```
+   ```text
    ARN : arn:aws:ssm:us-east-2:123456789012:servicesetting/ssm/parameter-store/default-parameter-tier
    LastModifiedDate : 4/29/2019 3:35:44 PM
    LastModifiedUser : arn:aws:sts::123456789012:assumed-role/Administrator/Jasper

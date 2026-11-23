@@ -46,7 +46,7 @@ To complete this tutorial, you must meet the following prerequisites:
 + The [Greengrass device role](device-service-role.md) configured with the following:
   + <a name="sm-req-iam-trust-relationship"></a>A trust relationship that allows `credentials.iot.amazonaws.com` and `sagemaker.amazonaws.com` to assume the role, as shown in the following IAM policy example.
 
-    ```
+    ```json
     {
       "Version": "2012-10-17",
       "Statement": [
@@ -76,7 +76,7 @@ To complete this tutorial, you must meet the following prerequisites:
 
 ****
 
-    ```
+    ```json
     {
       "Version":"2012-10-17",
       "Statement": [
@@ -152,13 +152,13 @@ To help you get started using the SageMaker AI Edge Manager component, AWS provi
 
 1. Navigate to the downloaded `/machine-learning/sagemaker-edge-manager` folder.
 
-   ```
+   ```bash
    cd {{download-directory}}/machine-learning/sagemaker-edge-manager
    ```
 
 1. Run the following command to create and upload the sample components to the AWS Cloud.
 
-   ```
+   ```bash
    python3 create_components.py -r {{region}} -b amzn-s3-demo-bucket
    ```
 
@@ -228,7 +228,7 @@ In this step, you configure and deploy the following components to your core dev
 
    1. Under **Configuration update**, in **Configuration to merge**, enter the following configuration.
 
-      ```
+      ```json
       {
           "DeviceFleetName": "{{device-fleet-name}}",
           "BucketName": "{{amzn-s3-demo-bucket}}"
@@ -248,7 +248,7 @@ In this step, you configure and deploy the following components to your core dev
 
 1. On your development computer, create a `deployment.json` file to define the deployment configuration for your SageMaker AI Edge Manager components. This file should look like the following example.
 
-   ```
+   ```json
    {
      "targetArn":"{{targetArn}}",
      "components": {
@@ -279,7 +279,7 @@ In this step, you configure and deploy the following components to your core dev
 
 1. Run the following command to deploy the components on the device:
 
-   ```
+   ```bash
    aws greengrassv2 create-deployment \
        --cli-input-json file://{{path/to/}}deployment.json
    ```
@@ -298,13 +298,13 @@ After you deploy the components, you can view the inference results in the compo
 
 + **Component log**—To view the inference results in the component log, run the following command on your Greengrass core device.
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/com.greengrass.SageMakerEdgeManager.ImageClassification.log
   ```
 
 If you can't see inference results in the component log or in the MQTT client, the deployment failed or didn't reach the core device. This can occur if your core device isn't connected to the internet or doesn't have the right permissions to run the component. Run the following command on your core device to view the AWS IoT Greengrass Core software log file. This file includes logs from the Greengrass core device's deployment service.
 
-```
+```bash
 sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
 ```
 

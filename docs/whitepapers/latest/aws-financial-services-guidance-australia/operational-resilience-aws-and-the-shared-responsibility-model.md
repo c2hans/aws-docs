@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 
 ![Diagram showing the AWS shared responsibility model](https://docs.aws.amazon.com/whitepapers/latest/aws-financial-services-guidance-australia/images/shared-responsibility-model.png)
 
+*AWS Shared Responsibility Model*
+
  The AWS Shared Responsibility Model is fundamental to understanding the respective roles of AWS and its customers within the context of cloud services. AWS is responsible for the resiliency of the hardware, software, networking, and facilities that run the services offered by AWS.
 
  The responsibility of AWS customers is determined by the AWS services they select, because the service selection determines the amount of configuration work that customers must perform as part of their resiliency responsibilities. For example, a service such as [Amazon Elastic Compute Cloud (Amazon EC2)](https://aws.amazon.com/ec2) requires customers to perform all the necessary resiliency configuration and management tasks. Customers that deploy Amazon EC2 instances are responsible for [deploying Amazon EC2 instances across multiple locations](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/use-fault-isolation-to-protect-your-workload.html) (such as AWS Availability Zones), and can [implement self-healing](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/design-your-workload-to-withstand-component-failures.html) architectures using services such as Amazon EC2 Auto Scaling, and using [resilient workload architecture best practices](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/workload-architecture.html) for applications installed on the Amazon EC2 instances.

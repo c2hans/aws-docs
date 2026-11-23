@@ -85,7 +85,7 @@ If you choose **Add gateway** in your mobile app, but the app can't find the gat
 
 |  |  |
 | --- |--- |
-|  ![Mobile phone connecting via Bluetooth to AWS service represented by orange square icon.](https://docs.aws.amazon.com/Monitron/latest/user-guide/images/gs-gateway-bluetooth.png)  |  ![Smartphone connecting via Bluetooth to a streaming device with cable.](https://docs.aws.amazon.com/Monitron/latest/user-guide/images/phone-bluetooth-ethernet-gateway-small.png)  |
+|  ![Mobile phone connecting via Bluetooth to AWS service represented by orange square icon.](https://docs.aws.amazon.com/Monitron/latest/user-guide/images/gs-gateway-bluetooth.png)<br />Bluetooth pairing with a Wi-Fi gateway  |  ![Smartphone connecting via Bluetooth to a streaming device with cable.](https://docs.aws.amazon.com/Monitron/latest/user-guide/images/phone-bluetooth-ethernet-gateway-small.png)<br />Bluetooth pairing with an Ethernet gateway.  |
 + **Make sure that the gateway is turned on.**
 
   Check the lights on the front of the gateway. If at least one of them is on, then the gateway has power. If the gateway has no power, check the following:

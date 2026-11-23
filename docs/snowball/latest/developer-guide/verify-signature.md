@@ -14,7 +14,7 @@ You can download the SIGNATURE file for the Linux operating system installer fro
 
 1. Copy the following public key, save it to a file, and name the file. For example, `opshub-public-key.pgp`.
 
-   ```
+   ```sh
    -----BEGIN PGP PUBLIC KEY BLOCK-----
    xsFNBF/hGf8BEAC9HCDV8uljDX02Jxspi6kmPu4xqf4ZZLQsSqJcHU61oL/c
    /zAN+mUqJT9aJ1rr0QFGVD1bMogecUPflTWlDkEEpG8ZbX5P8vR+EElO/rW/
@@ -86,12 +86,12 @@ You can download the SIGNATURE file for the Linux operating system installer fro
 
 1. Use a cryptographic software suite such as GNU Privacy Guard to import the public key into your keyring, and note the returned key value.
 
-   ```
+   ```sh
    gpg --import opshub-public-key.pgp
    ```
 **Example output of command**
 
-   ```
+   ```bash,sh,zsh
    gpg: key 1655BBDE2B770256: public key "AWS OpsHub for Snowball Edge <aws-opshub-signer@amazon.com>" imported
    gpg: Total number processed: 1
    gpg:               imported: 1
@@ -99,13 +99,13 @@ You can download the SIGNATURE file for the Linux operating system installer fro
 
 1. Verify the fingerprint. Be sure to replace {{`key-value`}} with the value from the preceding step. We recommend that you use GPG to verify the fingerprint.
 
-   ```
+   ```sh
    gpg --fingerprint {{key-value}}
    ```
 
    This command returns output similar to the following.
 
-   ```
+   ```sh
    pub   rsa4096 2020-12-21 [SC]
          372F A5E9 4869 8F77 D1B3  AFAA 2181 CF5A 74F3 45F1
    uid           [ unknown] AWS OpsHub for Snowball Edge <aws-opshub-signer@amazon.com>
@@ -125,7 +125,7 @@ You can download the SIGNATURE file for the Linux operating system installer fro
 ------
 #### [ GPG ]
 
-   ```
+   ```sh
    gpg --verify {{signature-filename}} {{OpsHub-download-filename}}
    ```
 
@@ -136,7 +136,7 @@ You can download the SIGNATURE file for the Linux operating system installer fro
 ------
 #### [ GPG ]
 
-   ```
+   ```sh
    gpg: Signature made Mon Dec 21 13:44:47 2020 PST
    gpg:                using RSA key 1655BBDE2B770256
    gpg: Good signature from "AWS OpsHub for Snowball Edge <aws-opshub-signer@amazon.com>" [unknown]

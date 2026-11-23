@@ -61,7 +61,7 @@ Using the job management API to create jobs requires the following trust policy.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -96,7 +96,7 @@ Creating an import job requires the following role policy.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -143,7 +143,7 @@ Creating an export job requires the following role policy.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -178,7 +178,7 @@ In some cases, the Amazon S3 buckets that you use with Snowball Edge have bucket
 **Example**
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": {
@@ -235,7 +235,7 @@ The preceding procedure creates an IAM role that has write permissions for the A
 
 ****
 
-```
+```json
           {
   "Version":"2012-10-17",
   "Statement": [
@@ -283,7 +283,7 @@ If you use server-side encryption with AWS KMS–managed keys (SSE-KMS) to encry
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

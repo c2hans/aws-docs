@@ -14,7 +14,7 @@ The following is the **trust policy** for the IAM role. In the following IAM pol
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -50,7 +50,7 @@ In the following IAM permission policy, make the following changes:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

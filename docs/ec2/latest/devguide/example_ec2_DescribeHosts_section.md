@@ -65,7 +65,7 @@ For more information, see [Monitor the state of your Amazon EC2 Dedicated Hosts]
 **Tools for PowerShell V4**
 **Example 1: This example returns the EC2 host details**
 
-```
+```powershell
 Get-EC2Host
 ```
 **Output:**
@@ -86,7 +86,7 @@ Tags              : {}
 ```
 **Example 2: This example queries the AvailableInstanceCapacity for the host h-01e23f4cd567899f1**
 
-```
+```powershell
 Get-EC2Host -HostId h-01e23f4cd567899f1 | Select-Object -ExpandProperty AvailableCapacity | Select-Object -expand AvailableInstanceCapacity
 ```
 **Output:**
@@ -101,7 +101,7 @@ AvailableCapacity InstanceType TotalCapacity
 **Tools for PowerShell V5**
 **Example 1: This example returns the EC2 host details**
 
-```
+```powershell
 Get-EC2Host
 ```
 **Output:**
@@ -122,7 +122,7 @@ Tags              : {}
 ```
 **Example 2: This example queries the AvailableInstanceCapacity for the host h-01e23f4cd567899f1**
 
-```
+```powershell
 Get-EC2Host -HostId h-01e23f4cd567899f1 | Select-Object -ExpandProperty AvailableCapacity | Select-Object -expand AvailableInstanceCapacity
 ```
 **Output:**

@@ -29,7 +29,7 @@ The following code example shows how to use `CreateContact`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
 
-```
+```rust
 async fn add_contact(client: &Client, list: &str, email: &str) -> Result<(), Error> {
     client
         .create_contact()
@@ -53,7 +53,7 @@ The following code example shows how to use `CreateContactList`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
 
-```
+```rust
 async fn make_list(client: &Client, contact_list: &str) -> Result<(), Error> {
     client
         .create_contact_list()
@@ -76,7 +76,7 @@ The following code example shows how to use `CreateEmailIdentity`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
 
-```
+```rust
         match self
             .client
             .create_email_identity()
@@ -106,7 +106,7 @@ The following code example shows how to use `CreateEmailTemplate`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
 
-```
+```rust
         let template_html =
             std::fs::read_to_string("../resources/newsletter/coupon-newsletter.html")
                 .unwrap_or_else(|_| "Missing coupon-newsletter.html".to_string());
@@ -151,7 +151,7 @@ The following code example shows how to use `DeleteContactList`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
 
-```
+```rust
         match self
             .client
             .delete_contact_list()
@@ -173,7 +173,7 @@ The following code example shows how to use `DeleteEmailIdentity`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
 
-```
+```rust
             match self
                 .client
                 .delete_email_identity()
@@ -197,7 +197,7 @@ The following code example shows how to use `DeleteEmailTemplate`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
 
-```
+```rust
         match self
             .client
             .delete_email_template()
@@ -222,7 +222,7 @@ The following code example shows how to use `GetEmailIdentity`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
 Determines whether an email address has been verified.
 
-```
+```rust
 async fn is_verified(client: &Client, email: &str) -> Result<(), Error> {
     let resp = client
         .get_email_identity()
@@ -249,7 +249,7 @@ The following code example shows how to use `ListContactLists`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
 
-```
+```rust
 async fn show_lists(client: &Client) -> Result<(), Error> {
     let resp = client.list_contact_lists().send().await?;
 
@@ -272,7 +272,7 @@ The following code example shows how to use `ListContacts`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
 
-```
+```rust
 async fn show_contacts(client: &Client, list: &str) -> Result<(), Error> {
     let resp = client
         .list_contacts()
@@ -300,7 +300,7 @@ The following code example shows how to use `SendEmail`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
 Sends a message to all members of the contact list.
 
-```
+```rust
 async fn send_message(
     client: &Client,
     list: &str,
@@ -358,7 +358,7 @@ async fn send_message(
 ```
 Sends a message to all members of the contact list using a template.
 
-```
+```rust
             let coupons = std::fs::read_to_string("../resources/newsletter/sample_coupons.json")
                 .unwrap_or_else(|_| r#"{"coupons":[]}"#.to_string());
             let email_content = EmailContent::builder()
@@ -411,7 +411,7 @@ The following code example shows how to run the Amazon SES API v2 newsletter sce
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
 
-```
+```rust
         match self
             .client
             .create_contact_list()

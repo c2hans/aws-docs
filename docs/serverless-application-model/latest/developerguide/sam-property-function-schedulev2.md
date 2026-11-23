@@ -16,7 +16,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-schedulev2-syntax.yaml"></a>
 
-```
+```yaml
 [DeadLetterConfig](#sam-function-schedulev2-deadletterconfig): {{DeadLetterConfig}}
 [Description](#sam-function-schedulev2-description): {{String}}
 [EndDate](#sam-function-schedulev2-enddate): {{String}}
@@ -144,7 +144,7 @@ The state of the Scheduler schedule.
 ### Basic example of defining a ScheduleV2 resource
 <a name="sam-property-function-schedulev2--examples--example1"></a>
 
-```
+```yaml
 Resources:
   Function:
     Properties:

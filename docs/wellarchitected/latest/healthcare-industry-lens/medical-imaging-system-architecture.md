@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 
 ![Diagram of a cloud-based medical imaging system architecture.](https://docs.aws.amazon.com/wellarchitected/latest/healthcare-industry-lens/images/cloud-based-medical-imaging-system.png)
 
+*A cloud-based medical imaging system, such as a PACS or VNA, on AWS. High availability and low-latency study retrieval for medical imaging solutions.*
+
 +  The solution should be highly available and deployed across multiple AWS Availability Zones.
 +  Medical imaging systems often consist of front-end viewers, application servers, databases, and storage for the imaging data. Where possible, each tier of the solution should be able to auto scale independently. Containerization or serverless can simplify operations. Auto Scaling based on load provides performance during peak demand and minimize costs during periods of low demand.
 +  Images may be programmatically retrieved using the DICOM Message Service Element (DIMSE) or DICOMweb protocol. A Network Load Balancer may be used to route traffic on ports used by DIMSE.

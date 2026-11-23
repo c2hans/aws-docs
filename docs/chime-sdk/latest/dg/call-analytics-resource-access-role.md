@@ -18,7 +18,7 @@ The role requires the following policy, at a minimum:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -73,7 +73,7 @@ You must also use the following trust policy:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -108,7 +108,7 @@ If you use the `KinesisDataStreamSink`, add the following policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -150,7 +150,7 @@ If you use the `S3RecordingSink`, add the following policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -221,7 +221,7 @@ If you use the Post Call Analytics feature of the `AmazonTranscribeCallAnalytics
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -255,7 +255,7 @@ If you use the `VoiceEnhancementSinkConfiguration` element, add the following po
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -325,7 +325,7 @@ If you use the `VoiceAnalyticsProcessor`, add the policies for `LambdaFunctionSi
 `LambdaFunctionSink` policy:
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -346,7 +346,7 @@ If you use the `VoiceAnalyticsProcessor`, add the policies for `LambdaFunctionSi
 `SqsQueueSink` policy
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -377,7 +377,7 @@ If you use the `VoiceAnalyticsProcessor`, add the policies for `LambdaFunctionSi
 `SnsTopicSink` policy:
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

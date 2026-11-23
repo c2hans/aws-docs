@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="creategroupcertificateauthority-post-cli"></a>
 
-```
+```bash
 aws greengrass create-group-certificate-authority \
   --group-id <value> \
   [--amzn-client-token <value>]  \
@@ -25,7 +25,7 @@ aws greengrass create-group-certificate-authority \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "AmznClientToken": "string"
@@ -52,7 +52,7 @@ type: string
 Success. The response body contains the new, active CA ARN.
  [ CreateGroupCertificateAuthorityResponse](definitions-creategroupcertificateauthorityresponse.md)
 
-```
+```json
 {
 "GroupCertificateAuthorityArn": "string"
 }
@@ -67,7 +67,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -103,7 +103,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

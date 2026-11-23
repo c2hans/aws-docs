@@ -43,7 +43,7 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/using-azure-mon
 
  Alternatively on step 4, if you are creating a new Azure Entra ID App, use the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest):
 
-```
+```bash
 az ad sp create-for-rbac -n "http://localhost:3000"
 ```
 

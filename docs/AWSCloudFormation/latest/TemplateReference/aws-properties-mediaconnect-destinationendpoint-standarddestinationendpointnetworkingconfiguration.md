@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::DestinationEndpoint StandardDestinationEndpointNetworkingConfiguration
 
-<a name="aws-properties-mediaconnect-destinationendpoint-standarddestinationendpointnetworkingconfiguration-description"></a>The `StandardDestinationEndpointNetworkingConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::DestinationEndpoint](aws-resource-mediaconnect-destinationendpoint.md).
+The networking configuration for a standard destination endpoint. This is a union type, so exactly one of its members is set: `public` for a publicly accessible endpoint, or `vpc` for an endpoint in a virtual private cloud (VPC).
 
 ## Syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-standarddestinationendpointnetworkingconfiguration-syntax"></a>
@@ -37,13 +37,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-standarddestinationendpointnetworkingconfiguration-properties"></a>
 
 `Public`  <a name="cfn-mediaconnect-destinationendpoint-standarddestinationendpointnetworkingconfiguration-public"></a>
-Property description not available.
+The configuration for a publicly accessible destination endpoint.
 *Required*: No
 *Type*: [PublicDestinationEndpointNetworkingConfiguration](aws-properties-mediaconnect-destinationendpoint-publicdestinationendpointnetworkingconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Vpc`  <a name="cfn-mediaconnect-destinationendpoint-standarddestinationendpointnetworkingconfiguration-vpc"></a>
-Property description not available.
+The configuration for a destination endpoint in a virtual private cloud (VPC).
 *Required*: No
 *Type*: [VpcDestinationEndpointNetworkingConfiguration](aws-properties-mediaconnect-destinationendpoint-vpcdestinationendpointnetworkingconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

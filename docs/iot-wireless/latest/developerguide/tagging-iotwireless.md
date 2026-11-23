@@ -76,7 +76,7 @@ The following example policy applies two tag-based restrictions. An IAM user res
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -125,7 +125,7 @@ The following example policy applies two tag-based restrictions. An IAM user res
 
 You can also specify multiple tag values for a given tag key by enclosing them in a list, like this:
 
-```
+```JSON
 "StringEquals" : {
               "aws:ResourceTag/env" : ["dev", "test"]
 }

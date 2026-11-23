@@ -47,7 +47,7 @@ Don't attach permission policies directly to your IAM users. We recommend settin
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -92,7 +92,7 @@ Copy the **Ops** or **Viewer** roles to grant more or less access, respectively.
 
 1. Using access credentials for `MWAAUser`, run the following CLI command to retrieve your environment's webserver URL.
 
-   ```
+   ```bash
    aws mwaa get-environment --name {{YOUR_ENVIRONMENT_NAME}} | jq '.Environment.WebserverUrl'
    ```
 
@@ -104,7 +104,7 @@ Copy the **Ops** or **Viewer** roles to grant more or less access, respectively.
 
 1. With `MWAAUser` signed in to the AWS Management Console, open a new browser window and access the following URl. Replace `Webserver-URL` with your information.
 
-   ```
+   ```http
    https://{{<Webserver-URL>}}/home
    ```
 

@@ -78,7 +78,7 @@ When you complete the procedure listed above, Infrastructure Composer performs s
 
 When you drag an **RDS Database (external)** card onto the canvas, Infrastructure Composer updates the `Metadata` and `Parameters` sections of your template as needed. The following is an example:
 
-```
+```yaml
 Metadata:
   AWS::Composer::ExternalResources:
     ExternalRDS:
@@ -107,7 +107,7 @@ String values in the `Metadata` and `Parameters` section use the logical ID valu
 
 When you connect a **Lambda Function** card to the **RDS Database (external)** card, Infrastructure Composer provisions environment variables and AWS Identity and Access Management (IAM) policies. The following is an example:
 
-```
+```yaml
 Resources:
   Function:
     Type: AWS::Serverless::Function

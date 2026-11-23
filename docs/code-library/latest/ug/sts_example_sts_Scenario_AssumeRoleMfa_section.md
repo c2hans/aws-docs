@@ -22,7 +22,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sts#code-examples).
 Create an IAM user, register an MFA device, and create a role that grants permission to list S3 buckets. The user has rights only to assume the role.
 
-```
+```python
 def setup(iam_resource):
     """
     Creates a new user with no permissions.
@@ -144,7 +144,7 @@ def setup(iam_resource):
 ```
 Show that assuming the role without an MFA token is not allowed.
 
-```
+```python
 def try_to_assume_role_without_mfa(assume_role_arn, session_name, sts_client):
     """
     Shows that attempting to assume the role without sending MFA credentials results
@@ -166,7 +166,7 @@ def try_to_assume_role_without_mfa(assume_role_arn, session_name, sts_client):
 ```
 Assume the role that grants permission to list S3 buckets, passing the required MFA token, and show that buckets can be listed.
 
-```
+```python
 def list_buckets_from_assumed_role_with_mfa(
     assume_role_arn, session_name, mfa_serial_number, mfa_totp, sts_client
 ):
@@ -207,7 +207,7 @@ def list_buckets_from_assumed_role_with_mfa(
 ```
 Destroy the resources created for the demo.
 
-```
+```python
 def teardown(user, virtual_mfa_device, role):
     """
     Removes all resources created during setup.
@@ -236,7 +236,7 @@ def teardown(user, virtual_mfa_device, role):
 ```
 Run this scenario by using the previously defined functions.
 
-```
+```python
 def usage_demo():
     """Drives the demonstration."""
     print("-" * 88)

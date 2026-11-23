@@ -26,7 +26,7 @@ This following example shows how you might create a policy that uses bracket not
 
 For more information about using token attributes in policies in Verified Permissions, see [Mapping Amazon Cognito tokens to schema](cognito-map-token-to-schema.md) and [Mapping OIDC tokens to schema](oidc-map-token-to-schema.md).
 
-```
+```cedar
 permit (
     principal in MyCorp::UserGroup::"us-west-2_EXAMPLE|MyUserGroup",
     action,
@@ -46,7 +46,7 @@ This following example shows how you might create a policy that uses dot notatio
 
 For more information about using token attributes in policies in Verified Permissions, see [Mapping Amazon Cognito tokens to schema](cognito-map-token-to-schema.md) and [Mapping OIDC tokens to schema](oidc-map-token-to-schema.md).
 
-```
+```cedar
 permit(principal, action, resource)
 when {
     principal.cognito.username == "alice" &&
@@ -63,7 +63,7 @@ This following example shows how you might create a policy references ID token a
 
 For more information about using token attributes in policies in Verified Permissions, see [Mapping Amazon Cognito tokens to schema](cognito-map-token-to-schema.md) and [Mapping OIDC tokens to schema](oidc-map-token-to-schema.md).
 
-```
+```cedar
 permit (
     principal in MyCorp::UserGroup::"us-west-2_EXAMPLE|MyUserGroup",
     action,
@@ -83,7 +83,7 @@ This following example shows how you might create a policy references ID token a
 
 For more information about using token attributes in policies in Verified Permissions, see [Mapping Amazon Cognito tokens to schema](cognito-map-token-to-schema.md) and [Mapping OIDC tokens to schema](oidc-map-token-to-schema.md).
 
-```
+```cedar
 permit (
     principal in MyCorp::UserGroup::"MyOIDCProvider|MyUserGroup",
     action,
@@ -101,7 +101,7 @@ This following example shows how you might create a policy references access tok
 
 For more information about using token attributes in policies in Verified Permissions, see [Mapping Amazon Cognito tokens to schema](cognito-map-token-to-schema.md) and [Mapping OIDC tokens to schema](oidc-map-token-to-schema.md).
 
-```
+```cedar
 permit(principal, action in [MyApplication::Action::"Read", MyApplication::Action::"GetStoreInventory"], resource)
 when {
     context.token.client_id == "52n97d5afhfiu1c4di1k5m8f60" &&
@@ -116,7 +116,7 @@ This following example shows how you might create a policy references access tok
 
 For more information about using token attributes in policies in Verified Permissions, see [Mapping Amazon Cognito tokens to schema](cognito-map-token-to-schema.md) and [Mapping OIDC tokens to schema](oidc-map-token-to-schema.md).
 
-```
+```cedar
 permit(
     principal,
     action in [MyApplication::Action::"Read", MyApplication::Action::"GetStoreInventory"],

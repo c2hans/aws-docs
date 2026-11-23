@@ -195,7 +195,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of UpdateAgentActionGroup.
 
-```
+```json
 PUT /agents/AGENT12345/agentversions/1/actiongroups/ACTION1234/ HTTP/1.1
 Content-type: application/json
 

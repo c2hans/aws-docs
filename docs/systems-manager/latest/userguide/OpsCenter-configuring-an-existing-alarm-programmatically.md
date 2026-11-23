@@ -255,7 +255,7 @@ import com.amazonaws.services.cloudwatch.AmazonCloudWatch;
 
 **Update all alarms** – Use the following Java code snippet to update all CloudWatch alarms in your AWS account to create OpsItems when an alarm enters the `ALARM` state.
 
-```
+```java
 import com.amazonaws.services.cloudwatch.AmazonCloudWatch;
     import com.amazonaws.services.cloudwatch.AmazonCloudWatchClientBuilder;
     import com.amazonaws.services.cloudwatch.model.DescribeAlarmsRequest;

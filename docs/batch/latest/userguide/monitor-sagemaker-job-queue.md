@@ -8,7 +8,7 @@ You can monitor the status of jobs in your SageMaker Training job queue using `l
 
 View running jobs in your queue:
 
-```
+```sh
 aws batch list-service-jobs \
   --job-queue {{my-sm-training-fifo-jq}} \
   --job-status RUNNING
@@ -16,7 +16,7 @@ aws batch list-service-jobs \
 
 View jobs waiting in the queue:
 
-```
+```sh
 aws batch list-service-jobs \
   --job-queue {{my-sm-training-fifo-jq}} \
   --job-status RUNNABLE
@@ -24,7 +24,7 @@ aws batch list-service-jobs \
 
 View jobs that have been submitted to SageMaker but not yet running:
 
-```
+```sh
 aws batch list-service-jobs \
   --job-queue {{my-sm-training-fifo-jq}} \
   --job-status SCHEDULED
@@ -32,7 +32,7 @@ aws batch list-service-jobs \
 
 Get a snapshot of jobs at the front of your queue:
 
-```
+```sh
 aws batch get-job-queue-snapshot --job-queue my-sm-training-fifo-jq
 ```
 

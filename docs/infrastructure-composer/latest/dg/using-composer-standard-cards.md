@@ -8,7 +8,7 @@ All CloudFormation resources are available to use as **standard IaC resource car
 
 You can modify your infrastructure code through the **Template** view and through the **Resource properties** window. For example, the following is an example starting template of an `Alexa::ASK::Skill` standard IaC resource:
 
-```
+```yaml
 Resources:
   Skill:
     Type: Alexa::ASK::Skill

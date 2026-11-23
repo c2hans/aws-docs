@@ -120,7 +120,7 @@ The version of the schema, for example "`1.0"`.
 
 The following example shows the structure of the JSON in the schema file.
 
-```
+```JSON
 {
         "inputContentType": "CSV",
         "outputContentType": "CSV",

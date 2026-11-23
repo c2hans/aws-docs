@@ -24,7 +24,7 @@ The following code example shows how to use `InvokeAgent`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/bdz#code-examples).
 
-```
+```sap-abap
     DATA(lo_result) = lo_bdz->invokeagent(
       iv_agentid      = iv_agentid
         iv_agentaliasid = iv_agentaliasid

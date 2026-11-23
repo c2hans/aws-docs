@@ -11,4 +11,5 @@ Registry records represent the individual resources published into a registry. E
 + [Record lifecycle](registry-record-lifecycle.md)
 + [Create and manage records](registry-create-manage-records.md)
 + [Synchronize records from external sources](registry-sync-records.md)
++ [Publish skill packages](registry-skill-packages.md)
 + [Set custom metadata values on a record](registry-custom-metadata-values.md)

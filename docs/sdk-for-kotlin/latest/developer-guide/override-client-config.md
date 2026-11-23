@@ -10,7 +10,7 @@ Each service client has a `withConfig` extension so that you can modify a copy o
 
 The following example shows the creation of an [`S3Client`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/index.html) instance that calls two operations.
 
-```
+```kotlin
 val s3 = S3Client.fromEnvironment {
     logMode = LogMode.LogRequest
     region = "us-west-2"
@@ -23,7 +23,7 @@ s3.listObjectsV2 { ... }
 
 The following snippet shows how to override the configuration for a single [`listObjectV2`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/list-objects-v2.html) operation.
 
-```
+```kotlin
 s3.withConfig {
     region = "eu-central-1"
 }.use { overriddenS3 ->
@@ -55,7 +55,7 @@ The `s3` and `overriddenS3` clients share the same credentials provider instance
 
 The HTTP engine is not shared between the two clients. Each client has an independent HTTP engine because it was overridden in the `withConfig` call.
 
-```
+```kotlin
 val s3 = S3Client.fromEnvironment {
     region = "us-west-2"
     credentialsProvider = CachedCredentialsProvider(CredentialsProviderChain(...))

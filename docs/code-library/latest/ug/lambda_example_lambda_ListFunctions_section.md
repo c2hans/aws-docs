@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Lambda#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of Lambda functions.
     /// </summary>
@@ -45,7 +45,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/lambda#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region in which the bucket was created (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -191,7 +191,7 @@ For more information, see [Configure Lambda function memory](https://docs.aws.am
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/lambda#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -236,7 +236,7 @@ func (wrapper FunctionWrapper) ListFunctions(ctx context.Context, maxItems int) 
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/lambda#code-examples).
 
-```
+```javascript
 const listFunctions = () => {
   const client = new LambdaClient({});
   const command = new ListFunctionsCommand({});
@@ -252,7 +252,7 @@ const listFunctions = () => {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/lambda#code-examples).
 
-```
+```php
     public function listFunctions($maxItems = 50, $marker = null)
     {
         if (is_null($marker)) {
@@ -275,7 +275,7 @@ const listFunctions = () => {
 **Tools for PowerShell V4**
 **Example 1: This sample displays all the Lambda functions with sorted code size**
 
-```
+```powershell
 Get-LMFunctionList | Sort-Object -Property CodeSize | Select-Object FunctionName, RunTime, Timeout, CodeSize
 ```
 **Output:**
@@ -292,7 +292,7 @@ myfuncpython1                                                python3.8     303  
 **Tools for PowerShell V5**
 **Example 1: This sample displays all the Lambda functions with sorted code size**
 
-```
+```powershell
 Get-LMFunctionList | Sort-Object -Property CodeSize | Select-Object FunctionName, RunTime, Timeout, CodeSize
 ```
 **Output:**
@@ -312,7 +312,7 @@ myfuncpython1                                                python3.8     303  
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/lambda#code-examples).
 
-```
+```python
 class LambdaWrapper:
     def __init__(self, lambda_client, iam_resource):
         self.lambda_client = lambda_client
@@ -347,7 +347,7 @@ class LambdaWrapper:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/lambda#code-examples).
 
-```
+```ruby
 class LambdaWrapper
   attr_accessor :lambda_client, :cloudwatch_client, :iam_client
 
@@ -380,7 +380,7 @@ class LambdaWrapper
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/lambda#code-examples).
 
-```
+```rust
     /** List all Lambda functions in the current Region. */
     pub async fn list_functions(&self) -> Result<ListFunctionsOutput, anyhow::Error> {
         info!("Listing lambda functions");
@@ -399,7 +399,7 @@ class LambdaWrapper
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/lmd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_lmd->listfunctions( ).       " oo_result is returned for testing purposes. "
         DATA(lt_functions) = oo_result->get_functions( ).
@@ -420,7 +420,7 @@ class LambdaWrapper
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/lambda/basics#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSLambda
 import Foundation

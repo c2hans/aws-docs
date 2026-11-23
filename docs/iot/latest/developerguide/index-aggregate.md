@@ -42,7 +42,7 @@ aws iot get-statistics --aggregation-field 'attributes.stringAttribute'
 
 This command returns the number of devices that contain an attribute named `stringAttribute`:
 
-```
+```json
 {
   "statistics": {
     "count": 3
@@ -102,7 +102,7 @@ aws iot get-statistics --aggregation-field 'attributes.numericAttribute2'
             --query-string '*'
 ```
 
-```
+```json
 {
   "statistics": {
     "count": 3,
@@ -144,7 +144,7 @@ aws iot get-cardinality --query-string "thingName:Non-existent*"
           --aggregation-field "attributes.customField_STR"
 ```
 
-```
+```json
 {
     "cardinality": 0
 }
@@ -176,7 +176,7 @@ aws iot get-percentiles --query-string "thingName:*" --aggregation-field
           "attributes.customField_NUM" --percents 10 20 30 40 50 60 70 80 90 99
 ```
 
-```
+```json
 {
     "percentiles": [
         {
@@ -230,7 +230,7 @@ aws iot get-percentiles --query-string "thingName:Non-existent*"
           --aggregation-field "attributes.customField_NUM"
 ```
 
-```
+```json
 {
     "percentiles": []
 }
@@ -266,7 +266,7 @@ aws iot get-buckets-aggregation --query-string '*' --index-name AWS_Things --agg
 
 This command returns the following:
 
-```
+```JSON
 {
     "totalCount": 20,
     "buckets": [

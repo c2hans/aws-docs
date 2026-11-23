@@ -76,7 +76,7 @@ The following example shows a CloudTrail event for the `GrantPermissions` action
 
 The next example shows a CloudTrail log entry for the `GetDataAccess` action. Principals do not directly call this API. Rather, `GetDataAccess` is logged whenever a principal or integrated AWS service requests temporary credentials to access data in a data lake location that is registered with Lake Formation.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -156,7 +156,7 @@ Enabling Amazon S3 data events in CloudTrail incurs additional charges.
 
 The following log shows the source identity information in an example `s3:GetObject` CloudTrail log.
 
-```
+```json
 "sessionContext": {
     "sessionIssuer": {
         "type": "Role",

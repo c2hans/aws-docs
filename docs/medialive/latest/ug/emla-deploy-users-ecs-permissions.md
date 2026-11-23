@@ -28,7 +28,7 @@ Both these policies allow MediaLive to make the requests using IAM forward acces
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -88,7 +88,7 @@ Both these policies allow MediaLive to make the requests using IAM forward acces
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

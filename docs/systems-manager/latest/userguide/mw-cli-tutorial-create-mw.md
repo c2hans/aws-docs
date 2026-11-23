@@ -23,7 +23,7 @@ For more information about working with the `--schedule` option, see [Reference:
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm create-maintenance-window \
        --name "My-First-Maintenance-Window" \
        --schedule "rate(5 minutes)" \
@@ -36,7 +36,7 @@ For more information about working with the `--schedule` option, see [Reference:
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm create-maintenance-window ^
        --name "My-First-Maintenance-Window" ^
        --schedule "rate(5 minutes)" ^
@@ -58,7 +58,7 @@ For more information about working with the `--schedule` option, see [Reference:
 
 1. Now run the following command to view details about this and any other maintenance windows already in your account.
 
-   ```
+   ```sh
    aws ssm describe-maintenance-windows
    ```
 

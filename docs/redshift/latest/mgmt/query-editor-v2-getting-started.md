@@ -55,7 +55,7 @@ The following is a sample AWS KMS policy for AWS account `111122223333`. In the 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "key-consolepolicy",

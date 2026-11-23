@@ -15,7 +15,7 @@ The following code example shows how to get started using Amazon Rekognition.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/rekognition/hello_rekognition#code-examples).
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -57,7 +57,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the hello\_rekognition.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/rekognition/RekognitionClient.h>
 #include <aws/rekognition/model/ListCollectionsRequest.h>

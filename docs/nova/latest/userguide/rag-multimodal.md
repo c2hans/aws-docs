@@ -60,7 +60,7 @@ To query the vector database with text or multimodal user queries, follow the sa
 
 When the retriever returns content back to the model, we recommend that you use the content in its original modality. So if the original input is an image, then return the image back to Amazon Nova even if you converted the images to text for the purposes of creating text embeddings. To return images more effectively, we recommended that you use this template to configure the retrieved content for use in the converse API:
 
-```
+```JSON
 doc_template = """Image {idx} : """
     messages = []
     for item in search_results:

@@ -56,7 +56,7 @@ To view a code example for using the `$divide` command, choose the tab for the l
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function calculateHourlyRate() {
@@ -83,7 +83,7 @@ calculateHourlyRate();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def calculate_hourly_rate():

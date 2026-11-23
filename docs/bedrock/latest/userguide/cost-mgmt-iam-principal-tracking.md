@@ -126,7 +126,7 @@ For more information, see [Passing session tags in AWS STS](https://docs.aws.ama
 
 The following Python example shows a gateway assuming its Amazon Bedrock role for a specific user, passing the user as both a `RoleSessionName` (which appears in `identity.arn` in your invocation logs) and as session tags (which surface as cost allocation data in AWS Cost Explorer and CUR 2.0). The role's trust policy must allow `sts:TagSession`. Cache the returned credentials for the session lifetime instead of calling `AssumeRole` on every request.
 
-```
+```python
 import boto3
 
 sts = boto3.client("sts")

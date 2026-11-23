@@ -24,7 +24,7 @@ The following code example shows how to use `DescribeRepositories`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ecr#code-examples).
 
-```
+```rust
 async fn show_repos(client: &aws_sdk_ecr::Client) -> Result<(), aws_sdk_ecr::Error> {
     let rsp = client.describe_repositories().send().await?;
 
@@ -50,7 +50,7 @@ The following code example shows how to use `ListImages`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ecr#code-examples).
 
-```
+```rust
 async fn show_images(
     client: &aws_sdk_ecr::Client,
     repository: &str,

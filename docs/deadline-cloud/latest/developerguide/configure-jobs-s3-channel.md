@@ -41,7 +41,7 @@ Your production queue needs read-only permissions to the `/Conda` prefix in the 
 
 1. Add a new section to the queue service role like the following. Replace {{amzn-s3-demo-bucket}} and {{111122223333}} with your own bucket and account.
 
-   ```
+   ```json
    {
       "Effect": "Allow",
       "Sid": "CustomCondaChannelReadOnly",
@@ -78,7 +78,7 @@ You can avoid modifying every job by editing the conda queue environment for you
 
 1. Edit the line `default: "deadline-cloud"` so that it starts with the newly created S3 conda channel:
 
-   ```
+   ```yaml
    default: "s3://amzn-s3-demo-bucket/Conda/Default deadline-cloud"
    ```
 

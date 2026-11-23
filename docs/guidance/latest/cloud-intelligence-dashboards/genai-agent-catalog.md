@@ -12,7 +12,7 @@ Each agent works as soon as one of its dashboards is deployed, and gets better w
 **Note**
  **Deploy any agent with one command** in AWS CloudShell, in the account and Region of your CID dashboards:
 
-```
+```bash
 pip3 install -U cid-cmd
 cid-cmd create-agent
 ```

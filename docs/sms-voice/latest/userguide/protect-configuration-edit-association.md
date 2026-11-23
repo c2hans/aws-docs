@@ -48,7 +48,7 @@ You can use the associate-protect-configuration command to associate the protect
 
 To change a configuration sets association to a protect configuration at the command line, enter the following command:
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 associate-protect-configuration --configuration-set-name {{ConfigurationSetName}} --protect-configuration-id {{ProtectConfigurationID}}
 ```
 
@@ -58,7 +58,7 @@ In the preceding command, make the following changes:
 
 To change the account default protect configuration at the command line, enter the following command:
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 set-account-default-protect-configuration --protect-configuration-id {{ProtectConfigurationID}}
 ```
 
@@ -72,7 +72,7 @@ You can use the disassociate-protect-configuration command to disassociate the p
 
 To remove a configuration sets association to a protect configuration at the command line, enter the following command:
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 disassociate-protect-configuration --configuration-set-name {{ConfigurationSetName}} --protect-configuration-id {{ProtectConfigurationID}}
 ```
 
@@ -82,7 +82,7 @@ In the preceding command, make the following changes:
 
 To remove the *account default* protect configuration at the command line, enter the following command:
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 delete-account-default-protect-configuration
 ```
 

@@ -25,7 +25,7 @@ For workflows with a batch size greater than one, you can also see which batch c
 **To view the EventBridge events that started a workflow (AWS API)**
 + Include the following code in your Python script.
 
-  ```
+  ```Python
   workflow_params = glue_client.get_workflow_run_properties(Name=workflow_name,RunId=workflow_run_id)
   batched_events = workflow_params['aws:eventIds']
   ```

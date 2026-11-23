@@ -30,7 +30,7 @@ For more information, see [Tagging instances for deployment groups in CodeDeploy
 **Tools for PowerShell V4**
 **Example 1: This example adds an on-premises instance tag with the specified key and value for the specified on-premises instance.**
 
-```
+```powershell
 Add-CDOnPremiseInstanceTag -InstanceName AssetTag12010298EX -Tag @{"Key" = "Name"; "Value" = "CodeDeployDemo-OnPrem"}
 ```
 +  For API details, see [AddTagsToOnPremisesInstances](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -38,7 +38,7 @@ Add-CDOnPremiseInstanceTag -InstanceName AssetTag12010298EX -Tag @{"Key" = "Name
 **Tools for PowerShell V5**
 **Example 1: This example adds an on-premises instance tag with the specified key and value for the specified on-premises instance.**
 
-```
+```powershell
 Add-CDOnPremiseInstanceTag -InstanceName AssetTag12010298EX -Tag @{"Key" = "Name"; "Value" = "CodeDeployDemo-OnPrem"}
 ```
 +  For API details, see [AddTagsToOnPremisesInstances](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

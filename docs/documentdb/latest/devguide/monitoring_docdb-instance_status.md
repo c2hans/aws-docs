@@ -86,7 +86,7 @@ aws docdb describe-db-instances ^
 
 Output from this operation looks something like the following.
 
-```
+```json
 [
           [
               "sample-cluster-instance-01",

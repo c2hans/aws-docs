@@ -14,7 +14,7 @@ In this step, you use the AWS Management Console to remotely connect to the inst
 
 1. On the instance, use Notepad to create a Kinesis Agent for Windows configuration file. Save the file to `%PROGRAMFILES%\Amazon\AWSKinesisTap\appsettings.json`. Add the following content to the configuration file:
 
-   ```
+   ```json
    {
      "Sources": [
        {
@@ -50,7 +50,7 @@ In this step, you use the AWS Management Console to remotely connect to the inst
 
 1. Create the `c:\LogSource\` directory, and use Notepad to create a `test.log` file in that directory with the following content:
 
-   ```
+   ```json
    { "Message": "Copasetic message 1", "Severity": "Information" }
    { "Message": "Copasetic message 2", "Severity": "Information" }
    { "Message": "Problem message 2", "Severity": "Error" }

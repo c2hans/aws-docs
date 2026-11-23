@@ -28,7 +28,7 @@ Try the following:
 **The logs shown in my terminal when running a demo are truncated. How can I increase their length?**
 Increase the value of `configLOGGING_MAX_MESSAGE_LENGTH` to 255 in the `FreeRTOSconfig.h` file for the demo you are running:
 
-```
+```c
 #define configLOGGING_MAX_MESSAGE_LENGTH    255
 ```
 
@@ -56,18 +56,18 @@ If you do not know your board's serial port, you can issue one of the following 
 
 **Windows**
 
-```
+```sh
 chgport
 ```
 
 **Linux**
 
-```
+```sh
 ls /dev/tty*
 ```
 
 **macOS**
 
-```
+```sh
 ls /dev/cu.*
 ```

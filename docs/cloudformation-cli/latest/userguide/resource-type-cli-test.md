@@ -12,7 +12,7 @@ Performs contract tests on the handlers of an extension type.
 ## Synopsis
 <a name="resource-type-cli-test-synopsis"></a>
 
-```
+```sh
 $ cfn test
     [--endpoint <value>]
     [--function-name <value>]
@@ -75,31 +75,31 @@ Sets the read and list timeout to 60 seconds and the create, update, and delete 
 
 The following command performs contract tests on the handlers of the extension type.
 
-```
+```sh
 $ cfn test
 ```
 
 The following command runs one contract test at a time.
 
-```
+```sh
 $ cfn test -- -k {{test-name}}
 ```
 
 The following command increases the timeout time when running contract tests.
 
-```
+```sh
 $ cfn test --enforce-timeout {{60}}
 ```
 
 The following command combines the contract test and timeout time.
 
-```
+```sh
 $ cfn test --enforce-timeout 60 -- -k {{test-name}}
 ```
 
 The following command starts a Lambda service and uses the test command to perform contract tests.
 
-```
+```sh
 $ sam local start-lambda
 $ cfn test -v --enforce-timeout 90
 ```

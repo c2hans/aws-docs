@@ -54,7 +54,7 @@ For more information, see [Working with CloudFormation templates](https://docs.a
 **Tools for PowerShell V4**
 **Example 1: Returns the template associated with the specified stack.**
 
-```
+```powershell
 Get-CFNTemplate -StackName "myStack"
 ```
 +  For API details, see [GetTemplate](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -62,7 +62,7 @@ Get-CFNTemplate -StackName "myStack"
 **Tools for PowerShell V5**
 **Example 1: Returns the template associated with the specified stack.**
 
-```
+```powershell
 Get-CFNTemplate -StackName "myStack"
 ```
 +  For API details, see [GetTemplate](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

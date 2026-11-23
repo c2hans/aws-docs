@@ -78,7 +78,7 @@ The `set-load-balancer-policies-of-listener` command replaces the current set of
 
    The response includes the following information, which shows that the policy is enabled for the listener on the specified port:
 
-   ```
+   ```json
    {
        "LoadBalancerDescriptions": [
            {
@@ -170,7 +170,7 @@ The `set-load-balancer-policies-of-listener` command replaces the current set of
 
 1. The response includes the following information, which shows that the policy is enabled for the listener on the specified port:
 
-   ```
+   ```json
    {
        "LoadBalancerDescriptions": [
            {

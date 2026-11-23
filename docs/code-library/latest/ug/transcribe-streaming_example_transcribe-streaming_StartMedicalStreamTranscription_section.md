@@ -14,7 +14,7 @@ The following code example shows how to use `StartMedicalStreamTranscription`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/transcribe-streaming#code-examples).
 
-```
+```java
 /*
 To run this AWS code example, ensure that you have set up your development
  environment, including your AWS credentials.

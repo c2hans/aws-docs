@@ -24,7 +24,7 @@ If you want to query the `inspector_id_last4` field for exact matches, create a 
 ------
 #### [ Java ]
 
-```
+```java
 List<StandardBeacon> standardBeaconList = new ArrayList<>();
 StandardBeacon exampleStandardBeacon = StandardBeacon.builder()
     .name("{{inspector_id_last4}}")
@@ -37,7 +37,7 @@ standardBeaconList.add(exampleStandardBeacon);
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var standardBeaconList = new List<StandardBeacon>();
 StandardBeacon exampleStandardBeacon = new StandardBeacon
   {
@@ -51,7 +51,7 @@ standardBeaconList.Add(exampleStandardBeacon);
 ------
 #### [ Rust ]
 
-```
+```rs
 let last4_beacon = StandardBeacon::builder()
     .name("{{inspector_id_last4}}")
     .length(10)
@@ -73,7 +73,7 @@ If you want to query the `UnitInspection` database on `inspector_id_last4` and `
 ------
 #### [ Java ]
 
-```
+```java
 // 1. Create standard beacons for the inspector_id_last4 and unit fields.
 List<StandardBeacon> standardBeaconList = new ArrayList<>();
 StandardBeacon inspectorBeacon = StandardBeacon.builder()
@@ -121,7 +121,7 @@ CompoundBeacon inspectorUnitBeacon = CompoundBeacon.builder()
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 // 1. Create standard beacons for the inspector_id_last4 and unit fields.
 StandardBeacon inspectorBeacon = new StandardBeacon
  {
@@ -174,7 +174,7 @@ compoundBeaconList.Add(inspectorCompoundBeacon);
 ------
 #### [ Rust ]
 
-```
+```rs
 // 1. Create standard beacons for the inspector_id_last4 and unit fields.
 let last4_beacon = StandardBeacon::builder()
     .name("inspector_id_last4")

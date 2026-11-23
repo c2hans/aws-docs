@@ -26,6 +26,13 @@ Length Constraints: Fixed length of 20.
 Pattern: `^([\d]{4})\-(1[0-2]|0[1-9])\-(3[01]|0[1-9]|[12][\d])T(2[0-3]|[01][\d]):([0-5][\d]):([0-5][\d])Z$`
 Required: No
 
+ ** IssuerAccountId **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationSummary-IssuerAccountId"></a>
+The issuer account ID of the ResaleAuthorization.
+Type: String
+Length Constraints: Fixed length of 12.
+Pattern: `^\d{12}$`
+Required: No
+
  ** ManufacturerAccountId **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationSummary-ManufacturerAccountId"></a>
 The manufacturer account ID of the ResaleAuthorization.
 Type: String
@@ -86,6 +93,13 @@ Required: No
 The reseller role of the ResaleAuthorization.
 Type: String
 Valid Values: `ChannelPartner | Distributor`
+Required: No
+
+ ** SourceAuthorization **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationSummary-SourceAuthorization"></a>
+The source authorization of the ResaleAuthorization.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `^(.)+$`
 Required: No
 
  ** Status **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationSummary-Status"></a>

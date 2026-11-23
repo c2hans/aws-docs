@@ -68,7 +68,7 @@ Examples:
 
 **Example of an event trigger request:**
 
-```
+```json
 {
     "Description": "string",
     "EventTriggerConditions": [
@@ -149,7 +149,7 @@ Examples:
 
   The only changes needed for creating an event triggered campaign are the highlighted fields. The rest of the fields are the same as Scheduled Campaigns.
 
-  ```
+  ```json
   {
       "name": "string",
       "connectInstanceId": "string",

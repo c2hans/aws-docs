@@ -60,7 +60,7 @@ Consider the relevant policies for this example.
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Id" : "key-test-1",
@@ -104,7 +104,7 @@ Consider the policies that let Bob, a user in account 1, use the KMS key in acco
 
 ****
 
-  ```
+  ```json
   {
       "Id": "key-policy-acct-2",
       "Version":"2012-10-17",
@@ -151,7 +151,7 @@ Consider the policies that let Bob, a user in account 1, use the KMS key in acco
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -177,7 +177,7 @@ Consider the policies that let Bob, a user in account 1, use the KMS key in acco
 ------
 + The last required element is the definition of the `Engineering` role in account 1. The `AssumeRolePolicyDocument` in the role allows Bob to assume the `Engineering` role.
 
-  ```
+  ```json
   {
       "Role": {
           "Arn": "arn:aws:iam::111122223333:role/Engineering",

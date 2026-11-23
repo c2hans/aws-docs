@@ -27,7 +27,7 @@ The following code example shows how to use `CreateTopic`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sns#code-examples).
 
-```
+```ruby
 # This class demonstrates how to create an Amazon Simple Notification Service (SNS) topic.
 class SNSTopicCreator
   # Initializes an SNS client.
@@ -75,7 +75,7 @@ The following code example shows how to use `ListSubscriptions`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sns#code-examples).
 
-```
+```ruby
 # This class demonstrates how to list subscriptions to an Amazon Simple Notification Service (SNS) topic
 class SnsSubscriptionLister
   def initialize(sns_client)
@@ -124,7 +124,7 @@ The following code example shows how to use `ListTopics`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sns#code-examples).
 
-```
+```ruby
 require 'aws-sdk-sns' # v2: require 'aws-sdk'
 
 def list_topics?(sns_client)
@@ -161,7 +161,7 @@ The following code example shows how to use `Publish`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sns#code-examples).
 
-```
+```ruby
 # Service class for sending messages using Amazon Simple Notification Service (SNS)
 class SnsMessageSender
   # Initializes the SnsMessageSender with an SNS client
@@ -213,7 +213,7 @@ The following code example shows how to use `SetTopicAttributes`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sns#code-examples).
 
-```
+```ruby
 # Service class to enable an SNS resource with a specified policy
 class SnsResourceEnabler
   # Initializes the SnsResourceEnabler with an SNS resource client
@@ -293,7 +293,7 @@ The following code example shows how to use `Subscribe`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```ruby
 require 'aws-sdk-sns'
 require 'logger'
 
@@ -354,7 +354,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sns-to-lambda) repository.
 Consuming an SNS event with Lambda using Ruby.
 
-```
+```ruby
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 def lambda_handler(event:, context:)

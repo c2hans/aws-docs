@@ -22,7 +22,9 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/g
 
  The guide is designed to help you choose the AWS cryptography services and tools that are the best fit for your needs and your organization.
 
-[![AWS Videos](https://img.youtube.com/vi/1vqaZBgPOiE?si=SoAZe1zQCWUlqF0K&start=475&end=535/0.jpg)](https://www.youtube.com/watch?v=1vqaZBgPOiE?si=SoAZe1zQCWUlqF0K&start=475&end=535)
+[![AWS Videos](https://img.youtube.com/vi/1vqaZBgPOiE/0.jpg)](https://www.youtube.com/watch?v=1vqaZBgPOiE)
+
+A two-minute segment of a presentation introducing best practices for cryptography.
 
 ## Understand
 <a name="understand"></a>

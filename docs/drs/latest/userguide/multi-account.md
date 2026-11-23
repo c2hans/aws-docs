@@ -112,7 +112,7 @@ You must set the following statement policies on your staging account's KMS key 
 
 Note that if this is a key you already have been using, you will need to attach this policy in addition to the existing one.
 
-```
+```json
 [
 	{
 		"Sid": "Allow access to share snapshots with a target account",

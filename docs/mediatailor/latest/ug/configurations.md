@@ -22,6 +22,7 @@ If you use a content delivery network (CDN) with MediaTailor, you must set up th
 + [MediaTailor bumper ad insertion](bumpers.md)
 + [MediaTailor pre-roll ad insertion](ad-behavior-preroll.md)
 + [MediaTailor slate ad insertion](slate-management.md)
++ [Dynamic avail sizing](dynamic-avail-sizing.md)
 + [Ad transcoding in AWS Elemental MediaTailor](ad-transcoding.md)
 + [Prefetching ads](prefetching-ads.md)
 + [Using preconditioned ads with AWS Elemental MediaTailor](precondition-ads.md)

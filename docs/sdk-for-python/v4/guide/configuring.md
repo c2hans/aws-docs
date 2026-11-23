@@ -20,7 +20,7 @@ Before you use the SDK, configure the following:
 
 The following example creates a client without a configuration and sends a request.
 
-```
+```python
 from aws_sdk_bedrock_runtime import BedrockRuntimeClient
 from aws_sdk_bedrock_runtime.models import (
     ContentBlockText,
@@ -54,7 +54,7 @@ Instead of letting the client resolve its configuration on the first call, you c
 ------
 #### [ Synchronous client ]
 
-```
+```python
 from aws_sdk_bedrock_runtime import BedrockRuntimeClient, BedrockRuntimeConfig
 
 def create_client() -> BedrockRuntimeClient:
@@ -65,7 +65,7 @@ def create_client() -> BedrockRuntimeClient:
 ------
 #### [ Asynchronous client ]
 
-```
+```python
 from aws_sdk_bedrock_runtime import AsyncBedrockRuntimeClient, AsyncBedrockRuntimeConfig
 
 async def create_client() -> AsyncBedrockRuntimeClient:

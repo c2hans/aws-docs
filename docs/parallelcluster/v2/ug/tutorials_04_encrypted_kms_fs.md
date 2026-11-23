@@ -51,7 +51,7 @@ Click the **Add** button in the **Key users** box, underneath the **Key policy**
 
 Now create a cluster. The following is an example of a cluster with encrypted `Raid 0` drives:
 
-```
+```ini
 [cluster default]
 ...
 raid_settings = rs
@@ -68,7 +68,7 @@ ebs_kms_key_id = {{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}}
 
 The following is an example with the FSx for Lustre file system:
 
-```
+```ini
 [cluster default]
 ...
 fsx_settings = fs

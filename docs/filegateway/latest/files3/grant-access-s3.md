@@ -17,7 +17,7 @@ The following example is a trust policy that allows your File Gateway to assume 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -51,7 +51,7 @@ The following example policy allows your File Gateway to perform all the Amazon 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -95,7 +95,7 @@ The following example policy is similar to the preceding one, but allows your Fi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

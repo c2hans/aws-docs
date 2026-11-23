@@ -27,6 +27,11 @@ Allows filtering on the `EntityId` of a ResaleAuthorization.
 Type: [ResaleAuthorizationEntityIdFilter](API_ResaleAuthorizationEntityIdFilter.md) object
 Required: No
 
+ ** IssuerAccountId **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationFilters-IssuerAccountId"></a>
+Allows filtering on the `IssuerAccountId` of a ResaleAuthorization.
+Type: [ResaleAuthorizationIssuerAccountIdFilter](API_ResaleAuthorizationIssuerAccountIdFilter.md) object
+Required: No
+
  ** LastModifiedDate **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationFilters-LastModifiedDate"></a>
 Allows filtering on the `LastModifiedDate` of a ResaleAuthorization.
 Type: [ResaleAuthorizationLastModifiedDateFilter](API_ResaleAuthorizationLastModifiedDateFilter.md) object
@@ -75,6 +80,11 @@ Required: No
  ** ResellerRole **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationFilters-ResellerRole"></a>
 Allows filtering on the `ResellerRole` of a ResaleAuthorization.
 Type: [ResaleAuthorizationResellerRoleFilter](API_ResaleAuthorizationResellerRoleFilter.md) object
+Required: No
+
+ ** SourceAuthorization **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationFilters-SourceAuthorization"></a>
+Allows filtering on the `SourceAuthorization` of a ResaleAuthorization.
+Type: [ResaleAuthorizationSourceAuthorizationFilter](API_ResaleAuthorizationSourceAuthorizationFilter.md) object
 Required: No
 
  ** Status **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationFilters-Status"></a>

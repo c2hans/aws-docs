@@ -13,7 +13,7 @@ Include the following code snippets to check for deleted resources and set the e
 ------
 #### [ Custom Lambda Rules (Node.js) ]
 
-```
+```javascript
 // Check whether the resource has been deleted. If the resource was deleted, then the evaluation returns not applicable.
 function isApplicable(configurationItem, event) {
     checkDefined(configurationItem, 'configurationItem');
@@ -27,7 +27,7 @@ function isApplicable(configurationItem, event) {
 ------
 #### [ Custom Lambda Rules (Python) ]
 
-```
+```python
 # Check whether the resource has been deleted. If the resource was deleted, then the evaluation returns not applicable.
 def is_applicable(configurationItem, event):
     try:

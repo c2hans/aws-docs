@@ -28,7 +28,7 @@ AWS Pricing Calculator doesn't require any additional permissions to deliver eve
 
 **BillEstimate Created**
 
-```
+```json
 {
     "version": "0",
     "id": "00000000-0000-0000-0000-000000000001",

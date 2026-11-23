@@ -10,7 +10,7 @@ Automation configuration for multi-select questions.
 <a name="API_EvaluationFormMultiSelectQuestionAutomation_Contents"></a>
 
  ** AnswerSource **   <a name="connect-Type-EvaluationFormMultiSelectQuestionAutomation-AnswerSource"></a>
-A question automation answer.
+Automation answer source.
 Type: [EvaluationFormQuestionAutomationAnswerSource](API_EvaluationFormQuestionAutomationAnswerSource.md) object
 Required: No
 

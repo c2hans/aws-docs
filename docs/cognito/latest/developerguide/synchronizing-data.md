@@ -26,7 +26,7 @@ To initialize the Amazon Cognito Sync client, you must first create a credential
 
 1. Initialize Amazon Cognito Sync. Pass in the Android app context, the identity pool ID, an AWS Region, and an initialized Amazon Cognito credentials provider as follows:
 
-   ```
+   ```java
    CognitoSyncManager client = new CognitoSyncManager(
        getApplicationContext(),
        Regions.YOUR_REGION,
@@ -40,7 +40,7 @@ To initialize the Amazon Cognito Sync client, you must first create a credential
 
 1. Import `AWSCore` and `Cognito`, and initialize `AWSCognito` as follows:
 
-   ```
+   ```objectivec
    #import <AWSiOSSDKv2/AWSCore.h>
    #import <AWSCognitoSync/Cognito.h>
 
@@ -56,7 +56,7 @@ To initialize the Amazon Cognito Sync client, you must first create a credential
 
 1. Import and initialize `AWSCognito` as follows:
 
-   ```
+   ```swift
    import AWSCognito
    let syncClient = AWSCognito.default()!
    ```
@@ -72,7 +72,7 @@ To initialize the Amazon Cognito Sync client, you must first create a credential
 
 1. Initialize the Sync Manager as follows:
 
-   ```
+   ```javascript
    var syncManager = new AWS.CognitoSyncManager();
    ```
 
@@ -83,7 +83,7 @@ To initialize the Amazon Cognito Sync client, you must first create a credential
 
 1. Create an instance of `CognitoSyncManager`. Pass the `CognitoAwsCredentials` object and a `AmazonCognitoSyncConfig`, and include at least the Region set, as follows:
 
-   ```
+   ```csharp
    AmazonCognitoSyncConfig clientConfig = new AmazonCognitoSyncConfig { RegionEndpoint = REGION };
    CognitoSyncManager syncManager = new CognitoSyncManager(credentials, clientConfig);
    ```
@@ -95,7 +95,7 @@ To initialize the Amazon Cognito Sync client, you must first create a credential
 
 1. Create an instance of `CognitoSyncManager`. Pass the `CognitoAwsCredentials` object and a `AmazonCognitoSyncConfig`, and include at least the Region set, as follows:
 
-   ```
+   ```csharp
    AmazonCognitoSyncConfig clientConfig = new AmazonCognitoSyncConfig { RegionEndpoint = REGION };
    CognitoSyncManager syncManager = new CognitoSyncManager(credentials, clientConfig);
    ```
@@ -108,13 +108,13 @@ Amazon Cognito organizes user profile data into datasets. Each dataset can conta
 ### Android
 <a name="understanding-datasets-1.android"></a>
 
-```
+```java
 Dataset dataset = client.openOrCreateDataset("datasetname");
 ```
 
 To delete a dataset, first call the method to remove it from local storage, then call the `synchronize` method to delete the dataset from Amazon Cognito as follows:
 
-```
+```java
 dataset.delete();
 dataset.synchronize(syncCallback);
 ```
@@ -122,13 +122,13 @@ dataset.synchronize(syncCallback);
 ### iOS - Objective-C
 <a name="understanding-datasets-1.ios-objc"></a>
 
-```
+```objectivec
 AWSCognitoDataset *dataset = [syncClient openOrCreateDataset:@"myDataSet"];
 ```
 
 To delete a dataset, first call the method to remove it from local storage, then call the `synchronize` method to delete the dataset from Amazon Cognito as follows:
 
-```
+```objectivec
 [dataset clear];
 [dataset synchronize];
 ```
@@ -136,13 +136,13 @@ To delete a dataset, first call the method to remove it from local storage, then
 ### iOS - Swift
 <a name="understanding-datasets-1.ios-swift"></a>
 
-```
+```swift
 let dataset = syncClient.openOrCreateDataset("myDataSet")!
 ```
 
 To delete a dataset, first call the method to remove it from local storage, then call the `synchronize` method as follows: to delete the dataset from Amazon Cognito:
 
-```
+```swift
 dataset.clear()
 dataset.synchronize()
 ```
@@ -150,7 +150,7 @@ dataset.synchronize()
 ### JavaScript
 <a name="understanding-datasets-1.javascript"></a>
 
-```
+```javascript
 syncManager.openOrCreateDataset('myDatasetName', function(err, dataset) {
    // ...
 });
@@ -159,27 +159,27 @@ syncManager.openOrCreateDataset('myDatasetName', function(err, dataset) {
 ### Unity
 <a name="understanding-datasets-1.unity"></a>
 
-```
+```csharp
 string myValue = dataset.Get("myKey");
 dataset.Put("myKey", "newValue");
 ```
 
 To delete a key from a dataset, use `Remove` as follows:
 
-```
+```csharp
 dataset.Remove("myKey");
 ```
 
 ### Xamarin
 <a name="understanding-datasets-1.xamarin"></a>
 
-```
+```csharp
 Dataset dataset = syncManager.OpenOrCreateDataset("myDatasetName");
 ```
 
 To delete a dataset, first call the method to remove it from local storage, then call the `synchronize` method to delete the dataset from Amazon Cognito as follows:
 
-```
+```csharp
 dataset.Delete();
 dataset.SynchronizeAsync();
 ```
@@ -194,7 +194,7 @@ Note that values you write to a dataset only affect the local cached copy of the
 ### Android
 <a name="reading-and-writing-data-1.android"></a>
 
-```
+```java
 String value = dataset.get("myKey");
 dataset.put("myKey", "my value");
 ```
@@ -202,7 +202,7 @@ dataset.put("myKey", "my value");
 ### iOS - Objective-C
 <a name="reading-and-writing-data-1.ios-objc"></a>
 
-```
+```objectivec
 [dataset setString:@"my value" forKey:@"myKey"];
 NSString *value = [dataset stringForKey:@"myKey"];
 ```
@@ -210,7 +210,7 @@ NSString *value = [dataset stringForKey:@"myKey"];
 ### iOS - Swift
 <a name="reading-and-writing-data-1.ios-swift"></a>
 
-```
+```swift
 dataset.setString("my value", forKey:"myKey")
 let value = dataset.stringForKey("myKey")
 ```
@@ -218,7 +218,7 @@ let value = dataset.stringForKey("myKey")
 ### JavaScript
 <a name="reading-and-writing-data-1.javascript"></a>
 
-```
+```javascript
 dataset.get('myKey', function(err, value) {
   console.log('myRecord: ' + value);
 });
@@ -235,7 +235,7 @@ dataset.remove('oldKey', function(err, record) {
 ### Unity
 <a name="reading-and-writing-data-1.unity"></a>
 
-```
+```csharp
 string myValue = dataset.Get("myKey");
 dataset.Put("myKey", "newValue");
 ```
@@ -243,7 +243,7 @@ dataset.Put("myKey", "newValue");
 ### Xamarin
 <a name="reading-and-writing-data-1.xamarin"></a>
 
-```
+```csharp
 //obtain a value
 string myValue = dataset.Get("myKey");
 
@@ -262,7 +262,7 @@ void SyncSuccessCallback(object sender, SyncSuccessEventArgs e) {
 
 To remove keys from a dataset, use the `remove` method as follows:
 
-```
+```java
 dataset.remove("myKey");
 ```
 
@@ -271,7 +271,7 @@ dataset.remove("myKey");
 
 To delete a key from a dataset, use `removeObjectForKey` as follows:
 
-```
+```objectivec
 [dataset removeObjectForKey:@"myKey"];
 ```
 
@@ -280,7 +280,7 @@ To delete a key from a dataset, use `removeObjectForKey` as follows:
 
 To delete a key from a dataset, use `removeObjectForKey` as follows:
 
-```
+```swift
 dataset.removeObjectForKey("myKey")
 ```
 
@@ -289,7 +289,7 @@ dataset.removeObjectForKey("myKey")
 
 To delete a key from a dataset, use `Remove` as follows:
 
-```
+```csharp
 dataset.Remove("myKey");
 ```
 
@@ -298,7 +298,7 @@ dataset.Remove("myKey");
 
 You can use `Remove` to delete a key from a dataset:
 
-```
+```csharp
 dataset.Remove("myKey");
 ```
 
@@ -310,7 +310,7 @@ dataset.Remove("myKey");
 
 The `synchronize` method compares local cached data to the data stored in the Amazon Cognito Sync store. Remote changes are pulled from the Amazon Cognito Sync store; conflict resolution is invoked if any conflicts occur; and updated values on the device are pushed to the service. To synchronize a dataset, call its `synchronize` method:
 
-```
+```java
 dataset.synchronize(syncCallback);
 ```
 
@@ -327,7 +327,7 @@ The `synchronize` method compares local cached data to the data stored in the Am
 
 The `synchronize` method is asynchronous and returns an `AWSTask` object to handle the response:
 
-```
+```objectivec
 [[dataset synchronize] continueWithBlock:^id(AWSTask *task) {
     if (task.isCancelled) {
         // Task cancelled.
@@ -353,7 +353,7 @@ The `synchronize` method compares local cached data to the data stored in the Am
 
 The `synchronize` method is asynchronous and returns an `AWSTask` object to handle the response:
 
-```
+```swift
 dataset.synchronize().continueWith(block: { (task) -> AnyObject? in
 
             if task.isCancelled {
@@ -378,7 +378,7 @@ To learn more about dataset synchronization and the different callbacks, see [Ha
 
 The `synchronize` method compares local cached data to the data stored in the Amazon Cognito Sync store. Remote changes are pulled from the Amazon Cognito Sync store; conflict resolution is invoked if any conflicts occur; and updated values on the device are pushed to the service. To synchronize a dataset, call its `synchronize` method:
 
-```
+```javascript
 dataset.synchronize();
 ```
 
@@ -389,7 +389,7 @@ To learn more about dataset synchronization and the different callbacks, see [Ha
 
 The synchronize method compares local cached data to the data stored in the Amazon Cognito Sync store. Remote changes are pulled from the Amazon Cognito Sync store; conflict resolution is invoked if any conflicts occur; and updated values on the device are pushed to the service. To synchronize a dataset, call its `synchronize` method:
 
-```
+```csharp
 dataset.Synchronize();
 ```
 
@@ -402,7 +402,7 @@ To learn more about dataset synchronization and the different callbacks, see [Ha
 
 The `synchronize` method compares local cached data to the data stored in the Amazon Cognito Sync store. Remote changes are pulled from the Amazon Cognito Sync store; conflict resolution is invoked if any conflicts occur; and updated values on the device are pushed to the service. To synchronize a dataset, call its `synchronize` method:
 
-```
+```csharp
 dataset.SynchronizeAsync();
 ```
 

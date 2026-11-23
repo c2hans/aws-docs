@@ -23,7 +23,7 @@ Make sure that you replace `{{stateMachineName}}` with the name of the state mac
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -59,7 +59,7 @@ Make sure that you replace `{{stateMachineName}}` with the name of the state mac
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -138,7 +138,7 @@ The following IAM policy example grants the least privileges required to write y
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -167,7 +167,7 @@ The following IAM policy example grants permission to the `kms:Decrypt`, `kms:En
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

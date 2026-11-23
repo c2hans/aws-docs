@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsC
 
 **Example**
 
-```
+```JSON
 "AwsCloudFormationStack": {
 	"Capabilities": [
 		"CAPABILITY_IAM",

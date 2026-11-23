@@ -19,7 +19,7 @@ You must create and assign AWS Identity and Access Management (IAM) policies tha
 
 In the `Action` element of your IAM policy statement, you can specify any API action that Cloud Control API offers. You must prefix the action name with the lowercase string `cloudformation:`, as shown in the following example.
 
-```
+```json
 "Action": "cloudformation:CreateResource"
 ```
 
@@ -33,7 +33,7 @@ The following shows an example of a policy that grants create, read, update, and
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":[{

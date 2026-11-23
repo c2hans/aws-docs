@@ -133,7 +133,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-ec2-instance-stack-enable-detailed-monitoring-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "InstanceIds": ["i-1234567890abcdef0","i-1234567890abceef1"]
 }
@@ -142,7 +142,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-ec2-instance-stack-enable-detailed-monitoring-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "InstanceIds": ["i-1234567890abcdef0","i-1234567890abceef1"]
 }

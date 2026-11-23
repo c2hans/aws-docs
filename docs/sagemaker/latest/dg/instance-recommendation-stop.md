@@ -11,7 +11,7 @@ You might want to stop a job that is currently running if you began a job by mis
 
 Specify the name of the inference recommendation job for the `JobName` field:
 
-```
+```python
 sagemaker_client.stop_inference_recommendations_job(
                                     JobName={{'<INSERT>'}}
                                     )
@@ -22,7 +22,7 @@ sagemaker_client.stop_inference_recommendations_job(
 
 Specify the job name of the inference recommendation job for the `job-name` flag:
 
-```
+```bash
 aws sagemaker stop-inference-recommendations-job --job-name {{<job-name>}}
 ```
 

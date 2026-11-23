@@ -40,7 +40,7 @@ An event represents a single request from any source and includes information ab
 
 The following example shows a CloudTrail event for the [CreateService](https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_CreateService.html) operation.
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -91,7 +91,7 @@ The following example shows a CloudTrail event for the [CreateService](https://d
 
 The following example shows a CloudTrail event for the [DeleteService](https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_DeleteService.html) operation.
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {

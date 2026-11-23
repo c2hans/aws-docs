@@ -30,7 +30,7 @@ The following code example shows how to get started using Route 53 domain regis
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 /**
  Before running this Kotlin code example, set up your development environment,
  including your credentials.
@@ -97,7 +97,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 /**
 Before running this Kotlin code example, set up your development environment,
 including your credentials.
@@ -414,7 +414,7 @@ The following code example shows how to use `CheckDomainAvailability`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 suspend fun checkDomainAvailability(domainSuggestion: String) {
     val availabilityRequest =
         CheckDomainAvailabilityRequest {
@@ -436,7 +436,7 @@ The following code example shows how to use `CheckDomainTransferability`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 suspend fun checkDomainTransferability(domainSuggestion: String?) {
     val transferabilityRequest =
         CheckDomainTransferabilityRequest {
@@ -458,7 +458,7 @@ The following code example shows how to use `GetDomainDetail`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 suspend fun getDomainDetails(domainSuggestion: String?) {
     val detailRequest =
         GetDomainDetailRequest {
@@ -482,7 +482,7 @@ The following code example shows how to use `GetDomainSuggestions`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 suspend fun listDomainSuggestions(domainSuggestion: String?) {
     val suggestionsRequest =
         GetDomainSuggestionsRequest {
@@ -510,7 +510,7 @@ The following code example shows how to use `GetOperationDetail`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 suspend fun getOperationalDetail(opId: String?) {
     val detailRequest =
         GetOperationDetailRequest {
@@ -532,7 +532,7 @@ The following code example shows how to use `ListDomains`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 suspend fun listDomains() {
     Route53DomainsClient.fromEnvironment { region = "us-east-1" }.use { route53DomainsClient ->
         route53DomainsClient
@@ -554,7 +554,7 @@ The following code example shows how to use `ListOperations`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 suspend fun listOperations() {
     val currentDate = Date()
     var localDateTime = currentDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime()
@@ -589,7 +589,7 @@ The following code example shows how to use `ListPrices`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 suspend fun listAllPrices(domainType: String?) {
     val pricesRequest =
         ListPricesRequest {
@@ -619,7 +619,7 @@ The following code example shows how to use `RegisterDomain`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 suspend fun requestDomainRegistration(
     domainSuggestion: String?,
     phoneNumberVal: String?,
@@ -670,7 +670,7 @@ The following code example shows how to use `ViewBilling`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 suspend fun listBillingRecords() {
     val currentDate = Date()
     val localDateTime = currentDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime()

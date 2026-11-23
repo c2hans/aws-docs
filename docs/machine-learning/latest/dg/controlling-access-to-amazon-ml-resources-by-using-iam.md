@@ -48,7 +48,7 @@ For more information about IAM, see the [IAM User Guide](https://docs.aws.amazon
 
  To simplify creating and managing IAM policies, you can use the AWS Policy Generator and the IAM Policy Simulator.
 
-## Specifying IAM Policy Actions for Amazon MLAmazon ML
+## Specifying IAM Policy Actions for Amazon ML
 <a name="actions-for-amazon-ml"></a>
 
  In an IAM policy statement, you can specify an API action for any service that supports IAM. When you create a policy statement for Amazon ML API actions, prepend `machinelearning:` to the name of the API action, as shown in the following examples:
@@ -127,7 +127,7 @@ The following policy allows a user or group read the metadata of datasources, ML
 
 ****
 
-```
+```json
 { "Version":"2012-10-17",		 	 	  "Statement": [ { "Effect": "Allow", "Action": [
     "machinelearning:Get*" ], "Resource": [
         "arn:aws:machinelearning:{{us-east-1}}:{{123456789012}}:datasource/S3-DS-ID1",
@@ -150,7 +150,7 @@ The following policy allows a user or group read the metadata of datasources, ML
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -181,7 +181,7 @@ The following policy allows a user or group read the metadata of datasources, ML
 
 ****
 
-```
+```json
 { "Version":"2012-10-17",		 	 	  "Statement": [ { "Effect": "Allow", "Action": [
     "machinelearning:CreateRealtimeEndpoint", "machinelearning:DeleteRealtimeEndpoint",
     "machinelearning:Predict" ], "Resource": [
@@ -200,7 +200,7 @@ The following policy allows a user or group read the metadata of datasources, ML
 
 ****
 
-```
+```json
 { "Version":"2012-10-17",		 	 	  "Statement": [ { "Effect": "Allow", "Action": [
     "machinelearning:Update*", "machinelearning:DeleteDataSource", "machinelearning:DeleteMLModel",
     "machinelearning:DeleteBatchPrediction", "machinelearning:DeleteEvaluation" ], "Resource": [
@@ -223,7 +223,7 @@ The following policy allows a user or group read the metadata of datasources, ML
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

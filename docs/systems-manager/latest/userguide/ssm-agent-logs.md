@@ -56,11 +56,11 @@ Use the following procedure to allow SSM Agent debug logging on your managed nod
 **Note**
 On Ubuntu Server 20.04 and 18.04 LTS, the file `seelog.xml` must be created in the directory `/etc/amazon/ssm/`. You can create this directory and file by running the following commands.
 
-   ```
+   ```sh
    sudo mkdir -p /etc/amazon/ssm
    ```
 
-   ```
+   ```sh
    sudo cp -p /snap/amazon-ssm-agent/current/seelog.xml.template /etc/amazon/ssm/seelog.xml
    ```
 
@@ -72,13 +72,13 @@ On Ubuntu Server 20.04 and 18.04 LTS, the file `seelog.xml` must be created in t
 
    Linux:
 
-   ```
+   ```sh
    sudo service amazon-ssm-agent restart
    ```
 
    macOS:
 
-   ```
+   ```sh
    sudo /opt/aws/ssm/bin/amazon-ssm-agent restart
    ```
 
@@ -115,7 +115,7 @@ On Ubuntu Server 20.04 and 18.04 LTS, the file `seelog.xml` must be created in t
 
 1. Restart SSM Agent using the following PowerShell command in Administrator mode.
 
-   ```
+   ```ps
    Restart-Service AmazonSSMAgent
    ```
 

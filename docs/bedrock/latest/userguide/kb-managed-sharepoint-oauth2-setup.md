@@ -78,7 +78,7 @@ Store the credentials in an AWS Secrets Manager secret with the following key-va
 + `userName` — the user name (UPN) of the Microsoft 365 user account.
 + `password` — the password for that account.
 
-```
+```json
 {
     "clientId": "{{your-client-id}}",
     "clientSecret": "{{your-client-secret}}",

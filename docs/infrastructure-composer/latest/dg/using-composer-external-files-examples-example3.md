@@ -68,7 +68,7 @@ This example uses the AWS SAM CLI to create an application that references an e
 
    This application references an external file for the state machine definition.
 
-   ```
+   ```yaml
    ...
    Resources:
      StockTradingStateMachine:

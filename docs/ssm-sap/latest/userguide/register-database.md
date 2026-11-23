@@ -22,7 +22,7 @@ For a multi-node (scale-out) setup, you can register against any of the nodes, b
 
 Create a JSON file to store the credentials you created in [Register SAP HANA database credentials in AWS Secrets Manager](get-started.md#register-secrets).
 
-```
+```json
 [
     {
         "DatabaseName": "<YOUR_SID>/<YOUR_DATABASE_NAME>",
@@ -42,7 +42,7 @@ Create a JSON file to store the credentials you created in [Register SAP HANA da
 
 The following is an example JSON file.
 
-```
+```json
 [
     {
         "DatabaseName": "HDB/SYSTEMDB",
@@ -66,13 +66,13 @@ Make sure to use the correct SAP HANA database instance number and SAP HANA data
 
  **Command Template**
 
-```
+```console
 aws ssm-sap register-application --application-id <APPLICATION_ID> --application-type HANA --instances <YOUR_EC2_INSTANCE_ID> --sap-instance-number <YOUR_HANA_DATABASE_SYSTEM_NUMBER> --sid <YOUR_HANA_DATABASE_SID> --region <REGION> --credentials file://<PATH_TO_YOUR_CREDENTIALS_JSON_FILE>
 ```
 
  **Example command with sample values**
 
-```
+```console
 aws ssm-sap register-application \
 --application-id myHanaApplication \
 --application-type HANA \
@@ -85,7 +85,7 @@ aws ssm-sap register-application \
 
  **Example JSON response**
 
-```
+```json
 {
     "Application": {
         "Id": "myHanaApplication",
@@ -113,7 +113,7 @@ To register a high availability SAP HANA database, you can input either the prim
 
 The registration may take a few minutes to complete. Use the following command to check the status of the registration. Replace `<YOUR_OPERATION_ID>` with the `OperationID` from the previous step.
 
-```
+```console
 aws ssm-sap get-operation --operation-id <YOUR_OPERATION_ID> --region <REGION>
 ```
 
@@ -124,13 +124,13 @@ Verify the registration with [GetApplication](https://docs.aws.amazon.com/ssmsap
 
  **Command template**
 
-```
+```console
 aws ssm-sap get-application --application-id <APPLICATON_ID> --region <REGION>
 ```
 
  **Example to get the summary of an application**
 
-```
+```console
 aws ssm-sap get-application \
 --application-id myHanaApplication \
 --region us-east-1
@@ -138,7 +138,7 @@ aws ssm-sap get-application \
 
  **Example output**
 
-```
+```json
 {
     "Application": {
         "Id": "myHanaApplication",
@@ -162,7 +162,7 @@ aws ssm-sap get-application \
 
 Get the component summary with [GetComponent](https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_GetComponent.html) API.
 
-```
+```json
 aws ssm-sap get-component --application-id <APPLICATION_ID> --component-id <YOUR_COMPONENT_ID_FROM_LAST_STEP> --region <REGION>
 ```
 
@@ -175,7 +175,7 @@ See the following table for examples of single node and high availability SAP HA
 **Example**
  **GetComponent API output for parent component**
 
-```
+```json
 {
     "Component": {
         "ComponentId": "HDB-HDB00",
@@ -208,7 +208,7 @@ See the following table for examples of single node and high availability SAP HA
 ```
  **GetComponent API output for child component**
 
-```
+```json
 {
     "Component": {
         "ComponentId": "HDB-HDB00-sapci",
@@ -237,7 +237,7 @@ See the following table for examples of single node and high availability SAP HA
 ```
  **GetComponent API output for parent component**
 
-```
+```json
 {
     "Component": {
         "ComponentId": "HDB-HDB00",
@@ -260,7 +260,7 @@ See the following table for examples of single node and high availability SAP HA
 ```
  **GetComponent API output for child component (primary)**
 
-```
+```json
 {
     "Component": {
         "ComponentId": "HDB-HDB00-sappridb",
@@ -290,7 +290,7 @@ See the following table for examples of single node and high availability SAP HA
 ```
  **GetComponent API output for child component (secondary)**
 
-```
+```json
 {
     "Component": {
         "ComponentId": "HDB-HDB00-sapsecdb",

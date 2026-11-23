@@ -16,7 +16,7 @@ You cannot specify a namespace that begins with " `AWS` ". Namespaces that begin
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cloudwatch.CloudWatchClient;
 import software.amazon.awssdk.services.cloudwatch.model.Dimension;
@@ -32,7 +32,7 @@ import java.time.format.DateTimeFormatter;
 
  **Code**
 
-```
+```java
     public static void putMetData(CloudWatchClient cw, Double dataPoint ) {
 
         try {

@@ -32,7 +32,7 @@ The following code example shows how to get started using Step Functions.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
 namespace StepFunctionsActions;
 
 using Amazon.StepFunctions;
@@ -84,7 +84,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 global using System.Text.Json;
 global using Amazon.StepFunctions;
 global using Microsoft.Extensions.Configuration;
@@ -406,7 +406,7 @@ public class UiMethods
 ```
 Define a class that wraps state machine and activity actions.
 
-```
+```csharp
 namespace StepFunctionsActions;
 
 using Amazon.StepFunctions;
@@ -672,7 +672,7 @@ The following code example shows how to use `CreateActivity`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a Step Functions activity using the supplied name.
     /// </summary>
@@ -694,7 +694,7 @@ The following code example shows how to use `CreateStateMachine`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a Step Functions state machine.
     /// </summary>
@@ -728,7 +728,7 @@ The following code example shows how to use `DeleteActivity`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a Step Machine activity.
     /// </summary>
@@ -751,7 +751,7 @@ The following code example shows how to use `DeleteStateMachine`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a Step Functions state machine.
     /// </summary>
@@ -775,7 +775,7 @@ The following code example shows how to use `DescribeExecution`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Retrieve information about the specified Step Functions execution.
     /// </summary>
@@ -798,7 +798,7 @@ The following code example shows how to use `DescribeStateMachine`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Retrieve information about the specified Step Functions state machine.
     /// </summary>
@@ -821,7 +821,7 @@ The following code example shows how to use `GetActivityTask`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Retrieve a task with the specified Step Functions activity
     /// with the specified Amazon Resource Name (ARN).
@@ -847,7 +847,7 @@ The following code example shows how to use `ListActivities`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List the Step Functions activities for the current account.
     /// </summary>
@@ -883,7 +883,7 @@ The following code example shows how to use `ListExecutions`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Retrieve information about executions of a Step Functions
     /// state machine.
@@ -920,7 +920,7 @@ The following code example shows how to use `ListStateMachines`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Retrieve a list of Step Functions state machines.
     /// </summary>
@@ -949,7 +949,7 @@ The following code example shows how to use `SendTaskSuccess`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Indicate that the Step Functions task, indicated by the
     /// task token, has completed successfully.
@@ -975,7 +975,7 @@ The following code example shows how to use `StartExecution`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Start execution of an AWS Step Functions state machine.
     /// </summary>

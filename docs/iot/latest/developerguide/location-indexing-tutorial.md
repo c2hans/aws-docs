@@ -33,7 +33,7 @@ You create a thing to represent your device, and a named shadow to store its loc
 
    The output of this command can look like the following:
 
-   ```
+   ```json
    {
        "thingName": "Bike-1",
        "thingArn": "arn:aws:iot:us-east-1:123456789012:thing/Bike-1",
@@ -60,7 +60,7 @@ You create a thing to represent your device, and a named shadow to store its loc
 
    The output of this command can look like the following:
 
-   ```
+   ```json
    {
        "results": [
            "Bike1-shadow"
@@ -103,7 +103,7 @@ To index your location data, you must update your thing indexing configuration t
 
    The output can look like the following:
 
-   ```
+   ```json
    {
        "thingIndexingConfiguration": {
            "thingIndexingMode": "REGISTRY",
@@ -177,7 +177,7 @@ aws iot search-index --query-string "shadow.name.Bike1-shadow.reported.coordinat
 
 Because you have a device located at the coordinates "lat": 47.6153, "lon": -122.3333, which falls within the distance of 15.5 km of the center point, you should be able to see this device (Bike-1) in the output. The output can look like the following:
 
-```
+```json
 {
     "things": [
         {

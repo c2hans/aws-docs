@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus-sha
 
 ![Shared responsibility model for sustainability. The customer is responsible for sustainability in the cloud: data design and usage, software application design, platform deployments and scaling, data storage, code efficiency, and utilization and scaling. AWS is responsible for sustainability of the cloud: the AWS global infrastructure, including servers, cooling, water, waste, data centers, electricity supply, and building materials.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/sustainability-in-the-cloud.jpeg)
 
+*Shared responsibility model*
+
 ## Sustainability of the cloud
 <a name="sus-the-shared-responsibility-model-sustainability-of-the-cloud"></a>
 

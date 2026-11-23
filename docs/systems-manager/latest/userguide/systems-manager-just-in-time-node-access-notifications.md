@@ -35,7 +35,7 @@ The following procedures describe how to configure notifications for just-in-tim
 **Note**
 To allow approving/rejecting access requests directly from a Slack channel, make sure the IAM role that is configured with the Slack channel has `ssm:SendAutomationSignal` permissions and has a trust policy that includes chatbot:
 
-```
+```json
 {
             "Effect": "Allow",
             "Principal": {

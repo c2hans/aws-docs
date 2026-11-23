@@ -116,7 +116,7 @@ Create the HealthOmics configuration. Set `vpcOwnerAccountId` to the VPC owner's
 
 In the HealthOmics console, create a configuration with the following JSON:
 
-```
+```json
 {
   "name": "{{cross-account-ram-config}}",
   "runConfigurations": {

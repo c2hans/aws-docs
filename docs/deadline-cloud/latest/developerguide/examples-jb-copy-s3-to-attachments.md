@@ -10,7 +10,7 @@ Because job attachments uses content-addressed storage and never re-uploads file
 
 Submit the bundle and choose how many workers to parallelize across:
 
-```
+```bash
 deadline bundle submit copy_s3_prefix_to_job_attachments \
     -p S3CopySource=s3://{{SOURCE_BUCKET_NAME}}/{{prefix-to-copy}} \
     -p Parallelism=20

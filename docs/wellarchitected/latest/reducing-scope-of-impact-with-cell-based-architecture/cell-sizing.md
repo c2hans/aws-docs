@@ -11,6 +11,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 
 ![Diagram showing cell sizing](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/cell-sizing.jpg)
 
+*Cell sizing*
+
  The maximum cell size will vary per-service. The optimum point will depend on the service and customer behavior, but needn't be extremely large for any service. There are tradeoffs to be considered in how to select the maximum size of a cell:
 
 |   **Smaller cells**   |   **Larger cells**   |

@@ -65,12 +65,12 @@ The version of the product being tested.
 `features`
 The features validated. Features marked as `required` are required to submit your board for qualification. The following snippet shows how this information appears in the `awsiotdevicetester_report.xml` file.
 
-```
+```json
 <feature name="aws-iot-greengrass-no-container" value="supported" type="required"></feature>
 ```
 Features marked as `optional` are not required for qualification. The following snippets show optional features.
 
-```
+```json
 <feature name="aws-iot-greengrass-container" value="supported" type="optional"></feature>
 <feature name="aws-iot-greengrass-hsi" value="not-supported" type="optional"></feature>
 ```

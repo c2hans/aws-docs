@@ -110,11 +110,11 @@ HTTP Status Code: 400
 
 This example illustrates one usage of ListLayouts.
 
-```
+```json
 { }
 ```
 
-```
+```json
 {
   "layouts": [
     {

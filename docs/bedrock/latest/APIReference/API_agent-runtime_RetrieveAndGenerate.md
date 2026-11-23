@@ -385,7 +385,7 @@ The following example uses the minimally required fields to generate a response 
 #### Sample Request
 <a name="API_agent-runtime_RetrieveAndGenerate_Example_1_Request"></a>
 
-```
+```json
 POST /retrieveAndGenerate HTTP/1.1
 Content-type: application/json
 
@@ -411,7 +411,7 @@ To include filters in a knowledge base query, at least one of the data source fi
 #### Sample Request
 <a name="API_agent-runtime_RetrieveAndGenerate_Example_2_Request"></a>
 
-```
+```json
 POST /retrieveAndGenerate HTTP/1.1
 Content-type: application/json
 
@@ -478,7 +478,7 @@ The following example uses an inference profile in generating a response after q
 #### Sample Request
 <a name="API_agent-runtime_RetrieveAndGenerate_Example_3_Request"></a>
 
-```
+```json
 POST /retrieveAndGenerate HTTP/1.1
 Content-type: application/json
 

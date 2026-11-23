@@ -14,7 +14,7 @@ Using `put-resource-policy` replaces any existing resource-based policy on the r
 
 The following example policy grants two AWS accounts permission to invoke a function, with one restricted to a specific IAM role:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -44,7 +44,7 @@ aws lambda put-resource-policy \
 
 You can also restrict cross-account access to specific versions using an alias. The following policy grants invoke access only through the `prod` alias:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

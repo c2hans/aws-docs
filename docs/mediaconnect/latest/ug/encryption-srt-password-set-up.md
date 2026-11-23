@@ -71,7 +71,7 @@ In [step 1](encryption-static-key-set-up.md#encryption-static-key-set-up-store-k
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -143,7 +143,7 @@ In [step 2](encryption-static-key-set-up.md#encryption-static-key-set-up-create-
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

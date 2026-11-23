@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_regio
 
  The following is a sample JSON policy to attach if you add execution blocks to a Region switch plan for Amazon ECS service scaling:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

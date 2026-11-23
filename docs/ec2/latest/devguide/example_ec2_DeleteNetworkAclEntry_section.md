@@ -29,7 +29,7 @@ For more information, see [Network ACL rules](https://docs.aws.amazon.com/vpc/la
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified rule from the specified network ACL. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2NetworkAclEntry -NetworkAclId acl-12345678 -Egress $false -RuleNumber 100
 ```
 **Output:**
@@ -45,7 +45,7 @@ Performing operation "Remove-EC2NetworkAclEntry (DeleteNetworkAclEntry)" on Targ
 **Tools for PowerShell V5**
 **Example 1: This example removes the specified rule from the specified network ACL. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2NetworkAclEntry -NetworkAclId acl-12345678 -Egress $false -RuleNumber 100
 ```
 **Output:**

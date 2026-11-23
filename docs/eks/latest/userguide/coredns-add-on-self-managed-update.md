@@ -15,7 +15,7 @@ Before you begin, review the upgrade considerations. For more information, see [
 
 1. Confirm that you have the self-managed type of the add-on installed on your cluster. Replace {{my-cluster}} with the name of your cluster.
 
-   ```
+   ```bash
    aws eks describe-addon --cluster-name my-cluster --addon-name coredns --query addon.addonVersion --output text
    ```
 
@@ -23,13 +23,13 @@ Before you begin, review the upgrade considerations. For more information, see [
 
 1. See which version of the container image is currently installed on your cluster.
 
-   ```
+   ```bash
    kubectl describe deployment coredns -n kube-system | grep Image | cut -d ":" -f 3
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    v1.8.7-eksbuild.2
    ```
 
@@ -37,13 +37,13 @@ Before you begin, review the upgrade considerations. For more information, see [
 
    1. Open the `ConfigMap` with the following command.
 
-      ```
+      ```bash
       kubectl edit configmap coredns -n kube-system
       ```
 
    1. Replace `proxy` in the following line with `forward`. Save the file and exit the editor.
 
-      ```
+      ```bash
       proxy . /etc/resolv.conf
       ```
 
@@ -53,7 +53,7 @@ You must complete this step before updating to CoreDNS version `1.7.0`, but itâ€
 
    1. Check to see if your CoreDNS manifest has the line.
 
-      ```
+      ```bash
       kubectl get configmap coredns -n kube-system -o jsonpath='{$.data.Corefile}' | grep upstream
       ```
 
@@ -61,31 +61,31 @@ You must complete this step before updating to CoreDNS version `1.7.0`, but itâ€
 
    1. Edit the `ConfigMap` with the following command, removing the line in the file that has the word `upstream` in it. Do not change anything else in the file. Once the line is removed, save the changes.
 
-      ```
+      ```bash
       kubectl edit configmap coredns -n kube-system -o yaml
       ```
 
 1. Retrieve your current CoreDNS image version:
 
-   ```
+   ```bash
    kubectl describe deployment coredns -n kube-system | grep Image
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    602401143452.dkr.ecr.region-code.amazonaws.com/eks/coredns:v1.8.7-eksbuild.2
    ```
 
 1. If youâ€™re updating to CoreDNS `1.8.3` or later, then you need to add the `endpointslices` permission to the `system:coredns` Kubernetes `clusterrole`.
 
-   ```
+   ```bash
    kubectl edit clusterrole system:coredns -n kube-system
    ```
 
    Add the following lines under the existing permissions lines in the `rules` section of the file.
 
-   ```
+   ```yaml
    [...]
    - apiGroups:
      - discovery.k8s.io
@@ -99,24 +99,24 @@ You must complete this step before updating to CoreDNS version `1.7.0`, but itâ€
 
 1. Update the CoreDNS add-on by replacing {{602401143452}} and {{region-code}} with the values from the output returned in a previous step. Replace {{v1.11.3-eksbuild.1}} with the CoreDNS version listed in the [latest versions table](managing-coredns.md#coredns-versions) for your Kubernetes version.
 
-   ```
+   ```bash
    kubectl set image deployment.apps/coredns -n kube-system  coredns=602401143452.dkr.ecr.region-code.amazonaws.com/eks/coredns:v1.11.3-eksbuild.1
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    deployment.apps/coredns image updated
    ```
 
 1. Check the container image version again to confirm that it was updated to the version that you specified in the previous step.
 
-   ```
+   ```bash
    kubectl describe deployment coredns -n kube-system | grep Image | cut -d ":" -f 3
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    v1.11.3-eksbuild.1
    ```

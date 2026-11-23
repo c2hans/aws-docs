@@ -15,7 +15,7 @@ See the following steps to learn how to submit an Apache Hudi job.
 
 1. Create an AWS Glue database named `default`.
 
-   ```
+   ```bash,sh,zsh
    aws glue create-database --database-input "{\"Name\":\"default\"}"
    ```
 
@@ -23,7 +23,7 @@ See the following steps to learn how to submit an Apache Hudi job.
 
 1. Create a Hudi SQL script like the following.
 
-   ```
+   ```bash,sh,zsh
    CREATE CATALOG hudi_glue_catalog WITH (
    'type' = 'hudi',
    'mode' = 'hms',
@@ -78,7 +78,7 @@ See the following steps to learn how to submit an Apache Hudi job.
 
 1. In your `FlinkDeployments` YAML file, set `hudi.enabled` to `true`.
 
-   ```
+   ```bash,sh,zsh
    spec:
      flinkConfiguration:
        hudi.enabled: "true"
@@ -86,7 +86,7 @@ See the following steps to learn how to submit an Apache Hudi job.
 
 1. Create a YAML file to run your configuration. This example file is named `hudi-write.yaml`.
 
-   ```
+   ```bash,sh,zsh
    apiVersion: flink.apache.org/v1beta1
    kind: FlinkDeployment
    metadata:
@@ -160,6 +160,6 @@ See the following steps to learn how to submit an Apache Hudi job.
 
 1. Submit a Flink Hudi job to the [Flink Kubernetes operator](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/jobruns-flink-kubernetes-operator.html).
 
-   ```
+   ```bash,sh,zsh
    kubectl apply -f hudi-write.yaml
    ```

@@ -32,7 +32,7 @@ For more information, see [Delete a listener for your Application Load Balancer]
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified Listener.**
 
-```
+```powershell
 Remove-ELB2Listener -ListenerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener/app/test-alb/3651b4394dd9a24f/66e10e3aaf5b6d9b'
 ```
 **Output:**
@@ -45,7 +45,7 @@ Performing the operation "Remove-ELB2Listener (DeleteListener)" on target "arn:a
 ```
 **Example 2: This example removes specified listener from the Load balancer.**
 
-```
+```powershell
 Remove-ELB2Listener -ListenerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener/app/test-alb/3651b4394dd9a24f/3873f123b98f7618'
 ```
 **Output:**
@@ -61,7 +61,7 @@ Performing the operation "Remove-ELB2Listener (DeleteListener)" on target "arn:a
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified Listener.**
 
-```
+```powershell
 Remove-ELB2Listener -ListenerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener/app/test-alb/3651b4394dd9a24f/66e10e3aaf5b6d9b'
 ```
 **Output:**
@@ -74,7 +74,7 @@ Performing the operation "Remove-ELB2Listener (DeleteListener)" on target "arn:a
 ```
 **Example 2: This example removes specified listener from the Load balancer.**
 
-```
+```powershell
 Remove-ELB2Listener -ListenerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener/app/test-alb/3651b4394dd9a24f/3873f123b98f7618'
 ```
 **Output:**

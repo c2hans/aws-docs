@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 
 ![Cyber event recovery reference architecture diagram](https://docs.aws.amazon.com/wellarchitected/latest/financial-services-industry-lens/images/cyber-event-recovery-reference-architecture.png)
 
+*Figure 3. Cyber event recovery*
+
  **Architecture description**
 
  The following components are built out as part of the cyber event data vault on AWS.

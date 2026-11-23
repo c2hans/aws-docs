@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/eksctl-anywhere.html
 
 Once done, execute anywhere commands by running:
 
-```
+```shell
 eksctl anywhere version
 v0.5.0
 ```

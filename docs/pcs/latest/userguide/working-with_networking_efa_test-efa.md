@@ -69,7 +69,7 @@ Connect to one of the nodes (in this example case, `hpc7g-1`) using SSH (or SSM)
 
  Now, launch `fi_pingpong` in server mode.
 
-```
+```sh
 /opt/amazon/efa/bin/fi_pingpong -p efa
 ```
 

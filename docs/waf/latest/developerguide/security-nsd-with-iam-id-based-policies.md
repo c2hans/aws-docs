@@ -56,7 +56,7 @@ Create an identity-based policy with the following example to provide full admin
 
 ****
 
-```
+```json
  {
    "Version":"2012-10-17",
    "Statement": [
@@ -94,7 +94,7 @@ Create an identity-based policy with the following policy example to provide rea
 
 ****
 
-```
+```json
  {
    "Version":"2012-10-17",
    "Statement": [

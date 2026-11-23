@@ -395,7 +395,7 @@ The following example retrieves the specified real-time metrics.
 
 This example illustrates one usage of GetCurrentMetricData.
 
-```
+```json
 {
      "InstanceId": "12345678-1234-5678-aabb-123456abcdef",
     "CurrentMetrics": [

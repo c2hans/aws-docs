@@ -188,7 +188,7 @@ You can use the following AWS tutorial to automatically create a health status d
 
 You can use the CloudFormation template definition in this section to create a monitoring dashboard in CloudWatch, then add alarms on the CloudWatch console to receive notifications when a metric surpasses a particular threshold. To create the stack using this template definition, refer to [Creating a stack on the CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stack.html). To add an alarm to the dashboard, refer to [Using alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html).
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: Creates MWAA Cloudwatch Dashboard
 Parameters:

@@ -46,7 +46,7 @@ For more information, see [Finding resources to tag](https://docs.aws.amazon.com
 **Tools for PowerShell V4**
 **Example 1: Returns all the tagged resources in a region and the tag keys associated with the resource. If no -Region parameter is supplied to the cmdlet it will attempt to infer region from the shell or EC2 instance metadata.**
 
-```
+```powershell
 Get-RGTResource
 ```
 **Output:**
@@ -59,7 +59,7 @@ arn:aws:s3:::amzn-s3-demo-bucket                                            {sta
 ```
 **Example 2: Returns all the tagged resources of the specified type in a region. The string for each service name and resource type is the same as that embedded in a resource's Amazon Resource Name (ARN).**
 
-```
+```powershell
 Get-RGTResource -ResourceType "s3"
 ```
 **Output:**
@@ -71,7 +71,7 @@ arn:aws:s3:::amzn-s3-demo-bucket                                            {sta
 ```
 **Example 3: Returns all the tagged resources of the specified type in a region. Note that when the resource types are piped into the cmdlet, one call to the service is made for each supplied resource type.**
 
-```
+```powershell
 "dynamodb","s3" | Get-RGTResource
 ```
 **Output:**
@@ -84,7 +84,7 @@ arn:aws:s3:::amzn-s3-demo-bucket                                            {sta
 ```
 **Example 4: Returns all the tagged resources that match the specified filter.**
 
-```
+```powershell
 Get-RGTResource -TagFilter @{ Key="stage" }
 ```
 **Output:**
@@ -96,7 +96,7 @@ arn:aws:s3:::amzn-s3-demo-bucket                                            {sta
 ```
 **Example 5: Returns all the tagged resources that match the specified filter and resource type.**
 
-```
+```powershell
 Get-RGTResource -TagFilter @{ Key="stage" } -ResourceType "dynamodb"
 ```
 **Output:**
@@ -108,7 +108,7 @@ arn:aws:dynamodb:us-west-2:123456789012:table/mytable            {stage, version
 ```
 **Example 6: Returns all the tagged resources that match the specified filter.**
 
-```
+```powershell
 Get-RGTResource -TagFilter @{ Key="stage"; Values=@("beta","gamma") }
 ```
 **Output:**
@@ -123,7 +123,7 @@ arn:aws:dynamodb:us-west-2:123456789012:table/mytable            {stage, version
 **Tools for PowerShell V5**
 **Example 1: Returns all the tagged resources in a region and the tag keys associated with the resource. If no -Region parameter is supplied to the cmdlet it will attempt to infer region from the shell or EC2 instance metadata.**
 
-```
+```powershell
 Get-RGTResource
 ```
 **Output:**
@@ -136,7 +136,7 @@ arn:aws:s3:::amzn-s3-demo-bucket                                            {sta
 ```
 **Example 2: Returns all the tagged resources of the specified type in a region. The string for each service name and resource type is the same as that embedded in a resource's Amazon Resource Name (ARN).**
 
-```
+```powershell
 Get-RGTResource -ResourceType "s3"
 ```
 **Output:**
@@ -148,7 +148,7 @@ arn:aws:s3:::amzn-s3-demo-bucket                                            {sta
 ```
 **Example 3: Returns all the tagged resources of the specified type in a region. Note that when the resource types are piped into the cmdlet, one call to the service is made for each supplied resource type.**
 
-```
+```powershell
 "dynamodb","s3" | Get-RGTResource
 ```
 **Output:**
@@ -161,7 +161,7 @@ arn:aws:s3:::amzn-s3-demo-bucket                                            {sta
 ```
 **Example 4: Returns all the tagged resources that match the specified filter.**
 
-```
+```powershell
 Get-RGTResource -TagFilter @{ Key="stage" }
 ```
 **Output:**
@@ -173,7 +173,7 @@ arn:aws:s3:::amzn-s3-demo-bucket                                            {sta
 ```
 **Example 5: Returns all the tagged resources that match the specified filter and resource type.**
 
-```
+```powershell
 Get-RGTResource -TagFilter @{ Key="stage" } -ResourceType "dynamodb"
 ```
 **Output:**
@@ -185,7 +185,7 @@ arn:aws:dynamodb:us-west-2:123456789012:table/mytable            {stage, version
 ```
 **Example 6: Returns all the tagged resources that match the specified filter.**
 
-```
+```powershell
 Get-RGTResource -TagFilter @{ Key="stage"; Values=@("beta","gamma") }
 ```
 **Output:**

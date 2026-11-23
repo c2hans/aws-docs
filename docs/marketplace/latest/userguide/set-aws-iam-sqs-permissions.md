@@ -16,7 +16,7 @@ If you registered your seller account after July 15, 2026, use Amazon EventBridg
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

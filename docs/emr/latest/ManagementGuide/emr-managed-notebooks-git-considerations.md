@@ -44,7 +44,7 @@ To use privately-hosted Git repositories, your DNS server must allow inbound acc
    + **`GitServerDnsName`** - The DNS name of your Git server. For example `"git.example.com"`.
    + **`GitServerIpV4List`** - A list of IPv4 addresses that belong to your Git server(s).
 
-   ```
+   ```json
    [
        {
            "Type": "PrivatelyHostedGitConfig",

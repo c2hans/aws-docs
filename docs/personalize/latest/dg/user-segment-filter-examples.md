@@ -10,13 +10,13 @@ The following filter expressions show how to filter user segments based on item 
 
 The following filter expression includes only users with a membership status equal to the value that you specify when you get user segments.
 
-```
+```sql
 INCLUDE UserID WHERE Users.MEMBERSHIP_STATUS IN ($MEMBERSHIP)
 ```
 
 The following filter expression excludes users with an `AGE` less than a value you specify when you get user segments.
 
-```
+```sql
 EXCLUDE UserID WHERE Users.AGE < $AGE
 ```
 
@@ -24,12 +24,12 @@ EXCLUDE UserID WHERE Users.AGE < $AGE
 
 The following filter expression includes only users who have clicked or rated items.
 
-```
+```sql
 INCLUDE UserID WHERE Interactions.EVENT_TYPE IN ("click", "rating")
 ```
 
 The following filter expression excludes users from user segments who have item interactions with an event type you specify when you get user segments.
 
-```
+```sql
 EXCLUDE UserID WHERE Interactions.EVENT_TYPE IN ($EVENT_TYPE)
 ```

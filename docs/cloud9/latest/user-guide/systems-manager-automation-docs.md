@@ -38,7 +38,7 @@ To create, edit, publish, and delete Systems Manager automation documents, you m
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -18,7 +18,7 @@ The following Python examples show you how to invoke your endpoint based on the 
 
 The following example shows you how to invoke a JumpStart foundation model that you've deployed to an endpoint.
 
-```
+```python
 import boto3
 import pandas as pd
 
@@ -41,7 +41,7 @@ response = client.invoke_endpoint(
 
 The following example shows you how to invoke numeric or categorical prediction models.
 
-```
+```python
 import boto3
 import pandas as pd
 
@@ -61,7 +61,7 @@ response = client.invoke_endpoint(
 
 The following example shows you how to invoke time series forecasting models. For a complete example of how to test invoke a time series forecasting model, see [ Time-Series Forecasting with Amazon SageMaker Autopilot](https://github.com/aws/amazon-sagemaker-examples/blob/eef13dae197a6e588a8bc111aba3244f99ee0fbb/autopilot/autopilot_time_series.ipynb).
 
-```
+```python
 import boto3
 import pandas as pd
 
@@ -85,7 +85,7 @@ response = client.invoke_endpoint(
 
 The following example shows you how to invoke image prediction models.
 
-```
+```python
 import boto3
 client = boto3.client("runtime.sagemaker")
 with open("example_image.jpg", "rb") as file:
@@ -103,7 +103,7 @@ with open("example_image.jpg", "rb") as file:
 
 The following example shows you how to invoke text prediction models.
 
-```
+```python
 import boto3
 import pandas as pd
 

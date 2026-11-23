@@ -55,13 +55,13 @@ You can use one of the following operations:
 
   1. Run the following command to return a list of Amazon Resource Names (ARNs) for your identity sources:
 
-     ```
+     ```bash
      $ C:\> aws mpa list-identity-sources
      ```
 
   1. Run the following command to delete an identity source:
 
-     ```
+     ```bash
      $ C:\> aws mpa delete-identity-source \
        --identity-source-arn arn:aws:mpa:{{region}}:{{123456789012}}:identity-source/IamIdentityCenter
      ```

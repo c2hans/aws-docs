@@ -58,7 +58,7 @@ To enable Web Bot Auth, you need to configure it when creating a Browser Tool:
 
 1. To create a Browser Tool with Web Bot Auth enabled using the AWS CLI:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-browser \
      --region <Region> \
      --name "my-browser-with-auth" \
@@ -70,7 +70,7 @@ To enable Web Bot Auth, you need to configure it when creating a Browser Tool:
 
 1. To create a Browser Tool with Web Bot Auth enabled using Boto3:
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client('bedrock-agentcore-control', region_name='us-west-2')

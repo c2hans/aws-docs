@@ -8,13 +8,13 @@ Updating a custom Hook allows revisions in the Hook to be made available in the 
 
 To update a custom Hook, submit your revisions to the CloudFormation registry through the CloudFormation CLI [submit](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-submit.html) operation.
 
-```
+```sh
 $ cfn submit
 ```
 
 To specify the default version of your Hook in your account, use the [set-type-default-version](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-default-version.html) command and specify the type, type name, and version ID.
 
-```
+```sh
 $ aws cloudformation set-type-default-version \
     --type HOOK \
     --type-name {{MyCompany::Testing::MyTestHook}} \
@@ -23,7 +23,7 @@ $ aws cloudformation set-type-default-version \
 
 To retrieve information about the versions of a Hook, use [list-type-versions](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-type-versions.html).
 
-```
+```sh
 $ aws cloudformation list-type-versions \
   --type HOOK \
   --type-name "{{MyCompany::Testing::MyTestHook}}"

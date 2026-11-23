@@ -336,7 +336,7 @@ Returns a generic outcome consisting of success or failure with an error message
 ### Example
 <a name="integration-server-sdk5-cpp-processreadyasync-example"></a>
 
-```
+```cpp
 // Set parameters and call ProcessReady
 std::string serverLog("serverOut.log");        // This is an example of a log file written by the game server
 std::vector<std::string> logPaths;
@@ -767,7 +767,7 @@ Returns a [GetComputeCertificateOutcome](integration-server-sdk5-cpp-datatypes.m
 ### Example
 <a name="integration-server-sdk5-cpp-getcomputecertificate-example"></a>
 
-```
+```cpp
 Aws::GameLift::GetComputeCertificateOutcome certificate = Aws::GameLift::Server::GetComputeCertificate();
 ```
 
@@ -796,7 +796,7 @@ Returns a [GetFleetRoleCredentialsOutcome](integration-server-sdk5-cpp-datatypes
 ### Example
 <a name="integration-server-sdk5-cpp-getfleetrolecredentials-example"></a>
 
-```
+```cpp
 // form the fleet credentials request
 Aws::GameLift::Server::Model::GetFleetRoleCredentialsRequest getFleetRoleCredentialsRequest;
 getFleetRoleCredentialsRequest.SetRoleArn("arn:aws:iam::123456789012:role/service-role/exampleGameLiftAction");
@@ -837,7 +837,7 @@ Returns a [ListContainersNetworkInfoOutcome](integration-server-sdk5-cpp-datatyp
 ### Example
 <a name="integration-server-sdk5-cpp-listcontainersnetworkinfo-example"></a>
 
-```
+```cpp
 Aws::GameLift::ListContainersNetworkInfoOutcome containersNetworkInfo = Aws::GameLift::Server::ListContainersNetworkInfo();
 ```
 
@@ -866,7 +866,7 @@ Returns a generic outcome consisting of success or failure with an error message
 ### Example
 <a name="integration-server-sdk5-cpp-ref-destroy-example"></a>
 
-```
+```cpp
 Aws::GameLift::GenericOutcome processEndingOutcome = Aws::GameLift::Server::ProcessEnding();
 Aws::GameLift::Server::Destroy();
 

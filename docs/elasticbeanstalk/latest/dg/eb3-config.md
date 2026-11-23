@@ -164,7 +164,7 @@ $ eb config --update "file://example.txt"
 
 **Example - filename: `example.txt` - YAML format**
 
-```
+```yaml
 OptionSettings:
   'aws:elasticbeanstalk:command':
     BatchSize: '30'
@@ -178,7 +178,7 @@ OptionsToRemove:
 
 **Example - filename: `example.txt` - JSON format**
 
-```
+```json
 {
     "OptionSettings": {
         "aws:elasticbeanstalk:command": {

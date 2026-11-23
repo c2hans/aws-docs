@@ -89,7 +89,7 @@ To use an algorithm to run a training job by using the SageMaker API, specify ei
 
 Use an algorithm that you created or subscribed to on AWS Marketplace to create a training job, create an `ModelTrainer` object and specify either the Amazon Resource Name (ARN) or the name of the algorithm as the value of the `algorithm_arn` argument. Then call the `train` method of the ModelTrainer. For example:
 
-```
+```python
 from sagemaker.train import ModelTrainer
 from sagemaker.train.configs import Compute
 

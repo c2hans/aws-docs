@@ -15,7 +15,7 @@ Debugger saves the system metrics in the default S3 bucket. The format of the de
 
 The following code example shows how to set up the `profiler_config` parameter with a system monitoring time interval of 1000 milliseconds.
 
-```
+```py
 from sagemaker.core.debugger import ProfilerConfig
 
 profiler_config=ProfilerConfig(

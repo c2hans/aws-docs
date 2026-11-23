@@ -30,15 +30,15 @@ On most Linux node types: `/etc/amazon/ssm/seelog.xml.template`.
 **Note**
 On Ubuntu Server 20.04 and 18.04 LTS, the file `seelog.xml` must be created in the directory `/etc/amazon/ssm/`. You can create this directory and file by running the following commands.
 
-   ```
+   ```sh
    sudo mkdir -p /etc/amazon/ssm
    ```
 
-   ```
+   ```sh
    sudo cp -pr /snap/amazon-ssm-agent/current/* /etc/amazon/ssm
    ```
 
-   ```
+   ```sh
    sudo cp -p /etc/amazon/ssm/seelog.xml.template /etc/amazon/ssm/seelog.xml
    ```
 

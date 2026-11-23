@@ -23,7 +23,7 @@ The following example shows a function that uses the context object to access th
 
 **Example [Handler.java](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/java-basic/src/main/java/example/Handler.java)**
 
-```
+```java
 package example;
 
 import [com.amazonaws.services.lambda.runtime.Context](https://github.com/aws/aws-lambda-java-libs/blob/master/aws-lambda-java-core/src/main/java/com/amazonaws/services/lambda/runtime/Context.java);
@@ -57,7 +57,7 @@ The interface for the context object is available in the [aws-lambda-java-core](
 
 **Example [src/test/java/example/TestContext.java](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/java-basic/src/test/java/example/TestContext.java)**
 
-```
+```java
 package example;
 
 import [com.amazonaws.services.lambda.runtime.Context](https://github.com/aws/aws-lambda-java-libs/blob/master/aws-lambda-java-core/src/main/java/com/amazonaws/services/lambda/runtime/Context.java);

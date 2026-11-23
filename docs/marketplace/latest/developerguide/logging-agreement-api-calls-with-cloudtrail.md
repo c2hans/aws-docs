@@ -54,7 +54,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `AcceptAgreementRequest` action.
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -88,7 +88,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Accept
 
 The following example shows a CloudTrail log entry that demonstrates the `CancelAgreement` action.
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {

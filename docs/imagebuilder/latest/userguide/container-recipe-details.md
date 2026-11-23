@@ -40,7 +40,7 @@ aws imagebuilder list-container-recipes
 
 The command returns a summary for each container recipe, shown in the following example output.
 
-```
+```json
 {
     "requestId": "{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}",
     "containerRecipeSummaryList": [
@@ -59,7 +59,7 @@ The command returns a summary for each container recipe, shown in the following 
 
 The following example lists only the recipes that you own:
 
-```
+```sh
 aws imagebuilder list-container-recipes --owner Self
 ```
 
@@ -68,13 +68,13 @@ aws imagebuilder list-container-recipes --owner Self
 
 The following example shows how to use the [Get-EC2IBContainerRecipeList](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBContainerRecipeList.html) cmdlet to list all of your container recipes:
 
-```
+```ps
 Get-EC2IBContainerRecipeList
 ```
 
 The following example lists only the recipes that you own:
 
-```
+```ps
 Get-EC2IBContainerRecipeList -Owner Self
 ```
 
@@ -106,7 +106,7 @@ aws imagebuilder get-container-recipe --container-recipe-arn arn:aws:imagebuilde
 
 The command returns the full container recipe, shown in the following example output.
 
-```
+```json
 {
     "requestId": "{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}",
     "containerRecipe": {
@@ -137,7 +137,7 @@ The command returns the full container recipe, shown in the following example ou
 
 The following example shows how to use the [Get-EC2IBContainerRecipe](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBContainerRecipe.html) cmdlet to get the details of a container recipe by specifying its Amazon Resource Name (ARN):
 
-```
+```ps
 Get-EC2IBContainerRecipe -ContainerRecipeArn arn:aws:imagebuilder:{{us-west-2}}:{{123456789012}}:container-recipe/{{my-container-recipe}}/1.0.2
 ```
 
@@ -162,7 +162,7 @@ aws imagebuilder get-container-recipe-policy --container-recipe-arn arn:aws:imag
 
 The following example shows how to use the [Get-EC2IBContainerRecipePolicy](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBContainerRecipePolicy.html) cmdlet to get the details of a container recipe policy by specifying its ARN:
 
-```
+```ps
 Get-EC2IBContainerRecipePolicy -ContainerRecipeArn arn:aws:imagebuilder:{{us-west-2}}:{{123456789012}}:container-recipe/{{my-container-recipe}}/1.0.2
 ```
 

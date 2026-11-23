@@ -10,13 +10,13 @@ Amazon EMR on EKS custom images support both AWS Graviton-based EC2 instances an
 
 For example, to inspect the Docker manifest list for 6.6.0 images, run the following command.
 
-```
+```shell
 docker manifest inspect 895885662937.dkr.ecr.us-west-2.amazonaws.com/spark/emr-6.6.0:latest
 ```
 
 Here is the output. The `arm64` architecture is for Graviton instance. The `amd64` is for non-Graviton instance.
 
-```
+```JSON
 {
    "schemaVersion": 2,
    "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
@@ -47,7 +47,7 @@ Take the following steps to create multi-architecture images:
 
 1. Create a `Dockerfile` with the following contents so that you can pull the `arm64` image.
 
-   ```
+   ```shell
    FROM --platform=arm64 895885662937.dkr.ecr.us-west-2.amazonaws.com/spark/emr-6.6.0:latest
    USER root
 

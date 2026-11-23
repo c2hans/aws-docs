@@ -25,7 +25,7 @@ To use the RFDK to create the components of your cloud render farm, you will wri
 ------
 #### [ Python ]
 
-```
+```python
 # A simple AWS CloudFormation stack that creates a bare-bones infrastructure with
 # AWS Thinkbox Deadline installed, configured, and ready to perform renders.
 class BareBonesDeadlineRenderFarm(cdk.Stack):
@@ -122,7 +122,7 @@ class BareBonesDeadlineRenderFarm(cdk.Stack):
 ------
 #### [ TypeScript ]
 
-```
+```typescript
 // A simple CloudFormation stack that creates a bare-bones infrastructure with
 // AWS Thinkbox Deadline installed, configured, and ready to perform renders.
 export class BareBonesDeadlineRenderFarm extends cdk.Stack {

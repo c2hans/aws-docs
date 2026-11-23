@@ -17,7 +17,7 @@ Specify which captions you want by providing a track number. The track numbers c
 **In your JSON job specification**
 If you use the API or an SDK, you can find these settings in the JSON file of your job. These settings are under `Inputs`, as in the following example:
 
-```
+```json
 "Inputs": [
 
       {

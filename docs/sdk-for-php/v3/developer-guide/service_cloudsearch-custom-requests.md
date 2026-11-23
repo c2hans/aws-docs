@@ -23,7 +23,7 @@ Before running the example code, configure your AWS credentials, as described in
 
  **Imports**
 
-```
+```php
 require './vendor/autoload.php';
 
 use Aws\Credentials\CredentialProvider;
@@ -34,7 +34,7 @@ use GuzzleHttp\Psr7\Request;
 
  **Sample Code**
 
-```
+```php
 function searchDomain(
     $client,
     $domainName,

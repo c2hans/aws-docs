@@ -31,17 +31,17 @@ For non-recoverable errors, Timestream for LiveAnalytics sends a failure notific
 
 A scheduled query error report location has the following naming convention:
 
-```
+```sh
 s3://{{customer-bucket}}/{{customer-prefix}}/
 ```
 
 Following is an example scheduled query ARN:
 
-```
+```sh
 arn:aws:timestream:us-east-1:000000000000:scheduled-query/test-query-hd734tegrgfd
 ```
 
-```
+```sh
 s3://{{customer-bucket}}/{{customer-prefix}}/test-query-hd734tegrgfd/{{<InvocationTime>}}/{{<Auto or Manual>}}/{{<Actual Trigger Time>}}
 ```
 
@@ -52,7 +52,7 @@ s3://{{customer-bucket}}/{{customer-prefix}}/test-query-hd734tegrgfd/{{<Invocati
 
  The error reports have the following JSON format:
 
-```
+```json
 {
     "reportId": <String>,            // A unique string ID for all error reports belonging to a particular scheduled query run
     "errors": [ <Error>, ... ],      // One or more errors
@@ -65,7 +65,7 @@ s3://{{customer-bucket}}/{{customer-prefix}}/test-query-hd734tegrgfd/{{<Invocati
 The `Error` object can be one of three types:
 + Records Ingestion Errors
 
-  ```
+  ```json
   {
       "reason": <String>,              // The error message String
       "records": [ <Record>, ... ],    // One or more rejected records )
@@ -73,7 +73,7 @@ The `Error` object can be one of three types:
   ```
 + Row Parse and Validation Errors
 
-  ```
+  ```json
   {
       "reason": <String>,        // The error message String
       "rawLine": <String>,       // [Optional] The raw line String that is being parsed into record(s) to be ingested. This line has encountered the above-mentioned parse error.
@@ -81,7 +81,7 @@ The `Error` object can be one of three types:
   ```
 + General Errors
 
-  ```
+  ```json
   {
       "reason": <String>,        // The error message
   }
@@ -92,7 +92,7 @@ The `Error` object can be one of three types:
 
 The following is an example of an error report that was produced due to ingestion errors.
 
-```
+```json
 {
     "reportId": "C9494AABE012D1FBC162A67EA2C18255",
     "errors": [

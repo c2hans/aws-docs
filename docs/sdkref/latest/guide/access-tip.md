@@ -68,7 +68,7 @@ When configuring the TIP plugin, consider the following permission requirements 
 
 Trust Policy with Web token provider:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -90,7 +90,7 @@ Trust Policy with Web token provider:
 
 Permission Policy:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -127,7 +127,7 @@ The examples below show how to implement the TIP plugin in your code using the A
 
 To use the TIP plugin in your AWS SDK for Java project, you need to declare it as a dependency in your project's `pom.xml` file.
 
-```
+```bash
 <dependency>
 <groupId>software.amazon.awsidentity.trustedIdentityPropagation</groupId>
 <artifactId>aws-sdk-java-trustedIdentityPropagation-java-plugin</artifactId>
@@ -144,7 +144,7 @@ For these examples, you need to setup the user specific permissions from S3 Acce
 
 **Option 1: Build and pass OIDC and STS clients**
 
-```
+```java
 SsoOidcClient oidcClient = SsoOidcClient.builder()
     .region(Region.US_EAST_1)
     .credentialsProvider(credentialsProvider).build();
@@ -179,7 +179,7 @@ final var resp = s3Client.getObject(GetObjectRequest.builder()
 
 **Option 2: Pass applicationRoleArn and defer client creation to the plugin**
 
-```
+```java
 TrustedIdentityPropagationPlugin trustedIdentityPropagationPlugin = TrustedIdentityPropagationPlugin.builder()
         .webTokenProvider(() -> webToken)
         .applicationArn(idcApplicationArn)
@@ -216,7 +216,7 @@ $  npm i @aws-sdk-extension/trusted-identity-propagation
 
 The final `package.json` should include a dependency similar to the following:
 
-```
+```bash
   "dependencies": {
 "@aws-sdk-extension/trusted-identity-propagation": "^2.0.0"
   },
@@ -231,7 +231,7 @@ For these examples, you need to setup the user specific permissions from Amazon 
 
 **Option 1: Build and pass OIDC and STS clients**
 
-```
+```js
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
 import { S3ControlClient, GetDataAccessCommand } from "@aws-sdk/client-s3-control";
 import { TrustedIdentityPropagationExtension } from "@aws-sdk-extension/trusted-identity-propagation";
@@ -294,7 +294,7 @@ try {
 
 **Option 2: Pass applicationRoleArn and defer client creation to the plugin**
 
-```
+```js
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
 import { S3ControlClient, GetDataAccessCommand } from "@aws-sdk/client-s3-control";
 import { TrustedIdentityPropagationExtension } from "@aws-sdk-extension/trusted-identity-propagation";

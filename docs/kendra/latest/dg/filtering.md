@@ -22,7 +22,7 @@ You can use a document attribute or metadata field associated with a document as
 
 The following example shows how to get facet information for the "City" custom attribute.
 
-```
+```python
 response=kendra.query(
         QueryText = query,
         IndexId = index,
@@ -40,7 +40,7 @@ Note that nested facets could impact query latency. A general rule is the more n
 
 The following example shows how to get facet information for the "CityRegion" custom attribute, as a nested facet within "City".
 
-```
+```python
 response=kendra.query(
         QueryText = query,
         IndexId = index,
@@ -63,7 +63,7 @@ You can display up to 10 facet values per facet for a query, and only one nested
 
 The following sample JSON response shows facets scoped to the "City" document attribute. The response includes the count of documents for the facet value.
 
-```
+```json
 {
     'FacetResults': [
         {
@@ -96,7 +96,7 @@ You can also display facet information for a nested facet, such as a region with
 
 The following sample JSON response shows facets scoped to the "CityRegion" document attribute, as a nested facet within "City". The response includes the count of documents for the nested facet values.
 
-```
+```json
 {
     'FacetResults': [
         {
@@ -189,7 +189,7 @@ Most attributes can be used to filter responses for all [response types](https:/
 
 The following example shows how to perform a logical AND operation by filtering on a specific city, *Seattle*, and state, *Washington*.
 
-```
+```python
 response=kendra.query(
         QueryText = query,
         IndexId = index,
@@ -204,7 +204,7 @@ response=kendra.query(
 
 The following example shows how to perform a logical OR operation for when any of the `Fileformat`, `Author`, or `SourceURI` keys match the specified values.
 
-```
+```python
 response=kendra.query(
         QueryText = query,
         IndexId = index,
@@ -220,7 +220,7 @@ response=kendra.query(
 
 For `StringList` fields, use the `ContainsAny` or `ContainsAll` attribute filters to return documents with the specified string. The following example shows how to return all documents that have the values "Seattle" or "Portland" in their `Locations` custom attribute.
 
-```
+```python
 response=kendra.query(
         QueryText = query,
         IndexId = index,

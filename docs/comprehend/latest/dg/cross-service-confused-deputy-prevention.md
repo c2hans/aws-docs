@@ -20,7 +20,7 @@ The following example shows how you can use the `aws:SourceAccount` global condi
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -51,7 +51,7 @@ You need to create a trust policy to create or update an endpoint for an encrypt
 
 ****
 
-```
+```json
 {
  "Version":"2012-10-17",
  "Statement": [
@@ -87,7 +87,7 @@ You need to create a trust policy to create a custom model. Set the `aws:SourceA
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

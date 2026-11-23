@@ -45,7 +45,7 @@ To ensure that users and roles can still use the Site-to-Site VPN console, also 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -70,7 +70,7 @@ To ensure that users and roles can still use the Site-to-Site VPN console, also 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

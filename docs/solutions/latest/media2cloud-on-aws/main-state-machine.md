@@ -9,3 +9,5 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/main
 +  **Start analysis state machine (nested)** - Runs the analysis process using the analysis state machine after the ingestion state machine completes the ingestion process.
 
 ![Main state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-main-state-machine.png)
+
+***Main state machine workflow** *

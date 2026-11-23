@@ -29,7 +29,7 @@ DICOM data can be retrieved in either its stored transfer syntax or as uncompres
 ------
 #### [ Shell ]
 
-   ```
+   ```sh
    curl --request GET \
      'https://dicom-medical-imaging.us-east-1.amazonaws.com/datastore/d9a2a515ab294163a2d2f4069eed584c/studies/1.3.6.1.4.1.5962.1.2.4.20040826285059.5457/series/1.3.6.1.4.1.5962.1.3.4.1.20040825185059.5457/instances/1.3.6.1.4.1.5962.1.1.4.1.1.20040826186059.5457/frames/1?imageSetId=459e50687f121185f747b67bb60d1bc8' \
      --aws-sigv4 'aws:amz:us-east-1:medical-imaging' \

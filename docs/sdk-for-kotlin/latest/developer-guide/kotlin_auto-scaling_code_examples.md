@@ -33,7 +33,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun main(args: Array<String>) {
     val usage = """
     Usage:
@@ -354,7 +354,7 @@ The following code example shows how to use `CreateAutoScalingGroup`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun createAutoScalingGroup(
     groupName: String,
     launchTemplateNameVal: String,
@@ -400,7 +400,7 @@ The following code example shows how to use `DeleteAutoScalingGroup`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun deleteSpecificAutoScalingGroup(groupName: String) {
     val deleteAutoScalingGroupRequest =
         DeleteAutoScalingGroupRequest {
@@ -424,7 +424,7 @@ The following code example shows how to use `DescribeAutoScalingGroups`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun getAutoScalingGroups(groupName: String) {
     val scalingGroupsRequest =
         DescribeAutoScalingGroupsRequest {
@@ -454,7 +454,7 @@ The following code example shows how to use `DescribeAutoScalingInstances`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun describeAutoScalingInstance(id: String) {
     val describeAutoScalingInstancesRequest =
         DescribeAutoScalingInstancesRequest {
@@ -479,7 +479,7 @@ The following code example shows how to use `DescribeScalingActivities`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun describeAutoScalingGroups(groupName: String) {
     val groupsReques =
         DescribeAutoScalingGroupsRequest {
@@ -505,7 +505,7 @@ The following code example shows how to use `DisableMetricsCollection`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun disableMetricsCollection(groupName: String) {
     val disableMetricsCollectionRequest =
         DisableMetricsCollectionRequest {
@@ -529,7 +529,7 @@ The following code example shows how to use `EnableMetricsCollection`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun enableMetricsCollection(groupName: String?) {
     val collectionRequest =
         EnableMetricsCollectionRequest {
@@ -554,7 +554,7 @@ The following code example shows how to use `SetDesiredCapacity`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun setDesiredCapacity(groupName: String) {
     val capacityRequest =
         SetDesiredCapacityRequest {
@@ -578,7 +578,7 @@ The following code example shows how to use `TerminateInstanceInAutoScalingGroup
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun terminateInstanceInAutoScalingGroup(instanceIdVal: String) {
     val request =
         TerminateInstanceInAutoScalingGroupRequest {
@@ -602,7 +602,7 @@ The following code example shows how to use `UpdateAutoScalingGroup`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun updateAutoScalingGroup(
     groupName: String,
     launchTemplateNameVal: String,

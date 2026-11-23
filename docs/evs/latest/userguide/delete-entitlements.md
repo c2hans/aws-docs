@@ -36,7 +36,7 @@ To delete entitlements in the Amazon EVS console or with the AWS CLI, choose the
 
 1. Delete the entitlements. The following command is an example. Replace the values in angle brackets with your own values. Replace the example VM IDs with your own values.
 
-   ```
+   ```bash
    aws evs delete-entitlement \
        --environment-id <environment-id> \
        --connector-id <connector-id> \
@@ -46,7 +46,7 @@ To delete entitlements in the Amazon EVS console or with the AWS CLI, choose the
 
 1. To verify, list the entitlements and check that the deleted VMs no longer appear. Replace the values in angle brackets with your own values.
 
-   ```
+   ```bash
    aws evs list-vm-entitlements \
        --environment-id <environment-id> \
        --connector-id <connector-id> \

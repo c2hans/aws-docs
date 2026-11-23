@@ -96,7 +96,7 @@ Attach a separate permissions policy to the pipeline role that provides DLQ acce
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -129,7 +129,7 @@ For push-based sources, data is sent or pushed to the ingestion pipeline from an
 
 The following IAM access policy demonstrates how to grant this permission to the ingestion role:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -164,7 +164,7 @@ You might need to ingest data into a pipeline from a different AWS account, such
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{

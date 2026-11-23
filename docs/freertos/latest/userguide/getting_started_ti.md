@@ -170,7 +170,7 @@ If you prefer not to use an IDE for FreeRTOS development, you can alternatively 
 
    If you are using the TI ARM compiler with your TI board, use the following command to generate build files from source code:
 
-   ```
+   ```bash
    cmake -DVENDOR=ti -DBOARD=cc3220_launchpad -DCOMPILER=arm-ti -S {{freertos}} -B {{build-folder}}
    ```
 

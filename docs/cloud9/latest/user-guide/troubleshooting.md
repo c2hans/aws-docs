@@ -104,7 +104,7 @@ The following section outlines troubleshooting issues related to the AWS Cloud9 
 
  **Recommended solutions:** Create an AWS Cloud9 service-linked role in your AWS account. You can do so by running the following command in the AWS Command Line Interface (AWS CLI) or the AWS CloudShell.
 
-```
+```sh
 aws iam create-service-linked-role --aws-service-name cloud9.amazonaws.com # For the AWS CLI.
 iam create-service-linked-role --aws-service-name cloud9.amazonaws.com     # For the aws-shell.
 ```
@@ -122,13 +122,13 @@ After you run this command, try creating the environment again.
 
  **Solution:** Ask an AWS account administrator to create the service-linked role for AWS Cloud9 either in the IAM console or by running this command with the AWS Command Line Interface (AWS CLI):
 
-```
+```sh
 aws iam create-service-linked-role --aws-service-name cloud9.amazonaws.com
 ```
 
 Or this command with the AWS-shell:
 
-```
+```sh
 iam create-service-linked-role --aws-service-name cloud9.amazonaws.com
 ```
 
@@ -755,7 +755,7 @@ Choosing a larger Amazon EC2 instance might cause your AWS account to incur addi
 
   To create a swap file, run a command such as the following in the environment.
 
-  ```
+  ```sh
   sudo fallocate --length 512MB /var/swapfile && sudo chmod 600 /var/swapfile && sudo mkswap /var/swapfile && echo '/var/swapfile swap swap defaults 0 0' | sudo tee -a /etc/fstab > /dev/null
   ```
 
@@ -771,7 +771,7 @@ Choosing a larger Amazon EC2 instance might cause your AWS account to incur addi
 
   After you run the preceding command, to make this swap file available immediately, run the following command.
 
-  ```
+  ```sh
   sudo swapon /var/swapfile
   ```
 + Move or resize the environment to an instance or server with more compute resources. To move or resize Amazon EC2 instances, see [Moving an AWS Cloud9 IDE from Amazon EBS volumes](move-environment.md). For other instance or server types, refer to your instance's or server's documentation.
@@ -927,7 +927,7 @@ GDB server terminated with code 1
 
  **Issue:** Users are unable to run Node.js and are getting GLIBC errors. An example of these error messages is outlined below:
 
-```
+```sh
 node: /lib64/libm.so.6: version `GLIBC_2.27' not found (required by node)
 node: /lib64/libc.so.6: version `GLIBC_2.28' not found (required by node)
 ```

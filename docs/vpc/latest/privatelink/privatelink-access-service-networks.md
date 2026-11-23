@@ -22,6 +22,7 @@ You are billed hourly for the resource configurations that are associated with y
 + [Private DNS](#sn-endpoint-private-dns)
 + [Subnets and Availability Zones](#sn-endpoint-subnets-zones)
 + [IP address types](#sn-endpoint-ip-address-type)
++ [Monitor your service network endpoint](#sn-endpoint-monitoring)
 + [Create a service-network endpoint](access-with-service-network-endpoint.md)
 + [Manage service-network endpoints](manage-sn-endpoint.md)
 
@@ -91,3 +92,10 @@ Service-network endpoints can support IPv4, IPv6, or dual-stack addresses. Endpo
 + **Dualstack** – Assign both IPv4 and IPv6 addresses to your endpoint network interfaces. This option is supported only if all selected subnets have both IPv4 and IPv6 address ranges.
 
 If a service-network VPC endpoint supports IPv4, the endpoint network interfaces have IPv4 addresses. If a service-network VPC endpoint supports IPv6, the endpoint network interfaces have IPv6 addresses. The IPv6 address for an endpoint network interface is unreachable from the internet. If you describe an endpoint network interface with an IPv6 address, notice that `denyAllIgwTraffic` is enabled.
+
+## Monitor your service network endpoint
+<a name="sn-endpoint-monitoring"></a>
+
+Amazon VPC Lattice publishes Amazon CloudWatch metrics for traffic from your service-network endpoint to resource configurations in the service network. The metrics are published to the `AWS/VpcLattice` namespace using the `VPC Endpoint Id` dimension. For more information, see [Resource endpoint and service-network endpoint metrics](privatelink-cloudwatch-metrics.md#resource-endpoint-service-network-endpoint-metrics).
+
+Resource owners see this traffic under both the `Service Network Resource Association Id` and `VPC Endpoint Association Id` dimensions. For more information, see [Resource gateway and resource configuration metrics](https://docs.aws.amazon.com/vpc-lattice/latest/ug/monitoring-cloudwatch.html#resource-gateway-resource-configuration-metrics) in the *Amazon VPC Lattice User Guide*.

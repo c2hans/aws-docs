@@ -9,7 +9,7 @@ Enables or disables contact media streaming for a set of participants.
 ## Parameter object
 <a name="updatecontactmediastreamingbehavior-parameter"></a>
 
-```
+```json
 {
     "MediaStreamingState": One of "Enabled" or "Disabled". Must be specified statically.
     "Participants": [  A list of participants to include in the stream if enabling the stream, or disable if disabling the stream

@@ -40,7 +40,7 @@ For each ESX host, you must configure the software NVMe over TCP adapter so that
 
 After you configure the adapter, copy the NVMe Qualified Name (NQN) of each ESX host. To get the host NQN, run the following command on the host.
 
-```
+```bash
 esxcli nvme info get
 ```
 
@@ -53,7 +53,7 @@ FSx for ONTAP can create NVMe namespaces for NVMe/TCP access, which provide shar
 
 1. Create the namespace. The following is a sample command.
 
-   ```
+   ```bash
    vserver nvme namespace create -vserver <svm-name> \
    -path /vol/<volume-name>/<namespace-name> \
    -size <datastore-capacity> \
@@ -62,7 +62,7 @@ FSx for ONTAP can create NVMe namespaces for NVMe/TCP access, which provide shar
 
 1. Create the subsystem.
 
-   ```
+   ```bash
    vserver nvme subsystem create -vserver <svm-name> \
    -subsystem <subsystem-name> \
    -ostype vmware
@@ -70,7 +70,7 @@ FSx for ONTAP can create NVMe namespaces for NVMe/TCP access, which provide shar
 
 1. Map the namespace to the subsystem.
 
-   ```
+   ```bash
    vserver nvme subsystem map add -vserver <svm-name> \
    -subsystem <subsystem-name> \
    -path /vol/<volume-name>/<namespace-name>
@@ -78,7 +78,7 @@ FSx for ONTAP can create NVMe namespaces for NVMe/TCP access, which provide shar
 
 1. Add the NQN of an ESX host to the subsystem. Repeat this command for each host that needs access to the namespace.
 
-   ```
+   ```bash
    vserver nvme subsystem host add -vserver <svm-name> \
    -subsystem <subsystem-name> \
    -host-nqn <host-nqn>
@@ -86,7 +86,7 @@ FSx for ONTAP can create NVMe namespaces for NVMe/TCP access, which provide shar
 
 1. Confirm that the namespace exists.
 
-   ```
+   ```bash
    vserver nvme namespace show -vserver <svm-name>
    ```
 
@@ -99,7 +99,7 @@ To let the ESX hosts see the NVMe namespace, add a controller on the NVMe over T
 
 1. Get the iSCSI IP address of the storage virtual machine (SVM). FSx for ONTAP uses the same SVM endpoints for iSCSI and NVMe/TCP. You can find the address in the [Amazon FSx console](https://console.aws.amazon.com/fsx) on the **Endpoints** tab of the SVM, or by running the following command in the ONTAP CLI. Replace the values in angle brackets with your own values.
 
-   ```
+   ```bash
    network interface show -vserver <svm-name> -data-protocol nvme-tcp
    ```
 

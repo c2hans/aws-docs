@@ -29,7 +29,7 @@ The following code example shows how to get started using HealthImaging.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import {
   ListDatastoresCommand,
   MedicalImagingClient,
@@ -62,7 +62,7 @@ The following code example shows how to use `CopyImageSet`.
 **SDK for JavaScript (v3)**
 Utility function to copy an image set.
 
-```
+```javascript
 import { CopyImageSetCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -161,7 +161,7 @@ export const copyImageSet = async (
 ```
 Copy an image set without a destination.
 
-```
+```javascript
   await copyImageSet(
     "12345678901234567890123456789012",
     "12345678901234567890123456789012",
@@ -170,7 +170,7 @@ Copy an image set without a destination.
 ```
 Copy an image set with a destination.
 
-```
+```javascript
   await copyImageSet(
     "12345678901234567890123456789012",
     "12345678901234567890123456789012",
@@ -182,7 +182,7 @@ Copy an image set with a destination.
 ```
 Copy a subset of an image set with a destination and force the copy.
 
-```
+```javascript
   await copyImageSet(
     "12345678901234567890123456789012",
     "12345678901234567890123456789012",
@@ -203,7 +203,7 @@ The following code example shows how to use `CreateDatastore`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { CreateDatastoreCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -240,7 +240,7 @@ The following code example shows how to use `DeleteDatastore`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { DeleteDatastoreCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -278,7 +278,7 @@ The following code example shows how to use `DeleteImageSet`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { DeleteImageSetCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -324,7 +324,7 @@ The following code example shows how to use `GetDICOMImportJob`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { GetDICOMImportJobCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -375,7 +375,7 @@ The following code example shows how to use `GetDatastore`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { GetDatastoreCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -418,7 +418,7 @@ The following code example shows how to use `GetImageFrame`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { GetImageFrameCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -470,7 +470,7 @@ The following code example shows how to use `GetImageSet`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { GetImageSetCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -526,7 +526,7 @@ The following code example shows how to use `GetImageSetMetadata`.
 **SDK for JavaScript (v3)**
 Utility function to get image set metadata.
 
-```
+```javascript
 import { GetImageSetMetadataCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 import { writeFileSync } from "node:fs";
@@ -575,7 +575,7 @@ export const getImageSetMetadata = async (
 ```
 Get image set metadata without version.
 
-```
+```javascript
   try {
     await getImageSetMetadata(
       "metadata.json.gzip",
@@ -588,7 +588,7 @@ Get image set metadata without version.
 ```
 Get image set metadata with version.
 
-```
+```javascript
   try {
     await getImageSetMetadata(
       "metadata2.json.gzip",
@@ -610,7 +610,7 @@ The following code example shows how to use `ListDICOMImportJobs`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { paginateListDICOMImportJobs } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -668,7 +668,7 @@ The following code example shows how to use `ListDatastores`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { paginateListDatastores } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -725,7 +725,7 @@ The following code example shows how to use `ListImageSetVersions`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { paginateListImageSetVersions } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -785,7 +785,7 @@ The following code example shows how to use `ListTagsForResource`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { ListTagsForResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -825,7 +825,7 @@ The following code example shows how to use `SearchImageSets`.
 **SDK for JavaScript (v3)**
 The utility function for searching image sets.
 
-```
+```javascript
 import { paginateSearchImageSets } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -880,7 +880,7 @@ export const searchImageSets = async (
 ```
 Use case \#1: EQUAL operator.
 
-```
+```javascript
   const datastoreId = "12345678901234567890123456789012";
 
   try {
@@ -900,7 +900,7 @@ Use case \#1: EQUAL operator.
 ```
 Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 
-```
+```javascript
   const datastoreId = "12345678901234567890123456789012";
 
   try {
@@ -933,7 +933,7 @@ Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 ```
 Use case \#3: BETWEEN operator using createdAt. Time studies were previously persisted.
 
-```
+```javascript
   const datastoreId = "12345678901234567890123456789012";
 
   try {
@@ -956,7 +956,7 @@ Use case \#3: BETWEEN operator using createdAt. Time studies were previously per
 ```
 Use case \#4: EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt and sort response in ASC order on updatedAt field.
 
-```
+```javascript
   const datastoreId = "12345678901234567890123456789012";
 
   try {
@@ -1000,7 +1000,7 @@ The following code example shows how to use `StartDICOMImportJob`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { StartDICOMImportJobCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -1055,7 +1055,7 @@ The following code example shows how to use `TagResource`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { TagResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -1096,7 +1096,7 @@ The following code example shows how to use `UntagResource`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { UntagResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -1136,7 +1136,7 @@ The following code example shows how to use `UpdateImageSetMetadata`.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { UpdateImageSetMetadataCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -1190,7 +1190,7 @@ export const updateImageSetMetadata = async (
 ```
 Use case \#1: Insert or update an attribute and force the update.
 
-```
+```javascript
     const insertAttributes = JSON.stringify({
       SchemaVersion: 1.1,
       Study: {
@@ -1216,7 +1216,7 @@ Use case \#1: Insert or update an attribute and force the update.
 ```
 Use case \#2: Remove an attribute.
 
-```
+```javascript
     // Attribute key and value must match the existing attribute.
     const remove_attribute = JSON.stringify({
       SchemaVersion: 1.1,
@@ -1242,7 +1242,7 @@ Use case \#2: Remove an attribute.
 ```
 Use case \#3: Remove an instance.
 
-```
+```javascript
     const remove_instance = JSON.stringify({
       SchemaVersion: 1.1,
       Study: {
@@ -1271,7 +1271,7 @@ Use case \#3: Remove an instance.
 ```
 Use case \#4: Revert to an earlier version.
 
-```
+```javascript
     const updateMetadata = {
       revertToVersionId: "1",
     };
@@ -1305,7 +1305,7 @@ The implementation is structured as a command-line application.
 **SDK for JavaScript (v3)**
 Orchestrate steps (index.js).
 
-```
+```javascript
 import {
   parseScenarioArgs,
   Scenario,
@@ -1413,7 +1413,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 ```
 Deploy resources (deploy-steps.js).
 
-```
+```javascript
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -1549,7 +1549,7 @@ Role ARN: ${stackOutputs?.RoleArn}
 ```
 Copy DICOM files (dataset-steps.js).
 
-```
+```javascript
 import {
   S3Client,
   CopyObjectCommand,
@@ -1658,7 +1658,7 @@ export const outputCopiedObjects = new ScenarioOutput(
 ```
 Start import into datastore (import-steps.js).
 
-```
+```javascript
 import {
   MedicalImagingClient,
   StartDICOMImportJobCommand,
@@ -1743,7 +1743,7 @@ export const outputImportJobStatus = new ScenarioOutput(
 ```
 Get image set IDs (image-set-steps.js - ).
 
-```
+```javascript
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
 
 import {
@@ -1806,7 +1806,7 @@ export const outputImageSetIds = new ScenarioOutput(
 ```
 Get image frame IDs (image-frame-steps.js).
 
-```
+```javascript
 import {
   MedicalImagingClient,
   GetImageSetMetadataCommand,
@@ -1932,7 +1932,7 @@ export const outputImageFrameIds = new ScenarioOutput(
 ```
 Verify image frames (verify-steps.js). The [AWS HealthImaging Pixel Data Verification](https://github.com/aws-samples/aws-healthimaging-samples/tree/main/pixel-data-verification) library was used for verification.
 
-```
+```javascript
 import { spawn } from "node:child_process";
 
 import {
@@ -2058,7 +2058,7 @@ export const decodeAndVerifyImages = new ScenarioAction(
 ```
 Destroy resources (clean-up-steps.js).
 
-```
+```javascript
 import {
   CloudFormationClient,
   DeleteStackCommand,
@@ -2201,7 +2201,7 @@ The following code example shows how to tag a HealthImaging data store.
 **SDK for JavaScript (v3)**
 To tag a data store.
 
-```
+```javascript
   try {
     const datastoreArn =
       "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012";
@@ -2215,7 +2215,7 @@ To tag a data store.
 ```
 The utility function for tagging a resource.
 
-```
+```javascript
 import { TagResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -2248,7 +2248,7 @@ export const tagResource = async (
 ```
 To list tags for a data store.
 
-```
+```javascript
   try {
     const datastoreArn =
       "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012";
@@ -2260,7 +2260,7 @@ To list tags for a data store.
 ```
 The utility function for listing a resource's tags.
 
-```
+```javascript
 import { ListTagsForResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -2291,7 +2291,7 @@ export const listTagsForResource = async (
 ```
 To untag a data store.
 
-```
+```javascript
   try {
     const datastoreArn =
       "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012";
@@ -2303,7 +2303,7 @@ To untag a data store.
 ```
 The utility function for untagging a resource.
 
-```
+```javascript
 import { UntagResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -2347,7 +2347,7 @@ The following code example shows how to tag a HealthImaging image set.
 **SDK for JavaScript (v3)**
 To tag an image set.
 
-```
+```javascript
   try {
     const imagesetArn =
       "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/12345678901234567890123456789012";
@@ -2361,7 +2361,7 @@ To tag an image set.
 ```
 The utility function for tagging a resource.
 
-```
+```javascript
 import { TagResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -2394,7 +2394,7 @@ export const tagResource = async (
 ```
 To list tags for an image set.
 
-```
+```javascript
   try {
     const imagesetArn =
       "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/12345678901234567890123456789012";
@@ -2406,7 +2406,7 @@ To list tags for an image set.
 ```
 The utility function for listing a resource's tags.
 
-```
+```javascript
 import { ListTagsForResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -2437,7 +2437,7 @@ export const listTagsForResource = async (
 ```
 To untag an image set.
 
-```
+```javascript
   try {
     const imagesetArn =
       "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/12345678901234567890123456789012";
@@ -2449,7 +2449,7 @@ To untag an image set.
 ```
 The utility function for untagging a resource.
 
-```
+```javascript
 import { UntagResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 

@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-statemachine-statemachineapi-syntax.yaml"></a>
 
-```
+```yaml
   [Auth](#sam-statemachine-statemachineapi-auth): {{ApiStateMachineAuth}}
   [Method](#sam-statemachine-statemachineapi-method): {{String}}
   [Path](#sam-statemachine-statemachineapi-path): {{String}}
@@ -71,7 +71,7 @@ The following is an example of an event of the `Api` type.
 #### YAML
 <a name="sam-property-statemachine-statemachineapi--examples--apievent--yaml"></a>
 
-```
+```yaml
 Events:
   ApiEvent:
     Type: Api

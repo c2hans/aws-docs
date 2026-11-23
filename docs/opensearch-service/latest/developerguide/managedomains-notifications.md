@@ -20,7 +20,7 @@ After accessing the **Notifications** panel or acknowledging a notification, you
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{
@@ -56,7 +56,7 @@ Notifications in OpenSearch Service can be *informational*, which relate to any 
 
 The following example shows an OpenSearch Service notification event sent to Amazon EventBridge. The notification has a severity of `Informational` because the update is optional:
 
-```
+```json
 {
   "version": "0",
   "id": "01234567-0123-0123-0123-012345678901",

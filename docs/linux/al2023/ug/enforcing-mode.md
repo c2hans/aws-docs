@@ -8,7 +8,7 @@ When you run SELinux in `enforcing` mode, the SELinux utility is `enforcing` the
 
 To find the current SELinux mode, run the `getenforce` command.
 
-```
+```sh
 getenforce
 Permissive
 ```
@@ -20,13 +20,13 @@ To change the mode to `enforcing`, use the following steps.
 
 1. Edit the `/etc/selinux/config` file to change to `enforcing` mode. The `SELINUX` setting should look like the following example.
 
-   ```
+   ```sh
    SELINUX=enforcing
    ```
 
 1. Restart your system to complete the change to `enforcing` mode.
 
-   ```
+   ```sh
    $ sudo reboot
    ```
 
@@ -34,7 +34,7 @@ On the next boot, SELinux relabels all files and directories in the system. SELi
 
 After changing to `enforcing` mode, SELinux might deny some actions because of incorrect or missing SELinux policy rules. You can view the actions that SELinux denies with the following command.
 
-```
+```sh
 $ sudo ausearch -m AVC,USER_AVC,SELINUX_ERR,USER_SELINUX_ERR -ts recent
 ```
 
@@ -43,7 +43,7 @@ $ sudo ausearch -m AVC,USER_AVC,SELINUX_ERR,USER_SELINUX_ERR -ts recent
 
 As an alternative, when you launch your instance, pass the following `cloud-config` as user-data to enable `enforcing` mode.
 
-```
+```yaml
 #cloud-config
 selinux:
   mode: enforcing
@@ -51,7 +51,7 @@ selinux:
 
 By default, this setting causes the instance to reboot. For greater stability, we recommend rebooting your instance. However, if you prefer, you can skip the reboot by providing the following `cloud-config`.
 
-```
+```yaml
 #cloud-config
 selinux:
   mode: enforcing

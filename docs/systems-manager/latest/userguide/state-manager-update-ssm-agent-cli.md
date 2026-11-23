@@ -26,7 +26,7 @@ If you create an association by using either the AWS CLI or AWS Tools for Window
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm create-association \
    --targets Key=tag:{{tag_key}},Values={{tag_value}} \
    --name AWS-UpdateSSMAgent \
@@ -36,7 +36,7 @@ If you create an association by using either the AWS CLI or AWS Tools for Window
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm create-association ^
    --targets Key=tag:{{tag_key}},Values={{tag_value}} ^
    --name AWS-UpdateSSMAgent ^
@@ -50,7 +50,7 @@ If you create an association by using either the AWS CLI or AWS Tools for Window
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm create-association \
    --targets Key=instanceids,Values={{instance_ID,instance_ID,instance_ID}} \
    --name AWS-UpdateSSMAgent \
@@ -60,7 +60,7 @@ If you create an association by using either the AWS CLI or AWS Tools for Window
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm create-association ^
    --targets Key=instanceids,Values={{instance_ID,instance_ID,instance_ID}} ^
    --name AWS-UpdateSSMAgent ^
@@ -74,7 +74,7 @@ If you create an association by using either the AWS CLI or AWS Tools for Window
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```bash
    aws ssm create-association \
    --targets Key=instanceids,Values={{instance_ID,instance_ID,instance_ID}} \
    --name AWS-UpdateSSMAgent \
@@ -85,7 +85,7 @@ If you create an association by using either the AWS CLI or AWS Tools for Window
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    aws ssm create-association ^
    --targets Key=instanceids,Values={{instance_ID,instance_ID,instance_ID}} ^
    --name AWS-UpdateSSMAgent ^

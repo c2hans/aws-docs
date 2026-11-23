@@ -31,13 +31,13 @@ The Migration Assistant CLI is installed as part of the setup process below. You
 
 Install the Migration Assistant CLI using the same installer as the manual workflow:
 
-```
+```bash
 curl -fsSL https://solutions-reference.s3.amazonaws.com/migration-assistant-for-amazon-opensearch-service/latest/install.sh | bash
 ```
 
 When prompted, choose **Agent mode** for an AI-guided experience, or **Manual** to configure the infrastructure yourself. Once installed, you can launch agent mode directly at any time:
 
-```
+```bash
 migration-assistant agent
 ```
 
@@ -154,7 +154,7 @@ If the agent’s diagnosis does not make sense to you, ask it to gather more evi
 ## Example session
 <a name="agent-example"></a>
 
-```
+```bash
 $ migration-assistant agent
 
 Welcome to Migration Assistant for Amazon OpenSearch Service.

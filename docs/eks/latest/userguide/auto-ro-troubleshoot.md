@@ -22,7 +22,7 @@ In the commands in this topic, replace the following placeholders:
 
 The following `kubectl` commands show most of what you need:
 
-```
+```bash
 kubectl get crop
 kubectl get ro -n {{my-namespace}}
 kubectl describe ro {{my-app-deploy}} -n {{my-namespace}}
@@ -42,21 +42,21 @@ Resource optimization has no automatic rollback. If you think resource changes a
 Use one of the following options. Each option stops new resizes for the workloads it covers. It also cancels any resize that the kubelet hasn’t applied yet. Values that the kubelet already applied stay in place.
 +  **Stop changes for one workload.** Run the following command to add the opt-out annotation to the Deployment. For a StatefulSet, replace `deployment` with `statefulset`.
 
-  ```
+  ```bash
   kubectl annotate deployment {{my-app}} -n {{my-namespace}} optimization.eks.amazonaws.com/enabled="false"
   ```
 
   Resource optimization deletes the workload’s `ResourceOptimization` object and its recommendations. New Pods start at the values in the Pod template. This also deletes the workload’s usage history. If you opt the workload back in, the wait of about 12 hours for a first recommendation starts over. For more information, see [Opt out a single workload](auto-ro-enable.md#auto-ro-enable-opt-out).
 +  **Stop changes but keep recommendations.** Set `mode: Recommend` on the policy that manages the workload. The `POLICY` column of `kubectl get ro` shows which policy that is. Run the following command:
 
-  ```
+  ```bash
   kubectl patch crop {{my-policy}} --type merge -p '{"spec":{"mode":"Recommend"}}'
   ```
 
   Running Pods keep their current values, new Pods start at the values in the Pod template, and recommendations and usage history are kept. For more information, see [Stop resizing but keep recommendations](auto-ro-enable.md#auto-ro-enable-pause).
 +  **Turn off resource optimization for the whole cluster.** Run the following command to delete every policy. This stops data collection, recommendations, and resizes. Resource optimization deletes every `ResourceOptimization` object and the usage history of every workload. If you turn resource optimization back on, the wait for first recommendations starts over. For more information, see [Turn off resource optimization](auto-ro-enable.md#auto-ro-enable-turn-off).
 
-  ```
+  ```bash
   kubectl delete crop --all
   ```
 
@@ -65,7 +65,7 @@ Use one of the following options. Each option stops new resizes for the workload
 
 Resource optimization never changes your Deployment or StatefulSet. Its Pod template still has the requests and limits you wrote. After you stop changes, run the following command to restart the workload and return its Pods to those values:
 
-```
+```bash
 kubectl rollout restart deployment {{my-app}} -n {{my-namespace}}
 ```
 
@@ -73,7 +73,7 @@ A StatefulSet that uses the `OnDelete` update strategy doesn’t replace its Pod
 
 Outside `Apply` mode, resource optimization doesn’t size new Pods at admission, so they start at the values in the template. To confirm, run the following command to check the resources of a new Pod:
 
-```
+```bash
 kubectl get pod {{my-pod}} -n {{my-namespace}} -o jsonpath='{range .spec.containers[*]}{.name}{"\t"}{.resources}{"\n"}{end}'
 ```
 
@@ -95,7 +95,7 @@ Check the following causes in order:
 
 1.  **The workload opts out.** Check for the annotation.
 
-   ```
+   ```bash
    kubectl get deployment {{my-app}} -n {{my-namespace}} -o jsonpath='{.metadata.annotations.optimization\.eks\.amazonaws\.com/enabled}'
    ```
 
@@ -103,7 +103,7 @@ Check the following causes in order:
 
 1.  **No policy selects the workload.** Compare each policy’s selectors with the labels on the namespace and on the workload object.
 
-   ```
+   ```bash
    kubectl get namespace {{my-namespace}} --show-labels
    kubectl get deployment {{my-app}} -n {{my-namespace}} --show-labels
    kubectl get crop -o yaml
@@ -142,7 +142,7 @@ Run `kubectl describe crop my-policy` and check the conditions. `WorkloadsSynced
 
 Run the following commands to check the `phase` of each recommendation and the conditions. Then find what you see in the table that follows.
 
-```
+```bash
 kubectl get ro {{my-app-deploy}} -n {{my-namespace}} -o jsonpath='{range .status.recommendations[].verticalRecommendations[]}{.containerName}{"\t"}{.phase}{"\n"}{end}'
 kubectl describe ro {{my-app-deploy}} -n {{my-namespace}}
 ```
@@ -166,7 +166,7 @@ kubectl describe ro {{my-app-deploy}} -n {{my-namespace}}
 
  **Cause:** Resource optimization sizes new Pods at admission only when the `AdmissionSizing` condition is `True`. Run the following command to check its reason. Then find the reason in the table that follows.
 
-```
+```bash
 kubectl get ro {{my-app-deploy}} -n {{my-namespace}} -o jsonpath='{.status.conditions[?(@.type=="AdmissionSizing")]}'
 ```
 
@@ -218,7 +218,7 @@ If the container keeps getting killed, run `kubectl describe ro my-app-deploy -n
 
 Run the following command to check the `StartupShrinkBlocked` condition and `status.startupShrink`. Then find the reason in the table that follows.
 
-```
+```bash
 kubectl get ro {{my-app-deploy}} -n {{my-namespace}} -o jsonpath='{.status.startupShrink}{"\n"}{.status.conditions[?(@.type=="StartupShrinkBlocked")]}'
 ```
 

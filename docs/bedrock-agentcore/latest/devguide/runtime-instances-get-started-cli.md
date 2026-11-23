@@ -20,7 +20,7 @@ Use the `CreateCapacityProvider` operation to define your EC2 infrastructure. Th
 
 1.
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-capacity-provider \
      --name "my_capacity_provider" \
      --permissions-configuration '{
@@ -52,7 +52,7 @@ Use the `CreateCapacityProvider` operation to define your EC2 infrastructure. Th
 
 1. Python example using boto3 to create a capacity provider.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -89,7 +89,9 @@ Use the `CreateCapacityProvider` operation to define your EC2 infrastructure. Th
    print(f"Capacity provider ARN: {response['capacityProviderArn']}")
    ```
 
-To run GPU workloads, include a supported GPU instance type in `allowedInstanceTypes`. AgentCore provisions the GPU drivers on the instance, so standard container images work without bundling drivers. The supported families are `g4dn`, `g5`, `g6`, `g6e`, `gr6`, `g6f`, `gr6f`, `g7e`, and `inf2`. If you include an accelerator instance type from an unsupported family, the request fails with a `ValidationException`. For more information, see [Use GPU instance types](runtime-instances-how-it-works.md#runtime-instances-gpu).
+To run GPU workloads, include an instance type from a supported GPU or accelerator family in `allowedInstanceTypes`. AgentCore provisions the GPU drivers on the instance, so standard container images work without bundling drivers. The supported GPU and accelerator families are `g4dn`, `g5`, `g6`, `g6e`, `gr6`, `g6f`, `gr6f`, `g7`, `g7e`, and `inf2`.
+
+If you include an instance type from an accelerator family that isn’t supported, the request fails with a `ValidationException`. For more information, see [Use GPU instance types](runtime-instances-how-it-works.md#runtime-instances-gpu).
 
 Poll `GetCapacityProvider` until the status is `READY` before associating the capacity provider with a runtime. If the status becomes `CREATE_FAILED`, inspect `statusCode` and `statusReason` to determine the cause.
 
@@ -109,7 +111,7 @@ Do not pass `networkConfiguration` when you specify `capacityProviderConfigurati
 
 1.
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-agent-runtime \
      --agent-runtime-name "my_instances_agent" \
      --role-arn "arn:aws:iam::111122223333:role/AgentRuntimeRole" \
@@ -134,7 +136,7 @@ Do not pass `networkConfiguration` when you specify `capacityProviderConfigurati
 
 1. Python example using boto3 to create an agent runtime on Instances.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -173,7 +175,7 @@ Invoke the runtime the same way you would a microVM-backed runtime. Reuse the sa
 
 1.
 
-   ```
+   ```bash
    echo '{"prompt": "Analyze the sales data and summarize the key trends."}' > payload.json
 
    aws bedrock-agentcore invoke-agent-runtime \
@@ -190,7 +192,7 @@ The agent’s response is a streaming blob that the AWS CLI writes to the output
 
 1. Python example using boto3 to invoke an agent runtime on Instances.
 
-   ```
+   ```python
    import boto3
    import json
 
@@ -212,7 +214,7 @@ The first invocation for a new session provisions an EC2 instance in your accoun
 
 AgentCore provisions these instances as [Amazon EC2 managed instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-managed-instances.html), which are hidden from `DescribeInstances` and your EC2 console views by default. A plain `aws ec2 describe-instances` call does not list them. To see them, include managed resources:
 
-```
+```bash
 aws ec2 describe-instances --include-managed-resources \
   --filters "Name=tag-key,Values=bedrock-agentcore:capacity-provider-id"
 ```
@@ -224,7 +226,7 @@ For more information about managing instance visibility, see the [managed resour
 
 When two agent runtimes reference the **same** capacity provider and you invoke them with the **same** `runtimeSessionId`, both agents run on the same EC2 instance. There, they can share the volume configured in their filesystem configuration. Agents collaborate by reading and writing files on that shared volume — each agent is invoked independently and does not otherwise share state. For example, a test runner can write results to the volume, and a code analyzer invoked on the same session can then read them. For the boundary between agents on a shared instance, see [Security model and permissions for Runtime Instances](runtime-instances-security.md).
 
-```
+```python
 import boto3
 import json
 
@@ -251,6 +253,8 @@ client.invoke_agent_runtime(
 
 Each agent runs with its own IAM credentials derived from its runtime’s execution role, so you can grant the collaborating agents different permissions although they share the same instance. However, because agents on the same instance are not isolated from each other, any agent can potentially read another agent’s credentials. Co-locate only agents that are mutually trusted. For more information, see [Security model and permissions for Runtime Instances](runtime-instances-security.md).
 
+You can’t co-locate agents that run in `PRIVILEGED` mode. A session that runs a privileged agent runs only that agent. For more information, see [One agent per session](runtime-instances-privilege-mode.md#runtime-instances-privilege-mode-session-limit).
+
 ## Clean up: stop and delete sessions
 <a name="runtime-instances-stop-delete"></a>
 
@@ -267,7 +271,7 @@ To stop a specific agent runtime on a session, call the [StopRuntimeSession](htt
 
 1.
 
-   ```
+   ```bash
    aws bedrock-agentcore stop-runtime-session \
      --agent-runtime-arn "arn:aws:bedrock-agentcore:us-west-2:111122223333:runtime/my_instances_agent-suffix" \
      --runtime-session-id "project-xyz-0000000000000000000000000000"
@@ -275,7 +279,7 @@ To stop a specific agent runtime on a session, call the [StopRuntimeSession](htt
 
 1. Python example using boto3 to stop a runtime session.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore", region_name="us-west-2")
@@ -290,7 +294,7 @@ To delete a session and deprovision all of its resources — including any persi
 
 Session IDs are values that you supply on invocation, and there is no operation that lists the sessions on a capacity provider. Keep a record of the `runtimeSessionId` values you use so that you can delete each session afterwards. If you no longer have them, you can find the instances that are still running, and then delete the capacity provider to deprovision all of its sessions:
 
-```
+```bash
 aws ec2 describe-instances --include-managed-resources \
   --filters "Name=tag-key,Values=bedrock-agentcore:capacity-provider-id" \
   --query 'Reservations[].Instances[?State.Name!=`terminated`].[InstanceId,State.Name]'
@@ -300,7 +304,7 @@ aws ec2 describe-instances --include-managed-resources \
 
 1.
 
-   ```
+   ```bash
    aws bedrock-agentcore delete-capacity-provider-session \
      --capacity-provider-id "my_capacity_provider-a1b2c3d4e5" \
      --session-id "project-xyz-0000000000000000000000000000"
@@ -308,7 +312,7 @@ aws ec2 describe-instances --include-managed-resources \
 
 1. Python example using boto3 to delete a capacity provider session.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore", region_name="us-west-2")
@@ -330,14 +334,14 @@ When you no longer need a capacity provider, delete it with the `DeleteCapacityP
 
 1.
 
-   ```
+   ```bash
    aws bedrock-agentcore-control delete-capacity-provider \
      --capacity-provider-id "my_capacity_provider-a1b2c3d4e5"
    ```
 
 1. Python example using boto3 to delete a capacity provider.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")

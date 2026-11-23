@@ -36,7 +36,7 @@ Use the following CloudFormation template and AWS CLI command to create a new Am
 
 1. In a new command prompt window, navigate to the folder where you saved the template, then use [create-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) to create the stack. The `--template-body` flag specifies the path to the template. Replace {{stack-name}}, {{availability-zone-1}}, and {{availability-zone-2}} with your own values. The two Availability Zones must be different and supported in your Region.
 
-   ```
+   ```bash
    aws cloudformation create-stack --stack-name {{stack-name}} --template-body file://cfn-vpc-private-network.yml --parameters ParameterKey=AvailabilityZone1,ParameterValue={{availability-zone-1}} ParameterKey=AvailabilityZone2,ParameterValue={{availability-zone-2}}
    ```
 
@@ -53,7 +53,7 @@ Use the following Python code and IAM JSON policy to create a new Lambda functio
 
 1. Open a command prompt, then navigate to the folder where you saved the JSON permission policy. Use the IAM [`create-role`](https://docs.aws.amazon.com/) command to create the new role.
 
-   ```
+   ```bash
    aws iam create-role --role-name {{function-role}} \
    						--assume-role-policy-document file://lambda-mwaa-vpce-policy.json
    ```
@@ -62,7 +62,7 @@ Use the following Python code and IAM JSON policy to create a new Lambda functio
 
 1. Navigate to the folder where you saved the function code, then use the[`create-function`](https://docs.aws.amazon.com/) command to create a new function.
 
-   ```
+   ```bash
    aws lambda create-function --function-name {{mwaa-vpce-lambda}} \
    --zip-file file://mwaa-lambda-shared-vpc.zip --runtime python3.8 --role arn:aws:iam::123456789012:role/{{function-role}} --handler lambda_handler
    ```
@@ -78,14 +78,14 @@ Do the following to create a new rule that listens for Amazon MWAA notifications
 
 1. Use the EventBridge `put-rule` command to create a new EventBridge rule.
 
-   ```
+   ```bash
    aws events put-rule --name "{{mwaa-lambda-rule}}" \
    --event-pattern "{\"source\":[\"aws.airflow\"],\"detail-type\":[\"MWAA Environment Status Change\"]}"
    ```
 
    The event pattern listens for notifications that Amazon MWAA sends whenever an environment status changes.
 
-   ```
+   ```json
    {
    					"source": ["aws.airflow"],
    					"detail-type": ["MWAA Environment Status Change"]
@@ -94,7 +94,7 @@ Do the following to create a new rule that listens for Amazon MWAA notifications
 
 1. Use the `put-targets` command to add the Lambda function as a target for the new rule.
 
-   ```
+   ```bash
    aws events put-targets --rule "{{mwaa-lambda-rule}}" \
    --targets "Id"="{{1}}","Arn"="arn:aws:lambda:{{us-east-1}}:{{123456789012}}:function:{{mwaa-vpce-lambda}}"
    ```

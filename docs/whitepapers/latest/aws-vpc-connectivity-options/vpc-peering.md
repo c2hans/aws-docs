@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
 ![Diagram that shows VPC-to-VPC Peering](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/vpc-to-vpc-peering.png)
 
+VPC-to-VPC Peering
+
  AWS uses the existing infrastructure of a VPC to create VPC peering connections and does not rely on a separate piece of physical hardware. Therefore, they do not introduce a potential single point of failure or network bandwidth bottleneck between VPCs. Additionally, VPC routing tables, security groups, and network access control lists can be leveraged to control which subnets or instances are able to utilize the VPC peering connection.
 
  Amazon VPCs do not support transitive peering, meaning that you can’t communicate two VPCs that are not directly peered using a third VPC as transit. If you want all of your VPCs to communicate with each other using VPC peering, you will need to create 1:1 VPC peering connections between each of them. Alternatively, you can use AWS Transit Gateway or AWS Cloud WAN to act as a network transit hub.

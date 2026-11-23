@@ -8,7 +8,7 @@ After the table is created, use the `DynamoDbTable` instance to perform operatio
 
 In the following example, a singleton `DynamoDbTable<Customer>` is passed as a parameter along with a [`Customer` data class](ddb-en-client-gs-tableschema.md#ddb-en-client-gs-tableschema-anno-bean-cust) instance to add a new item to the table.
 
-```
+```java
     public static void putItemExample(DynamoDbTable<Customer> customerTable, Customer customer){
         logger.info(customer.toString());
         customerTable.putItem(customer);

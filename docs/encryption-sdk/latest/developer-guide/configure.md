@@ -70,7 +70,7 @@ This simple example does not include an [encryption context](concepts.md#encrypt
 
 For a complete example, see [kms\_multi\_region\_keys.cpp](https://github.com/aws/aws-encryption-sdk-c/tree/master/examples/kms_multi_region_keys.cpp) in the AWS Encryption SDK for C repository on GitHub.
 
-```
+```c
 /* Encrypt with a multi-Region KMS key in us-east-1 */
 
 /* Load error strings for debugging */
@@ -107,7 +107,7 @@ The `CreateAwsKmsMrkKeyring()` method creates a keyring with exactly one multi-R
 
 For a complete example, see [AwsKmsMrkKeyringExample.cs](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/Examples/Keyring/AwsKmsMrkKeyringExample.cs) in the AWS Encryption SDK for .NET repository on GitHub.
 
-```
+```csharp
 //Encrypt with a multi-Region KMS key in us-east-1 Region
 
 // Instantiate the AWS Encryption SDK and material providers
@@ -151,7 +151,7 @@ This example encrypts the `hello.txt` file under a multi-Region key in the us-ea
 
 When the key ID of the wrapping key doesn't specify a Region, you can use the **region** attribute of the `--wrapping-keys` to specify the region, such as `--wrapping-keys key=$keyID region=us-east-1`.
 
-```
+```bash
 # Encrypt with a multi-Region KMS key in us-east-1 Region
 
 # To run this example, replace the fictitious key ARN with a valid value.
@@ -172,7 +172,7 @@ To encrypt with a multi-Region key, instantiate an `AwsKmsMrkAwareMasterKeyProvi
 
 For a complete example, see [BasicMultiRegionKeyEncryptionExample.java](https://github.com/aws/aws-encryption-sdk-java/blob/master/src/examples/java/com/amazonaws/crypto/examples/v2/BasicMultiRegionKeyEncryptionExample.java) in the AWS Encryption SDK for Java repository on GitHub.
 
-```
+```java
 //Encrypt with a multi-Region KMS key in us-east-1 Region
 
 // Instantiate the client
@@ -208,7 +208,7 @@ To encrypt with a multi-Region key, use the `buildAwsKmsMrkAwareStrictMultiKeyri
 
 For a complete example, see [kms\_multi\_region\_simple.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-browser/src/kms_multi_region_simple.ts) in the AWS Encryption SDK for JavaScript repository on GitHub.
 
-```
+```js
 /* Encrypt with a multi-Region KMS key in us-east-1 Region */
 
 import {
@@ -265,7 +265,7 @@ To encrypt with a multi-Region key, use the `buildAwsKmsMrkAwareStrictMultiKeyri
 
 For a complete example, see [kms\_multi\_region\_simple.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-node/src/kms_multi_region_simple.ts) in the AWS Encryption SDK for JavaScript repository on GitHub.
 
-```
+```js
 //Encrypt with a multi-Region KMS key in us-east-1 Region
 
 import { buildClient } from '@aws-crypto/client-node'
@@ -307,7 +307,7 @@ To encrypt with an AWS KMS multi-Region key, use the `MRKAwareStrictAwsKmsMaster
 
 For a complete example, see [mrk\_aware\_kms\_provider.py](https://github.com/aws/aws-encryption-sdk-python/blob/master/examples/src/legacy/mrk_aware_kms_provider.py) in the AWS Encryption SDK for Python repository on GitHub.
 
-```
+```python
 * Encrypt with a multi-Region KMS key in us-east-1 Region
 
 # Instantiate the client
@@ -352,7 +352,7 @@ To decrypt in strict mode with a multi-Region key, use the `Aws::Cryptosdk::KmsM
 
 For a complete example, see [kms\_multi\_region\_keys.cpp](https://github.com/aws/aws-encryption-sdk-c/tree/master/examples/kms_multi_region_keys.cpp) in the AWS Encryption SDK for C repository on GitHub.
 
-```
+```c
 /* Decrypt with a related multi-Region KMS key in us-west-2 Region */
 
 /* Load error strings for debugging */
@@ -390,7 +390,7 @@ To decrypt in strict mode with a single multi-Region key, use the same construct
 
 For a complete example, see [AwsKmsMrkKeyringExample.cs](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/Examples/Keyring/AwsKmsMrkKeyringExample.cs) in the AWS Encryption SDK for .NET repository on GitHub.
 
-```
+```csharp
 // Decrypt with a related multi-Region KMS key in us-west-2 Region
 
 // Instantiate the AWS Encryption SDK and material providers
@@ -426,7 +426,7 @@ var decryptOutput = encryptionSdk.Decrypt(decryptInput);
 
 To decrypt with the related multi-Region key in the us-west-2 Region, use the **key** attribute of the `--wrapping-keys` parameter to specify its key ARN.
 
-```
+```bash
 # Decrypt with a related multi-Region KMS key in us-west-2 Region
 
 # To run this example, replace the fictitious key ARN with a valid value.
@@ -450,7 +450,7 @@ To decrypt in strict mode, instantiate an `AwsKmsMrkAwareMasterKeyProvider` and 
 
 For a complete example, see [BasicMultiRegionKeyEncryptionExample.java](https://github.com/aws/aws-encryption-sdk-java/blob/master/src/examples/java/com/amazonaws/crypto/examples/v2/BasicMultiRegionKeyEncryptionExample.java) in the AWS Encryption SDK for Java repository on GitHub.
 
-```
+```java
 // Decrypt with a related multi-Region KMS key in us-west-2 Region
 
 // Instantiate the client
@@ -480,7 +480,7 @@ To decrypt in strict mode, use the `buildAwsKmsMrkAwareStrictMultiKeyringBrowser
 
 For a complete example, see [kms\_multi\_region\_simple.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-browser/src/kms_multi_region_simple.ts) in the AWS Encryption SDK for JavaScript repository on GitHub.
 
-```
+```js
 /* Decrypt with a related multi-Region KMS key in us-west-2 Region */
 
 import {
@@ -527,7 +527,7 @@ To decrypt in strict mode, use the `buildAwsKmsMrkAwareStrictMultiKeyringNode()`
 
 For a complete example, see [kms\_multi\_region\_simple.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-node/src/kms_multi_region_simple.ts) in the AWS Encryption SDK for JavaScript repository on GitHub.
 
-```
+```js
 /* Decrypt with a related multi-Region KMS key in us-west-2 Region */
 
 import { buildClient } from '@aws-crypto/client-node'
@@ -559,7 +559,7 @@ To decrypt in strict mode, use the `MRKAwareStrictAwsKmsMasterKeyProvider()` met
 
 For a complete example, see [mrk\_aware\_kms\_provider.py](https://github.com/aws/aws-encryption-sdk-python/blob/master/examples/src/legacy/mrk_aware_kms_provider.py) in the AWS Encryption SDK for Python repository on GitHub.
 
-```
+```python
 # Decrypt with a related multi-Region KMS key in us-west-2 Region
 
 # Instantiate the client
@@ -601,7 +601,7 @@ To decrypt in discovery mode with a multi-Region key, use the `Aws::Cryptosdk::K
 
 For a complete example, see [kms\_multi\_region\_keys.cpp](https://github.com/aws/aws-encryption-sdk-c/tree/master/examples/kms_multi_region_keys.cpp) in the AWS Encryption SDK for C repository on GitHub.
 
-```
+```c
 /* Decrypt in discovery mode with a multi-Region KMS key */
 
 /* Load error strings for debugging */
@@ -653,7 +653,7 @@ To create a multi-Region-aware discovery keyring for more than one AWS Region, u
 
 For an example, see [AwsKmsMrkDiscoveryMultiKeyringExample.cs](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/Examples/Keyring/AwsKmsMrkDiscoveryMultiKeyringExample.cs).
 
-```
+```csharp
 // Decrypt in discovery mode with a multi-Region KMS key
 
 // Instantiate the AWS Encryption SDK and material providers
@@ -694,7 +694,7 @@ To decrypt in discovery mode, use the **discovery** attribute of the `--wrapping
 
 To specify the Region, this command includes the **region** attribute of the `--wrapping-keys` parameter.
 
-```
+```bash
 # Decrypt in discovery mode with a multi-Region KMS key
 
 $ aws-encryption-cli --decrypt \
@@ -744,7 +744,7 @@ To decrypt in discovery mode with a symmetric multi-Region key, use the `AwsKmsM
 
 For a complete example, see [kms\_multi\_region\_discovery.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-browser/src/kms_multi_region_discovery.ts) in the AWS Encryption SDK for JavaScript repository on GitHub.
 
-```
+```js
 /* Decrypt in discovery mode with a multi-Region KMS key */
 
 import {
@@ -786,7 +786,7 @@ To decrypt in discovery mode with a symmetric multi-Region key, use the `AwsKmsM
 
 For a complete example, see [kms\_multi\_region\_discovery.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-node/src/kms_multi_region_discovery.ts) in the AWS Encryption SDK for JavaScript repository on GitHub.
 
-```
+```js
 /* Decrypt in discovery mode with a multi-Region KMS key */
 
 import {
@@ -822,7 +822,7 @@ To decrypt in discovery mode with a multi-Region key, use the `MRKAwareDiscovery
 
 For a complete example, see [mrk\_aware\_kms\_provider.py](https://github.com/aws/aws-encryption-sdk-python/blob/master/examples/src/legacy/mrk_aware_kms_provider.py) in the AWS Encryption SDK for Python repository on GitHub.
 
-```
+```python
 # Decrypt in discovery mode with a multi-Region KMS key
 
 # Instantiate the client
@@ -945,7 +945,7 @@ To specify an alternate algorithm suite in the AWS Encryption SDK for .NET, spec
 
 The AWS Encryption SDK for .NET doesn't have a method to detect signed ciphertext when streaming decryption because this library doesn't support streaming data.
 
-```
+```csharp
 // Specify an algorithm suite without signing
 
 // Instantiate the AWS Encryption SDK and material providers
@@ -976,7 +976,7 @@ var encryptOutput = encryptionSdk.Encrypt(encryptInput);
 
 When encrypting the `hello.txt` file, this example uses the `--algorithm` parameter to specify an algorithm suite without digital signatures.
 
-```
+```bash
 # Specify an algorithm suite without signing
 
 # To run this example, replace the fictitious key ARN with a valid value.
@@ -995,7 +995,7 @@ $ aws-encryption-cli --encrypt \
 
 When decrypting, this example uses the `--decrypt-unsigned` parameter. This parameter is recommended to ensure that you are decrypting unsigned ciphertext, especially with the CLI, which is always streaming input and output.
 
-```
+```bash
 # Decrypt unsigned streaming data
 
 # To run this example, replace the fictitious key ARN with a valid value.
@@ -1016,7 +1016,7 @@ $ aws-encryption-cli --decrypt-unsigned \
 
 To specify an alternate algorithm suite, use the `AwsCrypto.builder().withEncryptionAlgorithm()` method. This example specifies an alternate algorithm suite without digital signatures.
 
-```
+```java
 // Specify an algorithm suite without signing
 
 // Instantiate the client
@@ -1044,7 +1044,7 @@ byte[] ciphertext = encryptResult.getResult();
 
 When streaming data for decryption, use the `createUnsignedMessageDecryptingStream()` method to ensure that all ciphertext that you're decrypting is unsigned.
 
-```
+```java
 // Decrypt unsigned streaming data
 
 // Instantiate the client
@@ -1074,7 +1074,7 @@ decryptingStream.close();
 
 To specify an alternate algorithm suite, use the `suiteId` parameter with an `AlgorithmSuiteIdentifier` enum value.
 
-```
+```js
 // Specify an algorithm suite without signing
 
 // Instantiate the client
@@ -1092,7 +1092,7 @@ const { result } = await encrypt(keyring, cleartext, { suiteId: AlgorithmSuiteId
 
 When decrypting, use the standard `decrypt` method. AWS Encryption SDK for JavaScript in the browser doesn't have a `decrypt-unsigned` mode because the browser doesn't support streaming.
 
-```
+```js
 // Decrypt unsigned streaming data
 
 // Instantiate the client
@@ -1111,7 +1111,7 @@ const { plaintext, messageHeader } = await decrypt(keyring, ciphertextMessage)
 
 To specify an alternate algorithm suite, use the `suiteId` parameter with an `AlgorithmSuiteIdentifier` enum value.
 
-```
+```js
 // Specify an algorithm suite without signing
 
 // Instantiate the client
@@ -1129,7 +1129,7 @@ const { result } = await encrypt(keyring, cleartext, { suiteId: AlgorithmSuiteId
 
  When decrypting data that was encrypted without digital signatures, use decryptUnsignedMessageStream. This method fails if it encounters signed ciphertext.
 
-```
+```js
 // Decrypt unsigned streaming data
 
 // Instantiate the client
@@ -1148,7 +1148,7 @@ const outputStream = createReadStream(filename) .pipe(decryptUnsignedMessageStre
 
 To specify an alternate encryption algorithm, use the `algorithm` parameter with an `Algorithm` enum value.
 
-```
+```python
 # Specify an algorithm suite without signing
 
 # Instantiate a client
@@ -1169,7 +1169,7 @@ ciphertext, encrypted_message_header = client.encrypt(
 
 When decrypting messages that were encrypted without digital signatures, use the `decrypt-unsigned` streaming mode, especially when decrypting while streaming.
 
-```
+```python
 # Decrypt unsigned streaming data
 
 # Instantiate the client
@@ -1202,7 +1202,7 @@ return ciphertext_filename, cycled_plaintext_filename
 
 To specify an alternate algorithm suite in the AWS Encryption SDK for Rust, specify the `algorithm_suite_id` property in your encrypt request.
 
-```
+```rust
 // Instantiate the AWS Encryption SDK client
 let esdk_config = AwsEncryptionSdkConfig::builder().build()?;
 let esdk_client = esdk_client::Client::from_conf(esdk_config)?;
@@ -1249,7 +1249,7 @@ let encryption_response = esdk_client.encrypt()
 ------
 #### [ Go ]
 
-```
+```go
 import (
     "context"
 
@@ -1356,7 +1356,7 @@ assert(ciphertext_consumed == ciphertext_len);
 
 To limit encrypted data keys in the AWS Encryption SDK for .NET, instantiate a client for the AWS Encryption SDK for .NET and set its optional `MaxEncryptedDataKeys` parameter to the desired value. Then, call the `Decrypt()` method on the configured AWS Encryption SDK instance.
 
-```
+```csharp
 // Decrypt with limited data keys
 
 // Instantiate the material providers
@@ -1391,7 +1391,7 @@ var decryptOutput = encryptionSdk.Decrypt(decryptInput);
 ------
 #### [ AWS Encryption CLI ]
 
-```
+```bash
 # Decrypt with limited encrypted data keys
 
 $ aws-encryption-cli --decrypt \
@@ -1407,7 +1407,7 @@ $ aws-encryption-cli --decrypt \
 ------
 #### [ Java ]
 
-```
+```java
 // Construct a client with limited encrypted data keys
 final AwsCrypto crypto = AwsCrypto.builder()
   .withMaxEncryptedDataKeys(3)
@@ -1424,7 +1424,7 @@ final CryptoResult<byte[], KmsMasterKey> decryptResult = crypto.decryptData(keyP
 ------
 #### [ JavaScript Browser ]
 
-```
+```js
 // Construct a client with limited encrypted data keys
 const { encrypt, decrypt } = buildClient({ maxEncryptedDataKeys: 3 })
 
@@ -1450,7 +1450,7 @@ const { plaintext, messageHeader } = await decrypt(keyring, ciphertext)
 ------
 #### [ JavaScript Node.js ]
 
-```
+```js
 // Construct a client with limited encrypted data keys
 const { encrypt, decrypt } = buildClient({ maxEncryptedDataKeys: 3 })
 
@@ -1466,7 +1466,7 @@ const { plaintext, messageHeader } = await decrypt(keyring, ciphertext)
 ------
 #### [ Python ]
 
-```
+```py
 # Instantiate a client with limited encrypted data keys
 client = aws_encryption_sdk.EncryptionSDKClient(max_encrypted_data_keys=3)
 
@@ -1481,7 +1481,7 @@ plaintext, header = client.decrypt(source=ciphertext, key_provider=master_key_pr
 ------
 #### [ Rust ]
 
-```
+```rust
 // Instantiate the AWS Encryption SDK client with limited encrypted data keys
 let esdk_config = AwsEncryptionSdkConfig::builder()
                     .max_encrypted_data_keys(max_encrypted_data_keys)
@@ -1532,7 +1532,7 @@ let multi_keyring = mpl
 ------
 #### [ Go ]
 
-```
+```go
 import (
     "context"
 
@@ -1631,7 +1631,7 @@ const std::shared_ptr<Aws::Cryptosdk::KmsKeyring::DiscoveryFilter> discovery_fil
 
 For a complete example, see [DiscoveryFilterExample.cs](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/Examples/DiscoveryFilterExample.cs) in the AWS Encryption SDK for .NET.
 
-```
+```cs
 // Create a discovery filter for an AWS account and partition
 
 List<string> account = new List<string> { "{{111122223333}}" };
@@ -1666,7 +1666,7 @@ $ aws-encryption-cli --decrypt \
 
 For a complete example, see [DiscoveryDecryptionExample.java](https://github.com/aws/aws-encryption-sdk-java/blob/master/src/examples/java/com/amazonaws/crypto/examples/v2/DiscoveryDecryptionExample.java) in the AWS Encryption SDK for Java.
 
-```
+```java
 // Create a discovery filter for an AWS account and partition
 
 DiscoveryFilter discoveryFilter = new DiscoveryFilter("{{aws}}", {{111122223333}});
@@ -1677,7 +1677,7 @@ DiscoveryFilter discoveryFilter = new DiscoveryFilter("{{aws}}", {{111122223333}
 
 For complete examples, see [kms\_filtered\_discovery.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-node/src/kms_filtered_discovery.ts) (Node.js) and [kms\_multi\_region\_discovery.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-browser/src/kms_multi_region_discovery.ts) (Browser) in the AWS Encryption SDK for JavaScript.
 
-```
+```js
 /* Create a discovery filter for an AWS account and partition */
 const discoveryFilter = {
   accountIDs: ['{{111122223333}}'],
@@ -1690,7 +1690,7 @@ const discoveryFilter = {
 
 For a complete example, see [discovery\_kms\_provider.py](https://github.com/aws/aws-encryption-sdk-python/blob/master/examples/src/legacy/discovery_kms_provider.py) in the AWS Encryption SDK for Python.
 
-```
+```python
 # Create the discovery filter and specify the region
 decrypt_kwargs = dict(
         discovery_filter=DiscoveryFilter(account_ids="{{111122223333}}", partition="{{aws}}"),
@@ -1701,7 +1701,7 @@ decrypt_kwargs = dict(
 ------
 #### [ Rust ]
 
-```
+```rust
 let discovery_filter = DiscoveryFilter::builder()
     .account_ids(vec![{{111122223333}}.to_string()])
     .partition("aws".to_string())
@@ -1711,7 +1711,7 @@ let discovery_filter = DiscoveryFilter::builder()
 ------
 #### [ Go ]
 
-```
+```go
 import (
 	mpltypes "aws/aws-cryptographic-material-providers-library/releases/go/mpl/awscryptographymaterialproviderssmithygeneratedtypes"
 )
@@ -1749,7 +1749,7 @@ The following examples initializes an AWS KMS keyring with the required encrypti
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var encryptionContext = new Dictionary<string, string>()
 {
     {"encryption", "context"},
@@ -1787,7 +1787,7 @@ var requiredEcCMM = mpl.CreateRequiredEncryptionContextCMM(createCMMInput);
 ------
 #### [ Java ]
 
-```
+```java
 // Instantiate the AWS Encryption SDK
 final AwsCrypto crypto = AwsCrypto.builder()
         .withCommitmentPolicy(CommitmentPolicy.RequireEncryptRequireDecrypt)
@@ -1835,7 +1835,7 @@ ICryptographicMaterialsManager requiredCMM =
 
 To use the AWS Encryption SDK for Python with the required encryption context CMM, you must also use the material providers library (MPL).
 
-```
+```python
 # Instantiate the AWS Encryption SDK client
 client = aws_encryption_sdk.EncryptionSDKClient(
     commitment_policy=CommitmentPolicy.{{REQUIRE_ENCRYPT_REQUIRE_DECRYPT}}
@@ -1884,7 +1884,7 @@ required_ec_cmm: ICryptographicMaterialsManager = \
 ------
 #### [ Rust ]
 
-```
+```rust
 // Instantiate the AWS Encryption SDK client
 let esdk_config = AwsEncryptionSdkConfig::builder().build()?;
 let esdk_client = esdk_client::Client::from_conf(esdk_config)?;
@@ -1941,7 +1941,7 @@ let required_ec_cmm = mpl
 ------
 #### [ Go ]
 
-```
+```go
 import (
     "context"
 

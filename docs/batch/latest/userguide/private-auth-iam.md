@@ -17,7 +17,7 @@ The following is an example inline policy that adds the permissions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

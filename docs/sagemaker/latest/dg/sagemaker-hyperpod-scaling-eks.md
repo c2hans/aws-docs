@@ -30,7 +30,7 @@ Continuous provisioning also gives you access to [DescribeClusterEvent](https://
 
 Because scaling requests return as soon as HyperPod accepts them, you can track each request using the cluster operation it creates. With the operation, you can see whether HyperPod is still working on the request or has finished, what the request changed on each instance group, and whether a newer request took over. The instance and instance group events that HyperPod records while working on the request carry the operation's ID. You can list only that request's events to find the reason if an instance group doesn't reach its target.
 
-```
+```bash
 aws sagemaker list-cluster-operations --cluster-name my-eks-cluster --status InProgress
 ```
 

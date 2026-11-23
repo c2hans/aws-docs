@@ -37,7 +37,7 @@ Review the EKS Auto Mode configuration options in the sample ClusterConfig resou
 
  AWS suggests not specifying any value for `nodePools`. EKS Auto Mode will create default node pools. You can use the Kubernetes API to create additional node pools.
 
-```
+```yaml
 # cluster.yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig

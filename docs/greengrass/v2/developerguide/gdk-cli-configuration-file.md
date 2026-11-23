@@ -153,7 +153,7 @@ You can reference the following GDK CLI configuration file examples to help you 
 
 The following GDK CLI configuration file supports a Hello World component that runs a Python script. This configuration file uses the `zip` build system to package the component's Python script into a ZIP file that the GDK CLI uploads as an artifact.
 
-```
+```json
 {
   "component": {
     "com.example.PythonHelloWorld": {
@@ -196,7 +196,7 @@ The following GDK CLI configuration file supports a Hello World component that r
 
 The following GDK CLI configuration file supports a Hello World component that runs a Java application. This configuration file uses the `maven` build system to package the component's Java source code into a JAR file that the GDK CLI uploads as an artifact.
 
-```
+```json
 {
   "component": {
     "com.example.JavaHelloWorld": {
@@ -240,7 +240,7 @@ Several community components in the [Greengrass Software Catalog](greengrass-sof
 
 1. Run the following command to list the community components that use the GDK CLI.
 
-   ```
+   ```bash
    gdk component list --repository
    ```
 

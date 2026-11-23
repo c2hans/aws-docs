@@ -107,7 +107,7 @@ You can create a JSON policy for an AWS service and attach it to your execution 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -163,7 +163,7 @@ The following example demonstrates the policy you must attach to your execution 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -202,7 +202,7 @@ The following example presents an execution role policy you can use for an [Cust
 
 ****
 
-```
+```json
 {
  "Version":"2012-10-17",
  "Statement": [
@@ -313,7 +313,7 @@ Next, you need to allow Amazon MWAA to assume this role to perform actions on yo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -335,7 +335,7 @@ Then attach the following JSON policy to your [Customer-managed key](https://doc
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "Sid": "Allow logs access",
   "Effect": "Allow",
@@ -370,7 +370,7 @@ The following example presents an execution role policy you can use for an [AWS-
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -13,7 +13,7 @@ Configuration settings that define the scope of AWS resources to analyze for opt
 The ARN of an IAM role to assume for resource analysis in this account.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
-Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(service-role/)?[a-zA-Z0-9+=,.@\-_]+`
+Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(?!aws-service-role/)(?:[a-zA-Z0-9+=,.@\-_]+/)*[a-zA-Z0-9+=,.@\-_]{1,64}`
 Required: Yes
 
  ** accountId **   <a name="wellarchitected-Type-AggregationConfiguration-accountId"></a>

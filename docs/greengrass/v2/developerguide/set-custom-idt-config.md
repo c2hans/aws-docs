@@ -15,7 +15,7 @@ The `device.json` file contains information about the devices that tests are run
 
 Test runners can provide this information using the following template `device.json` file located in the `{{<device-tester-extract-location>}}/configs/` folder.
 
-```
+```json
 [
     {
         "id": "{{<pool-id>}}",
@@ -144,7 +144,7 @@ The `resource.json` file contains information about any devices that will be use
 
 Test runners can provide this information using the following template `resource.json` file located in the `{{<device-tester-extract-location>}}/configs/` folder.
 
-```
+```json
 [
     {
         "id": "{{<pool-id>}}",
@@ -278,7 +278,7 @@ Test runners can configure their AWS credentials in one of the following ways:
 
 To configure AWS credentials for IDT, test runners edit the `auth` section in the `config.json` file located in the `{{<device-tester-extract-location>}}/configs/` folder.
 
-```
+```json
 {
     "log": {
         "location": "{{logs}}"

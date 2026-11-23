@@ -12,7 +12,7 @@ To load a fixed-width data file into an existing table, USE the FIXEDWIDTH param
 
 To load fixed-width data from a file to a table, issue the following command:
 
-```
+```sql
 COPY table_name FROM 's3://amzn-s3-demo-bucket/prefix'
 IAM_ROLE 'arn:aws:iam::0123456789012:role/MyRedshiftRole'
 FIXEDWIDTH 'fixedwidth_spec';
@@ -42,7 +42,7 @@ The following example shows fixed-width sample data that could be loaded into th
 
 The following COPY command loads this data set into the VENUE table:
 
-```
+```sql
 COPY venue
 FROM 's3://amzn-s3-demo-bucket/data/venue_fw.txt'
 IAM_ROLE 'arn:aws:iam::0123456789012:role/MyRedshiftRole'

@@ -27,7 +27,7 @@ The following code example shows how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova, using Bedrock's Converse API.
 
-```
+```swift
 // An example demonstrating how to use the Conversation API to send
 // a text message to Amazon Nova.
 
@@ -88,7 +88,7 @@ The following code example shows how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```swift
 // An example demonstrating how to use the Conversation API to send a text message
 // to Amazon Nova and print the response stream
 
@@ -163,7 +163,7 @@ The following code example shows how to invoke Amazon Nova Canvas on Amazon Bedr
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/bedrock-runtime#code-examples).
 Create an image with Amazon Nova Canvas.
 
-```
+```swift
 // Use the native inference API to create an image with Amazon Nova Canvas
 
 import AWSBedrockRuntime
@@ -239,7 +239,7 @@ The following code example shows how to use Amazon Nova Reel to generate a video
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/bedrock-runtime#code-examples).
 Use Amazon Nova Reel to generate a video from a text prompt.
 
-```
+```swift
 // This example demonstrates how to use Amazon Nova Reel to generate a video from a text prompt.
 // It shows how to:
 // - Set up the Amazon Bedrock runtime client
@@ -361,7 +361,7 @@ The following code example shows how to send a text message to Anthropic Claude,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API.
 
-```
+```swift
 // An example demonstrating how to use the Conversation API to send
 // a text message to Anthropic Claude.
 
@@ -422,7 +422,7 @@ The following code example shows how to send a text message to Anthropic Claude,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```swift
 // An example demonstrating how to use the Conversation API to send a text message
 // to Anthropic Claude and print the response stream
 
@@ -497,7 +497,7 @@ The following code example shows how to send a text message to Meta Llama, using
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/bedrock-runtime#code-examples).
 Send a text message to Meta Llama, using Bedrock's Converse API.
 
-```
+```swift
 // An example demonstrating how to use the Conversation API to send
 // a text message to Meta Llama.
 
@@ -558,7 +558,7 @@ The following code example shows how to send a text message to Meta Llama, using
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/bedrock-runtime#code-examples).
 Send a text message to Meta Llama, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```swift
 // An example demonstrating how to use the Conversation API to send a text message
 // to Meta Llama and print the response stream.
 

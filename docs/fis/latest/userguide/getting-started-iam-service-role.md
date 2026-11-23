@@ -27,7 +27,7 @@ Before you begin, install and configure the AWS CLI. When you configure the AWS 
 An experiment role must have a trust relationship that allows the AWS FIS service to assume the role. Create a text file named `fis-role-trust-policy.json` and add the following trust relationship policy.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -45,7 +45,7 @@ An experiment role must have a trust relationship that allows the AWS FIS servic
 ```
 We recommend that you use the `aws:SourceAccount` and `aws:SourceArn` condition keys to protect yourself against [the confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html). The source account is the owner of the experiment and the source ARN is the ARN of the experiment. For example, you should add the following condition block to your trust policy.
 
-```
+```json
 "Condition": {
     "StringEquals": {
         "aws:SourceAccount": "{{account_id}}"
@@ -59,7 +59,7 @@ We recommend that you use the `aws:SourceAccount` and `aws:SourceArn` condition 
 **Add permissions to assume target account roles (multi-account experiments only)**
 For multi-account experiments, you need permissions that allows orchestrator account to assume target account roles. You can modify the following example and add as an inline policy document to assume target account roles:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "sts:AssumeRole",
@@ -119,7 +119,7 @@ Use this option for actions that don't have a managed policy, or to include only
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -145,7 +145,7 @@ Use this option for actions that don't have a managed policy, or to include only
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [

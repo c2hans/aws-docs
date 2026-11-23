@@ -76,7 +76,7 @@ aws bedrock-agent list-tags-for-resource \
 
 Add two tags to an agent.
 
-```
+```python
 import boto3
 
 bedrock = boto3.client(service_name='bedrock-agent')
@@ -97,7 +97,7 @@ bedrock.tag_resource(resourceArn='arn:aws:bedrock:us-east-1:123456789012:agent/A
 
 Remove the tags from the agent.
 
-```
+```python
 bedrock.untag_resource(
     resourceArn='arn:aws:bedrock:us-east-1:123456789012:agent/AGENT12345',
     tagKeys=['department', 'facing']
@@ -106,7 +106,7 @@ bedrock.untag_resource(
 
 List the tags for the agent.
 
-```
+```python
 bedrock.list_tags_for_resource(resourceArn='arn:aws:bedrock:us-east-1:123456789012:agent/AGENT12345')
 ```
 
@@ -144,7 +144,7 @@ Although there are no dedicated tagging endpoints, the following IAM actions are
 
 The following example creates a project with two tags using `curl`:
 
-```
+```bash
 curl -X POST https://bedrock-mantle.us-east-1.api.aws/v1/organization/projects \
     -H "Authorization: Bearer $BEDROCK_API_KEY" \
     -H "Content-Type: application/json" \
@@ -159,7 +159,7 @@ curl -X POST https://bedrock-mantle.us-east-1.api.aws/v1/organization/projects \
 
 The following example adds one tag and removes another from an existing project:
 
-```
+```bash
 curl -X POST https://bedrock-mantle.us-east-1.api.aws/v1/organization/projects/proj_abc123 \
     -H "Authorization: Bearer $BEDROCK_API_KEY" \
     -H "Content-Type: application/json" \

@@ -18,7 +18,7 @@ You can add the following policy as an inline policy, where the condition is spe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

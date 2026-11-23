@@ -42,7 +42,7 @@ A client device must also have permission to perform the `greengrass:Discover` a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -76,13 +76,13 @@ These examples use the Amazon Trust Services (ATS) endpoint, which works with th
 
 Port 8443
 
-```
+```https
 HTTP GET https://greengrass-ats.iot.{{region}}.amazonaws.com:8443/greengrass/discover/thing/{{thing-name}}
 ```
 
 Port 443
 
-```
+```https
 HTTP GET https://greengrass-ats.iot.{{region}}.amazonaws.com:443/greengrass/discover/thing/{{thing-name}}
 ```
 Clients that connect on port 443 must implement the [Application Layer Protocol Negotiation (ALPN)](https://tools.ietf.org/html/rfc7301) TLS extension and pass `x-amzn-http-ca` as the `ProtocolName` in the `ProtocolNameList`. For more information, see [Protocols](https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html) in the *AWS IoT Developer Guide*.
@@ -100,7 +100,7 @@ Because AWS IoT Greengrass V2 uses the same discovery API as AWS IoT Greengrass 
 
 The following document shows the response for a client device that is associated to one Greengrass core device. The core device has one endpoint and one CA certificate.
 
-```
+```json
 {
   "GGGroups": [
     {
@@ -128,7 +128,7 @@ The following document shows the response for a client device that is associated
 
 The following document shows the response for a client device that is associated to two core devices. The core devices have multiple endpoints and multiple group CA certificates.
 
-```
+```json
 {
   "GGGroups": [
     {
@@ -188,7 +188,7 @@ The following document shows the response for a client device that is associated
 
 If you have `cURL` installed, you can test the discovery API. The following example specifies a client device's certificates to authenticate a request to the Greengrass discovery API endpoint.
 
-```
+```bash
 curl -i \
   --cert {{1a23bc4d56.cert.pem}} \
   --key {{1a23bc4d56.private.key}} \
@@ -200,7 +200,7 @@ The `-i` argument specifies to output HTTP response headers. You can use this op
 
 If the request succeeds, this command outputs a response similar to the following example.
 
-```
+```json
 {
   "GGGroups": [
     {

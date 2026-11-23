@@ -10,7 +10,7 @@ Lambda supports the following Python runtimes.
 
 | Name | Identifier | Operating system | Deprecation date | Block function create | Block function update |
 | --- | --- | --- | --- | --- | --- |
-| Python 3.15 | `python3.15` | Amazon Linux 2023 |  Not scheduled  |  Not scheduled  |  Not scheduled  |
+| Python 3.15 | `python3.15` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
 | Python 3.14 | `python3.14` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
 | Python 3.13 | `python3.13` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
 | Python 3.12 | `python3.12` | Amazon Linux 2023 |  Oct 31, 2028  |  Nov 30, 2028  |  Jan 10, 2029  |
@@ -53,7 +53,7 @@ For guidance on testing your Python functions, see [AWS Lambda Event Function te
 
 The version of the AWS SDK included in the Python runtime depends on the runtime version and your AWS Region. To find the version of the SDK included in the runtime you're using, create a function with the following code.
 
-```
+```Python
 import boto3
 import botocore
 

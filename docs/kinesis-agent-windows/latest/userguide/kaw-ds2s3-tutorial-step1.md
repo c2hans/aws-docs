@@ -27,7 +27,7 @@ Replace the example Region, {{us-east-1}} with the name of the AWS Region where 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -84,7 +84,7 @@ You can switch between the **Visual editor** and **JSON** tabs any time. However
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement":

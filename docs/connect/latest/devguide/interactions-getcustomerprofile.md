@@ -13,7 +13,7 @@ See [SearchProfiles](https://docs.aws.amazon.com/customerprofiles/latest/APIRefe
 
 At least one search identifier must be present.
 
-```
+```json
 {
     "ProfileRequestData": {
         Requires either IdentiferName and IdentifierValue, or SearchCriteria.

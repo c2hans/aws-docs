@@ -17,7 +17,7 @@ The following code example shows how to:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     DATA lo_hyperparameters_w TYPE REF TO /aws1/cl_sgmhyperparameters_w.
     DATA lo_trn_channel TYPE REF TO /aws1/cl_sgmchannel.
     DATA lo_trn_datasource TYPE REF TO /aws1/cl_sgmdatasource.

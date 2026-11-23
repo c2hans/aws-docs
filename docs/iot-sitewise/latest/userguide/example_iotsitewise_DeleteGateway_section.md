@@ -30,7 +30,7 @@ For more information, see [Ingesting data using a gateway](https://docs.aws.amaz
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
     /**
      * Deletes the specified gateway.
      *
@@ -64,7 +64,7 @@ For more information, see [Ingesting data using a gateway](https://docs.aws.amaz
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   DeleteGatewayCommand,
   IoTSiteWiseClient,
@@ -104,7 +104,7 @@ export const main = async ({ gatewayId }) => {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 
-```
+```python
 class IoTSitewiseWrapper:
     """Encapsulates AWS IoT SiteWise actions using the client interface."""
 
@@ -155,7 +155,7 @@ class IoTSitewiseWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ios->deletegateway(
           iv_gatewayid = iv_gateway_id

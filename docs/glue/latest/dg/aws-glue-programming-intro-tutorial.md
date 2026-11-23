@@ -37,7 +37,7 @@ You use the Python language and libraries in this tutorial. Similar functionalit
 #### Tutorial sample script
 <a name="aws-glue-programming-intro-tutorial-code-sample"></a>
 
-```
+```python
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions

@@ -46,7 +46,7 @@ The request accepts the following data in JSON format.
 The list of governed actions that trigger the approval workflow.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
-Valid Values: `SHARE`
+Valid Values: `SHARE | PUBLISH`
 Required: No
 
  ** [ApplicableTo](#API_UpdateApprovalPolicy_RequestSyntax) **   <a name="QS-UpdateApprovalPolicy-request-ApplicableTo"></a>
@@ -64,7 +64,7 @@ Required: No
 The list of asset types that the approval policy applies to.
 Type: Array of strings
 Array Members: Minimum number of 1 item.
-Valid Values: `AGENT | SPACE | KNOWLEDGE_BASE`
+Valid Values: `AGENT | SPACE | KNOWLEDGE_BASE | FLOW`
 Required: No
 
  ** [Description](#API_UpdateApprovalPolicy_RequestSyntax) **   <a name="QS-UpdateApprovalPolicy-request-Description"></a>

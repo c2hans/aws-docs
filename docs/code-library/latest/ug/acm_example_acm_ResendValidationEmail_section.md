@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Resend the email that requests domain ownership validation.
 /*!
   \param certificateArn: The Amazon Resource Name (ARN) of a certificate.
@@ -80,7 +80,7 @@ For more information, see [AWS Certificate Manager email validation](https://doc
 **Tools for PowerShell V4**
 **Example 1: Requests that the email to validate domain ownership for 'www.example.com' be sent. If your shell's $ConfirmPreference is set to 'Medium' or lower, the cmdlet will prompt for confirmation before proceeeding. Add the -Force switch to suppress confirmation prompts.**
 
-```
+```powershell
 $params = @{
     CertificateArn="arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012"
     Domain="www.example.com"
@@ -93,7 +93,7 @@ Send-ACMValidationEmail @params
 **Tools for PowerShell V5**
 **Example 1: Requests that the email to validate domain ownership for 'www.example.com' be sent. If your shell's $ConfirmPreference is set to 'Medium' or lower, the cmdlet will prompt for confirmation before proceeeding. Add the -Force switch to suppress confirmation prompts.**
 
-```
+```powershell
 $params = @{
     CertificateArn="arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012"
     Domain="www.example.com"
@@ -109,7 +109,7 @@ Send-ACMValidationEmail @params
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -154,7 +154,7 @@ class AcmCertificate:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_certificate_arn = 'arn:aws:acm:region:123456789012:certificate/certificate-id'
         " iv_domain = 'example.com'

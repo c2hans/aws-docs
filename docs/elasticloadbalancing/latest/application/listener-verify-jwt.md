@@ -104,7 +104,7 @@ aws elbv2 create-rule \
 
 The following is an example of the `actions.json` file that specifies a `jwt-validation` action and a `forward` action. Please follow documentation provided by your identity provider to determine the fields that are supported
 
-```
+```json
 --actions '[
     {
         "Type":"jwt-validation",
@@ -124,7 +124,7 @@ The following is an example of the `actions.json` file that specifies a `jwt-val
 
 The following example specifies an additional claim to validate.
 
-```
+```json
 --actions '[
     {
         "Type":"jwt-validation",

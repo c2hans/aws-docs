@@ -71,7 +71,7 @@ The AWS Region of your KMS key and the Amazon S3 bucket must be the same.
 
 1. Copy the following policy block to your KMS key policy, to grant GuardDuty permission to use your key.
 
-   ```
+   ```JSON
    {
        "Sid": "AllowGuardDutyKey",
        "Effect": "Allow",
@@ -136,7 +136,7 @@ If you do not already have an Amazon S3 bucket where you want to export these fi
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -331,7 +331,7 @@ To add the expected bucket owner by using the AWS CLI, run the `update-publishin
 
 The following AWS CLI command adds the expected bucket owner to an existing publishing destination:
 
-```
+```bash
 aws guardduty update-publishing-destination \
     --detector-id {{12abc34d567e8fa901bc2d34EXAMPLE}} \
     --destination-id {{destination-id}} \

@@ -76,7 +76,7 @@ The response contains `access_token` and `refresh_token`. Record both values. Th
 
 Store the credentials in an AWS Secrets Manager secret with the following key-value pairs:
 
-```
+```json
 {
     "confluenceAppKey": "{{your-client-id}}",
     "confluenceAppSecret": "{{your-client-secret}}",
@@ -101,7 +101,7 @@ Record the secret ARN from the response. You use it as the data source `secretAr
 
 Atlassian access tokens expire after 60 minutes. Amazon Bedrock uses the refresh token to mint a new access token and writes the new value back to the same secret. Add `secretsmanager:PutSecretValue` for the secret to your knowledge base service role's permissions policy:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "secretsmanager:PutSecretValue",

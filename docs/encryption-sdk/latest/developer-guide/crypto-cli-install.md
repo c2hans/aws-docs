@@ -23,18 +23,18 @@ Earlier versions of the AWS Encryption CLI support Python 2.7 and 3.4 and later,
 Python is included in most Linux and macOS installations, but you need to upgrade to Python 3.6 or later. We recommend that you use the latest version of Python. On Windows, you have to install Python; it is not installed by default. To download and install Python, see [Python downloads](https://www.python.org/downloads/).
 To determine whether Python is installed, at the command line, type the following.
 
-```
+```bash
 python
 ```
 To check the Python version, use the `-V` (uppercase V) parameter.
 
-```
+```bash
 python -V
 ```
 On Windows, after you install Python, add the path to the `Python.exe` file to the value of the **Path** environment variable.
 By default, Python is installed in the all users directory or in a user profile directory (`$home` or `%userprofile%`) in the `AppData\Local\Programs\Python` subdirectory. To find the location of the `Python.exe` file on your system, check one of the following registry keys. You can use PowerShell to search the registry.
 
-```
+```powershell
 PS C:\> dir HKLM:\Software\Python\PythonCore\{{version}}\InstallPath
 # -or-
 PS C:\> dir HKCU:\Software\Python\PythonCore\{{version}}\InstallPath
@@ -60,30 +60,30 @@ New security features were originally released in AWS Encryption CLI versions 1.
 
 **To install the latest version of the AWS Encryption CLI**
 
-```
+```bash
 pip install aws-encryption-sdk-cli
 ```
 
 **To upgrade to the latest version of the AWS Encryption CLI**
 
-```
+```bash
 pip install --upgrade aws-encryption-sdk-cli
 ```
 
 **To find the version numbers of your AWS Encryption CLI and AWS Encryption SDK**
 
-```
+```bash
 aws-encryption-cli --version
 ```
 The output lists the version numbers of both libraries.
 
-```
+```bash
 aws-encryption-sdk-cli/2.1.0 aws-encryption-sdk/2.0.0
 ```
 
 **To upgrade to the latest version of the AWS Encryption CLI**
 
-```
+```bash
 pip install --upgrade aws-encryption-sdk-cli
 ```
 
@@ -91,13 +91,13 @@ Installing the AWS Encryption CLI also installs the latest version of the AWS SD
 
 **To find your installed version of Boto3**
 
-```
+```bash
 pip show boto3
 ```
 
 **To update to the latest version of Boto3**
 
-```
+```bash
 pip install --upgrade boto3
 ```
 

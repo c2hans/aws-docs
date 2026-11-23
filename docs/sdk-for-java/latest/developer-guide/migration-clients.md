@@ -11,14 +11,14 @@ You must create all clients using the client builder method. Constructors are no
 
 **Example of creating a client in version 1.x**
 
-```
+```java
 AmazonDynamoDB ddbClient = AmazonDynamoDBClientBuilder.defaultClient();
 AmazonDynamoDBClient ddbClient = new AmazonDynamoDBClient();
 ```
 
 **Example of creating a client in version 2.x**
 
-```
+```java
 DynamoDbClient ddbClient = DynamoDbClient.create();
 DynamoDbClient ddbClient = DynamoDbClient.builder().build();
 ```
@@ -30,14 +30,14 @@ All client class names are now fully camel cased and no longer prefixed by `Amaz
 
 **Example of class names in 1.x**
 
-```
+```java
 AmazonDynamoDB
 AWSACMPCAAsyncClient
 ```
 
 **Example of class names in 2.x**
 
-```
+```java
 DynamoDbClient
 AcmAsyncClient
 ```

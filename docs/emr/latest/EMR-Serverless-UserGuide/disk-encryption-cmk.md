@@ -29,7 +29,7 @@ Do not store sensitive information in encryption context as it appears in plaint
 
 To encrypt disks with your own KMS key, include the `diskEncryptionConfiguration` parameter when creating an EMR Serverless application.
 
-```
+```bash,sh,zsh
 aws emr-serverless create-application \
   --type TYPE \
   --name APPLICATION_ID \
@@ -48,7 +48,7 @@ aws emr-serverless create-application \
 
 To update the KMS key ARN and/or encryption context, specify the `diskEncryptionConfiguration` parameter with the new values when updating an application.
 
-```
+```bash,sh,zsh
 aws emr-serverless update-application \
   --name APPLICATION_ID \
   --region AWS_REGION \
@@ -68,7 +68,7 @@ To unset configured disk encryption on an application, pass an empty `diskEncryp
 
 To encrypt disks with your own KMS key, use the `diskEncryptionConfiguration` configuration when you submit a job run.
 
-```
+```bash,sh,zsh
 --configuration-overrides '{
         "diskEncryptionConfiguration": {
             "encryptionKeyArn": "key-arn",
@@ -84,7 +84,7 @@ To encrypt disks with your own KMS key, use the `diskEncryptionConfiguration` co
 
 To encrypt disks with your own KMS key when creating Spark sessions through public Livy endpoints, specify the encryption configuration in the session's `conf` object.
 
-```
+```python
 data = {
     "kind": "pyspark",
     "heartbeatTimeoutInSecond": 60,
@@ -109,7 +109,7 @@ When you encrypt disks with your own encryption key, you must configure the foll
 + `kms:GenerateDataKey` : To generate data keys for encrypting disk volumes
 + `kms:Decrypt` : To decrypt data keys when accessing encrypted disk contents
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal":{
@@ -136,7 +136,7 @@ As a security best practice, we recommend that you add an `aws:SourceArn` condit
 
 The job runtime role must have the following permissions in its IAM policy:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": {
@@ -161,7 +161,7 @@ The user who submits the job must have permissions to use the key. You can speci
 The following key policy provides the permissions to `kms:DescribeKey`, `kms:GenerateDataKey` and `kms:Decrypt`:
 + `kms:DescribeKey` : To verify that the customer managed KMS key is enabled and SYMMETRIC before using it.
 
-```
+```json
 {
     "Sid": "Enable DescribeKey",
     "Effect": "Allow",
@@ -200,7 +200,7 @@ As a security best practice, we recommend that you add an `kms:viaService` condi
 
 The following IAM policy provides the permissions to `kms:DescribeKey`, `kms:GenerateDataKey` and `kms:Decrypt`.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": {
@@ -227,7 +227,7 @@ The information captured includes the encryption context you specified, which ca
 
 Sample event for GenerateDataKey operations when EMR Serverless is creating encrypted disk volumes
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -274,7 +274,7 @@ Sample event for GenerateDataKey operations when EMR Serverless is creating encr
 
 Sample event for Decrypt operations when EMR Serverless is accessing encrypted data.
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

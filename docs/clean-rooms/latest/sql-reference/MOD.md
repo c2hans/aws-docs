@@ -37,7 +37,7 @@ You can use *%* as a modulo operator.
 
 The following example return the remainder when a number is divided by another:
 
-```
+```sql
 SELECT MOD(10, 4);
 
  mod
@@ -47,7 +47,7 @@ SELECT MOD(10, 4);
 
 The following example returns a decimal result:
 
-```
+```sql
 SELECT MOD(10.5, 4);
 
  mod
@@ -57,7 +57,7 @@ SELECT MOD(10.5, 4);
 
 You can cast parameter values:
 
-```
+```sql
 SELECT MOD(CAST(16.4 as integer), 5);
 
  mod
@@ -67,7 +67,7 @@ SELECT MOD(CAST(16.4 as integer), 5);
 
 Check if the first parameter is even by dividing it by 2:
 
-```
+```sql
 SELECT mod(5,2) = 0 as is_even;
 
  is_even
@@ -77,7 +77,7 @@ SELECT mod(5,2) = 0 as is_even;
 
 You can use the *%* as a modulo operator:
 
-```
+```sql
 SELECT 11 % 4 as remainder;
 
  remainder
@@ -87,7 +87,7 @@ SELECT 11 % 4 as remainder;
 
 The following example returns information for odd-numbered categories in the CATEGORY table:
 
-```
+```sql
 select catid, catname
 from category
 where mod(catid,2)=1

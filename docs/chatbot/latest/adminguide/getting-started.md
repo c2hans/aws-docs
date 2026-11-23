@@ -84,7 +84,7 @@ Amazon Q Developer in chat applications doesn't support SNS FIFO topics because 
 
 If you have server-side encryption enabled for your Amazon SNS topics, you must give permissions to the sending services in your AWS KMS key policy to post events to the encrypted SNS topics. The following policy is an example for Amazon EventBridge.
 
-```
+```json
 {
   "Sid": "Allow CWE to use the key",
   "Effect": "Allow",

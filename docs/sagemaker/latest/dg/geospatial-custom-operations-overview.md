@@ -26,7 +26,7 @@ The following procedure show you how to create an instance of `ProcessingJob` an
 
 1. Instantiate an instance of the `ProcessingJob` class using the SageMaker geospatial image:
 
-   ```
+   ```python
    from sagemaker.core.processing import Processor, ProcessingInput, ProcessingOutput
    from sagemaker.core.helper.session_helper import Session, get_execution_role
 
@@ -50,7 +50,7 @@ The following procedure show you how to create an instance of `ProcessingJob` an
 
 1. To start a processing job, use the `.run()` method:
 
-   ```
+   ```python
    # Can be replaced with any S3 compliant string for the name of the folder.
    s3_folder = {{geospatial-data-analysis}}
 

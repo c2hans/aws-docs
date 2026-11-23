@@ -256,7 +256,7 @@ Unlike when creating Basic mode tasks, you don't have to specify an Amazon Cloud
 
 The following example creates a DataSync task that uses Basic mode.
 
-```
+```json
 {
     "SourceLocationArn": "arn:aws:datasync:us-east-2:111222333444:location/loc-1111aaaa2222bbbb3",
     "DestinationLocationArn": "arn:aws:datasync:us-east-2:111222333444:location/loc-0000zzzz1111yyyy2",
@@ -290,7 +290,7 @@ The following example creates a DataSync task that uses Basic mode.
 
 The following response includes the ARN of a created task.
 
-```
+```json
 {
   "TaskArn": "arn:aws:datasync:us-east-2:111222333444:task/task-08de6e6697796f026"
 }

@@ -52,7 +52,7 @@ aws elb register-instances-with-load-balancer --load-balancer-name {{my-loadbala
 
 The following is an example response that lists the instances registered with the load balancer:
 
-```
+```json
 {
     "Instances": [
         {
@@ -129,7 +129,7 @@ aws elb deregister-instances-from-load-balancer --load-balancer-name {{my-loadba
 
 The following is an example response that lists the remaining instances registered with the load balancer:
 
-```
+```json
 {
     "Instances": [
         {

@@ -33,7 +33,7 @@ The following code example shows how to get started using IAM.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 import boto3
 
 def main():
@@ -78,7 +78,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 Create an IAM user and a role that grants permission to list Amazon S3 buckets. The user has rights only to assume the role. After assuming the role, use temporary credentials to list buckets for the account.
 
-```
+```python
 import json
 import sys
 import time
@@ -365,7 +365,7 @@ The following code example shows how to use `AttachRolePolicy`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 Attach a policy to a role using the Boto3 Policy object.
 
-```
+```python
 def attach_to_role(role_name, policy_arn):
     """
     Attaches a policy to a role.
@@ -382,7 +382,7 @@ def attach_to_role(role_name, policy_arn):
 ```
 Attach a policy to a role using the Boto3 Role object.
 
-```
+```python
 def attach_policy(role_name, policy_arn):
     """
     Attaches a policy to a role.
@@ -407,7 +407,7 @@ The following code example shows how to use `AttachUserPolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def attach_policy(user_name, policy_arn):
     """
     Attaches a policy to a user.
@@ -432,7 +432,7 @@ The following code example shows how to use `CreateAccessKey`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def create_key(user_name):
     """
     Creates an access key for the specified user. Each user can have a
@@ -464,7 +464,7 @@ The following code example shows how to use `CreateAccountAlias`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def create_alias(alias):
     """
     Creates an alias for the current account. The alias can be used in place of the
@@ -492,7 +492,7 @@ The following code example shows how to use `CreateInstanceProfile`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 This example creates a policy, role, and instance profile and links them all together.
 
-```
+```python
 class AutoScalingWrapper:
     """
     Encapsulates Amazon EC2 Auto Scaling and EC2 management actions.
@@ -614,7 +614,7 @@ The following code example shows how to use `CreatePolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def create_policy(name, description, actions, resource_arn):
     """
     Creates a policy that contains a single statement.
@@ -656,7 +656,7 @@ The following code example shows how to use `CreatePolicyVersion`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def create_policy_version(policy_arn, actions, resource_arn, set_as_default):
     """
     Creates a policy version. Policies can have up to five versions. The default
@@ -700,7 +700,7 @@ The following code example shows how to use `CreateRole`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def create_role(role_name, allowed_services):
     """
     Creates a role that lets a list of specified services assume the role.
@@ -742,7 +742,7 @@ The following code example shows how to use `CreateServiceLinkedRole`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def create_service_linked_role(service_name, description):
     """
     Creates a service-linked role.
@@ -773,7 +773,7 @@ The following code example shows how to use `CreateUser`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def create_user(user_name):
     """
     Creates a user. By default, a user has no permissions or access keys.
@@ -800,7 +800,7 @@ The following code example shows how to use `DeleteAccessKey`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def delete_key(user_name, key_id):
     """
     Deletes a user's access key.
@@ -827,7 +827,7 @@ The following code example shows how to use `DeleteAccountAlias`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def delete_alias(alias):
     """
     Removes the alias from the current account.
@@ -852,7 +852,7 @@ The following code example shows how to use `DeleteInstanceProfile`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 This example removes the role from the instance profile, detaches all policies attached to the role, and deletes all the resources.
 
-```
+```python
 class AutoScalingWrapper:
     """
     Encapsulates Amazon EC2 Auto Scaling and EC2 management actions.
@@ -948,7 +948,7 @@ The following code example shows how to use `DeletePolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def delete_policy(policy_arn):
     """
     Deletes a policy.
@@ -972,7 +972,7 @@ The following code example shows how to use `DeleteRole`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def delete_role(role_name):
     """
     Deletes a role.
@@ -996,7 +996,7 @@ The following code example shows how to use `DeleteUser`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def delete_user(user_name):
     """
     Deletes a user. Before a user can be deleted, all associated resources,
@@ -1022,7 +1022,7 @@ The following code example shows how to use `DetachRolePolicy`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 Detach a policy from a role using the Boto3 Policy object.
 
-```
+```python
 def detach_from_role(role_name, policy_arn):
     """
     Detaches a policy from a role.
@@ -1041,7 +1041,7 @@ def detach_from_role(role_name, policy_arn):
 ```
 Detach a policy from a role using the Boto3 Role object.
 
-```
+```python
 def detach_policy(role_name, policy_arn):
     """
     Detaches a policy from a role.
@@ -1068,7 +1068,7 @@ The following code example shows how to use `DetachUserPolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def detach_policy(user_name, policy_arn):
     """
     Detaches a policy from a user.
@@ -1095,7 +1095,7 @@ The following code example shows how to use `GenerateCredentialReport`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def generate_credential_report():
     """
     Starts generation of a credentials report about the current account. After
@@ -1125,7 +1125,7 @@ The following code example shows how to use `GetAccessKeyLastUsed`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def get_last_use(key_id):
     """
     Gets information about when and how a key was last used.
@@ -1160,7 +1160,7 @@ The following code example shows how to use `GetAccountAuthorizationDetails`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def get_authorization_details(response_filter):
     """
     Gets an authorization detail report for the current account.
@@ -1191,7 +1191,7 @@ The following code example shows how to use `GetAccountPasswordPolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def print_password_policy():
     """
     Prints the password policy for the account.
@@ -1235,7 +1235,7 @@ The following code example shows how to use `GetAccountSummary`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def get_summary():
     """
     Gets a summary of account usage.
@@ -1261,7 +1261,7 @@ The following code example shows how to use `GetCredentialReport`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def get_credential_report():
     """
     Gets the most recently generated credentials report about the current account.
@@ -1287,7 +1287,7 @@ The following code example shows how to use `GetPolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def get_default_policy_statement(policy_arn):
     """
     Gets the statement of the default version of the specified policy.
@@ -1318,7 +1318,7 @@ The following code example shows how to use `GetPolicyVersion`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def get_default_policy_statement(policy_arn):
     """
     Gets the statement of the default version of the specified policy.
@@ -1349,7 +1349,7 @@ The following code example shows how to use `GetRole`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def get_role(role_name):
     """
     Gets a role by name.
@@ -1377,7 +1377,7 @@ The following code example shows how to use `ListAccessKeys`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def list_keys(user_name):
     """
     Lists the keys owned by the specified user.
@@ -1404,7 +1404,7 @@ The following code example shows how to use `ListAccountAliases`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def list_aliases():
     """
     Gets the list of aliases for the current account. An account has at most one alias.
@@ -1434,7 +1434,7 @@ The following code example shows how to use `ListAttachedRolePolicies`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def list_attached_policies(role_name):
     """
     Lists policies attached to a role.
@@ -1459,7 +1459,7 @@ The following code example shows how to use `ListGroups`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def list_groups(count):
     """
     Lists the specified number of groups for the account.
@@ -1483,7 +1483,7 @@ The following code example shows how to use `ListPolicies`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def list_policies(scope):
     """
     Lists the policies in the current account.
@@ -1511,7 +1511,7 @@ The following code example shows how to use `ListRolePolicies`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def list_policies(role_name):
     """
     Lists inline policies for a role.
@@ -1536,7 +1536,7 @@ The following code example shows how to use `ListRoles`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def list_roles(count):
     """
     Lists the specified number of roles for the account.
@@ -1563,7 +1563,7 @@ The following code example shows how to use `ListSAMLProviders`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def list_saml_providers(count):
     """
     Lists the SAML providers for the account.
@@ -1591,7 +1591,7 @@ The following code example shows how to use `ListUsers`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def list_users():
     """
     Lists the users in the current account.
@@ -1617,7 +1617,7 @@ The following code example shows how to use `UpdateAccessKey`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def update_key(user_name, key_id, activate):
     """
     Updates the status of a key.
@@ -1650,7 +1650,7 @@ The following code example shows how to use `UpdateUser`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def update_user(user_name, new_user_name):
     """
     Updates a user's name.
@@ -1688,7 +1688,7 @@ The following code example shows how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/cross_service/resilient_service#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```python
 class Runner:
     """
     Manages the deployment, demonstration, and destruction of resources for the resilient service.
@@ -2045,7 +2045,7 @@ if __name__ == "__main__":
 ```
 Create a class that wraps Auto Scaling and Amazon EC2 actions.
 
-```
+```python
 class AutoScalingWrapper:
     """
     Encapsulates Amazon EC2 Auto Scaling and EC2 management actions.
@@ -2840,7 +2840,7 @@ class AutoScalingWrapper:
 ```
 Create a class that wraps Elastic Load Balancing actions.
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 
@@ -3175,7 +3175,7 @@ class ElasticLoadBalancerWrapper:
 ```
 Create a class that uses DynamoDB to simulate a recommendation service.
 
-```
+```python
 class RecommendationService:
     """
     Encapsulates a DynamoDB table to use as a service that recommends books, movies,
@@ -3271,7 +3271,7 @@ class RecommendationService:
 ```
 Create a class that wraps Systems Manager actions.
 
-```
+```python
 class ParameterHelper:
     """
     Encapsulates Systems Manager parameters. This example uses these parameters to drive
@@ -3375,7 +3375,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 Create functions that wrap IAM user actions.
 
-```
+```python
 import logging
 import time
 
@@ -3482,7 +3482,7 @@ def detach_policy(user_name, policy_arn):
 ```
 Create functions that wrap IAM policy actions.
 
-```
+```python
 import json
 import logging
 import operator
@@ -3541,7 +3541,7 @@ def delete_policy(policy_arn):
 ```
 Create functions that wrap IAM access key actions.
 
-```
+```python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -3589,7 +3589,7 @@ def delete_key(user_name, key_id):
 ```
 Use the wrapper functions to create users with differing policies and use their credentials to access an Amazon S3 bucket.
 
-```
+```python
 def usage_demo():
     """
     Shows how to manage users, keys, and policies.
@@ -3764,7 +3764,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 Create functions that wrap IAM access key actions.
 
-```
+```python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -3874,7 +3874,7 @@ def delete_key(user_name, key_id):
 ```
 Use the wrapper functions to perform access key actions for the current user.
 
-```
+```python
 def usage_demo():
     """Shows how to create and manage access keys."""
 
@@ -3938,7 +3938,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 Create functions that wrap IAM policy actions.
 
-```
+```python
 import json
 import logging
 import operator
@@ -4117,7 +4117,7 @@ def delete_policy(policy_arn):
 ```
 Use the wrapper functions to create policies, update versions, and get information about them.
 
-```
+```python
 def usage_demo():
     """Shows how to use the policy functions."""
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
@@ -4184,7 +4184,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 Create functions that wrap IAM role actions.
 
-```
+```python
 import json
 import logging
 import pprint
@@ -4271,7 +4271,7 @@ def delete_role(role_name):
 ```
 Use the wrapper functions to create a role, then attach and detach a policy.
 
-```
+```python
 def usage_demo():
     """Shows how to use the role functions."""
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
@@ -4321,7 +4321,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 Create functions that wrap IAM account actions.
 
-```
+```python
 import logging
 import pprint
 import sys
@@ -4451,7 +4451,7 @@ def get_authorization_details(response_filter):
 ```
 Call wrapper functions to change the account alias and to get reports about the account.
 
-```
+```python
 def usage_demo():
     """Shows how to use the account functions."""
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
@@ -4567,7 +4567,7 @@ The following code example shows how to:
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def rollback_policy_version(policy_arn):
     """
     Rolls back to the previous default policy, if it exists.

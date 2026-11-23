@@ -100,7 +100,7 @@ The data provided is stored in the provider's Amazon S3 bucket. When accessing t
 
 ****
 
-      ```
+      ```json
       {
            "Version":"2012-10-17",
            "Statement": [
@@ -126,7 +126,7 @@ The data provided is stored in the provider's Amazon S3 bucket. When accessing t
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

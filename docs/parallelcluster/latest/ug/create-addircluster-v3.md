@@ -24,11 +24,11 @@ You can use this following example to integrate your cluster with an AWS Managed
 
 **Get your AWS Managed Microsoft AD configuration data:**
 
-```
+```bash
 $ aws ds describe-directories --directory-id {{"d-abcdef01234567890"}}
 ```
 
-```
+```json
 {
     "DirectoryDescriptions": [
         {
@@ -56,7 +56,7 @@ $ aws ds describe-directories --directory-id {{"d-abcdef01234567890"}}
 
 **Cluster configuration for an AWS Managed Microsoft AD:**
 
-```
+```yaml
 Region: region-id
 Image:
   Os: alinux2023
@@ -89,7 +89,7 @@ DirectoryService:
 
 **To use this configuration for a Simple AD, change the `DomainReadOnlyUser` property value in the `DirectoryService` section:**
 
-```
+```yaml
 DirectoryService:
   DomainName: dc=corp,dc=example,dc=com
   DomainAddr: ldap://203.0.113.225,ldap://192.0.2.254
@@ -106,7 +106,7 @@ DirectoryService:
 + The [`DirectoryService`](DirectoryService-v3.md) / [`DomainReadOnlyUser`](DirectoryService-v3.md#yaml-DirectoryService-DomainReadOnlyUser) property value specifies a user that must be created in the directory. This user *isn't* created by default. We recommend that you *don't* give this user permission to modify directory data.
 + The [`DirectoryService`](DirectoryService-v3.md) / [`PasswordSecretArn`](DirectoryService-v3.md#yaml-DirectoryService-PasswordSecretArn) property value points to an AWS Secrets Manager secret that contains the password of the user that you specified for the [`DirectoryService`](DirectoryService-v3.md) / [`DomainReadOnlyUser`](DirectoryService-v3.md#yaml-DirectoryService-DomainReadOnlyUser) property. If this user’s password changes, update the secret value and update the cluster. To update the cluster for the new secret value, you must stop the compute fleet with the `pcluster update-compute-fleet` command. If you configured your cluster to use [`LoginNodes`](LoginNodes-v3.md), stop the [`LoginNodes`](LoginNodes-v3.md) / [`Pools`](LoginNodes-v3.md#LoginNodes-v3-Pools) and update the cluster after setting [`LoginNodes`](LoginNodes-v3.md) / [`Pools`](LoginNodes-v3.md#LoginNodes-v3-Pools) / [`Count`](LoginNodes-v3.md#yaml-LoginNodes-Pools-Count) to 0. Then, run the following command from within the cluster head node.
 
-  ```
+  ```bash
    sudo /opt/parallelcluster/scripts/directory_service/update_directory_service_password.sh
   ```
 

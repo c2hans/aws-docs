@@ -64,7 +64,7 @@ You can create Amazon EventBridge rules to automatically detect and respond to A
 
 The following is an example event pattern that matches AWS Health planned lifecycle events for AWS Batch:
 
-```
+```json
 {
   "source": ["aws.health"],
   "detail-type": ["AWS Health Event"],

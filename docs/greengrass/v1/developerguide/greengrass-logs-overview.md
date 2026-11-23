@@ -36,7 +36,7 @@ The following considerations apply when you use CloudWatch Logs:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -165,7 +165,7 @@ You can configure logging on the group's **Settings** page.
 
 You can use AWS IoT Greengrass logger APIs to configure logging programmatically. For example, use the [`CreateLoggerDefinition`](https://docs.aws.amazon.com/greengrass/v1/apireference/createloggerdefinition-post.html) action to create a logger definition based on a [`LoggerDefinitionVersion`](https://docs.aws.amazon.com/greengrass/v1/apireference/definitions-loggerdefinitionversion.html) payload, which uses the following syntax:
 
-```
+```json
 {
   "Loggers": [
     {
@@ -211,7 +211,7 @@ The following `LoggerDefinitionVersion` example specifies a logging configuratio
 + Turns on file system `INFO` (and above) logging for user-defined Lambda functions.
 + Turns on CloudWatch `INFO` (and above) logging for user-defined Lambda functions.
 
-```
+```json
 {
   "Name": "LoggingExample",
   "InitialVersion": {

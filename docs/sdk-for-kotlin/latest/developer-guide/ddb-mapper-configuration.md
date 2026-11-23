@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 
 You configure a [`DynamoDbMapper`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html) by passing a configuration block when you create it. The primary configuration mechanism is **interceptors**, which are objects that hook into the mapper’s request pipeline to observe or modify operations as they run.
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbMapper
 
 val mapper = DynamoDbMapper(client) {
@@ -71,7 +71,7 @@ This mirrors a nested call stack: each interceptor "wraps" the ones registered a
 
 Implement `InterceptorAny` (a type alias for an interceptor over any item, request, and response types) and override the hooks you care about. This read-only interceptor logs each operation as it enters the pipeline and just before the service call:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.items.ItemSchema
 import aws.sdk.kotlin.hll.dynamodbmapper.pipeline.HReqContext
 import aws.sdk.kotlin.hll.dynamodbmapper.pipeline.InterceptorAny
@@ -95,7 +95,7 @@ Each hook receives a **context** object that exposes the state available at that
 
 Add interceptors in the configuration block when creating the mapper:
 
-```
+```kotlin
 val mapper = DynamoDbMapper(client) {
     interceptors += LoggingInterceptor()
 }

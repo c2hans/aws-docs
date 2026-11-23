@@ -32,7 +32,7 @@ Create a new Go file with the name `DeadLetterQueue.go`.
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "encoding/json"
     "flag"
@@ -47,7 +47,7 @@ import (
 
 Get the name of the queue and the dead letter queue from the commmand line.
 
-```
+```go
     queue := flag.String("q", "", "The name of the queue")
     dlQueue := flag.String("d", "", "The name of the dead-letter queue")
     flag.Parse()
@@ -60,7 +60,7 @@ Get the name of the queue and the dead letter queue from the commmand line.
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file, `~/.aws/credentials` and the default AWS Region from `~/.aws/config`.
 
-```
+```go,
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -68,7 +68,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Create a service client and call `GetQueueUrl` to get the URL for the queue.
 
-```
+```go
 svc := sqs.New(sess)
 
 result, err := svc.GetQueueUrl(&sqs.GetQueueUrlInput{
@@ -78,7 +78,7 @@ result, err := svc.GetQueueUrl(&sqs.GetQueueUrlInput{
 
 The URL of the queue is in the `QueueUrl` property of the returned object.
 
-```
+```go
 queueURL := result.QueueUrl
 ```
 
@@ -86,7 +86,7 @@ Similarly, get the URL of the dead letter queue.
 
 Create the ARN of the dead-letter queue from the URL.
 
-```
+```go
 parts := strings.Split(*queueURL, "/")
 subParts := strings.Split(parts[2], ".")
 
@@ -95,7 +95,7 @@ arn := "arn:aws:" + subParts[0] + ":" + subParts[1] + ":" + parts[3] + ":" + par
 
 Define the redrive policy for the queue.
 
-```
+```go
 policy := map[string]string{
     "deadLetterTargetArn": *dlQueueARN,
     "maxReceiveCount":     "10",
@@ -104,13 +104,13 @@ policy := map[string]string{
 
 Marshal the policy to use as input for the `SetQueueAttributes` call.
 
-```
+```go
 b, err := json.Marshal(policy)
 ```
 
 Set the policy on the queue.
 
-```
+```go
 _, err = svc.SetQueueAttributes(&sqs.SetQueueAttributesInput{
     QueueUrl: queueURL,
     Attributes: map[string]*string{

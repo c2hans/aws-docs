@@ -57,7 +57,7 @@ When you sign requests with AWS Signature Version 4 (SigV4), include `X-Amzn-Bed
 
 The following example sets request metadata with the AWS SDK for Python (Boto3) on a Converse call. The SDK includes the metadata in the SigV4-signed headers for you.
 
-```
+```python
 import boto3
 
 client = boto3.client("bedrock-runtime")
@@ -90,7 +90,7 @@ Requests that exceed these limits are rejected with a validation error.
 
 Request metadata appears in your Amazon Bedrock model invocation logs under the top-level `requestMetadata` field. The following abbreviated log entry shows the field for an InvokeModel call:
 
-```
+```json
 {
     "schemaType": "ModelInvocationLog",
     "schemaVersion": "1.0",
@@ -133,7 +133,7 @@ fields requestMetadata.user as user, modelId,
 ```
 For logs delivered to Amazon S3, the following Amazon Athena query estimates cost by team. Replace the per-token rates with the current rates from [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing/), and adjust the table and column references to match your AWS Glue table definition.
 
-```
+```sql
 SELECT requestMetadata.team       AS team,
        modelId,
        SUM(input.inputTokenCount)  AS input_tokens,

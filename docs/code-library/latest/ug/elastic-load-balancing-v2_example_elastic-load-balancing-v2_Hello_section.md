@@ -14,7 +14,7 @@ The following code examples show how to get started using Elastic Load Balancing
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 
-```
+```java
 public class HelloLoadBalancer {
 
         public static void main(String[] args) {
@@ -38,7 +38,7 @@ public class HelloLoadBalancer {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/elastic-load-balancing-v2#code-examples).
 
-```
+```javascript
 import {
   ElasticLoadBalancingV2Client,
   DescribeLoadBalancersCommand,
@@ -72,7 +72,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/elastic-load-balancing#code-examples).
 
-```
+```python
 import boto3
 
 def hello_elbv2(elbv2_client):

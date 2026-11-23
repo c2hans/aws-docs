@@ -45,7 +45,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### Offering schema
 <a name="offerings-offeringid-response-body-offering-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "currencyCode": "string",
@@ -73,7 +73,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### InvalidRequest schema
 <a name="offerings-offeringid-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -82,7 +82,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### AccessDenied schema
 <a name="offerings-offeringid-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -91,7 +91,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### ResourceNotFound schema
 <a name="offerings-offeringid-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -100,7 +100,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### LimitExceeded schema
 <a name="offerings-offeringid-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -109,7 +109,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### InternalServiceError schema
 <a name="offerings-offeringid-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -118,7 +118,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### BadGatewayException schema
 <a name="offerings-offeringid-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -127,7 +127,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### GatewayTimeoutException schema
 <a name="offerings-offeringid-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

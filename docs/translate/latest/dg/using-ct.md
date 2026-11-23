@@ -31,7 +31,7 @@ This uses the selected Custom Terminology to translate this text as "Avez-vous d
 
 The following example shows how to use the same terminology file in Python.
 
-```
+```python
 import boto3
 
 translate = boto3.client(service_name='translate')

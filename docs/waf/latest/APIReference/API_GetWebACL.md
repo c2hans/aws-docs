@@ -63,6 +63,9 @@ Required: No
    "ApplicationIntegrationURL": "string",
    "LockToken": "string",
    "WebACL": {
+      "AnalyticsConfig": {
+         "Mode": "string"
+      },
       "ApplicationConfig": {
          "Attributes": [
             {
@@ -233,6 +236,18 @@ Required: No
                               "StatusCode": {
                                  "FailureCodes": [ number ],
                                  "SuccessCodes": [ number ]
+                              }
+                           }
+                        },
+                        "AWSManagedRulesAISecurityRuleSet": {
+                           "BedrockGuardrails": {
+                              "Disable": {
+                              },
+                              "ProtectRequestAndResponse": {
+                                 "RoleArn": "string"
+                              },
+                              "ProtectRequestOnly": {
+                                 "RoleArn": "string"
                               }
                            }
                         },
@@ -1155,6 +1170,18 @@ Required: No
                               "StatusCode": {
                                  "FailureCodes": [ number ],
                                  "SuccessCodes": [ number ]
+                              }
+                           }
+                        },
+                        "AWSManagedRulesAISecurityRuleSet": {
+                           "BedrockGuardrails": {
+                              "Disable": {
+                              },
+                              "ProtectRequestAndResponse": {
+                                 "RoleArn": "string"
+                              },
+                              "ProtectRequestOnly": {
+                                 "RoleArn": "string"
                               }
                            }
                         },
@@ -2274,6 +2301,18 @@ Required: No
                               "StatusCode": {
                                  "FailureCodes": [ number ],
                                  "SuccessCodes": [ number ]
+                              }
+                           }
+                        },
+                        "AWSManagedRulesAISecurityRuleSet": {
+                           "BedrockGuardrails": {
+                              "Disable": {
+                              },
+                              "ProtectRequestAndResponse": {
+                                 "RoleArn": "string"
+                              },
+                              "ProtectRequestOnly": {
+                                 "RoleArn": "string"
                               }
                            }
                         },

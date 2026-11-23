@@ -14,7 +14,7 @@ The following code examples show how to use `GetUser`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information about an IAM user.
     /// </summary>
@@ -34,7 +34,7 @@ The following code examples show how to use `GetUser`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -116,7 +116,7 @@ For more information, see [Managing IAM users](https://docs.aws.amazon.com/IAM/l
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -166,7 +166,7 @@ func (wrapper UserWrapper) GetUser(ctx context.Context, userName string) (*types
 **Tools for PowerShell V4**
 **Example 1: This example retrieves details about the user named `David`.**
 
-```
+```powershell
 Get-IAMUser -UserName David
 ```
 **Output:**
@@ -181,7 +181,7 @@ UserName         : David
 ```
 **Example 2: This example retrieves details about the currently signed-in IAM user.**
 
-```
+```powershell
 Get-IAMUser
 ```
 **Output:**
@@ -199,7 +199,7 @@ UserName         : Bob
 **Tools for PowerShell V5**
 **Example 1: This example retrieves details about the user named `David`.**
 
-```
+```powershell
 Get-IAMUser -UserName David
 ```
 **Output:**
@@ -214,7 +214,7 @@ UserName         : David
 ```
 **Example 2: This example retrieves details about the currently signed-in IAM user.**
 
-```
+```powershell
 Get-IAMUser
 ```
 **Output:**
@@ -235,7 +235,7 @@ UserName         : Bob
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Retrieves a user's details
   #
   # @param user_name [String] The name of the user to retrieve
@@ -259,7 +259,7 @@ UserName         : Bob
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/iam#code-examples).
 
-```
+```swift
 import AWSIAM
 import AWSS3
 

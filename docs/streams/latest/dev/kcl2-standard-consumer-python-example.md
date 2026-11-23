@@ -24,7 +24,7 @@ You must complete the following tasks when implementing a KCL consumer applicati
 
 The `RecordProcess` class must extend the `RecordProcessorBase` class to implement the following methods:
 
-```
+```Python
 initialize
 process_records
 shutdown_requested
@@ -32,7 +32,7 @@ shutdown_requested
 
 This sample provides implementations that you can use as a starting point.
 
-```
+```python
 #!/usr/bin/env python
 
 # Copyright 2014-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
@@ -199,7 +199,7 @@ if __name__ == "__main__":
 
 The sample provides default values for the configuration properties, as shown in the following script. You can override any of these properties with your own values.
 
-```
+```Python
 # The script that abides by the multi-language protocol. This script will
 # be executed by the MultiLangDaemon, which will communicate with this script
 # over STDIN and STDOUT according to the multi-language protocol.

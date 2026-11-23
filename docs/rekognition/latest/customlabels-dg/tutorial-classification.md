@@ -276,7 +276,7 @@ For more information, see [Analyzing an image with a trained model](detecting-cu
 
    The JSON output from the AWS CLI command should look similar to the following. `Name` is the name of the image-level label that the model found. `Confidence` (0-100) is the model's confidence in the accuracy of the prediction.
 
-   ```
+   ```json
    {
        "CustomLabels": [
            {

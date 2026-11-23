@@ -37,7 +37,7 @@ The SiteWise Monitor feature is no longer available to new customers. Existing c
 
 1.  Create a file **update-dataset.json** with the template provided in the example. Populate `datasetId`, `kendra knowledgeBaseArn` and `roleArn` to connect with this dataset.
 
-   ```
+   ```json
    {
        "datasetId": "<UUID>",
        "datasetName": "DatasetForAssistant",
@@ -56,7 +56,7 @@ The SiteWise Monitor feature is no longer available to new customers. Existing c
 
 1.  Update the dataset with the following command:
 
-   ```
+   ```json
    aws iotsitewise update-dataset --cli-input-json {{file://update-dataset.json}} —-region us-east-1
    ```
 

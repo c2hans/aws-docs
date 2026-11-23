@@ -46,7 +46,7 @@ In this example, a first device is named `AnyThing` and has the following packag
 
 The shadow looks as follows:
 
-```
+```json
 {
     "state": {
         "reported": {
@@ -76,7 +76,7 @@ A second device is named `AnotherThing` and has the following package installed:
 
 The shadow looks as follows:
 
-```
+```json
 {
     "state": {
         "reported": {

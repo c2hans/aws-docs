@@ -53,7 +53,7 @@ You can create the policy and the role in the IAM console or with the AWS CLI. C
 
 1. Copy the following contents to a trust policy JSON file. For the principal ARN, replace the example AWS account ID and `service-user` name with your own AWS account ID and IAM user name.
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -70,7 +70,7 @@ You can create the policy and the role in the IAM console or with the AWS CLI. C
 
 1. Create the role. Replace `evs-environment-role-trust-policy.json` with your trust policy file name.
 
-   ```
+   ```bash
    aws iam create-role \
      --role-name myAmazonEVSEnvironmentRole \
      --assume-role-policy-document file://evs-environment-role-trust-policy.json
@@ -78,7 +78,7 @@ You can create the policy and the role in the IAM console or with the AWS CLI. C
 
 1. Save your permissions policy to a JSON file, for example `evs-admin-policy.json`, and create the policy.
 
-   ```
+   ```bash
    POLICY_ARN=$(aws iam create-policy \
      --policy-name myAmazonEVSAdminPolicy \
      --policy-document file://evs-admin-policy.json \
@@ -90,7 +90,7 @@ You can create the policy and the role in the IAM console or with the AWS CLI. C
 
 1. Attach the policy to the role.
 
-   ```
+   ```bash
    aws iam attach-role-policy \
      --policy-arn $POLICY_ARN \
      --role-name myAmazonEVSEnvironmentRole
@@ -98,7 +98,7 @@ You can create the policy and the role in the IAM console or with the AWS CLI. C
 
 1. Verify that the policy is attached to the role.
 
-   ```
+   ```bash
    aws iam list-attached-role-policies \
      --role-name myAmazonEVSEnvironmentRole
    ```

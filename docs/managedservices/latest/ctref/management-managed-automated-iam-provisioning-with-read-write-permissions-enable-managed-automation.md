@@ -190,14 +190,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-automated-iam-provisioning-with-read-write-permissions-enable-managed-automation-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-managed-automated-iam-provisioning-with-read-write-permissions-enable-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "SAMLIdentityProviderArns": ["arn:aws:iam::123456789012:saml-provider/customer-saml"],
   "IamEntityArns": ["arn:aws:iam::123456789012:role/test-role-one", "arn:aws:iam::123456789012:role/test-role-two"],

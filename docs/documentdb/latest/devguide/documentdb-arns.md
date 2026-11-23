@@ -129,7 +129,7 @@ aws docdb describe-db-clusters ^
 ```
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 [
     "arn:aws:rds:us-east-1:123456789012:cluster:sample-cluster"
 ]
@@ -150,7 +150,7 @@ aws docdb describe-db-cluster-parameter-groups ^
 ```
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 [
     "arn:aws:rds:us-east-1:123456789012:cluster-pg:custom3-6-param-grp",
     "arn:aws:rds:us-east-1:123456789012:cluster-pg:default.aurora5.6",

@@ -16,13 +16,13 @@ If you haven't created an OpenSearch cluster, you can use a quickstart bash scri
 
 1. In your working directory, run the script with the following command.
 
-   ```
+   ```cmd
    sh personalized_search_ranking_quickstart.sh
    ```
 
    With this command, the script uses the credentials in your default AWS profile. To provide an alternate profile, use the `--profile` argument.
 
-   ```
+   ```cmd
    sh personalized_search_ranking_quickstart.sh --profile {{profile-name}}
    ```
 

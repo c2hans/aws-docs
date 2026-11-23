@@ -44,7 +44,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateCluster` action for configuring routing control.
 
-```
+```json
 {
   "eventVersion": "1.08",
    "userIdentity": {
@@ -98,7 +98,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 
 The following example shows a CloudTrail log entry that demonstrates the `UpdateRoutingControlState` action for routing control.
 
-```
+```json
 {
   "eventVersion": "1.08",
    "userIdentity": {

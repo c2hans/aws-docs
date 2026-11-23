@@ -23,7 +23,7 @@ The following code example shows how to learn core operations of AWS IoT Greengr
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/greengrassv2#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class GreengrassV2Scenario:
     """Runs an interactive scenario demonstrating Greengrass V2 operations."""
 
@@ -502,7 +502,7 @@ if __name__ == "__main__":
 ```
 Create a class that wraps AWS IoT Greengrass V2 operations.
 
-```
+```python
 class GreengrassV2Wrapper:
     """Encapsulates AWS IoT Greengrass V2 operations."""
 

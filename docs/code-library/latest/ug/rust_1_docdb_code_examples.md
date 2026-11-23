@@ -25,7 +25,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using Rust.
 
-```
+```rust
 use lambda_runtime::{service_fn, tracing, Error, LambdaEvent};
 use aws_lambda_events::{
     event::documentdb::{DocumentDbEvent, DocumentDbInnerEvent},

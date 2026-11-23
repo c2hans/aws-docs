@@ -36,7 +36,7 @@ If queries in multiple sessions hold locks on the same table, you can use the [P
 
 To cancel a currently running query, first retrieve the process ID for the query that you want to cancel. To determine the process IDs for all currently running queries, run the following command.
 
-```
+```sql
 SELECT pid, TRIM(starttime) AS start,
 duration, TRIM(user_name) AS user,
 SUBSTRING(query,1,40) AS querytxt
@@ -54,6 +54,6 @@ WHERE status = 'Running';
 
 To cancel the query with process ID 802, use the following example.
 
-```
+```sql
 SELECT PG_CANCEL_BACKEND(802);
 ```

@@ -18,7 +18,7 @@ Produces: application/json
 ### CLI
 <a name="-greengrass-things-thingname-runtimeconfig-get-cli"></a>
 
-```
+```bash
 aws greengrass get-thing-runtime-configuration  \
     [--cli-input-json <value>] \
     [--generate-cli-skeleton]
@@ -31,7 +31,7 @@ aws greengrass get-thing-runtime-configuration  \
 200 response
  [ GetThingRuntimeConfigurationResponse](definitions-getthingruntimeconfigurationresponse.md)
 
-```
+```json
 {
   "RuntimeConfiguration": {
     "TelemetryConfiguration": {
@@ -64,7 +64,7 @@ enum: ["InSync", "OutOfSync"]
 400 response
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
   "Message": "string",
   "ErrorDetails": [
@@ -100,7 +100,7 @@ type: string
 500 response
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
   "Message": "string",
   "ErrorDetails": [
@@ -144,7 +144,7 @@ Produces: application/json
 ### CLI
 <a name="-greengrass-things-thingname-runtimeconfig-put-cli"></a>
 
-```
+```bash
 aws greengrass update-thing-runtime-configuration \
     [--telemetry-configuration <value>]  \
     [--cli-input-json <value>] \
@@ -153,7 +153,7 @@ aws greengrass update-thing-runtime-configuration \
 
 cli-input-json format:
 
-```
+```json
 {
   "TelemetryConfiguration": {
     "Telemetry": "On|Off"
@@ -168,7 +168,7 @@ cli-input-json format:
 200 response
  [ Empty](definitions-empty.md)
 
-```
+```json
 {
 }
 ```
@@ -180,7 +180,7 @@ type: object
 400 response
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
   "Message": "string",
   "ErrorDetails": [
@@ -215,7 +215,7 @@ type: string
 500 response
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
   "Message": "string",
   "ErrorDetails": [

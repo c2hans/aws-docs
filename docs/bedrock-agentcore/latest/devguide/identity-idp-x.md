@@ -57,7 +57,7 @@ For more details, refer to [X’s OAuth 2.0 documentation](https://docs.x.com/fu
 
 To configure X as an outbound resource provider, use the following:
 
-```
+```json
 {
   "name": "X",
   "credentialProviderVendor": "XOauth2",

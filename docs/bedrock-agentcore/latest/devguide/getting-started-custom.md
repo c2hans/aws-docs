@@ -83,7 +83,7 @@ Create `agent.py` in your project root with the following content:
 
  **Example agent.py**
 
-```
+```python
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import Dict, Any
@@ -272,7 +272,7 @@ Create a file named `deploy_agent.py` with the following content:
 
  **Example deploy\_agent.py**
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control', region_name='us-west-2')
@@ -312,7 +312,7 @@ Create a file named `invoke_agent.py` with the following content:
 
  **Example invoke\_agent.py**
 
-```
+```python
 import boto3
 import json
 
@@ -350,7 +350,7 @@ When you invoke your agent, you’ll receive a response like this:
 
  **Example Sample response**
 
-```
+```json
 {
   "output": {
     "message": {
@@ -375,7 +375,7 @@ Create a file named `stop_runtime_session.py` with the following content:
 
  **Example stop\_runtime\_session.py**
 
-```
+```python
 import boto3
 
 agent_core_client = boto3.client('bedrock-agentcore', region_name='us-west-2')

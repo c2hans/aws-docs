@@ -13,7 +13,7 @@ Hyperparameters are specified using the `algorithmHyperParameters` key that is p
 
 A condensed version of the `CreateSolution` request is below. The example includes the `solutionConfig` object. You use `solutionConfig` to override the default parameters of a recipe.
 
-```
+```json
 {
   "name": "string",
   "recipeArn": "string",
@@ -56,7 +56,7 @@ Hyperparameters can be categorical, continuous, or integer-valued. The `hpoConfi
 
 The following code shows how to create a solution with HPO enabled using the AWS SDK for Python (Boto3). The solution in the example uses the [User-Personalization recipe](native-recipe-new-item-USER_PERSONALIZATION.md) recipe and has HPO set to `true`. The code provides a value for `hidden_dimension` and the `categoricalHyperParameterRanges` and `integerHyperParameterRanges`. The `continousHyperParameterRange` is empty and the `hpoResourceConfig` sets the `maxNumberOfTrainingJobs` and `maxParallelTrainingJobs`.
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')

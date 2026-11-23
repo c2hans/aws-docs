@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { CloudFrontToS3 } from '@aws-solutions-constructs/aws-cloudfront-s3';
@@ -39,7 +39,7 @@ new WafwebaclToCloudFront(this, 'test-wafwebacl-cloudfront', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_cloudfront_s3 import CloudFrontToS3
 from aws_solutions_constructs.aws_wafwebacl_cloudfront import WafwebaclToCloudFront
 from aws_cdk import Stack
@@ -53,7 +53,7 @@ WafwebaclToCloudFront(self, 'test_wafwebacl_cloudfront',
                       )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

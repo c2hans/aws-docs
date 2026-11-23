@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 First import the packages we use in this example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -21,7 +21,7 @@ import (
 
 Next, create the session and Lambda client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -31,7 +31,7 @@ svc := lambda.New(sess, &aws.Config{Region: aws.String("us-west-2")})
 
 Next, call `ListFunctions` and exit if there is an error.
 
-```
+```go
 result, err := svc.ListFunctions(nil)
 if err != nil {
     fmt.Println("Cannot list functions")
@@ -41,7 +41,7 @@ if err != nil {
 
 Finally, display the names and descriptions of the Lambda functions.
 
-```
+```go
 fmt.Println("Functions:")
 
 for _, f := range result.Functions {

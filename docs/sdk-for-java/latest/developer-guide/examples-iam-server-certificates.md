@@ -15,7 +15,7 @@ You can retrieve a server certificate by calling the IamClient’s `getServerCer
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.GetServerCertificateRequest;
 import software.amazon.awssdk.services.iam.model.GetServerCertificateResponse;
 import software.amazon.awssdk.regions.Region;
@@ -25,7 +25,7 @@ import software.amazon.awssdk.services.iam.model.IamException;
 
  **Code**
 
-```
+```java
     public static void getCertificate(IamClient iam,String certName ) {
 
         try {
@@ -57,7 +57,7 @@ Results may be truncated; if the `ListServerCertificateResponse` object’s `isT
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.IamException;
 import software.amazon.awssdk.services.iam.model.ListServerCertificatesRequest;
 import software.amazon.awssdk.services.iam.model.ListServerCertificatesResponse;
@@ -68,7 +68,7 @@ import software.amazon.awssdk.services.iam.IamClient;
 
  **Code**
 
-```
+```java
     public static void listCertificates(IamClient iam) {
 
         try {
@@ -118,7 +118,7 @@ You can update a server certificate’s name or path by calling the IamClient’
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
 import software.amazon.awssdk.services.iam.model.IamException;
@@ -128,7 +128,7 @@ import software.amazon.awssdk.services.iam.model.UpdateServerCertificateResponse
 
  **Code**
 
-```
+```java
     public static void updateCertificate(IamClient iam, String curName, String newName) {
 
         try {
@@ -160,7 +160,7 @@ To delete a server certificate, call the IamClient’s `deleteServerCertificate`
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.DeleteServerCertificateRequest;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
@@ -169,7 +169,7 @@ import software.amazon.awssdk.services.iam.model.IamException;
 
  **Code**
 
-```
+```java
     public static void deleteCert(IamClient iam,String certName ) {
 
         try {

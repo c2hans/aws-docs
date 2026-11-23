@@ -181,7 +181,7 @@ The following examples show IAM permissions for commonly used AWS services in VP
 **Example permissions**
 For workflows that run queries:
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": [
@@ -197,7 +197,7 @@ For workflows that run queries:
 **Example AWS Glue Data Catalog permissions**
 For workflows that access AWS Glue databases and tables (commonly used with Amazon Athena):
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": [
@@ -219,7 +219,7 @@ If you use AWS Lake Formation to manage permissions for your AWS Glue Data Catal
 **Example DynamoDB permissions**
 For workflows that read from or write to DynamoDB tables:
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": [
@@ -235,7 +235,7 @@ For workflows that read from or write to DynamoDB tables:
 **Example Amazon S3 Tables permissions**
 For workflows that read from or write to Amazon S3 Tables:
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": [
@@ -275,7 +275,7 @@ aws omics start-run \
 
 Check the workflow output to confirm successful connectivity:
 
-```
+```json
 {
   "connectivity_test.result": "Testing connection to external service...\nSUCCESS: Connection successful!\nTest completed"
 }
@@ -306,7 +306,7 @@ To get your NCBI API key, visit the [ NCBI API Keys documentation](https://www.n
 
 **Example workflow definition:**
 
-```
+```wdl
 version 1.0
 #WORKFLOW DEFINITION
 

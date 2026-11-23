@@ -8,13 +8,13 @@ Retrieve details about the target AWS PCS cluster using the AWS CLI with the com
 + Replace {{region-code}} with the AWS Region where the target cluster is running.
 + Replace {{cluster-ident}} with the name or identifier for the target cluster
 
-```
+```cmd
 aws pcs get-cluster --region {{region-code}} --cluster-identifier {{cluster-ident}}
 ```
 
 The command will return output similar to this example.
 
-```
+```json
 {
     "cluster": {
         "name": "get-started",

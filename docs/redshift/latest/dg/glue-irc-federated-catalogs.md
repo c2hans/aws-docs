@@ -52,34 +52,34 @@ Connect to your Amazon Redshift cluster or workgroup as an admin user and access
 Option 1: Create an external schema using an IAM role
 Create an IAM role with permission to AWS Glue and AWS Lake Formation APIs and attach the role to the cluster.
 
-```
+```sql
 CREATE EXTERNAL SCHEMA {{external_schema_name}}
 FROM DATA CATALOG DATABASE '{{resource_link_database}}'
 IAM_ROLE 'arn:aws:iam::{{account_id}}:role/{{spectrum_role}}';
 ```
 You can grant permissions on this external schema to Amazon Redshift local users and groups. Local Amazon Redshift identities can access the data by querying the schema using permissions granted to the IAM role attached to the external schema.
 
-```
+```sql
 SELECT * FROM "{{database}}"."{{external_schema_name}}"."{{table_name}}" LIMIT 10;
 ```
 
 Option 2: Create an external schema using IAM SESSION for a federated principal
 
-```
+```sql
 CREATE EXTERNAL SCHEMA {{external_schema_name}}
 FROM DATA CATALOG DATABASE '{{resource_link_database}}'
 IAM_ROLE 'SESSION' CATALOG_ID '{{account_id}}';
 ```
 Log in as a federated user or with an IAM identity and run the following command to query the table:
 
-```
+```sql
 SELECT * FROM "{{database}}"."{{external_schema_name}}"."{{table_name}}" LIMIT 10;
 ```
 
 Option 3: Use automount to query a federated table
 The admin user should grant usage on the automounted database to federated principals. The principal can then access the federated table by running the following command:
 
-```
+```sql
 SELECT * FROM "awsdatacatalog"."{{resource_link_database}}"."{{table_name}}" LIMIT 10;
 ```
 
@@ -101,7 +101,7 @@ Follow the instructions in [Federate to Databricks Unity Catalog](https://docs.a
 
 Set the cross-account version to V4 in AWS Lake Formation settings. If catalog-level permissions already exist, make sure AWS RAM has permission to share resources by adding the following Data Catalog resource policy:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -175,34 +175,34 @@ Connect to your Amazon Redshift cluster or workgroup as an admin user and access
 Option 1: Create an external schema using an IAM role
 Create an IAM role with permission to AWS Glue and AWS Lake Formation APIs and attach the role to the cluster.
 
-```
+```sql
 CREATE EXTERNAL SCHEMA {{external_schema_name}}
 FROM DATA CATALOG DATABASE '{{resource_link_database}}'
 IAM_ROLE 'arn:aws:iam::{{account_id}}:role/{{spectrum_role}}';
 ```
 You can grant permissions on this external schema to Amazon Redshift local users and groups. Local Amazon Redshift identities can access the data by querying the schema using permissions granted to the IAM role attached to the external schema.
 
-```
+```sql
 SELECT * FROM "{{database}}"."{{external_schema_name}}"."{{table_name}}" LIMIT 10;
 ```
 
 Option 2: Create an external schema using IAM SESSION for a federated principal
 
-```
+```sql
 CREATE EXTERNAL SCHEMA {{external_schema_name}}
 FROM DATA CATALOG DATABASE '{{resource_link_database}}'
 IAM_ROLE 'SESSION' CATALOG_ID '{{account_id}}';
 ```
 Log in as a federated user or with an IAM identity and run the following command to query the table:
 
-```
+```sql
 SELECT * FROM "{{database}}"."{{external_schema_name}}"."{{table_name}}" LIMIT 10;
 ```
 
 Option 3: Use automount to query a federated table
 The admin user should grant usage on the automounted database to federated principals. The principal can then access the federated table by running the following command:
 
-```
+```sql
 SELECT * FROM "awsdatacatalog"."{{resource_link_database}}"."{{table_name}}" LIMIT 10;
 ```
 

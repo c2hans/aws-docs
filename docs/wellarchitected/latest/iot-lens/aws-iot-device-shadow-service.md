@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/aws-iot-
 
 ![Using Device Shadow with devices](https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/images/image5.png)
 
+*Using Device Shadow with devices*
+
 1.  The device should check its desired state as soon as it comes online by subscribing to the $aws/things/<<thingName>>/shadow/name/<<shadowName>>/get topic. A device reports initial device state by publishing that state as a message to the update topic $aws/things/<<thingName>>/shadow/name/<<shadowName>>/update.
 
 1.  The Device Shadow reads the message from the topic and records the device state in a persistent data store.

@@ -15,7 +15,7 @@ All Engagement members have full visibility of customers and their associated pr
 In the following list, the required parameters are described first.
 
  ** Customer **   <a name="AWSPartnerCentral-Type-CustomerProjectsContext-Customer"></a>
-Contains details about the customer associated with the Engagement Invitation, including company information and industry.
+Contains details about the customer that the customer project belongs to.
 Type: [EngagementCustomer](API_EngagementCustomer.md) object
 Required: No
 

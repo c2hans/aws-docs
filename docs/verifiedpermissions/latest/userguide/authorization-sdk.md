@@ -35,7 +35,7 @@ The following are links to documentation for Verified Permissions resources in v
 
 The following AWS SDK for JavaScript example for `IsAuthorized` originates from [Simplify fine-grained authorization with Amazon Verified Permissions and Amazon Cognito](https://aws.amazon.com/blogs/security/simplify-fine-grained-authorization-with-amazon-verified-permissions-and-amazon-cognito/).
 
-```
+```python
 const authResult = await avp.isAuthorized({
     principal: 'User::"alice"',
     action: 'Action::"view"',

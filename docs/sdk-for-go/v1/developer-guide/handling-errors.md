@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 The AWS SDK for Go returns errors that satisfy the Go `error` interface type and the [Error](https://docs.aws.amazon.com/sdk-for-go/api/aws/awserr/#Error) interface in the `aws/awserr` package. You can use the `Error()` method to get a formatted string of the SDK error message without any special handling.
 
-```
+```go
 if err != nil {
     if awsErr, ok := err.(awserr.Error); ok {
         // process SDK error
@@ -30,7 +30,7 @@ This example highlights how you can use the `awserr.Error` type to perform logic
 
 In this example the *S3* *GetObject* API operation is used to request the contents of an object in S3. The example handles the *NoSuchBucket* and *NoSuchKey* error codes, printing custom messages to stderr. If any other error is received, a generic message is printed.
 
-```
+```go
 svc := s3.New(sess)
 resp, err := svc.GetObject(&s3.GetObjectInput{
     Bucket: aws.String(os.Args[1]),
@@ -68,7 +68,7 @@ In addition to the `awserr.Error` interface, you might be able to use other inte
 
 Other packages might provide their own error interfaces. For example, the [service/s3/s3manager](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3manager) package provides a [MultiUploadFailure](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3manager/#MultiUploadFailure) interface to retrieve the upload ID. This is helpful when you must manually clean up a failed multi-part upload.
 
-```
+```go
 output, err := s3manager.Upload(svc, input, opts)
 if err != nil {
     if multierr, ok := err.(MultiUploadFailure); ok {

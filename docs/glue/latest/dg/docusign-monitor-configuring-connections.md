@@ -31,7 +31,7 @@ To configure a Docusign Monitor connection:
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

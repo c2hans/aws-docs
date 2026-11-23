@@ -17,7 +17,7 @@ To use CloudFormation to create a rule, update your template as shown here.<a na
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      EventRole:
        Type: AWS::IAM::Role
        Properties:
@@ -48,7 +48,7 @@ To use CloudFormation to create a rule, update your template as shown here.<a na
 ------
 #### [ JSON ]
 
-   ```
+   ```json
      "EventRole": {
        "Type": "AWS::IAM::Role",
        "Properties": {
@@ -107,7 +107,7 @@ To use CloudFormation to create a rule, update your template as shown here.<a na
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      EventRule:
        Type: AWS::Events::Rule
        Properties:
@@ -141,7 +141,7 @@ To use CloudFormation to create a rule, update your template as shown here.<a na
 ------
 #### [ JSON ]
 
-   ```
+   ```json
      "EventRule": {
        "Type": "AWS::Events::Rule",
        "Properties": {
@@ -219,7 +219,7 @@ To use CloudFormation to create a rule, update your template as shown here.<a na
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    Outputs:
      SourceBucketARN:
        Description: "S3 bucket ARN that Cloudtrail will use"
@@ -231,7 +231,7 @@ To use CloudFormation to create a rule, update your template as shown here.<a na
 ------
 #### [ JSON ]
 
-   ```
+   ```json
      "Outputs" : {
        "SourceBucketARN" : {
          "Description" : "S3 bucket ARN that Cloudtrail will use",
@@ -285,7 +285,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 ------
 #### [ YAML ]
 
-  ```
+  ```yaml
             Name: Source
             Actions:
               -
@@ -307,7 +307,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 ------
 #### [ JSON ]
 
-  ```
+  ```json
    {
       "Name": "SourceAction",
       "ActionTypeId": {
@@ -344,7 +344,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 ------
 #### [ YAML ]
 
-  ```
+  ```yaml
   ###################################################################################
   # Prerequisites:
   #   - S3 SourceBucket and SourceObjectKey must exist
@@ -411,7 +411,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 ------
 #### [ JSON ]
 
-  ```
+  ```json
   {
     "Parameters": {
       "SourceObjectKey": {

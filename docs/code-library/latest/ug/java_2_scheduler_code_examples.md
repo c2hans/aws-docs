@@ -30,7 +30,7 @@ The following code example shows how to get started using EventBridge Scheduler.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/scheduler#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.scheduler.SchedulerAsyncClient;
 import software.amazon.awssdk.services.scheduler.model.ListSchedulesRequest;
 import software.amazon.awssdk.services.scheduler.model.ScheduleSummary;
@@ -92,7 +92,7 @@ The following code example shows how to use `CreateSchedule`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/scheduler#code-examples).
 
-```
+```java
     /**
      * Creates a new schedule for a target task.
      *
@@ -178,7 +178,7 @@ The following code example shows how to use `CreateScheduleGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/scheduler#code-examples).
 
-```
+```java
     /**
      * Creates a new schedule group.
      *
@@ -220,7 +220,7 @@ The following code example shows how to use `DeleteSchedule`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/scheduler#code-examples).
 
-```
+```java
     /**
      * Deletes a schedule with the specified name and group name.
      *
@@ -259,7 +259,7 @@ The following code example shows how to use `DeleteScheduleGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/scheduler#code-examples).
 
-```
+```java
     /**
      * Deletes the specified schedule group.
      *
@@ -307,7 +307,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/scheduler#code-examples).
 Run the scenario.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.scheduler.model.SchedulerException;
@@ -673,7 +673,7 @@ public class EventbridgeSchedulerScenario {
 ```
 Wrapper for service operations.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.core.client.config.ClientOverrideConfiguration;

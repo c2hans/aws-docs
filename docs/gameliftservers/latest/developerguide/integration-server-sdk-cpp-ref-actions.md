@@ -61,7 +61,7 @@ Returns a generic outcome consisting of success or failure with an error message
 
 This example illustrates a function for handling a connection request, including validating and rejecting invalid player session IDs.
 
-```
+```cpp
 void ReceiveConnectingPlayerSessionID (Connection& connection, const std::string& playerSessionId){
     Aws::GameLift::GenericOutcome connectOutcome =
         Aws::GameLift::Server::AcceptPlayerSession(playerSessionId);
@@ -104,7 +104,7 @@ Returns a generic outcome consisting of success or failure with an error message
 
 This example shows `ActivateGameSession()` being called as part of the `onStartGameSession()` callback function.
 
-```
+```cpp
 void onStartGameSession(Aws::GameLift::Model::GameSession myGameSession)
 {
    // game-specific tasks when starting a new game session, such as loading map
@@ -142,7 +142,7 @@ If successful, returns a `DescribePlayerSessionsOutcome` object containing a set
 
 This example illustrates a request for all player sessions actively connected to a specified game session. By omitting `NextToken` and setting the `Limit` value to 10, Amazon GameLift Servers returns the first 10 player sessions records matching the request.
 
-```
+```cpp
 // Set request parameters
 Aws::GameLift::Server::Model::DescribePlayerSessionsRequest request;
 request.SetPlayerSessionStatusFilter(Aws::GameLift::Server::Model::PlayerSessionStatusMapper::GetNameForPlayerSessionStatus(Aws::GameLift::Server::Model::PlayerSessionStatus::Active));
@@ -181,7 +181,7 @@ If successful, returns the game session ID as an `AwsStringOutcome` object. If n
 ### Example
 <a name="integration-server-sdk-cpp-ref-getgamesessionid-example"></a>
 
-```
+```cpp
 Aws::GameLift::AwsStringOutcome sessionIdOutcome =
     Aws::GameLift::Server::GetGameSessionId();
 ```
@@ -213,7 +213,7 @@ For more information about the certificate and certificate chain data, see [GetC
 ### Example
 <a name="integration-server-sdk-cpp-ref-getinstancecertificate-example"></a>
 
-```
+```cpp
 Aws::GameLift::GetInstanceCertificateOutcome certificateOutcome =
     Aws::GameLift::Server::GetInstanceCertificate();
 ```
@@ -243,7 +243,7 @@ If successful, returns the current SDK version as an `AwsStringOutcome` object. 
 ### Example
 <a name="integration-server-sdk-cpp-ref-getsdk-example"></a>
 
-```
+```cpp
 Aws::GameLift::AwsStringOutcome SdkVersionOutcome =
     Aws::GameLift::Server::GetSdkVersion();
 ```
@@ -275,7 +275,7 @@ If successful, returns the termination time as an `AwsLongOutcome` object. The v
 ### Example
 <a name="integration-server-sdk-cpp-ref-getterm-example"></a>
 
-```
+```cpp
 Aws::GameLift::AwsLongOutcome TermTimeOutcome =
     Aws::GameLift::Server::GetTerminationTime();
 ```
@@ -305,7 +305,7 @@ If successful, returns an InitSdkOutcome object indicating that the server proce
 ### Example
 <a name="integration-server-sdk-cpp-ref-initsdk-example"></a>
 
-```
+```cpp
 Aws::GameLift::Server::InitSDKOutcome initOutcome =
     Aws::GameLift::Server::InitSDK();
 ```
@@ -337,7 +337,7 @@ Returns a generic outcome consisting of success or failure with an error message
 ### Example
 <a name="integration-server-sdk-cpp-ref-processending-example"></a>
 
-```
+```cpp
 Aws::GameLift::GenericOutcome outcome = Aws::GameLift::Server::ProcessEnding();
 if (outcome.Success)
     exit(0);  // exit with success
@@ -380,7 +380,7 @@ Returns a generic outcome consisting of success or failure with an error message
 
 This example illustrates both the [ProcessReady()](#integration-server-sdk-cpp-ref-processready) call and callback function implementations.
 
-```
+```cpp
 // Set parameters and call ProcessReady
 std::string serverLog("serverOut.log");        // Example of a log file written by the game server
 std::vector<std::string> logPaths;
@@ -455,7 +455,7 @@ Returns a generic outcome consisting of success or failure with an error message
 ### Example
 <a name="integration-server-sdk-cpp-ref-processreadyasync-example"></a>
 
-```
+```cpp
 // Set parameters and call ProcessReady
 std::string serverLog("serverOut.log");        // This is an example of a log file written by the game server
 std::vector<std::string> logPaths;
@@ -524,7 +524,7 @@ Returns a generic outcome consisting of success or failure with an error message
 ### Example
 <a name="integration-server-sdk-cpp-ref-removeplayersession-example"></a>
 
-```
+```cpp
 Aws::GameLift::GenericOutcome disconnectOutcome =
     Aws::GameLift::Server::RemovePlayerSession(playerSessionId);
 ```
@@ -565,7 +565,7 @@ Returns a StartMatchBackfillOutcome object with the match backfill ticket or fai
 ### Example
 <a name="integration-server-sdk-cpp-ref-startmatchbackfill-example"></a>
 
-```
+```cpp
 // Build a backfill request
 std::vector<Player> players;
 Aws::GameLift::Server::Model::StartMatchBackfillRequest startBackfillRequest;
@@ -617,7 +617,7 @@ Returns a generic outcome consisting of success or failure with an error message
 ### Example
 <a name="integration-server-sdk-cpp-ref-stopmatchbackfill-example"></a>
 
-```
+```cpp
 // Set backfill stop request parameters
 
 Aws::GameLift::Server::Model::StopMatchBackfillRequest stopBackfillRequest;
@@ -688,7 +688,7 @@ Returns a generic outcome consisting of success or failure with an error message
 
 This example sets the current game session's join policy to accept all players.
 
-```
+```cpp
 Aws::GameLift::GenericOutcome outcome = Aws::GameLift::Server::UpdatePlayerSessionCreationPolicy(Aws::GameLift::Model::PlayerSessionCreationPolicy::ACCEPT_ALL);
 ```
 
@@ -719,7 +719,7 @@ Returns a generic outcome consisting of success or failure with an error message
 
 This example cleans up the memory allocated by initSDK after a game server process has ended.
 
-```
+```cpp
 if (Aws::GameLift::Server::ProcessEnding().IsSuccess()) {
   Aws::GameLift::Server::Destroy();
   exit(0);

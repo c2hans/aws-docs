@@ -41,7 +41,7 @@ For more information, see [AWS Trusted Advisor](https://docs.aws.amazon.com/awss
 **Tools for PowerShell V4**
 **Example 1: Returns the collection of Trusted Advisor checks. You must specify the Language parameter which can accept either "en" for English output or "ja" for Japanese output.**
 
-```
+```powershell
 Get-ASATrustedAdvisorCheck -Language "en"
 ```
 +  For API details, see [DescribeTrustedAdvisorChecks](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -49,7 +49,7 @@ Get-ASATrustedAdvisorCheck -Language "en"
 **Tools for PowerShell V5**
 **Example 1: Returns the collection of Trusted Advisor checks. You must specify the Language parameter which can accept either "en" for English output or "ja" for Japanese output.**
 
-```
+```powershell
 Get-ASATrustedAdvisorCheck -Language "en"
 ```
 +  For API details, see [DescribeTrustedAdvisorChecks](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

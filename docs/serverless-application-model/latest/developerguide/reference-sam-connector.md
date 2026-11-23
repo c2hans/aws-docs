@@ -105,7 +105,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Read`
 
-```
+```json
 {
   "Statement": [
     {
@@ -130,7 +130,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -156,7 +156,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -178,7 +178,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -200,7 +200,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Action": "lambda:InvokeFunction",
   "Principal": "events.amazonaws.com",
@@ -214,7 +214,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -240,7 +240,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -263,7 +263,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Read`
 
-```
+```json
 {
   "Statement": [
     {
@@ -293,7 +293,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 ```
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -322,7 +322,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Read`
 
-```
+```json
 {
   "Statement": [
     {
@@ -345,7 +345,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 ```
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -374,7 +374,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Read`
 
-```
+```json
 {
   "Statement": [
     {
@@ -392,7 +392,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 ```
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -417,7 +417,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -439,7 +439,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -466,7 +466,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 ```
 `Read`
 
-```
+```json
 {
   "Statement": [
     {
@@ -500,7 +500,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -522,7 +522,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Read`
 
-```
+```json
 {
   "Statement": [
     {
@@ -548,7 +548,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Action": "lambda:InvokeFunction",
   "Principal": "apigateway.amazonaws.com",
@@ -562,7 +562,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Action": "lambda:InvokeFunction",
   "Principal": "apigateway.amazonaws.com",
@@ -576,7 +576,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -602,7 +602,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Action": "lambda:InvokeFunction",
   "Principal": "sns.amazonaws.com",
@@ -616,7 +616,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -633,7 +633,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 ```
 `Read`
 
-```
+```json
 {
   "Statement": [
     {
@@ -656,7 +656,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Action": "lambda:InvokeFunction",
   "Principal": "s3.amazonaws.com",
@@ -671,7 +671,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -694,7 +694,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -716,7 +716,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -738,7 +738,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Read`
 
-```
+```json
 {
   "Statement": [
     {
@@ -768,7 +768,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 ```
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -797,7 +797,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Read`
 
-```
+```json
 {
   "Statement": [
     {
@@ -820,7 +820,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 ```
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -849,7 +849,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Read`
 
-```
+```json
 {
   "Statement": [
     {
@@ -875,7 +875,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 ```
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -916,7 +916,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -938,7 +938,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Read`
 
-```
+```json
 {
   "Statement": [
     {
@@ -961,7 +961,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 ```
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -990,7 +990,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -1014,7 +1014,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Statement": [
     {
@@ -1036,7 +1036,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 **Access categories**
 `Write`
 
-```
+```json
 {
   "Action": "lambda:InvokeFunction",
   "Principal": "appsync.amazonaws.com",

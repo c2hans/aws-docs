@@ -97,19 +97,19 @@ To associate a new VPC to this route table:
 
 1. Tag the new VPC with the **Associate-with** key and reference the new route table name in the value. See [Step 6: Add tags](step-6-add-tags.md) for detailed tagging instructions. For example:
 
-   ```
+   ```yaml
    Associate-with: <ExampleRouteTable>
    ```
 
 1. Tag the new VPC with the **Propagate-to** key and reference the route tables you want to propagate to from the previous step. For example:
 
-   ```
+   ```yaml
    Propagate-to: Infrastructure, Flat, Hybrid
    ```
 
 1. Tag one subnet in each Availability Zone. For example:
 
-   ```
+   ```yaml
    Attach-to-tgw: <leave blank>
    ```
 **Note**

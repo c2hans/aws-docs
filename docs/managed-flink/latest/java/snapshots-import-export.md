@@ -42,7 +42,7 @@ This procedure sets up the IAM role that Managed Service for Apache Flink assume
 
 The IAM principal that calls `ImportSnapshot` or `ExportSnapshot` needs a caller policy. The following caller policy allows an import and an export. It also allows `iam:PassRole` on both roles with the `iam:PassedToService` condition.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -105,7 +105,7 @@ The request needs `SnapshotName` and `ExportDestinationConfiguration`. In `Expor
 
 1. Save the following request as `export.json`.
 
-   ```
+   ```json
    {
        "SnapshotName": "MyApplication-snapshot-1",
        "ExportDestinationConfiguration": {
@@ -126,7 +126,7 @@ The request needs `SnapshotName` and `ExportDestinationConfiguration`. In `Expor
 
 1. Run the following AWS CLI command.
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 export-snapshot --cli-input-json file://export.json
    ```
 
@@ -148,7 +148,7 @@ After an export ends, you can export the enhanced snapshot to the same location 
 
    Run the following AWS CLI command.
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 describe-snapshot-operation \
        --snapshot-name MyApplication-snapshot-1 \
        --snapshot-operation-id s9T0u1V2w3X4
@@ -156,7 +156,7 @@ After an export ends, you can export the enhanced snapshot to the same location 
 
    The response is similar to the following:
 
-   ```
+   ```json
    {
        "SnapshotOperationInfoDetails": {
            "SnapshotOperationId": "s9T0u1V2w3X4",
@@ -210,7 +210,7 @@ The request needs `SnapshotName` and `ImportSourceConfiguration`. In `ImportSour
 
 1. Save the following request as `import.json`.
 
-   ```
+   ```json
    {
        "SnapshotName": "MyApplication-snapshot-imported",
        "ImportSourceConfiguration": {
@@ -234,7 +234,7 @@ The request needs `SnapshotName` and `ImportSourceConfiguration`. In `ImportSour
 
 1. Run the following AWS CLI command.
 
-   ```
+   ```bash
    PROMPT> aws kinesisanalyticsv2 import-snapshot --cli-input-json file://import.json
    ```
 

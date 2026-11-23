@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Starts the deletion of a cluster.
 
-```
+```sh
 pcluster delete-cluster [-h]
                  --cluster-name {{CLUSTER_NAME}}
                 [--debug]

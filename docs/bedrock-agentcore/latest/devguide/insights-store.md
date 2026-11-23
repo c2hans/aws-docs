@@ -11,7 +11,7 @@ Use:
 +  `GetAgentInsightStore` to read its current state.
 +  `UpdateAgentInsightStore` to enable or disable it or change its encryption configuration.
 
-In one `UpdateAgentInsightStore` request, update either `enablementStatus` or `encryptionConfiguration`, not both.
+An `UpdateAgentInsightStore` request can update `enablementStatus`, `encryptionConfiguration`, or both. To enable a disabled Store with a new key, set `enablementStatus` to `ENABLED` and include `encryptionConfiguration` in the same request. You can combine an encryption change only with `enablementStatus` set to `ENABLED`.
 
 ## Store states
 <a name="insights-store-status"></a>
@@ -32,7 +32,7 @@ Enable the Store before you run Insight Evaluators that should generate Agent In
 
 The following AWS CLI commands enable the Store and check the asynchronous operation:
 
-```
+```bash
 aws bedrock-agentcore-control update-agent-insight-store \
     --agent-insight-store-id default-insight-store \
     --enablement-status ENABLED \
@@ -47,7 +47,7 @@ Poll until the Store has `enablementStatus` set to `ENABLED` and `status` set to
 
 The following AgentCore CLI commands enable the Store and check its status:
 
-```
+```bash
 agentcore eval insight-store update --id default-insight-store \
     --enablement-status ENABLED --region us-west-2
 
@@ -61,7 +61,7 @@ Disabling removes the existing Agent Insights. After you re-enable the Store, it
 
 The following AWS CLI command disables the Store:
 
-```
+```bash
 aws bedrock-agentcore-control update-agent-insight-store \
     --agent-insight-store-id default-insight-store \
     --enablement-status DISABLED \
@@ -72,7 +72,7 @@ After a disable request, use `GetAgentInsightStore` to poll until the Store reac
 
 The following AgentCore CLI command disables the Store:
 
-```
+```bash
 agentcore eval insight-store update --id default-insight-store \
     --enablement-status DISABLED --region us-west-2
 ```
@@ -85,11 +85,12 @@ Stores initially use an AWS owned key. To use a customer managed AWS KMS key, pa
 **Important**
  AWS KMS charges apply when you use a customer managed key. For more information, see [AWS Key Management Service pricing](https://aws.amazon.com/kms/pricing/).
 
-The following AWS CLI command changes the Store to use a customer managed key:
+Use the following AWS CLI command to enable the Store and change it to use a customer managed AWS KMS key. Include both fields in the same request when you enable a disabled Store:
 
-```
+```bash
 aws bedrock-agentcore-control update-agent-insight-store \
     --agent-insight-store-id default-insight-store \
+    --enablement-status ENABLED \
     --encryption-configuration '{
         "mode": "CUSTOMER_MANAGED_KMS",
         "kmsKeyArn": "arn:aws:kms:us-west-2:111122223333:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
@@ -103,19 +104,20 @@ Keep the old and new keys enabled, and keep their required permissions in place,
 
 The following AWS CLI command returns the Store to an AWS owned key:
 
-```
+```bash
 aws bedrock-agentcore-control update-agent-insight-store \
     --agent-insight-store-id default-insight-store \
     --encryption-configuration '{"mode":"AWS_OWNED_KMS_KEY"}' \
     --region us-west-2
 ```
 
-The Store must be enabled before you change its encryption configuration. Moving away from a customer managed key also requires the old key to remain usable while AgentCore reads and re-encrypts the existing data.
+Don’t enable a disabled Store in a separate request before changing its encryption configuration. Enable the Store and select the new key in the same request. If you move away from a customer managed key, keep the old key enabled. Keep its required permissions in place until AgentCore finishes reading and re-encrypting the existing data.
 
 The following AgentCore CLI commands change the Store to a customer managed key, and then return it to an AWS owned key:
 
-```
+```bash
 agentcore eval insight-store update --id default-insight-store \
+    --enablement-status ENABLED \
     --encryption-mode CUSTOMER_MANAGED_KMS \
     --kms-key-arn arn:aws:kms:us-west-2:111122223333:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --region us-west-2

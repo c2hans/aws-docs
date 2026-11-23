@@ -14,7 +14,7 @@ There are several techniques you can use to start a new project to access AWS se
 + If you're new to .NET development on AWS or at least new to the AWS SDK for .NET, you can see complete examples in [Creating a simple application](quick-start.md). It gives you an introduction to the SDK.
 + You can start a basic project by using the .NET CLI. To see an example of this, open a command prompt or terminal, create a folder or directory and navigate to it, and then enter the following.
 
-  ```
+  ```sh
   dotnet new console --name [SOME-NAME]
   ```
 

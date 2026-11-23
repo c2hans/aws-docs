@@ -113,7 +113,7 @@ To run custom pre- and post-configuration deployment scripts, you must add the f
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -171,7 +171,7 @@ The following steps guide you through adding the required permissions for saving
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

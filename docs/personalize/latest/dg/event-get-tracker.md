@@ -16,7 +16,7 @@ You can create only one item interaction event tracker for a dataset group.
 ------
 #### [ Python ]
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')
@@ -31,7 +31,7 @@ print(response['trackingId'])
 
 The event tracker ARN and tracking ID display, for example:
 
-```
+```json
 {
     "eventTrackerArn": "arn:aws:personalize:us-west-2:acct-id:event-tracker/MovieClickTracker",
     "trackingId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
@@ -41,7 +41,7 @@ The event tracker ARN and tracking ID display, for example:
 ------
 #### [ AWS CLI ]
 
-```
+```cmd
 aws personalize create-event-tracker \
     --name MovieClickTracker \
     --dataset-group-arn arn:aws:personalize:us-west-2:{{acct-id}}:dataset-group/MovieClickGroup
@@ -49,7 +49,7 @@ aws personalize create-event-tracker \
 
 The event tracker ARN and tracking ID display, for example:
 
-```
+```json
 {
     "eventTrackerArn": "arn:aws:personalize:us-west-2:acct-id:event-tracker/MovieClickTracker",
     "trackingId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
@@ -59,7 +59,7 @@ The event tracker ARN and tracking ID display, for example:
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 // Get service clients module and commands using ES6 syntax.
 import { CreateEventTrackerCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";
@@ -90,7 +90,7 @@ run();
 ------
 #### [ SDK for Java 2.x ]
 
-```
+```java
 public static String createEventTracker(PersonalizeClient personalizeClient,
                                       String eventTrackerName,
                                       String datasetGroupArn) {

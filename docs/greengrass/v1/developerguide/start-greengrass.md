@@ -32,7 +32,7 @@ In this section, you configure, install, and run the AWS IoT Greengrass Core sof
 **Note**
 This command might not return the correct IP address for some devices. Consult the documentation for your device to retrieve your device IP address.
 
-      ```
+      ```bash
       hostname -I
       ```
 
@@ -104,13 +104,13 @@ You might be prompted for two passwords. If so, the first password is for the Ma
 
 1. On the Greengrass core device, open a terminal, and navigate to the folder that contains the AWS IoT Greengrass Core software and certificates. Replace {{path-to-transferred-files}} with the path where you transferred the files on the core device. For example, on a Raspberry Pi, run `cd /home/pi`.
 
-   ```
+   ```bash
    cd {{path-to-transferred-files}}
    ```
 
 1. Unpack the AWS IoT Greengrass Core software on the core device. Run the following command to unpack the software archive that you transferred to the core device. This command uses the `-C /` argument to create the `/greengrass` folder in the root folder of the core device.
 
-   ```
+   ```bash
    sudo tar -xzvf greengrass-{{OS-architecture}}-1.11.6.tar.gz -C /
    ```
 **Note**
@@ -118,7 +118,7 @@ You might be prompted for two passwords. If so, the first password is for the Ma
 
 1. Move the certificates and keys to the AWS IoT Greengrass Core software folder. Run the following commands to create a folder for certificates and move the certificates and keys to it. Replace {{path-to-transferred-files}} with the path where you transferred the files on the core device, and replace {{certificateId}} with the certificate ID in the file names. For example, on a Raspberry Pi, replace {{path-to-transferred-files}} with **/home/pi**
 
-   ```
+   ```bash
    sudo mv {{path-to-transferred-files}}/{{certificateId}}-certificate.pem.crt /greengrass/certs
    sudo mv {{path-to-transferred-files}}/{{certificateId}}-public.pem.key /greengrass/certs
    sudo mv {{path-to-transferred-files}}/{{certificateId}}-private.pem.key /greengrass/certs
@@ -145,13 +145,13 @@ You might be prompted for two passwords. If so, the first password is for the Ma
 
    1. Create the AWS IoT Greengrass Core software configuration file. For example, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       sudo nano /greengrass/config/config.json
       ```
 
       Replace the contents of the file with the following JSON document.
 
-      ```
+      ```json
       {
         "coreThing" : {
           "caPath": "{{AmazonRootCA1.pem}}",

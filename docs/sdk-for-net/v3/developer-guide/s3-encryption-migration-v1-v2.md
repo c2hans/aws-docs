@@ -39,7 +39,7 @@ The V1-transitional client enables your applications to decrypt both V1- and V2-
 
 1. Change the appropriate `using` statement from `Amazon.S3.Encryption` to `Amazon.Extensions.S3.Encryption`, as follows:
 
-   ```
+   ```csharp
    // using Amazon.S3.Encryption;
      using Amazon.Extensions.S3.Encryption;
    ```
@@ -80,7 +80,7 @@ After updating your existing clients to read the new encryption format, you can 
 
 **Pre-migration**
 
-```
+```csharp
 using System.Security.Cryptography;
 using Amazon.S3.Encryption;
 
@@ -94,7 +94,7 @@ var encryptionClient = new AmazonS3EncryptionClient(configuration, encryptionMat
 
 **Post-migration**
 
-```
+```csharp
 using System.Security.Cryptography;
 using Amazon.Extensions.S3.Encryption;
 using Amazon.Extensions.S3.Encryption.Primitives;
@@ -115,7 +115,7 @@ var encryptionClient = new AmazonS3EncryptionClientV2(configuration, encryptionM
 
 **Pre-migration**
 
-```
+```csharp
 using System.Security.Cryptography;
 using Amazon.S3.Encryption;
 
@@ -130,7 +130,7 @@ var encryptionClient = new AmazonS3EncryptionClient(configuration, encryptionMat
 
 **Post-migration**
 
-```
+```csharp
 using System.Security.Cryptography;
 using Amazon.Extensions.S3.Encryption;
 using Amazon.Extensions.S3.Encryption.Primitives;
@@ -154,7 +154,7 @@ When decrypting with AES-GCM, read the entire object to the end before you start
 
 **Pre-migration**
 
-```
+```csharp
 using System.Security.Cryptography;
 using Amazon.S3.Encryption;
 
@@ -169,7 +169,7 @@ var encryptionClient = new AmazonS3EncryptionClient(configuration, encryptionMat
 
 **Post-migration**
 
-```
+```csharp
 using System.Security.Cryptography;
 using Amazon.Extensions.S3.Encryption;
 using Amazon.Extensions.S3.Encryption.Primitives;
@@ -188,7 +188,7 @@ var encryptionClient = new AmazonS3EncryptionClientV2(configuration, encryptionM
 
 Eventually, all objects will have been encrypted or re-encrypted using a V2 client. *After this conversion is complete*, you can disable V1 compatibility in the V2 clients by setting the `SecurityProfile` property to `SecurityProfile.V2`, as shown in the following snippet.
 
-```
+```csharp
 //var configuration = new AmazonS3CryptoConfigurationV2(SecurityProfile.V2AndLegacy);
 var configuration = new AmazonS3CryptoConfigurationV2(SecurityProfile.V2);
 ```

@@ -19,7 +19,7 @@ For more information about the compile-time constant, see [STL and AWS Strings a
 
 1. Subclass `MemorySystemInterface`: `aws/core/utils/memory/MemorySystemInterface.h`.
 
-   ```
+   ```cpp
    class MyMemoryManager : public Aws::Utils::Memory::MemorySystemInterface
    {
    public:
@@ -35,7 +35,7 @@ You can change the type signature for `AllocateMemory` as needed.
 
 1. Use the `Aws::SDKOptions` struct to configure the use of the custom memory manager. Pass the instance of the struct into `Aws::InitAPI`. Before the application terminates, the SDK must be shut down by calling `Aws::ShutdownAPI` with the same instance.
 
-   ```
+   ```cpp
    int main(void)
    {
      MyMemoryManager sdkMemoryManager;
@@ -66,7 +66,7 @@ If the compile-time constant is disabled (off), all `Aws::*` types resolve to th
 
  **Example code from the `AWSAllocator.h` file in the SDK**
 
-```
+```cpp
 #ifdef USE_AWS_MEMORY_MANAGEMENT
 
 template< typename T >
@@ -86,7 +86,7 @@ In the example code, the `AwsAllocator` can be a custom allocator or a default a
 
  **Example code from the `AWSVector.h` file in the SDK**
 
-```
+```cpp
 template<typename T> using Vector = std::vector<T, Aws::Allocator<T>>;
 ```
 
@@ -120,7 +120,7 @@ Follow these rules in the SDK code:
 + Use `Aws::UniqueArray` for unique pointers to an array of objects. Use the `Aws::MakeUniqueArray` function to create the unique pointer.
 + Don’t directly use STL containers; use one of the `Aws::` typedefs or add a typedef for the container you want. For example:
 
-  ```
+  ```cpp
   Aws::Map<Aws::String, Aws::String> m_kvPairs;
   ```
 + Use `shared_ptr` for any external pointer passed into and managed by the SDK. You must initialize the shared pointer with a destruction policy that matches how the object was allocated. You can use a raw pointer if the SDK is not expected to clean up the pointer.

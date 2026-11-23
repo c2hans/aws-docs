@@ -180,7 +180,7 @@ The example output includes a `NextToken`, which indicates that there is more ou
 #### Sample Request
 <a name="API_Search_Example_1_Request"></a>
 
-```
+```http
 POST /Search HTTP/1.1
 Host: resource-explorer-2.us-east-1.amazonaws.com
 X-Amz-Date: 20221101T200059Z
@@ -195,7 +195,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=<Credential>, SignedHeaders=<Headers>
 #### Sample Response
 <a name="API_Search_Example_1_Response"></a>
 
-```
+```http
 HTTP/1.1 200 OK
 Date: Tue, 01 Nov 2022 20:00:59 GMT
 Content-Type: application/json
@@ -240,7 +240,7 @@ The results include only resources associated with Amazon EC2 because of the fil
 #### Sample Request
 <a name="API_Search_Example_2_Request"></a>
 
-```
+```http
 POST /Search HTTP/1.1
 Host: resource-explorer-2.us-east-1.amazonaws.com
 X-Amz-Date: 20221101T200059Z
@@ -258,7 +258,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=<Credential>, SignedHeaders=<Headers>
 #### Sample Response
 <a name="API_Search_Example_2_Response"></a>
 
-```
+```http
 HTTP/1.1 200 OK
 Date: Tue, 01 Nov 2022 20:00:59 GMT
 Content-Type: application/json

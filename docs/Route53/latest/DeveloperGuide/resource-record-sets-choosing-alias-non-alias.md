@@ -34,6 +34,7 @@ For information about creating records by using the Route 53 console, see [Crea
 + [Values specific for failover alias records](resource-record-sets-values-failover-alias.md)
 + [Values specific for geolocation alias records](resource-record-sets-values-geo-alias.md)
 + [Values specific for geoproximity alias records](resource-record-sets-values-geoprox-alias.md)
++ [Values specific for AZ-affinity alias records](resource-record-sets-values-azaffinity-alias.md)
 + [Values that are common for alias records for all routing policies](resource-record-sets-values-alias-common.md)
 
 ## Comparison of alias and CNAME records

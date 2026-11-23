@@ -144,7 +144,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-encryption.h
 ### AWS Glue Data Quality encryption context example
 <a name="data-quality-encryption-context-example"></a>
 
-```
+```json
 "encryptionContext": {
     "kms-arn": "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-123456SAMPLE",
     "branch-key-id": "111122223333+arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-123456SAMPLE",
@@ -170,7 +170,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-encryption.h
 
  **Decrypt**
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {
@@ -219,7 +219,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-encryption.h
 
  **GenerateDataKeyWithoutPlaintext**
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {
@@ -267,7 +267,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-encryption.h
 
  **ReEncyrpt**
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {

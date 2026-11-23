@@ -26,7 +26,7 @@ The following code example shows how to use `DisableBaseline`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     TRY.
         " Disable the baseline
         DATA(lo_output) = io_ctt->disablebaseline(
@@ -73,7 +73,7 @@ The following code example shows how to use `DisableControl`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     " Disable the control
     DATA(lo_output) = io_ctt->disablecontrol(
       iv_controlidentifier = iv_control_arn
@@ -114,7 +114,7 @@ The following code example shows how to use `EnableBaseline`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     " Prepare parameters for enabling baseline
     DATA lt_parameters TYPE /aws1/cl_cttenbdbaselineparam=>tt_enabledbaselineparameters.
 
@@ -171,7 +171,7 @@ The following code example shows how to use `EnableControl`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     " Enable the control
     DATA(lo_output) = io_ctt->enablecontrol(
       iv_controlidentifier = iv_control_arn
@@ -212,7 +212,7 @@ The following code example shows how to use `GetBaselineOperation`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     DATA(lo_output) = io_ctt->getbaselineoperation(
       iv_operationidentifier = iv_operation_id
     ).
@@ -229,7 +229,7 @@ The following code example shows how to use `GetControlOperation`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     DATA(lo_output) = io_ctt->getcontroloperation(
       iv_operationidentifier = iv_operation_id
     ).
@@ -246,7 +246,7 @@ The following code example shows how to use `ListBaselines`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     DATA lt_baselines TYPE /aws1/cl_cttbaselinesummary=>tt_baselines.
     DATA lv_nexttoken TYPE /aws1/cttstring.
 
@@ -277,7 +277,7 @@ The following code example shows how to use `ListEnabledBaselines`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     DATA lt_enabled_baselines TYPE /aws1/cl_cttenbdbaselinesumm=>tt_enabledbaselines.
     DATA lv_nexttoken TYPE /aws1/cttlstenbdbaselinesnex00.
 
@@ -308,7 +308,7 @@ The following code example shows how to use `ListEnabledControls`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     DATA lt_enabled_controls TYPE /aws1/cl_cttenabledcontrolsumm=>tt_enabledcontrols.
     DATA lv_nexttoken TYPE /aws1/cttstring.
 
@@ -340,7 +340,7 @@ The following code example shows how to use `ListLandingZones`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     DATA lt_landing_zones TYPE /aws1/cl_cttlandingzonesummary=>tt_landingzonesummaries.
     DATA lv_nexttoken TYPE /aws1/cttstring.
 
@@ -371,7 +371,7 @@ The following code example shows how to use `ResetEnabledBaseline`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ctt#code-examples).
 
-```
+```sap-abap
     " Reset the enabled baseline
     DATA(lo_output) = io_ctt->resetenabledbaseline(
       iv_enabledbaselineidentifier = iv_enabled_baseline_identifier

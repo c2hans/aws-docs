@@ -26,6 +26,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Chart showing the disaster recovery matrix](https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/disaster-recovery-matrix.png)
 
+*Figure 16: Disaster recovery matrix*
+
  **Common anti-patterns:**
 +  No defined recovery objectives.
 +  Selecting arbitrary recovery objectives.
@@ -122,6 +124,8 @@ For steps 2 and 3, you can use the [Implementation worksheet](#implementation-wo
  You can use this worksheet for implementation steps 2 and 3. You may adjust this worksheet to suit your specific needs, such as adding additional questions.
 
 <a name="worksheet"></a>![Worksheet](https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/worksheet.png)
+
+*Worksheet*
 
  **Level of effort for the Implementation Plan: **Low
 

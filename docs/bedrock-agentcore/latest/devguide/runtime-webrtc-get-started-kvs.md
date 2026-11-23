@@ -17,7 +17,7 @@ For the application code and IAM policy files, download the [WebRTC Voice Agent 
 
 In the sample directory, set the deployment values. Replace the example values with your own:
 
-```
+```bash
 export AWS_REGION=us-west-2
 export ACCOUNT_ID=111122223333
 export KVS_CHANNEL_NAME=voice-agent-minimal
@@ -28,7 +28,7 @@ export SECURITY_GROUP_ID=sg-0123456789abcdef0
 
 The `kvs-iam-policy.json` and `bedrock-iam-policy.json` files contain the `AWS_REGION`, `ACCOUNT_ID`, and `KVS_CHANNEL_NAME` placeholders. The deployment attaches these files without substituting any values, so replace the placeholders first:
 
-```
+```bash
 sed -i.bak \
   -e "s/AWS_REGION/$AWS_REGION/g" \
   -e "s/ACCOUNT_ID/$ACCOUNT_ID/g" \
@@ -38,7 +38,7 @@ sed -i.bak \
 
 Create an empty project and add a container-based Runtime:
 
-```
+```bash
 agentcore create --name WebRTCVoiceAgent --template empty
 
 cd WebRTCVoiceAgent
@@ -57,7 +57,7 @@ agentcore add runtime \
 
 Copy the sample application into the Runtime directory. When the CLI finds its `Dockerfile`, `agentcore dev`, `agentcore build`, or `agentcore deploy` changes the Runtime from a direct code build to a container build. The CLI reads the `--additional-policies` files from the Runtime code directory, so copy the policy files to `app/VoiceAgent/`:
 
-```
+```bash
 cp ../agent/Dockerfile ../agent/requirements.txt ../agent/*.py app/VoiceAgent/
 
 cp ../kvs-iam-policy.json ../bedrock-iam-policy.json app/VoiceAgent/
@@ -65,7 +65,7 @@ cp ../kvs-iam-policy.json ../bedrock-iam-policy.json app/VoiceAgent/
 
 Deploy the project, then get the Runtime ARN:
 
-```
+```bash
 agentcore deploy
 
 agentcore status --json

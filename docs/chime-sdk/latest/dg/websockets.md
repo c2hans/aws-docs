@@ -20,7 +20,7 @@ Follow these topics in the order listed to start using WebSockets:
 
 To start, define an IAM policy that gives you permission to establish a WebSocket connection. The following example policy gives an `AppInstanceUser` permission to establish a WebSocket connection.
 
-```
+```json
 "Version": "2012-10-17",
 "Statement": [
   {
@@ -156,7 +156,7 @@ GET /connect
 
 This example shows the response for one channel. You will receive responses for all 50 channels.
 
-```
+```json
 {
    "Headers": {
         "x-amz-chime-event-type": "CHANNEL_DETAILS",

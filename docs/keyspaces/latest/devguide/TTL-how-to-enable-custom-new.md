@@ -15,7 +15,7 @@ If a table is created with `ttl` custom settings enabled, you can't disable the 
 **Create a new table with custom TTL setting using CQL**
 +
 
-  ```
+  ```SQL
   CREATE TABLE {{my_keyspace.my_table}} (id int primary key) WITH CUSTOM_PROPERTIES={'ttl':{'status': 'enabled'}};
   ```
 

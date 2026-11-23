@@ -40,7 +40,7 @@ This section provides a sample identity policy and a resource-based policy that 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

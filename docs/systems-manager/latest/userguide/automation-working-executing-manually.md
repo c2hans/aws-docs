@@ -60,7 +60,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm start-automation-execution \
        --document-name {{runbook name}} \
        --mode Interactive \
@@ -70,7 +70,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm start-automation-execution ^
        --document-name {{runbook name}} ^
        --mode Interactive ^
@@ -80,7 +80,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Start-SSMAutomationExecution `
        -DocumentName {{runbook name}} `
        -Mode Interactive `
@@ -94,7 +94,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm start-automation-execution \
        --document-name "AWS-RestartEC2Instance" \
        --mode Interactive \
@@ -104,7 +104,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm start-automation-execution ^
        --document-name "AWS-RestartEC2Instance" ^
        --mode Interactive ^
@@ -114,7 +114,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Start-SSMAutomationExecution `
        -DocumentName AWS-RestartEC2Instance `
        -Mode Interactive
@@ -157,7 +157,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm send-automation-signal \
        --automation-execution-id {{ba9cd881-1b36-4d31-a698-0123456789ab}} \
        --signal-type StartStep \
@@ -167,7 +167,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm send-automation-signal ^
        --automation-execution-id {{ba9cd881-1b36-4d31-a698-0123456789ab}} ^
        --signal-type StartStep ^
@@ -177,7 +177,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Send-SSMAutomationSignal `
        -AutomationExecutionId {{ba9cd881-1b36-4d31-a698-0123456789ab}} `
        -SignalType StartStep
@@ -193,7 +193,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm describe-automation-step-executions \
        --automation-execution-id {{ba9cd881-1b36-4d31-a698-0123456789ab}}
    ```
@@ -201,7 +201,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm describe-automation-step-executions ^
        --automation-execution-id {{ba9cd881-1b36-4d31-a698-0123456789ab}}
    ```
@@ -209,7 +209,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Get-SSMAutomationStepExecution `
        -AutomationExecutionId {{ba9cd881-1b36-4d31-a698-0123456789ab}}
    ```
@@ -349,7 +349,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm stop-automation-execution \
        --automation-execution-id {{ba9cd881-1b36-4d31-a698-0123456789ab}} \
        --type Complete
@@ -358,7 +358,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm stop-automation-execution ^
        --automation-execution-id {{ba9cd881-1b36-4d31-a698-0123456789ab}} ^
        --type Complete
@@ -367,7 +367,7 @@ The following procedure describes how to use the AWS CLI (on Linux, macOS, or Wi
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Stop-SSMAutomationExecution `
        -AutomationExecutionId {{ba9cd881-1b36-4d31-a698-0123456789ab}} `
        -Type Complete

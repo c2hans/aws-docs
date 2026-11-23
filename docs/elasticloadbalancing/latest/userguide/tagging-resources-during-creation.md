@@ -15,7 +15,7 @@ The following example demonstrates a policy that allows users to create target g
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -51,7 +51,7 @@ Similarly, the following policy allows users to create a load balancer and apply
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

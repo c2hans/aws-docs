@@ -30,7 +30,7 @@ The following code example shows how to get started using Auto Scaling.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
 async fn list_groups(client: &Client) -> Result<(), Error> {
     let resp = client.describe_auto_scaling_groups().send().await?;
 
@@ -75,7 +75,7 @@ The following code example shows how to:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
 [package]
 name = "autoscaling-code-examples"
 version = "0.1.0"
@@ -982,7 +982,7 @@ The following code example shows how to use `CreateAutoScalingGroup`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
 async fn create_group(client: &Client, name: &str, id: &str) -> Result<(), Error> {
     client
         .create_auto_scaling_group()
@@ -1008,7 +1008,7 @@ The following code example shows how to use `DeleteAutoScalingGroup`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
 async fn delete_group(client: &Client, name: &str, force: bool) -> Result<(), Error> {
     client
         .delete_auto_scaling_group()
@@ -1032,7 +1032,7 @@ The following code example shows how to use `DescribeAutoScalingGroups`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
 async fn list_groups(client: &Client) -> Result<(), Error> {
     let resp = client.describe_auto_scaling_groups().send().await?;
 
@@ -1068,7 +1068,7 @@ The following code example shows how to use `DescribeAutoScalingInstances`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
     pub async fn list_instances(&self) -> Result<Vec<String>, ScenarioError> {
         // The direct way to list instances is by using DescribeAutoScalingGroup's instances property. However, this returns a Vec<Instance>, as opposed to a Vec<AutoScalingInstanceDetails>.
         // Ok(self.get_group().await?.instances.unwrap_or_default().map(|i| i.instance_id.clone().unwrap_or_default()).filter(|id| !id.is_empty()).collect())
@@ -1105,7 +1105,7 @@ The following code example shows how to use `DescribeScalingActivities`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
     pub async fn describe_scenario(&self) -> AutoScalingScenarioDescription {
         let group = self
             .autoscaling
@@ -1171,7 +1171,7 @@ The following code example shows how to use `DisableMetricsCollection`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
         // If this fails it's fine, just means there are extra cloudwatch metrics events for the scale-down.
         let _ = self
             .autoscaling
@@ -1190,7 +1190,7 @@ The following code example shows how to use `EnableMetricsCollection`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
         let enable_metrics_collection = autoscaling
             .enable_metrics_collection()
             .auto_scaling_group_name(auto_scaling_group_name.as_str())
@@ -1215,7 +1215,7 @@ The following code example shows how to use `SetDesiredCapacity`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
     pub async fn scale_desired_capacity(&self, capacity: i32) -> Result<(), ScenarioError> {
         // 7. SetDesiredCapacity: set desired capacity to 2.
         //   Wait for a second instance to launch.
@@ -1245,7 +1245,7 @@ The following code example shows how to use `TerminateInstanceInAutoScalingGroup
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
     pub async fn terminate_some_instance(&self) -> Result<(), ScenarioError> {
         // Retrieve a list of instances in the auto scaling group.
         let auto_scaling_group = self.get_group().await?;
@@ -1320,7 +1320,7 @@ The following code example shows how to use `UpdateAutoScalingGroup`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
 async fn update_group(client: &Client, name: &str, size: i32) -> Result<(), Error> {
     client
         .update_auto_scaling_group()

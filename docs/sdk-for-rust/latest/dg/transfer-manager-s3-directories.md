@@ -13,7 +13,7 @@ To create the transfer manager client the examples take as a parameter, see [Cre
 
 To upload a directory tree, call `upload_objects` with the source directory, the destination bucket, and a key prefix. By default the walker reads only the immediate contents of the source directory. To include subdirectories, pass a walker with `recursive(true)`.
 
-```
+```rust
 use aws_s3_transfer::io::walk::FsWalker;
 use aws_s3_transfer::Client;
 
@@ -45,7 +45,7 @@ By default, the walker:
 
 To upload a subset of the files in the directory, set a filter on the walker. The transfer manager calls your closure for each file and uploads only the files for which it returns `true`. The filter applies to files, so it can't stop the walker from descending into a subdirectory.
 
-```
+```rust
 use aws_s3_transfer::io::walk::FsWalker;
 use aws_s3_transfer::Client;
 
@@ -78,7 +78,7 @@ async fn upload_directory_filtered(client: &Client) -> Result<(), Box<dyn std::e
 
 To download the objects under a prefix, call `download_objects` with the bucket and a destination directory, and set the prefix on an `S3Walker`. The transfer manager writes each object at its full key under the destination directory. The walker's prefix only selects which objects to download. The transfer manager doesn't remove it from the local path.
 
-```
+```rust
 use aws_s3_transfer::io::walk::S3Walker;
 use aws_s3_transfer::Client;
 
@@ -105,7 +105,7 @@ The transfer manager creates the destination directory, and any missing parent d
 
 To download a subset of the objects under the prefix, set a filter on the walker. The transfer manager calls your closure for each listed object and downloads only the objects for which it returns `true`.
 
-```
+```rust
 use aws_s3_transfer::io::walk::S3Walker;
 use aws_s3_transfer::types::Object;
 use aws_s3_transfer::Client;
@@ -135,7 +135,7 @@ A directory transfer moves many objects, and an individual object can fail. The 
 
 Under the `Continue` policy, `join` returns the output even when some objects failed. Read `failed_transfers` for the details of each failure.
 
-```
+```rust
 use aws_s3_transfer::io::walk::FsWalker;
 use aws_s3_transfer::types::FailedTransferPolicy;
 use aws_s3_transfer::Client;
@@ -165,7 +165,7 @@ async fn upload_directory_continue(client: &Client) -> Result<(), Box<dyn std::e
 
 Under the default `Abort` policy, `join` returns an error instead of an output when an object fails. The error's `source` is the error of the first object that failed, the one that stopped the transfer. A local I/O failure, such as reading a source file or creating the destination directory, names the path in its message. Return or log that error as you would any other transfer error. For how to inspect which child objects failed, see [Handle transfer errors](transfer-manager-s3-control.md#transfer-manager-s3-control-errors).
 
-```
+```rust
 use aws_s3_transfer::io::walk::FsWalker;
 use aws_s3_transfer::Client;
 
@@ -189,7 +189,7 @@ async fn upload_directory_abort(client: &Client) -> Result<(), Box<dyn std::erro
 
 A directory transfer runs its object transfers concurrently. The `max_concurrent_uploads` and `max_concurrent_downloads` settings cap the number of object transfers the transfer manager runs at once. Both default to 512. This cap is a backstop that bounds working memory. It works within the overall concurrency limit of the client. It doesn't raise throughput beyond what the client allows.
 
-```
+```rust
 use aws_s3_transfer::io::walk::S3Walker;
 use aws_s3_transfer::Client;
 

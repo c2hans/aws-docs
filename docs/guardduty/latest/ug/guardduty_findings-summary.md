@@ -285,7 +285,7 @@ Indicators include a combination of network indicator values that explain why a 
 + {{AnyCompany}} is an Autonomous System (AS).
 +  `TUNNEL_VPN`, `IS_ANONYMOUS`, and `ALLOWS_FREE_ACCESS` are the network indicators.
 
-```
+```JSON
 ...{
     "key": "SUSPICIOUS_NETWORK",
     "values": [{

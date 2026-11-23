@@ -65,7 +65,7 @@ After you have created the role, you can limit the role to have permissions only
 **Note**
 In the following example, replace {{<YOUR\_AWS\_ACCOUNT\_ID>}} with your 12-digit AWS account ID (with no hyphens ‘‐’).
 
-```
+```json
     {
     "Statement": [
         {
@@ -84,7 +84,7 @@ In the following example, replace {{<YOUR\_AWS\_ACCOUNT\_ID>}} with your 12-digi
 
 If you want to provide access to AWS Quick and also the ability to create AWS Quick admins, authors (standard users), and readers, you can use the following policy example.
 
-```
+```json
     {
     "Statement": [
         {

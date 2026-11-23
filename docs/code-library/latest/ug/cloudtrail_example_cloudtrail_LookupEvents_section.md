@@ -14,7 +14,7 @@ The following code examples show how to use `LookupEvents`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudtrail#code-examples).
 
-```
+```cpp
 // Routine which looks up events captured by AWS CloudTrail.
 /*!
   \param clientConfig: Aws client configuration.
@@ -102,22 +102,22 @@ For more information, see [Viewing recent management events with the AWS CLI](ht
 **Tools for PowerShell V4**
 **Example 1: Returns all events that have occurred over the last seven days. The cmdlet by default automatically makes multiple calls to deliver all events, exiting when the service indicates no further data is available.**
 
-```
+```powershell
 Find-CTEvent
 ```
 **Example 2: Returns all events that have occurred over the last seven days specifying a region that is not the current shell default.**
 
-```
+```powershell
 Find-CTEvent -Region eu-central-1
 ```
 **Example 3: Returns all events that are associated with the RunInstances API call.**
 
-```
+```powershell
 Find-CTEvent -LookupAttribute @{ AttributeKey="EventName"; AttributeValue="RunInstances" }
 ```
 **Example 4: Returns the first 5 available events.**
 
-```
+```powershell
 Find-CTEvent -MaxResult 5
 ```
 +  For API details, see [LookupEvents](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -125,22 +125,22 @@ Find-CTEvent -MaxResult 5
 **Tools for PowerShell V5**
 **Example 1: Returns all events that have occurred over the last seven days. The cmdlet by default automatically makes multiple calls to deliver all events, exiting when the service indicates no further data is available.**
 
-```
+```powershell
 Find-CTEvent
 ```
 **Example 2: Returns all events that have occurred over the last seven days specifying a region that is not the current shell default.**
 
-```
+```powershell
 Find-CTEvent -Region eu-central-1
 ```
 **Example 3: Returns all events that are associated with the RunInstances API call.**
 
-```
+```powershell
 Find-CTEvent -LookupAttribute @{ AttributeKey="EventName"; AttributeValue="RunInstances" }
 ```
 **Example 4: Returns the first 5 available events.**
 
-```
+```powershell
 Find-CTEvent -MaxResult 5
 ```
 +  For API details, see [LookupEvents](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -151,7 +151,7 @@ Find-CTEvent -MaxResult 5
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudtrail#code-examples).
 
-```
+```ruby
 require 'aws-sdk-cloudtrail' # v2: require 'aws-sdk'
 
 # @param [Object] client

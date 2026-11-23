@@ -35,7 +35,7 @@ If *num\_string* is null, the function returns `NULL`.
 
 To convert string and base value pairs to integers, use the following examples.
 
-```
+```sql
 SELECT STRTOL('0xf',16);
 
 +--------+

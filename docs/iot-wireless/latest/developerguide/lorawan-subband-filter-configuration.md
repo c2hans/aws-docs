@@ -61,7 +61,7 @@ After you've added a gateway, in the [AWS IoT Core for LoRaWAN](https://console.
 
 You can use the [CreateWirelessGateway](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessGateway.html) API that you use to create a gateway to configure the subbands you want to use and enable the filtering capability. Using the `CreateWirelessGateway` API, you can specify the subbands and filters as part of the gateway configuration information that you provide using the `LoRaWAN` field. The following shows the request token that includes this information.
 
-```
+```JSON
 POST /wireless-gateways HTTP/1.1
 Content-type: application/json
 

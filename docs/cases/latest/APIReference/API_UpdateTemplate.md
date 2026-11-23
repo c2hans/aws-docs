@@ -170,7 +170,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of UpdateTemplate.
 
-```
+```json
 {
   "name": "updated_template_name",
   "tagPropagationConfigurations": [
@@ -184,7 +184,7 @@ This example illustrates one usage of UpdateTemplate.
 }
 ```
 
-```
+```json
 { }
 ```
 

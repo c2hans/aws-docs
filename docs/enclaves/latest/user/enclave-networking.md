@@ -227,7 +227,7 @@ First, set up the enclave. The application inside the enclave opens a vsock list
 
    Example output
 
-   ```
+   ```json
    [
      {
        "EnclaveName": "my-enclave",
@@ -265,7 +265,7 @@ The application on the parent instance initiates a connection to a specific encl
 
 1. Validate that the enclave is running by using the `nitro-cli describe-enclaves` command, and verify that the enclave is assigned CID `16` (the default for the first enclave). The output is similar to the following.
 
-   ```
+   ```json
    [
      {
        "EnclaveName": "my-enclave",
@@ -425,7 +425,7 @@ curl -k --header "Content-Type: application/json" \
 
 The output is similar to the following.
 
-```
+```json
 {
   "enclaveResult": "\"MySecretCipherText\\n\""
 }

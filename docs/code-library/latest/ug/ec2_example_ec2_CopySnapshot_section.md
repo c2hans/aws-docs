@@ -55,12 +55,12 @@ For more information, see [Copy an Amazon EBS snapshot](https://docs.aws.amazon.
 **Tools for PowerShell V4**
 **Example 1: This example copies the specified snapshot from the EU (Ireland) region to the US West (Oregon) region.**
 
-```
+```powershell
 Copy-EC2Snapshot -SourceRegion eu-west-1 -SourceSnapshotId snap-12345678 -Region us-west-2
 ```
 **Example 2: If you set a default region and omit the Region parameter, the default destination region is the default region.**
 
-```
+```powershell
 Set-DefaultAWSRegion us-west-2
 Copy-EC2Snapshot -SourceRegion eu-west-1 -SourceSnapshotId snap-12345678
 ```
@@ -69,12 +69,12 @@ Copy-EC2Snapshot -SourceRegion eu-west-1 -SourceSnapshotId snap-12345678
 **Tools for PowerShell V5**
 **Example 1: This example copies the specified snapshot from the EU (Ireland) region to the US West (Oregon) region.**
 
-```
+```powershell
 Copy-EC2Snapshot -SourceRegion eu-west-1 -SourceSnapshotId snap-12345678 -Region us-west-2
 ```
 **Example 2: If you set a default region and omit the Region parameter, the default destination region is the default region.**
 
-```
+```powershell
 Set-DefaultAWSRegion us-west-2
 Copy-EC2Snapshot -SourceRegion eu-west-1 -SourceSnapshotId snap-12345678
 ```

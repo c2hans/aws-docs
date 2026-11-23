@@ -47,7 +47,7 @@ Tests criteria for a custom data identifier.
 #### POST schema
 <a name="custom-data-identifiers-test-request-body-post-example"></a>
 
-```
+```json
 {
   "ignoreWords": [
     "string"
@@ -64,7 +64,7 @@ Tests criteria for a custom data identifier.
 #### POST schema
 <a name="custom-data-identifiers-test-request-body-post-example"></a>
 
-```
+```json
 {
   "ignoreWords": [
     "string"
@@ -84,7 +84,7 @@ Tests criteria for a custom data identifier.
 #### TestCustomDataIdentifierResponse schema
 <a name="custom-data-identifiers-test-response-body-testcustomdataidentifierresponse-example"></a>
 
-```
+```json
 {
   "matchCount": integer
 }
@@ -93,7 +93,7 @@ Tests criteria for a custom data identifier.
 #### ValidationException schema
 <a name="custom-data-identifiers-test-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -102,7 +102,7 @@ Tests criteria for a custom data identifier.
 #### ServiceQuotaExceededException schema
 <a name="custom-data-identifiers-test-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -111,7 +111,7 @@ Tests criteria for a custom data identifier.
 #### AccessDeniedException schema
 <a name="custom-data-identifiers-test-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -120,7 +120,7 @@ Tests criteria for a custom data identifier.
 #### ResourceNotFoundException schema
 <a name="custom-data-identifiers-test-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -129,7 +129,7 @@ Tests criteria for a custom data identifier.
 #### ConflictException schema
 <a name="custom-data-identifiers-test-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -138,7 +138,7 @@ Tests criteria for a custom data identifier.
 #### ThrottlingException schema
 <a name="custom-data-identifiers-test-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -147,7 +147,7 @@ Tests criteria for a custom data identifier.
 #### InternalServerException schema
 <a name="custom-data-identifiers-test-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

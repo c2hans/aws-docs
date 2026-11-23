@@ -165,7 +165,7 @@ For more information, see [Edit a pipeline in CodePipeline](https://docs.aws.ama
 **Tools for PowerShell V4**
 **Example 1: This example updates the specified existing pipeline with the specified settings.**
 
-```
+```powershell
 $pipeline = New-Object Amazon.CodePipeline.Model.PipelineDeclaration
 
 $sourceStageAction = New-Object Amazon.CodePipeline.Model.ActionDeclaration
@@ -221,7 +221,7 @@ Version       : 2
 **Tools for PowerShell V5**
 **Example 1: This example updates the specified existing pipeline with the specified settings.**
 
-```
+```powershell
 $pipeline = New-Object Amazon.CodePipeline.Model.PipelineDeclaration
 
 $sourceStageAction = New-Object Amazon.CodePipeline.Model.ActionDeclaration

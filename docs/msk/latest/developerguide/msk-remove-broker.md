@@ -134,7 +134,7 @@ aws kafka update-broker-count --cluster-arn {{ClusterArn}} --current-version {{C
 
 The output of this `update-broker-count` operation looks like the following JSON.
 
-```
+```json
 {
 "ClusterOperationInfo": {
 "ClientRequestId": "c0b7af47-8591-45b5-9c0c-909a1a2c99ea",

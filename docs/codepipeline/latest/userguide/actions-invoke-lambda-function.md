@@ -83,7 +83,7 @@ In this step, you create a Lambda function that makes an HTTP request and checks
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -380,7 +380,7 @@ To use this sample Lambda function, the policy for the Lambda execution role mus
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

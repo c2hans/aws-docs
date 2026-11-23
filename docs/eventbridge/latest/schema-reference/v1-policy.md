@@ -108,7 +108,7 @@ Delete the resource-based policy attached to the specified registry.
 #### PUT schema
 <a name="v1-policy-request-body-put-example"></a>
 
-```
+```json
 {
   "Policy": "string",
   "RevisionId": "string"
@@ -121,7 +121,7 @@ Delete the resource-based policy attached to the specified registry.
 #### GetResourcePolicyOutput schema
 <a name="v1-policy-response-body-getresourcepolicyoutput-example"></a>
 
-```
+```json
 {
   "Policy": "string",
   "RevisionId": "string"
@@ -131,7 +131,7 @@ Delete the resource-based policy attached to the specified registry.
 #### PutResourcePolicyOutput schema
 <a name="v1-policy-response-body-putresourcepolicyoutput-example"></a>
 
-```
+```json
 {
   "Policy": "string",
   "RevisionId": "string"
@@ -141,7 +141,7 @@ Delete the resource-based policy attached to the specified registry.
 #### ErrorOutput schema
 <a name="v1-policy-response-body-erroroutput-example"></a>
 
-```
+```json
 {
   "Message": "string",
   "Code": "string"

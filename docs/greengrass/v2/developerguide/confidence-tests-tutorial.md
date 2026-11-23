@@ -125,7 +125,7 @@ When you run a confidence test, the GTF automates the lifecycle of the test alon
 ------
 #### [ Linux or Unix ]
 
-     ```
+     ```bash
      export AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
      export AWS_SECRET_ACCESS_KEY={{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
      ```
@@ -133,7 +133,7 @@ When you run a confidence test, the GTF automates the lifecycle of the test alon
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-     ```
+     ```cmd
      set AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
      set AWS_SECRET_ACCESS_KEY={{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
      ```
@@ -141,7 +141,7 @@ When you run a confidence test, the GTF automates the lifecycle of the test alon
 ------
 #### [ PowerShell ]
 
-     ```
+     ```ps
      $env:AWS_ACCESS_KEY_ID="{{AKIAIOSFODNN7EXAMPLE}}"
      $env:AWS_SECRET_ACCESS_KEY="{{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}"
      ```

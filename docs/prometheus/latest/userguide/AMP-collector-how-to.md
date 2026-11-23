@@ -511,7 +511,7 @@ Limitations within these sections are listed after the sample configuration file
 
 The following is a sample YAML configuration file with a 30 second scrape interval. This sample includes support for the kube API server metrics, as well as kube-controller-manager and kube-scheduler metrics. For more information, see [Fetch control plane raw metrics in Prometheus format](https://docs.aws.amazon.com/eks/latest/userguide/view-raw-metrics.html#scheduler-controller-metrics) in the *Amazon EKS User Guide*.
 
-```
+```yaml
 global:
    scrape_interval: 30s
    external_labels:

@@ -42,7 +42,7 @@ If *index* is out of range, then an error is returned. Valid values for the inde
 
 The following SQL removes the last point in a linestring.
 
-```
+```sql
 WITH tmp(g) AS (SELECT ST_GeomFromText('LINESTRING(0 0,10 0,10 10,5 5,0 5)',4326))
 SELECT ST_AsEWKT(ST_RemovePoint(g, ST_NumPoints(g) - 1)) FROM tmp;
 ```

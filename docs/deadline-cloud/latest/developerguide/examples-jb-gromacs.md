@@ -12,7 +12,7 @@ The bundle includes sample data for hen egg-white lysozyme (PDB: 1AKI) and MDP p
 
 From the `job_bundles` directory, submit the job:
 
-```
+```bash
 deadline bundle submit gromacs_md \
   -p "InputPdb=sample_inputs/protein.pdb" \
   -p "MdpMinimization=sample_inputs/mdp/minimization.mdp" \
@@ -24,7 +24,7 @@ deadline bundle submit gromacs_md \
 
 To run 10 independent replicas in parallel:
 
-```
+```bash
 deadline bundle submit gromacs_md \
   -p "InputPdb=protein.pdb" \
   -p "MaxReplicaIndex=9" \

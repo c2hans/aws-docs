@@ -22,7 +22,7 @@ The following policy grants read access to a user for IAM Identity Center and re
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -67,7 +67,7 @@ The following policy grants full access to a user for IAM Identity Center and re
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

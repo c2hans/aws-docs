@@ -66,7 +66,7 @@ Launch the Amazon EMR cluster with this security configuration and the software 
 
    **For Hive/Parquet tables:**
 
-   ```
+   ```python
    %%configure -f
    {
        "conf": {
@@ -82,7 +82,7 @@ Launch the Amazon EMR cluster with this security configuration and the software 
 
    **For Iceberg tables:**
 
-   ```
+   ```python
    %%configure -f
    {
        "conf": {
@@ -103,7 +103,7 @@ You must run the `%%configure` cell before executing any other Spark operations.
 
 1. In the next cell, query your table:
 
-   ```
+   ```python
    spark.sql("select * from {{database_name}}.{{table_name}}").show()
    ```
 

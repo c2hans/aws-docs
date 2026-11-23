@@ -138,7 +138,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-management-account-delete-stacksets-stack-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "Name": "test-stackset"
 }
@@ -147,7 +147,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-managed-management-account-delete-stacksets-stack-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "Name": "test-stackset",
   "Region": "us-east-1",

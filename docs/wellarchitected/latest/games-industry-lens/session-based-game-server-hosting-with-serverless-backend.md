@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 
 ![Amazon GameLift managed hosting for session-based games](https://docs.aws.amazon.com/wellarchitected/latest/games-industry-lens/images/image2.png)
 
+*Amazon GameLift managed hosting for session-based games*
+
  The diagram describes the process of getting players into games running on GameLift managed game hosting. It includes the following steps:
 
 1.  The game client requests an Amazon Cognito identity from an Amazon Cognito identity pool. This can optionally be connected to external identity providers.

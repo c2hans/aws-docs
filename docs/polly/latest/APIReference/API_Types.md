@@ -12,10 +12,13 @@ The order of each element in a data type structure is not guaranteed. Applicatio
 The following data types are supported:
 +  [AudioEvent](API_AudioEvent.md)
 +  [CloseStreamEvent](API_CloseStreamEvent.md)
++  [CustomerManagedEncryption](API_CustomerManagedEncryption.md)
 +  [FlushStreamConfiguration](API_FlushStreamConfiguration.md)
 +  [Lexicon](API_Lexicon.md)
 +  [LexiconAttributes](API_LexiconAttributes.md)
 +  [LexiconDescription](API_LexiconDescription.md)
++  [Recording](API_Recording.md)
++  [RecordingData](API_RecordingData.md)
 +  [StartSpeechSynthesisStreamActionStream](API_StartSpeechSynthesisStreamActionStream.md)
 +  [StartSpeechSynthesisStreamEventStream](API_StartSpeechSynthesisStreamEventStream.md)
 +  [StreamClosedEvent](API_StreamClosedEvent.md)
@@ -24,3 +27,4 @@ The following data types are supported:
 +  [ThrottlingReason](API_ThrottlingReason.md)
 +  [ValidationExceptionField](API_ValidationExceptionField.md)
 +  [Voice](API_Voice.md)
++  [VoiceCreationData](API_VoiceCreationData.md)

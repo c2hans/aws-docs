@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="listresourcedefinitions-get-cli"></a>
 
-```
+```bash
 aws greengrass list-resource-definitions \
   [--max-results <value>] \
   [--next-token <value>]  \
@@ -25,7 +25,7 @@ aws greengrass list-resource-definitions \
 
 cli-input-json format:
 
-```
+```json
 {
 "MaxResults": "integer",
 "NextToken": "string"
@@ -52,7 +52,7 @@ type: string
 The IDs of all the Greengrass resource definitions in this account.
  [ ListDefinitionsResponse](definitions-listdefinitionsresponse.md)
 
-```
+```json
 {
 "Definitions": [
   {

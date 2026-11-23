@@ -74,7 +74,7 @@ To enable IAM Identity Center on an existing environment using the Amazon MWAA c
 
 To enable IAM Identity Center using the AWS CLI:
 
-```
+```shell
 aws mwaa update-environment \
   --name {{my-env}} \
   --identity-center-configuration '{
@@ -101,7 +101,7 @@ Every Permission Set policy must include the following `identitystore` statement
 {{idc-account-id}} – The ID of the AWS account that contains your IAM Identity Center instance.
 {{d-1234567890}} – Your Identity Store ID. This is the same Identity Store ID that you configure on the environment.
 
-```
+```json
 {
   "Sid": "AllowIdentityStoreLookup",
   "Effect": "Allow",
@@ -127,7 +127,7 @@ If your IAM Identity Center identity store is encrypted with a customer managed 
 To check whether your identity store uses a customer managed AWS KMS key, open the IAM Identity Center console, choose **Settings**, then **Management**. If the console shows a AWS KMS key ARN on **Key for encrypting IAM Identity Center data at rest**, complete both of the following steps. If the default AWS managed key is shown, you do not need to make any additional changes.
 **Step 1: Add AWS KMS permissions to every Permission Set inline policy.** The Permission Set role makes direct `identitystore` API calls using your federated credentials. The following IAM inline policy statement grants the Permission Set role permission to decrypt data using your AWS KMS key. Add it to the inline policy, replacing the placeholder values with your AWS KMS key ARN:
 
-```
+```json
 {
   "Sid": "AllowKMSDecryptForIDC",
   "Effect": "Allow",
@@ -141,7 +141,7 @@ To check whether your identity store uses a customer managed AWS KMS key, open t
 Where: {{key-region}} is the AWS Region of the AWS KMS key, {{idc-account-id}} is the account ID of the IAM Identity Center organization management account, and {{key-id}} is the ID of your customer managed AWS KMS key. The AWS KMS key ARN is shown in the IAM Identity Center console under **Settings**, then **Management**. The key lives in the IAM Identity Center organization management account. This may be a different account from your Amazon MWAA environment account.
 **Step 2: Add the Permission Set role to the AWS KMS key policy.** Because the key lives in the IAM Identity Center organization management account, add an explicit cross-account entry to the AWS KMS key policy. The following AWS KMS key policy statement grants the Permission Set role in your Amazon MWAA environment account permission to use the key. Replace {{account-id}} with your Amazon MWAA environment account ID, {{sso-region}} with the AWS Region of the Permission Set role, {{permission-set-name-suffix}} with the suffix of the Permission Set role name, {{key-region}} with the AWS Region of the AWS KMS key, {{idc-account-id}} with the IAM Identity Center organization management account ID, and {{key-id}} with the AWS KMS key ID. To find the role name suffix, open the IAM console in your Amazon MWAA environment account after the Permission Set is provisioned and search for `AWSReservedSSO_{{PermissionSetName}}`:
 
-```
+```json
 {
   "Sid": "AllowMWAAPermissionSetRole",
   "Effect": "Allow",
@@ -179,7 +179,7 @@ The following examples show common Permission Set policy patterns. For additiona
 
 **Example Grant full Apache Airflow access**  <a name="iic-policy-example-full-access"></a>
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -212,7 +212,7 @@ The following examples show common Permission Set policy patterns. For additiona
 **Example Restrict to DAG read access (list and view)**  <a name="iic-policy-example-dag-read"></a>
 Always include `LIST` alongside `GET`. The DAG list page uses `ResourceAction=LIST`; a policy that grants only `GET` shows zero DAGs.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -251,7 +251,7 @@ Always include `LIST` alongside `GET`. The DAG list page uses `ResourceAction=LI
 **Example Restrict to a specific DAG**  <a name="iic-policy-example-specific-dag"></a>
 Use two separate statements. The first allows `GET` and `LIST` without a `ResourceId`. This is required for the DAG list page (`LIST`) and for home page dashboard widgets that query run counts and metrics across all DAGs (`GET` with no DAG ID). The second allows all actions on the specific DAG identified by `ResourceId`. Do not combine `ResourceId` with `LIST` in the same `StringEquals` block, because `LIST` calls do not supply a `ResourceId` and the condition never matches.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -302,7 +302,7 @@ Use two separate statements. The first allows `GET` and `LIST` without a `Resour
 **Example Restrict by team using `airflow:TeamNames`**  <a name="iic-policy-example-team-names"></a>
 Use `ForAnyValue:StringEquals` (the multi-value operator) for `airflow:TeamNames`. This condition matches if the user belongs to *any* of the listed groups (OR logic). Using the single-value `StringEquals` operator causes the condition to never match when a user belongs to more than one team.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -357,7 +357,7 @@ There are two ways to access the Apache Airflow UI when IAM Identity Center inte
 Amazon MWAA console link
 Choose **Open Airflow UI** on the environment page in the Amazon MWAA console. This path requires your IAM Identity Center Permission Set to include the following IAM statements, which grant access to the Amazon MWAA console. Replace the Region, account ID, and environment name in the environment ARN with your own values:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

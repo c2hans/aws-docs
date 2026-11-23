@@ -35,7 +35,7 @@ If *index* is not valid, then an error is returned.
 
 The following SQL inputs a VARCHAR that represents the index of an H3 cell, and returns an INTEGER that represents the resolution of the input H3 cell.
 
-```
+```sql
 SELECT H3_Resolution('8025fffffffffff');
 ```
 
@@ -47,7 +47,7 @@ SELECT H3_Resolution('8025fffffffffff');
 
 The following SQL inputs a BIGINT that represents the index of an H3 cell, and returns an INTEGER that represents the resolution of the input H3 cell.
 
-```
+```sql
 SELECT H3_Resolution(614553222213795839);
 ```
 

@@ -19,7 +19,7 @@ To allow your agents to sign-in to both AWS Regions and process contacts from ei
 
 The following `associate-traffic-distribution-group-user` example command shows how agents can be associated to and used across multiple AWS Regions.
 
-```
+```json
 aws connect associate-traffic-distribution-group-user
   --traffic-distribution-group-id {{UUID}}
   --user-id {{UUID}}
@@ -28,7 +28,7 @@ aws connect associate-traffic-distribution-group-user
 
 The following [AssociateTrafficDistributionGroupUser](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateTrafficDistributionGroupUser.html) example associates an agent with a traffic distribution group.
 
-```
+```json
 PUT /traffic-distribution-group/{{trafficDistributionGroupId}}/user HTTP/1.1
 Content-type: application/json
 
@@ -39,7 +39,7 @@ Content-type: application/json
 
 The following `disassociate-traffic-distribution-group-user` example command disassociates an agent from a traffic distribution group.
 
-```
+```json
 aws connect disassociate-traffic-distribution-group-user
  --instance-id {{your instance ID}}
  --traffic-distribution-group-id {{UUID}}
@@ -48,7 +48,7 @@ aws connect disassociate-traffic-distribution-group-user
 
 The following [DisassociateTrafficDistributionGroupUser](https://docs.aws.amazon.com/connect/latest/APIReference/API_DisassociateTrafficDistributionGroupUser.html) example disassociates an agent from a traffic distribution group.
 
-```
+```json
 DELETE /traffic-distribution-group/{{trafficDistributionGroupId}}/user/{{UserId}} HTTP/1.1
 ```
 

@@ -11,7 +11,7 @@ After you create an *Item interactions dataset* and an [event tracker](event-get
 ------
 #### [ Python ]
 
-```
+```py
 import boto3
 import json
 
@@ -44,7 +44,7 @@ personalize_events.put_events(
 ------
 #### [ AWS CLI ]
 
-```
+```json
 aws personalize-events put-events \
     --tracking-id {{tracking_id}} \
     --user-id user555 \
@@ -65,7 +65,7 @@ aws personalize-events put-events \
 ------
 #### [ SDK for Java 2.x ]
 
-```
+```java
 public static void putMultipleEvents(PersonalizeEventsClient personalizeEventsClient,
                             String trackingId,
                             String sessionId,

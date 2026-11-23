@@ -8,7 +8,7 @@ The following Java sample shows how to use the [GetCertificateAuthorityCsr](http
 
 This operation retrieves the certificate signing request (CSR) for your private certificate authority (CA). The CSR is created when you call the [CreateCertificateAuthority](https://docs.aws.amazon.com/privateca/latest/APIReference/API_CreateCertificateAuthority.html) operation. Take the CSR to your on-premises X.509 infrastructure and sign it using your root or a subordinate CA. Then import the signed certificate back into ACM PCA by calling the [ImportCertificateAuthorityCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_ImportCertificateAuthorityCertificate.html) operation. The CSR is returned as a base64-encoded string in PEM format.
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.auth.AWSCredentials;

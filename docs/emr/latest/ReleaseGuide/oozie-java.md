@@ -8,7 +8,7 @@ Oozie runs multiple Java Virtual Machine (JVM) processes. This page explains how
 + **Oozie Server**: Set `JAVA_HOME` in the `oozie-env` classification to update the Java version for the `EmbeddedOozieServer`.
 + **Oozie Launcher AM**: *Oozie Launcher AM* is a single-mapper MR job that invokes the appropriate application client libraries such as Hadoop and Hive. Unless otherwise configured, the runtime versions for Oozie Launcher AM are the same as the Java runtimes for Hadoop in the EMR cluster. To configure the Java runtime for Oozie Launcher AM, set the following property in the `workflow.xml` for the job:
 
-  ```
+  ```xml
   <property>
        <name>mapred.child.env</name>
        <value>JAVA_HOME=/path/to/JAVA_HOME</value>

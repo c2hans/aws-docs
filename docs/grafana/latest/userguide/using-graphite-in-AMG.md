@@ -141,13 +141,13 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/using-graphite-
 
  Query
 
-```
+```bash
 apps.$app.servers.$__searchFilter
 ```
 
  TagValues
 
-```
+```bash
 tag_values(server, server=~${__searchFilter:regex})
 ```
 

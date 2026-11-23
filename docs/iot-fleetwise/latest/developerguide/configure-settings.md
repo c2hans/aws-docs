@@ -53,7 +53,7 @@ To invoke the `RegisterAccount` API successfully, you need to include `iam:Creat
 
 The following example shows a sample policy document for setting up permissions to `RegisterAccount` and `GetRegisterAccountStatus`:
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -74,7 +74,7 @@ The following example shows a sample policy document for setting up permissions 
 
 1. To configure settings, run the following command.
 
-   ```
+   ```bash
    aws iotfleetwise register-account
    ```
 
@@ -82,12 +82,12 @@ The following example shows a sample policy document for setting up permissions 
 **Note**
 The service-linked role is only used to publish AWS IoT FleetWise metrics to CloudWatch. For more information, see [Using service-linked roles for AWS IoT FleetWise](using-service-linked-roles.md).
 
-   ```
+   ```bash
    aws iotfleetwise get-register-account-status
    ```
 **Example response**
 
-   ```
+   ```bash
    {
        "accountStatus": "REGISTRATION_SUCCESS",
        "creationTime": "2022-07-28T11:31:22.603000-07:00",

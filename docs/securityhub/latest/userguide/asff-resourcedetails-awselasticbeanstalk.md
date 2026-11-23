@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```json
 "AwsElasticBeanstalkEnvironment": {
     "ApplicationName": "MyApplication",
     "Cname": "myexampleapp-env.devo-2.elasticbeanstalk-internal.com",

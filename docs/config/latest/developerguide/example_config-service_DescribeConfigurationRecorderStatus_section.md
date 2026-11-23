@@ -44,7 +44,7 @@ For more information, see [Working with the configuration recorder](https://docs
 **Tools for PowerShell V4**
 **Example 1: This sample returns status of the configuration recorders. **
 
-```
+```powershell
 Get-CFGConfigurationRecorderStatus
 ```
 **Output:**
@@ -64,7 +64,7 @@ Recording            : True
 **Tools for PowerShell V5**
 **Example 1: This sample returns status of the configuration recorders. **
 
-```
+```powershell
 Get-CFGConfigurationRecorderStatus
 ```
 **Output:**

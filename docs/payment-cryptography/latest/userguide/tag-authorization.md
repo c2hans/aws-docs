@@ -28,7 +28,7 @@ For example, consider the following IAM policy. It allows the principals to call
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -58,7 +58,7 @@ The following example IAM policy allows the principals to use any key in the acc
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -45,13 +45,13 @@ In this section, you create a token exchange IAM role and an AWS IoT role alias 
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano device-role-trust-policy.json
       ```
 
       Copy the following JSON into the file.
 
-      ```
+      ```json
       {
         "Version": "2012-10-17",
         "Statement": [
@@ -69,13 +69,13 @@ In this section, you create a token exchange IAM role and an AWS IoT role alias 
    1. Create the token exchange role with the trust policy document.
       + Replace {{GreengrassV2TokenExchangeRole}} with the name of the IAM role to create.
 
-      ```
+      ```bash
       aws iam create-role --role-name {{GreengrassV2TokenExchangeRole}} --assume-role-policy-document file://device-role-trust-policy.json
       ```
 
       The response looks similar to the following example, if the request succeeds.
 
-      ```
+      ```json
       {
         "Role": {
           "Path": "/",
@@ -102,13 +102,13 @@ In this section, you create a token exchange IAM role and an AWS IoT role alias 
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano device-role-access-policy.json
       ```
 
       Copy the following JSON into the file.
 
-      ```
+      ```json
       {
         "Version": "2012-10-17",
         "Statement": [
@@ -133,13 +133,13 @@ If you don't yet have an S3 bucket for component artifacts, you can add these pe
    1. Create the IAM policy from the policy document.
       + Replace {{GreengrassV2TokenExchangeRoleAccess}} with the name of the IAM policy to create.
 
-      ```
+      ```bash
       aws iam create-policy --policy-name {{GreengrassV2TokenExchangeRoleAccess}} --policy-document file://device-role-access-policy.json
       ```
 
       The response looks similar to the following example, if the request succeeds.
 
-      ```
+      ```json
       {
         "Policy": {
           "PolicyName": "GreengrassV2TokenExchangeRoleAccess",
@@ -160,7 +160,7 @@ If you don't yet have an S3 bucket for component artifacts, you can add these pe
       + Replace {{GreengrassV2TokenExchangeRole}} with the name of the IAM role.
       + Replace the policy ARN with the ARN of the IAM policy that you created in the previous step.
 
-      ```
+      ```bash
       aws iam attach-role-policy --role-name {{GreengrassV2TokenExchangeRole}} --policy-arn {{arn:aws:iam::123456789012:policy/GreengrassV2TokenExchangeRoleAccess}}
       ```
 
@@ -170,13 +170,13 @@ If you don't yet have an S3 bucket for component artifacts, you can add these pe
    + Replace {{GreengrassCoreTokenExchangeRoleAlias}} with the name of the role alias to create.
    + Replace the role ARN with the ARN of the IAM role that you created in the previous step.
 
-   ```
+   ```bash
    aws iot create-role-alias --role-alias {{GreengrassCoreTokenExchangeRoleAlias}} --role-arn {{arn:aws:iam::123456789012:role/GreengrassV2TokenExchangeRole}}
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "roleAlias": "GreengrassCoreTokenExchangeRoleAlias",
      "roleAliasArn": "arn:aws:iot:us-west-2:123456789012:rolealias/GreengrassCoreTokenExchangeRoleAlias"
@@ -203,7 +203,7 @@ In this section, you create an AWS IoT policy that AWS IoT attaches to all devic
 
      <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-     ```
+     ```bash
      nano greengrass-v2-iot-policy.json
      ```
 
@@ -215,7 +215,7 @@ In this section, you create an AWS IoT policy that AWS IoT attaches to all devic
 
 ****
 
-     ```
+     ```json
      {
        "Version":"2012-10-17",
        "Statement": [
@@ -246,7 +246,7 @@ In this section, you create an AWS IoT policy that AWS IoT attaches to all devic
   1. Create an AWS IoT policy from the policy document.
      + Replace {{GreengrassV2IoTThingPolicy}} with the name of the policy to create.
 
-     ```
+     ```bash
      aws iot create-policy --policy-name {{GreengrassV2IoTThingPolicy}} --policy-document file://greengrass-v2-iot-policy.json
      ```
 
@@ -257,7 +257,7 @@ In this section, you create an AWS IoT policy that AWS IoT attaches to all devic
 
 ****
 
-     ```
+     ```json
      {
        "policyName": "GreengrassV2IoTThingPolicy",
        "policyArn": "arn:aws:iot:us-west-2:123456789012:policy/GreengrassV2IoTThingPolicy",
@@ -314,7 +314,7 @@ In this section, you create an IAM role that allows AWS IoT to provision resourc
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano aws-iot-trust-policy.json
       ```
 
@@ -325,7 +325,7 @@ In this section, you create an IAM role that allows AWS IoT to provision resourc
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -356,7 +356,7 @@ In this section, you create an IAM role that allows AWS IoT to provision resourc
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -382,7 +382,7 @@ In this section, you create an IAM role that allows AWS IoT to provision resourc
       + Replace {{GreengrassFleetProvisioningRole}} with the name of the IAM role.
       + If you created a custom policy in the previous step, replace the policy ARN with the ARN of the IAM policy to use.
 
-      ```
+      ```bash
       aws iam attach-role-policy --role-name {{GreengrassFleetProvisioningRole}} --policy-arn {{arn:aws:iam::aws:policy/service-role/AWSIoTThingsRegistration}}
       ```
 
@@ -396,7 +396,7 @@ In this section, you create an IAM role that allows AWS IoT to provision resourc
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano greengrass-fleet-provisioning-template.json
       ```
 
@@ -407,7 +407,7 @@ In this section, you create an IAM role that allows AWS IoT to provision resourc
 
       For more information, see [Provisioning templates](https://docs.aws.amazon.com/iot/latest/developerguide/provision-template.html) in the *AWS IoT Core Developer Guide*.
 
-      ```
+      ```json
       {
         "Parameters": {
           "ThingName": {
@@ -469,7 +469,7 @@ In this section, you create an IAM role that allows AWS IoT to provision resourc
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       aws iot create-provisioning-template \
         --template-name {{GreengrassFleetProvisioningTemplate}} \
         --description "A provisioning template for Greengrass core devices." \
@@ -481,7 +481,7 @@ In this section, you create an IAM role that allows AWS IoT to provision resourc
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-      ```
+      ```cmd
       aws iot create-provisioning-template ^
         --template-name {{GreengrassFleetProvisioningTemplate}} ^
         --description "A provisioning template for Greengrass core devices." ^
@@ -493,7 +493,7 @@ In this section, you create an IAM role that allows AWS IoT to provision resourc
 ------
 #### [ PowerShell ]
 
-      ```
+      ```cmd
       aws iot create-provisioning-template `
         --template-name {{GreengrassFleetProvisioningTemplate}} `
         --description "A provisioning template for Greengrass core devices." `
@@ -512,7 +512,7 @@ If you created a pre-provisioning hook, specify the ARN of the pre-provisioning 
 
       The response looks similar to the following example, if the request succeeds.
 
-      ```
+      ```json
       {
           "templateArn": "arn:aws:iot:us-west-2:123456789012:provisioningtemplate/GreengrassFleetProvisioningTemplate",
           "templateName": "GreengrassFleetProvisioningTemplate",
@@ -535,7 +535,7 @@ To help you better manage the number of devices, and which devices, that registe
 
 1. Create a folder where you download the claim certificate and private key.
 
-   ```
+   ```bash
    mkdir claim-certs
    ```
 
@@ -544,7 +544,7 @@ To help you better manage the number of devices, and which devices, that registe
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    aws iot create-keys-and-certificate \
      --certificate-pem-outfile "claim-certs/claim.pem.crt" \
      --public-key-outfile "claim-certs/claim.public.pem.key" \
@@ -555,7 +555,7 @@ To help you better manage the number of devices, and which devices, that registe
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    aws iot create-keys-and-certificate ^
      --certificate-pem-outfile "claim-certs/claim.pem.crt" ^
      --public-key-outfile "claim-certs/claim.public.pem.key" ^
@@ -566,7 +566,7 @@ To help you better manage the number of devices, and which devices, that registe
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    aws iot create-keys-and-certificate `
      --certificate-pem-outfile "claim-certs/claim.pem.crt" `
      --public-key-outfile "claim-certs/claim.public.pem.key" `
@@ -586,7 +586,7 @@ To help you better manage the number of devices, and which devices, that registe
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano greengrass-provisioning-claim-iot-policy.json
       ```
 
@@ -600,7 +600,7 @@ To help you better manage the number of devices, and which devices, that registe
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -637,7 +637,7 @@ To help you better manage the number of devices, and which devices, that registe
    1. Create an AWS IoT policy from the policy document.
       + Replace {{GreengrassProvisioningClaimPolicy}} with the name of the policy to create.
 
-      ```
+      ```bash
       aws iot create-policy --policy-name {{GreengrassProvisioningClaimPolicy}} --policy-document file://greengrass-provisioning-claim-iot-policy.json
       ```
 
@@ -648,7 +648,7 @@ To help you better manage the number of devices, and which devices, that registe
 
 ****
 
-      ```
+      ```json
       {
         "policyName": "GreengrassProvisioningClaimPolicy",
         "policyArn": "arn:aws:iot:us-west-2:123456789012:policy/GreengrassProvisioningClaimPolicy",
@@ -691,7 +691,7 @@ To help you better manage the number of devices, and which devices, that registe
    + Replace {{GreengrassProvisioningClaimPolicy}} with the name of the policy to attach.
    + Replace the target ARN with the ARN of the provisioning claim certificate.
 
-   ```
+   ```bash
    aws iot attach-policy --policy-name {{GreengrassProvisioningClaimPolicy}} --target {{arn:aws:iot:us-west-2:123456789012:cert/aa0b7958770878eabe251d8a7ddd547f4889c524c9b574ab9fbf65f32248b1d4}}
    ```
 

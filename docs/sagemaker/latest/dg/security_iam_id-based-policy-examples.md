@@ -58,7 +58,7 @@ To use the Amazon SageMaker AI console, you need to grant permissions for additi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -165,7 +165,7 @@ Grant these permissions with the following permissions policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -224,7 +224,7 @@ To use the Augmented AI console, you need to grant permissions for additional re
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -598,7 +598,7 @@ To use the Augmented AI console, you need to grant permissions for additional re
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -677,7 +677,7 @@ When a directory is allowed, all of its subdirectories are also accessible by th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -731,7 +731,7 @@ To prevent a malicious algorithm using a user space client from accessing any fi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -781,7 +781,7 @@ The following policy enforces that a training job is created by a user calling [
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -829,7 +829,7 @@ The following example uses the `sagemaker:WorkteamType` condition key with the `
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -857,7 +857,7 @@ The following policies show how to restrict access to a work team using the `sag
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -883,7 +883,7 @@ The following policies show how to restrict access to a work team using the `sag
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -917,7 +917,7 @@ The following policy restricts a user to specify a AWS KMS key to encrypt input 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -954,7 +954,7 @@ The following policy restricts a user to enable network isolation when creating 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -988,7 +988,7 @@ The following policy restricts a user to use a specific instance type when creat
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1025,7 +1025,7 @@ The following policy requires a user to disable network access when creating ins
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1092,7 +1092,7 @@ This policy allows connections only to callers within a subnet where you created
 
 ****
 
-```
+```json
 {
     "Id": "api-example-1",
     "Version":"2012-10-17",
@@ -1123,7 +1123,7 @@ To restrict access to the API to only calls made using the interface endpoint, u
 
 ****
 
-```
+```json
 {
     "Id": "api-example-1",
     "Version":"2012-10-17",
@@ -1168,7 +1168,7 @@ For example, the following policy allows access to the [`CreateTrainingJob`](htt
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1210,7 +1210,7 @@ For example, the following policy allows access to a notebook instance only from
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1288,7 +1288,7 @@ The following procedure provides a simple example that helps you understand the 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -1330,7 +1330,7 @@ The following procedure provides a simple example that helps you understand the 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -1411,7 +1411,7 @@ The list of SageMaker AI resource create operations can be found in the [SageMak
 
 You grant the `sagemaker:AddTags` permission with constraints by attaching an additional IAM policy to the original resource creation policy. The following example policy allows `sagemaker:AddTags`, but restricts it to only certain SageMaker AI resource create actions such as `CreateTrainingJob`.
 
-```
+```JSON
 {
   "Sid": "AllowAddTagsForCreateOperations",
   "Effect": "Allow",
@@ -1438,7 +1438,7 @@ In particular:
 + The second statement allows the `sagemaker:AddTags` action, but only when the `sagemaker:TaggingAction` condition key equals `CreateModel`. This restricts the `sagemaker:AddTags` action to only when it's being used to tag a newly created model.
 + The third statement denies any SageMaker AI create action (`Create*`) on any resource (`*`), but only when the create request applies a tag `sagemaker:domain-arn` equal to a specific domain ARN, `{{domain-arn}}`.
 
-```
+```JSON
 {
    "Statement":[
       {

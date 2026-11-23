@@ -13,7 +13,7 @@ A handler is a function that performs the actual transformation of a command and
 
 Here’s a handler that returns the same mock result for each call.
 
-```
+```php
 use Aws\CommandInterface;
 use Aws\Result;
 use Psr\Http\Message\RequestInterface;
@@ -27,7 +27,7 @@ $myHandler = function (CommandInterface $cmd, RequestInterface $request) {
 
 You can then use this handler with an SDK client by providing a `handler` option in the constructor of a client.
 
-```
+```php
 // Set the handler of the client in the constructor
 $s3 = new Aws\S3\S3Client([
     'region'  => 'us-east-1',
@@ -38,7 +38,7 @@ $s3 = new Aws\S3\S3Client([
 
 You can also change the handler of a client after it is constructed using the `setHandler` method of an `Aws\ClientInterface`.
 
-```
+```php
 // Set the handler of the client after it is constructed
 $s3->getHandlerList()->setHandler($myHandler);
 ```
@@ -46,7 +46,7 @@ $s3->getHandlerList()->setHandler($myHandler);
 **Note**
 To change the handler of a multi-region client after it's constructed, use the `useCustomHandler` method of an `Aws\MultiRegionClient`.
 
-```
+```php
 $multiRegionClient->useCustomHandler($myHandler);
 ```
 
@@ -55,7 +55,7 @@ $multiRegionClient->useCustomHandler($myHandler);
 
 We recommend using the `MockHandler` when writing tests that use the SDK. You can use the `Aws\MockHandler` to return mocked results or throw mock exceptions. You enqueue results or exceptions, and the MockHandler dequeues them in FIFO order.
 
-```
+```php
 use Aws\Result;
 use Aws\MockHandler;
 use Aws\DynamoDb\DynamoDbClient;
@@ -94,7 +94,7 @@ Middleware is a special type of high-level function that augments the behavior o
 
 A middleware is a higher-order function that modifies a command, request, or result as it passes through the middleware. A middleware takes the following form.
 
-```
+```php
 use Aws\CommandInterface;
 use Psr\Http\Message\RequestInterface;
 
@@ -138,7 +138,7 @@ A `HandlerList` represents a stack of middleware that are used to wrap a **handl
 This lifecycle step represents the initialization of a command, and a request has not yet been serialized. This step is typically used to add default parameters to a command.
 You can add a middleware to the `init` step using the `appendInit` and `prependInit` methods, where `appendInit` adds the middleware to the end of the `prepend` list while `prependInit` adds the middleware to the front of the `prepend` list.
 
-```
+```php
 use Aws\Middleware;
 
 $middleware = Middleware::tap(function ($cmd, $req) {
@@ -155,7 +155,7 @@ $client->getHandlerList()->prependInit($middleware, 'custom-name');
 This lifecycle step is used for validating the input parameters of a command.
 You can add a middleware to the `validate` step using the `appendValidate` and `prependValidate` methods, where `appendValidate` adds the middleware to the end of the `validate` list while `prependValidate` adds the middleware to the front of the `validate` list.
 
-```
+```php
 use Aws\Middleware;
 
 $middleware = Middleware::tap(function ($cmd, $req) {
@@ -172,7 +172,7 @@ $client->getHandlerList()->prependValidate($middleware, 'custom-name');
 This lifecycle step is used to serialize an HTTP request for the command being executed. Downstream lifecycle events will receive a command and PSR-7 HTTP request.
 You can add a middleware to the `build` step using the `appendBuild` and `prependBuild` methods, where `appendBuild` adds the middleware to the end of the `build` list while `prependBuild` adds the middleware to the front of the `build` list.
 
-```
+```php
 use Aws\Middleware;
 
 $middleware = Middleware::tap(function ($cmd, $req) {
@@ -190,7 +190,7 @@ This lifecycle step is typically used to sign HTTP requests before they are sent
 This it the last step in the `HandlerList` before the HTTP request is transferred by a handler.
 You can add a middleware to the `sign` step using the `appendSign` and `prependSign` methods, where `appendSign` adds the middleware to the end of the `sign` list while `prependSign` adds the middleware to the front of the `sign` list.
 
-```
+```php
 use Aws\Middleware;
 
 $middleware = Middleware::tap(function ($cmd, $req) {
@@ -213,7 +213,7 @@ The SDK provides several middleware that you can use to augment the behavior of 
 
 The `Aws\Middleware::mapCommand` middleware is useful when you need to modify a command before the command is serialized as an HTTP request. For example, `mapCommand` could be used to perform validation or add default parameters. The `mapCommand` function accepts a callable that accepts an `Aws\CommandInterface` object and returns an `Aws\CommandInterface` object.
 
-```
+```php
 use Aws\Middleware;
 use Aws\CommandInterface;
 
@@ -237,7 +237,7 @@ $command->getHandlerList()->appendInit(
 
 The `Aws\Middleware::mapRequest` middleware is useful when you need to modify a request after it is serialized but before it is sent. For example, this can be used to add custom HTTP headers to a request. The `mapRequest` function accepts a callable that accepts a `Psr\Http\Message\RequestInterface` argument and returns a `Psr\Http\Message\RequestInterface` object.
 
-```
+```php
 use Aws\Middleware;
 use Psr\Http\Message\RequestInterface;
 
@@ -267,7 +267,7 @@ Notice that the middleware was appended to the handler list at the end of `build
 
 The `Aws\Middleware::mapResult` middleware is useful when you need to modify the result of a command execution. The `mapResult` function accepts a callable that accepts an `Aws\ResultInterface` argument and returns an `Aws\ResultInterface` object.
 
-```
+```php
 use Aws\Middleware;
 use Aws\ResultInterface;
 
@@ -292,7 +292,7 @@ Now when the command is executed, the returned result will contain a `foo` attri
 
 The `history` middleware is useful for testing that the SDK executed the commands you expected, sent the HTTP requests you expected, and received the results you expected. It’s essentially a middleware that acts similarly to the history of a web browser.
 
-```
+```php
 use Aws\History;
 use Aws\Middleware;
 
@@ -310,14 +310,14 @@ $ddb->getHandlerList()->appendSign(Middleware::history($history));
 
 An `Aws\History` history container stores 10 entries by default before purging entries. You can customize the number of entries by passing in the number of entries to persist to the constructor.
 
-```
+```php
 // Create a history container that stores 20 entries
 $history = new History(20);
 ```
 
 You can inspect the history container after executing requests that pass the history middleware.
 
-```
+```php
 // The object is countable, returning the number of entries in the container
 count($history);
 
@@ -355,7 +355,7 @@ $history->clear();
 
 The `tap` middleware is used as an observer. You can use this middleware to invoke functions when sending commands through the chain of middleware. The `tap` function accepts a callable that accepts the `Aws\CommandInterface` and an optional `Psr\Http\Message\RequestInterface` that is being executed.
 
-```
+```php
 use Aws\Middleware;
 
 $s3 = new Aws\S3\S3Client([

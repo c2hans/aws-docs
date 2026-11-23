@@ -52,7 +52,7 @@ To perform an import action, use the following procedure:
 
    The following example shows the request body:
 
-   ```
+   ```json
    {
          "metadataTransferJobId": "{{your-transfer-job-Id}}",
          "sources": [{
@@ -69,7 +69,7 @@ To perform an import action, use the following procedure:
 
 1. Invoke the `CreateMetadataTransferJob` by running the following AWS CLI command. In this example, the request body file from the previous step is named `createMetadataTransferJobExport.json`.
 
-   ```
+   ```bash
    aws iottwinmaker create-metadata-transfer-job --region us-east-1 \
      --cli-input-json file://createMetadataTransferJobImport.json
    ```

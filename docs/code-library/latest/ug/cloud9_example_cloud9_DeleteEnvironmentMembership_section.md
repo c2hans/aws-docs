@@ -30,7 +30,7 @@ For more information, see [Remove another environment member](https://docs.aws.a
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified environment member from the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Remove-C9EnvironmentMembership -UserArn arn:aws:iam::123456789012:user/AnotherDemoUser -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX
 ```
 +  For API details, see [DeleteEnvironmentMembership](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -38,7 +38,7 @@ Remove-C9EnvironmentMembership -UserArn arn:aws:iam::123456789012:user/AnotherDe
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified environment member from the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Remove-C9EnvironmentMembership -UserArn arn:aws:iam::123456789012:user/AnotherDemoUser -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX
 ```
 +  For API details, see [DeleteEnvironmentMembership](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

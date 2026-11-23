@@ -13,13 +13,25 @@ A resource that provides supplementary information about a product, such as docu
 In the following list, the required parameters are described first.
 
  ** contentType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_Resource-contentType"></a>
-The format of the resource content, such as a URL, email address, or text.
+The format of the resource content, such as a URL, email address, or text. This field has one of the following values:
+EMAIL
+An email address.
+LINK
+A URL.
+OTHER
+Text in another format.
+PHONE\_NUMBER
+A phone number.
 Type: String
 Valid Values: `EMAIL | PHONE_NUMBER | LINK | OTHER`
 Required: Yes
 
  ** resourceType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_Resource-resourceType"></a>
-The category of the resource, such as manufacturer support or usage instructions.
+The category of the resource, such as manufacturer support or usage instructions. This field has one of the following values:
+MANUFACTURER\_INSTRUCTIONS
+Usage instructions from the seller.
+MANUFACTURER\_SUPPORT
+Support information from the seller.
 Type: String
 Valid Values: `MANUFACTURER_SUPPORT | MANUFACTURER_INSTRUCTIONS`
 Required: Yes

@@ -40,7 +40,7 @@ If *resolution* is less than 0 or greater than the resolution of *index*, then a
 
 The following SQL inputs a VARCHAR that represents the index of an H3 cell, and an INTEGER that represents the desired resolution of the desired parent, and returns a BIGINT that represents the parent at resolution 0 of the input H3 cell.
 
-```
+```sql
 SELECT H3_ToParent('85283473fffffff', 0);
 ```
 
@@ -52,7 +52,7 @@ SELECT H3_ToParent('85283473fffffff', 0);
 
 The following SQL inputs a BIGINT that represents the index of an H3 cell, and an INTEGER that represents the desired resolution of the desired parent, and returns a BIGINT that represents the parent at resolution 0 of the input H3 cell.
 
-```
+```sql
 SELECT H3_ToParent(646078419604526808, 8);
 ```
 

@@ -72,7 +72,7 @@ Do not use personally identifiable information in topic names, whether using the
 
 1. In the message payload window, enter the following JSON:
 
-   ```
+   ```JSON
    {
        "message": "Hello, world",
        "clientType": "MQTT test client"

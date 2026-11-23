@@ -12,7 +12,7 @@ The following code examples show how to get started using EventBridge.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 
-```
+```csharp
 using Amazon.EventBridge;
 using Amazon.EventBridge.Model;
 
@@ -53,7 +53,7 @@ public static class HelloEventBridge
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -102,7 +102,7 @@ public class HelloEventBridge {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.eventbridge.EventBridgeClient
 import aws.sdk.kotlin.services.eventbridge.model.ListEventBusesRequest
 import aws.sdk.kotlin.services.eventbridge.model.ListEventBusesResponse

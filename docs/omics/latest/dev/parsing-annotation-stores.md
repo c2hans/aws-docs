@@ -17,7 +17,7 @@ aws omics start-variant-import-job \
        --items source=s3://my-omics-bucket/sample.vcf.gz source=s3://my-omics-bucket/sample2.vcf.gz
 ```
 
-```
+```json
 {
     "destinationName": "store_a",
     "roleArn": "....",
@@ -39,7 +39,7 @@ aws omics start-variant-import-job \
    --annotation-fields '{"VEP": "CSQ"}'
 ```
 
-```
+```json
 {
     "jobId": "981e2286-e954-4391-8a97-09aefc343861"
 }
@@ -55,7 +55,7 @@ You'll receive a JSON response that shows the status of your import job. VEP ann
 
 For a store created before May 15, 2023 or for VCF files that don't include VEP annotation, the response doesn't include any annotation fields.
 
-```
+```json
 {
     "creationTime": "2023-04-11T17:52:37.241958+00:00",
     "destinationName": "annotationparsingvariantstore",
@@ -77,7 +77,7 @@ For a store created before May 15, 2023 or for VCF files that don't include VEP 
 
 The VEP annotations that are a part of VCF files are stored as predefined schema with the following structure. The extras field can be used to store any additional VEP fields that aren't included in the default schema.
 
-```
+```json
 annotations struct<
    vep: array<struct<
       allele:string,
@@ -118,7 +118,7 @@ aws omics get-variant-import-job --job-id 08279950-a9e3-4cc3-9a3c-a574f9c9e229
 
 You receive a JSON response that shows the status of your import job.
 
-```
+```json
 {
     "creationTime": "2023-04-11T17:52:37.241958+00:00",
     "destinationName": "annotationparsingvariantstore",
@@ -147,7 +147,7 @@ aws omics list-variant-import-jobs --ids 7a1c67e3-b7f9-434d-817b-9c571fd63bea
 
 The response contains information as follows.
 
-```
+```json
 {
     "variantImportJobs": [
     {

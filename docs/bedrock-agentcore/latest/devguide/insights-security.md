@@ -53,7 +53,7 @@ Principals that read Agent Insights also need `kms:Decrypt` permission on every 
 
 The following example shows least-privilege statements to add to the key’s existing policy. Keep the policy statements that administer the key. Replace the account ID, Region, and example principal ARNs with values for your account. The example `InsightsAdmin` and `InsightsReader` roles are caller identities; AgentCore doesn’t assume these roles.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

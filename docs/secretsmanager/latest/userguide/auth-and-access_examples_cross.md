@@ -45,7 +45,7 @@ The following example policies assume you have a secret and encryption key in *A
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -88,7 +88,7 @@ The following example policies assume you have a secret and encryption key in *A
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

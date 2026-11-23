@@ -27,7 +27,7 @@ For full details, see [Prerequisites](batch-evaluations-prereqs.md).
 
 The following constants are used in the boto3 examples. Replace them with your own values after deploying the agent:
 
-```
+```python
 REGION       = "us-west-2"
 AGENT_ARN    = "arn:aws:bedrock-agentcore:us-west-2:123456789012:runtime/AcmeSupport_default_agent-abc123"
 SERVICE_NAME = "AcmeSupport_default_agent.DEFAULT"
@@ -42,7 +42,7 @@ Create an AgentCore project and replace the default agent code with the Acme Sto
 ### Create the project
 <a name="batch-gs-step1a"></a>
 
-```
+```bash
 agentcore create --name AcmeSupport --template agent-python-strands
 cd AcmeSupport
 agentcore remove memory --name agentMemory
@@ -53,7 +53,7 @@ agentcore remove memory --name agentMemory
 
 Open `app/agent/main.py` and replace its contents with the following:
 
-```
+```python
 """Acme Store customer support agent."""
 from strands import Agent, tool
 from strands.models.bedrock import BedrockModel
@@ -165,13 +165,13 @@ if __name__ == "__main__":
 ### Deploy and verify
 <a name="batch-gs-step1c"></a>
 
-```
+```bash
 agentcore deploy
 ```
 
 After deployment, verify the agent is running:
 
-```
+```bash
 agentcore invoke --runtime agent \
   --payload '{"prompt":"What is the status of order ORD-1001?"}'
 ```
@@ -188,7 +188,7 @@ Invoke the agent with varied prompts to create sessions for evaluation. These pr
 
 **Example**
 
-```
+```bash
 agentcore invoke --runtime agent --payload '{"prompt":"What is the status of my order ORD-1001?"}'
 agentcore invoke --runtime agent --payload '{"prompt":"I need to return order ORD-1001, the shirt does not fit."}'
 agentcore invoke --runtime agent --payload '{"prompt":"What is the shipping status on ORD-1002?"}'
@@ -201,7 +201,7 @@ agentcore invoke --runtime agent --payload '{"prompt":"ORD-1003 is really late; 
 agentcore invoke --runtime agent --payload '{"prompt":"Can you check order ORD-1001 and tell me when it was delivered?"}'
 ```
 
-```
+```python
 import boto3
 import json
 import uuid
@@ -245,7 +245,7 @@ Start a batch evaluation to score all recent sessions. The service discovers ses
 
 **Example**
 
-```
+```bash
 agentcore eval batch-evaluation evaluate \
   --agent <RUNTIME_ID> \
   --evaluators Builtin.GoalSuccessRate Builtin.Helpfulness Builtin.Faithfulness \
@@ -253,11 +253,11 @@ agentcore eval batch-evaluation evaluate \
 ```
 The command starts the asynchronous evaluation and returns its batch evaluation ID. Retrieve status and results with:
 
-```
+```bash
 agentcore eval batch-evaluation get --id <BATCH_EVALUATION_ID>
 ```
 
-```
+```python
 import boto3
 import uuid
 import time
@@ -306,7 +306,7 @@ The aggregate scores tell you the overall picture. To see per-turn, per-evaluato
 **Example**
 View a job and its results by its batch evaluation ID, or list jobs:
 
-```
+```bash
 # View a batch evaluation job and its results
 agentcore eval batch-evaluation get --id <BATCH_EVALUATION_ID>
 
@@ -315,7 +315,7 @@ agentcore eval batch-evaluation list
 ```
 Add `--json` for machine-readable output.
 
-```
+```python
 # Get the output location from the batch evaluation result
 output = result["outputConfig"]["cloudWatchConfig"]
 log_group = output["logGroupName"]
@@ -339,5 +339,5 @@ for event in response["events"]:
 ## Next steps
 <a name="batch-gs-next-steps"></a>
 +  **Filter sessions** — Evaluate specific sessions by ID or time range. See [Start a batch evaluation](batch-evaluations-start.md).
-+  **Run against a dataset** — Invoke your agent against predefined scenarios and evaluate the results automatically. See [Dataset evaluation](dataset-evaluations.md).
++  **Run against a dataset** — Invoke your agent against fixed scenarios and evaluate the results automatically. See [Dataset evaluation](dataset-evaluations.md).
 +  **Compare runs** — Run batch evaluation before and after a change and compare scores. See [Understanding results and output](batch-evaluations-results.md).

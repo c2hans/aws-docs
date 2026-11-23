@@ -111,7 +111,7 @@ The recommended approach for new users developing locally, who are not given a m
 
 Before accessing AWS services, you need an active AWS access portal session for the CDK CLI to use IAM Identity Center authentication to resolve credentials. Depending on your configured session lengths, your access will eventually expire and the CDK CLI will encounter an authentication error. Run the following command in the AWS CLI to sign in to the AWS access portal.
 
-```
+```bash
 aws sso login
 ```
 
@@ -119,7 +119,7 @@ If your SSO token provider configuration is using a named profile instead of the
 
 To test if you already have an active session, run the following AWS CLI command.
 
-```
+```bash
 aws sts get-caller-identity
 ```
 
@@ -157,7 +157,7 @@ Many features of the CDK CLI require one or more AWS CloudFormation templates be
 
 First, and most commonly, it can be specified using the `app` key inside the file `cdk.json`. This is in the main directory of your AWS CDK project. The CDK CLI provides an appropriate command when creating a new project with `cdk init`. Here is the `cdk.json` from a fresh TypeScript project, for instance.
 
-```
+```json
 {
   "app": "npx ts-node bin/hello-cdk.ts"
 }
@@ -399,7 +399,7 @@ Any changes made while `cdk watch` is already performing a deployment are combin
 
 Watch mode uses the `"watch"` key in the project’s `cdk.json` to determine which files to monitor. By default, these files are your application files and assets, but this can be changed by modifying the `"include"` and `"exclude"` entries in the `"watch"` key. The following `cdk.json` file shows an example of these entries.
 
-```
+```json
 {
   "app": "mvn -e -q compile exec:java",
   "watch": {
@@ -467,7 +467,7 @@ cdk deploy --require-approval <LEVEL>
 
 The setting can also be configured in the `cdk.json` file.
 
-```
+```json
 {
   "app": "...",
   "requireApproval": "never"

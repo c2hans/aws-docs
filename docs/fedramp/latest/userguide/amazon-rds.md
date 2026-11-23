@@ -143,7 +143,7 @@ This requirement consolidates guidance for: 1. Instructions on how to securely a
 + Use temporary credentials instead of passwords
 + Example policy for IAM database authentication:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -595,7 +595,7 @@ Choose the appropriate policy based on your role:
 
  **Testing this policy:**
 
-```
+```bash
 # Verify read access works
 aws rds describe-db-instances
 
@@ -607,7 +607,7 @@ aws rds create-db-instance --db-instance-identifier test-db
 
  **Purpose:** Provides read-only access to RDS resources for monitoring and auditing purposes.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -642,7 +642,7 @@ aws rds create-db-instance --db-instance-identifier test-db
 
  **Testing this policy:**
 
-```
+```bash
 # Verify operator access works (requires MFA)
 aws rds stop-db-instance --db-instance-identifier my-database
 
@@ -654,7 +654,7 @@ aws rds delete-db-instance --db-instance-identifier my-database
 
  **Purpose:** Provides operational access for routine database management tasks with MFA requirement.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -697,7 +697,7 @@ aws rds delete-db-instance --db-instance-identifier my-database
 
  **Testing this policy:**
 
-```
+```bash
 # Verify full admin access works (requires MFA)
 aws rds create-db-instance --db-instance-identifier new-database --db-instance-class db.t3.micro --engine postgres
 aws rds delete-db-instance --db-instance-identifier old-database --skip-final-snapshot
@@ -707,7 +707,7 @@ aws rds delete-db-instance --db-instance-identifier old-database --skip-final-sn
 
  **Purpose:** Provides full administrative access with MFA and session time restrictions.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -753,7 +753,7 @@ Amazon RDS requires implementation of privileged account security controls inclu
 
 Configure Amazon RDS with minimal required permissions for administrative accounts:
 
-```
+```bash
 # Create least privilege IAM policy for Amazon RDS administration
 aws iam create-policy \
   --policy-name RDSAdminPolicy \
@@ -769,7 +769,7 @@ aws iam attach-role-policy \
 
 Require MFA for all privileged operations and administrative access:
 
-```
+```bash
 # MFA enforcement is configured through IAM policy conditions
 # Verify MFA enforcement for privileged operations
 aws iam simulate-principal-policy \
@@ -782,7 +782,7 @@ aws iam simulate-principal-policy \
 
 Enable comprehensive logging and monitoring of all privileged account activities:
 
-```
+```bash
 # Enable CloudTrail for API logging
 aws cloudtrail create-trail \
   --name RDSPrivilegedAccess \
@@ -837,7 +837,7 @@ Deploy AWS Config rules to continuously monitor Amazon RDS compliance with organ
 
  **Configuration Monitoring Commands:**
 
-```
+```bash
 # Describe RDS instances and compare against baseline
 aws rds describe-db-instances \
   --query 'DBInstances[*].{InstanceId:DBInstanceIdentifier,Encrypted:StorageEncrypted,Engine:Engine}' \
@@ -868,7 +868,7 @@ aws rds describe-db-instances --output json > current-rds-config.json
 
  **Primary Export Commands:**
 
-```
+```bash
 # Export complete RDS configuration
 aws rds describe-db-instances --output json > rds-instances.json
 aws rds describe-db-parameter-groups --output json > rds-parameter-groups.json
@@ -895,7 +895,7 @@ aws rds describe-db-security-groups --output json > rds-security-groups.json
 
  **API Command:**
 
-```
+```bash
 # Create encrypted RDS instance
 aws rds create-db-instance \
   --db-instance-identifier secure-database \
@@ -912,7 +912,7 @@ aws rds create-db-instance \
 
  **API Command:**
 
-```
+```bash
 # Configure automated backups with retention
 aws rds modify-db-instance \
   --db-instance-identifier secure-database \
@@ -927,7 +927,7 @@ aws rds modify-db-instance \
 
  **API Command:**
 
-```
+```bash
 # Enable Multi-AZ deployment for high availability
 aws rds modify-db-instance \
   --db-instance-identifier secure-database \

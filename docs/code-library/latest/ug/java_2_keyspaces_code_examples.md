@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon Keyspaces.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/keyspaces#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.keyspaces.KeyspacesClient;
 import software.amazon.awssdk.services.keyspaces.model.KeyspaceSummary;
@@ -94,7 +94,7 @@ The following code example shows how to:
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/keyspaces#code-examples).
 
-```
+```java
 /**
  * Before running this Java (v2) code example, set up your development
  * environment, including your credentials.
@@ -671,7 +671,7 @@ The following code example shows how to use `CreateKeyspace`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/keyspaces#code-examples).
 
-```
+```java
     public static void createKeySpace(KeyspacesClient keyClient, String keyspaceName) {
         try {
             CreateKeyspaceRequest keyspaceRequest = CreateKeyspaceRequest.builder()
@@ -697,7 +697,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/keyspaces#code-examples).
 
-```
+```java
     public static void createTable(KeyspacesClient keyClient, String keySpace, String tableName) {
         try {
             // Set the columns.
@@ -775,7 +775,7 @@ The following code example shows how to use `DeleteKeyspace`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/keyspaces#code-examples).
 
-```
+```java
     public static void deleteKeyspace(KeyspacesClient keyClient, String keyspaceName) {
         try {
             DeleteKeyspaceRequest deleteKeyspaceRequest = DeleteKeyspaceRequest.builder()
@@ -800,7 +800,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/keyspaces#code-examples).
 
-```
+```java
     public static void deleteTable(KeyspacesClient keyClient, String keyspaceName, String tableName) {
         try {
             DeleteTableRequest tableRequest = DeleteTableRequest.builder()
@@ -826,7 +826,7 @@ The following code example shows how to use `GetKeyspace`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/keyspaces#code-examples).
 
-```
+```java
     public static void checkKeyspaceExistence(KeyspacesClient keyClient, String keyspaceName) {
         try {
             GetKeyspaceRequest keyspaceRequest = GetKeyspaceRequest.builder()
@@ -853,7 +853,7 @@ The following code example shows how to use `GetTable`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/keyspaces#code-examples).
 
-```
+```java
     public static void checkTable(KeyspacesClient keyClient, String keyspaceName, String tableName)
             throws InterruptedException {
         try {
@@ -898,7 +898,7 @@ The following code example shows how to use `ListKeyspaces`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/keyspaces#code-examples).
 
-```
+```java
     public static void listKeyspacesPaginator(KeyspacesClient keyClient) {
         try {
             ListKeyspacesRequest keyspacesRequest = ListKeyspacesRequest.builder()
@@ -926,7 +926,7 @@ The following code example shows how to use `ListTables`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/keyspaces#code-examples).
 
-```
+```java
     public static void listTables(KeyspacesClient keyClient, String keyspaceName) {
         try {
             ListTablesRequest tablesRequest = ListTablesRequest.builder()
@@ -955,7 +955,7 @@ The following code example shows how to use `RestoreTable`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/keyspaces#code-examples).
 
-```
+```java
     public static void restoreTable(KeyspacesClient keyClient, String keyspaceName, ZonedDateTime utc) {
         try {
             Instant myTime = utc.toInstant();
@@ -986,7 +986,7 @@ The following code example shows how to use `UpdateTable`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/keyspaces#code-examples).
 
-```
+```java
     public static void updateTable(KeyspacesClient keyClient, String keySpace, String tableName) {
         try {
             ColumnDefinition def = ColumnDefinition.builder()

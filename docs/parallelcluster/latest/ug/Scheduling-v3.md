@@ -14,7 +14,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 + [`SlurmQueues`](#Scheduling-v3-SlurmQueues)
 + [`SlurmSettings`](#Scheduling-v3-SlurmSettings)
 
-```
+```yaml
 Scheduling:
   Scheduler: slurm
   ScalingStrategy: {{string}}
@@ -138,7 +138,7 @@ Scheduling:
         CustomAmi: {{string}}
 ```
 
-```
+```yaml
 Scheduling:
   Scheduler: awsbatch
   AwsBatchQueues:
@@ -185,7 +185,7 @@ Each strategy is designed to cater to different scaling needs, allowing you to s
 
 **(Optional)** The AWS Batch queue settings. Only one queue is supported. If [`Scheduler`](#yaml-Scheduling-Scheduler) is set to `awsbatch`, this section is required. For more information about the `awsbatch` scheduler, see [networking setup](network-configuration-v3-batch.md) and [Using AWS Batch (`awsbatch`) scheduler with AWS ParallelCluster](awsbatchcli-v3.md).
 
-```
+```yaml
 AwsBatchQueues:
   - Name: {{string}}
     CapacityType: {{string}}
@@ -231,7 +231,7 @@ For more information, see [Service-linked role for Spot Instance requests](https
 
 **(Required)** Defines the networking configuration for the AWS Batch queue.
 
-```
+```yaml
 Networking:
   SubnetIds:
     - {{string}}
@@ -266,7 +266,7 @@ List of security groups that the AWS Batch queue uses.
 
 **(Required)** Defines the ComputeResources configuration for the AWS Batch queue.
 
-```
+```yaml
 ComputeResources:  # this maps to a Batch compute environment (initially we support only 1)
   - Name: {{string}}
     InstanceTypes:
@@ -309,7 +309,7 @@ The maximum percentage of the On-Demand price for the instance type that an Amaz
 
 **(Optional)** Settings for the Slurm queue. If [`Scheduler`](#yaml-Scheduling-Scheduler) is set to `slurm`, this section is required.
 
-```
+```yaml
 SlurmQueues:
   - Name: {{string}}
     ComputeSettings:
@@ -424,7 +424,7 @@ Cluster size may change during an update. For more information, see [Cluster cap
 **`CapacityReservationTarget`**
 `CapacityReservationTarget` is added with AWS ParallelCluster version 3.3.0.
 
-```
+```yaml
 CapacityReservationTarget:
    CapacityReservationId: {{string}}
    CapacityReservationResourceGroupArn: {{string}}
@@ -560,7 +560,7 @@ Whether AWS ParallelCluster performs GPU health checks on compute nodes. The def
 
 **(Required)** Defines the networking configuration for the Slurm queue.
 
-```
+```yaml
 Networking:
   SubnetIds:
     - {{string}}
@@ -632,7 +632,7 @@ A list of additional security groups to use for the Slurm queue.
 **`PlacementGroup` (**Optional**)**
 Specifies the placement group settings for the Slurm queue.
 
-```
+```yaml
 PlacementGroup:
   Enabled: {{boolean}}
   Id: {{string}}
@@ -661,7 +661,7 @@ The placement group name for an existing cluster placement group that the Slurm 
 **`Proxy` (**Optional**)**
 Specifies the proxy settings for the Slurm queue.
 
-```
+```yaml
 Proxy:
   HttpProxyAddress: {{string}}
 ```
@@ -676,7 +676,7 @@ There's no default value.
 
 **(Optional)** Specifies the image to use for the Slurm queue. To use the same AMI for all nodes, use the [CustomAmi](Image-v3.md#yaml-Image-CustomAmi) setting in the [`Image` section](Image-v3.md).
 
-```
+```yaml
 Image:
   CustomAmi: {{string}}
 ```
@@ -690,14 +690,14 @@ Image:
 The AMI to use for the Slurm queue instead of the default AMIs. You can use the pcluster CLI command to view a list of the default AMIs.
 The AMI must be based on the same operating system that's used by the head node.
 
-```
+```bash
 pcluster list-official-images
 ```
 If the custom AMI requires additional permissions for its launch, you must add these permissions to the head node policy.
 For example, if a custom AMI has an encrypted snapshot associated with it, the following additional policies are required in the head node policies.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -728,7 +728,7 @@ To troubleshoot custom AMI validation warnings, see [Troubleshooting custom AMI 
 Cluster size may change during an update. For more information, see [Cluster capacity size and update](slurm-workload-manager-v3.md).
 New compute resources can be added to the cluster only if they are deployed in subnets that belong to CIDR blocks that exist when the cluster is created.
 
-```
+```yaml
 ComputeResources:
   - Name: {{string}}
     InstanceType: {{string}}
@@ -785,7 +785,7 @@ Specifies the list of instance types for a compute resource. To specify the allo
 The cluster configuration must define either [`InstanceType`](#yaml-Scheduling-SlurmQueues-ComputeResources-InstanceType) or [`Instances`](#yaml-Scheduling-SlurmQueues-ComputeResources-Instances). If both are defined, AWS ParallelCluster fails.
 For more information, see [Multiple instance type allocation with Slurm](slurm-multiple-instance-allocation-v3.md).
 
-```
+```yaml
 `Instances`:
    - `InstanceType`: {{string}}
 ```
@@ -898,7 +898,7 @@ AWS ParallelCluster doesn't support `HealthChecks` / `Gpu` in nodes that use `al
 **`Efa` (**Optional**)**
 Specifies the Elastic Fabric Adapter (EFA) settings for the nodes in the Slurm queue.
 
-```
+```yaml
 Efa:
   Enabled: {{boolean}}
   GdrSupport: {{boolean}}
@@ -916,7 +916,7 @@ If you're defining a custom security group in [SecurityGroups](#yaml-Scheduling-
 
 **`CapacityReservationTarget`**
 
-```
+```yaml
 CapacityReservationTarget:
    CapacityReservationId: {{string}}
    CapacityReservationResourceGroupArn: {{string}}
@@ -936,7 +936,7 @@ Indicates the Amazon Resource Name (ARN) of the resource group that serves as th
 
 **`Networking`**
 
-```
+```yaml
 Networking:
   PlacementGroup:
     Enabled: {{boolean}}
@@ -980,7 +980,7 @@ The tag value.
 `LaunchTemplateOverrides` is added with AWS ParallelCluster version 3.15.0.
 Specifies a launch template to override the default launch template that AWS ParallelCluster creates for the compute resource. The launch template should only contain network interfaces overrides. AWS ParallelCluster validates the launch template and prevents overriding other parameters. For more information on how to use this override, see [Customize compute node network interfaces with launch template overrides](tutorial-network-customization-v3.md).
 
-```
+```yaml
 LaunchTemplateOverrides:
   LaunchTemplateId: {{string}}
   Version: {{string}}
@@ -1002,7 +1002,7 @@ The version number of the launch template.
 
 Specifies the properties of `ComputeSettings` of the nodes in the Slurm queue.
 
-```
+```yaml
 ComputeSettings:
   LocalStorage:
     RootVolume:
@@ -1020,7 +1020,7 @@ ComputeSettings:
 **`LocalStorage` (**Optional**)**
 Specifies the properties of `LocalStorage` of the nodes in the Slurm queue.
 
-```
+```yaml
 LocalStorage:
   RootVolume:
     Size: {{integer}}
@@ -1035,7 +1035,7 @@ LocalStorage:
 **`RootVolume` (**Optional**)**
 Specifies the details of the root volume of the nodes in the Slurm queue.
 
-```
+```yaml
 RootVolume:
   Size: {{integer}}
   Encrypted: {{boolean}}
@@ -1078,7 +1078,7 @@ The ratio of `Throughput` to `Iops` can be no more than 0.25. The maximum throug
 **`EphemeralVolume` (**Optional**, `Boolean`)**
 Specifies the settings for the ephemeral volume. The ephemeral volume is created by combining all instance store volumes into a single logical volume formatted with the `ext4` file system. The default is `/scratch`. If the instance type doesn't have any instance store volumes, no ephemeral volume is created. For more information, see [Instance store volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#instance-store-volumes) in the *Amazon EC2 User Guide*.
 
-```
+```yaml
 EphemeralVolume:
   MountDir: {{string}}
 ```
@@ -1092,7 +1092,7 @@ The mount directory for the ephemeral volume for each node in the Slurm queue.
 
 **(Optional)** Specifies custom scripts to run on the nodes in the Slurm queue.
 
-```
+```yaml
 CustomActions:
   OnNodeStart:
     Sequence:
@@ -1162,7 +1162,7 @@ AWS ParallelCluster doesn't support including both a single script and `Sequence
 
 **(Optional)** Defines optional IAM settings for the Slurm queue.
 
-```
+```yaml
 Iam:
   S3Access:
     - BucketName: {{string}}
@@ -1196,7 +1196,7 @@ Specifies a bucket for the Slurm queue. This is used to generate policies to gra
 If this is specified, the `InstanceProfile` and `InstanceRole` settings can't be specified.
 We recommend that you specify one or both of the `S3Access` and `AdditionalIamPolicies` settings because features added to AWS ParallelCluster often require new permissions.
 
-```
+```yaml
 S3Access:
   - BucketName: {{string}}
     EnableWriteAccess: {{boolean}}
@@ -1220,7 +1220,7 @@ If this is specified, the `InstanceProfile` and `InstanceRole` settings can't be
 We recommend that you use `AdditionalIamPolicies` because `AdditionalIamPolicies` are added to the permissions that AWS ParallelCluster requires, and the `InstanceRole` must include all permissions required. The permissions required often change from release to release as features are added.
 There's no default value.
 
-```
+```yaml
 AdditionalIamPolicies:
   - Policy: {{string}}
 ```
@@ -1234,7 +1234,7 @@ List of IAM policies.
 
 **(Optional)** Defines the settings for Slurm that apply to the entire cluster.
 
-```
+```yaml
 SlurmSettings:
   ScaledownIdletime: {{integer}}
   QueueUpdateStrategy: {{string}}
@@ -1279,7 +1279,7 @@ To generate a base64-encoded custom munge key, you can use the [mungekey utility
 `dd if=/dev/random bs=128 count=1 2>/dev/null | base64 -w 0`
 or Python as follows:
 
-```
+```python
 import random
 import os
 import base64
@@ -1330,19 +1330,19 @@ Specifies a list of Slurm configuration dictionaries of key-value pairs to be ap
 Each dictionary in the list appears as a separate line added to the Slurm configuration file. You can specify either simple or complex parameters.
 Simple parameters consist of a single key pair, as shown in the following examples:
 
-```
+```yaml
  - Param1: 100
  - Param2: "SubParam1,SubParam2=SubValue2"
 ```
 Example rendered in Slurm configuration:
 
-```
+```bash
 Param1=100
 Param2=SubParam1,SubParam2=SubValue2
 ```
 Complex Slurm configuration parameters consist of multiple space-separated key-value, pairs as shown in the next examples:
 
-```
+```yaml
  - NodeName: test-nodes[1-10]
    CPUs: 4
    RealMemory: 4196
@@ -1356,7 +1356,7 @@ Complex Slurm configuration parameters consist of multiple space-separated key-v
 ```
 Example, rendered in Slurm configuration:
 
-```
+```bash
 NodeName=test-nodes[1-10] CPUs=4 RealMemory=4196 ... # other node settings
 NodeSet=test-nodeset Nodes=test-nodes[1-10] ... # other nodeset settings
 PartitionName=test-partition Nodes=test-nodeset ... # other partition settings
@@ -1388,7 +1388,7 @@ For more information about Slurm configuration parameters, see [slurm.conf](http
 
 **(Optional)** Defines the settings to enable Slurm Accounting on the cluster. For more information, see [Slurm accounting with AWS ParallelCluster](slurm-accounting-v3.md).
 
-```
+```yaml
 Database:
    Uri: {{string}}
    UserName: {{string}}
@@ -1444,7 +1444,7 @@ Updating the `DatabaseName` is allowed, with the following considerations:
 
 **(Optional)** Defines the settings to enable Slurm Accounting with an external slurmdbd server. For more information, see [Slurm accounting with AWS ParallelCluster](slurm-accounting-v3.md).
 
-```
+```yaml
 ExternalSlurmdbd:
   Host: {{string}}
   Port: {{integer}}
@@ -1466,7 +1466,7 @@ The port the slurmdbd service listens to. The default value is `6819`.
 
 **(Optional)** Defines the settings for Slurm that apply to the entire cluster.
 
-```
+```yaml
 Dns:
   DisableManagedDns: {{boolean}}
   HostedZoneId: {{string}}

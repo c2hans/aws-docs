@@ -40,7 +40,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-dele
 #### POST schema
 <a name="batch-delete-request-body-post-example"></a>
 
-```
+```json
 {
   "channelIds": [
     "string"
@@ -63,7 +63,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-dele
 #### BatchDeleteResultModel schema
 <a name="batch-delete-response-body-batchdeleteresultmodel-example"></a>
 
-```
+```json
 {
   "failed": [
     {
@@ -86,7 +86,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-dele
 #### InvalidRequest schema
 <a name="batch-delete-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -95,7 +95,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-dele
 #### AccessDenied schema
 <a name="batch-delete-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -104,7 +104,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-dele
 #### ResourceNotFound schema
 <a name="batch-delete-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -113,7 +113,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-dele
 #### ResourceConflict schema
 <a name="batch-delete-response-body-resourceconflict-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -122,7 +122,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-dele
 #### LimitExceeded schema
 <a name="batch-delete-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -131,7 +131,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-dele
 #### InternalServiceError schema
 <a name="batch-delete-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -140,7 +140,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-dele
 #### BadGatewayException schema
 <a name="batch-delete-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -149,7 +149,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-dele
 #### GatewayTimeoutException schema
 <a name="batch-delete-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

@@ -34,7 +34,7 @@ The retry policy for pipeline steps supports the following exception types:
 
 The retry policy for Pipelines has the following JSON schema:
 
-```
+```json
 "RetryPolicy": {
    "ExceptionType": [String]
    "IntervalSeconds": Integer

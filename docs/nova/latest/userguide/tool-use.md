@@ -27,7 +27,7 @@ Consider a simple example of a calculator tool:
 
 The first step in the tool calling workflow is the user query to Amazon Nova for the result of a math equation - 10 times 5. This query is sent as the prompt to Amazon Nova along with a tool specification that represents the calculator.
 
-```
+```JSON
 user_query = "10*5"
 
 messages = [{

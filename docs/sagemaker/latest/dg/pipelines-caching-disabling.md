@@ -8,7 +8,7 @@ A pipeline step does not rerun if you change any attributes that are not listed 
 
 To turn off step caching, set the `Enabled` attribute in the step definition’s `CacheConfig` property in the step definition to `false`, as shown in the following code snippet:
 
-```
+```json
 {
     "CacheConfig": {
         "Enabled": false,
@@ -23,7 +23,7 @@ To turn off caching for a pipeline step using the Amazon SageMaker Python SDK, d
 
 Once you run it again, the following code example turns off caching for a training step:
 
-```
+```py
 from sagemaker.core.workflow.pipeline_context import PipelineSession
 from sagemaker.mlops.workflow.steps import CacheConfig
 from sagemaker.mlops.workflow.pipeline import Pipeline
@@ -50,7 +50,7 @@ pipeline.update()
 
 Alternatively, turn off the `enable_caching` property after you have already defined the pipeline, allowing one continuous code run. The following code sample demonstrates this solution:
 
-```
+```py
 # turn off caching for the training step
 pipeline.steps[0].cache_config.enable_caching = False
 

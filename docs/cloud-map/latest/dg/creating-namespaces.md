@@ -75,7 +75,7 @@ You can also convert an internationalized domain name to Punycode when you creat
 
 1. Import `Boto3` and use `servicediscovery` as your service.
 
-   ```
+   ```python
    import boto3
    client = boto3.client('servicediscovery')
    ```
@@ -113,7 +113,7 @@ You can also convert an internationalized domain name to Punycode when you creat
      ```
    + Example response output
 
-     ```
+     ```json
      {
          'OperationId': 'gv4g5meo7ndmeh4fqskygvk23d2fijwa-k9302yzd',
          'ResponseMetadata': {

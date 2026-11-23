@@ -40,7 +40,7 @@ To install GPG tools, select the operating system that matches your instance.
 
 From a terminal, run the following command:
 
-```
+```sh
 apt-get install gnupg
 ```
 
@@ -49,7 +49,7 @@ apt-get install gnupg
 
 From a terminal, run the following command:
 
-```
+```sh
 yum install gnupg
 ```
 
@@ -58,7 +58,7 @@ yum install gnupg
 
 From a terminal, run the following command:
 
-```
+```sh
 brew install gnupg
 ```
 

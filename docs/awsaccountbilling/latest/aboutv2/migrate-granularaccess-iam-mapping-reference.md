@@ -40,7 +40,7 @@ You can use this topic to view the mapping of the old to new fine-grained action
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -67,7 +67,7 @@ We recommend that you keep the old permissions to ensure that you don't lose per
 
 ****
 
-   ```
+   ```json
    {
    	"Version":"2012-10-17",
    	"Statement": [

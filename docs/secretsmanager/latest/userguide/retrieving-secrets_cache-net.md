@@ -47,7 +47,7 @@ For more information, see [Permissions reference](auth-and-access.md#reference_i
 **Example Retrieve a secret**
 The following code example shows a method that retrieves a secret named {{MySecret}}.
 
-```
+```csharp
 using Amazon.SecretsManager.Extensions.Caching;
 
 namespace LambdaExample
@@ -72,7 +72,7 @@ namespace LambdaExample
 **Example Configure the time to live (TTL) cache refresh duration**
 The following code example shows a method that retrieves a secret named {{MySecret}} and sets the TTL cache refresh duration to 24 hours.
 
-```
+```csharp
 using Amazon.SecretsManager.Extensions.Caching;
 
 namespace LambdaExample

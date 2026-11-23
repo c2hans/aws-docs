@@ -71,7 +71,7 @@ For more information, see [Update existing cluster to new Kubernetes version](ht
 **Tools for PowerShell V4**
 **Example 1: This cmdlet lists the updates associated with an Amazon EKS cluster or managed node group in your AWS account, in the specified Region.**
 
-```
+```powershell
 Get-EKSUpdateList -Name "PROD"
 ```
 **Output:**
@@ -84,7 +84,7 @@ ee708232-7d2e-4ed7-9270-d0b5176f0726
 **Tools for PowerShell V5**
 **Example 1: This cmdlet lists the updates associated with an Amazon EKS cluster or managed node group in your AWS account, in the specified Region.**
 
-```
+```powershell
 Get-EKSUpdateList -Name "PROD"
 ```
 **Output:**

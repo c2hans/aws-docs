@@ -63,7 +63,7 @@ The following is an example policy of how to provide IAM permissions to access a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

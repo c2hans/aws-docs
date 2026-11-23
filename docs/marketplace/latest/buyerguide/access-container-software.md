@@ -25,7 +25,7 @@ Once you purchase a container-based software product with contract pricing, you 
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[

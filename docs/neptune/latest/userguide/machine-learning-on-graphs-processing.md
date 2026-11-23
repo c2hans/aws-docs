@@ -31,7 +31,7 @@ For more information, see [start-ml-data-processing-job](https://docs.aws.amazon
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -68,8 +68,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/ml/dataprocessing \
       }'
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -85,6 +84,8 @@ curl \
         "configFileName" : "training-job-configuration.json"
       }'
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -114,7 +115,7 @@ For more information, see [start-ml-data-processing-job](https://docs.aws.amazon
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -151,8 +152,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/ml/dataprocessing \
       }'
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -168,6 +168,8 @@ curl \
         "previousDataProcessingJobId" : "{{(the job ID of the previous data-processing job)}}"
       }'
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 

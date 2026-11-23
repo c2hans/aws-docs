@@ -19,7 +19,7 @@ To create an Amazon S3 bucket, follow the instructions in [Creating a bucket](ht
 
 1. Extract the `features.txt` file from the archive and access the first the few lines in the file:
 
-   ```
+   ```bash
    unzip features.zip
    head features.txt
    ```

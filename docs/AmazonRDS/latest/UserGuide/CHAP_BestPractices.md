@@ -425,4 +425,4 @@ For information on creating DB instances programmatically, see the following res
 
 The 2023 AWS re:Invent conference included a presentation on new Amazon RDS features. A video of the presentation is available here:
 
-[![AWS Videos](https://img.youtube.com/vi/IFg8EZGtLsM?si=e7T7LzW616AMd3i3/0.jpg)](https://www.youtube.com/watch?v=IFg8EZGtLsM?si=e7T7LzW616AMd3i3)
+[![AWS Videos](https://img.youtube.com/vi/IFg8EZGtLsM/0.jpg)](https://www.youtube.com/watch?v=IFg8EZGtLsM)

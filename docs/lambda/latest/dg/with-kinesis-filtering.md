@@ -112,7 +112,7 @@ aws lambda update-event-source-mapping \
 
 To add this filter using AWS SAM, add the following snippet to the YAML template for your event source.
 
-```
+```YAML
 FilterCriteria:
   Filters:
     - Pattern: '{ "data" : { "order" : { "type" : [ "buy" ] } } }'

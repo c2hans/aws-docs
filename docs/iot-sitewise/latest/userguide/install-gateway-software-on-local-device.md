@@ -25,7 +25,7 @@ The following instructions explain how to connect to your local device using an 
 
 1. To connect to your device, run the following command in a terminal window on your computer, replacing {{username}} and {{IP}} with a username that has elevated privileges and IP address.
 
-   ```
+   ```bash
    ssh {{username}}@{{IP}}
    ```
 
@@ -35,7 +35,7 @@ Replace {{path-to-saved-installer}} with the path on your computer that you used
 Replace {{IP-address}} with the IP address of your local device.
 Replace {{directory-to-receive-installer}} with the path on your local device that you use to receive the installer file.
 
-   ```
+   ```bash
    scp {{path-to-saved-installer}}.sh {{user-name}}@{{IP-address}}:{{directory-to-receive-installer}}
    ```
 
@@ -45,13 +45,13 @@ In the following procedures, run the commands in a terminal window on your SiteW
 
 1. Give the installer file the execute permission.
 
-   ```
+   ```bash
    chmod +x {{path-to-installer}}.sh
    ```
 
 1. Run the installer.
 
-   ```
+   ```bash
    sudo ./{{path-to-installer}}.sh
    ```
 

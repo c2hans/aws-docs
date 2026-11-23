@@ -14,7 +14,7 @@ Kinesis Data Streams records are available to be read immediately after they are
 
 Java KCL configuration code:
 
-```
+```java
 kinesisClientLibConfiguration = new
         KinesisClientLibConfiguration(applicationName,
         streamName,
@@ -24,7 +24,7 @@ kinesisClientLibConfiguration = new
 
 Property file setting for Python and Ruby KCL:
 
-```
+```java
 idleTimeBetweenReadsInMillis = 250
 ```
 

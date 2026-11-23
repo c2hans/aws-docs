@@ -11,7 +11,7 @@ The SDK for Kotlin provides an implementation of the [`TelemetryProvider`](/smit
 
 Update your project dependencies to add the OpenTelemetry provider as shown in the following Gradle snippet. Replace {{X.Y.Z}} with the version you’re using in your app or with the latest version available ([smithy-kotlin](https://github.com/smithy-lang/smithy-kotlin/releases/latest), [opentelemetry-instrumentation-bom](https://search.maven.org/#search|gav|1|g:io.opentelemetry.instrumentation%20AND%20a:opentelemetry-instrumentation-bom)).
 
-```
+```kotlin
 dependencies {
     implementation(platform("aws.smithy.kotlin:bom:{{X.Y.Z}}"))
     implementation(platform("io.opentelemetry.instrumentation:opentelemetry-instrumentation-bom:{{X.Y.Z}}"))
@@ -27,7 +27,7 @@ dependencies {
 
 The following code configures a service client by using the OpenTelemetry telemetry provider.
 
-```
+```kotlin
 import aws.sdk.kotlin.services.s3.S3Client
 import aws.smithy.kotlin.runtime.telemetry.otel.OpenTelemetryProvider
 import io.opentelemetry.api.GlobalOpenTelemetry

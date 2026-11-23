@@ -650,7 +650,7 @@ In advanced use cases, when you are working with an AWS Glue catalog that is enc
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

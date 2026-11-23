@@ -97,7 +97,7 @@ You can access Apache Airflow logs for the scheduler scheduling your workflows a
 
 1. Refer to the list of packages that were installed on the environment at `/usr/local/airflow/.local/bin`. For example:
 
-   ```
+   ```bash
    Collecting appdirs==1.4.4 (from -r /usr/local/airflow/.local/bin (line 1))
    Downloading https://files.pythonhosted.org/packages/3b/00/2344469e2084fb28kjdsfiuyweb47389789vxbmnbjhsdgf5463acd6cf5e3db69324/appdirs-1.4.4-py2.py3-none-any.whl
    Collecting astroid==2.4.2 (from -r /usr/local/airflow/.local/bin (line 2))
@@ -105,7 +105,7 @@ You can access Apache Airflow logs for the scheduler scheduling your workflows a
 
 1. Review the list of packages and whether any of these encountered an error during installation. If something went wrong, you might get an error similar to the following:
 
-   ```
+   ```bash
    2021-03-05T14:34:42.731-07:00
    No matching distribution found for LibraryName==1.0.0 (from -r /usr/local/airflow/.local/bin (line 4))
    No matching distribution found for LibraryName==1.0.0 (from -r /usr/local/airflow/.local/bin (line 4))

@@ -118,7 +118,7 @@ In this step, you use your machine learning transform to add and run a job in AW
 
 1. Edit the script to add a statement to cause the job output to the **Target path** to be written to a single partition file. Add this statement immediately following the statement that runs the `FindMatches` transform. The statement is similar to the following.
 
-   ```
+   ```scala
    val single_partition = findmatches1.repartition(1)
    ```
 
@@ -126,7 +126,7 @@ In this step, you use your machine learning transform to add and run a job in AW
 
 1. After you edit the script, choose **Save**. The modified script looks similar to the following code, but customized for your environment.
 
-   ```
+   ```scala
    import com.amazonaws.services.glue.GlueContext
    import com.amazonaws.services.glue.errors.CallSite
    import com.amazonaws.services.glue.ml.FindMatches

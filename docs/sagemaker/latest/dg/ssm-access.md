@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ssm-access.html
 
  To enable SSM access for an existing container on an endpoint, update the endpoint with a new endpoint configuration, with the `EnableSSMAccess` parameter set to `true` The following example provides a sample endpoint configuration.
 
-```
+```json
 {
     "EndpointConfigName": {{"endpoint-config-name"}},
     "ProductionVariants": [
@@ -52,7 +52,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ssm-access.html
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -82,7 +82,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ssm-access.html
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -107,7 +107,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ssm-access.html
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -145,7 +145,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ssm-access.html
 
  The following example shows how you can use the AWS CLI to access a model container using its target ID.
 
-```
+```bash
 aws ssm start-session --target sagemaker-endpoint:prod-image-classifier_variant1_i-003a121c1b21a90a9_container_1
 ```
 

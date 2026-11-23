@@ -35,7 +35,7 @@ If *geom* is not of subtype `LINESTRING`, then null is returned.
 
 The following SQL returns the number of points in the input linestring.
 
-```
+```sql
 SELECT ST_NumPoints(ST_GeomFromText('LINESTRING(77.29 29.07,77.42 29.26,77.27 29.31,77.29 29.07)'));
 ```
 
@@ -47,7 +47,7 @@ st_numpoints
 
 The following SQL returns null because the input *geom* is not of subtype `LINESTRING`.
 
-```
+```sql
 SELECT ST_NumPoints(ST_GeomFromText('MULTIPOINT(1 2,3 4)'));
 ```
 

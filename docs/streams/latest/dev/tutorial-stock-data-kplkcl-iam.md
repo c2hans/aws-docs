@@ -85,7 +85,7 @@ The resulting policy document should look something like the following:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

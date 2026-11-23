@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 
 1. Create a `start-job-run-request.json` file and specify the required parameters for your job run, as the following example JSON file demonstrates. For more information about the parameters, see [Options for configuring a job run](emr-eks-jobs-CLI.md#emr-eks-jobs-parameters).
 
-   ```
+   ```JSON
    {
      "name": "{{myjob}}",
      "virtualClusterId": "{{123456}}",

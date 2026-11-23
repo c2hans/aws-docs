@@ -8,7 +8,7 @@ AWS Clean Rooms Differential Privacy uses a [general-purpose query structure](dp
 
 The following example uses two tables named `socialco_impressions` and `socialco_users` from a media publisher who wants to protect data using differential privacy while collaborating with an athletic brand with `athletic_brand_sales` data. The media publisher has configured the `user_id` column as the user identifier column while enabling differential privacy in AWS Clean Rooms. The advertiser does not need differential privacy protection and wants to run a query using CTEs on combined data. Since their CTE uses differential privacy protected tables, the advertiser includes the user identifier column from those protected tables in the list of CTE columns and joins the protected tables on the user identifier column.
 
-```
+```SQL
 WITH matches_table AS(
      SELECT si.user_id, si.campaign_id, s.sale_id, s.sale_price
      FROM socialco_impressions si
@@ -38,6 +38,6 @@ LIMIT 5
 
 Similarly, if you want to run window functions on differential privacy protected data tables, you must include the user identifier column in the `PARTITION BY` clause.
 
-```
+```SQL
 ROW_NUMBER() OVER (PARTITION BY conversion_id, user_id ORDER BY match_type, match_age) AS row
 ```

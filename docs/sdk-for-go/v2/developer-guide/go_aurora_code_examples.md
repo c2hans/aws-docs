@@ -28,7 +28,7 @@ The following code example shows how to get started using Aurora.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -89,7 +89,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```go
 import (
 	"aurora/actions"
 	"context"
@@ -471,7 +471,7 @@ func (helper ScenarioHelper) UniqueId() string {
 ```
 Define functions that are called by the scenario to manage Aurora actions.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -791,7 +791,7 @@ The following code example shows how to use `CreateDBCluster`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -840,7 +840,7 @@ The following code example shows how to use `CreateDBClusterParameterGroup`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -885,7 +885,7 @@ The following code example shows how to use `CreateDBClusterSnapshot`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -925,7 +925,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -968,7 +968,7 @@ The following code example shows how to use `DeleteDBCluster`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1007,7 +1007,7 @@ The following code example shows how to use `DeleteDBClusterParameterGroup`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1046,7 +1046,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1086,7 +1086,7 @@ The following code example shows how to use `DescribeDBClusterParameterGroups`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1132,7 +1132,7 @@ The following code example shows how to use `DescribeDBClusterParameters`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1181,7 +1181,7 @@ The following code example shows how to use `DescribeDBClusterSnapshots`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1220,7 +1220,7 @@ The following code example shows how to use `DescribeDBClusters`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1265,7 +1265,7 @@ The following code example shows how to use `DescribeDBEngineVersions`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1307,7 +1307,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1353,7 +1353,7 @@ The following code example shows how to use `DescribeOrderableDBInstanceOptions`
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1403,7 +1403,7 @@ The following code example shows how to use `ModifyDBClusterParameterGroup`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"

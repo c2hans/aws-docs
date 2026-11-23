@@ -19,7 +19,7 @@ Sets one or more contact event hooks, which are flows associated with contact ev
 ## Parameter object
 <a name="updatecontacteventhooks-parameter"></a>
 
-```
+```json
 {
     "EventHooks": { an Object that holds the event hooks to be set. Only one entry may be present in this map.
         "Key": "Value" - the event hook to be set where the key is the event type and the value is the flow ID or ARN to run when that event occurs. Keys must be defined statically.

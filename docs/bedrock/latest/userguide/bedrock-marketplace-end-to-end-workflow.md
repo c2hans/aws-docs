@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-marketp
 
 After you've set up Amazon Bedrock Marketplace, you can use the following example code in your end-to-end workflow. If you need more context, you can read the sections that follow the code.
 
-```
+```python
 from botocore.exceptions import ClientError
 import pprint
 from datetime import datetime

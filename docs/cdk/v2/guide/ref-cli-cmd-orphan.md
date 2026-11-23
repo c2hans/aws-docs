@@ -33,7 +33,7 @@ After orphaning, update your CDK code to use the new construct type and use [cdk
 
 1. Run `cdk orphan` with the construct path of the resource:
 
-   ```
+   ```bash
    $ cdk orphan MyStack/MyTable --unstable=orphan
    ```
 
@@ -43,7 +43,7 @@ After orphaning, update your CDK code to use the new construct type and use [cdk
 
 1. Run `cdk import` with the resource mapping from the orphan output:
 
-   ```
+   ```bash
    $ cdk import MyStack --resource-mapping-inline '{"MyTable":{"TableName":"my-table"}}'
    ```
 
@@ -84,20 +84,20 @@ Show command reference information for the `cdk orphan` command.
 ### Orphan a single resource
 <a name="ref-cli-cmd-orphan-examples-single"></a>
 
-```
+```bash
 $ cdk orphan MyStack/MyTable --unstable=orphan
 ```
 
 ### Orphan multiple resources
 <a name="ref-cli-cmd-orphan-examples-multiple"></a>
 
-```
+```bash
 $ cdk orphan MyStack/MyTable MyStack/MyBucket --unstable=orphan
 ```
 
 ### Skip confirmation prompt
 <a name="ref-cli-cmd-orphan-examples-yes"></a>
 
-```
+```bash
 $ cdk orphan MyStack/MyTable --unstable=orphan --yes
 ```

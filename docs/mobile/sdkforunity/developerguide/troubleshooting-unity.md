@@ -15,7 +15,7 @@ When calling AWS services your app uses an identity from a Cognito identity pool
 
 The following policy file shows how to grant access to an S3 bucket:
 
-```
+```csharp
 {
   "Statement": [
     {
@@ -35,7 +35,7 @@ The following policy file shows how to grant access to an S3 bucket:
 
 The following policy file shows how to grant access to a DynamoDB database:
 
-```
+```csharp
 {
 "Statement": [{
     "Effect": "Allow",

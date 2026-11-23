@@ -21,7 +21,7 @@ To use Secure Shell (SSH) to connect to compute instances on a Snowball Edge, yo
 
 1. Connect to your instance through SSH as in the following example command. The IP address is the IP address of the virtual network interface (VNIC) that you set up in [Network configurations for compute instances on Snowball Edge](network-config-ec2.md).
 
-   ```
+   ```bash,sh,zsh
      ssh -i {{path/to/PEM/key/file}} {{instance-user-name}}@{{192.0.2.0}}
    ```
 

@@ -81,7 +81,7 @@ By default, the FreeRTOS demos use the Amazon Root CA 1 certificate (RSA 2048 bi
 
 1. In the file, locate the following line.
 
-   ```
+   ```c
     * #define democonfigROOT_CA_PEM    "...insert here..."
    ```
 
@@ -89,7 +89,7 @@ By default, the FreeRTOS demos use the Amazon Root CA 1 certificate (RSA 2048 bi
 
 1. Copy the CA certificate that you want to use and then paste it in the `"...insert here..."` text. The result should look like the following example.
 
-   ```
+   ```c
    #define democonfigROOT_CA_PEM   "-----BEGIN CERTIFICATE-----\n"\
    "MIIBtjCCAVugAwIBAgITBmyf1XSXNmY/Owua2eiedgPySjAKBggqhkjOPQQDAjA5\n"\
    "MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6b24g\n"\

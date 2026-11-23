@@ -44,19 +44,19 @@ Run instructions similar to the following examples on the new node:
 
 1. Download the binary on the new node:
 
-   ```
+   ```bash
    curl -k https://172.31.42.64:30000/api/v1/embedded-cluster/binary -o wickr-enterprise-ha.tgz
    ```
 
 1. Extract the binary:
 
-   ```
+   ```bash
    tar -xvf wickr-enterprise-ha.tgz
    ```
 
 1. Join the node to the cluster:
 
-   ```
+   ```bash
    sudo ./wickr-enterprise-ha join 172.31.42.64:30000 AAAAAbbbbbbbbCCCCCCCzzzzz
    ```
 

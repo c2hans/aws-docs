@@ -8,7 +8,7 @@ After metadata migration completes, confirm that vector fields were transformed 
 
 1. Verify the transformed mapping on the target. Confirm each former `dense_vector` field is now a `knn_vector` field with the expected `dimension` and `method`:
 
-   ```
+   ```bash
    console clusters curl target /<INDEX>/_mapping?pretty
    ```
 
@@ -16,7 +16,7 @@ After metadata migration completes, confirm that vector fields were transformed 
 
 1. After document backfill, run a representative vector query against the target and confirm that results return and that the top matches are reasonable for your data:
 
-   ```
+   ```bash
    console clusters curl target /<INDEX>/_search?pretty -X POST -H 'Content-Type: application/json' -d '<KNN_QUERY_BODY>'
    ```
 

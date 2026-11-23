@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List IAM role policies.
     /// </summary>
@@ -68,7 +68,7 @@ For more information, see [Creating IAM roles](https://docs.aws.amazon.com/IAM/l
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -109,7 +109,7 @@ func (wrapper RoleWrapper) ListRolePolicies(ctx context.Context, roleName string
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 List the policies.
 
-```
+```javascript
 import { ListRolePoliciesCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -155,7 +155,7 @@ export async function* listRolePolicies(roleName) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -181,7 +181,7 @@ $service = new IAMService();
 **Tools for PowerShell V4**
 **Example 1: This example returns the list of names of inline policies that are embedded in the IAM role `lamda_exec_role`. To see the details of an inline policy, use the command `Get-IAMRolePolicy`.**
 
-```
+```powershell
 Get-IAMRolePolicyList -RoleName lambda_exec_role
 ```
 **Output:**
@@ -194,7 +194,7 @@ oneClick_lambda_exec_role_policy
 **Tools for PowerShell V5**
 **Example 1: This example returns the list of names of inline policies that are embedded in the IAM role `lamda_exec_role`. To see the details of an inline policy, use the command `Get-IAMRolePolicy`.**
 
-```
+```powershell
 Get-IAMRolePolicyList -RoleName lambda_exec_role
 ```
 **Output:**
@@ -210,7 +210,7 @@ oneClick_lambda_exec_role_policy
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def list_policies(role_name):
     """
     Lists inline policies for a role.
@@ -233,7 +233,7 @@ def list_policies(role_name):
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Lists policy ARNs attached to a role
   #
   # @param role_name [String] The name of the role
@@ -254,7 +254,7 @@ def list_policies(role_name):
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn list_role_policies(
     client: &iamClient,
     role_name: &str,
@@ -280,7 +280,7 @@ pub async fn list_role_policies(
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_iam->listrolepolicies(
           iv_rolename = iv_role_name ).
@@ -297,7 +297,7 @@ pub async fn list_role_policies(
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/iam#code-examples).
 
-```
+```swift
 import AWSIAM
 import AWSS3
 

@@ -41,7 +41,7 @@ The following permissions apply only when using the Amazon SNS APIs:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -118,7 +118,7 @@ The following permissions apply only when using the Amazon SNS APIs:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

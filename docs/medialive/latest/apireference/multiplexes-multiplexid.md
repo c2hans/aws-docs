@@ -95,7 +95,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### PUT schema
 <a name="multiplexes-multiplexid-request-body-put-example"></a>
 
-```
+```json
 {
   "multiplexSettings": {
     "maximumVideoBufferDelayMilliseconds": integer,
@@ -115,7 +115,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### UpdateMultiplexResultModel schema
 <a name="multiplexes-multiplexid-response-body-updatemultiplexresultmodel-example"></a>
 
-```
+```json
 {
   "multiplex": {
     "arn": "string",
@@ -149,7 +149,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### Multiplex schema
 <a name="multiplexes-multiplexid-response-body-multiplex-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "availabilityZones": [
@@ -181,7 +181,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### InvalidRequest schema
 <a name="multiplexes-multiplexid-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -190,7 +190,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### AccessDenied schema
 <a name="multiplexes-multiplexid-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -199,7 +199,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### ResourceNotFound schema
 <a name="multiplexes-multiplexid-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -208,7 +208,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### ResourceConflict schema
 <a name="multiplexes-multiplexid-response-body-resourceconflict-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -217,7 +217,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### MultiplexConfigurationValidationError schema
 <a name="multiplexes-multiplexid-response-body-multiplexconfigurationvalidationerror-example"></a>
 
-```
+```json
 {
   "message": "string",
   "validationErrors": [
@@ -232,7 +232,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### LimitExceeded schema
 <a name="multiplexes-multiplexid-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -241,7 +241,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### InternalServiceError schema
 <a name="multiplexes-multiplexid-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -250,7 +250,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### BadGatewayException schema
 <a name="multiplexes-multiplexid-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -259,7 +259,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### GatewayTimeoutException schema
 <a name="multiplexes-multiplexid-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

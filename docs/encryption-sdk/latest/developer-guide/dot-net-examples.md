@@ -19,14 +19,14 @@ Step 1: Instantiate the AWS Encryption SDK and the material providers library.
 Begin by instantiating the AWS Encryption SDK and the material providers library. You'll use the methods in the AWS Encryption SDK to encrypt and decrypt data. You'll use the methods in the material providers library to create the keyrings that specify which keys protect your data.
 The way you instantiate the AWS Encryption SDK and the material providers library differs between versions 3.*x* and 4.*x* of the AWS Encryption SDK for .NET. All of the following steps are the same for both version 3.*x* and 4.*x* of the AWS Encryption SDK for .NET.
 
-```
+```csharp
 // Instantiate the AWS Encryption SDK and material providers
 var encryptionSdk = AwsEncryptionSdkFactory.CreateDefaultAwsEncryptionSdk();
 var materialProviders =
     AwsCryptographicMaterialProvidersFactory.CreateDefaultAwsCryptographicMaterialProviders();
 ```
 
-```
+```cs
 // Instantiate the AWS Encryption SDK and material providers
 var esdk =  new ESDK(new AwsEncryptionSdkConfig());
 var mpl = new MaterialProviders(new MaterialProvidersConfig());
@@ -38,7 +38,7 @@ Even though the input for this keyring doesn't specify a [generator key](use-kms
 This input object requires an AWS KMS client for the AWS Region of the KMS key. To create a AWS KMS client, instantiate the `AmazonKeyManagementServiceClient` class in the SDK for .NET. Calling the `AmazonKeyManagementServiceClient()` constructor with no parameters creates a client with the default values.
 In an AWS KMS keyring used for encrypting with the AWS Encryption SDK for .NET, you can [identify the KMS keys](use-kms-keyring.md#kms-keyring-id) by using the key ID, key ARN, alias name, or alias ARN. In an AWS KMS keyring used for decrypting, you must use a key ARN to identify each KMS key. If you plan to reuse your encryption keyring for decrypting, use a key ARN identifier for all KMS keys.
 
-```
+```csharp
 string keyArn = "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab";
 
 // Instantiate the keyring input object
@@ -52,7 +52,7 @@ var kmsKeyringInput = new CreateAwsKmsKeyringInput
 Step 3: Create the keyring.
 To create the keyring, call the keyring method with the keyring input object. This example uses the `CreateAwsKmsKeyring()` method, which takes just one KMS key.
 
-```
+```csharp
 var keyring = materialProviders.CreateAwsKmsKeyring(kmsKeyringInput);
 ```
 
@@ -60,7 +60,7 @@ Step 4: Define an encryption context.
 An [encryption context](concepts.md#encryption-context) is an optional, but strongly recommended element of cryptographic operations in the AWS Encryption SDK. You can define one or more non-secret key-value pairs.
 With version 4.*x* of the AWS Encryption SDK for .NET, you can require an encryption context in all encrypt requests with the [required encryption context CMM](configure.md#config-required-encryption-context-cmm).
 
-```
+```csharp
 // Define the encryption context
 var encryptionContext = new Dictionary<string, string>()
 {
@@ -71,7 +71,7 @@ var encryptionContext = new Dictionary<string, string>()
 Step 5: Create the input object for encrypting.
 Before calling the `Encrypt()` method, create an instance of the `EncryptInput` class.
 
-```
+```csharp
 string plaintext = File.ReadAllText("C:\\Documents\\CryptoTest\\TestFile.txt");
 
 // Define the encrypt input
@@ -87,7 +87,7 @@ Step 6: Encrypt the plaintext.
 Use the `Encrypt()` method of the AWS Encryption SDK to encrypt the plaintext using the keyring you defined.
 The `EncryptOutput` that the `Encrypt() `method returns has methods for getting the encrypted message (`Ciphertext`), encryption context, and algorithm suite.
 
-```
+```csharp
 var encryptOutput = encryptionSdk.Encrypt(encryptInput);
 ```
 
@@ -95,7 +95,7 @@ Step 7: Get the encrypted message.
 The `Decrypt()` method in the AWS Encryption SDK for .NET takes the `Ciphertext` member of the `EncryptOutput` instance.
 The `Ciphertext` member of the `EncryptOutput` object is the [encrypted message](concepts.md#message), a portable object that includes the encrypted data, encrypted data keys, and metadata, including the encryption context. You can safely store the encrypted message for an extended time or submit it to the `Decrypt()` method to recover the plaintext.
 
-```
+```csharp
 var encryptedMessage = encryptOutput.Ciphertext;
 ```
 
@@ -108,7 +108,7 @@ This example shows the basic pattern of decrypting in strict mode with the AWS E
 
 Step 1: Instantiate the AWS Encryption SDK and material providers library.
 
-```
+```csharp
 // Instantiate the AWS Encryption SDK and material providers
 var esdk =  new ESDK(new AwsEncryptionSdkConfig());
 var mpl = new MaterialProviders(new MaterialProvidersConfig());
@@ -118,7 +118,7 @@ Step 2: Create the input object for your keyring.
 To specify the parameters for the keyring method, create an input object. Each keyring method in the AWS Encryption SDK for .NET has a corresponding input object. Because this example uses the `CreateAwsKmsKeyring()` method to create the keyring, it instantiates the `CreateAwsKmsKeyringInput` class for the input.
 In a decryption keyring, you must use a key ARN to identify KMS keys.
 
-```
+```csharp
 string keyArn = "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab";
 
 // Instantiate the keyring input object
@@ -132,7 +132,7 @@ var kmsKeyringInput = new CreateAwsKmsKeyringInput
 Step 3: Create the keyring.
 To create the decryption keyring, this example uses the `CreateAwsKmsKeyring()` method and the keyring input object.
 
-```
+```csharp
 var keyring = materialProviders.CreateAwsKmsKeyring(kmsKeyringInput);
 ```
 
@@ -142,7 +142,7 @@ The `Ciphertext` parameter of the `DecryptInput()` constructor takes the `Cipher
 With version 4.*x* of the AWS Encryption SDK for .NET, you can use the optional `EncryptionContext` parameter to specify your encryption context in the `Decrypt()` method.
 Use the `EncryptionContext` parameter to verify that the encryption context used on encrypt *is included* in the encryption context used to decrypt the ciphertext. The AWS Encryption SDK adds pairs to the encryption context, including the digital signature if you're using an algorithm suite with signing, such as the default algorithm suite.
 
-```
+```csharp
 var encryptedMessage = encryptOutput.Ciphertext;
 
 var decryptInput = new DecryptInput
@@ -155,7 +155,7 @@ var decryptInput = new DecryptInput
 
 Step 5: Decrypt the ciphertext.
 
-```
+```csharp
 var decryptOutput = encryptionSdk.Decrypt(decryptInput);
 ```
 
@@ -163,7 +163,7 @@ Step 6: Verify the encryption context – Version 3.*x*
 The `Decrypt()` method of version 3.*x* of the AWS Encryption SDK for .NET does not take an encryption context. It gets the encryption context values from the metadata in the encrypted message. However, before returning or using the plaintext, it's a best practice to verify that encryption context that was used to decrypt the ciphertext includes the encryption context you provided when encrypting.
 Verify that the encryption context used on encrypt *is included* in the encryption context that used to decrypt the ciphertext. The AWS Encryption SDK adds pairs to the encryption context, including the digital signature if you're using an algorithm suite with signing, such as the default algorithm suite.
 
-```
+```csharp
 // Verify the encryption context
 string contextKey = "purpose";
 string contextValue = "test";
@@ -186,7 +186,7 @@ The following example shows the pattern for decrypting data with an AWS KMS disc
 
 Step 1: Instantiate the AWS Encryption SDK and the material providers library.
 
-```
+```csharp
 // Instantiate the AWS Encryption SDK and material providers
 var esdk =  new ESDK(new AwsEncryptionSdkConfig());
 var mpl = new MaterialProviders(new MaterialProvidersConfig());
@@ -195,7 +195,7 @@ var mpl = new MaterialProviders(new MaterialProvidersConfig());
 Step 2: Create the input object for the keyring.
 To specify the parameters for the keyring method, create an input object. Each keyring method in the AWS Encryption SDK for .NET has a corresponding input object. Because this example uses the `CreateAwsKmsDiscoveryKeyring()` method to create the keyring, it instantiates the `CreateAwsKmsDiscoveryKeyringInput` class for the input.
 
-```
+```csharp
 List<string> accounts = new List<string> { "111122223333" };
 
 var discoveryKeyringInput = new CreateAwsKmsDiscoveryKeyringInput
@@ -212,7 +212,7 @@ var discoveryKeyringInput = new CreateAwsKmsDiscoveryKeyringInput
 Step 3: Create the keyring.
 To create the decryption keyring, this example uses the `CreateAwsKmsDiscoveryKeyring()` method and the keyring input object.
 
-```
+```csharp
 var discoveryKeyring = materialProviders.CreateAwsKmsDiscoveryKeyring(discoveryKeyringInput);
 ```
 
@@ -221,7 +221,7 @@ To create the input object for the `Decrypt()` method, instantiate the `DecryptI
 With version 4.*x* of the AWS Encryption SDK for .NET, you can use the optional `EncryptionContext` parameter to specify your encryption context in the `Decrypt()` method.
 Use the `EncryptionContext` parameter to verify that the encryption context used on encrypt *is included* in the encryption context used to decrypt the ciphertext. The AWS Encryption SDK adds pairs to the encryption context, including the digital signature if you're using an algorithm suite with signing, such as the default algorithm suite.
 
-```
+```csharp
 var ciphertext = encryptOutput.Ciphertext;
 
 var decryptInput = new DecryptInput
@@ -238,7 +238,7 @@ Step 5: Verify the encryption context – Version 3.*x*
 The `Decrypt()` method of version 3.*x* of the AWS Encryption SDK for .NET does not take an encryption context on `Decrypt()`. It gets the encryption context values from the metadata in the encrypted message. However, before returning or using the plaintext, it's a best practice to verify that encryption context that was used to decrypt the ciphertext includes the encryption context you provided when encrypting.
 Verify that the encryption context used on encrypt *is included* in the encryption context that was used to decrypt the ciphertext. The AWS Encryption SDK adds pairs to the encryption context, including the digital signature if you're using an algorithm suite with signing, such as the default algorithm suite.
 
-```
+```csharp
 // Verify the encryption context
 string contextKey = "purpose";
 string contextValue = "test";

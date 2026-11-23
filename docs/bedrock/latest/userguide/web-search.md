@@ -77,7 +77,7 @@ To use Web Search, the IAM identity behind your request must be allowed to call 
 
 Set the following before running the examples:
 
-```
+```bash
 export OPENAI_API_KEY="your-amazon-bedrock-api-key"
 export OPENAI_BASE_URL="https://bedrock-mantle.us-west-2.api.aws/openai/v1"
 ```
@@ -100,7 +100,7 @@ Use `search_context_size` to control how much context each Search call can retur
 
 An observation contains a title, URL, and content snippet. The budget is shared when a Search call contains multiple queries, and the service can return fewer observations than the maximum. Larger settings can increase the model input tokens and associated inference cost. This parameter does not limit how many Search calls the model can make.
 
-```
+```python
 tools=[{
     "type": "web_search",
     "search_context_size": "low",
@@ -122,7 +122,7 @@ Choose one of the following configurations for Fetch.
 
 Set `"external_web_access": false` on the tool. This does not require the `ExternalWebAccess` permission, retrieval is served entirely from the Amazon Bedrock web index and cache, and your request data does not leave the AWS boundary. Because [AmazonBedrockFullAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonBedrockFullAccess) grants `InvokeFetch`, cached Fetch continues to work. Set the parameter explicitly; don't rely on omitting the permission while leaving the parameter at its default of `true`, because that configuration causes Fetch attempts to fail.
 
-```
+```python
 response = client.responses.create(
     model="openai.gpt-5.6-terra",
     input="Summarize recent guidance on AWS Lambda cold starts.",
@@ -130,7 +130,7 @@ response = client.responses.create(
 )
 ```
 
-```
+```bash
 curl "https://bedrock-mantle.us-west-2.api.aws/openai/v1/responses" \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
   -H "Content-Type: application/json" \
@@ -166,7 +166,7 @@ On supported Amazon Bedrock models, Codex uses text-only Web Search, returning t
 ### Responses API
 <a name="web-search-responses-api-example"></a>
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -182,7 +182,7 @@ print(response.output_text)
 
 The response includes the grounded answer text together with `url_citation` annotations that point back to the sources:
 
-```
+```json
 {
   "content": [
     {
@@ -227,7 +227,7 @@ The response includes the grounded answer text together with `url_citation` anno
 
 If you are not using the OpenAI SDK, send the request directly to the Responses endpoint. The `tools` field carries the Web Search tool.
 
-```
+```bash
 curl "https://bedrock-mantle.us-west-2.api.aws/openai/v1/responses" \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
   -H "Content-Type: application/json" \
@@ -245,7 +245,7 @@ Web Search returns citations as `url_citation` annotations attached to the text.
 
 A citation can be based on a Search observation even when Fetch did not retrieve the full page. Don't use the presence of a citation to determine whether content came from the Amazon Bedrock cache or the external web. To audit Fetch outcomes and retrieval sources, use the `fetchedSources` field in CloudTrail. For details, see [Monitor Web Search](monitoring-web-search.md).
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -271,7 +271,7 @@ for item in response.output:
 
 If you are working with the raw JSON (for example, from a direct HTTPS call), the same data lives at `output[].content[].annotations[]`:
 
-```
+```bash
 jq '.output[] | select(.type=="message") | .content[]
       | select(.type=="output_text") | .annotations[]
       | select(.type=="url_citation") | {title, url, start_index, end_index}' response.json
@@ -282,7 +282,7 @@ jq '.output[] | select(.type=="message") | .content[]
 
 The Responses API streams the answer as it is generated. Text arrives as `response.output_text.delta` events, and each citation arrives as a `response.output_text.annotation.added` event as the model grounds a statement.
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -304,7 +304,7 @@ for event in stream:
 
 Over the wire, the annotation event looks like this:
 
-```
+```json
 event: response.output_text.annotation.added
 data: {"type":"response.output_text.annotation.added","annotation":{"type":"url_citation","title":"News and Updates from the July 2025 Pokémon Presents","url":"https://www.pokemon.com/us/pokemon-news/...","start_index":589,"end_index":698},"annotation_index":2,"content_index":0,"item_id":"msg_...","output_index":1}
 ```
@@ -316,7 +316,7 @@ Domain filtering restricts Web Search results to a set of domains you specify. O
 
 Omit the `http://` or `https://` prefix when you list a domain, and note that each entry also matches its subdomains — for example, `aws.amazon.com` also covers `docs.aws.amazon.com`.
 
-```
+```python
 tools=[{
     "type": "web_search",
     "external_web_access": False,
@@ -339,7 +339,7 @@ Values for `country` are not case sensitive, so `de` is accepted as `DE`. The va
 #### Customizing user location
 <a name="web-search-user-location-customizing"></a>
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()

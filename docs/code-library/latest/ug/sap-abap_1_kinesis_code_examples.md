@@ -41,7 +41,7 @@ The following code example shows how to:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kns#code-examples).
 
-```
+```sap-abap
     DATA lo_stream_describe_result TYPE REF TO /aws1/cl_knsdescrstreamoutput.
     DATA lo_stream_description TYPE REF TO /aws1/cl_knsstreamdescription.
     DATA lo_sharditerator TYPE REF TO /aws1/cl_knsgetsharditerator01.
@@ -180,7 +180,7 @@ The following code example shows how to use `CreateStream`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kns#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_kns->createstream(
             iv_streamname = iv_stream_name
@@ -204,7 +204,7 @@ The following code example shows how to use `DeleteStream`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kns#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_kns->deletestream(
             iv_streamname = iv_stream_name ).
@@ -225,7 +225,7 @@ The following code example shows how to use `DescribeStream`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kns#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kns->describestream(
             iv_streamname = iv_stream_name ).
@@ -247,7 +247,7 @@ The following code example shows how to use `GetRecords`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kns#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kns->getrecords(             " oo_result is returned for testing purposes. "
             iv_sharditerator = iv_shard_iterator ).
@@ -285,7 +285,7 @@ The following code example shows how to use `ListStreams`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kns#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kns->liststreams(        " oo_result is returned for testing purposes. "
             "Set Limit to specify that a maximum of streams should be returned."
@@ -306,7 +306,7 @@ The following code example shows how to use `PutRecord`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kns#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kns->putrecord(            " oo_result is returned for testing purposes. "
             iv_streamname = iv_stream_name
@@ -343,7 +343,7 @@ The following code example shows how to use `RegisterStreamConsumer`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kns#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kns->registerstreamconsumer(       " oo_result is returned for testing purposes. "
             iv_streamarn = iv_stream_arn

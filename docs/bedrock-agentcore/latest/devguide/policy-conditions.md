@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 
 Conditions add fine-grained logic to policies using `when` and `unless` clauses:
 
-```
+```cedar
 when {
   principal.hasTag("username") &&
   principal.getTag("username") == "refund-agent" &&
@@ -26,13 +26,13 @@ when {
 
  `context.input` contains the arguments passed to the tool call:
 
-```
+```cedar
 context.input.amount < 500
 ```
 
 When a user calls `RefundTool___process_refund` with arguments like:
 
-```
+```json
 {
   "orderId": "12345",
   "amount": 450,
@@ -57,7 +57,7 @@ Principal attributes differ based on the authentication type configured for your
 
 For OAuth-authenticated gateways, JWT claims from the OAuth token are stored as tags on the OAuthUser entity. Example JWT claims:
 
-```
+```json
 {
   "sub": "user-123",
   "username": "refund-agent",
@@ -68,19 +68,19 @@ For OAuth-authenticated gateways, JWT claims from the OAuth token are stored as 
 
 These claims become tags on the principal entity. Check if a tag exists:
 
-```
+```cedar
 principal.hasTag("username")
 ```
 
 Get a tag value:
 
-```
+```cedar
 principal.getTag("username") == "refund-agent"
 ```
 
 Pattern matching:
 
-```
+```cedar
 principal.getTag("scope") like "*refund:write*"
 ```
 
@@ -109,7 +109,7 @@ This format is stable across invocations, so you can use `principal ==` for exac
 
 You can also use the `like` operator with wildcards for broader matching:
 
-```
+```cedar
 // Match any role in a specific account
 principal.id like "arn:aws:sts::123456789012:assumed-role/*"
 
@@ -130,7 +130,7 @@ Combine multiple conditions using logical operators:
 
 Example:
 
-```
+```cedar
 principal.hasTag("username") &&              // User must have username tag
 principal.getTag("username") == "refund-agent" &&  // Username must be "refund-agent"
 context.input.amount < 500                   // Amount must be less than $500

@@ -113,7 +113,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of PrepareAgent.
 
-```
+```json
 POST /agents/ABCDEFGHIJ/ HTTP/1.1
 ```
 

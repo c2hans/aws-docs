@@ -18,7 +18,7 @@ We recommend that you use LDAP over TLS/SSL (abbreviated LDAPS for short) to ens
 **Note**
 Make sure the UIDs and GIDs of directory service users and groups don't overlap with those that AWS ParallelCluster reserves. See [AWS ParallelCluster reserved users and groups](users-and-groups-v3.md).
 
-```
+```yaml
 DirectoryService:
   DomainName: {{string}}
   DomainAddr: {{string}}
@@ -51,7 +51,7 @@ This property corresponds to the sssd-ldap parameter that's called `ldap_search_
 The URI or URIs that point to the AD domain controller that's used as the LDAP server. The URI corresponds to the SSSD-LDAP parameter that's called `ldap_uri`. The value can be a comma separated string of URIs. To use LDAP, you must add `ldap://` to the beginning of the each URI.
 Example values:
 
-```
+```bash
 ldap://192.0.2.0,ldap://203.0.113.0          # LDAP
 ldaps://192.0.2.0,ldaps://203.0.113.0        # LDAPS without support for certificate verification
 ldaps://abcdef01234567890.corp.example.com  # LDAPS with support for certificate verification
@@ -70,7 +70,7 @@ The LDAP client uses the password to authenticate to the AD domain as a `DomainR
 If the user has the permission to [`DescribeSecret`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DescribeSecret.html), `PasswordSecretArn` is validated. `PasswordSecretArn` is valid if the specified secret exists. If the user IAM policy doesn't include `DescribeSecret`, `PasswordSecretArn` isn't validated and a warning message is displayed. For more information, see [Base AWS ParallelCluster `pcluster` user policy](iam-roles-in-parallelcluster-v3.md#iam-roles-in-parallelcluster-v3-base-user-policy).
 When the value of the secret changes, the cluster *isn't* automatically updated. To update the cluster for the new secret value, you must stop the compute fleet with the [`pcluster update-compute-fleet`](pcluster.update-compute-fleet-v3.md) command and then run the following command from within the head node.
 
-```
+```bash
 $ sudo /opt/parallelcluster/scripts/directory_service/update_directory_service_password.sh
 ```
 [Update policy: The compute fleet must be stopped for this setting to be changed for an update.](using-pcluster-update-cluster-v3.md#update-policy-compute-fleet-v3)
@@ -113,7 +113,7 @@ If this property is set, the SSSD parameter `access_provider` is set to `ldap` i
 If this property is omitted and customized user access isn't specified in [`DirectoryService`](DirectoryService-v3.md) / [`AdditionalSssdConfigs`](#yaml-DirectoryService-AdditionalSssdConfigs), all users in the directory can access the cluster.
 Examples:
 
-```
+```bash
 "!(cn={{SomeUser*}})"  # denies access to every user with an alias that starts with "SomeUser"
 "(cn={{SomeUser*}})"   # allows access to every user with alias that starts with "SomeUser"
 "memberOf=cn={{TeamOne}},ou=Users,ou=CORP,dc={{corp}},dc={{example}},dc={{com}}" # allows access only to users in group "TeamOne".
@@ -142,7 +142,7 @@ The SSSD parameters and values must be compatible with AWS ParallelCluster's SSS
 The following configuration snippets are examples of valid configurations for `AdditionalSssdConfigs`.
 This example enables debug level for SSSD logs, restricts the search base to a specific organizational unit, and disables credentials caching.
 
-```
+```yaml
 DirectoryService:
   ...
   AdditionalSssdConfigs:
@@ -152,7 +152,7 @@ DirectoryService:
 ```
 This example specifies the configuration of an SSSD [`simple`](https://www.mankier.com/5/sssd-simple) `access_provider`. Users from the `EngineeringTeam` are provided access to the directory. [`DirectoryService`](DirectoryService-v3.md) / [`LdapAccessFilter`](#yaml-DirectoryService-LdapAccessFilter) must not be set in this case.
 
-```
+```yaml
 DirectoryService:
   ...
   AdditionalSssdConfigs:

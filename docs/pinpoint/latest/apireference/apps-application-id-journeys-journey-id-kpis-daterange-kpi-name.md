@@ -91,7 +91,7 @@ Retrieves information about the communication requirements and options that are 
 #### JourneyDateRangeKpiResponse schema
 <a name="apps-application-id-journeys-journey-id-kpis-daterange-kpi-name-response-body-journeydaterangekpiresponse-example"></a>
 
-```
+```json
 {
   "KpiName": "string",
   "KpiResult": {
@@ -125,7 +125,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-journeys-journey-id-kpis-daterange-kpi-name-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

@@ -30,7 +30,7 @@ To allow the EC2 instances in your environment to assume the required role, the 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -45,7 +45,7 @@ Log deliveries are not supported when creating a knowledge base with a structure
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

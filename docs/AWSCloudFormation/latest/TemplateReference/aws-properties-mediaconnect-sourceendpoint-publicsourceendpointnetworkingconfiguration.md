@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::SourceEndpoint PublicSourceEndpointNetworkingConfiguration
 
-<a name="aws-properties-mediaconnect-sourceendpoint-publicsourceendpointnetworkingconfiguration-description"></a>The `PublicSourceEndpointNetworkingConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::SourceEndpoint](aws-resource-mediaconnect-sourceendpoint.md).
+The networking configuration for a publicly accessible source endpoint, including the CIDR blocks that are allowed to connect.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-publicsourceendpointnetworkingconfiguration-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-publicsourceendpointnetworkingconfiguration-properties"></a>
 
 `SourceAllowRules`  <a name="cfn-mediaconnect-sourceendpoint-publicsourceendpointnetworkingconfiguration-sourceallowrules"></a>
-Property description not available.
+The rules that specify which CIDR blocks can connect to the source endpoint. You can specify up to 10 rules.
 *Required*: Yes
 *Type*: Array of [PublicSourceEndpointNetworkingConfigurationAllowRule](aws-properties-mediaconnect-sourceendpoint-publicsourceendpointnetworkingconfigurationallowrule.md)
 *Minimum*: `0`

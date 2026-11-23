@@ -101,7 +101,7 @@ If any of the tags in the operator match any of the tags in the tag field of the
 
 The result sets of a numeric or tag operator can be combined using boolean logic: and/or. Parentheses can be used to group operators and/or change the evaluation order. The syntax of boolean logic operators is:
 
-```
+```text
 <expression> ::= <phrase> | <phrase> '|' <expression> | '(' <expression> ')'
 <phrase> ::= <term> | <term> <phrase>
 <term> ::= <range-search> | <tag-search> | '*'

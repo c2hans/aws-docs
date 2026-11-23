@@ -17,7 +17,7 @@ The following example shows how you can use the `aws:SourceArn` and `aws:SourceA
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

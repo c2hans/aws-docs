@@ -20,7 +20,7 @@ To add access to other AWS resources like DynamoDB, you’ll need to include per
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

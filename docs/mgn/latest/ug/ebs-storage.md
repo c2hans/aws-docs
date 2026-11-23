@@ -70,7 +70,7 @@ To modify the existing key policy using the AWS Management Console *policy view*
 
 1. Choose **Edit** and add the following JSON statements to the **Statement** field.
 
-   ```
+   ```json
        {
          "Sid": "Allow AWS Services permission to describe a customer managed key for encryption purposes",
          "Effect": "Allow",

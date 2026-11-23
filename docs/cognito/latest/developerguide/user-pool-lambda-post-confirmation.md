@@ -20,7 +20,7 @@ The request that Amazon Cognito passes to this Lambda function is a combination 
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "request": {
             "userAttributes": {
@@ -60,7 +60,7 @@ This example Lambda function sends a confirmation email message to your user usi
 ------
 #### [ Node.js ]
 
-```
+```javascript
 // Import required AWS SDK clients and commands for Node.js. Note that this requires
 // the `@aws-sdk/client-ses` module to be either bundled with this code or included
 // as a Lambda layer.

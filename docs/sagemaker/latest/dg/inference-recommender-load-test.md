@@ -34,7 +34,7 @@ A user is defined as a system-generated actor that runs in a loop and invokes re
   + For `ModelLatencyThresholds`, specify `Percentile` (the model latency percentile threshold) and `ValueInMilliseconds` (the model latency percentile value in milliseconds).
   + (Optional) For `FlatInvocations`, you can specify whether to continue the load test when the TPS (invocations per minute) rate flattens. A flattened TPS rate usually means that the endpoint has reached capacity. However, you might want to continue monitoring the endpoint under full capacity conditions. To continue the load test when this happens, specify this value as `Continue`. Otherwise, the default value is `Stop`.
 
-```
+```python
 # Create a low-level SageMaker service client.
 import boto3
 aws_region={{<INSERT>}}
@@ -136,7 +136,7 @@ A user is defined as a system-generated actor that runs in a loop and invokes re
   + For `ModelLatencyThresholds`, specify `Percentile` (the model latency percentile threshold) and `ValueInMilliseconds` (the model latency percentile value in milliseconds).
   + (Optional) For `FlatInvocations`, you can specify whether to continue the load test when the TPS (invocations per minute) rate flattens. A flattened TPS rate usually means that the endpoint has reached capacity. However, you might want to continue monitoring the endpoint under full capacity conditions. To continue the load test when this happens, specify this value as `Continue`. Otherwise, the default value is `Stop`.
 
-```
+```bash
 aws sagemaker create-inference-recommendations-job\
     --region {{<region>}}\
     --job-name {{<job-name>}}\
@@ -354,7 +354,7 @@ You can programmatically collect metrics across all load tests once the load tes
 
 Collect metrics with the `DescribeInferenceRecommendationsJob` API. Specify the job name of the load test for the `JobName` field:
 
-```
+```python
 load_test_response = sagemaker_client.describe_inference_recommendations_job(
                                                         JobName=load_test_job_name
                                                         )
@@ -362,13 +362,13 @@ load_test_response = sagemaker_client.describe_inference_recommendations_job(
 
 Print the response object.
 
-```
+```python
 load_test_response['Status']
 ```
 
 This returns a JSON response similar to the following example. Note that this example shows the recommended instance types for real-time inference (for an example showing serverless inference recommendations, see the example after this one).
 
-```
+```python
 {
     'JobName': {{'job-name'}},
     'JobDescription': {{'job-description'}},
@@ -440,7 +440,7 @@ The `Metrics` nested dictionary contains information about the estimated cost pe
 
 The following example shows the `InferenceRecommendations` part of the response for a load test job that was configured to return serverless inference recommendations:
 
-```
+```json
 "InferenceRecommendations": [
       {
          "EndpointConfiguration": {
@@ -481,13 +481,13 @@ You can interpret the recommendations for serverless inference similarly to the 
 
 Collect metrics with the `describe-inference-recommendations-job` API. Specify the job name of the load test for the `job-name` flag:
 
-```
+```bash
 aws sagemaker describe-inference-recommendations-job --job-name {{<job-name>}}
 ```
 
 This returns a response similar to the following example. Note that this example shows the recommended instance types for real-time inference (for an example showing Serverless Inference recommendations, see the example after this one).
 
-```
+```bash
 {
     'JobName': {{'job-name'}},
     'JobDescription': {{'job-description'}},
@@ -559,7 +559,7 @@ The `Metrics` nested dictionary contains information about the estimated cost pe
 
 The following example shows the `InferenceRecommendations` part of the response for a load test job that was configured to return serverless inference recommendations:
 
-```
+```json
 "InferenceRecommendations": [
       {
          "EndpointConfiguration": {

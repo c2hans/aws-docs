@@ -8,7 +8,7 @@ When you run a quantum circuit on quantum computers provided by vendors such as 
 
 With OpenQASM, you can explicitly specify a verbatim pragma around a box of code that is then left untouched and not optimized by the low-level compilation routine of the hardware. The following code example shows how to use the `#pragma braket verbatim` directive to achieve this.
 
-```
+```python
 OPENQASM 3;
 
 bit[2] c;

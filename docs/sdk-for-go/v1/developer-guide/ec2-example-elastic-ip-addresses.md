@@ -36,7 +36,7 @@ Create a new Go file named `ec2_describe_addresses.go`.
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -54,7 +54,7 @@ import (
 
 This routine prints out the Elastic IP Addresses for the account’s VPC. Initialize a session that the SDK will use to load credentials from the shared credentials file, `~/.aws/credentials`, and create a new EC2 service client.
 
-```
+```go
 func main() {
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
@@ -66,7 +66,7 @@ func main() {
 
 Make the API request to EC2 filtering for the addresses in the account’s VPC.
 
-```
+```go
     result, err := svc.DescribeAddresses(&ec2.DescribeAddressesInput{
         Filters: []*ec2.Filter{
             {
@@ -93,7 +93,7 @@ Make the API request to EC2 filtering for the addresses in the account’s VPC.
 
 The `fmtAddress` and `exitErrorf` functions are utility functions used in the example.
 
-```
+```go
 func fmtAddress(addr *ec2.Address) string {
     out := fmt.Sprintf("IP: %s,  allocation id: %s",
         aws.StringValue(addr.PublicIp), aws.StringValue(addr.AllocationId))
@@ -118,7 +118,7 @@ Create a new Go file named `ec2_allocate_address.go`.
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -134,7 +134,7 @@ import (
 
 This routine attempts to allocate a VPC Elastic IP address for the current region. The IP address requires and will be associated with the instance ID that is passed in.
 
-```
+```go
 func main() {
     if len(os.Args) != 2 {
         exitErrorf("instance ID required\nUsage: %s instance_id",
@@ -145,7 +145,7 @@ func main() {
 
 You will need to initialize a session that the SDK will use to load credentials from the shared credentials file, `~/.aws/credentials`, and create a new Amazon EC2 service client.
 
-```
+```go
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
     )
@@ -156,7 +156,7 @@ You will need to initialize a session that the SDK will use to load credentials 
 
 Call [AllocateAddress](https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.AllocateAddress), passing in “vpc” as the Domain value.
 
-```
+```go
     allocRes, err := svc.AllocateAddress(&ec2.AllocateAddressInput{
         Domain: aws.String("vpc"),
     })
@@ -167,7 +167,7 @@ Call [AllocateAddress](https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#E
 
 Call [AssociateAddress](https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.AssociateAddress) to associate the new Elastic IP address with an existing Amazon EC2 instance, and print out the results.
 
-```
+```go
     assocRes, err := svc.AssociateAddress(&ec2.AssociateAddressInput{
         AllocationId: allocRes.AllocationId,
         InstanceId:   aws.String(instanceID),
@@ -184,7 +184,7 @@ Call [AssociateAddress](https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#
 
 This example also uses the `exitErrorf` utility function.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -202,7 +202,7 @@ Create a new Go file named `ec2_release_address.go`.
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -219,7 +219,7 @@ import (
 
 The routine requires that the user pass in the allocation ID of the Elastic IP address.
 
-```
+```go
 func main() {
     if len(os.Args) != 2 {
         exitErrorf("allocation ID required\nUsage: %s allocation_id",
@@ -230,7 +230,7 @@ func main() {
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file, `~/.aws/credentials`, and create a new EC2 service client.
 
-```
+```go
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
     )
@@ -241,7 +241,7 @@ Initialize a session that the SDK will use to load credentials from the shared c
 
 Attempt to release the Elastic IP address by using the allocation ID.
 
-```
+```go
     _, err = svc.ReleaseAddress(&ec2.ReleaseAddressInput{
         AllocationId: aws.String(allocationID),
     })
@@ -259,7 +259,7 @@ Attempt to release the Elastic IP address by using the allocation ID.
 
 This example uses the `fmtAddress` and `exitErrorf` utility functions.
 
-```
+```go
 func fmtAddress(addr *ec2.Address) string {
     out := fmt.Sprintf("IP: %s,  allocation id: %s",
         aws.StringValue(addr.PublicIp), aws.StringValue(addr.AllocationId))

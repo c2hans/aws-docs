@@ -19,7 +19,7 @@ The CalculateRoutes API helps you to find the best routes between origin and des
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "Origin": [
         -123.116655,
@@ -50,7 +50,7 @@ The CalculateRoutes API helps you to find the best routes between origin and des
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "LegGeometryFormat": "FlexiblePolyline",
     "Notices": [],
@@ -244,7 +244,7 @@ The CalculateRoutes API helps you to find the best routes between origin and des
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.eu-central-1.amazonaws.com/v2/routes?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -278,7 +278,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes calculate-routes --key ${YourKey} \
 --origin -123.13277 49.281538 \
 --destination -123.01791785749363 49.22782762759908 \
@@ -294,7 +294,7 @@ aws geo-routes calculate-routes --key ${YourKey} \
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "Origin": [
         -123.116655,
@@ -339,7 +339,7 @@ aws geo-routes calculate-routes --key ${YourKey} \
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "LegGeometryFormat": "FlexiblePolyline",
     "Notices": [],
@@ -557,7 +557,7 @@ aws geo-routes calculate-routes --key ${YourKey} \
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.eu-central-1.amazonaws.com/v2/routes?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -605,7 +605,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes calculate-routes --key ${YourKey} \
 --origin -123.13277 49.281538 \
 --destination -123.01791785749363 49.22782762759908 \
@@ -621,7 +621,7 @@ aws geo-routes calculate-routes --key ${YourKey} \
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "Origin": [
         -123.116655,
@@ -649,7 +649,7 @@ aws geo-routes calculate-routes --key ${YourKey} \
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "LegGeometryFormat": "FlexiblePolyline",
     "Notices": [],
@@ -867,7 +867,7 @@ aws geo-routes calculate-routes --key ${YourKey} \
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.eu-central-1.amazonaws.com/v2/routes?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -898,7 +898,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes calculate-routes --key ${YourKey} \
 --origin -123.13277 49.281538 \
 --destination -123.01791785749363 49.22782762759908 \
@@ -914,7 +914,7 @@ aws geo-routes calculate-routes --key ${YourKey} \
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "Origin": [
         -123.116655,
@@ -943,7 +943,7 @@ aws geo-routes calculate-routes --key ${YourKey} \
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "LegGeometryFormat": "FlexiblePolyline",
     "Notices": [],
@@ -1128,7 +1128,7 @@ aws geo-routes calculate-routes --key ${YourKey} \
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.eu-central-1.amazonaws.com/v2/routes?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -1160,7 +1160,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes calculate-routes --key ${YourKey} \
 --origin -123.116655 49.281538 \
 --destination -123.01791785749363 49.22782762759908 \
@@ -1176,7 +1176,7 @@ aws geo-routes calculate-routes --key ${YourKey} \
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "Origin": [
         -123.116655,
@@ -1214,7 +1214,7 @@ aws geo-routes calculate-routes --key ${YourKey} \
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "LegGeometryFormat": "FlexiblePolyline",
     "Notices": [],
@@ -1399,7 +1399,7 @@ aws geo-routes calculate-routes --key ${YourKey} \
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://routes.geo.eu-central-1.amazonaws.com/v2/routes?key=Your_key' \
   --header 'Content-Type: application/json' \
@@ -1440,7 +1440,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-routes calculate-routes --key ${YourKey} \
 --origin -123.13277 49.281538 \
 --destination -123.01791785749363 49.22782762759908 \

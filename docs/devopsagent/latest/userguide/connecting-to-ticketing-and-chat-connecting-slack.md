@@ -85,6 +85,8 @@ To find the channel ID, open the channel in Slack, choose the channel name at th
 
 To use one-way notifications only, leave **Bidirectional mode** turned off and skip to [Step 9](#step-9-complete-the-association).
 
+To use bidirectional mode, give the channel a role that has the permissions of the `AIDevOpsChannelAccessPolicy` AWS managed policy. If you choose **Assign an existing role** or create a role from the policy template, attach this policy to the role. You can also add the statements of this policy to the permissions policy of the role. For more information, see [AIDevOpsChannelAccessPolicy](aws-devops-agent-security-devops-agent-iam-permissions.html#aidevopschannelaccesspolicy).
+
 To enable bidirectional communication:
 
 1. Under **Bidirectional communication**, turn on **Bidirectional mode**.

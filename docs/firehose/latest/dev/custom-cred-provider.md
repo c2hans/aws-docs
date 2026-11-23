@@ -8,7 +8,7 @@ You can create a custom credentials provider and give its class name and jar pat
 
 To create a custom credentials provider, define a class that implements the `AWSCredentialsProvider` interface, like the one in the following example.
 
-```
+```JAVA
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;

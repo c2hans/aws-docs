@@ -16,7 +16,7 @@ To manually record impressions data for an event, list the impressions in the [P
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```py
 import boto3
 
 personalize_events = boto3.client(service_name='personalize-events')
@@ -41,7 +41,7 @@ personalize_events.put_events(
 
 Use the following `putEvents` method to record an event with impressions data and a recommendationId. For the impressions parameter, pass the list of itemIds as an ArrayList.
 
-```
+```java
 public static void putEvents(PersonalizeEventsClient personalizeEventsClient,
                                 String trackingId,
                                 String sessionId,

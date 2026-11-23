@@ -152,7 +152,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-monitoring-sqs-create-ex-min"></a>
 
-```
+```json
 {
   "Description": "This is a test description",
   "VpcId": "vpc-01234567890abcdef",
@@ -168,7 +168,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-monitoring-sqs-create-ex-max"></a>
 
-```
+```json
 {
   "Description": "This is a test description",
   "VpcId": "vpc-12345678",

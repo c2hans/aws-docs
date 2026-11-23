@@ -69,7 +69,7 @@ Gets individual readiness status for a readiness check. To see the overall readi
 #### GetReadinessCheckResourceStatusOutput schema
 <a name="readinesschecks-readinesscheckname-resource-resourceidentifier-status-response-body-getreadinesscheckresourcestatusoutput-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "readiness": enum,

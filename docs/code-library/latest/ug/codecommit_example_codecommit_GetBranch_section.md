@@ -39,7 +39,7 @@ For more information, see [View branch details in AWS CodeCommit](https://docs.a
 **Tools for PowerShell V4**
 **Example 1: This example gets information about the specified branch for the specified repository.**
 
-```
+```powershell
 Get-CCBranch -RepositoryName MyDemoRepo -BranchName MyNewBranch
 ```
 **Output:**
@@ -54,7 +54,7 @@ MyNewBranch                             7763222d...561fc9c9
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified branch for the specified repository.**
 
-```
+```powershell
 Get-CCBranch -RepositoryName MyDemoRepo -BranchName MyNewBranch
 ```
 **Output:**

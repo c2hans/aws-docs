@@ -32,7 +32,7 @@ You must create this as a *customer-managed policy*, not as an inline policy. Th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

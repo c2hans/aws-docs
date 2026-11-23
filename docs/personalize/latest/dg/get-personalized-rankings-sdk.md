@@ -19,7 +19,7 @@ The following code shows how to get a personalized ranking for a user. Specify t
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 
 personalizeRt = boto3.client('personalize-runtime')
@@ -38,7 +38,7 @@ for item in response['personalizedRanking']:
 ------
 #### [ SDK for Java 2.x ]
 
-```
+```java
 public static List<PredictedItem> getRankedRecs(PersonalizeRuntimeClient personalizeRuntimeClient,
                                                 String campaignArn,
                                                 String userId,
@@ -74,7 +74,7 @@ public static List<PredictedItem> getRankedRecs(PersonalizeRuntimeClient persona
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 // Get service clients module and commands using ES6 syntax.
 import { GetPersonalizedRankingCommand } from "@aws-sdk/client-personalize-runtime";
 import { personalizeRuntimeClient } from "./libs/personalizeClients.js";
@@ -111,7 +111,7 @@ If you enabled metadata in recommendations for your campaign, you can specify th
 
 The following code sample shows how to specify the metadata columns as part of your request for a personalized ranking.
 
-```
+```python
 import boto3
 
 personalizeRt = boto3.client('personalize-runtime')
@@ -136,7 +136,7 @@ for item in response['personalizedRanking']:
 
 Use the following code to get a personalized ranking based on contextual metadata. For `context`, for each key-value pair, provide the metadata field as the key and the context data as the value. In the following sample code, the key is `DEVICE` and the value is `mobile phone`. Replace these values and the `Campaign ARN` and `User ID` with your own. Also change `inputList` to a list of item IDs that are in the data that you used to train the solution. Amazon Personalize considers the first item in the list of most interest to the user.
 
-```
+```python
 import boto3
 
 personalizeRt = boto3.client('personalize-runtime')

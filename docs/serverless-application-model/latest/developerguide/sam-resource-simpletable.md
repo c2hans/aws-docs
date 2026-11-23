@@ -21,7 +21,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-resource-simpletable-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Serverless::SimpleTable
 Properties:
   PointInTimeRecoverySpecification: {{[PointInTimeRecoverySpecification](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-pointintimerecoveryspecification.html)}}
@@ -94,7 +94,7 @@ Example of a SimpleTable
 #### YAML
 <a name="sam-resource-simpletable--examples--simpletableexample--yaml"></a>
 
-```
+```yaml
 Properties:
   TableName: my-table
   PrimaryKey:

@@ -37,12 +37,6 @@ Required: Yes
 Type: Long
 Required: Yes
 
- ** schemaType **   <a name="bedrockagentcorecontrol-Type-DatasetSummary-schemaType"></a>
- The schema type of the dataset.
-Type: String
-Valid Values: `AGENTCORE_EVALUATION_PREDEFINED_V1 | AGENTCORE_EVALUATION_SIMULATED_V1 | THIRD_PARTY_EVALUATION_V1`
-Required: Yes
-
  ** status **   <a name="bedrockagentcorecontrol-Type-DatasetSummary-status"></a>
  The current status of the dataset.
 Type: String
@@ -63,6 +57,17 @@ Required: No
  Publish synchronization state. Only authoritative when status is ACTIVE.
 Type: String
 Valid Values: `MODIFIED | UNMODIFIED`
+Required: No
+
+ ** exampleCountByField **   <a name="bedrockagentcorecontrol-Type-DatasetSummary-exampleCountByField"></a>
+ The number of examples that have each field, for the DRAFT. Absent when the counts are unknown.
+Type: [ExampleCountByField](API_ExampleCountByField.md) object
+Required: No
+
+ ** schemaType **   <a name="bedrockagentcorecontrol-Type-DatasetSummary-schemaType"></a>
+ The schema type of the dataset.
+Type: String
+Valid Values: `AGENTCORE_EVALUATION_PREDEFINED_V1 | AGENTCORE_EVALUATION_SIMULATED_V1 | THIRD_PARTY_EVALUATION_V1`
 Required: No
 
 ## See Also

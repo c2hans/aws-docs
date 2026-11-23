@@ -105,7 +105,7 @@ IAM recommends that you limit your access keys to 12 hours.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -156,7 +156,7 @@ After setting up credentials for programmatic access, you need to configure perm
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

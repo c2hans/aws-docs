@@ -21,7 +21,7 @@ Send up to 50 dual tone multi-frequency (DTMF) digits on any leg of a call. The 
 
 The following example shows a typical `SendDigits` action:
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions":[
@@ -60,7 +60,7 @@ The following example shows a typical `SendDigits` action:
 
 The following example shows a typical `ACTION_SUCCESSFUL` event for the `SendDigits` action.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{3}},
@@ -84,7 +84,7 @@ The following example shows a typical `ACTION_SUCCESSFUL` event for the `SendDig
 
 The following example shows a typical `ACTION_FAILED` event for the `SendDigits` action.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{3}},

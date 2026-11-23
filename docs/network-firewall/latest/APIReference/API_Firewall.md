@@ -106,6 +106,11 @@ A setting indicating whether the firewall is protected against a change to the f
 Type: Boolean
 Required: No
 
+ ** IgwFirewallConfiguration **   <a name="networkfirewall-Type-Firewall-IgwFirewallConfiguration"></a>
+Contains the settings that configure an internet gateway firewall, which AWS Network Security Manager creates and manages for a VPC. Network Firewall returns this setting only for an internet gateway firewall. For a standard firewall, this setting isn't present.
+Type: [IgwFirewallConfiguration](API_IgwFirewallConfiguration.md) object
+Required: No
+
  ** NatGatewayCreateMappings **   <a name="networkfirewall-Type-Firewall-NatGatewayCreateMappings"></a>
 The NAT gateways that you specified for Network Firewall to create for a proxy mode firewall. To get the IDs and status of the NAT gateways that are attached to the firewall, see `NatGatewayAttachments` in the firewall's `SyncStates`.
 Type: Array of [NatGatewayCreateMapping](API_NatGatewayCreateMapping.md) objects

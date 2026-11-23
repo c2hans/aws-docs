@@ -26,7 +26,7 @@ After the resource share is created, it can take a few minutes for the resource 
 
 Amazon SageMaker AI supports only one type of resource policy. The SageMaker AI resource policy must allow all of the following operations:
 
-```
+```JSON
 "sagemaker:DescribeAction"
 "sagemaker:DescribeArtifact"
 "sagemaker:DescribeContext"
@@ -39,7 +39,7 @@ Amazon SageMaker AI supports only one type of resource policy. The SageMaker AI 
 **Example The following is a SageMaker AI resource policy created using AWS Resource Access Manager for creating a resource share for an accounts lineage group.**
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

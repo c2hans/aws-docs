@@ -12,7 +12,7 @@ AWS will end support for Amazon EKS AL2-optimized and AL2-accelerated AMIs, star
 
 Run the following command to see which AMI type AWS Batch selected for your Amazon EKS compute environment. The following example is a non-GPU instance type.
 
-```
+```sh
 # compute CE example: indicates Batch has chosen the AL2023 x86 or ARM EKS 1.37 AMI, depending on instance types
     $ aws batch describe-compute-environments --compute-environments {{My-Eks-CE1}} \
         | jq '.computeEnvironments[].computeResources.ec2Configuration'
@@ -26,7 +26,7 @@ Run the following command to see which AMI type AWS Batch selected for your Amaz
 
 The following example is a GPU instance type.
 
-```
+```sh
 # GPU CE example: indicates Batch has chosen the AL2023 x86 EKS Accelerated 1.37 AMI
     $ aws batch describe-compute-environments --compute-environments {{My-Eks-GPU-CE}} \
         | jq '.computeEnvironments[].computeResources.ec2Configuration'

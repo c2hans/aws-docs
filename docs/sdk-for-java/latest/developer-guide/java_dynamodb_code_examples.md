@@ -35,7 +35,7 @@ The following code example shows how to get started using DynamoDB.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -122,7 +122,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 Create a DynamoDB table.
 
-```
+```java
     // Create a table with a Sort key.
     public static void createTable(DynamoDbClient ddb, String tableName) {
         DynamoDbWaiter dbWaiter = ddb.waiter();
@@ -181,7 +181,7 @@ Create a DynamoDB table.
 ```
 Create a helper function to download and extract the sample JSON file.
 
-```
+```java
     // Load data into the table.
     public static void loadData(DynamoDbClient ddb, String tableName, String fileName) throws IOException {
         DynamoDbEnhancedClient enhancedClient = DynamoDbEnhancedClient.builder()
@@ -217,7 +217,7 @@ Create a helper function to download and extract the sample JSON file.
 ```
 Get an item from a table.
 
-```
+```java
     public static void getItem(DynamoDbClient ddb) {
 
         HashMap<String, AttributeValue> keyToGet = new HashMap<>();
@@ -256,7 +256,7 @@ Get an item from a table.
 ```
 Full example.
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -607,7 +607,7 @@ The following code example shows how to use `BatchGetItem`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 Shows how to get batch items using the service client.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -683,7 +683,7 @@ public class BatchReadItems {
 ```
 Shows how to get batch items using the service client and a paginator.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -755,7 +755,7 @@ The following code example shows how to use `BatchWriteItem`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb/#code-examples).
 Inserts many items into a table by using the service client.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -837,7 +837,7 @@ public class BatchWriteItems {
 ```
 Inserts many items into a table by using the enhanced client.
 
-```
+```java
 import com.example.dynamodb.Customer;
 import com.example.dynamodb.Music;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
@@ -950,7 +950,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 
-```
+```java
 import software.amazon.awssdk.core.waiters.WaiterResponse;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -1052,7 +1052,7 @@ The following code example shows how to use `DeleteItem`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -1129,7 +1129,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -1199,7 +1199,7 @@ The following code example shows how to use `DescribeTable`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -1288,7 +1288,7 @@ The following code example shows how to use `DescribeTimeToLive`.
 **SDK for Java 2.x**
 Describe TTL configuration on an existing DynamoDB table using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DescribeTimeToLiveRequest;
@@ -1327,7 +1327,7 @@ The following code example shows how to use `GetItem`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 Gets an item from a table by using the DynamoDbClient.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -1421,7 +1421,7 @@ The following code example shows how to use `ListTables`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -1499,7 +1499,7 @@ The following code example shows how to use `PutItem`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 Puts an item into a table using [DynamoDbClient](http://docs.aws.amazon.com/sdk-for-java/latest/reference/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -1616,7 +1616,7 @@ The following code example shows how to use `Query`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 Queries a table by using [DynamoDbClient](http://docs.aws.amazon.com/sdk-for-java/latest/reference/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -1708,7 +1708,7 @@ public class Query {
 ```
 Queries a table by using `DynamoDbClient` and a secondary index.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -1783,7 +1783,7 @@ The following code example shows how to use `Scan`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 Scans an Amazon DynamoDB table using [DynamoDbClient](http://docs.aws.amazon.com/sdk-for-java/latest/reference/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -1866,7 +1866,7 @@ The following code example shows how to use `UpdateItem`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 Updates an item in a table using [DynamoDbClient](http://docs.aws.amazon.com/sdk-for-java/latest/reference/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.model.AttributeAction;
@@ -1968,7 +1968,7 @@ The following code example shows how to use `UpdateTimeToLive`.
 **SDK for Java 2.x**
 Enable TTL on an existing DynamoDB table using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -2006,7 +2006,7 @@ import java.util.logging.Logger;
 ```
 Disable TTL on an existing DynamoDB table using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -2072,7 +2072,7 @@ The following code example shows how to compare multiple values with a single at
 **SDK for Java 2.x**
 Compare multiple values with a single attribute in DynamoDB using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -2347,7 +2347,7 @@ import java.util.Map;
 ```
 Example usage of comparing multiple values with AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(DynamoDbClient dynamoDbClient, String tableName) {
         System.out.println("Demonstrating how to compare multiple values with a single attribute in DynamoDB");
 
@@ -2442,7 +2442,7 @@ The following code example shows how to conditionally update an item's TTL.
 **SDK for Java 2.x**
 Update TTL on on an existing DynamoDB Item in a table, with a condition.
 
-```
+```java
 package com.amazon.samplelib.ttl;
 
 import com.amazon.samplelib.CodeSampleUtils;
@@ -2595,7 +2595,7 @@ The following code example shows how to count expression operators in DynamoDB.
 **SDK for Java 2.x**
 Demonstrate expression operator counting using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -3004,7 +3004,7 @@ import java.util.regex.Pattern;
 ```
 Example usage of expression operator counting with AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(DynamoDbClient dynamoDbClient, String tableName) {
         // Example key
         Map<String, AttributeValue> key = new HashMap<>();
@@ -3109,7 +3109,7 @@ The following code example shows how to create a table with global secondary ind
 **SDK for Java 2.x**
 Create DynamoDB table with Global Secondary Index using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.core.waiters.WaiterResponse;
 import software.amazon.awssdk.regions.Region;
@@ -3277,7 +3277,7 @@ The following code example shows how to create a table with warm throughput enab
 **SDK for Java 2.x**
 Create DynamoDB table with warm throughput setting using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeDefinition;
 import software.amazon.awssdk.services.dynamodb.model.CreateTableRequest;
@@ -3462,7 +3462,7 @@ The following code example shows how to create an item with TTL.
 
 **SDK for Java 2.x**
 
-```
+```java
 package com.amazon.samplelib.ttl;
 
 import com.amazon.samplelib.CodeSampleUtils;
@@ -3628,7 +3628,7 @@ The following code example shows how to create and manage DynamoDB global tables
 **SDK for Java 2.x**
 Create a regional table ready for MRSC conversion using AWS SDK for Java 2.x.
 
-```
+```java
     public static CreateTableResponse createRegionalTable(final DynamoDbClient dynamoDbClient, final String tableName) {
 
         if (dynamoDbClient == null) {
@@ -3681,7 +3681,7 @@ Create a regional table ready for MRSC conversion using AWS SDK for Java 2.x.
 ```
 Convert a regional table to MRSC with replicas and witness using AWS SDK for Java 2.x.
 
-```
+```java
     public static UpdateTableResponse convertToMRSCWithWitness(
         final DynamoDbClient dynamoDbClient,
         final String tableName,
@@ -3743,7 +3743,7 @@ Convert a regional table to MRSC with replicas and witness using AWS SDK for Jav
 ```
 Describe an MRSC global table configuration using AWS SDK for Java 2.x.
 
-```
+```java
     public static DescribeTableResponse describeMRSCTable(final DynamoDbClient dynamoDbClient, final String tableName) {
 
         if (dynamoDbClient == null) {
@@ -3802,7 +3802,7 @@ Describe an MRSC global table configuration using AWS SDK for Java 2.x.
 ```
 Add test items to verify MRSC strong consistency using AWS SDK for Java 2.x.
 
-```
+```java
     public static PutItemResponse putTestItem(
         final DynamoDbClient dynamoDbClient,
         final String tableName,
@@ -3857,7 +3857,7 @@ Add test items to verify MRSC strong consistency using AWS SDK for Java 2.x.
 ```
 Read items with consistent reads from MRSC replicas using AWS SDK for Java 2.x.
 
-```
+```java
     public static GetItemResponse getItemWithConsistentRead(
         final DynamoDbClient dynamoDbClient, final String tableName, final String artist, final String songTitle) {
 
@@ -3908,7 +3908,7 @@ Read items with consistent reads from MRSC replicas using AWS SDK for Java 2.x.
 ```
 Perform conditional updates with MRSC guarantees using AWS SDK for Java 2.x.
 
-```
+```java
     public static UpdateItemResponse performConditionalUpdate(
         final DynamoDbClient dynamoDbClient,
         final String tableName,
@@ -3974,7 +3974,7 @@ Perform conditional updates with MRSC guarantees using AWS SDK for Java 2.x.
 ```
 Wait for MRSC replicas and witnesses to become active using AWS SDK for Java 2.x.
 
-```
+```java
     public static void waitForMRSCReplicasActive(
         final DynamoDbClient dynamoDbClient, final String tableName, final int maxWaitTimeSeconds)
         throws InterruptedException {
@@ -4089,7 +4089,7 @@ Wait for MRSC replicas and witnesses to become active using AWS SDK for Java 2.x
 ```
 Clean up MRSC replicas and witnesses using AWS SDK for Java 2.x.
 
-```
+```java
     public static UpdateTableResponse cleanupMRSCReplicas(
         final DynamoDbClient dynamoDbClient,
         final String tableName,
@@ -4148,7 +4148,7 @@ Clean up MRSC replicas and witnesses using AWS SDK for Java 2.x.
 ```
 Complete MRSC workflow demonstration using AWS SDK for Java 2.x.
 
-```
+```java
     public static void demonstrateCompleteMRSCWorkflow(
         final DynamoDbClient primaryClient,
         final DynamoDbClient replicaClient,
@@ -4280,7 +4280,7 @@ The following code example shows how to create and manage DynamoDB global tables
 **SDK for Java 2.x**
 Create a table with Global Secondary Index and DynamoDB Streams using AWS SDK for Java 2.x.
 
-```
+```java
     public static CreateTableResponse createTableWithGSI(
         final DynamoDbClient dynamoDbClient, final String tableName, final String indexName) {
 
@@ -4347,7 +4347,7 @@ Create a table with Global Secondary Index and DynamoDB Streams using AWS SDK fo
 ```
 Wait for a table to become active using AWS SDK for Java 2.x.
 
-```
+```java
     public static void waitForTableActive(final DynamoDbClient dynamoDbClient, final String tableName) {
 
         if (dynamoDbClient == null) {
@@ -4377,7 +4377,7 @@ Wait for a table to become active using AWS SDK for Java 2.x.
 ```
 Add a replica to create or extend a global table using AWS SDK for Java 2.x.
 
-```
+```java
     public static UpdateTableResponse addReplica(
         final DynamoDbClient dynamoDbClient,
         final String tableName,
@@ -4434,7 +4434,7 @@ Add a replica to create or extend a global table using AWS SDK for Java 2.x.
 ```
 Remove a replica from a global table using AWS SDK for Java 2.x.
 
-```
+```java
     public static UpdateTableResponse removeReplica(
         final DynamoDbClient dynamoDbClient, final String tableName, final Region replicaRegion) {
 
@@ -4474,7 +4474,7 @@ Remove a replica from a global table using AWS SDK for Java 2.x.
 ```
 Add test items to verify replication using AWS SDK for Java 2.x.
 
-```
+```java
     public static PutItemResponse putTestItem(
         final DynamoDbClient dynamoDbClient, final String tableName, final String artist, final String songTitle) {
 
@@ -4522,7 +4522,7 @@ Add test items to verify replication using AWS SDK for Java 2.x.
 ```
 Describe global table configuration and replicas using AWS SDK for Java 2.x.
 
-```
+```java
     public static DescribeTableResponse describeTable(final DynamoDbClient dynamoDbClient, final String tableName) {
 
         if (dynamoDbClient == null) {
@@ -4563,7 +4563,7 @@ Describe global table configuration and replicas using AWS SDK for Java 2.x.
 ```
 Complete example of global table operations using AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(final Region sourceRegion, final Region replicaRegion) {
 
         String tableName = "Music";
@@ -4664,7 +4664,7 @@ The following code example shows how to perform advanced query operations in Dyn
 **SDK for Java 2.x**
 Query with strongly consistent reads using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -4719,7 +4719,7 @@ import java.util.logging.Logger;
 ```
 Query using a Global Secondary Index with AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -4819,7 +4819,7 @@ import java.util.Map;
 ```
 Query with pagination using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -4906,7 +4906,7 @@ import java.util.Map;
 ```
 Query with complex filters using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -4980,7 +4980,7 @@ import java.util.logging.Logger;
 ```
 Query with a dynamically constructed filter expression using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -5106,7 +5106,7 @@ import java.util.Map;
 ```
 Query with a filter expression and limit using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -5189,7 +5189,7 @@ The following code example shows how to perform list operations in DynamoDB.
 **SDK for Java 2.x**
 Demonstrate list operations using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -5401,7 +5401,7 @@ import java.util.Map;
 ```
 Example usage of list operations with AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(DynamoDbClient dynamoDbClient, String tableName) {
         // Example key
         Map<String, AttributeValue> key = new HashMap<>();
@@ -5491,7 +5491,7 @@ The following code example shows how to perform map operations in DynamoDB.
 **SDK for Java 2.x**
 Demonstrate map operations using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -5723,7 +5723,7 @@ import java.util.Map;
 ```
 Example usage of map operations with AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(DynamoDbClient dynamoDbClient, String tableName) {
         // Example key
         Map<String, AttributeValue> key = new HashMap<>();
@@ -5817,7 +5817,7 @@ The following code example shows how to perform set operations in DynamoDB.
 **SDK for Java 2.x**
 Demonstrate set operations using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -6148,7 +6148,7 @@ import java.util.Set;
 ```
 Example usage of set operations with AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(DynamoDbClient dynamoDbClient, String tableName) {
         // Example key
         Map<String, AttributeValue> key = new HashMap<>();
@@ -6271,7 +6271,7 @@ The following code example shows how to:
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 
-```
+```java
 public class ScenarioPartiQLBatch {
     public static void main(String[] args) throws IOException {
         String tableName = "MoviesPartiQBatch";
@@ -6687,7 +6687,7 @@ The following code example shows how to:
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 
-```
+```java
 public class ScenarioPartiQ {
     public static void main(String[] args) throws IOException {
         String fileName = "../../../resources/sample_files/movies.json";
@@ -6970,7 +6970,7 @@ The following code example shows how to query a table using a Global Secondary I
 **SDK for Java 2.x**
 Query a DynamoDB table using its primary key and a Global Secondary Index (GSI) with AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -7070,7 +7070,7 @@ import java.util.Map;
 ```
 Compare querying a table directly versus querying a GSI with AWS SDK for Java 2.x.
 
-```
+```java
     public static void main(String[] args) {
         final String usage =
             """
@@ -7153,7 +7153,7 @@ The following code example shows how to query a table using a begins\_with condi
 **SDK for Java 2.x**
 Query a DynamoDB table using a begins\_with condition on the sort key with AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -7214,7 +7214,7 @@ import java.util.logging.Logger;
 ```
 Demonstrate using begins\_with with different prefix lengths with AWS SDK for Java 2.x.
 
-```
+```java
     public static void main(String[] args) {
         try {
             CodeSampleUtils.BeginsWithQueryConfig config = CodeSampleUtils.BeginsWithQueryConfig.fromArgs(args);
@@ -7281,7 +7281,7 @@ The following code example shows how to query a table using a date range in the 
 **SDK for Java 2.x**
 Query a DynamoDB table for items within a date range with AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -7357,7 +7357,7 @@ import java.util.logging.Logger;
 ```
 Demonstrates how to query a DynamoDB table with date range filtering.
 
-```
+```java
     public static void main(String[] args) {
         final String usage =
             """
@@ -7467,7 +7467,7 @@ The following code example shows how to query a table with a complex filter expr
 **SDK for Java 2.x**
 Query a DynamoDB table with a complex filter expression using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -7552,7 +7552,7 @@ The following code example shows how to query a table with a dynamic filter expr
 **SDK for Java 2.x**
 Query a DynamoDB table with a dynamically constructed filter expression using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -7603,7 +7603,7 @@ import java.util.Map;
 ```
 Demonstrates how to use dynamic filter expressions with AWS SDK for Java 2.x.
 
-```
+```java
     public static void main(String[] args) {
         final String usage =
             """
@@ -7692,7 +7692,7 @@ The following code example shows how to query a table with a filter expression a
 **SDK for Java 2.x**
 Query a DynamoDB table with a filter expression and limit using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -7773,7 +7773,7 @@ The following code example shows how to query a table with nested attributes.
 **SDK for Java 2.x**
 Query a DynamoDB table with nested attributes using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -7853,7 +7853,7 @@ import java.util.Map;
 ```
 Demonstrates how to query a DynamoDB table with nested attributes.
 
-```
+```java
     public static void main(String[] args) {
         final String usage =
             """
@@ -7945,7 +7945,7 @@ The following code example shows how to query a table with pagination.
 **SDK for Java 2.x**
 Query a DynamoDB table with pagination using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -8032,7 +8032,7 @@ import java.util.Map;
 ```
 Demonstrates how to query a DynamoDB table with pagination.
 
-```
+```java
     public static void main(String[] args) {
         final String usage =
             """
@@ -8112,7 +8112,7 @@ The following code example shows how to query a table with strongly consistent r
 **SDK for Java 2.x**
 Query a DynamoDB table with configurable read consistency using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -8175,7 +8175,7 @@ The following code example shows how to query for TTL items.
 **SDK for Java 2.x**
 Query Filtered Expression to gather TTL items in a DynamoDB table using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -8228,7 +8228,7 @@ The following code example shows how to query tables using date and time pattern
 **SDK for Java 2.x**
 Query using date ranges in sort keys with AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -8304,7 +8304,7 @@ import java.util.logging.Logger;
 ```
 Query using date-time variables with AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -8369,7 +8369,7 @@ import java.util.Map;
 ```
 Query within date ranges in Unix epoch timestamps with AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -8434,7 +8434,7 @@ import java.util.Map;
 ```
 Query within date ranges using LocalDateTime objects with AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -8482,7 +8482,7 @@ The following code example shows how to understand update expression order.
 **SDK for Java 2.x**
 Demonstrate update expression order using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -8772,7 +8772,7 @@ import java.util.Map;
 ```
 Example usage of update expression order with AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(DynamoDbClient dynamoDbClient, String tableName) {
         // Example key
         Map<String, AttributeValue> key = new HashMap<>();
@@ -8867,7 +8867,7 @@ The following code example shows how to update a table's warm throughput setting
 **SDK for Java 2.x**
 Update warm throughput setting on an existing DynamoDB table using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.model.GlobalSecondaryIndexUpdate;
@@ -8940,7 +8940,7 @@ The following code example shows how to update an item's TTL.
 **SDK for Java 2.x**
 Update TTL on an existing DynamoDB item in a table.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -9036,7 +9036,7 @@ The following code example shows how to use atomic counter operations in DynamoD
 **SDK for Java 2.x**
 Demonstrate atomic counter operations using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -9289,7 +9289,7 @@ import java.util.Map;
 ```
 Example usage of atomic counter operations with AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(DynamoDbClient dynamoDbClient, String tableName) {
         // Example key
         Map<String, AttributeValue> key = new HashMap<>();
@@ -9373,7 +9373,7 @@ The following code example shows how to use conditional operations in DynamoDB.
 **SDK for Java 2.x**
 Demonstrate conditional operations using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.ConditionalCheckFailedException;
@@ -9707,7 +9707,7 @@ import java.util.Map;
 ```
 Example usage of conditional operations with AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(DynamoDbClient dynamoDbClient, String tableName) {
         // Example key
         Map<String, AttributeValue> key = new HashMap<>();
@@ -9811,7 +9811,7 @@ The following code example shows how to use expression attribute names in Dynamo
 **SDK for Java 2.x**
 Demonstrate expression attribute names using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -10046,7 +10046,7 @@ import java.util.Map;
 ```
 Example usage of expression attribute names with AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(DynamoDbClient dynamoDbClient, String tableName) {
         // Example key
         Map<String, AttributeValue> key = new HashMap<>();
@@ -10166,7 +10166,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using Java.
 
-```
+```java
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.amazonaws.services.lambda.runtime.events.DynamodbEvent;
@@ -10202,7 +10202,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using Java.
 
-```
+```java
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import com.amazonaws.services.lambda.runtime.Context;

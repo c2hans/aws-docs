@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/firehose-redshift-create-a
 
 1. For **COPY options**, paste the following:
 
-   ```
+   ```json
    {
      "jsonpaths": [
        "$.Type",

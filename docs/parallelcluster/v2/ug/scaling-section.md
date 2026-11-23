@@ -13,7 +13,7 @@ Specifies settings that define how the compute nodes scale.
 
 The format is `[scaling {{scaling-name}}]`. {{scaling-name}} must start with a letter, contain no more than 30 characters, and only contain letters, numbers, hyphens (-), and underscores (\_).
 
-```
+```ini
 [scaling custom]
 scaledown_idletime = 10
 ```
@@ -27,7 +27,7 @@ This parameter isn't used if `awsbatch` is the scheduler.
 
 The default value is `10`.
 
-```
+```ini
 scaledown_idletime = 10
 ```
 

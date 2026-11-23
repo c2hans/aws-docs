@@ -116,7 +116,7 @@ You can further restrict access to AWS DMS resources using tagging. For more inf
 
 ****
 
-```
+```json
 {
 
   "Version":"2012-10-17",
@@ -332,7 +332,7 @@ The information returned from the command is as follows.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -372,7 +372,7 @@ The following procedures create the `dms-vpc-role`, `dms-cloudwatch-logs-role`, 
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [
@@ -410,7 +410,7 @@ The following procedures create the `dms-vpc-role`, `dms-cloudwatch-logs-role`, 
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [
@@ -450,7 +450,7 @@ If you use Amazon Redshift as your target database, you must create the IAM role
 
 ****
 
-   ```
+   ```json
     {
      "Version":"2012-10-17",
      "Statement": [

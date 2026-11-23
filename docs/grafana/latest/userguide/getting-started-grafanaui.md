@@ -161,7 +161,7 @@ You could even take it a step further by calculating the deltas of these deltas,
 
  For example, consider a query like the following example.
 
-```
+```sql
 SELECT BUCKET(StartTime, 1h), AVG(Temperature) AS Temp, Location FROM T
   GROUP BY BUCKET(StartTime, 1h), Location
   ORDER BY time asc

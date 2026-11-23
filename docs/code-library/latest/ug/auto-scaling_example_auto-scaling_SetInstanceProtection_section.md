@@ -42,12 +42,12 @@ For more information, see [Use instance scale-in protection to control instance 
 **Tools for PowerShell V4**
 **Example 1: This example enables instance protection for the specified instance.**
 
-```
+```powershell
 Set-ASInstanceProtection -AutoScalingGroupName my-asg -InstanceId i-12345678 -ProtectedFromScaleIn $true
 ```
 **Example 2: This example disables instance protection for the specified instance.**
 
-```
+```powershell
 Set-ASInstanceProtection -AutoScalingGroupName my-asg -InstanceId i-12345678 -ProtectedFromScaleIn $false
 ```
 +  For API details, see [SetInstanceProtection](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -55,12 +55,12 @@ Set-ASInstanceProtection -AutoScalingGroupName my-asg -InstanceId i-12345678 -Pr
 **Tools for PowerShell V5**
 **Example 1: This example enables instance protection for the specified instance.**
 
-```
+```powershell
 Set-ASInstanceProtection -AutoScalingGroupName my-asg -InstanceId i-12345678 -ProtectedFromScaleIn $true
 ```
 **Example 2: This example disables instance protection for the specified instance.**
 
-```
+```powershell
 Set-ASInstanceProtection -AutoScalingGroupName my-asg -InstanceId i-12345678 -ProtectedFromScaleIn $false
 ```
 +  For API details, see [SetInstanceProtection](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

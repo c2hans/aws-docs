@@ -30,6 +30,17 @@ You can only update clusters that are in `ACTIVE`, `UPDATE_FAILED`, or `SUSPENDE
             "parameterValue": "{{string}}"
          }
       ],
+      "jobSubmitPlugins": [
+         {
+            "name": "{{string}}",
+            "scriptSource": {
+               "checksum": "{{string}}",
+               "s3VersionId": "{{string}}",
+               "scriptLocation": "{{string}}"
+            },
+            "type": "{{string}}"
+         }
+      ],
       "scaleDownIdleTimeInSeconds": {{number}},
       "slurmCustomSettings": [
          {
@@ -128,6 +139,17 @@ Required: No
             {
                "parameterName": "string",
                "parameterValue": "string"
+            }
+         ],
+         "jobSubmitPlugins": [
+            {
+               "name": "string",
+               "scriptSource": {
+                  "checksum": "string",
+                  "s3VersionId": "string",
+                  "scriptLocation": "string"
+               },
+               "type": "string"
             }
          ],
          "jwtAuth": {

@@ -42,7 +42,7 @@ sudo -u root dcv-session-manager-broker describe-server-dns-mappings
 
 **Output**
 
-```
+```json
  [
 	{
 		"serverIdType" : "Id",

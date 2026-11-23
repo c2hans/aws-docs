@@ -67,13 +67,13 @@ The steps in this tutorial assume that Xtensa toolchain, ESP-IDF, and FreeRTOS c
 
 1. Create a code-signing certificate that can be used to sign the firmware. Note the certificate Amazon Resource Name (ARN) when the certificate is imported.
 
-   ```
+   ```bash
    aws acm import-certificate --profile=ota-update-user --certificate file://ecdsasigner.crt --private-key file://ecdsasigner.key
    ```
 
    Example output:
 
-   ```
+   ```bash
    {
    "CertificateArn": "arn:aws:acm:us-east-1:<account>:certificate/<certid>"
    }
@@ -81,13 +81,13 @@ The steps in this tutorial assume that Xtensa toolchain, ESP-IDF, and FreeRTOS c
 
    You'll use the ARN later to create a signing profile. If you want, you can create the profile now with the following command:
 
-   ```
+   ```bash
    aws signer put-signing-profile --profile=ota-update-user --profile-name esp32Profile --signing-material certificateArn=arn:aws:acm:us-east-1:{{account}}:certificate/{{certid}} --platform AmazonFreeRTOS-Default --signing-parameters certname=/cert.pem
    ```
 
    Example output:
 
-   ```
+   ```bash
    {
    "arn": "arn:aws:signer::<account>:/signing-profiles/esp32Profile"
    }
@@ -115,7 +115,7 @@ The steps in this tutorial assume that Xtensa toolchain, ESP-IDF, and FreeRTOS c
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -232,7 +232,7 @@ The steps in this tutorial assume that Xtensa toolchain, ESP-IDF, and FreeRTOS c
 
 ****
 
-   ```
+   ```json
    {
           "Version":"2012-10-17",
           "Statement": [
@@ -279,13 +279,13 @@ The steps in this tutorial assume that Xtensa toolchain, ESP-IDF, and FreeRTOS c
 
    1. Open the `vendors/{{vendor}}/boards/{{board}}/aws_demos/config_files/ota_demo_config.h` file, and enter your certificate.
 
-      ```
+      ```c
       #define otapalconfigCODE_SIGNING_CERTIFICATE [] = "{{your-certificate-key}}";
       ```
 
    The application should start up and print the demo version:
 
-   ```
+   ```bash
    11 13498 [iot_thread] [INFO ][DEMO][134980] Successfully initialized the demo. Network type for the demo: 2
    12 13498 [iot_thread] [INFO ][MQTT][134980] MQTT library successfully initialized.
    13 13498 [iot_thread] OTA demo version 0.9.20
@@ -299,7 +299,7 @@ The steps in this tutorial assume that Xtensa toolchain, ESP-IDF, and FreeRTOS c
 
 1. Open the file `app/src/main/res/raw/awsconfiguration.json` and fill in the Pool Id, Region, AppClientId, and AppClientSecret using the instructions in the following JSON sample.
 
-   ```
+   ```bash
    {
      "UserAgent": "MobileHub/1.0",
      "Version": "1.0",
@@ -351,26 +351,26 @@ The steps in this tutorial assume that Xtensa toolchain, ESP-IDF, and FreeRTOS c
 
 1. The **More...** link becomes active after the connection is established. The connection state should change to "BLE\_CONNECTED" in the Android device logcat when the connection is complete:
 
-   ```
+   ```bash
    2019-06-06 20:11:32.160 23484-23497/software.amazon.freertos.demo I/FRD: BLE connection state changed: 0; new state: BLE_CONNECTED
    ```
 
 1. Before the messages can be transmitted, the Amazon FreeRTOS device and the Android device negotiate the MTU. You should see the following output in logcat:
 
-   ```
+   ```bash
    2019-06-06 20:11:46.720 23484-23497/software.amazon.freertos.demo I/FRD: onMTUChanged : 512 status: Success
    ```
 
 1. The device connects to the app and starts sending MQTT messages using the MQTT proxy. To confirm that the device can communicate, make sure the MQTT\_CONTROL characteristic data value changes to 01:
 
-   ```
+   ```bash
    2019-06-06 20:12:28.752 23484-23496/software.amazon.freertos.demo D/FRD: <-<-<- Writing to characteristic: MQTT_CONTROL with data: 01
    2019-06-06 20:12:28.839 23484-23496/software.amazon.freertos.demo D/FRD: onCharacteristicWrite for: MQTT_CONTROL; status: Success; value: 01
    ```
 
 1. When the devices are paired, you will see a prompt on the ESP32 console. To enable BLE, press **y**. The demo won't function until you perform this step.
 
-   ```
+   ```bash
    E (135538) BT_GATT: GATT_INSUF_AUTHENTICATION: MITM Required
    W (135638) BT_L2CAP: l2cble_start_conn_update, the last connection update command still pending.
    E (135908) BT_SMP: Value for numeric comparison = 391840
@@ -391,11 +391,11 @@ The steps in this tutorial assume that Xtensa toolchain, ESP-IDF, and FreeRTOS c
 
 1. To install the prerequisites, run the following commands:
 
-   ```
+   ```bash
    pip3 install boto3
    ```
 
-   ```
+   ```bash
    pip3 install pathlib
    ```
 
@@ -405,13 +405,13 @@ The steps in this tutorial assume that Xtensa toolchain, ESP-IDF, and FreeRTOS c
 
 1. Download the python script [ start\_ota.py](https://github.com/aws-samples/amazon-freertos-ota-scripts/blob/master/scripts/start_ota.py). To see the help contents for the script, run the following command in a terminal window:
 
-   ```
+   ```bash
    python3 start_ota.py -h
    ```
 
    You should see something like the following:
 
-   ```
+   ```bash
    usage: start_ota.py [-h] --profile PROFILE [--region REGION]
                        [--account ACCOUNT] [--devicetype DEVICETYPE] --name NAME
                        --role ROLE --s3bucket S3BUCKET --otasigningprofile
@@ -437,13 +437,13 @@ The steps in this tutorial assume that Xtensa toolchain, ESP-IDF, and FreeRTOS c
 
 1. If you used the provided CloudFormation template to create resources, run the following command:
 
-   ```
+   ```bash
    python3 start_ota_stream.py --profile otausercf --name esp32-ble --role ota_ble_iot_role-sample --s3bucket afr-ble-ota-update-bucket-sample --otasigningprofile abcd --signingcertificateid {{certificateid}}
    ```
 
    You should see the update start in the ESP32 debug console:
 
-   ```
+   ```bash
    38 2462 [OTA Task] [prvParseJobDoc] Job was accepted. Attempting to start transfer.
    ---
    49 2867 [OTA Task] [prvIngestDataBlock] Received file block 1, size 1024
@@ -459,6 +459,6 @@ The steps in this tutorial assume that Xtensa toolchain, ESP-IDF, and FreeRTOS c
 
 1. When the OTA update is complete, the device restarts as required by the OTA update process. It then tries to connect using the updated firmware. If the upgrade has succeeded, the updated firmware is marked as active and you should see the updated version in the console:
 
-   ```
+   ```bash
    13 13498 [iot_thread] OTA demo version 0.9.21
    ```

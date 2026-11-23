@@ -31,7 +31,7 @@ Before you can use CloudWatch alarm monitoring with your deployments, the servic
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

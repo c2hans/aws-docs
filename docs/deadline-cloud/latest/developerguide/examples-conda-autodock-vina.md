@@ -8,7 +8,7 @@ The [autodock-vina-1.2.5](https://github.com/aws-deadline/deadline-cloud-samples
 
 Submit the build from the `conda_recipes` directory:
 
-```
+```bash
 ./submit-package-job autodock-vina-1.2.5
 ```
 

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/microsoft-smooth-
 
 The following is an EventBridge sample event for a job with a `COMPLETE` status. It includes output file path information for a Microsoft Smooth Streaming group.
 
-```
+```JSON
 {
     "detail": {
         "status": "COMPLETE",

@@ -34,7 +34,7 @@ For more information, see [Converse with an Amazon Bedrock flow](https://docs.aw
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent-runtime#code-examples).
 
-```
+```python
 """
 Shows how to run an Amazon Bedrock flow with InvokeFlow and handle muli-turn interaction
 for a single conversation.
@@ -220,7 +220,7 @@ The following code example shows how to use `InvokeAgent`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent-runtime#code-examples).
 Invoke an agent.
 
-```
+```python
     def invoke_agent(self, agent_id, agent_alias_id, session_id, prompt):
         """
         Sends a prompt for the agent to process and respond to.
@@ -267,7 +267,7 @@ The following code example shows how to use `InvokeFlow`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent-runtime#code-examples).
 Invoke a flow.
 
-```
+```python
     def invoke_flow(self, flow_id, flow_alias_id, input_data, execution_id):
         """
         Invoke an Amazon Bedrock flow and handle the response stream.
@@ -338,7 +338,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 Generates a music playlist based on user-specified genre and number of songs.
 
-```
+```python
 from datetime import datetime
 import logging
 import boto3

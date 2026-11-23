@@ -56,7 +56,7 @@ Returns an array of control panels in an account or in a cluster.
 #### ListControlPanelsResponse schema
 <a name="controlpanels-response-body-listcontrolpanelsresponse-example"></a>
 
-```
+```json
 {
   "ControlPanels": [
     {
@@ -76,7 +76,7 @@ Returns an array of control panels in an account or in a cluster.
 #### ValidationException schema
 <a name="controlpanels-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -85,7 +85,7 @@ Returns an array of control panels in an account or in a cluster.
 #### AccessDeniedException schema
 <a name="controlpanels-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -94,7 +94,7 @@ Returns an array of control panels in an account or in a cluster.
 #### ResourceNotFoundException schema
 <a name="controlpanels-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -103,7 +103,7 @@ Returns an array of control panels in an account or in a cluster.
 #### ThrottlingException schema
 <a name="controlpanels-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -112,7 +112,7 @@ Returns an array of control panels in an account or in a cluster.
 #### InternalServerException schema
 <a name="controlpanels-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

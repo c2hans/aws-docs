@@ -42,7 +42,7 @@ To compile and train a PyTorch model, configure a SageMaker AI PyTorch estimator
 **Note**
 This native PyTorch support is available in the SageMaker AI Python SDK v2.120.0 and later. Make sure that you update the SageMaker AI Python SDK.
 
-```
+```py
 from sagemaker.pytorch import PyTorch, TrainingCompilerConfig
 
 # the original max batch size that can fit into GPU memory without compiler
@@ -82,7 +82,7 @@ pytorch_estimator.fit()
 
 To compile and train a transformer model with PyTorch, configure a SageMaker AI Hugging Face estimator with SageMaker Training Compiler as shown in the following code example.
 
-```
+```py
 from sagemaker.huggingface import HuggingFace, TrainingCompilerConfig
 
 # the original max batch size that can fit into GPU memory without compiler
@@ -138,7 +138,7 @@ For PyTorch v1.12, you can run distributed training with SageMaker Training Comp
 **Note**
 This native PyTorch support is available in the SageMaker AI Python SDK v2.121.0 and later. Make sure that you update the SageMaker AI Python SDK.
 
-```
+```py
 from sagemaker.pytorch import PyTorch, TrainingCompilerConfig
 
 # choose an instance type, specify the number of instances you want to use,
@@ -188,7 +188,7 @@ To prepare your training script, see [PyTorch](training-compiler-pytorch-models.
 
 For PyTorch v1.11 and later, SageMaker Training Compiler is available for distributed training with the `pytorch_xla` option specified to the `distribution` parameter.
 
-```
+```py
 from sagemaker.huggingface import HuggingFace, TrainingCompilerConfig
 
 # choose an instance type, specify the number of instances you want to use,
@@ -239,7 +239,7 @@ To prepare your training script, see the following pages.
 
 For the supported version of PyTorch v1.10.2 and before, SageMaker Training Compiler requires an alternate mechanism for launching a distributed training job. To run distributed training, SageMaker Training Compiler requires you to pass a SageMaker AI distributed training launcher script to the `entry_point` argument, and pass your training script to the `hyperparameters` argument. The following code example shows how to configure a SageMaker AI Hugging Face estimator applying the required changes.
 
-```
+```py
 from sagemaker.huggingface import HuggingFace, TrainingCompilerConfig
 
 # choose an instance type, specify the number of instances you want to use,
@@ -284,7 +284,7 @@ pytorch_huggingface_estimator.fit()
 
 The launcher script should look like the following. It wraps your training script and configures the distributed training environment depending on the size of the training instance of your choice.
 
-```
+```py
 # distributed_training_launcher.py
 
 #!/bin/python
@@ -340,7 +340,7 @@ To run a distributed training with SageMaker Training Compiler and PyTorch v1.10
 **Warning**
 If you turn on SageMaker Debugger, it might impact the performance of SageMaker Training Compiler. We recommend that you turn off Debugger when running SageMaker Training Compiler to make sure there's no impact on performance. For more information, see [Considerations](training-compiler-tips-pitfalls.md#training-compiler-tips-pitfalls-considerations). To turn the Debugger functionalities off, add the following two arguments to the estimator:
 
-```
+```py
 disable_profiler=True,
 debugger_hook_config=False
 ```
@@ -348,13 +348,13 @@ debugger_hook_config=False
 If the training job with the compiler is launched successfully, you receive the following logs during the job initialization phase:
 + With `TrainingCompilerConfig(debug=False)`
 
-  ```
+  ```txt
   Found configuration for Training Compiler
   Configuring SM Training Compiler...
   ```
 + With `TrainingCompilerConfig(debug=True)`
 
-  ```
+  ```txt
   Found configuration for Training Compiler
   Configuring SM Training Compiler...
   Training Compiler set to debug mode
@@ -365,7 +365,7 @@ If the training job with the compiler is launched successfully, you receive the 
 
 SageMaker Training Compiler configuration options must be specified through the `AlgorithmSpecification` and `HyperParameters` field in the request syntax for the [`CreateTrainingJob` API operation](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html).
 
-```
+```json
 "AlgorithmSpecification": {
     "TrainingImage": "{{<sagemaker-training-compiler-enabled-dlc-image>}}"
 },

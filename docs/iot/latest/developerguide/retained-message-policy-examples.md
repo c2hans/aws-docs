@@ -18,7 +18,7 @@ For a device to publish retained messages, the device must be able to connect, p
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -54,7 +54,7 @@ The following policy document grants all clients permission to connect and publi
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -95,7 +95,7 @@ Services and applications can access retained messages without the need to suppo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

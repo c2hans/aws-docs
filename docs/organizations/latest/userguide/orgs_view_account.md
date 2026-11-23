@@ -36,7 +36,7 @@ You can use the following commands to view details of an account:
 
   The following example shows how to retrieve the details about a specified account.
 
-  ```
+  ```bash
   $ aws organizations describe-account --account-id 123456789012
 
   {

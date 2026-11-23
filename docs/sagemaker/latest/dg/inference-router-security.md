@@ -44,7 +44,7 @@ A routing target can send any request to any of its destinations. To keep reques
 
 1. As a guardrail, use a service control policy (SCP) that denies `sagemaker:InvokeEndpoint` and `sagemaker:InvokeEndpointAsync` outside the allowed Regions. The router calls each destination with your caller's credentials, so the SCP applies to requests that the router sends. A deny on `sagemaker:InvokeInferenceRouter` doesn't do this, because `aws:RequestedRegion` for that action is the router's Region. The following SCP also denies direct calls to endpoints outside the allowed Regions.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -97,7 +97,7 @@ For steps, see [Access an AWS service using an interface VPC endpoint](https://d
 + The endpoint supports IPv4 only.
 + You can attach a VPC endpoint policy to control which principals can invoke which routers through the endpoint. The following VPC endpoint policy allows one router to be invoked through the endpoint.
 
-  ```
+  ```json
   {
     "Statement": [
       {

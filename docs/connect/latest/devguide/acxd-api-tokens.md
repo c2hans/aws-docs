@@ -28,7 +28,7 @@ Creates a new API token for a programmatic user. The full token is returned only
 ### Sample Request
 <a name="acxd-api-tokens-createapitoken-sample-request"></a>
 
-```
+```typescript
 await client.send(new CreateApiTokenCommand({
     userId: 'programmatic-user-uuid',
     description: 'CI/CD pipeline',
@@ -38,7 +38,7 @@ await client.send(new CreateApiTokenCommand({
 ### Output
 <a name="acxd-api-tokens-createapitoken-output"></a>
 
-```
+```json
 {
   "token": "acxd_live_mPj4Y4hfXKg5NIuhX24d.K9mN2pQ4rS6tU8vW0xY1zA3bC5dE7fG9",
   "keyPrefix": "mPj4Y4hfXKg5NIuhX24d",
@@ -71,7 +71,7 @@ Lists all API tokens for a programmatic user. Returns metadata only, secrets are
 ### Sample Request
 <a name="acxd-api-tokens-listapitokens-sample-request"></a>
 
-```
+```typescript
 await client.send(new ListApiTokensCommand({
     userId: 'programmatic-user-uuid',
 }));
@@ -80,7 +80,7 @@ await client.send(new ListApiTokensCommand({
 ### Output
 <a name="acxd-api-tokens-listapitokens-output"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -113,7 +113,7 @@ Permanently revokes an API token.
 ### Sample Request
 <a name="acxd-api-tokens-deleteapitoken-sample-request"></a>
 
-```
+```typescript
 await client.send(new DeleteApiTokenCommand({
     userId: 'programmatic-user-uuid',
     keyPrefix: 'mPj4Y4hfXKg5NIuhX24d',

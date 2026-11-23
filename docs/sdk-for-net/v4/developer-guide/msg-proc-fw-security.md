@@ -14,7 +14,7 @@ The AWS Message Processing Framework for .NET relies on the AWS SDK for .NET for
 
 For security purposes, the framework doesn't log data messages sent by the user. If you want to enable this functionality for debugging purposes, you need to call `EnableDataMessageLogging()` in the Message Bus as follows:
 
-```
+```csharp
 builder.Services.AddAWSMessageBus(bus =>
 {
     builder.EnableDataMessageLogging();

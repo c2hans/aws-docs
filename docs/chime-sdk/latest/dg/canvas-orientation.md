@@ -12,7 +12,7 @@ The following image shows the portrait orientation.
 
 The following example shows how to implement a portrait canvas with the video tile in the upper-right corner. In this example, the active speaker appears in the tile. For more information, see [ActiveSpeakerOnlyConfiguration](compositing-layouts.md#active-speaker-only)
 
-```
+```json
 {
    "CompositedVideo":{
       "Layout":"GridView",

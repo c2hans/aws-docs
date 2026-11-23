@@ -50,7 +50,7 @@ Create an IAM role in the account that owns the context store. Your firewall pro
 
 The following trust policy allows the provider principal to assume the role. Replace the example values with the principal ARN and external ID supplied by your firewall provider.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -72,7 +72,7 @@ The following trust policy allows the provider principal to assume the role. Rep
 
 Attach the following permissions policy to the role. Replace the example account ID and context store ID with the account ID and ID of your context store.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

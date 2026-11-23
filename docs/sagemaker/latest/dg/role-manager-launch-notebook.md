@@ -21,7 +21,7 @@ You cannot use Amazon SageMaker Role Manager to create a role that grants permis
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

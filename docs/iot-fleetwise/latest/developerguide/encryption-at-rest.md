@@ -53,7 +53,7 @@ The following example policy grants AWS IoT FleetWise permissions to use your AW
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -98,14 +98,14 @@ Your decoder manifest could be stuck in a validating status if you haven't reset
 
 1. If the encryption type is `KMS_BASED_ENCRYPTION`, use the [PutEncryptionConfiguration](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_PutEncryptionConfiguration.html) API operation to reset the encryption type to `FLEETWISE_DEFAULT_ENCRYPTION`.
 
-   ```
+   ```bash
    aws iotfleetwise put-encryption-configuration \
          --encryption-type FLEETWISE_DEFAULT_ENCRYPTION
    ```
 
 1. Use the [PutEncryptionConfiguration](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_PutEncryptionConfiguration.html) API operation to re-enable the encryption type to `KMS_BASED_ENCRYPTION`.
 
-   ```
+   ```bash
    aws iotfleetwise put-encryption-configuration \
            --encryption-type KMS_BASED_ENCRYPTION \
            --kms-key-id {{kms_key_id}}

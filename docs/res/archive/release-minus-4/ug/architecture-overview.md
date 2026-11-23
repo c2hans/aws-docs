@@ -13,6 +13,8 @@ Deploying this product with the default parameters deploys the following compone
 
 ![Figure 1: Research and Engineering Studio on AWS architecture](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-architecture.png)
 
+*Figure 1: Research and Engineering Studio on AWS architecture*
+
 **Note**
 AWS CloudFormation resources are created from AWS Cloud Development Kit (AWS CDK) constructs.
 

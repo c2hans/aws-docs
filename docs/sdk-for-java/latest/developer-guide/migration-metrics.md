@@ -83,7 +83,7 @@ The following table shows how to configure the CloudWatch destination in v1 comp
 
 v1 does not have a Lambda-specific metrics solution. In v2, use `EmfMetricLoggingPublisher` which writes metrics as structured log entries in CloudWatch Embedded Metric Format (EMF):
 
-```
+```java
 // v2 - Lambda-optimized metrics publishing
 EmfMetricLoggingPublisher emfPublisher = EmfMetricLoggingPublisher.builder()
         .namespace("MyApp")
@@ -103,7 +103,7 @@ In Lambda environments, the `logGroupName` is auto-detected from the `AWS_LAMBDA
 
 v1 does not have a console-based metrics output. In v2, use `LoggingMetricPublisher`:
 
-```
+```java
 // v2 - Console output for debugging
 MetricPublisher loggingPublisher = LoggingMetricPublisher.create();
 
@@ -117,7 +117,7 @@ S3Client s3 = S3Client.builder()
 
 In v1, metrics collection runs for the lifetime of the JVM once the system property is set. In v2, you must manage the lifecycle of the `MetricPublisher`:
 
-```
+```java
 // v2 - Close the publisher when no longer needed
 MetricPublisher metricsPub = CloudWatchMetricPublisher.create();
 DynamoDbClient ddb = DynamoDbClient.builder()

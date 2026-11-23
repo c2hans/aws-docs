@@ -61,7 +61,7 @@ You then need to add the Grafana service account in the conditions of the trust 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

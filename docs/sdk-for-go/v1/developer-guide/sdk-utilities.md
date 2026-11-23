@@ -17,7 +17,7 @@ To sign a URL, create a `URLSigner` instance with your CloudFront key pair ID an
 
 The following example creates a signed URL that’s valid for one hour after it is created.
 
-```
+```go
 signer := sign.NewURLSigner(keyID, privKey)
 
 signedURL, err := signer.Sign(rawURL, time.Now().Add(1*time.Hour))
@@ -36,7 +36,7 @@ The attributes converter simplifies converting Amazon DynamoDB attribute values 
 
 The following example converts a structure to an Amazon DynamoDB`AttributeValues` map and then puts the data to the `exampleTable`.
 
-```
+```go
 type Record struct {
     MyField string
     Letters []string
@@ -70,13 +70,13 @@ For more information about the converter utility, see the [dynamodbattribute](ht
 
  `EC2Metadata` is a client that interacts with the Amazon EC2 metadata service. The client can help you easily retrieve information about instances on which your applications run, such as its region or local IP address. Typically, you must create and submit HTTP requests to retrieve instance metadata. Instead, create an `EC2Metadata` service client.
 
-```
+```go
 c := ec2metadata.New(session.New())
 ```
 
 Then use the service client to retrieve information from a metadata category like `local-ipv4` (the private IP address of the instance).
 
-```
+```go
 localip, err := c.GetMetadata("local-ipv4")
 if err != nil {
     log.Printf("Unable to retrieve the private IP address from the EC2 instance: %s\n", err)
@@ -91,7 +91,7 @@ For a list of all metadata categories, see [Instance Metadata Categories](https:
 
 There’s no instance metadata category that returns only the region of an instance. Instead, use the included `Region` method to easily return an instance’s region.
 
-```
+```go
 region, err := ec2metadata.New(session.New()).Region()
 if err != nil {
     log.Printf("Unable to retrieve the region from the EC2 instance %v\n", err)
@@ -115,7 +115,7 @@ The Amazon Simple Storage Service upload manager determines if a file can be spl
 
 The following example uses the Amazon S3 `Uploader` to upload a file. Using `Uploader` is similar to the `s3.PutObject()` operation.
 
-```
+```go
 mySession, _ := session.NewSession()
 uploader := s3manager.NewUploader(mySession)
 result, err := uploader.Upload(&s3manager.UploadInput{
@@ -155,7 +155,7 @@ If an upload to Amazon S3 fails, by default, `Uploader` uses the Amazon S3`Abort
 
 You can set `LeavePartsOnError` to true so that the `Uploader` doesn’t delete successfully uploaded parts. This is useful for resuming partially completed uploads. To operate on uploaded parts, you must get the `UploadID` of the failed upload. The following example demonstrates how to use the `s3manager.MultiUploadFailure` message to get the `UploadID`.
 
-```
+```go
 u := s3manager.NewUploader(session.New())
 output, err := u.upload(input)
 if err != nil {
@@ -174,7 +174,7 @@ if err != nil {
 
 The following example uses the `path/filepath` package to recursively gather a list of files and upload them to the specified Amazon S3 bucket. The keys of the Amazon S3 objects are prefixed with the file’s relative path.
 
-```
+```go
 package main
 
 import (
@@ -255,7 +255,7 @@ func (f fileWalk) Walk(path string, info os.FileInfo, err error) error {
 
 The following example uploads a file to an Amazon S3 bucket and then sends a notification message of the file’s location to an Amazon Simple Queue Service queue.
 
-```
+```go
 package main
 
 import (
@@ -323,7 +323,7 @@ The Amazon S3 download manager determines if a file can be split into smaller pa
 
 The following example uses the Amazon S3`Downloader` to download a file. Using `Downloader` is similar to the `s3.GetObject()` operation.
 
-```
+```go
 downloader := s3manager.NewDownloader(session.New())
 numBytes, err := downloader.Download(downloadFile,
   &s3.GetObjectInput{
@@ -350,7 +350,7 @@ For more information about `Downloader` and its configurations, see the [s3manag
 
 The following example uses pagination to gather a list of objects from an Amazon S3 bucket. Then it downloads each object to a local file.
 
-```
+```go
 package main
 
 import (

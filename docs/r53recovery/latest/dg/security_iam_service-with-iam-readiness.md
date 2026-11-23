@@ -63,7 +63,7 @@ route53-recovery-readiness
 
 To specify multiple actions in a single statement, separate them with commas. For example, the following:
 
-```
+```json
 "Action": [
       "route53-recovery-readiness:{{action1}}",
       "route53-recovery-readiness:{{action2}}"

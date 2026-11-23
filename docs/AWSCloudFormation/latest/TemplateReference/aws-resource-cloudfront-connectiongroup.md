@@ -24,7 +24,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Enabled](#cfn-cloudfront-connectiongroup-enabled)" : {{Boolean}},
       "[Ipv6Enabled](#cfn-cloudfront-connectiongroup-ipv6enabled)" : {{Boolean}},
       "[Name](#cfn-cloudfront-connectiongroup-name)" : {{String}},
-      "[Tags](#cfn-cloudfront-connectiongroup-tags)" : {{[ Tag, ... ]}}
+      "[Tags](#cfn-cloudfront-connectiongroup-tags)" : {{[ Tag, ... ]}},
+      "[ViewerFallback](#cfn-cloudfront-connectiongroup-viewerfallback)" : {{ViewerFallback}}
     }
 }
 ```
@@ -41,6 +42,8 @@ Properties:
   [Name](#cfn-cloudfront-connectiongroup-name): {{String}}
   [Tags](#cfn-cloudfront-connectiongroup-tags): {{
     - Tag}}
+  [ViewerFallback](#cfn-cloudfront-connectiongroup-viewerfallback): {{
+    ViewerFallback}}
 ```
 
 ## Properties
@@ -74,6 +77,12 @@ The name of the connection group.
 A complex type that contains zero or more `Tag` elements.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-cloudfront-connectiongroup-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ViewerFallback`  <a name="cfn-cloudfront-connectiongroup-viewerfallback"></a>
+The distribution whose certificate CloudFront uses for viewer requests that arrive on the connection group's Anycast static IPs without Server Name Indication (SNI).
+*Required*: No
+*Type*: [ViewerFallback](aws-properties-cloudfront-connectiongroup-viewerfallback.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values

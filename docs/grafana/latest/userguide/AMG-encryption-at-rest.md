@@ -80,7 +80,7 @@ To use your customer managed key with your Amazon Managed Grafana workspaces, th
 
 The following are policy statement examples you can add for Amazon Managed Grafana:
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -183,7 +183,7 @@ When you use an AWS KMS customer managed key to encrypt your workspace, Amazon M
 
 The following example event records a `CreateGrant` operation:
 
-```
+```JSON
 {
 "eventVersion": "1.08",
 "userIdentity": {
@@ -256,7 +256,7 @@ Amazon Managed Grafana uses the `DescribeKey` operation to verify if the AWS KMS
 
 The following example event records the `DescribeKey` operation:
 
-```
+```JSON
 {
 "eventVersion": "1.08",
 "userIdentity": {
@@ -314,7 +314,7 @@ Amazon Managed Grafana uses the `GenerateDataKey` operation to generate data key
 
 The following example event records the `GenerateDataKey` operation:
 
-```
+```JSON
 {
 "eventVersion": "1.08",
 "userIdentity": {
@@ -373,7 +373,7 @@ Amazon Managed Grafana uses the `Decrypt` operation to decrypt encrypted data ke
 
 The following example event records the `Decrypt` operation:
 
-```
+```JSON
 {
 "eventVersion": "1.08",
 "userIdentity": {

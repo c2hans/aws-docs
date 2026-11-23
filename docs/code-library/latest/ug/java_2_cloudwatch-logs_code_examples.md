@@ -29,7 +29,7 @@ The following code example shows how to use `DeleteSubscriptionFilter`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch-logs#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.cloudwatch.model.CloudWatchException;
 import software.amazon.awssdk.services.cloudwatchlogs.CloudWatchLogsClient;
 import software.amazon.awssdk.services.cloudwatchlogs.model.DeleteSubscriptionFilterRequest;
@@ -96,7 +96,7 @@ The following code example shows how to use `DescribeLogStreams`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch-logs#code-examples).
 Searches for log streams within a specified log group that match a given prefix.
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -176,7 +176,7 @@ public class CloudWatchLogsSearch {
 ```
 Prints metadata about the most recent log stream in a specified log group.
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -257,7 +257,7 @@ The following code example shows how to use `DescribeSubscriptionFilters`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch-logs#code-examples).
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
 import software.amazon.awssdk.services.cloudwatch.model.CloudWatchException;
 import software.amazon.awssdk.services.cloudwatchlogs.CloudWatchLogsClient;
@@ -352,7 +352,7 @@ The following code example shows how to use `GetLogEvents`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cloudwatch.model.CloudWatchException;
 import software.amazon.awssdk.services.cloudwatchlogs.CloudWatchLogsClient;
@@ -461,7 +461,7 @@ The following code example shows how to use `PutSubscriptionFilter`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch-logs#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cloudwatchlogs.CloudWatchLogsClient;
 import software.amazon.awssdk.services.cloudwatchlogs.model.CloudWatchLogsException;
@@ -560,7 +560,7 @@ The following code example shows how to use `StartLiveTail`.
 **SDK for Java 2.x**
 Include the required files.
 
-```
+```java
 import io.reactivex.FlowableSubscriber;
 import io.reactivex.annotations.NonNull;
 import org.reactivestreams.Subscription;
@@ -580,7 +580,7 @@ import java.util.concurrent.atomic.AtomicReference;
 ```
 Handle the events from the Live Tail session.
 
-```
+```java
     private static StartLiveTailResponseHandler getStartLiveTailResponseStreamHandler(
             AtomicReference<Subscription> subscriptionAtomicReference) {
         return StartLiveTailResponseHandler.builder()
@@ -631,7 +631,7 @@ Handle the events from the Live Tail session.
 ```
 Start the Live Tail session.
 
-```
+```java
         CloudWatchLogsAsyncClient cloudWatchLogsAsyncClient =
                 CloudWatchLogsAsyncClient.builder()
                     .credentialsProvider(ProfileCredentialsProvider.create())
@@ -651,7 +651,7 @@ Start the Live Tail session.
 ```
 Stop the Live Tail session after a period of time has elapsed.
 
-```
+```java
         /* Set a timeout for the session and cancel the subscription. This will:
          * 1). Close the stream
          * 2). Stop the Live Tail session

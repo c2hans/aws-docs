@@ -16,7 +16,7 @@ If you need to retrieve deployment information such as the portal URL or API end
 
 To retrieve the portal URL from your deployment:
 
-```
+```bash
 aws cloudformation describe-stacks --stack-name $(aws cloudformation list-stack-resources --stack-name <YOUR STACK> --query 'StackResourceSummaries[?starts_with(LogicalResourceId, `PortalStackNested`)].PhysicalResourceId' --output text) --query 'Stacks[0].Outputs[?OutputKey==`PortalCloudFrontDistributionUrl`].OutputValue' --output text
 ```
 
@@ -27,7 +27,7 @@ Replace `<YOUR STACK>` with your CloudFormation stack name (for example, `Spatia
 
 To retrieve the API endpoint from your deployment:
 
-```
+```bash
 aws cloudformation describe-stacks --stack-name $(aws cloudformation list-stack-resources --stack-name <YOUR STACK> --query 'StackResourceSummaries[?starts_with(LogicalResourceId, `AssetManagementStackNestedStack`)].PhysicalResourceId' --output text) --query 'Stacks[0].Outputs[?OutputKey==`ApiUrl`].OutputValue' --output text
 ```
 
@@ -38,13 +38,13 @@ Replace `<YOUR STACK>` with your CloudFormation stack name (for example, `Spatia
 
 To verify your CLI authentication status and confirm API availability:
 
-```
+```bash
 spatial-data-mgmt auth status
 ```
 
 Example output:
 
-```
+```text
 Profile Name: demo-environment
 Source: PORTAL_DESKTOP_LOGIN
 Status: AUTHENTICATED
@@ -58,7 +58,7 @@ If the status shows `AUTHENTICATED` and `API Availability: True`, your CLI is pr
 
 To check if you have any projects assigned or created by you, use the following command. This is helpful if you suspect the application has an issue and projects are not showing in the interface:
 
-```
+```bash
 spatial-data-mgmt project list
 ```
 

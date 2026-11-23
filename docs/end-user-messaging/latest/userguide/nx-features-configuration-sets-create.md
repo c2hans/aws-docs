@@ -24,7 +24,7 @@ To create a configuration set using the AWS End User Messaging console, follow t
 
 You can use the [create-configuration-set](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/create-configuration-set.html) command to create a new configuration set.
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 create-configuration-set \
 > --configuration-set-name {{configurationSet}}
 ```

@@ -14,7 +14,7 @@ The following code examples show how to use `GetAccountPasswordPolicy`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Gets the IAM password policy for an AWS account.
     /// </summary>
@@ -61,7 +61,7 @@ For more information, see [Setting an account password policy for IAM users](htt
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -100,7 +100,7 @@ func (wrapper AccountWrapper) GetAccountPasswordPolicy(ctx context.Context) (*ty
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Get the account password policy.
 
-```
+```javascript
 import {
   GetAccountPasswordPolicyCommand,
   IAMClient,
@@ -124,7 +124,7 @@ export const getAccountPasswordPolicy = async () => {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
 
-```
+```php
 $uuid = uniqid();
 $service = new IAMService();
 
@@ -141,7 +141,7 @@ $service = new IAMService();
 **Tools for PowerShell V4**
 **Example 1: This example returns details about the password policy for the current account. If no password policy is defined for the account, the command returns a `NoSuchEntity` error.**
 
-```
+```powershell
 Get-IAMAccountPasswordPolicy
 ```
 **Output:**
@@ -163,7 +163,7 @@ RequireUppercaseCharacters : True
 **Tools for PowerShell V5**
 **Example 1: This example returns details about the password policy for the current account. If no password policy is defined for the account, the command returns a `NoSuchEntity` error.**
 
-```
+```powershell
 Get-IAMAccountPasswordPolicy
 ```
 **Output:**
@@ -188,7 +188,7 @@ RequireUppercaseCharacters : True
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def print_password_policy():
     """
     Prints the password policy for the account.
@@ -230,7 +230,7 @@ def print_password_policy():
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
 # Class to manage IAM account password policies
 class PasswordPolicyManager
   attr_accessor :iam_client, :logger
@@ -261,7 +261,7 @@ end
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn get_account_password_policy(
     client: &iamClient,
 ) -> Result<GetAccountPasswordPolicyOutput, SdkError<GetAccountPasswordPolicyError>> {
@@ -278,7 +278,7 @@ pub async fn get_account_password_policy(
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_iam->getaccountpasswordpolicy( ).
         MESSAGE 'Retrieved account password policy.' TYPE 'I'.

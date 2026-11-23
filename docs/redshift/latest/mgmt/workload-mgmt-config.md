@@ -373,7 +373,7 @@ aws redshift modify-cluster-parameter-group --parameter-group-name myclusterpara
 
 The arguments for `--parameters` are stored in file `modify_pg.json`. The file location is specified in the format for your operating system. For more information, see [Loading parameters from a file](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters.html#cli-usage-parameters-file). The following shows examples of the content of the `modify_pg.json` JSON file.
 
-```
+```json
 [
     {
         "ParameterName": "wlm_json_configuration",
@@ -382,7 +382,7 @@ The arguments for `--parameters` are stored in file `modify_pg.json`. The file l
 ]
 ```
 
-```
+```json
 [
     {
         "ParameterName": "wlm_json_configuration",

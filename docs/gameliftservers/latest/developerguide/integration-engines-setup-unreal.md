@@ -114,7 +114,7 @@ This topic provides sample code that adds the minimum functionality required to 
 ### Sample code for GameMode.h
 <a name="w2aab9c11c11b9c17c15b9b1"></a>
 
-```
+```cpp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
@@ -167,7 +167,7 @@ Ensures compatibility across different Unreal build targets
 ### Sample code for GameMode.cpp
 <a name="w2aab9c11c11b9c17c15c13b1"></a>
 
-```
+```cpp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 

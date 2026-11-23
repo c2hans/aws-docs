@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a Step Machine activity.
     /// </summary>
@@ -38,7 +38,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static void deleteActivity(SfnClient sfnClient, String actArn) {
         try {
             DeleteActivityRequest activityRequest = DeleteActivityRequest.builder()
@@ -62,7 +62,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun deleteActivity(actArn: String?) {
     val activityRequest =
         DeleteActivityRequest {
@@ -83,7 +83,7 @@ suspend fun deleteActivity(actArn: String?) {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 class Activity:
     """Encapsulates Step Function activity actions."""
 
@@ -122,7 +122,7 @@ class Activity:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sfn#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_sfn->deleteactivity(
           iv_activityarn = iv_activity_arn

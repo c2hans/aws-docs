@@ -30,7 +30,7 @@ The policy's default version is the version that defines the permissions for the
 ## JSON policy document
 <a name="AmazonNimbleStudio-StudioUser-json"></a>
 
-```
+```json
 {
   "Statement" : [
     {

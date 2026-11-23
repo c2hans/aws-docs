@@ -20,7 +20,7 @@ AWS IoT Greengrass supports creating component versions and deployments in Cloud
 
 The following is the YAML template for a version of a simple component. The JSON recipe includes line breaks for readability.
 
-```
+```yaml
 Parameters:
   ComponentVersion:
     Type: String
@@ -63,7 +63,7 @@ Resources:
 
 The following is a YAML file defining a simple template for a deployment.
 
-```
+```yaml
 Parameters:
   ComponentVersion:
     Type: String

@@ -26,7 +26,7 @@ To illustrate, consider the following `Allow` policy. With this policy in effect
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

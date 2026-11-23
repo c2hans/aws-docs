@@ -21,7 +21,7 @@ A list of brokers that a client application can use to bootstrap.
 
 A list of brokers that a client can use to bootstrap. This list doesn't necessarily include all of the brokers in the cluster. The following Python 3.6 example shows how you can use the Amazon Resource Name (ARN) of a cluster to get its bootstrap brokers. If you don't know the ARN of your cluster, you can use the `ListClusters` operation to get the ARNs of all the clusters in this account and Region.
 
-```
+```PYTHON
 import boto3
 
 client = boto3.client('kafka')
@@ -78,7 +78,7 @@ Enable CORS by returning the correct headers.
 #### GetBootstrapBrokersResponse schema
 <a name="clusters-clusterarn-bootstrap-brokers-response-body-getbootstrapbrokersresponse-example"></a>
 
-```
+```json
 {
   "bootstrapBrokerStringPublicSaslIam": "string",
   "bootstrapBrokerStringIpv6": "string",
@@ -100,7 +100,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="clusters-clusterarn-bootstrap-brokers-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

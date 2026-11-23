@@ -10,25 +10,25 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 
 1. Enter the following commands, one after the other:
 
-   ```
+   ```sh
    sudo apt update
    ```
 
    For version 2.0.x and later:
 
-   ```
+   ```sh
    sudo apt install wget
    ```
 
    For version 1.8.x and earlier:
 
-   ```
+   ```sh
    sudo apt install ruby-full wget
    ```
 
 1. Enter the following command:
 
-   ```
+   ```sh
    cd {{/home/ubuntu}}
    ```
 
@@ -38,13 +38,13 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 
    For version 2.0.x and later:
 
-   ```
+   ```sh
    wget https://{{bucket-name}}.s3.{{region-identifier}}.amazonaws.com/latestv2/install
    ```
 
    For version 1.8.x and earlier:
 
-   ```
+   ```sh
    wget https://{{bucket-name}}.s3.{{region-identifier}}.amazonaws.com/latest/install
    ```
 
@@ -62,7 +62,7 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 
 1. Enter the following command:
 
-   ```
+   ```sh
    chmod +x ./install
    ```
 
@@ -75,14 +75,14 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
    + To install a specific version of the CodeDeploy agent:
      + List the available versions in your Region:
 
-       ```
+       ```sh
        aws s3 ls s3://aws-codedeploy-{{region-identifier}}/releases/ --region {{region-identifier}} | grep '\.deb$'
        ```
      + Install one of the versions:
 
        For version 2.0.x and later, packages are architecture-specific:
 
-       ```
+       ```sh
        sudo ./install auto -v releases/codedeploy-agent_{{version}}_{{arch}}.deb
        ```
 
@@ -90,7 +90,7 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 
        For version 1.8.x and earlier, packages use a different naming convention:
 
-       ```
+       ```sh
        sudo ./install auto -v releases/codedeploy-agent_{{version}}_all.deb
        ```
 
@@ -100,7 +100,7 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 
 1. Enter the following command:
 
-   ```
+   ```sh
    systemctl status codedeploy-agent
    ```
 
@@ -112,10 +112,10 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 
 1. If the agent is not running, start the service and check the status:
 
-   ```
+   ```sh
    systemctl start codedeploy-agent
    ```
 
-   ```
+   ```sh
    systemctl status codedeploy-agent
    ```

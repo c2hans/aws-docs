@@ -38,6 +38,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel12-b
 
 ![Architecture diagram showing AWS Fault Injection Service injecting faults across resource types including Amazon EC2, Amazon ECS, Amazon EKS, Amazon RDS, Amazon DynamoDB, AWS Lambda, Amazon S3, and networking services.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/fault-injection-simulator.png)
 
+*AWS Fault Injection Service running experiments across resource types*
+
  The preceding figure shows [AWS Fault Injection Service (AWS FIS)](https://docs.aws.amazon.com/fis/latest/userguide/what-is.html), a managed service for running experiments inside or outside your delivery pipeline. AWS FIS introduces faults across resource types including Amazon EC2, Amazon ECS, Amazon EKS, Amazon RDS, Amazon DynamoDB, AWS Lambda, Amazon S3, and networking services. Fault types include:
 +  Instance termination
 +  Forced failover
@@ -51,6 +53,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel12-b
  Use multi-step experiment workflows to sequence actions and model cascading failures. Use cross-account experiments to run scenarios against resources in multiple accounts from a central account. The [experiment templates library](https://docs.aws.amazon.com/fis/latest/userguide/) provides pre-built scenarios for common resilience patterns such as AZ failover, Region failover, and dependency failure. [AWS Resilience Hub](https://docs.aws.amazon.com/resilience-hub/latest/userguide/what-is.html) recommends and can trigger FIS experiments based on resilience assessment findings. AWS FIS integrates with Amazon CloudWatch alarms for stop conditions that roll back an experiment on unexpected impact. Open-source tools such as Chaos Toolkit, Chaos Mesh, and Litmus Chaos, and commercial tools such as Gremlin, extend the range of faults. AWS FIS coordinates workflows across several of these tools.
 
 ![Flywheel diagram showing the continuous resilience loop: define steady state, form a hypothesis, run the experiment, verify the result, and improve the design before running again.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/chaos-engineering-flywheel.png)
+
+*Continuous resilience flywheel for chaos engineering*
 
  The experiment loop follows the continuous resilience flywheel in the preceding figure: define steady state, form a hypothesis, run the experiment, verify the result, and improve the design before running again. When a workload survives an experiment, keep it as an automated regression test in your systems development lifecycle and delivery pipeline, so a future change cannot silently reintroduce the weakness. A fault design or a failed experiment can leave a workload in an unexpected state. Give every experiment a rollback path, such as an AWS FIS post action, and document it in a playbook.
 

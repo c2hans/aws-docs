@@ -50,7 +50,7 @@ For more information on additional usage data collection, including its benefits
 
 At synthesis, the CDK collects usage data from your application and stores it within the ` AWS::CDK::Metadata` resource. The following is an example of this on a synthesized AWS CloudFormation template:
 
-```
+```yaml
 CDKMetadata:
   Type: "AWS::CDK::Metadata"
   Properties:
@@ -90,7 +90,7 @@ To opt out of all usage data reporting, you can use the AWS Cloud Development Ki
 
 1. Set `versionReporting` to `false` in `./cdk.json` or `~/.cdk.json`. This opts you out by default. The following is an example:
 
-   ```
+   ```json
    {
      "app": "...",
      "versionReporting": false
@@ -120,7 +120,7 @@ These steps are for CDK apps originally created with a version older than 2.178.
 
 1. In your CDK configuration file, specify `@aws-cdk/core:enableAdditionalMetadataCollection` as `true`. The following is an example:
 
-   ```
+   ```json
    {
      "context": {
        "@aws-cdk/core:enableAdditionalMetadataCollection": "true"
@@ -130,7 +130,7 @@ These steps are for CDK apps originally created with a version older than 2.178.
 
 1. You can also use the `ENABLE_ADDITIONAL_METADATA_COLLECTION` value with the ` [FeatureFlags](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.FeatureFlags.html) ` class. The following is an example:
 
-   ```
+   ```javascript
    import * as cdk from 'aws-cdk-lib';
    import { FeatureFlags } from 'aws-cdk-lib';
    import * as cx_api from 'aws-cdk-lib/cx-api';
@@ -160,7 +160,7 @@ These steps are for CDK apps originally created with a version older than 2.178.
 
 The following is an example of a CDK app:
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as s3 from 'aws-cdk-lib/aws-s3';
@@ -200,7 +200,7 @@ At synthesis, usage data is collected, compressed, and stored in the ` AWS::CDK:
 
 The following is an example of general usage data collected with a CDK version older than 2.178.0:
 
-```
+```json
 {
     "fqn": "aws-cdk-lib.aws-s3.Bucket",
     "version": "v2.170.0"
@@ -209,7 +209,7 @@ The following is an example of general usage data collected with a CDK version o
 
 The following is an example of usage data collected, including the additional usage data introduced in CDK version 2.178.0:
 
-```
+```json
 {
     "fqn": "aws-cdk-lib.aws_s3.Bucket",
     "version": "2.170.0",

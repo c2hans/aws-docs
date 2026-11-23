@@ -103,7 +103,7 @@ You can create rules in Amazon EventBridge that define how to process telemetry 
 
 Telemetry events use the following format.
 
-```
+```json
 {
   "version": "0",
   "id": "a09d303e-2f6e-3d3c-a693-8e33f4fe3955",
@@ -376,7 +376,7 @@ Use the following steps to use the AWS CLI to create an EventBridge rule that re
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    aws events put-rule \
      --name MyGreengrassTelemetryEventRule \
      --event-pattern "{\"source\": [\"aws.greengrass\"], \"detail\": {\"ThingName\": [\"{{thing-name}}\"]}}"
@@ -385,7 +385,7 @@ Use the following steps to use the AWS CLI to create an EventBridge rule that re
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    aws events put-rule ^
      --name MyGreengrassTelemetryEventRule ^
      --event-pattern "{\"source\": [\"aws.greengrass\"], \"detail\": {\"ThingName\": [\"{{thing-name}}\"]}}"
@@ -394,7 +394,7 @@ Use the following steps to use the AWS CLI to create an EventBridge rule that re
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    aws events put-rule `
      --name MyGreengrassTelemetryEventRule `
      --event-pattern "{\"source\": [\"aws.greengrass\"], \"detail\": {\"ThingName\": [\"{{thing-name}}\"]}}"
@@ -410,7 +410,7 @@ Use the following steps to use the AWS CLI to create an EventBridge rule that re
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    aws events put-targets \
      --rule MyGreengrassTelemetryEventRule \
      --targets "Id"="1","Arn"="{{queue-arn}}"
@@ -419,7 +419,7 @@ Use the following steps to use the AWS CLI to create an EventBridge rule that re
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```bash
    aws events put-targets ^
      --rule MyGreengrassTelemetryEventRule ^
      --targets "Id"="1","Arn"="{{queue-arn}}"
@@ -428,7 +428,7 @@ Use the following steps to use the AWS CLI to create an EventBridge rule that re
 ------
 #### [ PowerShell ]
 
-   ```
+   ```bash
    aws events put-targets `
      --rule MyGreengrassTelemetryEventRule `
      --targets "Id"="1","Arn"="{{queue-arn}}"

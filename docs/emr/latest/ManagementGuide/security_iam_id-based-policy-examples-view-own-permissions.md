@@ -11,7 +11,7 @@ This example shows how you might create a policy that allows a users to view the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

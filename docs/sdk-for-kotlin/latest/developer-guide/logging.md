@@ -19,7 +19,7 @@ While any `SLF4J`-compatible log library may be used, this example enables log o
 
 Replace {{X.Y.Z}} with the version you’re using in your app or with the [latest version available](https://search.maven.org/#search|gav|1|g:org.apache.logging.log4j%20AND%20a:log4j-slf4j2-impl).
 
-```
+```kotlin
 implementation("org.apache.logging.log4j:log4j-slf4j2-impl:{{X.Y.Z}}")
 ```
 
@@ -27,7 +27,7 @@ implementation("org.apache.logging.log4j:log4j-slf4j2-impl:{{X.Y.Z}}")
 
 Create a file named `log4j2.xml` in your `resources` directory (for example, `<project-dir>/src/main/resources`). Add the following XML configuration to the file:
 
-```
+```xml
 <Configuration status="ERROR">
     <Appenders>
         <Console name="Out">
@@ -70,7 +70,7 @@ To opt into additional logging, set the `logMode` property when you construct a 
 
 The following example shows how to enable logging of requests (with the body) and the response (without the body).
 
-```
+```kotlin
 import aws.smithy.kotlin.runtime.client.LogMode
 
 // ...
@@ -100,12 +100,12 @@ To create a combined log mode using settings from the environment, you separate 
 
 For example, the following examples set the same log mode as the previous example.
 
-```
+```bash
 # Environment variable.
 export SDK_LOG_MODE=LogRequestWithBody|LogResponse
 ```
 
-```
+```bash
 # JVM system property.
 java -Dsdk.logMode=LogRequestWithBody|LogResponse ...
 ```

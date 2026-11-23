@@ -33,7 +33,7 @@ aws transcribe update-vocabulary-filter \
 
 The file *my-updated-vocab-filter.json* contains the following request body.
 
-```
+```json
 {
   "VocabularyFilterName": "{{my-first-vocabulary-filter}}",
   "VocabularyFilterFileUri": "s3://{{amzn-s3-demo-bucket}}/{{my-vocabulary-filters}}/{{my-updated-vocabulary-filter}}.txt"

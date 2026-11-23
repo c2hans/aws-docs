@@ -33,7 +33,7 @@ The following additional permissions may need to be configured in IAM depending 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

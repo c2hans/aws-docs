@@ -39,14 +39,14 @@ The following procedure updates the shared AWS `config` file with SSO informatio
 
    For example, if installing the modularized version of the Tools for PowerShell on Windows, you would most likely run commands similar to the following:
 
-   ```
+   ```text
    Install-Module -Name AWS.Tools.Installer
    Install-AWSToolsModule AWS.Tools.Common
    ```
 
 1. Run the following command. Replace the example property values with values from your IAM Identity Center configuration. For information about these properties and how to find them, see [IAM Identity Center credential provider settings](https://docs.aws.amazon.com/sdkref/latest/guide/feature-sso-credentials.html#feature-sso-credentials-profile) in the *AWS SDKs and Tools Reference Guide*.
 
-   ```
+   ```text
    $params = @{
      ProfileName = 'my-sso-profile'
      AccountId = '{{111122223333}}'
@@ -94,7 +94,7 @@ The following procedure updates the shared AWS `config` file with SSO informatio
 
 Before running commands that accesses AWS services, you need an active AWS access portal session so that the Tools for PowerShell can use IAM Identity Center authentication to resolve credentials. To sign in to the AWS access portal, run the following command in PowerShell, where `-ProfileName my-sso-profile` is the name of the profile that was created in the shared `config` file when you followed the procedure in the previous section of this topic.
 
-```
+```text
 Invoke-AWSSSOLogin -ProfileName my-sso-profile
 ```
 
@@ -106,7 +106,7 @@ The Tools for PowerShell informs you that SSO login was successful.
 
 To test if you already have an active session, run the following command after installing or importing the `AWS.Tools.SecurityToken` module as needed.
 
-```
+```text
 Get-STSCallerIdentity -ProfileName my-sso-profile
 ```
 
@@ -122,7 +122,7 @@ The following is an example of how to use IAM Identity Center with the Tools for
 
 Install or import the `AWS.Tools.S3` module as needed and then use the following PowerShell command to display a list of the S3 buckets.
 
-```
+```text
 Get-S3Bucket -ProfileName my-sso-profile
 ```
 

@@ -31,7 +31,7 @@ For more information, see [Set Cluster Authentication Mode](https://docs.aws.ama
 
  **Set authentication mode in ClusterConfig YAML:**
 
-```
+```yaml
 accessConfig:
   authenticationMode: <>
 ```
@@ -41,7 +41,7 @@ accessConfig:
 
 If you want to use access entries on an already existing, non-eksctl created, cluster, where `CONFIG_MAP` option is used, the user will need to first set `authenticationMode` to `API_AND_CONFIG_MAP`. For that, `eksctl` has introduced a new command for updating the cluster authentication mode, which works both with CLI flags e.g.
 
-```
+```shell
 eksctl utils update-authentication-mode --cluster my-cluster --authentication-mode API_AND_CONFIG_MAP
 ```
 
@@ -62,7 +62,7 @@ You can use access entries to grant Kubernetes permissions to IAM Identities suc
 
 Use the `accessConfig.accessEntries` field to associate the ARN of an IAM resource with a [Access Entries EKS API](https://docs.aws.amazon.com/eks/latest/userguide/access-policies.html#access-policy-permissions). For example:
 
-```
+```yaml
 accessConfig:
   authenticationMode: API_AND_CONFIG_MAP
   accessEntries:
@@ -114,13 +114,13 @@ When deleting a nodegroup created with a pre-existing `instanceRoleARN`, it is t
 
 This can be done in two different ways, either during cluster creation, specifying the desired access entries as part of the config file and running:
 
-```
+```shell
 eksctl create cluster -f config.yaml
 ```
 
 OR post cluster creation, by running:
 
-```
+```shell
 eksctl create accessentry -f config.yaml
 ```
 
@@ -131,19 +131,19 @@ For an example config file for creating access entries, see [40-access-entries.y
 
 The user can retieve all access entries associated with a certain cluster by running one of the following:
 
-```
+```shell
 eksctl get accessentry -f config.yaml
 ```
 
 OR
 
-```
+```shell
 eksctl get accessentry --cluster my-cluster
 ```
 
 Alternatively, to retrieve only the access entry corresponding to a certain IAM entity one shall use the `--principal-arn` flag. e.g.
 
-```
+```shell
 eksctl get accessentry --cluster my-cluster --principal-arn arn:aws:iam::111122223333:user/admin
 ```
 
@@ -152,13 +152,13 @@ eksctl get accessentry --cluster my-cluster --principal-arn arn:aws:iam::1111222
 
 To delete a single access entry at a time use:
 
-```
+```shell
 eksctl delete accessentry --cluster my-cluster --principal-arn arn:aws:iam::111122223333:user/admin
 ```
 
 To delete multiple access entries, use the `--config-file` flag and specify all the `principalARN’s` corresponding with the access entries, under the top-level `accessEntry` field, e.g.
 
-```
+```yaml
 ...
 accessEntry:
   - principalARN: arn:aws:iam::111122223333:user/my-user-name
@@ -166,7 +166,7 @@ accessEntry:
   - principalARN: arn:aws:iam::111122223333:role/admin-role
 ```
 
-```
+```shell
 eksctl delete accessentry -f config.yaml
 ```
 
@@ -175,7 +175,7 @@ eksctl delete accessentry -f config.yaml
 
 The user can migrate their existing IAM identities from `aws-auth` configmap to access entries by running the following:
 
-```
+```shell
 eksctl utils migrate-to-access-entry --cluster my-cluster --target-authentication-mode <API or API_AND_CONFIG_MAP>
 ```
 
@@ -203,6 +203,6 @@ accessConfig:
 
 and run:
 
-```
+```shell
 eksctl create cluster -f config.yaml
 ```

@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Shows the jobs that are submitted in the cluster’s job queue.
 
-```
+```sh
 awsbstat [-h] [-c {{CLUSTER}}] [-s {{STATUS}}] [-e] [-d] [{{job_ids}} [{{job_ids}} ...]]
 ```
 

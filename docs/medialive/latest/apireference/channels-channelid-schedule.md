@@ -101,7 +101,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### PUT schema
 <a name="channels-channelid-schedule-request-body-put-example"></a>
 
-```
+```json
 {
   "creates": {
     "scheduleActions": [
@@ -282,7 +282,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### ScheduleDeleteResultModel schema
 <a name="channels-channelid-schedule-response-body-scheduledeleteresultmodel-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -290,7 +290,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### ScheduleDescribeResultModel schema
 <a name="channels-channelid-schedule-response-body-scheduledescriberesultmodel-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "scheduleActions": [
@@ -462,7 +462,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### BatchUpdateScheduleResult schema
 <a name="channels-channelid-schedule-response-body-batchupdatescheduleresult-example"></a>
 
-```
+```json
 {
   "creates": {
     "scheduleActions": [
@@ -800,7 +800,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### InvalidRequest schema
 <a name="channels-channelid-schedule-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -809,7 +809,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### AccessDenied schema
 <a name="channels-channelid-schedule-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -818,7 +818,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### ResourceNotFound schema
 <a name="channels-channelid-schedule-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -827,7 +827,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### ChannelConfigurationValidationError schema
 <a name="channels-channelid-schedule-response-body-channelconfigurationvalidationerror-example"></a>
 
-```
+```json
 {
   "message": "string",
   "validationErrors": [
@@ -842,7 +842,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### LimitExceeded schema
 <a name="channels-channelid-schedule-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -851,7 +851,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### InternalServiceError schema
 <a name="channels-channelid-schedule-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -860,7 +860,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### BadGatewayException schema
 <a name="channels-channelid-schedule-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -869,7 +869,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 #### GatewayTimeoutException schema
 <a name="channels-channelid-schedule-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

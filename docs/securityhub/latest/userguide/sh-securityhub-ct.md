@@ -38,7 +38,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateAutomationRuleV2` action. In this example, an automation rule called `TestAutomationRule` is created. The `Severity` and `Account ID` attributes are specified as the **Criteria**. When the rule is matched the `Severity` is updated to **High**. For more information about automation rules, see [Automation rules in Security Hub](securityhub-v2-automation-rules.md).
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {

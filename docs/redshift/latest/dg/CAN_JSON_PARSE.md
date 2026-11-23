@@ -38,7 +38,7 @@ A VARBYTE type binary value.
 
  The following example shows CAN\_JSON\_PARSE running on a properly formed JSON array using a CASE condition. It returns true, so Amazon Redshift runs the JSON\_PARSE function on the example value.
 
-```
+```SQL
 SELECT CASE
             WHEN CAN_JSON_PARSE('[10001,10002,"abc"]')
             THEN JSON_PARSE('[10001,10002,"abc"]')
@@ -51,7 +51,7 @@ SELECT CASE
 
  The following example shows CAN\_JSON\_PARSE running on a value that isn’t JSON format using a CASE condition. It returns false, so Amazon Redshift returns the segment in the ELSE clause of the CASE condition instead.
 
-```
+```SQL
 SELECT CASE
             WHEN CAN_JSON_PARSE('This is a string.')
             THEN JSON_PARSE('This is a string.')

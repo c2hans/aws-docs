@@ -60,7 +60,7 @@ For more information, see [Controlling access to services with VPC endpoints](ht
 
 **Example VPC endpoint policy for OpenSearch Serverless**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -79,7 +79,7 @@ For more information, see [Controlling access to services with VPC endpoints](ht
 
 **Example Restrictive policy allowing only list operations**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

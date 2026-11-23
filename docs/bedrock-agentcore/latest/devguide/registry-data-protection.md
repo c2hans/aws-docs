@@ -25,4 +25,11 @@ To validate record metadata, use patterns such as the following:
 + Download source code only from repository hosts and owners that you allow.
 + Connect only to MCP server endpoints whose URL scheme and domain you allow.
 
+Skill packages that the registry stores need the same care. When the registry accepts a skill package, it validates the archive structure and the SKILL.md format against the Agent Skills specification. It doesn’t check what the scripts and other files in the package do. Before your agent loads a skill package, use patterns such as the following:
++ Verify the downloaded package against the `sha256` value that the registry returns with the download URL, and discard a package that doesn’t match.
++ Review the package’s scripts and other files, or load skills only from registries and publishers that you trust.
++ Run the skill’s scripts with the least privilege that they need.
+
+For information about how to download and verify a package, see [Download a skill package](registry-skill-package-download.md).
+
 **Topics**

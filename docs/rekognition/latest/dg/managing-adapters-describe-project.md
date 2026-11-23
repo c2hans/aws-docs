@@ -15,7 +15,7 @@ To describe a project version with the AWS CLI and SDK:
 ------
 #### [ CLI ]
 
-```
+```bash
 aws rekognition describe-project-versions
   --project-arn {{project_arn}} \
   --version-names {{[versions]}}

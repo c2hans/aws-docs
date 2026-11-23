@@ -32,7 +32,7 @@ For more information, see [Scheduled Scaling](https://docs.aws.amazon.com/autosc
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deletes the specified scheduled action for an Application Auto Scaling scalable target.**
 
-```
+```powershell
 Remove-AASScheduledAction -ServiceNamespace AppStream -ScheduledActionName WeekDaysFleetScaling -ResourceId fleet/MyFleet -ScalableDimension appstream:fleet:DesiredCapacity
 ```
 **Output:**
@@ -48,7 +48,7 @@ Performing the operation "Remove-AASScheduledAction (DeleteScheduledAction)" on 
 **Tools for PowerShell V5**
 **Example 1: This cmdlet deletes the specified scheduled action for an Application Auto Scaling scalable target.**
 
-```
+```powershell
 Remove-AASScheduledAction -ServiceNamespace AppStream -ScheduledActionName WeekDaysFleetScaling -ResourceId fleet/MyFleet -ScalableDimension appstream:fleet:DesiredCapacity
 ```
 **Output:**

@@ -45,7 +45,7 @@ To view a code example for using the `$eq` command, choose the tab for the langu
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function findByName(name) {
@@ -65,7 +65,7 @@ findByName("Thai Curry Palace");
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def find_by_name(name):

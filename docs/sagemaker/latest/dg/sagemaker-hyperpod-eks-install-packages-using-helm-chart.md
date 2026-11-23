@@ -15,22 +15,22 @@ This Helm installation step is required. If you set up your Amazon EKS cluster u
 
 1. Download the Helm charts provided by SageMaker HyperPod located at `helm_chart/HyperPodHelmChart` in the [SageMaker HyperPod CLI repository](https://github.com/aws/sagemaker-hyperpod-cli/tree/main/helm_chart).
 
-   ```
+   ```sh
    git clone https://github.com/aws/sagemaker-hyperpod-cli.git
    cd sagemaker-hyperpod-cli/helm_chart
    ```
 
 1. Update the dependencies of the Helm chart, preview the changes that will be made to your Kubernetes cluster, and install the Helm chart.
 
-   ```
+   ```sh
    helm dependencies update HyperPodHelmChart
    ```
 
-   ```
+   ```sh
    helm install hyperpod-dependencies HyperPodHelmChart --namespace kube-system --dry-run
    ```
 
-   ```
+   ```sh
    helm install hyperpod-dependencies HyperPodHelmChart --namespace kube-system
    ```
 

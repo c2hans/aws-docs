@@ -95,6 +95,10 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1011.
 Pattern: `arn:aws(-[a-z0-9]+)*:events:[a-z][a-z0-9]*(-[a-z0-9]+)*:([0-9]{12}):subscriber\/[A-Za-z0-9][\.\-_A-Za-z0-9]{0,255}\/[a-z0-9]{25}`
 
+ ** SubscriberDetails **
+Values EventBridge manages for a subscriber that depend on its target type. Only the member for the subscriber's target type is set. Returned in responses only; the customer never supplies these values.
+Type: [SubscriberDetails](API_SubscriberDetails.md) object
+
  ** Transformer **
 Transformer configuration for a subscriber.
 Type: [Transformer](API_Transformer.md) object

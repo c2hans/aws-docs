@@ -8,7 +8,7 @@ List all indexes.
 
 **Syntax**
 
-```
+```text
 FT._LIST
 ```
 

@@ -120,7 +120,7 @@ The Amazon EFS service-linked role makes API calls to AWS resources. You will se
 
 The following example shows a CloudTrail log entry that demonstrates a `CreateServiceLinkedRole` action when Amazon EFS creates the AWSServiceRoleForAmazonElasticFileSystem service-linked role.
 
-```
+```JSON
 {
     "eventVersion": "1.05",
     "userIdentity": {

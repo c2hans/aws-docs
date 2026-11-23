@@ -62,7 +62,7 @@ Create a cluster configuration file using these steps:
 
 1. Add the following basic cluster configuration:
 
-   ```
+   ```yaml
    apiVersion: eksctl.io/v1alpha5
    kind: ClusterConfig
 

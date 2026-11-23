@@ -34,7 +34,7 @@ First, configure an ISM policy in OpenSearch Dashboards.
 
 1. Replace the default policy with the following policy:
 
-   ```
+   ```json
    {
      "policy": {
        "description": "Move indexes between storage tiers",

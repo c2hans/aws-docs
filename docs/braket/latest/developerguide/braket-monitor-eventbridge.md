@@ -36,7 +36,7 @@ With EventBridge, you can create rules that define actions to take when Amazon B
    + For **Event source**, choose **Other**.
    + In the **Event pattern** section, choose **Custom patterns (JSON editor)**, and then paste the following event pattern into the text area:
 
-     ```
+     ```json
      {
        "source": [
          "aws.braket"
@@ -49,7 +49,7 @@ With EventBridge, you can create rules that define actions to take when Amazon B
 
      To capture all events from Amazon Braket, exclude the `detail-type` section as shown in the following code:
 
-     ```
+     ```json
      {
        "source": [
          "aws.braket"
@@ -79,7 +79,7 @@ The following attributes appear in the JSON "detail" field.
 
 The following JSON code shows an example of an Amazon Braket Quantum Task Status Change event.
 
-```
+```json
 {
     "version":"0",
     "id":"6101452d-8caf-062b-6dbc-ceb5421334c5",
@@ -110,7 +110,7 @@ The following JSON code shows an example of an Amazon Braket Quantum Task Status
 
 To monitor changes to the amount spent on spending limits, use the following event pattern:
 
-```
+```json
 {
   "source": [
     "aws.braket"
@@ -132,7 +132,7 @@ The following attributes appear in the JSON "detail" field for Braket Spending L
 
 The following JSON code shows an example of an Amazon Braket Spending Limit Spend Change event:
 
-```
+```json
 {
     "version": "0",
     "id": "c1a22f1f-3e86-46ea-87f9-0ca6f2234d83",

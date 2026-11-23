@@ -28,7 +28,7 @@ In this step, you create a policy that is similar to `AWSGlueServiceNotebookRole
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

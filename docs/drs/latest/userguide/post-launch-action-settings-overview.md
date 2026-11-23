@@ -30,7 +30,7 @@ In order to run an SSM command or Automation document owned by a different accou
 
 **Example**
 
-```
+```json
             {
                 "Effect": "Allow",
                 "Action": [

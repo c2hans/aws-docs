@@ -109,13 +109,13 @@ Use the AWS IoT Greengrass Dockerfile to build an AWS IoT Greengrass container i
 
 1. On the host machine, run the following command to switch to the directory that contains the configured Dockerfile.
 
-   ```
+   ```bash
    cd {{download-directory/}}aws-greengrass-docker-{{nucleus-version}}
    ```
 
 1. Run the following command to build the AWS IoT Greengrass container image from the Dockerfile.
 
-   ```
+   ```bash
    sudo docker build -t "{{platform}}/aws-iot-greengrass:{{nucleus-version}}" ./
    ```
 
@@ -124,13 +124,13 @@ Use the AWS IoT Greengrass Dockerfile to build an AWS IoT Greengrass container i
 
 1. On the host machine, run the following command to switch to the directory that contains the Dockerfile and the Compose file.
 
-   ```
+   ```bash
    cd {{download-directory/}}aws-greengrass-docker-{{nucleus-version}}
    ```
 
 1. Run the following command to use the Compose file to build the AWS IoT Greengrass container image.
 
-   ```
+   ```bash
    docker-compose -f docker-compose.yml build
    ```
 

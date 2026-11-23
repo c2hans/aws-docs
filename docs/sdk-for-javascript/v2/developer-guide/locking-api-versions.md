@@ -12,13 +12,13 @@ We recommend locking the API version for a service if you rely on it in producti
 
 To lock the API version that you use for a service, pass the `apiVersion` parameter when constructing the service object. In the following example, a newly created `AWS.DynamoDB` service object is locked to the `2011-12-05` API version:
 
-```
+```javascript
 var dynamodb = new AWS.DynamoDB({apiVersion: '2011-12-05'});
 ```
 
 You can globally configure a set of service API versions by specifying the ` apiVersions` parameter in `AWS.Config`. For example, to set specific versions of the DynamoDB and Amazon EC2 APIs along with the current Amazon Redshift API, set ` apiVersions` as follows:
 
-```
+```javascript
 AWS.config.apiVersions = {
   dynamodb: '2011-12-05',
   ec2: '2013-02-01',

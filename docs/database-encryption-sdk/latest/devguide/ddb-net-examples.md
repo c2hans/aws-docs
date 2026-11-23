@@ -24,7 +24,7 @@ You can use any supported [keyring](keyrings.md), but we recommend using one of 
 **Step 1: Create the AWS KMS keyring**
 The following example uses `CreateAwsKmsMrkMultiKeyring` to create an AWS KMS keyring with a symmetric encryption KMS key. The `CreateAwsKmsMrkMultiKeyring` method ensures that the keyring will correctly handle both single-Region and multi-Region keys.
 
-```
+```cs
 var matProv = new MaterialProviders(new MaterialProvidersConfig());
 var keyringInput = new CreateAwsKmsMrkMultiKeyringInput { Generator = kmsKeyId };
 var kmsKeyring = matProv.CreateAwsKmsMrkMultiKeyring(keyringInput);
@@ -34,7 +34,7 @@ var kmsKeyring = matProv.CreateAwsKmsMrkMultiKeyring(keyringInput);
 The following example defines an `attributeActionsOnEncrypt` Dictionary that represents sample [attribute actions](concepts.md#crypt-actions) for a table item.
 The following example does not define any attributes as `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`. If you specify any `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` attributes, then the partition and sort attributes must also be `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`.
 
-```
+```cs
 var attributeActionsOnEncrypt = new Dictionary<string, CryptoAction>
 {
     ["partition_key"] = CryptoAction.SIGN_ONLY, // The partition attribute must be SIGN_ONLY
@@ -48,7 +48,7 @@ var attributeActionsOnEncrypt = new Dictionary<string, CryptoAction>
 **Step 3: Define which attributes are excluded from the signatures**
 The following example assumes that all `DO_NOTHING` attributes share the distinct prefix "`:`", and uses the prefix to define the allowed unsigned attributes. The client assumes that any attribute name with the "`:`" prefix is excluded from the signatures. For more information, see [Allowed unsigned attributes](ddb-net-using.md#net-allowed-unauth).
 
-```
+```cs
 const String unsignAttrPrefix = ":";
 ```
 
@@ -57,7 +57,7 @@ The following example defines a `tableConfigs` Map that represents the encryptio
 This example specifies the DynamoDB table name as the [logical table name](ddb-net-using.md#net-logical-table-name). We strongly recommend specifying your DynamoDB table name as the logical table name when you first define your encryption configuration. For more information, see [Encryption configuration in the AWS Database Encryption SDK for DynamoDB](ddb-net-using.md#ddb-net-config-encrypt).
 To use [searchable encryption](searchable-encryption.md) or [signed beacons](configure.md#signed-beacons), you must also include the [`SearchConfig`](ddb-java-using.md#ddb-search-config) in your encryption configuration.
 
-```
+```cs
 Dictionary<String, DynamoDbTableEncryptionConfig> tableConfigs =
     new Dictionary<String, DynamoDbTableEncryptionConfig>();
 DynamoDbTableEncryptionConfig config = new DynamoDbTableEncryptionConfig
@@ -75,7 +75,7 @@ tableConfigs.Add(ddbTableName, config);
 **Step 5: Create a new AWS SDK DynamoDB client**
 The following example creates a new AWS SDK DynamoDB client using the `TableEncryptionConfigs` from **Step 4**.
 
-```
+```cs
 var ddb = new Client.DynamoDbClient(
     new DynamoDbTablesEncryptionConfig { TableEncryptionConfigs = tableConfigs });
 ```
@@ -83,7 +83,7 @@ var ddb = new Client.DynamoDbClient(
 **Step 6: Encrypt and sign a DynamoDB table item**
 The following example defines an `item` Dictionary that represents a sample table item and puts the item in the DynamoDB table. The item is encrypted and signed client-side before it is sent to DynamoDB.
 
-```
+```cs
 var item = new Dictionary<String, AttributeValue>
 {
     ["partition_key"] = new AttributeValue("BasicPutGetExample"),
@@ -117,7 +117,7 @@ The lower-level `DynamoDbItemEncryptor` does not support [searchable encryption]
 **Step 1: Create the AWS KMS keyring**
 The following example uses `CreateAwsKmsMrkMultiKeyring` to create an AWS KMS keyring with a symmetric encryption KMS key. The `CreateAwsKmsMrkMultiKeyring` method ensures that the keyring will correctly handle both single-Region and multi-Region keys.
 
-```
+```cs
 var matProv = new MaterialProviders(new MaterialProvidersConfig());
 var keyringInput = new CreateAwsKmsMrkMultiKeyringInput { Generator = kmsKeyId };
 var kmsKeyring = matProv.CreateAwsKmsMrkMultiKeyring(keyringInput);
@@ -127,7 +127,7 @@ var kmsKeyring = matProv.CreateAwsKmsMrkMultiKeyring(keyringInput);
 The following example defines an `attributeActionsOnEncrypt` Dictionary that represents sample [attribute actions](concepts.md#crypt-actions) for a table item.
 The following example does not define any attributes as `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`. If you specify any `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` attributes, then the partition and sort attributes must also be `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`.
 
-```
+```cs
 var attributeActionsOnEncrypt = new Dictionary<String, CryptoAction>
 {
     ["partition_key"] = CryptoAction.SIGN_ONLY, // The partition attribute must be SIGN_ONLY
@@ -141,7 +141,7 @@ var attributeActionsOnEncrypt = new Dictionary<String, CryptoAction>
 **Step 3: Define which attributes are excluded from the signatures**
 The following example assumes that all `DO_NOTHING` attributes share the distinct prefix "`:`", and uses the prefix to define the allowed unsigned attributes. The client assumes that any attribute name with the "`:`" prefix is excluded from the signatures. For more information, see [Allowed unsigned attributes](ddb-net-using.md#net-allowed-unauth).
 
-```
+```cs
 String unsignAttrPrefix = ":";
 ```
 
@@ -149,7 +149,7 @@ String unsignAttrPrefix = ":";
 The following example defines the configuration for the `DynamoDbItemEncryptor`.
 This example specifies the DynamoDB table name as the [logical table name](ddb-net-using.md#net-logical-table-name). We strongly recommend specifying your DynamoDB table name as the logical table name when you first define your encryption configuration. For more information, see [Encryption configuration in the AWS Database Encryption SDK for DynamoDB](ddb-net-using.md#ddb-net-config-encrypt).
 
-```
+```cs
 var config = new DynamoDbItemEncryptorConfig
 {
     LogicalTableName = ddbTableName,
@@ -164,14 +164,14 @@ var config = new DynamoDbItemEncryptorConfig
 **Step 5: Create the `DynamoDbItemEncryptor`**
 The following example creates a new `DynamoDbItemEncryptor` using the `config` from **Step 4**.
 
-```
+```cs
 var itemEncryptor = new DynamoDbItemEncryptor(config);
 ```
 
 **Step 6: Directly encrypt and sign a table item**
 The following example directly encrypts and signs an item using the `DynamoDbItemEncryptor`. The `DynamoDbItemEncryptor` does not put the item in your DynamoDB table.
 
-```
+```cs
 var originalItem = new Dictionary<String, AttributeValue>
 {
     ["partition_key"] = new AttributeValue("ItemEncryptDecryptExample"),

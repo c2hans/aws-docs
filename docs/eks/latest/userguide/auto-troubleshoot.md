@@ -87,7 +87,7 @@ However, you can stream logs live from an instance by using the `kubectl debug n
 
 1. From the shell, you can now install `util-linux-core` which provides the `nsenter` command. Use `nsenter` to enter the mount namespace of PID 1 (`init`) on the host, and run the `journalctl` command to stream logs from the `kubelet`:
 
-   ```
+   ```bash
    yum install -y util-linux-core
    nsenter -t 1 -m journalctl -f -u kubelet
    ```
@@ -207,7 +207,7 @@ kubectl get nodeclaim -o yaml
 
 An example output is as follows.
 
-```
+```bash
     nodeName: i-01234567890123456
     providerID: aws:///us-west-2a/i-01234567890123456
 ```
@@ -220,7 +220,7 @@ kubectl get endpoints kubernetes -o yaml
 
 An example output is as follows.
 
-```
+```bash
 apiVersion: v1
 kind: Endpoints
 metadata:
@@ -269,7 +269,7 @@ Due to this, you may experience issues when trying to share data between Pods. F
 
 To enable this sharing between Pods, you can use the Pod’s `seLinuxOptions` to configure the same MCS label on those Pods. In this example, we assign the three categories `c123,c456,c789` to the Pod. This will not conflict with any categories assigned to Pods on the node automatically, as they will only be assigned two categories.
 
-```
+```bash
 securityContext:
   seLinuxOptions:
     level: "s0:c123,c456,c789"

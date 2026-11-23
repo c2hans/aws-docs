@@ -10,9 +10,11 @@ S3 Vectors supports two types of metadata: filterable metadata and non-filterabl
 
 S3 Vectors evaluates your metadata filter before it runs vector search, a technique known as pre-filtering. S3 Vectors first identifies the vectors that match your filter, then only searches those vectors for the most similar ones, ensuring high recall even when filters match a small fraction of vectors. For example, if you search for similar movie embeddings and you filter by genre='mystery', S3 Vectors first identifies the vectors where the genre metadata is 'mystery', then only searches those for the closest matches to your query vector.
 
-Pre-filtering applies to vector indexes whose index mode is `ENHANCED`. Vector buckets created on or after September 30, 2026 create `ENHANCED` indexes. In a vector bucket created before that date, indexes have the index mode `CLASSIC`.
+Pre-filtering applies to vector indexes whose index mode is `ENHANCED`. An `ENHANCED` index also allows up to 40 KB of filterable metadata per vector. Vector buckets created on or after September 30, 2026 create `ENHANCED` indexes. In a vector bucket created before that date, indexes have the index mode `CLASSIC`.
 
-S3 Vectors performs vector search and filter evaluation in tandem on a vector index whose index mode is `CLASSIC`. S3 Vectors searches through candidate vectors in the index to find the top K similar vectors while simultaneously validating if each candidate vector matches your metadata filter conditions. On a `CLASSIC` index, queries with filters may return fewer than top K results when the vector index contains very few matching results.
+S3 Vectors performs vector search and filter evaluation in tandem on a vector index whose index mode is `CLASSIC`. S3 Vectors searches through candidate vectors in the index to find the top K similar vectors while simultaneously validating if each candidate vector matches your metadata filter conditions.
+
+A filtered query can return fewer than top K results on an index in either mode. This is more likely on a `CLASSIC` index when the vector index contains very few matching results.
 
 To move an existing index to `ENHANCED`, see [Changing a vector index's mode](s3-vectors-index-mode.md).
 
@@ -27,6 +29,8 @@ To move an existing index to `ENHANCED`, see [Changing a vector index's mode](s3
 <a name="s3-vectors-metadata-filtering-filterable"></a>
 
 Filterable metadata allows you to filter query results based on specific metadata values. By default, all metadata fields are filterable in a similarity query unless explicitly specified as non-filterable during vector index creation. S3 Vectors supports string, number, boolean, and list types of metadata with a size limit per vector. The metadata type is ideal for attributes that you want to filter on, such as categories, timestamps, or status values.
+
+On an `ENHANCED` index, up to 40 KB of each vector's metadata can be filterable, within the total metadata limit per vector. Each filterable string value, including each element of a string list, can be up to 2 KB. On a `CLASSIC` index, filterable metadata is limited to 2 KB per vector.
 
 If the metadata size exceeds the supported limits, the [PutVectors](https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_PutVectors.html) API operation will return a `400 Bad Request` error. For more information about the filterable metadata size limit per vector, see [Limitations and restrictions](s3-vectors-limitations.md).
 

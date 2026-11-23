@@ -88,7 +88,7 @@ aws elbv2 create-target-group \
 **To create a target group of type alb**
 Define a resource of type [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html). The protocol must be TCP and the port must match the listener port of the Application Load Balancer.
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
@@ -184,7 +184,7 @@ aws elbv2 create-load-balancer \
 ```
 
 **To add a TCP listener**
-Use the [create-listener](https://docs.aws.amazon.com/cli/latest/reference/elbv2/create-load-balancer.html) command to add a TCP listener. Only TCP listeners can forward traffic to an Application Load Balancer. For the default action, use the target group that you created in the previous step.
+Use the [create-listener](https://docs.aws.amazon.com/cli/latest/reference/elbv2/create-listener.html) command to add a TCP listener. Only TCP listeners can forward traffic to an Application Load Balancer. For the default action, use the target group that you created in the previous step.
 
 ```
 aws elbv2 create-listener \
@@ -200,7 +200,7 @@ aws elbv2 create-listener \
 **To create the Network Load Balancer**
 Define a resource of type [AWS::ElasticLoadBalancingV2::LoadBalancer](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-loadbalancer.html) and a resource of type [AWS::ElasticLoadBalancingV2::Listener](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-listener.html). Only TCP listeners can forward traffic to an Application Load Balancer. For the default action, use the target group that you created in the previous step.
 
-```
+```yaml
 Resources:
   myLoadBalancer:
     Type: 'AWS::ElasticLoadBalancingV2::LoadBalancer'

@@ -142,7 +142,7 @@ The following example [configuration file](ebextensions.md) enables managed plat
 
 **Example .ebextensions/managed-platform-update.config**
 
-```
+```yaml
 option_settings:
   aws:elasticbeanstalk:managedactions:
     ManagedActionsEnabled: true

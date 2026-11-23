@@ -65,7 +65,7 @@ For specs of the instance types, see the **Accelerated Computing** section in th
 
 If you encountered an error message similar to the following, follow the instructions at [Request a service quota increase for SageMaker AI resources](https://docs.aws.amazon.com/sagemaker/latest/dg/regions-quotas.html#service-limit-increase-request-procedure).
 
-```
+```txt
 ResourceLimitExceeded: An error occurred (ResourceLimitExceeded) when calling
 the CreateTrainingJob operation: The account-level service limit 'ml.p3dn.24xlarge
 for training job usage' is 0 Instances, with current utilization of 0 Instances

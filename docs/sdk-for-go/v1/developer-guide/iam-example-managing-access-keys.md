@@ -32,7 +32,7 @@ This code creates a new IAM access key for the IAM user named IAM\_USER\_NAME.
 
 Create a new Go file named `iam_createaccesskey.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -46,7 +46,7 @@ import (
 
 Set up the session.
 
-```
+```go
 func main() {
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
@@ -58,7 +58,7 @@ func main() {
 
 Call `CreateAccessKey` and print the results.
 
-```
+```go
     result, err := svc.CreateAccessKey(&iam.CreateAccessKeyInput{
         UserName: aws.String("IAM_USER_NAME"),
     })
@@ -81,7 +81,7 @@ In this example, you get a list of the access keys for a user and print the list
 
 Create a new Go file named `iam_listaccesskeys.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -95,7 +95,7 @@ import (
 
 Set up a new IAM client.
 
-```
+```go
 func main() {
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
@@ -107,7 +107,7 @@ func main() {
 
 Call `ListAccessKeys` and print the results.
 
-```
+```go
     result, err := svc.ListAccessKeys(&iam.ListAccessKeysInput{
         MaxItems: aws.Int64(5),
         UserName: aws.String("IAM_USER_NAME"),
@@ -131,7 +131,7 @@ In this example, you find out when an access key was last used.
 
 Create a new Go file named `iam_accesskeylastused.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -145,7 +145,7 @@ import (
 
 Set up a new IAM client.
 
-```
+```go
 func main() {
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
@@ -157,7 +157,7 @@ func main() {
 
 Call `GetAccessKeyLastUsed`, passing in the access key ID, and print the results.
 
-```
+```go
     result, err := svc.GetAccessKeyLastUsed(&iam.GetAccessKeyLastUsedInput{
         AccessKeyId: aws.String("ACCESS_KEY_ID"),
     })
@@ -180,7 +180,7 @@ In this example, you delete an IAM user.
 
 Create a new Go file with the name `iam_updateaccesskey.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -194,7 +194,7 @@ import (
 
 Set up a new IAM client.
 
-```
+```go
 func main() {
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
@@ -206,7 +206,7 @@ func main() {
 
 Call `UpdateAccessKey`, passing in the access key ID, status (making it active in this case), and user name.
 
-```
+```go
     _, err = svc.UpdateAccessKey(&iam.UpdateAccessKeyInput{
         AccessKeyId: aws.String("ACCESS_KEY_ID"),
         Status:      aws.String(iam.StatusTypeActive),
@@ -231,7 +231,7 @@ In this example, you delete an access key.
 
 Create a new Go file named `iam_deleteaccesskey.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 package main
 
 import (
@@ -245,7 +245,7 @@ import (
 
 Set up a new IAM client.
 
-```
+```go
 func main() {
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
@@ -257,7 +257,7 @@ func main() {
 
 Call `DeleteAccessKey`, passing in the access key ID and user name.
 
-```
+```go
     result, err := svc.DeleteAccessKey(&iam.DeleteAccessKeyInput{
         AccessKeyId: aws.String("ACCESS_KEY_ID"),
         UserName:    aws.String("USER_NAME"),

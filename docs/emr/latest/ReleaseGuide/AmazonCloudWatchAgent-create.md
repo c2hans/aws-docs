@@ -23,7 +23,7 @@ The following example IAM policy includes the `cloudwatch:PutMetricData` permiss
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -78,7 +78,7 @@ In the AWS CLI, you can add Amazon CloudWatch agent to a cluster with the `--app
 **To create a cluster with Amazon CloudWatch agent from the AWS CLI**
 + When you create a cluster, use a command similar to the following to include the Amazon CloudWatch agent. Replace `{{myKey}}` with the name of your EC2 key pair.
 
-  ```
+  ```bash,sh,zsh
   aws emr create-cluster --name "{{Spark cluster with CloudWatch agent}}" \
   --release-label emr-7.0.0 \
   --applications Name=Spark Name=AmazonCloudWatchAgent \

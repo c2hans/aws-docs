@@ -37,7 +37,7 @@ The following examples demonstrate typical CloudTrail event logs generated durin
 
 This CloudTrail event shows a successful `CreateUser` operation performed through the SCIM API. The event captures both the request parameters (with sensitive information masked) and the response elements, including the newly-created user's ID. This type of event is generated when an identity provider successfully provisions a new user to IAM Identity Center using the SCIM protocol.
 
-```
+```json
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -102,7 +102,7 @@ This CloudTrail event shows a successful `CreateUser` operation performed throug
 
 This CloudTrail event shows a failed `PatchGroup` operation that resulted in a `ValidationException` with the error message `"Missing path in PATCH request"`. The error occurred because the `PATCH` operation requires a path attribute to specify which group attribute to modify, but this attribute was missing from the request.
 
-```
+```json
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -152,7 +152,7 @@ This CloudTrail event shows a failed `PatchGroup` operation that resulted in a `
 
 This CloudTrail event shows a failed `CreateGroup` operation that resulted in a `ConflictException` with the error message `"Duplicate GroupDisplayName"`. This error occurs when attempting to create a group with a display name that already exists in IAM Identity Center. The identity provider must use a unique group name or update the existing group instead of creating a new one.
 
-```
+```json
 {
   "eventVersion": "1.10",
   "userIdentity": {
@@ -193,7 +193,7 @@ This CloudTrail event shows a failed `CreateGroup` operation that resulted in a 
 
 This CloudTrail event shows a failed `PatchUser` operation that resulted in a `ValidationException` with the error message `"List attribute emails exceeds allowed limit of 1"`. This error occurs when attempting to assign multiple email addresses to a user, as IAM Identity Center supports only one email address per user. The identity provider must configure SCIM mapping to send only a single email address for each user.
 
-```
+```json
 {
   "eventVersion": "1.10",
   "userIdentity": {

@@ -28,7 +28,7 @@ The following code example shows how to get started using Amazon EC2.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2/hello_ec2#code-examples).
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -70,7 +70,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the hello\_ec2.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/DescribeInstancesRequest.h>
@@ -188,7 +188,7 @@ The following code example shows how to use `AllocateAddress`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Allocate an Elastic IP address and associate it with an Amazon Elastic Compute Cloud
 //! (Amazon EC2) instance.
 /*!
@@ -230,7 +230,7 @@ The following code example shows how to use `AssociateAddress`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
 
 //! Associate an Elastic IP address with an EC2 instance.
@@ -275,7 +275,7 @@ The following code example shows how to use `AuthorizeSecurityGroupIngress`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Authorize ingress to an Amazon Elastic Compute Cloud (Amazon EC2) group.
 /*!
   \param groupID: The EC2 group ID.
@@ -305,7 +305,7 @@ AwsDoc::EC2::authorizeSecurityGroupIngress(const Aws::String &groupID,
 ```
 Utility function to build an ingress rule.
 
-```
+```cpp
 //! Build a sample ingress rule.
 /*!
   \param authorize_request: An 'AuthorizeSecurityGroupIngressRequest' instance.
@@ -344,7 +344,7 @@ The following code example shows how to use `CreateKeyPair`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Create an Amazon Elastic Compute Cloud (Amazon EC2) instance key pair.
 /*!
   \param keyPairName: A name for a key pair.
@@ -389,7 +389,7 @@ The following code example shows how to use `CreateSecurityGroup`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Create a security group.
 /*!
   \param groupName: A security group name.
@@ -439,7 +439,7 @@ The following code example shows how to use `CreateTags`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Add or overwrite only the specified tags for the specified Amazon Elastic Compute Cloud (Amazon EC2) resource or resources.
 /*!
   \param resources: The resources for the tags.
@@ -477,7 +477,7 @@ The following code example shows how to use `DeleteKeyPair`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Delete an Amazon Elastic Compute Cloud (Amazon EC2) instance key pair.
 /*!
   \param keyPairName: A name for a key pair.
@@ -515,7 +515,7 @@ The following code example shows how to use `DeleteSecurityGroup`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Delete a security group.
 /*!
   \param securityGroupID: A security group ID.
@@ -551,7 +551,7 @@ The following code example shows how to use `DescribeAddresses`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Describe all Elastic IP addresses.
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -598,7 +598,7 @@ The following code example shows how to use `DescribeAvailabilityZones`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! DescribeAvailabilityZones
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -646,7 +646,7 @@ The following code example shows how to use `DescribeInstances`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Describe all Amazon Elastic Compute Cloud (Amazon EC2) instances associated with an account.
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -735,7 +735,7 @@ The following code example shows how to use `DescribeKeyPairs`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Describe all Amazon Elastic Compute Cloud (Amazon EC2) instance key pairs.
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -777,7 +777,7 @@ The following code example shows how to use `DescribeRegions`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Describe all Amazon Elastic Compute Cloud (Amazon EC2) Regions.
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -821,7 +821,7 @@ The following code example shows how to use `DescribeSecurityGroups`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Describe all Amazon Elastic Compute Cloud (Amazon EC2) security groups, or a specific group.
 /*!
   \param groupID: A group ID, ignored if empty.
@@ -884,7 +884,7 @@ The following code example shows how to use `MonitorInstances`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Enable detailed monitoring for an Amazon Elastic Compute Cloud (Amazon EC2) instance.
 /*!
   \param instanceId: An EC2 instance ID.
@@ -937,7 +937,7 @@ The following code example shows how to use `RebootInstances`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Reboot an Amazon Elastic Compute Cloud (Amazon EC2) instance.
 /*!
   \param instanceID: An EC2 instance ID.
@@ -989,7 +989,7 @@ The following code example shows how to use `ReleaseAddress`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Release an Elastic IP address.
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -1025,7 +1025,7 @@ The following code example shows how to use `RunInstances`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Launch an Amazon Elastic Compute Cloud (Amazon EC2) instance.
 /*!
   \param instanceName: A name for the EC2 instance.
@@ -1078,7 +1078,7 @@ The following code example shows how to use `StartInstances`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Start an Amazon Elastic Compute Cloud (Amazon EC2) instance.
 /*!
   \param instanceID: An EC2 instance ID.
@@ -1130,7 +1130,7 @@ The following code example shows how to use `StopInstances`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Stop an EC2 instance.
 /*!
   \param instanceID: An EC2 instance ID.
@@ -1185,7 +1185,7 @@ The following code example shows how to use `TerminateInstances`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Terminate an Amazon Elastic Compute Cloud (Amazon EC2) instance.
 /*!
   \param instanceID: An EC2 instance ID.
@@ -1224,7 +1224,7 @@ The following code example shows how to use `UnmonitorInstances`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Disable monitoring for an EC2 instance.
 /*!
   \param instanceId: An EC2 instance ID.

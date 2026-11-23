@@ -34,7 +34,7 @@ In order to use notebooks and Spark clusters, you must be a superuser or a membe
 
 1. Run the following code from your notebook to instantiate a cluster and connect the FinSpace PySpark image to the cluster.
 
-   ```
+   ```python
    %local
    from aws.finspace.cluster import FinSpaceClusterManager
 
@@ -44,7 +44,7 @@ In order to use notebooks and Spark clusters, you must be a superuser or a membe
 
    The output should be similar to the following output
 
-   ```
+   ```python
    Cluster is starting. It will be operational in approximately 5 to 8 minutes
    Started cluster with cluster ID: 8x6zd9cq and state: STARTING
    ......
@@ -76,14 +76,14 @@ Without the `%local` at the beginning of the cell, your code will be executed on
 
 1. Initialize dataset ID and data view ID in the notebook.
 
-   ```
+   ```python
    dataset_id    = "rgg1hj1"
    data_view_id  = "VrvKEKnA1El2nr821BaLTQ"
    ```
 
 1. Instantiate FinSpace Analytics Manager to access the data and read into a Spark DataFrame.
 
-   ```
+   ```python
    from aws.finspace.analytics import FinSpaceAnalyticsManager
    finspace_analytics = FinSpaceAnalyticsManager(Spark = Spark)
 

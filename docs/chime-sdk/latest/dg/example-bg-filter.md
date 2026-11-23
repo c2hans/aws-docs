@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/example-bg-filter.ht
 
 The following example shows how to implement the filters.
 
-```
+```javascript
 import {
     VideoFxConfig,
     VideoFxTypeConversion,

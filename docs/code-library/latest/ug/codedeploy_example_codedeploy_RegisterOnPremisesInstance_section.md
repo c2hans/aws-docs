@@ -30,7 +30,7 @@ For more information, see [Use the register-on-premises-instance command (IAM us
 **Tools for PowerShell V4**
 **Example 1: This example registers an on-premises instance with the specified name and IAM user.**
 
-```
+```powershell
 Register-CDOnPremiseInstance -IamUserArn arn:aws:iam::80398EXAMPLE:user/CodeDeployDemoUser -InstanceName AssetTag12010298EX
 ```
 +  For API details, see [RegisterOnPremisesInstance](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -38,7 +38,7 @@ Register-CDOnPremiseInstance -IamUserArn arn:aws:iam::80398EXAMPLE:user/CodeDepl
 **Tools for PowerShell V5**
 **Example 1: This example registers an on-premises instance with the specified name and IAM user.**
 
-```
+```powershell
 Register-CDOnPremiseInstance -IamUserArn arn:aws:iam::80398EXAMPLE:user/CodeDeployDemoUser -InstanceName AssetTag12010298EX
 ```
 +  For API details, see [RegisterOnPremisesInstance](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

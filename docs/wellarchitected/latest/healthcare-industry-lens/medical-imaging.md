@@ -17,3 +17,5 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 +  A high-level overview of the medical imaging workflow is shown in figure 3.
 
 ![Diagram showing the medical imaging workflow.](https://docs.aws.amazon.com/wellarchitected/latest/healthcare-industry-lens/images/medical-imaging-workflow.png)
+
+*A representative medical imaging workflow.*

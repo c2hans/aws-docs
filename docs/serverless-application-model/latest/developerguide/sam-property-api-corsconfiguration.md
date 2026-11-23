@@ -19,7 +19,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-api-corsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AllowCredentials](#sam-api-corsconfiguration-allowcredentials): {{Boolean}}
   [AllowHeaders](#sam-api-corsconfiguration-allowheaders): {{String}}
   [AllowMethods](#sam-api-corsconfiguration-allowmethods): {{String}}
@@ -71,7 +71,7 @@ CORS Configuration example. This is just a portion of an AWS SAM template file s
 #### YAML
 <a name="sam-property-api-corsconfiguration--examples--corsconfiguration--yaml"></a>
 
-```
+```yaml
 Resources:
   ApiGatewayApi:
     Type: AWS::Serverless::Api

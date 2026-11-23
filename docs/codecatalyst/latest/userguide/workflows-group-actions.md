@@ -44,7 +44,7 @@ Use the following instructions to define an CodeCatalyst action group.
 
 1. In `Actions`, add code similar to the following:
 
-   ```
+   ```yaml
    Actions:
      {{action-group-name}}:
        Actions:

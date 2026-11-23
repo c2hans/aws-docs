@@ -10,7 +10,7 @@ The JavaScript API supports most available AWS services. Each service class in t
 
 When using the SDK in Node.js, you add the SDK package to your application using `require`, which provides support for all current services.
 
-```
+```javascript
 var AWS = require('aws-sdk');
 ```
 
@@ -29,7 +29,7 @@ The default hosted SDK package provides support for a subset of the available AW
 
 Requiring the SDK for JavaScript as shown previously includes the entire SDK into your code. Alternately, you can choose to require only the individual services used by your code. Consider the following code used to create an Amazon S3 service object.
 
-```
+```javascript
 // Import the AWS SDK
 var AWS = require('aws-sdk');
 
@@ -42,13 +42,13 @@ var s3 = new AWS.S3({apiVersion: '2006-03-01'});
 
 In the previous example, the `require` function specifies the entire SDK. The amount of code to transport over the network as well as the memory overhead of your code would be substantially smaller if only the portion of the SDK you require for the Amazon S3 service was included. To require an individual service, call the `require` function as shown, including the service constructor in all lower case.
 
-```
+```javascript
 require('aws-sdk/clients/{{SERVICE}}');
 ```
 
 Here is what the code to create the previous Amazon S3 service object looks like when it includes only the Amazon S3 portion of the SDK.
 
-```
+```javascript
 // Import the Amazon S3 service client
 var S3 = require('aws-sdk/clients/s3');
 
@@ -62,7 +62,7 @@ var s3 = new S3({
 
 You can still access the global AWS namespace without every service attached to it.
 
-```
+```javascript
 require('aws-sdk/global');
 ```
 
@@ -75,7 +75,7 @@ To access service features through the JavaScript API, you first create a *servi
 
 To use a feature, you must create an instance of the class that provides access to that feature. The following example shows creating a service object for DynamoDB from the `AWS.DynamoDB` client class.
 
-```
+```javascript
 var dynamodb = new AWS.DynamoDB({apiVersion: '2012-08-10'});
 ```
 
@@ -83,13 +83,13 @@ By default, a service object is configured with the global settings also used to
 
 In the following example, an Amazon EC2 service object is created with configuration for a specific Region but otherwise uses the global configuration.
 
-```
+```javascript
 var ec2 = new AWS.EC2({region: 'us-west-2', apiVersion: '2014-10-01'});
 ```
 
 In addition to supporting service-specific configuration applied to an individual service object, you can also apply service-specific configuration to all newly created service objects of a given class. For example, to configure all service objects created from the Amazon EC2 class to use the US West (Oregon) (`us-west-2`) Region, add the following to the `AWS.config` global configuration object.
 
-```
+```javascript
 AWS.config.ec2 = {region: 'us-west-2', apiVersion: '2016-04-01'};
 ```
 
@@ -98,7 +98,7 @@ AWS.config.ec2 = {region: 'us-west-2', apiVersion: '2016-04-01'};
 
 You can lock a service object to a specific API version of a service by specifying the `apiVersion` option when creating the object. In the following example, a DynamoDB service object is created that is locked to a specific API version.
 
-```
+```javascript
 var dynamodb = new AWS.DynamoDB({apiVersion: '2011-12-05'});
 ```
 
@@ -109,7 +109,7 @@ For more information about locking the API version of a service object, see [Loc
 
 When calling a method of a service object, pass parameters in JSON as required by the API. For example, in Amazon S3, to get an object for a specified bucket and key, pass the following parameters to the `getObject` method. For more information about passing JSON parameters, see [Working with JSON](working-with-json.md).
 
-```
+```javascript
 s3.getObject({Bucket: 'bucketName', Key: 'keyName'});
 ```
 
@@ -117,13 +117,13 @@ For more information about Amazon S3 parameters, see [`Class: AWS.S3`](https://d
 
 In addition, you can bind values to individual parameters when creating a service object using the `params` parameter. The value of the `params` parameter of service objects is a map that specifies one or more of the parameter values defined by the service object. The following example shows the `Bucket` parameter of an Amazon S3 service object being bound to a bucket named `amzn-s3-demo-bucket`.
 
-```
+```javascript
 var s3bucket = new AWS.S3({params: {Bucket: 'amzn-s3-demo-bucket'}, apiVersion: '2006-03-01' });
 ```
 
 By binding the service object to a bucket, the `s3bucket` service object treats the `amzn-s3-demo-bucket` parameter value as a default value that no longer needs to be specified for subsequent operations. Any bound parameter values are ignored when using the object for operations where the parameter value isn't applicable. You can override this bound parameter when making calls on the service object by specifying a new value.
 
-```
+```javascript
 var s3bucket = new AWS.S3({ params: {Bucket: 'amzn-s3-demo-bucket'}, apiVersion: '2006-03-01' });
 s3bucket.getObject({Key: 'keyName'});
 // ...

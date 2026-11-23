@@ -13,7 +13,7 @@ To illustrate how the annotation works, the code example uses the following two 
 
 The following data class contains two `InnerBean` fields. The getter method, `getInnerBeanWithoutAnno()`, is not annotated with `@DynamoDbPreserveEmptyObject`. The `getInnerBeanWithAnno()` method is annotated.
 
-```
+```java
 @DynamoDbBean
 public class MyBean {
 
@@ -50,7 +50,7 @@ public class MyBean {
 
 Instances of the following `InnerBean` class are fields of `MyBean` and are initialized as empty objects in the example code.
 
-```
+```java
 @DynamoDbBean
 public class InnerBean {
 
@@ -75,7 +75,7 @@ public class InnerBean {
 
 The following code example saves a `MyBean` object with initialized inner beans to DynamoDB and then retrieves the item. The logged output shows that the `innerBeanWithoutAnno` is not initialized, but `innerBeanWithAnno` has been created.
 
-```
+```java
     public MyBean preserveEmptyObjectAnnoUsingGetItemExample(DynamoDbTable<MyBean> myBeanTable) {
         // Save an item to DynamoDB.
         MyBean bean = new MyBean();
@@ -101,7 +101,7 @@ The following code example saves a `MyBean` object with initialized inner beans 
 
 You can use the following `StaticTableSchema` version of the table schemas in place of the annotations on the beans.
 
-```
+```java
     public static TableSchema<MyBean> buildStaticSchemas() {
 
         StaticTableSchema<InnerBean> innerBeanStaticTableSchema =

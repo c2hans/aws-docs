@@ -80,7 +80,7 @@ The following examples show how to add a file system to an existing domain or us
 **To add a file system that is accessible in shared spaces**
 + Update the default space settings for your domain. The following example adds the file system settings to the default space settings:
 
-  ```
+  ```bash
   aws sagemaker update-domain --domain-id {{domain-id}} \
   --default-space-settings file://file-system-settings.json
   ```
@@ -90,7 +90,7 @@ The following examples show how to add a file system to an existing domain or us
 **To add a file system that is accessible in private spaces**
 + Update the default user settings for your domain. The following example adds the file system settings to the default user settings:
 
-  ```
+  ```bash
   aws sagemaker update-domain --domain-id {{domain-id}} \
   --default-user-settings file://file-system-settings.json
   ```
@@ -100,7 +100,7 @@ The following examples show how to add a file system to an existing domain or us
 **To add a file system that is accessible only to an individual user**
 + Update the user profile for the user. The following example adds the file system settings to a user profile:
 
-  ```
+  ```bash
   aws sagemaker update-user-profile --domain-id {{domain-id}} \
   --user-profile-name {{user-profile-name}} \
   --user-settings file://file-system-settings.json
@@ -111,7 +111,7 @@ The following examples show how to add a file system to an existing domain or us
 **Example file system settings file**
 The file in the preceding examples, `file-system-settings.json`, has the following settings:
 
-```
+```json
 {
     "CustomFileSystemConfigs":
     [
@@ -135,7 +135,7 @@ The ID of your Amazon EFS file system.
 `FileSystemPath`
 The path to the file system directory that is accessible to the domain users in their spaces in Studio. Permitted users can access only this directory and below. The default path is the file system root: `/`.
 
-```
+```json
 {
     "CustomFileSystemConfigs":
     [
@@ -170,7 +170,7 @@ This example configuration has the following key:
 The default execution role for the users of the domain.
 If you want to apply POSIX permissions for your file system, you can also pass the following settings to the `create-domain` or `create-user-profile` commands:
 
-```
+```json
 {
     "CustomPosixUserConfig":
     {
@@ -199,7 +199,7 @@ After you add a custom file system to a domain, the domain users can attach the 
 **To attach a custom file system to a space**
 + Add the file system configuration to the space settings. The following example command attaches a file system to a new space.
 
-  ```
+  ```bash
   aws sagemaker create-space \
   --space-name {{space-name}} \
   --domain-id {{domain-id}} \
@@ -213,7 +213,7 @@ After you add a custom file system to a domain, the domain users can attach the 
 ------
 #### [ For your FSx for Lustre file systems ]
 
-  ```
+  ```json
   {
       "AppType": "JupyterLab",
       "JupyterLabAppSettings":
@@ -238,7 +238,7 @@ After you add a custom file system to a domain, the domain users can attach the 
 ------
 #### [ For your Amazon EFS file systems ]
 
-  ```
+  ```json
   {
       "AppType": "JupyterLab",
       "JupyterLabAppSettings":

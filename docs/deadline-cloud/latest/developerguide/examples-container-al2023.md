@@ -13,13 +13,13 @@ The image installs packages in layered groups that match the worker AMI: core sy
 
 Build the image:
 
-```
+```bash
 docker build -f Dockerfile.worker-equivalent -t al2023-deadline:latest .
 ```
 
 Build a conda package inside the container:
 
-```
+```bash
 docker run --rm -v "$PWD":/work -w /work al2023-deadline:latest \
     bash -c "pip3.11 install conda-build && conda build my-recipe/"
 ```

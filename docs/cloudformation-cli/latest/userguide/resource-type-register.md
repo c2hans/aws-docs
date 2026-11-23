@@ -31,7 +31,7 @@ Use the [list-types](https://docs.aws.amazon.com/cli/latest/reference/cloudforma
 
 After you've registered and enabled your Hook, you must set the `TargetStacks` to `ALL` in the `HookConfiguration` section. For example, the following command uses the `set-type-configuration` operation and lists the `TargetStacks` as `ALL`. You may specify the `FailureMode` as `FAIL` or `WARN` and add additional properties.
 
-```
+```sh
 $ aws cloudformation --region us-west-2 set-type-configuration \
   --configuration '{"CloudFormationConfiguration":{"HookConfiguration": {"TargetStacks":"ALL", "FailureMode": "FAIL", "Properties":{}}}}' \
   --type-arn ${{HOOK_TYPE_ARN}}

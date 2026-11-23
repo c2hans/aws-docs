@@ -13,7 +13,7 @@ The following example policy document contains the permissions required to creat
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -50,7 +50,7 @@ If you're creating a policy that might be used for organization trails as well, 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

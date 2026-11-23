@@ -146,7 +146,7 @@ For example, you can create a policy that allows access to content only when the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

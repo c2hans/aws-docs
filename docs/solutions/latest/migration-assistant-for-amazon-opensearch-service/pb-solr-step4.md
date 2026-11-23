@@ -6,19 +6,19 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 After backfill completes, confirm the target holds the expected indexes and documents. List the indexes and compare document counts between source and target:
 
-```
+```bash
 console clusters cat-indices --refresh
 ```
 
 Check the document count for a migrated collection on the target. Each Apache Solr collection or core becomes an index of the same name on the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection:
 
-```
+```bash
 console clusters curl target /<collection>/_count
 ```
 
 Compare the returned count against the document count reported by Apache Solr for the same collection. Then spot-check a few documents to confirm stored field values migrated correctly:
 
-```
+```bash
 console clusters curl target /<collection>/_search?size=5&pretty
 ```
 

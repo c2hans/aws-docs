@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/chime/latest/ag/logout-users.html
 
 The following example shows how to log out multiple users from your Amazon Chime administrative account.
 
-```
+```java
 ListUsersRequest listUsersRequest = new ListUsersRequest()
     .withAccountId("{{chimeAccountId}}");
 ListUsersResult listUsersResult = chime.listUsers(listUsersRequest);

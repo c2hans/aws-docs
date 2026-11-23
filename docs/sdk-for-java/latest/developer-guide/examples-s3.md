@@ -25,7 +25,7 @@ From version 2.18.x and onward, the AWS SDK for Java 2.x uses [virtual hosted-st
 Call the [`forcePathStyle`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3BaseClientBuilder.html#forcePathStyle(java.lang.Boolean) method with `true` in your client builder to force the client to use path-style addressing for buckets.
 The following example shows a service client configured with an endpoint override and using path-style addressing.
 
-```
+```java
 S3Client client = S3Client.builder()
                           .region(Region.US_WEST_2)
                           .endpointOverride(URI.create("https://s3.us-west-2.amazonaws.com"))

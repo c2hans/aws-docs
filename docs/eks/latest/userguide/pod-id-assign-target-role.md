@@ -62,7 +62,7 @@ In this step, you will establish a secure trust chain by creating and configurin
 
 1. In the policy editor, replace the default JSON with your trust policy. Replace the placeholder values for role name and `111122223333` in the IAM role ARN with the AWS account ID hosting your EKS cluster. You can also optionally use PrincipalTags in the role trust policy to authorize only specific service accounts from a given cluster and namespace to assume your target role. For example:
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -94,7 +94,7 @@ The above policy lets the role `eks-pod-identity-primary-role` from AWS account 
 
 If you [Disabled Session Tags](https://docs.aws.amazon.com/eks/latest/userguide/pod-id-abac.html#pod-id-abac-tags) in your EKS Pod Identity, EKS Pod Identity also sets the `sts:ExternalId` with information about the cluster, namespace, and service account of a pod when assuming a target role.
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -145,7 +145,7 @@ In this step, you will update the permission policy of the [EKS Pod Identity rol
 
 1. In the policy editor, replace the default JSON with your permission policy. Replace the placeholder value for role name and `222233334444` in the IAM role ARN with your Target IAM Role. For example:
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

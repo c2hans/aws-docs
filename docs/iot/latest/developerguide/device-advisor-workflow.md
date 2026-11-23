@@ -29,7 +29,7 @@ A test suite must have at least one test group, and each test group must have at
 
 Each root group follows this basic structure:
 
-```
+```JSON
 {
     "configuration": {  // for all tests in the test suite
         "": ""
@@ -59,7 +59,7 @@ For information on how to use the `"id"` and `"version"` fields for each test ca
 
 The following block is an example of a root group configuration. This configurations specifies the *MQTT Connect Happy Case* and *MQTT Connect Exponential Backoff Retries* test cases, along with descriptions of the configuration fields.
 
-```
+```JSON
 {
     "configuration": {},  // Suite-level configuration
     "tests": [            // Group definitions should be provided here
@@ -95,7 +95,7 @@ You must supply the root group configuration when you create your test suite def
 
 Here is a Java SDK example:
 
-```
+```java
 response = iotDeviceAdvisorClient.createSuiteDefinition(
         CreateSuiteDefinitionRequest.builder()
             .suiteDefinitionConfiguration(SuiteDefinitionConfiguration.builder()
@@ -125,7 +125,7 @@ When the operation returns the `suiteDefinitionId`, you may see new `id` fields 
 
 Java SDK example:
 
-```
+```java
 response = iotDeviceAdvisorClient.GetSuiteDefinition(
     GetSuiteDefinitionRequest.builder()
         .suiteDefinitionId("{{your-suite-definition-id}}")
@@ -140,7 +140,7 @@ Use the `GetEndpoint` API operation to get the test endpoint used by your device
 
 SDK example:
 
-```
+```java
 response = iotDeviceAdvisorClient.getEndpoint(GetEndpointRequest.builder()
 .certificateArn("{{your-test-device-certificate-arn}}")
 .thingArn("{{your-test-device-thing-arn}}")
@@ -161,7 +161,7 @@ For `.parallelRun()`, use `true` if you use a Device-level endpoint to run multi
 
 SDK example:
 
-```
+```java
 response = iotDeviceAdvisorClient.startSuiteRun(StartSuiteRunRequest.builder()
 .suiteDefinitionId("{{your-suite-definition-id}}")
 .suiteRunConfiguration(SuiteRunConfiguration.builder()
@@ -184,7 +184,7 @@ After you start a test suite run, you can check its progress and its results wit
 
 SDK example:
 
-```
+```java
 // Using the SDK, call the GetSuiteRun API.
 
 response = iotDeviceAdvisorClient.GetSuiteRun(
@@ -201,7 +201,7 @@ To stop a test suite run that is still in progress, you can call the `StopSuiteR
 
 SDK example:
 
-```
+```java
 // Using the SDK, call the StopSuiteRun API.
 
 response = iotDeviceAdvisorClient.StopSuiteRun(

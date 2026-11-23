@@ -13,7 +13,7 @@ The `AmazonDataZoneSageMakerManageAccessRole` role has the following inline poli
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -41,7 +41,7 @@ The `AmazonDataZoneSageMakerManageAccessRole` role has the following trust polic
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

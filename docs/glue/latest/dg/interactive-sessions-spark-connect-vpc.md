@@ -21,7 +21,7 @@ You need two VPC endpoints:
 
 The following AWS Cloud Development Kit (AWS CDK) (AWS CDK) example creates both VPC endpoints with a security group that allows HTTPS from within the VPC:
 
-```
+```typescript
 import { Stack, StackProps, Aws } from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import { Construct } from 'constructs';
@@ -89,7 +89,7 @@ export class SparkConnectVpcStack extends Stack {
 
 After creating the endpoints with private DNS enabled, the `sc://` session URL resolves to your VPC endpoint automatically. Use the standard Spark Connect flow from any resource in the VPC (Amazon EC2, Lambda, Amazon ECS, and others) with no code changes:
 
-```
+```python
 import boto3
 from urllib.parse import quote
 from pyspark.sql import SparkSession
@@ -122,7 +122,7 @@ spark.version
 
 If you use the `sagemaker-studio` library, the Spark utilities module works within a VPC with no additional configuration. After creating the VPC endpoints, initialize the session as usual:
 
-```
+```python
 from sagemaker_studio import sparkutils
 
 spark = sparkutils.init(connection_name="{{my-glue-spark-connection}}")

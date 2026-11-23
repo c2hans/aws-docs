@@ -97,7 +97,7 @@ You can provide wildcard access to all `aws-quicksetup-patchpolicy` buckets or o
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -121,7 +121,7 @@ You can provide wildcard access to all `aws-quicksetup-patchpolicy` buckets or o
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

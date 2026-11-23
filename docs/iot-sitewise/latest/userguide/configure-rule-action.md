@@ -72,7 +72,7 @@ AWS IoT rules with the AWS IoT SiteWise rule action. For more information, see [
    + **Layers** – Add the **AWSSDKPandas-Python311** layer for the Lambda function to use `numpy`.
    + **Function code** – Use the following function code, which consumes a string argument named `timestamp` and outputs `timeInSeconds` and `offsetInNanos` values for that timestamp.
 
-     ```
+     ```python
      import json
      import math
      import numpy
@@ -128,14 +128,14 @@ This section contains example rule configurations to create a rule with an AWS I
 **Example rule action that uses property aliases as message topics**
 The following example creates a rule with an AWS IoT SiteWise action that uses the topic (through [topic()](https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-functions.html#iot-function-topic)) as the property alias to identify asset properties. Use this example to define one rule for ingesting double-type data to all wind turbines in all wind farms. This example requires that you define property aliases on all turbine assets' properties. You would need to define a second, similar rule to ingest integer-type data.
 
-```
+```bash
 aws iot create-topic-rule \
   --rule-name SiteWiseWindFarmRule \
   --topic-rule-payload file://sitewise-rule-payload.json
 ```
 The example payload in `sitewise-rule-payload.json` contains the following content.
 
-```
+```json
 {
   "sql": "SELECT * FROM '/company/windfarm/+/turbine/+/+' WHERE type = 'double'",
   "description": "Sends data to the wind turbine asset property with the same alias as the topic",
@@ -167,7 +167,7 @@ The example payload in `sitewise-rule-payload.json` contains the following conte
 ```
 With this rule action, send the following message to a wind turbine property alias (for example, `/company/windfarm/3/turbine/7/temperature`) as a topic to ingest data.
 
-```
+```json
 {
   "type": "double",
   "value": "38.3",
@@ -178,14 +178,14 @@ With this rule action, send the following message to a wind turbine property ali
 **Example rule action that uses timestamp() to determine time**
 The following example creates a rule with an AWS IoT SiteWise action that identifies an asset property by IDs and uses [timestamp()](https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-functions.html#iot-function-timestamp) to determine the current time.
 
-```
+```bash
 aws iot create-topic-rule \
   --rule-name SiteWiseAssetPropertyRule \
   --topic-rule-payload file://sitewise-rule-payload.json
 ```
 The example payload in `sitewise-rule-payload.json` contains the following content.
 
-```
+```json
 {
   "sql": "SELECT * FROM 'my/asset/property/topic'",
   "description": "Sends device data to an asset property",
@@ -219,7 +219,7 @@ The example payload in `sitewise-rule-payload.json` contains the following conte
 ```
 With this rule action, send the following message to the `my/asset/property/topic` to ingest data.
 
-```
+```json
 {
   "type": "double",
   "value": "38.3"

@@ -44,7 +44,7 @@ The following sequence of events captures an example of a successful password-ba
 
 **CredentialChallenge**
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -82,7 +82,7 @@ The following sequence of events captures an example of a successful password-ba
 
 **Successful CredentialVerification**
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -120,7 +120,7 @@ The following sequence of events captures an example of a successful password-ba
 
 **Successful UserAuthentication**
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -164,7 +164,7 @@ The following sequence of events captures an example of a successful smart card 
 
 **CredentialChallenge**
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -201,7 +201,7 @@ The following sequence of events captures an example of a successful smart card 
 
 **Successful CredentialVerification**
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -238,7 +238,7 @@ The following sequence of events captures an example of a successful smart card 
 
 **Successful UserAuthentication**
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -281,7 +281,7 @@ The following sequence of events captures an example of failed smart card sign-i
 
 **CredentialChallenge**
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -318,7 +318,7 @@ The following sequence of events captures an example of failed smart card sign-i
 
 **Failed CredentialVerification**
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

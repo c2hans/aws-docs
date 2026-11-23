@@ -24,7 +24,7 @@ The following code example shows how to use `AddTagsToCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Add tags to an AWS Certificate Manager (ACM) certificate.
 /*!
   \param certificateArn: The Amazon Resource Name (ARN) of a certificate.
@@ -75,7 +75,7 @@ The following code example shows how to use `DeleteCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Delete an AWS Certificate Manager (ACM) certificate.
 /*!
   \param certificateArn: The Amazon Resource Name (ARN) of a certificate.
@@ -114,7 +114,7 @@ The following code example shows how to use `DescribeCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Describe an AWS Certificate Manager (ACM) certificate.
 /*!
   \param certificateArn: The Amazon Resource Name (ARN) of a certificate.
@@ -621,7 +621,7 @@ The following code example shows how to use `ExportCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Export an AWS Certificate Manager (ACM)  certificate.
 /*!
   \param certificateArn: The Amazon Resource Name (ARN) of a certificate.
@@ -674,7 +674,7 @@ The following code example shows how to use `GetCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Get an AWS Certificate Manager (ACM) certificate.
 /*!
   \param certificateArn: The Amazon Resource Name (ARN) of a certificate.
@@ -720,7 +720,7 @@ The following code example shows how to use `ImportCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Import an AWS Certificate Manager (ACM) certificate.
 /*!
   \param certificateFile: Path to certificate to import.
@@ -811,7 +811,7 @@ The following code example shows how to use `ListCertificates`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! List the AWS Certificate Manager (ACM) certificates in an account.
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -876,7 +876,7 @@ The following code example shows how to use `ListTagsForCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! List the tags for an AWS Certificate Manager (ACM) certificate.
 /*!
   \param certificateArn: The Amazon Resource Name (ARN) of a certificate.
@@ -934,7 +934,7 @@ The following code example shows how to use `RemoveTagsFromCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Remove a tag from an ACM certificate.
 /*!
   \param certificateArn: The Amazon Resource Name (ARN) of a certificate.
@@ -987,7 +987,7 @@ The following code example shows how to use `RenewCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Renew an AWS Certificate Manager (ACM) certificate.
 /*!
   \param certificateArn: The Amazon Resource Name (ARN) of a certificate.
@@ -1028,7 +1028,7 @@ The following code example shows how to use `RequestCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Request an AWS Certificate Manager (ACM) certificate.
 /*!
   \param domainName: A fully qualified domain name.
@@ -1074,7 +1074,7 @@ The following code example shows how to use `ResendValidationEmail`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Resend the email that requests domain ownership validation.
 /*!
   \param certificateArn: The Amazon Resource Name (ARN) of a certificate.
@@ -1122,7 +1122,7 @@ The following code example shows how to use `UpdateCertificateOptions`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Update an AWS Certificate Manager (ACM) certificate option.
 /*!
   \param certificateArn: The Amazon Resource Name (ARN) of a certificate.

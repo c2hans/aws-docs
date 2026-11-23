@@ -10,6 +10,6 @@ The information returned by `get-resource` includes the resource's schema, which
 
 The following example returns the current state of an `AWS::Logs::LogGroup` resource named `LogGroupResourceExample`. For `AWS::Logs::LogGroup` resources, the name of a log group is its primary identifier.
 
-```
+```bash
 $ aws cloudcontrol get-resource --type-name AWS::Logs::LogGroup --identifier LogGroupResourceExample
 ```

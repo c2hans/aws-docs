@@ -86,7 +86,7 @@ The following AWS IoT API actions are used to read or modify thing data. Devices
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -142,7 +142,7 @@ MQTT messages are sent through the AWS IoT message broker and are used by device
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -184,7 +184,7 @@ MQTT messages are sent through the AWS IoT message broker and are used by device
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -232,7 +232,7 @@ MQTT messages are sent through the AWS IoT message broker and are used by device
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -290,7 +290,7 @@ A policy that grants permission to a device to perform an API action to access o
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [

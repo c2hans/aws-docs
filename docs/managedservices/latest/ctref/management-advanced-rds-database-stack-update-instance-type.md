@@ -148,14 +148,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-rds-database-stack-update-instance-type-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-advanced-rds-database-stack-update-instance-type-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-UpdateRDSInstanceType",
   "Region": "us-east-1",

@@ -20,7 +20,7 @@ You can uninstall the Guidance from the AWS Management Console or by using the A
 
 Determine whether the AWS CLI is available in your environment. For installation instructions, see [What is the AWS Command Line Interface?](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS CLI User Guide*. After confirming that the AWS CLI is available, run the following command.
 
-```
+```bash
 $ aws cloudformation delete-stack --stack-name <installation-stack-name>
 ```
 

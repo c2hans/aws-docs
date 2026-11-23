@@ -57,7 +57,7 @@ To assign a designation using the AWS CLI, run the `create-project-membership` c
 
 The `--designation` field accepts one of the following values: `PROJECT_OWNER`, `PROJECT_CONTRIBUTOR`, or `USER_CREATED_DESIGNATION`. When you specify `USER_CREATED_DESIGNATION`, you must also specify the `--user-created-designation-id` parameter, which is the ID of the custom designation to assign.
 
-```
+```bash
 aws datazone create-project-membership \
     --domain-identifier "dzd_example1234" \
     --project-identifier "proj_example5678" \

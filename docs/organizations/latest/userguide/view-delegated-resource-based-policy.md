@@ -29,7 +29,7 @@ You can use the following command to view a delegation policy:
 
   The following example retrieves the policy.
 
-  ```
+  ```bash
   $ aws organizations describe-resource-policy
   ```
 + AWS SDK: [DescribeResourcePolicy](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DescribeResourcePolicy.html)

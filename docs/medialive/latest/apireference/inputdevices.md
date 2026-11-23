@@ -45,7 +45,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### ListInputDevicesResultModel schema
 <a name="inputdevices-response-body-listinputdevicesresultmodel-example"></a>
 
-```
+```json
 {
   "inputDevices": [
     {
@@ -97,7 +97,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### InvalidRequest schema
 <a name="inputdevices-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -106,7 +106,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### AccessDenied schema
 <a name="inputdevices-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -115,7 +115,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### LimitExceeded schema
 <a name="inputdevices-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -124,7 +124,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### InternalServiceError schema
 <a name="inputdevices-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -133,7 +133,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### BadGatewayException schema
 <a name="inputdevices-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -142,7 +142,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### GatewayTimeoutException schema
 <a name="inputdevices-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

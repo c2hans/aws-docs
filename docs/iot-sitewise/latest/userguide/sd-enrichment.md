@@ -19,7 +19,7 @@ Your calling identity needs permission to invoke the enrichment-job APIs, read t
 
 Minimal caller permission policy:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -71,7 +71,7 @@ Notes:
 
 If your caller is an application role, pair the policy with a trust policy for the workload type that runs the code:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -142,7 +142,7 @@ EventDetection fields:
 
 Both `startTime` and `endTime` are TimeInNanos structures:
 
-```
+```json
 {
     "timeInSeconds": <Unix epoch seconds>,
     "offsetInNanos": <optional 0..999999999>
@@ -156,7 +156,7 @@ Only data segments FULLY encapsulated within this time range are enriched. Parti
 
 Python helper to compute the seconds/nanos split:
 
-```
+```python
 import datetime
 
 def as_time_in_nanos(dt: datetime.datetime) -> dict:
@@ -170,7 +170,7 @@ def as_time_in_nanos(dt: datetime.datetime) -> dict:
 ### Response
 <a name="sd-enrichment-response"></a>
 
-```
+```json
 {
     "jobId": "string",
     "status": "PENDING | RUNNING | COMPLETED | FAILED | TIMED_OUT | CANCELLED",
@@ -198,7 +198,7 @@ HTTP status on success: 200 OK. (Unlike `CreateBulkImportJob` which returns 202,
 
 Save this as `enrichment-job-request.json`. The `workspaceName` is passed on the URL path (or through a CLI flag), not in the JSON body.
 
-```
+```json
 {
     "jobConfiguration": {
         "eventDetection": {
@@ -230,7 +230,7 @@ Notes:
 
 Command (using an input file):
 
-```
+```bash
 aws iotsitewise create-enrichment-job \
     --region us-east-1 \
     --workspace-name scenario_discovery_car120 \
@@ -239,7 +239,7 @@ aws iotsitewise create-enrichment-job \
 
 Equivalent inline form:
 
-```
+```bash
 aws iotsitewise create-enrichment-job \
     --region us-east-1 \
     --workspace-name ws-1778278606 \
@@ -267,7 +267,7 @@ CLI-only flags:
 
 Sample output:
 
-```
+```json
 {
     "jobId": "9a8b7c6d-5e4f-3a2b-1c0d-e1f2a3b4c5d6",
     "status": "PENDING",
@@ -278,7 +278,7 @@ Sample output:
 ## boto3 (Python)
 <a name="sd-enrichment-boto3"></a>
 
-```
+```python
 import uuid
 import boto3
 
@@ -337,7 +337,7 @@ https://data.iotsitewise.<region>.amazonaws.com/workspaces/<workspaceName>/enric
 ### Recommended: awscurl
 <a name="sd-enrichment-curl-awscurl"></a>
 
-```
+```bash
 awscurl \
     --service iotsitewise \
     --region us-east-1 \
@@ -350,7 +350,7 @@ awscurl \
 ### Plain curl — pre-signed request skeleton
 <a name="sd-enrichment-curl-plain"></a>
 
-```
+```bash
 curl -v -X POST \
     "https://data.iotsitewise.us-east-1.amazonaws.com/workspaces/scenario_discovery_car120/enrichment-jobs" \
     -H "Host: data.iotsitewise.us-east-1.amazonaws.com" \
@@ -368,7 +368,7 @@ See the AWS documentation on Signing AWS API requests for the full SigV4 derivat
 
 Sample HTTP response:
 
-```
+```json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -382,7 +382,7 @@ Content-Type: application/json
 ## Verifying the job
 <a name="sd-enrichment-verify"></a>
 
-```
+```bash
 aws iotsitewise describe-enrichment-job \
     --region us-east-1 \
     --workspace-name scenario_discovery_car120 \
@@ -396,7 +396,7 @@ The status progresses: `PENDING` → `RUNNING` → one of `COMPLETED`, `FAILED`,
 ### Cancelling a running job
 <a name="sd-enrichment-cancel"></a>
 
-```
+```bash
 aws iotsitewise cancel-enrichment-job \
     --region us-east-1 \
     --workspace-name scenario_discovery_car120 \

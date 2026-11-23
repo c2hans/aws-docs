@@ -33,7 +33,7 @@ The following code example shows how to get started using Amazon SQS.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/TopicsAndQueues#code-examples).
 
-```
+```csharp
 using Amazon.SQS;
 using Amazon.SQS.Model;
 
@@ -78,7 +78,7 @@ The following code example shows how to use `CreateQueue`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/TopicsAndQueues#code-examples).
 Create a queue with a specific name.
 
-```
+```csharp
     /// <summary>
     /// Create a queue with a specific name.
     /// </summary>
@@ -125,7 +125,7 @@ Create a queue with a specific name.
 ```
 Create an Amazon SQS queue and send a message to it.
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -230,7 +230,7 @@ The following code example shows how to use `DeleteMessage`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SQS#code-examples).
 Receive a message from an Amazon SQS queue and then delete the message.
 
-```
+```csharp
         public static async Task Main()
         {
             // If the AWS Region you want to use is different from
@@ -313,7 +313,7 @@ The following code example shows how to use `DeleteMessageBatch`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/TopicsAndQueues#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a batch of messages from a queue by its url.
     /// </summary>
@@ -351,7 +351,7 @@ The following code example shows how to use `DeleteQueue`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/TopicsAndQueues#code-examples).
 Delete a queue by using its URL.
 
-```
+```csharp
     /// <summary>
     /// Delete a queue by its URL.
     /// </summary>
@@ -377,7 +377,7 @@ The following code example shows how to use `GetQueueAttributes`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/TopicsAndQueues#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the ARN for a queue from its URL.
     /// </summary>
@@ -407,7 +407,7 @@ The following code example shows how to use `GetQueueUrl`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SQS#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.SQS;
@@ -457,7 +457,7 @@ The following code example shows how to use `ReceiveMessage`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/TopicsAndQueues#code-examples).
 Receive messages from a queue by using its URL.
 
-```
+```csharp
     /// <summary>
     /// Receive messages from a queue by its URL.
     /// </summary>
@@ -480,7 +480,7 @@ Receive messages from a queue by using its URL.
 ```
 Receive a message from an Amazon SQS queue, and then delete the message.
 
-```
+```csharp
         public static async Task Main()
         {
             // If the AWS Region you want to use is different from
@@ -564,7 +564,7 @@ The following code example shows how to use `SendMessage`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SQS#code-examples).
 Create an Amazon SQS queue and send a message to it.
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -669,7 +669,7 @@ The following code example shows how to use `SetQueueAttributes`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/TopicsAndQueues#code-examples).
 Set the policy attribute of a queue for a topic.
 
-```
+```csharp
     /// <summary>
     /// Set the policy attribute of a queue for a topic.
     /// </summary>
@@ -723,7 +723,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/TopicsAndQueues#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 /// <summary>
 /// Console application to run a feature scenario for topics and queues.
 /// </summary>
@@ -1218,7 +1218,7 @@ public static class TopicsAndQueues
 ```
 Create a class that wraps Amazon SQS operations.
 
-```
+```csharp
 /// <summary>
 /// Wrapper for Amazon Simple Queue Service (SQS) operations.
 /// </summary>
@@ -1397,7 +1397,7 @@ public class SQSWrapper
 ```
 Create a class that wraps Amazon SNS operations.
 
-```
+```csharp
 /// <summary>
 /// Wrapper for Amazon Simple Notification Service (SNS) operations.
 /// </summary>
@@ -1584,7 +1584,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda) repository.
 Consuming an SQS event with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 ﻿using Amazon.Lambda.Core;
@@ -1634,7 +1634,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 using Amazon.Lambda.Core;

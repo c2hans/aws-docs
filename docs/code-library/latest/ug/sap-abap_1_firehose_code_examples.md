@@ -26,7 +26,7 @@ The following code example shows how to use `PutRecord`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/frh#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_record) = NEW /aws1/cl_frhrecord( iv_data = iv_data ).
 
@@ -53,7 +53,7 @@ The following code example shows how to use `PutRecordBatch`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/frh#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_frh->putrecordbatch(
           iv_deliverystreamname = iv_deliv_stream_name

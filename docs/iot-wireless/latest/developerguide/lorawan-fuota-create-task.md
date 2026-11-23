@@ -120,7 +120,7 @@ where:
 
 **Contents of input.json**
 
-```
+```JSON
 {
    "Description":{{ "FUOTA task to update firmware of devices in multicast group."}},
    "FirmwareUpdateImage": "S3:/{{firmware_bucket/firmware_image}}

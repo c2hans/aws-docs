@@ -23,7 +23,7 @@ Grants read-only access to Amazon Kendra resources. This policy includes the fol
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -62,7 +62,7 @@ Grants full access to create, read, update, delete, tag, and run all Amazon Kend
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

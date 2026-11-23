@@ -15,7 +15,7 @@ The SDK for Kotlin provides extension methods on service clients to presign requ
 
 The following code shows an example that creates a presigned [`GetObject`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/get-object.html) request for Amazon S3. The request is valid for 24 hours after creation.
 
-```
+```kotlin
 val s3 = S3Client.fromEnvironment()
 
 val unsignedRequest = GetObjectRequest {
@@ -30,7 +30,7 @@ The [presignGetObject](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3.
 
 After creating the presigned request, use an HTTP client to invoke a request. The API to invoke an HTTP GET request depends on the HTTP client. The following example uses the Kotlin [URL.readText](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/java.net.-u-r-l/read-text.html) method.
 
-```
+```kotlin
 val objectContents = URL(presignedRequest.url.toString()).readText()
 println(objectContents)
 ```
@@ -42,7 +42,7 @@ In the SDK, each method that can presign requests has an overload that you can u
 
 The following example shows an Amazon S3 [`GetObject`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/get-object.html) request that uses the CRT signer variant and specifies a future signing date.
 
-```
+```kotlin
 val s3 = S3Client.fromEnvironment()
 
 val unsignedRequest = GetObjectRequest {
@@ -65,7 +65,7 @@ Many operations that are presignable require only a URL and must be executed as 
 
 Here is an example of presigning an S3 [`PutObject`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/put-object.html) request:
 
-```
+```kotlin
 val s3 = S3Client.fromEnvironment()
 
 val unsignedRequest = PutObjectRequest {
@@ -80,7 +80,7 @@ The returned [`HttpRequest`](/smithy-kotlin/api/latest/http/aws.smithy.kotlin.ru
 
 After creating the presigned POST or PUT request, use an HTTP client to invoke a request. The API to invoke a POST or PUT request URL depends on the HTTP client used. The following example uses an [OkHttp HTTP client](https://square.github.io/okhttp) and includes a body that contains `Hello world`.
 
-```
+```kotlin
 val putRequest = Request
     .Builder()
     .url(presignedRequest.url.toString())

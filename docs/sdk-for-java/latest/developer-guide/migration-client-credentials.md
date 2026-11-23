@@ -12,13 +12,13 @@ This section provides a mapping of the name changes of credentials provider clas
 + The constructor method is replaced with the `create` or `builder` methods.
 **Example**
 
-  ```
+  ```java
   DefaultCredentialsProvider.create();
   ```
 + Asynchronous refresh is no longer set by default. You must specify it with the `builder` of the credentials provider.
 **Example**
 
-  ```
+  ```java
   ContainerCredentialsProvider provider = ContainerCredentialsProvider.builder()
           		.asyncCredentialUpdateEnabled(true)
           		.build();
@@ -26,7 +26,7 @@ This section provides a mapping of the name changes of credentials provider clas
 + You can specify a path to a custom profile file using the `ProfileCredentialsProvider.builder()`.
 **Example**
 
-  ```
+  ```java
   ProfileCredentialsProvider profile = ProfileCredentialsProvider.builder()
           		.profileFile(ProfileFile.builder().content(Paths.get("myProfileFile.file")).build())
           		.build();

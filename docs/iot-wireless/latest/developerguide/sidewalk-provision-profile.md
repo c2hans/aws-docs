@@ -64,7 +64,7 @@ aws iotwireless create-device-profile \
 
 Running this command returns the profile details, which include the Amazon Resource Name (ARN) and the ID of the profile.
 
-```
+```JSON
 {
     "DeviceProfileArn": "arn:aws:iotwireless:us-east-1:{{123456789012}}:DeviceProfile/{{12345678-a1b2-3c45-67d8-e90fa1b2c34d}}",
     "DeviceProfileId": "{{12345678-a1b2-3c45-67d8-e90fa1b2c34d}}"
@@ -112,7 +112,7 @@ Once the Amazon Sidewalk Support team confirms this information, you'll receive 
 **Note**
 The `MaxAllowedSignature` of `-1` indicates that the DAK doesn't have any device limit. For information about the DAK parameters, see [DAKCertificateMetadata](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DAKCertificateMetadata.html).
 
-```
+```JSON
 {
     "Arn": "arn:aws:iotwireless:{{us-east-1}}:{{123456789012}}:DeviceProfile/{{12345678-a1b2-3c45-67d8-e90fa1b2c34d}}",
     "Id": "{{12345678-a1b2-3c45-67d8-e90fa1b2c34d}}",

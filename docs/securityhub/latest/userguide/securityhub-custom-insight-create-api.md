@@ -73,7 +73,7 @@ If you've enabled [cross-region aggregation](finding-aggregation.md) and use thi
 
 **Example**
 
-```
+```powershell
 $Filter = @{
     AwsAccountId = [Amazon.SecurityHub.Model.StringFilter]@{
         Comparison = "EQUALS"

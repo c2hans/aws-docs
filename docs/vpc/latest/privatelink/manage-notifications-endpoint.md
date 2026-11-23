@@ -50,7 +50,7 @@ Add an access policy to the Amazon SNS topic that allows AWS PrivateLink to publ
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -86,7 +86,7 @@ If you're using encrypted SNS topics, the resource policy for the KMS key must t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

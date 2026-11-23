@@ -41,7 +41,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-subscriptions-subscriptiondefinitionid-versions-subscriptiondefinitionversionid-get-cli"></a>
 
-```
+```bash
 aws greengrass get-subscription-definition-version \
   --subscription-definition-id <value> \
   --subscription-definition-version-id <value> \
@@ -52,7 +52,7 @@ aws greengrass get-subscription-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "SubscriptionDefinitionId": "string",
 "SubscriptionDefinitionVersionId": "string",
@@ -67,7 +67,7 @@ cli-input-json format:
 
  [ GetSubscriptionDefinitionVersionResponse](definitions-getsubscriptiondefinitionversionresponse.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -132,7 +132,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

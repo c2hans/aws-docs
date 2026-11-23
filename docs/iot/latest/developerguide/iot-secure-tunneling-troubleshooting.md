@@ -57,7 +57,7 @@ aws iotsecuretunneling rotate-tunnel-access-token \
 
 Running this command generates a new source access token and returns the ARN of your tunnel.
 
-```
+```JSON
 {
     "sourceAccessToken": "{{<source-access-token>}}",
     "tunnelArn": "arn:aws:iot:{{<region>}}:{{<account-id>}}:tunnel/{{<tunnel-id>}}"
@@ -109,7 +109,7 @@ aws iotsecuretunneling open-tunnel \
 
 Running this command generates the tunnel details and the CAT for your source and destination.
 
-```
+```JSON
 {
     "sourceAccessToken": "{{<source-access-token>}}",
     "destinationAccessToken": "{{<destination-access-token>}}",
@@ -128,7 +128,7 @@ aws iotsecuretunneling describe-tunnel \
 
 Running this command displays that the device is still not connected.
 
-```
+```JSON
 {
     "tunnel": {
         ...
@@ -154,7 +154,7 @@ aws iotsecuretunneling rotate-tunnel-access-token \
 
 Running this command generates the new access token as shown below. The token is then delivered to the device to connect to the tunnel, if the device agent is set up correctly.
 
-```
+```JSON
 {
     "destinationAccessToken": "{{destination-access-token}}",
     "tunnelArn": "arn:aws:iot:{{region}}:{{account-id}}:tunnel/{{tunnel-id}}"

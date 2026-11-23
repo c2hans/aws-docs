@@ -480,7 +480,7 @@ For more information, see [Using shared SSM documents](https://docs.aws.amazon.c
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
     /**
      * Sends a SSM command to a managed node asynchronously.
      *
@@ -583,7 +583,7 @@ For more information, see [Using shared SSM documents](https://docs.aws.amazon.c
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import { SendCommandCommand, SSMClient } from "@aws-sdk/client-ssm";
 import { parseArgs } from "node:util";
 
@@ -618,7 +618,7 @@ export const main = async ({ documentName }) => {
 **Tools for PowerShell V4**
 **Example 1: This example runs an echo command on a target instance.**
 
-```
+```powershell
 Send-SSMCommand -DocumentName "AWS-RunPowerShellScript" -Parameter @{commands = "echo helloWorld"} -Target @{Key="instanceids";Values=@("i-0cb2b964d3e14fd9f")}
 ```
 **Output:**
@@ -647,7 +647,7 @@ Targets            : {instanceids}
 ```
 **Example 2: This example shows how to run a command that accepts nested parameters.**
 
-```
+```powershell
 Send-SSMCommand -DocumentName "AWS-RunRemoteScript" -Parameter @{ sourceType="GitHub";sourceInfo='{"owner": "me","repository": "amazon-ssm","path": "Examples/Install-Win32OpenSSH"}'; "commandLine"=".\Install-Win32OpenSSH.ps1"} -InstanceId i-0cb2b964d3e14fd9f
 ```
 +  For API details, see [SendCommand](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -655,7 +655,7 @@ Send-SSMCommand -DocumentName "AWS-RunRemoteScript" -Parameter @{ sourceType="Gi
 **Tools for PowerShell V5**
 **Example 1: This example runs an echo command on a target instance.**
 
-```
+```powershell
 Send-SSMCommand -DocumentName "AWS-RunPowerShellScript" -Parameter @{commands = "echo helloWorld"} -Target @{Key="instanceids";Values=@("i-0cb2b964d3e14fd9f")}
 ```
 **Output:**
@@ -684,7 +684,7 @@ Targets            : {instanceids}
 ```
 **Example 2: This example shows how to run a command that accepts nested parameters.**
 
-```
+```powershell
 Send-SSMCommand -DocumentName "AWS-RunRemoteScript" -Parameter @{ sourceType="GitHub";sourceInfo='{"owner": "me","repository": "amazon-ssm","path": "Examples/Install-Win32OpenSSH"}'; "commandLine"=".\Install-Win32OpenSSH.ps1"} -InstanceId i-0cb2b964d3e14fd9f
 ```
 +  For API details, see [SendCommand](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -695,7 +695,7 @@ Send-SSMCommand -DocumentName "AWS-RunRemoteScript" -Parameter @{ sourceType="Gi
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class DocumentWrapper:
     """Encapsulates AWS Systems Manager Document actions."""
 
@@ -740,7 +740,7 @@ class DocumentWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_ssm->sendcommand(
             it_instanceids = it_instance_ids

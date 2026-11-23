@@ -26,7 +26,7 @@ The following code example shows how to use `CreateIdentityPool`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity/FindOrCreateIdentityPool#code-examples).
 
-```
+```swift
 import AWSCognitoIdentity
 
     /// Create a new identity pool and return its ID.
@@ -65,7 +65,7 @@ The following code example shows how to use `DeleteIdentityPool`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity/FindOrCreateIdentityPool#code-examples).
 
-```
+```swift
 import AWSCognitoIdentity
 
     /// Delete the specified identity pool.
@@ -97,7 +97,7 @@ The following code example shows how to use `ListIdentityPools`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity/FindOrCreateIdentityPool#code-examples).
 
-```
+```swift
 import AWSCognitoIdentity
 
     /// Return the ID of the identity pool with the specified name.
@@ -141,7 +141,7 @@ import AWSCognitoIdentity
 ```
 Get the ID of an existing identity pool or create it if it doesn't already exist.
 
-```
+```swift
 import AWSCognitoIdentity
 
     /// Return the ID of the identity pool with the specified name.

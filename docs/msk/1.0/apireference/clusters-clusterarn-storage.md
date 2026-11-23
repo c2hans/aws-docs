@@ -66,7 +66,7 @@ Enable CORS by returning the correct headers.
 #### PUT schema
 <a name="clusters-clusterarn-storage-request-body-put-example"></a>
 
-```
+```json
 {
   "volumeSizeGB": integer,
   "storageMode": enum,
@@ -84,7 +84,7 @@ Enable CORS by returning the correct headers.
 #### UpdateStorageResponse schema
 <a name="clusters-clusterarn-storage-response-body-updatestorageresponse-example"></a>
 
-```
+```json
 {
   "clusterArn": "string",
   "clusterOperationArn": "string"
@@ -94,7 +94,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="clusters-clusterarn-storage-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

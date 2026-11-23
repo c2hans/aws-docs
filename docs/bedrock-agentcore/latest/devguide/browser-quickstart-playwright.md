@@ -10,7 +10,7 @@ You can use the Playwright automation framework with the Browser Tool:
 
 Create a project folder (if you didn’t create one before) and install the required packages:
 
-```
+```bash
 mkdir agentcore-browser-quickstart
 cd agentcore-browser-quickstart
 python3 -m venv .venv
@@ -22,7 +22,7 @@ On Windows, use: `.venv\Scripts\activate`
 
 Install the required packages:
 
-```
+```bash
 pip install bedrock-agentcore playwright boto3 nest-asyncio
 ```
 
@@ -40,7 +40,7 @@ You can use Browser directly without an agent framework or an LLM. This is usefu
 
 Create a file named `direct_browser_playwright.py` and add the following code:
 
-```
+```python
 from playwright.async_api import async_playwright, Playwright, BrowserType
 from bedrock_agentcore.tools.browser_client import browser_session
 import asyncio
@@ -92,7 +92,7 @@ if __name__ == "__main__":
 
 Alternatively, you can use the sync API with integrated live view server:
 
-```
+```python
 from playwright.sync_api import sync_playwright, Playwright, BrowserType
 from bedrock_agentcore.tools.browser_client import browser_session
 from browser_viewer import BrowserViewerServer
@@ -133,7 +133,7 @@ with sync_playwright() as playwright:
 
 Execute either script:
 
-```
+```bash
 python direct_browser_playwright.py
 ```
 

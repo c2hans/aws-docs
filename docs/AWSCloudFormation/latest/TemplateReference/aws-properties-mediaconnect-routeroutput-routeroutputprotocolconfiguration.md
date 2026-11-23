@@ -52,7 +52,7 @@ The configuration settings for a router output using the RIST (Reliable Internet
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RtmpPush`  <a name="cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rtmppush"></a>
-Property description not available.
+The configuration settings for a router output that pushes a stream to a destination using the RTMP (Real-Time Messaging Protocol) protocol, or RTMPS (RTMP over TLS) when TLS encryption is specified. These settings include the destination address and port, the application and stream names, and optional TLS encryption configuration.
 *Required*: No
 *Type*: [RtmpPushRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-rtmppushrouteroutputconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

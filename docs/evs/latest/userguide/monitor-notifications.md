@@ -35,7 +35,7 @@ Before you create the rule, complete the following tasks.
 
 The following event pattern matches AWS Health scheduled change events for Amazon EC2. This includes maintenance and retirement events for the instances that run your hosts.
 
-```
+```json
 {
   "source": ["aws.health"],
   "detail-type": ["AWS Health Event"],
@@ -69,7 +69,7 @@ To create the rule in the Amazon EventBridge console or with the AWS CLI, use th
 
 1. Create the rule. Replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws events put-rule \
        --name evs-host-events \
        --event-pattern file://evs-host-events.json \
@@ -78,7 +78,7 @@ To create the rule in the Amazon EventBridge console or with the AWS CLI, use th
 
 1. Add your Amazon SNS topic as the target of the rule. Replace `<region-code>` with the Region where you created the environment. Replace the example account ID with your own value.
 
-   ```
+   ```bash
    aws events put-targets \
        --rule evs-host-events \
        --targets 'Id=1,Arn=arn:aws:sns:<region-code>:111122223333:evs-host-events' \
@@ -89,7 +89,7 @@ To create the rule in the Amazon EventBridge console or with the AWS CLI, use th
 
 1. Confirm that the rule exists. Replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws events describe-rule \
        --name evs-host-events \
        --region <region-code>

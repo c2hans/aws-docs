@@ -68,7 +68,7 @@ Enable CORS by returning the correct headers.
 #### DescribeConfigurationRevisionResponse schema
 <a name="configurations-arn-revisions-revision-response-body-describeconfigurationrevisionresponse-example"></a>
 
-```
+```json
 {
   "creationTime": "string",
   "description": "string",
@@ -81,7 +81,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="configurations-arn-revisions-revision-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

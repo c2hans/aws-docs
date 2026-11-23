@@ -46,7 +46,7 @@ For more information, see [Import a VM to Amazon EC2 as an image using VM Import
 **Tools for PowerShell V4**
 **Example 1: This example imports a single-disk virtual machine image from the specified Amazon S3 bucket to Amazon EC2 with an idempotency token. The example requires that a VM Import Service Role with the default name 'vmimport' exists, with a policy allowing Amazon EC2 access to the specified bucket, as explained in the VM Import Prequisites topic. To use a custom role, specify the role name using the `-RoleName` parameter.**
 
-```
+```powershell
 $container = New-Object Amazon.EC2.Model.ImageDiskContainer
 $container.Format="VMDK"
 $container.UserBucket = New-Object Amazon.EC2.Model.UserBucket
@@ -82,7 +82,7 @@ StatusMessage   : pending
 **Tools for PowerShell V5**
 **Example 1: This example imports a single-disk virtual machine image from the specified Amazon S3 bucket to Amazon EC2 with an idempotency token. The example requires that a VM Import Service Role with the default name 'vmimport' exists, with a policy allowing Amazon EC2 access to the specified bucket, as explained in the VM Import Prequisites topic. To use a custom role, specify the role name using the `-RoleName` parameter.**
 
-```
+```powershell
 $container = New-Object Amazon.EC2.Model.ImageDiskContainer
 $container.Format="VMDK"
 $container.UserBucket = New-Object Amazon.EC2.Model.UserBucket

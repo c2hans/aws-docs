@@ -37,7 +37,7 @@ For more information, see Create a Patch Group <https://docs.aws.amazon.com/syst
 **Tools for PowerShell V4**
 **Example 1: This example registers a patch baseline for a patch group.**
 
-```
+```powershell
 Register-SSMPatchBaselineForPatchGroup -BaselineId "pb-03da896ca3b68b639" -PatchGroup "Production"
 ```
 **Output:**
@@ -52,7 +52,7 @@ pb-03da896ca3b68b639 Production
 **Tools for PowerShell V5**
 **Example 1: This example registers a patch baseline for a patch group.**
 
-```
+```powershell
 Register-SSMPatchBaselineForPatchGroup -BaselineId "pb-03da896ca3b68b639" -PatchGroup "Production"
 ```
 **Output:**

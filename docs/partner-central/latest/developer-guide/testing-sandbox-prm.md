@@ -19,7 +19,7 @@ To use the sandbox, complete the following steps:
 
    Assign the following policy to the IAM role. For more information, see [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html).
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -168,7 +168,7 @@ To simulate the creation of a Revenue Attribution ID, in the payload of the `Cre
 
 For example:
 
-```
+```json
 {
   "Catalog": "Sandbox",
   "ClientToken": "String",

@@ -13,7 +13,7 @@ For example, you can create a policy that allows a user to have full access to a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

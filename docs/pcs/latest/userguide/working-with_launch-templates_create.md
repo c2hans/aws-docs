@@ -57,7 +57,7 @@ The procedures in this topic create a launch template that specifies an SSH key 
 
 The AWS CLI output resembles the following. The launch template ID is in `LaunchTemplateId`.
 
-```
+```json
 {
     "LaunchTemplate": {
         "LatestVersionNumber": 1,

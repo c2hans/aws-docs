@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Gets the AWS IoT endpoint URL.
     /// </summary>
@@ -54,7 +54,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Describe the endpoint specific to the AWS account making the call.
 /*!
   \param endpointResult: String to receive the endpoint result.
@@ -127,7 +127,7 @@ For more information, see [X.509 Certificates and AWS IoT](https://docs.aws.amaz
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
     /**
      * Describes the endpoint of the IoT service asynchronously.
      *
@@ -171,7 +171,7 @@ For more information, see [X.509 Certificates and AWS IoT](https://docs.aws.amaz
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun describeEndpoint(): String? {
     val request = DescribeEndpointRequest {}
     IotClient.fromEnvironment { region = "us-east-1" }.use { iotClient ->
@@ -192,7 +192,7 @@ suspend fun describeEndpoint(): String? {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -241,7 +241,7 @@ class IoTWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iot#code-examples).
 
-```
+```rust
 async fn show_address(client: &Client, endpoint_type: &str) -> Result<(), Error> {
     let resp = client
         .describe_endpoint()
@@ -264,7 +264,7 @@ async fn show_address(client: &Client, endpoint_type: &str) -> Result<(), Error>
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iot#code-examples).
 
-```
+```sap-abap
     CONSTANTS cv_pfl TYPE /aws1/rt_profile_id VALUE 'ZCODE_DEMO'.
     DATA(lo_session) = /aws1/cl_rt_session_aws=>create( cv_pfl ).
     DATA(lo_iot) = /aws1/cl_iot_factory=>create( lo_session ).

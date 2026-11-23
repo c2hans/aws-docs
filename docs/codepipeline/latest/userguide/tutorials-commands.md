@@ -105,7 +105,7 @@ Running the Commands action will incur separate charges in AWS CodeBuild.
 
    Enter the following commands:
 
-   ```
+   ```sh
    ls
    echo hello world
    cat README.txt

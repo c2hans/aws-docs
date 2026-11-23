@@ -49,7 +49,7 @@ This procedure describes how to add an IAM role that will allow the Configuratio
 
 1. In **Policy Document**, change the `Principal` property to look like this example.
 
-   ```
+   ```json
    "Principal": {
        "Service": "iotwireless.amazonaws.com"
    },
@@ -58,7 +58,7 @@ This procedure describes how to add an IAM role that will allow the Configuratio
    After you change the `Principal` property, the complete policy document should look like this example.
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

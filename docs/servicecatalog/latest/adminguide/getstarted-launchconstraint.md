@@ -41,7 +41,7 @@ Using a launch constraint allows you follow the IAM best practice of keeping end
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

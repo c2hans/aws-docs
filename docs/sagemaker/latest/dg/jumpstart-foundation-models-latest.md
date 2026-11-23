@@ -10,7 +10,7 @@ The first two tabs list foundation models. The last two tabs list the built-in a
 
 To list all available JumpStart foundation models:
 
-```
+```python
 import boto3
 
 sagemaker_client = boto3.client("sagemaker", region_name="us-west-2")
@@ -36,7 +36,7 @@ for model in all_models[:5]:
 
 To get supported instance types and other metadata for a specific model:
 
-```
+```python
 import json
 import boto3
 
@@ -79,7 +79,7 @@ A few models instead name a serving container, such as `lmi` or `tgi`, or use `a
 
 List the configurations for a model, along with their benchmark metrics, then deploy one with the SageMaker Python SDK:
 
-```
+```python
 from sagemaker.serve import ModelBuilder
 from sagemaker.core.jumpstart.configs import JumpStartConfig
 

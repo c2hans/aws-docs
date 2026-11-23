@@ -45,7 +45,7 @@ For more information, see [Update the Availability Zones for your Application Lo
 **Tools for PowerShell V4**
 **Example 1: This example modifes the subnets of the specified Load balancer.**
 
-```
+```powershell
 Set-ELB2Subnet -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -Subnet 'subnet-7d8a0a51','subnet-c37a67a6'
 ```
 **Output:**
@@ -61,7 +61,7 @@ LoadBalancerAddresses SubnetId        ZoneName
 **Tools for PowerShell V5**
 **Example 1: This example modifes the subnets of the specified Load balancer.**
 
-```
+```powershell
 Set-ELB2Subnet -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -Subnet 'subnet-7d8a0a51','subnet-c37a67a6'
 ```
 **Output:**

@@ -93,7 +93,7 @@ For the full list of suggestion types (including `Reply`, `OpenUrl`, `DialPhone`
 
 The following JSON shows the structure of the `RcsMessageContent` parameter for a standalone rich card. Pass this JSON as a string to the `--rcs-message-content` parameter in the AWS CLI or as the `RcsMessageContent` parameter in the SDK.
 
-```
+```json
 {
   "Content": {
     "RichCard": {

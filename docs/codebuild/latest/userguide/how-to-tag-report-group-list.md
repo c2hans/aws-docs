@@ -35,7 +35,7 @@ Follow these steps to use the AWS CLI to view the AWS tags for a report group. I
 
     This command returns JSON-formatted information similar to the following:
 
-   ```
+   ```json
    {
        "reportGroups": [
            "arn:aws:codebuild:{{region}}:{{123456789012}}:report-group/{{report-group-1}}",
@@ -66,7 +66,7 @@ Follow these steps to use the AWS CLI to view the AWS tags for a report group. I
 
     If successful, this command returns JSON-formatted information that contains a `tags` section similar to the following:
 
-   ```
+   ```json
    {
        ...
        "tags": {

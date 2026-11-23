@@ -30,7 +30,7 @@ The following code example shows how to use `CreateTopic`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/sns#code-examples).
 
-```
+```rust
 async fn make_topic(client: &Client, topic_name: &str) -> Result<(), Error> {
     let resp = client.create_topic().name(topic_name).send().await?;
 
@@ -52,7 +52,7 @@ The following code example shows how to use `ListTopics`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/sns#code-examples).
 
-```
+```rust
 async fn show_topics(client: &Client) -> Result<(), Error> {
     let resp = client.list_topics().send().await?;
 
@@ -75,7 +75,7 @@ The following code example shows how to use `Publish`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/sns#code-examples).
 
-```
+```rust
 async fn subscribe_and_publish(
     client: &Client,
     topic_arn: &str,
@@ -116,7 +116,7 @@ The following code example shows how to use `Subscribe`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/sns#code-examples).
 Subscribe an email address to a topic.
 
-```
+```rust
 async fn subscribe_and_publish(
     client: &Client,
     topic_arn: &str,
@@ -181,7 +181,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sns-to-lambda) repository.
 Consuming an SNS event with Lambda using Rust.
 
-```
+```rust
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 use aws_lambda_events::event::sns::SnsEvent;

@@ -59,6 +59,13 @@ Content-type: application/json
    "connectivityType": "string",
    "createdAt": number,
    "direction": "string",
+   "errorDetails": [
+      {
+         "code": "string",
+         "message": "string",
+         "resourceIds": [ "string" ]
+      }
+   ],
    "flowModules": [
       {
          "dependsOn": [ "string" ],
@@ -67,9 +74,16 @@ Content-type: application/json
          "version": "string"
       }
    ],
+   "flows": [
+      {
+         "name": "string",
+         "pipeline": { ... }
+      }
+   ],
    "gatewayId": "string",
    "httpResponderAllowed": boolean,
    "linkId": "string",
+   "lockToken": "string",
    "logSettings": {
       "applicationLogs": {
          "sampling": {
@@ -121,9 +135,19 @@ The direction of the link.
 Type: String
 Valid Values: `RESPONSE | REQUEST`
 
+ ** [errorDetails](#API_GetLink_ResponseSyntax) **   <a name="rtbfabric-GetLink-response-errorDetails"></a>
+The causes of the link's failure, such as a deleted subnet. Present only when the link is CREATE\_FAILED or DELETE\_FAILED.
+Type: Array of [ErrorDetail](API_ErrorDetail.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+
  ** [flowModules](#API_GetLink_ResponseSyntax) **   <a name="rtbfabric-GetLink-response-flowModules"></a>
 The configuration of flow modules.
 Type: Array of [ModuleConfiguration](API_ModuleConfiguration.md) objects
+
+ ** [flows](#API_GetLink_ResponseSyntax) **   <a name="rtbfabric-GetLink-response-flows"></a>
+The link's active flows, in the form PutLinkFlows takes. Empty when the link has no modules, and absent when its modules were set with UpdateLinkModuleFlow. While an update is in progress, use GetUpdate to see the requested flows.
+Type: Array of [Flow](API_Flow.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 
  ** [gatewayId](#API_GetLink_ResponseSyntax) **   <a name="rtbfabric-GetLink-response-gatewayId"></a>
 The unique identifier of the gateway.
@@ -141,6 +165,11 @@ Type: String
 Length Constraints: Minimum length of 6. Maximum length of 30.
 Pattern: `link-[a-z0-9-]{1,25}`
 
+ ** [lockToken](#API_GetLink_ResponseSyntax) **   <a name="rtbfabric-GetLink-response-lockToken"></a>
+The link's concurrency token. Pass it to PutLinkFlows unchanged; it changes whenever the link does.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+
  ** [logSettings](#API_GetLink_ResponseSyntax) **   <a name="rtbfabric-GetLink-response-logSettings"></a>
 Settings for the application logs.
 Type: [LinkLogSettings](API_LinkLogSettings.md) object
@@ -156,9 +185,9 @@ The configuration of pending flow modules.
 Type: Array of [ModuleConfiguration](API_ModuleConfiguration.md) objects
 
  ** [status](#API_GetLink_ResponseSyntax) **   <a name="rtbfabric-GetLink-response-status"></a>
-The status of the link.
+The status of the link. After CREATE\_FAILED, delete the link and create it again. After DELETE\_FAILED, retry the delete. `errorDetails` gives the cause.
 Type: String
-Valid Values: `PENDING_CREATION | PENDING_REQUEST | REQUESTED | ACCEPTED | ACTIVE | REJECTED | FAILED | PENDING_DELETION | DELETED | PENDING_UPDATE | PENDING_ISOLATION | ISOLATED | PENDING_RESTORATION`
+Valid Values: `PENDING_CREATION | PENDING_REQUEST | REQUESTED | ACCEPTED | ACTIVE | REJECTED | FAILED | PENDING_DELETION | DELETED | PENDING_UPDATE | PENDING_ISOLATION | ISOLATED | PENDING_RESTORATION | CREATE_FAILED | DELETE_FAILED`
 
  ** [tags](#API_GetLink_ResponseSyntax) **   <a name="rtbfabric-GetLink-response-tags"></a>
 A map of the key-value pairs for the tag or tags assigned to the specified resource.
@@ -202,7 +231,7 @@ The request was denied due to request throttling.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request could not be completed because it fails satisfy the constraints specified by the service.
+The request could not be completed because it fails to satisfy the constraints specified by the service.
 HTTP Status Code: 400
 
 ## See Also

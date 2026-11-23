@@ -43,7 +43,7 @@ You can use one of the following operations:
 
   1. Run the following command find the [handshake](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html#invitations-handshakes) ID.
 
-     ```
+     ```bash
      $ C:\> aws organizations list-handshakes-for-organization
      ```
 
@@ -51,7 +51,7 @@ You can use one of the following operations:
 
   1. Run the following command to cancel an invitation:
 
-     ```
+     ```bash
      $ C:\> aws organizations cancel-handshake \
          --id {{examplehandshakeid}}
      ```

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/index.html
 title: 'AWS Decision Guides'
 canonical_url: https://docs.aws.amazon.com/decision-guides/
 source: aws-documentation
-generated_on: 2026-11-18
+generated_on: 2026-11-20
 ---
 
 # AWS Decision Guides
@@ -21,6 +21,9 @@ Decision guides provide structured comparisons and guidance to help you evaluate
 
 ## Recently updated
 
+- [Choosing an AWS monitoring and observability service](/decision-guides/latest/decision-guides/monitoring-on-aws-how-to-choose.html): Compare monitoring, logging, and observability services to maintain visibility into workload health. **Last updated: November 2026**
+- [AWS CloudTrail or Amazon CloudWatch?](/decision-guides/latest/decision-guides/cloudtrail-or-cloudwatch.html): Understand the differences between audit logging and operational monitoring. **Last updated: November 2026**
+- [Choosing an AWS analytics service](/decision-guides/latest/decision-guides/analytics-on-aws-how-to-choose.html): Compare data lake, data warehouse, streaming, and business intelligence services for your data workloads. **Last updated: November 2026**
 - [Choosing a generative AI service](/decision-guides/latest/decision-guides/genai-guide.html): Evaluate services for building generative AI applications, including foundation models, model customization, and AI agents. **Last updated: November 2026**
 - [Choosing an AWS container service](/decision-guides/latest/decision-guides/choosing-aws-container-service.html): Evaluate container orchestration options and choose between managed services for running containerized applications. **Last updated: November 2026**
 - [Choosing an AWS compute service](/decision-guides/latest/decision-guides/choosing-aws-compute-service.html): Compare Amazon EC2, container, serverless, and edge compute options to choose the right compute service for your workload. **Last updated: November 2026**
@@ -42,7 +45,7 @@ Browse all decision guides organized by AWS technology category.
 
 Build your modern data architecture on AWS. This guide helps you break down data silos by connecting your data lake and data warehouses, and put data in the hands of everyone in your organization.
 
-- [Choosing an AWS analytics service](/decision-guides/latest/decision-guides/analytics-on-aws-how-to-choose.html): Compare data lake, data warehouse, streaming, and business intelligence services for your data workloads. **Last updated: April 2025**
+- [Choosing an AWS analytics service](/decision-guides/latest/decision-guides/analytics-on-aws-how-to-choose.html): Compare data lake, data warehouse, streaming, and business intelligence services for your data workloads. **Last updated: November 2026**
 
 ## Compute
 
@@ -74,8 +77,8 @@ Choose AWS services for AI and machine learning workloads. ML provides tools to 
 
 Choose AWS monitoring, observability, governance, and cost management services. These guides help you select the tools that are the best fit for maintaining visibility into workload health and optimizing cloud spending.
 
-- [Choosing an AWS monitoring and observability service](/decision-guides/latest/decision-guides/monitoring-on-aws-how-to-choose.html): Compare monitoring, logging, and observability services to maintain visibility into workload health. **Last updated: March 2025**
-- [AWS CloudTrail or Amazon CloudWatch?](/decision-guides/latest/decision-guides/cloudtrail-or-cloudwatch.html): Understand the differences between audit logging and operational monitoring. **Last updated: September 2024**
+- [Choosing an AWS monitoring and observability service](/decision-guides/latest/decision-guides/monitoring-on-aws-how-to-choose.html): Compare monitoring, logging, and observability services to maintain visibility into workload health. **Last updated: November 2026**
+- [AWS CloudTrail or Amazon CloudWatch?](/decision-guides/latest/decision-guides/cloudtrail-or-cloudwatch.html): Understand the differences between audit logging and operational monitoring. **Last updated: November 2026**
 - [Choosing an AWS cloud governance service](/decision-guides/latest/decision-guides/cloud-governance-on-aws-how-to-choose.html): Evaluate services for enforcing policies, managing compliance, and governing resources. **Last updated: March 2025**
 - [Choosing an AWS cost management strategy](/decision-guides/latest/decision-guides/cost-management-on-aws-how-to-choose.html): Compare tools and strategies for optimizing cloud spending, tracking costs, and managing budgets. **Last updated: March 2025**
 

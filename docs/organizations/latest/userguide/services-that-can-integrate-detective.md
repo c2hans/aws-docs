@@ -110,7 +110,7 @@ To configure a delegated administrator using the Detective console or API, see [
 If you want to configure a delegated administrator account using the AWS CLI or one of the AWS SDKs, you can use the following commands:
 + AWS CLI:
 
-  ```
+  ```bash
   $ aws organizations register-delegated-administrator \
       --account-id 123456789012 \
       --service-principal detective.amazonaws.com

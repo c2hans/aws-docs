@@ -24,6 +24,11 @@ The title of the section.
 Type: String
 Required: Yes
 
+ ** Enablement **   <a name="connect-Type-EvaluationFormSection-Enablement"></a>
+The conditional enablement configuration of the section. Sections use the same enablement model as questions.
+Type: [EvaluationFormItemEnablementConfiguration](API_EvaluationFormItemEnablementConfiguration.md) object
+Required: No
+
  ** Instructions **   <a name="connect-Type-EvaluationFormSection-Instructions"></a>
 The instructions of the section.
 Type: String

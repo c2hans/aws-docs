@@ -33,6 +33,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf04-
 
 ![Flowchart showing a decision between a dedicated connection and a VPN for hybrid connectivity, based on bandwidth, latency, cost, and whether the connection is temporary.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/deterministic-networking-flowchart.png)
 
+*Choosing between a dedicated connection and a VPN for hybrid networking*
+
  Estimate bandwidth and latency before you choose, because sizing errors surface only under load. When one connection cannot carry the traffic, you can run several dedicated connections or VPN tunnels and spread load across them. Do not load balance across a dedicated connection and a VPN together, because their latency and bandwidth differ enough to produce inconsistent, hard-to-diagnose performance. Redundancy is a separate decision from capacity: a single connection remains a single point of failure at any bandwidth.
 
  A VPN provides encryption by default. A dedicated connection does not. When you need encryption over it, layer a VPN on top or run a private IP VPN over a transit virtual interface. For connectivity between data centers worldwide, you can route traffic over the provider network between connection locations, bypassing Regions. Match these options to your compliance, segmentation, and throughput requirements.

@@ -20,7 +20,7 @@ The following code example shows how to manage DynamoDB Streams and Time-to-Live
 **AWS CLI with Bash script**
 Create a table with Streams enabled.
 
-```
+```bash
 # Create a table with DynamoDB Streams enabled
 aws dynamodb create-table \
     --table-name StreamsDemo \
@@ -33,7 +33,7 @@ aws dynamodb create-table \
 ```
 Describe Streams.
 
-```
+```bash
 # Get information about the stream
 aws dynamodb describe-table \
     --table-name StreamsDemo \
@@ -53,7 +53,7 @@ aws dynamodbstreams describe-stream \
 ```
 Create a Lambda function for Streams.
 
-```
+```bash
 # Step 1: Create an IAM role for the Lambda function
 cat > trust-policy.json << 'EOF'
 {
@@ -92,7 +92,7 @@ echo "    --starting-position LATEST"
 ```
 Enable TTL on a table.
 
-```
+```bash
 # Create a table for TTL demonstration
 aws dynamodb create-table \
     --table-name TTLDemo \
@@ -112,7 +112,7 @@ aws dynamodb update-time-to-live \
 ```
 Add items with TTL attributes.
 
-```
+```bash
 # Calculate expiration time (current time + 1 day in seconds)
 EXPIRATION_TIME=$(date -d "+1 day" +%s)
 
@@ -137,7 +137,7 @@ aws dynamodb put-item \
 ```
 Describe TTL settings.
 
-```
+```bash
 # Describe TTL settings for a table
 aws dynamodb describe-time-to-live \
     --table-name TTLDemo

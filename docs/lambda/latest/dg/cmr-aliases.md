@@ -13,7 +13,7 @@ Runtime consumers can also use this topic to learn when alias updates reach thei
 
 Each alias belongs to one runtime, and points to one version of that runtime. To use a customer-managed runtime, a runtime consumer sets the function's runtime to `custom`. The consumer then specifies the runtime ARN and an alias name in the function's runtime configuration. For example:
 
-```
+```bash
 aws lambda create-function \
   --function-name {{my-function}} \
   --runtime custom \
@@ -189,7 +189,7 @@ Create an alias so that functions can use a runtime version. After you create th
 
 1. To create the alias, run the `create-runtime-alias` command.
 
-   ```
+   ```bash
    aws lambda-core create-runtime-alias \
      --runtime-name {{companyphp8}} \
      --name {{prod}} \
@@ -201,7 +201,7 @@ Create an alias so that functions can use a runtime version. After you create th
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "Name": "prod",
        "Arn": "arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8/alias/prod",
@@ -226,7 +226,7 @@ Create an alias so that functions can use a runtime version. After you create th
 
 1. To check that the alias is ready to use, run the `get-runtime-alias` command.
 
-   ```
+   ```bash
    aws lambda-core get-runtime-alias \
      --runtime-name {{companyphp8}} \
      --name {{prod}}
@@ -236,7 +236,7 @@ Create an alias so that functions can use a runtime version. After you create th
 
    Alternatively, to wait until the alias is ready, run the following command:
 
-   ```
+   ```bash
    aws lambda-core wait runtime-alias-active \
      --runtime-name {{companyphp8}} \
      --name {{prod}}
@@ -274,7 +274,7 @@ To roll out a new runtime version, update the alias to point to that version. Fu
 
 1. To point the alias to the new runtime version, run the `update-runtime-alias` command.
 
-   ```
+   ```bash
    aws lambda-core update-runtime-alias \
      --runtime-name {{companyphp8}} \
      --name {{prod}} \
@@ -287,7 +287,7 @@ To roll out a new runtime version, update the alias to point to that version. Fu
 
 1. To verify the update, run the `get-runtime-alias` command.
 
-   ```
+   ```bash
    aws lambda-core get-runtime-alias \
      --runtime-name {{companyphp8}} \
      --name {{prod}}
@@ -314,7 +314,7 @@ To roll back a runtime alias in the console, follow the steps in [To update a ru
 
 1. To point the alias back to the previous runtime version, run the `update-runtime-alias` command.
 
-   ```
+   ```bash
    aws lambda-core update-runtime-alias \
      --runtime-name {{companyphp8}} \
      --name {{prod}} \
@@ -323,7 +323,7 @@ To roll back a runtime alias in the console, follow the steps in [To update a ru
 
 1. To verify the rollback, run the `get-runtime-alias` command.
 
-   ```
+   ```bash
    aws lambda-core get-runtime-alias \
      --runtime-name {{companyphp8}} \
      --name {{prod}}
@@ -344,7 +344,7 @@ In the Lambda console, the **Aliases** tab of the runtime's page lists the alias
 
 1. To view the details of one alias, run the `get-runtime-alias` command.
 
-   ```
+   ```bash
    aws lambda-core get-runtime-alias \
      --runtime-name {{companyphp8}} \
      --name {{prod}}
@@ -354,14 +354,14 @@ In the Lambda console, the **Aliases** tab of the runtime's page lists the alias
 
 1. To list all aliases for a runtime, run the `list-runtime-aliases` command.
 
-   ```
+   ```bash
    aws lambda-core list-runtime-aliases \
      --runtime-name {{companyphp8}}
    ```
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "Items": [
            {
@@ -395,7 +395,7 @@ In the Lambda console, the **Aliases** tab of the runtime's page lists the alias
 
 The following example rolls out runtime version `v8.3.2` through the `dev`, `test`, and `prod` aliases of the `companyphp8` runtime. Between each step, check that functions that use the updated alias work as expected. For guidance on monitoring, see [Deploying runtime updates](cmr-deploy-updates.md).
 
-```
+```bash
 # Step 1: Roll out to development
 aws lambda-core update-runtime-alias --runtime-name companyphp8 --name dev --runtime-version v8.3.2
 

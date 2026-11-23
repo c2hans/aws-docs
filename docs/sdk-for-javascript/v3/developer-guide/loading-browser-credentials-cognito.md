@@ -21,7 +21,7 @@ Unauthenticated users don't have their identity verified, making this role appro
 
 After you configure an identity pool, use the `fromCognitoIdentityPool` method from the `@aws-sdk/credential-providers` to retrieve the credentials from the identity pool. In the following example of creating an Amazon S3 client, replace {{AWS\_REGION}} with the region and {{IDENTITY\_POOL\_ID}} with the identity pool ID.
 
-```
+```javascript
 // Import required AWS SDK clients and command for Node.js
 import {S3Client} from "@aws-sdk/client-s3";
 import {fromCognitoIdentityPool} from "@aws-sdk/credential-providers";
@@ -42,7 +42,7 @@ const s3Client = new S3Client({
 
 The optional `logins` property is a map of identity provider names to the identity tokens for those providers. How you get the token from your identity provider depends on the provider you use. For example, if you are using an Amazon Cognito user pool as your authentication provider, you could use a method similar to the one below.
 
-```
+```javascript
 // Get the Amazon Cognito ID token for the user. 'getToken()' below.
 let idToken = getToken();
 let COGNITO_ID = "COGNITO_ID"; // 'COGNITO_ID' has the format 'cognito-idp.{{REGION}}.amazonaws.com/{{COGNITO_USER_POOL_ID}}'
@@ -78,7 +78,7 @@ Amazon Cognito supports both authenticated and unauthenticated users. Unauthenti
 
 Users typically start with the unauthenticated role, for which you set the credentials property of your configuration object without a `logins` property. In this case, your default credentials might look like the following:
 
-```
+```javascript
 // Import the required AWS SDK for JavaScript v3 modules.
 import {fromCognitoIdentityPool} from "@aws-sdk/credential-providers";
 // Set the default credentials.
@@ -93,7 +93,7 @@ const creds = fromCognitoIdentityPool({
 
 When an unauthenticated user logs in to an identity provider and you have a token, you can switch the user from unauthenticated to authenticated by calling a custom function that updates the credentials object and adds the `logins` token.
 
-```
+```javascript
 // Called when an identity provider has a token for a logged in user
 function userLoggedIn(providerName, token) {
   creds.params.Logins = creds.params.logins || {};

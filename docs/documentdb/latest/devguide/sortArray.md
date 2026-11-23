@@ -73,7 +73,7 @@ To view a code example for using the `$sortArray` command, choose the tab for th
 
 Here's an example of using the `$sortArray` operator in a Node.js application:
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function sortArray() {
@@ -104,7 +104,7 @@ sortArray();
 
 Here's an example of using the `$sortArray` operator in a Python application:
 
-```
+```python
 from pymongo import MongoClient
 
 def sort_array():

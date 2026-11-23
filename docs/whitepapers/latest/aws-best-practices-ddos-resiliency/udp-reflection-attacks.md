@@ -12,4 +12,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 
 ![A diagram depicting a UDP reflection attack](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/udp-reflection-attack.png)
 
+*Figure 3 – A diagram depicting a UDP reflection attack*
+
  It should be noted that reflection attacks, while they provide attackers with amplification, require IP spoofing capability and as increasing numbers of network providers adopt Source Address Validation Everywhere (SAVE) or [BCP38](https://www.rfc-editor.org/info/bcp38/), this capability is removed, requiring DDoS attackers to cease reflection attacks or to relocate to data centers and network providers who don't implement source address validation.

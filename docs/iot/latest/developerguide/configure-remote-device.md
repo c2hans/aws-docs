@@ -20,7 +20,7 @@ Where `thing-name` is the name of AWS IoT thing associated with the remote devic
 
 The following is an example MQTT message payload:
 
-```
+```json
 {
     "clientAccessToken": "{{destination-client-access-token}}",
     "clientMode": "destination",
@@ -33,7 +33,7 @@ After it receives an MQTT message, the IoT agent must start a local proxy on the
 
 The following Java code demonstrates how to use the [AWS IoT Device SDK](https://github.com/aws/aws-iot-device-sdk-java) and [ProcessBuilder](https://docs.oracle.com/javase/8/docs/api/java/lang/ProcessBuilder.html) from the Java library to build a simple IoT agent to work with secure tunneling.
 
-```
+```java
 // Find the IoT device endpoint for your AWS account
 final String endpoint = iotClient.describeEndpoint(new DescribeEndpointRequest().withEndpointType("iot:Data-ATS")).getEndpointAddress();
 

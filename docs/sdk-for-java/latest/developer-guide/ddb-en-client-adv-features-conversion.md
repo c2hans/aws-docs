@@ -19,7 +19,7 @@ It's also possible to annotate the bean with an empty array `{}`. This disables 
 
 The following snippet shows a single converter provider.
 
-```
+```java
 @DynamoDbBean(converterProviders = ConverterProvider1.class)
 public class Customer {
 
@@ -28,7 +28,7 @@ public class Customer {
 
 The following snippet shows the use of a chain of converter providers. Since the SDK default is provided last, it has the lowest priority.
 
-```
+```java
 @DynamoDbBean(converterProviders = {
    ConverterProvider1.class,
    ConverterProvider2.class,
@@ -40,7 +40,7 @@ public class Customer {
 
 The static table schema builders have an `attributeConverterProviders()` method that works the same way. This is shown in the following snippet.
 
-```
+```java
 private static final StaticTableSchema<Customer> CUSTOMER_TABLE_SCHEMA =
   StaticTableSchema.builder(Customer.class)
     .newItemSupplier(Customer::new)
@@ -58,7 +58,7 @@ To override the way a single attribute is mapped, supply an `AttributeConverter`
 
 The `@DynamoDbConvertedBy` annotation is used to specify the custom `AttributeConverter` class as shown in the following snippet.
 
-```
+```java
 @DynamoDbBean
 public class Customer {
     private String name;
@@ -71,7 +71,7 @@ public class Customer {
 
 The builders for static schemas have an equivalent attribute builder `attributeConverter()` method. This method takes an instance of an `AttributeConverter` as the following shows.
 
-```
+```java
 private static final StaticTableSchema<Customer> CUSTOMER_TABLE_SCHEMA =
   StaticTableSchema.builder(Customer.class)
     .newItemSupplier(Customer::new)
@@ -94,7 +94,7 @@ The parameter to the `@DynamoDbBean` annotations lists the two `AttributeConvert
 ------
 #### [ Class with annotations ]
 
-```
+```java
     @DynamoDbBean(converterProviders = {CookieConverterProvider.class, DefaultAttributeConverterProvider.class})
     public static final class SimpleUser {
         private String name;
@@ -121,7 +121,7 @@ The parameter to the `@DynamoDbBean` annotations lists the two `AttributeConvert
 ------
 #### [ Static table schema ]
 
-```
+```java
     private static final TableSchema<SimpleUser> SIMPLE_USER_TABLE_SCHEMA =
             TableSchema.builder(SimpleUser.class)
                     .newItemSupplier(SimpleUser::new)
@@ -140,7 +140,7 @@ The parameter to the `@DynamoDbBean` annotations lists the two `AttributeConvert
 
 The `CookieConverterProvider` in the following example provides an instance of an `HttpCookeConverter`.
 
-```
+```java
     public static final class CookieConverterProvider implements AttributeConverterProvider {
         private final Map<EnhancedType<?>, AttributeConverter<?>> converterCache = ImmutableMap.of(
                 // 1. Add HttpCookieConverter to the internal cache.
@@ -167,7 +167,7 @@ In the `transformFrom()` method of the following `HttpCookieConverter` class, th
 
 The `transformTo()` method receives a DynamoDB map parameter, then invokes the `HttpCookie` constructor that requires a name and a value.
 
-```
+```java
     public static final class HttpCookieConverter implements AttributeConverter<HttpCookie> {
 
         @Override

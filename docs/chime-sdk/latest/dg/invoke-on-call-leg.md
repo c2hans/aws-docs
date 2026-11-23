@@ -10,7 +10,7 @@ By default, SIP media applications time out if a Lambda function doesn't respond
 
 The following example shows the general response structure.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions": [

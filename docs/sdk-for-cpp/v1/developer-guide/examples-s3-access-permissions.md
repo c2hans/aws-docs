@@ -20,7 +20,7 @@ To run the examples, the user profile your code uses to make the requests must h
 
 The access control list for an object can be retrieved by calling the `S3Client` method `GetObjectAcl`. The method accepts the names of the object and its bucket. The return value includes the ACL’s `Owner` and list of `Grants`.
 
-```
+```cpp
 bool AwsDoc::S3::getObjectAcl(const Aws::String &bucketName,
                               const Aws::String &objectKey,
                               const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -131,7 +131,7 @@ The ACL can be modified by either creating a new ACL or changing the grants spec
 
 The following code uses the ACL retrieved by `GetObjectAcl` and adds a new grant to it. The user or grantee is given READ permission for the object. The modified ACL is passed to `PutObjectAcl`, making it the new current ACL.
 
-```
+```cpp
 bool AwsDoc::S3::putObjectAcl(const Aws::String &bucketName, const Aws::String &objectKey, const Aws::String &ownerID,
                               const Aws::String &granteePermission, const Aws::String &granteeType,
                               const Aws::String &granteeID, const Aws::String &granteeEmailAddress,
@@ -233,7 +233,7 @@ Management of an access control list for a bucket is identical to that used for 
 
 The following code demonstrates getting and setting a bucket ACL.
 
-```
+```cpp
 //! Routine which demonstrates setting the ACL for an S3 bucket.
 /*!
   \param bucketName: Name of a bucket.

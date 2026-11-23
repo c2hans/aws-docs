@@ -30,7 +30,7 @@ When you create a support permit, your AWS KMS key is used in the following way:
 
 Add the following policy statements to your AWS KMS key policy. These are the minimum permissions required for AWS Support authorization to use your key.
 
-```
+```json
 {
   "Sid": "Allows access to CreateGrant through SupportAuthZ",
   "Effect": "Allow",
@@ -85,7 +85,7 @@ To list and revoke grants for AWS Support authorization:
 
 1. List grants on the key to find the grant ID:
 
-   ```
+   ```bash
    aws kms list-grants \
        --key-id 1234abcd-12ab-34cd-56ef-1234567890ab
    ```
@@ -94,7 +94,7 @@ To list and revoke grants for AWS Support authorization:
 
 1. Revoke the grant:
 
-   ```
+   ```bash
    aws kms revoke-grant \
        --key-id 1234abcd-12ab-34cd-56ef-1234567890ab \
        --grant-id grant-id-from-list-grants

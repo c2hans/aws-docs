@@ -12,7 +12,7 @@ For information on how to accept the EULA when creating a fine-tuning job using 
 
 You can list all available **JumpStart Model IDs** programmatically with the Amazon SageMaker Python SDK:
 
-```
+```python
 from sagemaker.core.jumpstart.notebook_utils import list_jumpstart_models
 
 # List every available JumpStart model ID.

@@ -29,7 +29,7 @@ The following code example shows how to get started using Amazon SQS.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sqs#code-examples).
 The `Package.swift` file.
 
-```
+```swift
 import PackageDescription
 
 let package = Package(
@@ -66,7 +66,7 @@ let package = Package(
 ```
 The Swift source code, `entry.swift`.
 
-```
+```swift
 import ArgumentParser
 import AWSClientRuntime
 import AWSSQS
@@ -146,7 +146,7 @@ The following code example shows how to use `CreateQueue`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sqs#code-examples).
 
-```
+```swift
 import AWSSQS
 
         let config = try await SQSClient.SQSClientConfig(region: region)
@@ -173,7 +173,7 @@ The following code example shows how to use `DeleteMessageBatch`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sqs#code-examples).
 
-```
+```swift
 import AWSSQS
 
         let config = try await SQSClient.SQSClientConfig(region: region)
@@ -253,7 +253,7 @@ The following code example shows how to use `DeleteQueue`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sqs#code-examples).
 
-```
+```swift
 import AWSSQS
 
         let config = try await SQSClient.SQSClientConfig(region: region)
@@ -280,7 +280,7 @@ The following code example shows how to use `GetQueueAttributes`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sqs#code-examples).
 
-```
+```swift
 import AWSSQS
 
         let config = try await SQSClient.SQSClientConfig(region: region)
@@ -322,7 +322,7 @@ The following code example shows how to use `ListQueues`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sqs#code-examples).
 
-```
+```swift
 import AWSSQS
 
         let config = try await SQSClient.SQSClientConfig(region: region)
@@ -359,7 +359,7 @@ The following code example shows how to use `ReceiveMessage`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sqs#code-examples).
 
-```
+```swift
 import AWSSQS
 
         let config = try await SQSClient.SQSClientConfig(region: region)
@@ -394,7 +394,7 @@ The following code example shows how to use `SetQueueAttributes`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sqs#code-examples).
 
-```
+```swift
 import AWSSQS
 
         let config = try await SQSClient.SQSClientConfig(region: region)
@@ -430,7 +430,7 @@ The following code example shows how to:
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sqs/scenario#code-examples).
 
-```
+```swift
 import ArgumentParser
 import AWSClientRuntime
 import AWSSNS

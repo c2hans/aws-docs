@@ -40,7 +40,7 @@ Cargo is the Rust package manager. Complete the following steps to install Rust,
 
 1. With Cargo installed, run the following command to install Guard.
 
-   ```
+   ```sh
    cargo install cfn-guard
    ```
 
@@ -48,7 +48,7 @@ Cargo is the Rust package manager. Complete the following steps to install Rust,
 
    1. (Optional) To confirm the installation of Guard, run the following command.
 
-     ```
+     ```sh
      cfn-guard --version
      ```
 
@@ -67,7 +67,7 @@ Chocolatey is a package manager for Windows. Complete the following steps to ins
 
 1. With Chocolatey installed, run the following command to install Guard.
 
-   ```
+   ```sh
    choco install cloudformation-guard
    ```
 
@@ -75,7 +75,7 @@ Chocolatey is a package manager for Windows. Complete the following steps to ins
 
    1. (Optional) To confirm the installation of Guard, run the following command.
 
-     ```
+     ```sh
      cfn-guard --version
      ```
 

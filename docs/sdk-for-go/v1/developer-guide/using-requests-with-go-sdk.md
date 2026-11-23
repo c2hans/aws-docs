@@ -15,7 +15,7 @@ In Go 1.7, the `context.Context` type was added to `http.Request`. This type pro
 
 To use this pattern with the SDK, call `WithContext` on the `HTTPRequest` field of the SDK’s `request.Request` type, and provide your `Context value`. The following example highlights this process with a timeout on Amazon SQS`ReceiveMessage`.
 
-```
+```go
 req, resp := svc.ReceiveMessageRequest(params)
 req.HTTPRequest = req.HTTPRequest.WithContext(ctx)
 
@@ -33,7 +33,7 @@ if err != nil {
 
 In addition to setting API parameters by using struct fields, you can also use chainable setters on the API operation parameter fields. This enables you to use a chain of setters to set the fields of the API struct.
 
-```
+```go
 svc := s3.New(sess)
 
 _, err := svc.PutObject((&s3.PutObjectInput{}).
@@ -46,7 +46,7 @@ _, err := svc.PutObject((&s3.PutObjectInput{}).
 
 You can also use this pattern with nested fields in API operation requests.
 
-```
+```go
 resp, err := svc.UpdateService((&ecs.UpdateServiceInput{}).
     SetService("myService").
     SetDeploymentConfiguration((&ecs.DeploymentConfiguration{}).

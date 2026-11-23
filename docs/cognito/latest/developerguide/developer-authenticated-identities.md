@@ -86,7 +86,7 @@ To use developer-authenticated identities, implement your own identity provider 
 
 Following is a basic example of an identity provider.
 
-```
+```java
 public class DeveloperAuthenticationProvider extends AWSAbstractCognitoDeveloperIdentityProvider {
 
   private static final String developerProvider = "<Developer_provider_name>";
@@ -145,7 +145,7 @@ public class DeveloperAuthenticationProvider extends AWSAbstractCognitoDeveloper
 
 To use this identity provider, you have to pass it into `CognitoCachingCredentialsProvider`. Here's an example:
 
-```
+```java
 DeveloperAuthenticationProvider developerProvider = new DeveloperAuthenticationProvider( null, "IDENTITYPOOLID", Regions.USEAST1);
 CognitoCachingCredentialsProvider credentialsProvider = new CognitoCachingCredentialsProvider( context, developerProvider, Regions.USEAST1);
 ```
@@ -158,7 +158,7 @@ Older versions of the AWS SDK for Android (2.x and earlier) use `cognito-identit
 
 To use developer-authenticated identities, implement your own identity provider class that extends [AWSCognitoCredentialsProviderHelper](https://github.com/aws-amplify/aws-sdk-ios). Your identity provider class should return a response object containing the token as an attribute.
 
-```
+```objectivec
 @implementation DeveloperAuthenticatedIdentityProvider
 /*
  * Use the token method to communicate with your backend to get an
@@ -183,7 +183,7 @@ To use developer-authenticated identities, implement your own identity provider 
 
 To use this identity provider, pass it into `AWSCognitoCredentialsProvider` as shown in the following example:
 
-```
+```objectivec
 DeveloperAuthenticatedIdentityProvider * devAuth = [[DeveloperAuthenticatedIdentityProvider alloc] initWithRegionType:AWSRegionYOUR_IDENTITY_POOL_REGION
                                          identityPoolId:@"YOUR_IDENTITY_POOL_ID"
                                         useEnhancedFlow:YES
@@ -195,7 +195,7 @@ AWSCognitoCredentialsProvider *credentialsProvider = [[AWSCognitoCredentialsProv
 
 If you want to support both unauthenticated identities and developer-authenticated identities, override the `logins` method in your `AWSCognitoCredentialsProviderHelper` implementation.
 
-```
+```objectivec
 - (AWSTask<NSDictionary<NSString *, NSString *> *> *)logins {
     if(/*logic to determine if user is unauthenticated*/) {
         return [AWSTask taskWithResult:nil];
@@ -207,7 +207,7 @@ If you want to support both unauthenticated identities and developer-authenticat
 
 If you want to support developer-authenticated identities and social providers, you must manage who the current provider is in your `logins` implementation of `AWSCognitoCredentialsProviderHelper`.
 
-```
+```objectivec
 - (AWSTask<NSDictionary<NSString *, NSString *> *> *)logins {
     if(/*logic to determine if user is unauthenticated*/) {
         return [AWSTask taskWithResult:nil];
@@ -227,7 +227,7 @@ Older versions of the AWS SDK for iOS (2.x and earlier) use `cognito-identity.am
 
 To use developer-authenticated identities, implement your own identity provider class that extends [AWSCognitoCredentialsProviderHelper](https://github.com/aws-amplify/aws-sdk-ios). Your identity provider class should return a response object containing the token as an attribute.
 
-```
+```swift
 import AWSCore
 /*
  * Use the token method to communicate with your backend to get an
@@ -249,7 +249,7 @@ class DeveloperAuthenticatedIdentityProvider : AWSCognitoCredentialsProviderHelp
 
 To use this identity provider, pass it into `AWSCognitoCredentialsProvider` as shown in the following example:
 
-```
+```swift
 let devAuth = DeveloperAuthenticatedIdentityProvider(regionType: .YOUR_IDENTITY_POOL_REGION, identityPoolId: "YOUR_IDENTITY_POOL_ID", useEnhancedFlow: true, identityProviderManager:nil)
 let credentialsProvider = AWSCognitoCredentialsProvider(regionType: .YOUR_IDENTITY_POOL_REGION, identityProvider:devAuth)
 let configuration = AWSServiceConfiguration(region: .YOUR_IDENTITY_POOL_REGION, credentialsProvider:credentialsProvider)
@@ -258,7 +258,7 @@ AWSServiceManager.default().defaultServiceConfiguration = configuration
 
 If you want to support both unauthenticated identities and developer-authenticated identities, override the `logins` method in your `AWSCognitoCredentialsProviderHelper` implementation.
 
-```
+```swift
 override func logins () -> AWSTask<NSDictionary> {
     if(/*logic to determine if user is unauthenticated*/) {
         return AWSTask(result:nil)
@@ -270,7 +270,7 @@ override func logins () -> AWSTask<NSDictionary> {
 
 If you want to support developer-authenticated identities and social providers, you must manage who the current provider is in your `logins` implementation of `AWSCognitoCredentialsProviderHelper`.
 
-```
+```swift
 override func logins () -> AWSTask<NSDictionary> {
     if(/*logic to determine if user is unauthenticated*/) {
         return AWSTask(result:nil)
@@ -290,7 +290,7 @@ override func logins () -> AWSTask<NSDictionary> {
 
 Once you obtain an identity ID and session token from your back end, you will pass them to the `fromCognitoIdentity` provider from `@aws-sdk/credential-providers`. The logins key must match the token's `iss` claim. For identity pools in Regions that use the global issuer, use `cognito-identity.amazonaws.com`. For identity pools in other Regions, use `cognito-identity.{{region}}.amazonaws.com`. For more information, see [Regional token issuer format](#regional-token-issuer-format).
 
-```
+```javascript
 import { fromCognitoIdentity } from "@aws-sdk/credential-providers";
 
 const token = 'TOKEN_RETURNED_FROM_YOUR_PROVIDER';
@@ -324,7 +324,7 @@ const client = new SomeServiceClient({ region, credentials });
 
 After successfully authenticating the user with your authentication system, update the logins map with the developer provider name and a developer user identifier. This is an alphanumeric string that uniquely identifies a user in your authentication system. Be sure to call the `refresh` method after updating the logins map as the `identityId` might have changed:
 
-```
+```java
 HashMap<String, String> loginsMap = new HashMap<String, String>();
 loginsMap.put(developerAuthenticationProvider.getProviderName(), developerUserIdentifier);
 
@@ -337,7 +337,7 @@ credentialsProvider.refresh();
 
 The iOS SDK only calls your `logins` method to get the latest logins map if there are no credentials or they have expired. If you want to force the SDK to obtain new credentials (for example, your end user went from unauthenticated to authenticated and you want credentials against the authenticated user), call `clearCredentials` on your `credentialsProvider`.
 
-```
+```objectivec
 [credentialsProvider clearCredentials];
 ```
 
@@ -346,7 +346,7 @@ The iOS SDK only calls your `logins` method to get the latest logins map if ther
 
 The iOS SDK only calls your `logins` method to get the latest logins map if there are no credentials or they have expired. If you want to force the SDK to obtain new credentials (e.g., your end user went from unauthenticated to authenticated and you want credentials against the authenticated user), call `clearCredentials` on your `credentialsProvider`.
 
-```
+```swift
 credentialsProvider.clearCredentials()
 ```
 
@@ -362,7 +362,7 @@ A few things to keep in mind about the token returned by `GetOpenIdTokenForDevel
 
 The following Java snippet shows how to initialize an Amazon Cognito client and retrieve a token for a developer-authenticated identity.
 
-```
+```java
 // authenticate your end user as appropriate
 // ....
 
@@ -422,7 +422,7 @@ Rather than hardcoding the logins key, you can extract it from the token:
 
 **Java**
 
-```
+```java
 import java.util.Base64;
 import org.json.JSONObject;
 
@@ -434,7 +434,7 @@ String issuer = new JSONObject(payload).getString("iss");
 
 **Python**
 
-```
+```python
 import base64, json
 
 payload = token.split('.')[1]
@@ -447,7 +447,7 @@ issuer = claims['iss']
 
 **JavaScript**
 
-```
+```javascript
 const payload = token.split('.')[1];
 const claims = JSON.parse(Buffer.from(payload, 'base64url').toString());
 const issuer = claims.iss;
@@ -487,7 +487,7 @@ Your application might require supporting unauthenticated identities or authenti
 
 The `refresh` method checks the logins map. If the map is not empty and has a key with developer provider name, then call your back end. Otherwise, call the getIdentityId method and return null.
 
-```
+```java
 public String refresh() {
 
    setToken(null);
@@ -516,7 +516,7 @@ public String refresh() {
 
 Similarly the `getIdentityId` method has two flows depending on the contents of the logins map:
 
-```
+```java
 public String getIdentityId() {
 
    // Load the identityId from the cache
@@ -555,7 +555,7 @@ public String getIdentityId() {
 
 Your application might require supporting unauthenticated identities or authenticated identities using public providers (Login with Amazon, Sign in with Apple, Facebook, or Google) along with developer-authenticated identities. To do this, override the [AWSCognitoCredentialsProviderHelper](https://github.com/aws-amplify/aws-sdk-ios) `logins` method to be able to return the correct logins map based on the current identity provider. This example shows you how you might pivot between unauthenticated, Facebook and developer-authenticated.
 
-```
+```objectivec
 - (AWSTask<NSDictionary<NSString *, NSString *> *> *)logins {
     if(/*logic to determine if user is unauthenticated*/) {
         return [AWSTask taskWithResult:nil];
@@ -574,7 +574,7 @@ When you transition from unauthenticated to authenticated, you should call `[cre
 
 Your application might require supporting unauthenticated identities or authenticated identities using public providers (Login with Amazon, Sign in with Apple, Facebook, or Google) along with developer-authenticated identities. To do this, override the [AWSCognitoCredentialsProviderHelper](https://github.com/aws-amplify/aws-sdk-ios) `logins` method to be able to return the correct logins map based on the current identity provider. This example shows you how you might pivot between unauthenticated, Facebook and developer-authenticated.
 
-```
+```swift
 override func logins () -> AWSTask<NSDictionary> {
     if(/*logic to determine if user is unauthenticated*/) {
         return AWSTask(result:nil)

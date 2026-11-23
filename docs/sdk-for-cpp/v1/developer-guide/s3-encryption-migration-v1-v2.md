@@ -38,13 +38,13 @@ If your application uses [Vcpkg](https://github.com/microsoft/vcpkg) to track SD
 
 You can run the following command to upgrade package `aws-sdk-cpp`:
 
-```
+```cpp
 vcpkg upgrade aws-sdk-cpp
 ```
 
 And verify the version of package `aws-sdk-cpp`:
 
-```
+```cpp
 vcpkg list aws-sdk-cpp
 ```
 
@@ -89,7 +89,7 @@ The following code changes are required to construct a V2 S3 encryption client:
 
  *Pre-migration (KMS key wrap)*
 
-```
+```cpp
 auto materials = Aws::MakeShared<KMSEncryptionMaterials>("s3Encryption", CUSTOMER_MASTER_KEY_ID);
 CryptoConfiguration cryptoConfig;
 S3EncryptionClient encryptionClient(materials, cryptoConfig);
@@ -99,7 +99,7 @@ encryptionClient.PutObject(putObjectRequest);
 
  *Post-migration (KMSWithContext key wrap)*
 
-```
+```cpp
 auto materials = Aws::MakeShared<KMSWithContextEncryptionMaterials>("s3EncryptionV2", CUSTOMER_MASTER_KEY_ID);
 CryptoConfigurationV2 cryptoConfig(materials);
 S3EncryptionClientV2 encryptionClient(cryptoConfig);
@@ -114,7 +114,7 @@ encryptionClient.PutObject(putObjectRequest, kmsContextMap /* could be empty as 
 
  *Pre-migration (AES key wrap)*
 
-```
+```cpp
 auto materials = Aws::MakeShared<SimpleEncryptionMaterials>("s3Encryption", HashingUtils::Base64Decode(AES_MASTER_KEY_BASE64));
 CryptoConfiguration cryptoConfig;
 S3EncryptionClient encryptionClient(materials, cryptoConfig);
@@ -124,7 +124,7 @@ encryptionClient.PutObject(putObjectRequest);
 
  *Post-migration (AES-GCM key wrap)*
 
-```
+```cpp
 auto materials = Aws::MakeShared<SimpleEncryptionMaterialsWithGCMAAD>("s3EncryptionV2", HashingUtils::Base64Decode(AES_MASTER_KEY_BASE64));
 CryptoConfigurationV2 cryptoConfig(materials);
 S3EncryptionClientV2 encryptionClient(cryptoConfig);
@@ -160,7 +160,7 @@ To use the V2 Amazon S3 encryption client to decrypt objects that were encrypted
 
  *Pre-migration*
 
-```
+```cpp
 auto materials = Aws::MakeShared<KMSEncryptionMaterials>("s3Encryption", CUSTOMER_MASTER_KEY_ID);
 CryptoConfiguration cryptoConfig;
 S3EncryptionClient encryptionClient(materials, cryptoConfig);
@@ -170,7 +170,7 @@ encryptionClient.GetObject(getObjectRequest);
 
  *Post-migration*
 
-```
+```cpp
 auto materials = Aws::MakeShared<KMSWithContextEncryptionMaterials>("s3EncryptionV2", CUSTOMER_MASTER_KEY_ID);
 CryptoConfigurationV2 cryptoConfig(materials);
 cryptoConfig.SetSecurityProfile(SecurityProfile::V2_AND_LEGACY);
@@ -188,7 +188,7 @@ With legacy Amazon S3 encryption clients, you can specify a range of bytes to re
 
  *Pre-migration*
 
-```
+```cpp
 auto materials = Aws::MakeShared<KMSEncryptionMaterials>("s3Encryption", CUSTOMER_MASTER_KEY_ID);
 CryptoConfiguration cryptoConfig;
 S3EncryptionClient encryptionClient(materials, cryptoConfig);
@@ -199,7 +199,7 @@ encryptionClient.GetObject(getObjectRequest);
 
  *Post-migration*
 
-```
+```cpp
 auto materials = Aws::MakeShared<KMSWithContextEncryptionMaterials>("s3EncryptionV2", CUSTOMER_MASTER_KEY_ID);
 CryptoConfigurationV2 cryptoConfig(materials);
 cryptoConfig.SetUnAuthenticatedRangeGet(RangeGetMode::ALL);
@@ -218,7 +218,7 @@ When decrypting objects that were encrypted with `KMSWithContextEncryptionMateri
 
  *Pre-migration*
 
-```
+```cpp
 auto materials = Aws::MakeShared<KMSEncryptionMaterials>("s3Encryption", ""/* provide an empty KMS Master Key*/);
 CryptoConfiguration cryptoConfig;
 S3EncryptionClient encryptionClient(materials, cryptoConfig);
@@ -228,7 +228,7 @@ encryptionClient.GetObject(getObjectRequest);
 
  *Post-migration*
 
-```
+```cpp
 auto materials = Aws::MakeShared<KMSWithContextEncryptionMaterials>("s3EncryptionV2", ""/* provide an empty KMS Master Key*/);
 materials.SetKMSDecryptWithAnyCMK(true);
 CryptoConfigurationV2 cryptoConfig(materials);

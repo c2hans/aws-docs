@@ -17,7 +17,7 @@ For more information about Connect Customer Tasks, see [The task channel in Conn
 **Note**
 If your Connect Customer instance was created on or before October 2018, the contact is routed down the error branch. For the contact to be routed down the success path, create an IAM policy with the following permission and attach it to the Connect Customer service role. You can find the Connect Customer service role on the **Account overview** page for your Connect Customer instance.
 
-```
+```json
 {
      "Effect": "Allow",
      "Action": "connect:StartTaskContact",

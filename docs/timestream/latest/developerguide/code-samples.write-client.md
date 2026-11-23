@@ -14,7 +14,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java  ]
 
-```
+```java
     private static AmazonTimestreamWrite buildWriteClient() {
         final ClientConfiguration clientConfiguration = new ClientConfiguration()
                 .withMaxConnections(5000)
@@ -32,7 +32,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java v2  ]
 
-```
+```java
     private static TimestreamWriteClient buildWriteClient() {
         ApacheHttpClient.Builder httpClientBuilder =
                 ApacheHttpClient.builder();
@@ -84,7 +84,7 @@ tr := &http.Transport{
 ------
 #### [  Python  ]
 
-```
+```python
 write_client = session.client('timestream-write', config=Config(read_timeout=20, max_pool_connections = 5000, retries={'max_attempts': 10}))
 ```
 
@@ -95,14 +95,14 @@ The following snippet uses AWS SDK for JavaScript v3. For more information about
 
 An additional command import is shown here. The `CreateDatabaseCommand` import is not required to create the client.
 
-```
+```javascript
 import { TimestreamWriteClient, CreateDatabaseCommand } from "@aws-sdk/client-timestream-write";
 const writeClient = new TimestreamWriteClient({ region: "us-east-1" });
 ```
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/sample_apps/js).
 
-```
+```javascript
 var https = require('https');
 var agent = new https.Agent({
     maxSockets: 5000
@@ -119,7 +119,7 @@ writeClient = new AWS.TimestreamWrite({
 ------
 #### [  .NET  ]
 
-```
+```cs
 var writeClientConfig = new AmazonTimestreamWriteConfig
 {
     RegionEndpoint = RegionEndpoint.USEast1,

@@ -56,17 +56,17 @@ For more information, see [Tag your Amazon EC2 resources](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified tag from the specified resource, regardless of the tag value. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Remove-EC2Tag -Resource i-12345678 -Tag @{ Key="myTag" } -Force
 ```
 **Example 2: This example deletes the specified tag from the specified resource, but only if the tag value matches. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Remove-EC2Tag -Resource i-12345678 -Tag @{ Key="myTag";Value="myTagValue" } -Force
 ```
 **Example 3: This example deletes the specified tag from the specified resource, regardless of the tag value.**
 
-```
+```powershell
 $tag = New-Object Amazon.EC2.Model.Tag
 $tag.Key = "myTag"
 
@@ -74,7 +74,7 @@ Remove-EC2Tag -Resource i-12345678 -Tag $tag -Force
 ```
 **Example 4: This example deletes the specified tag from the specified resource, but only if the tag value matches.**
 
-```
+```powershell
 $tag = New-Object Amazon.EC2.Model.Tag
 $tag.Key = "myTag"
 $tag.Value = "myTagValue"
@@ -86,17 +86,17 @@ Remove-EC2Tag -Resource i-12345678 -Tag $tag -Force
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified tag from the specified resource, regardless of the tag value. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Remove-EC2Tag -Resource i-12345678 -Tag @{ Key="myTag" } -Force
 ```
 **Example 2: This example deletes the specified tag from the specified resource, but only if the tag value matches. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Remove-EC2Tag -Resource i-12345678 -Tag @{ Key="myTag";Value="myTagValue" } -Force
 ```
 **Example 3: This example deletes the specified tag from the specified resource, regardless of the tag value.**
 
-```
+```powershell
 $tag = New-Object Amazon.EC2.Model.Tag
 $tag.Key = "myTag"
 
@@ -104,7 +104,7 @@ Remove-EC2Tag -Resource i-12345678 -Tag $tag -Force
 ```
 **Example 4: This example deletes the specified tag from the specified resource, but only if the tag value matches.**
 
-```
+```powershell
 $tag = New-Object Amazon.EC2.Model.Tag
 $tag.Key = "myTag"
 $tag.Value = "myTagValue"

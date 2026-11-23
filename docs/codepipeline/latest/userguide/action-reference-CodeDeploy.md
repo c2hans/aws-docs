@@ -60,7 +60,7 @@ For AWS CodeDeploy support, add the following to your policy statement:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -110,7 +110,7 @@ For AWS CodeDeploy support, add the following to your policy statement:
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: Deploy
 Actions:
   - Name: Deploy
@@ -133,7 +133,7 @@ Actions:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "Deploy",
     "Actions": [

@@ -19,7 +19,7 @@ A human-readable description of the validation error with specific details about
 
  Example [DescribeEphemeris](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_DescribeEphemeris.html) response for an invalid ephemeris:
 
-```
+```json
 {
     "ephemerisId": "abc12345-6789-def0-1234-567890abcdef",
     "name": "My Invalid Ephemeris",

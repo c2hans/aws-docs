@@ -28,7 +28,7 @@ If the user response is **DENY**, the function or the API in the response is not
 
 **Response**
 
-```
+```json
 HTTP/1.1 200
 x-amzn-bedrock-agent-content-type: contentType
 x-amz-bedrock-agent-session-id: sessionId
@@ -57,7 +57,7 @@ Content-type: application/json
 
 **Request**
 
-```
+```json
 POST /agents/agentId/agentAliases/agentAliasId/sessions/sessionId/text HTTP/1.1
 Content-type: application/json
 

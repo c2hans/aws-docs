@@ -108,7 +108,7 @@ A custom execution role needs the following permissions for on-demand AMI scans:
 
 The following example policy grants these permissions:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

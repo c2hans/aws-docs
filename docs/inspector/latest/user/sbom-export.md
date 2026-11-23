@@ -22,7 +22,7 @@ SPDX format exports from Amazon Inspector are compatible with systems using **SP
 ### Example of CycloneDX 1.4 SBOM format from Amazon Inspector
 <a name="cyclone-schema"></a>
 
-```
+```JSON
                     {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
@@ -106,7 +106,7 @@ SPDX format exports from Amazon Inspector are compatible with systems using **SP
 ### Example of SPDX 2.3 SBOM format from Amazon Inspector
 <a name="cyclone-schema"></a>
 
-```
+```JSON
 {
 	"name": "409870544328/EC2/i-022fba820db137c64/ami-074ea14c08effb2d8",
 	"spdxVersion": "SPDX-2.3",

@@ -80,7 +80,7 @@ For more information, see [Create a Classic Load Balancer with an HTTPS listener
 **Tools for PowerShell V4**
 **Example 1: This example creates a new proxy protocol policy for a specified load balancer.**
 
-```
+```powershell
 $attribute = New-Object Amazon.ElasticLoadBalancing.Model.PolicyAttribute -Property @{
          AttributeName="ProxyProtocol"
          AttributeValue="True"
@@ -92,7 +92,7 @@ New-ELBLoadBalancerPolicy -LoadBalancerName my-load-balancer -PolicyName my-Prox
 **Tools for PowerShell V5**
 **Example 1: This example creates a new proxy protocol policy for a specified load balancer.**
 
-```
+```powershell
 $attribute = New-Object Amazon.ElasticLoadBalancing.Model.PolicyAttribute -Property @{
          AttributeName="ProxyProtocol"
          AttributeValue="True"

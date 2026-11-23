@@ -70,7 +70,7 @@ The `[ AmazonSageMakerFullAccess](https://docs.aws.amazon.com/sagemaker/latest/d
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

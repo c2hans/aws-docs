@@ -27,7 +27,7 @@ When creating an endpoint you can configure IAM authentication for your Amazon R
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -52,7 +52,7 @@ When creating an endpoint you can configure IAM authentication for your Amazon R
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -92,7 +92,7 @@ When creating an endpoint you can configure IAM authentication for your Amazon R
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -117,7 +117,7 @@ When creating an endpoint you can configure IAM authentication for your Amazon R
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

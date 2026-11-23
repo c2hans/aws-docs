@@ -19,6 +19,6 @@ This reference integration is hosted on the Amazon-FreeRTOS repository which is 
    + Open `{{freertos}}/vendors/{{vendor}}/boards/{{board}}/aws_demos/config_files/aws_demo_config.h`, comment out `#define CONFIG_CORE_MQTT_MUTUAL_AUTH_DEMO_ENABLED`, and define `CONFIG_OTA_MQTT_UPDATE_DEMO_ENABLED` or `CONFIG_OTA_HTTP_UPDATE_DEMO_ENABLED`.
    + Open `vendors/{{vendor}}/boards/{{board}}/aws_demos/config_files/ota_demo_config.h`, and copy your SHA-256/ECDSA code-signing certificate in:
 
-     ```
+     ```c
      #define otapalconfigCODE_SIGNING_CERTIFICATE [] = "{{your-certificate-key}}";
      ```

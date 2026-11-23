@@ -15,7 +15,7 @@ To create a retrieve-only evaluation job where Amazon Bedrock invokes your Knowl
 
 The following is an example custom dataset that contains 6 inputs and uses the JSON line format.
 
-```
+```json
 {"conversationTurns":[{"prompt":{"content":[{"text":{{"Provide the prompt you want to use during inference"}}}]},"referenceResponses":[{"content":[{"text":{{"Specify a ground-truth response"}}}]}]}]}
 {"conversationTurns":[{"prompt":{"content":[{"text":{{"Provide the prompt you want to use during inference"}}}]},"referenceResponses":[{"content":[{"text":{{"Specify a ground-truth response"}}}]}]}]}
 {"conversationTurns":[{"prompt":{"content":[{"text":{{"Provide the prompt you want to use during inference"}}}]},"referenceResponses":[{"content":[{"text":{{"Specify a ground-truth response"}}}]}]}]}
@@ -26,7 +26,7 @@ The following is an example custom dataset that contains 6 inputs and uses the J
 
 The following prompt is expanded for clarity. In your actual prompt dataset each line (a prompt) must be a valid JSON object.
 
-```
+```json
 {
     "conversationTurns": [
         {
@@ -63,7 +63,7 @@ To create a retrieve-only evaluation job where you provide your own inference re
 
 The following is an example custom dataset that contains 6 inputs and uses the JSON line format.
 
-```
+```json
 {"conversationTurns":[{"prompt":{"content":[{"text":{{"The prompt you used to generate your response"}}}]},"referenceResponses":[{"content":[{"text":{{"A ground-truth response"}}}]}],"referenceContexts":[{"content":[{"text":{{"A ground truth for a received passage"}}}]}],"output":{"knowledgeBaseIdentifier":{{"A string identifying your RAG source"}},"retrievedResults":{"retrievalResults":[{"name":{{"(Optional) a name for your reference context"}},"content":{"text":{{"The output from your RAG inference"}}},"metadata":{{{"(Optional) a key for your metadata"}}:{{"(Optional) a metadata value"}}}}]}}}]}
 {"conversationTurns":[{"prompt":{"content":[{"text":{{"The prompt you used to generate your response"}}}]},"referenceResponses":[{"content":[{"text":{{"A ground-truth response"}}}]}],"referenceContexts":[{"content":[{"text":{{"A ground truth for a received passage"}}}]}],"output":{"knowledgeBaseIdentifier":{{"A string identifying your RAG source"}},"retrievedResults":{"retrievalResults":[{"name":{{"(Optional) a name for your reference context"}},"content":{"text":{{"The output from your RAG inference"}}},"metadata":{{{"(Optional) a key for your metadata"}}:{{"(Optional) a metadata value"}}}}]}}}]}
 {"conversationTurns":[{"prompt":{"content":[{"text":{{"The prompt you used to generate your response"}}}]},"referenceResponses":[{"content":[{"text":{{"A ground-truth response"}}}]}],"referenceContexts":[{"content":[{"text":{{"A ground truth for a received passage"}}}]}],"output":{"knowledgeBaseIdentifier":{{"A string identifying your RAG source"}},"retrievedResults":{"retrievalResults":[{"name":{{"(Optional) a name for your reference context"}},"content":{"text":{{"The output from your RAG inference"}}},"metadata":{{{"(Optional) a key for your metadata"}}:{{"(Optional) a metadata value"}}}}]}}}]}
@@ -74,7 +74,7 @@ The following is an example custom dataset that contains 6 inputs and uses the J
 
 The following prompt is expanded for clarity. In your actual prompt dataset each line (a prompt) must be a valid JSON object.
 
-```
+```json
 {
   "conversationTurns": [
     {

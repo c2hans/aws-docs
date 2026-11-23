@@ -50,6 +50,12 @@ Content-type: application/json
       }
    ],
    "deviceStatus": "string",
+   "deviceStatusReason": {
+      "estimatedEndAt": "string",
+      "reason": "string",
+      "startedAt": "string",
+      "updatedAt": "string"
+   },
    "deviceType": "string",
    "providerName": "string"
 }
@@ -82,7 +88,11 @@ Type: Array of [DeviceQueueInfo](API_DeviceQueueInfo.md) objects
  ** [deviceStatus](#API_GetDevice_ResponseSyntax) **   <a name="braket-GetDevice-response-deviceStatus"></a>
 The status of the device.
 Type: String
-Valid Values: `ONLINE | OFFLINE | RETIRED`
+Valid Values: `ONLINE | OFFLINE | RETIRED | PAUSED`
+
+ ** [deviceStatusReason](#API_GetDevice_ResponseSyntax) **   <a name="braket-GetDevice-response-deviceStatusReason"></a>
+The reason for the current status of the device, including status reason codes and timestamps.
+Type: [DeviceStatusReason](API_DeviceStatusReason.md) object
 
  ** [deviceType](#API_GetDevice_ResponseSyntax) **   <a name="braket-GetDevice-response-deviceType"></a>
 The type of the device.

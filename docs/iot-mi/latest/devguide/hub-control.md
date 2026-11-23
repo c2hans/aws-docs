@@ -165,7 +165,7 @@ Hub control is provided as part of the Hub SDK package. The hub control sub-pack
 
 1. Move the code generated files to the `example` folder:
 
-   ```
+   ```bash
    cp codegen/out/* example/dm
    ```
 

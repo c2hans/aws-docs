@@ -97,7 +97,7 @@ You can configure the access entry on a compute environment through the `eksConf
 
 **Enable an AWS Batch-managed access entry when creating a compute environment**
 
-```
+```sh
 $ aws batch create-compute-environment \
     --compute-environment-name {{my-eks-ce}} \
     --type MANAGED \
@@ -107,7 +107,7 @@ $ aws batch create-compute-environment \
 
 **Enable an AWS Batch-managed access entry on an existing compute environment**
 
-```
+```sh
 $ aws batch update-compute-environment \
     --compute-environment {{my-eks-ce}} \
     --eks-configuration 'accessEntry={desiredState=ENABLED}'
@@ -115,7 +115,7 @@ $ aws batch update-compute-environment \
 
 **Check the status**
 
-```
+```sh
 $ aws batch describe-compute-environments \
     --compute-environments {{my-eks-ce}} \
     --query "computeEnvironments[0].eksConfiguration.accessEntry"
@@ -123,7 +123,7 @@ $ aws batch describe-compute-environments \
 
 The response includes both the `desiredState` that you specified and the observed `status`:
 
-```
+```JSON
 {
     "desiredState": "ENABLED",
     "status": "ACTIVE"
@@ -144,7 +144,7 @@ Use the `eksConfiguration.accessEntry` object in your [CreateComputeEnvironment]
 
 Include `accessEntry` in the request body:
 
-```
+```JSON
 {
     "computeEnvironmentName": "{{my-eks-ce}}",
     "type": "MANAGED",
@@ -168,7 +168,7 @@ Include `accessEntry` in the request body:
 
 **Update the access entry on an existing compute environment**
 
-```
+```JSON
 {
     "computeEnvironment": "{{my-eks-ce}}",
     "eksConfiguration": {
@@ -197,7 +197,7 @@ AWS Batch needs Kubernetes permissions to create and manage pods in the namespac
 
   After the access entry reaches `status=ACTIVE`, associate the namespace policy using the AWS CLI:
 
-  ```
+  ```sh
   $ aws eks associate-access-policy \
       --cluster-name {{my-cluster}} \
       --principal-arn {{arn:aws:iam::123456789012:role/aws-service-role/batch.amazonaws.com/AWSServiceRoleForBatch}} \
@@ -221,7 +221,7 @@ The configuration method depends on your cluster's `authenticationMode`:
 + **On clusters whose `authenticationMode` is `API`** — You must create an access entry for the node instance role. The `aws-auth` ConfigMap is not used for authentication on these clusters.
 To create an access entry for the node instance role, use the AWS CLI:
 
-```
+```sh
 $ aws eks create-access-entry \
     --cluster-name {{my-cluster}} \
     --principal-arn {{arn:aws:iam::123456789012:role/my-node-instance-role}} \

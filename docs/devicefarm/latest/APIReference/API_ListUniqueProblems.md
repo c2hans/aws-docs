@@ -94,7 +94,8 @@ Required: No
                      "resolution": {
                         "height": number,
                         "width": number
-                     }
+                     },
+                     "type": "string"
                   },
                   "job": {
                      "arn": "string",

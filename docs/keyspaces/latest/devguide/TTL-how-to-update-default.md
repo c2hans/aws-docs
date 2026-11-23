@@ -36,13 +36,13 @@ Follow these steps to update default Time to Live settings for existing tables u
 
 1. You can use `ALTER TABLE` to edit default Time to Live (TTL) settings of a table. To update the default TTL settings of the table to 2,592,000 seconds, which represents 30 days, you can use the following statement.
 
-   ```
+   ```SQL
    ALTER TABLE {{my_table}} WITH default_time_to_live = 2592000;
    ```
 
 1. To confirm the TTL settings for the updated table, use the `cqlsh` `DESCRIBE` statement as shown in the following example. The output shows the default TTL setting for the table as `default_time_to_live`.
 
-   ```
+   ```SQL
    DESC TABLE {{my_table}};
    ```
 

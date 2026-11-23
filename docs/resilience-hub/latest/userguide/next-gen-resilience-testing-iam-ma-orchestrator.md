@@ -8,7 +8,7 @@ Create the orchestrator role in the account that runs the experiment. Its trust 
 
 **Trust policy**
 
-```
+```json
 {
   "Version": "2012-10-17"		 	 	 ,
   "Statement": [
@@ -44,7 +44,7 @@ Create the orchestrator role in the account that runs the experiment. Its trust 
 
 The orchestrator permissions policy is the same for every test template. It allows the role to assume the target-account roles, resolve targets, and manage experiment logging and lifecycle. List the ARN of each target-account role in the `AssumeTargetAccountRole` statement.
 
-```
+```json
 {
   "Version": "2012-10-17"		 	 	 ,
   "Statement": [

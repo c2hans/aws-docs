@@ -42,6 +42,8 @@ Create a registry with IAM authorization and manual approval.
 1. In the **Record approval** section, turn on or turn off **Auto-approval**:
    + When **Auto-approval** is on, when you submit a record for approval, the record moves directly to **Approved** status and becomes visible in search results shortly after.
    + When **Auto-approval** is off, when you submit a record for approval, the record moves to **Pending approval** status and requires a curator to review and approve it before it’s published.
+**Note**
+This **Auto-approval** setting controls internal discovery only. Public discovery has a separate public-association approval gate. For more information, see [Record approval and public-association approval](registry-create-manage.md#registry-create-approval-dimensions).
 
 1. (Optional) In the **Tags** section, choose **Add new tag** to attach one or more tags to the registry. Each tag has a key and an optional value.
 
@@ -160,14 +162,14 @@ After creating the registry, the console navigates to the registry details page.
 
 **Example**
 
-```
+```bash
 aws agent-registry-control create-registry \
   --name "MyFirstRegistry" \
   --description "My first Agent Registry" \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control create-registry \
   --name "MyFirstRegistry" \
   --description "My first Agent Registry" \
@@ -181,7 +183,7 @@ The registry status starts as CREATING and transitions to READY when provisionin
 
 **Example**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')
@@ -193,7 +195,7 @@ response = client.create_registry(
 print(response['registryArn'])
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control')
@@ -244,12 +246,14 @@ A registry record represents an agent, tool, skill, or custom resource.
       +  **Agent** – Protocol designed for secure agent-to-agent interactions. Enables distributed workflows and information exchange.
       +  **Skills** – Register agent skills with markdown documentation and an optional structured definition.
       +  **Custom** – Custom protocol implementation for specialized communication patterns. Define your own interface specification and integration requirements.
+      +  **Web bot** – Register a signed-request bot identity.
 
    1. Under **Descriptor**, choose the shape of the record’s descriptor data. Available options depend on the **Type** you selected:
       +  **MCP** → **MCP server** or **Custom**
       +  **Agent** → **A2A Agent Card**, **MCP server**, or **Custom**
       +  **Skills** → **Agent skills definition** or **Custom**
       +  **Custom** → **Custom**
+      +  **Web bot** → **Signature Agent Card**
 
 1. A descriptor-specific editor appears based on your **Descriptor** selection:
 
@@ -260,6 +264,8 @@ A registry record represents an agent, tool, skill, or custom resource.
    1.  **Agent skills definition** – For **Skill documentation**, enter the markdown that describes this skill. (Optional) Select **Include skill definition** to add a structured definition. Select a schema version and enter the definition as a JSON object.
 
    1.  **Custom** – Enter your custom definition as a JSON object.
+
+   1.  **Signature Agent Card** – Specify the web bot’s name and the JWKS URL used for verification, and select a **Category** that best describes the web bot. To view the official schema as a reference, turn on **Show official schema**. For the descriptor fields and the category values, see [Supported record types and descriptors](registry-supported-record-types.md).
 
 1. (Optional) In the **Tags** section, choose **Add new tag** to attach one or more tags to the record. Each tag has a key and an optional value.
 
@@ -301,6 +307,8 @@ A registry record represents an agent, tool, skill, or custom resource.
 
    1.  **Custom** – Custom protocol implementation for specialized communication patterns. Define your own interface specification and integration requirements. If you choose this type, enter your custom definition as a JSON object in the editor.
 
+   1.  **Web bot** – Register a signed-request bot identity.
+
 1. Choose **Create record**.
 
 **Note**
@@ -313,7 +321,7 @@ After you choose Create record, AWS Agent Registry begins provisioning the recor
 
 **Example**
 
-```
+```bash
 aws agent-registry-control create-registry-record \
   --registry-id <registryId> \
   --name "weather-server" \
@@ -324,7 +332,7 @@ aws agent-registry-control create-registry-record \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control create-registry-record \
   --registry-id <registryId> \
   --name "WeatherServer" \
@@ -341,7 +349,7 @@ The record is created in CREATING status and transitions to DRAFT when processin
 
 **Example**
 
-```
+```python
 import boto3
 import json
 
@@ -393,7 +401,7 @@ print(f"Record ARN: {response['recordArn']}")
 print(f"Status: {response['status']}")  # CREATING
 ```
 
-```
+```python
 import boto3
 import json
 
@@ -501,14 +509,14 @@ After you submit a record for approval, the record status changes based on the r
 
 **Example**
 
-```
+```bash
 aws agent-registry-control submit-registry-record-for-approval \
   --registry-id <registryId> \
   --record-id <recordId> \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control submit-registry-record-for-approval \
   --registry-id <registryId> \
   --record-id <recordId> \
@@ -522,7 +530,7 @@ The record moves to PENDING\_APPROVAL (or directly to APPROVED if auto-approval 
 
 **Example**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')
@@ -537,7 +545,7 @@ print(f"Status: {response['status']}")  # PENDING_APPROVAL or APPROVED
 print(f"Updated At: {response['updatedAt']}")
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control')
@@ -619,7 +627,7 @@ print(f"Updated At: {response['updatedAt']}")
 
 **Example**
 
-```
+```bash
 aws agent-registry-control update-registry-record-status \
   --registry-id <registryId> \
   --record-id <recordId> \
@@ -628,7 +636,7 @@ aws agent-registry-control update-registry-record-status \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control update-registry-record-status \
   --registry-id <registryId> \
   --record-id <recordId> \
@@ -642,7 +650,7 @@ aws bedrock-agentcore-control update-registry-record-status \
 
 **Example**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')
@@ -658,7 +666,7 @@ print(f"Status: {response['status']}")  # APPROVED
 print(f"Reason: {response['statusReason']}")
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control')
@@ -720,24 +728,24 @@ Search returns only records in **Approved** status. Records in other states such
 
  **Browse approved records** — list approved records in a registry:
 
-```
+```bash
 aws agent-registry list-discoverable-registry-records \
   --registry-id "<registry-id>" \
   --region us-east-1
 ```
 
- **Search approved records** — run a hybrid semantic \+ keyword search:
+ **Search approved records** — run a search, which is a hybrid semantic \+ keyword search by default:
 
 **Example**
 
-```
+```bash
 aws agent-registry search-discoverable-registry-records \
   --search-query "weather" \
   --registry-ids "<registry-id>" \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore search-registry-records \
   --search-query "weather" \
   --registry-ids "<registry-id>" \
@@ -746,7 +754,7 @@ aws bedrock-agentcore search-registry-records \
 
  **Retrieve full details for many records at once**:
 
-```
+```bash
 aws agent-registry batch-get-discoverable-registry-record \
   --entries '[{"registryId": "<registry-id>", "recordIds": ["<recordId-1>", "<recordId-2>"]}]' \
   --region us-east-1
@@ -760,7 +768,7 @@ aws agent-registry batch-get-discoverable-registry-record \
 
  **Browse approved records**:
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry')
@@ -777,7 +785,7 @@ for record in list_response['registryRecords']:
 
 **Example**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry')
@@ -795,7 +803,7 @@ for record in response['registryRecords']:
     print(f"  Version: {record['recordVersion']}")
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore')
@@ -814,7 +822,7 @@ for record in response['registryRecords']:
 
  **Retrieve full details for many records at once**:
 
-```
+```python
 batch_response = client.batch_get_discoverable_registry_record(
     entries=[{'registryId': '<registry-id>', 'recordIds': ['<recordId-1>', '<recordId-2>']}]
 )

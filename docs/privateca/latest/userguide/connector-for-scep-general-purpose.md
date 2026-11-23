@@ -30,7 +30,7 @@ A fingerprint is a unique identifier for your private CA that can be used to ver
 
 1. In OpenSSL, run the following command to generate the fingerprint:
 
-   ```
+   ```bash
    openssl x509 -in ca.pem -sha256 -fingerprint
    ```
 

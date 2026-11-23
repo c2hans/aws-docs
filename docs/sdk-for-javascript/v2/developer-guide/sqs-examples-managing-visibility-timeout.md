@@ -35,7 +35,7 @@ Create a Node.js module with the file name `sqs_changingvisibility.js`. Be sure 
 
 Upon receipt of the message from the queue, create a JSON object containing the parameters needed for setting the timeout, including the URL of the queue containing the message, the `ReceiptHandle` returned when the message was received, and the new timeout in seconds. Call the `changeMessageVisibility` method.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region to us-west-2
@@ -80,7 +80,7 @@ sqs.receiveMessage(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sqs_changingvisibility.js
 ```
 

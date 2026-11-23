@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # LegalTerm
 
-Defines a legal term containing documents proposed to buyers, such as EULAs and data subscription agreements.
+Describes a legal term containing documents proposed to you, such as End User License Agreements (EULAs) and data subscription agreements.
 
 ## Contents
 <a name="API_marketplace-discovery_LegalTerm_Contents"></a>
@@ -13,7 +13,7 @@ Defines a legal term containing documents proposed to buyers, such as EULAs and 
 In the following list, the required parameters are described first.
 
  ** documents **   <a name="AWSMarketplaceService-Type-marketplace-discovery_LegalTerm-documents"></a>
-The legal documents proposed to the buyer as part of this term.
+The legal documents proposed to you as part of this term.
 Type: Array of [DocumentItem](API_marketplace-discovery_DocumentItem.md) objects
 Required: Yes
 

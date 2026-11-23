@@ -45,7 +45,7 @@ For more information, see [Policies and permissions in IAM](https://docs.aws.ama
 **Tools for PowerShell V4**
 **Example 1: This command returns the names and ARNs of the managed policies that are attached to the IAM group named `Admins` in the AWS account. To see the list of inline policies embedded in the group, use the `Get-IAMGroupPolicyList` command.**
 
-```
+```powershell
 Get-IAMAttachedGroupPolicyList -GroupName "Admins"
 ```
 **Output:**
@@ -61,7 +61,7 @@ arn:aws:iam::aws:policy/AdministratorAccess               AdministratorAccess
 **Tools for PowerShell V5**
 **Example 1: This command returns the names and ARNs of the managed policies that are attached to the IAM group named `Admins` in the AWS account. To see the list of inline policies embedded in the group, use the `Get-IAMGroupPolicyList` command.**
 
-```
+```powershell
 Get-IAMAttachedGroupPolicyList -GroupName "Admins"
 ```
 **Output:**

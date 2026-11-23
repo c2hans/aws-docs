@@ -19,7 +19,7 @@ The four files to edit when adding a persona are:
 
  `PERSONA_PRODUCT_BINDINGS` maps each persona slug to the ordered list of ADP data products that `persona_loader` fetches into AgentCore Memory at session start. `PERSONA_KB_FILTERS` maps persona slugs that need a pre-scoped KB tool to a `source_category` filter dict that is passed to the `bedrock-agent-runtime:Retrieve` call.
 
-```
+```python
 # agents/supervisor/persona_definitions.py  (additions only)
 
 PERSONA_PRODUCT_BINDINGS: dict[str, list[str]] = {
@@ -48,7 +48,7 @@ If the persona does not need a pre-scoped KB tool, omit it from `PERSONA_KB_FILT
 
 Add a prompt constant and register it in `PERSONA_PROMPTS`. The prompt body must include `{tenant_display}`, `{vin}`, and `{persona_id}` — these are substituted by `supervisor.build_system_prompt` via `dataclasses.asdict(session)`:
 
-```
+```python
 # agents/supervisor/persona_definitions.py  (additions only)
 
 FINANCE_ADVISOR_PROMPT = """\
@@ -85,7 +85,7 @@ Keep each prompt under 2 500 characters. Hard rules (triage-before-narrate, retr
 
 Add the new persona slug to `PERSONA_TOOL_FACTORIES` in `agents/supervisor/tools/init.py`:
 
-```
+```python
 PERSONA_TOOL_FACTORIES: dict[str, list] = {
     # ... existing personas ...
     "finance_advisor": [
@@ -105,7 +105,7 @@ PERSONA_TOOL_FACTORIES: dict[str, list] = {
 
  `lambdas/api-assistant-chat/persona_map.py` contains `infer_persona`, the function that maps Cognito authorizer claims to a valid persona slug for the web-chat path. Add the new slug to `_ROLE_MAP` if it maps from a `custom:role` Cognito attribute:
 
-```
+```python
 # lambdas/api-assistant-chat/persona_map.py
 
 _ROLE_MAP: dict[str, str] = {

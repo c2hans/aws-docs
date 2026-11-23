@@ -35,7 +35,7 @@ For more information, see [zero-ETL integrations](https://docs.aws.amazon.com/re
 
 The following SQL command displays activity of the integration.
 
-```
+```sql
 select * from sys_integration_table_activity;
 
           integration_id              | checkpoint_name | target_database | schema_name |     table_name    | table_id     | record_time                | transaction_id  | inserted_rows  | deleted_rows | updated_rows | bytes_ingested

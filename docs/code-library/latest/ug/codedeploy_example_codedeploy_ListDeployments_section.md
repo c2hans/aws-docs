@@ -42,7 +42,7 @@ For more information, see [View CodeDeploy deployment details](https://docs.aws.
 **Tools for PowerShell V4**
 **Example 1: This example gets a list of deployment IDs for the specified application and deployment group.**
 
-```
+```powershell
 Get-CDDeploymentList -ApplicationName CodeDeployDemoApplication -DeploymentGroupName CodeDeployDemoFleet
 ```
 **Output:**
@@ -56,7 +56,7 @@ d-RR0T5KTEX
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of deployment IDs for the specified application and deployment group.**
 
-```
+```powershell
 Get-CDDeploymentList -ApplicationName CodeDeployDemoApplication -DeploymentGroupName CodeDeployDemoFleet
 ```
 **Output:**

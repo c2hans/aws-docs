@@ -62,7 +62,7 @@ To create an AWS KMS ECDH keyring that encrypts and decrypts data, you must use 
 
 The following example creates an AWS KMS ECDH keyring with the with the sender's KMS key, the sender's public key, and the recipient's public key. This example uses the optional `senderPublicKey` parameter to provide the sender's public key. If you do not provide the sender's public key, the keyring calls AWS KMS to retrieve the sender's public key. Both the sender and recipient's key pairs are on the `ECC_NIST_P256` curve.
 
-```
+```cs
 // Instantiate material providers
 var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 
@@ -96,7 +96,7 @@ var keyring = materialProviders.CreateAwsKmsEcdhKeyring(createKeyringInput);
 
 The following example creates an AWS KMS ECDH keyring with the with the sender's KMS key, the sender's public key, and the recipient's public key. This example uses the optional `senderPublicKey` parameter to provide the sender's public key. If you do not provide the sender's public key, the keyring calls AWS KMS to retrieve the sender's public key. Both the sender and recipient's key pairs are on the `ECC_NIST_P256` curve.
 
-```
+```java
 // Retrieve public keys
 // Must be DER-encoded X.509 public keys
 ByteBuffer BobPublicKey = getPublicKeyBytes("{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}");
@@ -122,7 +122,7 @@ ByteBuffer BobPublicKey = getPublicKeyBytes("{{arn:aws:kms:us-west-2:11112222333
 
 The following example creates an AWS KMS ECDH keyring with the with the sender's KMS key, the sender's public key, and the recipient's public key. This example uses the optional `sender_public_key` parameter to provide the sender's public key. If you do not provide the sender's public key, the keyring calls AWS KMS to retrieve the sender's public key.
 
-```
+```rs
 // Retrieve public keys
 // Must be DER-encoded X.509 keys
 let public_key_file_content_sender = std::fs::read_to_string(Path::new(EXAMPLE_KMS_ECC_PUBLIC_KEY_FILENAME_SENDER))?;
@@ -187,7 +187,7 @@ To initialize an AWS KMS ECDH keyring with the `KmsPublicKeyDiscovery` key agree
 
 The following example creates an AWS KMS ECDH discovery keyring with a KMS key pair on the `ECC_NIST_P256` curve. You must have [kms:GetPublicKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetPublicKey.html) and [kms:DeriveSharedSecret](https://docs.aws.amazon.com/kms/latest/APIReference/API_DeriveSharedSecret.html) permissions on the specified KMS key pair. This keyring can decrypt any record where the public key of the specified KMS key pair matches the recipient's public key stored in the material description field of the encrypted record.
 
-```
+```cs
 // Instantiate material providers
 var materialProviders = new MaterialProviders(new MaterialProvidersConfig());
 
@@ -214,7 +214,7 @@ var keyring = materialProviders.CreateAwsKmsEcdhKeyring(createKeyringInput);
 
 The following example creates an AWS KMS ECDH discovery keyring with a KMS key pair on the `ECC_NIST_P256` curve. You must have [kms:GetPublicKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetPublicKey.html) and [kms:DeriveSharedSecret](https://docs.aws.amazon.com/kms/latest/APIReference/API_DeriveSharedSecret.html) permissions on the specified KMS key pair. This keyring can decrypt any record where the public key of the specified KMS key pair matches the recipient's public key stored in the material description field of the encrypted record.
 
-```
+```java
 // Create the AWS KMS ECDH discovery keyring
 final CreateAwsKmsEcdhKeyringInput recipientKeyringInput =
   CreateAwsKmsEcdhKeyringInput.builder()
@@ -232,7 +232,7 @@ final CreateAwsKmsEcdhKeyringInput recipientKeyringInput =
 ------
 #### [ Rust ]
 
-```
+```rs
 // Create KmsPublicKeyDiscoveryInput
 let kms_ecdh_discovery_static_configuration_input =
     KmsPublicKeyDiscoveryInput::builder()

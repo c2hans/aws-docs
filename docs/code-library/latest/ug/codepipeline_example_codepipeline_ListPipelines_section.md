@@ -47,7 +47,7 @@ For more information, see [View pipeline details and history (CLI)](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example gets a list of available pipelines.**
 
-```
+```powershell
 Get-CPPipelineList
 ```
 **Output:**
@@ -63,7 +63,7 @@ Created                  Name                Updated                  Version
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of available pipelines.**
 
-```
+```powershell
 Get-CPPipelineList
 ```
 **Output:**

@@ -34,7 +34,7 @@ For more information, see [Tutorial: Getting started with AWS Glue Studio](https
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 The `Package.swift` file.
 
-```
+```swift
 // swift-tools-version: 5.9
 //
 // The swift-tools-version declares the minimum version of Swift required to
@@ -77,7 +77,7 @@ let package = Package(
 ```
 The Swift code file, `entry.swift`.
 
-```
+```swift
 // An example that shows how to use the AWS SDK for Swift to demonstrate
 // creating and using crawlers and jobs using AWS Glue.
 //
@@ -1010,7 +1010,7 @@ The following code example shows how to use `CreateCrawler`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 
@@ -1066,7 +1066,7 @@ The following code example shows how to use `CreateJob`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 
@@ -1115,7 +1115,7 @@ The following code example shows how to use `DeleteCrawler`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 
@@ -1147,7 +1147,7 @@ The following code example shows how to use `DeleteDatabase`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 
@@ -1232,7 +1232,7 @@ The following code example shows how to use `DeleteJob`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 
@@ -1264,7 +1264,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 
@@ -1290,7 +1290,7 @@ The following code example shows how to use `GetCrawler`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 
@@ -1334,7 +1334,7 @@ The following code example shows how to use `GetDatabase`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 
@@ -1369,7 +1369,7 @@ The following code example shows how to use `GetJobRun`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 
@@ -1407,7 +1407,7 @@ The following code example shows how to use `GetJobRuns`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 
@@ -1456,7 +1456,7 @@ The following code example shows how to use `GetTables`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 
@@ -1508,7 +1508,7 @@ The following code example shows how to use `ListJobs`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 
@@ -1557,7 +1557,7 @@ The following code example shows how to use `StartCrawler`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 
@@ -1591,7 +1591,7 @@ The following code example shows how to use `StartJobRun`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 

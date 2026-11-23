@@ -68,7 +68,7 @@ To create custom security groups for your AWS ParallelCluster deployment, follow
 
 Here's an example of how to create security groups using the AWS CLI:
 
-```
+```bash
 # Create security group for head node
 aws ec2 create-security-group \
   --group-name pcluster-head-node-sg \
@@ -90,7 +90,7 @@ aws ec2 create-security-group \
 
 Once you've created your custom security groups, you can reference them in your cluster configuration file:
 
-```
+```yaml
 # Example cluster configuration with custom security groups
 HeadNode:
   ...
@@ -146,7 +146,7 @@ In highly restricted environments, you might want to deploy AWS ParallelCluster 
 
 When using VPC endpoints, ensure that your security groups allow traffic to and from the VPC endpoints. You can do this by adding the security groups associated with the VPC endpoints to the `AdditionalSecurityGroups` configuration for your head node and compute nodes.
 
-```
+```yaml
 HeadNode:
   ...
   Networking:

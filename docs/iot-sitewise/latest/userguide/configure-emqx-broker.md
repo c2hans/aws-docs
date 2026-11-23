@@ -48,7 +48,7 @@ After completing this procedure, we highly recommend configuring authorization r
 ------
 #### [ Linux ]
 
-   ```
+   ```json
    {
        "emqxConfig": {
            "authorization": {
@@ -100,7 +100,7 @@ After completing this procedure, we highly recommend configuring authorization r
 ------
 #### [ Windows ]
 
-   ```
+   ```json
    {
        "emqxConfig": {
            "authorization": {

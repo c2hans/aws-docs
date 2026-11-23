@@ -15,7 +15,7 @@ To delete a fleet, run the following command.
 
 Replace {{fleet-id}} with the ID of the fleet that you're deleting.
 
-```
+```bash
 aws iotfleetwise delete-fleet --fleet-id {{fleet-id}}
 ```
 
@@ -26,7 +26,7 @@ You can use the [ListFleets](https://docs.aws.amazon.com/iot-fleetwise/latest/AP
 
 To retrieve a paginated list of summaries of all fleets, run the following command.
 
-```
+```bash
 aws iotfleetwise list-fleets
 ```
 
@@ -37,7 +37,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

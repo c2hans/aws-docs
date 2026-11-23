@@ -6,7 +6,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 # `get_image_log_events`
 
-```
+```python
 get_image_log_events(image_id, log_stream_name, region, next_token, start_from_head, limit, start_time, end_time)
 ```
 

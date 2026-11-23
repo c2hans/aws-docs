@@ -30,13 +30,13 @@ TIMESTAMP
 ## Example
 <a name="ADD_MONTHS-example"></a>
 
-The following query uses the ADD\_MONTHS function inside a TRUNC function. The TRUNC function removes the time of day from the result of ADD\_MONTHS. The ADD\_MONTHS function adds 12 months to each value from the CALDATE column.
+The following query adds 12 months to each value from the CALDATE column.
 
 ```
-select distinct trunc(add_months(caldate, 12)) as calplus12,
-trunc(caldate) as cal
-from date
-order by 1 asc;
+SELECT DISTINCT ADD_MONTHS(caldate, 12) AS calplus12,
+    caldate AS cal
+FROM date
+ORDER BY 1 ASC;
 
  calplus12  |    cal
 ------------+------------

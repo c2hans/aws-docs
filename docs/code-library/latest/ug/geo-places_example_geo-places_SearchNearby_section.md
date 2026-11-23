@@ -14,7 +14,7 @@ The following code example shows how to use `SearchNearby`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 
-```
+```java
     /**
      * Performs a nearby places search based on the provided geographic coordinates (latitude and longitude).
      * The method sends an asynchronous request to search for places within a 1-kilometer radius of the specified location.

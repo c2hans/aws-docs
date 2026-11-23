@@ -64,7 +64,7 @@ This command uses the [`aws ds`](https://docs.aws.amazon.com/cli/latest/referenc
 **To reset an AWS Managed Microsoft AD user's password with the AWS CLI**
 +  To reset a user's password, open the AWS CLI, and run the following command with your Directory ID, username, and password:
 
-```
+```bash
 aws ds reset-user-password \
   --directory-id {{d-1234567890}} \
   --user-name "{{jane.doe}}" \
@@ -84,7 +84,7 @@ This command uses the [`AWS.Tools.DirectoryService`](https://docs.aws.amazon.com
 **To reset an AWS Managed Microsoft AD user's password with AWS Tools for PowerShell**
 +  To reset a user's password, open PowerShell, and run the following command with your Directory ID, username, and password:
 
-```
+```ps
 Reset-DSUserPassword `
     -DirectoryId {{d-1234567890}} `
     -UserName "{{jane.doe}}" `

@@ -15,19 +15,19 @@ Not all services are immediately available in the SDK. To find out which service
 
 The preferred way to install the AWS SDK for JavaScript for Node.js is to use [npm, the Node.js package manager](https://www.npmjs.com/). To do so, type this at the command line.
 
-```
+```javascript
 npm install aws-sdk
 ```
 
 In the event you see this error message:
 
-```
+```javascript
 npm WARN deprecated node-uuid@1.4.8: Use uuid module instead
 ```
 
 Type these commands at the command line:
 
-```
+```sh
 npm uninstall --save node-uuid
 npm install --save uuid
 ```
@@ -50,6 +50,6 @@ You can download minified and non-minified distributable versions of the current
 
 [Bower](https://bower.io) is a package manager for the web. After you install Bower, you can use it to install the SDK. To install the SDK using Bower, type the following into a terminal window:
 
-```
+```javascript
 bower install aws-sdk-js
 ```

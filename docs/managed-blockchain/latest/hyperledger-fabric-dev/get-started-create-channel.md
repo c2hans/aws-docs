@@ -226,7 +226,7 @@ Profiles:
 
 Run the following command to generate the configtx peer block:
 
-```
+```bash
 docker exec cli configtxgen \
 -outputCreateChannelTx /opt/home/mychannel.pb \
 -profile OneOrgChannel -channelID mychannel \
@@ -241,13 +241,13 @@ Hyperledger Fabric 2.2 requires that a channel ID contain only lowercase ASCII a
 
 Set the `$ORDERER` environment variable for convenience. Replace {{orderer.n-MWY63ZJZU5HGNCMBQER7IN6OIU.managedblockchain.{{MyRegion}}.amazonaws.com:{{30001}}}} with the `OrderingServiceEndpoint` returned by the `aws managedblockchain get-network` command and listed on the network details page of the AMB Access console. Replace `{{MyRegion}}` with the AWS Region you are using—for example, `us-east-1`.
 
-```
+```bash
 export ORDERER={{orderer.n-MWY63ZJZU5HGNCMBQER7IN6OIU.managedblockchain.{{MyRegion}}.amazonaws.com:{{30001}}}}
 ```
 
 This variable must be exported each time you log out of the client. To persist the variable across sessions, add the export statement to your `~/.bash_profile` as shown in the following example.
 
-```
+```bash
 # .bash_profile
 {{...other configurations}}
 export ORDERER={{orderer.n-MWY63ZJZU5HGNCMBQER7IN6OIU.managedblockchain.{{MyRegion}}.amazonaws.com:{{30001}}}}
@@ -255,7 +255,7 @@ export ORDERER={{orderer.n-MWY63ZJZU5HGNCMBQER7IN6OIU.managedblockchain.{{MyRegi
 
 After updating `.bash_profile`, apply the changes:
 
-```
+```bash
 source ~/.bash_profile
 ```
 
@@ -264,7 +264,7 @@ source ~/.bash_profile
 
 Run the following command to create a channel using the variables that you established and the configtx peer block that you created:
 
-```
+```bash
 docker exec cli peer channel create -c mychannel \
 -f /opt/home/mychannel.pb -o $ORDERER \
 --cafile /opt/home/managedblockchain-tls-chain.pem --tls
@@ -278,7 +278,7 @@ It may take a minute or two after you enroll an administrative user for you to b
 
 Run the following command to join the peer node that you created earlier to the channel:
 
-```
+```bash
 docker exec cli peer channel join -b mychannel.block \
 -o $ORDERER --cafile /opt/home/managedblockchain-tls-chain.pem --tls
 ```

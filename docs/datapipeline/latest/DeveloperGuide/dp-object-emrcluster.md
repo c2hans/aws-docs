@@ -70,7 +70,7 @@ s3://datapipeline-{{MyRegion}}/{{MyRegion}}/bootstrap-actions/latest/TaskRunner/
 
 The following example specifies a bootstrap action that copies two Jar files in Amazon S3: `my-jar-file.jar` and the `emr-dynamodb-tool-4.14.0-jar-with-dependencies.jar`. The Region used in the example is us-west-2.
 
-```
+```json
 {
   "id" : "{{MyEmrCluster}}",
   "type" : "EmrCluster",

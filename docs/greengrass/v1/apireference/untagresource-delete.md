@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="untagresource-delete-cli"></a>
 
-```
+```bash
 aws greengrass untag-resource  \
   --resource-arn <value> \
   --tag-keys <value> \
@@ -25,7 +25,7 @@ aws greengrass untag-resource  \
 
 cli-input-json format:
 
-```
+```json
 {
 "ResourceArn": "string",
 "TagKeys": [
@@ -57,7 +57,7 @@ HTTP Status Code 204: Successful response.
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

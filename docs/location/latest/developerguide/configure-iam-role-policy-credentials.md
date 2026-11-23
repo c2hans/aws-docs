@@ -24,7 +24,7 @@ Create an IAM policy that grants the permissions required for Amazon Location jo
 
 1. Choose the **JSON** tab and enter the following policy document, replacing {{INPUT\_BUCKET\_NAME}} and {{OUTPUT\_BUCKET\_NAME}} with your bucket names:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -79,7 +79,7 @@ This policy follows the principle of least privilege by granting only the permis
 
 1. Create a file named `location-jobs-policy.json` with the following content, replacing {{INPUT\_BUCKET\_NAME}} and {{OUTPUT\_BUCKET\_NAME}} with your bucket names:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -137,7 +137,7 @@ The trust policy allows the Amazon Location service (`geo.amazonaws.com`) to ass
 
 1. Enter the following trust policy, replacing {{ACCOUNT\_ID}} with your AWS account ID:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -171,7 +171,7 @@ The trust policy allows the Amazon Location service (`geo.amazonaws.com`) to ass
 
 1. Create a file named `trust-policy.json` with the following content, replacing {{ACCOUNT\_ID}} with your AWS account ID:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [

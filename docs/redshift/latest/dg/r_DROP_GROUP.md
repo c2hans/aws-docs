@@ -28,7 +28,7 @@ Name of the user group to delete.
 
 The following example deletes the `guests` user group:
 
-```
+```sql
 DROP GROUP guests;
 ```
 
@@ -40,7 +40,7 @@ ERROR: group "guests" can't be dropped because the group has a privilege on some
 
 If the group has privileges for an object, you must revoke the privileges before dropping the group. To find the objects that the `guests` group has privileges for, use the following example. For more information about the metadata view used in the example, see [SVV\_RELATION\_PRIVILEGES](https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_RELATION_PRIVILEGES.html).
 
-```
+```sql
 SELECT DISTINCT namespace_name, relation_name, identity_name, identity_type
 FROM svv_relation_privileges
 WHERE identity_type='group' AND identity_name='guests';
@@ -56,7 +56,7 @@ WHERE identity_type='group' AND identity_name='guests';
 
 The following example revokes all privileges on all tables in the `public` schema from the `guests` user group, and then drops the group.
 
-```
+```sql
 REVOKE ALL ON ALL TABLES IN SCHEMA public FROM GROUP guests;
 DROP GROUP guests;
 ```

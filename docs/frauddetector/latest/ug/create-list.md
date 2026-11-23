@@ -47,7 +47,7 @@ If your list contains IP addresses, make sure to assign **IP\_ADDRESS** as the v
 
 The following example uses [CreateList](https://docs.aws.amazon.com/frauddetector/latest/api/API_CreateList.html) API operation to create an `allow_email_ids` list by providing a description, a variable type, and by adding four list entries.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

@@ -17,7 +17,7 @@ Create an IAM policy called `{{YourWorkspaceId}}DashboardPolicy` in the IAM Cons
 If you don't want to use the Grafana [Video Player panel](https://github.com/grafana/grafana-iot-twinmaker-app/blob/main/src/panels/video-player/README.md), create the policy using the following template.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -60,7 +60,7 @@ If you don’t want to group your videos, you can make them all accessible from 
 Create the policy with the following template:
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -147,7 +147,7 @@ This is the maximum permissive policy you can have on your dashboard role for an
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -227,7 +227,7 @@ To edit the trust policy of the dashboard role, you must give permission for the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

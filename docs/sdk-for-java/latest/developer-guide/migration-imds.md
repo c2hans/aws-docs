@@ -70,7 +70,7 @@ The following table shows the locations that the SDK checks to resolve the endpo
 
 When you explicitly set an endpoint by using the builder, that endpoint value takes priority over all other settings. When the following code executes, the `aws.ec2MetadataServiceEndpoint` system property and config file `ec2_metadata_service_endpoint` setting are ignored if they exist.
 
-```
+```java
 Ec2MetadataClient client = Ec2MetadataClient
   .builder()
   .endpoint(URI.create("{{endpoint.to.use}}"))
@@ -135,7 +135,7 @@ The following table lists the differing configuration options.
 
 The following example shows how you can configure the metadata client. This example configures the connection timeout and uses the Apache HTTP client.
 
-```
+```java
 SdkHttpClient httpClient = ApacheHttpClient.builder()
     .connectionTimeout(Duration.ofSeconds(1))
     .build();

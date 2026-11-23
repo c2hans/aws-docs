@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/us
 
 Use the service client's AWS SDK for JavaScript v3 method ( `ListTablesCommand` )to make the service call and manage asynchronous flow instead of using callbacks. The following example shows how to get the names of your Amazon DynamoDB tables in `us-west-2`.
 
-```
+```javascript
 import {
   DynamoDBClient,
   ListTablesCommand
@@ -33,7 +33,7 @@ This method fulfills this umbrella promise if and when the array of promises tha
 
 In the following example, an AWS Lambda function must make three asynchronous calls to Amazon DynamoDB but can only complete after the promises for each call are fulfilled.
 
-```
+```javascript
 const values = await Promise.all([firstPromise, secondPromise, thirdPromise]);
 
 console.log("Value 0 is " + values[0].toString);

@@ -43,12 +43,12 @@ For more information, see [Update the SSL negotiation configuration of your Clas
 **Tools for PowerShell V4**
 **Example 1: This example replaces the policies for the specified listener with the specified policy.**
 
-```
+```powershell
 Set-ELBLoadBalancerPolicyOfListener -LoadBalancerName my-load-balancer -LoadBalancerPort 443 -PolicyName my-SSLNegotiation-policy
 ```
 **Example 2: This example removes all policies associated with the specified listener.**
 
-```
+```powershell
 Set-ELBLoadBalancerPolicyOfListener -LoadBalancerName my-load-balancer -LoadBalancerPort 443
 ```
 +  For API details, see [SetLoadBalancerPoliciesOfListener](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -56,12 +56,12 @@ Set-ELBLoadBalancerPolicyOfListener -LoadBalancerName my-load-balancer -LoadBala
 **Tools for PowerShell V5**
 **Example 1: This example replaces the policies for the specified listener with the specified policy.**
 
-```
+```powershell
 Set-ELBLoadBalancerPolicyOfListener -LoadBalancerName my-load-balancer -LoadBalancerPort 443 -PolicyName my-SSLNegotiation-policy
 ```
 **Example 2: This example removes all policies associated with the specified listener.**
 
-```
+```powershell
 Set-ELBLoadBalancerPolicyOfListener -LoadBalancerName my-load-balancer -LoadBalancerPort 443
 ```
 +  For API details, see [SetLoadBalancerPoliciesOfListener](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

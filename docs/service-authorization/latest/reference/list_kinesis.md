@@ -244,10 +244,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Read
 
 - **   ReceiveQueueRecords  **
-  - **IAM action:**  [kinesis:ReceiveQueueRecords](#list_kinesis-action-ReceiveQueueRecords)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Read
+  - **IAM action:**  [kinesis:ReceiveQueueRecords](#list_kinesis-action-ReceiveQueueRecords)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [kinesis:ReceiveQueueRecords](#list_kinesis-action-ReceiveQueueRecords)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
 - **   RegisterStreamConsumer  **
   - **IAM action:**  [kinesis:RegisterStreamConsumer](#list_kinesis-action-RegisterStreamConsumer)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

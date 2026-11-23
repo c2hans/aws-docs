@@ -13,7 +13,7 @@ By default, a brand new IAM user has no permissions to do anything. An IAM admin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

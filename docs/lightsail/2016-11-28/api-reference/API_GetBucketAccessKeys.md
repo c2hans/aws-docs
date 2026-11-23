@@ -113,7 +113,7 @@ The following example returns the access keys for the bucket named `amzn-s3-demo
 #### Sample Request
 <a name="API_GetBucketAccessKeys_Example_1_Request"></a>
 
-```
+```http,https,json
 POST / HTTP/1.1
 Host: lightsail.us-west-2.amazonaws.com
 Accept-Encoding: identity
@@ -130,7 +130,7 @@ Content-Length: 49
 #### Sample Response
 <a name="API_GetBucketAccessKeys_Example_1_Response"></a>
 
-```
+```http,https,json
 HTTP/1.1 200 OK
 Server: Server
 Date: Wed, 16 Jun 2021 14:33:07 GMT

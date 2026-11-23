@@ -4,13 +4,19 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_DescribeVo
 
 # DescribeVoices
 
-Returns the list of voices that are available for use when requesting speech synthesis. Each voice speaks a specified language, is either male or female, and is identified by an ID, which is the ASCII version of the voice name.
+Returns the list of voices: the voices that Amazon Polly provides and the custom voices in your account. Each voice speaks a specified language and is identified by an ID. A voice that Amazon Polly provides is either male or female, and its ID is the ASCII version of the voice name.
 
-When synthesizing speech ( `SynthesizeSpeech` ), you provide the voice ID for the voice you want from the list of voices returned by `DescribeVoices`.
+When synthesizing speech (`SynthesizeSpeech`), you provide the voice ID for the voice you want from the list of voices returned by `DescribeVoices`.
 
-For example, you want your news reader application to read news in a specific language, but giving a user the option to choose the voice. Using the `DescribeVoices` operation you can provide the user with a list of available voices to select from.
+For example, your news reader application reads news in a specific language, and you want to give users the option to choose the voice. With the `DescribeVoices` operation, you can provide a list of available voices for users to choose from.
 
  You can optionally specify a language code to filter the available voices. For example, if you specify `en-US`, the operation returns a list of all available US English voices.
+
+The list includes custom voices in every status. For each voice, `Origin` indicates whether Amazon Polly provides the voice or you created it. You can use a custom voice for synthesis only when its status is `active`. A voice in `failed` status stays in the list until you delete it.
+
+For a custom voice, `DescribeVoices` returns `Origin`, `Id`, `Name`, `Status`, `LanguageCode`, `LanguageName`, `SupportedEngines`, and `CreationTime`. To get `Arn`, `StatusReason`, `VoiceCreationData`, and `CustomerManagedEncryption`, use `GetVoice`.
+
+The `LanguageCode` and `Engine` filters apply to custom voices in the same way as to voices that Amazon Polly provides.
 
 This operation requires permissions to perform the `polly:DescribeVoices` action.
 
@@ -58,12 +64,34 @@ Content-type: application/json
    "Voices": [
       {
          "AdditionalLanguageCodes": [ "string" ],
+         "Arn": "string",
+         "CreationTime": number,
+         "CustomerManagedEncryption": {
+            "EncryptionContext": {
+               "string" : "string"
+            },
+            "KmsKeyArn": "string"
+         },
          "Gender": "string",
          "Id": "string",
          "LanguageCode": "string",
          "LanguageName": "string",
          "Name": "string",
-         "SupportedEngines": [ "string" ]
+         "Origin": "string",
+         "Status": "string",
+         "StatusReason": "string",
+         "SupportedEngines": [ "string" ],
+         "VoiceCreationData": {
+            "Recordings": [
+               {
+                  "Data": {
+                     "Bytes": blob,
+                     "S3Url": "string"
+                  },
+                  "Format": "string"
+               }
+            ]
+         }
       }
    ]
 }

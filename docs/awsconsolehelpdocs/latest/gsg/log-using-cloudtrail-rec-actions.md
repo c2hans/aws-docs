@@ -24,7 +24,7 @@ An event represents a single request from any source and includes information ab
 
 The following example shows a CloudTrail event that demonstrates the operation.
 
-```
+```JSON
 {
   "awsRegion": "us-east-2",
   "eventCategory": "Management",

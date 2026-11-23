@@ -31,7 +31,7 @@ You can use the AWS CLI or the Amazon Location APIs.
 
 The following example is a `CalculateRoute` request using the route calculator resource {{ExampleCalculator}}. The request specifies calculating a route from a departure position [{{-122.7565}}, {{49.0021}}] to a destination position [{{-122.3394}}, {{47.6159}}].
 
-```
+```json
 POST /routes/v0/calculators/{{ExampleCalculator}}/calculate/route
 Content-type: application/json
 {
@@ -60,7 +60,7 @@ By default, the response returns `Distance` in kilometers. You can change the un
 
 **Example**
 
-```
+```json
 POST /routes/v0/calculators/ExampleCalculator/calculate/route
 Content-type: application/json
 {
@@ -87,7 +87,7 @@ The following `[CalculateRoute](https://docs.aws.amazon.com/location/previous/AP
 + To include the leg linestring geometry between these two waypoints, set the following optional parameter to {{true}}:
   + `IncludeLegGeometry` – Includes the geometry of each path between a pair of positions in the response.
 
-```
+```json
 POST /routes/v0/calculators/ExampleCalculator/calculate/route
 Content-type: application/json
 {
@@ -109,7 +109,7 @@ The following is an example request with the corresponding response when calling
 ------
 #### [ Example request ]
 
-```
+```json
 POST /routes/v0/calculators/ExampleCalculator/calculate/route
 Content-type: application/json
 {
@@ -122,7 +122,7 @@ Content-type: application/json
 ------
 #### [ Example response ]
 
-```
+```json
 {
    "Legs": [
       {

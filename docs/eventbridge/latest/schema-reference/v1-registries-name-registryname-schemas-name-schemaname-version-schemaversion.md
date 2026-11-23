@@ -65,7 +65,7 @@ Delete the schema version definition
 #### ErrorOutput schema
 <a name="v1-registries-name-registryname-schemas-name-schemaname-version-schemaversion-response-body-erroroutput-example"></a>
 
-```
+```json
 {
   "Message": "string",
   "Code": "string"

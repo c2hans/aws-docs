@@ -38,7 +38,7 @@ For more information, see [Getting credential reports for your AWS account](http
 **Tools for PowerShell V4**
 **Example 1: This example requests generation of a new report, which can be done every four hours. If the last report is still recent the State field reads `COMPLETE`. Use `Get-IAMCredentialReport` to view the completed report.**
 
-```
+```powershell
 Request-IAMCredentialReport
 ```
 **Output:**
@@ -53,7 +53,7 @@ No report exists. Starting a new report generation task        STARTED
 **Tools for PowerShell V5**
 **Example 1: This example requests generation of a new report, which can be done every four hours. If the last report is still recent the State field reads `COMPLETE`. Use `Get-IAMCredentialReport` to view the completed report.**
 
-```
+```powershell
 Request-IAMCredentialReport
 ```
 **Output:**
@@ -71,7 +71,7 @@ No report exists. Starting a new report generation task        STARTED
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def generate_credential_report():
     """
     Starts generation of a credentials report about the current account. After
@@ -99,7 +99,7 @@ def generate_credential_report():
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_iam->generatecredentialreport( ).
         MESSAGE 'Credential report generation started.' TYPE 'I'.

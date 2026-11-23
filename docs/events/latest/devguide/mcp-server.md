@@ -24,7 +24,7 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/mcp-server.html
 
  Add the server to your MCP configuration file:
 
-```
+```json
 {
   "mcpServers": {
     "awsevents": {
@@ -44,7 +44,7 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/mcp-server.html
 ### Claude Code
 <a name="mcp-connecting-claude-code"></a>
 
-```
+```bash
 claude mcp add --transport http --scope user awsevents \
   https://api.awsevents.com/mcp \
   --callback-port 8484 --client-id 7vmom55m1qstvq8i71ph127bfq

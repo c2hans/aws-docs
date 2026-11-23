@@ -29,7 +29,7 @@ For more information, see [Tagging Auto Scaling groups and instances](https://do
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified tag from the specified Auto Scaling group. You are prompted for confirmation before the operation proceeds. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Remove-ASTag -Tag @( @{ResourceType="auto-scaling-group"; ResourceId="my-asg"; Key="myTag" } )
 ```
 **Output:**
@@ -42,12 +42,12 @@ Performing the operation "Remove-ASTag (DeleteTags)" on target "Amazon.AutoScali
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASTag -Tag @( @{ResourceType="auto-scaling-group"; ResourceId="my-asg"; Key="myTag" } ) -Force
 ```
 **Example 3: With Powershell version 2, you must use New-Object to create the tag for the Tag parameter.**
 
-```
+```powershell
 $tag = New-Object Amazon.AutoScaling.Model.Tag
 $tag.ResourceType = "auto-scaling-group"
 $tag.ResourceId = "my-asg"
@@ -59,7 +59,7 @@ Remove-ASTag -Tag $tag -Force
 **Tools for PowerShell V5**
 **Example 1: This example removes the specified tag from the specified Auto Scaling group. You are prompted for confirmation before the operation proceeds. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Remove-ASTag -Tag @( @{ResourceType="auto-scaling-group"; ResourceId="my-asg"; Key="myTag" } )
 ```
 **Output:**
@@ -72,12 +72,12 @@ Performing the operation "Remove-ASTag (DeleteTags)" on target "Amazon.AutoScali
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASTag -Tag @( @{ResourceType="auto-scaling-group"; ResourceId="my-asg"; Key="myTag" } ) -Force
 ```
 **Example 3: With Powershell version 2, you must use New-Object to create the tag for the Tag parameter.**
 
-```
+```powershell
 $tag = New-Object Amazon.AutoScaling.Model.Tag
 $tag.ResourceType = "auto-scaling-group"
 $tag.ResourceId = "my-asg"

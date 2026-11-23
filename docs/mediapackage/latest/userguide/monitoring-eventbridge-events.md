@@ -28,7 +28,7 @@ You get harvest job status events when you export a clip from a live stream to c
 
 **Example Successful harvest job event**
 
-```
+```json
 {
    "id": "8f9b8e72-0b31-e883-f19c-aec84742f3ce",
    "detail-type": "MediaPackageV2 HarvestJob Notification",
@@ -85,7 +85,7 @@ You get harvest job status events when you export a clip from a live stream to c
 
 **Example Failed harvest job event**
 
-```
+```json
 {
    "id": "8f9b8e72-0b31-e883-f19c-aec84742f3ce",
    "detail-type": "MediaPackageV2 HarvestJob Notification",

@@ -10,13 +10,13 @@ To collect diagnostic reports, you can run the CodeBuild project manually. A dia
 
 Run the diagnostics tool AWS CodeBuild project by running the following AWS CLI command:
 
-```
+```bash
 aws codebuild start-build --project-name $[ACCELERATOR_PREFIX]-DiagnosticProject
 ```
 
 This command will override the default value for the `DAYS\_PIPELINE\_IN\_FAILED\_STATUS `variable for the run only, and will not update the CodeBuild project definition.
 
-```
+```bash
 aws codebuild start-build --project-name $[ACCELERATOR_PREFIX]-DiagnosticProject --environment-variables-override name=DAYS_PIPELINE_IN_FAILED_STATUS,value=2
 ```
 

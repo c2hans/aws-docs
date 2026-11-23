@@ -41,7 +41,7 @@ For more information, see [Evaluating Your Resources with AWS Config Rules](http
 **Tools for PowerShell V4**
 **Example 1: This sample returns the status information for the given config rules. **
 
-```
+```powershell
 Get-CFGConfigRuleEvaluationStatus -ConfigRuleName root-account-mfa-enabled, vpc-flow-logs-enabled
 ```
 **Output:**
@@ -76,7 +76,7 @@ LastSuccessfulInvocationTime : 12/13/2019 7:12:01 AM
 **Tools for PowerShell V5**
 **Example 1: This sample returns the status information for the given config rules. **
 
-```
+```powershell
 Get-CFGConfigRuleEvaluationStatus -ConfigRuleName root-account-mfa-enabled, vpc-flow-logs-enabled
 ```
 **Output:**

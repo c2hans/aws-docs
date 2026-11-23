@@ -11,7 +11,7 @@ Collect the results of your inference recommendation job programmatically with A
 
 Once an inference recommendation is complete, you can use `DescribeInferenceRecommendationsJob` to get the job details and recommendations. Provide the job name that you used when you created the inference recommendation job.
 
-```
+```python
 job_name={{'<INSERT>'}}
 response = sagemaker_client.describe_inference_recommendations_job(
                     JobName=job_name)
@@ -19,13 +19,13 @@ response = sagemaker_client.describe_inference_recommendations_job(
 
 Print the response object. The previous code sample stored the response in a variable named `response`.
 
-```
+```python
 print(response['Status'])
 ```
 
 This returns a JSON response similar to the following example. Note that this example shows the recommended instance types for real-time inference (for an example showing serverless inference recommendations, see the example after this one).
 
-```
+```python
 {
     'JobName': {{'job-name'}},
     'JobDescription': {{'job-description'}},
@@ -116,7 +116,7 @@ The `Metrics` nested dictionary contains information about the estimated cost pe
 
 The following example shows the `InferenceRecommendations` part of the response for an inference recommendations job configured to return serverless inference recommendations:
 
-```
+```json
 "InferenceRecommendations": [
       {
          "EndpointConfiguration": {
@@ -157,7 +157,7 @@ You can interpret the recommendations for serverless inference similarly to the 
 
 Once an inference recommendation is complete, you can use `describe-inference-recommendations-job` to get the job details and recommended instance types. Provide the job name that you used when you created the inference recommendation job.
 
-```
+```bash
 aws sagemaker describe-inference-recommendations-job\
     --job-name {{<job-name>}}\
     --region {{<aws-region>}}
@@ -165,7 +165,7 @@ aws sagemaker describe-inference-recommendations-job\
 
 The JSON response similar should resemble the following example. Note that this example shows the recommended instance types for real-time inference (for an example showing serverless inference recommendations, see the example after this one).
 
-```
+```bash
 {
     'JobName': {{'job-name'}},
     'JobDescription': {{'job-description'}},
@@ -256,7 +256,7 @@ The `Metrics` nested dictionary contains information about the estimated cost pe
 
 The following example shows the `InferenceRecommendations` part of the response for an inference recommendations job configured to return serverless inference recommendations:
 
-```
+```json
 "InferenceRecommendations": [
       {
          "EndpointConfiguration": {

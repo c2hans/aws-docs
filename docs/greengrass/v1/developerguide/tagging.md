@@ -96,7 +96,7 @@ If you use tags to control access to resources, you should also manage the permi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -133,7 +133,7 @@ To allow users to tag on create, you must give them appropriate permissions. The
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -165,7 +165,7 @@ To allow users to tag on create, you must give them appropriate permissions. The
 
 The following snippet shows how you can specify multiple tag values for a tag key by enclosing them in a list:
 
-```
+```json
 "StringEquals" : {
     "greengrass:ResourceTag/env" : ["dev", "test"]
 }

@@ -41,7 +41,7 @@ The migration tool automatically migrates most methods from V1 to V2. The `putOb
 ### `putObject`
 <a name="V1-V2-putobject"></a>
 
-```
+```java
 // SDK V1
 s3Client.putObject("amzn-s3-demo-bucket", "my-key", "Hello World!");
 
@@ -55,7 +55,7 @@ s3Client.putObject(req -> req
 ### `getObject`
 <a name="V1-V2-getobject"></a>
 
-```
+```java
 // SDK V1
 S3Object object = s3Client.getObject("amzn-s3-demo-bucket", "my-key");
 InputStream content = object.getObjectContent();
@@ -72,7 +72,7 @@ When migrating from SDK for Java 1.x, manually update code that uses `GZIPInputS
 ### `getObject` to a file
 <a name="V1-V2-getobject-to-file"></a>
 
-```
+```java
 // SDK V1
 // V1 automatically creates parent directories if they don't exist.
 ObjectMetadata metadata = s3Client.getObject(
@@ -98,7 +98,7 @@ You need to manually migrate the following V1 S3 client methods. When you use th
 ### V1's `getObject` using V1's `S3ObjectId` to V2's `GetObjectRequest.builder()`
 <a name="V1s-getObject-using-V1s-S3ObjectId"></a>
 
-```
+```java
 // SDK V1
 AmazonS3 s3ClientV1 = AmazonS3ClientBuilder.standard()
         .withRegion(Regions.US_WEST_2)
@@ -132,7 +132,7 @@ ResponseInputStream<GetObjectResponse> response = s3Client.getObject(getRequest)
 ### V1's `getETag()` using V1's `ObjectMetadata` to V2's `GetObjectResponse.eTag()`
 <a name="V1s-ObjectMetadata-using-V1s-getETag"></a>
 
-```
+```java
 // SDK V1
 AmazonS3 s3ClientV1 = AmazonS3ClientBuilder.standard()
     .withRegion(Regions.US_WEST_2)
@@ -158,7 +158,7 @@ System.out.println(response.response().eTag());
 ### V1's `listNextBatchOfObjects` to V2's `listObjectsV2Paginator`
 <a name="V1-listNextBatchOfObjects"></a>
 
-```
+```java
 // SDK V1
 AmazonS3 s3ClientV1 = AmazonS3ClientBuilder.standard()
     .withRegion(Regions.US_WEST_2)
@@ -194,7 +194,7 @@ for (ListObjectsV2Response page : responses) {
 ### V1's `listNextBatchOfVersions` to V2's `listObjectVersionsPaginator`
 <a name="V1-listNextBatchOfVersions"></a>
 
-```
+```java
 // SDK V1
 AmazonS3 s3ClientV1 = AmazonS3ClientBuilder.standard()
     .withRegion(Regions.US_WEST_2)
@@ -231,7 +231,7 @@ for (ListObjectVersionsResponse page : responses) {
 ### `selectObjectContent`
 <a name="V1-selectObjectContent"></a>
 
-```
+```java
 // SDK V1
 AmazonS3 s3ClientV1 = AmazonS3ClientBuilder.standard()
     .withRegion(Regions.US_WEST_2)
@@ -271,7 +271,7 @@ CompletableFuture<Void> future = s3ClientV2.selectObjectContent(request, handler
 ### V1's `setBucketAcl` to V2's `acl` method on `PutBucketAclRequest.builder()`
 <a name="V1-setBucketAcl"></a>
 
-```
+```java
 // SDK V1
 AmazonS3 s3ClientV1 = AmazonS3ClientBuilder.standard()
     .withRegion(Regions.US_WEST_2)
@@ -297,7 +297,7 @@ s3ClientV2.putBucketAcl(request);
 ### V1's `setObjectAcl` to V2's `acl` method on `PutObjectAclRequest.builder()`
 <a name="V1-setObjectAcl"></a>
 
-```
+```java
 // SDK V1
 AmazonS3 s3ClientV1 = AmazonS3ClientBuilder.standard()
     .withRegion(Regions.US_WEST_2)
@@ -327,7 +327,7 @@ s3ClientV2.putObjectAcl(request);
 #### Example migration
 <a name="V1-initiateMultipartUpload-migration-ex"></a>
 
-```
+```java
 // SDK V1
 AmazonS3 s3ClientV1 = AmazonS3ClientBuilder.standard()
     .withRegion(Regions.US_WEST_2)
@@ -376,7 +376,7 @@ The default `Content-Type` header value for the following methods differ as show
 ### V1's `setRegion` to V2's `region` method on client builder
 <a name="V1-setRegion"></a>
 
-```
+```java
 // SDK V1
 AmazonS3 s3ClientV1 = AmazonS3ClientBuilder.standard().build();
 s3ClientV1.setRegion(Region.getRegion(Regions.US_WEST_2));
@@ -395,7 +395,7 @@ Instead of using a single `S3ClientOptions` object with the `setS3ClientOptions`
 ### V1's `setBucketLoggingConfiguration` to V2's `putBucketLogging`
 <a name="V1-setBucketLoggingConfiguration"></a>
 
-```
+```java
 // SDK V1
 AmazonS3 s3ClientV1 = AmazonS3ClientBuilder.standard()
     .withRegion(Regions.US_WEST_2)
@@ -437,7 +437,7 @@ s3ClientV2.putBucketLogging(request);
 ### V1's `setBucketLifecycleConfiguration` to V2's `putBucketLifecycleConfiguration`
 <a name="V1-setBucketLifecycleConfiguration"></a>
 
-```
+```java
 // SDK V1
 BucketLifecycleConfiguration.Rule rule = new BucketLifecycleConfiguration.Rule()
     .withId("Archive and Delete Rule")
@@ -493,7 +493,7 @@ s3ClientV2.putBucketLifecycleConfiguration(request);
 ### V1's `setBucketTaggingConfiguration` to V2's `putBucketTagging`
 <a name="V1-setBucketTaggingConfiguration"></a>
 
-```
+```java
 // SDK V1
 List<TagSet> tagsets = new ArrayList<>();
 TagSet tagSet = new TagSet();
@@ -539,7 +539,7 @@ s3ClientV2.putBucketTagging(request);
 ### V1's `AccessControlList` to V2's `AccessControlPolicy`
 <a name="V1-AccessControlList"></a>
 
-```
+```java
 // SDK V1
 AccessControlList aclV1 = new AccessControlList();
 aclV1.setOwner(new Owner("owner-id", "owner-name"));
@@ -569,7 +569,7 @@ AccessControlPolicy acpV2 = AccessControlPolicy.builder()
 ### V1's `CannedAccessControlList` enum to V2's `BucketCannedACL` and `ObjectCannedACL` enums
 <a name="V1-CannedAccessControlList"></a>
 
-```
+```java
 // SDK V1
 // In V1, 'CannedAccessControlList' is an enumeration of predefined ACLs.
 AmazonS3 s3ClientV1 = AmazonS3ClientBuilder.standard().build();
@@ -605,7 +605,7 @@ s3ClientV2.putObject(objectRequest, RequestBody.fromFile(file));
 ### V1's `BucketNotificationConfiguration` to V2's `NotificationConfiguration`
 <a name="V1-BucketNotificationConfiguration"></a>
 
-```
+```java
 //SDK V1
 BucketNotificationConfiguration notificationConfig = new BucketNotificationConfiguration();
 
@@ -650,7 +650,7 @@ s3Client.putBucketNotificationConfiguration(req -> req
 ### V1's `MultiFactorAuthentication` to V2's `mfa` method on a request builder
 <a name="V1-MultifactorAuthentication"></a>
 
-```
+```java
 // SDK V1
 AmazonS3 s3ClientV1 = AmazonS3ClientBuilder.standard()
     .withRegion(Regions.US_WEST_2)

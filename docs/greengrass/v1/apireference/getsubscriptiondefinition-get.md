@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="getsubscriptiondefinition-get-cli"></a>
 
-```
+```bash
 aws greengrass get-subscription-definition \
   --subscription-definition-id <value>  \
   [--cli-input-json <value>] \
@@ -24,7 +24,7 @@ aws greengrass get-subscription-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "SubscriptionDefinitionId": "string"
 }
@@ -45,7 +45,7 @@ type: string
 
  [ DefinitionInformation](definitions-definitioninformation.md)
 
-```
+```json
 {
 "Name": "string",
 "Id": "string",
@@ -94,7 +94,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

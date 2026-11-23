@@ -8,6 +8,7 @@ Additional information that's used by a managed rule group. Many managed rule gr
 
 The rule groups used for intelligent threat mitigation require additional configuration:
 + Use the `AWSManagedRulesACFPRuleSet` configuration object to configure the account creation fraud prevention managed rule group. The configuration includes the registration and sign-up pages of your application and the locations in the account creation request payload of data, such as the user email and phone number fields.
++ Use the `AWSManagedRulesAISecurityRuleSet` configuration object to configure the AI security managed rule group. The configuration specifies whether the rule group uses Amazon Bedrock Guardrails to inspect web requests, or web requests and responses, and the IAM role that AWS WAF uses to call Amazon Bedrock Guardrails.
 + Use the `AWSManagedRulesAntiDDoSRuleSet` configuration object to configure the anti-DDoS managed rule group. The configuration includes the sensitivity levels to use in the rules that typically block and challenge requests that might be participating in DDoS attacks and the specification to use to indicate whether a request can handle a silent browser challenge.
 + Use the `AWSManagedRulesATPRuleSet` configuration object to configure the account takeover prevention managed rule group. The configuration includes the sign-in page of your application and the locations in the login request payload of data such as the username and password.
 + Use the `AWSManagedRulesBotControlRuleSet` configuration object to configure the protection level that you want the Bot Control rule group to use.
@@ -21,6 +22,12 @@ For example specifications, see the examples section of [CreateWebACL](API_Creat
 Additional configuration for using the account creation fraud prevention (ACFP) managed rule group, `AWSManagedRulesACFPRuleSet`. Use this to provide account creation request information to the rule group. For web ACLs that protect CloudFront distributions, use this to also provide the information about how your distribution responds to account creation requests.
 For information about using the ACFP managed rule group, see [AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.html) and [AWS WAF Fraud Control account creation fraud prevention (ACFP)](https://docs.aws.amazon.com/waf/latest/developerguide/waf-acfp.html) in the * AWS WAF Developer Guide*.
 Type: [AWSManagedRulesACFPRuleSet](API_AWSManagedRulesACFPRuleSet.md) object
+Required: No
+
+ ** AWSManagedRulesAISecurityRuleSet **   <a name="WAF-Type-ManagedRuleGroupConfig-AWSManagedRulesAISecurityRuleSet"></a>
+Additional configuration for using the AI security managed rule group, `AWSManagedRulesAISecurityRuleSet`. Use this to specify whether the rule group uses Amazon Bedrock Guardrails to inspect web requests, or web requests and responses.
+For information about the AWS Managed Rules rule groups, see [AWS Managed Rules rule groups list](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-list) in the * AWS WAF Developer Guide*.
+Type: [AWSManagedRulesAISecurityRuleSet](API_AWSManagedRulesAISecurityRuleSet.md) object
 Required: No
 
  ** AWSManagedRulesAntiDDoSRuleSet **   <a name="WAF-Type-ManagedRuleGroupConfig-AWSManagedRulesAntiDDoSRuleSet"></a>

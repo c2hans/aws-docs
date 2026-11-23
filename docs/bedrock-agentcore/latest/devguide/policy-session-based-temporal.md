@@ -44,7 +44,7 @@ For the accepted format and how the Gateway validates it, see [Header verificati
 
  **First request (creates the session):**
 
-```
+```bash
 curl -X POST \
   https://mygateway-abcdefghij.gateway.bedrock-agentcore.us-west-2.amazonaws.com/mcp \
   -H "Content-Type: application/json" \
@@ -66,7 +66,7 @@ curl -X POST \
 
  **Subsequent requests (continue the session):**
 
-```
+```bash
 curl -X POST \
   https://mygateway-abcdefghij.gateway.bedrock-agentcore.us-west-2.amazonaws.com/mcp \
   -H "Content-Type: application/json" \
@@ -90,7 +90,7 @@ If your temporal policy limits each session to 1 transfer, the second request sh
 
  **Python example:**
 
-```
+```python
 import requests
 import uuid
 
@@ -207,7 +207,7 @@ Use the same session ID value across all calls in the same logical session. When
 
 When you use the MCP Python SDK with a streamable HTTP transport, include the session ID in the connection headers:
 
-```
+```python
 from mcp import ClientSession
 from mcp.client.streamable_http import streamablehttp_client
 import asyncio
@@ -238,7 +238,7 @@ result = asyncio.run(call_with_session(
 
 When you use Strands Agents with an AgentCore Gateway as the tool source, pass the session ID in the MCP client transport headers. All tool calls the agent makes during the session carry the same session, and temporal policies evaluate the full history.
 
-```
+```python
 from strands.tools.mcp.mcp_client import MCPClient
 from mcp.client.streamable_http import streamablehttp_client
 

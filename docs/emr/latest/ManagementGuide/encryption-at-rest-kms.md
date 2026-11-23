@@ -32,7 +32,7 @@ Below is the IAM policy needed for the EMR WAL client role:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -67,7 +67,7 @@ You need to give the EMR WAL client role and EMR WAL service `Decrypt` and `Gene
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

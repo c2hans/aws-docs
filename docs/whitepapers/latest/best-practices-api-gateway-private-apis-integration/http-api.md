@@ -33,12 +33,16 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-ga
 
 ![A diagram that shows HTTP API private integration with ALB.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/http-api.png)
 
+*HTTP API private integration with ALB *
+
 ### Cloud Map architecture (microservices)
 <a name="cloud-map-architecture-microservices"></a>
 
  With the AWS Cloud Map target option, you can use AWS Cloud Map to discover services like ECS and EC2-based services. Using AWS Cloud Map as a front-end service for microservices, you can leverage a private integration with an AWS Cloud Map target in HTTP APIs to route requests to different endpoints.
 
 ![A diagram that shows HTTP API private integration with Cloud Map.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/http-api-cloud-map.png)
+
+*HTTP API private integration with Cloud Map*
 
 ### Private integration cross-account
 <a name="private-integration-cross-account-1"></a>
@@ -49,11 +53,15 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-ga
 
 ![A diagram that shows HTTP private cross-account integration using AWS PrivateLink](https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/private-cross-account.png)
 
+*HTTP private cross-account integration using AWS PrivateLink*
+
  For more information and to deploy a code example, see the [Building private cross-account APIs using Amazon API Gateway and AWS PrivateLink blog](https://aws.amazon.com/blogs/compute/building-private-cross-account-apis-using-amazon-api-gateway-and-aws-privatelink/).
 
  With HTTP APIs, you can also use AWS Cloud Map to create a VPC link connection. In the following sample architecture, AWS Cloud Map is used to resolve private resources in another AWS account. The central API Gateway account and the resource account VPCs are connected using AWS Transit Gateway VPC attachments to provide private routing. Transit Gateway is an alternative to using VPC peering by providing a hub and spoke network design.
 
 ![A document that shows HTTP private cross-account integration using AWS Cloud Map and AWS Transit Gateway.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/private-cross-account2.png)
+
+*HTTP private cross-account integration using AWS Cloud Map and AWS Transit Gateway*
 
 **Note**
 AWS Cloud Map integration using [Amazon ECS service discovery](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html) does not support cross-account patterns. To implement the architecture shown in the previous diagram, you must [register cross-account ECS resources manually in the AWS Cloud Map namespace](https://docs.aws.amazon.com/cloud-map/latest/dg/registering-instances.html).

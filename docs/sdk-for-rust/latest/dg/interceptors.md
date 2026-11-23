@@ -8,7 +8,7 @@ You can use interceptors to hook into the execution of API requests and response
 
 The following example shows a simple interceptor that adds an additional header to all outgoing requests before the retry loop is entered:
 
-```
+```rust
 use std::borrow::Cow;
 use aws_smithy_runtime_api::client::interceptors::{
     Intercept,
@@ -64,7 +64,7 @@ You register interceptors when you construct a service client or when you overri
 
 To register an interceptor for the entire client, add the interceptor using the `Builder` pattern.
 
-```
+```rust
 let config = aws_config::defaults(BehaviorVersion::latest())
     .load()
     .await;
@@ -82,7 +82,7 @@ let s3 = aws_sdk_s3::Client::from_conf(s3_conf);
 
 To register an interceptor for only a single operation, use the `customize` extension. You can override your service client configurations at the per-operation level using this method. For more information on customizable operations, see [Overriding a single operation configuration of a client in the AWS SDK for Rust](peroperation.md).
 
-```
+```rust
 // Only the list_buckets operation will have the header added.
 s3.list_buckets()
     .customize()

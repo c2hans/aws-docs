@@ -26,7 +26,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 Run an interactive scenario demonstrating AWS IoT features.
 
-```
+```csharp
 /// <summary>
 /// Scenario class for AWS IoT basics.
 /// </summary>
@@ -862,7 +862,7 @@ public class IoTBasics
 ```
 A wrapper class for AWS IoT SDK methods.
 
-```
+```csharp
 /// <summary>
 /// Wrapper methods to use Amazon IoT Core with .NET.
 /// </summary>
@@ -1525,7 +1525,7 @@ public class IoTWrapper
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot/things_and_shadows_workflow#code-examples).
 Create an AWS IoT thing.
 
-```
+```cpp
     Aws::String thingName = askQuestion("Enter a thing name: ");
 
     if (!createThing(thingName, clientConfiguration)) {
@@ -1535,7 +1535,7 @@ Create an AWS IoT thing.
     }
 ```
 
-```
+```cpp
 //! Create an AWS IoT thing.
 /*!
   \param thingName: The name for the thing.
@@ -1563,7 +1563,7 @@ bool AwsDoc::IoT::createThing(const Aws::String &thingName,
 ```
 Generate and attach a device certificate.
 
-```
+```cpp
     Aws::String certificateARN;
     Aws::String certificateID;
     if (askYesNoQuestion("Would you like to create a certificate for your thing? (y/n) ")) {
@@ -1599,7 +1599,7 @@ Generate and attach a device certificate.
     }
 ```
 
-```
+```cpp
 //! Create keys and certificate for an Aws IoT device.
 //! This routine will save certificates and keys to an output folder, if provided.
 /*!
@@ -1702,7 +1702,7 @@ bool AwsDoc::IoT::attachThingPrincipal(const Aws::String &principal,
 ```
 Perform various operations on the AWS IoT thing.
 
-```
+```cpp
     if (!updateThing(thingName, { {"location", "Office"}, {"firmwareVersion", "v2.0"} }, clientConfiguration)) {
         std::cerr << "Exiting because updateThing failed." << std::endl;
         cleanup(thingName, certificateARN, certificateID, "", "", false,
@@ -1867,7 +1867,7 @@ Perform various operations on the AWS IoT thing.
     }
 ```
 
-```
+```cpp
 //! Update an AWS IoT thing with attributes.
 /*!
   \param thingName: The name for the thing.
@@ -2165,7 +2165,7 @@ bool AwsDoc::IoT::searchIndex(const Aws::String &query,
 ```
 Clean up resources.
 
-```
+```cpp
 bool
 AwsDoc::IoT::cleanup(const Aws::String &thingName, const Aws::String &certificateARN,
                      const Aws::String &certificateID, const Aws::String &stackName,
@@ -2205,7 +2205,7 @@ AwsDoc::IoT::cleanup(const Aws::String &thingName, const Aws::String &certificat
 }
 ```
 
-```
+```cpp
 //! Detach a principal from an AWS IoT thing.
 /*!
   \param principal: A principal to detach.
@@ -2337,7 +2337,7 @@ bool AwsDoc::IoT::deleteThing(const Aws::String &thingName,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 Run an interactive scenario demonstrating AWS IoT features.
 
-```
+```java
 import java.util.Scanner;
 
 /**
@@ -2566,7 +2566,7 @@ public class IotScenario {
 ```
 A wrapper class for AWS IoT SDK methods.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.EnvironmentVariableCredentialsProvider;
 import software.amazon.awssdk.core.SdkBytes;
 import software.amazon.awssdk.core.client.config.ClientOverrideConfiguration;
@@ -3236,7 +3236,7 @@ public class IotActions {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.iot.IotClient
 import aws.sdk.kotlin.services.iot.model.Action
 import aws.sdk.kotlin.services.iot.model.AttachThingPrincipalRequest
@@ -3766,7 +3766,7 @@ suspend fun createIoTThing(thingNameVal: String) {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 Create an IoT wrapper class to manage operations.
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -4153,7 +4153,7 @@ class IoTWrapper:
 ```
 Run an interactive scenario demonstrating IoT basics.
 
-```
+```python
 class IoTScenario:
     """Runs an interactive scenario that shows how to use AWS IoT."""
 

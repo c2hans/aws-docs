@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "apiToken": "{{API token value}}",
   "tokenUuid": "{{token UUID}}",
@@ -35,7 +35,7 @@ Your Jenkins instance URL (for example, `https://jenkins.example.com`). The URL 
 
 The following are the metadata fields for Jenkins API Token:
 
-```
+```json
 {
   "adminSecretArn": "arn:aws:secretsmanager:us-east-1:111122223333:secret:{{JenkinsAdmin}}"
 }

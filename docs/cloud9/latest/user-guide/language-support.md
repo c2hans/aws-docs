@@ -66,6 +66,6 @@ The table below outlines which versions of programming languages are supported o
 
 \*You can run the following command to compile C\+\+ files using the version of the programming language you want to use:
 
-```
+```bash
 g++ -std=c++[version-number] "$file" -o "$file.o"
 ```

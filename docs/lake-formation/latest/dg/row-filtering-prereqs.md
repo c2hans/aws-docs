@@ -11,7 +11,7 @@ The following AWS Identity and Access Management (IAM) permissions are required 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

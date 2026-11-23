@@ -59,7 +59,7 @@ Amazon Bedrock AgentCore passes request payloads directly to your container with
 
 AG-UI-compliant agents expect a `RunAgentInput` JSON payload. Example:
 
-```
+```json
 {
   "threadId": "thread-123",
   "runId": "run-456",
@@ -129,7 +129,7 @@ Returns a status code indicating your agent’s health:
 +  **Content-Type** : `application/json`
 +  **HTTP Status Code** : `200` for healthy, appropriate error codes for unhealthy states
 
-```
+```json
 {
   "status": "Healthy"
 }

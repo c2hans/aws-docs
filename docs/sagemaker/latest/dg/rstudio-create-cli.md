@@ -32,7 +32,7 @@ The following procedure shows how to create the `DomainExecution` role with the 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -64,7 +64,7 @@ The following procedure shows how to create the `DomainExecution` role with the 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

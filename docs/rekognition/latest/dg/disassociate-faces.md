@@ -21,7 +21,7 @@ You can use the [DisassociateFaces](https://docs.aws.amazon.com/rekognition/late
 
    This Java example removes the association between a FaceID and a UserID with the `DisassociateFaces` operation.
 
-   ```
+   ```java
    import java.util.Arrays;
    import java.util.List;
 
@@ -81,7 +81,7 @@ You can use the [DisassociateFaces](https://docs.aws.amazon.com/rekognition/late
 
    The following example removes the association between a FaceID and a UserID with the `DisassociateFaces` operation.
 
-   ```
+   ```python
    from botocore.exceptions import ClientError
    import boto3
    import logging

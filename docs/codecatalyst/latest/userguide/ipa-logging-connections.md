@@ -108,7 +108,7 @@ A trail is a configuration that enables delivery of events as log files to an S3
 
 The following example shows a CloudTrail log entry that demonstrates the `ListConnections` action. For an AWS account that is connected to the space, `ListConnections` is used to view all account connections to CodeCatalyst for this AWS account. The event will be logged in the AWS account specified in `accountId`, and the value of the `arn` will be the Amazon Resource Name (ARN) of the role used for the action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -164,7 +164,7 @@ The `recipientAccountId` field contains the account ID for the billing account f
 
 For more information, see the [CloudTrail userIdentity element](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html).
 
-```
+```json
 {
 	"eventVersion": "1.09",
 	"userIdentity": {

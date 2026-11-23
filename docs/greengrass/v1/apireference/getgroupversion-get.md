@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="getgroupversion-get-cli"></a>
 
-```
+```bash
 aws greengrass get-group-version \
   --group-id <value> \
   --group-version-id <value>  \
@@ -25,7 +25,7 @@ aws greengrass get-group-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "GroupVersionId": "string"
@@ -52,7 +52,7 @@ type: string
 Success.
  [ GetGroupVersionResponse](definitions-getgroupversionresponse.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -113,7 +113,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

@@ -69,12 +69,12 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [access\_token](#API_dataplane-signin_CreateOAuth2TokenWithIAM_ResponseSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithIAM-response-access_token"></a>
-Access token containing principal identity, resource scope, and session metadata. Use this token as a Bearer token when accessing the target resource.
+The access token containing principal identity, resource scope, and session metadata. Use this token as a Bearer token when accessing the target resource.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 
  ** [expires\_in](#API_dataplane-signin_CreateOAuth2TokenWithIAM_ResponseSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithIAM-response-expires_in"></a>
-Token lifetime in seconds. Value is the minimum of the caller's session validity and 1 hour (3600 seconds).
+The token lifetime in seconds. Value is the minimum of the caller's session validity and 1 hour (3600 seconds).
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 3600.
 

@@ -58,7 +58,7 @@ You can specify the control plane egress mode when you create a new cluster.
 **Example**
 Run the following command. Replace the {{placeholder values}} with your own.
 
-```
+```bash
 aws eks create-cluster \
     --name my-cluster \
     --role-arn arn:aws:iam::111122223333:role/myAmazonEKSClusterRole \
@@ -90,7 +90,7 @@ Switching to `CUSTOMER_ROUTED` is a one-way operation. After you enable customer
 
 You can change the control plane egress mode on an existing cluster using the `update-cluster-config` command.
 
-```
+```bash
 aws eks update-cluster-config \
     --name my-cluster \
     --resources-vpc-config "controlPlaneEgressMode=CUSTOMER_ROUTED" \
@@ -99,7 +99,7 @@ aws eks update-cluster-config \
 
 Monitor the update status:
 
-```
+```bash
 aws eks describe-update \
     --name my-cluster \
     --update-id update-id \
@@ -146,7 +146,7 @@ The condition key applies to the following actions:
 
 For example, the following SCP denies cluster creation and configuration updates unless the caller specifies `CUSTOMER_ROUTED`:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -194,7 +194,7 @@ After configuring `CUSTOMER_ROUTED` egress, verify that the control plane can re
 
 1.  **Check the current egress mode**: Confirm the cluster is using the mode you expect.
 
-   ```
+   ```bash
    aws eks describe-cluster --name my-cluster \
        --query "cluster.resourcesVpcConfig.controlPlaneEgressMode" \
        --region region-code
@@ -202,7 +202,7 @@ After configuring `CUSTOMER_ROUTED` egress, verify that the control plane can re
 
 1.  **Check cluster status**: The cluster should be in `ACTIVE` state.
 
-   ```
+   ```bash
    aws eks describe-cluster --name my-cluster --query "cluster.status" --region region-code
    ```
 
@@ -210,7 +210,7 @@ After configuring `CUSTOMER_ROUTED` egress, verify that the control plane can re
 
 1.  **Verify node registration**: Launch a node and confirm it successfully joins the cluster.
 
-   ```
+   ```bash
    kubectl get nodes
    ```
 

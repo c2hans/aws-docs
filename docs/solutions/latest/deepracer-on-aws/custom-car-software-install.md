@@ -8,21 +8,21 @@ The [AWS DeepRacer Community custom car repository](https://github.com/aws-deepr
 
 1. Clone the repository:
 
-   ```
+   ```bash
    git clone https://github.com/aws-deepracer-community/deepracer-custom-car.git
    cd deepracer-custom-car
    ```
 
 1. Run the prerequisites installation script and reboot:
 
-   ```
+   ```bash
    sudo ./install_prerequisites.sh
    sudo reboot
    ```
 
 1. After the reboot, run the main installation script:
 
-   ```
+   ```bash
    cd deepracer-custom-car
    sudo ./install_deepracer.sh
    ```

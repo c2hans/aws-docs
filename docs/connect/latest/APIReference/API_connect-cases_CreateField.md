@@ -138,7 +138,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of CreateField.
 
-```
+```json
 {
   "name": "Color",
   "type": "Text",
@@ -146,7 +146,7 @@ This example illustrates one usage of CreateField.
 }
 ```
 
-```
+```json
 {
   "fieldArn": "arn:aws:cases:us-west-2:[account_id]:domain/[domain_id]/field/[field_id]",
   "fieldId": "[field_id]"

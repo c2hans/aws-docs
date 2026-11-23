@@ -19,7 +19,7 @@ The `amazon-efs-utils` package is available in the AL2027 repositories.
 **To install the `amazon-efs-utils` package on AL2027**
 + Install `amazon-efs-utils` using the following command.
 
-  ```
+  ```sh
   $ dnf -y install amazon-efs-utils
   ```
 

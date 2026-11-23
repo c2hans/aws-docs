@@ -24,7 +24,7 @@ You can use the [delete-opt-out-list](https://docs.aws.amazon.com/cli/latest/ref
 
 At the command line, enter the following command:
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 delete-opt-out-list \
 > --opt-out-list-name {{optOutListName}}
 ```

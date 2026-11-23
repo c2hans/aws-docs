@@ -69,7 +69,7 @@ To set a policy on a queue, you can use the Amazon SQS console or the [SetQueueA
 
    For example, the following policy allows MyTopic to send messages to MyQueue.
 
-   ```
+   ```json
    {
      "Statement": [
        {
@@ -132,7 +132,7 @@ You should use the first method for most cases (apply policies to groups and man
 
 If you added the following policy to an IAM user or group, you would give that user or members of that group permission to perform the `sns:Publish` action on the topic MyTopic.
 
-```
+```json
 {
   "Statement": [
     {
@@ -146,7 +146,7 @@ If you added the following policy to an IAM user or group, you would give that u
 
 If you added the following policy to an IAM user or group, you would give that user or members of that group permission to perform the `sqs:ReceiveMessage` and `sqs:DeleteMessage` actions on the queues MyQueue1 and MyQueue2.
 
-```
+```json
 {
   "Statement": [
     {
@@ -174,7 +174,7 @@ When you give another AWS account access to a resource in your account, you are 
 
 If you added the following policy to a topic MyTopic in account 123456789012, you would give account 111122223333 permission to perform the `sns:Publish` action on that topic.
 
-```
+```json
 {
   "Statement": [
     {
@@ -191,7 +191,7 @@ If you added the following policy to a topic MyTopic in account 123456789012, yo
 
 If you added the following policy to a queue MyQueue in account 123456789012, you would give account 111122223333 permission to perform the `sqs:ReceiveMessage` and `sqs:DeleteMessage` actions on that queue.
 
-```
+```json
 {
   "Statement": [
     {
@@ -234,7 +234,7 @@ You can test a topic's queue subscriptions by publishing to the topic and viewin
 
 1. In the **Body** column, choose **More Details**. The **Message Details** box contains a JSON document that contains the subject and message that you published to the topic. The message looks similar to the following JSON document.
 
-   ```
+   ```json
    {
      "Type" : "Notification",
      "MessageId" : "63a3f6b6-d533-4a47-aef9-fcf5cf758c76",

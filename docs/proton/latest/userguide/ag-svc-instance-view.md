@@ -28,13 +28,13 @@ A service instance belongs to a service. You can only create or delete an instan
 
 Command:
 
-```
+```sh
 $ aws proton list-service-instances
 ```
 
 Response:
 
-```
+```json
 {
     "serviceInstances": [
         {
@@ -56,7 +56,7 @@ Response:
 
 Command:
 
-```
+```sh
 $ aws proton get-service-instance \
     --name "{{instance-one}}" \
     --service-name "{{simple-svc}}"
@@ -64,7 +64,7 @@ $ aws proton get-service-instance \
 
 Response:
 
-```
+```json
 {
     "serviceInstance": {
         "arn": "arn:aws:proton:region-id:123456789012:service/simple-svc/service-instance/instance-one",

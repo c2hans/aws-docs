@@ -122,7 +122,7 @@ A detector version defines the specific models and rules that are used for gener
 
 The following example shows a sample request for the `PutDetector` API. A detector acts as a container for your detector versions. The `PutDetector` API specifies what event type the detector will evaluate. The following example assumes you have created an event type `sample_registration`.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

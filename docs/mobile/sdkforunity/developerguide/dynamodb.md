@@ -20,7 +20,7 @@ To use DynamoDB in a Unity application, you’ll need to add the Unity SDK into 
 
 To use DynamoDB in an application, you must set the correct permissions. The following IAM policy allows the user to delete, get, put, scan, and update items in a specific DynamoDB table, which is identified by [ARN](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html):
 
-```
+```csharp
 {
 "Statement": [{
     "Effect": "Allow",
@@ -66,7 +66,7 @@ Now that we have our permissions and credentials set up, let’s create a Dynamo
 
 For our app to interact with a DynamoDB table, we need a client. We can create a default DynamodDB client as follows:
 
-```
+```csharp
 var credentials = new CognitoAWSCredentials(IDENTITY_POOL_ID, RegionEndpoint.USEast1);
 AmazonDynamoDBClient client = new AmazonDynamoDBClient(credentials);
 DynamoDBContext Context = new DynamoDBContext(client);
@@ -79,7 +79,7 @@ The AmazonDynamoDBClient class is the entry point for the DynamoDB API. The clas
 
 To get a description of our DynamoDB table, we can use the following code:
 
-```
+```csharp
 resultText.text +=("\n*** Retrieving table information ***\n");
        var request = new DescribeTableRequest
        {
@@ -118,7 +118,7 @@ To save an object to DynamoDB, use the SaveAsync<T> method of the AmazonDynamoDB
 
 We called our database “Bookstore”, and in keeping with that theme we’ll implement a data model that records book-related attributes. Here are the classes that define our data model.
 
-```
+```csharp
 [DynamoDBTable("ProductCatalog")]
     public class Book
     {
@@ -138,7 +138,7 @@ Of course, for a real bookstore application we’d need additional fields for th
 ## Create a Book
 <a name="create-a-book"></a>
 
-```
+```csharp
 private void PerformCreateOperation()
 {
     Book myBook = new Book
@@ -160,7 +160,7 @@ private void PerformCreateOperation()
 ## Retrieve a Book
 <a name="retrieve-a-book"></a>
 
-```
+```csharp
 private void RetrieveBook()
 {
     this.displayMessage += "\n*** Load book**\n";
@@ -194,7 +194,7 @@ private void RetrieveBook()
 ## Update a Book
 <a name="update-a-book"></a>
 
-```
+```csharp
 private void PerformUpdateOperation()
 {
     // Retrieve the book.
@@ -221,7 +221,7 @@ private void PerformUpdateOperation()
 ## Delete a Book
 <a name="delete-a-book"></a>
 
-```
+```csharp
 private void PerformDeleteOperation()
 {
     // Delete the book.

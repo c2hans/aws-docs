@@ -103,7 +103,7 @@ Use the [chatSession.onConnectionEstablished](https://github.com/amazon-connect/
 
 The following code sample shows how to implement `onConnectionEstablished` to call `GetTranscript`.
 
-```
+```json
 import "amazon-connect-chatjs";
 
 const chatSession = connect.ChatSession.create({
@@ -132,7 +132,7 @@ chatSession.onConnectionEstablished(() => {
 });
 ```
 
-```
+```json
 function loadLatestTranscript(args) {
     // Documentation: https://github.com/amazon-connect/amazon-connect-chatjs?tab=readme-ov-file#chatsessiongettranscript
     return chatSession.getTranscript({
@@ -181,13 +181,13 @@ There are two options for bypassing CORS to allow third-party links to be opened
 
   Update the sandbox attribute to allow opening links in new tab which can be done by adding the following attribute to the code snippet:
 
-  ```
+  ```userinput
   amazon_connect('updateSandboxAttributes', 'allow-scripts allow-same-origin allow-popups allow-downloads allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox')
   ```
 **Note**
 The attribute value can be updated as needed to allow for specific actions. This is an example for how to allow opening links in new tab.
 + Remove the sandbox attribute which can be done by adding the following attribute to the code snippet:
 
-  ```
+  ```userinput
   amazon_connect('removeSandboxAttribute', true)
   ```

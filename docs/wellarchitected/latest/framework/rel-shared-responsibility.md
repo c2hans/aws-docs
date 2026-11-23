@@ -20,6 +20,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel-sha
 
 ![Shared responsibility model for resilience. The customer is responsible for resilience in the cloud: continuous testing of critical infrastructure, workload architecture, change management and resilient operations, observability and failure management, and networking, quotas, and constraints. AWS is responsible for resilience of the cloud: hardware and services (compute, storage, database, networking) and the AWS global infrastructure of Regions, Availability Zones, and edge locations.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/shared-model-resiliency.png)
 
+*Responsibility for resilience in and of the cloud for customers and AWS*
+
  You can use AWS services to achieve your resilience objectives. As a customer, you are responsible for management of the following aspects of your system to achieve resilience in the cloud. For more detail on each service in particular, see [AWS documentation](https://docs.aws.amazon.com/index.html).
 
  **Networking, quotas, and constraints**

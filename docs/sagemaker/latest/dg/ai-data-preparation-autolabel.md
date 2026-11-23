@@ -187,7 +187,7 @@ An auto-labeling job takes the same `generation_config` as an SDG job, plus the 
 Input data, specification, and models
 Set `InputDataS3Uri` to the JSON Lines file of rows to label, `SpecS3Uri` to your labeling specification, and `SampleGenerationModelConfigs` to the labeling models. Leave out `NumSamples`: the job labels every row in the input. If you set it, it must equal the number of input rows.
 
-```
+```python
 generation_config={
     "InputDataS3Uri": "s3://{{amzn-s3-demo-bucket}}/labeling/tickets.jsonl",
     "DatasetSpecification": {
@@ -211,7 +211,7 @@ Every task except summarization also takes the following:
 + `evaluation_data` (optional) – The gold rows, as an Amazon S3 JSON Lines file (`s3_uri`) or a dataset ARN (`dataset_arn`). `label_field` names the field that holds each gold label.
 + `scoring` (optional) – `target` is the accuracy to certify on the accepted rows, from 0.85 to 0.99.
 
-```
+```python
 from sagemaker.ai_registry import (
     ClassificationLabelingOptions, EvaluationData, Routing, Scoring)
 
@@ -227,7 +227,7 @@ dataset_options=ClassificationLabelingOptions(
 ```
 Summarization takes `graders` instead of evaluation data and a target: 1–3 models that score a sample of up to 100 summaries, each against its own source text. A grader can't be the labeling model.
 
-```
+```python
 from sagemaker.ai_registry import Grader, SummarizationLabelingOptions
 
 dataset_options=SummarizationLabelingOptions(
@@ -249,7 +249,7 @@ You can run auto-labeling in the Amazon SageMaker Python SDK directly, or throug
 
 The following example runs a trial on the dev rows to find the labeling mistakes, and then labels the full dataset with a certificate and a review dataset. It assumes that you've configured an execution role and a default Amazon S3 bucket, as described in [Set up and prerequisites](ai-data-preparation-getting-started.md#ai-data-preparation-setup), and that you've split your gold rows into `splits/dev.jsonl`, `splits/val.jsonl`, and `splits/test.jsonl`. Before you run it, upload your specification and data to Amazon S3, for example:
 
-```
+```bash
 aws s3 cp label-spec.md s3://{{amzn-s3-demo-bucket}}/labeling/label-spec.md
 aws s3 cp tickets.jsonl s3://{{amzn-s3-demo-bucket}}/labeling/tickets.jsonl
 aws s3 cp splits/ s3://{{amzn-s3-demo-bucket}}/labeling/splits/ --recursive
@@ -257,7 +257,7 @@ aws s3 cp splits/ s3://{{amzn-s3-demo-bucket}}/labeling/splits/ --recursive
 
 Then run the following Python code:
 
-```
+```python
 from sagemaker.core.helper.session_helper import Session
 from sagemaker.ai_registry import (
     ClassificationLabelingOptions,

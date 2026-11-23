@@ -163,13 +163,13 @@ Run either example, then confirm that `hello.txt` downloads, the MicroVM reaches
 
 **Launcher logs.** Review the launcher Lambda function's logs in CloudWatch Logs:
 
-```
+```bash
 aws logs tail /aws/lambda/codex-agents-api-webhook --since 10m
 ```
 
 **Running MicroVMs.** Set `MICROVM_IMAGE_ARN` to your image ARN, use your deployment's AWS Region, and list the MicroVMs for the image:
 
-```
+```bash
 aws lambda-microvms list-microvms \
   --image-identifier "$MICROVM_IMAGE_ARN" \
   --query 'items[].{id:microvmId,state:state}' --output table

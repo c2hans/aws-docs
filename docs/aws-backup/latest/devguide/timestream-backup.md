@@ -98,6 +98,6 @@ To view and modify your Timestream table backups within the console:
    1. You can check the box to the left of the recovery point ID and click **Actions** to delete the recovery points that are no longer needed.
 
 ## Restore a Timestream table
-<a name="w2aac17c19c41c15"></a>
+<a name="w2aac17c19c43c15"></a>
 
 See how to [restore a Timestream table](https://docs.aws.amazon.com/aws-backup/latest/devguide/timestream-restore.html)

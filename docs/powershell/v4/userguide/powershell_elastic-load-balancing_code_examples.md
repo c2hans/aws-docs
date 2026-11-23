@@ -28,7 +28,7 @@ The following code example shows how to use `Add-ELBLoadBalancerToSubnet`.
 **Tools for PowerShell V4**
 **Example 1: This example adds the specified subnet to the set of subnets configured for the specified load balancer. The output includes the complete list of subnets.**
 
-```
+```powershell
 Add-ELBLoadBalancerToSubnet -LoadBalancerName my-load-balancer -Subnet subnet-12345678
 ```
 **Output:**
@@ -47,12 +47,12 @@ The following code example shows how to use `Add-ELBResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This example adds the specified tags to the specified load balancer. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Add-ELBResourceTag -LoadBalancerName my-load-balancer -Tag @{ Key="project";Value="lima" },@{ Key="department";Value="digital-media" }
 ```
 **Example 2: With PowerShell version 2, you must use New-Object to create a tag for the Tag parameter.**
 
-```
+```powershell
 $tag = New-Object Amazon.ElasticLoadBalancing.Model.Tag
 $tag.Key = "project"
 $tag.Value = "lima"
@@ -68,7 +68,7 @@ The following code example shows how to use `Disable-ELBAvailabilityZoneForLoadB
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified Availability Zone from the specified load balancer. The output includes the remaining Availability Zones.**
 
-```
+```powershell
 Disable-ELBAvailabilityZoneForLoadBalancer -LoadBalancerName my-load-balancer -AvailabilityZone us-west-2a
 ```
 **Output:**
@@ -86,7 +86,7 @@ The following code example shows how to use `Dismount-ELBLoadBalancerFromSubnet`
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified subnet from the set of subnets configured for the specified load balancer. The output includes the remaining subnets.**
 
-```
+```powershell
 Dismount-ELBLoadBalancerFromSubnet -LoadBalancerName my-load-balancer -Subnet subnet-12345678
 ```
 **Output:**
@@ -104,17 +104,17 @@ The following code example shows how to use `Edit-ELBLoadBalancerAttribute`.
 **Tools for PowerShell V4**
 **Example 1: This example enables cross-zone load balancing for the specified load balancer.**
 
-```
+```powershell
 Edit-ELBLoadBalancerAttribute -LoadBalancerName my-load-balancer -CrossZoneLoadBalancing_Enabled $true
 ```
 **Example 2: This example disables connection draining for the specified load balancer.**
 
-```
+```powershell
 Edit-ELBLoadBalancerAttribute -LoadBalancerName my-load-balancer -ConnectionDraining_Enabled $false
 ```
 **Example 3: This example enables access logging for the specified load balancer.**
 
-```
+```powershell
 Edit-ELBLoadBalancerAttribute -LoadBalancerName my-load-balancer `
 >> -AccessLog_Enabled $true `
 >> -AccessLog_S3BucketName amzn-s3-demo-logging-bucket `
@@ -131,7 +131,7 @@ The following code example shows how to use `Enable-ELBAvailabilityZoneForLoadBa
 **Tools for PowerShell V4**
 **Example 1: This example adds the specified Availability Zone to the specified load balancer. The output includes the complete list of Availability Zones.**
 
-```
+```powershell
 Enable-ELBAvailabilityZoneForLoadBalancer -LoadBalancerName my-load-balancer -AvailabilityZone us-west-2a
 ```
 **Output:**
@@ -150,7 +150,7 @@ The following code example shows how to use `Get-ELBInstanceHealth`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the state of the instances registered with the specified load balancer.**
 
-```
+```powershell
 Get-ELBInstanceHealth -LoadBalancerName my-load-balancer
 ```
 **Output:**
@@ -163,12 +163,12 @@ Instance has failed at lea... i-12345678                    Instance            
 ```
 **Example 2: This example describes the state of the specified instance registered with the specified load balancer.**
 
-```
+```powershell
 Get-ELBInstanceHealth -LoadBalancerName my-load-balancer -Instance i-12345678
 ```
 **Example 3: This example displays the complete description of the state of the specified instance.**
 
-```
+```powershell
 (Get-ELBInstanceHealth -LoadBalancerName my-load-balancer -Instance i-12345678).Description
 ```
 **Output:**
@@ -186,7 +186,7 @@ The following code example shows how to use `Get-ELBLoadBalancer`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the names of your load balancers.**
 
-```
+```powershell
 Get-ELBLoadBalancer | format-table -property LoadBalancerName
 ```
 **Output:**
@@ -200,7 +200,7 @@ my-internal-load-balancer
 ```
 **Example 2: This example describes the specified load balancer.**
 
-```
+```powershell
 Get-ELBLoadBalancer -LoadBalancerName my-load-balancer
 ```
 **Output:**
@@ -225,12 +225,12 @@ VPCId                     : vpc-a01106c2
 ```
 **Example 3: This example describes all your load balancers in the current AWS region.**
 
-```
+```powershell
 Get-ELBLoadBalancer
 ```
 **Example 4: This example describes all your load balancers across all available AWS Regions.**
 
-```
+```powershell
 Get-AWSRegion | % { Get-ELBLoadBalancer -Region $_ }
 ```
 +  For API details, see [DescribeLoadBalancers](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -243,7 +243,7 @@ The following code example shows how to use `Get-ELBLoadBalancerAttribute`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the attributes for the specified load balancer.**
 
-```
+```powershell
 Get-ELBLoadBalancerAttribute -LoadBalancerName my-load-balancer
 ```
 **Output:**
@@ -265,7 +265,7 @@ The following code example shows how to use `Get-ELBLoadBalancerPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the policies associated with the specified load balancer.**
 
-```
+```powershell
 Get-ELBLoadBalancerPolicy -LoadBalancerName my-load-balancer
 ```
 **Output:**
@@ -278,7 +278,7 @@ PolicyAttributeDescriptions             PolicyName                              
 ```
 **Example 2: This example describes the attributes of the specified policy.**
 
-```
+```powershell
 (Get-ELBLoadBalancerPolicy -LoadBalancerName my-load-balancer -PolicyName my-ProxyProtocol-policy).PolicyAttributeDescriptions
 ```
 **Output:**
@@ -290,7 +290,7 @@ ProxyProtocol    true
 ```
 **Example 3: This example describes the predefined policies, including the sample policies. The names of the sample policies have the ELBSample- prefix.**
 
-```
+```powershell
 Get-ELBLoadBalancerPolicy
 ```
 **Output:**
@@ -317,7 +317,7 @@ The following code example shows how to use `Get-ELBLoadBalancerPolicyType`.
 **Tools for PowerShell V4**
 **Example 1: This example gets the policy types supported by Elastic Load Balancing.**
 
-```
+```powershell
 Get-ELBLoadBalancerPolicyType
 ```
 **Output:**
@@ -334,7 +334,7 @@ Policy that controls whether to incl... {ProxyProtocol}                         
 ```
 **Example 2: This example describes the specified policy type.**
 
-```
+```powershell
 Get-ELBLoadBalancerPolicyType -PolicyTypeName ProxyProtocolPolicyType
 ```
 **Output:**
@@ -346,7 +346,7 @@ Policy that controls whether to incl... {ProxyProtocol}                         
 ```
 **Example 3: This example displays the complete description of the specified policy type.**
 
-```
+```powershell
 (Get-ELBLoadBalancerPolicyType -PolicyTypeName).Description
 ```
 **Output:**
@@ -365,7 +365,7 @@ The following code example shows how to use `Get-ELBResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the tags for the specified load balancers.**
 
-```
+```powershell
 Get-ELBResourceTag -LoadBalancerName @("my-load-balancer","my-internal-load-balancer")
 ```
 **Output:**
@@ -378,7 +378,7 @@ my-internal-load-balancer    {project, department}
 ```
 **Example 2: This example describes the tags for the specified load balancer.**
 
-```
+```powershell
 (Get-ELBResourceTag -LoadBalancerName my-load-balancer).Tags
 ```
 **Output:**
@@ -399,7 +399,7 @@ The following code example shows how to use `Join-ELBSecurityGroupToLoadBalancer
 **Tools for PowerShell V4**
 **Example 1: This example replaces the current security group for the specified load balancer with the specified security group.**
 
-```
+```powershell
 Join-ELBSecurityGroupToLoadBalancer -LoadBalancerName my-load-balancer -SecurityGroup sg-87654321
 ```
 **Output:**
@@ -409,7 +409,7 @@ sg-87654321
 ```
 **Example 2: To keep the current security group and specify an additional security group, specify both the existing and new security groups.**
 
-```
+```powershell
 Join-ELBSecurityGroupToLoadBalancer -LoadBalancerName my-load-balancer -SecurityGroup @("sg-12345678", "sg-87654321")
 ```
 **Output:**
@@ -428,7 +428,7 @@ The following code example shows how to use `New-ELBAppCookieStickinessPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a stickiness policy that follows the sticky session lifetimes of the specified application-generated cookie.**
 
-```
+```powershell
 New-ELBAppCookieStickinessPolicy -LoadBalancerName my-load-balancer -PolicyName my-app-cookie-policy -CookieName my-app-cookie
 ```
 +  For API details, see [CreateAppCookieStickinessPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -441,12 +441,12 @@ The following code example shows how to use `New-ELBLBCookieStickinessPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a stickiness policy with sticky session lifetimes controlled by the specified expiration period (in seconds).**
 
-```
+```powershell
 New-ELBLBCookieStickinessPolicy -LoadBalancerName my-load-balancer -PolicyName my-duration-cookie-policy -CookieExpirationPeriod 60
 ```
 **Example 2: This example creates a stickiness policy with sticky session lifetimes controlled by the by the lifetime of the browser (user-agent).**
 
-```
+```powershell
 New-ELBLBCookieStickinessPolicy -LoadBalancerName my-load-balancer -PolicyName my-duration-cookie-policy
 ```
 +  For API details, see [CreateLbCookieStickinessPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -459,7 +459,7 @@ The following code example shows how to use `New-ELBLoadBalancer`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a load balancer with an HTTP listener in a VPC.**
 
-```
+```powershell
 $httpListener = New-Object Amazon.ElasticLoadBalancing.Model.Listener
 $httpListener.Protocol = "http"
 $httpListener.LoadBalancerPort = 80
@@ -471,7 +471,7 @@ my-vpc-load-balancer-1234567890.us-west-2.elb.amazonaws.com
 ```
 **Example 2: This example creates a load balancer with an HTTP listener in EC2-Classic.**
 
-```
+```powershell
 New-ELBLoadBalancer -LoadBalancerName my-classic-load-balancer -AvailabilityZone us-west-2a` -Listener $httpListener
 ```
 **Output:**
@@ -481,7 +481,7 @@ my-classic-load-balancer-123456789.us-west-2.elb.amazonaws.com
 ```
 **Example 3: This example creates a load balancer with an HTTPS listener.**
 
-```
+```powershell
 $httpsListener = New-Object Amazon.ElasticLoadBalancing.Model.Listener
 $httpsListener.Protocol = "https"
 $httpsListener.LoadBalancerPort = 443
@@ -502,7 +502,7 @@ The following code example shows how to use `New-ELBLoadBalancerListener`.
 **Tools for PowerShell V4**
 **Example 1: This example adds an HTTPS listener to the specified load balancer.**
 
-```
+```powershell
 $httpsListener = New-Object Amazon.ElasticLoadBalancing.Model.Listener
 $httpsListener.Protocol = "https"
 $httpsListener.LoadBalancerPort = 443
@@ -521,7 +521,7 @@ The following code example shows how to use `New-ELBLoadBalancerPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new proxy protocol policy for a specified load balancer.**
 
-```
+```powershell
 $attribute = New-Object Amazon.ElasticLoadBalancing.Model.PolicyAttribute -Property @{
          AttributeName="ProxyProtocol"
          AttributeValue="True"
@@ -538,7 +538,7 @@ The following code example shows how to use `Register-ELBInstanceWithLoadBalance
 **Tools for PowerShell V4**
 **Example 1: This example registers the specified EC2 instance with the specified load balancer.**
 
-```
+```powershell
 Register-ELBInstanceWithLoadBalancer -LoadBalancerName my-load-balancer -Instance i-12345678
 ```
 **Output:**
@@ -559,7 +559,7 @@ The following code example shows how to use `Remove-ELBInstanceFromLoadBalancer`
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified EC2 instance from the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-ELBInstanceFromLoadBalancer -LoadBalancerName my-load-balancer -Instance i-12345678
 ```
 **Output:**
@@ -585,7 +585,7 @@ The following code example shows how to use `Remove-ELBLoadBalancer`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-ELBLoadBalancer -LoadBalancerName my-load-balancer
 ```
 **Output:**
@@ -606,7 +606,7 @@ The following code example shows how to use `Remove-ELBLoadBalancerListener`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the listener on port 80 for the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-ELBLoadBalancerListener -LoadBalancerName my-load-balancer -LoadBalancerPort 80
 ```
 **Output:**
@@ -627,7 +627,7 @@ The following code example shows how to use `Remove-ELBLoadBalancerPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified policy from the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-ELBLoadBalancerPolicy -LoadBalancerName my-load-balancer -PolicyName my-duration-cookie-policy
 ```
 **Output:**
@@ -648,7 +648,7 @@ The following code example shows how to use `Remove-ELBResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified tag from the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Remove-ELBResourceTag -LoadBalancerName my-load-balancer -Tag @{ Key="project" }
 ```
 **Output:**
@@ -661,7 +661,7 @@ Performing the operation "Remove-ELBResourceTag (RemoveTags)" on target "Amazon.
 ```
 **Example 2: With Powershell version 2, you must use New-Object to create the tag for the Tag parameter.**
 
-```
+```powershell
 $tag = New-Object Amazon.ElasticLoadBalancing.Model.TagKeyOnly
 $tag.Key = "project"
 Remove-ELBResourceTag -Tag $tag -Force
@@ -676,7 +676,7 @@ The following code example shows how to use `Set-ELBHealthCheck`.
 **Tools for PowerShell V4**
 **Example 1: This example configures the health check settings for the specified load balancer.**
 
-```
+```powershell
 Set-ELBHealthCheck -LoadBalancerName my-load-balancer `
 >> -HealthCheck_HealthyThreshold 2 `
 >> -HealthCheck_UnhealthyThreshold 2 `
@@ -703,7 +703,7 @@ The following code example shows how to use `Set-ELBLoadBalancerListenerSSLCerti
 **Tools for PowerShell V4**
 **Example 1: This example replaces the certificate that terminates the SSL connections for the specified listener.**
 
-```
+```powershell
 Set-ELBLoadBalancerListenerSSLCertificate -LoadBalancerName my-load-balancer `
 >> -LoadBalancerPort 443 `
 >> -SSLCertificateId "arn:aws:iam::123456789012:server-certificate/new-server-cert"
@@ -718,12 +718,12 @@ The following code example shows how to use `Set-ELBLoadBalancerPolicyForBackend
 **Tools for PowerShell V4**
 **Example 1: This example replaces the policies for the specified port with the specified policy.**
 
-```
+```powershell
 Set-ELBLoadBalancerPolicyForBackendServer -LoadBalancerName my-load-balancer -InstancePort 80 -PolicyName my-ProxyProtocol-policy
 ```
 **Example 2: This example removes all policies associated with the specified port.**
 
-```
+```powershell
 Set-ELBLoadBalancerPolicyForBackendServer -LoadBalancerName my-load-balancer -InstancePort 80
 ```
 +  For API details, see [SetLoadBalancerPoliciesForBackendServer](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -736,12 +736,12 @@ The following code example shows how to use `Set-ELBLoadBalancerPolicyOfListener
 **Tools for PowerShell V4**
 **Example 1: This example replaces the policies for the specified listener with the specified policy.**
 
-```
+```powershell
 Set-ELBLoadBalancerPolicyOfListener -LoadBalancerName my-load-balancer -LoadBalancerPort 443 -PolicyName my-SSLNegotiation-policy
 ```
 **Example 2: This example removes all policies associated with the specified listener.**
 
-```
+```powershell
 Set-ELBLoadBalancerPolicyOfListener -LoadBalancerName my-load-balancer -LoadBalancerPort 443
 ```
 +  For API details, see [SetLoadBalancerPoliciesOfListener](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.

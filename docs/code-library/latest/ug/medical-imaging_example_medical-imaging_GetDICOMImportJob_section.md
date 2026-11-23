@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **SDK for C\+\+**
 
-```
+```cpp
 //! Routine which gets a HealthImaging DICOM import job's properties.
 /*!
   \param dataStoreID: The HealthImaging data store ID.
@@ -82,7 +82,7 @@ For more information, see [Getting import job properties](https://docs.aws.amazo
 
 **SDK for Java 2.x**
 
-```
+```java
     public static DICOMImportJobProperties getDicomImportJob(MedicalImagingClient medicalImagingClient,
             String datastoreId,
             String jobId) {
@@ -110,7 +110,7 @@ For more information, see [Getting import job properties](https://docs.aws.amazo
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { GetDICOMImportJobCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -159,7 +159,7 @@ export const getDICOMImportJob = async (
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -188,7 +188,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -200,7 +200,7 @@ The following code instantiates the MedicalImagingWrapper object.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         " iv_job_id = '12345678901234567890123456789012'

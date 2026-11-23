@@ -24,7 +24,7 @@ The following code example shows how to accept an agreement cancellation request
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     AcceptAgreementCancellationRequestCommand,
@@ -64,7 +64,7 @@ The following code example shows how to accept an agreement payment request init
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     AcceptAgreementPaymentRequestCommand,
@@ -107,7 +107,7 @@ The following code example shows how to amend a SaaS contract agreement to add o
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     CreateAgreementRequestCommand,
@@ -275,7 +275,7 @@ The following code example shows how to amend an AMI agreement with Configurable
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     CreateAgreementRequestCommand,
@@ -440,6 +440,78 @@ amendAmiCUPTAgreement();
 ```
 +  For API details, see [CreateAgreementRequest](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/CreateAgreementRequestCommand) in *AWS SDK for JavaScript API Reference*.
 
+### Approve an agreement approval
+<a name="marketplace-agreement_AcceptAgreementApproval_javascript_topic"></a>
+
+The following code example shows how to approve an agreement approval as the administrator of my organization.
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
+
+```javascript
+const {
+    MarketplaceAgreementClient,
+    AcceptAgreementApprovalCommand,
+} = require("@aws-sdk/client-marketplace-agreement");
+
+// Approves an agreement approval as the administrator of the buyer's AWS Organization. When the approval
+// is approved, the agreement request is accepted and the agreement is created; GetAgreementRequest returns its
+// agreementId.
+const AGREEMENT_APPROVAL_ID = "<AGREEMENT APPROVAL ID HERE>";
+const NOTE = "<APPROVAL NOTE HERE>";
+
+async function acceptAgreementApproval() {
+    const client = new MarketplaceAgreementClient();
+
+    await client.send(
+        new AcceptAgreementApprovalCommand({
+            buyerAgreementApprovalApproverInput: {
+                agreementApprovalId: AGREEMENT_APPROVAL_ID,
+                note: NOTE,
+            },
+        })
+    );
+
+    console.log("Approved Agreement Approval ID: " + AGREEMENT_APPROVAL_ID);
+}
+
+acceptAgreementApproval();
+```
++  For API details, see [AcceptAgreementApproval](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/AcceptAgreementApprovalCommand) in *AWS SDK for JavaScript API Reference*.
+
+### Cancel an agreement request
+<a name="marketplace-agreement_CancelAgreementRequest_javascript_topic"></a>
+
+The following code example shows how to cancel an agreement request that is pending approval.
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
+
+```javascript
+const {
+    MarketplaceAgreementClient,
+    CancelAgreementRequestCommand,
+} = require("@aws-sdk/client-marketplace-agreement");
+
+// Cancels an agreement request that is pending approval, and its approval.
+const AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>";
+
+async function cancelAgreementRequest() {
+    const client = new MarketplaceAgreementClient();
+
+    await client.send(
+        new CancelAgreementRequestCommand({
+            agreementRequestId: AGREEMENT_REQUEST_ID,
+        })
+    );
+
+    console.log("Cancelled Agreement Request ID: " + AGREEMENT_REQUEST_ID);
+}
+
+cancelAgreementRequest();
+```
++  For API details, see [CancelAgreementRequest](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/CancelAgreementRequestCommand) in *AWS SDK for JavaScript API Reference*.
+
 ### Create a new AMI free trial agreement
 <a name="marketplace-agreement_NewAmiFreeTrial_javascript_topic"></a>
 
@@ -448,7 +520,7 @@ The following code example shows how to create a new AMI free trial agreement.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     CreateAgreementRequestCommand,
@@ -527,7 +599,7 @@ The following code example shows how to create a new SaaS contract agreement wit
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     CreateAgreementRequestCommand,
@@ -620,6 +692,88 @@ createSaaSContractAgreement();
 ```
 +  For API details, see [CreateAgreementRequest](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/CreateAgreementRequestCommand) in *AWS SDK for JavaScript API Reference*.
 
+### Get details of an agreement approval
+<a name="marketplace-agreement_GetAgreementApproval_javascript_topic"></a>
+
+The following code example shows how to get details of an agreement approval, including its approver outcomes.
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
+
+```javascript
+const {
+    MarketplaceAgreementClient,
+    GetAgreementApprovalCommand,
+} = require("@aws-sdk/client-marketplace-agreement");
+
+const AGREEMENT_APPROVAL_ID = "<AGREEMENT APPROVAL ID HERE>";
+
+async function getAgreementApproval() {
+    const client = new MarketplaceAgreementClient();
+
+    const response = await client.send(
+        new GetAgreementApprovalCommand({
+            agreementApprovalId: AGREEMENT_APPROVAL_ID,
+        })
+    );
+    const approval = response.buyerAgreementApproval;
+
+    console.log("Approval Type: " + approval.approvalType);
+    console.log("Agreement Approval ID: " + approval.agreementApprovalId);
+    console.log("Agreement Request ID: " + approval.agreementRequestId);
+    console.log("Name: " + approval.name);
+    console.log("Status: " + approval.status);
+    console.log("Requester Account ID: " + approval.requester.accountId);
+    console.log("Proposer: " + approval.proposer.legalName + " (" + approval.proposer.accountId + ")");
+    console.log("Offer ID: " + approval.proposalSummary.offerId);
+    if (approval.proposalSummary.offerSetId !== undefined) {
+        console.log("Offer Set ID: " + approval.proposalSummary.offerSetId);
+    }
+    console.log("Visibility Scope: " + approval.proposalSummary.visibilityScope);
+    for (const resource of approval.proposalSummary.resources ?? []) {
+        console.log("Resource: " + resource.name + " (" + resource.id + ", " + resource.type + ")");
+    }
+    console.log("Plan Reference: " + approval.planInput.planReference);
+    if (approval.planInput.requesterNote !== undefined) {
+        console.log("Requester Note: " + approval.planInput.requesterNote);
+    }
+    console.log("Created At: " + approval.createdAt);
+    console.log("Updated At: " + approval.updatedAt);
+    console.log("Started At: " + approval.startedAt);
+    console.log("Expires At: " + approval.expiresAt);
+    console.log("Approval Needed By: " + approval.approvalNeededBy);
+    for (const level of approval.levels) {
+        console.log("  Level: " + level.name);
+        for (const group of level.groups) {
+            console.log("    Required Approvals: " + group.approvalCriteria.requiredApprovalCount);
+            for (const outcome of group.approvers) {
+                printApproverOutcome(outcome);
+            }
+        }
+    }
+}
+
+function printApproverOutcome(outcome) {
+    if (outcome.awsOrganizationApproverOutcome) {
+        const admin = outcome.awsOrganizationApproverOutcome;
+        console.log("    Organization admin: " + admin.status + ", approverOutcomeId " + admin.approverOutcomeId);
+    } else if (outcome.emailApproverOutcome) {
+        const email = outcome.emailApproverOutcome;
+        console.log("    Email approver " + email.emailAddress + ": " + email.status
+            + ", approverOutcomeId " + email.approverOutcomeId);
+    } else if (outcome.procurementToolApproverOutcome) {
+        const tool = outcome.procurementToolApproverOutcome;
+        console.log("    Procurement tool " + tool.name + ": " + tool.status
+            + ", approverOutcomeId " + tool.approverOutcomeId);
+    } else {
+        console.log("    Approver: " + JSON.stringify(outcome));
+    }
+}
+
+getAgreementApproval();
+```
++  For API details, see [GetAgreementApproval](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/GetAgreementApprovalCommand) in *AWS SDK for JavaScript API Reference*.
+
 ### Get details of an agreement cancellation request
 <a name="marketplace-agreement_GetAgreementCancellationRequest_javascript_topic"></a>
 
@@ -628,7 +782,7 @@ The following code example shows how to get details of a specific agreement canc
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     GetAgreementCancellationRequestCommand,
@@ -668,7 +822,7 @@ The following code example shows how to get details of a specific agreement paym
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     GetAgreementPaymentRequestCommand,
@@ -703,6 +857,221 @@ getAgreementPaymentRequest();
 ```
 +  For API details, see [GetAgreementPaymentRequest](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/GetAgreementPaymentRequestCommand) in *AWS SDK for JavaScript API Reference*.
 
+### Get details of an agreement request
+<a name="marketplace-agreement_GetAgreementRequest_javascript_topic"></a>
+
+The following code example shows how to get details of an agreement request, including whether it requires approval and its expected charges.
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
+
+```javascript
+const {
+    MarketplaceAgreementClient,
+    GetAgreementRequestCommand,
+} = require("@aws-sdk/client-marketplace-agreement");
+
+const AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>";
+
+async function getAgreementRequest() {
+    const client = new MarketplaceAgreementClient();
+
+    const response = await client.send(
+        new GetAgreementRequestCommand({
+            agreementRequestId: AGREEMENT_REQUEST_ID,
+        })
+    );
+
+    console.log("Agreement Request ID: " + response.agreementRequestId);
+    console.log("Agreement Type: " + response.agreementType);
+    console.log("Status: " + response.status);
+    console.log("Approval Requirement: " + response.approvalRequirement);
+    if (response.agreementId !== undefined) {
+        console.log("Agreement ID: " + response.agreementId);
+    }
+    console.log("Intent: " + response.intent);
+    console.log("Created At: " + response.createdAt);
+
+    const chargeSummary = response.chargeSummary;
+    console.log("Currency Code: " + chargeSummary.currencyCode);
+    console.log("New Agreement Value: " + chargeSummary.newAgreementValue);
+    // Tax fields are returned only when the request was created with tax estimation enabled.
+    if (chargeSummary.estimatedTaxes !== undefined) {
+        console.log("New Agreement Value After Tax: " + chargeSummary.newAgreementValueAfterTax);
+        console.log("Estimated Taxes: " + chargeSummary.estimatedTaxes.totalAmount);
+        console.log("Invoicing Entity: " + JSON.stringify(chargeSummary.invoicingEntity));
+    }
+    for (const charge of chargeSummary.expectedCharges ?? []) {
+        console.log("Expected Charge ID: " + charge.id);
+        console.log("  Amount: " + charge.amount);
+        if (charge.amountAfterTax !== undefined) {
+            console.log("  Amount After Tax: " + charge.amountAfterTax);
+        }
+        console.log("  Timing: " + charge.timing);
+        // Recurring charges of usage-based and recurring payment terms have no time.
+        if (charge.time !== undefined) {
+            console.log("  Time: " + charge.time);
+        }
+        if (charge.purchaseOrderReference !== undefined) {
+            console.log("  Purchase Order Reference: " + charge.purchaseOrderReference);
+        }
+    }
+    for (const itemizedCharge of chargeSummary.itemizedCharges ?? []) {
+        console.log("Itemized Charge: " + itemizedCharge.dimensionKey + ", quantity "
+            + itemizedCharge.oldQuantity + " -> " + itemizedCharge.newQuantity + ", amount "
+            + itemizedCharge.incrementalChargeAmount);
+    }
+
+    console.log("Proposer Account ID: " + response.proposer.accountId);
+    console.log("Offer ID: " + response.proposalSummary.offerId);
+    if (response.proposalSummary.offerSetId !== undefined) {
+        console.log("Offer Set ID: " + response.proposalSummary.offerSetId);
+    }
+    for (const resource of response.proposalSummary.resources ?? []) {
+        console.log("Resource: " + resource.id + " (" + resource.type + ")");
+    }
+}
+
+getAgreementRequest();
+```
++  For API details, see [GetAgreementRequest](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/GetAgreementRequestCommand) in *AWS SDK for JavaScript API Reference*.
+
+### Get the approval plans of an agreement request
+<a name="marketplace-agreement_GetAgreementRequestApprovalPlans_javascript_topic"></a>
+
+The following code example shows how to get the approval plans that apply to an agreement request.
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
+
+```javascript
+const {
+    MarketplaceAgreementClient,
+    paginateGetAgreementRequestApprovalPlans,
+} = require("@aws-sdk/client-marketplace-agreement");
+
+const AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>";
+
+async function getAgreementRequestApprovalPlans() {
+    const client = new MarketplaceAgreementClient();
+
+    for await (const page of paginateGetAgreementRequestApprovalPlans(
+        { client },
+        { agreementRequestId: AGREEMENT_REQUEST_ID }
+    )) {
+        for (const item of page.items) {
+            const plan = item.buyerAgreementApprovalPlan;
+            console.log("Plan Reference: " + plan.planReference);
+            console.log("Plan Name: " + plan.name);
+            for (const level of plan.levels) {
+                console.log("  Level: " + level.name);
+                for (const group of level.groups) {
+                    console.log("    Required Approvals: " + group.approvalCriteria.requiredApprovalCount);
+                    for (const approver of group.approvers) {
+                        console.log("    Approver: " + JSON.stringify(approver));
+                    }
+                }
+            }
+            console.log("---");
+        }
+    }
+}
+
+getAgreementRequestApprovalPlans();
+```
++  For API details, see [GetAgreementRequestApprovalPlans](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/GetAgreementRequestApprovalPlansCommand) in *AWS SDK for JavaScript API Reference*.
+
+### Get the terms of an agreement request
+<a name="marketplace-agreement_GetAgreementRequestTerms_javascript_topic"></a>
+
+The following code example shows how to get the terms requested in an agreement request.
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
+
+```javascript
+const {
+    MarketplaceAgreementClient,
+    paginateGetAgreementRequestTerms,
+} = require("@aws-sdk/client-marketplace-agreement");
+
+const AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>";
+
+async function getAgreementRequestTerms() {
+    const client = new MarketplaceAgreementClient();
+
+    for await (const page of paginateGetAgreementRequestTerms(
+        { client },
+        { agreementRequestId: AGREEMENT_REQUEST_ID }
+    )) {
+        for (const term of page.terms) {
+            const [termType, termValue] = Object.entries(term)[0];
+            console.log("Term Type: " + termType);
+            console.log(JSON.stringify(termValue, null, 2));
+            console.log("---");
+        }
+    }
+}
+
+getAgreementRequestTerms();
+```
++  For API details, see [GetAgreementRequestTerms](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/GetAgreementRequestTermsCommand) in *AWS SDK for JavaScript API Reference*.
+
+### List agreement approvals
+<a name="marketplace-agreement_ListAgreementApprovals_javascript_topic"></a>
+
+The following code example shows how to list the agreement approvals I requested, or that I decide as the administrator of my organization.
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
+
+```javascript
+const {
+    MarketplaceAgreementClient,
+    ListAgreementApprovalsCommand,
+} = require("@aws-sdk/client-marketplace-agreement");
+
+// REQUESTER lists the approvals the caller started. AWS_ORGANIZATION_ADMIN lists the approvals the caller
+// decides as the administrator of its AWS Organization.
+const PARTY_TYPE = "AWS_ORGANIZATION_ADMIN";
+const STATUS = "PENDING_APPROVAL";
+
+async function listAgreementApprovals() {
+    const client = new MarketplaceAgreementClient();
+
+    let nextToken = null;
+
+    do {
+        const response = await client.send(
+            new ListAgreementApprovalsCommand({
+                partyType: PARTY_TYPE,
+                status: STATUS,
+                nextToken: nextToken,
+            })
+        );
+
+        for (const summary of response.items) {
+            console.log("Approval Type: " + summary.approvalType);
+            console.log("Agreement Request ID: " + summary.agreementRequestId);
+            console.log("Agreement Approval ID: " + summary.agreementApprovalId);
+            console.log("Name: " + summary.name);
+            console.log("Status: " + summary.status);
+            console.log("Created At: " + summary.createdAt);
+            console.log("Updated At: " + summary.updatedAt);
+            console.log("Started At: " + summary.startedAt);
+            console.log("Expires At: " + summary.expiresAt);
+            console.log("Approval Needed By: " + summary.approvalNeededBy);
+            console.log("---");
+        }
+
+        nextToken = response.nextToken;
+    } while (nextToken != null);
+}
+
+listAgreementApprovals();
+```
++  For API details, see [ListAgreementApprovals](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/ListAgreementApprovalsCommand) in *AWS SDK for JavaScript API Reference*.
+
 ### List agreement cancellation requests
 <a name="marketplace-agreement_ListAgreementCancellationRequests_javascript_topic"></a>
 
@@ -711,7 +1080,7 @@ The following code example shows how to list agreement cancellation requests for
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     ListAgreementCancellationRequestsCommand,
@@ -760,7 +1129,7 @@ The following code example shows how to list agreement payment requests for agre
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     ListAgreementPaymentRequestsCommand,
@@ -802,6 +1171,98 @@ listAgreementPaymentRequests();
 ```
 +  For API details, see [ListAgreementPaymentRequests](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/ListAgreementPaymentRequestsCommand) in *AWS SDK for JavaScript API Reference*.
 
+### List agreement requests
+<a name="marketplace-agreement_ListAgreementRequests_javascript_topic"></a>
+
+The following code example shows how to list my agreement requests, filtered by status.
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
+
+```javascript
+const {
+    MarketplaceAgreementClient,
+    ListAgreementRequestsCommand,
+} = require("@aws-sdk/client-marketplace-agreement");
+
+const STATUS = "PENDING_APPROVAL";
+
+async function listAgreementRequests() {
+    const client = new MarketplaceAgreementClient();
+
+    let nextToken = null;
+
+    do {
+        const response = await client.send(
+            new ListAgreementRequestsCommand({
+                status: STATUS,
+                nextToken: nextToken,
+            })
+        );
+
+        for (const summary of response.items ?? []) {
+            console.log("Agreement Request ID: " + summary.agreementRequestId);
+            console.log("Agreement Type: " + summary.agreementType);
+            console.log("Status: " + summary.status);
+            if (summary.agreementId) {
+                console.log("Agreement ID: " + summary.agreementId);
+            }
+            console.log("Offer ID: " + summary.proposalSummary.offerId);
+            if (summary.proposalSummary.offerSetId !== undefined) {
+                console.log("Offer Set ID: " + summary.proposalSummary.offerSetId);
+            }
+            for (const resource of summary.proposalSummary.resources ?? []) {
+                console.log("Resource: " + resource.id + " (" + resource.type + ")");
+            }
+            console.log("---");
+        }
+
+        nextToken = response.nextToken;
+    } while (nextToken != null);
+}
+
+listAgreementRequests();
+```
++  For API details, see [ListAgreementRequests](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/ListAgreementRequestsCommand) in *AWS SDK for JavaScript API Reference*.
+
+### Reject an agreement approval
+<a name="marketplace-agreement_RejectAgreementApproval_javascript_topic"></a>
+
+The following code example shows how to reject an agreement approval as the administrator of my organization.
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
+
+```javascript
+const {
+    MarketplaceAgreementClient,
+    RejectAgreementApprovalCommand,
+} = require("@aws-sdk/client-marketplace-agreement");
+
+// Rejects an agreement approval as the administrator of the buyer's AWS Organization. The agreement request
+// is rejected and no agreement is created.
+const AGREEMENT_APPROVAL_ID = "<AGREEMENT APPROVAL ID HERE>";
+const NOTE = "<REJECTION REASON HERE>";
+
+async function rejectAgreementApproval() {
+    const client = new MarketplaceAgreementClient();
+
+    await client.send(
+        new RejectAgreementApprovalCommand({
+            buyerAgreementApprovalRejectionInput: {
+                agreementApprovalId: AGREEMENT_APPROVAL_ID,
+                note: NOTE,
+            },
+        })
+    );
+
+    console.log("Rejected Agreement Approval ID: " + AGREEMENT_APPROVAL_ID);
+}
+
+rejectAgreementApproval();
+```
++  For API details, see [RejectAgreementApproval](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/RejectAgreementApprovalCommand) in *AWS SDK for JavaScript API Reference*.
+
 ### Reject an agreement cancellation request
 <a name="marketplace-agreement_RejectAgreementCancellationRequest_javascript_topic"></a>
 
@@ -810,7 +1271,7 @@ The following code example shows how to reject an agreement cancellation request
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     RejectAgreementCancellationRequestCommand,
@@ -852,7 +1313,7 @@ The following code example shows how to reject an agreement payment request init
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     RejectAgreementPaymentRequestCommand,
@@ -896,7 +1357,7 @@ The following code example shows how to replace a SaaS contract agreement with a
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     CreateAgreementRequestCommand,
@@ -985,7 +1446,7 @@ The following code example shows how to replace a SaaS free trial with a Contrac
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     CreateAgreementRequestCommand,
@@ -1115,7 +1576,7 @@ The following code example shows how to replace a SaaS usage-based pricing term 
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     CreateAgreementRequestCommand,
@@ -1252,7 +1713,7 @@ The following code example shows how to replace an AMI usage-based pricing term 
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     CreateAgreementRequestCommand,
@@ -1426,6 +1887,67 @@ replaceAmiUsageWhenCuptExists();
 ```
 +  For API details, see [CreateAgreementRequest](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/CreateAgreementRequestCommand) in *AWS SDK for JavaScript API Reference*.
 
+### Start the approval of an agreement request
+<a name="marketplace-agreement_StartAgreementApprovals_javascript_topic"></a>
+
+The following code example shows how to start the approval of an agreement request, optionally with purchase orders.
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
+
+```javascript
+const {
+    MarketplaceAgreementClient,
+    StartAgreementApprovalsCommand,
+} = require("@aws-sdk/client-marketplace-agreement");
+
+const AGREEMENT_REQUEST_ID = "<AGREEMENT REQUEST ID HERE>";
+// planReference of a plan returned by GetAgreementRequestApprovalPlans for this agreement request.
+const PLAN_REFERENCE = "<PLAN REFERENCE HERE>";
+const REQUESTER_NOTE = "<NOTE FOR THE APPROVERS HERE>";
+// Optional: a purchase order for an expected charge, by its id from GetAgreementRequest chargeSummary.
+const CHARGE_ID = undefined;
+const PURCHASE_ORDER_REFERENCE = "<PURCHASE ORDER REFERENCE HERE>";
+
+async function startAgreementApprovals() {
+    const client = new MarketplaceAgreementClient();
+
+    const response = await client.send(
+        new StartAgreementApprovalsCommand({
+            agreementRequestId: AGREEMENT_REQUEST_ID,
+            planInputs: [
+                {
+                    buyerAgreementApprovalPlanInput: {
+                        planReference: PLAN_REFERENCE,
+                        requesterNote: REQUESTER_NOTE,
+                    },
+                },
+            ],
+            purchaseOrders: CHARGE_ID
+                ? [{ chargeId: CHARGE_ID, purchaseOrderReference: PURCHASE_ORDER_REFERENCE }]
+                : undefined,
+        })
+    );
+
+    for (const summary of response.approvalSummaries) {
+        console.log("Approval Type: " + summary.approvalType);
+        console.log("Agreement Request ID: " + summary.agreementRequestId);
+        console.log("Agreement Approval ID: " + summary.agreementApprovalId);
+        console.log("Name: " + summary.name);
+        console.log("Status: " + summary.status);
+        console.log("Created At: " + summary.createdAt);
+        console.log("Updated At: " + summary.updatedAt);
+        console.log("Started At: " + summary.startedAt);
+        console.log("Expires At: " + summary.expiresAt);
+        console.log("Approval Needed By: " + summary.approvalNeededBy);
+        console.log("---");
+    }
+}
+
+startAgreementApprovals();
+```
++  For API details, see [StartAgreementApprovals](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/marketplace-agreement/command/StartAgreementApprovalsCommand) in *AWS SDK for JavaScript API Reference*.
+
 ### Update purchase orders after agreement acceptance
 <a name="marketplace-agreement_UpdatePurchaseOrdersAfterAgreementAcceptance_javascript_topic"></a>
 
@@ -1434,7 +1956,7 @@ The following code example shows how to update purchase orders after the agreeme
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     CreateAgreementRequestCommand,

@@ -14,7 +14,7 @@ Amazon EMR 6.9.0 and higher includes Delta Lake, so you no longer have to packag
 
 1. When you submit EMR Serverless jobs, make sure that you have the following configuration properties and include the following parameters in the `sparkSubmitParameters` field.
 
-   ```
+   ```bash,sh,zsh
    --conf spark.jars=/usr/share/aws/delta/lib/delta-core.jar,/usr/share/aws/delta/lib/delta-storage.jar
        --conf spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension
        --conf spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog
@@ -22,7 +22,7 @@ Amazon EMR 6.9.0 and higher includes Delta Lake, so you no longer have to packag
 
 1. Create a local `delta_sample.py` to test creating and reading a Delta table.
 
-   ```
+   ```bash,sh,zsh
    # delta_sample.py
        from pyspark.sql import SparkSession
 
@@ -40,7 +40,7 @@ Amazon EMR 6.9.0 and higher includes Delta Lake, so you no longer have to packag
 
 1. Using the AWS CLI, upload the `delta_sample.py` file to your Amazon S3 bucket. Then use the `start-job-run` command to submit a job to an existing EMR Serverless application.
 
-   ```
+   ```bash,sh,zsh
    aws s3 cp delta_sample.py s3://{{amzn-s3-demo-bucket}}/code/
 
        aws emr-serverless start-job-run \
@@ -59,7 +59,7 @@ To use Python libraries with Delta Lake, add the `delta-core` library by [ packa
 
 Alternatively, you can use the `SparkContext.addPyFile` to add the Python libraries from the `delta-core` JAR file:
 
-```
+```bash,sh,zsh
 import glob
 from pyspark.sql import SparkSession
 

@@ -11,7 +11,7 @@ S3 Transfer Manager uses [promises](https://docs.aws.amazon.com/aws-sdk-php/v3/a
 
 Using `otherwise`:
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\UploadRequest;
@@ -37,7 +37,7 @@ $uploadPromise->otherwise(function (Throwable $reason) {
 
 Using `then`:
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\UploadRequest;
@@ -70,7 +70,7 @@ $uploadPromise->then(
 ## Using try-catch block
 <a name="try-catch-error-handling"></a>
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Exception\S3TransferException;
@@ -107,7 +107,7 @@ For directory operations, you can also specify a failure policy callback. This c
 
 **Example of using a 'failure\_policy' function for `uploadDirectory` operation**
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\UploadDirectoryRequest;
@@ -147,7 +147,7 @@ $uploadDirPromise->wait();
 
 **Example of using a 'failure\_policy' function for `downloadDirectory` operation**
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\DownloadDirectoryRequest;

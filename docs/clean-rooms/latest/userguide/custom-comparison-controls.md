@@ -26,7 +26,7 @@ A literal comparison evaluates a column against a single hardcoded constant (for
 
 When you use [Minimum aggregation thresholds](custom-min-agg-thresholds.md), AWS Clean Rooms does not allow literal comparison on the `identityColumns` value, except against always-allowed values (see [Literal values that are always allowed](#custom-literal-comparison-always-allowed)). This helps prevent the query runner from submitting a query filtered down to an individual or specific set of users. Avoid allowing literal comparison on low cardinality columns that can single out small groups or individual data subjects.
 
-```
+```json
 {
   "comparisonControls": {
     "allowedLiteralComparisonColumns": [
@@ -57,7 +57,7 @@ Comparisons against any other literal value, including other numbers such as `1`
 
 For example, each of the following conditions is allowed even when the column isn't listed in `allowedLiteralComparisonColumns`:
 
-```
+```sql
 -- Allowed: comparisons against always-allowed values
 WHERE user_id IS NOT NULL
 WHERE revenue > 0
@@ -66,7 +66,7 @@ WHERE is_active = true
 
 Each of the following conditions is blocked when the column isn't listed in `allowedLiteralComparisonColumns`:
 
-```
+```sql
 -- Blocked: other literal values, or a column wrapped in a function
 WHERE revenue > 1
 WHERE status_code = '0'
@@ -80,7 +80,7 @@ A publisher configures a custom analysis rule with a minimum aggregation thresho
 
 Because `user_id` is the identity column, it can't be compared to a literal such as a specific user ID. This helps prevent the advertiser from filtering results down to a single user. But `campaign_id` and `event_date` are high-cardinality, non-identifying dimensions, so the publisher adds them to `allowedLiteralComparisonColumns`, which lets the advertiser filter by campaign and scope the analysis to a date range:
 
-```
+```json
 {
   "aggregationThresholds": [
     {
@@ -96,7 +96,7 @@ Because `user_id` is the identity column, it can't be compared to a literal such
 
 Given the preceding configuration, this query is allowed:
 
-```
+```sql
 -- Allowed: campaign_id and event_date are both in allowedLiteralComparisonColumns
 SELECT campaign_id, COUNT(DISTINCT user_id) AS reach
 FROM impressions
@@ -107,7 +107,7 @@ GROUP BY campaign_id;
 
 Given the same configuration, this query is blocked:
 
-```
+```sql
 -- Blocked: user_id is the identity column and can't be compared to a specific user ID
 SELECT campaign_id, COUNT(DISTINCT user_id) AS reach
 FROM impressions
@@ -126,7 +126,7 @@ A column comparison evaluates the value of one column against the value of anoth
 
 When using [Minimum aggregation thresholds](custom-min-agg-thresholds.md), a data provider can allow column comparison on the `identityColumns` value for use cases that require joining across tables, such as an audience overlap report.
 
-```
+```json
 {
   "comparisonControls": {
     "allowedColumnComparisonColumns": [
@@ -143,7 +143,7 @@ A publisher and an advertiser want to measure their audience overlap — how man
 
 Because `user_id` is the identity column, AWS Clean Rooms already blocks comparing it to a specific value, such as a user ID. This helps prevent filtering directly to one person. To enable the join across tables, the publisher adds `user_id` to `allowedColumnComparisonColumns`. To enable campaign filtering, the publisher adds `campaign_id` to `allowedLiteralComparisonColumns`.
 
-```
+```json
 {
   "aggregationThresholds": [
     {
@@ -160,7 +160,7 @@ Because `user_id` is the identity column, AWS Clean Rooms already blocks compari
 
 Given the preceding configuration, this query is allowed:
 
-```
+```sql
 -- Allowed: user_id is compared against another column (column-to-column join)
 SELECT COUNT(DISTINCT p.user_id) AS overlapping_users
 FROM publisher_audience p
@@ -170,7 +170,7 @@ ON p.user_id = a.user_id;
 
 Given the same configuration, this query is blocked:
 
-```
+```sql
 -- Blocked: email is not in allowedColumnComparisonColumns
 SELECT COUNT(DISTINCT p.user_id) AS overlapping_users
 FROM publisher_audience p
@@ -187,7 +187,7 @@ Comparison controls follow indirect literal comparisons, not only a direct WHERE
 
 The following example shows a query that remains blocked because `zip_code` is not in the allowlist, even though the literal is inside a CASE expression rather than written as a direct predicate:
 
-```
+```sql
 -- Blocked: zip_code is not in allowedLiteralComparisonColumns,
 -- even though the literal comparison is nested inside a CASE expression
 SELECT SUM(CASE WHEN zip_code = '00001' THEN salary ELSE 0 END) AS total

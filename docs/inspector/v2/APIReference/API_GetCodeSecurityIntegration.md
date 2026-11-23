@@ -54,6 +54,7 @@ Content-type: application/json
 {
    "authorizationUrl": "string",
    "createdOn": number,
+   "instanceUrl": "string",
    "integrationArn": "string",
    "lastUpdateOn": number,
    "name": "string",
@@ -62,7 +63,15 @@ Content-type: application/json
    "tags": {
       "string" : "string"
    },
-   "type": "string"
+   "type": "string",
+   "vpcConfiguration": {
+      "codeConnectionsHostArn": "string",
+      "securityGroups": [ "string" ],
+      "subnetIds": [ "string" ],
+      "tlsCertificate": "string",
+      "vpcEndpointId": "string",
+      "vpcId": "string"
+   }
 }
 ```
 
@@ -80,6 +89,11 @@ Type: String
  ** [createdOn](#API_GetCodeSecurityIntegration_ResponseSyntax) **   <a name="inspector2-GetCodeSecurityIntegration-response-createdOn"></a>
 The timestamp when the code security integration was created.
 Type: Timestamp
+
+ ** [instanceUrl](#API_GetCodeSecurityIntegration_ResponseSyntax) **   <a name="inspector2-GetCodeSecurityIntegration-response-instanceUrl"></a>
+The URL of the self-managed GitLab or GitHub Enterprise Server instance associated with the integration.
+Type: String
+Pattern: `https://[-a-zA-Z0-9()@:%_+.~#?&//=]{1,1024}`
 
  ** [integrationArn](#API_GetCodeSecurityIntegration_ResponseSyntax) **   <a name="inspector2-GetCodeSecurityIntegration-response-integrationArn"></a>
 The Amazon Resource Name (ARN) of the code security integration.
@@ -99,7 +113,7 @@ Pattern: `[a-zA-Z0-9-_$:.]*`
  ** [status](#API_GetCodeSecurityIntegration_ResponseSyntax) **   <a name="inspector2-GetCodeSecurityIntegration-response-status"></a>
 The current status of the code security integration.
 Type: String
-Valid Values: `PENDING | IN_PROGRESS | ACTIVE | INACTIVE | DISABLING`
+Valid Values: `PENDING | IN_PROGRESS | ACTIVE | INACTIVE | DISABLING | ESTABLISHING_CONNECTION_IN_PROGRESS | ESTABLISHING_CONNECTION_COMPLETED | ESTABLISHING_CONNECTION_FAILED | PENDING_MANIFEST_CODE | DELETE_IN_PROGRESS | DELETE_FAILED`
 
  ** [statusReason](#API_GetCodeSecurityIntegration_ResponseSyntax) **   <a name="inspector2-GetCodeSecurityIntegration-response-statusReason"></a>
 The reason for the current status of the code security integration.
@@ -114,7 +128,11 @@ Value Length Constraints: Minimum length of 0. Maximum length of 256.
  ** [type](#API_GetCodeSecurityIntegration_ResponseSyntax) **   <a name="inspector2-GetCodeSecurityIntegration-response-type"></a>
 The type of repository provider for the integration.
 Type: String
-Valid Values: `GITLAB_SELF_MANAGED | GITHUB`
+Valid Values: `GITLAB_SELF_MANAGED | GITHUB | GITHUB_ENTERPRISE_SERVER`
+
+ ** [vpcConfiguration](#API_GetCodeSecurityIntegration_ResponseSyntax) **   <a name="inspector2-GetCodeSecurityIntegration-response-vpcConfiguration"></a>
+The VPC configuration associated with the integration, if it connects to a repository provider in a private network.
+Type: [CodeSecurityIntegrationVpcConfiguration](API_CodeSecurityIntegrationVpcConfiguration.md) object
 
 ## Errors
 <a name="API_GetCodeSecurityIntegration_Errors"></a>

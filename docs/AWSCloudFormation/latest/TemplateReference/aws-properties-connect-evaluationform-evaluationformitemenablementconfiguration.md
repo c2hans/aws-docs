@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-connect-evaluationform-evaluationformitemenablementconfiguration-properties"></a>
 
 `Action`  <a name="cfn-connect-evaluationform-evaluationformitemenablementconfiguration-action"></a>
-An enablement action that if condition is satisfied.
+The enablement action to apply if the condition is satisfied.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `DISABLE | ENABLE`
@@ -51,7 +51,7 @@ A condition for item enablement configuration.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DefaultAction`  <a name="cfn-connect-evaluationform-evaluationformitemenablementconfiguration-defaultaction"></a>
-An enablement action that if condition is not satisfied.
+The enablement action to apply if the condition is not satisfied. This action is also applied when the condition depends on an external source that is still pending or could not be resolved.
 *Required*: No
 *Type*: String
 *Allowed values*: `DISABLE | ENABLE`

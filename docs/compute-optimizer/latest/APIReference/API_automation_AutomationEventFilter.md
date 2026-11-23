@@ -16,7 +16,8 @@ Valid Values: `AccountId | ResourceType | EventType | EventStatus`
 Required: Yes
 
  ** values **   <a name="computeoptimizer-Type-automation_AutomationEventFilter-values"></a>
- The values to use for the specified filter.
+ The values to use for the specified filter. For the `ResourceType`, `EventType`, and `EventStatus` filters, the value that you specify must exactly match the corresponding field of the automation event, including case. For example, specify `Complete`, not `complete`. Wildcards aren't supported. An asterisk (`*`) or a question mark (`?`) in a value matches only that literal character.
+ Valid values for the `EventStatus` filter are `Ready`, `InProgress`, `Complete`, `Failed`, `Cancelled`, `RollbackReady`, `RollbackInProgress`, `RollbackComplete`, and `RollbackFailed`.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[a-zA-Z0-9\-_\.\*\?\s]+`

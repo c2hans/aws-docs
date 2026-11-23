@@ -20,7 +20,7 @@ A *workflow definition file* is a YAML file that describes your workflow. By def
 
 The following is an example of a simple workflow definition file. We explain each line of this example in the table that follows.
 
-```
+```yaml
 Name: MyWorkflow
 SchemaVersion: 1.0
 RunMode: QUEUED

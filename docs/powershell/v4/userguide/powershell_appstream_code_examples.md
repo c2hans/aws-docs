@@ -28,7 +28,7 @@ The following code example shows how to use `Add-APSResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This sample adds a resource Tag to AppStream resource**
 
-```
+```powershell
 Add-APSResourceTag -ResourceArn arn:aws:appstream:us-east-1:123456789012:stack/SessionScriptTest -Tag @{StackState='Test'} -Select ^Tag
 ```
 **Output:**
@@ -48,7 +48,7 @@ The following code example shows how to use `Copy-APSImage`.
 **Tools for PowerShell V4**
 **Example 1: This sample copies an image to other region**
 
-```
+```powershell
 Copy-APSImage -DestinationImageName TestImageCopy -DestinationRegion us-west-2 -SourceImageName Powershell
 ```
 **Output:**
@@ -66,7 +66,7 @@ The following code example shows how to use `Disable-APSUSer`.
 **Tools for PowerShell V4**
 **Example 1: This sample disables an user in USERPOOL**
 
-```
+```powershell
 Disable-APSUser -AuthenticationType USERPOOL -UserName TestUser@lab.com
 ```
 +  For API details, see [DisableUser](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -79,7 +79,7 @@ The following code example shows how to use `Enable-APSUser`.
 **Tools for PowerShell V4**
 **Example 1: This sample enables a disabled user in USERPOOL**
 
-```
+```powershell
 Enable-APSUser -AuthenticationType USERPOOL -UserName TestUser@lab.com
 ```
 +  For API details, see [EnableUser](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -92,7 +92,7 @@ The following code example shows how to use `Get-APSAssociatedFleetList`.
 **Tools for PowerShell V4**
 **Example 1: This sample displays fleet associated with a stack**
 
-```
+```powershell
 Get-APSAssociatedFleetList -StackName PowershellStack
 ```
 **Output:**
@@ -110,7 +110,7 @@ The following code example shows how to use `Get-APSAssociatedStackList`.
 **Tools for PowerShell V4**
 **Example 1: This sample displays stack associated with a fleet**
 
-```
+```powershell
 Get-APSAssociatedStackList -FleetName PowershellFleet
 ```
 **Output:**
@@ -128,7 +128,7 @@ The following code example shows how to use `Get-APSDirectoryConfigList`.
 **Tools for PowerShell V4**
 **Example 1: This sample displays Directory Configurations created in AppStream**
 
-```
+```powershell
 Get-APSDirectoryConfigList | Select DirectoryName, OrganizationalUnitDistinguishedNames, CreatedTime
 ```
 **Output:**
@@ -149,7 +149,7 @@ The following code example shows how to use `Get-APSFleetList`.
 **Tools for PowerShell V4**
 **Example 1: This Sample displays details of a fleet**
 
-```
+```powershell
 Get-APSFleetList -Name Test
 ```
 **Output:**
@@ -185,7 +185,7 @@ The following code example shows how to use `Get-APSImageBuilderList`.
 **Tools for PowerShell V4**
 **Example 1: This Sample displays details of an ImageBuilder**
 
-```
+```powershell
 Get-APSImageBuilderList -Name TestImage
 ```
 **Output:**
@@ -220,7 +220,7 @@ The following code example shows how to use `Get-APSImageList`.
 **Tools for PowerShell V4**
 **Example 1: This sample displays private AppStream Images**
 
-```
+```powershell
 Get-APSImageList -Type PRIVATE | select DisplayName, ImageBuilderName, Visibility, arn
 ```
 **Output:**
@@ -241,7 +241,7 @@ The following code example shows how to use `Get-APSImagePermission`.
 **Tools for PowerShell V4**
 **Example 1: This sample displays Image permissions on a shared AppStream Image**
 
-```
+```powershell
 Get-APSImagePermission -Name Powershell  | select SharedAccountId, @{n="AllowFleet";e={$_.ImagePermissions.AllowFleet}}, @{n="AllowImageBuilder";e={$_.ImagePermissions.AllowImageBuilder}}
 ```
 **Output:**
@@ -261,7 +261,7 @@ The following code example shows how to use `Get-APSSessionList`.
 **Tools for PowerShell V4**
 **Example 1: This sample displays list of sessions to a fleet**
 
-```
+```powershell
 Get-APSSessionList -FleetName PowershellFleet -StackName PowershellStack
 ```
 **Output:**
@@ -288,7 +288,7 @@ The following code example shows how to use `Get-APSStackList`.
 **Tools for PowerShell V4**
 **Example 1: This sample displays list of AppStream Stack**
 
-```
+```powershell
 Get-APSStackList | Select DisplayName, Arn, CreatedTime
 ```
 **Output:**
@@ -309,7 +309,7 @@ The following code example shows how to use `Get-APSTagsForResourceList`.
 **Tools for PowerShell V4**
 **Example 1: This sample displays tags on an AppStream resource**
 
-```
+```powershell
 Get-APSTagsForResourceList -ResourceArn arn:aws:appstream:us-east-1:123456789012:stack/SessionScriptTest
 ```
 **Output:**
@@ -329,7 +329,7 @@ The following code example shows how to use `Get-APSUsageReportSubscription`.
 **Tools for PowerShell V4**
 **Example 1: This sample displays AppStreamUsageReport configuration details**
 
-```
+```powershell
 Get-APSUsageReportSubscription
 ```
 **Output:**
@@ -349,7 +349,7 @@ The following code example shows how to use `Get-APSUser`.
 **Tools for PowerShell V4**
 **Example 1: This Sample displays list of users with enabled status**
 
-```
+```powershell
 Get-APSUser -AuthenticationType USERPOOL | Select-Object UserName, AuthenticationType, Enabled
 ```
 **Output:**
@@ -373,7 +373,7 @@ The following code example shows how to use `Get-APSUserStackAssociation`.
 **Tools for PowerShell V4**
 **Example 1: This sample displays list of users assigned to a stack**
 
-```
+```powershell
 Get-APSUserStackAssociation -StackName PowershellStack
 ```
 **Output:**
@@ -394,7 +394,7 @@ The following code example shows how to use `New-APSDirectoryConfig`.
 **Tools for PowerShell V4**
 **Example 1: This sample creates a directory configuration in AppStream**
 
-```
+```powershell
 New-APSDirectoryConfig -ServiceAccountCredentials_AccountName contoso\ServiceAccount -ServiceAccountCredentials_AccountPassword MyPass -DirectoryName contoso.com -OrganizationalUnitDistinguishedName "OU=AppStream,OU=Contoso,DC=Contoso,DC=com"
 ```
 **Output:**
@@ -414,7 +414,7 @@ The following code example shows how to use `New-APSFleet`.
 **Tools for PowerShell V4**
 **Example 1: This sample creates a new AppStream fleet**
 
-```
+```powershell
 New-APSFleet -ComputeCapacity_DesiredInstance 1 -InstanceType stream.standard.medium -Name TestFleet -DisplayName TestFleet -FleetType ON_DEMAND -EnableDefaultInternetAccess $True -VpcConfig_SubnetIds "subnet-123ce32","subnet-a1234cfd" -VpcConfig_SecurityGroupIds sg-4d012a34 -ImageName SessionScriptTest -Region us-west-2
 ```
 **Output:**
@@ -450,7 +450,7 @@ The following code example shows how to use `New-APSImageBuilder`.
 **Tools for PowerShell V4**
 **Example 1: This sample creates an Image Builder in AppStream**
 
-```
+```powershell
 New-APSImageBuilder -InstanceType stream.standard.medium -Name TestIB -DisplayName TestIB -ImageName AppStream-WinServer2012R2-12-12-2019 -EnableDefaultInternetAccess $True -VpcConfig_SubnetId subnet-a1234cfd -VpcConfig_SecurityGroupIds sg-2d012a34 -Region us-west-2
 ```
 **Output:**
@@ -485,7 +485,7 @@ The following code example shows how to use `New-APSImageBuilderStreamingURL`.
 **Tools for PowerShell V4**
 **Example 1: This sample creates an ImageBuilder streaming URL with validity of 2 hours**
 
-```
+```powershell
 New-APSImageBuilderStreamingURL -Name TestIB -Validity 7200 -Region us-west-2
 ```
 **Output:**
@@ -505,7 +505,7 @@ The following code example shows how to use `New-APSStack`.
 **Tools for PowerShell V4**
 **Example 1: This sample creates a new AppStream Stack**
 
-```
+```powershell
 New-APSStack -Name TestStack -DisplayName TestStack -ApplicationSettings_Enabled $True -ApplicationSettings_SettingsGroup TestStack -Region us-west-2
 ```
 **Output:**
@@ -535,7 +535,7 @@ The following code example shows how to use `New-APSStreamingURL`.
 **Tools for PowerShell V4**
 **Example 1: This sample creates a streaming URL of Stack**
 
-```
+```powershell
 New-APSStreamingURL -StackName SessionScriptTest -FleetName SessionScriptNew -UserId TestUser
 ```
 **Output:**
@@ -555,7 +555,7 @@ The following code example shows how to use `New-APSUsageReportSubscription`.
 **Tools for PowerShell V4**
 **Example 1: This sample enables AppStream Usage Reports**
 
-```
+```powershell
 New-APSUsageReportSubscription
 ```
 **Output:**
@@ -575,7 +575,7 @@ The following code example shows how to use `New-APSUser`.
 **Tools for PowerShell V4**
 **Example 1: This sample creates a user in USERPOOL**
 
-```
+```powershell
 New-APSUser -UserName Test@lab.com -AuthenticationType USERPOOL -FirstName 'kt' -LastName 'aws' -Select ^UserName
 ```
 **Output:**
@@ -593,7 +593,7 @@ The following code example shows how to use `Register-APSFleet`.
 **Tools for PowerShell V4**
 **Example 1: This sample registers fleet with a stack**
 
-```
+```powershell
 Register-APSFleet -StackName TestStack -FleetName TestFleet -Region us-west-2
 ```
 +  For API details, see [AssociateFleet](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -606,7 +606,7 @@ The following code example shows how to use `Register-APSUserStackBatch`.
 **Tools for PowerShell V4**
 **Example 1: This sample assigns stack to a user in USERPOOL**
 
-```
+```powershell
 Register-APSUserStackBatch -UserStackAssociation @{AuthenticationType="USERPOOL";SendEmailNotification=$False;StackName="PowershellStack";UserName="TestUser1@lab.com"}
 ```
 +  For API details, see [BatchAssociateUserStack](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -619,7 +619,7 @@ The following code example shows how to use `Remove-APSDirectoryConfig`.
 **Tools for PowerShell V4**
 **Example 1: This sample removes AppStream Directory configuration**
 
-```
+```powershell
 Remove-APSDirectoryConfig -DirectoryName contoso.com
 ```
 **Output:**
@@ -640,7 +640,7 @@ The following code example shows how to use `Remove-APSFleet`.
 **Tools for PowerShell V4**
 **Example 1: This sample removes deletes an AppStream fleet**
 
-```
+```powershell
 Remove-APSFleet -Name TestFleet -Region us-west-2
 ```
 **Output:**
@@ -661,7 +661,7 @@ The following code example shows how to use `Remove-APSImage`.
 **Tools for PowerShell V4**
 **Example 1: This sample deletes an Image**
 
-```
+```powershell
 Remove-APSImage -Name TestImage -Region us-west-2
 ```
 **Output:**
@@ -699,7 +699,7 @@ The following code example shows how to use `Remove-APSImageBuilder`.
 **Tools for PowerShell V4**
 **Example 1: This sample deletes an ImageBuilder**
 
-```
+```powershell
 Remove-APSImageBuilder -Name TestIB -Region us-west-2
 ```
 **Output:**
@@ -739,7 +739,7 @@ The following code example shows how to use `Remove-APSImagePermission`.
 **Tools for PowerShell V4**
 **Example 1: This sample removes permissions of an Image**
 
-```
+```powershell
 Remove-APSImagePermission -Name Powershell -SharedAccountId 123456789012
 ```
 **Output:**
@@ -760,7 +760,7 @@ The following code example shows how to use `Remove-APSResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This sample removes a resource tag from AppStream resource**
 
-```
+```powershell
 Remove-APSResourceTag -ResourceArn arn:aws:appstream:us-east-1:123456789012:stack/SessionScriptTest -TagKey StackState
 ```
 **Output:**
@@ -781,7 +781,7 @@ The following code example shows how to use `Remove-APSStack`.
 **Tools for PowerShell V4**
 **Example 1: This sample deletes a Stack**
 
-```
+```powershell
 Remove-APSStack -Name TestStack -Region us-west-2
 ```
 **Output:**
@@ -802,7 +802,7 @@ The following code example shows how to use `Remove-APSUsageReportSubscription`.
 **Tools for PowerShell V4**
 **Example 1: This sample disables AppStream Usage Report subscription**
 
-```
+```powershell
 Remove-APSUsageReportSubscription
 ```
 **Output:**
@@ -823,7 +823,7 @@ The following code example shows how to use `Remove-APSUser`.
 **Tools for PowerShell V4**
 **Example 1: This sample deletes a user from USERPOOL**
 
-```
+```powershell
 Remove-APSUser -UserName TestUser@lab.com -AuthenticationType USERPOOL
 ```
 **Output:**
@@ -844,7 +844,7 @@ The following code example shows how to use `Revoke-APSSession`.
 **Tools for PowerShell V4**
 **Example 1: This sample revokes a session to AppStream fleet**
 
-```
+```powershell
 Revoke-APSSession -SessionId 6cd2f9a3-f948-4aa1-8014-8a7dcde14877
 ```
 +  For API details, see [ExpireSession](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -857,7 +857,7 @@ The following code example shows how to use `Start-APSFleet`.
 **Tools for PowerShell V4**
 **Example 1: This sample starts a fleet**
 
-```
+```powershell
 Start-APSFleet -Name PowershellFleet
 ```
 +  For API details, see [StartFleet](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -870,7 +870,7 @@ The following code example shows how to use `Start-APSImageBuilder`.
 **Tools for PowerShell V4**
 **Example 1: This sample starts an ImageBuilder**
 
-```
+```powershell
 Start-APSImageBuilder -Name TestImage
 ```
 **Output:**
@@ -905,7 +905,7 @@ The following code example shows how to use `Stop-APSFleet`.
 **Tools for PowerShell V4**
 **Example 1: This sample stops a fleet**
 
-```
+```powershell
 Stop-APSFleet -Name PowershellFleet
 ```
 +  For API details, see [StopFleet](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -918,7 +918,7 @@ The following code example shows how to use `Stop-APSImageBuilder`.
 **Tools for PowerShell V4**
 **Example 1: This sample stops an ImageBuilder**
 
-```
+```powershell
 Stop-APSImageBuilder -Name TestImage
 ```
 **Output:**
@@ -953,7 +953,7 @@ The following code example shows how to use `Unregister-APSFleet`.
 **Tools for PowerShell V4**
 **Example 1: This sample unregisters a fleet from stack**
 
-```
+```powershell
 Unregister-APSFleet -StackName TestStack -FleetName TestFleet -Region us-west-2
 ```
 +  For API details, see [DisassociateFleet](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -966,7 +966,7 @@ The following code example shows how to use `Unregister-APSUserStackBatch`.
 **Tools for PowerShell V4**
 **Example 1: This sample removes an user from an assigned Stack**
 
-```
+```powershell
 Unregister-APSUserStackBatch -UserStackAssociation @{AuthenticationType="USERPOOL";SendEmailNotification=$False;StackName="PowershellStack";UserName="TestUser1@lab.com"}
 ```
 +  For API details, see [BatchDisassociateUserStack](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -979,7 +979,7 @@ The following code example shows how to use `Update-APSDirectoryConfig`.
 **Tools for PowerShell V4**
 **Example 1: This sample updates the Directory configuration created in AppStream**
 
-```
+```powershell
 Update-APSDirectoryConfig -ServiceAccountCredentials_AccountName contoso\ServiceAccount -ServiceAccountCredentials_AccountPassword MyPass@1$@# -DirectoryName contoso.com -OrganizationalUnitDistinguishedName "OU=AppStreamNew,OU=Contoso,DC=Contoso,DC=com"
 ```
 **Output:**
@@ -999,7 +999,7 @@ The following code example shows how to use `Update-APSFleet`.
 **Tools for PowerShell V4**
 **Example 1: This sample updates properties of a fleet**
 
-```
+```powershell
 Update-APSFleet -Name PowershellFleet -EnableDefaultInternetAccess $True -DisconnectTimeoutInSecond 950
 ```
 **Output:**
@@ -1035,7 +1035,7 @@ The following code example shows how to use `Update-APSImagePermission`.
 **Tools for PowerShell V4**
 **Example 1: This sample shares an AppStream Image with other account**
 
-```
+```powershell
 Update-APSImagePermission -Name Powershell -SharedAccountId 123456789012 -ImagePermissions_AllowFleet $True -ImagePermissions_AllowImageBuilder $True
 ```
 +  For API details, see [UpdateImagePermissions](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1048,7 +1048,7 @@ The following code example shows how to use `Update-APSStack`.
 **Tools for PowerShell V4**
 **Example 1: This sample updates(enables) Application settings persistence and Home Folders on a Stack **
 
-```
+```powershell
 Update-APSStack -Name PowershellStack -ApplicationSettings_Enabled $True -ApplicationSettings_SettingsGroup PowershellStack -StorageConnector @{ConnectorType="HOMEFOLDERS"}
 ```
 **Output:**

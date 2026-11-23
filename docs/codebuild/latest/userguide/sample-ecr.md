@@ -32,7 +32,7 @@ If you are using an S3 input bucket, be sure to create a ZIP file that contains 
 
       If you use the AWS CLI to create the build project, the JSON-formatted input to the `create-project` command might look similar to this. (Replace the placeholders with your own values.)
 
-      ```
+      ```json
       {
         "name": "sample-go-project",
         "source": {
@@ -83,7 +83,7 @@ If you are using an S3 input bucket, be sure to create a ZIP file that contains 
 
    1. For **Conditions**, add the following:
 
-      ```
+      ```json
       {
          "StringEquals":{
             "aws:SourceAccount":"{{<AWS-account-ID>}}",
@@ -105,7 +105,7 @@ If you are using an S3 input bucket, be sure to create a ZIP file that contains 
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -147,7 +147,7 @@ If you are using an S3 input bucket, be sure to create a ZIP file that contains 
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -185,7 +185,7 @@ If you are using an S3 input bucket, be sure to create a ZIP file that contains 
 
    If you use the AWS CLI to create the build project, the JSON-formatted input to the `create-project` command might look similar to this. (Replace the placeholders with your own values.)
 
-   ```
+   ```json
    {
      "name": "amazon-ecr-sample-project",
      "source": {
@@ -230,7 +230,7 @@ This sample uses these files.
 
 `buildspec.yml` (in `{{(root directory name)}}`)
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -252,7 +252,7 @@ artifacts:
 
 `hello.go` (in `{{(root directory name)}}`)
 
-```
+```go
 package main
 import "fmt"
 

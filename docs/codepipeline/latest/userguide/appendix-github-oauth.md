@@ -147,7 +147,7 @@ The date when the commit was committed, in timestamp format.
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: Source
 Actions:
   - InputArtifacts: []
@@ -171,7 +171,7 @@ Actions:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "Source",
     "Actions": [

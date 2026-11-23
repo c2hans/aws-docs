@@ -14,7 +14,7 @@ The following code examples show how to create a new AMI free trial agreement.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.buyer;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -117,7 +117,7 @@ public class NewAmiFreeTrial {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/javascript) repository.
 
-```
+```javascript
 const {
     MarketplaceAgreementClient,
     CreateAgreementRequestCommand,
@@ -194,7 +194,7 @@ createAndAcceptAmiFreeTrialAgreementRequest();
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 """
 Demonstrates how to create an AMI Free Trial agreement
 using the AWS Marketplace Agreement Service APIs.

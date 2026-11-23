@@ -45,7 +45,7 @@ For more information, see [Custom resources and Application Auto Scaling](https:
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deregisters an Application Auto Scaling scalable target.Deregistering a scalable target deletes the scaling policies that are associated with it.**
 
-```
+```powershell
 Remove-AASScalableTarget -ResourceId fleet/MyFleet -ScalableDimension appstream:fleet:DesiredCapacity -ServiceNamespace AppStream
 ```
 **Output:**
@@ -61,7 +61,7 @@ Performing the operation "Remove-AASScalableTarget (DeregisterScalableTarget)" o
 **Tools for PowerShell V5**
 **Example 1: This cmdlet deregisters an Application Auto Scaling scalable target.Deregistering a scalable target deletes the scaling policies that are associated with it.**
 
-```
+```powershell
 Remove-AASScalableTarget -ResourceId fleet/MyFleet -ScalableDimension appstream:fleet:DesiredCapacity -ServiceNamespace AppStream
 ```
 **Output:**

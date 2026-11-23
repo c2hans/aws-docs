@@ -43,7 +43,7 @@ The SDK's default behavior for `updateItem` requests removes attributes from the
 
 The following example demonstrates `ignoreNullsMode()` for the `updateItem()` method.
 
-```
+```java
     public static void updateItemNullsExample() {
         Customer customer = new Customer();
         customer.setCustName("CustomerName");
@@ -103,7 +103,7 @@ Basic methods of the enhanced client map to the DynamoDB service operations that
 
 The example uses the [`Customer` class](ddb-en-client-gs-tableschema.md#ddb-en-client-gs-tableschema-anno-bean-cust) shown previously.
 
-```
+```java
 // CreateTable
 customerTable.createTable();
 
@@ -166,7 +166,7 @@ To illustrate the different approaches used by the two client APIs, the followin
 ### Compare: Create a table using the standard DynamoDB client
 <a name="ddb-en-client-use-compare-cs1"></a>
 
-```
+```java
 DependencyFactory.dynamoDbClient().createTable(builder -> builder
         .tableName(TABLE_NAME)
         .attributeDefinitions(
@@ -196,7 +196,7 @@ DependencyFactory.dynamoDbClient().createTable(builder -> builder
 ### Compare: Create a table using the DynamoDB Enhanced Client
 <a name="ddb-en-client-use-compare-cs2"></a>
 
-```
+```java
 DynamoDbEnhancedClient enhancedClient = DependencyFactory.enhancedClient();
 productCatalog = enhancedClient.table(TABLE_NAME, TableSchema.fromImmutableClass(ProductCatalog.class));
 productCatalog.createTable(b -> b
@@ -215,7 +215,7 @@ The enhanced client uses the following annotated data class. The DynamoDB Enhanc
 ### `ProductCatalog` class
 <a name="ddb-en-client-use-compare-cs3"></a>
 
-```
+```java
 package org.example.tests.model;
 
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbIgnore;
@@ -315,7 +315,7 @@ The following two code examples of a batch write illustrate the verboseness and 
 ### Compare: Batch write using the standard DynamoDB client
 <a name="ddb-en-client-use-compare-cs4"></a>
 
-```
+```java
     public static void batchWriteStandard(DynamoDbClient dynamoDbClient, String tableName) {
 
         Map<String, AttributeValue> catalogItem = Map.of(
@@ -356,7 +356,7 @@ The following two code examples of a batch write illustrate the verboseness and 
 ### Compare: Batch write using the DynamoDB Enhanced Client
 <a name="ddb-en-client-use-compare-cs5"></a>
 
-```
+```java
     public static void batchWriteEnhanced(DynamoDbTable<ProductCatalog> productCatalog) {
         ProductCatalog prod = ProductCatalog.builder()
                 .id(1)

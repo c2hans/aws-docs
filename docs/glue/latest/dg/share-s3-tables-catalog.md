@@ -39,7 +39,7 @@ The resource link appears in the target database and points to the original tabl
 
 Create a database resource link:
 
-```
+```bash
 aws glue create-database \
   --database-name "{{my-database-resource-link}}" \
   --database-input '{
@@ -53,7 +53,7 @@ aws glue create-database \
 
 Create a table resource link:
 
-```
+```bash
 aws glue create-table \
   --table-name "{{my-table-resource-link}}" \
   --table-input '{

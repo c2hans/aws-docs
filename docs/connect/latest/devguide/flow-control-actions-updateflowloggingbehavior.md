@@ -9,7 +9,7 @@ Enables or disables flow logging. If this is a flow, this same behavior remains 
 ## Parameter object
 <a name="updateflowloggingbehavior-parameter"></a>
 
-```
+```json
 {
   "FlowLoggingBehavior": One of [Enabled,Disabled]. *Dynamic values are not supported*
 }

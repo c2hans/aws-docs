@@ -9,7 +9,7 @@ eksctl supports launching managed nodegroups using a provided [EC2 Launch Templa
 ## Creating managed nodegroups using a provided launch template
 <a name="_creating_managed_nodegroups_using_a_provided_launch_template"></a>
 
-```
+```yaml
 # managed-cluster.yaml
 # A cluster with two managed nodegroups
 ---
@@ -42,7 +42,7 @@ managedNodeGroups:
 ## Upgrading a managed nodegroup to use a different launch template version
 <a name="_upgrading_a_managed_nodegroup_to_use_a_different_launch_template_version"></a>
 
-```
+```shell
 eksctl upgrade nodegroup --name=managed-ng-1 --cluster=managed-cluster --launch-template-version=3
 ```
 
@@ -51,7 +51,7 @@ If a launch template is using a custom AMI, then the new version should also use
 
 If a launch template is not using a custom AMI, the Kubernetes version to upgrade to can also be specified:
 
-```
+```shell
 eksctl upgrade nodegroup --name=managed-ng-1 --cluster=managed-cluster --launch-template-version=3 --kubernetes-version=1.17
 ```
 

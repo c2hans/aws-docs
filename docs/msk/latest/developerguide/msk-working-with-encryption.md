@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-working-wi
 
 When creating an MSK cluster, you can specify encryption settings in JSON format. The following is an example.
 
-```
+```JSON
 {
    "EncryptionAtRest": {
        "DataVolumeKMSKeyId": "arn:aws:kms:us-east-1:123456789012:key/abcdabcd-1234-abcd-1234-abcd123e8e8e"

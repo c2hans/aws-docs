@@ -21,7 +21,7 @@ Macie automatically publishes events for all new findings and subsequent occurre
 
 The following example shows the schema of an [Amazon EventBridge event](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events.html) for an Amazon Macie finding. For detailed descriptions of the fields that can be included in a finding event, see [Findings](https://docs.aws.amazon.com/macie/latest/APIReference/findings-describe.html) in the *Amazon Macie API Reference*. The structure and fields of a finding event map closely to the `Finding` object of the Amazon Macie API.
 
-```
+```json
 {
     "version": "0",
     "id": "event ID",
@@ -54,7 +54,7 @@ The following example uses sample data to demonstrate the structure and nature o
 
 Also note that the value for the `sample` field is `true`. This value emphasizes that this is an example event for use in the documentation.
 
-```
+```json
 {
     "version": "0",
     "id": "0948ba87-d3b8-c6d4-f2da-732a1example",
@@ -217,7 +217,7 @@ The following example uses sample data to demonstrate the structure and nature o
 
 Also note that the value for the `sample` field is `true`. This value emphasizes that this is an example event for use in the documentation.
 
-```
+```json
 {
     "version": "0",
     "id": "14ddd0b1-7c90-b9e3-8a68-6a408example",

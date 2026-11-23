@@ -89,7 +89,7 @@ For more information on how to write rules with Guard, see [Writing Guard rules]
 
 Use the following basic format to create rules:
 
-```
+```guard
 # Basic rule format
 rule <rule_name> when
     resourceType == "<AWS::Service::Resource>" {
@@ -127,7 +127,7 @@ The 12-digit AWS account ID associated with the resource.
 ------
 #### [ Status checks ]
 
-```
+```guard
 let allowed_status = ['ACTIVE', 'RUNNING']
 rule check_resource_status when
     resourceType == "AWS::Service::Resource" {
@@ -138,7 +138,7 @@ rule check_resource_status when
 ------
 #### [ Required properties ]
 
-```
+```guard
 rule check_required_properties when
     resourceType == "AWS::Service::Resource" {
     configuration.propertyName exists
@@ -149,7 +149,7 @@ rule check_required_properties when
 ------
 #### [ Query blocks ]
 
-```
+```guard
 configuration.Properties {
     property1 exists
     property2 is_string
@@ -160,7 +160,7 @@ configuration.Properties {
 ------
 #### [ Conditional evaluation ]
 
-```
+```guard
 when configuration.feature_enabled == true {
     configuration.feature_settings exists
     configuration.feature_settings is_struct
@@ -170,7 +170,7 @@ when configuration.feature_enabled == true {
 ------
 #### [ Custom messages ]
 
-```
+```guard
 rule check_compliance when
     resourceType == "AWS::Service::Resource" {
     configuration.property == expected_value <<Custom error message explaining the requirement>>
@@ -185,7 +185,7 @@ rule check_compliance when
 ------
 #### [ Range checks ]
 
-```
+```guard
 rule check_numeric_limits {
     # Inclusive range (lower_limit <= value <= upper_limit)
     configuration.value IN r[minimum_value, maximum_value]
@@ -204,7 +204,7 @@ rule check_numeric_limits {
 ------
 #### [ Combining conditions ]
 
-```
+```guard
 # AND conditions (implicit through new lines)
 condition_1
 condition_2
@@ -217,7 +217,7 @@ condition_4
 ------
 #### [ Chaining rules ]
 
-```
+```guard
 rule check_prerequisites {
     configuration.required_setting exists
 }
@@ -242,7 +242,7 @@ rule check_details when check_prerequisites {
 
 The following example shows the policy definition for an AWS Config Custom Policy rule version of the AWS Config Managed rule [dynamodb-pitr-enabled](dynamodb-pitr-enabled.md). This rule checks if DynamoDB tables have Point-in-Time Recovery enabled.
 
-```
+```guard
 # Check if DynamoDB tables have Point-in-Time Recovery enabled
 let status = ['ACTIVE']
 

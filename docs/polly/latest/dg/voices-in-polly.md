@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/voices-in-polly.html
 
 The inventory of voices and the number of languages included is continually being updated to include additional choices. To suggest a new language or voice, provide feedback on this page. Unfortunately, we are not able to comment on plans for specific new languages before they are released.
 
+You can also create your own voice from recordings of a speaker. This feature is in preview. For more information, see [Voice cloning in Amazon Polly](custom-voices.md).
+
 **Note**
 To hear example Amazon Polly voices in your browser, see the [Amazon Polly product overview](https://aws.amazon.com/polly).
 

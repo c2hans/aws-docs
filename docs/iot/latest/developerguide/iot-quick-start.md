@@ -97,7 +97,7 @@ For more information about topic subscription and publish, see the example code 
 
    After you run **./start.sh**, messages appear in the MQTT client, similar to the following:
 
-   ```
+   ```JSON
    {
      "message": "Hello World!" [1]
    }

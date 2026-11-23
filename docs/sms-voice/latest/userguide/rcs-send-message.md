@@ -75,7 +75,7 @@ The following Python examples demonstrate how to send RCS messages using each of
 
 The following example sends a message through a phone pool. The service selects the best origination identity from the pool and automatically falls back to SMS if RCS delivery is not possible.
 
-```
+```python
 import boto3
 
 client = boto3.client('pinpoint-sms-voice-v2')
@@ -95,7 +95,7 @@ print(f"Message ID: {response['MessageId']}")
 
 The following example sends a message at the account level by omitting the origination identity. The service selects an identity from all available identities in your account using the priority order.
 
-```
+```python
 import boto3
 
 client = boto3.client('pinpoint-sms-voice-v2')
@@ -117,7 +117,7 @@ If your account contains phone numbers registered for different use cases, accou
 
 The following example sends a message directly through an AWS RCS Agent ARN. The message is delivered via RCS only, with no SMS fallback.
 
-```
+```python
 import boto3
 
 client = boto3.client('pinpoint-sms-voice-v2')

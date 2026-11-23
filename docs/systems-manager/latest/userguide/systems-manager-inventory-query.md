@@ -41,7 +41,7 @@ The following `PassRole` and additional required permissions block
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -162,7 +162,7 @@ Use the following procedure to configure the **Amazon-GlueServiceRoleForSSM** ro
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

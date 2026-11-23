@@ -16,7 +16,7 @@ You can only include steps in a pipeline definition once. Because of this, steps
 
 You can view the status of your steps using the following command:
 
-```
+```python
 execution.list_steps()
 ```
 

@@ -72,7 +72,7 @@ checkVpc.securityGroups - Security groups associated with the Lambda function.
 
  checkNACL.NACL - Analysis message with resource names. `LambdaIp` refers to the private IP address of the elastic network interface for your Lambda function. The `LambdaIpRules` object is only generated for subnets that have a route to a NAT gateway. The following content is an example of the output.
 
-```
+```json
 {
    "subnet-1234567890":{
       "NACL":"acl-1234567890",
@@ -98,7 +98,7 @@ checkVpc.securityGroups - Security groups associated with the Lambda function.
 
 checkSecurityGroups.secgrps - Analysis for the security group associated with your Lambda function. The following content is an example of the output.
 
-```
+```json
 {
    "sg-123456789":{
       "Status":"Allowed",
@@ -109,7 +109,7 @@ checkSecurityGroups.secgrps - Analysis for the security group associated with yo
 
 checkSubnet.subnets - Analysis for the subnets in your VPC associated with your Lambda function. The following content is an example of the output.
 
-```
+```json
 {
    "subnet-0c4ee6cdexample15":{
       "Route":{

@@ -74,7 +74,7 @@ If this build task fails, the batch build can still succeed.
 
 The following is an example of a build graph buildspec entry:
 
-```
+```yaml
 batch:
   fast-fail: false
   build-graph:
@@ -149,7 +149,7 @@ If this build task fails, the batch build can still succeed.
 
 The following is an example of a build list buildspec entry:
 
-```
+```yaml
 batch:
   fast-fail: false
   build-list:
@@ -210,7 +210,7 @@ An array that contains the environment variables that will be present in the bui
 
 The following is an example of a build matrix buildspec entry:
 
-```
+```yaml
 batch:
   build-matrix:
     static:
@@ -248,7 +248,7 @@ If any fanout build task fails, the batch build can still succeed.
 
 The following is an example of a build fanout buildspec entry:
 
-```
+```yaml
 version: 0.2
 
 batch:

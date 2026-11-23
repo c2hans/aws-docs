@@ -18,6 +18,7 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Data protection in AWS FinOps Agent](data-protection.md)
 + [Identity and access management for AWS FinOps Agent](security-iam.md)
 + [AWS managed policies for AWS FinOps Agent](security-iam-awsmanpol.md)
++ [Using service-linked roles for AWS FinOps Agent](using-service-linked-roles.md)
 + [Agent guardrail controls](agent-guardrail-control.md)
 + [Service improvement](service-improvement.md)
 + [Amazon Bedrock usage and cross-region inference](cross-region-inference.md)

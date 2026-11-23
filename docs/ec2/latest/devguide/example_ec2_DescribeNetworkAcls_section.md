@@ -143,7 +143,7 @@ For more information, see [Network ACLs](https://docs.aws.amazon.com/vpc/latest/
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified network ACL.**
 
-```
+```powershell
 Get-EC2NetworkAcl -NetworkAclId acl-12345678
 ```
 **Output:**
@@ -158,7 +158,7 @@ VpcId        : vpc-12345678
 ```
 **Example 2: This example describes the rules for the specified network ACL.**
 
-```
+```powershell
 (Get-EC2NetworkAcl -NetworkAclId acl-12345678).Entries
 ```
 **Output:**
@@ -182,7 +182,7 @@ RuleNumber   : 32767
 ```
 **Example 3: This example describes all your network ACLs.**
 
-```
+```powershell
 Get-EC2NetworkAcl
 ```
 +  For API details, see [DescribeNetworkAcls](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -190,7 +190,7 @@ Get-EC2NetworkAcl
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified network ACL.**
 
-```
+```powershell
 Get-EC2NetworkAcl -NetworkAclId acl-12345678
 ```
 **Output:**
@@ -205,7 +205,7 @@ VpcId        : vpc-12345678
 ```
 **Example 2: This example describes the rules for the specified network ACL.**
 
-```
+```powershell
 (Get-EC2NetworkAcl -NetworkAclId acl-12345678).Entries
 ```
 **Output:**
@@ -229,7 +229,7 @@ RuleNumber   : 32767
 ```
 **Example 3: This example describes all your network ACLs.**
 
-```
+```powershell
 Get-EC2NetworkAcl
 ```
 +  For API details, see [DescribeNetworkAcls](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

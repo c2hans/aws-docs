@@ -8,7 +8,7 @@ To list all available resource templates that an AgentCore gateway provides, mak
 
 **Example**
 
-```
+```http
 POST /mcp HTTP/1.1
 Host: ${GatewayEndpoint}
 Accept: application/json, text/event-stream
@@ -20,7 +20,7 @@ ${RequestBody}
 ```
 On version `2026-07-28`, each request carries the `MCP-Protocol-Version` header, the `Mcp-Method` request-metadata header, and the `_meta` version fields in the body.
 
-```
+```http
 POST /mcp HTTP/1.1
 Host: ${GatewayEndpoint}
 Accept: application/json, text/event-stream
@@ -57,7 +57,7 @@ To see examples of listing available resource templates in the gateway, select o
 **Example**
 Set the `MCP-Protocol-Version` header to a version that your gateway supports.
 
-```
+```python
 import requests
 import json
 
@@ -85,7 +85,7 @@ print(json.dumps(templates, indent=2))
 ```
 On version `2026-07-28`, add the `MCP-Protocol-Version` and `Mcp-Method` headers, and include the `_meta` version fields in the request body. Your gateway’s `supportedVersions` must include `2026-07-28`.
 
-```
+```python
 import requests
 import json
 
@@ -120,7 +120,7 @@ templates = list_resource_templates(gateway_url, access_token)
 print(json.dumps(templates, indent=2))
 ```
 
-```
+```python
 import asyncio
 from mcp import ClientSession
 from mcp.client.streamable_http import streamablehttp_client
@@ -186,7 +186,7 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-```
+```python
 # NOTE: Strands SDK resource template support may vary. Use the MCP Client
 # approach above for the most reliable resources/templates/list implementation.
 from strands.tools.mcp.mcp_client import MCPClient
@@ -205,7 +205,7 @@ def run_agent(mcp_url: str, access_token: str):
 run_agent(<MCP URL>, <Access token>)
 ```
 
-```
+```python
 # NOTE: LangGraph MCP adapter resource template support may vary. Use the MCP
 # Client approach above for the most reliable implementation.
 

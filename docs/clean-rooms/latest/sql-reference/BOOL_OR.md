@@ -47,7 +47,7 @@ BC    | t
 
 The following example returns NULL.
 
-```
+```sql
 SELECT BOOL_OR(NULL = '123')
                bool_or
 ------

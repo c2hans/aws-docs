@@ -14,7 +14,7 @@ The following code examples show how to get started using IAM.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
 namespace IAMActions;
 
 public class HelloIAM
@@ -50,7 +50,7 @@ public class HelloIAM
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam/hello_iam#code-examples).
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -92,7 +92,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the iam.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/iam/IAMClient.h>
 #include <aws/iam/model/ListPoliciesRequest.h>
@@ -173,7 +173,7 @@ int main(int argc, char **argv) {
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -224,7 +224,7 @@ func main() {
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
 import software.amazon.awssdk.services.iam.model.ListPoliciesResponse;
@@ -266,7 +266,7 @@ public class HelloIAM {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 
-```
+```javascript
 import { IAMClient, paginateListPolicies } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -303,7 +303,7 @@ export const listLocalPolicies = async () => {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 import boto3
 
 def main():
@@ -335,7 +335,7 @@ if __name__ == "__main__":
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
 require 'aws-sdk-iam'
 require 'logger'
 
@@ -383,7 +383,7 @@ end
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 From src/bin/hello.rs.
 
-```
+```rust
 use aws_sdk_iam::error::SdkError;
 use aws_sdk_iam::operation::list_policies::ListPoliciesError;
 use clap::Parser;
@@ -411,7 +411,7 @@ async fn main() -> Result<(), Box<SdkError<ListPoliciesError>>> {
 ```
 From src/iam-service-lib.rs.
 
-```
+```rust
 pub async fn list_policies(
     client: iamClient,
     path_prefix: String,

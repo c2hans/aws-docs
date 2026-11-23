@@ -13,7 +13,7 @@ To learn how to create an IAM identity-based policy by using these example JSON 
 
 Below is the IAM policy needed to create, update, or delete instances through the console or public API (excludes all Webapp operations).
 
-```
+```json
 {
             "Version": "2012-10-17",
             "Statement": [

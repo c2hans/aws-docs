@@ -38,7 +38,7 @@ The following example SCP denies these changes to all principals except the depl
 
  **Example – Service control policy (SCP) that protects Action Log entries**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

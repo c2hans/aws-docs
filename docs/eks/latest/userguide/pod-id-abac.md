@@ -15,7 +15,7 @@ Attribute-based access control (ABAC) grants rights to users through policies wh
 
 Below is an IAM policy example that grants `s3:GetObject` permissions when the corresponding object is tagged with the EKS cluster name.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

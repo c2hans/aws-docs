@@ -82,7 +82,7 @@ For more information about the parameters, see [Options set using command line a
 
 In Windows, you configure the local proxy similar to how you do for Linux or macOS, but how you define the environment variables is different from the other platforms. Run the following commands in the `cmd` window to configure and start the local proxy on your source.
 
-```
+```bash
 set AWSIOT_TUNNEL_ACCESS_TOKEN={{${access_token}}}
 .\localproxy -s 5555 -v 5 -r us-west-2
 ```
@@ -164,7 +164,7 @@ For more information about the parameters, see [Options set using command line a
 
 In Windows, you configure the local proxy similar to how you do for Linux or macOS, but how you define the environment variables is different from the other platforms. Run the following commands in the `cmd` window to configure and start the local proxy on your destination.
 
-```
+```bash
 set AWSIOT_TUNNEL_ACCESS_TOKEN={{${access_token}}}
 .\localproxy -d 22 -v 5 -r us-west-2
 ```

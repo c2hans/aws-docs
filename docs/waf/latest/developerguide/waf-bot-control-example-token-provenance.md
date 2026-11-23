@@ -25,7 +25,7 @@ Use the CAPTCHA or Block action in your rule. In this scenario, the client's tok
 
 The following rule applies the CAPTCHA action to requests that have the `high` label. The rule must run after the Bot Control managed rule group, so that the label is available to match against. A real user who has changed networks can continue after solving the puzzle. A bot operator who moves tokens between networks must solve a puzzle for each token.
 
-```
+```json
 {
     "Name": "CaptchaTokenNetworkMismatchHigh",
     "Priority": 10,
@@ -48,7 +48,7 @@ The following rule applies the CAPTCHA action to requests that have the `high` l
 
 To block these clients instead of challenging them, combine the label with another Bot Control signal to increase your confidence that the client is automated. The following rule blocks requests that have the `high` label and whose token also indicates an automated browser.
 
-```
+```json
 {
     "Name": "BlockAutomatedTokenNetworkMismatch",
     "Priority": 11,

@@ -23,7 +23,7 @@ The following IAM policy grants full access to Amazon Managed Service for Promet
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

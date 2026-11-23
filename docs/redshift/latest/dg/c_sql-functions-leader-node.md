@@ -23,7 +23,7 @@ The following examples use the sample TICKIT database. For more information on t
 
 The CURRENT\_SCHEMA function is a leader-node only function. In this example, the query does not reference a table, so it runs exclusively on the leader node.
 
-```
+```sql
 select current_schema();
 
 current_schema
@@ -33,7 +33,7 @@ public
 
 In the next example, the query references a system catalog table, so it runs exclusively on the leader node.
 
-```
+```sql
 select * from pg_table_def
 where schemaname = current_schema() limit 1;
 
@@ -44,7 +44,7 @@ where schemaname = current_schema() limit 1;
 
 In the next example, the query references an Amazon Redshift system table that resides on the compute nodes, so it returns an error.
 
-```
+```sql
 select current_schema(), userid from users;
 
 INFO:  Function "current_schema()" not supported.
@@ -55,7 +55,7 @@ ERROR:  Specified types or functions (one per INFO message) not supported on Ama
 
 SUBSTR is also a leader-node only function. In the following example, the query runs exclusive on the leader node because it does not reference a table.
 
-```
+```sql
 SELECT SUBSTR('amazon', 5);
 
 +--------+
@@ -67,7 +67,7 @@ SELECT SUBSTR('amazon', 5);
 
 In the following example, the query references a table that resides on the compute nodes. This results in an error.
 
-```
+```sql
 SELECT SUBSTR(catdesc, 1) FROM category LIMIT 1;
 
 ERROR: SUBSTR() function is not supported (Hint: use SUBSTRING instead)
@@ -75,7 +75,7 @@ ERROR: SUBSTR() function is not supported (Hint: use SUBSTRING instead)
 
 To successfully run the previous query, use [SUBSTRING](https://docs.aws.amazon.com/redshift/latest/dg/r_SUBSTRING.html).
 
-```
+```sql
 SELECT SUBSTRING(catdesc, 1) FROM category LIMIT 1;
 
 +---------------------------------+
@@ -89,7 +89,7 @@ SELECT SUBSTRING(catdesc, 1) FROM category LIMIT 1;
 
 FACTORIAL() is a leader-node only function. In the following example, the query runs exclusive on the leader node because it does not reference a table.
 
-```
+```sql
 SELECT FACTORIAL(5);
 
  factorial
@@ -99,7 +99,7 @@ SELECT FACTORIAL(5);
 
 In the following example, the query references a table that resides on the compute nodes. This results in an error when run using query editor v2.
 
-```
+```sql
 create table t(a int);
 insert into t values (5);
 select factorial(a) from t;

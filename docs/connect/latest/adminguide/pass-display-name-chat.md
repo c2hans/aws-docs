@@ -23,7 +23,7 @@ To pass a customer display name, implement your callback function in the snippet
 
 1. Augment your existing widget snippet to add a `customerDisplayName` callback. It might look something like the following example:
 
-   ```
+   ```json
    amazon_connect('customerDisplayName', function(callback) {
      const displayName = '{{Jane Doe}}';
      callback(displayName);

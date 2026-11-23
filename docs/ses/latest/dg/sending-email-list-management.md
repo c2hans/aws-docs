@@ -45,7 +45,7 @@ You can use the [`CreateContactList`](https://docs.aws.amazon.com/ses/latest/API
 
   An example `CreateContactList` input JSON file for the request is as follows:
 
-  ```
+  ```json
   {
       "ContactListName": "ExampleContactListName",
       "Description": "Creating a contact list example",
@@ -94,7 +94,7 @@ You can use the [`CreateContact`](https://docs.aws.amazon.com/ses/latest/APIRefe
 
   An example `CreateContact` input JSON file for the request is as follows:
 
-  ```
+  ```json
   {
       "ContactListName": "ExampleContactListName",
       "EmailAddress": "john.doe@example.com",
@@ -178,7 +178,7 @@ To add contacts in bulk to your contact list, complete the following steps.
 
   Paste the following policy statement into the key policy to permit SES to use your customer managed key.
 
-  ```
+  ```json
   {
      "Sid": "AllowSESToDecrypt",
      "Effect": "Allow",
@@ -219,7 +219,7 @@ The following walkthrough provides examples of how you can use list management t
 
    An example `ListContacts` input JSON file for the request is as follows:
 
-   ```
+   ```json
    {
        "ContactListName": "ExampleContactListName",
        "Filter": {
@@ -243,7 +243,7 @@ The following walkthrough provides examples of how you can use list management t
 
    To use `ListManagementOptions` with the `SendEmail` operation, include the [`contactListName`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) and [`topicName`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) to which the email belongs (the `topicName` is optional):
 
-   ```
+   ```json
    ListManagementOptions:
        String contactListName
        String topicName

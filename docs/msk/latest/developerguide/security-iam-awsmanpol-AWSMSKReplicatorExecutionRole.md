@@ -14,7 +14,7 @@ The `AWSMSKReplicatorExecutionRole` policy grants permissions to the Amazon MSK 
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

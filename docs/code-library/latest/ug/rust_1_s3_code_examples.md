@@ -34,7 +34,7 @@ The following code example shows how to get started using Amazon S3.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 /// S3 Hello World Example using the AWS SDK for Rust.
 ///
 /// This example lists the objects in a bucket, uploads an object to that bucket,
@@ -110,7 +110,7 @@ async fn list_bucket_and_upload_object(
 ```
 S3ExampleError utilities.
 
-```
+```rust
 /// S3ExampleError provides a From<T: ProvideErrorMetadata> impl to extract
 /// client-specific error details. This serves as a consistent backup to handling
 /// specific service errors, depending on what is needed by the scenario.
@@ -170,7 +170,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 Code for the binary crate which runs the scenario.
 
-```
+```rust
 #![allow(clippy::result_large_err)]
 
 //!  Purpose
@@ -235,7 +235,7 @@ async fn run_s3_operations(
 ```
 Common actions used by the scenario.
 
-```
+```rust
 pub async fn create_bucket(
     client: &aws_sdk_s3::Client,
     bucket_name: &str,
@@ -426,7 +426,7 @@ The following code example shows how to use `CompleteMultipartUpload`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
     // upload_parts: Vec<aws_sdk_s3::types::CompletedPart>
     let completed_multipart_upload: CompletedMultipartUpload = CompletedMultipartUpload::builder()
         .set_parts(Some(upload_parts))
@@ -442,7 +442,7 @@ The following code example shows how to use `CompleteMultipartUpload`.
         .await?;
 ```
 
-```
+```rust
     // Create a multipart upload. Use UploadPart and CompleteMultipartUpload to
     // upload the file.
     let multipart_upload_res: CreateMultipartUploadOutput = client
@@ -457,7 +457,7 @@ The following code example shows how to use `CompleteMultipartUpload`.
     ))?;
 ```
 
-```
+```rust
     let mut upload_parts: Vec<aws_sdk_s3::types::CompletedPart> = Vec::new();
 
     for chunk_index in 0..chunk_count {
@@ -504,7 +504,7 @@ The following code example shows how to use `CopyObject`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 /// Copy an object from one bucket to another.
 pub async fn copy_object(
     client: &aws_sdk_s3::Client,
@@ -543,7 +543,7 @@ The following code example shows how to use `CreateBucket`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 pub async fn create_bucket(
     client: &aws_sdk_s3::Client,
     bucket_name: &str,
@@ -584,7 +584,7 @@ The following code example shows how to use `CreateMultipartUpload`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
     // Create a multipart upload. Use UploadPart and CompleteMultipartUpload to
     // upload the file.
     let multipart_upload_res: CreateMultipartUploadOutput = client
@@ -599,7 +599,7 @@ The following code example shows how to use `CreateMultipartUpload`.
     ))?;
 ```
 
-```
+```rust
     let mut upload_parts: Vec<aws_sdk_s3::types::CompletedPart> = Vec::new();
 
     for chunk_index in 0..chunk_count {
@@ -637,7 +637,7 @@ The following code example shows how to use `CreateMultipartUpload`.
     }
 ```
 
-```
+```rust
     // upload_parts: Vec<aws_sdk_s3::types::CompletedPart>
     let completed_multipart_upload: CompletedMultipartUpload = CompletedMultipartUpload::builder()
         .set_parts(Some(upload_parts))
@@ -662,7 +662,7 @@ The following code example shows how to use `DeleteBucket`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 pub async fn delete_bucket(
     client: &aws_sdk_s3::Client,
     bucket_name: &str,
@@ -694,7 +694,7 @@ The following code example shows how to use `DeleteObject`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 /// Delete an object from a bucket.
 pub async fn remove_object(
     client: &aws_sdk_s3::Client,
@@ -723,7 +723,7 @@ The following code example shows how to use `DeleteObjects`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 /// Delete the objects in a bucket.
 pub async fn delete_objects(
     client: &aws_sdk_s3::Client,
@@ -768,7 +768,7 @@ The following code example shows how to use `GetBucketLocation`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 async fn show_buckets(
     strict: bool,
     client: &Client,
@@ -822,7 +822,7 @@ The following code example shows how to use `GetObject`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 async fn get_object(client: Client, opt: Opt) -> Result<usize, S3ExampleError> {
     trace!("bucket:      {}", opt.bucket);
     trace!("object:      {}", opt.object);
@@ -868,7 +868,7 @@ The following code example shows how to use `ListBuckets`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 async fn show_buckets(
     strict: bool,
     client: &Client,
@@ -922,7 +922,7 @@ The following code example shows how to use `ListObjectVersions`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 async fn show_versions(client: &Client, bucket: &str) -> Result<(), Error> {
     let resp = client.list_object_versions().bucket(bucket).send().await?;
 
@@ -945,7 +945,7 @@ The following code example shows how to use `ListObjectsV2`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 pub async fn list_objects(client: &aws_sdk_s3::Client, bucket: &str) -> Result<(), S3ExampleError> {
     let mut response = client
         .list_objects_v2()
@@ -980,7 +980,7 @@ The following code example shows how to use `PutObject`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 pub async fn upload_object(
     client: &aws_sdk_s3::Client,
     bucket_name: &str,
@@ -1008,7 +1008,7 @@ The following code example shows how to use `UploadPart`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
     let mut upload_parts: Vec<aws_sdk_s3::types::CompletedPart> = Vec::new();
 
     for chunk_index in 0..chunk_count {
@@ -1046,7 +1046,7 @@ The following code example shows how to use `UploadPart`.
     }
 ```
 
-```
+```rust
     // Create a multipart upload. Use UploadPart and CompleteMultipartUpload to
     // upload the file.
     let multipart_upload_res: CreateMultipartUploadOutput = client
@@ -1061,7 +1061,7 @@ The following code example shows how to use `UploadPart`.
     ))?;
 ```
 
-```
+```rust
     // upload_parts: Vec<aws_sdk_s3::types::CompletedPart>
     let completed_multipart_upload: CompletedMultipartUpload = CompletedMultipartUpload::builder()
         .set_parts(Some(upload_parts))
@@ -1108,7 +1108,7 @@ The following code example shows how to create a presigned URL for Amazon S3 and
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 Create presigning requests to GET S3 objects.
 
-```
+```rust
 /// Generate a URL for a presigned GET request.
 async fn get_object(
     client: &Client,
@@ -1133,7 +1133,7 @@ async fn get_object(
 ```
 Create presigning requests to PUT S3 objects.
 
-```
+```rust
 async fn put_object(
     client: &Client,
     bucket: &str,
@@ -1200,7 +1200,7 @@ The following code example shows how to read data from an object in an S3 bucket
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 use aws_sdk_s3::{
     error::SdkError,
     primitives::{ByteStream, DateTime, DateTimeFormat},
@@ -1404,7 +1404,7 @@ The following code example shows how to examples for best-practice techniques wh
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/testing#code-examples).
 Cargo.toml for testing examples.
 
-```
+```rust
 [package]
 name = "testing-examples"
 version = "0.1.0"
@@ -1436,7 +1436,7 @@ path = "src/main.rs"
 ```
 Unit testing example using automock and a service wrapper.
 
-```
+```rust
 use aws_sdk_s3 as s3;
 #[allow(unused_imports)]
 use mockall::automock;
@@ -1578,7 +1578,7 @@ mod test {
 ```
 Integration testing example using StaticReplayClient.
 
-```
+```rust
 use aws_sdk_s3 as s3;
 
 #[allow(dead_code)]
@@ -1722,7 +1722,7 @@ For more information, see [Uploading an object using multipart upload](https://d
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 use std::fs::File;
 use std::io::prelude::*;
 use std::path::Path;
@@ -1900,7 +1900,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using Rust.
 
-```
+```rust
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 use aws_lambda_events::event::s3::S3Event;

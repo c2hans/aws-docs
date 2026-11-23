@@ -19,7 +19,7 @@ aws redshift-data describe-statement
 
 The following is an example of the response.
 
-```
+```json
 {
     "ClusterIdentifier": "mycluster-test",
     "CreatedAt": 1598306924.632,
@@ -37,7 +37,7 @@ The following is an example of the response.
 
 The following is an example of a `describe-statement` response after running a `batch-execute-statement` command with multiple SQL statements.
 
-```
+```json
 {
     "ClusterIdentifier": "mayo",
     "CreatedAt": 1623979777.126,
@@ -88,7 +88,7 @@ aws redshift-data describe-statement
 
 The following is an example of the response. The parent statement status is `STARTED` because the batch has not yet completed. The `SubStatements` array contains only the requested sub-statement.
 
-```
+```json
 {
     "ClusterIdentifier": "mayo",
     "CreatedAt": 1623979777.126,

@@ -35,7 +35,7 @@ The example shows how you use Jinja `{{ ... }}` syntax to refer to component and
 
 **Example service CloudFormation IaC file using a component**
 
-```
+```yaml
 # service/instance_infrastructure/cloudformation.yaml
 
 Resources:
@@ -74,7 +74,7 @@ As a developer, you author the component IaC template file.
 
 **Example component CloudFormation IaC file**
 
-```
+```yaml
 # cloudformation.yaml
 
 # A component that defines an S3 bucket and a policy for accessing the bucket.
@@ -107,7 +107,7 @@ When AWS Proton renders an CloudFormation template for your service instance and
 
 **Example service instance CloudFormation rendered IaC file**
 
-```
+```yaml
 Resources:
   TaskDefinition:
     Type: AWS::ECS::TaskDefinition

@@ -49,7 +49,7 @@ For example, this IAM identity-based policy identifies allowed IPv4 address CIDR
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

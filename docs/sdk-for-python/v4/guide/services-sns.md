@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/services-sns.htm
 
 Install the Amazon SNS client before you run the examples on this page.
 
-```
+```bash
 python -m pip install aws-sdk-sns
 ```
 
@@ -25,13 +25,13 @@ The identity that runs the examples needs the `sns:CreateTopic`, `sns:ListTopics
 
  **Imports**
 
-```
+```python
 from aws_sdk_sns import SNSClient, SNSConfig
 ```
 
  **Code**
 
-```
+```python
 def create_client() -> SNSClient:
     config = SNSConfig.resolve()
     return SNSClient(config=config)
@@ -48,13 +48,13 @@ Create a topic with `create_topic` and keep the returned ARN. Later operations i
 
  **Imports**
 
-```
+```python
 from aws_sdk_sns import SNSClient
 ```
 
  **Code**
 
-```
+```python
 def create_topic(client: SNSClient, topic_name: str) -> str:
     """Create a topic and return its ARN."""
     response = client.create_topic(name=topic_name)
@@ -72,13 +72,13 @@ Each `list_topics` response can contain a partial result. Pass the returned `nex
 
  **Imports**
 
-```
+```python
 from aws_sdk_sns import SNSClient
 ```
 
  **Code**
 
-```
+```python
 def list_topics(client: SNSClient) -> list[str]:
     """Return all topic ARNs, following pagination tokens."""
     topic_arns: list[str] = []
@@ -104,13 +104,13 @@ Subscribe an endpoint by specifying its protocol and address. This example subsc
 
  **Imports**
 
-```
+```python
 from aws_sdk_sns import SNSClient
 ```
 
  **Code**
 
-```
+```python
 def subscribe_email(client: SNSClient, topic_arn: str, email: str) -> str:
     """Request an email subscription and return its ARN."""
     response = client.subscribe(
@@ -135,13 +135,13 @@ Publish a message to a topic by its ARN after the topic's endpoints confirm thei
 
  **Imports**
 
-```
+```python
 from aws_sdk_sns import SNSClient
 ```
 
  **Code**
 
-```
+```python
 def publish_to_topic(client: SNSClient, topic_arn: str, message: str) -> str:
     """Publish a message and return its message ID."""
     response = client.publish(
@@ -170,13 +170,13 @@ Call `unsubscribe` with the subscription ARN that `subscribe` returned. Because 
 
  **Imports**
 
-```
+```python
 from aws_sdk_sns import SNSClient
 ```
 
  **Code**
 
-```
+```python
 def unsubscribe(client: SNSClient, subscription_arn: str) -> None:
     """Unsubscribe an endpoint identified by its subscription ARN."""
     client.unsubscribe(subscription_arn=subscription_arn)
@@ -191,13 +191,13 @@ Delete a topic when you no longer need it. Deleting a topic also deletes its sub
 
  **Imports**
 
-```
+```python
 from aws_sdk_sns import SNSClient
 ```
 
  **Code**
 
-```
+```python
 def delete_topic(client: SNSClient, topic_arn: str) -> None:
     """Delete the topic identified by its ARN."""
     client.delete_topic(topic_arn=topic_arn)

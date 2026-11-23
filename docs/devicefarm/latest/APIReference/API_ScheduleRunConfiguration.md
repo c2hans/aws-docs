@@ -54,11 +54,12 @@ Pattern: `^arn:aws:devicefarm:.+`
 Required: No
 
  ** insightsTypes **   <a name="devicefarm-Type-ScheduleRunConfiguration-insightsTypes"></a>
-The types of insights to generate for a run. Specify one or more values to opt in to insights generation when scheduling a run.
-Insights are currently supported for custom mode runs with Instrumentation, Appium Java TestNG, and XCTest UI test types.
+The types of insights to generate for a run. If you do not specify a value, the default is `TEST_REPORT` for runs that support insights.
+Specify `NONE` if you do not want the service to generate insights for the run. You cannot combine `NONE` with any other value.
+Insights are supported for custom mode runs of all test types except Appium Ruby and Appium Web Ruby.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
-Valid Values: `TEST_REPORT`
+Valid Values: `TEST_REPORT | NONE`
 Required: No
 
  ** locale **   <a name="devicefarm-Type-ScheduleRunConfiguration-locale"></a>

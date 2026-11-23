@@ -12,7 +12,7 @@ Choose `Copy` to save the code locally.
 
 Create the file *pollyListLexicons.go*. Import the packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws/session"
     "github.com/aws/aws-sdk-go/service/polly"
@@ -24,7 +24,7 @@ import (
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials`, load your configuration from the shared configuration file `~/.aws/config`, and create an Amazon Polly client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -34,7 +34,7 @@ svc := polly.New(sess)
 
 Call `ListLexicons` and display the name, alphabet, and language code of each lexicon.
 
-```
+```go
 resp, err := svc.ListLexicons(nil)
 
 for _, l := range resp.Lexicons {

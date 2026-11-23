@@ -53,7 +53,7 @@ The following is an example of a bucket policy that uses an explicit `Deny` stat
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Id": "Policy1415115example",
@@ -86,7 +86,7 @@ To change this policy and allow Macie to access the S3 bucket and the bucket's o
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Id":" Policy1415115example ",

@@ -46,7 +46,7 @@ You can stop a resource job using the Forecast console or the AWS Software Devel
 
 Using the [StopResource](API_StopResource.md) operation, set the value of `ResourceArn` to the Amazon Resource Name (ARN) that identifies the resource job that you want to stop.
 
-```
+```json
         {
             "ResourceArn": "arn:{{partition:service:region:account-id:resource-id}}"
         }

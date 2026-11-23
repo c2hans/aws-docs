@@ -74,7 +74,7 @@ When extended thinking is turned on, Claude creates `thinking` content blocks wh
 
 Here's an example of the default response format:
 
-```
+```JSON
 {
   "content": [
     {
@@ -122,7 +122,7 @@ You can stream extended thinking responses using server-sent events (SSE). When 
 
 Here's how to handle streaming with thinking using **InvokeModelWithResponseStream**:
 
-```
+```JSON
 {
     "anthropic_version": "bedrock-2023-05-31",
     "max_tokens": 10000,
@@ -141,7 +141,7 @@ Here's how to handle streaming with thinking using **InvokeModelWithResponseStre
 
 Response:
 
-```
+```JSON
 event: message_start
 data: {"type": "message_start", "message": {"id": "msg_01...", "type": "message", "role": "assistant", "content": [], "model": "claude-3-7-sonnet-20250219", "stop_reason": null, "stop_sequence": null}}
 
@@ -192,7 +192,7 @@ Extended thinking can be used alongside [Anthropic Claude tool use](model-parame
 
 Here is how context window management works with tools:
 
-```
+```JSON
 {
     "anthropic_version": "bedrock-2023-05-31",
     "max_tokens": 10000,
@@ -228,7 +228,7 @@ Here is how context window management works with tools:
 
 The first response is the following:
 
-```
+```JSON
 {
     "content": [
         {
@@ -254,7 +254,7 @@ The first response is the following:
 
 Continuing the conversation with tool use will generate another response. Notice that the `thinking_block` is passed in as well as the `tool_use_block`. If this is not passed in, an error occurs.
 
-```
+```JSON
 {
   "anthropic_version": "bedrock-2023-05-31",
   "max_tokens": 10000,
@@ -318,7 +318,7 @@ Continuing the conversation with tool use will generate another response. Notice
 
 The API response will now only include text
 
-```
+```JSON
 {
   "content": [
     {
@@ -383,7 +383,7 @@ These are the available controls for the `clear_thinking_20251015` context manag
 ------
 #### [ Request ]
 
-```
+```json
 {
       "anthropic_version": "bedrock-2023-05-31",
       "max_tokens": 10000,
@@ -462,7 +462,7 @@ These are the available controls for the `clear_thinking_20251015` context manag
 ------
 #### [ Response ]
 
-```
+```json
 {
       "model": "claude-haiku-4-5-20251001",
       "id": "msg_bdrk_01KyTbyFbdG2kzPwWMJY1kum",

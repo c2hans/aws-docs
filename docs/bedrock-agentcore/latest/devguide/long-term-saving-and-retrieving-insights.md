@@ -18,7 +18,7 @@ The following example shows how to save a multi-turn conversation to a memory re
 
  **Example Save a conversation as a series of events**
 
-```
+```python
 #'memory_id' is the ID of your memory resource with an active summary strategy.
 
 from bedrock_agentcore.memory.session import MemorySessionManager
@@ -67,7 +67,7 @@ The following example demonstrates how to wait for processing and then retrieve 
 
  **Example Wait and retrieve a session summary**
 
-```
+```python
 # 'session' is an existing session object that you created when adding the coversation turns
 # session should be created on a memory resource with an active summary strategy.
 

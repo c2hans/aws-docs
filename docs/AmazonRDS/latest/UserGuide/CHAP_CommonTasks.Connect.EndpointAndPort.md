@@ -21,6 +21,9 @@ To connect to a DB instance, use any client for a DB engine. For example, you mi
 
 To find the connection information for a DB instance, use the AWS Management Console. You can also use the AWS Command Line Interface (AWS CLI) [describe-db-instances](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) command or the RDS API [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) operation.
 
+**Note**
+If your DB instance runs Oracle Database Enterprise Edition, it also has a Primary Endpoint. The Primary Endpoint is a DNS name that points to the current primary DB instance in a replica configuration. When you connect through it, you don't need to change your connection string after a switchover. For more information, see [Using the Primary Endpoint for Amazon RDS for Oracle](oracle-primary-endpoint.md).
+
 ## Console
 <a name="CHAP_CommonTasks.Connect.EndpointAndPort.Console"></a>
 

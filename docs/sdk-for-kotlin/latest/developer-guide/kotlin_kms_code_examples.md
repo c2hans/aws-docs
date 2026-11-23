@@ -24,7 +24,7 @@ The following code example shows how to use `CreateAlias`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/kms#code-examples).
 
-```
+```kotlin
 suspend fun createCustomAlias(
     targetKeyIdVal: String?,
     aliasNameVal: String?,
@@ -51,7 +51,7 @@ The following code example shows how to use `CreateGrant`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/kms#code-examples).
 
-```
+```kotlin
 suspend fun createNewGrant(
     keyIdVal: String?,
     granteePrincipalVal: String?,
@@ -84,7 +84,7 @@ The following code example shows how to use `CreateKey`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/kms#code-examples).
 
-```
+```kotlin
 suspend fun createKey(keyDesc: String?): String? {
     val request =
         CreateKeyRequest {
@@ -110,7 +110,7 @@ The following code example shows how to use `Decrypt`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/kms#code-examples).
 
-```
+```kotlin
 suspend fun encryptData(keyIdValue: String): ByteArray? {
     val text = "This is the text to encrypt by using the AWS KMS Service"
     val myBytes: ByteArray = text.toByteArray()
@@ -159,7 +159,7 @@ The following code example shows how to use `DescribeKey`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/kms#code-examples).
 
-```
+```kotlin
 suspend fun describeSpecifcKey(keyIdVal: String?) {
     val request =
         DescribeKeyRequest {
@@ -183,7 +183,7 @@ The following code example shows how to use `DisableKey`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/kms#code-examples).
 
-```
+```kotlin
 suspend fun disableKey(keyIdVal: String?) {
     val request =
         DisableKeyRequest {
@@ -206,7 +206,7 @@ The following code example shows how to use `EnableKey`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/kms#code-examples).
 
-```
+```kotlin
 suspend fun enableKey(keyIdVal: String?) {
     val request =
         EnableKeyRequest {
@@ -229,7 +229,7 @@ The following code example shows how to use `Encrypt`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/kms#code-examples).
 
-```
+```kotlin
 suspend fun encryptData(keyIdValue: String): ByteArray? {
     val text = "This is the text to encrypt by using the AWS KMS Service"
     val myBytes: ByteArray = text.toByteArray()
@@ -278,7 +278,7 @@ The following code example shows how to use `ListAliases`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/kms#code-examples).
 
-```
+```kotlin
 suspend fun listAllAliases() {
     val request =
         ListAliasesRequest {
@@ -303,7 +303,7 @@ The following code example shows how to use `ListGrants`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/kms#code-examples).
 
-```
+```kotlin
 suspend fun displayGrantIds(keyIdVal: String?) {
     val request =
         ListGrantsRequest {
@@ -329,7 +329,7 @@ The following code example shows how to use `ListKeys`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/kms#code-examples).
 
-```
+```kotlin
 suspend fun listAllKeys() {
     val request =
         ListKeysRequest {

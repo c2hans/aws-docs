@@ -29,7 +29,7 @@ The following code example shows how to get started using HealthImaging.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -80,7 +80,7 @@ The following code example shows how to use `CopyImageSet`.
 **SDK for Python (Boto3)**
 Utility function to copy an image set.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -148,7 +148,7 @@ class MedicalImagingWrapper:
 ```
 Copy an image set without a destination.
 
-```
+```python
             copy_image_set_information = {
                 "sourceImageSet": {"latestVersionId": version_id}
             }
@@ -162,7 +162,7 @@ Copy an image set without a destination.
 ```
 Copy an image set with a destination.
 
-```
+```python
             copy_image_set_information = {
                 "sourceImageSet": {"latestVersionId": version_id}
             }
@@ -182,7 +182,7 @@ Copy an image set with a destination.
 ```
 Copy a subset of an image set.
 
-```
+```python
             copy_image_set_information = {
                 "sourceImageSet": {"latestVersionId": version_id}
             }
@@ -211,7 +211,7 @@ Copy a subset of an image set.
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -225,7 +225,7 @@ The following code example shows how to use `CreateDatastore`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -252,7 +252,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -266,7 +266,7 @@ The following code example shows how to use `DeleteDatastore`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -290,7 +290,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -304,7 +304,7 @@ The following code example shows how to use `DeleteImageSet`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -333,7 +333,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -347,7 +347,7 @@ The following code example shows how to use `GetDICOMImportJob`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -376,7 +376,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -390,7 +390,7 @@ The following code example shows how to use `GetDatastore`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -419,7 +419,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -433,7 +433,7 @@ The following code example shows how to use `GetImageFrame`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -469,7 +469,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -483,7 +483,7 @@ The following code example shows how to use `GetImageSet`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -520,7 +520,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -535,7 +535,7 @@ The following code example shows how to use `GetImageSetMetadata`.
 **SDK for Python (Boto3)**
 Utility function to get image set metadata.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -579,14 +579,14 @@ class MedicalImagingWrapper:
 ```
 Get image set metadata without version.
 
-```
+```python
                 image_set_metadata = self.health_imaging_client.get_image_set_metadata(
                     imageSetId=image_set_id, datastoreId=datastore_id
                 )
 ```
 Get image set metadata with version.
 
-```
+```python
                 image_set_metadata = self.health_imaging_client.get_image_set_metadata(
                     imageSetId=image_set_id,
                     datastoreId=datastore_id,
@@ -595,7 +595,7 @@ Get image set metadata with version.
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -609,7 +609,7 @@ The following code example shows how to use `ListDICOMImportJobs`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -641,7 +641,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -655,7 +655,7 @@ The following code example shows how to use `ListDatastores`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -684,7 +684,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -698,7 +698,7 @@ The following code example shows how to use `ListImageSetVersions`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -733,7 +733,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -747,7 +747,7 @@ The following code example shows how to use `ListTagsForResource`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -775,7 +775,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -790,7 +790,7 @@ The following code example shows how to use `SearchImageSets`.
 **SDK for Python (Boto3)**
 The utility function for searching image sets.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -824,7 +824,7 @@ class MedicalImagingWrapper:
 ```
 Use case \#1: EQUAL operator.
 
-```
+```python
         search_filter = {
             "filters": [
                 {"operator": "EQUAL", "values": [{"DICOMPatientId": patient_id}]}
@@ -836,7 +836,7 @@ Use case \#1: EQUAL operator.
 ```
 Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 
-```
+```python
         search_filter = {
             "filters": [
                 {
@@ -866,7 +866,7 @@ Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 ```
 Use case \#3: BETWEEN operator using createdAt. Time studies were previously persisted.
 
-```
+```python
         search_filter = {
             "filters": [
                 {
@@ -893,7 +893,7 @@ Use case \#3: BETWEEN operator using createdAt. Time studies were previously per
 ```
 Use case \#4: EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt and sort response in ASC order on updatedAt field.
 
-```
+```python
         search_filter = {
             "filters": [
                 {
@@ -929,7 +929,7 @@ Use case \#4: EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt 
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -943,7 +943,7 @@ The following code example shows how to use `StartDICOMImportJob`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -981,7 +981,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -995,7 +995,7 @@ The following code example shows how to use `TagResource`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -1019,7 +1019,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -1033,7 +1033,7 @@ The following code example shows how to use `UntagResource`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -1059,7 +1059,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -1073,7 +1073,7 @@ The following code example shows how to use `UpdateImageSetMetadata`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -1113,13 +1113,13 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
 Use case \#1: Insert or update an attribute.
 
-```
+```python
             attributes = """{
                     "SchemaVersion": 1.1,
                     "Study": {
@@ -1136,7 +1136,7 @@ Use case \#1: Insert or update an attribute.
 ```
 Use case \#2: Remove an attribute.
 
-```
+```python
             # Attribute key and value must match the existing attribute.
             attributes = """{
                     "SchemaVersion": 1.1,
@@ -1154,7 +1154,7 @@ Use case \#2: Remove an attribute.
 ```
 Use case \#3: Remove an instance.
 
-```
+```python
             attributes = """{
                     "SchemaVersion": 1.1,
                     "Study": {
@@ -1175,7 +1175,7 @@ Use case \#3: Remove an instance.
 ```
 Use case \#4: Revert to an earlier version.
 
-```
+```python
             metadata = {"revertToVersionId": "1"}
 
             self.update_image_set_metadata(
@@ -1204,7 +1204,7 @@ The implementation is structured as a command-line application.
 **SDK for Python (Boto3)**
 Create an CloudFormation stack with the necessary resources.
 
-```
+```python
     def deploy(self):
         """
         Deploys prerequisite resources used by the scenario. The resources are
@@ -1258,7 +1258,7 @@ Create an CloudFormation stack with the necessary resources.
 ```
 Copy DICOM files to the Amazon S3 import bucket.
 
-```
+```python
     def copy_single_object(self, key, source_bucket, target_bucket, target_directory):
         """
         Copies a single object from a source to a target bucket.
@@ -1302,7 +1302,7 @@ Copy DICOM files to the Amazon S3 import bucket.
 ```
 Import the DICOM files to the Amazon S3 data store.
 
-```
+```python
 class MedicalImagingWrapper:
     """Encapsulates AWS HealthImaging functionality."""
 
@@ -1363,7 +1363,7 @@ class MedicalImagingWrapper:
 ```
 Get image sets created by the DICOM import job.
 
-```
+```python
 class MedicalImagingWrapper:
     """Encapsulates AWS HealthImaging functionality."""
 
@@ -1452,7 +1452,7 @@ class MedicalImagingWrapper:
 ```
 Get image frame information for image sets.
 
-```
+```python
 class MedicalImagingWrapper:
     """Encapsulates AWS HealthImaging functionality."""
 
@@ -1556,7 +1556,7 @@ class MedicalImagingWrapper:
 ```
 Download, decode and verify image frames.
 
-```
+```python
 class MedicalImagingWrapper:
     """Encapsulates AWS HealthImaging functionality."""
 
@@ -1652,7 +1652,7 @@ class MedicalImagingWrapper:
 ```
 Clean up resources.
 
-```
+```python
     def destroy(self, stack):
         """
         Destroys the resources managed by the CloudFormation stack, and the CloudFormation
@@ -1766,14 +1766,14 @@ The following code example shows how to tag a HealthImaging data store.
 **SDK for Python (Boto3)**
 To tag a data store.
 
-```
+```python
     a_data_store_arn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012"
 
     medical_imaging_wrapper.tag_resource(data_store_arn, {"Deployment": "Development"})
 ```
 The utility function for tagging a resource.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -1797,14 +1797,14 @@ class MedicalImagingWrapper:
 ```
 To list tags for a data store.
 
-```
+```python
     a_data_store_arn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012"
 
     medical_imaging_wrapper.list_tags_for_resource(data_store_arn)
 ```
 The utility function for listing a resource's tags.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -1832,14 +1832,14 @@ class MedicalImagingWrapper:
 ```
 To untag a data store.
 
-```
+```python
     a_data_store_arn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012"
 
     medical_imaging_wrapper.untag_resource(data_store_arn, ["Deployment"])
 ```
 The utility function for untagging a resource.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -1865,7 +1865,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -1883,7 +1883,7 @@ The following code example shows how to tag a HealthImaging image set.
 **SDK for Python (Boto3)**
 To tag an image set.
 
-```
+```python
     an_image_set_arn = (
         "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/"
         "imageset/12345678901234567890123456789012"
@@ -1893,7 +1893,7 @@ To tag an image set.
 ```
 The utility function for tagging a resource.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -1917,7 +1917,7 @@ class MedicalImagingWrapper:
 ```
 To list tags for an image set.
 
-```
+```python
     an_image_set_arn = (
         "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/"
         "imageset/12345678901234567890123456789012"
@@ -1927,7 +1927,7 @@ To list tags for an image set.
 ```
 The utility function for listing a resource's tags.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -1955,7 +1955,7 @@ class MedicalImagingWrapper:
 ```
 To untag an image set.
 
-```
+```python
     an_image_set_arn = (
         "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/"
         "imageset/12345678901234567890123456789012"
@@ -1965,7 +1965,7 @@ To untag an image set.
 ```
 The utility function for untagging a resource.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -1991,7 +1991,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```

@@ -9,7 +9,7 @@ In Amazon SageMaker Unified Studio, service-managed blueprints provide a wide va
 ------
 #### [ IAM-based domain ]
 
-```
+```yaml
 Parameters:
   sagemakerUnifiedStudioNetworkSecurityGroupId: { Type: String, Default: '' }
   sagemakerUnifiedStudioNetworkSubnets:         { Type: String, Default: '' }
@@ -34,7 +34,7 @@ Outputs:
 ------
 #### [ Identity Center-based domain ]
 
-```
+```yaml
 Parameters:
   sagemakerUnifiedStudioNetworkSecurityGroupId: { Type: String, Default: '' }
   sagemakerUnifiedStudioNetworkSubnets:         { Type: String, Default: '' }

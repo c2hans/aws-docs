@@ -45,13 +45,13 @@ The following example CLI commands create a .zip file named `my_deployment_packa
 
 1. Navigate to the project directory containing your `index.js` or `index.mjs` source code file. In this example, the directory is named `my_function`.
 
-   ```
+   ```bash
    cd my_function
    ```
 
 1. Install your function's required libraries in the `node_modules` directory using the `npm install` command. In this example you install the AWS X-Ray SDK for Node.js.
 
-   ```
+   ```bash
    npm install aws-xray-sdk
    ```
 
@@ -73,7 +73,7 @@ The following example CLI commands create a .zip file named `my_deployment_packa
 
 1. Create a .zip file that contains the contents of your project folder at the root. Use the `r` (recursive) option to ensure that zip compresses the subfolders.
 
-   ```
+   ```bash
    zip -r my_deployment_package.zip .
    ```
 
@@ -120,13 +120,13 @@ When you add a dependency to a layer, Lambda extracts this to `/opt/nodejs/nodex
 
 You can see the full search path for your Lambda function by adding the following line of code.
 
-```
+```javascript
 console.log(process.env.NODE_PATH)
 ```
 
 You can also add dependencies in a separate folder inside your .zip package. For example, you might add a custom module to a folder in your .zip package called `common`. When your .zip package is decompressed and mounted, this folder is placed inside the `/var/task` directory. To use a dependency from a folder in your .zip deployment package in your code, use an `import { } from` or `const { } = require()` statement, depending on whether you are using CJS or ESM module resolution. For example:
 
-```
+```javascript
 import { myModule } from './common'
 ```
 

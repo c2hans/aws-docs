@@ -80,7 +80,7 @@ For more information, see [Submit work to an Amazon EMR cluster](https://docs.aw
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/emr#code-examples).
 
-```
+```python
 def list_steps(cluster_id, emr_client):
     """
     Gets a list of steps for the specified cluster. In this example, all steps are
@@ -108,7 +108,7 @@ def list_steps(cluster_id, emr_client):
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/emr#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_emr->liststeps(
           iv_clusterid = iv_cluster_id

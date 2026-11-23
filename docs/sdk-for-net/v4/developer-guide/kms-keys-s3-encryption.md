@@ -28,7 +28,7 @@ The following snippet creates an `EncryptionMaterials` object that contains a KM
 
 The example [at the end of this topic](#kms-s3-complete-code) shows this snippet in use.
 
-```
+```csharp
       // Create a customer master key (CMK) and store the result
       CreateKeyResponse createKeyResponse =
         await new AmazonKeyManagementServiceClient().CreateKeyAsync(new CreateKeyRequest());
@@ -44,7 +44,7 @@ The following snippet creates an `AmazonS3EncryptionClientV2` object that uses t
 
 The example [at the end of this topic](#kms-s3-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to create and encrypt an object in an S3 bucket
     static async Task<GetObjectResponse> CreateAndRetrieveObjectAsync(
@@ -118,7 +118,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c25c13c15b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.IO;

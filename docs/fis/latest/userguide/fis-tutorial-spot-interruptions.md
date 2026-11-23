@@ -37,7 +37,7 @@ aws ec2 run-instances \
 
 The following is an example of the `spot-options.json` file.
 
-```
+```json
 {
     "MarketType": "spot",
     "SpotOptions": {
@@ -130,7 +130,7 @@ Create the experiment template using the AWS FIS console. In the template, you s
 **(Optional) To view the experiment template JSON**
 Choose the **Export** tab. The following is an example of the JSON created by the preceding console procedure.
 
-```
+```json
 {
     "description": "Test Spot Instance interruptions",
     "targets": {

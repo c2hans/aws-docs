@@ -8,4 +8,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 
 ![Diagram showing the use of Amazon Route 53](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/route-53.png)
 
+*Using Amazon Route 53*
+
 Amazon Route 53 can also be combined with [Route 53 application recovery](https://aws.amazon.com/route53/application-recovery-controller/). The Application Recovery Controller also helps you manage and coordinate recovery for your applications across AWS Availability Zones (AZs) or Regions. The features made available by it can help in case of unavailability of an AZ, Region, or even in case of gray failures, where an evacuation of the AZ is a better alternative until the problem is found.

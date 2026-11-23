@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon Keyspaces.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/keyspaces#code-examples).
 
-```
+```python
 import boto3
 
 def hello_keyspaces(keyspaces_client):
@@ -70,7 +70,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/keyspaces#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class KeyspaceScenario:
     """Runs an interactive scenario that shows how to get started using Amazon Keyspaces."""
 
@@ -298,7 +298,7 @@ if __name__ == "__main__":
 ```
 Define a class that wraps keyspace and table actions.
 
-```
+```python
 class KeyspaceWrapper:
     """Encapsulates Amazon Keyspaces (for Apache Cassandra) keyspace and table actions."""
 
@@ -552,7 +552,7 @@ class KeyspaceWrapper:
 ```
 Define a class that creates a TLS connection to a keyspace, authenticates with SigV4, and sends CQL queries to a table in the keyspace.
 
-```
+```python
 class QueryManager:
     """
     Manages queries to an Amazon Keyspaces (for Apache Cassandra) keyspace.
@@ -710,7 +710,7 @@ The following code example shows how to use `CreateKeyspace`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/keyspaces#code-examples).
 
-```
+```python
 class KeyspaceWrapper:
     """Encapsulates Amazon Keyspaces (for Apache Cassandra) keyspace and table actions."""
 
@@ -760,7 +760,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/keyspaces#code-examples).
 
-```
+```python
 class KeyspaceWrapper:
     """Encapsulates Amazon Keyspaces (for Apache Cassandra) keyspace and table actions."""
 
@@ -823,7 +823,7 @@ The following code example shows how to use `DeleteKeyspace`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/keyspaces#code-examples).
 
-```
+```python
 class KeyspaceWrapper:
     """Encapsulates Amazon Keyspaces (for Apache Cassandra) keyspace and table actions."""
 
@@ -867,7 +867,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/keyspaces#code-examples).
 
-```
+```python
 class KeyspaceWrapper:
     """Encapsulates Amazon Keyspaces (for Apache Cassandra) keyspace and table actions."""
 
@@ -913,7 +913,7 @@ The following code example shows how to use `GetKeyspace`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/keyspaces#code-examples).
 
-```
+```python
 class KeyspaceWrapper:
     """Encapsulates Amazon Keyspaces (for Apache Cassandra) keyspace and table actions."""
 
@@ -967,7 +967,7 @@ The following code example shows how to use `GetTable`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/keyspaces#code-examples).
 
-```
+```python
 class KeyspaceWrapper:
     """Encapsulates Amazon Keyspaces (for Apache Cassandra) keyspace and table actions."""
 
@@ -1022,7 +1022,7 @@ The following code example shows how to use `ListKeyspaces`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/keyspaces#code-examples).
 
-```
+```python
 class KeyspaceWrapper:
     """Encapsulates Amazon Keyspaces (for Apache Cassandra) keyspace and table actions."""
 
@@ -1070,7 +1070,7 @@ The following code example shows how to use `ListTables`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/keyspaces#code-examples).
 
-```
+```python
 class KeyspaceWrapper:
     """Encapsulates Amazon Keyspaces (for Apache Cassandra) keyspace and table actions."""
 
@@ -1117,7 +1117,7 @@ The following code example shows how to use `RestoreTable`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/keyspaces#code-examples).
 
-```
+```python
 class KeyspaceWrapper:
     """Encapsulates Amazon Keyspaces (for Apache Cassandra) keyspace and table actions."""
 
@@ -1174,7 +1174,7 @@ The following code example shows how to use `UpdateTable`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/keyspaces#code-examples).
 
-```
+```python
 class KeyspaceWrapper:
     """Encapsulates Amazon Keyspaces (for Apache Cassandra) keyspace and table actions."""
 

@@ -33,7 +33,7 @@ The authentication helper SDK has the following functions:
 
 To use the mobile authentication SDK, add the following statements to your activity:
 
-```
+```javascript
 import AmazonLocationiOSAuthSDK
 import AWSLocationXCF
 ```
@@ -41,20 +41,20 @@ import AWSLocationXCF
 You have two options when creating the authentication helper and location client provider instances. You can create an instance using [Amazon Location API keys](https://docs.aws.amazon.com/location/previous/developerguide/using-apikeys.html) or [Amazon Cognito](https://docs.aws.amazon.com/location/previous/developerguide/using-apikeys.html).
 + To create an authentication helper instance using an Amazon Location API Key, declare the helper class as follows:
 
-  ```
+  ```javascript
   let authHelper = AuthHelper()
   let locationCredentialsProvider = authHelper.authenticateWithAPIKey(apiKey: "{{My-Amazon-Location-API-Key}}", region: "{{account-region}}")
   ```
 + To create an authentication helper instance using Amazon Cognito, declare the helper class as follows:
 
-  ```
+  ```javascript
   let authHelper = AuthHelper()
   let locationCredentialsProvider = authHelper.authenticateWithCognitoUserPool(identityPoolId: "{{My-Amazon-Location-API-Key}}", region: "{{account-region}}")
   ```
 
 You can create an Amazon Location client instance using the location credentials provider and make calls to the Amazon Location service. The following example searches for places near a specified latitude and longitude.
 
-```
+```javascript
 let locationClient = AWSLocation.default()
 let searchPlaceIndexForPositionRequest = AWSLocationSearchPlaceIndexForPositionRequest()!
 searchPlaceIndexForPositionRequest.indexName = "My-Place-Index-Name"

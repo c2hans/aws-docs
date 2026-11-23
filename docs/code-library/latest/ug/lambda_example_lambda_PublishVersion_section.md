@@ -50,7 +50,7 @@ For more information, see [Configuring AWS Lambda Function Aliases](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example creates a version for the existing snapshot of Lambda Function Code**
 
-```
+```powershell
 Publish-LMVersion -FunctionName "MylambdaFunction123" -Description "Publishing Existing Snapshot of function code as a  new version through Powershell"
 ```
 +  For API details, see [PublishVersion](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -58,7 +58,7 @@ Publish-LMVersion -FunctionName "MylambdaFunction123" -Description "Publishing E
 **Tools for PowerShell V5**
 **Example 1: This example creates a version for the existing snapshot of Lambda Function Code**
 
-```
+```powershell
 Publish-LMVersion -FunctionName "MylambdaFunction123" -Description "Publishing Existing Snapshot of function code as a  new version through Powershell"
 ```
 +  For API details, see [PublishVersion](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

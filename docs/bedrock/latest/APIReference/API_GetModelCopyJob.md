@@ -156,7 +156,7 @@ HTTP Status Code: 400
 
 The following example shows how to get information about a model copy job using the AWS CLI.
 
-```
+```bash
 aws bedrock get-model-copy-job --job-arn arn:aws:bedrock:us-east-1:123456789012:model-copy-job/amazon.titan-text-lite-v1:0:4k/abcdef123456
 ```
 

@@ -28,6 +28,15 @@ Type: Array of strings
 Valid Values: `Distributor | Reseller | Hardware Partner | Managed Service Provider | Software Partner | Services Partner | Training Partner | Co-Sell Facilitator | Facilitator`
 Required: Yes
 
+ ** OpportunityType **   <a name="AWSPartnerCentral-Type-OpportunityInvitationPayload-OpportunityType"></a>
+The type of the opportunity being shared. The sender of the invitation sets it. Valid values:
++  `Net New Business`: A new business opportunity with a potential customer that's not previously engaged with your solutions or services.
++  `Flat Renewal`: An opportunity to renew an existing contract or subscription with a current customer, ensuring continuity of service.
++  `Expansion`: An opportunity to expand the scope of an existing contract or subscription, either by adding new services or increasing the volume of existing services for a current customer.
+Type: String
+Valid Values: `Net New Business | Flat Renewal | Expansion`
+Required: No
+
  ** SenderContacts **   <a name="AWSPartnerCentral-Type-OpportunityInvitationPayload-SenderContacts"></a>
 Represents the contact details of the AWS representatives involved in sending the Engagement Invitation. These contacts are opportunity stakeholders.
 Type: Array of [SenderContact](API_SenderContact.md) objects

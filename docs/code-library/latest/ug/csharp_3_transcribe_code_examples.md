@@ -26,7 +26,7 @@ The following code example shows how to use `CreateVocabulary`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a custom vocabulary using a list of phrases. Custom vocabularies
     /// improve transcription accuracy for one or more specific words.
@@ -58,7 +58,7 @@ The following code example shows how to use `DeleteMedicalTranscriptionJob`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a medical transcription job. Also deletes the transcript associated with the job.
     /// </summary>
@@ -84,7 +84,7 @@ The following code example shows how to use `DeleteTranscriptionJob`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a transcription job. Also deletes the transcript associated with the job.
     /// </summary>
@@ -110,7 +110,7 @@ The following code example shows how to use `DeleteVocabulary`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an existing custom vocabulary.
     /// </summary>
@@ -136,7 +136,7 @@ The following code example shows how to use `GetTranscriptionJob`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get details about a transcription job.
     /// </summary>
@@ -162,7 +162,7 @@ The following code example shows how to use `GetVocabulary`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information about a custom vocabulary.
     /// </summary>
@@ -188,7 +188,7 @@ The following code example shows how to use `ListMedicalTranscriptionJobs`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List medical transcription jobs, optionally with a name filter.
     /// </summary>
@@ -215,7 +215,7 @@ The following code example shows how to use `ListTranscriptionJobs`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List transcription jobs, optionally with a name filter.
     /// </summary>
@@ -241,7 +241,7 @@ The following code example shows how to use `ListVocabularies`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List custom vocabularies for the current account. Optionally specify a name
     /// filter and a specific state to filter the vocabularies list.
@@ -271,7 +271,7 @@ The following code example shows how to use `StartMedicalTranscriptionJob`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Start a medical transcription job for a media file. This method returns
     /// as soon as the job is started.
@@ -317,7 +317,7 @@ The following code example shows how to use `StartTranscriptionJob`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Start a transcription job for a media file. This method returns
     /// as soon as the job is started.
@@ -359,7 +359,7 @@ The following code example shows how to use `UpdateVocabulary`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Update a custom vocabulary with new values. Update overwrites all existing information.
     /// </summary>

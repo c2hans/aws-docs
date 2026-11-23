@@ -10,7 +10,7 @@ For more information about pod templates, see [Using pod templates](https://docs
 
 The following example shows how to create an interactive endpoint with pod templates:
 
-```
+```bash,sh,zsh
 aws emr-containers create-managed-endpoint \
     --type JUPYTER_ENTERPRISE_GATEWAY \
     --virtual-cluster-id {{virtual-cluster-id}} \

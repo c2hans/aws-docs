@@ -34,15 +34,21 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost08-
 
 ![Architecture diagram showing AWS Instance Scheduler starting and stopping Amazon EC2 and Amazon RDS instances at scheduled times across accounts and Regions.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/instance-scheduler-diagram.png)
 
+*AWS Instance Scheduler starting and stopping instances on a schedule*
+
  [AWS Auto Scaling](https://aws.amazon.com/autoscaling/) handles the second form. It adjusts capacity to hold performance and keep cost low, and works with Amazon EC2, Spot Fleet, Amazon ECS, Amazon DynamoDB, and Amazon Aurora. A group can maintain a fixed number of instances, or it can scale through manual, scheduled, dynamic, or predictive [scaling options](https://docs.aws.amazon.com/autoscaling/ec2/userguide/scaling-overview.html).
 
  *Demand-based supply* reacts to near real-time demand. It uses metrics to vary resource count, adding capacity during spikes to hold performance and removing capacity when demand falls to save cost. Simple or step scaling adds or removes instances according to thresholds you define. Target tracking adjusts capacity to keep a metric at a target value. Weigh how quickly you can provision new resources and how wide the supply-demand gap will grow during that delay. <a name="cost08-bp03-fig2"></a>
 
 ![Chart showing capacity scaling up and down in response to near real-time demand metrics such as request rate or utilization.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/demand-based-supply.png)
 
+*Demand-based supply reacting to real-time demand*
+
  *Time-based supply* aligns capacity to demand that is predictable by time, independent of current utilization. It makes resources available exactly when they are needed, without waiting for start-up and health checks. Scheduled scaling changes capacity at set times, such as the start of business hours. Predictive scaling learns daily and weekly patterns and scales ahead of them. Assess how consistent the pattern is, plan for pattern changes, and refine the schedule as monitoring reveals drift. <a name="cost08-bp03-fig3"></a>
 
 ![Chart showing scheduled or predictive scaling that aligns capacity with predictable daily or weekly demand patterns.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/time-based-supply.png)
+
+*Time-based supply aligning capacity to predictable demand*
 
  Use [launch templates](https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html) instead of launch configurations. Templates expose the latest features, support mixing Spot and On-Demand Instances and multiple instance types, and can be versioned. Use [attribute-based instance type selection](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-mixed-instances-group-attribute-based-instance-type-selection.html) to specify requirements such as vCPU, memory, and storage instead of naming instance types. This approach broadens available capacity and adopts newer instance generations automatically.
 

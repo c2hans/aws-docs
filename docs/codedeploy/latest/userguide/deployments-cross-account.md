@@ -38,7 +38,7 @@ Make note of the ARN for this IAM instance profile. You will need to add it to t
 
 ****
 
-    ```
+    ```json
     {
         "Version":"2012-10-17",
         "Statement": [

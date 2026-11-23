@@ -124,7 +124,7 @@ Follow these steps to grant admin consent using Microsoft Graph PowerShell:
 
 1. Grant admin consent for all delegated permissions on behalf of all users in your tenant. Replace {{ServicePrincipalId}} with the ID from step 3 and {{GraphServicePrincipalId}} with the ID from step 2:
 
-   ```
+   ```powershell
    $params = @{
        "ClientId"    = "{{ServicePrincipalId}}"
        "ConsentType" = "AllPrincipals"
@@ -155,7 +155,7 @@ Follow these steps to grant admin consent using Microsoft Graph Explorer:
 
    Request body:
 
-   ```
+   ```json
    {
        "appId": "a5342f89-ebb1-4b1d-966c-34e8df972aaf"
    }
@@ -169,7 +169,7 @@ Follow these steps to grant admin consent using Microsoft Graph Explorer:
 
    Request body:
 
-   ```
+   ```json
    {
        "clientId": "{{ServicePrincipalId}}",
        "consentType": "AllPrincipals",

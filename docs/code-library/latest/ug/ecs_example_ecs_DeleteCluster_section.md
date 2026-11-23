@@ -51,7 +51,7 @@ For more information, see [Deleting an Amazon ECS cluster](https://docs.aws.amaz
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deletes the specified ECS cluster. You must deregister all container instances from this cluster before you may delete it. **
 
-```
+```powershell
 Remove-ECSCluster -Cluster "LAB-ECS"
 ```
 **Output:**
@@ -67,7 +67,7 @@ Performing the operation "Remove-ECSCluster (DeleteCluster)" on target "LAB-ECS"
 **Tools for PowerShell V5**
 **Example 1: This cmdlet deletes the specified ECS cluster. You must deregister all container instances from this cluster before you may delete it. **
 
-```
+```powershell
 Remove-ECSCluster -Cluster "LAB-ECS"
 ```
 **Output:**
@@ -86,7 +86,7 @@ Performing the operation "Remove-ECSCluster (DeleteCluster)" on target "LAB-ECS"
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 
@@ -143,7 +143,7 @@ class EcsWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ecs#code-examples).
 
-```
+```rust
 async fn remove_cluster(
     client: &aws_sdk_ecs::Client,
     name: &str,

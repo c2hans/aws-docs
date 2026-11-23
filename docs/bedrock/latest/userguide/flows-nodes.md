@@ -30,7 +30,7 @@ Every flow contains only one flow input node and must begin with it. The flow in
 
 The following shows the general structure of an input [FlowNode](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNode.html) object in the API:
 
-```
+```json
 {
     "name": "string",
     "type": "Input",
@@ -55,7 +55,7 @@ A flow can have multiple flow output nodes if there are multiple branches in the
 
 The following shows the general structure of an output [FlowNode](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNode.html) object:
 
-```
+```json
 {
     "name": "string",
     "type": "Output",
@@ -127,7 +127,7 @@ In the API, you define the following in the `definition` field when you send a [
 
 1. A condition [FlowNode](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNode.html) object in the `nodes` array. The general format is as follows (note that condition nodes don't have `outputs`):
 
-   ```
+   ```json
    {
        "name": "string",
        "type": "Condition",
@@ -154,7 +154,7 @@ In the API, you define the following in the `definition` field when you send a [
 
 1. For each input into the condition node, a [FlowConnection](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowConnection.html) object in the `connections` array. Include a [FlowDataConnectionConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowDataConnectionConfiguration.html) object in the `configuration` field of the `FlowConnection` object. The general format of the`FlowConnection` object is as follows:
 
-   ```
+   ```json
    {
        "name": "string",
        "source": "string",
@@ -171,7 +171,7 @@ In the API, you define the following in the `definition` field when you send a [
 
 1. For each condition (including the default condition) in the condition node, a [FlowConnection](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowConnection.html) object in the `connections` array. Include a [FlowConditionalConnectionConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowConditionalConnectionConfiguration.html) object in the `configuration` field of the `FlowConnection` object. The general format of the [FlowConnection](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowConnection.html) object is as follows:
 
-   ```
+   ```json
    {
        "name": "string",
        "source": "string",
@@ -194,7 +194,7 @@ An iterator node takes an array and iteratively returns its items as output to t
 
 The following shows the general structure of an iterator [FlowNode](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNode.html) object:
 
-```
+```json
 {
     "name": "string",
     "type": "Iterator",
@@ -228,7 +228,7 @@ A collector node takes an iterated input, in addition to the size that the array
 
 The following shows the general structure of a collector [FlowNode](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNode.html) object:
 
-```
+```json
 {
     "name": "string",
     "type": "Collector",
@@ -264,7 +264,7 @@ The DoWhile loop node takes input data and passes it through the loop body. Afte
 
 The following shows the general structure of a DoWhile loop [FlowNode](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNode.html) object:
 
-```
+```json
 {
     "name": "string",
     "type": "DoWhile",
@@ -317,7 +317,7 @@ The inputs to the prompt node are values to fill in the variables. The output is
 
 The following shows the general structure of a prompt [FlowNode](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNode.html) object:
 
-```
+```json
 {
     "name": "string",
     "type": "prompt",
@@ -350,7 +350,7 @@ The following shows the general structure of a prompt [FlowNode](https://docs.aw
 The [PromptFlowNodeSourceConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PromptFlowNodeSourceConfiguration.html) object depends on if you use a prompt from Prompt management or if you define it inline:
 + If you use a prompt from Prompt management, the object should be in the following general structure:
 
-  ```
+  ```json
   {
       "resource": {
           "promptArn": "string"
@@ -359,7 +359,7 @@ The [PromptFlowNodeSourceConfiguration](https://docs.aws.amazon.com/bedrock/late
   ```
 + If you define a prompt inline, follow the guidance for defining a variant in the API tab of [Create a prompt using Prompt management](prompt-management-create.md) (note that there is no `name` field in this object, however). The object you use should be in the following general structure:
 
-  ```
+  ```json
   {
       "inline": {
           "modelId": "string",
@@ -404,7 +404,7 @@ An Agent node can support multi-turn invocations, enabling interactive conversat
 
 The following shows the general structure of an agent [FlowNode](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNode.html) object:
 
-```
+```json
 {
     "name": "string",
     "type": "Agent",
@@ -454,7 +454,7 @@ The input into the node is the query to the knowledge base. The output is either
 
 The following shows the general structure of a knowledge base [FlowNode](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNode.html) object:
 
-```
+```json
 {
     "name": "string",
     "type": "KnowledgeBase",
@@ -491,7 +491,7 @@ An S3 storage node lets you store data in the flow to an Amazon S3 bucket. In th
 
 The following shows the general structure of an S3 storage [FlowNode](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNode.html) object:
 
-```
+```json
 {
     "name": "string",
     "type": "Storage",
@@ -535,7 +535,7 @@ Currently, the data in the S3 location must be a UTF-8 encoded string.
 
 The following shows the general structure of an S3 retrieval [FlowNode](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNode.html) object:
 
-```
+```json
 {
     "name": "string",
     "type": "Retrieval",
@@ -573,7 +573,7 @@ In the configuration, specify the Amazon Resource Name (ARN) of the Lambda funct
 
 The following shows the general structure of a Lambda function [FlowNode](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNode.html) object:
 
-```
+```json
 {
     "name": "string",
     "type": "LambdaFunction",
@@ -604,7 +604,7 @@ The following shows the general structure of a Lambda function [FlowNode](https:
 
 The input event sent to a Lambda function in a Lambda node is of the following format:
 
-```
+```json
 {
    "messageVersion": "1.0",
    "flow": {
@@ -647,7 +647,7 @@ In the node configuration, specify the code to execute along with the programmin
 
 The following example shows the general structure of an inline code [FlowNode](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNode.html) object:
 
-```
+```json
 {
     "name": "string",
     "type": "InlineCode",
@@ -702,7 +702,7 @@ The result of the last executed line in your code is returned as the output of t
 
 For example, the following code returns a dictionary as the node output:
 
-```
+```python
 # Process input data
 result = {"processed": True, "data": userData}
 
@@ -725,7 +725,7 @@ Currently, the Lex node doesn't support multi-turn conversations. One Lex node c
 
 The following shows the general structure of a Lex [FlowNode](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNode.html) object:
 
-```
+```json
 {
     "name": "string",
     "type": "Lex",

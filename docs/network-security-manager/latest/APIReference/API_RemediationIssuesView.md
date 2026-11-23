@@ -16,7 +16,7 @@ This data type is a UNION, so only one of the following members can be specified
 The remediation issues, keyed by firewall type.
 Type: String to [RemediationIssueDetails](API_RemediationIssueDetails.md) object map
 Map Entries: Minimum number of 0 items. Maximum number of 10 items.
-Valid Keys: `WAF | SHIELD_ADVANCED`
+Valid Keys: `WAF | SHIELD_ADVANCED | IGW_FIREWALL`
 Required: No
 
  ** notVisible **   <a name="networksecuritymanager-Type-RemediationIssuesView-notVisible"></a>

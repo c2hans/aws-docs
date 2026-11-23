@@ -33,7 +33,7 @@ Specify credentials by using any of the standard ways that are valid for boto3. 
 
 1. Import the `pcluster` module and start using the library, as shown in the following example:
 
-   ```
+   ```python
    import pcluster.lib as {{pc}}
    pc.create_cluster(cluster_name={{"mycluster"}}, cluster_configuration={{"config.yaml"}}
    ```

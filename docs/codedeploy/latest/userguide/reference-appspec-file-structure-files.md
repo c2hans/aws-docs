@@ -67,7 +67,7 @@ For the following examples, we assume these files appear in the bundle in the ro
 + `my-file-2.txt`
 + `my-file-3.txt`
 
-```
+```yaml
 # 1) Copy only my-file.txt to the destination folder c:\temp.
 #
 files:
@@ -112,7 +112,7 @@ For the following examples, we assume the `appspec.yml` appears in the bundle in
 + `my-folder\my-file-2.txt`
 + `my-folder\my-file-3.txt`
 
-```
+```yaml
 # 4) Copy the 3 files in my-folder (but do not copy my-folder itself) to the destination folder c:\temp.
 #
 files:

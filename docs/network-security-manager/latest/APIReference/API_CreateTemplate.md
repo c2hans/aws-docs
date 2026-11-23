@@ -56,7 +56,7 @@ Required: No
  ** [firewallType](#API_CreateTemplate_RequestSyntax) **   <a name="networksecuritymanager-CreateTemplate-request-firewallType"></a>
 The firewall type associated with the resource.
 Type: String
-Valid Values: `WAF`
+Valid Values: `WAF | IGW_FIREWALL`
 Required: Yes
 
  ** [isPublished](#API_CreateTemplate_RequestSyntax) **   <a name="networksecuritymanager-CreateTemplate-request-isPublished"></a>
@@ -129,7 +129,7 @@ Array Members: Minimum number of 1 item. Maximum number of 50 items.
  ** [firewallType](#API_CreateTemplate_ResponseSyntax) **   <a name="networksecuritymanager-CreateTemplate-response-firewallType"></a>
 The firewall type associated with the resource.
 Type: String
-Valid Values: `WAF`
+Valid Values: `WAF | IGW_FIREWALL`
 
  ** [hasPublishedVersion](#API_CreateTemplate_ResponseSyntax) **   <a name="networksecuritymanager-CreateTemplate-response-hasPublishedVersion"></a>
 Specifies whether a published version of the resource exists.

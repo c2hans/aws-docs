@@ -118,7 +118,7 @@ If you need system call auditing, please find the following line in `/etc/audit/
 
 **Example (as root):**
 
-```
+```sh
 $ auditctl -l
 LIST_RULES: task,never
 $ sed -i.bak -e '/^-a never,task$/ s/^/#/' /etc/audit/audit.rules
@@ -131,7 +131,7 @@ If you want to get the same performance improvement on existing instances, pleas
 
 **Example (as root):**
 
-```
+```sh
 $ auditctl -l
 No rules
 $ cp -p /etc/audit/rules.d/audit.rules.default /etc/audit/audit.rules

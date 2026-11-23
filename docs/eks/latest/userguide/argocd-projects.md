@@ -34,7 +34,7 @@ Create a Project by applying an `AppProject` resource to your cluster.
 
  **Example: Team-specific Project**
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
@@ -76,7 +76,7 @@ spec:
 
 Apply the Project:
 
-```
+```bash
 kubectl apply -f team-a-project.yaml
 ```
 
@@ -88,7 +88,7 @@ kubectl apply -f team-a-project.yaml
 
 Control which Git repositories Applications in this project can use:
 
-```
+```yaml
 spec:
   sourceRepos:
     - 'https://github.com/my-org/app-*'  # Wildcard pattern
@@ -115,7 +115,7 @@ The `default` AppProject is broadly permissive and automatically works for resou
 
 The following example keeps the AppProject in the primary `argocd` namespace and permits Applications and ApplicationSets from `team-a-gitops`:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
@@ -147,7 +147,7 @@ If you omit an additional namespace from `sourceNamespaces`, Applications and Ap
 
 Limit where Applications can deploy:
 
-```
+```yaml
 spec:
   destinations:
     - name: prod-cluster  # Specific cluster by name
@@ -168,7 +168,7 @@ Control which Kubernetes resource types can be deployed:
 
  **Cluster-scoped resources**:
 
-```
+```yaml
 spec:
   clusterResourceWhitelist:
     - group: ''
@@ -179,7 +179,7 @@ spec:
 
  **Namespace-scoped resources**:
 
-```
+```yaml
 spec:
   namespaceResourceWhitelist:
     - group: 'apps'
@@ -194,7 +194,7 @@ spec:
 
 Use blacklists to deny specific resources:
 
-```
+```yaml
 spec:
   namespaceResourceBlacklist:
     - group: ''
@@ -206,7 +206,7 @@ spec:
 
 When creating an Application, specify the project in the `spec.project` field:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -231,7 +231,7 @@ Projects can define custom roles for fine-grained access control. Map project ro
 
  **Example: Project with developer and admin roles**
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
@@ -271,7 +271,7 @@ For details on project roles, JWT tokens for CI/CD pipelines, and RBAC configura
 
 Create separate projects for each environment:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
@@ -297,7 +297,7 @@ spec:
 
 Isolate teams with dedicated projects:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
@@ -320,7 +320,7 @@ spec:
 
 Deploy to multiple clusters with consistent policies:
 
-```
+```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

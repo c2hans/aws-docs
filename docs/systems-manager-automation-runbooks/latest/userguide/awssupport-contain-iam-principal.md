@@ -111,7 +111,7 @@ The `AutomationAssumeRole` parameter requires the following permissions to succe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

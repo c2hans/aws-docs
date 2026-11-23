@@ -109,7 +109,7 @@ To view a code example for using the `$avg` operator, choose the tab for the lan
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function calculateAvgScore() {
@@ -166,7 +166,7 @@ calculateAvgScore();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def calculate_avg_score():

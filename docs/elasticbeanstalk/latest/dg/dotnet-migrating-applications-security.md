@@ -22,7 +22,7 @@ If you don't specify an instance profile, **eb migrate** creates a default profi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

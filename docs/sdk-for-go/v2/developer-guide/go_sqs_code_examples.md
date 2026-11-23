@@ -29,7 +29,7 @@ The following code example shows how to get started using Amazon SQS.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/sqs#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -88,7 +88,7 @@ The following code example shows how to use `CreateQueue`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/topics_and_queues#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -137,7 +137,7 @@ The following code example shows how to use `DeleteMessageBatch`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/topics_and_queues#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -183,7 +183,7 @@ The following code example shows how to use `DeleteQueue`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/topics_and_queues#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -221,7 +221,7 @@ The following code example shows how to use `GetQueueAttributes`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/topics_and_queues#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -266,7 +266,7 @@ The following code example shows how to use `ListQueues`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/sqs#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -322,7 +322,7 @@ The following code example shows how to use `ReceiveMessage`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/topics_and_queues#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -366,7 +366,7 @@ The following code example shows how to use `SetQueueAttributes`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/topics_and_queues#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -452,7 +452,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/topics_and_queues#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -758,7 +758,7 @@ func RunTopicsAndQueuesScenario(
 ```
 Define a struct that wraps Amazon SNS actions used in this example.
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -868,7 +868,7 @@ func (actor SnsActions) Publish(ctx context.Context, topicArn string, message st
 ```
 Define a struct that wraps Amazon SQS actions used in this example.
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -1020,7 +1020,7 @@ func (actor SqsActions) DeleteQueue(ctx context.Context, queueUrl string) error 
 ```
 Clean up resources.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -1089,7 +1089,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda) repository.
 Consuming an SQS event with Lambda using Go.
 
-```
+```go
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 package integration_sqs_to_lambda
@@ -1131,7 +1131,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using Go.
 
-```
+```go
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 package main

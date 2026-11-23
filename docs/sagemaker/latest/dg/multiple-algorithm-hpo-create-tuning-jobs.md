@@ -152,7 +152,7 @@ When you create a tuning job that includes multiple training algorithms, your tu
 
 The following code example shows how to retrieve two SageMaker AI containers containing the built-in algorithms [XGBoost](https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html) and [Linear Learner](https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html). If your tuning job contains only one training algorithm, omit one of the containers and one of the ModelTrainers.
 
-```
+```python
 import sagemaker
 from sagemaker.core import image_uris
 from sagemaker.core.helper.session_helper import Session, get_execution_role
@@ -204,7 +204,7 @@ ll_model_trainer = ModelTrainer(
 
 Next, define your input data by specifying the training, validation, and testing datasets, as shown in the following code example. This example shows how to tune multiple training algorithms.
 
-```
+```python
 from sagemaker.train.configs import InputData
 
 training_data = InputData(
@@ -245,7 +245,7 @@ This section shows how to initialize a tuner, define resources, and specify job 
 
 The following code example shows how to initialize a tuner and set hyperparameter ranges for one SageMaker AI built-in algorithm, XGBoost.
 
-```
+```python
 from sagemaker.train import HyperparameterTuner
 from sagemaker.parameter import ContinuousParameter, IntegerParameter
 
@@ -311,6 +311,6 @@ tuner = HyperparameterTuner.create(
 
 Now you can run your tuning job by passing your training inputs to the tuner. The following code example shows how to pass the `train_inputs` parameter, that is defined in a previous code example, to your tuner.
 
-```
+```python
 tuner.tune(inputs=train_inputs, model_trainer_kwargs={})
 ```

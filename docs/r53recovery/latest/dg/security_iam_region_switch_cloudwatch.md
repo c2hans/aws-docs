@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_regio
 
  The following is a sample policy to attach to access CloudWatch alarms for application health, which are used to help determine actual recovery time.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

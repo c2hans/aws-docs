@@ -24,7 +24,7 @@ The instructions in this section get you up and running with Amazon Managed Serv
 
 To add new Helm chart repositories, enter the following commands. For more information about these commands, see [Helm Repo](https://helm.sh/docs/helm/helm_repo/).
 
-```
+```cmd
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo add kube-state-metrics https://kubernetes.github.io/kube-state-metrics
 helm repo update
@@ -63,7 +63,7 @@ To install the new Prometheus agent and send metrics to your Amazon Managed Serv
    + Replace {{WORKSPACE\_ID}} with the ID of your Amazon Managed Service for Prometheus workspace.
    + Replace {{REGION}} with the Region of your Amazon Managed Service for Prometheus workspace.
 
-   ```
+   ```yaml
    ## The following is a set of default values for prometheus server helm chart which enable remoteWrite to AMP
    ## For the rest of prometheus helm chart values see: https://github.com/prometheus-community/helm-charts/blob/main/charts/prometheus/values.yaml
    ##
@@ -87,7 +87,7 @@ To install the new Prometheus agent and send metrics to your Amazon Managed Serv
    + Replace {{prometheus-chart-name}} with your Prometheus release name.
    + Replace {{prometheus-agent-namespace}} with the name of your Prometheus namespace.
 
-   ```
+   ```cmd
    helm install {{prometheus-chart-name}} prometheus-community/prometheus -n {{prometheus-agent-namespace}} \
    -f my_prometheus_values_yaml
    ```

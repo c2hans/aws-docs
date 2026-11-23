@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::DestinationEndpoint
 
-<a name="aws-resource-mediaconnect-destinationendpoint-description"></a>The `AWS::MediaConnect::DestinationEndpoint` resource Property description not available. for MediaConnect.
+The `AWS::MediaConnect::DestinationEndpoint` resource defines a destination endpoint in the MediaConnect endpoint registry. A destination endpoint represents the receiving side of a connection. It can be a standard endpoint that represents a device or software outside the service, such as a decoder or monitor. It can also be a managed endpoint that represents a router input.
 
 ## Syntax
 <a name="aws-resource-mediaconnect-destinationendpoint-syntax"></a>
@@ -64,7 +64,8 @@ The name of the AWS Region in which the destination endpoint is located.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-mediaconnect-destinationendpoint-tags"></a>
-The tags associated with the destination endpoint. Each tag is a key-value pair.
+An array of key-value pairs to apply to this resource.
+For more information, see [Resource tags](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html).
 *Required*: No
 *Type*: Array of [Tag](aws-properties-mediaconnect-destinationendpoint-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -74,6 +75,12 @@ The tags associated with the destination endpoint. Each tag is a key-value pair.
 
 ### Ref
 <a name="aws-resource-mediaconnect-destinationendpoint-return-values-ref"></a>
+
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the destination endpoint ARN. For example:
+
+ `{ "Ref": "arn:aws:mediaconnect:us-west-2:111122223333:destinationEndpoint:86f52099b545" }`
+
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-mediaconnect-destinationendpoint-return-values-fn--getatt"></a>

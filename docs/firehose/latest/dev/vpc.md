@@ -29,7 +29,7 @@ The following example shows how you can set up an AWS Lambda function in a VPC a
 
 1. For **Policy**, choose **Custom** and paste the following policy:
 
-   ```
+   ```JSON
    {
        "Statement": [
            {
@@ -100,7 +100,7 @@ This is an example. You might need stricter policies for your production environ
 
 1. Under **Function code**, paste the following code.
 
-   ```
+   ```Python
        import json
        import boto3
        import os

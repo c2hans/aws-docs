@@ -117,7 +117,7 @@ You can use the [AWS Serverless Application Model](https://docs.aws.amazon.com/s
 
 **Example template.yaml**
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: An AWS Serverless Application Model template describing your function.
@@ -174,7 +174,7 @@ The following code examples in Python and Node.js illustrate how you can achieve
 
 **Example Python code to set log level**
 
-```
+```python
 import os
 import logging
 
@@ -199,7 +199,7 @@ def lambda_handler(event, context):
 **Example Node.js code to set log level**
 This example uses the `winston` logging library. Use npm to add this library to your function's deployment package. For more information, see [Creating a .zip deployment package with dependencies](nodejs-package.md#nodejs-package-create-dependencies).
 
-```
+```javascript
 import winston from 'winston';
 
 // Initialize the logger using the log level from environment variables, defaulting to INFO if not set
@@ -227,14 +227,14 @@ To retrieve environment variables in your function code, use the standard method
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 let region = process.env.AWS_REGION
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 import os
   region = os.environ['AWS_REGION']
 ```
@@ -242,42 +242,42 @@ import os
 **Note**
 In some cases, you might need to use the following format:
 
-```
+```python
 region = os.environ.get('AWS_REGION')
 ```
 
 ------
 #### [ Ruby ]
 
-```
+```ruby
 region = ENV["AWS_REGION"]
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 String region = System.getenv("AWS_REGION");
 ```
 
 ------
 #### [ Go ]
 
-```
+```go
 var region = os.Getenv("AWS_REGION")
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 string region = Environment.GetEnvironmentVariable("AWS_REGION");
 ```
 
 ------
 #### [ PowerShell ]
 
-```
+```powershell
 $region = $env:AWS_REGION
 ```
 

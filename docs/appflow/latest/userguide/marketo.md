@@ -92,3 +92,4 @@ You can also set the destination to any custom connectors that you create with t
 + [API Limits with Marketo](https://developers.marketo.com/rest-api/marketo-integration-best-practices/) in the Marketo documentation
 + [Error Codes with Marketo](https://developers.marketo.com/rest-api/error-codes/) in the Marketo documentation
 + Introduction to the Marketo Connector in Amazon AppFlow
+[![AWS Videos](https://img.youtube.com/vi/aZ4XDagkKXU/0.jpg)](https://www.youtube.com/watch?v=aZ4XDagkKXU)

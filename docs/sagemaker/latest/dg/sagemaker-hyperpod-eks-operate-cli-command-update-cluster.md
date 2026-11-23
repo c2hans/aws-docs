@@ -57,7 +57,7 @@ You can use the `UpdateCluster` to scale down or remove entire instance groups f
 
    The following code snippet is a JSON request file template you can use. For more information about the request syntax and parameters of this API, see the [UpdateCluster](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) API reference.
 
-   ```
+   ```json
    // update_cluster.json
    {
        // Required

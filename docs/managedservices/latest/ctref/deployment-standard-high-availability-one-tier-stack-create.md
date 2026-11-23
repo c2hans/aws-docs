@@ -142,7 +142,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-standard-high-availability-one-tier-stack-create-ex-min"></a>
 
-```
+```json
 {
   "VpcId": "vpc-1234567890abcdef0",
   "TimeoutInMinutes": 360,
@@ -161,7 +161,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-standard-high-availability-one-tier-stack-create-ex-max"></a>
 
-```
+```json
 {
   "VpcId": "vpc-12345678",
   "TimeoutInMinutes": 360,

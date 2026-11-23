@@ -19,9 +19,13 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 <a name="s07-reference-architecture"></a><a name="scenario-07-fig1"></a>
 
 ![Ad Context Protocol (AdCP) product roadmap showing the sequence of specialized advertising agents and capabilities](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-07a-adcp-product-roadmap.jpg)
+
+*Ad Context Protocol (AdCP) product roadmap*
 <a name="scenario-07-fig2"></a>
 
 ![Ad Context Protocol (AdCP) advertising agent architecture on AWS, part 1, showing the business principals, media orchestration platform with specialized agents, and execution layer](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-07b-advertising-agents-1.jpg)
+
+*Advertising agents on AWS, part 1*
 
  The architecture consists of the following components:
 
@@ -48,6 +52,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 <a name="agent-infrastructure"></a><a name="scenario-07-fig3"></a>
 
 ![Ad Context Protocol (AdCP) advertising agent architecture on AWS, part 2, showing agent deployment infrastructure, governance agents, and human-in-the-loop oversight points](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-07b-advertising-agents-2.jpg)
+
+*Advertising agents on AWS, part 2*
 
  Deploy advertising agents using Amazon Bedrock AgentCore Runtime for serverless execution. Use AgentCore Gateway for MCP-compatible tool access. Configure AgentCore Policy (Cedar policy engine) for fine-grained agent-to-tool interaction controls. This reduces the operational overhead of managing ECS tasks or EKS pods for agent workloads.
 

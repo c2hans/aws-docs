@@ -210,7 +210,7 @@ aws globalaccelerator create-endpoint-group
            --region us-west-2
 ```
 
-```
+```json
 {
     "EndpointGroup": {
         "TrafficDialPercentage": 100.0,

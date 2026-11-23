@@ -19,7 +19,7 @@ You might want to process JSON web tokens in your application and pass their cla
 
 This example shows how you might call Verified Permissions from an application using a JWT.¹
 
-```
+```javascript
 async function authorizeUsingJwtToken(jwtToken) {
 
     const payload = await verifier.verify(jwtToken);

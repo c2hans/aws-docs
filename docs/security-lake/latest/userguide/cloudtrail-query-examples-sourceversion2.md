@@ -10,7 +10,7 @@ Here are some example queries for CloudTrail data for AWS source version 2:
 
 **Unauthorized attempts against AWS services in the last 7 days**
 
-```
+```sql
 SELECT
     time_dt,
     api.service.name,
@@ -35,7 +35,7 @@ LIMIT 25
 
 **List of all CloudTrail activity from source IP `192.0.2.1` in the last 7 days**
 
-```
+```sql
 SELECT
     api.request.uid,
     time_dt,
@@ -54,7 +54,7 @@ LIMIT 25
 
 **List of all IAM activity in the last 7 days**
 
-```
+```sql
 SELECT *
 FROM "amazon_security_lake_glue_db_us_east_1"."amazon_security_lake_table_us_east_1_cloud_trail_mgmt_2_0"
 WHERE time_dt BETWEEN CURRENT_TIMESTAMP - INTERVAL '7' DAY AND CURRENT_TIMESTAMP
@@ -65,7 +65,7 @@ LIMIT 25
 
 **Instances where the credential `AIDACKCEVSQ6C2EXAMPLE` was used in the last 7 days**
 
-```
+```sql
 SELECT
       actor.user.uid,
       actor.user.uid_alt,
@@ -79,7 +79,7 @@ LIMIT 25
 
 **List of failed CloudTrail records in the last 7 days**
 
-```
+```sql
 SELECT
       actor.user.uid,
       actor.user.uid_alt,

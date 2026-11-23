@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon EC2.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun describeEC2SecurityGroups(groupId: String) {
     val request =
         DescribeSecurityGroupsRequest {
@@ -63,7 +63,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 /**
  Before running this Kotlin code example, set up your development environment,
  including your credentials.
@@ -626,7 +626,7 @@ The following code example shows how to use `AllocateAddress`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun getAllocateAddress(instanceIdVal: String?): String? {
     val allocateRequest =
         AllocateAddressRequest {
@@ -658,7 +658,7 @@ The following code example shows how to use `AssociateAddress`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun associateAddressSc(
     instanceIdVal: String?,
     allocationIdVal: String?,
@@ -685,7 +685,7 @@ The following code example shows how to use `AuthorizeSecurityGroupIngress`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun createEC2SecurityGroupSc(
     groupNameVal: String?,
     groupDescVal: String?,
@@ -743,7 +743,7 @@ The following code example shows how to use `CreateKeyPair`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun createEC2KeyPair(keyNameVal: String) {
     val request =
         CreateKeyPairRequest {
@@ -766,7 +766,7 @@ The following code example shows how to use `CreateSecurityGroup`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun createEC2SecurityGroup(
     groupNameVal: String?,
     groupDescVal: String?,
@@ -823,7 +823,7 @@ The following code example shows how to use `DeleteKeyPair`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun deleteKeys(keyPair: String?) {
     val request =
         DeleteKeyPairRequest {
@@ -846,7 +846,7 @@ The following code example shows how to use `DeleteSecurityGroup`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun deleteEC2SecGroup(groupIdVal: String) {
     val request =
         DeleteSecurityGroupRequest {
@@ -869,7 +869,7 @@ The following code example shows how to use `DescribeInstanceTypes`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 // Get a list of instance types.
 suspend fun getInstanceTypesSc(): String {
     var instanceType = ""
@@ -907,7 +907,7 @@ The following code example shows how to use `DescribeInstances`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun describeEC2Instances() {
     val request =
         DescribeInstancesRequest {
@@ -938,7 +938,7 @@ The following code example shows how to use `DescribeKeyPairs`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun describeEC2Keys() {
     Ec2Client.fromEnvironment { region = "us-west-2" }.use { ec2 ->
         val response = ec2.describeKeyPairs(DescribeKeyPairsRequest {})
@@ -958,7 +958,7 @@ The following code example shows how to use `DescribeSecurityGroups`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun describeEC2SecurityGroups(groupId: String) {
     val request =
         DescribeSecurityGroupsRequest {
@@ -983,7 +983,7 @@ The following code example shows how to use `DisassociateAddress`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun disassociateAddressSc(associationIdVal: String?) {
     val addressRequest =
         DisassociateAddressRequest {
@@ -1005,7 +1005,7 @@ The following code example shows how to use `ReleaseAddress`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun releaseEC2AddressSc(allocId: String?) {
     val request =
         ReleaseAddressRequest {
@@ -1028,7 +1028,7 @@ The following code example shows how to use `RunInstances`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun createEC2Instance(
     name: String,
     amiId: String,
@@ -1071,7 +1071,7 @@ The following code example shows how to use `StartInstances`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun startInstanceSc(instanceId: String) {
     val request =
         StartInstancesRequest {
@@ -1099,7 +1099,7 @@ The following code example shows how to use `StopInstances`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun stopInstanceSc(instanceId: String) {
     val request =
         StopInstancesRequest {
@@ -1127,7 +1127,7 @@ The following code example shows how to use `TerminateInstances`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun terminateEC2(instanceID: String) {
     val request =
         TerminateInstancesRequest {

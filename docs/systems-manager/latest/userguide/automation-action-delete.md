@@ -15,7 +15,7 @@ This action supports only one parameter. For more information, see the documenta
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: deleteMyImage
 action: aws:deleteImage
 maxAttempts: 3
@@ -28,7 +28,7 @@ inputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "deleteMyImage",
     "action": "aws:deleteImage",

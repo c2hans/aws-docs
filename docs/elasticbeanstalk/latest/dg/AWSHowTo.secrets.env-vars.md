@@ -156,7 +156,7 @@ aws elasticbeanstalk create-environment \
 
 **Example**
 
-```
+```json
 ### example options.json ###
 [
   {
@@ -223,7 +223,7 @@ JSON key extraction can be configured using the same methods as regular environm
 
 The following example demonstrates how different value types are extracted from a JSON secret. Given this secret:
 
-```
+```json
 {
   "stringKey": "value1",
   "numberKey": 42,

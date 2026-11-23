@@ -15,7 +15,7 @@ A: Use [model invocation logs](model-invocation-logging.md), not the billing-bas
 
 The first option is to set a request-metadata tag on each call:
 
-```
+```python
 client.converse(
     modelId=...,
     messages=[...],
@@ -92,7 +92,7 @@ A: No. Request metadata is not a cost allocation tag. It is written only to your
 
 A: Amazon Bedrock records the gateway's role as the caller's identity. To preserve user-level attribution, assume the role per user, cache the credentials for the session lifetime, and pass the user as a session tag (for billing dollars) and/or as a `RoleSessionName` (so the user lands in `identity.arn` in your logs):
 
-```
+```python
 sts.assume_role(
     RoleArn=GATEWAY_ROLE,
     RoleSessionName="alice",

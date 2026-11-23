@@ -13,7 +13,7 @@ With CPT on Nova 2.0 Lite, you can extend these advanced capabilities with your 
 
 The following is a sample recipe for CPT. You can find this recipe and others in the [SageMaker HyperPod recipes](https://github.com/aws/sagemaker-hyperpod-recipes/tree/main/recipes_collection/recipes/training/nova) repository on GitHub.
 
-```
+```yaml
 # Note:
 # This recipe can run on p5.48xlarge
 # Run config

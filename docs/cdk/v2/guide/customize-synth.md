@@ -47,7 +47,7 @@ The following is an example of configuring the `qualifier` property of the `Defa
 
 **Example**
 
-```
+```javascript
 new MyStack(this, 'MyStack', {
   synthesizer: new DefaultStackSynthesizer({
     qualifier: 'MYQUALIFIER',
@@ -55,7 +55,7 @@ new MyStack(this, 'MyStack', {
 });
 ```
 
-```
+```javascript
 new MyStack(this, 'MyStack', {
   synthesizer: new DefaultStackSynthesizer({
     qualifier: 'MYQUALIFIER',
@@ -63,14 +63,14 @@ new MyStack(this, 'MyStack', {
 })
 ```
 
-```
+```python
 MyStack(self, "MyStack",
     synthesizer=DefaultStackSynthesizer(
         qualifier="MYQUALIFIER"
 ))
 ```
 
-```
+```java
 new MyStack(app, "MyStack", StackProps.builder()
   .synthesizer(DefaultStackSynthesizer.Builder.create()
     .qualifier("MYQUALIFIER")
@@ -79,7 +79,7 @@ new MyStack(app, "MyStack", StackProps.builder()
 )
 ```
 
-```
+```csharp
 new MyStack(app, "MyStack", new StackProps
 {
     Synthesizer = new DefaultStackSynthesizer(new DefaultStackSynthesizerProps
@@ -89,7 +89,7 @@ new MyStack(app, "MyStack", new StackProps
 });
 ```
 
-```
+```go
 func NewMyStack(scope constructs.Construct, id string, props *MyStackProps) awscdk.Stack {
 	var sprops awscdk.StackProps
 	if props != nil {
@@ -109,7 +109,7 @@ func NewMyStack(scope constructs.Construct, id string, props *MyStackProps) awsc
 
 The following is an example of configuring the qualifier as a context key in `cdk.json`:
 
-```
+```json
 {
   "app": "...",
   "context": {
@@ -129,7 +129,7 @@ The following example shows the most commonly used properties for `DefaultStackS
 
 **Example**
 
-```
+```javascript
 new DefaultStackSynthesizer({
   // Name of the S3 bucket for file assets
   fileAssetsBucketName: 'cdk-${Qualifier}-assets-${AWS::AccountId}-${AWS::Region}',
@@ -167,7 +167,7 @@ new DefaultStackSynthesizer({
 })
 ```
 
-```
+```javascript
 new DefaultStackSynthesizer({
   // Name of the S3 bucket for file assets
   fileAssetsBucketName: 'cdk-${Qualifier}-assets-${AWS::AccountId}-${AWS::Region}',
@@ -204,7 +204,7 @@ new DefaultStackSynthesizer({
 })
 ```
 
-```
+```python
 DefaultStackSynthesizer(
   # Name of the S3 bucket for file assets
   file_assets_bucket_name="cdk-${Qualifier}-assets-${AWS::AccountId}-${AWS::Region}",
@@ -241,7 +241,7 @@ DefaultStackSynthesizer(
 )
 ```
 
-```
+```java
 DefaultStackSynthesizer.Builder.create()
   // Name of the S3 bucket for file assets
   .fileAssetsBucketName("cdk-${Qualifier}-assets-${AWS::AccountId}-${AWS::Region}")
@@ -277,7 +277,7 @@ DefaultStackSynthesizer.Builder.create()
 .build()
 ```
 
-```
+```csharp
 new DefaultStackSynthesizer(new DefaultStackSynthesizerProps
 {
     // Name of the S3 bucket for file assets
@@ -349,7 +349,7 @@ If you change the qualifier or any of the default bootstrap resource names durin
 
 **Example**
 
-```
+```javascript
 new MyStack(this, 'MyStack', {
   synthesizer: new CliCredentialsStackSynthesizer({
     qualifier: 'MYQUALIFIER',
@@ -357,7 +357,7 @@ new MyStack(this, 'MyStack', {
 });
 ```
 
-```
+```javascript
 new MyStack(this, 'MyStack', {
   synthesizer: new CliCredentialsStackSynthesizer({
     qualifier: 'MYQUALIFIER',
@@ -365,14 +365,14 @@ new MyStack(this, 'MyStack', {
 })
 ```
 
-```
+```python
 MyStack(self, "MyStack",
     synthesizer=CliCredentialsStackSynthesizer(
         qualifier="MYQUALIFIER"
 ))
 ```
 
-```
+```java
 new MyStack(app, "MyStack", StackProps.builder()
   .synthesizer(CliCredentialsStackSynthesizer.Builder.create()
     .qualifier("MYQUALIFIER")
@@ -381,7 +381,7 @@ new MyStack(app, "MyStack", StackProps.builder()
 )
 ```
 
-```
+```csharp
 new MyStack(app, "MyStack", new StackProps
 {
     Synthesizer = new CliCredentialsStackSynthesizer(new CliCredentialsStackSynthesizerProps
@@ -395,7 +395,7 @@ The following example shows the most commonly used properties for `CliCredential
 
 **Example**
 
-```
+```javascript
 new CliCredentialsStackSynthesizer({
   // Value for '${Qualifier}' in the resource names
   qualifier: 'hnb659fds',
@@ -410,7 +410,7 @@ new CliCredentialsStackSynthesizer({
 })
 ```
 
-```
+```javascript
 new CliCredentialsStackSynthesizer({
   // Value for '${Qualifier}' in the resource names
   qualifier: 'hnb659fds',
@@ -425,7 +425,7 @@ new CliCredentialsStackSynthesizer({
 })
 ```
 
-```
+```python
 CliCredentialsStackSynthesizer(
   # Value for '${Qualifier}' in the resource names
   qualifier="hnb659fds",
@@ -440,7 +440,7 @@ CliCredentialsStackSynthesizer(
 )
 ```
 
-```
+```java
 CliCredentialsStackSynthesizer.Builder.create()
   // Value for '${Qualifier}' in the resource names
   .qualifier("hnb659fds")
@@ -455,7 +455,7 @@ CliCredentialsStackSynthesizer.Builder.create()
 .build()
 ```
 
-```
+```csharp
 new CliCredentialsStackSynthesizer(new CliCredentialsStackSynthesizerProps
 {
 

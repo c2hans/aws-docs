@@ -32,7 +32,7 @@ To perform actions on your source server, you must provide source server credent
   + **Tags** - Secret key-value pairs will be assigned to the new secret. Note that `AWSApplicationMigrationServiceManaged` tag will also be added with the value set to `True`.
   + Here is the structure of the secrets manager entry:
 
-    ```
+    ```json
     {
       "WinConnectionProtocol": "HTTPS",
       "WinUserName": "windows_username",

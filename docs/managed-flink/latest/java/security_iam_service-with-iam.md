@@ -45,7 +45,7 @@ If you create the IAM role manually or if you create and manage the application 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -57,7 +57,7 @@ Add, modify, and remove the statements, resources, and conditions in the followi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -117,7 +117,7 @@ The following policy restricts read access to the {{my-folder}} folder in the {{
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

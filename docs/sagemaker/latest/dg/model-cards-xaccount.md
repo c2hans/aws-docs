@@ -66,7 +66,7 @@ If the model cards that you're sharing have been encrypted with AWS Key Manageme
 
 To provide AWS KMS permissions to users in the shared account, update your key policy with the following statement:
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {
@@ -115,7 +115,7 @@ You and the other users in your account use an IAM role to access the model card
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -146,7 +146,7 @@ You and the other users in your account use an IAM role to access the model card
 
 To access model cards encrypted using AWS KMS, you must provide users in your account with the following AWS KMS permissions.
 
-```
+```json
 {
      "Effect": "Allow",
      "Action": [

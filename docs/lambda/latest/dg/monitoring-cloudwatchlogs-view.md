@@ -201,7 +201,7 @@ With CloudWatch Logs Insights, you can search and analyze log data using a speci
 
 You can take advantage of these capabilities by implementing structured logging in your Lambda Event Functions. Structured logging organizes your logs into a pre-defined format, making it easier to query for. Using log levels is an important first step in generating filter-friendly logs that separate informational messages from warnings or errors. For example, consider the following Node.js code:
 
-```
+```javascript
 exports.handler = async (event) => {
     console.log("console.log - Application is fine")
     console.info("console.info - This is the same as console.log")

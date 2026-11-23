@@ -46,7 +46,7 @@ To create the IAM policy, do the following:
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -107,7 +107,7 @@ To create the IAM role, do the following:
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[

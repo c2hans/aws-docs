@@ -32,7 +32,7 @@ Note that this policy is an example. It gives a broad set of permissions to the 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -88,7 +88,7 @@ The second policy specifies the Elastic Beanstalk actions that John is allowed t
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -144,7 +144,7 @@ The third policy specifies the Elastic Beanstalk actions that the second policy 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -177,7 +177,7 @@ The first policy specifies `Describe*`, `List*`, and `Get*` actions on Auto Scal
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -216,7 +216,7 @@ The second policy specifies the Elastic Beanstalk actions that Jill is allowed t
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -277,7 +277,7 @@ The third policy specifies the Elastic Beanstalk actions that the second policy 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -311,7 +311,7 @@ Note that this policy is an example. It gives a broad set of permissions to the 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -342,7 +342,7 @@ The second policy specifies the Elastic Beanstalk actions that Jack is allowed t
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -426,7 +426,7 @@ The third policy specifies the Elastic Beanstalk actions that the second policy 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

@@ -69,7 +69,7 @@ Use the `GetImageSetMetadata` action to retrieve image set metadata. The returne
 
 The following example shows the structure of image set [metadata](getting-started-concepts.md#concept-metadata) in JSON format.
 
-```
+```json
 {
 	"SchemaVersion": "1.1",
 	"DatastoreID": "2aa75d103f7f45ab977b0e93f00e6fe9",

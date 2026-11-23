@@ -155,7 +155,7 @@ Use the [create-resource-share](https://docs.aws.amazon.com/cli/latest/reference
 If you want to use a customer managed permission with a resource type in this resource share, you can either use an existing customer managed permission or create a new customer managed permission. Make note of the ARN for the customer managed permission, and then create the resource share. For more information, see [Create a customer managed permission](create-customer-managed-permissions.md#create_cmp).
 If the managed permission declares template parameters, you must also include the `--permission-template-parameters` parameter to supply a value for each declared parameter. For more information, see [Using parameterized managed permissions in AWS RAM](parameterized-managed-permissions.md).
 
-```
+```bash
 $ aws ram create-resource-share \
     --region us-east-1 \
     --name MyLicenseConfigShare \

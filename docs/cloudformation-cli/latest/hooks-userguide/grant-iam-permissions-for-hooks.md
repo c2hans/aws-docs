@@ -38,7 +38,7 @@ The `ActivateType` and `SetTypeConfiguration` API calls work together to create 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -75,7 +75,7 @@ Publishing Hooks publicly makes them available to other AWS accounts. Ensure tha
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -118,7 +118,7 @@ The following shows an example of a basic permissions policy for listing Hook in
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -146,7 +146,7 @@ The following example IAM policy grants permissions to the `cloudformation:ListH
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -185,7 +185,7 @@ The following example IAM policy grants permissions to the `cloudformation:ListA
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -238,7 +238,7 @@ The following example IAM policy grants permissions to the `cloudformation:GetHo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

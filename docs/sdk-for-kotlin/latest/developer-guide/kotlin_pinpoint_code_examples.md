@@ -24,7 +24,7 @@ The following code example shows how to use `CreateApp`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/pinpoint#code-examples).
 
-```
+```kotlin
 suspend fun createApplication(applicationName: String?): String? {
     val createApplicationRequestOb =
         CreateApplicationRequest {
@@ -52,7 +52,7 @@ The following code example shows how to use `CreateCampaign`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/pinpoint#code-examples).
 
-```
+```kotlin
 suspend fun createPinCampaign(
     appId: String,
     segmentIdVal: String,
@@ -105,7 +105,7 @@ The following code example shows how to use `CreateSegment`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/pinpoint#code-examples).
 
-```
+```kotlin
 suspend fun createPinpointSegment(applicationIdVal: String?): String? {
     val segmentAttributes = mutableMapOf<String, AttributeDimension>()
     val myList = mutableListOf<String>()
@@ -167,7 +167,7 @@ The following code example shows how to use `DeleteApp`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/pinpoint#code-examples).
 
-```
+```kotlin
 suspend fun deletePinApp(appId: String?) {
     PinpointClient.fromEnvironment { region = "us-west-2" }.use { pinpoint ->
         val result =
@@ -191,7 +191,7 @@ The following code example shows how to use `DeleteEndpoint`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/pinpoint#code-examples).
 
-```
+```kotlin
 suspend fun deletePinEncpoint(
     appIdVal: String?,
     endpointIdVal: String?,
@@ -219,7 +219,7 @@ The following code example shows how to use `GetEndpoint`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/pinpoint#code-examples).
 
-```
+```kotlin
 suspend fun lookupPinpointEndpoint(
     appId: String?,
     endpoint: String?,
@@ -256,7 +256,7 @@ The following code example shows how to use `GetSegments`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/pinpoint#code-examples).
 
-```
+```kotlin
 suspend fun listSegs(appId: String?) {
     PinpointClient.fromEnvironment { region = "us-west-2" }.use { pinpoint ->
         val response =
@@ -281,7 +281,7 @@ The following code example shows how to use `SendMessages`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/pinpoint#code-examples).
 
-```
+```kotlin
 /**
 Before running this Kotlin code example, set up your development environment,
 including your credentials.

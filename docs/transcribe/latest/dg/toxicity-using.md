@@ -50,7 +50,7 @@ aws transcribe start-transcription-job \
 
 The file *my-first-toxicity-job.json* contains the following request body.
 
-```
+```json
 {
   "TranscriptionJobName": "{{my-first-transcription-job}}",
   "Media": {
@@ -74,7 +74,7 @@ The file *my-first-toxicity-job.json* contains the following request body.
 
 For additional examples using the AWS SDKs, including feature-specific, scenario, and cross-service examples, refer to the [Code examples for Amazon Transcribe using AWS SDKs](service_code_examples.md) chapter.
 
-```
+```python
 from __future__ import print_function
 import time
 import boto3
@@ -115,7 +115,7 @@ print(status)
 
  The following is an example output in JSON format showing categorized toxic speech with associated confidence scores.
 
-```
+```json
 {
     "jobName": "{{my-toxicity-job}}",
     "accountId": "{{111122223333}}",

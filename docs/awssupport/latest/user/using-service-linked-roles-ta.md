@@ -42,7 +42,7 @@ This step is necessary only if the Trusted Advisor account is disabled, the serv
 
 You can add the following statement to the permissions policy for the IAM entity to create the service-linked role.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -58,7 +58,7 @@ You can add the following statement to the permissions policy for the IAM entity
 
 You can only edit the description for the `AWSServiceRoleForTrustedAdvisor` role. You can add the following statement to the permissions policy for the IAM entity to edit the description of a service-linked role.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -73,7 +73,7 @@ You can only edit the description for the `AWSServiceRoleForTrustedAdvisor` role
 
 You can add the following statement to the permissions policy for the IAM entity to delete a service-linked role.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [

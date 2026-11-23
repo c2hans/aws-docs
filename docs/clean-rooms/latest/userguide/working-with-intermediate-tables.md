@@ -34,6 +34,9 @@ The following table describes the deferred controls for intermediate tables.
 | Allowed additional analyses | Specifies whether the results of an analysis can be used as input to additional analyses. Inherited as the most restrictive value from the base tables. |
 | Additional analyses | Controls whether the intermediate table can be used in additional analyses beyond the initial analysis. Inherited as the most restrictive value from the base tables. |
 
+**Note**
+When an intermediate table is populated by a PySpark analysis template, only the allowed result receivers control is enforced. Differential privacy, additional analyses, and disallowed output columns don't apply in this case. You also can't use base tables that have disallowed output columns to populate an intermediate table with a PySpark analysis template.
+
 **Intermediate table statuses**
 
 The following table describes the status lifecycle for an intermediate table.

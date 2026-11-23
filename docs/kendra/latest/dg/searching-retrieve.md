@@ -36,7 +36,7 @@ The following is an example of using the `Retrieve` API to retrieve the top 100 
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 import pprint
 
@@ -71,7 +71,7 @@ for retrieve_result in result["ResultItems"]:
 ------
 #### [ Java ]
 
-```
+```java
 package com.amazonaws.kendra;
 
 import software.amazon.awssdk.services.kendra.KendraClient;

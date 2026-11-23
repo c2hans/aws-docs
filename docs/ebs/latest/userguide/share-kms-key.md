@@ -34,7 +34,7 @@ For more information about controlling access to a customer managed key, see [ U
    Use either the policy view or the default view, depending on which view you can access, to add one or more AWS account IDs to the policy, as follows:
    + (Policy view) Choose **Edit**. Add one or more AWS account IDs to the following statements: `"Allow use of the key"` and `"Allow attachment of persistent resources"`. Choose **Save changes**. In the following example, the AWS account ID `444455556666` is added to the policy.
 
-     ```
+     ```json
      {
        "Sid": "Allow use of the key",
        "Effect": "Allow",

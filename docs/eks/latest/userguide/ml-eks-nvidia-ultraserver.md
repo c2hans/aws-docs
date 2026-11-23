@@ -78,7 +78,7 @@ The NVIDIA GPU operator simplifies the management of components required to use 
 
 1. Create a Helm values file named `gpu-operator-values.yaml` with the following configuration.
 
-   ```
+   ```yaml
    devicePlugin:
      enabled: true
    nfd:
@@ -95,12 +95,12 @@ The NVIDIA GPU operator simplifies the management of components required to use 
 
 1. Install the NVIDIA GPU operator for your cluster using the `gpu-operator-values.yaml` file you created in the previous step.
 
-   ```
+   ```bash
    helm repo add nvidia https://helm.ngc.nvidia.com/nvidia
    helm repo update
    ```
 
-   ```
+   ```bash
    helm install gpu-operator nvidia/gpu-operator \
     --namespace gpu-operator \
     --create-namespace \
@@ -115,7 +115,7 @@ As of NVIDIA GPU operator version `v25.3.4`, the NVIDIA DRA driver must be insta
 
 1. Create a Helm values file named `dra-values.yaml` with the following configuration. Note the `nodeAffinity` and `tolerations` that configure the DRA driver to deploy only on nodes with an NVIDIA GPU.
 
-   ```
+   ```yaml
    resources:
      gpus:
        enabled: false # set to false to disable experimental gpu support
@@ -145,12 +145,12 @@ As of NVIDIA GPU operator version `v25.3.4`, the NVIDIA DRA driver must be insta
 
 1. Install the NVIDIA DRA driver for your cluster using the `dra-values.yaml` file you created in the previous step.
 
-   ```
+   ```bash
    helm repo add nvidia https://helm.ngc.nvidia.com/nvidia
    helm repo update
    ```
 
-   ```
+   ```bash
    helm install nvidia-dra-driver-gpu nvidia/nvidia-dra-driver-gpu \
      --version="25.8.0" \
      --namespace nvidia-dra-driver-gpu \
@@ -162,22 +162,22 @@ As of NVIDIA GPU operator version `v25.3.4`, the NVIDIA DRA driver must be insta
 
    Confirm the DRA resources are available with the following commands.
 
-   ```
+   ```bash
    kubectl api-resources | grep resource.k8s.io
    ```
 
-   ```
+   ```bash
    deviceclasses           resource.k8s.io/v1  false        DeviceClass
    resourceclaims          resource.k8s.io/v1  true         ResourceClaim
    resourceclaimtemplates  resource.k8s.io/v1  true         ResourceClaimTemplate
    resourceslices          resource.k8s.io/v1  false        ResourceSlice
    ```
 
-   ```
+   ```bash
    kubectl get deviceclasses
    ```
 
-   ```
+   ```bash
    NAME
    compute-domain-daemon.nvidia.com
    compute-domain-default-channel.nvidia.com
@@ -196,7 +196,7 @@ Do not install the EFA DRA driver and the EFA device plugin on the same node. Th
 
 1. Create a Helm values file named `efa-values.yaml` with the following configuration.
 
-   ```
+   ```yaml
    tolerations:
      - key: nvidia.com/gpu
        operator: Exists
@@ -205,38 +205,38 @@ Do not install the EFA DRA driver and the EFA device plugin on the same node. Th
 
 1. Add the EKS Helm chart repository and install the EFA DRA driver.
 
-   ```
+   ```bash
    helm repo add eks https://aws.github.io/eks-charts
    helm repo update
    ```
 
-   ```
+   ```bash
    helm install aws-dranet eks/aws-dranet --namespace kube-system -f efa-values.yaml
    ```
 
 1. Verify that the DRANET DaemonSet is running.
 
-   ```
+   ```bash
    kubectl get daemonset -n kube-system aws-dranet
    ```
 
-   ```
+   ```bash
    NAME          DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR   AGE
    aws-dranet    2         2         2       2            2           <none>          60s
    ```
 
 1. Verify that the `DeviceClass` and `ResourceSlice` objects are available.
 
-   ```
+   ```bash
    kubectl get deviceclass efa.networking.k8s.aws
    ```
 
-   ```
+   ```bash
    NAME                    AGE
    efa.networking.k8s.aws  60s
    ```
 
-   ```
+   ```bash
    kubectl get resourceslices -l resource.k8s.io/driver=dra.net
    ```
 
@@ -247,7 +247,7 @@ For more information on using the EFA DRA driver, including topology-aware alloc
 
 1. Create a Helm values file named `efa-values.yaml` with the following configuration.
 
-   ```
+   ```yaml
    tolerations:
      - key: nvidia.com/gpu
        operator: Exists
@@ -256,33 +256,33 @@ For more information on using the EFA DRA driver, including topology-aware alloc
 
 1. Add the EKS Helm chart repository and install the EFA device plugin.
 
-   ```
+   ```bash
    helm repo add eks https://aws.github.io/eks-charts
    helm repo update
    ```
 
-   ```
+   ```bash
    helm install efa eks/aws-efa-k8s-device-plugin -n kube-system -f efa-values.yaml
    ```
 
 1. Verify the EFA device plugin DaemonSet is running.
 
-   ```
+   ```bash
    kubectl get daemonset -n kube-system aws-efa-k8s-device-plugin-daemonset
    ```
 
-   ```
+   ```bash
    NAME                                  DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR   AGE
    aws-efa-k8s-device-plugin-daemonset   2         2         2       2            2           <none>          60s
    ```
 
 1. Verify that your nodes have allocatable EFA devices. As an example, if you configured your instances with 1 efa-only interface in each [NCI group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa-acc-inst-types.html#efa-for-p6e), it is expected to see 4 allocatable EFA devices per node.
 
-   ```
+   ```bash
    kubectl get nodes "-o=custom-columns=NAME:.metadata.name,EFA:.status.allocatable.vpc\.amazonaws\.com/efa"
    ```
 
-   ```
+   ```bash
    NAME                                           EFA
    ip-192-168-11-225.us-west-2.compute.internal   4
    ip-192-168-24-96.us-west-2.compute.internal    4
@@ -295,7 +295,7 @@ For a multi-node NVLINK NCCL test and other micro-benchmarks review the [awesome
 
 1. To run a multi-node bandwidth test across two nodes in the NVL72 domain, first install the MPI operator:
 
-   ```
+   ```bash
    kubectl create -f https://github.com/kubeflow/mpi-operator/releases/download/v0.7.0/mpi-operator.yaml
    ```
 
@@ -305,7 +305,7 @@ For a multi-node NVLINK NCCL test and other micro-benchmarks review the [awesome
 
    There can be only one ComputeDomain (IMEX channel) per node. Do not change the `allocationMode` to `All` for the ComputeDomain resource, as it can prevent the ComputeDomain and Pods accessing that ComputeDomain from being allocated and scheduled correctly. For more information, see [NVIDIA DRA driver issue \#353](https://github.com/kubernetes-sigs/dra-driver-nvidia-gpu/issues/353).
 
-   ```
+   ```yaml
    ---
    apiVersion: resource.nvidia.com/v1beta1
    kind: ComputeDomain
@@ -417,17 +417,17 @@ For a multi-node NVLINK NCCL test and other micro-benchmarks review the [awesome
 
 1. Create the ComputeDomain and start the job with the following command.
 
-   ```
+   ```bash
    kubectl apply -f nvbandwidth-test-job.yaml
    ```
 
 1. After ComputeDomain creation, you can see the workload’s ComputeDomain has two nodes:
 
-   ```
+   ```bash
    kubectl get computedomains.resource.nvidia.com -o yaml
    ```
 
-   ```
+   ```bash
    status:
      nodes:
      - cliqueID: <ClusterUUID>.<Clique ID>
@@ -441,13 +441,13 @@ For a multi-node NVLINK NCCL test and other micro-benchmarks review the [awesome
 
 1. Review the results of the job with the following command.
 
-   ```
+   ```bash
    kubectl logs --tail=-1 -l job-name=nvbandwidth-test-launcher
    ```
 
    A successful test shows bandwidth statistics in GB/s for the multi-node memcpy test. An example of a successful test output is shown below.
 
-   ```
+   ```bash
    ...
    nvbandwidth Version: ...
    Built from Git version: ...
@@ -486,6 +486,6 @@ For a multi-node NVLINK NCCL test and other micro-benchmarks review the [awesome
 
 1. When the test is complete, delete it with the following command.
 
-   ```
+   ```bash
    kubectl delete -f nvbandwidth-test-job.yaml
    ```

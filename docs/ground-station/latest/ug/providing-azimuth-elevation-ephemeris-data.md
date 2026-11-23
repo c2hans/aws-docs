@@ -67,7 +67,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/providing-azimu
 
  The following example shows how to create an azimuth elevation ephemeris using the AWS SDK for Python (Boto3):
 
-```
+```python
 import boto3
 
 # Create AWS Ground Station client
@@ -120,7 +120,7 @@ print(f"Created ephemeris with ID: {azimuth_elevation_ephemeris['ephemerisId']}"
 
  For larger datasets, you can upload azimuth elevation data from an S3 bucket:
 
-```
+```python
 import boto3
 import json
 
@@ -211,7 +211,7 @@ print(f"Created ephemeris with ID: {s3_azimuth_elevation_ephemeris['ephemerisId'
 
  Example of reserving a contact with azimuth elevation ephemeris:
 
-```
+```python
 import boto3
 from datetime import datetime
 import time
@@ -299,7 +299,7 @@ print(f"Reserved contact with ID: {contact['contactId']}")
 
  Example of creating an azimuth elevation ephemeris and listing available contacts with it:
 
-```
+```python
 import boto3
 from datetime import datetime, timezone
 import time

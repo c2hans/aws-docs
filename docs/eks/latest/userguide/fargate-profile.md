@@ -76,7 +76,7 @@ You can create a profile with the following:
 
 Create your Fargate profile with the following `eksctl` command, replacing every example value with your own values. You’re required to specify a namespace. However, the `--labels` option isn’t required.
 
-```
+```bash
 eksctl create fargateprofile \
     --cluster my-cluster \
     --name my-fargate-profile \

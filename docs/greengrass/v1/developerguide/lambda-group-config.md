@@ -96,7 +96,7 @@ By default, {{greengrass-root}} is the /greengrass directory.
 
 1. Edit the config.json file to add `"allowFunctionsToRunAsRoot" : "yes"` to the `runtime` field. For example:
 
-   ```
+   ```json
    {
      "coreThing" : {
        ...
@@ -111,7 +111,7 @@ By default, {{greengrass-root}} is the /greengrass directory.
 
 1. Use the following commands to restart AWS IoT Greengrass:
 
-   ```
+   ```bash
    cd /greengrass/ggc/core
    sudo ./greengrassd restart
    ```

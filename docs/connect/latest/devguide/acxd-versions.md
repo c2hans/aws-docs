@@ -29,7 +29,7 @@ Lists the version history for a specific resource.
 ### Sample Request
 <a name="acxd-versions-ListResourceVersions-sample-request"></a>
 
-```
+```typescript
 client.send(new ListResourceVersionsCommand({
     resourceType: "flows",
     resourceId: "DeployTestFlow",
@@ -39,7 +39,7 @@ client.send(new ListResourceVersionsCommand({
 ### Output
 <a name="acxd-versions-ListResourceVersions-output"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -84,7 +84,7 @@ Gets the full content of a specific version.
 ### Sample Request
 <a name="acxd-versions-GetResourceVersion-sample-request"></a>
 
-```
+```typescript
 await client.send(new GetResourceVersionCommand({
   versionId: "NDjL4SbcnwdK5w3fNBL6A4oFIzwRYeyE",
   resourceType: "flows",
@@ -95,7 +95,7 @@ await client.send(new GetResourceVersionCommand({
 ### Output
 <a name="acxd-versions-GetResourceVersion-output"></a>
 
-```
+```json
 {
   "data": {
     "flow": {

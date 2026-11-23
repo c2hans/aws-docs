@@ -13,7 +13,7 @@ The Android mobile authentication SDK is available on github: [Amazon Location S
 
 To use the mobile authentication SDK, add the following import statements to your `build.gradle` file in Android Studio.
 
-```
+```javascript
 implementation("software.amazon.location:auth:0.0.1")
 implementation("com.amazonaws:aws-android-sdk-location:2.72.0")
 ```
@@ -30,7 +30,7 @@ The authentication helper SDK has the following functions:
 
 To use the SDK in your code, import the following classes:
 
-```
+```javascript
 import com.amazonaws.services.geo.AmazonLocationClient
 import software.amazon.location.auth.AuthHelper
 import software.amazon.location.auth.LocationCredentialsProvider
@@ -39,20 +39,20 @@ import software.amazon.location.auth.LocationCredentialsProvider
 You have two options when creating the authentication helper and location client provider instances. You can create an instance using [Amazon Location API keys](https://docs.aws.amazon.com/location/previous/developerguide/using-apikeys.html) or [Amazon Cognito](https://docs.aws.amazon.com/location/previous/developerguide/using-apikeys.html).
 + To create an authentication helper instance using an Amazon Location API Key, declare the helper class as follows:
 
-  ```
+  ```javascript
   var authHelper = AuthHelper(applicationContext)
   var locationCredentialsProvider : LocationCredentialsProvider = authHelper.authenticateWithApiKey("{{My-Amazon-Location-API-Key}}")
   ```
 + To create an authentication helper instance using Amazon Cognito, declare the helper class as follows:
 
-  ```
+  ```javascript
   var authHelper = AuthHelper(applicationContext)
   var locationCredentialsProvider : LocationCredentialsProvider = authHelper.authenticateWithCognitoIdentityPool("{{My-Cognito-Identity-Pool-Id}}")
   ```
 
 You can create an Amazon Location client instance using the location credentials provider and make calls to the Amazon Location service. The following example searches for places near a specified latitude and longitude.
 
-```
+```javascript
 var locationClient = authHelper.getLocationClient(locationCredentialsProvider.getCredentialsProvider())
 var searchPlaceIndexForPositionRequest = SearchPlaceIndexForPositionRequest().withIndexName("{{My-Place-Index-Name}}").withPosition(arrayListOf(30.405423, -97.718833))
 var nearbyPlaces = locationClient.searchPlaceIndexForPosition(searchPlaceIndexForPositionRequest)

@@ -96,13 +96,13 @@ When you reach the "Get ESP-IDF" instructions under **Next Steps**, stop, and th
 
    1. Navigate to the FreeRTOS download directory, and then run the following script to download and install the espressif toolchain for your platform.
 
-      ```
+      ```bash
       vendors/espressif/esp-idf/install.sh
       ```
 
    1. Add the ESP-IDF toolchain tools to your terminal's path with the following command.
 
-      ```
+      ```bash
       source vendors/espressif/esp-idf/export.sh
       ```
 
@@ -116,13 +116,13 @@ When you reach the "Get ESP-IDF" instructions under **Next Steps**, stop, and th
 
    1. Navigate to the FreeRTOS download directory, and then run the following script to download and install the Espressif toolchain for your platform.
 
-      ```
+      ```bash
       vendors/espressif/esp-idf/install.sh
       ```
 
    1. Add the ESP-IDF toolchain tools to your terminal's path with the following command.
 
-      ```
+      ```bash
       source vendors/espressif/esp-idf/export.sh
       ```
 
@@ -145,7 +145,7 @@ For this tutorial, the FreeRTOS configuration file is located at `{{freertos}}/v
 
 1. To verify that you have Python3 installed, run
 
-   ```
+   ```bash
    python --version
    ```
 
@@ -157,7 +157,7 @@ For this tutorial, the FreeRTOS configuration file is located at `{{freertos}}/v
 
 1. Run
 
-   ```
+   ```bash
    aws configure
    ```
 
@@ -166,20 +166,20 @@ For this tutorial, the FreeRTOS configuration file is located at `{{freertos}}/v
 1. Use the following command to install the AWS SDK for Python (boto3):
    + On Windows, in the "Command" or "ESP-IDF 4.x CMD" app, run
 
-     ```
+     ```bash
      pip install boto3 --user
      ```
 **Note**
 See [Boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html) for details.
    + On macOS or Linux, run
 
-     ```
+     ```bash
      pip install tornado nose --user
      ```
 
      and then run
 
-     ```
+     ```bash
      pip install boto3 --user
      ```
 
@@ -206,7 +206,7 @@ The following are valid security types:
 
    1. Navigate to the `{{freertos}}/tools/aws_config_quick_start` directory and run
 
-      ```
+      ```bash
       python SetupAWS.py setup
       ```
 
@@ -243,7 +243,7 @@ You can use Espressif's IDF utility (`idf.py`) to build the project and flash th
 **Note**
 Some setups might require that you use the port option `"-p port-name"` with `idf.py` to specify the correct port, as in the following example.
 
-```
+```bash
 idf.py -p /dev/cu.usbserial-00101301B flash
 ```
 
@@ -254,26 +254,26 @@ idf.py -p /dev/cu.usbserial-00101301B flash
 1. In a command line window, enter the following command to add the ESP-IDF tools to your terminal's PATH.
 **Windows ("Command" app)**
 
-   ```
+   ```bash
    vendors\espressif\esp-idf\export.bat
    ```
 **Windows ("ESP-IDF 4.x CMD" app)**
 (This has already been done when you opened the app.)
 **Linux / macOS**
 
-   ```
+   ```bash
    source vendors/espressif/esp-idf/export.sh
    ```
 
 1. Configure cmake in the `build` directory and build the firmware image with the following command.
 
-   ```
+   ```bash
    idf.py -DVENDOR=espressif -DBOARD=esp32_wrover_kit -DCOMPILER=xtensa-esp32 build
    ```
 
    You should see output like the following.
 
-   ```
+   ```bash
       Running cmake in directory /path/to/hello_world/build
       Executing "cmake -G Ninja --warn-uninitialized /path/to/hello_world"...
       Warn about uninitialized values.
@@ -296,31 +296,31 @@ idf.py -p /dev/cu.usbserial-00101301B flash
 
 1. Erase your development board's flash memory with the following command.
 
-   ```
+   ```bash
    idf.py erase_flash
    ```
 
 1. Use the `idf.py` script to flash the application binary to your board.
 
-   ```
+   ```bash
    idf.py flash
    ```
 
 1. Monitor the output from your board's serial port with the following command.
 
-   ```
+   ```bash
    idf.py monitor
    ```
 **Note**
 You can combine these commands such as in the following example.
 
-   ```
+   ```bash
    idf.py erase_flash flash monitor
    ```
 
    For certain host machine setups, you must specify the port when you flash the board such as in the following example.
 
-   ```
+   ```bash
    idf.py erase_flash flash monitor -p /dev/ttyUSB1
    ```
 
@@ -336,56 +336,56 @@ In addition to the `idf.py` script provided by the IDF SDK to build and run your
 1. Run the following script to add the ESP-IDF tools to your shell's PATH.
 **Windows**
 
-   ```
+   ```bash
    vendors\espressif\esp-idf\export.bat
    ```
 **Linux / macOS**
 
-   ```
+   ```bash
    source vendors/espressif/esp-idf/export.sh
    ```
 
 1. Enter the following command to generate the build files.
 **With Unix Makefiles**
 
-   ```
+   ```bash
    cmake -DVENDOR=espressif -DBOARD=esp32_wrover_kit -DCOMPILER=xtensa-esp32 -S . -B ./YOUR_BUILD_DIRECTORY -DAFR_ENABLE_ALL_MODULES=1 -DAFR_ENABLE_TESTS=0
    ```
 **With Ninja**
 
-   ```
+   ```bash
    cmake -DVENDOR=espressif -DBOARD=esp32_wrover_kit -DCOMPILER=xtensa-esp32 -S . -B ./YOUR_BUILD_DIRECTORY -DAFR_ENABLE_ALL_MODULES=1 -DAFR_ENABLE_TESTS=0 -GNinja
    ```
 
 1. Build the project.
 **With Unix Makefiles**
 
-   ```
+   ```bash
    make -C ./YOUR_BUILD_DIRECTORY -j8
    ```
 **With Ninja**
 
-   ```
+   ```bash
    ninja -C ./YOUR_BUILD_DIRECTORY -j8
    ```
 
 1. Erase the flash and then flash the board.
 **With Unix Makefiles**
 
-   ```
+   ```bash
    make -C ./YOUR_BUILD_DIRECTORY erase_flash
    ```
 
-   ```
+   ```bash
    make -C ./YOUR_BUILD_DIRECTORY flash
    ```
 **With Ninja**
 
-   ```
+   ```bash
    ninja -C ./YOUR_BUILD_DIRECTORY erase_flash
    ```
 
-   ```
+   ```bash
    ninja -C ./YOUR_BUILD_DIRECTORY flash
    ```
 
@@ -411,29 +411,29 @@ For instructions about how to run the Wi-Fi provisioning demo on your board, see
 
 If you want to consume FreeRTOS in your own CMake project, you can set it up as a subdirectory and build it together with your application. First, get a copy of FreeRTOS from [GitHub](https://github.com/aws/amazon-freertos). You can also set it up as a Git submodule with the following command so it's easier to update in the future.
 
-```
+```bash
 git submodule add -b release https://github.com/aws/amazon-freertos.git freertos
 ```
 
 If a later version is released, you can update your local copy with these commands.
 
-```
+```bash
 # Pull the latest changes from the remote tracking branch.
 git submodule update --remote -- freertos
 ```
 
-```
+```bash
 # Commit the submodule change because it is pointing to a different revision now.
 git add freertos
 ```
 
-```
+```bash
 git commit -m "Update FreeRTOS to a new release"
 ```
 
 If your project has the following directory structure:
 
-```
+```bash
 - freertos (the copy that you obtained from GitHub or the AWS IoT console)
 - src
   - main.c (your application code)
@@ -442,7 +442,7 @@ If your project has the following directory structure:
 
 Then the following is an example of the top-level `CMakeLists.txt` file that can be used to build your application together with FreeRTOS.
 
-```
+```bash
 cmake_minimum_required(VERSION 3.13)
 
 project(freertos_examples)
@@ -462,17 +462,17 @@ target_link_libraries(my_app PRIVATE AFR::core_mqtt)
 
 To build the project, run the following CMake commands. Make sure the ESP32 compiler is in the PATH environment variable.
 
-```
+```bash
 cmake -S . -B build-directory -DCMAKE_TOOLCHAIN_FILE=freertos/tools/cmake/toolchains/xtensa-esp32.cmake -GNinja
 ```
 
-```
+```bash
 cmake --build build-directory
 ```
 
 To flash the application to your board, run the following command.
 
-```
+```bash
 cmake --build build-directory --target flash
 ```
 
@@ -562,14 +562,14 @@ You can add more components while using ESP-IDF. For example, assuming you want 
 
 The following is an example of the `CMakeLists.txt` file for your component.
 
-```
+```bash
 add_library({{example_component}} {{src/example_component.c}})
 target_include_directories({{example_component}} PUBLIC include)
 ```
 
 Then, in the top level `CMakeLists.txt` file, add the component by inserting the following line just after `add_subdirectory(freertos)`.
 
-```
+```bash
 add_subdirectory({{component/example_component}})
 ```
 
@@ -586,7 +586,7 @@ This component is now automatically linked to your application code by default. 
 
 There's currently no well-defined approach to redefining the configs outside of the FreeRTOS source tree. By default, CMake will look for the `{{freertos}}/vendors/espressif/boards/esp32/aws_demos/config_files/` and `{{freertos}}/demos/include/` directories. However, you can use a workaround to tell the compiler to search other directories first. For example, you can add another folder for FreeRTOS configurations.
 
-```
+```bash
 - freertos
 - freertos-configs
   - aws_clientcredential.h
@@ -600,7 +600,7 @@ There's currently no well-defined approach to redefining the configs outside of 
 
 The files under `freertos-configs` are copied from the `{{freertos}}/vendors/espressif/boards/esp32/aws_demos/config_files/` and `{{freertos}}/demos/include/` directories. Then, in your top level `CMakeLists.txt` file, add this line before `add_subdirectory(freertos)` so that the compiler will search this directory first.
 
-```
+```bash
 include_directories(BEFORE freertos-configs)
 ```
 
@@ -609,7 +609,7 @@ include_directories(BEFORE freertos-configs)
 
 In case you want to provide your own `sdkconfig.default`, you can set the CMake variable `IDF_SDKCONFIG_DEFAULTS`, from the command line:
 
-```
+```bash
 cmake -S . -B build-directory -DIDF_SDKCONFIG_DEFAULTS=path_to_your_sdkconfig_defaults -DCMAKE_TOOLCHAIN_FILE=freertos/tools/cmake/toolchains/xtensa-esp32.cmake -GNinja
 ```
 
@@ -662,14 +662,14 @@ target_link_libraries(my_app PRIVATE AFR::core_mqtt)
 + If `pyserial` can't be installed using `pip` on macOS, download it from the [pyserial website](https://pypi.org/simple/pyserial).
 + If the board resets continuously, try erasing the flash by entering the following command on the terminal.
 
-  ```
+  ```bash
   make erase_flash
   ```
 + If you see errors when you run `idf_monitor.py`, use Python 2.7.
 + Required libraries from ESP-IDF are included in FreeRTOS, so there is no need to download them externally. If the `IDF_PATH` environment variable is set, we recommend that you clear it before you build FreeRTOS.
 + On Windows, it can take 3-4 minutes for the project to build. To reduce the build time, you can use the `-j4` switch on the make command.
 
-  ```
+  ```bash
   make flash monitor -j4
   ```
 + If your device has trouble connecting to AWS IoT, open the `aws_clientcredential.h` file, and verify that the configuration variables are properly defined in the file. `clientcredentialMQTT_BROKER_ENDPOINT[]` should look like `1234567890123-ats.iot.us-east-1.amazonaws.com`.
@@ -677,7 +677,7 @@ target_link_libraries(my_app PRIVATE AFR::core_mqtt)
 + ESP-IDF v4.2 supports the use of the *xtensa\\-esp32\\-elf\\-gcc 8\\.2\\.0\\.* toolchain. If you're using an earlier version of the Xtensa toolchain, download the required version.
 + If you see an error log like the following about python dependencies that are not being met for ESP-IDF v4.2:
 
-  ```
+  ```bash
   The following Python requirements are not satisfied:
     click>=5.0
     pyserial>=3.0
@@ -694,7 +694,7 @@ target_link_libraries(my_app PRIVATE AFR::core_mqtt)
 
   Install the python dependencies on your platform using the following Python command:
 
-  ```
+  ```bash
   root/vendors/espressif/esp-idf/requirements.txt
   ```
 
@@ -759,7 +759,7 @@ The device might be listed as **USB Serial Port**.
 
    Verify these IDs match the IDs in `projects/espressif/esp32/make/aws_demos/esp32_devkitj_v1.cfg`. The IDs are specified in a line that begins with `ftdi_vid_pid` followed by a vendor ID and a product ID.
 
-   ```
+   ```bash
    ftdi_vid_pid 0x0403 0x6014
    ```
 
@@ -781,7 +781,7 @@ The device might be listed as **USB Serial Port**.
 
 1. Open a command prompt, navigate to the root of your FreeRTOS download directory, and run the following command.
 
-   ```
+   ```bash
    idf.py openocd
    ```
 
@@ -789,13 +789,13 @@ The device might be listed as **USB Serial Port**.
 
 1. Open a new command prompt, navigate to the root of your FreeRTOS download directory, and run
 
-   ```
+   ```bash
    idf.py flash monitor
    ```
 
 1. Open another command prompt, navigate to the root of your FreeRTOS download directory, and wait until the demo starts running on your board. When it does, run
 
-   ```
+   ```bash
    idf.py gdb
    ```
 
@@ -813,37 +813,37 @@ The ESP32 supports a maximum of two break points.
 
 1. Use the following command to install `libusb` on macOS.
 
-   ```
+   ```bash
    brew install libusb
    ```
 
 1. Use the following command to unload the serial port driver.
 
-   ```
+   ```bash
    sudo kextunload -b com.FTDI.driver.FTDIUSBSerialDriver
    ```
 
 1. Use the following command to unload the serial port driver.
 
-   ```
+   ```bash
    sudo kextunload -b com.FTDI.driver.FTDIUSBSerialDriver
    ```
 
 1. If you're running a macOS version later than 10.9, use the following command to unload the Apple FTDI driver.
 
-   ```
+   ```bash
    sudo kextunload -b com.apple.driver.AppleUSBFTDI
    ```
 
 1. Use the following command to get the product ID and vendor ID of the FTDI cable. It lists the attached USB devices.
 
-   ```
+   ```bash
    system_profiler SPUSBDataType
    ```
 
    The output from `system_profiler` should look like the following.
 
-   ```
+   ```bash
       DEVICE:
 
       Product ID: product-ID
@@ -854,7 +854,7 @@ The ESP32 supports a maximum of two break points.
 
 1. Open a terminal window, navigate to the root of your FreeRTOS download directory, and use the following command to run OpenOCD.
 
-   ```
+   ```bash
    idf.py openocd
    ```
 
@@ -862,19 +862,19 @@ The ESP32 supports a maximum of two break points.
 
 1. Open a new terminal, and use the following command to load the FTDI serial port driver.
 
-   ```
+   ```bash
    sudo kextload -b com.FTDI.driver.FTDIUSBSerialDriver
    ```
 
 1. Navigate to the root of your FreeRTOS download directory, and run
 
-   ```
+   ```bash
    idf.py flash monitor
    ```
 
 1. Open another new terminal, navigate to the root of your FreeRTOS download directory, and run
 
-   ```
+   ```bash
    idf.py gdb
    ```
 
@@ -886,13 +886,13 @@ The ESP32 supports a maximum of two break points.
 
 1. Use the following command to install libusb on Linux.
 
-   ```
+   ```bash
    sudo apt-get install libusb-1.0
    ```
 
 1. Open a terminal and enter **ls -l /dev/ttyUSB\*** to list all USB devices connected to your computer. This helps you check if the board's USB ports are recognized by the operating system. You should see output like the following.
 
-   ```
+   ```bash
       $ls -l /dev/ttyUSB*
       crw-rw----    1    root    dialout    188,    0    Jul    10    19:04    /dev/ttyUSB0
       crw-rw----    1    root    dialout    188,    1    Jul    10    19:04    /dev/ttyUSB1
@@ -900,7 +900,7 @@ The ESP32 supports a maximum of two break points.
 
 1. Sign off and then sign in and cycle the power to the board to make the changes take effect. In a terminal prompt, list the USB devices. Make sure the group owner has changed from `dialout` to `plugdev`.
 
-   ```
+   ```bash
       $ls -l /dev/ttyUSB*
       crw-rw----    1    root    plugdev    188,    0    Jul    10    19:04    /dev/ttyUSB0
       crw-rw----    1    root    plugdev    188,    1    Jul    10    19:04    /dev/ttyUSB1
@@ -910,19 +910,19 @@ The ESP32 supports a maximum of two break points.
 
 1. In a terminal window, navigate to the root of your FreeRTOS download directory, and use the following command to run OpenOCD.
 
-   ```
+   ```bash
    idf.py openocd
    ```
 
 1. Open another terminal, navigate to the root of your FreeRTOS download directory, and run the following command.
 
-   ```
+   ```bash
    idf.py flash monitor
    ```
 
 1. Open another terminal, navigate the root of your FreeRTOS download directory, and run the following command:
 
-   ```
+   ```bash
    idf.py gdb
    ```
 

@@ -48,7 +48,7 @@ The following example grants permissions to get the state of the pipeline named 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -75,7 +75,7 @@ The following example grants permissions to disable and enable transitions betwe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -109,7 +109,7 @@ The following example grants permissions to get a list of all available action t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -136,7 +136,7 @@ The following example grants permissions to approve or reject manual approval ac
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -166,7 +166,7 @@ The job worker for a custom action might be configured under a different AWS acc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -195,7 +195,7 @@ If you configure a pipeline to use Jenkins for build or test, create a separate 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
 
@@ -229,7 +229,7 @@ The following example shows a policy in the 80398EXAMPLE account that allows use
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
 
@@ -272,7 +272,7 @@ The following example shows a policy created in the {{111111111111}} AWS account
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

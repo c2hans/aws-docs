@@ -25,7 +25,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hudi-conside
       ```
     + To set the value at the cluster level, use the `presto-connector-hive` configuration classification to set `hive.parquet.use_column_names` to `true`, as shown in the following example. For more information, see [Configure applications](emr-configure-apps.md).
 
-      ```
+      ```json
       [
         {
           "Classification": "presto-connector-hive",

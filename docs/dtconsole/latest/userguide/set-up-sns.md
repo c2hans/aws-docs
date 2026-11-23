@@ -87,7 +87,7 @@ The easiest way to set up notifications is to create an Amazon SNS topic when yo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

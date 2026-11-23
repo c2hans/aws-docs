@@ -9,7 +9,7 @@ Updates the contact callback number, which is the number used by the CreateCallb
 ## Parameter object
 <a name="updatecontactcallbacknumber-parameter"></a>
 
-```
+```json
 {
     "CallbackNumber": The callback number to set. Must be a single, valid JSONPath reference, and cannot be set statically.
 }

@@ -34,7 +34,7 @@ None
 
 To change the priority for the user `analysis_user` to `LOWEST`, use the following example.
 
-```
+```sql
 SELECT CHANGE_USER_PRIORITY('analysis_user', 'lowest');
 
 +-------------------------------------------------------------------------------------+
@@ -46,7 +46,7 @@ SELECT CHANGE_USER_PRIORITY('analysis_user', 'lowest');
 
 To change the priority to `LOW`, use the following example.
 
-```
+```sql
 SELECT CHANGE_USER_PRIORITY('analysis_user', 'low');
 
 +----------------------------------------------------------------------------------------------+
@@ -58,7 +58,7 @@ SELECT CHANGE_USER_PRIORITY('analysis_user', 'low');
 
 To reset the priority, use the following example.
 
-```
+```sql
 SELECT CHANGE_USER_PRIORITY('analysis_user', 'reset');
 
 +-------------------------------------------------------+

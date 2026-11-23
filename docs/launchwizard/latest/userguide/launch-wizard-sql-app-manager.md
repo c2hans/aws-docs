@@ -42,7 +42,7 @@ To add your own runbooks, you must modify the service setting value for the supp
 
    The following command lists the service settings for `AWS-SQLServerWindows`.
 
-   ```
+   ```json
    aws ssm get-service-setting --setting-id /launchwizard/AWS-SQLServerWindows
    ```
 
@@ -78,7 +78,7 @@ To add your own runbooks, you must modify the service setting value for the supp
 
    The following is the example output.
 
-   ```
+   ```json
    {
        "ServiceSetting": {
            "SettingId": "/launchwizard/AWS-SQLServerWindows",

@@ -37,7 +37,7 @@ To delete a vehicle, run the following command.
 
 Replace {{vehicle-name}} with the ID of the vehicle that you want to delete.
 
-```
+```bash
 aws iotfleetwise delete-vehicle --vehicle-name {{vehicle-name}}
 ```
 
@@ -48,7 +48,7 @@ You can use the [ListVehicles](https://docs.aws.amazon.com/iot-fleetwise/latest/
 
 To retrieve a paginated list of summaries of all vehicles, run the following command.
 
-```
+```bash
 aws iotfleetwise list-vehicles
 ```
 
@@ -59,7 +59,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

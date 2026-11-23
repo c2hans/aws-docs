@@ -20,7 +20,7 @@ For more information about creating a security group using the Amazon EC2 consol
 
 1. Create and initialize a [CreateSecurityGroupRequest](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/CreateSecurityGroupRequest.html) instance. Use the [withGroupName](http://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/CreateSecurityGroupRequest.html#withGroupName-java.lang.String-) method to set the security group name, and the [withDescription](http://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/CreateSecurityGroupRequest.html#withDescription-java.lang.String-) method to set the security group description, as follows:
 
-   ```
+   ```java
    CreateSecurityGroupRequest csgr = new CreateSecurityGroupRequest();
    csgr.withGroupName("JavaSecurityGroup").withDescription("My security group");
    ```
@@ -29,7 +29,7 @@ For more information about creating a security group using the Amazon EC2 consol
 
 1. Pass the request object as a parameter to the [createSecurityGroup](http://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/AmazonEC2.html#createSecurityGroup-com.amazonaws.services.ec2.model.CreateSecurityGroupRequest-) method. The method returns a [CreateSecurityGroupResult](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/CreateSecurityGroupResult.html) object, as follows:
 
-   ```
+   ```java
    CreateSecurityGroupResult createSecurityGroupResult =
        amazonEC2Client.createSecurityGroup(csgr);
    ```
@@ -40,7 +40,7 @@ By default, a new security group does not allow any inbound traffic to your Amaz
 
 1. Create and initialize an [IpPermission](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/IpPermission.html) instance. Use the [withIpv4Ranges](http://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/IpPermission.html#withIpv4Ranges-java.util.Collection-) method to set the range of IP addresses to authorize ingress for, and use the [withIpProtocol](http://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/IpPermission.html#withIpProtocol-java.lang.String-) method to set the IP protocol. Use the [withFromPort](http://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/IpPermission.html#withFromPort-java.lang.Integer-) and [withToPort](http://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/IpPermission.html#withToPort-java.lang.Integer-) methods to specify range of ports to authorize ingress for, as follows:
 
-   ```
+   ```java
    IpPermission ipPermission =
        new IpPermission();
 
@@ -59,7 +59,7 @@ By default, a new security group does not allow any inbound traffic to your Amaz
 
 1. Create and initialize an [AuthorizeSecurityGroupIngressRequest](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/AuthorizeSecurityGroupEgressRequest.html) instance. Use the `withGroupName` method to specify the security group name, and pass the `IpPermission` object you initialized earlier to the [withIpPermissions](http://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/model/AuthorizeSecurityGroupEgressRequest.html#withIpPermissions-com.amazonaws.services.ec2.model.IpPermission…​-) method, as follows:
 
-   ```
+   ```java
    AuthorizeSecurityGroupIngressRequest authorizeSecurityGroupIngressRequest =
        new AuthorizeSecurityGroupIngressRequest();
 
@@ -69,7 +69,7 @@ By default, a new security group does not allow any inbound traffic to your Amaz
 
 1. Pass the request object into the [authorizeSecurityGroupIngress](http://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/ec2/AmazonEC2Client.html#authorizeSecurityGroupIngress-com.amazonaws.services.ec2.model.AuthorizeSecurityGroupIngressRequest-) method, as follows:
 
-   ```
+   ```java
    amazonEC2Client.authorizeSecurityGroupIngress(authorizeSecurityGroupIngressRequest);
    ```
 

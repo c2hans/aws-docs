@@ -24,7 +24,7 @@ The fleet AMI must have NVIDIA GPU drivers already installed, which Deadline Clo
 
 Once the host configuration has run, jobs can launch GPU containers. The following example runs a container with GPU access, host networking, and the standard Deadline Cloud usage-based license environment variables passed through:
 
-```
+```bash
 docker run --rm \
   --runtime=nvidia \
   --gpus all \

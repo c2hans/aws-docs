@@ -17,7 +17,7 @@ In countries where postal codes are highly specific (linking only a few addresse
 
 Use query component
 
-```
+```json
 {
   "QueryComponents": {
     "AddressNumber": "1368",
@@ -37,7 +37,7 @@ Use free text
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -109,7 +109,7 @@ Use free text
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -124,7 +124,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places geocode --key ${YourKey} --query-components '{"AddressNumber" : "1368", "PostalCode": "V5N 1T2"}'
 ```
 
@@ -142,7 +142,7 @@ In Ireland, the Eircode system assigns a unique code to every home and business,
 
 Use query component
 
-```
+```json
 {
   "QueryComponents": {
     "PostalCode": "D02 X285"
@@ -152,7 +152,7 @@ Use query component
 
 Use free text
 
-```
+```json
 {
   "QueryText": "D02 X285"
 }
@@ -161,7 +161,7 @@ Use free text
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -228,7 +228,7 @@ Use free text
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -242,7 +242,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places geocode --key ${YourKey} --query-components '{"PostalCode": "V5N 1T2"}'
 ```
 

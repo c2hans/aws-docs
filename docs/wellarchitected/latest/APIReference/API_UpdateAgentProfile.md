@@ -94,7 +94,7 @@ Required: No
 The updated ARN of the IAM execution role. Omit this field to keep the current execution role.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
-Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(service-role/)?[a-zA-Z0-9+=,.@\-_]+`
+Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(?!aws-service-role/)(?:[a-zA-Z0-9+=,.@\-_]+/)*[a-zA-Z0-9+=,.@\-_]{1,64}`
 Required: No
 
  ** [pillars](#API_UpdateAgentProfile_RequestSyntax) **   <a name="wellarchitected-UpdateAgentProfile-request-pillars"></a>
@@ -200,7 +200,7 @@ Type: Boolean
 The ARN of the IAM execution role.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
-Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(service-role/)?[a-zA-Z0-9+=,.@\-_]+`
+Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(?!aws-service-role/)(?:[a-zA-Z0-9+=,.@\-_]+/)*[a-zA-Z0-9+=,.@\-_]{1,64}`
 
  ** [fieldErrors](#API_UpdateAgentProfile_ResponseSyntax) **   <a name="wellarchitected-UpdateAgentProfile-response-fieldErrors"></a>
 A map of field paths to error messages for invalid or missing input fields.

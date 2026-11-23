@@ -157,13 +157,13 @@ Before you create an association that runs MOF files, verify that your managed n
         ```
       + A secure website. Specify this information by using the following format.
 
-        ```
+        ```http
         https://{{domain_name}}/{{MOF_file_name}}.mof
         ```
 
         Here is an example.
 
-        ```
+        ```http
         https://www.example.com/TestMOF.mof
         ```
       + A file system on a local share. Specify this information by using the following format.

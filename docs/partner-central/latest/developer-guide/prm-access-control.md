@@ -27,7 +27,7 @@ For more information, see [AWS managed policies for AWS Partner Central users](h
 
 This policy provides necessary access for revenue attribution management activities for AWS accounts registered with AWS Partner Central.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -200,7 +200,7 @@ This policy provides necessary access for revenue attribution management activit
 
 This policy provides necessary access for revenue attribution management activities for AWS accounts who are not registered with AWS Partner Central.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

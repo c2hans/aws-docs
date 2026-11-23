@@ -194,7 +194,7 @@ Before you set up a Kinesis data stream as a target for AWS DMS, make sure that 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -219,7 +219,7 @@ The role that you use for the migration to a Kinesis data stream must have the f
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -259,7 +259,7 @@ The following limitations apply when using Kinesis Data Streams as a target:
   + `transaction-id`: The CDC transaction ID. All records within the same transaction go to the same partition.
   + `constant`: A fixed literal value for every record regardless of table or data. All records are sent to the same partition key value "constant", providing strict global ordering across all tables.
 
-  ```
+  ```json
   {
       "rule-type": "object-mapping",
       "rule-id": "2",
@@ -281,7 +281,7 @@ The following limitations apply when using Kinesis Data Streams as a target:
 + When migrating from a MySQL source, the BeforeImage data doesn't include CLOB and BLOB data types. For more information, see [Using a before image to view original values of CDC rows for a Kinesis data stream as a target](#CHAP_Target.Kinesis.BeforeImage).
 + AWS DMS doesn't support migrating values of `BigInt` data type with more than 16 digits. To work around this limitation, you can use the following transformation rule to convert the `BigInt` column to a string. For more information about transformation rules, see [Transformation rules and actions](CHAP_Tasks.CustomizingTasks.TableMapping.SelectionTransformation.Transformations.md).
 
-  ```
+  ```json
   {
       "rule-type": "transformation",
       "rule-id": "id",

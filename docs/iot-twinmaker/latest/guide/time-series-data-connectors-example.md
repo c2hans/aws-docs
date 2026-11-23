@@ -11,7 +11,7 @@ The complete [code of the cookie factory](https://github.com/aws-samples/aws-iot
 
 In a component type, we define common properties that are shared across components. For the cookie factory example, physical components of the same type share the same measurements, so we can define the measurements schema in the component type. As an example, the mixer type is defined in the following example.
 
-```
+```json
 {
     "componentTypeId": "com.example.cookiefactory.mixer"
     "propertyDefinitions": {
@@ -37,7 +37,7 @@ For example, a physical component might have measurements in a Timestream databa
 
 If you add the `TelemetryId` to the component type as an external id, it identifies the component in the `TimeStream` table.
 
-```
+```json
 {
     "componentTypeId": "com.example.cookiefactory.mixer"
     "propertyDefinitions": {
@@ -68,7 +68,7 @@ If you add the `TelemetryId` to the component type as an external id, it identif
 
 Similarly we have the component type for the `WaterTank`, as shown in the following JSON example.
 
-```
+```json
 {
   "componentTypeId": "com.example.cookiefactory.watertank",
   "propertyDefinitions": {
@@ -118,7 +118,7 @@ The `TelemetryType` is an optional property in the component type if it's aimed 
 
 The Lambda connector needs to access the data source and generate the query statement based on the input and forward it to the data source. An example request sent to the Lambda is shown in the following JSON example.
 
-```
+```json
 {
     'workspaceId': 'CookieFactory',
     'selectedProperties': ['Temperature'],
@@ -177,7 +177,7 @@ The goal of the Lambda function is to query historical measurement data for a gi
 
 For the most straightforward case, as in the preceding request, we want a series of temperature samples during the given time window for the given component, in ascending time order. The query statement can be summarized as the following:
 
-```
+```json
 ...
 SELECT measure_name, time, measure_value::double
     FROM {database_name}.{table_name}

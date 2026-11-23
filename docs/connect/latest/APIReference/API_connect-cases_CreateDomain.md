@@ -113,13 +113,13 @@ HTTP Status Code: 400
 
 This example illustrates one usage of CreateDomain.
 
-```
+```json
 {
   "name": "demo-amazon-cases-domain"
  }
 ```
 
-```
+```json
 {
   "domainArn": "arn:aws:cases:us-west-2:[account_id]:domain/[domain_id]",
   "domainId": "[domain_id]",

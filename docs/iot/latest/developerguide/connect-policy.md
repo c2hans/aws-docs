@@ -11,7 +11,7 @@ For registered devices, we recommend that you use [thing policy variables](thing
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -47,7 +47,7 @@ The following policy grants permission to connect to AWS IoT Core with client ID
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -73,7 +73,7 @@ The following policy allows connect with `PersistentConnect` feature:
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -99,7 +99,7 @@ The following policy disallows `PersistentConnect`, other features are allowed:
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -125,7 +125,7 @@ The above policy can also be expressed using `StringEquals`, any other feature i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -158,7 +158,7 @@ The following policy allows connect by both `PersistentConnect` and `LastWill`, 
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -185,7 +185,7 @@ The following policy allows clean connect by clients with or without `LastWill`,
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -207,7 +207,7 @@ The following policy only allows connect using default features:
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -231,7 +231,7 @@ The following policy allows connect only with `PersistentConnect`, any new featu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -257,7 +257,7 @@ The following policy states the connect must have both `PersistentConnect` and `
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -324,7 +324,7 @@ The following policy must not have `PersistentConnect` but can have `LastWill`, 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -364,7 +364,7 @@ The following policy allows connect only by clients that have a `LastWill` with 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -388,7 +388,7 @@ The following policy only allows clean connect using a specific `LastWillTopic`,
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

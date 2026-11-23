@@ -35,7 +35,7 @@ You can use the [put-keyword](https://docs.aws.amazon.com/cli/latest/reference/p
 
 To create a keyword, run the following command in the AWS CLI:
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 put-keyword \
 > --origination-identity {{OriginationIdentity}} \
 > --keyword {{Keyword}} \

@@ -12,7 +12,7 @@ When [`Scheduling`](Scheduling-v3.md) / [`SlurmQueues`](Scheduling-v3.md#Schedul
 
  The configuration for this architecture requires the following settings:
 
-```
+```yaml
 # Note that all values are only provided as examples
 HeadNode:
   ...

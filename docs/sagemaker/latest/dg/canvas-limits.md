@@ -35,7 +35,7 @@ To edit the trust relationship for your IAM execution role, do the following:
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

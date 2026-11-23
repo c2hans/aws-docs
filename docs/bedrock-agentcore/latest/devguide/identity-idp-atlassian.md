@@ -36,7 +36,7 @@ For more details, refer to [Atlassian’s OAuth 2.0 (3LO) apps documentation](ht
 
 To configure Atlassian as an outbound resource provider, use the following:
 
-```
+```json
 {
    "name": "NAME",
    "credentialProviderVendor": "AtlassianOAuth2",

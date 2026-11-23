@@ -14,7 +14,7 @@ If the head node is an ARM instance, the Amazon DCV software is automatically in
 
 To enable Amazon DCV on the head node, [`dcv_settings`](cluster-definition.md#dcv-settings) must contain the name of a [`[dcv]` section](dcv-section.md) that has [`enable`](dcv-section.md#dcv-section-enable)` = master` and [`base_os`](cluster-definition.md#base-os) must be set to `alinux2`, `centos7`, `ubuntu1804`, or `ubuntu2004`. If the head node is an ARM instance, [`base_os`](cluster-definition.md#base-os) must be set to `alinux2`, `centos7`, or `ubuntu1804`. This way, AWS ParallelCluster sets the cluster configuration parameter [`shared_dir`](cluster-definition.md#cluster-shared-dir) to the [DCV server storage folder](https://docs.aws.amazon.com/dcv/latest/adminguide/manage-storage.html).
 
-```
+```ini
 [cluster custom-cluster]
 ...
 dcv_settings = custom-dcv

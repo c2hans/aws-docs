@@ -135,7 +135,7 @@ By default, Elastic Load Balancing creates an internet-facing load balancer. Use
 
    The following is an example response. Note that the name indicates that this is an internal load balancer.
 
-   ```
+   ```json
    {
        "DNSName": "internal-my-internal-loadbalancer-786501203.us-west-2.elb.amazonaws.com"
    }
@@ -149,7 +149,7 @@ By default, Elastic Load Balancing creates an internet-facing load balancer. Use
 
    The following is an example response:
 
-   ```
+   ```json
    {
        "Instances": [
            {
@@ -170,7 +170,7 @@ By default, Elastic Load Balancing creates an internet-facing load balancer. Use
 
    The response includes the `DNSName` and `Scheme` fields, which indicate that this is an internal load balancer.
 
-   ```
+   ```json
    {
        "LoadBalancerDescriptions": [
            {

@@ -24,6 +24,12 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_signin-actions-as-permissions).
 
+- **   BatchRevokeSessions  **
+  - **IAM action:**  [signin:BatchRevokeSessions](#list_signin-action-BatchRevokeSessions)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   CreateOAuth2Token  **
   - **IAM action:**  [signin:CreateOAuth2Token](#list_signin-action-CreateOAuth2Token)
   - **Condition key:**
@@ -60,6 +66,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetSession  **
+  - **IAM action:**  [signin:GetSession](#list_signin-action-GetSession)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   IntrospectOAuth2TokenWithIAM  **
   - **IAM action:**  [signin:IntrospectOAuth2Token](#list_signin-action-IntrospectOAuth2Token)
   - **Condition key:**
@@ -68,6 +80,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListResourcePermissionStatements  **
   - **IAM action:**  [signin:ListResourcePermissionStatements](#list_signin-action-ListResourcePermissionStatements)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListSessions  **
+  - **IAM action:**  [signin:ListSessions](#list_signin-action-ListSessions)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -109,6 +127,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [oauth2-resource-service-principal\*](#list_signin-resource-oauth2-resource-service-principal) / **Condition keys:** [signin:OAuthClientId](#list_signin-signin_OAuthClientId)<br />[signin:OAuthRedirectUri](#list_signin-signin_OAuthRedirectUri)
   - **Access level:** Read
 
+- **   [BatchRevokeSessions](https://docs.aws.amazon.com/signin/latest/APIReference/API_BatchRevokeSessions.html)  **
+  - **Description:** Grants permission to revoke one or more sign-in sessions in your account
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [CreateBearerToken](https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane-signin_CreateBearerToken.html)  **
   - **Description:** Grants permission to exchange SigV4 credentials for a bearer token that can be used to access supported AWS services
   - **Resource types (\*required):** [oauth2-resource-service-principal\*](#list_signin-resource-oauth2-resource-service-principal)
@@ -123,10 +147,10 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [CreateOAuth2Token](https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane-signin_CreateOAuth2Token.html)  **
   - **Description:** Grants permission to exchange an authorization code, refresh token, SigV4 credentials, or JWT for OAuth 2 access token that can be used to access AWS services from developer tools and applications
-  - **Resource types (\*required):** [console\*](#list_signin-resource-console) / **Condition keys:**
-  - **Resource types (\*required):** [oauth2-public-client-localhost\*](#list_signin-resource-oauth2-public-client-localhost) / **Condition keys:** [signin:OAuthClientAuthentication](#list_signin-signin_OAuthClientAuthentication)<br />[signin:OAuthClientId](#list_signin-signin_OAuthClientId)<br />[signin:OAuthGrantType](#list_signin-signin_OAuthGrantType)<br />[signin:OAuthRedirectUri](#list_signin-signin_OAuthRedirectUri)
-  - **Resource types (\*required):** [oauth2-public-client-remote\*](#list_signin-resource-oauth2-public-client-remote) / **Condition keys:** [signin:OAuthClientAuthentication](#list_signin-signin_OAuthClientAuthentication)<br />[signin:OAuthClientId](#list_signin-signin_OAuthClientId)<br />[signin:OAuthGrantType](#list_signin-signin_OAuthGrantType)<br />[signin:OAuthRedirectUri](#list_signin-signin_OAuthRedirectUri)
-  - **Resource types (\*required):** [oauth2-resource-service-principal\*](#list_signin-resource-oauth2-resource-service-principal) / **Condition keys:** [signin:OAuthClientAuthentication](#list_signin-signin_OAuthClientAuthentication)<br />[signin:OAuthClientId](#list_signin-signin_OAuthClientId)<br />[signin:OAuthGrantType](#list_signin-signin_OAuthGrantType)<br />[signin:OAuthRedirectUri](#list_signin-signin_OAuthRedirectUri)
+  - **Resource types (\*required):** [console\*](#list_signin-resource-console) / **Condition keys:** [signin:PutSignInDurationBlock](#list_signin-signin_PutSignInDurationBlock)
+  - **Resource types (\*required):** [oauth2-public-client-localhost\*](#list_signin-resource-oauth2-public-client-localhost) / **Condition keys:** [signin:OAuthClientAuthentication](#list_signin-signin_OAuthClientAuthentication)<br />[signin:OAuthClientId](#list_signin-signin_OAuthClientId)<br />[signin:OAuthGrantType](#list_signin-signin_OAuthGrantType)<br />[signin:OAuthRedirectUri](#list_signin-signin_OAuthRedirectUri)<br />[signin:PutSignInDurationBlock](#list_signin-signin_PutSignInDurationBlock)
+  - **Resource types (\*required):** [oauth2-public-client-remote\*](#list_signin-resource-oauth2-public-client-remote) / **Condition keys:** [signin:OAuthClientAuthentication](#list_signin-signin_OAuthClientAuthentication)<br />[signin:OAuthClientId](#list_signin-signin_OAuthClientId)<br />[signin:OAuthGrantType](#list_signin-signin_OAuthGrantType)<br />[signin:OAuthRedirectUri](#list_signin-signin_OAuthRedirectUri)<br />[signin:PutSignInDurationBlock](#list_signin-signin_PutSignInDurationBlock)
+  - **Resource types (\*required):** [oauth2-resource-service-principal\*](#list_signin-resource-oauth2-resource-service-principal) / **Condition keys:** [signin:OAuthClientAuthentication](#list_signin-signin_OAuthClientAuthentication)<br />[signin:OAuthClientId](#list_signin-signin_OAuthClientId)<br />[signin:OAuthGrantType](#list_signin-signin_OAuthGrantType)<br />[signin:OAuthRedirectUri](#list_signin-signin_OAuthRedirectUri)<br />[signin:PutSignInDurationBlock](#list_signin-signin_PutSignInDurationBlock)
   - **Access level:** Read
 
 - **   [CreateTrustedIdentityPropagationApplicationForConsole](https://docs.aws.amazon.com/signin/latest/APIReference/API_CreateTrustedIdentityPropagationApplicationForConsole.html)  **
@@ -159,6 +183,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [GetSession](https://docs.aws.amazon.com/signin/latest/APIReference/API_GetSession.html)  **
+  - **Description:** Grants permission to retrieve the details of a sign-in session in your account
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [IntrospectOAuth2Token](https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane-signin_IntrospectOAuth2TokenWithIAM.html)  **
   - **Description:** Grants permission to inspect the metadata and active state of an OAuth 2 access token or refresh token
   - **Resource types (\*required):** [oauth2-public-client-localhost\*](#list_signin-resource-oauth2-public-client-localhost) / **Condition keys:** [signin:OAuthClientId](#list_signin-signin_OAuthClientId)<br />[signin:OAuthTokenType](#list_signin-signin_OAuthTokenType)
@@ -168,6 +198,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListResourcePermissionStatements](https://docs.aws.amazon.com/signin/latest/APIReference/API_ListResourcePermissionStatements.html)  **
   - **Description:** Grants permission to list the SignIn Resource Based Policy statements in your account
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListSessions](https://docs.aws.amazon.com/signin/latest/APIReference/API_ListSessions.html)  **
+  - **Description:** Grants permission to list the sign-in sessions for an IAM user or role in your account
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** List
@@ -234,3 +270,4 @@ AWS Signin defines the following condition keys that can be used in the `Conditi
 |   [signin:OAuthRedirectUri](https://docs.aws.amazon.com/signin/latest/userguide/reference-signin-condition-keys.html)  | Filters access by the redirect URI specified in the OAuth authorization request | String |
 |   [signin:OAuthTokenType](https://docs.aws.amazon.com/signin/latest/userguide/reference-signin-condition-keys.html)  | Filters access by the type of OAuth token being operated on | String |
 |   [signin:PrincipalArn](https://docs.aws.amazon.com/signin/latest/userguide/reference-signin-condition-keys.html)  | Filters access by the principal ARN during pre-authentication console sign-in | ARN |
+|   [signin:PutSignInDurationBlock](https://docs.aws.amazon.com/signin/latest/userguide/reference-signin-condition-keys.html)  | Filters access by whether the token request uses an extended sign-in session | Bool |

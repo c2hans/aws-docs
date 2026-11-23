@@ -35,12 +35,12 @@ Returns the estimated cardinality by HyperLogLog\+\+. relativeSD defines the max
 
 The following query estimates the number of unique values in the `col1` column, with a relative standard deviation of 1% (0.01).
 
-```
+```sql
 SELECT approx_count_distinct(col1, 0.01)
 ```
 
 The following query estimates that there are 3 unique values in the `col1` column (the values 1, 2, and 3).
 
-```
+```SQL
 SELECT approx_count_distinct(col1) FROM VALUES (1), (1), (2), (2), (3) tab(col1)
 ```

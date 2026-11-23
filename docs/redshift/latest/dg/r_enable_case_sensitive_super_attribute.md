@@ -27,7 +27,7 @@ For more information on navigating uppercase and mixed-case JSON fields, see [Ac
 
 The following example shows the results of selecting SUPER values with `enable_case_sensitive_super_attribute` enabled and with it disabled.
 
-```
+```sql
 --Create a table with a SUPER column.
 CREATE TABLE tbl (col SUPER);
 

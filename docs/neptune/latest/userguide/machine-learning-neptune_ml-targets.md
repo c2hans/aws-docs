@@ -8,7 +8,7 @@ The `targets` field in a JSON training data export configuration contains an arr
 
 For property-graph node classification and regression tasks, target objects in the array can look like this:
 
-```
+```json
 {
   "node": "{{(node property-graph label)}}",
   "property": "{{(property name)}}",
@@ -20,7 +20,7 @@ For property-graph node classification and regression tasks, target objects in t
 
 For property-graph edge classification, regression or link prediction tasks, they can look like this:
 
-```
+```json
 {
   "edge": "{{(edge property-graph label)}}",
   "property": "{{(property name)}}",
@@ -32,7 +32,7 @@ For property-graph edge classification, regression or link prediction tasks, the
 
 For RDF classification and regression tasks, target objects in the array can look like this:
 
-```
+```json
 {
   "node": "{{(node type of an RDF node)}}",
   "predicate": "{{(predicate IRI)}}",
@@ -43,7 +43,7 @@ For RDF classification and regression tasks, target objects in the array can loo
 
 For RDF link prediction tasks, target objects in the array can look like this::
 
-```
+```json
 {
   "subject": "{{(source node type of an edge)}}",
   "predicate": "{{(relation type of an edge)}}",
@@ -81,13 +81,13 @@ The property-graph label of a target node (vertex). A target object must contain
 
 A `node` can take either a single value, like this:
 
-```
+```json
   "node": "Movie"
 ```
 
 Or, in the case of a multi-label vertex, it can take an array of values, like this:
 
-```
+```json
   "node": ["Content", "Movie"]
 ```
 
@@ -98,13 +98,13 @@ Specifies a target edge by its start node label(s), its own label, and its end-n
 
 The value of an `edge` field is a JSON array of three strings that represent the start-node's property-graph label(s), the property-graph label of the edge itself, and the end-node's property-graph label(s), like this:
 
-```
+```json
   "edge": ["Person_A", "knows", "Person_B"]
 ```
 
 If the start node and/or end node has multiple labels, enclose them in an array, like this:
 
-```
+```json
   "edge": [ ["Admin", Person_A"], "knows", ["Admin", "Person_B"] ]
 ```
 
@@ -113,7 +113,7 @@ If the start node and/or end node has multiple labels, enclose them in an array,
 
 Specifies a property of the target vertex or edge, like this:
 
-```
+```json
   "property" : "rating"
 ```
 
@@ -124,7 +124,7 @@ This field is required, except when the target task is link prediction.
 
 Indicates the type of target task to be performed on the `node` or `edge`, like this:
 
-```
+```json
   "type" : "regression"
 ```
 
@@ -144,7 +144,7 @@ This field is required.
 
 (*Optional*) An estimate of the proportions of nodes or edges that the training, validation, and test stages will use, respectively. These proportions are represented by a JSON array of three numbers between zero and one that add up to one:
 
-```
+```json
 "split_rate": [0.7, 0.1, 0.2]
 ```
 
@@ -157,7 +157,7 @@ If you do not supply the optional `split_rate` field, the default estimated valu
 
 The `separator` field specifies a character used to split a target property value into multiple categorical values when it is used to store multiple category values in a string. For example:
 
-```
+```json
 "separator": "|"
 ```
 
@@ -171,13 +171,13 @@ The presence of a `separator` field indicates that the task is a multi-target cl
 
 Defines the node type of target nodes. Used with node classification tasks or node regression tasks. The node type of a node in RDF is defined by:
 
-```
+```json
   node_id, <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>, node_type
 ```
 
 An RDF `node` can only take a single value, like this:
 
-```
+```json
   "node": "http://aws.amazon.com/neptune/csv2rdf/class/Movie"
 ```
 
@@ -186,7 +186,7 @@ An RDF `node` can only take a single value, like this:
 
 For link prediction tasks, `subject` defines the source node type of target edges.
 
-```
+```json
   "subject": "http://aws.amazon.com/neptune/csv2rdf/class/Director"
 ```
 
@@ -198,7 +198,7 @@ For link prediction tasks, `subject` should be used together with `predicate` an
 
 For node classification and node regression tasks, `predicate` defines what literal data is used as the target node feature of a target node.
 
-```
+```json
   "predicate": "http://aws.amazon.com/neptune/csv2rdf/datatypeProperty/genre"
 ```
 
@@ -207,7 +207,7 @@ If the target nodes have only one predicate defining the target node feature, th
 
 For link prediction tasks, `predicate` defines the relation type of target edges:
 
-```
+```json
 "predicate": "http://aws.amazon.com/neptune/csv2rdf/datatypeProperty/direct"
 ```
 
@@ -219,7 +219,7 @@ For link prediction tasks, `predicate` should be used together with `subject` an
 
 For link prediction tasks, `object` defines the destination node type of target edges:
 
-```
+```json
   "object": "http://aws.amazon.com/neptune/csv2rdf/class/Movie"
 ```
 
@@ -231,7 +231,7 @@ For link prediction tasks, `object` should be used together with `subject` and `
 
 Indicates the type of target task to be performed, like this:
 
-```
+```json
   "type" : "regression"
 ```
 
@@ -247,7 +247,7 @@ This field is required.
 
 (*Optional*) An estimate of the proportions of nodes or edges that the training, validation, and test stages will use, respectively. These proportions are represented by a JSON array of three numbers between zero and one that add up to one:
 
-```
+```json
 "split_rate": [0.7, 0.1, 0.2]
 ```
 

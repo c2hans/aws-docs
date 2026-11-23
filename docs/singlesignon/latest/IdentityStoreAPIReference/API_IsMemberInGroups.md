@@ -138,7 +138,7 @@ This example indicates that the specified user is a member of the specified grou
 #### Sample Request
 <a name="API_IsMemberInGroups_Example_1_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "MemberId": {
@@ -153,7 +153,7 @@ This example indicates that the specified user is a member of the specified grou
 #### Sample Response
 <a name="API_IsMemberInGroups_Example_1_Response"></a>
 
-```
+```json
 {
     "Results": [
         {

@@ -14,7 +14,7 @@ The following code examples show how to describe an AMI, SaaS, or Container prod
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.catalogapi;
 
 import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
@@ -66,7 +66,7 @@ public class DescribeEntity {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 """
 Purpose
 Shows how to use the AWS SDK for Python (Boto3) search for product information in the AWS Marketplace Catalog

@@ -17,6 +17,6 @@ The Cinema 4D 2025 package includes the standalone Redshift command line rendere
 
 Submit the build:
 
-```
+```bash
 ./submit-package-job cinema4d-2025
 ```

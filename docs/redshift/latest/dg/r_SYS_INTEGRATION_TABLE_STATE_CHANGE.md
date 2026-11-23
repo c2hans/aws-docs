@@ -31,7 +31,7 @@ For more information, see [Working with Zero-ETL integrations](https://docs.aws.
 
 The following SQL command displays the log of integrations.
 
-```
+```sql
 select * from sys_integration_table_state_change;
 
             integration_id            | database_name | schema_name | table_name | new_state |  table_last_replicated_checkpoint   | state_change_reason |        record_time

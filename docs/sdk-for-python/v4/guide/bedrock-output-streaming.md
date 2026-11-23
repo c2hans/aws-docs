@@ -12,7 +12,7 @@ The following example uses the asynchronous client to send one request, print th
 
  **Imports**
 
-```
+```python
 import asyncio
 from typing import Any
 
@@ -32,7 +32,7 @@ from aws_sdk_bedrock_runtime.models import (
 
 `converse_stream` returns the response as a stream of events over an open network connection. The following function reads the events inside an `async with` block, which closes the connection when the stream ends or an error interrupts it. It narrows every generated event union, collects the text deltas, and raises an error for an unknown variant instead of accepting partial output. If the service sends a modeled error event, the `async for` loop raises the generated exception, such as `ThrottlingException` from `aws_sdk_bedrock_runtime.models`. The message-stop event carries the stop reason. The metadata event carries the token usage. The function requires both events before it accepts the accumulated text as complete.
 
-```
+```python
 async def consume_stream(response: Any) -> tuple[str, str, TokenUsage]:
     """Consume a Converse stream and reject errors or incomplete output."""
     text_parts: list[str] = []
@@ -70,7 +70,7 @@ The following function calls `converse_stream` with the same keyword arguments t
 
  **Code**
 
-```
+```python
 async def converse_stream(
     client: AsyncBedrockRuntimeClient,
 ) -> tuple[str, str, TokenUsage]:
@@ -90,7 +90,7 @@ async def converse_stream(
 
 The entry point creates an asynchronous client with `create_async_client` and runs the streaming request. Run the program with `python converse_stream.py`.
 
-```
+```python
 async def main() -> None:
     """Create an asynchronous client and run the example."""
     client = await create_async_client()

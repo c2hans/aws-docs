@@ -29,7 +29,7 @@ When you update a profile using the API or CLI (`UpdateAgentProfile`), you must 
 
 To avoid unintentionally clearing fields, retrieve the current profile configuration first, modify the values you want to change, then pass the full object back:
 
-```
+```bash
 # 1. Get the current profile configuration
 aws wellarchitected get-agent-profile \
     --profile-arn "{{arn:aws:wellarchitected:us-east-1:111122223333:agent-profile/my-profile}}"

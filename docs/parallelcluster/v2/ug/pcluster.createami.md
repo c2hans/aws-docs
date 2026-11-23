@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 (Linux/macOS) Creates a custom AMI to use with AWS ParallelCluster.
 
-```
+```sh
 pcluster createami [ -h ] -ai {{BASE_AMI_ID}} -os {{BASE_AMI_OS}}
                    [ -i {{INSTANCE_TYPE}} ] [ -ap {{CUSTOM_AMI_NAME_PREFIX}} ]
                    [ -cc {{CUSTOM_AMI_COOKBOOK}} ] [--no-public-ip]

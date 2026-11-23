@@ -29,7 +29,7 @@ Added to `resource_details`. See the OCSF [Device](https://schema.ocsf.io/1.6.0/
 
 Example
 
-```
+```JSON
 {
   "device": {
     "image": {
@@ -83,7 +83,7 @@ Added to `resource_details`. See the OCSF [Network Interface](https://schema.ocs
 
 Example
 
-```
+```JSON
 {
   "network_interface": {
     "uid": "eni-0a1b2c3d4e5f6g7h8",
@@ -137,7 +137,7 @@ New
 
 Example
 
-```
+```JSON
 {
   "storage_device": {
     "is_encrypted": false,
@@ -182,7 +182,7 @@ Added to `resource_details`. See the OCSF [Database](https://schema.ocsf.io/1.6.
 
 Example
 
-```
+```JSON
 {
   "database": {
     "cluster_uid": "SampleDBClusterId",
@@ -231,7 +231,7 @@ New
 
 Example
 
-```
+```JSON
 {
   "db_cluster": {
     "uid": "production-aurora-cluster",
@@ -302,7 +302,7 @@ New
 
 Example
 
-```
+```JSON
 {
   "cloud_function": {
     "name": "my-lambda-function",
@@ -352,7 +352,7 @@ Added to `resource_details`. See the OCSF [Databucket](https://schema.ocsf.io/1.
 
 Example
 
-```
+```JSON
 {
   "databucket": {
     "type": "S3",
@@ -382,7 +382,7 @@ Added to `resource_details`. See the OCSF [Image](https://schema.ocsf.io/1.6.0/o
 
 Example
 
-```
+```JSON
 {
   "image": {
     "uid": "ami-0abcdef1234567890",
@@ -422,7 +422,7 @@ New
 
 Example
 
-```
+```JSON
 {
   "subnet_info": {
     "uid": "subnet-0a1b2c3d4e5f6g7h8",
@@ -459,7 +459,7 @@ Added to `resource_details`. See the OCSF [User](https://schema.ocsf.io/1.6.0/ob
 
 Example
 
-```
+```JSON
 {
   "user": {
     "type_id": 1,

@@ -89,7 +89,7 @@ version = 0.1
 ### YAML
 <a name="serverless-sam-cli-config-formats-yaml"></a>
 
-```
+```yaml
 version: 0.1
 {{environment}}:
   {{command}}:
@@ -173,7 +173,7 @@ When specifying keys, use the long-form command option name and replace hyphens 
   $ sam deploy --tags "foo=bar hello=world"
   ```
 
-  ```
+  ```yaml
   default:
     deploy:
       parameters:
@@ -187,7 +187,7 @@ When specifying keys, use the long-form command option name and replace hyphens 
   $ sam remote invoke --parameter "InvocationType=Event" --parameter "LogType=None"
   ```
 
-  ```
+  ```yaml
   default:
     remote_invoke:
       parameters:
@@ -218,7 +218,7 @@ When configuring values, the following precedence takes place:
 ------
 #### [ YAML ]
 
-  ```
+  ```yaml
   default:
     global:
       parameters:

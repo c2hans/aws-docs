@@ -29,7 +29,7 @@ Our user data can perform common configuration scenarios, including but not limi
 **Note**
  If you add user data to a launch template in the Amazon EC2 console, you can paste it in as plain text. Or, you can upload it from a file. If you use the AWS CLI or an AWS SDK, you must first base64 encode the user data and submit that string as the value of the `UserData` parameter when you call [CreateLaunchTemplate](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLaunchTemplate.html), as shown in this JSON file.
 
-```
+```json
 {
     "LaunchTemplateName": "base64-user-data",
     "LaunchTemplateData": {

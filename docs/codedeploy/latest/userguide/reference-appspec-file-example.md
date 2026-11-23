@@ -16,7 +16,7 @@ This topic provides example AppSpec files for an AWS Lambda and an EC2/On-Premis
 
  Here is an example of an AppSpec file written in YAML for deploying an Amazon ECS service.
 
-```
+```yaml
 version: 0.0
 Resources:
   - TargetService:
@@ -50,7 +50,7 @@ Hooks:
 
  Here is a version of the preceding example written in JSON.
 
-```
+```json
 {
     "version": 0.0,
     "Resources": [
@@ -131,7 +131,7 @@ Here is the sequence of events during deployment:
 
  Here is an example of an AppSpec file written in YAML for deploying a Lambda function version.
 
-```
+```yaml
 version: 0.0
 Resources:
   - myLambdaFunction:
@@ -148,7 +148,7 @@ Hooks:
 
  Here is a version of the preceding example written in JSON.
 
-```
+```json
 {
  	"version": 0.0,
  	"Resources": [{
@@ -188,7 +188,7 @@ Here is an example of an AppSpec file for an in-place deployment to an Amazon Li
 **Note**
  Deployments to Windows Server instances do not support the `runas` element. If you are deploying to Windows Server instances, do not include it in your AppSpec file.
 
-```
+```yaml
 version: 0.0
 os: linux
 files:

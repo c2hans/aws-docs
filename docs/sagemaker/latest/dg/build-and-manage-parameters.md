@@ -14,7 +14,7 @@ Amazon SageMaker Pipelines supports the following parameter types:
 
 Parameters take the following format:
 
-```
+```python
 {{<parameter>}} = {{<parameter_type>}}(
     name="{{<parameter_name>}}",
     default_value={{<default_value>}}
@@ -23,7 +23,7 @@ Parameters take the following format:
 
 The following example shows a sample parameter implementation.
 
-```
+```python
 from sagemaker.workflow.parameters import (
     ParameterInteger,
     ParameterString,
@@ -39,7 +39,7 @@ processing_instance_count = ParameterInteger(
 
 You pass the parameter when creating your pipeline as shown in the following example.
 
-```
+```python
 pipeline = Pipeline(
     name=pipeline_name,
     parameters=[
@@ -51,7 +51,7 @@ pipeline = Pipeline(
 
 You can also pass a parameter value that differs from the default value to a pipeline execution, as shown in the following example.
 
-```
+```python
 execution = pipeline.start(
     parameters=dict(
         ProcessingInstanceCount="2",

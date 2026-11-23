@@ -26,7 +26,7 @@ The following code example shows how to use `CreateVpc`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/ec2#code-examples).
 
-```
+```php
     /**
      * @param string $cidr
      * @return array
@@ -54,7 +54,7 @@ The following code example shows how to use `CreateVpcEndpoint`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/ec2#code-examples).
 
-```
+```php
     /**
      * @param string $serviceName
      * @param string $vpcId
@@ -87,7 +87,7 @@ The following code example shows how to use `DeleteVpc`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/ec2#code-examples).
 
-```
+```php
     /**
      * @param string $vpcId
      * @return void
@@ -114,7 +114,7 @@ The following code example shows how to use `DeleteVpcEndpoints`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/ec2#code-examples).
 
-```
+```php
     /**
      * @param string $vpcEndpointId
      * @return void
@@ -141,7 +141,7 @@ The following code example shows how to use `DescribeRouteTables`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/ec2#code-examples).
 
-```
+```php
     /**
      * @param array $routeTableIds
      * @param array $filters

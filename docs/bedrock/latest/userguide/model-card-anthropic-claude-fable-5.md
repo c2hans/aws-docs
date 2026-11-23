@@ -259,7 +259,7 @@ AWS_BEARER_TOKEN_BEDROCK="<provide your Bedrock API key>"
 
 **Step 5 - Run your first inference request:** Save the file as `bedrock-first-request.py`
 
-```
+```python
 import json
 import boto3
 
@@ -288,7 +288,7 @@ AWS_BEARER_TOKEN_BEDROCK="<provide your Bedrock API key>"
 
 **Step 5 - Run your first inference request:** Save the file as `bedrock-first-request.py`
 
-```
+```python
 from anthropic import Anthropic
 from aws_bedrock_token_generator import provide_token
 

@@ -36,7 +36,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 /**
 Before running this Kotlin code example, set up your development environment, including your credentials.
 
@@ -552,7 +552,7 @@ The following code example shows how to use `CreateDBCluster`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun createDBCluster(
     dbParameterGroupFamilyVal: String?,
     dbName: String?,
@@ -586,7 +586,7 @@ The following code example shows how to use `CreateDBClusterParameterGroup`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun createDBClusterParameterGroup(
     dbClusterGroupNameVal: String?,
     dbParameterGroupFamilyVal: String?,
@@ -614,7 +614,7 @@ The following code example shows how to use `CreateDBClusterSnapshot`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun createDBClusterSnapshot(
     dbInstanceClusterIdentifier: String?,
     dbSnapshotIdentifier: String?,
@@ -641,7 +641,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun createDBInstanceCluster(
     dbInstanceIdentifierVal: String?,
     dbInstanceClusterIdentifierVal: String?,
@@ -672,7 +672,7 @@ The following code example shows how to use `DeleteDBCluster`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun deleteCluster(dbInstanceClusterIdentifier: String) {
     val deleteDbClusterRequest =
         DeleteDbClusterRequest {
@@ -696,7 +696,7 @@ The following code example shows how to use `DeleteDBClusterParameterGroup`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 @Throws(InterruptedException::class)
 suspend fun deleteDBClusterGroup(
     dbClusterGroupName: String,
@@ -751,7 +751,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun deleteDBInstance(dbInstanceIdentifierVal: String) {
     val deleteDbInstanceRequest =
         DeleteDbInstanceRequest {
@@ -776,7 +776,7 @@ The following code example shows how to use `DescribeDBClusterParameterGroups`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun describeDbClusterParameterGroups(dbClusterGroupName: String?) {
     val groupsRequest =
         DescribeDbClusterParameterGroupsRequest {
@@ -803,7 +803,7 @@ The following code example shows how to use `DescribeDBClusterParameters`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun describeDbClusterParameters(
     dbCLusterGroupName: String?,
     flag: Int,
@@ -849,7 +849,7 @@ The following code example shows how to use `DescribeDBClusterSnapshots`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun waitSnapshotReady(
     dbSnapshotIdentifier: String?,
     dbInstanceClusterIdentifier: String?,
@@ -894,7 +894,7 @@ The following code example shows how to use `DescribeDBClusters`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun describeDbClusterParameters(
     dbCLusterGroupName: String?,
     flag: Int,
@@ -940,7 +940,7 @@ The following code example shows how to use `DescribeDBEngineVersions`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 // Get a list of allowed engine versions.
 suspend fun getAllowedClusterEngines(dbParameterGroupFamilyVal: String?) {
     val versionsRequest =
@@ -968,7 +968,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun waitDBAuroraInstanceReady(dbInstanceIdentifierVal: String?) {
     var instanceReady = false
     var instanceReadyStr: String
@@ -1007,7 +1007,7 @@ The following code example shows how to use `ModifyDBClusterParameterGroup`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 // Modify the auto_increment_offset parameter.
 suspend fun modifyDBClusterParas(dClusterGroupName: String?) {
     val parameter1 =

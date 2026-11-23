@@ -15,14 +15,14 @@ The following code example shows the use of a waiter function that allows you to
 
  **Imports**
 
-```
+```kotlin
 import aws.sdk.kotlin.services.s3.S3Client
 import aws.sdk.kotlin.services.s3.waiters.waitUntilBucketExists
 ```
 
  **Code**
 
-```
+```kotlin
 val s3 = S3Client.fromEnvironment()
 
 // This initiates creating an S3 bucket and potentially returns before the bucket exists.

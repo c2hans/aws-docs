@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/ecma-iteration.html
 
 Iteration statements can be any one of the following:
 
-```
+```javascript
 // Do..While statement
 do {
    statements

@@ -97,7 +97,7 @@ The IAM role requires permission to invoke Lambda functions. While creating the 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

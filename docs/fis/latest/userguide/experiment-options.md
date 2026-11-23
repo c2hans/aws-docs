@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/experiment-options.
 
  The following is the syntax for experiment options that you define on the experiment template.
 
-```
+```json
 {
         "experimentOptions": {
         "accountTargeting": "single-account | multi-account",
@@ -54,7 +54,7 @@ When you create a multi-account experiment template, the experiment template wil
 
 The following is the syntax for a target account configuration.
 
-```
+```json
 {
     accountId: "123456789012",
     roleArn: "arn:aws:iam::123456789012:role/AllowFISActions",

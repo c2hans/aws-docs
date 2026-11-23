@@ -35,7 +35,7 @@ To enable this improvement, add the required permission to the service role or p
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

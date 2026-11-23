@@ -16,6 +16,11 @@ Array Members: Fixed number of 1 item.
 Valid Values: `MicroVm | WebFunction`
 Required: No
 
+ ** ElasticIpConfiguration **   <a name="lambdacore-Type-NetworkConnectorVpcEgressConfiguration-ElasticIpConfiguration"></a>
+The Elastic IP configuration for the connector's ENIs. Specify `ServiceManaged` to have Lambda assign a service-managed Elastic IP address to each ENI. The operator role must allow `ec2:AllocateAddress` and `ec2:AssociateAddress`.
+Type: [ElasticIpConfiguration](API_ElasticIpConfiguration.md) object
+Required: No
+
  ** NetworkProtocol **   <a name="lambdacore-Type-NetworkConnectorVpcEgressConfiguration-NetworkProtocol"></a>
 The network protocol for the connector. Specify `IPv4` for IPv4-only networking, or `DualStack` for both IPv4 and IPv6.
 Type: String

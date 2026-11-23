@@ -43,7 +43,7 @@ For users connecting via deep links from the SageMaker UI, use the following per
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -83,7 +83,7 @@ The following policy using `*` as the resource constraint is only recommended fo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -126,7 +126,7 @@ For SSH terminal connections, the `StartSession` API is called by the SSH proxy 
 
 1. If using a named credential profile, modify the proxy command in your SSH config:
 
-   ```
+   ```bash
    ProxyCommand '/home/user/sagemaker_connect.sh' '%h' {{YOUR_CREDENTIAL_PROFILE_NAME}}
    ```
 **Note**
@@ -137,7 +137,7 @@ The policy needs to be attached to the IAM identity (user/role) used in your loc
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

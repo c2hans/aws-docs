@@ -33,7 +33,7 @@ A `SUPER` expression or column.
 
 To check if `{"name": "Joe"}` is a scalar using the IS\_SCALAR function, use the following example.
 
-```
+```sql
 CREATE TABLE t(s SUPER);
 
 INSERT INTO t VALUES (JSON_PARSE('{"name": "Joe"}'));

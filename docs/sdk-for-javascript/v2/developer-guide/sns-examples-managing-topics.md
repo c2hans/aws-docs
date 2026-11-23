@@ -38,7 +38,7 @@ In this example, use a Node.js module to create an Amazon SNS topic. Create a No
 
 Create an object to pass the `Name` for the new topic to the `createTopic` method of the `AWS.SNS` client class. To call the `createTopic` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback. The `data` returned by the promise contains the ARN of the topic.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -61,7 +61,7 @@ createTopicPromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_createtopic.js
 ```
 
@@ -74,7 +74,7 @@ In this example, use a Node.js module to list all Amazon SNS topics. Create a No
 
 Create an empty object to pass to the `listTopics` method of the `AWS.SNS` client class. To call the `listTopics` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback. The `data` returned by the promise contains an array of your topic ARNs.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -97,7 +97,7 @@ listTopicsPromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_listtopics.js
 ```
 
@@ -110,7 +110,7 @@ In this example, use a Node.js module to delete an Amazon SNS topic. Create a No
 
 Create an object containing the `TopicArn` of the topic to delete to pass to the `deleteTopic` method of the `AWS.SNS` client class. To call the `deleteTopic` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -133,7 +133,7 @@ deleteTopicPromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_deletetopic.js
 ```
 
@@ -146,7 +146,7 @@ In this example, use a Node.js module to retrieve attributes of an Amazon SNS to
 
 Create an object containing the `TopicArn` of a topic to delete to pass to the `getTopicAttributes` method of the `AWS.SNS` client class. To call the `getTopicAttributes` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -169,7 +169,7 @@ getTopicAttribsPromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_gettopicattributes.js
 ```
 
@@ -182,7 +182,7 @@ In this example, use a Node.js module to set the mutable attributes of an Amazon
 
 Create an object containing the parameters for the attribute update, including the `TopicArn` of the topic whose attributes you want to set, the name of the attribute to set, and the new value for that attribute. You can set only the `Policy`, `DisplayName`, and `DeliveryPolicy` attributes. Pass the parameters to the `setTopicAttributes` method of the `AWS.SNS` client class. To call the `setTopicAttributes` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -212,7 +212,7 @@ setTopicAttribsPromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_settopicattributes.js
 ```
 

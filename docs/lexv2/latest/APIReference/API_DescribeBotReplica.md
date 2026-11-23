@@ -122,7 +122,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of DescribeBotReplica.
 
-```
+```json
 GET https://models-v2-lex.us-east-1.amazonaws.com/bots/BOT1234567/replicas/us-west-2
 {
     "replicaRegion": "us-west-2"
@@ -134,7 +134,7 @@ GET https://models-v2-lex.us-east-1.amazonaws.com/bots/BOT1234567/replicas/us-we
 
 This example illustrates one usage of DescribeBotReplica.
 
-```
+```json
 {
     "botId": "BOT1234567",
     "botReplicaStatus": "Enabled",

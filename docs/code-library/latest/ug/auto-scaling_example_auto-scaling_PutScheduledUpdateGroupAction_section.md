@@ -48,7 +48,7 @@ For more examples, see [Scheduled scaling](https://docs.aws.amazon.com/autoscali
 **Tools for PowerShell V4**
 **Example 1: This example creates or updates a one-time scheduled action to change the desired capacity at the specified start time.**
 
-```
+```powershell
 Write-ASScheduledUpdateGroupAction -AutoScalingGroupName my-asg -ScheduledActionName "myScheduledAction" -StartTime "2015-12-01T00:00:00Z" -DesiredCapacity 10
 ```
 +  For API details, see [PutScheduledUpdateGroupAction](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -56,7 +56,7 @@ Write-ASScheduledUpdateGroupAction -AutoScalingGroupName my-asg -ScheduledAction
 **Tools for PowerShell V5**
 **Example 1: This example creates or updates a one-time scheduled action to change the desired capacity at the specified start time.**
 
-```
+```powershell
 Write-ASScheduledUpdateGroupAction -AutoScalingGroupName my-asg -ScheduledActionName "myScheduledAction" -StartTime "2015-12-01T00:00:00Z" -DesiredCapacity 10
 ```
 +  For API details, see [PutScheduledUpdateGroupAction](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

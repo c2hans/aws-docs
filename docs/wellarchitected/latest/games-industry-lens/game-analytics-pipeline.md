@@ -14,6 +14,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 
 ![Serverless game analytics pipeline for gameplay telemetry](https://docs.aws.amazon.com/wellarchitected/latest/games-industry-lens/images/image8.jpeg)
 
+*Serverless game analytics pipeline for gameplay telemetry*
+
  Game data is ingested from game clients, game servers, and other applications. The streaming data is ingested into Amazon S3 for data lake integration and interactive analytics. Streaming analytics processes real-time events and generates metrics. Data consumers analyze metrics data in Amazon CloudWatch and raw events in Amazon S3.
 +  **Solution API and configuration data:** Use Amazon API Gateway to provide a REST API for administering your game analytics pipeline and storing configuration data in Amazon DynamoDB using Lambda functions. You can build an internal portal on top of this API or a custom command line interface for administration. A REST API also provides server-authentication for ingesting gameplay data from data sources and forwarding the telemetry data to Amazon Kinesis Data Streams for real-time processing and ingestion into storage.
 +  **Events stream:** Amazon Kinesis Data Streams captures streaming data from your game and allows real-time data processing by Amazon Data Firehose and Amazon Managed Service for Apache Flink.

@@ -22,7 +22,7 @@ Set `CompoundLibrary=chembl` (default) to automatically download and filter drug
 
 From the `job_bundles` directory, submit the job:
 
-```
+```bash
 deadline bundle submit virtual_screening_vina \
   -p "ReceptorPdb=receptor.pdb" \
   -p "CompoundLibrary=chembl" \

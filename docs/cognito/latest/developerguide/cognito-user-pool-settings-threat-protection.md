@@ -89,7 +89,7 @@ Client credentials grants are intended for machine-to-machine (M2M) authorizatio
 
 Set your feature plan to Plus in a [CreateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPool.html) or [UpdateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPool.html) API request. The following partial example request body sets threat protection to full-function mode. For a complete example request, see [Examples](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPool.html#API_CreateUserPool_Examples).
 
-```
+```json
 "UserPoolAddOns": {
       "AdvancedSecurityMode": "ENFORCED"
    }
@@ -206,7 +206,7 @@ To set the threat protection configuration for a user pool, send a [SetRiskConfi
 
 To enforce this configuration, you must set `AdvancedSecurityMode` to `ENFORCED` in a separate [CreateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPool.html) or [UpdateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPool.html) API request. For more information about the placeholder templates like `{username}` in this example, see [Configuring MFA, authentication, verification and invitation messages](cognito-user-pool-settings-message-customizations.md).
 
-```
+```json
 {
    "AccountTakeoverRiskConfiguration": {
       "Actions": {
@@ -262,7 +262,7 @@ To set the threat protection configuration for an app client, send a [SetRiskCon
 
 To enforce this configuration, you must set `AdvancedSecurityMode` to `ENFORCED` in a separate [CreateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPool.html) or [UpdateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPool.html) API request. For more information about the placeholder templates like `{username}` in this example, see [Configuring MFA, authentication, verification and invitation messages](cognito-user-pool-settings-message-customizations.md).
 
-```
+```json
 {
    "AccountTakeoverRiskConfiguration": {
       "Actions": {

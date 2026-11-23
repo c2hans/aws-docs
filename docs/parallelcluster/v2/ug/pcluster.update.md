@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Analyzes the configuration file to determine if the cluster can be safely updated. If the analysis determines the cluster can be updated, you are prompted to confirm the change. If the analysis shows the cluster can't be updated, the configuration settings that are the source of the conflicts are enumerated with details. For more information, see [Using `pcluster update`](using-pcluster-update.md).
 
-```
+```sh
 pcluster update [ -h ] [ -c {{CONFIG_FILE}} ] [ --force ] [ -r {{REGION}} ] [ -nr ]
                 [ -nw ] [ -t {{CLUSTER_TEMPLATE}} ] [ -p {{EXTRA_PARAMETERS}} ] [ -rd ]
                 [ --yes ] {{cluster_name}}

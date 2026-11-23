@@ -15,7 +15,7 @@ Each policy document can have one or more policy statements. The following examp
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -92,7 +92,7 @@ When a key policy statement is missing its `Resource` element, the AWS KMS conso
 To specify conditions, you use predefined *condition keys*. AWS KMS supports [AWS global condition keys](conditions-aws.md) and [AWS KMS condition keys](conditions-kms.md). To support attribute-based access control (ABAC), AWS KMS provides condition keys that control access to a KMS key based on tags and aliases. For details, see [ABAC for AWS KMS](abac.md).
 The format for a condition is:
 
-```
+```json
 "Condition": {"{{condition operator}}": {"{{condition key}}": "{{condition value}}"}}
 ```
 such as:
@@ -116,7 +116,7 @@ The following example shows a complete key policy for a symmetric encryption KMS
 
 ****
 
-```
+```json
 {
     "Id": "key-consolepolicy",
     "Version":"2012-10-17",

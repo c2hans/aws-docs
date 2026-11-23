@@ -17,7 +17,7 @@ Window functions are the last set of operations performed in a query except for 
 
 Window functions can't be nested. For example, an aggregate function [SUM](r_SUM.md) can appear inside a window function [SUM](r_WF_SUM.md), but a window function SUM can't appear inside another window function SUM. The following is not supported because a window function is nested in another window function.
 
-```
+```sql
 SELECT SUM(SUM(selectcol) OVER (PARTITION BY ordercol)) OVER (Partition by ordercol) FROM t;
 ```
 

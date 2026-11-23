@@ -8,7 +8,7 @@ An AWS IoT rule defines a query and one or more actions to take when a message i
 
 In this tutorial, your Raspberry Pi publishes messages on `aws/things/RaspberryPi/shadow/update`. This is an internal MQTT topic used by devices and the Thing Shadow service. The Raspberry Pi publishes messages that have the following form:
 
-```
+```json
 {
     "reported": {
         "moisture" : {{moisture-reading}},
@@ -27,7 +27,7 @@ You create a query that extracts the moisture and temperature data from the inco
 
 1. Choose **Next** and configure your SQL statement. Choose **SQL version** as **2016-03-23**, and enter the following AWS IoT SQL query statement:
 
-   ```
+   ```sql
    SELECT * FROM '$aws/things/RaspberryPi/shadow/update/accepted' WHERE state.reported.moisture < 400
    ```
 

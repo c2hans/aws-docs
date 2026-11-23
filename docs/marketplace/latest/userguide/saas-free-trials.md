@@ -6,6 +6,9 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-free-t
 
 As an AWS Marketplace seller, you can create software as a service (SaaS) free trial offers in AWS Partner Central. With a free trial, you let buyers evaluate your product before they buy it. After a buyer subscribes to your product, your product performs entitlement checks the same way it does for paid buyers.
 
+**Note**
+Agentic Commerce products don't support free trials. For more information, see [Requirements and limitations](agentic-commerce-products.md#agentic-commerce-requirements).
+
 Each AWS account can use one free trial per product. The free usage amount granted during a free trial is not shared across linked accounts in an AWS organization. Different linked accounts within a single main payer account can create their own individual free trials.
 
 **Note**
@@ -54,23 +57,27 @@ You can create SaaS free trial offers in AWS Partner Central.
 
 **To create a SaaS free trial offer**
 
-1. Sign in to [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home).
+1. Open the [**Offers**](https://us-east-1.console.aws.amazon.com/partnercentral/offers) page in AWS Partner Central, and sign in to your seller account.
 
-1. Choose **Private offers**, and then choose the **Public free trials** tab.
+1. On the **Public offers** tab, choose **Create free trial**.
 
-1. Choose **Create free trial**. You can create one free trial for each public SaaS product.
+1. Under **Offer fundamentals**, for **Product**, choose your product, and then choose **Next**.
 
-1. For **Offer fundamentals**, select your **Product**, and then choose **Next**.
+   You can create one free trial for each product. A SaaS subscription product must already have a public offer.
 
-1. In **Free trial settings**, enter the **Free trial length (days)**. Free trials can last from 7 to 90 days.
+1. Under **Free trial settings**, for **Free trial length (days)**, enter a number from 7 to 90.
 
-1. Review the pricing:
-   + For SaaS subscription products, review the **Paid pricing terms**. Buyers pay these rates after the free trial ends.
-   + For SaaS contract products, review the **Product dimensions**. You can set the quantity limits for each dimension, and **Remove** or **Add dimensions**.
+   For a SaaS subscription product, the **Usage dimensions** table shows the rates that buyers pay after the free trial ends.
 
-1. For SaaS contract products, view the **Service agreement** and select the EULA version. Then go to the review page.
+1. For a SaaS contract product, complete the following:
+   + Under **Free trial settings**, enter a **Quantity** for each dimension. To leave a dimension out of the free trial, choose **Remove**.
+   + Under **Legal terms and offer documents**, choose the legal terms that buyers accept for the free trial.
 
-1. Verify the information, and then submit the free trial.
+1. Choose **Review changes**.
+
+1. Choose **Create free trial offer**.
+
+AWS Partner Central returns you to the **Offers** page while AWS Marketplace processes the request.
 
 For SaaS subscription products, AWS Marketplace adds the free trial to your public offer. There's no separate free trial offer, and the free trial converts automatically. For SaaS contract products, AWS Marketplace creates a separate free trial offer that doesn't convert.
 
@@ -84,11 +91,11 @@ You can't undo this update.
 
 **To update an existing free trial offer**
 
-1. Sign in to [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home) with the AWS account that manages the offer.
+1. Open the [**Offers**](https://us-east-1.console.aws.amazon.com/partnercentral/offers) page in AWS Partner Central, and sign in with the AWS account that manages the offer.
 
-1. Choose **Private offers**, and then choose the **Public free trials** tab.
+1. Choose the **Public offers** tab.
 
-1. Select your free trial offer, and then choose **View offer**.
+1. Select your free trial offer, and then choose **View details**.
 
 1. Choose **Auto-convert free trials**.
 
@@ -113,13 +120,13 @@ You can cancel free trial offers at any time from AWS Partner Central. This proc
 
 **To cancel a SaaS free trial offer**
 
-1. Sign in to [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home).
+1. Open the [**Offers**](https://us-east-1.console.aws.amazon.com/partnercentral/offers) page in AWS Partner Central, and sign in to your seller account.
 
-1. Choose **Private offers**, and then choose the **Public free trials** tab.
+1. Choose the **Public offers** tab.
 
 1. Select the offer.
 
-1. Choose **View offer**.
+1. Choose **View details**.
 
 1. Choose **Cancel offer**.
 

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/chime/latest/ag/download-users.html
 
 The following example shows how to download a list of users associated with your Amazon Chime administrative account in `.csv` format.
 
-```
+```java
 BufferedWriter writer = Files.newBufferedWriter(Paths.get("/path/to/csv"));
 CSVPrinter printer = new CSVPrinter(writer, CSVFormat.DEFAULT.withHeader("userId", "email"));
 

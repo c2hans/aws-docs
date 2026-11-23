@@ -30,7 +30,7 @@ The following code example shows how to use `Get-C9EnvironmentData`.
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified AWS Cloud9 development environments.**
 
-```
+```powershell
 Get-C9EnvironmentData -EnvironmentId 685f892f431b45c2b28cb69eadcdb0EX,1980b80e5f584920801c09086667f0EX
 ```
 **Output:**
@@ -54,7 +54,7 @@ Type        : ssh
 ```
 **Example 2: This example gets information about the lifecycle status of the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 (Get-C9EnvironmentData -EnvironmentId 685f892f431b45c2b28cb69eadcdb0EX).Lifecycle
 ```
 **Output:**
@@ -74,7 +74,7 @@ The following code example shows how to use `Get-C9EnvironmentList`.
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of available AWS Cloud9 development environment identifiers.**
 
-```
+```powershell
 Get-C9EnvironmentList
 ```
 **Output:**
@@ -93,7 +93,7 @@ The following code example shows how to use `Get-C9EnvironmentMembershipList`.
 **Tools for PowerShell V5**
 **Example 1: This example gets information about environment members for the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Get-C9EnvironmentMembershipList -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX
 ```
 **Output:**
@@ -113,7 +113,7 @@ UserId        : AIDAJ3LOROMOUXTBSU6EX
 ```
 **Example 2: This example gets information about the owner of the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Get-C9EnvironmentMembershipList -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX -Permission owner
 ```
 **Output:**
@@ -127,7 +127,7 @@ UserId        : AIDAJ3LOROMOUXTBSU6EX
 ```
 **Example 3: This example gets information about the specified environment member for multiple AWS Cloud9 development environments.**
 
-```
+```powershell
 Get-C9EnvironmentMembershipList -UserArn arn:aws:iam::123456789012:user/MyDemoUser
 ```
 **Output:**
@@ -155,7 +155,7 @@ The following code example shows how to use `Get-C9EnvironmentStatus`.
 **Tools for PowerShell V5**
 **Example 1: This example gets status information for the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Get-C9EnvironmentStatus -EnvironmentId 349c86d4579e4e7298d500ff57a6b2EX
 ```
 **Output:**
@@ -175,7 +175,7 @@ The following code example shows how to use `New-C9EnvironmentEC2`.
 **Tools for PowerShell V5**
 **Example 1: This example creates an AWS Cloud9 development environment with the specified settings, launches an Amazon Elastic Compute Cloud (Amazon EC2) instance, and then connects from the instance to the environment.**
 
-```
+```powershell
 New-C9EnvironmentEC2 -Name my-demo-env -AutomaticStopTimeMinutes 60 -Description "My demonstration development environment." -InstanceType t2.micro -OwnerArn arn:aws:iam::123456789012:user/MyDemoUser -SubnetId subnet-d43a46EX
 ```
 **Output:**
@@ -193,7 +193,7 @@ The following code example shows how to use `New-C9EnvironmentMembership`.
 **Tools for PowerShell V5**
 **Example 1: This example adds the specified environment member to the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 New-C9EnvironmentMembership -UserArn arn:aws:iam::123456789012:user/AnotherDemoUser -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX -Permission read-write
 ```
 **Output:**
@@ -215,7 +215,7 @@ The following code example shows how to use `Remove-C9Environment`.
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified AWS Cloud9 development environment. If an Amazon EC2 instance is connected to the environment, also terminates the instance.**
 
-```
+```powershell
 Remove-C9Environment -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX
 ```
 +  For API details, see [DeleteEnvironment](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -228,7 +228,7 @@ The following code example shows how to use `Remove-C9EnvironmentMembership`.
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified environment member from the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Remove-C9EnvironmentMembership -UserArn arn:aws:iam::123456789012:user/AnotherDemoUser -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX
 ```
 +  For API details, see [DeleteEnvironmentMembership](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -241,7 +241,7 @@ The following code example shows how to use `Update-C9Environment`.
 **Tools for PowerShell V5**
 **Example 1: This example changes the specified settings of the specified existing AWS Cloud9 development environment.**
 
-```
+```powershell
 Update-C9Environment -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX -Description "My changed demonstration development environment." -Name my-changed-demo-env
 ```
 +  For API details, see [UpdateEnvironment](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -254,7 +254,7 @@ The following code example shows how to use `Update-C9EnvironmentMembership`.
 **Tools for PowerShell V5**
 **Example 1: This example changes the settings of the specified existing environment member for the specified AWS Cloud9 development environment.**
 
-```
+```powershell
 Update-C9EnvironmentMembership -UserArn arn:aws:iam::123456789012:user/AnotherDemoUser -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX -Permission read-only
 ```
 **Output:**

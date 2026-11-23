@@ -29,7 +29,7 @@ With the `UpdateIndex` API, you add custom fields or attributes using the `Docum
 
 The following JSON example uses `DocumentMetadataConfigurationUpdates` to add a field called "Department" to the index.
 
-```
+```json
 "DocumentmetadataConfigurationUpdates": [
    {
        "Name": "Department",
@@ -49,7 +49,7 @@ The following sections include examples for adding custom attributes or fields u
 
 When you use the [BatchPutDocument](https://docs.aws.amazon.com/kendra/latest/APIReference/API_BatchPutDocument.html) API to add a document to your index, you specify custom fields or attributes as part of `Attributes`. You can add multiple fields or attributes when you call the API. You can create up to 500 custom fields or attributes. The following example is a custom field or attribute that adds "Department" to a document.
 
-```
+```json
 "Attributes":
     {
         "Department": "HR",
@@ -64,7 +64,7 @@ When you use an S3 bucket as a data source for your index, you add metadata to t
 
 You specify custom fields or attributes in the `Attributes` JSON structure. You can create up to 500 custom fields or attributes. For example, the following example uses `Attributes` to define three custom fields or attributes and one reserved field.
 
-```
+```json
 "Attributes": {
         "brand": "Amazon Basics",
         "price": 1595,

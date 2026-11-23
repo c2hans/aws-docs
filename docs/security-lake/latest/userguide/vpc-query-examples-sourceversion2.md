@@ -10,7 +10,7 @@ Here are some example queries for Amazon VPC Flow Logs for AWS source version 2:
 
 **Traffic in specific AWS Regions in the last 7 days**
 
-```
+```sql
 SELECT *
     FROM "amazon_security_lake_glue_db_us_east_1"."amazon_security_lake_table_us_east_1_vpc_flow_2_0"
 WHERE time_dt BETWEEN CURRENT_TIMESTAMP - INTERVAL '7' DAY AND CURRENT_TIMESTAMP
@@ -20,7 +20,7 @@ LIMIT 25
 
 **List of activity from source IP `192.0.2.1` and source port `22` in the last 7 days**
 
-```
+```sql
 SELECT *
 FROM "amazon_security_lake_glue_db_us_east_1"."amazon_security_lake_table_us_east_1_vpc_flow_2_0"
 WHERE time_dt BETWEEN CURRENT_TIMESTAMP - INTERVAL '7' DAY AND CURRENT_TIMESTAMP
@@ -31,7 +31,7 @@ LIMIT 25
 
 **Count of distinct destination IP addresses in the last 7 days**
 
-```
+```sql
 SELECT
     COUNT(DISTINCT dst_endpoint.ip) AS "Total"
 FROM "amazon_security_lake_glue_db_us_east_1"."amazon_security_lake_table_us_east_1_vpc_flow_2_0"
@@ -41,7 +41,7 @@ LIMIT 25
 
 **Traffic originating from 198.51.100.0/24 in the last 7 days**
 
-```
+```sql
 SELECT *
 FROM "amazon_security_lake_glue_db_us_east_1"."amazon_security_lake_table_us_east_1_vpc_flow_2_0"
 WHERE time_dt BETWEEN CURRENT_TIMESTAMP - INTERVAL '7' DAY AND CURRENT_TIMESTAMP
@@ -51,7 +51,7 @@ LIMIT 25
 
 **All HTTPS traffic in the last 7 days**
 
-```
+```sql
 SELECT
     dst_endpoint.ip as dst,
     src_endpoint.ip as src,
@@ -69,7 +69,7 @@ LIMIT 25
 
 **Order by packet count for connections destined to port `443` in the last 7 days**
 
-```
+```sql
 SELECT
     traffic.packets,
     dst_endpoint.ip
@@ -85,7 +85,7 @@ LIMIT 25
 
 **All traffic between IP `192.0.2.1` and `192.0.2.2` in the last 7 days**
 
-```
+```sql
 SELECT
     start_time_dt,
     end_time_dt,
@@ -111,7 +111,7 @@ LIMIT 25
 
 **All inbound traffic in the last 7 days**
 
-```
+```sql
 SELECT *
 FROM "amazon_security_lake_glue_db_us_east_1"."amazon_security_lake_table_us_east_1_vpc_flow_2_0"
 WHERE time_dt BETWEEN CURRENT_TIMESTAMP - INTERVAL '7' DAY AND CURRENT_TIMESTAMP
@@ -121,7 +121,7 @@ LIMIT 25
 
 **All outbound traffic in the last 7 days**
 
-```
+```sql
 SELECT *
 FROM "amazon_security_lake_glue_db_us_east_1"."amazon_security_lake_table_us_east_1_vpc_flow_2_0"
 WHERE time_dt BETWEEN CURRENT_TIMESTAMP - INTERVAL '7' DAY AND CURRENT_TIMESTAMP
@@ -131,7 +131,7 @@ LIMIT 25
 
 **All rejected traffic in the last 7 days**
 
-```
+```sql
 SELECT *
 FROM "amazon_security_lake_glue_db_us_east_1"."amazon_security_lake_table_us_east_1_vpc_flow_2_0"
 WHERE time_dt BETWEEN CURRENT_TIMESTAMP - INTERVAL '7' DAY AND CURRENT_TIMESTAMP

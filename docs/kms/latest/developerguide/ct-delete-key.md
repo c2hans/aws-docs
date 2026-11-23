@@ -12,7 +12,7 @@ For an example of the CloudTrail log entry for the `ScheduleKeyDeletion` operati
 
 The following example CloudTrail log entry records a `DeleteKey` operation of a KMS key with key material in AWS KMS.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -45,7 +45,7 @@ The following example CloudTrail log entry records a `DeleteKey` operation of a 
 
 The following CloudTrail log entry records a `DeleteKey` operation of a KMS key in an AWS CloudHSM [custom key store](key-store-overview.md#custom-key-store-overview).
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

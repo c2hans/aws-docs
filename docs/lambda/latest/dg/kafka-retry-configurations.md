@@ -103,7 +103,7 @@ Partial batch response, also known as ReportBatchItemFailures, is a key feature 
 
 To report batch errors, use this JSON schema:
 
-```
+```json
 {
   "batchItemFailures": [
     {
@@ -124,7 +124,7 @@ The following code examples show how to implement partial batch response for Lam
 
 Here is a Python Lambda handler implementation that shows this approach:
 
-```
+```python
 import base64
 from typing import Any, Dict, List
 
@@ -159,7 +159,7 @@ def process_message(data: str) -> None:
 
 Here is a Node.js version:
 
-```
+```javascript
 const { Buffer } = require("buffer");
 
 const handler = async (event) => {
@@ -200,7 +200,7 @@ module.exports = { handler };
 
 Here is a Java version:
 
-```
+```java
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 

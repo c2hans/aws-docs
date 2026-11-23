@@ -30,13 +30,13 @@ To get information about a guardrail, send a [GetGuardrail](https://docs.aws.ama
 
 The following is the request format:
 
-```
+```json
 GET /guardrails/{{guardrailIdentifier}}?guardrailVersion={{guardrailVersion}} HTTP/1.1
 ```
 
 The following is the response format:
 
-```
+```json
 HTTP/1.1 200
 Content-type: application/json
 
@@ -122,7 +122,7 @@ To list information about all your guardrails, send a [ListGuardrails](https://d
 
 The following is the request format:
 
-```
+```json
 GET /guardrails?guardrailIdentifier={{guardrailIdentifier}}&maxResults={{maxResults}}&nextToken={{nextToken}} HTTP/1.1
 ```
 + To list the `DRAFT` version of all your guardrails, don't specify the `guardrailIdentifier` field.
@@ -132,7 +132,7 @@ You can set the maximum number of results to return in a response in the `maxRes
 
 The following is the response format:
 
-```
+```json
 HTTP/1.1 200
 Content-type: application/json
 

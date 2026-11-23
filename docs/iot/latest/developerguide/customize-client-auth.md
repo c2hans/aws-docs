@@ -35,7 +35,7 @@ You need to create a Lambda function that will perform certificate verification 
 
 **Lambda function event example**
 
-```
+```JSON
 {
 	"connectionMetadata": {
 		"id": "string"
@@ -63,7 +63,7 @@ The array of strings that represents the client's X.509 certificate chain.
 
 **Lambda function response example**
 
-```
+```JSON
 {
 	"isAuthenticated": "boolean"
 }

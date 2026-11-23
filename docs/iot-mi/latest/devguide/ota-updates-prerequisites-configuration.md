@@ -19,7 +19,7 @@ To enable OTA updates, you must upload your job documents to an Amazon Simple St
 
 1. Configure the bucket policy to allow AWS IoT Managed Integrations to access your job documents in the bucket:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [

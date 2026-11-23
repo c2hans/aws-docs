@@ -17,7 +17,7 @@ The AWS Marketplace API Reference was restructured. For more information about t
 ## Request syntax
 <a name="ml-update-version-request-syntax"></a>
 
-```
+```json
 POST /StartChangeSet HTTP/1.1
 Content-type: application/json
 
@@ -232,7 +232,7 @@ The change request enters a processing queue, where it undergoes several steps:
    +  For validation errors, see [Change set status and errors](https://docs.aws.amazon.com/marketplace/latest/APIReference/work-with-seller-products.html#seller-product-change-set-errors).
 
 1.  Status monitoring: You can check the status of the request two ways.
-   + Via AWS Marketplace Management Portal
+   + On the product's **Change history** tab in AWS Partner Central
    + Using the `DescribeChangeSet` operation
 
 1.  Completion: When approved, the new version is updated.

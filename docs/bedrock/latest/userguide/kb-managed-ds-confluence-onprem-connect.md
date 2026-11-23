@@ -51,7 +51,7 @@ aws bedrock-agent create-data-source \
 
 The `confluence-onprem-connector.json` file contains the following:
 
-```
+```json
 {
     "type": "MANAGED_KNOWLEDGE_BASE_CONNECTOR",
     "managedKnowledgeBaseConnectorConfiguration": {

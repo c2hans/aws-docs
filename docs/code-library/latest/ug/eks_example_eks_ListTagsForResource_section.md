@@ -132,7 +132,7 @@ For more information, see [Organize Amazon EKS resources with tags](https://docs
 **Tools for PowerShell V4**
 **Example 1: This cmdlet list the tags for an Amazon EKS resource. **
 
-```
+```powershell
 Get-EKSResourceTag -ResourceArn "arn:aws:eks:us-west-2:012345678912:cluster/PROD"
 ```
 **Output:**
@@ -147,7 +147,7 @@ Name EKSPRODCLUSTER
 **Tools for PowerShell V5**
 **Example 1: This cmdlet list the tags for an Amazon EKS resource. **
 
-```
+```powershell
 Get-EKSResourceTag -ResourceArn "arn:aws:eks:us-west-2:012345678912:cluster/PROD"
 ```
 **Output:**

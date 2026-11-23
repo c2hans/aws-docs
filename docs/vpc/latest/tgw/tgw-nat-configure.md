@@ -114,7 +114,7 @@ On a VPC attachment, enabling NAT replaces the propagated route for each VPC CID
 
 To enable NAT on a VPC attachment and set the initial rule set:
 
-```
+```bash
 aws ec2 modify-transit-gateway-attachment-nat-configuration \
     --transit-gateway-attachment-id tgw-attach-0123456789abcdef0 \
     --nat-gateway-support enable \
@@ -140,7 +140,7 @@ Controls whether the transit gateway automatically installs routes (route type `
 
 Omit `--nat-gateway-rules` to change `NatGatewaySupport` or `NatSystemRouteSupport` without changing the rule set. For example, to disable NAT:
 
-```
+```bash
 aws ec2 modify-transit-gateway-attachment-nat-configuration \
     --transit-gateway-attachment-id tgw-attach-0123456789abcdef0 \
     --nat-gateway-support disable
@@ -153,7 +153,7 @@ When you disable NAT, traffic on the attachment is no longer translated. Your ru
 
 The list you supply replaces all existing rules on the attachment, so include every rule you want to keep in each call. Rules that you leave out may show the state `deleting` until they're removed.
 
-```
+```bash
 aws ec2 modify-transit-gateway-attachment-nat-configuration \
     --transit-gateway-attachment-id tgw-attach-0123456789abcdef0 \
     --nat-gateway-rules '[
@@ -166,7 +166,7 @@ aws ec2 modify-transit-gateway-attachment-nat-configuration \
 
 To remove all rules, use `--reset-nat-gateway-rules`. You can't combine it with a non-empty `--nat-gateway-rules`. NAT can't stay enabled with zero rules, so if NAT is enabled, disable it in the same call:
 
-```
+```bash
 aws ec2 modify-transit-gateway-attachment-nat-configuration \
     --transit-gateway-attachment-id tgw-attach-0123456789abcdef0 \
     --nat-gateway-support disable \
@@ -176,14 +176,14 @@ aws ec2 modify-transit-gateway-attachment-nat-configuration \
 ### View NAT configuration
 <a name="tgw-nat-configure-cli-view"></a>
 
-```
+```bash
 aws ec2 get-transit-gateway-attachment-nat-configuration \
     --transit-gateway-attachment-id tgw-attach-0123456789abcdef0
 ```
 
 Example output:
 
-```
+```json
 {
     "TransitGatewayAttachmentId": "tgw-attach-0123456789abcdef0",
     "NatGatewaySupport": "enabled",
@@ -207,7 +207,7 @@ Example output:
 
 To check only whether a change has finished:
 
-```
+```bash
 aws ec2 get-transit-gateway-attachment-nat-configuration \
     --transit-gateway-attachment-id tgw-attach-0123456789abcdef0 \
     --query '{Support:NatGatewaySupport,Rules:NatGatewayRules[].[RuleNumber,State]}'
@@ -220,7 +220,7 @@ Use the `AWS::EC2::TransitGatewayAttachmentNatConfiguration` resource. Each reso
 
 The stack must be deployed in the account that owns the transit gateway.
 
-```
+```yaml
 Resources:
   VpcAttachmentNat:
     Type: AWS::EC2::TransitGatewayAttachmentNatConfiguration

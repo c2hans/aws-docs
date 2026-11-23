@@ -11,7 +11,7 @@ Say hello to Amazon S3 using the AWS SDK for Ruby. The following example display
 
 Copy and paste the following code into a new source file. Name the file `hello-s3.rb`.
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 resource actions.
@@ -51,7 +51,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 
 AWS SDK for Ruby is designed to be modular and is separated by AWS service. After the gem is installed, the `require` statement at the top of your Ruby source file imports the AWS SDK classes and methods for the Amazon S3 service. For a complete list of available AWS service gems, see the [Supported Services](https://github.com/aws/aws-sdk-ruby/#supported-services) table of the AWS SDK for Ruby README file.
 
-```
+```ruby
 require 'aws-sdk-s3'
 ```
 
@@ -89,7 +89,7 @@ C:/Ruby200-x64/lib/ruby/2.0.0/net/http.rb:921:in `connect': SSL_connect returned
 
 To fix this issue, add the following line to your Ruby source file, somewhere before your first AWS call.
 
-```
+```ruby
 Aws.use_bundled_cert!
 ```
 

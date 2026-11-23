@@ -11,7 +11,7 @@ This topic provides sample segment streams for STARTED, SEGMENTS, COMPLETED, and
 + EventType: STARTED
 + Published at the beginning of the conversational analytics session.
 
-```
+```json
 {
     "Version": "1.0.0",
     "Channel": "VOICE",
@@ -28,7 +28,7 @@ This topic provides sample segment streams for STARTED, SEGMENTS, COMPLETED, and
 + EventType: SEGMENTS
 + Published during a conversational analytics session. This event contains a list of segments with analyzed information. The list of segments might include "`Utterance`," "`Transcript`," "`Categories`" or "`PostContactSummary`" segments.
 
-```
+```json
 {
     "Version": "1.0.0",
     "Channel": "VOICE",
@@ -133,7 +133,7 @@ This topic provides sample segment streams for STARTED, SEGMENTS, COMPLETED, and
 + EventType: COMPLETED
 + Published at the end of the conversational analytics session if the analysis completed successfully.
 
-```
+```json
 {
     "Version": "1.0.0",
     "Channel": "VOICE",
@@ -150,7 +150,7 @@ This topic provides sample segment streams for STARTED, SEGMENTS, COMPLETED, and
 + EventType: FAILED
 + Published at the end of the conversational analytics session if the analysis failed.
 
-```
+```json
 {
     "Version": "1.0.0",
     "Channel": "VOICE",

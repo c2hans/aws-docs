@@ -37,7 +37,7 @@ aws iot update-command \
 
 For example, if you deprecated the `{{ACSwitch}}` command that you updated in the example above, the following code shows a sample output of running the command.
 
-```
+```json
 {
     "commandId": "turnOffAc",
     "deprecated": true,
@@ -56,7 +56,7 @@ aws iot get-command --command-id {{<turnOffAC>}}
 
 This command generates a response containing command information, including creation and deprecation timestamps from the last updated field. This helps determine command lifetime and whether to delete or reuse it. The following shows a sample response for the `{{turnOffAc}}` command:
 
-```
+```json
 {
     "commandId": "turnOffAC",
     "commandArn": "arn:aws:iot:us-east-1:123456789012:command/turnOffAC",
@@ -88,7 +88,7 @@ aws iot update-command \
 
 The following code shows a sample output.
 
-```
+```json
 {
     "commandId": "ACSwitch",
     "deprecated": false,

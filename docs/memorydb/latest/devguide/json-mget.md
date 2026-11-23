@@ -8,7 +8,7 @@ Get serialized JSONs at the path from multiple document keys. Return null for no
 
 Syntax
 
-```
+```json
 JSON.MGET <key> [key ...] <path>
 ```
 + key (required) – One or more keys of document type.
@@ -22,7 +22,7 @@ JSON.MGET <key> [key ...] <path>
 
  Enhanced path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 . '{"address":{"street":"21 2nd Street","city":"New York","state":"NY","zipcode":"10021"}}'
 OK
 127.0.0.1:6379> JSON.SET k2 . '{"address":{"street":"5 main Street","city":"Boston","state":"MA","zipcode":"02101"}}'
@@ -37,7 +37,7 @@ OK
 
  Restricted path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 . '{"address":{"street":"21 2nd Street","city":"New York","state":"NY","zipcode":"10021"}}'
 OK
 127.0.0.1:6379> JSON.SET k2 . '{"address":{"street":"5 main Street","city":"Boston","state":"MA","zipcode":"02101"}}'

@@ -48,7 +48,7 @@ aws kendra create-featured-results-set \
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 import pprint

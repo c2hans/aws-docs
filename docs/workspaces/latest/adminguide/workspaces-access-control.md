@@ -50,87 +50,104 @@ The following policy statement grants an IAM user permission to perform WorkSpac
 
 ****
 
-```
+```json
 {
-    "Version":"2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "ds:*",
-                "workspaces:*",
-                "application-autoscaling:DeleteScalingPolicy",
-                "application-autoscaling:DeleteScheduledAction",
-                "application-autoscaling:DeregisterScalableTarget",
-                "application-autoscaling:DescribeScalableTargets",
-                "application-autoscaling:DescribeScalingActivities",
-                "application-autoscaling:DescribeScalingPolicies",
-                "application-autoscaling:DescribeScheduledActions",
-                "application-autoscaling:PutScalingPolicy",
-                "application-autoscaling:PutScheduledAction",
-                "application-autoscaling:RegisterScalableTarget",
-                "cloudwatch:DeleteAlarms",
-                "cloudwatch:DescribeAlarms",
-                "cloudwatch:PutMetricAlarm",
-                "ec2:AssociateRouteTable",
-                "ec2:AttachInternetGateway",
-                "ec2:AuthorizeSecurityGroupEgress",
-                "ec2:AuthorizeSecurityGroupIngress",
-                "ec2:CreateInternetGateway",
-                "ec2:CreateNetworkInterface",
-                "ec2:CreateRoute",
-                "ec2:CreateRouteTable",
-                "ec2:CreateSecurityGroup",
-                "ec2:CreateSubnet",
-                "ec2:CreateTags",
-                "ec2:CreateVpc",
-                "ec2:DeleteNetworkInterface",
-                "ec2:DeleteSecurityGroup",
-                "ec2:DescribeAvailabilityZones",
-                "ec2:DescribeInternetGateways",
-                "ec2:DescribeNetworkInterfaces",
-                "ec2:DescribeRouteTables",
-                "ec2:DescribeSecurityGroups",
-                "ec2:DescribeSubnets",
-                "ec2:DescribeVpcs",
-                "ec2:RevokeSecurityGroupEgress",
-                "ec2:RevokeSecurityGroupIngress",
-                "iam:AttachRolePolicy",
-                "iam:CreatePolicy",
-                "iam:CreateRole",
-                "iam:GetRole",
-                "iam:ListRoles",
-                "iam:PutRolePolicy",
-                "kms:ListAliases",
-                "kms:ListKeys",
-                "secretsmanager:ListSecrets",
-                "tag:GetResources",
-                "sso-directory:SearchUsers",
-                "sso:CreateApplication",
-                "sso:DeleteApplication",
-                "sso:DescribeApplication",
-                "sso:DescribeInstance",
-                "sso:GetApplicationGrant",
-                "sso:ListInstances",
-
-                "sso:PutApplicationAssignmentConfiguration",
-                "sso:PutApplicationAuthenticationMethod",
-                "sso:PutApplicationGrant"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Sid": "iamPassRole",
-            "Effect": "Allow",
-            "Action": "iam:PassRole",
-            "Resource": "*",
-            "Condition": {
-                "StringEquals": {
-                    "iam:PassedToService": "workspaces.amazonaws.com"
-                }
-            }
+  "Version":"2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ds:*",
+        "workspaces:*",
+        "application-autoscaling:DeleteScalingPolicy",
+        "application-autoscaling:DeleteScheduledAction",
+        "application-autoscaling:DeregisterScalableTarget",
+        "application-autoscaling:DescribeScalableTargets",
+        "application-autoscaling:DescribeScalingActivities",
+        "application-autoscaling:DescribeScalingPolicies",
+        "application-autoscaling:DescribeScheduledActions",
+        "application-autoscaling:PutScalingPolicy",
+        "application-autoscaling:PutScheduledAction",
+        "application-autoscaling:RegisterScalableTarget",
+        "cloudwatch:DeleteAlarms",
+        "cloudwatch:DescribeAlarms",
+        "cloudwatch:PutMetricAlarm",
+        "ec2:AssociateRouteTable",
+        "ec2:AttachInternetGateway",
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:CreateInternetGateway",
+        "ec2:CreateNetworkInterface",
+        "ec2:CreateRoute",
+        "ec2:CreateRouteTable",
+        "ec2:CreateSecurityGroup",
+        "ec2:CreateSubnet",
+        "ec2:CreateTags",
+        "ec2:CreateVpc",
+        "ec2:DeleteInternetGateway",
+        "ec2:DeleteNetworkInterface",
+        "ec2:DeleteRoute",
+        "ec2:DeleteRouteTable",
+        "ec2:DeleteSecurityGroup",
+        "ec2:DeleteSubnet",
+        "ec2:DeleteTags",
+        "ec2:DeleteVpc",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeInternetGateways",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeRouteTables",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "ec2:DetachInternetGateway",
+        "ec2:DisassociateRouteTable",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:RevokeSecurityGroupIngress",
+        "iam:AttachRolePolicy",
+        "iam:CreatePolicy",
+        "iam:CreateRole",
+        "iam:GetRole",
+        "iam:ListRoles",
+        "iam:PutRolePolicy",
+        "kms:ListAliases",
+        "kms:ListKeys",
+        "secretsmanager:ListSecrets",
+        "tag:GetResources",
+        "sso-directory:SearchUsers",
+        "sso:CreateInstance",
+        "sso:CreateApplication",
+        "sso:DeleteApplication",
+        "sso:DescribeApplication",
+        "sso:DescribeInstance",
+        "sso:GetApplicationGrant",
+        "sso:ListDirectoryAssociations",
+        "sso:ListInstances",
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:PutApplicationGrant",
+        "identitystore:CreateUser",
+        "identitystore:CreateGroup",
+        "identitystore:ListUsers",
+        "identitystore:ListGroups",
+        "identitystore:DeleteUser",
+        "identitystore:DeleteGroup",
+        "organizations:DescribeOrganization",
+        "organizations:ListDelegatedAdministrators"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "iamPassRole",
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "iam:PassedToService": "workspaces.amazonaws.com"
         }
-    ]
+      }
+    }
+  ]
 }
 ```
 
@@ -152,58 +169,89 @@ The following example policy shows how to allow an IAM user to use Amazon WorkSp
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
     {
       "Effect": "Allow",
       "Action": [
-        "workspaces:*",
         "ds:*",
-        "iam:GetRole",
-        "iam:CreateRole",
-        "iam:PutRolePolicy",
-        "iam:CreatePolicy",
-        "iam:AttachRolePolicy",
-        "iam:ListRoles",
-        "kms:ListAliases",
-        "kms:ListKeys",
-        "ec2:CreateVpc",
-        "ec2:CreateSubnet",
-        "ec2:CreateNetworkInterface",
-        "ec2:CreateInternetGateway",
-        "ec2:CreateRouteTable",
-        "ec2:CreateRoute",
-        "ec2:CreateTags",
-        "ec2:CreateSecurityGroup",
-        "ec2:DescribeInternetGateways",
-        "ec2:DescribeSecurityGroups",
-        "ec2:DescribeRouteTables",
-        "ec2:DescribeVpcs",
-        "ec2:DescribeSubnets",
-        "ec2:DescribeNetworkInterfaces",
-        "ec2:DescribeAvailabilityZones",
-        "ec2:AttachInternetGateway",
+        "workspaces:*",
+        "application-autoscaling:DeleteScalingPolicy",
+        "application-autoscaling:DeleteScheduledAction",
+        "application-autoscaling:DeregisterScalableTarget",
+        "application-autoscaling:DescribeScalableTargets",
+        "application-autoscaling:DescribeScalingActivities",
+        "application-autoscaling:DescribeScalingPolicies",
+        "application-autoscaling:DescribeScheduledActions",
+        "application-autoscaling:PutScalingPolicy",
+        "application-autoscaling:PutScheduledAction",
+        "application-autoscaling:RegisterScalableTarget",
+        "cloudwatch:DeleteAlarms",
+        "cloudwatch:DescribeAlarms",
+        "cloudwatch:PutMetricAlarm",
         "ec2:AssociateRouteTable",
+        "ec2:AttachInternetGateway",
         "ec2:AuthorizeSecurityGroupEgress",
         "ec2:AuthorizeSecurityGroupIngress",
-        "ec2:DeleteSecurityGroup",
+        "ec2:CreateInternetGateway",
+        "ec2:CreateNetworkInterface",
+        "ec2:CreateRoute",
+        "ec2:CreateRouteTable",
+        "ec2:CreateSecurityGroup",
+        "ec2:CreateSubnet",
+        "ec2:CreateTags",
+        "ec2:CreateVpc",
+        "ec2:DeleteInternetGateway",
         "ec2:DeleteNetworkInterface",
+        "ec2:DeleteRoute",
+        "ec2:DeleteRouteTable",
+        "ec2:DeleteSecurityGroup",
+        "ec2:DeleteSubnet",
+        "ec2:DeleteTags",
+        "ec2:DeleteVpc",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeInternetGateways",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeRouteTables",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "ec2:DetachInternetGateway",
+        "ec2:DisassociateRouteTable",
         "ec2:RevokeSecurityGroupEgress",
         "ec2:RevokeSecurityGroupIngress",
+        "iam:AttachRolePolicy",
+        "iam:CreatePolicy",
+        "iam:CreateRole",
+        "iam:GetRole",
+        "iam:ListRoles",
+        "iam:PutRolePolicy",
+        "kms:ListAliases",
+        "kms:ListKeys",
         "secretsmanager:ListSecrets",
+        "tag:GetResources",
         "sso-directory:SearchUsers",
+        "sso:CreateInstance",
         "sso:CreateApplication",
         "sso:DeleteApplication",
         "sso:DescribeApplication",
         "sso:DescribeInstance",
         "sso:GetApplicationGrant",
+        "sso:ListDirectoryAssociations",
         "sso:ListInstances",
-
         "sso:PutApplicationAssignmentConfiguration",
         "sso:PutApplicationAuthenticationMethod",
-        "sso:PutApplicationGrant"
+        "sso:PutApplicationGrant",
+        "identitystore:CreateUser",
+        "identitystore:CreateGroup",
+        "identitystore:ListUsers",
+        "identitystore:ListGroups",
+        "identitystore:DeleteUser",
+        "identitystore:DeleteGroup",
+        "organizations:DescribeOrganization",
+        "organizations:ListDelegatedAdministrators"
       ],
       "Resource": "*"
     },
@@ -237,7 +285,7 @@ This example uses the `aws` partition in the `iam:CreateServiceLinkedRole` resou
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -314,7 +362,7 @@ The following policy statement grants an IAM user permission to perform all Work
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -674,7 +722,7 @@ Before you can register a directory using the API, you must verify that a role n
 
 1. On the **Edit Trust Relationship** page, replace the existing policy statement with the following statement.
 
-   ```
+   ```json
    {
      "Statement": [
        {
@@ -704,7 +752,7 @@ Before users can login using certificate-based authentication, you must verify t
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

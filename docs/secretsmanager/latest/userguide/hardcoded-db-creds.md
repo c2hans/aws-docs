@@ -56,7 +56,7 @@ The first step is to copy the existing hardcoded credentials into a secret in Se
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

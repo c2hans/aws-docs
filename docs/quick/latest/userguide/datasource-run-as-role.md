@@ -97,7 +97,7 @@ Connect your Amazon Redshift data with the run-as role to enhance your data secu
 
 To get started, you need a custom IAM role, which we demonstrate in the following example. The following commands create a sample new role and attach policies that grant permissions to Quick.
 
-```
+```json
 aws iam create-role \
 --role-name TestRedshiftRoleForQuickSight \
 --description "Test Redshift Role For QuickSight" \
@@ -117,7 +117,7 @@ aws iam create-role \
 
 After you identify or create an IAM role to use with each data source, attach the policies with an `attach-role-policy`. If the `redshift:GetClusterCredentialsWithIAM` permission is attached to the role that you want to use, the values for `DatabaseUser` and `DatabaseGroups` are optional.
 
-```
+```json
 aws iam attach-role-policy \
 --role-name TestRedshiftRoleForQuickSight \
 --policy-arn arn:aws:iam:111122223333:policy/service-role/AWSQuickSightRedshiftPolicy
@@ -148,7 +148,7 @@ aws iam attach-role-policy \
 
 The example above creates a data source that uses the `RoleARN`, `DatabaseUser`, and `DatabaseGroups` IAM parameters. If you want to establish the connection only through the IAM `RoleARN` parameter, attach the `redshift:GetClusterCredentialsWithIAM` permission to your role, shown in the example below.
 
-```
+```json
 aws iam attach-role-policy \
 --role-name TestRedshiftRoleForQuickSight \
 --policy-arn arn:aws:iam:111122223333:policy/RedshiftGetClusterCredentialsPolicy1 // redshift-get-cluster-credentials-policy.json {

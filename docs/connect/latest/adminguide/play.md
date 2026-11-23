@@ -96,7 +96,7 @@ You can configure the **Play prompt** block by using the Connect Customer admin 
 
 The following code sample shows how this same configuration would be represented by the [MessageParticipant](https://docs.aws.amazon.com/connect/latest/APIReference/participant-actions-messageparticipant.html) action in the Flow language:
 
-```
+```json
 {
          "Identifier": "12345678-1234-1234-1234-123456789012",
          "Type": "MessageParticipant",
@@ -133,7 +133,7 @@ Store as many prompts as you need in an S3 bucket and then refer to them by spec
 
    The following code sample shows how this same configuration would be represented by the [MessageParticipant](https://docs.aws.amazon.com/connect/latest/APIReference/participant-actions-messageparticipant.html) action in the Flow language:
 
-   ```
+   ```json
    {
          "Identifier": "UniqueIdentifier",
          "Type": "MessageParticipant",
@@ -165,7 +165,7 @@ Store as many prompts as you need in an S3 bucket and then refer to them by spec
 
   The following code sample shows how this same configuration would be represented by the [MessageParticipant](https://docs.aws.amazon.com/connect/latest/APIReference/participant-actions-messageparticipant.html) action in the Flow language:
 
-  ```
+  ```json
   {
            "Identifier": "UniqueIdentifier",
            "Type": "MessageParticipant",
@@ -195,7 +195,7 @@ Store as many prompts as you need in an S3 bucket and then refer to them by spec
 
 The following code sample shows how this same configuration would be represented by the [MessageParticipant](https://docs.aws.amazon.com/connect/latest/APIReference/participant-actions-messageparticipant.html) action in the Flow language:
 
-```
+```json
 {
    "Parameters": {
        "Media": {
@@ -233,7 +233,7 @@ For example, the following image shows a **Play prompt** block that is configure
 
 The following code sample shows how this same configuration would be represented by the [MessageParticipant](https://docs.aws.amazon.com/connect/latest/APIReference/participant-actions-messageparticipant.html) action in the Flow language:
 
-```
+```json
 {
    "Parameters": {
        "Text": "<speak>Thank you for calling</speak>"
@@ -287,7 +287,7 @@ The **Play prompt** block includes a checkbox: **Skip or interrupt this prompt w
 
 In the flow language, this is represented by the `SkipWhenDTMFBufferEnabled` parameter on the `MessageParticipant` action:
 
-```
+```json
 {
     "Identifier": "12345678-1234-1234-1234-123456789012",
     "Type": "MessageParticipant",

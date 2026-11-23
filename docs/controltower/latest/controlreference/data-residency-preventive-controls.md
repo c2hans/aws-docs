@@ -30,7 +30,7 @@ The artifact for this control is the following service control policy (SCP).
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -79,7 +79,7 @@ The artifact for this control is the following service control policy (SCP).
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -124,7 +124,7 @@ The artifact for this control is the following service control policy (SCP).
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

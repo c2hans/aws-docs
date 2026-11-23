@@ -22,7 +22,7 @@ Run `virsh` with `sudo`. The system libvirt instance (`qemu:///system`) authoriz
 
 Save the following as `al2023-demo.xml`. It describes a guest with two vCPUs, 2 GiB of memory, a virtio disk, user-mode networking, and a serial console. Point `source file` at a disk image you have already created, for example a copy of the AL2023 kernel-based virtual machine (KVM) image, or a blank image from `qemu-img create`.
 
-```
+```xml
 <domain type='kvm'>
   <name>al2023-demo</name>
   <memory unit='MiB'>2048</memory>
@@ -144,7 +144,7 @@ Two guest networking modes are practical on AL2023, and they differ in what you 
 
 This is the mode used in the domain XML above. It gives the guest outbound access without a bridge, needs no additional daemon, and is the simplest option for a short-lived test guest.
 
-```
+```xml
 <interface type='user'>
   <backend type='passt'/>
   <model type='virtio'/>
@@ -179,7 +179,7 @@ The `default` network is managed by a separate daemon, `virtnetworkd`, which is 
 
 1. Replace the interface in your domain XML, then redefine and start the guest.
 
-   ```
+   ```xml
    <interface type='network'>
      <source network='default'/>
      <model type='virtio'/>

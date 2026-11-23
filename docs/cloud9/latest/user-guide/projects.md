@@ -108,14 +108,14 @@ For example, you might use the IDE to search for references and definitions from
 
 1. From a terminal session in the IDE for the environment, switch to the directory where you want to create the project. If the directory doesn't exist, create it and then switch to it. For example, the following commands create a directory named `my-demo-project` at the root of the environment (in `~/environment`), and then switch to that directory.
 
-   ```
+   ```sh
    mkdir ~/environment/my-demo-project
    cd ~/environment/my-demo-project
    ```
 
 1. At the root of the directory where you want to create the project, run the TypeScript compiler with the ** `--init` ** option.
 
-   ```
+   ```sh
    tsc --init
    ```
 

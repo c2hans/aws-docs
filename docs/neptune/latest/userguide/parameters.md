@@ -144,7 +144,7 @@ Using a JSON string that you set as the value of the `neptune_autoscaling_config
 
 The JSON string has a structure like this:
 
-```
+```json
 "{
   \"tags\": [
     { \"key\" : \"{{reader tag-0 key}}\", \"value\" : \"{{reader tag-0 value}}\" },

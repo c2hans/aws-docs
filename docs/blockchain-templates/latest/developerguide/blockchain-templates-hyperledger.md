@@ -44,7 +44,7 @@ You specify an EC2 instance profile ARN as one of the parameters when you use th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

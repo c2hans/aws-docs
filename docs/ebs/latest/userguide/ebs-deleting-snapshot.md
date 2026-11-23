@@ -69,7 +69,7 @@ In the following diagram, Volume 1 is shown at three points in time. A snapshot 
 **To delete a snapshot**
 Use the [delete-snapshot](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-snapshot.html) command.
 
-```
+```bash
 aws ec2 delete-snapshot --snapshot-id {{snap-0abcdef1234567890}}
 ```
 
@@ -79,7 +79,7 @@ aws ec2 delete-snapshot --snapshot-id {{snap-0abcdef1234567890}}
 **To delete a snapshot**
 Use the [Remove-EC2Snapshot](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-EC2Snapshot.html) cmdlet.
 
-```
+```powershell
 Remove-EC2Snapshot -SnapshotId {{snap-0abcdef1234567890}}
 ```
 

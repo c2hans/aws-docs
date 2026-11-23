@@ -24,7 +24,7 @@ A protect configuration can be associated to multiple configuration sets, while 
 
 The following example for `SendMediaMessage` has both a configuration set and protect configuration specified in the command. The protect configuration specified in the *ProtectConfigurationId* parameter is used regardless of whether the configuration set has an associated protect configuration or if there is an *account default* protect configuration.
 
-```
+```bsh
 aws pinpoint-sms-voice-v2 --region '{{us-east-1}}' send-media-message --destination-phone-number {{+12065550150}} --origination-identity {{+14255550120}} --message-body '{{text body}}' --media-urls '{{s3://s3-bucket/media_file.jpg}}' --configuration-set-name {{ConfigSetName}} --protect-configuration-id {{ProtectConfigId}}
 ```
 

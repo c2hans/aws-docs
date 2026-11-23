@@ -68,7 +68,7 @@ Before you can create a data grant containing Amazon S3 data access, you must me
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -105,7 +105,7 @@ Cross account KMS keys are also permitted if the `kms:CreateGrant` permission on
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -153,7 +153,7 @@ You can delegate data sharing through AWS Data Exchange to an entire Amazon S3 b
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -231,7 +231,7 @@ Similarly, to scope access to only a single file, a data owner can use the follo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

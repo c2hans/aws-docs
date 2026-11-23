@@ -17,13 +17,13 @@ For more information about webpack, see the [webpack module bundler](https://web
 
 To install the webpack module bundler, you must first have npm, the Node.js package manager, installed. Type the following command to install the webpack CLI and JavaScript module.
 
-```
+```javascript
 npm install webpack
 ```
 
 You may also need to install a webpack plugin that allows it to load JSON files. Type the following command to install the JSON loader plugin.
 
-```
+```javascript
 npm install json-loader
 ```
 
@@ -32,7 +32,7 @@ npm install json-loader
 
 By default, webpack searches for a JavaScript file named `webpack.config.js` in your project's root directory. This file specifies your configuration options. Here is an example of a `webpack.config.js` configuration file.
 
-```
+```javascript
 // Import path for resolving file paths
 var path = require('path');
 module.exports = {
@@ -71,13 +71,13 @@ The configuration in the `json-loader` plugin that was installed earlier specifi
 
 To build an application to use webpack, add the following to the `scripts` object in your `package.json` file.
 
-```
+```javascript
 "build": "webpack"
 ```
 
 Here is an example `package.json` that demonstrates adding webpack.
 
-```
+```javascript
 {
   "name": "aws-webpack",
   "version": "1.0.0",
@@ -101,7 +101,7 @@ Here is an example `package.json` that demonstrates adding webpack.
 
 To build your application, type the following command.
 
-```
+```javascript
 npm run build
 ```
 
@@ -112,7 +112,7 @@ The webpack module bundler then generates the JavaScript file you specified in y
 
 To use the bundle in a browser script, you can incorporate the bundle using a `<script>` tag as shown in the following example.
 
-```
+```javascript
 <!DOCTYPE html>
 <html>
     <head>
@@ -132,7 +132,7 @@ One of the benefits of webpack is that it parses the dependencies in your code a
 
 Consider the following example of the code used to create an Amazon S3 service object.
 
-```
+```javascript
 // Import the AWS SDK
 var AWS = require('aws-sdk');
 
@@ -147,7 +147,7 @@ The `require()` function specifies the entire SDK. A webpack bundle generated wi
 
 Here is what the same code looks like when it includes only the Amazon S3 portion of the SDK.
 
-```
+```javascript
 // Import the Amazon S3 service client
 var S3 = require('aws-sdk/clients/s3');
 
@@ -164,13 +164,13 @@ var s3 = new S3({
 
 You can use webpack to generate bundles that run in Node.js by specifying it as a target in the configuration.
 
-```
+```javascript
 target: "node"
 ```
 
 This is useful when running a Node.js application in an environment where disk space is limited. Here is an example `webpack.config.js` configuration with Node.js specified as the output target.
 
-```
+```javascript
 // Import path for resolving file paths
 var path = require('path');
 module.exports = {

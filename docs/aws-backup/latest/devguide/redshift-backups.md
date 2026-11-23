@@ -73,6 +73,6 @@ To view and modify your Amazon Redshift table backups within the console:
 1. To delete one or more recovery points, check the box(es) you wish to delete. Under the button **Actions**, you can select **Delete**.
 
 ### Restore a Amazon Redshift cluster
-<a name="w2aac17c19c31c11c11c11"></a>
+<a name="w2aac17c19c33c11c11c11"></a>
 
 See how to [Restore a Amazon Redshift cluster](https://docs.aws.amazon.com/aws-backup/latest/devguide/redshift-restores.html) for more information.

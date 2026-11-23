@@ -16,7 +16,7 @@ Use the following information to help you diagnose and fix common issues you mig
 
 If the AWS Management Console tells you that you're not authorized to perform an action, then you must contact your administrator for assistance. Your administrator is the person that provided you with your sign-in credentials. The following example error occurs when the mateojackson user tries to use the console to view details about a fictional my-example-widget resource but does not have the fictional `aws:GetWidget` permissions.
 
-```
+```json
 User: arn:aws:iam::123456789012:user/mateojackson is not authorized to perform: aws:GetWidget on resource: my-example-widget
 ```
 
@@ -31,7 +31,7 @@ Some AWS services allow you to pass an existing role to that service, instead of
 
 The following example error occurs when a user named marymajor tries to use the console to perform an action in AWS Service Catalog. However, the action requires the service to have permissions granted by a service role. Mary does not have permissions to pass the role to the service.
 
-```
+```json
 User: arn:aws:iam::123456789012:user/marymajor is not authorized to perform: iam:PassRole
 ```
 

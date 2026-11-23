@@ -24,7 +24,7 @@ PyTorch’s native checkpointing API is not compatible with `smdistributed.model
 
 **Example 1:** The following sample code shows how to use activation checkpointing when you have a model definition in your script.
 
-```
+```py
 import torch.nn as nn
 import torch.nn.functional as F
 
@@ -51,7 +51,7 @@ class Net(nn.Module):
 
 **Example 2:** The following sample code shows how to use activation checkpointing when you have a sequential model in your script.
 
-```
+```py
 import torch.nn as nn
 from smdistributed.modelparallel.torch.patches.checkpoint import checkpoint_sequential
 
@@ -79,7 +79,7 @@ class Net(nn.Module):
 
 1. Wrap the sequential layer object by `smp.set_activation_checkpointig()`.
 
-```
+```py
 import smdistributed.modelparallel.torch as smp
 from transformers import AutoModelForCausalLM
 

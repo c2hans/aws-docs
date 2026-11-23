@@ -33,7 +33,7 @@ The following code example shows how to get started using IAM.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 
-```
+```javascript
 import { IAMClient, paginateListPolicies } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -83,7 +83,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Create an IAM user and a role that grants permission to list Amazon S3 buckets. The user has rights only to assume the role. After assuming the role, use temporary credentials to list buckets for the account.
 
-```
+```javascript
 import {
   CreateUserCommand,
   GetUserCommand,
@@ -370,7 +370,7 @@ The following code example shows how to use `AttachRolePolicy`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Attach the policy.
 
-```
+```javascript
 import { AttachRolePolicyCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -401,7 +401,7 @@ The following code example shows how to use `CreateAccessKey`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Create the access key.
 
-```
+```javascript
 import { CreateAccessKeyCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -427,7 +427,7 @@ The following code example shows how to use `CreateAccountAlias`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Create the account alias.
 
-```
+```javascript
 import { CreateAccountAliasCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -456,7 +456,7 @@ The following code example shows how to use `CreateGroup`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 
-```
+```javascript
 import { CreateGroupCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -483,7 +483,7 @@ The following code example shows how to use `CreateInstanceProfile`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
   const { InstanceProfile } = await iamClient.send(
     new CreateInstanceProfileCommand({
       InstanceProfileName: NAMES.ssmOnlyInstanceProfileName,
@@ -505,7 +505,7 @@ The following code example shows how to use `CreatePolicy`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Create the policy.
 
-```
+```javascript
 import { CreatePolicyCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -544,7 +544,7 @@ The following code example shows how to use `CreateRole`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Create the role.
 
-```
+```javascript
 import { CreateRoleCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -583,7 +583,7 @@ The following code example shows how to use `CreateSAMLProvider`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 
-```
+```javascript
 import { CreateSAMLProviderCommand, IAMClient } from "@aws-sdk/client-iam";
 import { readFileSync } from "node:fs";
 import * as path from "node:path";
@@ -629,7 +629,7 @@ The following code example shows how to use `CreateServiceLinkedRole`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Create a service-linked role.
 
-```
+```javascript
 import {
   CreateServiceLinkedRoleCommand,
   GetRoleCommand,
@@ -682,7 +682,7 @@ The following code example shows how to use `CreateUser`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Create the user.
 
-```
+```javascript
 import { CreateUserCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -708,7 +708,7 @@ The following code example shows how to use `DeleteAccessKey`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Delete the access key.
 
-```
+```javascript
 import { DeleteAccessKeyCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -739,7 +739,7 @@ The following code example shows how to use `DeleteAccountAlias`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Delete the account alias.
 
-```
+```javascript
 import { DeleteAccountAliasCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -765,7 +765,7 @@ The following code example shows how to use `DeleteGroup`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 
-```
+```javascript
 import { DeleteGroupCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -794,7 +794,7 @@ The following code example shows how to use `DeleteInstanceProfile`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
       const client = new IAMClient({});
       await client.send(
         new DeleteInstanceProfileCommand({
@@ -813,7 +813,7 @@ The following code example shows how to use `DeletePolicy`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam/#code-examples).
 Delete the policy.
 
-```
+```javascript
 import { DeletePolicyCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -838,7 +838,7 @@ The following code example shows how to use `DeleteRole`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Delete the role.
 
-```
+```javascript
 import { DeleteRoleCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -862,7 +862,7 @@ The following code example shows how to use `DeleteRolePolicy`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 
-```
+```javascript
 import { DeleteRolePolicyCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -890,7 +890,7 @@ The following code example shows how to use `DeleteSAMLProvider`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 
-```
+```javascript
 import { DeleteSAMLProviderCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -921,7 +921,7 @@ The following code example shows how to use `DeleteServerCertificate`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Delete a server certificate.
 
-```
+```javascript
 import { DeleteServerCertificateCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -949,7 +949,7 @@ The following code example shows how to use `DeleteServiceLinkedRole`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 
-```
+```javascript
 import { DeleteServiceLinkedRoleCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -974,7 +974,7 @@ The following code example shows how to use `DeleteUser`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Delete the user.
 
-```
+```javascript
 import { DeleteUserCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1000,7 +1000,7 @@ The following code example shows how to use `DetachRolePolicy`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Detach the policy.
 
-```
+```javascript
 import { DetachRolePolicyCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1031,7 +1031,7 @@ The following code example shows how to use `GetAccessKeyLastUsed`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Get the access key.
 
-```
+```javascript
 import { GetAccessKeyLastUsedCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1070,7 +1070,7 @@ The following code example shows how to use `GetAccountPasswordPolicy`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Get the account password policy.
 
-```
+```javascript
 import {
   GetAccountPasswordPolicyCommand,
   IAMClient,
@@ -1097,7 +1097,7 @@ The following code example shows how to use `GetPolicy`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Get the policy.
 
-```
+```javascript
 import { GetPolicyCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1126,7 +1126,7 @@ The following code example shows how to use `GetRole`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Get the role.
 
-```
+```javascript
 import { GetRoleCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1154,7 +1154,7 @@ The following code example shows how to use `GetServerCertificate`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Get a server certificate.
 
-```
+```javascript
 import { GetServerCertificateCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1185,7 +1185,7 @@ The following code example shows how to use `GetServiceLinkedRoleDeletionStatus`
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 
-```
+```javascript
 import {
   GetServiceLinkedRoleDeletionStatusCommand,
   IAMClient,
@@ -1216,7 +1216,7 @@ The following code example shows how to use `ListAccessKeys`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 List the access keys.
 
-```
+```javascript
 import { ListAccessKeysCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1267,7 +1267,7 @@ The following code example shows how to use `ListAccountAliases`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 List the account aliases.
 
-```
+```javascript
 import { ListAccountAliasesCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1311,7 +1311,7 @@ The following code example shows how to use `ListAttachedRolePolicies`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 List the policies that are attached to a role.
 
-```
+```javascript
 import {
   ListAttachedRolePoliciesCommand,
   IAMClient,
@@ -1360,7 +1360,7 @@ The following code example shows how to use `ListGroups`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 List the groups.
 
-```
+```javascript
 import { ListGroupsCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1405,7 +1405,7 @@ The following code example shows how to use `ListPolicies`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 List the policies.
 
-```
+```javascript
 import { ListPoliciesCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1456,7 +1456,7 @@ The following code example shows how to use `ListRolePolicies`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 List the policies.
 
-```
+```javascript
 import { ListRolePoliciesCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1505,7 +1505,7 @@ The following code example shows how to use `ListRoles`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 List the roles.
 
-```
+```javascript
 import { ListRolesCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1553,7 +1553,7 @@ The following code example shows how to use `ListSAMLProviders`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 List the SAML providers.
 
-```
+```javascript
 import { ListSAMLProvidersCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1577,7 +1577,7 @@ The following code example shows how to use `ListServerCertificates`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 List the certificates.
 
-```
+```javascript
 import { ListServerCertificatesCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1616,7 +1616,7 @@ The following code example shows how to use `ListUsers`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 List the users.
 
-```
+```javascript
 import { ListUsersCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1643,7 +1643,7 @@ The following code example shows how to use `PutRolePolicy`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 
-```
+```javascript
 import { PutRolePolicyCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const examplePolicyDocument = JSON.stringify({
@@ -1707,7 +1707,7 @@ The following code example shows how to use `UpdateAccessKey`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Update the access key.
 
-```
+```javascript
 import {
   UpdateAccessKeyCommand,
   IAMClient,
@@ -1743,7 +1743,7 @@ The following code example shows how to use `UpdateServerCertificate`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Update a server certificate.
 
-```
+```javascript
 import { UpdateServerCertificateCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1774,7 +1774,7 @@ The following code example shows how to use `UpdateUser`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Update the user.
 
-```
+```javascript
 import { UpdateUserCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -1804,7 +1804,7 @@ The following code example shows how to use `UploadServerCertificate`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 
-```
+```javascript
 import { UploadServerCertificateCommand, IAMClient } from "@aws-sdk/client-iam";
 import { readFileSync } from "node:fs";
 import { dirnameFromMetaUrl } from "@aws-doc-sdk-examples/lib/utils/util-fs.js";
@@ -1874,7 +1874,7 @@ The following code example shows how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```javascript
 #!/usr/bin/env node
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -1929,7 +1929,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 ```
 Create steps to deploy all of the resources.
 
-```
+```javascript
 import { join } from "node:path";
 import { readFileSync, writeFileSync } from "node:fs";
 import axios from "axios";
@@ -2541,7 +2541,7 @@ export const deploySteps = [
 ```
 Create steps to run the demo.
 
-```
+```javascript
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -3002,7 +3002,7 @@ async function createSsmOnlyInstanceProfile() {
 ```
 Create steps to destroy all of the resources.
 
-```
+```javascript
 import { unlinkSync } from "node:fs";
 
 import { DynamoDBClient, DeleteTableCommand } from "@aws-sdk/client-dynamodb";

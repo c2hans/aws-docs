@@ -27,7 +27,7 @@ When you run the `dnf upgrade` command, the system checks for upgrades in the re
 
 To see the release version your system is locked to, query the `system-release` package. In the following example, the system is locked to the 2027.0.20260803 release:
 
-```
+```bash
 rpm -q system-release
 ```
 
@@ -37,7 +37,7 @@ system-release-2027.0.20260803-1.amzn2027.noarch
 
 In a newly installed system, the override variable file `/etc/dnf/vars/releasever` does not exist, so the system is locked to the installed version of `system-release`. Because the locked release is immutable, running `sudo dnf upgrade` on an up-to-date system makes no changes:
 
-```
+```bash
 sudo dnf upgrade
 ```
 
@@ -49,7 +49,7 @@ Nothing to do.
 
 To upgrade to a specific release version, pass it with the `--releasever` option:
 
-```
+```bash
 sudo dnf upgrade --releasever=2027.0.20260817
 ```
 
@@ -102,7 +102,7 @@ We recommend installing all updates in a new release rather than selecting speci
 
 You might want to install selected packages from a newer release while leaving the system locked to the original release version. First, identify the packages that you want to upgrade:
 
-```
+```bash
 sudo dnf check-update --releasever=latest
 ```
 
@@ -138,7 +138,7 @@ systemd-udev.x86_64                 260.1-11.amzn2027.0.8      amazonlinux
 
 Then upgrade only those packages by naming them. Naming specific packages keeps the `system-release` package, and therefore the version lock, unchanged. The transaction includes related packages that the named packages require at the same version, such as `openssl-fips-provider-latest` here:
 
-```
+```bash
 sudo dnf upgrade --releasever=latest openssl openssl-libs
 ```
 
@@ -170,7 +170,7 @@ Running `sudo dnf upgrade --releasever=latest` without naming packages updates a
 
 Instead of adding `--releasever=latest` to each command, you can *unlock* the system by setting the variable file to `latest`. This reverts AL2027 to the AL2 update model, where every package manager invocation uses the latest release and does not lock to any specific version of the OS:
 
-```
+```bash
 echo latest | sudo tee /etc/dnf/vars/releasever
 ```
 
@@ -183,7 +183,7 @@ Unlocking the package manager with a persistent override removes the ability to 
 
 To restore the default locking behavior, remove the override file:
 
-```
+```bash
 sudo rm /etc/dnf/vars/releasever
 ```
 

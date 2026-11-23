@@ -165,7 +165,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-identity-and-access-management-iam-create-entity-or-policy-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "UseCase": "Use case...",
   "Operation": "Create"
@@ -175,7 +175,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-identity-and-access-management-iam-create-entity-or-policy-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "UseCase": "Use case...",
   "IAM User": [

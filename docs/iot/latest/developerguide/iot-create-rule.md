@@ -65,7 +65,7 @@ aws iot create-topic-rule --rule-name {{myrule}} --topic-rule-payload file://{{m
 
 The following is an example payload file with a rule that inserts all messages sent to the `iot/test` topic into the specified DynamoDB table. The SQL statement filters the messages and the role ARN grants AWS IoT permission to write to the DynamoDB table.
 
-```
+```JSON
 {
 	"sql": "SELECT * FROM 'iot/test'",
 	"ruleDisabled": false,
@@ -87,7 +87,7 @@ The following is an example payload file with a rule that inserts all messages s
 
 The following is an example payload file with a rule that inserts all messages sent to the `iot/test` topic into the specified S3 bucket. The SQL statement filters the messages, and the role ARN grants AWS IoT permission to write to the Amazon S3 bucket.
 
-```
+```JSON
 {
 	"awsIotSqlVersion": "2016-03-23",
 	"sql": "SELECT * FROM 'iot/test'",
@@ -106,7 +106,7 @@ The following is an example payload file with a rule that inserts all messages s
 
 The following is an example payload file with a rule that pushes data to Amazon OpenSearch Service:
 
-```
+```JSON
 {
 	"sql": "SELECT *, timestamp() as timestamp FROM 'iot/test'",
 	"ruleDisabled": false,
@@ -127,7 +127,7 @@ The following is an example payload file with a rule that pushes data to Amazon 
 
 The following is an example payload file with a rule that invokes a Lambda function:
 
-```
+```JSON
 {
 	"sql": "expression",
 	"ruleDisabled": false,
@@ -144,7 +144,7 @@ The following is an example payload file with a rule that invokes a Lambda funct
 
 The following is an example payload file with a rule that publishes to an Amazon SNS topic:
 
-```
+```JSON
 {
 	"sql": "expression",
 	"ruleDisabled": false,
@@ -162,7 +162,7 @@ The following is an example payload file with a rule that publishes to an Amazon
 
 The following is an example payload file with a rule that republishes on a different MQTT topic:
 
-```
+```JSON
 {
 	"sql": "expression",
 	"ruleDisabled": false,
@@ -180,7 +180,7 @@ The following is an example payload file with a rule that republishes on a diffe
 
 The following is an example payload file with a rule that pushes data to an Amazon Data Firehose stream:
 
-```
+```JSON
 {
 	"sql": "SELECT * FROM 'my-topic'",
 	"ruleDisabled": false,
@@ -198,7 +198,7 @@ The following is an example payload file with a rule that pushes data to an Amaz
 
 The following is an example payload file with a rule that starts an execution of a Step Functions state machine.
 
-```
+```JSON
 {
 	"sql": "expression",
 	"ruleDisabled": false,

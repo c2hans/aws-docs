@@ -140,7 +140,7 @@ You must specify the following the [SalesforceConfiguration](https://docs.aws.am
 + **Server URL**—The instance URL for the Salesforce site that you want to index.
 + **Secret Amazon Resource Name (ARN)**—Provide the Amazon Resource Name (ARN) of an Secrets Manager secret that contains the authentication credentials for your Salesforce account. The secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "authenticationUrl": "{{OAUTH endpoint that Amazon Kendra connects to get an OAUTH token}}",
       "consumerKey": "{{Application public key generated when you created your Salesforce application}}",

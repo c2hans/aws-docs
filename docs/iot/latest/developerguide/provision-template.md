@@ -18,7 +18,7 @@ A provisioning template is a JSON document that uses parameters to describe the 
 
 The `Parameters` section declares the parameters used in the `Resources` section. Each parameter declares a name, a type, and an optional default value. The default value is used when the dictionary passed in with the template does not contain a value for the parameter. The `Parameters` section of a template document looks like the following:
 
-```
+```JSON
 {
     "Parameters" : {
         "ThingName" : {
@@ -93,7 +93,7 @@ You can also provision devices without device certificates. For more information
 Examples:
 + Certificate specified with a CSR:
 
-  ```
+  ```JSON
   {
       "certificate" : {
           "Type" : "AWS::IoT::Certificate",
@@ -106,7 +106,7 @@ Examples:
   ```
 + Certificate specified with an existing certificate ID:
 
-  ```
+  ```JSON
   {
       "certificate" : {
           "Type" : "AWS::IoT::Certificate",
@@ -118,7 +118,7 @@ Examples:
   ```
 + Certificate specified with an existing certificate .pem and CA certificate .pem:
 
-  ```
+  ```JSON
   {
       "certificate" : {
           "Type" : "AWS::IoT::Certificate",
@@ -131,7 +131,7 @@ Examples:
   ```
 + Exclusively attach one thing to a principal:
 
-  ```
+  ```JSON
   {
       "certificate" : {
           "Type" : "AWS::IoT::Certificate",
@@ -183,7 +183,7 @@ When you declare a certificate resource, you can specify `OverrideSettings` for 
 
 The following template snippet declares a thing, a certificate, and a policy:
 
-```
+```JSON
 {
     "Resources" : {
         "thing" : {
@@ -245,7 +245,7 @@ The following JSON file is an example of a complete provisioning template that s
 
 (The `PolicyDocument` field value must be a JSON object specified as an escaped string.)
 
-```
+```JSON
 {
     "Parameters" : {
         "ThingName" : {
@@ -295,7 +295,7 @@ The following JSON file is an example of a complete provisioning template that s
 
 The following JSON file is an example of a complete provisioning template that specifies an existing certificate with a certificate ID:
 
-```
+```JSON
 {
    "Parameters":{
       "AWS::IoT::Certificate::CommonName":{
@@ -382,7 +382,7 @@ You cannot include parameters, pseudo parameters, or call intrinsic functions in
 
 The device configuration section contains arbitrary data that you want to send to your devices when provisioning. For example:
 
-```
+```json
 {
     "DeviceConfiguration": {
         "Foo":"Bar"
@@ -418,7 +418,7 @@ Substitutes variables in an input string with values that you specify. You can u
 ### Template example for fleet provisioning
 <a name="fleet-provisioning-example"></a>
 
-```
+```json
 {
     "Parameters" : {
         "ThingName" : {

@@ -129,7 +129,7 @@ aws globalaccelerator list-endpoint-groups
          --region us-west-2
 ```
 
-```
+```json
 {
     "EndpointGroups": [
         {

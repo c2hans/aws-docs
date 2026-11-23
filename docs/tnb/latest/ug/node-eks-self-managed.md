@@ -15,7 +15,7 @@ AWS TNB supports Amazon EKS self-managed nodes to automate the provisioning and 
 ## Syntax
 <a name="node-eks-self-managed-node-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Compute.EKSSelfManagedNode:
   capabilities:
     compute:
@@ -167,7 +167,7 @@ Type: List
 ## Example
 <a name="node-eks-self-managed-node-example"></a>
 
-```
+```yaml
 SampleEKSSelfManagedNode:
   type: tosca.nodes.AWS.Compute.EKSSelfManagedNode
   capabilities:

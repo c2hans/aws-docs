@@ -8,13 +8,13 @@ After the transformer has run, confirm that the resulting indexes and mappings o
 
 List the indexes that were created on the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection:
 
-```
+```bash
 console clusters cat-indices --refresh
 ```
 
 Then inspect the mapping of a specific index to confirm the types were routed, merged, or dropped as expected:
 
-```
+```bash
 console clusters curl target /<index>/_mapping?pretty
 ```
 

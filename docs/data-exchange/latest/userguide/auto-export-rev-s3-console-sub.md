@@ -41,7 +41,7 @@ If your S3 bucket has a bucket policy, complete the following procedure to allow
 
 1. Copy the following statement and paste it at the end of the statement list.
 
-   ```
+   ```json
        {
          "Effect": "Allow",
          "Principal": {
@@ -84,7 +84,7 @@ If your S3 bucket does not have a bucket policy, complete the following procedur
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

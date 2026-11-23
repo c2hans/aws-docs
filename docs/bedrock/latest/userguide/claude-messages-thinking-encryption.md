@@ -29,7 +29,7 @@ When building customer-facing applications that use extended thinking with Claud
 
 Here’s an example showing both normal and redacted thinking blocks:
 
-```
+```JSON
 {
     "content": [
         {

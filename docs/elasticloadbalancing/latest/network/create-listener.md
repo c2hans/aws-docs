@@ -49,6 +49,8 @@ You configure a listener with a protocol and a port for connections from clients
    + If you imported a certificate using IAM, choose **From IAM**, and then choose the certificate from **Certificate (from IAM)**.
    + If you have a certificate, choose **Import certificate**. Choose either **Import to ACM** or **Import to IAM**. For **Certificate private key**, copy and paste the contents of the private key file (PEM-encoded). For **Certificate body**, copy and paste the contents of the public key certificate file (PEM-encoded). For **Certificate Chain**, copy and paste the contents of the certificate chain file (PEM-encoded), unless you are using a self-signed certificate and it's not important that browsers implicitly accept the certificate.
 
+1. [TLS listeners] (Optional) To require connecting clients to present a certificate, choose **Mutual authentication (mTLS)** under **Client certificate handling**, and then choose a trust store. For more information, see [Authenticate clients using mutual TLS for Network Load Balancers](mutual-authentication.md).
+
 1. [TLS listeners] For **ALPN policy**, choose a policy to enable ALPN or choose **None** to disable ALPN. For more information, see [ALPN policies](load-balancer-listeners.md#alpn-policies).
 
 1. (Optional) To add tags, expand **Listener tags**. Choose **Add new tag** and enter the tag key and tag value.
@@ -106,6 +108,8 @@ aws elbv2 create-listener \
     --default-actions Type=forward,TargetGroupArn={{target-group-arn}}
 ```
 
+You can enable mutual authentication by adding `--mutual-authentication "Mode=verify,TrustStoreArn={{trust-store-arn}}"` to the preceding command. Because mutual TLS verify mode does not support session resumption, also set `--ssl-policy` to a non-resumption policy, such as `ELBSecurityPolicy-TLS13-1-2-2021-06`.
+
 **To add a UDP listener**
 Use the [create-listener](https://docs.aws.amazon.com/cli/latest/reference/elbv2/create-listener.html) command specifying the UDP protocol.
 
@@ -134,7 +138,7 @@ aws elbv2 create-listener \
 **To add a TCP listener**
 Define a resource of type [AWS::ElasticLoadBalancingV2::Listener](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-listener.html) using the TCP protocol.
 
-```
+```yaml
 Resources:
   myTCPListener:
     Type: 'AWS::ElasticLoadBalancingV2::Listener'
@@ -150,7 +154,7 @@ Resources:
 **To add a TCP listener with multiple target groups**
 Define a resource of type [AWS::ElasticLoadBalancingV2::Listener](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-listener.html) using the TCP protocol.
 
-```
+```yaml
 Resources:
     myTCPListener:
         Type: 'AWS::ElasticLoadBalancingV2::Listener'
@@ -173,7 +177,7 @@ Resources:
 **To add a TLS listener**
 Define a resource of type [AWS::ElasticLoadBalancingV2::Listener](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-listener.html) using the TLS protocol.
 
-```
+```yaml
 Resources:
   myTLSListener:
     Type: 'AWS::ElasticLoadBalancingV2::Listener'
@@ -192,7 +196,7 @@ Resources:
 **To add a UDP listener**
 Define a resource of type [AWS::ElasticLoadBalancingV2::Listener](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-listener.html) using the UDP protocol.
 
-```
+```yaml
 Resources:
   myUDPListener:
     Type: 'AWS::ElasticLoadBalancingV2::Listener'
@@ -208,7 +212,7 @@ Resources:
 **To add a QUIC listener**
 Define a resource of type [AWS::ElasticLoadBalancingV2::Listener](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-listener.html) using the QUIC protocol.
 
-```
+```yaml
 Resources:
   myQUICListener:
     Type: 'AWS::ElasticLoadBalancingV2::Listener'

@@ -42,7 +42,7 @@ To manage task governance, use the sample policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -85,7 +85,7 @@ To grant permissions to manage Amazon CloudWatch Observability Amazon EKS and vi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -132,7 +132,7 @@ aws eks create-addon --cluster-name {{cluster-name}}
 
 Below is an example of the JSON of the configuration values:
 
-```
+```json
 {
     "agent": {
         "config": {
@@ -168,7 +168,7 @@ Below is an example of the JSON of the configuration values:
 
 1. Include the following JSON, Configuration values:
 
-   ```
+   ```json
    {
        "agent": {
            "config": {

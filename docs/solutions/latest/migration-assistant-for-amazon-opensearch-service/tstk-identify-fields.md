@@ -6,19 +6,19 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 Before you migrate, inspect the source cluster mappings so you know which fields will be converted and which target type each will receive. From the Migration Console pod (`migration-console-0`), query the source `_mapping` API:
 
-```
+```bash
 console clusters curl source /<INDEX>/_mapping?pretty
 ```
 
 To review mappings across every index at once:
 
-```
+```bash
 console clusters curl source /_mapping?pretty
 ```
 
 In the output, look for fields whose `type` is `string` and note their `index` setting. For example, the following source field becomes `text` because it is analyzed:
 
-```
+```json
 {
   "title": {
     "type": "string",
@@ -29,7 +29,7 @@ In the output, look for fields whose `type` is `string` and note their `index` s
 
 The next field becomes `keyword` because it is explicitly not analyzed:
 
-```
+```json
 {
   "status_code": {
     "type": "string",

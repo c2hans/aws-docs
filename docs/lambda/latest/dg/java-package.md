@@ -41,7 +41,7 @@ Add these libraries to your build definition as follows:
 ------
 #### [ Gradle ]
 
-```
+```groovy
 dependencies {
     implementation 'com.amazonaws:aws-lambda-java-core:1.2.2'
     implementation 'com.amazonaws:aws-lambda-java-events:3.11.1'
@@ -53,7 +53,7 @@ dependencies {
 ------
 #### [ Maven ]
 
-```
+```xml
   <dependencies>
     <dependency>
       <groupId>com.amazonaws</groupId>
@@ -140,7 +140,7 @@ To build a deployment package with Maven, use the [Maven Shade plugin](https://m
 
 **Example pom.xml – Plugin configuration**
 
-```
+```xml
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
@@ -194,7 +194,7 @@ If you use the appender library (`aws-lambda-java-log4j2`), you must also config
 
 **Example pom.xml – Plugin configuration with Log4j 2 appender**
 
-```
+```xml
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
@@ -300,7 +300,7 @@ If you upload your .zip or JAR file from an Amazon S3 bucket using the AWS CLI, 
 
  You must also specify the location of your .zip or JAR file. If your .zip or JAR file is located in a folder on your local build machine, use the `--zip-file` option to specify the file path, as shown in the following example command.
 
-```
+```bash
 aws lambda create-function --function-name myFunction \
 --runtime java25 --handler example.handler \
 --role arn:aws:iam::123456789012:role/service-role/my-lambda-role \
@@ -309,7 +309,7 @@ aws lambda create-function --function-name myFunction \
 
  To specify the location of .zip file in an Amazon S3 bucket, use the `--code` option as shown in the following example command. You only need to use the `S3ObjectVersion` parameter for versioned objects.
 
-```
+```bash
 aws lambda create-function --function-name myFunction \
 --runtime java25 --handler example.handler \
 --role arn:aws:iam::123456789012:role/service-role/my-lambda-role \
@@ -318,14 +318,14 @@ aws lambda create-function --function-name myFunction \
 
  To update an existing function using the CLI, you specify the the name of your function using the `--function-name` parameter. You must also specify the location of the .zip file you want to use to update your function code. If your .zip file is located in a folder on your local build machine, use the `--zip-file` option to specify the file path, as shown in the following example command.
 
-```
+```bash
 aws lambda update-function-code --function-name myFunction \
 --zip-file fileb://myFunction.zip
 ```
 
  To specify the location of .zip file in an Amazon S3 bucket, use the `--s3-bucket` and `--s3-key` options as shown in the following example command. You only need to use the `--s3-object-version` parameter for versioned objects.
 
-```
+```bash
 aws lambda update-function-code --function-name myFunction \
 --s3-bucket amzn-s3-demo-bucket --s3-key myFileName.zip --s3-object-version myObject Version
 ```
@@ -337,7 +337,7 @@ You can use AWS SAM to automate deployments of your function code, configuration
 
 **Example template.yml**
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: An AWS Lambda application that calls the Lambda API.

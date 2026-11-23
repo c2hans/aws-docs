@@ -15,7 +15,7 @@ The maximum numbers of built-in profiler rules that you can attach to a training
 **Important**
 To use the new Debugger features, you need to upgrade the SageMaker Python SDK and the SMDebug client library. In your iPython kernel, Jupyter notebook, or JupyterLab environment, run the following code to install the latest versions of the libraries and restart the kernel.
 
-```
+```py
 import sys
 import IPython
 !{sys.executable} -m pip install -U sagemaker smdebug
@@ -54,7 +54,7 @@ See also [March 16, 2023](debugger-release-notes.md#debugger-release-notes-20230
 
 **To use the built-in rules with default parameter values** – use the following configuration format:
 
-```
+```py
 from sagemaker.core.debugger import Rule, ProfilerRule, rule_configs
 
 rules = [
@@ -67,7 +67,7 @@ rules = [
 
 **To use the built-in rules with customizing the parameter values** – use the following configuration format:
 
-```
+```py
 from sagemaker.core.debugger import Rule, ProfilerRule, rule_configs
 
 rules = [
@@ -91,7 +91,7 @@ Sample rule configuration codes are provided for each built-in rule below the pa
 
 The ProfilerReport rule invokes all of the built-in rules for monitoring and profiling. It creates a profiling report and updates when the individual rules are triggered. You can download a comprehensive profiling report while a training job is running or after the training job is complete. You can adjust the rule parameter values to customize sensitivity of the built-in monitoring and profiling rules. The following example code shows the basic format to adjust the built-in rule parameters through the ProfilerReport rule.
 
-```
+```py
 rules=[
     ProfilerRule.sagemaker(
         rule_configs.ProfilerReport(
@@ -103,13 +103,13 @@ rules=[
 
 If you trigger this ProfilerReport rule without any customized parameter as shown in the following example code, then the ProfilerReport rule triggers all of the built-in rules for monitoring and profiling with their default parameter values.
 
-```
+```py
 rules=[ProfilerRule.sagemaker(rule_configs.ProfilerReport())]
 ```
 
 The following example code shows how to specify and adjust the CPUBottleneck rule's `cpu_threshold` parameter and the IOBottleneck rule's `threshold` parameter.
 
-```
+```py
 rules=[
     ProfilerRule.sagemaker(
         rule_configs.ProfilerReport(

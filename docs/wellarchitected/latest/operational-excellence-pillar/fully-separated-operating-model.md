@@ -14,6 +14,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Traditional model diagram](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/images/full-seperate.png)
 
+*Traditional model*
+
  Historically, organizations embraced frameworks such as ITIL or standards like ISO and shaped their operational activties around them, which often resulted in a fully-separated topology. In this model, activities in each quadrant are performed by a separate team. Work is passed between teams through mechanisms such as work requests, queues, tickets, or by using an IT service management (ITSM) system.
 
  The transition of tasks to or between teams increases complexity, and creates bottlenecks and delays. Requests may be delayed until they are a priority. Defects identified late may require significant rework and may have to pass through the same teams and their functions once again. If there are incidents that require action by engineering teams, their responses are delayed by the hand off activity.

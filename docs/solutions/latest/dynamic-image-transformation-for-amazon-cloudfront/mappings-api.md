@@ -8,13 +8,13 @@ Manage path-based or host-header based routing to map requests to specific origi
 
  **List Mappings**
 
-```
+```http
 GET /mappings?nextToken={token}
 ```
 
 Response:
 
-```
+```json
 {
   "items": [
     {
@@ -36,7 +36,7 @@ Response:
 
  **Create Path Mapping**
 
-```
+```http
 POST /mappings
 {
   "mappingName": "mobile-path-mapping",
@@ -51,7 +51,7 @@ POST /mappings
 
  **Create Host Header Mapping**
 
-```
+```http
 POST /mappings
 {
   "mappingName": "subdomain-mapping",
@@ -66,13 +66,13 @@ POST /mappings
 
  **Get Mapping**
 
-```
+```http
 GET /mappings/{mappingId}
 ```
 
  **Update Mapping**
 
-```
+```http
 PUT /mappings/{mappingId}
 {
   "mappingName": "updated-mapping-name",
@@ -83,6 +83,6 @@ PUT /mappings/{mappingId}
 
  **Delete Mapping**
 
-```
+```http
 DELETE /mappings/{mappingId}
 ```

@@ -29,7 +29,7 @@ Your S3 VPC endpoint requires a policy that grants sufficient access for cluster
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

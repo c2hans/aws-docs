@@ -13,7 +13,7 @@ The following examples show how to use the [AWS CLI](https://docs.aws.amazon.com
 
 To use the Amazon Pinpoint REST API to display all the tags that are associated with a specific resource, send a GET request to the [Tags](https://docs.aws.amazon.com/pinpoint/latest/apireference/rest-api-tags.html) URI and include the Amazon Resource Name (ARN) of the resource in the URI. The ARN should be URL encoded. For example, the following request retrieves all the tags that are associated with a specified campaign ({{resource-arn}}):
 
-```
+```HTTP
 GET /v1/tags/{{resource-arn}} HTTP/1.1
 Host: pinpoint.us-east-1.amazonaws.com
 Content-Type: application/json
@@ -25,7 +25,7 @@ The JSON response to the request includes a `tags` object. The `tags` object lis
 
 To display all the tags that are associated with more than one resource of the same type, send a GET request to the appropriate URI for that type of resource. For example, the following request retrieves information about all the campaigns in the specified project ({{application-id}}):
 
-```
+```HTTP
 GET /v1/apps/{{application-id}}/campaigns HTTP/1.1
 Host: pinpoint.us-east-1.amazonaws.com
 Content-Type: application/json
@@ -43,7 +43,7 @@ The JSON response to the request lists all the campaigns in the project. The `ta
 ------
 #### [ Linux, macOS, or Unix ]
 
-```
+```shell
 $ aws pinpoint list-tags-for-resource \
   --resource-arn {{resource-arn}}
 ```
@@ -51,7 +51,7 @@ $ aws pinpoint list-tags-for-resource \
 ------
 #### [ Windows Command Prompt ]
 
-```
+```cmd
 C:\> aws pinpoint list-tags-for-resource ^
      --resource-arn {{resource-arn}}
 ```
@@ -63,7 +63,7 @@ To display a list of all the Amazon Pinpoint resources that have tags, and all t
 ------
 #### [ Linux, macOS, or Unix ]
 
-```
+```shell
 $ aws resourcegroupstaggingapi get-resources \
      --resource-type-filters "mobiletargeting"
 ```
@@ -71,7 +71,7 @@ $ aws resourcegroupstaggingapi get-resources \
 ------
 #### [ Windows Command Prompt ]
 
-```
+```cmd
 C:\> aws resourcegroupstaggingapi get-resources ^
      --resource-type-filters "mobiletargeting"
 ```

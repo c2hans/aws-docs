@@ -61,7 +61,7 @@ AWS Batch does not allow you to edit the AWSServiceRoleForBatch service-linked r
 
 Add the following statement to the permissions policy. This allows the IAM entity to edit the description of a service-linked role.
 
-```
+```JSON
 {
     "Effect": "Allow",
     "Action": [
@@ -81,7 +81,7 @@ If you no longer need to use a feature or service that requires a service-linked
 
 Add the following statement to the permissions policy. This allows the IAM entity to delete a service-linked role.
 
-```
+```JSON
 {
     "Effect": "Allow",
     "Action": [

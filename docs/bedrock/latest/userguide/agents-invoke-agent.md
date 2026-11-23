@@ -45,7 +45,7 @@ The following Python example shows how to call the [InvokeAgent](https://docs.aw
 
 1. Run the following code. Update the value of `agent_id` to your agent's ID and the value of `alias_id` to the alias ID of the agent. To stream the response from the agent, change the value of `streamFinalResponse` to `True`. You can also change the guardrail interval by changing the value of `applyGuardrailInterval`.
 
-   ```
+   ```python
    import boto3
    import logging
 

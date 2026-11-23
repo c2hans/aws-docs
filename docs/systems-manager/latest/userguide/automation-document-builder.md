@@ -218,7 +218,7 @@ This is not required for PowerShell.
 ------
 #### [ Python ]
 
-      ```
+      ```py
       def launch_instance(events, context):
             import boto3
             ec2 = boto3.client('ec2')
@@ -241,7 +241,7 @@ This is not required for PowerShell.
 ------
 #### [ PowerShell ]
 
-      ```
+      ```ps
       Install-Module AWS.Tools.EC2 -Force
           Import-Module AWS.Tools.EC2
 
@@ -276,7 +276,7 @@ This is not required for PowerShell.
 
    1. For **Input name**, choose **InputPayload**. For **Input value**, enter the following YAML data.
 
-      ```
+      ```yaml
       image_id: "{{ imageId }}"
           tag_value: "{{ tagValue }}"
           instance_type: "{{ instanceType }}"
@@ -314,7 +314,7 @@ This is not required for PowerShell.
 ------
 #### [ Python ]
 
-      ```
+      ```py
       def poll_instance(events, context):
             import boto3
             import time
@@ -350,7 +350,7 @@ This is not required for PowerShell.
 ------
 #### [ PowerShell ]
 
-      ```
+      ```ps
           Install-Module AWS.Tools.EC2 -Force
 
           $inputPayload = $env:InputPayload | ConvertFrom-Json

@@ -8,7 +8,7 @@ After you end a session, you can delete it with the [DeleteSession](https://docs
 
 The following example code shows how to delete a session with the AWS SDK for Python (Boto3).
 
-```
+```python
 def delete_session(session_identifier):
 try:
     client.delete_session(

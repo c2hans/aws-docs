@@ -36,7 +36,7 @@ To use the Amazon VPC console, in the AWS navigation bar, choose the AWS Region 
 
 To use the AWS CLI or the AWS CloudShell, run the Amazon EC2** `describe-vpcs` ** command, for example, as follows.
 
-```
+```sh
 aws ec2 describe-vpcs --output table --query 'Vpcs[*].VpcId' --region us-east-2
 ```
 
@@ -51,7 +51,7 @@ To use the Amazon VPC console, choose **Your VPCs** in the navigation pane. Note
 
 To use the AWS CLI or the `aws-shell`, run the Amazon EC2** `describe-subnets` ** command, for example, as follows.
 
-```
+```sh
 aws ec2 describe-subnets --output table --query 'Subnets[*].[SubnetId,VpcId]' --region us-east-2
 ```
 
@@ -70,7 +70,7 @@ To use the Amazon VPC console, choose **Subnets** in the navigation pane. Select
 
 To use the AWS CLI or the `aws-shell`, run the Amazon EC2** `describe-route-tables` ** command.
 
-```
+```sh
 aws ec2 describe-route-tables --output table --query 'RouteTables[*].Routes[*].{GatewayIds:GatewayId}' --region us-east-2 --filters Name=association.subnet-id,Values=subnet-12a3456b
 ```
 
@@ -80,7 +80,7 @@ In the output, if there's at least one result that starts with `igw-`, the subne
 
 In the output, if there are no results, the route table might be associated with the VPC instead of the subnet. To confirm this, run the Amazon EC2** `describe-route-tables` ** command for the VPC related to the subnet instead of the subnet itself, for example, as follows.
 
-```
+```sh
 aws ec2 describe-route-tables --output table --query 'RouteTables[*].Routes[*].{GatewayIds:GatewayId}' --region us-east-1 --filters Name=vpc-id,Values=vpc-1234ab56
 ```
 
@@ -95,7 +95,7 @@ To use the Amazon VPC console, choose **Internet Gateways** in the navigation pa
 
 To use the AWS CLI or the `aws-shell` to see the settings, run the Amazon EC2** `describe-internet-gateways` ** command.
 
-```
+```sh
 aws ec2 describe-internet-gateways --output table --region us-east-2 --internet-gateway-id igw-1234ab5c
 ```
 
@@ -108,7 +108,7 @@ To use the Amazon VPC console, choose **Internet Gateways** in the navigation pa
 
 To use the AWS CLI or the `aws-shell`, run the Amazon EC2** `create-internet-gateway` ** command.
 
-```
+```sh
 aws ec2 create-internet-gateway --output text --query 'InternetGateway.InternetGatewayId' --region us-east-2
 ```
 
@@ -123,7 +123,7 @@ To use the Amazon VPC console, choose **Internet Gateways** in the navigation pa
 
 To use the AWS CLI or the `aws-shell`, run the Amazon EC2** `attach-internet-gateway` ** command, for example, as follows.
 
-```
+```sh
 aws ec2 attach-internet-gateway --region us-east-2 --internet-gateway-id igw-a1b2cdef --vpc-id vpc-1234ab56
 ```
 
@@ -136,7 +136,7 @@ To use the Amazon VPC console, choose **Subnets** in the navigation pane. Select
 
 To use the AWS CLI or the `aws-shell`, run the Amazon EC2** `describe-route-tables` ** command.
 
-```
+```sh
 aws ec2 describe-route-tables --output table --query 'RouteTables[*].Associations[*].{RouteTableIds:RouteTableId}' --region us-east-2 --filters Name=association.subnet-id,Values=subnet-12a3456b
 ```
 
@@ -146,7 +146,7 @@ If there are values in the output, the public subnet has at least one route tabl
 
 In the output, if there are no results, the route table might be associated with the VPC instead of the subnet. To confirm this, run the Amazon EC2** `describe-route-tables` ** command for the subnet's related VPC instead of the subnet itself, for example, as follows.
 
-```
+```sh
 aws ec2 describe-route-tables --output table --query 'RouteTables[*].Associations[*].{RouteTableIds:RouteTableId}' --region us-east-2 --filters Name=vpc-id,Values=vpc-1234ab56
 ```
 
@@ -161,7 +161,7 @@ To use the Amazon VPC console, choose **Route Tables** in the navigation pane. S
 
 To use the AWS CLI or the `aws-shell`, run the Amazon EC2** `associate-route-table` ** command, for example, as follows.
 
-```
+```sh
 aws ec2 associate-route-table --region us-east-2 --subnet-id subnet-12a3456b --route-table-id rtb-ab12cde3
 ```
 
@@ -174,7 +174,7 @@ To use the Amazon VPC console, choose **Route Tables** in the navigation pane. C
 
 To use the AWS CLI or the `aws-shell`, run the Amazon EC2** `create-route-table` ** command, for example, as follows.
 
-```
+```sh
 aws ec2 create-route-table --output text --query 'RouteTable.RouteTableId' --region us-east-2 --vpc-id vpc-1234ab56
 ```
 
@@ -189,7 +189,7 @@ To use the Amazon VPC console, choose **Route Tables** in the navigation pane. S
 
 To use the AWS CLI or the `aws-shell` to see the settings, run the Amazon EC2** `describe-route-tables` ** command, for example, as follows.
 
-```
+```sh
 aws ec2 describe-route-tables --output table --region us-east-2 --route-table-ids rtb-ab12cde3
 ```
 
@@ -212,7 +212,7 @@ To use the Amazon VPC console, choose **Security Groups** in the navigation pane
 
 To use the AWS CLI or the `aws-shell`, run the Amazon EC2** `describe-security-groups` ** command.
 
-```
+```sh
 aws ec2 describe-security-groups --output table --query 'SecurityGroups[*].GroupId' --region us-east-2 --filters Name=vpc-id,Values=vpc-1234ab56
 ```
 
@@ -227,7 +227,7 @@ To use the Amazon EC2 console, expand **Instances** in the navigation pane, and 
 
 To use the AWS CLI or the `aws-shell`, run the Amazon EC2** `describe-security-groups` ** command, for example, as follows.
 
-```
+```sh
 aws ec2 describe-instances --output table --query 'Reservations[*].Instances[*].NetworkInterfaces[*].Groups[*].GroupId' --region us-east-2 --instance-ids i-12a3c456d789e0123
 ```
 
@@ -242,7 +242,7 @@ To use the Amazon VPC console, choose **Security Groups** in the navigation pane
 
 To use the AWS CLI or the `aws-shell` to see the settings, run the Amazon EC2** `describe-security-groups` ** command, for example, as follows.
 
-```
+```sh
 aws ec2 describe-security-groups --output table --region us-east-2 --group-ids sg-12a3b456
 ```
 
@@ -255,7 +255,7 @@ To use the Amazon EC2 console, expand **Instances** in the navigation pane, and 
 
 To use the AWS CLI or the `aws-shell` to see the settings, run the Amazon EC2** `describe-security-groups` ** command, for example, as follows.
 
-```
+```sh
 aws ec2 describe-security-groups --output table --region us-east-2 --group-ids sg-12a3b456
 ```
 
@@ -322,7 +322,7 @@ To use the Amazon VPC or Amazon EC2 consoles, do one of the following actions:
 
 To use the AWS CLI or the `aws-shell`, run the Amazon EC2** `create-security-group` ** command, for example, as follows.
 
-```
+```sh
 aws ec2 create-security-group --region us-east-2 --vpc-id vpc-1234ab56
 ```
 
@@ -335,7 +335,7 @@ To use the Amazon VPC console, choose **Your VPCs** in the navigation pane. Choo
 
 To use the AWS CLI or the `aws-shell`, run the Amazon EC2 **`describe-network-acls`** command.
 
-```
+```sh
 aws ec2 describe-network-acls --output table --query 'NetworkAcls[*].Associations[*].NetworkAclId' --region us-east-2 --filters Name=vpc-id,Values=vpc-1234ab56
 ```
 
@@ -350,7 +350,7 @@ To use the Amazon VPC console, choose **Network ACLs** in the navigation pane. I
 
 To use the AWS CLI or the `aws-shell`, run the Amazon EC2** `describe-network-acls` ** command.
 
-```
+```sh
 aws ec2 describe-network-acls --output table --query 'NetworkAcls[*].Associations[*].NetworkAclId' --region us-east-2 --filters Name=vpc-id,Values=vpc-1234ab56
 ```
 
@@ -365,7 +365,7 @@ To use the Amazon VPC console, choose **Network ACLs** in the navigation pane. C
 
 To use the AWS CLI or the `aws-shell` to see the settings, run the Amazon EC2** `describe-network-acls` ** command.
 
-```
+```sh
 aws ec2 describe-network-acls --output table --region us-east-2 --network-acl-ids acl-1234ab56
 ```
 
@@ -378,7 +378,7 @@ To use the Amazon VPC console, choose **Network ACLs** in the navigation pane. C
 
 To use the AWS CLI or the `aws-shell`, run the Amazon EC2 **`create-network-acl`** command.
 
-```
+```sh
 aws ec2 create-network-acl --region us-east-2 --vpc-id vpc-1234ab56
 ```
 

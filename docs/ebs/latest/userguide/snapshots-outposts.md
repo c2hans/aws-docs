@@ -102,7 +102,7 @@ The following example policy prevents all principals from creating snapshots fro
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -146,7 +146,7 @@ The following example policy prevents all principals from deleting local snapsho
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -246,7 +246,7 @@ If the source instance is on an Outpost that supports local snapshots, the `--sn
 
 The following example creates an AMI and stores the backing snapshots on the same Outpost as the instance.
 
-```
+```bash
 aws ec2 create-image \
     --instance-id {{i-1234567890abcdef0}} \
     --name "My Outpost image" \
@@ -258,7 +258,7 @@ Use the [create-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/crea
 
 The following example creates an AMI and stores the backing snapshots in the parent Region of the Outpost.
 
-```
+```bash
 aws ec2 create-image \
     --instance-id {{i-1234567890abcdef0}} \
     --name "My Regional image" \

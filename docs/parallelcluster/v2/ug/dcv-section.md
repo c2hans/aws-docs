@@ -12,7 +12,7 @@ To create and configure a Amazon DCV server, specify the cluster [`dcv_settings`
 
 The format is `[dcv {{dcv-name}}]`. {{dcv-name}} must start with a letter, contain no more than 30 characters, and only contain letters, numbers, hyphens (-), and underscores (\_).
 
-```
+```ini
 [dcv {{custom-dcv}}]
 enable = master
 port = 8443
@@ -34,7 +34,7 @@ Support for the [`[dcv]` section](dcv-section.md)on `centos8` was removed in AWS
 
 The default value is `0.0.0.0/0`, which allows access from any internet address.
 
-```
+```ini
 access_from = 0.0.0.0/0
 ```
 
@@ -47,7 +47,7 @@ access_from = 0.0.0.0/0
 
 The following example enables Amazon DCV on the head node.
 
-```
+```ini
 enable = master
 ```
 
@@ -63,7 +63,7 @@ Amazon DCV automatically generates a self-signed certificate that's used to secu
 
 The default value is `8443`.
 
-```
+```ini
 port = 8443
 ```
 

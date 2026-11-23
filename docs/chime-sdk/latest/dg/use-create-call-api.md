@@ -16,7 +16,7 @@ The endpoint configured for the SIP media application is invoked for different s
 
 This example shows a typical invocation event for a `NEW_OUTBOUND_CALL`.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
         "Sequence": 1,
@@ -46,7 +46,7 @@ When we receive a `RINGING` notification from the receiver, the Amazon Chime SDK
 
 This example shows a typical invocation event for `RINGING`.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
         "Sequence": 1,
@@ -76,7 +76,7 @@ If the receiver doesn't answer the call, or the call fails due to an error, Chim
 
 If the call is answered, Chime invokes the endpoint with the `CALL_ANSWERED` action. This example shows a typical invocation event.
 
-```
+```json
 {
   "SchemaVersion": "1.0",
     "Sequence": 1,

@@ -78,7 +78,7 @@ If you receive an error that Amazon Fraud Detector could not assume the given ro
 
 ****
 
-   ```
+   ```json
           {
               "Version":"2012-10-17",
               "Statement": [ {

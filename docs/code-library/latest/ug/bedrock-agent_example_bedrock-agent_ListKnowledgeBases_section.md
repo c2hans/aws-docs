@@ -15,7 +15,7 @@ The following code example shows how to use `ListKnowledgeBases`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 List Amazon Bedrock knowledge Bases.
 
-```
+```python
 def list_knowledge_bases(bedrock_agent_client, max_results=None):
     """
     Lists the knowledge bases in your AWS account.

@@ -66,7 +66,7 @@ AWS Transform validates your configuration only when you save. If you later chan
 
 You must configure the bucket policy to grant AWS Transform access. Add the following bucket policy to your Amazon S3 bucket to allow the AWS Transform service principal to read, write, delete, and list transformation artifacts.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -123,7 +123,7 @@ Replace the following values:
 
 If you use the AWS Transform web application, you must configure Cross-Origin Resource Sharing (CORS) on your Amazon S3 bucket. You can find the web application domain after enabling AWS Transform. For more information, see [Getting started with AWS Transform](getting-started.md).
 
-```
+```json
 [
     {
         "AllowedHeaders": [
@@ -167,7 +167,7 @@ This section applies only when your bucket is encrypted with a customer-managed 
 
 If you specify your own AWS KMS key for bucket encryption, add the following statement to your key policy. AWS Transform relies on Forward Access Sessions (FAS) to create grants for its service principal. These grants are used to validate your key and access artifacts in your Amazon S3 bucket.
 
-```
+```json
 {
     "Sid": "AllowAWSTransformServiceAccess",
     "Effect": "Allow",

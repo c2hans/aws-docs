@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cr
 
 # CreateMembership
 
-Creates a new membership, granting a user access to an agent space within an application.
+Creates a new membership, granting a user or group access to an agent space within an application.
 
 ## Request Syntax
 <a name="API_CreateMembership_RequestSyntax"></a>
@@ -54,9 +54,9 @@ Type: String
 Required: Yes
 
  ** [memberType](#API_CreateMembership_RequestSyntax) **   <a name="securityagent-CreateMembership-request-memberType"></a>
-The type of member. Currently, only USER is supported.
+The type of member. Use USER for an individual user or GROUP for an IAM Identity Center group. All members of a group have access to the agent space.
 Type: String
-Valid Values: `USER`
+Valid Values: `USER | GROUP`
 Required: Yes
 
 ## Response Syntax

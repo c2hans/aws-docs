@@ -33,7 +33,7 @@ If you associate your VPC connection with a project-restricted AWS account conne
    + For **VPC role**, choose a role from the drop-down menu and then choose **Next**.
      + We recommend that the `ArnLike` field for your trust policy contains the following:
 
-       ```
+       ```json
        {
          "aws:SourceArn": [
            "arn:aws:codecatalyst:::space/{{<space-id>}}",
@@ -47,7 +47,7 @@ If you associate your VPC connection with a project-restricted AWS account conne
 Understand that VPC connections are a space level resource, meaning that your VPC can be accessed by different projects. You can restrict access by configuring your VPC role trust policy with a specific `projectId` instead of instead of `*`.
      + The `Action` field for your permission policy must contain the following:
 
-       ```
+       ```json
        [
          "ec2:CreateNetworkInterface",
          "ec2:DescribeDhcpOptions",

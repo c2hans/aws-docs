@@ -36,7 +36,7 @@ For AWS CloudHSM key stores, AWS KMS creates the **AWSServiceRoleForKeyManagemen
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

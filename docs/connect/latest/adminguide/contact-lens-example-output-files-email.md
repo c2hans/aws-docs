@@ -19,7 +19,7 @@ Note the following about email analytics output files:
 
 The following example shows the output for an email contact with categorization, redaction, and contact chain summary enabled.
 
-```
+```json
 {
   "Version": "EMAIL-2026-01-01",
   "AccountId": "123456789012",

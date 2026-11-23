@@ -50,7 +50,7 @@ Installing Composer creates several folders and files in your environment. The p
 
 To utilize the AWS SDK for PHP in your scripts, include the autoloader in your scripts, as follows.
 
-```
+```php
 <?php
    require '/path/to/vendor/autoload.php';
 ?>
@@ -63,7 +63,7 @@ Each release of the AWS SDK for PHP includes a prepackaged phar (PHP archive) th
 
 You can [download the packaged phar](https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.phar) and include it in your scripts.
 
-```
+```php
 <?php
    require '/path/to/aws.phar';
 ?>
@@ -72,7 +72,7 @@ You can [download the packaged phar](https://docs.aws.amazon.com/aws-sdk-php/v3/
 **Note**
 Using PHP with the Suhosin patch is not recommended, but is common on Ubuntu and Debian distributions. In this case, you might need to enable the use of phars in the suhosin.ini. If you don’t do this, including a phar file in your code will cause a silent failure. To modify suhosin.ini, add the following line.
 
-```
+```php
 suhosin.executor.include.whitelist = phar
 ```
 
@@ -83,7 +83,7 @@ The AWS SDK for PHP includes a ZIP file containing all the classes and dependenc
 
 To install the SDK, [download the .zip file](https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.zip), and then extract it into your project at a location you choose. Then include the autoloader in your scripts, as follows.
 
-```
+```php
 <?php
    require '/path/to/aws-autoloader.php';
 ?>

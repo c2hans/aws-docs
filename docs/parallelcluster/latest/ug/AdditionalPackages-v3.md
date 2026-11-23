@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 **(Optional)** Used to identify additional packages to install.
 
-```
+```yaml
 AdditionalPackages:
   IntelSoftware:
     IntelHpcPlatform: {{boolean}}
@@ -21,7 +21,7 @@ AdditionalPackages:
 
 **(Optional)** Defines the configuration for Intel select solutions.
 
-```
+```yaml
 IntelSoftware:
   IntelHpcPlatform: {{boolean}}
 ```

@@ -34,7 +34,7 @@ If the namespace in which the instance is registered is a shared namespace, the 
 
 1. Import `Boto3` and use `servicediscovery` as your service.
 
-   ```
+   ```python
    import boto3
    client = boto3.client('servicediscovery')
    ```
@@ -51,7 +51,7 @@ If the namespace in which the instance is registered is a shared namespace, the 
 
    Example response output
 
-   ```
+   ```json
    {
        'Instances': [
            {

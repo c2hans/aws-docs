@@ -25,7 +25,7 @@ Recordings made using this feature may be subject to laws or regulations regardi
 
 The following example shows how to request the `StartCallRecording` action for `BOTH` tracks.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions": [
@@ -120,7 +120,7 @@ Your destination Amazon S3 bucket must belong to the same AWS account as your ap
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -154,7 +154,7 @@ The PSTN audio service reads and writes to your S3 bucket on behalf of your Sip 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -187,7 +187,7 @@ The PSTN audio service reads and writes to your S3 bucket on behalf of your Sip 
 
 When the call recording is successfully started on a call leg, the SIP media application invokes an AWS Lambda function with the `ACTION_SUCCESSFUL` event type. The location of call recording is returned in the response.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": INTEGER,
@@ -227,7 +227,7 @@ When the action fails to record the media on a call leg, the SIP media applicati
 
 The following example shows a typical error response.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": 5,

@@ -43,7 +43,7 @@ The request that Amazon Cognito passes to this Lambda function is a combination 
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "request": {
         "userAttributes": {
@@ -124,7 +124,7 @@ If your function returns an email message longer than 20,000 UTF-8 characters, A
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const handler = async (event) => {
   if (event.triggerSource === "CustomMessage_SignUp") {
     const message = `Thank you for signing up. Your confirmation code is ${event.request.codeParameter}.`;
@@ -196,7 +196,7 @@ The response includes messages for both SMS and email.
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const handler = async (event) => {
   if (event.triggerSource === "CustomMessage_AdminCreateUser") {
     const message = `Welcome to the service. Your user name is ${event.request.usernameParameter}. Your temporary password is ${event.request.codeParameter}`;

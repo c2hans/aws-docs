@@ -64,7 +64,7 @@ Follow Step 4 of the instructions in [Setting Up the AWS Mobile SDK for .NET and
 
 Pass your initialized Amazon Cognito credentials provider and your region to the `AmazonDynamoDB` constructor, then pass the client to the DynamoDBContext:
 
-```
+```csharp
 var client = new AmazonDynamoDBClient(credentials,region);
 DynamoDBContext context = new DynamoDBContext(client);
 ```
@@ -74,7 +74,7 @@ DynamoDBContext context = new DynamoDBContext(client);
 
 To write a row to the table, define a class to hold your row data. The class should also contain properties that hold the attribute data for the row and will be mapped to the DynamoDB Table created in the console. The following class declaration illustrates such a class:
 
-```
+```csharp
 [DynamoDBTable("Books")]
 public class Book
 {
@@ -93,7 +93,7 @@ public class Book
 
 To save an item, first create an object:
 
-```
+```csharp
 Book songOfIceAndFire = new Book()
 {
     Id=1,
@@ -107,7 +107,7 @@ Book songOfIceAndFire = new Book()
 
 Then save it:
 
-```
+```csharp
 context.Save(songOfIceAndFire);
 ```
 
@@ -118,7 +118,7 @@ To update a row, modify the instance of the `DDTableRow` class and call `AWSDyna
 
 Retrieve an item using a primary key:
 
-```
+```csharp
 Book retrievedBook = context.Load<Book>(1);
 ```
 
@@ -127,7 +127,7 @@ Book retrievedBook = context.Load<Book>(1);
 
 To update an item:
 
-```
+```csharp
 Book retrievedBook = context.Load<Book>(1);
 retrievedBook.ISBN = "978-0553593716";
 context.Save(retrievedBook);
@@ -138,7 +138,7 @@ context.Save(retrievedBook);
 
 To delete an item:
 
-```
+```csharp
 Book retrievedBook = context.Load<Book>(1);
 context.Delete(retrievedBook);
 ```

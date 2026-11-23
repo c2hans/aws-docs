@@ -10,7 +10,7 @@ Returns a list of inference profiles that you can use. For more information, see
 <a name="API_ListInferenceProfiles_RequestSyntax"></a>
 
 ```
-GET /inference-profiles?maxResults={{maxResults}}&nextToken={{nextToken}}&type={{typeEquals}} HTTP/1.1
+GET /inference-profiles?maxResults={{maxResults}}&nextToken={{nextToken}}&projectIdentifier={{projectIdentifier}}&type={{typeEquals}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -26,6 +26,13 @@ Valid Range: Minimum value of 1. Maximum value of 1000.
 If the total number of results is greater than the `maxResults` value provided in the request, enter the token returned in the `nextToken` field in the response in this field to return the next batch of results.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `\S*`
+
+ ** [projectIdentifier](#API_ListInferenceProfiles_RequestSyntax) **   <a name="bedrock-ListInferenceProfiles-request-uri-projectIdentifier"></a>
+The ID or Amazon Resource Name (ARN) of a project. Amazon Bedrock uses the project's trusted access program participation when determining which system-defined inference profiles to return. The project must belong to your account in the same AWS Region and partition as the request.
+If you omit this parameter or specify `default`, Amazon Bedrock uses your account's participation, including organization inheritance.
+A project that doesn't exist or is archived causes a `ValidationException`. Specifying a project other than `default` with `typeEquals` set to `APPLICATION` also causes a `ValidationException`. Omit `typeEquals` or set it to `SYSTEM_DEFINED` to list system-defined inference profiles for the project.
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `([a-zA-Z0-9_-]+|arn:aws(-[^:]+)?:bedrock:[0-9a-z-]{1,20}:[0-9]{12}:project/[a-zA-Z0-9_-]+)`
 
  ** [typeEquals](#API_ListInferenceProfiles_RequestSyntax) **   <a name="bedrock-ListInferenceProfiles-request-uri-typeEquals"></a>
 Filters for inference profiles that match the type you specify.
@@ -116,7 +123,7 @@ Run the following example to list information for up to 5 inference profiles in 
 #### Sample Request
 <a name="API_ListInferenceProfiles_Example_1_Request"></a>
 
-```
+```http
 GET /inference-profiles?maxResults=5 HTTP/1.1
 ```
 

@@ -34,7 +34,7 @@ INTEGER
 
 The following query compares the DATE values in the CALDATE column to the date January 4, 2008 and returns whether the value in CALDATE is before (`-1`), equal to (`0`), or after (`1`) January 4, 2008:
 
-```
+```sql
 select caldate, '2008-01-04',
 date_cmp(caldate,'2008-01-04')
 from date

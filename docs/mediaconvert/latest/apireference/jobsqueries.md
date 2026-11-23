@@ -52,7 +52,7 @@ Supports CORS preflight requests.
 #### POST schema
 <a name="jobsqueries-request-body-post-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "order": enum,
@@ -74,7 +74,7 @@ Supports CORS preflight requests.
 #### StartJobsQueryResponse schema
 <a name="jobsqueries-response-body-startjobsqueryresponse-example"></a>
 
-```
+```json
 {
   "id": "string"
 }
@@ -83,7 +83,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="jobsqueries-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

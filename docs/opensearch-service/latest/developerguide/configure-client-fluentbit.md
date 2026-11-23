@@ -35,7 +35,7 @@ Note the following:
 
 You can then configure an OpenSearch Ingestion pipeline like the following, which has HTTP as the source:
 
-```
+```yaml
 version: "2"
 unaggregated-log-pipeline:
   source:

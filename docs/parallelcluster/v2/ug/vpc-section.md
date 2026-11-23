@@ -10,7 +10,7 @@ Specifies Amazon VPC configuration settings. For more information about VPCs, se
 
 The format is `[vpc {{vpc-name}}]`. {{vpc-name}} must start with a letter, contain no more than 30 characters, and only contain letters, numbers, hyphens (-), and underscores (\_).
 
-```
+```ini
 [vpc public]
 vpc_id = {{vpc-xxxxxx}}
 master_subnet_id = {{subnet-xxxxxx}}
@@ -33,7 +33,7 @@ master_subnet_id = {{subnet-xxxxxx}}
 
 There is no default value.
 
-```
+```ini
 additional_sg = {{sg-xxxxxx}}
 ```
 
@@ -42,7 +42,7 @@ additional_sg = {{sg-xxxxxx}}
 
 **(Optional)** Specifies a Classless Inter-Domain Routing (CIDR) block. Use this parameter if you want AWS ParallelCluster to create a compute subnet.
 
-```
+```ini
 compute_subnet_cidr = 10.0.100.0/24
 ```
 
@@ -57,7 +57,7 @@ If not specified, [`compute_subnet_id`](#compute-subnet-id) uses the value of [`
 
 If the subnet is private, you must set up NAT for web access.
 
-```
+```ini
 compute_subnet_id = {{subnet-xxxxxx}}
 ```
 
@@ -68,7 +68,7 @@ compute_subnet_id = {{subnet-xxxxxx}}
 
 **(Required)** Specifies the ID of an existing subnet in which to provision the head node.
 
-```
+```ini
 master_subnet_id = {{subnet-xxxxxx}}
 ```
 
@@ -83,7 +83,7 @@ This parameter is used only when AWS ParallelCluster creates the security group.
 
 The default value is `0.0.0.0/0`.
 
-```
+```ini
 ssh_from = 0.0.0.0/0
 ```
 
@@ -102,7 +102,7 @@ For examples, see [networking configuration](networking.md).
 
 The default value is `true`.
 
-```
+```ini
 use_public_ips = true
 ```
 
@@ -116,7 +116,7 @@ By default, all AWS accounts are limited to five (5) Elastic IP addresses for ea
 
 **(Required)** Specifies the ID of the Amazon VPC in which to provision the cluster.
 
-```
+```ini
 vpc_id = {{vpc-xxxxxx}}
 ```
 
@@ -129,7 +129,7 @@ vpc_id = {{vpc-xxxxxx}}
 
 There is no default value.
 
-```
+```ini
 vpc_security_group_id = {{sg-xxxxxx}}
 ```
 

@@ -8,6 +8,8 @@ While the ORR name may imply on the surface that it is a “pre-launch” checkl
 
 ![Diagram showing the ORR adoption and implementation lifecycle tied to the SDLC](https://docs.aws.amazon.com/wellarchitected/latest/operational-readiness-reviews/images/orr-lifecycle-tied-to-sdlc.png)
 
+*Figure 2: The ORR adoption and implementation lifecycle tied to the SDLC*
+
 Figure 2 shows that the **ORR Lifecycle for New Service and Iterations** is initiated when a new service, new feature, or architecture change is proposed. The **ORR Cycle Start** phase begins during the *Design* phases of the SDLC process. Teams start to answer the design and architecture questions. At the same time, the team has a holistic view of all ORR questions that are associated with the upcoming stages of the SDLC. During the **Mid-Cycle Check-in** phase teams start to answer *Development* and *Testing* related questions. Finally, in the **ORR Conclusion and Follow-up** phase, the team wraps up the ORR checklist and develops their risk mitigation and follow-up plan.
 
 In addition to the ORR performed through the SDLC process, at least annually, teams are expected to perform an ORR on their full service using a checklist tailored to that event. This helps verify that they stay up to date with new or updated best practices, and also that nothing has changed within their systems.

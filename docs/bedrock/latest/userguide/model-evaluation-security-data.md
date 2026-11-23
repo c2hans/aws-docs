@@ -26,7 +26,7 @@ The following is an example IAM policy that contains only the required AWS KMS I
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -90,7 +90,7 @@ Example IAM Policy for Role Calling CreateEvaluationJob API
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

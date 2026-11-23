@@ -48,7 +48,7 @@ For more information, see [SSL certificates for your Application Load Balancer](
 **Tools for PowerShell V4**
 **Example 1: This examples describes the certificate for the specified listener.**
 
-```
+```powershell
 Get-ELB2ListenerCertificate -ListenerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener/app/test-alb/3651b4394dd9a24f/66e10e3aaf5b6d9b'
 ```
 **Output:**
@@ -63,7 +63,7 @@ arn:aws:acm:us-east-1:123456789012:certificate/5fc7c092-68bf-4862-969c-22fd48b6e
 **Tools for PowerShell V5**
 **Example 1: This examples describes the certificate for the specified listener.**
 
-```
+```powershell
 Get-ELB2ListenerCertificate -ListenerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener/app/test-alb/3651b4394dd9a24f/66e10e3aaf5b6d9b'
 ```
 **Output:**

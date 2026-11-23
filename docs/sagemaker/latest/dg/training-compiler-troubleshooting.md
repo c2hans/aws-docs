@@ -108,7 +108,7 @@ XLA requires additional environment variables to compile the training job. The m
 There are three approaches to set the `GPU_NUM_DEVICES` environment variable:
 + **Approach 1** – Use the `environment` argument of the SageMaker AI ModelTrainer class. For example, if you use an `ml.p3.8xlarge` instance that has four GPUs, do the following:
 
-  ```
+  ```py
   # Using the SageMaker Python SDK's ModelTrainer
 
   model_trainer=ModelTrainer(
@@ -127,7 +127,7 @@ There are three approaches to set the `GPU_NUM_DEVICES` environment variable:
 
      For example, if you use an `ml.p3.8xlarge` instance that has four GPUs, do the following:
 
-     ```
+     ```py
      # Using the SageMaker Python SDK's ModelTrainer
 
      model_trainer=ModelTrainer(
@@ -144,7 +144,7 @@ There are three approaches to set the `GPU_NUM_DEVICES` environment variable:
 
   1. In your training script, parse the `n_gpus` hyperparameter and specify it as an input for the `GPU_NUM_DEVICES` environment variable.
 
-     ```
+     ```py
      # train.py
      import os, argparse
 
@@ -164,7 +164,7 @@ There are three approaches to set the `GPU_NUM_DEVICES` environment variable:
      ```
 + **Approach 3** – Hard-code the `GPU_NUM_DEVICES` environment variable in your training script. For example, add the following to your script if you use an instance that has four GPUs.
 
-  ```
+  ```py
   # train.py
 
   import os

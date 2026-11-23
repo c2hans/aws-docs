@@ -18,7 +18,7 @@ The AWS Message Processing Framework for .NET builds, sends, and handles message
 
 1. At the innermost layer, the `data` attribute inside the CloudEvent JSON object contains a JSON serialization of the .NET object that was sent or received as the message.
 
-   ```
+   ```json
    {
        "id":"b02f156b-0f02-48cf-ae54-4fbbe05cffba",
        "source":"/aws/messaging",

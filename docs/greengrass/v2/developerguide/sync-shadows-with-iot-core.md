@@ -49,7 +49,7 @@ This configuration update specifies to sync shadows with AWS IoT Core in real ti
 
 This configuration update specifies to sync shadows in both directions between AWS IoT Core and the core device. If you use shadow manager v2.2.0 or later, you can configure the shadow manager component to sync shadows in only one direction. To configure this feature, change the sync `direction` to `deviceToCloud` or `cloudToDevice`. For more information, see [the direction configuration parameter](shadow-manager-component.md#shadow-manager-component-configuration) of the shadow manager component.
 
-```
+```json
 {
   "strategy": {
     "type": "realTime"

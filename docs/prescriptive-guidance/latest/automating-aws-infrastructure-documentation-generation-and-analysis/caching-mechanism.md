@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automating-
 ---
 
 # Caching mechanism
-<a name="caching-mechanism"></a>
 
 The *caching mechanism* ensures that repeated infrastructure scans, analyses, and dependency mappings are efficiently served without redundant API calls or reprocessing. The [caching mechanism](https://aws.amazon.com/caching/) is implemented across all components—resource scanning, document generation, and dependency mapping. This layer reduces response times, optimizes Amazon Bedrock usage, and improves scalability for large or frequent workloads.
 

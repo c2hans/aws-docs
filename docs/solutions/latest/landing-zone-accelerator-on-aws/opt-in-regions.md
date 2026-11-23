@@ -68,7 +68,7 @@ When you allow a Region, AWS prepares your account in that Region, such as by di
 
 1. Using your management account, update the `global-config.yaml` file to list the new Region under the `enabledRegions` option, as shown in the following sample. In the sample, Europe (London) (`eu-west-2`) is the home Region and Middle East (Bahrain) (`me-south-1`) is the opt-in (target) Region:
 
-   ```
+   ```yaml
    homeRegion: eu-west-2
    enabledRegions:
      - eu-west-2
@@ -77,7 +77,7 @@ When you allow a Region, AWS prepares your account in that Region, such as by di
 
 1. Using your management account, update the `global-config.yaml` file to list the opt-in Region under the `centralizedLoggingRegion` option, as shown in the following sample:
 
-   ```
+   ```yaml
    logging:
      account: LogArchive
      centralizedLoggingRegion: me-south-1

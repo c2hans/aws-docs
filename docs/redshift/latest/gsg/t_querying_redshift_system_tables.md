@@ -13,7 +13,7 @@ In addition to the tables that you create, your data warehouse contains a number
 
 To view a list of all tables in a schema, you can query the PG\_TABLE\_DEF system catalog table. You can first examine the setting for `search_path`.
 
-```
+```sql
 SHOW search_path;
 ```
 
@@ -27,7 +27,7 @@ The result should look similar to the following,
 
 The following example adds the `SALES` schema to the search path and shows all the tables in the `SALES` schema.
 
-```
+```sql
 set search_path to '$user', 'public', 'sales';
 
 SHOW search_path;
@@ -46,7 +46,7 @@ select * from pg_table_def where schemaname = 'sales';
 
 The following example shows a list of all tables called `DEMO` in all schemas on the current database.
 
-```
+```sql
 set search_path to '$user', 'public', 'sales';
 select * from pg_table_def where tablename = 'demo';
 
@@ -67,7 +67,7 @@ You can also use the Amazon Redshift query editor v2 to view all the tables in a
 
 You can query the PG\_USER catalog to view a list of all users, along with the user ID (USESYSID) and user privileges.
 
-```
+```sql
 SELECT * FROM pg_user;
 
   usename   | usesysid | usecreatedb | usesuper | usecatupd |  passwd  | valuntil | useconfig
@@ -79,7 +79,7 @@ SELECT * FROM pg_user;
 
 The user name `rdsdb` is used internally by Amazon Redshift to perform routine administrative and maintenance tasks. You can filter your query to show only user-defined user names by adding `where usesysid > 1` to your SELECT statement.
 
-```
+```sql
 SELECT * FROM pg_user WHERE usesysid > 1;
 
   usename   | usesysid | usecreatedb | usesuper | usecatupd |  passwd  | valuntil | useconfig
@@ -95,7 +95,7 @@ In the previous example, the user ID (user\_id) for `adminuser` is 100. To list 
 
 You can use this view to find the query ID (query\_id) or process ID (session\_id) for a recently run query. You can also use this view to check how long it took a query to complete. SYS\_QUERY\_HISTORY includes the first 4,000 characters of the query string (query\_text) to help you locate a specific query. Use the LIMIT clause with your SELECT statement to limit the results.
 
-```
+```sql
 SELECT query_id, session_id, elapsed_time, query_text
 FROM sys_query_history
 WHERE user_id = 100
@@ -121,7 +121,7 @@ To retrieve system table information about a query, you might need to specify th
 
 To determine the session ID of a running query, run the following SELECT statement.
 
-```
+```sql
 SELECT session_id, user_id, start_time, query_text
 FROM sys_query_history
 WHERE status='running';

@@ -9,7 +9,7 @@ You can dissociate a library from a project using the [UpdateDataAutomationProje
 ## AWS CLI Example:
 <a name="bda-library-dissociating-cli"></a>
 
-```
+```bash
 aws bedrock-data-automation update-data-automation-project \
     --project-arn "arn:aws:bedrock:us-east-1:123456789012:data-automation-project/audio-transcription-project" \
     --data-automation-libraries '[]'

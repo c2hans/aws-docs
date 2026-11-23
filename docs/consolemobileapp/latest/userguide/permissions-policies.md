@@ -18,7 +18,7 @@ For more information about delivery channels, see [Managing delivery channels](h
 
 You can attach the following policy to your IAM identities. This policy allows access to `ListDeviceIdentities`.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -40,7 +40,7 @@ You can attach the following policy to your IAM identities. This policy allows a
 
 You can attach the following policy to your IAM identities. This policy denies access to `ListDeviceIdentities`.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -65,7 +65,7 @@ You can attach the following policy to your IAM identities. This policy denies a
 
 This policy allows a specific resource access to `GetDeviceIdentity`.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -87,7 +87,7 @@ This policy allows a specific resource access to `GetDeviceIdentity`.
 
 This policy denies a specific resource access to `GetDeviceIdentity`.
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [
@@ -106,6 +106,6 @@ This policy denies a specific resource access to `GetDeviceIdentity`.
 
 The following shows an example of the denial response:
 
-```
+```json
 {"message": "User: arn:aws:iam::123456789012:user/testUser-readOnly is not authorized to perform: consoleapp:GetDeviceIdentity on resource: arn:aws:consoleapp::123456789012:device/2FQVtmveB13WEXAMPL3D3V1D/identity/123456789012 with an explicit deny"}
 ```

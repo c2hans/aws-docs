@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ini-provi
 
  `Aws\Credentials\CredentialProvider::ini` attempts to load credentials from the shared `config` and `credentials` files. By default, the SDK attempts to load the “default” profile from the shared AWS `credentials` file located at `~/.aws/credentials`. If the SDK finds the `AWS_SDK_LOAD_NONDEFAULT_CONFIG` environment variable, it also checks for a "default" profile in the shared AWS `config` file located at `~/.aws/config`.
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 use Aws\S3\S3Client;
 
@@ -24,7 +24,7 @@ $client = new S3Client([
 
 You can use a custom profile or .ini file location by providing arguments to the function that creates the provider.
 
-```
+```php
 $profile = 'production';
 $path = '/full/path/to/credentials.ini';
 

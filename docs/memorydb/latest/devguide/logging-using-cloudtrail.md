@@ -35,7 +35,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateCluster` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -95,7 +95,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 
 The following example shows a CloudTrail log entry that demonstrates the `DescribeClusters` action. Note that for all MemoryDB Describe and List calls (`Describe*` and `List*`), the `responseElements` section is removed and appears as `null`.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -129,7 +129,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Descri
 
 The following example shows a CloudTrail log entry that records an `UpdateCluster` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -190,7 +190,7 @@ The following example shows a CloudTrail log entry that records an `UpdateCluste
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateUser` action. Note that for MemoryDB calls that contain sensitive data, that data will be redacted in the corresponding CloudTrail event as shown in the `requestParameters` section below.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

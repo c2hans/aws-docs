@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 
 ![Diagram showing the use of Single-AZ cells](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/single-az-cells.jpg)
 
+*Single-AZ cells*
+
  Advantages of this approach:
 +  It is possible to accurately detect in which AZ a problem is occurring and take mitigation actions for it.
 

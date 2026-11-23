@@ -14,4 +14,6 @@ What this means is that you have to replace human best efforts with repeatable, 
 
 ![Diagram showing the mechanism flywheel](https://docs.aws.amazon.com/wellarchitected/latest/operational-readiness-reviews/images/mechanism-flywheel.png)
 
+*Figure 1: The complete process of a mechanism*
+
 The cyclic nature of a mechanism makes it best suited for solving recurring problems or opportunities, as opposed to one-off challenges. The ORR is a mechanism with a tool, an adoption process, and an inspection process that operates in a complete cycle. In the next section we’ll discuss the ORR mechanism and how to build one.

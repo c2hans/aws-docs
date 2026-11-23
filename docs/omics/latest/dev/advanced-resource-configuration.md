@@ -52,7 +52,7 @@ In WDL, the CPU field is **cpu**. In Nextflow, it is **cpus**, and **memory** is
 
 The following WDL task searches for `nvidia-l40s` first (waiting up to 45 minutes for capacity), then `nvidia-l4` (default wait window), then falls back to a CPU-only profile (32 vCPUs, 128 GiB) if neither accelerator type is available.
 
-```
+```json
 task align {
   command <<<
     # Branch based on which resource type was allocated

@@ -36,7 +36,7 @@ To complete the following steps, you will need the following:
 
 1. [Create a Lambda function](https://docs.aws.amazon.com/lambda/latest/dg/getting-started-create-function.html) that runs the following CloudWatch Logs Insights query string against the five Amazon MWAA environment log groups (`DAGProcessing`, `Scheduler`, `Task`, `WebServer`, and `Worker`).
 
-   ```
+   ```bash
    fields @log, @timestamp, @message | filter @message like "add-role" | stats count() by @log
    ```
 

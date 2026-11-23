@@ -40,7 +40,7 @@ Account-level IMDS configuration can be overridden by launch template or AMI con
 
 When you use launch templates in your compute environment, add metadata options to your launch template to require IMDSv2. For more information about using launch templates with Batch, see [Use Amazon EC2 launch templates with AWS Batch](launch-templates.md).
 
-```
+```json
 {
     "LaunchTemplateName": "batch-imdsv2-template",
     "VersionDescription": "IMDSv2 only template for Batch",
@@ -54,6 +54,6 @@ When you use launch templates in your compute environment, add metadata options 
 
 Create the launch template using the AWS CLI:
 
-```
+```sh
 aws ec2 create-launch-template --cli-input-json file://imds-template.json
 ```

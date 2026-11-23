@@ -9,7 +9,7 @@ When a flow is run before an outbound call is made as part of an outbound contac
 ## Parameter object
 <a name="completeoutboundcall-parameter"></a>
 
-```
+```json
 ""CallerId": { Optional, an override of the caller ID to present when calling. Is ignored when using VoiceConnectors
   "Number": The caller ID number to present when calling. Can either be fully static or a single valid JSONPath identifier
 }

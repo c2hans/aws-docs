@@ -20,7 +20,7 @@ On-demand inference offers several advantages:
 
 On-demand inference is the default mode for Amazon Nova models. Simply specify the model ID when making API calls:
 
-```
+```Python
 import boto3
 
 bedrock = boto3.client('bedrock-runtime', region_name='us-east-1')

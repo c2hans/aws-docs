@@ -40,7 +40,7 @@ You can also obtain the DKIM records for an identity by using the Amazon SES API
 
 1. The output of this command contains a `DkimAttributes` object. The `Tokens` array provides the DKIM tokens, and the `SigningHostedZone` field provides the hosted zone to use in the CNAME record values, as shown in the following example:
 
-   ```
+   ```json
    {
        "DkimAttributes": {
            "SigningEnabled": true,

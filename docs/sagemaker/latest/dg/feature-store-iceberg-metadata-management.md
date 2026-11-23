@@ -18,7 +18,7 @@ If non-allowed Iceberg properties are changed, Feature Store cannot guarantee co
 
 The `IcebergProperties` type provides a validated wrapper for Iceberg property configurations, ensuring all keys belong to the allowed set and preventing duplicate entries.
 
-```
+```python
 class IcebergProperties(Base):
     """Configuration for Iceberg table properties in a Feature Group offline store."""
     properties: Optional[Dict[str, str]] = None
@@ -29,7 +29,7 @@ class IcebergProperties(Base):
 
 Invalid and duplicate keys result in an error when passed to the create or update function. You can optionally validate keys using the `validate_property_keys()` method. This is helpful when adding or removing properties from an existing `IcebergProperties` object.
 
-```
+```python
 iceberg_properties = IcebergProperties(  # Validates on creation
     properties={
         "write.target-file-size-bytes": "268435456",
@@ -51,7 +51,7 @@ The `FeatureGroupManager.create` function accepts an `iceberg_properties` parame
 
 Alternatively, you can create a `FeatureGroup`, call `create`, then pass the feature group object to the `FeatureGroupManager` class and call `update` to avoid blocking while the feature group finishes creating.
 
-```
+```python
 fg = FeatureGroupManager.create(
     # ...other parameters...
     offline_store_config=OfflineStoreConfig(
@@ -72,7 +72,7 @@ fg = FeatureGroupManager.create(
 
 The `update` function accepts an `iceberg_properties` parameter of type `IcebergProperties`. It takes an already-created feature group, retrieves the AWS Glue Data Catalog of the offline store, and sets the specified Iceberg properties.
 
-```
+```python
 fg = FeatureGroupManager.get(feature_group_name="my-feature-group")
 fg.update(
     iceberg_properties=IcebergProperties(
@@ -91,7 +91,7 @@ The `FeatureGroupManager.get` function accepts an `include_iceberg_properties` p
 
 This only returns set properties that are part of the allowed list. To get all AWS Glue table properties, use the AWS Glue API directly. If an allowed Iceberg property does not appear, it has not been explicitly set and uses its default value.
 
-```
+```python
 fg = FeatureGroupManager.get(
     feature_group_name="my-feature-group",
     include_iceberg_properties=True,

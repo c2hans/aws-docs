@@ -17,7 +17,7 @@ Size the pool for concurrent downloads. When free pool capacity runs out, new do
 
 Use version 2.59.0 or later of the SDK and version 0.50.0 or later of `aws-crt`. Then pass an [S3CrtDirectBufferPoolConfiguration](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/crt/S3CrtDirectBufferPoolConfiguration.html) to the client builder.
 
-```
+```java
 import software.amazon.awssdk.services.s3.S3AsyncClient;
 import software.amazon.awssdk.services.s3.crt.S3CrtDirectBufferPoolConfiguration;
 
@@ -38,7 +38,7 @@ When the pool grows, other requests on the client are briefly delayed. A larger 
 
 To download from the pool, use the transformer returned by [S3CrtResponseTransformerProvider.toBlockingInputStreamFromDirectBufferPool()](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/crt/S3CrtResponseTransformerProvider.html#toBlockingInputStreamFromDirectBufferPool()). Pass it directly to `getObject`. This returns a `ResponseInputStream` that reads the object from pool memory.
 
-```
+```java
 import software.amazon.awssdk.core.ResponseInputStream;
 import software.amazon.awssdk.services.s3.crt.S3CrtResponseTransformerProvider;
 import software.amazon.awssdk.services.s3.model.GetObjectResponse;
@@ -65,7 +65,7 @@ try (ResponseInputStream<GetObjectResponse> stream =
 
 Build the [Transfer Manager](transfer-manager.md) with a client that has a pool configured, then call `download()` with a request that holds a transformer from `S3CrtResponseTransformerProvider`.
 
-```
+```java
 import software.amazon.awssdk.core.ResponseInputStream;
 import software.amazon.awssdk.services.s3.crt.S3CrtResponseTransformerProvider;
 import software.amazon.awssdk.services.s3.model.GetObjectResponse;
@@ -112,7 +112,7 @@ concurrent downloads × (initialReadBufferSizeInBytes + part size) + headroom fo
 
 For example, 16 concurrent downloads with an explicit 8 MiB part size and an 80 MiB read window need 16 × (80 MiB \+ 8 MiB) = 1,408 MiB, so a 1.5 GiB ceiling with `-XX:MaxDirectMemorySize=2g` fits. Test with your workload, because a pool that's too small stalls downloads.
 
-```
+```java
 long mib = 1024L * 1024;
 S3AsyncClient s3AsyncClient =
         S3AsyncClient.crtBuilder()

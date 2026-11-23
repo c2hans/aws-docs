@@ -59,7 +59,7 @@ You can create the network ACL in the Amazon VPC console or with the AWS CLI. Ch
 
 1. Create the network ACL and store its ID. If `$VPC_ID` isn’t set in your shell, replace it in the following commands with the ID of your VPC.
 
-   ```
+   ```bash
    NACL_ID=$(aws ec2 create-network-acl \
      --vpc-id $VPC_ID \
      --tag-specifications 'ResourceType=network-acl,Tags=[{Key=Name,Value=evs-vlan-nacl}]' \
@@ -69,7 +69,7 @@ You can create the network ACL in the Amazon VPC console or with the AWS CLI. Ch
 
 1. Add an entry for each rule. This example allows inbound HTTPS from the VPC CIDR block. Replace the example addresses with your own values.
 
-   ```
+   ```bash
    aws ec2 create-network-acl-entry \
      --network-acl-id $NACL_ID \
      --ingress \
@@ -84,7 +84,7 @@ You can create the network ACL in the Amazon VPC console or with the AWS CLI. Ch
 
 1. Verify the rules.
 
-   ```
+   ```bash
    aws ec2 describe-network-acls \
      --network-acl-ids $NACL_ID \
      --query 'NetworkAcls[0].Entries'
@@ -111,7 +111,7 @@ After you create the environment, associate your network ACL with the VLAN subne
 
 1. Find the current network ACL association ID for a VLAN subnet. Replace the example subnet ID with the ID of your VLAN subnet.
 
-   ```
+   ```bash
    aws ec2 describe-network-acls \
      --filters Name=association.subnet-id,Values=subnet-01234a1b2cde1234f \
      --query 'NetworkAcls[0].Associations[?SubnetId==`subnet-01234a1b2cde1234f`].NetworkAclAssociationId' \
@@ -120,7 +120,7 @@ After you create the environment, associate your network ACL with the VLAN subne
 
 1. Replace the association with your network ACL. Replace the example association ID with the ID that the previous command returns. If `$NACL_ID` isn’t set in your shell, replace it in the following commands with the ID of your network ACL.
 
-   ```
+   ```bash
    aws ec2 replace-network-acl-association \
      --association-id aclassoc-0123456789abcdef0 \
      --network-acl-id $NACL_ID

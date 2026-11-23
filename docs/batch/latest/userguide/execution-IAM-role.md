@@ -21,7 +21,7 @@ Amazon ECS provides the `AmazonECSTaskExecutionRolePolicy` managed policy. This 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

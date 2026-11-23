@@ -78,7 +78,7 @@ It is recommended to have one repository per domain with an external connection 
 
   Example output:
 
-  ```
+  ```json
   {
       "repository": {
           "name": {{my_repo}}
@@ -131,7 +131,7 @@ aws codeartifact disassociate-external-connection --external-connection {{public
 
 Example output:
 
-```
+```json
 {
     "repository": {
         "name": {{my_repo}}

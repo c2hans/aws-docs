@@ -133,7 +133,7 @@ Steering criteria are short natural language descriptors that guide the optimiza
 
 **Example:**
 
-```
+```json
 "steeringCriteria": ["PROFESSIONAL", "CONCISE"]
 ```
 
@@ -274,7 +274,7 @@ Bring your own scoring function as an Lambda function.
 
 Specify the Lambda ARN in your input JSONL file for each prompt template that should use it. You also provide the `customEvaluationMetricLabel` field to name your metric:
 
-```
+```json
 "evaluationMetricLambdaArn": "arn:aws:lambda:us-west-2:123456789012:function:my-eval-function",
 "customEvaluationMetricLabel": "My Custom Metric"
 ```
@@ -306,7 +306,7 @@ When you create the job through the API, no additional evaluation configuration 
 ### Lambda template
 <a name="advanced-prompt-optimization-evaluation-lambda-template"></a>
 
-```
+```python
 """
 APO Custom Metric Lambda - Minimal Template
 Handler: lambda_function.lambda_handler

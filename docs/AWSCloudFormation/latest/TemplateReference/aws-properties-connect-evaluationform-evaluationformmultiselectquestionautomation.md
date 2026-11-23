@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-connect-evaluationform-evaluationformmultiselectquestionautomation-properties"></a>
 
 `AnswerSource`  <a name="cfn-connect-evaluationform-evaluationformmultiselectquestionautomation-answersource"></a>
-Property description not available.
+Automation answer source.
 *Required*: No
 *Type*: [EvaluationFormQuestionAutomationAnswerSource](aws-properties-connect-evaluationform-evaluationformquestionautomationanswersource.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -6,11 +6,11 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/rest-op-reservese
 
 Reserves one or more sessions for you. Send the session IDs in the request body. One request carries 1 to 10 session IDs. They must be distinct. You must sign in.
 
-```
+```http
 POST /v1/events/{eventId}/reservations
 ```
 
-```
+```bash
 curl -X POST https://api.awsevents.com/v1/events/reinvent2026/reservations \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H "Content-Type: application/json" \

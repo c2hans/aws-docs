@@ -33,7 +33,7 @@ The samples in this topic use comparable example data to show the structure of t
 
 The first sample is designed to be sent to APNs for delivery to the app on an iOS device:
 
-```
+```json
 {
     "APNSMessage":{
         "RawContent":"{\n\"aps\":{\n \"alert\":{\n\"title\":\"Hello\",\n\"subtitle\":\"Hello from Pinpoint!\",\n\"body\":\"Have a good day!\"\n},\n\"category\":\"Notification\"\n},\n\"customKey\":\"12345678\"\n}\n"
@@ -45,7 +45,7 @@ For a list of keys, see [Payload key reference](https://developer.apple.com/docu
 
 The second sample is designed to be sent to FCM for delivery to the app on an Android device:
 
-```
+```json
 {
     "GCMMessage":{
         "RawContent":"{\n \"collapse_key\":\"string\",\n\"priority\":\"string\",\n\"time_to_live\":1234,\n\"notification\": {\n\"title\":\"Hello\",\n\"body\":\"Hello from Pinpoint!\",\n \"android_channel_id\":\"string\",\n\"body_loc_args\":[\n\"string\"\n],\n\"body_loc_key\":\"string\",\n\"click_action\":\"string\",\n\"color\": \"string\",\n\"icon\":\"string\",\n\"sound\":\"string\",\n\"tag\":\"string\",\n\"title_loc_args\":[\n\"string\"\n],\n\"title_loc_key\":\"string\"\n},\n\"data\":{\n\"customKey\":\"customValue\"\n}\n}"

@@ -19,7 +19,7 @@ To create a Maven project with built-in native image support, in a terminal or c
 **Note**
 Replace `com.example.mynativeimageapp` with the full package namespace of your application. Also replace `mynativeimageapp` with your project name. This becomes the name of the directory for your project.
 
-```
+```sh
 mvn archetype:generate \
     -DarchetypeGroupId=software.amazon.awssdk \
     -DarchetypeArtifactId=archetype-app-quickstart \
@@ -43,7 +43,7 @@ To use an asynchronous HTTP client, set the `-DhttpClient` parameter to `netty-n
 
 After you create the project, run the following command from your project directory, for example, `mynativeimageapp`:
 
-```
+```sh
 mvn package -P native-image
 ```
 

@@ -45,6 +45,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   AssociatePublisher  **
+  - **SDK client:** agent-registry-control
+  - **IAM action:**  [agent-registry:AssociatePublisher](#list_agent-registry-action-AssociatePublisher)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   CreatePublisher  **
+  - **SDK client:** agent-registry-control
+  - **IAM action:**  [agent-registry:CreatePublisher](#list_agent-registry-action-CreatePublisher)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [agent-registry:TagResource](#list_agent-registry-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   CreateRegistry  **
   - **SDK client:** agent-registry-control
   - **IAM action:**  [agent-registry:CreateRegistry](#list_agent-registry-action-CreateRegistry)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -57,6 +69,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [bedrock-agentcore:GetResourceOauth2Token](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_GetResourceOauth2Token.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [bedrock-agentcore:GetWorkloadAccessToken](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_GetWorkloadAccessToken.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** agent-registry.amazonaws.com / **Access level:** Write
+
+- **   DeletePublisher  **
+  - **SDK client:** agent-registry-control
+  - **IAM action:**  [agent-registry:DeletePublisher](#list_agent-registry-action-DeletePublisher)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   DeleteRegistry  **
   - **SDK client:** agent-registry-control
@@ -72,6 +91,20 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DisassociatePublisher  **
+  - **SDK client:** agent-registry-control
+  - **IAM action:**  [agent-registry:DisassociatePublisher](#list_agent-registry-action-DisassociatePublisher)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   GetPublisher  **
+  - **SDK client:** agent-registry-control
+  - **IAM action:**  [agent-registry:GetPublisher](#list_agent-registry-action-GetPublisher)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetRegistry  **
   - **SDK client:** agent-registry-control
   - **IAM action:**  [agent-registry:GetRegistry](#list_agent-registry-action-GetRegistry)
@@ -85,6 +118,20 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
+
+- **   ListPublisherAssociations  **
+  - **SDK client:** agent-registry-control
+  - **IAM action:**  [agent-registry:ListPublisherAssociations](#list_agent-registry-action-ListPublisherAssociations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListPublishers  **
+  - **SDK client:** agent-registry-control
+  - **IAM action:**  [agent-registry:ListPublishers](#list_agent-registry-action-ListPublishers)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
 
 - **   ListRegistries  **
   - **SDK client:** agent-registry-control
@@ -128,6 +175,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
+- **   UpdatePublisherAssociationApprovalStatus  **
+  - **SDK client:** agent-registry-control
+  - **IAM action:**  [agent-registry:UpdatePublisherAssociationApprovalStatus](#list_agent-registry-action-UpdatePublisherAssociationApprovalStatus)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateRegistry  **
   - **SDK client:** agent-registry-control
   - **IAM action:**  [agent-registry:UpdateRegistry](#list_agent-registry-action-UpdateRegistry)
@@ -149,10 +203,35 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   ValidatePublisher  **
+  - **SDK client:** agent-registry-control
+  - **IAM action:**  [agent-registry:ValidatePublisher](#list_agent-registry-action-ValidatePublisher)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 ## Actions defined by AWS Agent Registry
 <a name="list_agent-registry-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. For each action, the table lists the resource types and condition keys supported by that action. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
+
+- **   [AssociatePublisher](https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_AssociatePublisher.html)  **
+  - **Description:** Grants permission to associate a registry record with a publisher
+  - **Resource types (\*required):** [publisher\*](#list_agent-registry-resource-publisher) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [registry-record\*](#list_agent-registry-resource-registry-record) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [CompleteRegistryRecordTokenAuth](https://docs.aws.amazon.com/agent-registry-control/latest/APIReference/API_CompleteRegistryRecordTokenAuth.html)  **
+  - **Description:** Grants permission to complete a user-delegated OAuth authorization that records in a registry are waiting on
+  - **Resource types (\*required):** [registry\*](#list_agent-registry-resource-registry)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [CreatePublisher](https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_CreatePublisher.html)  **
+  - **Description:** Grants permission to create a publisher
+  - **Resource types (\*required):** [publisher\*](#list_agent-registry-resource-publisher)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_agent-registry-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_agent-registry-aws_TagKeys)
+  - **Access level:** Write
 
 - **   [CreateRegistry](https://docs.aws.amazon.com/agent-registry-control/latest/APIReference/API_CreateRegistry.html)  **
   - **Description:** Grants permission to create a new registry
@@ -164,6 +243,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create a new registry record
   - **Resource types (\*required):** [registry\*](#list_agent-registry-resource-registry)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_agent-registry-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_agent-registry-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [DeletePublisher](https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_DeletePublisher.html)  **
+  - **Description:** Grants permission to delete a publisher
+  - **Resource types (\*required):** [publisher\*](#list_agent-registry-resource-publisher)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteRegistry](https://docs.aws.amazon.com/agent-registry-control/latest/APIReference/API_DeleteRegistry.html)  **
@@ -178,9 +263,21 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [GetDiscoverableRegistryRecord](https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_BatchGetDiscoverableRegistryRecord.html)  **
-  - **Description:** Grants permission to retrieve an individual approved registry record. This is a permission-only action used for fine-grained access control with BatchGetApprovedRegistryRecord
+- **   [DisassociatePublisher](https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_DisassociatePublisher.html)  **
+  - **Description:** Grants permission to remove a registry record's publisher association
   - **Resource types (\*required):** [registry-record\*](#list_agent-registry-resource-registry-record)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [GetDiscoverableRegistryRecord](https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_BatchGetDiscoverableRegistryRecord.html)  **
+  - **Description:** Grants permission to retrieve an individual approved registry record. This is a permission-only action used for fine-grained access control with BatchGetDiscoverableRegistryRecord
+  - **Resource types (\*required):** [registry-record\*](#list_agent-registry-resource-registry-record)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetPublisher](https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_GetPublisher.html)  **
+  - **Description:** Grants permission to retrieve a publisher
+  - **Resource types (\*required):** [publisher\*](#list_agent-registry-resource-publisher)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
@@ -208,6 +305,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
+- **   [ListPublisherAssociations](https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_ListPublisherAssociations.html)  **
+  - **Description:** Grants permission to list the caller's publisher associations
+  - **Resource types (\*required):** [publisher\*](#list_agent-registry-resource-publisher)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Access level:** List
+
+- **   [ListPublishers](https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_ListPublishers.html)  **
+  - **Description:** Grants permission to list the caller's publishers
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
 - **   [ListRegistries](https://docs.aws.amazon.com/agent-registry-control/latest/APIReference/API_ListRegistries.html)  **
   - **Description:** Grants permission to list existing registries
   - **Resource types (\*required):**
@@ -222,6 +331,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListTagsForResource](https://docs.aws.amazon.com/agent-registry-control/latest/APIReference/API_ListTagsForResource.html)  **
   - **Description:** Grants permission to list tags for an Agent Registry resource
+  - **Resource types (\*required):** [publisher](#list_agent-registry-resource-publisher) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [registry-record](#list_agent-registry-resource-registry-record) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
   - **Access level:** List
@@ -240,15 +350,23 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [TagResource](https://docs.aws.amazon.com/agent-registry-control/latest/APIReference/API_TagResource.html)  **
   - **Description:** Grants permission to tag an Agent Registry resource
+  - **Resource types (\*required):** [publisher](#list_agent-registry-resource-publisher) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_agent-registry-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_agent-registry-aws_TagKeys)
   - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_agent-registry-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_agent-registry-aws_TagKeys)
   - **Resource types (\*required):** [registry-record](#list_agent-registry-resource-registry-record) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_agent-registry-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_agent-registry-aws_TagKeys)
   - **Access level:** Tagging, Write
 
 - **   [UntagResource](https://docs.aws.amazon.com/agent-registry-control/latest/APIReference/API_UntagResource.html)  **
   - **Description:** Grants permission to untag an Agent Registry resource
+  - **Resource types (\*required):** [publisher](#list_agent-registry-resource-publisher) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_agent-registry-aws_TagKeys)
   - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_agent-registry-aws_TagKeys)
   - **Resource types (\*required):** [registry-record](#list_agent-registry-resource-registry-record) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_agent-registry-aws_TagKeys)
   - **Access level:** Tagging, Write
+
+- **   [UpdatePublisherAssociationApprovalStatus](https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_UpdatePublisherAssociationApprovalStatus.html)  **
+  - **Description:** Grants permission to approve or reject a registry record's publisher association
+  - **Resource types (\*required):** [registry-record\*](#list_agent-registry-resource-registry-record)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
 
 - **   [UpdateRegistry](https://docs.aws.amazon.com/agent-registry-control/latest/APIReference/API_UpdateRegistry.html)  **
   - **Description:** Grants permission to update an existing registry
@@ -268,6 +386,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [ValidatePublisher](https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_ValidatePublisher.html)  **
+  - **Description:** Grants permission to start domain verification for a publisher
+  - **Resource types (\*required):** [publisher\*](#list_agent-registry-resource-publisher)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 ## Permission-only actions for AWS Agent Registry
 <a name="list_agent-registry-permission-only-actions"></a>
 
@@ -275,20 +399,20 @@ The following actions are defined by AWS Agent Registry but are not directly inv
 
 - **   [DeleteResourcePolicy](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-cross-account-sharing.html)  **
   - **Description:** Grants permission to delete the resource-based policy from a specified resource
-  - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [publisher](#list_agent-registry-resource-publisher) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [GetResourcePolicy](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-cross-account-sharing.html)  **
   - **Description:** Grants permission to retrieve the resource-based policy for a specified resource
-  - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [publisher](#list_agent-registry-resource-publisher) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [PutResourcePolicy](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-cross-account-sharing.html)  **
   - **Description:** Grants permission to set a resource-based policy for a specified resource
-  - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [publisher](#list_agent-registry-resource-publisher) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 ## Resource types defined by AWS Agent Registry
@@ -298,6 +422,7 @@ The following resource types are defined by this service and can be used in the 
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
+|  [publisher](https://docs.aws.amazon.com/agent-registry/latest/APIReference/publisher.html)  | arn:${Partition}:agent-registry::${Account}:publisher/${PublisherType}/${PublisherValue}/${PublisherId} | [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_) |
 |  [registry](https://docs.aws.amazon.com/agent-registry/latest/APIReference/registry.html)  | arn:${Partition}:agent-registry:${Region}:${Account}:registry/${RegistryId} | [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_) |
 |  [registry-record](https://docs.aws.amazon.com/agent-registry/latest/APIReference/registryRecord.html)  | arn:${Partition}:agent-registry:${Region}:${Account}:registry/${RegistryId}/record/${RecordId} | [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_) |
 

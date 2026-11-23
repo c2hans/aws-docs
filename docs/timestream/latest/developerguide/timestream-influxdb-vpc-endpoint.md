@@ -93,7 +93,7 @@ Every VPC endpoint has a VPC endpoint policy, but you are not required to specif
 
 However, for Timestream for InfluxDB resources, the principal must also have permission to call the operation from an [IAM policy](security-iam-for-influxdb.md) Therefore, in practice, the default policy says that if a principal has permission to call an operation on a resource, they can also call it by using the endpoint.
 
-```
+```json
 {
   "Statement": [
     {
@@ -131,7 +131,7 @@ The following AWS CLI command gets the policy for the endpoint with the specifie
 
 Before using this command, replace the example endpoint ID with a valid one from your account.
 
-```
+```bash
 $ aws ec2 describe-vpc-endpoints \
 
 --query 'VpcEndpoints[?VpcEndpointId==`{{vpc-endpoint-id}}`].[PolicyDocument]'

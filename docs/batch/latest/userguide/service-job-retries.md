@@ -26,7 +26,7 @@ Service job retry strategies are configured using [ServiceJobRetryStrategy](http
 
 The simplest retry strategy specifies the number of retry attempts that should be made if a service job fails:
 
-```
+```json
 {
   "retryStrategy": {
     "attempts": 3
@@ -46,7 +46,7 @@ You can use the `evaluateOnExit` parameter to specify conditions under which job
 
 The `evaluateOnExit` array can contain up to 5 retry strategies, each specifying an action (`RETRY` or `EXIT`) and conditions based on status reasons:
 
-```
+```json
 {
   "retryStrategy": {
     "attempts": 5,

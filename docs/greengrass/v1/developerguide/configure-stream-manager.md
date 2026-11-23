@@ -236,7 +236,7 @@ In the AWS CLI, use the system `GGStreamManager` Lambda function to configure st
 **Stream manager with default settings**
 The following example configuration enables stream manager with default settings. It sets the arbitrary function ID to `streamManager`.
 
-```
+```json
 {
     "FunctionArn": "arn:aws:lambda:::function:GGStreamManager:1",
     "FunctionConfiguration": {
@@ -255,7 +255,7 @@ For the `FunctionConfiguration` properties, you might know the following:
 **Stream manager with custom settings**  <a name="enable-stream-manager-custom-settings"></a>
 The following example configuration enables stream manager with custom values for the storage directory, server port, and thread pool size parameters.
 
-```
+```json
 {
     "FunctionArn": "arn:aws:lambda:::function:GGStreamManager:1",
     "FunctionConfiguration": {
@@ -278,7 +278,7 @@ AWS IoT Greengrass uses default values for [stream manager parameters](#stream-m
 **Stream manager with custom settings for Amazon S3 exports**  <a name="enable-stream-manager-custom-settings-s3"></a>
 The following example configuration enables stream manager with custom values for the upload directory and minimum multipart upload size parameters.
 
-```
+```json
 {
     "FunctionArn": "arn:aws:lambda:::function:GGStreamManager:1",
     "FunctionConfiguration": {

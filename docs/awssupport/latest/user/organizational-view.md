@@ -178,7 +178,7 @@ Trusted Advisor uses the following color code for check results:
 + `Blue` – Trusted Advisor can't determine the status of the check.
 In the following example, two checks are `Red`, one is `Green`, and one is `Yellow`.
 
-```
+```json
 {
     "numAccounts": 3,
     "filtersApplied": {
@@ -245,7 +245,7 @@ In the following example, two checks are `Red`, one is `Green`, and one is `Yell
 **Example : schema.json file**
 The `schema.json` file includes the schema for the checks in the report. The following example includes the IDs and properties for the IAM Password Policy (Yw2K9puPzl) and IAM Key Rotation (DqdJqYeRm5) checks.
 
-```
+```json
 {
     "Yw2K9puPzl": [
         "Password Policy",

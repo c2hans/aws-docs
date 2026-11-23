@@ -11,7 +11,7 @@ See [CreateProfile](https://docs.aws.amazon.com/customerprofiles/latest/APIRefer
 ## Parameter object
 <a name="createcustomerprofile-parameter"></a>
 
-```
+```json
 {
 "ProfileRequestData": {
     All of these fields are optional.

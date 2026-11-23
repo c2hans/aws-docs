@@ -24,7 +24,7 @@ To enable alarm actions for a CloudWatch alarm, call the CloudWatchClient’s `E
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/EnableAlarmActionsRequest.h>
@@ -34,7 +34,7 @@ To enable alarm actions for a CloudWatch alarm, call the CloudWatchClient’s `E
 
  **Code**
 
-```
+```cpp
     Aws::CloudWatch::CloudWatchClient cw;
     Aws::CloudWatch::Model::PutMetricAlarmRequest request;
     request.SetAlarmName(alarm_name);
@@ -88,7 +88,7 @@ To disable alarm actions for a CloudWatch alarm, call the CloudWatchClient’s `
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/DisableAlarmActionsRequest.h>
@@ -97,7 +97,7 @@ To disable alarm actions for a CloudWatch alarm, call the CloudWatchClient’s `
 
  **Code**
 
-```
+```cpp
         Aws::CloudWatch::CloudWatchClient cw;
 
         Aws::CloudWatch::Model::DisableAlarmActionsRequest disableAlarmActionsRequest;

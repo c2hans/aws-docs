@@ -72,7 +72,7 @@ Use the same secret across multiple endpoints in the same Region and on the same
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

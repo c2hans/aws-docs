@@ -41,7 +41,7 @@ You could create a dualstack (including support for IPv6), URL as follows:
 
 The following command returns the details of the workspace. You must replace {{my-workspace-id}} with the workspace ID of the workspace for which you want the details.
 
-```
+```cmd
 aws amp describe-workspace --workspace-id {{my-workspace-id}}
 ```
 

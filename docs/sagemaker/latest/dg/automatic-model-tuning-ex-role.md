@@ -18,7 +18,7 @@ To find the ARN of the IAM execution role attached to a notebook instance:
 
 Alternatively, [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable) users can retrieve the ARN of the execution role attached to their user profile or a notebook instance by running the following code:
 
-```
+```python
 from sagemaker import get_execution_role
 
 role = get_execution_role()

@@ -33,7 +33,7 @@ These actions allow you to: retrieve information about your organization; integr
 
 To grant these permissions, include the following statement in an AWS Identity and Access Management (IAM) policy for your account:
 
-```
+```json
 {
    "Sid": "Grant permissions to designate a delegated Macie administrator",
    "Effect": "Allow",
@@ -52,7 +52,7 @@ If you want to designate your AWS Organizations management account as the delega
 
 If you decide to grant this permission, add the following statement to the IAM policy for your AWS Organizations management account:
 
-```
+```json
 {
    "Sid": "Grant permissions to enable Macie",
    "Effect": "Allow",

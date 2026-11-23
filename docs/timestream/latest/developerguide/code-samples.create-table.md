@@ -21,7 +21,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java  ]
 
-```
+```java
     public void createTable() {
         System.out.println("Creating table");
         CreateTableRequest createTableRequest = new CreateTableRequest();
@@ -44,7 +44,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java v2  ]
 
-```
+```java
     public void createTable() {
         System.out.println("Creating table");
 
@@ -85,7 +85,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Python  ]
 
-```
+```python
     def create_table(self):
         print("Creating table")
         retention_properties = {
@@ -110,7 +110,7 @@ The following snippet uses AWS SDK for JavaScript v3. For more information about
 
 Also see [Class CreateTableCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-timestream-write/classes/createtablecommand.html) and [CreateTable](https://docs.aws.amazon.com/timestream/latest/developerguide/API_CreateTable.html).
 
-```
+```javascript
 import { TimestreamWriteClient, CreateTableCommand } from "@aws-sdk/client-timestream-write";
 const writeClient = new TimestreamWriteClient({ region: "us-east-1" });
 
@@ -140,7 +140,7 @@ try {
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/sample_apps/js).
 
-```
+```javascript
 async function createTable() {
     console.log("Creating Table");
     const params = {
@@ -173,7 +173,7 @@ async function createTable() {
 ------
 #### [  .NET  ]
 
-```
+```cs
         public async Task CreateTable()
         {
             Console.WriteLine("Creating Table");
@@ -218,7 +218,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java  ]
 
-```
+```java
     public void createTable(String databaseName, String tableName) {
         System.out.println("Creating table");
         CreateTableRequest createTableRequest = new CreateTableRequest();
@@ -245,7 +245,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Java v2  ]
 
-```
+```java
     public void createTable(String databaseName, String tableName) {
         System.out.println("Creating table");
 
@@ -277,7 +277,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Go  ]
 
-```
+```go
 // Create table.
     createTableInput := &timestreamwrite.CreateTableInput{
         DatabaseName: aws.String(*databaseName),
@@ -293,7 +293,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Python  ]
 
-```
+```python
     def create_table(self):
         print("Creating table")
         retention_properties = {
@@ -318,7 +318,7 @@ These code snippets are based on full sample applications on [GitHub](https://gi
 ------
 #### [  Node.js  ]
 
-```
+```javascript
 async function createTable() {
     console.log("Creating Table");
 
@@ -355,7 +355,7 @@ async function createTable() {
 ------
 #### [  .NET  ]
 
-```
+```cs
         public async Task CreateTable()
         {
             Console.WriteLine("Creating Table");

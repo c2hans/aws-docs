@@ -42,7 +42,7 @@ After you complete Step 2 in the [programmatic access section](/sdkref/latest/gu
 
   The following sample `config` file shows a default profile set up with SSO token provider configuration. The profile’s `sso_session` setting refers to the named `sso-session` section. The `sso-session` section contains settings to initiate an AWS access portal session.
 
-  ```
+  ```properties
   [default]
   sso_session = my-sso
   sso_account_id = 111122223333
@@ -65,7 +65,7 @@ If your development environment is not set up for programmatic access as previou
 
 Before running an application that accesses AWS services, you need an active AWS access portal session in order for the SDK to use IAM Identity Center authentication to resolve credentials. Run the following command in the AWS CLI to sign in to the AWS access portal.
 
-```
+```bash
 aws sso login
 ```
 
@@ -73,7 +73,7 @@ Since you have a default profile setup, you don’t need to call the command wit
 
 To test if you already have an active session, run the following AWS CLI command.
 
-```
+```bash
 aws sts get-caller-identity
 ```
 
@@ -106,7 +106,7 @@ As an alternative to [configuring IAM Identity Center single sign-on access](#se
 
 1. In the credentials file, paste the following placeholder text until you paste in working temporary credentials:
 
-   ```
+   ```properties
    [default]
    aws_access_key_id=<value from AWS access portal>
    aws_secret_access_key=<value from AWS access portal>
@@ -125,7 +125,7 @@ As an alternative to [configuring IAM Identity Center single sign-on access](#se
 
 1. Paste the copied credentials into your local `credentials` file and remove the generated profile name. Your file should resemble the following:
 
-   ```
+   ```properties
    [default]
    aws_access_key_id=AKIAIOSFODNN7EXAMPLE
    aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY

@@ -67,7 +67,7 @@ For the IAM permissions you need to call these operations, see [IAM permissions]
 
 1. Create a file named `policy.json`. The following example grants the same actions as the console's **Read and Write** preset.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -91,7 +91,7 @@ For the IAM permissions you need to call these operations, see [IAM permissions]
 
 1. Attach the policy to the recommendation:
 
-   ```
+   ```bash
    aws wellarchitected put-agent-recommendation-policy \
        --recommendation-arn "arn:aws:wellarchitected:{{REGION}}:{{OWNER_ACCOUNT_ID}}:agent-recommendation/{{RECOMMENDATION_ID}}" \
        --policy file://policy.json
@@ -171,7 +171,7 @@ To share with every account in an organization or OU, set `Principal` to `"*"` a
 
 For an organization:
 
-```
+```json
 "Principal": "*",
 "Condition": {
   "StringEquals": { "aws:PrincipalOrgID": "{{ORG_ID}}" },
@@ -181,7 +181,7 @@ For an organization:
 
 For an OU:
 
-```
+```json
 "Principal": "*",
 "Condition": {
   "StringLike": { "aws:PrincipalOrgPaths": "{{ORG_ID}}/{{ROOT_ID}}/{{OU_ID}}/*" },

@@ -27,7 +27,7 @@ This policy grants full access to Amazon Translate resources, the Amazon Compreh
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -62,7 +62,7 @@ This policy grants permission to access the Amazon Translate API operations that
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
     "Statement": [

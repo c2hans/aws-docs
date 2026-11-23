@@ -38,7 +38,7 @@ The following example creates a project with two regular blueprints and one fall
 
 **Python SDK**
 
-```
+```python
 response = client.create_data_automation_project(
     projectName={{project_name}},
     projectDescription="{{Provide a project description}}",
@@ -66,7 +66,7 @@ response = client.create_data_automation_project(
 
 **AWS CLI**
 
-```
+```bash
 aws bedrock-data-automation create-data-automation-project \
     --project-name {{project_name}} \
     --project-stage LIVE \
@@ -107,7 +107,7 @@ The `customOutputStatus` field in the output indicates how the document was proc
 
 The following is an example output snippet from the [InvokeDataAutomationAsync](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation-runtime_InvokeDataAutomationAsync.html) API when a fallback blueprint is used:
 
-```
+```json
 {
   "semanticModality": "DOCUMENT",
   "outputSegments": [

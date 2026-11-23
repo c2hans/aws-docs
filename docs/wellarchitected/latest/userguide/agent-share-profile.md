@@ -67,7 +67,7 @@ For the IAM permissions you need to call these operations, see [IAM permissions]
 
 1. Create a file named `policy.json`. The following example grants the same actions as the console's **Read only** preset.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -100,7 +100,7 @@ For the IAM permissions you need to call these operations, see [IAM permissions]
 
 1. Attach the policy to the profile:
 
-   ```
+   ```bash
    aws wellarchitected put-agent-profile-policy \
        --profile-arn "arn:aws:wellarchitected:{{REGION}}:{{OWNER_ACCOUNT_ID}}:agent-profile/{{PROFILE_ID}}" \
        --policy file://policy.json
@@ -174,7 +174,7 @@ To share with every account in an organization or OU, set `Principal` to `"*"` a
 
 For an organization:
 
-```
+```json
 "Principal": "*",
 "Condition": {
   "StringEquals": { "aws:PrincipalOrgID": "{{ORG_ID}}" },
@@ -184,7 +184,7 @@ For an organization:
 
 For an OU:
 
-```
+```json
 "Principal": "*",
 "Condition": {
   "StringLike": { "aws:PrincipalOrgPaths": "{{ORG_ID}}/{{ROOT_ID}}/{{OU_ID}}/*" },

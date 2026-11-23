@@ -10,7 +10,7 @@ You define a stack by extending or inheriting from the [`Stack`](https://docs.aw
 
 **Example**
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 
@@ -24,7 +24,7 @@ export class MyCdkStack extends cdk.Stack {
 }
 ```
 
-```
+```javascript
 const { Stack } = require('aws-cdk-lib');
 
 class MyCdkStack extends Stack {
@@ -39,7 +39,7 @@ class MyCdkStack extends Stack {
 module.exports = { MyCdkStack }
 ```
 
-```
+```python
 from aws_cdk import (
   Stack,
 )
@@ -53,7 +53,7 @@ class MyCdkStack(Stack):
     # Define your constructs here
 ```
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -73,7 +73,7 @@ public class MyCdkStack extends Stack {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 
@@ -89,7 +89,7 @@ namespace MyCdk
 }
 ```
 
-```
+```go
 package main
 
 import (
@@ -137,7 +137,7 @@ The following is an example that creates a CDK stack named `MyCdkStack`. Here, t
 
 **Example**
 
-```
+```javascript
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
@@ -148,7 +148,7 @@ new MyCdkStack(app, 'MyCdkStack', {
 });
 ```
 
-```
+```javascript
 #!/usr/bin/env node
 
 const cdk = require('aws-cdk-lib');
@@ -160,7 +160,7 @@ new MyCdkStack(app, 'MyCdkStack', {
 ```
 Located in `app.py`:
 
-```
+```python
 #!/usr/bin/env python3
 import os
 
@@ -174,7 +174,7 @@ MyCdkStack(app, "MyCdkStack",)
 app.synth()
 ```
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.App;
@@ -195,7 +195,7 @@ public class MyCdkApp {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using System;
 using System.Collections.Generic;
@@ -216,7 +216,7 @@ namespace MyCdk
 }
 ```
 
-```
+```go
 package main
 
 import (
@@ -248,7 +248,7 @@ The following example creates a CDK app that contains two stacks:
 
 **Example**
 
-```
+```javascript
 const app = new App();
 
 new MyFirstStack(app, 'stack1');
@@ -257,7 +257,7 @@ new MySecondStack(app, 'stack2');
 app.synth();
 ```
 
-```
+```javascript
 const app = new App();
 
 new MyFirstStack(app, 'stack1');
@@ -266,7 +266,7 @@ new MySecondStack(app, 'stack2');
 app.synth();
 ```
 
-```
+```python
 app = App()
 
 MyFirstStack(app, 'stack1')
@@ -275,7 +275,7 @@ MySecondStack(app, 'stack2')
 app.synth()
 ```
 
-```
+```java
 App app = new App();
 
 new MyFirstStack(app, "stack1");
@@ -284,7 +284,7 @@ new MySecondStack(app, "stack2");
 app.synth();
 ```
 
-```
+```csharp
 var app = new App();
 
 new MyFirstStack(app, "stack1");
@@ -293,7 +293,7 @@ new MySecondStack(app, "stack2");
 app.Synth();
 ```
 
-```
+```go
 package main
 
 import (
@@ -385,7 +385,7 @@ When you run the `cdk synth` command for an app with multiple stacks, the cloud 
 
 You can synthesize each template by specifying the stack name in the `cdk synth` command. The following example synthesizes the template for `stack1`:
 
-```
+```bash
 $ cdk synth <stack1>
 ```
 
@@ -400,7 +400,7 @@ Like any other construct, stacks can be composed together into groups. The follo
 
 **Example**
 
-```
+```javascript
 import { App, Stack } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 
@@ -432,7 +432,7 @@ new MyService(app, "prod", { prod: true });
 app.synth();
 ```
 
-```
+```javascript
 const { App, Stack } = require('aws-cdk-lib');
 const { Construct } = require('constructs');
 
@@ -461,7 +461,7 @@ new MyService(app, "prod", { prod: true });
 app.synth();
 ```
 
-```
+```python
 from aws_cdk import App, Stack
 from constructs import Construct
 
@@ -488,7 +488,7 @@ MyService(app, "prod", prod=True)
 app.synth()
 ```
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.App;
@@ -542,7 +542,7 @@ public class MyApp {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 
@@ -584,7 +584,7 @@ class Program
 }
 ```
 
-```
+```go
 package main
 
 import (
@@ -696,7 +696,7 @@ func main() {
 ```
 This AWS CDK app eventually consists of six stacks, three for each environment:
 
-```
+```bash
 $ cdk ls
 
 betacpDA8372D3
@@ -711,24 +711,24 @@ The physical names of the AWS CloudFormation stacks are automatically determined
 
 **Example**
 
-```
+```javascript
 new MyStack(this, 'not:a:stack:name', { stackName: 'this-is-stack-name' });
 ```
 
-```
+```javascript
 new MyStack(this, 'not:a:stack:name', { stackName: 'this-is-stack-name' });
 ```
 
-```
+```python
 MyStack(self, "not:a:stack:name", stack_name="this-is-stack-name")
 ```
 
-```
+```java
 new MyStack(this, "not:a:stack:name", StackProps.builder()
     .StackName("this-is-stack-name").build());
 ```
 
-```
+```csharp
 new MyStack(this, "not:a:stack:name", new StackProps
 {
     StackName = "this-is-stack-name"

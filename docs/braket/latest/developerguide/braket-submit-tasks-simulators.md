@@ -106,7 +106,7 @@ For more information about results, see [Result types](https://docs.aws.amazon.c
 
  **Noise gates and limitations**
 
-```
+```python
 AmplitudeDamping
     Probability has to be within [0,1]
 BitFlip

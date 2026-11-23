@@ -70,7 +70,7 @@ For more information, see [Work with an impaired Amazon EBS volume](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example describes the status of the specified volume.**
 
-```
+```powershell
 Get-EC2VolumeStatus -VolumeId vol-12345678
 ```
 **Output:**
@@ -83,7 +83,7 @@ VolumeId         : vol-12345678
 VolumeStatus     : Amazon.EC2.Model.VolumeStatusInfo
 ```
 
-```
+```powershell
 (Get-EC2VolumeStatus -VolumeId vol-12345678).VolumeStatus
 ```
 **Output:**
@@ -94,7 +94,7 @@ Details                         Status
 {io-enabled, io-performance}    ok
 ```
 
-```
+```powershell
 (Get-EC2VolumeStatus -VolumeId vol-12345678).VolumeStatus.Details
 ```
 **Output:**
@@ -110,7 +110,7 @@ io-performance                  not-applicable
 **Tools for PowerShell V5**
 **Example 1: This example describes the status of the specified volume.**
 
-```
+```powershell
 Get-EC2VolumeStatus -VolumeId vol-12345678
 ```
 **Output:**
@@ -123,7 +123,7 @@ VolumeId         : vol-12345678
 VolumeStatus     : Amazon.EC2.Model.VolumeStatusInfo
 ```
 
-```
+```powershell
 (Get-EC2VolumeStatus -VolumeId vol-12345678).VolumeStatus
 ```
 **Output:**
@@ -134,7 +134,7 @@ Details                         Status
 {io-enabled, io-performance}    ok
 ```
 
-```
+```powershell
 (Get-EC2VolumeStatus -VolumeId vol-12345678).VolumeStatus.Details
 ```
 **Output:**

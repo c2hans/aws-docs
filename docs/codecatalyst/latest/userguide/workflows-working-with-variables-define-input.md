@@ -66,7 +66,7 @@ For more information about variables, see [Using variables in workflows](workflo
 
 1. In a workflow action, add code similar to the following:
 
-   ```
+   ```yaml
    {{action-name}}:
      Inputs:
        Variables:

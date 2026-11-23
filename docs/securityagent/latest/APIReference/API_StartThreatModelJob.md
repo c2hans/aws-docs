@@ -75,7 +75,7 @@ Type: Timestamp
  ** [status](#API_StartThreatModelJob_ResponseSyntax) **   <a name="securityagent-StartThreatModelJob-response-status"></a>
 The current status of the threat model job.
 Type: String
-Valid Values: `IN_PROGRESS | STOPPING | STOPPED | FAILED | COMPLETED`
+Valid Values: `IN_PROGRESS | STOPPING | STOPPED | PAUSING | PAUSED | FAILED | COMPLETED`
 
  ** [threatModelId](#API_StartThreatModelJob_ResponseSyntax) **   <a name="securityagent-StartThreatModelJob-response-threatModelId"></a>
 The unique identifier of the threat model.

@@ -26,7 +26,7 @@ The following example shows the default VPC endpoint policy of the shared VPC ow
 **Example shared VPC endpoint policy**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

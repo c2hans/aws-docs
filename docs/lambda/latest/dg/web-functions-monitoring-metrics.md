@@ -87,7 +87,7 @@ Create CloudWatch alarms to detect issues such as elevated error rates or thrott
 
 The following command creates an alarm that triggers when callers receive more than five 5xx responses from the endpoint in a five-minute period.
 
-```
+```bash
 aws cloudwatch put-metric-alarm \
     --alarm-name {{my-web-app-prod-5xx}} \
     --namespace AWS/Lambda/Web \

@@ -33,28 +33,28 @@ Follow the steps in this section to set up a Linux or Windows device to use as y
 1. Install the Java runtime, which AWS IoT Greengrass Core software requires to run. We recommend that you use [Amazon Corretto](https://aws.amazon.com/corretto/) or [OpenJDK](https://openjdk.java.net/) long-term support versions. Version 8 or higher is required. The following commands show you how to install OpenJDK on your device.
    + For Debian-based or Ubuntu-based distributions:
 
-     ```
+     ```bash
      sudo apt install default-jdk
      ```
    + For Red Hat-based distributions:
 
-     ```
+     ```bash
      sudo yum install java-11-openjdk-devel
      ```
    + For Amazon Linux 2:
 
-     ```
+     ```bash
      sudo amazon-linux-extras install java-openjdk11
      ```
    + For Amazon Linux 2023:
 
-     ```
+     ```bash
      sudo dnf install java-11-amazon-corretto -y
      ```
 
    When the installation completes, run the following command to verify that Java runs on your Linux device.
 
-   ```
+   ```bash
    java -version
    ```
 
@@ -68,7 +68,7 @@ Follow the steps in this section to set up a Linux or Windows device to use as y
 
 1. (Optional) Create the default system user and group that runs components on the device. You can also choose to let the AWS IoT Greengrass Core software installer create this user and group during installation with the `--component-default-user` installer argument. For more information, see [Installer arguments](configure-installer.md).
 
-   ```
+   ```bash
    sudo useradd --system --create-home ggc_user
    sudo groupadd --system ggc_group
    ```
@@ -77,7 +77,7 @@ Follow the steps in this section to set up a Linux or Windows device to use as y
 
    1. Run the following command to open the `/etc/sudoers` file.
 
-      ```
+      ```bash
       sudo visudo
       ```
 
@@ -133,24 +133,24 @@ This feature is available for v2.5.0 and later of the [Greengrass nucleus compon
 
 1. <a name="set-up-windows-device-environment-create"></a>Create the default user in the LocalSystem account on the Windows device. Replace {{password}} with a secure password.
 
-   ```
+   ```cmd
    net user /add ggc_user {{password}}
    ```
 **Tip**  <a name="windows-password-expiration-tip"></a>
 Depending on your Windows configuration, the user's password might be set to expire at a date in the future. To ensure your Greengrass applications continue to operate, track when the password expires, and update it before it expires. You can also set the user's password to never expire.
 To check when a user and its password expire, run the following command.
 
-     ```
+     ```cmd
      net user {{ggc_user}} | findstr /C:expires
      ```
 To set a user's password to never expire, run the following command.
 
-     ```
+     ```cmd
      wmic UserAccount where "Name='{{ggc_user}}'" set PasswordExpires=False
      ```
 If you’re using Windows 10 or later where the [`wmic` command is deprecated](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmic), run the following PowerShell command.
 
-     ```
+     ```powershell
      Get-CimInstance -Query "SELECT * from Win32_UserAccount WHERE name = '{{ggc_user}}'" | Set-CimInstance -Property @{PasswordExpires="False"}
      ```
 
@@ -158,7 +158,7 @@ If you’re using Windows 10 or later where the [`wmic` command is deprecated](h
 
 1. <a name="set-up-windows-device-credentials"></a>Use the PsExec utility to store the user name and password for the default user in the Credential Manager instance for the LocalSystem account. Replace {{password}} with the user's password that you set earlier.
 
-   ```
+   ```cmd
    psexec -s cmd /c cmdkey /generic:ggc_user /user:ggc_user /pass:{{password}}
    ```
 
@@ -186,7 +186,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ Linux or Unix ]
 
-       ```
+       ```bash
        export AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
        export AWS_SECRET_ACCESS_KEY={{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
        export AWS_SESSION_TOKEN={{AQoDYXdzEJr1K...o5OytwEXAMPLE=}}
@@ -195,7 +195,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-       ```
+       ```bash
        set AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
        set AWS_SECRET_ACCESS_KEY={{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
        set AWS_SESSION_TOKEN={{AQoDYXdzEJr1K...o5OytwEXAMPLE=}}
@@ -204,7 +204,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ PowerShell ]
 
-       ```
+       ```bash
        $env:AWS_ACCESS_KEY_ID="{{AKIAIOSFODNN7EXAMPLE}}"
        $env:AWS_SECRET_ACCESS_KEY="{{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}"
        $env:AWS_SESSION_TOKEN="{{AQoDYXdzEJr1K...o5OytwEXAMPLE=}}"
@@ -220,7 +220,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ Linux or Unix ]
 
-       ```
+       ```bash
        export AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
        export AWS_SECRET_ACCESS_KEY={{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
        export AWS_SESSION_TOKEN={{AQoDYXdzEJr1K...o5OytwEXAMPLE=}}
@@ -229,7 +229,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-       ```
+       ```bash
        set AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
        set AWS_SECRET_ACCESS_KEY={{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
        set AWS_SESSION_TOKEN={{AQoDYXdzEJr1K...o5OytwEXAMPLE=}}
@@ -238,7 +238,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ PowerShell ]
 
-       ```
+       ```bash
        $env:AWS_ACCESS_KEY_ID="{{AKIAIOSFODNN7EXAMPLE}}"
        $env:AWS_SECRET_ACCESS_KEY="{{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}"
        $env:AWS_SESSION_TOKEN="{{AQoDYXdzEJr1K...o5OytwEXAMPLE=}}"
@@ -254,7 +254,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ Linux or Unix ]
 
-       ```
+       ```bash
        export AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
        export AWS_SECRET_ACCESS_KEY={{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
        ```
@@ -262,7 +262,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-       ```
+       ```cmd
        set AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
        set AWS_SECRET_ACCESS_KEY={{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
        ```
@@ -270,7 +270,7 @@ The installer doesn't save or store your credentials.
 ------
 #### [ PowerShell ]
 
-       ```
+       ```ps
        $env:AWS_ACCESS_KEY_ID="{{AKIAIOSFODNN7EXAMPLE}}"
        $env:AWS_SECRET_ACCESS_KEY="{{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}"
        ```
@@ -301,21 +301,21 @@ https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-{{version}}.zip
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip > greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip > greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    iwr -Uri https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip -OutFile greengrass-nucleus-latest.zip
    ```
 
@@ -332,7 +332,7 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       jarsigner -verify -certs -verbose greengrass-nucleus-latest.zip
       ```
 
@@ -341,7 +341,7 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 
       The file name might look different depending on the JDK version you install. Replace {{`jdk17.0.6_10`}} with the JDK version you installed.
 
-      ```
+      ```cmd
       "C:\\Program Files\\Amazon Corretto\\{{jdk17.0.6_10}}\\bin\\jarsigner.exe" -verify -certs -verbose greengrass-nucleus-latest.zip
       ```
 
@@ -350,7 +350,7 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 
       The file name might look different depending on the JDK version you install. Replace {{`jdk17.0.6_10`}} with the JDK version you installed.
 
-      ```
+      ```ps
       'C:\\Program Files\\Amazon Corretto\\{{jdk17.0.6_10}}\\bin\\jarsigner.exe' -verify -certs -verbose greengrass-nucleus-latest.zip
       ```
 
@@ -360,13 +360,13 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 
       1. If the Greengrass nucleus zip file is signed, the output contains the following statement:
 
-         ```
+         ```bash
          jar verified.
          ```
 
       1. If the Greengrass nucleus zip file isn't signed, the output contains the following statement:
 
-         ```
+         ```bash
          jar is unsigned.
          ```
 
@@ -377,21 +377,21 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    unzip greengrass-nucleus-latest.zip -d {{GreengrassInstaller}} && rm greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    mkdir {{GreengrassInstaller}} && tar -xf greengrass-nucleus-latest.zip -C {{GreengrassInstaller}} && del greengrass-nucleus-latest.zip
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Expand-Archive -Path greengrass-nucleus-latest.zip -DestinationPath .\\{{GreengrassInstaller}}
    rm greengrass-nucleus-latest.zip
    ```
@@ -400,7 +400,7 @@ This feature is available with Greengrass nucleus version 2.9.5 and later.
 
 1. (Optional) Run the following command to see the version of the AWS IoT Greengrass Core software.
 
-   ```
+   ```bash
    java -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar --version
    ```
 
@@ -454,7 +454,7 @@ The thing group name can't contain colon (`:`) characters.
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo -E java -Droot="{{/greengrass/v2}}" -Dlog.store=FILE \
      -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar \
      --aws-region {{region}} \
@@ -471,7 +471,7 @@ The thing group name can't contain colon (`:`) characters.
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    java -Droot="{{C:\greengrass\v2}}" "-Dlog.store=FILE" ^
      -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar ^
      --aws-region {{region}} ^
@@ -488,7 +488,7 @@ The thing group name can't contain colon (`:`) characters.
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    java -Droot="{{C:\greengrass\v2}}" "-Dlog.store=FILE" `
      -jar ./{{GreengrassInstaller}}/lib/Greengrass.jar `
      --aws-region {{region}} `

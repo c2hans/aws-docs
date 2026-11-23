@@ -24,7 +24,7 @@ The rule runs when the event belongs to one of the specified forecast groups.
 + ComparisonValue – "$.Scheduling.ForecastGroup.Id"
 + Negate - false
 
-```
+```json
 {
     "Operator": "CONTAINS_ANY",
     "Operands": ["forecastGroupId"],
@@ -44,7 +44,7 @@ The rule runs when the event affects at least one of the specified staffing grou
 + ComparisonValue – "$.Scheduling.StaffingGroups[\*].Id"
 + Negate - false
 
-```
+```json
 {
     "Operator": "CONTAINS_ANY",
     "Operands": ["staffingGroupId1", "staffingGroupId2"],
@@ -64,7 +64,7 @@ The rule runs when the event affects at least one of the specified agents.
 + ComparisonValue – "$.Scheduling.ImpactedAgents[\*].Id"
 + Negate - false
 
-```
+```json
 {
     "Operator": "CONTAINS_ANY",
     "Operands": ["agentId1", "agentId2"],
@@ -76,7 +76,7 @@ The rule runs when the event affects at least one of the specified agents.
 ## Example rule function
 <a name="OnSchedulePublish-example"></a>
 
-```
+```json
 {
     "Version": "2022-11-25",
     "RuleFunction": {

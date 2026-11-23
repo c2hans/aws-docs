@@ -91,7 +91,7 @@ The [Python edition of the CDK API Reference](https://docs.aws.amazon.com/cdk/ap
 
 The names used for importing AWS Construct Library modules into your Python code are similar to their package names. Simply replace the hyphens with underscores.
 
-```
+```python
 import aws_cdk.aws_s3 as s3
 import aws_cdk.aws_lambda as lambda_
 ```
@@ -99,17 +99,17 @@ import aws_cdk.aws_lambda as lambda_
 We recommend the following practices when importing AWS CDK classes and AWS Construct Library modules in your applications. Following these guidelines will help make your code consistent with other AWS CDK applications as well as easier to understand.
 + Generally, import individual classes from `aws_cdk.core`.
 
-  ```
+  ```python
   from aws_cdk.core import App, Construct
   ```
 + If you need many classes from the core module, you may use a namespace alias of `cdk` instead of importing individual classes. Avoid doing both.
 
-  ```
+  ```python
   import aws_cdk.core as cdk
   ```
 + Generally, import AWS Construct Libraries using short namespace aliases.
 
-  ```
+  ```python
   import aws_cdk.aws_s3 as s3
   ```
 
@@ -154,7 +154,7 @@ In Python, props are expressed as keyword arguments. If an argument contains nes
 
 For example, in a Amazon S3 bucket's `add_lifecycle_rule` method, the `transitions` property is a list of `Transition` instances.
 
-```
+```python
 bucket.add_lifecycle_rule(
   transitions=[
     Transition(
@@ -195,7 +195,7 @@ Python doesn't have an interface feature as some other languages do, though it d
 
 To indicate that a class implements a particular interface, you can use the `@jsii.implements` decorator:
 
-```
+```python
 from aws_cdk.core import IAspect, IConstruct
 import jsii
 

@@ -75,7 +75,7 @@ None
 
 1. Retrieve all current FSRM settings.
 
-   ```
+   ```powershell
    Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
    Get-FSxFSRMSetting
    }
@@ -127,7 +127,7 @@ None
 
 1. Configure default file screen auditing with a 30-day history.
 
-   ```
+   ```powershell
    Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
        Set-FSxFSRMSetting -ReportFileScreenAuditDaysSince 30 -PassThru
    }
@@ -135,7 +135,7 @@ None
 
 1. Configure default large file report settings.
 
-   ```
+   ```powershell
    Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
        Set-FSxFSRMSetting -ReportLargeFileMinimum 100MB -ReportLargeFilePattern "*.iso" -PassThru
    }

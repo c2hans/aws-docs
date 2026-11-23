@@ -69,7 +69,7 @@ AWS Data Exchange encrypts traffic end to end using Transport Layer Security (TL
 
 An API on AWS Data Exchange passes through all headers (except for the headers listed in [Header forwarding](#header-forwarding)), body, http method, path, and query strings as-is from the customer request and appends the following headers.
 
-```
+```json
 // These headers help prevent Confused Deputy attacks.  They enable the SourceAccount
 // and SourceArn variables in IAM policies.
 'x-amz-source-account': ACCOUNT_ID,

@@ -14,7 +14,7 @@ The following example logging/invocation policy allows any server (and workflow)
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -45,7 +45,7 @@ The following example logging/invocation policy allows a specific server (and wo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

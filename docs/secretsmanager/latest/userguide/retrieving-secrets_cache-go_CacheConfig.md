@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 
 Cache configuration options for a [Cache](retrieving-secrets_cache-go_cache.md), such as maximum cache size, default [version stage](whats-in-a-secret.md#term_version), and Time to Live (TTL) for cached secrets.
 
-```
+```go
 type CacheConfig struct {
 
     // The maximum cache size. The default is 1024 secrets.

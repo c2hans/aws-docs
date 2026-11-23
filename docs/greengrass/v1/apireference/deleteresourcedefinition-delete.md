@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="deleteresourcedefinition-delete-cli"></a>
 
-```
+```bash
 aws greengrass delete-resource-definition \
   --resource-definition-id <value>  \
   [--cli-input-json <value>] \
@@ -24,7 +24,7 @@ aws greengrass delete-resource-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "ResourceDefinitionId": "string"
 }
@@ -45,7 +45,7 @@ type: string
 Success.
  [ Empty](definitions-empty.md)
 
-```
+```json
 {
 }
 ```
@@ -57,7 +57,7 @@ type: object
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

@@ -35,7 +35,7 @@ This topic explains how to create the following resources for the [message archi
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

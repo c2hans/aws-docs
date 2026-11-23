@@ -26,7 +26,7 @@ Use `LoggingMetricPublisher` when you need to:
 
 To see `LoggingMetricPublisher` output, configure your logging framework to display `INFO` level messages. The following `log4j2.xml` configuration ensures metrics appear in your console:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Appenders>
@@ -51,7 +51,7 @@ This configuration directs the SDK to output metrics to your console at the `INF
 
 The following example shows how to create a `LoggingMetricPublisher` and use it with an Amazon Simple Storage Service client:
 
-```
+```java
 import software.amazon.awssdk.metrics.LoggingMetricPublisher;
 import software.amazon.awssdk.metrics.MetricPublisher;
 import software.amazon.awssdk.regions.Region;
@@ -83,7 +83,7 @@ s3Client.close();
 
 The following example shows how to use the PRETTY format for easier reading during development:
 
-```
+```java
 import org.slf4j.event.Level;
 import software.amazon.awssdk.metrics.LoggingMetricPublisher;
 
@@ -107,7 +107,7 @@ The following example demonstrates using `LoggingMetricPublisher` in two ways:
 + At the service client level
 + For a single request
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.event.Level;
@@ -228,7 +228,7 @@ INFO  S3LoggingMetricPublisherDemo - Found 6 buckets in your AWS account.
 
 Maven `pom.xml` file
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -312,7 +312,7 @@ Maven `pom.xml` file
 
 `Log4j2.xml` configuration file
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Appenders>

@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 | Action | Method | Description |
 | --- | --- | --- |
 | UpdateDependency | POST | Update dependency metadata (comment, criticality classification). |
-| ListDependencies | GET | List discovered dependencies for a service. |
+| ListDependencies | GET | List discovered dependencies for a service. Without serviceArn, lists dependencies for all of your services. For a delegated administrator or management account, that includes the services of every member account in the organization. |

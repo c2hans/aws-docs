@@ -57,7 +57,7 @@ Pattern: `[A-Za-z0-9_/-]+`
 Required: Yes
 
  ** [deploymentParameter](#API_marketplace-deployment_PutDeploymentParameter_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-deployment_PutDeploymentParameter-request-deploymentParameter"></a>
-The deployment parameter targeted to the acceptor of an agreement for which to create the AWS Secret Manager resource.
+The deployment parameter targeted to the acceptor of an agreement for which to create the AWS Secrets Manager resource.
 Type: [DeploymentParameterInput](API_marketplace-deployment_DeploymentParameterInput.md) object
 Required: Yes
 
@@ -79,9 +79,9 @@ A map of key-value pairs, where each pair represents a tag saved to the resource
 Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Key Pattern: `[a-zA-Z0-9/_+=.:@-]+`
-Value Length Constraints: Minimum length of 1. Maximum length of 256.
-Value Pattern: `[a-zA-Z0-9/_+=.:@-]+`
+Key Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
+Value Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
 Required: No
 
 ## Response Syntax
@@ -131,9 +131,9 @@ A map of key-value pairs, where each pair represents a tag saved to the resource
 Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Key Pattern: `[a-zA-Z0-9/_+=.:@-]+`
-Value Length Constraints: Minimum length of 1. Maximum length of 256.
-Value Pattern: `[a-zA-Z0-9/_+=.:@-]+`
+Key Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
+Value Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
 
 ## Errors
 <a name="API_marketplace-deployment_PutDeploymentParameter_Errors"></a>

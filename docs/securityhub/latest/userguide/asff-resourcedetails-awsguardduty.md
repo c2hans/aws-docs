@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsG
 
 **Example**
 
-```
+```JSON
 "AwsGuardDutyDetector": {
     "FindingPublishingFrequency": "SIX_HOURS",
     "ServiceRole": "arn:aws:iam::123456789012:role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty",

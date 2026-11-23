@@ -63,7 +63,7 @@ nitro-cli sign-eif --eif-path {{sample.eif}} --private-key arn:aws:kms:eu-west-1
 
 **Output**
 
-```
+```json
 Enclave Image successfully signed.{
 "Measurements": {
 "HashAlgorithm": "Sha384 { ... }",

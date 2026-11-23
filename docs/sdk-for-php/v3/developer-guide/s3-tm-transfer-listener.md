@@ -23,7 +23,7 @@ The `progress_snapshot` property also carries the `reason` property for failure 
 
 The following code shows the `AbstractTransferListener` class structure:
 
-```
+```php
 <?php
 
 namespace Aws\S3\S3Transfer\Progress;
@@ -75,7 +75,7 @@ abstract class AbstractTransferListener
 
 The following example shows a `AbstractTransferListener` implementation that overrides only the `transferInitiated` and `transferFail` methods:
 
-```
+```php
 <?php
 
 namespace MyApp\Listeners;
@@ -109,7 +109,7 @@ class MyCustomListener extends AbstractTransferListener
 }
 ```
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\UploadRequest;

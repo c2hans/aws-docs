@@ -36,7 +36,7 @@ The minimum policy to achieve this might look like this example:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

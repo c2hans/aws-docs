@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/invento
 
 The following sample shows the complete list of metadata collected by each AWS Systems Manager Inventory plugin.
 
-```
+```json
 {
     "typeName": "AWS:InstanceInformation",
     "version": "1.0",

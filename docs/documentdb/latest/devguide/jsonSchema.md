@@ -59,7 +59,7 @@ To view a code example for using the `$jsonSchema` command, choose the tab for t
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function filterByJsonSchema() {
@@ -88,7 +88,7 @@ filterByJsonSchema();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def filter_by_json_schema():

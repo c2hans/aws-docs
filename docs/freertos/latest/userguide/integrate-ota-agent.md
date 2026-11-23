@@ -25,7 +25,7 @@ For a working example that uses the AWS IoT MQTT broker, see the OTA demo code i
 
 Because the OTA Agent is its own task, the intentional one-second delay in this example affects this application only. It has no impact on the performance of the Agent.
 
-```
+```c
 static BaseType_t prvRunOTADemo( void )
 {
     /* Status indicating a successful demo or not. */
@@ -131,7 +131,7 @@ Here is the high-level flow of this demo application:
 
 The previous example used `prvOtaAppCallback` as the callback handler for OTA Agent events. (See the fourth parameter to the `OTA_Init` API call). If you want to implement custom handling of the completion events, you must change the default handling in the OTA demo/application. During the OTA process, the OTA Agent can send one of the following event enums to the callback handler. It is up to the application developer to decide how and when to handle these events.
 
-```
+```c
 /**
  * @ingroup ota_enum_types
  * @brief OTA Job callback events.

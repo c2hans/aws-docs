@@ -26,7 +26,7 @@ If you plan to use CloudFormation templates that are compatible with CodeDeploy 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

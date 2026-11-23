@@ -98,7 +98,7 @@ When the rule receives a message from a matching topic, it takes the `{{device_i
 
  For example, an MQTT message from weather sensor device number 32 uses the `device/32/data` topic and has a message payload that looks like this:
 
-```
+```json
 {
   "temperature": 38,
   "humidity": 80,
@@ -112,7 +112,7 @@ When the rule receives a message from a matching topic, it takes the `{{device_i
 
 The rule's rule query statement takes the `temperature` value from the message payload, the `{{device_id}}` from the topic name, and adds the constant `max_temperature` value to send a message payload that looks like this to the Amazon SNS topic:
 
-```
+```json
 {
   "device_id": "32",
   "reported_temperature": 38,
@@ -213,7 +213,7 @@ Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com/iot
 
    1. Copy the sample data shown here and, in the edit box below the topic name, paste the sample data.
 
-      ```
+      ```json
       {
         "temperature": 38,
         "humidity": 80,
@@ -235,7 +235,7 @@ Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com/iot
 
    1. Under **Subscriptions**, choose **device/\+/data** to check that the message payload matches what you just published and looks like this:
 
-      ```
+      ```json
       {
         "temperature": 38,
         "humidity": 80,
@@ -249,7 +249,7 @@ Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com/iot
 
    1. Check the phone that you used to subscribe to the SNS topic and confirm the contents of the message payload look like this:
 
-      ```
+      ```json
       {"device_id":"32","reported_temperature":38,"max_temperature":30}
       ```
 
@@ -271,7 +271,7 @@ Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com/iot
 
    1. Copy the sample data shown here and, in the edit box below the topic name, paste the sample data.
 
-      ```
+      ```json
       {
         "temperature": 28,
         "humidity": 80,

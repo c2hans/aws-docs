@@ -52,7 +52,7 @@ Supports CORS preflight requests.
 #### POST schema
 <a name="resourceshares-request-body-post-example"></a>
 
-```
+```json
 {
   "jobId": "string",
   "supportCaseId": "string"
@@ -65,7 +65,7 @@ Supports CORS preflight requests.
 #### CreateResourceShareResponse schema
 <a name="resourceshares-response-body-createresourceshareresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -73,7 +73,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="resourceshares-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

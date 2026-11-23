@@ -36,7 +36,7 @@ The POSITION function returns an `INTEGER` corresponding to the position of the 
 
 To return the position of the string `fish` within the word `dog`, use the following example.
 
-```
+```sql
 SELECT POSITION('fish' IN 'dog');
 
 +-----------+
@@ -48,7 +48,7 @@ SELECT POSITION('fish' IN 'dog');
 
 To return the position of the string `fish` within the word `dogfish`, use the following example.
 
-```
+```sql
 SELECT POSITION('fish' IN 'dogfish');
 
 +-----------+
@@ -62,7 +62,7 @@ SELECT POSITION('fish' IN 'dogfish');
 
 To return the number of distinct sales transactions with a commission over 999.00 from the SALES table, use the following example. This command counts commissions greater than 999.00 by checking if the decimal is more than 4 places from the beginning of the commission value.
 
-```
+```sql
 SELECT DISTINCT POSITION('.' IN commission), COUNT (POSITION('.' IN commission))
 FROM sales
 WHERE POSITION('.' IN commission) > 4

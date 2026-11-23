@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 + Verify SSM Agent version is 3.3.2746.0 or later
 + Add fallback logic for older agent versions:
 
-  ```
+  ```bash
   if [ -z "${SSM_parameterName+x}" ]; then
       export SSM_parameterName="{{parameterName}}"
   fi
@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 **Solution:**
 + Use proper quoting when referencing environment variables:
 
-  ```
+  ```bash
   # Correct
   echo "$SSM_{{parameter-name}}"
 
@@ -42,7 +42,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 **Solution:**
 + Use platform-specific environment variable syntax:
 
-  ```
+  ```powershell
   # PowerShell
   $env:SSM_{{parameter-name}}
 
@@ -56,7 +56,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 **Solution:**
 + Always use proper escaping when including parameter values in commands:
 
-  ```
+  ```bash
   # Correct
   mysql_command="mysql -u \"$SSM_username\" -p\"$SSM_password\""
 
@@ -71,7 +71,7 @@ Use these techniques to validate your parameter handling:
 
 1. Test environment variable availability:
 
-   ```
+   ```bash
    #!/bin/bash
    # Print all SSM_ environment variables
    env | grep ^SSM_
@@ -86,7 +86,7 @@ Use these techniques to validate your parameter handling:
 
 1. Verify parameter patterns:
 
-   ```
+   ```yaml
    parameters:
      myParameter:
        type: String
@@ -96,7 +96,7 @@ Use these techniques to validate your parameter handling:
 
 1. Include error handling:
 
-   ```
+   ```bash
    if [[ ! "$SSM_parameter" =~ ^[a-zA-Z0-9_-]+$ ]]; then
        echo "Parameter validation failed"
        exit 1

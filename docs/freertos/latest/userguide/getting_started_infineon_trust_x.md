@@ -201,13 +201,13 @@ Due to [a bug reported](https://bugs.launchpad.net/gcc-arm-embedded/+bug/1810274
 
 1. Change directories to your FreeRTOS download directory (`{{freertos}}`), and use the following command to generate the build files:
 
-   ```
+   ```bash
    cmake -DVENDOR=infineon -DBOARD=xmc4800_plus_optiga_trust_x -DCOMPILER=arm-gcc -S . -B {{build-folder}} -G "MinGW Makefiles" -DAFR_ENABLE_TESTS=0
    ```
 
 1. Change directories to the build directory ({{build-folder}}), and use the following command to build the binary:
 
-   ```
+   ```bash
    cmake --build . --parallel 8
    ```
 
@@ -217,7 +217,7 @@ Due to [a bug reported](https://bugs.launchpad.net/gcc-arm-embedded/+bug/1810274
 
    1. From the build directory ({{build-folder}}), use the following commands to create a flash script:
 
-      ```
+      ```bash
       echo loadfile aws_demos.hex > flash.jlink
       echo r >> flash.jlink
       echo g >> flash.jlink
@@ -226,7 +226,7 @@ Due to [a bug reported](https://bugs.launchpad.net/gcc-arm-embedded/+bug/1810274
 
    1. Flash the image using the JLNIK executable.
 
-      ```
+      ```bash
       {{JLINK_PATH}}\JLink.exe  -device XMC4800-2048 -if SWD -speed auto -CommanderScript flash.jlink
       ```
 

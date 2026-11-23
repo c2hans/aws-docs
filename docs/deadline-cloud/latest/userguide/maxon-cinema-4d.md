@@ -312,14 +312,14 @@ The Redshift logs are output in HTML format and include timestamps at the start 
 
 1. Run the cleanup script with the log file path:
 
-   ```
+   ```bash
    cd deadline-cloud-for-cinema-4d/scripts
    python clean_redshift_detailed_logs.py /path/to/detailed_logs.log
    ```
 
    Or run it without arguments and enter the path when prompted:
 
-   ```
+   ```bash
    python clean_redshift_detailed_logs.py
    ```
 

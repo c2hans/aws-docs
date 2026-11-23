@@ -181,7 +181,7 @@ For more information, see [View archived Amazon EBS snapshots](https://docs.aws.
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified snapshot.**
 
-```
+```powershell
 Get-EC2Snapshot -SnapshotId snap-12345678
 ```
 **Output:**
@@ -204,17 +204,17 @@ VolumeSize          : 8
 ```
 **Example 2: This example describes the snapshots that have a 'Name' tag.**
 
-```
+```powershell
 Get-EC2Snapshot | ? { $_.Tags.Count -gt 0 -and $_.Tags.Key -eq "Name" }
 ```
 **Example 3: This example describes the snapshots that have a 'Name' tag with the value 'TestValue'.**
 
-```
+```powershell
 Get-EC2Snapshot | ? { $_.Tags.Count -gt 0 -and $_.Tags.Key -eq "Name" -and $_.Tags.Value -eq "TestValue" }
 ```
 **Example 4: This example describes all your snapshots.**
 
-```
+```powershell
 Get-EC2Snapshot -Owner self
 ```
 +  For API details, see [DescribeSnapshots](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -222,7 +222,7 @@ Get-EC2Snapshot -Owner self
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified snapshot.**
 
-```
+```powershell
 Get-EC2Snapshot -SnapshotId snap-12345678
 ```
 **Output:**
@@ -245,17 +245,17 @@ VolumeSize          : 8
 ```
 **Example 2: This example describes the snapshots that have a 'Name' tag.**
 
-```
+```powershell
 Get-EC2Snapshot | ? { $_.Tags.Count -gt 0 -and $_.Tags.Key -eq "Name" }
 ```
 **Example 3: This example describes the snapshots that have a 'Name' tag with the value 'TestValue'.**
 
-```
+```powershell
 Get-EC2Snapshot | ? { $_.Tags.Count -gt 0 -and $_.Tags.Key -eq "Name" -and $_.Tags.Value -eq "TestValue" }
 ```
 **Example 4: This example describes all your snapshots.**
 
-```
+```powershell
 Get-EC2Snapshot -Owner self
 ```
 +  For API details, see [DescribeSnapshots](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -267,7 +267,7 @@ Get-EC2Snapshot -Owner self
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ebs#code-examples).
 Shows the state of a snapshot.
 
-```
+```rust
 async fn show_state(client: &Client, id: &str) -> Result<(), Error> {
     let resp = client
         .describe_snapshots()
@@ -284,7 +284,7 @@ async fn show_state(client: &Client, id: &str) -> Result<(), Error> {
 }
 ```
 
-```
+```rust
 async fn show_snapshots(client: &Client) -> Result<(), Error> {
     // "self" represents your account ID.
     // You can list the snapshots for any account by replacing

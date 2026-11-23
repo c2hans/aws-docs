@@ -56,7 +56,7 @@ The NVIDIA repositories do not yet support repository metadata signing. Do not e
 
 The AL2027 repository configuration in `/etc/yum.repos.d/amazonlinux.repo` sets `repo_gpgcheck=0` by default. To enable metadata verification, change the value to `1` for each repository section:
 
-```
+```ini
 [amazonlinux]
 name=Amazon Linux 2027 repository
 ...
@@ -72,7 +72,7 @@ The same key verifies both packages and repository metadata. The `system-release
 
 To return to the default behavior, set `repo_gpgcheck=0` again. The next metadata refresh succeeds without verification:
 
-```
+```bash
 sudo sed -i 's/^repo_gpgcheck=1/repo_gpgcheck=0/' /etc/yum.repos.d/amazonlinux.repo
 sudo dnf -y makecache
 ```
@@ -82,7 +82,7 @@ sudo dnf -y makecache
 
 After enabling `repo_gpgcheck=1`, clear the DNF cache and refresh the metadata:
 
-```
+```bash
 sudo dnf clean metadata
 sudo dnf -y makecache
 ```
@@ -161,7 +161,7 @@ Two behaviors changed from AL2023: `dnf autoremove` no longer refreshes metadata
 
 The exit code alone does not confirm that verification succeeded. AL2027 repositories set `skip_if_unavailable=1`, so when metadata verification fails, DNF prints the error, skips the repository, and still exits with `0`:
 
-```
+```bash
 sudo dnf upgrade
 ```
 
@@ -177,7 +177,7 @@ On a system with pending updates, this looks like success. Use these two checks 
 + Audit your automation. Confirm that every metadata-fetching DNF command passes `-y`, so the one-time key import succeeds on each new repository URL.
 + Check the output for `GPG signature verification error`. The following command fails when the repository is skipped, which you can use to fail a pipeline:
 
-```
+```bash
 if sudo dnf makecache 2>&1 | grep -q "GPG signature verification error"; then
   echo "repo skipped"
   exit 1

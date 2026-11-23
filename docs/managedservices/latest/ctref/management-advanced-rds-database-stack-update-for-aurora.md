@@ -155,14 +155,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-rds-database-stack-update-for-aurora-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-advanced-rds-database-stack-update-for-aurora-ex-max"></a>
 
-```
+```json
 {
   "VpcId": "vpc-12345678901234567",
   "StackId": "stack-a1b2c3d4e5f67890e",

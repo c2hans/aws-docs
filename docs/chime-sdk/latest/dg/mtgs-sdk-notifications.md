@@ -35,7 +35,7 @@ The following example IAM policy grants the Amazon Chime SDK permission to publi
 + These examples use the `ChimeSDKMeetings` namespace and corresponding endpoint. If you use the `Chime` namespace, you must use the `chime.amazonaws.com` endpoint.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
    "Id": "{{example-ID}}",
@@ -66,7 +66,7 @@ The following example IAM policy grants the Amazon Chime SDK permission to publi
 This example shows an Amazon SNS policy that allows the Amazon Chime SDK to send meeting event notifications to your SNS topic.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "{{example-ID}}",
@@ -96,7 +96,7 @@ This example shows an Amazon SNS policy that allows the Amazon Chime SDK to send
 If the Amazon SQS queue is enabled for server-side encryption (SSE), you must take an additional step. Attach an IAM policy to the associated AWS KMS key that grants the Amazon Chime SDK permission to the AWS KMS actions needed to encrypt data added to the queue.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "{{example-ID}}",
@@ -121,7 +121,7 @@ If the Amazon SQS queue is enabled for server-side encryption (SSE), you must ta
 The following example IAM policy grants the Amazon Chime SDK permission to publish meeting event notifications to the specified Amazon SNS topic.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "{{example-ID}}",

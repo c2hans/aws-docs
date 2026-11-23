@@ -18,7 +18,7 @@ Retrieve the list of log streams that are associated with a cluster.
 ## Request syntax
 <a name="list-cluster-log-streams-request"></a>
 
-```
+```json
 GET /v3/clusters/{{{clusterName}}}/logstreams
 {
   "filters": [ "string" ],
@@ -57,7 +57,7 @@ Required: No
 ## Response syntax
 <a name="list-cluster-log-streams-response"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "logStreams": [
@@ -113,13 +113,13 @@ Type: string
 
 **Request**
 
-```
+```python
 $ list_cluster_log_streams({{cluster_name_3x}})
 ```
 
 **200 Response**
 
-```
+```json
 {
   'log_streams': [
       {

@@ -77,7 +77,7 @@ Retrieves information about an account that's associated with an Amazon Macie ad
 #### Empty Schema schema
 <a name="members-id-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -85,7 +85,7 @@ Retrieves information about an account that's associated with an Amazon Macie ad
 #### GetMemberResponse schema
 <a name="members-id-response-body-getmemberresponse-example"></a>
 
-```
+```json
 {
   "accountId": "string",
   "administratorAccountId": "string",
@@ -103,7 +103,7 @@ Retrieves information about an account that's associated with an Amazon Macie ad
 #### ValidationException schema
 <a name="members-id-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -112,7 +112,7 @@ Retrieves information about an account that's associated with an Amazon Macie ad
 #### ServiceQuotaExceededException schema
 <a name="members-id-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -121,7 +121,7 @@ Retrieves information about an account that's associated with an Amazon Macie ad
 #### AccessDeniedException schema
 <a name="members-id-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -130,7 +130,7 @@ Retrieves information about an account that's associated with an Amazon Macie ad
 #### ResourceNotFoundException schema
 <a name="members-id-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -139,7 +139,7 @@ Retrieves information about an account that's associated with an Amazon Macie ad
 #### ConflictException schema
 <a name="members-id-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -148,7 +148,7 @@ Retrieves information about an account that's associated with an Amazon Macie ad
 #### ThrottlingException schema
 <a name="members-id-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -157,7 +157,7 @@ Retrieves information about an account that's associated with an Amazon Macie ad
 #### InternalServerException schema
 <a name="members-id-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

@@ -13,7 +13,7 @@ The following code examples show how to use `DeleteDatastore`.
 
 **AWS CLI with Bash script**
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -114,7 +114,7 @@ For more information, see [Deleting a data store](https://docs.aws.amazon.com/he
 
 **SDK for Java 2.x**
 
-```
+```java
     public static void deleteMedicalImagingDatastore(MedicalImagingClient medicalImagingClient,
             String datastoreID) {
         try {
@@ -136,7 +136,7 @@ For more information, see [Deleting a data store](https://docs.aws.amazon.com/he
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { DeleteDatastoreCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -172,7 +172,7 @@ export const deleteDatastore = async (datastoreId = "DATASTORE_ID") => {
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -196,7 +196,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -208,7 +208,7 @@ The following code instantiates the MedicalImagingWrapper object.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         oo_result = lo_mig->deletedatastore( iv_datastoreid = iv_datastore_id ).

@@ -28,7 +28,7 @@ The first parameter for any waiter function, `options`, is a structure of type `
 
 The following example shows how to configure a waiter to wait between a tenth of a second and a half second between retries. The maximum polling time is two seconds.
 
-```
+```swift
 let options = WaiterOptions(maxWaitTime: 2, minDelay: 0.1, maxDelay: 0.5)
 ```
 
@@ -42,7 +42,7 @@ A waiter function's inputs are specified using its `input` parameter. The input'
 
 The AWS SDK for Swift offers several waiters for Amazon S3. One of them is `waitUntilBucketExists(options:input:)`, which polls the server until the specified bucket exists.
 
-```
+```swift
     /// Wait until a bucket with the specified name exists, then return
     /// to the caller. Times out after 60 seconds. Throws an error if the
     /// wait fails.

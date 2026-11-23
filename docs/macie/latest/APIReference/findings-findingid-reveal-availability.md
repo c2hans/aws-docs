@@ -57,7 +57,7 @@ Checks whether occurrences of sensitive data can be retrieved for a finding.
 #### GetSensitiveDataOccurrencesAvailabilityResponse schema
 <a name="findings-findingid-reveal-availability-response-body-getsensitivedataoccurrencesavailabilityresponse-example"></a>
 
-```
+```json
 {
   "code": enum,
   "reasons": [
@@ -69,7 +69,7 @@ Checks whether occurrences of sensitive data can be retrieved for a finding.
 #### AccessDeniedException schema
 <a name="findings-findingid-reveal-availability-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -78,7 +78,7 @@ Checks whether occurrences of sensitive data can be retrieved for a finding.
 #### ResourceNotFoundException schema
 <a name="findings-findingid-reveal-availability-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -87,7 +87,7 @@ Checks whether occurrences of sensitive data can be retrieved for a finding.
 #### ThrottlingException schema
 <a name="findings-findingid-reveal-availability-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -96,7 +96,7 @@ Checks whether occurrences of sensitive data can be retrieved for a finding.
 #### InternalServerException schema
 <a name="findings-findingid-reveal-availability-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

@@ -12,26 +12,26 @@ ES6 requires you use Node.js version 13.x or higher. To download and install the
 + Remove `"type" : "module"` from the `package.json` in your project environment.
 + Convert all ES6 `import` statements to CommonJS `require` statements. For example, convert:
 
-  ```
+  ```javascript
   import { CreateBucketCommand } from "@aws-sdk/client-s3";
   import { s3 } from "./libs/s3Client.js";
   ```
 
   To its CommonJS equivalent:
 
-  ```
+  ```javascript
   const { CreateBucketCommand } = require("@aws-sdk/client-s3");
   const { s3 } = require("./libs/s3Client.js");
   ```
 + Convert all ES6 `export` statements to CommonJS `module.exports` statements. For example, convert:
 
-  ```
+  ```javascript
   export {s3}
   ```
 
   To its CommonJS equivalent:
 
-  ```
+  ```javascript
   module.exports = {s3}
   ```
 
@@ -42,7 +42,7 @@ The following example demonstrates the code example for creating an Amazon S3 bu
 
 libs/s3Client.js
 
-```
+```javascript
 // Create service client module using ES6 syntax.
 import { S3Client } from "@aws-sdk/client-s3";
 // Set the AWS region
@@ -55,7 +55,7 @@ export {s3};
 
 s3\_createbucket.js
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
  import { CreateBucketCommand } from "@aws-sdk/client-s3";
  import { s3 } from "./libs/s3Client.js";
@@ -85,7 +85,7 @@ run();
 
 libs/s3Client.js
 
-```
+```javascript
 // Create service client module using CommonJS syntax.
  const { S3Client } = require("@aws-sdk/client-s3");
 // Set the AWS Region.
@@ -98,7 +98,7 @@ const s3 = new S3Client({ region: REGION });
 
 s3\_createbucket.js
 
-```
+```javascript
 // Get service clients module and commands using CommonJS syntax.
 const { CreateBucketCommand } = require("@aws-sdk/client-s3");
 const { s3 } = require("./libs/s3Client.js");

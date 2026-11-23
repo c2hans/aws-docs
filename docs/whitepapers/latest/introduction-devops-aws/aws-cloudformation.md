@@ -10,6 +10,8 @@ A CloudFormation template is deployed into the AWS environment as a stack. You c
 
 ![A diagram depicting AWS CloudFormation creating an entire environment (stack) from one template](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/images/figure-1.png)
 
+**AWS CloudFormation creating an entire environment (stack) from one template**
+
 You can use a single template to create and update an entire environment, or separate templates to manage multiple layers within an environment. This enables templates to be modularized, and also provides a layer of governance that is important to many organizations.
 
 When you create or update a stack in the CloudFormation console, events are displayed, showing the status of the configuration. If an error occurs, by default the stack is rolled back to its previous state. Amazon SNS provides notifications on events. For example, you can use Amazon SNS to track stack creation and deletion progress using email and integrate with other processes programmatically.

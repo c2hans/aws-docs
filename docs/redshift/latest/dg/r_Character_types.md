@@ -62,7 +62,7 @@ If you use the VARCHAR data type without a length specifier in a CREATE TABLE st
 
 When you set the `enable_large_strings_opt_in` parameter to `Yes`, [String functions](String_functions_header.md) support up to 16,000,000 bytes. For example, the CONCAT function supports output up to 16,000,000 bytes.
 
-```
+```SQL
 SELECT LEN(CONCAT(REPEAT('A', 5000000), REPEAT('B', 5000000))) AS total_length;
 
  total_length

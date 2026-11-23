@@ -44,7 +44,7 @@ Use `context.get_remaining_time_in_millis()` to detect timeouts. See [Error hand
 
 Check remaining time before each unit of work and stop processing before the timeout fires. Configure `BUFFER_MS` based on the expected duration of your next chunk of work.
 
-```
+```python
 BUFFER_MS = 2000  # Configure based on your next chunk of work
 
 def handler(event, context):
@@ -59,7 +59,7 @@ def handler(event, context):
 
 When making calls to downstream services, propagate the remaining time as a timeout to avoid hanging on network calls that would outlive your invocation. The boto3 SDK does not support per-request timeouts on an existing client, so you must create a client with the desired timeout. For high-throughput functions, evaluate whether a fixed timeout configured at initialization is more appropriate than per-request client creation.
 
-```
+```python
 import boto3
 from botocore.config import Config
 

@@ -48,7 +48,7 @@ Whenever AMIs are released, we send notifications to the subscribers of the corr
 **Amazon Linux AMI SNS message format**
 The schema for the SNS message is as follows.
 
-```
+```JSON
 {
     "description": "Validates output from AMI Release SNS message",
     "type": "object",

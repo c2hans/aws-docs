@@ -44,7 +44,7 @@ The following is an example IAM policy that grants Amazon S3 bucket permissions 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -81,7 +81,7 @@ The following is an example trust policy.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

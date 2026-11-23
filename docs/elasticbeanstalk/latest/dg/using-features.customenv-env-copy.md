@@ -82,7 +82,7 @@ The following script provides the same results as the previous manual steps. Dow
 ### Script source: copy\_ami\_and\_update\_env.sh
 <a name="abc"></a>
 
-```
+```bash
 #!/bin/bash
 
 set -ue

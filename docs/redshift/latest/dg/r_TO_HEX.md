@@ -31,7 +31,7 @@ Either a number or binary value (`VARBYTE`) to be converted.
 
 To convert a number to its hexadecimal representation, use the following example.
 
-```
+```sql
 SELECT TO_HEX(2147676847);
 
 +----------+
@@ -43,7 +43,7 @@ SELECT TO_HEX(2147676847);
 
 To convert the `VARBYTE` representation of `'abc'` to a hexadecimal number, use the followign example.
 
-```
+```sql
 SELECT TO_HEX('abc'::VARBYTE);
 
 +--------+
@@ -55,7 +55,7 @@ SELECT TO_HEX('abc'::VARBYTE);
 
 To create a table, insert the `VARBYTE` representation of `'abc'` to a hexadecimal number, and select the column with the value, use the following example.
 
-```
+```sql
 CREATE TABLE t (vc VARCHAR);
 INSERT INTO t SELECT TO_HEX('abc'::VARBYTE);
 SELECT vc FROM t;
@@ -69,7 +69,7 @@ SELECT vc FROM t;
 
 To show that when casting a `VARBYTE` value to `VARCHAR` the format is UTF-8, use the following example.
 
-```
+```sql
 CREATE TABLE t (vc VARCHAR);
 INSERT INTO t SELECT 'abc'::VARBYTE::VARCHAR;
 

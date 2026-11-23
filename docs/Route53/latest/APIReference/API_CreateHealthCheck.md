@@ -15,7 +15,8 @@ If you're registering EC2 instances with an Elastic Load Balancing (ELB) load ba
  **Private Hosted Zones**
 
 You can associate health checks with failover resource record sets in a private hosted zone. Note the following:
-+ Route 53 health checkers are outside the VPC. To check the health of an endpoint within a VPC by IP address, you must assign a public IP address to the instance in the VPC.
++ For a public health check, Route 53 health checkers are outside the VPC. To check the health of an endpoint within a VPC by IP address, you must assign a public IP address to the instance in the VPC.
++ To check the health of an endpoint within a VPC by using a private IP address, use a private endpoint health check (`EndpointType` of `PRIVATE`). For more information, see `CreateHealthCheckSource`.
 + You can configure a health checker to check the health of an external resource that the instance relies on, such as a database server.
 + You can create a CloudWatch metric, associate an alarm with the metric, and then create a health check that is based on the state of the alarm. For example, you might create a CloudWatch metric that checks the status of the Amazon EC2 `StatusCheckFailed` metric, add an alarm to the metric, and then create a health check that is based on the state of the alarm. For information about creating CloudWatch metrics and alarms by using the CloudWatch console, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html).
 
@@ -37,8 +38,10 @@ POST /2013-04-01/healthcheck HTTP/1.1
       </ChildHealthChecks>
       <Disabled>{{boolean}}</Disabled>
       <EnableSNI>{{boolean}}</EnableSNI>
+      <EndpointType>{{string}}</EndpointType>
       <FailureThreshold>{{integer}}</FailureThreshold>
       <FullyQualifiedDomainName>{{string}}</FullyQualifiedDomainName>
+      <HealthCheckSourceId>{{string}}</HealthCheckSourceId>
       <HealthThreshold>{{integer}}</HealthThreshold>
       <InsufficientDataHealthStatus>{{string}}</InsufficientDataHealthStatus>
       <Inverted>{{boolean}}</Inverted>
@@ -122,8 +125,10 @@ Location: {{Location}}
          </ChildHealthChecks>
          <Disabled>boolean</Disabled>
          <EnableSNI>boolean</EnableSNI>
+         <EndpointType>string</EndpointType>
          <FailureThreshold>integer</FailureThreshold>
          <FullyQualifiedDomainName>string</FullyQualifiedDomainName>
+         <HealthCheckSourceId>string</HealthCheckSourceId>
          <HealthThreshold>integer</HealthThreshold>
          <InsufficientDataHealthStatus>string</InsufficientDataHealthStatus>
          <Inverted>boolean</Inverted>
@@ -190,10 +195,9 @@ The input is not valid.
 HTTP Status Code: 400
 
  ** TooManyHealthChecks **
-This health check can't be created because the current account has reached the limit on the number of active health checks.
+This health check can't be created because the current account has reached the limit on the number of active health checks, or because the health check source for a private health check has reached its limit on active health checks. In the second case, specify a different health check source.
 For information about default limits, see [Limits](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/DNSLimitations.html) in the *Amazon Route 53 Developer Guide*.
 For information about how to get the current limit for an account, see [GetAccountLimit](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetAccountLimit.html). To request a higher limit, [create a case](http://aws.amazon.com/route53-request) with the AWS Support Center.
-You have reached the maximum number of active health checks for an AWS account. To request a higher limit, [create a case](http://aws.amazon.com/route53-request) with the AWS Support Center.
 HTTP Status Code: 400
 
 ## Examples

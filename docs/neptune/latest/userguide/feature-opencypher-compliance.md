@@ -20,13 +20,13 @@ Neptune supports the following clauses, except as noted:
 + {{`MANDATORY MATCH`}}   –   is **not** currently supported in Neptune. Neptune does, however, support [custom ID values](access-graph-opencypher-extensions.md#opencypher-compliance-custom-ids) in `MATCH` queries.
 + `RETURN`   –   Supported, except when used with non-static values for `SKIP` or `LIMIT`. For example, the following currently does not work:
 
-  ```
+  ```nocopy
   MATCH (n)
   RETURN n LIMIT toInteger(rand())    // Does NOT work!
   ```
 + `WITH`   –   Supported, except when used with non-static values for `SKIP` or `LIMIT`. For example, the following currently does not work:
 
-  ```
+  ```nocopy
   MATCH (n)
   WITH n SKIP toInteger(rand())
   WITH count() AS count
@@ -96,7 +96,7 @@ Neptune supports the following expressions, except as noted:
 + `CASE`
 + The `[]` expression is is **not** currently supported in Neptune for accessing dynamically computed property keys within a node, relationship, or map. For example, the following does not work:
 
-  ```
+  ```nocopy
   MATCH (n)
   WITH [5, n, {key: 'value'}] AS list
   RETURN list[1].name

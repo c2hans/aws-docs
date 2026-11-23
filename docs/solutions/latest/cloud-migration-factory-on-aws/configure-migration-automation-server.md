@@ -104,7 +104,7 @@ Keep the keys confidential to protect your AWS account and never email them. Do 
 
 1. Run the following command to configure the AWS credentials on the server. Replace {{<your\_access\_key\_id>}}, {{<your\_secret\_access key>}}, and {{<your\_region>}} with your values:
 
-   ```
+   ```bash
    SETX /m AWS_ACCESS_KEY_ID <your_access_key_id>
    SETX /m AWS_SECRET_ACCESS_KEY <your_secret_access key>
    SETX /m AWS_DEFAULT_REGION <your_region>
@@ -148,7 +148,7 @@ Keep the keys confidential to protect your AWS account and never email them. Do 
 
 1. Verify that you have administrator privileges, open `cmd.exe`, and run the following commands to install the Python packages one at a time:
 
-   ```
+   ```bash
    python -m pip install requests
    python -m pip install paramiko
    python -m pip install boto3
@@ -156,13 +156,13 @@ Keep the keys confidential to protect your AWS account and never email them. Do 
 
    If any of these commands fail, upgrade pip by running the following command:
 
-   ```
+   ```bash
    python -m pip install --upgrade pip
    ```
 
 1. Install the AWS CLI (Command Line Interface) by running the following command:
 
-   ```
+   ```bash
    msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
    ```
 
@@ -170,7 +170,7 @@ Keep the keys confidential to protect your AWS account and never email them. Do 
 
 1. Open PowerShell, then install the PowerShell for AWS module, ensuring that you have the \*-Scope AllUsers \* parameter included in the command.
 
-   ```
+   ```bash
    Install-Module -Name AWSPowerShell -Scope AllUsers
    ```
 
@@ -178,6 +178,6 @@ Keep the keys confidential to protect your AWS account and never email them. Do 
 
 1. To enable script execution, open PowerShell as Administrator and run the following command:
 
-   ```
+   ```bash
    Set-ExecutionPolicy RemoteSigned
    ```

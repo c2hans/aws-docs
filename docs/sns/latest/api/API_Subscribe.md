@@ -153,7 +153,7 @@ https://sns.us-west-2.amazonaws.com/?Action=Subscribe
 #### Sample Response
 <a name="API_Subscribe_Example_1_Response"></a>
 
-```
+```xml
 <SubscribeResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <SubscribeResult>
         <SubscriptionArn>arn:aws:sns:us-west-2:123456789012:MyTopic:6b0e71bd-7e97-4d97-80ce-4a0994e55286</SubscriptionArn>
@@ -186,7 +186,7 @@ https://sns.us-west-2.amazonaws.com/?Action=Subscribe
 #### Sample Response
 <a name="API_Subscribe_Example_2_Response"></a>
 
-```
+```xml
 <SubscribeResponse xmlns="http://sns.amazonaws.com/doc/2010-03-31/">
     <SubscribeResult>
         <SubscriptionArn>

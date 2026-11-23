@@ -66,7 +66,7 @@ When you use the AWS IoT Wireless API or the AWS CLI, you can obtain this inform
 
    Following shows a sample output for the command.
 
-   ```
+   ```JSON
    {
        "Name": "Raspberry pi",
        "Id": "1352172b-0602-4b40-896f-54da9ed16b57",
@@ -92,7 +92,7 @@ When you use the AWS IoT Wireless API or the AWS CLI, you can obtain this inform
 
    Following shows a sample output for the command, with information from all three fields displayed by the `CurrentVersion`.
 
-   ```
+   ```JSON
    {
        "LoRaWAN": {
            "CurrentVersion": {
@@ -201,7 +201,7 @@ This information might be provided by your gateway manufacturer, but if you foll
 **CurrentVersion**
 Provide the `CurrentVersion` output that you obtained previously by running the `get-wireless-gateway-firmware-information ` command.
 
-     ```
+     ```JSON
      cat input.json
      ```
 
@@ -236,7 +236,7 @@ Provide the `CurrentVersion` output that you obtained previously by running the 
 
    Pass the `input.json` file to the [create-wireless-gateway-task-definition](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-wireless-gateway-task-definition.html) command to create the task definition.
 
-   ```
+   ```JSON
    aws iotwireless create-wireless-gateway-task-definition \
        --cli-input-json file://input.json
    ```
@@ -269,7 +269,7 @@ If the firmware update fails the first time, you'll see a status of **Retrying**
 
 You can track the progress of the task by using the `GetWirelessGatewayTask` API. When you run the [get-wireless-gateway-task](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-wireless-gateway-task.html) command the first time, it will show the task status as `IN_PROGRESS`.
 
-```
+```JSON
 aws iotwireless get-wireless-gateway-task \
     --id 1352172b-0602-4b40-896f-54da9ed16b57
 ```
@@ -288,7 +288,7 @@ Following shows the output of the command.
 
 When you run the command the next time, if the firmware update takes effect, it will show the updated fields, `Package`, `Version`, and `Model` and the task status changes to `COMPLETED`.
 
-```
+```JSON
 aws iotwireless get-wireless-gateway-task \
     --id 1352172b-0602-4b40-896f-54da9ed16b57
 ```
@@ -321,7 +321,7 @@ If the firmware update fails, you see a status of `FIRST_RETRY` from the CUPS se
 
 After the previous task was `COMPLETED` or `FAILED`, delete the old task by using the [delete-wireless-gateway-task](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/delete-wireless-gateway-task.html) command before starting a new one.
 
-```
+```JSON
 aws iotwireless delete-wireless-gateway-task \
     --id 1352172b-0602-4b40-896f-54da9ed16b57
 ```

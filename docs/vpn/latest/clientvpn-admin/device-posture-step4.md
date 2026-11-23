@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 
 When you are satisfied with the shadow-mode results, disable shadow mode to start enforcing the policy.
 
-```
+```bash
 aws ec2 modify-client-vpn-endpoint-authorization-policy \
   --client-vpn-endpoint-id cvpn-endpoint-EXAMPLE \
   --shadow-mode disabled

@@ -12,7 +12,7 @@ $ aws iot list-thing-types
 
 The **ListThingTypes** command returns a list of the thing types defined in your AWS account:
 
-```
+```JSON
 {
     "thingTypes": [
         {

@@ -40,7 +40,7 @@ For more information, see [Organize Amazon EKS resources with tags](https://docs
 **Tools for PowerShell V4**
 **Example 1: This cmdlet associates the specified tags to a resource with the specified resourceArn. **
 
-```
+```powershell
 Add-EKSResourceTag -ResourceArn "arn:aws:eks:us-west-2:012345678912:cluster/PROD" -Tag @{Name = "EKSPRODCLUSTER"}
 ```
 +  For API details, see [TagResource](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -48,7 +48,7 @@ Add-EKSResourceTag -ResourceArn "arn:aws:eks:us-west-2:012345678912:cluster/PROD
 **Tools for PowerShell V5**
 **Example 1: This cmdlet associates the specified tags to a resource with the specified resourceArn. **
 
-```
+```powershell
 Add-EKSResourceTag -ResourceArn "arn:aws:eks:us-west-2:012345678912:cluster/PROD" -Tag @{Name = "EKSPRODCLUSTER"}
 ```
 +  For API details, see [TagResource](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

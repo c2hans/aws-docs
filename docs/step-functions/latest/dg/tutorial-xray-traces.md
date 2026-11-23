@@ -74,7 +74,7 @@ If the IAM role that you created doesn't appear in the list, the role might stil
 
 1. Copy the following code for the Lambda function into the **Function code** section of the **{{TestFunction1}}** page.
 
-   ```
+   ```javascript
    function getRandomSeconds(max) {
        return Math.floor(Math.random() * Math.floor(max)) * 1000;
    }
@@ -121,7 +121,7 @@ Make sure that your state machine is under the same AWS account and Region as th
 
 1. Remove the existing boilerplate code and paste the following code. In the Task state definition, remember to replace the example ARNs with the ARNs of the Lambda functions you created.
 
-   ```
+   ```json
    {
      "StartAt": "CallTestFunction1",
      "States": {

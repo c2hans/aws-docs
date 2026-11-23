@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 
 The `contentModeration` transformation accepts `true` (defaults) or an object:
 
-```
+```json
 {
   "transformation": "contentModeration",
   "value": {

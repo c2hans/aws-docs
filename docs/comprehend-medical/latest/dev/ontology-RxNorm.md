@@ -60,7 +60,7 @@ The following example input text shows how the `InferRxNorm` operation works. To
 
 The `InferRxNorm` operation returns the following output in JSON format:
 
-```
+```json
 {
     "Entities": [
         {
@@ -114,7 +114,7 @@ Using the following input text, the `InferRxNorm` operation recognizes the negat
 
 The `InferRxNorm` operation returns the following output in JSON format:
 
-```
+```json
 {
     "Entities": [
         {

@@ -205,7 +205,7 @@ If the action is successful, the service sends back an HTTP 201 response.
 The following data is returned in JSON format by the service.
 
  ** [AcceleratorConfig](#API_PublishVersion_ResponseSyntax) **   <a name="lambda-PublishVersion-response-AcceleratorConfig"></a>
-The accelerator resource settings for a Lambda execution environment.
+The accelerator resource settings for a Lambda execution environment, including the amount of accelerator memory to allocate. To use an accelerator, the function must also have a capacity provider configuration (`CapacityProviderConfig`) for Lambda Managed Instances.
 Type: [AcceleratorConfig](API_AcceleratorConfig.md) object
 
  ** [Architectures](#API_PublishVersion_ResponseSyntax) **   <a name="lambda-PublishVersion-response-Architectures"></a>

@@ -46,7 +46,7 @@ Once these fields are enabled for projects and issue types, use the Jira REST AP
 
 The REST API endpoint to update an issue is `/rest/api/2/issue/issue-key` and the general schema to pass to set a value is as follows:
 
-```
+```json
                         { "update": {
         "customfield_field-ID": [ {
           "set": "value"

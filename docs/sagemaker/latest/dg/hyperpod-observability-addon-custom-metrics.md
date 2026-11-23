@@ -14,7 +14,7 @@ pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp-prot
 
 The following example script configures an OpenTelemetry metrics pipeline that automatically tags metrics with pod and node information, ensuring proper attribution within your cluster, and sends these metrics to the SageMaker HyperPod built-in observability stack every second. The script establishes a connection to the SageMaker HyperPod metrics collector, sets up appropriate resource attributes for identification, and provides a meter interface through which you can create various types of metrics (counters, gauges, or histograms) to track any aspect of your application's performance. Custom metrics integrate with the SageMaker HyperPod monitoring dashboards alongside system metrics. This integration allows for comprehensive observability through a single interface where you can create custom alerts, visualizations, and reports to monitor your workload's complete performance profile.
 
-```
+```python
 import os
 from opentelemetry import metrics
 from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExporter

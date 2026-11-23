@@ -29,7 +29,7 @@ The following code example shows how to use `CreateVocabulary`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/transcribe#code-examples).
 
-```
+```python
 def create_vocabulary(
     vocabulary_name, language_code, transcribe_client, phrases=None, table_uri=None
 ):
@@ -72,7 +72,7 @@ The following code example shows how to use `DeleteTranscriptionJob`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/transcribe#code-examples).
 
-```
+```python
 def delete_job(job_name, transcribe_client):
     """
     Deletes a transcription job. This also deletes the transcript associated with
@@ -98,7 +98,7 @@ The following code example shows how to use `DeleteVocabulary`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/transcribe#code-examples).
 
-```
+```python
 def delete_vocabulary(vocabulary_name, transcribe_client):
     """
     Deletes a custom vocabulary.
@@ -123,7 +123,7 @@ The following code example shows how to use `GetTranscriptionJob`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/transcribe#code-examples).
 
-```
+```python
 def get_job(job_name, transcribe_client):
     """
     Gets details about a transcription job.
@@ -154,7 +154,7 @@ The following code example shows how to use `GetVocabulary`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/transcribe#code-examples).
 
-```
+```python
 def get_vocabulary(vocabulary_name, transcribe_client):
     """
     Gets information about a custom vocabulary.
@@ -182,7 +182,7 @@ The following code example shows how to use `ListTranscriptionJobs`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/transcribe#code-examples).
 
-```
+```python
 def list_jobs(job_filter, transcribe_client):
     """
     Lists summaries of the transcription jobs for the current AWS account.
@@ -219,7 +219,7 @@ The following code example shows how to use `ListVocabularies`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/transcribe#code-examples).
 
-```
+```python
 def list_vocabularies(vocabulary_filter, transcribe_client):
     """
     Lists the custom vocabularies created for this AWS account.
@@ -260,7 +260,7 @@ The following code example shows how to use `StartTranscriptionJob`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/transcribe#code-examples).
 
-```
+```python
 def start_job(
     job_name,
     media_uri,
@@ -314,7 +314,7 @@ The following code example shows how to use `UpdateVocabulary`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/transcribe#code-examples).
 
-```
+```python
 def update_vocabulary(
     vocabulary_name, language_code, transcribe_client, phrases=None, table_uri=None
 ):
@@ -359,7 +359,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/transcribe#code-examples).
 Transcribe an audio file that contains a reading of Jabberwocky by Lewis Carroll. Start by creating functions that wrap Amazon Transcribe actions.
 
-```
+```python
 def start_job(
     job_name,
     media_uri,
@@ -559,7 +559,7 @@ def delete_vocabulary(vocabulary_name, transcribe_client):
 ```
 Call the wrapper functions to transcribe audio without a custom vocabulary and then with different versions of a custom vocabulary to see improved results.
 
-```
+```python
 def usage_demo():
     """Shows how to use the Amazon Transcribe service."""
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
@@ -740,7 +740,7 @@ For more information, see [Getting started with Amazon Transcribe](https://docs.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/transcribe#code-examples).
 
-```
+```python
 import time
 import boto3
 

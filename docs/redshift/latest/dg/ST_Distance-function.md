@@ -44,7 +44,7 @@ If *geo1* or *geo2* is a geometry collection, then an error is returned.
 
 The following SQL returns the distance between two polygons.
 
-```
+```sql
 SELECT ST_Distance(ST_GeomFromText('POLYGON((0 2,1 1,0 -1,0 2))'), ST_GeomFromText('POLYGON((-1 -3,-2 -1,0 -3,-1 -3))'));
 ```
 
@@ -56,7 +56,7 @@ SELECT ST_Distance(ST_GeomFromText('POLYGON((0 2,1 1,0 -1,0 2))'), ST_GeomFromTe
 
 The following SQL returns the distance (in meters) between the Brandenburg Gate and the Reichstag building in Berlin using a GEOGRAPHY data type.
 
-```
+```sql
 SELECT ST_Distance(ST_GeogFromText('POINT(13.37761826722198 52.516411678282445)'), ST_GeogFromText('POINT(13.377950831464005 52.51705102546893)'));
 ```
 

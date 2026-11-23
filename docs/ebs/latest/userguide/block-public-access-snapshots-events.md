@@ -9,7 +9,7 @@ Amazon EBS emits events related to block public access for snapshots. You can us
 The following events are emitted:
 + Enable block public access for snapshots in block all sharing mode
 
-  ```
+  ```json
   {
     "version": "0",
     "id": "{{01234567-0123-0123-0123-012345678901}}",
@@ -26,7 +26,7 @@ The following events are emitted:
   ```
 + Enable block public access for snapshots in block new sharing mode
 
-  ```
+  ```json
   {
     "version": "0",
     "id": "{{01234567-0123-0123-0123-012345678901}}",
@@ -43,7 +43,7 @@ The following events are emitted:
   ```
 + Disable block public access for snapshots
 
-  ```
+  ```json
   {
     "version": "0",
     "id": "{{01234567-0123-0123-0123-012345678901}}",

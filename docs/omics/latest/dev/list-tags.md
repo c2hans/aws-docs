@@ -14,7 +14,7 @@ aws omics list-tags-for-resource --resource-arn arn:aws:omics:us-west-2:55555555
 
 You will receive a list of tags in response, in JSON format.
 
-```
+```json
  {
     "tags": {
         "key1": "value1",

@@ -14,7 +14,7 @@ The following are sample logs using OCSF version 1.0.0-rc.2.
 ## Access granted with trust context included
 <a name="ocsfv1-with-trust"></a>
 
-```
+```json
 {
     "activity_name": "Access Grant",
     "activity_id": "1",
@@ -140,7 +140,7 @@ The following are sample logs using OCSF version 1.0.0-rc.2.
 ## Access granted with trust context omitted
 <a name="ocsfv1-without-trust"></a>
 
-```
+```json
 {
     "activity_name": "Access Grant",
     "activity_id": "1",
@@ -229,7 +229,7 @@ The following are sample logs using OCSF version 1.0.0-rc.2.
 ## Assign privileges with network CIDR endpoint
 <a name="ocsfv1-with-tcp"></a>
 
-```
+```json
 {
     "activity_id": "1",
     "activity_name": "Assign Privileges",

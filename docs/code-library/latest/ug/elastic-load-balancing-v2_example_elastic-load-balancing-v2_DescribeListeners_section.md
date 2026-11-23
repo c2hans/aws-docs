@@ -93,7 +93,7 @@ For more information, see [Listeners for your Application Load Balancers](https:
 **Tools for PowerShell V4**
 **Example 1: This examples describes listeners of the specified ALB/NLB.**
 
-```
+```powershell
 Get-ELB2Listener -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f'
 ```
 **Output:**
@@ -120,7 +120,7 @@ SslPolicy       : ELBSecurityPolicy-2016-08
 **Tools for PowerShell V5**
 **Example 1: This examples describes listeners of the specified ALB/NLB.**
 
-```
+```powershell
 Get-ELB2Listener -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f'
 ```
 **Output:**

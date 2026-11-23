@@ -20,7 +20,7 @@ Amazon Cognito has some built-in `AuthFlow` and `ChallengeName` values for a sta
 
 The following examples require these `using` statements:
 
-```
+```csharp
 // Required for all examples
 using System;
 using Amazon;
@@ -38,7 +38,7 @@ using Amazon.S3.Model;
 
 Create an [AmazonCognitoIdentityProviderClient](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/CognitoIdentityProvider/TCognitoIdentityProviderClient.html) using [AnonymousAWSCredentials](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TAnonymousAWSCredentials.html), which do not require signed requests. You do not need to supply a region, the underlying code calls `FallbackRegionFactory.GetRegionEndpoint()` if a region is not provided. Create `CognitoUserPool` and `CognitoUser` objects. Call the `StartWithSrpAuthAsync` method with an `InitiateSrpAuthRequest` that contains the user password.
 
-```
+```csharp
 public static async void GetCredsAsync()
 {
     AmazonCognitoIdentityProviderClient provider =
@@ -63,7 +63,7 @@ Continuing the authentication flow with challenges, such as with NewPasswordRequ
 
 Do a basic authentication request as before, and `await` an `AuthFlowResponse`. When the response is received loop through the returned `AuthenticationResult` object. If the `ChallengeName` type is `NEW_PASSWORD_REQUIRED`, call the `RespondToNewPasswordRequiredAsync` method.
 
-```
+```csharp
 public static async void GetCredsChallengesAsync()
 {
     AmazonCognitoIdentityProviderClient provider =
@@ -128,7 +128,7 @@ public static async void GetCredsChallengesAsync()
 
 Once a user is authenticated using the CognitoAuthentication library, the next step is to allow the user to access the appropriate AWS resources. To do this you must create an identity pool through the Amazon Cognito Federated Identities console. By specifying the Amazon Cognito user pool you created as a provider, using its poolID and clientID, you can allow your Amazon Cognito user pool users to access AWS resources connected to your account. You can also specify different roles to enable both unauthenticated and authenticated users to access different resources. You can change these rules in the IAM console, where you can add or remove permissions in the **Action** field of the role's attached policy. Then, using the appropriate identity pool, user pool, and Amazon Cognito user information, you can make calls to different AWS resources. The following example shows a user authenticated with SRP accessing the different Amazon S3 buckets permitted by the associated identity pool's role
 
-```
+```csharp
 public async void GetS3BucketsAsync()
 {
     var provider = new AmazonCognitoIdentityProviderClient(new AnonymousAWSCredentials());

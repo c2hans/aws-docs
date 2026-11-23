@@ -427,7 +427,7 @@ The following limitations apply when using Apache Kafka as a target:
   + `transaction-id`: The CDC transaction ID. All records within the same transaction go to the same partition.
   + `constant`: A fixed literal value for every record regardless of table or data. All records are sent to the same partition key value "constant", providing strict global ordering across all tables.
 
-  ```
+  ```json
   {
       "rule-type": "object-mapping",
       "rule-id": "2",
@@ -446,7 +446,7 @@ The following limitations apply when using Apache Kafka as a target:
 + `BatchApply` is not supported for a Kafka endpoint. Using Batch Apply (for example, the `BatchApplyEnabled` target metadata task setting) for a Kafka target might result in loss of data.
 + AWS DMS does not support migrating values of `BigInt` data type with more than 16 digits. To work around this limitation, you can use the following transformation rule to convert the `BigInt` column to a string. For more information about transformation rules, see [Transformation rules and actions](CHAP_Tasks.CustomizingTasks.TableMapping.SelectionTransformation.Transformations.md).
 
-  ```
+  ```json
   {
       "rule-type": "transformation",
       "rule-id": "id",
@@ -711,7 +711,7 @@ By default, AWS DMS tasks migrate all source data to one of the Kafka topics fol
 
 With AWS DMS engine versions 3.4.6 and higher, you can use the `kafka-target-topic` attribute to map each migrated source table to a separate topic. For example, the object mapping rules following migrate the source tables `Customer` and `Address` to the Kafka topics `customer_topic` and `address_topic`, respectively. At the same time, AWS DMS migrates all other source tables, including the `Bills` table in the `Test` schema, to the topic specified in the target endpoint.
 
-```
+```json
 {
     "rules": [
         {
@@ -766,7 +766,7 @@ By using Kafka multitopic replication, you can group and migrate source tables t
 
 By default, AWS DMS converts target Kafka topic names to all lowercase. With AWS DMS engine versions 3.4.6 and higher, you can use the `disable-kafka-topic-normalization` attribute in an object-mapping rule to preserve the original case of the target Kafka topic names. Set this attribute to `true` to prevent AWS DMS from converting topic names to lowercase. The default value is `false` (topic names are converted to lowercase). The following example shows how to use this setting.
 
-```
+```json
 {
     "rules": [
         {

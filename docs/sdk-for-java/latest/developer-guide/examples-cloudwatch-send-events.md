@@ -18,7 +18,7 @@ You can specify a maximum of 10 events per call to `putEvents`.
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.services.cloudwatch.model.CloudWatchException;
 import software.amazon.awssdk.services.cloudwatchevents.CloudWatchEventsClient;
 import software.amazon.awssdk.services.cloudwatchevents.model.PutEventsRequest;
@@ -27,7 +27,7 @@ import software.amazon.awssdk.services.cloudwatchevents.model.PutEventsRequestEn
 
  **Code**
 
-```
+```java
     public static void putCWEvents(CloudWatchEventsClient cwe, String resourceArn ) {
 
         try {
@@ -65,7 +65,7 @@ To create or update a rule, call the `CloudWatchEventsClient’s` `putRule` meth
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.services.cloudwatch.model.CloudWatchException;
 import software.amazon.awssdk.services.cloudwatchevents.CloudWatchEventsClient;
 import software.amazon.awssdk.services.cloudwatchevents.model.PutRuleRequest;
@@ -75,7 +75,7 @@ import software.amazon.awssdk.services.cloudwatchevents.model.RuleState;
 
  **Code**
 
-```
+```java
     public static void putCWRule(CloudWatchEventsClient cwe, String ruleName, String roleArn) {
 
         try {
@@ -109,7 +109,7 @@ To add a target to a rule, call the `CloudWatchEventsClient’s` `putTargets` me
 
  **Imports**
 
-```
+```java
 import software.amazon.awssdk.services.cloudwatch.model.CloudWatchException;
 import software.amazon.awssdk.services.cloudwatchevents.CloudWatchEventsClient;
 import software.amazon.awssdk.services.cloudwatchevents.model.PutTargetsRequest;
@@ -119,7 +119,7 @@ import software.amazon.awssdk.services.cloudwatchevents.model.Target;
 
  **Code**
 
-```
+```java
     public static void putCWTargets(CloudWatchEventsClient cwe, String ruleName, String functionArn, String targetId ) {
 
         try {

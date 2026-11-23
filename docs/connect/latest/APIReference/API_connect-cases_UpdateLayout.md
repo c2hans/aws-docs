@@ -118,7 +118,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of UpdateLayout.
 
-```
+```json
 {
   "content": {
     "basic": {
@@ -163,7 +163,7 @@ This example illustrates one usage of UpdateLayout.
 }
 ```
 
-```
+```json
 { }
 ```
 

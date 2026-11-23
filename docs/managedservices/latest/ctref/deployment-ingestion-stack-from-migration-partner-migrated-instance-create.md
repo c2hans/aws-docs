@@ -173,14 +173,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-ingestion-stack-from-migration-partner-migrated-instance-create-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="deployment-ingestion-stack-from-migration-partner-migrated-instance-create-ex-max"></a>
 
-```
+```json
 {
   "InstanceId" : "i-1234567890abababa",
   "TargetVpcId" : "vpc-01234567890abcdef",

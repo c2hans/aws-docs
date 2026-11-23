@@ -79,7 +79,7 @@ The `AmazonS3ReadOnlyAccess` policy gives your cluster read-only access to all A
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -120,7 +120,7 @@ The `AmazonS3ReadOnlyAccess` policy gives your cluster read-only access to all A
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

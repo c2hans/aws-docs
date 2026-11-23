@@ -196,7 +196,7 @@ OPENAI_BASE_URL="https://bedrock-runtime.<your-region>.amazonaws.com/openai/v1"
 ------
 #### [ bedrock-mantle ]
 
-```
+```bash
 OPENAI_API_KEY="<provide your Bedrock API key>"
 OPENAI_BASE_URL="https://bedrock-mantle.<your-region>.api.aws/v1"
 ```
@@ -220,7 +220,7 @@ Save the file as `bedrock-first-request.py`
 
 Use the settings from [Step 4 - Set environment variables](#model-card-openai-gpt-oss-120b-sample-code-environment). Choose the `bedrock-runtime` tab. This model supports the Chat Completions API, but not the Responses API, on this endpoint.
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -240,7 +240,7 @@ Use the settings from [Step 4 - Set environment variables](#model-card-openai-gp
 ------
 #### [ Responses API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -255,7 +255,7 @@ print(response)
 ------
 #### [ Chat ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -277,7 +277,7 @@ Use the Boto3 settings from [Step 4 - Set environment variables](#model-card-ope
 ------
 #### [ Invoke API ]
 
-```
+```python
 import json
 import boto3
 
@@ -295,7 +295,7 @@ print(json.loads(response['body'].read()))
 ------
 #### [ Converse API ]
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-runtime', region_name='us-east-1')

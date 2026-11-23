@@ -30,7 +30,8 @@ Required: No
  ** Body **   <a name="WAF-Type-FieldToMatch-Body"></a>
 Inspect the request body as plain text. The request body immediately follows the request headers. This is the part of a request that contains any additional data that you want to send to your web server as the HTTP request body, such as data from a form.
  AWS WAF does not support inspecting the entire contents of the web request body if the body exceeds the limit for the resource type. When a web request body is larger than the limit, the underlying host service only forwards the contents that are within the limit to AWS WAF for inspection.
-+ For Application Load Balancer and AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
++ For AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
++ For Application Load Balancer, the default limit is 8 KB (8,192 bytes), and you can change the limit in the web ACL `AssociationConfig`.
 + For CloudFront, API Gateway, Amazon Cognito, App Runner, and Verified Access, the default limit is 16 KB (16,384 bytes), and you can increase the limit for each resource type in the web ACL `AssociationConfig`, for additional processing fees.
 + For AWS Amplify, use the CloudFront limit.
 For information about how to handle oversized request bodies, see the `Body` object configuration.
@@ -73,7 +74,8 @@ Required: No
  ** JsonBody **   <a name="WAF-Type-FieldToMatch-JsonBody"></a>
 Inspect the request body as JSON. The request body immediately follows the request headers. This is the part of a request that contains any additional data that you want to send to your web server as the HTTP request body, such as data from a form.
  AWS WAF does not support inspecting the entire contents of the web request body if the body exceeds the limit for the resource type. When a web request body is larger than the limit, the underlying host service only forwards the contents that are within the limit to AWS WAF for inspection.
-+ For Application Load Balancer and AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
++ For AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
++ For Application Load Balancer, the default limit is 8 KB (8,192 bytes), and you can change the limit in the web ACL `AssociationConfig`.
 + For CloudFront, API Gateway, Amazon Cognito, App Runner, and Verified Access, the default limit is 16 KB (16,384 bytes), and you can increase the limit for each resource type in the web ACL `AssociationConfig`, for additional processing fees.
 + For AWS Amplify, use the CloudFront limit.
 For information about how to handle oversized request bodies, see the `JsonBody` object configuration.

@@ -64,7 +64,7 @@ Some fields have been redacted from the examples for data privacy.
 
 The following example shows a CloudTrail log entry for an `IsAuthorized` API call:
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -121,7 +121,7 @@ The following example shows a CloudTrail log entry for an `IsAuthorized` API cal
 
 The following example shows a CloudTrail log entry for an `IsAuthorizedWithToken` API call:
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -178,7 +178,7 @@ The following example shows a CloudTrail log entry for an `IsAuthorizedWithToken
 
 The following example shows a CloudTrail log entry for a `BatchIsAuthorized` API call:
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -288,7 +288,7 @@ The following example shows a CloudTrail log entry for a `BatchIsAuthorized` API
 
 The following example shows a CloudTrail log entry for a `BatchIsAuthorizedWithToken` API call:
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -386,7 +386,7 @@ The following example shows a CloudTrail log entry for a `BatchIsAuthorizedWithT
 
 The following example shows a CloudTrail log entry for a `CreatePolicyStore` API call:
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -429,7 +429,7 @@ The following example shows a CloudTrail log entry for a `CreatePolicyStore` API
 
 The following example shows a CloudTrail log entry for a `ListPolicyStores` API call:
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -464,7 +464,7 @@ The following example shows a CloudTrail log entry for a `ListPolicyStores` API 
 
 The following example shows a CloudTrail log entry for a `DeletePolicyStore` API call:
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -506,7 +506,7 @@ The following example shows a CloudTrail log entry for a `DeletePolicyStore` API
 
 The following example shows a CloudTrail log entry for a `PutSchema` API call:
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -553,7 +553,7 @@ The following example shows a CloudTrail log entry for a `PutSchema` API call:
 
 The following example shows a CloudTrail log entry for a `GetSchema` API call:
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -595,7 +595,7 @@ The following example shows a CloudTrail log entry for a `GetSchema` API call:
 
 The following example shows a CloudTrail log entry for a `CreatePolicyTemplate` API call:
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -642,7 +642,7 @@ The following example shows a CloudTrail log entry for a `CreatePolicyTemplate` 
 
 The following example shows a CloudTrail log entry for a `DeletePolicyTemplate` API call:
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -685,7 +685,7 @@ The following example shows a CloudTrail log entry for a `DeletePolicyTemplate` 
 
 The following example shows a CloudTrail log entry for a `CreatePolicy` API call:
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -742,7 +742,7 @@ The following example shows a CloudTrail log entry for a `CreatePolicy` API call
 
 The following example shows a CloudTrail log entry for a `GetPolicy` API call:
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -785,7 +785,7 @@ The following example shows a CloudTrail log entry for a `GetPolicy` API call:
 
 The following example shows a CloudTrail log entry for a `CreateIdentitySource` API call:
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -839,7 +839,7 @@ The following example shows a CloudTrail log entry for a `CreateIdentitySource` 
 
 The following example shows a CloudTrail log entry for a `GetIdentitySource` API call:
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -882,7 +882,7 @@ The following example shows a CloudTrail log entry for a `GetIdentitySource` API
 
 The following example shows a CloudTrail log entry for a `ListIdentitySources` API call:
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -924,7 +924,7 @@ The following example shows a CloudTrail log entry for a `ListIdentitySources` A
 
 The following example shows a CloudTrail log entry for a `DeleteIdentitySource` API call:
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {

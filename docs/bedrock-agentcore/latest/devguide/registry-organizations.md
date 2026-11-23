@@ -167,14 +167,14 @@ Organization-scoped registries that do not use a customer managed key don’t ne
 
 Enable trusted access for auto-detection:
 
-```
+```bash
 aws organizations enable-aws-service-access \
   --service-principal agent-registry.amazonaws.com
 ```
 
 Create the AWS Agent Registry service-linked role in the management account:
 
-```
+```bash
 aws iam create-service-linked-role \
   --aws-service-name agent-registry.amazonaws.com
 ```
@@ -195,7 +195,7 @@ The delegated administrator is registered as part of Step 1 above. When you conf
 
 Replace `<delegated-admin-account-id>` with the 12-digit account ID of the account you want to use as the registry administrator.
 
-```
+```bash
 aws organizations register-delegated-administrator \
   --account-id <delegated-admin-account-id> \
   --service-principal agent-registry.amazonaws.com
@@ -225,7 +225,7 @@ Auto-detection runs in the current Region. To discover resources in other Region
 
  ** AWS CLI**
 
-```
+```bash
 aws agent-registry-control create-registry \
   --name "my-organization-registry" \
   --description "Auto-detected resources across my organization" \
@@ -243,7 +243,7 @@ Setting `enabled` to `true` requests auto-detection but is not sufficient on its
 
 List the registry’s records and look for records created by auto-detection:
 
-```
+```bash
 aws agent-registry-control list-registry-records \
   --registry-id <registry-id-or-arn> \
   --region my-region
@@ -278,7 +278,7 @@ You can identify auto-detected records in the console in the following ways:
 
 You can edit an auto-detected record to add your own information — for example, a more descriptive description — using `update-registry-record`. Your edits are preserved; auto-detection updates the record’s source-derived fields without overwriting the values you set.
 
-```
+```bash
 aws agent-registry-control update-registry-record \
   --registry-id <registry-id-or-arn> \
   --record-id <record-id> \
@@ -332,7 +332,7 @@ To delete an organization-scoped registry, complete these steps in order:
 
 1. Delete the registry.
 
-```
+```bash
 aws agent-registry-control update-registry \
   --registry-id <registry-id-or-arn> \
   --auto-detection-configuration '{"optionalValue":{"scope":"ORGANIZATION","enabled":false}}' \
@@ -346,13 +346,13 @@ The update is asynchronous: the registry moves to `UPDATING` and returns to `REA
 
 To remove auto-detection at the organization level, the management account can deregister the delegated administrator and disable trusted access:
 
-```
+```bash
 aws organizations deregister-delegated-administrator \
   --account-id <delegated-admin-account-id> \
   --service-principal agent-registry.amazonaws.com
 ```
 
-```
+```bash
 aws organizations disable-aws-service-access \
   --service-principal agent-registry.amazonaws.com
 ```

@@ -17,7 +17,7 @@ There are a number of ways of configuring a session but the following are the mo
 
 Create a session using the default Region and credentials:
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -32,7 +32,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Create a session in **us-west-2**:
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -64,19 +64,19 @@ The following examples show you how to configure the environment variable.
 
  **Linux, OS X, or Unix**
 
-```
+```bash
 $ export AWS_REGION=us-west-2
 ```
 
  **Windows**
 
-```
+```sh
 > set AWS_REGION=us-west-2
 ```
 
 The following snippet specifies the Region in a session:
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{Region: aws.String("us-west-2")})
 ```
 
@@ -137,7 +137,7 @@ If you already use this file for other SDKs and tools (like the AWS CLI), you do
 
 If you don’t have a shared credentials file (`.aws/credentials`), you can use any text editor to create one in your home directory. Add the following content to your credentials file, replacing `<YOUR_ACCESS_KEY_ID>` and `<YOUR_SECRET_ACCESS_KEY>` with your credentials.
 
-```
+```ini
 [default]
 aws_access_key_id = <YOUR_ACCESS_KEY_ID>
 aws_secret_access_key = <YOUR_SECRET_ACCESS_KEY>
@@ -147,7 +147,7 @@ The `[default]` heading defines credentials for the default profile, which the S
 
 You can also use temporary security credentials by adding the session tokens to your profile, as shown in the following example:
 
-```
+```ini
 [temp]
 aws_access_key_id = <YOUR_TEMP_ACCESS_KEY_ID>
 aws_secret_access_key = <YOUR_TEMP_SECRET_ACCESS_KEY>
@@ -159,7 +159,7 @@ aws_session_token = <YOUR_SESSION_TOKEN>
 
 You can include multiple access keys in the same configuration file by associating each set of access keys with a profile. For example, in your credentials file, you can declare multiple profiles, as follows.
 
-```
+```ini
 [default]
 aws_access_key_id = <YOUR_DEFAULT_ACCESS_KEY_ID>
 aws_secret_access_key = <YOUR_DEFAULT_SECRET_ACCESS_KEY>
@@ -178,13 +178,13 @@ By default, the SDK checks the `AWS_PROFILE` environment variable to determine w
 
 If you have an application named `myapp` that uses the SDK, you can run it with the test credentials by setting the variable to `test-account myapp`, as shown in the following command.
 
-```
+```sh
 $ AWS_PROFILE=test-account myapp
 ```
 
 You can also use the SDK to select a profile by specifying `os.Setenv("AWS_PROFILE", test-account)` before constructing any service clients or by manually setting the credential provider, as shown in the following example.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region:      aws.String("us-west-2"),
     Credentials: credentials.NewSharedCredentials("", "test-account"),
@@ -193,7 +193,7 @@ sess, err := session.NewSession(&aws.Config{
 
 In addition, checking if your credentials have been found is fairly easy.
 
-```
+```go
 _, err := sess.Config.Credentials.Get()
 ```
 
@@ -216,7 +216,7 @@ The following examples show how you configure the environment variables.
 
  **Linux, OS X, or Unix**
 
-```
+```bash
 $ export AWS_ACCESS_KEY_ID=YOUR_AKID
 $ export AWS_SECRET_ACCESS_KEY=YOUR_SECRET_KEY
 $ export AWS_SESSION_TOKEN=TOKEN
@@ -224,7 +224,7 @@ $ export AWS_SESSION_TOKEN=TOKEN
 
  **Windows**
 
-```
+```sh
 > set AWS_ACCESS_KEY_ID=YOUR_AKID
 > set AWS_SECRET_ACCESS_KEY=YOUR_SECRET_KEY
 > set AWS_SESSION_TOKEN=TOKEN
@@ -238,7 +238,7 @@ Do not embed credentials inside an application. Use this method only for testing
 
 You can hard-code credentials in your application by passing the access keys to a configuration instance, as shown in the following snippet.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region:      aws.String("us-west-2"),
     Credentials: credentials.NewStaticCredentials("AKID", "SECRET_KEY", "TOKEN"),
@@ -260,7 +260,7 @@ If you cannot directly connect to the internet, you can use Go-supported environ
 
 You can enable logging in a client by setting the `LogLevel` in a configuration instance, as shown in the following snippet, which sets the log level to `LogDebugWithHTTPBody` for a new DynamoDB client.
 
-```
+```go
 svc := dynamodb.New(sess, aws.NewConfig().WithLogLevel(aws.LogDebugWithHTTPBody))
 ```
 
@@ -271,7 +271,7 @@ See [LogLevelType](https://docs.aws.amazon.com/sdk-for-go/api/aws/#LogLevelType)
 
 In most cases you use the endpoint that is pre-configured for a service. However, you can specify a custom endpoint, such as for pre-release versions of the service, as shown in the following snippet, which sets the `Endpoint` to `https://test.us-west-2.amazonaws.com` for a new DynamoDB client.
 
-```
+```go
 svc := dynamodb.New(sess, &aws.Config{Endpoint: aws.String("https://test.us-west-2.amazonaws.com")})
 ```
 

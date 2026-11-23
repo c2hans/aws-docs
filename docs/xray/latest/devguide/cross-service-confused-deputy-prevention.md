@@ -16,7 +16,7 @@ To protect against the confused deputy problem at scale, use the `aws:SourceOrgI
 
 The following example shows how you can use the `aws:SourceArn` and `aws:SourceAccount` global condition context keys in xray to prevent the confused deputy problem.
 
-```
+```json
 {
       "Sid": "BlockCrossAccountUnlessSameSource",
       "Effect": "Deny",

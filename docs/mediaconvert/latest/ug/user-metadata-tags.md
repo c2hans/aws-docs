@@ -12,7 +12,7 @@ You add metadata tags to jobs in one of the following ways:
 + Through the MediaConvert console on the **Job settings** page, in the **Metadata** pane.
 + Through the MediaConvert API in your job settings JSON payload. Include tags as shown in the following JSON snippet, in `userMetadata`. For more information, see the [Jobs](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html) endpoint section of the *MediaConvert API Reference*.
 
-  ```
+  ```JSON
   {
   	"name": "Job Template Test with Resource Tags",
   	"description": "Job Template Test",

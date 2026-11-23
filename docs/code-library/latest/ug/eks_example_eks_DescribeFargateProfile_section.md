@@ -66,7 +66,7 @@ For more information, see [Define which Pods use AWS Fargate when launched](http
 **Tools for PowerShell V4**
 **Example 1: This cmdlet returns descriptive information about an AWS Fargate profile.**
 
-```
+```powershell
 Get-EKSFargateProfile -FargateProfileName "EKSFargate" -ClusterName "TEST"
 ```
 **Output:**
@@ -87,7 +87,7 @@ Tags                : {}
 **Tools for PowerShell V5**
 **Example 1: This cmdlet returns descriptive information about an AWS Fargate profile.**
 
-```
+```powershell
 Get-EKSFargateProfile -FargateProfileName "EKSFargate" -ClusterName "TEST"
 ```
 **Output:**

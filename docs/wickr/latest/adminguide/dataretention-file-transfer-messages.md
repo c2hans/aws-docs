@@ -19,7 +19,7 @@ The **file** JSON object contains the details of the file being transferred, des
 
 The following shows the format of a file transfer message. The **msgtype** for file transfer messages is 6000. The compliance system decrypts files that it receives and stores them in the compliance output location.
 
-```
+```json
 {
   "file": {
     "filename": "quarterly-report.pdf",

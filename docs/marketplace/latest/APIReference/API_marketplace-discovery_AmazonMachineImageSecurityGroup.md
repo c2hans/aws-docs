@@ -13,7 +13,7 @@ Contains a recommended security group configuration for an AMI fulfillment optio
 In the following list, the required parameters are described first.
 
  ** cidrIpAddresses **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageSecurityGroup-cidrIpAddresses"></a>
-The IP address ranges in CIDR format.
+The IP address ranges in Classless Inter-Domain Routing (CIDR) format.
 Type: Array of strings
 Required: Yes
 

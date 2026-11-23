@@ -55,7 +55,7 @@ The role must have the following policy.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -100,7 +100,7 @@ The role must have the following trust relationship. It is recommended that you 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -146,7 +146,7 @@ Amazon Comprehend Medical writes the files to the output directory that you spec
 
 The following is the JSON structure of the batch manifest file.
 
-```
+```json
 {"Summary" :
     {"Status" : "COMPLETED | FAILED | PARTIAL_SUCCESS | STOPPED",
     "JobType" : "EntitiesDetection | PHIDetection",
@@ -175,7 +175,7 @@ The following is the JSON structure of the batch manifest file.
 
 The following is the JSON structure of the file that contains information about successfully processed files.
 
-```
+```json
 {
         "Files": [{
                "Input": "{{input path}}/{{input file name}}",
@@ -194,7 +194,7 @@ The following is the JSON structure of the file that contains information about 
 
 The following is the JSON structure of the manifest file that contains information about unprocessed files.
 
-```
+```json
 {
   "Files" : [ {
       "Input": "file_name_that_failed",

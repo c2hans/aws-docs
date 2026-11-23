@@ -45,7 +45,7 @@ ARM64 instances
 
 1. (Recommended) Run the following command to verify that the agent is running.
 
-   ```
+   ```sh
    sudo systemctl status amazon-ssm-agent
    ```
 
@@ -75,11 +75,11 @@ ARM64 instances
 
    To activate the agent in these cases, run the following commands.
 
-   ```
+   ```sh
    sudo systemctl enable amazon-ssm-agent
    ```
 
-   ```
+   ```sh
    sudo systemctl start amazon-ssm-agent
    ```
 
@@ -97,22 +97,22 @@ In the following command, replace {{region}} with your own information. For a li
 
 **x86\_64**
 
-```
+```sh
 sudo dnf install -y https://s3.{{region}}.amazonaws.com/amazon-ssm-{{region}}/latest/linux_amd64/amazon-ssm-agent.rpm
 ```
 See the following example.
 
-```
+```sh
 sudo dnf install -y https://s3.us-east-2.amazonaws.com/amazon-ssm-us-east-2/latest/linux_amd64/amazon-ssm-agent.rpm
 ```
 
 **ARM64**
 
-```
+```sh
 sudo dnf install -y https://s3.{{region}}.amazonaws.com/amazon-ssm-{{region}}/latest/linux_arm64/amazon-ssm-agent.rpm
 ```
 See the following example.
 
-```
+```sh
 sudo dnf install -y https://s3.us-east-2.amazonaws.com/amazon-ssm-us-east-2/latest/linux_arm64/amazon-ssm-agent.rpm
 ```

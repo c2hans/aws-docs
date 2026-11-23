@@ -15,7 +15,7 @@ To create an IAM access key, call the AmazonIdentityManagementClient`createAcces
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.CreateAccessKeyRequest;
@@ -24,7 +24,7 @@ import com.amazonaws.services.identitymanagement.model.CreateAccessKeyResult;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -46,7 +46,7 @@ If you do not supply a user name to `listAccessKeys`, it will attempt to list ac
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.AccessKeyMetadata;
@@ -56,7 +56,7 @@ import com.amazonaws.services.identitymanagement.model.ListAccessKeysResult;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -95,7 +95,7 @@ You can then use the returned [GetAccessKeyLastUsedResult](https://docs.aws.amaz
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.GetAccessKeyLastUsedRequest;
@@ -104,7 +104,7 @@ import com.amazonaws.services.identitymanagement.model.GetAccessKeyLastUsedResul
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -126,7 +126,7 @@ You can activate or deactivate an access key by creating an [UpdateAccessKeyRequ
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.UpdateAccessKeyRequest;
@@ -135,7 +135,7 @@ import com.amazonaws.services.identitymanagement.model.UpdateAccessKeyResult;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -159,7 +159,7 @@ Once deleted, a key can no longer be retrieved or used. To temporarily deactivat
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.DeleteAccessKeyRequest;
@@ -168,7 +168,7 @@ import com.amazonaws.services.identitymanagement.model.DeleteAccessKeyResult;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 

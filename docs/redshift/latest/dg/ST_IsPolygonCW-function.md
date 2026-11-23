@@ -33,7 +33,7 @@ If *geom* is null, then null is returned.
 
 The following SQL checks if the polygon is clockwise.
 
-```
+```sql
 SELECT ST_IsPolygonCW(ST_GeomFromText('POLYGON((7 9,8 7,11 6,15 8,16 6,17 7,17 10,18 12,17 14,15 15,11 15,10 13,9 12,7 9),(9 9,10 10,11 11,11 10,10 8,9 9),(12 14,15 14,13 11,12 14))'));
 ```
 

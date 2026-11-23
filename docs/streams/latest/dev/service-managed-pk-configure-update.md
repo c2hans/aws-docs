@@ -8,7 +8,7 @@ To enable service-managed record distribution on an existing On-demand stream, u
 
 **Example Enable service-managed distribution on an existing stream (AWS CLI)**
 
-```
+```bash
 aws kinesis update-stream-record-distribution-strategy \
     --stream-arn arn:aws:kinesis:us-east-1:111122223333:stream/my-telemetry-stream \
     --record-distribution-strategy AUTO
@@ -16,7 +16,7 @@ aws kinesis update-stream-record-distribution-strategy \
 
 **Example Enable service-managed distribution (AWS SDK for Java)**
 
-```
+```java
 UpdateStreamRecordDistributionStrategyRequest request =
     UpdateStreamRecordDistributionStrategyRequest.builder()
         .streamName("my-telemetry-stream")
@@ -28,7 +28,7 @@ kinesisClient.updateStreamRecordDistributionStrategy(request);
 
 You can also specify the stream by name instead of ARN:
 
-```
+```bash
 aws kinesis update-stream-record-distribution-strategy \
     --stream-name my-telemetry-stream \
     --record-distribution-strategy AUTO

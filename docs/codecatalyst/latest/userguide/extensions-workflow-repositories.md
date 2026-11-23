@@ -29,7 +29,7 @@ You can configure a CodeCatalyst workflow to automatically start a run when code
 
 The following example shows a trigger that starts a workflow run whenever code is pushed to any branch in your source repository.
 
-```
+```yaml
 Triggers:
   - Type: PUSH
 ```
@@ -39,7 +39,7 @@ Triggers:
 
 The following example shows a trigger that starts a workflow run whenever a pull request is created against any branch in your source repository.
 
-```
+```yaml
 Triggers:
   - Type: PULLREQUEST
     Events:

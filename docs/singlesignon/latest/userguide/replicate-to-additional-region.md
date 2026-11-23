@@ -49,7 +49,7 @@ Adding a Region in IAM Identity Center triggers automatic replication of IAM Ide
 
  **To add a Region**
 
-```
+```bash
 aws sso-admin add-region \
     --instance-arn arn:aws:sso:::instance/ssoins-1234567890abcdef \
     --region-name eu-west-1
@@ -57,7 +57,7 @@ aws sso-admin add-region \
 
  **To check the current Region status**
 
-```
+```bash
 aws sso-admin describe-region \
     --instance-arn arn:aws:sso:::instance/ssoins-1234567890abcdef \
     --region-name eu-west-1

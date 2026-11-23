@@ -86,7 +86,7 @@ For more information, see [Describe step scaling policies for Application Auto S
 **Tools for PowerShell V4**
 **Example 1: This cmdlet describe the Application Auto Scaling scaling policies for the specified service namespace.**
 
-```
+```powershell
 Get-AASScalingPolicy -ServiceNamespace AppStream
 ```
 **Output:**
@@ -121,7 +121,7 @@ TargetTrackingScalingPolicyConfiguration :
 **Tools for PowerShell V5**
 **Example 1: This cmdlet describe the Application Auto Scaling scaling policies for the specified service namespace.**
 
-```
+```powershell
 Get-AASScalingPolicy -ServiceNamespace AppStream
 ```
 **Output:**
@@ -159,7 +159,7 @@ TargetTrackingScalingPolicyConfiguration :
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/applicationautoscaling#code-examples).
 
-```
+```rust
 async fn show_policies(client: &Client) -> Result<(), Error> {
     let response = client
         .describe_scaling_policies()

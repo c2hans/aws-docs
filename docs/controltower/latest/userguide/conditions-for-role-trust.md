@@ -21,7 +21,7 @@ Replace the strings `${HOME_REGION}` and `${CUSTOMER_AWSACCOUNT_id}` with your o
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -54,7 +54,7 @@ The next example shows the `aws:SourceAccount` and `aws:SourceArn` conditions ap
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

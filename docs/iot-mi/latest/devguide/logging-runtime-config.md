@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/logging-runtime-c
 
 Runtime log configurations control device-side logging behavior for individual managed things. Use [PutRuntimeLogConfiguration](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_PutRuntimeLogConfiguration.html) to set the runtime log configuration for a specific managed thing:
 
-```
+```bash
 aws iot-managed-integrations put-runtime-log-configuration \
     --managed-thing-id "{{your-managed-thing-id}}" \
     --runtime-log-configurations '{"LogLevel":"ERROR","UploadLog":true,"UploadPeriodMinutes":5}'

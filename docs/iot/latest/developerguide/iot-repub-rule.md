@@ -58,7 +58,7 @@ When the rule receives a message from a matching topic, it republishes the `devi
 
 For example, the payload of an MQTT message with the `device/22/data` topic looks like this:
 
-```
+```json
 {
   "temperature": 28,
   "humidity": 80,
@@ -72,7 +72,7 @@ For example, the payload of an MQTT message with the `device/22/data` topic look
 
 The rule takes the `temperature` value from the message payload, and the `device_id` from the topic, and republishes them as an MQTT message with the `device/data/temp` topic and a message payload that looks like this:
 
-```
+```json
 {
   "device_id": "22",
   "temperature": 28
@@ -185,7 +185,7 @@ Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com/iot
 
    1. Copy the sample data shown here and, in the edit box below the topic name, paste the sample data.
 
-      ```
+      ```json
       {
         "temperature": 28,
         "humidity": 80,
@@ -207,7 +207,7 @@ Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com/iot
 
    1. Under **Subscriptions**, choose **device/\+/data** to check that the message payload matches what you just published and looks like this:
 
-      ```
+      ```json
       {
         "temperature": 28,
         "humidity": 80,
@@ -221,7 +221,7 @@ Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com/iot
 
    1. Under **Subscriptions**, choose **device/data/temp** to check that your republished message payload looks like this:
 
-      ```
+      ```json
       {
         "device_id": "22",
         "temperature": 28

@@ -24,7 +24,7 @@ VPC CNI version 1.18.0 and later enables enhanced subnet discovery by default (`
 
 To verify the feature is enabled:
 
-```
+```bash
 kubectl describe ds aws-node -n kube-system | grep ENABLE_SUBNET_DISCOVERY
 ```
 
@@ -75,7 +75,7 @@ When a subnet is tagged with `kubernetes.io/role/cni=1`, the VPC CNI additionall
 
 For example, to restrict a subnet to a specific cluster:
 
-```
+```bash
 aws ec2 create-tags --resources subnet-example \
   --tags Key=kubernetes.io/role/cni,Value=1 Key=cni.networking.k8s.aws/cluster/my-cluster,Value=shared
 ```

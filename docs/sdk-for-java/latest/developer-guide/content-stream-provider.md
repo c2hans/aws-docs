@@ -15,7 +15,7 @@ In the following sections, we provide three approaches for how to implement this
 
 In the example below, we use `mark(int)` in the constructor before reading begins to ensure that we can reset the stream back to the beginning. For each invocation of `newStream()` we reset the stream:
 
-```
+```java
 public class MyContentStreamProvider implements ContentStreamProvider {
     private InputStream contentStream;
 
@@ -37,7 +37,7 @@ public class MyContentStreamProvider implements ContentStreamProvider {
 
  If your stream doesn't support `mark()` and `reset()` directly, you can still use the solution shown previously by first wrapping the stream in a `BufferedInputStream`:
 
-```
+```java
 public class MyContentStreamProvider implements ContentStreamProvider {
     private BufferedReader contentStream;
 
@@ -59,7 +59,7 @@ public class MyContentStreamProvider implements ContentStreamProvider {
 
 A simpler approach is to simply obtain a new stream to your data on each invocation and close the previous one:
 
-```
+```java
 public class MyContentStreamProvider implements ContentStreamProvider {
     private InputStream contentStream;
 

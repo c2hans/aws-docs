@@ -18,7 +18,7 @@ AWS End User Messaging SMS can stream event data for SMS, MMS, and voice message
 
 The JSON object for an SMS event contains the data shown in the following example.
 
-```
+```json
 {
     "eventType": "TEXT_SUCCESSFUL",
     "eventVersion": "1.0",
@@ -72,7 +72,7 @@ The JSON object for an SMS event contains the data shown in the following exampl
 
 The JSON object for a SMS event when using [SMS Protect](protect.md) contains the data shown in the following example.
 
-```
+```json
 {
     "eventType": "TEXT_PROTECT_BLOCKED",
     "eventVersion": "1.0",
@@ -138,7 +138,7 @@ The JSON object for a SMS event when using [SMS Protect](protect.md) contains th
 
 The JSON object for a Voice event contains the data shown in the following example.
 
-```
+```json
 {
     "eventType": "VOICE_COMPLETED",
     "eventVersion": "1.0",
@@ -181,7 +181,7 @@ The JSON object for a Voice event contains the data shown in the following examp
 
 The JSON object for an MMS event contains the data shown in the following example.
 
-```
+```json
 {
     "contentType":"MMS",
     "eventType": "MEDIA_DELIVERED",
@@ -229,7 +229,7 @@ The JSON object for an RCS event contains the data shown in the following exampl
 
 **RCS-native delivery** — The `originationPhoneNumber` field contains the RCS agent ID:
 
-```
+```json
 {
     "eventType": "TEXT_SUCCESSFUL",
     "eventVersion": "1.0",
@@ -251,7 +251,7 @@ The JSON object for an RCS event contains the data shown in the following exampl
 
 **SMS fallback delivery** — The `originationPhoneNumber` field contains the E.164 phone number or short code used for SMS delivery:
 
-```
+```json
 {
     "eventType": "TEXT_SUCCESSFUL",
     "eventVersion": "1.0",

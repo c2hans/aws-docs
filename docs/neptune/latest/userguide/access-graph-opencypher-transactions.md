@@ -16,7 +16,7 @@ There are various ways that read-only queries can be processed, with different t
 
 Here is an example of a read-only implicit transaction:
 
-```
+```java
 public void executeReadImplicitTransaction()
 {
   // end point
@@ -78,7 +78,7 @@ In case of failure, read-implicit transactions are retried by default.
 
 Here is an example of a read-only autocommit transaction:
 
-```
+```java
 public void executeAutoCommitTransaction()
 {
   // end point
@@ -138,7 +138,7 @@ In case of failure, read-only autocommit queries are not re-tried.
 
 Here is an example of an explicit read-only transaction:
 
-```
+```java
 public void executeReadExplicitTransaction()
 {
   // end point
@@ -209,7 +209,7 @@ As with read-only queries, there are various ways that mutation queries can be p
 
 Here is an example of an implicit mutation transaction:
 
-```
+```java
 public void executeWriteImplicitTransaction()
 {
   // end point
@@ -289,7 +289,7 @@ In case of failure, mutation autocommit queries are not automatically retried.
 
 Here is an example of an explicit mutation transaction:
 
-```
+```java
 public void executeWriteExplicitTransaction()
 {
   // end point

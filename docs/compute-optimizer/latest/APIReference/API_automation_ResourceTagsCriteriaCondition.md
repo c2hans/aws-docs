@@ -10,9 +10,9 @@ Criteria condition for filtering resources based on their tags, including compar
 <a name="API_automation_ResourceTagsCriteriaCondition_Contents"></a>
 
  ** comparison **   <a name="computeoptimizer-Type-automation_ResourceTagsCriteriaCondition-comparison"></a>
-The comparison operator used to evaluate the tag criteria, such as equals, not equals, or contains.
+The comparison operator used to evaluate the attribute against the specified values. Only operators that begin with `String` are valid. Any other operator returns an `InvalidParameterValueException`.
 Type: String
-Valid Values: `StringEquals | StringNotEquals | StringEqualsIgnoreCase | StringNotEqualsIgnoreCase | StringLike | StringNotLike | NumericEquals | NumericNotEquals | NumericLessThan | NumericLessThanEquals | NumericGreaterThan | NumericGreaterThanEquals`
+Valid Values: `StringEquals | StringNotEquals | StringEqualsIgnoreCase | StringNotEqualsIgnoreCase | StringLike | StringNotLike | NumericEquals | NumericNotEquals | NumericLessThan | NumericLessThanEquals | NumericGreaterThan | NumericGreaterThanEquals | StringEqualsIfExists | StringNotEqualsIfExists | StringEqualsIgnoreCaseIfExists | StringNotEqualsIgnoreCaseIfExists | StringLikeIfExists | StringNotLikeIfExists | NumericEqualsIfExists | NumericNotEqualsIfExists | NumericLessThanIfExists | NumericLessThanEqualsIfExists | NumericGreaterThanIfExists | NumericGreaterThanEqualsIfExists`
 Required: No
 
  ** key **   <a name="computeoptimizer-Type-automation_ResourceTagsCriteriaCondition-key"></a>

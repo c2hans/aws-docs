@@ -26,7 +26,7 @@ By providing the `inputOwnerAccountId`, the data store owner validates the input
 ------
 #### [ Java ]
 
-   ```
+   ```java
    public static String startDicomImportJob(MedicalImagingClient medicalImagingClient,
            String jobName,
            String datastoreId,

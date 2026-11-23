@@ -31,7 +31,7 @@ The input parameter is a `DOUBLE PRECISION` number.
 
 To return the arc cosine of `-1`, use the following example.
 
-```
+```sql
 SELECT ACOS(-1);
 
 +-------------------+
@@ -43,7 +43,7 @@ SELECT ACOS(-1);
 
 To convert the arc cosine of `.5` to the equivalent number of degrees, use the following example.
 
-```
+```sql
 SELECT (ACOS(.5) * 180/(SELECT PI())) AS degrees;
 
 +-------------------+

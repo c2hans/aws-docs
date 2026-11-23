@@ -51,7 +51,7 @@ When you export Explorer data, Systems Manager creates an AWS Identity and Acces
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": [
@@ -132,7 +132,7 @@ The role includes the following trust entity.
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": [

@@ -10,9 +10,13 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
 
 ![Example scale-up equation.](https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/scale-up-equasion.png)
 
+*Scale-up equation*
+
 Scaling is considered to be excellent when the scale-up is close to or equal to the number of processors on which the application is run. An example of scale up as a function of core count is shown in the following figure.
 
 ![A graph showing strong scaling demonstrated for a 14M cell external aerodynamics use case.](https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/strong-scaling.png)
+
+*Strong scaling demonstrated for a 14M cell external aerodynamics use case*
 
  The example case in preceding figure is a 14 million cell external aerodynamics calculation using a cell-centered unstructured solver. The mesh is composed largely of hexahedra. The black line shows the ideal or perfect scalability. The blue diamond-based curve shows the actual scale-up for this case as a function of increasing processor count. Excellent scaling is seen to almost 1000 cores for this small-sized case. This example was run on Amazon EC2 c5n.18xlarge instances, with Elastic Fabric Adapter (EFA), and using a fully loaded compute node.
 
@@ -31,12 +35,16 @@ Scaling is considered to be excellent when the scale-up is close to or equal to 
 
 ![A graph showing scale-up and efficiency as a function of cells per processor.](https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/scale-up-graph.png)
 
+*Scale-up and efficiency as a function of cells per processor*
+
 ## Running efficiency
 <a name="running-efficiency"></a>
 
  Efficiency is defined as the scale-up divided by the number of processors used in the calculation. Scale-up and efficiency as a function of cells/core is shown in the preceding figure. In this figure, the cells per core are on the horizontal axis. The blue diamond-based line shows scale-up as a function of mesh cells per processor. The vertical axis for scale-up is on the left-hand side of the graph as indicated by the lower blue arrow. The orange circle-based line shows efficiency as a function of mesh cells per core. The vertical axis for efficiency is shown on the right side of the graph and is indicated by the upper orange arrow.
 
 ![The running efficiency and scale-up equation.](https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/efficiency-equasion.png)
+
+*Running efficiency and scale-up equation*
 
  For similar case types, running with similar solver settings, a plot like the one in this figure can help you choose the desired efficiency and number of cores running for a given case.
 
@@ -48,6 +56,8 @@ Scaling is considered to be excellent when the scale-up is close to or equal to 
  Plots of scale-up and efficiency offer an understanding about how a case or application scales. However, what matters most HPC users is case turn-around time and cost. A plot of turn-around time versus CPU cost for this case is shown in the following figure. As the number of cores increases, the inefficiency also increases, which leads to increased costs.
 
 ![A graph demonstrating cost for per run based on on-demand pricing for the c5n.18xlarge instance as a function of turn-around time.](https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/cost-per-run.png)
+
+*Cost for per run based on on-demand pricing for the `c5n.18xlarge` instance as a function of turn-around time*
 
  In the preceding figure, the turn-around time is shown on the horizontal axis. The cost is shown on the vertical axis. The price is based on the “on-demand” price of a `c5n.18xlarge` for 1000 iterations, and only includes the computational costs. Small costs are also incurred for data storage. Minimum cost was obtained at approximately 50,000 cells per core or more. As the efficiency is 100% over a range of core counts, the price is the same regardless of the number of cores. Many users choose a cell count per core to achieve the lowest possible cost.
 

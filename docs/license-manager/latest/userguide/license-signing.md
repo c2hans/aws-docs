@@ -19,7 +19,7 @@ The following workflow describes the issuance of cryptographically signed licens
 
 1. An end-user obtains the license using the [`CheckoutLicense`](https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CheckoutLicense.html) or [`CheckoutBorrowLicense`](https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CheckoutBorrowLicense.html) API operation. The `CheckoutBorrowLicense` operation is allowed only on licenses with **Borrow** configured. It returns a digital signature as part of its response along with the JSON object listing entitlements. The plaintext JSON resembles the following:
 
-   ```
+   ```json
    {
       "entitlementsAllowed":[
          {

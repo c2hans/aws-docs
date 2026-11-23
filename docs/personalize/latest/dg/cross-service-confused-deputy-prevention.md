@@ -17,7 +17,7 @@ To prevent the confused deputy problem in roles assumed by Amazon Personalize, i
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

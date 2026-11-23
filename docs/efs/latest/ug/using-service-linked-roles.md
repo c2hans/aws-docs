@@ -28,7 +28,7 @@ The role permissions policy allows Amazon EFS to complete the actions included i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

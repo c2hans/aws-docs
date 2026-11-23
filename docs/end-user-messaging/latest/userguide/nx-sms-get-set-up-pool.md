@@ -28,7 +28,7 @@ To create a pool from the console or the AWS CLI, choose the tab that matches ho
 
 Use the [create-pool](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/create-pool.html) command, passing the number from Step 1 as {{originationIdentity}}. To add more identities to an existing pool later, use [associate-origination-identity](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/associate-origination-identity.html).
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 create-pool \
 > --origination-identity {{originationIdentity}} \
 > --iso-country-code {{XX}} \
@@ -37,7 +37,7 @@ $ aws pinpoint-sms-voice-v2 create-pool \
 
 To add another number to an existing pool, use [associate-origination-identity](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/associate-origination-identity.html). Replace {{poolId}} with the pool and {{originationIdentity}} with the number to add.
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 associate-origination-identity \
 > --pool-id {{poolId}} \
 > --origination-identity {{originationIdentity}} \

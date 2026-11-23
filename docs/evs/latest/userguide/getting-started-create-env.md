@@ -132,7 +132,7 @@ You can create the environment by using the Amazon EVS console or the AWS CLI.
 
      The following is a sample request. Replace the example IDs, names, and CIDR blocks with your own values. Each VLAN CIDR block must be inside a CIDR block of your VPC. The sample uses a private HCX VLAN subnet. For HCX over the internet, use a public /28 CIDR block from your IPAM pool for `hcx`, set `isHcxPublic` to `true`, and set `hcxNetworkAclId` to the ID of your network ACL (it starts with `acl-`). For the steps, see [Configure HCX public internet connectivity](evs-env-hcx-internet-access.md). Replace `<region-code>` with the Region where you want to create the environment.
 
-     ```
+     ```bash
      aws evs create-environment \
      --environment-name testEnv \
      --vpc-id vpc-1234567890abcdef0 \
@@ -221,7 +221,7 @@ You can create the environment by using the Amazon EVS console or the AWS CLI.
 
      The following is a sample response.
 
-     ```
+     ```json
      {
          "environment": {
              "environmentId": "env-abcde12345",

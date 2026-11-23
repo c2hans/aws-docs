@@ -86,7 +86,7 @@ For more information, see [Processing Documents Asynchronously](https://docs.aws
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/textract#code-examples).
 
-```
+```python
 class TextractWrapper:
     """Encapsulates Textract functions."""
 
@@ -127,7 +127,7 @@ class TextractWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tex#code-examples).
 
-```
+```sap-abap
     "Gets the results for an Amazon Textract"
     "asynchronous operation that analyzes text in a document."
     TRY.

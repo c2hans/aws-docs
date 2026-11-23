@@ -36,7 +36,7 @@ Deadline Cloud fleets require access to the `jobRunAsUser` password stored in th
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement" : [
@@ -72,7 +72,7 @@ When a fleet no longer requires access to a queue, remove access to the password
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement" : [

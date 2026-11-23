@@ -8,7 +8,7 @@ Use the [GetSession](https://docs.aws.amazon.com/bedrock/latest/APIReference/API
 
 The following example code shows how to get text and image data for a checkpoint with the AWS SDK for Python (Boto3) and the [GetInvocationStep](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetInvocationStep.html) API operation.
 
-```
+```python
 def get_invocation_step(invocation_identifier, session_identifier, invocation_step_identifier):
 try:
     response = client.get_invocation_step(

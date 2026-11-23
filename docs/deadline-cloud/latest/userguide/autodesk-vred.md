@@ -96,7 +96,7 @@ The Autodesk VRED submitter plugin allows you to submit jobs to Deadline Cloud d
 
 1. In the Script section, add the following text to the end of the section:
 
-   ```
+   ```python
    from DeadlineCloudForVRED import DeadlineCloudForVRED
    DeadlineCloudForVRED()
    ```

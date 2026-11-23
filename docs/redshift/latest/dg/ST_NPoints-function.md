@@ -35,7 +35,7 @@ If *geo* is null, then null is returned.
 
 The following SQL returns the number of points in a linestring.
 
-```
+```sql
 SELECT ST_NPoints(ST_GeomFromText('LINESTRING(77.29 29.07,77.42 29.26,77.27 29.31,77.29 29.07)'));
 ```
 
@@ -47,7 +47,7 @@ st_npoints
 
 The following SQL returns the number of points in a linestring in a geography.
 
-```
+```sql
 SELECT ST_NPoints(ST_GeogFromText('LINESTRING(110 40, 2 3, -10 80, -7 9)'));
 ```
 

@@ -14,7 +14,7 @@ The following code examples show how to use `DeleteReceiptRuleSet`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Delete an Amazon Simple Email Service (Amazon SES) receipt rule set.
 /*!
   \param receiptRuleSetName: The name for the receipt rule set.
@@ -53,7 +53,7 @@ bool AwsDoc::SES::deleteReceiptRuleSet(const Aws::String &receiptRuleSetName,
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { DeleteReceiptRuleSetCommand } from "@aws-sdk/client-ses";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
 import { sesClient } from "./libs/sesClient.js";
@@ -83,7 +83,7 @@ const run = async () => {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 
-```
+```python
 class SesReceiptHandler:
     """Encapsulates Amazon SES receipt handling functions."""
 
@@ -117,7 +117,7 @@ class SesReceiptHandler:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ses->deletereceiptruleset( iv_rulesetname = iv_rule_set_name ).
         MESSAGE 'Receipt rule set deleted successfully' TYPE 'I'.

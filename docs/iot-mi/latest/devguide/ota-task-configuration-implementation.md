@@ -11,7 +11,7 @@ You can create configurations for OTA updates to control how updates are rolled 
 
 Use the following example to create an OTA task configuration:
 
-```
+```bash
 aws iotmanagedintegrations create-ota-task-configuration \
   --description "OTA configuration" \
   --name "MyOtaConfig" \

@@ -24,7 +24,9 @@ AWS offers a variety of purpose-built IoT services. The foundational services he
 
 This decision guide will help you ask the right questions, evaluate your criteria, and determine which IoT services are the best fit for your needs.
 
-[![AWS Videos](https://img.youtube.com/vi/o4Rr_lDFWfA?si=D-ZdUEJx0FOE6az0/0.jpg)](https://www.youtube.com/watch?v=o4Rr_lDFWfA?si=D-ZdUEJx0FOE6az0)
+[![AWS Videos](https://img.youtube.com/vi/o4Rr_lDFWfA/0.jpg)](https://www.youtube.com/watch?v=o4Rr_lDFWfA)
+
+This video provides a seven minute introduction to choosing an AWS IoT service.
 
 ## Understand
 <a name="understand"></a>

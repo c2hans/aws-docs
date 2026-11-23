@@ -41,7 +41,7 @@ Encryption policies contain the following elements:
 
 The following sample policy will assign a customer managed key to any future collection named `autopartsinventory`, as well as collections that begin with the term "sales":
 
-```
+```json
 {
    "Rules":[
       {
@@ -103,7 +103,7 @@ The following sample identity-based access policy provides the minimum permissio
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -155,7 +155,7 @@ For example:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -257,7 +257,7 @@ To create an encryption policy using the OpenSearch Serverless API operations, y
 
 Encryption policies take the following format. This sample `my-policy.json` file matches any future collection named `autopartsinventory`, as well as any collections with names beginning with `sales`.
 
-```
+```json
 {
    "Rules":[
       {
@@ -275,7 +275,7 @@ Encryption policies take the following format. This sample `my-policy.json` file
 
 To use a service-owned key, set `AWSOwnedKey` to `true`:
 
-```
+```json
 {
    "Rules":[
       {
@@ -312,7 +312,7 @@ aws opensearchserverless list-security-policies --type encryption
 
 The request returns information about all configured encryption policies. Use the contents of the `policy` element to view the pattern rules that are defined in the policy:
 
-```
+```json
 {
    "securityPolicyDetails": [
       {

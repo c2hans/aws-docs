@@ -41,7 +41,7 @@ To delete the connector in the Amazon EVS console or with the AWS CLI, use the f
 
 1. Run the `delete-environment-connector` command.
 
-   ```
+   ```bash
    aws evs delete-environment-connector \
        --environment-id env-abcde12345 \
        --connector-id cnctr-abcde12345
@@ -49,7 +49,7 @@ To delete the connector in the Amazon EVS console or with the AWS CLI, use the f
 
 1. To verify, run the `list-environment-connectors` command, and check that the connector is no longer listed.
 
-   ```
+   ```bash
    aws evs list-environment-connectors \
        --environment-id env-abcde12345
    ```

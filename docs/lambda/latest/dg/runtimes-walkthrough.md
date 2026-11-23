@@ -81,7 +81,7 @@ In this tutorial, you create a role that grants only basic permissions: the `AWS
 
 1. To create a role named `bash-tutorial-role` that Lambda can assume, run the `create-role` command.
 
-   ```
+   ```bash
    aws iam create-role \
      --role-name bash-tutorial-role \
      --assume-role-policy-document '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"Service":"lambda.amazonaws.com"},"Action":"sts:AssumeRole"}]}'
@@ -89,7 +89,7 @@ In this tutorial, you create a role that grants only basic permissions: the `AWS
 
 1. To allow the function to write logs, attach the `AWSLambdaBasicExecutionRole` managed policy to the role.
 
-   ```
+   ```bash
    aws iam attach-role-policy \
      --role-name bash-tutorial-role \
      --policy-arn arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
@@ -104,13 +104,13 @@ Create the `bootstrap` script. In the next step, you install the script at `/var
 
 1. Create a directory for the project, and change to the directory.
 
-   ```
+   ```bash
    mkdir bash-runtime-tutorial && cd bash-runtime-tutorial
    ```
 
 1. Create a file named `bootstrap` with the following content:
 
-   ```
+   ```bash
    #!/bin/bash
 
    set -euo pipefail
@@ -154,7 +154,7 @@ Each runtime version gets its contents from a container image in Amazon Elastic 
 
 1. Create a file named `Dockerfile` with the following content:
 
-   ```
+   ```dockerfile
    FROM public.ecr.aws/lambda/provided:al2023
 
    # Install the runtime interface client.
@@ -168,7 +168,7 @@ Each runtime version gets its contents from a container image in Amazon Elastic 
 
 1. Set shell variables for your account ID, your AWS Region, and your Amazon ECR repository URI. Replace `123456789012` with your account ID, and `us-east-1` with the Region that you want to use.
 
-   ```
+   ```bash
    export ACCOUNT_ID={{123456789012}}
    export AWS_REGION={{us-east-1}}
    export REPO_URI=${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/bash-runtime
@@ -178,7 +178,7 @@ Each runtime version gets its contents from a container image in Amazon Elastic 
 
 1. To build the runtime image, run the `docker build` command.
 
-   ```
+   ```bash
    docker build --platform linux/amd64 --tag ${REPO_URI}:v1 .
    ```
 
@@ -190,13 +190,13 @@ Next, create an Amazon ECR repository, allow Lambda to read from the repository,
 
 1. To create a repository named `bash-runtime`, run the `create-repository` command.
 
-   ```
+   ```bash
    aws ecr create-repository --repository-name bash-runtime
    ```
 
 1. Create a file named `ecr-policy.json` with the following content. The repository policy allows the Lambda service principal to read images from the repository.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -218,7 +218,7 @@ Next, create an Amazon ECR repository, allow Lambda to read from the repository,
 
 1. To apply the policy to the repository, run the `set-repository-policy` command.
 
-   ```
+   ```bash
    aws ecr set-repository-policy \
      --repository-name bash-runtime \
      --policy-text file://ecr-policy.json
@@ -226,7 +226,7 @@ Next, create an Amazon ECR repository, allow Lambda to read from the repository,
 
 1. To authenticate Docker to your Amazon ECR registry, run the following command.
 
-   ```
+   ```bash
    aws ecr get-login-password | docker login \
      --username AWS \
      --password-stdin ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com
@@ -236,7 +236,7 @@ Next, create an Amazon ECR repository, allow Lambda to read from the repository,
 
 1. To upload the runtime image, run the `docker push` command.
 
-   ```
+   ```bash
    docker push ${REPO_URI}:v1
    ```
 
@@ -249,7 +249,7 @@ Functions use a customer-managed runtime through three resources. The runtime is
 
 1. To create a runtime named `bash-runtime`, run the `create-runtime` command.
 
-   ```
+   ```bash
    aws lambda-core create-runtime \
      --name bash-runtime \
      --description "Minimal Bash runtime"
@@ -257,7 +257,7 @@ Functions use a customer-managed runtime through three resources. The runtime is
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "Arn": "arn:aws:lambda:us-east-1:123456789012:runtime/bash-runtime",
        "Name": "bash-runtime",
@@ -270,7 +270,7 @@ Functions use a customer-managed runtime through three resources. The runtime is
 
 1. To save the runtime ARN in a shell variable for later steps, run the `get-runtime` command.
 
-   ```
+   ```bash
    export RUNTIME_ARN=$(aws lambda-core get-runtime \
      --runtime-name bash-runtime \
      --query Arn \
@@ -282,7 +282,7 @@ Functions use a customer-managed runtime through three resources. The runtime is
 
 1. To create a runtime version named `v1` from the runtime image, run the `create-runtime-version` command.
 
-   ```
+   ```bash
    aws lambda-core create-runtime-version \
      --runtime-name bash-runtime \
      --name v1 \
@@ -291,7 +291,7 @@ Functions use a customer-managed runtime through three resources. The runtime is
 
    The following example shows an excerpt of the output. Lambda resolves the image tag to a digest and reads the platform (architecture and OS) from the runtime image.
 
-   ```
+   ```json
    {
        "Name": "v1",
        "Arn": "arn:aws:lambda:us-east-1:123456789012:runtime/bash-runtime/version/v1",
@@ -318,7 +318,7 @@ Functions use a customer-managed runtime through three resources. The runtime is
 
 1. To wait until the runtime version is ready, run the following command.
 
-   ```
+   ```bash
    aws lambda-core wait runtime-version-active --runtime-name bash-runtime --name v1
    ```
 
@@ -328,7 +328,7 @@ Functions use a customer-managed runtime through three resources. The runtime is
 
 1. To create an alias named `prod` that points to runtime version `v1`, run the `create-runtime-alias` command.
 
-   ```
+   ```bash
    aws lambda-core create-runtime-alias \
      --runtime-name bash-runtime \
      --name prod \
@@ -337,7 +337,7 @@ Functions use a customer-managed runtime through three resources. The runtime is
 
    The following example shows an excerpt of the output.
 
-   ```
+   ```json
    {
        "Name": "prod",
        "Arn": "arn:aws:lambda:us-east-1:123456789012:runtime/bash-runtime/alias/prod",
@@ -349,7 +349,7 @@ Functions use a customer-managed runtime through three resources. The runtime is
 
 1. To wait until the alias is ready, run the following command.
 
-   ```
+   ```bash
    aws lambda-core wait runtime-alias-active --runtime-name bash-runtime --name prod
    ```
 
@@ -362,7 +362,7 @@ Create a function that uses the Bash runtime. The function's .zip file archive h
 
 1. Create a file named `function.sh` with the following content. The `handler` function takes the event data, logs the event data to `stderr`, and returns a response.
 
-   ```
+   ```bash
    function handler () {
      EVENT_DATA=$1
      echo "$EVENT_DATA" 1>&2;
@@ -374,14 +374,14 @@ Create a function that uses the Bash runtime. The function's .zip file archive h
 
 1. To make the handler script executable and add the script to a .zip file archive, run the following commands.
 
-   ```
+   ```bash
    chmod 755 function.sh
    zip function.zip function.sh
    ```
 
 1. To create the function, run the `create-function` command. For `--role`, use the ARN of the `bash-tutorial-role` execution role that you created in [Step 1: Create an execution role](#runtimes-walkthrough-role).
 
-   ```
+   ```bash
    aws lambda create-function \
      --function-name bash-function \
      --runtime custom \
@@ -398,13 +398,13 @@ If you created the role in the last few seconds, the command might fail with the
 
 1. To wait until the function is ready to invoke, run the following command.
 
-   ```
+   ```bash
    aws lambda wait function-active-v2 --function-name bash-function
    ```
 
 1. To invoke the function, run the `invoke` command.
 
-   ```
+   ```bash
    aws lambda invoke \
      --function-name bash-function \
      --payload '{"text":"Hello"}' \
@@ -416,7 +416,7 @@ If you created the role in the last few seconds, the command might fail with the
 
    You should see the following output:
 
-   ```
+   ```json
    {
        "StatusCode": 200,
        "ExecutedVersion": "$LATEST"
@@ -425,13 +425,13 @@ If you created the role in the last few seconds, the command might fail with the
 
 1. To view the function response, display the contents of `response.txt`.
 
-   ```
+   ```bash
    cat response.txt
    ```
 
    You should see the following output:
 
-   ```
+   ```text
    Echoing request: '{"text":"Hello"}'
    ```
 
@@ -448,13 +448,13 @@ Lambda doesn't delete runtime resources right away. First, Lambda schedules each
 
 1. To delete the function, run the `delete-function` command.
 
-   ```
+   ```bash
    aws lambda delete-function --function-name bash-function
    ```
 
 1. To delete the runtime alias, run the `delete-runtime-alias` command.
 
-   ```
+   ```bash
    aws lambda-core delete-runtime-alias \
      --runtime-name bash-runtime \
      --name prod \
@@ -463,7 +463,7 @@ Lambda doesn't delete runtime resources right away. First, Lambda schedules each
 
 1. To delete the runtime version, run the `delete-runtime-version` command.
 
-   ```
+   ```bash
    aws lambda-core delete-runtime-version \
      --runtime-name bash-runtime \
      --name v1 \
@@ -472,7 +472,7 @@ Lambda doesn't delete runtime resources right away. First, Lambda schedules each
 
 1. To delete the runtime, run the `delete-runtime` command.
 
-   ```
+   ```bash
    aws lambda-core delete-runtime \
      --runtime-name bash-runtime \
      --recovery-window-in-days 7
@@ -482,7 +482,7 @@ Lambda doesn't delete runtime resources right away. First, Lambda schedules each
 
 1. (Optional) To confirm that the runtime is scheduled for deletion, run the `get-runtime` command.
 
-   ```
+   ```bash
    aws lambda-core get-runtime --runtime-name bash-runtime --query State
    ```
 
@@ -490,7 +490,7 @@ Lambda doesn't delete runtime resources right away. First, Lambda schedules each
 
 1. To delete the Amazon ECR repository and the runtime image, run the `delete-repository` command.
 
-   ```
+   ```bash
    aws ecr delete-repository --repository-name bash-runtime --force
    ```
 
@@ -498,7 +498,7 @@ Lambda doesn't delete runtime resources right away. First, Lambda schedules each
 
 1. To detach the managed policy from the execution role, run the `detach-role-policy` command.
 
-   ```
+   ```bash
    aws iam detach-role-policy \
      --role-name bash-tutorial-role \
      --policy-arn arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
@@ -506,7 +506,7 @@ Lambda doesn't delete runtime resources right away. First, Lambda schedules each
 
 1. To delete the execution role, run the `delete-role` command.
 
-   ```
+   ```bash
    aws iam delete-role --role-name bash-tutorial-role
    ```
 
@@ -514,13 +514,13 @@ Lambda doesn't delete runtime resources right away. First, Lambda schedules each
 
    Before you run the command, wait at least 1 minute after the last invocation so that Lambda finishes sending log events. Otherwise, Lambda might create the log group again.
 
-   ```
+   ```bash
    aws logs delete-log-group --log-group-name /aws/lambda/bash-function
    ```
 
 1. (Optional) To remove the runtime image from your computer, run the `docker rmi` command. The `docker build` command stored a copy of the image locally, and deleting the Amazon ECR repository doesn't remove it.
 
-   ```
+   ```bash
    docker rmi ${REPO_URI}:v1
    ```
 

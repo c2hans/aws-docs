@@ -247,7 +247,9 @@ You can use any standard SQL client application to connect to your DB instance. 
 
    1. Choose the Oracle DB instance name to display its details.
 
-   1. On the **Connectivity & security** tab, copy the endpoint. Also, note the port number. You need both the endpoint and the port number to connect to the DB instance.
+   1. On the **Connectivity & security** tab, for **Connect using**, choose **Endpoints**.
+
+   1. Under **Endpoint & port**, copy the endpoint. Also, note the port number. You need both the endpoint and the port number to connect to the DB instance.
 ![Connect to an Oracle DB instance.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/OracleConnect1.png)
 
 1. Connect to the EC2 instance that you created earlier by following the steps in [Connect to your Linux instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html) in the *Amazon EC2 User Guide*.

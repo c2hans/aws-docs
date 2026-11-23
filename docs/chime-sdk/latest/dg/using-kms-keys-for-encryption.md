@@ -22,7 +22,7 @@ The `AwsKmsKeyId` and `SinkIamRoleArn` parameters are co-dependent. When both ar
 
 The `SinkIamRoleArn` must have the same permissions and access as the principal to put artifacts into the Amazon S3 bucket. For more information about the expected default permissions in the Amazon S3 bucket, see [Creating an Amazon S3 bucket for Amazon Chime SDK Media Capture Pipelines](https://docs.aws.amazon.com/chime-sdk/latest/dg/create-s3-bucket.html). To enable SSE for individual objects, your Amazon S3 bucket must allow the IAM role specified using the `SinkIamRoleArn` to perform the same set of actions you would expect from the calling IAM identity. You can achieve this by adding the following principal to your Amazon S3 bucket permission policy.
 
-```
+```json
 ...
 "Principal": {
     ...
@@ -37,7 +37,7 @@ The `AwsKmsKeyId` should point to a key that permits the `SinkIamRoleArn` to per
 **Note**
 The resource is set to use wildcard `“*”`, which in this context of a AWS KMS key policy signifies “itself”.
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {
@@ -53,7 +53,7 @@ The resource is set to use wildcard `“*”`, which in this context of a AWS KM
 
 The `SinkIamRoleArn` role must have a trust relationship allowing the service to assume it. See the following example.
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {
@@ -73,7 +73,7 @@ The `SinkIamRoleArn` role must have a trust relationship allowing the service to
 
 The `SinkIamRoleArn` should have the following minimum permissions policy for Media Capture Pipeline. See the following example.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "kms:GenerateDataKey",
@@ -104,7 +104,7 @@ The `SinkIamRoleArn` should have the following minimum permissions policy for Me
 
 Additionally, the caller must be allowed to pass `SinkIamRoleArn` to the service. In cases when the caller doesn’t have such permission it should be added explicitly. See the following example.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "iam:PassRole",
@@ -125,7 +125,7 @@ Additionally, the caller must be allowed to pass `SinkIamRoleArn` to the service
 
 If you plan on using Media Concatenation Pipeline after Media Capture, see [Building an Amazon Chime SDK media concatenation pipeline](create-concat-pipe-steps.md) to understand the required permissions. To make the pipeline work with the AWS KMS key for object-level SSE, the `SinkIamRoleArn` permissions (allowed actions) must be expanded for the AWS KMS key and Amazon S3 bucket. See the following example.
 
-```
+```json
 ...
 {
     ...

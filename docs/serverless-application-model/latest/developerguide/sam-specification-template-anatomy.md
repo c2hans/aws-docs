@@ -16,7 +16,7 @@ All other sections of an AWS SAM template file correspond to the CloudFormation 
 
 The following example shows a YAML-formatted template fragment.
 
-```
+```yaml
 Transform: AWS::Serverless-2016-10-31
 
 Globals:

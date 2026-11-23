@@ -204,7 +204,7 @@ To resolve this issue, turn off enhanced image metadata collection, using one of
   For more information about updating your AMI image pipeline using the EC2 Image Builder console, see [Update AMI image pipelines in the console](update-image-pipeline-console.md). For more information about updating your container image pipeline using the EC2 Image Builder console, see [Update a container image pipeline in the console](update-container-pipeline-console.md).
 + You can also update your image pipeline with the **update-image-pipeline** command in the AWS CLI. To do this, include the `EnhancedImageMetadataEnabled` property in your JSON file, set to `false`. The following example shows the property set to `false`.
 
-  ```
+  ```json
   {
       "name": "{{MyWindows2019Pipeline}}",
       "description": "{{Builds Windows 2019 Images}}",

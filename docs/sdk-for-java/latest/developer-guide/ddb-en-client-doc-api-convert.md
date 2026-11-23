@@ -12,7 +12,7 @@ In the following example, we use a `CustomAttributeConverterProvider` with its n
 
 This example shows that you can mix data from classes and also data from structures that are built as needed. This example also shows that custom classes can be used at any level of a nested structure. The `Address` objects in this example are values used in a map.
 
-```
+```java
     public static void attributeToAddressClassMappingExample(DynamoDbEnhancedClient enhancedClient, DynamoDbClient standardClient) {
         String tableName = "customer";
 
@@ -183,7 +183,7 @@ public class Address {
 
 The following helper method provides the map that use custom `Address` instances for values rather than generic `Map<String, String>` instances for values.
 
-```
+```java
     private static Map<String, Address> getAddressesForCustomMappingExample() {
         Address homeAddress = new Address();
         homeAddress.setStreet("100 Any Street");

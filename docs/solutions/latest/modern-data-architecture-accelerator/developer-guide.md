@@ -17,13 +17,13 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 
 1. From the root of the repo, run npm install:
 
-   ```
+   ```bash
    npm install
    ```
 
 1. After making code changes, run a build/test from the root of the repo:
 
-   ```
+   ```bash
    npm run build && npm run test
    ```
 
@@ -53,7 +53,7 @@ Constructs and Stacks should be tested via unit testing using the CDK Assertions
 #### Example Construct/Stack Unit Tests
 <a name="example-constructstack-unit-tests"></a>
 
-```
+```typescript
 import { MdaaTestApp } from "@aws-mdaa/testing";
 import { Stack } from "aws-cdk-lib";
 import { MdaaKmsKey } from '@aws-mdaa/kms-constructs';
@@ -118,6 +118,6 @@ MDAA Apps can be developed and tested like any other CDK app. This typically inv
 #### Example CDK Command Invoking a MDAA App
 <a name="example-cdk-command-invoking-a-mdaa-app"></a>
 
-```
+```bash
 cdk synth --require-approval never -c org="" -c env="" -c domain="" -c module_configs="" -c tag_configs=""  -c module_name="" --all
 ```

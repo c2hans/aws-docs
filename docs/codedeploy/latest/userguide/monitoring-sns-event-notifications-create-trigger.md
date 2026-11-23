@@ -69,7 +69,7 @@ The simplest way to create the JSON file is to use the `--generate-cli-skeleton`
 
 1. Add the name of an existing CodeDeploy application to the output:
 
-   ```
+   ```yaml
    {
        "applicationName": "TestApp-us-east-2",
        "deploymentGroupName": "",
@@ -128,7 +128,7 @@ The simplest way to create the JSON file is to use the `--generate-cli-skeleton`
 
    The following configuration example creates a deployment group named `dep-group-ghi-789-2` for an application named `TestApp-us-east-2` and a trigger that prompts the sending of notifications whenever a deployment starts, succeeds, or fails:
 
-   ```
+   ```yaml
    {
        "applicationName": "TestApp-us-east-2",
        "deploymentConfigName": "CodeDeployDefault.OneAtATime",
@@ -186,7 +186,7 @@ The simplest way to create the JSON file is to run the **get-deployment-group** 
 
    The contents of your text file should now look similar to the following:
 
-   ```
+   ```yaml
    {
        "applicationName": "TestApp-us-east-2",
        "deploymentConfigName": "CodeDeployDefault.OneAtATime",
@@ -208,7 +208,7 @@ The simplest way to create the JSON file is to run the **get-deployment-group** 
 
    The contents of your text file should now look similar to the following. This code prompts notifications to be sent whenever a deployment starts, succeeds, or fails.
 
-   ```
+   ```yaml
    {
        "applicationName": "TestApp-us-east-2",
        "deploymentConfigName": "CodeDeployDefault.OneAtATime",

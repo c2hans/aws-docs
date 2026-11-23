@@ -20,7 +20,7 @@ You can't opt out using the Compute Optimizer console.
 
 1. Enter the following command.
 
-   ```
+   ```bash
    aws compute-optimizer update-enrollment-status --status Inactive
    ```
 **Note**

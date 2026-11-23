@@ -81,7 +81,7 @@ If your client ID matches your thing's name in the registry, after you attach an
 
    The output can look like the following.
 
-   ```
+   ```JSON
    {
        "PrincipalThingObjects": [
            {
@@ -103,7 +103,7 @@ If your client ID matches your thing's name in the registry, after you attach an
 
    The output can look like the following.
 
-   ```
+   ```JSON
    {
        "ThingPrincipalObjects": [
            {

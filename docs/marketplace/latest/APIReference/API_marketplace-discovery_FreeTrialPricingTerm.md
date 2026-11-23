@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # FreeTrialPricingTerm
 
-Defines a free trial pricing term that enables customers to try the product before purchasing.
+Describes a free trial pricing term. With this term, you can try the product before you purchase it.
 
 ## Contents
 <a name="API_marketplace-discovery_FreeTrialPricingTerm_Contents"></a>
@@ -13,7 +13,7 @@ Defines a free trial pricing term that enables customers to try the product befo
 In the following list, the required parameters are described first.
 
  ** grants **   <a name="AWSMarketplaceService-Type-marketplace-discovery_FreeTrialPricingTerm-grants"></a>
-The entitlements granted to the buyer during the free trial.
+The entitlements that you receive during the free trial.
 Type: Array of [GrantItem](API_marketplace-discovery_GrantItem.md) objects
 Required: Yes
 

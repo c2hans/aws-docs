@@ -27,7 +27,7 @@ To delete a state template, run the following command.
 
 Replace {{identifier}} with the name or ID of the state template.
 
-```
+```bash
 aws iotfleetwise delete-state-template \
     --identifier {{idenitfier}}
 ```

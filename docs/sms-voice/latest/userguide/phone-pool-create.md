@@ -48,7 +48,7 @@ You can also add a phone number to a pool when you use the `RequestPhoneNumber` 
 **To create a pool using the AWS CLI**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 create-pool \
   > --origination-identity {{originationIdentity}} \
   > --iso-country-code {{XX}} \

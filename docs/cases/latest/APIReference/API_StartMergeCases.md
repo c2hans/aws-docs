@@ -166,7 +166,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of StartMergeCases.
 
-```
+```json
 {
   "secondaryCaseIds": [
     "[secondary_case_id]"
@@ -191,7 +191,7 @@ This example illustrates one usage of StartMergeCases.
 }
 ```
 
-```
+```json
 { }
 ```
 

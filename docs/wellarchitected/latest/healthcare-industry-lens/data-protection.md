@@ -51,7 +51,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 
 ****
 
-```
+```json
 
 ```
 

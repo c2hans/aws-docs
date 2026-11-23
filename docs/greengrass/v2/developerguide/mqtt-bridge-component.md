@@ -176,7 +176,7 @@ This object contains the following information:
 noLocal
 (Optional) When enabled, the bridge doesn't forward messages on a topic that the bridge itself published. Use this to prevent loops, as follows:
 
-```
+```json
 {
     "mqtt5RouteOptions": {
         "toIoTCore": {
@@ -254,7 +254,7 @@ The following example configuration update specifies the following:
 + Relay messages from client devices to local publish/subscribe on topics that match the `clients/+/detections` topic filter, and add the `events/input/` prefix to the target topic. The resulting target topic matches the `events/input/clients/+/detections` topic filter.
 + Relay messages from client devices to AWS IoT Core on topics that match the `clients/+/status` topic filter, and add the `$aws/rules/StatusUpdateRule/` prefix to the target topic. This example relays these messages directly to an [AWS IoT rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html) named `StatusUpdateRule` to reduce costs using [Basic Ingest](https://docs.aws.amazon.com/iot/latest/developerguide/iot-basic-ingest.html).
 
-```
+```json
 {
   "mqttTopicMapping": {
     "ClientDeviceHelloWorld": {
@@ -349,7 +349,7 @@ The following example configuration update specifies the following:
 + Relay messages from client devices to local publish/subscribe on topics that match the `clients/+/detections` topic filter, and add the `events/input/` prefix to the target topic. The resulting target topic matches the `events/input/clients/+/detections` topic filter.
 + Relay messages from client devices to AWS IoT Core on topics that match the `clients/+/status` topic filter, and add the `$aws/rules/StatusUpdateRule/` prefix to the target topic. This example relays these messages directly to an [AWS IoT rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html) named `StatusUpdateRule` to reduce costs using [Basic Ingest](https://docs.aws.amazon.com/iot/latest/developerguide/iot-basic-ingest.html).
 
-```
+```json
 {
   "mqttTopicMapping": {
     "ClientDeviceHelloWorld": {
@@ -415,7 +415,7 @@ The following example configuration update specifies the following:
 + Relay messages from client devices to local publish/subscribe on topics that match the `clients/+/detections` topic filter, and add the `events/input/` prefix to the target topic. The resulting target topic matches the `events/input/clients/+/detections` topic filter.
 + Relay messages from client devices to AWS IoT Core on topics that match the `clients/+/status` topic filter, and add the `$aws/rules/StatusUpdateRule/` prefix to the target topic. This example relays these messages directly to an [AWS IoT rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html) named `StatusUpdateRule` to reduce costs using [Basic Ingest](https://docs.aws.amazon.com/iot/latest/developerguide/iot-basic-ingest.html).
 
-```
+```json
 {
   "mqttTopicMapping": {
     "ClientDeviceHelloWorld": {
@@ -475,7 +475,7 @@ Default: `ssl://localhost:8883`
 **Example: Configuration merge update**  <a name="mqtt-bridge-component-configuration-example-no-prefix"></a>
 The following example configuration update specifies to relay messages from client devices to AWS IoT Core on the `clients/MyClientDevice1/hello/world` and `clients/MyClientDevice2/hello/world` topics.
 
-```
+```json
 {
   "mqttTopicMapping": {
     "ClientDevice1HelloWorld": {
@@ -524,7 +524,7 @@ The MQTT bridge uses QoS 1 to publish and subscribe to AWS IoT Core, even when a
 **Example: Configuration merge update**  <a name="mqtt-bridge-component-configuration-example-no-prefix"></a>
 The following example configuration update specifies to relay messages from client devices to AWS IoT Core on the `clients/MyClientDevice1/hello/world` and `clients/MyClientDevice2/hello/world` topics.
 
-```
+```json
 {
   "mqttTopicMapping": {
     "ClientDevice1HelloWorld": {
@@ -570,14 +570,14 @@ This component uses the same log file as the [Greengrass nucleus](greengrass-nuc
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
   ```
 

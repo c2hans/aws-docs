@@ -31,7 +31,7 @@ You can integrate with other AWS services to get analytical or monitoring insigh
 
 This event is emitted when a contact is accepted by the agent, which might be before recording starts, for every contact with agent screen recording enabled.
 
-```
+```json
 {
   "version": "0",
   "id": "the_event_id_from_eventbridge",
@@ -63,7 +63,7 @@ This event is emitted when a contact is accepted by the agent, which might be be
 
 This event is emitted when screen recording ends on the agent desktop. This doesn't mean the screen recording has been successfully uploaded to your Amazon S3 bucket.
 
-```
+```json
 {
   "version": "0",
   "id": "the_event_id_from_eventbridge",
@@ -99,7 +99,7 @@ This event is emitted when screen recording ends on the agent desktop. This does
 
 This event is emitted when the screen recording is successfully uploaded to your Amazon S3 bucket. Details include Amazon S3 bucket location, recording size, and recording duration.
 
-```
+```json
 {
   "version": "0",
   "id": "the_event_id_from_eventbridge",
@@ -139,7 +139,7 @@ This event is emitted when the screen recording is successfully uploaded to your
 
 This event is emitted if screen recording fails. The failure information includes a best-effort estimation of the possible failure reason that we are able to detect.
 
-```
+```json
 {
   "version": "0",
   "id": "the_event_id_from_eventbridge",
@@ -214,7 +214,7 @@ Select the defined event pattern from the dropdown lists.
 
 If the event type is not showing up in the dropdown list, you can alternatively create the same pattern using **Custom pattern (JSON editor)** with:
 
-```
+```json
 {
   "source": [ "aws.connect" ],
   "detailType": [ "Screen Recording Status Changed" ]

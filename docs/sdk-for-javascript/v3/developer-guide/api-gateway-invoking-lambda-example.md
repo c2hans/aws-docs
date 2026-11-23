@@ -18,7 +18,7 @@ The example should take about 20 minutes to complete.
 
 This example shows you how to use JavaScript logic to create a solution that performs this use case. For example, you'll learn how to read a database to determine which employees have reached the one year anniversary date, how to process the data, and send out a text message all by using a Lambda function. Then you’ll learn how to use API Gateway to invoke this AWS Lambda function by using a Rest endpoint. For example, you can invoke the Lambda function by using this curl command:
 
-```
+```javascript
 curl -XGET "https://xxxxqjko1o3.execute-api.us-east-1.amazonaws.com/cronstage/employee"
 ```
 
@@ -83,7 +83,7 @@ The CloudFormation template was generated using the AWS CDK available [here on G
 **Important**
 The stack name must be unique within an AWS Region and AWS account. You can specify up to 128 characters, and numbers and hyphens are allowed.
 
-   ```
+   ```javascript
    aws cloudformation create-stack --stack-name STACK_NAME --template-body file://setup.yaml --capabilities CAPABILITY_IAM
    ```
 
@@ -96,7 +96,7 @@ The stack name must be unique within an AWS Region and AWS account. You can spec
 
 To populate the table, first create a directory named `libs`, and in it create a file named `dynamoClient.js`, and paste the content below into it.
 
-```
+```javascript
 const { DynamoDBClient } = require ( "@aws-sdk/client-dynamodb" );
 // Set the AWS Region.
 const REGION = "REGION"; // e.g. "us-east-1"
@@ -111,11 +111,11 @@ Next, create a file named `populate-table.js` in the root directory of your proj
 
 Run the following command from the command line.
 
-```
+```javascript
 node populate-table.js
 ```
 
-```
+```javascript
 const { BatchWriteItemCommand } = require ( "aws-sdk/client-dynamodb" );
 const {dynamoClient} = require ( "./libs/dynamoClient" );
 
@@ -178,7 +178,7 @@ run();
 
 In the `libs` directory, create files named `snsClient.js` and `lambdaClient.js`, and paste the content below into these files, respectively.
 
-```
+```javascript
 const { SNSClient } = require("@aws-sdk/client-sns");
 // Set the AWS Region.
 const REGION = "REGION"; //e.g. "us-east-1"
@@ -189,7 +189,7 @@ module.exports = { snsClient };
 
  Replace {{REGION}} with the AWS Region. This code is available [ here on GitHub](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/javascriptv3/example_code/cross-services/lambda-api-gateway/src/libs/snsClient.js).
 
-```
+```javascript
 const { LambdaClient } = require("@aws-sdk/client-lambda");
 // Set the AWS Region.
 const REGION = "REGION"; //e.g. "us-east-1"
@@ -204,7 +204,7 @@ First, import the required AWS SDK for JavaScript (v3) modules and commands. The
 
 The following code snippet shows this step. (See [Bundling the Lambda function](#api-gateway-invoking-lambda-full) for the full example.)
 
-```
+```javascript
 const { ScanCommand } = require("@aws-sdk/client-dynamodb");
 const { PublishCommand } = require("@aws-sdk/client-sns");
 const { snsClient } = require("./libs/snsClient");
@@ -238,7 +238,7 @@ First, create an async/await function called `sendText` to publish a text messag
 
 The following code snippet shows this step. (See [Bundling the Lambda function](#api-gateway-invoking-lambda-full) for the full example.)
 
-```
+```javascript
 // Helper function to send message using Amazon SNS.
 exports.handler = async () => {
   // Helper function to send message using Amazon SNS.
@@ -278,7 +278,7 @@ For information about *webpack*, see [Bundle applications with webpack](webpack.
 
 1. Run the following in the command line to bundle the JavaScript for this example into a file called `<index.js>` :
 
-   ```
+   ```javascript
    webpack mylambdafunction.ts --mode development --target node --devtool false --output-library-target umd -o index.js
    ```
 **Important**
@@ -330,7 +330,7 @@ run();
 
 Enter the following at the command line to deploy the Lambda function.
 
-```
+```javascript
 node lambda-function-setup.ts
 ```
 

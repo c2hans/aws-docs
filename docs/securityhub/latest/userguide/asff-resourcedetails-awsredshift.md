@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsR
 
 **Example**
 
-```
+```JSON
 "AwsRedshiftCluster": {
     "AllowVersionUpgrade": true,
     "AutomatedSnapshotRetentionPeriod": 1,

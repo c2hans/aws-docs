@@ -40,7 +40,7 @@ For more details, refer to [CyberArk’s OpenID Connect documentation](https://d
 
 To configure CyberArk as an outbound resource provider, use the following:
 
-```
+```json
 {
   "name": "CyberArk",
   "credentialProviderVendor": "CyberArkOauth2",

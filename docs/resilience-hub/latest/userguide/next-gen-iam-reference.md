@@ -10,7 +10,7 @@ To run an assessment or a resilience test, the next generation of Resilience Hub
 
 You can create an IAM role in the AWS IAM console. Choose **Custom trust policy** and use a trust policy like this:
 
-```
+```json
 {
   "Version": "2012-10-17"		 	 	 ,
   "Statement": [
@@ -44,7 +44,7 @@ Next generation Resilience Hub automatically creates a Service-Linked Role with 
 
 If you are including Terraform state files into your Next generation Resilience Hub service, provide permissions to read the Terraform files from your Amazon S3 bucket with a policy like this:
 
-```
+```json
 {
   "Version": "2012-10-17"		 	 	 ,
   "Statement": [
@@ -74,7 +74,7 @@ If you are including Amazon EKS clusters into your Next generation Resilience Hu
 
 This grants Next generation Resilience Hub read-only access to the Kubernetes resources it needs across all namespaces:
 
-```
+```yaml
 cat << EOF | kubectl apply -f -
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
@@ -199,7 +199,7 @@ kubectl edit -n kube-system configmap/aws-auth
 
 Add this under `mapRoles` in the data section:
 
-```
+```yaml
 - groups:
     - resilience-hub-eks-access-group
   rolearn: arn:aws:iam::{{ACCOUNT-ID}}:role/ResilienceHubRole

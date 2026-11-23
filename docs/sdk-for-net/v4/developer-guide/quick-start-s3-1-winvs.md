@@ -52,7 +52,7 @@ Don't choose the .NET Framework version of the console app template, or, if you 
 
 1. Replace the contents with the following code and save the file.
 
-   ```
+   ```csharp
    using System;
    using System.Threading.Tasks;
 
@@ -193,7 +193,7 @@ If you get this error, set up your project to use a later version of the languag
 
    In the command line, replace {{amzn-s3-demo-bucket}} in the following command with the name of the bucket that you chose.
 
-   ```
+   ```sh
    S3CreateAndList {{amzn-s3-demo-bucket}}
    ```
 

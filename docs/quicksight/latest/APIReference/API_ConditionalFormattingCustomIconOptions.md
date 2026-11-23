@@ -21,7 +21,8 @@ Required: No
  ** UnicodeIcon **   <a name="QS-Type-ConditionalFormattingCustomIconOptions-UnicodeIcon"></a>
 Determines the Unicode icon type.
 Type: String
-Pattern: `^[^\u0000-\u00FF]$`
+Length Constraints: Minimum length of 1. Maximum length of 16.
+Pattern: `^[^\u0000-\u00FF]+$`
 Required: No
 
 ## See Also

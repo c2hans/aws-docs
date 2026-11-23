@@ -22,7 +22,7 @@ Amazon EventBridge events are emitted on a best-effort basis. For more informati
 
 The following is an example of an EventBridge rule for Amazon Transcribe that's initiated when a transcription job's status changes to `COMPLETED` or `FAILED`.
 
-```
+```json
 {
     "source": [
         "aws.transcribe"
@@ -74,7 +74,7 @@ When a job's state changes from `IN_PROGRESS` to `COMPLETED` or `FAILED`, Amazon
 
 Note that this event applies only to the [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) API operation.
 
-```
+```json
 {
     "version": "0",
     "id": "{{event ID}}",
@@ -100,7 +100,7 @@ When you enable [automatic language identification](lang-id.md), Amazon Transcri
 
 Note that this event applies only to the [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) API operation when the [`LanguageIdSettings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html) parameter is included.
 
-```
+```json
 {
     "version": "0",
     "id": "{{event ID}}",
@@ -128,7 +128,7 @@ When a [Call Analytics](call-analytics.md) job state changes from `IN_PROGRESS` 
 
 Note that this event applies only to the [`StartCallAnalyticsJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartCallAnalyticsJob.html) API operation.
 
-```
+```json
 {
     "version": "0",
     "id": "{{event ID}}",
@@ -162,7 +162,7 @@ Note that this event applies only to the [`StartCallAnalyticsStreamTranscription
 
 A `COMPLETED` event contains the following information:
 
-```
+```json
 {
     "version": "0",
     "id": "{{event ID}}",
@@ -189,7 +189,7 @@ A `COMPLETED` event contains the following information:
 
 A `FAILED` event contains the following information:
 
-```
+```json
 {
     "version": "0",
     "id": "{{event ID}}",
@@ -215,7 +215,7 @@ A `FAILED` event contains the following information:
 
 When a state changes for a AWS HealthScribe post-stream analytics operation, such as a [ClinicalNoteGenerationResult](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_ClinicalNoteGenerationResult.html) changing from `IN_PROGRESS` to `COMPLETED`, AWS HealthScribe generates an event with the following information:
 
-```
+```json
 {
    "version":"0",
    "id":"event ID",
@@ -251,7 +251,7 @@ When a [custom vocabulary](custom-vocabulary.md)'s state changes from `PENDING` 
 **Note**
 This event applies only to the [`CreateVocabulary`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html) API operation.
 
-```
+```json
 {
     "version": "0",
     "id": "{{event ID}}",

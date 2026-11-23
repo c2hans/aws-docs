@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # ListTagsForResource
 
-Lists all tags that have been added to a deployment parameter resource.
+Lists all tags that have been added to a resource.
 
 ## Request Syntax
 <a name="API_marketplace-deployment_ListTagsForResource_RequestSyntax"></a>
@@ -19,7 +19,7 @@ GET /tags/{{resourceArn}} HTTP/1.1
 The request uses the following URI parameters.
 
  ** [resourceArn](#API_marketplace-deployment_ListTagsForResource_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-deployment_ListTagsForResource-request-uri-resourceArn"></a>
-The Amazon Resource Name (ARN) associated with the deployment parameter resource you want to list tags on.
+The Amazon Resource Name (ARN) of the resource you want to list tags on.
 Required: Yes
 
 ## Request Body

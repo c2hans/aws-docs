@@ -29,7 +29,7 @@ Your custom metrics appear in your own namespace, not in `AWS/Lambda/Web`. That 
 
 The following Node.js example publishes a `CheckoutLatency` metric and an `OrdersPlaced` metric under the `MyWebApp` namespace, with a `PaymentProvider` dimension. It writes the EMF object with `process.stdout.write`. Do not pass an EMF object to a `console` method. Lambda wraps `console` output in its own JSON log event, and CloudWatch does not extract metrics from the wrapped object.
 
-```
+```javascript
 function publishCheckoutMetrics(provider, latencyMs, orders) {
   process.stdout.write(JSON.stringify({
     _aws: {

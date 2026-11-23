@@ -28,7 +28,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-get-cli"></a>
 
-```
+```bash
 aws greengrass get-group \
   --group-id <value>  \
   [--cli-input-json <value>] \
@@ -37,7 +37,7 @@ aws greengrass get-group \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string"
 }
@@ -50,7 +50,7 @@ cli-input-json format:
 Success.
  [ DefinitionInformation](definitions-definitioninformation.md)
 
-```
+```json
 {
 "Name": "string",
 "Id": "string",
@@ -99,7 +99,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -153,7 +153,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-delete-cli"></a>
 
-```
+```bash
 aws greengrass delete-group \
   --group-id <value>  \
   [--cli-input-json <value>] \
@@ -162,7 +162,7 @@ aws greengrass delete-group \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string"
 }
@@ -175,7 +175,7 @@ cli-input-json format:
 Success.
  [ Empty](definitions-empty.md)
 
-```
+```json
 {
 }
 ```
@@ -187,7 +187,7 @@ type: object
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -237,7 +237,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "Name": "string"
 }
@@ -258,7 +258,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-put-cli"></a>
 
-```
+```bash
 aws greengrass update-group \
   --group-id <value> \
   [--name <value>]  \
@@ -268,7 +268,7 @@ aws greengrass update-group \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "Name": "string"
@@ -282,7 +282,7 @@ cli-input-json format:
 Success.
  [ Empty](definitions-empty.md)
 
-```
+```json
 {
 }
 ```
@@ -294,7 +294,7 @@ type: object
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

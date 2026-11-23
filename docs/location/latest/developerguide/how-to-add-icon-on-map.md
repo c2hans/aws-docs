@@ -17,7 +17,7 @@ In this example, you will use an external URL to add an icon to the map using a 
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -81,7 +81,7 @@ In this example, you will use an external URL to add an icon to the map using a 
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```

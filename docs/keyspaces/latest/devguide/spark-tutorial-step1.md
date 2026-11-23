@@ -12,7 +12,7 @@ In this step, you confirm that the partitioner for your account is compatible wi
    + Assign read/write access to the user table and read access to the system tables as shown in the IAM policy example listed below.
    + Populating the system.peers table with your available interface VPC endpoints is required for clients accessing Amazon Keyspaces with Spark over [VPC endpoints](https://docs.aws.amazon.com/keyspaces/latest/devguide/vpc-endpoints.html).
 
-   ```
+   ```JSON
    {
       "Version":"2012-10-17",
       "Statement":[

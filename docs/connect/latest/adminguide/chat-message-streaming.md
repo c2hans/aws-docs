@@ -55,7 +55,7 @@ Currently, the message streaming APIs only support standard SNS for real-time st
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -83,7 +83,7 @@ Currently, the message streaming APIs only support standard SNS for real-time st
 **Note**
 The default **Access policy** comes with conditions applied to `sourceOwner` such as:
 
-   ```
+   ```json
    "Condition": {
            "StringEquals": {
              "AWS:SourceOwner": "921772911154"
@@ -92,7 +92,7 @@ The default **Access policy** comes with conditions applied to `sourceOwner` suc
    ```
 Make sure you remove it and replace with `SourceAccount`, for example:
 
-   ```
+   ```json
    "Condition":{
                "StringEquals":{
                   "aws:SourceAccount":"YOUR_AWS_ACCOUNT_ID"
@@ -111,7 +111,7 @@ This prevents a [cross-service confused deputy](cross-service-confused-deputy-pr
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "key-consolepolicy-3",

@@ -49,7 +49,7 @@ For more information on user attributes, see [AWS Directory Service Data attribu
  The following describes how to view an AWS Managed Microsoft AD user's details with the AWS Directory Service Data CLI.
 +  To view a user's details, open the AWS CLI, and run the following command with your Directory ID and username:
 
-```
+```bash
 aws ds-data describe-user --directory-id {{d-1234567890}} --sam-account-name "{{jane.doe}}"
 ```
 
@@ -59,7 +59,7 @@ For more information, see [`describe-user`](https://docs.aws.amazon.com/cli/late
  The following describes how to view an AWS Managed Microsoft AD user's group membership with the AWS Directory Service Data CLI.
 +  To view a user's group memberships, open the AWS CLI, and run the following command with your Directory ID and username:
 
-```
+```bash
 aws ds-data list-groups-for-member --directory-id {{d-1234567890}} --sam-account-name "{{jane.doe}}"
 ```
 
@@ -76,7 +76,7 @@ For more information on user attributes, see [AWS Directory Service Data attribu
  The following describes how to view an AWS Managed Microsoft AD user's details with the Tools for PowerShell.
 + To view a user's details, open PowerShell, and run the following command with your Directory ID and username:
 
-```
+```ps
 Get-DSDUser -DirectoryId {{d-1234567890}} -SAMAccountName "{{jane.doe}}"
 ```
 
@@ -86,7 +86,7 @@ For more information, see [`Get-DSDUser`](https://docs.aws.amazon.com/powershell
  The following describes how to view an AWS Managed Microsoft AD user's group membership with the Tools for PowerShell.
 + To view a user's group memberships, open PowerShell, and run the following command with your Directory ID and username:
 
-```
+```ps
 (Get-DSDGroupsForMemberList -DirectoryId {{d-1234567890}} -SAMAccountName "{{jane.doe}}").Groups
 ```
 
@@ -139,7 +139,7 @@ For more information on user attributes, see [AWS Directory Service Data attribu
  When you update a user's account, you must include your directory ID number and user logon name. You also must include the update type and attribute you want to update in your request, such as a user last name with the `Surname` parameter. For more information, see [AWS Directory Service Data attributes](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_data_attributes.html).
 +  To update a user's details, open the AWS CLI, and run the following command with your Directory ID, username, update type, and attribute value:
 
-```
+```bash
 aws ds-data update-user \
   --directory-id {{d-1234567890}} \
   --sam-account-name "{{jane.doe}}" \
@@ -162,7 +162,7 @@ For more information on user attributes, see [AWS Directory Service Data attribu
  When you update a user's account, you must include your directory ID number and user logon name. You also must include the update type and attribute you want to update in your request, such as a user last name with the `Surname` parameter. For more information, see [AWS Directory Service Data attributes](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_data_attributes.html).
 +  To update a user's details, open PowerShell, and run the following command with your Directory ID, username, update type, and attribute value:
 
-```
+```ps
 Update-DSDUser `
     -DirectoryId {{d-1234567890}} `
     -SAMAccountName "{{jane.doe}}" `

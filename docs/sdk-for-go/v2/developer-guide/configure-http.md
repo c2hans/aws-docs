@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-
 
  Custom HTTP clients can be provided when calling [LoadDefaultConfig](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/config#LoadDefaultConfig) by wrapping the client using [WithHTTPClient](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/config#WithHTTP) and passing the resulting value to `LoadDefaultConfig`. For example, to pass `customClient` as our client:
 
-```
+```go
 cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithHTTPClient(customClient))
 ```
 
@@ -24,7 +24,7 @@ cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithHTTPClient(custo
 
  The `BuildableHTTPClient` can be configured with a request timeout limit. This timeout includes the time to connect, process any redirects, and read the complete response body. For example, to modify the client timeout:
 
-```
+```go
 import "github.com/aws/aws-sdk-go-v2/aws/transport/http"
 
 // ...
@@ -37,7 +37,7 @@ httpClient := http.NewBuildableClient().WithTimeout(time.Second*5)
 
  The `BuildableHTTPClient` provides a builder mechanics for constructing clients with modified [Dialer](https://golang.org/pkg/net/#Dialer) options. The following example shows how to configure a clients `Dialer` settings.
 
-```
+```go
 import awshttp "github.com/aws/aws-sdk-go-v2/aws/transport/http"
 import "net"
 
@@ -88,7 +88,7 @@ httpClient := awshttp.NewBuildableClient().WithDialerOptions(func(d *net.Dialer)
 
  If you cannot directly connect to the internet, you can use Go-supported environment variables (`HTTP_PROXY`/`HTTPS_PROXY`) or create a custom HTTP client to configure your proxy. The following example configures the client to use `PROXY_URL` as the proxy endpoint:
 
-```
+```go
 import awshttp "github.com/aws/aws-sdk-go-v2/aws/transport/http"
 import "net/http"
 
@@ -108,7 +108,7 @@ httpClient := awshttp.NewBuildableClient().WithTransportOptions(func(tr *http.Tr
 
  Below are a few other `Transport` settings that can be modified to tune the HTTP client. Any additional settings not described here can be found in the [Transport](https://golang.org/pkg/net/http/#Transport) type documentation. These settings can be applied as shown in the following example:
 
-```
+```go
 import awshttp "github.com/aws/aws-sdk-go-v2/aws/transport/http"
 import "net/http"
 

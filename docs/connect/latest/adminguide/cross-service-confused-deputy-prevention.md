@@ -24,7 +24,7 @@ The following examples show policies that apply to cases where someone else is s
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -62,7 +62,7 @@ The following examples show policies that apply to cases where someone else is s
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -90,7 +90,7 @@ The following examples show policies that apply to cases where someone else is s
 
 **Example Connect Customer Customer Profiles policy to protect the Amazon S3 bucket used as part of the Identity Resolution process**
 
-```
+```json
 {
     "Sid": "Allow Connect Customer Customer Profiles to put S3 objects to your bucket",
     "Effect": "Allow",
@@ -120,7 +120,7 @@ The following Voice ID example shows a resource policy to apply to prevent the c
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -154,7 +154,7 @@ The following Connect Customer example shows a resource policy to apply to preve
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

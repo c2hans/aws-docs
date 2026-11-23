@@ -6,13 +6,13 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 Open the workflow configuration on the Migration Console pod:
 
-```
+```bash
 workflow configure edit
 ```
 
 Set the source to your Apache Solr deployment. The `version` string uses the form `SOLR <major>.<minor>.<patch>` (for example, `SOLR 8.11.4` or `SOLR 9.7.0`). The snapshot configuration belongs under `sourceClusters.solr-source.snapshotInfo`: define the Amazon S3 repository under `repos` (the repository name is the map key) and reference it from a snapshot under `snapshots`. Because this playbook synced the Solr backup to Amazon S3 manually, reference it as an externally managed snapshot:
 
-```
+```json
 {
   "sourceClusters": {
     "solr-source": {
@@ -40,7 +40,7 @@ Set the source to your Apache Solr deployment. The `version` string uses the for
 
 To have the workflow create the Solr backup instead, include the live Solr `endpoint` and replace the snapshot `config` with `createSnapshotConfig`:
 
-```
+```json
 {
   "sourceClusters": {
     "solr-source": {
@@ -73,7 +73,7 @@ The workflow-managed path backs up every discovered collection or core. The work
 
 Set the target to your Amazon OpenSearch Service domain, using SigV4 authentication. For an Amazon OpenSearch Service domain, set `service: es`:
 
-```
+```json
 {
   "targetClusters": {
     "target": {
@@ -93,7 +93,7 @@ For an Amazon OpenSearch Serverless NextGen collection, set `service: aoss` inst
 
 For the backfill path in this playbook, configure the snapshot migration with a metadata migration phase and a document backfill phase. The `metadataMigrationConfig` block controls the approval gates around schema translation. Set `documentBackfillConfig.podReplicas` to the number of RFS workers you want running in parallel:
 
-```
+```json
 {
   "snapshotMigrationConfigs": [
     {

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/mapping-key-de
 
 A key contains one or more fields that together form an identifier you can use to search for objects (or the profiles they belong to) with the [SearchProfiles](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_SearchProfiles.html) API. A key can also be defined to uniquely identify a profile or the object itself. For field definitions, see [Field definitions in Customer Profiles object type mappings](mapping-field-definitions.md).
 
-```
+```json
 "Keys": {
     "{keyName}": [{
         "StandardIdentifiers": [...],

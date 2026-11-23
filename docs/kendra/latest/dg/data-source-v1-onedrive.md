@@ -155,7 +155,7 @@ You must specify the following using the [OneDriveConfiguration](https://docs.aw
 + **OneDrive Users**—Specify the list of user accounts whose documents should be indexed.
 + **Secret Amazon Resource Name (ARN)**—Provide the Amazon Resource Name (ARN) of an Secrets Manager secret that contains the authentication credentials for your OneDrive account. The secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "username": "{{OAuth client ID}}",
       "password": "{{client secret}}"

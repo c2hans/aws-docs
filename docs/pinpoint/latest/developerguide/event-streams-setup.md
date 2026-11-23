@@ -34,7 +34,7 @@ aws pinpoint put-event-stream \
 
 The following Java example configures Amazon Pinpoint to send events to a Kinesis stream:
 
-```
+```java
 public PutEventStreamResult createEventStream(AmazonPinpoint pinClient,
         String appId, String streamArn, String roleArn) {
 
@@ -54,7 +54,7 @@ This example constructs a `WriteEventStream` object that stores the ARNs of the 
 
 You can assign a Kinesis stream to multiple applications. If you do this, Amazon Pinpoint sends event data encoded in base64 from each application to the stream, which enables you to analyze the data as a collection. The following example method accepts a list of application (app) IDs, and it uses the previous example method, `createEventStream`, to assign a stream to each application:
 
-```
+```java
 public List<PutEventStreamResult> createEventStreamFromAppList(
         AmazonPinpoint pinClient, List<String> appIDs,
         String streamArn, String roleArn) {

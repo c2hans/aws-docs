@@ -8,7 +8,7 @@ To make Automation actions adhere to Change Calendar, add a step in an Automatio
 
 The following is an example.
 
-```
+```yaml
 mainSteps:
   - name: MyCheckCalendarStateStep
     action: 'aws:assertAwsResourceProperty'

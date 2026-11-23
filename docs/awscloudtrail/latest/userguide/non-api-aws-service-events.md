@@ -8,7 +8,7 @@ CloudTrail supports logging non-API service events. These events are created by 
 
 The following is an example scenario of an AWS service event when a customer managed key is automatically rotated in AWS Key Management Service (AWS KMS). For more information about rotating KMS keys, see [Rotating KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html).
 
-```
+```JSON
 {
     "eventVersion": "1.08",
     "userIdentity": {

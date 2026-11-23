@@ -62,7 +62,7 @@ Attach the following identity-based policy to an IAM role or user with permissio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -97,7 +97,7 @@ To attach the following resource-based policy, change the scope of the permissio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

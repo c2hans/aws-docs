@@ -64,6 +64,6 @@ Attach the following permissions policy to the role:
 
 On the network firewall side, there's nothing to configure: Network Firewall automatically discovers the context store associated with your firewall's transit gateway, typically within minutes of the association. To confirm the discovery, open the firewall's details page in the Network Firewall console and check the **Context store sync state** section. It shows the context store ID and owner account. Or call `DescribeFirewall` and check that the `ContextStoreId` and `ContextStoreOwnerAccountId` fields in the `Firewall` object are populated:
 
-```
+```sh
 aws network-firewall describe-firewall --firewall-name example-firewall
 ```

@@ -29,7 +29,7 @@ Slurm logs are located in the `/var/log/slurm/` directory. Log rotation is enabl
 
 You can control the log rotation feature using the `enable_slurm_log_rotation` parameter in the `config.py` script of your cluster's lifecycle scripts, as shown in the following example:
 
-```
+```python
 class Config:
     # Set false if you want to disable log rotation of Slurm daemon logs
     enable_slurm_log_rotation = True  # Default value
@@ -37,7 +37,7 @@ class Config:
 
 To disable log rotation, set the parameter to `False`, as shown in the following example:
 
-```
+```python
 enable_slurm_log_rotation = False
 ```
 

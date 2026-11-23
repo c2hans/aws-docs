@@ -15,7 +15,7 @@ Type: Array of [EvaluationFormItemEnablementConditionOperand](API_EvaluationForm
 Required: Yes
 
  ** Operator **   <a name="connect-Type-EvaluationFormItemEnablementCondition-Operator"></a>
-The operator to be used to be applied to operands if more than one provided.
+The operator to apply to the operands when more than one operand is provided.
 Type: String
 Valid Values: `OR | AND`
 Required: No

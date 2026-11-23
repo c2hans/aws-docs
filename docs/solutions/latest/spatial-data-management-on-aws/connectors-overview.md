@@ -318,7 +318,7 @@ For configuration details, see [Publishing to STAC with the REST API connector](
 
 Each connector type is also a reusable step type. Step types are composable — a single trigger can combine steps of different types to build multi-step workflows. For example, a trigger can write metadata to Amazon S3, then invoke a Lambda function to post-process it, and finally publish an event to EventBridge:
 
-```
+```json
 "triggers": [{
   "resources": ["asset"],
   "events": ["create"],

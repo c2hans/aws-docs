@@ -21,7 +21,7 @@ This following example shows how you might create a policy that permits access t
 
 Note that when referencing a group in the principal, you must use the `in` operator for the policy to be evaluated correctly.
 
-```
+```cedar
 permit(
      principal in MyCorp::UserGroup::"MyOIDCProvider|Accounting",
      action,

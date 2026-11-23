@@ -36,7 +36,7 @@ Simulator phone numbers can only send to other simulator destination phone numbe
 
 Use the [send-text-message](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/send-text-message.html) command. The example sends from a phone pool.
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 send-text-message \\
 > --destination-phone-number {{+14255550168}} \\
 > --origination-identity {{pool-a1b2c3d4e5f6g7h8i}} \\

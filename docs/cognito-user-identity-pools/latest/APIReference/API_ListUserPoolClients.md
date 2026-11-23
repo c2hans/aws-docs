@@ -16,6 +16,7 @@ Amazon Cognito evaluates AWS Identity and Access Management (IAM) policies in re
 
 ```
 {
+   "ClientType": "{{string}}",
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "UserPoolId": "{{string}}"
@@ -28,6 +29,17 @@ Amazon Cognito evaluates AWS Identity and Access Management (IAM) policies in re
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [ClientType](#API_ListUserPoolClients_RequestSyntax) **   <a name="CognitoUserPools-ListUserPoolClients-request-ClientType"></a>
+Returns only app clients of this type. For dynamic client registration (`DCR`) and other app clients, the following values are valid.
+REGULAR
+An app client not created through dynamic client registration.
+DCR
+An app client created through dynamic client registration.
+If you omit `ClientType`, the response includes app clients of all types. When you set this filter, a page of results can contain fewer app clients than `MaxResults`, or none, while the response still includes a `NextToken`. Continue to request pages until the response has no `NextToken`. The app clients in the response don't include their type. To get the type of an app client, call `DescribeUserPoolClient`.
+Type: String
+Valid Values: `REGULAR | DCR`
+Required: No
 
  ** [MaxResults](#API_ListUserPoolClients_RequestSyntax) **   <a name="CognitoUserPools-ListUserPoolClients-request-MaxResults"></a>
 The maximum number of app clients that you want Amazon Cognito to return in the response.
@@ -135,7 +147,7 @@ The following example request returns the first three app clients in the request
 #### Sample Request
 <a name="API_ListUserPoolClients_Example_1_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -153,7 +165,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_ListUserPoolClients_Example_1_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0

@@ -35,7 +35,7 @@ If *geom* is null, then null is returned.
 
 The following example SQL computes the length of a linestring in meters.
 
-```
+```sql
 SELECT ST_LengthSphere(ST_GeomFromText('LINESTRING(10 10,45 45)'));
 ```
 

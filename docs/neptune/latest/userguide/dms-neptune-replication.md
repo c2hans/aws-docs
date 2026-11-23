@@ -49,7 +49,7 @@ You will need to create an IAM policy granting `GetObject`, `PutObject`, `Delete
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -88,7 +88,7 @@ If your Neptune DB cluster has IAM authentication enabled, you will also need to
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -111,7 +111,7 @@ Create an IAM role as a trust document to attach the policy to:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

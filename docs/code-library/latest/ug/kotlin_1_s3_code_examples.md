@@ -37,7 +37,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 
-```
+```kotlin
 suspend fun main(args: Array<String>) {
     val usage = """
     Usage:
@@ -235,7 +235,7 @@ The following code example shows how to use `CopyObject`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 
-```
+```kotlin
 suspend fun copyBucketObject(
     fromBucket: String,
     objectKey: String,
@@ -269,7 +269,7 @@ The following code example shows how to use `CreateBucket`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 
-```
+```kotlin
 suspend fun createNewBucket(bucketName: String) {
     val request =
         CreateBucketRequest {
@@ -293,7 +293,7 @@ The following code example shows how to use `CreateMultiRegionAccessPoint`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 Configure the S3 control client to send request to the us-west-2 Region.
 
-```
+```kotlin
         suspend fun createS3ControlClient(): S3ControlClient {
             // Configure your S3ControlClient to send requests to US West (Oregon).
             val s3Control = S3ControlClient.fromEnvironment {
@@ -304,7 +304,7 @@ Configure the S3 control client to send request to the us-west-2 Region.
 ```
 Create the Multi-Region Access Point.
 
-```
+```kotlin
     suspend fun createMrap(
         s3Control: S3ControlClient,
         accountIdParam: String,
@@ -350,7 +350,7 @@ Create the Multi-Region Access Point.
 ```
 Wait for the Multi-Region Access Point to become available.
 
-```
+```kotlin
         suspend fun waitForSucceededStatus(
             s3Control: S3ControlClient,
             requestToken: String,
@@ -390,7 +390,7 @@ The following code example shows how to use `DeleteBucketPolicy`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 
-```
+```kotlin
 suspend fun deleteS3BucketPolicy(bucketName: String?) {
     val request =
         DeleteBucketPolicyRequest {
@@ -413,7 +413,7 @@ The following code example shows how to use `DeleteObjects`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 
-```
+```kotlin
 suspend fun deleteBucketObjects(
     bucketName: String,
     objectName: String,
@@ -450,7 +450,7 @@ The following code example shows how to use `GetBucketPolicy`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 
-```
+```kotlin
 suspend fun getPolicy(bucketName: String): String? {
     println("Getting policy for bucket $bucketName")
 
@@ -475,7 +475,7 @@ The following code example shows how to use `GetObject`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 
-```
+```kotlin
 suspend fun getObjectBytes(
     bucketName: String,
     keyName: String,
@@ -506,7 +506,7 @@ The following code example shows how to use `GetObjectAcl`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 
-```
+```kotlin
 suspend fun getBucketACL(
     objectKey: String,
     bucketName: String,
@@ -535,7 +535,7 @@ The following code example shows how to use `ListObjectsV2`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 
-```
+```kotlin
 suspend fun listBucketObjects(bucketName: String) {
     val request =
         ListObjectsRequest {
@@ -564,7 +564,7 @@ The following code example shows how to use `PutBucketAcl`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 
-```
+```kotlin
 suspend fun setBucketAcl(
     bucketName: String,
     idVal: String,
@@ -617,7 +617,7 @@ The following code example shows how to use `PutObject`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 
-```
+```kotlin
 suspend fun putS3Object(
     bucketName: String,
     objectKey: String,
@@ -654,7 +654,7 @@ The following code example shows how to create a presigned URL for Amazon S3 and
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 Create a `GetObject` presigned request and use the URL to download an object.
 
-```
+```kotlin
 suspend fun getObjectPresigned(
     s3: S3Client,
     bucketName: String,
@@ -678,7 +678,7 @@ suspend fun getObjectPresigned(
 ```
 Create a `GetObject` presigned request with advanced options.
 
-```
+```kotlin
 suspend fun getObjectPresignedMoreOptions(
     s3: S3Client,
     bucketName: String,
@@ -704,7 +704,7 @@ suspend fun getObjectPresignedMoreOptions(
 ```
 Create a `PutObject` presigned request and use it to upload an object.
 
-```
+```kotlin
 suspend fun putObjectPresigned(
     s3: S3Client,
     bucketName: String,
@@ -781,7 +781,7 @@ The following code example shows how to get an object from a Multi-Region Access
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 Configure the S3 client to use the Asymmetric Sigv4 (Sigv4a) signing algorithm.
 
-```
+```kotlin
         suspend fun createS3Client(): S3Client {
             // Configure your S3Client to use the Asymmetric SigV4 (SigV4a) signing algorithm.
             val sigV4aScheme = SigV4AsymmetricAuthScheme(DefaultAwsSigner)
@@ -793,7 +793,7 @@ Configure the S3 client to use the Asymmetric Sigv4 (Sigv4a) signing algorithm.
 ```
 Use the Multi-Region Access Point ARN instead of a bucket name to retrieve the object.
 
-```
+```kotlin
     suspend fun getObjectFromMrap(
         s3: S3Client,
         mrapArn: String,

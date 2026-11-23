@@ -33,7 +33,7 @@ When attaching multiple masking policies, consider the following:
 
   The first example shows two masking policies attached on the same path, with the higher priority policy taking effect.
 
-  ```
+  ```sql
   ATTACH MASKING POLICY hide_name
   ON employees(col_person.name)
   TO PUBLIC
@@ -50,7 +50,7 @@ When attaching multiple masking policies, consider the following:
 
   The second example shows two masking policies attached to different paths in the same SUPER object, with no conflict between the policies. Both attachments will apply at the same time.
 
-  ```
+  ```sql
   ATTACH MASKING POLICY hide_first_name
   ON employees(col_person.name.first)
   TO PUBLIC

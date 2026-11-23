@@ -63,7 +63,7 @@ The following example creates a remote access session with a selected Appium ser
 
 This example uses the AWS CLI v2.
 
-```
+```bash
 $ aws devicefarm create-remote-access-session \
     --project-arn "{{arn:aws:devicefarm:us-west-2:111122223333:project:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}" \
     --device-arn "{{arn:aws:devicefarm:us-west-2::device:EXAMPLE123DEVICE456}}" \
@@ -77,7 +77,7 @@ The following example creates a remote access session with a selected Appium ser
 
 This example uses the AWS SDK for JavaScript v3 with Node.js 18 or later.
 
-```
+```javascript
 import { DeviceFarmClient, CreateRemoteAccessSessionCommand } from "@aws-sdk/client-device-farm";
 
 const client = new DeviceFarmClient({ region: "us-west-2" });
@@ -96,7 +96,7 @@ const resp = await client.send(command);
 
 The following example creates a remote access session with a selected Appium server version.
 
-```
+```python
 import boto3
 
 client = boto3.client("devicefarm", region_name="us-west-2")
@@ -115,7 +115,7 @@ The following example creates a remote access session with a selected Appium ser
 
 This example uses the AWS SDK for Java v2.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.devicefarm.DeviceFarmClient;
 import software.amazon.awssdk.services.devicefarm.model.CreateRemoteAccessSessionConfiguration;
@@ -150,7 +150,7 @@ public class SelectAppiumVersionExample {
 
 The following example creates a remote access session with a selected Appium server version.
 
-```
+```ruby
 require 'aws-sdk-devicefarm'
 
 client = Aws::DeviceFarm::Client.new(region: 'us-west-2')

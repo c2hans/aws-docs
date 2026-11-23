@@ -145,7 +145,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of ListBotVersionReplicas.
 
-```
+```json
 POST https://models-v2-lex.us-east-1.amazonaws.com/bots/BOT1234567/replicas/us-west-2/botversions
 {
     "replicaRegion": "us-west-2",
@@ -162,7 +162,7 @@ POST https://models-v2-lex.us-east-1.amazonaws.com/bots/BOT1234567/replicas/us-w
 
 This example illustrates one usage of ListBotVersionReplicas.
 
-```
+```json
 {
     "botId": "BOT1234567",
     "botVersionReplicaSummaries": [{

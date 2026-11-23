@@ -13,7 +13,7 @@ A handler MAY use progress events on a re-invocation to continue work from where
 
 Below is the syntax for the ProgressEvent object.
 
-```
+```json
 {
     "OperationStatus": "string",
     "HandlerErrorCode": "string",

@@ -74,7 +74,7 @@ Enables CORS by returning correct headers.
 #### POST schema
 <a name="crossaccountauthorizations-request-body-post-example"></a>
 
-```
+```json
 {
   "crossAccountAuthorization": "string"
 }
@@ -86,7 +86,7 @@ Enables CORS by returning correct headers.
 #### ListCrossAccountAuthorizationsResult schema
 <a name="crossaccountauthorizations-response-body-listcrossaccountauthorizationsresult-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "crossAccountAuthorizations": [
@@ -98,7 +98,7 @@ Enables CORS by returning correct headers.
 #### CreateCrossAccountAuthorizationResult schema
 <a name="crossaccountauthorizations-response-body-createcrossaccountauthorizationresult-example"></a>
 
-```
+```json
 {
   "crossAccountAuthorization": "string"
 }

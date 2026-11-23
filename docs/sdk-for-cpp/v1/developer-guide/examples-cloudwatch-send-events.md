@@ -19,7 +19,7 @@ You can specify a maximum of 10 events per call to `putEvents`.
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/events/EventBridgeClient.h>
 #include <aws/events/model/PutEventsRequest.h>
@@ -30,7 +30,7 @@ You can specify a maximum of 10 events per call to `putEvents`.
 
  **Code**
 
-```
+```cpp
         Aws::CloudWatchEvents::EventBridgeClient cwe;
 
         Aws::CloudWatchEvents::Model::PutEventsRequestEntry event_entry;
@@ -61,7 +61,7 @@ To create or update a rule, call the CloudWatchEventsClient’s `PutRule` functi
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/events/EventBridgeClient.h>
 #include <aws/events/model/PutRuleRequest.h>
@@ -72,7 +72,7 @@ To create or update a rule, call the CloudWatchEventsClient’s `PutRule` functi
 
  **Code**
 
-```
+```cpp
         Aws::CloudWatchEvents::EventBridgeClient cwe;
         Aws::CloudWatchEvents::Model::PutRuleRequest request;
         request.SetName(rule_name);
@@ -104,7 +104,7 @@ To add a target to a rule, call the CloudWatchEventsClient’s `PutTargets` func
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/events/EventBridgeClient.h>
 #include <aws/events/model/PutTargetsRequest.h>
@@ -115,7 +115,7 @@ To add a target to a rule, call the CloudWatchEventsClient’s `PutTargets` func
 
  **Code**
 
-```
+```cpp
         Aws::CloudWatchEvents::EventBridgeClient cwe;
 
         Aws::CloudWatchEvents::Model::Target target;

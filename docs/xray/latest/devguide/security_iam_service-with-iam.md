@@ -107,7 +107,7 @@ X-Ray supports resource-based policies for current and future AWS service integr
 **Example X-Ray resource-based policy for Amazon SNS active tracing**
 This example policy document specifies the permissions that Amazon SNS needs to send trace data to X-Ray:
 
-```
+```json
 {
     Version: "2012-10-17",
     Statement: [
@@ -137,7 +137,7 @@ This example policy document specifies the permissions that Amazon SNS needs to 
 ```
 Use the CLI to create a resource-based policy that gives Amazon SNS permissions to send trace data to X-Ray:
 
-```
+```sh
 aws xray put-resource-policy --policy-name MyResourcePolicy --policy-document '{ "Version": "2012-10-17",		 	 	  "Statement": [ { "Sid": "SNSAccess", "Effect": "Allow", "Principal": { "Service": "sns.amazonaws.com" }, "Action": [ "xray:PutTraceSegments", "xray:GetSamplingRules", "xray:GetSamplingTargets" ], "Resource": "*", "Condition": { "StringEquals": { "aws:SourceAccount": "{{account-id}}" }, "StringLike": { "aws:SourceArn": "arn:{{partition}}:sns:{{region}}:{{account-id}}:{{topic-name}}" } } } ] }'
 ```
 To use these examples, replace {{`partition`}}, {{`region`}}, {{`account-id`}}, and {{`topic-name`}} with your specific AWS partition, region, account ID, and Amazon SNS topic name. To give all Amazon SNS topics permission to send trace data to X-Ray, replace the topic name with `*`.

@@ -16,4 +16,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/generati
 
 ![IoT and generative AI for automated data analysis, control and reporting](https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/images/image8.png)
 
+*IoT and generative AI for automated data analysis, control and reporting*
+
  For more information, see [Emerging Architecture Patterns for Integrating IoT and generative AI on AWS](https://aws.amazon.com/blogs/iot/emerging-architecture-patterns-for-integrating-iot-and-generative-ai-on-aws/).

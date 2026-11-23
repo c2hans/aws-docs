@@ -295,6 +295,29 @@ This metric measures the average time (in seconds) elapsed from the chat session
   + If present, set result = difference between `QueueInfo.EnqueueTimestamp` and `ChatMetrics.ContactMetrics.AgentFirstResponseTimestamp` (in milliseconds)
 + For the final result, average of the result values across all contact records not skipped.
 
+## Agent status time
+<a name="agent-status-time"></a>
+
+This metric measures the total time that agents spent in a specific agent status.
+
+**Metric type**: String (*hh:mm:ss*)
+
+**Metric category**: Agent activity-driven metric
+
+**How to access using the Connect Customer API**:
++ [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) API metric identifier: `SUM_STATUS_TIME_AGENT`
+
+  This metric can be retrieved by using a [MetricFilters](https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricV2.html) parameter set as follows:
+  + `MetricFilterKey = AGENT_STATUS`
+  + `MetricFilterValues = ` `agent-status-ARN`
+
+To get the ARN of an agent status, use one of the following API operations:
++ [ListAgentStatuses](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListAgentStatuses.html), to list the agent statuses in your instance
++ [DescribeAgentStatus](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeAgentStatus.html), to describe a specific agent status
+
+**How to access using the Connect Customer admin website**:
++ Dashboard: Agent status time (on trailing widgets). When you add this metric, you select an agent status from your instance's configured statuses, and the widget shows the corresponding total time that agents spent in that status.
+
 ## Agent callback connecting time
 <a name="agent-callback-connecting-time"></a>
 

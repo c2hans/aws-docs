@@ -232,7 +232,7 @@ When you create this key, you can only create a symmetric key, because all AWS s
 
 ****
 
-   ```
+   ```json
    {
        "Id": "key-consolepolicy-3",
        "Version":"2012-10-17",
@@ -518,7 +518,7 @@ When using Amazon Redshift Serverless as a target endpoint, you must add the fol
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

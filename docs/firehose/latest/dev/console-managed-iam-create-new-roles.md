@@ -32,7 +32,7 @@ The console create and edit Firehose stream workflows also create a trust policy
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

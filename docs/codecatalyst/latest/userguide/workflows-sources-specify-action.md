@@ -63,7 +63,7 @@ Currently, within a workflow action, you can only specify one source repository,
 
 1. In an action, add code similar to the following:
 
-   ```
+   ```yaml
    {{action-name}}:
     Inputs:
       Sources:

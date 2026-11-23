@@ -98,7 +98,7 @@ The customer wants to continue their past chat session but they want to hide the
 
 **Request**:
 
-```
+```json
 PUT /contact/chat HTTP/1.1
 Content-type: application/json
 {
@@ -144,7 +144,7 @@ The customer wants to continue the past chat session and see the transcript of t
 
 **Request**:
 
-```
+```json
 PUT /contact/chat HTTP/1.1
 Content-type: application/json
 {

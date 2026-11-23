@@ -89,7 +89,7 @@ Before you complete the following procedure, you must create a maintenance windo
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm register-task-with-maintenance-window \
    --window-id {{window ID}} \
    --name {{task name}} \
@@ -111,7 +111,7 @@ For information about maintenance window tasks that don't require targets, see [
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm register-task-with-maintenance-window ^
    --window-id {{window ID}} ^
    --name {{task name}} ^
@@ -133,7 +133,7 @@ For information about maintenance window tasks that don't require targets, see [
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Register-SSMTaskWithMaintenanceWindow `
    -WindowId {{window ID}} `
    -Name "{{task name}}" `
@@ -159,7 +159,7 @@ For information about maintenance window tasks that don't require targets, see [
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm register-task-with-maintenance-window \
    --window-id mw-0c50858d01EXAMPLE \
    --name StartEC2Instances \
@@ -173,7 +173,7 @@ For information about maintenance window tasks that don't require targets, see [
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm register-task-with-maintenance-window ^
    --window-id mw-0c50858d01EXAMPLE ^
    --name StartEC2Instances ^
@@ -187,7 +187,7 @@ For information about maintenance window tasks that don't require targets, see [
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Register-SSMTaskWithMaintenanceWindow `
    -WindowId mw-0c50858d01EXAMPLE `
    -Name "StartEC2" `
@@ -234,7 +234,7 @@ For information about maintenance window tasks that don't require targets, see [
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm describe-maintenance-window-tasks \
    --window-id {{maintenance window ID}}
    ```
@@ -242,7 +242,7 @@ For information about maintenance window tasks that don't require targets, see [
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm describe-maintenance-window-tasks ^
    --window-id {{maintenance window ID}}
    ```
@@ -250,7 +250,7 @@ For information about maintenance window tasks that don't require targets, see [
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Get-SSMMaintenanceWindowTaskList `
    -WindowId {{maintenance window ID}}
    ```

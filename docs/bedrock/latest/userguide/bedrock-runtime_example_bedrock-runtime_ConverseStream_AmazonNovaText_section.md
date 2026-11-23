@@ -13,7 +13,7 @@ The following code examples show how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Bedrock-runtime#code-examples).
 Send a text message to Amazon Nova, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```csharp
 // Use the Converse API to send a text message to Amazon Nova
 // and print the response stream.
 
@@ -82,7 +82,7 @@ catch (AmazonBedrockRuntimeException e)
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.bedrockruntime.BedrockRuntimeAsyncClient;
@@ -184,7 +184,7 @@ public class ConverseStream {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```javascript
 // This example demonstrates how to use the Amazon Nova foundation models
 // to generate streaming text responses.
 // It shows how to:
@@ -265,7 +265,7 @@ try {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```kotlin
 import aws.sdk.kotlin.services.bedrockruntime.BedrockRuntimeClient
 import aws.sdk.kotlin.services.bedrockruntime.model.ContentBlock
 import aws.sdk.kotlin.services.bedrockruntime.model.ConversationRole
@@ -350,7 +350,7 @@ suspend fun converseStream(): String {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```python
 # Use the Conversation API to send a text message to Amazon Nova Text
 # and print the response stream.
 
@@ -399,7 +399,7 @@ except (ClientError, Exception) as e:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```swift
 // An example demonstrating how to use the Conversation API to send a text message
 // to Amazon Nova and print the response stream
 

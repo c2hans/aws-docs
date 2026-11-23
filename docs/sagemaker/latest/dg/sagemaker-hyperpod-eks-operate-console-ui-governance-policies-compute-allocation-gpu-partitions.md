@@ -34,7 +34,7 @@ aws sagemaker create-compute-quota \
 ## Verifying Quota Resources
 <a name="sagemaker-hyperpod-eks-operate-console-ui-governance-policies-compute-allocation-gpu-partitions-verifying"></a>
 
-```
+```bash
 # Check ClusterQueue
 kubectl get clusterqueues
 kubectl describe clusterqueue {{QUEUE_NAME}}

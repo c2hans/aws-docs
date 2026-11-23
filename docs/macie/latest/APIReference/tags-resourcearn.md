@@ -97,7 +97,7 @@ Adds or updates one or more tags (keys and values) that are associated with an A
 #### POST schema
 <a name="tags-resourcearn-request-body-post-example"></a>
 
-```
+```json
 {
   "tags": {
   }
@@ -110,7 +110,7 @@ Adds or updates one or more tags (keys and values) that are associated with an A
 #### ListTagsForResourceResponse schema
 <a name="tags-resourcearn-response-body-listtagsforresourceresponse-example"></a>
 
-```
+```json
 {
   "tags": {
   }
@@ -120,7 +120,7 @@ Adds or updates one or more tags (keys and values) that are associated with an A
 #### UntagResourceResponse schema
 <a name="tags-resourcearn-response-body-untagresourceresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -128,7 +128,7 @@ Adds or updates one or more tags (keys and values) that are associated with an A
 #### TagResourceResponse schema
 <a name="tags-resourcearn-response-body-tagresourceresponse-example"></a>
 
-```
+```json
 {
 }
 ```

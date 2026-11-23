@@ -10,7 +10,7 @@ The following code example shows how you can run your Processing job using a Doc
 
 For the PyTorch versions supported by SageMaker AI, see the available [ Deep Learning Container images](https://github.com/aws/deep-learning-containers/blob/master/available_images.md).
 
-```
+```python
 from sagemaker.core.resources import ProcessingJob
 from sagemaker.core.helper.session_helper import get_execution_role
 

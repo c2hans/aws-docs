@@ -15,7 +15,7 @@ Before your jobs can send log data to Amazon S3, the following permissions must 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

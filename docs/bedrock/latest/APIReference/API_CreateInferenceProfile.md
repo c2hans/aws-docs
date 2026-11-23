@@ -151,7 +151,7 @@ Run the following example to create an application inference profile from the An
 #### Sample Request
 <a name="API_CreateInferenceProfile_Example_1_Request"></a>
 
-```
+```http
 POST /inference-profiles HTTP/1.1
 Content-type: application/json
 
@@ -177,7 +177,7 @@ Run the following example to create an application inference profile from the US
 #### Sample Request
 <a name="API_CreateInferenceProfile_Example_2_Request"></a>
 
-```
+```http
 POST /inference-profiles HTTP/1.1
 Content-type: application/json
 

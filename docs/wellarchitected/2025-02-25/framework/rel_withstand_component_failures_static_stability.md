@@ -31,6 +31,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Diagram showing static stability of EC2 instances across Availability Zones](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/static-stability.png)
 
+*Static stability of EC2 instances across Availability Zones*
+
  This must be weighed against the cost for this model and the business value of maintaining the workload under all resilience cases. It's less expensive to provision less compute capacity and rely on launching new instances in the case of a failure, but for large-scale failures (such as an Availability Zone or Regional impairment), this approach is less effective because it relies on both an operational plane, and sufficient resources being available in the unaffected zones or Regions.
 
  Your solution should also weigh reliability against the costs needs for your workload. Static stability architectures apply to a variety of architectures including compute instances spread across Availability Zones, database read replica designs, Kubernetes (Amazon EKS) cluster designs, and multi-Region failover architectures.

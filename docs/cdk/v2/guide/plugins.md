@@ -20,7 +20,7 @@ To create a CDK Toolkit plugin, you first create a Node.js module, authored in T
 **Example**
  **CommonJS**
 
-```
+```typescript
 // Example plugin structure
 import type { IPluginHost, Plugin } from '@aws-cdk/cli-plugin-contract';
 
@@ -39,7 +39,7 @@ export = plugin;
 ```
  **ESM**
 
-```
+```typescript
 // Example plugin structure
 import type { IPluginHost, Plugin } from '@aws-cdk/cli-plugin-contract';
 
@@ -58,7 +58,7 @@ export { plugin as 'module.exports' };
 ```
  **CommonJS**
 
-```
+```javascript
 const plugin = {
     // Version of the plugin infrastructure (currently always '1')
     version: '1',
@@ -74,7 +74,7 @@ module.exports = plugin;
 ```
  **ESM**
 
-```
+```javascript
 const plugin = {
     // Version of the plugin infrastructure (currently always '1')
     version: '1',
@@ -101,7 +101,7 @@ You have two options to specify plugins:
 
  **Option 1: Use the `--plugin` command line option**
 
-```
+```bash
 # Load a single plugin
 $ cdk list --plugin=my-custom-plugin
 
@@ -113,7 +113,7 @@ The value of the `--plugin` argument should be a JavaScript file that, when impo
  **Option 2: Add entries to configuration files**
 You can add plugin specifications to the project-specific `cdk.json` file or the `~/.cdk.json` global configuration file:
 
-```
+```json
 {
   "plugin": [
     "custom-plugin-1",
@@ -130,7 +130,7 @@ When working with the CDK Toolkit Library programmatically, you can load plugins
 
 **Example**
 
-```
+```typescript
 import { Toolkit } from '@aws-cdk/toolkit-lib';
 
 // Create a Toolkit instance
@@ -147,7 +147,7 @@ await toolkit.pluginHost.load('./path/to/another-plugin');
 // The plugin's functionality will be available to the toolkit
 ```
 
-```
+```javascript
 const { Toolkit } = require('@aws-cdk/toolkit-lib');
 
 // Create a Toolkit instance
@@ -183,7 +183,7 @@ To implement a custom credential provider, create a class that implements the re
 **Example**
  **CommonJS**
 
-```
+```typescript
 import type { CredentialProviderSource, ForReading, ForWriting, IPluginHost, Plugin, PluginProviderResult, SDKv3CompatibleCredentials } from '@aws-cdk/cli-plugin-contract';
 
 class CustomCredentialProviderSource implements CredentialProviderSource {
@@ -240,7 +240,7 @@ export = plugin;
 ```
  **ESM**
 
-```
+```typescript
 import type { CredentialProviderSource, ForReading, ForWriting, IPluginHost, Plugin, PluginProviderResult, SDKv3CompatibleCredentials } from '@aws-cdk/cli-plugin-contract';
 
 class CustomCredentialProviderSource implements CredentialProviderSource {
@@ -297,7 +297,7 @@ export { plugin as 'module.exports' };
 ```
  **CommonJS**
 
-```
+```javascript
 // Implement the CredentialProviderSource interface
 class CustomCredentialProviderSource {
   constructor() {
@@ -355,7 +355,7 @@ module.exports = plugin;
 ```
  **ESM**
 
-```
+```javascript
 // Implement the CredentialProviderSource interface
 class CustomCredentialProviderSource {
   constructor() {

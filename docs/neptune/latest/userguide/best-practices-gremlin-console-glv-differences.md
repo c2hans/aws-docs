@@ -15,7 +15,7 @@ In script mode, the client sends the entire query as a text string to the server
 
 In script mode, the client sends a query like the following to the server as a complete string:
 
-```
+```groovy
 // Script mode – the entire string, including .next(), is sent to the server
 // V('non-existing-id') yields nothing because no vertex with that ID exists
 Cluster cluster = Cluster.build().addContactPoint("your-neptune-endpoint")
@@ -31,7 +31,7 @@ In bytecode mode, the client builds a traversal object locally using a Gremlin L
 
 In bytecode mode, the same query looks like this:
 
-```
+```java
 // Bytecode mode – the driver sends the traversal steps as bytecode
 // .next() executes on the client to iterate results
 Cluster cluster = Cluster.build().addContactPoint("your-neptune-endpoint")

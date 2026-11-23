@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/b
 
 The basic structure of the Amazon Kinesis Agent for Microsoft Windows configuration file is a JSON document with the following template:
 
-```
+```json
 {
      "Sources": [ ],
      "Sinks": [ ],

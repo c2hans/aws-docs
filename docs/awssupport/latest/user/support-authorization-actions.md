@@ -11,14 +11,14 @@ Support actions are service-specific operations that AWS Support can perform on 
 
 Use `ListActions` to view the actions available for a specific service. The `service` parameter is required.
 
-```
+```bash
 aws supportauthz list-actions \
     --service "rds"
 ```
 
 **Example output**
 
-```
+```json
 {
     "actionSummaries": [
         {
@@ -42,14 +42,14 @@ The response includes up to 100 results per page. Use the `nextToken` value in s
 
 Use `GetAction` to retrieve details about a specific action.
 
-```
+```bash
 aws supportauthz get-action \
     --action "rds:ReadClusterData"
 ```
 
 **Example output**
 
-```
+```json
 {
     "action": "rds:ReadClusterData",
     "service": "rds",
@@ -64,7 +64,7 @@ After you identify the available actions, use specific action names in your supp
 
 **Create a support permit with specific actions**
 
-```
+```bash
 aws supportauthz create-support-permit \
     --name "ScopedPermit" \
     --signing-key-info '{"kmsKey": "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"}' \

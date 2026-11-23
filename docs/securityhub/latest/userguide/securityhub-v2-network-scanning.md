@@ -100,7 +100,7 @@ aws securityhub enable-security-hub-feature-v2 --feature-name NETWORK_SCANNING
 
  Each finding represents a single reachable port on a specific resource and address combination. The `port_scan_result_list` section of an OCSF finding contains the scan results. The following examples show information returned for a reachable resource:
 
-```
+```json
 "port_scan_result_list": [
     {
       "port_info": {
@@ -115,7 +115,7 @@ aws securityhub enable-security-hub-feature-v2 --feature-name NETWORK_SCANNING
 ],
 ```
 
-```
+```json
 "port_scan_result_list": [
     {
       "http_response": {

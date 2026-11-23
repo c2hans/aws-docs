@@ -10,7 +10,7 @@ Custom application deployments are a powerful feature for advanced users who wan
 
 For example, you might have an ASP.NET application that you want to deploy while your documentation team has written a static website that they want included with the deployment. You can do that by writing your deployment manifest like this:
 
-```
+```json
 {
   "manifestVersion": 1,
   "deployments": {
@@ -48,7 +48,7 @@ The scripts listed for each action must be in the application bundle relative to
 
 The `install.ps1` script extracts the zip file and sets up the IIS Path.
 
-```
+```ps1con
 Add-Type -assembly "system.io.compression.filesystem"
 [io.compression.zipfile]::ExtractToDirectory('./documentation.zip', 'c:\inetpub\wwwroot\documentation')
 
@@ -57,13 +57,13 @@ powershell.exe -Command {New-WebApplication -Name documentation -PhysicalPath  c
 
 Since your application is running in IIS, the restart action will invoke an IIS reset.
 
-```
+```ps1con
 iisreset /timeout:1
 ```
 
 For uninstall scripts, it is important to clean up all settings and files used during the install stage. That way during the install phase for the new version, you can avoid any collision with previous deployments. For this example, you need to remove the IIS application for the static website and remove the website files.
 
-```
+```ps1con
 powershell.exe -Command {Remove-WebApplication -Name documentation}
 Remove-Item -Recurse -Force 'c:\inetpub\wwwroot\documentation'
 ```

@@ -29,7 +29,7 @@ Use the following procedure to check that your account already has the IAM execu
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

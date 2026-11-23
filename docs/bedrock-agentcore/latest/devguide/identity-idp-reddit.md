@@ -34,7 +34,7 @@ For more details, refer to [Reddit’s OAuth2 documentation](https://github.com/
 
 To configure Reddit as an outbound resource provider, use the following:
 
-```
+```json
 {
   "name": "Reddit",
   "credentialProviderVendor": "RedditOauth2",

@@ -136,7 +136,7 @@ If you are specifying groups, use only AWS Quick groups or Microsoft AD groups.
 
    Following is a SQL example.
 
-   ```
+   ```SQL
    /* for users*/
    	select User as UserName, SalesRegion, Segment
    	from tps-permissions;

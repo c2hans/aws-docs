@@ -51,7 +51,7 @@ The following event pattern creates a rule to monitor events for the `issue`, `a
 
    1. In **Advanced filter**, paste the following JSON code.
 
-```
+```JSON
 {
   "detail": {
     "eventTypeCategory": [
@@ -89,7 +89,7 @@ The following event pattern matches `terminated`, `stopping`, `stopped`, and `sh
 
    1. In **Advanced filter**, paste the following JSON code.
 
-```
+```JSON
 {
   "detail": {
     "state": ["terminated", "stopping", "stopped", "shutting-down"]
@@ -118,7 +118,7 @@ The following event pattern allows you to specify CloudWatch alarms in the `ALAR
 
    1. In **Advanced filter**, paste the following JSON code.
 
-```
+```JSON
 {
   "resources": [
     "arn:aws:cloudwatch:us-east-1:123456789012:alarm:BillingAlarm",
@@ -155,7 +155,7 @@ The following event pattern allows you to monitor root user sign-in without mult
 
    1. In **Advanced filter**, paste the following JSON code.
 
-```
+```JSON
 {
   "detail": {
     "userIdentity": {
@@ -189,7 +189,7 @@ The following event pattern allows you to monitor GuardDuty findings with medium
 
    1. In **Advanced filter**, paste the following JSON code.
 
-```
+```JSON
 {
   "detail-type": [
     "GuardDuty Finding"

@@ -16,7 +16,7 @@ Amazon EFS supports the Network File System version 4 (NFSv4.1 and NFSv4.0) prot
 **Install the `amazon-efs-utils` package on AL2023**
 + Install `amazon-efs-utils` using the following command.
 
-  ```
+  ```sh
   $ dnf -y install amazon-efs-utils
   ```
 

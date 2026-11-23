@@ -32,7 +32,7 @@ Use the values presented here to complete CodeDeploy procedures in the AWS GovCl
 
 Name of the Amazon S3 bucket containing CodeDeploy files:
 
-```
+```nocopy
 aws-codedeploy-us-gov-west-1
 ```
 
@@ -41,7 +41,7 @@ aws-codedeploy-us-gov-west-1
 
 ARN of the Amazon S3 bucket containing CodeDeploy files:
 
-```
+```nocopy
 arn:aws-us-gov:s3:::aws-codedeploy-us-gov-west-1
 ```
 
@@ -50,7 +50,7 @@ arn:aws-us-gov:s3:::aws-codedeploy-us-gov-west-1
 
 wget command for downloading the CodeDeploy agent on Linux and Ubuntu instances:
 
-```
+```nocopy
 wget https://aws-codedeploy-us-gov-west-1.s3-us-gov-west-1.amazonaws.com/latest/install
 ```
 
@@ -60,12 +60,12 @@ wget https://aws-codedeploy-us-gov-west-1.s3-us-gov-west-1.amazonaws.com/latest/
 Location of sample CodeDeploy applications:
 +  Amazon Linux, Red Hat Enterprise Linux, and Ubuntu Server instances:
 
-  ```
+  ```nocopy
   https://s3-us-gov-west-1.amazonaws.com/aws-codedeploy-us-gov-west-1/samples/latest/SampleApp_Linux.zip
   ```
 + Windows Server instances:
 
-  ```
+  ```nocopy
   https://s3-us-gov-west-1.amazonaws.com/aws-codedeploy-us-gov-west-1/samples/latest/SampleApp_Windows.zip
   ```
 
@@ -74,7 +74,7 @@ Location of sample CodeDeploy applications:
 
 Location of CloudFormation template for launching Amazon EC2 instance configured for CodeDeploy deployments:
 
-```
+```nocopy
 https://s3-us-gov-west-1.amazonaws.com/aws-codedeploy-us-gov-west-1/templates/latest/CodeDeploy_SampleCF_Template.json
 ```
 
@@ -84,12 +84,12 @@ https://s3-us-gov-west-1.amazonaws.com/aws-codedeploy-us-gov-west-1/templates/la
 Links for downloading CodeDeploy installer and updater for Windows Server instances:
 + Installer:
 
-  ```
+  ```nocopy
   https://aws-codedeploy-us-gov-west-1.s3-us-gov-west-1.amazonaws.com/latest/codedeploy-agent.msi
   ```
 + Updater:
 
-  ```
+  ```nocopy
   https://aws-codedeploy-us-gov-west-1.s3-us-gov-west-1.amazonaws.com/latest/codedeploy-agent-updater.msi
   ```
 

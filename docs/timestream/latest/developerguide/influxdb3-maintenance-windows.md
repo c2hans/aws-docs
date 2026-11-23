@@ -118,7 +118,7 @@ When maintenance is being performed, the resource status changes to `MAINTENANCE
 
 Service managed (default — no maintenance schedule specified):
 
-```
+```sh
 aws timestream-influxdb create-db-cluster \
   --name "my-influxdb3-cluster" \
   --db-instance-type db.influx.2xlarge \
@@ -129,7 +129,7 @@ aws timestream-influxdb create-db-cluster \
 
 Customer managed with UTC (default timezone):
 
-```
+```sh
 aws timestream-influxdb create-db-cluster \
   --name "my-influxdb3-cluster" \
   --db-instance-type db.influx.2xlarge \
@@ -143,7 +143,7 @@ aws timestream-influxdb create-db-cluster \
 
 Customer managed with a specific timezone:
 
-```
+```sh
 aws timestream-influxdb create-db-cluster \
   --name "my-influxdb3-cluster" \
   --db-instance-type db.influx.2xlarge \
@@ -158,7 +158,7 @@ aws timestream-influxdb create-db-cluster \
 
 Customer managed with an overnight window:
 
-```
+```sh
 aws timestream-influxdb create-db-cluster \
   --name "my-influxdb3-cluster" \
   --db-instance-type db.influx.2xlarge \
@@ -176,7 +176,7 @@ aws timestream-influxdb create-db-cluster \
 
 Set a custom maintenance window on an existing resource:
 
-```
+```sh
 aws timestream-influxdb update-db-cluster \
   --identifier "my-influxdb3-cluster" \
   --maintenance-schedule '{
@@ -188,7 +188,7 @@ aws timestream-influxdb update-db-cluster \
 
 Revert to service managed:
 
-```
+```sh
 aws timestream-influxdb update-db-cluster \
   --identifier "my-influxdb3-cluster" \
   --maintenance-schedule '{

@@ -78,7 +78,7 @@ If encryption is enabled on an event data store, and the KMS key is disabled or 
 CloudTrail needs explicit permission to use the KMS key to encrypt log files and digest files on behalf of specific accounts. To specify an account, add the following required statement to your KMS key policy and replace {{account-id}}, {{region}}, and {{trailName}} with the appropriate values for your configuration. You can add additional account IDs to the `EncryptionContext` section to enable those accounts to use CloudTrail to use your KMS key to encrypt log files and digest files.
 As a security best practice, add an `aws:SourceArn` condition key to the KMS key policy for a trail. The IAM global condition key `aws:SourceArn` helps ensure that CloudTrail uses the KMS key only for a specific trail or trails.
 
-```
+```JSON
 {
    "Sid": "AllowCloudTrailEncryptLogs",
    "Effect": "Allow",
@@ -111,7 +111,7 @@ As a security best practice, add an `aws:SourceArn` condition key to the KMS key
 
 KMS key policy statement:
 
-```
+```JSON
 {
   "Sid": "EnableCloudTrailEncryptPermissions",
   "Effect": "Allow",
@@ -141,7 +141,7 @@ For more information about editing a KMS key policy for use with CloudTrail, see
 
 CloudTrail Lake supports the `aws:SourceAccount` and `aws:SourceArn` condition keys in KMS key policies for event data stores. Add these conditions after you create the event data store. The following example allows one event data store to use the KMS key.
 
-```
+```JSON
 {
     "Sid": "AllowCloudTrailEncryptEds",
     "Effect": "Allow",
@@ -172,7 +172,7 @@ Before you add your KMS key to your CloudTrail configuration, it is important to
 **Enable CloudTrail log decrypt permissions**
 Users of your key must be given explicit permissions to read the log files that CloudTrail has encrypted. To enable users to read encrypted logs, add the following required statement to your KMS key policy, modifying the `Principal` section to add a line for every principal that you want to be able decrypt by using your KMS key.
 
-```
+```JSON
 {
   "Sid": "EnableCloudTrailLogDecryptPermissions",
   "Effect": "Allow",
@@ -191,7 +191,7 @@ Users of your key must be given explicit permissions to read the log files that 
 
 The following is an example policy that is required to allow the CloudTrail service principal to decrypt trail logs.
 
-```
+```JSON
 {
       "Sid": "AllowCloudTrailDecryptTrail",
       "Effect": "Allow",
@@ -217,7 +217,7 @@ In the key policy, you enable CloudTrail log decrypt permissions for IAM user Bo
 
 KMS key policy statement:
 
-```
+```JSON
 {
   "Sid": "EnableCloudTrailLogDecryptPermissions",
   "Effect": "Allow",
@@ -255,7 +255,7 @@ In this case, you give CloudTrail permission to decrypt logs under account `{{22
 
 KMS key policy statement:
 
-```
+```JSON
 {
   "Sid": "EnableEncryptedCloudTrailLogReadAccess",
   "Effect": "Allow",
@@ -281,7 +281,7 @@ Alice's IAM user policy statement:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -310,7 +310,7 @@ To enable this scenario, you enable decrypt permissions for the IAM role **Cloud
 
 KMS key policy statement:
 
-```
+```JSON
 {
   "Sid": "EnableEncryptedCloudTrailLogReadAccess",
   "Effect": "Allow",
@@ -336,7 +336,7 @@ KMS key policy statement:
 
 ****
 
-```
+```json
 {
  "Version":"2012-10-17",
  "Statement": [
@@ -360,7 +360,7 @@ For information about editing a KMS key policy for use with CloudTrail, see [Edi
 
 A decrypt policy for a KMS key that is used with a CloudTrail Lake event data store is similar to the following. The user or role ARNs specified as values for `Principal` need decrypt permissions to create or update event data stores, run queries, or get query results.
 
-```
+```JSON
 {
       "Sid": "EnableUserKeyPermissionsEds",
       "Effect": "Allow",
@@ -377,7 +377,7 @@ A decrypt policy for a KMS key that is used with a CloudTrail Lake event data st
 
 The following is an example policy that is required to allow the CloudTrail service principal to decrypt an event data store.
 
-```
+```JSON
 {
       "Sid": "AllowCloudTrailDecryptEds",
       "Effect": "Allow",
@@ -396,7 +396,7 @@ CloudTrail requires the ability to describe the properties of the KMS key. To en
 
 As a security best practice, add an `aws:SourceArn` condition key to the KMS key policy. The IAM global condition key `aws:SourceArn` helps ensure that CloudTrail uses the KMS key only for a specific trail or trails.
 
-```
+```JSON
 {
   "Sid": "AllowCloudTrailAccess",
   "Effect": "Allow",

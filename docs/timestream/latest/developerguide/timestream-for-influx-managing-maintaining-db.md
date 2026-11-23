@@ -31,7 +31,7 @@ You can specify a timezone for your maintenance window using the `timezone` fiel
 
 Create a DB instance with a custom maintenance window:
 
-```
+```sh
 aws timestream-influxdb create-db-instance \
   --name "my-influxdb" \
   --db-instance-type db.influx.medium \
@@ -47,7 +47,7 @@ aws timestream-influxdb create-db-instance \
 
 Update the maintenance window on an existing DB instance:
 
-```
+```sh
 aws timestream-influxdb update-db-instance \
   --identifier <instance-identifier> \
   --maintenance-schedule '{
@@ -59,7 +59,7 @@ aws timestream-influxdb update-db-instance \
 
 Revert to service managed:
 
-```
+```sh
 aws timestream-influxdb update-db-instance \
   --identifier <instance-identifier> \
   --maintenance-schedule '{

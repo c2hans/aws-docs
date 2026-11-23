@@ -74,14 +74,14 @@ S3 Transfer Manager v2 introduces significant changes to the Transfer Manager AP
 
 **V1 code:**
 
-```
+```java
 AmazonS3 s3Client = AmazonS3ClientBuilder.defaultClient();
 TransferManager transferManager = new TransferManager(s3Client);
 ```
 
 **V2 code:**
 
-```
+```java
 // Create an `S3AsyncClient` with similar configuration
 S3AsyncClient s3AsyncClient = S3AsyncClient.builder()
     .credentialsProvider(DefaultCredentialsProvider.create())
@@ -150,7 +150,7 @@ Currently, the migration tool supports basic `copy`, `download`, `upload`, `uplo
 + `copy(CopyObjectRequest copyObjectRequest, AmazonS3 srcS3, TransferStateChangeListener stateChangeListener)`
 + `copy(CopyObjectRequest copyObjectRequest, TransferStateChangeListener stateChangeListener)`
 
-```
+```java
 // V1 ----------------------------------------------------------------------------------------------
 // Initialize source S3 client
 AmazonS3 s3client = AmazonS3ClientBuilder.standard()
@@ -233,7 +233,7 @@ Copy copy = transferManager.copy(copyRequest);
 + `download(GetObjectRequest getObjectRequest, File file, S3ProgressListener progressListener, long timeoutMillis)`
 + `download(GetObjectRequest getObjectRequest, File file, S3ProgressListener progressListener, long timeoutMillis, boolean resumeOnRetry)`
 
-```
+```java
 // V1 ----------------------------------------------------------------------------------------------
 S3ProgressListener progressListener = new S3ProgressListener() {
         @Override
@@ -304,7 +304,7 @@ CompletedFileDownload completedFileDownload = download.completionFuture()
 + `downloadDirectory(String bucketName, String keyPrefix, File destinationDirectory, boolean resumeOnRetry, KeyFilter filter)`
 + `downloadDirectory(String bucketName, String keyPrefix, File destinationDirectory, KeyFilter filter)`
 
-```
+```java
 // V1 ----------------------------------------------------------------------------------------------
 KeyFilter filter = new KeyFilter() {
             @Override
@@ -339,7 +339,7 @@ DirectoryDownload directoryDownload = transferManager.downloadDirectory(download
 <a name="tm-unsupported-client-methods-upload"></a>
 + `upload(String bucketName, String key, InputStream input, ObjectMetadata objectMetadata)`
 
-```
+```java
 // V1 ----------------------------------------------------------------------------------------------ObjectMetadata metadata = new ObjectMetadata();
 ObjectMetadata metadata = new ObjectMetadata();
 
@@ -384,7 +384,7 @@ transferManager.upload(uploadRequest).completionFuture().join();
 + `uploadDirectory(String bucketName, String virtualDirectoryKeyPrefix, File directory, boolean includeSubdirectories, ObjectMetadataProvider metadataProvider, ObjectTaggingProvider taggingProvider)`
 + `uploadDirectory(String bucketName, String virtualDirectoryKeyPrefix, File directory, boolean includeSubdirectories, ObjectMetadataProvider metadataProvider, ObjectTaggingProvider taggingProvider, ObjectCannedAclProvider cannedAclProvider)`
 
-```
+```java
 // V1 ----------------------------------------------------------------------------------------------
 tm.uploadDirectory(bucketName, virtualDirectoryKeyPrefix, directory, includeSubdirectories, metadataProvider)
 tm.uploadDirectory(bucketName, virtualDirectoryKeyPrefix, directory, includeSubdirectories, metadataProvider, taggingProvider)
@@ -519,14 +519,14 @@ The configuration changes that you need to set for the v2 transfer manager depen
 
 **V1 (blocking):**
 
-```
+```java
 Upload upload = transferManager.upload("amzn-s3-demo-bucket", "key", file);
 upload.waitForCompletion(); // Blocks until complete
 ```
 
 **V2 (asynchronous):**
 
-```
+```java
 FileUpload upload = transferManager.uploadFile(UploadFileRequest.builder()
     .putObjectRequest(PutObjectRequest.builder()
         .bucket("amzn-s3-demo-bucket")
@@ -549,7 +549,7 @@ upload.completionFuture().thenAccept(result -> {
 
 **V2:** Directory transfers complete successfully even if some sub-requests fail. Check for errors explicitly:
 
-```
+```java
 DirectoryUpload directoryUpload = transferManager.uploadDirectory(request);
 CompletedDirectoryUpload result = directoryUpload.completionFuture().join();
 

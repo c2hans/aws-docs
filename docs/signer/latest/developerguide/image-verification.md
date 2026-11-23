@@ -18,7 +18,7 @@ Complete the following steps to verify that an image is valid with Notation.
 **Important**
 Signatures are isolated to AWS partitions. Calls to [GetRevocationStatus](https://docs.aws.amazon.com/signer/latest/api/API_GetRevocationStatus.html) with a cross-partition signature will return a validation exception error.
 
-   ```
+   ```json
    {
       "version":"1.0",
       "trustPolicies":[

@@ -37,7 +37,7 @@ To delete a vehicle model, run the following command.
 
 Replace {{model-manifest-name}} with the name of the vehicle model that you're deleting.
 
-```
+```bash
 aws iotfleetwise delete-model-manifest --name {{model-manifest-name}}
 ```
 
@@ -48,7 +48,7 @@ You can use the [ListModelManifests](https://docs.aws.amazon.com/iot-fleetwise/l
 
 To retrieve a paginated list of summaries of all vehicle models, run the following command.
 
-```
+```bash
 aws iotfleetwise list-model-manifests
 ```
 
@@ -59,7 +59,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

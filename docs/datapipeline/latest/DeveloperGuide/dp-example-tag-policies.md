@@ -26,7 +26,7 @@ The ListPipelines API action does not support tag-based authorization.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -63,7 +63,7 @@ The following policy allows users to use all AWS Data Pipeline API actions, with
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -104,7 +104,7 @@ This policy includes the action for `PassRole` permissions for specific resource
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [{

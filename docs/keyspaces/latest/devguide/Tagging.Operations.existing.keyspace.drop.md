@@ -25,7 +25,7 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/Tagging.Operat
 **Delete a tag from an existing keyspace using CQL**
 +
 
-  ```
+  ```sql
   ALTER KEYSPACE mykeyspace DROP TAGS {'key1':'val1', 'key2':'val2'};
   ```
 

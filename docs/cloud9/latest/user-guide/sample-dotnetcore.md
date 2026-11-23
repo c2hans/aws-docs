@@ -36,7 +36,7 @@ In this step, you install the .NET SDK into your environment, which is required 
 
 1. Confirm whether the latest version of the .NET SDK is already installed in your environment. To do this, in a terminal session in the AWS Cloud9 IDE, run the .NET Core command line interface (CLI) with the ** `--version` ** option.
 
-   ```
+   ```sh
    dotnet --version
    ```
 
@@ -44,32 +44,32 @@ In this step, you install the .NET SDK into your environment, which is required 
 
 1. For Amazon Linux, in a terminal session in the AWS Cloud9 IDE, run the following commands to help ensure the latest security updates and bug fixes are installed, and to install a `libunwind` package that the .NET SDK needs. (To start a new terminal session, on the menu bar, choose **Window, New Terminal**.)
 
-   ```
+   ```sh
    sudo yum -y update
    sudo yum -y install libunwind
    ```
 
    For Ubuntu Server, in a terminal session in the AWS Cloud9 IDE, run the following command to help ensure the latest security updates and bug fixes are installed. (To start a new terminal session, on the menu bar, choose **Window, New Terminal**.)
 
-   ```
+   ```sh
    sudo apt -y update
    ```
 
 1. Download the .NET SDK installer script into your environment by running the following command.
 
-   ```
+   ```sh
    wget https://dot.net/v1/dotnet-install.sh
    ```
 
 1. Make the installer script executable by the current user by running the following command.
 
-   ```
+   ```sh
    sudo chmod u=rx dotnet-install.sh
    ```
 
 1. Run the installer script, which downloads and installs the .NET SDK, by running the following command.
 
-   ```
+   ```sh
    ./dotnet-install.sh -c Current
    ```
 
@@ -77,7 +77,7 @@ In this step, you install the .NET SDK into your environment, which is required 
 
    1. Open the `.bashrc` file for editing by using the ** `vi` ** command.
 
-      ```
+      ```sh
       vi ~/.bashrc
       ```
 
@@ -91,13 +91,13 @@ In this step, you install the .NET SDK into your environment, which is required 
 
    1. For Amazon Linux, add the `$HOME/.dotnet` subdirectory to the ** `PATH` ** variable by typing `:$HOME/.dotnet`. Be sure to include the colon character (`:`). The line should now look similar to the following.
 
-      ```
+      ```sh
       export PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HOME/.dotnet
       ```
 
       For Ubuntu Server, press the right arrow key and then press `Enter` twice, followed by typing the following line by itself at the end of the file.
 
-      ```
+      ```sh
       export PATH=$HOME/.dotnet:$PATH
       ```
 
@@ -105,13 +105,13 @@ In this step, you install the .NET SDK into your environment, which is required 
 
 1. Load the .NET SDK by sourcing the `.bashrc` file.
 
-   ```
+   ```sh
    . ~/.bashrc
    ```
 
 1. Confirm the .NET SDK is loaded by running .NET CLI with the ** `--help` ** option.
 
-   ```
+   ```sh
    dotnet --help
    ```
 
@@ -119,7 +119,7 @@ In this step, you install the .NET SDK into your environment, which is required 
 
 1. If you no longer want to keep the .NET SDK installer script in your environment, you can delete it as follows.
 
-   ```
+   ```sh
    rm dotnet-install.sh
    ```
 
@@ -130,13 +130,13 @@ Although not required for this tutorial, you can deploy AWS Lambda functions and
 
 1. To install the package, run the following command:
 
-   ```
+   ```sh
    dotnet tool install -g Amazon.Lambda.Tools
    ```
 
 1. Now set the `PATH` and `DOTNET_ROOT` environment variable to point to the installed Lambda tool. In the `.bashrc` file, find the `export PATH` section and edit it so that it appears similar to the following (see Step 1 for details on editing this file):
 
-   ```
+   ```sh
    export PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HOME/.dotnet:$HOME/.dotnet/tools
    export DOTNET_ROOT=$HOME/.dotnet
    ```
@@ -168,7 +168,7 @@ From the **Environment** window in the AWS Cloud9 IDE, open the `hello/Program.c
 
 In the editor, replace the file's current contents with the following code, and then save the `Program.cs` file.
 
-```
+```csharp
 using System;
 
 namespace hello
@@ -207,7 +207,7 @@ In this step, you build the project and its dependencies into a set of binary fi
 
    1. On the **My Builder.build** tab, replace the tab's contents with the following code.
 
-      ```
+      ```json
       {
         "cmd" : ["dotnet", "build"],
         "info" : "Building..."
@@ -237,7 +237,7 @@ The folder name, `netcoreapp3.1`, reflects the version of the .NET SDK used in t
 
    1. On the **My Runner.run** tab, replace the tab's contents with the following code.
 
-      ```
+      ```json
       {
         "cmd" : ["dotnet", "run", "$args"],
         "working_dir": "$file_path",
@@ -267,7 +267,7 @@ The folder name, `netcoreapp3.1`, reflects the version of the .NET SDK used in t
 
       Compare your output to the following.
 
-      ```
+      ```text
       Hello, World!
       The sum of 2 and 3 is 5.
       The sum of 5 and 9 is 14.
@@ -294,7 +294,7 @@ In this new project, you add a reference to the AWS SDK for .NET. The AWS SDK fo
 
 1. Add a project reference to the Amazon S3 package in the AWS SDK for .NET. To do this, run the .NET CLI with the ** `add package` ** command, specifying the name of the Amazon S3 package in NuGet. (NuGet defines how packages for .NET are created, hosted, and consumed, and provides the tools for each of those roles.)
 
-   ```
+   ```sh
    dotnet add package AWSSDK.S3
    ```
 
@@ -318,7 +318,7 @@ In this step, you add code to interact with Amazon S3 to create a bucket, delete
 
 From the **Environment** window in the AWS Cloud9 IDE, open the `s3/Program.cs` file. In the editor, replace the file's current contents with the following code, and then save the `Program.cs` file.
 
-```
+```csharp
 using Amazon;
 using Amazon.S3;
 using Amazon.S3.Model;
@@ -427,7 +427,7 @@ In this step, you build the project and its dependencies into a set of binary fi
 
       Compare your results to the following output.
 
-      ```
+      ```text
       Creating a new bucket named 'my-test-bucket'...
       Created the bucket named 'my-test-bucket'.
 

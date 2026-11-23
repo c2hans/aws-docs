@@ -154,7 +154,7 @@ Complete the following steps on the Google Enterprise Admin Console. Apply the p
    + The key name MUST be `allowListedDomain`. Domain names should not include any paths, query strings, or trailing slashes (/).
    + Replace `your-instance-alias-*` with your actual Connect Customer instance alias.
 
-   ```
+   ```json
    {
    "allowListedDomain": [
    "https://your-instance-alias-1.my.connect.aws",

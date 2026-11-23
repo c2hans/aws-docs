@@ -14,7 +14,7 @@ After a fresh deployment, the Fleet Intelligence portal fails to reach one or mo
 
 1. Fetch the live `runtimeConfig.json` from the CloudFront distribution:
 
-   ```
+   ```bash
    STAGE=staging
    CF_URL=$(aws cloudformation describe-stacks \
      --stack-name cms-$STAGE-ui \
@@ -30,7 +30,7 @@ After a fresh deployment, the Fleet Intelligence portal fails to reach one or mo
 
 Run `make regenerate-runtime-config` to re-read all deployed stack outputs and rewrite `runtimeConfig.json` in S3:
 
-```
+```bash
 cd deployment
 make regenerate-runtime-config \
   AWS_PROFILE=<profile> \

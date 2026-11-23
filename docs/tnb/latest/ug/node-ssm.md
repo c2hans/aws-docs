@@ -9,7 +9,7 @@ You can create SSM parameters through AWS TNB. The SSM parameters that you creat
 ## Syntax
 <a name="node-ssm-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Store.SSMParameters
   properties:
     parameters:
@@ -44,7 +44,7 @@ Type: List
 ## Example
 <a name="node-ssm-example"></a>
 
-```
+```yaml
 SampleSSM
     type: tosca.nodes.AWS.Store.SSMParameters
     properties:

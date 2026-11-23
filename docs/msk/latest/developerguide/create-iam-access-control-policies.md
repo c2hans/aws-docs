@@ -18,7 +18,7 @@ Changes that you make to an IAM policy are reflected in the IAM APIs and the AWS
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -71,7 +71,7 @@ To work around this, we recommend using a policy similar to the following policy
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

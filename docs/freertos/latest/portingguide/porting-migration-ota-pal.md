@@ -128,7 +128,7 @@ The file `aws_ota_agent_config.h` was renamed to [`ota_config.h`](https://github
 + The file `aws_ota_codesigner_certificate.h` has been deleted.
 + Included the new logging stack to print debug messages:
 
-  ```
+  ```c
   /**************************************************/
   /******* DO NOT CHANGE the following order ********/
   /**************************************************/
@@ -156,7 +156,7 @@ The file `aws_ota_agent_config.h` was renamed to [`ota_config.h`](https://github
   ```
 + Added the constant config:
 
-  ```
+  ```c
   /** * @brief Size of the file data block message (excluding the header). */
   #define otaconfigFILE_BLOCK_SIZE ( 1UL << otaconfigLOG2_FILE_BLOCK_SIZE )
   ```
@@ -164,7 +164,7 @@ The file `aws_ota_agent_config.h` was renamed to [`ota_config.h`](https://github
 **New File:** [`ota_demo_config.h`](https://github.com/aws/amazon-freertos/blob/main/vendors/pc/boards/windows/aws_demos/config_files/ota_demo_config.h) contains the configs that are required by the OTA demo such as the code signing certificate and application version.
 + `signingcredentialSIGNING_CERTIFICATE_PEM` which was defined in `demos/include/aws_ota_codesigner_certificate.h` has been moved to `ota_demo_config.h` as `otapalconfigCODE_SIGNING_CERTIFICATE` and can can be accessed from the PAL files as:
 
-  ```
+  ```c
   static const char codeSigningCertificatePEM[] = otapalconfigCODE_SIGNING_CERTIFICATE;
   ```
 
@@ -189,12 +189,12 @@ Use this checklist to make sure you follow the steps required for migration:
   + Change the name of the file from `aws_ota_agent_config.h` to (or create) `ota_config.h`.
     + Add:
 
-      ```
+      ```c
       otaconfigFILE_BLOCK_SIZE ( 1UL << otaconfigLOG2_FILE_BLOCK_SIZE )
       ```
     + Include:
 
-      ```
+      ```c
       #include "ota_demo_config.h"
       ```
   + Copy the above files to the `aws_test config` folder and substitute any includes of `ota_demo_config.h` with `aws_test_ota_config.h`.

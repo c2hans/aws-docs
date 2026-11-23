@@ -75,7 +75,7 @@ To view the execution role and update the JSON policy for the role on the IAM co
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -148,7 +148,7 @@ To attach a policy to your execution role:
 ------
 #### [ JSON ]
 
-```
+```json
     {
     "Version": "2012-10-17",
     "Statement": [
@@ -191,7 +191,7 @@ To attach a policy to your execution role:
 ------
 #### [ JSON ]
 
-```
+```json
     {
     "Version": "2012-10-17",
     "Statement": [

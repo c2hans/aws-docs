@@ -41,7 +41,7 @@ You must meet the following requirements to use the SageMaker AI Edge Manager ag
 + The [Greengrass device role](device-service-role.md) configured with the following:
   + <a name="sm-req-iam-trust-relationship"></a>A trust relationship that allows `credentials.iot.amazonaws.com` and `sagemaker.amazonaws.com` to assume the role, as shown in the following IAM policy example.
 
-    ```
+    ```json
     {
       "Version": "2012-10-17",
       "Statement": [
@@ -65,7 +65,7 @@ You must meet the following requirements to use the SageMaker AI Edge Manager ag
   + <a name="sm-req-iam-sagemanakeredgedevicefleetpolicy"></a>The [AmazonSageMakerEdgeDeviceFleetPolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/service-role/AmazonSageMakerEdgeDeviceFleetPolicy) IAM managed policy.
   + <a name="sm-req-iam-s3-putobject"></a>The `s3:PutObject` action, as shown in the following IAM policy example.
 
-    ```
+    ```json
     {
       "Version": "2012-10-17",
       "Statement": [

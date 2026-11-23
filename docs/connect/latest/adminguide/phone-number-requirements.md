@@ -394,9 +394,9 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers:  | Yes | Your business name, address, and service description. A global address is acceptable. |
+| Local telephone numbers:  | Yes | Your business address in Denmark and your business registration number |
 | Mobile prefixes: \+45 9x | No |  |
-| Toll-free prefixes: \+45 808 | Yes | Your business name, address, and service description. A global address is acceptable. |
+| Toll-free prefixes: \+45 808 | Yes | Your business address in Denmark and your business registration number |
 
 ### Number portability
 <a name="dk-porting"></a>
@@ -485,9 +485,9 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers  | Yes | Your residence or business address. Both must be a local address corresponding to the area code of the telephone number(s). |
-| Toll-free prefixes: \+358 800 | No |  |
+| Local telephone numbers  | Yes | Your business address and your business registration number. It must be a local address corresponding to the area code of the telephone number(s). |
 | National prefixes: \+358 75 | No |  |
+| Toll-free prefixes: \+358 800 | Yes | Your business address in Finland and your business registration number |
 
 ### Number portability
 <a name="fi-porting"></a>
@@ -1219,9 +1219,9 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers:  | Yes | Your address and proof of address. It must be a local address corresponding to the area code of the telephone number(s). |
-| Toll-free prefixes: \+40 800 | No |  |
-| National prefixes: \+40 376 | No |  |
+| Local telephone numbers:  | Yes | Your business address, your tax registration number and proof of address. It must be a local address corresponding to the area code of the telephone number(s). |
+| National prefixes: \+40 37 | Yes | Your business address in Romania and your tax registration number |
+| Toll-free prefixes: \+40 800 | Yes | Your business address in Romania and your tax registration number |
 
 ### Number portability
 <a name="ro-porting"></a>
@@ -1369,8 +1369,8 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers  | Yes | Your business address. It must be a local address corresponding to the area code of the telephone number(s). |
-| Toll-free prefixes: \+421 800 | No |  |
+| Local telephone numbers  | Yes | Your business address and your business registration number. It must be a local address corresponding to the area code of the telephone number(s). |
+| Toll-free prefixes: \+421 800 | Yes | Your business address in Slovakia and your business registration number |
 
 ### Number portability
 <a name="sk-porting"></a>
@@ -1481,10 +1481,10 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers | Yes | Your business address in Sweden, your VAT number, and a copy of the business registration. |
-| National prefixes: \+46 77 and \+46 10 | Yes | Your business address in Sweden, your VAT number, and a copy of the business registration. |
+| Local telephone numbers | Yes | Your business address and your business registration number. It must be a local address corresponding to the area code of the telephone number(s). A copy of the business registration. |
+| National prefixes: \+46 77 and \+46 10 | Yes | Your business address in Sweden and your business registration number. A copy of the business registration. |
 | Mobile prefixes: \+46 766 | No |   |
-| Toll-free prefixes: \+46 20 | Yes | Your business address in the European Union, your VAT number, and a copy of the business registration. |
+| Toll-free prefixes: \+46 20 | Yes | Your business address in Sweden, your business registration number, and a copy of the business registration. |
 
 ### Number portability
 <a name="se-porting"></a>

@@ -121,7 +121,7 @@ The following is an example for listing the accelerators for an AWS account, and
 aws globalaccelerator list-accelerators --region us-west-2
 ```
 
-```
+```json
 {
 "Accelerators": [
         {

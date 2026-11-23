@@ -13,33 +13,33 @@ Exact matching occurs when a policy property value matches one or more message a
 
 Consider the following policy property:
 
-```
+```json
 "customer_interests": ["rugby", "tennis"]
 ```
 
 It matches the following message attributes:
 
-```
+```json
 "customer_interests": {"Type": "String", "Value": "rugby"}
 ```
 
-```
+```json
 "customer_interests": {"Type": "String", "Value": "tennis"}
 ```
 
-```
+```json
 "customer_interests": {"Type": "String.Array", "Value": "[\"rugby\", \"tennis\"]"}
 ```
 
 It also matches the following message bodies:
 
-```
+```json
 {
    "customer_interests": "rugby"
 }
 ```
 
-```
+```json
 {
    "customer_interests": "tennis"
 }
@@ -47,17 +47,17 @@ It also matches the following message bodies:
 
 However, it doesn't match the following message attributes:
 
-```
+```json
 "customer_interests": {"Type": "String", "Value": "baseball"}
 ```
 
-```
+```json
 "customer_interests": {"Type": "String.Array", "Value": "[\"baseball\"]"}
 ```
 
 Nor does it match the following message body:
 
-```
+```json
 {
    "customer_interests": "baseball"
 }
@@ -70,33 +70,33 @@ When a policy property value includes the keyword `anything-but`, it matches any
 
 Consider the following policy property:
 
-```
+```json
 "customer_interests": [{"anything-but": ["rugby", "tennis"]}]
 ```
 
 It matches any of the following message attributes:
 
-```
+```json
 "customer_interests": {"Type": "String", "Value": "baseball"}
 ```
 
-```
+```json
 "customer_interests": {"Type": "String", "Value": "football"}
 ```
 
-```
+```json
 "customer_interests": {"Type": "String.Array", "Value": "[\"rugby\", \"baseball\"]"}
 ```
 
 It also matches either of the following message bodies:
 
-```
+```json
 {
    "customer_interests": "baseball"
 }
 ```
 
-```
+```json
 {
    "customer_interests": "football"
 }
@@ -104,13 +104,13 @@ It also matches either of the following message bodies:
 
 Moreover, it matches the following message attribute (because it contains a value that *isn't* `rugby` or `tennis`):
 
-```
+```json
 "customer_interests": {"Type": "String.Array", "Value": "[\"rugby\", \"baseball\"]"}
 ```
 
 And it also matches the following message body (because it contains a value that isn't `rugby` or `tennis`):
 
-```
+```json
 {
    "customer_interests": ["rugby", "baseball"]
 }
@@ -118,17 +118,17 @@ And it also matches the following message body (because it contains a value that
 
 However, it doesn't match the following message attributes:
 
-```
+```json
 "customer_interests": {"Type": "String", "Value": "rugby"}
 ```
 
-```
+```json
 "customer_interests": {"Type": "String.Array", "Value": "[\"rugby\"]"}
 ```
 
 Nor does it match the following message body:
 
-```
+```json
 {
    "customer_interests": ["rugby"]
 }
@@ -138,29 +138,29 @@ Nor does it match the following message body:
 
 For string matching, you can also use a prefix with the `anything-but` operator. For example, the following policy property denies the `order-` prefix:
 
-```
+```json
 "event":[{"anything-but": {"prefix": "order-"}}]
 ```
 
 It matches either of the following attributes:
 
-```
+```json
 "event": {"Type": "String", "Value": "data-entry"}
 ```
 
-```
+```json
 "event": {"Type": "String", "Value": "order_number"}
 ```
 
 It also matches either of the following message bodies:
 
-```
+```json
 {
    "event": "data-entry"
 }
 ```
 
-```
+```json
 {
    "event": "order_number"
 }
@@ -168,13 +168,13 @@ It also matches either of the following message bodies:
 
 However, it doesn't match the following message attribute:
 
-```
+```json
 "event": {"Type": "String", "Value": "order-cancelled"}
 ```
 
 Nor does it match the following message body:
 
-```
+```json
 {
    "event": "order-cancelled"
 }
@@ -184,19 +184,19 @@ Nor does it match the following message body:
 
 The following policy property denies the `*ball` wildcard:
 
-```
+```json
 "customer_interests" : [{ "anything-but": { "wildcard": "*ball" }}]
 ```
 
 It matches the following attributes:
 
-```
+```json
 {"customer_interests": ["hockey", "rugby", "soccer] }
 ```
 
 However, it does not match the following message attribute:
 
-```
+```json
 {"customer_interests": ["baseball", "basketball"] }
 ```
 
@@ -206,19 +206,19 @@ The following policy property denies the `-ball`
 
  suffix:
 
-```
+```json
 "customer_interests": [ { "anything-but": { "suffix": "ball" } } ]
 ```
 
 It matches the following attributes:
 
-```
+```json
 {"customer_interests": ["hockey", "rugby", "soccer] }
 ```
 
 However, it does not match the following message attribute:
 
-```
+```json
  {"customer_interests": ["baseball", "basketball"] }
 ```
 
@@ -229,29 +229,29 @@ When a policy property includes the keyword `equals-ignore-case`, it will perfor
 
 Consider the following policy property:
 
-```
+```json
 "customer_interests": [{"equals-ignore-case": "tennis"}]
 ```
 
 It matches either of the following message attributes:
 
-```
+```json
 "customer_interests": {"Type": "String", "Value": "TENNIS"}
 ```
 
-```
+```json
 "customer_interests": {"Type": "String", "Value": "Tennis"}
 ```
 
 It also matches either of the following message bodies:
 
-```
+```json
 {
     "customer_interests": "TENNIS"
 }
 ```
 
-```
+```json
 {
     "customer_interests": "teNnis"
 {
@@ -264,29 +264,29 @@ You can use the `cidr` operator to check whether an incoming message originates 
 
 Consider the following policy property:
 
-```
+```json
 "source_ip":[{"cidr": "10.0.0.0/24"}]
 ```
 
 It matches either of the following message attributes:
 
-```
+```json
 "source_ip": {"Type": "String", "Value": "10.0.0.0"}
 ```
 
-```
+```json
 "source_ip": {"Type": "String", "Value": "10.0.0.255"}
 ```
 
 It also matches either of the following message bodies:
 
-```
+```json
 {
    "source_ip": "10.0.0.0"
 }
 ```
 
-```
+```json
 {
    "source_ip": "10.0.0.255"
 }
@@ -294,13 +294,13 @@ It also matches either of the following message bodies:
 
 However, it doesn't match the following message attribute:
 
-```
+```json
 "source_ip": {"Type": "String", "Value": "10.1.1.0"}
 ```
 
 Nor does it match the following message body:
 
-```
+```json
 {
    "source_ip": "10.1.1.0"
 }
@@ -313,29 +313,29 @@ When a policy property includes the keyword `prefix`, it matches any message att
 
 Consider the following policy property:
 
-```
+```json
 "customer_interests": [{"prefix": "bas"}]
 ```
 
 It matches either of the following message attributes:
 
-```
+```json
 "customer_interests": {"Type": "String", "Value": "baseball"}
 ```
 
-```
+```json
 "customer_interests": {"Type": "String", "Value": "basketball"}
 ```
 
 It also matches either of the following message bodies:
 
-```
+```json
 {
    "customer_interests": "baseball"
 }
 ```
 
-```
+```json
 {
    "customer_interests": "basketball"
 }
@@ -343,13 +343,13 @@ It also matches either of the following message bodies:
 
 However, it doesn't match the following message attribute:
 
-```
+```json
 "customer_interests": {"Type": "String", "Value": "rugby"}
 ```
 
 Nor does it match the following message body:
 
-```
+```json
 {
    "customer_interests": "rugby"
 }
@@ -362,29 +362,29 @@ When a policy property includes the keyword `suffix`, it matches any message att
 
 Consider the following policy property:
 
-```
+```json
 "customer_interests": [{"suffix": "ball"}]
 ```
 
 It matches either of the following message attributes:
 
-```
+```json
 "customer_interests": {"Type": "String", "Value": "baseball"}
 ```
 
-```
+```json
 "customer_interests": {"Type": "String", "Value": "basketball"}
 ```
 
 It also matches either of the following message bodies:
 
-```
+```json
 {
     "customer_interests": "baseball"
 }
 ```
 
-```
+```json
 {
     "customer_interests": "basketball"
 }
@@ -392,13 +392,13 @@ It also matches either of the following message bodies:
 
 However, it doesn't match the following message attribute:
 
-```
+```json
 "customer_interests": {"Type": "String", "Value": "rugby"}
 ```
 
 Nor does it match the following message body:
 
-```
+```json
 {
     "customer_interests": "rugby"
 }
@@ -411,12 +411,12 @@ Nor does it match the following message body:
 
 The following policy uses the wildcard (\*) character:
 
-```
+```json
 "customer_interests": [ { "wildcard": "*ball" } ]
 ```
 
 It matches the following attributes:
 
-```
+```json
 {"customer_interests": ["baseball", "basketball"] }
 ```

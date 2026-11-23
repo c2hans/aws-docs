@@ -58,6 +58,8 @@ For example, if 100% capacity is an availability requirement for failure scenari
 
 ![Three availability zones each with subnets, application instances at 50% capacity, and database instances.](https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/images/example-three-availability-zone-architecture.png)
 
+*Example of a three Availability Zone architecture with 150% of capacity in normal operations*
+
  **Suggestion 17.2.7 – Evaluate the use of storage-only based recovery options**
 
  In general on AWS, we recommend database replication over storage replication to ensure protection from the broadest range of failure scenarios. For the application layer or for less critical instances, a DR solution that uses storage replication without the need for compute can reduce costs. It also minimizes the complexity associated with managing change.

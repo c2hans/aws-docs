@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sd-export-
 
 Before you can export data, you must attach a bucket policy to your destination S3 bucket that allows the AWS IoT SiteWise service to write objects. Apply the following policy to your bucket (replace `{yourbucketname}` with your actual bucket name):
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -37,7 +37,7 @@ For production environments, consider narrowing the Action to only the S3 operat
 
 Your calling identity must have permission to invoke and describe the export job API. At minimum:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -86,7 +86,7 @@ POST /workspaces/{workspaceName}/dataset-export-jobs HTTP/1.1
 ### Response
 <a name="sd-export-job-response"></a>
 
-```
+```json
 {
     "jobId": "string",
     "workspaceName": "string"
@@ -105,7 +105,7 @@ HTTP status on success: 200 OK.
 
 Save this as `export-job-request.json`:
 
-```
+```json
 {
     "destinationS3Uri": "s3://your-export-bucket/scenario-discovery/exports/car_120/2026-07-14/",
     "input": {
@@ -122,7 +122,7 @@ Save this as `export-job-request.json`:
 
 Command (using an input file):
 
-```
+```bash
 aws iotsitewise create-dataset-export-job \
     --region us-east-1 \
     --workspace-name scenario_discovery_car120 \
@@ -131,7 +131,7 @@ aws iotsitewise create-dataset-export-job \
 
 Equivalent inline form:
 
-```
+```bash
 aws iotsitewise create-dataset-export-job \
     --region us-east-1 \
     --workspace-name scenario_discovery_car120 \
@@ -148,7 +148,7 @@ CLI-only flags:
 
 Sample output:
 
-```
+```json
 {
     "jobId": "a1b2c3d4-5678-90ab-cdef-1234567890ab",
     "workspaceName": "scenario_discovery_car120"
@@ -158,7 +158,7 @@ Sample output:
 ## boto3 (Python)
 <a name="sd-export-job-boto3"></a>
 
-```
+```python
 import boto3
 
 client = boto3.client("iotsitewise", region_name="us-east-1")
@@ -212,7 +212,7 @@ https://data.iotsitewise.<region>.amazonaws.com/workspaces/<workspaceName>/datas
 ### Recommended: awscurl
 <a name="sd-export-job-curl-awscurl"></a>
 
-```
+```bash
 awscurl \
     --service iotsitewise \
     --region us-east-1 \
@@ -225,7 +225,7 @@ awscurl \
 ### Plain curl — pre-signed request skeleton
 <a name="sd-export-job-curl-plain"></a>
 
-```
+```bash
 curl -v -X POST \
     "https://data.iotsitewise.us-east-1.amazonaws.com/workspaces/scenario_discovery_car120/dataset-export-jobs" \
     -H "Host: data.iotsitewise.us-east-1.amazonaws.com" \
@@ -243,7 +243,7 @@ See the AWS documentation on Signing AWS API requests for the full SigV4 derivat
 
 Sample HTTP response:
 
-```
+```json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -258,7 +258,7 @@ Content-Type: application/json
 
 You must apply this bucket policy to your destination bucket before calling `CreateDatasetExportJob`. Without it, the service cannot write exported data to your bucket.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

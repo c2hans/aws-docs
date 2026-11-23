@@ -18,7 +18,7 @@ The following code example shows how to manage the complete lifecycle of resourc
 **AWS CLI with Bash script**
 Create a table with a resource policy.
 
-```
+```bash
 # Step 1: Create a DynamoDB table
 aws dynamodb create-table \
     --table-name MusicCollection \
@@ -59,14 +59,14 @@ aws dynamodb put-resource-policy \
 ```
 Get a resource policy.
 
-```
+```bash
 # Get the resource-based policy attached to a table
 aws dynamodb get-resource-policy \
     --resource-arn arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection
 ```
 Update a resource policy.
 
-```
+```bash
 # Step 1: Create an updated policy document
 cat > updated-policy.json << 'EOF'
 {
@@ -99,7 +99,7 @@ aws dynamodb put-resource-policy \
 ```
 Delete a resource policy.
 
-```
+```bash
 # Delete the resource-based policy from a table
 aws dynamodb delete-resource-policy \
     --resource-arn arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection

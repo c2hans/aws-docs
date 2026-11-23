@@ -27,7 +27,7 @@ To configure Spark when you are creating the cluster, see [Configure Spark](emr-
 **To launch a cluster with Spark installed using the AWS CLI**
 + Create the cluster with the following command.
 
-  ```
+  ```bash
   aws emr create-cluster --name "Spark cluster" --release-label {{emr-7.14.0}} --applications Name=Spark \
   --ec2-attributes KeyName=myKey --instance-type m5.xlarge --instance-count 3 --use-default-roles
   ```
@@ -40,7 +40,7 @@ Linux line continuation characters (\\) are included for readability. They can b
 Specify Spark as an application with `SupportedProductConfig` used in `RunJobFlowRequest`.
 + The following example shows how to create a cluster with Spark using Java.
 
-  ```
+  ```java
   import com.amazonaws.AmazonClientException;
   import com.amazonaws.auth.AWSCredentials;
   import com.amazonaws.auth.AWSStaticCredentialsProvider;

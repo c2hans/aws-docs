@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/container-insights-eks-otel-helm.html
 ---
 
-# Deploy OTel Container Insights with Helm
+# Deploy with Helm
 
 The Amazon CloudWatch Observability Helm chart provides a flexible deployment option for OTel Container Insights. It installs the CloudWatch agent (OTel-based) with the OpenTelemetry filelog receiver for log collection. The Helm chart is maintained at [https://github.com/aws-observability/helm-charts](https://github.com/aws-observability/helm-charts).
 

@@ -11,6 +11,8 @@ Step Functions implements JSONata based on the 2.0.6 specification. All built-in
 
  The following video describes variables and JSONata in Step Functions with a DynamoDB example:
 
+[![AWS Videos](https://img.youtube.com/vi/aoKt7Aw2a1I/0.jpg)](https://www.youtube.com/watch?v=aoKt7Aw2a1I)
+
  You must opt-in to use the JSONata query and transformation language for existing workflows. When creating a workflow in the console, we recommend choosing JSONata for the top-level state machine `QueryLanguage`. For existing or new workflows that use JSONPath, the console provides an option to convert individual states to JSONata.
 
  After selecting JSONata, your workflow fields will be reduced from five JSONPath fields (`InputPath`, `Parameters`, `ResultSelector`, `ResultPath`, and `OutputPath`) to only two fields: `Arguments` and `Output`. Also, you will **not** use `.$` on JSON object key names.
@@ -21,7 +23,7 @@ Step Functions implements JSONata based on the 2.0.6 specification. All built-in
 
  The following code samples show a conversion from JSONPath to JSONata:
 
-```
+```json
 # Original sample using JSONPath
 {
   "QueryLanguage": "JSONPath", // Set explicitly; could be set and inherited from top-level
@@ -36,7 +38,7 @@ Step Functions implements JSONata based on the 2.0.6 specification. All built-in
 }
 ```
 
-```
+```json
 # Sample after conversion to JSONata
 {
   "QueryLanguage": "JSONata", // Set explicitly; could be set and inherited from top-level
@@ -53,7 +55,7 @@ Step Functions implements JSONata based on the 2.0.6 specification. All built-in
 
  Given input `{ "title" : "Doctor" }` and variable `customerName` assigned to `"María"`, both state machines will produce the following JSON result:
 
-```
+```json
 {
   "static": "Hello",
   "title": "Doctor",
@@ -96,7 +98,7 @@ Step Functions implements JSONata based on the 2.0.6 specification. All built-in
 
  Step Functions defines a single reserved variable called ** `$states` **. In JSONata states, the following structures are assigned to `$states` for use in JSONata expressions:
 
-```
+```text
 # Reserved $states variable in JSONata states
 $states = {
   "input":       // Original input to the state
@@ -165,7 +167,7 @@ In each case, the interpreter will throw the error: `States.QueryEvaluationError
 
  The `Arguments` and `Output` fields (and other similar fields such as `Map` state’s `ItemSelector`) will accept either a JSON object such as:
 
-```
+```json
 "Arguments": {
     "field1": 42,
     "field2": "{% jsonata expression %}"
@@ -174,7 +176,7 @@ In each case, the interpreter will throw the error: `States.QueryEvaluationError
 
  Or, you can use a JSONata expression directly, for example:
 
-```
+```json
 "Output": "{% jsonata expression %}"
 ```
 
@@ -192,7 +194,7 @@ In each case, the interpreter will throw the error: `States.QueryEvaluationError
 
  When using JSONPath, choice states have an input `Variable` and numerous comparison paths, such as the following `NumericLessThanEqualsPath` :
 
-```
+```json
 # JSONPath choice state sample, with Variable and comparison path
 "Check Price": {
   "Type": "Choice",
@@ -208,7 +210,7 @@ In each case, the interpreter will throw the error: `States.QueryEvaluationError
 
  With JSONata, the choice state has a `Condition` where you can use a JSONata expression:
 
-```
+```json
 # Choice state after JSONata conversion
 "Check Price": {
   "Type": "Choice",
@@ -232,7 +234,7 @@ In each case, the interpreter will throw the error: `States.QueryEvaluationError
 
  This example shows how to use `$states.input` to use the state input and the `Output` field to specify the state output when you opt into JSONata.
 
-```
+```json
 {
   "Comment": "Input and Output example using JSONata",
   "QueryLanguage": "JSONata",
@@ -252,7 +254,7 @@ In each case, the interpreter will throw the error: `States.QueryEvaluationError
 
  When the workflow is executed with the following as input:
 
-```
+```json
 {
   "customer": {
     "firstName": "Martha",
@@ -267,7 +269,7 @@ In each case, the interpreter will throw the error: `States.QueryEvaluationError
 
 Test state or state machine execution will return the following JSON output:
 
-```
+```json
 {
   "lastName": "Last=>Rivera",
   "orderValue": 27.91
@@ -283,7 +285,7 @@ Test state or state machine execution will return the following JSON output:
 
  **State machine definition for filtering with JSONata**
 
-```
+```json
 {
   "Comment": "Filter products using JSONata",
   "QueryLanguage": "JSONata",
@@ -302,7 +304,7 @@ Test state or state machine execution will return the following JSON output:
 
  **Sample input for the test**
 
-```
+```json
 {
   "products": [
     {
@@ -336,7 +338,7 @@ Test state or state machine execution will return the following JSON output:
 
  **Output from testing the step in your state machine**
 
-```
+```json
 {
     "dietProducts": [
         {
@@ -362,7 +364,7 @@ Test state or state machine execution will return the following JSON output:
 
  **State machine definition**
 
-```
+```json
 {
   "Comment": "Example: Using previous state output in a Map state with JSONata",
   "QueryLanguage": "JSONata",
@@ -405,7 +407,7 @@ Test state or state machine execution will return the following JSON output:
 
  **Sample input**
 
-```
+```json
 {
   "orderId": "ORD-1234",
   "items": [
@@ -430,7 +432,7 @@ Test state or state machine execution will return the following JSON output:
 
  **Expected output**
 
-```
+```json
 [
   {
     "name": "Widget",
@@ -456,7 +458,7 @@ Test state or state machine execution will return the following JSON output:
 
  **State machine definition**
 
-```
+```json
 {
   "Comment": "Example: Flattening Parallel state output with JSONata",
   "QueryLanguage": "JSONata",
@@ -506,7 +508,7 @@ Test state or state machine execution will return the following JSON output:
 
  **Sample input**
 
-```
+```json
 {
   "orderId": "12345",
   "customerId": "C-100"
@@ -515,7 +517,7 @@ Test state or state machine execution will return the following JSON output:
 
  **Expected output**
 
-```
+```json
 {
   "orderId": "12345",
   "orderDate": "2024-11-20",
@@ -539,7 +541,7 @@ JSONata contains function libraries for String, Numeric, Aggregation, Boolean, A
 
  The first parameter is the array to partition, the second parameter is an integer representing the chunk size. The return value will be a two-dimensional array. The interpreter chunks the input array into multiple arrays of the size specified by chunk size. The length of the last array chunk may be less than the length of the previous array chunks if the number of remaining items in the array is smaller than the chunk size.
 
-```
+```json
 "Assign": {
   "arrayPartition": "{% $partition([1,2,3,4], $states.input.chunkSize) %}"
 }
@@ -549,7 +551,7 @@ JSONata contains function libraries for String, Numeric, Aggregation, Boolean, A
 
  This function takes three arguments. The first argument is an integer representing the first element of the new array, the second argument is an integer representing the final element of the new array, and the third argument is the delta value integer for the elements in the new array. The return value is a newly-generated array of values ranging from the first argument of the function to the second argument of the function with elements in between adjusted by the delta. The delta value can be positive or negative which will increment or decrement each element from the last until the end value is reached or exceeded.
 
-```
+```json
 "Assign": {
   "arrayRange": "{% $range(0, 10, 2) %}"
 }
@@ -561,7 +563,7 @@ JSONata contains function libraries for String, Numeric, Aggregation, Boolean, A
 
  This function was created because JSONata does not natively support the ability to calculate hashes.
 
-```
+```json
 "Assign": {
   "myHash": "{% $hash($states.input.content, $hashAlgorithmName) %}"
 }
@@ -573,7 +575,7 @@ JSONata contains function libraries for String, Numeric, Aggregation, Boolean, A
 
  This overloaded function was created because the built-in JSONata function [`$random`](https://docs.jsonata.org/numeric-functions#random) does not accept a seed value.
 
-```
+```json
 "Assign": {
    "randNoSeed": "{% $random() %}",
    "randSeeded": "{% $random($states.input.seed) %}"
@@ -586,7 +588,7 @@ JSONata contains function libraries for String, Numeric, Aggregation, Boolean, A
 
  This function was created because JSONata does not natively support the ability to generate UUIDs.
 
-```
+```json
 "Assign": {
   "uniqueId": "{% $uuid() %}"
 }
@@ -598,7 +600,7 @@ JSONata contains function libraries for String, Numeric, Aggregation, Boolean, A
 
  JSONata supports this functionality via `$eval`; however, `$eval` is not supported in Step Functions workflows.
 
-```
+```json
 "Assign": {
   "deserializedPayload": "{% $parse($states.input.json_string) %}"
 }

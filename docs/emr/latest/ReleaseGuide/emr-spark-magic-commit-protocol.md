@@ -33,7 +33,7 @@ In order to use the S3A filesystem, you can either:
 
    The following example shows how to disable MagicCommitProtocol while running a `spark-sql` command.
 
-   ```
+   ```bash
    spark-sql \
      --conf spark.sql.execution.datasources.SQLEmrOptimizedCommitProtocol.leverageMagicCommitProtocol=false \
    -e "INSERT OVERWRITE TABLE target_table SELECT * FROM source_table;"

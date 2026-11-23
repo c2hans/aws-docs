@@ -149,7 +149,7 @@ Modifying the following configuration settings causes the EMQX broker component 
 **Example: Default configuration**
 The following example shows the defaults set for the MQTT 5 (EMQX) broker. You can override these settings using the `emqxConfig` configuration setting.
 
-```
+```json
 {
   "authorization": {
     "no_match": "deny",
@@ -230,7 +230,7 @@ Defaults to the EMQX MQTT broker log level (`log.level` in `emqx`).
 The following example shows the changes necessary to update a v1.x configuration file to version 2.x.
 The version 1.x configuration file:
 
-```
+```json
 {
     "emqx": {
         "listener.ssl.external": "443",
@@ -247,7 +247,7 @@ The version 1.x configuration file:
 ```
 The equivalent configuration file for v2:
 
-```
+```json
 {
     "emqxConfig": {
         "listeners": {
@@ -277,7 +277,7 @@ There is no equivalent to the `listener.ssl.external.rate_limit` configuration e
 **Example: Set a new port for the broker**
 The following example changes the port where the MQTT broker operates from the default 8883 to port 1234. If you are using Linux, include the `dockerOptions` field.
 
-```
+```json
 {
   "emqxConfig": {
     "listeners": {
@@ -304,7 +304,7 @@ The following example changes the MQTT broker's log level to `debug`. You can ch
 + `emergency`
 The default log level is `warning`.
 
-```
+```json
 {
   "emqxConfig": {
     "log": {
@@ -319,7 +319,7 @@ The default log level is `warning`.
 **Example: Enable the EMQX dashboard**
 The following example enables the EMQX dashboard so that you can monitor and manage your broker. If you are using Linux, include the `dockerOptions` field.
 
-```
+```json
 {
   "emqxConfig": {
     "dashboard": {
@@ -403,7 +403,7 @@ Defaults to the EMQX MQTT broker log level (`log.level` in `emqx`).
 (Optional) Configure this option to add to or override the defaults in the specified EMQX configuration files. For information about the configuration files and their formats, see [Configuration](https://www.emqx.io/docs/en/v4.4/configuration/configuration.html) in the *EMQX 4.0 Documentation*. The values that you specify are appended to the configuration file.
 The following example updates the `etc/emqx.conf` file.
 
-```
+```json
 "mergeConfigurationFiles": {
     "etc/emqx.conf": "broker.sys_interval=30s\nbroker.sys_heartbeat=10s"
 },
@@ -415,7 +415,7 @@ In addition to the configuration files supported by EMQX, Greengrass supports a 
 If the `use_greengrass_managed_certificates` is `true`, this option indicates that Greengrass manages the broker TLS certificates. If `false`, it indicates that you provide the certificates through another source.
 The following example updates the defaults in the `etc/plugins/aws_greengrass_emqx_auth.conf` configuration file.
 
-```
+```json
 "mergeConfigurationFiles": {
     "etc/plugins/aws_greengrass_emqx_auth.conf": "auth_mode=enabled\n use_greengrass_managed_certificates=true\n"
   },
@@ -428,7 +428,7 @@ The following example updates the defaults in the `etc/plugins/aws_greengrass_em
 **Example: Configuration merge update**
 The following example configuration specifies to operate the MQTT broker on port 443.
 
-```
+```json
 {
   "emqx": {
     "listener.ssl.external": "443",
@@ -473,14 +473,14 @@ This component uses the following log file.
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.greengrass.clientdevices.mqtt.EMQX.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\aws.greengrass.clientdevices.mqtt.EMQX.log -Tail 10 -Wait
   ```
 

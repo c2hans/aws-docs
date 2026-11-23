@@ -31,7 +31,7 @@ Using the [`CreateAutoPredictor`](API_CreateAutoPredictor.md) operation, enable 
 
 For example, to include the USA holiday calendar, use the following code.
 
-```
+```json
       "DataConfig": {
         "AdditionalDatasets": [
             {

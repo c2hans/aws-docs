@@ -88,6 +88,7 @@ Lambda Managed Instances changes how Lambda processes requests compared to Lambd
 <a name="lambda-managed-instances-next-steps"></a>
 + Learn about [core concepts for Lambda Managed Instances](lambda-managed-instances-core-concepts.md)
 + [Get started with Lambda Managed Instances](lambda-managed-instances-getting-started.md)
++ Find cost optimization candidates with [Trusted Advisor recommendations](lambda-managed-instances-trusted-advisor.md)
 + Learn about [capacity providers for Lambda Managed Instances](lambda-managed-instances-capacity-providers.md)
 + Understand [scaling for Lambda Managed Instances](lambda-managed-instances-scaling.md)
 + Learn about [deploying and updating Lambda Managed Instances functions](lambda-managed-instances-deployments.md)

@@ -23,7 +23,7 @@ You can select one or more container registries and images for your workflow.
   + For registries that pull through cache doesn't support: [Service role policy for non-PTC container support](permissions-ecr.md#permissions-ecr-non-ptc)
 + Architecture – HealthOmics supports x86\_64 containers and doesn't support ARM containers. If your local machine is ARM-based, such as Apple Mac, use a command such as the following to build an x86\_64 container image:
 
-  ```
+  ```bash
   docker build --platform amd64 -t my_tool:latest .
   ```
 + Entrypoint and shell – HealthOmics workflow engines inject bash scripts as a command override to the container images used by workflow tasks. Thus, container images should be built without a specified ENTRYPOINT such that a bash shell is the default.

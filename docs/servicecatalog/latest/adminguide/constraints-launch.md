@@ -71,7 +71,7 @@ To view provisioned Cloudformation products and resources in the AWS Service Cat
 
 1. Enter a name for the policy, and then paste the following into the **Policy Document** editor:
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -131,7 +131,7 @@ AWS Service Catalog supports [Confused Deputy](https://docs.aws.amazon.com/IAM/l
 
 In the following example, the AWS Service Catalog end-user belongs to account 111111111111. When the AWS Service Catalog administrator creates a `LaunchConstraint` for a product, the end-user can specify the following conditions in the launch role trust policy to restrict the assume role to account 111111111111.
 
-```
+```json
 "Condition":{
    "ArnLike":{
       "aws:SourceArn":"arn:aws:servicecatalog:us-east-1:111111111111:*"

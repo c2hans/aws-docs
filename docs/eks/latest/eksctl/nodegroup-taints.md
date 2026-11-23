@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/nodegroup-taints.html
 
 To apply [taints](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) to a specific nodegroup use the `taints` config section like this:
 
-```
+```yaml
     taints:
       - key: your.domain.com/db
         value: "true"

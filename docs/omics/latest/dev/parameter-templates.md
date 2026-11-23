@@ -16,7 +16,7 @@ The input parameter object includes the following attributes:
 
 The following example parameter template shows how to specify the input parameters.
 
-```
+```json
 {
   "myRequiredParameter1": {
      "description": "this parameter is required",

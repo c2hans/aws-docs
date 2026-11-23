@@ -10,7 +10,7 @@ For both source and destination resources, when defined within the same template
 
 When you define a source resource with a property other than `Id`, use the `SourceReference` property.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...
@@ -32,7 +32,7 @@ Resources:
 
 Here's an example, using a `Qualifier` to narrow the scope of an Amazon API Gateway resource:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...
@@ -53,7 +53,7 @@ Resources:
 
 Here's an example, using a supported combination of `Arn` and `Type` to define a destination resource from another template:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...

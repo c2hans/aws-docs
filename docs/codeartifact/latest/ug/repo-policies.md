@@ -18,7 +18,7 @@ A resource policy is a text file in JSON format. The file must specify a princip
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -50,7 +50,7 @@ Because the only action specified in the repository is `ReadFromRepository`, use
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -95,7 +95,7 @@ When you call `put-repository-permissions-policy`, the resource policy on the re
 
 Sample output:
 
-```
+```json
 {
     "policy": {
         "resourceArn": "arn:aws:codeartifact:{{region-id}}:{{111122223333}}:repository/{{my_domain}}/{{my_repo}}",
@@ -124,7 +124,7 @@ Sample output:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -174,7 +174,7 @@ The format of the output is the same as that of the `get-repository-permissions-
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -222,7 +222,7 @@ The following policy grants account `123456789012` permission to publish version
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -259,7 +259,7 @@ Maven: `codeartifact:PutPackageMetadata`
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

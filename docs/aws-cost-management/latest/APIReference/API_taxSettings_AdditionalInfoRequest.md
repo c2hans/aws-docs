@@ -94,6 +94,16 @@ Additional tax information to specify for a TRN in Monaco.
 Type: [MonacoAdditionalInfo](API_taxSettings_MonacoAdditionalInfo.md) object
 Required: No
 
+ ** newZealandAdditionalInfo **   <a name="awscostmanagement-Type-taxSettings_AdditionalInfoRequest-newZealandAdditionalInfo"></a>
+Additional tax information to specify for a Tax Registration Number (TRN) in New Zealand.
+Type: [NewZealandAdditionalInfo](API_taxSettings_NewZealandAdditionalInfo.md) object
+Required: No
+
+ ** norwayAdditionalInfo **   <a name="awscostmanagement-Type-taxSettings_AdditionalInfoRequest-norwayAdditionalInfo"></a>
+Additional tax information to specify for a Tax Registration Number (TRN) in Norway.
+Type: [NorwayAdditionalInfo](API_taxSettings_NorwayAdditionalInfo.md) object
+Required: No
+
  ** philippinesAdditionalInfo **   <a name="awscostmanagement-Type-taxSettings_AdditionalInfoRequest-philippinesAdditionalInfo"></a>
 Additional tax information to specify for a TRN in the Philippines.
 Type: [PhilippinesAdditionalInfo](API_taxSettings_PhilippinesAdditionalInfo.md) object
@@ -132,6 +142,11 @@ Required: No
  ** ukraineAdditionalInfo **   <a name="awscostmanagement-Type-taxSettings_AdditionalInfoRequest-ukraineAdditionalInfo"></a>
  Additional tax information associated with your TRN in Ukraine.
 Type: [UkraineAdditionalInfo](API_taxSettings_UkraineAdditionalInfo.md) object
+Required: No
+
+ ** unitedArabEmiratesAdditionalInfo **   <a name="awscostmanagement-Type-taxSettings_AdditionalInfoRequest-unitedArabEmiratesAdditionalInfo"></a>
+Additional tax information to specify for a Tax Registration Number (TRN) in the United Arab Emirates.
+Type: [UnitedArabEmiratesAdditionalInfo](API_taxSettings_UnitedArabEmiratesAdditionalInfo.md) object
 Required: No
 
  ** uzbekistanAdditionalInfo **   <a name="awscostmanagement-Type-taxSettings_AdditionalInfoRequest-uzbekistanAdditionalInfo"></a>

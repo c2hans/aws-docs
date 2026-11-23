@@ -8,7 +8,7 @@ You must first attach a Lambda function to your Amazon Lex V2 bot alias before y
 
 If you are creating a new bot alias, use the [CreateBotAlias](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateBotAlias.html) operation to attach a Lambda function. To attach a Lambda function to an existing bot alias, use the [UpdateBotAlias](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateBotAlias.html) operation. Modify the `botAliasLocaleSettings` field to contain the correct settings:
 
-```
+```json
 {
     "botAliasLocaleSettings" : {
         {{locale}}: {
@@ -39,7 +39,7 @@ If you invoke the function during the elicitation of a slot, use the [CreateSlot
 
 1. To set the Lambda dialog code hook to run after every turn of the conversation, set the `enabled` field of the following [DialogCodeHookSettings](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DialogCodeHookSettings.html) object in the `dialogCodeHook` field to `true`:
 
-   ```
+   ```json
    "dialogCodeHook": {
        "enabled": {{boolean}}
    }
@@ -52,7 +52,7 @@ If you invoke the function during the elicitation of a slot, use the [CreateSlot
 
 The `codeHook` field defines the settings for the code hook to run at a given stage in the conversation. It is a [DialogCodeHookInvocationSetting](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DialogCodeHookInvocationSetting.html) object with the following structure:
 
-```
+```json
 "codeHook": {
     "active": {{boolean}},
     "enableCodeHookInvocation": {{boolean}},
@@ -70,7 +70,7 @@ The `codeHook` field defines the settings for the code hook to run at a given st
 
 The `elicitationCodeHook` field defines the settings for the code hook to run in the event that a slot or slots need to be re-elicited. This scenario may occur if slot elicitation fails or intent confirmation is denied. The `elicitationCodeHook` field is an [ElicitationCodeHookInvocationSetting](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ElicitationCodeHookInvocationSetting.html) object with the following structure:
 
-```
+```json
 "elicitationCodeHook": {
     "enableCodeHookInvocation": {{boolean}},
     "invocationLabel": {{string}}
@@ -84,7 +84,7 @@ The `elicitationCodeHook` field defines the settings for the code hook to run in
 
 The `fulfillmentCodeHook` field defines the settings for the code hook to run to fulfill the intent. It maps to the following [FulfillmentCodeHookSettings](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_FulfillmentCodeHookSettings.html) object:
 
-```
+```json
 "fulfillmentCodeHook": {
     "active": {{boolean}},
     "enabled": {{boolean}},
@@ -104,7 +104,7 @@ You can invoke the Lambda code hook at the following points in a conversation by
 
 To invoke the Lambda function in the initial response after the intent is recognized, use the `codeHook` structure in the `initialResponse` field of the [CreateIntent](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateIntent.html) or [UpdateIntent](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateIntent.html) operation. The `initialResponse` field maps to the following [InitialResponseSetting](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_InitialResponseSetting.html) object:
 
-```
+```json
 "initialResponse": {
     "codeHook": {
         "active": {{boolean}},
@@ -123,7 +123,7 @@ To invoke the Lambda function in the initial response after the intent is recogn
 
 To invoke the Lambda function after eliciting a slot value, use the `slotCaptureSetting` field within the `valueElicitation` field of the [CreateSlot](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateSlot.html) or [UpdateSlot](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateSlot.html) operation. The `slotCaptureSetting` field maps to the following [SlotCaptureSetting](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotCaptureSetting.html) object:
 
-```
+```json
 "slotCaptureSetting": {
     "captureConditional": [ConditionalSpecification object](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ConditionalSpecification.html),
     "captureNextStep": [DialogState object](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DialogState.html),
@@ -151,7 +151,7 @@ To invoke the Lambda function after eliciting a slot value, use the `slotCapture
 
 To invoke the Lambda function when confirming an intent, use the `intentConfirmationSetting` field of the [CreateIntent](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateIntent.html) or [UpdateIntent](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateIntent.html) operation. The `intentConfirmation` field maps to the following [IntentConfirmationSetting](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_IntentConfirmationSetting.html) object:
 
-```
+```json
 "intentConfirmationSetting": {
     "active": {{boolean}},
     "codeHook": {
@@ -184,7 +184,7 @@ To invoke the Lambda function when confirming an intent, use the `intentConfirma
 
 To invoke the Lambda function to fulfill an intent, use the `fulfillmentCodeHook` field in the [CreateIntent](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateIntent.html) or [UpdateIntent](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateIntent.html) operation. The `fulfillmentCodeHook` field maps to the following [FulfillmentCodeHookSettings](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_FulfillmentCodeHookSettings.html) object:
 
-```
+```json
 {
     "active": {{boolean}},
     "enabled": {{boolean}},

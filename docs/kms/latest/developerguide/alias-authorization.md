@@ -36,7 +36,7 @@ In the condition key, specify an [alias name](concepts.md#key-id-alias-name) or 
 
 For example, the following key policy statement allows principals to use the specified operations on the KMS key. The permission is effective only when the request uses an alias that includes `alpha` to identify the KMS key.
 
-```
+```json
 {
   "Sid": "Key policy using a request alias condition",
   "Effect": "Allow",
@@ -59,7 +59,7 @@ For example, the following key policy statement allows principals to use the spe
 
 The following example request from an authorized principal would fulfill the condition. However, a request that used a [key ID](concepts.md#key-id-key-id), a [key ARN](concepts.md#key-id-key-ARN), or a different alias would not fulfill the condition, even if these values identified the same KMS key.
 
-```
+```bash
 $ aws kms describe-key --key-id "arn:aws:kms:us-west-2:111122223333:alias/project-alpha"
 ```
 
@@ -75,7 +75,7 @@ For example, the following IAM policy lets the principals call the specified ope
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -113,6 +113,6 @@ $ aws kms enable-key-rotation --key-id "alias/restricted-project"
 
 However, the following example request also satisfies the condition, provided that the specified KMS key has an alias that begins with `restricted`, even if that alias isn't used in the request.
 
-```
+```bash
 $ aws kms enable-key-rotation --key-id "1234abcd-12ab-34cd-56ef-1234567890ab"
 ```

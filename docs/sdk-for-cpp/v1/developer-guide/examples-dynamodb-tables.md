@@ -30,7 +30,7 @@ This code creates a table with a simple primary key (“Name”).
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/dynamodb/DynamoDBClient.h>
 #include <aws/dynamodb/model/AttributeDefinition.h>
@@ -43,7 +43,7 @@ This code creates a table with a simple primary key (“Name”).
 
  **Code**
 
-```
+```cpp
 //! Create an Amazon DynamoDB table.
 /*!
   \sa createTable()
@@ -103,7 +103,7 @@ Add another [AttributeDefinition](https://docs.aws.amazon.com/sdk-for-cpp/latest
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/dynamodb/DynamoDBClient.h>
 #include <aws/dynamodb/model/AttributeDefinition.h>
@@ -116,7 +116,7 @@ Add another [AttributeDefinition](https://docs.aws.amazon.com/sdk-for-cpp/latest
 
  **Code**
 
-```
+```cpp
 //! Create an Amazon DynamoDB table with a composite key.
 /*!
   \sa createTableWithCompositeKey()
@@ -187,7 +187,7 @@ You can list the tables in a particular region by calling the [DynamoDB client](
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/core/utils/Outcome.h>
 #include <aws/dynamodb/DynamoDBClient.h>
@@ -198,7 +198,7 @@ You can list the tables in a particular region by calling the [DynamoDB client](
 
  **Code**
 
-```
+```cpp
 //! List the Amazon DynamoDB tables for the current AWS account.
 /*!
   \sa listTables()
@@ -242,7 +242,7 @@ You can find out more about a table by calling the [DynamoDB client](https://doc
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/dynamodb/DynamoDBClient.h>
 #include <aws/dynamodb/model/DescribeTableRequest.h>
@@ -251,7 +251,7 @@ You can find out more about a table by calling the [DynamoDB client](https://doc
 
  **Code**
 
-```
+```cpp
 //! Describe an Amazon DynamoDB table.
 /*!
   \sa describeTable()
@@ -309,7 +309,7 @@ You can modify your table’s provisioned throughput values at any time by calli
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/core/utils/Outcome.h>
 #include <aws/dynamodb/DynamoDBClient.h>
@@ -320,7 +320,7 @@ You can modify your table’s provisioned throughput values at any time by calli
 
  **Code**
 
-```
+```cpp
 //! Update a DynamoDB table.
 /*!
   \sa updateTable()
@@ -374,7 +374,7 @@ Call the [DynamoDB client](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aw
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/dynamodb/DynamoDBClient.h>
 #include <aws/dynamodb/model/DeleteTableRequest.h>
@@ -383,7 +383,7 @@ Call the [DynamoDB client](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aw
 
  **Code**
 
-```
+```cpp
 //! Delete an Amazon DynamoDB table.
 /*!
   \sa deleteTable()

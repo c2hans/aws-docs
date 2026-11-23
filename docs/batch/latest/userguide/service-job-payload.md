@@ -21,7 +21,7 @@ The following example shows a simple service job payload for a SageMaker Trainin
 
 This payload would be passed as a JSON string to the `serviceRequestPayload` parameter when calling `SubmitServiceJob`.
 
-```
+```json
 {
   "TrainingJobName": "my-simple-training-job",
   "RoleArn": "arn:aws:iam::123456789012:role/SageMakerExecutionRole",

@@ -91,7 +91,7 @@ The Amazon SNS topic ARNs for each Region are shown below.
 
 An example GuardDuty general notification message:
 
-```
+```JSON
 {
     "Type" : "Notification",
     "MessageId" : "9101dc6b-726f-4df0-8646-ec2f94e674bc",
@@ -107,7 +107,7 @@ An example GuardDuty general notification message:
 
 The parsed Message value (with escaped quotes removed) is shown below:
 
-```
+```JSON
 {
         "version": "1",
         "type": "GENERAL",
@@ -125,7 +125,7 @@ The parsed Message value (with escaped quotes removed) is shown below:
 
 An example GuardDuty update notification message about new findings is shown below:
 
-```
+```JSON
 {
     "Type" : "Notification",
     "MessageId" : "9101dc6b-726f-4df0-8646-ec2f94e674bc",
@@ -141,7 +141,7 @@ An example GuardDuty update notification message about new findings is shown bel
 
 The parsed Message value (with escaped quotes removed) is shown below:
 
-```
+```JSON
 {
     "version": "1",
     "type": "NEW_FINDINGS",
@@ -155,7 +155,7 @@ The parsed Message value (with escaped quotes removed) is shown below:
 
 An example GuardDuty update notification message about GuardDuty functionality updates is shown below:
 
-```
+```JSON
 {
     "Type" : "Notification",
     "MessageId" : "9101dc6b-726f-4df0-8646-ec2f94e674bc",
@@ -171,7 +171,7 @@ An example GuardDuty update notification message about GuardDuty functionality u
 
 The parsed Message value (with escaped quotes removed) is shown below:
 
-```
+```JSON
 {
     "version": "1",
     "type": "NEW_FEATURES",
@@ -184,7 +184,7 @@ The parsed Message value (with escaped quotes removed) is shown below:
 
 An example GuardDuty update notification message about updated findings is shown below:
 
-```
+```JSON
 {
     "Type": "Notification",
     "MessageId": "9101dc6b-726f-4df0-8646-ec2f94e674bc",
@@ -200,7 +200,7 @@ An example GuardDuty update notification message about updated findings is shown
 
 The parsed Message value (with escaped quotes removed) is shown below:
 
-```
+```JSON
 {
     "version": "1",
     "type": "UPDATED_FINDINGS",

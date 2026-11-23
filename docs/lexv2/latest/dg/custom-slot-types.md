@@ -18,7 +18,7 @@ When the value entered by the user is a synonym of a slot type value, the model 
 
  If you are using a Lambda function, the input event to the function includes a resolution list called `resolvedValues`. The following example shows the slot section of the input to a Lambda function:
 
-```
+```json
    "slots": {
       "MovieGenre": {
          "value": {

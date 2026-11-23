@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glue#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Start an AWS Glue crawler.
     /// </summary>
@@ -43,7 +43,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/glue#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region in which the bucket was created (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -134,7 +134,7 @@ For more information, see [Defining Crawlers](https://docs.aws.amazon.com/glue/l
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glue#code-examples).
 
-```
+```java
     /**
      * Starts a specific AWS Glue crawler.
      *
@@ -164,7 +164,7 @@ For more information, see [Defining Crawlers](https://docs.aws.amazon.com/glue/l
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
 
-```
+```javascript
 const startCrawler = (name) => {
   const client = new GlueClient({});
 
@@ -183,7 +183,7 @@ const startCrawler = (name) => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/glue#code-examples).
 
-```
+```kotlin
 suspend fun startSpecificCrawler(crawlerName: String?) {
     val request =
         StartCrawlerRequest {
@@ -204,7 +204,7 @@ suspend fun startSpecificCrawler(crawlerName: String?) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/glue#code-examples).
 
-```
+```php
         $crawlerName = "example-crawler-test-" . $uniqid;
 
         $databaseName = "doc-example-database-$uniqid";
@@ -226,7 +226,7 @@ suspend fun startSpecificCrawler(crawlerName: String?) {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glue#code-examples).
 
-```
+```python
 class GlueWrapper:
     """Encapsulates AWS Glue actions."""
 
@@ -262,7 +262,7 @@ class GlueWrapper:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/glue#code-examples).
 
-```
+```ruby
 # The `GlueWrapper` class serves as a wrapper around the AWS Glue API, providing a simplified interface for common operations.
 # It encapsulates the functionality of the AWS SDK for Glue and provides methods for interacting with Glue crawlers, databases, tables, jobs, and S3 resources.
 # The class initializes with a Glue client and a logger, allowing it to make API calls and log any errors or informational messages.
@@ -291,7 +291,7 @@ class GlueWrapper
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
         let start_crawler = glue.start_crawler().name(self.crawler()).send().await;
 
         match start_crawler {
@@ -313,7 +313,7 @@ class GlueWrapper
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/glu#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_crawler_name = 'my-crawler'
         lo_glu->startcrawler( iv_name = iv_crawler_name ).
@@ -335,7 +335,7 @@ class GlueWrapper
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/glue#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSGlue
 

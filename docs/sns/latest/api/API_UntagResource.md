@@ -80,7 +80,7 @@ http://sns.us-east-2.amazonaws.com/?Action=UntagResource
 #### Sample Response
 <a name="API_UntagResource_Example_1_Response"></a>
 
-```
+```xml
 <UntagResourceResponse>
     <UntagResourceResult/>
     <ResponseMetadata>

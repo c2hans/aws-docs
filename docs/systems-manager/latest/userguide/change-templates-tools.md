@@ -26,7 +26,7 @@ This example demonstrates two levels of approvals. You can specify up to five le
 In the first level, the specific user "John-Doe" must approve each change request. After that, any three members of the IAM role `Admin` must approve the change request.
 For more information about approvals for change templates, see [About approvals in your change templates](cm-approvals-templates.md).
 
-   ```
+   ```json
    {
       "description": "This change template demonstrates the feature set available for creating
      change templates for Change Manager. This template starts a Runbook workflow
@@ -132,7 +132,7 @@ For more information about approvals for change templates, see [About approvals 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    $json = Get-Content -Path "C:\path\to\file\MyChangeTemplate.json" | Out-String
    New-SSMDocument `
        -Content $json `

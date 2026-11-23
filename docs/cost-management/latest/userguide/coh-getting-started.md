@@ -51,7 +51,7 @@ The following are two policy statements. Choose the appropriate one based on you
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -96,7 +96,7 @@ The following are two policy statements. Choose the appropriate one based on you
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

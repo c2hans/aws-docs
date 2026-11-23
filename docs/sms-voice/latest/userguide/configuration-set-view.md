@@ -14,7 +14,7 @@ You can use the [describe-configuration-sets](https://docs.aws.amazon.com/cli/la
 **To view a list of the configuration sets in your account using the AWS CLI**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 describe-configuration-sets
   ```
 
@@ -26,7 +26,7 @@ You can use the [describe-configuration-sets](https://docs.aws.amazon.com/cli/la
 **To view information about specific configuration sets using the AWS CLI**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 describe-configuration-sets \
   > --configuration-set-names {{configurationSet}}
   ```

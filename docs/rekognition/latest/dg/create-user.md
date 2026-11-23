@@ -21,7 +21,7 @@ You can use the [CreateUser](https://docs.aws.amazon.com/rekognition/latest/APIR
 
    This Java code example creates a user.
 
-   ```
+   ```java
    import com.amazonaws.services.rekognition.AmazonRekognition;
    import com.amazonaws.services.rekognition.AmazonRekognitionClientBuilder;
    import com.amazonaws.services.rekognition.model.CreateUserRequest;
@@ -65,7 +65,7 @@ You can use the [CreateUser](https://docs.aws.amazon.com/rekognition/latest/APIR
 
    This Python code example creates a user.
 
-   ```
+   ```python
    # Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -112,7 +112,7 @@ You can use the [CreateUser](https://docs.aws.amazon.com/rekognition/latest/APIR
 
    This Go code example uses the AWS Go SDK V2 and it creates a user.
 
-   ```
+   ```python
    package main
 
    import (

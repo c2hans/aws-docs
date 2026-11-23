@@ -11,7 +11,7 @@ In PyTorch, data loader iterators, such as `SingleProcessingDataLoaderIter` and 
 
 To use the PyTorch data loader profiling analysis tool, import the following `PT_dataloader_analysis` class:
 
-```
+```py
 from smdebug.profiler.analysis.utils.pytorch_dataloader_analysis import PT_dataloader_analysis
 ```
 

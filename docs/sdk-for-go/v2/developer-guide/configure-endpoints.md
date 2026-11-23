@@ -65,7 +65,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-
 
  The following code snippet shows how to point your S3 client at a local instance of a service, which in this example is hosted on the loopback device at port 8080.
 
-```
+```go
 client := s3.NewFromConfig(cfg, func (o *svc.Options) {
     o.BaseEndpoint = aws.String("https://localhost:8080/")
 })
@@ -76,7 +76,7 @@ client := s3.NewFromConfig(cfg, func (o *svc.Options) {
 
  The following code snippet shows how to inject custom behavior into S3's endpoint resolution using `EndpointResolverV2`.
 
-```
+```go
 import (
     "context"
     "net/url"
@@ -122,7 +122,7 @@ func main() {
 
  The following sample program demonstrates the interaction between `BaseEndpoint` and `EndpointResolverV2`. **This is an advanced use case:**
 
-```
+```go
 import (
     "context"
     "fmt"
@@ -194,7 +194,7 @@ The endpoint provided in config is https://endpoint.dev/
 
  The following code snippet shows how a single service endpoint can be overridden for DynamoDB with fallback behavior for other endpoints:
 
-```
+```go
 customResolver := aws.EndpointResolverWithOptionsFunc(func(service, region string, options ...interface{}) (aws.Endpoint, error) {
     if service == dynamodb.ServiceID && region == "us-west-2" {
         return aws.Endpoint{
@@ -215,7 +215,7 @@ cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithEndpointResolver
 
  The following code snippet shows how a single service endpoint can be overridden for DynamoDB without fallback behavior for other endpoints:
 
-```
+```go
 customResolver := aws.EndpointResolverWithOptionsFunc(func(service, region string, options ...interface{}) (aws.Endpoint, error) {
     if service == dynamodb.ServiceID && region == "us-west-2" {
         return aws.Endpoint{
@@ -238,7 +238,7 @@ cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithEndpointResolver
 
  Some service clients, such as Amazon S3, may modify the endpoint returned by the resolver for certain service operations. For example, Amazon S3 will automatically handle [Virtual Bucket Addressing](https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html) by mutating the resolved endpoint. You can prevent the SDK from mutating your custom endpoints by setting [HostnameImmutable](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/aws#Endpoint.HostnameImmutable) to `true`. For example:
 
-```
+```go
 customResolver := aws.EndpointResolverWithOptionsFunc(func(service, region string, options ...interface{}) (aws.Endpoint, error) {
     if service == dynamodb.ServiceID && region == "us-west-2" {
         return aws.Endpoint{
@@ -282,7 +282,7 @@ cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithEndpointResolver
 
  The following code sample demonstrates how to migrate a basic v1 endpoint resolver that returns a modifiable endpoint:
 
-```
+```go
 // v1
 client := svc.NewFromConfig(cfg, func (o *svc.Options) {
     o.EndpointResolver = svc.EndpointResolverFromURL("https://custom.endpoint.api/")
@@ -300,7 +300,7 @@ client := svc.NewFromConfig(cfg, func (o *svc.Options) {
 #### Immutable endpoint
 <a name="immutable-endpoint"></a>
 
-```
+```go
 // v1
 client := svc.NewFromConfig(cfg, func (o *svc.Options) {
     o.EndpointResolver = svc.EndpointResolverFromURL("https://custom.endpoint.api/", func (e *aws.Endpoint) {
@@ -336,7 +336,7 @@ client := svc.NewFromConfig(cfg, func (o *svc.Options) {
 #### Disable host prefix
 <a name="disable-host-prefix"></a>
 
-```
+```go
 import (
     "context"
     "fmt"

@@ -29,7 +29,7 @@ The following code example shows how to use `DescribeVoices`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/polly#code-examples).
 
-```
+```python
 class PollyWrapper:
     """Encapsulates Amazon Polly functions."""
 
@@ -68,7 +68,7 @@ The following code example shows how to use `GetLexicon`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/polly#code-examples).
 
-```
+```python
 class PollyWrapper:
     """Encapsulates Amazon Polly functions."""
 
@@ -107,7 +107,7 @@ The following code example shows how to use `GetSpeechSynthesisTask`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/polly#code-examples).
 
-```
+```python
 class PollyWrapper:
     """Encapsulates Amazon Polly functions."""
 
@@ -147,7 +147,7 @@ The following code example shows how to use `ListLexicons`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/polly#code-examples).
 
-```
+```python
 class PollyWrapper:
     """Encapsulates Amazon Polly functions."""
 
@@ -188,7 +188,7 @@ The following code example shows how to use `PutLexicon`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/polly#code-examples).
 
-```
+```python
 class PollyWrapper:
     """Encapsulates Amazon Polly functions."""
 
@@ -226,7 +226,7 @@ The following code example shows how to use `StartSpeechSynthesisTask`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/polly#code-examples).
 
-```
+```python
 class PollyWrapper:
     """Encapsulates Amazon Polly functions."""
 
@@ -328,7 +328,7 @@ The following code example shows how to use `SynthesizeSpeech`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/polly#code-examples).
 
-```
+```python
 class PollyWrapper:
     """Encapsulates Amazon Polly functions."""
 

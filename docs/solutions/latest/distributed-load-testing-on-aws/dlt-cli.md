@@ -45,7 +45,7 @@ This quick-start assumes the DLT stack is already deployed.
 
 The fastest way to get started is the portable bundle. This does not require cloning the repository or any build steps:
 
-```
+```bash
 # Download the portable bundle
 curl -sLo /usr/local/bin/dlt \
   https://raw.githubusercontent.com/aws-solutions/distributed-load-testing-on-aws/main/deployment/cli/dlt-cli.mjs
@@ -68,7 +68,7 @@ dlt scenarios list
 
 If you prefer to build from source, clone the [repository](https://github.com/aws-solutions/distributed-load-testing-on-aws) first. The project uses npm workspaces, so run the following commands from the repository root:
 
-```
+```bash
 # Install all workspace dependencies
 npm install
 

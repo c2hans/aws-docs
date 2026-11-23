@@ -46,7 +46,7 @@ The following image shows an example of a **Detail view**. It has a page heading
 
 **Input example**
 
-```
+```json
 {
   "AttributeBar": [
     {"Label": "Example", "Value": "Attribute"},
@@ -66,7 +66,7 @@ The following image shows an example of a **Detail view**. It has a page heading
 
 **Output example**
 
-```
+```json
 {
     "Action": "ActionSelected",
     "ViewResultData": {
@@ -112,7 +112,7 @@ The following image shows an example of a List view. It has one column with thre
 
 **Input data example**
 
-```
+```json
 {
     "AttributeBar": [
         { "Label": "Example", "Value": "Attribute" },
@@ -151,7 +151,7 @@ The following image shows an example of a List view. It has one column with thre
 
 **Output data example**
 
-```
+```json
 {
     "Action": "ActionSelected",
     "ViewResultData": {
@@ -228,7 +228,7 @@ The following image shows an example of a Form view for a car rental reservation
 
 **Input data example**
 
-```
+```json
 {
     "AttributeBar": [{
             "Label": "Queue",
@@ -368,7 +368,7 @@ The following image shows an example of a Form view for a car rental reservation
 
 **Output data example**
 
-```
+```json
 {
     "Action": "Submit",
     "ViewResultData": {
@@ -422,7 +422,7 @@ The following image shows an example of a Confirmation view.
 
 **Input data example**
 
-```
+```json
 {
   "AttributeBar": [
     { "Label": "Attribute1", "Value": "Value1" },
@@ -442,7 +442,7 @@ The following image shows an example of a Confirmation view.
 
 **Output data example**
 
-```
+```json
 {
     "Action": "Next",
     "ViewResultData": {
@@ -490,7 +490,7 @@ When a user chooses a card, it opens to show more detail. The following image sh
 
 **Input data example**
 
-```
+```json
 {
     "AttributeBar": [{
             "Label": "Queue",
@@ -612,7 +612,7 @@ When a user chooses a card, it opens to show more detail. The following image sh
 
 **Output data example**
 
-```
+```json
 {
     "Action": "ActionSelected",
     "ViewResultData": {

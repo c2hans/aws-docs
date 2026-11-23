@@ -11,7 +11,7 @@ The example policy in this section contains all the relevant AWS Identity and Ac
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [

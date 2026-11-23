@@ -29,7 +29,7 @@ Create an `index.html` file. To render the map, you need MapLibre GL JS and MapL
 
 Copy and paste the following code into your `index.html` file.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,7 +83,7 @@ Copy and paste the following code into your `index.html` file.
 
  Download the `style.css` file from [GitHub](https://github.com/aws-geospatial/amazon-location-samples-js/blob/quick_start_sample_js/quick-start/style.css).
 
-```
+```html
 <main role="main" aria-label="Map Container">
     <div id="map"></div>
 </main>
@@ -94,7 +94,7 @@ Copy and paste the following code into your `index.html` file.
 
 Add the API key you created in [Use API keys to authenticate](using-apikeys.md) to this file, along with the AWS Region where the key was created.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 .....
@@ -197,7 +197,7 @@ Congratulations\! Your first app is ready to use a map. Open `index.html` in a b
 
 Your final HTML should look like this:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -22,7 +22,7 @@ To run the `update-subscriptions-to-event-bridge` CLI command, an AWS Identity a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

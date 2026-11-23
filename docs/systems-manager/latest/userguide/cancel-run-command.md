@@ -22,7 +22,7 @@ Run the following command. Replace each {{example resource placeholder}} with yo
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm cancel-command \
     --command-id "{{command-ID}}" \
     --instance-ids "{{instance-ID}}"
@@ -31,7 +31,7 @@ aws ssm cancel-command \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm cancel-command ^
     --command-id "{{command-ID}}" ^
     --instance-ids "{{instance-ID}}"

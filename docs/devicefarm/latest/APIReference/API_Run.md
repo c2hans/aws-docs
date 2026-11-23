@@ -99,7 +99,7 @@ Required: No
 The types of insights requested for the run.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
-Valid Values: `TEST_REPORT`
+Valid Values: `TEST_REPORT | NONE`
 Required: No
 
  ** jobTimeoutMinutes **   <a name="devicefarm-Type-Run-jobTimeoutMinutes"></a>
@@ -179,8 +179,7 @@ Type: Integer
 Required: No
 
  ** skipAppResign **   <a name="devicefarm-Type-Run-skipAppResign"></a>
-When set to `true`, for private devices, Device Farm does not sign your app again. For public devices, Device Farm always signs your apps again.
-For more information about how Device Farm re-signs your apps, see [Do you modify my app?](http://aws.amazon.com/device-farm/faqs/) in the *AWS Device Farm FAQs*.
+The `skipAppResign` value in effect for the run. If you didn't set it when you scheduled the run, this is the default for the run's test host, as described for `skipAppResign` in `ExecutionConfiguration`.
 Type: Boolean
 Required: No
 
@@ -208,6 +207,13 @@ Required: No
  ** stopped **   <a name="devicefarm-Type-Run-stopped"></a>
 The run's stop time.
 Type: Timestamp
+Required: No
+
+ ** testPackageArn **   <a name="devicefarm-Type-Run-testPackageArn"></a>
+The ARN of the test package the run was scheduled with. This field is not returned for test types that do not use a test package, such as `BUILTIN_FUZZ`.
+Type: String
+Length Constraints: Minimum length of 32. Maximum length of 1011.
+Pattern: `^arn:aws:devicefarm:.+`
 Required: No
 
  ** testSpecArn **   <a name="devicefarm-Type-Run-testSpecArn"></a>

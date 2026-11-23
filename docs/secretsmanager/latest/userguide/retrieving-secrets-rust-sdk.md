@@ -12,7 +12,7 @@ The following code example shows how to get a Secrets Manager secret value.
 
 **Required permissions: **`secretsmanager:GetSecretValue`
 
-```
+```rust
 async fn show_secret(client: &Client, name: &str) -> Result<(), Error> {
     let resp = client.get_secret_value().secret_id(name).send().await?;
 

@@ -36,7 +36,7 @@ For more information, see [Create and add a custom action in CodePipeline](https
 **Tools for PowerShell V4**
 **Example 1: This example gets the status of the specified job.**
 
-```
+```powershell
 Confirm-CPJob -JobId f570dc12-5ef3-44bc-945a-6e133EXAMPLE -Nonce 3
 ```
 **Output:**
@@ -51,7 +51,7 @@ InProgress
 **Tools for PowerShell V5**
 **Example 1: This example gets the status of the specified job.**
 
-```
+```powershell
 Confirm-CPJob -JobId f570dc12-5ef3-44bc-945a-6e133EXAMPLE -Nonce 3
 ```
 **Output:**

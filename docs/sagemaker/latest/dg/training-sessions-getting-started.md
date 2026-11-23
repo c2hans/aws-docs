@@ -15,13 +15,13 @@ The following example opens a session, runs one supervised fine-tuning (SFT) ste
 
 Install the SDK. The `tokenizer` extra provides the `get_tokenizer()` method the example uses.
 
-```
+```shell
 pip install 'sagemaker-train[tokenizer]>=1.25.0'
 ```
 
 Then run the following example:
 
-```
+```python
 from sagemaker.train.training_session import ServiceClient, AdamParams, Datum, ModelInput
 
 PAIRS = [

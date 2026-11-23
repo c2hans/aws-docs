@@ -23,7 +23,7 @@ Automation is a tool in AWS Systems Manager. Systems Manager publishes metrics a
 **To view Automation metrics using the AWS CLI**
 Open a command prompt, and use the following command.
 
-```
+```sh
 aws cloudwatch list-metrics \
     --namespace "AWS/Usage"
 ```

@@ -28,13 +28,13 @@ Updates are provided through a combination of new AMI releases and corresponding
 
 Amazon Linux provides updates for all of your packages and maintains compatibility within a major version for your applications that are built on Amazon Linux. Core packages such as the glibc library, OpenSSL, OpenSSH, and the DNF5 package manager receive support for the lifetime of the major AL2027 release. Packages that are not part of the core packages are supported based on their specific upstream sources. You can see the support status and dates of individual packages by running the following command.
 
-```
+```sh
 $ sudo dnf supportinfo --pkg {{packagename}}
 ```
 
 You can get information on all currently installed packages by running the following command.
 
-```
+```sh
 $ sudo dnf supportinfo --show installed
 ```
 

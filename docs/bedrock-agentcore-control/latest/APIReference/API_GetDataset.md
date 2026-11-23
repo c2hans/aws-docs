@@ -50,6 +50,11 @@ Content-type: application/json
    "downloadUrlExpiresAt": number,
    "draftStatus": "string",
    "exampleCount": number,
+   "exampleCountByField": {
+      "actorProfile": number,
+      "input": number,
+      "turns": number
+   },
    "failureReason": "string",
    "kmsKeyArn": "string",
    "schemaType": "string",
@@ -112,6 +117,10 @@ Valid Values: `MODIFIED | UNMODIFIED`
  ** [exampleCount](#API_GetDataset_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetDataset-response-exampleCount"></a>
  The number of examples in the DRAFT.
 Type: Long
+
+ ** [exampleCountByField](#API_GetDataset_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetDataset-response-exampleCountByField"></a>
+ The number of examples that have each field, for the resolved version. Absent when the counts are unknown.
+Type: [ExampleCountByField](API_ExampleCountByField.md) object
 
  ** [failureReason](#API_GetDataset_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetDataset-response-failureReason"></a>
  Populated when status is CREATE\_FAILED, UPDATE\_FAILED, or DELETE\_FAILED. Describes the reason for the failure.

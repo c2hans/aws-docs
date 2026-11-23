@@ -42,7 +42,7 @@ For more information, see [Share an Amazon EBS snapshot with other AWS accounts]
 **Tools for PowerShell V4**
 **Example 1: This example makes the specified snapshot public by setting its CreateVolumePermission attribute.**
 
-```
+```powershell
 Edit-EC2SnapshotAttribute -SnapshotId snap-12345678 -Attribute CreateVolumePermission -OperationType Add -GroupName all
 ```
 +  For API details, see [ModifySnapshotAttribute](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -50,7 +50,7 @@ Edit-EC2SnapshotAttribute -SnapshotId snap-12345678 -Attribute CreateVolumePermi
 **Tools for PowerShell V5**
 **Example 1: This example makes the specified snapshot public by setting its CreateVolumePermission attribute.**
 
-```
+```powershell
 Edit-EC2SnapshotAttribute -SnapshotId snap-12345678 -Attribute CreateVolumePermission -OperationType Add -GroupName all
 ```
 +  For API details, see [ModifySnapshotAttribute](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

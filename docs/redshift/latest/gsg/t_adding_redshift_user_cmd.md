@@ -12,7 +12,7 @@ Use the CREATE USER command to create a new user. When you create a new user, yo
 
 For example, to create a user named **GUEST** with password **ABCd4321**, run the following command.
 
-```
+```sql
 CREATE USER GUEST PASSWORD 'ABCd4321';
 ```
 

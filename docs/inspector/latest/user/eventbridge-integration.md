@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/eventbridge-integr
 
 The following is an example of the basic schema for an EventBridge event for Amazon Inspector. Event details differ based on the type of event.
 
-```
+```JSON
 {
     "version": "0",
     "id": "Event ID",
@@ -61,7 +61,7 @@ The following is an example of the basic schema for an EventBridge event for Ama
 ------
 #### [ Amazon EC2 package vulnerability finding ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "4d621919-f1f4-4201-a0e2-37e4e330ff51",
@@ -193,7 +193,7 @@ The following is an example of the basic schema for an EventBridge event for Ama
 ------
 #### [ Amazon EC2 network reachability finding ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "9eb1603b-4263-19ec-8be2-33184694cb92",
@@ -283,7 +283,7 @@ The following is an example of the basic schema for an EventBridge event for Ama
 ------
 #### [ Amazon ECR package vulnerability finding ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "5325facf-a1aa-7d97-6bce-25fde6f6d2fc",
@@ -397,7 +397,7 @@ The following is an example of the basic schema for an EventBridge event for Ama
 ------
 #### [  Lambda package vulnerability finding ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "9eadd71a-e49c-9864-6ba9-2a5d3f83c88f",
@@ -517,7 +517,7 @@ The following is an example of the basic schema for an EventBridge event for Ama
 ------
 #### [ Lambda code vulnerability finding ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "e764f7be-f931-ff1b-204b-8cab2d91724b",
@@ -610,7 +610,7 @@ The following is an example of the basic schema for an EventBridge event for Ama
 ------
 #### [ Azure virtual machine package vulnerability finding ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "a1b2c3d4-1111-2222-3333-444455556666",
@@ -708,7 +708,7 @@ The following is an example of the basic schema for an EventBridge event for Ama
 ------
 #### [ Azure container image package vulnerability finding ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "b2c3d4e5-2222-3333-4444-555566667777",
@@ -791,7 +791,7 @@ The following is an example of the basic schema for an EventBridge event for Ama
 ------
 #### [ Azure function app package vulnerability finding ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "c3d4e5f6-3333-4444-5555-666677778888",
@@ -878,7 +878,7 @@ The following is an example of the basic schema for an EventBridge event for Ama
 ------
 #### [ GCP Compute Engine VM instance package vulnerability finding ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "d4e5f6a7-4444-5555-6666-777788889999",
@@ -975,7 +975,7 @@ The following is an example of the basic schema for an EventBridge event for Ama
 ------
 #### [ GCP Artifact Registry container image package vulnerability finding ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "e5f6a7b8-5555-6666-7777-888899990000",
@@ -1060,7 +1060,7 @@ The following is an example of the basic schema for an EventBridge event for Ama
 ------
 #### [ GCP Cloud Run functions package vulnerability finding ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "f6a7b8c9-6666-7777-8888-999900001111",
@@ -1159,7 +1159,7 @@ Select from the options to see different initial scan event schemas by resource 
 ------
 #### [ Amazon EC2 instance initial scan ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "28a46762-6ac8-6cc4-4f55-bc9ab99af928",
@@ -1188,7 +1188,7 @@ Select from the options to see different initial scan event schemas by resource 
 ------
 #### [ Amazon ECR image initial scan ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "fdaa751a-984c-a709-44f9-9a9da9cd3606",
@@ -1221,7 +1221,7 @@ Select from the options to see different initial scan event schemas by resource 
 ------
 #### [ Lambda function initial scan ]
 
-```
+```JSON
 {
   "version": "0",
   "id": "4f290a7c-361b-c442-03c8-a629f6f20d6c",
@@ -1249,7 +1249,7 @@ Select from the options to see different initial scan event schemas by resource 
 ------
 #### [ Machine image initial scan ]
 
-```
+```JSON
 {
   "version": "0",
   "id": "6b1f9d0e-2c47-4a52-9f10-7a1b8c3d5e2f",
@@ -1293,7 +1293,7 @@ Select from the options to see the different on-demand scan event schemas.
 ------
 #### [ Scan complete – successful ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "7bf7f4b1-9f6c-4d3e-8a2b-5c1d0e9f3a44",
@@ -1330,7 +1330,7 @@ Select from the options to see the different on-demand scan event schemas.
 ------
 #### [ Scan complete – failed ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "3c2e9a17-8b4d-4f61-9a0c-2d7e6f1b8c33",
@@ -1361,7 +1361,7 @@ Select from the options to see the different on-demand scan event schemas.
 ------
 #### [ Findings ]
 
-```
+```JSON
 {
     "source": "inspector2.ami.ondemand",
     "detail-type": "OnDemand AMI Scan Findings",
@@ -1448,7 +1448,7 @@ Select from the options to see different coverage event schemas by resource type
 ------
 #### [ Amazon EC2 instance coverage ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "000adda5-0fbf-913e-bc0e-10f0376412aa",
@@ -1478,7 +1478,7 @@ Select from the options to see different coverage event schemas by resource type
 ------
 #### [ Azure virtual machine coverage ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "111b1dda-0fbf-913e-bc0e-10f0376412bb",
@@ -1509,7 +1509,7 @@ Select from the options to see different coverage event schemas by resource type
 ------
 #### [ GCP Compute Engine VM instance coverage ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "222c2dda-0fbf-913e-bc0e-10f0376412cc",
@@ -1540,7 +1540,7 @@ Select from the options to see different coverage event schemas by resource type
 ------
 #### [ GCP Artifact Registry container image coverage ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "333d3dda-0fbf-913e-bc0e-10f0376412dd",
@@ -1571,7 +1571,7 @@ Select from the options to see different coverage event schemas by resource type
 ------
 #### [ GCP Artifact Registry repository coverage ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "444e4dda-0fbf-913e-bc0e-10f0376412ee",
@@ -1602,7 +1602,7 @@ Select from the options to see different coverage event schemas by resource type
 ------
 #### [ GCP Cloud Run functions coverage ]
 
-```
+```JSON
 {
     "version": "0",
     "id": "555f5dda-0fbf-913e-bc0e-10f0376412ff",
@@ -1639,7 +1639,7 @@ Select from the options to see different coverage event schemas by resource type
 +  The `detail-type` field is set to `Inspector2 AutoEnable`.
 +  The `detail` object describes why the auto enable event failed.
 
-```
+```JSON
 {
     "version": "0",
     "id": "85fc3613-e913-7fc4-a80c-a3753e4aa9ae",

@@ -10,7 +10,7 @@ When creating or replacing a rule you are, in effect, passing a role to the rule
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

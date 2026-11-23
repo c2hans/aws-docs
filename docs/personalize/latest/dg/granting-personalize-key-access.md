@@ -35,7 +35,7 @@ The following key policy example grants Amazon Personalize and your role the min
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "key-policy-123",
@@ -72,7 +72,7 @@ The following key policy example grants Amazon Personalize and your role the min
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

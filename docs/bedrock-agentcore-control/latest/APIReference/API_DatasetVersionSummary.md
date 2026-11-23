@@ -25,6 +25,11 @@ Required: Yes
 Type: Long
 Required: Yes
 
+ ** exampleCountByField **   <a name="bedrockagentcorecontrol-Type-DatasetVersionSummary-exampleCountByField"></a>
+ The number of examples that have each field, for this version. Absent when the counts are unknown.
+Type: [ExampleCountByField](API_ExampleCountByField.md) object
+Required: No
+
 ## See Also
 <a name="API_DatasetVersionSummary_SeeAlso"></a>
 

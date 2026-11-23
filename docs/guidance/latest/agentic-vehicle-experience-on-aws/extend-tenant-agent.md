@@ -13,7 +13,7 @@ The tenant configuration record in DynamoDB controls which agent variant a sessi
 
 A tenant-specific agent variant is selected by adding an `agentVariant` field to the tenant config record:
 
-```
+```json
 {
   "tenantId": "example-fleet-operator",
   "version": "1.0.0",
@@ -32,7 +32,7 @@ A tenant-specific agent variant is selected by adding an `agentVariant` field to
 
 The `agentcore_app.py` entrypoint reads `tenantId` from the request payload, loads the tenant config, and passes it to `build_supervisor`. To load a variant agent, extend `build_supervisor` to accept an optional `agent_variant` parameter that selects a different tool set or system prompt:
 
-```
+```python
 # agents/supervisor/supervisor.py  (excerpt — illustrative extension)
 
 def build_supervisor(
@@ -77,7 +77,7 @@ def build_supervisor(
 
 Each agent variant that runs in Bedrock AgentCore needs its own runtime registration. The `.bedrock_agentcore.yaml` at the repo root lists one entry per runtime; add a new entry for the variant:
 
-```
+```yaml
 # .bedrock_agentcore.yaml  (excerpt — new variant entry)
 runtimes:
   - name: vsa_supervisor_fleet_dms_staging

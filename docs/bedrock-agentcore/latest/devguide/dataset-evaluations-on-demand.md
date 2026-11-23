@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/dataset-evaluations-on-demand.html
 ---
 
-# On-demand dataset runner
+# Run with the SDK on-demand dataset runner
 
 The `OnDemandEvaluationDatasetRunner` orchestrates the entire evaluation lifecycle client-side: invoke the agent, wait for telemetry ingestion, collect spans from CloudWatch, and call the Evaluate API, all in a single `run()` call.
 
@@ -27,7 +27,7 @@ The runner processes scenarios in three phases:
 
 The runner requires an agent invoker, a callable that invokes your agent for a single turn. The invoker is framework-agnostic: you can call your agent via boto3 `invoke_agent_runtime`, a direct function call, HTTP request, or any other method.
 
-```
+```python
 import json
 import boto3
 from bedrock_agentcore.evaluation import AgentInvokerInput, AgentInvokerOutput
@@ -67,7 +67,7 @@ def agent_invoker(invoker_input: AgentInvokerInput) -> AgentInvokerOutput:
 
 The following example loads a dataset from a JSON file and runs the on-demand evaluation. For the dataset format, see [Dataset schema](dataset-evaluations-schema.md).
 
-```
+```python
 from bedrock_agentcore.evaluation import (
     OnDemandEvaluationDatasetRunner,
     EvaluationRunConfig,
@@ -118,7 +118,7 @@ print(f"Completed: {len(result.scenario_results)} scenario(s)")
 
 Process results:
 
-```
+```python
 for scenario in result.scenario_results:
     print(f"\nScenario: {scenario.scenario_id} ({scenario.status})")
     if scenario.error:
@@ -135,7 +135,7 @@ for scenario in result.scenario_results:
 
 To save results to a file:
 
-```
+```python
 with open("results.json", "w") as f:
     f.write(result.model_dump_json(indent=2))
 ```
@@ -147,7 +147,7 @@ with open("results.json", "w") as f:
 
 An `AgentSpanCollector` that retrieves telemetry spans after agent invocation. The SDK ships `CloudWatchAgentSpanCollector`:
 
-```
+```python
 from bedrock_agentcore.evaluation import CloudWatchAgentSpanCollector
 
 span_collector = CloudWatchAgentSpanCollector(
@@ -160,7 +160,7 @@ The collector queries two CloudWatch log groups (`aws/spans` for structural span
 
  **Evaluation config**
 
-```
+```python
 from bedrock_agentcore.evaluation import EvaluationRunConfig, EvaluatorConfig
 
 config = EvaluationRunConfig(
@@ -169,7 +169,7 @@ config = EvaluationRunConfig(
     ),
     evaluation_delay_seconds=180,  # Wait for CloudWatch ingestion (default: 180)
     max_concurrent_scenarios=5,    # Thread pool size (default: 5)
-    simulation_config=None,        # Set SimulationConfig for simulated scenarios
+    simulation_config=None,        # Set SimulationConfig for dynamic scenarios
 )
 ```
 
@@ -178,7 +178,7 @@ config = EvaluationRunConfig(
 |  `evaluator_config.evaluator_ids`  | — | List of evaluator IDs (built-in names or custom evaluator IDs). |
 |  `evaluation_delay_seconds`  | 180 | Seconds to wait after invocation for CloudWatch to ingest spans. Set to 0 if using a non-CloudWatch collector. |
 |  `max_concurrent_scenarios`  | 5 | Maximum number of scenarios to invoke and evaluate in parallel. |
-|  `simulation_config`  | None | Configuration for simulated scenarios. Set `SimulationConfig(model_id="…​")` when the dataset contains `SimulatedScenario` instances. See [User simulation](user-simulation.md). |
+|  `simulation_config`  | None | Configuration for dynamic scenarios. Set `SimulationConfig(model_id="…​")` when the dataset contains `SimulatedScenario` instances. See [User simulation](user-simulation.md). |
 
 ## Result structure
 <a name="ds-result-structure"></a>

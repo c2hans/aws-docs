@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automating-
 ---
 
 # Dependency mapping
-<a name="dependency-mapping"></a>
 
 The *dependency mapping* component analyzes relationships between AWS resources and builds a comprehensive graph of how AWS services interact with each other. Unlike the scanning phase (which only inventories resources) and the documentation phase (which explains configurations and best practices), dependency mapping focuses on interconnections. To infer how resources are linked, this phase relies heavily on resource-based policies (for example, Amazon S3 bucket policies, Lambda execution permissions, Amazon SNS or Amazon SQS access controls).
 

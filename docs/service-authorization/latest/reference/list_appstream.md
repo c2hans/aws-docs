@@ -47,6 +47,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   AssociateSoftwareToImageBuilder  **
+  - **IAM action:**  [appstream:AssociateSoftwareToImageBuilder](#list_appstream-action-AssociateSoftwareToImageBuilder)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   BatchAssociateUserStack  **
   - **IAM action:**  [appstream:BatchAssociateUserStack](#list_appstream-action-BatchAssociateUserStack)
   - **Condition key:**
@@ -71,6 +77,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   CreateAppBlockBuilder  **
+  - **IAM action:**  [appstream:CreateAppBlockBuilder](#list_appstream-action-CreateAppBlockBuilder)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [appstream:TagResource](#list_appstream-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   CreateApplication  **
   - **IAM action:**  [appstream:CreateApplication](#list_appstream-action-CreateApplication)
   - **Condition key:**
@@ -89,11 +99,33 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   CreateExportImageTask  **
+  - **IAM action:**  [appstream:CreateExportImageTask](#list_appstream-action-CreateExportImageTask)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** appstream.amazonaws.com / **Access level:** Write
+
+- **   CreateFleet  **
+  - **IAM action:**  [appstream:CreateFleet](#list_appstream-action-CreateFleet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [appstream:TagResource](#list_appstream-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** appstream.amazonaws.com / **Access level:** Write
+
+- **   CreateImageBuilder  **
+  - **IAM action:**  [appstream:CreateImageBuilder](#list_appstream-action-CreateImageBuilder)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [appstream:TagResource](#list_appstream-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** appstream.amazonaws.com / **Access level:** Write
+
 - **   CreateImageBuilderStreamingURL  **
   - **IAM action:**  [appstream:CreateImageBuilderStreamingURL](#list_appstream-action-CreateImageBuilderStreamingURL)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
+
+- **   CreateImportedImage  **
+  - **IAM action:**  [appstream:CreateImportedImage](#list_appstream-action-CreateImportedImage)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** appstream.amazonaws.com / **Access level:** Write
+
+- **   CreateStack  **
+  - **IAM action:**  [appstream:CreateStack](#list_appstream-action-CreateStack)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [appstream:TagResource](#list_appstream-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateStreamingURL  **
   - **IAM action:**  [appstream:CreateStreamingURL](#list_appstream-action-CreateStreamingURL)
@@ -257,6 +289,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   DescribeSoftwareAssociations  **
+  - **IAM action:**  [appstream:DescribeSoftwareAssociations](#list_appstream-action-DescribeSoftwareAssociations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   DescribeStacks  **
   - **IAM action:**  [appstream:DescribeStacks](#list_appstream-action-DescribeStacks)
   - **Condition key:**
@@ -383,6 +421,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   StartSoftwareDeploymentToImageBuilder  **
+  - **IAM action:**  [appstream:StartSoftwareDeploymentToImageBuilder](#list_appstream-action-StartSoftwareDeploymentToImageBuilder)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   StopAppBlockBuilder  **
   - **IAM action:**  [appstream:StopAppBlockBuilder](#list_appstream-action-StopAppBlockBuilder)
   - **Condition key:**
@@ -436,6 +480,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
+
+- **   UpdateFleet  **
+  - **IAM action:**  [appstream:UpdateFleet](#list_appstream-action-UpdateFleet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** appstream.amazonaws.com / **Access level:** Write
 
 - **   UpdateImageBuilder  **
   - **IAM action:**  [appstream:UpdateImageBuilder](#list_appstream-action-UpdateImageBuilder)

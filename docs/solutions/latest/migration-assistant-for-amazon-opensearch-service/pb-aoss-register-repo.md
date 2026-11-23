@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 RFS reads from a snapshot that lives in an Amazon S3 repository registered on the source domain. Register the repository directly through the source domain’s API from the Migration Console pod. The following uses the Amazon S3 plugin repository type and points at the migration bucket:
 
-```
+```bash
 console clusters curl source /_snapshot/migration-repo -XPUT \
   -H 'Content-Type: application/json' \
   -d '{
@@ -21,7 +21,7 @@ console clusters curl source /_snapshot/migration-repo -XPUT \
 
 Verify the repository is reachable before creating a snapshot:
 
-```
+```bash
 console clusters curl source /_snapshot/migration-repo/_verify -XPOST
 ```
 

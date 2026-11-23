@@ -164,7 +164,7 @@ To use `ModelRunner` to evaluate a JumpStart model, create or provide an endpoin
 
    You can list the available JumpStart models with the Amazon SageMaker Python SDK:
 
-   ```
+   ```python
    from sagemaker.core.jumpstart.notebook_utils import list_jumpstart_models
 
    # List every available JumpStart model ID.

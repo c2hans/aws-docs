@@ -33,7 +33,7 @@ Follow Step 4 of the instructions in [Setting Up the AWS Mobile SDK for .NET and
 
 Pass your initialized Amazon Cognito credentials provider to the `CognitoSyncManager` constructor:
 
-```
+```csharp
 CognitoSyncManager syncManager = new CognitoSyncManager (
     credentials,
     new AmazonCognitoSyncConfig {
@@ -58,7 +58,7 @@ To sync unauthenticated user data:
 
 Create an instance of `Dataset`. The openOrCreateDataset method is used to create a new dataset or open an existing instance of a dataset stored locally on the device:
 
-```
+```csharp
 Dataset dataset = syncManager.OpenOrCreateDataset("myDataset");
 ```
 
@@ -67,14 +67,14 @@ Dataset dataset = syncManager.OpenOrCreateDataset("myDataset");
 
 User data is added in the form of key/value pairs:
 
-```
+```csharp
 dataset.OnSyncSuccess += SyncSuccessCallback;
 dataset.Put("myKey", "myValue");
 ```
 
 Cognito datasets function as dictionaries, with values accessible by key:
 
-```
+```csharp
 string myValue = dataset.Get("myKey");
 ```
 
@@ -83,7 +83,7 @@ string myValue = dataset.Get("myKey");
 
 To synchronize a dataset, call its synchronize method:
 
-```
+```csharp
 dataset.SynchronizeAsync();
 
 void SyncSuccessCallback(object sender, SyncSuccessEventArgs e) {

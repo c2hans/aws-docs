@@ -14,7 +14,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 When you run the following example script, with the given inputs stored in your environment, you create a cluster. The cluster configuration is created as a Python data type based on the [cluster configuration documentation](cluster-configuration-file-v3.md).
 
-```
+```python
 import os
 import pprint
 import pcluster.lib as pc
@@ -41,7 +41,7 @@ pp.pprint(pc.create_cluster(cluster_name="mycluster", cluster_configuration=CONF
 
 **Output:**
 
-```
+```python
 {'cluster': {'cloudformationStackArn': 'arn:aws:cloudformation:us-east-2:123456789012:stack/mycluster/00000000-aaaa-1111-999-000000000000',
              'cloudformationStackStatus': 'CREATE_IN_PROGRESS',
              'clusterName': 'mycluster',

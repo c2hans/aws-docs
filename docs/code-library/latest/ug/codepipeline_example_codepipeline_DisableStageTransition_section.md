@@ -32,7 +32,7 @@ For more information, see [Working with stage transitions in CodePipeline](https
 **Tools for PowerShell V4**
 **Example 1: This example disables the inbound transition for the specified stage in the specified pipeline.**
 
-```
+```powershell
 Disable-CPStageTransition -PipelineName CodePipelineDemo -Reason "Disabling temporarily." -StageName Beta -TransitionType Inbound
 ```
 +  For API details, see [DisableStageTransition](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -40,7 +40,7 @@ Disable-CPStageTransition -PipelineName CodePipelineDemo -Reason "Disabling temp
 **Tools for PowerShell V5**
 **Example 1: This example disables the inbound transition for the specified stage in the specified pipeline.**
 
-```
+```powershell
 Disable-CPStageTransition -PipelineName CodePipelineDemo -Reason "Disabling temporarily." -StageName Beta -TransitionType Inbound
 ```
 +  For API details, see [DisableStageTransition](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

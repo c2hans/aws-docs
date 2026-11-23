@@ -106,7 +106,7 @@ To subsequently change the notification method (Amazon SQS queue or HTTPS endpoi
 
 The following example shows the event notification in JSON structure format for the `CreateSubscriberNotification` operation.
 
-```
+```json
 {
   "source": "aws.s3",
   "time": "2021-11-12T00:00:00Z",

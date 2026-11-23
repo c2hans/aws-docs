@@ -24,7 +24,7 @@ The following code example shows how to use `DescribeParameters`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ssm#code-examples).
 
-```
+```rust
 async fn show_parameters(client: &Client) -> Result<(), Error> {
     let resp = client.describe_parameters().send().await?;
 
@@ -45,7 +45,7 @@ The following code example shows how to use `GetParameter`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ssm#code-examples).
 
-```
+```rust
     pub async fn list_path(&self, path: &str) -> Result<Vec<Parameter>, EC2Error> {
         let maybe_params: Vec<Result<Parameter, _>> = TryFlatMap::new(
             self.inner
@@ -74,7 +74,7 @@ The following code example shows how to use `PutParameter`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ssm#code-examples).
 
-```
+```rust
 async fn make_parameter(
     client: &Client,
     name: &str,

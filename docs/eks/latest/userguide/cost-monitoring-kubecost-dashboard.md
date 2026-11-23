@@ -13,7 +13,7 @@ To contribute to this user guide, choose the **Edit this page on GitHub** link t
 
 1. Make sure the Kubecost-related Pods' states are "Running".
 
-```
+```bash
 kubectl get pods --namespace kubecost
 ```
 
@@ -23,17 +23,17 @@ kubectl get pods --namespace kubecost
 1. On your device, enable port-forwarding to expose the Kubecost dashboard.
    + If Kubecost v3 is installed using Helm:
 
-     ```
+     ```bash
      kubectl port-forward deployment/kubecost-frontend 9090 --namespace kubecost
      ```
    + If Kubecost v1 or v2 is installed using Helm:
 
-     ```
+     ```bash
      kubectl port-forward deployment/kubecost-cost-analyzer 9090 --namespace kubecost
      ```
    + If Kubecost is installed using Amazon EKS add-on:
 
-     ```
+     ```bash
      kubectl port-forward deployment/cost-analyzer 9090 --namespace kubecost
      ```
 
@@ -41,7 +41,7 @@ kubectl get pods --namespace kubecost
 
 1. On the same device that you completed the previous step on, open a web browser and enter the following address.
 
-   ```
+   ```bash
    http://localhost:9090
    ```
 

@@ -45,7 +45,7 @@ Retrieves a subset of information about the custom data identifiers for an accou
 #### POST schema
 <a name="custom-data-identifiers-list-request-body-post-example"></a>
 
-```
+```json
 {
   "maxResults": integer,
   "nextToken": "string"
@@ -58,7 +58,7 @@ Retrieves a subset of information about the custom data identifiers for an accou
 #### ListCustomDataIdentifiersResponse schema
 <a name="custom-data-identifiers-list-response-body-listcustomdataidentifiersresponse-example"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -76,7 +76,7 @@ Retrieves a subset of information about the custom data identifiers for an accou
 #### ValidationException schema
 <a name="custom-data-identifiers-list-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -85,7 +85,7 @@ Retrieves a subset of information about the custom data identifiers for an accou
 #### ServiceQuotaExceededException schema
 <a name="custom-data-identifiers-list-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -94,7 +94,7 @@ Retrieves a subset of information about the custom data identifiers for an accou
 #### AccessDeniedException schema
 <a name="custom-data-identifiers-list-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -103,7 +103,7 @@ Retrieves a subset of information about the custom data identifiers for an accou
 #### ResourceNotFoundException schema
 <a name="custom-data-identifiers-list-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -112,7 +112,7 @@ Retrieves a subset of information about the custom data identifiers for an accou
 #### ConflictException schema
 <a name="custom-data-identifiers-list-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -121,7 +121,7 @@ Retrieves a subset of information about the custom data identifiers for an accou
 #### ThrottlingException schema
 <a name="custom-data-identifiers-list-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -130,7 +130,7 @@ Retrieves a subset of information about the custom data identifiers for an accou
 #### InternalServerException schema
 <a name="custom-data-identifiers-list-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

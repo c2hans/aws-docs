@@ -32,7 +32,7 @@ To set up Amazon Q Developer Free Tier, use the following procedure:
 
 ****
 
-   ```
+   ```json
    {
    	"Version":"2012-10-17",
    	"Statement": [

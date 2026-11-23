@@ -59,6 +59,8 @@ Validate that your backup process implementation meets your Recovery Time Object
 
 ![Diagram showing an automated backup and restore process](https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/automated-backup-restore-process.png)
 
+*Figure 9. An automated backup and restore process*
+
  **Level of effort for the Implementation Plan:** Moderate to high depending on the complexity of the validation criteria.
 
 ## Resources

@@ -72,7 +72,7 @@ Before running evaluations, invoke your agent and wait 2–5 minutes for CloudWa
 
 The following constants are used throughout the examples on this page. Replace them with your own values:
 
-```
+```python
 REGION       = "<region-code>"
 AGENT_ID     = "my-agent-id"
 SESSION_ID   = "my-session-id"
@@ -89,7 +89,7 @@ TRACE_ID_2   = "<trace-id-2>"   # Turn 2: "What's the weather?"
 
 1.
 
-   ```
+   ```python
    from bedrock_agentcore.evaluation import EvaluationClient, ReferenceInputs
 
    client = EvaluationClient(region_name=REGION)
@@ -111,7 +111,7 @@ TRACE_ID_2   = "<trace-id-2>"   # Turn 2: "What's the weather?"
 
    To target a specific trace, pass `expected_response` as a dict mapping trace IDs to expected answers:
 
-   ```
+   ```python
    results = client.run(
        evaluator_ids=["Builtin.Correctness"],
        agent_id=AGENT_ID,
@@ -127,7 +127,7 @@ TRACE_ID_2   = "<trace-id-2>"   # Turn 2: "What's the weather?"
 
 1.
 
-   ```
+   ```bash
    agentcore eval ondemand evaluate \
      --agent AGENT_ID \
      --session-ids SESSION_ID \
@@ -148,7 +148,7 @@ TRACE_ID_2   = "<trace-id-2>"   # Turn 2: "What's the weather?"
 
 1.
 
-   ```
+   ```python
    from bedrock_agentcore_starter_toolkit import Evaluation, ReferenceInputs
 
    eval_client = Evaluation(region=REGION)
@@ -169,7 +169,7 @@ TRACE_ID_2   = "<trace-id-2>"   # Turn 2: "What's the weather?"
 
    To target a specific trace, pass a tuple of `(trace_id, expected_response)` :
 
-   ```
+   ```python
    results = eval_client.run(
        agent_id=AGENT_ID,
        session_id=SESSION_ID,
@@ -182,7 +182,7 @@ TRACE_ID_2   = "<trace-id-2>"   # Turn 2: "What's the weather?"
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore", region_name=REGION)
@@ -228,7 +228,7 @@ The examples below use assertions that validate tool usage, but assertions are f
 
 1.
 
-   ```
+   ```python
    from bedrock_agentcore.evaluation import EvaluationClient, ReferenceInputs
 
    client = EvaluationClient(region_name=REGION)
@@ -253,7 +253,7 @@ The examples below use assertions that validate tool usage, but assertions are f
 
 1.
 
-   ```
+   ```bash
    agentcore eval ondemand evaluate \
      --agent AGENT_ID \
      --session-ids SESSION_ID \
@@ -272,7 +272,7 @@ The examples below use assertions that validate tool usage, but assertions are f
 
 1.
 
-   ```
+   ```python
    from bedrock_agentcore_starter_toolkit import Evaluation, ReferenceInputs
 
    eval_client = Evaluation(region=REGION)
@@ -296,7 +296,7 @@ The examples below use assertions that validate tool usage, but assertions are f
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore", region_name=REGION)
@@ -339,7 +339,7 @@ The trajectory evaluators compare the agent’s actual tool call sequence agains
 
 1.
 
-   ```
+   ```python
    from bedrock_agentcore.evaluation import EvaluationClient, ReferenceInputs
 
    client = EvaluationClient(region_name=REGION)
@@ -364,7 +364,7 @@ The trajectory evaluators compare the agent’s actual tool call sequence agains
 
 1. Pass the expected tool names in `expectedTrajectory.toolNames`:
 
-   ```
+   ```bash
    agentcore eval ondemand evaluate \
      --agent AGENT_ID \
      --session-ids SESSION_ID \
@@ -379,7 +379,7 @@ The trajectory evaluators compare the agent’s actual tool call sequence agains
 
 1.
 
-   ```
+   ```python
    from bedrock_agentcore_starter_toolkit import Evaluation, ReferenceInputs
 
    eval_client = Evaluation(region=REGION)
@@ -403,7 +403,7 @@ The trajectory evaluators compare the agent’s actual tool call sequence agains
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore", region_name=REGION)
@@ -443,7 +443,7 @@ You can pass all ground truth fields together in a single evaluation call. The s
 
 1.
 
-   ```
+   ```python
    from bedrock_agentcore.evaluation import EvaluationClient, ReferenceInputs
 
    client = EvaluationClient(region_name=REGION)
@@ -477,7 +477,7 @@ You can pass all ground truth fields together in a single evaluation call. The s
 
 1.
 
-   ```
+   ```bash
    agentcore eval ondemand evaluate \
      --agent AGENT_ID \
      --session-ids SESSION_ID \
@@ -500,7 +500,7 @@ You can pass all ground truth fields together in a single evaluation call. The s
 
 1.
 
-   ```
+   ```python
    from bedrock_agentcore_starter_toolkit import Evaluation, ReferenceInputs
 
    eval_client = Evaluation(region=REGION)
@@ -531,7 +531,7 @@ You can pass all ground truth fields together in a single evaluation call. The s
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore", region_name=REGION)
@@ -581,7 +581,7 @@ When you provide ground truth fields that an evaluator doesn’t use, the respon
 
 For example, if you call `Builtin.Helpfulness` with `expectedResponse` provided, the evaluator ignores the ground truth (Helpfulness doesn’t use it) and returns:
 
-```
+```json
 {
   "evaluatorId": "Builtin.Helpfulness",
   "value": 0.83,

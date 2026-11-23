@@ -68,6 +68,12 @@ Allows filtering on the `State` of an offer.
 Type: [OfferStateFilter](API_OfferStateFilter.md) object
 Required: No
 
+ ** SubsidiaryAuthorizationId **   <a name="AWSMarketplaceService-Type-OfferFilters-SubsidiaryAuthorizationId"></a>
+A filter that matches offers by the ID of the subsidiary authorization that they were created from.
+Not all offers have a `SubsidiaryAuthorizationId`.
+Type: [OfferSubsidiaryAuthorizationIdFilter](API_OfferSubsidiaryAuthorizationIdFilter.md) object
+Required: No
+
  ** TargetAgreementId **   <a name="AWSMarketplaceService-Type-OfferFilters-TargetAgreementId"></a>
 Allows filtering on the `TargetAgreementId` of an offer.
 Type: [OfferTargetAgreementIdFilter](API_OfferTargetAgreementIdFilter.md) object

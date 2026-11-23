@@ -19,7 +19,7 @@ The Amazon Chime SDK sends this event when a new meeting starts.
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -50,7 +50,7 @@ For efficiency, the service also sends this event when you call the [DeleteMeeti
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -78,7 +78,7 @@ The Amazon Chime SDK sends this event when a new attendee is added to an active 
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -108,7 +108,7 @@ The Amazon Chime SDK sends this event when you use the [DeleteAttendee](https://
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -138,7 +138,7 @@ The Amazon Chime SDK sends this event when a user, already joined to the meeting
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -168,7 +168,7 @@ The Amazon Chime SDK sends this event when an existing attendee joins an Amazon 
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -216,7 +216,7 @@ For example, say an attendee with a poor connection joins a meeting at 11 AM. Yo
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -266,7 +266,7 @@ For example, say an attendee with a poor connection joins a meeting at 11 AM. Yo
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -297,7 +297,7 @@ The Amazon Chime SDK sends this event when an existing attendee starts streaming
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -327,7 +327,7 @@ The Amazon Chime SDK sends this event when an existing attendee stops streaming 
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -357,7 +357,7 @@ The Amazon Chime SDK sends this event when an existing attendee starts sharing t
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -387,7 +387,7 @@ The Amazon Chime SDK sends this event when an existing attendee stops sharing th
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -416,7 +416,7 @@ The Amazon Chime SDK sends this event when an existing attendee's capabilities a
 
 **Example Event data**
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -453,7 +453,7 @@ The Amazon Chime SDK sends this event when a content share joins an Amazon Chime
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -484,7 +484,7 @@ The Amazon Chime SDK sends this event when a content share leaves an Amazon Chim
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -515,7 +515,7 @@ The Amazon Chime SDK sends this event when a content share drops from an Amazon 
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -546,7 +546,7 @@ The Amazon Chime SDK sends this event when a content share starts streaming vide
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",
@@ -576,7 +576,7 @@ The Amazon Chime SDK sends this event when a content share stops streaming video
 **Example Event data**
 The following example shows the data for this event.
 
-```
+```json
 {
   "version": "0",
   "source": "aws.chime",

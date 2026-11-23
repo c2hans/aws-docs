@@ -18,7 +18,7 @@ Get detailed information about an existing cluster.
 ## Request syntax
 <a name="describe-cluster-request"></a>
 
-```
+```json
 GET /v3/clusters/{{{clusterName}}}
 {
   "region": "string"
@@ -44,7 +44,7 @@ Required: No
 **Note**
 `failureReason` has changed to `failures` starting with AWS ParallelCluster version 3.5.0.
 
-```
+```json
 {
   "clusterName": "string",
   "region": "string",
@@ -226,13 +226,13 @@ Type: string
 
 **Request**
 
-```
+```python
 $ describe_cluster({{cluster_name_3x}})
 ```
 
 **200 Response**
 
-```
+```json
 {
   "cloud_formation_stack_status": "CREATE_COMPLETE",
   "cloudformation_stack_arn": "arn:aws:cloudformation:us-east-1:123456789012:stack/cluster_name_3x/16b49540-aee5-11ec-8e18-0ac1d712b241",

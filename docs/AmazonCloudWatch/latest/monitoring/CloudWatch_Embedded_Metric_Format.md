@@ -9,7 +9,7 @@ The CloudWatch embedded metric format allows you to generate custom metrics asyn
 **Note**
 OpenTelemetry (OTLP) metrics are the recommended path for ingesting metrics into CloudWatch. For most new workloads, publish custom metrics to the CloudWatch OTLP endpoint, for example by using the CloudWatch agent. For more information, see [Publish custom metrics with OpenTelemetry](metrics-otel-send.md).
 
-Both embedded metric format and OpenTelemetry metrics let you publish custom metrics to CloudWatch, but they suit different needs. OpenTelemetry metrics are the better choice for most new workloads. Embedded metric format is best when you need a metric and its originating log event to stay together.
+Both embedded metric format and OpenTelemetry metrics let you publish custom metrics to CloudWatch, but they suit different needs. OpenTelemetry metrics are the better choice for most new workloads, including the high-cardinality attributes that previously required embedded metric format. Embedded metric format is most useful when you already have embedded metric format instrumentation, or when you run on Lambda or other ephemeral compute and want to publish metrics by writing structured logs to standard output.
 
 Use **OpenTelemetry (OTLP) metrics** when:
 + You are building new workloads and want the recommended, actively developed ingestion path.

@@ -172,7 +172,7 @@ This section will help you writing groovy scripts to import legacy data sets int
 
 It starts with some mandatory imports:
 
-```
+```java
 import com.netfective.bluage.gapwalk.bluesam.BluesamManager
 import com.netfective.bluage.gapwalk.bluesam.metadata.Key;
 import com.netfective.bluage.gapwalk.rt.provider.ServiceRegistry
@@ -233,7 +233,7 @@ The following Groovy samples illustrate various loading scenarios.
 
 Loading a large KSDS, with two alternate keys:
 
-```
+```java
 import com.netfective.bluage.gapwalk.bluesam.BluesamManager
 import com.netfective.bluage.gapwalk.bluesam.metadata.Key;
 import com.netfective.bluage.gapwalk.rt.provider.ServiceRegistry
@@ -255,7 +255,7 @@ service.runService(map);
 
 Loading a variable record length ESDS, with no alternate keys:
 
-```
+```java
 import com.netfective.bluage.gapwalk.bluesam.BluesamManager
 import com.netfective.bluage.gapwalk.bluesam.metadata.Key;
 import com.netfective.bluage.gapwalk.rt.provider.ServiceRegistry
@@ -274,7 +274,7 @@ Variable record length data sets exports will contain the mandatory Record Decri
 
 Loading a fixed record length RRDS:
 
-```
+```java
 import com.netfective.bluage.gapwalk.bluesam.BluesamManager
 import com.netfective.bluage.gapwalk.bluesam.metadata.Key;
 import com.netfective.bluage.gapwalk.rt.provider.ServiceRegistry
@@ -442,7 +442,7 @@ Localized in-memory caching for Paginated Indexes:
 
 Sample configuration snippet:
 
-```
+```yaml
 dataSource:
   bluesamDs:
     driver-class-name: org.postgresql.Driver

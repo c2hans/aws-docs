@@ -16,7 +16,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-eventbridgerule-syntax.yaml"></a>
 
-```
+```yaml
   [DeadLetterConfig](#sam-function-eventbridgerule-deadletterconfig): {{DeadLetterConfig}}
   [EventBusName](#sam-function-eventbridgerule-eventbusname): {{String}}
   [Input](#sam-function-eventbridgerule-input): {{String}}
@@ -106,7 +106,7 @@ The following is an example of an `EventBridgeRule` event source type.
 #### YAML
 <a name="sam-property-function-eventbridgerule--examples--eventbridgerule--yaml"></a>
 
-```
+```yaml
 EBRule:
   Type: EventBridgeRule
   Properties:

@@ -80,7 +80,7 @@ https://sns.us-west-2.amazonaws.com/?Action=ListEndpointsByPlatformApplication
 #### Sample Response
 <a name="API_ListEndpointsByPlatformApplication_Example_1_Response"></a>
 
-```
+```xml
 <ListEndpointsByPlatformApplicationResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ListEndpointsByPlatformApplicationResult>
         <Endpoints>

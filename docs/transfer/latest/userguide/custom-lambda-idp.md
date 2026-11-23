@@ -31,7 +31,7 @@ You must have a policy that references the Transfer Family server and Lambda ARN
 
 ****
 
-```
+```json
 "Policy":
 "{\"Version\":\"2012-10-17\",
 \"Id\":\"default\",

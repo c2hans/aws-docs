@@ -8,7 +8,7 @@ This guide documents the new AWS Wickr administration console, released on March
 
 Wickr generates this message when a user voluntarily leaves a room. The sender is the user who left.
 
-```
+```json
 {
   "control": {
     "deletedusers": ["user003"],

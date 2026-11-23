@@ -11,7 +11,7 @@ The following code examples use PySpark to read and write sample data from and t
 
 Use PySpark to read and write sample data from and to an Amazon Redshift database with data source API.
 
-```
+```bash,sh,zsh
 import boto3
 from pyspark.sql import SQLContext
 
@@ -44,7 +44,7 @@ df.write \
 
 Use PySpark to read and write sample data from and to an Amazon Redshift database with SparkSQL.
 
-```
+```bash,sh,zsh
 import boto3
 import json
 import sys

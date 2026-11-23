@@ -20,7 +20,7 @@ aws redshift-data list-databases
 
 The following is an example of the response.
 
-```
+```json
 {
     "Databases": [
         "dev"
@@ -39,7 +39,7 @@ aws redshift-data list-databases
 
 The following is an example of the response.
 
-```
+```json
 {
     "Databases": [
         "dev"

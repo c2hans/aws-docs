@@ -24,7 +24,7 @@ The following code example shows how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova, using Bedrock's Converse API.
 
-```
+```php
 // Use the Conversation API to send a text message to Amazon Nova.
 
 use Aws\BedrockRuntime\BedrockRuntimeClient;
@@ -91,7 +91,7 @@ The following code example shows how to invoke Stability.ai Stable Image Core on
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/bedrock-runtime#code-examples).
 Create an image with Stable Diffusion.
 
-```
+```php
     public function invokeStableDiffusion(string $prompt, int $seed = 0, string $aspect_ratio = '1:1')
     {
         // The different model providers have individual request and response formats.

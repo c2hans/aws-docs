@@ -24,7 +24,7 @@ Use `create_bucket` to create a bucket in the client's Region. Outside the US Ea
 
  **Imports**
 
-```
+```python
 import uuid
 
 from aws_sdk_s3 import S3Client
@@ -32,7 +32,7 @@ from aws_sdk_s3 import S3Client
 
  **Code**
 
-```
+```python
 def create_bucket(client: S3Client, region: str) -> str:
     """Create a bucket with a unique name and return the name."""
     bucket_name = f"python-example-bucket-{uuid.uuid4()}"
@@ -48,7 +48,7 @@ def create_bucket(client: S3Client, region: str) -> str:
 
 Pass the Region that the client uses. When you create the client from a resolved configuration, that Region is `config.region`.
 
-```
+```python
 config = S3Config.resolve()
 if config.region is None:
     raise ValueError("No AWS Region is configured")
@@ -65,14 +65,14 @@ Use `list_buckets` to list the general purpose buckets that your account owns in
 
  **Imports**
 
-```
+```python
 from aws_sdk_s3 import S3Client
 from aws_sdk_s3.models import Bucket
 ```
 
  **Code**
 
-```
+```python
 def list_buckets(client: S3Client) -> list[Bucket]:
     """Return every general purpose bucket that the account owns."""
     buckets: list[Bucket] = []
@@ -96,13 +96,13 @@ A bucket must be empty before you can delete it. If the bucket still contains ob
 
  **Imports**
 
-```
+```python
 from aws_sdk_s3 import S3Client
 ```
 
  **Code**
 
-```
+```python
 def delete_bucket(client: S3Client, bucket_name: str) -> None:
     """Delete an empty bucket."""
     client.delete_bucket(bucket=bucket_name)

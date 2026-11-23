@@ -30,7 +30,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/securityhub-integr
 
  **Example finding from Amazon Inspector**
 
-```
+```JSON
 {
   "SchemaVersion": "2018-10-08",
   "Id": "arn:aws:inspector2:us-east-1:123456789012:finding/{{FINDING_ID}}",

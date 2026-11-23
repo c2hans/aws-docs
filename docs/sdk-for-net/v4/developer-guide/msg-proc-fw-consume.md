@@ -17,7 +17,7 @@ The AWS Message Processing Framework for .NET allows you to consume messages tha
 
 To consume messages, implement a message handler using the `IMessageHandler` interface for each message type you wish to process. The mapping between message types and message handlers is configured in the project startup.
 
-```
+```csharp
 await Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
@@ -39,7 +39,7 @@ await Host.CreateDefaultBuilder(args)
 
 The following code shows a sample message handler for a `ChatMessage` message.
 
-```
+```csharp
 public class ChatMessageHandler : IMessageHandler<ChatMessage>
 {
     public Task<MessageProcessStatus> HandleAsync(MessageEnvelope<ChatMessage> messageEnvelope, CancellationToken token = default)
@@ -74,7 +74,7 @@ You can return `MessageProcessStatus.Success()` to indicate that the message was
 
 You can call `AddSQSPoller` with an SQS queue URL to start a long-running [`BackgroundService`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.hosting.backgroundservice) that will continuously poll the queue and process messages.
 
-```
+```csharp
 await Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
@@ -118,7 +118,7 @@ The framework will track and attempt to extend the visibility timeout for messag
 
  In the following example, the framework will check every 1 second for messages that are still being handled. For those messages within 5 seconds of becoming visible again, the framework will automatically extend the visibility timeout of each message by another 30 seconds.
 
-```
+```csharp
 // NOTE: The URL given below is an example. Use the appropriate URL for your SQS Queue.
 builder.AddSQSPoller("https://sqs.us-west-2.amazonaws.com/012345678910/MyAppProd", options =>
 {

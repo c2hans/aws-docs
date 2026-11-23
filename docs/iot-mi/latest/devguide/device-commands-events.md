@@ -23,7 +23,7 @@ For more information on the `SendManagedThingCommand` API operation, see [SendMa
 
 To update the state of a device such as the time a light turns on, use the `UpdateState` action when calling the `SendManagedThingCommand` API. Provide the data model property and new value you are updating in `parameters`. The below example illustrates a `SendManagedThingCommand` API request updating the `OnTime` of a light bulb to `5`.
 
-```
+```JSON
 {
   "Endpoints": [
     {
@@ -56,7 +56,7 @@ To get the latest state of a device including the current values of all data mod
 
 The below examples illustrate both scenarios for a `SendManagedThingCommand` API request using the `ReadState` action:
 
-```
+```JSON
 {
   "Endpoints": [
     {
@@ -81,7 +81,7 @@ The below examples illustrate both scenarios for a `SendManagedThingCommand` API
 }
 ```
 
-```
+```JSON
 {
   "Endpoints": [
     {

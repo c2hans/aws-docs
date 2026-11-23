@@ -28,6 +28,8 @@ To achieve these objectives, vehicle connectivity management should be able to p
 
 ![Reference architecture diagram for vehicle connectivity management.](https://docs.aws.amazon.com/wellarchitected/latest/connected-mobility-lens/images/vehicle-connectivity-mgmt-refarch.png)
 
+*Vehicle connectivity management reference architecture*
+
 ** Figure 3: CM-S02 Vehicle connectivity management reference architecture **
 
 1.  The connected vehicle acts as an IoT device, with a unique identity principal (X.509 certificate). AWS IoT Core is used for communication from edge-to-cloud to collect, analyze, and act upon the sensor data gathered from the vehicle.

@@ -19,4 +19,4 @@ Consider using Quick Research as a flow step when you need to:
 
 To add Quick Research as a step in your flows, you'll configure a research agent that defines your research objective, selects data sources, and optionally accepts user inputs. The research results can then be used to drive subsequent actions in your workflow.
 
-For detailed instructions, see [Research](ai-response-steps.md#research-step).
+For detailed instructions, see [Flows](working-with-flows.md).

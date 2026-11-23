@@ -21,7 +21,7 @@ The first time you generate a report, Systems Manager creates an Automation assu
 **Note**
 If you are exporting compliance data to an encrypted S3 bucket, you must update its associated AWS KMS key policy to provide the necessary permissions for `AWS-SystemsManager-PatchSummaryExportRole`. For instance, add a permission similar to this to your S3 bucket's AWS KMS policy:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -255,29 +255,29 @@ you have deleted.
   Replace the {{placeholder values}} with your account ID.
   + If the problem occurred while generating a one-time on-demand report, run the following commands:
 
-    ```
+    ```sh
     aws iam delete-policy --policy-arn arn:aws:iam::{{account-id}}:policy/AWS-SystemsManager-PatchManagerExportRolePolicy
     ```
 
-    ```
+    ```sh
     aws iam delete-role --role-name AWS-SystemsManager-PatchSummaryExportRole
     ```
 
     If the problem occurred while generating a report on a schedule, run the following commands:
 
-    ```
+    ```sh
     aws iam delete-policy --policy-arn arn:aws:iam::{{account-id}}:policy/AWS-EventBridge-Start-SSMAutomationRolePolicy
     ```
 
-    ```
+    ```sh
     aws iam delete-policy --policy-arn arn:aws:iam::{{account-id}}:policy/AWS-SystemsManager-PatchManagerExportRolePolicy
     ```
 
-    ```
+    ```sh
     aws iam delete-role --role-name AWS-EventBridge-Start-SSMAutomationRole
     ```
 
-    ```
+    ```sh
     aws iam delete-role --role-name AWS-SystemsManager-PatchSummaryExportRole
     ```
 

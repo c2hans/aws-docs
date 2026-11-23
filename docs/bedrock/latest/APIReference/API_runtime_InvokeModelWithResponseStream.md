@@ -13,7 +13,7 @@ The AWS CLI doesn't support streaming operations in Amazon Bedrock, including `I
 
 For example code, see [Invoke model with streaming code example](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-invoke.html#inference-examples-stream).
 
-This operation requires permissions to perform the `bedrock:InvokeModelWithResponseStream` action.
+This operation requires permission for the `bedrock:InvokeModelWithResponseStream` action on both the inference target and the project. If you omit `projectIdentifier` or specify `default`, this includes permission on the default project for your account.
 
 **Important**
 To deny all inference access to resources that you specify in the modelId field, you need to deny access to the `bedrock:InvokeModel` and `bedrock:InvokeModelWithResponseStream` actions. Doing this also denies access to the resource through the Converse API actions ([Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) and [ConverseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ConverseStream.html)). For more information see [Deny access for inference on specific models](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-deny-inference).
@@ -33,6 +33,7 @@ X-Amzn-Bedrock-GuardrailVersion: {{guardrailVersion}}
 X-Amzn-Bedrock-PerformanceConfig-Latency: {{performanceConfigLatency}}
 X-Amzn-Bedrock-Service-Tier: {{serviceTier}}
 X-Amzn-Bedrock-Request-Metadata: {{requestMetadata}}
+X-Amzn-Bedrock-ProjectIdentifier: {{projectIdentifier}}
 
 {{body}}
 ```
@@ -77,6 +78,12 @@ Required: Yes
  ** [performanceConfigLatency](#API_runtime_InvokeModelWithResponseStream_RequestSyntax) **   <a name="bedrock-runtime_InvokeModelWithResponseStream-request-performanceConfigLatency"></a>
 Model performance settings for the request.
 Valid Values: `standard | optimized`
+
+ ** [projectIdentifier](#API_runtime_InvokeModelWithResponseStream_RequestSyntax) **   <a name="bedrock-runtime_InvokeModelWithResponseStream-request-projectIdentifier"></a>
+The ID or Amazon Resource Name (ARN) of the project to use for this invocation. The project must be active and belong to your AWS account and the AWS Region to which you send the request. Specify `default` or omit this field to use the default project for your account.
+For a non-default project, the inference target must resolve to a foundation model or system-defined inference profile. Application inference profiles don't support non-default projects.
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `([a-zA-Z0-9_-]+|arn:aws(|-us-gov|-cn|-iso|-iso-b|-iso-f|-eusc):bedrock:[0-9a-z-]{1,20}:[0-9]{12}:project/[a-zA-Z0-9_-]+)`
 
  ** [requestMetadata](#API_runtime_InvokeModelWithResponseStream_RequestSyntax) **   <a name="bedrock-runtime_InvokeModelWithResponseStream-request-requestMetadata"></a>
 Key-value pairs that you can use to filter invocation logs.
@@ -250,7 +257,7 @@ For streaming, you can set `x-amzn-bedrock-accept-type` in the header to contain
 #### Sample Request
 <a name="API_runtime_InvokeModelWithResponseStream_Example_1_Request"></a>
 
-```
+```json
 POST https://bedrock-runtime.us-east-1.amazonaws.com/model/amazon.titan-text-express-v1/invoke-with-response-stream
 
 -H accept: application/vnd.amazon.eventstream
@@ -269,7 +276,7 @@ For streaming, the content type in the response is always set to `application/vn
 #### Sample Request
 <a name="API_runtime_InvokeModelWithResponseStream_Example_2_Request"></a>
 
-```
+```json
 -H content-type: application/vnd.amazon.eventstream
 -H x-amzn-bedrock-content-type: application/json
 
@@ -282,7 +289,7 @@ Payload (stream events)
 
 This examples show how to use a guardrail with `InvokeModelWithResponseStream`.
 
-```
+```json
 POST /model/modelId/invoke-with-response-stream HTTP/1.1
 X-Amzn-Bedrock-Accept: accept
 Content-Type: contentType
@@ -307,7 +314,7 @@ body
 
 This examples shows the response from a call to `InvokeModelWithResponseStream` when using a guardrail.
 
-```
+```json
 HTTP/1.1 200
 X-Amzn-Bedrock-Content-Type: contentType
 Content-type: application/json

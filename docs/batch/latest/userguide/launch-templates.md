@@ -19,7 +19,7 @@ AWS Batch doesn't support Windows AMIs for Amazon EC2 compute resources in compu
 
 You must create a launch template before you can associate it with a compute environment. You can create a launch template in the Amazon EC2 console. Or, you can use the AWS CLI or an AWS SDK. For example, the following JSON file represents a launch template that resizes the Docker data volume for the default AWS Batch compute resource AMI and also sets it to be encrypted.
 
-```
+```json
 {
     "LaunchTemplateName": "increase-container-volume-encrypt",
     "LaunchTemplateData": {
@@ -39,7 +39,7 @@ You must create a launch template before you can associate it with a compute env
 
 You can create the previous launch template by saving the JSON to a file that's called `lt-data.json` and running the following AWS CLI command.
 
-```
+```sh
 aws ec2 --region {{<region>}} create-launch-template --cli-input-json file://lt-data.json
 ```
 
@@ -110,7 +110,7 @@ A MIME multi-part file consists of the following components:
 **Note**
 If you add user data to a launch template in the Amazon EC2 console, you can paste it in as plaintext. Or, you can upload it from a file. If you use the AWS CLI or an AWS SDK, you must first `base64` encode the user data and submit that string as the value of the `UserData` parameter when you call [CreateLaunchTemplate](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLaunchTemplate.html), as shown in this JSON file.
 
-```
+```json
 {
     "LaunchTemplateName": "base64-user-data",
     "LaunchTemplateData": {

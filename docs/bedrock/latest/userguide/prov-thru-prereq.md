@@ -17,7 +17,7 @@ Before you can purchase and manage Provisioned Throughput, you need to fulfill t
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

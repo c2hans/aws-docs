@@ -16,7 +16,7 @@ The following example creates a multi-container model for direct invocation.
 
 1. Create container elements and `InferenceExecutionConfig` with direct invocation.
 
-   ```
+   ```python
    container1 = {
                     'Image': '123456789012.dkr.ecr.us-east-1.amazonaws.com/myimage1:mytag',
                     'ContainerHostname': 'firstContainer'
@@ -31,7 +31,7 @@ The following example creates a multi-container model for direct invocation.
 
 1. Create the model with the container elements and set the `InferenceExecutionConfig` field.
 
-   ```
+   ```python
    import boto3
    sm_client = boto3.Session().client('sagemaker')
 

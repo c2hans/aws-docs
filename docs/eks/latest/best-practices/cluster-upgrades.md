@@ -168,7 +168,7 @@ Please consider associating additional CIDR blocks if the IP addresses in the ex
 
 To verify that the IAM role is available and has the correct assume role policy in your account you can run the following commands:
 
-```
+```json
 CLUSTER=<cluster name>
 ROLE_ARN=$(aws eks describe-cluster --name ${CLUSTER} \
   --query 'cluster.roleArn' --output text)

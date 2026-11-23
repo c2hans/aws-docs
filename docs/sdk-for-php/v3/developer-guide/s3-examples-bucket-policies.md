@@ -23,7 +23,7 @@ Before running the example code, configure your AWS credentials, as described in
 
  **Imports**
 
-```
+```php
 require "vendor/autoload.php";
 
 use Aws\Exception\AwsException;
@@ -32,7 +32,7 @@ use Aws\S3\S3Client;
 
  **Sample Code**
 
-```
+```php
 $s3Client = new S3Client([
     'profile' => 'default',
     'region' => 'us-west-2',

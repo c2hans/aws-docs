@@ -13,7 +13,7 @@ The following code example shows how to create and trigger a rule in Amazon Even
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/eventbridge#code-examples).
 Call the functions in the correct order.
 
-```
+```ruby
 require 'aws-sdk-sns'
 require 'aws-sdk-iam'
 require 'aws-sdk-cloudwatchevents'
@@ -24,7 +24,7 @@ require 'securerandom'
 ```
 Checks whether the specified Amazon Simple Notification Service (Amazon SNS) topic exists among those provided to this function.
 
-```
+```ruby
 # Checks whether the specified Amazon SNS
 # topic exists among those provided to this function.
 # This is a helper function that is called by the topic_exists? function.
@@ -50,7 +50,7 @@ end
 ```
 Checks whether the specified topic exists among those available to the caller in Amazon SNS.
 
-```
+```ruby
 # Checks whether the specified topic exists among those available to the
 # caller in Amazon SNS.
 #
@@ -89,7 +89,7 @@ end
 ```
 Create a topic in Amazon SNS and then subscribe an email address to receive notifications to that topic.
 
-```
+```ruby
 # Creates a topic in Amazon SNS
 # and then subscribes an email address to receive notifications to that topic.
 #
@@ -125,7 +125,7 @@ end
 ```
 Check whether the specified AWS Identity and Access Management (IAM) role exists among those provided to this function.
 
-```
+```ruby
 # Checks whether the specified AWS Identity and Access Management (IAM)
 # role exists among those provided to this function.
 # This is a helper function that is called by the role_exists? function.
@@ -151,7 +151,7 @@ end
 ```
 Check whether the specified role exists among those available to the caller in IAM.
 
-```
+```ruby
 # Checks whether the specified role exists among those available to the
 # caller in AWS Identity and Access Management (IAM).
 #
@@ -190,7 +190,7 @@ end
 ```
 Create a role in IAM.
 
-```
+```ruby
 # Creates a role in AWS Identity and Access Management (IAM).
 # This role is used by a rule in Amazon EventBridge to allow
 # that rule to operate within the caller's account.
@@ -257,7 +257,7 @@ end
 ```
 Checks whether the specified EventBridge rule exists among those provided to this function.
 
-```
+```ruby
 # Checks whether the specified Amazon EventBridge rule exists among
 # those provided to this function.
 # This is a helper function that is called by the rule_exists? function.
@@ -280,7 +280,7 @@ end
 ```
 Checks whether the specified rule exists among those available to the caller in EventBridge.
 
-```
+```ruby
 # Checks whether the specified rule exists among those available to the
 # caller in Amazon EventBridge.
 #
@@ -320,7 +320,7 @@ end
 ```
 Create a rule in EventBridge.
 
-```
+```ruby
 # Creates a rule in Amazon EventBridge.
 # This rule is triggered whenever an available instance in
 # Amazon EC2 changes to the specified state.
@@ -412,7 +412,7 @@ end
 ```
 Check to see whether the specified log group exists among those available to the caller in Amazon CloudWatch Logs.
 
-```
+```ruby
 # Checks to see whether the specified log group exists among those available
 # to the caller in Amazon CloudWatch Logs.
 #
@@ -447,7 +447,7 @@ end
 ```
 Create a log group in CloudWatch Logs.
 
-```
+```ruby
 # Creates a log group in Amazon CloudWatch Logs.
 #
 # @param cloudwatchlogs_client [Aws::CloudWatchLogs::Client] An initialized
@@ -471,7 +471,7 @@ end
 ```
 Write an event to a log stream in CloudWatch Logs.
 
-```
+```ruby
 # Writes an event to a log stream in Amazon CloudWatch Logs.
 #
 # Prerequisites:
@@ -529,7 +529,7 @@ end
 ```
 Restart an Amazon Elastic Compute Cloud (Amazon EC2) instance and adds information about the related activity to a log stream in CloudWatch Logs.
 
-```
+```ruby
 # Restarts an Amazon EC2 instance
 # and adds information about the related activity to a log stream
 # in Amazon CloudWatch Logs.
@@ -609,7 +609,7 @@ end
 ```
 Display information about activity for a rule in EventBridge.
 
-```
+```ruby
 # Displays information about activity for a rule in Amazon EventBridge.
 #
 # Prerequisites:
@@ -671,7 +671,7 @@ end
 ```
 Display log information for all of the log streams in a CloudWatch Logs log group.
 
-```
+```ruby
 # Displays log information for all of the log streams in a log group in
 # Amazon CloudWatch Logs.
 #
@@ -721,7 +721,7 @@ end
 ```
 Display a reminder to the caller to manually clean up any associated AWS resources that they no longer need.
 
-```
+```ruby
 # Displays a reminder to the caller to manually clean up any associated
 # AWS resources that they no longer need.
 #

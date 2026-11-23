@@ -132,7 +132,7 @@ You can include a `bypass_steps` parameter in the Step Functions input to skip s
 
 The following example shows a Step Functions input that re-invokes customizations for a specific account while bypassing provisioning and bootstrap steps.
 
-```
+```json
 {
   "include": [
     {
@@ -151,7 +151,7 @@ To preview the changes that AFT would make to an account without applying them, 
 
 The following example shows a Step Functions input that performs a plan-only run for a specific account by setting `plan_only` to `true` and specifying the account ID in the `include` block.
 
-```
+```json
 {
   "include": [
     {

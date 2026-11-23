@@ -66,7 +66,7 @@ Make sure you have defined the variable you want to export. For more information
 
 1. In the action that you want to export the variable from, add code similar to the following:
 
-   ```
+   ```yaml
    {{action-name}}:
      Outputs:
        Variables:

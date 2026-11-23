@@ -73,7 +73,7 @@ The app does not function until admin authorization is granted. **Not Submitted*
 
 Store the credentials in an AWS Secrets Manager secret with the following key-value pairs:
 
-```
+```json
 {
     "clientId": "{{your-client-id}}",
     "clientSecret": "{{your-client-secret}}",

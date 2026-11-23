@@ -65,7 +65,7 @@ The following code is the list picker template that you can use in your Lambda. 
 + **Bold text** indicates a mandatory parameter.
 + In some cases, if the parent element isn't mandatory, but the fields in the parent element are, then the fields are mandatory. For example, see the `data.replyMessage` structure in the following template. If the structure exists, `title` is mandatory. Otherwise a complete `replyMessage` is optional.
 
-```
+```json
 {
    "templateType":"ListPicker",
    "version":"1.0",
@@ -177,7 +177,7 @@ To send unlimited options, implement action buttons in your application. For mor
 **Note**
 If you are using the `targetForLinks` field and Connect Customer communications widget, to open links in the same browser tab, you must add the following attribute to the widget code snippet to allow the current iframe to open and navigate links within the same tab:
 
-```
+```userinput
 amazon_connect('updateSandboxAttributes', 'allow-scripts allow-same-origin allow-popups allow-downloads allow-top-navigation-by-user-activation')
 ```
 
@@ -203,7 +203,7 @@ The following code is the time picker template that you can use in your Lambda. 
 + **Bold text** indicates a mandatory parameter.
 + In some cases, if the parent element isn't mandatory, but the fields the parent element are, then the fields are mandatory. For example, see the `data.replyMessage` structure in the following template. If the structure exists, `title` is mandatory. Otherwise a complete `replyMessage` is optional.
 
-```
+```json
 {
    "templateType":"TimePicker",
    "version":"1.0",
@@ -325,7 +325,7 @@ The following code is the panel template that you can use in your Lambda. Note t
 + **Bold text** indicates a mandatory parameter.
 + In some cases, if the parent element isn't mandatory, but the fields in the parent element are, then the fields are mandatory. For example, see the `data.replyMessage` structure in the following template. If the structure exists, a `title` is mandatory. Otherwise, a complete `replyMessage` is optional.
 
-```
+```json
 {
    "templateType":"Panel",
    "version":"1.0",
@@ -430,7 +430,7 @@ The following image shows an example of how the quick reply template renders inf
 
 The following code is the quick reply template that you can use in your Lambda.
 
-```
+```json
 {
     "templateType": "QuickReply",
     "version": "1.0",
@@ -518,7 +518,7 @@ The following image shows two **Learn More** hyperlinks, which are examples of c
 
 The following code is the carousel template that you can use in your Lambda.
 
-```
+```json
 {
   "templateType": "Carousel",
   "version": "1.0",
@@ -579,7 +579,7 @@ The following code is the carousel template that you can use in your Lambda.
 For hosted communications widget users:
 + The selections on the carousel template result in a JSON string response structured like the following example, to be sent back to Lambda (other interactive message types return regular string response with only `selectionText` value):
 
-  ```
+  ```json
   {
       templateIdentifier: "template0",
       listTitle: "California",
@@ -588,7 +588,7 @@ For hosted communications widget users:
   ```
 + In carousels, you can provide hyperlinks in the list picker/panel elements. To create a hyperlink instead of a button, include the following additional fields for the element that should be a hyperlink:
 
-  ```
+  ```json
   {
       title: "Book flights",
       ...
@@ -663,7 +663,7 @@ The following code is an example of an Apple forms template you can use in your 
 
  Simple survey form example:
 
-```
+```json
 {
   "templateType": "AppleForm",
   "version": "1.0",
@@ -891,7 +891,7 @@ This template is applicable only for Apple Messages for Business contact flows.
  **Bold text** is a mandatory parameter.
  In some cases, if the parent element exists in the request and it isn't mandatory/bold, but the fields in it are, then the fields are mandatory.
 
-```
+```json
 {
   "templateType":"ApplePay",
   "version":"1.0",
@@ -1074,7 +1074,7 @@ This template is applicable only for Apple Messages for Business contact flows.
 
  The following code is an example iMessage App template that you can use in your Lambda function.
 
-```
+```json
 {
    templateType: AppleCustomInteractiveMessage,
    version: "1.0",
@@ -1131,7 +1131,7 @@ You use the WhatsApp list template in WhatsApp chats to provide customers with a
 
 The following example shows a list of options for a banking service.
 
-```
+```json
 {
   "templateType": "WhatsAppInteractiveList",
   "version": "1.0",
@@ -1213,7 +1213,7 @@ You only use this template for WhatsApp messaging flows.
 
 You can use the WhatsApp reply button template to present an in-line list of options for customers.
 
-```
+```json
 {
   "templateType": "WhatsAppInteractiveReplyButton",
   "version": "1.0",
@@ -1299,7 +1299,7 @@ The following image of a chat box shows an example list picker with rich formatt
 You can write title and subtitle strings in a multi-line format, or in a single line with ``\r\n`` line break characters.
 + **Multi-line format**: The following code sample shows how to author lists in markdown in a multi-line format.
 
-  ```
+  ```json
   const MultiLinePickerSubtitle = `This is some *emphasized text* and some **strongly emphasized text**
 
   This is a bulleted list (multiline):
@@ -1333,7 +1333,7 @@ You can write title and subtitle strings in a multi-line format, or in a single 
   ```
 + **Single line format**: The following example shows how to author a subtitle in a single line by using ``\r\n`` line break characters.
 
-  ```
+  ```json
   const SingleLinePickerSubtitle = "This is some *emphasized text* and some **strongly emphasized text**\r\nThis is a bulleted list:\n* item 1\n* item 2\n* item 3\n\nThis is a numbered list:\n1. item 1\n2. item 2\n3. item 3\n\nQuestions? Visit https://plainlink.com/faq\r\n[This is a link](https://aws.amazon.com)\r\nThis is `<code/>`";
 
   const PickerTemplate = {

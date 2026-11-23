@@ -47,7 +47,7 @@ Platform teams create and maintain ResourceGraphDefinitions (RGDs) that define c
 
  **Example ClusterRole for platform team**:
 
-```
+```yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

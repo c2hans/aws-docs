@@ -146,7 +146,7 @@ Type: Boolean
 The ARN of the IAM execution role. Not present for basic profiles.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
-Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(service-role/)?[a-zA-Z0-9+=,.@\-_]+`
+Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(?!aws-service-role/)(?:[a-zA-Z0-9+=,.@\-_]+/)*[a-zA-Z0-9+=,.@\-_]{1,64}`
 
  ** [fieldErrors](#API_GetAgentProfile_ResponseSyntax) **   <a name="wellarchitected-GetAgentProfile-response-fieldErrors"></a>
 A map of field paths to error messages for invalid or missing input fields.

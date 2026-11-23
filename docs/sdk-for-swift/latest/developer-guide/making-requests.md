@@ -29,7 +29,7 @@ Before you can send requests to an AWS service, you must first instantiate a cli
 
 After creating the client object, use it to make your requests. When you're done, release the object. If the service connection is open, it is closed for you automatically.
 
-```
+```swift
 do {
     let s3 = try await S3Client()
 
@@ -48,7 +48,7 @@ Unless you are in a testing environment in which you expect a knowledgeable user
 
 When calling service client methods, you pass the input object corresponding to that operation. For example, before calling the `[getObject()](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/getobject(input:))` method on the Amazon S3 service class `[S3Client](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client)`, you need to create the input parameter object using the initializer `[GetObjectInput()](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/getobjectinput)`.
 
-```
+```swift
 do {
     let s3 = try S3Client()
     let inputObject = GetObjectInput(bucket: "amzn-s3-demo-bucket", key: "keyName")
@@ -74,7 +74,7 @@ To call one of the SDK's asynchronous functions from synchronous code, call the 
 
 The following function fetches and returns the content of a file named `text/motd.txt` from a bucket named amzn-s3-demo-bucket, using Amazon S3.
 
-```
+```swift
 func getMOTD() async throws -> String? {
     let s3 = try S3Client()
     let motdInput = GetObjectInput(bucket: "amzn-s3-demo-bucket",
@@ -90,7 +90,7 @@ func getMOTD() async throws -> String? {
 
 The `getMOTD()` function can only be called from another `async` function, and returns a string that contains the text in the `MOTD` file or `nil` if the file is empty. It throws an exception on errors. Thus, you call the `getMOTD()` function.
 
-```
+```swift
 do {
     let motd = try await getMOTD()
     // ...
@@ -109,7 +109,7 @@ To call AWS SDK for Swift functions from synchronous code, enclose the code that
 **Note**
 It's important to properly manage asynchronous requests. Be sure that any operation that's dependent on a previous result waits until that result is available before it begins. When used properly, the `async`/`await` model handles most of this for you.
 
-```
+```swift
 func updateMOTD() {
     Task() {
         var motd: String = ""

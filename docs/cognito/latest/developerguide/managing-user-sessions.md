@@ -27,8 +27,6 @@ Each time a user authenticates, Amazon Cognito creates a new token session. Refr
 
 When session tracking is enabled, Amazon Cognito adds a `sid` claim to the ID and access tokens it issues. The `sid` claim is the session identifier, and it stays the same across every refresh and rotation within the same session. `sid` follows the standard OpenID Connect session ID claim name.
 
-If your user pool uses a pre token generation trigger that adds its own `sid` claim, Amazon Cognito doesn't change that claim, and session tracking doesn't operate for that user pool — it behaves as if session tracking is disabled, even when you enable it. To use session management, remove the `sid` claim from your trigger. For the claims a trigger can and can't modify, see [Claims and scopes reference](user-pool-lambda-pre-token-generation.md#user-pool-lambda-pre-token-generation-excluded-claims).
-
 ### Session count limits
 <a name="managing-user-sessions-count-limits"></a>
 
@@ -57,7 +55,7 @@ Use the following operations to manage pool-level session settings.
 
 The following example request enables session tracking and sets the maximum number of token sessions for each user to 20:
 
-```
+```json
 {
     "UserPoolId": "us-east-1_aBcDeFgHi",
     "UserSessionTracking": "ENABLED",
@@ -82,7 +80,7 @@ The validity that Amazon Cognito applies is the validity of the app client the u
 
 The following example request sets the SSO session validity for an app client to 43,200 minutes (30 days):
 
-```
+```json
 {
     "UserPoolId": "us-east-1_aBcDeFgHi",
     "ClientId": "1example23456789",

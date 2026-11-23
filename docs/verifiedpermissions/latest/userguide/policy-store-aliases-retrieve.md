@@ -17,7 +17,7 @@ Use the `GetPolicyStoreAlias` operation to retrieve details about a specific pol
 **To retrieve details about a policy store alias**
 You can retrieve a policy store alias by using the [GetPolicyStoreAlias](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_GetPolicyStoreAlias.html) operation. The following example retrieves details for a policy store alias with the name `example-policy-store`.
 
-```
+```bash
 $ aws verifiedpermissions get-policy-store-alias \
     --alias-name policy-store-alias/example-policy-store
 {
@@ -42,7 +42,7 @@ Use the `ListPolicyStoreAliases` operation to list all policy store aliases in y
 **To list all policy store aliases**
 You can list policy store aliases by using the [ListPolicyStoreAliases](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_ListPolicyStoreAliases.html) operation. The following example lists all policy store aliases owned by the 123456789012 AWS account in the us-west-2 Region.
 
-```
+```bash
 $ aws verifiedpermissions list-policy-store-aliases
 {
     "policyStoreAliases": [
@@ -74,7 +74,7 @@ $ aws verifiedpermissions list-policy-store-aliases
 **To list policy store aliases for a specific policy store**
 Use the `filter` parameter to list only aliases associated with a specific policy store.
 
-```
+```bash
 $ aws verifiedpermissions list-policy-store-aliases \
     --filter '{"policyStoreId": "PSEXAMPLEabcdefg111111"}'
 {

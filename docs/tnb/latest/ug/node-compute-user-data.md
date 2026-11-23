@@ -17,7 +17,7 @@ Because AWS TNB uses CloudFormation to process and render the `multimime` user-d
 ## Syntax
 <a name="node-compute-user-data-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Compute.UserData:
   properties:
     implementation: String
@@ -41,7 +41,7 @@ Possible values: `x-shellscript`
 ## Example
 <a name="node-compute-user-data-example"></a>
 
-```
+```yaml
 ExampleUserData:
   type: tosca.nodes.AWS.Compute.UserData
   properties:

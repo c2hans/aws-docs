@@ -41,7 +41,7 @@ In addition to the per-monitor admin toggle, you can enforce organization-wide c
 
 The following example SCP denies all Amazon Bedrock model invocations, which disables the assistant across all accounts in the organization or organizational unit (OU) where the policy is attached:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

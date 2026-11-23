@@ -22,7 +22,7 @@ Amazon Nova models support two request formats:
 
 Use this format for conversational interactions:
 
-```
+```json
 {
   "messages": [
     {"role": "user", "content": "string"}
@@ -47,7 +47,7 @@ Use this format for conversational interactions:
 
 Use this format for simple text generation:
 
-```
+```json
 {
   "prompt": "string",
   "max_tokens": integer,
@@ -68,7 +68,7 @@ Use this format for simple text generation:
 
 Use this format for image and text inputs:
 
-```
+```json
 {
   "messages": [
     {
@@ -110,7 +110,7 @@ The response format depends on the invocation method and request type:
 
 For synchronous chat completion requests:
 
-```
+```json
 {
   "id": "chatcmpl-123e4567-e89b-12d3-a456-426614174000",
   "object": "chat.completion",
@@ -168,7 +168,7 @@ For synchronous chat completion requests:
 
 For synchronous text completion requests:
 
-```
+```json
 {
   "id": "cmpl-123e4567-e89b-12d3-a456-426614174000",
   "object": "text_completion",
@@ -214,7 +214,7 @@ For synchronous text completion requests:
 
 For streaming chat completion requests, responses are sent as Server-Sent Events (SSE):
 
-```
+```json
 data: {
   "id": "chatcmpl-123e4567-e89b-12d3-a456-426614174000",
   "object": "chat.completion.chunk",
@@ -303,7 +303,7 @@ data: [DONE]
 
 For streaming text completion requests:
 
-```
+```json
 data: {
   "id": "cmpl-123e4567-e89b-12d3-a456-426614174000",
   "object": "text_completion",

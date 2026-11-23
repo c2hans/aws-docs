@@ -4,6 +4,8 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agent-accept-d
 
 # Contact center agent ability to accept or decline overtime in Connect Customer
 
+This workflow applies only to overtime slots created **By Staffing group**. Overtime created **By Staff** is applied directly to the agent's published schedule. It doesn't appear as a pending request, and agents can't accept or decline it. For more information, see [Create overtime slots for contact center agents in Connect Customer](create-ot-slots.md).
+
 The following image shows pending Overtime requests in the agent calendars. Managers and agents can see overtime requests.
 
 ![The published schedule calendar tab, pending overtime requests.](https://docs.aws.amazon.com/connect/latest/adminguide/images/accept-decline-view-wfm.png)

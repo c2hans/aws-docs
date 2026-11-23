@@ -56,7 +56,7 @@ An event represents a single request from any source and includes information ab
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateConfigurationSet` and `CreateEventDestination` actions.
 
-```
+```json
 {
   "Records": [
     {
@@ -129,7 +129,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 
 The following example shows a CloudTrail log entry that demonstrates the `SendTextMessage` action.
 
-```
+```JSON
 {
         "eventVersion": "1.10",
         "userIdentity": {
@@ -186,7 +186,7 @@ The following example shows a CloudTrail log entry that demonstrates the `SendTe
 
 The following example shows a CloudTrail log entry that demonstrates the `SendVoiceMessage` action.
 
-```
+```json
 {
         "eventVersion": "1.10",
         "userIdentity": {
@@ -243,7 +243,7 @@ The following example shows a CloudTrail log entry that demonstrates the `SendVo
 
 The following example shows a CloudTrail log entry that demonstrates the `SendMediaMessage` action.
 
-```
+```json
 {
         "eventVersion": "1.10",
         "userIdentity": {

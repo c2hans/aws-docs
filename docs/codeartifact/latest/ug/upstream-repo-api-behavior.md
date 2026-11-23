@@ -23,7 +23,7 @@ To demonstrate this behavior, we have two repositories: `target-repo` and `upstr
 
 When calling the `DescribePackageVersion` API on `upstream-repo`, which contains the `lodash` package, we get the following output:
 
-```
+```json
 {
     "packageVersion": {
         "format": "npm",

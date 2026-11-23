@@ -83,7 +83,7 @@ Updates the sensitivity scoring settings for an S3 bucket.
 #### PATCH schema
 <a name="resource-profiles-detections-request-body-patch-example"></a>
 
-```
+```json
 {
   "suppressDataIdentifiers": [
     {
@@ -100,7 +100,7 @@ Updates the sensitivity scoring settings for an S3 bucket.
 #### ListResourceProfileDetectionsResponse schema
 <a name="resource-profiles-detections-response-body-listresourceprofiledetectionsresponse-example"></a>
 
-```
+```json
 {
   "detections": [
     {
@@ -119,7 +119,7 @@ Updates the sensitivity scoring settings for an S3 bucket.
 #### Empty Schema schema
 <a name="resource-profiles-detections-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -127,7 +127,7 @@ Updates the sensitivity scoring settings for an S3 bucket.
 #### ValidationException schema
 <a name="resource-profiles-detections-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -136,7 +136,7 @@ Updates the sensitivity scoring settings for an S3 bucket.
 #### ServiceQuotaExceededException schema
 <a name="resource-profiles-detections-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -145,7 +145,7 @@ Updates the sensitivity scoring settings for an S3 bucket.
 #### AccessDeniedException schema
 <a name="resource-profiles-detections-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -154,7 +154,7 @@ Updates the sensitivity scoring settings for an S3 bucket.
 #### ResourceNotFoundException schema
 <a name="resource-profiles-detections-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -163,7 +163,7 @@ Updates the sensitivity scoring settings for an S3 bucket.
 #### ThrottlingException schema
 <a name="resource-profiles-detections-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -172,7 +172,7 @@ Updates the sensitivity scoring settings for an S3 bucket.
 #### InternalServerException schema
 <a name="resource-profiles-detections-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

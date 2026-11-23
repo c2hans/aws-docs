@@ -40,7 +40,7 @@ Follow these steps to enable a Security Hub CSPM control in a *specific* standar
 
    **Example request:**
 
-   ```
+   ```role
    {
        "StandardsArn": "arn:aws:securityhub:::{{standards/aws-foundational-security-best-practices/v/1.0.0}}"
    }
@@ -50,7 +50,7 @@ Follow these steps to enable a Security Hub CSPM control in a *specific* standar
 
    **Example request:**
 
-   ```
+   ```role
    {
        "SecurityControlId": "{{IAM.1}}"
    }
@@ -62,7 +62,7 @@ Follow these steps to enable a Security Hub CSPM control in a *specific* standar
 
    **Example request:**
 
-   ```
+   ```role
    {
        "StandardsControlAssociationUpdates": [{"SecurityControlId": "{{IAM.1}}", "StandardsArn": "arn:aws:securityhub:::{{ruleset/cis-aws-foundations-benchmark/v/1.2.0}}", "AssociationStatus": "ENABLED"}]
    }

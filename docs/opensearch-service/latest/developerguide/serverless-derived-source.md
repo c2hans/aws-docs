@@ -11,7 +11,7 @@ By default, OpenSearch Serverless stores each ingested document in the `_source`
 
 To configure derived source for your index, create the index using the `index.derived_source.enabled` setting:
 
-```
+```json
 PUT my-index1
 {
   "settings": {

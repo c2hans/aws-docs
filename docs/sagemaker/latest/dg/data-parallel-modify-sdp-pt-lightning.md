@@ -14,14 +14,14 @@ The PyTorch Lightning support is available in the SageMaker AI data parallel lib
 
 1. Import the `pytorch_lightning` library and the `smdistributed.dataparallel.torch` modules.
 
-   ```
+   ```py
    import lightning as pl
    import smdistributed.dataparallel.torch.torch_smddp
    ```
 
 1. Instantiate the [LightningEnvironment](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.plugins.environments.LightningEnvironment.html).
 
-   ```
+   ```py
    from lightning.fabric.plugins.environments.lightning import LightningEnvironment
 
    env = LightningEnvironment()
@@ -31,7 +31,7 @@ The PyTorch Lightning support is available in the SageMaker AI data parallel lib
 
 1. **For PyTorch DDP** – Create an object of the [DDPStrategy](https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.strategies.DDPStrategy.html) class with `"smddp"` for `process_group_backend` and `"gpu"` for `accelerator`, and pass that to the [Trainer](https://pytorch-lightning.readthedocs.io/en/stable/common/trainer.html) class.
 
-   ```
+   ```py
    import lightning as pl
    from lightning.pytorch.strategies import DDPStrategy
 
@@ -51,7 +51,7 @@ The PyTorch Lightning support is available in the SageMaker AI data parallel lib
 
    **For PyTorch FSDP** – Create an object of the [FSDPStrategy](https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.strategies.FSDPStrategy.html) class (with [wrapping policy](https://pytorch.org/docs/stable/fsdp.html) of choice) with `"smddp"` for `process_group_backend` and `"gpu"` for `accelerator`, and pass that to the [Trainer](https://pytorch-lightning.readthedocs.io/en/stable/common/trainer.html) class.
 
-   ```
+   ```py
    import lightning as pl
    from lightning.pytorch.strategies import FSDPStrategy
 
@@ -82,7 +82,7 @@ After you have completed adapting your training script, proceed to [Launching di
 **Note**
 When you construct a SageMaker AI PyTorch ModelTrainer and submit a training job request in [Launching distributed training jobs with SMDDP using the SageMaker Python SDK](data-parallel-use-api.md), you need to provide `requirements.txt` to install `pytorch-lightning` and `lightning-bolts` in the SageMaker AI PyTorch training container.
 
-```
+```py
 # requirements.txt
 pytorch-lightning
 lightning-bolts

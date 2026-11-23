@@ -57,6 +57,8 @@ Each message in your DLQ will include the following custom attributes:
 
  The following video goes over setting up DLQs:
 
+[![AWS Videos](https://img.youtube.com/vi/I6cXfiMkh-U/0.jpg)](https://www.youtube.com/watch?v=I6cXfiMkh-U)
+
 **Topics**
 + [Considerations for using a dead-letter queue](#eb-dlq-considerations)
 + [Granting permissions to the dead-letter queue](#eb-dlq-perms)
@@ -91,7 +93,7 @@ To successfully deliver events to the queue, EventBridge must have permission to
 
 The following resource-based policy demonstrates how to grant the required permissions for EventBridge to send event messages to an Amazon SQS queue. The policy example grants the EventBridge service permissions to use the `SendMessage` operation to send messages to a queue named "MyEventDLQ". The queue must be in the us-west-2 Region in AWS account 123456789012. The `Condition` statement allows only requests that come from a rule named "MyTestRule" that is created in the us-west-2 Region in the AWS account 123456789012.
 
-```
+```json
 {
   "Sid": "Dead-letter queue permissions",
   "Effect": "Allow",
@@ -112,7 +114,7 @@ The following resource-based policy demonstrates how to grant the required permi
 
 The following resource-based policy demonstrates how to grant the required permissions when specifying a DLQ for an event bus. In this case, `aws:SourceArn` specifies the ARN of the event bus sending the events to the DLQ. Here again in this example, the queue must be in the same Region as the event bus.
 
-```
+```json
 {
   "Sid": "Dead-letter queue permissions",
   "Effect": "Allow",

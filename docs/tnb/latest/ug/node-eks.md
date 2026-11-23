@@ -9,7 +9,7 @@ Provide the name of the cluster, the desired Kubernetes version, and a role that
 ## Syntax
 <a name="node-eks-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Compute.EKS:
   capabilities:
     multus:
@@ -104,7 +104,7 @@ Type: List
 ## Example
 <a name="node-eks-example"></a>
 
-```
+```yaml
 SampleEKS:
   type: tosca.nodes.AWS.Compute.EKS
   properties:

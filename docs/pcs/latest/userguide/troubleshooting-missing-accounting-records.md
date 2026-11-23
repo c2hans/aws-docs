@@ -31,7 +31,7 @@ Discarded messages aren't retried, so the job history that they carried is perma
 `SlurmdbdCustomSettings` replaces the slurmdbd settings of the cluster instead of adding to them. Any setting that you omit from the update request is removed. If the cluster might already have slurmdbd settings, run `aws pcs get-cluster` first, add `{parameterName=CommitDelay,parameterValue="1"}` to the retrieved list, then submit the complete list.
 **Example – Setting `CommitDelay` on a cluster**
 
-   ```
+   ```cmd
    aws pcs update-cluster --cluster-identifier {{my-cluster}} \
    --slurm-configuration \
    'SlurmdbdCustomSettings=[{parameterName=CommitDelay,parameterValue="1"}]'
@@ -39,7 +39,7 @@ Discarded messages aren't retried, so the job history that they carried is perma
 
 1. Confirm that the setting is in place. In the AWS Management Console, view **Additional scheduler settings** for the cluster. In the AWS CLI, run the following command and check the `slurmConfiguration` field of the response.
 
-   ```
+   ```cmd
    aws pcs get-cluster --cluster-identifier {{my-cluster}}
    ```
 

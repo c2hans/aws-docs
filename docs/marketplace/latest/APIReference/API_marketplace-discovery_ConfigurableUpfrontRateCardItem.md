@@ -13,7 +13,7 @@ A rate card item within a configurable upfront pricing term, including a selecto
 In the following list, the required parameters are described first.
 
  ** constraints **   <a name="AWSMarketplaceService-Type-marketplace-discovery_ConfigurableUpfrontRateCardItem-constraints"></a>
-Constraints on how the buyer can configure this rate card, such as whether multiple dimensions can be selected.
+Constraints on how you can configure this rate card, such as whether you can select multiple dimensions.
 Type: [Constraints](API_marketplace-discovery_Constraints.md) object
 Required: Yes
 

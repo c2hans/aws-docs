@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 
 # ResourceSnapshotJobSummary
 
- An object that contains a `Resource Snapshot Job`'s subset of fields.
+An object that contains a `Resource Snapshot Job`'s subset of fields.
 
 ## Contents
 <a name="API_ResourceSnapshotJobSummary_Contents"></a>
@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 In the following list, the required parameters are described first.
 
  ** Arn **   <a name="AWSPartnerCentral-Type-ResourceSnapshotJobSummary-Arn"></a>
- The Amazon Resource Name (ARN) for the resource snapshot job.
+The Amazon Resource Name (ARN) for the resource snapshot job.
 Type: String
 Pattern: `arn:.*`
 Required: No
@@ -25,7 +25,7 @@ Pattern: `eng-[0-9a-z]{14}`
 Required: No
 
  ** Id **   <a name="AWSPartnerCentral-Type-ResourceSnapshotJobSummary-Id"></a>
- The unique identifier for the resource snapshot job within the AWS Partner Central system. This ID is used for direct references to the job within the service.
+The unique identifier for the resource snapshot job within the AWS Partner Central system. This ID is used for direct references to the job within the service.
 Type: String
 Pattern: `job-[0-9a-z]{13}`
 Required: No

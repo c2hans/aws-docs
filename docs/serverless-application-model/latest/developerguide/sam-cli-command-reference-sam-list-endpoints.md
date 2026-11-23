@@ -67,7 +67,7 @@ AWS SAM template file.
 
 Display an output, in json format, of deployed resource endpoints from your CloudFormation stack named `test-stack`.
 
-```
+```json
 $ sam list endpoints --stack-name test-stack --output json
 
 [

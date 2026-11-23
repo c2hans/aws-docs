@@ -26,6 +26,8 @@ All Route 53 actions are logged by CloudTrail and are documented in the [Amazon
 
 CloudTrail logs `CreateResourceRecordSetProtections` and `DeleteResourceRecordSetProtections` as management write events, and `ListResourceRecordSetProtections` as a management read event.
 
+CloudTrail logs the Change History actions `ListHostedZoneChangeBatches`, `GetHostedZoneChangeBatch`, and `ListResourceRecordSetChanges` as management read events. For more information about Change History, see [Viewing the change history of a hosted zone](hosted-zone-change-history.md).
+
 Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
 + Whether the request was made with root or IAM user credentials.
 + Whether the request was made with temporary security credentials for a role or federated user.

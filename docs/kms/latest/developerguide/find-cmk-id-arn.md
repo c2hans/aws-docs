@@ -36,7 +36,7 @@ By default, the ListKeys operation returns the key ID and Amazon Resource Name (
 
 For example, this call to the `ListKeys` operation returns the ID and ARN of each KMS key in this fictitious account. For examples in multiple programming languages, see [Use `ListKeys` with an AWS SDK or CLI](example_kms_ListKeys_section.md).
 
-```
+```bash
 $ aws kms list-keys
 {
     "Keys": [

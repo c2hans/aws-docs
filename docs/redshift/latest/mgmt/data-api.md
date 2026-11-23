@@ -62,7 +62,7 @@ Consider the following when calling the Data API:
 **Note**
 By default in AWS Step Functions, retries are not enabled. If you need to call a Redshift Data API in a Step Functions state machine, then include the `ClientToken` idempotency parameter in your Redshift Data API call. The value of the `ClientToken` needs to persist among retries. In the following example snippet of a request to the `ExecuteStatement` API, the expression `States.ArrayGetItem(States.StringSplit($$.Execution.Id, ':'), 7)` uses an intrinsic function to extract the UUID part of the `$$.Execution.Id`, which is unique for each execution of the state machine. For more information, see [Intrinsic functions](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-intrinsic-functions.html) in the *AWS Step Functions Developer Guide*.
 
-  ```
+  ```json
   {
     "Database": "dev",
     "Sql": "select 1;",
@@ -215,7 +215,7 @@ aws redshift-data execute-statement
 
 The response contains the session identifier.
 
-```
+```json
 {
     "WorkgroupName": "mywg",
     "CreatedAt": 1703022996.436,
@@ -242,7 +242,7 @@ You use different Data API operations to fetch SQL results depending on the resu
 
 Results returned in JSON format are records that include metadata about each column. Each record is in JSON format. For example, the response from `GetStatementResult` looks similar to this:
 
-```
+```json
 {
    "ColumnMetadata": [
       {
@@ -274,7 +274,7 @@ Results returned in JSON format are records that include metadata about each col
 
 Results returned in CSV format are records that include metadata about each column. Results are returned in 1 MB chunks, where each chunk can store any number of rows in CSV format. Each request returns up to 15 MB of results. If results are greater than 15 MB, then a next page token is returned to continue retrieving the results. For example, the response from `GetStatementResultV2` looks similar to this:
 
-```
+```json
 {
     "ColumnMetadata": [
         {

@@ -13,7 +13,7 @@ The following code examples show how to send a text message to Anthropic Claude,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API.
 
-```
+```csharp
 // Use the Converse API to send a text message to Anthropic Claude.
 
 using System;
@@ -75,7 +75,7 @@ catch (AmazonBedrockRuntimeException e)
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API.
 
-```
+```go
 import (
 	"context"
 	"github.com/aws/aws-sdk-go-v2/aws"
@@ -125,7 +125,7 @@ func (wrapper ConverseWrapper) ConverseClaude(ctx context.Context, prompt string
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API.
 
-```
+```java
 // Use the Converse API to send a text message to Anthropic Claude.
 
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -187,7 +187,7 @@ public class Converse {
 ```
 Send a text message to Anthropic Claude, using Bedrock's Converse API with the async Java client.
 
-```
+```java
 // Use the Converse API to send a text message to Anthropic Claude
 // with the async Java client.
 
@@ -273,7 +273,7 @@ public class ConverseAsync {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API.
 
-```
+```javascript
 // Use the Conversation API to send a text message to Anthropic Claude.
 
 import {
@@ -327,7 +327,7 @@ try {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API.
 
-```
+```python
 # Use the Conversation API to send a text message to Anthropic Claude.
 
 import boto3
@@ -375,7 +375,7 @@ except (ClientError, Exception) as e:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API.
 
-```
+```rust
 #[tokio::main]
 async fn main() -> Result<(), BedrockConverseError> {
     tracing_subscriber::fmt::init();
@@ -428,7 +428,7 @@ fn get_converse_output_text(output: ConverseOutput) -> Result<String, BedrockCon
 ```
 Use statements, Error utility, and constants.
 
-```
+```rust
 use aws_config::BehaviorVersion;
 use aws_sdk_bedrockruntime::{
     operation::converse::{ConverseError, ConverseOutput},
@@ -477,7 +477,7 @@ impl From<&ConverseError> for BedrockConverseError {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API.
 
-```
+```swift
 // An example demonstrating how to use the Conversation API to send
 // a text message to Anthropic Claude.
 

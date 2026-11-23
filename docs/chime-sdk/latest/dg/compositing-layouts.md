@@ -17,7 +17,7 @@ The following image shows the configuration and the available locations for the 
 
 The following example shows how to implement the `ActiveSpeakerOnly` layout programmatically. In this case, the presenter tile appears in the upper-left corner.
 
-```
+```json
 {
    "CompositedVideo":{
       "Layout":"GridView",
@@ -53,7 +53,7 @@ The following example shows how to implement the `ActiveSpeakerOnly` layout prog
 
 The following example shows how to implement the layout programmatically with the presenter at top-right.
 
-```
+```json
 {
     "CompositedVideo": {
     "Layout": "GridView",
@@ -91,7 +91,7 @@ The following image shows the tiles below the content share stream.
 
 The following example shows how to implement a horizontal layout programmatically. In this case, the layout orders the tiles by `SpeakerSequence` and places them below the screen share. The layout allows a maximum of four tiles and applies a 16/9 aspect ratio.
 
-```
+```json
 {
    "CompositedVideo":{
       "Layout":"GridView",
@@ -151,7 +151,7 @@ The following example shows how to implement a horizontal layout programmaticall
 
 The following example shows how to implement the vertical layout programmatically. In this case, the layout orders tiles by JoinSequence and places them to the right of the screen share. The layout allows a maximum of four tiles and applies a 16/9 aspect ratio.
 
-```
+```json
 {
    "CompositedVideo":{
       "Layout": "GridView",

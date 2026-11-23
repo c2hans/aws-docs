@@ -59,7 +59,7 @@ The following example filters the JSON file for the IP addresses for the specifi
 ------
 #### [ jq ]
 
-```
+```json
 $ jq '.prefixes[] | select(.region=="us-east-1")' < ip-ranges.json
 
 {

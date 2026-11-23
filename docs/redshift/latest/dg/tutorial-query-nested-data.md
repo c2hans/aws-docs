@@ -23,7 +23,7 @@ Amazon Redshift Spectrum supports querying nested data in Parquet, ORC, JSON, an
 
 For example, suppose that your data file contains the following data in Amazon S3 in a folder named `customers`. Although there isn't a single root element, each JSON object in this sample data represents a row in a table.
 
-```
+```json
 {"id": 1,
  "name": {"given": "John", "family": "Smith"},
  "phones": ["123-457789"],

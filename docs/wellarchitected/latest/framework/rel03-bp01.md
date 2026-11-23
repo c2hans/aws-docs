@@ -42,6 +42,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel03-b
 
 ![Comparison of three architecture styles: a monolithic application that does everything through a shared release pipeline with rigid scaling, a service-oriented architecture of some coupled services surfaced through a communication protocol, and microservices that each do one thing with independent deployment and scaling.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/monolith-soa-microservices-comparison.png)
 
+*Monolithic, service-oriented, and microservices architectures compared*
+
  Several AWS services address the trade-offs of finer segmentation. [AWS X-Ray (part of Amazon CloudWatch)](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html) traces requests across distributed services, which reduces the debugging cost of many moving parts. [Amazon VPC Lattice](https://docs.aws.amazon.com/vpc-lattice/latest/ug/what-is-vpc-lattice.html) and [AWS Cloud Map](https://aws.amazon.com/cloud-map/) let distributed services discover and reach each other. [Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/welcome.html) can act as a service bus when you decouple a legacy application in stages.
 
 ### Implementation steps

@@ -64,7 +64,7 @@ The following example shows how to structure an Actions schema. The `ACTION_ID` 
 
 For this schema, the first few lines of historical data in a CSV file might look like the following.
 
-```
+```json
 ACTION_ID,VALUE,MEMBERSHIP_LEVEL,CREATION_TIMESTAMP,REPEAT_FREQUENCY
 1,10,Deluxe|Premium,1510003267,7
 2,5,Basic,1580003267,7

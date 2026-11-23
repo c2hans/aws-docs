@@ -23,7 +23,7 @@ Amazon SageMaker Model Monitor is no longer open to new customers. Existing cust
 
  Configure the data you want to capture with the [DataCaptureConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DataCaptureConfig.html) dictionary when you create a transform job using the `CreateTransformJob` method.
 
-```
+```python
 input_data_s3_uri = "s3://{{input_S3_uri}}"
 output_data_s3_uri = "s3://{{output_S3_uri}}"
 data_capture_destination = "s3://{{captured_data_S3_uri}}"
@@ -67,7 +67,7 @@ sm_client.create_transform_job(
 
  Import the `BatchDataCaptureConfig` class from the [sagemaker.model\_monitor](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html).
 
-```
+```python
 from sagemaker.core.transformer import Transformer
 from sagemaker.core.inputs import BatchDataCaptureConfig
 
@@ -98,7 +98,7 @@ transform_arg = transformer.transform(
 
  To avoid data duplication, the captured data under the preceding two directories are manifests. Each manifest is a JSONL file that contains the Amazon S3 locations of the source objects. A manifest file may look like the following example:
 
-```
+```python
 # under "/input" directory
 [
     {"prefix":"s3://{{input_S3_uri}}/"},

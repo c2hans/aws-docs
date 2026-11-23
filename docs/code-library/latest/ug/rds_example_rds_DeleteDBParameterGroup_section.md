@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a DB parameter group. The group cannot be a default DB parameter group
     /// or be associated with any DB instances.
@@ -42,7 +42,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/rds#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -89,7 +89,7 @@ For more information, see [Working with DB Parameter Groups](https://docs.aws.am
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -126,7 +126,7 @@ func (instances *DbInstances) DeleteParameterGroup(ctx context.Context, paramete
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     // Delete the parameter group after database has been deleted.
     // An exception is thrown if you attempt to delete the para group while database
     // exists.
@@ -181,7 +181,7 @@ func (instances *DbInstances) DeleteParameterGroup(ctx context.Context, paramete
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -227,7 +227,7 @@ class InstanceWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rds#code-examples).
 
-```
+```sap-abap
     " iv_dbparametergroupname = 'mydbparametergroup'
     TRY.
         lo_rds->deletedbparametergroup(
@@ -247,7 +247,7 @@ class InstanceWrapper:
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 
-```
+```swift
 import AWSRDS
 
     /// Delete the specified database parameter group.

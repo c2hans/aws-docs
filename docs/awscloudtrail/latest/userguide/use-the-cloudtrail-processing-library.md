@@ -80,7 +80,7 @@ The CloudTrail Processing Library is available for [Apache Maven](https://maven.
 **To add the CloudTrail Processing Library to a Maven project**
 + Open your Maven project's `pom.xml` file and add the following dependency:
 
-  ```
+  ```xml
   <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-cloudtrail-processing-library</artifactId>
@@ -198,7 +198,7 @@ Defaults for the other parameters are set by the library. For more information, 
 
 Instead of setting options in the classpath properties, you can provide options to the `AWSCloudTrailProcessingExecutor` by initializing and setting options on a `ClientConfiguration` object, as shown in the following example:
 
-```
+```java
 ClientConfiguration basicConfig = new ClientConfiguration(
     "http://sqs.us-east-1.amazonaws.com/123456789012/queue2",
     new DefaultAWSCredentialsProviderChain());
@@ -213,7 +213,7 @@ basicConfig.setnEventsPerEmit(20);
 
 To process CloudTrail logs, you must implement an `EventsProcessor` that receives the CloudTrail log data. The following is an example implementation:
 
-```
+```java
 public class SampleEventsProcessor implements EventsProcessor {
 
     public void process(List<CloudTrailEvent> events) {
@@ -244,7 +244,7 @@ After you write an `EventsProcessor` and set configuration values for the CloudT
 
 1. Use the `AWSCloudTrailProcessingExecutor`'s `start()` and `stop()` methods to begin and end CloudTrail event processing.
 
-```
+```java
 public class SampleApp {
   public static void main(String[] args) throws InterruptedException {
     AWSCloudTrailProcessingExecutor executor = new
@@ -277,7 +277,7 @@ You can implement the `SourceFilter` interface to choose whether you want to pro
 The CloudTrail Processing Library calls the `filterSource()` method after the library polls for logs on the Amazon SQS queue. This occurs before the library starts event filtering or processing for the logs.
 The following is an example implementation:
 
-```
+```java
 public class SampleSourceFilter implements SourceFilter{
   private static final int MAX_RECEIVED_COUNT = 3;
 
@@ -312,7 +312,7 @@ You can implement the `EventFilter` interface to choose whether a CloudTrail eve
 The CloudTrail Processing Library calls the `filterEvent()` method after the library polls for logs on the Amazon SQS queue and after source filtering. This occurs before the library starts event processing for the logs.
 See the following example implementation:
 
-```
+```java
 public class SampleEventFilter implements EventFilter{
 
   private static final String EC2_EVENTS = "ec2.amazonaws.com";
@@ -380,7 +380,7 @@ Both methods receive a `ProgressStatus` object that contains information about t
 
 The following is an example implementation that provides information about how long an operation took to complete:
 
-```
+```java
 public class SampleProgressReporter implements ProgressReporter {
   private static final Log logger =
     LogFactory.getLog(DefaultProgressReporter.class);
@@ -411,7 +411,7 @@ You can use the passed-in `ProcessingLibraryException`'s `getStatus()` method to
 
 See the following example implementation:
 
-```
+```java
 public class SampleExceptionHandler implements ExceptionHandler{
   private static final Log logger =
     LogFactory.getLog(DefaultProgressReporter.class);

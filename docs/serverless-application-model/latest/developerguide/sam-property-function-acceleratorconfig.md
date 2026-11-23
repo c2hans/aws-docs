@@ -16,7 +16,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-acceleratorconfig-syntax.yaml"></a>
 
-```
+```yaml
 [AcceleratorMemorySize](#sam-function-acceleratorconfig-acceleratormemorysize): {{Integer}}
 ```
 
@@ -43,7 +43,7 @@ The following example defines a container image function that requests 24 GiB of
 #### YAML
 <a name="sam-property-function-acceleratorconfig--examples--gpufunction--yaml"></a>
 
-```
+```yaml
 Resources:
   MyGpuFunction:
     Type: AWS::Serverless::Function

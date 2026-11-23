@@ -29,7 +29,7 @@ For more information, see [Cancel a stack update](https://docs.aws.amazon.com/AW
 **Tools for PowerShell V4**
 **Example 1: Cancels an update on the specified stack.**
 
-```
+```powershell
 Stop-CFNUpdateStack -StackName "myStack"
 ```
 +  For API details, see [CancelUpdateStack](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -37,7 +37,7 @@ Stop-CFNUpdateStack -StackName "myStack"
 **Tools for PowerShell V5**
 **Example 1: Cancels an update on the specified stack.**
 
-```
+```powershell
 Stop-CFNUpdateStack -StackName "myStack"
 ```
 +  For API details, see [CancelUpdateStack](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

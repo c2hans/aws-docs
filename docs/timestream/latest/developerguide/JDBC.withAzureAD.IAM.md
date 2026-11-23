@@ -76,7 +76,7 @@ To create an IAM policy for the Timestream for LiveAnalytics JDBC single sign-on
 
 ****
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
    "Statement": [

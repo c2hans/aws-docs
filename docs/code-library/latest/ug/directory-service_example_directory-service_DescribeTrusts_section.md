@@ -48,7 +48,7 @@ For more information, see [Creating a trust relationship between your AWS Manage
 **Tools for PowerShell V4**
 **Example 1: This command gets the information of trust relationships created for specified directory-id.**
 
-```
+```powershell
 Get-DSTrust -DirectoryId d-123456abcd
 ```
 **Output:**
@@ -71,7 +71,7 @@ TrustType                : Forest
 **Tools for PowerShell V5**
 **Example 1: This command gets the information of trust relationships created for specified directory-id.**
 
-```
+```powershell
 Get-DSTrust -DirectoryId d-123456abcd
 ```
 **Output:**

@@ -57,7 +57,7 @@ To provide access, add permissions to your users, groups, or roles:
 
 To use the AWS Microservice Extractor for .NET assessment tool, you must create an IAM policy that includes the following permissions. To view the type of application data collected by Microservice Extractor, see [Information collected](microservice-extractor-information-collected.md).
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

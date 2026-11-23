@@ -48,7 +48,7 @@ aws codeartifact list-package-versions --repository {{repo-A}} --domain {{my_dom
 
 Example output:
 
-```
+```json
 {
     "package": "{{lodash}}",
     "format": "{{npm}}",
@@ -73,7 +73,7 @@ aws codeartifact list-package-versions --repository {{repo-B}} --domain {{my_dom
 
 Example output:
 
-```
+```json
 {
     "package": "{{lodash}}",
     "format": "{{npm}}",

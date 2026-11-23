@@ -61,7 +61,7 @@ For more information, see [View CodeCommit repository details](https://docs.aws.
 **Tools for PowerShell V4**
 **Example 1: This example confirms which of the specified repositories are found and not found.**
 
-```
+```powershell
 Get-CCRepositoryBatch -RepositoryName MyDemoRepo, MyNewRepo, AMissingRepo
 ```
 **Output:**
@@ -76,7 +76,7 @@ Repositories                            RepositoriesNotFound
 **Tools for PowerShell V5**
 **Example 1: This example confirms which of the specified repositories are found and not found.**
 
-```
+```powershell
 Get-CCRepositoryBatch -RepositoryName MyDemoRepo, MyNewRepo, AMissingRepo
 ```
 **Output:**

@@ -4,11 +4,14 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 
 # StartAgentRecommendationGeneration
 
+**Important**
+Application-level recommendations are a new recommendation format currently in beta. We are actively seeking customer feedback to improve their quality and relevance. As with any AI-generated content, please thoroughly review each recommendation before taking any action based on it.
+
 Starts a recommendation generation process for the specified agent profile. This asynchronous operation returns immediately. Use `GetAgentRecommendationGeneration` to check the status of the generation.
 
-Currently, only the `ARCHITECTURE` recommendation type is supported. `RESOURCE` and `APPLICATION` recommendations are generated only by the scheduled generation cycle and cannot be started with this operation.
-
 For the `ARCHITECTURE` type, the generation analyzes the infrastructure as code (IaC) template that you specify in `additionalContext`, and returns updated templates with best practice fixes applied. You must specify `scope` and `additionalContext`. You can optionally specify `name`.
+
+For the `RESOURCE` and `APPLICATION` types, calling this operation is the API equivalent of choosing *Manual refresh* in the console. These types are limited to one call per 7-day window and push the scheduled generation out by 14 days.
 
 Architecture review generations are subject to a daily quota for each profile. For more information, see [Quotas and limits](https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-quotas.html) in the AWS Well-Architected User Guide.
 
@@ -73,7 +76,7 @@ Type: [Scope](API_Scope.md) object
 Required: No
 
  ** [types](#API_StartAgentRecommendationGeneration_RequestSyntax) **   <a name="wellarchitected-StartAgentRecommendationGeneration-request-types"></a>
-The types of recommendations to generate. You can specify up to two types in a single request. Currently, only `ARCHITECTURE` is supported for this operation.
+The types of recommendations to generate. You can specify up to two types in a single request.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 2 items.
 Valid Values: `RESOURCE | ARCHITECTURE | APPLICATION`

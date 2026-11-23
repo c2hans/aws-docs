@@ -48,7 +48,7 @@ In this step, you create a Lambda function deployment package, which is a ZIP fi
 
 1. On your computer, copy the following Python script to a local file named `lraTest.py`. This is the app logic for the Lambda function.
 
-   ```
+   ```python
    # Demonstrates a simple use case of local resource access.
    # This Lambda function writes a file test to a volume mounted inside
    # the Lambda environment under destLRAtest. Then it reads the file and
@@ -255,7 +255,7 @@ In this step, you deploy the current version of the group definition.
 
    1. To check whether the daemon is running:
 
-      ```
+      ```bash
       ps aux | grep -E 'greengrass.*daemon'
       ```
 
@@ -265,7 +265,7 @@ The version in the path depends on the AWS IoT Greengrass Core software version 
 
    1. To start the daemon:
 
-      ```
+      ```bash
       cd /greengrass/ggc/core/
       sudo ./greengrassd start
       ```

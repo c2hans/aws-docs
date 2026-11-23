@@ -286,7 +286,7 @@ You can specify additional parameter values to configure when deploying. You do 
 
 1. Modify the `Parameters` section of your AWS SAM template. The following is an example:
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: '2010-09-09'
    Transform: AWS::Serverless-2016-10-31
    ...
@@ -326,7 +326,7 @@ You can configure code signing for your Lambda functions at deployment. You do t
 
 1. Specify `CodeSigningConfigArn` in your AWS SAM template. The following is an example:
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: '2010-09-09'
    Transform: AWS::Serverless-2016-10-31
    ...
@@ -371,7 +371,7 @@ Because a Web Function's revisions read their code from Amazon S3 for as long as
 
 To bundle the code with esbuild, set `BuildMethod: esbuild` in the resource's `Metadata`. The [EntryPoint](sam-resource-webfunction.md#sam-webfunction-entrypoint) file is the esbuild entry point, and the built template's `EntryPoint` points at the bundled file. For example, `src/server.ts` becomes `server.js`. For the build properties that you can set, see [Building Node.js Lambda Event Functions with esbuild in AWS SAM](serverless-sam-cli-using-build-typescript.md).
 
-```
+```yaml
 Resources:
   MyWebFunction:
     Type: AWS::Serverless::WebFunction
@@ -409,7 +409,7 @@ The first time that you deploy a stack with a Web Function that has local code, 
 
 The stack exports the bucket name, and the packaged template imports it:
 
-```
+```yaml
 CodeUri:
   Bucket: !ImportValue {{stack-name}}-{{hash}}-WebFunctionCode-Bucket
   Key: {{object-key}}

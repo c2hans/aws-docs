@@ -12,7 +12,7 @@ Program sets are supported on all gate-based QPUs on Braket and the Amazon Brake
 
 The following example shows how to run a program set.
 
-```
+```python
 from math import pi
 from braket.devices import LocalSimulator
 from braket.program_sets import ProgramSet
@@ -35,7 +35,7 @@ To learn more about different ways of constructing a program set (For example, c
 
 The following example shows how to run a batch of quantum tasks.
 
-```
+```python
 from braket.circuits import Circuit
 from braket.devices import LocalSimulator
 
@@ -74,7 +74,7 @@ A few caveats to keep in mind regarding quantum task batching and billing costs:
 
 Take advantage of batching when you're using PennyLane on Amazon Braket by setting `parallel = True` when you instantiate an Amazon Braket device, as shown in the following example.
 
-```
+```python
 import pennylane as qml
 
 # Define the number of wires (qubits) you want to use
@@ -99,7 +99,7 @@ For more information about batching with PennyLane, see [Parallelized optimizati
 
 When submitting a quantum task batch that contains parametrized circuits, you can either provide an `inputs` dictionary, which is used for all quantum tasks in the batch, or a `list` of input dictionaries, in which case the `i`-th dictionary is paired with the `i`-th task, as shown in the following example.
 
-```
+```python
 from braket.circuits import Circuit, FreeParameter, Observable
 from braket.aws import AwsQuantumTaskBatch, AwsDevice
 
@@ -128,7 +128,7 @@ tasks = device.run_batch([circ_a, circ_b], inputs=inputs_list)
 
 You can also prepare a list of input dictionaries for a single parametric circuit and submit them as a quantum task batch. If there is N input dictionaries in the list, the batch contains N quantum task. The `i`-th quantum task corresponds to the circuit executed with `i`-th input dictionary.
 
-```
+```python
 from braket.circuits import Circuit, FreeParameter
 
 # Create a parametric circuit

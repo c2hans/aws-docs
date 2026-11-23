@@ -28,7 +28,7 @@ The AWS IoT Jobs service publishes a message on an MQTT topic when a job is comp
 + `$aws/events/job/{{jobID}}/deletion_in_progress`
 The `completed` message contains the following example payload:
 
-```
+```JSON
 {
   "eventType": "JOB",
   "eventId": "7364ffd1-8b65-4824-85d5-6c14686c97c6",
@@ -56,7 +56,7 @@ The `completed` message contains the following example payload:
 ```
 The `canceled` message contains the following example payload.
 
-```
+```JSON
 {
   "eventType": "JOB",
   "eventId": "568d2ade-2e9c-46e6-a115-18afa1286b06",
@@ -76,7 +76,7 @@ The `canceled` message contains the following example payload.
 ```
 The `deleted` message contains the following example payload.
 
-```
+```JSON
 {
       "eventType": "JOB",
       "eventId": "568d2ade-2e9c-46e6-a115-18afa1286b06",
@@ -97,7 +97,7 @@ The `deleted` message contains the following example payload.
 ```
 The `cancellation_in_progress` message contains the following example payload:
 
-```
+```JSON
 {
       "eventType": "JOB",
       "eventId": "568d2ade-2e9c-46e6-a115-18afa1286b06",
@@ -118,7 +118,7 @@ The `cancellation_in_progress` message contains the following example payload:
 ```
 The `deletion_in_progress` message contains the following example payload:
 
-```
+```JSON
 {
       "eventType": "JOB",
       "eventId": "568d2ade-2e9c-46e6-a115-18afa1286b06",
@@ -149,7 +149,7 @@ The AWS IoT Jobs service publishes a message when a device updates a job executi
 + `$aws/events/jobExecution/{{jobID}}/deleted`
 The message contains the following example payload:
 
-```
+```JSON
 {
   "eventType": "JOB_EXECUTION",
   "eventId": "cca89fa5-8a7f-4ced-8c20-5e653afb3572",

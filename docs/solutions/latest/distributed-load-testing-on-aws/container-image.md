@@ -11,7 +11,7 @@ This solution uses a public Amazon Elastic Container Registry (Amazon ECR) image
 
 You can edit the default container image to fit your needs. Set these environment variables before building a customized image.
 
-```
+```bash
 #!/bin/bash
 export REGION=aws-region-code # the AWS region to launch the solution (e.g. us-east-1)
 export BUCKET_PREFIX=my-bucket-name # prefix of the bucket name without the region code
@@ -29,7 +29,7 @@ You can then build and push the image to the host destination.
 
 After you create the custom image, declare the following environment variables before building the customized solution.
 
-```
+```bash
 #!/bin/bash
 export PUBLIC_ECR_REGISTRY=YOUR_ECR_REGISTRY_URI # e.g. YOUR_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/YOUR_IMAGE_NAME
 export PUBLIC_ECR_TAG=YOUR_ECR_TAG # e.g. latest, v3.4.0
@@ -53,31 +53,31 @@ To mirror the web console image to a private ECR repository:
 
 1. Authenticate to the public ECR registry:
 
-   ```
+   ```bash
    $ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
    ```
 
 1. Pull the public web console image:
 
-   ```
+   ```bash
    $ docker pull public.ecr.aws/aws-solutions/distributed-load-testing-on-aws-web-console:<version>
    ```
 
 1. Create a private ECR repository in your account (if one does not already exist):
 
-   ```
+   ```bash
    $ aws ecr create-repository --repository-name <your-repo-name> --region <region> 2>/dev/null || true
    ```
 
 1. Authenticate to your private ECR registry:
 
-   ```
+   ```bash
    $ aws ecr get-login-password --region <region> | docker login --username AWS --password-stdin <account-id>.dkr.ecr.<region>.amazonaws.com
    ```
 
 1. Tag and push the image to your private repository:
 
-   ```
+   ```bash
    $ docker tag public.ecr.aws/aws-solutions/distributed-load-testing-on-aws-web-console:<version> \
      <account-id>.dkr.ecr.<region>.amazonaws.com/<your-repo-name>:<version>
    $ docker push <account-id>.dkr.ecr.<region>.amazonaws.com/<your-repo-name>:<version>
@@ -115,31 +115,31 @@ To mirror the load tester image to a private ECR repository, complete the follow
 
 1. Authenticate to the public ECR registry from a machine with internet access.
 
-   ```
+   ```bash
    aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
    ```
 
 1. Pull the public load tester image.
 
-   ```
+   ```bash
    docker pull public.ecr.aws/aws-solutions/distributed-load-testing-on-aws-load-tester:<version>
    ```
 
 1. Create a private ECR repository in your account (if one does not already exist).
 
-   ```
+   ```bash
    aws ecr create-repository --repository-name dlt-load-tester --region <region> --profile <profile> 2>/dev/null || true
    ```
 
 1. Authenticate to your private ECR registry.
 
-   ```
+   ```bash
    aws ecr get-login-password --region <region> --profile <profile> | docker login --username AWS --password-stdin <account-id>.dkr.ecr.<region>.amazonaws.com
    ```
 
 1. Tag and push the image to your private repository.
 
-   ```
+   ```bash
    docker tag public.ecr.aws/aws-solutions/distributed-load-testing-on-aws-load-tester:<version> \
      <account-id>.dkr.ecr.<region>.amazonaws.com/dlt-load-tester:<version>
    docker push <account-id>.dkr.ecr.<region>.amazonaws.com/dlt-load-tester:<version>
@@ -147,7 +147,7 @@ To mirror the load tester image to a private ECR repository, complete the follow
 
 1. Enter the private image URI in the **Load Tester Image URI** parameter when you launch the stack.
 
-   ```
+   ```text
    <account-id>.dkr.ecr.<region>.amazonaws.com/dlt-load-tester:<version>
    ```
 
@@ -158,7 +158,7 @@ The following examples show the parameters required for each stack variant in AW
 
 For the headless stack, only `LoadTesterImageUri` is required:
 
-```
+```bash
 aws cloudformation create-stack \
   --stack-name dlt-govcloud \
   --template-url https://solutions-reference-us-gov.s3.us-gov-west-1.amazonaws.com/distributed-load-testing-on-aws/latest/distributed-load-testing-on-aws-headless.template \
@@ -172,7 +172,7 @@ aws cloudformation create-stack \
 
 For the Application Load Balancer (ALB) \+ ECS on AWS Fargate stack, provide both `LoadTesterImageUri` and `WebConsoleImageUri`. ECS tasks in AWS GovCloud (US) cannot access the public ECR registry (`public.ecr.aws`), so you must mirror both container images.
 
-```
+```bash
 aws cloudformation create-stack \
   --stack-name dlt-govcloud \
   --template-url https://solutions-reference-us-gov.s3.us-gov-west-1.amazonaws.com/distributed-load-testing-on-aws/latest/distributed-load-testing-on-aws-alb-ecs.template \

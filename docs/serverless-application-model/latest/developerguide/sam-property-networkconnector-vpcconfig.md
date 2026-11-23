@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-networkconnector-vpcconfig-syntax.yaml"></a>
 
-```
+```yaml
 [ElasticIpConfiguration](#sam-networkconnector-vpcconfig-elasticipconfiguration): {{ElasticIpConfiguration}}
 [NetworkProtocol](#sam-networkconnector-vpcconfig-networkprotocol): {{String}}
 [SecurityGroupIds](#sam-networkconnector-vpcconfig-securitygroupids): {{List}}
@@ -56,7 +56,7 @@ A list of subnet IDs where the service provisions ENIs for VPC egress connectivi
 ### VpcConfig example
 <a name="sam-property-networkconnector-vpcconfig-example-basic"></a>
 
-```
+```yaml
 VpcConfig:
   SubnetIds:
     - subnet-0abc123def4567890

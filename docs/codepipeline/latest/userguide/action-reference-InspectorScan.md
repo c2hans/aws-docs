@@ -28,7 +28,7 @@ This action uses CodePipeline managed CodeBuild compute to run commands in a bui
 
 Example:
 
-```
+```json
             {
                 "Category": "Invoke",
                 "Owner": "AWS",
@@ -130,7 +130,7 @@ Scope down the permissions to the pipeline resource level by using resource-base
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: Scan
 actionTypeId:
   category: Invoke
@@ -150,7 +150,7 @@ region: us-east-1
 ------
 #### [ JSON ]
 
-```
+```json
 {
                         "name": "Scan",
                         "actionTypeId": {

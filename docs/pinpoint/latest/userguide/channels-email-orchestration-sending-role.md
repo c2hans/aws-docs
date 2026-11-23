@@ -41,7 +41,7 @@ This action deletes the email channel from your project. Only do this if you don
 
 To delete the email channel, use the [delete-email-channel](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/delete-email-channel.html) command:
 
-```
+```bash
 aws pinpoint delete-email-channel --application-id {{application-id}}
 ```
 

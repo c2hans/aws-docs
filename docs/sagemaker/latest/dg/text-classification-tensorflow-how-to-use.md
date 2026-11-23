@@ -15,7 +15,7 @@ Default hyperparameter values are different for different models. For example, f
 
 This example uses the [`SST2`](https://www.tensorflow.org/datasets/catalog/glue#gluesst2) dataset, which contains positive and negative movie reviews. We pre-downloaded the dataset and made it available with Amazon S3. To fine-tune your model, call `.fit` using the Amazon S3 location of your training dataset. Any S3 bucket used in a notebook must be in the same AWS Region as the notebook instance that accesses it.
 
-```
+```python
 from sagemaker.core import image_uris
 from sagemaker.core import model_uris, script_uris, hyperparameters
 from sagemaker.train import ModelTrainer

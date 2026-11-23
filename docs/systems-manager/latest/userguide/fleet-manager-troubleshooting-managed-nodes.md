@@ -21,7 +21,7 @@ After you verify that a managed node is running, you can use the following comma
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm describe-instance-associations-status \
     --instance-id {{instance-id}}
 ```
@@ -29,7 +29,7 @@ aws ssm describe-instance-associations-status \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm describe-instance-associations-status ^
     --instance-id {{instance-id}}
 ```
@@ -37,7 +37,7 @@ aws ssm describe-instance-associations-status ^
 ------
 #### [ PowerShell ]
 
-```
+```powershell
 Get-SSMInstanceAssociationsStatus `
     -InstanceId {{instance-id}}
 ```
@@ -156,14 +156,14 @@ To verify whether the required certificate is installed on your instance run the
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 curl -L https://ssm.{{region}}.amazonaws.com
 ```
 
 ------
 #### [ Windows ]
 
-```
+```ps
 Invoke-WebRequest -Uri https://ssm.{{region}}.amazonaws.com
 ```
 

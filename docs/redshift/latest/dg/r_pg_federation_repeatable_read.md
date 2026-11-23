@@ -27,11 +27,11 @@ For more information, see the following:
 
 The following command sets `pg_federation_repeatable_read` to `on` for a session. The show command shows the value of the set value.
 
-```
+```SQL
 set pg_federation_repeatable_read to on;
 ```
 
-```
+```SQL
 show pg_federation_repeatable_read;
 
 pg_federation_repeatable_read

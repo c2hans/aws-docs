@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-statemachine-resourcepolicystatement-syntax.yaml"></a>
 
-```
+```yaml
   [AwsAccountBlacklist](#sam-statemachine-resourcepolicystatement-awsaccountblacklist): {{List}}
   [AwsAccountWhitelist](#sam-statemachine-resourcepolicystatement-awsaccountwhitelist): {{List}}
   [CustomStatements](#sam-statemachine-resourcepolicystatement-customstatements): {{List}}
@@ -108,7 +108,7 @@ The following example blocks two IP addresses and a source VPC, and allows an AW
 #### YAML
 <a name="sam-property-statemachine-resourcepolicystatement--examples--resource-policy-example--yaml"></a>
 
-```
+```yaml
 Auth:
   ResourcePolicy:
     CustomStatements: [{

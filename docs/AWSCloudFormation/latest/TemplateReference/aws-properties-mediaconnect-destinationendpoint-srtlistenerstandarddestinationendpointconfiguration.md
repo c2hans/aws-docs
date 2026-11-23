@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::DestinationEndpoint SrtListenerStandardDestinationEndpointConfiguration
 
-<a name="aws-properties-mediaconnect-destinationendpoint-srtlistenerstandarddestinationendpointconfiguration-description"></a>The `SrtListenerStandardDestinationEndpointConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::DestinationEndpoint](aws-resource-mediaconnect-destinationendpoint.md).
+The configuration settings for a destination endpoint that uses SRT in listener mode.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-srtlistenerstandarddestinationendpointconfiguration-syntax"></a>
@@ -42,13 +42,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-destinationendpoint-srtlistenerstandarddestinationendpointconfiguration-properties"></a>
 
 `DestinationAddress`  <a name="cfn-mediaconnect-destinationendpoint-srtlistenerstandarddestinationendpointconfiguration-destinationaddress"></a>
-Property description not available.
+The IP address on which the destination endpoint listens for incoming connections.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DestinationIngestPort`  <a name="cfn-mediaconnect-destinationendpoint-srtlistenerstandarddestinationendpointconfiguration-destinationingestport"></a>
-Property description not available.
+The port on which the destination endpoint listens for incoming connections. The valid range is 0 to 65531.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `0`
@@ -56,13 +56,13 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EncryptionPassphrase`  <a name="cfn-mediaconnect-destinationendpoint-srtlistenerstandarddestinationendpointconfiguration-encryptionpassphrase"></a>
-Property description not available.
+The configuration for the AWS Secrets Manager secret that holds the key or passphrase used to encrypt an endpoint connection.
 *Required*: No
 *Type*: [EndpointEncryptionSecretConfiguration](aws-properties-mediaconnect-destinationendpoint-endpointencryptionsecretconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MinimumLatencyMilliseconds`  <a name="cfn-mediaconnect-destinationendpoint-srtlistenerstandarddestinationendpointconfiguration-minimumlatencymilliseconds"></a>
-Property description not available.
+The minimum latency, in milliseconds, for the SRT connection. The valid range is 10 to 10000.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `10`
@@ -70,7 +70,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StreamId`  <a name="cfn-mediaconnect-destinationendpoint-srtlistenerstandarddestinationendpointconfiguration-streamid"></a>
-Property description not available.
+The stream ID that identifies the content for the SRT connection.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

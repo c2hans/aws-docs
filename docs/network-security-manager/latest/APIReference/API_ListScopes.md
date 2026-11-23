@@ -51,6 +51,7 @@ Content-type: application/json
          "scopeArn": "string",
          "scopeId": "string",
          "scopeName": "string",
+         "specializedScopeType": "string",
          "status": "string",
          "updatedAt": "string",
          "version": "string"

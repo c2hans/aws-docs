@@ -35,7 +35,7 @@ The following is an example IAM policy that includes the `tag:GetResources` perm
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -103,7 +103,7 @@ The following sample IAM policy allows IAM principals to make **CreateRule** req
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement" : [
@@ -133,7 +133,7 @@ The following sample IAM policy allows IAM principals to make **ListRules** requ
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement" : [
@@ -168,7 +168,7 @@ The following sample IAM policy allows IAM principals to make **UpdateRule** req
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement" : [
@@ -198,7 +198,7 @@ The following sample IAM policy allows IAM principals to make **DeleteRule** req
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement" : [

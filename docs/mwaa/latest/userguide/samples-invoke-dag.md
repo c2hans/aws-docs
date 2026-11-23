@@ -35,7 +35,7 @@ To use the code example on this page, your environment's execution role must hav
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -74,7 +74,7 @@ The following code example assumes that you're using a DAG in your current envir
    + `your-new-environment-name` – The name of the other environment where you want to invoke the DAG.
    + `your-target-dag-id` – The ID of the DAG in the other environment that you want to invoke.
 
-   ```
+   ```python
    from airflow.decorators import dag, task
    import boto3
    from datetime import datetime, timedelta
@@ -109,7 +109,7 @@ The following code example assumes that you're using a DAG in your current envir
 
 1.  Run the following AWS CLI command to copy the DAG to your environment's bucket, then trigger the DAG using the Apache Airflow UI.
 
-   ```
+   ```bash
    aws s3 cp {{your-dag}}.py s3://{{your-environment-bucket}}/dags/
    ```
 

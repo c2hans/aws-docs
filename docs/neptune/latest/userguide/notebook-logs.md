@@ -25,7 +25,7 @@ CloudWatch Logs for Neptune notebooks are disabled by default. Follow these step
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

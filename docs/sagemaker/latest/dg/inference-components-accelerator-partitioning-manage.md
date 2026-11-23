@@ -11,7 +11,7 @@ After you deploy models to a partitioned endpoint, you can scale them, move them
 
 To serve more requests with a model, increase `CopyCount` on its inference component. SageMaker AI places each copy on a free partition of the same type. The following `update-inference-component` command scales `demo-ic-4g` to 2 copies:
 
-```
+```bash
 aws sagemaker update-inference-component \
   --region us-west-2 \
   --inference-component-name demo-ic-4g \
@@ -35,20 +35,20 @@ A partitioned endpoint incurs charges for its instances until you delete it. Del
 
 1. Delete the inference components. The following `delete-inference-component` command deletes `demo-ic-4g`. Repeat it for each inference component on the endpoint.
 
-   ```
+   ```bash
    aws sagemaker delete-inference-component --region us-west-2 --inference-component-name demo-ic-4g
    ```
 
 1. Delete the endpoint, and wait until it's deleted. The following commands delete the endpoint `partition-demo` and wait for the deletion:
 
-   ```
+   ```bash
    aws sagemaker delete-endpoint --region us-west-2 --endpoint-name partition-demo
    aws sagemaker wait endpoint-deleted --region us-west-2 --endpoint-name partition-demo
    ```
 
 1. Delete the endpoint configuration. The following `delete-endpoint-config` command deletes `partition-demo-config`:
 
-   ```
+   ```bash
    aws sagemaker delete-endpoint-config --region us-west-2 --endpoint-config-name partition-demo-config
    ```
 

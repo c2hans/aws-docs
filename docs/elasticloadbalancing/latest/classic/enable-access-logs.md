@@ -52,7 +52,7 @@ This policy grants permissions to the log delivery service.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -193,7 +193,7 @@ The bucket must meet the requirements described in [step 1](#create-s3-bucket), 
 **To configure access logs for your load balancer using the AWS CLI**
 First, create a .json file that enables Elastic Load Balancing to capture and deliver logs every 60 minutes to the S3 bucket that you created for the logs:
 
-```
+```json
 {
   "AccessLog": {
     "Enabled": true,
@@ -212,7 +212,7 @@ aws elb modify-load-balancer-attributes --load-balancer-name {{my-loadbalancer}}
 
 The following is an example response.
 
-```
+```json
 {
     "LoadBalancerAttributes": {
         "AccessLog": {

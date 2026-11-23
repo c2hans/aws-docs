@@ -46,7 +46,7 @@ Principals who use the KMS keys in your custom key store for [cryptographic oper
 
 To set a permission that applies only to KMS keys in an external key store, use the [`kms:KeyOrigin`](conditions-kms.md#conditions-kms-key-origin) policy condition with a value of `EXTERNAL_KEY_STORE`. You can use this condition to limit the [kms:CreateKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) permission or any permission that is specific to a KMS key resource. For example, the following IAM policy allows the identity to which it is attached to call the specified operations on all KMS keys in the account, provided that the KMS keys are in an external key store. Notice that you can limit the permission to KMS keys in an external key store, and KMS keys in an AWS account, but not to any particular external key store in the account.
 
-```
+```json
 {
   "Sid": "AllowKeysInExternalKeyStores",
   "Effect": "Allow",

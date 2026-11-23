@@ -33,7 +33,7 @@ The **AWS IoT Core - control plane** and **AWS IoT Core Device Advisor contro
 
     IPv4 endpoints use the following naming convention:
 
-    ```
+    ```bash
     iot.{{aws-region}}.amazonaws.com
     ```
 
@@ -42,7 +42,7 @@ The **AWS IoT Core - control plane** and **AWS IoT Core Device Advisor contro
 
     Dual-stack endpoints use the following naming convention:
 
-    ```
+    ```bash
     iot.{{aws-region}}.api.aws
     ```
 

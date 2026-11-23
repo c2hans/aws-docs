@@ -67,7 +67,7 @@ The following example API Gateway tool configurations show how to use filters an
 
 Tool Configuration:
 
-```
+```json
 {
   "filterPath": "/pets/*",
   "methods": ["GET", "POST"]
@@ -82,7 +82,7 @@ Tool Configuration:
 
 Tool Configuration:
 
-```
+```json
 {
   "filterPath": "/pets/{petId}",
   "methods": ["GET", "POST"]
@@ -97,7 +97,7 @@ Tool Configuration:
 
 Tool Configuration:
 
-```
+```json
 {
   [
     {
@@ -120,7 +120,7 @@ Tool Configuration:
 
 Tool Configuration:
 
-```
+```json
 {
   [
     {
@@ -145,7 +145,7 @@ You can provide a tool filter and add an override. The override specifies a reso
 
 Tool Configuration
 
-```
+```json
 {
   "toolFilters": [
     {
@@ -198,7 +198,7 @@ Export the OpenAPI definition from your deployed API stage by calling [GetExport
 
 1. Export the OpenAPI definition from your deployed API stage by calling [GetExport](https://docs.aws.amazon.com/apigateway/latest/api/API_GetExport.html) . You can do this with the CLI:
 
-   ```
+   ```bash
    aws apigateway get-export \
        --rest-api-id rest-api-id \
        --stage-name api-stage \
@@ -211,7 +211,7 @@ Export the OpenAPI definition from your deployed API stage by calling [GetExport
 
 1. Import your updated OpenAPI definition with [PutRestApi](https://docs.aws.amazon.com/apigateway/latest/api/API_PutRestApi.html) . You can do this with the AWS CLI:
 
-   ```
+   ```bash
    aws apigateway put-rest-api \
        --rest-api-id rest-api-id \
        --mode merge \
@@ -220,7 +220,7 @@ Export the OpenAPI definition from your deployed API stage by calling [GetExport
 
 1. Redeploy your API to your stage with the AWS CLI:
 
-   ```
+   ```bash
    aws apigateway create-deployment \
        --rest-api-id rest-api-id \
        --stage-name api-stage \
@@ -234,7 +234,7 @@ You can configure your API Gateway [Method](https://docs.aws.amazon.com/apigatew
 
 1. Call [UpdateMethod](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateMethod.html) with the AWS CLI:
 
-   ```
+   ```bash
    aws apigateway update-method \
        --rest-api-id rest-api-id \
        --resource-id resource-id \
@@ -250,7 +250,7 @@ You can configure your API Gateway [Method](https://docs.aws.amazon.com/apigatew
 
 1. Redeploy your API to your stage with the AWS CLI:
 
-   ```
+   ```bash
    aws apigateway create-deployment \
        --rest-api-id rest-api-id \
        --stage-name api-stage \
@@ -280,7 +280,7 @@ API Gateway allows you to secure your REST API with IAM. When IAM authorization 
 
 1. Add a policy to your role to allow the action `execute-api:Invoke` along with a resource that corresponds to the REST API Id and Stage you used to set up your target, such as the following policy:
 
-   ```
+   ```json
    {
    "Version": "2012-10-17",
      "Statement": [
@@ -304,7 +304,7 @@ API Gateway resource policies are JSON policy documents that you attach to an AP
 
 The following is an example of an API resource policy that grants AgentCore Gateway access to your REST API.
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [

@@ -34,7 +34,7 @@ Other differences:
 + Some Automation runbooks and SSM Command documents are not available for the AWS GovCloud (US) Regions.
 + SSM Agent for AWS GovCloud (US) can be downloaded from the following locations:
 
-  ```
+  ```sh
   https://amazon-ssm-us-gov-east-1.s3.us-gov-east-1.amazonaws.com/latest/windows_amd64/AmazonSSMAgentSetup.exe
   ```
 

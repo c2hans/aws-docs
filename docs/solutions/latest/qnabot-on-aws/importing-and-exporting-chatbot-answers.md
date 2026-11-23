@@ -20,7 +20,7 @@ Follow these steps to export all the items that are in the QnABot on AWS categor
 
    Sample JSON file for importing and exporting chatbot answers:
 
-   ```
+   ```JSON
    {
      "qna": [
        {
@@ -51,7 +51,7 @@ Follow these steps to export all the items that are in the QnABot on AWS categor
 
 1. Add a new item to the `qna` list, as shown in the following example, and save the file.
 
-   ```
+   ```JSON
    {
            "qid": "AWS-QnABot.003",
            "q": ["What can Q and A bot do"],

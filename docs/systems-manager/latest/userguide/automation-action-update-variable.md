@@ -12,7 +12,7 @@ The input is as follows.
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: updateStringList
 action: aws:updateVariable
 inputs:
@@ -25,7 +25,7 @@ inputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "updateStringList",
     "action": "aws:updateVariable",

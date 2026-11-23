@@ -18,7 +18,7 @@ Inputs are defined by the API operation that you choose.
 ------
 #### [ YAML ]
 
-```
+```yaml
 action: aws:waitForAwsResourceProperty
 inputs:
   Service: {{The official namespace of the service}}
@@ -32,7 +32,7 @@ inputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "action": "aws:waitForAwsResourceProperty",
   "inputs": {
@@ -62,7 +62,7 @@ Required: Yes
 API operation inputs
 One or more API operation inputs. You can view the available inputs (also called parameters) by choosing a service in the left navigation on the following [Services Reference](https://docs.aws.amazon.com/boto3/latest/reference/services/index.html) page. Choose a method in the **Client** section for the service that you want to invoke. For example, all methods for Amazon RDS are listed on the following page: [Amazon RDS methods](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html). Choose the [describe\_db\_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_instances) method and scroll down to see the available parameters, such as **DBInstanceIdentifier**, **Name**, and **Values**.
 
-```
+```yaml
 inputs:
   Service: {{The official namespace of the service}}
   Api: {{The API operation name}}
@@ -71,7 +71,7 @@ inputs:
  {{ API Input 3}}: {{A value}}
 ```
 
-```
+```json
 "inputs":{
       "Service":"{{The official namespace of the service}}",
       "Api":"{{The API operation name}}",

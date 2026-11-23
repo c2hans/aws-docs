@@ -95,7 +95,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### PUT schema
 <a name="reservations-reservationid-request-body-put-example"></a>
 
-```
+```json
 {
   "name": "string",
   "renewalSettings": {
@@ -111,7 +111,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### Reservation schema
 <a name="reservations-reservationid-response-body-reservation-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "count": integer,
@@ -147,7 +147,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### UpdateReservationResultModel schema
 <a name="reservations-reservationid-response-body-updatereservationresultmodel-example"></a>
 
-```
+```json
 {
   "reservation": {
     "arn": "string",
@@ -185,7 +185,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### InvalidRequest schema
 <a name="reservations-reservationid-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -194,7 +194,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### AccessDenied schema
 <a name="reservations-reservationid-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -203,7 +203,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### ResourceNotFound schema
 <a name="reservations-reservationid-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -212,7 +212,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### ResourceConflict schema
 <a name="reservations-reservationid-response-body-resourceconflict-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -221,7 +221,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### LimitExceeded schema
 <a name="reservations-reservationid-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -230,7 +230,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### InternalServiceError schema
 <a name="reservations-reservationid-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -239,7 +239,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### BadGatewayException schema
 <a name="reservations-reservationid-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -248,7 +248,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### GatewayTimeoutException schema
 <a name="reservations-reservationid-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

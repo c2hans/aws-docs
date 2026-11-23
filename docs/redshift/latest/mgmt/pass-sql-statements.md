@@ -27,7 +27,7 @@ aws redshift-data execute-statement
 
 The following is an example of the response.
 
-```
+```json
 {
     "ClusterIdentifier": "mycluster-test",
     "CreatedAt": 1598323175.823,
@@ -49,7 +49,7 @@ aws redshift-data execute-statement
 
 The following is an example of the response.
 
-```
+```json
 {
     "ClusterIdentifier": "mycluster-test",
     "CreatedAt": 1598306924.632,
@@ -70,7 +70,7 @@ aws redshift-data execute-statement
 
 The following is an example of the response.
 
-```
+```json
 {
  "CreatedAt": "2022-02-11T06:25:28.748000+00:00",
  "Database": "dev",
@@ -93,7 +93,7 @@ aws redshift-data execute-statement
 
 The following is an example of the response.
 
-```
+```json
 {
     "ClusterIdentifier": "mycluster-test",
     "CreatedAt": 1598323175.823,
@@ -122,7 +122,7 @@ aws redshift-data batch-execute-statement
 
 The following is an example of the response.
 
-```
+```json
 {
     "ClusterIdentifier": "mycluster-test",
     "CreatedAt": 1598306924.632,
@@ -145,7 +145,7 @@ aws redshift-data batch-execute-statement
 
 The following is an example of the response.
 
-```
+```json
 {
     "ClusterIdentifier": "mycluster-test",
     "CreatedAt": 1623979777.126,
@@ -210,7 +210,7 @@ aws redshift-data execute-statement
 
 The following is an example of the response.
 
-```
+```json
 {
     "ClusterIdentifier": "mycluster-test",
     "CreatedAt": 1598323175.823,
@@ -425,7 +425,7 @@ aws redshift-data batch-execute-statement
 
 The following is an example of the response.
 
-```
+```json
 {
     "ClusterIdentifier": "mycluster-test",
     "CreatedAt": 1598306924.632,
@@ -448,7 +448,7 @@ aws redshift-data batch-execute-statement
 
 The following is an example of the response.
 
-```
+```json
 {
     "ClusterIdentifier": "mycluster-test",
     "CreatedAt": 1598306924.632,

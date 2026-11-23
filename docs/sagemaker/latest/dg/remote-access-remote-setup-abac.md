@@ -24,7 +24,7 @@ You can ensure that users cannot create spaces with remote access enabled. This 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -70,7 +70,7 @@ You can ensure users can only access resources appropriate for their role and pr
 
 In the following example, the space is tagged with the following:
 
-```
+```json
 { "Team": "ML", "Environment": "Production", "CostCenter": "12345" }
 ```
 
@@ -81,7 +81,7 @@ You can have a role that contains the following policy to match resource and pri
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

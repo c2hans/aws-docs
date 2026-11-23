@@ -25,7 +25,7 @@ Let's look at an example where we have two constructs with the identifier `MyBuc
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import { App, Construct, Stack, StackProps } from '@aws-cdk/core';
 import * as s3 from '@aws-cdk/aws-s3';
 
@@ -45,7 +45,7 @@ new MyStack(app, 'Stack2');
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const { App , Stack } = require('@aws-cdk/core');
 const s3 = require('@aws-cdk/aws-s3');
 
@@ -65,7 +65,7 @@ new MyStack(app, 'Stack2');
 ------
 #### [ Python ]
 
-```
+```python
 from aws_cdk.core import App, Construct, Stack, StackProps
 from aws_cdk import aws_s3 as s3
 
@@ -84,7 +84,7 @@ MyStack(app, 'Stack2')
 ------
 #### [ Java ]
 
-```
+```java
 // MyStack.java
 package com.myorg;
 
@@ -121,7 +121,7 @@ public class Main {
 ------
 #### [ C\# ]
 
-```
+```csharp
 using core = Amazon.CDK;
 using s3 = Amazon.CDK.AWS.S3;
 
@@ -158,35 +158,35 @@ You can access the path of any construct programmatically, as shown in the follo
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const path: string = myConstruct.node.path;
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const path = myConstruct.node.path;
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 path = my_construct.node.path
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 String path = myConstruct.getNode().getPath();
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 string path = myConstruct.Node.Path;
 ```
 
@@ -202,35 +202,35 @@ In general, your AWS CDK app should not need to know about unique IDs. You can, 
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const uid: string = Names.uniqueId(myConstruct);
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const uid = Names.uniqueId(myConstruct);
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 uid = Names.unique_id(my_construct)
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 String uid = Names.uniqueId(myConstruct);
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 string uid = Names.Uniqueid(myConstruct);
 ```
 
@@ -241,35 +241,35 @@ The *address* is another kind of unique identifier that uniquely distinguishes C
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const addr: string = myConstruct.node.addr;
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const addr = myConstruct.node.addr;
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 addr = my_construct.node.addr
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 String addr = myConstruct.getNode().getAddr();
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 string addr = myConstruct.Node.Addr;
 ```
 

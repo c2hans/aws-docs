@@ -45,7 +45,7 @@ Accepts an Amazon Macie membership invitation that was received from a specific 
 #### POST schema
 <a name="invitations-accept-request-body-post-example"></a>
 
-```
+```json
 {
   "administratorAccountId": "string",
   "invitationId": "string",
@@ -59,7 +59,7 @@ Accepts an Amazon Macie membership invitation that was received from a specific 
 #### Empty Schema schema
 <a name="invitations-accept-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -67,7 +67,7 @@ Accepts an Amazon Macie membership invitation that was received from a specific 
 #### ValidationException schema
 <a name="invitations-accept-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -76,7 +76,7 @@ Accepts an Amazon Macie membership invitation that was received from a specific 
 #### ServiceQuotaExceededException schema
 <a name="invitations-accept-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -85,7 +85,7 @@ Accepts an Amazon Macie membership invitation that was received from a specific 
 #### AccessDeniedException schema
 <a name="invitations-accept-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -94,7 +94,7 @@ Accepts an Amazon Macie membership invitation that was received from a specific 
 #### ResourceNotFoundException schema
 <a name="invitations-accept-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -103,7 +103,7 @@ Accepts an Amazon Macie membership invitation that was received from a specific 
 #### ConflictException schema
 <a name="invitations-accept-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -112,7 +112,7 @@ Accepts an Amazon Macie membership invitation that was received from a specific 
 #### ThrottlingException schema
 <a name="invitations-accept-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -121,7 +121,7 @@ Accepts an Amazon Macie membership invitation that was received from a specific 
 #### InternalServerException schema
 <a name="invitations-accept-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

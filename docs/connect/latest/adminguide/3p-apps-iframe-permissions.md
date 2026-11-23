@@ -35,7 +35,7 @@ Configure iframe permissions with a template similar to the following.
 
 For example, to grant clipboard permissions:
 
-```
+```json
 {
     "IframeConfig": {
         "Allow": [
@@ -59,7 +59,7 @@ For example, to grant clipboard permissions:
   + allow-same-origin
   + allow-scripts
 
-  ```
+  ```json
   {
       "IframeConfig": {
           "Allow": [],
@@ -69,7 +69,7 @@ For example, to grant clipboard permissions:
   ```
 + To explicitly configure an application with no permissions, you must set empty arrays for both `Allow` and `Sandbox`:
 
-  ```
+  ```json
   {
       "IframeConfig": {
           "Allow": [],

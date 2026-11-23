@@ -20,7 +20,7 @@ Amazon S3 supports bucket policies that you can use if you require server-side e
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "SSEAndSSLPolicy",

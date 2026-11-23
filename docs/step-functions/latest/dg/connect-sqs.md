@@ -12,7 +12,7 @@ To learn more about receiving messages in Amazon SQS, see [Receive and Delete Yo
 
 The following sample includes a `Task` state (JSONata) that sends an Amazon Simple Queue Service (Amazon SQS) message with optional **MessageAttributes**:
 
-```
+```json
 {
  "StartAt": "Send to SQS",
  "States": {
@@ -41,7 +41,7 @@ The following sample includes a `Task` state (JSONata) that sends an Amazon Simp
 
 The following state machine includes a `Task` state that publishes to an Amazon SQS queue, and then waits for the task token to be returned. See [Wait for a Callback with Task Token](connect-to-resource.md#connect-wait-token).
 
-```
+```json
 {
    "StartAt":"Send message to SQS",
    "States":{
@@ -80,7 +80,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -101,7 +101,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Retrieve the list of existing clusters.
 
-```
+```sh
 pcluster list-clusters [-h]
                 [--cluster-status {CREATE_IN_PROGRESS,CREATE_FAILED,CREATE_COMPLETE,
                            DELETE_IN_PROGRESS,DELETE_FAILED,UPDATE_IN_PROGRESS,

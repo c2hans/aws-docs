@@ -32,7 +32,7 @@ Your user or role must have an attached [identity-based policy](security-iam-ser
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

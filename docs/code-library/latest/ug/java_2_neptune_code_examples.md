@@ -33,7 +33,7 @@ The following code example shows how to get started using Neptune.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -120,7 +120,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 Run an interactive scenario demonstrating Neptune features.
 
-```
+```java
 public class NeptuneScenario {
     public static final String DASHES = new String(new char[80]).replace("\0", "-");
     private static final Logger logger = LoggerFactory.getLogger(NeptuneScenario.class);
@@ -361,7 +361,7 @@ public class NeptuneScenario {
 ```
 A wrapper class for Neptune SDK methods.
 
-```
+```java
 public class NeptuneActions {
     private CompletableFuture<Void> instanceCheckFuture;
     private static NeptuneAsyncClient neptuneAsyncClient;
@@ -907,7 +907,7 @@ The following code example shows how to use `CreateDBCluster`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Creates a new Amazon Neptune DB cluster asynchronously.
      *
@@ -950,7 +950,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Creates a new Amazon Neptune DB instance asynchronously.
      *
@@ -996,7 +996,7 @@ The following code example shows how to use `CreateDBSubnetGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Creates a new DB subnet group asynchronously.
      *
@@ -1049,7 +1049,7 @@ The following code example shows how to use `CreateGraph`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Executes the process of creating a new Neptune graph.
      *
@@ -1095,7 +1095,7 @@ The following code example shows how to use `DeleteDBCluster`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Deletes a DB instance asynchronously.
      *
@@ -1122,7 +1122,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Deletes a DB instance asynchronously.
      *
@@ -1149,7 +1149,7 @@ The following code example shows how to use `DeleteDBSubnetGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Deletes a subnet group.
      *
@@ -1175,7 +1175,7 @@ The following code example shows how to use `DescribeDBClusters`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Asynchronously describes the specified Amazon RDS DB cluster.
      *
@@ -1231,7 +1231,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Checks the status of a Neptune instance recursively until the desired status is reached or a timeout occurs.
      *
@@ -1286,7 +1286,7 @@ The following code example shows how to use `ExecuteGremlinProfileQuery`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Executes a Gremlin query against an Amazon Neptune database using the provided {@link NeptunedataClient}.
      *
@@ -1330,7 +1330,7 @@ The following code example shows how to use `ExecuteGremlinQuery`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Executes a Gremlin PROFILE query using the provided NeptunedataClient.
      *
@@ -1362,7 +1362,7 @@ The following code example shows how to use `ExecuteOpenCypherExplainQuery`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Executes an OpenCypher EXPLAIN query using the provided Neptune data client.
      *
@@ -1404,7 +1404,7 @@ The following code example shows how to use `ExecuteQuery`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Executes a Gremlin profile query on the Neptune Analytics graph.
      *
@@ -1453,7 +1453,7 @@ The following code example shows how to use `StartDBCluster`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Starts an Amazon Neptune DB cluster.
      *
@@ -1490,7 +1490,7 @@ The following code example shows how to use `StopDBCluster`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 
-```
+```java
     /**
      * Stops an Amazon Neptune DB cluster.
      *

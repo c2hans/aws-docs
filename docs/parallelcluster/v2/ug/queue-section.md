@@ -10,7 +10,7 @@ Defines configuration settings for a single queue. [`[queue]` sections](queue-se
 
 The format is `[queue {{<queue-name>}}]`. {{queue-name}} must start with a lowercase letter, contain no more than 30 characters, and only contain lowercase letters, numbers, and hyphens (-).
 
-```
+```ini
 [queue q1]
 compute_resource_settings = i1,i2
 placement_group = DYNAMIC
@@ -39,7 +39,7 @@ Up to three (3) [`[compute_resource]` sections](compute-resource-section.md) are
 
 For example, the following setting specifies that the sections that start `[compute_resource cr1]` and `[compute_resource cr2]` are used.
 
-```
+```ini
 compute_resource_settings = cr1, cr2
 ```
 
@@ -59,14 +59,14 @@ For more information about Spot Instances, see [Working with Spot Instances](spo
 **Note**
 Using Spot Instances requires that the `AWSServiceRoleForEC2Spot` service-linked role exist in your account. To create this role in your account using the AWS CLI, run the following command:
 
-```
+```bash
 aws iam create-service-linked-role --aws-service-name spot.amazonaws.com
 ```
 For more information, see [Service-linked role for Spot Instance requests](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-requests.html#service-linked-roles-spot-instance-requests) in the *Amazon EC2 User Guide*.
 
 The following example uses SpotInstances for the compute nodes in this queue.
 
-```
+```ini
 compute_type = spot
 ```
 
@@ -79,7 +79,7 @@ compute_type = spot
 
 The default value is `false`.
 
-```
+```ini
 disable_hyperthreading = true
 ```
 
@@ -90,7 +90,7 @@ disable_hyperthreading = true
 
 **(Optional)** If set to `true`, specifies that Elastic Fabric Adapter (EFA) is enabled for the nodes in this queue. To view the list of EC2 instances that support EFA, see [Supported instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html#efa-instance-types) in the *Amazon EC2 User Guide for Linux Instances*. If the [`enable_efa`](cluster-definition.md#enable-efa) setting in the [`[cluster]` section](cluster-definition.md) is defined, then this setting cannot be defined. A cluster placement group should be used to minimize latencies between instances. For more information, see [`placement`](cluster-definition.md#placement) and [`placement_group`](cluster-definition.md#placement-group).
 
-```
+```ini
 enable_efa = true
 ```
 
@@ -106,7 +106,7 @@ AWS ParallelCluster version 2.10.0 through 2.11.2: If `true`, specifies that Ela
 
 The default value is `false`.
 
-```
+```ini
 enable_efa_gdr = true
 ```
 
@@ -132,7 +132,7 @@ There is no default value.
 
 Not all instance types support cluster placement groups. For example, `t2.micro` doesn't support cluster placement groups. For information about the list of instance types that support cluster placement groups, see [Cluster placement group rules and limitations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html#placement-groups-limitations-cluster) in the *Amazon EC2 User Guide*. See [Placement groups and instance launch issues](troubleshooting.md#placement-groups-and-instance-launch-issues) for tips when working with placement groups.
 
-```
+```ini
 placement_group = DYNAMIC
 ```
 

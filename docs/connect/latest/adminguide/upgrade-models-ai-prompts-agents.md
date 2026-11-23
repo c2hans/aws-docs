@@ -108,7 +108,7 @@ Some AI agent types support multiple prompt types. For example, an Answer recomm
 
 Update the AI prompt with the new model:
 
-```
+```json
 aws qconnect update-ai-prompt \
   --assistant-id {{assistant-id}} \
   --ai-prompt-id {{custom-prompt-id}} \
@@ -117,7 +117,7 @@ aws qconnect update-ai-prompt \
 
 Publish a new version of the prompt:
 
-```
+```json
 aws qconnect create-ai-prompt-version \
   --assistant-id {{assistant-id}} \
   --ai-prompt-id {{custom-prompt-id}}
@@ -125,7 +125,7 @@ aws qconnect create-ai-prompt-version \
 
 Update the AI agent to reference the new prompt version:
 
-```
+```json
 aws qconnect update-ai-agent \
   --assistant-id {{assistant-id}} \
   --ai-agent-id {{custom-agent-id}} \
@@ -138,7 +138,7 @@ aws qconnect update-ai-agent \
 
 Publish a new version of the AI agent:
 
-```
+```json
 aws qconnect create-ai-agent-version \
   --assistant-id {{assistant-id}} \
   --ai-agent-id {{custom-agent-id}}
@@ -146,7 +146,7 @@ aws qconnect create-ai-agent-version \
 
 Set the new AI agent version as the default:
 
-```
+```json
 aws qconnect update-assistant-ai-agent \
   --assistant-id {{assistant-id}} \
   --ai-agent-type {{AGENT_TYPE}} \
@@ -207,7 +207,7 @@ When an Amazon Connect instance is created, each use case is automatically confi
 ### Upgrade using the AWS CLI
 <a name="upgrade-models-scenario-3-cli"></a>
 
-```
+```json
 aws qconnect update-assistant-ai-agent \
   --assistant-id {{assistant-id}} \
   --ai-agent-type {{AGENT_TYPE}} \

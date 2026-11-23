@@ -11,7 +11,7 @@ Starting from the SageMaker AI distributed data parallelism (SMDDP) library v1.4
 
 Initialize the process group as follows.
 
-```
+```py
 import torch.distributed as dist
 import smdistributed.dataparallel.torch.torch_smddp
 
@@ -26,7 +26,7 @@ dist.init_process_group(backend="smddp")
 
 Initialize the process group as follows.
 
-```
+```py
 import deepspeed
 import smdistributed.dataparallel.torch.torch_smddp
 
@@ -36,7 +36,7 @@ deepspeed.init_distributed(dist_backend="smddp")
 **Note**
 To use SMDDP `AllGather` with the `mpirun`-based launchers (`smdistributed` and `pytorchddp`) in [Launching distributed training jobs with SMDDP using the SageMaker Python SDK](data-parallel-use-api.md), you also need to set the following environment variable in your training script.
 
-```
+```py
 export SMDATAPARALLEL_OPTIMIZE_SDP=true
 ```
 

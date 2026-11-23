@@ -25,7 +25,7 @@ Before you can integrate AWS IoT SiteWise and AWS IoT TwinMaker, you must grant 
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [

@@ -74,7 +74,7 @@ aws iot get-thing-connectivity-data --include-socket-information --thing-name my
 
 **Response:**
 
-```
+```JSON
 {
    "thingName": "myThingName",
    "connected": true,
@@ -120,7 +120,7 @@ aws iot get-thing-connectivity-data --include-socket-information --thing-name my
 
 **Authorization Policy Examples**
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [

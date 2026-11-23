@@ -59,7 +59,7 @@ Deployment steps:
 
 1. **Store the service-account API key in SSM.**
 
-   ```
+   ```bash
    aws ssm put-parameter --type SecureString \
      --name /cursor-lambda-workers/cursor-api-key \
      --value "YOUR_SERVICE_ACCOUNT_KEY"
@@ -67,7 +67,7 @@ Deployment steps:
 
 1. **Deploy the stack.** `deploy.sh` builds the controller image and runs `aws cloudformation deploy`.
 
-   ```
+   ```bash
    POOL_NAMES=default ./deploy.sh
    # POOL_NAMES=gpu,default ./deploy.sh
    # ALL_POOLS=true ./deploy.sh
@@ -75,7 +75,7 @@ Deployment steps:
 
 1. **Build the MicroVM image** from `microvm-image/` using the stack outputs. Enable the `ready` and `validate` image hooks and the `run` MicroVM hook so they are captured in the snapshot path.
 
-   ```
+   ```bash
    BUCKET=$(aws cloudformation describe-stacks --stack-name cursor-lambda-workers \
      --query "Stacks[0].Outputs[?OutputKey=='ArtifactBucketName'].OutputValue" --output text)
    BUILD_ROLE=$(aws cloudformation describe-stacks --stack-name cursor-lambda-workers \
@@ -115,7 +115,7 @@ To reach private resources (for example an Amazon Aurora database or Amazon Elas
 
 **Guest logs** – MicroVM logs go to CloudWatch Logs:
 
-```
+```bash
 aws logs tail /aws/lambda/microvms/cursor-pool-worker --follow
 ```
 
@@ -123,7 +123,7 @@ aws logs tail /aws/lambda/microvms/cursor-pool-worker --follow
 
 **Running MicroVMs** – List the running MicroVMs for the image:
 
-```
+```bash
 aws lambda-microvms list-microvms --image-identifier cursor-pool-worker
 ```
 

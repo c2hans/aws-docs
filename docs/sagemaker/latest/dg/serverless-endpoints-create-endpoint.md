@@ -13,7 +13,7 @@ The following example uses the [AWS SDK for Python (Boto3)](https://boto3.amazon
 + For `EndpointName`, enter a name for the endpoint that is unique within a Region in your account.
 + For `EndpointConfigName`, use the name of the endpoint configuration that you created in the previous section.
 
-```
+```python
 response = client.create_endpoint(
     EndpointName="{{<your-endpoint-name>}}",
     EndpointConfigName="{{<your-endpoint-config>}}"

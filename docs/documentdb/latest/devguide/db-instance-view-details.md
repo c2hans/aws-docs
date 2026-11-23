@@ -75,7 +75,7 @@ For certain management features such as cluster and instance lifecycle managemen
 
    Output from this operation looks like the following.
 
-   ```
+   ```json
    {
        "DBInstances": [
            {

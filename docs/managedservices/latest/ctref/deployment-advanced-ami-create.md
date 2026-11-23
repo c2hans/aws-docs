@@ -191,7 +191,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-ami-create-ex-min"></a>
 
-```
+```json
 {
   "InstanceId": "i-01234567890abcdef",
   "AmiName": "MyAMI"
@@ -201,7 +201,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-ami-create-ex-max"></a>
 
-```
+```json
 {
   "InstanceId": "i-12345678",
   "AmiName": "MyAMI",

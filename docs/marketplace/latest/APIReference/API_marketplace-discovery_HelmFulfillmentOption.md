@@ -49,7 +49,7 @@ Type: Array of [HelmOperatingSystem](API_marketplace-discovery_HelmOperatingSyst
 Required: No
 
  ** releaseNotes **   <a name="AWSMarketplaceService-Type-marketplace-discovery_HelmFulfillmentOption-releaseNotes"></a>
-Release notes describing changes in this version of the fulfillment option.
+Release notes that describe the changes in this version of the fulfillment option.
 Type: String
 Required: No
 

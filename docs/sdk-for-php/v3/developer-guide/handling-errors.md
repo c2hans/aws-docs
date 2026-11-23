@@ -13,7 +13,7 @@ The following example uses the `Aws\S3\S3Client`. If there is an error, the exce
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\S3\S3Client;
@@ -23,7 +23,7 @@ use Aws\S3\Exception\S3Exception;
 
  **Sample Code**
 
-```
+```php
 // Create an SDK class used to share configuration across clients.
 $sdk = new Aws\Sdk([
     'region'   => 'us-west-2'
@@ -57,7 +57,7 @@ Exceptions are not thrown when sending asynchronous requests. Instead, you must 
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\S3\S3Client;
@@ -67,7 +67,7 @@ use Aws\S3\Exception\S3Exception;
 
  **Sample Code**
 
-```
+```php
 //Asynchronous Error Handling
 $promise = $s3Client->createBucketAsync(['Bucket' => 'amzn-s3-demo-bucket']);
 $promise->otherwise(function ($reason) {
@@ -84,7 +84,7 @@ You can “unwrap” the promise and cause the exception to be thrown instead.
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\S3\S3Client;
@@ -94,11 +94,11 @@ use Aws\S3\Exception\S3Exception;
 
  **Sample Code**
 
-```
+```php
 $promise = $s3Client->createBucketAsync(['Bucket' => 'amzn-s3-demo-bucket']);
 ```
 
-```
+```php
 //throw exception
 try {
     $result = $promise->wait();

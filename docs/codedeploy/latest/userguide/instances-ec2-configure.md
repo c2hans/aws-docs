@@ -62,7 +62,7 @@ To help you identify the instance profile in the IAM console, you'll see the pre
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -84,7 +84,7 @@ To help you identify the instance profile in the IAM console, you'll see the pre
 **Note**
 We recommend that you restrict this policy to only those Amazon S3 buckets your Amazon EC2 instances must access. Make sure to give access to the Amazon S3 buckets that contain the CodeDeploy agent. Otherwise, an error might occur when the CodeDeploy agent is installed or updated on the instances. To grant the IAM instance profile access to only some CodeDeploy resource kit buckets in Amazon S3, use the following policy, but remove the lines for buckets you want to prevent access to:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [

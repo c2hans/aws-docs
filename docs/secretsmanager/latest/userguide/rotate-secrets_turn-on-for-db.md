@@ -67,7 +67,7 @@ In the resource policy for your rotation function, we recommend that you include
 
 1. Follow the instructions at [Using resource-based policies for Lambda](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html) to add a `aws:sourceAccount` condition.
 
-   ```
+   ```json
    "Condition": {
        "StringEquals": {
            "AWS:SourceAccount": "{{123456789012}}"
@@ -83,7 +83,7 @@ If the secret is encrypted with a KMS key other than the AWS managed key `aws/se
 
 1. Follow the instructions at [Modifying a role permissions policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/roles-managingrole-editing-console.html#roles-modify_permissions-policy) to add a `kms:EncryptionContext:SecretARN` condition.
 
-   ```
+   ```json
    "Condition": {
        "StringEquals": {
            "kms:EncryptionContext:SecretARN": "{{SecretARN}}"

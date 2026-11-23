@@ -42,7 +42,7 @@ The following example uses data from the CATEGORY table in the TICKIT sample dat
 
 To convert the string `Shows` to `Theatre` in the CATGROUP field, use the following example.
 
-```
+```sql
 SELECT catid, catgroup, REPLACE(catgroup, 'Shows', 'Theatre')
 FROM category
 ORDER BY 1,2,3;

@@ -101,7 +101,7 @@ If you prefer to migrate without the skill, or your agent is not eligible for th
 #### Step 1: Create and configure
 <a name="agents-maintenance-mode-step1"></a>
 
-```
+```bash
 agentcore create --name my-research-agent
 ```
 
@@ -113,7 +113,7 @@ If you have an existing Bedrock Agent you want to replicate, review its configur
 
 Add tools:
 
-```
+```bash
 agentcore add tool --harness my-research-agent \
   --type agentcore_browser --name browser
 agentcore add tool --harness my-research-agent \
@@ -122,7 +122,7 @@ agentcore add tool --harness my-research-agent \
 
 To connect existing action groups through gateway:
 
-```
+```bash
 agentcore add tool --harness my-research-agent \
   --type agentcore_gateway --name my-gateway \
   --gateway-arn arn:aws:bedrock-agentcore:us-west-2:123456789012:gateway/my-gw
@@ -131,7 +131,7 @@ agentcore add tool --harness my-research-agent \
 #### Step 2: Configure model and system prompt
 <a name="agents-maintenance-mode-step2"></a>
 
-```
+```bash
 agentcore add harness \
   --name my-research-agent \
   --model-id us.anthropic.claude-sonnet-4-6-20250514-v1:0 \
@@ -142,7 +142,7 @@ agentcore add harness \
 #### Step 3: Deploy and invoke
 <a name="agents-maintenance-mode-step3"></a>
 
-```
+```bash
 agentcore deploy
 agentcore invoke --harness my-research-agent \
   --session-id "$(uuidgen)" \
@@ -151,7 +151,7 @@ agentcore invoke --harness my-research-agent \
 
 Override model on any invocation without redeploying:
 
-```
+```bash
 agentcore invoke --harness my-research-agent \
   --model-id us.anthropic.claude-opus-4-5-20251101-v1:0 \
   "Summarize this research paper"
@@ -162,7 +162,7 @@ agentcore invoke --harness my-research-agent \
 
 Enabled by default. To scope memory to individual users, pass `--actor-id`:
 
-```
+```bash
 agentcore invoke --harness my-research-agent \
   --session-id "$(uuidgen)" --actor-id alice \
   "What did we discuss about the Portugal trip?"

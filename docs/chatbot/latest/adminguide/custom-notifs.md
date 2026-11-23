@@ -29,7 +29,7 @@ You can generate custom notifications from Lambda functions, your applications, 
 
  Amazon Q Developer in chat applications custom notifications must use the following event format:
 
-```
+```json
 {
     "version": String,
     "source": String,
@@ -101,7 +101,7 @@ You can generate custom notifications from Lambda functions, your applications, 
 
  The following custom notification example creates a simple notification that contains only mandatory schema parameters when published to an Amazon SNS topic.
 
-```
+```json
 {
     "version": "1.0",
     "source": "custom",
@@ -116,7 +116,7 @@ You can generate custom notifications from Lambda functions, your applications, 
 
  The following custom notification example creates a complex notification when published to an Amazon SNS topic.
 
-```
+```json
   {
     "version": "1.0",
     "source": "custom",
@@ -157,7 +157,7 @@ You can generate custom notifications from Lambda functions, your applications, 
 
  If you use OpenAPI, you can use the following OpenAPI schema to generate custom notification resources for use in source code.
 
-```
+```yaml
 openapi: 3.0.0
 info:
   title: Custom Notifications Payload Schema

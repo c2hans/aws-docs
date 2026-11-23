@@ -12,7 +12,7 @@ After you install AWS ParallelCluster, complete the following configuration step
 
 1. Set up your AWS credentials. For more information, see [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) in the *AWS CLI user guide*.
 
-   ```
+   ```sh
    $ aws configure
    AWS Access Key ID [None]: {{AKIAIOSFODNN7EXAMPLE}}
    AWS Secret Access Key [None]: {{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
@@ -316,7 +316,7 @@ When you have completed the preceding steps, a simple cluster launches into a VP
 
 When all settings contain valid values, you can launch the cluster by running the create command.
 
-```
+```bash
 $ pcluster create-cluster --cluster-name {{test-cluster}} --cluster-configuration cluster-config.yaml
 {
   "cluster": {
@@ -357,7 +357,7 @@ $ pcluster delete-cluster --region {{us-east-1}} --cluster-name {{test-cluster}}
 
 After the cluster is deleted, you can delete the network resources in the VPC by deleting the CloudFormation networking stack. The stack's name starts with "parallelclusternetworking-" and contains the creation time in "YYYYMMDDHHMMSS" format. You can list the stacks using the [`list-stacks`](https://docs.aws.amazon.com/goto/aws-cli/cloudformation-2010-05-15/ListStacks) command.
 
-```
+```bash
 $ aws --region {{us-east-1}} cloudformation list-stacks \
    --stack-status-filter "CREATE_COMPLETE" \
    --query "StackSummaries[].StackName" | \

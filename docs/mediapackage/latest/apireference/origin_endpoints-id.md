@@ -115,7 +115,7 @@ Enable CORS by returning correct headers.
 #### PUT schema
 <a name="origin_endpoints-id-request-body-put-example"></a>
 
-```
+```json
 {
   "authorization": {
     "cdnIdentifierSecret": "string",
@@ -283,7 +283,7 @@ Enable CORS by returning correct headers.
 #### OriginEndpoint schema
 <a name="origin_endpoints-id-response-body-originendpoint-example"></a>
 
-```
+```json
 {
   "startoverWindowSeconds": integer,
   "manifestName": "string",

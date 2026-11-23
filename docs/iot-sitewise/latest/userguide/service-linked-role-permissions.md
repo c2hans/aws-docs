@@ -18,7 +18,7 @@ For more information on the allowed actions in `AWSServiceRoleForIoTSiteWise`, s
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -80,7 +80,7 @@ For more information on the allowed actions in `AWSServiceRoleForIoTSiteWise`, s
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -142,7 +142,7 @@ For more information on the allowed actions in `AWSServiceRoleForIoTSiteWise`, s
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

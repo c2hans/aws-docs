@@ -69,17 +69,17 @@ Because this template doesn't fall back to `_phone` for matching, it can create 
 <a name="ctr-contact-record-template-usage-examples"></a>
 + CTR-NoInferred:
 
-  ```
+  ```bash
   aws customer-profiles put-profile-object-type --domain-name {domain} --object-type-name CTR --description "Creates inferred profiles and auto-associates profiles" --template-id CTR-NoInferred
   ```
 + CTR-AutoAssociateOnly:
 
-  ```
+  ```bash
   aws customer-profiles put-profile-object-type --domain-name {domain} --object-type-name CTR --description "Auto-associate with profiles only" --template-id CTR-AutoAssociateOnly
   ```
 + CTR:
 
-  ```
+  ```bash
   aws customer-profiles put-profile-object-type --domain-name {domain} --object-type-name CTR --description "Creates inferred profiles only" --template-id CTR
   ```
 

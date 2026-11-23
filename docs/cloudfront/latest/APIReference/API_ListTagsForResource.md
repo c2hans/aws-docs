@@ -20,7 +20,7 @@ The request uses the following URI parameters.
 
  ** [Resource](#API_ListTagsForResource_RequestSyntax) **   <a name="cloudfront-ListTagsForResource-request-uri-Resource"></a>
 An ARN of a CloudFront resource.
-Pattern: `arn:aws(-cn)?:cloudfront::[0-9]+:.*`
+Pattern: `arn:aws(-[a-z]+)*:cloudfront::[0-9]{12}:.*`
 Required: Yes
 
 ## Request Body

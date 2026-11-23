@@ -17,7 +17,7 @@ You can disable federation by using the CloudTrail console, AWS CLI, or [Disable
 
 There are no CloudTrail charges for federating a CloudTrail Lake event data store. There are costs for running queries in Amazon Athena. For more information about Athena pricing, see [Amazon Athena Pricing](https://aws.amazon.com/athena/pricing/).
 
-[![AWS Videos](https://img.youtube.com/vi/cOeZaJt_k-w?si=4LsEgq23NNHSJAAg/0.jpg)](https://www.youtube.com/watch?v=cOeZaJt_k-w?si=4LsEgq23NNHSJAAg)
+[![AWS Videos](https://img.youtube.com/vi/cOeZaJt_k-w/0.jpg)](https://www.youtube.com/watch?v=cOeZaJt_k-w)
 
 **Topics**
 + [Considerations](#query-federation-considerations)
@@ -66,7 +66,7 @@ The second statement in this policy allows Lake Formation to decrypt data for an
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -98,7 +98,7 @@ The following example provides the IAM trust policy, which allows AWS Lake Forma
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -125,7 +125,7 @@ The following example policy provides the minimum required permissions to enable
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -184,7 +184,7 @@ The following example policy provides the minimum required resources to disable 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

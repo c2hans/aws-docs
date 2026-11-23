@@ -20,13 +20,13 @@ To associate a CodeCommit repository in a different AWS account with your notebo
 
    1. Edit a new profile by typing the following in the terminal:
 
-      ```
+      ```sh
       vi /home/ec2-user/.aws/config
       ```
 
    1. Edit the file with the following profile information:
 
-      ```
+      ```sh
       [profile {{CrossAccountAccessProfile}}]
       region = us-west-2
       role_arn = arn:aws:iam::{{CodeCommitAccount}}:role/{{CrossAccountRepositoryContributorRole}}
@@ -44,13 +44,13 @@ To associate a CodeCommit repository in a different AWS account with your notebo
 
    1. Edit the Git configuration file typing the following in the terminal:
 
-      ```
+      ```sh
       vi /home/ec2-user/.gitconfig
       ```
 
    1. Edit the file with the following profile information:
 
-      ```
+      ```sh
       [credential]
               helper = !aws codecommit credential-helper --profile {{CrossAccountAccessProfile}} $@
               UseHttpPath = true

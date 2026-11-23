@@ -48,7 +48,7 @@ The request accepts the following data in JSON format.
 The catalog related to the request. Fixed value: `AWSMarketplace`
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[a-zA-Z]+$`
+Pattern: `^(?![.-])(?!.*[.-]{2})(?![0-9]+\.[0-9.]+$)[a-zA-Z0-9.-]{1,47}(?<![.-])$`
 Required: Yes
 
  ** [EntityType](#API_ListEntities_RequestSyntax) **   <a name="AWSMarketplaceService-ListEntities-request-EntityType"></a>
@@ -125,6 +125,10 @@ Content-type: application/json
          "EntityArn": "string",
          "EntityId": "string",
          "EntityType": "string",
+         "ExpressPrivateOfferConfigurationSummary": {
+            "ProductId": "string",
+            "State": "string"
+         },
          "LastModifiedDate": "string",
          "MachineLearningProductSummary": {
             "ProductTitle": "string",
@@ -148,6 +152,7 @@ Content-type: application/json
             "ReleaseDate": "string",
             "ResaleAuthorizationId": "string",
             "State": "string",
+            "SubsidiaryAuthorizationId": "string",
             "TargetAgreementId": "string",
             "TargetAgreementIntent": "string",
             "Targeting": [ "string" ]
@@ -155,6 +160,7 @@ Content-type: application/json
          "ResaleAuthorizationSummary": {
             "AvailabilityEndDate": "string",
             "CreatedDate": "string",
+            "IssuerAccountId": "string",
             "ManufacturerAccountId": "string",
             "ManufacturerLegalName": "string",
             "Name": "string",
@@ -164,6 +170,7 @@ Content-type: application/json
             "ResellerAccountID": "string",
             "ResellerLegalName": "string",
             "ResellerRole": "string",
+            "SourceAuthorization": "string",
             "Status": "string"
          },
          "SaaSProductSummary": {
@@ -230,6 +237,8 @@ HTTP Status Code: 429
  ** ValidationException **
 An error occurred during validation.
 HTTP status code: 422
+ ** ValidationExceptionFieldList **
+A list of detailed entries describing the request fields that failed validation. Present when the failure can be attributed to one or more specific fields.
 HTTP Status Code: 422
 
 ## See Also

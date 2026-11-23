@@ -38,7 +38,7 @@ For more information, see [Working with custom inventory](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This example assigns rack location information to an instance. There is no output if the command succeeds.**
 
-```
+```powershell
 $data = New-Object "System.Collections.Generic.Dictionary[System.String,System.String]"
 $data.Add("RackLocation", "Bay B/Row C/Rack D/Shelf F")
 
@@ -60,7 +60,7 @@ Write-SSMInventory -InstanceId "i-0cb2b964d3e14fd9f" -Item $inventoryItems
 **Tools for PowerShell V5**
 **Example 1: This example assigns rack location information to an instance. There is no output if the command succeeds.**
 
-```
+```powershell
 $data = New-Object "System.Collections.Generic.Dictionary[System.String,System.String]"
 $data.Add("RackLocation", "Bay B/Row C/Rack D/Shelf F")
 

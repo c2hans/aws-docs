@@ -6,7 +6,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 # `list_clusters`
 
-```
+```python
 list_clusters(region, next_token, cluster_status)
 ```
 

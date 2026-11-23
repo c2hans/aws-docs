@@ -13,7 +13,7 @@ To implement RBAC in AWS KMS, we recommend separating the permissions for key us
 
 The following key policy example allows the `ExampleUserRole` IAM role to use the KMS key.
 
-```
+```json
 {
             "Sid": "Allow use of the key",
             "Effect": "Allow",
@@ -41,7 +41,7 @@ The following key policy example allows the `ExampleUserRole` IAM role to use th
 
 The following key policy example allows the `ExampleAdminRole` IAM role to administer the KMS key.
 
-```
+```json
 {
             "Sid": "Allow access for Key Administrators",
             "Effect": "Allow",

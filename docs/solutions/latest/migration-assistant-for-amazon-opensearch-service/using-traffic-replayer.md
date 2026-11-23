@@ -14,7 +14,7 @@ Traffic Replayer replays captured traffic from the source cluster to the Amazon 
 
 If you already have captured traffic exported from a Migration Assistant Kafka topic, configure it under `traffic.s3Sources`. The workflow loads the `*.proto.gz` archive into Kafka and replays that topic without creating a live capture proxy. Set the replayer’s `fromCapturedTraffic` field to the `s3Sources` key. The same `fromCapturedTraffic` field also references `traffic.proxies` when you replay live captured traffic.
 
-```
+```json
 {
   "kafkaClusterConfiguration": {
     "default": {
@@ -76,7 +76,7 @@ Run Traffic Replayer only after the backfill work it depends on has completed. I
 ## Starting replay
 <a name="start-replayer"></a>
 
-```
+```bash
 workflow submit
 workflow manage
 ```
@@ -88,7 +88,7 @@ The legacy `console replay start` command controls a directly configured replaye
 ## Checking replay status
 <a name="replayer-status"></a>
 
-```
+```bash
 workflow status --resource-view
 workflow log resource trafficreplay.<NAME> -- --tail=100
 ```
@@ -100,7 +100,7 @@ If you are using a legacy directly configured replayer, `console replay status` 
 ## Stopping or replacing replay
 <a name="stop-replayer"></a>
 
-```
+```bash
 workflow submit
 ```
 
@@ -131,7 +131,7 @@ Traffic Replayer automatically rewrites host and authentication headers. For mor
 
 Traffic Replayer can write tuple audit records for HTTP transactions from the source capture and those replayed to the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection. For Amazon EKS workflow runs, configure tuple output to Amazon S3. The following fragment shows only the relevant fields; keep the rest of the replayer configuration unchanged:
 
-```
+```json
 {
   "traffic": {
     "replayers": {
@@ -148,14 +148,14 @@ Traffic Replayer can write tuple audit records for HTTP transactions from the so
 
 You can use the Migration Assistant-managed default bucket. Retrieve its name and Region from the `migrations-default-s3-config` ConfigMap:
 
-```
+```bash
 kubectl get configmap migrations-default-s3-config -n ma \
   -o jsonpath='{.data.BUCKET_NAME}{"\n"}{.data.AWS_REGION}{"\n"}'
 ```
 
 S3 tuple objects are gzip-compressed JSON Lines. The default S3 prefix is `tuples/`, and object keys use this structure:
 
-```
+```text
 <tupleS3Prefix><replayer-pod>/<yyyy/MM/dd/HH>/tuples-<sink-index>-<timestamp>-<sequence>.log.gz
 ```
 
@@ -165,7 +165,7 @@ Use `tupleS3Prefix`, `tupleS3Endpoint`, `tupleMaxBufferSeconds`, `tupleMaxFileSi
 
 To view logs in human-readable format:
 
-```
+```bash
 find /s3/artifacts/tuples -name 'tuples-*.log.gz' -print
 
 gzip -dc /s3/artifacts/tuples/<REPLAYER_POD>/<YYYY>/<MM>/<DD>/<HH>/tuples-<SINK>-<TIMESTAMP>-<SEQ>.log.gz \

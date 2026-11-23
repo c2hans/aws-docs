@@ -10,7 +10,7 @@ If environment variables are not set, the provider will use the default profile,
 
 The provider is called as part of the default chain and can be called directly.
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 use Aws\S3\S3Client;
 
@@ -28,7 +28,7 @@ $client = new S3Client([
 
 By default, this credential provider will inherit the configured region which will be used by the StsClient to assume the role. Optionally, a full StsClient can be provided. Credentials should be set as `false` on any provided StsClient.
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 use Aws\S3\S3Client;
 use Aws\Sts\StsClient;

@@ -38,7 +38,7 @@ When a target has a `stickinessConfiguration`, the gateway resolves the session 
 
 The following example creates a passthrough target with a `stickinessConfiguration` that extracts the session ID from a custom `x-session-id` header and expires session affinity after 8 hours (28800 seconds):
 
-```
+```bash
 aws bedrock-agentcore-control create-gateway-target --cli-input-json '{
     "gatewayIdentifier": "GATEWAY_ID",
     "name": "my-passthrough-target",

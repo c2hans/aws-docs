@@ -37,7 +37,7 @@ Required: Yes
  ** memberType **   <a name="securityagent-Type-MembershipSummary-memberType"></a>
 The type of member.
 Type: String
-Valid Values: `USER`
+Valid Values: `USER | GROUP`
 Required: Yes
 
  ** updatedAt **   <a name="securityagent-Type-MembershipSummary-updatedAt"></a>

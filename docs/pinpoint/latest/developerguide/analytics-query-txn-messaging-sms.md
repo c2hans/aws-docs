@@ -19,7 +19,7 @@ The following examples show how to query analytics data for transactional SMS me
 
 To query analytics data for transactional SMS messages by using the Amazon Pinpoint REST API, send an HTTP(S) GET request to the [Application Metrics](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-kpis-daterange-kpi-name.html) URI. In the URI, specify the appropriate values for the required path parameters:
 
-```
+```HTTP
 https://{{endpoint}}/v1/apps/{{application-id}}/kpis/daterange/{{kpi-name}}
 ```
 
@@ -34,7 +34,7 @@ To apply a filter that retrieves the data for a specific date range, append the 
 
 For example, the following request retrieves the number of transactional SMS messages that were sent each day from September 6, 2019 through September 8, 2019:
 
-```
+```HTTP
 https://pinpoint.us-east-1.amazonaws.com/v1/apps/1234567890123456789012345example/kpis/daterange/txn-sms-sent-grouped-by-date?start-time=2019-09-06T00:00:00Z&end-time=2019-09-08T23:59:59Z
 ```
 
@@ -81,7 +81,7 @@ Where:
 
 To query analytics data for transactional SMS messages by using the AWS SDK for Java, use the **GetApplicationDateRangeKpiRequest** method of the [Application Metrics](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-kpis-daterange-kpi-name.html) API, and specify the appropriate values for the required parameters:
 
-```
+```java
 GetApplicationDateRangeKpiRequest request = new GetApplicationDateRangeKpiRequest()
         .withApplicationId("{{applicationId}}")
         .withKpiName("{{kpiName}}")
@@ -93,7 +93,7 @@ Where:
 
 To apply a filter that retrieves the data for a specific date range, include the `startTime` and `endTime` parameters and values in your query. By using these parameters, you can specify the first and last date and time, in extended ISO 8601 format, of an inclusive date range to retrieve the data for. For example, the following request retrieves the number of transactional SMS messages that were sent each day from September 6, 2019 through September 8, 2019:
 
-```
+```java
 GetApplicationDateRangeKpiRequest request = new GetApplicationDateRangeKpiRequest()
         .withApplicationId("1234567890123456789012345example")
         .withKpiName("txn-sms-sent-grouped-by-date")
@@ -113,7 +113,7 @@ After you send your query, Amazon Pinpoint returns the query results in a JSON r
 
 For example, the *sends, grouped by date* (`txn-sms-sent-grouped-by-date`) application metric, which is used in the preceding examples, returns multiple values—the number of transactional SMS messages that were sent during each day of the specified date range. In this case, the JSON response is the following:
 
-```
+```json
 {
     "ApplicationDateRangeKpiResponse":{
         "ApplicationId":"1234567890123456789012345example",

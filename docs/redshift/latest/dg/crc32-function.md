@@ -31,7 +31,7 @@ The CRC32 function returns an 8-character string that is a text representation o
 
 To show the 8-bit value for the string `Amazon Redshift`.
 
-```
+```sql
 SELECT CRC32('Amazon Redshift');
 
 +----------+

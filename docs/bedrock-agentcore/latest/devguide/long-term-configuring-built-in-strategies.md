@@ -21,7 +21,7 @@ The [user preferences](user-preference-memory-strategy.md) ( `UserPreferenceMemo
 
  **Configuration example:**
 
-```
+```python
 import boto3
 
 # Initialize the Boto3 client for control plane operations
@@ -49,7 +49,7 @@ The [Semantic](semantic-memory-strategy.md) ( `SemanticMemoryStrategy` ) memory 
 
  **Configuration example:**
 
-```
+```python
 import boto3
 
 # Initialize the Boto3 client for control plane operations
@@ -77,7 +77,7 @@ The [session summaries](summary-strategy.md) ( `SummaryMemoryStrategy` ) memory 
 
  **Configuration example:**
 
-```
+```python
 import boto3
 
 # Initialize the Boto3 client for control plane operations
@@ -105,7 +105,7 @@ The [episodic](episodic-memory-strategy.md) ( `EpisodicStrategy` ) memory strate
 
  **Configuration example:**
 
-```
+```python
 import boto3
 
 # Initialize the Boto3 client for control plane operations

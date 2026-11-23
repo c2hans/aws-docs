@@ -34,8 +34,9 @@ Required: No
 The status of a job.
 +  `CREATED` – Job has just been created.
 +  `PROCESSING` – Job is processing.
-+  `ERROR` – An error occurred during processing.
 +  `COMPLETED` – Job has completed processing successfully.
++  `FAILED` – An error occurred during processing.
++  `CANCELLED` – Job has been canceled.
 Type: String
 Valid Values: `CREATED | PROCESSING | COMPLETED | FAILED | CANCELLED`
 Required: No

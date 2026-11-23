@@ -47,7 +47,7 @@ Call the `CreateJobTemplateCommand` method by creating a promise for invoking an
 **Note**
 Replace {{JOB\_QUEUE\_ARN}} with the Amazon Resource Name (ARN) of the job queue to check, and {{BUCKET\_NAME}} with the name of the destination Amazon S3 bucket - for example, "s3://BUCKET\_NAME/".
 
-```
+```javascript
 // Import required AWS-SDK clients and commands for Node.js
 import { CreateJobTemplateCommand } from "@aws-sdk/client-mediaconvert";
 import { emcClient } from "./libs/emcClient.js";
@@ -195,7 +195,7 @@ run();
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node emc_create_jobtemplate.js
 ```
 
@@ -211,7 +211,7 @@ Create the job creation parameters JSON, including the name of the job template 
 **Note**
 Replace {{JOB\_QUEUE\_ARN}} with the Amazon Resource Name (ARN) of the job queue to check, {{KEY\_PAIR\_NAME}} with, {{TEMPLATE\_NAME}} with, {{ROLE\_ARN}} with the Amazon Resource Name (ARN) of the role, and {{ INPUT\_BUCKET\_AND\_FILENAME}} with the input bucket and filename - for example, "s3://BUCKET\_NAME/FILE\_NAME".
 
-```
+```javascript
 // Import required AWS-SDK clients and commands for Node.js
 import { CreateJobCommand } from "@aws-sdk/client-mediaconvert";
 import { emcClient } from "./libs/emcClient.js";
@@ -261,7 +261,7 @@ run();
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node emc_template_createjob.js
 ```
 
@@ -274,7 +274,7 @@ Create a Node.js module with the file name `emc_listtemplates.js`. Be sure to co
 
 Create an object to pass the request parameters for the `listTemplates` method of the `MediaConvert` client class. Include values to determine what templates to list (`NAME`, `CREATION DATE`, `SYSTEM`), how many to list, and their sort order. To call the `ListTemplatesCommand` method, create a promise for invoking an MediaConvert client service object, passing the parameters.
 
-```
+```javascript
 // Import required AWS-SDK clients and commands for Node.js
 import { ListJobTemplatesCommand } from "@aws-sdk/client-mediaconvert";
 import { emcClient } from "./libs/emcClient.js";
@@ -299,7 +299,7 @@ run();
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node emc_listtemplates.js
 ```
 
@@ -312,7 +312,7 @@ Create a Node.js module with the file name `emc_deletetemplate.js`. Be sure to c
 
 Create an object to pass the name of the job template you want to delete as parameters for the `DeleteJobTemplateCommand` method of the `MediaConvert` client class. To call the `DeleteJobTemplateCommand` method, create a promise for invoking an MediaConvert client service object, passing the parameters.
 
-```
+```javascript
 // Import required AWS-SDK clients and commands for Node.js
 import { DeleteJobTemplateCommand } from "@aws-sdk/client-mediaconvert";
 import { emcClient } from "./libs/emcClient.js";
@@ -337,7 +337,7 @@ run();
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node emc_deletetemplate.js
 ```
 

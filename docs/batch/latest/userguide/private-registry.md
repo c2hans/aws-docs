@@ -20,7 +20,7 @@ When using the AWS Batch API, AWS CLI, or AWS SDK, if the secret exists in the s
 
 The following is a snippet of a job definition that shows the required parameters:
 
-```
+```json
 "containerProperties": [
   {
     "image": "{{private-repo/private-image}}",

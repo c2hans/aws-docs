@@ -29,7 +29,7 @@ $ cdk init app --language typescript
  **Step 2: Add a Lambda function to your application**
 Replace the code in `lib/cdk-sam-example-stack.ts` with the following:
 
-```
+```typescript
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as lambda from 'aws-cdk-lib/aws-lambda';

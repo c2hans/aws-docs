@@ -21,6 +21,6 @@ You can also disable only the `$spectrum_oid` pseudocolumn by setting the `enabl
 
 The following command disables the `$spectrum_oid` pseudocolumn by setting the `enable_spectrum_oid` configuration parameter to `false`.
 
-```
+```SQL
 set enable_spectrum_oid to false;
 ```

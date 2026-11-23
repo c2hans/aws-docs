@@ -12,7 +12,7 @@ The following code examples show how to use `DescribeAddresses`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Describe all Elastic IP addresses.
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -220,7 +220,7 @@ For more information, see [Elastic IP addresses](https://docs.aws.amazon.com/AWS
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { DescribeAddressesCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -259,7 +259,7 @@ export const main = async ({ allocationId }) => {
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified Elastic IP address for instances in EC2-Classic.**
 
-```
+```powershell
 Get-EC2Address -AllocationId eipalloc-12345678
 ```
 **Output:**
@@ -276,12 +276,12 @@ PublicIp                : 198.51.100.2
 ```
 **Example 2: This example describes your Elastic IP addresses for instances in a VPC. This syntax requires PowerShell version 3 or later.**
 
-```
+```powershell
 Get-EC2Address -Filter @{ Name="domain";Values="vpc" }
 ```
 **Example 3: This example describes the specified Elastic IP address for instances in EC2-Classic.**
 
-```
+```powershell
 Get-EC2Address -PublicIp 203.0.113.17
 ```
 **Output:**
@@ -298,17 +298,17 @@ PublicIp                : 203.0.113.17
 ```
 **Example 4: This example describes your Elastic IP addresses for instances in EC2-Classic. This syntax requires PowerShell version 3 or later.**
 
-```
+```powershell
 Get-EC2Address -Filter @{ Name="domain";Values="standard" }
 ```
 **Example 5: This example describes all your Elastic IP addresses.**
 
-```
+```powershell
 Get-EC2Address
 ```
 **Example 6: This example returns the public and private IP for the instance id provided in filter**
 
-```
+```powershell
 Get-EC2Address -Region eu-west-1 -Filter @{Name="instance-id";Values="i-0c12d3f4f567ffb89"} | Select-Object PrivateIpAddress, PublicIp
 ```
 **Output:**
@@ -320,7 +320,7 @@ PrivateIpAddress PublicIp
 ```
 **Example 7: This example retrieves all the Elastic IPs with its allocation id, association id and instance ids**
 
-```
+```powershell
 Get-EC2Address -Region eu-west-1 | Select-Object InstanceId, AssociationId, AllocationId, PublicIp
 ```
 **Output:**
@@ -338,7 +338,7 @@ i-0123bcf4b567890e1 eipassoc-01d2345f678903fb1 eipalloc-0e1db23cfef5c45c7 37.215
 ```
 **Example 8: This example fetches list of EC2 IP addresses matching tag key 'Category' with value 'Prod'**
 
-```
+```powershell
 Get-EC2Address -Filter @{Name="tag:Category";Values="Prod"}
 ```
 **Output:**
@@ -363,7 +363,7 @@ Tags                    : {Category, Name}
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified Elastic IP address for instances in EC2-Classic.**
 
-```
+```powershell
 Get-EC2Address -AllocationId eipalloc-12345678
 ```
 **Output:**
@@ -380,12 +380,12 @@ PublicIp                : 198.51.100.2
 ```
 **Example 2: This example describes your Elastic IP addresses for instances in a VPC. This syntax requires PowerShell version 3 or later.**
 
-```
+```powershell
 Get-EC2Address -Filter @{ Name="domain";Values="vpc" }
 ```
 **Example 3: This example describes the specified Elastic IP address for instances in EC2-Classic.**
 
-```
+```powershell
 Get-EC2Address -PublicIp 203.0.113.17
 ```
 **Output:**
@@ -402,17 +402,17 @@ PublicIp                : 203.0.113.17
 ```
 **Example 4: This example describes your Elastic IP addresses for instances in EC2-Classic. This syntax requires PowerShell version 3 or later.**
 
-```
+```powershell
 Get-EC2Address -Filter @{ Name="domain";Values="standard" }
 ```
 **Example 5: This example describes all your Elastic IP addresses.**
 
-```
+```powershell
 Get-EC2Address
 ```
 **Example 6: This example returns the public and private IP for the instance id provided in filter**
 
-```
+```powershell
 Get-EC2Address -Region eu-west-1 -Filter @{Name="instance-id";Values="i-0c12d3f4f567ffb89"} | Select-Object PrivateIpAddress, PublicIp
 ```
 **Output:**
@@ -424,7 +424,7 @@ PrivateIpAddress PublicIp
 ```
 **Example 7: This example retrieves all the Elastic IPs with its allocation id, association id and instance ids**
 
-```
+```powershell
 Get-EC2Address -Region eu-west-1 | Select-Object InstanceId, AssociationId, AllocationId, PublicIp
 ```
 **Output:**
@@ -442,7 +442,7 @@ i-0123bcf4b567890e1 eipassoc-01d2345f678903fb1 eipalloc-0e1db23cfef5c45c7 37.215
 ```
 **Example 8: This example fetches list of EC2 IP addresses matching tag key 'Category' with value 'Prod'**
 
-```
+```powershell
 Get-EC2Address -Filter @{Name="tag:Category";Values="Prod"}
 ```
 **Output:**
@@ -470,7 +470,7 @@ Tags                    : {Category, Name}
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->describeaddresses( ).                        " oo_result is returned for testing purposes. "
         DATA(lt_addresses) = oo_result->get_addresses( ).

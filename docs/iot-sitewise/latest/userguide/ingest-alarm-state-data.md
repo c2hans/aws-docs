@@ -18,7 +18,7 @@ The following example [BatchPutAssetPropertyValue](https://docs.aws.amazon.com/i
 
 **Example BatchPutAssetPropertyValue payload for alarm state data**
 
-```
+```json
 {
     "entries": [
       {

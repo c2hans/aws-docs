@@ -21,7 +21,7 @@ For more information, see [Searching faces in a collection](https://docs.aws.ama
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
 Create classes that wrap Amazon Rekognition functions.
 
-```
+```python
 import logging
 from pprint import pprint
 import boto3
@@ -429,7 +429,7 @@ class RekognitionFace:
 ```
 Use the wrapper classes to build a collection of faces from a set of images and then search for faces in the collection.
 
-```
+```python
 def usage_demo():
     print("-" * 88)
     print("Welcome to the Amazon Rekognition face collection demo!")

@@ -34,7 +34,7 @@ Specifies the tags to be removed from the resource specified by the ResourceARN.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 200 items.
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^(?!aws:)[\p{L}\p{Z}\p{N}_.:/=+\-@]*$`
+Pattern: `^[\p{L}\p{Z}\p{N}_.:/=+\-@]*$`
 Required: Yes
 
 ## Response Elements

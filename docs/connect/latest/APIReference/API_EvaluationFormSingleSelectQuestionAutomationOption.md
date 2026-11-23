@@ -12,6 +12,11 @@ Information about the automation option of a single select question.
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** AutomationRule **   <a name="connect-Type-EvaluationFormSingleSelectQuestionAutomationOption-AutomationRule"></a>
+The automation option based on a condition for the single select question. Use with the `CONDITION` answer source type.
+Type: [SingleSelectQuestionAutomationRule](API_SingleSelectQuestionAutomationRule.md) object
+Required: No
+
  ** RuleCategory **   <a name="connect-Type-EvaluationFormSingleSelectQuestionAutomationOption-RuleCategory"></a>
 The automation option based on a rule category for the single select question.
 Type: [SingleSelectQuestionRuleCategoryAutomation](API_SingleSelectQuestionRuleCategoryAutomation.md) object

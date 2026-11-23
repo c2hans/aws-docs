@@ -68,7 +68,7 @@ Subscription 2: processor → subscriber
 ------
 #### [ Python ]
 
-```
+```python
 import greengrasssdk
 import json
 
@@ -107,7 +107,7 @@ def lambda_handler(event, context):
 ------
 #### [ Java ]
 
-```
+```java
 import com.amazonaws.greengrass.javasdk.IotDataClient;
 import com.amazonaws.greengrass.javasdk.model.PublishRequest;
 import com.amazonaws.services.lambda.runtime.Context;
@@ -164,7 +164,7 @@ public class TemperatureProcessorLambda {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const greengrasssdk = require('aws-greengrass-core-sdk');
 
 const iotClient = new greengrasssdk.IotData();
@@ -213,7 +213,7 @@ exports.handler = function(event, context) {
 ------
 #### [ C ]
 
-```
+```c
 #include <aws/greengrass/greengrasssdk.h>
 #include <stdio.h>
 #include <string.h>
@@ -300,7 +300,7 @@ int main(int argc, char *argv[]) {
 ------
 #### [ C\+\+ ]
 
-```
+```cpp
 #include <aws/greengrass/greengrasssdk.h>
 #include <iostream>
 #include <string>
@@ -436,7 +436,7 @@ To achieve the same functionality in AWS IoT Greengrass V2, create a generic com
 
 Prerequisites: Before using this component code, install and verify the AWS IoT Device SDK for Python on your Greengrass device:
 
-```
+```bash
 # Install the SDK
 pip3 install awsiotsdk
 
@@ -448,7 +448,7 @@ If you encounter dependency conflicts during installation, try installing a spec
 
 If the verification command prints "SDK installed successfully", you're ready to use the component code:
 
-```
+```python
 from awsiot.greengrasscoreipc.clientv2 import GreengrassCoreIPCClientV2
 from awsiot.greengrasscoreipc.model import (
     PublishMessage,
@@ -515,7 +515,7 @@ if __name__ == '__main__':
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awssdk.aws.greengrass.GreengrassCoreIPCClientV2;
 import software.amazon.awssdk.aws.greengrass.model.PublishMessage;
 import software.amazon.awssdk.aws.greengrass.model.PublishToTopicRequest;
@@ -591,7 +591,7 @@ public class TemperatureProcessor {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const greengrasscoreipc = require('aws-iot-device-sdk-v2').greengrasscoreipc;
 
 class TemperatureProcessor {
@@ -678,7 +678,7 @@ processor.start();
 ------
 #### [ C ]
 
-```
+```c
 #include <gg/buffer.h>
 #include <gg/error.h>
 #include <gg/ipc/client.h>
@@ -827,7 +827,7 @@ int main(void) {
 ------
 #### [ C\+\+ ]
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <gg/buffer.hpp>
 #include <gg/object.hpp>
@@ -988,7 +988,7 @@ To build an executable JAR with all dependencies bundled:
 
 1. Create a `pom.xml` file in your project directory:
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <project xmlns="http://maven.apache.org/POM/4.0.0"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -1057,7 +1057,7 @@ To build an executable JAR with all dependencies bundled:
 
 1. Build the JAR:
 
-   ```
+   ```bash
    mvn clean package
    ```
 
@@ -1072,7 +1072,7 @@ To package your Node.js component with all dependencies:
 
 1. Create a `package.json` file:
 
-   ```
+   ```json
    {
      "name": "temperature-processor",
      "version": "1.0.0",
@@ -1089,7 +1089,7 @@ To package your Node.js component with all dependencies:
 
 1. Install dependencies on your development machine:
 
-   ```
+   ```bash
    npm install
    ```
 
@@ -1097,7 +1097,7 @@ To package your Node.js component with all dependencies:
 
 1. Package for deployment:
 
-   ```
+   ```bash
    zip -r TemperatureProcessor.zip TemperatureProcessor.js node_modules/ package.json
    ```
 
@@ -1120,19 +1120,19 @@ To build the SDK and the component, you will need the following build dependenci
 
 On Ubuntu/Debian:
 
-```
+```bash
 sudo apt install build-essential cmake
 ```
 
 On Amazon Linux:
 
-```
+```bash
 sudo yum install gcc cmake make
 ```
 
 **Create a CMakeLists.txt file for your component:**
 
-```
+```cmake
 cmake_minimum_required(VERSION 3.10)
 project(TemperatureProcessor C)
 
@@ -1148,7 +1148,7 @@ target_link_libraries(temperature_processor gg-sdk)
 
 **Build steps:**
 
-```
+```bash
 # Clone the AWS Greengrass Component SDK into your project
 git clone https://github.com/aws-greengrass/aws-greengrass-component-sdk.git
 
@@ -1174,19 +1174,19 @@ To build the SDK and the component, you will need the following build dependenci
 
 On Ubuntu/Debian:
 
-```
+```bash
 sudo apt install build-essential cmake
 ```
 
 On Amazon Linux:
 
-```
+```bash
 sudo yum install gcc-c++ cmake make
 ```
 
 **Create a CMakeLists.txt file for your component:**
 
-```
+```cmake
 cmake_minimum_required(VERSION 3.10)
 project(TemperatureProcessor CXX)
 
@@ -1204,7 +1204,7 @@ target_link_libraries(temperature_processor gg-sdk++)
 
 **Build steps:**
 
-```
+```bash
 # Clone the AWS Greengrass Component SDK into your project
 git clone https://github.com/aws-greengrass/aws-greengrass-component-sdk.git
 
@@ -1226,7 +1226,7 @@ Update the "resources" array with the actual topics your component uses.
 ------
 #### [ Python ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.TemperatureProcessor",
@@ -1282,7 +1282,7 @@ Update the "resources" array with the actual topics your component uses.
 ------
 #### [ Java ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.TemperatureProcessor",
@@ -1338,7 +1338,7 @@ Update the "resources" array with the actual topics your component uses.
 ------
 #### [ JavaScript ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.TemperatureProcessor",
@@ -1395,7 +1395,7 @@ Update the "resources" array with the actual topics your component uses.
 ------
 #### [ C/C\+\+ ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.TemperatureProcessor",
@@ -1486,7 +1486,7 @@ Subscription 2: Lambda → IoT Cloud
 ------
 #### [ Python ]
 
-```
+```python
 import greengrasssdk
 import json
 import time
@@ -1533,7 +1533,7 @@ def get_device_status():
 ------
 #### [ Java ]
 
-```
+```java
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.greengrass.javasdk.IotDataClient;
 import com.amazonaws.greengrass.javasdk.model.PublishRequest;
@@ -1597,7 +1597,7 @@ public class DeviceControllerLambda {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const greengrasssdk = require('aws-greengrass-core-sdk');
 
 const iotClient = new greengrasssdk.IotData();
@@ -1646,7 +1646,7 @@ exports.handler = function(event, context) {
 ------
 #### [ C ]
 
-```
+```c
 #include <aws/greengrass/greengrasssdk.h>
 #include <stdio.h>
 #include <string.h>
@@ -1743,7 +1743,7 @@ int main(int argc, char *argv[]) {
 ------
 #### [ C\+\+ ]
 
-```
+```cpp
 #include <aws/greengrass/greengrasssdk.h>
 #include <iostream>
 #include <string>
@@ -1880,7 +1880,7 @@ To achieve the same functionality in AWS IoT Greengrass V2, create a generic com
 
 Prerequisites: Before using this component code, install and verify the AWS IoT Device SDK for Python on your Greengrass device:
 
-```
+```bash
 # Install the SDK
 pip3 install awsiotsdk
 
@@ -1892,7 +1892,7 @@ If you encounter dependency conflicts during installation, try installing a spec
 
 If the verification command prints "SDK installed successfully", you're ready to use the component code:
 
-```
+```python
 from awsiot.greengrasscoreipc.clientv2 import GreengrassCoreIPCClientV2
 from awsiot.greengrasscoreipc.model import QOS
 import json
@@ -1964,7 +1964,7 @@ if __name__ == '__main__':
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awssdk.aws.greengrass.GreengrassCoreIPCClientV2;
 import software.amazon.awssdk.aws.greengrass.model.QOS;
 import software.amazon.awssdk.aws.greengrass.model.SubscribeToIoTCoreRequest;
@@ -2059,7 +2059,7 @@ public class DeviceController {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const greengrasscoreipc = require('aws-iot-device-sdk-v2').greengrasscoreipc;
 
 class DeviceController {
@@ -2153,7 +2153,7 @@ controller.start();
 ------
 #### [ C ]
 
-```
+```c
 #include <gg/buffer.h>
 #include <gg/error.h>
 #include <gg/ipc/client.h>
@@ -2345,7 +2345,7 @@ int main(void) {
 ------
 #### [ C\+\+ ]
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <gg/buffer.hpp>
 #include <gg/object.hpp>
@@ -2535,7 +2535,7 @@ To build an executable JAR with all dependencies bundled:
 
 1. Create a `pom.xml` file in your project directory:
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <project xmlns="http://maven.apache.org/POM/4.0.0"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -2604,7 +2604,7 @@ To build an executable JAR with all dependencies bundled:
 
 1. Build the JAR:
 
-   ```
+   ```bash
    mvn clean package
    ```
 
@@ -2619,7 +2619,7 @@ To package your Node.js component with all dependencies:
 
 1. Create a `package.json` file:
 
-   ```
+   ```json
    {
      "name": "device-controller",
      "version": "1.0.0",
@@ -2636,7 +2636,7 @@ To package your Node.js component with all dependencies:
 
 1. Install dependencies on your development machine:
 
-   ```
+   ```bash
    npm install
    ```
 
@@ -2644,7 +2644,7 @@ To package your Node.js component with all dependencies:
 
 1. Package for deployment:
 
-   ```
+   ```bash
    zip -r DeviceController.zip DeviceController.js node_modules/ package.json
    ```
 
@@ -2667,19 +2667,19 @@ To build the SDK and the component, you will need the following build dependenci
 
 On Ubuntu/Debian:
 
-```
+```bash
 sudo apt install build-essential cmake
 ```
 
 On Amazon Linux:
 
-```
+```bash
 sudo yum install gcc cmake make
 ```
 
 **Create a CMakeLists.txt file for your component:**
 
-```
+```cmake
 cmake_minimum_required(VERSION 3.10)
 project(DeviceController C)
 
@@ -2695,7 +2695,7 @@ target_link_libraries(device_controller gg-sdk)
 
 **Build steps:**
 
-```
+```bash
 # Clone the AWS Greengrass Component SDK into your project
 git clone https://github.com/aws-greengrass/aws-greengrass-component-sdk.git
 
@@ -2721,19 +2721,19 @@ To build the SDK and the component, you will need the following build dependenci
 
 On Ubuntu/Debian:
 
-```
+```bash
 sudo apt install build-essential cmake
 ```
 
 On Amazon Linux:
 
-```
+```bash
 sudo yum install gcc-c++ cmake make
 ```
 
 **Create a CMakeLists.txt file for your component:**
 
-```
+```cmake
 cmake_minimum_required(VERSION 3.10)
 project(DeviceController CXX)
 
@@ -2751,7 +2751,7 @@ target_link_libraries(device_controller gg-sdk++)
 
 **Build steps:**
 
-```
+```bash
 # Clone the AWS Greengrass Component SDK into your project
 git clone https://github.com/aws-greengrass/aws-greengrass-component-sdk.git
 
@@ -2773,7 +2773,7 @@ Update the "resources" array with the actual topics your component uses.
 ------
 #### [ Python ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.DeviceController",
@@ -2835,7 +2835,7 @@ Update the "resources" array with the actual topics your component uses.
 ------
 #### [ Java ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.DeviceController",
@@ -2897,7 +2897,7 @@ Update the "resources" array with the actual topics your component uses.
 ------
 #### [ JavaScript ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.DeviceController",
@@ -2954,7 +2954,7 @@ Update the "resources" array with the actual topics your component uses.
 ------
 #### [ C/C\+\+ ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.DeviceController",

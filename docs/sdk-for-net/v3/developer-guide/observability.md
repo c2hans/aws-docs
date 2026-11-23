@@ -39,7 +39,7 @@ The following code snippet shows you how to set the global telemetry provider. I
 **Note**
 If you're using AWS IAM Identity Center for authentication, be sure to also add `AWSSDK.SSO` and `AWSSDK.SSOOIDC`.
 
-```
+```cs
 using Amazon.S3;
 using OpenTelemetry;
 using OpenTelemetry.Metrics;

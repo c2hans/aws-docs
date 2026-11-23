@@ -88,7 +88,7 @@ markdown_schema = """Make sure your final response is a valid Markdown schema fo
 
 The following code demonstrates how to prefill with the API:
 
-```
+```Python
 import boto3
 import json
 

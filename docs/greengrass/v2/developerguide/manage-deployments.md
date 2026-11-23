@@ -46,7 +46,7 @@ For more information, see the [dependency resolution](https://github.com/aws-gre
 
 If the Greengrass nucleus is able to successfully resolve all components, the nucleus log will contain the following line.
 
-```
+```bash
 resolve-all-group-dependencies-finish. Finish resolving all groups dependencies.
 ```
 
@@ -70,7 +70,7 @@ The component dependency resolution may fail for two main reasons: target versio
 
 *Failure log sample:*
 
-```
+```bash
 2025-04-11T06:16:03.315Z [ERROR] (pool-3-thread-27) com.aws.greengrass.componentmanager.ComponentManager: Failed to negotiate version with cloud and no local version to fall back to. {componentName=ComponentC, versionRequirement={thing/ABC==2.0.0, thinggroup/ThingGroupA==1.0.0}}
 2025-04-11T06:16:03.316Z [ERROR] (pool-3-thread-26) com.aws.greengrass.deployment.DeploymentService: Error occurred while processing deployment. {deploymentId=fbac24de-4ef9-44b0-a685-fdc63b0f02b8, serviceName=DeploymentService, currentState=RUNNING}
 java.util.concurrent.ExecutionException: com.aws.greengrass.componentmanager.exceptions.NoAvailableComponentVersionException: No local or cloud component version satisfies the requirements Check whether the version constraints conflict and that the component exists in your AWS account with a version that matches the version constraints. If the version constraints conflict, revise deployments to resolve the conflict. Component ComponentC version constraints: thing/ABC requires =2.0.0, thinggroup/ThingGroupA requires =1.0.0.
@@ -109,7 +109,7 @@ If a component is a dependency of different components and the components requir
 Deployment of ComponentA (v2.5.0), ComponentB (v1.3.0), and ComponentC (v1.0.0)
 + ComponentA requires ComponentB version >=1.0.0.
 
-  ```
+  ```bash
   ---
   ...
   ComponentName: ComponentA
@@ -122,7 +122,7 @@ Deployment of ComponentA (v2.5.0), ComponentB (v1.3.0), and ComponentC (v1.0.0)
   ```
 + ComponentC requires ComponentA version <2.0.0.
 
-  ```
+  ```bash
   ---
   ...
   ComponentName: ComponentC
@@ -142,7 +142,7 @@ These two requirements contradict each other, making it impossible for the nucle
 
 *Failure log sample:*
 
-```
+```bash
 2025-04-11T06:07:18.291Z [ERROR] (pool-3-thread-25) com.aws.greengrass.componentmanager.ComponentManager: Failed to negotiate version with cloud and no local version to fall back to. {componentName=ComponentA, versionRequirement={ComponentC=<2.0.0, thinggroup/ThingGroupA==2.5.0}}
 2025-04-11T06:07:18.292Z [ERROR] (pool-3-thread-24) com.aws.greengrass.deployment.DeploymentService: Error occurred while processing deployment. {deploymentId=2ffac4df-1ac9-405c-8c11-28494a1b4382, serviceName=DeploymentService, currentState=RUNNING}
 java.util.concurrent.ExecutionException: com.aws.greengrass.componentmanager.exceptions.NoAvailableComponentVersionException: No local or cloud component version satisfies the requirements Check whether the version constraints conflict and that the component exists in your AWS account with a version that matches the version constraints. If the version constraints conflict, revise deployments to resolve the conflict. Component ComponentA version constraints: ComponentC requires <2.0.0, thinggroup/ThingGroupA requires =2.5.0.

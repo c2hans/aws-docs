@@ -25,7 +25,7 @@ In addition to checking the state of cluster resources, ensure that the service 
 
  **Simulate failure** – On `hanahost01` as `hdbadm`:
 
-```
+```console
 hdbadm> HDB kill-9
 ```
 
@@ -40,7 +40,7 @@ hdbadm> HDB kill-9
 1. If AUTOMATED\_REGISTER is "false", manually reregister the former primary:
    + See more details on how to register the secondary in [HSR Setup](sap-hana-pacemaker-rhel-hana-setup-hsr.md) :
 
-     ```
+     ```console
      hdbnsutil -sr_register --name=<site_name> --remoteHost=<primary_host> --remoteInstance=<instance_number> --mode=sync --operationMode=logreplay
      ```
 
@@ -53,7 +53,7 @@ hdbadm> HDB kill-9
 
  **Simulate failure** – On `hanahost01` as `root`:
 
-```
+```console
 # poweroff --force --force
 ```
 
@@ -82,7 +82,7 @@ hdbadm> HDB kill-9
 
  **Simulate failure** – On `hanahost01` as `root`:
 
-```
+```console
 # echo 'c' > /proc/sysrq-trigger
 ```
 
@@ -115,7 +115,7 @@ hdbadm> HDB kill-9
 
  **Simulate failure** – On either node as root:
 
-```
+```console
 # iptables -A INPUT -s <CIDR_of_other_subnet> -j DROP; iptables -A OUTPUT -d <CIDR_of_other_subnet> -j DROP
 ```
 

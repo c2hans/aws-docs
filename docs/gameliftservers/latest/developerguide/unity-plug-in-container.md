@@ -53,7 +53,7 @@ Use the assessment questions to tell the plugin what steps it needs to take:
 
 This template contains the minimum instructions that a game server container needs to usable in an Amazon GameLift Servers fleet. Modify the content as needed for your game server.
 
-```
+```dockerfile
 # Base image
 # ----------
   # Add the base image that you want to use over here,

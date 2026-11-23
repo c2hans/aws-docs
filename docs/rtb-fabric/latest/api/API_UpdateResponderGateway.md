@@ -115,7 +115,8 @@ Content-type: application/json
 {
    "clientRoutingPolicy": "string",
    "gatewayId": "string",
-   "status": "string"
+   "status": "string",
+   "updateId": "string"
 }
 ```
 
@@ -140,7 +141,13 @@ Pattern: `rtb-gw-[a-z0-9-]{1,25}`
  ** [status](#API_UpdateResponderGateway_ResponseSyntax) **   <a name="rtbfabric-UpdateResponderGateway-response-status"></a>
 The status of the request.
 Type: String
-Valid Values: `PENDING_CREATION | ACTIVE | PENDING_DELETION | DELETED | ERROR | PENDING_UPDATE | ISOLATED | PENDING_ISOLATION | PENDING_RESTORATION`
+Valid Values: `PENDING_CREATION | ACTIVE | PENDING_DELETION | DELETED | ERROR | PENDING_UPDATE | ISOLATED | PENDING_ISOLATION | PENDING_RESTORATION | CREATE_FAILED | DELETE_FAILED`
+
+ ** [updateId](#API_UpdateResponderGateway_ResponseSyntax) **   <a name="rtbfabric-UpdateResponderGateway-response-updateId"></a>
+Reserved for future use.
+Type: String
+Length Constraints: Minimum length of 8. Maximum length of 64.
+Pattern: `update-[a-z0-9]{1,57}`
 
 ## Errors
 <a name="API_UpdateResponderGateway_Errors"></a>
@@ -168,7 +175,7 @@ The request was denied due to request throttling.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request could not be completed because it fails satisfy the constraints specified by the service.
+The request could not be completed because it fails to satisfy the constraints specified by the service.
 HTTP Status Code: 400
 
 ## See Also

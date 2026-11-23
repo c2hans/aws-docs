@@ -16,7 +16,7 @@ When you specify a non-default HTTP engine for a service client, you can set the
 
 The following example configures the HTTP engine and any service client that uses it to use TLS v1.2 at a minimum.
 
-```
+```kotlin
 DynamoDbClient {
     region = "us-east-2"
     httpClient {

@@ -83,7 +83,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of UntagResource.
 
-```
+```json
 DELETE /tags/arn:aws:bedrock:us-west-2:123456789012:agent/ABCDEFGHIJ HTTP/1.1
 ```
 
@@ -92,7 +92,7 @@ DELETE /tags/arn:aws:bedrock:us-west-2:123456789012:agent/ABCDEFGHIJ HTTP/1.1
 
 This example illustrates one usage of UntagResource.
 
-```
+```json
 HTTP/1.1 200
 ```
 

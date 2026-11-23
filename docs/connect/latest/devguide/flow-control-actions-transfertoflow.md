@@ -9,7 +9,7 @@ Execution jumps to a different flow, and continues running at that flow's beginn
 ## Parameter object
 <a name="transfertoflow-parameter"></a>
 
-```
+```json
 {
     "ContactFlowId": A flow ID or flow ARN. *Must be either fully static or a single valid JSONPath identifier*
 }

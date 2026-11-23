@@ -61,7 +61,7 @@ You can use one of the following operations:
 
   1. Run the following command to find the [handshake](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html#invitations-handshakes) ID:
 
-     ```
+     ```bash
      $ C:\> aws organizations list-handshakes-for-account \
          --filter HandshakeType=TRANSFER_RESPONSIBILITY
      ```
@@ -72,7 +72,7 @@ You can use one of the following operations:
 
      Run the following command to accept the invitation:
 
-     ```
+     ```bash
      $ C:\> aws organizations accept-handshake \
          --handshake-id {{examplehandshakeid}}
      ```
@@ -81,7 +81,7 @@ You can use one of the following operations:
 
      Run the following command to decline the invitation:
 
-     ```
+     ```bash
      $ C:\> aws organizations decline-handshake \
          --handshake-id {{examplehandshakeid}}
      ```

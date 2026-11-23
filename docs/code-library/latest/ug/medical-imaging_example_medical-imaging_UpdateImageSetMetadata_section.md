@@ -246,7 +246,7 @@ For more information, see [Updating image set metadata](https://docs.aws.amazon.
 
 **SDK for Java 2.x**
 
-```
+```java
     /**
      * Update the metadata of an AWS HealthImaging image set.
      *
@@ -285,7 +285,7 @@ For more information, see [Updating image set metadata](https://docs.aws.amazon.
 ```
 Use case \#1: Insert or update an attribute.
 
-```
+```java
                 final String insertAttributes = """
                         {
                           "SchemaVersion": 1.1,
@@ -309,7 +309,7 @@ Use case \#1: Insert or update an attribute.
 ```
 Use case \#2: Remove an attribute.
 
-```
+```java
                 final String removeAttributes = """
                         {
                           "SchemaVersion": 1.1,
@@ -333,7 +333,7 @@ Use case \#2: Remove an attribute.
 ```
 Use case \#3: Remove an instance.
 
-```
+```java
                 final String removeInstance = """
                         {
                           "SchemaVersion": 1.1,
@@ -361,7 +361,7 @@ Use case \#3: Remove an instance.
 ```
 Use case \#4: Revert to a previous version.
 
-```
+```java
                 // In this case, revert to previous version.
                 String revertVersionId = Integer.toString(Integer.parseInt(versionid) - 1);
                 MetadataUpdates metadataRemoveUpdates = MetadataUpdates.builder()
@@ -378,7 +378,7 @@ Use case \#4: Revert to a previous version.
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { UpdateImageSetMetadataCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -432,7 +432,7 @@ export const updateImageSetMetadata = async (
 ```
 Use case \#1: Insert or update an attribute and force the update.
 
-```
+```javascript
     const insertAttributes = JSON.stringify({
       SchemaVersion: 1.1,
       Study: {
@@ -458,7 +458,7 @@ Use case \#1: Insert or update an attribute and force the update.
 ```
 Use case \#2: Remove an attribute.
 
-```
+```javascript
     // Attribute key and value must match the existing attribute.
     const remove_attribute = JSON.stringify({
       SchemaVersion: 1.1,
@@ -484,7 +484,7 @@ Use case \#2: Remove an attribute.
 ```
 Use case \#3: Remove an instance.
 
-```
+```javascript
     const remove_instance = JSON.stringify({
       SchemaVersion: 1.1,
       Study: {
@@ -513,7 +513,7 @@ Use case \#3: Remove an instance.
 ```
 Use case \#4: Revert to an earlier version.
 
-```
+```javascript
     const updateMetadata = {
       revertToVersionId: "1",
     };
@@ -533,7 +533,7 @@ Use case \#4: Revert to an earlier version.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -573,13 +573,13 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
 Use case \#1: Insert or update an attribute.
 
-```
+```python
             attributes = """{
                     "SchemaVersion": 1.1,
                     "Study": {
@@ -596,7 +596,7 @@ Use case \#1: Insert or update an attribute.
 ```
 Use case \#2: Remove an attribute.
 
-```
+```python
             # Attribute key and value must match the existing attribute.
             attributes = """{
                     "SchemaVersion": 1.1,
@@ -614,7 +614,7 @@ Use case \#2: Remove an attribute.
 ```
 Use case \#3: Remove an instance.
 
-```
+```python
             attributes = """{
                     "SchemaVersion": 1.1,
                     "Study": {
@@ -635,7 +635,7 @@ Use case \#3: Remove an instance.
 ```
 Use case \#4: Revert to an earlier version.
 
-```
+```python
             metadata = {"revertToVersionId": "1"}
 
             self.update_image_set_metadata(
@@ -650,7 +650,7 @@ Use case \#4: Revert to an earlier version.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_id = '1234567890123456789012345678901234567890'
         " iv_image_set_id = '1234567890123456789012345678901234567890'

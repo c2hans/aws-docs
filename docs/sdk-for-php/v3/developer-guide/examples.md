@@ -9,7 +9,7 @@ This section provides a complete helper class with static methods for common S3 
 ## S3TransferHelper class
 <a name="s3-transfer-helper-class"></a>
 
-```
+```php
 <?php
 
 use Aws\S3\S3Transfer\Models\DownloadDirectoryRequest;
@@ -164,7 +164,7 @@ class S3TransferHelper
 
 The following examples show how to use the `S3TransferHelper` class.
 
-```
+```php
 <?php
 
 require __DIR__ . '/../vendor/autoload.php';

@@ -32,7 +32,7 @@ Use the `dnf check-update` command to check for updates. In AL2027 this is a com
 
 In the following example, a system on the 2027.0.20260803 release checks what the 2027.0.20260817 release would update:
 
-```
+```bash
 dnf check-update --releasever=2027.0.20260817
 ```
 
@@ -68,7 +68,7 @@ systemd-udev.x86_64                 260.1-11.amzn2027.0.8      amazonlinux
 
 To always check against the newest release, use `--releasever=latest`. On this system it reports the same packages, because 2027.0.20260817 is the newest release:
 
-```
+```bash
 dnf check-update --releasever=latest
 ```
 
@@ -79,7 +79,7 @@ The command exits with return code 100 if newer packages are available, and 0 if
 
 New package updates and security updates are made available in new repository versions only. For systems locked to an earlier release, pass the target release version to apply all updates available in it:
 
-```
+```bash
 sudo dnf upgrade --releasever=<version>
 ```
 
@@ -94,7 +94,7 @@ Applying all updates moves existing systems to the same package set as launching
 
 The `dnf check-release-update` command reports when a newer AL2027 release than the one the system is locked to is available, and prints the exact command to upgrade to it:
 
-```
+```bash
 sudo dnf check-release-update
 ```
 
@@ -117,7 +117,7 @@ If the system is already on the newest release, the command prints nothing and e
 
 The `dnf-plugin-release-notification` package provides the command, which is installed by default on AL2027 AMIs. AL2027 container images don't include it. To use it in a container, install the package first:
 
-```
+```bash
 sudo dnf install dnf-plugin-release-notification
 ```
 
@@ -126,7 +126,7 @@ sudo dnf install dnf-plugin-release-notification
 
 Each package in AL2027 has an associated support timeline. Query it with the `dnf supportinfo` command:
 
-```
+```bash
 dnf supportinfo --pkg bash
 ```
 
@@ -142,7 +142,7 @@ Package Note                 : Amazon Linux will support this package until the 
 
 The `dnf-plugin-support-info` package provides the command. If it isn't present on your system, install it first:
 
-```
+```bash
 sudo dnf install dnf-plugin-support-info
 ```
 
@@ -154,7 +154,7 @@ During the preview period, the support timelines reflect the preview terms. Supp
 
 You can add DNF commands to a user data script to control which packages are installed when an AL2027 instance launches. In the following example, the user data script makes sure that every instance launched with it has the same package updates installed:
 
-```
+```bash
 #!/bin/bash
 dnf upgrade -y --releasever=2027.0.20260817
 # Additional setup and install commands below
@@ -174,7 +174,7 @@ Only add repositories designed to be used with AL2027. Repositories designed for
 
 Repositories are defined in configuration files in `/etc/yum.repos.d/`. Many third-party repositories provide either the configuration file content or an installable package that includes it. To list the configured repositories:
 
-```
+```bash
 dnf repolist --all
 ```
 
@@ -187,25 +187,25 @@ amazonlinux-source    Amazon Linux 2027 repository - Source packages disabled
 
 Repository management commands are provided by the `dnf5-plugins` package. If `dnf config-manager` reports an unknown command, install it first:
 
-```
+```bash
 sudo dnf install dnf5-plugins
 ```
 
 To add a repository from a repository configuration file URL:
 
-```
+```bash
 sudo dnf config-manager addrepo --from-repofile=<url>
 ```
 
 To define a repository directly:
 
-```
+```bash
 sudo dnf config-manager addrepo --id=<repo-id> --set=baseurl=<url>
 ```
 
 To enable or disable a repository:
 
-```
+```bash
 sudo dnf config-manager setopt <repo-id>.enabled=1
 sudo dnf config-manager setopt <repo-id>.enabled=0
 ```
@@ -218,7 +218,7 @@ The DNF (version 4) spelling `dnf config-manager --add-repo` changed in DNF5 to 
 
 You can also add a repository at launch time with `cloud-init` user data. The following template writes a repository definition to `/etc/yum.repos.d/`:
 
-```
+```yaml
 #cloud-config
 yum_repos:
   repository.repo:
@@ -236,7 +236,7 @@ You can add a `packages:` section to the same file to install packages from the 
 
 After you apply updates, running services can still use the old, replaced versions of libraries until they restart. The `smart-restart` package restarts affected `systemd` services automatically after each DNF transaction. It uses the `dnf needs-restarting` command to find the affected services, and it decides whether a full reboot is advised. When a reboot is advised, it writes a hint marker file at `/run/smart-restart/reboot-hint-marker`.
 
-```
+```bash
 sudo dnf install smart-restart
 ```
 
@@ -244,7 +244,7 @@ After installation, every subsequent transaction triggers the `smart-restart` lo
 
 To exclude services from automatic restart, add a file with the `-denylist` suffix in `/etc/smart-restart-conf.d/`. Excluded services also don't count toward the reboot decision. All `*-denylist` files in the directory are evaluated:
 
-```
+```bash
 cat /etc/smart-restart-conf.d/custom-denylist
 ```
 

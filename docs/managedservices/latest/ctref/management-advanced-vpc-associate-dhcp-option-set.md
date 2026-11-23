@@ -133,7 +133,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-vpc-associate-dhcp-option-set-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-AssociateDhcpOptionSetWithVpc",
   "Region": "us-east-1",
@@ -147,7 +147,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-vpc-associate-dhcp-option-set-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-AssociateDhcpOptionSetWithVpc",
   "Region": "us-west-2",

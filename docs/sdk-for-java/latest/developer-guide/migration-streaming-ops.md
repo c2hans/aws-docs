@@ -8,13 +8,13 @@ Streaming operations, such as Amazon S3 `getObject` and `putObject` methods, sup
 
 **Example of Amazon S3 `putObject` operation in 1.x**
 
-```
+```java
 s3client.putObject(BUCKET, KEY, new File(file_path));
 ```
 
 **Example of Amazon S3 `putObject` operation in 2.x**
 
-```
+```java
 s3client.putObject(PutObjectRequest.builder()
                                  .bucket(BUCKET)
                                  .key(KEY)
@@ -26,7 +26,7 @@ A streaming response object accepts a `ResponseTransformer` for synchronous clie
 
 **Example of Amazon S3 `getObject` operation in 1.x**
 
-```
+```java
 S3Object o = s3.getObject(bucket, key);
 S3ObjectInputStream s3is = o.getObjectContent();
 FileOutputStream fos = new FileOutputStream(new File(key));
@@ -34,7 +34,7 @@ FileOutputStream fos = new FileOutputStream(new File(key));
 
 **Example of Amazon S3 `getObject` operation in 2.x**
 
-```
+```java
 s3client.getObject(GetObjectRequest.builder().bucket(bucket).key(key).build(),
 		ResponseTransformer.toFile(Paths.get("key")));
 ```
@@ -53,7 +53,7 @@ Consider the following when you migrate this code:
 
 For a synchronous client:
 
-```
+```java
 ResponseInputStream<GetObjectResponse> response =
     s3Client.getObject(
         request,
@@ -68,7 +68,7 @@ You can use `ResponseTransformer.toGzipCompatibleInputStream(Duration)` to confi
 
 For an asynchronous client:
 
-```
+```java
 CompletableFuture<ResponseInputStream<GetObjectResponse>> responseFuture =
     s3AsyncClient.getObject(
         request,

@@ -168,7 +168,7 @@ For more information, see [Detecting Document Text with Amazon Textract](https:/
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/textract#code-examples).
 Detect text from an input document.
 
-```
+```java
 import software.amazon.awssdk.core.SdkBytes;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.textract.TextractClient;
@@ -252,7 +252,7 @@ public class DetectDocumentText {
 ```
 Detect text from a document located in an Amazon S3 bucket.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.textract.model.S3Object;
 import software.amazon.awssdk.services.textract.TextractClient;
@@ -341,7 +341,7 @@ public class DetectDocumentTextS3 {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/textract#code-examples).
 
-```
+```python
 class TextractWrapper:
     """Encapsulates Textract functions."""
 
@@ -387,7 +387,7 @@ class TextractWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tex#code-examples).
 
-```
+```sap-abap
     "Detects text in the input document."
     "Amazon Textract can detect lines of text and the words that make up a line of text."
     "The input document must be in one of the following image formats: JPEG, PNG, PDF, or TIFF."

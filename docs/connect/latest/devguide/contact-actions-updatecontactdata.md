@@ -9,7 +9,7 @@ Sets a collection of connect defined attributes on specified contact. With this 
 ## Parameter object
 <a name="updatecontactdata-parameter"></a>
 
-```
+```json
 "Parameters":
 {
         "Name": [Optional] The name of the contact. It is a string. May be set statically or dynamically.

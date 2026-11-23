@@ -68,7 +68,7 @@ set AWS_SECRET_ACCESS_KEY={{<your_secret_access_key>}}
 
 1. Run the following command to navigate to the IDT-FreeRTOS installation directory:
 
-   ```
+   ```bash
    cd {{devicetester-extract-location}}/bin
    ```
 
@@ -77,21 +77,21 @@ set AWS_SECRET_ACCESS_KEY={{<your_secret_access_key>}}
 ------
 #### [ Linux ]
 
-   ```
+   ```bash
    .devicetestergui_linux_x86-64.exe
    ```
 
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    ./devicetestergui_win_x64-64
    ```
 
 ------
 #### [ macOS ]
 
-   ```
+   ```bash
    ./devicetestergui_mac_x86-64
    ```
 

@@ -8,7 +8,7 @@ Checks the freshness of data in a column by evaluating the difference between th
 
 **Syntax**
 
-```
+```json
 DataFreshness {{<COL_NAME>}} {{<EXPRESSION>}}
 ```
 + **COL\_NAME** – The name of the column that you want to evaluate the data quality rule against.
@@ -20,7 +20,7 @@ DataFreshness {{<COL_NAME>}} {{<EXPRESSION>}}
 
 The following example rules check for data freshness.
 
-```
+```json
 DataFreshness "Order_Date" <= 24 hours
 DataFreshness "Order_Date" between 2 days and 5 days
 ```
@@ -29,7 +29,7 @@ DataFreshness "Order_Date" between 2 days and 5 days
 
  The `DataFreshness` rules will fail for rows with `NULL` values. If the rule fails due to a null value, the failure reason will display the following:
 
-```
+```json
 80.00 % of rows passed the threshold
 ```
 
@@ -37,7 +37,7 @@ DataFreshness "Order_Date" between 2 days and 5 days
 
  The following example compound rule provides a way to explicitly allow for `NULL` values:
 
-```
+```json
 (DataFreshness "Order_Date" <= 24 hours) OR (ColumnValues "Order_Date" = NULL)
 ```
 
@@ -45,7 +45,7 @@ DataFreshness "Order_Date" between 2 days and 5 days
 
  Sometimes you will need to validate the freshness of data based on the Amazon S3 file creating time. To do this, you can use the following code to get the timestamp and add it to your dataframe, and then apply Data Freshness checks.
 
-```
+```json
 df = glueContext.create_data_frame.from_catalog(database = "default", table_name = "mytable")
 df = df.withColumn("file_ts", df["_metadata.file_modification_time"])
 

@@ -68,7 +68,7 @@ Use the following AWS CLI commands or API operations to enable trusted service a
 
   Run the following command to enable AWS Marketplace as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations enable-aws-service-access \
       --service-principal license-management.marketplace.amazonaws.com
   ```
@@ -96,7 +96,7 @@ Use the following AWS CLI commands or API operations to disable trusted service 
 
   Run the following command to disable AWS Marketplace as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations disable-aws-service-access \
       --service-principal license-management.marketplace.amazonaws.com
   ```

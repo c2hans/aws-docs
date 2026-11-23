@@ -25,7 +25,7 @@ To capture a usable video, follow these tips:
 
 From the `job_bundles` directory of the samples repository, submit the job:
 
-```
+```bash
 deadline bundle gui-submit gsplat_pipeline
 ```
 

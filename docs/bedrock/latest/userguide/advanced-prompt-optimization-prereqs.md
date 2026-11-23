@@ -53,7 +53,7 @@ If model access is not enabled for a model in your account, the job fails. The e
 
 Your calling identity must have read access to the input dataset and write access to the output location. The S3 bucket must be in the same Region as the job.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -93,7 +93,7 @@ The required AWS KMS actions depend on how you use AWS KMS:
 
 If you use the same key for both output encryption and S3 bucket encryption:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -111,7 +111,7 @@ If you use the same key for both output encryption and S3 bucket encryption:
 
 If your S3 input bucket uses one KMS key and you want to encrypt job output with a different KMS key:
 
-```
+```json
 {
     "Sid": "KMSDecryptS3Input",
     "Effect": "Allow",
@@ -137,7 +137,7 @@ If your S3 input bucket uses one KMS key and you want to encrypt job output with
 
 If you use a custom Lambda function to evaluate prompt quality, your calling identity must have permission to invoke it:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": ["lambda:InvokeFunction","lambda:GetFunction"],
@@ -153,7 +153,7 @@ If you use a custom Lambda function to evaluate prompt quality, your calling ide
 
 Attach this policy to the IAM user or role that will create and manage AdvPO jobs.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -206,7 +206,7 @@ Attach this policy to the IAM user or role that will create and manage AdvPO job
 
 Use this policy for users who only need to view job status and results.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -234,7 +234,7 @@ Use this policy for users who only need to view job status and results.
 
 Use this policy to allow AdvPO only with specific models (for example, only Claude Sonnet).
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -279,7 +279,7 @@ Use this policy to allow AdvPO only with specific models (for example, only Clau
 
 Use as a Service Control Policy (SCP) to prevent AdvPO usage across an organization.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

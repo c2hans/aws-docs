@@ -39,7 +39,7 @@ The Lambda context library provides the following global variables, methods, and
 
 Lambda functions have access to metadata about their environment and the invocation request. This can be accessed at [Package context](https://golang.org/pkg/context/). Should your handler include `context.Context` as a parameter, Lambda will insert information about your function into the context's `Value` property. Note that you need to import the `lambdacontext` library to access the contents of the `context.Context` object.
 
-```
+```go
 package main
 
 import (
@@ -63,7 +63,7 @@ In the example above, `lc` is the variable used to consume the information that 
 
 The following example introduces how to use the context object to monitor how long your Lambda function takes to complete. This way, you can analyze performance expectations and adjust your function code accordingly, if needed.
 
-```
+```go
 package main
 
 import (

@@ -8,7 +8,7 @@ If your source code is stored in a GitHub or a GitHub Enterprise Server reposito
 
 Run the **create-webhook** command as follows:
 
-```
+```bash
 aws codebuild create-webhook --project-name {{<project-name>}}
 ```
 
@@ -16,7 +16,7 @@ aws codebuild create-webhook --project-name {{<project-name>}}
 
 For GitHub, information similar to the following appears in the output:
 
-```
+```json
 {
   "webhook": {
     "url": "{{<url>}}"

@@ -99,7 +99,7 @@ Add your project's AWS Construct Library modules as dependencies in your project
 
 For example, to specify an exact version of a dependency:
 
-```
+```xml
 <dependency>
     <groupId>software.amazon.awscdk</groupId>
     <artifactId>s3</artifactId>
@@ -109,7 +109,7 @@ For example, to specify an exact version of a dependency:
 
 To specify that any 1.x.x version is acceptable (note use of right parenthesis to indicate that the end of the range excludes version 2.0.0):
 
-```
+```xml
 <dependency>
     <groupId>software.amazon.awscdk</groupId>
     <artifactId>s3</artifactId>
@@ -190,7 +190,7 @@ You are deploying a stack that requires the use of a staging bucket, but are usi
 **When synthesizing an AWS CDK stack, I get the message `--app is required either in command-line, in cdk.json or in ~/.cdk.json`**
  This message usually means that you aren't in the main directory of your AWS CDK project when you issue `cdk synth`. The file `cdk.json` in this directory, created by the `cdk init` command, contains the command line needed to run (and thereby synthesize) your AWS CDK app. For a TypeScript app, for example, the default `cdk.json` looks something like this:
 
-```
+```json
 {
   "app": "npx ts-node bin/my-cdk-app.ts"
 }
@@ -227,7 +227,7 @@ Exceeding the CloudFormation resource limit is an error during CloudFormation sy
 **Tip**
 You can get an exact count of the resources in your synthesized output using the following utility script. (Since every AWS CDK developer needs Node.js, the script is written in JavaScript.)
 
-```
+```javascript
 // rescount.js - count the resources defined in a stack
 // invoke with: node rescount.js <path-to-stack-json>
 // e.g. node rescount.js cdk.out/MyStack.template.json
@@ -268,7 +268,7 @@ If you set a resource's removal policy to `DESTROY`, that resource will be delet
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as cdk from '@aws-cdk/core';
 import * as s3 from '@aws-cdk/aws-s3';
 
@@ -286,7 +286,7 @@ export class CdkTestStack extends cdk.Stack {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const cdk = require('@aws-cdk/core');
 const s3 = require('@aws-cdk/aws-s3');
 
@@ -306,7 +306,7 @@ module.exports = { CdkTestStack }
 ------
 #### [ Python ]
 
-```
+```python
 import aws_cdk.core as cdk
 import aws_cdk.aws_s3 as s3
 
@@ -321,7 +321,7 @@ class CdkTestStack(cdk.stack):
 ------
 #### [ Java ]
 
-```
+```java
 software.amazon.awscdk.core.*;
 import software.amazon.awscdk.services.s3.*;
 
@@ -342,7 +342,7 @@ public class CdkTestStack extends Stack {
 ------
 #### [ C\# ]
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.S3;
 

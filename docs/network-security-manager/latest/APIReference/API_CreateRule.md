@@ -52,7 +52,7 @@ Required: Yes
  ** [firewallType](#API_CreateRule_RequestSyntax) **   <a name="networksecuritymanager-CreateRule-request-firewallType"></a>
 The firewall type associated with the resource.
 Type: String
-Valid Values: `WAF`
+Valid Values: `WAF | IGW_FIREWALL`
 Required: Yes
 
  ** [isPublished](#API_CreateRule_RequestSyntax) **   <a name="networksecuritymanager-CreateRule-request-isPublished"></a>
@@ -127,7 +127,7 @@ Type: JSON value
  ** [firewallType](#API_CreateRule_ResponseSyntax) **   <a name="networksecuritymanager-CreateRule-response-firewallType"></a>
 The firewall type associated with the resource.
 Type: String
-Valid Values: `WAF`
+Valid Values: `WAF | IGW_FIREWALL`
 
  ** [hasPublishedVersion](#API_CreateRule_ResponseSyntax) **   <a name="networksecuritymanager-CreateRule-response-hasPublishedVersion"></a>
 Specifies whether a published version of the resource exists.

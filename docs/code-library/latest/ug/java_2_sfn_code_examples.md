@@ -34,7 +34,7 @@ The following code example shows how to get started using Step Functions.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 Java version of Hello.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sfn.SfnClient;
 import software.amazon.awssdk.services.sfn.model.ListStateMachinesResponse;
@@ -94,7 +94,7 @@ The following code example shows how to:
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
 /**
  * You can obtain the JSON file to create a state machine in the following
  * GitHub location.
@@ -467,7 +467,7 @@ The following code example shows how to use `CreateActivity`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static String createActivity(SfnClient sfnClient, String activityName) {
         try {
             CreateActivityRequest activityRequest = CreateActivityRequest.builder()
@@ -494,7 +494,7 @@ The following code example shows how to use `CreateStateMachine`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static String createMachine(SfnClient sfnClient, String roleARN, String stateMachineName, String json) {
         try {
             CreateStateMachineRequest machineRequest = CreateStateMachineRequest.builder()
@@ -524,7 +524,7 @@ The following code example shows how to use `DeleteActivity`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static void deleteActivity(SfnClient sfnClient, String actArn) {
         try {
             DeleteActivityRequest activityRequest = DeleteActivityRequest.builder()
@@ -550,7 +550,7 @@ The following code example shows how to use `DeleteStateMachine`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static void deleteMachine(SfnClient sfnClient, String stateMachineArn) {
         try {
             DeleteStateMachineRequest deleteStateMachineRequest = DeleteStateMachineRequest.builder()
@@ -584,7 +584,7 @@ The following code example shows how to use `DescribeExecution`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static void describeExe(SfnClient sfnClient, String executionArn) {
         try {
             DescribeExecutionRequest executionRequest = DescribeExecutionRequest.builder()
@@ -624,7 +624,7 @@ The following code example shows how to use `DescribeStateMachine`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static void describeStateMachine(SfnClient sfnClient, String stateMachineArn) {
         try {
             DescribeStateMachineRequest stateMachineRequest = DescribeStateMachineRequest.builder()
@@ -652,7 +652,7 @@ The following code example shows how to use `GetActivityTask`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static List<String> getActivityTask(SfnClient sfnClient, String actArn) {
         List<String> myList = new ArrayList<>();
         GetActivityTaskRequest getActivityTaskRequest = GetActivityTaskRequest.builder()
@@ -675,7 +675,7 @@ The following code example shows how to use `ListActivities`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sfn.SfnClient;
 import software.amazon.awssdk.services.sfn.model.ListActivitiesRequest;
@@ -733,7 +733,7 @@ The following code example shows how to use `ListExecutions`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static void getExeHistory(SfnClient sfnClient, String exeARN) {
         try {
             GetExecutionHistoryRequest historyRequest = GetExecutionHistoryRequest.builder()
@@ -763,7 +763,7 @@ The following code example shows how to use `ListStateMachines`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sfn.SfnClient;
 import software.amazon.awssdk.services.sfn.model.ListStateMachinesResponse;
@@ -816,7 +816,7 @@ The following code example shows how to use `SendTaskSuccess`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static void sendTaskSuccess(SfnClient sfnClient, String token, String json) {
         try {
             SendTaskSuccessRequest successRequest = SendTaskSuccessRequest.builder()
@@ -842,7 +842,7 @@ The following code example shows how to use `StartExecution`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static String startWorkflow(SfnClient sfnClient, String stateMachineArn, String jsonEx) {
         UUID uuid = UUID.randomUUID();
         String uuidValue = uuid.toString();

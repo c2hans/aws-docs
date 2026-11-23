@@ -18,7 +18,7 @@ Retrieve the events that are associated with the stack for an image build.
 ## Request syntax
 <a name="get-image-stack-events-request"></a>
 
-```
+```json
 GET /v3/images/custom/{{{imageId}}}/stackevents
 {
   "nextToken": "string",
@@ -47,7 +47,7 @@ Required: No
 ## Response syntax
 <a name="get-image-stack-events-response"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "events": [
@@ -120,13 +120,13 @@ Type: string
 
 **Request**
 
-```
+```python
 $ get_image_stack_events({{image_id}})
 ```
 
 **200 Response**
 
-```
+```json
 {
   'events': [
     {

@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 
 ![Diagram showing different dashboards for different cells.](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/cell-dashboards.jpg)
 
+*Dashboards to observe cells*
+
  Your entire observability stack needs to be cell-aware. Best practices like [How do you design telemetry](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/design-telemetry.html) now need to give you a view of each cell in its individuality. It is important to be able to track each request and identify which cell it is destined for. For more information on how we do this on Amazon (though, generally not cell-based) see:
 +  [Amazon Builders' Library: Instrumenting distributed systems for operational visibility](https://aws.amazon.com/builders-library/instrumenting-distributed-systems-for-operational-visibility)
 +  [Amazon Builders' Library: Building dashboards for operational visibility](https://aws.amazon.com/builders-library/building-dashboards-for-operational-visibility/?did=ba_card&trk=ba_card)

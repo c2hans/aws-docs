@@ -147,7 +147,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-host-trend-micro-dsm-remove-trend-micro-eps-agent-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "Region": "us-east-1",
   "InstanceId": ["i-12345678901234567"]
@@ -157,7 +157,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-host-trend-micro-dsm-remove-trend-micro-eps-agent-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "Region": "us-east-1",
   "InstanceId": ["i-12345678901234567"],

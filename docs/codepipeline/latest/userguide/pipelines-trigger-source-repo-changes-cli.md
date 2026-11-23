@@ -19,7 +19,7 @@ Call the **put-rule** command, specifying:
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -49,7 +49,7 @@ Call the **put-rule** command, specifying:
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -142,7 +142,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 
    **Why am I making this change?** Changing this parameter to `false` turns off periodic checks so you can use event-based change detection only.
 
-   ```
+   ```json
    "configuration": {
        {{"PollForSourceChanges": "false",}}
        "BranchName": "main",

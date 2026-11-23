@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 
 # UntagResource
 
- Removes tags from a resource. Supports telemetry rule resources and telemetry pipeline resources.
+ Removes tags from a resource. Supports telemetry rule resources, telemetry pipeline resources, and third-party telemetry enrichment resources.
 
 ## Request Syntax
 <a name="API_UntagResource_RequestSyntax"></a>

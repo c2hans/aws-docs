@@ -13,7 +13,7 @@ Use the AWS CDK application in the [GitHub repository](https://github.com/aws-so
 
 1. In your local repository, fetch the release that you want to deploy.
 
-   ```
+   ```bash
    $ git fetch --tags
    $ git checkout <VERSION>
    ```
@@ -24,7 +24,7 @@ Use the AWS CDK application in the [GitHub repository](https://github.com/aws-so
 
 1. From the `deployment` directory, rebuild the application.
 
-   ```
+   ```bash
    $ ./build-s3-dist.sh \
        "${DIST_OUTPUT_BUCKET}" \
        "${SOLUTION_VERSION}"
@@ -32,7 +32,7 @@ Use the AWS CDK application in the [GitHub repository](https://github.com/aws-so
 
 1. Upload the rebuilt assets to the versioned path in the existing Regional staging bucket.
 
-   ```
+   ```bash
    $ aws s3 cp regional-s3-assets/webui/ \
        "s3://${ASSET_BUCKET_NAME}/${SOLUTION_TRADEMARKEDNAME}/${SOLUTION_VERSION}/webui/" \
        --recursive \

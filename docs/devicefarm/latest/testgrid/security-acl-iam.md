@@ -23,7 +23,7 @@ IAM is used to restrict access to operations and resources. The following exampl
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -49,7 +49,7 @@ The following IAM Policy allows access to Device Farm resources as well as the r
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{
@@ -88,7 +88,7 @@ The following IAM policy allows the user to create URLs with the `CreateTestGrid
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -34,7 +34,7 @@ The following code example shows how to get started using AWS IoT.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
 /// <summary>
 /// Hello AWS IoT example.
 /// </summary>
@@ -144,7 +144,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 Run an interactive scenario demonstrating AWS IoT features.
 
-```
+```csharp
 /// <summary>
 /// Scenario class for AWS IoT basics.
 /// </summary>
@@ -980,7 +980,7 @@ public class IoTBasics
 ```
 A wrapper class for AWS IoT SDK methods.
 
-```
+```csharp
 /// <summary>
 /// Wrapper methods to use Amazon IoT Core with .NET.
 /// </summary>
@@ -1647,7 +1647,7 @@ The following code example shows how to use `AttachThingPrincipal`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Attaches a certificate to an IoT Thing.
     /// </summary>
@@ -1690,7 +1690,7 @@ The following code example shows how to use `CreateKeysAndCertificate`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Creates a device certificate for AWS IoT.
     /// </summary>
@@ -1730,7 +1730,7 @@ The following code example shows how to use `CreateThing`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Creates an AWS IoT Thing.
     /// </summary>
@@ -1771,7 +1771,7 @@ The following code example shows how to use `CreateTopicRule`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Creates an IoT topic rule.
     /// </summary>
@@ -1831,7 +1831,7 @@ The following code example shows how to use `DeleteCertificate`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Deletes an IoT certificate.
     /// </summary>
@@ -1881,7 +1881,7 @@ The following code example shows how to use `DeleteThing`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Deletes an IoT Thing.
     /// </summary>
@@ -1922,7 +1922,7 @@ The following code example shows how to use `DescribeEndpoint`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Gets the AWS IoT endpoint URL.
     /// </summary>
@@ -1962,7 +1962,7 @@ The following code example shows how to use `DetachThingPrincipal`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Detaches a certificate from an IoT Thing.
     /// </summary>
@@ -2005,7 +2005,7 @@ The following code example shows how to use `ListCertificates`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Lists all certificates associated with the account.
     /// </summary>
@@ -2042,7 +2042,7 @@ The following code example shows how to use `ListThings`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Lists IoT Things with pagination support.
     /// </summary>
@@ -2101,7 +2101,7 @@ The following code example shows how to use `SearchIndex`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Searches for IoT Things using the search index.
     /// </summary>
@@ -2225,7 +2225,7 @@ The following code example shows how to use `UpdateThing`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Updates an IoT Thing with attributes.
     /// </summary>

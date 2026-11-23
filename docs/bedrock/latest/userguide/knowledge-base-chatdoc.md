@@ -29,7 +29,7 @@ Before you send a request, configure the permissions described in [Permissions t
 
 The following example queries a document stored in Amazon S3:
 
-```
+```json
 {
     "input": {
         "text": "{{your query}}"

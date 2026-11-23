@@ -46,7 +46,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### POST schema
 <a name="offerings-offeringid-purchase-request-body-post-example"></a>
 
-```
+```json
 {
   "count": integer,
   "name": "string",
@@ -67,7 +67,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### PurchaseOfferingResultModel schema
 <a name="offerings-offeringid-purchase-response-body-purchaseofferingresultmodel-example"></a>
 
-```
+```json
 {
   "reservation": {
     "arn": "string",
@@ -105,7 +105,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### InvalidRequest schema
 <a name="offerings-offeringid-purchase-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -114,7 +114,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### AccessDenied schema
 <a name="offerings-offeringid-purchase-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -123,7 +123,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### ResourceNotFound schema
 <a name="offerings-offeringid-purchase-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -132,7 +132,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### ResourceConflict schema
 <a name="offerings-offeringid-purchase-response-body-resourceconflict-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -141,7 +141,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### LimitExceeded schema
 <a name="offerings-offeringid-purchase-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -150,7 +150,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### InternalServiceError schema
 <a name="offerings-offeringid-purchase-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -159,7 +159,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### BadGatewayException schema
 <a name="offerings-offeringid-purchase-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -168,7 +168,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 #### GatewayTimeoutException schema
 <a name="offerings-offeringid-purchase-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

@@ -18,7 +18,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```json
 {
-  "[NonFilterableMetadataKeys](#cfn-s3vectors-index-metadataconfiguration-nonfilterablemetadatakeys)" : {{[ String, ... ]}}
+  "[NonFilterableMetadataKeys](#cfn-s3vectors-index-metadataconfiguration-nonfilterablemetadatakeys)" : {{[ String, ... ]}},
+  "[TextSearchConfigurations](#cfn-s3vectors-index-metadataconfiguration-textsearchconfigurations)" : {{[ TextSearchConfiguration, ... ]}}
 }
 ```
 
@@ -28,6 +29,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```yaml
   [NonFilterableMetadataKeys](#cfn-s3vectors-index-metadataconfiguration-nonfilterablemetadatakeys): {{
     - String}}
+  [TextSearchConfigurations](#cfn-s3vectors-index-metadataconfiguration-textsearchconfigurations): {{
+    - TextSearchConfiguration}}
 ```
 
 ## Properties
@@ -41,3 +44,11 @@ You can specify 1 to 10 non-filterable metadata keys. Each key must be 1 to 63 c
 *Minimum*: `1 | 1`
 *Maximum*: `63 | 10`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`TextSearchConfigurations`  <a name="cfn-s3vectors-index-metadataconfiguration-textsearchconfigurations"></a>
+Full-text search configurations for searchable metadata keys.
+*Required*: No
+*Type*: Array of [TextSearchConfiguration](aws-properties-s3vectors-index-textsearchconfiguration.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

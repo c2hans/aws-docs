@@ -29,7 +29,7 @@ By default, full access to Recycle Bin is allowed through the endpoint. You can 
 
 For more information, see [ Controlling access to services with VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html)s in the *Amazon VPC User Guide*.
 
-```
+```json
 {
     "Statement": [
     {

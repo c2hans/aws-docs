@@ -164,6 +164,8 @@ You can also configure the **Transfer to Callback** option in the [Transfer to q
 
 The following video shows how to use conversational analytics to allow customers who contact you through Connect Customer chat to request a callback. This creates a more personalized customer experience. It shows how to configure this capability that allows customers to request callbacks from any channel, not just voice calls.
 
+[![AWS Videos](https://img.youtube.com/vi/XihssR_rU3s/0.jpg)](https://www.youtube.com/watch?v=XihssR_rU3s)
+
 ## Learn more about queued callbacks
 <a name="queued-callback-no-agents-available"></a>
 

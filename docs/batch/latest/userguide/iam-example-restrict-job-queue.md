@@ -14,7 +14,7 @@ When scoping resource-level access for job submission, you must provide both job
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

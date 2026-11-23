@@ -44,7 +44,7 @@ This is a guide on how to create an EventBridge rule to log Connect Customer fai
 
 The following is an example EventBridge payload when the rule is matched:
 
-```
+```json
 {
   "version": "0",
   "id": "00005435-d12d-c93b-d9d2-b64cba85fbb6",

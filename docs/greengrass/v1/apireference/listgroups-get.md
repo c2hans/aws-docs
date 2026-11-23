@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="listgroups-get-cli"></a>
 
-```
+```bash
 aws greengrass list-groups \
   [--max-results <value>] \
   [--next-token <value>]  \
@@ -25,7 +25,7 @@ aws greengrass list-groups \
 
 cli-input-json format:
 
-```
+```json
 {
 "MaxResults": "integer",
 "NextToken": "string"
@@ -52,7 +52,7 @@ type: string
 
  [ ListGroupsResponse](definitions-listgroupsresponse.md)
 
-```
+```json
 {
 "Groups": [
   {

@@ -77,7 +77,7 @@ Replaces the existing resource policy for a bot or bot alias with a new one.
 
 The following example shows how to use the resource-based policy operations to manage a resource-based policy.
 
-```
+```java
         /*
          * Create a new policy for the specified bot alias
          * that allows a role to invoke lex:UpdateBotAlias on it.
@@ -174,7 +174,7 @@ The following example grants permissions for a specific IAM role to call Amazon 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -210,7 +210,7 @@ The user is specifically denied permission to update or delete the bot alias.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

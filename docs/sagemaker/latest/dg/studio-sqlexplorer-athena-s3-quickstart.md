@@ -55,7 +55,7 @@ To avoid collisions between table names from different Amazon S3 locations, crea
 
       1. Enter the path to your dataset in Amazon S3. For example:
 
-         ```
+         ```bash
          s3://dsoaws/nyc-taxi-orig-cleaned-split-parquet-per-year-multiple-files/ride-info/year=2019/
          ```
 
@@ -111,7 +111,7 @@ In the following steps you grant the execution role of your user profile permiss
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

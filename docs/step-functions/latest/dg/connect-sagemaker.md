@@ -33,7 +33,7 @@ AWS Step Functions will not automatically create a policy for `CreateTransformJo
 
 The following includes a `Task` state that creates an Amazon SageMaker AI transform job, specifying the Amazon S3 location for `DataSource` and `TransformOutput`.
 
-```
+```json
 {
 "SageMaker CreateTransformJob": {
   "Type": "Task",
@@ -68,7 +68,7 @@ The following includes a `Task` state that creates an Amazon SageMaker AI transf
 
 The following includes a `Task` state that creates an Amazon SageMaker AI training job.
 
-```
+```json
 {
    "SageMaker CreateTrainingJob":{
       "Type":"Task",
@@ -159,7 +159,7 @@ The following includes a `Task` state that creates an Amazon SageMaker AI traini
 
 The following includes a `Task` state that creates an Amazon SageMaker AI labeling job.
 
-```
+```json
 {
   "StartAt": "SageMaker CreateLabelingJob",
   "TimeoutSeconds": 3600,
@@ -240,7 +240,7 @@ The following includes a `Task` state that creates an Amazon SageMaker AI labeli
 
 The following includes a `Task` state that creates an Amazon SageMaker AI processing job.
 
-```
+```json
 {
   "StartAt": "SageMaker CreateProcessingJob Sync",
   "TimeoutSeconds": 3600,
@@ -307,7 +307,7 @@ For these examples, `{{roleArn}}` refers to the Amazon Resource Name (ARN) of th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -366,7 +366,7 @@ For these examples, `{{roleArn}}` refers to the Amazon Resource Name (ARN) of th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -416,7 +416,7 @@ For these examples, `{{roleArn}}` refers to the Amazon Resource Name (ARN) of th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -475,7 +475,7 @@ For these examples, `{{roleArn}}` refers to the Amazon Resource Name (ARN) of th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -531,7 +531,7 @@ AWS Step Functions will not automatically create a policy for `CreateTransformJo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -590,7 +590,7 @@ AWS Step Functions will not automatically create a policy for `CreateTransformJo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -640,7 +640,7 @@ AWS Step Functions will not automatically create a policy for `CreateTransformJo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -699,7 +699,7 @@ AWS Step Functions will not automatically create a policy for `CreateTransformJo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

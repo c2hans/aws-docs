@@ -15,7 +15,7 @@ To profile specific intervals during training to partition statistics for each o
 
 For training modes, use the following `PythonProfileModes` class:
 
-```
+```py
 from smdebug.profiler.python_profile_utils import PythonProfileModes
 ```
 
@@ -29,7 +29,7 @@ This class provides the following options:
 
 <a name="debugger-access-data-python-profiling-phases"></a>For training phases, use the following `StepPhase` class:
 
-```
+```py
 from smdebug.profiler.analysis.utils.python_profile_analysis_utils import StepPhase
 ```
 
@@ -50,13 +50,13 @@ To learn more about the Python profiling options and what's collected, see [Defa
 
 The following methods of the `PythonProfileAnalysis`, `cProfileAnalysis`, `PyinstrumentAnalysis` classes are provided to fetch and analyze the Python profiling data. Each function loads the latest data from the default S3 URI.
 
-```
+```py
 from smdebug.profiler.analysis.python_profile_analysis import PythonProfileAnalysis, cProfileAnalysis, PyinstrumentAnalysis
 ```
 
 To set Python profiling objects for analysis, use the cProfileAnalysis or PyinstrumentAnalysis classes as shown in the following example code. It shows how to set a `cProfileAnalysis` object, and if you want to use `PyinstrumentAnalysis`, replace the class name.
 
-```
+```py
 python_analysis = cProfileAnalysis(
     local_profile_dir=tf_python_stats_dir,
     s3_path=tj.profiler_s3_output_path

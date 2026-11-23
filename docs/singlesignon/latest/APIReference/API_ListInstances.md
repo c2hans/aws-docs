@@ -132,7 +132,7 @@ This example lists the instances in us-east-1, the primary Region of the instanc
 #### Sample Request
 <a name="API_ListInstances_Example_1_Request"></a>
 
-```
+```json
 {
     "RegionScope": "CURRENT_REGION"
 }
@@ -141,7 +141,7 @@ This example lists the instances in us-east-1, the primary Region of the instanc
 #### Sample Response
 <a name="API_ListInstances_Example_1_Response"></a>
 
-```
+```json
 {
     "Instances": [
         {
@@ -179,7 +179,7 @@ This example lists the instances in us-west-2, a Region that the instance is rep
 #### Sample Request
 <a name="API_ListInstances_Example_2_Request"></a>
 
-```
+```json
 {
     "RegionScope": "CURRENT_REGION"
 }
@@ -188,7 +188,7 @@ This example lists the instances in us-west-2, a Region that the instance is rep
 #### Sample Response
 <a name="API_ListInstances_Example_2_Response"></a>
 
-```
+```json
 {
     "Instances": [
         {
@@ -226,7 +226,7 @@ This example lists the instances in eu-west-1, where the instance isn't present,
 #### Sample Request
 <a name="API_ListInstances_Example_3_Request"></a>
 
-```
+```json
 {
     "RegionScope": "CURRENT_REGION"
 }
@@ -235,7 +235,7 @@ This example lists the instances in eu-west-1, where the instance isn't present,
 #### Sample Response
 <a name="API_ListInstances_Example_3_Response"></a>
 
-```
+```json
 {
     "Instances": []
 }
@@ -249,7 +249,7 @@ This example lists the instances in all Regions from eu-west-1, where the instan
 #### Sample Request
 <a name="API_ListInstances_Example_4_Request"></a>
 
-```
+```json
 {
     "RegionScope": "ALL_REGIONS"
 }
@@ -258,7 +258,7 @@ This example lists the instances in all Regions from eu-west-1, where the instan
 #### Sample Response
 <a name="API_ListInstances_Example_4_Response"></a>
 
-```
+```json
 {
     "Instances": [
         {

@@ -12,7 +12,7 @@ Create a configuration bundle to store a versioned snapshot of your agent’s dy
 **Example**
 Create a bundle directly:
 
-```
+```bash
 agentcore eval config-bundle create \
   --name myAgentConfig \
   --branch-name mainline \
@@ -21,7 +21,7 @@ agentcore eval config-bundle create \
 ```
 To manage the bundle as part of the current project, add it to the project and deploy:
 
-```
+```bash
 agentcore add config-bundle \
   --name myAgentConfig \
   --commit-message "Initial bundle creation" \
@@ -33,7 +33,7 @@ To be prompted for each value, run `agentcore add config-bundle` without flags.
 For a runtime in the same project, use the key `{{runtime:<runtime-name>}}` instead of an ARN, for example `{"{{runtime:MyAgent}}": {"configuration": {"system_prompt": "You are a helpful assistant."}}}`. The placeholder resolves to the runtime ARN during `agentcore deploy`, so you can add the runtime and the bundle in one deployment. Gateway components must use the full gateway ARN.
 Sample `components.json`:
 
-```
+```json
 {
     "arn:aws:bedrock-agentcore:us-west-2:123456789012:runtime/MyAgent-abc123": {
         "configuration": {
@@ -44,7 +44,7 @@ Sample `components.json`:
 }
 ```
 
-```
+```python
 import boto3
 import uuid
 

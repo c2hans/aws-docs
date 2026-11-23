@@ -52,7 +52,7 @@ After the file extension is removed from your Dockerfile:
 1. Copy the contents of the following example into your Dockerfile.
 **Example Dockerfile image template**
 
-   ```
+   ```text
    FROM ubuntu:22.04
 
    # Install dependencies

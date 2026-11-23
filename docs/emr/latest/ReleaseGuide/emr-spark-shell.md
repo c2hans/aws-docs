@@ -14,7 +14,7 @@ The bucket in these examples is available to clients that can access US East (N.
 **Example Use the Spark shell to count the occurrences of a string in a file stored in Amazon S3**
 This example uses `sc` to read a text file that's stored in Amazon S3.
 
-```
+```scala
 scala> sc
 res0: org.apache.spark.SparkContext = org.apache.spark.SparkContext@404721db
 
@@ -22,7 +22,7 @@ scala> val textFile = sc.textFile("s3://elasticmapreduce/samples/hive-ads/tables
 ```
 Spark creates the textFile and associated [data structure](https://spark.apache.org/docs/latest/programming-guide.html#resilient-distributed-datasets-rdds). Next, the example counts the number of lines in the log file with the string "cartoonnetwork.com":
 
-```
+```scala
 scala> val linesWithCartoonNetwork = textFile.filter(line => line.contains("cartoonnetwork.com")).count()
 linesWithCartoonNetwork: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[2] at filter at <console>:23
 <snip>
@@ -34,7 +34,7 @@ res2: Long = 9
 **Example Use the Python-based Spark shell to count the occurrences of a string in a file stored in Amazon S3**
 Spark also includes a Python-based shell, `pyspark`, that you can use to prototype Spark programs written in Python. Just as with `spark-shell`, invoke `pyspark` on the primary node; it also has the same [SparkContext](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.SparkContext.html#pyspark.SparkContext) object.
 
-```
+```python,py
 >>> sc
 <pyspark.context.SparkContext object at 0x7fe7e659fa50>
 >>> textfile = sc.textFile("s3://elasticmapreduce/samples/hive-ads/tables/impressions/dt=2009-04-13-08-05/ec2-0-51-75-39.amazon.com-2009-04-13-08-05.log")

@@ -50,7 +50,7 @@ The following example lists the buckets in your account. There are no command li
 
 Create the file *s3\_list\_buckets.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -62,7 +62,7 @@ import (
 
 Create a function we use to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -71,7 +71,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials`, and create a new Amazon S3 service client.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -82,7 +82,7 @@ svc := s3.New(sess)
 
 Call [ListBuckets](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.ListBuckets). Passing `nil` means no filters are applied to the returned list. If an error occurs, call `exitErrorf`. If no error occurs, loop through the buckets, printing the name and creation date of each bucket.
 
-```
+```go
 result, err := svc.ListBuckets(nil)
 if err != nil {
     exitErrorf("Unable to list buckets, %v", err)
@@ -107,7 +107,7 @@ The following example creates a bucket with the name specified as a command line
 
 Create the file *s3\_create\_bucket.go*. Import the following Go and AWS SDK for Go packages.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -119,7 +119,7 @@ import (
 
 Create a function we use to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -128,7 +128,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 The program requires one argument, the name of the bucket to create.
 
-```
+```go
 if len(os.Args) != 2 {
     exitErrorf("Bucket name missing!\nUsage: %s bucket_name", os.Args[0])
 }
@@ -138,7 +138,7 @@ bucket := os.Args[1]
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials`, and create a new S3 service client.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -149,7 +149,7 @@ svc := s3.New(sess)
 
 Call [CreateBucket](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.CreateBucket), passing in the bucket name defined previously. If an error occurs, call `exitErrorf`. If there are no errors, wait for a notification that the bucket was created.
 
-```
+```go
 _, err = svc.CreateBucket(&s3.CreateBucketInput{
     Bucket: aws.String(bucket),
 })
@@ -167,7 +167,7 @@ err = svc.WaitUntilBucketExists(&s3.HeadBucketInput{
 
 If the `WaitUntilBucketExists` call returns an error, call `exitErrorf`. If there are no errors, notify the user of success.
 
-```
+```go
 if err != nil {
     exitErrorf("Error occurred while waiting for bucket to be created, %v", bucket)
 }
@@ -186,7 +186,7 @@ The following example lists the items in the bucket with the name specified as a
 
 Create the file *s3\_list\_objects.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -198,7 +198,7 @@ import (
 
 Create a function we use to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -207,7 +207,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 The program requires one command line argument, the name of the bucket.
 
-```
+```go
 if len(os.Args) != 2 {
     exitErrorf("Bucket name required\nUsage: %s bucket_name",
         os.Args[0])
@@ -218,7 +218,7 @@ bucket := os.Args[1]
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials`, and create a new Amazon S3 service client.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -229,7 +229,7 @@ svc := s3.New(sess)
 
 Call [ListObjects](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.ListObjects), passing in the name of the bucket. If an error occurs, call `exitErrorf`. If no error occurs, loop through the items, printing the name, last modified date, size, and storage class of each item.
 
-```
+```go
 resp, err := svc.ListObjectsV2(&s3.ListObjectsV2Input{Bucket: aws.String(bucket)})
 if err != nil {
     exitErrorf("Unable to list items in bucket %q, %v", bucket, err)
@@ -255,7 +255,7 @@ The following example uploads a file to a bucket with the names specified as com
 
 Create the file *s3\_upload\_object.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -267,7 +267,7 @@ import (
 
 Create a function we use to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -276,7 +276,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 Get the bucket and file name from the command line arguments, open the file, and defer the file closing until we are done with it. If an error occurs, call `exitErrorF`.
 
-```
+```go
 if len(os.Args) != 3 {
     exitErrorf("bucket and file name required\nUsage: %s bucket_name filename",
         os.Args[0])
@@ -295,7 +295,7 @@ defer file.Close()
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials`, and create a `NewUploader` object.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -309,7 +309,7 @@ uploader := s3manager.NewUploader(sess)
 
 Upload the file to the bucket. If an error occurs, call `exitErrorF`. Otherwise, notify the user that the upload succeeded.
 
-```
+```go
 _, err = uploader.Upload(&s3manager.UploadInput{
     Bucket: aws.String(bucket),
     Key: aws.String(filename),
@@ -334,7 +334,7 @@ The following example downloads an item from a bucket with the names specified a
 
 Create the file *s3\_download\_object.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -348,7 +348,7 @@ import (
 
 Create a function we use to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -357,7 +357,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 Get the bucket and file name from the command line arguments. If there aren’t two arguments, call `exitErrorf`. Otherwise, create the file and defer file closing until we are done downloading. If an error occurs while creating the file, call `exitErrorf`.
 
-```
+```go
 if len(os.Args) != 3 {
     exitErrorf("Bucket and item names required\nUsage: %s bucket_name item_name",
         os.Args[0])
@@ -369,7 +369,7 @@ item := os.Args[2]
 
 Initialize the session in us-west-2 that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials`, and create a `NewDownloader` object.
 
-```
+```go
 sess, _ := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -379,7 +379,7 @@ downloader := s3manager.NewDownloader(sess)
 
 Download the item from the bucket. If an error occurs, call `exitErrorf`. Otherwise, notify the user that the download succeeded.
 
-```
+```go
 numBytes, err := downloader.Download(file,
     &s3.GetObjectInput{
         Bucket: aws.String(bucket),
@@ -403,7 +403,7 @@ The following example copies an item from one bucket to another with the names s
 
 Create the file *s3\_copy\_object.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -416,7 +416,7 @@ import (
 
 Create a function we use to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -425,7 +425,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 Get the names of the bucket containing the item, the item to copy, and the name of the bucket to which the item is copied. If there aren’t four command line arguments, call `exitErrorf`.
 
-```
+```go
 if len(os.Args) != 4 {
     exitErrorf("Bucket, item, and other bucket names required\nUsage: go run s3_copy_object bucket item other-bucket")
 }
@@ -439,7 +439,7 @@ source := bucket + "/" + item
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials`, and create a new Amazon S3 service client.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -450,7 +450,7 @@ svc := s3.New(sess)
 
 Call [CopyObject](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.CopyObject), with the names of the bucket containing the item, the item to copy, and the name of the bucket to which the item is copied. If an error occurs, call `exitErrorf`. If no error occurs, wait for the item to be copied.
 
-```
+```go
 // Copy the item
 _, err = svc.CopyObject(&s3.CopyObjectInput{Bucket: aws.String(other),
     CopySource: aws.String(url.PathEscape(source)), Key: aws.String(item)})
@@ -461,7 +461,7 @@ if err != nil {
 
 If the `WaitUntilObjectExists` call returns an error, call `exitErrorf`. Otherwise, notify the user that the copy succeeded.
 
-```
+```go
 // Wait to see if the item got copied
 err = svc.WaitUntilObjectExists(&s3.HeadObjectInput{Bucket: aws.String(other), Key: aws.String(item)})
 if err != nil {
@@ -482,7 +482,7 @@ The following example deletes an item from a bucket with the names specified as 
 
 Create the file *s3\_delete\_object.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -494,7 +494,7 @@ import (
 
 Create a function we use to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -503,7 +503,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 Get the name of the bucket and object to delete.
 
-```
+```go
 if len(os.Args) != 3 {
     exitErrorf("Bucket and object name required\nUsage: %s bucket_name object_name",
         os.Args[0])
@@ -515,7 +515,7 @@ obj := os.Args[2]
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials`, and create a new Amazon S3 service client.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -526,7 +526,7 @@ svc := s3.New(sess)
 
 Call [DeleteObject](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObject), passing in the names of the bucket and object to delete. If an error occurs, call `exitErrorf`. If no error occurs, wait until the object is deleted.
 
-```
+```go
 _, err = svc.DeleteObject(&s3.DeleteObjectInput{Bucket: aws.String(bucket), Key: aws.String(obj)})
 if err != nil {
     exitErrorf("Unable to delete object %q from bucket %q, %v", obj, bucket, err)
@@ -540,7 +540,7 @@ err = svc.WaitUntilObjectNotExists(&s3.HeadObjectInput{
 
 If `WaitUntilObjectNotExists` returns an error, call `exitErrorf`. Otherwise, inform the user that the object was successfully deleted.
 
-```
+```go
 fmt.Printf("Object %q successfully deleted\n", obj)
 ```
 
@@ -555,7 +555,7 @@ The following example deletes all the items from a bucket with the bucket name s
 
 Create the file *s3\_delete\_objects.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -569,7 +569,7 @@ import (
 
 Create a function we use to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -578,7 +578,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 Get the name of the bucket.
 
-```
+```go
 if len(os.Args) != 2 {
     exitErrorf("Bucket name required\nUsage: %s BUCKET", os.Args[0])
 }
@@ -588,7 +588,7 @@ bucket := os.Args[1]
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials`, and create a new Amazon S3 service client.
 
-```
+```go
 sess, _ := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -597,7 +597,7 @@ svc := s3.New(sess)
 
 Create a list iterator to iterate through the list of bucket objects, deleting each object. If an error occurs, call `exitErrorf`.
 
-```
+```go
 iter := s3manager.NewDeleteListIterator(svc, &s3.ListObjectsInput{
     Bucket: aws.String(bucket),
 })
@@ -609,7 +609,7 @@ if err := s3manager.NewBatchDeleteWithClient(svc).Delete(aws.BackgroundContext()
 
 Once all of the items in the bucket have been deleted, inform the user that the objects were deleted.
 
-```
+```go
 fmt.Printf("Deleted object(s) from bucket: %s", bucket)
 ```
 
@@ -624,7 +624,7 @@ The following example restores the items in a bucket with the names specified as
 
 Create the file *s3\_restore\_object.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -636,7 +636,7 @@ import (
 
 Create a function we use to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -645,7 +645,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 The program requires two arguments, the names of the bucket and object to restore.
 
-```
+```go
 if len(os.Args) != 3 {
     exitErrorf("Bucket name and object name required\nUsage: %s bucket_name object_name",
         os.Args[0])
@@ -657,7 +657,7 @@ obj := os.Args[2]
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials`, and create a new Amazon S3 service client.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -668,7 +668,7 @@ svc := s3.New(sess)
 
 Call [RestoreObject](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.RestoreObject), passing in the bucket and object names and the number of days to temporarily restore. If an error occurs, call `exitErrorf`. Otherwise, inform the user that the bucket should be restored in the next four hours or so.
 
-```
+```go
 _, err = svc.RestoreObject(&s3.RestoreObjectInput{Bucket: aws.String(bucket), Key: aws.String(obj), RestoreRequest: &s3.RestoreRequest{Days: aws.Int64(30)}})
 if err != nil {
     exitErrorf("Could not restore %s in bucket %s, %v", obj, bucket, err)
@@ -688,7 +688,7 @@ The following example deletes the bucket with the name specified as a command li
 
 Create the file *s3\_delete\_bucket.go*. Import the following Go and AWS SDK for Go packages.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -700,7 +700,7 @@ import (
 
 Create a function we use to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -709,7 +709,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 The program requires one argument, the name of the bucket to delete. If the argument is not supplied, call `exitErrorf`.
 
-```
+```go
 if len(os.Args) != 2 {
     exitErrorf("bucket name required\nUsage: %s bucket_name", os.Args[0])
 }
@@ -719,7 +719,7 @@ bucket := os.Args[1]
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials`, and create a new S3 service client.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -730,7 +730,7 @@ svc := s3.New(sess)
 
 Call [DeleteBucket](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteBucket), passing in the bucket name. If an error occurs, call `exitErrorf`. If there are no errors, wait for a notification that the bucket was deleted.
 
-```
+```go
 _, err = svc.DeleteBucket(&s3.DeleteBucketInput{
     Bucket: aws.String(bucket),
 })
@@ -748,7 +748,7 @@ err = svc.WaitUntilBucketNotExists(&s3.HeadBucketInput{
 
 If `WaitUntilBucketNotExists` returns an error, call `exitErrorf`. Otherwise, inform the user that the bucket was successfully deleted.
 
-```
+```go
 if err != nil {
     exitErrorf("Error occurred while waiting for bucket to be deleted, %v", bucket)
 }

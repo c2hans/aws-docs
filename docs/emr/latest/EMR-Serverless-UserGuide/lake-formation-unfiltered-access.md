@@ -34,7 +34,7 @@ The following is an example policy of how to provide IAM permissions to access a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -104,7 +104,7 @@ AWS Glue Data Catalog must be configured as a metastore to access Lake Formation
 
 Set the following settings to configure Glue catalog as a metastore:
 
-```
+```bash
 --conf spark.sql.catalogImplementation=hive
 --conf spark.hive.metastore.client.factory.class=com.amazonaws.glue.catalog.metastore.AWSGlueDataCatalogHiveClientFactory
 ```
@@ -182,7 +182,7 @@ To access Lake Formation registered tables from interactive Spark sessions in Ju
 ------
 #### [ For Hive tables ]
 
-```
+```spark
 %%configure -f
 {
     "conf": {
@@ -199,7 +199,7 @@ To access Lake Formation registered tables from interactive Spark sessions in Ju
 ------
 #### [ For Iceberg tables ]
 
-```
+```spark
 %%configure -f
 {
     "conf": {

@@ -408,7 +408,7 @@ To generate cost reports for a specific previous month:
 
 1. In the test event configuration, use the following JSON format:
 
-   ```
+   ```json
    {
      "detail": {
        "reportMonth": "yyyy-MM"
@@ -485,7 +485,7 @@ If a blueprint deployment fails with error type `OperationInProgressException` a
 
 Enable managed execution on your StackSet to allow CloudFormation to queue concurrent operations automatically:
 
-```
+```bash
 aws cloudformation update-stack-set \
   --stack-set-name <STACKSET_NAME> \
   --managed-execution Active=true \

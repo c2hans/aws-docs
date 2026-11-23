@@ -34,7 +34,7 @@ If your Amazon S3 bucket is in a different AWS account from your knowledge base,
 
 In the account that owns the Amazon S3 bucket, add the following statement to the bucket policy. Replace {{kb-account-id}} with the account ID where your knowledge base is created, {{kb-service-role}} with the name of your knowledge base service role, and {{bucket-name}} with your bucket name.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -64,7 +64,7 @@ For more general guidance, see [Configure access to Amazon S3 buckets](https://d
 
 If your Amazon S3 bucket is encrypted with a customer managed KMS key, add the following statement to the key policy. Use the same placeholders as in the cross-account bucket policy. Allow a few minutes for key policy changes to propagate.
 
-```
+```json
 {
     "Sid": "AllowBedrockKnowledgeBaseKmsAccess",
     "Effect": "Allow",
@@ -130,7 +130,7 @@ aws bedrock-agent create-data-source \
 
 The `s3-managed-connector.json` file contains the following:
 
-```
+```json
 {
     "type": "MANAGED_KNOWLEDGE_BASE_CONNECTOR",
     "managedKnowledgeBaseConnectorConfiguration": {
@@ -193,7 +193,7 @@ The data source configuration uses the following connector parameters. To connec
 
 You can attach metadata to each document by uploading a sidecar file alongside it. For each document, create a file named `{{filename.extension}}.metadata.json` in the same Amazon S3 path. The metadata file must not exceed 10 KB. For example, alongside `report.pdf`, upload `report.pdf.metadata.json` with the following content:
 
-```
+```json
 {
     "metadataAttributes": {
         "company": {

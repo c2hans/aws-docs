@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
 ![A diagram depicting the Managed Service Provider (MSP) model.](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/msp-model.png)
 
+* Managed Service Provider (MSP) model *
+
  This diagram represents one approach to the MSP model. On the left you’ll see customers that run in the MSP model. Generally, the approach here would be to use whatever automation is available to provision each customer environment, and install the software for that customer.
 
  On the right is some approximation of the operational footprint that the MSP would provide to support these customer environments.

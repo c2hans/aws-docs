@@ -11,7 +11,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 **(Optional)** Specifies the deployment settings configuration.
 
-```
+```yaml
 DeploymentSettings:
   LambdaFunctionsVpcConfig:
     SecurityGroupIds:
@@ -28,7 +28,7 @@ DeploymentSettings:
 
 **(Optional)** Specifies the AWS Lambda functions VPC configurations. For more information, see [AWS Lambda VPC configuration in AWS ParallelCluster](lambda-vpc-v3.md).
 
-```
+```yaml
 LambdaFunctionsVpcConfig:
   SecurityGroupIds:
     - {{string}}

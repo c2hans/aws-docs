@@ -114,7 +114,7 @@ The following steps describe how to add a new template to an IAM policy that aut
 **Note**
 This snippet must be placed before the closing `]` character in the `Statement` array. You might need to add a comma before or after this snippet to correct any syntax errors.
 
-   ```
+   ```json
    {
        "Effect": "Allow",
        "Action": [

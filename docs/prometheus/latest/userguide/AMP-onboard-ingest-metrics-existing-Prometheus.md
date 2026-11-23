@@ -38,7 +38,7 @@ Follow these steps if you are using a Helm chart with Prometheus Server image of
    + Replace `${WORKSPACE_ID}` with your Amazon Managed Service for Prometheus workspace ID.
    + Replace `${REGION}` with the Region of the Amazon Managed Service for Prometheus workspace (such as `us-west-2`).
 
-   ```
+   ```yaml
    ## The following is a set of default values for prometheus server helm chart which enable remoteWrite to AMP
        ## For the rest of prometheus helm chart values see: https://github.com/prometheus-community/helm-charts/blob/main/charts/prometheus/values.yaml
        ##
@@ -64,7 +64,7 @@ Follow these steps if you are using a Helm chart with Prometheus Server image of
    + Replace `my_prometheus_values_yaml` with the path to your Helm configuration file.
    + Replace `current_helm_chart_version` with the current version of your Prometheus Server Helm chart. You can find the current chart version by using the [helm list](https://helm.sh/docs/helm/helm_list/) command.
 
-   ```
+   ```cmd
    helm upgrade {{prometheus-chart-name}} prometheus-community/prometheus \
           -n {{prometheus-namespace}} \
           -f {{my_prometheus_values_yaml}} \
@@ -84,7 +84,7 @@ These instructions assume that you are using Helm to deploy Prometheus.
 
    Add the following values to the YAML file.
 
-   ```
+   ```yaml
    serviceAccounts:
            server:
                name: "amp-iamproxy-ingest-service-account"
@@ -120,13 +120,13 @@ These instructions assume that you are using Helm to deploy Prometheus.
 
 1. Upgrade your Prometheus Helm chart. First, find your Helm chart name by entering the following command. In the output from this command, look for a chart with a name that includes `prometheus`.
 
-   ```
+   ```cmd
    helm ls --all-namespaces
    ```
 
    Then enter the following command.
 
-   ```
+   ```cmd
    helm upgrade --install {{prometheus-helm-chart-name}} prometheus-community/prometheus -n {{prometheus-namespace}} -f ./amp_ingest_override_values.yaml
    ```
 
@@ -137,7 +137,7 @@ These instructions assume that you are using Helm to deploy Prometheus.
 
 If you don't already have Helm charts downloaded locally, you can use the following command to download them.
 
-```
+```cmd
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
     helm pull prometheus-community/prometheus --untar
 ```

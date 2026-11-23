@@ -15,7 +15,7 @@ The following Amazon Redshift system tables can be helpful in troubleshooting da
 
 1. Create a view or define a query that returns details about load errors. The following example joins the STL\_LOAD\_ERRORS table to the STV\_TBL\_PERM table to match table IDs with actual table names.
 
-   ```
+   ```sql
    create view loadview as
    (select distinct tbl, trim(name) as table_name, query, starttime,
    trim(filename) as input, line_number, colname, err_code,
@@ -28,7 +28,7 @@ The following Amazon Redshift system tables can be helpful in troubleshooting da
 
 1. Query the LOADVIEW view to see error details. For example:
 
-   ```
+   ```sql
    select * from loadview where table_name='venue';
    ```
 

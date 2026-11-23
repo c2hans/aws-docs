@@ -18,7 +18,7 @@ The following examples show how to use the [GetParameter](https://docs.aws.amazo
 ------
 #### [ AWS CLI ]
 
-```
+```sh
 $ aws ssm get-parameter --name /aws/service/ecs/optimized-ami/amazon-linux-2/gpu/recommended \
                         --region {{us-east-2}} --output json
 ```
@@ -41,7 +41,7 @@ The output includes the AMI information in the `Value` parameter.
 ------
 #### [ Python ]
 
-```
+```python
 from __future__ import print_function
 
 import json
@@ -69,7 +69,7 @@ The following examples demonstrate the use of [GetParameters](https://docs.aws.a
 ------
 #### [ AWS CLI ]
 
-```
+```sh
 $ aws ssm get-parameters --names  /aws/service/ecs/optimized-ami/amazon-linux-2/gpu/recommended/image_name \
                                   /aws/service/ecs/optimized-ami/amazon-linux-2/gpu/recommended/image_id \
                          --region {{us-east-2}} --output json
@@ -104,7 +104,7 @@ The output includes the full metadata for each of the parameters:
 ------
 #### [ Python ]
 
-```
+```python
 from __future__ import print_function
 
 import boto3
@@ -132,7 +132,7 @@ The following examples show how to use the [GetParametersByPath](https://docs.aw
 ------
 #### [ AWS CLI ]
 
-```
+```sh
 $ aws ssm get-parameters-by-path --path /aws/service/ecs/optimized-ami/amazon-linux-2/gpu/recommended \
                                  --region {{us-east-2}} --output json
 ```
@@ -197,7 +197,7 @@ The output includes the full metadata for all of the parameters under the specif
 ------
 #### [ Python ]
 
-```
+```python
 from __future__ import print_function
 
 import boto3

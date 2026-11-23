@@ -35,7 +35,7 @@ Set the `modelId` to one of the following to use Amazon Nova models:
 Amazon Nova inference requests can take up to 60 minutes to complete. Configure your client timeout settings accordingly:
  The following example is Python code. Users can check the documentation for their preferred SDK language version in that SDK's API docs.
 
-```
+```Python
 from botocore.config import Config
 
 bedrock = boto3.client(

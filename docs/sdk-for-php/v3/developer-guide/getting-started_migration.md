@@ -69,7 +69,7 @@ The SDK also includes multi-region clients, which can dispatch requests to diffe
 
 In version 3 of the AWS SDK for PHP, the way you instantiate a client has changed. Instead of the `factory` methods in version 2, you can simply instantiate a client by using the `new` keyword.
 
-```
+```php
 use Aws\DynamoDb\DynamoDbClient;
 
 // Version 2 style
@@ -111,7 +111,7 @@ To provide consistency in how the SDK parses the result of an API operation, Ama
 
 For example, calling the Amazon RDS [DescribeEngineDefaultParameters](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeEngineDefaultParameters.html) result in version 3 now includes a wrapping “EngineDefaults” element. In version 2, this element was not present.
 
-```
+```php
 $client = new Aws\Rds\RdsClient([
     'region'  => 'us-west-1',
     'version' => '2014-09-01'
@@ -233,7 +233,7 @@ In version 3, iterators have been replaced with [Paginators](guide_paginators.md
 
 The following examples show how paginators are different from iterators, by demonstrating how to retrieve paginated results for the `S3 ListObjects` operation in both version 2 and version 3.
 
-```
+```php
 // Version 2
 $objects = $s3Client->getIterator('ListObjects', ['Bucket' => 'amzn-s3-demo-bucket']);
 foreach ($objects as $object) {
@@ -241,7 +241,7 @@ foreach ($objects as $object) {
 }
 ```
 
-```
+```php
 // Version 3
 $results = $s3Client->getPaginator('ListObjects', ['Bucket' => 'amzn-s3-demo-bucket']);
 foreach ($results as $result) {
@@ -254,7 +254,7 @@ foreach ($results as $result) {
 
 Paginator objects have a `search()` method that enables you to use [JMESPath](guide_jmespath.md) expressions to extract data more easily from the result set.
 
-```
+```php
 $results = $s3Client->getPaginator('ListObjects', ['Bucket' => 'amzn-s3-demo-bucket']);
 foreach ($results->search('Contents[].Key') as $key) {
     echo $key . "\n";
@@ -294,7 +294,7 @@ The following examples show some of the ways in which using version 3 of the AWS
 #### From version 2 of the SDK
 <a name="from-version-2-of-the-sdk"></a>
 
-```
+```php
 <?php
 
 require '/path/to/vendor/autoload.php';
@@ -328,7 +328,7 @@ Key differences:
 + Use `new` instead of `factory()` to instantiate the client.
 + The `'version'` and `'region'` options are required during instantiation.
 
-```
+```php
 <?php
 
 require '/path/to/vendor/autoload.php';
@@ -362,7 +362,7 @@ try {
 #### From version 2 of the SDK
 <a name="id2"></a>
 
-```
+```php
 <?php return array(
     'includes' => array('_aws'),
     'services' => array(
@@ -382,7 +382,7 @@ try {
 );
 ```
 
-```
+```php
 <?php
 
 require '/path/to/vendor/autoload.php';
@@ -407,7 +407,7 @@ Key differences:
 + The `'version'` option is required during instantiation.
 + Use the `create<Service>()` methods instead of `get('<service>')`.
 
-```
+```php
 <?php
 
 require '/path/to/vendor/autoload.php';

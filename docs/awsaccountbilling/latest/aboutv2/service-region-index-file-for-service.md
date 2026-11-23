@@ -19,7 +19,7 @@ To understand the service version index file for AWS services, see the following
 
 The service Region index file for an AWS service looks like the following.
 
-```
+```json
 {
    "formatVersion":"The version number for the service region index format",
    "disclaimer":"The disclaimers for this service region index",

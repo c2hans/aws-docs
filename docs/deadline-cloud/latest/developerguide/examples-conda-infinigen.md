@@ -13,7 +13,7 @@ To build this recipe, deploy the [CUDA farm CloudFormation template](https://git
 
 Submit the build from the `conda_recipes` directory:
 
-```
+```bash
 ./submit-package-job infinigen-1.19.0
 ```
 

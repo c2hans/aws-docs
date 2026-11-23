@@ -14,6 +14,7 @@ Modifies the flag, `ChangeProtection`, which indicates whether it is possible to
    "FirewallArn": "{{string}}",
    "FirewallName": "{{string}}",
    "FirewallPolicyChangeProtection": {{boolean}},
+   "FirewallType": "{{string}}",
    "UpdateToken": "{{string}}"
 }
 ```
@@ -45,6 +46,15 @@ Required: No
 A setting indicating whether the firewall is protected against a change to the firewall policy association. Use this setting to protect against accidentally modifying the firewall policy for a firewall that is in use. When you create a firewall, the operation initializes this setting to `TRUE`.
 Type: Boolean
 Required: Yes
+
+ ** [FirewallType](#API_UpdateFirewallPolicyChangeProtection_RequestSyntax) **   <a name="networkfirewall-UpdateFirewallPolicyChangeProtection-request-FirewallType"></a>
+The type of firewall that the request targets. Network Firewall supports the following firewall types:
++  `IGW_FIREWALL` - An internet gateway firewall, which AWS Network Security Manager creates and manages for a VPC.
++  `FIREWALL` - A standard Network Firewall firewall.
+If you specify the firewall ARN, the type must match the resource type in the ARN. If you specify only the firewall name, Network Firewall uses this value to identify the firewall. If you don't specify a type, the default is `FIREWALL`.
+Type: String
+Valid Values: `FIREWALL | IGW_FIREWALL`
+Required: No
 
  ** [UpdateToken](#API_UpdateFirewallPolicyChangeProtection_RequestSyntax) **   <a name="networkfirewall-UpdateFirewallPolicyChangeProtection-request-UpdateToken"></a>
 An optional token that you can use for optimistic locking. Network Firewall returns a token to your requests that access the firewall. The token marks the state of the firewall resource at the time of the request.

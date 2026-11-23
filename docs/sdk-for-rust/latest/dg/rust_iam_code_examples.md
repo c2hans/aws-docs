@@ -29,7 +29,7 @@ The following code example shows how to get started using IAM.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 From src/bin/hello.rs.
 
-```
+```rust
 use aws_sdk_iam::error::SdkError;
 use aws_sdk_iam::operation::list_policies::ListPoliciesError;
 use clap::Parser;
@@ -57,7 +57,7 @@ async fn main() -> Result<(), Box<SdkError<ListPoliciesError>>> {
 ```
 From src/iam-service-lib.rs.
 
-```
+```rust
 pub async fn list_policies(
     client: iamClient,
     path_prefix: String,
@@ -106,7 +106,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 use aws_config::meta::region::RegionProviderChain;
 use aws_sdk_iam::Error as iamError;
 use aws_sdk_iam::{config::Credentials as iamCredentials, config::Region, Client as iamClient};
@@ -341,7 +341,7 @@ The following code example shows how to use `AttachRolePolicy`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn attach_role_policy(
     client: &iamClient,
     role: &Role,
@@ -365,7 +365,7 @@ The following code example shows how to use `AttachUserPolicy`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn attach_user_policy(
     client: &iamClient,
     user_name: &str,
@@ -391,7 +391,7 @@ The following code example shows how to use `CreateAccessKey`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn create_access_key(client: &iamClient, user_name: &str) -> Result<AccessKey, iamError> {
     let mut tries: i32 = 0;
     let max_tries: i32 = 10;
@@ -424,7 +424,7 @@ The following code example shows how to use `CreatePolicy`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn create_policy(
     client: &iamClient,
     policy_name: &str,
@@ -449,7 +449,7 @@ The following code example shows how to use `CreateRole`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn create_role(
     client: &iamClient,
     role_name: &str,
@@ -480,7 +480,7 @@ The following code example shows how to use `CreateServiceLinkedRole`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn create_service_linked_role(
     client: &iamClient,
     aws_service_name: String,
@@ -508,7 +508,7 @@ The following code example shows how to use `CreateUser`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn create_user(client: &iamClient, user_name: &str) -> Result<User, iamError> {
     let response = client.create_user().user_name(user_name).send().await?;
 
@@ -525,7 +525,7 @@ The following code example shows how to use `DeleteAccessKey`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn delete_access_key(
     client: &iamClient,
     user: &User,
@@ -561,7 +561,7 @@ The following code example shows how to use `DeletePolicy`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn delete_policy(client: &iamClient, policy: Policy) -> Result<(), iamError> {
     client
         .delete_policy()
@@ -581,7 +581,7 @@ The following code example shows how to use `DeleteRole`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn delete_role(client: &iamClient, role: &Role) -> Result<(), iamError> {
     let role = role.clone();
     while client
@@ -606,7 +606,7 @@ The following code example shows how to use `DeleteServiceLinkedRole`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn delete_service_linked_role(
     client: &iamClient,
     role_name: &str,
@@ -630,7 +630,7 @@ The following code example shows how to use `DeleteUser`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn delete_user(client: &iamClient, user: &User) -> Result<(), SdkError<DeleteUserError>> {
     let user = user.clone();
     let mut tries: i32 = 0;
@@ -669,7 +669,7 @@ The following code example shows how to use `DeleteUserPolicy`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn delete_user_policy(
     client: &iamClient,
     user: &User,
@@ -695,7 +695,7 @@ The following code example shows how to use `DetachRolePolicy`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn detach_role_policy(
     client: &iamClient,
     role_name: &str,
@@ -721,7 +721,7 @@ The following code example shows how to use `DetachUserPolicy`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn detach_user_policy(
     client: &iamClient,
     user_name: &str,
@@ -747,7 +747,7 @@ The following code example shows how to use `GetAccountPasswordPolicy`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn get_account_password_policy(
     client: &iamClient,
 ) -> Result<GetAccountPasswordPolicyOutput, SdkError<GetAccountPasswordPolicyError>> {
@@ -766,7 +766,7 @@ The following code example shows how to use `GetRole`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn get_role(
     client: &iamClient,
     role_name: String,
@@ -785,7 +785,7 @@ The following code example shows how to use `ListAttachedRolePolicies`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn list_attached_role_policies(
     client: &iamClient,
     role_name: String,
@@ -815,7 +815,7 @@ The following code example shows how to use `ListGroups`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn list_groups(
     client: &iamClient,
     path_prefix: Option<String>,
@@ -843,7 +843,7 @@ The following code example shows how to use `ListPolicies`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn list_policies(
     client: iamClient,
     path_prefix: String,
@@ -882,7 +882,7 @@ The following code example shows how to use `ListRolePolicies`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn list_role_policies(
     client: &iamClient,
     role_name: &str,
@@ -910,7 +910,7 @@ The following code example shows how to use `ListRoles`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn list_roles(
     client: &iamClient,
     path_prefix: Option<String>,
@@ -937,7 +937,7 @@ The following code example shows how to use `ListSAMLProviders`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn list_saml_providers(
     client: &Client,
 ) -> Result<ListSamlProvidersOutput, SdkError<ListSAMLProvidersError>> {
@@ -956,7 +956,7 @@ The following code example shows how to use `ListUsers`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn list_users(
     client: &iamClient,
     path_prefix: Option<String>,

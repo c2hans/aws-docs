@@ -16,7 +16,7 @@ Remove the Pod Identity associations from an Amazon EKS add-on.
 
 1. Update the addon to specify an empty array of pod identity associations.
 
-   ```
+   ```shell
    aws eks update-addon --cluster-name <cluster-name> \
    --addon-name <addon-name> \
    --pod-identity-associations "[]"

@@ -42,7 +42,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateInsight` action. In this example, an insight called `Test Insight` is created. The `ResourceId` attribute is specified as the **Group by** aggregator, and no optional filters for this insight are specified. For more information about insights, see [Viewing insights in Security Hub CSPM](securityhub-insights.md).
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

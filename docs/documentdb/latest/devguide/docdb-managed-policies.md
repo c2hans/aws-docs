@@ -31,7 +31,7 @@ This policy grants administrative permissions that allow a principal full access
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -160,7 +160,7 @@ This policy grants read-only permissions that allow users to view information in
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -256,7 +256,7 @@ Grants full access to manage Amazon DocumentDB resources using the AWS Managemen
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -459,7 +459,7 @@ This policy grants read-only permissions that allow users to view elastic cluste
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -512,7 +512,7 @@ The secret used must have a tag with key `DocDBElasticFullAccess` and a tag valu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -663,7 +663,7 @@ You can't attach `AmazonDocDBElasticServiceRolePolicy` to your AWS Identity and 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

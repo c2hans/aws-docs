@@ -143,7 +143,7 @@ This example requires access through a VPC endpoint, restricts identity store AP
 #### Sample Request
 <a name="API_UpdateIdentityStore_Example_1_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "NetworkConfiguration": {
@@ -158,7 +158,7 @@ This example requires access through a VPC endpoint, restricts identity store AP
 #### Sample Response
 <a name="API_UpdateIdentityStore_Example_1_Response"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "IdentityStoreArn": "arn:aws:identitystore::111122223333:identitystore/d-1234567890"

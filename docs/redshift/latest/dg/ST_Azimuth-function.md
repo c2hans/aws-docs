@@ -44,7 +44,7 @@ If *point1* and *point2* don't have the value for the spatial reference system i
 
 The following SQL returns the azimuth of the input points.
 
-```
+```sql
 SELECT ST_Azimuth(ST_Point(1,2), ST_Point(5,6));
 ```
 

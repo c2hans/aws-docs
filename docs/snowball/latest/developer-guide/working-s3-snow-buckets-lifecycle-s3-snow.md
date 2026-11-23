@@ -20,7 +20,7 @@ The following AWS CLI example puts a lifecycle configuration policy on a Snowbal
 
 First, save the lifecycle configuration policy to a JSON file. For this example, the file is named **lifecycle-example.json**.
 
-```
+```JSON
 {
     "Rules": [{
         "ID": "id-1",
@@ -50,13 +50,13 @@ After you save the file, submit the JSON file as part of the `put-bucket-lifecyc
 
 **Example of `put-bucket-lifecycle` command**
 
-```
+```bash,sh,zsh
 aws s3api put-bucket-lifecycle-configuration --bucket {{example-snow-bucket}}  \\
     --lifecycle-configuration file://{{lifecycle-example.json}} --endpoint-url https://{{s3api-endpoint-ip}} --profile {{your-profile}}
 ```
 For more information about this command, see [put-bucket-lifecycle-configuration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-lifecycle-configuration.html) in the AWS CLI Command Reference.
 
-```
+```bash,sh,zsh
 aws s3control put-bucket-lifecycle-configuration --bucket {{example-snow-bucket}} \\
     --lifecycle-configuration file://{{lifecycle-example.json}} \\
     --endpoint-url https://{{s3ctrlapi-endpoint-ip}} --profile {{your-profile}}

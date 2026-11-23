@@ -42,7 +42,7 @@ If *expression* is a `VARCHAR` string, trailing spaces are counted.
 
 To return the number of bytes and the number of characters in the string `français`, use the following example.
 
-```
+```sql
 SELECT OCTET_LENGTH('français'),
 LEN('français');
 
@@ -55,7 +55,7 @@ LEN('français');
 
 To return the number of bytes and the number of characters in the string `français` without using the OCTET\_LENGTH function, use the following example. For more information, see the [CAST function](r_CAST_function.md).
 
-```
+```sql
 SELECT LEN(CAST('français' AS VARBYTE)) as bytes, LEN('français');
 
 +-------+-----+
@@ -67,7 +67,7 @@ SELECT LEN(CAST('français' AS VARBYTE)) as bytes, LEN('français');
 
 To return the number of characters in the strings `cat` with no trailing spaces, `cat ` with three trailing spaces, `cat ` with three trailing spaces cast as a `CHAR` of length 6, and `cat ` with three trailing spaces cast as a `VARCHAR` of length 6, use the following example. Notice that the function does not count trailing spaces for `CHAR` strings, but it does count trailing spaces for `VARCHAR` strings.
 
-```
+```sql
 SELECT LEN('cat'), LEN('cat   '), LEN(CAST('cat   ' AS CHAR(6))) AS len_char, LEN(CAST('cat   ' AS VARCHAR(6))) AS len_varchar;
 
 +-----+-----+----------+-------------+
@@ -81,7 +81,7 @@ The following example uses data from the VENUE table in the TICKIT sample databa
 
 To return the 10 longest venue names in the VENUE table, use the following example.
 
-```
+```sql
 SELECT venuename, LEN(venuename)
 FROM venue
 ORDER BY 2 DESC, 1

@@ -16,7 +16,7 @@ You shouldn't share the **AWSCloudTrail\_FullAccess** policy broadly across your
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -49,7 +49,7 @@ You must use an IAM role and CloudWatch Logs log group that exists in your own a
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

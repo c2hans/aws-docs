@@ -194,7 +194,7 @@ Before you configure server OCSP for a private endpoint, create a Lambda functio
 ------
 #### [ JavaScript ]
 
-```
+```JavaScript
 import * as pkijs from 'pkijs';
 console.log('Loading function');
 
@@ -247,7 +247,7 @@ function encodeBase64(buffer) {
 ------
 #### [ Java ]
 
-```
+```Java
 package com.example.ocsp.responder;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.LambdaLogger;
@@ -297,7 +297,7 @@ In the process of creating the domain configuration with a Lambda OCSP responder
 
 1. After inserting your values, enter the following command. Note that the `statement-id` value must be unique. Replace `{{Id-1234}}` with the exact value you have, otherwise, you might get a `ResourceConflictException` error.
 
-   ```
+   ```bash
    aws lambda add-permission  \
    --function-name "ocsp-function" \
    --principal "iot.amazonaws.com" \
@@ -313,7 +313,7 @@ In the process of creating the domain configuration with a Lambda OCSP responder
 
 1. If the command succeeds, it returns a permission statement, such as this example. You can continue to the next section to configure OCSP stapling for private endpoints.
 
-   ```
+   ```json
    {
        "Statement": "{\"Sid\":\"{{Id-1234}}\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"iot.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:{{us-east-1}}:123456789012:function:ocsp-function\",\"Condition\":{\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:iot:{{us-east-1:123456789012}}:domainconfiguration/{{domain-config-name/*}}\"}}}"
    }

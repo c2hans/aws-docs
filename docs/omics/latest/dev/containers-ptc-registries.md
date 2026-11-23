@@ -204,7 +204,7 @@ aws ecr create-pull-through-cache-rule \
 
 You can use the **get-run-task** AWS CLI command to retrieve information about the container image used for a specific task:
 
-```
+```bash
 aws omics get-run-task --id {{run-id}} --task-id {{task-id}}
 ```
 
@@ -244,7 +244,7 @@ For more information about the policies for Amazon ECR pull through cache, see [
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -327,7 +327,7 @@ To create a repository creation template, follow these steps using the Amazon EC
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

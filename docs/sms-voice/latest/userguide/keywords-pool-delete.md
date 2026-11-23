@@ -31,7 +31,7 @@ You can use the [delete-keyword](https://docs.aws.amazon.com/cli/latest/referenc
 
 At the command line, enter the following command:
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 delete-keyword \
 > --origination-identity {{OriginationIdentity}} \
 > --keyword {{Keyword}}

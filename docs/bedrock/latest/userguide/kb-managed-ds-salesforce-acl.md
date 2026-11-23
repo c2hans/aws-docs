@@ -52,7 +52,7 @@ Complete [Set up OAuth 2.0 JWT Bearer authentication for Salesforce document-lev
 **Important**
 ACL configuration is permanent. You cannot enable ACLs on a data source created without ACL support, and you cannot disable ACLs after they are enabled.
 
-```
+```json
 "connectorParameters": {
     "type": "SALESFORCE",
     "connectorType": "SALESFORCE",

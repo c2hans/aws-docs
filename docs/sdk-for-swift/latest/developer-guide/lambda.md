@@ -14,7 +14,7 @@ You can use the AWS SDK for Swift from within an AWS Lambda function by using th
 
 If you're starting a new project, create the project in Xcode or open a shell session and use the following command to use Swift Package Manager (SwiftPM) to manage your project:
 
-```
+```console
 $ swift package init --type executable --name LambdaExample
 ```
 
@@ -24,7 +24,7 @@ Add the `swift-aws-lambda-runtime` package to the project. There are two ways to
 + If you're using Xcode, choose the **Add package dependencies...** option in the **File** menu, then provide the package URL: `https://github.com/awslabs/swift-aws-lambda-runtime.git`. Choose the `AWSLambdaRuntime` module.
 + If you're using SwiftPM to manage your project dependencies, add the runtime package and its `AWSLambdaRuntime` module to your `Package.swift` file to make the module available to your project:
 
-  ```
+  ```swift
   import PackageDescription
 
   let package = Package(
@@ -65,7 +65,7 @@ Add the `swift-aws-lambda-runtime` package to the project. There are two ways to
 
   You may find it useful to build the project at this point. Doing so will pull the dependencies and may make them available for your editor or IDE to generate auto-completion or inline help:
 
-  ```
+  ```console
   $ swift build
   ```
 
@@ -82,7 +82,7 @@ To create a Lambda function in Swift, you generally need to define several compo
 
 Create the file `Sources/lambda.swift` and begin by importing the needed modules and types:
 
-```
+```swift
 import Foundation
 import AWSLambdaRuntime
 @preconcurrency import AWSS3
@@ -108,7 +108,7 @@ These imports are:
 
 Next, define the structs that represent the incoming requests and the responses sent back by the Lambda function, along with the enum used to identify errors thrown by the handler function:
 
-```
+```swift
 /// Represents the contents of the requests being received from the client.
 /// This structure must be `Decodable` to indicate that its initializer
 /// converts an external representation into this type.
@@ -139,7 +139,7 @@ enum S3ExampleLambdaErrors: Error {
 
 To receive, process, and respond to incoming requests, implement the Swift Lambda Runtime's `LambdaRuntime` class like this:
 
-```
+```swift
 let runtime = LambdaRuntime {
     (event: Request, context: LambdaContext) async throws -> Response in
 
@@ -175,7 +175,7 @@ The name of the bucket to use is first fetched from the environment variable `BU
 
 This example uses a helper function, `putObject(body:bucketName:)`, to write strings to Amazon S3. The string is stored in the specified bucket by creating an object whose name is based on the current number of seconds since the start of the year 1970:
 
-```
+```swift
 /// Create a new object on Amazon S3 whose name is based on the current
 /// timestamp, containing the text specified.
 ///
@@ -220,7 +220,7 @@ func putObject(body: String, bucketName: String) async throws -> String {
 
 The final step is to have a global statement that calls the example runtime's `run()` function:
 
-```
+```swift
 try await runtime.run()
 ```
 
@@ -231,7 +231,7 @@ While you can test your Lambda function by adding it in the Lambda console, the 
 
 In this example, the program is built and run with the Region set to `eu-west-1`, the bucket name set to `amzn-s3-demo-bucket`, and the local Lambda server enabled:
 
-```
+```console
 $ AWS_REGION=eu-west-1             \
 BUCKET_NAME=amzn-s3-demo-bucket    \
 swift run
@@ -239,7 +239,7 @@ swift run
 
 After running this command, the Lambda function is available on the local server. Test it by opening another terminal session and using it to send a Lambda request to `http://127.0.0.1:7000/invoke`, or to port 7000 on `localhost`:
 
-```
+```console
 $ curl -X POST                          \
      --data '{"body":"This is the message to store on Amazon S3."}' \
 		 http://127.0.0.1:7000/invoke
@@ -247,7 +247,7 @@ $ curl -X POST                          \
 
 Upon success, a JSON object similar to this is returned:
 
-```
+```json
 {
   "req_id": "290935198005708",
   "body": "The Lambda function has successfully stored your data in S3 with name '1720098625801368.txt'"
@@ -256,7 +256,7 @@ Upon success, a JSON object similar to this is returned:
 
 You can remove the created object from your bucket using this AWS CLI command:
 
-```
+```console
 $ aws s3 rm s3://{{amzn-s3-demo-bucket}}/{{file-name}}
 ```
 
@@ -271,7 +271,7 @@ To build your app for use as a Lambda function:
 
 1. Build the app using the SwiftPM `archive` plugin. This automatically selects the architecture based on that of your build machine (x86\_64 or ARM).
 
-   ```
+   ```console
    $ swift package archive --allow-network-connections docker
    ```
 
@@ -290,7 +290,7 @@ Give your function the needed permissions to access AWS resources. For this exam
 
 1. Once you've created and deployed the Swift-based Lambda function, it should be ready to accept requests. You can invoke the function using the `[Invoke](https://docs.aws.amazon.com/lambda/latest/api/API_Invoke.html)` Lambda API.
 
-   ```
+   ```console
    $ aws lambda invoke                     \
    --region eu-west-1                      \
    --function-name LambdaExample           \

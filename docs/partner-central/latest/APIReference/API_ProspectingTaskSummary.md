@@ -30,7 +30,7 @@ Required: Yes
  ** TaskArn **   <a name="AWSPartnerCentral-Type-ProspectingTaskSummary-TaskArn"></a>
 The Amazon Resource Name (ARN) of the task.
 Type: String
-Pattern: `arn:aws:partnercentral-selling:.*:.*:catalog/.*/prospecting-from-engagement-task/task-[0-9a-z]{14}`
+Pattern: `arn:.*`
 Required: Yes
 
  ** TaskId **   <a name="AWSPartnerCentral-Type-ProspectingTaskSummary-TaskId"></a>

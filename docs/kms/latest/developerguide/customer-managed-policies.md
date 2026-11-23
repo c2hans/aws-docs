@@ -35,7 +35,7 @@ This policy includes of two policy statements. The `Resource` element in the fir
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -82,7 +82,7 @@ To restrict the user to particular types of KMS keys, use the [kms:KeySpec](cond
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -109,7 +109,7 @@ This IAM policy does not include `kms:PutKeyPolicy` permission or any other perm
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -151,7 +151,7 @@ The following IAM policy allows a user to encrypt and decrypt data with any KMS 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -177,7 +177,7 @@ The following IAM policy allows a user to encrypt and decrypt data with any KMS 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -205,7 +205,7 @@ The following IAM policy allows a user to encrypt and decrypt data with the two 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -234,7 +234,7 @@ The following IAM policy prevents a user from disabling or deleting any KMS keys
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

@@ -44,7 +44,7 @@ This allows AWS Ground Station to do the following:
 
  Key grants for encrypting ephemeris resources are bound to a specific satellite ARN.
 
-```
+```json
 "encryptionContext": {
     "aws:groundstation:arn": "arn:aws:groundstation::111122223333:satellite/00a770b0-082d-45a4-80ed-SAMPLE",
     "aws:s3:arn": "arn:aws:s3:::customerephemerisbucket/0034abcd-12ab-34cd-56ef-123456SAMPLE"
@@ -75,7 +75,7 @@ This allows AWS Ground Station to do the following:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -120,7 +120,7 @@ This allows AWS Ground Station to do the following:
 
  The following example event records the [CreateGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) operation for an ephemeris:
 
-```
+```JSON
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -193,7 +193,7 @@ This allows AWS Ground Station to do the following:
 
  The following example event records the [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) operation:
 
-```
+```JSON
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -252,7 +252,7 @@ This allows AWS Ground Station to do the following:
 
  The following example event records the [GenerateDataKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) operation for an ephemeris:
 
-```
+```JSON
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -299,7 +299,7 @@ This allows AWS Ground Station to do the following:
 
  The following example event records the [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) operation for an ephemeris:
 
-```
+```JSON
 {
     "eventVersion": "1.08",
     "userIdentity": {

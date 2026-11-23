@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 
 ![Chart showing the main components of feature engineering.](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/images/feature-engineering-main-components.png)
 
+*Figure 10: Feature engineering main components*
+
  Feature engineering is a process to select and transform variables when creating a predictive model using machine learning or statistical modeling. Feature engineering typically includes feature creation, feature transformation, feature extraction, and feature selection as listed in Figure 10. With deep learning, feature engineering is automated as part of the algorithm learning.
 +  *Feature creation* refers to the creation of new features from existing data to assist with better predictions. Examples of feature creation include one-hot-encoding, binning, splitting, and calculated features.
 +  *Feature transformation and imputation* include steps for replacing missing features or features that are not valid. Some techniques include forming Cartesian products of features, non-linear transformations (such as binning numeric variables into categories), and creating domain-specific features.

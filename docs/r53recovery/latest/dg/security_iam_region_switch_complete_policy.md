@@ -13,7 +13,7 @@ The following is an example policy that you can use as a starting place for a pl
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

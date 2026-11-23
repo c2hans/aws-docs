@@ -79,7 +79,7 @@ Enable cross-origin resource sharing (CORS) by returning correct headers.
 #### POST schema
 <a name="packaging_groups-request-body-post-example"></a>
 
-```
+```json
 {
   "authorization": {
     "cdnIdentifierSecret": "string",
@@ -100,7 +100,7 @@ Enable cross-origin resource sharing (CORS) by returning correct headers.
 #### PackagingGroupList schema
 <a name="packaging_groups-response-body-packaginggrouplist-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "packagingGroups": [
@@ -127,7 +127,7 @@ Enable cross-origin resource sharing (CORS) by returning correct headers.
 #### PackagingGroup schema
 <a name="packaging_groups-response-body-packaginggroup-example"></a>
 
-```
+```json
 {
   "authorization": {
     "cdnIdentifierSecret": "string",

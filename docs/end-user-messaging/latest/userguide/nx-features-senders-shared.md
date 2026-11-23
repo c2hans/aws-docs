@@ -9,7 +9,7 @@ You can use the [describe-sender-ids](https://docs.aws.amazon.com/cli/latest/ref
 **To list all sender IDs shared with your account using the AWS CLI**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 describe-sender-ids --owner {{SHARED}}
   ```
 

@@ -17,7 +17,7 @@ The following example trust policy allows access to a specific asset and its chi
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -47,7 +47,7 @@ Remove the `Condition` from the policy to allow access to all of your assets. Th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

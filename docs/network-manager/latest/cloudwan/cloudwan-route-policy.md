@@ -74,6 +74,7 @@ A routing policy rule consists of a match condition and an action used to contro
    + **Remove community** - Remove a BGP community from routes
    + **Summarize** - Advertise a summary route
    + **Set local preference** - Set priority for route selection (higher value = more preferred path)
+   + **Set MED** - Set the MED value in the route update (lower value = more preferred path)
 
 1. If adding multiple conditions, choose the logical operator:
    + **AND** - All conditions must be met for the rule to apply

@@ -41,7 +41,7 @@ For more information, see [Simplify node lifecycle with managed node groups](htt
 **Tools for PowerShell V4**
 **Example 1: This cmdlet lists the Amazon EKS node groups associated with the specified cluster in your AWS account in the specified Region. **
 
-```
+```powershell
 Get-EKSNodegroupList -ClusterName PROD
 ```
 **Output:**
@@ -54,7 +54,7 @@ Get-EKSNodegroupList -ClusterName PROD
 **Tools for PowerShell V5**
 **Example 1: This cmdlet lists the Amazon EKS node groups associated with the specified cluster in your AWS account in the specified Region. **
 
-```
+```powershell
 Get-EKSNodegroupList -ClusterName PROD
 ```
 **Output:**

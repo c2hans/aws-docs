@@ -16,7 +16,7 @@ These events are triggered when source servers' data replication state changes f
 
  **STALLED**
 
-```
+```json
 {
 	"version": "0",
 	"id": "9da9af57-9253-4406-87cb-7cc400e43465",
@@ -36,7 +36,7 @@ These events are triggered when source servers' data replication state changes f
 
  **NOT\_STALLED**
 
-```
+```json
 {
 	"version": "0",
 	"id": "9da9af57-9253-4406-87cb-7cc400e43465",
@@ -61,7 +61,7 @@ These events are triggered when a drill or recovery instance is launched for a s
 
  **RECOVERY\_LAUNCH\_SUCCEEDED**
 
-```
+```json
 {
     "version": "0",
     "id": "9da9af57-9253-4406-87cb-7cc400e43465",
@@ -83,7 +83,7 @@ These events are triggered when a drill or recovery instance is launched for a s
 
  **RECOVERY\_LAUNCH\_FAILED**
 
-```
+```json
 {
     "version": "0",
     "id": "9da9af57-9253-4406-87cb-7cc400e43465",
@@ -110,7 +110,7 @@ These events are triggered as part of the failback process and indicate if failb
 
  **FAILBACK\_IN\_PROGRESS**
 
-```
+```json
 {
     "version": "0",
     "id": "9da9af57-9253-4406-87cb-7cc400e43465",
@@ -130,7 +130,7 @@ These events are triggered as part of the failback process and indicate if failb
 
  **FAILBACK\_COMPLETED**
 
-```
+```json
 {
     "version": "0",
     "id": "9da9af57-9253-4406-87cb-7cc400e43465",
@@ -150,7 +150,7 @@ These events are triggered as part of the failback process and indicate if failb
 
  **FAILBACK\_ERROR**
 
-```
+```json
 {
     "version": "0",
     "id": "9da9af57-9253-4406-87cb-7cc400e43465",
@@ -175,7 +175,7 @@ This event is triggered whenever a point in time snapshot is taken and includes 
 
  **PIT Snapshot Taken**
 
-```
+```json
 {
     "account": "111122223333",
     "detail": {
@@ -233,7 +233,7 @@ When you use the AWS Management Console to create an event rule, the console aut
        ```
      + To catch all events relating to a given Source server:
 
-       ```
+       ```json
        {
        	"source": [
        		"aws.drs"

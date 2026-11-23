@@ -26,7 +26,7 @@ The following examples show both: configuring `FetchSize` on the session, and us
 
 **Example Java**
 
-```
+```java
 static void processBatches(Result result, int size,
         Consumer<List<Record>> handler) {
     var batch = new ArrayList<Record>();
@@ -60,7 +60,7 @@ try (Session session = driver.session(SessionConfig.builder()
 
 **Example Python**
 
-```
+```python
 async def batched(result, size):
     batch = []
     async for record in result:
@@ -83,7 +83,7 @@ async with driver.session(fetch_size=50) as session:
 
 **Example Go**
 
-```
+```go
 func processBatches(ctx context.Context, result neo4j.ResultWithContext,
         size int, handler func([]*neo4j.Record)) error {
     var batch []*neo4j.Record
@@ -127,7 +127,7 @@ if err := processBatches(ctx, result, 10, func(batch []*neo4j.Record) {
 
 **Example .NET**
 
-```
+```csharp
 static async IAsyncEnumerable<List<IRecord>> Batched(
         IResultCursor result, int size)
 {
@@ -163,7 +163,7 @@ await foreach (var batch in Batched(result, 10))
 
 **Example Node.js**
 
-```
+```javascript
 // Uses for-await-of on the Result's async iterator (Neo4j driver v5+).
 // This is pull-based: the driver pauses fetching while the loop body
 // executes, providing natural backpressure. This is preferred over

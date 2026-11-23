@@ -25,7 +25,7 @@ The following procedure shows how to search a collection for faces that match th
 ------
 #### [ Java ]
 
-   ```
+   ```java
       //Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
       //PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -130,7 +130,7 @@ The following procedure shows how to search a collection for faces that match th
 
    This code is taken from the AWS Documentation SDK examples GitHub repository. See the full example [here](https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/javav2/example_code/rekognition/src/main/java/com/example/rekognition/VideoDetectFaces.java).
 
-   ```
+   ```java
    import software.amazon.awssdk.regions.Region;
    import software.amazon.awssdk.services.rekognition.RekognitionClient;
    import software.amazon.awssdk.services.rekognition.model.*;
@@ -281,7 +281,7 @@ The following procedure shows how to search a collection for faces that match th
 ------
 #### [ Python ]
 
-   ```
+   ```python
    #Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    #PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 

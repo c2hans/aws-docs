@@ -109,7 +109,7 @@ The following examples use the [New-EC2IBWorkflow](https://docs.aws.amazon.com/p
 **Create build workflow**
 The following example shows how to create a build workflow with the `New-EC2IBWorkflow` cmdlet. The `Data` parameter contains the build configuration for the workflow you create:
 
-```
+```ps
 New-EC2IBWorkflow -Name {{example-build-workflow}} `
     -SemanticVersion {{1.0.0}} `
     -Type BUILD `
@@ -121,7 +121,7 @@ The cmdlet returns the Amazon Resource Name (ARN) of the new workflow build vers
 **Create test workflow**
 The following example shows how to create a test workflow with the `New-EC2IBWorkflow` cmdlet. The `Data` parameter contains the test configuration for the workflow you create:
 
-```
+```ps
 New-EC2IBWorkflow -Name {{example-test-workflow}} `
     -SemanticVersion {{1.0.0}} `
     -Type TEST `
@@ -133,7 +133,7 @@ The cmdlet returns the ARN of the new workflow build version.
 **Create distribution workflow**
 The following example shows how to create a distribution workflow with the `New-EC2IBWorkflow` cmdlet. The `Data` parameter contains the distribution configuration for the workflow you create:
 
-```
+```ps
 New-EC2IBWorkflow -Name {{example-distribution-workflow}} `
     -SemanticVersion {{1.0.0}} `
     -Type DISTRIBUTION `

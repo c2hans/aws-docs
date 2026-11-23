@@ -38,7 +38,7 @@ Your files will be distributed to each Ray node before your script begins to run
 
 Your files will be accessible as if the directory was provided to Ray through the `working_dir` parameter. For example, to read a file named `sample.txt` in your .zip file's top-level directory, you could call:
 
-```
+```python
 @ray.remote
 def do_work():
     f = open("sample.txt", "r")

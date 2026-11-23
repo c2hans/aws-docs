@@ -12,7 +12,7 @@ This lets you set an upper bound on the number of concurrent requests to a given
 
 The following example shows how to set `maxSockets` for a DynamoDB client.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { NodeHttpHandler } from "@smithy/node-http-handler";
 import https from "https";
@@ -32,7 +32,7 @@ The SDK for JavaScript uses a `maxSockets` value of 50 if you do not supply a va
 
 As of v3.521.0 of the AWS SDK for JavaScript, you can use the following [shorthand syntax](https://github.com/aws/aws-sdk-js-v3/blob/main/supplemental-docs/CLIENTS.md#new-in-v35210) to configure `requestHandler`.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient({

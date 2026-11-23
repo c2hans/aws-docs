@@ -16,7 +16,7 @@ The following example policy is for an administrator-level workflow monitor IAM 
 
 ****
 
-```
+```json
 {
 
   "Version":"2012-10-17",
@@ -213,7 +213,7 @@ The following example policy is for an operator-level workflow monitor IAM polic
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

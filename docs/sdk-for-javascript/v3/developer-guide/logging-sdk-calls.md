@@ -10,7 +10,7 @@ The AWS SDK for JavaScript is instrumented with a built-in logger so you can log
 
 To turn on the logger and print log entries in the console, configure the service client using the optional `logger` parameter. The example below enables client logging while ignoring trace and debug outputs.
 
-```
+```javascript
 new S3Client({
   logger: {
     ...console,
@@ -25,7 +25,7 @@ new S3Client({
 
 The AWS SDK for JavaScript uses a middleware stack to control the lifecycle of an operation call. Each middleware in the stack calls the next middleware after making any changes to the request object. This also makes debugging issues in the stack much easier since you can see exactly which middleware have been called leading up to an error. Here is an example of logging requests using middleware:
 
-```
+```javascript
 const client = new DynamoDB({ region: "us-west-2" });
 
 client.middlewareStack.add(

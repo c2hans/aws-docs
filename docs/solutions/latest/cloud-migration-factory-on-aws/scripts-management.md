@@ -147,7 +147,7 @@ The main python script should return a non-zero return code on exit if the funct
 #### Example YAML file
 <a name="example"></a>
 
-```
+```YAML
 Name: "0-Check MGN Prerequisites"
 Description: "This script will verify the source servers meet the basic requirements for AWS MGN agent installation."
 MasterFileName: "0-Prerequisites-checks.py"

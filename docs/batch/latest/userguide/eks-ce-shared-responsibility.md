@@ -11,7 +11,7 @@ Maintenance of the compute environments is a shared responsibility.
 
 AWS Batch doesn't automatically update compute environment AMIs. It's your responsibility to update them. Run the following command to update your AMIs to the latest AMI version.
 
-```
+```sh
 $ aws batch update-compute-environment \
     --compute-environment {{<compute-environment-name>}} \
     --compute-resources 'updateToLatestImageVersion=true'
@@ -19,7 +19,7 @@ $ aws batch update-compute-environment \
 
 AWS Batch doesn't automatically upgrade the Kubernetes version. Run the following command to update the Kubernetes version of your compute environment to {{1.37}}.
 
-```
+```sh
 $ aws batch update-compute-environment \
     --compute-environment {{<compute-environment-name>}} \
     --compute-resources \

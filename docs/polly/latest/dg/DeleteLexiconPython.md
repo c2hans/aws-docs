@@ -10,7 +10,7 @@ The following code example uses default credentials stored in the AWS SDK config
 
 For more information on this operation, see the reference for the [`DeleteLexicon`](https://docs.aws.amazon.com/polly/latest/APIReference/API_DeleteLexicon.html) API.
 
-```
+```python
 from argparse import ArgumentParser
 from sys import version_info
 

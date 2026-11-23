@@ -28,7 +28,7 @@ The following code example shows how to get started using AWS Glue.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
         let mut list_jobs = glue.list_jobs().into_paginator().send();
         while let Some(list_jobs_output) = list_jobs.next().await {
             match list_jobs_output {
@@ -60,7 +60,7 @@ For more information, see [Tutorial: Getting started with AWS Glue Studio](https
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 Create and run a crawler that crawls a public Amazon Simple Storage Service (Amazon S3) bucket and generates a metadata database that describes the CSV-formatted data it finds.
 
-```
+```rust
         let create_crawler = glue
             .create_crawler()
             .name(self.crawler())
@@ -103,7 +103,7 @@ Create and run a crawler that crawls a public Amazon Simple Storage Service (Ama
 ```
 List information about databases and tables in your AWS Glue Data Catalog.
 
-```
+```rust
         let database = glue
             .get_database()
             .name(self.database())
@@ -126,7 +126,7 @@ List information about databases and tables in your AWS Glue Data Catalog.
 ```
 Create and run a job that extracts CSV data from the source Amazon S3 bucket, transforms it by removing and renaming fields, and loads JSON-formatted output into another Amazon S3 bucket.
 
-```
+```rust
         let create_job = glue
             .create_job()
             .name(self.job())
@@ -170,7 +170,7 @@ Create and run a job that extracts CSV data from the source Amazon S3 bucket, tr
 ```
 Delete all resources created by the demo.
 
-```
+```rust
         glue.delete_job()
             .job_name(self.job())
             .send()
@@ -227,7 +227,7 @@ The following code example shows how to use `CreateCrawler`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
         let create_crawler = glue
             .create_crawler()
             .name(self.crawler())
@@ -265,7 +265,7 @@ The following code example shows how to use `CreateJob`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
         let create_job = glue
             .create_job()
             .name(self.job())
@@ -296,7 +296,7 @@ The following code example shows how to use `DeleteCrawler`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
         glue.delete_crawler()
             .name(self.crawler())
             .send()
@@ -313,7 +313,7 @@ The following code example shows how to use `DeleteDatabase`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
         glue.delete_database()
             .name(self.database())
             .send()
@@ -330,7 +330,7 @@ The following code example shows how to use `DeleteJob`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
         glue.delete_job()
             .job_name(self.job())
             .send()
@@ -347,7 +347,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
         for t in &self.tables {
             glue.delete_table()
                 .name(t.name())
@@ -367,7 +367,7 @@ The following code example shows how to use `GetCrawler`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
             let tmp_crawler = glue
                 .get_crawler()
                 .name(self.crawler())
@@ -385,7 +385,7 @@ The following code example shows how to use `GetDatabase`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
         let database = glue
             .get_database()
             .name(self.database())
@@ -407,7 +407,7 @@ The following code example shows how to use `GetJobRun`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
         let get_job_run = || async {
             Ok::<JobRun, GlueMvpError>(
                 glue.get_job_run()
@@ -446,7 +446,7 @@ The following code example shows how to use `GetTables`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
         let tables = glue
             .get_tables()
             .database_name(self.database())
@@ -466,7 +466,7 @@ The following code example shows how to use `ListJobs`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
         let mut list_jobs = glue.list_jobs().into_paginator().send();
         while let Some(list_jobs_output) = list_jobs.next().await {
             match list_jobs_output {
@@ -488,7 +488,7 @@ The following code example shows how to use `StartCrawler`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
         let start_crawler = glue.start_crawler().name(self.crawler()).send().await;
 
         match start_crawler {
@@ -512,7 +512,7 @@ The following code example shows how to use `StartJobRun`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/glue#code-examples).
 
-```
+```rust
         let job_run_output = glue
             .start_job_run()
             .job_name(self.job())

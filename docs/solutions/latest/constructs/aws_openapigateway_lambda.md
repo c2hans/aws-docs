@@ -27,7 +27,7 @@ Here is a minimal deployable pattern definition.
 
 **Example**
 
-```
+```typescript
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { OpenApiGatewayToLambda } from '@aws-solutions-constructs/aws-openapigateway-lambda';
@@ -54,7 +54,7 @@ new OpenApiGatewayToLambda(this, 'OpenApiGatewayToLambda', {
 });
 ```
 
-```
+```python
 from aws_cdk import (
     Stack,
     aws_s3_assets as s3_assets,
@@ -83,7 +83,7 @@ class TestStack(Stack):
         )
 ```
 
-```
+```java
 import software.amazon.awscdk.services.lambda.Code;
 import software.amazon.awscdk.services.lambda.FunctionProps;
 import software.amazon.awscdk.services.s3.assets.Asset;
@@ -153,7 +153,7 @@ This construct automatically transforms an incoming OpenAPI Definition (residing
 
 Looking at an example - a user creates an instantiation of `apiIntegrations` that specifies one integration named `MessagesHandler` that passes in a set of `lambda.FunctionProps` and a second integration named `PhotosHandler` that passes in an existing `lambda.Function`:
 
-```
+```typescript
 const apiIntegrations: ApiIntegration[] = [
   {
     id: 'MessagesHandler',

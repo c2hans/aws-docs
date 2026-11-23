@@ -15,7 +15,7 @@ You define registry mappings to map between prefixes in your private Amazon ECR 
 
 The following example maps Docker Hub, Quay, and Amazon ECR Public through pull through cache, and maps Seqera Containers (`community.wave.seqera.io`) with a credential so that HealthOmics copies its images:
 
-```
+```json
 {
     "registryMappings": [
         {

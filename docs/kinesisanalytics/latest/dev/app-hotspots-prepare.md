@@ -55,7 +55,7 @@ Create these data streams using the console or the AWS CLI.
 
 In this step, you run Python code to continuously generate sample records and write to the `ExampleInputStream` stream.
 
-```
+```json
 {"x": 7.921782426109737, "y": 8.746265312709893, "is_hot": "N"}
 {"x": 0.722248626580026, "y": 4.648868803193405, "is_hot": "Y"}
 ```
@@ -73,7 +73,7 @@ In this step, you run Python code to continuously generate sample records and wr
 **Important**
 Do not upload this file to a web server because it contains your AWS credentials.
 
-   ```
+   ```python
 
    import json
    from pprint import pprint

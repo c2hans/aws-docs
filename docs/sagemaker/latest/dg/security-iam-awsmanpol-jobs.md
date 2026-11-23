@@ -28,7 +28,7 @@ This policy includes the following permissions.
 + `logs` – Allows creating log groups, log streams, and writing log events to Amazon CloudWatch Logs. Restricted to log groups with the `/aws/sagemaker/*` prefix. Restricted to resources in the same account.
 + `lambda` – Allows invoking Lambda functions in the same account.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

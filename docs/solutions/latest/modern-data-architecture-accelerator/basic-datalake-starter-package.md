@@ -121,7 +121,7 @@ Before deploying the Basic Data Lake Starter Package using the CLI method, verif
 
  **Step 1: Clone the MDAA repository**
 
-```
+```bash
 git clone https://github.com/aws/modern-data-architecture-accelerator.git &&
 cd modern-data-architecture-accelerator
 ```

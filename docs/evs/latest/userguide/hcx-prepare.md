@@ -32,7 +32,7 @@ To check the HCX VLAN subnet in the Amazon EVS console or with the AWS CLI, choo
 
 1. Run the following command with the ID of your environment and the Region that contains your resources.
 
-   ```
+   ```bash
    aws evs list-environment-vlans --region <region-code> --environment-id <environment-id>
    ```
 
@@ -40,7 +40,7 @@ To check the HCX VLAN subnet in the Amazon EVS console or with the AWS CLI, choo
 
    The following is an example of the HCX VLAN in the output.
 
-   ```
+   ```json
    {
      "environmentVlans": [
        {
@@ -94,7 +94,7 @@ To check the network ACL in the Amazon VPC console or with the AWS CLI, choose t
 
 1. Run the following command with the HCX VLAN subnet ID in the `Values` filter.
 
-   ```
+   ```bash
    aws ec2 describe-network-acls --filters "Name=subnet-id,Values=subnet-abcdefg9876543210"
    ```
 
@@ -125,14 +125,14 @@ To check the route table association in the Amazon VPC console or with the AWS C
 
 1. Check which route table is explicitly associated with a VLAN subnet. Replace the example subnet ID with your own value.
 
-   ```
+   ```bash
    aws ec2 describe-route-tables \
      --filters "Name=association.subnet-id,Values=subnet-01234a1b2cde1234f"
    ```
 
 1. If no route table is returned, associate the VLAN subnet with a route table. Replace the example route table ID and subnet ID with your own values.
 
-   ```
+   ```bash
    aws ec2 associate-route-table \
      --route-table-id rtb-0123456789abcdef0 \
      --subnet-id subnet-01234a1b2cde1234f

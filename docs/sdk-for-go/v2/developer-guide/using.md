@@ -24,7 +24,7 @@ Learn common and recommended ways of programming with the AWS SDK for Go in your
 
  `NewFromConfig` function provides a consistent interface for constructing service clients using the [aws.Config](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/aws#Config). An `aws.Config` can be loaded using the [config.LoadDefaultConfig](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/config#LoadDefaultConfig). For more information on constructing an `aws.Config`, see [Configure the SDK](configure-gosdk.md). The following example shows how to construct an Amazon S3 service client using the `aws.Config`and the `NewFromConfig` function:
 
-```
+```go
 import "context"
     import "github.com/aws/aws-sdk-go-v2/config"
     import "github.com/aws/aws-sdk-go-v2/service/s3"
@@ -44,7 +44,7 @@ import "context"
 
  `NewFromConfig` can take one or more functional arguments that can mutate a client's configuration `Options` struct. This allows you to make specific overrides such as changing the Region, or modifying service specific options such as Amazon S3 `UseAccelerate` option. For example:
 
-```
+```go
 import "context"
     import "github.com/aws/aws-sdk-go-v2/config"
     import "github.com/aws/aws-sdk-go-v2/service/s3"
@@ -72,7 +72,7 @@ import "context"
 
  `New` function is a client constructor provides an interface for constructing clients using only the client packages `Options` struct for defining the client's configuration options. For example, to construct Amazon S3 client using `New`:
 
-```
+```go
 import "github.com/aws/aws-sdk-go-v2/aws"
     import "github.com/aws/aws-sdk-go-v2/credentials"
     import "github.com/aws/aws-sdk-go-v2/service/s3"
@@ -90,7 +90,7 @@ import "github.com/aws/aws-sdk-go-v2/aws"
 
  `New` can take one or more functional arguments that can mutate a client's configuration `Options` struct. This allows you to make specific overrides such as changing the Region or modifying service specific options such as Amazon S3 `UseAccelerate` option. For example:
 
-```
+```go
 import "github.com/aws/aws-sdk-go-v2/aws"
     import "github.com/aws/aws-sdk-go-v2/credentials"
     import "github.com/aws/aws-sdk-go-v2/service/s3"
@@ -115,7 +115,7 @@ import "github.com/aws/aws-sdk-go-v2/aws"
 
  After you have a service client instance, you can use it to call a service's operations. For example, to call the Amazon S3 `GetObject` operation:
 
-```
+```go
 response, err := client.GetObject(context.TODO(), &s3.GetObjectInput{
         Bucket: aws.String("{{amzn-s3-demo-bucket}}"),
         Key:    aws.String("{{obj-key}}"),
@@ -135,7 +135,7 @@ response, err := client.GetObject(context.TODO(), &s3.GetObjectInput{
 
  Let's look at an example of how we can use an Amazon S3 client to call the `GetObject` API, and construct our input using the `types` package, and `aws.<Type>` helpers.
 
-```
+```go
 import "context"
     import "github.com/aws/aws-sdk-go-v2/config"
     import "github.com/aws/aws-sdk-go-v2/service/s3"
@@ -164,7 +164,7 @@ import "context"
 
  For example, to override the client region from "us-west-2" to "us-east-1":
 
-```
+```go
 cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithRegion("us-west-2"))
     if err != nil {
         log.Printf("error: %v", err)
@@ -189,7 +189,7 @@ cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithRegion("us-west-
 
  For example, to log an operation error and prematurely return from the calling function:
 
-```
+```go
 response, err := client.GetObject(context.TODO())
     if err != nil {
         log.Printf("GetObject error: %v", err)
@@ -209,7 +209,7 @@ response, err := client.GetObject(context.TODO())
 **Warning**
  You MUST ALWAYS `Close()` any `io.ReadCloser` output members, regardless of whether you have consumed its content. Failure to do so can leak resources and potentially create issues with reading response bodies for operations called in the future.
 
-```
+```go
 resp, err := s3svc.GetObject(context.TODO(), &s3.GetObjectInput{...})
     if err != nil {
         // handle error
@@ -230,7 +230,7 @@ resp, err := s3svc.GetObject(context.TODO(), &s3.GetObjectInput{...})
 
  All service operation output structs include a `ResultMetadata` member of type [middleware.Metadata](https://pkg.go.dev/github.com/aws/smithy-go/middleware#Metadata). `middleware.Metadata` is used by the SDK middleware to provide additional information from a service response that is not modeled by the service. This includes metadata like the `RequestID`. For example, to retrieve the `RequestID` associated with a service response to assist AWS Support in troubleshooting a request:
 
-```
+```go
 import "fmt"
     import "log"
     import "github.com/aws/aws-sdk-go-v2/aws/middleware"
@@ -261,7 +261,7 @@ import "fmt"
 
  In the following example, an Amazon S3 service client is used in multiple goroutines. This example concurrently uploads two objects to an Amazon S3 bucket.
 
-```
+```go
 import "context"
     import "log"
     import "strings"
@@ -332,7 +332,7 @@ import "context"
 
  The following example uses the `ListObjectsV2` paginator to list up to three pages of object keys from the `ListObjectV2`operation. Each page consists of up to 10 keys, which is defined by the `Limit` paginator option.
 
-```
+```go
 import "context"
     import "log"
     import "github.com/aws/aws-sdk-go-v2/config"
@@ -384,7 +384,7 @@ import "context"
 
  For example, you can use waiters to poll if a DynamoDB table is created and ready for a write operation.
 
-```
+```go
 import "context"
     import "fmt"
     import "log"
@@ -433,7 +433,7 @@ import "context"
 
  For example, to override waiter configuration during waiter construction
 
-```
+```go
 import "context"
     import "fmt"
     import "log"
@@ -466,7 +466,7 @@ import "context"
 
 The `Wait` function on each waiter also takes in functional options. Similar to the above example, you can override waiter configuration per `Wait` request.
 
-```
+```go
 // params is the input to api operation used by the waiter
     params := &dynamodb.DescribeTableInput {
         TableName: aws.String("test-table")
@@ -500,7 +500,7 @@ The `Wait` function on each waiter also takes in functional options. Similar to 
 
  For example, to configure advanced waiter overrides.
 
-```
+```go
 import "context"
     import "fmt"
     import "log"

@@ -25,7 +25,7 @@ If your organization's approval policies don't allow you to automatically connec
 
 1. Run the following command to start the access request workflow, making sure to replace the {{placeholder values}} with your own information.
 
-   ```
+   ```sh
    aws ssm start-access-request \
        --targets  Key=InstanceIds,Values={{i-02573cafcfEXAMPLE}}
        --reason "{{Troubleshooting networking performance issue}}"
@@ -37,7 +37,7 @@ If your organization's approval policies don't allow you to automatically connec
 
 1. After all required approvals have been provided, run the following command to get an access token containing temporary credentials. Replace the {{placeholder values}} with your own information.
 
-   ```
+   ```sh
    aws ssm get-access-token \
        --access-request-id {{oi-12345abcdef}}
    ```
@@ -46,13 +46,13 @@ If your organization's approval policies don't allow you to automatically connec
 
 1. Run the following command to use the temporary credential in the AWS CLI, making sure to replace the {{placeholder values}} with your own information.
 
-   ```
+   ```sh
    export AWS_SESSION_TOKEN={{AQoDYXdzEJr...<remainder of session token>}}
    ```
 
 1. Run the following command to start a session to the node, making sure to replace the {{placeholder values}} with your own information.
 
-   ```
+   ```sh
    aws ssm start-session \
        --target i-02573cafcfEXAMPLE
    ```

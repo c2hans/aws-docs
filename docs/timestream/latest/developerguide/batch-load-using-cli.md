@@ -38,13 +38,13 @@ For an example, see [Create batch load task example](#batch-load-using-cli-examp
 
 You can retrieve a batch load task description as follows.
 
-```
+```zsh
 aws timestream-write describe-batch-load-task --task-id {{<value>}}
 ```
 
 Following is an example response.
 
-```
+```json
 {
     "BatchLoadTaskDescription": {
         "TaskId": "{{<TaskId>}}",
@@ -127,13 +127,13 @@ Following is an example response.
 
 You can list batch load tasks as follows.
 
-```
+```zsh
 aws timestream-write list-batch-load-tasks
 ```
 
 An output appears as follows.
 
-```
+```json
 {
     "BatchLoadTasks": [
         {
@@ -153,7 +153,7 @@ An output appears as follows.
 
 You can resume a batch load task as follows.
 
-```
+```zsh
 aws timestream-write resume-batch-load-task --task-id {{<value>}}
 ```
 
@@ -166,7 +166,7 @@ A response can indicate success or contain error information.
 
 1. Create a Timestream for LiveAnalytics database named `BatchLoad` and a table named `BatchLoadTest`. Verify and, if necessary, adjust the values for `MemoryStoreRetentionPeriodInHours` and `MagneticStoreRetentionPeriodInDays`.
 
-   ```
+   ```zsh
    aws timestream-write create-database --database-name BatchLoad \
 
    aws timestream-write create-table --database-name BatchLoad \
@@ -180,7 +180,7 @@ A response can indicate success or contain error information.
 
 1. Create a batch load task. Make sure to replace {{$INPUT\_BUCKET}} and {{$REPORT\_BUCKET}} with the buckets that you created in the preceding steps.
 
-   ```
+   ```zsh
    aws timestream-write create-batch-load-task \
    --data-model-configuration "{\
                \"DataModel\": {\
@@ -240,7 +240,7 @@ A response can indicate success or contain error information.
 
    The preceding command returns the following output.
 
-   ```
+   ```zsh
    {
        "TaskId": "{{TaskId}} "
    }
@@ -248,12 +248,12 @@ A response can indicate success or contain error information.
 
 1. Check on the progress of the task. Make sure you replace {{$TASK\_ID}} with the task id that was returned in the preceding step.
 
-   ```
+   ```zsh
    aws timestream-write describe-batch-load-task --task-id {{$TASK_ID}}
    ```
 **Example output**
 
-```
+```zsh
 {
     "BatchLoadTaskDescription": {
         "ProgressReport": {

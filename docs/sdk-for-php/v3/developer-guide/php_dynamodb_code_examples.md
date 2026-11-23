@@ -38,7 +38,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 Because this example uses supporting files, be sure to [read the guidance](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/php/README.md#prerequisites) in the PHP examples README.md file.
 
-```
+```php
 namespace DynamoDb\Basics;
 
 use Aws\DynamoDb\Marshaler;
@@ -218,7 +218,7 @@ The following code example shows how to use `BatchExecuteStatement`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
     public function getItemByPartiQLBatch(string $tableName, array $keys): Result
     {
         $statements = [];
@@ -281,7 +281,7 @@ The following code example shows how to use `BatchWriteItem`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
     public function writeBatch(string $TableName, array $Batch, int $depth = 2)
     {
         if (--$depth <= 0) {
@@ -321,7 +321,7 @@ The following code example shows how to use `CreateTable`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 Create a table.
 
-```
+```php
         $tableName = "ddb_demo_table_$uuid";
         $service->createTable(
             $tableName,
@@ -361,7 +361,7 @@ The following code example shows how to use `DeleteItem`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
         $key = [
             'Item' => [
                 'title' => [
@@ -394,7 +394,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
     public function deleteTable(string $TableName)
     {
         $this->customWaiter(function () use ($TableName) {
@@ -414,7 +414,7 @@ The following code example shows how to use `ExecuteStatement`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
     public function insertItemByPartiQL(string $statement, array $parameters)
     {
         $this->dynamoDbClient->executeStatement([
@@ -459,7 +459,7 @@ The following code example shows how to use `GetItem`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
         $movie = $service->getItemByKey($tableName, $key);
         echo "\nThe movie {$movie['Item']['title']['S']} was released in {$movie['Item']['year']['N']}.\n";
 
@@ -481,7 +481,7 @@ The following code example shows how to use `ListTables`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
     public function listTables($exclusiveStartTableName = "", $limit = 100)
     {
         $this->dynamoDbClient->listTables([
@@ -500,7 +500,7 @@ The following code example shows how to use `PutItem`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
         echo "What's the name of the last movie you watched?\n";
         while (empty($movieName)) {
             $movieName = testable_readline("Movie name: ");
@@ -538,7 +538,7 @@ The following code example shows how to use `Query`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
         $birthKey = [
             'Key' => [
                 'year' => [
@@ -582,7 +582,7 @@ The following code example shows how to use `Scan`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
         $yearsKey = [
             'Key' => [
                 'year' => [
@@ -625,7 +625,7 @@ The following code example shows how to use `UpdateItem`.
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
         echo "What rating would you like to give {$movie['Item']['title']['S']}?\n";
         $rating = 0;
         while (!is_numeric($rating) || intval($rating) != $rating || $rating < 1 || $rating > 10) {
@@ -690,7 +690,7 @@ The following code example shows how to:
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
 namespace DynamoDb\PartiQL_Basics;
 
 use Aws\DynamoDb\Marshaler;
@@ -903,7 +903,7 @@ The following code example shows how to:
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
 namespace DynamoDb\PartiQL_Basics;
 
 use Aws\DynamoDb\Marshaler;
@@ -1096,7 +1096,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using PHP.
 
-```
+```php
 <?php
 
 # using bref/bref and bref/logger for simplicity
@@ -1160,7 +1160,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using PHP.
 
-```
+```php
 <?php
 
 # using bref/bref and bref/logger for simplicity

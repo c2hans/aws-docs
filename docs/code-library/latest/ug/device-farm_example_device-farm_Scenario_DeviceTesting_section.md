@@ -15,7 +15,7 @@ The following code example shows how to upload and test mobile device packages w
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/devicefarm/device_testing#code-examples).
 Upload compiled Android application and test packages to Device Farm, start a test, wait for test completion, and report the results.
 
-```
+```python
 import boto3
 import os
 import requests

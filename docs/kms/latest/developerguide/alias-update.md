@@ -12,7 +12,7 @@ When you update an alias, the current KMS key and the new KMS key must be the sa
 
 The following example begins by using the [ListAliases](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListAliases.html) operation to show that the `test-key` alias is currently associated with KMS key `1234abcd-12ab-34cd-56ef-1234567890ab`.
 
-```
+```bash
 $ aws kms list-aliases --key-id 1234abcd-12ab-34cd-56ef-1234567890ab
 {
     "Aliases": [
@@ -29,13 +29,13 @@ $ aws kms list-aliases --key-id 1234abcd-12ab-34cd-56ef-1234567890ab
 
 Next, it uses the `UpdateAlias` operation to change the KMS key that is associated with the `test-key` alias to KMS key `0987dcba-09fe-87dc-65ba-ab0987654321`. You don't need to specify the currently associated KMS key, only the new ("target") KMS key. The alias name is case sensitive.
 
-```
+```bash
 $ aws kms update-alias --alias-name 'alias/test-key' --target-key-id 0987dcba-09fe-87dc-65ba-ab0987654321
 ```
 
 To verify that the alias is now associated with the target KMS key, use the `ListAliases` operation again. This AWS CLI command uses the `--query` parameter to get only the `test-key` alias. The `TargetKeyId` and `LastUpdatedDate` fields are updated.
 
-```
+```bash
 $ aws kms list-aliases --query 'Aliases[?AliasName==`alias/test-key`]'
 [
     {

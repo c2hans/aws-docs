@@ -50,7 +50,7 @@ If you created a modified container script in the previous step, you'll need to 
 
 The following is an example of a `Dockerfile` that allows you to use Julia on GPU-accelerated Jobs instances:
 
-```
+```Julia
 FROM nvidia/cuda:12.2.0-devel-ubuntu22.04
 
  ARG DEBIAN_FRONTEND=noninteractive
@@ -154,7 +154,7 @@ You are ready to build, tag, and push the image. See the [Docker build documenta
 
 For the sample file defined above, you could run:
 
-```
+```Julia
 aws ecr get-login-password --region ${your_region} | docker login --username AWS --password-stdin ${aws_account_id}.dkr.ecr.${your_region}.amazonaws.com
  docker build -t braket-julia .
  docker tag braket-julia:latest ${aws_account_id}.dkr.ecr.${your_region}.amazonaws.com/braket-julia:latest

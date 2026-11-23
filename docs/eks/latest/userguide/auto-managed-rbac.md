@@ -23,7 +23,7 @@ On Amazon EKS Auto Mode clusters, the auto-created access entry for `AWSServiceR
 
 To confirm the group is present, run:
 
-```
+```bash
 CLUSTER=<your-cluster>
 REGION=<your-region>
 ACCT=$(aws sts get-caller-identity --query Account --output text)
@@ -36,7 +36,7 @@ aws eks describe-access-entry \
 
 Expected output:
 
-```
+```json
 [
     "eks:managed"
 ]

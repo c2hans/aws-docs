@@ -46,7 +46,7 @@ Before you publish an application to the AWS Serverless Application Repository, 
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [

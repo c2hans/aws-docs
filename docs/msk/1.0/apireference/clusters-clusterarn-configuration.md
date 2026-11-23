@@ -66,7 +66,7 @@ Enable CORS by returning the correct headers.
 #### PUT schema
 <a name="clusters-clusterarn-configuration-request-body-put-example"></a>
 
-```
+```json
 {
   "configurationInfo": {
     "arn": "string",
@@ -82,7 +82,7 @@ Enable CORS by returning the correct headers.
 #### UpdateClusterConfigurationResponse schema
 <a name="clusters-clusterarn-configuration-response-body-updateclusterconfigurationresponse-example"></a>
 
-```
+```json
 {
   "clusterArn": "string",
   "clusterOperationArn": "string"
@@ -92,7 +92,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="clusters-clusterarn-configuration-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

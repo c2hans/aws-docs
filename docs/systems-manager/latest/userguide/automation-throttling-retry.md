@@ -28,7 +28,7 @@ The throttling retry setting works alongside the existing `maxAttempts` step pro
 ------
 #### [ Linux & macOS ]
 
-  ```
+  ```sh
   aws ssm update-service-setting \
       --setting-id /ssm/automation/throttled-retry-time-limit \
       --setting-value {{3600}}
@@ -37,7 +37,7 @@ The throttling retry setting works alongside the existing `maxAttempts` step pro
 ------
 #### [ Windows ]
 
-  ```
+  ```sh
   aws ssm update-service-setting ^
       --setting-id /ssm/automation/throttled-retry-time-limit ^
       --setting-value {{3600}}
@@ -46,7 +46,7 @@ The throttling retry setting works alongside the existing `maxAttempts` step pro
 ------
 #### [ PowerShell ]
 
-  ```
+  ```powershell
   Update-SSMServiceSetting `
       -SettingId "/ssm/automation/throttled-retry-time-limit" `
       -SettingValue "{{3600}}"

@@ -115,7 +115,7 @@ The details here help us to identify the details of your migration to your targe
 
 ****
 
-  ```
+  ```json
   {
         "Version":"2012-10-17",
         "Statement": [
@@ -164,7 +164,7 @@ Once your EC2 instance is configured and your target SQL server is deployed, fol
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": [

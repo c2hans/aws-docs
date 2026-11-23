@@ -13,7 +13,7 @@ The following code examples show how to send a text message to Mistral, using Be
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Bedrock-runtime#code-examples).
 Send a text message to Mistral, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```csharp
 // Use the Converse API to send a text message to Mistral
 // and print the response stream.
 
@@ -82,7 +82,7 @@ catch (AmazonBedrockRuntimeException e)
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock-runtime#code-examples).
 Send a text message to Mistral, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```java
 // Use the Converse API to send a text message to Mistral
 // and print the response stream.
 
@@ -153,7 +153,7 @@ public class ConverseStream {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
 Send a text message to Mistral, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```javascript
 // Use the Conversation API to send a text message to Mistral.
 
 import {
@@ -208,7 +208,7 @@ try {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime#code-examples).
 Send a text message to Mistral, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```python
 # Use the Conversation API to send a text message to Mistral
 # and print the response stream.
 

@@ -18,7 +18,7 @@ The following sections guide you through the process of implementing these featu
 
 Tensorboard is a powerful tool for visualizing and analyzing the training process. To enable Tensorboard, modify your recipe by setting the following parameter:
 
-```
+```yaml
 exp_manager:
   exp_dir: null
   name: experiment
@@ -50,7 +50,7 @@ You can now see the status and visualizations of your training jobs within the T
 
 To enable VizTracer, you can modify your recipe by setting the model.viztracer.enabled parameter to true. For example, you can update your llama recipe to enable VizTracer by adding the following configuration:
 
-```
+```yaml
 model:
   viztracer:
     enabled: true

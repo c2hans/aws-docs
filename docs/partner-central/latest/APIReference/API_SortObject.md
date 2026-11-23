@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 
 # SortObject
 
- Defines the sorting parameters for listing resource snapshot jobs. This structure allows you to specify the field to sort by and the order of sorting.
+Defines the sorting parameters for listing resource snapshot jobs. This structure allows you to specify the field to sort by and the order of sorting.
 
 ## Contents
 <a name="API_SortObject_Contents"></a>
@@ -13,13 +13,13 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 In the following list, the required parameters are described first.
 
  ** SortBy **   <a name="AWSPartnerCentral-Type-SortObject-SortBy"></a>
- Specifies the field by which to sort the resource snapshot jobs.
+Specifies the field by which to sort the resource snapshot jobs.
 Type: String
 Valid Values: `CreatedDate`
 Required: No
 
  ** SortOrder **   <a name="AWSPartnerCentral-Type-SortObject-SortOrder"></a>
- Determines the order in which the sorted results are presented.
+Determines the order in which the sorted results are presented.
 Type: String
 Valid Values: `ASCENDING | DESCENDING`
 Required: No

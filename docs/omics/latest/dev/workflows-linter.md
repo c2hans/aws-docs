@@ -58,7 +58,7 @@ aws omics get-workflow --id {{1234567}} --query 'statusMessage'
 
 The following example shows the JSON output from the Nextflow linter:
 
-```
+```json
 {
   "advisory": "Linting findings are from the strict Nextflow DSL2 (nf-lang/v2) linter and reflect the syntax that will be required in Nextflow 25/26 strict mode. On Nextflow 23/24 (legacy grammar) findings are advisory only.",
   "summary": {

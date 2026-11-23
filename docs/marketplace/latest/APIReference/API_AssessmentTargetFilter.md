@@ -26,6 +26,14 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `^[\w\-]+$`
 Required: No
 
+ ** EntityIds **   <a name="AWSMarketplaceService-Type-AssessmentTargetFilter-EntityIds"></a>
+A list of up to 50 entity IDs whose assessments you want to list. The response includes only the latest published assessment of each entity. You must also specify `FrameworkId` in the request, and you can't combine `EntityIds` with `EntityId` or `ChangeSetId`.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 50 items.
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `^[\w\-]+$`
+Required: No
+
 ## See Also
 <a name="API_AssessmentTargetFilter_SeeAlso"></a>
 

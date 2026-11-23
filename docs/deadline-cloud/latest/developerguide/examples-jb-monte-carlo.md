@@ -18,13 +18,13 @@ To run this bundle, you need a queue with a conda queue environment that include
 
 Submit the bundle with the GUI submitter:
 
-```
+```bash
 deadline bundle gui-submit monte_carlo_simulation/
 ```
 
 Or submit a quick test with fewer positions:
 
-```
+```bash
 deadline bundle submit monte_carlo_simulation/ \
   -p PositionRange="0-1" -p NumPaths=100
 ```

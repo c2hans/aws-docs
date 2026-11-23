@@ -174,7 +174,7 @@ The following procedure describes how to use the AWS Command Line Interface (AWS
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm create-association --name "AWS-ApplyAnsiblePlaybooks" \
        --targets Key=tag:{{TagKey}},Values={{TagValue}} \
        --parameters '{"SourceType":["GitHub"],"SourceInfo":["{\"owner\":\"{{owner_name}}\", \"repository\": \"{{name}}\", \"getOptions\": \"branch:master\"}"],"InstallDependencies":["{{True_or_False}}"],"PlaybookFile":["{{file_name}}.yml"],"ExtraVariables":["{{key/value_pairs_separated_by_a_space}}"],"Check":["{{True_or_False}}"],"Verbose":["{{-v,-vv,-vvv, or -vvvv}}"],"TimeoutSeconds":["3600"]}' \
@@ -185,7 +185,7 @@ The following procedure describes how to use the AWS Command Line Interface (AWS
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm create-association --name "AWS-ApplyAnsiblePlaybooks" ^
        --targets Key=tag:{{TagKey}},Values={{TagValue}} ^
        --parameters '{"SourceType":["GitHub"],"SourceInfo":["{\"owner\":\"{{owner_name}}\", \"repository\": \"{{name}}\", \"getOptions\": \"branch:master\"}"],"InstallDependencies":["{{True_or_False}}"],"PlaybookFile":["{{file_name}}.yml"],"ExtraVariables":["{{key/value_pairs_separated_by_a_space}}"],"Check":["{{True_or_False}}"],"Verbose":["{{-v,-vv,-vvv, or -vvvv}}"], "TimeoutSeconds":["3600"]}' ^
@@ -197,7 +197,7 @@ The following procedure describes how to use the AWS Command Line Interface (AWS
 
    Here is an example.
 
-   ```
+   ```sh
    aws ssm create-association --name "AWS-ApplyAnsiblePlaybooks" \
        --targets "Key=tag:OS,Values=Linux" \
        --parameters '{"SourceType":["GitHub"],"SourceInfo":["{\"owner\":\"ansibleDocumentTest\", \"repository\": \"Ansible\", \"getOptions\": \"branch:master\"}"],"InstallDependencies":["True"],"PlaybookFile":["hello-world-playbook.yml"],"ExtraVariables":["SSM=True"],"Check":["False"],"Verbose":["-v"]}' \
@@ -210,7 +210,7 @@ The following procedure describes how to use the AWS Command Line Interface (AWS
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm create-association --name "AWS-ApplyAnsiblePlaybooks" \
        --targets Key=tag:{{TagKey}},Values={{TagValue}} \
        --parameters '{"SourceType":["S3"],"SourceInfo":["{\"path\":\"https://s3.amazonaws.com/{{path_to_Zip_file,_directory,_or_playbook_to_download}}\"}"],"InstallDependencies":["{{True_or_False}}"],"PlaybookFile":["{{file_name}}.yml"],"ExtraVariables":["{{key/value_pairs_separated_by_a_space}}"],"Check":["{{True_or_False}}"],"Verbose":["{{-v,-vv,-vvv, or -vvvv}}"]}' \
@@ -221,7 +221,7 @@ The following procedure describes how to use the AWS Command Line Interface (AWS
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm create-association --name "AWS-ApplyAnsiblePlaybooks" ^
        --targets Key=tag:{{TagKey}},Values={{TagValue}} ^
        --parameters '{"SourceType":["S3"],"SourceInfo":["{\"path\":\"https://s3.amazonaws.com/{{path_to_Zip_file,_directory,_or_playbook_to_download}}\"}"],"InstallDependencies":["{{True_or_False}}"],"PlaybookFile":["{{file_name}}.yml"],"ExtraVariables":["{{key/value_pairs_separated_by_a_space}}"],"Check":["{{True_or_False}}"],"Verbose":["{{-v,-vv,-vvv, or -vvvv}}"]}' ^
@@ -233,7 +233,7 @@ The following procedure describes how to use the AWS Command Line Interface (AWS
 
    Here is an example.
 
-   ```
+   ```sh
    aws ssm create-association --name "AWS-ApplyAnsiblePlaybooks" \
        --targets "Key=tag:OS,Values=Linux" \
        --parameters '{"SourceType":["S3"],"SourceInfo":["{\"path\":\"https://s3.amazonaws.com/amzn-s3-demo-bucket/playbook.yml\"}"],"InstallDependencies":["True"],"PlaybookFile":["playbook.yml"],"ExtraVariables":["SSM=True"],"Check":["False"],"Verbose":["-v"]}' \

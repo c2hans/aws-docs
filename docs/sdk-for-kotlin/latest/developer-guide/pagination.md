@@ -15,7 +15,7 @@ The following code example shows how you can process the paginated response from
 
  **Imports**
 
-```
+```kotlin
 import aws.sdk.kotlin.services.s3.S3Client
 import aws.sdk.kotlin.services.s3.paginators.listObjectsV2Paginated
 import kotlinx.coroutines.flow.*
@@ -23,7 +23,7 @@ import kotlinx.coroutines.flow.*
 
  **Code**
 
-```
+```kotlin
 val s3 = S3Client.fromEnvironment()
 val req = ListObjectsV2Request {
     bucket = "amzn-s3-demo-bucket"

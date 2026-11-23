@@ -24,7 +24,7 @@ Implementing a RAG requires the following elements:
 
 Here is an example configuration of a basic knowledge base tool:
 
-```
+```JSON
 {
      toolSpec: {
          name: "knowledgeBase",

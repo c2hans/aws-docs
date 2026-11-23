@@ -8,7 +8,7 @@ When you need routing beyond the default union strategy, configure the `TypeMapp
 
 The following example renames the merged output of an `activity` index to `new_activity` for an Elasticsearch 6.8 source. It includes `_doc` for normalized metadata and the original legacy type names for document backfill or replay paths that still see source document types:
 
-```
+```json
 [
   {
     "TypeMappingSanitizationTransformerProvider": {
@@ -39,7 +39,7 @@ In the standard workflow, metadata migration still applies the built-in union tr
 
 For pattern-based routing, add `regexMappings`. For example, this rule renames every routed type for every source index to `<source-index>_migrated`, which keeps metadata and document routing aligned:
 
-```
+```json
 "regexMappings": [
   {
     "sourceIndexPattern": "(.+)",
@@ -65,6 +65,6 @@ Apply the same routing intent to each phase that needs it:
 
 For a manual metadata run, you can pass the raw descriptor file directly:
 
-```
+```bash
 console metadata migrate --transformer-config-file /tmp/transformation.json
 ```

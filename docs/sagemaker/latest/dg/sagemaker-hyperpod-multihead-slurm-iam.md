@@ -18,7 +18,7 @@ This section explains how to create an IAM policy and attach it to the execution
 
    Example output of the command.
 
-   ```
+   ```JSON
    {
        "Policy": {
            "PolicyName": "AmazonSagemakerExecutionPolicy",

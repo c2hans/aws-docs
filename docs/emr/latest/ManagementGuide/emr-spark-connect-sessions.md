@@ -48,7 +48,7 @@ Grants permission to terminate a session.
 
 The following is an example IAM policy for managing sessions:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -105,7 +105,7 @@ To create a session-enabled cluster and connect to it, follow these steps.
 
 1. Create a cluster with Spark Connect sessions enabled:
 
-   ```
+   ```bash
    aws emr create-cluster \
      --name "spark-connect-cluster" \
      --release-label emr-spark-8.0.0 \
@@ -122,7 +122,7 @@ To create a session-enabled cluster and connect to it, follow these steps.
 
 1. After the cluster reaches the `WAITING` state, start a session. The `--name` parameter is required and must be a non-empty value.
 
-   ```
+   ```bash
    aws emr start-session \
      --cluster-id {{j-XXXXXXXXXXXXX}} \
      --name "my-session"
@@ -130,7 +130,7 @@ To create a session-enabled cluster and connect to it, follow these steps.
 
    For runtime role sessions, add the `--execution-role-arn` parameter:
 
-   ```
+   ```bash
    aws emr start-session \
      --cluster-id {{j-XXXXXXXXXXXXX}} \
      --name "my-session" \
@@ -139,7 +139,7 @@ To create a session-enabled cluster and connect to it, follow these steps.
 
 1. Monitor the session state. Wait for the session to reach `IDLE` state:
 
-   ```
+   ```bash
    aws emr get-session \
      --cluster-id {{j-XXXXXXXXXXXXX}} \
      --session-id {{is-XXXXXXXXXXXXX}}
@@ -147,7 +147,7 @@ To create a session-enabled cluster and connect to it, follow these steps.
 
 1. Retrieve the Spark Connect endpoint and authentication token:
 
-   ```
+   ```bash
    aws emr get-session-endpoint \
      --cluster-id {{j-XXXXXXXXXXXXX}} \
      --session-id {{is-XXXXXXXXXXXXX}}
@@ -155,7 +155,7 @@ To create a session-enabled cluster and connect to it, follow these steps.
 
    The response includes the endpoint URL and an authentication token:
 
-   ```
+   ```json
    {
        "Endpoint": "https://{{session-id}}.emr-spark-connect.{{region}}.amazonaws.com",
        "AuthToken": "{{v2.local.xxx...}}",
@@ -165,13 +165,13 @@ To create a session-enabled cluster and connect to it, follow these steps.
 
 1. Install the PySpark client that matches the Spark version on your cluster:
 
-   ```
+   ```bash
    pip install 'pyspark[connect]==4.0.1' boto3
    ```
 
 1. Connect from your PySpark client using the endpoint and token:
 
-   ```
+   ```python
    from pyspark.sql import SparkSession
 
    session_id = "{{is-XXXXXXXXXXXXX}}"
@@ -191,7 +191,7 @@ To create a session-enabled cluster and connect to it, follow these steps.
 
 1. When you are done, terminate the session to release resources:
 
-   ```
+   ```bash
    aws emr terminate-session \
      --cluster-id {{j-XXXXXXXXXXXXX}} \
      --session-id {{is-XXXXXXXXXXXXX}}
@@ -204,7 +204,7 @@ To create a session-enabled cluster and connect to it, follow these steps.
 
 The following script demonstrates the full lifecycle: create a session, connect, run queries, and clean up.
 
-```
+```python
 import boto3
 import time
 from pyspark.sql import SparkSession
@@ -259,7 +259,7 @@ print(f"Session {session_id} terminated.")
 
 You can pass Spark configuration overrides when starting a session. These configurations are applied to the Spark Connect Server for that session only, without affecting other sessions or the cluster defaults.
 
-```
+```bash
 aws emr start-session \
   --cluster-id {{j-XXXXXXXXXXXXX}} \
   --name "configured-session" \

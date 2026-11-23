@@ -123,7 +123,7 @@ To clean or filter the data before generation, for example to drop incomplete re
 
 The following `Input Data` section is from a specification for question answering over product manuals. It uses seed examples and context documents:
 
-```
+```txt
 ## Input Data
 The input prefix contains:
 - seed_qa.jsonl - seed examples. JSONL, one record per line, with the keys
@@ -137,7 +137,7 @@ The input prefix contains:
 
 The generated `prepare_batch` function reads these files and stores them in `auxiliary_datastore` for `generator` to use. Its `input_data` parameter is the path of one file in the prefix, so the code finds each file by the name that `Input Data` gives it. The following code is shortened from a job that used this kind of specification:
 
-```
+```python
 def prepare_batch(batch_size, generator_llm, input_data):
     # input_data is the path of one file in the input prefix.
     root = os.path.dirname(input_data)
@@ -175,7 +175,7 @@ Records that match none of these formats are registered with the `Custom` format
 
 The following example, shortened from a full specification, describes a supervised fine-tuning (SFT) dataset for teaching an open-weight LLM to classify product-review sentiment. It generates records from the specification alone, so it has no `Input Data` section.
 
-```
+```txt
 # Product Review Sentiment Classification Dataset
 
 ## Use Case Context
@@ -222,7 +222,7 @@ Verification must include an LLM call to check each record.
 
 For this specification, a record looks like the following:
 
-```
+```json
 {"prompt": "Classify the sentiment of the following product review as positive, negative, or neutral:\n\nThe headphones stopped charging after two days.", "completion": "negative"}
 ```
 
@@ -233,7 +233,7 @@ For structured rows, such as data for traditional machine learning models, test 
 
 The following example extends a CSV seed file of cities. Its checks are all structural, so it uses `deterministic` verification.
 
-```
+```txt
 # City Reference Table
 
 ## Use Case Context
@@ -299,7 +299,7 @@ An SDG job takes either a specification or refined generation code, and optional
 Specification (to start a new dataset)
 Start from a specification when you create a new dataset. SageMaker AI writes the generation code from your specification, runs it, and returns the code with the records. Write the specification as described in [Write a dataset specification](#ai-data-preparation-sdg-spec-write), and pass its Amazon S3 location as `SpecS3Uri`.
 
-```
+```python
 generation_config={
     "DatasetSpecification": {
         "SpecS3Uri": "s3://{{amzn-s3-demo-bucket}}/specs/reviews-spec.md",
@@ -315,7 +315,7 @@ generation_config={
 Refined generation code (to generate at scale)
 After you refine the code from a sample run, pass it to a new job to generate the full dataset. SageMaker AI skips code generation and runs your code directly, so the job scales from a small sample to the number of records that you need, using the logic that you reviewed. You can also pass an earlier job's code unchanged. Set `GenerationCodeS3Uri` and `VerifiersCodeS3Uri` to the Amazon S3 locations of your `generation.py` and `verifiers.py` files:
 
-```
+```python
 generation_config={
     "DatasetSpecification": {
         "CodeArtifacts": {
@@ -332,7 +332,7 @@ Contextual data (optional)
 Contextual data, such as seed examples and context documents, gives the generated records the terminology and patterns of your domain. Set `InputDataS3Uri` to an Amazon S3 file or prefix, and describe the data in your specification's `Input Data` section. For details, see [Add seed and contextual data](#ai-data-preparation-sdg-spec-write-input).
 A prefix can hold up to 1,000 files of up to 10 MB each. Supported formats are CSV, DB, DOC, DOCX, HTML, JSON, JSON Lines, Markdown, Parquet, PDF, SQL, SQLite, and text. Set `InputDataS3Uri` at the top level of `generation_config`, alongside a specification or refined code:
 
-```
+```python
 generation_config={
     "DatasetSpecification": {
         "SpecS3Uri": "s3://{{amzn-s3-demo-bucket}}/specs/manual-qa-spec.md",
@@ -352,13 +352,13 @@ You can run SDG in the Amazon SageMaker Python SDK directly, or through a coding
 
 The following example generates a 10-record sample from a dataset specification, and then generates the full dataset from the sample job's generation code. It assumes that you've configured an execution role and a default Amazon S3 bucket, as described in [Set up and prerequisites](ai-data-preparation-getting-started.md#ai-data-preparation-setup). Before you run it, upload your specification to Amazon S3, for example:
 
-```
+```bash
 aws s3 cp reviews-spec.md s3://{{amzn-s3-demo-bucket}}/specs/reviews-spec.md
 ```
 
 Then run the following code:
 
-```
+```python
 from sagemaker.core.helper.session_helper import Session
 from sagemaker.ai_registry import DataPreparer, DatasetJobConfig, JobCategory
 
@@ -463,7 +463,7 @@ After it refines the generation code, a job that starts from a specification wri
 
 For example, for the [LLM training data example](#ai-data-preparation-sdg-spec-write-llm), `generation.py` looks like the following (shortened):
 
-```
+```python
 # Imports and helper functions, such as weighted_sample and
 # generate_review_text, are omitted.
 
@@ -501,7 +501,7 @@ def generator(auxiliary_datastore, generator_llm):
 
 The matching `verifiers.py` runs the structural checks, and then, because the specification uses `llm-augmented` mode, one LLM call for the semantic check (shortened):
 
-```
+```python
 # Imports and helper functions, such as extract_xml_tag, are omitted.
 
 def verify_sample(sample, auxiliary_datastore, verifier_llm):

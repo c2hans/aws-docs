@@ -57,7 +57,7 @@ Alternatively, you can create a JSON file that includes the required parameters 
 
 Then run the following `create-virtual-cluster` command with the path to the JSON file.
 
-```
+```shell
 aws emr-containers create-virtual-cluster \
 --cli-input-json {{file://./create-virtual-cluster-request.json}}
 ```
@@ -70,7 +70,7 @@ To validate the successful creation of a virtual cluster, view the status of vir
 
 Run the following command to view the status of virtual clusters.
 
-```
+```shell
 aws emr-containers list-virtual-clusters
 ```
 
@@ -79,7 +79,7 @@ aws emr-containers list-virtual-clusters
 
 Run the following command to get more details about a virtual cluster, such as namespace, status, and date registered. Replace {{123456}} with your virtual cluster ID.
 
-```
+```shell
 aws emr-containers describe-virtual-cluster --id {{123456}}
 ```
 
@@ -88,7 +88,7 @@ aws emr-containers describe-virtual-cluster --id {{123456}}
 
 Run the following command to delete a virtual cluster. Replace {{123456}} with your virtual cluster ID.
 
-```
+```shell
 aws emr-containers delete-virtual-cluster --id {{123456}}
 ```
 

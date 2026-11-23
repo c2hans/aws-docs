@@ -217,7 +217,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of GetModelInvocationJob.
 
-```
+```json
 GET /model-invocation-job/BATCHJOB1234 HTTP/1.1
 ```
 

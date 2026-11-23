@@ -35,6 +35,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel04-b
 
 ![Dependency diagram showing components integrated asynchronously through loosely coupled intermediaries such as queuing systems and load balancers.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/dependency-diagram.png)
 
+*Components integrated through loosely coupled intermediaries*
+
  Match the intermediary to the interaction pattern rather than defaulting to one mechanism everywhere. For example:
 +  A queue decouples a producer from a consumer and buffers work when the consumer is busy.
 +  A pub/sub topic fans one message out to many subscribers for parallel processing.

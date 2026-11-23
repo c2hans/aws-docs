@@ -13,7 +13,7 @@ When you use a customer managed key to create a voice profile domain resource, t
 
 The following example records a `CreateGrant` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -88,7 +88,7 @@ When you create a voice profile domain and assign a customer managed key to the 
 
 The following example records a `GenerateDataKey` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -134,7 +134,7 @@ When a voice profile in a voice profile domain needs to have its voice print upg
 
 The following example records a `Decrypt` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -179,7 +179,7 @@ Voice Connectors use the `DescribeKey` operation to verify that the key associat
 
 The following example records a `DescribeKey` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

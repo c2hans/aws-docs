@@ -86,7 +86,7 @@ The following Node.js and Python code examples show how to use the `$unionWith` 
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function example() {
@@ -118,7 +118,7 @@ example();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 from pprint import pprint
 

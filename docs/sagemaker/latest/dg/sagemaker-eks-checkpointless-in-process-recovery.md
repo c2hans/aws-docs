@@ -16,7 +16,7 @@ This model redundancy-based approach enables several fault handling mechanisms:
 
 Here is the core snippet of checkpointless training.
 
-```
+```python
 from hyperpod_checkpointless_training.inprocess.train_utils import wait_rank
     wait_rank()
 

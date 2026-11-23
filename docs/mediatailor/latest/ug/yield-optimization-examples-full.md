@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/yield-optimization
 
 Comprehensive template with all APS-recommended fields, regulatory compliance, content targeting, and extended identifiers.
 
-```
+```JSON
 {
   "app": {
     "id": "{{player_params.app_id}}",

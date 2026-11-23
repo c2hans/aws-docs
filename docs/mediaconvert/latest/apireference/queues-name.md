@@ -116,7 +116,7 @@ Supports CORS preflight requests.
 #### GET schema
 <a name="queues-name-request-body-get-example"></a>
 
-```
+```json
 {
   "name": "string"
 }
@@ -125,7 +125,7 @@ Supports CORS preflight requests.
 #### PUT schema
 <a name="queues-name-request-body-put-example"></a>
 
-```
+```json
 {
   "description": "string",
   "status": enum,
@@ -143,7 +143,7 @@ Supports CORS preflight requests.
 #### DELETE schema
 <a name="queues-name-request-body-delete-example"></a>
 
-```
+```json
 {
   "name": "string"
 }
@@ -155,7 +155,7 @@ Supports CORS preflight requests.
 #### GetQueueResponse schema
 <a name="queues-name-response-body-getqueueresponse-example"></a>
 
-```
+```json
 {
   "queue": {
     "arn": "string",
@@ -193,7 +193,7 @@ Supports CORS preflight requests.
 #### UpdateQueueResponse schema
 <a name="queues-name-response-body-updatequeueresponse-example"></a>
 
-```
+```json
 {
   "queue": {
     "arn": "string",
@@ -231,7 +231,7 @@ Supports CORS preflight requests.
 #### DeleteQueueResponse schema
 <a name="queues-name-response-body-deletequeueresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -239,7 +239,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="queues-name-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

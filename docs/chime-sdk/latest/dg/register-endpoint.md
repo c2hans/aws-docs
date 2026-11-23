@@ -15,7 +15,7 @@ This example shows the policy needed to register an endpoint.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

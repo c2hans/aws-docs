@@ -16,7 +16,7 @@ If you define your state machines outside the Step Functions' console, such as i
 ## Example Amazon States Language Specification (JSONata)
 <a name="example-amazon-states-language-specification"></a>
 
-```
+```json
 {
   "Comment": "An example of the Amazon States Language using a choice state.",
   "QueryLanguage": "JSONata",

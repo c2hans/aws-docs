@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 
 Follow the instructions in [Create the Lambda deployment package](integrations-s3-lambda.md#integrations-s3-lambda-deployment-package), but create a directory named `kinesis-to-opensearch` and use the following code for `sample.py`:
 
-```
+```python
 import base64
 import boto3
 import json

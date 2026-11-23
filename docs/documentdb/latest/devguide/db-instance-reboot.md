@@ -54,7 +54,7 @@ aws docdb reboot-db-instance ^
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 {
     "DBInstance": {
         "DBInstanceIdentifier": "sample-instance",

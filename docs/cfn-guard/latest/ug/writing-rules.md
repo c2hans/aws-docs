@@ -108,7 +108,7 @@ The following are example CloudFormation templates, `Template-1` and `Template-2
 
 **Template-1**
 
-```
+```yaml
 Resources:
  S3Bucket:
    Type: AWS::S3::Bucket
@@ -128,7 +128,7 @@ Resources:
 
 **Template-2**
 
-```
+```yaml
 Resources:
  NewVolume:
    Type: AWS::EC2::Volume
@@ -349,7 +349,7 @@ when Resources.S3Bucket.Properties.BucketName is_string {
 
 The clause within the `when` block is only evaluated if the value specified for `BucketName` is a string. If the value specified for `BucketName` is referenced in the `Parameters` section of the template as shown in the following example, the clause within the `when` block is not evaluated.
 
-```
+```yaml
 Parameters:
    S3BucketName:
      Type: String

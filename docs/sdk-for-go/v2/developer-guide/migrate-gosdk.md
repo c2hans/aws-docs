@@ -35,7 +35,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/migrate-go
 
  The [session](https://docs.aws.amazon.com/sdk-for-go/api/aws/session/) package and associated functionality are replaced with a simplified configuration system provided by the [config](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/config) package. The `config` package is a separate Go module, and can be included in your application's dependencies by with `go get`.
 
-```
+```bash
 go get github.com/aws/aws-sdk-go-v2/config
 ```
 
@@ -53,7 +53,7 @@ go get github.com/aws/aws-sdk-go-v2/config
 
  The following example shows how usage of `session.NewSession` without additional argument parameters is migrated to `config.LoadDefaultConfig`.
 
-```
+```go
 // V1 using NewSession
 
 import "github.com/aws/aws-sdk-go/aws/session"
@@ -66,7 +66,7 @@ if err != nil {
 }
 ```
 
-```
+```go
 // V2 using LoadDefaultConfig
 
 import "context"
@@ -85,7 +85,7 @@ if err != nil {
 
  The example shows how to migrate overriding of `aws.Config` values during configuration loading. One or more `config.With*` helper functions can be provided to `config.LoadDefaultConfig` to override the loaded configuration values. In this example the AWS Region is overridden to `us-west-2` using the [config.WithRegion](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/config#WithRegion) helper function.
 
-```
+```go
 // V1
 
 import "github.com/aws/aws-sdk-go/aws"
@@ -101,7 +101,7 @@ if err != nil {
 }
 ```
 
-```
+```go
 // V2
 
 import "context"
@@ -122,7 +122,7 @@ if err != nil {
 
  This example shows how to migrate overriding values during configuration loading. Zero or more `config.With*` helper functions can be provided to `config.LoadDefaultConfig` to override the loaded configuration values. In this example we show how to override the target profile that is used when loading the AWS SDK shared configuration.
 
-```
+```go
 // V1
 
 import "github.com/aws/aws-sdk-go/aws"
@@ -138,7 +138,7 @@ if err != nil {
 }
 ```
 
-```
+```go
 // V2
 
 import "context"
@@ -161,7 +161,7 @@ if err != nil {
 
  Usage of `*iface` should be replaced by scoped caller-defined interfaces for the service operations being used:
 
-```
+```go
 // V1
 
 import "io"
@@ -183,7 +183,7 @@ func GetObjectBytes(client s3iface.S3API, bucket, key string) ([]byte, error) {
 }
 ```
 
-```
+```go
 // V2
 
 import "context"
@@ -216,7 +216,7 @@ func GetObjectBytes(ctx context.Context, client GetObjectAPIClient, bucket, key 
 
  The [aws/credentials](https://docs.aws.amazon.com/sdk-for-go/api/aws/credentials/) package and associated credential providers have been relocated to the [credentials](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/credentials) package location. The `credentials` package is a Go module that you retrieve by using `go get`.
 
-```
+```bash
 go get github.com/aws/aws-sdk-go-v2/credentials
 ```
 
@@ -241,7 +241,7 @@ go get github.com/aws/aws-sdk-go-v2/credentials
 #### Example
 <a name="example"></a>
 
-```
+```go
 // V1
 
 import "github.com/aws/aws-sdk-go/aws/credentials"
@@ -255,7 +255,7 @@ if err != nil {
 }
 ```
 
-```
+```go
 // V2
 
 import "context"
@@ -281,7 +281,7 @@ if err != nil {
 #### Example
 <a name="w2aac43c11c17b7"></a>
 
-```
+```go
 // V1
 
 import "github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds"
@@ -295,7 +295,7 @@ if err != nil {
 }
 ```
 
-```
+```go
 // V2
 
 import "context"
@@ -331,7 +331,7 @@ if err != nil {
 #### Example
 <a name="example-2"></a>
 
-```
+```go
 // V1
 
 import "github.com/aws/aws-sdk-go/aws/credentials/processcreds"
@@ -345,7 +345,7 @@ if err != nil {
 }
 ```
 
-```
+```go
 // V2
 
 import "context"
@@ -374,7 +374,7 @@ if err != nil {
 ##### Example
 <a name="example-3"></a>
 
-```
+```go
 // V1
 
 import "github.com/aws/aws-sdk-go/aws/credentials/stscreds"
@@ -388,7 +388,7 @@ if err != nil {
 }
 ```
 
-```
+```go
 // V2
 
 import "context"
@@ -416,7 +416,7 @@ if err != nil {
 ##### Example
 <a name="example-4"></a>
 
-```
+```go
 // V1
 
 import "github.com/aws/aws-sdk-go/aws/credentials/stscreds"
@@ -430,7 +430,7 @@ if err != nil {
 }
 ```
 
-```
+```go
 // V2
 
 import "context"
@@ -468,7 +468,7 @@ if err != nil {
 
  Each service client package is an independently versioned Go module. To add the service client as a dependency of your application, use the `go get` command with the service's import path. For example, to add the Amazon S3 client to your dependencies use
 
-```
+```bash
 go get github.com/aws/aws-sdk-go-v2/service/s3
 ```
 
@@ -480,7 +480,7 @@ go get github.com/aws/aws-sdk-go-v2/service/s3
 #### Example 1
 <a name="w2aac43c13c11b5"></a>
 
-```
+```go
 // V1
 
 import "github.com/aws/aws-sdk-go/aws/session"
@@ -496,7 +496,7 @@ if err != nil {
 client := s3.New(sess)
 ```
 
-```
+```go
 // V2
 
 import "context"
@@ -516,7 +516,7 @@ client := s3.NewFromConfig(cfg)
 #### Example 2: Overriding Client Settings
 <a name="example-2-overriding-client-settings"></a>
 
-```
+```go
 // V1
 
 import "github.com/aws/aws-sdk-go/aws"
@@ -535,7 +535,7 @@ client := s3.New(sess, &aws.Config{
 })
 ```
 
-```
+```go
 // V2
 
 import "context"
@@ -580,7 +580,7 @@ client := s3.NewFromConfig(cfg, func(o *s3.Options) {
 
  The following example shows how calls to the Amazon S3 PutObject operation would be migrated from AWS SDK for Go v1 to v2.
 
-```
+```go
 // V1
 
 import "context"
@@ -607,7 +607,7 @@ req, output := client.PutObjectRequest(context.TODO(), &s3.PutObjectInput{
 err := req.Send()
 ```
 
-```
+```go
 // V2
 
 import "context"
@@ -649,7 +649,7 @@ output, err := client.PutObject(context.TODO(), &s3.PutObjectInput{
 #### Example
 <a name="example-6"></a>
 
-```
+```go
 // V1
 
 import "github.com/aws/aws-sdk-go/aws/awserr"
@@ -675,7 +675,7 @@ if err != nil {
 }
 ```
 
-```
+```go
 // V2
 
 import "context"
@@ -718,7 +718,7 @@ if err != nil {
 #### Example
 <a name="example-7"></a>
 
-```
+```go
 // V1
 
 import "fmt"
@@ -743,7 +743,7 @@ if err != nil {
 fmt.Println("total objects:", totalObjects)
 ```
 
-```
+```go
 // V2
 
 import "context"
@@ -788,7 +788,7 @@ fmt.Println("total objects:", totalObjects)
 
  The following example shows how to migrate presigning of an S3 GetObject request:
 
-```
+```go
 // V1
 
 import (
@@ -827,7 +827,7 @@ func main() {
 }
 ```
 
-```
+```go
 // V2
 
 import (
@@ -876,7 +876,7 @@ func main() {
 #### migrating `Params`
 <a name="migrating-params"></a>
 
-```
+```go
 // V1
 
 import (
@@ -908,7 +908,7 @@ func main() {
 }
 ```
 
-```
+```go
 // V2
 
 import (
@@ -970,7 +970,7 @@ func main() {
 #### migrating `Data`
 <a name="migrating-data"></a>
 
-```
+```go
 // V1
 
 import (
@@ -999,7 +999,7 @@ func main() {
 }
 ```
 
-```
+```go
 // V2
 
 import (
@@ -1064,7 +1064,7 @@ func main() {
 #### migrating `HTTPRequest`
 <a name="migrating-httprequest"></a>
 
-```
+```go
 // V1
 
 import (
@@ -1087,7 +1087,7 @@ func main() {
 }
 ```
 
-```
+```go
 // V2
 
 import (
@@ -1176,7 +1176,7 @@ func main() {
 
  For example, for the Initialize step, which is at the top of the stack, this means Initialize middlewares that take action after calling the next handler effectively operate at the end of the request:
 
-```
+```go
 // V2
 
 import (
@@ -1213,7 +1213,7 @@ func (*onComplete) HandleInitialize(ctx context.Context, in middleware.Initializ
 
  The AWS SDK for Go provides an Amazon EC2 Instance Metadata Service (IMDS) client that you can use to query the local IMDS when executing your application on an Amazon EC2 instance. The IMDS client is a separate Go module that can be added to your application by using
 
-```
+```bash
 go get github.com/aws/aws-sdk-go-v2/feature/ec2/imds
 ```
 
@@ -1222,7 +1222,7 @@ go get github.com/aws/aws-sdk-go-v2/feature/ec2/imds
 #### Example
 <a name="example-8"></a>
 
-```
+```go
 // V1
 
 import "github.com/aws/aws-sdk-go/aws/ec2metadata"
@@ -1237,7 +1237,7 @@ if err != nil {
 }
 ```
 
-```
+```go
 // V2
 
 import "context"
@@ -1267,7 +1267,7 @@ if err != nil {
 
  The AWS SDK for Go provides Amazon CloudFront signing utilities in a Go module outside the service client import path. This module can be retrieved by using `go get`.
 
-```
+```bash
 go get github.com/aws/aws-sdk-go-v2/feature/cloudfront/sign
 ```
 
@@ -1276,7 +1276,7 @@ go get github.com/aws/aws-sdk-go-v2/feature/cloudfront/sign
 
  Starting in AWS SDK for Go, the Amazon S3 encryption client is a separate module under [AWS Crypto Tools](https://docs.aws.amazon.com/aws-crypto-tools). The latest version of the S3 encryption client for Go, 3.x, is now available at [GitHub](https://github.com/aws/amazon-s3-encryption-client-go). This module can be retrieved by using `go get`:
 
-```
+```bash
 go get github.com/aws/amazon-s3-encryption-client-go/v3
 ```
 
@@ -1298,7 +1298,7 @@ go get github.com/aws/amazon-s3-encryption-client-go/v3
 
  Example Adjustment:
 
-```
+```go
 // V1
 
 import (
@@ -1325,7 +1325,7 @@ _, err = client.PutObjectWithContext(context.Background(), &s3.PutObjectInput{
 // ... more code
 ```
 
-```
+```go
 // V2
 
 import (

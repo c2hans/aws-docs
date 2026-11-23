@@ -147,7 +147,7 @@ To troubleshoot issues with Java samples and libraries, it's helpful to enable a
 
 1. Add `log4j` to the `pom.xml``` file, in the `dependencies` node:
 
-   ```
+   ```xml
    <dependency>
        <groupId>log4j</groupId>
        <artifactId>log4j</artifactId>
@@ -157,7 +157,7 @@ To troubleshoot issues with Java samples and libraries, it's helpful to enable a
 
 1. In the `target/classes` directory, create a file named `log4j.properties` with the following contents:
 
-   ```
+   ```bash
    # Root logger option
    log4j.rootLogger=DEBUG, stdout
 

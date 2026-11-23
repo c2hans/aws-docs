@@ -30,7 +30,7 @@ To configure this setup, follow the steps in [Connect service-managed fleets to 
 
 1. In the Python script, keep the Cinema 4D section that prepends the BYOL server to the UBL configuration:
 
-   ```
+   ```python
    # Cinema4D
    os.environ["g_licenseServerRLM"] = f"127.0.0.1:7057;{os.environ.get('g_licenseServerRLM', '')}"
    print(f"openjd_env: g_licenseServerRLM={os.environ['g_licenseServerRLM']}")

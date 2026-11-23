@@ -74,7 +74,7 @@ Using `_include` in a search query allows for additional specified FHIR resource
 You would search on the `Condition` resource type specifying the diagnostic code for cough, and then using `_include` specify that you want the `subject` of that diagnosis returned too. In the `Condition` resource type `subject` refers to either the patient resource type or the group resource type.
 For clarity, special characters in the example have not been encoded. To make a successful query ensure that the query string has been properly encoded.
 
-```
+```https
 GET https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/
 Condition?code=49727002&_include=Condition:subject
 ```
@@ -83,7 +83,7 @@ Condition?code=49727002&_include=Condition:subject
 
 The `_include:iterate` modifier enables recursive inclusion of referenced resources across two levels. For example,
 
-```
+```http
 GET /ServiceRequest?identifier=025C0931195&_include=ServiceRequest:requester&_include:iterate=PractitionerRole:practitioner
 ```
 
@@ -93,7 +93,7 @@ will return the ServiceRequest, its associated PractitionerRole (via the request
 
 The `_include=*` modifier is a wildcard that automatically includes all resources directly referenced by the search results. For example,
 
-```
+```http
 GET /ServiceRequest?specimen.accession=12345&_include=*
 ```
 
@@ -107,7 +107,7 @@ Using `_revinclude` in a search query allows for additional specified FHIR resou
 To make this search, you would first define the individual `Patient` by specifying their identifier in the `_id` search parameter. Then you would specify additional FHIR resources using the structure `Encounter:patient` and `Observation:patient`.
 For clarity, special characters in the example have not been encoded. To make a successful query ensure that the query string has been properly encoded.
 
-```
+```http
 GET https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/
 Patient?_id=patient-identifier&_revinclude=Encounter:patient&_revinclude=Observation:patient
 ```
@@ -124,7 +124,7 @@ In a single search request, `_summary=text` cannot be combined with `_include` o
 
 **Example – Get “text” element of Patient resources in a data store.**
 
-```
+```https
 GET https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/Patient?_summary=text
 ```
 
@@ -140,7 +140,7 @@ In a single search request, `_elements` cannot be combined with `_summary` searc
 
 **Example – Get “identifier”, “active”, “link” elements of Patient resources in your HealthLake data store.**
 
-```
+```https
 GET https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/Patient?_elements=identifier,active,link
 ```
 
@@ -152,7 +152,7 @@ Using `_total` in a search query will return number of resources that match the 
 
 **Example – Get the total number of Patient resources in a data store:**
 
-```
+```https
 GET https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/Patient?_total=accurate
 ```
 
@@ -166,7 +166,7 @@ The supported sort search parameter types are: `Number, String, Date, Quantity, 
 
 **Example – Get Patient resources in a data store and sort them by birthdate in ascending order:**
 
-```
+```https
 GET https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/Patient?_sort=birthdate
 ```
 
@@ -178,7 +178,7 @@ The maximum page size is 100. Any values greater than 100 is invalid. `_count=0`
 
 **Example – Search for the Patient resource and set search page size to 25:**
 
-```
+```https
 GET https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/Patient?_count=25
 ```
 
@@ -190,13 +190,13 @@ If any level of recursion return more than 100 results, HealthLake will return 4
 
 **Example – Chaining - Gets all DiagnosticReport which refer to a Patient where Patient name is peter.**
 
-```
+```https
 GET https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/DiagnosticReport?subject:Patient.name=peter
 ```
 
 **Example – Reverse Chaining - Get Patient resources, where the patient resource is referred to by at least one Observation where the observation has a code of 1234, and where the Observation refers to the patient resource in the patient search parameter.**
 
-```
+```https
 GET https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/Patient?_has:Observation:patient:code=1234
 ```
 

@@ -35,7 +35,7 @@ In order to setup access to an S3 bucket, you must be authorized to access the F
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "CrossAccountAccess",

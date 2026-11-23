@@ -26,7 +26,7 @@ The following policy example includes the minimal necessary permissions for crea
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -55,7 +55,7 @@ The following policy example includes the minimal necessary permissions for upda
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

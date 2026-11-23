@@ -87,7 +87,7 @@ To provide access, add permissions to your users, groups, or roles:
 
    1. From the command line on your computer, clone the repository to a directory on your host machine.
 
-      ```
+      ```bash
       git clone https://github.com/aws/amazon-freertos.git -\-recurse-submodules
       ```
 **Important**
@@ -101,7 +101,7 @@ In this way, Windows can properly create symbolic links when it extracts the arc
 If you use Git under Windows, you must enable Developer Mode or you must:
 Set `core.symlinks` to true with the following command:
 
-          ```
+          ```bash
           git config -\-global core.symlinks true
           ```
 Use a console that is elevated as administrator whenever you use a git command that writes to the system (for example, **git pull**, **git clone**, and **git submodule update -\\-init -\\-recursive**).

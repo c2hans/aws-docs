@@ -29,7 +29,7 @@ For more information, see [Deleting an IAM user group](https://docs.aws.amazon.c
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 
-```
+```javascript
 import { DeleteGroupCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -56,7 +56,7 @@ export const deleteGroup = async (groupName) => {
 **Tools for PowerShell V4**
 **Example 1: This example deletes the IAM group named `MyTestGroup`. The first command removes any IAM users that are members of the group, and the second command deletes the IAM group. Both commands work without any prompts for confirmation.**
 
-```
+```powershell
 (Get-IAMGroup -GroupName MyTestGroup).Users | Remove-IAMUserFromGroup -GroupName MyTestGroup -Force
 Remove-IAMGroup -GroupName MyTestGroup -Force
 ```
@@ -65,7 +65,7 @@ Remove-IAMGroup -GroupName MyTestGroup -Force
 **Tools for PowerShell V5**
 **Example 1: This example deletes the IAM group named `MyTestGroup`. The first command removes any IAM users that are members of the group, and the second command deletes the IAM group. Both commands work without any prompts for confirmation.**
 
-```
+```powershell
 (Get-IAMGroup -GroupName MyTestGroup).Users | Remove-IAMUserFromGroup -GroupName MyTestGroup -Force
 Remove-IAMGroup -GroupName MyTestGroup -Force
 ```

@@ -77,7 +77,7 @@ With query monitoring rules (QMR), you can change the priority of a query based 
 
 For example, you can define a rule to cancel any query classified as `high` priority that runs for more than 10 minutes.
 
-```
+```json
 "rules" :[
   {
     "rule_name":"rule_abort",
@@ -100,7 +100,7 @@ For example, you can define a rule to cancel any query classified as `high` prio
 
 Another example is to define a rule to change the query priority to `lowest` for any query with current priority `normal` that spills more than 1 TB to disk.
 
-```
+```json
 "rules":[
   {
     "rule_name":"rule_change_priority",
@@ -142,7 +142,7 @@ query    | service_cl | wlm_start_time             | state            | queue_ti
 
 To list query priority for completed queries, see the `query_priority` column in the stl\_wlm\_query system table.
 
-```
+```sql
 select query, service_class as svclass, service_class_start_time as starttime, query_priority
 from stl_wlm_query order by 3 desc limit 10;
 ```

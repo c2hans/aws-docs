@@ -46,7 +46,7 @@ For job queues that use a fair-share or quota-management scheduling policy, the 
 
 Use the [get-job-queue-snapshot](https://docs.aws.amazon.com/cli/latest/reference/batch/get-job-queue-snapshot.html) command to retrieve a snapshot of the capacity utilization for a job queue.
 
-```
+```sh
 aws batch get-job-queue-snapshot \
     --job-queue {{my-job-queue}}
 ```
@@ -58,7 +58,7 @@ The response varies depending on the scheduling policy that is attached to your 
 
 The following is an example response for a FIFO job queue. Because a FIFO queue does not use a scheduling policy, the response does not include per-share utilization.
 
-```
+```json
 {
     "frontOfQueue": {
         "jobs": [],
@@ -83,7 +83,7 @@ In this example, the queue consumes a total of 9 instances across all dispatched
 
 The following is an example response for a fair-share job queue. The `queueUtilization` object contains a point-in-time snapshot of the total capacity consumed by all dispatched jobs from the queue, along with a per-share breakdown.
 
-```
+```json
 {
     "frontOfQueue": {
         "jobs": [],
@@ -131,7 +131,7 @@ In this example, the `totalCapacityUsage` field shows that the queue consumes a 
 
 The following is an example response for a quota-management job queue. The `queueUtilization` object contains a point-in-time snapshot of the total capacity consumed by all dispatched jobs from the queue, along with a per-quota-share breakdown. The `frontOfQuotaShares` object shows the first `RUNNABLE` job per quota share.
 
-```
+```json
 {
     "frontOfQueue": {
         "jobs": [],
@@ -212,7 +212,7 @@ Use the [list-service-jobs](https://docs.aws.amazon.com/cli/latest/reference/bat
 
 View running service jobs in your queue:
 
-```
+```sh
 aws batch list-service-jobs \
     --job-queue {{my-job-queue}} \
     --job-status RUNNING
@@ -222,7 +222,7 @@ For queues with a fair-share scheduling policy, use the `--filters` parameter wi
 
 List only `RUNNING` service jobs for a share from a fair-share queue:
 
-```
+```sh
 aws batch list-service-jobs \
     --job-queue {{my-job-queue}} \
     --job-status RUNNING \
@@ -231,7 +231,7 @@ aws batch list-service-jobs \
 
 For queues with a quota-management scheduling policy, use the `QUOTA_SHARE_NAME` filter:
 
-```
+```sh
 aws batch list-service-jobs \
     --job-queue {{my-job-queue}} \
     --job-status RUNNING \
@@ -240,7 +240,7 @@ aws batch list-service-jobs \
 
 The following is an example response for listing running service jobs filtered by share identifier in a fair-share queue.
 
-```
+```json
 {
     "jobSummaryList": [
         {
@@ -279,7 +279,7 @@ After you identify a service job of interest, use the [`DescribeServiceJob`](htt
 
 View detailed information about a specific service job:
 
-```
+```sh
 aws batch describe-service-job \
     --job-id {{a4d6c728-8ee8-4c65-8e2a-9a5e8f4b7c3d}}
 ```
@@ -299,7 +299,7 @@ When monitoring SageMaker Training jobs through AWS Batch, you can access both A
 
 The service resource identifier in the job details contains the SageMaker Training job ARN:
 
-```
+```json
 {
     "latestAttempt": {
         "serviceResourceId": {
@@ -312,7 +312,7 @@ The service resource identifier in the job details contains the SageMaker Traini
 
 You can use this ARN to get additional details directly from SageMaker:
 
-```
+```sh
 aws sagemaker describe-training-job \
     --training-job-name {{my-training-job}}
 ```

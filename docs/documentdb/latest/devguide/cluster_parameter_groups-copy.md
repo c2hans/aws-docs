@@ -61,7 +61,7 @@ aws docdb copy-db-cluster-parameter-group ^
 ```
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "DBClusterParameterGroup": {
         "DBClusterParameterGroupArn": "arn:aws:rds:us-east-1:123456789012:cluster-pg:sample-parameter-group-copy",

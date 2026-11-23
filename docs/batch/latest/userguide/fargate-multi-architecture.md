@@ -8,7 +8,7 @@ A single Fargate compute environment and job queue can run both `X86_64` and `AR
 
 To run mixed-architecture jobs, provide a container image that supports both architectures (a multi-architecture image manifest), and register one job definition per architecture that sets `runtimePlatform.cpuArchitecture` to `X86_64` or `ARM64`. You can submit jobs for either job definition to the same job queue.
 
-```
+```json
 "runtimePlatform": {
   "operatingSystemFamily": "LINUX",
   "cpuArchitecture": "ARM64"

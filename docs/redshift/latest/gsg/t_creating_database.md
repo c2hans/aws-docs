@@ -10,7 +10,7 @@ After you verify that your data warehouse is up and running, you can create a da
 
 To create a database named **SALESDB**, run the following command in your SQL client tool.
 
-```
+```sql
 CREATE DATABASE salesdb;
 ```
 

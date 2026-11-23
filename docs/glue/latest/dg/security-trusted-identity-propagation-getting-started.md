@@ -22,7 +22,7 @@ The role that creates IAM Identity Center connection requires permissions to cre
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -56,7 +56,7 @@ Use the following inline policy to allow an IAM role to view a AWS Glue integrat
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -82,7 +82,7 @@ Use the following inline policy to allow an IAM role to update AWS Glue integrat
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -110,7 +110,7 @@ Use the following inline policy to allow an IAM role to delete a AWS Glue integr
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -196,7 +196,7 @@ After you connect AWS Glue with IAM Identity Center, you can use [ identity-enha
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

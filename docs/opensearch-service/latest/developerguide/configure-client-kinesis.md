@@ -41,7 +41,7 @@ To set up your pipeline, you need one or more active Kinesis Data Streams. These
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -77,7 +77,7 @@ To set up your pipeline, you need one or more active Kinesis Data Streams. These
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -100,7 +100,7 @@ To set up your pipeline, you need one or more active Kinesis Data Streams. These
 
    The following example is a domain access policy that allows the pipeline role created in the previous step (`pipeline-role`), to write data to the `ingestion-domain` domain. Replace the {{placeholder values}} with your own information.
 
-   ```
+   ```JSON
    {
      "Statement": [
        {
@@ -121,7 +121,7 @@ To set up your pipeline, you need one or more active Kinesis Data Streams. These
 
    Configure an OpenSearch Ingestion pipeline specifying **Kinesis-data-streams** as the source. You can locate a ready made blueprint available on the OpenSearch Ingestion Console for creating such a pipeline. (Optional) To create the pipeline using the AWS CLI, you can use a blueprint named "**`AWS-KinesisDataStreamsPipeline`**". Replace the {{placeholder values}} with your own information.
 
-   ```
+   ```YAML
    version: "2"
    kinesis-pipeline:
      source:
@@ -238,7 +238,7 @@ You can grant access across accounts with Amazon Kinesis Data Streams so that Op
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -306,7 +306,7 @@ You can grant access across accounts with Amazon Kinesis Data Streams so that Op
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -336,7 +336,7 @@ You can grant access across accounts with Amazon Kinesis Data Streams so that Op
    + `stream_arn` - the arn of the stream belonging to the account where the stream exists
    + `consumer_arn` - this is an optional attribute and must be specified if the default enhanced fanout consumer strategy is chosen. Specify the actual consumer arn for this field. Replace the {{placeholder values}} with your own information.
 
-   ```
+   ```YAML
    version: "2"
         kinesis-pipeline:
           source:
@@ -417,7 +417,7 @@ You can grant access across accounts with Amazon Kinesis Data Streams so that Op
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -465,7 +465,7 @@ You can grant access across accounts with Amazon Kinesis Data Streams so that Op
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [{

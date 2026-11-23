@@ -81,7 +81,7 @@ Assuming you've created an application inference profile called `USClaudeSonnetA
 #### Sample Request
 <a name="API_DeleteInferenceProfile_Example_1_Request"></a>
 
-```
+```http
 DELETE /inference-profiles/USClaudeSonnetApplicationIP HTTP/1.1
 ```
 

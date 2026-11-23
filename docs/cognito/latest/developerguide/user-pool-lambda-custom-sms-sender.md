@@ -33,7 +33,7 @@ The request that Amazon Cognito passes to this Lambda function is a combination 
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "request": {
         "type": "customSMSSenderRequestV1",
@@ -100,7 +100,7 @@ The Amazon Resource Name (ARN) of the KMS key that you want to use to encrypt an
 
 1. [Deploy the ZIP file to your function](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-package.html).
 
-```
+```javascript
 import { KmsKeyringNode, buildClient, CommitmentPolicy } from '@aws-crypto/client-node';
 
 // Configure the encryption SDK client with the KMS key from the environment variables

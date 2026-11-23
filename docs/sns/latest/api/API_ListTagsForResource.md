@@ -74,7 +74,7 @@ http://sns.us-west-2.amazonaws.com/&Action=ListTagsForResource
 #### Sample Response
 <a name="API_ListTagsForResource_Example_1_Response"></a>
 
-```
+```xml
 <ListTagsForResourceResponse>
     <ListTagsForResourceResult>
         <Tags>

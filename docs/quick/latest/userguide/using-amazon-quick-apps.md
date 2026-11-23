@@ -35,3 +35,15 @@ Building an app follows this workflow:
 1. **Iterate** — Refine with follow-up requests.
 
 1. **Publish** — Share with your team in one click.
+
+## Accessing your apps
+<a name="accessing-apps"></a>
+
+You can reach the apps you build in the following ways:
++ **From the left navigation** — Choose **Apps** to open the apps landing page, where you can describe a new app or browse existing ones.
++ **From the Library** — Open your **Library** to see the apps you already have access to, including apps shared with you, alongside your other saved items.
++ **From chat** — Ask Quick to build an app in a conversation, and it creates the app and opens it for you with no separate setup.
+
+In the desktop app, an open app appears in a session tab, including full-screen and side-by-side with chat.
+
+Apps in AWS Quick is available in a subset of AWS Regions. For the list, see [Regional availability](apps-limitations.md#apps-regional-availability).

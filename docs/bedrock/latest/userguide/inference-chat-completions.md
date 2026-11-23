@@ -40,7 +40,7 @@ To create a chat completion, choose the tab for your preferred method, and then 
 
 Configure the OpenAI client to point to the `bedrock-runtime` endpoint:
 
-```
+```python
 from openai import OpenAI
 import os
 
@@ -59,7 +59,7 @@ print(response.choices[0].message.content)
 ------
 #### [ HTTP request (API key) ]
 
-```
+```bash
 curl -X POST "https://bedrock-runtime.us-east-1.amazonaws.com/openai/v1/chat/completions" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
@@ -72,7 +72,7 @@ curl -X POST "https://bedrock-runtime.us-east-1.amazonaws.com/openai/v1/chat/com
 ------
 #### [ HTTP request (SigV4) ]
 
-```
+```bash
 curl -X POST "https://bedrock-runtime.us-east-1.amazonaws.com/openai/v1/chat/completions" \
   -H "Content-Type: application/json" \
   --aws-sigv4 "aws:amz:us-east-1:bedrock" \
@@ -108,7 +108,7 @@ The OpenAI-compatible Models API is available only on `bedrock-mantle`. To list 
 ------
 #### [ OpenAI SDK (Python) ]
 
-```
+```python
 # List all available models using the OpenAI SDK
 # Requires OPENAI_API_KEY and OPENAI_BASE_URL environment variables
 
@@ -125,7 +125,7 @@ for model in models.data:
 ------
 #### [ HTTP request ]
 
-```
+```bash
 # List all available models
 # Requires OPENAI_API_KEY and OPENAI_BASE_URL environment variables
 
@@ -145,7 +145,7 @@ Choose the tab for your preferred method, and then follow the steps:
 
 Configure the OpenAI client using environment variables:
 
-```
+```python
 # Create a chat completion using the OpenAI SDK
 # Requires OPENAI_API_KEY and OPENAI_BASE_URL environment variables
 
@@ -169,7 +169,7 @@ print(completion.choices[0].message)
 
 Make a POST request to `/v1/chat/completions`:
 
-```
+```bash
 # Create a chat completion
 # Requires OPENAI_API_KEY and OPENAI_BASE_URL environment variables
 
@@ -193,7 +193,7 @@ To receive responses incrementally, choose the tab for your preferred method, an
 ------
 #### [ OpenAI SDK (Python) ]
 
-```
+```python
 # Stream chat completion responses incrementally using the OpenAI SDK
 # Requires OPENAI_API_KEY and OPENAI_BASE_URL environment variables
 
@@ -217,7 +217,7 @@ for chunk in stream:
 
 Make a POST request to `/v1/chat/completions` with `stream` set to `true`:
 
-```
+```bash
 # Stream chat completion responses incrementally
 # Requires OPENAI_API_KEY and OPENAI_BASE_URL environment variables
 
@@ -253,7 +253,7 @@ To see examples of using guardrails with OpenAI chat completions, choose the tab
 ------
 #### [ OpenAI SDK (Python) ]
 
-```
+```python
 import openai
 from openai import OpenAIError
 
@@ -318,7 +318,7 @@ except OpenAIError as e:
 ------
 #### [ OpenAI SDK (Java) ]
 
-```
+```python
 import com.openai.client.OpenAIClient;
 import com.openai.client.okhttp.OpenAIOkHttpClient;
 import com.openai.core.http.HttpResponseFor;

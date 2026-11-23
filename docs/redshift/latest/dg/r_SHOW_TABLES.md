@@ -61,7 +61,7 @@ The maximum number of rows to return. The *row\_limit* can be 0–10,000.
 ## Examples
 <a name="r_SHOW_TABLES-examples"></a>
 
-```
+```sql
 SHOW TABLES FROM SCHEMA s1;
 
  database_name | schema_name |    table_name     | table_type |              table_acl              | remarks | owner |     last_altered_time      |     last_modified_time     | dist_style |   table_subtype
@@ -72,7 +72,7 @@ SHOW TABLES FROM SCHEMA s1;
  dev           | s1          | test_table        | TABLE      | alice=arwdRxtDPA/alice~bob=rw/alice |         | alice | 2025-11-18 15:52:00.010452 | 2025-11-18 15:44:34.856073 | AUTO (ALL) | REGULAR TABLE
 ```
 
-```
+```sql
 SHOW TABLES FROM SCHEMA dev.s1 LIKE '%view' LIMIT 1;
 
  database_name | schema_name |    table_name     | table_type |              table_acl               | remarks | owner | last_altered_time | last_modified_time | dist_style |   table_subtype
@@ -84,6 +84,6 @@ Iceberg materialized views appear in SHOW TABLES output with `table_type = 'EXTE
 
 The following example lists tables in a AWS Glue database, where Iceberg materialized views can be identified by `table_subtype`:
 
-```
+```sql
 SHOW TABLES FROM SCHEMA awsdatacatalog.mydb LIKE '%';
 ```

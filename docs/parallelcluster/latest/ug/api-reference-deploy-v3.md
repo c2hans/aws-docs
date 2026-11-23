@@ -10,13 +10,13 @@ In this section, you will learn how to deploy with AWS CLI.
 
 Configure AWS Credentials to be used with the CLI if you haven't already done so.
 
-```
+```sh
 $ aws configure
 ```
 
 Run the following commands to deploy the API:
 
-```
+```sh
 $ REGION={{<region>}}
 $ API_STACK_NAME={{<stack-name>}}  # This can be any name
 $ VERSION=3.16.3

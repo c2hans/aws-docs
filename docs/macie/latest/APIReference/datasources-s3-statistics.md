@@ -47,7 +47,7 @@ Retrieves (queries) aggregated statistical data about all the S3 buckets that Am
 #### POST schema
 <a name="datasources-s3-statistics-request-body-post-example"></a>
 
-```
+```json
 {
   "accountId": "string"
 }
@@ -59,7 +59,7 @@ Retrieves (queries) aggregated statistical data about all the S3 buckets that Am
 #### GetBucketStatisticsResponse schema
 <a name="datasources-s3-statistics-response-body-getbucketstatisticsresponse-example"></a>
 
-```
+```json
 {
   "bucketCount": integer,
   "bucketCountByEffectivePermission": {
@@ -133,7 +133,7 @@ Retrieves (queries) aggregated statistical data about all the S3 buckets that Am
 #### ValidationException schema
 <a name="datasources-s3-statistics-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -142,7 +142,7 @@ Retrieves (queries) aggregated statistical data about all the S3 buckets that Am
 #### ServiceQuotaExceededException schema
 <a name="datasources-s3-statistics-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -151,7 +151,7 @@ Retrieves (queries) aggregated statistical data about all the S3 buckets that Am
 #### AccessDeniedException schema
 <a name="datasources-s3-statistics-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -160,7 +160,7 @@ Retrieves (queries) aggregated statistical data about all the S3 buckets that Am
 #### ResourceNotFoundException schema
 <a name="datasources-s3-statistics-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -169,7 +169,7 @@ Retrieves (queries) aggregated statistical data about all the S3 buckets that Am
 #### ConflictException schema
 <a name="datasources-s3-statistics-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -178,7 +178,7 @@ Retrieves (queries) aggregated statistical data about all the S3 buckets that Am
 #### ThrottlingException schema
 <a name="datasources-s3-statistics-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -187,7 +187,7 @@ Retrieves (queries) aggregated statistical data about all the S3 buckets that Am
 #### InternalServerException schema
 <a name="datasources-s3-statistics-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

@@ -17,7 +17,7 @@ This topic explains how to determine when the certificate will expire and how to
 1. Use the `snowballEdge describe-device-software` command to determine when the certificate will expire. In the output of the command, the value of `CertificateExpiry` includes the date and time at which the certificate will expire.
 **Example of `describe-device-software` output**
 
-   ```
+   ```bash,sh,zsh
    Installed version: 101
    Installing version: 102
    Install State: Downloading

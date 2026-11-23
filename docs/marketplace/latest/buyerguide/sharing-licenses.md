@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/sharing-li
 
 # Sharing your licenses
 
-Only AMI, container, machine learning, data products, Oracle Database@AWS, and third-party Amazon Bedrock model subscriptions have licenses that can be shared.
+Only AMI, container, machine learning, data products, Oracle Database@AWS, RTB Fabric module, and third-party Amazon Bedrock model subscriptions have licenses that can be shared.
 
 Subscriptions in AWS Marketplace have an **Access level** shown in the product details:
 + Products with an **Agreement** level have a license that you can use and share with other accounts in your organization.
@@ -22,7 +22,7 @@ To distribute licenses, sign in to your organization's management account or you
 
 The `DistributeMarketplaceSubscription` statement covers the actions used on every distribution. The `FirstTimeOnboarding` statements cover the setup that AWS License Manager performs the first time your organization distributes licenses.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -102,7 +102,7 @@ For more information, see the following topics in the *Amazon Bedrock User Guide
 ## Distributing other licenses
 <a name="license-sharing-other"></a>
 
-For AMI, container, machine learning, data products, and Oracle Database@AWS subscriptions, set up license sharing for your organization, and then share licenses by using grants in AWS License Manager.
+For AMI, container, machine learning, data products, Oracle Database@AWS, and RTB Fabric module subscriptions, set up license sharing for your organization, and then share licenses by using grants in AWS License Manager.
 
 ### Prerequisites for license sharing
 <a name="license-sharing-prereqs"></a>

@@ -23,7 +23,7 @@ A superuser can provide access to users who aren't superusers so that they can p
 
 ****
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
    "Statement": [

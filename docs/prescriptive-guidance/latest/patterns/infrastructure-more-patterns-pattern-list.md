@@ -18,6 +18,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/in
 + [Create a portal for micro-frontends by using AWS Amplify, Angular, and Module Federation](create-amplify-micro-frontend-portal.md)
 + [Create an API-driven resource orchestration framework using GitHub Actions and Terragrunt](create-an-api-driven-resource-orchestration-framework-using-github-actions-and-terragrunt.md)
 + [Create a cross-account Amazon EventBridge connection in an organization](create-cross-account-amazon-eventbridge-connection-organization.md)
++ [Create dynamic CI pipelines for Java and Python projects automatically](create-dynamic-ci-pipelines-for-java-and-python-projects-automatically.md)
 + [Deploy an Amazon API Gateway API on an internal website using private endpoints and an Application Load Balancer](deploy-an-amazon-api-gateway-api-on-an-internal-website-using-private-endpoints-and-an-application-load-balancer.md)
 + [Deploy and manage AWS Control Tower controls by using Terraform](deploy-and-manage-aws-control-tower-controls-by-using-terraform.md)
 + [Deploy a CockroachDB cluster in Amazon EKS by using Terraform](deploy-cockroachdb-on-eks-using-terraform.md)

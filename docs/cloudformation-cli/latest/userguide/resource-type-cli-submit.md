@@ -24,7 +24,7 @@ The user registering the extension must be able to access the schema handler pac
 ## Synopsis
 <a name="resource-type-cli-submit-synopsis"></a>
 
-```
+```sh
 $ cfn submit
     [--dry-run]
     [--endpoint-url <value>]
@@ -74,19 +74,19 @@ Upon successful registration of the type version, sets the current type version 
 
 The following command builds and packages your extension project without registering it.
 
-```
+```sh
 $ cfn submit --dry-run
 ```
 
 The following command registers your extension.
 
-```
+```sh
 $ cfn submit --set-default
 ```
 
 The following command registers your extension in the us-west-2 region.
 
-```
+```sh
 $ cfn submit --region us-west-2
 ```
 
@@ -95,6 +95,6 @@ $ cfn submit --region us-west-2
 
 Extension registration is an asynchronous operation. You can use the supplied registration token to track the progress of your extension registration request using the [DescribeTypeRegistration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeTypeRegistration.html) operation of the CloudFormation API.
 
-```
+```json
 {‘ProgressStatus’: ‘COMPLETE’}
 ```

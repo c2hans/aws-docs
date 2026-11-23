@@ -58,7 +58,7 @@ These steps describe how to create a service role with a managed policy for Amaz
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

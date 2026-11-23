@@ -4,26 +4,30 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 
 # How Amazon OpenSearch Memory works
 
-In Amazon OpenSearch Memory, spaces, events, and memories are the core components that you work with. A *space* holds the events that you send and the memories extracted from them. An *event* is content that your agent or application sends to a space, such as a conversation turn, a JSON record, or a document. A *memory* is a fact, summary, or other detail that OpenSearch Memory extracted from events, or that you wrote directly.
+In Amazon OpenSearch Memory, spaces, events, and memories are the core components that you work with. A *space* holds the events that you send and the memories extracted from them. An *event* is content that your agent or application sends to a space, such as a conversation turn or a JSON record. A *memory* is a fact, summary, or other detail that OpenSearch Memory extracted from events, or that you wrote directly.
 
-This topic describes these components and what happens between writing an event and finding a memory.
+This topic describes these components, what happens between writing an event and finding a memory, common use cases, security and resilience, how to access OpenSearch Memory, and the supported AWS Regions.
 
 **Topics**
 + [Spaces, events, and memories](#memory-how-it-works-core-components)
++ [OpenSearch Memory use cases](#memory-use-cases)
 + [Actors and sessions](#memory-how-it-works-actors-sessions)
 + [Memory strategies](#memory-how-it-works-strategies)
 + [From event to memory](#memory-how-it-works-lifecycle)
 + [What you see, and when](#memory-how-it-works-consistency)
++ [Security](#memory-overview-security)
++ [Resilience](#memory-overview-resilience)
++ [Accessing OpenSearch Memory](#memory-accessing)
++ [Supported AWS Regions](#memory-regions)
 
 ## Spaces, events, and memories
 <a name="memory-how-it-works-core-components"></a>
 
 The following are the basic OpenSearch Memory components:
 + **Spaces** – A space is an AWS resource that stores events and memories. It defines which memory strategies extract memories, how long events and memories are kept, which model extracts memories, and which key encrypts the data. Each space has an ID, such as `sp-02864597b164`, and an ARN. A space is the unit you control access to with IAM.
-+ **Events** – An event is content that your agent or application sends to a space with [CreateEvent](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_CreateEvent.html). Each event has one of three kinds of payload:
++ **Events** – An event is content that your agent or application sends to a space with [CreateEvent](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_CreateEvent.html). Each event has one of two kinds of payload:
   + *Conversational* – One or more conversation turns, each with a role (`USER`, `ASSISTANT`, or `SYSTEM`) and text.
   + *Structured data* – A JSON object, such as the result of a deployment that an agent should remember.
-  + *Blob* – A document in Amazon S3, such as a PDF, PNG, or JPEG file.
 
   OpenSearch Memory stores the event as you sent it and returns it unchanged from [GetEvent](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_GetEvent.html). A space keeps each event for the number of days in its `eventExpiryDays` setting.
 + **Memories** – A memory is a piece of text that OpenSearch Memory extracted from one or more events, or that you wrote with [CreateMemory](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_CreateMemory.html). Each memory has a type that matches the strategy that produced it (`SEMANTIC`, `SUMMARY`, or `CUSTOM`), the IDs of the events it came from, the actor and session it belongs to, timestamps, and any metadata tags you attached. A space keeps each memory for the number of days in its `memoryExpiryDays` setting, or forever if you don't set one.
@@ -51,6 +55,12 @@ Note the following about this example:
 + The event is stored verbatim. The memories are new text that the extraction model wrote.
 + Each memory records which events it came from, so your application can show its evidence.
 + The two strategies read the same event and produced different kinds of memory.
+
+## OpenSearch Memory use cases
+<a name="memory-use-cases"></a>
++ **Personal assistants** – Remember a user's preferences, constraints, and history so the assistant doesn't ask the same questions twice. For example, a travel assistant that recalls "prefers window seats" and "vegetarian" on every trip.
++ **Customer support agents** – Summarize each support session and extract case details, such as order IDs and their status, so an agent picking up a case later has the context without rereading the transcript.
++ **Operational and coding agents** – Record what an agent did and what happened, such as a deployment result, so later runs can recall outcomes and avoid repeating mistakes.
 
 ## Actors and sessions
 <a name="memory-how-it-works-actors-sessions"></a>
@@ -86,7 +96,7 @@ OpenSearch Memory separates storing an event from extracting memories. The follo
 
 1. **Memories become searchable.** The resulting memories are indexed. [SearchMemories](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_SearchMemories.html) now returns them, ranked by relevance to your query.
 
-Events with structured data follow the same path. For a blob event, OpenSearch Memory first reads the document from Amazon S3 and splits it into passages, which are then extracted like conversation turns and are also searchable with [SearchEvents](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_SearchEvents.html).
+Events with structured data follow the same path.
 
 ## What you see, and when
 <a name="memory-how-it-works-consistency"></a>
@@ -103,3 +113,29 @@ Because extraction runs after `CreateEvent` returns, different operations reflec
 Deletes behave the same way in reverse: a deleted event or memory can still appear in search results for a short time after the delete call returns.
 
 If your application needs a memory to be searchable before it continues, poll `GetMemory` with backoff until the memory is returned. If you need memories sooner after a conversation, lower the strategy's `extractEveryNMessages` or `idleTimeoutSeconds`. For more information, see [Memory strategies in Amazon OpenSearch Memory](memory-strategies.md).
+
+## Security
+<a name="memory-overview-security"></a>
+
+OpenSearch Memory uses AWS Identity and Access Management (IAM) to control who can create spaces and who can read and write the events and memories in them. Every operation is an IAM action with the `osm` prefix, authorized on the space's Amazon Resource Name (ARN). Condition keys let you limit a principal to specific actors, sessions, or strategies within a space.
+
+OpenSearch Memory encrypts all data at rest. By default it uses an AWS owned key. You can instead use a customer managed key in AWS Key Management Service (AWS KMS) that you create and control. All requests use TLS 1.2 or later. For more information, see [Security in Amazon OpenSearch Memory](memory-security.md).
+
+## Resilience
+<a name="memory-overview-resilience"></a>
+
+OpenSearch Memory is a Regional service. It stores each space's events and memories redundantly across multiple Availability Zones in the AWS Region where you created the space. For more information, see [Resilience in Amazon OpenSearch Memory](memory-resilience.md).
+
+## Accessing OpenSearch Memory
+<a name="memory-accessing"></a>
+
+You can work with OpenSearch Memory using the AWS Management Console, the AWS Command Line Interface (AWS CLI), the AWS SDKs, or the OpenSearch Memory API directly.
++ **Console** – Open the [Amazon OpenSearch Service console](https://console.aws.amazon.com/aos/home) and choose **Memory** in the navigation pane. The console supports creating, viewing, editing, tagging, and deleting spaces.
++ **AWS CLI** – OpenSearch Memory commands are under `aws opensearchmemory`. Each command is the operation name in lowercase words separated by hyphens, for example `aws opensearchmemory create-space`.
++ **AWS SDKs** – The service is available in every AWS SDK under the service ID `OpenSearchMemory`. The SDKs choose the correct endpoint for each operation, sign requests, and retry transient errors for you.
++ **API** – If you call the API directly, sign requests with Signature Version 4 using the service name `osm`. Space and tagging operations use the Regional endpoint `https://osm.{{region}}.api.aws`. Event and memory operations use the space's own endpoint, `https://{{space-id}}.osm.{{region}}.on.aws`. OpenSearch Memory doesn't have FIPS endpoints.
+
+## Supported AWS Regions
+<a name="memory-regions"></a>
+
+OpenSearch Memory is available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), and Europe (Frankfurt). For the endpoints, see [Service endpoints](memory-quotas.md#memory-quotas-endpoints).

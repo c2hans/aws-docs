@@ -155,7 +155,7 @@ Required: No
 The maximum number of records in each batch that Lambda pulls from your stream or queue and sends to your function. Lambda passes all of the records in the batch to the function in a single call, up to the payload limit for synchronous invocation (6 MB).
 +  **Amazon Kinesis** – Default 100. Max 10,000.
 +  **Amazon DynamoDB Streams** – Default 100. Max 10,000.
-+  **Amazon Simple Queue Service** – Default 10. For standard queues the max is 10,000. For FIFO queues the max is 10.
++  **Amazon Simple Queue Service** – Default 10. For standard queues the max is 10,000. For FIFO queues, the max is 10,000 if the event source mapping uses provisioned mode. Otherwise, the max is 10.
 +  **Amazon Managed Streaming for Apache Kafka** – Default 100. Max 10,000.
 +  **Self-managed Apache Kafka** – Default 100. Max 10,000.
 +  **Amazon MQ (ActiveMQ and RabbitMQ)** – Default 100. Max 10,000.
@@ -226,6 +226,7 @@ Required: No
 The maximum amount of time, in seconds, that Lambda spends gathering records before invoking the function. You can configure `MaximumBatchingWindowInSeconds` to any value from 0 seconds to 300 seconds in increments of seconds.
 For Kinesis, DynamoDB, and Amazon SQS event sources, the default batching window is 0 seconds. For Amazon MSK, Self-managed Apache Kafka, Amazon MQ, and DocumentDB event sources, the default batching window is 500 ms. Note that because you can only change `MaximumBatchingWindowInSeconds` in increments of seconds, you cannot revert back to the 500 ms default batching window after you have changed it. To restore the default batching window, you must create a new event source mapping.
 Related setting: For Kinesis, DynamoDB, and Amazon SQS event sources, when you set `BatchSize` to a value greater than 10, you must set `MaximumBatchingWindowInSeconds` to at least 1.
+For Amazon SQS FIFO queues, you can set a batching window greater than 0 seconds only if the event source mapping uses provisioned mode.
 Not supported for Kafka event source mappings when `ConsumptionMode` is `Queue`.
 Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 300.
@@ -483,6 +484,7 @@ Type: [EventSourceMappingLoggingConfig](API_EventSourceMappingLoggingConfig.md) 
 The maximum amount of time, in seconds, that Lambda spends gathering records before invoking the function. You can configure `MaximumBatchingWindowInSeconds` to any value from 0 seconds to 300 seconds in increments of seconds.
 For streams and Amazon SQS event sources, the default batching window is 0 seconds. For Amazon MSK, Self-managed Apache Kafka, Amazon MQ, and DocumentDB event sources, the default batching window is 500 ms. Note that because you can only change `MaximumBatchingWindowInSeconds` in increments of seconds, you cannot revert back to the 500 ms default batching window after you have changed it. To restore the default batching window, you must create a new event source mapping.
 Related setting: For streams and Amazon SQS event sources, when you set `BatchSize` to a value greater than 10, you must set `MaximumBatchingWindowInSeconds` to at least 1.
+For Amazon SQS FIFO queues, you can set a batching window greater than 0 seconds only if the event source mapping uses provisioned mode.
 Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 300.
 

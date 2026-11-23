@@ -17,7 +17,7 @@ During training, SageMaker AI parses each JSON line and sends some or all of its
 
 For example, if you list `["line", "book"]` for `AttributeNames`, the input data must include the attribute names of `line` and `book` in the specified order. For this example, the following augmented manifest file content is valid:
 
-```
+```python
 {"author": "Herman Melville", "line": "Call me Ishmael", "book": "Moby Dick"}
 {"line": "It was love at first sight.", "author": "Joseph Heller", "book": "Catch-22"}
 ```
@@ -32,7 +32,7 @@ When using augmented manifest files, observe the following guidelines:
 
 If an attribute name contains the suffix `-ref`, the attribute's value must be an S3 URI to a data file that is accessible to the training job. For example, if `AttributeNames` contains `["image-ref", "is-a-cat"]`, the following example shows a valid augmented manifest file:
 
-```
+```python
 {"image-ref": "s3://amzn-s3-demo-bucket/sample01/image1.jpg", "is-a-cat": 1}
 {"image-ref": "s3://amzn-s3-demo-bucket/sample02/image2.jpg", "is-a-cat": 0}
 ```
@@ -118,7 +118,7 @@ After the training job has finished, SageMaker AI stores the model artifacts in 
 
 The following shows how to train a model with an augmented manifest file using the SageMaker AI high-level Python library:
 
-```
+```python
 import sagemaker
 from sagemaker.train import ModelTrainer
 from sagemaker.core.shapes import Channel, DataSource, S3DataSource

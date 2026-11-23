@@ -8,6 +8,8 @@ This section depicts a typical machine learning lifecycle and data flow.
 
 ![Diagram of the machine learning lifecycle.](https://docs.aws.amazon.com/wellarchitected/latest/healthcare-industry-lens/images/machine-learning-lifecycle.png)
 
+*[ML lifecycle](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/ml-lifecycle-phase-model-development.html) with detailed phases and expanded components*
+
 The following steps detail the end-to-end data flow for machine learning:
 
 1.  Data is collected and pre-processed using a data lake, as described in the preceding *healthcare analytics* scenario.

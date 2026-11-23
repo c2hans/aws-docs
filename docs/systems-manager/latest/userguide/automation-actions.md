@@ -118,7 +118,7 @@ Required: Yes
 ### Example
 <a name="automation-demo"></a>
 
-```
+```yaml
 ---
 description: "Custom Automation Example"
 schemaVersion: '0.3'

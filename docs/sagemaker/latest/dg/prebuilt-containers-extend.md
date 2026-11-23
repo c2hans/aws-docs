@@ -104,7 +104,7 @@ To run your own training model using the SageMaker AI containers, build a Docker
 
 1. Create or upload a training script `cifar10.py` in the `docker_test_folder`. You can use the following example script for this exercise.
 
-   ```
+   ```python.py
    import ast
    import argparse
    import logging
@@ -353,7 +353,7 @@ Remember that `docker` looks for a file specifically called `Dockerfile` without
 
 1. Paste the following example script into the notebook code cell to configure a SageMaker AI ModelTrainer using your extended container.
 
-   ```
+   ```python.py
    from sagemaker.train import ModelTrainer
    from sagemaker.train.configs import Compute, SourceCode
    from sagemaker.train.configs import InputData
@@ -415,7 +415,7 @@ Remember that `docker` looks for a file specifically called `Dockerfile` without
 
    If you want to use this training container with SageMaker Studio to use its visualization features, you can also run the following code in a Studio notebook cell to call the Amazon ECR image of your training container.
 
-   ```
+   ```python.py
    import boto3
 
    client=boto3.client('sts')
@@ -434,7 +434,7 @@ Remember that `docker` looks for a file specifically called `Dockerfile` without
 
 1. Use the `ecr_image` retrieved from the previous step to configure a SageMaker AI ModelTrainer object. The following code sample configures a SageMaker AI PyTorch ModelTrainer.
 
-   ```
+   ```python.py
    import sagemaker
 
    from sagemaker.core.helper.session_helper import get_execution_role

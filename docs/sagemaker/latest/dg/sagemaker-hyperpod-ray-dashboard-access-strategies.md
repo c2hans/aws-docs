@@ -11,7 +11,7 @@ An access strategy sets who can reach a Ray cluster's dashboard and Jobs API end
 
 Add the following annotations under `metadata.annotations` on your Ray resource (`RayCluster`, `RayJob`, `RayService`, or `RayCronJob`).
 
-```
+```yaml
 metadata:
   annotations:
     access.sagemaker.amazonaws.com/enabled: "true"

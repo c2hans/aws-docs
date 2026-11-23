@@ -15,8 +15,12 @@ AWS SDKs provide back-off and retry mechanisms by default when talking to other 
 
 ![Diagram showing a Step Functions state machine with DLQ step](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/step-functions-state-machine-with-DLQ-setup.png)
 
+*Figure 20: Step Functions state machine with DLQ step*
+
 Partial failures can occur in non-atomic operations, such as `PutRecords` (Kinesis) and `BatchWriteItem` (DynamoDB), since they return successful if at least one record has been ingested successfully. Always inspect the response when using such operations, and programmatically deal with partial failures. When consuming from Kinesis or DynamoDB Streams use Lambda error handling controls, such as **maximum record age**, **maximum retry attempts**, **DLQ on failure**, and **Bisect batch on function error**, to build additional resiliency into your application. For synchronous parts that are transaction-based and depend on certain guarantees and requirements, rolling back failed transactions as described by the [Saga pattern](http://theburningmonk.com/2017/07/applying-the-saga-pattern-with-aws-lambda-and-step-functions/) also can be achieved by using Step Functions state machines, which will decouple and simplify the logic of your application.
 
 ![Diagram showing a Step Functions state machine with Saga Pattern](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/step-functions-state-machine-saga-pattern.png)
+
+*Figure 21: Step Functions state machine Saga pattern*
 
 Choose the Step Functions type based on your workload. For short-running synchronous and asynchronous high-volume workloads, use Step Functions - Sync Express. If you need to automate long-running workflows and want to have additional durability and audit go with Step Functions Standard.

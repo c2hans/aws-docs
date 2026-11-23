@@ -12,7 +12,7 @@ Instead of choosing a supported data source service, you can connect to a custom
 
 To connect a knowledge base to a custom data source, send a [CreateDataSource](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataSource.html) request with an Agents for Amazon Bedrock build-time endpoint. Specify the `knowledgeBaseId` of the knowledge base to connect to, give a `name` to the data source, and set the `type` field in the `dataSourceConfiguration` to `MANAGED_KNOWLEDGE_BASE_CONNECTOR`. Define the connector itself in `managedKnowledgeBaseConnectorConfiguration.connectorParameters`, setting its `type` to `CUSTOM`. The following shows a minimal example to create this data source:
 
-```
+```json
 PUT /knowledgebases/{{KB12345678}}/datasources/ HTTP/1.1
 Content-type: application/json
 

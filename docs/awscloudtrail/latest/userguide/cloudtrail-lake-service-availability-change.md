@@ -117,7 +117,7 @@ You will need the Amazon Resource Name (ARN) of your CloudTrail Lake Event Data 
 
 Use the `logs` service to create the task. You must specify the source ARN of the Event Data Store.
 
-```
+```bash
 aws logs create-import-task \
     --import-source-arn "arn:aws:cloudtrail:{{region}}:{{account-id}}:eventdatastore/{{eds-id}}" \
     --import-role-arn "arn:aws:iam::{{account-id}}:role/{{role-name}}" \
@@ -133,7 +133,7 @@ Parameters:
 
 Because the import is asynchronous, you can check the progress of the migration using the `describe-import-tasks` command:
 
-```
+```bash
 aws logs describe-import-tasks \
     --import-id "{{import-id}}"
 ```

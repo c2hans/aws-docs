@@ -67,7 +67,7 @@ You can change the server configuration in the following ways:
 
 Use the SHOW command to view the current parameter settings. Use SHOW ALL to view all the settings that you can configure by using the [SET](r_SET.md) command.
 
-```
+```sql
 SHOW ALL;
 
 name                      | setting

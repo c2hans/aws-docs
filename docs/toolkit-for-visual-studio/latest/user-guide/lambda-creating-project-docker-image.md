@@ -57,7 +57,7 @@ The following are optional `Dockerfile` actions that you can specify:
 
 The following is an example of a Dockerfile created by the .NET 8 (Container Image) blueprint.
 
-```
+```txt
 FROM public.ecr.aws/lambda/dotnet:8
 
 WORKDIR /var/task
@@ -88,7 +88,7 @@ The `aws-lambda-tools-defaults.json` file is used to specify default values for 
 
 The following is an example of an aws-lambda-tools-defaults.json created by the .NET 8 (Container Image) blueprint.
 
-```
+```json
 {
   "Information": [
     "This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI.",

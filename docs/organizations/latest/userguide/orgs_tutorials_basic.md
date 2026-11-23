@@ -217,7 +217,7 @@ Now that service control policies are enabled in your organization, you can crea
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -265,7 +265,7 @@ The second policy defines an [allow list](orgs_manage_policies_scps_evaluation.m
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -313,7 +313,7 @@ The final policy provides a [deny list](orgs_manage_policies_scps_evaluation.md#
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

@@ -34,7 +34,7 @@ The permissions policy for this service-linked role is named **AWSCloud9ServiceR
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -143,7 +143,7 @@ You must configure permissions to allow AWS Cloud9 to create a service-linked ro
 
 To allow AWS Cloud9 to create the AWSServiceRoleForAWSCloud9 service-linked role, add the following statement to the permissions policy for the IAM entity on whose behalf AWS Cloud9 needs to create the service-linked role.
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": [
@@ -162,7 +162,7 @@ Alternatively, you can add the AWS managed policies `AWSCloud9User` or `AWSCloud
 
 To allow an IAM entity to delete the AWSServiceRoleForAWSCloud9 service-linked role, add the following statement to the permissions policy for the IAM entity that needs to delete a service-linked role.
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": [

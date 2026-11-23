@@ -22,7 +22,7 @@ The degree of data parallelism is calculated by `(processes_per_host * instance_
 
 **Configure a SageMaker PyTorch ModelTrainer**
 
-```
+```py
 mpi_options = {
     "enabled" : True,
     "processes_per_host" : 8,               # 8 processes

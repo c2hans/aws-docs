@@ -12,7 +12,7 @@ The custom metadata fields for one record type, in addition to the common attrib
  ** recordType **   <a name="agentregistrycontrol-Type-RecordTypeSchemaOverride-recordType"></a>
 The record type these fields apply to.
 Type: String
-Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY`
+Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY | WEB_BOT`
 Required: Yes
 
  ** schema **   <a name="agentregistrycontrol-Type-RecordTypeSchemaOverride-schema"></a>

@@ -103,7 +103,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of ListPickupLocations.
 
-```
+```JSON
 {
     "id": "to-get-a-list-of-locations-from-which-the-customer-can-choose-to-pickup-a-device-1482542167627",
     "title": "To get a list of locations from which the customer can choose to pickup a device.",

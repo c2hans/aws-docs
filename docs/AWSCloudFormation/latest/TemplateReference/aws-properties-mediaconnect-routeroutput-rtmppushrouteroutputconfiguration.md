@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::RouterOutput RtmpPushRouterOutputConfiguration
 
-<a name="aws-properties-mediaconnect-routeroutput-rtmppushrouteroutputconfiguration-description"></a>The `RtmpPushRouterOutputConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::RouterOutput](aws-resource-mediaconnect-routeroutput.md).
+The configuration settings for a router output that pushes a stream to a destination using the RTMP (Real-Time Messaging Protocol) protocol, or RTMPS (RTMP over TLS) when TLS encryption is specified. These settings include the destination address and port, the application and stream names, and optional TLS encryption configuration.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-routeroutput-rtmppushrouteroutputconfiguration-syntax"></a>
@@ -42,19 +42,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-routeroutput-rtmppushrouteroutputconfiguration-properties"></a>
 
 `ApplicationName`  <a name="cfn-mediaconnect-routeroutput-rtmppushrouteroutputconfiguration-applicationname"></a>
-Property description not available.
+The name of the RTMP application on the destination server. Together with the stream name, the application name forms the RTMP URL path, in the pattern `rtmp://destinationAddress/applicationName/streamName`.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DestinationAddress`  <a name="cfn-mediaconnect-routeroutput-rtmppushrouteroutputconfiguration-destinationaddress"></a>
-Property description not available.
+The IP address or hostname of the destination RTMP server that the router output pushes the stream to. Provide only the server address; specify the application and stream names separately.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DestinationPort`  <a name="cfn-mediaconnect-routeroutput-rtmppushrouteroutputconfiguration-destinationport"></a>
-Property description not available.
+The TCP port on the destination RTMP server. For RTMP, valid values range from `1024` to `65535`. For RTMPS (RTMP over TLS), valid values are `443` or `1024` to `65535`. RTMP typically uses port `1935`, and RTMPS typically uses port `443`.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `443`
@@ -62,13 +62,13 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StreamName`  <a name="cfn-mediaconnect-routeroutput-rtmppushrouteroutputconfiguration-streamname"></a>
-Property description not available.
+The name of the RTMP stream that the output publishes to the destination application. The stream name forms the final segment of the RTMP URL path.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TlsEncryption`  <a name="cfn-mediaconnect-routeroutput-rtmppushrouteroutputconfiguration-tlsencryption"></a>
-Property description not available.
+The TLS encryption settings for the output. When you specify these settings, the output uses RTMPS (RTMP over TLS) to establish a secure, encrypted connection to the destination server.
 *Required*: No
 *Type*: [TlsEncryption](aws-properties-mediaconnect-routeroutput-tlsencryption.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

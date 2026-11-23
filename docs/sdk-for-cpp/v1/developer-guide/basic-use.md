@@ -14,7 +14,7 @@ The AWS SDK for C\+\+ must be initialized by calling `Aws::InitAPI`. Before the 
 
 A basic skeleton application is shown below.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 int main(int argc, char** argv)
 {

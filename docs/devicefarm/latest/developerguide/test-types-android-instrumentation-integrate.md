@@ -18,7 +18,7 @@ To configure test reports for your instrumentation tests:
 
 1. Run **am instrument** with the `-r` option, and pipe its output through **tee** so that the output appears in your test spec output. Device Farm reads your test spec output to build the report. The default instrumentation test spec already does this:
 
-   ```
+   ```bash
    adb -s $DEVICEFARM_DEVICE_UDID shell am instrument -r -w --no-window-animation \
      $DEVICEFARM_TEST_PACKAGE_NAME/$DEVICEFARM_TEST_PACKAGE_RUNNER 2>&1 | tee $DEVICEFARM_LOG_DIR/instrument.log
    ```
@@ -37,7 +37,9 @@ To configure test reports for your instrumentation tests:
 
 1. Schedule the run in a custom test environment. Test insights are on by default. If you don't set the `insightsTypes` field of the `configuration` parameter of your `ScheduleRun` request, Device Farm sets it to `TEST_REPORT`. To turn off test insights for a run, see [Creating a test run in Device Farm](how-to-create-test-run.md).
 
-To view the report after the run completes, see [View a test report (console)](#test-types-android-instrumentation-view-insights-console). If Device Farm does not generate a report, see [Test insights](troubleshooting-instrumentation-tests.md#troubleshooting-instrumentation-tests-insights).
+Device Farm timestamps each line of your test spec output, so the report has a start time for each test. When the run records video, you also get per-test video. For more information, see [Per-test video](reports.md#reports-test-insights-video).
+
+To view the report after the run completes, see [View a test report (console)](#test-types-android-instrumentation-view-insights-console). If Device Farm does not generate a report, see [Troubleshooting test reports and insights in AWS Device Farm](troubleshooting-test-insights.md).
 
 ## Run Android Instrumentation tests (console)
 <a name="test-types-android-instrumentation-upload"></a>
@@ -93,6 +95,12 @@ The job results include a **Test report** tab. Choose it to see a per-test break
 
 ![The remaining columns on the Test report tab for a completed instrumentation job.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/console-instrumentation-insights-enabled-test-report-column-end.png)
 
+When the run records a video, the **Video** column has a play button for each test that plays the test in the job video. For more information, see [Watch a test in the job video](reports.md#reports-test-insights-video-console).
+
+The following screenshot shows the **Test report** tab with the **Test video** panel open.
+
+![The Test report tab for a completed Android instrumentation job, with the Test video panel open on the selected test.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/console-instrumentation-insights-enabled-test-video-panel.png)
+
 The tab shows the following fields for each test:
 
 `testName`
@@ -131,6 +139,12 @@ A human-readable version of the instrumentation output for the test.
 `stackTrace`
 For a failed test, the stack trace of the failure.
 
+`videoStartSeconds`
+Where the test started in the job video, in seconds. See [Per-test video](reports.md#reports-test-insights-video).
+
+`videoEndSeconds`
+Where the test ended in the job video, in seconds.
+
 To download the full test report as a JSON file, choose **Download full summary** at the top of the job details.
 
 To choose which columns appear, choose the gear icon. In the settings, you can select the columns to display and turn **Group by class** on or off. **Group by class** is on by default, which groups the tests by their test class. Turn it off to see a flat list of all tests, as shown in the following screenshot.
@@ -158,7 +172,7 @@ aws devicefarm get-job --arn {{arn:aws:devicefarm:us-west-2:123456789012:job:PRO
 
 If the run did not generate test insights, for example because it used the standard test environment or you turned off test insights, the response contains the standard job fields, such as the job status, result, counters, and device:
 
-```
+```json
 {
     "job": {
         "arn": "arn:aws:devicefarm:us-west-2:123456789012:job:EXAMPLE-PROJECT/EXAMPLE-RUN/00000",
@@ -199,7 +213,7 @@ If the run did not generate test insights, for example because it used the stand
 
 If the run generated test insights, the response also includes an `insights` object. This object contains the test report status, high-level metrics, and a presigned URL to the detailed report:
 
-```
+```json
 {
     "job": {
         "arn": "arn:aws:devicefarm:us-west-2:123456789012:job:EXAMPLE-PROJECT/EXAMPLE-RUN/00000",
@@ -237,7 +251,7 @@ curl -o test-report.json "{{PRESIGNED_URL}}"
 
 The following is an example test report for an instrumentation job:
 
-```
+```json
 {
   "version": "1.0",
   "jobArn": "arn:aws:devicefarm:us-west-2:123456789012:job:EXAMPLE-PROJECT/EXAMPLE-RUN/00000",
@@ -358,6 +372,10 @@ The instrumentation status code that the test reported.
 A human-readable version of the instrumentation output for the test.
 `stackTrace`
 For a failed test, the stack trace of the failure.
+`videoStartSeconds`
+Where the test started in the job video, in seconds. See [Per-test video](reports.md#reports-test-insights-video).
+`videoEndSeconds`
+Where the test ended in the job video, in seconds.
 
 ## (Optional) Take screenshots in Android instrumentation tests
 <a name="test-types-android-instrumentation-screenshots"></a>

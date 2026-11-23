@@ -25,13 +25,13 @@ Local clusters don’t transition to a `FAILED` status. Amazon EKS attempts to r
 
 Local cluster issues can be discovered using the [describe-cluster](https://docs.aws.amazon.com/cli/latest/reference/eks/describe-cluster.html) Amazon EKS AWS CLI command. Local cluster issues are surfaced by the `cluster.health` field of the `describe-cluster` command’s response. The message contained in this field includes an error code, descriptive message, and related resource IDs. This information is available through the Amazon EKS API and AWS CLI only. In the following example, replace {{my-cluster}} with the name of your local cluster.
 
-```
+```bash
 aws eks describe-cluster --name my-cluster --query 'cluster.health'
 ```
 
 An example output is as follows.
 
-```
+```json
 {
     "issues": [
         {
@@ -140,7 +140,7 @@ When an Outpost gets disconnected from the AWS Region that it’s associated wit
 
 When the Amazon EKS control plane instances aren’t reachable through AWS Systems Manager (Systems Manager), Amazon EKS displays the following error for your cluster.
 
-```
+```bash
 Amazon EKS control plane instances are not reachable through SSM. Please verify your SSM and network configuration, and reference the EKS on Outposts troubleshooting documentation.
 ```
 

@@ -49,7 +49,7 @@ For more information, see [Creating IAM roles](https://docs.aws.amazon.com/IAM/l
 **Tools for PowerShell V4**
 **Example 1: This example updates the IAM role named `ClientRole` with a new trust policy, the contents of which come from the file `ClientRolePolicy.json`. Note that you must use the `-Raw` switch parameter to successfully process the contents of the JSON file.**
 
-```
+```powershell
 Update-IAMAssumeRolePolicy -RoleName ClientRole -PolicyDocument (Get-Content -raw ClientRolePolicy.json)
 ```
 +  For API details, see [UpdateAssumeRolePolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -57,7 +57,7 @@ Update-IAMAssumeRolePolicy -RoleName ClientRole -PolicyDocument (Get-Content -ra
 **Tools for PowerShell V5**
 **Example 1: This example updates the IAM role named `ClientRole` with a new trust policy, the contents of which come from the file `ClientRolePolicy.json`. Note that you must use the `-Raw` switch parameter to successfully process the contents of the JSON file.**
 
-```
+```powershell
 Update-IAMAssumeRolePolicy -RoleName ClientRole -PolicyDocument (Get-Content -raw ClientRolePolicy.json)
 ```
 +  For API details, see [UpdateAssumeRolePolicy](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

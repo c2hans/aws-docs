@@ -8,7 +8,7 @@ This guide documents the new AWS Wickr administration console, released on March
 
 When a user edits a previously sent message, the **edit** object contains the updated text and a reference to the original message.
 
-```
+```json
 {
   "edit": {
     "originalmessageid": "84da42d05f6811f19b07b1408476c2f4",

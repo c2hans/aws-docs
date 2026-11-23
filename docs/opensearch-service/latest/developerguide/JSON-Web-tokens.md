@@ -26,7 +26,7 @@ Before you can configure your domain to use JWT authentication and authorization
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -138,7 +138,7 @@ POST https://es.{{us-east-1}}.amazonaws.com/2021-01-01/opensearch/domain/{{my-do
 
 When using a JWKS endpoint, your JWT header must include a key ID (`kid`) that identifies the specific key to use for verification:
 
-```
+```json
 {
   "alg": "RS256",
   "typ": "JWT",
@@ -160,7 +160,7 @@ If you specified a custom subject key or roles key for your JWT, you must use th
 
 The following is an example of how to use a JWT token to access OpenSearch Service through your domain's search endpoint:
 
-```
+```cURL
 curl -XGET "$search_endpoint" -H "Authorization: Bearer <JWT>"
 ```
 
@@ -169,7 +169,7 @@ curl -XGET "$search_endpoint" -H "Authorization: Bearer <JWT>"
 
 The following AWS CLI command enables JWT authentication and authorization for OpenSearch provided that the domain exists:
 
-```
+```json
 aws opensearch update-domain-config --domain-name <your_domain_name> --advanced-security-options '{"JWTOptions":{"Enabled":true, "PublicKey": "<your_public_key>", "SubjectKey": "<your_subject_key>", "RolesKey": "<your_roles_key>"}}'
 ```
 
@@ -178,7 +178,7 @@ aws opensearch update-domain-config --domain-name <your_domain_name> --advanced-
 
 The following request to the configuration API enables JWT authentication and authorization for OpenSearch on an existing domain:
 
-```
+```json
 POST https://es.us-east-1.amazonaws.com/2021-01-01/opensearch/domain/my-domain/config
 {
   "AdvancedSecurityOptions": {

@@ -24,14 +24,14 @@ CodeArtifact returns the original npmjs.org publish timestamp for every version 
 
 **Request:**
 
-```
+```bash
 curl -H "Authorization: Bearer $CODEARTIFACT_AUTH_TOKEN" \
   https://my-domain-111122223333.d.codeartifact.us-east-1.amazonaws.com/npm/my-repo/axios
 ```
 
 **Response (abbreviated):**
 
-```
+```json
 {
   "name": "axios",
   "time": {
@@ -53,7 +53,7 @@ For Maven artifacts, CodeArtifact returns the original Maven Central publish tim
 
 **Request:**
 
-```
+```bash
 curl -I -H "Authorization: Bearer $CODEARTIFACT_AUTH_TOKEN" \
   https://my-domain-111122223333.d.codeartifact.us-east-1.amazonaws.com/maven/my-repo/\
 org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.pom
@@ -80,7 +80,7 @@ For NuGet packages, CodeArtifact returns the original nuget.org publish timestam
 
 **Request:**
 
-```
+```bash
 curl -H "Authorization: Bearer $CODEARTIFACT_AUTH_TOKEN" \
   https://my-domain-111122223333.d.codeartifact.us-east-1.amazonaws.com/nuget/my-repo/\
 v3/registration4/newtonsoft.json/index.json
@@ -88,7 +88,7 @@ v3/registration4/newtonsoft.json/index.json
 
 **Response (abbreviated, showing one version):**
 
-```
+```json
 {
   "items": [{
     "items": [{
@@ -112,7 +112,7 @@ For Cargo crates pulled from crates.io, CodeArtifact preserves the original publ
 
 **Request:**
 
-```
+```bash
 curl -H "Authorization: Bearer $CODEARTIFACT_AUTH_TOKEN" \
   https://my-domain-111122223333.d.codeartifact.us-east-1.amazonaws.com/cargo/my-repo/\
 api/v1/crates/serde/versions
@@ -130,7 +130,7 @@ For Python packages, CodeArtifact supports PEP 691 (JSON Simple API) and PEP 700
 
 **Request:**
 
-```
+```bash
 curl -H "Authorization: Bearer $CODEARTIFACT_AUTH_TOKEN" \
   -H "Accept: application/vnd.pypi.simple.v1+json" \
   https://my-domain-111122223333.d.codeartifact.us-east-1.amazonaws.com/pypi/my-repo/simple/requests/
@@ -138,7 +138,7 @@ curl -H "Authorization: Bearer $CODEARTIFACT_AUTH_TOKEN" \
 
 **Response (abbreviated):**
 
-```
+```json
 {
   "files": [{
     "filename": "requests-2.31.0-py3-none-any.whl",
@@ -151,7 +151,7 @@ curl -H "Authorization: Bearer $CODEARTIFACT_AUTH_TOKEN" \
 
 **Key field:** `upload-time` — this is the original publish date from PyPI. Tools such as `uv` support this natively:
 
-```
+```bash
 # Only install versions published before a specific date
 uv pip install --exclude-newer 2026-05-01T00:00:00Z -r requirements.txt
 ```
@@ -165,7 +165,7 @@ For distribution files ingested before per-artifact upload-time capture was intr
 
 The following Python script reads a `package-lock.json` file, queries CodeArtifact for the publish timestamp of each dependency, and exits with a non-zero status if any version was published within the quarantine window.
 
-```
+```python
 #!/usr/bin/env python3
 """
 gate_package_age.py - Block npm packages published too recently.
@@ -223,7 +223,7 @@ print(f"PASSED: all {checked} packages older than {quarantine_hours} hours.")
 
 **CI/CD integration:**
 
-```
+```bash
 # Step 1: Authenticate
 export CODEARTIFACT_AUTH_TOKEN=$(aws codeartifact get-authorization-token \
   --domain my-domain --domain-owner 111122223333 \

@@ -19,7 +19,7 @@ By default, you can only view your own queries. To view queries owned by other u
 
 To grant the privilege to view queries owned by all users to a database user or role, run the following commands:
 
-```
+```sql
 grant role sys:monitor to "IAM:{{role-name}}";
 grant role sys:monitor to "IAM:{{user-name}}";
 ```
@@ -43,7 +43,7 @@ To update the IAM role used for query monitoring, do the following:
 
 To add database credentials to a user, run the following command:
 
-```
+```sql
 grant role sys:monitor to {{<username>}}
 ```
 

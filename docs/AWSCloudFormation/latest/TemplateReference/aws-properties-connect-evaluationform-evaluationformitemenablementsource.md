@@ -35,14 +35,18 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-connect-evaluationform-evaluationformitemenablementsource-properties"></a>
 
 `RefId`  <a name="cfn-connect-evaluationform-evaluationformitemenablementsource-refid"></a>
-A referenceId of the source item.
+A referenceId of the source item. Use when `Type` is `QUESTION_REF_ID`.
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9._-]{1,40}$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Type`  <a name="cfn-connect-evaluationform-evaluationformitemenablementsource-type"></a>
-A type of source item.
+A type of source item. Valid values:
++ `QUESTION_REF_ID` - The answer to another question in the evaluation form.
++ `CONTACT` - Data from the evaluated contact.
++ `EVALUATION_METADATA` - Metadata of the evaluation, such as the evaluation type.
++ `AI_METRICS` - Metrics about AI agents, AI sessions, and AI tools on the contact.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `QUESTION_REF_ID`

@@ -63,7 +63,7 @@ Supports CORS preflight requests.
 #### GET schema
 <a name="search-request-body-get-example"></a>
 
-```
+```json
 {
   "queue": "string",
   "status": enum,
@@ -80,7 +80,7 @@ Supports CORS preflight requests.
 #### SearchJobsResponse schema
 <a name="search-response-body-searchjobsresponse-example"></a>
 
-```
+```json
 {
   "jobs": [
     {
@@ -1779,7 +1779,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="search-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

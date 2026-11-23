@@ -41,7 +41,7 @@ The following is an example policy of how to provide IAM permissions to access a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -114,7 +114,7 @@ To access tables registered with AWS Lake Formation, the following configuration
 
  To access tables registered with AWS Lake Formation, you need to explicitly configure your Spark session to use AWS Lake Formation credentials. Add the following configurations when initializing your Spark session:
 
-```
+```python
 from pyspark.sql import SparkSession
 
 # Initialize Spark session with Lake Formation configurations
@@ -180,7 +180,7 @@ AWS Glue 5.0 supports full-table access (FTA) control in Apache Spark based on y
 #### Apache Iceberg Table Example
 <a name="implementation"></a>
 
-```
+```python
 from pyspark.sql import SparkSession
 
 catalog_name = "spark_catalog"
@@ -213,7 +213,7 @@ df.show()
 
 Your AWS Glue job execution role must have:
 
-```
+```json
 {
     "Action": "lakeformation:GetDataAccess",
     "Resource": "*",
@@ -251,7 +251,7 @@ The IAM role executing your Glue job must have:
 #### Example DynamicFrame Implementation in AWS Glue 5.0
 <a name="example-dynamicframe-implementation"></a>
 
-```
+```python
 from awsglue.context import GlueContext
 from pyspark.context import SparkContext
 

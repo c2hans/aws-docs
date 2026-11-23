@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/logging.h
 
 The AWS SDK for C\+\+ includes configurable logging that generates a record of actions performed by the SDK during execution. To enable logging, set the `LogLevel` of `SDKOptions` to the appropriate verbosity for your application.
 
-```
+```cpp
     Aws::SDKOptions options;
     options.loggingOptions.logLevel = Aws::Utils::Logging::LogLevel::Info;
 ```
@@ -21,14 +21,14 @@ In the previous example, the CRT will inherit `LogLevel::Info` and also log mess
 
 You can independently control the logging for the CRT libraries, either by redirecting its output to a separate log file, or by setting a different log level for messages from the CRT. Often it can be beneficial to reduce the verbosity of the CRT libraries so that they don’t overwhelm the logs. For example, the log level for *only* the CRT output can be set to `Warn` as follows:
 
-```
+```cpp
 options.loggingOptions.crt_logger_create_fn =
     [](){ return Aws::MakeShared<Aws::Utils::Logging::DefaultCRTLogSystem>("CRTLogSystem", Aws::Utils::Logging::LogLevel::Warn); };
 ```
 
 By optionally using the method `InitializeAWSLogging`, you can control the verbosity level and the log output of the `DefaultLogSystem`. You can configure the log filename prefix, or redirect the output to a stream instead of a file.
 
-```
+```cpp
 Aws::Utils::Logging::InitializeAWSLogging(
     Aws::MakeShared<Aws::Utils::Logging::DefaultLogSystem>(
         "RunUnitTests", Aws::Utils::Logging::LogLevel::Trace, "aws_sdk_"));
@@ -36,19 +36,19 @@ Aws::Utils::Logging::InitializeAWSLogging(
 
 Alternatively, instead of using the `DefaultLogSystem`, you can also use this method to provide your own logging implementation.
 
-```
+```cpp
 InitializeAWSLogging(Aws::MakeShared<CustomLoggingSystem>());
 ```
 
 If you call method `InitializeAWSLogging`, free resources at the end of your program by calling `ShutdownAWSLogging`.
 
-```
+```cpp
 Aws::Utils::Logging::ShutdownAWSLogging();
 ```
 
  **Example integration test with logging**
 
-```
+```cpp
 #include <aws/external/gtest.h>
 
 #include <aws/core/utils/memory/stl/AWSString.h>
@@ -75,7 +75,7 @@ int main(int argc, char** argv)
 
  `Aws::Utils::Logging::DefaultLogSystem` is one of several classes in the AWS SDK for C\+\+ that subclass `Aws::Utils::Logging::LogSystemInterface` for custom logging.
 
-```
+```cpp
 class LogSystemOverride : public Aws::Utils::Logging::DefaultLogSystem {
 public:
     explicit LogSystemOverride(Aws::Utils::Logging::LogLevel logLevel,
@@ -110,7 +110,7 @@ private:
 };
 ```
 
-```
+```cpp
 int main(int argc, char **argv) {
     Aws::SDKOptions options;
     options.loggingOptions.logLevel = Aws::Utils::Logging::LogLevel::Trace;

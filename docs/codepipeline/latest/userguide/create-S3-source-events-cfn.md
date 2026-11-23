@@ -19,7 +19,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ YAML ]
 
-```
+```yaml
   AppPipeline:
     Type: AWS::CodePipeline::Pipeline
     Properties:
@@ -50,7 +50,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ JSON ]
 
-```
+```json
         "AppPipeline": {
             "Type": "AWS::CodePipeline::Pipeline",
             "Properties": {
@@ -104,7 +104,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      EventRole:
        Type: AWS::IAM::Role
        Properties:
@@ -135,7 +135,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ JSON ]
 
-   ```
+   ```json
      "EventRole": {
        "Type": "AWS::IAM::Role",
        "Properties": {
@@ -194,7 +194,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      EventRule:
        Type: AWS::Events::Rule
        Properties:
@@ -223,7 +223,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ JSON ]
 
-   ```
+   ```json
      "EventRule": {
        "Type": "AWS::Events::Rule",
        "Properties": {
@@ -302,7 +302,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 ------
 #### [ YAML ]
 
-  ```
+  ```yaml
             Name: Source
             Actions:
               -
@@ -324,7 +324,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 ------
 #### [ JSON ]
 
-  ```
+  ```json
    {
       "Name": "SourceAction",
       "ActionTypeId": {
@@ -357,7 +357,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 When you use CloudFormation to create these resources, your pipeline is triggered when files in your repository are created or updated.
 Do not stop here. Although your pipeline is created, you must create a second CloudFormation template for your Amazon S3 pipeline. If you do not create the second template, your pipeline does not have any change detection functionality.
 
-```
+```yaml
 Parameters:
   SourceObjectKey:
     Description: 'S3 source artifact'
@@ -577,7 +577,7 @@ Resources:
 ```
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

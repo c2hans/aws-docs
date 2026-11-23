@@ -35,7 +35,7 @@ You must use the **Render Amazon ECS task definition** action with the **build**
 
 1. The **build** action builds your Docker image and tags it with a name, a commit ID, timestamp, or other dynamic content. For example, your build action might look like this:
 
-   ```
+   ```yaml
    MyECSWorkflow
      Actions:
        BuildAction:
@@ -54,7 +54,7 @@ You must use the **Render Amazon ECS task definition** action with the **build**
 
 1. The **Render Amazon ECS task definition** action adds the dynamically generated image name, `MyDockerImage:a37bd7e`, to your task definition file, like this:
 
-   ```
+   ```yaml
    {
        "executionRoleArn": "arn:aws:iam::account_ID:role/codecatalyst-ecs-task-execution-role",
        "containerDefinitions": [
@@ -78,7 +78,7 @@ You must use the **Render Amazon ECS task definition** action with the **build**
 
    Optionally, you can also have the **Render Amazon ECS task definition** action add environment variables to the task definition, like this:
 
-   ```
+   ```yaml
    {
      "executionRoleArn": "arn:aws:iam::account_ID:role/codecatalyst-ecs-task-execution-role",
      "containerDefinitions": [

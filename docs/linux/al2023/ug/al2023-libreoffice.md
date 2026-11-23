@@ -32,7 +32,7 @@ LibreOffice is officially tested and supported on AL2023 by The Document Foundat
 
 Run the following command to identify your processor architecture. This determines which RPM package to download.
 
-```
+```bash
 uname -p
 ```
 
@@ -56,7 +56,7 @@ The output is one of the following:
 
 1. Download the `.tar.gz` archive to your instance. You can use `wget` or `curl` to download directly from the terminal.
 
-   ```
+   ```bash
    cd ~/Downloads
    wget https://download.documentfoundation.org/libreoffice/stable/{{VERSION}}/rpm/{{ARCHITECTURE}}/LibreOffice_{{VERSION}}_Linux_{{ARCHITECTURE}}_rpm.tar.gz
    ```
@@ -70,7 +70,7 @@ To find the latest stable version number, visit the [LibreOffice download page](
 
 Navigate to the directory where you downloaded the archive and extract it.
 
-```
+```bash
 cd ~/Downloads
 tar zxvf LibreOffice_{{VERSION}}_Linux_{{ARCHITECTURE}}_rpm.tar.gz
 ```
@@ -84,19 +84,19 @@ This creates a directory with a name similar to `LibreOffice_{{VERSION}}_Linux_{
 
 1. Change to the `RPMS/` subdirectory inside the extracted folder.
 
-   ```
+   ```bash
    cd LibreOffice_{{VERSION}}_Linux_{{ARCHITECTURE}}_rpm/RPMS/
    ```
 
 1. Install all RPM packages using `sudo rpm`.
 
-   ```
+   ```bash
    sudo rpm -i *.rpm
    ```
 
    Alternatively, you can use `dnf` for dependency resolution:
 
-   ```
+   ```bash
    sudo dnf install -y *.rpm
    ```
 
@@ -105,7 +105,7 @@ This creates a directory with a name similar to `LibreOffice_{{VERSION}}_Linux_{
 
 Confirm that LibreOffice was installed successfully by checking the version.
 
-```
+```bash
 libreoffice --version
 ```
 
@@ -121,13 +121,13 @@ LibreOffice {{VERSION}} ...
 **From the terminal**
 Run the following command:
 
-```
+```bash
 libreoffice
 ```
 
 If the `libreoffice` command is not available, the binary may be versioned. You can launch it using the versioned name instead:
 
-```
+```bash
 libreoffice{{MAJOR_VERSION}}
 ```
 
@@ -135,7 +135,7 @@ For example, `libreoffice25.2`.
 
 To launch a specific application directly:
 
-```
+```bash
 libreoffice --writer    # Word processor
 libreoffice --calc      # Spreadsheet
 libreoffice --impress   # Presentations
@@ -157,7 +157,7 @@ The following section can help you troubleshoot common issues when installing or
 
 Some LibreOffice features (such as Base and certain extensions) require a Java Runtime Environment (JRE). If you see a warning about missing Java, install it:
 
-```
+```bash
 sudo dnf install -y java-17-amazon-corretto-headless
 ```
 
@@ -168,13 +168,13 @@ Then, in LibreOffice, go to **Tools** > **Options** > **LibreOffice** > **Advanc
 
 If the `libreoffice` command is not found after installation, the binary may be versioned. Try running:
 
-```
+```bash
 libreoffice{{MAJOR_VERSION}}
 ```
 
 For example, `libreoffice25.2`. You can also locate the binary:
 
-```
+```bash
 find /opt -name "soffice" 2>/dev/null
 ```
 

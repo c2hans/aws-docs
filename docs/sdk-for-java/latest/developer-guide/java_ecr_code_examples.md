@@ -28,7 +28,7 @@ The following code example shows how to get started using Amazon ECR.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecr#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ecr.EcrClient;
 import software.amazon.awssdk.services.ecr.model.EcrException;
@@ -92,7 +92,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecr#code-examples).
 Run an interactive scenario demonstrating Amazon ECR features.
 
-```
+```java
 import software.amazon.awssdk.services.ecr.model.EcrException;
 import software.amazon.awssdk.services.ecr.model.RepositoryPolicyNotFoundException;
 
@@ -455,7 +455,7 @@ public class ECRScenario {
 ```
 A wrapper class for Amazon ECR SDK methods.
 
-```
+```java
 import com.github.dockerjava.api.DockerClient;
 import com.github.dockerjava.api.exception.DockerClientException;
 import com.github.dockerjava.api.model.AuthConfig;
@@ -975,7 +975,7 @@ The following code example shows how to use `CreateRepository`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecr#code-examples).
 
-```
+```java
     /**
      * Creates an Amazon Elastic Container Registry (Amazon ECR) repository.
      *
@@ -1031,7 +1031,7 @@ The following code example shows how to use `DeleteRepository`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecr#code-examples).
 
-```
+```java
     /**
      * Deletes an ECR (Elastic Container Registry) repository.
      *
@@ -1078,7 +1078,7 @@ The following code example shows how to use `DescribeImages`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecr#code-examples).
 
-```
+```java
     /**
      * Verifies the existence of an image in an Amazon Elastic Container Registry (Amazon ECR) repository asynchronously.
      *
@@ -1127,7 +1127,7 @@ The following code example shows how to use `DescribeRepositories`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecr#code-examples).
 
-```
+```java
     /**
      * Retrieves the repository URI for the specified repository name.
      *
@@ -1181,7 +1181,7 @@ The following code example shows how to use `GetAuthorizationToken`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecr#code-examples).
 
-```
+```java
     /**
      * Retrieves the authorization token for Amazon Elastic Container Registry (ECR).
      * This method makes an asynchronous call to the ECR client to retrieve the authorization token.
@@ -1222,7 +1222,7 @@ The following code example shows how to use `GetRepositoryPolicy`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecr#code-examples).
 
-```
+```java
     /**
      * Gets the repository policy for the specified repository.
      *
@@ -1266,7 +1266,7 @@ The following code example shows how to use `PushImageCmd`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecr#code-examples).
 
-```
+```java
     /**
      * Pushes a Docker image to an Amazon Elastic Container Registry (ECR) repository.
      *
@@ -1319,7 +1319,7 @@ The following code example shows how to use `SetRepositoryPolicy`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecr#code-examples).
 
-```
+```java
     /**
      * Sets the repository policy for the specified ECR repository.
      *
@@ -1383,7 +1383,7 @@ The following code example shows how to use `StartLifecyclePolicyPreview`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecr#code-examples).
 
-```
+```java
     /**
      * Verifies the existence of an image in an Amazon Elastic Container Registry (Amazon ECR) repository asynchronously.
      *

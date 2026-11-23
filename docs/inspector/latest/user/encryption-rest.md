@@ -46,7 +46,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/encryption-rest.ht
 **Note**
  Replace `{{account-id}}` with your 12-digit AWS account ID. Replace `{{Region}}` with the AWS Region where you enabled Amazon Inspector and Lambda code scanning. Replace `{{role-ARN}}` with the Amazon Resource Name for your IAM role.
 
-```
+```JSOM
 {
   "Effect": "Allow",
   "Principal": {

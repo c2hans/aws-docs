@@ -29,7 +29,7 @@ For more information, see [Using Python on Windows](https://docs.python.org/3/us
 **Tip**  <a name="tip-check-aws-cli-version"></a>
 You can run the following command to check the version of the AWS CLI that you have.
 
-  ```
+  ```bash
   aws --version
   ```
 

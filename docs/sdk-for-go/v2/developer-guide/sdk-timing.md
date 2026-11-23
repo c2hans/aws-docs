@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/sdk-timing
 
  The service used here is interchangeable - ALL service client options accept `APIOptions` and an `HTTPClient` as configuration. For example, `WithOperationTiming` could instead be declared as:
 
-```
+```go
 func WithOperationTiming(msgHandler func(string)) func(*s3.Options)
 func WithOperationTiming(msgHandler func(string)) func(*dynamodb.Options)
 // etc.
@@ -27,7 +27,7 @@ func WithOperationTiming(msgHandler func(string)) func(*dynamodb.Options)
 
  If you change it, be sure to change the signature of the function it returns as well.
 
-```
+```go
 import (
     "context"
     "fmt"

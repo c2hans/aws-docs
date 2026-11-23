@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of users for the Amazon Cognito user pool.
     /// </summary>
@@ -153,7 +153,7 @@ For more information, see [Managing and searching for users](https://docs.aws.am
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cognito#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cognitoidentityprovider.CognitoIdentityProviderClient;
 import software.amazon.awssdk.services.cognitoidentityprovider.model.CognitoIdentityProviderException;
@@ -244,7 +244,7 @@ public class ListUsers {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cognito-identity-provider#code-examples).
 
-```
+```javascript
 const listUsers = ({ userPoolId }) => {
   const client = new CognitoIdentityProviderClient({});
 
@@ -263,7 +263,7 @@ const listUsers = ({ userPoolId }) => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cognito#code-examples).
 
-```
+```kotlin
 suspend fun listAllUsers(userPoolId: String) {
     val request =
         ListUsersRequest {
@@ -286,7 +286,7 @@ suspend fun listAllUsers(userPoolId: String) {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cognito#code-examples).
 
-```
+```python
 class CognitoIdentityProviderWrapper:
     """Encapsulates Amazon Cognito actions"""
 
@@ -330,7 +330,7 @@ class CognitoIdentityProviderWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cgp#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_cgp->listusers(
           iv_userpoolid = iv_user_pool_id
@@ -355,7 +355,7 @@ class CognitoIdentityProviderWrapper:
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity-provider#code-examples).
 
-```
+```swift
         do {
             let output = try await cognitoClient.listUsers(
                 input: ListUsersInput(

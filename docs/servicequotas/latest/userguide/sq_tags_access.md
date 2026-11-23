@@ -13,7 +13,7 @@ For example, when you attach the following policy to an AWS Identity and Access 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

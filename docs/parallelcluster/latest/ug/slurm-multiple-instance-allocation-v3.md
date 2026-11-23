@@ -39,7 +39,7 @@ $ aws ec2 describe-instance-types --region {{region-id}} \
 
 The next example cluster configuration snippet shows how you can use these InstanceType and AllocationStrategy properties.
 
-```
+```json
 ...
  Scheduling:
   Scheduler: slurm

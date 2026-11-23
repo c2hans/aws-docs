@@ -90,7 +90,7 @@ For more information, see [View Spot Instance pricing history](https://docs.aws.
 **Tools for PowerShell V4**
 **Example 1: This example gets the last 10 entries in the Spot price history for the specified instance type and Availability Zone. Note that the value specified for the -AvailabilityZone parameter must be valid for the region value supplied to either the cmdlet's -Region parameter (not shown in the example) or set as default in the shell. This example command assumes a default region of 'us-west-2' has been set in the environment.**
 
-```
+```powershell
 Get-EC2SpotPriceHistory -InstanceType c3.large -AvailabilityZone us-west-2a -MaxResult 10
 ```
 **Output:**
@@ -120,7 +120,7 @@ Timestamp          : 12/25/2015 6:57:13 AM
 **Tools for PowerShell V5**
 **Example 1: This example gets the last 10 entries in the Spot price history for the specified instance type and Availability Zone. Note that the value specified for the -AvailabilityZone parameter must be valid for the region value supplied to either the cmdlet's -Region parameter (not shown in the example) or set as default in the shell. This example command assumes a default region of 'us-west-2' has been set in the environment.**
 
-```
+```powershell
 Get-EC2SpotPriceHistory -InstanceType c3.large -AvailabilityZone us-west-2a -MaxResult 10
 ```
 **Output:**

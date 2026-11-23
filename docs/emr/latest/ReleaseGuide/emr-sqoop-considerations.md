@@ -57,13 +57,13 @@ The preferred method encrypts the password with a Java KeyStore (JKS), eliminati
 
 1. Create a password alias. On prompt, enter the password that you use to access the database.
 
-   ```
+   ```bash,sh,zsh
    hadoop credential create mydb.password.alias -provider jceks://hdfs/user/root/mysql.password.jceks
    ```
 
 1. Use the password alias to launch the Sqoop job:
 
-   ```
+   ```bash,sh,zsh
    sqoop export -Dhadoop.security.credential.provider.path=jceks://hdfs/user/root/mysql.password.jceks --connect jdbc:mariadb://$HOSTNAME:3306/mydb --table mysqoopexport --export-dir s3://amzn-s3-demo-bucket/myinputfiles/ --driver org.mariadb.jdbc.Driver --username master --password-alias mydb.password.alias
    ```
 
@@ -74,13 +74,13 @@ You can use the `--password-file` command to pass the password through a file as
 
 1. Create a new file that contains the password:
 
-   ```
+   ```bash,sh,zsh
    echo -n 'Mymasterpass1' > /home/hadoop/mysql-pass.password
    ```
 
 1. Use the file to launch the Sqoop job:
 
-   ```
+   ```bash,sh,zsh
    sqoop export --connect jdbc:mariadb://$HOSTNAME:3306/mydb --table mysqoopexport --export-dir s3://amzn-s3-demo-bucket/myinputfiles/ --driver org.mariadb.jdbc.Driver --username master --password-file /home/hadoop/mysql-pass.password
    ```
 
@@ -89,7 +89,7 @@ You can use the `--password-file` command to pass the password through a file as
 
 You can use the `-P` command to enter the password through a prompt as shown in the following example:
 
-```
+```bash,sh,zsh
 sqoop export --connect jdbc:mariadb://$HOSTNAME:3306/mydb --table mysqoopexport --export-dir s3://amzn-s3-demo-bucket/myinputfiles/ --driver org.mariadb.jdbc.Driver --username master -P
 ```
 

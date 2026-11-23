@@ -48,7 +48,7 @@ The main application task, [ RunCoreMQTTAgentDemo](https://github.com/aws/amazon
 
 When you invoke a coreMQTT Agent API it creates a command that is sent to the agent task's queue, which is processed in `MQTTAgent_CommandLoop()`. At the time the command is created, optional completion callback and context parameters may be passed. Once the corresponding command is complete, the completion callback will be invoked with the passed context and any return values that were created as a result of the command. The signature for the completion callback is as follows:
 
-```
+```c
 typedef void (* MQTTAgentCommandCallback_t )( void * pCmdCallbackContext,
                                               MQTTAgentReturnInfo_t * pReturnInfo );
 ```

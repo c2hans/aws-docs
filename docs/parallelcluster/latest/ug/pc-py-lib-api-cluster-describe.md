@@ -6,7 +6,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 # `describe_cluster`
 
-```
+```python
 describe_cluster(cluster_name, region)
 ```
 

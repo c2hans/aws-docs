@@ -25,7 +25,7 @@ The allowed identifiers in these functions are:
 
 **Example of a SQL query using the listed functions:**
 
-```
+```SQL
 SELECT r.asset_id, r.int_value,
   date_add(DAY, 7, r.event_timestamp) AS date_in_future,
   date_sub(YEAR, 2, r.event_timestamp) AS date_in_past,

@@ -139,7 +139,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-kms-key-enable-rotation-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-EnableKMSKeyRotation",
   "Region": "us-east-1",
@@ -154,7 +154,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-kms-key-enable-rotation-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-EnableKMSKeyRotation",
   "Region": "us-east-1",

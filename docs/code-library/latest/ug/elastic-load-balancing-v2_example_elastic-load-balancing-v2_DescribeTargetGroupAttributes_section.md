@@ -87,7 +87,7 @@ For more information, see [Edit target group attributes for your Application Loa
 **Tools for PowerShell V4**
 **Example 1: This example describes the attributes of the specified Target Group.**
 
-```
+```powershell
 Get-ELB2TargetGroupAttribute -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970'
 ```
 **Output:**
@@ -107,7 +107,7 @@ load_balancing.algorithm.type         round_robin
 **Tools for PowerShell V5**
 **Example 1: This example describes the attributes of the specified Target Group.**
 
-```
+```powershell
 Get-ELB2TargetGroupAttribute -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970'
 ```
 **Output:**

@@ -30,7 +30,7 @@ Enable IAM roles for service accounts by completing the following procedures:
 **Note**
 If your cluster’s VPC has no outbound internet access and you haven’t set up private access to the cluster OIDC endpoint, operations that reach that endpoint from inside the VPC, such as creating an OIDC provider with `eksctl`, can’t resolve the OIDC issuer hostname. An example error message follows:
 
-   ```
+   ```bash
    server cant find oidc.eks.region.amazonaws.com: NXDOMAIN
    ```
 To reach the cluster OIDC endpoint privately from your VPC, create a VPC interface endpoint for it (`com.amazonaws.{{region-code}}.oidc-eks`) with private DNS enabled. For more information, see [Access Amazon EKS using AWS PrivateLink](vpc-interface-endpoints.md).

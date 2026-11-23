@@ -71,7 +71,7 @@ This function only pauses email sending in the AWS Region you select in this ste
 
 1. Under **Code source**, in the code editor, paste the following code:
 
-   ```
+   ```javascript
    'use strict';
 
    const { SES } = require("@aws-sdk/client-ses")
@@ -132,7 +132,7 @@ The procedures in this section re-enable email sending for your Amazon SES accou
 
    If you see the following output, then you have successfully re-enabled email sending for your account:
 
-   ```
+   ```json
    {
        "Enabled": true
    }
@@ -204,7 +204,7 @@ The procedures in this section are optional, but we recommend that you complete 
 
    If sending is enabled for your account, you see the following output:
 
-   ```
+   ```json
    {
        "Enabled": true
    }
@@ -224,7 +224,7 @@ When you execute this command, the status of the alarm switches from `OK` to `AL
 
    If the Lambda function executed successfully, you see the following output:
 
-   ```
+   ```json
    {
        "Enabled": false
    }

@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Permits connecting to the head node through an interactive session by using Amazon DCV.
 
-```
+```sh
 pcluster dcv-connect [-h]
                  --cluster-name {{CLUSTER_NAME}}
                 [--debug]

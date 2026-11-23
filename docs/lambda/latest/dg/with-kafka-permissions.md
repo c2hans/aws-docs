@@ -59,7 +59,7 @@ By default, Lambda is not permitted to perform the required or optional actions 
 
 ****
 
-```
+```json
 {
         "Version":"2012-10-17",
         "Statement":[

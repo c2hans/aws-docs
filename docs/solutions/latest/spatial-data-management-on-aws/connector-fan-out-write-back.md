@@ -21,7 +21,7 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
 
 The following connector publishes changed files through an AWS Lambda function in batches of up to 500, and writes each returned publish ID to the matching file’s `publishId` attribute:
 
-```
+```json
 {
   "schemaVersion": "1.0.0",
   "name": "Publish changed files",
@@ -159,7 +159,7 @@ When the steps include a `wait`, each file runs as its own connector invocation.
 
 The same pattern applies to any collection of files that each needs its own long-running job, such as video clips, scenes to render, or 3D models to optimize. For example, a connector can send each `.mp4` in an asset to an external processing system, wait for each processed file to appear in Amazon S3, and create a new asset from each result:
 
-```
+```json
 {
   "resources": ["asset"],
   "events": ["onDemand"],
@@ -220,7 +220,7 @@ The connector-level `fieldMappings` build the request body. Each mapping copies 
 
  `payload.fields` on the step chooses which mapped fields are sent. Here, both `Asset ID` and `S3 Objects` are sent. For a batch of two files, the following JSON shows the request body the Lambda function receives:
 
-```
+```json
 {
   "Asset ID": "asset-<id>",
   "S3 Objects": [
@@ -237,7 +237,7 @@ Field names can contain spaces, so you can match the external system’s own fie
 
 The function’s response describes the files it handled, but not in SDMA’s terms. A correlate mapping connects the two. The following JSON shows an example response returned by the function:
 
-```
+```json
 {
   "publishedFiles": [
     { "file_hash": "<hash-1>", "publishId": "pub-001" },
@@ -311,7 +311,7 @@ The function in this example must do only three things:
 
 The following Python code example shows a minimal Lambda handler:
 
-```
+```python
 import logging
 
 logger = logging.getLogger()

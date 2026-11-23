@@ -47,7 +47,7 @@ Policy actions in SageMaker AI use the following prefix before the action: `sage
 
 To specify multiple actions in a single statement, separate them with commas as follows:
 
-```
+```json
 "Action": [
       "sagemaker:action1",
       "sagemaker:action2"
@@ -56,7 +56,7 @@ To specify multiple actions in a single statement, separate them with commas as 
 
 You can specify multiple actions using wildcards (\*). For example, to specify all actions that begin with the word `Describe`, include the following action:
 
-```
+```json
 "Action": "sagemaker:Describe*"
 ```
 

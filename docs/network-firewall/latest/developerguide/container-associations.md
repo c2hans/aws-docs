@@ -70,7 +70,7 @@ After you create a container association, reference it in stateful rule groups a
 
 When you create or update a stateful rule group, add the container association ARN to the rule group's `ReferenceSets` configuration. This creates a named variable you can use in Suricata rules.
 
-```
+```bash
 aws network-firewall create-rule-group \
     --rule-group-name my-container-rules \
     --type STATEFUL \
@@ -107,7 +107,7 @@ To delete a container association that is in use:
 
 You can create a container association using the AWS Command Line Interface, AWS SDKs, or the Network Firewall console.
 
-```
+```bash
 aws network-firewall create-container-association \
     --container-association-name my-ecs-monitor \
     --type ECS \
@@ -128,7 +128,7 @@ You can update the monitoring configurations and description of a container asso
 + If you pass a `null` or omit the description, the existing description remains unchanged. If you pass an empty string, the description is cleared.
 + If you update monitoring configurations, Network Firewall automatically manages rules (Amazon ECS) or cluster subscriptions (Amazon EKS) for added and removed clusters.
 
-```
+```bash
 aws network-firewall update-container-association \
     --container-association-arn arn:aws:network-firewall:us-east-1:123456789012:container-association/my-ecs-monitor \
     --type ECS \
@@ -146,7 +146,7 @@ When you delete a container association, Network Firewall:
 
 Network Firewall deletes the container association asynchronously. The API returns immediately with `DELETING` status while cleanup proceeds in the background.
 
-```
+```bash
 aws network-firewall delete-container-association \
     --container-association-arn arn:aws:network-firewall:us-east-1:123456789012:container-association/my-ecs-monitor
 ```

@@ -33,7 +33,7 @@ To set up and run this example, you must first complete these tasks:
 
 Configure the SDK for JavaScript by creating a global configuration object then setting the Region for your code. In this example, the Region is set to `us-west-2`.
 
-```
+```javascript
 // Load the SDK for JavaScript
 var AWS = require('aws-sdk');
 // Set the Region
@@ -49,7 +49,7 @@ Create an `AWS.S3` service object. Create a function that retrieves the current 
 
 If the selected bucket has no website configuration, that information is returned to the callback function in the `err` parameter.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -87,7 +87,7 @@ Create a function that applies a bucket website configuration. The configuration
 
 Insert the values of the text input elements into the JSON object. Prepare the parameters for the `putBucketWebsite` method, including the name of the bucket and the JSON website configuration.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -142,7 +142,7 @@ Create a Node.js module with the file name `s3_deletebucketwebsite.js`. Make sur
 
 Create a function that deletes the website configuration for the selected bucket. The only parameter you need to pass when calling the `deleteBucketWebsite` method is the name of the selected bucket.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region

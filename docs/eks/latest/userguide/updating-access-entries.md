@@ -40,7 +40,7 @@ You can update an access entry using the AWS Management Console or the AWS CLI.
 
 1. To update an access entry Replace {{my-cluster}} with the name of your cluster, {{111122223333}} with your AWS account ID, and {{EKS-my-cluster-my-namespace-Viewers}} with the name of an IAM role.
 
-   ```
+   ```bash
    aws eks update-access-entry --cluster-name my-cluster --principal-arn arn:aws:iam::111122223333:role/EKS-my-cluster-my-namespace-Viewers --kubernetes-groups Viewers
    ```
 

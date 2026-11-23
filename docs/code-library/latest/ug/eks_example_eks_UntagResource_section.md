@@ -40,7 +40,7 @@ For more information, see [Organize Amazon EKS resources with tags](https://docs
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deletes specified tags from an EKS resource.**
 
-```
+```powershell
 Remove-EKSResourceTag -ResourceArn "arn:aws:eks:us-west-2:012345678912:cluster/PROD" -TagKey "Name"
 ```
 **Output:**
@@ -56,7 +56,7 @@ Performing the operation "Remove-EKSResourceTag (UntagResource)" on target "arn:
 **Tools for PowerShell V5**
 **Example 1: This cmdlet deletes specified tags from an EKS resource.**
 
-```
+```powershell
 Remove-EKSResourceTag -ResourceArn "arn:aws:eks:us-west-2:012345678912:cluster/PROD" -TagKey "Name"
 ```
 **Output:**

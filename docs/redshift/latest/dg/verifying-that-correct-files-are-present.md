@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/verifying-that-correc
 
 After you upload your files to your Amazon S3 bucket, we recommend listing the contents of the bucket to verify that all of the correct files are present and that no unwanted files are present. For example, if the bucket `amzn-s3-demo-bucket` holds a file named `venue.txt.back`, that file will be loaded, perhaps unintentionally, by the following command:
 
-```
+```sql
 COPY venue FROM 's3://amzn-s3-demo-bucket/venue' … ;
 ```
 

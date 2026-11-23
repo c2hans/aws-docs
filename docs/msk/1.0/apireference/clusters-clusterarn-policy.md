@@ -116,7 +116,7 @@ Enable CORS by returning correct headers.
 #### PUT schema
 <a name="clusters-clusterarn-policy-request-body-put-example"></a>
 
-```
+```json
 {
   "currentVersion": "string",
   "policy": "string"
@@ -129,7 +129,7 @@ Enable CORS by returning correct headers.
 #### GetClusterPolicyResponse schema
 <a name="clusters-clusterarn-policy-response-body-getclusterpolicyresponse-example"></a>
 
-```
+```json
 {
   "currentVersion": "string",
   "policy": "string"
@@ -139,7 +139,7 @@ Enable CORS by returning correct headers.
 #### PutClusterPolicyResponse schema
 <a name="clusters-clusterarn-policy-response-body-putclusterpolicyresponse-example"></a>
 
-```
+```json
 {
   "currentVersion": "string"
 }
@@ -148,7 +148,7 @@ Enable CORS by returning correct headers.
 #### DeleteClusterPolicyResponse schema
 <a name="clusters-clusterarn-policy-response-body-deleteclusterpolicyresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -156,7 +156,7 @@ Enable CORS by returning correct headers.
 #### Error schema
 <a name="clusters-clusterarn-policy-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

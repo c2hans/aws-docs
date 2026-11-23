@@ -27,7 +27,7 @@ Depending on the API and settings that you use to send email messages, you might
 **Email send**
 The JSON object for an *email send* event contains the data shown in the following example.
 
-```
+```json
 {
   "event_type": "_email.send",
   "event_timestamp": 1564618621380,
@@ -89,7 +89,7 @@ The JSON object for an *email send* event contains the data shown in the followi
 **Email delivered**
 The JSON object for an *email delivered* event contains the data shown in the following example.
 
-```
+```json
 {
   "event_type": "_email.delivered",
   "event_timestamp": 1564618621380,
@@ -156,7 +156,7 @@ The JSON object for an *email delivered* event contains the data shown in the fo
 **Email click**
 The JSON object for an *email click* event contains the data shown in the following example.
 
-```
+```json
 {
   "event_type": "_email.click",
   "event_timestamp": 1564618621380,
@@ -225,7 +225,7 @@ The JSON object for an *email click* event contains the data shown in the follow
 **Email open**
 The JSON object for an *email open* event contains the data shown in the following example.
 
-```
+```json
 {
   "event_type": "_email.open",
   "event_timestamp": 1564618621380,

@@ -13,7 +13,7 @@ For more information about triggers, see [Starting a workflow run automatically 
 
   In the following example, a push from any branch to `main` activates the workflow.
 
-  ```
+  ```yaml
   Triggers:
     - Type: PUSH
       Branches:
@@ -22,7 +22,7 @@ For more information about triggers, see [Starting a workflow run automatically 
 
   In the following example, a pull request from any branch into `main` activates the workflow.
 
-  ```
+  ```yaml
   Triggers:
     - Type: PULLREQUEST
       Branches:
@@ -37,7 +37,7 @@ For more information about triggers, see [Starting a workflow run automatically 
 
   Consider the following push trigger:
 
-  ```
+  ```yaml
   Triggers:
     - Type: PUSH
       Branches:
@@ -48,7 +48,7 @@ For more information about triggers, see [Starting a workflow run automatically 
 
   Consider also the following pull request trigger:
 
-  ```
+  ```yaml
   Triggers:
     - Type: PULLREQUEST
       Branches:

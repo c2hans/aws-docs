@@ -17,7 +17,7 @@ To create a Model Group by using Boto3, call the `create_model_package_group` AP
 
 First, import the required packages and set up the SageMaker AI Boto3 client.
 
-```
+```python
 import time
 import os
 from sagemaker.core.helper.session_helper import get_execution_role, session
@@ -32,7 +32,7 @@ sm_client = boto3.client('sagemaker', region_name=region)
 
 Now create the Model Group.
 
-```
+```python
 import time
 model_package_group_name = "scikit-iris-detector-" + str(round(time.time()))
 model_package_group_input_dict = {

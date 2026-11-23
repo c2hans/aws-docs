@@ -85,7 +85,7 @@ Also, if you modify a prompt for an evaluation dimension, the same prompt is app
 **Example of an updated prompt template using **Prompt template****  <a name="clarify-prompt-template"></a>
 Imagine a simple scenario where you have a simple dataset made up of only two prompts, and you want to evaluate them using ****meta-textgenerationneuron-llama-2-7b-f****.
 
-```
+```json
 {
 	"model_input": "Is himalaya the highest mountain in the world?",
     "target_output": "False, Mt. Everest is the highest mountain in the world",

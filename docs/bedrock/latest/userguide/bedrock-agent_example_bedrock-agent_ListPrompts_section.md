@@ -13,7 +13,7 @@ The following code example shows how to use `ListPrompts`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-agent#code-examples).
 List Amazon Bedrock managed prompts.
 
-```
+```python
 def list_prompts(client, max_results=10):
     """
     Lists Amazon Bedrock managed prompts.

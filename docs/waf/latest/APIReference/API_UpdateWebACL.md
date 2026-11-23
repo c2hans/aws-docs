@@ -30,6 +30,9 @@ The following are examples of the temporary inconsistencies that you might notic
 
 ```
 {
+   "AnalyticsConfig": {
+      "Mode": "{{string}}"
+   },
    "ApplicationConfig": {
       "Attributes": [
          {
@@ -393,6 +396,18 @@ The following are examples of the temporary inconsistencies that you might notic
                            "StatusCode": {
                               "FailureCodes": [ {{number}} ],
                               "SuccessCodes": [ {{number}} ]
+                           }
+                        }
+                     },
+                     "AWSManagedRulesAISecurityRuleSet": {
+                        "BedrockGuardrails": {
+                           "Disable": {
+                           },
+                           "ProtectRequestAndResponse": {
+                              "RoleArn": "{{string}}"
+                           },
+                           "ProtectRequestOnly": {
+                              "RoleArn": "{{string}}"
                            }
                         }
                      },
@@ -1081,6 +1096,11 @@ For information about the parameters that are common to all actions, see [Common
 
 The request accepts the following data in JSON format.
 
+ ** [AnalyticsConfig](#API_UpdateWebACL_RequestSyntax) **   <a name="WAF-UpdateWebACL-request-AnalyticsConfig"></a>
+Specifies the security analytics configuration for the web ACL. For more information, see [AnalyticsConfig](API_AnalyticsConfig.md).
+Type: [AnalyticsConfig](API_AnalyticsConfig.md) object
+Required: No
+
  ** [ApplicationConfig](#API_UpdateWebACL_RequestSyntax) **   <a name="WAF-UpdateWebACL-request-ApplicationConfig"></a>
 Configures the ability for the AWS WAF console to store and retrieve application attributes. Application attributes help AWS WAF give recommendations for protection packs.
 When using `UpdateWebACL`, `ApplicationConfig` follows these rules:
@@ -1091,9 +1111,9 @@ Required: No
 
  ** [AssociationConfig](#API_UpdateWebACL_RequestSyntax) **   <a name="WAF-UpdateWebACL-request-AssociationConfig"></a>
 Specifies custom configurations for the associations between the web ACL and protected resources.
-Use this to customize the maximum size of the request body that your protected resources forward to AWS WAF for inspection. You can customize this setting for CloudFront, API Gateway, Amazon Cognito, App Runner, or Verified Access resources. The default setting is 16 KB (16,384 bytes).
+Use this to customize the maximum size of the request body that your protected resources forward to AWS WAF for inspection. You can customize this setting for Application Load Balancer, CloudFront, API Gateway, Amazon Cognito, App Runner, or Verified Access resources. The default setting is 8 KB (8,192 bytes) for Application Load Balancer and 16 KB (16,384 bytes) for the other resource types.
 You are charged additional fees when your protected resources forward body sizes that are larger than the default. For more information, see [AWS WAF Pricing](http://aws.amazon.com/waf/pricing/).
-For Application Load Balancer and AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
+For AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
 You can also use this to have your CloudFront distributions insert the AWS WAF challenge JavaScript SDK into the HTML responses that they return. For more information, see the `ChallengeJavascriptSdkInjection` setting.
 Type: [AssociationConfig](API_AssociationConfig.md) object
 Required: No

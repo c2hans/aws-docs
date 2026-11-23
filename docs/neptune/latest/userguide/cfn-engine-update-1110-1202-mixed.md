@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/cfn-engine-upda
 
 Find the `DBCluster` that you want to upgrade, and the template you used to create it. For example:
 
-```
+```yaml
 Description: Base Template to create Neptune Stack with Engine Version 1.1.1.0 using custom Parameter Groups
 Parameters:
   DbInstanceType:
@@ -70,7 +70,7 @@ Outputs:
 
 The template should look like this:
 
-```
+```yaml
 Description: Template to update Neptune Stack to Engine Version 1.2.0.1 using custom and default Parameter Groups
 Parameters:
   DbInstanceType:

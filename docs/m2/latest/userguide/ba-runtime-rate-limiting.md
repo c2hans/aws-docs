@@ -173,7 +173,7 @@ application/json
 **Retry-After**
 Number of seconds to wait before retrying
 
-```
+```json
 {
   "error": "Rate limit exceeded",
   "message": "Too many requests. Try again later.",

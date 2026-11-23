@@ -19,7 +19,7 @@ If you enable metrics export in [CreateSecurityProfile](https://docs.aws.amazon.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -46,7 +46,7 @@ If you enable metrics export in [CreateSecurityProfile](https://docs.aws.amazon.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -74,7 +74,7 @@ You also need an IAM permissions policy attached to the IAM user that allows the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

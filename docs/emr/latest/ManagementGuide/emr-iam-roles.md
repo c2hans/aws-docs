@@ -35,7 +35,7 @@ The following table lists the IAM service roles associated with Amazon EMR for q
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

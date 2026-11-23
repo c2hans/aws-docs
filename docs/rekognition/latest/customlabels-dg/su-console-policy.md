@@ -21,7 +21,7 @@ To use the Amazon Rekognition Custom Labels console, you need the following IAM 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

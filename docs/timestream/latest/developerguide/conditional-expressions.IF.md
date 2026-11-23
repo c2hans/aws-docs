@@ -8,13 +8,13 @@ For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon
 
 The **IF** statement evaluates a condition to be true or false and returns the appropriate value. Timestream supports the following two syntax representations for **IF**:
 
-```
+```sql
 if(condition, true_value)
 ```
 
 This syntax evaluates and returns `true_value` if condition is `true`; otherwise `null` is returned and `true_value` is not evaluated.
 
-```
+```sql
 if(condition, true_value, false_value)
 ```
 
@@ -23,7 +23,7 @@ This syntax evaluates and returns `true_value` if condition is `true`, otherwise
 ## Examples
 <a name="conditional-expressions.IF.examples"></a>
 
-```
+```sql
 SELECT
   if(true, 'example 1'),
   if(false, 'example 2'),

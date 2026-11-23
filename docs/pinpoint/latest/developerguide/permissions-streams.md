@@ -35,7 +35,7 @@ If you haven't installed the AWS CLI, see [Installing the AWS CLI](https://docs.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -80,7 +80,7 @@ If you haven't installed the AWS CLI, see [Installing the AWS CLI](https://docs.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": {
@@ -108,7 +108,7 @@ If you haven't installed the AWS CLI, see [Installing the AWS CLI](https://docs.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": {

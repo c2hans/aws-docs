@@ -26,7 +26,7 @@ The following snippet deletes a key pair.
 
 The example [at the end of this topic](#delete-key-pairs-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to delete a key pair
     private static async Task DeleteKeyPair(IAmazonEC2 ec2Client, string keyName)
@@ -44,7 +44,7 @@ The following snippet displays a list of the available key pairs.
 
 The example [at the end of this topic](#delete-key-pairs-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to show the key pairs that are available
     private static async Task EnumerateKeyPairs(IAmazonEC2 ec2Client)
@@ -82,7 +82,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c21c15c13c19b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using Amazon.EC2;

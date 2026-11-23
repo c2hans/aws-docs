@@ -148,7 +148,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-management-account-offboard-application-account-ex-min"></a>
 
-```
+```json
 {
   "RequestType": "OffboardingExecution",
   "Parameters": {
@@ -163,7 +163,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-managed-management-account-offboard-application-account-ex-max"></a>
 
-```
+```json
 {
   "RequestType": "OffboardingExecution",
   "Parameters": {

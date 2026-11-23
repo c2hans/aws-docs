@@ -42,7 +42,7 @@ If *date1* and *date2* both contain the same date within a month (for example, 1
 
 The following example returns the months between 1/18/1969 and 3/18/1969.
 
-```
+```sql
 select months_between('1969-01-18', '1969-03-18')
 as months;
 
@@ -53,7 +53,7 @@ months
 
 The following example returns the months between 1/18/1969 and 1/18/1969.
 
-```
+```sql
 select months_between('1969-01-18', '1969-01-18')
 as months;
 
@@ -64,7 +64,7 @@ months
 
  The following example returns the months between the first and last showings of an event.
 
-```
+```sql
 select eventname,
 min(starttime) as first_show,
 max(starttime) as last_show,

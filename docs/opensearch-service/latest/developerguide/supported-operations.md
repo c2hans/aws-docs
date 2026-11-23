@@ -35,7 +35,7 @@ To support large clusters with total instance count of more than 200 across data
 
 OpenSearch Service only accepts PUT requests to the `_cluster/settings` API that use the "flat" settings form. It rejects requests that use the expanded settings form.
 
-```
+```json
 // Accepted
 PUT _cluster/settings
 {
@@ -65,7 +65,7 @@ GET https://{{domain-name}}.{{region}}.es.amazonaws.com/_cluster/settings?pretty
 
 Here is a return example:
 
-```
+```json
 {
   "persistent": {
     "cluster": {
@@ -102,7 +102,7 @@ The `_shrink` API can cause upgrades, configuration changes, and domain deletion
 
 If you use the `_shrink` API on other Elasticsearch or OpenSearch versions, make the following request before starting the shrink operation:
 
-```
+```json
 PUT https://{{domain-name}}.{{region}}.es.amazonaws.com/{{source-index}}/_settings
 {
   "settings": {
@@ -114,7 +114,7 @@ PUT https://{{domain-name}}.{{region}}.es.amazonaws.com/{{source-index}}/_settin
 
 Then make the following requests after completing the shrink operation:
 
-```
+```json
 PUT https://{{domain-name}}.{{region}}.es.amazonaws.com/{{source-index}}/_settings
 {
   "settings": {
@@ -139,7 +139,7 @@ Before you use the `_split` or `_clone` API, you must make the source index read
 
 On OpenSearch Service managed domains, use `index.blocks.read_only: true` instead. Make the following request before starting the split or clone operation:
 
-```
+```json
 PUT https://{{domain-name}}.{{region}}.es.amazonaws.com/{{source-index}}/_settings
 {
   "settings": {
@@ -150,7 +150,7 @@ PUT https://{{domain-name}}.{{region}}.es.amazonaws.com/{{source-index}}/_settin
 
 After the split or clone operation completes, remove the read-only block from both the source index and the new target index:
 
-```
+```json
 PUT https://{{domain-name}}.{{region}}.es.amazonaws.com/{{source-index}}/_settings
 {
   "settings": {

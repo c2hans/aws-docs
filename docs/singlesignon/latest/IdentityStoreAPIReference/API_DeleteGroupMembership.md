@@ -116,7 +116,7 @@ This example removes the specified user from the group.
 #### Sample Request
 <a name="API_DeleteGroupMembership_Example_1_Request"></a>
 
-```
+```json
 {
     "IdentityStoreId": "d-1234567890",
     "MembershipId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
@@ -126,7 +126,7 @@ This example removes the specified user from the group.
 #### Sample Response
 <a name="API_DeleteGroupMembership_Example_1_Response"></a>
 
-```
+```json
 No response
 ```
 

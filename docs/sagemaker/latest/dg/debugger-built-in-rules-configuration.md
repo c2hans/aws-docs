@@ -9,7 +9,7 @@ Amazon SageMaker Debugger is no longer open to new customers. Existing customers
 
 To specify Debugger built-in rules in an estimator, you need to configure a list object. The following example code shows the basic structure of listing the Debugger built-in rules:
 
-```
+```py
 from sagemaker.core.debugger import Rule, rule_configs
 
 rules=[

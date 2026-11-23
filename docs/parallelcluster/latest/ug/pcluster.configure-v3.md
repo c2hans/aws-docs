@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Begins an interactive configuration wizard for AWS ParallelCluster version 3. For more information, see [Configure and create a cluster with the AWS ParallelCluster command line interface](install-v3-configuring.md).
 
-```
+```sh
 pcluster configure [-h]
                  --config {{CONFIG}}
                 [--debug]

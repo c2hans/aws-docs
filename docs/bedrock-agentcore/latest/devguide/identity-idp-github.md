@@ -44,7 +44,7 @@ For more details, refer to Github’s documentation [Creating an OAuth app](http
 
 To configure the outbound GitHub resource provider, use the following:
 
-```
+```json
 {
         "name": "NAME",
         "credentialProviderVendor": "GithubOauth2",

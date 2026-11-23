@@ -42,7 +42,7 @@ For more information on dynamic data masking, go to [Dynamic data masking](t_ddm
 
 The following example shows that the `mask_credit_card_full` masking policy is attached to the `credit_db.public.credit_cards` table.
 
-```
+```sql
 select policy_name, database_name, relation_name, schema_name, relation_kind
 from sys_applied_masking_policy_log;
 

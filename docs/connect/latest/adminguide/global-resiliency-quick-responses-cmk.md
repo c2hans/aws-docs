@@ -18,7 +18,7 @@ When you create a knowledge base, include the Amazon Resource Name (ARN) of the 
 
 The following example shows `serverSideEncryptionConfiguration` with a replica key:
 
-```
+```json
 "serverSideEncryptionConfiguration": {
     "kmsKeyId": "arn:aws:kms:{{source-region}}:{{123456789012}}:key/{{source-key-id}}",
     "replicaKmsKeys": [
@@ -59,7 +59,7 @@ To register a replica key, you need `kms:GenerateDataKey` permission on the repl
 
 1. In the source Region, call the `RegisterKnowledgeBaseReplicaKey` API with the ARN of the replica key. The following AWS CLI command registers a replica key:
 
-   ```
+   ```bash
    aws qconnect register-knowledge-base-replica-key \
        --region {{source-region}} \
        --knowledge-base-id {{knowledge-base-id}} \
@@ -107,7 +107,7 @@ Without these permissions, replication of the encrypted knowledge base fails.
 
 In each Region, add the following JSON statement to the key policy of your customer managed key. Replace {{123456789012}} with the ID of the AWS account that contains your Connect Customer instance.
 
-```
+```json
 {
     "Sid": "AllowConnectSynchronization",
     "Effect": "Allow",

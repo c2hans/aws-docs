@@ -12,7 +12,7 @@ The recipe builds for Linux (`linux-64`) directly from GitHub releases. For Wind
 
 Submit the build from the `conda_recipes` directory:
 
-```
+```bash
 ./submit-package-job ayon-launcher
 ```
 

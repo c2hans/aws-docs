@@ -8,13 +8,13 @@ After your Solr S3 repository is ready, configure and run the migration from the
 
 1.  **Load the version-matched sample** as your starting point:
 
-   ```
+   ```bash
    workflow configure sample --load
    ```
 
 1.  **Edit the configuration.** Set the source version to your Solr version, point `snapshotInfo` at the Amazon S3 backup location, and set the target authentication. The following example lets the workflow create the Solr backup:
 
-   ```
+   ```json
    {
      "sourceClusters": {
        "source": {
@@ -86,7 +86,7 @@ After your Solr S3 repository is ready, configure and run the migration from the
 
      If you created and staged the Solr backup yourself, use an externally managed snapshot instead of `createSnapshotConfig`:
 
-     ```
+     ```json
      "snap1": {
        "config": {
          "externallyManagedSnapshotName": "BACKUP_NAME"
@@ -99,7 +99,7 @@ After your Solr S3 repository is ready, configure and run the migration from the
 
 1.  **Submit and monitor** the workflow:
 
-   ```
+   ```bash
    workflow submit
    workflow manage
    ```
@@ -108,7 +108,7 @@ After your Solr S3 repository is ready, configure and run the migration from the
 
 1.  **Validate** the document counts on the target after backfill completes:
 
-   ```
+   ```bash
    console clusters cat-indices --refresh
    ```
 

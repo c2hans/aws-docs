@@ -80,7 +80,7 @@ The base image of the operating system used in this sample is `mcr.microsoft.com
 
 `buildspec.yml` (in `{{(root directory name)}}`)
 
-```
+```yaml
 version: 0.2
 
 phases:

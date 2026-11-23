@@ -36,7 +36,7 @@ Users need to set `EnableUserBackgroundSession`** flag to `true` **, which will 
 
 **Example of using the AWS CLI:**
 
-```
+```bash,sh,zsh
 aws emr create-security-configuration --name "idc-userBackgroundSession-enabled-secConfig" \
 --region {{AWS_REGION}}  \
 --security-configuration ' \

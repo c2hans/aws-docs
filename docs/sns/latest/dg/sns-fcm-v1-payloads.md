@@ -25,7 +25,7 @@ If you are creating an FCM application for the first time, or wish to take advan
 **Note**
 The `GCM` key value used in the following example must be encoded as a String when publishing a notification using Amazon SNS.
 
-```
+```json
 {
   "GCM": "{
     \"fcmV1Message\": {
@@ -110,7 +110,7 @@ When migrating to FCM v1, you don't have to change the payload structure that yo
 
 Input message payload format:
 
-```
+```json
 {
   "GCM": "{\"notification\": {\"title\": \"string\", \"body\": \"string\", \"android_channel_id\": \"string\", \"body_loc_args\": [\"string\"], \"body_loc_key\": \"string\", \"click_action\": \"string\", \"color\": \"string\", \"icon\": \"string\", \"sound\": \"string\", \"tag\": \"string\", \"title_loc_args\": [\"string\"], \"title_loc_key\": \"string\"}, \"data\": {\"message\": \"priority message\"}}"
 }
@@ -118,7 +118,7 @@ Input message payload format:
 
 Message sent to Google:
 
-```
+```json
 {
   "message": {
     "token": "***",

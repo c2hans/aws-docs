@@ -52,7 +52,7 @@ The following image shows these settings in the Event pattern section of the new
 
 Following is an example of what the EventBridge payload looks like when **Contact Lens Post Call Rules Matched**.
 
-```
+```JSON
 {
  "version": "0", // set by EventBridge
  "id": "aaaaaaaa-bbbb-cccc-dddd-bf3703467718", // set by EventBridge
@@ -76,7 +76,7 @@ Following is an example of what the EventBridge payload looks like when **Contac
 
 Following is an example of what the payload looks like when **Contact Lens Realtime Rules Matched**.
 
-```
+```JSON
 {
  "version": "0", // set by EventBridge
  "id": "aaaaaaaa-bbbb-cccc-dddd-bf3703467718", // set by EventBridge

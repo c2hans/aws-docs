@@ -15,7 +15,7 @@ Enable a channel in Amazon Pinpoint by providing an app ID and a request object 
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.pinpoint.AmazonPinpoint;
 import com.amazonaws.services.pinpoint.AmazonPinpointClientBuilder;
 import com.amazonaws.services.pinpoint.model.APNSChannelRequest;
@@ -28,7 +28,7 @@ import com.amazonaws.services.pinpoint.model.UpdateApnsChannelResult;
 
  **Code**
 
-```
+```java
 APNSChannelRequest request = new APNSChannelRequest()
 		.withEnabled(enabled);
 

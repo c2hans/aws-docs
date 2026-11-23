@@ -102,7 +102,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
  When you use `GetResourcesV2` and filter by `ResourceSubCategory`, you must also include a `ResourceCategory` filter. Set the comparison to `EQUALS` and the value to `AI/ML`. This requirement also applies when you group by `ResourceSubCategory`, `ResourceInfo.AIDetails.HostResourceType`, or `ResourceInfo.AIDetails.CanonicalId` in `GetResourcesStatisticsV2`. Otherwise, the operation returns a `ValidationException`.
  The following example shows a valid filter combination:
 
-```
+```json
 {
     "Filters": {
         "CompositeFilters": [

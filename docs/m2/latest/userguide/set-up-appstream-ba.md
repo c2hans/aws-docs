@@ -59,7 +59,7 @@ Make sure to replace `amzn-s3-demo-bucket` with the actual name of the bucket th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

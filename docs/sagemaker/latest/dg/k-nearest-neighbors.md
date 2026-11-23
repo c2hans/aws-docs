@@ -33,7 +33,7 @@ For inference outputs, k-NN supports the `application/json` and `application/x-r
 
 For batch transform, k-NN supports the `application/jsonlines` data format for both input and output. An example input is as follows:
 
-```
+```json
 content-type: application/jsonlines
 
 {"features": [1.5, 16.0, 14.0, 23.0]}
@@ -42,7 +42,7 @@ content-type: application/jsonlines
 
 An example output is as follows:
 
-```
+```json
 accept: application/jsonlines
 
 {"predicted_label": 0.0}

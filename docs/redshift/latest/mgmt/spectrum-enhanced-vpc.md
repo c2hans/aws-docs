@@ -55,7 +55,7 @@ The following example bucket policy permits access to the specified bucket owned
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -91,7 +91,7 @@ The role attached to your cluster should have a trust relationship that permits 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

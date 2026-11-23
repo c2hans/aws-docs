@@ -50,7 +50,7 @@ You can delete the StackSet instances from the AWS Management Console or by usin
 
 Determine whether the AWS CLI is available in your environment. For installation instructions, see [What Is the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS CLI User Guide*. After confirming that the AWS CLI is available, run the following command.
 
-```
+```bash
 $ aws cloudformation delete-stack-instances -stack-set-name <installation-stackset-name> --regions <value>
 ```
 
@@ -67,7 +67,7 @@ This solution is configured to retain the solution-created DynamoDB table. Follo
 
 To delete the DynamoDB table using AWS CLI, run the following command:
 
-```
+```bash
 $ aws dynamodb delete-table <table-name>
 ```
 
@@ -84,6 +84,6 @@ This solution is configured to retain the solution-created customer managed keys
 
 To delete the customer managed keys using AWS CLI, run the following command:
 
-```
+```bash
 $ aws kms schedule-key-deletion --key-id <key-id>
 ```

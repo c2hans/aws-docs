@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsK
 
 **Example**
 
-```
+```JSON
 "AwsKinesisStream": {
 	"Name": "test-vir-kinesis-stream",
 	"Arn": "arn:aws:kinesis:us-east-1:293279581038:stream/test-vir-kinesis-stream",

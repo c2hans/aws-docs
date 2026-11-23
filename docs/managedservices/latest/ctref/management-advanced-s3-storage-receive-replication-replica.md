@@ -146,7 +146,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-s3-storage-receive-replication-replica-ex-min"></a>
 
-```
+```json
 {
     "DocumentName" : "AWSManagedServices-ReceiveReplicationReplica",
     "Region": "us-east-1",
@@ -161,7 +161,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-s3-storage-receive-replication-replica-ex-max"></a>
 
-```
+```json
 {
     "DocumentName" : "AWSManagedServices-ReceiveReplicationReplica",
     "Region": "us-east-1",

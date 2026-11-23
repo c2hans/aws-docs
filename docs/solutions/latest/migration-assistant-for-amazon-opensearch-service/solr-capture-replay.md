@@ -34,7 +34,7 @@ The Solr request transform provider requires your collection’s schema XML and 
 
 First, map each collection to its SolrCloud config set. The transform configuration uses the collection name as the key prefix, but the ZooKeeper path for `solrconfig.xml` uses the config set name:
 
-```
+```bash
 curl "http://SOLR_ENDPOINT:8983/solr/admin/collections?action=CLUSTERSTATUSwt=json" \
   | jq -r '.cluster.collections | to_entries[] | "\(.key)\t\(.value.configName)"'
 ```
@@ -43,7 +43,7 @@ If `jq` is not available, inspect `cluster.collections.COLLECTION.configName` in
 
  **Get schema XML:**
 
-```
+```bash
 curl "http://SOLR_ENDPOINT:8983/solr/COLLECTION/schema?wt=schema.xml"  COLLECTION-managed-schema.xml
 ```
 
@@ -54,14 +54,14 @@ The output file name is arbitrary. The important part is that the file contains 
 **Important**
 Do not use the `/config` REST endpoint as it returns JSON, which the transform provider cannot parse. Always retrieve `solrconfig.xml` from ZooKeeper.
 
-```
+```bash
 # From a host with access to ZooKeeper
 solr zk cp zk:/configs/CONFIGSET/solrconfig.xml /tmp/CONFIGSET-solrconfig.xml -z ZK_HOST:2181 2/dev/null
 ```
 
 If you are running Solr on Kubernetes within the same cluster as Migration Assistant:
 
-```
+```bash
 # Copy from ZK to a temp file inside the Solr pod
 kubectl exec -n NAMESPACE SOLR_POD -- bash -c \
   'solr zk cp zk:/configs/CONFIGSET/solrconfig.xml /tmp/CONFIGSET-solrconfig.xml -z ZK_HOST:2181 2/dev/null'
@@ -74,7 +74,7 @@ kubectl cp NAMESPACE/SOLR_POD:/tmp/CONFIGSET-solrconfig.xml ./CONFIGSET-solrconf
 
 Use one ConfigMap key per file. The ConfigMap key names are arbitrary, but the workflow `path` values in the next step must match them. These file names do not control transform routing; routing comes from the `context.values` key prefix, such as `products.solrSchemaXml` or `reviews.solrConfigXml`.
 
-```
+```bash
 kubectl create configmap solr-config -n ma \
   --from-file=products-managed-schema.xml=./products-managed-schema.xml \
   --from-file=products-solrconfig.xml=./products-solrconfig.xml \
@@ -89,12 +89,12 @@ Add a `traffic` section to your workflow configuration JSON. The traffic section
 
 For tuple audit output on Amazon EKS, configure the replayer to write directly to Amazon S3. The standard deployment creates a default bucket and mounts it read-only on the Migration Console pod at `/s3/artifacts`, so tuple objects written under the default `tuples/` prefix are visible from the console at `/s3/artifacts/tuples/`.
 
-```
+```bash
 kubectl get configmap migrations-default-s3-config -n ma \
   -o jsonpath='{.data.BUCKET_NAME}{"\n"}{.data.AWS_REGION}{"\n"}'
 ```
 
-```
+```json
 {
   "sourceClusters": {
     "source": {
@@ -289,7 +289,7 @@ If `tupleS3Bucket` is omitted, the replayer falls back to local tuple log files 
 
 From the Migration Console pod (`migration-console-0`) in the `ma` namespace:
 
-```
+```bash
 # Load the configuration
 workflow configure edit --stdin  /tmp/config.json
 
@@ -305,7 +305,7 @@ workflow submit
 
 After `workflow status` shows **Create Proxy: Succeeded**, retrieve the proxy endpoint:
 
-```
+```bash
 kubectl get svc solr-proxy -n ma -o jsonpath='{.status.loadBalancer.ingress[0].hostname}'
 ```
 
@@ -314,7 +314,7 @@ Update your application’s Solr connection URL to point to the capture proxy (f
 ## Step 5: Monitor replay progress
 <a name="solr-capture-monitor"></a>
 
-```
+```bash
 # Overall workflow status
 workflow status
 
@@ -334,7 +334,7 @@ Key metrics in replayer logs:
 ## Step 6: Validate and cut over
 <a name="solr-capture-validate"></a>
 
-```
+```bash
 # Check document count
 console clusters cat-indices --refresh
 
@@ -356,7 +356,7 @@ Before switching your application to point directly at OpenSearch:
 
 The replayer writes a complete audit trail of every request-response pair (tuples). When `tupleS3Bucket` is configured, inspect the gzip-compressed tuple objects from the Migration Console pod through the mounted default bucket:
 
-```
+```bash
 # List tuple files
 find /s3/artifacts/tuples -name 'tuples-*.log.gz' -print
 

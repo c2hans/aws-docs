@@ -33,7 +33,7 @@ You could read the following as: "If the resource being checked has a tag `"Requ
 In addition, the policy prevents these unauthorized users from tampering with the resources by using the `aws:TagKeys` condition key to not allow tag modification actions to include these same tag values. A customer's administrator must attach this IAM policy to unauthorized administrative users, in addition to the managed user policy.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -71,7 +71,7 @@ The `AWSCodePipeline_FullAccess` managed user policy gives users unlimited permi
 The following policy limits this power and denies unauthorized users permission to perform actions on specified project pipelines. To do that, it denies some actions if the resource has a tag named `Project` with one of the values `ProjectA` or `ProjectB`. (The `aws:ResourceTag` condition key is used to control access to the resources based on the tags on those resources.) A customer's administrator must attach this IAM policy to unauthorized IAM users, in addition to the managed user policy.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -97,7 +97,7 @@ To do that, it allows the `CreatePipeline` and `TagResource` actions if the requ
 The `aws:RequestTag` condition key is used to control which tags can be passed in an IAM request. The `aws:TagKeys` condition ensures tag key case sensitivity. This policy is useful for users or roles who don't have the `AWSCodePipeline_FullAccess` managed user policy attached. The managed policy gives users unlimited permission to perform any CodePipeline action on any resource.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -127,7 +127,7 @@ The following policy limits this power and denies unauthorized users permission 
 Also, the policy prevents these unauthorized users from tampering with the resources by using the `aws:TagKeys` condition key to not allow tag modification actions to completely remove the `Project` tag. A customer's administrator must attach this IAM policy to unauthorized users or roles, in addition to the managed user policy.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -78,7 +78,7 @@ The role that the user has assumed has successfully authenticated using SAML. Ho
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

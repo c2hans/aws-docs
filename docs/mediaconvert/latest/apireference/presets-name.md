@@ -116,7 +116,7 @@ Supports CORS preflight requests.
 #### GET schema
 <a name="presets-name-request-body-get-example"></a>
 
-```
+```json
 {
   "name": "string"
 }
@@ -125,7 +125,7 @@ Supports CORS preflight requests.
 #### PUT schema
 <a name="presets-name-request-body-put-example"></a>
 
-```
+```json
 {
   "description": "string",
   "category": "string",
@@ -1052,7 +1052,7 @@ Supports CORS preflight requests.
 #### DELETE schema
 <a name="presets-name-request-body-delete-example"></a>
 
-```
+```json
 {
   "name": "string"
 }
@@ -1064,7 +1064,7 @@ Supports CORS preflight requests.
 #### GetPresetResponse schema
 <a name="presets-name-response-body-getpresetresponse-example"></a>
 
-```
+```json
 {
   "preset": {
     "arn": "string",
@@ -1997,7 +1997,7 @@ Supports CORS preflight requests.
 #### UpdatePresetResponse schema
 <a name="presets-name-response-body-updatepresetresponse-example"></a>
 
-```
+```json
 {
   "preset": {
     "arn": "string",
@@ -2930,7 +2930,7 @@ Supports CORS preflight requests.
 #### DeletePresetResponse schema
 <a name="presets-name-response-body-deletepresetresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -2938,7 +2938,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="presets-name-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

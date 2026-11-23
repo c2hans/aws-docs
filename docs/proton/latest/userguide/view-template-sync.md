@@ -26,7 +26,7 @@ View template sync configuration detail data using the console or CLI.
 
 Run the following command.
 
-```
+```sh
 $ aws proton get-template-sync-config \
     --template-name "{{svc-template}}" \
     --template-type "{{SERVICE}}"
@@ -34,7 +34,7 @@ $ aws proton get-template-sync-config \
 
 The response is as follows.
 
-```
+```json
 {
     "templateSyncConfigDetails": {
         "branch": "main",
@@ -53,7 +53,7 @@ For `template-version`, enter the template major version.
 
 Run the following command.
 
-```
+```sh
 $ aws proton get-template-sync-status \
     --template-name "{{env-template}}" \
     --template-type "{{ENVIRONMENT}}" \

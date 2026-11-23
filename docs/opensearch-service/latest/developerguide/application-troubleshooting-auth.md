@@ -11,7 +11,7 @@ The following errors occur when a user cannot sign in to an OpenSearch UI applic
 
 A response of `{"status":403,"error":{"reason":"403 Forbidden","type":"Forbidden"}}` indicates that the IAM role is missing the `opensearch:ApplicationAccessAll` permission. Attach it to the role:
 
-```
+```sh
 aws iam put-role-policy \
     --role-name {{role-name}} \
     --policy-name OpenSearchAppAccess \
@@ -30,7 +30,7 @@ aws iam put-role-policy \
 
 This error appears in the AWS Management Console when a user opens the application from the console and the `es:GetApplication` permission is missing. It is required only for the console flow. Add the following JSON statement to the IAM policy:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "es:GetApplication",
@@ -48,7 +48,7 @@ A response of `HTTP 400` with the header `x-aoss-response-hint: X01:gw-helper-de
 
 If requests to dashboard pages return `401`, the dashboard administrator is not configured on the application. Configure it with the following command:
 
-```
+```sh
 aws opensearch update-application \
     --id {{application-id}} \
     --app-configs '[{"key":"opensearchDashboards.dashboardAdmin.users","value":"*"}]' \

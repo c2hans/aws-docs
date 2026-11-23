@@ -28,7 +28,7 @@ The following permissions policy is a necessary component of any policy that is 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -55,7 +55,7 @@ You use the following role trust policy for creating import jobs for Snowball Ed
 
 ****
 
-```
+```json
                     {
     "Version":"2012-10-17",
     "Statement": [
@@ -156,7 +156,7 @@ You use the following role trust policy for creating export jobs for Snowball Ed
 
 ****
 
-```
+```json
                     {
     "Version":"2012-10-17",
     "Statement": [
@@ -245,7 +245,7 @@ The following expected role trust policy is a necessary for an existing service 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

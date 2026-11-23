@@ -70,7 +70,7 @@ Update your applications to use the latest version of the [Amazon.Extensions.S3.
 
 1. Ensure your `using` statements reference the correct namespace:
 
-   ```
+   ```csharp
    using Amazon.Extensions.S3.Encryption;
    using Amazon.Extensions.S3.Encryption.Primitives;
    ```
@@ -115,7 +115,7 @@ The migration from V2 to V4 follows a structured 4-step process to ensure compat
 
 This represents your existing V2 client configuration. This step demonstrates the starting state before migration.
 
-```
+```csharp
 using Amazon.Extensions.S3.Encryption;
 using Amazon.Extensions.S3.Encryption.Primitives;
 using Amazon.S3.Model;
@@ -144,7 +144,7 @@ await encryptionClient.PutObjectAsync(new PutObjectRequest
 
 Migrate to the V4 client while maintaining identical behavior to V2. This step uses `FORBID_ENCRYPT_ALLOW_DECRYPT` policy to encrypt without commitment and allow decryption of all objects.
 
-```
+```csharp
 using Amazon.Extensions.S3.Encryption;
 using Amazon.Extensions.S3.Encryption.Primitives;
 using Amazon.S3.Model;
@@ -179,7 +179,7 @@ Start encrypting with key commitment while maintaining backward compatibility fo
 **Warning**
 Before deploying Step 2, ensure all readers have been updated to Step 1 or later to handle key commitment encryption.
 
-```
+```csharp
 using Amazon.Extensions.S3.Encryption;
 using Amazon.Extensions.S3.Encryption.Primitives;
 using Amazon.S3.Model;
@@ -214,7 +214,7 @@ Require key commitment for both encryption and decryption. This step uses `REQUI
 **Warning**
 Before deploying Step 3, ensure all objects in your system have been re-encrypted with key commitment (Step 2). This step will fail to decrypt objects encrypted without commitment.
 
-```
+```csharp
 using Amazon.Extensions.S3.Encryption;
 using Amazon.Extensions.S3.Encryption.Primitives;
 using Amazon.S3.Model;
@@ -251,7 +251,7 @@ This section provides additional examples for configuring V4 clients with differ
 
 To enable V4 clients to read objects encrypted by V1 and V2 clients, configure the client with a commitment policy that allows legacy decryption:
 
-```
+```csharp
 using Amazon.Extensions.S3.Encryption;
 using Amazon.Extensions.S3.Encryption.Primitives;
 
@@ -275,7 +275,7 @@ V4 supports two storage methods for encryption metadata. Choose the method that 
 
 **Object Metadata (Default)**
 
-```
+```csharp
 var configuration = new AmazonS3CryptoConfigurationV4(CommitmentPolicy.REQUIRE_ENCRYPT_ALLOW_DECRYPT)
 {
     StorageMode = CryptoStorageMode.ObjectMetadata
@@ -285,7 +285,7 @@ var configuration = new AmazonS3CryptoConfigurationV4(CommitmentPolicy.REQUIRE_E
 
 **Instruction File**
 
-```
+```csharp
 var configuration = new AmazonS3CryptoConfigurationV4(CommitmentPolicy.REQUIRE_ENCRYPT_ALLOW_DECRYPT)
 {
     StorageMode = CryptoStorageMode.InstructionFile
@@ -302,21 +302,21 @@ Choose the appropriate commitment policy based on your security requirements and
 
 **Migration Phase (V2 Compatibility)**
 
-```
+```csharp
 // For migration: encrypt without commitment, allow all decryption
 var migrationConfig = new AmazonS3CryptoConfigurationV4(CommitmentPolicy.FORBID_ENCRYPT_ALLOW_DECRYPT);
 ```
 
 **Transition Phase (Recommended)**
 
-```
+```csharp
 // For transition: encrypt with commitment, allow legacy decryption
 var transitionConfig = new AmazonS3CryptoConfigurationV4(CommitmentPolicy.REQUIRE_ENCRYPT_ALLOW_DECRYPT);
 ```
 
 **Full Security Phase**
 
-```
+```csharp
 // For maximum security: require commitment for both encryption and decryption
 var secureConfig = new AmazonS3CryptoConfigurationV4(CommitmentPolicy.REQUIRE_ENCRYPT_REQUIRE_DECRYPT);
 ```

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/agent-registry/index.html
 title: 'AWS Agent Registry Documentation'
 canonical_url: https://docs.aws.amazon.com/agent-registry/
 source: aws-documentation
-generated_on: 2026-11-19
+generated_on: 2026-11-20
 ---
 
 # AWS Agent Registry Documentation
@@ -24,5 +24,6 @@ AWS Agent Registry is an agentic platform for building, deploying, and operating
 - [Agent Registry Developer Guide](/bedrock-agentcore/latest/devguide/registry.html): Describes how to use Agent Registry in the Amazon Bedrock AgentCore Developer Guide.
 - [Agent Registry Data Plane API Reference](/agent-registry/latest/APIReference/): Describes the Agent Registry data plane API operations and parameters.
 - [Agent Registry Control Plane API Reference](/agent-registry-control/latest/APIReference/): Describes the Agent Registry control plane API operations and parameters.
+- [Agent Registry Public Search (Agent Discovery) API Reference](/agent-discovery/latest/APIReference/): Describes the Agent Registry public search (Agent Discovery) API operations and parameters.
 
 ---

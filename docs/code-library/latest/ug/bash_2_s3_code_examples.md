@@ -37,7 +37,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/s3#code-examples).
 
-```
+```bash
 ###############################################################################
 # function s3_getting_started
 #
@@ -153,7 +153,7 @@ function s3_getting_started() {
 ```
 The Amazon S3 functions used in this scenario.
 
-```
+```bash
 ###############################################################################
 # function create-bucket
 #
@@ -450,7 +450,7 @@ The following code example shows how to use `CopyObject`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/s3#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -502,7 +502,7 @@ The following code example shows how to use `CreateBucket`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/s3#code-examples).
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -616,7 +616,7 @@ The following code example shows how to use `DeleteBucket`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/s3#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -662,7 +662,7 @@ The following code example shows how to use `DeleteObject`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/s3#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -711,7 +711,7 @@ The following code example shows how to use `DeleteObjects`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/s3#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -769,7 +769,7 @@ The following code example shows how to use `GetObject`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/s3#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -821,7 +821,7 @@ The following code example shows how to use `HeadBucket`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/s3#code-examples).
 
-```
+```bash
 ###############################################################################
 # function bucket_exists
 #
@@ -860,7 +860,7 @@ The following code example shows how to use `ListObjectsV2`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/s3#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -914,7 +914,7 @@ The following code example shows how to use `PutObject`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/s3#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -972,7 +972,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/037-emr-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # EMR Getting Started Tutorial Script
@@ -1370,7 +1370,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/053-aws-config-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS Config Setup Script (v2)
@@ -1805,7 +1805,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/074-amazon-textract-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon Textract Getting Started Tutorial Script
@@ -2092,7 +2092,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/028-sagemaker-featurestore) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon SageMaker Feature Store Tutorial Script - Version 3
@@ -2651,7 +2651,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/003-s3-gettingstarted) repository.
 
-```
+```bash
 #!/bin/bash
 # S3 Getting Started - Create a bucket, upload and download objects, copy to a
 # folder prefix, enable versioning, configure encryption and public access
@@ -3149,7 +3149,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/061-amazon-athena-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon Athena Getting Started Script

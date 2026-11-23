@@ -111,7 +111,7 @@ To view a code example for using the `$objectToArray` command, choose the tab fo
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function findMaxInventory() {
@@ -151,7 +151,7 @@ findMaxInventory();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def find_max_inventory():

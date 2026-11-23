@@ -60,7 +60,7 @@ A DLQ is an Amazon SQS queue where Customer Profiles reports ingestion errors. W
 
    **Example of engagement preferences with Email**:
 
-   ```
+   ```json
    [
     {"KeyName": "CustomerId", "KeyValue": "456", "ContactType": "PersonalEmailAddress"},
     {"KeyName": "CustomerId", "KeyValue": "789", "ContactType": "PersonalEmailAddress"}
@@ -69,7 +69,7 @@ A DLQ is an Amazon SQS queue where Customer Profiles reports ingestion errors. W
 
    **Example of engagement preferences with Phone**:
 
-   ```
+   ```json
    [
     {"KeyName": "CustomerId", "KeyValue": "456", "ContactType": "PhoneNumber"},
     {"KeyName": "CustomerId", "KeyValue": "789", "ContactType": "PhoneNumber"}
@@ -86,7 +86,7 @@ For **ProfileType** `PROFILE`, you can ingest and add engagement preferences usi
 
    **Sample object-type mapping for ingesting profiles referenced in account-based profiles**
 
-   ```
+   ```json
    {
        "AllowProfileCreation": true,
        "Description": "Standard Profile Object Type",
@@ -148,7 +148,7 @@ For **ProfileType** `PROFILE`, you can ingest and add engagement preferences usi
 
    **Sample object-type mapping for ingesting account based profiles**
 
-   ```
+   ```json
    {
        "AllowProfileCreation": true,
        "Description": "Account-based profiles Object Type",

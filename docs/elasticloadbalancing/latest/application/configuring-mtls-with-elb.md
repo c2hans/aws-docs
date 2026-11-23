@@ -81,7 +81,7 @@ aws elbv2 create-trust-store \
 **To create a trust store**
 Define a resource of type [AWS::ElasticLoadBalancingV2::TrustStore](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-truststore.html).
 
-```
+```yaml
 Resources:
   myTrustStore:
     Type: 'AWS::ElasticLoadBalancingV2::TrustStore'
@@ -139,7 +139,7 @@ aws elbv2 modify-listener \
 **To associate a trust store**
 Update the [AWS::ElasticLoadBalancingV2::Listener](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-listener.html) resource.
 
-```
+```yaml
 Resources:
   myHTTPSListener:
     Type: 'AWS::ElasticLoadBalancingV2::Listener'
@@ -205,7 +205,7 @@ aws elbv2 modify-trust-store \
 **To update the CA certificate bundle**
 Define a resource of type [AWS::ElasticLoadBalancingV2::TrustStore](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-truststore.html).
 
-```
+```yaml
 Resources:
   myTrustStore:
     Type: 'AWS::ElasticLoadBalancingV2::TrustStore'
@@ -263,7 +263,7 @@ aws elbv2 add-trust-store-revocations \
 **To add a revocation list**
 Define a resource of type [AWS::ElasticLoadBalancingV2::TrustStoreRevocation](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-truststorerevocation.html).
 
-```
+```yaml
 Resources:
   myRevocationContents:
     Type: 'AWS:ElasticLoadBalancingV2::TrustStoreRevocation'

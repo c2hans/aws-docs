@@ -68,7 +68,7 @@ The following example shows an SCP with a statement that permits account adminis
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -92,7 +92,7 @@ The following example shows how you can [deny access](orgs_manage_policies_scps_
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -115,7 +115,7 @@ The following example shows how you can use a `NotAction` element to exclude AWS
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -181,7 +181,7 @@ The following example shows how to use a condition element with a deny statement
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -248,7 +248,7 @@ The following shows an example of how to use a condition key in a deny statement
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -286,7 +286,7 @@ In statements where the `Effect` element has a value of `Deny`, you *can* specif
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

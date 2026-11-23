@@ -25,7 +25,7 @@ The following operations enable AWS assistant conversations in Support Center:
 
 The following example policy explicitly denies all AI-enhanced troubleshooting operations:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

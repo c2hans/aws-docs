@@ -26,7 +26,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/update-snapshot-retention
 
  To update a snapshot retention optimizer using the AWS CLI, you can use the following command:
 
-```
+```bash
 aws glue update-table-optimizer \
  --catalog-id {{123456789012}} \
  --database-name {{iceberg_db}} \

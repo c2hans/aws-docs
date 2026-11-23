@@ -62,13 +62,13 @@ The Amazon Chime SDK namespace uses the `Chime` formal name. The Amazon Chime SD
 
 For example, if you use the AWS SDK in Node.js to create meetings, you use the following line of code to address the namespace.
 
-```
+```node.js
 const chimeVoice = AWS.Chime();
 ```
 
 To migrate to the Amazon Chime SDK Voice namespace, update this line of code with the new namespace and the endpoint region.
 
-```
+```node.js
 const chimeVoice = AWS.ChimeSDKVoice({ region: "{{eu-central-1}}" });
 ```
 

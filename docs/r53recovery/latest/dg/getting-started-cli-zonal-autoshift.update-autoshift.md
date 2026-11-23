@@ -14,7 +14,7 @@ aws arc-zonal-shift update-zonal-autoshift-configuration \
       --zonal-autoshift-status="ENABLED"
 ```
 
-```
+```json
 {
    "resourceIdentifier": "arn:aws:elasticloadbalancing:us-west-2:111122223333:ExampleALB123456890",
    "zonalAutoshiftStatus": "ENABLED"

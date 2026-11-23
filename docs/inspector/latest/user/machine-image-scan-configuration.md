@@ -137,7 +137,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-scan
 
  The following example continuously scans all eligible machine images except the ones tagged with `InspectorExclude=true`, and excludes copied machine images.
 
-```
+```JSON
 {
     "amiConfiguration": {
         "createdWithin": "180_DAYS",
@@ -159,7 +159,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-scan
 
  The following example continuously scans only the eligible machine images that have the `InspectorScan` tag key, regardless of the tag value, and excludes backup machine images.
 
-```
+```JSON
 {
     "amiConfiguration": {
         "scanModeConfiguration": {

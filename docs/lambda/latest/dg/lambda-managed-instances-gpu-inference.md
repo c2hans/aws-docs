@@ -27,7 +27,7 @@ Use the vLLM or SGLang base image to serve a model using an OpenAI-compatible AP
 
 The simplest way to use a model is to point `MODEL_ID` at a Hugging Face model ID. The image downloads the model from the Hugging Face Hub to `/tmp` during initialization, which requires outbound internet access from the capacity provider's subnets and enough `EphemeralStorage` for the model:
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/deep-learning-containers/vllm:cuda-v1
 
 ENV MODEL_ID=Qwen/Qwen2.5-1.5B-Instruct
@@ -35,7 +35,7 @@ ENV MODEL_ID=Qwen/Qwen2.5-1.5B-Instruct
 
 If you point `MODEL_ID` at a Hugging Face model ID, we recommend that you also set `HF_TOKEN` to raise your download rate limit and to access private or gated models. `HF_TOKEN` is a secret, so set it as a function environment variable rather than baking it into the image. For production, store it in [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) and read it in your initialization code instead of passing it in plaintext.
 
-```
+```bash
 aws lambda update-function-configuration \
   --function-name my-gpu-function \
   --environment 'Variables={MODEL_ID=Qwen/Qwen2.5-1.5B-Instruct,HF_TOKEN=<your-hugging-face-token>}'
@@ -43,8 +43,8 @@ aws lambda update-function-configuration \
 
 Pointing `MODEL_ID` at a Hugging Face model ID is fine for a first test, but not for a production function. A Hugging Face download crosses the internet, depends on the Hub's speed and your NAT gateway, and repeats on every new execution environment, which slows scale-out. The rest of this page loads the model from an S3 bucket in the same Region as the function instead. Copy the model to your bucket once:
 
-```
-huggingface-cli download Qwen/Qwen2.5-1.5B-Instruct --local-dir ./model
+```bash
+hf download Qwen/Qwen2.5-1.5B-Instruct --local-dir ./model
 aws s3 sync ./model s3://amzn-s3-demo-bucket/models/Qwen2.5-1.5B-Instruct/
 ```
 
@@ -53,7 +53,7 @@ The function's execution role needs `s3:GetObject` and `s3:ListBucket` on the S3
 ### Configuring your Dockerfile
 <a name="lambda-managed-instances-gpu-inference-serve-dockerfile"></a>
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/deep-learning-containers/vllm:cuda-v1
 ```
 
@@ -66,7 +66,7 @@ Create your GPU function image as shown below:
 
 Using AWS CLI:
 
-```
+```bash
 aws ecr create-repository --repository-name my-gpu-function --region us-east-2
 
 aws ecr get-login-password --region us-east-2 | \
@@ -84,7 +84,7 @@ Create a function on your GPU capacity provider from the image you pushed to Ama
 
 Using AWS CLI:
 
-```
+```bash
 aws lambda create-function \
   --function-name my-gpu-function \
   --package-type Image \
@@ -104,7 +104,7 @@ Publish the function to `$LATEST.PUBLISHED`. Publishing runs the initialization 
 
 Using AWS CLI:
 
-```
+```bash
 aws lambda publish-version --function-name my-gpu-function --publish-to LATEST_PUBLISHED
 
 aws lambda get-function-configuration \
@@ -115,7 +115,7 @@ aws lambda get-function-configuration \
 
 When the state is `Active`, invoke the function. The unqualified function name invokes `$LATEST.PUBLISHED`. The event is an OpenAI chat completion request. The handler forwards a request that contains `messages` to the server's `/v1/chat/completions` endpoint, and a request that contains `prompt` to `/v1/completions`.
 
-```
+```bash
 aws lambda invoke \
   --function-name my-gpu-function \
   --cli-binary-format raw-in-base64-out \
@@ -127,7 +127,7 @@ cat response.json
 
 The response is the server's OpenAI-compatible response. Its `model` field is the value of `MODEL_ID`, here the `s3://` prefix. To return a stable model name instead, set the `SERVED_MODEL_NAME` environment variable; the handler then uses it as the default and the server reports it.
 
-```
+```json
 {
   "id": "chatcmpl-...",
   "model": "s3://amzn-s3-demo-bucket/models/Qwen2.5-1.5B-Instruct/",
@@ -176,7 +176,7 @@ The default handler of the vLLM and SGLang images forwards each event to the inf
 ### Sample Dockerfile
 <a name="lambda-managed-instances-gpu-inference-custom-dockerfile"></a>
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/deep-learning-containers/vllm:cuda-v1
 
 COPY handler.py /var/task/
@@ -188,7 +188,7 @@ CMD ["handler.handler"]
 
 The handler forwards each request to the server that the image started. Before forwarding it caps `max_tokens` and adds a system prompt when the caller did not send one, and it gives the server until just before the invocation deadline to answer.
 
-```
+```python
 import json
 import os
 
@@ -240,7 +240,7 @@ Package the handler shown earlier in your container image and push it to Amazon 
 
 Using AWS CLI:
 
-```
+```bash
 docker build -t my-gpu-function .
 docker tag my-gpu-function:latest 111122223333.dkr.ecr.us-east-2.amazonaws.com/my-gpu-function:v2
 docker push 111122223333.dkr.ecr.us-east-2.amazonaws.com/my-gpu-function:v2
@@ -253,7 +253,7 @@ Point the function at the new image and republish `$LATEST.PUBLISHED`. The funct
 
 Using AWS CLI:
 
-```
+```bash
 aws lambda update-function-code \
   --function-name my-gpu-function \
   --image-uri 111122223333.dkr.ecr.us-east-2.amazonaws.com/my-gpu-function:v2
@@ -268,7 +268,7 @@ aws lambda get-function-configuration \
 
 When the state is `Active`, send a request with `max_tokens` set to 4096. The handler lowers it to `MAX_TOKENS_LIMIT` (1,024) before forwarding the request, so the server stops after 1,024 tokens:
 
-```
+```bash
 aws lambda invoke \
   --function-name my-gpu-function \
   --cli-binary-format raw-in-base64-out \
@@ -280,7 +280,7 @@ cat response.json
 
 In the response, `finish_reason` is `length` and `usage.completion_tokens` is 1,024, which confirms the cap. The system prompt from `SYSTEM_PROMPT` was added to the request as well, because the request had no system message.
 
-```
+```json
 {
   "choices": [{"message": {"role": "assistant", "content": "..."}, "finish_reason": "length"}],
   "usage": {"prompt_tokens": 38, "completion_tokens": 1024, "total_tokens": 1062}
@@ -296,7 +296,7 @@ Delete the function, then delete the capacity provider if you no longer need it.
 
 Using AWS CLI:
 
-```
+```bash
 aws lambda delete-function --function-name my-gpu-function
 aws lambda delete-capacity-provider --capacity-provider-name my-gpu-capacity-provider
 ```

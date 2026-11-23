@@ -84,7 +84,7 @@ If you're using [AWS managed temporary credentials](security-iam.md#auth-and-acc
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -106,13 +106,13 @@ If you're using [AWS managed temporary credentials](security-iam.md#auth-and-acc
 
 1. Create an IAM role for the instance profile. To do this, run the IAM `create-role` command. When you do, specify a name for the new IAM role (for example, `my-demo-cloud9-instance-profile-role`), and the name of the file that you just saved.
 
-   ```
+   ```sh
    aws iam create-role --role-name my-demo-cloud9-instance-profile-role --assume-role-policy-document file://my-demo-cloud9-instance-profile-role-trust.json
    ```
 
 1. Attach AWS access permissions to the instance profile IAM role. To do this, run the IAM `attach-role-policy` command. Specify the name of the existing IAM role and the Amazon Resource Name (ARN) of the AWS managed policy that's named `AdministratorAccess`.
 
-   ```
+   ```sh
    aws iam attach-role-policy --role-name my-demo-cloud9-instance-profile-role --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
    ```
 **Note**
@@ -120,13 +120,13 @@ The **AdministratorAccess** policy allows unrestricted access to all AWS actions
 
 1. Create the instance profile. To do this, run the IAM `create-instance-profile` command, specifying a name for the new instance profile (for example, `my-demo-cloud9-instance-profile`).
 
-   ```
+   ```sh
    aws iam create-instance-profile --instance-profile-name my-demo-cloud9-instance-profile
    ```
 
 1. Attach the IAM role to the instance profile. To do this, run the IAM `add-role-to-instance-profile`, specifying the names of the existing IAM role and instance profile.
 
-   ```
+   ```sh
    aws iam add-role-to-instance-profile --role-name my-demo-cloud9-instance-profile-role --instance-profile-name my-demo-cloud9-instance-profile
    ```
 
@@ -163,7 +163,7 @@ If you're using [AWS managed temporary credentials](security-iam.md#auth-and-acc
 
 1. Run the Amazon EC2 `associate-iam-instance-profile` command. Specify the name of the instance profile and the ID and AWS Region ID of the Amazon EC2 instance for the environment.
 
-   ```
+   ```sh
    aws ec2 associate-iam-instance-profile --iam-instance-profile Name=my-demo-cloud9-instance-profile --region us-east-2 --instance-id i-12a3b45678cdef9a0
    ```
 
@@ -171,7 +171,7 @@ If you're using [AWS managed temporary credentials](security-iam.md#auth-and-acc
 
    To get the instance ID, you can, for example, run the Amazon EC2 `describe-instances` command, specifying the name and AWS Region ID of the environment.
 
-   ```
+   ```sh
    aws ec2 describe-instances --region us-east-2 --filters Name=tag:Name,Values=*my-environment* --query "Reservations[*].Instances[*].InstanceId" --output text
    ```
 
@@ -216,7 +216,7 @@ If you're using [AWS managed temporary credentials](security-iam.md#auth-and-acc
 
 Run the IAM `create-access-key` command to create a new AWS access key and corresponding AWS secret access key for the user.
 
-```
+```sh
 aws iam create-access-key --user-name MyUser
 ```
 
@@ -236,7 +236,7 @@ The following procedure shows how to store your permanent access credentials by 
 
 1. Run each of the following commands, one command at a time, to set local environment variables representing your permanent access credentials. In these commands, after `AWS_ACCESS_KEY_ID:`, enter your AWS access key ID. After `AWS_SECRET_ACCESS_KEY`, enter your AWS secret access key. After `AWS_DEFAULT_REGION_ID`, enter the AWS Region identifier associated with the AWS Region closest to you (or your preferred AWS Region). For a list of available identifiers, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) in the *Amazon Web Services General Reference*. For example, for the US East (Ohio), you use `us-east-2`.
 
-   ```
+   ```sh
    export AWS_ACCESS_KEY_ID=
    export AWS_SECRET_ACCESS_KEY=
    export AWS_DEFAULT_REGION=
@@ -250,7 +250,7 @@ The following procedure shows how to store your permanent access credentials by 
 
    1. Enter or paste the following code at the end of the file. In these commands, after `AWS_ACCESS_KEY_ID:`, enter your AWS access key ID. After `AWS_SECRET_ACCESS_KEY`, enter your AWS secret access key. After `AWS_DEFAULT_REGION_ID`, enter the AWS Region identifier associated with the AWS Region closest to you (or your preferred AWS Region). For a list of available identifiers, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) in the *Amazon Web Services General Reference*. For example, for the US East (Ohio) Region, you use `us-east-2`.
 
-      ```
+      ```sh
       export AWS_ACCESS_KEY_ID=
       export AWS_SECRET_ACCESS_KEY=
       export AWS_DEFAULT_REGION=
@@ -260,7 +260,7 @@ The following procedure shows how to store your permanent access credentials by 
 
    1. Source the `~/.bashrc` file to load these new environment variables.
 
-      ```
+      ```sh
       . ~/.bashrc
       ```
 

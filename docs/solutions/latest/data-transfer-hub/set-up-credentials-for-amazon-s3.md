@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/set-u
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -52,7 +52,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/set-u
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

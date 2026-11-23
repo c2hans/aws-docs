@@ -12,13 +12,13 @@ To run these bundles, your queue needs Maya available through a queue environmen
 
 Submit the bundle:
 
-```
+```bash
 deadline bundle gui-submit maya_cli_render/
 ```
 
 For an example that exports `.ass` files from Maya and renders them in a single job, use:
 
-```
+```bash
 deadline bundle submit maya_arnold_ass_export_render/ \
     -p MayaSceneFile={{path-to-scene.ma}} \
     -p Frames=1-100 \

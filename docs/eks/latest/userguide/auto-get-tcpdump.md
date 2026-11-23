@@ -30,7 +30,7 @@ Make sure you have the following:
 
 If you don’t already have an S3 bucket to store the capture files, create one. Replace {{bucket-name}} and {{region}} with your values.
 
-```
+```bash
 aws s3api create-bucket --bucket {{<bucket-name>}} \
     --region {{<region>}} \
     --create-bucket-configuration LocationConstraint={{<region>}}
@@ -46,19 +46,19 @@ Use the `start-capture.py` script from the [node monitoring agent repository](ht
 
 1. Identify the node you want to capture traffic from.
 
-   ```
+   ```bash
    kubectl get nodes
    ```
 
 1. Save the [start-capture.py](https://github.com/aws/eks-node-monitoring-agent/blob/main/tools/start-capture.py) script from the node monitoring agent repository to your local machine, then run it. Replace {{<bucket-name>}} and {{<node-name>}} with your values.
 
-   ```
+   ```bash
    python3 start-capture.py --bucket {{<bucket-name>}} --node {{<node-name>}}
    ```
 
    Common options:
 
-   ```
+   ```bash
    # Capture for 5 minutes on eth0 with a filter
    python3 start-capture.py --bucket {{<bucket-name>}} --node {{<node-name>}} \
        --duration 5m --interface eth0 --filter "tcp port 443"
@@ -71,7 +71,7 @@ Use the `start-capture.py` script from the [node monitoring agent repository](ht
 
    The script generates a `NodeDiagnostic` resource like the following. This example is provided for reference; note that the `upload` fields require pre-signed S3 POST credentials that are generated programmatically by the script.
 
-   ```
+   ```yaml
    apiVersion: eks.amazonaws.com/v1alpha1
    kind: NodeDiagnostic
    metadata:
@@ -94,7 +94,7 @@ Use the `start-capture.py` script from the [node monitoring agent repository](ht
 
 Check the status of the capture.
 
-```
+```bash
 kubectl describe nodediagnostic {{<node-name>}}
 ```
 
@@ -105,7 +105,7 @@ The status will show:
 
 To see the full status including `captureID` (used for S3 path identification):
 
-```
+```bash
 kubectl get nodediagnostic {{<node-name>}} -o jsonpath='{.status.captureStatuses}'
 ```
 
@@ -114,7 +114,7 @@ kubectl get nodediagnostic {{<node-name>}} -o jsonpath='{.status.captureStatuses
 
 Once the status shows `Success`, download the capture files from S3.
 
-```
+```bash
 aws s3 cp s3://{{<bucket-name>}}/captures/ ./captures/ --recursive
 ```
 
@@ -126,7 +126,7 @@ captures/{{<node-name>}}/{{<captureID>}}/capture.pcap0000.gz
 
 The files are gzip-compressed pcap format. Decompress and analyze them with tcpdump or Wireshark. Because of the nesting, use a recursive pattern rather than a flat one.
 
-```
+```bash
 # Decompress every capture file that was downloaded
 find captures -name '*.gz' -exec gunzip {} +
 
@@ -139,7 +139,7 @@ tcpdump -r captures/{{<node-name>}}/{{<captureID>}}/capture.pcap0000 -n
 
  `NodeDiagnostic` resources are not automatically deleted. Clean up after you have obtained your capture files. Deleting the resource while a capture is running will stop the capture immediately.
 
-```
+```bash
 kubectl delete nodediagnostic {{<node-name>}}
 ```
 

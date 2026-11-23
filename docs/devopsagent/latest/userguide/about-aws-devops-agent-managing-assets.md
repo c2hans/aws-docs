@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-d
 
 AWS DevOps Agent stores the configuration and reference material for an Agent Space as **assets**, the customer-managed resources that shape what the agent knows and how it behaves. Skills, AGENTS.md files, and attachments are all assets, and you can create, read, update, and delete them programmatically through the Asset API.
 
-To configure what AWS DevOps Agent knows and how it behaves, manage assets in your Agent Space. This topic covers the asset model, IAM permissions, and the metadata each asset type expects. Use the AWS CLI, the AWS SDK for Python (Boto3), or AWS CloudFormation to manage assets end-to-end. For the conceptual overview of skills themselves, see [DevOps Agent Skills](about-aws-devops-agent-devops-agent-skills-index.md). For agent-generated knowledge that you do not create yourself, see [Learned Skills](about-aws-devops-agent-learned-skills.md).
+To configure what AWS DevOps Agent knows and how it behaves, manage assets in your Agent Space. This topic covers the asset model, IAM permissions, and the metadata each asset type expects. Use the AWS CLI, the AWS SDK for Python (Boto3), or AWS CloudFormation to manage assets end-to-end. For the conceptual overview of skills themselves, see [DevOps Agent Skills](about-aws-devops-agent-devops-agent-skills-index.md). For agent-generated knowledge that you do not create yourself, see [Learned Skills](devops-agent-skills-learned-skills.md).
 
 ## When to use the Asset API
 <a name="when-to-use-the-asset-api"></a>
@@ -207,7 +207,7 @@ Each entry in `skills` and `memory_stores` must resolve to an existing asset of 
 ### memory\_store
 <a name="memory-store"></a>
 
-A `memory_store` asset is a container that groups related memory files. The agent reads the store's name and description to decide whether to open it and list the memories inside. Memories and memory stores support agent memory. For more information about memories, see [DevOps Agent memories](about-aws-devops-agent-devops-agent-memories.md).
+A `memory_store` asset is a container that groups related memory files. The agent reads the store's name and description to decide whether to open it and list the memories inside. Memories and memory stores support agent memory. For more information about memories, see [DevOps Agent memories](about-aws-devops-agent-devops-agent-memories-index.md).
 
 Create memories in two steps. First, create the `memory_store`. Then, create each `memory` inside it, as described in [memory](#memory).
 

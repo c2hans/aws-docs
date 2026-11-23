@@ -24,7 +24,7 @@ For more information, see [ Controlling access to services with VPC endpoints](h
 
 The following is an example of an endpoint policy for EBS direct APIs. When attached to an endpoint, this policy grants access to all EBS direct APIs actions on all resources, except snapshots that are tagged with key `Environment` and value `Test`.
 
-```
+```json
 {
     "Statement": [
         {

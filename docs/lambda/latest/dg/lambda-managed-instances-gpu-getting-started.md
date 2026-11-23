@@ -14,7 +14,7 @@ This tutorial assumes you already have a capacity provider operator role and VPC
 
 Create a capacity provider for your GPU-accelerated functions by listing at least one [supported GPU instance type](lambda-managed-instances-gpu.md#lambda-managed-instances-gpu-supported-instances) in `AllowedInstanceTypes`. A capacity provider cannot mix GPU and non-GPU instance types, so use a dedicated capacity provider for GPU-accelerated functions. To maximize availability, specify multiple GPU instance types across generations. Lambda attempts to use newer generations and falls back to older generations if capacity for newer generations is unavailable.
 
-```
+```bash
 aws lambda create-capacity-provider \
   --capacity-provider-name my-gpu-capacity-provider \
   --vpc-config SubnetIds=[$SUBNET_ID],SecurityGroupIds=[$SECURITY_GROUP_ID] \
@@ -30,28 +30,32 @@ aws lambda create-capacity-provider \
 
 GPU-accelerated functions require a container image deployment package. Lambda provides GPU-enabled container base images in the [Amazon ECR Public Gallery](https://gallery.ecr.aws/lambda), with preinstalled GPU libraries including CUDA, PyTorch, vLLM, and SGLang. You can start from a Lambda GPU base image and add your handler code and dependencies, or build your own image from scratch using the Lambda runtime interface client. For more information, see [GPU base images](lambda-managed-instances-gpu-base-images.md).
 
-The following Dockerfile uses the PyTorch base image, downloads ResNet-18 model weights at build time, and copies in the handler.
+The following Dockerfile uses the PyTorch base image, downloads the ResNet-18 model weights at build time, and copies in the handler. The Dockerfile saves the weights into the image at `/opt/model`, so the function loads them from there and does not download anything when it starts. The image is read-only when the function runs, and `/tmp` is the only writable directory. Keep anything that your code writes at runtime, such as a model cache, under `/tmp`.
 
 To reduce startup time, we recommend storing large artifacts, such as model weights, outside your container image. For more information, see [Optimizing startup time for GPU-accelerated functions](lambda-managed-instances-gpu-startup.md).
 
 Dockerfile:
 
-```
+```dockerfile
 FROM public.ecr.aws/lambda/deep-learning-containers/pytorch:cuda
 
-RUN python3 -c "from torchvision import models; models.resnet18(weights=models.ResNet18_Weights.DEFAULT)"
+RUN mkdir -p /opt/model && python3 -c "import torch; from torchvision import models; \
+    torch.save(models.resnet18(weights=models.ResNet18_Weights.DEFAULT).state_dict(), '/opt/model/resnet18.pth')" \
+    && rm -rf /tmp/torch
 
 COPY handler.py /var/task/
 CMD ["handler.handler"]
 ```
 
-The `handler.py` file loads the ResNet-18 model onto the GPU during initialization and runs one inference per invocation on a sample tensor:
+The `handler.py` file loads the ResNet-18 weights from the image onto the GPU during initialization and runs one inference per invocation on a sample tensor:
 
-```
+```python
 import torch
 from torchvision import models
 
-model = models.resnet18(weights=models.ResNet18_Weights.DEFAULT).cuda().eval()
+model = models.resnet18()
+model.load_state_dict(torch.load("/opt/model/resnet18.pth", map_location="cpu", weights_only=True))
+model = model.cuda().eval()
 
 def handler(event, context):
     x = torch.randn(1, 3, 224, 224, device="cuda")   # image-shaped tensor
@@ -62,7 +66,7 @@ def handler(event, context):
 
 Then, follow the instructions below to create an Amazon Elastic Container Registry (Amazon ECR) repository, build the image, and push it to the repository.
 
-```
+```bash
 aws ecr create-repository --repository-name my-gpu-image --region ${REGION}
 
 aws ecr get-login-password --region ${REGION} | \
@@ -78,7 +82,7 @@ docker push ${ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/my-gpu-image:latest
 
 When creating a GPU-accelerated function, specify the accelerator memory (GPU VRAM) your workload needs using the `AcceleratorConfig` field:
 
-```
+```bash
 aws lambda create-function \
   --function-name my-gpu-function \
   --package-type Image \
@@ -105,13 +109,13 @@ As with other functions on Lambda Managed Instances, publish a version to deploy
 **Note**
 Lambda maintains GPU capacity for each active version. To free capacity for new versions, delete or deactivate versions you no longer use.
 
-```
+```bash
 aws lambda publish-version --function-name my-gpu-function --publish-to LATEST_PUBLISHED
 ```
 
 After the publish operation completes and the version is active, invoke your function:
 
-```
+```bash
 aws lambda invoke \
   --function-name my-gpu-function \
   --cli-binary-format raw-in-base64-out \
@@ -129,18 +133,18 @@ To avoid incurring charges, delete the resources you created:
 
 1. Delete the function:
 
-   ```
+   ```bash
    aws lambda delete-function --function-name my-gpu-function
    ```
 
 1. Delete the capacity provider:
 
-   ```
+   ```bash
    aws lambda delete-capacity-provider --capacity-provider-name my-gpu-capacity-provider
    ```
 
 1. Delete the Amazon ECR repository:
 
-   ```
+   ```bash
    aws ecr delete-repository --repository-name my-gpu-image --force --region ${REGION}
    ```

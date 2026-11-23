@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "domain": "{{trial-1234567.okta.com}}",
   "clientId": "{{0oa followed by 17 letters or digits}}",

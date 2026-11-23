@@ -45,7 +45,7 @@ CloudTrail log files contain one or more log entries. An event represents a sing
 
 The following example shows a CloudTrail log entry for the Amazon Q Developer in chat applications `DescribeSlackChannels` action.
 
-```
+```json
 
 {
     "eventVersion": "1.05",

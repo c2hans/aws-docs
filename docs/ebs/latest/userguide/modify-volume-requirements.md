@@ -31,7 +31,7 @@ Linux AMIs require a GUID partition table (GPT) and GRUB 2 for boot volumes that
 
 Before attempting to resize a boot volume beyond 2 TiB, you can determine whether the volume is using MBR or GPT partitioning by running the following command on your instance:
 
-```
+```bash
 [ec2-user ~]$ sudo gdisk -l /dev/xvda
 ```
 

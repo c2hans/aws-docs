@@ -30,7 +30,7 @@ For more information, see [Tag WorkSpaces resources](https://docs.aws.amazon.com
 **Tools for PowerShell V4**
 **Example 1: This example adds a new tag to a workspace named `ws-wsname`. The tag has a key of "Name", and a key value of `AWS_Workspace`.**
 
-```
+```powershell
 $tag = New-Object Amazon.WorkSpaces.Model.Tag
 $tag.Key = "Name"
 $tag.Value = "AWS_Workspace"
@@ -38,7 +38,7 @@ New-WKSTag -Region us-west-2 -WorkspaceId ws-wsname -Tag $tag
 ```
 **Example 2: This example adds multiple tags to a workspace named `ws-wsname`. One tag has a key of "Name" and a key value of `AWS_Workspace`; the other tag has a tag key of "Stage" and a key value of "Test".**
 
-```
+```powershell
 $tag = New-Object Amazon.WorkSpaces.Model.Tag
 $tag.Key = "Name"
 $tag.Value = "AWS_Workspace"
@@ -53,7 +53,7 @@ New-WKSTag -Region us-west-2 -WorkspaceId ws-wsname -Tag $tag,$tag2
 **Tools for PowerShell V5**
 **Example 1: This example adds a new tag to a workspace named `ws-wsname`. The tag has a key of "Name", and a key value of `AWS_Workspace`.**
 
-```
+```powershell
 $tag = New-Object Amazon.WorkSpaces.Model.Tag
 $tag.Key = "Name"
 $tag.Value = "AWS_Workspace"
@@ -61,7 +61,7 @@ New-WKSTag -Region us-west-2 -WorkspaceId ws-wsname -Tag $tag
 ```
 **Example 2: This example adds multiple tags to a workspace named `ws-wsname`. One tag has a key of "Name" and a key value of `AWS_Workspace`; the other tag has a tag key of "Stage" and a key value of "Test".**
 
-```
+```powershell
 $tag = New-Object Amazon.WorkSpaces.Model.Tag
 $tag.Key = "Name"
 $tag.Value = "AWS_Workspace"

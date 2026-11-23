@@ -60,7 +60,7 @@ To view a code example for using the `$cmp` command, choose the tab for the lang
 
 Here's an example of using the `$cmp` operator in a Node.js application with the `mongodb` driver:
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 const client = new MongoClient('mongodb://<username>:<password>@<cluster-endpoint>:27017/?tls=true&tlsCAFile=global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false');
@@ -97,7 +97,7 @@ main();
 
 Here's an example of using the `$cmp` operator in a Python application with the `pymongo` driver:
 
-```
+```python
 from pymongo import MongoClient
 
 client = MongoClient('mongodb://<username>:<password>@<cluster-endpoint>:27017/?tls=true&tlsCAFile=global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false')
@@ -125,7 +125,7 @@ client.close()
 
 The output of both the Node.js and Python examples will be the same as the MongoDB Shell example:
 
-```
+```python
 [
   { "_id" : 1, "value1" : 10, "value2" : 20 },
   { "_id" : 2, "value1" : 15, "value2" : 15 },

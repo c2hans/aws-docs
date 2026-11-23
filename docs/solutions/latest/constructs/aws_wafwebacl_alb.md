@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { WafwebaclToAlbProps, WafwebaclToAlb } from "@aws-solutions-constructs/aws-wafwebacl-alb";
@@ -44,7 +44,7 @@ new WafwebaclToAlb(this, 'test-wafwebacl-alb', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_route53_alb import Route53ToAlb
 from aws_solutions_constructs.aws_wafwebacl_alb import WafwebaclToAlbProps, WafwebaclToAlb
 from aws_cdk import (
@@ -67,7 +67,7 @@ WafwebaclToAlb(self, 'test_wafwebacl_alb',
                 )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

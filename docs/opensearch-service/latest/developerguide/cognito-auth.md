@@ -88,7 +88,7 @@ If you use the AWS CLI or one of the AWS SDKs, you must create your own role, at
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -125,7 +125,7 @@ Because it creates the `CognitoAccessForAmazonOpenSearch` role for you, the cons
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{
@@ -162,7 +162,7 @@ If `CognitoAccessForAmazonOpenSearch` already exists, you need fewer permissions
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{
@@ -255,7 +255,7 @@ For the `Principal`, specify the ARN of the Cognito authenticated role that you 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -367,7 +367,7 @@ The following tables list common configuration issues and solutions.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -401,7 +401,7 @@ The following tables list common configuration issues and solutions.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{

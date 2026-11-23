@@ -128,6 +128,12 @@ The resolution of the device.
 Type: [Resolution](API_Resolution.md) object
 Required: No
 
+ ** type **   <a name="devicefarm-Type-Device-type"></a>
+The type of device. Possible values are PHYSICAL and VIRTUAL.
+Type: String
+Valid Values: `PHYSICAL | VIRTUAL`
+Required: No
+
 ## See Also
 <a name="API_Device_SeeAlso"></a>
 

@@ -93,7 +93,7 @@ CIS hardening components don't follow the standard component ordering rules in I
 At build time, this variable resolves to the base image for your recipe.
 Example:
 
-   ```
+   ```sh
    FROM
    {{{ imagebuilder:parentImage }}}
    ```
@@ -101,14 +101,14 @@ Example:
 At build time, this variable resolves to the Dockerfile directives that stage your components in the build context. These directives copy the component scripts into the image and set the environment variables that those scripts use. It prepares the environment but doesn't run the components that you specify. Place this variable before the `components` variable.
 Example:
 
-   ```
+   ```sh
    {{{ imagebuilder:environments }}}
    ```
 **components (optional)**
 At build time, this variable resolves to the command that runs the build and test component scripts for the components that the container recipe includes, and then removes those scripts from the image. This is the variable that runs your components. Place it after the `environments` variable.
 Example:
 
-   ```
+   ```sh
    {{{ imagebuilder:components }}}
    ```
 

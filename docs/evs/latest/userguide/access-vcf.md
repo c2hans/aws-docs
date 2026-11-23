@@ -34,7 +34,7 @@ You can retrieve the credentials by using the Amazon EVS console or the AWS CLI.
 
    Replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws secretsmanager list-secrets --region <region-code>
    ```
 
@@ -42,7 +42,7 @@ You can retrieve the credentials by using the Amazon EVS console or the AWS CLI.
 
    In the following command, replace `<secret-name>` with the name or ARN of the secret. Replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws secretsmanager get-secret-value --secret-id <secret-name> --region <region-code>
    ```
 

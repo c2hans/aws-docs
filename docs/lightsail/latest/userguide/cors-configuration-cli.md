@@ -20,7 +20,7 @@ The following procedure shows how a CORS configuration can be applied to a bucke
 
 1. Create a JSON file containing your CORS configuration. For example, create a file named `cors-config.json` with the following content:
 
-   ```
+   ```json
    {
      "CORSRules": [
        {
@@ -56,7 +56,7 @@ The following examples show common CORS configurations for different use cases.
 **Example 1: Allow all origins and methods**
 This configuration allows all origins to access your bucket using any HTTP method:
 
-```
+```json
 {
     "CORSRules": [
       {
@@ -72,7 +72,7 @@ This configuration allows all origins to access your bucket using any HTTP metho
 **Example 2: Restrict to specific domain**
 This configuration allows only requests from `https://mywebsite.com`:
 
-```
+```json
 {
     "CORSRules": [
       {
@@ -89,7 +89,7 @@ This configuration allows only requests from `https://mywebsite.com`:
 **Example 3: Multiple rules for different origins**
 This configuration defines different rules for different origins:
 
-```
+```json
 {
     "CORSRules": [
       {

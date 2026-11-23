@@ -24,7 +24,7 @@ You can configure any Apache Livy or Apache Spark environment variable with the 
 
 For example, to set the Livy and Spark configurations `livy.server.recovery.state-store = filesystem` and `spark.kubernetes.executor.podNamePrefix = my-prefix`, use these Helm properties:
 
-```
+```bash,sh,zsh
 —set env.LIVY_LIVY_SERVER_RECOVERY_STATE0STORE.value=filesystem
 —set env.LIVY_SPARK_KUBERNETES_EXECUTOR_POD0NAME0PREFIX.value=myprefix
 ```

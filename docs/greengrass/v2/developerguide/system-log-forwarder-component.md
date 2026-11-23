@@ -53,7 +53,7 @@ The component requires access to create log and stream groups in CloudWatch as w
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -145,7 +145,7 @@ Using the value \* will include all available services.
 **Example configuration:**
 The example below will filter logs by all services included in Greengrass Nucleus Lite.
 
-```
+```json
 {
     "maxUploadIntervalSec": 300,
     "maxRetriesCount": 3,

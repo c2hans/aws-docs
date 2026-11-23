@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsI
 
 **Example**
 
-```
+```JSON
 "AwsIamAccessKey": {
                         "AccessKeyId": "string",
                         "AccountId": "string",
@@ -51,7 +51,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsI
 
 **Example**
 
-```
+```JSON
 "AwsIamGroup": {
     "AttachedManagedPolicies": [
         {
@@ -80,7 +80,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsI
 
 **Example**
 
-```
+```JSON
 "AwsIamPolicy": {
     "AttachmentCount": 1,
     "CreateDate": "2017-09-14T08:17:29.000Z",
@@ -111,7 +111,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsI
 
 **Example**
 
-```
+```JSON
 "AwsIamRole": {
     "AssumeRolePolicyDocument": "{'Version': '2012-10-17',		 	 	 'Statement': [{'Effect': 'Allow','Action': 'sts:AssumeRole'}]}",
     "AttachedManagedPolicies": [
@@ -169,7 +169,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsI
 
 **Example**
 
-```
+```JSON
 "AwsIamUser": {
     "AttachedManagedPolicies": [
         {

@@ -14,7 +14,7 @@ The permissions on this page apply to the **console user** who initiates user-ma
 
 You need the following Amazon Bedrock permissions to start the user-managed setup (3LO) sign-in flow. Amazon Bedrock uses `GetDataSourceAuthorizationUrl` to build the third-party authorization URL that opens in the sign-in popup. It uses `CreateDataSourceToken` to exchange the authorization code for a token after you authorize the connection.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{
@@ -44,7 +44,7 @@ arn:aws:secretsmanager:{{region}}:{{account-id}}:secret:bedrock-managedkb-oauth/
 
 Attach the following policy to grant `secretsmanager:CreateSecret` scoped to secrets with your prefix:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{
@@ -68,7 +68,7 @@ If you do not provide a secret name prefix, replace the {{your-prefix}} segment 
 
 The following policy combines the Amazon Bedrock and AWS Secrets Manager permissions that the console user needs to complete user-managed setup (3LO):
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

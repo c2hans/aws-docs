@@ -25,7 +25,7 @@ Activation offloading can be useful for large models with over a hundred billion
 
 **Configure a SageMaker PyTorch ModelTrainer**
 
-```
+```py
 mpi_options = {
     "enabled" : True,
     "processes_per_host" : 8,               # 8 processes

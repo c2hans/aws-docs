@@ -89,7 +89,7 @@ Note the following about the original analysis file for chats:
 ## Example original chat file
 <a name="chat-exampleoriginalfile"></a>
 
-```
+```json
 {
     "AccountId": "123456789012",
     "Categories": {
@@ -947,7 +947,7 @@ Note the following about the original analysis file for chats:
 ## Example redacted chat file
 <a name="chat-exampleredactedfile"></a>
 
-```
+```json
 {
     "AccountId": "123456789012",
     "Categories": {

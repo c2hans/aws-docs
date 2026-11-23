@@ -13,7 +13,7 @@ To use this script:
 
 1. Upload your font files to an Amazon S3 bucket. To save time at instance startup, store fonts in a dedicated folder so the script copies only font files.
 
-   ```
+   ```bash
    aws s3 cp {{/path/to/your/fonts/}} s3://{{your-bucket-name}}/Fonts/ --recursive
    ```
 

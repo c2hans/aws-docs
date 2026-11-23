@@ -43,12 +43,12 @@ You can choose a base AMI that doesn't support the `ecs-init` package. However, 
    1. Stop the Amazon ECS container agent.
       + Amazon ECS-optimized Amazon Linux 2 AMI:
 
-        ```
+        ```sh
         sudo systemctl stop ecs
         ```
       + Amazon ECS-optimized Amazon Linux AMI:
 
-        ```
+        ```sh
         sudo stop ecs
         ```
 

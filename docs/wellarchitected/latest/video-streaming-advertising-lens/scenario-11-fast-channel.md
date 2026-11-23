@@ -20,6 +20,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
 ![FAST Channel VOD workflow architecture on AWS showing the content pipeline from mezzanine asset ingest through transcoding, packaging, linear channel assembly with dynamic ad insertion, and CDN delivery to viewers](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-11-fast-channel-vod.jpg)
 
+*FAST Channel VOD workflow architecture on AWS showing the content pipeline from mezzanine asset ingest through transcoding, packaging, linear channel assembly with dynamic ad insertion, and CDN delivery to viewers*
+
  The architecture consists of the following components:
 
 1.  **Mezzanine assets (Amazon S3)**: Source content files uploaded by content operations. Trigger AWS Elemental MediaConvert transcoding jobs through S3 event notifications or EventBridge rules. S3 Cross-Region Replication provides origin redundancy for playback resilience.

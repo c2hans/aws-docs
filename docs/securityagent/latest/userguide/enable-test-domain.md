@@ -61,7 +61,7 @@ This method proves domain ownership by placing a unique token on your web server
 
 1. Place the token provided by AWS Security Agent in the file using this format:
 
-   ```
+   ```json
    {
      "tokens": ["<insert-token>"]
    }

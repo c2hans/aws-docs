@@ -30,7 +30,7 @@ Pass a list to the `concurrency` parameter of the workload configuration. The be
 
 **Python (Boto3)**
 
-```
+```python
 client.create_ai_workload_config(
     AIWorkloadConfigName="concurrency-list-config",
     AIWorkloadConfigs={"WorkloadSpec": {"Inline": json.dumps({
@@ -54,7 +54,7 @@ Set `search_recipe` to `max-concurrency-under-sla` and provide at least one SLA 
 
 **Python (Boto3)**
 
-```
+```python
 client.create_ai_workload_config(
     AIWorkloadConfigName="find-max-config",
     AIWorkloadConfigs={"WorkloadSpec": {"Inline": json.dumps({
@@ -88,7 +88,7 @@ A find-max-concurrency search writes a `search_history.json` file at the root of
 
 **Python (Boto3)**
 
-```
+```python
 import io, json, tarfile
 
 resp = client.describe_ai_benchmark_job(AIBenchmarkJobName="find-max-job")

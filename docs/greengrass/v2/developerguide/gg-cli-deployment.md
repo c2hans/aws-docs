@@ -21,7 +21,7 @@ Create or update a local deployment using specified component recipes, artifacts
 
 **Synopsis**
 
-```
+```bash
 greengrass-cli deployment create
     --recipeDir {{path/to/component/recipe}}
     [--artifactDir {{path/to/artifact/folder}} ]
@@ -140,7 +140,7 @@ Retrieve the status of the last 10 local deployments.
 
 **Synopsis**
 
-```
+```bash
 greengrass-cli deployment list
 ```
 
@@ -164,7 +164,7 @@ Retrieve the status of a specific deployment.
 
 **Synopsis**
 
-```
+```bash
 greengrass-cli deployment status -i {{<deployment-id>}}
 ```
 

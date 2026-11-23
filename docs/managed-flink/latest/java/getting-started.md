@@ -52,13 +52,13 @@ To complete the steps in this guide, you must have the following:
 + [Apache Maven](https://maven.apache.org/). Install Apache Maven if you haven't already. To learn how to install it, see [Installing Apache Maven](https://maven.apache.org/install.html).
   + To test your Apache Maven installation, enter the following:
 
-  ```
+  ```bash
   $ mvn -version
   ```
 + IDE for local development. We recommend that you use a development environment such as [Eclipse Java Neon](https://www.eclipse.org/downloads/packages/release/neon/3) or [IntelliJ IDEA](https://www.jetbrains.com/idea/) to develop and compile your application.
   + To test your Apache Maven installation, enter the following:
 
-  ```
+  ```bash
   $ mvn -version
   ```
 

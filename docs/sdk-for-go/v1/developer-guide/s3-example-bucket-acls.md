@@ -37,7 +37,7 @@ The following example gets the ACLs on a bucket with the name specified as a com
 
 Create the file *s3\_get\_bucket\_acl.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws/session"
     "github.com/aws/aws-sdk-go/service/s3"
@@ -49,7 +49,7 @@ import (
 
 Create a function to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -58,7 +58,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 This example requires one input parameter, the name of the bucket. If the name is not supplied, call the error function and exit.
 
-```
+```go
 if len(os.Args) != 2 {
     exitErrorf("Bucket name required\nUsage: go run", os.Args[0], "BUCKET")
 }
@@ -68,7 +68,7 @@ bucket := os.Args[1]
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials`, the region from the shared configuration file `~/.aws/config`, and create a new Amazon S3 service client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -79,7 +79,7 @@ svc := s3.New(sess)
 
 Call [GetBucketAcl](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.GetBucketAcl), passing in the name of the bucket. If an error occurs, call `exitErrorf`. If no error occurs, loop through the results and print out the name, type, and permission for the grantees.
 
-```
+```go
 result, err := svc.GetBucketAcl(&s3.GetBucketAclInput{Bucket: &bucket})
 if err != nil {
     exitErrorf(err.Error())
@@ -114,7 +114,7 @@ The following example gives a user access by email address to a bucket with the 
 
 Create the file *s3\_put\_bucket\_acl.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws/session"
     "github.com/aws/aws-sdk-go/service/s3"
@@ -126,7 +126,7 @@ import (
 
 Create a function to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -135,7 +135,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 Get the two required input parameters. If the optional permission parameter is supplied, make sure it is one of the allowed values. If not, print an error message and quit.
 
-```
+```go
 if len(os.Args) < 3 {
     exitErrorf("Bucket name and email address required; permission optional (READ if omitted)\nUsage: go run", os.Args[0], "BUCKET EMAIL [PERMISSION]")
 }
@@ -159,7 +159,7 @@ if len(os.Args) == 4 {
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials`, the region from the shared configuration file `~/.aws/config`, and create a new Amazon S3 service client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -170,7 +170,7 @@ svc := s3.New(sess)
 
 Get the existing ACLs and append the new user to the list. If there is an error while retrieving the list, print an error message and quit.
 
-```
+```go
 result, err := svc.GetBucketAcl(&s3.GetBucketAclInput{Bucket: &bucket})
 if err != nil {
     exitErrorf(err.Error())
@@ -192,7 +192,7 @@ grants = append(grants, &newGrant)
 
 Build the parameter list for the call based on the existing ACLs and the new user information.
 
-```
+```go
 params := &s3.PutBucketAclInput{
     Bucket: &bucket,
     AccessControlPolicy: &s3.AccessControlPolicy{
@@ -207,7 +207,7 @@ params := &s3.PutBucketAclInput{
 
 Call [PutBucketAcl](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutBucketAcl), passing in the parameter list. If an error occurs, display a message and quit. Otherwise, display a message indicating success.
 
-```
+```go
 _, err = svc.PutBucketAcl(params)
 if err != nil {
     exitErrorf(err.Error())
@@ -227,7 +227,7 @@ The following example gives everyone read-only access to the items in the bucket
 
 Create the file *s3\_make\_bucket\_public.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws/session"
     "github.com/aws/aws-sdk-go/service/s3"
@@ -239,7 +239,7 @@ import (
 
 Create a function to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -248,7 +248,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 Get the required input parameter and create the **acl**.
 
-```
+```go
 if len(os.Args) < 2 {
     exitErrorf("Bucket name required.\nUsage: go run", os.Args[0], "BUCKET")
 }
@@ -259,7 +259,7 @@ acl := "public-read"
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials` the region from the shared configuration file `~/.aws/config`, and create a new Amazon S3 service client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -268,7 +268,7 @@ svc := s3.New(sess)
 
 Create the input for and call [PutBucketAcl](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutBucketAcl). If an error occurs, display a message and quit. Otherwise, display a message indicating success.
 
-```
+```go
 params := &s3.PutBucketAclInput{
     Bucket: &bucket,
     ACL: &acl,
@@ -294,7 +294,7 @@ The following example gets the ACLs for a bucket item with the bucket and item n
 
 Create the file *s3\_get\_bucket\_object\_acl.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws/session"
     "github.com/aws/aws-sdk-go/service/s3"
@@ -306,7 +306,7 @@ import (
 
 Create a function to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -315,7 +315,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 This example requires two input parameters, the names of the bucket and object. If either name is not supplied, call the error function and exit.
 
-```
+```go
 if len(os.Args) != 3 {
     exitErrorf("Bucket and object names required\nUsage: go run", os.Args[0], "BUCKET OBJECT")
 }
@@ -326,7 +326,7 @@ key := os.Args[2]
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials`, the region from the shared configuration file `~/.aws/config`, and create a new Amazon S3 service client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -337,7 +337,7 @@ svc := s3.New(sess)
 
 Call [GetObjectAcl](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.GetObjectAcl), passing in the names of the bucket and object. If an error occurs, call `exitErrorf`. If no error occurs, loop through the results and print out the name, type, and permission for the grantees.
 
-```
+```go
 result, err := svc.GetObjectAcl(&s3.GetObjectAclInput{Bucket: &bucket, Key: &key})
 if err != nil {
     exitErrorf(err.Error())
@@ -366,7 +366,7 @@ The following example gives a user access by email address to a bucket item, wit
 
 Create the file *s3\_put\_bucket\_object\_acl.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws/session"
     "github.com/aws/aws-sdk-go/service/s3"
@@ -378,7 +378,7 @@ import (
 
 Create a function to display errors and exit.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -387,7 +387,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 Get the three required input parameters. If the optional permission parameter is supplied, make sure it is one of the allowed values. If not, print an error message and quit.
 
-```
+```go
 if len(os.Args) < 4 {
     exitErrorf("Bucket name, object name, and email address required; permission optional (READ if omitted)\nUsage: go run", os.Args[0], "BUCKET OBJECT EMAIL [PERMISSION]")
 }
@@ -411,7 +411,7 @@ if len(os.Args) == 5 {
 
 Initialize the session that the SDK uses to load credentials from the shared credentials file `~/.aws/credentials`, and create a new Amazon S3 service client.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -422,7 +422,7 @@ svc := s3.New(sess)
 
 Build the parameter list for the call based on the existing ACLs and the new user information.
 
-```
+```go
 result, err := svc.GetObjectAcl(&s3.GetObjectAclInput{Bucket: &bucket, Key: &key})
 if err != nil {
     exitErrorf(err.Error())
@@ -457,7 +457,7 @@ params := &s3.PutObjectAclInput{
 
 Call [PutObjectAcl](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutObjectAcl), passing in the parameter list. If an error occurs, display a message and quit. Otherwise, display a message indicating success.
 
-```
+```go
 _, err = svc.PutObjectAcl(params)
 if err != nil {
     exitErrorf(err.Error())

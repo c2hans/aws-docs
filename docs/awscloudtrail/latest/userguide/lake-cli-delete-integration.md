@@ -8,7 +8,7 @@ This section describes how to run the `delete-channel` command to delete the cha
 
 The following example shows how to delete the channel.
 
-```
+```JSON
 aws cloudtrail delete-channel \
 --channel EXAMPLE8-0558-4f7e-a06a-43969EXAMPLE
 ```

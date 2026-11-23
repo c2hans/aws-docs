@@ -62,9 +62,13 @@ During a migration, your consumption of resources may increase due to the provis
 
 ![Typical flow for a migration, which flows from source environment, to migration resources, to target environment](https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/images/migration-process-flow.png)
 
+*Typical migration process flow*
+
 You can reduce the resource consumption during the migration either by reducing the resources deployed or by reducing the duration of their deployment.
 
 ![Additional resource consumption equation (resource target environment times duration of deployment plus resource in migration process times duration of deployment).](https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/images/resource-consumption-equation.png)
+
+*Additional resource consumption equation*
 
 ## MIG-SUS-BP-8.1: Adopt methods that can reduce interim resource consumption during the migration
 <a name="mig-sus-bp-8.1-adopt-methods-that-can-reduce-interim-resource-consumption-during-the-migration"></a>

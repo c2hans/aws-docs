@@ -160,7 +160,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-security-group-create-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "VpcId": "vpc-12345abc",
   "Name": "app1-webserver",
@@ -173,7 +173,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-security-group-create-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "VpcId": "vpc-1234abcd",
   "Name": "app1-webserver",

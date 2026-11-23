@@ -35,7 +35,7 @@ The following example shows a handler function that logs context information.
 
 **Example handler.py**
 
-```
+```py
 import time
 
 def lambda_handler(event, context):

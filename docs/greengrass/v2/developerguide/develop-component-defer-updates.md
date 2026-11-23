@@ -10,7 +10,7 @@ In this section, you develop a Hello World component in Python that defers compo
 
 1. On your development computer, create a folder for the component source code.
 
-   ```
+   ```bash
    mkdir com.example.BatteryAwareHelloWorld
    cd com.example.BatteryAwareHelloWorld
    ```
@@ -19,7 +19,7 @@ In this section, you develop a Hello World component in Python that defers compo
 
    <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-   ```
+   ```bash
    nano gdk-config.json
    ```
 
@@ -30,7 +30,7 @@ In this section, you develop a Hello World component in Python that defers compo
 
      For example, if you specify **greengrass-component-artifacts** and **us-west-2**, and your AWS account ID is **123456789012**, the GDK CLI uses the S3 bucket named `greengrass-component-artifacts-us-west-2-123456789012`.
 
-   ```
+   ```json
    {
      "component": {
        "com.example.BatteryAwareHelloWorld": {
@@ -59,13 +59,13 @@ In this section, you develop a Hello World component in Python that defers compo
 
    <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-   ```
+   ```bash
    nano main.py
    ```
 
    Copy the following Python code into the file.
 
-   ```
+   ```python
    import json
    import os
    import sys
@@ -179,7 +179,7 @@ In this section, you develop a Hello World component in Python that defers compo
    + Uses the IPC client V2 in the [AWS IoT Device SDK v2 for Python](https://github.com/aws/aws-iot-device-sdk-python-v2) to communicate with the AWS IoT Greengrass Core software. Compared to the original IPC client, the IPC client V2 reduces the amount of code that you need to write to use IPC in custom components.
    + Subscribes to update notifications using the [SubscribeToComponentUpdates](ipc-component-lifecycle.md#ipc-operation-subscribetocomponentupdates) IPC operation. The AWS IoT Greengrass Core software sends notifications before and after each deployment. The component calls the following function each time it receives a notification. If the notification is for an upcoming deployment, the component checks if the battery level is lower than a threshold. If the battery level is below the threshold, the component defers the update for 30 seconds using the [DeferComponentUpdate](ipc-component-lifecycle.md#ipc-operation-defercomponentupdate) IPC operation. Otherwise, if the battery level isn't below the threshold, the component acknowledges the update, so the update can proceed.
 
-     ```
+     ```python
      def on_component_update_event(self, event):
          try:
              if event.pre_update_event is not None:
@@ -207,13 +207,13 @@ The AWS IoT Greengrass Core software doesn't send update notifications for local
 
    <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-   ```
+   ```bash
    nano recipe.json
    ```
 
    Copy the following JSON into the file.
 
-   ```
+   ```json
    {
      "RecipeFormatVersion": "2020-01-25",
      "ComponentName": "COMPONENT_NAME",
@@ -267,13 +267,13 @@ The AWS IoT Greengrass Core software doesn't send update notifications for local
 
    <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-   ```
+   ```bash
    nano recipe.yaml
    ```
 
    Copy the following YAML into the file.
 
-   ```
+   ```yaml
    ---
    RecipeFormatVersion: "2020-01-25"
    ComponentName: "COMPONENT_NAME"

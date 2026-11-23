@@ -28,7 +28,7 @@ type: string
 ### CLI
 <a name="-greengrass-bulk-deployments-bulkdeploymentid-status-get-cli"></a>
 
-```
+```bash
 aws greengrass get-bulk-deployment-status \
   --bulk-deployment-id <value>  \
   [--cli-input-json <value>] \
@@ -37,7 +37,7 @@ aws greengrass get-bulk-deployment-status \
 
 cli-input-json format:
 
-```
+```json
 {
 "BulkDeploymentId": "string"
 }
@@ -50,7 +50,7 @@ cli-input-json format:
 Success. The response body contains the status of the bulk deployment.
  [ GetBulkDeploymentStatusResponse](definitions-getbulkdeploymentstatusresponse.md)
 
-```
+```json
 {
 "BulkDeploymentStatus": "Initializing|Running|Completed|Stopping|Stopped|Failed",
 "BulkDeploymentMetrics": {
@@ -120,7 +120,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

@@ -15,7 +15,7 @@ The standard AL2023 container images are suitable for most use cases. Using the 
 
 1. Construct a `Dockerfile` / `Containerfile` that builds `FROM scratch`. The following example of a `Dockerfile` can be used to build a container that contains only the `bash` shell and its dependencies.
 
-   ```
+   ```Dockerfile
    FROM public.ecr.aws/amazonlinux/amazonlinux:2023 as build
    RUN mkdir /sysroot
    RUN dnf --releasever=$(rpm -q system-release --qf '%{VERSION}') \
@@ -54,7 +54,7 @@ The standard AL2023 container images are suitable for most use cases. Using the 
 
 1. Create an empty directory and add the content of the example in Step 2 to a file named `Dockerfile`.
 
-   ```
+   ```sh
    $ mkdir al2023-barebones-bash-example
    	$ cd al2023-barebones-bash-example
    	$ cat > Dockerfile <<EOF
@@ -75,13 +75,13 @@ The standard AL2023 container images are suitable for most use cases. Using the 
 
 1. Build the container by running the following command.
 
-   ```
+   ```sh
    $ docker build -t al2023-barebones-bash-example
    ```
 
 1. Run the container using the following command to see how minimal a `bash`-only container is.
 
-   ```
+   ```sh
    $ docker run -it --rm al2023-barebones-bash-example
    bash-5.2# rpm
    bash: rpm: command not found
@@ -97,7 +97,7 @@ For a more practical example, the following procedure builds a container for a C
 
 1. Create an empty directory and add the C source code and `Dockerfile`.
 
-   ```
+   ```sh
    $ mkdir al2023-barebones-c-hello-world-example
    $ cd al2023-barebones-c-hello-world-example
    $ cat > hello-world.c <<EOF
@@ -131,13 +131,13 @@ For a more practical example, the following procedure builds a container for a C
 
 1. Build the container using the following command.
 
-   ```
+   ```sh
    $ docker build -t al2023-barebones-c-hello-world-example .
    ```
 
 1. Run the container using the following command.
 
-   ```
+   ```sh
    $ docker run -it --rm al2023-barebones-c-hello-world-example
    Hello World!
    ```

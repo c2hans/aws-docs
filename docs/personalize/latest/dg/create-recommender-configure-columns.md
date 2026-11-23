@@ -22,7 +22,7 @@ The following code samples show how configure columns used when training with th
 
 To exclude columns from training, provide the `excludedDatasetColumns` object in the `trainingDataConfig` as part of the recommender configuration. For each key in the object, provide the dataset type. For each value, provide the list of columns to exclude. For more information, see [Configuring columns used when creating an Amazon Personalize domain recommender](create-recommender-configure-columns.md).
 
-```
+```cmd
 aws personalize create-recommender \
 --name {{recommender name}} \
 --dataset-group-arn {{dataset group ARN}} \
@@ -38,7 +38,7 @@ To exclude columns from training, provide the `excludedDatasetColumns` object in
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')
@@ -64,7 +64,7 @@ print('Recommender ARN:' + recommender_arn)
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 // Get service clients and commands using ES6 syntax.
 import { CreateRecommenderCommand, PersonalizeClient } from
   "@aws-sdk/client-personalize";

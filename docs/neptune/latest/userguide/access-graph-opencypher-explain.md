@@ -26,7 +26,7 @@ For more information, see [execute-open-cypher-explain-query](https://docs.aws.a
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -58,8 +58,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/openCypher \
   -d "explain=dynamic"
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -69,6 +68,8 @@ curl https://{{your-neptune-endpoint}}:{{port}}/openCypher \
   -d "query=MATCH (n) RETURN n LIMIT 1" \
   -d "explain=dynamic"
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -211,7 +212,7 @@ For more information, see [execute-open-cypher-explain-query](https://docs.aws.a
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -243,8 +244,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/openCypher \
   -d "explain=details"
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -254,6 +254,8 @@ curl https://{{your-neptune-endpoint}}:{{port}}/openCypher \
   -d "query=MATCH (n {code: 'ATL'}) RETURN n" \
   -d "explain=details"
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 

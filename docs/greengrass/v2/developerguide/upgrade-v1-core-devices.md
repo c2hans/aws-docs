@@ -34,31 +34,31 @@ If you want to upgrade sequentially, uninstall the AWS IoT Greengrass Core softw
 
    1. Stop the running AWS IoT Greengrass Core software v1.x service.
 
-      ```
+      ```bash
       sudo systemctl stop greengrass
       ```
 
    1. Wait until the service stops. You can use the `list` command to check the status of the service.
 
-      ```
+      ```bash
       sudo systemctl list-units --type=service | grep greengrass
       ```
 
    1. Disable the service.
 
-      ```
+      ```bash
       sudo systemctl disable greengrass
       ```
 
    1. Remove the service.
 
-      ```
+      ```bash
       sudo rm /etc/systemd/system/greengrass.service
       ```
 
 1. If the AWS IoT Greengrass Core software v1.x is not running as a service, use the following command to stop the daemon. Replace {{greengrass-root}} with the name of your Greengrass root folder. The default location is `/greengrass`.
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ggc/core/
    sudo ./greengrassd stop
    ```
@@ -67,14 +67,14 @@ If you want to upgrade sequentially, uninstall the AWS IoT Greengrass Core softw
 
    1. Use the following command to copy the current Greengrass root folder to a different folder, and then remove the root folder.
 
-      ```
+      ```bash
       sudo cp -r /{{greengrass-root}} {{/path/to/greengrass-backup}}
       rm -rf /{{greengrass-root}}
       ```
 
    1. Use the following command to move the write folder to a different folder, and then remove the write folder.
 
-      ```
+      ```bash
       sudo cp -r /{{write-directory}} {{/path/to/write-directory-backup}}
       rm -rf /{{write-directory}}
       ```
@@ -102,31 +102,31 @@ If you install the AWS IoT Greengrass Core v2.x software on a device that is alr
 
   1. Stop the AWS IoT Greengrass Core software v1.x service.
 
-     ```
+     ```bash
      sudo systemctl stop greengrass
      ```
 
   1. Wait for the service to stop. The service can take up to a few minutes to stop. You can use the `list-units` command to check whether the service stopped.
 
-     ```
+     ```bash
      sudo systemctl list-units --type=service | grep greengrass
      ```
 
   1. Disable the service.
 
-     ```
+     ```bash
      sudo systemctl disable greengrass
      ```
 
   1. Rename the service.
 
-     ```
+     ```bash
      sudo mv /etc/systemd/system/greengrass.service /etc/systemd/system/{{greengrass-v1}}.service
      ```
 
   1. Reload the service and start it.
 
-     ```
+     ```bash
      sudo systemctl daemon-reload
      sudo systemctl reset-failed
      sudo systemctl enable greengrass-v1

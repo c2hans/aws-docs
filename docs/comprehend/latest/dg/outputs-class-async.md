@@ -97,7 +97,7 @@ For more details about these output fields, see [ClassifyDocument](https://docs.
 
 The following example shows output for a two-page scanned PDF file.
 
-```
+```json
 [{ #First page output
     "Classes": [
         {

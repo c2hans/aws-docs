@@ -12,7 +12,7 @@ The [nerfstudio](https://github.com/aws-deadline/deadline-cloud-samples/tree/mai
 
 To build this recipe, deploy the [CUDA farm CloudFormation template](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cuda_farm) on the GitHub website to create a Deadline Cloud farm with a CUDA fleet for the build, then submit the package build job:
 
-```
+```bash
 ./submit-package-job nerfstudio
 ```
 

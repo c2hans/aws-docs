@@ -16,7 +16,7 @@ The trust relationship for your EventBridge IAM role must provide the `events.am
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -41,7 +41,7 @@ Make sure that the policy that's attached to your EventBridge IAM role allows `b
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

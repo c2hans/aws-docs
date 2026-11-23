@@ -15,7 +15,7 @@ In the following list, the required parameters are described first.
  ** SortBy **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationSort-SortBy"></a>
 Allows to sort ResaleAuthorization.
 Type: String
-Valid Values: `EntityId | Name | ProductId | ProductName | ManufacturerAccountId | ManufacturerLegalName | ResellerAccountID | ResellerLegalName | Status | OfferExtendedStatus | CreatedDate | AvailabilityEndDate | LastModifiedDate`
+Valid Values: `EntityId | Name | ProductId | ProductName | ManufacturerAccountId | ManufacturerLegalName | ResellerAccountID | ResellerLegalName | Status | OfferExtendedStatus | CreatedDate | AvailabilityEndDate | LastModifiedDate | ResellerRole | SourceAuthorization | IssuerAccountId`
 Required: No
 
  ** SortOrder **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationSort-SortOrder"></a>

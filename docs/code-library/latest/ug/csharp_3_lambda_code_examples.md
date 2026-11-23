@@ -37,7 +37,7 @@ The following code example shows how to get started using Lambda.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Lambda#code-examples).
 
-```
+```csharp
 namespace LambdaActions;
 
 using Amazon.Lambda;
@@ -80,7 +80,7 @@ For more information, see [Create a Lambda function with the console](https://do
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Lambda#code-examples).
 Create methods that perform Lambda actions.
 
-```
+```csharp
 namespace LambdaActions;
 
 using Amazon.Lambda;
@@ -280,7 +280,7 @@ public class LambdaWrapper
 ```
 Create a function that runs the scenario.
 
-```
+```csharp
 global using System.Threading.Tasks;
 global using Amazon.IdentityManagement;
 global using Amazon.Lambda;
@@ -707,7 +707,7 @@ public class UIWrapper
 ```
 Define a Lambda handler that increments a number.
 
-```
+```csharp
 using Amazon.Lambda.Core;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
@@ -742,7 +742,7 @@ public class Function
 ```
 Define a second Lambda handler that performs arithmetic operations.
 
-```
+```csharp
 using Amazon.Lambda.Core;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
@@ -817,7 +817,7 @@ The following code example shows how to use `CreateFunction`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Lambda#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Creates a new Lambda function.
     /// </summary>
@@ -871,7 +871,7 @@ The following code example shows how to use `DeleteFunction`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Lambda#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an AWS Lambda function.
     /// </summary>
@@ -903,7 +903,7 @@ The following code example shows how to use `GetFunction`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Lambda#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Gets information about a Lambda function.
     /// </summary>
@@ -931,7 +931,7 @@ The following code example shows how to use `Invoke`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Lambda#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Invoke a Lambda function.
     /// </summary>
@@ -966,7 +966,7 @@ The following code example shows how to use `ListFunctions`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Lambda#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of Lambda functions.
     /// </summary>
@@ -995,7 +995,7 @@ The following code example shows how to use `UpdateFunctionCode`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Lambda#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Update an existing Lambda function.
     /// </summary>
@@ -1031,7 +1031,7 @@ The following code example shows how to use `UpdateFunctionConfiguration`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Lambda#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Update the code of a Lambda function.
     /// </summary>
@@ -1126,7 +1126,7 @@ The following code example shows how to implement a Lambda function that connect
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-connect-rds-iam) repository.
 Connecting to an Amazon RDS database in a Lambda function using .NET.
 
-```
+```csharp
 using System.Data;
 using System.Text.Json;
 using Amazon.Lambda.APIGatewayEvents;
@@ -1219,7 +1219,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda) repository.
 Consuming a Kinesis event with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 ﻿using System.Text;
@@ -1282,7 +1282,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 using System.Text.Json;
@@ -1323,7 +1323,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using .NET.
 
-```
+```csharp
 using Amazon.Lambda.Core;
 using System.Text.Json;
 using System;
@@ -1461,7 +1461,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-msk-to-lambda) repository.
 Consuming an Amazon MSK event with Lambda using .NET.
 
-```
+```csharp
 using System.Text;
 using Amazon.Lambda.Core;
 using Amazon.Lambda.KafkaEvents;
@@ -1505,7 +1505,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 ﻿using System.Threading.Tasks;
@@ -1573,7 +1573,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sns-to-lambda) repository.
 Consuming an SNS event with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 using Amazon.Lambda.Core;
@@ -1623,7 +1623,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda) repository.
 Consuming an SQS event with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 ﻿using Amazon.Lambda.Core;
@@ -1673,7 +1673,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda-with-batch-item-handling) repository.
 Reporting Kinesis batch item failures with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 ﻿using System.Text;
@@ -1757,7 +1757,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 using System.Text.Json;
@@ -1813,7 +1813,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 using Amazon.Lambda.Core;

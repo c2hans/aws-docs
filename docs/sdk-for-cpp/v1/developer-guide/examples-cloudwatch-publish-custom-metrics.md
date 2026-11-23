@@ -25,7 +25,7 @@ You cannot specify a namespace that begins with `AWS/`. Namespaces that begin wi
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/PutMetricDataRequest.h>
@@ -34,7 +34,7 @@ You cannot specify a namespace that begins with `AWS/`. Namespaces that begin wi
 
  **Code**
 
-```
+```cpp
         Aws::CloudWatch::CloudWatchClient cw;
 
         Aws::CloudWatch::Model::Dimension dimension;

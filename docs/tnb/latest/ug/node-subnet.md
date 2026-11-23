@@ -9,7 +9,7 @@ A subnet is a range of IP addresses in your VPC, and it must reside entirely wit
 ## Syntax
 <a name="node-subnet-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Networking.Subnet:
   properties:
     type: String
@@ -81,7 +81,7 @@ Type: String
 ## Example
 <a name="node-subnet-example"></a>
 
-```
+```yaml
 SampleSubnet01:
   type: tosca.nodes.AWS.Networking.Subnet
   properties:

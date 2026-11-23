@@ -25,7 +25,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-resource-httpapi-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Serverless::HttpApi
 Properties:
   [AccessLogSettings](#sam-httpapi-accesslogsettings): {{[AccessLogSettings](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-accesslogsettings)}}
@@ -181,7 +181,7 @@ The following example shows the minimum needed to set up an HTTP API endpoint ba
 #### YAML
 <a name="sam-resource-httpapi--examples--simple-httpapi--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: AWS SAM template with a simple API definition
 Resources:
@@ -207,7 +207,7 @@ The following example shows how to set up authorization on HTTP API endpoints.
 #### YAML
 <a name="sam-resource-httpapi--examples--httpapi-with-auth--yaml"></a>
 
-```
+```yaml
 Properties:
   FailOnWarnings: true
   Auth:
@@ -233,7 +233,7 @@ Note that AWS SAM fills in any missing Lambda integrations for HttpApi events th
 #### YAML
 <a name="sam-resource-httpapi--examples--httpapi-with-openapi-definition--yaml"></a>
 
-```
+```yaml
 Properties:
   FailOnWarnings: true
   DefinitionBody:
@@ -271,7 +271,7 @@ The following example shows how to add HTTP API and stage configurations to the 
 #### YAML
 <a name="sam-resource-httpapi--examples--httpapi-with-configuration-settings--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Parameters:

@@ -31,7 +31,7 @@ You can add an Inline policy to your Lambda function's run role. This example al
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -60,7 +60,7 @@ Follow the best practices for Lambda functions. For more information, refer to t
 **Invoking processor Lambda functions**
 When a user sends a message, the following input request invokes the processor Lambda function.
 
-```
+```json
 {
     "EventType": "{{string}}"
     "CallbackId": "{{string}}"

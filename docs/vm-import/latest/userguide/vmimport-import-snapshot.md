@@ -35,7 +35,7 @@ aws ec2 import-snapshot \
 
 The file `containers.json` is a JSON document that contains the required information.
 
-```
+```json
 {
     "Description": "My server VM",
     "Format": "VMDK",
@@ -48,7 +48,7 @@ The file `containers.json` is a JSON document that contains the required informa
 
 The following is example output.
 
-```
+```json
 {
     "Description": "My server VM",
     "ImportTaskId": "import-snap-1234567890abcdef0",
@@ -73,7 +73,7 @@ The following is example output.
 **To import a snapshot**
 Use the [Import-EC2Snapshot](https://docs.aws.amazon.com/powershell/latest/reference/items/Import-EC2Snapshot.html) cmdlet.
 
-```
+```powershell
 Import-EC2Snapshot `
     -DiskContainer_Description "My server VM" `
     -DiskContainer_Format "VMDK" `

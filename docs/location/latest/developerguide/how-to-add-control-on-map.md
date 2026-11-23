@@ -24,7 +24,7 @@ In the following example, you'll add the map controls listed above.
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -67,7 +67,7 @@ In the following example, you'll add the map controls listed above.
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```
@@ -80,7 +80,7 @@ html, body, #map { height: 100%; }
 ### Navigation control options
 <a name="navigationcontrol-options"></a>
 
-```
+```javascript
 new maplibregl.NavigationControl({
     showCompass: true, // show or hide compass (default: true)
     showZoom: true // show or hide zoom controls (default: true)
@@ -90,7 +90,7 @@ new maplibregl.NavigationControl({
 ### Geolocate control options
 <a name="geolocatecontrol-options"></a>
 
-```
+```javascript
 new maplibregl.GeolocateControl({
     positionOptions: { enableHighAccuracy: true }, // default: false
     trackUserLocation: true // default: false
@@ -100,7 +100,7 @@ new maplibregl.GeolocateControl({
 ### Attribution control options
 <a name="attributioncontrol-options"></a>
 
-```
+```javascript
 new maplibregl.AttributionControl({
     compact: true, // compact (collapsed) mode (default: false)
 });
@@ -109,7 +109,7 @@ new maplibregl.AttributionControl({
 ### Scale control options
 <a name="scalecontrol-options"></a>
 
-```
+```javascript
 new maplibregl.ScaleControl({
     maxWidth: 100, // width of the scale (default: 50)
     unit: 'imperial' // imperial or metric (default: metric)
@@ -119,7 +119,7 @@ new maplibregl.ScaleControl({
 ### Fullscreen control options
 <a name="fullscreencontrol-options"></a>
 
-```
+```javascript
 map.addControl(new maplibregl.FullscreenControl({
     container: document.querySelector('body') // container for fullscreen mode
 }));

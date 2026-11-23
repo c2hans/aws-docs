@@ -85,7 +85,7 @@ To view the AI analysis:
 
  To create AWS supported cases and access investigation results, the IAM principal needs the following permissions:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

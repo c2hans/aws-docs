@@ -13,7 +13,7 @@ To create an instance of a resource using its corresponding construct, pass in t
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as sqs from '@aws-cdk/aws-sqs';
 
 new sqs.Queue(this, 'MyQueue', {
@@ -24,7 +24,7 @@ new sqs.Queue(this, 'MyQueue', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const sqs = require('@aws-cdk/aws-sqs');
 
 new sqs.Queue(this, 'MyQueue', {
@@ -35,7 +35,7 @@ new sqs.Queue(this, 'MyQueue', {
 ------
 #### [ Python ]
 
-```
+```python
 import aws_cdk.aws_sqs as sqs
 
 sqs.Queue(self, "MyQueue", encryption=sqs.QueueEncryption.KMS_MANAGED)
@@ -44,7 +44,7 @@ sqs.Queue(self, "MyQueue", encryption=sqs.QueueEncryption.KMS_MANAGED)
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awscdk.services.sqs.*;
 
 Queue.Builder.create(this, "MyQueue").encryption(
@@ -54,7 +54,7 @@ Queue.Builder.create(this, "MyQueue").encryption(
 ------
 #### [ C\# ]
 
-```
+```csharp
 using Amazon.CDK.AWS.SQS;
 
 new Queue(this, "MyQueue", new QueueProps
@@ -75,7 +75,7 @@ Most resources in the AWS Construct Library expose attributes, which are resolve
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as sqs from '@aws-cdk/aws-sqs';
 
 const queue = new sqs.Queue(this, 'MyQueue');
@@ -85,7 +85,7 @@ const url = queue.queueUrl; // => A string representing a deploy-time value
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const sqs = require('@aws-cdk/aws-sqs');
 
 const queue = new sqs.Queue(this, 'MyQueue');
@@ -95,7 +95,7 @@ const url = queue.queueUrl; // => A string representing a deploy-time value
 ------
 #### [ Python ]
 
-```
+```python
 import aws_cdk.aws_sqs as sqs
 
 queue = sqs.Queue(self, "MyQueue")
@@ -105,7 +105,7 @@ url = queue.queue_url # => A string representing a deploy-time value
 ------
 #### [ Java ]
 
-```
+```java
 Queue queue = new Queue(this, "MyQueue");
 String url = queue.getQueueUrl();    // => A string representing a deploy-time value
 ```
@@ -113,7 +113,7 @@ String url = queue.getQueueUrl();    // => A string representing a deploy-time v
 ------
 #### [ C\# ]
 
-```
+```csharp
 var queue = new Queue(this, "MyQueue");
 var url = queue.QueueUrl; // => A string representing a deploy-time value
 ```
@@ -136,7 +136,7 @@ You can directly pass any resource object of the proper type defined in the same
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const cluster = new ecs.Cluster(this, 'Cluster', { /*...*/ });
 
 const service = new ecs.Ec2Service(this, 'Service', { cluster: cluster });
@@ -145,7 +145,7 @@ const service = new ecs.Ec2Service(this, 'Service', { cluster: cluster });
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const cluster = new ecs.Cluster(this, 'Cluster', { /*...*/ });
 
 const service = new ecs.Ec2Service(this, 'Service', { cluster: cluster });
@@ -154,7 +154,7 @@ const service = new ecs.Ec2Service(this, 'Service', { cluster: cluster });
 ------
 #### [ Python ]
 
-```
+```python
 cluster = ecs.Cluster(self, "Cluster")
 
 service = ecs.Ec2Service(self, "Service", cluster=cluster)
@@ -163,7 +163,7 @@ service = ecs.Ec2Service(self, "Service", cluster=cluster)
 ------
 #### [ Java ]
 
-```
+```java
 Cluster cluster = new Cluster(this, "Cluster");
 Ec2Service service = new Ec2Service(this, "Service",
         new Ec2ServiceProps.Builder().cluster(cluster).build());
@@ -172,7 +172,7 @@ Ec2Service service = new Ec2Service(this, "Service",
 ------
 #### [ C\# ]
 
-```
+```csharp
 var cluster = new Cluster(this, "Cluster");
 var service = new Ec2Service(this, "Service", new Ec2ServiceProps { Cluster = cluster });
 ```
@@ -191,7 +191,7 @@ The following example defines a stack `stack1`. This stack defines an Amazon S3 
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const prod = { account: '123456789012', region: 'us-east-1' };
 
 const stack1 = new StackThatProvidesABucket(app, 'Stack1', { env: prod });
@@ -206,7 +206,7 @@ const stack2 = new StackThatExpectsABucket(app, 'Stack2', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const prod = { account: '123456789012', region: 'us-east-1' };
 
 const stack1 = new StackThatProvidesABucket(app, 'Stack1', { env: prod });
@@ -221,7 +221,7 @@ const stack2 = new StackThatExpectsABucket(app, 'Stack2', {
 ------
 #### [ Python ]
 
-```
+```python
 prod = core.Environment(account="123456789012", region="us-east-1")
 
 stack1 = StackThatProvidesABucket(app, "Stack1", env=prod)
@@ -233,7 +233,7 @@ stack2 = StackThatExpectsABucket(app, "Stack2", bucket=stack1.bucket, env=prod)
 ------
 #### [ Java ]
 
-```
+```java
 // Helper method to build an environment
 static Environment makeEnv(String account, String region) {
     return Environment.builder().account(account).region(region)
@@ -255,7 +255,7 @@ StackThatExpectsABucket stack2 = new StackThatExpectsABucket(app, "Stack,",
 ------
 #### [ C\# ]
 
-```
+```csharp
 Amazon.CDK.Environment makeEnv(string account, string region)
 {
     return new Amazon.CDK.Environment { Account = account, Region = region };
@@ -293,7 +293,7 @@ The following example shows how to reference a bucket based on an existing bucke
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 // Construct a proxy for a bucket by its name (must be same account)
 s3.Bucket.fromBucketName(this, 'MyBucket', 'my-bucket-name');
 
@@ -309,7 +309,7 @@ ec2.Vpc.fromVpcAttributes(this, 'MyVpc', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 // Construct a proxy for a bucket by its name (must be same account)
 s3.Bucket.fromBucketName(this, 'MyBucket', 'my-bucket-name');
 
@@ -325,7 +325,7 @@ ec2.Vpc.fromVpcAttributes(this, 'MyVpc', {
 ------
 #### [ Python ]
 
-```
+```python
 # Construct a proxy for a bucket by its name (must be same account)
 s3.Bucket.from_bucket_name(self, "MyBucket", "my-bucket-name")
 
@@ -339,7 +339,7 @@ ec2.Vpc.from_vpc_attributes(self, "MyVpc", vpc_id="vpc-1234567890abcdef")
 ------
 #### [ Java ]
 
-```
+```java
 // Construct a proxy for a bucket by its name (must be same account)
 Bucket.fromBucketName(this, "MyBucket", "my-bucket-name");
 
@@ -355,7 +355,7 @@ Vpc.fromVpcAttributes(this, "MyVpc", VpcAttributes.builder()
 ------
 #### [ C\# ]
 
-```
+```csharp
 // Construct a proxy for a bucket by its name (must be same account)
 Bucket.FromBucketName(this, "MyBucket", "my-bucket-name");
 
@@ -382,7 +382,7 @@ You must provide `Vpc.fromLookup()` attributes sufficient to uniquely identify a
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 ec2.Vpc.fromLookup(this, 'DefaultVpc', {
   isDefault: true
 });
@@ -391,7 +391,7 @@ ec2.Vpc.fromLookup(this, 'DefaultVpc', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 ec2.Vpc.fromLookup(this, 'DefaultVpc', {
   isDefault: true
 });
@@ -400,14 +400,14 @@ ec2.Vpc.fromLookup(this, 'DefaultVpc', {
 ------
 #### [ Python ]
 
-```
+```python
 ec2.Vpc.from_lookup(self, "DefaultVpc", is_default=True)
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 Vpc.fromLookup(this, "DefaultVpc", VpcLookupOptions.builder()
         .isDefault(true).build());
 ```
@@ -415,7 +415,7 @@ Vpc.fromLookup(this, "DefaultVpc", VpcLookupOptions.builder()
 ------
 #### [ C\# ]
 
-```
+```csharp
 Vpc.FromLookup(this, id = "DefaultVpc", new VpcLookupOptions { IsDefault = true });
 ```
 
@@ -429,7 +429,7 @@ You can also use the `tags` property to query for VPCs by tag. Tags may be added
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 ec2.Vpc.fromLookup(this, 'PublicVpc',
     {tags: {'aws-cdk:subnet-type': "Public"}});
 ```
@@ -437,7 +437,7 @@ ec2.Vpc.fromLookup(this, 'PublicVpc',
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 ec2.Vpc.fromLookup(this, 'PublicVpc',
     {tags: {'aws-cdk:subnet-type': "Public"}});
 ```
@@ -445,7 +445,7 @@ ec2.Vpc.fromLookup(this, 'PublicVpc',
 ------
 #### [ Python ]
 
-```
+```python
 ec2.Vpc.from_lookup(self, "PublicVpc",
     tags={"aws-cdk:subnet-type": "Public"})
 ```
@@ -453,7 +453,7 @@ ec2.Vpc.from_lookup(self, "PublicVpc",
 ------
 #### [ Java ]
 
-```
+```java
 Vpc.fromLookup(this, "PublicVpc", VpcLookupOptions.builder()
         .tags(java.util.Map.of("aws-cdk:subnet-type", "Public"))  // Java 9 or later
         .build());
@@ -462,7 +462,7 @@ Vpc.fromLookup(this, "PublicVpc", VpcLookupOptions.builder()
 ------
 #### [ C\# ]
 
-```
+```csharp
 Vpc.FromLookup(this, id = "PublicVpc", new VpcLookupOptions
      { Tags = new Dictionary<string, string> { ["aws-cdk:subnet-type"] = "Public" });
 ```
@@ -485,7 +485,7 @@ You can specify a physical name when creating constructs that represent resource
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const bucket = new s3.Bucket(this, 'MyBucket', {
   bucketName: 'my-bucket-name',
 });
@@ -494,7 +494,7 @@ const bucket = new s3.Bucket(this, 'MyBucket', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const bucket = new s3.Bucket(this, 'MyBucket', {
   bucketName: 'my-bucket-name'
 });
@@ -503,14 +503,14 @@ const bucket = new s3.Bucket(this, 'MyBucket', {
 ------
 #### [ Python ]
 
-```
+```python
 bucket = s3.Bucket(self, "MyBucket", bucket_name="my-bucket-name")
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 Bucket bucket = Bucket.Builder.create(this, "MyBucket")
         .bucketName("my-bucket-name").build();
 ```
@@ -518,7 +518,7 @@ Bucket bucket = Bucket.Builder.create(this, "MyBucket")
 ------
 #### [ C\# ]
 
-```
+```csharp
 var bucket = new Bucket(this, "MyBucket", new BucketProps { BucketName = "my-bucket-name" });
 ```
 
@@ -531,7 +531,7 @@ In some cases, such as when creating an AWS CDK app with cross-environment refer
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const bucket = new s3.Bucket(this, 'MyBucket', {
   bucketName: core.PhysicalName.GENERATE_IF_NEEDED,
 });
@@ -540,7 +540,7 @@ const bucket = new s3.Bucket(this, 'MyBucket', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const bucket = new s3.Bucket(this, 'MyBucket', {
   bucketName: core.PhysicalName.GENERATE_IF_NEEDED
 });
@@ -549,7 +549,7 @@ const bucket = new s3.Bucket(this, 'MyBucket', {
 ------
 #### [ Python ]
 
-```
+```python
 bucket = s3.Bucket(self, "MyBucket",
                          bucket_name=core.PhysicalName.GENERATE_IF_NEEDED)
 ```
@@ -557,7 +557,7 @@ bucket = s3.Bucket(self, "MyBucket",
 ------
 #### [ Java ]
 
-```
+```java
 Bucket bucket = Bucket.Builder.create(this, "MyBucket")
         .bucketName(PhysicalName.GENERATE_IF_NEEDED).build();
 ```
@@ -565,7 +565,7 @@ Bucket bucket = Bucket.Builder.create(this, "MyBucket")
 ------
 #### [ C\# ]
 
-```
+```csharp
 var bucket = new Bucket(this, "MyBucket", new BucketProps
     { BucketName = PhysicalName.GENERATE_IF_NEEDED });
 ```
@@ -611,7 +611,7 @@ security_group_arn
 
 The Java AWS CDK binding uses getter methods for attributes.
 
-```
+```java
 bucket.getBucketName()
 lambdaFunc.getFunctionArn()
 securityGroup.getGroupArn()
@@ -633,7 +633,7 @@ The following example shows how to pass a generated bucket name to an AWS Lambda
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const bucket = new s3.Bucket(this, 'Bucket');
 
 new lambda.Function(this, 'MyLambda', {
@@ -647,7 +647,7 @@ new lambda.Function(this, 'MyLambda', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const bucket = new s3.Bucket(this, 'Bucket');
 
 new lambda.Function(this, 'MyLambda', {
@@ -661,7 +661,7 @@ new lambda.Function(this, 'MyLambda', {
 ------
 #### [ Python ]
 
-```
+```python
 bucket = s3.Bucket(self, "Bucket")
 
 lambda.Function(self, "MyLambda", environment=dict(BUCKET_NAME=bucket.bucket_name))
@@ -670,7 +670,7 @@ lambda.Function(self, "MyLambda", environment=dict(BUCKET_NAME=bucket.bucket_nam
 ------
 #### [ Java ]
 
-```
+```java
 final Bucket bucket = new Bucket(this, "Bucket");
 
 Function.Builder.create(this, "MyLambda")
@@ -682,7 +682,7 @@ Function.Builder.create(this, "MyLambda")
 ------
 #### [ C\# ]
 
-```
+```csharp
 var bucket = new Bucket(this, "Bucket");
 
 new Function(this, "MyLambda", new FunctionProps
@@ -706,7 +706,7 @@ The following example creates the permissions to allow a Lambda function's execu
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 if (bucket.grantReadWrite(func).success) {
   // ...
 }
@@ -715,7 +715,7 @@ if (bucket.grantReadWrite(func).success) {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 if ( bucket.grantReadWrite(func).success) {
   // ...
 }
@@ -724,7 +724,7 @@ if ( bucket.grantReadWrite(func).success) {
 ------
 #### [ Python ]
 
-```
+```python
 if bucket.grant_read_write(func).success:
     # ...
 ```
@@ -732,7 +732,7 @@ if bucket.grant_read_write(func).success:
 ------
 #### [ Java ]
 
-```
+```java
 if (bucket.grantReadWrite(func).getSuccess()) {
     // ...
 }
@@ -741,7 +741,7 @@ if (bucket.grantReadWrite(func).getSuccess()) {
 ------
 #### [ C\# ]
 
-```
+```csharp
 if (bucket.GrantReadWrite(func).Success)
 {
     // ...
@@ -759,35 +759,35 @@ The following example shows how to grant a Lambda function access to the Amazon 
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 table.grant(func, 'dynamodb:CreateBackup');
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 table.grant(func, 'dynamodb:CreateBackup');
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 table.grant(func, "dynamodb:CreateBackup")
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 table.grant(func, "dynamodb:CreateBackup");
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 table.Grant(func, "dynamodb:CreateBackup");
 ```
 
@@ -807,7 +807,7 @@ The following example shows how to define an alarm when the `ApproximateNumberOf
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as cw from '@aws-cdk/aws-cloudwatch';
 import * as sqs from '@aws-cdk/aws-sqs';
 import { Duration } from '@aws-cdk/core';
@@ -829,7 +829,7 @@ metric.createAlarm(this, 'TooManyMessagesAlarm', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const cw = require('@aws-cdk/aws-cloudwatch');
 const sqs = require('@aws-cdk/aws-sqs');
 const { Duration } = require('@aws-cdk/core');
@@ -851,7 +851,7 @@ metric.createAlarm(this, 'TooManyMessagesAlarm', {
 ------
 #### [ Python ]
 
-```
+```python
 import aws_cdk.aws_cloudwatch as cw
 import aws_cdk.aws_sqs as sqs
 from aws_cdk.core import Duration
@@ -872,7 +872,7 @@ metric.create_alarm(self, "TooManyMessagesAlarm",
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awscdk.core.Duration;
 import software.amazon.awscdk.services.sqs.Queue;
 import software.amazon.awscdk.services.cloudwatch.Metric;
@@ -897,7 +897,7 @@ metric.createAlarm(this, "TooManyMessagesAlarm", CreateAlarmOptions.builder()
 ------
 #### [ C\# ]
 
-```
+```csharp
 using cdk = Amazon.CDK;
 using cw = Amazon.CDK.AWS.CloudWatch;
 using sqs = Amazon.CDK.AWS.SQS;
@@ -935,7 +935,7 @@ You enable data to flow on a given network path by using `allow` methods. The fo
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as asg from '@aws-cdk/aws-autoscaling';
 import * as ec2 from '@aws-cdk/aws-ec2';
 
@@ -951,7 +951,7 @@ fleet1.connections.allowFrom(fleet2, ec2.Port.AllTraffic());
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const asg = require('@aws-cdk/aws-autoscaling');
 const ec2 = require('@aws-cdk/aws-ec2');
 
@@ -967,7 +967,7 @@ fleet1.connections.allowFrom(fleet2, ec2.Port.AllTraffic());
 ------
 #### [ Python ]
 
-```
+```python
 import aws_cdk.aws_autoscaling as asg
 import aws_cdk.aws_ec2 as ec2
 
@@ -984,7 +984,7 @@ fleet1.connections.allow_from(fleet2, ec2.Port.all_traffic())
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awscdk.services.autoscaling.AutoScalingGroup;
 import software.amazon.awscdk.services.ec2.Peer;
 import software.amazon.awscdk.services.ec2.Port;
@@ -1004,7 +1004,7 @@ fleet1.getConnections().allowFrom(fleet2, Port.allTraffic());
 ------
 #### [ C\# ]
 
-```
+```csharp
 using cdk = Amazon.CDK;
 using asg = Amazon.CDK.AWS.AutoScaling;
 using ec2 = Amazon.CDK.AWS.EC2;
@@ -1027,7 +1027,7 @@ The following example shows how to enable connections from any IPV4 address, and
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 listener.connections.allowDefaultPortFromAnyIpv4('Allow public access');
 
 fleet.connections.allowToDefaultPort(rdsDatabase, 'Fleet can access database');
@@ -1036,7 +1036,7 @@ fleet.connections.allowToDefaultPort(rdsDatabase, 'Fleet can access database');
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 listener.connections.allowDefaultPortFromAnyIpv4('Allow public access');
 
 fleet.connections.allowToDefaultPort(rdsDatabase, 'Fleet can access database');
@@ -1045,7 +1045,7 @@ fleet.connections.allowToDefaultPort(rdsDatabase, 'Fleet can access database');
 ------
 #### [ Python ]
 
-```
+```python
 listener.connections.allow_default_port_from_any_ipv4("Allow public access")
 
 fleet.connections.allow_to_default_port(rds_database, "Fleet can access database")
@@ -1054,7 +1054,7 @@ fleet.connections.allow_to_default_port(rds_database, "Fleet can access database
 ------
 #### [ Java ]
 
-```
+```java
 listener.getConnections().allowDefaultPortFromAnyIpv4("Allow public access");
 
 fleet.getConnections().AllowToDefaultPort(rdsDatabase, "Fleet can access database");
@@ -1063,7 +1063,7 @@ fleet.getConnections().AllowToDefaultPort(rdsDatabase, "Fleet can access databas
 ------
 #### [ C\# ]
 
-```
+```csharp
 listener.Connections.AllowDefaultPortFromAnyIpv4("Allow public access");
 
 fleet.Connections.AllowToDefaultPort(rdsDatabase, "Fleet can access database");
@@ -1081,7 +1081,7 @@ The following example shows how to trigger a Lambda function when an object is a
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as s3nots from '@aws-cdk/aws-s3-notifications';
 
 const handler = new lambda.Function(this, 'Handler', { /*…*/ });
@@ -1092,7 +1092,7 @@ bucket.addObjectCreatedNotification(new s3nots.LambdaDestination(handler));
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const s3nots = require('@aws-cdk/aws-s3-notifications');
 
 const handler = new lambda.Function(this, 'Handler', { /*…*/ });
@@ -1103,7 +1103,7 @@ bucket.addObjectCreatedNotification(new s3nots.LambdaDestination(handler));
 ------
 #### [ Python ]
 
-```
+```python
 import aws_cdk.aws_s3_notifications as s3_nots
 
 handler = lambda_.Function(self, "Handler", ...)
@@ -1114,7 +1114,7 @@ bucket.add_object_created_notification(s3_nots.LambdaDestination(handler))
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awscdk.services.s3.Bucket;
 import software.amazon.awscdk.services.lambda.Function;
 import software.amazon.awscdk.services.s3.notifications.LambdaDestination;
@@ -1127,7 +1127,7 @@ bucket.addObjectCreatedNotification(new LambdaDestination(handler));
 ------
 #### [ C\# ]
 
-```
+```csharp
 using lambda = Amazon.CDK.AWS.Lambda;
 using s3 = Amazon.CDK.AWS.S3;
 using s3Nots = Amazon.CDK.AWS.S3.Notifications;
@@ -1159,7 +1159,7 @@ Following is an example of creating an Amazon S3 bucket with `RemovalPolicy` of 
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as cdk from '@aws-cdk/core';
 import * as s3 from '@aws-cdk/aws-s3';
 
@@ -1178,7 +1178,7 @@ export class CdkTestStack extends cdk.Stack {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const cdk = require('@aws-cdk/core');
 const s3 = require('@aws-cdk/aws-s3');
 
@@ -1199,7 +1199,7 @@ module.exports = { CdkTestStack }
 ------
 #### [ Python ]
 
-```
+```python
 import aws_cdk.core as cdk
 import aws_cdk.aws_s3 as s3
 
@@ -1215,7 +1215,7 @@ class CdkTestStack(cdk.stack):
 ------
 #### [ Java ]
 
-```
+```java
 software.amazon.awscdk.core.*;
 import software.amazon.awscdk.services.s3.*;
 
@@ -1237,7 +1237,7 @@ public class CdkTestStack extends Stack {
 ------
 #### [ C\# ]
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.S3;
 
@@ -1257,7 +1257,7 @@ You can also apply a removal policy directly to the underlying CloudFormation re
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const resource = bucket.node.findChild('Resource') as cdk.CfnResource;
 resource.applyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
 ```
@@ -1265,7 +1265,7 @@ resource.applyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const resource = bucket.node.findChild('Resource');
 resource.applyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
 ```
@@ -1273,7 +1273,7 @@ resource.applyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
 ------
 #### [ Python ]
 
-```
+```python
 resource = bucket.node.find_child('Resource')
 resource.apply_removal_policy(cdk.RemovalPolicy.DESTROY);
 ```
@@ -1281,7 +1281,7 @@ resource.apply_removal_policy(cdk.RemovalPolicy.DESTROY);
 ------
 #### [ Java ]
 
-```
+```java
 CfnResource resource = (CfnResource)bucket.node.findChild("Resource");
 resource.applyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
 ```
@@ -1289,7 +1289,7 @@ resource.applyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
 ------
 #### [ C\# ]
 
-```
+```csharp
 var resource = (CfnResource)bucket.node.findChild('Resource');
 resource.ApplyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
 ```

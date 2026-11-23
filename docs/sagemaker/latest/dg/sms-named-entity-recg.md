@@ -108,7 +108,7 @@ You provide short and long instructions using `shortInstruction` and `fullInstru
 
 The following is an example of a label category configuration file with instructions that can be used for a named entity recognition labeling job.
 
-```
+```html
 {
   "document-version": "2018-11-28",
   "labels": [

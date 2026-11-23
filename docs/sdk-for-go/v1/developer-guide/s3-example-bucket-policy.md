@@ -28,7 +28,7 @@ For more information about bucket policies for Amazon S3 buckets, see [Using Buc
 
 Create a new Go file named `s3_get_bucket_policy.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/awserr"
@@ -44,7 +44,7 @@ import (
 
 Create the `exitError` function to deal with errors.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -53,7 +53,7 @@ func exitErrorf(msg string, args ...interface{}) {
 
 This routine prints the policy for a bucket. If the bucket doesn’t exist, or there was an error, an error message is printed instead. It requires the bucket name as input.
 
-```
+```go
 if len(os.Args) != 2 {
     exitErrorf("bucket name required\nUsage: %s bucket_name",
         filepath.Base(os.Args[0]))
@@ -64,7 +64,7 @@ bucket := os.Args[1]
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file, `~/.aws/credentials`, and create a new S3 service client.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-west-2")},
 )
@@ -74,7 +74,7 @@ svc := s3.New(sess)
 
 Call [GetBucketPolicy](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.GetBucketPolicy) to fetch the policy, then display any errors.
 
-```
+```go
 result, err := svc.GetBucketPolicy(&s3.GetBucketPolicyInput{
     Bucket: aws.String(bucket),
 })
@@ -95,7 +95,7 @@ if err != nil {
 
 Use Go’s JSON package to print the Policy JSON returned by the call.
 
-```
+```go
 out := bytes.Buffer{}
 policyStr := aws.StringValue(result.Policy)
 if err := json.Indent(&out, []byte(policyStr), "", "  "); err != nil {
@@ -113,7 +113,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 
 This routine sets the policy for a bucket. If the bucket doesn’t exist, or there was an error, an error message will be printed instead. It requires the bucket name as input. It also requires the same Go and AWS SDK for Go packages as the previous example, except for the `bytes` Go package.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/awserr"
@@ -128,7 +128,7 @@ import (
 
 Add the main function and parse the arguments to get the bucket name.
 
-```
+```go
 func main() {
     if len(os.Args) != 2 {
         exitErrorf("bucket name required\nUsage: %s bucket_name",
@@ -139,7 +139,7 @@ func main() {
 
 Initialize a session that the SDK will use to load configuration, credentials, and region information from the shared credentials file, `~/.aws/credentials`, and create a new S3 service client.
 
-```
+```go
     sess, err := session.NewSession(&aws.Config{
         Region: aws.String("us-west-2")},
     )
@@ -149,7 +149,7 @@ Initialize a session that the SDK will use to load configuration, credentials, a
 
 Create a policy using the map interface, filling in the bucket as the resource.
 
-```
+```go
     readOnlyAnonUserPolicy := map[string]interface{}{
         "Version": "2012-10-17",
         "Statement": []map[string]interface{}{
@@ -170,13 +170,13 @@ Create a policy using the map interface, filling in the bucket as the resource.
 
 Use Go’s JSON package to marshal the policy into a JSON value so that it can be sent to S3.
 
-```
+```go
     policy, err := json.Marshal(readOnlyAnonUserPolicy)
 ```
 
 Call the S3 client’s [PutBucketPolicy](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutBucketPolicy) to PUT the policy for the bucket and print the results.
 
-```
+```go
     _, err = svc.PutBucketPolicy(&s3.PutBucketPolicyInput{
         Bucket: aws.String(bucket),
         Policy: aws.String(string(policy)),
@@ -187,7 +187,7 @@ Call the S3 client’s [PutBucketPolicy](https://docs.aws.amazon.com/sdk-for-go/
 
 The `exitError` function is used to deal with printing any errors.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)

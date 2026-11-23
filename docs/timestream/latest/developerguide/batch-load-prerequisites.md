@@ -30,7 +30,7 @@ This is a list of prerequisites for using batch load. For best practices, see [B
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

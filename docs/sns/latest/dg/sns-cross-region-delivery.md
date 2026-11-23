@@ -54,7 +54,7 @@ When you use Amazon SNS to deliver messages from opt-in Regions to Regions that 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Id": "__default_policy_ID",

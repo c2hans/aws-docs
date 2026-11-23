@@ -26,7 +26,7 @@ The following policy allows `invoke_endpoint` requests only when the value of th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -58,7 +58,7 @@ The following policy denies `invoke_endpoint` requests when the value of the `Ta
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

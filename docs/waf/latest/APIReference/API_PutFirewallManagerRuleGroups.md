@@ -72,6 +72,18 @@ This action is only available to AWS Firewall Manager for the management of Fire
                            }
                         }
                      },
+                     "AWSManagedRulesAISecurityRuleSet": {
+                        "BedrockGuardrails": {
+                           "Disable": {
+                           },
+                           "ProtectRequestAndResponse": {
+                              "RoleArn": "{{string}}"
+                           },
+                           "ProtectRequestOnly": {
+                              "RoleArn": "{{string}}"
+                           }
+                        }
+                     },
                      "AWSManagedRulesAntiDDoSRuleSet": {
                         "ClientSideActionConfig": {
                            "Challenge": {
@@ -991,6 +1003,18 @@ This action is only available to AWS Firewall Manager for the management of Fire
                            "StatusCode": {
                               "FailureCodes": [ {{number}} ],
                               "SuccessCodes": [ {{number}} ]
+                           }
+                        }
+                     },
+                     "AWSManagedRulesAISecurityRuleSet": {
+                        "BedrockGuardrails": {
+                           "Disable": {
+                           },
+                           "ProtectRequestAndResponse": {
+                              "RoleArn": "{{string}}"
+                           },
+                           "ProtectRequestOnly": {
+                              "RoleArn": "{{string}}"
                            }
                         }
                      },

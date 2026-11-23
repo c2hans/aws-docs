@@ -38,7 +38,7 @@ The following topics show how the Amazon Bedrock AgentCore Browser works and how
 
 To use the Amazon Bedrock AgentCore Browser, you need the following permissions in your IAM policy:
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [
@@ -66,7 +66,7 @@ To use the Amazon Bedrock AgentCore Browser, you need the following permissions 
 
 If you’re using session recording with S3, the execution role you provide when creating a browser needs the following permissions:
 
-```
+```json
 {
     "Sid": "BedrockAgentCoreBuiltInToolsS3Policy",
     "Effect": "Allow",
@@ -86,7 +86,7 @@ If you’re using session recording with S3, the execution role you provide when
 
 You should also add the following trust policy to the execution role:
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [{

@@ -49,7 +49,7 @@ Users can still call other Amazon Rekognition API operations from outside the VP
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

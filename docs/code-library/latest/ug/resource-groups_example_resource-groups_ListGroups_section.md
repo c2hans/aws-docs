@@ -53,7 +53,7 @@ For more information, see [What are resource groups?](https://docs.aws.amazon.co
 **Tools for PowerShell V4**
 **Example 1: This example lists resource group already created.**
 
-```
+```powershell
 Get-RGGroupList
 ```
 **Output:**
@@ -70,7 +70,7 @@ arn:aws:resource-groups:eu-west-1:123456789012:group/build600             build6
 **Tools for PowerShell V5**
 **Example 1: This example lists resource group already created.**
 
-```
+```powershell
 Get-RGGroupList
 ```
 **Output:**

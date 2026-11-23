@@ -74,7 +74,7 @@ As EMR-Serverless leverage Identity-enhanced job-execution-role credentials to p
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -33,7 +33,7 @@ A new log stream is created for each synchronization job run.
 There are three types of log messages published to a data source log stream:
 + A log message for a document that failed to be sent for indexing. The following is an example of this message for a document in an S3 data source:
 
-  ```
+  ```json
   {
       "DocumentId": "{{document ID}}",
       "S3Path": "s3://{{bucket}}/{{prefix}}/{{object}}",
@@ -44,7 +44,7 @@ There are three types of log messages published to a data source log stream:
   ```
 + A log message for a document that failed to be sent for deletion. The following is an example of this message:
 
-  ```
+  ```json
   {
       "DocumentId": "{{document ID}}",
       "Message": "Failed to delete document via BatchDeleteDocument.",
@@ -54,14 +54,14 @@ There are three types of log messages published to a data source log stream:
   ```
 + A log message when an invalid metadata file for a document in an Amazon S3 bucket is found. The following is an example of this message.
 
-  ```
+  ```json
   {
       "Message": "Found invalid metadata file {{bucket}}/{{prefix}}/{{filename}}.{{extension}}.metadata.json."
   }
   ```
 + For SharePoint and database connectors, Amazon Kendra only writes messages to the log stream if a document can't be indexed. The following is an example of the error message that Amazon Kendra logs.
 
-  ```
+  ```json
   {
       "DocumentID": "{{document ID}}",
       "IndexID": "{{index ID}}",
@@ -94,7 +94,7 @@ Each log stream contains up to 500 messages.
 
 If indexing a document fails, this message is output to the log stream:
 
-```
+```json
 {
     "DocumentId": "{{document ID}}",
     "IndexName": "{{index name}}",

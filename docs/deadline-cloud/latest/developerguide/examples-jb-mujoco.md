@@ -16,7 +16,7 @@ The bundle requires a Linux x86\_64 GPU fleet (steps render headless through EGL
 
 From the `job_bundles` directory, submit the job:
 
-```
+```bash
 OUT="$(pwd)/output"; mkdir -p "$OUT"
 deadline bundle submit mujoco_sim_to_policy -p "OutputDir=$OUT" --yes
 ```

@@ -183,7 +183,7 @@ You can launch EC2 instances in the subnet that you created when you added the c
 
    The following is example output.
 
-   ```
+   ```json
    {
        "AllocationId": "eipalloc-05807b62acEXAMPLE",
        "PublicIpv4Pool": "amazon",
@@ -202,7 +202,7 @@ You can launch EC2 instances in the subnet that you created when you added the c
 
    The following is example output.
 
-   ```
+   ```json
    {
        "AssociationId": "eipassoc-02463d08ceEXAMPLE",
    }

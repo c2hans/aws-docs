@@ -49,7 +49,7 @@ The following example updates the package list, and then downloads and installs 
    wget "https://downloads.wordpress.org/plugin/buddypress.14.0.0.zip"
    apt-get install unzip
    # unzip into wordpress plugin directory
-   unzip buddypress.14.0.0.zip -d /bitnami/wordpress/wp-content/plugins
+   unzip buddypress.14.0.0.zip -d /var/www/html/wp-content/plugins
    ```
 
 1. Choose **Create instance**.

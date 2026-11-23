@@ -117,7 +117,7 @@ Valid pattern: `.+`
 
 The following CLI command creates a `ConnectorDefinition` with an initial version that contains the Raspberry Pi GPIO connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -200,7 +200,7 @@ Use this topic to listen for errors. The connector publishes to this topic as a 
 When publishing to this topic, the connector replaces the `+` wildcard with the core thing name.
 **Example output**
 
-```
+```json
 {
    "topic": "gpio/my-core-thing/22/write",
    "error": "Invalid GPIO operation",
@@ -248,7 +248,7 @@ The [Get started with connectors (console)](connectors-console.md) and [Get star
 
 The following example Lambda function sends an input message to the connector. This example sends read requests for a set of input GPIO pins. It shows how to construct topics using the core thing name and pin number.
 
-```
+```python
 import greengrasssdk
 import json
 import os

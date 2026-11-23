@@ -15,7 +15,7 @@ The following code examples show how to use `GetJob`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/MediaConvert#code-examples).
 Set up the file locations, client, and wrapper.
 
-```
+```csharp
         // MediaConvert role Amazon Resource Name (ARN).
         // For information on creating this role, see
         // https://docs.aws.amazon.com/mediaconvert/latest/ug/creating-the-iam-role-in-mediaconvert-configured.html.
@@ -31,7 +31,7 @@ Set up the file locations, client, and wrapper.
 ```
 Get a job by its ID.
 
-```
+```csharp
         Console.WriteLine(new string('-', 80));
         Console.WriteLine($"Getting job information for Job ID {jobId}");
         var job = await wrapper.GetJobById(jobId);
@@ -39,7 +39,7 @@ Get a job by its ID.
         Console.WriteLine(new string('-', 80));
 ```
 
-```
+```csharp
     /// <summary>
     /// Get the job information for a job by its ID.
     /// </summary>
@@ -64,7 +64,7 @@ Get a job by its ID.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/mediaconvert#code-examples).
 
-```
+```cpp
 //! Retrieve the information for a specific completed transcoding job.
 /*!
   \param jobID: A job ID.
@@ -163,7 +163,7 @@ For more information, see [Working with jobs](https://docs.aws.amazon.com/mediac
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/mediaconvert#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.mediaconvert.model.DescribeEndpointsResponse;
 import software.amazon.awssdk.services.mediaconvert.model.GetJobRequest;
@@ -229,7 +229,7 @@ public class GetJob {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/mediaconvert#code-examples).
 
-```
+```kotlin
 suspend fun getSpecificJob(mcClient: MediaConvertClient, jobId: String) {
     // 1. Discover the correct endpoint
     val res = mcClient.describeEndpoints(DescribeEndpointsRequest { maxResults = 1 })

@@ -124,7 +124,7 @@ Invoking the `npm ping` command is a way to verify the following:
 
 The output from a successful invocation of `npm ping` looks like the following.
 
-```
+```text
 $ npm -d ping
 npm info it worked if it ends with ok
 npm info using npm@6.4.1

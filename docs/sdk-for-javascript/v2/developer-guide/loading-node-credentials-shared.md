@@ -12,7 +12,7 @@ You can keep your AWS credentials data in a shared file used by SDKs and the com
 
 If you do not already have a shared credentials file, see [SDK authentication with AWS](getting-your-credentials.md). Once you follow those instructions, you should see text similar to the following in the credentials file, where {{<YOUR\_ACCESS\_KEY\_ID>}} is your access key ID and {{<YOUR\_SECRET\_ACCESS\_KEY>}} is your secret access key:
 
-```
+```ini
 [default]
 aws_access_key_id = {{<YOUR_ACCESS_KEY_ID>}}
 aws_secret_access_key = {{<YOUR_SECRET_ACCESS_KEY>}}
@@ -22,7 +22,7 @@ For an example showing this file being used, see [Getting Started in Node.js](ge
 
 The `[default]` section heading specifies a default profile and associated values for credentials. You can create additional profiles in the same shared configuration file, each with its own credential information. The following example shows a configuration file with the default profile and two additional profiles:
 
-```
+```ini
 [default] ; default profile
 aws_access_key_id = {{<DEFAULT_ACCESS_KEY_ID>}}
 aws_secret_access_key = {{<DEFAULT_SECRET_ACCESS_KEY>}}
@@ -43,13 +43,13 @@ When setting environment variables, be sure to take appropriate actions afterwar
 
 After setting the environment variable (if needed), you can run a JavaScript file that uses the SDK, such as for example, a file named `script.js`.
 
-```
+```sh
 $ node script.js
 ```
 
 You can also explicitly select the profile used by the SDK, either by setting `process.env.AWS_PROFILE` before loading the SDK, or by selecting the credential provider as shown in the following example:
 
-```
+```javascript
 var credentials = new AWS.SharedIniFileCredentials({profile: 'work-account'});
 AWS.config.credentials = credentials;
 ```

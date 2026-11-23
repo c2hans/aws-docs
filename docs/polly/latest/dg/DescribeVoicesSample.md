@@ -8,7 +8,7 @@ The following Java code sample show how to use Java-based applications to produc
 
 For more information on this operation, see the reference for the [`DescribeVoices`](https://docs.aws.amazon.com/polly/latest/APIReference/API_DescribeVoices.html) API.
 
-```
+```java
 package com.amazonaws.polly.samples;
 
 import com.amazonaws.services.polly.AmazonPolly;

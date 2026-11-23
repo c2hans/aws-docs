@@ -26,7 +26,7 @@ Categorical values can have at most 1000 characters. If you have a user with a c
 
  The following is the default ECOMMERCE domain schema for Users datasets with a CATEGORY field as the required metadata field.
 
-```
+```json
 {
 
   "type": "record",

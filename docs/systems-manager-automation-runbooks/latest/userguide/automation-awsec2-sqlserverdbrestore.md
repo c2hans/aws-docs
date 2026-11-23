@@ -130,7 +130,7 @@ The `AutomationAssumeRole` parameter requires the following actions to successfu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

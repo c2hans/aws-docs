@@ -18,7 +18,7 @@ Before running the example code, configure your AWS credentials, as described in
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\S3\S3Client;
@@ -31,7 +31,7 @@ Create a PHP file with the following code. First create an AWS.S3 client service
 
  **Sample Code**
 
-```
+```php
 $s3Client = new S3Client([
     'profile' => 'default',
     'region' => 'us-west-2',
@@ -52,7 +52,7 @@ Create a PHP file with the following code. First create an AWS.S3 client service
 
  **Sample Code**
 
-```
+```php
 function createBucket($s3Client, $bucketName)
 {
     try {
@@ -92,7 +92,7 @@ In your command line, execute this file and pass in the name of the bucket where
 
  **Sample Code**
 
-```
+```php
 $USAGE = "\n" .
     "To run this example, supply the name of an S3 bucket and a file to\n" .
     "upload to it.\n" .

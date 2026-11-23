@@ -30,7 +30,7 @@ You can use the AWS CLI to determine the type of an Amazon EKS Add-on.
 
 Use the following CLI command to retrieve information about an add-on. You can replace `metrics-server` with the name of any add-on.
 
-```
+```bash
 aws eks describe-addon-versions --addon-name metrics-server
 ```
 

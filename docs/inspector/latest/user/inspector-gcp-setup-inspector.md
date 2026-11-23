@@ -64,7 +64,7 @@ There is one trust policy for each way that the agent can get credentials. Use t
 
 **Trust policy (service account allowlist):**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -93,7 +93,7 @@ There is one trust policy for each way that the agent can get credentials. Use t
 
 **Trust policy (VM credential bridge):**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -122,7 +122,7 @@ There is one trust policy for each way that the agent can get credentials. Use t
 
 **Permission policy (TelemetryPolicy):**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -145,7 +145,7 @@ Enables OIDC federation to GCP for secure cross-cloud authentication. This role 
 
 **Trust policy:**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -182,7 +182,7 @@ Enables OIDC federation to GCP for secure cross-cloud authentication. This role 
 
 **Permission policy (FederationPolicy):**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -216,7 +216,7 @@ Executes Amazon EC2 Systems Manager Automation to install the Amazon Inspector V
 
 **Trust policy:**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -240,7 +240,7 @@ Executes Amazon EC2 Systems Manager Automation to install the Amazon Inspector V
 
 **Permission policy (AssumeRolePolicy):**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -342,7 +342,7 @@ Dispatches Amazon Inspector VM Scanner agent installation via Amazon EC2 Systems
 
 **Trust policy:**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -366,7 +366,7 @@ Dispatches Amazon Inspector VM Scanner agent installation via Amazon EC2 Systems
 
 **Permission policy (DispatchPolicy):**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

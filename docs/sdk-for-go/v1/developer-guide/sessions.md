@@ -31,13 +31,13 @@ By default `NewSession` only loads credentials from the shared credentials file 
 
 Create a session with the default configuration and request handlers. The following example creates a session with credentials, region, and profile values from either the environment variables or the shared credentials file. It requires that the `AWS_PROFILE` is set, or `default` is used.
 
-```
+```go
 sess, err := session.NewSession()
 ```
 
 The SDK provides a [default configuration](https://docs.aws.amazon.com/sdk-for-go/api/aws/defaults/) that all sessions use, unless you override a field. For example, you can specify an AWS Region when you create a session by using the `aws.Config` struct. For more information about the fields you can specify, see the [aws.Config](https://docs.aws.amazon.com/sdk-for-go/api/aws/#Config) in the AWS SDK for Go API Reference.
 
-```
+```go
 sess, err := session.NewSession(&aws.Config{
     Region: aws.String("us-east-2")},
 )
@@ -45,7 +45,7 @@ sess, err := session.NewSession(&aws.Config{
 
 Create an Amazon S3 client instance from a session:
 
-```
+```go
 sess, err := session.NewSession()
 if err != nil {
     // Handle Session creation error
@@ -60,7 +60,7 @@ In addition to `NewSession`, you can create sessions using `NewSessionWithOption
 
 Use [NewSessionWithOptions](https://docs.aws.amazon.com/sdk-for-go/api/aws/session/#NewSessionWithOptions) when you want to provide the config profile, or override the shared credentials state (`AWS_SDK_LOAD_CONFIG`).
 
-```
+```go
 // Equivalent to session.New
 sess, err := session.NewSessionWithOptions(session.Options{})
 
@@ -99,7 +99,7 @@ By default, the SDK loads credentials from the shared credentials file `~/.aws/c
 
 If the `AWS_SDK_LOAD_CONFIG` environment variable is set, or the **SharedConfigEnable** option is used to create the session (as shown in the following example), additional configuration information is also loaded from the shared configuration file (`~/.aws/config`), if it exists. If any configuration setting value differs between the two files, the value from the shared credentials file (`~/.aws/credentials`) takes precedence.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -119,7 +119,7 @@ See the [session package’s documentation](https://docs.aws.amazon.com/sdk-for-
 
 You can add handlers to a session for processing HTTP requests. All service clients that use the session inherit the handlers. For example, the following handler logs every request and its payload made by a service client.
 
-```
+```go
 // Create a session, and add additional handlers for all service
 // clients created with the Session to inherit. Adds logging handler.
 sess, err := session.NewSession()
@@ -135,6 +135,6 @@ sess.Handlers.Send.PushFront(func(r *request.Request) {
 
 You can use the [Copy](https://docs.aws.amazon.com/sdk-for-go/api/aws/session/#Session.Copy) method to create copies of sessions. Copying sessions is useful when you want to create multiple sessions that have similar settings. Each time you copy a session, you can specify different values for any field. For example, the following snippet copies the `sess` session while overriding the `Region` field to `us-east-2`:
 
-```
+```go
 usEast2Sess := sess.Copy(&aws.Config{Region: aws.String("us-east-2")})
 ```

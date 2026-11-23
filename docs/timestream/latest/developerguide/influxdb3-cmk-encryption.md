@@ -36,7 +36,7 @@ Amazon Timestream for InfluxDB 3 requires an AWS KMS symmetric encryption key (`
 
 To create an InfluxDB 3 cluster with a customer managed key, specify the `--kms-key-id` parameter with the ARN of your AWS KMS key.
 
-```
+```bash
 aws timestream-influxdb create-db-cluster \
     --name {{my-influxdb3-cluster}} \
     --db-instance-type db.influx.medium \
@@ -66,7 +66,7 @@ Before creating a cluster with a customer managed key, you must configure the ke
 
 Add the following statements to your key policy, replacing {{account-id}}, {{caller-role}}, and {{region}} with your values:
 
-```
+```json
 {
     "Sid": "Allow Timestream InfluxDB to use the key for resource allocations",
     "Effect": "Allow",
@@ -121,7 +121,7 @@ The second statement allows the caller's IAM role to describe the key through th
 
 To view the AWS KMS key used by a cluster, use the `GetDbCluster` API. The response includes the `kmsKeyId` field if a customer managed key was specified during creation.
 
-```
+```bash
 aws timestream-influxdb get-db-cluster \
     --db-cluster-identifier {{my-influxdb3-cluster}}
 ```

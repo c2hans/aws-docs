@@ -35,7 +35,7 @@ You can secure access to S3 buckets by defining an auth policy using the ODB API
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "Policy1515115909152",

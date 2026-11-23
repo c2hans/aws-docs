@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/ElasticLoadBalancerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the HTTP Endpoint of a load balancer by its name.
     /// </summary>
@@ -158,7 +158,7 @@ For more information, see [Application Load Balancers](https://docs.aws.amazon.c
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/elastic-load-balancing-v2#code-examples).
 
-```
+```javascript
 import {
   ElasticLoadBalancingV2Client,
   DescribeLoadBalancersCommand,
@@ -192,7 +192,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 **Tools for PowerShell V4**
 **Example 1: This sample displays all the load balancers for the given region.**
 
-```
+```powershell
 Get-ELB2LoadBalancer
 ```
 **Output:**
@@ -216,7 +216,7 @@ VpcId                 : vpc-2cf00000
 **Tools for PowerShell V5**
 **Example 1: This sample displays all the load balancers for the given region.**
 
-```
+```powershell
 Get-ELB2LoadBalancer
 ```
 **Output:**
@@ -243,7 +243,7 @@ VpcId                 : vpc-2cf00000
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/elastic-load-balancing#code-examples).
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 

@@ -97,7 +97,7 @@ You can configure the AWS CLI using the credentials that are associated with the
 
 1. Run the IAM `create-group` command, specifying the new group's name (for example, `MyCloud9Group`).
 
-   ```
+   ```sh
    aws iam create-group --group-name MyCloud9Group
    ```
 **Note**
@@ -151,13 +151,13 @@ If you're using [AWS managed temporary credentials](security-iam.md#auth-and-acc
 
 1. Run the IAM `create-user` command to create the user, specifying the new user's name (for example, `MyCloud9User`).
 
-   ```
+   ```sh
    aws iam create-user --user-name MyCloud9User
    ```
 
 1. Run the IAM `create-login-profile` command to create a new console sign-in password for the user, specifying the user's name and initial sign-in password (for example, `MyC10ud9Us3r!`). After the user signs in, AWS asks the user to change their sign-in password.
 
-   ```
+   ```sh
    aws iam create-login-profile --user-name MyCloud9User --password MyC10ud9Us3r! --password-reset-required
    ```
 
@@ -165,7 +165,7 @@ If you're using [AWS managed temporary credentials](security-iam.md#auth-and-acc
 
 1. Run the IAM `create-access-key` command to create a new AWS access key and corresponding AWS secret access key for the user.
 
-   ```
+   ```sh
    aws iam create-access-key --user-name MyCloud9User
    ```
 
@@ -173,7 +173,7 @@ If you're using [AWS managed temporary credentials](security-iam.md#auth-and-acc
 
 1. Run the IAM `add-user-to-group` command to add the user to the group, specifying the group's and user's names.
 
-   ```
+   ```sh
    aws iam add-user-to-group --group-name MyCloud9Group --user-name MyCloud9User
    ```
 
@@ -264,13 +264,13 @@ We recommend that you add only a limited number of users to the AWS Cloud9 admin
 
    For AWS Cloud9 user access permissions, specify the following ARN.
 
-   ```
+   ```sh
    aws iam attach-group-policy --group-name MyCloud9Group --policy-arn arn:aws:iam::aws:policy/AWSCloud9User
    ```
 
    For AWS Cloud9 administrator access permissions, specify the following ARN.
 
-   ```
+   ```sh
    aws iam attach-group-policy --group-name MyCloud9Group --policy-arn arn:aws:iam::aws:policy/AWSCloud9Administrator
    ```
 **Note**

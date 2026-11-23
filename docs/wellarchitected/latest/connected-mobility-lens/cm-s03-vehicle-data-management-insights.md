@@ -32,6 +32,8 @@ The telemetry collection system should be able to withstand a sudden connection 
 
 ![Reference architecture diagram for vehicle data management and insights.](https://docs.aws.amazon.com/wellarchitected/latest/connected-mobility-lens/images/vehicle-data-mgmt-and-insights-refarch.png)
 
+*Vehicle data management and insights reference architecture*
+
 ** Figure 4: CM-03: Vehicle data management and insights reference architecture **
 
 1. The connected vehicle, with a unique identity principal (X.509 certificate), has hundreds of sensors to collect data. AWS IoT FleetWise Edge Agent collects, stores, and organizes data from vehicle. Based on the campaign defined in AWS IoT FleetWise, the agent decodes signals from the vehicle and sends data payloads through AWS IoT Core.

@@ -76,7 +76,7 @@ Expand a section to see examples of supported and unsupported Smithy model speci
 
 The following example shows a valid Smithy model specification for a weather service:
 
-```
+```smithy
 {
   "smithy": "2.0",
   "metadata": {
@@ -193,7 +193,7 @@ The following example shows a valid Smithy model specification for a weather ser
 
 The following example shows an invalid endpoint rules configuration using Smithy:
 
-```
+```smithy
 @endpointRuleSet({
   "rules": [
     {

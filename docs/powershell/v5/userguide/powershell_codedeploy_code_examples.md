@@ -30,7 +30,7 @@ The following code example shows how to use `Add-CDOnPremiseInstanceTag`.
 **Tools for PowerShell V5**
 **Example 1: This example adds an on-premises instance tag with the specified key and value for the specified on-premises instance.**
 
-```
+```powershell
 Add-CDOnPremiseInstanceTag -InstanceName AssetTag12010298EX -Tag @{"Key" = "Name"; "Value" = "CodeDeployDemo-OnPrem"}
 ```
 +  For API details, see [AddTagsToOnPremisesInstances](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -43,7 +43,7 @@ The following code example shows how to use `Get-CDApplication`.
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified application.**
 
-```
+```powershell
 Get-CDApplication -ApplicationName CodeDeployDemoApplication
 ```
 **Output:**
@@ -63,7 +63,7 @@ The following code example shows how to use `Get-CDApplicationBatch`.
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified applications.**
 
-```
+```powershell
 Get-CDApplicationBatch -ApplicationName CodeDeployDemoApplication, CodePipelineDemoApplication
 ```
 **Output:**
@@ -84,7 +84,7 @@ The following code example shows how to use `Get-CDApplicationList`.
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of available applications.**
 
-```
+```powershell
 Get-CDApplicationList
 ```
 **Output:**
@@ -103,7 +103,7 @@ The following code example shows how to use `Get-CDApplicationRevision`.
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified application revision.**
 
-```
+```powershell
 $revision = Get-CDApplicationRevision -ApplicationName CodeDeployDemoApplication -S3Location_Bucket amzn-s3-demo-bucket -Revision_RevisionType S3 -S3Location_Key 5xd27EX.zip -S3Location_BundleType zip -S3Location_ETag 4565c1ac97187f190c1a90265EXAMPLE
 Write-Output ("Description = " + $revision.RevisionInfo.Description + ", RegisterTime = " + $revision.RevisionInfo.RegisterTime)
 ```
@@ -122,7 +122,7 @@ The following code example shows how to use `Get-CDApplicationRevisionList`.
 **Tools for PowerShell V5**
 **Example 1: This example gets information about available revisions for the specified application.**
 
-```
+```powershell
 ForEach ($revision in (Get-CDApplicationRevisionList -ApplicationName CodeDeployDemoApplication -Deployed Ignore)) {
 >>   If ($revision.RevisionType -Eq "S3") {
 >>     Write-Output ("Type = S3, Bucket = " + $revision.S3Location.Bucket + ", BundleType = " + $revision.S3Location.BundleType + ", ETag = " + $revision.S3Location.ETag + ", Key = " + $revision.S3Location.Key)
@@ -149,7 +149,7 @@ The following code example shows how to use `Get-CDDeployment`.
 **Tools for PowerShell V5**
 **Example 1: This example gets summary information about the specified deployment.**
 
-```
+```powershell
 Get-CDDeployment -DeploymentId d-QZMRGSTEX
 ```
 **Output:**
@@ -172,7 +172,7 @@ Status                        : Succeeded
 ```
 **Example 2: This example gets information about the status of instances that are participating in the specified deployment.**
 
-```
+```powershell
 (Get-CDDeployment -DeploymentId d-QZMRGSTEX).DeploymentOverview
 ```
 **Output:**
@@ -186,7 +186,7 @@ Succeeded  : 3
 ```
 **Example 3: This example gets information about the application revision for the specified deployment.**
 
-```
+```powershell
 (Get-CDDeployment -DeploymentId d-QZMRGSTEX).Revision.S3Location
 ```
 **Output:**
@@ -208,7 +208,7 @@ The following code example shows how to use `Get-CDDeploymentBatch`.
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified deployments.**
 
-```
+```powershell
 Get-CDDeploymentBatch -DeploymentId d-QZMRGSTEX, d-RR0T5KTEX
 ```
 **Output:**
@@ -254,7 +254,7 @@ The following code example shows how to use `Get-CDDeploymentConfig`.
 **Tools for PowerShell V5**
 **Example 1: This example gets summary information about the specified deployment configuration.**
 
-```
+```powershell
 Get-CDDeploymentConfig -DeploymentConfigName ThreeQuartersHealthy
 ```
 **Output:**
@@ -266,7 +266,7 @@ CreateTime              DeploymentConfigId                      DeploymentConfig
 ```
 **Example 2: This example gets information about the definition of the specified deployment configuration.**
 
-```
+```powershell
 Write-Output ((Get-CDDeploymentConfig -DeploymentConfigName ThreeQuartersHealthy).MinimumHealthyHosts)
 ```
 **Output:**
@@ -286,7 +286,7 @@ The following code example shows how to use `Get-CDDeploymentConfigList`.
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of available deployment configurations.**
 
-```
+```powershell
 Get-CDDeploymentConfigList
 ```
 **Output:**
@@ -307,7 +307,7 @@ The following code example shows how to use `Get-CDDeploymentGroup`.
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified deployment group.**
 
-```
+```powershell
 Get-CDDeploymentGroup -ApplicationName CodeDeployDemoApplication -DeploymentGroupName CodeDeployDemoFleet
 ```
 **Output:**
@@ -333,7 +333,7 @@ The following code example shows how to use `Get-CDDeploymentGroupList`.
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of deployment groups for the specified application.**
 
-```
+```powershell
 Get-CDDeploymentGroupList -ApplicationName CodeDeployDemoApplication
 ```
 **Output:**
@@ -353,7 +353,7 @@ The following code example shows how to use `Get-CDDeploymentInstance`.
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified instance for the specified deployment.**
 
-```
+```powershell
 Get-CDDeploymentInstance -DeploymentId d-QZMRGSTEX -InstanceId i-254e22EX
 ```
 **Output:**
@@ -375,7 +375,7 @@ The following code example shows how to use `Get-CDDeploymentInstanceList`.
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of instance IDs for the specified deployment.**
 
-```
+```powershell
 Get-CDDeploymentInstanceList -DeploymentId d-QZMRGSTEX
 ```
 **Output:**
@@ -395,7 +395,7 @@ The following code example shows how to use `Get-CDDeploymentList`.
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of deployment IDs for the specified application and deployment group.**
 
-```
+```powershell
 Get-CDDeploymentList -ApplicationName CodeDeployDemoApplication -DeploymentGroupName CodeDeployDemoFleet
 ```
 **Output:**
@@ -414,7 +414,7 @@ The following code example shows how to use `Get-CDOnPremiseInstance`.
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified on-premises instance.**
 
-```
+```powershell
 Get-CDOnPremiseInstance -InstanceName AssetTag12010298EX
 ```
 **Output:**
@@ -437,7 +437,7 @@ The following code example shows how to use `Get-CDOnPremiseInstanceBatch`.
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified on-premises instances.**
 
-```
+```powershell
 Get-CDOnPremiseInstanceBatch -InstanceName AssetTag12010298EX, AssetTag12010298EX-2
 ```
 **Output:**
@@ -467,7 +467,7 @@ The following code example shows how to use `Get-CDOnPremiseInstanceList`.
 **Tools for PowerShell V5**
 **Example 1: This example gets a list of available on-premises instance names.**
 
-```
+```powershell
 Get-CDOnPremiseInstanceList
 ```
 **Output:**
@@ -486,7 +486,7 @@ The following code example shows how to use `New-CDApplication`.
 **Tools for PowerShell V5**
 **Example 1: This example creates a new application with the specified name.**
 
-```
+```powershell
 New-CDApplication -ApplicationName MyNewApplication
 ```
 **Output:**
@@ -504,7 +504,7 @@ The following code example shows how to use `New-CDDeployment`.
 **Tools for PowerShell V5**
 **Example 1: This example creates a new deployment for the specified application and deployment group with the specified deployment configuration and application revision.**
 
-```
+```powershell
 New-CDDeployment -ApplicationName MyNewApplication -S3Location_Bucket amzn-s3-demo-bucket -S3Location_BundleType zip -DeploymentConfigName CodeDeployDefault.OneAtATime -DeploymentGroupName MyNewDeploymentGroup -IgnoreApplicationStopFailures $True -S3Location_Key aws-codedeploy_linux-master.zip -RevisionType S3
 ```
 **Output:**
@@ -514,7 +514,7 @@ d-ZHROG7UEX
 ```
 **Example 2: This example shows how to specify groups of EC2 instance tags that an instance must be identified by in order for it to be included in the replacement environment for a blue/green deployment.**
 
-```
+```powershell
 New-CDDeployment -ApplicationName MyNewApplication -S3Location_Bucket amzn-s3-demo-bucket -S3Location_BundleType zip -DeploymentConfigName CodeDeployDefault.OneAtATime -DeploymentGroupName MyNewDeploymentGroup -IgnoreApplicationStopFailures $True -S3Location_Key aws-codedeploy_linux-master.zip -RevisionType S3 -Ec2TagSetList @(@{Key="key1";Type="KEY_ONLY"},@{Key="Key2";Type="KEY_AND_VALUE";Value="Value2"}),@(@{Key="Key3";Type="VALUE_ONLY";Value="Value3"})
 ```
 **Output:**
@@ -532,7 +532,7 @@ The following code example shows how to use `New-CDDeploymentConfig`.
 **Tools for PowerShell V5**
 **Example 1: This example creates a new deployment configuration with the specified name and behavior.**
 
-```
+```powershell
 New-CDDeploymentConfig -DeploymentConfigName AtLeastTwoHealthyHosts -MinimumHealthyHosts_Type HOST_COUNT -MinimumHealthyHosts_Value 2
 ```
 **Output:**
@@ -550,7 +550,7 @@ The following code example shows how to use `New-CDDeploymentGroup`.
 **Tools for PowerShell V5**
 **Example 1: This example creates a deployment group with the specified name, Auto Scaling group, deployment configuration, tag, and service role, for the specified application.**
 
-```
+```powershell
 New-CDDeploymentGroup -ApplicationName MyNewApplication -AutoScalingGroup CodeDeployDemo-ASG -DeploymentConfigName CodeDeployDefault.OneAtATime -DeploymentGroupName MyNewDeploymentGroup -Ec2TagFilter @{Key="Name"; Type="KEY_AND_VALUE"; Value="CodeDeployDemo"} -ServiceRoleArn arn:aws:iam::80398EXAMPLE:role/CodeDeployDemo
 ```
 **Output:**
@@ -560,7 +560,7 @@ New-CDDeploymentGroup -ApplicationName MyNewApplication -AutoScalingGroup CodeDe
 ```
 **Example 2: This example shows how to specify groups of EC2 instance tags that an instance must be identified by in order for it to be included in the replacement environment for a blue/green deployment.**
 
-```
+```powershell
 New-CDDeploymentGroup -ApplicationName MyNewApplication -AutoScalingGroup CodeDeployDemo-ASG -DeploymentConfigName CodeDeployDefault.OneAtATime -DeploymentGroupName MyNewDeploymentGroup -Ec2TagFilter @{Key="Name"; Type="KEY_AND_VALUE"; Value="CodeDeployDemo"} -ServiceRoleArn arn:aws:iam::80398EXAMPLE:role/CodeDeployDemo -Ec2TagSetList @(@{Key="key1";Type="KEY_ONLY"},@{Key="Key2";Type="KEY_AND_VALUE";Value="Value2"}),@(@{Key="Key3";Type="VALUE_ONLY";Value="Value3"})
 ```
 **Output:**
@@ -578,7 +578,7 @@ The following code example shows how to use `Register-CDApplicationRevision`.
 **Tools for PowerShell V5**
 **Example 1: This example registers an application revision with the specified Amazon S3 location, for the specified application.**
 
-```
+```powershell
 Register-CDApplicationRevision -ApplicationName MyNewApplication -S3Location_Bucket amzn-s3-demo-bucket -S3Location_BundleType zip -S3Location_Key aws-codedeploy_linux-master.zip -Revision_RevisionType S3
 ```
 +  For API details, see [RegisterApplicationRevision](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -591,7 +591,7 @@ The following code example shows how to use `Register-CDOnPremiseInstance`.
 **Tools for PowerShell V5**
 **Example 1: This example registers an on-premises instance with the specified name and IAM user.**
 
-```
+```powershell
 Register-CDOnPremiseInstance -IamUserArn arn:aws:iam::80398EXAMPLE:user/CodeDeployDemoUser -InstanceName AssetTag12010298EX
 ```
 +  For API details, see [RegisterOnPremisesInstance](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -604,7 +604,7 @@ The following code example shows how to use `Remove-CDApplication`.
 **Tools for PowerShell V5**
 **Example 1: This example deletes the application with the specified name. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the application without a prompt.**
 
-```
+```powershell
 Remove-CDApplication -ApplicationName MyNewApplication
 ```
 +  For API details, see [DeleteApplication](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -617,7 +617,7 @@ The following code example shows how to use `Remove-CDDeploymentConfig`.
 **Tools for PowerShell V5**
 **Example 1: This example deletes the deployment configuration with the specified name. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the deployment configuration without a prompt.**
 
-```
+```powershell
 Remove-CDDeploymentConfig -DeploymentConfigName AtLeastTwoHealthyHosts
 ```
 +  For API details, see [DeleteDeploymentConfig](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -630,7 +630,7 @@ The following code example shows how to use `Remove-CDDeploymentGroup`.
 **Tools for PowerShell V5**
 **Example 1: This example deletes the deployment group with the specified name for the specified application. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the deployment group without a prompt.**
 
-```
+```powershell
 Remove-CDDeploymentGroup -ApplicationName MyNewApplication -DeploymentGroupName MyNewDeploymentGroup
 ```
 +  For API details, see [DeleteDeploymentGroup](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -643,7 +643,7 @@ The following code example shows how to use `Remove-CDOnPremiseInstanceTag`.
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified tag for the on-premises instance with the specified name. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the tag without a prompt.**
 
-```
+```powershell
 Remove-CDOnPremiseInstanceTag -InstanceName AssetTag12010298EX -Tag @{"Key" = "Name"; "Value" = "CodeDeployDemo-OnPrem"}
 ```
 +  For API details, see [RemoveTagsFromOnPremisesInstances](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -656,7 +656,7 @@ The following code example shows how to use `Stop-CDDeployment`.
 **Tools for PowerShell V5**
 **Example 1: This example attempts to stop the deployment with the specified deployment ID.**
 
-```
+```powershell
 Stop-CDDeployment -DeploymentId d-LJQNREYEX
 ```
 **Output:**
@@ -676,7 +676,7 @@ The following code example shows how to use `Unregister-CDOnPremiseInstance`.
 **Tools for PowerShell V5**
 **Example 1: This example deregisters the on-premises instance with the specified name.**
 
-```
+```powershell
 Unregister-CDOnPremiseInstance -InstanceName AssetTag12010298EX
 ```
 +  For API details, see [DeregisterOnPremisesInstance](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -689,7 +689,7 @@ The following code example shows how to use `Update-CDApplication`.
 **Tools for PowerShell V5**
 **Example 1: This example changes the name of the specified application.**
 
-```
+```powershell
 Update-CDApplication -ApplicationName MyNewApplication -NewApplicationName MyNewApplication-2
 ```
 +  For API details, see [UpdateApplication](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -702,12 +702,12 @@ The following code example shows how to use `Update-CDDeploymentGroup`.
 **Tools for PowerShell V5**
 **Example 1: This example changes the name of the specified deployment group for the specified application.**
 
-```
+```powershell
 Update-CDDeploymentGroup -ApplicationName MyNewApplication -CurrentDeploymentGroupName MyNewDeploymentGroup -NewDeploymentGroupName MyNewDeploymentGroup-2
 ```
 **Example 2: This example shows how to specify groups of EC2 instance tags that an instance must be identified by in order for it to be included in the replacement environment for a blue/green deployment.**
 
-```
+```powershell
 Update-CDDeploymentGroup -ApplicationName MyNewApplication -CurrentDeploymentGroupName MyNewDeploymentGroup -NewDeploymentGroupName MyNewDeploymentGroup-2 -Ec2TagSetList @(@{Key="key1";Type="KEY_ONLY"},@{Key="Key2";Type="KEY_AND_VALUE";Value="Value2"}),@(@{Key="Key3";Type="VALUE_ONLY";Value="Value3"})
 ```
 +  For API details, see [UpdateDeploymentGroup](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

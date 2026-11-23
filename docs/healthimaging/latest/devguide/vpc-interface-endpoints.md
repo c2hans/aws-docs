@@ -55,7 +55,7 @@ The following is an example of an endpoint policy for HealthImaging. When attach
 ------
 #### [ API ]
 
-```
+```JSON
 {
    "Statement":[
       {

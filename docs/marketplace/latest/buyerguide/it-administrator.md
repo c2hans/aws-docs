@@ -33,7 +33,7 @@ To create customer managed policies, see [Creating IAM policies](https://docs.aw
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -88,7 +88,7 @@ A policy can also be limited to manage a subset of private marketplace resources
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

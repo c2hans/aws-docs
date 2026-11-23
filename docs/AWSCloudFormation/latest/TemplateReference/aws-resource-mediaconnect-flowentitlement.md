@@ -73,7 +73,7 @@ A description of the entitlement. This description appears only on the MediaConn
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EntitlementStatus`  <a name="cfn-mediaconnect-flowentitlement-entitlementstatus"></a>
-An indication of whether the new entitlement should be enabled or disabled as soon as it is created. If you don't specify the entitlementStatus field in your request, MediaConnect sets it to ENABLED.
+An indication of whether the new entitlement should be enabled or disabled as soon as it is created. If you don't specify `EntitlementStatus`, MediaConnect sets it to `ENABLED`.
 *Required*: No
 *Type*: String
 *Allowed values*: `ENABLED | DISABLED`

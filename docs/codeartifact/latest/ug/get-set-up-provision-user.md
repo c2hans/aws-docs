@@ -21,7 +21,7 @@ This policy grants access to all CodeArtifact APIs. We recommend that you always
 
 ****
 
-     ```
+     ```json
      {
         "Version":"2012-10-17",
         "Statement": [

@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Retrieve a list of Step Functions state machines.
     /// </summary>
@@ -44,7 +44,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sfn.SfnClient;
 import software.amazon.awssdk.services.sfn.model.ListStateMachinesResponse;
@@ -95,7 +95,7 @@ public class ListStateMachines {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.sfn.SfnClient
 import aws.sdk.kotlin.services.sfn.model.ListStateMachinesRequest
 
@@ -135,7 +135,7 @@ suspend fun listMachines() {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 Find a state machine by name by searching the list of state machines for the account.
 
-```
+```python
 class StateMachine:
     """Encapsulates Step Functions state machine actions."""
 
@@ -175,7 +175,7 @@ class StateMachine:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sfn#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_sfn->liststatemachines( ).
         DATA(lt_state_machines) = lo_result->get_statemachines( ).

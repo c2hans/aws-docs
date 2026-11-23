@@ -61,7 +61,7 @@ To view a code example for using the `$$KEEP` command, choose the tab for the la
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function run() {
@@ -99,7 +99,7 @@ run().catch(console.error);
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 client = MongoClient(

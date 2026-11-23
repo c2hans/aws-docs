@@ -117,7 +117,7 @@ You can configure mTLS for Redshift streaming ingestion by using AWS Secrets Man
 
 1. In Redshift, run the SQL command to create the external schema. You use the AUTHENTICATION type `mtls`. You also specify the URI of the cluster and the secret ARN in AWS Secrets Manager.
 
-   ```
+   ```sql
    CREATE EXTERNAL SCHEMA my_schema
    FROM KAFKA
    IAM_ROLE 'arn:aws:iam::012345678901:role/my_role'

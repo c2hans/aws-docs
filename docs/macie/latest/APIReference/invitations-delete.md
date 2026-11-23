@@ -47,7 +47,7 @@ Deletes Amazon Macie membership invitations that were received from specific acc
 #### POST schema
 <a name="invitations-delete-request-body-post-example"></a>
 
-```
+```json
 {
   "accountIds": [
     "string"
@@ -61,7 +61,7 @@ Deletes Amazon Macie membership invitations that were received from specific acc
 #### DeleteInvitationsResponse schema
 <a name="invitations-delete-response-body-deleteinvitationsresponse-example"></a>
 
-```
+```json
 {
   "unprocessedAccounts": [
     {
@@ -76,7 +76,7 @@ Deletes Amazon Macie membership invitations that were received from specific acc
 #### ValidationException schema
 <a name="invitations-delete-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -85,7 +85,7 @@ Deletes Amazon Macie membership invitations that were received from specific acc
 #### ServiceQuotaExceededException schema
 <a name="invitations-delete-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -94,7 +94,7 @@ Deletes Amazon Macie membership invitations that were received from specific acc
 #### AccessDeniedException schema
 <a name="invitations-delete-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -103,7 +103,7 @@ Deletes Amazon Macie membership invitations that were received from specific acc
 #### ResourceNotFoundException schema
 <a name="invitations-delete-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -112,7 +112,7 @@ Deletes Amazon Macie membership invitations that were received from specific acc
 #### ConflictException schema
 <a name="invitations-delete-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -121,7 +121,7 @@ Deletes Amazon Macie membership invitations that were received from specific acc
 #### ThrottlingException schema
 <a name="invitations-delete-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -130,7 +130,7 @@ Deletes Amazon Macie membership invitations that were received from specific acc
 #### InternalServerException schema
 <a name="invitations-delete-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

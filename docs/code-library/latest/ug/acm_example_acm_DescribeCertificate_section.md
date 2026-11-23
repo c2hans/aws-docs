@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/ACM#code-examples).
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using Amazon;
@@ -114,7 +114,7 @@ namespace DescribeCertificate
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Describe an AWS Certificate Manager (ACM) certificate.
 /*!
   \param certificateArn: The Amazon Resource Name (ARN) of a certificate.
@@ -688,7 +688,7 @@ For more information, see [View AWS Certificate Manager certificate details](htt
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/acm#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -752,7 +752,7 @@ public class DescribeCert {
 **Tools for PowerShell V4**
 **Example 1: Returns details of the specified certificate.**
 
-```
+```powershell
 Get-ACMCertificateDetail -CertificateArn "arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012"
 ```
 **Output:**
@@ -781,7 +781,7 @@ SubjectAlternativeNames : {www.example.net}
 **Tools for PowerShell V5**
 **Example 1: Returns details of the specified certificate.**
 
-```
+```powershell
 Get-ACMCertificateDetail -CertificateArn "arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012"
 ```
 **Output:**
@@ -813,7 +813,7 @@ SubjectAlternativeNames : {www.example.net}
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -854,7 +854,7 @@ class AcmCertificate:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_certificate_arn = 'arn:aws:acm:region:123456789012:certificate/certificate-id'
         oo_result = lo_acm->describecertificate( iv_certificatearn = iv_certificate_arn ).

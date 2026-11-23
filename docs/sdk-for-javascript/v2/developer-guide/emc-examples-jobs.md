@@ -40,7 +40,7 @@ Create a Node.js module with the file name `emc_createjob.js`. Be sure to config
 
 These parameters are quite detailed. You can use the [AWS Elemental MediaConvert console](https://console.aws.amazon.com/mediaconvert/) to generate the JSON job parameters by choosing your job settings in the console, and then choosing **Show job JSON** at the bottom of the **Job** section. This example shows the JSON for a simple job.
 
-```
+```javascript
 var params = {
   Queue: "JOB_QUEUE_ARN",
   UserMetadata: {
@@ -177,7 +177,7 @@ var params = {
 
 After creating the job parameters JSON, call the `createJob` method by creating a promise for invoking an `AWS.MediaConvert` service object, passing the parameters. Then handle the response in the promise callback. The ID of the job created is returned in the response `data`.
 
-```
+```javascript
 // Create a promise on a MediaConvert object
 var endpointPromise = new AWS.MediaConvert({ apiVersion: "2017-08-29" })
   .createJob(params)
@@ -196,7 +196,7 @@ endpointPromise.then(
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node emc_createjob.js
 ```
 
@@ -207,7 +207,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `emc_canceljob.js`. Be sure to configure the SDK as previously shown. Create the JSON that includes the ID of the job to cancel. Then call the `cancelJob` method by creating a promise for invoking an `AWS.MediaConvert` service object, passing the parameters. Handle the response in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the Region
@@ -237,7 +237,7 @@ endpointPromise.then(
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ec2_canceljob.js
 ```
 
@@ -250,7 +250,7 @@ Create a Node.js module with the file name `emc_listjobs.js`. Be sure to configu
 
 Create the parameters JSON, including values to specify whether to sort the list in `ASCENDING`, or `DESCENDING` order, the ARN of the job queue to check, and the status of jobs to include. Then call the `listJobs` method by creating a promise for invoking an `AWS.MediaConvert` service object, passing the parameters. Handle the response in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the Region
@@ -283,7 +283,7 @@ endpointPromise.then(
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node emc_listjobs.js
 ```
 

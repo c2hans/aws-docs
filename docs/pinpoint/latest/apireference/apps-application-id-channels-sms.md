@@ -140,7 +140,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="apps-application-id-channels-sms-request-body-put-example"></a>
 
-```
+```json
 {
   "Enabled": boolean,
   "ShortCode": "string",
@@ -154,7 +154,7 @@ Retrieves information about the communication requirements and options that are 
 #### SMSChannelResponse schema
 <a name="apps-application-id-channels-sms-response-body-smschannelresponse-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "IsArchived": boolean,
@@ -176,7 +176,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-channels-sms-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

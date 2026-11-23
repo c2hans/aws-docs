@@ -91,6 +91,11 @@ Use the [create-service-network-resource-association](https://docs.aws.amazon.co
 **To delete a resource configuration association using the AWS CLI**
 Use the [delete-service-network-resource-association](https://docs.aws.amazon.com/cli/latest/reference/vpc-lattice/delete-service-network-resource-association.html) command.
 
+### Monitor resource configuration associations
+<a name="monitor-resource-config-associations"></a>
+
+VPC Lattice publishes Amazon CloudWatch metrics for each service network resource association to the account that owns the resource gateway, using the `Service Network Resource Association Id` dimension. For more information, see [Resource gateway and resource configuration metrics](monitoring-cloudwatch.md#resource-gateway-resource-configuration-metrics).
+
 ## Manage service network VPC associations
 <a name="service-network-vpc-associations"></a>
 
@@ -164,6 +169,11 @@ Use the [delete-service-network-vpc-association](https://docs.aws.amazon.com/cli
 
 For how resource VPC endpoints, service-network VPC endpoints, and service network VPC associations differ when you update them, see [Differences between connection types](resource-configuration.md#differences-between-connection-types).
 
+### Monitor VPC associations
+<a name="monitor-vpc-associations"></a>
+
+VPC Lattice publishes Amazon CloudWatch metrics for traffic from a VPC association to resource configurations in the service network, using the `Service Network VPC Association Id` dimension. You can also view these metrics in the Amazon VPC console: under **VPC Lattice**, choose **Service networks**, select the service network, choose the **VPC associations** tab, and select the association. For more information, see [Resource consumer metrics](monitoring-cloudwatch.md#resource-consumer-metrics).
+
 ## Manage service network VPC endpoint associations
 <a name="service-network-vpc-endpoint-associations"></a>
 
@@ -206,3 +216,8 @@ When you create or update a service-network VPC endpoint, you can specify the pr
 To learn more about how to use a VPC endpoint to connect to service networks, see [Access service networks](https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-access-service-networks.html) in the *AWS PrivateLink user guide*.
 
 For how resource VPC endpoints, service-network VPC endpoints, and service network VPC associations differ when you update them, see [Differences between connection types](resource-configuration.md#differences-between-connection-types).
+
+### Monitor VPC endpoint associations
+<a name="monitor-vpc-endpoint-associations"></a>
+
+VPC Lattice publishes Amazon CloudWatch metrics for traffic from a service-network VPC endpoint to resource configurations in the service network, using the `VPC Endpoint Id` dimension. For more information, see [Resource consumer metrics](monitoring-cloudwatch.md#resource-consumer-metrics).

@@ -57,7 +57,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateIndex` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -113,7 +113,7 @@ The following example shows a CloudTrail long entry that demonstrates the `Delet
 **Note**
 This action also asynchronously deletes all views for the account in that Region, which results in a `DeleteView` event for each deleted view.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -166,7 +166,7 @@ This action also asynchronously deletes all views for the account in that Region
 
 The following example shows a CloudTrail log entry that demonstrates the `UpdateIndexType` action to promote an index from type `LOCAL` to `AGGREGATOR`.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -224,7 +224,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Search
 **Note**
 For security reasons, all references to `Tag`, `Filters`, and `QueryString` parameters are redacted in the CloudTrail trail entries.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -273,7 +273,7 @@ For security reasons, all references to `Tag`, `Filters`, and `QueryString` para
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateView` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -335,7 +335,7 @@ The following example shows a CloudTrail log entry that demonstrates the event t
 **Note**
 If the deleted view is the default view for the Region, this action asynchronously also disassociates the view as the default. This produces a `DisassociateDefaultView` event.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -386,7 +386,7 @@ If the deleted view is the default view for the Region, this action asynchronous
 
 The following example shows a CloudTrail log entry that demonstrates the event that can occur when the `DisassociateDefaultView` action starts automatically because of a `DeleteView` operation on the current default view.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

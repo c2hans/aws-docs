@@ -258,6 +258,7 @@ In AWS Marketplace Vendor Insights, an assessor is equal to a buyer, and a vendo
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [AWSMarketplaceFullAccess](#security-iam-awsmanpol-awsmarketplacefullaccess) — updates to existing policy | AWS Marketplace added permissions that let Agent Mode with deployment capability check an account's capacity, service quotas, and enabled Regions before deploying purchased software. These permissions also let Agent Mode manage the CloudFormation stacks, network interfaces, and security group rules used to deploy and clean up that software. | November 19, 2026 |
 | [AWSMarketplaceManageSubscriptions](#security-iam-awsmanpol-awsmarketplacemanagesubscriptions) — updates to existing policy | AWS Marketplace added permissions for buyers to review, accept, and cancel agreement requests, start and track approvals for agreement requests, and view product deployment configurations. | November 18, 2026 |
 | [AWSMarketplaceRead-only](#security-iam-awsmanpol-awsmarketplaceread-only) — updates to existing policy | AWS Marketplace added read-only permissions to view agreement requests, approvals, and product deployment configurations. | November 18, 2026 |
 | [AWSMarketplaceManageSubscriptions](#security-iam-awsmanpol-awsmarketplacemanagesubscriptions) — updates to existing policy | AWS Marketplace added the aws-marketplace:GetAgreementContacts read-only action to view contact information for purchase agreements. | November 18, 2026 |

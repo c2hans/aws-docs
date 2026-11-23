@@ -71,7 +71,7 @@ We recommend to place job submitter pods on On-Demand Instances. Placing job sub
 ### `StartJobRun` request with On-Demand node placement for the job submitter pod
 <a name="emr-eks-job-submitter-ex-od"></a>
 
-```
+```json
 cat >spark-python-in-s3-nodeselector-job-submitter.json << EOF
 {
   "name": "spark-python-in-s3-nodeselector",
@@ -117,7 +117,7 @@ aws emr-containers start-job-run --cli-input-json file:///spark-python-in-s3-nod
 ### `StartJobRun` request with single-AZ node placement and Amazon EC2 instance type placement for the job submitter pod
 <a name="emr-eks-job-submitter-ex-ec2"></a>
 
-```
+```json
 "configurationOverrides": {
   "applicationConfiguration": [
     {
@@ -134,7 +134,7 @@ aws emr-containers start-job-run --cli-input-json file:///spark-python-in-s3-nod
 ### `StartJobRun` request with labels, annotations, and a custom scheduler for the job submitter pod
 <a name="emr-eks-job-submitter-label-annotation-scheduler"></a>
 
-```
+```json
 "configurationOverrides": {
   "applicationConfiguration": [
     {
@@ -154,7 +154,7 @@ aws emr-containers start-job-run --cli-input-json file:///spark-python-in-s3-nod
 ### `StartJobRun` request with a toleration applied to the job submitter pod with key `dedicated`, value `graviton_machines`, effect `NoExecute`, and a `tolerationSeconds` of 60 seconds
 <a name="emr-eks-job-submitter-tolerations"></a>
 
-```
+```json
 "configurationOverrides": {
   "applicationConfiguration": [
     {
@@ -172,7 +172,7 @@ aws emr-containers start-job-run --cli-input-json file:///spark-python-in-s3-nod
 ### `StartJobRun` request with logging disabled for the job submitter pod
 <a name="emr-eks-job-submitter-logging-disabled"></a>
 
-```
+```json
 "configurationOverrides": {
   "applicationConfiguration": [
     {
@@ -197,7 +197,7 @@ aws emr-containers start-job-run --cli-input-json file:///spark-python-in-s3-nod
 ### `StartJobRun` request with custom logging container image, CPU, and memory for the job submitter pod
 <a name="emr-eks-job-submitter-custom"></a>
 
-```
+```json
 "configurationOverrides": {
   "applicationConfiguration": [
     {
@@ -224,7 +224,7 @@ aws emr-containers start-job-run --cli-input-json file:///spark-python-in-s3-nod
 ### `StartJobRun` request with a custom job submitter container image and pull policy
 <a name="emr-eks-job-submitter-custom-container"></a>
 
-```
+```json
 "configurationOverrides": {
   "applicationConfiguration": [
     {
@@ -241,7 +241,7 @@ aws emr-containers start-job-run --cli-input-json file:///spark-python-in-s3-nod
 ### `StartJobRun` request with graceful termination enabled for the job submitter pod
 <a name="emr-eks-job-submitter-graceful-termination"></a>
 
-```
+```json
 "configurationOverrides": {
   "applicationConfiguration": [
     {

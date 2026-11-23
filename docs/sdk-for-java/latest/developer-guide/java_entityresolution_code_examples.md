@@ -28,7 +28,7 @@ The following code example shows how to get started using AWS Entity Resolution.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/entityresolution#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -125,7 +125,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/entityresolution#code-examples).
 Run an interactive scenario demonstrating AWS Entity Resolution features.
 
-```
+```java
 public class EntityResScenario {
     private static final Logger logger = LoggerFactory.getLogger(EntityResScenario.class);
     public static final String DASHES = new String(new char[80]).replace("\0", "-");
@@ -598,7 +598,7 @@ public class EntityResScenario {
 ```
 A wrapper class for AWS Entity Resolution SDK methods.
 
-```
+```java
 public class EntityResActions {
 
     private static final String PREFIX = "eroutput/";
@@ -1291,7 +1291,7 @@ The following code example shows how to use `CreateMatchingWorkflow`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/entityresolution#code-examples).
 
-```
+```java
     /**
      * Creates an asynchronous CompletableFuture to manage the creation of a matching workflow.
      *
@@ -1387,7 +1387,7 @@ The following code example shows how to use `CreateSchemaMapping`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/entityresolution#code-examples).
 
-```
+```java
     /**
      * Creates a schema mapping asynchronously.
      *
@@ -1446,7 +1446,7 @@ The following code example shows how to use `DeleteMatchingWorkflow`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/entityresolution#code-examples).
 
-```
+```java
     /**
      * Asynchronously deletes a workflow with the specified name.
      *
@@ -1489,7 +1489,7 @@ The following code example shows how to use `DeleteSchemaMapping`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/entityresolution#code-examples).
 
-```
+```java
     /**
      * Deletes the schema mapping asynchronously.
      *
@@ -1534,7 +1534,7 @@ The following code example shows how to use `GetMatchingJob`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/entityresolution#code-examples).
 
-```
+```java
     /**
      * Asynchronously retrieves a matching job based on the provided job ID and workflow name.
      *
@@ -1580,7 +1580,7 @@ The following code example shows how to use `GetSchemaMapping`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/entityresolution#code-examples).
 
-```
+```java
     /**
      * Retrieves the schema mapping asynchronously.
      *
@@ -1626,7 +1626,7 @@ The following code example shows how to use `ListSchemaMappings`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/entityresolution#code-examples).
 
-```
+```java
     /**
      * Lists the schema mappings associated with the current AWS account. This method uses an asynchronous paginator to
      * retrieve the schema mappings, and prints the name of each schema mapping to the console.
@@ -1658,7 +1658,7 @@ The following code example shows how to use `StartMatchingJob`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/entityresolution#code-examples).
 
-```
+```java
     /**
      * Starts a matching job asynchronously for the specified workflow name.
      *
@@ -1703,7 +1703,7 @@ The following code example shows how to use `TagResource`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/entityresolution#code-examples).
 
-```
+```java
     /**
      * Tags the specified schema mapping ARN.
      *

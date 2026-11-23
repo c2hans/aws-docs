@@ -31,7 +31,7 @@ You cannot mix images and videos within the same dataset or across different tur
 
 This example shows a basic text-only format compatible with Amazon Nova 1.0.
 
-```
+```json
 {
   "schemaVersion": "bedrock-conversation-2024",
   "system": [
@@ -65,7 +65,7 @@ This example shows a basic text-only format compatible with Amazon Nova 1.0.
 
 This example shows text with optional reasoning content for Amazon Nova 2.0.
 
-```
+```json
 {
   "schemaVersion": "bedrock-conversation-2024",
   "system": [
@@ -109,7 +109,7 @@ Currently, only `reasoningText` is supported within `reasoningContent`. Multimod
 
 This example shows how to include image input with text.
 
-```
+```json
 {
   "schemaVersion": "bedrock-conversation-2024",
   "system": [
@@ -161,7 +161,7 @@ This example shows how to include image input with text.
 
 This example shows how to include video input with text.
 
-```
+```json
 {
   "schemaVersion": "bedrock-conversation-2024",
   "system": [

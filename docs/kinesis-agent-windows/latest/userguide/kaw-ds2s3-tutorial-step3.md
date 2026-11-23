@@ -13,7 +13,7 @@ In the final step of this Amazon Kinesis Agent for Microsoft Windows [tutorial](
 
 1. Enter the following text into the query window:
 
-   ```
+   ```sql
    CREATE DATABASE logdatabase
 
    CREATE EXTERNAL TABLE logs (

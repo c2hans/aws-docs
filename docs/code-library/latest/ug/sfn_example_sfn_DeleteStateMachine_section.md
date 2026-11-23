@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a Step Functions state machine.
     /// </summary>
@@ -40,7 +40,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static void deleteMachine(SfnClient sfnClient, String stateMachineArn) {
         try {
             DeleteStateMachineRequest deleteStateMachineRequest = DeleteStateMachineRequest.builder()
@@ -72,7 +72,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun deleteMachine(stateMachineArnVal: String?) {
     val deleteStateMachineRequest =
         DeleteStateMachineRequest {
@@ -93,7 +93,7 @@ suspend fun deleteMachine(stateMachineArnVal: String?) {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 class StateMachine:
     """Encapsulates Step Functions state machine actions."""
 
@@ -132,7 +132,7 @@ class StateMachine:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sfn#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_sfn->deletestatemachine(
           iv_statemachinearn = iv_state_machine_arn

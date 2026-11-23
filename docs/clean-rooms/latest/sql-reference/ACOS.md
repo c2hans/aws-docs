@@ -29,7 +29,7 @@ The input parameter is a `DOUBLE PRECISION` number.
 
 To return the arc cosine of `-1`, use the following example.
 
-```
+```sql
 SELECT ACOS(-1);
 
 +-------------------+

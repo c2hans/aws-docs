@@ -16,7 +16,7 @@ The following policy grants users permission to create connections in AWS CodeCo
 To do that, it allows the `CreateConnection` and `TagResource` actions if the request specifies a tag named `Project` with the value `ProjectA`. (The `aws:RequestTag` condition key is used to control which tags can be passed in an IAM request.) The `aws:TagKeys` condition ensures tag key case sensitivity.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -45,7 +45,7 @@ The following policy grants users permission to perform actions on, and get info
 To do that, it allows specific actions if the pipeline has a tag named `Project` with the value `ProjectA`. (The `aws:RequestTag` condition key is used to control which tags can be passed in an IAM request.) The `aws:TagKeys` condition ensures tag key case sensitivity.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

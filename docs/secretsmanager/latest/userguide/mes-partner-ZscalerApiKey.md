@@ -12,7 +12,7 @@ Zscaler creates this secret for you. When you connect your AWS account to Zscale
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "anchorKey": "{{header}}.{{payload}}.{{signature}}",
   "apiBaseUrl": "https://awsanchorapi.prod.zpath.net",

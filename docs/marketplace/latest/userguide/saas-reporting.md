@@ -12,3 +12,6 @@ AWS Marketplace produces reports for your software as a service (SaaS) products 
 | Monthly revenue report |  Upfront contract charges appear in the **Annual subscriptions** section. <br /> Metered usage charges appear in the **Billing and revenue data** section. |
 | Sales compensation report |  Upfront contract charges and monthly additional usage charges appear as separate line items.  |
 | Customer subscriber report |  New SaaS contracts appear in the **Annual subscriptions** section. <br /> New SaaS subscriptions appear in the **Hourly/monthly subscriptions** section.  |
+
+**Note**
+Purchases made through [AWS Marketplace Express Checkout](saas-express-checkout.md#saas-express-checkout-onboarding) appear in the same reports as other public offer sales. They aren't flagged separately.

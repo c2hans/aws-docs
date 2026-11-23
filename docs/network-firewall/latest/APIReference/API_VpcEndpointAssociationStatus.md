@@ -12,7 +12,7 @@ Detailed information about the current status of a [VpcEndpointAssociation](API_
  ** Status **   <a name="networkfirewall-Type-VpcEndpointAssociationStatus-Status"></a>
 The readiness of the configured firewall endpoint to handle network traffic.
 Type: String
-Valid Values: `PROVISIONING | DELETING | READY | FAILED`
+Valid Values: `PROVISIONING | DELETING | READY | FAILED | STANDBY`
 Required: Yes
 
  ** AssociationSyncState **   <a name="networkfirewall-Type-VpcEndpointAssociationStatus-AssociationSyncState"></a>

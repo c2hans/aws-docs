@@ -53,7 +53,7 @@ When a configuration item is oversized, only a summary is sent to Amazon SNS. Th
 
 The following code example shows how to access the the complete CI.
 
-```
+```python
 import boto3
 import json
 

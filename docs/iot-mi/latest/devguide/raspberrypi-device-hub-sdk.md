@@ -111,14 +111,14 @@ You must be on `YUL` or `DUB` region to do this step.
 
 1. Run the Hub SDK:
 
-   ```
+   ```bash
    cd /data/aws/iotmi
    bash start_hub_sdk.sh
    ```
 
 The system displays the following response for a successful Hub SDK start:
 
-```
+```bash
 -------Stopping SDK running processes---
 -------Starting Hub SDK-------------
 -------Creating logs directory----------

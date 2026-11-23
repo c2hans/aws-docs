@@ -38,6 +38,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel03-b
 
 ![Diagram showing how domain analysis defines entities and contracts, which then inform decisions about service boundaries that AWS services implement as running systems.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/domain-driven-decision.png)
 
+*Domain analysis leading to service boundary decisions*
+
  Figure 1 shows how domain analysis leads to a decision about service boundaries. After teams define entities and contracts, AWS services implement those domains as running systems. Serverless and container services remove infrastructure management so teams concentrate on domain logic, and purpose-built databases let each service match its storage to its domain. [Building hexagonal architectures on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-architectures/) describes a pattern that separates business logic from integration details, which keeps the domain model independent of the services around it.
 
 ### Implementation steps

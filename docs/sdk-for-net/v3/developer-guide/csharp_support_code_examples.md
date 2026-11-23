@@ -32,7 +32,7 @@ The following code example shows how to get started using Support.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Support#code-examples).
 
-```
+```csharp
 using Amazon.AWSSupport;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -79,7 +79,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Support#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 /// <summary>
 /// Hello AWS Support example.
 /// </summary>
@@ -455,7 +455,7 @@ public static class SupportCaseScenario
 ```
 Wrapper methods used by the scenario for Support actions.
 
-```
+```csharp
 /// <summary>
 /// Wrapper methods to use AWS Support for working with support cases.
 /// </summary>
@@ -716,7 +716,7 @@ The following code example shows how to use `AddAttachmentsToSet`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Support#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Add an attachment to a set, or create a new attachment set if one does not exist.
     /// </summary>
@@ -752,7 +752,7 @@ The following code example shows how to use `AddCommunicationToCase`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Support#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Add communication to a case, including optional attachment set ID and CC email addresses.
     /// </summary>
@@ -785,7 +785,7 @@ The following code example shows how to use `CreateCase`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Support#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a new support case.
     /// </summary>
@@ -827,7 +827,7 @@ The following code example shows how to use `DescribeAttachment`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Support#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get description of a specific attachment.
     /// </summary>
@@ -853,7 +853,7 @@ The following code example shows how to use `DescribeCases`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Support#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get case details for a list of case ids, optionally with date filters.
     /// </summary>
@@ -900,7 +900,7 @@ The following code example shows how to use `DescribeCommunications`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Support#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Describe the communications for a case, optionally with a date filter.
     /// </summary>
@@ -936,7 +936,7 @@ The following code example shows how to use `DescribeServices`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Support#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the descriptions of AWS services.
     /// </summary>
@@ -963,7 +963,7 @@ The following code example shows how to use `DescribeSeverityLevels`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Support#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the descriptions of support severity levels.
     /// </summary>
@@ -990,7 +990,7 @@ The following code example shows how to use `ResolveCase`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Support#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Resolve a support case by caseId.
     /// </summary>

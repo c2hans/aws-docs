@@ -62,17 +62,17 @@ For more information, see [Configure connection draining for your Classic Load B
 **Tools for PowerShell V4**
 **Example 1: This example enables cross-zone load balancing for the specified load balancer.**
 
-```
+```powershell
 Edit-ELBLoadBalancerAttribute -LoadBalancerName my-load-balancer -CrossZoneLoadBalancing_Enabled $true
 ```
 **Example 2: This example disables connection draining for the specified load balancer.**
 
-```
+```powershell
 Edit-ELBLoadBalancerAttribute -LoadBalancerName my-load-balancer -ConnectionDraining_Enabled $false
 ```
 **Example 3: This example enables access logging for the specified load balancer.**
 
-```
+```powershell
 Edit-ELBLoadBalancerAttribute -LoadBalancerName my-load-balancer `
 >> -AccessLog_Enabled $true `
 >> -AccessLog_S3BucketName amzn-s3-demo-logging-bucket `
@@ -84,17 +84,17 @@ Edit-ELBLoadBalancerAttribute -LoadBalancerName my-load-balancer `
 **Tools for PowerShell V5**
 **Example 1: This example enables cross-zone load balancing for the specified load balancer.**
 
-```
+```powershell
 Edit-ELBLoadBalancerAttribute -LoadBalancerName my-load-balancer -CrossZoneLoadBalancing_Enabled $true
 ```
 **Example 2: This example disables connection draining for the specified load balancer.**
 
-```
+```powershell
 Edit-ELBLoadBalancerAttribute -LoadBalancerName my-load-balancer -ConnectionDraining_Enabled $false
 ```
 **Example 3: This example enables access logging for the specified load balancer.**
 
-```
+```powershell
 Edit-ELBLoadBalancerAttribute -LoadBalancerName my-load-balancer `
 >> -AccessLog_Enabled $true `
 >> -AccessLog_S3BucketName amzn-s3-demo-logging-bucket `

@@ -28,7 +28,7 @@ The following code example shows how to use `Get-RDSOrderableDBInstanceOption`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the DB engine versions that support a specific DB instance class in an AWS Region.**
 
-```
+```powershell
 $params = @{
   Engine = 'aurora-postgresql'
   DBInstanceClass = 'db.r5.large'
@@ -38,7 +38,7 @@ Get-RDSOrderableDBInstanceOption @params
 ```
 **Example 2: This example lists the DB instance classes that are supported for a specific DB engine version in an AWS Region.**
 
-```
+```powershell
 $params = @{
   Engine = 'aurora-postgresql'
   EngineVersion = '13.6'

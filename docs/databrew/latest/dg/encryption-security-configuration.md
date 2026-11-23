@@ -22,7 +22,7 @@ Follow this procedure to set up your DataBrew environment to use encryption.
 
    In the following example, {{`"role1"`}}, {{`"role2"`}}, and {{`"role3"`}} are IAM roles that are passed to DataBrew jobs. This policy statement describes a KMS key policy that gives permission to the listed IAM roles to encrypt and decrypt with this KMS key.
 
-   ```
+   ```json
       {
           "Effect": "Allow",
           "Principal": {

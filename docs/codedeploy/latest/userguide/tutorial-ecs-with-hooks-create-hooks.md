@@ -27,7 +27,7 @@ In this section, you implement one Lambda function for your Amazon ECS deploymen
 
 1.  Create a file named `AfterAllowTestTraffic.js` with the following contents.
 
-   ```
+   ```java
    'use strict';
 
     const AWS = require('aws-sdk');
@@ -72,7 +72,7 @@ In this section, you implement one Lambda function for your Amazon ECS deploymen
 
 1.  Create a Lambda deployment package.
 
-   ```
+   ```asciidoc perl powershell json bash xml gemspec
    zip AfterAllowTestTraffic.zip AfterAllowTestTraffic.js
    ```
 

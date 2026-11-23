@@ -31,7 +31,7 @@ You can provide the following types of formatting on both the chat user interfac
 
 1. To add text formatting capabilities to an existing [chat user interface](add-chat-to-website.md), update the [communications widget code](add-chat-to-website.md) with the following code that is highlighted in bold:
 
-   ```
+   ```javascript
        (function(w, d, x, id){
            s=d.createElement('script');
            s.src='https://{{your-instance-alias}}.my.connect.aws/connectwidget/static/amazon-connect-chat-interface-client.js';
@@ -51,7 +51,7 @@ You can provide the following types of formatting on both the chat user interfac
 
    1. Call the [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) API. When calling `StartChatContact`, add the `SupportedMessagingContentTypes` parameter as shown in bold in the following example:
 
-      ```
+      ```json
       // Connect Customer StartChatContact API
       {
           "Attributes": {
@@ -75,7 +75,7 @@ You can provide the following types of formatting on both the chat user interfac
 
    1. Import `chatjs` as an object, as shown in the following example:
 
-      ```
+      ```json
       import "{{amazon-connect-chatjs}}";
 
       this.session = connect.ChatSession.create({

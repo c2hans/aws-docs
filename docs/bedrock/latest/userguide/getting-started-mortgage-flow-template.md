@@ -44,7 +44,7 @@ The main stack defines the parameters that you can define when you upload the te
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: "[AWSDocs] AmazonBedrockDocs: getting-started-mortgage-flow"
 
@@ -262,7 +262,7 @@ Resources:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "[AWSDocs] AmazonBedrockDocs: getting-started-mortgage-flow",
@@ -563,7 +563,7 @@ This stack creates the following [guardrails](guardrails.md)-related resources:
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "[AWSDocs] AmazonBedrockDocs: getting-started-mortgage-flow"
 
@@ -650,7 +650,7 @@ Outputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "[AWSDocs] AmazonBedrockDocs: getting-started-mortgage-flow",
@@ -801,7 +801,7 @@ This stack creates the following [prompt](prompt-management.md) ([AWS::IAM::Prom
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "[AWSDocs] AmazonBedrockDocs: getting-started-mortgage-flow"
 
@@ -900,7 +900,7 @@ Outputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "[AWSDocs] AmazonBedrockDocs: getting-started-mortgage-flow",
@@ -1033,7 +1033,7 @@ This template creates the [knowledge base](knowledge-base.md) and its data sourc
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: "[AWSDocs] AmazonBedrockDocs: getting-started-mortgage-flow"
 Parameters:
@@ -1176,7 +1176,7 @@ Outputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "[AWSDocs] AmazonBedrockDocs: getting-started-mortgage-flow",

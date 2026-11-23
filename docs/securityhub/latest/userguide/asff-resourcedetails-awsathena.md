@@ -17,7 +17,7 @@ The following example shows the ASFF for the `AwsAthenaWorkGroup` object. To vie
 
 **Example**
 
-```
+```JSON
 "AwsAthenaWorkGroup": {
     "Description": "My workgroup for prod workloads",
     "Name": "MyWorkgroup",

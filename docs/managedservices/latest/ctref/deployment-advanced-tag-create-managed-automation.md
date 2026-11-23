@@ -158,14 +158,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-tag-create-managed-automation-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="deployment-advanced-tag-create-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "Resources": [
     {

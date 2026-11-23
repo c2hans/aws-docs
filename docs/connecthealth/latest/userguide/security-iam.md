@@ -62,7 +62,7 @@ Amazon Connect Health supports attribute-based access control (ABAC) through IAM
 
 Read-only console policy:
 
-```
+```json
 {
   "Version": "2012-10-17" ,
   "Statement": [
@@ -82,7 +82,7 @@ Read-only console policy:
 
 Full access console policy:
 
-```
+```json
 {
   "Version": "2012-10-17" ,
   "Statement": [
@@ -227,7 +227,7 @@ Policy best practices:
 
 The following policy grants full access to a specific Amazon Connect Health domain and its integrations.
 
-```
+```json
 {
   "Version": "2012-10-17" ,
   "Statement": [
@@ -250,7 +250,7 @@ The following policy grants full access to a specific Amazon Connect Health doma
 
 The following policy allows users to start and retrieve ambient documentation sessions.
 
-```
+```json
 {
   "Version": "2012-10-17" ,
   "Statement": [
@@ -271,7 +271,7 @@ The following policy allows users to start and retrieve ambient documentation se
 
 The following policy grants read-only access to ambient documentation sessions.
 
-```
+```json
 {
   "Version": "2012-10-17" ,
   "Statement": [
@@ -291,7 +291,7 @@ The following policy grants read-only access to ambient documentation sessions.
 
 The following policy grants full access to all Amazon Connect Health resources.
 
-```
+```json
 {
   "Version": "2012-10-17" ,
   "Statement": [
@@ -309,7 +309,7 @@ The following policy grants full access to all Amazon Connect Health resources.
 
 The following policy grants read-only access to domains and agents while explicitly denying delete operations.
 
-```
+```json
 {
   "Version": "2012-10-17" ,
   "Statement": [
@@ -339,7 +339,7 @@ The following policy grants read-only access to domains and agents while explici
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity.
 
-```
+```json
 {
   "Version": "2012-10-17" ,
   "Statement": [
@@ -379,7 +379,7 @@ This example shows how you might create a policy that allows IAM users to view t
 
 The following policy allows users to start and retrieve medical coding jobs in a specific domain. The caller also needs permission to write to the S3 output location and, if the domain uses a customer managed AWS KMS key, to use that key. For details, see [Example IAM policy](mc-getting-started.md#mc-gs-permissions).
 
-```
+```json
 {
   "Version": "2012-10-17" ,
   "Statement": [
@@ -403,7 +403,7 @@ The following policy allows users to start and retrieve medical coding jobs in a
 
 The following policy allows users to create, view, list, and delete site-specific medical coding datasets in a specific domain, and to submit feedback on medical codes. `SubmitFeedback` reads the coding job as the caller, so the policy also grants `health-agent:GetMedicalCodingJob`. The caller also needs Amazon S3 and AWS KMS permissions on the dataset input and output locations, and `s3:GetObject` on the final codes that it submits as feedback. For details, see [Required permissions](mc-datasets.md#mc-ds-permissions) and [Requirements](mc-feedback.md#mc-fb-requirements).
 
-```
+```json
 {
   "Version": "2012-10-17" ,
   "Statement": [
@@ -444,7 +444,7 @@ Amazon Connect Health uses an IAM service role to perform actions on your behalf
 
 The following example shows a service role policy for Amazon Connect Health that grants permissions for domain, integration, and agent management.
 
-```
+```json
 {
   "Version": "2012-10-17" ,
   "Statement": [
@@ -508,7 +508,7 @@ The following example shows a service role policy for Amazon Connect Health that
 
 The following example shows a trust policy that allows the Amazon Connect Health service principal to assume the role.
 
-```
+```json
 {
   "Version": "2012-10-17" ,
   "Statement": [
@@ -545,7 +545,7 @@ When memory and personalization is turned on for a domain that uses a customer m
 
 Replace `<region>` with the AWS Region of your domain. The third statement lets Amazon Connect Health use the key for the decision tree documents that you upload.
 
-```
+```json
 {
   "Version": "2012-10-17" ,
   "Statement": [

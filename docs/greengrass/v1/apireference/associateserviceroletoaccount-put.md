@@ -13,7 +13,7 @@ URI: `PUT /greengrass/servicerole`
 ## CLI:
 <a name="associateserviceroletoaccount-put-cli"></a>
 
-```
+```bash
 aws greengrass associate-service-role-to-account \
   [--role-arn <value>]  \
   [--cli-input-json <value>] \
@@ -22,7 +22,7 @@ aws greengrass associate-service-role-to-account \
 
 cli-input-json format:
 
-```
+```json
 {
 "RoleArn": "string"
 }
@@ -35,7 +35,7 @@ cli-input-json format:
 
 where used: body; required: true
 
-```
+```json
 {
 "RoleArn": "string"
 }
@@ -55,7 +55,7 @@ type: string
 Success.
  [ AssociateServiceRoleToAccountResponse](definitions-associateserviceroletoaccountresponse.md)
 
-```
+```json
 {
 "AssociatedAt": "string"
 }
@@ -70,7 +70,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -106,7 +106,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

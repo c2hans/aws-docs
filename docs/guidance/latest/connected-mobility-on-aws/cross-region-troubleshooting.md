@@ -19,7 +19,7 @@ The three resource types most likely to collide are:
 
 Identify the failing resource from the CloudFormation event:
 
-```
+```bash
 STAGE=staging
 REGION=ap-northeast-1
 aws cloudformation describe-stack-events \
@@ -42,7 +42,7 @@ A custom domain alias (CNAME) can only be associated with one CloudFront distrib
 
 If `cdk.context.json` was populated by a prior primary-region deployment, the persisted context values may override the second-region intent. Use CDK context isolation (see the deployment guide) or pass explicit context overrides on the command line:
 
-```
+```bash
 cdk deploy cms-$STAGE-ui \
   --context cms.uiCustomDomain="" \
   --region $REGION

@@ -20,7 +20,7 @@ In your records, note the `ApplicationId` of your registration.
 
 You can use the following AWS CLI command to refresh your SAP application:
 
-```
+```console
 aws ssm-sap start-application-refresh \
 --application-id <APPLICATION_ID> \
 --region <REGION_ID>
@@ -35,7 +35,7 @@ The refresh operation can take up to five minutes to complete. During that time,
 
  **Command template**
 
-```
+```console
 aws ssm-sap get-operation \
 --operation-id <OPERATION_ID> \
 --region <REGION_ID>
@@ -48,13 +48,13 @@ Use the command [get-application](https://awscli.amazonaws.com/v2/documentation/
 
  **Command template**
 
-```
+```console
 aws ssm-sap get-application --application-id <APPLICATION_ID> --region <REGION_ID>
 ```
 
  **Example to get the summary of an application**
 
-```
+```console
 aws ssm-sap get-application \
 --application-id mySAPABAPApplication \
 --region us-east-1
@@ -62,7 +62,7 @@ aws ssm-sap get-application \
 
  **Response example**
 
-```
+```json
 {
 "Application": {
 "Id": "mySAPABAPApplication",

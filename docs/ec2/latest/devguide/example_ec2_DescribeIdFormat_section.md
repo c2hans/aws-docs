@@ -80,7 +80,7 @@ For more information, see [Manage your Amazon EC2 resources](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: This example describes the ID format for the specified resource type.**
 
-```
+```powershell
 Get-EC2IdFormat -Resource instance
 ```
 **Output:**
@@ -92,7 +92,7 @@ instance       False
 ```
 **Example 2: This example describes the ID formats for all resource types that support longer IDs.**
 
-```
+```powershell
 Get-EC2IdFormat
 ```
 **Output:**
@@ -108,7 +108,7 @@ instance       False
 **Tools for PowerShell V5**
 **Example 1: This example describes the ID format for the specified resource type.**
 
-```
+```powershell
 Get-EC2IdFormat -Resource instance
 ```
 **Output:**
@@ -120,7 +120,7 @@ instance       False
 ```
 **Example 2: This example describes the ID formats for all resource types that support longer IDs.**
 
-```
+```powershell
 Get-EC2IdFormat
 ```
 **Output:**

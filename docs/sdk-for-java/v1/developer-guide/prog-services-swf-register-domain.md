@@ -16,7 +16,7 @@ Every workflow and activity in [Amazon SWF](https://aws.amazon.com/swf/) needs a
 
 The following code demonstrates this procedure:
 
-```
+```java
 public void register_swf_domain(AmazonSimpleWorkflowClient swf, String name)
 {
     RegisterDomainRequest request = new RegisterDomainRequest().withName(name);

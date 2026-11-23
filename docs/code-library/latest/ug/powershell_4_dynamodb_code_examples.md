@@ -26,7 +26,7 @@ The following code example shows how to use `Add-DDBIndexSchema`.
 **Tools for PowerShell V4**
 **Example 1: Creates an empty TableSchema object and adds a new local secondary index definition to it before writing the TableSchema object to the pipeline.**
 
-```
+```powershell
 $schema | Add-DDBIndexSchema -IndexName "LastPostIndex" -RangeKeyName "LastPostDateTime" -RangeKeyDataType "S" -ProjectionType "keys_only"
 $schema = New-DDBTableSchema
 ```
@@ -39,7 +39,7 @@ AttributeSchema                             KeySchema                           
 ```
 **Example 2: Adds a new local secondary index definition to the supplied TableSchema object before writing the TableSchema object back to the pipeline. The TableSchema object can also be supplied using the -Schema parameter.**
 
-```
+```powershell
 New-DDBTableSchema | Add-DDBIndexSchema -IndexName "LastPostIndex" -RangeKeyName "LastPostDateTime" -RangeKeyDataType "S" -ProjectionType "keys_only"
 ```
 **Output:**
@@ -59,7 +59,7 @@ The following code example shows how to use `Add-DDBKeySchema`.
 **Tools for PowerShell V4**
 **Example 1: Creates an empty TableSchema object and adds key and attribute definition entries to it using the specified key data before writing the TableSchema object to the pipeline. The key type is declared to be 'HASH' by default; use the -KeyType paameter with a value of 'RANGE' to declare a range key.**
 
-```
+```powershell
 $schema = New-DDBTableSchema
 $schema | Add-DDBKeySchema -KeyName "ForumName" -KeyDataType "S"
 ```
@@ -72,7 +72,7 @@ AttributeSchema                             KeySchema                           
 ```
 **Example 2: Adds new key and attribute definition entries to the supplied TableSchema object before writing the TableSchema object to the pipeline. The key type is declared to be 'HASH' by default; use the -KeyType paameter with a value of 'RANGE' to declare a range key. The TableSchema object can also be supplied using the -Schema parameter.**
 
-```
+```powershell
 New-DDBTableSchema | Add-DDBKeySchema -KeyName "ForumName" -KeyDataType "S"
 ```
 **Output:**
@@ -92,7 +92,7 @@ The following code example shows how to use `ConvertFrom-DDBItem`.
 **Tools for PowerShell V4**
 **Example 1: ConvertFrom-DDBItem is used to convert the result of Get-DDBItem from a hashtable of DynamoDB AttributeValues to a hashtable of common types like string and double.**
 
-```
+```powershell
 @{
     SongTitle = 'Somewhere Down The Road'
     Artist    = 'No One You Know'
@@ -122,7 +122,7 @@ The following code example shows how to use `ConvertTo-DDBItem`.
 **Tools for PowerShell V4**
 **Example 1: An example for converting a hashtable into a dictionary of DynamoDB attribute values.**
 
-```
+```powershell
 @{
     SongTitle = 'Somewhere Down The Road'
     Artist    = 'No One You Know'
@@ -135,7 +135,7 @@ Artist    Amazon.DynamoDBv2.Model.AttributeValue
 ```
 **Example 2: An example for converting a hashtable into a dictionary of DynamoDB attribute values.**
 
-```
+```powershell
 @{
     MyMap        = @{
         MyString = 'my string'
@@ -174,7 +174,7 @@ The following code example shows how to use `Get-DDBBatchItem`.
 **Tools for PowerShell V4**
 **Example 1: Gets the item with the SongTitle "Somewhere Down The Road" from the DynamoDB tables 'Music' and 'Songs'.**
 
-```
+```powershell
 $key = @{
     SongTitle = 'Somewhere Down The Road'
     Artist = 'No One You Know'
@@ -221,7 +221,7 @@ The following code example shows how to use `Get-DDBItem`.
 **Tools for PowerShell V4**
 **Example 1: Returns the DynamoDB item with the partition key SongTitle and the sort key Artist.**
 
-```
+```powershell
 $key = @{
   SongTitle = 'Somewhere Down The Road'
   Artist = 'No One You Know'
@@ -251,7 +251,7 @@ The following code example shows how to use `Get-DDBTable`.
 **Tools for PowerShell V4**
 **Example 1: Returns details of the specified table.**
 
-```
+```powershell
 Get-DDBTable -TableName "myTable"
 ```
 +  For API details, see [DescribeTable](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -264,7 +264,7 @@ The following code example shows how to use `Get-DDBTableList`.
 **Tools for PowerShell V4**
 **Example 1: Returns details of all tables, automatically iterating until the service indicates no further tables exist.**
 
-```
+```powershell
 Get-DDBTableList
 ```
 +  For API details, see [ListTables](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -277,7 +277,7 @@ The following code example shows how to use `Invoke-DDBQuery`.
 **Tools for PowerShell V4**
 **Example 1: Invokes a query that returns DynamoDB items with the specified SongTitle and Artist.**
 
-```
+```powershell
 $invokeDDBQuery = @{
     TableName = 'Music'
     KeyConditionExpression = ' SongTitle = :SongTitle and Artist = :Artist'
@@ -310,7 +310,7 @@ The following code example shows how to use `Invoke-DDBScan`.
 **Tools for PowerShell V4**
 **Example 1: Returns all items in the Music table.**
 
-```
+```powershell
 Invoke-DDBScan -TableName 'Music' | ConvertFrom-DDBItem
 ```
 **Output:**
@@ -333,7 +333,7 @@ AlbumTitle                     Hey Now
 ```
 **Example 2: Returns items in the Music table with a CriticRating greater than or equal to nine.**
 
-```
+```powershell
 $scanFilter = @{
         CriticRating = [Amazon.DynamoDBv2.Model.Condition]@{
             AttributeValueList = @(@{N = '9'})
@@ -364,7 +364,7 @@ The following code example shows how to use `New-DDBTable`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a table named Thread that has a primary key consisting of 'ForumName' (key type hash) and 'Subject' (key type range). The schema used to construct the table can be piped into each cmdlet as shown or specified using the -Schema parameter.**
 
-```
+```powershell
 $schema = New-DDBTableSchema
 $schema | Add-DDBKeySchema -KeyName "ForumName" -KeyDataType "S"
 $schema | Add-DDBKeySchema -KeyName "Subject" -KeyType RANGE -KeyDataType "S"
@@ -385,7 +385,7 @@ LocalSecondaryIndexes  : {}
 ```
 **Example 2: This example creates a table named Thread that has a primary key consisting of 'ForumName' (key type hash) and 'Subject' (key type range). A local secondary index is also defined. The key of the local secondary index will be set automatically from the primary hash key on the table (ForumName). The schema used to construct the table can be piped into each cmdlet as shown or specified using the -Schema parameter.**
 
-```
+```powershell
 $schema = New-DDBTableSchema
 $schema | Add-DDBKeySchema -KeyName "ForumName" -KeyDataType "S"
 $schema | Add-DDBKeySchema -KeyName "Subject" -KeyDataType "S"
@@ -407,7 +407,7 @@ LocalSecondaryIndexes  : {LastPostIndex}
 ```
 **Example 3: This example shows how to use a single pipeline to create a table named Thread that has a primary key consisting of 'ForumName' (key type hash) and 'Subject' (key type range) and a local secondary index. The Add-DDBKeySchema and Add-DDBIndexSchema create a new TableSchema object for you if one is not supplied from the pipeline or the -Schema parameter.**
 
-```
+```powershell
 New-DDBTableSchema |
   Add-DDBKeySchema -KeyName "ForumName" -KeyDataType "S" |
   Add-DDBKeySchema -KeyName "Subject" -KeyDataType "S" |
@@ -440,7 +440,7 @@ The following code example shows how to use `New-DDBTableSchema`.
 **Tools for PowerShell V4**
 **Example 1: Creates an empty TableSchema object ready to accept key and index definitions for use in creating a new Amazon DynamoDB table. The returned object can be piped into the Add-DDBKeySchema, Add-DDBIndexSchema and New-DDBTable cmdlets or passed to them using the -Schema parameter on each cmdlet.**
 
-```
+```powershell
 New-DDBTableSchema
 ```
 **Output:**
@@ -460,7 +460,7 @@ The following code example shows how to use `Remove-DDBItem`.
 **Tools for PowerShell V4**
 **Example 1: Removes the DynamoDB item that matches the provided key.**
 
-```
+```powershell
 $key = @{
     SongTitle = 'Somewhere Down The Road'
     Artist = 'No One You Know'
@@ -477,12 +477,12 @@ The following code example shows how to use `Remove-DDBTable`.
 **Tools for PowerShell V4**
 **Example 1: Deletes the specified table. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-DDBTable -TableName "myTable"
 ```
 **Example 2: Deletes the specified table. You are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-DDBTable -TableName "myTable" -Force
 ```
 +  For API details, see [DeleteTable](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -495,7 +495,7 @@ The following code example shows how to use `Set-DDBBatchItem`.
 **Tools for PowerShell V4**
 **Example 1: Creates a new item, or replaces an existing item with a new item in the DynamoDB tables Music and Songs.**
 
-```
+```powershell
 $item = @{
     SongTitle = 'Somewhere Down The Road'
     Artist = 'No One You Know'
@@ -525,7 +525,7 @@ The following code example shows how to use `Set-DDBItem`.
 **Tools for PowerShell V4**
 **Example 1: Creates a new item, or replaces an existing item with a new item.**
 
-```
+```powershell
 $item = @{
   SongTitle = 'Somewhere Down The Road'
   Artist = 'No One You Know'
@@ -546,7 +546,7 @@ The following code example shows how to use `Update-DDBItem`.
 **Tools for PowerShell V4**
 **Example 1: Sets the genre attribute to 'Rap' on the DynamoDB item with the partition key SongTitle and the sort key Artist.**
 
-```
+```powershell
 $key = @{
     SongTitle = 'Somewhere Down The Road'
     Artist = 'No One You Know'
@@ -579,7 +579,7 @@ The following code example shows how to use `Update-DDBTable`.
 **Tools for PowerShell V4**
 **Example 1: Updates the provisioned throughput for the given table.**
 
-```
+```powershell
 Update-DDBTable -TableName "myTable" -ReadCapacity 10 -WriteCapacity 5
 ```
 +  For API details, see [UpdateTable](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.

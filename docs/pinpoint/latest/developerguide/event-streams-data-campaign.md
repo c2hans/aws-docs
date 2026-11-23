@@ -13,7 +13,7 @@ If you use Amazon Pinpoint to send campaigns through a channel, Amazon Pinpoint 
 
 The JSON object for a campaign event contains the data shown in the following example.
 
-```
+```json
 {
   "event_type": "_campaign.send",
   "event_timestamp": 1562109497426,

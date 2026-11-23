@@ -64,7 +64,7 @@ To check your environment status and view the underlying resources in the Amazon
 
 1. To list all environments with their state and status, run the following command.
 
-   ```
+   ```bash
    aws evs list-environments \
        --query 'environmentSummaries[*].[environmentId,environmentState,environmentStatus]' \
        --output table
@@ -72,7 +72,7 @@ To check your environment status and view the underlying resources in the Amazon
 
 1. To view the status and check results of one environment, run the following command.
 
-   ```
+   ```bash
    aws evs get-environment \
        --environment-id env-abcde12345 \
        --query 'environment.[environmentStatus,checks]'
@@ -80,21 +80,21 @@ To check your environment status and view the underlying resources in the Amazon
 
 1. To list the hosts of the environment, run the following command.
 
-   ```
+   ```bash
    aws evs list-environment-hosts \
        --environment-id env-abcde12345
    ```
 
 1. To list the VLANs of the environment, run the following command.
 
-   ```
+   ```bash
    aws evs list-environment-vlans \
        --environment-id env-abcde12345
    ```
 
 1. To list the connectors of the environment with their state and reachability check result, run the following command.
 
-   ```
+   ```bash
    aws evs list-environment-connectors \
        --environment-id env-abcde12345
    ```

@@ -72,7 +72,7 @@ An event represents a single request from any source and includes information ab
 
 The following example shows a CloudTrail management event for the `CreateWorkflowDefinition` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -124,7 +124,7 @@ The following example shows a CloudTrail management event for the `CreateWorkflo
 
 The following example shows a CloudTrail data event for the `InvokeActStep` operation. Data events are only logged when you have configured advanced event selectors to enable them.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

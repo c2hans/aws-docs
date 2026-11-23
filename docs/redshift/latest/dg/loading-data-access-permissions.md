@@ -25,7 +25,7 @@ When you create an IAM role, IAM returns an Amazon Resource Name (ARN) for the r
 
 The following COPY command example uses IAM\_ROLE parameter with the role `MyRedshiftRole` for authentication.
 
-```
+```sql
 COPY customer FROM 's3://amzn-s3-demo-bucket/mydata'
 IAM_ROLE 'arn:aws:iam::12345678901:role/MyRedshiftRole';
 ```

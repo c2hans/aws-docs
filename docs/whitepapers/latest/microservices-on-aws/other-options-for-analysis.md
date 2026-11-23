@@ -10,6 +10,10 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 
 ![Diagram showing log analysis with Amazon Redshift and Quick](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/log-analysis-redshift-quicksight.png)
 
+*Figure 15: Log analysis with Amazon Redshift and Quick*
+
  Moreover, when logs are stored in S3 buckets, an object storage service, the data can be loaded into services like Redshift or EMR, a cloud-based big data platform, allowing for thorough analysis of the stored log data.
 
 ![Diagram showing streamlining log analysis: From AWS services to QuickSight](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/streamlining-log-analysis.png)
+
+*Figure 16: Streamlining Log Analysis: From AWS services to QuickSight*

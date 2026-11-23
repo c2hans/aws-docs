@@ -61,7 +61,7 @@ This version introduces new requirements: AWS IoT Greengrass Core software v1.10
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -102,7 +102,7 @@ This version introduces new requirements: AWS IoT Greengrass Core software v1.10
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -139,7 +139,7 @@ This version introduces new requirements: AWS IoT Greengrass Core software v1.10
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -176,7 +176,7 @@ This version introduces new requirements: AWS IoT Greengrass Core software v1.10
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -213,7 +213,7 @@ This version introduces new requirements: AWS IoT Greengrass Core software v1.10
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -250,7 +250,7 @@ This version introduces new requirements: AWS IoT Greengrass Core software v1.10
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -353,7 +353,7 @@ Valid pattern: `^\s*$|[0-9]+`
 
 The following AWS CLI command creates a `ConnectorDefinition` with an initial version that contains the IoT SiteWise connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {

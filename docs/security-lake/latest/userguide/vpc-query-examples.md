@@ -10,7 +10,7 @@ Here are some example queries of Amazon VPC Flow Logs for AWS source version 1:
 
 **Traffic in specific AWS Regions in the last 7 days**
 
-```
+```sql
 SELECT *
     FROM amazon_security_lake_glue_db_us_east_1.amazon_security_lake_table_us_east_1_vpc_flow_1_0
     WHERE eventDay BETWEEN cast(date_format(current_timestamp - INTERVAL '7' day, '%Y%m%d%H') as varchar) and cast(date_format(current_timestamp - INTERVAL '0' day, '%Y%m%d%H') as varchar)
@@ -20,7 +20,7 @@ SELECT *
 
 **List of activity from source IP `192.0.2.1` and source port `22` in the last 7 days**
 
-```
+```sql
 SELECT *
     FROM amazon_security_lake_glue_db_us_east_1.amazon_security_lake_table_us_east_1_vpc_flow_1_0
     WHERE eventDay BETWEEN cast(date_format(current_timestamp - INTERVAL '7' day, '%Y%m%d%H') as varchar) and cast(date_format(current_timestamp - INTERVAL '0' day, '%Y%m%d%H') as varchar)
@@ -31,7 +31,7 @@ SELECT *
 
 **Count of distinct destination IP addresses in the last 7 days**
 
-```
+```sql
 SELECT
     COUNT(DISTINCT dst_endpoint.ip)
     FROM amazon_security_lake_glue_db_us_east_1.amazon_security_lake_table_us_east_1_vpc_flow_1_0
@@ -41,7 +41,7 @@ SELECT
 
 **Traffic originating from 198.51.100.0/24 in the last 7 days**
 
-```
+```sql
 SELECT *
     FROM amazon_security_lake_glue_db_us_east_1.amazon_security_lake_table_us_east_1_vpc_flow_1_0
     WHERE eventDay BETWEEN cast(date_format(current_timestamp - INTERVAL '7' day, '%Y%m%d%H') as varchar) and cast(date_format(current_timestamp - INTERVAL '0' day, '%Y%m%d%H') as varchar)
@@ -51,7 +51,7 @@ SELECT *
 
 **All HTTPS traffic in the last 7 days**
 
-```
+```sql
 SELECT
       dst_endpoint.ip as dst,
       src_endpoint.ip as src,
@@ -69,7 +69,7 @@ SELECT
 
 **Order by packet count for connections destined to port `443` in the last 7 days**
 
-```
+```sql
 SELECT
       traffic.packets,
       dst_endpoint.ip
@@ -85,7 +85,7 @@ SELECT
 
 **All traffic between IP `192.0.2.1` and `192.0.2.2` in the last 7 days**
 
-```
+```sql
 SELECT
       start_time,
       end_time,
@@ -111,7 +111,7 @@ SELECT
 
 **All inbound traffic in the last 7 days**
 
-```
+```sql
 SELECT *
     FROM amazon_security_lake_glue_db_us_east_1.amazon_security_lake_table_us_east_1_vpc_flow_1_0
     WHERE eventDay BETWEEN cast(date_format(current_timestamp - INTERVAL '7' day, '%Y%m%d%H') as varchar) and cast(date_format(current_timestamp - INTERVAL '0' day, '%Y%m%d%H') as varchar)
@@ -121,7 +121,7 @@ SELECT *
 
 **All outbound traffic in the last 7 days**
 
-```
+```sql
 SELECT *
     FROM amazon_security_lake_glue_db_us_east_1.amazon_security_lake_table_us_east_1_vpc_flow_1_0
     WHERE eventDay BETWEEN cast(date_format(current_timestamp - INTERVAL '7' day, '%Y%m%d%H') as varchar) and cast(date_format(current_timestamp - INTERVAL '0' day, '%Y%m%d%H') as varchar)
@@ -131,7 +131,7 @@ SELECT *
 
 **All rejected traffic in the last 7 days**
 
-```
+```sql
 SELECT *
     FROM amazon_security_lake_glue_db_us_east_1.amazon_security_lake_table_us_east_1_vpc_flow_1_0
     WHERE eventDay BETWEEN cast(date_format(current_timestamp - INTERVAL '7' day, '%Y%m%d%H') as varchar) and cast(date_format(current_timestamp - INTERVAL '0' day, '%Y%m%d%H') as varchar)

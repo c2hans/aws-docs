@@ -61,7 +61,7 @@ The FreeRTOS reference implementation uses PKCS \#11 2048-bit RSA (signing only)
 
 Make sure you are using the following (or more recent) versions of the AWS CLI and OpenSSL:
 
-```
+```bash
 aws --version
 aws-cli/1.11.176 Python/2.7.9 Windows/8 botocore/1.7.34
 
@@ -75,25 +75,25 @@ The following procedure assumes that you used the `aws configure` command to con
 
 1. Create an AWS IoT thing.
 
-   ```
+   ```bash
    aws iot create-thing --thing-name {{thing-name}}
    ```
 
 1. Use OpenSSL to create a P-256 key.
 
-   ```
+   ```bash
    openssl genpkey -algorithm EC -pkeyopt ec_paramgen_curve:P-256 -pkeyopt ec_param_enc:named_curve -outform PEM -out {{thing-name}}.key
    ```
 
 1. Create a certificate enrollment request signed by the key created in step 2.
 
-   ```
+   ```bash
    openssl req -new -nodes -days 365 -key {{thing-name}}.key -out {{thing-name}}.req
    ```
 
 1. Submit the certificate enrollment request to AWS IoT.
 
-   ```
+   ```bash
    aws iot create-certificate-from-csr  \
      --certificate-signing-request file://{{thing-name}}.req --set-as-active  \
      --certificate-pem-outfile {{thing-name}}.crt
@@ -101,14 +101,14 @@ The following procedure assumes that you used the `aws configure` command to con
 
 1. Attach the certificate (referenced by the ARN output by the previous command) to the thing.
 
-   ```
+   ```bash
    aws iot attach-thing-principal --thing-name {{thing-name}} \
      --principal "arn:aws:iot:{{us-east-1}}:{{123456789012}}:cert/{{86e41339a6d1bbc67abf31faf455092cdebf8f21ffbc67c4d238d1326c7de729}}"
    ```
 
 1. Create a policy. (This policy is too permissive. It should be used for development purposes only.)
 
-   ```
+   ```bash
    aws iot create-policy --policy-name FullControl --policy-document file://policy.json
    ```
 
@@ -119,7 +119,7 @@ The following procedure assumes that you used the `aws configure` command to con
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -141,7 +141,7 @@ The following procedure assumes that you used the `aws configure` command to con
 
 1. Attach the principal (certificate) and policy to the thing.
 
-   ```
+   ```bash
    aws iot attach-principal-policy --policy-name FullControl \
      --principal "arn:aws:iot:us-east-1:{{123456789012}}:cert/{{86e41339a6d1bbc67abf31faf455092cdebf8f21ffbc67c4d238d1326c7de729}}"
    ```

@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 
  To set the PIN in your tests, use the `pre_test` and `post_test` phases to set and remove the PIN, as shown following:
 
-```
+```yaml
 phases:
     pre_test:
       - # ... among your pre_test commands

@@ -134,7 +134,7 @@ You can use the AWS Management Console or the command line tools to list the met
 **To list all the available metrics for Amazon Data Lifecycle Manager**
 Use the [list-metrics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/list-metrics.html) command.
 
-```
+```bash
 $ C:\> aws cloudwatch list-metrics \
     --namespace AWS/EBS
 ```
@@ -142,7 +142,7 @@ $ C:\> aws cloudwatch list-metrics \
 **To list all the metrics for a specific policy**
 Use the [list-metrics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/list-metrics.html) command and specify the `DLMPolicyId` dimension.
 
-```
+```bash
 $ C:\> aws cloudwatch list-metrics \
     --namespace AWS/EBS \
     --dimensions Name=DLMPolicyId,Value={{policy-abcdef01234567890}}
@@ -151,7 +151,7 @@ $ C:\> aws cloudwatch list-metrics \
 **To list a single metric across all policies**
 Use the [list-metrics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/list-metrics.html) command and specify the `--metric-name` option.
 
-```
+```bash
 $ C:\> aws cloudwatch list-metrics \
     --namespace AWS/EBS \
     --metric-name {{SnapshotsCreateCompleted}}
@@ -225,7 +225,7 @@ For example, if you expect your daily policy to create backups of no more than `
 
 You can use the following command to create this alarm:
 
-```
+```bash
 $ C:\> aws cloudwatch put-metric-alarm \
     --alarm-name resource-targeted-monitor \
     --alarm-description "Alarm when policy targets more than 50 resources" \
@@ -249,7 +249,7 @@ For example, if you've created a policy that should automatically delete snapsho
 
 You can use the following command to create this alarm:
 
-```
+```bash
 $ C:\> aws cloudwatch put-metric-alarm \
     --alarm-name snapshot-deletion-failed-monitor \
     --alarm-description "Alarm when snapshot deletions fail" \
@@ -273,7 +273,7 @@ For example, if your policy copies snapshots across Regions daily, you can creat
 
 You can use the following command to create this alarm:
 
-```
+```bash
 $ C:\> aws cloudwatch put-metric-alarm \
     --alarm-name snapshot-copy-region-failed-monitor \
     --alarm-description "Alarm when snapshot copy fails" \

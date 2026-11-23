@@ -17,7 +17,7 @@ Standard deviation for metrics are provided only when at least 200 samples are a
 
 The following shows an example of the metrics that model quality monitor computes for a regression problem.
 
-```
+```json
 "regression_metrics" : {
     "mae" : {
       "value" : 0.3711832061068702,
@@ -43,7 +43,7 @@ The following shows an example of the metrics that model quality monitor compute
 
 The following shows an example of the metrics that model quality monitor computes for a binary classification problem.
 
-```
+```json
 "binary_classification_metrics" : {
     "confusion_matrix" : {
       "0" : {
@@ -139,7 +139,7 @@ The following shows an example of the metrics that model quality monitor compute
 
 The following shows an example of the metrics that model quality monitor computes for a multiclass classification problem.
 
-```
+```json
 "multiclass_classification_metrics" : {
     "confusion_matrix" : {
       "0" : {

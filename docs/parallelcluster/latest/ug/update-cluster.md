@@ -18,7 +18,7 @@ Update the cluster.
 ## Request syntax
 <a name="update-cluster-request"></a>
 
-```
+```json
 PUT /v3/clusters/{{{clusterName}}}
 {
   "clusterConfiguration": "string",
@@ -73,7 +73,7 @@ Required: No
 ## Response syntax
 <a name="update-cluster-response"></a>
 
-```
+```json
 {
   "cluster": {
     "clusterName": "string",
@@ -182,13 +182,13 @@ Type: string
 
 **Request**
 
-```
+```python
 $ update_cluster({{cluster_name_3x}}, {{path/config-file.yaml}})
 ```
 
 **200 Response**
 
-```
+```json
 {
   'change_set': [
     {

@@ -37,7 +37,7 @@ The model is currently optimized for primary care. For your first jobs, use prim
 
 The following policy allows a caller to start and get medical coding jobs in one domain. The actions support resource-level permissions on the domain and on its medical coding jobs. Medical coding supports only the AWS global condition keys.
 
-```
+```json
 {
   "Version": "2012-10-17" ,
   "Statement": [
@@ -63,13 +63,13 @@ The caller also needs `s3:PutObject` on the output location. `StartMedicalCoding
 
 Call `StartMedicalCodingJob` with your clinical documentation in the `text` field and an S3 output location in `outputDataConfig.s3OutputPath`. Also include the `encounterContext` and `patientContext` fields. They are optional, but they are important for optimal coding accuracy, because the visit and patient details change which codes apply. For a complete example request and every allowed value, see [Medical coding inputs](mc-inputs.md). To code against a site-specific dataset, also include its `datasetId`. See [Use a dataset in a coding job](mc-datasets.md#mc-ds-use).
 
-```
+```text
 POST /domain/{domainId}/medical-coding-job
 ```
 
 The response returns a `jobId` that identifies the job:
 
-```
+```json
 {
   "creationTime": "2026-10-03T14:05:12Z",
   "jobArn": "arn:aws:health-agent:us-east-1:111122223333:domain/dom-a1b2c3d4e5f6g7h8/medical-coding-job/4f9c2e1a-7b3d-4e8a-9c21-5d6f0a1b2c3d",
@@ -82,7 +82,7 @@ The response returns a `jobId` that identifies the job:
 
 Medical coding runs asynchronously. Poll `GetMedicalCodingJob` with your domain ID and the `jobId` (1 to 36 characters) returned in Step 1. The request has no body.
 
-```
+```text
 GET /domain/{domainId}/medical-coding-job/{jobId}
 ```
 
@@ -98,7 +98,7 @@ When `jobStatus` is `SUCCEEDED`, the response includes `medicalCodingOutput.uri`
 
 The following language-neutral sketch shows the full flow for one encounter. Map each call to the equivalent operation on the `ConnectHealth` client in your SDK.
 
-```
+```text
 # One clientToken per encounter, so a retry never creates a duplicate job
 token = "encounter-" + encounter_id
 

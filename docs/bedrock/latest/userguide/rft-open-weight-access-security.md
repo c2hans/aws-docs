@@ -34,7 +34,7 @@ If you are using Amazon Bedrock short-term/long-term API keys, then make sure th
 
 You must add Lambda invocation permissions. The following shows an example policy you can use:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -55,7 +55,7 @@ You can also use Amazon Bedrock hosted models as Judges for setting up reward fu
 
 The following is an example for invoking Amazon Bedrock foundation models as judge using the Invoke API:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

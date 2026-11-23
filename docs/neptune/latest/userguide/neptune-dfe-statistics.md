@@ -62,7 +62,7 @@ For more information, see [get-propertygraph-statistics](https://docs.aws.amazon
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 import json
 from botocore.config import Config
@@ -87,10 +87,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/propertygraph/statistics \
   --service neptune-db
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
-
-For more information about using **awscurl** with IAM authentication, see [Using `awscurl` with temporary credentials to securely connect to a DB cluster with IAM authentication enabled](iam-auth-connect-command-line.md#iam-auth-connect-awscurl).
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -98,6 +95,8 @@ For more information about using **awscurl** with IAM authentication, see [Using
 ```
 curl -G https://{{your-neptune-endpoint}}:{{port}}/propertygraph/statistics
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -118,7 +117,7 @@ Prior to [engine release 1.2.1.0](engine-releases-1.2.1.0.md), this was represen
 
 The response to a status request when no statistics have been generated looks like this:
 
-```
+```json
 {
   "status" : "200 OK",
   "payload" : {
@@ -131,7 +130,7 @@ The response to a status request when no statistics have been generated looks li
 
 If DFE statistics are available, the response looks like this:
 
-```
+```json
 {
   "status" : "200 OK",
   "payload" : {
@@ -150,7 +149,7 @@ If DFE statistics are available, the response looks like this:
 
 If the generation of DFE statistics failed, for example because it exceeded the [statistics size limitation](#neptune-dfe-statistics-limits), the response looks like this:
 
-```
+```json
 {
   "status" : "200 OK",
   "payload" : {
@@ -187,7 +186,7 @@ For more information, see [manage-propertygraph-statistics](https://docs.aws.ama
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -214,10 +213,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/propertygraph/statistics \
   -d '{"mode":"disableAutoCompute"}'
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
-
-For more information about using **awscurl** with IAM authentication, see [Using `awscurl` with temporary credentials to securely connect to a DB cluster with IAM authentication enabled](iam-auth-connect-command-line.md#iam-auth-connect-awscurl).
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -226,11 +222,13 @@ For more information about using **awscurl** with IAM authentication, see [Using
 curl -X POST -d '{ "mode" : "disableAutoCompute" }' https://{{your-neptune-endpoint}}:{{port}}/propertygraph/statistics
 ```
 
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
+
 ------
 
 If the request is successful, the HTTP response code is `200` and the response is:
 
-```
+```json
 {
   "status" : "200 OK"
 }
@@ -242,7 +240,7 @@ Disabling auto-generation of statistics does not terminate a statistics computio
 
 If you make a request to disable auto-generation to a reader instance rather than the writer instance of your DB cluster, the request fails with an HTTP return code of 400 and output like the following:
 
-```
+```json
 {
   "detailedMessage" : "Writes are not permitted on a read replica instance",
   "code" : "ReadOnlyViolationException",
@@ -274,7 +272,7 @@ For more information, see [manage-propertygraph-statistics](https://docs.aws.ama
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -301,10 +299,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/propertygraph/statistics \
   -d '{"mode":"enableAutoCompute"}'
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
-
-For more information about using **awscurl** with IAM authentication, see [Using `awscurl` with temporary credentials to securely connect to a DB cluster with IAM authentication enabled](iam-auth-connect-command-line.md#iam-auth-connect-awscurl).
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -313,11 +308,13 @@ For more information about using **awscurl** with IAM authentication, see [Using
 curl -X POST -d '{ "mode" : "enableAutoCompute" }' https://{{your-neptune-endpoint}}:{{port}}/propertygraph/statistics
 ```
 
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
+
 ------
 
 If the request is successful, the HTTP response code is `200` and the response is:
 
-```
+```json
 {
   "status" : "200 OK"
 }
@@ -347,7 +344,7 @@ For more information, see [manage-propertygraph-statistics](https://docs.aws.ama
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 import json
 from botocore.config import Config
@@ -375,10 +372,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/propertygraph/statistics \
   -d '{"mode":"refresh"}'
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
-
-For more information about using **awscurl** with IAM authentication, see [Using `awscurl` with temporary credentials to securely connect to a DB cluster with IAM authentication enabled](iam-auth-connect-command-line.md#iam-auth-connect-awscurl).
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -387,11 +381,13 @@ For more information about using **awscurl** with IAM authentication, see [Using
 curl -X POST -d '{ "mode" : "refresh" }' https://{{your-neptune-endpoint}}:{{port}}/propertygraph/statistics
 ```
 
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
+
 ------
 
 If the request succeeds, the output is as follows, with an HTTP return code of 200:
 
-```
+```json
 {
   "status" : "200 OK",
   "payload" : {
@@ -444,7 +440,7 @@ The AWS CLI handles IAM authentication automatically using your configured crede
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 import json
 from botocore.config import Config
@@ -471,8 +467,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/propertygraph/statistics \
   --service neptune-db
 ```
 
-**Note**
-Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -481,8 +476,7 @@ Replace {{us-east-1}} with the Region of your Neptune cluster.
 curl -G https://{{your-neptune-endpoint}}:{{port}}/propertygraph/statistics
 ```
 
-**Note**
-This example does not include IAM authentication. To use IAM authentication with **curl**, you must manually sign the request. Consider using the AWS CLI, SDK, or **awscurl** instead.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -500,7 +494,7 @@ aws neptunedata manage-propertygraph-statistics \
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 import json
 from botocore.config import Config
@@ -521,7 +515,7 @@ print(json.dumps(response['payload'], indent=2, default=str))
 
 Create a JSON file named `request.json` that contains:
 
-```
+```json
 { "mode" : "refresh" }
 ```
 
@@ -536,6 +530,8 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/propertygraph/statistics \
   -d @request.json
 ```
 
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
+
 ------
 #### [ curl ]
 
@@ -545,8 +541,7 @@ curl -X POST https://{{your-neptune-endpoint}}:{{port}}/propertygraph/statistics
   -d '{ "mode" : "refresh" }'
 ```
 
-**Note**
-This example does not include IAM authentication. To use IAM authentication with **curl**, you must manually sign the request. Consider using the AWS CLI, SDK, or **awscurl** instead.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 
@@ -571,7 +566,7 @@ For more information, see [delete-propertygraph-statistics](https://docs.aws.ama
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 import json
 from botocore.config import Config
@@ -597,10 +592,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/propertygraph/statistics \
   -X DELETE
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
-
-For more information about using **awscurl** with IAM authentication, see [Using `awscurl` with temporary credentials to securely connect to a DB cluster with IAM authentication enabled](iam-auth-connect-command-line.md#iam-auth-connect-awscurl).
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -609,6 +601,8 @@ For more information about using **awscurl** with IAM authentication, see [Using
 curl -X DELETE https://{{your-neptune-endpoint}}:{{port}}/propertygraph/statistics
 ```
 
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
+
 ------
 
 Valid HTTP return codes are:
@@ -616,7 +610,7 @@ Valid HTTP return codes are:
 
   In this case, a typical response would look like:
 
-  ```
+  ```json
   {
     "status" : "200 OK",
     "payload" : {
@@ -644,7 +638,7 @@ The following is a list of common errors that can occur when you make a request 
 
 For example, if you make a request when the DFE and statistics are not enabled, you would get a response like the following:
 
-```
+```json
 {
   "code" : "BadRequestException",
   "requestId" : "b2b8f8ee-18f1-e164-49ea-836381a3e174",

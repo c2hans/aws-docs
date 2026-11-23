@@ -24,13 +24,13 @@ You can list and view linked repository details using the console or the AWS CLI
 
 Run the following command:
 
-```
+```sh
 $ aws proton list-repositories
 ```
 
 Response:
 
-```
+```json
 {
     "repositories": [
         {
@@ -51,7 +51,7 @@ Response:
 
 Run the following command:
 
-```
+```sh
 $ aws proton get-repository \
     --name {{myrepos/templates}} \
     --provider "{{GITHUB}}"
@@ -59,7 +59,7 @@ $ aws proton get-repository \
 
 Response:
 
-```
+```json
 {
     "repository": {
         "arn": "arn:aws:proton:region-id:123456789012:repository/github:myrepos/templates",
@@ -75,7 +75,7 @@ The following example lists repositories that you configured for template sync.
 
 Run the following command:
 
-```
+```sh
 $ aws proton list-repository-sync-definitions \
     --branch "{{main}}" \
     --repository-name {{myrepos/templates}} \
@@ -89,7 +89,7 @@ The following example retrieves sync status of a template sync repository.
 
 Run the following command:
 
-```
+```sh
 $ aws proton get-repository-sync-status \
     --branch "{{main}}" \
     --repository-name {{myrepos/templates}} \
@@ -99,7 +99,7 @@ $ aws proton get-repository-sync-status \
 
 Response:
 
-```
+```json
 {
     "latestSync": {
         "events": [

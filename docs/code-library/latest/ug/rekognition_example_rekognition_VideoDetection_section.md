@@ -18,7 +18,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rekognition/#code-examples).
 Get celebrity results from a video located in an Amazon S3 bucket.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.rekognition.RekognitionClient;
 import software.amazon.awssdk.services.rekognition.model.S3Object;
@@ -182,7 +182,7 @@ public class VideoCelebrityDetection {
 ```
 Detect labels in a video by a label detection operation.
 
-```
+```java
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -442,7 +442,7 @@ public class VideoDetect {
 ```
 Detect faces in a video stored in an Amazon S3 bucket.
 
-```
+```java
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -702,7 +702,7 @@ public class VideoDetect {
 ```
 Detect inappropriate or offensive content in a video stored in an Amazon S3 bucket.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.rekognition.RekognitionClient;
 import software.amazon.awssdk.services.rekognition.model.NotificationChannel;
@@ -858,7 +858,7 @@ public class VideoDetectInappropriate {
 ```
 Detect technical cue segments and shot detection segments in a video stored in an Amazon S3 bucket.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.rekognition.RekognitionClient;
 import software.amazon.awssdk.services.rekognition.model.S3Object;
@@ -1057,7 +1057,7 @@ public class VideoDetectSegment {
 ```
 Detect text in a video stored in a video stored in an Amazon S3 bucket.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.rekognition.RekognitionClient;
 import software.amazon.awssdk.services.rekognition.model.S3Object;
@@ -1213,7 +1213,7 @@ public class VideoDetectText {
 ```
 Detect people in a video stored in a video stored in an Amazon S3 bucket.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.rekognition.RekognitionClient;
 import software.amazon.awssdk.services.rekognition.model.S3Object;
@@ -1388,7 +1388,7 @@ public class VideoPersonDetection {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
 Detect faces in a video stored in an Amazon S3 bucket.
 
-```
+```kotlin
 suspend fun startFaceDetection(
     channelVal: NotificationChannel?,
     bucketVal: String,
@@ -1464,7 +1464,7 @@ suspend fun getFaceResults() {
 ```
 Detect inappropriate or offensive content in a video stored in an Amazon S3 bucket.
 
-```
+```kotlin
 suspend fun startModerationDetection(
     channel: NotificationChannel?,
     bucketVal: String?,

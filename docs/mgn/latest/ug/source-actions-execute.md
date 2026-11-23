@@ -61,7 +61,7 @@ When you execute a source action, the following occurs:
 
 1. The script from SSM Parameter Store is retrieved and executed
 
-1. Script output (stdout and stderr) is captured (up to 1 MB per stream)
+1. SSM Run Command captures the script output (standard output and standard error)
 
 1. The invocation completes with a status (Success, Failed, or Timeout)
 

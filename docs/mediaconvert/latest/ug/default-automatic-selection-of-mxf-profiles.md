@@ -32,7 +32,7 @@ For your output resolution and frame rate, you can specify an allowed value expl
 
 This excerpt from a JSON job specification shows the same settings as you would submit them programmatically:
 
-```
+```json
 {
   "height": 512,
   "width": 720,

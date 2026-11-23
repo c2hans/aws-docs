@@ -12,7 +12,7 @@ The following code examples show how to use `GetSecretValue`.
 
 **Required permissions: **`secretsmanager:GetSecretValue`
 
-```
+```python
 """
 Purpose
 

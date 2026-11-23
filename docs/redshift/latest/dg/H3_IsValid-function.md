@@ -33,7 +33,7 @@ If *index* is NULL, then NULL is returned.
 
 The following SQL inputs a VARCHAR that represents an H3 cell ID, and returns true.
 
-```
+```sql
 SELECT H3_IsValid('8025fffffffffff');
 ```
 
@@ -45,7 +45,7 @@ SELECT H3_IsValid('8025fffffffffff');
 
 The following SQL inputs a BIGINT that represents an H3 cell ID, and returns true.
 
-```
+```sql
 SELECT H3_IsValid(577129255373111295);
 ```
 
@@ -57,7 +57,7 @@ SELECT H3_IsValid(577129255373111295);
 
 The following SQL inputs an invalid H3 cell ID and returns false.
 
-```
+```sql
 SELECT H3_IsValid('');
 ```
 

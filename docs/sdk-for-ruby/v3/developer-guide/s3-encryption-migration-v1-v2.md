@@ -32,7 +32,7 @@ Version 3 is the latest version of the AWS SDK For Ruby. To complete this migrat
 
 For projects that install the `aws-sdk-s3` gem, use the version option to verify that the minimum version of 1.76.0 is installed.
 
-```
+```ruby
 gem install aws-sdk-s3 -v '>= 1.76.0'
 ```
 
@@ -40,7 +40,7 @@ gem install aws-sdk-s3 -v '>= 1.76.0'
 
 For projects that use a Gemfile to manage dependencies, set the minimum version of the `aws-sdk-s3` gem to 1.76.0. For example:
 
-```
+```ruby
 gem 'aws-sdk-s3', '>= 1.76.0'
 ```
 
@@ -57,7 +57,7 @@ Version 2 of the AWS SDK for Ruby will enter [maintenance mode](https://aws.amaz
 
 For projects that install the `aws-sdk` gem, from the command line, use the version option to verify that the minimum version of 2.11.562 is installed.
 
-```
+```ruby
 gem install aws-sdk -v '>= 2.11.562'
 ```
 
@@ -65,7 +65,7 @@ gem install aws-sdk -v '>= 2.11.562'
 
 For projects that use a Gemfile to manage dependencies, set the minimum version of the `aws-sdk` gem to 2.11.562. For example:
 
-```
+```ruby
 gem 'aws-sdk', '>= 2.11.562'
 ```
 
@@ -103,7 +103,7 @@ The *EncryptionV2::Client* requires additional configuration. For detailed confi
 
  **Pre-migration**
 
-```
+```ruby
 client = Aws::S3::Encryption::Client.new(encryption_key: aes_key)
 client.put_object(bucket: bucket, key: key, body: secret_data)
 resp = client.get_object(bucket: bucket, key: key)
@@ -111,7 +111,7 @@ resp = client.get_object(bucket: bucket, key: key)
 
  **Post-migration**
 
-```
+```ruby
 client = Aws::S3::EncryptionV2::Client.new(
   encryption_key: rsa_key,
   key_wrap_schema: :rsa_oaep_sha1, # the key_wrap_schema must be rsa_oaep_sha1 for asymmetric keys
@@ -127,7 +127,7 @@ resp = client.get_object(bucket: bucket, key: key) # No changes
 
  **Pre-migration**
 
-```
+```ruby
 client = Aws::S3::Encryption::Client.new(kms_key_id: kms_key_id)
 client.put_object(bucket: bucket, key: key, body: secret_data)
 resp = client.get_object(bucket: bucket, key: key)
@@ -135,7 +135,7 @@ resp = client.get_object(bucket: bucket, key: key)
 
  **Post-migration**
 
-```
+```ruby
 client = Aws::S3::EncryptionV2::Client.new(
   kms_key_id: kms_key_id,
   key_wrap_schema: :kms_context, # the key_wrap_schema must be kms_context for KMS keys
@@ -151,7 +151,7 @@ resp = client.get_object(bucket: bucket, key: key) # No change
 
  **Pre-migration**
 
-```
+```ruby
 client = Aws::S3::Encryption::Client.new(kms_key_id: kms_key_id)
 client.put_object(bucket: bucket, key: key, body: secret_data)
 resp = client.get_object(bucket: bucket, key: key)
@@ -159,7 +159,7 @@ resp = client.get_object(bucket: bucket, key: key)
 
  **Post-migration**
 
-```
+```ruby
 client = Aws::S3::EncryptionV2::Client.new(
   kms_key_id: kms_key_id,
   key_wrap_schema: :kms_context, # the key_wrap_schema must be kms_context for KMS keys
@@ -174,7 +174,7 @@ resp = client.get_object(bucket: bucket, key: key, kms_allow_decrypt_with_any_cm
 
 If you only read and decrypt (never write and encrypt) objects using the S2 encryption client, use this code.
 
-```
+```ruby
 client = Aws::S3::EncryptionV2::Client.new(
   kms_key_id: :kms_allow_decrypt_with_any_cmk, # set kms_key_id to allow all get_object requests to use any cmk
   key_wrap_schema: :kms_context, # the key_wrap_schema must be kms_context for KMS keys

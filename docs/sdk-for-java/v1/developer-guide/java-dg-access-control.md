@@ -21,7 +21,7 @@ Where:
 
 The following example demonstrates a policy that allows anyone access to read all the objects in a bucket, but restricts access to uploading objects to that bucket to two specific AWS accounts (in addition to the bucket owner’s account).
 
-```
+```java
 Statement allowPublicReadStatement = new Statement(Effect.Allow)
     .withPrincipals(Principal.AllUsers)
     .withActions(S3Actions.GetObject)
@@ -43,7 +43,7 @@ s3.setBucketPolicy(myBucketName, policy.toJson());
 
 One common use of policies is to authorize an Amazon SQS queue to receive messages from an Amazon SNS topic.
 
-```
+```java
 Policy policy = new Policy().withStatements(
     new Statement(Effect.Allow)
         .withPrincipals(Principal.AllUsers)
@@ -62,7 +62,7 @@ sqs.setQueueAttributes(new SetQueueAttributesRequest(myQueueUrl, queueAttributes
 
 Some services offer additional conditions that can be used in policies. Amazon SNS provides conditions for allowing or denying subscriptions to SNS topics based on the protocol (e.g., email, HTTP, HTTPS, Amazon SQS) and endpoint (e.g., email address, URL, Amazon SQS ARN) of the request to subscribe to a topic.
 
-```
+```java
 Condition endpointCondition =
     SNSConditionFactory.newEndpointCondition("*@mycompany.com");
 

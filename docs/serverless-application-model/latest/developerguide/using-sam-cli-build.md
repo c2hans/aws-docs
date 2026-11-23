@@ -39,6 +39,8 @@ Before using `sam build`, consider configuring the following:
 
    1. **Custom runtime** – Author your Lambda functions using any programming language and build your runtime using a custom process defined in a makefile or third-party builder such as esbuild. To learn more, see [Building Lambda Event Functions with custom runtimes in AWS SAM](building-custom-runtimes.md).
 
+   1. **Customer-managed runtime** – Use a runtime that a runtime publisher manages. `sam build` builds the code with the function's `Metadata.BuildMethod`. To learn more, see [Building Lambda Event Functions with customer-managed runtimes in AWS SAM](building-customer-managed-runtimes.md).
+
 1. **Lambda package type** – Lambda functions can be packaged in the following Lambda deployment package types:
 
    1. **.zip file archive** – Contains your application code and its dependencies.
@@ -216,7 +218,7 @@ $ sam build --use-container --container-env-var-file {{<env.json>}}
 
 Example of the `env.json` file:
 
-```
+```json
 {
   "MyFunction1": {
     "GITHUB_TOKEN": "TOKEN1"

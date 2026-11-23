@@ -17,13 +17,18 @@ Engagement classification for this opportunity. Read-only. Null before scoring. 
 Type: String
 Required: No
 
+ ** CosellMotionReason **   <a name="AWSPartnerCentral-Type-AwsOpportunitySummaryFullView-CosellMotionReason"></a>
+The plain-language reason for the current `CosellMotion` value. Read-only. Null when `CosellMotion` is null.
+Type: String
+Required: No
+
  ** Customer **   <a name="AWSPartnerCentral-Type-AwsOpportunitySummaryFullView-Customer"></a>
-Represents the customer associated with the AWS opportunity. This field captures key details about the customer that are necessary for managing the opportunity.
+Contains details about the customer that the AWS opportunity belongs to.
 Type: [AwsOpportunityCustomer](API_AwsOpportunityCustomer.md) object
 Required: No
 
  ** Insights **   <a name="AWSPartnerCentral-Type-AwsOpportunitySummaryFullView-Insights"></a>
-Contains insights provided by AWS for the opportunity, offering recommendations and analysis that can help the partner optimize their engagement and strategy.
+Contains the insights that AWS provides for the opportunity, such as the engagement score and the recommended next actions.
 Type: [AwsOpportunityInsights](API_AwsOpportunityInsights.md) object
 Required: No
 
@@ -40,7 +45,7 @@ Valid Values: `Expansion Opportunity | Change in Deal Information | Customer Req
 Required: No
 
  ** LifeCycle **   <a name="AWSPartnerCentral-Type-AwsOpportunitySummaryFullView-LifeCycle"></a>
-Tracks the lifecycle of the AWS opportunity, including stages such as qualification, validation, and closure. This field helps partners understand the current status and progression of the opportunity.
+Contains lifecycle details of the AWS opportunity, such as its stage, review status, and target close date.
 Type: [AwsOpportunityLifeCycle](API_AwsOpportunityLifeCycle.md) object
 Required: No
 
@@ -56,12 +61,12 @@ Valid Values: `AWS Referral | Partner Referral`
 Required: No
 
  ** Project **   <a name="AWSPartnerCentral-Type-AwsOpportunitySummaryFullView-Project"></a>
-Captures details about the project associated with the opportunity, including objectives, scope, and customer requirements.
+Contains details about the project that the AWS opportunity covers.
 Type: [AwsOpportunityProject](API_AwsOpportunityProject.md) object
 Required: No
 
  ** RelatedEntityIds **   <a name="AWSPartnerCentral-Type-AwsOpportunitySummaryFullView-RelatedEntityIds"></a>
-Represents other entities related to the AWS opportunity, such as AWS products, partner solutions, and marketplace offers. These associations help build a complete picture of the solution being sold.
+Lists the identifiers of entities that relate to the AWS opportunity, such as AWS products and partner solutions.
 Type: [AwsOpportunityRelatedEntities](API_AwsOpportunityRelatedEntities.md) object
 Required: No
 
@@ -69,6 +74,11 @@ Required: No
 Identifier of the related partner opportunity.
 Type: String
 Pattern: `O[0-9]{1,19}`
+Required: No
+
+ ** SoftwareRevenue **   <a name="AWSPartnerCentral-Type-AwsOpportunitySummaryFullView-SoftwareRevenue"></a>
+Seller-provided PARC deal terms: commitment value, discount, and contract dates.
+Type: [AwsSoftwareRevenue](API_AwsSoftwareRevenue.md) object
 Required: No
 
  ** Visibility **   <a name="AWSPartnerCentral-Type-AwsOpportunitySummaryFullView-Visibility"></a>

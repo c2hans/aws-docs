@@ -20,7 +20,7 @@ Amazon ECS Managed Daemon metrics use the same `ECS/ContainerInsights` namespace
 
 The following table lists the metrics and dimensions that Container Insights collects for Amazon ECS. These metrics are in the `ECS/ContainerInsights` namespace. For more information, see [Metrics](cloudwatch_concepts.md#Metric).
 
-If you do not see any Container Insights metrics in your console, be sure that you have completed the setup of Container Insights. Metrics do not appear before Container Insights has been set up completely. For more information, see [Container Insights](ContainerInsights.md).
+If you do not see any Container Insights metrics in your console, be sure that you have completed the setup of Container Insights. Metrics do not appear before Container Insights has been set up completely. For more information, see [Container Insights for Amazon ECS](deploy-container-insights-ECS.md).
 
 The following metrics are available when you complete the steps in [Setting up Container Insights on Amazon ECS](deploy-container-insights-ECS-cluster.md).
 

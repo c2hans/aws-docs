@@ -14,7 +14,7 @@ When using the call and bridge function it is important to note that each call i
 
 The following example code shows a typical action that bridges to a PSTN endpoint.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions": [{
@@ -34,7 +34,7 @@ The following example code shows a typical action that bridges to a PSTN endpoin
 
 The following example shows a typical action that uses a Voice Connector or Voice Connector Group, plus a custom SIP header.
 
-```
+```json
 {
    "SchemaVersion":"1.0",
    "Actions":[
@@ -126,7 +126,7 @@ The following example shows a typical action that uses a Voice Connector or Voic
 
 The following example shows a successful `CallAndBridge` action that uses a PSTN endpoint:
 
-```
+```json
 {
    "SchemaVersion": "1.0",
    "Sequence": 3,
@@ -168,7 +168,7 @@ The following example shows a successful `CallAndBridge` action that uses a PSTN
 
 The following example shows a failed `CallAndBridge` action.
 
-```
+```json
 {
    "SchemaVersion": "1.0",
    "Sequence":2,

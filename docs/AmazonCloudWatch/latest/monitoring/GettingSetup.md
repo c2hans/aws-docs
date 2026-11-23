@@ -148,7 +148,7 @@ Sending metrics, logs, and traces to CloudWatch incurs charges. For more informa
 The Collector receives all three signals from your application and exports each one to its CloudWatch OTLP endpoint. Use a distribution that includes the `sigv4auth` extension, such as the OpenTelemetry Collector Contrib distribution or the AWS Distro for OpenTelemetry (ADOT) Collector.
 
 **Note**
-The CloudWatch agent is an alternative. It can receive OpenTelemetry Protocol (OTLP) data and send it to CloudWatch, so you can use it instead of running a separate OpenTelemetry Collector. For more information, see [Collect metrics and traces with OpenTelemetry](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Agent-OpenTelemetry-metrics.html).
+The CloudWatch agent is an alternative. It can receive OpenTelemetry Protocol (OTLP) data and send it to the CloudWatch OTLP endpoints, so you can use it instead of running a separate OpenTelemetry Collector. For more information, see [Create a CloudWatch agent configuration for OpenTelemetry](CloudWatch-Agent-OpenTelemetry-config.md).
 
 The logs exporter sends to the log group and log stream that you set in the `x-aws-log-group` and `x-aws-log-stream` headers. This example uses a `/otel/quickstart` log group and a `default` stream. Create them in CloudWatch Logs first, or change the values to a log group and stream that already exist.
 

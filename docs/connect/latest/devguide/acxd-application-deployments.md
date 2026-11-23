@@ -18,7 +18,7 @@ Deploying an application pushes a successful build to the channels where users i
 ## Quick start
 <a name="acxd-application-deployments-quick-start"></a>
 
-```
+```typescript
 // 1. Create Application
 const app = await client.send(new CreateApplicationCommand({
   name: "DeploymentTestApp",
@@ -92,7 +92,7 @@ Lists deployments for an application.
 
 **Sample Request**
 
-```
+```typescript
 await client.send(new ListApplicationDeploymentsCommand({
     applicationIdentifier: app.applicationId,
 }));
@@ -100,7 +100,7 @@ await client.send(new ListApplicationDeploymentsCommand({
 
 **Output**
 
-```
+```json
 {
   "items": [
     {
@@ -145,7 +145,7 @@ Deploys a build to an environment, making it live for end users on all configure
 
 **Sample Request**
 
-```
+```typescript
 await client.send(new CreateApplicationDeploymentCommand({
       applicationIdentifier: app.applicationId,
       buildIdentifier: build.buildId,
@@ -159,7 +159,7 @@ await client.send(new CreateApplicationDeploymentCommand({
 
 **Output**
 
-```
+```json
 {
   "deploymentId": "d1e2f3a4-5678-90ab-cdef-1234567890ab",
   "applicationId": "05c3fcc2-7900-41c4-adee-b59dc69be8ae",
@@ -194,7 +194,7 @@ Gets deployment details and status.
 
 **Sample Request**
 
-```
+```typescript
 await client.send(new GetApplicationDeploymentCommand({
   applicationIdentifier: "05c3fcc2-7900-41c4-adee-b59dc69be8ae",
   deploymentIdentifier: "d1e2f3a4-5678-90ab-cdef-1234567890ab",
@@ -203,7 +203,7 @@ await client.send(new GetApplicationDeploymentCommand({
 
 **Output**
 
-```
+```json
 {
   "deploymentId": "d1e2f3a4-5678-90ab-cdef-1234567890ab",
   "applicationId": "05c3fcc2-7900-41c4-adee-b59dc69be8ae",
@@ -244,7 +244,7 @@ Updates a deployment (e.g., deploy a different build, change environment, or rol
 
 **Sample Request**
 
-```
+```typescript
 await client.send(new UpdateApplicationDeploymentCommand({
       applicationIdentifier: "05c3fcc2-7900-41c4-adee-b59dc69be8ae",
       buildIdentifier: "b1c2d3e4-5678-90ab-cdef-1234567890ab",
@@ -258,7 +258,7 @@ await client.send(new UpdateApplicationDeploymentCommand({
 
 **Output**
 
-```
+```json
 {
   "deploymentId": "d1e2f3a4-5678-90ab-cdef-1234567890ab",
   "applicationId": "05c3fcc2-7900-41c4-adee-b59dc69be8ae",
@@ -293,7 +293,7 @@ Removes a deployment, taking the application offline. The application stays offl
 
 **Sample Request**
 
-```
+```typescript
 await client.send(new DeleteApplicationDeploymentCommand({
   applicationIdentifier: "05c3fcc2-7900-41c4-adee-b59dc69be8ae",
   deploymentIdentifier: "d1e2f3a4-5678-90ab-cdef-1234567890ab"

@@ -20,7 +20,7 @@ Import the following classes for these examples.
 
  **Imports**
 
-```
+```java
 import com.amazonaws.ClientConfiguration;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3EncryptionClientV2Builder;
@@ -43,7 +43,7 @@ To use client-side authenticated encryption, you must include the latest [Bouncy
 
  **Code**
 
-```
+```java
 AmazonS3EncryptionV2 s3Encryption = AmazonS3EncryptionClientV2Builder.standard()
          .withRegion(Regions.US_WEST_2)
          .withCryptoConfiguration(new CryptoConfigurationV2().withCryptoMode((CryptoMode.StrictAuthenticatedEncryption)))
@@ -65,7 +65,7 @@ To enable this mode, specify the `AuthenticatedEncryption` value in the `withCry
 
  **Code**
 
-```
+```java
 AmazonS3EncryptionV2 s3EncryptionClientV2 = AmazonS3EncryptionClientV2Builder.standard()
          .withRegion(Regions.DEFAULT_REGION)
          .withClientConfiguration(new ClientConfiguration())

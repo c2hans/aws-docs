@@ -15,7 +15,7 @@ You can respond in several ways to a `NEW_INCOMING_CALL` event. For example:
 
 When a new inbound call is received, the SIP media application invokes an AWS Lambda function with this payload.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{2}},

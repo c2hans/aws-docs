@@ -34,7 +34,7 @@ To set up and run this example, first complete these tasks:
 
 Create a Node.js module with the file name `ddb_putitem.js`. Be sure to configure the SDK as previously shown. To access DynamoDB, create an `AWS.DynamoDB` service object. Create a JSON object containing the parameters needed to add an item, which in this example includes the name of the table and a map that defines the attributes to set and the values for each attribute. Call the `putItem` method of the DynamoDB service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -63,7 +63,7 @@ ddb.putItem(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ddb_putitem.js
 ```
 
@@ -76,7 +76,7 @@ Create a Node.js module with the file name `ddb_getitem.js`. Be sure to configur
 
 Create a JSON object containing the parameters needed to get an item, which in this example includes the name of the table, the name and value of the key for the item you're getting, and a projection expression that identifies the item attribute you want to retrieve. Call the `getItem` method of the DynamoDB service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -105,7 +105,7 @@ ddb.getItem(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ddb_getitem.js
 ```
 
@@ -116,7 +116,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `ddb_deleteitem.js`. Be sure to configure the SDK as previously shown. To access DynamoDB, create an `AWS.DynamoDB` service object. Create a JSON object containing the parameters needed to delete an item, which in this example includes the name of the table and both the key name and value for the item you're deleting. Call the `deleteItem` method of the DynamoDB service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -144,7 +144,7 @@ ddb.deleteItem(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ddb_deleteitem.js
 ```
 

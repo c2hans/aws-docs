@@ -17,7 +17,7 @@ The following procedure uses the `createSnapshot` event to automatically copy a 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -45,7 +45,7 @@ The following procedure uses the `createSnapshot` event to automatically copy a 
 
 1. Define a function in Lambda that will be available from the EventBridge console. The sample Lambda function below, written in Node.js, is invoked by EventBridge when a matching `createSnapshot` event is emitted by Amazon EBS (signifying that a snapshot was completed). When invoked, the function copies the snapshot from `us-east-2` to `us-east-1`.
 
-   ```
+   ```java
    // Sample Lambda function to copy an EBS snapshot to a different Region
 
    var AWS = require('aws-sdk');

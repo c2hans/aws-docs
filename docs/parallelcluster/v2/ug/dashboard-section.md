@@ -10,7 +10,7 @@ Defines configuration settings for the CloudWatch dashboard.
 
 The format is `[dashboard {{dashboard-name}}]`. {{dashboard-name}} must start with a letter, contain no more than 30 characters, and only contain letters, numbers, hyphens (-), and underscores (\_).
 
-```
+```ini
 [dashboard {{custom-dashboard}}]
 enable = true
 ```
@@ -27,7 +27,7 @@ The default value is `true`. Use `false` to disable the CloudWatch dashboard.
 
 The following example enables the CloudWatch dashboard.
 
-```
+```ini
 enable = true
 ```
 

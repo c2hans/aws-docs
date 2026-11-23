@@ -39,7 +39,7 @@ Sample configuration files are available in the [companion GitHub repository](ht
 
 Run the following commands to create the bucket and upload the configuration files:
 
-```
+```bash
 aws s3 mb s3://{{host-level-logs-bucket}}
 
 aws s3api put-public-access-block \

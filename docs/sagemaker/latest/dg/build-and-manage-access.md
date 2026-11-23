@@ -24,7 +24,7 @@ Your pipeline execution role requires the following permissions:
 +  `Create` and `Describe` permissions for each of the job types in the pipeline.
 +  Amazon S3 permissions to use the `JsonGet` function. You control access to your Amazon S3 resources using resource-based policies and identity-based policies. A resource-based policy is applied to your Amazon S3 bucket and grants Pipelines access to the bucket. An identity-based policy gives your pipeline the ability to make Amazon S3 calls from your account. For more information on resource-based policies and identity-based policies, see [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html).
 
-  ```
+  ```json
   {
       "Action": [
           "s3:GetObject"
@@ -50,7 +50,7 @@ Use the following CORS configuration code for the Amazon S3 buckets that host yo
 
 **JSON**
 
-```
+```json
 [
     {
         "AllowedHeaders": [
@@ -125,7 +125,7 @@ The job names have internal length constraints specific to individual pipeline s
 
 Your admin creates IAM policies allowing users of specific prefixes to create jobs. The following example policy permits data scientists to create training jobs if they use the `MyBaseJobName` prefix.
 
-```
+```json
 {
     "Action": "sagemaker:CreateTrainingJob",
     "Effect": "Allow",
@@ -152,7 +152,7 @@ If you call `register`, the custom prefix comes from the `model_package_name` ar
 
 The following example shows how to specify a prefix for a new training job instance.
 
-```
+```py
 # Create a job instance
 xgb_train = Estimator(
     image_uri=image_uri,
@@ -180,7 +180,7 @@ step_train = TrainingStep(
 
 Job prefixing is off by default. To opt into this feature, use the `use_custom_job_prefix` option of `PipelineDefinitionConfig` as shown in the following snippet:
 
-```
+```py
 from sagemaker.workflow.pipeline_definition_config import PipelineDefinitionConfig
 
 # Create a definition configuration and toggle on custom prefixing
@@ -197,7 +197,7 @@ definition_config = PipelineDefinitionConfig(use_custom_job_prefix=True);
 
 Create and run your pipeline. The following example creates and runs a pipeline, and also demonstrates how you can turn off job prefixing and rerun your pipeline.
 
-```
+```py
 pipeline.create(role_arn=sagemaker.get_execution_role())
 
 # Optionally, call definition() to confirm your prefixed job names are in the built JSON
@@ -214,7 +214,7 @@ execution = pipeline.start()
 
 Similarly, you can toggle the feature on for existing pipelines and start a new run which uses job prefixes.
 
-```
+```py
 definition_config = PipelineDefinitionConfig(use_custom_job_prefix=True)
 pipeline.pipeline_definition_config = definition_config
 pipeline.update()
@@ -223,7 +223,7 @@ execution = pipeline.start()
 
 Finally, you can view your custom-prefixed job by calling `list_steps` on the pipeline execution.
 
-```
+```py
 steps = execution.list_steps()
 
 prefixed_training_job_name = steps['PipelineExecutionSteps'][0]['Metadata']['TrainingJob']['Arn']
@@ -239,7 +239,7 @@ You can grant customized access to specific versions of Amazon SageMaker Pipelin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

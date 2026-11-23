@@ -26,7 +26,7 @@ The source code for this package is on GitHub at [https://github.com/aws/aws-sdk
 
 Suppose that you create an ASP.NET Core Model-View-Controller (MVC) application, which can be accomplished with the **ASP.NET Core Web Application** template in Visual Studio or by running `dotnet new mvc ...` in the .NET Core CLI. When you create such an application, the constructor for `Startup.cs` handles configuration by reading in various input sources from configuration providers such as `appsettings.json`.
 
-```
+```csharp
 public Startup(IConfiguration configuration)
 {
     Configuration = configuration;
@@ -39,7 +39,7 @@ Notice that one of the files added to your project is `appsettings.Development.j
 
 The following configuration settings show examples of the values you can add in the `appsettings.Development.json` file in your project to supply AWS settings.
 
-```
+```json
 {
   "AWS": {
     "Profile": "local-test-profile",
@@ -51,7 +51,7 @@ The following configuration settings show examples of the values you can add in 
 
 To access a setting in a *CSHTML* file, use the `Configuration` directive.
 
-```
+```html
 @using Microsoft.Extensions.Configuration
 @inject IConfiguration Configuration
 
@@ -66,14 +66,14 @@ To access the AWS options set in the file from code, call the `GetAWSOptions` ex
 
 To construct a service client from these options, call `CreateServiceClient`. The following example shows how to create an Amazon S3 service client. (Be sure to add the [AWSSDK.S3](https://www.nuget.org/packages/AWSSDK.S3) NuGet package to your project.)
 
-```
+```csharp
 var options = Configuration.GetAWSOptions();
 IAmazonS3 client = options.CreateServiceClient<IAmazonS3>();
 ```
 
 You can also create multiple service clients with incompatible settings by using multiple entries in the `appsettings.Development.json` file, as shown in the following examples where the configuration for `service1` includes the `us-west-2` Region and the configuration for `service2` includes the special endpoint *URL*.
 
-```
+```json
 {
   "service1": {
     "Profile": "default",
@@ -88,7 +88,7 @@ You can also create multiple service clients with incompatible settings by using
 
 You can then get the options for a specific service by using the entry in the JSON file. For example, to get the settings for `service1` use the following.
 
-```
+```csharp
 var options = Configuration.GetAWSOptions("service1");
 ```
 
@@ -120,7 +120,7 @@ The following app configuration values can be set in the `appsettings.Developmen
 
 The *AWSSDK.Extensions.NETCore.Setup* NuGet package also integrates with a new dependency injection system in ASP.NET Core. The `ConfigureServices` method in your application's `Startup` class is where the MVC services are added. If the application is using Entity Framework, this is also where that is initialized.
 
-```
+```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     // Add framework services.
@@ -133,7 +133,7 @@ Background on dependency injection in .NET Core is available on the [.NET Core d
 
 The `AWSSDK.Extensions.NETCore.Setup` NuGet package adds new extension methods to `IServiceCollection` that you can use to add AWS services to the dependency injection. The following code shows you how to add the AWS options that are read from `IConfiguration` to add Amazon S3 and DynamoDB to the list of services. (Be sure to add the [AWSSDK.S3](https://www.nuget.org/packages/AWSSDK.S3) and [AWSSDK.DynamoDBv2](https://www.nuget.org/packages/AWSSDK.DynamoDBv2) NuGet packages to your project.)
 
-```
+```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     // Add framework services.
@@ -147,7 +147,7 @@ public void ConfigureServices(IServiceCollection services)
 
 Now, if your MVC controllers use either `IAmazonS3` or `IAmazonDynamoDB` as parameters in their constructors, the dependency injection system passes in those services.
 
-```
+```csharp
 public class HomeController : Controller
 {
     IAmazonS3 S3Client { get; set; }

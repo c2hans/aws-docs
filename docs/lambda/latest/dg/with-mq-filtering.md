@@ -22,7 +22,7 @@ Suppose your Amazon MQ message queue contains messages either in valid JSON form
 ------
 #### [ ActiveMQ ]
 
-```
+```json
 {
     "messageID": "ID:b-9bcfa592-423a-4942-879d-eb284b418fc8-1.mq.us-east-2.amazonaws.com-37557-1234520418293-4:1:1:1:1",
     "messageType": "jms/text-message",
@@ -51,7 +51,7 @@ Suppose your Amazon MQ message queue contains messages either in valid JSON form
 ------
 #### [ RabbitMQ ]
 
-```
+```json
 {
     "basicProperties": {
         "contentType": "text/plain",
@@ -174,7 +174,7 @@ aws lambda update-event-source-mapping \
 
 To add this filter using AWS SAM, add the following snippet to the YAML template for your event source.
 
-```
+```YAML
 FilterCriteria:
   Filters:
     - Pattern: '{ "data" : { "timeout" : [ { "numeric": [ ">", 0 ] } ] } }'
@@ -242,7 +242,7 @@ aws lambda update-event-source-mapping \
 
 To add this filter using AWS SAM, add the following snippet to the YAML template for your event source.
 
-```
+```YAML
 FilterCriteria:
   Filters:
     - Pattern: '{ "data" : [ { "prefix": "Result " } ] }'

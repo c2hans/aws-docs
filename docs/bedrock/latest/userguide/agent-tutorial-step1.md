@@ -28,7 +28,7 @@ For more information, see [Create your first Lambda function](https://docs.aws.a
 
 1. In the **Code** tab, replace the existing code with the following:
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
    import datetime

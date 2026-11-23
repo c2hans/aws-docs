@@ -22,7 +22,7 @@ This service-linked role has a permissions policy attached to it called `AmazonD
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

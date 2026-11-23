@@ -8,4 +8,6 @@ In addition to the AWS Regions and Availability Zones, AWS also operates a globa
 
 ![This image shows the Amazon CloudFront global edge network](https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/images/amazon-cloudfront.png)
 
+*The Amazon CloudFront global edge network*
+
  Each PoP is isolated from the others, which means a failure affecting a single PoP or metropolitan area doesn’t impact the rest of the global network. The AWS network peers with thousands of Tier 1, 2, and 3 telecom carriers globally, is well connected with all major access networks for optimal performance, and has hundreds of terabits of deployed capacity. Edge locations are seamlessly connected to AWS Regions through the fully redundant AWS network backbone. This backbone is composed of multiple 400 GbE parallel fibers across the globe and interfaces with tens of thousands of networks.

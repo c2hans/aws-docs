@@ -27,7 +27,7 @@ You never need to write or edit the generated code. Rebuilding your project rege
 
 Apply the plugin and add the runtime and annotations dependencies in your `build.gradle.kts`. Replace {{X.Y.Z}} with the [latest release of the SDK](https://github.com/aws/aws-sdk-kotlin/releases/latest).
 
-```
+```kotlin
 // build.gradle.kts
 val sdkVersion = "[.replaceable]##X.Y.Z##"
 
@@ -51,7 +51,7 @@ Each of these dependencies fulfills a different function:
 
 Annotate the class with `@DynamoDbItem` and mark its primary key. Every top-level item type must have exactly one partition key (`@DynamoDbPartitionKey`) and can have at most one sort key (`@DynamoDbSortKey`). All other public properties are mapped to attributes automatically.
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbItem
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbPartitionKey
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbSortKey
@@ -122,7 +122,7 @@ The following Kotlin types are automatically converted by DynamoDB Mapper into t
 
 Several property-level annotations can adjust the default mapping. For example:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbAttribute
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbAttributeConverter
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbIgnore
@@ -164,7 +164,7 @@ More property annotations enable various features and are covered in-depth in [D
 
 For a property whose type the generator doesn’t natively map (for example, `kotlin.uuid.Uuid`), apply `@DynamoDbAttributeConverter` with a [`ValueConverter`](ddb-mapper-code-schemas.md#ddb-mapper-code-schemas-value-converters) that translates between your type and a DynamoDB attribute value. A value converter implements two methods: `convertRight` (your type → attribute value) and `convertLeft` (attribute value → your type).
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.values.ValueConverter
 import aws.sdk.kotlin.services.dynamodb.model.AttributeValue
 import kotlin.uuid.Uuid
@@ -182,7 +182,7 @@ The class passed to `@DynamoDbAttributeConverter(…​)` must implement `ValueC
 
 A property can hold another class of your own, which is stored as a DynamoDB [`M`](/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Document.Map) (Map) attribute. Annotate the nested class with `@DynamoDbMappable` so that the plugin generates a converter for it:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbItem
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbMappable
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbPartitionKey
@@ -221,13 +221,13 @@ To store several different classes in one table, or in one attribute, declare a 
 
 After you build the project, the generator produces an `OrderSchema` object and, by default, a `getOrderTable` extension on [`DynamoDbMapper`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html). Note that the extension name contains the class name `Order`, while the string you pass is your actual table name `"orders"`:
 
-```
+```kotlin
 val ordersTable = mapper.getOrderTable("orders")
 ```
 
 Equivalently, pass the generated schema to [`getTable`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/get-table.html). By default, the generated schema lives in a package derived from your class’s package plus `.dynamodbmapper.generatedschemas`. For instance, if your annotated class is `com.example.store.model.Order` then the default generated schema is `com.example.store.model.dynamodbmapper.generatedschemas.OrderSchema`:
 
-```
+```kotlin
 import com.example.store.model.dynamodbmapper.generatedschemas.OrderSchema
 
 val ordersTable = mapper.getTable("orders", OrderSchema)
@@ -238,7 +238,7 @@ val ordersTable = mapper.getTable("orders", OrderSchema)
 
 The plugin contributes a `dynamoDbMapper` extension to your build script. All settings are optional; their defaults are shown in the following example.
 
-```
+```kotlin
 // build.gradle.kts
 import aws.sdk.kotlin.hll.codegen.rendering.Visibility
 import aws.sdk.kotlin.hll.dynamodbmapper.codegen.annotations.DestinationPackage

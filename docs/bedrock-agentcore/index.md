@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/index.html
 title: 'Amazon Bedrock AgentCore Documentation'
 canonical_url: https://docs.aws.amazon.com/bedrock-agentcore/
 source: aws-documentation
-generated_on: 2026-11-18
+generated_on: 2026-11-21
 ---
 
 # Amazon Bedrock AgentCore Documentation
@@ -78,6 +78,18 @@ Amazon Bedrock AgentCore is a fully managed service that enables you to deploy a
 - [Get started with AgentCore Observability](/bedrock-agentcore/latest/devguide/observability-get-started.html): Get started with tracing, debugging, and monitoring agent performance in production environments.
 - [AgentCore Observability tutorials](https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/01-features/06-observe-evaluate-optimize-your-agent/01-observe): Tutorials showing how to implement observability for GenAI applications and using the dashboards.
 - [AgentCore Observability in the Developer Guide](/bedrock-agentcore/latest/devguide/observability.html): Learn more about visualizing each step in an agent workflow, such as for inspecting execution path.
+
+## AgentCore Evaluations
+
+- [Get started with AgentCore Evaluations](/bedrock-agentcore/latest/devguide/getting-started-on-demand.html): Run your first on-demand evaluation with built-in evaluators. To evaluate live traffic or many sessions at once, use online or batch evaluation.
+- [AgentCore Evaluations tutorials](https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/01-features/06-observe-evaluate-optimize-your-agent/02-evaluate): Tutorials showing how to evaluate agents with LLM-as-a-judge and custom code evaluators, with and without ground truth, including quality gates in CI/CD.
+- [AgentCore Evaluations in the Developer Guide](/bedrock-agentcore/latest/devguide/evaluations.html): Learn more about measuring agent quality with built-in and custom evaluators, using online, on-demand, and batch evaluation.
+
+## AgentCore Optimization
+
+- [How AgentCore Optimization works](/bedrock-agentcore/latest/devguide/optimization-how-it-works.html): Find recurring failures with Insights, generate a recommendation to fix them, then validate it with an A/B test.
+- [AgentCore Optimization tutorial](https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/01-features/06-observe-evaluate-optimize-your-agent/03-optimize): End-to-end tutorial covering Insights, baseline evaluation, recommendations, and A/B testing.
+- [AgentCore Optimization in the Developer Guide](/bedrock-agentcore/latest/devguide/optimization.html): Learn more about finding recurring failures with Insights, fixing them with recommendations, and validating the fix with A/B tests.
 
 ## Resources
 

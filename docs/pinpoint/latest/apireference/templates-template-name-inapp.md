@@ -194,7 +194,7 @@ Retrieves information about the communication requirements and options that are 
 #### POST schema
 <a name="templates-template-name-inapp-request-body-post-example"></a>
 
-```
+```json
 {
   "tags": {
   },
@@ -268,7 +268,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="templates-template-name-inapp-request-body-put-example"></a>
 
-```
+```json
 {
   "tags": {
   },
@@ -345,7 +345,7 @@ Retrieves information about the communication requirements and options that are 
 #### InAppTemplateResponse schema
 <a name="templates-template-name-inapp-response-body-inapptemplateresponse-example"></a>
 
-```
+```json
 {
   "CreationDate": "string",
   "LastModifiedDate": "string",
@@ -425,7 +425,7 @@ Retrieves information about the communication requirements and options that are 
 #### TemplateCreateMessageBody schema
 <a name="templates-template-name-inapp-response-body-templatecreatemessagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string",
@@ -436,7 +436,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="templates-template-name-inapp-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

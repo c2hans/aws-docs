@@ -11,7 +11,7 @@ Media pipelines send the following events to Event Bridge when the pools' states
 
 The media pipeline sends this event is sent after the [CreateMediaPipelineKinesisVideoStreamPool](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaPipelineKinesisVideoStreamPool.html) API creates a pool.
 
-```
+```json
 {
     "version": "0",
     "id": "5ee6265a-0a40-104e-d8fd-a3b4bdd78483",
@@ -35,7 +35,7 @@ The media pipeline sends this event is sent after the [CreateMediaPipelineKinesi
 
 The media pipeline sends this event after the [UpdateMediaPipelineKinesisVideoStreamPool](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UpdateMediaPipelineKinesisVideoStreamPool.html) API updates a pool.
 
-```
+```json
 {
     "version": "0",
     "id": "5ee6265a-0a40-104e-d8fd-a3b4bdd78483",
@@ -61,7 +61,7 @@ The media pipeline sends this event to Event Bridge when the [DeleteMediaPipelin
 
 For more information about deleting pools, refer to [Creating a Kinesis Video Streams pool for Amazon Chime SDK media stream pipelines](create-kvs-pool.md), in this section.
 
-```
+```json
 {
     "version": "0",
     "id": "5ee6265a-0a40-104e-d8fd-a3b4bdd78483",
@@ -85,7 +85,7 @@ For more information about deleting pools, refer to [Creating a Kinesis Video St
 
 The media pipeline sends the following event to Event Bridge when a video pool fails temporarily.
 
-```
+```json
 {
     "version": "0",
     "id": "5ee6265a-0a40-104e-d8fd-a3b4bdd78483",
@@ -109,7 +109,7 @@ The media pipeline sends the following event to Event Bridge when a video pool f
 
 The media pipeline sends the following event to Event Bridge when a video pool fails permanently.
 
-```
+```json
 {
     "version": "0",
     "id": "5ee6265a-0a40-104e-d8fd-a3b4bdd78483",
@@ -130,7 +130,7 @@ The media pipeline sends the following event to Event Bridge when a video pool f
 
 You will receive the following additional media pipeline event if your AWS account has exceeded its Amazon Kinesis video stream limit.
 
-```
+```json
 {
     "version": "0",
     "id": "5ee6265a-0a40-104e-d8fd-a3b4bdd78483",

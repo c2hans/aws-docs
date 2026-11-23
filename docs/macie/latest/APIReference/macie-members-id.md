@@ -51,7 +51,7 @@ Enables an Amazon Macie administrator to suspend or re-enable Macie for a member
 #### PATCH schema
 <a name="macie-members-id-request-body-patch-example"></a>
 
-```
+```json
 {
   "status": enum
 }
@@ -63,7 +63,7 @@ Enables an Amazon Macie administrator to suspend or re-enable Macie for a member
 #### Empty Schema schema
 <a name="macie-members-id-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -71,7 +71,7 @@ Enables an Amazon Macie administrator to suspend or re-enable Macie for a member
 #### ValidationException schema
 <a name="macie-members-id-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -80,7 +80,7 @@ Enables an Amazon Macie administrator to suspend or re-enable Macie for a member
 #### ServiceQuotaExceededException schema
 <a name="macie-members-id-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -89,7 +89,7 @@ Enables an Amazon Macie administrator to suspend or re-enable Macie for a member
 #### AccessDeniedException schema
 <a name="macie-members-id-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -98,7 +98,7 @@ Enables an Amazon Macie administrator to suspend or re-enable Macie for a member
 #### ResourceNotFoundException schema
 <a name="macie-members-id-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -107,7 +107,7 @@ Enables an Amazon Macie administrator to suspend or re-enable Macie for a member
 #### ConflictException schema
 <a name="macie-members-id-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -116,7 +116,7 @@ Enables an Amazon Macie administrator to suspend or re-enable Macie for a member
 #### ThrottlingException schema
 <a name="macie-members-id-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -125,7 +125,7 @@ Enables an Amazon Macie administrator to suspend or re-enable Macie for a member
 #### InternalServerException schema
 <a name="macie-members-id-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

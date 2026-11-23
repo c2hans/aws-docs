@@ -41,6 +41,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost03-
 
 ![Flowchart of the decommissioning sequence: confirm the resource is unused, record metadata, back up data, restrict access during a cooling-off period, then remove the resource.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/decommissioning-process-flowchart.png)
 
+*Standardized workload decommissioning process*
+
  AWS provides services for scaling and decommissioning. [Amazon EC2 Auto Scaling](https://aws.amazon.com/ec2/autoscaling/) and [AWS Auto Scaling](https://aws.amazon.com/autoscaling/) adjust capacity for compute and other resources; serverless services such as [AWS Lambda](https://aws.amazon.com/pm/lambda) and [AWS Fargate](https://aws.amazon.com/fargate/) remove capacity management entirely. [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) and [AWS Cost Optimization Hub](https://aws.amazon.com/aws-cost-management/cost-optimization-hub/) surface idle and rightsizing candidates, and [AWS Compute Optimizer](https://aws.amazon.com/compute-optimizer/) recommends which resources to remove or resize. For automated teardown, [Amazon EventBridge](https://aws.amazon.com/eventbridge/) triggers cleanup and [Amazon Data Lifecycle Manager](https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-lifecycle.html) manages snapshot retention.
 
 ### Implementation steps

@@ -56,7 +56,7 @@ https://sns.us-west-2.amazonaws.com/?Action=DeletePlatformApplication
 #### Sample Response
 <a name="API_DeletePlatformApplication_Example_1_Response"></a>
 
-```
+```xml
 <DeletePlatformApplicationResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ResponseMetadata>
         <RequestId>097dac18-7a77-5823-a8dd-e65476dcb037</RequestId>

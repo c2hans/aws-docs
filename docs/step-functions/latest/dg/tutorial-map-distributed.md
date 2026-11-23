@@ -94,7 +94,7 @@ In addition to the required settings for a *Distributed Map state*, you can also
 
    1. Enter the following JSON input:
 
-      ```
+      ```json
       {
         "index.$": "$$.Map.Item.Index",
         "value.$": "$$.Map.Item.Value"
@@ -133,7 +133,7 @@ Ensure that your Lambda function is under the same AWS Region as your state mach
 
 1. Copy the following code for the Lambda function and paste it into the **Code source** section of the **distributedMapLambda** page.
 
-   ```
+   ```javascript
    exports.handler = async function(event, context) {
        console.log("Received Input:\n", event);
 
@@ -170,7 +170,7 @@ You can also view the ASL definition in the [Code editor](workflow-studio.md#wfs
 
    The following example code shows the automatically generated Amazon States Language definition for your workflow.
 
-   ```
+   ```json
    {
      "Comment": "Using Map state in Distributed mode",
      "StartAt": "Process data",

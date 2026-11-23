@@ -12,8 +12,8 @@ The key value store association.
  ** KeyValueStoreARN **   <a name="cloudfront-Type-KeyValueStoreAssociation-KeyValueStoreARN"></a>
 The Amazon Resource Name (ARN) of the key value store association.
 Type: String
-Length Constraints: Minimum length of 0. Maximum length of 85.
-Pattern: `arn:aws:cloudfront::[0-9]{12}:key-value-store\/[0-9a-fA-F-]{36}`
+Length Constraints: Minimum length of 0. Maximum length of 90.
+Pattern: `arn:aws(-[a-z]+)*:cloudfront::[0-9]{12}:key-value-store\/[0-9a-fA-F-]{36}`
 Required: Yes
 
 ## See Also

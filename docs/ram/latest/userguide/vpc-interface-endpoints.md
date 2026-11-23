@@ -52,7 +52,7 @@ The following is an example of a custom endpoint policy. When you attach this po
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":

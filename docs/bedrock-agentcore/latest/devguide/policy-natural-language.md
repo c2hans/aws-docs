@@ -50,7 +50,7 @@ Allow principal with username "refund-agent" to process refunds when the refund 
 
  **Converts to Cedar:**
 
-```
+```cedar
 permit(
   principal is AgentCore::OAuthUser,
   action == AgentCore::Action::"RefundTool___process_refund",
@@ -102,7 +102,7 @@ Forbid policies ensure that specific actions cannot be mistakenly permitted. Eve
 
  **Example scenario:**
 
-```
+```cedar
 // Broad permit policy - allows all users to view model results
 permit(
   principal is AgentCore::OAuthUser,

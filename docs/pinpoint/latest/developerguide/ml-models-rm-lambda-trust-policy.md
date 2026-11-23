@@ -10,7 +10,7 @@ Before you can use your Lambda function to process recommendation data, you must
 
 The following example policy allows the Amazon Pinpoint service principal to use the `lambda:InvokeFunction` action for a particular Amazon Pinpoint campaign ({{campaignId}}) in a particular Amazon Pinpoint project ({{projectId}}):
 
-```
+```json
 {
   "Sid": "{{sid}}",
   "Effect": "Allow",
@@ -31,7 +31,7 @@ The function policy requires a `Condition` block that includes an `AWS:SourceArn
 
 You can also write a policy that allows the Amazon Pinpoint service principal to use the `lambda:InvokeFunction` action for all the campaigns and journeys in a specific Amazon Pinpoint project ({{projectId}}). The following example policy shows this:
 
-```
+```json
 {
   "Sid": "{{sid}}",
   "Effect": "Allow",
@@ -52,7 +52,7 @@ Unlike the first example, the `AWS:SourceArn` key in the `Condition` block of th
 
 To write a more generic policy, you can use a multicharacter match wildcard (\*). For example, you can use the following `Condition` block to allow any Amazon Pinpoint project to invoke the function:
 
-```
+```json
 "Condition": {
   "ArnLike": {
     "AWS:SourceArn": "arn:aws:mobiletargeting:us-east-1:{{accountId}}:recommenders/*"

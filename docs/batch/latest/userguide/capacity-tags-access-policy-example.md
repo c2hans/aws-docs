@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/capacity-tags-acc
 
 The following identity-based policy, which you attach to an IAM user or role, allows a principal to create and update compute environments and to set capacity tags, but only when the `CostCenter` tag value is `engineering` or `ops` and no tag keys other than `CostCenter` and `Team` are used. Requests that include any other tag key or a different `CostCenter` value are denied.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -39,7 +39,7 @@ The following identity-based policy, which you attach to an IAM user or role, al
 
 To deny capacity tagging entirely while still permitting compute environment creation and updates, attach a policy with an explicit `Deny` on `batch:SetCapacityTags`:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

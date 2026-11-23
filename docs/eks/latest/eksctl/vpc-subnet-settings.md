@@ -21,7 +21,7 @@ Using the `--node-private-networking` flag will result in outgoing traffic to go
 
 In earlier versions custom subnets had to be provided by availability zone, meaning just one subnet per AZ could be listed. From `0.32.0` the identifying keys can be arbitrary.
 
-```
+```yaml
 vpc:
   id: "vpc-11111"
   subnets:
@@ -53,7 +53,7 @@ A complete subnet spec must be provided, i.e. both `public` and `private` config
 
 Nodegroups can be restricted to named subnets via the configuration. When specifying subnets on nodegroup configuration, use the identifying key as given in the VPC spec **not** the subnet id. For example:
 
-```
+```yaml
 vpc:
   id: "vpc-11111"
   subnets:
@@ -75,7 +75,7 @@ Only one of `subnets` or `availabilityZones` can be provided in nodegroup config
 
 When placing nodegroups inside a private subnet, `privateNetworking` must be set to `true` on the nodegroup:
 
-```
+```yaml
 vpc:
   id: "vpc-11111"
   subnets:

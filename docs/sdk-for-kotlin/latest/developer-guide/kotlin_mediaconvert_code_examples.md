@@ -24,7 +24,7 @@ The following code example shows how to use `CreateJob`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/mediaconvert#code-examples).
 
-```
+```kotlin
 suspend fun createMediaJob(
     mcClient: MediaConvertClient,
     mcRoleARN: String,
@@ -114,7 +114,7 @@ The following code example shows how to use `GetJob`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/mediaconvert#code-examples).
 
-```
+```kotlin
 suspend fun getSpecificJob(mcClient: MediaConvertClient, jobId: String) {
     // 1. Discover the correct endpoint
     val res = mcClient.describeEndpoints(DescribeEndpointsRequest { maxResults = 1 })
@@ -146,7 +146,7 @@ The following code example shows how to use `ListJobs`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/mediaconvert#code-examples).
 
-```
+```kotlin
 suspend fun listCompleteJobs(mcClient: MediaConvertClient) {
     val describeEndpoints =
         DescribeEndpointsRequest {

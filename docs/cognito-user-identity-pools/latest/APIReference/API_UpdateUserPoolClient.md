@@ -49,6 +49,7 @@ Amazon Cognito evaluates AWS Identity and Access Management (IAM) policies in re
    "IdTokenValidity": {{number}},
    "LogoutURLs": [ "{{string}}" ],
    "PreventUserExistenceErrors": "{{string}}",
+   "PublishSecretsInAWSSecretsManager": {{boolean}},
    "ReadAttributes": [ "{{string}}" ],
    "RefreshTokenRotation": {
       "Feature": "{{string}}",
@@ -225,6 +226,14 @@ Type: String
 Valid Values: `LEGACY | ENABLED`
 Required: No
 
+ ** [PublishSecretsInAWSSecretsManager](#API_UpdateUserPoolClient_RequestSyntax) **   <a name="CognitoUserPools-UpdateUserPoolClient-request-PublishSecretsInAWSSecretsManager"></a>
+Specifies whether Amazon Cognito stores and manages this app client's secret in [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) instead of returning the plaintext value. When you set this parameter to `true`, the response returns `ClientSecretArn` instead of `ClientSecret`. By default, Amazon Cognito rotates the secret every 7 days. You can change the rotation schedule in Secrets Manager.
+Set to `true` to migrate an existing generated secret into Secrets Manager, or `false` to move it back to Amazon Cognito and delete the Secrets Manager secret. If you omit this parameter, Amazon Cognito doesn't change how it manages the existing secret. Applies only to app clients that already have a generated secret.
+When you set it to `true`, Amazon Cognito starts managing the app client's secret in Secrets Manager and rotates it right away. If the app client has two secrets, that first rotation deletes the older one.
+When you set this parameter to `false`, Amazon Cognito immediately and permanently deletes the Secrets Manager secret. There's no recovery window. Applications that read the secret from Secrets Manager can no longer get it.
+Type: Boolean
+Required: No
+
  ** [ReadAttributes](#API_UpdateUserPoolClient_RequestSyntax) **   <a name="CognitoUserPools-UpdateUserPoolClient-request-ReadAttributes"></a>
 The list of user attributes that you want your app client to have read access to. After your user authenticates in your app, their access token authorizes them to read their own attribute value for any attribute in this list.
 An example of this kind of activity is when your user selects a link to view their profile information. Your app makes a [GetUser](API_GetUser.md) API request to retrieve and display your user's profile data.
@@ -299,6 +308,8 @@ Required: No
       "ClientId": "string",
       "ClientName": "string",
       "ClientSecret": "string",
+      "ClientSecretArn": "string",
+      "ClientType": "string",
       "CreationDate": number,
       "DefaultRedirectURI": "string",
       "EnablePropagateAdditionalUserContextData": boolean,
@@ -410,7 +421,7 @@ The following example request updates an app client.
 #### Sample Request
 <a name="API_UpdateUserPoolClient_Example_1_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -521,7 +532,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_UpdateUserPoolClient_Example_1_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0

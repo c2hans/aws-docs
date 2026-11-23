@@ -39,7 +39,7 @@ When preparing your Terraform IaC files for AWS Proton, you attach namespaces to
 ## Example 1: AWS Proton environment Terraform IaC file
 <a name="ag-env-tform-example"></a>
 
-```
+```json
 terraform {
   required_providers {
     aws = {
@@ -84,7 +84,7 @@ The example shows how AWS Proton includes tags in the variable definition and va
 
 **dev/environment.tf:**
 
-```
+```json
 terraform {
   required_providers {
     aws = {
@@ -119,7 +119,7 @@ resource "aws_ssm_parameter" "my_ssm_parameter" {
 
 **dev/proton.environment.variables.tf:**
 
-```
+```json
 variable "environment" {
   type = object({
     inputs = map(string)
@@ -135,7 +135,7 @@ variable "proton_tags" {
 
 **dev/proton.auto.tfvars.json:**
 
-```
+```json
 {
   "environment": {
     "name": "dev",
@@ -185,7 +185,7 @@ If AWS Proton finds the specified repository with an `environments` folder, it c
 
 If AWS Proton finds the specified repository with an `environments` folder that contains a folder name that matches a service instance compatible environment name, it creates a folder that includes the compiled instance IaC files and is named with the `service_instance.name`.
 
-```
+```txt
 /repo
     /environments
         /env-prod                             # environment folder
@@ -236,7 +236,7 @@ If AWS Proton finds the specified repository without an `environments` folder, i
 
 If AWS Proton finds the specified repository with a folder name that matches a service instance compatible environment name, it creates a `service_instance.name` folder where it locates the compiled instance IaC files.
 
-```
+```txt
 /repo
     /env-prod                             # environment folder
         main.tf

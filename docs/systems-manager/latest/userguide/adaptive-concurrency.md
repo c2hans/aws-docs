@@ -27,7 +27,7 @@ If your automation calls API operations, adaptively scaling to your targets can 
 ------
 #### [ Linux & macOS ]
 
-  ```
+  ```sh
   aws ssm update-service-setting \
       --setting-id /ssm/automation/enable-adaptive-concurrency \
       --setting-value True
@@ -36,7 +36,7 @@ If your automation calls API operations, adaptively scaling to your targets can 
 ------
 #### [ Windows ]
 
-  ```
+  ```sh
   aws ssm update-service-setting ^
       --setting-id /ssm/automation/enable-adaptive-concurrency ^
       --setting-value True
@@ -45,7 +45,7 @@ If your automation calls API operations, adaptively scaling to your targets can 
 ------
 #### [ PowerShell ]
 
-  ```
+  ```powershell
   Update-SSMServiceSetting `
       -SettingId "/ssm/automation/enable-adaptive-concurrency" `
       -SettingValue "True"

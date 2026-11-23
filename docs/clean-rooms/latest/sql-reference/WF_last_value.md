@@ -58,7 +58,7 @@ The following example returns the seating capacity for each venue in the VENUE t
 
 For California, `Shoreline Amphitheatre` is returned for every row in the partition because it has the lowest number of seats (`22000`).
 
-```
+```sql
 select venuestate, venueseats, venuename,
 last_value(venuename)
 over(partition by venuestate

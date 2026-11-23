@@ -79,7 +79,7 @@ If your source system (for example, an EHR) can emit characters outside the supp
 
  **Before / after**
 
-```
+```text
 Before:  Temp 38°C, follow-up in 2–3 weeks — see notes.
 After:   Temp 38 degrees C, follow-up in 2-3 weeks - see notes.
 ```
@@ -89,7 +89,7 @@ After:   Temp 38 degrees C, follow-up in 2-3 weeks - see notes.
 
 The supported set includes the `|`, `#`, `*`, `[`, `]`, `(`, `)`, `{`, and `}` characters, so you can format context as Markdown — including headings, lists, and tables — to present structured information clearly. For example, a medication list as a Markdown table:
 
-```
+```text
 ## Current medications
 
 | Medication | Dose   | Frequency   |
@@ -103,7 +103,7 @@ The following example uses fictional patient data for illustration purposes only
 
  **Example encounter context**
 
-```
+```text
 ## Patient Information
 Name: Patricia Underwood
 Age: 28 years

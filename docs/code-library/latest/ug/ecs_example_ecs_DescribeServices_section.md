@@ -74,12 +74,12 @@ For more information, see [Amazon ECS services](https://docs.aws.amazon.com/Amaz
 **Tools for PowerShell V4**
 **Example 1: This example shows how to retrieve details of a specific service from your default cluster.**
 
-```
+```powershell
 Get-ECSService -Service my-hhtp-service
 ```
 **Example 2: This example shows how to retrieve details of a specific service running in the named cluster.**
 
-```
+```powershell
 Get-ECSService -Cluster myCluster -Service my-hhtp-service
 ```
 +  For API details, see [DescribeServices](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -87,12 +87,12 @@ Get-ECSService -Cluster myCluster -Service my-hhtp-service
 **Tools for PowerShell V5**
 **Example 1: This example shows how to retrieve details of a specific service from your default cluster.**
 
-```
+```powershell
 Get-ECSService -Service my-hhtp-service
 ```
 **Example 2: This example shows how to retrieve details of a specific service running in the named cluster.**
 
-```
+```powershell
 Get-ECSService -Cluster myCluster -Service my-hhtp-service
 ```
 +  For API details, see [DescribeServices](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -103,7 +103,7 @@ Get-ECSService -Cluster myCluster -Service my-hhtp-service
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 

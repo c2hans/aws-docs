@@ -30,7 +30,7 @@ The following tag keys policy example only allows API actions to use tag keys â€
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -67,7 +67,7 @@ The following resource tag policy example ensures that modifications can only ha
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -101,7 +101,7 @@ The following resource tag policy example ensures that modifications can only ha
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -127,7 +127,7 @@ The following resource tag policy example ensures that modifications can only ha
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

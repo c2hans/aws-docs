@@ -38,7 +38,7 @@ Verify that AWS CLI is available in your environment. For installation instructi
 
 Once you have access to AWS CLI, run the following command:
 
-```
+```bash
 $ aws cloudformation delete-stack --stack-name <STACK_NAME>
 ```
 

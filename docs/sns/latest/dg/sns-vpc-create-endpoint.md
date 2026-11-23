@@ -32,7 +32,7 @@ After you create an endpoint for Amazon SNS, you can publish messages from your 
 
    For example, to connect to a Linux instance using an SSH client, run the following command from a terminal:
 
-   ```
+   ```bash
    $ ssh -i {{ec2-key-pair.pem}} ec2-user@{{instance-hostname}}
    ```
 
@@ -42,7 +42,7 @@ After you create an endpoint for Amazon SNS, you can publish messages from your 
 
 1. From your instance, use the Amazon SNS [`publish`](https://docs.aws.amazon.com/cli/latest/reference/sns/publish.html) command with the AWS CLI. You can send a simple message to a topic with the following command:
 
-   ```
+   ```bash
    $ aws sns publish --region {{aws-region}} --topic-arn {{sns-topic-arn}} --message "Hello"
    ```
 
@@ -52,7 +52,7 @@ After you create an endpoint for Amazon SNS, you can publish messages from your 
 
    If the message is successfully received by Amazon SNS, the terminal prints a message ID, like the following:
 
-   ```
+   ```json
    {
       "MessageId": "6c96dfff-0fdf-5b37-88d7-8cba910a8b64"
    }

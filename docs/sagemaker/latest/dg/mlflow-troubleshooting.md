@@ -13,13 +13,13 @@ When using the AWS CLI, you might encounter the following error: `Could not find
 
 If using a Mac, you can resolve this issue with the following command:
 
-```
+```bash
 brew install groff
 ```
 
 On a Linux machine, use the following commands:
 
-```
+```bash
 sudo apt-get update -y
 sudo apt-get install groff -y
 ```
@@ -31,13 +31,13 @@ When creating your AuthZ permission policy JSON file, you might encounter the fo
 
 If using a Mac, you can resolve this issue with the following command:
 
-```
+```bash
 brew install jq
 ```
 
 On a Linux machine, use the following commands:
 
-```
+```bash
 sudo apt-get update -y
 sudo apt-get install jq -y
 ```
@@ -56,7 +56,7 @@ If you see the `UnsupportedModelRegistryStoreURIException`, do the following:
 
 1. Reinstall the AWS MLflow plugin:
 
-   ```
+   ```bash
    !pip install --force-reinstall sagemaker-mlflow
    ```
 

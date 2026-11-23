@@ -41,7 +41,7 @@ Before you start, you need a fully managed knowledge base that you query with ag
 
 1. Send a [CreateRetrievalInstruction](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateRetrievalInstruction.html) request with a `name` and an `instruction`. The following JSON example creates an instruction that sets all four fields:
 
-   ```
+   ```json
    {
        "name": "{{support-assistant}}",
        "description": "Instruction for the customer support assistant",
@@ -105,7 +105,7 @@ To delete the instruction, first delete each of its versions and wait for any re
 
 To manage retrieval instructions, the calling IAM identity needs permissions for the operations that it uses. The following policy allows all of them:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

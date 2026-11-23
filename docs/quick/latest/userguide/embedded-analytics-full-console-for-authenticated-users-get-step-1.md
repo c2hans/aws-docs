@@ -19,7 +19,7 @@ The following sample policy provides these permissions for use with `IdentityTyp
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -46,7 +46,7 @@ The following sample policy provides permission to retrieve a console session UR
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -70,7 +70,7 @@ If you use `QUICKSIGHT` as your `identityType` and provide the user's Amazon Res
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

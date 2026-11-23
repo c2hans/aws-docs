@@ -8,7 +8,7 @@ You can customize some API Gateway error responses by defining response headers 
 
 The following is an example AWS SAM template that creates a customized response for the `DEFAULT_5XX` error.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Resources:

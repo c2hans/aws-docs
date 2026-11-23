@@ -41,7 +41,7 @@ For example, `RoleA` would have a trust policy that establishes a trust relation
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -65,7 +65,7 @@ For example, `RoleA` would have a trust policy that establishes a trust relation
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -90,7 +90,7 @@ Conversely, `RoleB` would have a trust policy to establish a trust relationship 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -171,7 +171,7 @@ For more information, see [start-loader-job](https://docs.aws.amazon.com/cli/lat
 ------
 #### [ SDK ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -208,8 +208,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/loader \
       }'
 ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -224,5 +223,7 @@ curl -X POST https://{{your-neptune-endpoint}}:{{port}}/loader \
         "region" : "us-east-1"
       }'
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------

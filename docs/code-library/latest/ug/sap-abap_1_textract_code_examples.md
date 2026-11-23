@@ -29,7 +29,7 @@ The following code example shows how to use `AnalyzeDocument`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tex#code-examples).
 
-```
+```sap-abap
     "Detects text and additional elements, such as forms or tables,"
     "in a local image file or from in-memory byte data."
     "The image must be in PNG or JPG format."
@@ -94,7 +94,7 @@ The following code example shows how to use `DetectDocumentText`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tex#code-examples).
 
-```
+```sap-abap
     "Detects text in the input document."
     "Amazon Textract can detect lines of text and the words that make up a line of text."
     "The input document must be in one of the following image formats: JPEG, PNG, PDF, or TIFF."
@@ -146,7 +146,7 @@ The following code example shows how to use `GetDocumentAnalysis`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tex#code-examples).
 
-```
+```sap-abap
     "Gets the results for an Amazon Textract"
     "asynchronous operation that analyzes text in a document."
     TRY.
@@ -194,7 +194,7 @@ The following code example shows how to use `StartDocumentAnalysis`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tex#code-examples).
 
-```
+```sap-abap
     "Starts the asynchronous analysis of an input document for relationships"
     "between detected items such as key-value pairs, tables, and selection elements."
 
@@ -256,7 +256,7 @@ The following code example shows how to use `StartDocumentTextDetection`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tex#code-examples).
 
-```
+```sap-abap
     "Starts the asynchronous detection of text in a document."
     "Amazon Textract can detect lines of text and the words that make up a line of text."
 
@@ -311,7 +311,7 @@ The following code example shows how to:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tex#code-examples).
 
-```
+```sap-abap
     "Create ABAP objects for feature type."
     "Add TABLES to return information about the tables."
     "Add FORMS to return detected form data."

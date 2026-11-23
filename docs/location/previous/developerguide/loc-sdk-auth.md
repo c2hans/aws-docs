@@ -45,7 +45,7 @@ The `AuthHelper` object provides the following functions:
 
 **Example: Initializing MapLibre map object with Amazon Cognito, using an AuthHelper**
 
-```
+```js
 import { withIdentityPoolId } from '@aws/amazon-location-utilities-auth-helper';
 
 const authHelper = await withIdentityPoolId("{{identity-pool-id}}"); // use Cognito pool id for credentials
@@ -61,7 +61,7 @@ const map = new maplibregl.Map({
 
 **Example: Initializing MapLibre map object with an API key (`AuthHelper` is not needed in this case)**
 
-```
+```js
 const map = new maplibregl.Map({
     container: "{{map}}", // HTML element ID of map element
     center: [-123.1187, 49.2819], // initial map center point
@@ -74,7 +74,7 @@ const map = new maplibregl.Map({
 
 This example uses AWS SDK for JavaScript v3.
 
-```
+```js
 import { withIdentityPoolId } from '@aws/amazon-location-utilities-auth-helper';
 
 const authHelper = await withIdentityPoolId("{{identity-pool-id}}"); // use Cognito pool id for credentials
@@ -97,7 +97,7 @@ const result = await client.send(new SearchPlaceIndexForPositionCommand({
 
 This example uses AWS SDK for JavaScript v3.
 
-```
+```js
 import { withAPIKey } from '@aws/amazon-location-utilities-auth-helper';
 
 const authHelper = await withAPIKey("{{api-key-id}}"); // use API Key id for credentials

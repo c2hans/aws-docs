@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 `pcluster` is the primary AWS ParallelCluster CLI command. You use `pcluster` to launch and manage HPC clusters in the AWS Cloud.
 
-```
+```sh
 pcluster [ -h ] ( create | update | delete | start | stop | status | list |
                   instances | ssh | dcv | createami | configure | version ) ...
 ```

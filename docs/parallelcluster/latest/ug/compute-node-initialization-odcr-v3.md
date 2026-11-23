@@ -19,14 +19,14 @@ In the cluster configuration file, check that the `HeadNode` is in a public subn
 
 If you are using AWS ParallelCluster versions 3.1.1 to 3.2.1 with targeted ODCRs, and you are also using the [run instances override JSON file](launch-instances-odcr-v3.md), it's possible that you don’t have the JSON file formatted correctly. You could see an error in `clustermgtd.log`, such as the following:
 
-```
+```bash
 Unable to read file '/opt/slurm/etc/pcluster/run_instances_overrides.json'.
 Using default: {} in  /var/log/parallelcluster/clustermgtd.
 ```
 
 Validate that the JSON file format is correct by running the following:
 
-```
+```bash
 $ echo /opt/slurm/etc/pcluster/run_instances_overrides.json | jq
 ```
 
@@ -48,7 +48,7 @@ When creating an ODCR with an associated placement group, the same placement gro
 
 If you are using zonal Reserved Instances with `PlacementGroup` / `Enabled` to `true` in the cluster configuration, you might see an error, such as the following:
 
-```
+```bash
 We currently do not have sufficient trn1.32xlarge capacity in the Availability Zone you requested (us-east-1d). Our system will be working on provisioning additional capacity.
 You can currently get trn1.32xlarge capacity by not specifying an Availability Zone in your request or choosing us-east-1a, us-east-1b, us-east-1c, us-east-1e, us-east-1f.
 ```

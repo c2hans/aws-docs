@@ -19,7 +19,7 @@ To provide permissions, you can scope down the permissions of the following poli
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

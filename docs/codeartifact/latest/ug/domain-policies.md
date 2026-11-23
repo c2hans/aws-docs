@@ -28,7 +28,7 @@ For example, the following resource policy grants the account `123456789012` per
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -64,7 +64,7 @@ For example, the following resource policy grants the account `123456789012` per
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -98,7 +98,7 @@ When multiple accounts are using a domain, the accounts should be granted a basi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -136,7 +136,7 @@ You can use the `aws:PrincipalOrgID` condition key to grant access to an CodeArt
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -179,7 +179,7 @@ When you call `put-domains-permissions-policy`, CodeArtifact ignores the resourc
 
 Sample output:
 
-```
+```json
 {
     "policy": {
         "resourceArn": "arn:aws:codeartifact:{{region-id}}:{{111122223333}}:domain/{{my_domain}}",
@@ -208,7 +208,7 @@ Sample output:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

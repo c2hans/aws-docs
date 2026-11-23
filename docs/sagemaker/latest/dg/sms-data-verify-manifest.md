@@ -13,7 +13,7 @@ Amazon SageMaker Ground Truth writes label verification data to the output manif
 
 The following example output manifest shows how label verification data appears:
 
-```
+```json
 {
   "source-ref":"S3 bucket location",
   "verify-bounding-box":"1",

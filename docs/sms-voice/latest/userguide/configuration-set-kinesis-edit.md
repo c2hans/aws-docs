@@ -42,7 +42,7 @@ You can use the [update-event-destination](https://docs.aws.amazon.com/cli/lates
 
 The procedure for updating a Amazon Data Firehose event destination is similar to the process for creating an event destination.
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 create-event-destination \
 > --event-destination-name {{eventDestinationName}} \
 > --configuration-set-name {{configurationSet}} \

@@ -55,7 +55,7 @@ Use this pattern when your application is built on asynchronous clients and need
 ### Install
 <a name="working-with-boto3-sdk-primary-install"></a>
 
-```
+```bash
 python -m pip install boto3 aws-sdk-bedrock-runtime
 ```
 
@@ -71,7 +71,7 @@ python -m pip install boto3 aws-sdk-bedrock-runtime
 
 Create a file named `sdk_primary_with_boto3.py` with the following code:
 
-```
+```python
 """Use Boto3 from an asynchronous AWS SDK for Python v4 application."""
 
 import argparse
@@ -215,7 +215,7 @@ The asynchronous AWS SDK for Python v4 code owns the event loop and the applicat
 
 Pass the log group, log stream, and model prompt:
 
-```
+```bash
 python sdk_primary_with_boto3.py example-bedrock-responses example-stream "Give three tips for writing clear Python code."
 ```
 
@@ -249,7 +249,7 @@ Use this pattern when you have a synchronous application and need an operation t
 
 Install the `awscrt` extra to use the AWS Common Runtime (CRT) HTTP client that bidirectional streaming requires. For more information, see [Use the AWS CRT client for bidirectional streaming](http-configuration.md#http-crt-streaming).
 
-```
+```bash
 python -m pip install boto3 "aws-sdk-transcribe-streaming[awscrt]"
 ```
 
@@ -265,7 +265,7 @@ python -m pip install boto3 "aws-sdk-transcribe-streaming[awscrt]"
 
 Create a file named `boto3_with_streaming.py` with the following code:
 
-```
+```python
 """Add bidirectional transcription to a synchronous Boto3 application."""
 
 import argparse
@@ -447,7 +447,7 @@ The synchronous `main()` function keeps the existing Boto3 workflow unchanged:
 
 Pass the input bucket and PCM object key, followed by the output bucket and transcript object key:
 
-```
+```bash
 python boto3_with_streaming.py amzn-s3-demo-source-bucket audio/test.pcm amzn-s3-demo-destination-bucket transcripts/test.txt
 ```
 

@@ -32,7 +32,7 @@ AWS Quick reads policy values at application startup.
 
 Deploy a configuration profile with preference domain `com.aws.QuickWork.mac`. The profile supports device scope (`/Library/Managed Preferences/com.aws.QuickWork.mac.plist`) or user scope.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
   "http://www.apple.com/DTDs/PropertyList-1.0.dtd">

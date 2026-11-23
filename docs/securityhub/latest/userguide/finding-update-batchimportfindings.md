@@ -53,7 +53,7 @@ Instead, finding providers should use the [`FindingProviderFields`](asff-top-lev
 
 **Example**
 
-```
+```JSON
 "FindingProviderFields": {
     "Confidence": 42,
     "Criticality": 99,

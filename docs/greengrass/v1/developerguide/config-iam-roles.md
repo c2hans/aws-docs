@@ -34,7 +34,7 @@ First, create a customer-managed policy that grants permissions required by the 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

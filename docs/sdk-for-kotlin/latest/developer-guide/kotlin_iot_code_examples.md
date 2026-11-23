@@ -28,7 +28,7 @@ The following code example shows how to get started using AWS IoT.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.iot.IotClient
 import aws.sdk.kotlin.services.iot.model.ListThingsRequest
 
@@ -79,7 +79,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.iot.IotClient
 import aws.sdk.kotlin.services.iot.model.Action
 import aws.sdk.kotlin.services.iot.model.AttachThingPrincipalRequest
@@ -613,7 +613,7 @@ The following code example shows how to use `AttachThingPrincipal`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun attachCertificateToThing(
     thingNameVal: String?,
     certificateArn: String?,
@@ -640,7 +640,7 @@ The following code example shows how to use `CreateKeysAndCertificate`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun createCertificate(): String? {
     IotClient.fromEnvironment { region = "us-east-1" }.use { iotClient ->
         val response = iotClient.createKeysAndCertificate()
@@ -666,7 +666,7 @@ The following code example shows how to use `CreateThing`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun createIoTThing(thingNameVal: String) {
     val createThingRequest =
         CreateThingRequest {
@@ -689,7 +689,7 @@ The following code example shows how to use `CreateTopicRule`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun createIoTRule(
     roleARNVal: String?,
     ruleNameVal: String?,
@@ -735,7 +735,7 @@ The following code example shows how to use `DeleteCertificate`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun deleteCertificate(certificateArn: String) {
     val certificateProviderRequest =
         DeleteCertificateRequest {
@@ -757,7 +757,7 @@ The following code example shows how to use `DeleteThing`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun deleteIoTThing(thingNameVal: String) {
     val deleteThingRequest =
         DeleteThingRequest {
@@ -780,7 +780,7 @@ The following code example shows how to use `DescribeEndpoint`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun describeEndpoint(): String? {
     val request = DescribeEndpointRequest {}
     IotClient.fromEnvironment { region = "us-east-1" }.use { iotClient ->
@@ -803,7 +803,7 @@ The following code example shows how to use `DescribeThing`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun describeThing(thingNameVal: String) {
     val thingRequest =
         DescribeThingRequest {
@@ -829,7 +829,7 @@ The following code example shows how to use `DetachThingPrincipal`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun detachThingPrincipal(
     thingNameVal: String,
     certificateArn: String,
@@ -856,7 +856,7 @@ The following code example shows how to use `ListCertificates`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun listCertificates() {
     IotClient.fromEnvironment { region = "us-east-1" }.use { iotClient ->
         val response = iotClient.listCertificates()
@@ -878,7 +878,7 @@ The following code example shows how to use `SearchIndex`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun searchThings(queryStringVal: String?) {
     val searchIndexRequest =
         SearchIndexRequest {
@@ -906,7 +906,7 @@ The following code example shows how to use `UpdateThing`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun updateThing(thingNameVal: String?) {
     val newLocation = "Office"
     val newFirmwareVersion = "v2.0"

@@ -23,7 +23,7 @@ Follow this procedure for each role.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

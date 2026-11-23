@@ -11,7 +11,7 @@ Model quality monitoring compares the predictions your model makes with ground t
 
 To match Ground Truth labels with captured prediction data, there must be a unique identifier for each record in the dataset. The structure of each record for ground truth data is as follows:
 
-```
+```json
 {
   "groundTruthData": {
     "data": "1",
@@ -35,7 +35,7 @@ You must upload Ground Truth data to an Amazon S3 bucket that has the same path 
 **Data format requirements**
 When you save your data to Amazon S3 it must use the jsonlines format (.jsonl), and be saved using the following naming structure. To learn more about jsonline requirements, see [Use input and output data](sms-data.md).
 
-```
+```sh
 s3://{{amzn-s3-demo-bucket1}}/{{prefix}}{{/yyyy}}/{{mm}}/{{dd}}/{{hh}}
 ```
 

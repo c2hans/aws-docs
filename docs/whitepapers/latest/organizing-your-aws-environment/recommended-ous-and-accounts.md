@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
 ![Diagram showing recommended OUs](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/recommended-ous.png)
 
+*Recommended OUs*
+
  Depending on your requirements, you might not need to establish all the recommended OUs. As you adopt AWS and learn more about your needs, you can expand the overall set of OUs. Refer to the Patterns for organizing your AWS accounts for examples of how you might begin to organize your AWS accounts.
 
  While the provided OU recommendations are geared towards common use cases, it is your organization's responsibility to define a customized OU structure that aligns with your distinct requirements relevant to isolation and automation.

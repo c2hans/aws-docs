@@ -13,7 +13,7 @@ The following IAM policy allows a user to access all HealthOmics API actions, an
 **Example User policy**
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -63,7 +63,7 @@ The following is an example IAM policy that allows a single workflow with a sing
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -125,7 +125,7 @@ However, best practices suggest that you must restrict the permissions for Cloud
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -168,7 +168,7 @@ When you're creating an AWS Service Catalog External product with a Terraform co
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

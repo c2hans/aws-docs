@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Lambda#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Gets information about a Lambda function.
     /// </summary>
@@ -42,7 +42,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/lambda#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region in which the bucket was created (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -123,7 +123,7 @@ For more information, see [Configure Lambda function memory](https://docs.aws.am
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/lambda#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -165,7 +165,7 @@ func (wrapper FunctionWrapper) GetFunction(ctx context.Context, functionName str
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/lambda#code-examples).
 
-```
+```java
     /**
      * Retrieves information about an AWS Lambda function.
      *
@@ -195,7 +195,7 @@ func (wrapper FunctionWrapper) GetFunction(ctx context.Context, functionName str
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/lambda#code-examples).
 
-```
+```javascript
 const getFunction = (funcName) => {
   const client = new LambdaClient({});
   const command = new GetFunctionCommand({ FunctionName: funcName });
@@ -210,7 +210,7 @@ const getFunction = (funcName) => {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/lambda#code-examples).
 
-```
+```php
     public function getFunction($functionName)
     {
         return $this->lambdaClient->getFunction([
@@ -226,7 +226,7 @@ const getFunction = (funcName) => {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/lambda#code-examples).
 
-```
+```python
 class LambdaWrapper:
     def __init__(self, lambda_client, iam_resource):
         self.lambda_client = lambda_client
@@ -263,7 +263,7 @@ class LambdaWrapper:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/lambda#code-examples).
 
-```
+```ruby
 class LambdaWrapper
   attr_accessor :lambda_client, :cloudwatch_client, :iam_client
 
@@ -298,7 +298,7 @@ class LambdaWrapper
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/lambda#code-examples).
 
-```
+```rust
     /** Get the Lambda function with this Manager's name. */
     pub async fn get_function(&self) -> Result<GetFunctionOutput, anyhow::Error> {
         info!("Getting lambda function");
@@ -318,7 +318,7 @@ class LambdaWrapper
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/lmd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_lmd->getfunction( iv_functionname = iv_function_name ).       " oo_result is returned for testing purposes. "
         MESSAGE 'Lambda function information retrieved.' TYPE 'I'.
@@ -338,7 +338,7 @@ class LambdaWrapper
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/lambda/basics#code-examples).
 
-```
+```swift
 import AWSClientRuntime
 import AWSLambda
 import Foundation

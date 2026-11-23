@@ -143,7 +143,7 @@ aws kendra get-snapshots \
 
 **To retrieve top queries for the previous month**
 
-```
+```python
 import boto3
 
 kendra = boto3.client("kendra")
@@ -166,7 +166,7 @@ print("Top queries data: " + snapshots_response["snapshotsData"])
 
 **To retrieve top queries for the previous month**
 
-```
+```java
 package com.amazonaws.kendra;
 
 import software.amazon.awssdk.services.kendra.KendraClient;

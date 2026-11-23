@@ -42,6 +42,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel10-b
 
 ![Architecture diagram of a cell-based workload: a thin routing layer presents a single endpoint and distributes requests by partition key to independent cells that each hold their own compute and data.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/cell-based-architecture.png)
 
+*Cell-based architecture with a thin routing layer and independent cells*
+
 ### Implementation steps
 <a name="implementation-steps"></a>
 

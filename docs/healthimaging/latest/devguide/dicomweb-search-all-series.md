@@ -50,7 +50,7 @@ Use the `SearchDICOMAllSeries` API to search for all DICOM series across an Heal
 ------
 #### [ curl ]
 
-   ```
+   ```sh
    curl --request GET \
      "https://dicom-medical-imaging.{{region}}.amazonaws.com/datastore/{{datastoreId}}/series[?query]" \
      --aws-sigv4 'aws:amz:{{region}}:medical-imaging' \

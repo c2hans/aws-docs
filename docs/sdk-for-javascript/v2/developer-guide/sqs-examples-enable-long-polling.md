@@ -37,7 +37,7 @@ To set up and run this example, you must first complete these tasks:
 
 Create a Node.js module with the file name `sqs_longpolling_createqueue.js`. Be sure to configure the SDK as previously shown. To access Amazon SQS, create an `AWS.SQS` service object. Create a JSON object containing the parameters needed to create a queue, including a non-zero value for the `ReceiveMessageWaitTimeSeconds` parameter. Call the `createQueue` method. Long polling is then enabled for the queue.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -64,7 +64,7 @@ sqs.createQueue(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sqs_longpolling_createqueue.js
 ```
 
@@ -75,7 +75,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `sqs_longpolling_existingqueue.js`. Be sure to configure the SDK as previously shown. To access Amazon Simple Queue Service, create an `AWS.SQS` service object. Create a JSON object containing the parameters needed to set the attributes of queue, including a non-zero value for the `ReceiveMessageWaitTimeSeconds` parameter and the URL of the queue. Call the `setQueueAttributes` method. Long polling is then enabled for the queue.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -102,7 +102,7 @@ sqs.setQueueAttributes(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sqs_longpolling_existingqueue.js
 ```
 
@@ -113,7 +113,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `sqs_longpolling_receivemessage.js`. Be sure to configure the SDK as previously shown. To access Amazon Simple Queue Service, create an `AWS.SQS` service object. Create a JSON object containing the parameters needed to receive messages, including a non-zero value for the `WaitTimeSeconds` parameter and the URL of the queue. Call the `receiveMessage` method.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -143,7 +143,7 @@ sqs.receiveMessage(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sqs_longpolling_receivemessage.js
 ```
 

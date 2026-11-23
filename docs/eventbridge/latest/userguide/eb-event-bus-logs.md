@@ -73,7 +73,7 @@ To enable logging from an event bus, attach the following identity-based policy 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

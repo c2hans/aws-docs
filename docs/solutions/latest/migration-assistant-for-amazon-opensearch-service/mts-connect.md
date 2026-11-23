@@ -11,7 +11,7 @@ Migration Assistant authenticates to an Amazon OpenSearch Serverless NextGen col
 
 The Amazon EKS deployment creates an IAM role named `<eks-cluster-name>-migrations-role`. Both the Migration Console pod and the Argo workflow executor pods receive this role’s credentials automatically through Amazon EKS Pod Identity. Locate the role and its Amazon Resource Name (ARN) so you can add it to the collection data access policy:
 
-```
+```bash
 aws iam list-roles \
   --query "Roles[?contains(RoleName,'migrations-role')].{Name:RoleName,Arn:Arn}" \
   --output table
@@ -24,7 +24,7 @@ Record the ARN of the role that matches your Amazon EKS cluster name.
 
 Grant the migration IAM role access to the collection and its indexes with an [Amazon OpenSearch Serverless NextGen data access policy](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-data-access.html). Create a JSON policy document that grants collection-level and index-level permissions to the role ARN from Step 1, then create the policy:
 
-```
+```json
 [
   {
     "Rules": [
@@ -56,7 +56,7 @@ Grant the migration IAM role access to the collection and its indexes with an [A
 ]
 ```
 
-```
+```bash
 aws opensearchserverless create-access-policy \
   --name migration-assistant-access \
   --type data \
@@ -70,7 +70,7 @@ In addition to the data access policy, the migration IAM role’s IAM permission
 
 Edit the workflow configuration with `workflow configure edit` and set the target cluster to your collection endpoint. For an Amazon OpenSearch Serverless NextGen collection, set the SigV4 `service` to `aoss` (for an Amazon OpenSearch Service domain it is `es`), and use the collection endpoint in the form `https://<collection-id>.<region>.aoss.amazonaws.com`:
 
-```
+```json
 {
   "targetClusters": {
     "target": {
@@ -88,7 +88,7 @@ Edit the workflow configuration with `workflow configure edit` and set the targe
 
 Before you submit the workflow, verify that the Migration Console can reach and authenticate to the collection:
 
-```
+```bash
 console clusters connection-check --cluster target
 aws sts get-caller-identity
 ```

@@ -17,7 +17,7 @@ To customize the error response, you must catch errors in your code and format a
 
 **Example [index.mjs](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/nodejs-apig/function/index.mjs) – Error formatting**
 
-```
+```javascript
 var formatError = function(error){
   var response = {
     "statusCode": error.statusCode,

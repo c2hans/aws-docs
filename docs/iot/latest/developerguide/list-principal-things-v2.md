@@ -13,7 +13,7 @@ $ aws iot list-principal-things-v2 \
 
 The output can look like the following.
 
-```
+```JSON
 {
     "PrincipalThingObjects": [
         {

@@ -40,13 +40,13 @@ This page covers errors that you might encounter when you install the AWS Elasti
 
 1. Disable BitLocker on all volumes to be replicated:
 
-   ```
+   ```powershell
    manage-bde -off C:
    ```
 
 1. Wait for decryption to complete. Check the status:
 
-   ```
+   ```powershell
    manage-bde -status C:
    ```
 
@@ -69,13 +69,13 @@ Disabling BitLocker decrypts the drive. Verify this is acceptable per your organ
 
 1. Verify in PowerShell:
 
-   ```
+   ```powershell
    $env:Path -split ';' | Where-Object { $_ -like '*System32*' }
    ```
 
 1. If System32 is missing from PATH, add it permanently:
 
-   ```
+   ```powershell
    $machinePath = [System.Environment]::GetEnvironmentVariable('Path', 'Machine')
    [System.Environment]::SetEnvironmentVariable('Path', $machinePath + ';C:\Windows\System32', 'Machine')
    ```
@@ -106,7 +106,7 @@ Disabling BitLocker decrypts the drive. Verify this is acceptable per your organ
 
    1. Compute the local hash in PowerShell:
 
-      ```
+      ```powershell
       Get-FileHash .\AwsReplicationWindowsInstaller.exe -Algorithm SHA512
       ```
 
@@ -124,12 +124,12 @@ Disabling BitLocker decrypts the drive. Verify this is acceptable per your organ
 **Resolution:**
 + **Per-session fix (PowerShell):**
 
-  ```
+  ```powershell
   [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
   ```
 + **Permanent fix:** Enable TLS 1.2 system-wide through the registry:
 
-  ```
+  ```powershell
   Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319' -Name 'SchUseStrongCrypto' -Value 1 -Type DWord
   Set-ItemProperty -Path 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319' -Name 'SchUseStrongCrypto' -Value 1 -Type DWord
   ```
@@ -165,7 +165,7 @@ Disabling BitLocker decrypts the drive. Verify this is acceptable per your organ
 + **Option 1 (internet access):** Run Windows Update, or open Microsoft Edge once. Windows auto-downloads trusted root CAs when a browser first connects to HTTPS sites.
 + **Option 2 (no internet or air-gapped):** Download the Amazon root certificates from the [Amazon Trust Services repository](https://www.amazontrust.com/repository/) on the amazontrust.com website, and then import them:
 
-  ```
+  ```powershell
   Import-Certificate -FilePath .\AmazonRootCA1.cer -CertStoreLocation Cert:\LocalMachine\Root
   ```
 

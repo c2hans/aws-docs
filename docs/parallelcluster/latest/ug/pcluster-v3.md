@@ -12,7 +12,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 To use `pcluster`, you must have an IAM role with the [permissions](iam-roles-in-parallelcluster-v3.md#iam-roles-in-parallelcluster-v3-example-user-policies) required to run it.
 
-```
+```sh
 pcluster [-h]
 ```
 

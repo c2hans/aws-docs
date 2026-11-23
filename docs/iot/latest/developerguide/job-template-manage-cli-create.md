@@ -17,7 +17,7 @@ The [`list-managed-job-templates`](https://docs.aws.amazon.com/cli/latest/refere
 
 By default, running this command displays all available AWS managed templates and their details.
 
-```
+```json
 {
     "managedJobTemplates": [
         {
@@ -80,7 +80,7 @@ The command displays the template details and ARN, its job document, and the `do
 **Note**
 The `documentParameters` object returned when you use this API must only be used when creating jobs from AWS managed templates. The object must not be used for custom job templates. For an example that shows how to use this parameter, see [Create a job by using managed templates](#job-template-manage-cli-create-job).
 
-```
+```json
 {
     "templateName": "AWS-Download-File",
     "templateArn": "arn:aws:iot:{{region}}::jobtemplate/{{AWS-Download-File:1.0}}",
@@ -153,7 +153,7 @@ where:
 
 Run the following command to create a job for the template, `{{AWS-Download-File}}`.
 
-```
+```JSON
 {
     "jobArn": "arn:aws:iot:region:account-id:job/{{new-managed-template-job}}",
     "jobId": "{{new-managed-template-job}}",

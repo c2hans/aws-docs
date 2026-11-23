@@ -37,7 +37,7 @@ You can use the Developer Tools console or the **get-host** command in the AWS C
 **To view host details (CLI)**
 + Open a terminal (Linux, macOS, or Unix) or command prompt (Windows), and use the AWS CLI to run the **get-host** command, specifying the Amazon Resource Name (ARN) of the host that you want to view details for.
 
-  ```
+  ```shell
   aws codeconnections get-host --host-arn arn:aws:codeconnections:us-west-2:{{account_id}}:host/My-Host-28aef605
   ```
 

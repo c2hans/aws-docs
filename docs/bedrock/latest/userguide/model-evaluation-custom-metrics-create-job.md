@@ -132,7 +132,7 @@ You can either evaluate the performance of models in Amazon Bedrock, or you can 
 aws bedrock create-evaluation-job --cli-input-json file://{{my_eval_job.json}}
 ```
 
-```
+```json
 {
     "jobName": "custom-metrics-maaj",
     "applicationType": "ModelEvaluation",
@@ -212,7 +212,7 @@ The example JSON file contains two `evaluatorModelConfig` objects. The one insid
 aws bedrock create-evaluation-job --cli-input-json file://{{my_eval_job.json}}
 ```
 
-```
+```json
 {
     "jobName": "custom-metrics-maaj",
     "applicationType": "ModelEvaluation",

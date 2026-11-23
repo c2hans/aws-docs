@@ -22,7 +22,7 @@ AWS SDK clients are thread safe and do not require special handling.
 
 The following code uses a static database connection object which is shared between threads. Depending on the connection library used, this might not be thread safe.
 
-```
+```java
 public class DBQueryHandler implements RequestHandler<Object, String> {
     // Single connection shared across all threads - NOT SAFE
     private static Connection connection;
@@ -43,7 +43,7 @@ public class DBQueryHandler implements RequestHandler<Object, String> {
 
 A thread-safe approach is to use a connection pool. In the following example, the function handler retrieves a connection from the pool. The connection is only used in the context of a single request.
 
-```
+```java
 public class DBQueryHandler implements RequestHandler<Object, String> {
 
     private static HikariDataSource dataSource;
@@ -83,7 +83,7 @@ public class DBQueryHandler implements RequestHandler<Object, String> {
 
 Standard Java collections are not thread safe:
 
-```
+```java
 public class Handler implements RequestHandler<Object, String> {
     private static List<String> items = new ArrayList<>();
     private static Map<String, Object> cache = new HashMap<>();
@@ -99,7 +99,7 @@ public class Handler implements RequestHandler<Object, String> {
 
 Instead, use thread-safe collections:
 
-```
+```java
 public class Handler implements RequestHandler<Object, String> {
     private static final List<String> items =
         Collections.synchronizedList(new ArrayList<>());
@@ -142,7 +142,7 @@ If you use virtual threads in your program or create threads during initializati
 
 Check remaining time before each unit of work and stop processing before the timeout fires. Configure `BUFFER_MS` based on the expected duration of your next chunk of work.
 
-```
+```java
 private static final int BUFFER_MS = 2000; // Configure based on your next chunk of work
 
 public Map<String, Object> handleRequest(Map<String, Object> event, Context context) {
@@ -159,7 +159,7 @@ public Map<String, Object> handleRequest(Map<String, Object> event, Context cont
 
 When making calls to downstream services, propagate the remaining time as a timeout to avoid hanging on network calls that would outlive your invocation. Use a per-request override on a shared client rather than creating a new client per invocation:
 
-```
+```java
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.GetObjectRequest;
 import java.time.Duration;

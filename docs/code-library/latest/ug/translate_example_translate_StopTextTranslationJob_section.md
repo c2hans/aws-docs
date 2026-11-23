@@ -14,7 +14,7 @@ The following code examples show how to use `StopTextTranslationJob`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Translate#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Translate;
@@ -65,7 +65,7 @@ The following code examples show how to use `StopTextTranslationJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/xl8#code-examples).
 
-```
+```sap-abap
     "Stops an asynchronous batch translation job that is in progress."
 
     TRY.

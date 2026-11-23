@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-step-4-
 
    1. Ensure that the hostname is ⇐ 13 characters in an alphanumeric string (hyphens can also be included). This can be done at the command line using Windows PowerShell by executing the following command:
 
-      ```
+      ```powershell
       Rename-Computer <new-hostname>
       ```
 

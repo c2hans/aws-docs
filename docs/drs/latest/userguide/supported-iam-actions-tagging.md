@@ -22,7 +22,7 @@ The following example demonstrates a policy that allows an agent installer to cr
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

@@ -27,7 +27,7 @@ The permission to decrypt an AWS KMS key is only required if your secret uses a 
 **Example policy with Secrets Manager and KMS key permissions**
 ****
 
-```
+```json
 {
     "Version": "{{2012-10-17}}",
     "Statement": [
@@ -58,7 +58,7 @@ The permission to decrypt an AWS KMS key is only required for `SecureString` par
 **Example policy with Systems Manager and AWS KMS key permissions**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

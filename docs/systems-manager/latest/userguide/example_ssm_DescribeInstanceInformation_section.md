@@ -151,7 +151,7 @@ For more information, see [Managed Instances](https://docs.aws.amazon.com/system
 **Tools for PowerShell V4**
 **Example 1: This example shows details of each of your instances.**
 
-```
+```powershell
 Get-SSMInstanceInformation
 ```
 **Output:**
@@ -179,7 +179,7 @@ ResourceType                           : EC2Instance
 ```
 **Example 2: This example shows how to use the -Filter parameter to filter results to only those AWS Systems Manager instances in region `us-east-1` with an `AgentVersion` of `2.2.800.0`. You can find a list of valid -Filter key values in the InstanceInformation API reference topic (https://docs.aws.amazon.com/systems-manager/latest/APIReference/API\_InstanceInformation.html\#systemsmanager-Type-InstanceInformation-ActivationId).**
 
-```
+```powershell
 $Filters = @{
     Key="AgentVersion"
     Values="2.2.800.0"
@@ -231,7 +231,7 @@ ResourceType                           : EC2Instance
 ```
 **Example 3: This example shows how to use the -InstanceInformationFilterList parameter to filter results to only those AWS Systems Manager instances in region `us-east-1` with `PlatformTypes` of `Windows` or `Linux`. You can find a list of valid -InstanceInformationFilterList key values in the InstanceInformationFilter API reference topic (https://docs.aws.amazon.com/systems-manager/latest/APIReference/API\_InstanceInformationFilter.html).**
 
-```
+```powershell
 $Filters = @{
    Key="PlatformTypes"
    ValueSet=("Windows","Linux")
@@ -283,7 +283,7 @@ ResourceType                           : EC2Instance
 ```
 **Example 4: This example lists ssm managed instances and exports InstanceId, PingStatus, LastPingDateTime and PlatformName to a csv file.**
 
-```
+```powershell
 Get-SSMInstanceInformation | Select-Object InstanceId, PingStatus, LastPingDateTime, PlatformName | Export-Csv Instance-details.csv -NoTypeInformation
 ```
 +  For API details, see [DescribeInstanceInformation](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -291,7 +291,7 @@ Get-SSMInstanceInformation | Select-Object InstanceId, PingStatus, LastPingDateT
 **Tools for PowerShell V5**
 **Example 1: This example shows details of each of your instances.**
 
-```
+```powershell
 Get-SSMInstanceInformation
 ```
 **Output:**
@@ -319,7 +319,7 @@ ResourceType                           : EC2Instance
 ```
 **Example 2: This example shows how to use the -Filter parameter to filter results to only those AWS Systems Manager instances in region `us-east-1` with an `AgentVersion` of `2.2.800.0`. You can find a list of valid -Filter key values in the InstanceInformation API reference topic (https://docs.aws.amazon.com/systems-manager/latest/APIReference/API\_InstanceInformation.html\#systemsmanager-Type-InstanceInformation-ActivationId).**
 
-```
+```powershell
 $Filters = @{
     Key="AgentVersion"
     Values="2.2.800.0"
@@ -371,7 +371,7 @@ ResourceType                           : EC2Instance
 ```
 **Example 3: This example shows how to use the -InstanceInformationFilterList parameter to filter results to only those AWS Systems Manager instances in region `us-east-1` with `PlatformTypes` of `Windows` or `Linux`. You can find a list of valid -InstanceInformationFilterList key values in the InstanceInformationFilter API reference topic (https://docs.aws.amazon.com/systems-manager/latest/APIReference/API\_InstanceInformationFilter.html).**
 
-```
+```powershell
 $Filters = @{
    Key="PlatformTypes"
    ValueSet=("Windows","Linux")
@@ -423,7 +423,7 @@ ResourceType                           : EC2Instance
 ```
 **Example 4: This example lists ssm managed instances and exports InstanceId, PingStatus, LastPingDateTime and PlatformName to a csv file.**
 
-```
+```powershell
 Get-SSMInstanceInformation | Select-Object InstanceId, PingStatus, LastPingDateTime, PlatformName | Export-Csv Instance-details.csv -NoTypeInformation
 ```
 +  For API details, see [DescribeInstanceInformation](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

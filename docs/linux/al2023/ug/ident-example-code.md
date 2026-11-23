@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/ident-example-code.html
 ------
 #### [ Shell ]
 
-```
+```bash
 #!/bin/bash
 
 # Function to get a specific field from os-release file
@@ -122,7 +122,7 @@ fi
 ------
 #### [ Python 3.7-3.9 ]
 
-```
+```python
 #!/usr/bin/env python3
 
 import os
@@ -233,7 +233,7 @@ if __name__ == '__main__':
 ------
 #### [ Python 3.10\+ ]
 
-```
+```python
 #!/usr/bin/env python3
 
 import os
@@ -326,7 +326,7 @@ if __name__ == '__main__':
 ------
 #### [ Perl ]
 
-```
+```perl
 #!/usr/bin/env perl
 
 use strict;

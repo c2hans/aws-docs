@@ -46,7 +46,7 @@ For more information, see [Running SQL Queries Using Amazon Athena](https://docs
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/athena#code-examples).
 
-```
+```python
     def get_named_query(self, named_query_id: str) -> Dict[str, Any]:
         """
         Returns the details of a single named (saved) query, including its

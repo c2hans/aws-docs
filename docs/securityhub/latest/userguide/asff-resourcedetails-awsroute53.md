@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsR
 
 **Example**
 
-```
+```JSON
 "AwsRoute53HostedZone": {
     "HostedZone": {
         "Id": "Z06419652JEMGO9TA2XKL",

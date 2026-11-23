@@ -34,7 +34,7 @@ In this tutorial, you want to give Lambda the ability to perform these tasks. Ho
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

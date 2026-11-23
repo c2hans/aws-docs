@@ -20,7 +20,7 @@ Granting permissions to the APIs used by Amazon Q data integration in AWS Glue r
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -53,7 +53,7 @@ The `codewhisperer` prefix is a legacy name from a service that merged with Amaz
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

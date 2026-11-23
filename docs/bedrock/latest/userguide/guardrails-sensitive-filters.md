@@ -212,7 +212,7 @@ If you specify a behavior, any existing behavior that you configured for PII typ
 
 To create a guardrail with sensitive information policies, send a [CreateGuardrail](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateGuardrail.html) request. The request format is as follows:
 
-```
+```json
 POST /guardrails HTTP/1.1
 Content-type: application/json
 
@@ -270,7 +270,7 @@ Content-type: application/json
 
 The response format is as follows:
 
-```
+```json
 HTTP/1.1 202
 Content-type: application/json
 

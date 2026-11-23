@@ -13,7 +13,7 @@ The AWS managed policy `AWSPCSServiceRolePolicy` that is attached to the AWS PCS
 
 Add the following statement to the customer managed key's key policy. Replace {{account-id}} with your AWS account ID. This statement gives the AWS PCS service-linked role (`AWSServiceRoleForPCS`) permission to use the customer managed key to protect the cluster secret.
 
-```
+```json
 {
    "Sid": "Allow service-linked role use of the customer managed key",
    "Effect": "Allow",
@@ -57,7 +57,7 @@ You attach the customer managed key to the cluster secret with the AWS Secrets M
 
 The following example attaches the customer managed key to the cluster secret. Replace the placeholders with your values.
 
-```
+```cmd
 aws secretsmanager update-secret \
     --region {{region}} \
     --secret-id {{secret-arn}} \

@@ -60,7 +60,7 @@ If a statement that specifies the ANY\_VALUE function for a column also includes
 
 The examples use the event table that is created in [Step 4: Load sample data from Amazon S3](https://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-create-sample-db.html) in the *Amazon Redshift Getting Started Guide*. The following example returns an instance of any dateid where the eventname is Eagles.
 
-```
+```sql
 select any_value(dateid) as dateid, eventname from event where eventname ='Eagles' group by eventname;
 ```
 
@@ -74,7 +74,7 @@ dateid | eventname
 
 The following example returns an instance of any dateid where the eventname is Eagles or Cold War Kids.
 
-```
+```sql
 select any_value(dateid) as dateid, eventname from event where eventname in('Eagles', 'Cold War Kids') group by eventname;
 ```
 

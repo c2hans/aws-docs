@@ -226,7 +226,7 @@ Error Fetching Bucket: Access Denied
   +  **Root cause**: The `which-2.21-18.el8.x86_64 RPM` package sets the `BASH_FUNC_which%%` variable with a multi-line function definition in `/etc/profile.d/which2.{csh,sh}` files. Some older SAP scripts are unable to parse this correctly.
   +  **Resolution**: Check if `BASH_FUNC_which%%` is running using the following command.
 
-    ```
+    ```console
     $ env | grep -A 2 BASH_FUNC_which
     ```
 

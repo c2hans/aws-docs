@@ -37,7 +37,7 @@ JSON\_SIZE(x) is functionally identical to OCTET\_LENGTH(JSON\_SERIALIZE). Howev
 
 To return the length of a `SUPER` value serialized to a string, use the following example.
 
-```
+```sql
 SELECT JSON_SIZE(JSON_PARSE('[10001,10002,"⬤"]'));
 
 +-----------+

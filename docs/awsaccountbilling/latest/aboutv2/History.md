@@ -8,6 +8,7 @@ The following table describes the documentation for this release of the *AWS Bil
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Public preview release](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-hub.html) | Initial release of Data Hub User Guide, covering 1 dataset per account on the `cost_usage` schema in the US East (N. Virginia) Region, read by AWS FinOps Agent, which assumes the `AWSServiceRoleForFinOpsAgent` service-linked role. | November 20, 2026 |
 | [Level sharing, group sharing for credits, and credit split and transfer](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-turn-off.html#level-sharing) | Added level sharing for individual Reserved Instances and Savings Plans, group sharing for credits, and splitting and transferring AWS credits. | November 17, 2026 |
 | [Adjustable cost category quotas](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html#limits-categories) | You can now adjust the total number of cost categories for a management account and the number of cost category rules for a cost category (API) from Service Quotas. | November 4, 2026 |
 | [Updated documentation for AWS managed policies](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/managed-policies.html) | `Billing` and `AWSBillingReadOnlyAccess` – Updated existing managed policies to add Private Pricing permissions. | October 27, 2026 |

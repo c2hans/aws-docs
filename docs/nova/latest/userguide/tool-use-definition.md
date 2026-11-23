@@ -13,7 +13,7 @@ Amazon Nova supports the `auto`, `any`, and `tool` options for `toolChoice`. For
 
 Here is an example of how to define a tool:
 
-```
+```JSON
 tool_config = {
     "tools": [
         {
@@ -51,7 +51,7 @@ For tool calling, we recommend setting the temperature to 0 to enable greedy dec
 
 Here is an example of calling a tool with the Converse API:
 
-```
+```Python
 import json
 import boto3
 

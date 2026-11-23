@@ -17,13 +17,13 @@ For more information about `webpack`, see the [webpack module bundler](https://w
 
 To install the `webpack` module bundler, you must first have npm, the Node.js package manager, installed. Type the following command to install the `webpack` CLI and JavaScript module.
 
-```
+```javascript
 npm install --save-dev webpack
 ```
 
 To use the `path` module for working with file and directory paths, which is installed automatically with webpack, you might need to install the Node.js `path-browserify` package.
 
-```
+```javascript
 npm install --save-dev path-browserify
 ```
 
@@ -35,7 +35,7 @@ By default, Webpack searches for a JavaScript file named `webpack.config.js` in 
 **Note**
 Webpack configuration requirements vary depending on the version of Webpack you install. For more information, see the [Webpack documentation](https://webpack.js.org/configuration/).
 
-```
+```javascript
 // Import path for resolving file paths
 var path = require("path");
 module.exports = {
@@ -70,13 +70,13 @@ In this example, `browser.js` is specified as the *entry point*. The *entry poin
 
 To build an application to use `webpack`, add the following to the `scripts` object in your `package.json` file.
 
-```
+```javascript
 "build": "webpack"
 ```
 
 The following is an example `package.json` file that demonstrates adding `webpack`.
 
-```
+```javascript
 {
   "name": "aws-webpack",
   "version": "1.0.0",
@@ -100,7 +100,7 @@ The following is an example `package.json` file that demonstrates adding `webpac
 
 To build your application, enter the following command.
 
-```
+```javascript
 npm run build
 ```
 
@@ -111,7 +111,7 @@ The `webpack` module bundler then generates the JavaScript file you specified in
 
 To use the bundle in a browser script, you can incorporate the bundle using a `<script>` tag, as shown in the following example.
 
-```
+```javascript
 <!DOCTYPE html>
 <html>
     <head>
@@ -129,13 +129,13 @@ To use the bundle in a browser script, you can incorporate the bundle using a `<
 
 You can use `webpack` to generate bundles that run in Node.js by specifying `node` as a target in the configuration.
 
-```
+```javascript
 target: "node"
 ```
 
 This is useful when running a Node.js application in an environment where disk space is limited. Here is an example `webpack.config.js` configuration with Node.js specified as the output target.
 
-```
+```javascript
 // Import path for resolving file paths
 var path = require("path");
 module.exports = {

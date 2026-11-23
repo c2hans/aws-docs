@@ -34,7 +34,7 @@ If you already have a AWS KMS key with key spec `ECC_NIST_P384` and key usage `S
 
 To create the key, run the following AWS CLI command:
 
-```
+```bash
 aws kms create-key \
     --key-usage SIGN_VERIFY \
     --key-spec ECC_NIST_P384 \
@@ -49,7 +49,7 @@ Include the required AWS Support authorization policy statements in the `create-
 
 **Example output**
 
-```
+```json
 {
     "KeyMetadata": {
         "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
@@ -67,7 +67,7 @@ Attach an IAM policy that grants permissions for AWS Support authorization API o
 
 The `supportauthz:RegisterKey` action lets you associate AWS KMS keys with support permits. This permission-only action must be present in your IAM policy for AWS Support authorization to function.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -162,7 +162,7 @@ Create a support permit that authorizes AWS Support to access information about 
 
 Run the following command to create a time-bounded support permit for a specific resource:
 
-```
+```bash
 aws supportauthz create-support-permit \
     --name "MyFirstPermit" \
     --signing-key-info '{"kmsKey": "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"}' \
@@ -203,13 +203,13 @@ When AWS Support needs access to information about your services and no matching
 
 To list pending requests, run the following command:
 
-```
+```bash
 aws supportauthz list-support-permit-requests
 ```
 
 **Example output**
 
-```
+```json
 {
     "supportPermitRequests": [
         {
@@ -226,7 +226,7 @@ aws supportauthz list-support-permit-requests
 
 To approve this request, create a support permit that covers the requested scope:
 
-```
+```bash
 aws supportauthz create-support-permit \
     --name "ApproveCase12345678" \
     --signing-key-info '{"kmsKey": "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"}' \
@@ -242,7 +242,7 @@ aws supportauthz create-support-permit \
 
 To reject a request, run the following command. This notifies AWS Support that you don't want to accept the request. Rejecting a request doesn't prevent you from creating a support permit for the same actions and resources later.
 
-```
+```bash
 aws supportauthz reject-support-permit-request \
     --request-arn "arn:aws:supportauthz:us-east-1:111122223333:supportpermitrequest/request-id"
 ```

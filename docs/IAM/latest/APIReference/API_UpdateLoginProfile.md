@@ -14,7 +14,8 @@ For more information about modifying passwords, see [Managing passwords](https:/
  For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
  ** MaxSigninSessionDuration **
-The maximum duration (in seconds) of an AWS Sign-In session for the specified IAM user. This setting can have a value from 1 hour (3600 seconds) to 90 days (7776000 seconds), inclusive, and replaces any value currently configured for the user.
+The maximum duration (in seconds) of an AWS Sign-In session that uses the specified IAM user's login profile (user name and password). This setting can have a value from 1 hour (3600 seconds) to 90 days (7776000 seconds), inclusive.
+This setting applies only to sessions created through OAuth-based flows (`signin:CreateOAuth2Token`). It does not affect AWS Management Console browser sessions or traditional STS sessions.
 If you omit both this parameter and `ResetMaxSigninSessionDuration`, the current setting is unchanged. You cannot specify this parameter and set `ResetMaxSigninSessionDuration` to `true` in the same request. If you update only the sign-in session duration, the user's password and `PasswordResetRequired` setting do not change.
 Changes to this setting apply to new sign-in sessions. Sessions that are already established are not affected.
 This setting is not supported for the root user.
@@ -40,7 +41,7 @@ Type: Boolean
 Required: No
 
  ** ResetMaxSigninSessionDuration **
-Specifies whether to clear the maximum sign-in session duration for the specified IAM user. Set this value to `true` to return the setting to its unset state, so that the existing sign-in session behavior applies. When the setting is unset, the user's `MaxSigninSessionDuration` is omitted from responses.
+Specifies whether to clear the maximum sign-in session duration on the specified IAM user's login profile. Set this value to `true` to return the setting to its unset state, so that the existing sign-in session behavior applies.
 If you set this value to `false` or omit it, the current setting is not cleared. You cannot set this value to `true` and specify `MaxSigninSessionDuration` in the same request. Clearing a setting that is already unset has no effect.
 Type: Boolean
 Required: No

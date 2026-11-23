@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Support#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the descriptions of support severity levels.
     /// </summary>
@@ -84,7 +84,7 @@ For more information, see [Choosing a severity](https://docs.aws.amazon.com/awss
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/support#code-examples).
 
-```
+```java
     public static String displaySevLevels(SupportClient supportClient) {
         try {
             DescribeSeverityLevelsRequest severityLevelsRequest = DescribeSeverityLevelsRequest.builder()
@@ -116,7 +116,7 @@ For more information, see [Choosing a severity](https://docs.aws.amazon.com/awss
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/support#code-examples).
 
-```
+```javascript
 import { DescribeSeverityLevelsCommand } from "@aws-sdk/client-support";
 
 import { client } from "../libs/client.js";
@@ -141,7 +141,7 @@ export const main = async () => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/support#code-examples).
 
-```
+```kotlin
 suspend fun displaySevLevels(): String {
     var levelName = ""
     val severityLevelsRequest =
@@ -169,12 +169,12 @@ suspend fun displaySevLevels(): String {
 **Tools for PowerShell V4**
 **Example 1: Returns the list of severity levels that can be assigned to an AWS Support case.**
 
-```
+```powershell
 Get-ASASeverityLevel
 ```
 **Example 2: Returns the list of severity levels that can be assigned to an AWS Support case. The names of the levels are returned in Japanese.**
 
-```
+```powershell
 Get-ASASeverityLevel -Language "ja"
 ```
 +  For API details, see [DescribeSeverityLevels](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -182,12 +182,12 @@ Get-ASASeverityLevel -Language "ja"
 **Tools for PowerShell V5**
 **Example 1: Returns the list of severity levels that can be assigned to an AWS Support case.**
 
-```
+```powershell
 Get-ASASeverityLevel
 ```
 **Example 2: Returns the list of severity levels that can be assigned to an AWS Support case. The names of the levels are returned in Japanese.**
 
-```
+```powershell
 Get-ASASeverityLevel -Language "ja"
 ```
 +  For API details, see [DescribeSeverityLevels](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -198,7 +198,7 @@ Get-ASASeverityLevel -Language "ja"
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/support#code-examples).
 
-```
+```python
 class SupportWrapper:
     """Encapsulates Support actions."""
 

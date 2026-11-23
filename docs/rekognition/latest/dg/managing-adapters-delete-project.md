@@ -21,7 +21,7 @@ To delete a project with the AWS CLI and SDK:
 ------
 #### [ CLI ]
 
-```
+```bash
 aws rekognition delete-project
   --project-arn {{project_arn}} \
   --profile {{profile-name}}

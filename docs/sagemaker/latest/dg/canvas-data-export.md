@@ -83,7 +83,7 @@ The serial inference pipeline supports the following data types for the input an
 
   The following is an example of a validly formatted CSV string that you can provide in an inference request.
 
-  ```
+  ```text
   abc,0.0,"Doe, John",12345\ndef,1.1,"Doe, Jane",67890
   ```
 + `application/json` – the datatype for JSON strings
@@ -92,7 +92,7 @@ The serial inference pipeline supports the following data types for the input an
 
   The following is an example of a validly formatted JSON string that you can provide in an inference request.
 
-  ```
+  ```json
   {
       "instances": [
           {

@@ -73,7 +73,7 @@ For example, say that the VPC where you deploy Network Firewall has the CIDR ran
 
 The following command line call retrieves the JSON listing for the rule group:
 
-```
+```sh
 aws network-firewall describe-rule-group --type STATEFUL \
 --rule-group-name domains --region us-west-2
 ```
@@ -145,7 +145,7 @@ To add CIDR ranges to the `HOME_NET` setting, we update the rule group with our 
 
 The following command uses the `variables.json` file to update the rule group definition with the correct `HOME_NET` settings:
 
-```
+```sh
 aws network-firewall update-rule-group \
 --rule-group-arn arn:aws:network-firewall:us-west-2:111122223333:stateful-rulegroup/domains \
 --update-token a4648a25-e315-4d17-8553-283c2eb33118 \
@@ -172,7 +172,7 @@ The following shows an example response to the call:
 
 If we retrieve the `domains` rule group again, we see that the rule group has the added variable definition:
 
-```
+```sh
 aws network-firewall describe-rule-group --type STATEFUL \
 --rule-group-name domains --region us-west-2
 ```

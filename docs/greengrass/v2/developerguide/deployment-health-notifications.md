@@ -28,7 +28,7 @@ AWS IoT Greengrass emits an event when a deployment enters the following states:
 
 The [event](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/CloudWatchEventsandEventPatterns.html) for a deployment state change uses the following format:
 
-```
+```json
 {
     "version":"0",
     "id":" cd4d811e-ab12-322b-8255-EXAMPLEb1bc8",
@@ -75,7 +75,7 @@ The [event](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/CloudWatc
 
 Component status: `ERRORED` or `BROKEN`
 
-```
+```json
 {
     "version":"0",
     "id":" cd4d811e-ab12-322b-8255-EXAMPLEb1bc8",
@@ -105,7 +105,7 @@ Component status: `ERRORED` or `BROKEN`
 
 Component status: `ERRORED` or `BROKEN`
 
-```
+```json
 {
     "version":"0",
     "id":" cd4d811e-ab12-322b-8255-EXAMPLEb1bc8",
@@ -132,7 +132,7 @@ Component status: `ERRORED` or `BROKEN`
 
 Component status: `RUNNING` or `FINISHED`
 
-```
+```json
 {
     "version":"0",
     "id":" cd4d811e-ab12-322b-8255-EXAMPLEb1bc8",

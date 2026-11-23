@@ -32,6 +32,9 @@ Content-type: application/json
 
 {
    "DedicatedIpAutoWarmupEnabled": boolean,
+   "DeliveryAttributes": {
+      "SharedPoolDeliveryMode": "string"
+   },
    "Details": {
       "AdditionalContactEmailAddresses": [ "string" ],
       "ContactLanguage": "string",
@@ -88,6 +91,10 @@ The following data is returned in JSON format by the service.
  ** [DedicatedIpAutoWarmupEnabled](#API_GetAccount_ResponseSyntax) **   <a name="SES-GetAccount-response-DedicatedIpAutoWarmupEnabled"></a>
 Indicates whether or not the automatic warm-up feature is enabled for dedicated IP addresses that are associated with your account.
 Type: Boolean
+
+ ** [DeliveryAttributes](#API_GetAccount_ResponseSyntax) **   <a name="SES-GetAccount-response-DeliveryAttributes"></a>
+The delivery attributes that apply to your Amazon SES account in the current AWS Region.
+Type: [DeliveryAttributes](API_DeliveryAttributes.md) object
 
  ** [Details](#API_GetAccount_ResponseSyntax) **   <a name="SES-GetAccount-response-Details"></a>
 An object that defines your account details.

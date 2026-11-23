@@ -50,7 +50,7 @@ To update the connector in the Amazon EVS console or with the AWS CLI, use the f
 
    To update the secret:
 
-   ```
+   ```bash
    aws evs update-environment-connector \
        --environment-id env-abcde12345 \
        --connector-id cnctr-abcde12345 \
@@ -59,7 +59,7 @@ To update the connector in the Amazon EVS console or with the AWS CLI, use the f
 
    To update the FQDN:
 
-   ```
+   ```bash
    aws evs update-environment-connector \
        --environment-id env-abcde12345 \
        --connector-id cnctr-abcde12345 \
@@ -68,7 +68,7 @@ To update the connector in the Amazon EVS console or with the AWS CLI, use the f
 
 1. To verify, run the `list-environment-connectors` command, and check that the connector state is `ACTIVE`.
 
-   ```
+   ```bash
    aws evs list-environment-connectors \
        --environment-id env-abcde12345
    ```

@@ -333,7 +333,7 @@ You can also use AWS SAM to create a Lambda function using an existing .zip file
    + **Architectures**: Use `[arm64]` for the arm64 architecture. For the x86\_64 instruction set architecture, use `[amd64]` or remove the `Architectures` property.
 **Example template.yaml**
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: '2010-09-09'
    Transform: 'AWS::Serverless-2016-10-31'
    Resources:

@@ -118,7 +118,7 @@ For more information, see [Understanding Command Statuses](https://docs.aws.amaz
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import { paginateListCommandInvocations, SSMClient } from "@aws-sdk/client-ssm";
 import { parseArgs } from "node:util";
 
@@ -159,7 +159,7 @@ export const main = async ({ instanceId }) => {
 **Tools for PowerShell V4**
 **Example 1: This example lists all the invocations of a command.**
 
-```
+```powershell
 Get-SSMCommandInvocation -CommandId "b8eac879-0541-439d-94ec-47a80d554f44" -Detail $true
 ```
 **Output:**
@@ -182,7 +182,7 @@ TraceOutput        :
 ```
 **Example 2: This example lists CommandPlugins for invocation of the command id e1eb2e3c-ed4c-5123-45c1-234f5612345f**
 
-```
+```powershell
 Get-SSMCommandInvocation -CommandId e1eb2e3c-ed4c-5123-45c1-234f5612345f -Detail:$true | Select-Object -ExpandProperty CommandPlugins
 ```
 **Output:**
@@ -208,7 +208,7 @@ StatusDetails          : Success
 **Tools for PowerShell V5**
 **Example 1: This example lists all the invocations of a command.**
 
-```
+```powershell
 Get-SSMCommandInvocation -CommandId "b8eac879-0541-439d-94ec-47a80d554f44" -Detail $true
 ```
 **Output:**
@@ -231,7 +231,7 @@ TraceOutput        :
 ```
 **Example 2: This example lists CommandPlugins for invocation of the command id e1eb2e3c-ed4c-5123-45c1-234f5612345f**
 
-```
+```powershell
 Get-SSMCommandInvocation -CommandId e1eb2e3c-ed4c-5123-45c1-234f5612345f -Detail:$true | Select-Object -ExpandProperty CommandPlugins
 ```
 **Output:**
@@ -260,7 +260,7 @@ StatusDetails          : Success
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class DocumentWrapper:
     """Encapsulates AWS Systems Manager Document actions."""
 
@@ -318,7 +318,7 @@ class DocumentWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         " Use paginator to get all results
         DATA(lo_paginator) = lo_ssm->get_paginator( ).

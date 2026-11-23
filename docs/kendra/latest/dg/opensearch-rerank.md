@@ -73,7 +73,7 @@ If you had previously downloaded a version of the `opensearch` Docker image that
 ------
 #### [ Python ]
 
-   ```
+   ```python
    import boto3
    from botocore.exceptions import ClientError
    import pprint
@@ -237,7 +237,7 @@ curl -XPUT "https://localhost:9200/<{{your-docs-index}}>/_settings" -u 'admin:ad
 ------
 #### [ Python ]
 
-```
+```python
 pip install opensearch-py
 
 from opensearchpy import OpenSearch
@@ -303,7 +303,7 @@ curl -XGET "https://localhost:9200/<{{your-docs-index}}>/_search?pretty" -u 'adm
 ------
 #### [ Python ]
 
-```
+```python
 from opensearchpy import OpenSearch
 host = 'localhost'
 port = 9200
@@ -366,7 +366,7 @@ curl -XPUT "http://localhost:9200/<{{your-docs-index}}>/_settings" -H 'Content-T
 ------
 #### [ Python ]
 
-```
+```python
 from opensearchpy import OpenSearch
 host = 'localhost'
 port = 9200
@@ -437,7 +437,7 @@ curl -XGET "https://localhost:9200/<{{your-docs-index}}>/_search?pretty" -u 'adm
 ------
 #### [ Python ]
 
-```
+```python
 from opensearchpy import OpenSearch
 host = 'localhost'
 port = 9200

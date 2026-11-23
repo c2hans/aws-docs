@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Retrieve the events associated with the stack for the specified image build.
 
-```
+```sh
 pcluster get-image-stack-events [-h]
                  --image-id {{IMAGE_ID}}
                 [--debug]

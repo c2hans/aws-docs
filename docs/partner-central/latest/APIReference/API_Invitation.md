@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 
 # Invitation
 
- The Invitation structure represents an invitation exchanged between partners and AWS. It includes a message, receiver information, and a payload providing context for the invitation.
+The Invitation structure represents an invitation exchanged between partners and AWS. It includes a message, receiver information, and a payload providing context for the invitation.
 
 ## Contents
 <a name="API_Invitation_Contents"></a>
@@ -13,19 +13,19 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 In the following list, the required parameters are described first.
 
  ** Message **   <a name="AWSPartnerCentral-Type-Invitation-Message"></a>
- A message accompanying the invitation.
+A message accompanying the invitation.
 Type: String
 Pattern: `(?s).{1,255}`
 Required: Yes
 
  ** Payload **   <a name="AWSPartnerCentral-Type-Invitation-Payload"></a>
-Contains the data payload associated with the Engagement Invitation. This payload includes essential details related to the AWS opportunity and is used by partners to evaluate whether to accept or reject the engagement.
+Contains the details that the invitation carries, such as the opportunity or the account planning details that the partner receives.
 Type: [Payload](API_Payload.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
 
  ** Receiver **   <a name="AWSPartnerCentral-Type-Invitation-Receiver"></a>
-Represents the entity that received the Engagement Invitation, including account and company details. This field is essential for tracking the partner who is being invited to collaborate.
+Specifies the partner that receives the invitation.
 Type: [Receiver](API_Receiver.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes

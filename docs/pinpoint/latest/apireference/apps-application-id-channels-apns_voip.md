@@ -140,7 +140,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="apps-application-id-channels-apns_voip-request-body-put-example"></a>
 
-```
+```json
 {
   "Certificate": "string",
   "PrivateKey": "string",
@@ -159,7 +159,7 @@ Retrieves information about the communication requirements and options that are 
 #### APNSVoipChannelResponse schema
 <a name="apps-application-id-channels-apns_voip-response-body-apnsvoipchannelresponse-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "IsArchived": boolean,
@@ -179,7 +179,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-channels-apns_voip-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

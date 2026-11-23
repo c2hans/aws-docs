@@ -107,7 +107,7 @@ Perform the steps in this example to create a chart that combines a bar chart fo
 
 Following is the query that you run to provide the data for the chart.
 
-```
+```SQL
 select eventname, total_price, total_qty_sold
 from  (select eventid, total_price, total_qty_sold, ntile(1000) over(order by total_price desc) as percentile
        from (select eventid, sum(pricepaid) total_price, sum(qtysold) total_qty_sold

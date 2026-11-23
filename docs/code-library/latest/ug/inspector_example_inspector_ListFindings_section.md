@@ -39,7 +39,7 @@ Output:
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 
-```
+```java
     /**
      * Lists all AWS Inspector findings of LOW severity asynchronously.
      *
@@ -99,7 +99,7 @@ Output:
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 

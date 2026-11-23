@@ -50,7 +50,7 @@ The alias and its KMS key must be in the same account and Region.
 You can associate an alias with any [customer managed key](concepts.md#customer-mgn-key) in the same AWS account and Region. However, you do not have permission to associate an alias with an [AWS managed key](concepts.md#aws-managed-key).
 For example, this [ListAliases](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListAliases.html) output shows that the `test-key` alias is associated with exactly one target KMS key, which is represented by the `TargetKeyId` property.
 
-```
+```json
 {
      "AliasName": "alias/test-key",
      "AliasArn": "arn:aws:kms:us-west-2:111122223333:alias/test-key",
@@ -63,7 +63,7 @@ For example, this [ListAliases](https://docs.aws.amazon.com/kms/latest/APIRefere
 **Multiple aliases can be associated with the same KMS key**
 For example, you can associate the `test-key` and `project-key` aliases with the same KMS key.
 
-```
+```json
 {
      "AliasName": "alias/test-key",
      "AliasArn": "arn:aws:kms:us-west-2:111122223333:alias/test-key",

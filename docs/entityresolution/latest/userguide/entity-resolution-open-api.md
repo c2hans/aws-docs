@@ -35,7 +35,7 @@ The batch processing integration is enabled using three the API definitions. AWS
 
    **Sample request for encoding**
 
-   ```
+   ```json
    POST /jobs
    {
      "actionType": "ID_ASSIGNMENT",
@@ -63,7 +63,7 @@ The batch processing integration is enabled using three the API definitions. AWS
 
    **Sample response**
 
-   ```
+   ```json
    {
      "jobId": "string",
      "status": "PENDING"
@@ -76,7 +76,7 @@ The batch processing integration is enabled using three the API definitions. AWS
 
    **Sample request for encoding**
 
-   ```
+   ```json
    POST/jobs/{jobId}
    {
      "customerSpecifiedJobProperties": {
@@ -88,7 +88,7 @@ The batch processing integration is enabled using three the API definitions. AWS
 
    **Sample response**
 
-   ```
+   ```json
    {
      "jobId": "string",
      "status": "PENDING",
@@ -103,13 +103,13 @@ The batch processing integration is enabled using three the API definitions. AWS
 
    **Sample request for encoding**
 
-   ```
+   ```json
    GET /jobs/{jobId}
    ```
 
    **Sample response**
 
-   ```
+   ```json
    {
      "jobId": "string",
      "status": "PENDING",
@@ -133,7 +133,7 @@ This API returns the `assignedRecords`.
 
 **Sample request for encoding**
 
-```
+```json
 POST /assignment
 {
   "sourceRecords": [
@@ -153,7 +153,7 @@ POST /assignment
 
 **Sample response**
 
-```
+```json
 {
   "assignedRecords": [
     {

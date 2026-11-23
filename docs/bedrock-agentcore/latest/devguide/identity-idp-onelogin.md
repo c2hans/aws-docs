@@ -38,7 +38,7 @@ Use the following procedure to set up a OneLogin OAuth2 application and obtain t
 
 To configure OneLogin as an outbound resource provider use the following:
 
-```
+```json
 {
   "name": "OneLogin",
   "credentialProviderVendor": "OneLoginOauth2",

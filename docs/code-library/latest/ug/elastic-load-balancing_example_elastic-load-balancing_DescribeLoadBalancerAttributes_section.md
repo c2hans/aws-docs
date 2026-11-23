@@ -49,7 +49,7 @@ For more information, see [Configure your Classic Load Balancer](https://docs.aw
 **Tools for PowerShell V4**
 **Example 1: This example describes the attributes for the specified load balancer.**
 
-```
+```powershell
 Get-ELBLoadBalancerAttribute -LoadBalancerName my-load-balancer
 ```
 **Output:**
@@ -66,7 +66,7 @@ CrossZoneLoadBalancing : Amazon.ElasticLoadBalancing.Model.CrossZoneLoadBalancin
 **Tools for PowerShell V5**
 **Example 1: This example describes the attributes for the specified load balancer.**
 
-```
+```powershell
 Get-ELBLoadBalancerAttribute -LoadBalancerName my-load-balancer
 ```
 **Output:**

@@ -15,7 +15,7 @@ The following code examples show how to create draft resale authorization for an
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
 To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```java
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -43,7 +43,7 @@ To run this example, pass the following JSON changeset to `RunChangesets` in *Ut
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
 
-```
+```python
 {
     "Catalog": "AWSMarketplace",
     "ChangeSet": [
@@ -65,7 +65,7 @@ To run this example, pass the following JSON changeset to `RunChangesets` in *Ut
 ```
 Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """

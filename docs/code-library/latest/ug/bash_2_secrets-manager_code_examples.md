@@ -30,7 +30,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/036-rds-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Script to create an Amazon RDS DB instance
@@ -321,7 +321,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/038-redshift-serverless) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon Redshift Serverless Tutorial Script with Secrets Manager (No jq dependency)
@@ -1003,7 +1003,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/025-documentdb-gs) repository.
 
-```
+```bash
 #!/bin/bash
 # Amazon DocumentDB - Getting Started
 # This script creates a DocumentDB cluster with encrypted storage, stores the
@@ -1592,7 +1592,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/073-aws-secrets-manager-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Script to move hardcoded secrets to AWS Secrets Manager

@@ -134,7 +134,7 @@ conda deactivate
 
 Create a conda environment from a reference YAML file. The following is an example of a YAML file that you can use.
 
-```
+```yaml
 # anatomy of a reference environment.yml
 name: py311-new-env
 channels:

@@ -17,7 +17,7 @@ The following is an example `AwsCloudFrontDistribution` finding in the AWS Secur
 
 **Example**
 
-```
+```JSON
 "AwsCloudFrontDistribution": {
     "CacheBehaviors": {
         "Items": [

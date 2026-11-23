@@ -41,6 +41,13 @@ Content-type: application/json
    "createdAt": number,
    "description": "string",
    "domainName": "string",
+   "errorDetails": [
+      {
+         "code": "string",
+         "message": "string",
+         "resourceIds": [ "string" ]
+      }
+   ],
    "gatewayId": "string",
    "securityGroupIds": [ "string" ],
    "status": "string",
@@ -80,6 +87,11 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)(?:\.(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?))+`
 
+ ** [errorDetails](#API_GetRequesterGateway_ResponseSyntax) **   <a name="rtbfabric-GetRequesterGateway-response-errorDetails"></a>
+The causes of the requester gateway's failure, such as a deleted subnet. Present only when the gateway is CREATE\_FAILED, DELETE\_FAILED, or ERROR.
+Type: Array of [ErrorDetail](API_ErrorDetail.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+
  ** [gatewayId](#API_GetRequesterGateway_ResponseSyntax) **   <a name="rtbfabric-GetRequesterGateway-response-gatewayId"></a>
 The unique identifier of the gateway.
 Type: String
@@ -96,7 +108,7 @@ Pattern: `sg-[0-9a-f]{8,40}`
  ** [status](#API_GetRequesterGateway_ResponseSyntax) **   <a name="rtbfabric-GetRequesterGateway-response-status"></a>
 The status of the request.
 Type: String
-Valid Values: `PENDING_CREATION | ACTIVE | PENDING_DELETION | DELETED | ERROR | PENDING_UPDATE | ISOLATED | PENDING_ISOLATION | PENDING_RESTORATION`
+Valid Values: `PENDING_CREATION | ACTIVE | PENDING_DELETION | DELETED | ERROR | PENDING_UPDATE | ISOLATED | PENDING_ISOLATION | PENDING_RESTORATION | CREATE_FAILED | DELETE_FAILED`
 
  ** [subnetIds](#API_GetRequesterGateway_ResponseSyntax) **   <a name="rtbfabric-GetRequesterGateway-response-subnetIds"></a>
 The unique identifiers of the subnets.
@@ -148,7 +160,7 @@ The request was denied due to request throttling.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request could not be completed because it fails satisfy the constraints specified by the service.
+The request could not be completed because it fails to satisfy the constraints specified by the service.
 HTTP Status Code: 400
 
 ## See Also

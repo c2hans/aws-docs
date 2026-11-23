@@ -120,7 +120,7 @@ For more information, see [Metadata collected by Inventory](https://docs.aws.ama
 **Tools for PowerShell V4**
 **Example 1: This example returns a list of inventory type names for the account.**
 
-```
+```powershell
 Get-SSMInventorySchema
 ```
 +  For API details, see [GetInventorySchema](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -128,7 +128,7 @@ Get-SSMInventorySchema
 **Tools for PowerShell V5**
 **Example 1: This example returns a list of inventory type names for the account.**
 
-```
+```powershell
 Get-SSMInventorySchema
 ```
 +  For API details, see [GetInventorySchema](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

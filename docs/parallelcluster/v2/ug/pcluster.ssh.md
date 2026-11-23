@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Runs an `ssh` command with the user name and IP address of the cluster pre-populated. Arbitrary arguments are appended to the end of the `ssh` command. This command can be customized in the aliases section of the configuration file.
 
-```
+```sh
 pcluster ssh [ -h ] [ -d ] [ -r {{REGION}} ] {{cluster_name}}
 ```
 
@@ -33,24 +33,24 @@ Specifies the AWS Region to use. Defaults to the Region specified by using the [
 
 **Examples using AWS ParallelCluster version 2.11.7:**
 
-```
+```sh
 $ pcluster ssh -d {{mycluster}} -i {{~/.ssh/id_rsa}}
 SSH command: ssh ec2-user@1.1.1.1 -i /home/user/.ssh/id_rsa
 ```
 
-```
+```sh
 $ pcluster ssh {{mycluster}} -i {{~/.ssh/id_rsa}}
 ```
 
 Runs `ssh` command with the user name and IP address of the cluster pre-populated:
 
-```
+```sh
 ssh ec2-user@1.1.1.1 -i ~/.ssh/id_rsa
 ```
 
 The `ssh` command is defined in the global configuration file under the [`[aliases]` section](aliases.md). It can be customized as follows.
 
-```
+```ini
 [ aliases ]
 ssh = ssh {CFN_USER}@{MASTER_IP} {ARGS}
 ```

@@ -8,7 +8,7 @@ In the [Inserting and loading data into an Amazon Keyspaces table](getting-start
 
 The general form of the `SELECT` statement is as follows.
 
-```
+```sql
 SELECT {{column_list}} FROM {{table_name}} [WHERE {{condition}} [ALLOW FILTERING]] ;
 ```
 
@@ -35,7 +35,7 @@ The simplest form of the `SELECT` statement returns all the data in your table.
 
 1. Run the following query.
 
-   ```
+   ```sql
    SELECT * FROM catalog.book_awards ;
    ```
 
@@ -68,7 +68,7 @@ The simplest form of the `SELECT` statement returns all the data in your table.
 
 1. To retrieve only the `award`, `category`, and `year` columns, run the following query.
 
-   ```
+   ```sql
    SELECT award, category, year FROM catalog.book_awards ;
    ```
 
@@ -103,7 +103,7 @@ When querying a large dataset, you might only want records that meet certain cri
 
 1. To retrieve only the records for the awards of a given year, run the following query.
 
-   ```
+   ```sql
    SELECT * FROM catalog.book_awards WHERE year=2020 AND award='Wolf' ;
    ```
 
@@ -125,7 +125,7 @@ The `WHERE` clause is used to filter the data and return only the data that meet
 **How to use conditions in a `WHERE` clause**
 + A simple condition – A single column.
 
-  ```
+  ```sql
   WHERE column_name=value
   ```
 
@@ -136,7 +136,7 @@ The `WHERE` clause is used to filter the data and return only the data that meet
     Be aware that using `ALLOW FILTERING` can result in inconsistent performance, especially with large, and multi-partitioned tables.
 + A compound condition – Multiple simple conditions connected by `AND`.
 
-  ```
+  ```sql
   WHERE column_name1=value1 AND column_name2=value2 AND column_name3=value3...
   ```
 
@@ -147,7 +147,7 @@ The `WHERE` clause is used to filter the data and return only the data that meet
     + `year` AND `month` AND `award`
   + You add `ALLOW FILTERING` after the compound condition in the `WHERE` clause, as in the following example.
 
-    ```
+    ```sql
     SELECT * FROM my_table WHERE col1=5 AND col2='Bob' ALLOW FILTERING ;
     ```
 

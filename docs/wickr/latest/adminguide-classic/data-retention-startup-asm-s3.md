@@ -19,7 +19,7 @@ public.ecr.aws/x3s2s6k3/wickrio/bot-compliance-cloud:latest
 
 The `wickrpro/compliance/compliance_1234567890_bot` secret has the following secret value in it, shown as plaintext.
 
-```
+```json
 {
     "password":"{{password}}",
     "s3_bucket_name":"{{bucket-name}}",

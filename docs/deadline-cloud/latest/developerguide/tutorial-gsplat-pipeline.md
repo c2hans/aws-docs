@@ -79,14 +79,14 @@ Copy the video you captured from your camera to your computer for submitting to 
 
 1. If you don't have a local copy of the [deadline-cloud-samples repository](https://github.com/aws-deadline/deadline-cloud-samples) on the GitHub website, clone it or [download it as a ZIP](https://github.com/aws-deadline/deadline-cloud-samples/archive/refs/heads/mainline.zip):
 
-   ```
+   ```bash
    git clone https://github.com/aws-deadline/deadline-cloud-samples.git
    cd deadline-cloud-samples/job_bundles
    ```
 
 1. From the `job_bundles` directory, run the following command:
 
-   ```
+   ```bash
    deadline bundle gui-submit gsplat_pipeline
    ```
 

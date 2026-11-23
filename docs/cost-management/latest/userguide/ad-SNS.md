@@ -124,7 +124,7 @@ Ensure that the key policies of the KMS key allow the necessary permissions. To 
 
 ****
 
-   ```
+   ```json
    {
        "Version": "{{2012-10-17}}",
        "Statement": [
@@ -152,7 +152,7 @@ Ensure that the key policies of the KMS key allow the necessary permissions. To 
 
 ****
 
-   ```
+   ```json
    {
        "Version": "{{2012-10-17}}",
        "Statement": [

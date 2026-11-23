@@ -104,7 +104,7 @@ An IAM principal, such as an IAM role or user, must have sufficient permissions 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -152,7 +152,7 @@ If the user creating the flow log owns the bucket, the service automatically att
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -186,7 +186,7 @@ For example, the following bucket policy allows AWS accounts 123123123123 and 45
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

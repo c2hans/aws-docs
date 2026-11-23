@@ -24,7 +24,7 @@ In the following example, create a template called `my-failed-bucket-stack.yml` 
 
 1. Author a template that specifies an S3 bucket. For example, `my-failed-bucket-stack.yml`.
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: 2010-09-09
    Resources:
      S3Bucket:
@@ -34,7 +34,7 @@ In the following example, create a template called `my-failed-bucket-stack.yml` 
 
 1. Create a stack, and specify your template in the AWS Command Line Interface (AWS CLI). In the following example, specify the stack name as `my-hook-stack` and the template name as `my-failed-bucket-stack.yml`.
 
-   ```
+   ```sh
    $ aws cloudformation create-stack \
      --stack-name {{my-hook-stack}} \
      --template-body {{file://my-failed-bucket-stack.yml}}
@@ -42,14 +42,14 @@ In the following example, create a template called `my-failed-bucket-stack.yml` 
 
 1. (Optional) View your stack progress by specifying your stack name. In the following example, specify the stack name `my-hook-stack`.
 
-   ```
+   ```sh
    $ aws cloudformation describe-stack-events \
      --stack-name {{my-hook-stack}}
    ```
 
    Use the `describe-stack-events` operation to see the Hook failure while creating the bucket. The following is an example output of the command.
 
-   ```
+   ```json
    {
        "StackEvents": [
        ...
@@ -77,7 +77,7 @@ In the following example, create a template called `my-failed-bucket-stack.yml` 
 
 1. To create a stack and pass the Hook validation, update the template so that your resource uses an encrypted S3 bucket. This example uses the template `my-encrypted-bucket-stack.yml`.
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: 2010-09-09
    Description: |
      This CloudFormation template provisions an encrypted S3 Bucket
@@ -116,7 +116,7 @@ Hooks won't be invoked for skipped resources.
 
 1. Create a stack and specify your template. In this example, the stack name is `my-encrypted-bucket-stack`.
 
-   ```
+   ```sh
    $ aws cloudformation create-stack \
      --stack-name {{my-encrypted-bucket-stack}} \
      --template-body {{file://my-encrypted-bucket-stack.yml}} \
@@ -124,14 +124,14 @@ Hooks won't be invoked for skipped resources.
 
 1. (Optional) View your stack progress by specifying the stack name.
 
-   ```
+   ```sh
    $ aws cloudformation describe-stack-events \
      --stack-name {{my-encrypted-bucket-stack}}
    ```
 
    Use the `describe-stack-events` command to view the response. The following is an example of the `describe-stack-events` command.
 
-   ```
+   ```json
    {
        "StackEvents": [
        ...
@@ -186,7 +186,7 @@ Hooks won't be invoked for skipped resources.
 
 1. Author a template that specifies an S3 bucket. For example `aes256-bucket.yml`.
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: 2010-09-09
    Description: |
      This CloudFormation template provisions an encrypted S3 Bucket
@@ -207,7 +207,7 @@ Hooks won't be invoked for skipped resources.
 
 1. Create a stack, and specify your template in the AWS CLI. In the following example, specify the stack name as `my-hook-stack` and the template name as `aes256-bucket.yml`.
 
-   ```
+   ```sh
    $ aws cloudformation create-stack \
      --stack-name {{my-hook-stack}} \
      --template-body {{file://aes256-bucket.yml}}
@@ -215,14 +215,14 @@ Hooks won't be invoked for skipped resources.
 
 1. (Optional) View your stack progress by specifying your stack name. In the following example, specify the stack name `my-hook-stack`.
 
-   ```
+   ```sh
    $ aws cloudformation describe-stack-events \
      --stack-name {{my-hook-stack}}
    ```
 
    Use the `describe-stack-events` operation to see the Hook failure while creating the bucket. The following is an example output of the command.
 
-   ```
+   ```json
    {
        "StackEvents": [
        ...
@@ -250,7 +250,7 @@ Hooks won't be invoked for skipped resources.
 
 1. To create a stack and pass the Hook validation, update the template so that your resource uses an encrypted S3 bucket. This example uses the template `kms-bucket-and-queue.yml`.
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: 2010-09-09
    Description: |
      This CloudFormation template provisions an encrypted S3 Bucket
@@ -296,7 +296,7 @@ Hooks won't be invoked for skipped resources.
 
 1. Create a stack and specify your template. In this example, the stack name is `my-encrypted-bucket-stack`.
 
-   ```
+   ```sh
    $ aws cloudformation create-stack \
      --stack-name {{my-encrypted-bucket-stack}} \
      --template-body {{file://kms-bucket-and-queue.yml}}
@@ -304,14 +304,14 @@ Hooks won't be invoked for skipped resources.
 
 1. (Optional) View your stack progress by specifying the stack name.
 
-   ```
+   ```sh
    $ aws cloudformation describe-stack-events \
      --stack-name {{my-encrypted-bucket-stack}}
    ```
 
    Use the `describe-stack-events` command to view the response. The following is an example of the `describe-stack-events` command.
 
-   ```
+   ```json
    {
        "StackEvents": [
        ...

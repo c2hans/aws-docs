@@ -81,7 +81,7 @@ You can configure content filters for your guardrail by using the AWS Management
 
 Configure content filters for your guardrail by sending a [CreateGuardrail](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateGuardrail.html) request. The request format is as follows:
 
-```
+```json
 POST /guardrails HTTP/1.1
 Content-type: application/json
 
@@ -125,7 +125,7 @@ Content-type: application/json
 
 The response format looks like this:
 
-```
+```json
 HTTP/1.1 202
 Content-type: application/json
 

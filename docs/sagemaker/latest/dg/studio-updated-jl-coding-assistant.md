@@ -118,7 +118,7 @@ Please note that for Claude Code specifically, you can configure it to use AWS B
 
 `~/.claude/settings.json`:
 
-```
+```json
 {
   "env": {
     "CLAUDE_CODE_USE_BEDROCK": "1"

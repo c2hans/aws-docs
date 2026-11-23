@@ -18,7 +18,7 @@ However, although the AWS Glue API names themselves are transformed to lowercase
 
 In Python calls to AWS Glue APIs, it's best to pass parameters explicitly by name. For example:
 
-```
+```python
 job = glue.create_job(Name='sample', Role='Glue_DefaultRole',
                       Command={'Name': 'glueetl',
                                'ScriptLocation': 's3://my_script_bucket/scripts/my_etl_script.py'})
@@ -28,7 +28,7 @@ It is helpful to understand that Python creates a dictionary of the name/value t
 
 For example, suppose that you're starting a `JobRun` in a Python Lambda handler function, and you want to specify several parameters. Your code might look something like the following:
 
-```
+```python
 from datetime import datetime, timedelta
 
 client = boto3.client('glue')
@@ -49,7 +49,7 @@ def lambda_handler(event, context):
 
 To access these parameters reliably in your ETL script, specify them by name using AWS Glue's `getResolvedOptions` function and then access them from the resulting dictionary:
 
-```
+```python
 import sys
 from awsglue.utils import getResolvedOptions
 
@@ -100,7 +100,7 @@ The following example shows how call the AWS Glue APIs using Python, to create a
 
 1. Create an instance of the AWS Glue client:
 
-   ```
+   ```python
    import boto3
    glue = boto3.client(service_name='glue', region_name='us-east-1',
                  endpoint_url='https://glue.us-east-1.amazonaws.com')
@@ -108,7 +108,7 @@ The following example shows how call the AWS Glue APIs using Python, to create a
 
 1. Create a job. You must use `glueetl` as the name for the ETL command, as shown in the following code:
 
-   ```
+   ```python
    myJob = glue.create_job(Name='sample', Role='Glue_DefaultRole',
                              Command={'Name': 'glueetl',
                                       'ScriptLocation': 's3://my_script_bucket/scripts/my_etl_script.py'})
@@ -116,18 +116,18 @@ The following example shows how call the AWS Glue APIs using Python, to create a
 
 1. Start a new run of the job that you created in the previous step:
 
-   ```
+   ```python
    myNewJobRun = glue.start_job_run(JobName=myJob['Name'])
    ```
 
 1. Get the job status:
 
-   ```
+   ```python
    status = glue.get_job_run(JobName=myJob['Name'], RunId=myNewJobRun['JobRunId'])
    ```
 
 1. Print the current state of the job run:
 
-   ```
+   ```python
    print(status['JobRun']['JobRunState'])
    ```

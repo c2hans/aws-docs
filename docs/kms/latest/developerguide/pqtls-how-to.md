@@ -12,7 +12,7 @@ To see a complete working example of configuring and using hybrid post-quantum T
 
    For example, this statement adds version `2.30.22` of the AWS Common Runtime client to your Maven dependencies. Use version `2.30.22` or later to enable ML-KEM.
 
-   ```
+   ```xml
    <dependency>
        <groupId>software.amazon.awssdk</groupId>
        <artifactId>aws-crt-client</artifactId>
@@ -24,7 +24,7 @@ To see a complete working example of configuring and using hybrid post-quantum T
 
    This code uses the `postQuantumTlsEnabled()` method parameter to configure an [AWS common runtime HTTP client](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http-configuration-crt.html) that prefers the recommended hybrid post-quantum cipher suite, ECDH with ML-KEM. Then it uses the configured HTTP client to build an instance of the AWS KMS asynchronous client, [`KmsAsyncClient`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/kms/KmsAsyncClient.html). After this code completes, all [AWS KMS API](https://docs.aws.amazon.com/kms/latest/APIReference/) requests on the `KmsAsyncClient` instance use hybrid post-quantum TLS.
 
-   ```
+   ```java
    // Configure HTTP client
    SdkAsyncHttpClient awsCrtHttpClient = AwsCrtAsyncHttpClient.builder()
              .postQuantumTlsEnabled(true)

@@ -17,7 +17,7 @@ This procedure expands on the code in [Analyzing a video stored in an Amazon S3 
 ------
 #### [ Java ]
 
-   ```
+   ```java
            //Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
            //PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -107,7 +107,7 @@ This procedure expands on the code in [Analyzing a video stored in an Amazon S3 
 
    This code is taken from the AWS Documentation SDK examples GitHub repository. See the full example [here](https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/javav2/example_code/rekognition/src/main/java/com/example/rekognition/VideoCelebrityDetection.java).
 
-   ```
+   ```java
    //snippet-start:[rekognition.java2.recognize_video_celebrity.import]
    import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
    import software.amazon.awssdk.regions.Region;
@@ -277,7 +277,7 @@ This procedure expands on the code in [Analyzing a video stored in an Amazon S3 
 ------
 #### [ Python ]
 
-   ```
+   ```python
    #Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    #PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 
@@ -337,7 +337,7 @@ This procedure expands on the code in [Analyzing a video stored in an Amazon S3 
 
    In the following Node.Js code example, replace the value of `amzn-s3-demo-bucket` with the name of the S3 bucket containing your video and the value of `videoName` with the name of the video file. You'll also need to replace the value of `roleArn` with the Arn associated with your IAM service role. Finally, replace the value of `region` with the name of the operating region associated with your account. Replace the value of `profile_name` in the line that creates the Rekognition session with the name of your developer profile.
 
-   ```
+   ```javascript
    //Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    //PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 

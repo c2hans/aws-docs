@@ -14,7 +14,7 @@ The following code examples show how to use `GetOpportunity`.
 **SDK for .NET**
 Get an opportunity.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // PDX-License-Identifier: Apache-2.0
 
@@ -77,7 +77,7 @@ namespace AWSExample
 **SDK for Go V2**
 Get an opportunity.
 
-```
+```go
 package main
 
 import (
@@ -125,7 +125,7 @@ func main() {
 **SDK for Java 2.x**
 Get an opportunity.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -183,7 +183,7 @@ public class GetOpportunity {
 **SDK for Python (Boto3)**
 Get an opportunity.
 
-```
+```python
 #!/usr/bin/env python
 
 """

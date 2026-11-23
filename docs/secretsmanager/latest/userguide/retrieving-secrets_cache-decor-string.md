@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 
 This decorator expects a secret ID string and [SecretCache](retrieving-secrets_cache-ref-secretcache.md) as the first and second arguments. The decorator returns the secret string value. The secret must contain a string.
 
-```
+```python
 from aws_secretsmanager_caching import SecretCache
 from aws_secretsmanager_caching import InjectKeywordedSecretString,  InjectSecretString
 

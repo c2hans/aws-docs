@@ -15,7 +15,7 @@ This topic provides a step-by-step guide to implementing a KCL consumer applicat
 
 1. <a name="cdc-kcl-add-dependencies"></a>In this step, you add the KCL dependency to your project. For Maven, add the following to your pom.xml:
 
-   ```
+   ```xml
    <dependencies>
            <dependency>
                <groupId>software.amazon.kinesis</groupId>
@@ -34,7 +34,7 @@ Always check for the latest version of KCL at the [KCL GitHub repository](https:
 
 1. <a name="cdc-kcl-factory"></a>Create a factory class that produces record processor instances:
 
-   ```
+   ```java
    import software.amazon.awssdk.services.keyspacesstreams.model.Record;
    import software.amazon.keyspaces.streamsadapter.adapter.KeyspacesStreamsClientRecord;
    import software.amazon.keyspaces.streamsadapter.model.KeyspacesStreamsProcessRecordsInput;
@@ -108,7 +108,7 @@ Always check for the latest version of KCL at the [KCL GitHub repository](https:
 
 1. <a name="cdc-kcl-record-factory"></a>Create a record factory as shown in the following example.
 
-   ```
+   ```java
    import software.amazon.kinesis.processor.ShardRecordProcessor;
    import software.amazon.kinesis.processor.ShardRecordProcessorFactory;
 
@@ -130,7 +130,7 @@ Always check for the latest version of KCL at the [KCL GitHub repository](https:
 
 1. <a name="cdc-kcl-consumer"></a>In this step you create the base class to configure KCLv3 and the Amazon Keyspaces adapter.
 
-   ```
+   ```java
    import com.example.KCLExample.utils.RecordProcessorFactory;
    import software.amazon.keyspaces.streamsadapter.AmazonKeyspacesStreamsAdapterClient;
    import software.amazon.keyspaces.streamsadapter.StreamsSchedulerFactory;

@@ -43,6 +43,9 @@ Products from sellers in India are identified with `[IN]` suffix and available e
 **Operating Systems**
  Packaged Linux and Windows operating systems.
 
+**RTB Fabric**
+ Bid-traffic modules for AWS RTB Fabric workloads.
+
 **Security**
  Security products for your infrastructure.
 

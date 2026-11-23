@@ -35,7 +35,7 @@ If the result is larger than a 64-KB `VARCHAR`, then an error is returned.
 
 The following SQL returns the hexadecimal WKB representation of a polygon in a geometry.
 
-```
+```sql
 SELECT ST_AsHexWKB(ST_GeomFromText('POLYGON((0 0,0 1,1 1,1 0,0 0))',4326));
 ```
 
@@ -47,7 +47,7 @@ st_ashexwkb
 
 The following SQL returns the hexadecimal WKB representation of a polygon in a geography.
 
-```
+```sql
 SELECT ST_AsHexWKB(ST_GeogFromText('POLYGON((0 0,0 1,1 1,1 0,0 0))'));
 ```
 

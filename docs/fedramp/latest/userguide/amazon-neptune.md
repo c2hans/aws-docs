@@ -97,7 +97,7 @@ Amazon Neptune administrative access is managed through the master user account 
    + Implement MFA requirements for privileged operations
    + Example policy for cluster administration:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -379,7 +379,7 @@ Choose the appropriate policy based on your role:
 
  **Testing this policy:**
 
-```
+```bash
 # Verify read access works
 aws neptune describe-db-clusters
 
@@ -389,7 +389,7 @@ aws neptune delete-db-cluster --db-cluster-identifier my-cluster
 
  **Policy JSON:**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -423,7 +423,7 @@ aws neptune delete-db-cluster --db-cluster-identifier my-cluster
 
  **Testing this policy:**
 
-```
+```bash
 # Verify operator access works (requires MFA)
 aws neptune modify-db-cluster --db-cluster-identifier my-neptune-cluster --apply-immediately
 
@@ -433,7 +433,7 @@ aws neptune delete-db-cluster --db-cluster-identifier my-neptune-cluster
 
  **Policy JSON:**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -473,7 +473,7 @@ aws neptune delete-db-cluster --db-cluster-identifier my-neptune-cluster
 
  **Testing this policy:**
 
-```
+```bash
 # Verify full admin access works (requires MFA)
 aws neptune create-db-cluster --db-cluster-identifier my-neptune-cluster --engine neptune
 aws neptune delete-db-cluster --db-cluster-identifier my-neptune-cluster --skip-final-snapshot
@@ -481,7 +481,7 @@ aws neptune delete-db-cluster --db-cluster-identifier my-neptune-cluster --skip-
 
  **Policy JSON:**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -527,7 +527,7 @@ Amazon Neptune requires comprehensive master user security, HTTPS/TLS encryption
 
    Set up Amazon Neptune cluster with comprehensive encryption, authentication, and security configurations
 
-   ```
+   ```bash
    # Create customer-managed KMS key for Neptune encryption
    aws kms create-key \
      --description 'Amazon Neptune Cluster Encryption Key' \
@@ -557,7 +557,7 @@ Amazon Neptune requires comprehensive master user security, HTTPS/TLS encryption
 
    Create Neptune cluster with encryption and secure master user configuration
 
-   ```
+   ```bash
    # Retrieve master user credentials from Secrets Manager
    MASTER_CREDS=$(aws secretsmanager get-secret-value \
      --secret-id neptune/master-user \
@@ -601,7 +601,7 @@ Amazon Neptune requires comprehensive master user security, HTTPS/TLS encryption
 
    Set up IAM database authentication and comprehensive monitoring for Neptune
 
-   ```
+   ```bash
    # Create IAM policy for Neptune database access
    cat > neptune-db-access-policy.json << 'EOF'
    {
@@ -675,7 +675,7 @@ Amazon Neptune requires implementation of privileged account security controls i
 
    Configure Amazon Neptune with minimal required permissions for administrative accounts
 
-   ```
+   ```bash
    # Create least privilege IAM policy for Neptune administration
    cat > neptune-admin-policy.json << 'EOF'
    {
@@ -721,7 +721,7 @@ Amazon Neptune requires implementation of privileged account security controls i
 
    Require MFA for all privileged operations and administrative access
 
-   ```
+   ```bash
    # MFA enforcement is configured through IAM policy conditions
    # Verify MFA enforcement for privileged operations
    aws iam simulate-principal-policy \
@@ -734,7 +734,7 @@ Amazon Neptune requires implementation of privileged account security controls i
 
    Enable comprehensive logging and monitoring of all privileged account activities
 
-   ```
+   ```bash
    # Enable CloudTrail for API logging
    aws cloudtrail create-trail \
      --name NeptunePrivilegedAccess \
@@ -799,7 +799,7 @@ Deploy AWS Config rules to continuously monitor Amazon Neptune compliance
 
  **Comparison Commands:**
 
-```
+```bash
 # List all Neptune DB clusters
 aws neptune describe-db-clusters --output json
 # List all Neptune DB instances
@@ -832,7 +832,7 @@ JSON via AWS CLI
 
  **Export Commands:**
 
-```
+```bash
 # Export all Neptune DB clusters
 aws neptune describe-db-clusters --output json > amazon_neptune_clusters.json
 # Export all Neptune DB instances
@@ -863,7 +863,7 @@ aws neptune describe-event-subscriptions --output json > amazon_neptune_event_su
 
  **API Command:**
 
-```
+```bash
 aws neptune create-db-cluster \
   --db-cluster-identifier <cluster-name> \
   --storage-encrypted \
@@ -877,7 +877,7 @@ aws neptune create-db-cluster \
 
  **API Command:**
 
-```
+```bash
 aws neptune create-db-instance \
   --db-instance-identifier <instance-name> \
   --db-cluster-identifier <cluster-name> \
@@ -891,7 +891,7 @@ aws neptune create-db-instance \
 
  **API Command:**
 
-```
+```bash
 aws neptune modify-db-cluster \
   --db-cluster-identifier <cluster-name> \
   --enable-iam-database-authentication

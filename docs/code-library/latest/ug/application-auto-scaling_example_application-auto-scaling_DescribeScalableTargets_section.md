@@ -51,7 +51,7 @@ For more information, see [AWS services that you can use with Application Auto S
 **Tools for PowerShell V4**
 **Example 1: This example will provide information about the Application Autoscaling Scalable targets in the specified namespace.**
 
-```
+```powershell
 Get-AASScalableTarget -ServiceNamespace "AppStream"
 ```
 **Output:**
@@ -71,7 +71,7 @@ SuspendedState    : Amazon.ApplicationAutoScaling.Model.SuspendedState
 **Tools for PowerShell V5**
 **Example 1: This example will provide information about the Application Autoscaling Scalable targets in the specified namespace.**
 
-```
+```powershell
 Get-AASScalableTarget -ServiceNamespace "AppStream"
 ```
 **Output:**

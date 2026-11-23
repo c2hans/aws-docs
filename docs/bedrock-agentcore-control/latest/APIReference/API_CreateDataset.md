@@ -66,13 +66,13 @@ Required: No
  Versioned schema type governing the structure of examples. Immutable after creation.
 Type: String
 Valid Values: `AGENTCORE_EVALUATION_PREDEFINED_V1 | AGENTCORE_EVALUATION_SIMULATED_V1 | THIRD_PARTY_EVALUATION_V1`
-Required: Yes
+Required: No
 
  ** [source](#API_CreateDataset_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateDataset-request-source"></a>
  Source of initial examples. Provide either inline examples or an S3 URI pointing to a JSONL file.
 Type: [DataSourceType](API_DataSourceType.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
-Required: Yes
+Required: No
 
  ** [tags](#API_CreateDataset_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateDataset-request-tags"></a>
  A map of tag keys and values to assign to the dataset.

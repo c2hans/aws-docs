@@ -8,7 +8,7 @@ As a customer, you maintain ownership of your content, and you select which AWS 
 
 IAM policies provide a simple mechanism to limit access to services in specific Regions. You can add a global condition (aws:RequestedRegion) to the IAM policies attached to your IAM Principals to enforce this for all AWS services. For example, the following policy uses the NotAction element with the Deny effect, which explicitly denies access to all of the actions not listed in the statement if the requested Region is not European. Actions in the [Amazon CloudFront](https://aws.amazon.com/cloudfront/), [AWS IAM](https://aws.amazon.com/iam/), [Amazon Route 53](https://aws.amazon.com/route53/), and [AWS Support](https://aws.amazon.com/contact-us/) services should not be denied because these are popular AWS global services.
 
-```
+```json
 {
 “Version”: “2012-10-17”,
 “Statement”: [

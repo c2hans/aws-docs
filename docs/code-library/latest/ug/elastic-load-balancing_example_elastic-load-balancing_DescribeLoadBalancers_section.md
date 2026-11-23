@@ -220,7 +220,7 @@ For more information, see [What is a Classic Load Balancer?](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: This example lists the names of your load balancers.**
 
-```
+```powershell
 Get-ELBLoadBalancer | format-table -property LoadBalancerName
 ```
 **Output:**
@@ -234,7 +234,7 @@ my-internal-load-balancer
 ```
 **Example 2: This example describes the specified load balancer.**
 
-```
+```powershell
 Get-ELBLoadBalancer -LoadBalancerName my-load-balancer
 ```
 **Output:**
@@ -259,12 +259,12 @@ VPCId                     : vpc-a01106c2
 ```
 **Example 3: This example describes all your load balancers in the current AWS region.**
 
-```
+```powershell
 Get-ELBLoadBalancer
 ```
 **Example 4: This example describes all your load balancers across all available AWS Regions.**
 
-```
+```powershell
 Get-AWSRegion | % { Get-ELBLoadBalancer -Region $_ }
 ```
 +  For API details, see [DescribeLoadBalancers](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -272,7 +272,7 @@ Get-AWSRegion | % { Get-ELBLoadBalancer -Region $_ }
 **Tools for PowerShell V5**
 **Example 1: This example lists the names of your load balancers.**
 
-```
+```powershell
 Get-ELBLoadBalancer | format-table -property LoadBalancerName
 ```
 **Output:**
@@ -286,7 +286,7 @@ my-internal-load-balancer
 ```
 **Example 2: This example describes the specified load balancer.**
 
-```
+```powershell
 Get-ELBLoadBalancer -LoadBalancerName my-load-balancer
 ```
 **Output:**
@@ -311,12 +311,12 @@ VPCId                     : vpc-a01106c2
 ```
 **Example 3: This example describes all your load balancers in the current AWS region.**
 
-```
+```powershell
 Get-ELBLoadBalancer
 ```
 **Example 4: This example describes all your load balancers across all available AWS Regions.**
 
-```
+```powershell
 Get-AWSRegion | % { Get-ELBLoadBalancer -Region $_ }
 ```
 +  For API details, see [DescribeLoadBalancers](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

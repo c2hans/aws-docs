@@ -20,7 +20,7 @@ If you're registering EC2 instances with an Elastic Load Balancing (ELB) load ba
  **Private Hosted Zones**
 
 You can associate health checks with failover records in a private hosted zone. Note the following:
-+ Route 53 health checkers are outside the VPC. To check the health of an endpoint within a VPC by IP address, you must assign a public IP address to the instance in the VPC.
++ Route 53 health checkers for a health check whose `EndpointType` is `PUBLIC` (the default) are outside the VPC. To check the health of an endpoint within a VPC by IP address, assign a public IP address to the instance in the VPC. To check an endpoint that has only a private IP address, use a private-endpoint health check. For more information, see [EndpointType](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-endpointtype).
 + You can configure a health checker to check the health of an external resource that the instance relies on, such as a database server.
 + You can create a CloudWatch metric, associate an alarm with the metric, and then create a health check that is based on the state of the alarm. For example, you might create a CloudWatch metric that checks the status of the Amazon EC2 `StatusCheckFailed` metric, add an alarm to the metric, and then create a health check that is based on the state of the alarm. For information about creating CloudWatch metrics and alarms by using the CloudWatch console, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html).
 

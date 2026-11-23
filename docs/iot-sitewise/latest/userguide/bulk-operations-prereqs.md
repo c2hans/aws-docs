@@ -19,7 +19,7 @@ To perform bulk operations, you need the following policies.
 
 This policy allows access to the required AWS IoT SiteWise API actions for bulk operations:
 
-```
+```json
 {
     "Sid": "SiteWiseApiAccess",
     "Effect": "Allow",
@@ -63,7 +63,7 @@ This policy allows access to the required AWS IoT SiteWise API actions for bulk 
 
 This policy allows access to the AWS IoT TwinMaker API operations that you use to work with bulk operations:
 
-```
+```json
 {
     "Sid": "MetadataTransferJobApiAccess",
     "Effect": "Allow",
@@ -87,7 +87,7 @@ This policy provides access to Amazon S3 buckets for transferring metadata for b
 
 If you use one specific bucket for working with your bulk operations metadata, this policy provides access to that bucket:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -111,7 +111,7 @@ If you use one specific bucket for working with your bulk operations metadata, t
 
 If you will use many different buckets to work with your bulk operations metadata, this policy provides access to any bucket:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [

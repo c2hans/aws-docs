@@ -87,7 +87,7 @@ The sample app consists of a single HTML page that contains the user interface a
 
 For more information on the `<audio>` element, see [audio](https://www.w3schools.com/tags/tag_audio.asp).
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -116,7 +116,7 @@ Save the HTML file, naming it `polly.html`. After you have created the user inte
 
 The first thing to do when creating the browser script is to include the SDK for JavaScript by adding a `<script>` element after the `<audio>` element in the page. To find the current SDK\_VERSION\_NUMBER, see the API Reference for the SDK for JavaScript at [AWS SDK for JavaScript API Reference Guide.](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/)
 
-```
+```html
 <script src="https://sdk.amazonaws.com/js/aws-sdk-{{SDK_VERSION_NUMBER}}.min.js"></script>
 ```
 
@@ -124,7 +124,7 @@ Then add a new `<script type="text/javascript">` element after the SDK entry. Yo
 
 To synthesize speech with Amazon Polly, you must provide a variety of parameters including the sound format of the output, the sampling rate, the ID of the voice to use, and the text to play back. When you initially create the parameters, set the `Text:` parameter to an empty string; the `Text:` parameter will be set to the value you retrieve from the `<input>` element in the webpage. Replace {{IDENTITY\_POOL\_ID}} and {{REGION}} in the following code with values noted in [Step 1: Create an Amazon Cognito Identity Pool](#getting-started-browser-create-identity-pool).
 
-```
+```javascript
     <script type="text/javascript">
 
         // Initialize the Amazon Cognito credentials provider
@@ -150,7 +150,7 @@ Create a new `AWS.Polly` service object. Then create the `AWS.Polly.Presigner` o
 
 After you create the presigner object, call the `getSynthesizeSpeechUrl` method of that object, passing the speech parameters. If successful, this method returns the URL of the synthesized speech, which you then assign to the `<audio>` element for playback.
 
-```
+```javascript
             // Create the Polly service object and presigner object
             var polly = new AWS.Polly({apiVersion: '2016-06-10'});
             var signer = new AWS.Polly.Presigner(speechParams, polly)
@@ -183,7 +183,7 @@ Enter a phrase you want turned to speech in the input box, then choose **Synthes
 
 Here is the full HTML page with the browser script. It's also available [here on GitHub](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/javascript/example_code//browserstart/polly.html).
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>

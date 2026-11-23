@@ -141,7 +141,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-target-group-delete-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "Region": "us-east-1",
   "TargetGroupArns": [
@@ -155,7 +155,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-target-group-delete-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "Region": "us-east-1",
   "TargetGroupArns": [

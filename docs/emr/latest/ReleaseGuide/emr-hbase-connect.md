@@ -12,7 +12,7 @@ After you create an HBase cluster, the next step is to connect to HBase so you c
 
 1. Run `hbase shell`. The HBase shell opens with a prompt similar to the following.
 
-   ```
+   ```bash
    hbase(main):001:0>
    ```
 
@@ -23,7 +23,7 @@ You can issue HBase shell commands from the prompt. For more information about t
 
 The following command creates a table named 't1' that has a single column family named 'f1'.
 
-```
+```bash
 hbase(main):001:0>create 't1', 'f1'
 ```
 
@@ -32,7 +32,7 @@ hbase(main):001:0>create 't1', 'f1'
 
 The following command puts value 'v1' for row 'r1' in table 't1' and column 'f1'.
 
-```
+```bash
 hbase(main):001:0>put 't1', 'r1', 'f1:col1', 'v1'
 ```
 
@@ -41,7 +41,7 @@ hbase(main):001:0>put 't1', 'r1', 'f1:col1', 'v1'
 
 The following command gets the values for row 'r1' in table 't1'.
 
-```
+```bash
 hbase(main):001:0>get 't1', 'r1'
 ```
 
@@ -50,7 +50,7 @@ hbase(main):001:0>get 't1', 'r1'
 
 The following command drops and deletes table 't1'.
 
-```
+```bash
 hbase(main):001:0>drop 'ns1:t1',false
 ```
 

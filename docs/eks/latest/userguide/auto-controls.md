@@ -22,7 +22,7 @@ The SCP below prevents calling `ec2:RunInstances` unless the AMI belongs to the 
 **Note**
 It’s important **not** to use the `ec2:Owner` context key. Amazon owns the EKS Auto Mode AMI accounts and the value for this key will always be `amazon`. Constructing an SCP that allows launching AMIs if the `ec2:Owner` is `amazon` will allow launching any Amazon owned AMI, not just those for EKS Auto Mode.
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -94,7 +94,7 @@ It’s important **not** to use the `ec2:Owner` context key. Amazon owns the EKS
 
 When `ec2:RunInstances` is called the `AssociatePublicIpAddress` field for an instance launch is determined automatically by the type of subnet that the instance is being launched into. An SCP may be used to enforce that this value is explicitly set to false, regardless of the type of subnet being launched into. In this case the NodeClass field `spec.advancedNetworking.associatePublicIPAddress` can also be set to false to satisfy the requirements of the SCP.
 
-```
+```json
   {
         "Sid": "DenyPublicEC2IPAddresses",
         "Effect": "Deny",

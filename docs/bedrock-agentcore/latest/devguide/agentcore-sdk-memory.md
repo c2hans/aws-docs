@@ -14,7 +14,7 @@ pip install bedrock-agentcore
 
  **Add short-term memory**
 
-```
+```python
 from bedrock_agentcore.memory import MemoryClient
 
 client = MemoryClient(region_name="us-east-1")
@@ -48,7 +48,7 @@ client.create_event(
 
  **Add long-term memory with strategies**
 
-```
+```python
 from bedrock_agentcore.memory import MemoryClient
 import time
 

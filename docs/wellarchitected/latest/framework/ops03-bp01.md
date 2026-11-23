@@ -37,6 +37,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops03-b
 
 ![Pipeline diagram showing a change moving through source control, build, test, and deploy stages on its path from developer commit to production.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/deployment-pipeline-tooling.png)
 
+*Delivery pipeline stages from source to production*
+
  Most organizations face a choice between letting each team build its own pipeline and providing a central, governed one that teams extend. Central ownership concentrates security scanning, approval gates, and audit logging, so every team inherits them. The trade-off is flexibility: a workload with unusual build or compliance needs can find a shared pipeline too rigid. We recommend a central foundation that teams customize at the edges.
 
  Drift happens when running systems diverge from their defined state because someone made a change outside the pipeline. Configuration management addresses drift by treating configuration as versioned, validated data. When configuration lives in version control alongside code, the same review and rollback mechanisms that protect code also protect configuration.

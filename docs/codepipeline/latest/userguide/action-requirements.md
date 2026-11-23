@@ -11,7 +11,7 @@ The following example shows the action level of the pipeline structure in both J
 ------
 #### [ YAML ]
 
-```
+```YAML
 
 . . .
 
@@ -66,7 +66,7 @@ The following example shows the action level of the pipeline structure in both J
 ------
 #### [ JSON ]
 
-```
+```json
 
 . . .
 

@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Retrieve the list of log streams associated with a cluster.
 
-```
+```sh
 pcluster list-cluster-log-streams [-h]
                  --cluster-name {{CLUSTER_NAME}}
                 [--filters {{FILTERS}} [{{FILTERS}} ...]]

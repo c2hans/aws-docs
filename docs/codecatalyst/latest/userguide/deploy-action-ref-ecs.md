@@ -13,7 +13,7 @@ This action definition exists as a section within a broader workflow definition 
 **Note**
 Most of the YAML properties that follow have corresponding UI elements in the visual editor. To look up a UI element, use **Ctrl\+F**. The element will be listed with its associated YAML property.
 
-```
+```yaml
 # The workflow definition starts here.
 # See Top-level properties for details.
 
@@ -224,7 +224,7 @@ Limit the permissions to those shown in the following policy. Using a role with 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [{

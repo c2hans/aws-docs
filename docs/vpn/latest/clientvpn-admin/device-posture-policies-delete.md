@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 
 To remove the authorization policy from an endpoint, use `delete-client-vpn-endpoint-authorization-policy`. This stops evaluation for both new connections and existing sessions on the endpoint.
 
-```
+```bash
 aws ec2 delete-client-vpn-endpoint-authorization-policy \
   --client-vpn-endpoint-id cvpn-endpoint-EXAMPLE
 ```

@@ -120,7 +120,7 @@ Enable CORS by returning correct headers
 #### PUT schema
 <a name="clusters-clusterarn-channels-channelarn-request-body-put-example"></a>
 
-```
+```json
 {
   "icebergDestinationUpdate": {
     "dataFreshnessInSeconds": integer
@@ -137,7 +137,7 @@ Enable CORS by returning correct headers
 #### DescribeChannelResponse schema
 <a name="clusters-clusterarn-channels-channelarn-response-body-describechannelresponse-example"></a>
 
-```
+```json
 {
   "s3DestinationConfiguration": {
     "dataFreshnessInSeconds": integer,
@@ -238,7 +238,7 @@ Enable CORS by returning correct headers
 #### UpdateChannelResponse schema
 <a name="clusters-clusterarn-channels-channelarn-response-body-updatechannelresponse-example"></a>
 
-```
+```json
 {
   "clusterOperationArn": "string",
   "channelArn": "string"
@@ -248,7 +248,7 @@ Enable CORS by returning correct headers
 #### DeleteChannelResponse schema
 <a name="clusters-clusterarn-channels-channelarn-response-body-deletechannelresponse-example"></a>
 
-```
+```json
 {
   "clusterOperationArn": "string",
   "channelArn": "string"
@@ -258,7 +258,7 @@ Enable CORS by returning correct headers
 #### Error schema
 <a name="clusters-clusterarn-channels-channelarn-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

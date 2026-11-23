@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/set-trans-attributes
 
 The following example shows how to set `TransactionAttributes` alongside a [PlayAudio](play-audio.md) action and pass the attributes from an AWS Lambda function to a SIP media application.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions": [

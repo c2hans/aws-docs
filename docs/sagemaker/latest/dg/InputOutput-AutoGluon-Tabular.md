@@ -36,7 +36,7 @@ SageMaker AI AutoGluon-Tabular uses the `autogluon.tabular.TabularPredictor` mod
 **To use a model trained with SageMaker AI AutoGluon-Tabular with the AutoGluon framework**
 + Use the following Python code:
 
-  ```
+  ```python
   import tarfile
   from autogluon.tabular import TabularPredictor
 

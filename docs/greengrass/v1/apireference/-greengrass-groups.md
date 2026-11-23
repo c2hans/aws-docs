@@ -33,7 +33,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-get-cli"></a>
 
-```
+```bash
 aws greengrass list-groups \
   [--max-results <value>] \
   [--next-token <value>]  \
@@ -43,7 +43,7 @@ aws greengrass list-groups \
 
 cli-input-json format:
 
-```
+```json
 {
 "MaxResults": "integer",
 "NextToken": "string"
@@ -57,7 +57,7 @@ cli-input-json format:
 
  [ ListGroupsResponse](definitions-listgroupsresponse.md)
 
-```
+```json
 {
 "Groups": [
   {
@@ -125,7 +125,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "Name": "string",
 "InitialVersion": {
@@ -187,7 +187,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-post-cli"></a>
 
-```
+```bash
 aws greengrass create-group \
   --name <value> \
   [--initial-version <value>] \
@@ -199,7 +199,7 @@ aws greengrass create-group \
 
 cli-input-json format:
 
-```
+```json
 {
 "Name": "string",
 "InitialVersion": {
@@ -227,7 +227,7 @@ cli-input-json format:
 Success. The group was created.
  [ DefinitionInformation](definitions-definitioninformation.md)
 
-```
+```json
 {
 "Name": "string",
 "Id": "string",
@@ -267,7 +267,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

@@ -41,7 +41,7 @@ To create a state template, run the following command.
 
 Replace {{create-state-template}} with the name of the .json file that contains the state template configuration.
 
-```
+```bash
 aws iotfleetwise create-state-template \
     --cli-input-json file://{{create-state-template}}.json
 ```
@@ -50,7 +50,7 @@ aws iotfleetwise create-state-template \
 `stateTemplateProperties` should contain the fully qualified names of the signals.
 `dataExtraDimensions` and `metadataExtraDimensions` should contain the fully qualified names of the vehicle attributes. The dimensions specified replace any existing dimension values in the state template.
 
-```
+```json
 {
     "name": "{{state-template-name}}",
     "signalCatalogArn": "arn:aws:iotfleetwise:{{us-east-1}}:{{account}}:signal-catalog/{{catalog-name}}",

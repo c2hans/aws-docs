@@ -130,7 +130,7 @@ HTTP Status Code: 400
 
 The following example creates a location for an Amazon EFS file system.
 
-```
+```json
 {
     "Ec2Config": {
         "SubnetArn": "arn:aws:ec2:us-east-2:11122233344:subnet/subnet-1234567890abcdef1",
@@ -152,7 +152,7 @@ The following example creates a location for an Amazon EFS file system.
 
 The following example creates a location for an Amazon EFS file system with restricted access. In this kind of scenario, you might have to specify values for `AccessPointArn`, `FileSystemAccessRoleArn`, and `InTransitEncryption` in your request.
 
-```
+```json
 {
     "AccessPointArn": "arn:aws:elasticfilesystem:us-east-2:111222333444:access-point/fsap-1234567890abcdef0",
     "Ec2Config": {
@@ -178,7 +178,7 @@ The following example creates a location for an Amazon EFS file system with rest
 
 A response returns the location ARN of the Amazon EFS file system.
 
-```
+```json
 {
   "LocationArn": "arn:aws:datasync:us-east-2:111222333444:location/loc-12abcdef012345678"
 }

@@ -23,7 +23,7 @@ The `StartChatContact` API uses AWS Signature Version 4 signing. Call it from yo
 
   In the following command, replace `{{instance-id}}`, `{{contact-flow-id}}`, and `{{aws-region}}` with your own values:
 
-  ```
+  ```bash
   aws connect start-chat-contact \
       --instance-id "{{instance-id}}" \
       --contact-flow-id "{{contact-flow-id}}" \
@@ -34,7 +34,7 @@ The `StartChatContact` API uses AWS Signature Version 4 signing. Call it from yo
 
   The command returns the following response:
 
-  ```
+  ```json
   {
       "ContactId": "00000000-0000-0000-0000-000000000000",
       "ParticipantId": "00000000-0000-0000-0000-000000000000",

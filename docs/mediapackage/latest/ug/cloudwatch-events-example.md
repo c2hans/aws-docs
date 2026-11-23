@@ -31,7 +31,7 @@ For live content, a channel in MediaPackage exceeds the quota for the number of 
 
 **Example**
 
-```
+```json
 {
    "id": "7bf73129-1428-4cd3-a780-95db273d1602",
    "detail-type": "MediaPackage Input Notification",
@@ -56,7 +56,7 @@ For information about input redundancy and what causes inputs to switch, see [Li
 
 **Example**
 
-```
+```json
 {
    "id": "8f9b8e72-0b31-e883-f19c-aec84742f3ce",
    "detail-type": "MediaPackage Input Notification",
@@ -87,7 +87,7 @@ For video on demand (VOD) content, an asset in MediaPackage changes ingest statu
 
 **Example**
 
-```
+```json
 {
    "id": "8f9b8e72-0b31-e883-f19c-aec84742f3ce",
    "detail-type": "MediaPackage Input Notification",
@@ -113,7 +113,7 @@ For VOD content, an asset in MediaPackage is available for playback. There is a 
 
 **Example**
 
-```
+```json
 {
    "id": "81e896e4-d9e5-ec79-f82a-b4cf3246c567",
    "detail-type": "MediaPackage Input Notification",
@@ -164,7 +164,7 @@ You get key provider notification events when you're using content encryption on
 
 **Example Live key provider notification event**
 
-```
+```json
 {
    "id": "7bf73129-1428-4cd3-a780-98ds273d1602",
    "detail-type": "MediaPackage Key Provider Notification",
@@ -184,7 +184,7 @@ You get key provider notification events when you're using content encryption on
 
 **Example VOD key provider notification event**
 
-```
+```json
 {
    "id": "7bf73129-1428-4cd3-a780-98ds273d1602",
    "detail-type": "MediaPackage Key Provider Notification",
@@ -209,7 +209,7 @@ You get harvest job status events when you export a clip from a live stream to c
 
 **Example Successful harvest job event**
 
-```
+```json
 {
    "id": "8f9b8e72-0b31-e883-f19c-aec84742f3ce",
    "detail-type": "MediaPackage HarvestJob Notification",
@@ -241,7 +241,7 @@ You get harvest job status events when you export a clip from a live stream to c
 
 **Example Failed harvest job event**
 
-```
+```json
 {
    "id": "8f9b8e72-0b31-e883-f19c-aec84742f3ce",
    "detail-type": "MediaPackage HarvestJob Notification",

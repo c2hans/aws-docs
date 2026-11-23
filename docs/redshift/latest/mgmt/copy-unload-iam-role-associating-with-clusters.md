@@ -22,7 +22,7 @@ The following example shows an IAM policy that can be attached to a user that al
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

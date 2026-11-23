@@ -16,7 +16,7 @@ You can show step-by-step guides to customers in chat for self-service. A guide 
 
    The widget generates a script similar to the following:
 
-   ```
+   ```javascript
    <script type="text/javascript">
      (function(w, d, x, id){
        s=d.createElement('script');
@@ -34,7 +34,7 @@ You can show step-by-step guides to customers in chat for self-service. A guide 
 
    The last line lists the allowed message content types. To show guides in chat, add the interactive message types. For example:
 
-   ```
+   ```javascript
    amazon_connect('supportedMessagingContentTypes', ['text/plain', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response']);
    ```
 

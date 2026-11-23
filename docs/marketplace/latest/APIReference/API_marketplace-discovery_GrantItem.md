@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # GrantItem
 
-An entitlement granted to the buyer as part of a pricing term.
+An entitlement that you receive as part of a pricing term.
 
 ## Contents
 <a name="API_marketplace-discovery_GrantItem_Contents"></a>
@@ -41,12 +41,12 @@ Pattern: `(.)+`
 Required: No
 
  ** dimensionLabels **   <a name="AWSMarketplaceService-Type-marketplace-discovery_GrantItem-dimensionLabels"></a>
-Labels used to categorize this entitlement, such as by region.
+Labels that categorize this entitlement, such as by region.
 Type: Array of [DimensionLabel](API_marketplace-discovery_DimensionLabel.md) objects
 Required: No
 
  ** maxQuantity **   <a name="AWSMarketplaceService-Type-marketplace-discovery_GrantItem-maxQuantity"></a>
-The maximum quantity of the entitlement that can be granted.
+The maximum quantity of the entitlement that you can receive.
 Type: Integer
 Required: No
 

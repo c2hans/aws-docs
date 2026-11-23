@@ -41,7 +41,7 @@ Once your cluster has entered extended support, you cannot disable it. To change
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws eks describe-cluster \
    --name <cluster-name> \
    --query "cluster.upgradePolicy.supportType"

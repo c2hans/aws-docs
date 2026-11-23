@@ -28,7 +28,7 @@ At the cluster creation time, the head node waits for all the static nodes to be
 
 The following configuration file snippet shows the parameters required to enable in the AWS ParallelCluster configuration file.
 
-```
+```JSON
 SlurmQueues:
  - Name: string
    CapacityType: CAPACITY_BLOCK

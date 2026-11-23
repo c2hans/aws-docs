@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ecscreden
 
  `Aws\Credentials\CredentialProvider::ecsCredentials` attempts to load credentials by a `GET` request, whose URI is specified by the environment variable `AWS_CONTAINER_CREDENTIALS_RELATIVE_URI` in the container.
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 use Aws\S3\S3Client;
 

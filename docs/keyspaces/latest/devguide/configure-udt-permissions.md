@@ -17,7 +17,7 @@ To create a UDT in a single-Region keyspace, the principal needs `Create` permis
 
 The following IAM policy is an example of this.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -36,7 +36,7 @@ To create a UDT in a multi-Region keyspace, in addition to `Create` permissions 
 
 The following IAM policy is an example of this.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -58,7 +58,7 @@ To view or list UDTs in a single-Region keyspace, the principal needs read permi
 
 The following IAM policy is an example of this.
 
-```
+```JSON
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -77,7 +77,7 @@ To view or list UDTs for a multi-Region keyspace, the principal needs permission
 
 The following IAM policy is an example of this.
 
-```
+```JSON
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -99,7 +99,7 @@ To delete a UDT from a single-Region keyspace, the principal needs permissions f
 
 The following IAM policy is an example of this.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -118,7 +118,7 @@ To delete a UDT from a multi-Region keyspace, the principal needs permissions fo
 
 The following IAM policy is an example of this.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

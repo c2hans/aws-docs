@@ -79,7 +79,7 @@ To browse the metadata tree, you follow a repeating pattern: import metadata at 
 
 Start by calling [start-metadata-model-import](https://docs.aws.amazon.com/cli/latest/reference/dms/start-metadata-model-import.html) with a selection rule that identifies the top-level metadata model. Include the `server-name` and a top-level `category-name` (either `Databases` or `Schemas`, depending on the database engine) in the `object-locator`. For more information about the selection rules structure, see [Selection rules in DMS Schema Conversion](sc-selection-rules.md).
 
-```
+```bash
 aws dms start-metadata-model-import \
     --migration-project-identifier "{{my-migration-project}}" \
     --origin {{SOURCE}} \
@@ -90,7 +90,7 @@ aws dms start-metadata-model-import \
 
 Import requests are asynchronous. Use [describe-metadata-model-imports](https://docs.aws.amazon.com/cli/latest/reference/dms/describe-metadata-model-imports.html) to check the status before browsing. Use the `request-id` filter with the `RequestIdentifier` value returned by `start-metadata-model-import` to find a specific import:
 
-```
+```bash
 aws dms describe-metadata-model-imports \
     --migration-project-identifier "{{my-migration-project}}" \
     --filters Name=request-id,Values={{request-identifier}}
@@ -98,7 +98,7 @@ aws dms describe-metadata-model-imports \
 
 After the import completes, call [describe-metadata-model-children](https://docs.aws.amazon.com/cli/latest/reference/dms/describe-metadata-model-children.html) to retrieve the children at that level:
 
-```
+```bash
 aws dms describe-metadata-model-children \
     --migration-project-identifier "{{my-migration-project}}" \
     --origin {{SOURCE}} \
@@ -109,7 +109,7 @@ aws dms describe-metadata-model-children \
 
 Each child in the response includes a `SelectionRules` field. Pass these selection rules to the next import and describe calls to drill deeper:
 
-```
+```json
 {
     "MetadataModelChildren": [
         {
@@ -122,7 +122,7 @@ Each child in the response includes a `SelectionRules` field. Pass these selecti
 
 To drill into the next level, import at that level using the selection rules returned from the previous `describe-metadata-model-children` call, and then describe its children:
 
-```
+```bash
 aws dms start-metadata-model-import \
     --migration-project-identifier "{{my-migration-project}}" \
     --origin {{SOURCE}} \
@@ -132,7 +132,7 @@ aws dms start-metadata-model-import \
 
 Before describing children, ensure the import has completed by checking its status with `describe-metadata-model-imports`. Then call `describe-metadata-model-children`:
 
-```
+```bash
 aws dms describe-metadata-model-children \
     --migration-project-identifier "{{my-migration-project}}" \
     --origin {{SOURCE}} \
@@ -141,7 +141,7 @@ aws dms describe-metadata-model-children \
 
 The response returns the children at that level, each with their own selection rules. Pass these selection rules to the next import and describe calls to continue drilling deeper into the tree.
 
-```
+```json
 {
     "MetadataModelChildren": [
         {
@@ -158,7 +158,7 @@ Use `--refresh` to reload a specific metadata model from the database. This also
 
 To load an entire subtree (for example, all objects in a schema, a database, or a specific category such as Tables or Procedures), omit the `--refresh` flag and change `rule-action` to `include` in the selection rules:
 
-```
+```bash
 aws dms start-metadata-model-import \
     --migration-project-identifier "{{my-migration-project}}" \
     --origin {{SOURCE}} \
@@ -173,7 +173,7 @@ Loading a full subtree can take minutes or hours for large schemas and places lo
 
 To retrieve the SQL definition of a metadata model, use [describe-metadata-model](https://docs.aws.amazon.com/cli/latest/reference/dms/describe-metadata-model.html). Pass the selection rules that identify the specific metadata model from a previous `describe-metadata-model-children` response:
 
-```
+```bash
 aws dms describe-metadata-model \
     --migration-project-identifier "{{my-migration-project}}" \
     --origin {{SOURCE}} \
@@ -182,7 +182,7 @@ aws dms describe-metadata-model \
 
 The response includes the metadata model name, type, and SQL definition:
 
-```
+```json
 {
     "MetadataModelName": "employees",
     "MetadataModelType": "table",
@@ -201,7 +201,7 @@ After you convert source metadata models, the converted definitions are availabl
 
 When you describe a source metadata model after conversion, the response includes a `TargetMetadataModels` field with the target selection rules:
 
-```
+```json
 {
     "MetadataModelName": "employees",
     "MetadataModelType": "table",
@@ -217,7 +217,7 @@ When you describe a source metadata model after conversion, the response include
 
 Pass the selection rules from `TargetMetadataModels` to `describe-metadata-model` with `--origin TARGET`:
 
-```
+```bash
 aws dms describe-metadata-model \
     --migration-project-identifier "{{my-migration-project}}" \
     --origin TARGET \
@@ -226,7 +226,7 @@ aws dms describe-metadata-model \
 
 The response contains the converted SQL definition in the target engine syntax:
 
-```
+```json
 {
     "MetadataModelName": "employees",
     "MetadataModelType": "table",
@@ -238,7 +238,7 @@ The response contains the converted SQL definition in the target engine syntax:
 
 You can use [get-target-selection-rules](https://docs.aws.amazon.com/cli/latest/reference/dms/get-target-selection-rules.html) to convert source selection rules into their target counterparts directly, without first calling `describe-metadata-model` on the source:
 
-```
+```bash
 aws dms get-target-selection-rules \
     --migration-project-identifier "{{my-migration-project}}" \
     --selection-rules '{{source-selection-rules}}'
@@ -268,7 +268,7 @@ Creating statement metadata models is not available in the AWS Management Consol
 
 To create a statement metadata model, use [start-metadata-model-creation](https://docs.aws.amazon.com/cli/latest/reference/dms/start-metadata-model-creation.html). The selection rules must specify a schema that exists in your source database. The created metadata model appears under the `Statements` category within that schema.
 
-```
+```bash
 aws dms start-metadata-model-creation \
     --migration-project-identifier "{{my-migration-project}}" \
     --metadata-model-name "{{GetAllEmployees}}" \
@@ -281,7 +281,7 @@ aws dms start-metadata-model-creation \
 
 After creation, you can find the metadata model in the tree under the `Statements` category and describe it:
 
-```
+```json
 {
     "MetadataModelName": "GetAllEmployees",
     "MetadataModelType": "statement",

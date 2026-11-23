@@ -26,7 +26,7 @@ You can disable event orchestration for an event anytime in the Amazon Fraud Det
 
 The following example shows a sample request for updating an event type `sample_registration` to disable event orchestration using the `PutEventType` API.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 fraud_detector.put_event_type(

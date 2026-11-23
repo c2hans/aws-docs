@@ -82,13 +82,13 @@ If you are unsure which operating system your instance is running, run `cat /etc
 
 Amazon Linux 2023:
 
-```
+```bash
 aws s3 --region us-east-2 cp s3://groundstation-wb-digif-software-us-east-2/aws-groundstation-agent/latest/amazon_linux_2023_x86_64/aws-groundstation-agent.rpm /tmp
 ```
 
 Amazon Linux 2:
 
-```
+```bash
 aws s3 --region us-east-2 cp s3://groundstation-wb-digif-software-us-east-2/aws-groundstation-agent/latest/amazon_linux_2_x86_64/aws-groundstation-agent.rpm /tmp
 ```
 
@@ -98,13 +98,13 @@ aws s3 --region us-east-2 cp s3://groundstation-wb-digif-software-us-east-2/aws-
 
 Amazon Linux 2023:
 
-```
+```bash
 aws s3 --region us-east-2 cp s3://groundstation-wb-digif-software-us-east-2/aws-groundstation-agent/1.0.8022.0/amazon_linux_2023_x86_64/aws-groundstation-agent.rpm /tmp
 ```
 
 Amazon Linux 2:
 
-```
+```bash
 aws s3 --region us-east-2 cp s3://groundstation-wb-digif-software-us-east-2/aws-groundstation-agent/1.0.8022.0/amazon_linux_2_x86_64/aws-groundstation-agent.rpm /tmp
 ```
 
@@ -114,7 +114,7 @@ If you want to confirm the RPM you downloaded was vended by AWS Ground Station, 
 #### Install agent
 <a name="install-agent"></a>
 
-```
+```bash
 sudo yum install ${MY_RPM_FILE_PATH}
 
 Example: Assumes agent is in the "/tmp" directory

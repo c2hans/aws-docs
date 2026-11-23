@@ -143,7 +143,7 @@ You can configure adaptive sampling features in the ADOT SDK by providing a YAML
 
 This is required for *anomaly span capture* and optional for customizing *sampling boost* conditions. The following is an example of the configuration:
 
-```
+```yaml
 version: 1.0
 anomalyConditions:
   - errorCodeRegex: "^5\\d\\d$"

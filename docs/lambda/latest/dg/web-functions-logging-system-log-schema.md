@@ -35,7 +35,7 @@ The `record` object has the following fields:
 + `runtimeVersion` (`String`) – The runtime version that the environment runs.
 + `runtimeVersionArn` (`String`) – The Amazon Resource Name (ARN) of the runtime version.
 
-```
+```json
 {
   "timestamp": "2026-09-25T11:12:30.893Z",
   "level": "INFO",
@@ -67,7 +67,7 @@ The `record` object has the following fields:
 
 Success example:
 
-```
+```json
 {
   "timestamp": "2026-09-25T11:12:31.143Z",
   "level": "INFO",
@@ -87,7 +87,7 @@ Success example:
 
 Failure example, where the handler module failed to load:
 
-```
+```json
 {
   "timestamp": "2026-09-25T11:16:04.164Z",
   "level": "WARN",
@@ -118,7 +118,7 @@ The `record` object has the following fields:
 + `revisionId` (`String`) – The revision that the environment runs.
 + `instanceId` (`String`) – The identifier of the execution environment.
 
-```
+```json
 {
   "timestamp": "2026-09-25T11:12:31.144Z",
   "level": "INFO",
@@ -148,7 +148,7 @@ The `record` object has the following fields:
 
 Success example:
 
-```
+```json
 {
   "timestamp": "2026-09-25T11:12:31.154Z",
   "level": "DEBUG",
@@ -168,7 +168,7 @@ Success example:
 
 Timeout example:
 
-```
+```json
 {
   "timestamp": "2026-09-25T11:12:34.926Z",
   "level": "DEBUG",
@@ -199,7 +199,7 @@ The `record` object has the following fields:
 + `instanceId` (`String`) – The identifier of the execution environment.
 + `metrics` ([`InvokeSummaryMetrics`](#web-functions-logging-system-log-schema-invokesummarymetrics)) – Metrics for the window.
 
-```
+```json
 {
   "timestamp": "2026-09-25T11:13:31.143Z",
   "level": "INFO",
@@ -235,7 +235,7 @@ A request timeout does not fail the serving period. The `status` stays `success`
 
 Success example:
 
-```
+```json
 {
   "timestamp": "2026-09-25T11:19:11.858Z",
   "level": "INFO",
@@ -257,7 +257,7 @@ Success example:
 
 Failure example:
 
-```
+```json
 {
   "timestamp": "2026-09-25T11:19:11.858Z",
   "level": "WARN",
@@ -290,7 +290,7 @@ The `record` object has the following fields:
 + `revisionId` (`String`) – The revision that the environment runs.
 + `instanceId` (`String`) – The identifier of the execution environment.
 
-```
+```json
 {
   "timestamp": "2026-09-25T11:19:11.858Z",
   "level": "INFO",
@@ -320,7 +320,7 @@ The `record` object has the following fields:
 
 Success example:
 
-```
+```json
 {
   "timestamp": "2026-09-25T11:19:11.879Z",
   "level": "INFO",
@@ -339,7 +339,7 @@ Success example:
 
 Failure example:
 
-```
+```json
 {
   "timestamp": "2026-09-25T11:19:12.879Z",
   "level": "WARN",
@@ -371,7 +371,7 @@ The `record` object has the following fields:
 
 Both counts accumulate across consecutive drops and reset to 0 after a record is delivered.
 
-```
+```json
 {
   "timestamp": "2026-09-25T11:20:00.000Z",
   "level": "WARN",

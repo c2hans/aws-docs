@@ -13,7 +13,7 @@ To explicitly set a Region, we recommend that you use the constants defined in t
 
 To create a client with an enumerated Region from the class, use the client builder's `region` method.
 
-```
+```java
 Ec2Client ec2 = Ec2Client.builder()
           .region(Region.US_WEST_2)
           .build();
@@ -21,7 +21,7 @@ Ec2Client ec2 = Ec2Client.builder()
 
 If the Region you want to use isn’t one of the enumerations in the `Region` class, you can create a new Region by using the static `of` method. This method allows you access to new Regions without upgrading the SDK.
 
-```
+```java
 Region newRegion = Region.of("us-east-42");
 Ec2Client ec2 = Ec2Client.builder()
           .region(newRegion)
@@ -38,13 +38,13 @@ When your code runs on Amazon EC2 or AWS Lambda, you might want to configure cli
 
 To use the default AWS Region provider chain to determine the Region from the environment, use the client builder’s `create` method.
 
-```
+```java
 Ec2Client ec2 = Ec2Client.create();
 ```
 
 You can also configure the client in other ways, but not set the Region. The SDK picks up the AWS Region by using the default region provider chain:
 
-```
+```java
 Ec2Client ec2Client = Ec2Client.builder()
         .credentialsProvider(ProfileCredentialsProvider.builder()
                 .profileName("my-profile")
@@ -83,13 +83,13 @@ When developing AWS applications, a common approach is to use the *shared config
 
 To see if a particular AWS service is available in a Region, use the static `serviceMetadata` method on a service client:
 
-```
+```java
 DynamoDbClient.serviceMetadata().regions().forEach(System.out::println);
 ```
 
 The previous snippet prints out a long list of AWS Region codes that have the DynamoDB service:
 
-```
+```af-south-1 ap-east-1 ap-northeast-1 ap-northeast-2 ap-northeast-3 ap-south-1 ap-south-2 ap-southeast-1 ap-southeast-2 ap-southeast-3 ap-southeast-4 ap-southeast-5
 af-south-1
 ap-east-1
 ap-northeast-1
@@ -105,7 +105,7 @@ You can use a code to look up the [Region class enumeration](https://sdk.amazona
 
 For example, if you want to work with DynamoDB in the Region with the code `ap-northeast-2`, create your DynamoDB client with at least the following configuration:
 
-```
+```java
 DynamoDbClient ddb = DynamoDbClient.builder()
     .region(Region.AP_NORTHEAST_2)
     .build();
@@ -118,7 +118,7 @@ In certain situations—such as to test preview features of a service before the
 
 For example, to configure an Amazon EC2 client to use the Europe (Ireland) Region with a specific endpoint, use the following code.
 
-```
+```java
 Ec2Client ec2 = Ec2Client.builder()
                .region(Region.EU_WEST_1)
                .endpointOverride(URI.create("https://ec2.eu-west-1.amazonaws.com"))

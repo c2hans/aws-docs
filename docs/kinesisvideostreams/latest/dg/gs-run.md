@@ -16,7 +16,7 @@ Do the following:
 
    Paste the following:
 
-   ```
+   ```bash
    [Unit]
    Description=AWS Kinesis Video Streams edge agent
    After=network.target
@@ -56,7 +56,7 @@ Add required the environment variables at the `...` location, as specified in [B
 
    The following is an example of the output that you will see.
 
-   ```
+   ```bash
    aws.kinesisvideo.edge-runtime-agent.service - AWS Kinesis Video Streams edge agent
         Loaded: loaded (/etc/systemd/system/aws.kinesisvideo.edge-runtime-agent.service; disabled; vendor preset: enabled)
         Active: active (running) since Thu 2023-06-08 19:15:02 UTC; 6s ago

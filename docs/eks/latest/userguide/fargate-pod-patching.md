@@ -26,7 +26,7 @@ When the eviction for a Pod fails, Amazon EKS sends an event to your account wit
 
 The following is a sample event received when the Pod eviction fails. It contains details about the cluster, Pod name, Pod namespace, Fargate profile, and the scheduled termination time.
 
-```
+```json
 {
     "version": "0",
     "id": "12345678-90ab-cdef-0123-4567890abcde",
@@ -51,13 +51,13 @@ The following is a sample event received when the Pod eviction fails. It contain
 
 In addition, having multiple PDBs associated with a Pod can cause an eviction failure event. This event returns the following error message.
 
-```
+```json
 "evictErrorMessage": "This pod has multiple PodDisruptionBudget, which the eviction subresource does not support",
 ```
 
 You can create a desired action based on this event. For example, you can adjust your Pod disruption budget (PDB) to control how the Pods are evicted. More specifically, suppose that you start with a PDB that specifies the target percentage of Pods that are available. Before your Pods are force terminated during an upgrade, you can adjust the PDB to a different percentage of Pods. To receive this event, you must create an Amazon EventBridge rule in the AWS account and AWS Region that the cluster belongs to. The rule must use the following **Custom pattern**. For more information, see [Creating Amazon EventBridge rules that react to events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule.html) in the *Amazon EventBridge User Guide*.
 
-```
+```json
 {
   "source": ["aws.eks"],
   "detail-type": ["EKS Fargate Pod Scheduled Termination"]

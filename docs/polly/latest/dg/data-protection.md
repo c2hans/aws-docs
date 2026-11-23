@@ -14,4 +14,6 @@ For data protection purposes, we recommend that you protect AWS account credenti
 
 We strongly recommend that you never put sensitive identifying information, such as your customers' account numbers, into tags or free-form fields such as a **Name** field. This includes when you work with Amazon Polly or other AWS services using the console, API, AWS CLI, or AWS SDKs. Any data that you enter into Amazon Polly or other services might get picked up for inclusion in diagnostic logs. When you provide a URL to an external server, don't include credentials information in the URL to validate your request to that server.
 
+If you create custom voices, the recordings that you provide contain the voice of a person, which can be personal data. Use only recordings that you have the right to use. For what Amazon Polly stores and how it protects that data, see [Data that Amazon Polly stores](custom-voices.md#custom-voices-data) and [Encryption at rest](encryption-at-rest.md).
+
 For more information about data protection, see the [AWS Shared Responsibility Model and GDPR](https://aws.amazon.com/blogs/security/the-aws-shared-responsibility-model-and-gdpr/) blog post on the *AWS Security Blog*.

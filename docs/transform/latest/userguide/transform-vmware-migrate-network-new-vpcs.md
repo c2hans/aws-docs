@@ -46,7 +46,7 @@ If your migration plan includes observed network connections, choose **Use my mi
 
 To work from a discovery or configuration export instead, choose **Upload a network file**.
 
-AWS Transform generates target network infrastructure from a wide variety of source network configuration files. Upload one or more configuration files from your source environment, and AWS Transform uses them to generate target networks, including Amazon VPCs, subnets, and security groups. AWS Transform does not generate firewall resources. However, it can use configuration from firewalls and load balancers as input to generate target networks. AWS Transform can also migrate F5 BIG-IP load balancers. See [Migrate source load balancers](transform-vmware-migrate-network-load-balancers.md). The maximum supported source network file size is 70 MB.
+AWS Transform generates target network infrastructure from a wide variety of source network configuration files. Upload one or more configuration files from your source environment, and AWS Transform uses them to generate target networks, including Amazon VPCs, subnets, and security groups. AWS Transform does not generate firewall resources. However, it can use configuration from firewalls and load balancers as input to generate target networks. AWS Transform can also migrate F5 BIG-IP LTM load balancers. See [Migrate source load balancers](transform-vmware-migrate-network-load-balancers.md). The maximum supported source network file size is 70 MB.
 
 AWS Transform accepts configuration files from the following source types:
 + **Software Defined Networks (SDN):** Import/Export for VMware NSX network virtualization or Cisco ACI config for Cisco Application Centric Infrastructure.

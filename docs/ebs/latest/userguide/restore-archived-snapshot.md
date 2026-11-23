@@ -14,7 +14,7 @@ If you restore a snapshot temporarily, the snapshot is copied from the archive t
 
 If you are restoring snapshots that are associated with a disabled AMI, and you intend to use that AMI, you must first **permanently restore** all of the associated snapshots and then [ re-enable a disabled AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/disable-an-ami.html#re-enable-a-disabled-ami) before you can use it. You can't enable an AMI if the associated snapshots are temporarily restored. You can use the following command to find all of the snapshots associated with an AMI.
 
-```
+```bash
 aws ec2 describe-images --image-id {{ami_id}} \
   --query Images[*].BlockDeviceMappings[*].Ebs[].SnapshotId[]
 ```
@@ -42,7 +42,7 @@ Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://con
 **To permanently restore an archived snapshot**
 Use the [ restore-snapshot-tier](https://docs.aws.amazon.com/cli/latest/reference/ec2/restore-snapshot-tier.html) AWS CLI command with the `--permanent-restore` option. For `--snapshot-id`, specify the ID of the snapshot to restore.
 
-```
+```bash
 aws ec2 restore-snapshot-tier \
     --snapshot-id {{snap-0abcdef1234567890}} \
     --permanent-restore
@@ -50,7 +50,7 @@ aws ec2 restore-snapshot-tier \
 
 The following is example output.
 
-```
+```json
 {
     "SnapshotId": "snap-0abcdef1234567890",
     "IsPermanentRestore": true
@@ -62,7 +62,7 @@ Use the [ restore-snapshot-tier](https://docs.aws.amazon.com/cli/latest/referenc
 
 The following example temporarily restores the specified snapshot for a restore period of 5 days.
 
-```
+```bash
 aws ec2 restore-snapshot-tier \
     --snapshot-id {{snap-0abcdef1234567890}} \
     --temporary-restore-days 5
@@ -70,7 +70,7 @@ aws ec2 restore-snapshot-tier \
 
 The following is example output.
 
-```
+```json
 {
     "SnapshotId": "snap-0abcdef1234567890",
     "RestoreDuration": 5,
@@ -84,7 +84,7 @@ The following is example output.
 **To permanently restore an archived snapshot**
 Use the [Restore-EC2SnapshotTier](https://docs.aws.amazon.com/powershell/latest/reference/items/Restore-EC2SnapshotTier.html) cmdlet.
 
-```
+```powershell
 Restore-EC2SnapshotTier `
     -SnapshotId {{snap-0abcdef1234567890}} `
     -PermanentRestore $true
@@ -93,7 +93,7 @@ Restore-EC2SnapshotTier `
 **To temporarily restore an archived snapshot**
 Use the [Restore-EC2SnapshotTier](https://docs.aws.amazon.com/powershell/latest/reference/items/Restore-EC2SnapshotTier.html) cmdlet.
 
-```
+```powershell
 Restore-EC2SnapshotTier `
     -SnapshotId {{snap-0abcdef1234567890}} `
     -TemporaryRestoreDays 5

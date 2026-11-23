@@ -28,7 +28,7 @@ The following code example shows how to use `Get-PLSAttributeValue`.
 **Tools for PowerShell V4**
 **Example 1: Returns the values for the attribute 'volumeType' for Amazon EC2 in the us-east-1 region.**
 
-```
+```powershell
 Get-PLSAttributeValue -ServiceCode AmazonEC2 -AttributeName "volumeType" -region us-east-1
 ```
 **Output:**
@@ -52,7 +52,7 @@ The following code example shows how to use `Get-PLSProduct`.
 **Tools for PowerShell V4**
 **Example 1: Returns details of all products for Amazon EC2.**
 
-```
+```powershell
 Get-PLSProduct -ServiceCode AmazonEC2 -Region us-east-1
 ```
 **Output:**
@@ -62,7 +62,7 @@ Get-PLSProduct -ServiceCode AmazonEC2 -Region us-east-1
 ```
 **Example 2: Returns data for Amazon EC2 in the us-east-1 region filtered by volume types of 'General Purpose' that are SSD-backed.**
 
-```
+```powershell
 Get-PLSProduct -ServiceCode AmazonEC2 -Filter @{Type="TERM_MATCH";Field="volumeType";Value="General Purpose"},@{Type="TERM_MATCH";Field="storageMedia";Value="SSD-backed"} -Region us-east-1
 ```
 **Output:**
@@ -80,7 +80,7 @@ The following code example shows how to use `Get-PLSService`.
 **Tools for PowerShell V4**
 **Example 1: Returns the metadata for all available service codes in the us-east-1 region.**
 
-```
+```powershell
 Get-PLSService -Region us-east-1
 ```
 **Output:**
@@ -98,7 +98,7 @@ AttributeNames                                                  ServiceCode
 ```
 **Example 2: Returns the metadata for the Amazon EC2 service in the us-east-1 region.**
 
-```
+```powershell
 Get-PLSService -ServiceCode AmazonEC2 -Region us-east-1
 ```
 **Output:**

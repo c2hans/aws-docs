@@ -28,7 +28,7 @@ When you are creating an App in the Mobile Analytics Console you will need to sp
 
 To access Mobile Analytics from Unity you will need the following using statements:
 
-```
+```csharp
 using Amazon.MobileAnalytics.MobileAnalyticsManager;
 using Amazon.CognitoIdentity;
 ```
@@ -43,7 +43,7 @@ Instantiate a MobileAnalyticsManager instance with the following information:
 
 Use the MobileAnalyticsClientContextConfig to initialize an ** `MobileAnalyticsManager` ** instance as shown in the following code snippet:
 
-```
+```csharp
 // Initialize the MobileAnalyticsManager
 void Start()
 {
@@ -66,7 +66,7 @@ The `appId` is used to group your data in the Mobile Analytics console. To find 
 
 The SDK for Unity provides the `MonetizationEvent` class, which enables you generate monetization events to track purchases made within mobile applications. The following code snippet shows how to create a monetization event:
 
-```
+```csharp
 // Create the monetization event object
 MonetizationEvent monetizationEvent = new MonetizationEvent();
 
@@ -88,7 +88,7 @@ analyticsManager.RecordEvent(monetizationEvent);
 
 Mobile Analytics allows you to define custom events. Custom events are defined entirely by you; they help you track user actions specific to your app or game. For more information about Custom events see [Custom-Events](https://aws.amazon.com/mobileanalytics/faqs/#custom-event-details). For this example, let’s say your app is a game, and you want to record an event when a user completes a level. Create a “LevelComplete” event by creating a new `AmazonMobileAnalyticsEvent` instance:
 
-```
+```csharp
 CustomEvent customEvent = new CustomEvent("LevelComplete");
 
 // Add attributes
@@ -109,7 +109,7 @@ analyticsManager.RecordEvent(customEvent);
 
 When the application loses focus you can pause the session. In `OnApplicationFocus` check to see if the app is being paused. If so call `PauseSession` otherwise call `ResumeSession` as shown in the following code snippet:
 
-```
+```csharp
 void OnApplicationFocus(bool focus)
 {
     if(focus)

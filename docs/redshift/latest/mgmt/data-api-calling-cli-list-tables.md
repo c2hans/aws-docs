@@ -20,7 +20,7 @@ aws redshift-data list-tables
 
 The following is an example of the response.
 
-```
+```json
 {
     "Tables": [
         {
@@ -49,7 +49,7 @@ aws redshift-data list-tables
 
 The following is an example of the response.
 
-```
+```json
 {
     "Tables": [
         {

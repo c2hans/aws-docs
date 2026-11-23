@@ -23,7 +23,7 @@ The following steps require eksctl version `0.215.0` or later. To check your ver
 
 Create a trust policy file:
 
-```
+```bash
 cat > argocd-trust-policy.json << 'EOF'
 {
   "Version": "2012-10-17",
@@ -45,7 +45,7 @@ EOF
 
 Create the IAM role:
 
-```
+```bash
 aws iam create-role \
   --role-name ArgoCDCapabilityRole \
   --assume-role-policy-document file://argocd-trust-policy.json
@@ -59,7 +59,7 @@ For this basic setup, no additional IAM policies are needed. If you plan to use 
 
 Get your Identity Center instance ARN and user ID for RBAC configuration:
 
-```
+```bash
 # Get your Identity Center instance ARN
 aws sso-admin list-instances --query 'Instances[0].InstanceArn' --output text
 
@@ -81,7 +81,7 @@ By default, the Argo CD UI and API endpoint are publicly accessible over the int
 
 Create an interface VPC endpoint for the EKS Capabilities service in your VPC. Replace {{vpc-id}}, {{subnet-id-1 subnet-id-2}}, {{sg-id}}, and {{region-code}} with your own values:
 
-```
+```bash
 aws ec2 create-vpc-endpoint \
   --vpc-endpoint-type Interface \
   --service-name com.amazonaws.{{region-code}}.eks-capabilities \
@@ -99,7 +99,7 @@ Note the VPC endpoint ID returned by this command—you’ll need it when creati
 ### Verify the VPC endpoint is available
 <a name="_verify_the_vpc_endpoint_is_available"></a>
 
-```
+```bash
 aws ec2 describe-vpc-endpoints \
   --vpc-endpoint-ids {{vpce-xxxxxxxx}} \
   --query 'VpcEndpoints[0].State' \
@@ -114,7 +114,7 @@ Wait until the state shows `available` before proceeding.
 
 Create a file named `argocd-capability.yaml` with the following content. Replace the placeholder values with your cluster’s name, cluster’s region, IAM role ARN, Identity Center instance ARN, Identity Center region, and user ID. The example sets the primary Argo CD namespace to `argocd`. For information about the primary namespace and additional resource namespaces, see [Configure namespaces for Applications and ApplicationSets](argocd-configure-settings.md#argocd-configure-resource-namespaces).
 
-```
+```yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
@@ -145,7 +145,7 @@ You can add multiple users or groups to the RBAC mappings. For groups, use `type
 
 If you configured a VPC endpoint for private access, add the `networkConfiguration` section to the capability definition. Replace {{vpce-xxxxxxxx}} with your VPC endpoint ID:
 
-```
+```yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
@@ -182,7 +182,7 @@ When private endpoint is enabled, the Argo CD UI and API are only accessible thr
 
 Apply the configuration file:
 
-```
+```bash
 eksctl create capability -f argocd-capability.yaml
 ```
 
@@ -193,7 +193,7 @@ The command returns immediately, but the capability takes some time to become ac
 
 Check the capability status. Replace {{region-code}} with the AWS Region that your cluster is in and replace {{my-cluster}} with the name of your cluster.
 
-```
+```bash
 eksctl get capability \
   --region {{region-code}} \
   --cluster {{my-cluster}} \
@@ -207,7 +207,7 @@ The capability is ready when the status shows `ACTIVE`.
 
 After the capability is active, verify that Argo CD custom resources are available in your cluster:
 
-```
+```bash
 kubectl api-resources | grep argoproj.io
 ```
 

@@ -28,7 +28,7 @@ Uniquely identifies the workflow. This section can include the following attribu
 
 **Example**
 
-```
+```yaml
 ---
 name: sample-test-image
 description: Workflow for a sample image, with extra configuration options exposed through workflow parameters.
@@ -53,7 +53,7 @@ You can define up to 25 parameters in a workflow document. Each parameter value 
 
 Specify the parameter in the workflow document.
 
-```
+```yaml
 parameters:
   - name: waitForActionAtEnd
     type: boolean
@@ -63,7 +63,7 @@ parameters:
 
 Use the parameter value in the workflow document.
 
-```
+```yaml
 $.parameters.waitForActionAtEnd
 ```
 
@@ -74,7 +74,7 @@ Specifies up to 15 step actions for the workflow. Steps run in the order that th
 
 Each step can refer to the output of any prior step actions. This is known as *chaining, or referencing*. To refer to output from a prior step action, you can use a JSONPath selector. For example:
 
-```
+```yaml
 $.stepOutputs.{{step-name}}.{{output-name}}
 ```
 
@@ -105,7 +105,7 @@ Each step can include the following attributes.
 
 The following example uses the `waitForActionAtEnd` parameter, which the workflow document must declare in its `parameters` section.
 
-```
+```yaml
 steps:
   - name: LaunchTestInstance
     action: LaunchInstance
@@ -154,7 +154,7 @@ The `retry` attribute for a workflow step is separate from the `maxAttempts` fie
 
 **Example**
 
-```
+```yaml
 steps:
   - name: LaunchBuildInstance
     action: LaunchInstance
@@ -187,7 +187,7 @@ Each output that you define includes the following attributes.
 
 Create an output image ID for the workflow document with step output from the `createProdImage` step.
 
-```
+```yaml
 outputs:
   - name: 'outputImageId'
     value: '$.stepOutputs.createProdImage.imageId'
@@ -195,6 +195,6 @@ outputs:
 
 Refer to the workflow output in the next workflow.
 
-```
+```yaml
 $.workflowOutputs.outputImageId
 ```

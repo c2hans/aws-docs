@@ -35,13 +35,13 @@ An alternative method to install dashboards is the [cid-cmd](https://github.com/
 
 1. In your command-line interface run the following command to download and install the CID CLI tool:
 
-   ```
+   ```bash
    pip3 install --upgrade cid-cmd
    ```
 
 1. In your command-line interface run the following command to deploy the dashboard:
 
-   ```
+   ```bash
    cid-cmd deploy --dashboard-id scad-containers-cost-allocation
    ```
 
@@ -51,13 +51,13 @@ You can deploy the SCAD Containers Cost Allocation Dashboard using the [CID Terr
 
 1. In your [user-config.tf](https://github.com/aws-solutions-library-samples/cloud-intelligence-dashboards-framework/blob/main/terraform/cicd-deployment/user-config.tf), find the `dashboards` block and set `containers` to `"yes"`:
 
-   ```
+   ```hcl
      containers = "yes"  # SCAD Containers Cost Allocation Dashboard
    ```
 
 1. Ensure the following module block is present in your `dashboards.tf`:
 
-   ```
+   ```hcl
    module "containers_dashboard" {
      source = "./modules/cloudformation_stack"
      providers = {
@@ -72,7 +72,7 @@ This block is already included if you are using the full module files from the r
 
 1. Run the Terraform workflow:
 
-   ```
+   ```bash
    terraform init
    terraform plan
    terraform apply
@@ -90,7 +90,7 @@ Please note that DataExport can take up to 24-48 hours to deliver the first repo
 
 Please note that dashboards are not updated with update of CloudFormation Stack. When a new version of the dashboard template is released, you can update your dashboard by running the following command in your command-line interface:
 
-```
+```bash
 cid-cmd update --dashboard-id scad-containers-cost-allocation
 ```
 

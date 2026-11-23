@@ -26,15 +26,15 @@ Timestream for LiveAnalytics supports the following operations on `timestamps`, 
 
 The result type of an operation is based on the operands. Interval literals such as `1day` and `3s` can be used.
 
-```
+```sql
 SELECT date '2022-05-21' + interval '2' day
 ```
 
-```
+```sql
 SELECT date '2022-05-21' + 2d
 ```
 
-```
+```sql
 SELECT date '2022-05-21' + 2day
 ```
 
@@ -42,13 +42,13 @@ Example result for each: `2022-05-23`
 
 Interval units include `second`, `minute`, `hour`, `day`, `week`, `month`, and `year`. But in some cases not all are applicable. For example seconds, minutes, and hours can not be added to or subtracted from a date.
 
-```
+```sql
 SELECT interval '4' year + interval '2' month
 ```
 
 Example result: `4-2`
 
-```
+```sql
 SELECT typeof(interval '4' year + interval '2' month)
 ```
 
@@ -61,28 +61,28 @@ Result type of interval operations may be `'interval year to month'` or `'interv
 
 **Example**
 
-```
+```sql
 SELECT date '2022-05-21' + interval '2' day
 ```
 Example result: `2022-05-23`
 
 **Example**
 
-```
+```sql
 SELECT typeof(date '2022-05-21' + interval '2' day)
 ```
 Example result: `date`
 
 **Example**
 
-```
+```sql
 SELECT interval '2' year + interval '4' month
 ```
 Example result: `2-4`
 
 **Example**
 
-```
+```sql
 SELECT typeof(interval '2' year + interval '4' month)
 ```
 Example result: `interval year to month`
@@ -92,28 +92,28 @@ Example result: `interval year to month`
 
 **Example**
 
-```
+```sql
 SELECT timestamp '2022-06-17 01:00' - interval '7' hour
 ```
 Example result: `2022-06-16 18:00:00.000000000`
 
 **Example**
 
-```
+```sql
 SELECT typeof(timestamp '2022-06-17 01:00' - interval '7' hour)
 ```
 Example result: `timestamp`
 
 **Example**
 
-```
+```sql
 SELECT interval '6' day - interval '4' hour
 ```
 Example result: `5 20:00:00.000000000`
 
 **Example**
 
-```
+```sql
 SELECT typeof(interval '6' day - interval '4' hour)
 ```
 Example result: `interval day to second`

@@ -21,13 +21,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-system
 
 1.  Ensure the `stress-ng` package is installed, as we are going to use it for our example.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo dnf install -y {{stress-ng}}
    ```
 
 1.  Use `systemd-run` to execute a 10 second CPU stress test without limiting how much CPU it can use.
 
-   ```
+   ```bash
    [ec2-user ~]$ systemd-run --user --tty --wait --property=CPUAccounting=1 {{stress-ng --cpu 1 --timeout 10}}
    Running as unit: run-u6.service
    Press ^] three times within 1s to disconnect TTY.
@@ -50,7 +50,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-system
 
 1.  The `LimitCPU` property is the equivalent of `ulimit -t` which will limit the maximum amount of time on the CPU this process will be allowed to use. In this case, since we are asking for a 10 second stress run, and we are limiting the CPU usage to 1 second, the command will receive a `SIGXCPU` signal and fail.
 
-   ```
+   ```bash
    [ec2-user ~]$ systemd-run --user --tty --wait --property=CPUAccounting=1 --property=LimitCPU=1 {{stress-ng --cpu 1 --timeout 10}}
    Running as unit: run-u12.service
    Press ^] three times within 1s to disconnect TTY.
@@ -74,7 +74,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-system
 
 1.  We are going to use the `CPUQuota` property to tell `systemd-run` to constrain CPU usage for the command we are going to run. We are not limiting the amount of time the process can run for, just how much CPU it can use.
 
-   ```
+   ```bash
    [ec2-user ~]$ systemd-run --user --tty --wait --property=CPUAccounting=1 --property=CPUQuota=10% {{stress-ng --cpu 1 --timeout 10}}
    Running as unit: run-u13.service
    Press ^] three times within 1s to disconnect TTY.
@@ -105,13 +105,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-system
 
 1.  First, we need to install the packages required for this example.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo dnf install -y {{memcached libmemcached-awesome-tools}}
    ```
 
 1.  Enable the `memcached.service` and then start the service so that `memcached` is running.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo systemctl enable {{memcached.service}}
    Created symlink /etc/systemd/system/multi-user.target.wants/memcached.service → /usr/lib/systemd/system/memcached.service.
    [ec2-user ~]$ sudo systemctl start {{memcached.service}}
@@ -119,7 +119,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-system
 
 1.  Check that `memcached.service` is running.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo systemctl status {{memcached.service}}
    ● memcached.service - memcached daemon
         Loaded: loaded (/usr/lib/systemd/system/memcached.service; enabled; preset: disabled)
@@ -138,7 +138,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-system
 
     In `/etc/sysconfig/memcached` the `CACHESIZE` variable is set to 64 by default, meaning 64 megabytes. By inserting more data into the cache than the maximum cache size, we can see that we fill the cache and some items are evicted using `memcached-tool`, and that the `memcached.service` is using around 64MB of memory.
 
-   ```
+   ```bash
    [ec2-user ~]$ for i in $(seq 1 150); do dd if=/dev/random of=$i bs=512k count=1; memcp -s localhost $i; done
    [ec2-user ~]$ memcached-tool localhost display
      #  Item_Size  Max_age   Pages   Count   Full?  Evicted Evict_Time OOM
@@ -160,7 +160,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-system
 
 1.  Use the `MemoryMax` property to set a hard limit for the `memcached.service` where, if hit, the OOM Killer will be invoked. Additional options can be set for the service by adding them to an override file. This can be done either by directly editing the `/etc/systemd/system/memcached.service.d/override.conf` file, or interactively using the `edit` command of `systemctl`.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo systemctl edit {{memcached.service}}
    ```
 
@@ -173,13 +173,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-system
 
 1. Tell `systemd` to reload its configuration
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo systemctl daemon-reload
    ```
 
 1. Observe that the `memcached.service` is now running with a memory limit of 32MB.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo systemctl status {{memcached.service}}
    ● memcached.service - memcached daemon
         Loaded: loaded (/usr/lib/systemd/system/memcached.service; enabled; preset: disabled)
@@ -198,11 +198,11 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-system
 
 1.  The service will function normally while using less than 32MB of memory, which we can check by loading less than 32MB of random data into the cache, and then checking the status of the service.
 
-   ```
+   ```bash
    [ec2-user ~]$ for i in $(seq 1 30); do dd if=/dev/random of=$i bs=512k count=1; memcp -s localhost $i; done
    ```
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo systemctl status {{memcached.service}}
    ● memcached.service - memcached daemon
         Loaded: loaded (/usr/lib/systemd/system/memcached.service; enabled; preset: disabled)
@@ -221,13 +221,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-system
 
 1.  We can now make `memcached` to use more than 32MB of memory by attempting to use the full 64MB of cache that the default `memcached` configuration is.
 
-   ```
+   ```bash
    [ec2-user ~]$ for i in $(seq 1 150); do dd if=/dev/random of=$i bs=512k count=1; memcp -s localhost $i; done
    ```
 
     You will observe that at some point during the above command there are connection errors to the `memcached` server. This is because the OOM Killer has killed the process due to the restriction we placed on it. The rest of the system will function as normal, and no other processes will be considered by the OOM Killer, as it is only the `memcached.service` that we have restricted.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo systemctl status {{memcached.service}}
    ● memcached.service - memcached daemon
         Loaded: loaded (/usr/lib/systemd/system/memcached.service; enabled; preset: disabled)

@@ -13,3 +13,5 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
    The following figure depicts an example of the application view for the solution stack in Application Manager.
 
 ![Depicts an AWS Solution stack in Application Manager](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/appregistry1.png)
+
+**Solution stack in Application Manager**

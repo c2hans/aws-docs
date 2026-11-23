@@ -35,7 +35,7 @@ You can create or update a record without custom metadata. If you enter any, fil
 
 These examples use the schema from the [example](registry-custom-metadata-schema.md#registry-custom-metadata-schema-example) in Define a custom metadata schema.
 
-```
+```bash
 aws agent-registry-control create-registry-record \
   --registry-id "{{registryId}}" \
   --name "my-mcp-server" \
@@ -53,7 +53,7 @@ To change the values on an existing record, use `update-registry-record`. The `-
 
 This example replaces the record’s values:
 
-```
+```bash
 aws agent-registry-control update-registry-record \
   --registry-id "{{registryId}}" \
   --record-id "{{recordId}}" \
@@ -64,7 +64,7 @@ aws agent-registry-control update-registry-record \
 ### AWS SDK
 <a name="registry-custom-metadata-values-set-sdk"></a>
 
-```
+```python
 import boto3
 import json
 
@@ -94,7 +94,7 @@ print(f"Record ARN: {response['recordArn']}")
 
 To change the values later, pass `customMetadata` wrapped in `optionalValue`, as with the CLI. Omit `customMetadata` to keep the existing values, or pass `{'optionalValue': {}}` to remove the record’s values.
 
-```
+```python
 client.update_registry_record(
     registryId='{{registryId}}',
     recordId='{{recordId}}',
@@ -113,7 +113,7 @@ On a record detail page, the **Custom metadata** section shows the record’s va
 ### AWS CLI
 <a name="registry-custom-metadata-values-view-cli"></a>
 
-```
+```bash
 aws agent-registry-control get-registry-record \
   --registry-id "{{registryId}}" \
   --record-id "{{recordId}}" \
@@ -123,7 +123,7 @@ aws agent-registry-control get-registry-record \
 ### AWS SDK
 <a name="registry-custom-metadata-values-view-sdk"></a>
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')

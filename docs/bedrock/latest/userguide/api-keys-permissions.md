@@ -55,7 +55,7 @@ To prevent an IAM identity from generating long-term Amazon Bedrock API keys and
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -91,7 +91,7 @@ To prevent an IAM identity from using short-term Amazon Bedrock API keys, attach
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -131,7 +131,7 @@ To prevent an IAM identity from using long-term Amazon Bedrock API keys, attach 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -171,7 +171,7 @@ To explicitly prevent an IAM identity from using short-term Amazon Bedrock API k
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -219,7 +219,7 @@ To explicitly prevent an IAM identity from using long-term Amazon Bedrock API ke
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -267,7 +267,7 @@ To allow an IAM identity to create a long-term API key only if it is for Amazon 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

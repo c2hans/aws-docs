@@ -161,7 +161,7 @@ aws globalaccelerator create-custom-routing-accelerator
         --ip-addresses 192.0.2.250 198.51.100.52
 ```
 
-```
+```json
 {
     "Accelerator": {
         "AcceleratorArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh",

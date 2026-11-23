@@ -21,14 +21,14 @@ The `aws-data-analytics` plugin bundles the AWS MCP Server configuration and the
 
 **Claude Code**
 
-```
+```bash
 /plugin install aws-data-analytics@claude-plugins-official
 /reload-plugins
 ```
 
 **Codex**
 
-```
+```bash
 codex plugin marketplace add aws/agent-toolkit-for-aws
 ```
 
@@ -52,7 +52,7 @@ Create an OpenSearch Serverless search collection named "my-collection" in us-ea
 
 The agent calls the OpenSearch Serverless `CreateCollection` API on your behalf using your configured credentials:
 
-```
+```json
 {
   "name": "my-collection",
   "type": "SEARCH",
@@ -105,7 +105,7 @@ You can integrate the AWS MCP Server into Python agent frameworks for programmat
 
 [Strands Agents](https://strandsagents.com) is an AWS-native agent SDK with built-in MCP support and Amazon Bedrock as the default model provider.
 
-```
+```python
 from strands import Agent
 from strands.tools.mcp import MCPClient
 from mcp_proxy_for_aws.client import aws_iam_streamablehttp_client
@@ -129,7 +129,7 @@ with opensearch_client:
 
 Install the required packages:
 
-```
+```bash
 pip install strands-agents mcp-proxy-for-aws
 ```
 
@@ -138,7 +138,7 @@ pip install strands-agents mcp-proxy-for-aws
 
 [LangGraph](https://github.com/langchain-ai/langgraph) is a low-level orchestration framework for building stateful agents. The following example uses `mcp-proxy-for-aws` to provide an authenticated transport and `langchain-mcp-adapters` to load the AWS MCP tools into a LangChain agent backed by Amazon Bedrock.
 
-```
+```python
 import asyncio
 from mcp import ClientSession
 from mcp_proxy_for_aws.client import aws_iam_streamablehttp_client
@@ -173,7 +173,7 @@ asyncio.run(main())
 
 Install the required packages:
 
-```
+```bash
 pip install mcp-proxy-for-aws langchain langchain-aws langchain-mcp-adapters langgraph
 ```
 

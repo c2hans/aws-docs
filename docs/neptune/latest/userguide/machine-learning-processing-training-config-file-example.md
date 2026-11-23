@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 
 Here is a sample training data configuration file that describes a graph for a node-classification task:
 
-```
+```json
 {
   "version" : "v2.0",
   "query_engine" : "gremlin",

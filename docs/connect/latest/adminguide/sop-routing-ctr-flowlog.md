@@ -108,7 +108,7 @@ Before you look for an abnormal reading, know the baseline. The following annota
 
 **Contact record (CTR)** – only the relevant fields are shown:
 
-```
+```json
 {
     "ContactId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Channel": "VOICE",
@@ -136,7 +136,7 @@ In this healthy reading:
 
 **Contact flow log** – the Set working queue block logs an entry line that records the QueueId ARN it set:
 
-```
+```json
 {
     "ContactId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "ContactFlowModuleType": "SetQueue",
@@ -149,7 +149,7 @@ In this healthy reading:
 
 A block that reports an outcome adds a result line. In a healthy flow, the `Results` value is `Success` (not `Timeout` or `Error`):
 
-```
+```json
 {
     "Results": "Success",
     "ContactId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",

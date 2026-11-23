@@ -51,7 +51,7 @@ LangChain is a framework for developing applications powered by language models.
 
  For example, you can use the following code to add Amazon Personalize recommendations for a user to your chain.
 
-```
+```py
 from aws_langchain import AmazonPersonalize
 from aws_langchain import AmazonPersonalizeChain
 from langchain.llms.bedrock import Bedrock

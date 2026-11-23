@@ -73,7 +73,7 @@ This procedure creates the device certificate files for this demo.
 
    The command returns a response like the following. Record the `{{certificateArn}}` value for later use.
 
-   ```
+   ```json
    {
        "certificateArn": "{{arn:aws:iot:us-west-2:57EXAMPLE833:cert/76e7e4edb3e52f52334be2f387a06145b2aa4c7fcd810f3aea2d92abc227d269}}",
        "certificateId": "76e7e4edb3e52f5233EXAMPLE7a06145b2aa4c7fcd810f3aea2d92abc227d269",
@@ -125,7 +125,7 @@ This procedure provisions your device in AWS IoT by creating the resources that 
 
    The command from the previous steps returns a response like the following. Record the `{{endpointAddress}}` value for later use.
 
-   ```
+   ```json
    {
        "endpointAddress": "{{a3qjEXAMPLEffp-ats.iot.us-west-2.amazonaws.com}}"
    }
@@ -139,7 +139,7 @@ This procedure provisions your device in AWS IoT by creating the resources that 
 
    If your AWS IoT thing resource was created, the command returns a response like this.
 
-   ```
+   ```json
    {
        "thingName": "DevCliTestThing",
        "thingArn": "arn:aws:iot:us-west-2:57EXAMPLE833:thing/DevCliTestThing",
@@ -154,7 +154,7 @@ This procedure provisions your device in AWS IoT by creating the resources that 
    1. Copy this JSON policy document and paste it into your open text editor.
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -188,7 +188,7 @@ This policy document generously grants every resource permission to connect, rec
 
    If the policy is created, the command returns a response like this.
 
-   ```
+   ```json
    {
        "policyName": "DevCliTestThingPolicy",
        "policyArn": "arn:aws:iot:us-west-2:57EXAMPLE833:policy/DevCliTestThingPolicy",
@@ -199,7 +199,7 @@ This policy document generously grants every resource permission to connect, rec
 
 1. Run this command to attach the policy to the device certificate. Replace `{{certificateArn}}` with the `certificateArn` value you saved earlier.
 
-   ```
+   ```json
    aws iot attach-policy \
    --policy-name "DevCliTestThingPolicy" \
    --target "{{certificateArn}}"

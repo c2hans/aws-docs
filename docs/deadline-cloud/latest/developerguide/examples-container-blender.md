@@ -12,13 +12,13 @@ You can use this image for the following purposes:
 
 Build the image:
 
-```
+```bash
 docker build -t blender-aswf:4.5.0 .
 ```
 
 Push to Amazon Elastic Container Registry (Amazon ECR) and deploy the full stack (queue, fleet, and queue environment) with the included AWS CloudFormation (CloudFormation) template:
 
-```
+```bash
 aws cloudformation deploy \
     --template-file cloudformation.yaml \
     --stack-name blender-aswf-ci-base-stack \

@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 
 ![Reference architecture that uses Local Zones to navigate storing and processing in-scope data inside a country](https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hybrid-cloud-services-lens/images/scenario-D-local-zones.png)
 
+*Scenario D, option one: AWS Local Zones*
+
  The first option for deploying AWS services focuses on the use of AWS Local Zones and AWS Outposts:
 
 1.  Assess data residency requirements specific to the organization and regulatory environment. And identify regulated data.
@@ -25,6 +27,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 1.  Deploy the regulated workload on the Local Zone and Outpost.
 
 ![Reference architecture that uses Outposts to navigate storing and processing in-scope data inside a country](https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hybrid-cloud-services-lens/images/scenario-D-outposts.png)
+
+*Scenario D, option two: AWS Outposts*
 
  The second option for deploying AWS services focuses on the use of AWS Outposts without AWS Local Zones. Follow steps 1 to 5 as above in Option 1: AWS Local Zones, and deploy the regulated workload on AWS Outposts.
 

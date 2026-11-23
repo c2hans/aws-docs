@@ -97,7 +97,7 @@ To work out where a problem is, on the user's computer, on their network, or on 
 
 Users don't need IAM permissions to see recommendations. To let an administrator turn End User Advisor on or off, grant only the permission they need, scoped to the directory:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{

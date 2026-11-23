@@ -19,7 +19,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 /// <summary>
 /// Scenario for RDS DB instance example.
 /// </summary>
@@ -491,7 +491,7 @@ public class RDSInstanceScenario
 ```
 Wrapper methods used by the scenario for DB instance actions.
 
-```
+```csharp
 /// <summary>
 /// Wrapper methods to use Amazon Relational Database Service (Amazon RDS) with DB instance operations.
 /// </summary>
@@ -622,7 +622,7 @@ public partial class RDSWrapper
 ```
 Wrapper methods used by the scenario for DB parameter groups.
 
-```
+```csharp
 /// <summary>
 /// Wrapper methods to use Amazon Relational Database Service (Amazon RDS) with parameter groups.
 /// </summary>
@@ -725,7 +725,7 @@ public partial class RDSWrapper
 ```
 Wrapper methods used by the scenario for DB snapshot actions.
 
-```
+```csharp
 /// <summary>
 /// Wrapper methods to use Amazon Relational Database Service (Amazon RDS) with snapshots.
 /// </summary>
@@ -792,7 +792,7 @@ public partial class RDSWrapper
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/rds#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -1503,7 +1503,7 @@ bool AwsDoc::RDS::cleanUpResources(const Aws::String &parameterGroupName,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -1840,7 +1840,7 @@ func (helper ScenarioHelper) UniqueId() string {
 ```
 Define functions that are called by the scenario to manage Amazon RDS actions.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -2102,7 +2102,7 @@ func (instances *DbInstances) GetOrderableInstances(ctx context.Context, engine 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 Run multiple operations.
 
-```
+```java
 import com.google.gson.Gson;
 import software.amazon.awssdk.auth.credentials.EnvironmentVariableCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
@@ -2687,7 +2687,7 @@ public class RDSScenario {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 /**
 Before running this code example, set up your development environment, including your credentials.
 
@@ -3159,7 +3159,7 @@ suspend fun getSecretValues(secretName: String?): String? {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class RdsInstanceScenario:
     """Runs a scenario that shows how to get started using Amazon RDS DB instances."""
 
@@ -3419,7 +3419,7 @@ if __name__ == "__main__":
 ```
 Define functions that are called by the scenario to manage Amazon RDS actions.
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -3799,7 +3799,7 @@ class InstanceWrapper:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 The `Package.swift` file.
 
-```
+```swift
 // swift-tools-version: 5.9
 //
 // The swift-tools-version declares the minimum version of Swift required to
@@ -3841,7 +3841,7 @@ let package = Package(
 ```
 The Swift code file, `entry.swift`.
 
-```
+```swift
 // An example that shows how to use the AWS SDK for Swift to perform a variety
 // of operations using Amazon Relational Database Service (RDS).
 //

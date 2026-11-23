@@ -49,7 +49,7 @@ These variables are used as examples. If you are creating variables to use for y
 
 Be sure to specify a variable source. It helps to identify where the variable value is derived. If the variable source is **EVENT**, the variable value is sent as part of the [GetEventPrediction](https://docs.aws.amazon.com/frauddetector/latest/api/API_GetEventPrediction.html) request. If the variable value is `MODEL_SCORE`, it's populated by an Amazon Fraud Detector. If `EXTERNAL_MODEL_SCORE`, the variable value is populated by an imported SageMaker AI model.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

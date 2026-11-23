@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/listing-applicable-advis
 
  First, we fetch this container image from the container registry. The `.0` at the end indicates the version of the image for a particular release; this image version is usually zero.
 
-```
+```bash
 $ docker pull public.ecr.aws/amazonlinux/amazonlinux:{{2023.0.20230315.0}}
 	  2023.0.20230315.0: Pulling from amazonlinux/amazonlinux
 b76f3b09316a: Pull complete
@@ -39,7 +39,7 @@ public.ecr.aws/amazonlinux/amazonlinux:2023.0.20230315.0
 
  We can now spawn a shell inside the container, from which we will ask `dnf` to list what advisories are relevant to the packages installed in the container.
 
-```
+```bash
 $ docker run -it public.ecr.aws/amazonlinux/amazonlinux:{{2023.0.20230315.0}}
 	  bash-5.2#
 ```
@@ -88,7 +88,7 @@ ALAS2023-2023-222 Medium/Sec.    openssl-libs-1:3.0.8-1.amzn2023.0.3.x86_64
 
  First, we fetch this container image from the container registry. The `.1` at the end indicates the version of the image for a particular release. While the image version is typically zero, this example uses a release where the image version is one.
 
-```
+```bash
 $ docker pull public.ecr.aws/amazonlinux/amazonlinux:{{2023.4.20240319.1}}
 	  2023.4.20240319.1: Pulling from amazonlinux/amazonlinux
 6de065fda9a2: Pull complete
@@ -99,7 +99,7 @@ public.ecr.aws/amazonlinux/amazonlinux:2023.4.20240319.1
 
  We can now spawn a shell inside the container, from which we will check for updates.
 
-```
+```bash
 $ docker run -it public.ecr.aws/amazonlinux/amazonlinux:{{2023.4.20240319.1}}
 	  bash-5.2#
 ```

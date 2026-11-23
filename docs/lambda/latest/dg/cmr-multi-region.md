@@ -25,7 +25,7 @@ Lambda manages each Region independently. When you create or update a resource i
 
 Each Regional copy of a runtime has its own Amazon Resource Name (ARN). The Region is part of the ARN, as shown in the following format:
 
-```
+```text
 arn:aws:lambda:{{region}}:{{account-id}}:runtime/{{runtime-name}}
 ```
 
@@ -127,7 +127,7 @@ In this step, you create a repository in each Region, grant Lambda read access, 
 
 1. Save the following repository policy as `lambda-ecr-policy.json`. This policy grants Lambda read access to the runtime images.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -159,7 +159,7 @@ In this step, you create a repository in each Region, grant Lambda read access, 
 
 1. To create a repository with this policy in each Region, run the following script. The script runs the `create-repository` and `set-repository-policy` commands in each Region.
 
-   ```
+   ```bash
    for region in {{us-east-1 us-west-2 eu-west-1}}; do
      aws ecr create-repository \
        --region "$region" \
@@ -175,7 +175,7 @@ In this step, you create a repository in each Region, grant Lambda read access, 
 
 1. Save the following replication configuration as `replication.json`. This configuration replicates repositories whose names start with `companyphp8` to `us-west-2` and `eu-west-1`.
 
-   ```
+   ```json
    {
      "rules": [
        {
@@ -202,7 +202,7 @@ In this step, you create a repository in each Region, grant Lambda read access, 
 
 1. To turn on replication in the source Region, run the `put-replication-configuration` command.
 
-   ```
+   ```bash
    aws ecr put-replication-configuration \
      --region {{us-east-1}} \
      --replication-configuration file://replication.json
@@ -214,7 +214,7 @@ In this step, you create a repository in each Region, grant Lambda read access, 
 
 1. To confirm that the image replicated, run the `describe-image-replication-status` command.
 
-   ```
+   ```bash
    aws ecr describe-image-replication-status \
      --region {{us-east-1}} \
      --repository-name {{companyphp8}} \
@@ -223,7 +223,7 @@ In this step, you create a repository in each Region, grant Lambda read access, 
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "repositoryName": "companyphp8",
        "imageId": {
@@ -259,7 +259,7 @@ In this step, you create a runtime with the same name in each Region. You need t
 
 1. To create the runtime in each Region, run the following script. The script runs the `create-runtime` command in each Region with the same name and description.
 
-   ```
+   ```bash
    for region in {{us-east-1 us-west-2 eu-west-1}}; do
      aws lambda-core create-runtime \
        --region "$region" \
@@ -272,7 +272,7 @@ In this step, you create a runtime with the same name in each Region. You need t
 
 1. To confirm that the runtime exists in each Region, run the `get-runtime` command in each Region.
 
-   ```
+   ```bash
    for region in {{us-east-1 us-west-2 eu-west-1}}; do
      aws lambda-core get-runtime \
        --region "$region" \
@@ -284,7 +284,7 @@ In this step, you create a runtime with the same name in each Region. You need t
 
    You should see output similar to the following:
 
-   ```
+   ```text
    arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8
    arn:aws:lambda:us-west-2:123456789012:runtime/companyphp8
    arn:aws:lambda:eu-west-1:123456789012:runtime/companyphp8
@@ -306,7 +306,7 @@ Creating the runtime version in every Region first doesn't affect any functions.
 
 1. To create the runtime version in each Region, run the following script. The script creates the version from the image in that Region's repository. It then waits until the version is `ACTIVE`.
 
-   ```
+   ```bash
    for region in {{us-east-1 us-west-2 eu-west-1}}; do
      aws lambda-core create-runtime-version \
        --region "$region" \
@@ -325,7 +325,7 @@ Creating the runtime version in every Region first doesn't affect any functions.
 
 1. To confirm the state of the version in each Region, run the `get-runtime-version` command.
 
-   ```
+   ```bash
    for region in {{us-east-1 us-west-2 eu-west-1}}; do
      echo -n "$region: "
      aws lambda-core get-runtime-version \
@@ -339,7 +339,7 @@ Creating the runtime version in every Region first doesn't affect any functions.
 
    You should see output similar to the following:
 
-   ```
+   ```text
    us-east-1: ACTIVE
    us-west-2: ACTIVE
    eu-west-1: ACTIVE
@@ -347,7 +347,7 @@ Creating the runtime version in every Region first doesn't affect any functions.
 
 1. To update the `prod` alias one Region at a time, run the following script. After each Region, the script pauses so that you can check metrics before you continue.
 
-   ```
+   ```bash
    for region in {{us-east-1 us-west-2 eu-west-1}}; do
      echo "Updating alias prod in $region"
      aws lambda-core update-runtime-alias \
@@ -375,7 +375,7 @@ If a Region shows problems after you update the alias, point the alias in that R
 **To roll back the alias in one Region (AWS CLI)**
 + To point the alias back to the previous version, run the `update-runtime-alias` command in the affected Region. The following example rolls back the `prod` alias in `us-west-2` to version `v8.3.1`.
 
-  ```
+  ```bash
   aws lambda-core update-runtime-alias \
     --region {{us-west-2}} \
     --runtime-name {{companyphp8}} \

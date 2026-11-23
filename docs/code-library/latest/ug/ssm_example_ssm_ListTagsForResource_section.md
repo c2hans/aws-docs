@@ -45,7 +45,7 @@ For more information, see [Working with Patch Manager resources using the AWS CL
 **Tools for PowerShell V4**
 **Example 1: This example lists the tags for a maintenance window.**
 
-```
+```powershell
 Get-SSMResourceTag -ResourceId "mw-03eb9db42890fb82d" -ResourceType "MaintenanceWindow"
 ```
 **Output:**
@@ -60,7 +60,7 @@ Stack Production
 **Tools for PowerShell V5**
 **Example 1: This example lists the tags for a maintenance window.**
 
-```
+```powershell
 Get-SSMResourceTag -ResourceId "mw-03eb9db42890fb82d" -ResourceType "MaintenanceWindow"
 ```
 **Output:**

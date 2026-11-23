@@ -71,7 +71,7 @@ The NFS interface is not running on the Snowball Edge device by default, so you 
 You can also have the Snowball Edge device configure the NFS interface automatically. For more information, see [Configuring the NFS interface automatically with AWS OpsHub](#auto-configure-nfs).
 
 1. At the bottom of **Transfer data** section, on the dashboard, choose **Configure manually**.
-[![AWS Videos](https://img.youtube.com/vi/StMa2A7X2yA?start=78&end=119/0.jpg)](https://www.youtube.com/watch?v=StMa2A7X2yA?start=78&end=119)
+[![AWS Videos](https://img.youtube.com/vi/StMa2A7X2yA/0.jpg)](https://www.youtube.com/watch?v=StMa2A7X2yA)
 
 1. Choose **Enable & start** to open the **Start NFS** wizard. The **Physical network interface** field is populated. ![The Start NFS wizard](https://docs.aws.amazon.com/snowball/latest/developer-guide/images/opshub-nfs-console.png)
 
@@ -128,17 +128,17 @@ After the NFS interface is started and an endpoint mounted, mount the endpoint a
 1. The following are the default mount commands for Windows, Linux, and macOS operating systems.
    + Windows:
 
-     ```
+     ```doc,bat,cmd,powershell,ps
      mount -o nolock rsize=128 wsize=128 mtype=hard nfs-interface-ip-address:/buckets/BucketName *
      ```
    + Linux:
 
-     ```
+     ```bash,sh,zsh
      mount -t nfs nfs-interface-ip-address:/buckets/BucketName mount_point
      ```
    + macOS:
 
-     ```
+     ```bash,sh,zsh
      mount -t nfs -o vers=3,rsize=131072,wsize=131072,nolocks,hard,retrans=2 nfs-interface-ip-address:/buckets/$bucketname mount_point
      ```
 

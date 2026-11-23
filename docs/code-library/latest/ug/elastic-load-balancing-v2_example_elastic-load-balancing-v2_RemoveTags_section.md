@@ -30,7 +30,7 @@ For more information, see [Tag an Application Load Balancer](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: This example removes the tag for the specified key. **
 
-```
+```powershell
 Remove-ELB2Tag -ResourceArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -TagKey 'productVersion'
 ```
 **Output:**
@@ -46,7 +46,7 @@ Performing the operation "Remove-ELB2Tag (RemoveTags)" on target "arn:aws:elasti
 **Tools for PowerShell V5**
 **Example 1: This example removes the tag for the specified key. **
 
-```
+```powershell
 Remove-ELB2Tag -ResourceArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f' -TagKey 'productVersion'
 ```
 **Output:**

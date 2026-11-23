@@ -50,7 +50,7 @@ Properties:
 Returns the Amazon Resource Name (ARN) of the resource-based policy.
 *Required*: Yes
 *Type*: String
-*Pattern*: `arn:aws.*:kinesis:.*:\d{12}:stream/\S+`
+*Pattern*: `arn:aws.*:kinesis:.*:\d{12}:(stream|queue)/\S+`
 *Minimum*: `1`
 *Maximum*: `2048`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

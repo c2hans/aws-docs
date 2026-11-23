@@ -10,7 +10,7 @@ Lists Amazon Bedrock foundation models that you can use. You can filter the resu
 <a name="API_ListFoundationModels_RequestSyntax"></a>
 
 ```
-GET /foundation-models?byCustomizationType={{byCustomizationType}}&byInferenceType={{byInferenceType}}&byOutputModality={{byOutputModality}}&byProvider={{byProvider}} HTTP/1.1
+GET /foundation-models?byCustomizationType={{byCustomizationType}}&byInferenceType={{byInferenceType}}&byOutputModality={{byOutputModality}}&byProvider={{byProvider}}&projectIdentifier={{projectIdentifier}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -33,6 +33,12 @@ Valid Values: `TEXT | IMAGE | EMBEDDING`
  ** [byProvider](#API_ListFoundationModels_RequestSyntax) **   <a name="bedrock-ListFoundationModels-request-uri-byProvider"></a>
 Return models belonging to the model provider that you specify.
 Pattern: `[A-Za-z0-9- ]{1,63}`
+
+ ** [projectIdentifier](#API_ListFoundationModels_RequestSyntax) **   <a name="bedrock-ListFoundationModels-request-uri-projectIdentifier"></a>
+The ID or Amazon Resource Name (ARN) of a project. Amazon Bedrock uses the project's trusted access program participation when determining which models to return. The project must belong to your account in the same AWS Region and partition as the request.
+If you omit this parameter or specify `default`, Amazon Bedrock uses your account's participation, including organization inheritance. A project that doesn't exist or is archived causes a `ValidationException`.
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `([a-zA-Z0-9_-]+|arn:aws(-[^:]+)?:bedrock:[0-9a-z-]{1,20}:[0-9]{12}:project/[a-zA-Z0-9_-]+)`
 
 ## Request Body
 <a name="API_ListFoundationModels_RequestBody"></a>

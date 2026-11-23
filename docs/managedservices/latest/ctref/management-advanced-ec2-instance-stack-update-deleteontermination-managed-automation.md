@@ -140,7 +140,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-ec2-instance-stack-update-deleteontermination-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "InstanceId": "i-1234567890abcdef0",
   "DeviceNames": ["/dev/sda", "/dev/xvda"],
@@ -151,7 +151,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-ec2-instance-stack-update-deleteontermination-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "InstanceId": "i-1234567890abcdef0",
   "DeviceNames": ["/dev/sda", "/dev/xvda"],

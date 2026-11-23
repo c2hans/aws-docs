@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-
 
  To configure the SDK to use the AWS shared configuration files, use the following code:
 
-```
+```go
 import (
   "context"
   "log"
@@ -63,7 +63,7 @@ set AWS_REGION=us-west-2
 ### Specify Region Programmatically
 <a name="specify-region-programmatically"></a>
 
-```
+```go
 cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithRegion("us-west-2"))
 ```
 
@@ -127,7 +127,7 @@ cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithRegion("us-west-
 
  You can provide multiple credential or config files locations using `config.LoadOptions`, by default the SDK loads files stored at default locations mentioned in the [Specifying Credentials](#specifying-credentials).
 
-```
+```go
 import (
     "context"
     "github.com/aws/aws-sdk-go-v2/config"
@@ -160,7 +160,7 @@ cfg , err := config.LoadDefaultConfig(context.TODO(),
 
  If you don't have a shared credentials file (`.aws/credentials`), you can use any text editor to create one in your home directory. Add the following content to your credentials file, replacing {{<YOUR\_ACCESS\_KEY\_ID>}} and {{<YOUR\_SECRET\_ACCESS\_KEY>}} with your credentials.
 
-```
+```ini files
 [default]
 aws_access_key_id = {{<YOUR_ACCESS_KEY_ID>}}
 aws_secret_access_key = {{<YOUR_SECRET_ACCESS_KEY>}}
@@ -170,7 +170,7 @@ aws_secret_access_key = {{<YOUR_SECRET_ACCESS_KEY>}}
 
  You can also use temporary security credentials by adding the session tokens to your profile, as shown in the following example:
 
-```
+```ini files
 [temp]
 aws_access_key_id = {{<YOUR_TEMP_ACCESS_KEY_ID>}}
 aws_secret_access_key = {{<YOUR_TEMP_SECRET_ACCESS_KEY>}}
@@ -184,7 +184,7 @@ aws_session_token = {{<YOUR_SESSION_TOKEN>}}
 
  If you don't have a shared credentials file (`.aws/config`), you can use any text editor to create one in your home directory. Add the following content to your config file, replacing {{<REGION>}} with the desired region.
 
-```
+```ini files
 [default]
 region = {{<REGION>}}
 ```
@@ -193,7 +193,7 @@ region = {{<REGION>}}
 
  You can use named profiles as shown in the following example:
 
-```
+```ini files
 [profile named-profile]
 region = {{<REGION>}}
 ```
@@ -205,7 +205,7 @@ region = {{<REGION>}}
 
  You can include multiple access keys in the same configuration file by associating each set of access keys with a profile. For example, in your credentials file, you can declare multiple profiles, as follows.
 
-```
+```ini files
 [default]
 aws_access_key_id = <YOUR_DEFAULT_ACCESS_KEY_ID>
 aws_secret_access_key = <YOUR_DEFAULT_SECRET_ACCESS_KEY>
@@ -230,7 +230,7 @@ $ AWS_PROFILE=test-account myapp
 
  You can also use instruct the SDK to select a profile by either calling `os.Setenv("AWS_PROFILE", "test-account")` before calling `config.LoadDefaultConfig`, or by passing an explicit profile as an argument as shown in the following example:
 
-```
+```go
 cfg, err := config.LoadDefaultConfig(context.TODO(),
     config.WithSharedConfigProfile("test-account"))
 ```
@@ -273,7 +273,7 @@ $ export AWS_SESSION_TOKEN=TOKEN
 
  `config.LoadDefaultConfig` allows you to provide an explicit [aws.CredentialProvider](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/aws#CredentialsProvider) when loading the shared configuration sources. To pass an explicit credential provider when loading shared configuration use [config.WithCredentialsProvider](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/config#WithCredentialsProvider). For example, if `customProvider` references an instance of `aws.CredentialProvider` implementation, it can be passed during configuration loading like so:
 
-```
+```go
 cfg, err := config.LoadDefaultConfig(context.TODO(),
     config.WithCredentialsProvider(customProvider))
 ```
@@ -288,7 +288,7 @@ All credential providers passed to or returned by `LoadDefaultConfig` are wrappe
 
  You can hard-code credentials in your application by using the [credentials.NewStaticCredentialsProvider](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/credentials#NewStaticCredentialsProvider) credential provider to explicitly set the access keys to be used. For example:
 
-```
+```go
 cfg, err := config.LoadDefaultConfig(context.TODO(),
     config.WithCredentialsProvider(credentials.NewStaticCredentialsProvider("AKID", "SECRET_KEY", "TOKEN")),
 )
@@ -336,7 +336,7 @@ Successully logged into Start URL: https://company-sso-portal.awsapps.com/start
 
 1.  Next configure your application to use the SSO profile.
 
-```
+```go
 import "github.com/aws/aws-sdk-go-v2/config"
 
 // ...

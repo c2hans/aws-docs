@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # PurchaseOptionSummary
 
-Summary information about a purchase option (offer or offer set) available to the buyer, including the seller, badges, and associated products.
+Summary information about a purchase option (offer or offer set) available to you, including the seller, badges, and associated products.
 
 ## Contents
 <a name="API_marketplace-discovery_PurchaseOptionSummary_Contents"></a>
@@ -33,7 +33,11 @@ Pattern: `.*\S.*`
 Required: Yes
 
  ** purchaseOptionType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_PurchaseOptionSummary-purchaseOptionType"></a>
-The type of purchase option. Values are `OFFER` for a single-product offer or `OFFERSET` for a bundled offer set.
+The type of purchase option. This field has one of the following values:
+OFFER
+An offer for a single product.
+OFFERSET
+An offer set that bundles offers for several products.
 Type: String
 Valid Values: `OFFER | OFFERSET`
 Required: Yes
@@ -44,12 +48,12 @@ Type: [SellerInformation](API_marketplace-discovery_SellerInformation.md) object
 Required: Yes
 
  ** availableFromTime **   <a name="AWSMarketplaceService-Type-marketplace-discovery_PurchaseOptionSummary-availableFromTime"></a>
-The date and time when the purchase option became available to the buyer.
+The date and time when the purchase option became available to you.
 Type: Timestamp
 Required: No
 
  ** badges **   <a name="AWSMarketplaceService-Type-marketplace-discovery_PurchaseOptionSummary-badges"></a>
-Badges indicating special attributes of the purchase option, such as private pricing or future dated.
+Badges indicating special attributes of the purchase option, such as private pricing or future-dated.
 Type: Array of [PurchaseOptionBadge](API_marketplace-discovery_PurchaseOptionBadge.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
 Required: No

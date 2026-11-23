@@ -32,7 +32,7 @@ A symmetric KMS key is a 256-bit encryption key that doesn't exit AWS KMS unencr
 
   The `UpdateUserPool` operation sets Lambda configuration. Requests to this operation require all the parameters of your user pool *and* the parameters that you want to change. If you don't provide all relevant parameters, Amazon Cognito sets the values of any missing parameters to their defaults. As demonstrated in the AWS CLI example that follows, include entries for all Lambda functions that you want to add to or keep in your user pool. For more information, see [Updating user pool and app client configuration](cognito-user-pool-updating.md).
 
-  ```
+  ```bash
       #Send this parameter in an 'aws cognito-idp update-user-pool' CLI command, including any existing
       #user pool configurations. This snippet also includes a pre sign-up trigger for syntax reference. The pre sign-up trigger
       #doesn't have a role in custom sender triggers.
@@ -45,7 +45,7 @@ A symmetric KMS key is a 256-bit encryption key that doesn't exit AWS KMS unencr
 
   For requests that use the JSON body of `UpdateUserPool` the following `LambdaConfig` snippet assigns custom SMS and email sender functions.
 
-  ```
+  ```json
   "LambdaConfig": {
      "KMSKeyID": "arn:aws:kms:{{us-east-1}}:{{111122223333}}:key/{{a6c4f8e2-0c45-47db-925f-87854bc9e357}}",
      "CustomEmailSender": {
@@ -78,7 +78,7 @@ To use custom logic to send SMS or email messages for your user pool, set up cus
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -127,7 +127,7 @@ To use custom logic to send SMS or email messages for your user pool, set up cus
 
    The following AWS CLI command grants Amazon Cognito permission to invoke your Lambda function:
 
-   ```
+   ```bash
    aws lambda add-permission --function-name {{lambda_arn}} --statement-id "{{CognitoLambdaInvokeAccess}}" --action lambda:InvokeFunction --principal cognito-idp.amazonaws.com
    ```
 

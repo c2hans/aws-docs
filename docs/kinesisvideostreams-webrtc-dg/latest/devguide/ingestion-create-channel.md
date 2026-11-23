@@ -39,7 +39,7 @@ Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed
 
 Run the following [Create-Signaling-Channel](https://docs.aws.amazon.com/cli/latest/reference/kinesisvideo/create-signaling-channel.html) command using the AWS CLI:
 
-```
+```bash
 aws kinesisvideo create-signaling-channel \
   --channel-name "{{YourChannelName}}" \
   --region "{{us-west-2}}"
@@ -47,7 +47,7 @@ aws kinesisvideo create-signaling-channel \
 
 The response will look like the following:
 
-```
+```json
 {
     "ChannelARN": "arn:aws:kinesisvideo:us-west-2:123456789012:channel/YourChannelName/1234567890123"
 }
@@ -60,7 +60,7 @@ This code snippet shows you how to create a Kinesis Video Streams with WebRTC si
 
 Create the Kinesis Video Streams client. This is the client used to call the `CreateSignalingChannel` API.
 
-```
+```js
 const clientConfig = {
     accessKeyId: '{{YourAccessKey}}',
     secretAccessKey: '{{YourSecretKey}}',
@@ -71,7 +71,7 @@ const kinesisVideoClient = new AWS.KinesisVideo(clientConfig);
 
 Use the client to call the `CreateSignalingChannel` API.
 
-```
+```js
 const createSignalingChannelResponse = await kinesisVideoClient
     .createSignalingChannel({
         ChannelName: '{{YourChannelName}}',
@@ -81,7 +81,7 @@ const createSignalingChannelResponse = await kinesisVideoClient
 
 Print the response.
 
-```
+```js
 console.log(createSignalingChannelResponse.ChannelARN);
 ```
 

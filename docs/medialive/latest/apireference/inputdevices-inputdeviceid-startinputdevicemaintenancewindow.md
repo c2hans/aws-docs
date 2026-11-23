@@ -46,7 +46,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### InvalidRequest schema
 <a name="inputdevices-inputdeviceid-startinputdevicemaintenancewindow-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -55,7 +55,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### AccessDenied schema
 <a name="inputdevices-inputdeviceid-startinputdevicemaintenancewindow-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -64,7 +64,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### ResourceNotFound schema
 <a name="inputdevices-inputdeviceid-startinputdevicemaintenancewindow-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -73,7 +73,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### ValidationError schema
 <a name="inputdevices-inputdeviceid-startinputdevicemaintenancewindow-response-body-validationerror-example"></a>
 
-```
+```json
 {
   "elementPath": "string",
   "errorMessage": "string"
@@ -83,7 +83,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### LimitExceeded schema
 <a name="inputdevices-inputdeviceid-startinputdevicemaintenancewindow-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -92,7 +92,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### InternalServiceError schema
 <a name="inputdevices-inputdeviceid-startinputdevicemaintenancewindow-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -101,7 +101,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### BadGatewayException schema
 <a name="inputdevices-inputdeviceid-startinputdevicemaintenancewindow-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -110,7 +110,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 #### GatewayTimeoutException schema
 <a name="inputdevices-inputdeviceid-startinputdevicemaintenancewindow-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

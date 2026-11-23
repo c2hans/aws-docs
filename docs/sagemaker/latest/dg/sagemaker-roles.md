@@ -54,7 +54,7 @@ Once you have created an execution role, you can associate it with a SageMaker A
 
 You can also pass the ARN of an execution role to your API call. For example, using [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable), you can pass the ARN of your execution role to a ModelTrainer. In the code sample that follows, we create a ModelTrainer using the XGBoost algorithm container and pass the ARN of the execution role as a parameter. For the full example on GitHub, see [Customer Churn Prediction with XGBoost](https://github.com/aws/amazon-sagemaker-examples/blob/89c54681b7e0f83ce137b34b879388cf5960af93/introduction_to_applying_machine_learning/xgboost_customer_churn/xgboost_customer_churn.ipynb).
 
-```
+```py
 import boto3
 from sagemaker.core import image_uris
 from sagemaker.core.helper.session_helper import Session
@@ -105,7 +105,7 @@ To give an execution role permissions to access one or more specific buckets in 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -213,7 +213,7 @@ The following code is meant to be run in a SageMaker AI environment, like any of
 
 The following [`get_execution_role`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable) command retrieves the ARN of the execution role attached to the space.
 
-```
+```python
 from sagemaker.core.helper.session_helper import get_execution_role
 role = get_execution_role()
 print(role)
@@ -404,7 +404,7 @@ You attach the following trust policy to the IAM role which grants SageMaker AI 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -457,7 +457,7 @@ For an execution role that you can pass in a `CreateAutoMLJob` or `CreateAutoMLJ
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -572,7 +572,7 @@ For an execution role that you can pass in the `CreateDomain` API request, you c
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -597,7 +597,7 @@ Alternatively, if the permissions are specified in a KMS policy, you can attach 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -631,7 +631,7 @@ For an execution role that you can pass in a `CreateImage` or `UpdateImage` API 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -659,7 +659,7 @@ The permissions that you grant to the execution role for calling the `CreateNote
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -744,7 +744,7 @@ To tighten the permissions, limit them to specific Amazon S3 and Amazon ECR reso
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -847,7 +847,7 @@ For an execution role that you can pass in a `CreateHyperParameterTuningJob` API
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -882,7 +882,7 @@ Instead of the specifying `"Resource": "*"`, you could scope these permissions t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1015,7 +1015,7 @@ For an execution role that you can pass in a `CreateProcessingJob` API request, 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1050,7 +1050,7 @@ Instead of the specifying `"Resource": "*"`, you could scope these permissions t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1172,7 +1172,7 @@ For an execution role that you can pass in a `CreateTrainingJob` API request, yo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1207,7 +1207,7 @@ Instead of the specifying `"Resource": "*"`, you could scope these permissions t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1345,7 +1345,7 @@ For an execution role that you can pass in a `CreateModel` API request, you can 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1379,7 +1379,7 @@ Instead of the specifying `"Resource": "*"`, you can scope these permissions to 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

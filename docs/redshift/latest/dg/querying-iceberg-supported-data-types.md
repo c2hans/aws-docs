@@ -86,13 +86,13 @@ Attempting to use data types that are not supported will result in syntax errors
 
 For example, suppose you have a Redshift RMS table with the following schema:
 
-```
+```sql
 CREATE TABLE rms_t (c1 int, c2 char(20));
 ```
 
 If you want to create an Iceberg table using `rms_t` as the source, you need an explicit cast for the `c2` column, because the `varchar(n)` type is not supported:
 
-```
+```sql
 CREATE TABLE ext_schema.iceberg_t AS SELECT c1, c2::varchar FROM rms_t;
 ```
 

@@ -36,6 +36,7 @@ The following table lists which fields are mapped from the WebAnalytics-Clickstr
 | Element.Text | Element.Text |
 | Element.AltText | Element.AltText |
 | Element.Source | Element.Source |
+| Element.Context | Element.Context |
 | Search.Query | Search.Query |
 | Search.TotalMatchingResults | Search.TotalMatchingResults |
 | Search.ResultsPerPage | Search.ResultsPerPage |
@@ -73,6 +74,7 @@ The following table lists which fields are mapped from the WebAnalytics-Clickstr
 | Form.ValidationErrors | Form.ValidationErrors |
 | Form.FieldsCompleted | Form.FieldsCompleted |
 | Form.FieldsRequired | Form.FieldsRequired |
+| Form.Inputs | Form.Inputs |
 | Scroll.DepthPercentage | Scroll.DepthPercentage |
 | Scroll.PositionX | Scroll.PositionX |
 | Scroll.PositionY | Scroll.PositionY |

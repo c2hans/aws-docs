@@ -19,7 +19,7 @@ This tutorial creates a web application that uses JavaScript to build a map on a
 Begin by creating an HTML page (`index.html`) that includes the map's container:
 + Enter a `div` element with an `id` of `map` to apply the map's dimensions to the map view. The dimensions are inherited from the viewport.
 
-```
+```html
 <html>
   <head>
     <style>
@@ -44,7 +44,7 @@ Add the following dependencies to your application:
 + AWS Amplify auth library.
 + AWS Amplify stylesheet.
 
-```
+```js
 <!-- CSS dependencies -->
     <link href="https://cdn.amplify.aws/packages/maplibre-gl/1.15.2/maplibre-gl.css" rel="stylesheet" integrity="sha384-DrPVD9GufrxGb7kWwRv0CywpXTmfvbKOZ5i5pN7urmIThew0zXKTME+gutUgtpeD" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
 
@@ -68,7 +68,7 @@ To configure your application using JavaScript:
 
 1. Enter the identifiers of the unauthenticated identity pool that you created in [Using maps - Step 2, Set up authentication](map-prerequisites.md#create-map-resource).
 
-   ```
+   ```js
    // Cognito Identity Pool ID
    const identityPoolId = "{{region}}:{{identityPoolID}}"; // for example: us-east-1:123example-1234-5678
    // extract the Region from the Identity Pool ID
@@ -77,7 +77,7 @@ To configure your application using JavaScript:
 
 1. Configure AWS Amplify to use the resources you've created, including the identity pool and the Map resource (shown here with the default name of `explore.map`).
 
-   ```
+   ```js
    // Configure Amplify
    const { Amplify } = aws_amplify_core;
    const { createMap } = AmplifyMapLibre;
@@ -140,7 +140,7 @@ If the policy that you created for your unauthenticated Amazon Cognito role incl
 
 After completing the tutorial, the final application looks like the following example.
 
-```
+```html
 <html>
   <head>
     <!-- CSS dependencies -->

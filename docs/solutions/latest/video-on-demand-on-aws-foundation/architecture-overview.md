@@ -13,6 +13,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
 
 ![Architecture diagram depicting the following steps.](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/images/vod-on-aws-foundation-architecture-diagram.png)
 
+***Video on Demand on AWS Foundation architecture***
+
  The AWS CloudFormation template deploys the following infrastructure:
 
 1.  An [Amazon S3](https://aws.amazon.com/s3/) bucket stores source video files. The solution uploads a sample job settings file to the source S3 bucket. This file defines the encoding settings for [AWS Elemental MediaConvert](https://aws.amazon.com/mediaconvert/).

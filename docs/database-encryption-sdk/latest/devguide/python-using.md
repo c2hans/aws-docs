@@ -52,7 +52,7 @@ To use the `refresh_indexed_attributes` method, the caller must have permission 
 **Important**
 After you use your attribute actions to encrypt your table items, adding or removing attributes from your data model might cause a signature validation error that prevents you from decrypting your data. For a detailed explanation, see [Changing your data model](data-model.md).
 
-```
+```python
 DO_NOTHING = 0
 SIGN_ONLY = 1
 ENCRYPT_AND_SIGN = 2
@@ -60,7 +60,7 @@ ENCRYPT_AND_SIGN = 2
 
 For example, this `AttributeActions` object establishes `ENCRYPT_AND_SIGN` as the default for all attributes, and specifies exceptions for the `ISBN` and `PublicationYear` attributes.
 
-```
+```python
 actions = AttributeActions(
     default_action=CryptoAction.ENCRYPT_AND_SIGN,
     attribute_actions={
@@ -77,7 +77,7 @@ If you do not use a client helper class and the default action is `ENCRYPT_AND_S
 **Warning**
 Do not encrypt the primary key attributes. They must remain in plaintext so DynamoDB can find the item without running a full table scan.
 
-```
+```python
 actions = AttributeActions(
     default_action=CryptoAction.ENCRYPT_AND_SIGN,
 )

@@ -39,7 +39,7 @@ Replace the following placeholders:
  {{us-east-1}} with the AWS Region
  {{123456789012}} with the AWS account ID
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -75,7 +75,7 @@ Replace these placeholders:
  {{<gateway-id>}} with the Gateway ID, or \* for all gateways
  {{<policy-engine-id>}} with the policy engine ID, or \* for all policy engines
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -116,7 +116,7 @@ Temporal policies require the Gateway to propagate the caller’s session identi
 
 Add the following statement to the Gateway Execution Role permission policy:
 
-```
+```json
 {
   "Sid": "PolicySessionWorkloadIdentity",
   "Effect": "Allow",
@@ -160,7 +160,7 @@ Replace these placeholders:
  {{us-east-1}} with the AWS Region
  {{123456789012}} with the AWS account ID
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -312,7 +312,7 @@ This section covers common issues when configuring IAM permissions for Amazon Be
 
  **Solution:** Ensure the Gateway Execution Role includes these three permissions:
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": [
@@ -339,7 +339,7 @@ If you attach a Policy Engine to an existing Gateway using the Policy Engine con
 
  **Solution:** Add `bedrock-agentcore:InvokeGateway` (scoped to the Gateway ARN) to the Resource Management Role:
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": [
@@ -369,7 +369,7 @@ If you attach a Policy Engine to an existing Gateway using the Policy Engine con
 
  **Solution:** Ensure both the policy-engine AND gateway ARNs are included in the Resource array:
 
-```
+```json
 "Resource": [
   "arn:aws:bedrock-agentcore:us-east-1:123456789012:policy-engine/<policy-engine-id>",
   "arn:aws:bedrock-agentcore:us-east-1:123456789012:gateway/<gateway-id>"
@@ -400,7 +400,7 @@ The following example demonstrates how to create both required IAM roles using t
 ### Step 1: Create Gateway Execution Role
 <a name="policy-permissions-example-execution"></a>
 
-```
+```bash
 # Create the trust policy file
 cat > gateway-trust-policy.json <<EOF
 {
@@ -434,7 +434,7 @@ aws iam create-role \
 ### Step 2: Attach Permissions to Gateway Execution Role
 <a name="policy-permissions-example-attach"></a>
 
-```
+```bash
 # Create the permission policy file
 cat > gateway-permissions.json <<EOF
 {

@@ -29,7 +29,7 @@ The example policy includes an `aws:SourceArn` condition key for the Amazon S3 b
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

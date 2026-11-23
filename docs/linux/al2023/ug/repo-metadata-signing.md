@@ -50,7 +50,7 @@ Repository metadata signature verification is not enabled by default. It stays d
 
 The AL2023 repository configuration files in `/etc/yum.repos.d/` set `repo_gpgcheck=0` by default. To enable repository metadata verification, change this value to `1` in the repository configuration. For example, to enable it for the core repository:
 
-```
+```ini
 [amazonlinux]
 name=Amazon Linux 2023 repository
 ...
@@ -64,7 +64,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-amazon-linux-2023
 
 To return to the previous behavior, set `repo_gpgcheck=0` in the repository configuration file. The next metadata refresh succeeds without verification.
 
-```
+```sh
 [ec2-user ~]$ sudo sed -i 's/^repo_gpgcheck=1/repo_gpgcheck=0/' /etc/yum.repos.d/amazonlinux.repo
 [ec2-user ~]$ sudo dnf -y makecache
 ```
@@ -74,7 +74,7 @@ To return to the previous behavior, set `repo_gpgcheck=0` in the repository conf
 
 After enabling `repo_gpgcheck=1`, you can verify that metadata verification is working by clearing the DNF cache and refreshing the metadata:
 
-```
+```sh
 [ec2-user ~]$ sudo dnf clean metadata
 [ec2-user ~]$ sudo dnf makecache
 ```
@@ -104,7 +104,7 @@ The key import prompt defaults to `No`. An unattended DNF run cannot answer the 
 
 To prevent this, pass the `-y` option to every unattended DNF command that refreshes metadata, including continuous integration jobs, image and container builds, `cloud-init`, configuration management, and cron jobs.
 
-```
+```sh
 [ec2-user ~]$ sudo dnf -y makecache
 [ec2-user ~]$ sudo dnf -y check-update
 [ec2-user ~]$ sudo dnf -y upgrade
@@ -187,7 +187,7 @@ The exit code alone does not confirm that verification succeeded. A skipped repo
 + Audit your automation. Confirm that every metadata-fetching DNF command passes `-y`. This is what keeps you working on the next new repository URL.
 + Check the output for `Ignoring repositories`. The following command fails when the repository is skipped, which you can use to fail a pipeline:
 
-```
+```sh
 [ec2-user ~]$ sudo dnf makecache 2>&1 | grep -q "Ignoring repositories" && { echo "repo skipped"; exit 1; }
 ```
 

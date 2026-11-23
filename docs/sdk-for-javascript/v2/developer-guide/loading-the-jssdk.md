@@ -15,7 +15,7 @@ Not all services are immediately available in the SDK. To find out which service
 
 After you install the SDK, you can load the AWS package in your node application using `require`.
 
-```
+```javascript
 var AWS = require('aws-sdk');
 ```
 
@@ -24,13 +24,13 @@ var AWS = require('aws-sdk');
 
 To use the SDK in a React Native project, first install the SDK using npm:
 
-```
+```javascript
 npm install aws-sdk
 ```
 
 In your application, reference the React Native compatible version of the SDK with the following code:
 
-```
+```javascript
 var AWS = require('aws-sdk/dist/aws-sdk-react-native');
 ```
 

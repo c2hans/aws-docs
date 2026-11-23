@@ -87,7 +87,7 @@ To select the AES-GCM algorithm suite without digital signatures, include the fo
 
 The following snippet specifies the AES-GCM algorithm suite without ECDSA digital signatures. For more information, see [Encryption configuration in the AWS Database Encryption SDK for DynamoDB](ddb-java-using.md#ddb-config-encrypt).
 
-```
+```java
 .algorithmSuiteId(
     DBEAlgorithmSuiteId.ALG_AES_256_GCM_HKDF_SHA512_COMMIT_KEY_SYMSIG_HMAC_SHA384)
 ```
@@ -97,7 +97,7 @@ The following snippet specifies the AES-GCM algorithm suite without ECDSA digita
 
 The following snippet specifies the AES-GCM algorithm suite without ECDSA digital signatures. For more information, see [Encryption configuration in the AWS Database Encryption SDK for DynamoDB](ddb-net-using.md#ddb-net-config-encrypt).
 
-```
+```cs
 AlgorithmSuiteId = DBEAlgorithmSuiteId.ALG_AES_256_GCM_HKDF_SHA512_COMMIT_KEY_SYMSIG_HMAC_SHA384
 ```
 
@@ -106,7 +106,7 @@ AlgorithmSuiteId = DBEAlgorithmSuiteId.ALG_AES_256_GCM_HKDF_SHA512_COMMIT_KEY_SY
 
 The following snippet specifies the AES-GCM algorithm suite without ECDSA digital signatures. For more information, see [Encryption configuration in the AWS Database Encryption SDK for DynamoDB](ddb-rust-using.md#ddb-rust-config-encrypt).
 
-```
+```rs
 .algorithm_suite_id(
     DbeAlgorithmSuiteId::AlgAes256GcmHkdfSha512CommitKeyEcdsaP384SymsigHmacSha384,
 )

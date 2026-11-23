@@ -113,7 +113,7 @@ If you choose **Automatic**, DataSync uses NFS version 4.2 first — but only fo
 
 1. Run the command. You get a response showing the location that you just created.
 
-   ```
+   ```json
    {
        "LocationArn": "arn:aws:datasync:us-west-2:123456789012:location/loc-abcdef01234567890"
    }

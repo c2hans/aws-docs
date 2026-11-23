@@ -19,12 +19,12 @@ Suspend all activity on the device before you install software updates. Installi
 
 1. Run the `list-services` command to see the services available on the device. The command returns the service IDs of each service available on the device.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge list-services
    ```
 **Example of output of `list-services` command**
 
-   ```
+   ```JSON
    {
      "ServiceIds" : [ "greengrass", "fileinterface", "s3", "ec2", "s3-snow" ]
    }
@@ -32,12 +32,12 @@ Suspend all activity on the device before you install software updates. Installi
 
 1. For each service ID identified by the `list-services` command, run the `describe-service` command to see the status. Use this information to identify services to stop.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge describe-service --service-id {{service-id}}
    ```
 **Example of output of `describe-service` command**
 
-   ```
+   ```JSON
    {
    "ServiceId" : "s3",
      "Status" : {
@@ -68,12 +68,12 @@ Suspend all activity on the device before you install software updates. Installi
 **Note**
 The Amazon S3 adapter, Amazon EC2, AWS STS, and IAM services cannot be stopped. If Amazon S3 compatible storage on Snowball Edge is running, stop it before installing updates. Amazon S3 compatible storage on Snowball Edge has `s3-snow` as the `serviceId`.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge stop-service --service-id {{service-id}} --device-ip-addresses {{snow-device-1-ip-address}} {{snow-device-device-2-ip-address}} {{snow-device-3-ip-address}} --manifest-file {{path/to/manifest/file.bin}} --unlock-code {{29-character-unlock-code}} --endpoint https://{{snow-device-ip-address}}
    ```
 **Example of output of the `stop-service` command**
 
-   ```
+   ```bash,sh,zsh
    Stopping the AWS service on your Snowball Edge. You can determine the status of the AWS service using the describe-service command.
    ```
 
@@ -100,12 +100,12 @@ Restarting your Snowball Edge device without stopping all activity on the device
 
 1. For each device in the cluster, run the `list-services` command to see the services available on the device. The command returns the service IDs of each service available on the device.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge list-services
    ```
 **Example of output of `list-services` command**
 
-   ```
+   ```JSON
    {
      "ServiceIds" : [ "greengrass", "fileinterface", "s3", "ec2", "s3-snow" ]
    }
@@ -113,12 +113,12 @@ Restarting your Snowball Edge device without stopping all activity on the device
 
 1. For each service ID identified by the `list-services` command, run the `describe-service` command to see the status. Use this information to identify services to stop.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge describe-service --service-id {{service-id}}
    ```
 **Example of output of `describe-service` command**
 
-   ```
+   ```JSON
    {
    "ServiceId" : "s3",
      "Status" : {
@@ -149,29 +149,29 @@ Restarting your Snowball Edge device without stopping all activity on the device
 **Note**
 The Amazon S3 adapter, Amazon EC2, AWS STS, and IAM services cannot be stopped. If Amazon S3 compatible storage on Snowball Edge is running, stop it before installing updates. Amazon S3 compatible storage on Snowball Edge has `s3-snow` as the `serviceId`.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge stop-service --service-id {{service-id}} --device-ip-addresses {{snow-device-1-ip-address}} {{snow-device-device-2-ip-address}} {{snow-device-3-ip-address}} --manifest-file {{path/to/manifest/file.bin}} --unlock-code {{29-character-unlock-code}} --endpoint https://{{snow-device-ip-address}}
    ```
 **Example of output of the `stop-service` command**
 
-   ```
+   ```bash,sh,zsh
    Stopping the AWS service on your Snowball Edge. You can determine the status of the AWS service using the describe-service command.
    ```
 
 1. For each device in the cluster, run the `install-updates` command.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge install-updates
    ```
 
 1. You can check the status of this installation with the `describe-device-software` command.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge describe-device-software
    ```
 **Example of output of the `describe-device-service` command**
 
-   ```
+   ```bash,sh,zsh
    Install State: Installing //Possible values[NA, Installing, Requires Reboot]
    ```
 

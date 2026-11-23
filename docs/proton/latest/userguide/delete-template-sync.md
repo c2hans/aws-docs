@@ -24,7 +24,7 @@ Delete a template sync configuration using the console or CLI.
 
 Run the following command.
 
-```
+```sh
 $ aws proton delete-template-sync-config \
     --template-name "{{env-template}}" \
     --template-type "{{ENVIRONMENT}}"
@@ -32,7 +32,7 @@ $ aws proton delete-template-sync-config \
 
 The response is as follows.
 
-```
+```json
 {
     "templateSyncConfig": {
         "templateName": "{{env-template}}",

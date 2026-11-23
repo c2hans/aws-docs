@@ -36,7 +36,7 @@ Use one of the following options to set up your Maven `pom.xml` file.
 
 By default, the `aws-crt-client` uses an uber-jar of AWS CRT artifacts that contains binaries for several platforms, including Linux, Windows, and macOS.
 
-```
+```xml
 <project>
    <properties>
      <aws.sdk.java.version>{{2.29.10*}}</aws.sdk.java.version>
@@ -70,7 +70,7 @@ To restrict the Java runtime to platform-specific version of the AWS CRT library
 + Add an `exclusions` element to the SDK's `aws-crt-client` artifact. This exclusion prevents the SDK from transitively using the AWS CRT uber-jar.
 + Add a dependency element for the specific AWS CRT platform version you need. See the **Steps to determine the AWS CRT artifact version** below for how you can determine the correct version.
 
-```
+```java
 <project>
    <properties>
      <aws.sdk.java.version>{{2.29.101}}</aws.sdk.java.version>
@@ -163,7 +163,7 @@ import java.time.Duration;
 
 **Code**
 
-```
+```java
 // Singleton: Use s3Client for all requests.
 S3Client s3Client = S3Client.builder()
     .httpClientBuilder(AwsCrtHttpClient
@@ -191,7 +191,7 @@ import java.time.Duration;
 
 **Code**
 
-```
+```java
 // Singleton: Use s3AsyncClient for all requests.
 S3AsyncClient s3AsyncClient = S3AsyncClient.builder()
     .httpClientBuilder(AwsCrtAsyncHttpClient
@@ -236,7 +236,7 @@ import java.time.Duration;
 
 **Code**
 
-```
+```java
 // Create an AwsCrtHttpClient shared instance.
 SdkHttpClient crtHttpClient = AwsCrtHttpClient.builder()
     .connectionTimeout(Duration.ofSeconds(3))
@@ -282,7 +282,7 @@ import java.time.Duration;
 
 **Code**
 
-```
+```java
 // Create an AwsCrtAsyncHttpClient shared instance.
 SdkAsyncHttpClient crtAsyncHttpClient = AwsCrtAsyncHttpClient.builder()
     .connectionTimeout(Duration.ofSeconds(3))
@@ -321,7 +321,7 @@ You do this by adding an `exclusions` element with the default HTTP client depen
 
 In the following `pom.xml` example, the SDK uses an AWS CRT-based HTTP client for S3 services. If the service client in your code is an `S3AsyncClient`, the SDK uses `AwsCrtAsyncHttpClient`. If the service client is an S3Client, the SDK uses `AwsCrtHttpClient`. With this setup the default Netty-based asynchronous HTTP client and the default Apache-based synchronous HTTP are not available.
 
-```
+```xml
 <project>
    <properties>
      <aws.sdk.version>{{VERSION}}</aws.sdk.version>
@@ -362,14 +362,14 @@ To use the AWS CRT-based HTTP clients as the default HTTP for your application, 
 
 To set during application startup, run a command similar to the following.
 
-```
+```sh
 java app.jar -Dsoftware.amazon.awssdk.http.async.service.impl=\
 software.amazon.awssdk.http.crt.AwsCrtSdkHttpService
 ```
 
 Use the following code snippet to set the system property in your application code.
 
-```
+```java
 System.setProperty("software.amazon.awssdk.http.async.service.impl",
 "software.amazon.awssdk.http.crt.AwsCrtSdkHttpService");
 ```
@@ -394,7 +394,7 @@ The following example creates an S3 service client that uses a AWS CRT-based HTT
 
 **Imports**
 
-```
+```java
 import software.amazon.awssdk.http.crt.AwsCrtHttpClient;
 import software.amazon.awssdk.services.s3.S3Client;
 import java.time.Duration;
@@ -402,7 +402,7 @@ import java.time.Duration;
 
 **Code**
 
-```
+```java
 // Singleton: Use the s3Client for all requests.
 S3Client s3Client = S3Client.builder()
     .httpClientBuilder(AwsCrtHttpClient
@@ -424,7 +424,7 @@ s3Client.close();
 
 **Imports**
 
-```
+```java
 import software.amazon.awssdk.http.crt.AwsCrtAsyncHttpClient;
 import software.amazon.awssdk.services.s3.S3AsyncClient;
 import java.time.Duration;
@@ -432,7 +432,7 @@ import java.time.Duration;
 
 **Code**
 
-```
+```java
 // Singleton: Use the s3AsyncClient for all requests.
 S3AsyncClient s3AsyncClient = S3AsyncClient.builder()
     .httpClientBuilder(AwsCrtAsyncHttpClient
@@ -461,7 +461,7 @@ The following code snippet shows the use of the [`ProxyConfiguration.Builder`](h
 
 **Imports**
 
-```
+```java
 import software.amazon.awssdk.http.SdkHttpClient;
 import software.amazon.awssdk.http.crt.AwsCrtHttpClient;
 import software.amazon.awssdk.http.crt.ProxyConfiguration;
@@ -469,7 +469,7 @@ import software.amazon.awssdk.http.crt.ProxyConfiguration;
 
 **Code**
 
-```
+```java
 SdkHttpClient crtHttpClient = AwsCrtHttpClient.builder()
     .proxyConfiguration(ProxyConfiguration.builder()
         .scheme("https")
@@ -487,7 +487,7 @@ SdkHttpClient crtHttpClient = AwsCrtHttpClient.builder()
 
 **Imports**
 
-```
+```java
 import software.amazon.awssdk.http.async.SdkAsyncHttpClient;
 import software.amazon.awssdk.http.crt.AwsCrtAsyncHttpClient;
 import software.amazon.awssdk.http.crt.ProxyConfiguration;
@@ -495,7 +495,7 @@ import software.amazon.awssdk.http.crt.ProxyConfiguration;
 
 **Code**
 
-```
+```java
 SdkAsyncHttpClient crtAsyncHttpClient = AwsCrtAsyncHttpClient.builder()
     .proxyConfiguration(ProxyConfiguration.builder()
         .scheme("https")
@@ -522,7 +522,7 @@ To use any of the HTTPS proxy system properties, the `scheme` property must be s
 
 The equivalent setup that uses environment variables is:
 
-```
+```java
 // Set the following environment variables.
 // $ export HTTPS_PROXY="https://username:password@myproxy:1234"
 // $ export NO_PROXY="localhost|host.example.com"

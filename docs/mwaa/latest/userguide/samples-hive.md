@@ -113,7 +113,7 @@ Apache Airflow will execute the contents of Python files in the plugins folder a
 
 1. Cope the content of the following text and save locally as `.airflowignore` in the `hive_plugin` directory.
 
-   ```
+   ```text
    hadoop-3.3.0
    apache-hive-3.1.2-bin
    ```

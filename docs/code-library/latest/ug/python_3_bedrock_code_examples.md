@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon Bedrock.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock#code-examples).
 
-```
+```python
 """
 Lists the available Amazon Bedrock models.
 """
@@ -93,7 +93,7 @@ The following code example shows how to use `GetFoundationModel`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock#code-examples).
 Get details about a foundation model.
 
-```
+```python
     def get_foundation_model(self, model_identifier):
         """
         Get details about an Amazon Bedrock foundation model.
@@ -122,7 +122,7 @@ The following code example shows how to use `ListFoundationModels`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock#code-examples).
 List the available Amazon Bedrock foundation models.
 
-```
+```python
     def list_foundation_models(self):
         """
         List the available Amazon Bedrock foundation models.

@@ -65,6 +65,8 @@ We also support these additional TLS cipher suites:
 **Recommended cipher suites**
 
 You must use at least one cipher, but you can include all of them in preference order at no additional charge for Voice Connector encryption.
++ TLS\_AES\_256\_GCM\_SHA384
++ TLS\_AES\_128\_GCM\_SHA256
 + ECDHE-RSA-AES256-GCM-SHA384
 + ECDHE-RSA-AES128-GCM-SHA256
 + ECDHE-RSA-AES256-SHA384
@@ -72,17 +74,6 @@ You must use at least one cipher, but you can include all of them in preference 
 + AES256-GCM-SHA384
 + AES128-GCM-SHA256
 + AES128-SHA256
-
-**Deprecated cipher suites (support ends August 1, 2026)**
-
-The following cipher suites are being removed as part of our ongoing security improvements. Update your configurations to use the recommended cipher suites above before this date.
-+ AES256-SHA256
-+ AES256-SHA
-+ AES128-SHA
-+ DHE-RSA-AES256-GCM-SHA384
-+ DHE-RSA-AES128-GCM-SHA256
-+ DHE-RSA-AES256-SHA256
-+ DHE-RSA-AES128-SHA256
 
 ## Editing termination settings
 <a name="edit-termination"></a>

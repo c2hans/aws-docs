@@ -35,7 +35,7 @@ content-type: application/json
 
 content-type: application/jsonlines
 
-```
+```json
 {"features": [1.5, 16.0, 14.0, 23.0]}
 {"data": {"features": {"values": [1.5, 16.0, 14.0, 23.0]}}
 ```
@@ -85,7 +85,7 @@ accept: application/json
 
 accept: application/jsonlines
 
-```
+```json
 {"predicted_label": 0.0}
 {"predicted_label": 2.0}
 ```

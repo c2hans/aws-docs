@@ -74,7 +74,7 @@ You can also get the query ID for the search by selecting the lightbulb icon in 
 ------
 #### [ Python ]
 
-  ```
+  ```python
   import boto3
   import pprint
 
@@ -113,7 +113,7 @@ You can also get the query ID for the search by selecting the lightbulb icon in 
 ------
 #### [ Java ]
 
-  ```
+  ```java
   package com.amazonaws.kendra;
 
   import software.amazon.awssdk.services.kendra.KendraClient;
@@ -199,7 +199,7 @@ You must also check that you entered the correct access key and secret key.
    + Choose the **raw** JSON type for the body of the request.
    + Enter a JSON that includes your index ID and query text.
 
-     ```
+     ```json
      {
          "IndexId": "{{index-id}}",
          "QueryText": "enter a query here"
@@ -426,7 +426,7 @@ The following examples show how to search for documents in Spanish.
 ------
 #### [ Python ]
 
-  ```
+  ```python
   import boto3
   import pprint
 
@@ -474,7 +474,7 @@ The following examples show how to search for documents in Spanish.
 ------
 #### [ Java ]
 
-  ```
+  ```java
   package com.amazonaws.kendra;
 
   import software.amazon.awssdk.services.kendra.KendraClient;

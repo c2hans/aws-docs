@@ -11,7 +11,7 @@ Transcription jobs using content redaction generate two types of `confidence` va
 ## Example redacted output (batch)
 <a name="pii-redaction-output-batch"></a>
 
-```
+```json
 {
     "jobName": "my-first-transcription-job",
     "accountId": "111122223333",
@@ -67,7 +67,7 @@ Transcription jobs using content redaction generate two types of `confidence` va
 
 Here's the unredacted transcript for comparison:
 
-```
+```json
 {
     "jobName": "{{job id}}",
     "accountId": "111122223333",
@@ -118,7 +118,7 @@ Here's the unredacted transcript for comparison:
 ## Example redacted streaming output
 <a name="pii-redaction-output-stream"></a>
 
-```
+```json
 {
     "TranscriptResultStream": {
         "TranscriptEvent": {
@@ -183,7 +183,7 @@ Here's the unredacted transcript for comparison:
 
 PII identification is an additional feature that you can use with your streaming transcription job. The identified PII is listed in each segment's `Entities` section.
 
-```
+```json
 {
     "TranscriptResultStream": {
         "TranscriptEvent": {

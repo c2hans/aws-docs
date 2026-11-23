@@ -43,7 +43,7 @@ You can use `fixed-response` actions to drop client requests and return a custom
 **Example fixed response action for the AWS CLI**
 You can specify an action when you create or update a rule. The following action sends a fixed response with the specified status code.
 
-```
+```json
 "action": {
     "fixedResponse": {
         "statusCode": 404

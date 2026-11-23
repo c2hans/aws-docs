@@ -23,7 +23,7 @@ Type: [CostAndUsageQuery](API_bcmDashboards_CostAndUsageQuery.md) object
 Required: No
 
  ** costAnomalyDetected **   <a name="awscostmanagement-Type-bcmDashboards_QueryParameters-costAnomalyDetected"></a>
-The parameters for querying detected cost anomalies, including the anomaly date range and optional filters such as severity, assessment, monitor type, or anomaly ID.
+The parameters for querying detected cost anomalies, including the anomaly date range and optional filters such as severity, assessment, service, usage type, Region, monitor type, account, or anomaly ID.
 Type: [CostAnomalyDetectedQuery](API_bcmDashboards_CostAnomalyDetectedQuery.md) object
 Required: No
 

@@ -72,7 +72,7 @@ The following example combines the statements and conditions above.
 
 **Example Key policy for durable functions**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -218,7 +218,7 @@ aws lambda update-function-configuration \
 
 In an `AWS::Lambda::Function` resource, set the `KMSKeyArn` property of `DurableConfig`:
 
-```
+```yaml
 Resources:
   MyDurableFunction:
     Type: AWS::Lambda::Function
@@ -254,7 +254,7 @@ When `IncludeExecutionData` is `false`, Lambda does not call AWS KMS or decrypt 
 
 **Example: `GetDurableExecution` response with `IncludeExecutionData=false`**
 
-```
+```json
 {
     "DurableExecutionArn": "arn:aws:lambda:us-east-1:111122223333:function:myDurableFunction:execution:exec-abc123",
     "DurableExecutionName": "exec-abc123",

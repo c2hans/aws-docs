@@ -99,7 +99,7 @@ For more information about setting up Amazon Cognito, see the [Getting Started w
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -163,7 +163,7 @@ To enable a network connection type with the Network Manager, add the network co
 
 For example, if you have both Bluetooth Low Energy and Wi-Fi enabled, the line that starts with `#define configENABLED_NETWORKS` in `aws_iot_network_config.h` reads as follows:
 
-```
+```C
 #define  configENABLED_NETWORKS  ( AWSIOT_NETWORK_TYPE_BLE | AWSIOT_NETWORK_TYPE_WIFI )
 ```
 
@@ -185,7 +185,7 @@ When you define configuration variables, use the format of the placeholder value
 
 1. Issue the following command from `amazon-freertos-ble-ios-sdk/Example/AmazonFreeRTOSDemo/`:
 
-   ```
+   ```bash
    $ pod install
    ```
 
@@ -260,7 +260,7 @@ This policy is different from the IAM policy created for the Amazon Cognito auth
 
    To start the demo application in the Android SDK from the command line, run the following command:
 
-   ```
+   ```bash
    $ ./gradlew installDebug
    ```
 

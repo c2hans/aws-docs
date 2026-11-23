@@ -16,6 +16,7 @@ A resource gateway does not provide load balancing capabilities.
 + [IP address types](#resource-gateway-ip-address-type)
 + [IPv4 addresses per ENI](#ipv4-address-type-per-eni)
 + [Resource Config DNS Resolution](#resource-config-dns-resolution)
++ [Monitor your resource gateway](#resource-gateway-monitoring)
 + [Create a resource gateway](create-resource-gateway.md)
 + [Update a resource gateway](update-resource-gateway.md)
 + [Delete a resource gateway](delete-resource-gateway.md)
@@ -65,7 +66,7 @@ The IP address type of the resource gateway is independent of the IP address typ
 
 If your resource gateway has an IPv4 or a dual-stack IP address type, you can configure the number of IPv4 addresses assigned to each ENI of your resource gateway. When you create a resource gateway, you choose from 1 to 62 IPv4 addresses. After you set the number of IPv4 addresses, the value can't be changed.
 
-The IPv4 addresses are used for network address translation and determine the maximum number of concurrent IPv4 connections to a resource. By default, all resource gateways are assigned 16 IPv4 addresses per ENI. This is a suitable number of IPs to form connections with your backend resources.
+The IPv4 addresses are used for network address translation and determine the maximum number of concurrent IPv4 connections to a resource. By default, all resource gateways are assigned 16 IPv4 addresses per ENI. This is a suitable number of IPs to form connections with your backend resources. If the `PortAllocationErrors` metric for your resource gateway increases, consider creating a resource gateway with more IPv4 addresses per ENI. You can't change this value on an existing resource gateway. For more information, see [Resource gateway and resource configuration metrics](https://docs.aws.amazon.com/vpc-lattice/latest/ug/monitoring-cloudwatch.html#resource-gateway-resource-configuration-metrics) in the *Amazon VPC Lattice User Guide*.
 
 If your resource gateway uses the IPv6 address type, the resource gateway automatically receives a /80 CIDR per ENI. This value can't be changed.
 
@@ -91,3 +92,8 @@ The constraints in the table also apply when you change an existing resource gat
 To attach a CIDR resource configuration to a resource gateway, it must have `IN_VPC` enabled.
 
 DHCP option set DNS server changes take 24 hours to propagate to a resource gateway that uses `IN_VPC` DNS resolution.
+
+## Monitor your resource gateway
+<a name="resource-gateway-monitoring"></a>
+
+VPC Lattice publishes Amazon CloudWatch metrics for your resource gateway to the `AWS/VpcLattice` namespace, including bytes processed, packets dropped, new and active flows, and port allocation errors. You can view metrics for the resource gateway overall or per Availability Zone. For more information, see [Resource gateway and resource configuration metrics](https://docs.aws.amazon.com/vpc-lattice/latest/ug/monitoring-cloudwatch.html#resource-gateway-resource-configuration-metrics) in the *Amazon VPC Lattice User Guide*.

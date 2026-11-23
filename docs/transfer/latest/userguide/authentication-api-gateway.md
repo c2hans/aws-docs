@@ -132,7 +132,7 @@ The example response body is a JSON document of the following form for Amazon S3
 
 ****
 
-```
+```json
 "Policy":
 "{
   \"Version\": \"2012-10-17\",

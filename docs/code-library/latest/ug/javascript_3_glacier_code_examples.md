@@ -27,7 +27,7 @@ The following code example shows how to use `CreateVault`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glacier#code-examples).
 Create the client.
 
-```
+```javascript
 const { GlacierClient } = require("@aws-sdk/client-glacier");
 // Set the AWS Region.
 const REGION = "REGION";
@@ -37,7 +37,7 @@ export { glacierClient };
 ```
 Create the vault.
 
-```
+```javascript
 // Load the SDK for JavaScript
 import { CreateVaultCommand } from "@aws-sdk/client-glacier";
 import { glacierClient } from "./libs/glacierClient.js";
@@ -69,7 +69,7 @@ The following code example shows how to use `UploadArchive`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glacier#code-examples).
 Create the client.
 
-```
+```javascript
 const { GlacierClient } = require("@aws-sdk/client-glacier");
 // Set the AWS Region.
 const REGION = "REGION";
@@ -79,7 +79,7 @@ export { glacierClient };
 ```
 Upload the archive.
 
-```
+```javascript
 // Load the SDK for JavaScript
 import { UploadArchiveCommand } from "@aws-sdk/client-glacier";
 import { glacierClient } from "./libs/glacierClient.js";

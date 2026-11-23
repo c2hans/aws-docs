@@ -14,7 +14,7 @@ The first example includes the `MessageAttributes` field with attributes that de
 
 Because this message includes the `MessageAttributes` field, any topic subscription that sets a `FilterPolicy` can selectively accept or reject the message, as long as `FilterPolicyScope` is set to `MessageAttributes` in the subscription. For information about applying attributes to a message, see [Amazon SNS message attributes](sns-message-attributes.md).
 
-```
+```json
 {
    "Type": "Notification",
    "MessageId": "a1b2c34d-567e-8f90-g1h2-i345j67klmn8",
@@ -47,7 +47,7 @@ Because this message includes the `MessageAttributes` field, any topic subscript
 
 The following example shows the same attributes included within the `Message` field, also referred to as the *message payload* or *message body*. Any topic subscription that includes a `FilterPolicy` can selectively accept or reject the message, as long as `FilterPolicyScope` is set to `MessageBody` in the subscription.
 
-```
+```json
 {
 "Type": "Notification",
    "MessageId": "a1b2c34d-567e-8f90-g1h2-i345j67klmn8",
@@ -74,7 +74,7 @@ The properties in the following subscription filter policy match the attributes 
 
 If any single property in this policy doesn't match an attribute assigned to the message, the policy rejects the message.
 
-```
+```json
 {
    "store": ["example_corp"],
    "event": [{"anything-but": "order_cancelled"}],
@@ -94,7 +94,7 @@ The following subscription filter policy has multiple mismatches between its pro
 
 If any mismatches occur, the policy rejects the message.
 
-```
+```json
 {
    "store": ["example_corp"],
    "event": ["order_cancelled"],

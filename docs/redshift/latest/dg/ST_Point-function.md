@@ -38,7 +38,7 @@ If *x* or *y* is null, then null is returned.
 
 The following SQL constructs a point geometry from the input coordinates.
 
-```
+```sql
 SELECT ST_AsText(ST_Point(5.0, 7.0));
 ```
 

@@ -28,7 +28,7 @@ The following code example shows how to get started using HealthImaging.
 **SDK for C\+\+**
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -70,7 +70,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the hello\_health\_imaging.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/medical-imaging/MedicalImagingClient.h>
 #include <aws/medical-imaging/model/ListDatastoresRequest.h>
@@ -157,7 +157,7 @@ The following code example shows how to use `DeleteImageSet`.
 
 **SDK for C\+\+**
 
-```
+```cpp
 //! Routine which deletes an AWS HealthImaging image set.
 /*!
   \param dataStoreID: The HealthImaging data store ID.
@@ -197,7 +197,7 @@ The following code example shows how to use `GetDICOMImportJob`.
 
 **SDK for C\+\+**
 
-```
+```cpp
 //! Routine which gets a HealthImaging DICOM import job's properties.
 /*!
   \param dataStoreID: The HealthImaging data store ID.
@@ -233,7 +233,7 @@ The following code example shows how to use `GetImageFrame`.
 
 **SDK for C\+\+**
 
-```
+```cpp
 //! Routine which downloads an AWS HealthImaging image frame.
 /*!
   \param dataStoreID: The HealthImaging data store ID.
@@ -288,7 +288,7 @@ The following code example shows how to use `GetImageSetMetadata`.
 **SDK for C\+\+**
 Utility function to get image set metadata.
 
-```
+```cpp
 //! Routine which gets a HealthImaging image set's metadata.
 /*!
   \param dataStoreID: The HealthImaging data store ID.
@@ -327,7 +327,7 @@ bool AwsDoc::Medical_Imaging::getImageSetMetadata(const Aws::String &dataStoreID
 ```
 Get image set metadata without version.
 
-```
+```cpp
         if (AwsDoc::Medical_Imaging::getImageSetMetadata(dataStoreID, imageSetID, "", outputFilePath, clientConfig))
         {
             std::cout << "Successfully retrieved image set metadata." << std::endl;
@@ -336,7 +336,7 @@ Get image set metadata without version.
 ```
 Get image set metadata with version.
 
-```
+```cpp
         if (AwsDoc::Medical_Imaging::getImageSetMetadata(dataStoreID, imageSetID, versionID, outputFilePath, clientConfig))
         {
             std::cout << "Successfully retrieved image set metadata." << std::endl;
@@ -354,7 +354,7 @@ The following code example shows how to use `SearchImageSets`.
 **SDK for C\+\+**
 The utility function for searching image sets.
 
-```
+```cpp
 //! Routine which searches for image sets based on defined input attributes.
 /*!
   \param dataStoreID: The HealthImaging data store ID.
@@ -399,7 +399,7 @@ bool AwsDoc::Medical_Imaging::searchImageSets(const Aws::String &dataStoreID,
 ```
 Use case \#1: EQUAL operator.
 
-```
+```cpp
         Aws::Vector<Aws::String> imageIDsForPatientID;
         Aws::MedicalImaging::Model::SearchCriteria searchCriteriaEqualsPatientID;
         Aws::Vector<Aws::MedicalImaging::Model::SearchFilter> patientIDSearchFilters = {
@@ -422,7 +422,7 @@ Use case \#1: EQUAL operator.
 ```
 Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 
-```
+```cpp
          Aws::MedicalImaging::Model::SearchByAttributeValue useCase2StartDate;
         useCase2StartDate.SetDICOMStudyDateAndTime(Aws::MedicalImaging::Model::DICOMStudyDateAndTime()
         .WithDICOMStudyDate("19990101")
@@ -455,7 +455,7 @@ Use case \#2: BETWEEN operator using DICOMStudyDate and DICOMStudyTime.
 ```
 Use case \#3: BETWEEN operator using createdAt. Time studies were previously persisted.
 
-```
+```cpp
         Aws::MedicalImaging::Model::SearchByAttributeValue useCase3StartDate;
         useCase3StartDate.SetCreatedAt(Aws::Utils::DateTime("20231130T000000000Z",Aws::Utils::DateFormat::ISO_8601_BASIC));
 
@@ -484,7 +484,7 @@ Use case \#3: BETWEEN operator using createdAt. Time studies were previously per
 ```
 Use case \#4: EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt and sort response in ASC order on updatedAt field.
 
-```
+```cpp
         Aws::MedicalImaging::Model::SearchByAttributeValue useCase4StartDate;
         useCase4StartDate.SetUpdatedAt(Aws::Utils::DateTime("20231130T000000000Z",Aws::Utils::DateFormat::ISO_8601_BASIC));
 
@@ -535,7 +535,7 @@ The following code example shows how to use `StartDICOMImportJob`.
 
 **SDK for C\+\+**
 
-```
+```cpp
 //! Routine which starts a HealthImaging import job.
 /*!
   \param dataStoreID: The HealthImaging data store ID.
@@ -599,7 +599,7 @@ The implementation is structured as a command-line application.
 **SDK for C\+\+**
 Create an CloudFormation stack with the necessary resources.
 
-```
+```cpp
     Aws::String inputBucketName;
     Aws::String outputBucketName;
     Aws::String dataStoreId;
@@ -647,7 +647,7 @@ Create an CloudFormation stack with the necessary resources.
 ```
 Copy DICOM files to the Amazon S3 import bucket.
 
-```
+```cpp
     std::cout
             << "This workflow uses DICOM files from the National Cancer Institute Imaging Data\n"
             << "Commons (IDC) Collections." << std::endl;
@@ -690,7 +690,7 @@ Copy DICOM files to the Amazon S3 import bucket.
 ```
 Import the DICOM files to the Amazon S3 data store.
 
-```
+```cpp
 bool AwsDoc::Medical_Imaging::startDicomImport(const Aws::String &dataStoreID,
                                                const Aws::String &inputBucketName,
                                                const Aws::String &inputDirectory,
@@ -819,7 +819,7 @@ AwsDoc::Medical_Imaging::getDICOMImportJob(const Aws::String &dataStoreID,
 ```
 Get image sets created by the DICOM import job.
 
-```
+```cpp
 bool
 AwsDoc::Medical_Imaging::getImageSetsForDicomImportJob(const Aws::String &datastoreID,
                                                        const Aws::String &importJobId,
@@ -881,7 +881,7 @@ AwsDoc::Medical_Imaging::getImageSetsForDicomImportJob(const Aws::String &datast
 ```
 Get image frame information for image sets.
 
-```
+```cpp
 bool AwsDoc::Medical_Imaging::getImageFramesForImageSet(const Aws::String &dataStoreID,
                                                         const Aws::String &imageSetID,
                                                         const Aws::String &outDirectory,
@@ -993,7 +993,7 @@ bool AwsDoc::Medical_Imaging::getImageSetMetadata(const Aws::String &dataStoreID
 ```
 Download, decode and verify image frames.
 
-```
+```cpp
 bool AwsDoc::Medical_Imaging::downloadDecodeAndCheckImageFrames(
         const Aws::String &dataStoreID,
         const Aws::Vector<ImageFrameInfo> &imageFrames,
@@ -1275,7 +1275,7 @@ bool AwsDoc::Medical_Imaging::verifyChecksumForImage(opj_image_t *image,
 ```
 Clean up resources.
 
-```
+```cpp
 bool AwsDoc::Medical_Imaging::cleanup(const Aws::String &stackName,
                                       const Aws::String &dataStoreId,
                                       const Aws::Client::ClientConfiguration &clientConfiguration) {

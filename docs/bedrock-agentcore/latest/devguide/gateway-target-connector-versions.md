@@ -58,12 +58,21 @@ The following table describes how the Gateway resolves connector versions when y
 | --- | --- | --- |
 |  `1.0.0`  | 2026-10-21 | Initial release — `StartExecution`, `StartSyncExecution`, `DescribeExecution`, `StopExecution`, `GetExecutionHistory`, `ListExecutions`, `DescribeStateMachine`, `SendTaskSuccess`, `SendTaskFailure`, and `SendTaskHeartbeat` operations. `stateMachineArn` is pinnable on the four state-machine operations. |
 
+## AWS Marketplace (`aws-marketplace`)
+<a name="gateway-target-connector-versions-aws-marketplace"></a>
+
+ **Default version:** `1.0.0`
+
+| Version | Released | Changes |
+| --- | --- | --- |
+|  `1.0.0`  | 2026-11-19 | Initial release — `SearchListings`, `GetListing`, and `ListFulfillmentOptions` operations. `SearchListings` returns only x402-enabled listings. |
+
 ## Example: pin a version
 <a name="gateway-target-connector-versions-pin-example"></a>
 
 To pin a target to a specific connector version, include `source.version` in the target configuration:
 
-```
+```json
 {
   "targetConfiguration": {
     "mcp": {

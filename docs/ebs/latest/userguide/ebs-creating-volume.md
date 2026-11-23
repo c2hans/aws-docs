@@ -81,7 +81,7 @@ The encryption state of the volume depends on whether your account is [enabled f
 **To create a volume**
 Use the [create-volume](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-volume.html) command. The following example creates an empty gp3 volume with a size of 100 GiB in the specified Availability Zone.
 
-```
+```bash
 aws ec2 create-volume \
     --volume-type {{gp3}} \
     --size {{100}} \
@@ -94,7 +94,7 @@ aws ec2 create-volume \
 **To create a volume**
 Use the [New-EC2Volume](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Volume.html) cmdlet. The following example creates an empty gp3 volume with a size of 100 GiB in the specified Availability Zone.
 
-```
+```powershell
 New-EC2Volume `
     -VolumeType {{gp3}} `
     -Size {{100}} `

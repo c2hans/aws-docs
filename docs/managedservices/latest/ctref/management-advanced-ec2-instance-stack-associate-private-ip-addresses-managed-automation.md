@@ -137,7 +137,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-ec2-instance-stack-associate-private-ip-addresses-managed-automation-ex-min"></a>
 
-```
+```json
 {
     "NetworkInterfaceId": "eni-0123456789abcdef0",
     "PrivateIpAddresses": ["10.0.0.82"]
@@ -147,7 +147,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-ec2-instance-stack-associate-private-ip-addresses-managed-automation-ex-max"></a>
 
-```
+```json
 {
     "NetworkInterfaceId": "eni-0123456789abcdef0",
     "PrivateIpAddresses": ["10.0.0.82", "10.0.0.83"],

@@ -61,7 +61,7 @@ arc-zonal-shift
 
 To specify multiple actions in a single statement, separate them with commas. For example, the following:
 
-```
+```json
 "Action": [
       "arc-zonal-shift:{{action1}}",
       "arc-zonal-shift:{{action2}}"

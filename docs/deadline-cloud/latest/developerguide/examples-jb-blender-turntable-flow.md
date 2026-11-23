@@ -23,12 +23,12 @@ The job needs Blender, FFmpeg, and Python. Configure a conda queue environment w
 
 A submission hook (`hooks.yaml`) reads Flow parameters from environment variables (`FLOW_PROJECT_ID`, `FLOW_ASSET_NAME`, `FLOW_SECRET_ARN`) so artists don't manually enter project metadata. Enable bundle hooks before first use:
 
-```
+```bash
 deadline config set settings.allow_bundle_hooks true
 ```
 
 Submit the job:
 
-```
+```bash
 deadline bundle gui-submit blender_turntable_to_flow
 ```

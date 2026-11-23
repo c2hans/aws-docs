@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { S3ToSqs } from "@aws-solutions-constructs/aws-s3-sqs";
@@ -33,7 +33,7 @@ import { S3ToSqs } from "@aws-solutions-constructs/aws-s3-sqs";
 new S3ToSqs(this, 'S3ToSQSPattern', {});
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_s3_sqs import S3ToSqs
 from aws_cdk import Stack
 from constructs import Construct
@@ -41,7 +41,7 @@ from constructs import Construct
 S3ToSqs(self, 'S3ToSQSPattern')
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

@@ -8,12 +8,12 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 Specifies custom configurations for the associations between the web ACL and protected resources.
 
-Use this to customize the maximum size of the request body that your protected resources forward to AWS WAF for inspection. You can customize this setting for CloudFront, API Gateway, Amazon Cognito, App Runner, or Verified Access resources. The default setting is 16 KB (16,384 bytes).
+Use this to customize the maximum size of the request body that your protected resources forward to AWS WAF for inspection. You can customize this setting for Application Load Balancer, CloudFront, API Gateway, Amazon Cognito, App Runner, or Verified Access resources. The default setting is 8 KB (8,192 bytes) for Application Load Balancer and 16 KB (16,384 bytes) for the other resource types.
 
 **Note**
 You are charged additional fees when your protected resources forward body sizes that are larger than the default. For more information, see [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
 
-For Application Load Balancer and AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
+For AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
 
 You can also use this to have your CloudFront distributions insert the AWS WAF challenge JavaScript SDK into the HTML responses that they return. For more information, see the `ChallengeJavascriptSdkInjection` setting.
 
@@ -60,10 +60,10 @@ If you omit this setting, CloudFront does not insert the SDK. When you omit it f
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RequestBody`  <a name="cfn-wafv2-webacl-associationconfig-requestbody"></a>
-Customizes the maximum size of the request body that your protected CloudFront, API Gateway, Amazon Cognito, App Runner, and Verified Access resources forward to AWS WAF for inspection. The default size is 16 KB (16,384 bytes). You can change the setting for any of the available resource types.
+Customizes the maximum size of the request body that your protected Application Load Balancer, CloudFront, API Gateway, Amazon Cognito, App Runner, and Verified Access resources forward to AWS WAF for inspection. The default size is 8 KB (8,192 bytes) for Application Load Balancer and 16 KB (16,384 bytes) for the other resource types. You can change the setting for any of the available resource types.
 You are charged additional fees when your protected resources forward body sizes that are larger than the default. For more information, see [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
-Example JSON: ` { "API_GATEWAY": "KB_48", "APP_RUNNER_SERVICE": "KB_32" }`
-For Application Load Balancer and AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
+Example JSON: ` { "API_GATEWAY": "KB_48", "APP_RUNNER_SERVICE": "KB_32", "APPLICATION_LOAD_BALANCER": "KB_16" }`
+For AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
 *Required*: No
 *Type*: Object of [RequestBodyAssociatedResourceTypeConfig](aws-properties-wafv2-webacl-requestbodyassociatedresourcetypeconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

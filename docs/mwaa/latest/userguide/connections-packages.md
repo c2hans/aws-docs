@@ -26,7 +26,7 @@ Apache Airflow constraints files specify the provider versions available at the 
 
 1. Specify your requirements as listed in the following.
 
-   ```
+   ```bash
    --constraint "/usr/local/airflow/dags/constraints-3.11-updated.txt"
    apache-airflow-providers-amazon=={{version-number}}
    ```

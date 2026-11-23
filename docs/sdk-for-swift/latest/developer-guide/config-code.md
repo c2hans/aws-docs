@@ -17,7 +17,7 @@ All of these structures are based on a number of protocols that together describ
 
 Amazon Simple Storage Service (Amazon S3) uses the [S3Client.S3ClientConfig](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/s3clientconfig) structure, described in the *AWS SDK for Swift API Reference*. The AWS SDK for Swift defines it like this:
 
-```
+```swift
 extension S3Client {
     public struct S3ClientConfig: AWSClientRuntime.AWSDefaultClientConfiguration &
             AWSClientRuntime.AWSRegionClientConfiguration &
@@ -52,7 +52,7 @@ When only changing common options, you can often specify the custom values for y
 
 Most services let you directly specify the Region when you call their constructors. For example, to create an Amazon S3 client configured for the Region `af-south-1`, specify the `region` parameter when creating the client, as shown.
 
-```
+```swift
 do {
     let s3 = try S3Client(region: "af-south-1")
 
@@ -78,7 +78,7 @@ The following example creates a new Amazon S3 client configured with the followi
 + The retry mode is set to `RetryStrategyOptions.RateLimitingMode.adaptive`. See [Retry behavior](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html) in the *AWS SDKs and Tools Reference Guide* for details.
 + The maximum number of retries is set to 5.
 
-```
+```swift
         // Create an Amazon S3 client configuration object that specifies the
         // region as "us-east-1", an exponential backoff strategy, the
         // adaptive retry mode, and the maximum number of retries as 5.

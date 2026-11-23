@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::Route53::HostedZone ChangeHistory
 
-<a name="aws-properties-route53-hostedzone-changehistory-description"></a>The `ChangeHistory` property type specifies Property description not available. for an [AWS::Route53::HostedZone](aws-resource-route53-hostedzone.md).
+The change history feature of a hosted zone. This complex type is read-only and reports whether change history is enabled and, when enabled, the earliest time the hosted zone's change history can be read from.
 
 ## Syntax
 <a name="aws-properties-route53-hostedzone-changehistory-syntax"></a>
@@ -35,13 +35,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-route53-hostedzone-changehistory-properties"></a>
 
 `RetentionStartsAt`  <a name="cfn-route53-hostedzone-changehistory-retentionstartsat"></a>
-Property description not available.
+The earliest time the hosted zone's change history can be read from, as an ISO 8601 timestamp. Present only when `Status` is `ENABLED`.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Status`  <a name="cfn-route53-hostedzone-changehistory-status"></a>
-Property description not available.
+Whether change history is enabled for the hosted zone. Valid values are `ENABLED` and `DISABLED`.
 *Required*: No
 *Type*: String
 *Allowed values*: `ENABLED | DISABLED`

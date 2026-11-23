@@ -10,7 +10,7 @@ To contribute to this user guide, choose the **Edit this page on GitHub** link t
 
 Set `sandbox.amazonaws.com/network-isolated: "true"` on a pod to remove all network access from the Nitro Sandbox. The sandbox boots with no network interface, no DNS, no NTP, no IMDS, and no Pod Identity credentials. Isolation applies in both directions: the pod cannot reach the network, and no traffic from the network reaches the workload.
 
-```
+```yaml
 metadata:
   annotations:
     sandbox.amazonaws.com/network-isolated: "true"

@@ -6,7 +6,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
 # StartBulkDeploymentRequest
 
-```
+```json
 {
 "InputFileUri": "string",
 "ExecutionRoleArn": "string",
@@ -26,7 +26,7 @@ required: ["InputFileUri", "ExecutionRoleArn"]
 InputFileUri
 The URI of the input file in the S3 bucket. The execution role must have `getObject` permissions on this bucket to access the input file. The input file is a JSON-serialized, line-delimited file with UTF-8 encoding that provides a list of group and version IDs and the deployment type. This file must be less than 100 MB. Currently, AWS IoT Greengrass supports only `NewDeployment` deployment types.
 
-```
+```bash
 {"GroupId":"{{groupId1}}", "GroupVersionId":"{{groupVersionId1}}", "DeploymentType":"NewDeployment"}
 {"GroupId":"{{groupId2}}", "GroupVersionId":"{{groupVersionId2}}", "DeploymentType":"NewDeployment"}
 {"GroupId":"{{groupId3}}", "GroupVersionId":"{{groupVersionId3}}", "DeploymentType":"NewDeployment"}

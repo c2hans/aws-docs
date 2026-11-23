@@ -26,7 +26,7 @@ The AWS SDK for .NET supports JSON data when working with Amazon DynamoDB. This 
 
 The following example shows how to get data from a DynamoDB table in JSON format:
 
-```
+```csharp
 // using Amazon.DynamoDBv2;
 // using Amazon.DynamoDBv2.DocumentModel;
 
@@ -58,7 +58,7 @@ In the preceding example, the `ToJson` method of the `Document` class converts a
 
 The following example shows how to use JSON format to insert an item into a DynamoDB table:
 
-```
+```csharp
 // using Amazon.DynamoDBv2;
 // using Amazon.DynamoDBv2.DocumentModel;
 
@@ -81,7 +81,7 @@ Whenever you call the `ToJson` method of the `Document` class, and then on the r
 
   In this scenario, you must call the `DecodeBase64Attributes` method of the `Document` class to replace the base64-encoded JSON data with the correct binary representation. The following example replaces a base64-encoded binary scalar item attribute in an instance of a `Document` class, named `Picture`, with the correct binary representation. This example also does the same for a base64-encoded binary set item attribute in the same instance of the `Document` class, named `RelatedPictures`:
 
-  ```
+  ```csharp
   item.DecodeBase64Attributes("Picture", "RelatedPictures");
   ```
 

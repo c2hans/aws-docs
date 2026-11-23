@@ -8,7 +8,7 @@ The `PauseCallRecording` action pauses recording of a call leg. Each time you pa
 
 The following example pauses recording.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions":[

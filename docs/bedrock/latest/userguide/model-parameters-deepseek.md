@@ -26,7 +26,7 @@ For more information on how to use DeepSeek models with APIs, see [DeepSeek Mode
 
 DeepSeek has the following inference parameters for a Text Completion inference call.
 
-```
+```json
 {
     "prompt": string,
     "temperature": float,
@@ -47,7 +47,7 @@ DeepSeek has the following inference parameters for a Text Completion inference 
 
 DeepSeek has the following response parameters for a Text Completion inference call. This example is a text completion from DeepSeek, and does not return a content reasoning block.
 
-```
+```json
 {
     "choices": [
         {

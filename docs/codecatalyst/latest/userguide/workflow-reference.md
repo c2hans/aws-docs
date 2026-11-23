@@ -25,7 +25,7 @@ Most of the YAML properties that follow have corresponding UI elements in the vi
 
 The following is an example of a simple workflow definition file. It includes a few top-level properties, a `Triggers` section, and an `Actions` section with two actions: `Build` and `Test`. For more information, see [About the workflow definition file](workflow.md#workflow.example).
 
-```
+```yaml
 Name: MyWorkflow
 SchemaVersion: 1.0
 RunMode: QUEUED
@@ -93,7 +93,7 @@ The workflow definition file is written in YAML and follows the [YAML 1.1 specif
 
   Example:
 
-  ```
+  ```yaml
   Name: MyWorkflow
   # This is a comment.
   SchemaVersion: 1.0
@@ -109,7 +109,7 @@ In this guide, we use the terms *property* and *section* to refer to the main it
 **Note**
 In this guide, 'sections' are sometimes referred to as 'properties', and vise versa, depending on the context.
 
-  ```
+  ```yaml
   Name: MyWorkflow
   SchemaVersion: 1.0
   RunMode: QUEUED
@@ -124,7 +124,7 @@ In this guide, 'sections' are sometimes referred to as 'properties', and vise ve
 
 The following is the reference documentation for the top-level properties in the workflow definition file.
 
-```
+```yaml
 # Name
 Name: {{workflow-name}}
 
@@ -192,7 +192,7 @@ For more information about compute, see [Configuring compute and runtime images]
 
 Corresponding UI: *none*
 
-```
+```yaml
 Name: MyWorkflow
 SchemaVersion: 1.0
 ...
@@ -264,7 +264,7 @@ For more information about triggers, see [Starting a workflow run automatically 
 
 Corresponding UI: visual editor/workflow diagram/**Triggers**
 
-```
+```yaml
 Name: MyWorkflow
 SchemaVersion: 1.0
 ...
@@ -436,7 +436,7 @@ For more information about each action type, see [Action types](workflows-action
 
 The following is the YAML reference for actions and action groups in the workflow definition file.
 
-```
+```yaml
 Name: MyWorkflow
 SchemaVersion: 1.0
 ...

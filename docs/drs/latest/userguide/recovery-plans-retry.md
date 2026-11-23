@@ -8,7 +8,7 @@ Retrying a step recovers only the servers in that step that failed or timed out.
 
 To retry a failed step with the AWS CLI, use the `retry-recovery-plan-execution-step` command and pass the ARN of the execution step that you want to retry:
 
-```
+```bash
 aws drs retry-recovery-plan-execution-step \
     --recovery-plan-execution-step-arn {{EXECUTION_STEP_ARN}}
 ```

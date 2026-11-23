@@ -48,7 +48,7 @@ For more information, see [Managing AWS resources as a single unit with CloudFor
 **Tools for PowerShell V4**
 **Example 1: Returns the description of a resource identified in the template associated with the specified stack by the logical ID "MyDBInstance".**
 
-```
+```powershell
 Get-CFNStackResource -StackName "myStack" -LogicalResourceId "MyDBInstance"
 ```
 +  For API details, see [DescribeStackResource](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -56,7 +56,7 @@ Get-CFNStackResource -StackName "myStack" -LogicalResourceId "MyDBInstance"
 **Tools for PowerShell V5**
 **Example 1: Returns the description of a resource identified in the template associated with the specified stack by the logical ID "MyDBInstance".**
 
-```
+```powershell
 Get-CFNStackResource -StackName "myStack" -LogicalResourceId "MyDBInstance"
 ```
 +  For API details, see [DescribeStackResource](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

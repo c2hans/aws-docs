@@ -65,7 +65,7 @@ API calls made by the IAM Identity Center user can be tracked in AWS CloudTrail.
 
 You can run the following SQL command to check the query submitted by the IAM Identity Center user. In this example, the email registered in Identity Center is `username@example.com`.
 
-```
+```sql
 SELECT
     h.query_id,
     h.database_name,

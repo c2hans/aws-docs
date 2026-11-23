@@ -191,7 +191,7 @@ For role naming restrictions, see [Creating the IAM roles to use with AWS DMS](s
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -221,7 +221,7 @@ For role naming restrictions, see [Creating the IAM roles to use with AWS DMS](s
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

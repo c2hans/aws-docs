@@ -86,7 +86,7 @@ Include a `requirements.txt` file and a `packages` subdirectory containing Pytho
 
 The following example shows the archive layout:
 
-```
+```text
 my-test.zip
 ├── locustfile.py         # Required — must use this name
 ├── requirements.txt      # Optional — packages to install
@@ -106,7 +106,7 @@ The load testing container runs Linux on the x86\_64 architecture with Python 3.
 
 Run the following command to download wheels compatible with the container’s platform. You can run this command from any operating system, including macOS and Windows. Then include the resulting `packages` directory in your archive:
 
-```
+```bash
 pip download -r requirements.txt \
   --dest packages \
   --platform manylinux2014_x86_64 \

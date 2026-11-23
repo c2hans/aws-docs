@@ -102,6 +102,10 @@ For information about the errors that are common to all actions, see [Common Err
 Access denied.
 HTTP Status Code: 403
 
+ ** EntityLimitExceeded **
+The entity limit has been exceeded.
+HTTP Status Code: 400
+
  ** EntityNotFound **
 The entity was not found.
 HTTP Status Code: 404

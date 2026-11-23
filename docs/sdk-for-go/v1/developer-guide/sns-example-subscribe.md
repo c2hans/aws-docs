@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 The following example creates a subscription to the topic with the supplied ARN for the user with the supplied email address in your default region, and displays the resulting ARN.
 
-```
+```go
 package main
 
 import (

@@ -31,7 +31,7 @@ Before your triggers can generate notifications, the service role you use in you
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

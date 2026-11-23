@@ -45,7 +45,7 @@ Specify your encryption key in the image recipe, as follows:
 
   The following JSON snippet shows encryption settings for an image recipe. In addition to providing your encryption key, you must also set the `encrypted` flag to `true`.
 
-  ```
+  ```json
   {
   	...
   	"blockDeviceMappings": [
@@ -80,7 +80,7 @@ To configure cross-account distribution permissions in AWS Identity and Access M
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [{
@@ -104,7 +104,7 @@ To configure cross-account distribution permissions in AWS Identity and Access M
 
 ****
 
-   ```
+   ```json
    {
    	"Version":"2012-10-17",
    	"Statement": [
@@ -138,7 +138,7 @@ To configure cross-account distribution permissions in AWS Identity and Access M
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -187,7 +187,7 @@ To configure cross-account distribution permissions in AWS Identity and Access M
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -264,7 +264,7 @@ Configuring cross-account distribution requires specific IAM permissions. You mu
 
    The following sample file, named `create-distribution-configuration.json`, shows configuration for cross-account image distribution in the source Region:
 
-   ```
+   ```json
    {
    	"name": "cross-account-distribution-example",
    	"description": "Cross Account Distribution Configuration Example",
@@ -305,7 +305,7 @@ Tools for PowerShell doesn't take a JSON input file. Instead, each top-level JSO
 
 The following example shows how to use the [New-EC2IBDistributionConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2IBDistributionConfiguration.html) cmdlet to create distribution settings for cross-account image distribution in the source Region:
 
-```
+```ps
 Import-Module AWS.Tools.Imagebuilder
 $distribution = [Amazon.Imagebuilder.Model.Distribution]@{
     Region = "us-west-2"

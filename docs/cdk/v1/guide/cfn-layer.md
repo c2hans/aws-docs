@@ -37,7 +37,7 @@ For example, to instantiate a low-level Amazon S3 bucket L1 with analytics enabl
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 new s3.CfnBucket(this, 'amzn-s3-demo-bucket', {
   analyticsConfigurations: [
     {
@@ -51,7 +51,7 @@ new s3.CfnBucket(this, 'amzn-s3-demo-bucket', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 new s3.CfnBucket(this, 'amzn-s3-demo-bucket', {
   analyticsConfigurations: [
     {
@@ -65,7 +65,7 @@ new s3.CfnBucket(this, 'amzn-s3-demo-bucket', {
 ------
 #### [ Python ]
 
-```
+```python
 s3.CfnBucket(self, "amzn-s3-demo-bucket",
     analytics_configurations: [
         dict(id="Config",
@@ -78,7 +78,7 @@ s3.CfnBucket(self, "amzn-s3-demo-bucket",
 ------
 #### [ Java ]
 
-```
+```java
 CfnBucket.Builder.create(this, "amzn-s3-demo-bucket")
     .analyticsConfigurations(Arrays.asList(java.util.Map.of(    // Java 9 or later
         "id", "Config", // ...
@@ -88,7 +88,7 @@ CfnBucket.Builder.create(this, "amzn-s3-demo-bucket")
 ------
 #### [ C\# ]
 
-```
+```csharp
 new CfnBucket(this, 'amzn-s3-demo-bucket', new CfnBucketProps {
     AnalyticsConfigurations = new Dictionary<string, string>
     {
@@ -105,7 +105,7 @@ In the rare case where you want to define a resource that doesn't have a corresp
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 new cdk.CfnResource(this, 'amzn-s3-demo-bucket', {
   type: 'AWS::S3::Bucket',
   properties: {
@@ -123,7 +123,7 @@ new cdk.CfnResource(this, 'amzn-s3-demo-bucket', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 new cdk.CfnResource(this, 'amzn-s3-demo-bucket', {
   type: 'AWS::S3::Bucket',
   properties: {
@@ -141,7 +141,7 @@ new cdk.CfnResource(this, 'amzn-s3-demo-bucket', {
 ------
 #### [ Python ]
 
-```
+```python
 cdk.CfnResource(self, 'amzn-s3-demo-bucket',
   type="AWS::S3::Bucket",
   properties=dict(
@@ -159,7 +159,7 @@ cdk.CfnResource(self, 'amzn-s3-demo-bucket',
 ------
 #### [ Java ]
 
-```
+```java
 CfnResource.Builder.create(this, "amzn-s3-demo-bucket")
         .type("AWS::S3::Bucket")
         .properties(java.util.Map.of(    // Map.of requires Java 9 or later
@@ -173,7 +173,7 @@ CfnResource.Builder.create(this, "amzn-s3-demo-bucket")
 ------
 #### [ C\# ]
 
-```
+```csharp
 new CfnResource(this, "amzn-s3-demo-bucket", new CfnResourceProps
 {
     Type = "AWS::S3::Bucket",
@@ -205,7 +205,7 @@ The basic approach to get access to the L1 class is to use `construct.node.defau
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 // Get the CloudFormation resource
 const cfnBucket = bucket.node.defaultChild as s3.CfnBucket;
 
@@ -221,7 +221,7 @@ cfnBucket.analyticsConfiguration = [
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 // Get the CloudFormation resource
 const cfnBucket = bucket.node.defaultChild;
 
@@ -237,7 +237,7 @@ cfnBucket.analyticsConfiguration = [
 ------
 #### [ Python ]
 
-```
+```python
 # Get the CloudFormation resource
 cfn_bucket = bucket.node.default_child
 
@@ -253,7 +253,7 @@ cfn_bucket.analytics_configuration = [
 ------
 #### [ Java ]
 
-```
+```java
 // Get the CloudFormation resource
 CfnBucket cfnBucket = (CfnBucket)bucket.getNode().getDefaultChild();
 
@@ -266,7 +266,7 @@ cfnBucket.setAnalyticsConfigurations(
 ------
 #### [ C\# ]
 
-```
+```csharp
 // Get the CloudFormation resource
 var cfnBucket = (CfnBucket)bucket.Node.DefaultChild;
 
@@ -286,7 +286,7 @@ You can also use this object to change CloudFormation options such as `Metadata`
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 cfnBucket.cfnOptions.metadata = {
   MetadataKey: 'MetadataValue'
 };
@@ -295,7 +295,7 @@ cfnBucket.cfnOptions.metadata = {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 cfnBucket.cfnOptions.metadata = {
   MetadataKey: 'MetadataValue'
 };
@@ -304,7 +304,7 @@ cfnBucket.cfnOptions.metadata = {
 ------
 #### [ Python ]
 
-```
+```python
 cfn_bucket.cfn_options.metadata = {
     "MetadataKey": "MetadataValue"
 }
@@ -313,7 +313,7 @@ cfn_bucket.cfn_options.metadata = {
 ------
 #### [ Java ]
 
-```
+```java
 cfnBucket.getCfnOptions().setMetadata(java.util.Map.of(    // Java 9+
     "MetadataKey", "Metadatavalue"));
 ```
@@ -321,7 +321,7 @@ cfnBucket.getCfnOptions().setMetadata(java.util.Map.of(    // Java 9+
 ------
 #### [ C\# ]
 
-```
+```csharp
 cfnBucket.CfnOptions.Metadata = new Dictionary<string, object>
 {
     ["MetadataKey"] = "Metadatavalue"
@@ -340,7 +340,7 @@ Use one of the `addOverride` methods (Python: `add_override`) methods, as shown 
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 // Get the CloudFormation resource
 const cfnBucket = bucket.node.defaultChild as s3.CfnBucket;
 
@@ -362,7 +362,7 @@ cfnBucket.addPropertyDeletionOverride('Tags.0');
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 // Get the CloudFormation resource
 const cfnBucket = bucket.node.defaultChild ;
 
@@ -384,7 +384,7 @@ cfnBucket.addPropertyDeletionOverride('Tags.0');
 ------
 #### [ Python ]
 
-```
+```python
 # Get the CloudFormation resource
 cfn_bucket = bucket.node.default_child
 
@@ -406,7 +406,7 @@ cfn_bucket.add_property_deletion_override("Tags.0")
 ------
 #### [ Java ]
 
-```
+```java
 // Get the CloudFormation resource
 CfnBucket cfnBucket = (CfnBucket)bucket.getNode().getDefaultChild();
 
@@ -428,7 +428,7 @@ cfnBucket.addPropertyDeletionOverride("Tags.0");
 ------
 #### [ C\# ]
 
-```
+```csharp
 // Get the CloudFormation resource
 var cfnBucket = (CfnBucket)bucket.node.defaultChild;
 

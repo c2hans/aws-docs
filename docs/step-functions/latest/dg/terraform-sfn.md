@@ -90,7 +90,7 @@ The following IAM policy example grants your state machine access to invoke a La
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -109,7 +109,7 @@ We also recommend using the [`aws_iam_policy_document`](https://registry.terrafo
 
 The following IAM policy example uses the `aws_iam_policy_document` data source and grants your state machine access to invoke a Lambda function named `{{myFunction}}`.
 
-```
+```json
 data "aws_iam_policy_document" "state_machine_role_policy" {
 
   statement {

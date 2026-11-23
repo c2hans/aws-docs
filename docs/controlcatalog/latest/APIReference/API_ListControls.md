@@ -125,14 +125,14 @@ Use this operation to retrieve a paginated list of available controls, by Region
 #### Sample Request
 <a name="API_ListControls_Example_1_Request"></a>
 
-```
+```json
 aws controlcatalog list-controls --max-result 2 --region us-east-1
 ```
 
 #### Sample Response
 <a name="API_ListControls_Example_1_Response"></a>
 
-```
+```json
 {
     "Controls": [
         {
@@ -181,14 +181,14 @@ Use this operation to retrieve a paginated list of available controls, filtered 
 #### Sample Request
 <a name="API_ListControls_Example_2_Request"></a>
 
-```
+```json
 aws controlcatalog list-controls --filter "{\"Implementations\":{\"Identifiers\":[\"CODEPIPELINE_DEPLOYMENT_COUNT_CHECK\"], \"Types\":[\"AWS::Config::ConfigRule\"]}}" --region us-east-1
 ```
 
 #### Sample Response
 <a name="API_ListControls_Example_2_Response"></a>
 
-```
+```json
 {
     "Controls": [
         {

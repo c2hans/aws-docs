@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # GetOfferTerms
 
-Returns the terms attached to an offer, such as pricing terms (usage-based, contract, BYOL, free trial), legal terms, payment schedules, validity terms, support terms, and renewal terms.
+Retrieves the terms attached to an offer, such as pricing terms (usage-based, contract, Bring Your Own License (BYOL), free trial), legal terms, payment schedules, validity terms, support terms, and renewal terms. The operation returns results in pages. Use `nextToken` to retrieve the next page.
 
 ## Request Syntax
 <a name="API_marketplace-discovery_GetOfferTerms_RequestSyntax"></a>
@@ -39,20 +39,20 @@ Pattern: `[\w\-]+`
 Required: Yes
 
  ** [locale](#API_marketplace-discovery_GetOfferTerms_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOfferTerms-request-locale"></a>
-A BCP 47 language tag or comma-separated priority list specifying the preferred locale for response content. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If omitted, the service returns content in the default locale.
+The preferred locale for response content, as a Best Current Practice 47 (BCP 47) language tag or a comma-separated priority list of language tags. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If you omit this field, the service returns content in the default locale.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
 Required: No
 
  ** [maxResults](#API_marketplace-discovery_GetOfferTerms_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOfferTerms-request-maxResults"></a>
-The maximum number of results that are returned per call. You can use `nextToken` to get more results.
+The maximum number of terms to return in each call. If you omit this field, the default is 10. Use `nextToken` to retrieve the next page.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 25.
 Required: No
 
  ** [nextToken](#API_marketplace-discovery_GetOfferTerms_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOfferTerms-request-nextToken"></a>
-If `nextToken` is returned, there are more results available. Make the call again using the returned token to retrieve the next page.
+If the service returns `nextToken`, more results are available. The value of `nextToken` is a unique pagination token for each page. Make the call again with the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. An expired pagination token returns a `ValidationException`.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 8192.
 Pattern: `[a-zA-Z0-9+/=]+`
@@ -86,13 +86,13 @@ The terms attached to the offer. Each element contains exactly one term type.
 Type: Array of [OfferTerm](API_marketplace-discovery_OfferTerm.md) objects
 
  ** [locale](#API_marketplace-discovery_GetOfferTerms_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOfferTerms-response-locale"></a>
-The locale of the returned content. Indicates whether the response contains content in the requested locale, or fell back to the default locale. See `Locale` for details.
+The locale of the returned content. This value indicates whether the response contains content in the requested locale or fell back to the default locale. See `Locale` for details.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
 
  ** [nextToken](#API_marketplace-discovery_GetOfferTerms_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOfferTerms-response-nextToken"></a>
-If `nextToken` is returned, there are more results available. Make the call again using the returned token to retrieve the next page.
+If the service returns `nextToken`, more results are available. The value of `nextToken` is a unique pagination token for each page. Make the call again with the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. An expired pagination token returns a `ValidationException`.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 8192.
 Pattern: `[a-zA-Z0-9+/=]+`
@@ -103,7 +103,7 @@ Pattern: `[a-zA-Z0-9+/=]+`
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-You don't have sufficient access to perform this action.
+You don't have sufficient access to perform this operation. For the permissions that each operation requires, see [Access control for the AWS Marketplace Discovery API](https://docs.aws.amazon.com/marketplace/latest/developerguide/discovery-api-access-control.html) in the *AWS Marketplace Developer Guide*.
 HTTP Status Code: 403
 
  ** InternalServerException **
@@ -111,17 +111,23 @@ Unexpected error during processing of the request.
 HTTP Status Code: 500
 
  ** ResourceNotFoundException **
-The specified resource doesn't exist.
+The specified resource doesn't exist. Verify that the identifier is correct.
 HTTP Status Code: 404
 
  ** ThrottlingException **
-The request was denied due to request throttling.
+The request was denied due to request throttling. Reduce the frequency of your requests and retry.
 HTTP Status Code: 429
 
  ** ValidationException **
-The input fails to satisfy the constraints specified by the service.
+The input fails to satisfy the constraints specified by the service. Check the `reason` field for the constraint that failed.
  ** reason **
-The reason that the input fails to satisfy the constraints specified by the service.
+The reason that the input fails to satisfy the constraints that the Discovery API specifies. This field has one of the following values:
+INVALID\_PAGINATION\_TOKEN
+The `nextToken` value is malformed, expired, or belongs to a different request. Start the pagination again from the first page.
+MALFORMED\_REQUEST\_PARAMETERS
+One or more request parameters have an invalid value. Correct the parameters that you specified, and then resubmit your request.
+PAGINATION\_LIMIT\_EXCEEDED
+The request asks for results beyond the deepest page that the operation returns. Narrow your request with filters or a more specific search.
 HTTP Status Code: 400
 
 ## See Also

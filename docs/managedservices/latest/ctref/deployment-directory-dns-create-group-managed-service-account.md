@@ -152,7 +152,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-directory-dns-create-group-managed-service-account-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-CreateADGroupManagedServiceAccount-Admin",
   "Region": "us-east-1",
@@ -165,7 +165,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-directory-dns-create-group-managed-service-account-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-CreateADGroupManagedServiceAccount-Admin",
   "Region": "us-east-1",

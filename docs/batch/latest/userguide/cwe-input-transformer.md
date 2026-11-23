@@ -68,7 +68,7 @@ A rule can't have the same name as another rule in the same AWS Region and on th
 
 1. In the **Target input transformer** section, for **Input path**, specify the values to parse from the triggering event. For example, to parse **Batch Job State Change** event, use the following JSON format.
 
-   ```
+   ```json
    {
        "instance": "$.detail.jobId",
        "state": "$.detail.status"
@@ -77,7 +77,7 @@ A rule can't have the same name as another rule in the same AWS Region and on th
 
 1. For **Template**, enter the following.
 
-   ```
+   ```json
    {
        "instance": <jobId> ,
        "status": <status>

@@ -64,7 +64,7 @@ In the following example, for Code Editor, based on Code-OSS, Visual Studio Code
 + The instance types `ml.r6id.24xlarge` and `ml.r6id.32xlarge`.
 + The image `sagemaker_distribution` versions `1.9` and `1.8`.
 
-```
+```sh
 aws sagemaker update-user-profile \
     --domain-id domainId \
     --user-profile-name userProfileName \

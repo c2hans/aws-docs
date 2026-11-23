@@ -33,7 +33,7 @@ You need the ARN of the Automated Reasoning policy you created to start the work
 
 1. Using the terminal, start a Kiro CLI session with the following command:
 
-   ```
+   ```bash
    kiro-cli
    ```
 

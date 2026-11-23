@@ -50,7 +50,7 @@ Optionally, you can close an AWS member account directly from the **Accounts** p
 You can use one of the following commands to close an AWS account:
 + AWS CLI: [close-account](https://docs.aws.amazon.com/cli/latest/reference/organizations/close-account.html)
 
-  ```
+  ```bash
   $ aws organizations close-account \
       --account-id 123456789012
   ```

@@ -60,7 +60,7 @@ For more information, see [AWS KMS cryptography essentials](https://docs.aws.ama
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kms#code-examples).
 
-```
+```rust
 async fn make_string(client: &Client, length: i32) -> Result<(), Error> {
     let resp = client
         .generate_random()

@@ -10,7 +10,7 @@ To troubleshoot AI agent issues effectively, use the following logging and traci
 
   Legacy self-service interactions generate log entries with the event type `TRANSCRIPT_SELF_SERVICE_MESSAGE` in the following format:
 
-  ```
+  ```json
   {
       "assistant_id": "{UUID}",
       "event_timestamp": 1751414298692,
@@ -28,7 +28,7 @@ To troubleshoot AI agent issues effectively, use the following logging and traci
 
   Agentic self-service interactions generate log entries with the event type `TRANSCRIPT_LARGE_LANGUAGE_MODEL_INVOCATION`. These entries include the full orchestration context such as the prompt with tool configurations, conversation history with tool calls and results, the model completion, and the AI agent configuration. The following example shows the key fields:
 
-  ```
+  ```json
   {
       "assistant_id": "{UUID}",
       "event_timestamp": 1772748470993,

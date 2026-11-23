@@ -33,7 +33,7 @@ If you previously installed the AWS IoT Greengrass Core software and don't have 
 ------
 #### [ Linux or Unix (systemd) ]
 
-  ```
+  ```bash
   sudo systemctl status greengrass.service
   ```
 
@@ -54,7 +54,7 @@ If you previously installed the AWS IoT Greengrass Core software and don't have 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-  ```
+  ```cmd
   sc query greengrass
   ```
 
@@ -74,7 +74,7 @@ If you previously installed the AWS IoT Greengrass Core software and don't have 
 ------
 #### [ PowerShell ]
 
-  ```
+  ```ps
   Get-Service greengrass
   ```
 
@@ -99,21 +99,21 @@ If the AWS IoT Greengrass Core software is installed as a system service, you ca
 ------
 #### [ Linux or Unix (systemd) ]
 
-  ```
+  ```bash
   sudo systemctl start greengrass.service
   ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-  ```
+  ```cmd
   sc start greengrass
   ```
 
 ------
 #### [ PowerShell ]
 
-  ```
+  ```ps
   Start-Service greengrass
   ```
 
@@ -128,7 +128,7 @@ On Linux core devices, if the AWS IoT Greengrass Core software isn't installed a
 + Run the following command to start the AWS IoT Greengrass Core software. If you run this command in a terminal, you must keep the terminal session open to keep the AWS IoT Greengrass Core software running.
   + Replace `{{/greengrass/v2}}` or {{C:\\greengrass\\v2}} with the Greengrass root folder that you use.
 
-  ```
+  ```bash
   sudo {{/greengrass/v2}}/alts/current/distro/bin/loader
   ```
 

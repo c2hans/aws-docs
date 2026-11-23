@@ -9,7 +9,7 @@ To configure alert manager to send alerts to PagerDuty, you need to update your 
 **Example alert manager configuration**
 Following, is an example alert manager configuration that sends alerts to PagerDuty. In the example, replace the {{highlighted values}} with your specific values.
 
-```
+```yaml
 alertmanager_config: |
   route:
     receiver: 'pagerduty-receiver'

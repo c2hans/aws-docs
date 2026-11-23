@@ -12,7 +12,7 @@ The schema contains permissions required for the Hook. Authoring the Hook requir
 
 You can use the following schema file as a starting point to define your Hook. Use the Hook schema to specify which handlers you want to implement. If you choose not to implement a specific handler, remove it from the handlers' section of the Hook schema. For more details on the schema, see [Schema syntax](hooks-schema.md).
 
-```
+```json
 {
     "typeName":"MyCompany::Testing::MyTestHook",
     "description":"Verifies S3 bucket and SQS queues properties before create and update",

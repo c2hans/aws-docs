@@ -42,7 +42,7 @@ MCP Inspector requires version 0.17 or later. All requests can also be made with
 
 1. Run the following command to launch MCP Inspector:
 
-   ```
+   ```bash
    npx @modelcontextprotocol/inspector
    ```
 
@@ -86,7 +86,7 @@ Kiro CLI (formerly Amazon Q Developer CLI) provides command-line access to AI-as
 
 1. Add your DLT MCP Server configuration:
 
-   ```
+   ```json
    {
      "mcpServers": {
        "dlt-mcp": {
@@ -123,7 +123,7 @@ Cline is an AI coding assistant that supports MCP Server integration.
 
 1. Update the `cline_mcp_settings.json` file:
 
-   ```
+   ```json
    {
      "mcpServers": {
        "dlt-mcp": {
@@ -240,7 +240,7 @@ The client ID does not change during rotation, so you do not need to update the 
 
 1. Add a second client secret. Amazon Cognito generates the value and returns it in the response.
 
-   ```
+   ```bash
    aws cognito-idp add-user-pool-client-secret \
      --user-pool-id <user-pool-id> \
      --client-id <m2m-client-id> \
@@ -255,7 +255,7 @@ Copy the `ClientSecretValue` from the response and store it securely before cont
 
 1. Validate that the new secret issues tokens. Request a client credentials grant from your user pool’s token endpoint.
 
-   ```
+   ```bash
    curl -X POST https://<user-pool-domain>/oauth2/token \
      -H 'Content-Type: application/x-www-form-urlencoded' \
      -d 'grant_type=client_credentials' \
@@ -268,7 +268,7 @@ Copy the `ClientSecretValue` from the response and store it securely before cont
 
 1. List the client’s secrets to identify the original one. Each secret is identified by a `ClientSecretId` in the format ` <client-id>--<epoch-create-time> `. Use the `ClientSecretCreateDate` field to distinguish the original secret from the one you just added.
 
-   ```
+   ```bash
    aws cognito-idp list-user-pool-client-secrets \
      --user-pool-id <user-pool-id> \
      --client-id <m2m-client-id> \
@@ -277,7 +277,7 @@ Copy the `ClientSecretValue` from the response and store it securely before cont
 
 1. Invalidate the original secret. After this call, Amazon Cognito no longer issues tokens to any client presenting the old secret.
 
-   ```
+   ```bash
    aws cognito-idp delete-user-pool-client-secret \
      --user-pool-id <user-pool-id> \
      --client-id <m2m-client-id> \
@@ -315,14 +315,14 @@ For detailed information about available MCP tools and their parameters, refer t
 
 Natural language interaction with the MCP Server can be as simple as `Show me the load tests that have completed in the last 24 hours with their associated completion status` or can be more descriptive such as
 
-```
+```text
 Use list_scenarios to find my load tests. Then use get_latest_test_run to show me the basic execution data and performance metrics for the most recent test. If the results look concerning, also get the detailed performance metrics using get_test_run.
 ```
 
 ### Interactive performance analysis with progressive disclosure
 <a name="interactive-performance-analysis"></a>
 
-```
+```text
 I need to analyze my load test performance, but I'm not sure which specific tests to focus on. Please help me by:
 
 1. First, use list_scenarios to show me available test scenarios
@@ -338,7 +338,7 @@ Please guide me through this step by step, asking for clarification whenever you
 ### Production readiness validation
 <a name="production-readiness-validation"></a>
 
-```
+```text
 Help me validate if my API is ready for production deployment:
 
 1. Use list_scenarios to find recent test scenarios
@@ -355,7 +355,7 @@ My SLA requirements are: response time under [X]ms, error rate under [Y]%.
 ### Performance trend analysis
 <a name="performance-trend-analysis"></a>
 
-```
+```text
 Analyze the performance trend for my load tests over the past [TIME_PERIOD]:
 
 1. Use list_scenarios to get all test scenarios
@@ -372,7 +372,7 @@ Focus on completed tests and limit results to [N] tests if there are too many.
 ### Troubleshooting failed tests
 <a name="troubleshooting-failed-tests"></a>
 
-```
+```text
 Help me troubleshoot my failed load tests:
 
 1. Use list_scenarios to find test scenarios

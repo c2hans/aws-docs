@@ -30,7 +30,7 @@ The following code example shows how to get started using Systems Manager.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ssm.SsmClient;
 import software.amazon.awssdk.services.ssm.model.DocumentFilter;
@@ -111,7 +111,7 @@ The following code example shows how to:
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.ssm.model.DocumentAlreadyExistsException;
 import software.amazon.awssdk.services.ssm.model.SsmException;
 
@@ -364,7 +364,7 @@ public class SSMScenario {
 ```
 A wrapper class for Systems Manager SDK methods.
 
-```
+```java
 public class SSMActions {
 
     private static SsmAsyncClient ssmAsyncClient;
@@ -942,7 +942,7 @@ The following code example shows how to use `CreateDocument`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
     /**
      * Creates an AWS SSM document asynchronously.
      *
@@ -1002,7 +1002,7 @@ The following code example shows how to use `CreateMaintenanceWindow`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
     /**
      * Creates an SSM maintenance window asynchronously.
      *
@@ -1083,7 +1083,7 @@ The following code example shows how to use `CreateOpsItem`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
     /**
      * Creates an SSM OpsItem asynchronously.
      *
@@ -1131,7 +1131,7 @@ The following code example shows how to use `DeleteDocument`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
     /**
      * Deletes an AWS SSM document asynchronously.
      *
@@ -1179,7 +1179,7 @@ The following code example shows how to use `DeleteMaintenanceWindow`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
     /**
      * Deletes an AWS SSM Maintenance Window asynchronously.
      *
@@ -1227,7 +1227,7 @@ The following code example shows how to use `DescribeOpsItems`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
     /**
      * Describes AWS SSM OpsItems asynchronously.
      *
@@ -1286,7 +1286,7 @@ The following code example shows how to use `DescribeParameters`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ssm.SsmClient;
 import software.amazon.awssdk.services.ssm.model.GetParameterRequest;
@@ -1353,7 +1353,7 @@ The following code example shows how to use `PutParameter`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ssm.SsmClient;
 import software.amazon.awssdk.services.ssm.model.ParameterType;
@@ -1417,7 +1417,7 @@ The following code example shows how to use `SendCommand`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
     /**
      * Sends a SSM command to a managed node asynchronously.
      *
@@ -1522,7 +1522,7 @@ The following code example shows how to use `UpdateMaintenanceWindow`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
     /**
      * Updates an SSM maintenance window asynchronously.
      *
@@ -1568,7 +1568,7 @@ The following code example shows how to use `UpdateOpsItem`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
     /**
      * Resolves an AWS SSM OpsItem asynchronously.
      *

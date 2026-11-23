@@ -17,7 +17,7 @@ Before you create an ID mapping workflow for one AWS account using either the **
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

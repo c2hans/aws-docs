@@ -14,7 +14,7 @@ When set to `true`, the API ingests new data, calculating metrics and transformi
 
 Run the following command. Replace {{file-name}} with the name of the file that contains the bulk import job configuration.
 
-```
+```bash
 aws iotsitewise create-bulk-import-job --cli-input-json file://{{file-name}}.json
 ```
 
@@ -39,7 +39,7 @@ The following are examples of configuration settings:
 Make sure that your role has the permissions shown in the following example. Replace amzn-s3-demo-bucket{{-data}} with the name of the Amazon S3 bucket that contains your data. Also, replace {{amzn-s3-demo-bucket-for-errors}} with the name of the Amazon S3 bucket to which errors associated with this bulk import job are sent.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -70,7 +70,7 @@ Make sure that your role has the permissions shown in the following example. Rep
 }
 ```
 
-```
+```json
 {
    "adaptiveIngestion": adaptive-ingestion-flag,
    "deleteFilesAfterImport": delete-files-after-import-flag,
@@ -99,7 +99,7 @@ Make sure that your role has the permissions shown in the following example. Rep
 
 **Example response**
 
-```
+```json
 {
    "jobId":"f8c031d0-01d1-4b94-90b1-afe8bb93b7e5",
    "jobStatus":"PENDING",

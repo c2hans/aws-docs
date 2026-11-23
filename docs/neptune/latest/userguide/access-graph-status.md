@@ -15,8 +15,11 @@ curl -G https://{{your-neptune-endpoint}}:{{port}}/status
 Or, starting with [engine release 1.2.1.0.R6](engine-releases-1.2.1.0.R6.md), you can use the following CLI command instead:
 
 ```
-aws neptunedata get-engine-status
+aws neptunedata get-engine-status \
+  --endpoint-url https://{{your-neptune-endpoint}}:{{port}}
 ```
+
+To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 If the instance is healthy, the `status` command returns a [JSON object](#access-graph-status-sample-output) with the following fields:
 + **`status`**   –   Set to `"healthy"` if the instance is not experiencing problems.
@@ -37,7 +40,7 @@ If the instance is healthy, the `status` command returns a [JSON object](#access
 + **`features`**   –   Contains status information about the features enabled on your DB cluster:
   + **`lookupCache`**   –   The current status of the [Lookup cache](feature-overview-lookup-cache.md). This field only appears on `R5d` instance types, since those are the only instances where a lookup cache can exist. The field is a JSON object in the form:
 
-    ```
+    ```json
     "lookupCache": {
       "status": "{{current lookup cache status}}"
     }
@@ -49,7 +52,7 @@ If the instance is healthy, the `status` command returns a [JSON object](#access
     + If the disk limit has been reached on the instance, the status is listed as `"Read Only Mode - Storage Limit Reached"`.
   + **`ResultCache`**   –   The current status of the [Caching query results](gremlin-results-cache.md). This field is a JSON object in the form:
 
-    ```
+    ```json
     "ResultCache": {
       "status": "{{current results cache status}}"
     }
@@ -77,7 +80,7 @@ If the instance is healthy, the `status` command returns a [JSON object](#access
 
 The following is an example of the output from the instance status command, (in this case, run on an `R5d` instance):
 
-```
+```json
 {
   'status': 'healthy',
   'startTime': 'Thu Aug 24 21:47:12 UTC 2023',

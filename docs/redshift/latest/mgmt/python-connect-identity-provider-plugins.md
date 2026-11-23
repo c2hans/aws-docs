@@ -13,7 +13,7 @@ For general information on how to use identity provider plugins, see [Options fo
 
 Following is an example of using the Active Directory Federation Service (ADFS) identity provider plugin to authenticate a user connecting to an Amazon Redshift database.
 
-```
+```python
 >>> con = redshift_connector.connect(
     iam=True,
     database='dev',
@@ -31,7 +31,7 @@ Following is an example of using the Active Directory Federation Service (ADFS) 
 
 Following is an example of authentication using the Azure identity provider plugin. You can create values for a `client_id` and `client_secret` for an Azure Enterprise application as shown following.
 
-```
+```python
 >>>  con = redshift_connector.connect(
     iam=True,
     database='dev',
@@ -52,7 +52,7 @@ Following is an example of authentication using the Azure identity provider plug
 
  Following is an example of authentication using the AWS IAM Identity Center identity provider plugin.
 
-```
+```python
 with redshift_connector.connect(
 credentials_provider='BrowserIdcAuthPlugin',
 host='my-testing-cluster.abc.us-east-2.redshift.amazonaws.com',
@@ -73,7 +73,7 @@ Following is an example of using the Azure Browser identity provider plugin to a
 
 Multi-factor authentication occurs in the browser, where the sign-in credentials are provided by the user.
 
-```
+```python
 >>>con = redshift_connector.connect(
     iam=True,
     database='dev',
@@ -90,7 +90,7 @@ Multi-factor authentication occurs in the browser, where the sign-in credentials
 
 Following is an example of authentication using the Okta identity provider plugin. You can obtain the values for `idp_host`, `app_id` and `app_name` through the Okta application.
 
-```
+```python
 >>> con = redshift_connector.connect(
     iam=True,
     database='dev',
@@ -112,7 +112,7 @@ Following is an example of using JumpCloud with a generic SAML browser identity 
 
 The password parameter is required. However, you don't have to enter this parameter because multi-factor authentication occurs in the browser.
 
-```
+```python
 >>> con = redshift_connector.connect(
     iam=True,
     database='dev',

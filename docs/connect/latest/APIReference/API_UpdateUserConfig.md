@@ -160,7 +160,7 @@ HTTP Status Code: 429
 
 This example illustrates one usage of UpdateUserConfig.
 
-```
+```json
 POST /users/{InstanceId}/{UserId}/config HTTP/1.1
 Content-type: application/json
 

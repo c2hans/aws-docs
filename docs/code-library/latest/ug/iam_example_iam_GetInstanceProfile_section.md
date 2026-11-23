@@ -54,7 +54,7 @@ For more information, see [Using instance profiles](https://docs.aws.amazon.com/
 **Tools for PowerShell V4**
 **Example 1: This example returns details of the instance profile named `ec2instancerole` that is defined in the current AWS account.**
 
-```
+```powershell
 Get-IAMInstanceProfile -InstanceProfileName ec2instancerole
 ```
 **Output:**
@@ -72,7 +72,7 @@ Roles               : {ec2instancerole}
 **Tools for PowerShell V5**
 **Example 1: This example returns details of the instance profile named `ec2instancerole` that is defined in the current AWS account.**
 
-```
+```powershell
 Get-IAMInstanceProfile -InstanceProfileName ec2instancerole
 ```
 **Output:**

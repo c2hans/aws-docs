@@ -49,7 +49,7 @@ Install AWS ParallelCluster as a standalone application on your environment. Fol
 **Troubleshooting `pcluster` installation errors**
 + If the AWS ParallelCluster version isn't returned in step 4, restart the terminal or `source` the `bash_profile` to update the `PATH` variable to include the new binary directory as shown in the following example:
 
-  ```
+  ```bash
   $ source ~/.bash_profile
   ```
 + If you use your `pcluster` installation to create clusters with `CustomActions` specified as HTTPS resources, rather than S3 URIs, you might see a `WARNING` message indicating that these resources might not be verified ([`SSL: CERTIFICATE_VERIFY_FAILED`]). This is caused by a known issue and you can ignore this warning if you trust the authenticity of the specified resources.

@@ -74,7 +74,7 @@ To complete this migration, you must use the latest version of the `aws/aws-sdk-
 
 For projects that were installed using Composer, in the Composer file, update the SDK package to the latest version of the SDK and then run the following command.
 
-```
+```php
 composer update aws/aws-sdk-php
 ```
 
@@ -84,7 +84,7 @@ Use one of the following methods. Be sure to place the updated SDK file in the l
 
 For projects that were installed using the Phar file, download the updated file: [`aws.phar`](https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.phar).
 
-```
+```php
 <?php
   require '/path/to/aws.phar';
 ?>
@@ -92,7 +92,7 @@ For projects that were installed using the Phar file, download the updated file:
 
 For projects that were installed using the Zip file, download the updated file: [``](https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.zip).
 
-```
+```php
 <?php
   require '/path/to/aws-autoloader.php';
 ?>
@@ -123,7 +123,7 @@ V3 introduces the `S3EncryptionClientV3` class and `KmsMaterialsProviderV3` to r
 
  *Pre-migration (V2)*
 
-```
+```php
 use Aws\S3\Crypto\S3EncryptionClientV2;
 use Aws\S3\S3Client;
 use Aws\Crypto\KmsMaterialsProviderV2;
@@ -176,7 +176,7 @@ $result = $encryptionClient->getObject([
 
  *During migration (V3 with backward compatibility)*
 
-```
+```php
 use Aws\S3\Crypto\S3EncryptionClientV3;
 use Aws\S3\S3Client;
 use Aws\Crypto\KmsMaterialsProviderV3;
@@ -231,7 +231,7 @@ $result = $encryptionClient->getObject([
 
  *Post-migration (V3 with key commitment)*
 
-```
+```php
 use Aws\S3\Crypto\S3EncryptionClientV3;
 use Aws\S3\S3Client;
 use Aws\Crypto\KmsMaterialsProviderV3;
@@ -307,7 +307,7 @@ During migration, you may need to decrypt objects that were encrypted with V1 or
 
 **When to use this configuration:** Use the `'V3_AND_LEGACY'` security profile when your application needs to read objects encrypted by V1 or V2 clients. This is common during the migration period when you have a mix of old and new encrypted objects in your buckets.
 
-```
+```php
 use Aws\S3\Crypto\S3EncryptionClientV3;
 use Aws\S3\S3Client;
 use Aws\Crypto\KmsMaterialsProviderV3;
@@ -363,7 +363,7 @@ The Amazon S3 encryption client can store encryption metadata in two ways: in th
 
 **When to use this configuration:** Use `'INSTRUCTION_FILE'` when you need to preserve the original object metadata or when working with objects that have metadata size constraints. Use `'METADATA'` (the default) for simpler deployments where encryption metadata can be stored alongside the object.
 
-```
+```php
 use Aws\S3\Crypto\S3EncryptionClientV3;
 use Aws\S3\S3Client;
 use Aws\Crypto\KmsMaterialsProviderV3;

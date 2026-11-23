@@ -63,7 +63,7 @@ To view a code example for using the `$setDifference` command, choose the tab fo
 
 Here's an example of how to use the `$setDifference` operator in a Node.js application:
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function main() {
@@ -98,7 +98,7 @@ main();
 
 Here's an example of how to use the `$setDifference` operator in a Python application:
 
-```
+```python
 from pymongo import MongoClient
 
 def main():

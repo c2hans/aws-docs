@@ -318,7 +318,7 @@ Finished syncing Lambda Function HelloWorldFunction.
 
 Next, we modify our API endpoint in the application’s AWS SAM template. We change `/hello` to `/helloworld`.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...

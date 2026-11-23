@@ -62,7 +62,7 @@ Use the following instructions to configure an action to use a different IAM rol
 
 1. In the workflow action where you want to use a different IAM role, add a `Connections:` section, similar to the following:
 
-   ```
+   ```yaml
    {{action-name}}:
      Environment:
        Name: {{environment-name}}

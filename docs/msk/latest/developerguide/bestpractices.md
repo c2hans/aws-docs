@@ -117,6 +117,21 @@ Other recommendations:
 + Monitor produce and consume latency. Produce and consume latency can increase linearly with CPU utilization.
 + **JMX scrape interval**: If you enable open monitoring with the [Prometheus feature](https://docs.aws.amazon.com/msk/latest/developerguide/open-monitoring.html), it is recommended that you use a 60 second or higher scrape interval (scrape\_interval: 60s) for your Prometheus host configuration (prometheus.yml). Lowering the scrape interval can lead to high CPU usage on your cluster.
 
+### Share groups (queues)
+<a name="bestpractices-share-groups"></a>
+
+Share groups use more broker resources than consumer groups. For more information about share groups, see [Share groups (queues) on Amazon MSK](msk-share-groups.md).
+
+#### CPU guidance for share groups
+<a name="bestpractices-share-groups-cpu"></a>
+
+On average, share groups use 1.5 times more broker CPU than consumer groups, and up to 2 times more on `large` through `4xlarge` instance sizes. The overhead varies by instance size. If your broker's CPU utilization reaches the recommended limit, you can tune client fetch settings. Set `fetch.min.bytes` to reduce the number of fetch requests per byte delivered, or set `fetch.max.wait.ms` to allow the broker to batch more records per fetch response. However, this might increase end-to-end latency, so test for your workload. Alternatively, you can add brokers to your cluster.
+
+#### Throughput guidance for share groups
+<a name="bestpractices-share-groups-throughput"></a>
+
+If you observe consumer lag when using share groups, tune the following settings. On your consumers, tune the `max.poll.records` and `fetch.max.bytes` client configurations. On your brokers, tune the `group.share.max.partition.max.record.locks` broker configuration. For each share group, tune the `share.partition.max.record.locks` and `share.renew.acknowledge.enable` group configurations. Alternatively, consider adding brokers to your cluster.
+
 ### Monitor disk space
 <a name="bestpractices-monitor-disk-space"></a>
 
@@ -176,3 +191,16 @@ For information about encryption in transit and how to enable it, see [Amazon MS
 <a name="bestpractices-balance-cluster"></a>
 
 To move partitions to different brokers on the same MSK Provisioned cluster, you can use the partition reassignment tool named `kafka-reassign-partitions.sh`. We recommend that you don't reassign more than 10 partitions in a single `kafka-reassign-partitions` call for safe operations. For example, after you add new brokers to expand a cluster or to move partitions in order to removing brokers, you can rebalance that cluster by reassigning partitions to the new brokers. For information about how to add brokers to an MSK Provisioned cluster, see [Expand the number of brokers in an Amazon MSK cluster](msk-update-broker-count.md). For information about how to remove brokers from an MSK Provisioned cluster, see [Remove a broker from an Amazon MSK cluster](msk-remove-broker.md). For information about the partition reassignment tool, see [Expanding your cluster](https://kafka.apache.org/documentation/#basic_ops_cluster_expansion) in the Apache Kafka documentation.
+
+## Upgrading to Express brokers
+<a name="bestpractices-upgrade-to-express"></a>
+
+Express brokers deliver up to 3 times more throughput, 20 times faster scaling, and 90% faster recovery compared to Standard brokers. If you are running Standard brokers and want to take advantage of Express broker performance, you can use the in-place upgrade to migrate your cluster without creating a new cluster or changing your applications.
+
+Before upgrading, consider the following best practices:
++ **Run an upgrade readiness assessment**: Use the `CreateAssessment` API or the Amazon MSK console to identify and resolve configuration issues before initiating the upgrade. Common blockers include topics with replication factors other than 3 or `min.insync.replicas` other than 2.
++ **Use Controlled mode for large or complex clusters**: If you have a large number of topics or want to validate incrementally, use Controlled mode to move topics in batches. This lets you validate application behavior on Express for each batch before proceeding.
++ **Validate application behavior**: While Express brokers are fully client-compatible with Apache Kafka, applications that rely on custom broker configurations (such as `log.segment.bytes` and threading configurations) might behave differently on Express because Express manages these settings internally. Review the informational findings from the upgrade readiness assessment.
++ **Right-size after upgrading**: Because the upgrade adds one Express broker for each Standard broker, your cluster might have more capacity than your workload needs. After the upgrade, turn on intelligent rebalancing, which isn't on by default for upgraded clusters, and then use your metrics to adjust the broker count or broker size. For more information, see [Intelligent rebalancing for clusters](intelligent-rebalancing.md).
+
+For more information, see [Upgrade Standard brokers to Express brokers](msk-upgrade-standard-to-express.md).

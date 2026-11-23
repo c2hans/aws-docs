@@ -20,7 +20,7 @@ To create the specification, do the following.
 
    Replace the example environment ID with your own value. Replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws evs list-environment-vlans \
        --environment-id env-abcde12345 \
        --query 'environmentVlans[].[functionName,vlanId,cidr]' \
@@ -34,7 +34,7 @@ To create the specification, do the following.
 
    Replace the example addresses and names with your own values.
 
-   ```
+   ```json
    {
      "version": "<vcf-spec-version>",
      "vcfInstanceName": "evs-vcf",

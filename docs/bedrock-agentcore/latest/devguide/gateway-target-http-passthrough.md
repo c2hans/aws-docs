@@ -26,7 +26,7 @@ When you create an HTTP passthrough target, you provide the target endpoint URL 
 
 The target configuration for an HTTP passthrough target uses the following structure:
 
-```
+```json
 {
     "http": {
         "passthrough": {
@@ -39,7 +39,7 @@ The target configuration for an HTTP passthrough target uses the following struc
 
 The following example shows a passthrough target with a custom protocol and an explicit API schema:
 
-```
+```json
 {
     "http": {
         "passthrough": {
@@ -84,7 +84,7 @@ The following examples create a passthrough target that routes to different type
 
 1. Passthrough targets need a gateway created without `--protocol-type MCP`. Create the gateway, and declare each OAuth credential that a target uses:
 
-   ```
+   ```bash
    agentcore add gateway \
      --name MyGateway \
      --authorizer-type CUSTOM_JWT \
@@ -104,7 +104,7 @@ The following examples create a passthrough target that routes to different type
 
    Declare `slack-oauth` the same way. Route to an A2A agent using an OAuth credential:
 
-   ```
+   ```bash
    agentcore add gateway-target \
      --gateway MyGateway \
      --target-configuration '{
@@ -124,7 +124,7 @@ The following examples create a passthrough target that routes to different type
 
    Route to an external MCP server using an OAuth credential:
 
-   ```
+   ```bash
    agentcore add gateway-target \
      --gateway MyGateway \
      --target-configuration '{
@@ -144,7 +144,7 @@ The following examples create a passthrough target that routes to different type
 
    Route to an internal service using IAM (SigV4) role-based authentication with a `CUSTOM` protocol:
 
-   ```
+   ```bash
    agentcore add gateway-target \
      --gateway MyGateway \
      --target-configuration '{
@@ -167,7 +167,7 @@ The following examples create a passthrough target that routes to different type
 
    Route to an external API and pass the caller’s JWT:
 
-   ```
+   ```bash
    agentcore add gateway-target \
      --gateway MyGateway \
      --target-configuration '{
@@ -186,7 +186,7 @@ The following examples create a passthrough target that routes to different type
 
 1. Route to an A2A agent using an OAuth credential:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-target --cli-input-json '{
        "gatewayIdentifier": "GATEWAY_ID",
        "name": "partner-agent",
@@ -214,7 +214,7 @@ The following examples create a passthrough target that routes to different type
 
    Route to an external MCP server using an OAuth credential:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-target --cli-input-json '{
        "gatewayIdentifier": "GATEWAY_ID",
        "name": "slack-mcp",
@@ -242,7 +242,7 @@ The following examples create a passthrough target that routes to different type
 
    Route to an internal service using IAM role-based authentication, with a `CUSTOM` protocol and an S3 schema. The gateway role must allow `execute-api:Invoke` on the internal API and `s3:GetObject` on the schema object:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-target --cli-input-json '{
        "gatewayIdentifier": "GATEWAY_ID",
        "name": "internal-service",
@@ -277,7 +277,7 @@ The following examples create a passthrough target that routes to different type
 
    Route to an external API using an API key credential:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-target --cli-input-json '{
        "gatewayIdentifier": "GATEWAY_ID",
        "name": "external-api",
@@ -316,7 +316,7 @@ The gateway forwards the request to `{endpoint}/{path}` on the target. Replace `
 
 The following example sends an A2A message to a partner agent through the gateway:
 
-```
+```bash
 curl -X POST https://gateway-id.gateway.bedrock-agentcore.us-west-2.amazonaws.com/partner-agent/invocations \
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer <token>" \
@@ -336,7 +336,7 @@ curl -X POST https://gateway-id.gateway.bedrock-agentcore.us-west-2.amazonaws.co
 
 For a gateway in your AgentCore project, `agentcore invoke --gateway` sends the request to a path on the gateway and adds the authorization for you:
 
-```
+```bash
 agentcore invoke --gateway MyGateway \
   --path /partner-agent/invocations \
   --bearer-token "$TOKEN" \
@@ -345,7 +345,7 @@ agentcore invoke --gateway MyGateway \
 
 The following example calls an MCP server through the gateway:
 
-```
+```bash
 curl -X POST https://gateway-id.gateway.bedrock-agentcore.us-west-2.amazonaws.com/slack-mcp/mcp \
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer <token>" \

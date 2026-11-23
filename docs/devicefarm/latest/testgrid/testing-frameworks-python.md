@@ -29,7 +29,7 @@ This topic is written with the assumption you are using Python 3, Boto3, and pyt
 
    1. Import the Device Farm classes:
 
-      ```
+      ```python
       import boto3
       from selenium.webdriver import DesiredCapabilities
       from selenium.webdriver import Remote
@@ -37,7 +37,7 @@ This topic is written with the assumption you are using Python 3, Boto3, and pyt
 
    1. Instantiate a new `DeviceFarmClient` where you create your `WebDriver`
 
-      ```
+      ```python
       class {{MyPytestTests}}():
         def setup_method(self, method):
           # step 2: Set up a client for boto3
@@ -47,7 +47,7 @@ This topic is written with the assumption you are using Python 3, Boto3, and pyt
 
    1. Get a signed `WebDriver` hub URL:
 
-      ```
+      ```python
           testgrid_url_response = devicefarm_client.create_test_grid_url(
             projectArn= "arn:aws:devicefarm:us-west-2:{{111122223333}}:testgrid-project:{{123e4567-e89b-12d3-a456-426655440000}}",
             expiresInSeconds=300
@@ -56,20 +56,20 @@ This topic is written with the assumption you are using Python 3, Boto3, and pyt
 
    1. Use the `DesiredCapabilities` class to specify the browser to test against:
 
-      ```
+      ```python
           desired_capabilities = DesiredCapabilities.FIREFOX
           desired_capabilities["platform"] = "windows"
       ```
 
    1. Create your `RemoteWebDriver` in place of your existing `GeckoDriver`, `ChromeDriver`, or similar.
 
-      ```
+      ```python
           self.driver = Remote(testgrid_url_response['url'], desired_capabilities)
       ```
 
    1. Make sure to close your session after the tests are complete:
 
-      ```
+      ```python
         def teardown_method(self, method):
           self.driver.quit()
       ```

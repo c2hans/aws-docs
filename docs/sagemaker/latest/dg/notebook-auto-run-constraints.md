@@ -21,7 +21,7 @@ Papermill does not support calling `pip install` to install packages that requir
 
 Papermill registers a translator for specific kernels and languages. If you bring your own instance (BYOI), use a standard kernel name as shown in the following snippet:
 
-```
+```py
 papermill_translators.register("python", PythonTranslator)
 papermill_translators.register("R", RTranslator)
 papermill_translators.register("scala", ScalaTranslator)

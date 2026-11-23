@@ -106,7 +106,7 @@ This component uses the following log file.
 **To view this component's logs**
 + Run the following command on the core device to view this component's log file in real time. Replace `{{/greengrass/v2}}` with the path to the AWS IoT Greengrass root folder, and replace {{lambdaFunctionComponentName}} with the name of the Lambda function component that this component launches.
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/{{lambdaFunctionComponentName}}.log
   ```
 

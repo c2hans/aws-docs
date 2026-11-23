@@ -164,7 +164,7 @@ When you’re ready to proceed, click **Train your model**.
 
 The AWS DeepRacer reward function takes a dictionary object as the input.
 
-```
+```python
 def reward_function(params) :
 
     reward = ...
@@ -174,7 +174,7 @@ def reward_function(params) :
 
 The `params` dictionary object contains the following key-value pairs:
 
-```
+```json
 {
     "all_wheels_on_track": Boolean,        # flag to indicate if the agent is on the track
     "x": float,                            # agent's x-coordinate in meters
@@ -222,7 +222,7 @@ The following illustration shows that the agent is off-track.
 
  **Example:** *A reward function using the `all_wheels_on_track` parameter*
 
-```
+```python
 def reward_function(params):
     #############################################################################
     '''
@@ -264,7 +264,7 @@ The following example reward function demonstrates how to use `waypoints` and `c
 
 DeepRacer on AWS supports the following libraries: `math`, `random`, `NumPy`, `SciPy`, and `Shapely`. To use one, add an import statement above your function definition for the library you would like to use.
 
-```
+```python
 # Place import statement outside of function (supported libraries: math, random, numpy, scipy, and shapely)
 # Example imports of available libraries
 #
@@ -334,7 +334,7 @@ Displacement, in meters, between the agent center and the track center. The obse
 
  **Example:** *A reward function using the `distance_from_center` parameter*
 
-```
+```python
 def reward_function(params):
     #################################################################################
     '''
@@ -498,7 +498,7 @@ Steering angle, in degrees, of the front wheels from the center line of the agen
 
  **Example:** *A reward function using the `steering_angle` parameter*
 
-```
+```python
 def reward_function(params):
     '''
     Example of using steering angle
@@ -529,7 +529,7 @@ Number of steps completed. A step corresponds to an action taken by the agent fo
 
  **Example:** *A reward function using the `steps` parameter*
 
-```
+```python
 def reward_function(params):
     #############################################################################
     '''
@@ -575,7 +575,7 @@ Track width in meters.
 
  **Example:** *A reward function using the `track_width` parameter*
 
-```
+```python
 def reward_function(params):
     #############################################################################
     '''
@@ -627,7 +627,7 @@ An ordered list of track-dependent `Max` milestones along the track center. For 
 
 This example determines how far away the agent is from the center line, and gives higher reward if it is closer to the center of the track, encouraging the agent to closely follow the center line.
 
-```
+```python
 def reward_function(params):
     '''
     Example of rewarding the agent to follow center line
@@ -659,7 +659,7 @@ def reward_function(params):
 
 This example simply gives high rewards if the agent stays inside the borders, and lets the agent figure out the best path to finish a lap. It’s easy to program and understand, but likely takes longer to converge.
 
-```
+```python
 def reward_function(params):
     '''
     Example of rewarding the agent to stay inside the two borders of the track
@@ -686,7 +686,7 @@ def reward_function(params):
 
 This example incentivizes the agent to follow the center line but penalizes with lower reward if it steers too much, which helps prevent zig-zag behavior. The agent learns to drive smoothly in the simulator and likely keeps the same behavior when deployed to the physical vehicle.
 
-```
+```python
 def reward_function(params):
     '''
     Example of penalize steering, which helps mitigate zig-zag behaviors
@@ -726,7 +726,7 @@ def reward_function(params):
 
 This reward function rewards the agent for staying inside the track’s borders and penalizes the agent for getting too close to objects in front of it. The agent can move from lane to lane to avoid crashes. The total reward is a weighted sum of the reward and penalty. The example gives more weight to the penalty in effort to avoid crashes. Experiment with different averaging weights to train for different behavior outcomes.
 
-```
+```python
 import math
 def reward_function(params):
     '''

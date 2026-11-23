@@ -127,12 +127,12 @@ The agent accepts supporting documents (meeting transcripts, call notes, email s
 ## Agentic experience for partner onboarding
 <a name="mcp-onboarding-agent"></a>
 
-The agent automates partner onboarding to Partner Central and provides guided assistance for Marketplace seller setup and PRM compliance — all through natural language.
+The agent automates partner onboarding to Partner Central and provides guided assistance for Marketplace seller setup and AWS Revenue Measurement compliance — all through natural language.
 
 Agent capabilities:
 + **Partner profile automation** — Scan your website, auto-populate your partner profile, and manage visibility, alliance lead contact, training domains, and account connections
 + **Seller setup guidance** — Step-by-step guidance for Marketplace seller registration including tax forms, banking, compliance (KYC/BAV/SU), ESC catalog, and service-linked roles
-+ **PRM compliance guidance** — Assess PRM readiness, retrieve product codes for revenue tagging, and verify subsidiary account connections for consolidated revenue attribution
++ **AWS Revenue Measurement compliance guidance** — Assess AWS Revenue Measurement readiness, retrieve product codes for revenue tagging, and verify subsidiary account connections for consolidated revenue attribution
 
 ### Partner profile automation
 <a name="mcp-onboarding-profile-automation"></a>
@@ -152,13 +152,13 @@ The agent walks through Marketplace seller registration end-to-end, determining 
 + "Do I need KYC? I'm selling to customers in France"
 + "How do I set up payments if I'm outside the US?"
 
-### PRM compliance guidance
-<a name="mcp-onboarding-prm-compliance"></a>
+### AWS Revenue Measurement compliance guidance
+<a name="mcp-onboarding-aws-revenue-measurement-compliance"></a>
 
-The agent checks whether your account is PRM-ready — verifying that your account is connected, a listing exists, and your product code is available for tagging. For partners with subsidiary accounts, it verifies that all seller accounts are properly linked for consolidated revenue attribution.
-+ "Am I PRM compliant?"
+The agent checks whether your account is ready for AWS Revenue Measurement — verifying that your account is connected, a listing exists, and your product code is available for tagging. For partners with subsidiary accounts, it verifies that all seller accounts are properly linked for consolidated revenue attribution.
++ "Am I compliant with AWS Revenue Measurement?"
 + "Where do I find my product code for tagging?"
-+ "Tell me all the steps I need to perform to be PRM compliant"
++ "Tell me all the steps I need to perform to be compliant with AWS Revenue Measurement"
 
 ## Get started
 <a name="mcp-get-started"></a>

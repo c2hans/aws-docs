@@ -27,7 +27,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { FargateToSecretsmanager, FargateToSecretsmanagerProps } from '@aws-solutions-constructs/aws-fargate-secretsmanager';
@@ -40,7 +40,7 @@ const constructProps: FargateToSecretsmanagerProps = {
 new FargateToSecretsmanager(stack, 'test-construct', constructProps);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_fargate_secretsmanager import FargateToSecretsmanager, FargateToSecretsmanagerProps
 from aws_cdk import (
     Stack
@@ -52,7 +52,7 @@ FargateToSecretsmanager(self, 'test_construct',
             ecr_repository_arn="arn:aws:ecr:us-east-1:123456789012:repository/your-ecr-repo")
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

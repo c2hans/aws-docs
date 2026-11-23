@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Initiate the forced termination of all cluster compute nodes. This does not work with AWS Batch clusters.
 
-```
+```sh
 pcluster delete-cluster-instances [-h]
                  --cluster-name {{CLUSTER_NAME}}
                 [--debug]

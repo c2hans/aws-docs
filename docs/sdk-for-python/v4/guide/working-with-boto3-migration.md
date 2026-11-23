@@ -47,7 +47,7 @@ Before you run the example:
 
 Install both packages for side-by-side comparison:
 
-```
+```bash
 python -m pip install boto3 aws-sdk-dynamodb
 ```
 
@@ -58,7 +58,7 @@ The configured identity needs `dynamodb:GetItem` permission for the table. Use a
 
 The original Boto3 code creates the client dynamically, runs the operation synchronously, accepts modeled request names as keyword arguments, and returns nested dictionaries.
 
-```
+```python
 from typing import Any
 
 import boto3
@@ -100,7 +100,7 @@ The conversion changes three parts: client construction, request arguments, and 
 
 The converted version uses the synchronous DynamoDB client of the AWS SDK for Python v4 and keeps the same result handling. It imports the generated client, configuration, and attribute-value union types. Then it resolves the configuration. It calls `get_item()` with keyword arguments and passes each key attribute as a dictionary with a snake-case union key, such as `{"s": AUTHOR}`. Then it reads the optional `item` output attribute and narrows the returned title to `AttributeValueS`.
 
-```
+```python
 from aws_sdk_dynamodb import DynamoDBClient, DynamoDBConfig
 from aws_sdk_dynamodb.models import AttributeValue, AttributeValueS
 
@@ -153,7 +153,7 @@ For the other accepted argument forms, see [Making requests and handling respons
 
 The complete example uses one shared command-line parser and entry point for both implementations:
 
-```
+```python
 import argparse
 
 def parse_args() -> argparse.Namespace:
@@ -180,7 +180,7 @@ if __name__ == "__main__":
 
 Run each implementation against the same table, key, and Region:
 
-```
+```bash
 python migrate_boto3_dynamodb.py Books --region us-east-1 --implementation boto3
 python migrate_boto3_dynamodb.py Books --region us-east-1 --implementation sdk
 ```

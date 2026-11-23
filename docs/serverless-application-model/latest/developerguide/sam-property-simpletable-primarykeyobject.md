@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-simpletable-primarykeyobject-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#sam-simpletable-primarykeyobject-name): {{String}}
   [Type](#sam-simpletable-primarykeyobject-type): {{String}}
 ```
@@ -47,7 +47,7 @@ Primary key example.
 #### YAML
 <a name="sam-property-simpletable-primarykeyobject--examples--primarykey--yaml"></a>
 
-```
+```yaml
 Properties:
   PrimaryKey:
     Name: MyPrimaryKey

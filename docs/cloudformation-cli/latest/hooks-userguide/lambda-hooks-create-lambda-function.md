@@ -37,7 +37,7 @@ In order to communicate to Hooks if your request succeeded or failed, your Lambd
 
 The following is an example shape of the response Hooks expects:
 
-```
+```json
 {
   "hookStatus": "SUCCESS" or "FAILED" or "IN_PROGRESS",
   "errorCode": "NonCompliant" or "InternalFailure"
@@ -142,7 +142,7 @@ When your Lambda is invoked for a resource operation, you'll receive a JSON inpu
 
 The following is an example shape of the JSON input:
 
-```
+```json
 {
     "awsAccountId": String,
     "stackId": String,
@@ -216,7 +216,7 @@ If the Hookwas set to `IN_PROGRESS`, and `callbackContext` was returned, it will
 
 The following example input shows a Lambda Hook that will receive the definition of the `AWS::DynamoDB::Table` resource to update, where the `ReadCapacityUnits` of `ProvisionedThroughput` is changed from 3 to 10. This is the data available to Lambda for evaluation.
 
-```
+```json
 {
     "awsAccountId": "123456789012",
     "stackId": "arn:aws:cloudformation:us-west-2:123456789012:stack/MyStack/1a2345b6-0000-00a0-a123-00abc0abc000",
@@ -375,7 +375,7 @@ When your Lambda is invoked for a stack operation, you'll receive a JSON request
 
 The following is an example shape of the JSON input:
 
-```
+```json
 {
     "clientRequesttoken": String,
     "awsAccountId": String,
@@ -445,7 +445,7 @@ If the Hook was set to `IN_PROGRESS` and `callbackContext` was returned, it will
 
 The `payload` property in the request data is a URL that your code needs to fetch. Once it has received the URL, you get an object with the following schema:
 
-```
+```json
 {
     "template": String,
     "previousTemplate": String
@@ -465,7 +465,7 @@ In `delete-stack` operations, this value will be empty.
 
 The following is an example stack change input. The Hook is evaluating a change which updates the `ObjectLockEnabled` to true, and adds an Amazon SQS queue:
 
-```
+```json
 {
     "clientRequestToken": "f8da6d11-b23f-48f4-814c-0fb6a667f50e",
     "awsAccountId": "123456789012",
@@ -603,7 +603,7 @@ The input for change set operations is similar to stack operations, but the payl
 
 The following is an example shape of the JSON input:
 
-```
+```json
 {
     "clientRequesttoken": String,
     "awsAccountId": String,
@@ -668,7 +668,7 @@ If the Hook was set to `IN_PROGRESS` and `callbackContext` was returned, it will
 
 The `payload` property in the request data is a URL that your code needs to fetch. Once it has received the URL, you get an object with the following schema:
 
-```
+```json
 {
     "template": String,
     "changedResources": [
@@ -708,7 +708,7 @@ The resource type that’s being changed.
 
 The following is an example change set change input. In the following example, you can see the changes introduced by the change set. The first change is deleting a queue called `CoolQueue`. The second change is adding a new queue called `NewCoolQueue`. The last change is an update to the `DynamoDBTable`.
 
-```
+```json
 {
     "clientRequestToken": "f8da6d11-b23f-48f4-814c-0fb6a667f50e",
     "awsAccountId": "123456789012",

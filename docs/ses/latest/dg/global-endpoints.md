@@ -43,7 +43,7 @@ Before creating a Global endpoint you'll first need to grant SES permission to c
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

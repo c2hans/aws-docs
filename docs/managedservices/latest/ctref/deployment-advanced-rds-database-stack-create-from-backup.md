@@ -144,7 +144,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-rds-database-stack-create-from-backup-ex-min"></a>
 
-```
+```json
 {
   "Description": "Create RDS Instance Stack from snapshot: awsbackup:job-00000000-0000-0000-0000-000000000000.",
   "VpcId": "vpc-12345678901234567",
@@ -160,7 +160,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-rds-database-stack-create-from-backup-ex-max"></a>
 
-```
+```json
 {
   "Description": "Create RDS Instance Stack from snapshot: rds:sr341e8q8bofsd-2017-04-19-22-13.",
   "VpcId": "vpc-12345678",

@@ -53,7 +53,7 @@ If *srid* is not valid, then an error is returned.
 
 The following SQL constructs a geometry object from the WKT representation and SRID value.
 
-```
+```sql
 SELECT ST_GeomFromText('POLYGON((0 0,0 1,1 1,1 0,0 0))',4326);
 ```
 

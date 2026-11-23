@@ -34,7 +34,7 @@ After completing the self-assessment and adding other live evidence, it's import
 
 **Note**
 This profile isn't visible to buyers until you request that the AWS Marketplace Vendor Insights support team update its visibility. After the support team completes the update, the security profile is accessible to buyers that signed your nondisclosure agreement (NDA).
-If you want to delete a subscriber's personally identifiable information (PII) data from your AWS Marketplace Vendor Insights profile, start a support case by contacting [Support](https://aws.amazon.com/contact-us).
+If you want to delete a subscriber's personally identifiable information (PII) data from your AWS Marketplace Vendor Insights profile, contact the AWS Marketplace support team on the [AWS Partner Central and Marketplace Support page](https://us-east-1.console.aws.amazon.com/partnercentral/support?region=us-east-1) in the AWS Partner Central console.
 
 **To view your security profile as buyers view it**
 

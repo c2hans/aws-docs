@@ -133,7 +133,7 @@ Add a policy statement similar to the one in the following policy. Replace `amzn
 
 ****
 
-```
+```json
 {
     "Id": "ExamplePolicy",
     "Version":"2012-10-17",

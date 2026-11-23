@@ -11,7 +11,7 @@ AWS Device Farm allows you to use [AWS Identity and Access Management](https://d
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{

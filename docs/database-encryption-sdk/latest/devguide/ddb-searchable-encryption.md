@@ -55,7 +55,7 @@ The following snippet creates test items, defines the `DynamoDbEncryptionTransfo
 
 **See the complete code sample**: [VirtualBeaconSearchableEncryptionExample.java](https://github.com/aws/aws-database-encryption-sdk-dynamodb//blob/main/Examples/runtimes/java/DynamoDbEncryption/src/main/java/software/amazon/cryptography/examples/searchableencryption/VirtualBeaconSearchableEncryptionExample.java)
 
-```
+```java
 // Create test items
 final PutItemRequest itemWithHasTestResultPutRequest = PutItemRequest.builder()
     .tableName(ddbTableName)
@@ -94,7 +94,7 @@ assert resolveOutput.VirtualFields().equals(vf);
 
 **See the complete code sample**: [VirtualBeaconSearchableEncryptionExample.cs](https://github.com/aws/aws-database-encryption-sdk-dynamodb/tree/main/Examples/runtimes/net/src/searchableencryption/VirtualBeaconSearchableEncryptionExample.cs).
 
-```
+```cs
  // Create item with hasTestResult=true
 var itemWithHasTestResult = new Dictionary<String, AttributeValue>
 {
@@ -135,7 +135,7 @@ Debug.Assert(resolveOutput.VirtualFields["stateAndHasTestResult"] == "CAt");
 
 **See the complete code sample**: [virtual\_beacon\_searchable\_encryption.rs](https://github.com/aws/aws-database-encryption-sdk-dynamodb/blob/main/releases/rust/db_esdk/examples/searchableencryption/virtual_beacon_searchable_encryption.rs).
 
-```
+```rs
 // Create item with hasTestResult=true
 let item_with_has_test_result = HashMap::from([
     (
@@ -194,7 +194,7 @@ The following snippet creates a test item, defines the `DynamoDbEncryptionTransf
 
 **See the complete code sample**: [CompoundBeaconSearchableEncryptionExample.java](https://github.com/aws/aws-database-encryption-sdk-dynamodb//blob/main/Examples/runtimes/java/DynamoDbEncryption/src/main/java/software/amazon/cryptography/examples/searchableencryption/CompoundBeaconSearchableEncryptionExample.java)
 
-```
+```java
 // Create an item with both attributes used in the compound beacon.
 final HashMap<String, AttributeValue> item = new HashMap<>();
 item.put("work_id", AttributeValue.builder().s("9ce39272-8068-4efd-a211-cd162ad65d4c").build());
@@ -229,7 +229,7 @@ assert resolveOutput.CompoundBeacons().equals(cbs);
 
 **See the complete code sample**: [CompoundBeaconSearchableEncryptionExample.cs](https://github.com/aws/aws-database-encryption-sdk-dynamodb/tree/main/Examples/runtimes/net/src/searchableencryption/CompoundBeaconSearchableEncryptionExample.cs)
 
-```
+```cs
 // Create an item with both attributes used in the compound beacon
 var item = new Dictionary<String, AttributeValue>
 {
@@ -264,7 +264,7 @@ Debug.Assert(resolveOutput.CompoundBeacons["last4UnitCompound"] == "L-5678.U-011
 
 **See the complete code sample**: [compound\_beacon\_searchable\_encryption.rs](https://github.com/aws/aws-database-encryption-sdk-dynamodb/blob/main/releases/rust/db_esdk/examples/searchableencryption/compound_beacon_searchable_encryption.rs)
 
-```
+```rust
 // Create an item with both attributes used in the compound beacon
 let item = HashMap::from([
     (

@@ -92,7 +92,7 @@ For more information, see [Using Sampling Rules with the X-Ray API](https://docs
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/xray#code-examples).
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.xray.XRayClient;
@@ -144,7 +144,7 @@ public class GetSamplingRules {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/xray#code-examples).
 
-```
+```kotlin
 suspend fun getRules() {
     XRayClient.fromEnvironment { region = "us-east-1" }.use { xRayClient ->
         val response = xRayClient.getSamplingRules(GetSamplingRulesRequest {})

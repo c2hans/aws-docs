@@ -23,7 +23,7 @@ To retrieve the items that DynamoDB found, use the `[resultsForTable() ](https:/
 
 To discover items that DynamoDB did not process, use the approach after comment line 5. The `BatchGetResultPage` class has the `[unprocessedKeysForTable()](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/BatchGetResultPage.html#unprocessedKeysForTable(software.amazon.awssdk.enhanced.dynamodb.MappedTableResource))` method that gives you access to each key that was unprocessed. The [BatchGetItem API reference](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_BatchGetItem.html) has more information about situations that result in unprocessed items.
 
-```
+```java
     public static void batchGetItemExample(DynamoDbEnhancedClient enhancedClient,
                                            DynamoDbTable<Customer> customerTable,
                                            DynamoDbTable<MovieActor> movieActorTable) {
@@ -102,7 +102,7 @@ The `batchWriteItem` method is called after comment line 3. The `[builder](https
 
 The returned `[BatchWriteResult](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/BatchWriteResult.html)` object provides separate methods for each operation to view unprocessed requests. The code after comment line 4a provides the keys for unprocessed delete requests and the code after comment line 4b provides the unprocessed put items.
 
-```
+```java
     public static void batchWriteItemExample(DynamoDbEnhancedClient enhancedClient,
                                              DynamoDbTable<ProductCatalog> catalogTable,
                                              DynamoDbTable<MovieActor> movieActorTable) {
@@ -147,7 +147,7 @@ The following helper methods provide the model objects for the put and delete op
 ### Helper methods
 <a name="ddb-en-client-use-multiop-batch-write-helpers"></a>
 
-```
+```java
  1.     public static ProductCatalog getProductCatItem1() {
  2.         return ProductCatalog.builder()
  3.                 .id(2)

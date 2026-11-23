@@ -13,19 +13,35 @@ A filter used to narrow purchase option results by product, seller, type, visibi
 In the following list, the required parameters are described first.
 
  ** filterType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_PurchaseOptionFilter-filterType"></a>
-The type of filter to apply, such as `PRODUCT_ID`, `VISIBILITY_SCOPE`, or `PURCHASE_OPTION_TYPE`.
+The type of filter to apply. This field has one of the following values:
+AVAILABILITY\_STATUS
+Filters by whether the purchase option is available or expired.
+PRODUCT\_ID
+Filters by product.
+PURCHASE\_OPTION\_TYPE
+Filters by offer or offer set.
+SELLER\_OF\_RECORD\_PROFILE\_ID
+Filters by seller.
+VISIBILITY\_SCOPE
+Filters by visibility.
+See `filterValues` for the values that each type accepts.
 Type: String
 Valid Values: `PRODUCT_ID | SELLER_OF_RECORD_PROFILE_ID | PURCHASE_OPTION_TYPE | VISIBILITY_SCOPE | AVAILABILITY_STATUS`
 Required: Yes
 
  ** filterValues **   <a name="AWSMarketplaceService-Type-marketplace-discovery_PurchaseOptionFilter-filterValues"></a>
 The values to filter by. Supported values depend on `filterType`:
-+  `PRODUCT_ID` – One or more product identifiers to filter by.
-+  `SELLER_OF_RECORD_PROFILE_ID` – One or more seller profile identifiers to filter by.
-+  `PURCHASE_OPTION_TYPE` – One or more purchase option types to filter by: `OFFER` or `OFFERSET`.
-+  `VISIBILITY_SCOPE` – The visibility scope to filter by: `PRIVATE`.
-+  `AVAILABILITY_STATUS` – One or more availability statuses to filter by: `AVAILABLE` or `EXPIRED`.
-To retrieve private offers and offer sets visible to you, use `VISIBILITY_SCOPE` with `PRIVATE`. OR logic combines multiple values within the same filter.
+AVAILABILITY\_STATUS
+One or more availability statuses to filter by: `AVAILABLE` or `EXPIRED`.
+PRODUCT\_ID
+One or more product identifiers to filter by.
+PURCHASE\_OPTION\_TYPE
+One or more purchase option types to filter by: `OFFER` or `OFFERSET`.
+SELLER\_OF\_RECORD\_PROFILE\_ID
+One or more seller profile identifiers to filter by.
+VISIBILITY\_SCOPE
+The visibility scope to filter by: `PRIVATE`.
+To retrieve private offers and offer sets visible to you, use `VISIBILITY_SCOPE` with `PRIVATE`. Within one filter, a result matches if it has any of the values.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Length Constraints: Minimum length of 1. Maximum length of 255.

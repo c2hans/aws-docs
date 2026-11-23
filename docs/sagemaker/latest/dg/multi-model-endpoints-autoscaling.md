@@ -29,7 +29,7 @@ To use a predefined metric in a scaling policy, create a target tracking configu
 
 The following example is a typical policy configuration for target-tracking scaling for a variant. In this configuration, we use the `SageMakerVariantInvocationsPerInstance` predefined metric to adjust the number of variant instances so that each instance has an `InvocationsPerInstance` metric of `70`.
 
-```
+```json
 {"TargetValue": 70.0,
     "PredefinedMetricSpecification":
     {
@@ -98,7 +98,7 @@ To add a cooldown period for scaling out your endpoint, specify a value, in seco
 
 The following is an example target-tracking configuration for a scaling policy. In this configuration, the `SageMakerVariantInvocationsPerInstance` predefined metric is used to adjust scaling based on an average of `70` across all instances of that variant. The configuration provides a scale-in cooldown period of 10 minutes and a scale-out cooldown period of 5 minutes.
 
-```
+```json
 {"TargetValue": 70.0,
     "PredefinedMetricSpecification":
     {"PredefinedMetricType": "SageMakerVariantInvocationsPerInstance"

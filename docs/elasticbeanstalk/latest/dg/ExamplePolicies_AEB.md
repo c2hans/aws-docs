@@ -30,7 +30,7 @@ Note that this policy is an example. It gives a broad set of permissions to the 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [
@@ -67,7 +67,7 @@ Note that this policy is an example. It gives a broad set of permissions to the 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [
@@ -112,7 +112,7 @@ The following policy allows read-only access to all applications, application ve
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [

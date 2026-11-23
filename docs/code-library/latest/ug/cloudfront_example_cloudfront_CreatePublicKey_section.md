@@ -57,7 +57,7 @@ For more information, see [Step 2: Add your public key to CloudFront](https://do
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudfront#code-examples).
 The following code example reads in a public key and uploads it to Amazon CloudFront.
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.services.cloudfront.CloudFrontClient;

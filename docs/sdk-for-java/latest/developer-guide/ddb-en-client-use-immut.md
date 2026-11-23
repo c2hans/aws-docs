@@ -8,7 +8,7 @@ The mapping feature of the DynamoDB Enhanced Client API works with immutable dat
 
 The following class is an immutable version of `Customer`.
 
-```
+```java
 package org.example.tests.model.immutable;
 
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbImmutable;
@@ -82,14 +82,14 @@ You must meet the following requirements when you annotate a data class with `@D
 
 To create a `TableSchema` for your immutable class, use the `fromImmutableClass()` method on `TableSchema` as shown in the following snippet.
 
-```
+```java
 static final TableSchema<CustomerImmutable> customerImmutableTableSchema =
                          TableSchema.fromImmutableClass(CustomerImmutable.class);
 ```
 
 Just as you can create a DynamoDB table from a mutable class, you can create one from an immutable class with a *one-time* call to `createTable()` of `DynamoDbTable` as shown in the following snippet example.
 
-```
+```java
 static void createTableFromImmutable(DynamoDbEnhancedClient enhancedClient, String tableName, DynamoDbWaiter waiter){
     // First, create an in-memory representation of the table using the 'table()' method of the DynamoDb Enhanced Client.
     // 'table()' accepts a name for the table and a TableSchema instance that you created previously.
@@ -109,7 +109,7 @@ Third-party libraries, such as [Project Lombok](https://projectlombok.org/), hel
 
 The following example shows the immutable `CustomerImmutable` class with Lombok annotations. Note how Lombok's `onMethod` feature copies attribute-based DynamoDB annotations, such as `@DynamoDbPartitionKey`, onto the generated code.
 
-```
+```java
 @Value
 @Builder
 @DynamoDbImmutable(builder = Customer.CustomerBuilder.class)

@@ -39,7 +39,7 @@ If *geom* isn't a `MULTIPOINT`, then error is returned.
 
 The following SQL creates a linestring from a multipoint.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_LineFromMultiPoint(ST_GeomFromText('MULTIPOINT(0 0,10 0,10 10,5 5,0 5)',4326)));
 ```
 

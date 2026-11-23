@@ -28,7 +28,7 @@ Follow these procedures to configure the Amazon Kinesis Video Streams Edge Agent
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -81,7 +81,7 @@ Don't uninstall these components.
 
       In the screen that appears, paste the following log manager configuration in the **Configuration to merge** box.
 
-      ```
+      ```JSON
       {
           "logsUploaderConfiguration": {
               "componentLogsConfigurationMap": {

@@ -14,6 +14,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Diagram showing the AWS shared responsibility model.](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/images/sustainability-in-the-cloud.jpeg)
 
+*Shared responsibility model *
+
 ## Sustainability of the cloud
 <a name="sustainability-of-the-cloud"></a>
 

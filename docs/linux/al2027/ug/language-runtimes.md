@@ -28,7 +28,7 @@ The following table lists the language runtimes available in AL2027 and the vers
 
 | Language | Available in AL2027 | Removed from AL2023 |
 | --- | --- | --- |
-| Python | 3.14 (system python), 3.15 (beta) | 3.9, 3.11, 3.12, 3.13 |
+| Python | 3.15 (system python) | 3.9, 3.11, 3.12, 3.13 |
 | PHP | 8.5 | 8.1, 8.2, 8.3, 8.4 |
 | Node.js | 24 | 18, 20, 22 |
 | Ruby | 3.4 | 3.2 |

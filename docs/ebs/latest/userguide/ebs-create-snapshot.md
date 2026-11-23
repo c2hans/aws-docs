@@ -37,7 +37,7 @@ If the volume is in a Region, the **Snapshot destination** does not appear. The 
 **To create a snapshot**
 Use the [create-snapshot](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-snapshot.html) command.
 
-```
+```bash
 aws ec2 create-snapshot  \
     --volume-id {{vol-01234567890abcdef}} \
     --description "Snapshot of the root volume for i-1234567890abcdef0"
@@ -49,7 +49,7 @@ aws ec2 create-snapshot  \
 **To create a snapshot**
 Use the [New-EC2Snapshot](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Snapshot.html) cmdlet.
 
-```
+```powershell
 New-EC2Snapshot `
     -VolumeId {{vol-01234567890abcdef}} `
     -Description "Snapshot of the root volume for i-1234567890abcdef0"

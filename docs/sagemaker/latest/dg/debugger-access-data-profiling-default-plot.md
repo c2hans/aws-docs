@@ -13,7 +13,7 @@ You can use the system and algorithm metrics objects for the following visualiza
 To visualize the data with narrowed-down metrics in the following visualization object plot methods, specify `select_dimensions` and `select_events` parameters. For example, if you specify `select_dimensions=["GPU"]`, the plot methods filter the metrics that include the "GPU" keyword. If you specify `select_events=["total"]`, the plot methods filter the metrics that include the "total" event tags at the end of the metric names. If you enable these parameters and give the keyword strings, the visualization classes return the charts with filtered metrics.
 + The `MetricsHistogram` class
 
-  ```
+  ```py
   from smdebug.profiler.analysis.notebook_utils.metrics_histogram import MetricsHistogram
 
   metrics_histogram = MetricsHistogram(system_metrics_reader)
@@ -26,14 +26,14 @@ To visualize the data with narrowed-down metrics in the following visualization 
   ```
 + The `StepTimelineChart` class
 
-  ```
+  ```py
   from smdebug.profiler.analysis.notebook_utils.step_timeline_chart import StepTimelineChart
 
   view_step_timeline_chart = StepTimelineChart(framework_metrics_reader)
   ```
 + The `StepHistogram` class
 
-  ```
+  ```py
   from smdebug.profiler.analysis.notebook_utils.step_histogram import StepHistogram
 
   step_histogram = StepHistogram(framework_metrics_reader)
@@ -45,7 +45,7 @@ To visualize the data with narrowed-down metrics in the following visualization 
   ```
 + The `TimelineCharts` class
 
-  ```
+  ```py
   from smdebug.profiler.analysis.notebook_utils.timeline_charts import TimelineCharts
 
   view_timeline_charts = TimelineCharts(
@@ -59,7 +59,7 @@ To visualize the data with narrowed-down metrics in the following visualization 
   ```
 + The `Heatmap` class
 
-  ```
+  ```py
   from smdebug.profiler.analysis.notebook_utils.heatmap import Heatmap
 
   view_heatmap = Heatmap(

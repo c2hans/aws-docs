@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon S3 Control.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/batch#code-examples).
 
-```
+```python
     def list_jobs(self, account_id: str) -> None:
         """
         List all batch jobs for the account.
@@ -65,7 +65,7 @@ The following code example shows how to learn core operations for Amazon S3 Cont
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/batch#code-examples).
 Learn S3 Batch Basics Scenario.
 
-```
+```python
 class S3BatchScenario:
     """Manages the S3 Batch Operations scenario."""
 
@@ -223,7 +223,7 @@ class S3BatchScenario:
 ```
 Create a class that wraps S3 Batch Operations actions.
 
-```
+```python
 class S3BatchWrapper:
     """Wrapper class for managing S3 Batch Operations."""
 
@@ -716,7 +716,7 @@ The following code example shows how to use `CreateJob`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/batch#code-examples).
 
-```
+```python
     def create_s3_batch_job(self, account_id: str, role_arn: str, manifest_location: str,
                            report_bucket_name: str) -> str:
         """
@@ -796,7 +796,7 @@ The following code example shows how to use `DeleteJobTagging`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/batch#code-examples).
 
-```
+```python
     def delete_job_tags(self, job_id: str, account_id: str) -> None:
         """
         Delete all tags from a batch job.
@@ -825,7 +825,7 @@ The following code example shows how to use `DescribeJob`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/batch#code-examples).
 
-```
+```python
     def describe_job_details(self, job_id: str, account_id: str) -> None:
         """
         Describe detailed information about a batch job.
@@ -864,7 +864,7 @@ The following code example shows how to use `GetJobTagging`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/batch#code-examples).
 
-```
+```python
     def get_job_tags(self, job_id: str, account_id: str) -> None:
         """
         Get tags associated with a batch job.
@@ -899,7 +899,7 @@ The following code example shows how to use `PutJobTagging`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/batch#code-examples).
 
-```
+```python
     def put_job_tags(self, job_id: str, account_id: str) -> None:
         """
         Add tags to a batch job.
@@ -932,7 +932,7 @@ The following code example shows how to use `UpdateJobPriority`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/batch#code-examples).
 
-```
+```python
     def update_job_priority(self, job_id: str, account_id: str) -> None:
         """
         Update the priority of a batch job and start it.
@@ -993,7 +993,7 @@ The following code example shows how to use `UpdateJobStatus`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/batch#code-examples).
 
-```
+```python
     def cancel_job(self, job_id: str, account_id: str) -> None:
         """
         Cancel an S3 batch job.

@@ -57,7 +57,7 @@ For more information, see [Administer your WorkSpaces](https://docs.aws.amazon.c
 **Tools for PowerShell V4**
 **Example 1: Retrieves details of all your WorkSpaces to the pipeline.**
 
-```
+```powershell
 Get-WKSWorkspace
 ```
 **Output:**
@@ -80,7 +80,7 @@ WorkspaceProperties         : Amazon.WorkSpaces.Model.WorkspaceProperties
 ```
 **Example 2: This command shows the values of child properties of `WorkSpaceProperties` for a workspace in the `us-west-2` region. For more information about the child properties of `WorkSpaceProperties`, see https://docs.aws.amazon.com/workspaces/latest/api/API\_WorkspaceProperties.html.**
 
-```
+```powershell
 (Get-WKSWorkspace -Region us-west-2 -WorkSpaceId ws-xdaf7hc9s).WorkspaceProperties
 ```
 **Output:**
@@ -94,7 +94,7 @@ WorkspaceProperties         : Amazon.WorkSpaces.Model.WorkspaceProperties
 ```
 **Example 3: This command shows the value of the child property `RootVolumeSizeGib` of `WorkSpaceProperties` for a workspace in the `us-west-2` region. The root volume size, in GiB, is 80.**
 
-```
+```powershell
 (Get-WKSWorkspace -Region us-west-2 -WorkSpaceId ws-xdaf7hc9s).WorkspaceProperties.RootVolumeSizeGib
 ```
 **Output:**
@@ -107,7 +107,7 @@ WorkspaceProperties         : Amazon.WorkSpaces.Model.WorkspaceProperties
 **Tools for PowerShell V5**
 **Example 1: Retrieves details of all your WorkSpaces to the pipeline.**
 
-```
+```powershell
 Get-WKSWorkspace
 ```
 **Output:**
@@ -130,7 +130,7 @@ WorkspaceProperties         : Amazon.WorkSpaces.Model.WorkspaceProperties
 ```
 **Example 2: This command shows the values of child properties of `WorkSpaceProperties` for a workspace in the `us-west-2` region. For more information about the child properties of `WorkSpaceProperties`, see https://docs.aws.amazon.com/workspaces/latest/api/API\_WorkspaceProperties.html.**
 
-```
+```powershell
 (Get-WKSWorkspace -Region us-west-2 -WorkSpaceId ws-xdaf7hc9s).WorkspaceProperties
 ```
 **Output:**
@@ -144,7 +144,7 @@ WorkspaceProperties         : Amazon.WorkSpaces.Model.WorkspaceProperties
 ```
 **Example 3: This command shows the value of the child property `RootVolumeSizeGib` of `WorkSpaceProperties` for a workspace in the `us-west-2` region. The root volume size, in GiB, is 80.**
 
-```
+```powershell
 (Get-WKSWorkspace -Region us-west-2 -WorkSpaceId ws-xdaf7hc9s).WorkspaceProperties.RootVolumeSizeGib
 ```
 **Output:**

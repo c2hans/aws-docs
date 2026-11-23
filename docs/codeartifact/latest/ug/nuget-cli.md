@@ -125,7 +125,7 @@ For manual configuration, you must add a repository endpoint and authorization t
 
    Example output:
 
-   ```
+   ```json
    {
       "repositoryEndpoint": "https://{{my_domain}}-{{111122223333}}.d.codeartifact.{{us-west-2}}.amazonaws.com/nuget/{{my_repo}}/"
    }
@@ -139,7 +139,7 @@ For manual configuration, you must add a repository endpoint and authorization t
 
    Example output:
 
-   ```
+   ```json
    {
       "authorizationToken": "eyJ2I...viOw",
       "expiration": 1601616533.0

@@ -80,7 +80,7 @@ This scenario requires IAM users with programmatic access and long-term credenti
 
 1.  Add a statement to the trust policy of the role that you created in [Step 1](#cicd-jenkins-enable) that allows the provider to call `sts:AssumeRoleWithWebIdentity`. Include a condition on the provider's `aud` key with the value `sts.amazonaws.com`. To allow only specific jobs to assume the role, also add a condition on the `sub` key, which contains the URL of the job by default. The following example statement allows only the job {{my-job}} on a Jenkins controller at {{jenkins.example.com}} to assume the role.
 
-   ```
+   ```JSON
    {
        "Effect": "Allow",
        "Principal": {

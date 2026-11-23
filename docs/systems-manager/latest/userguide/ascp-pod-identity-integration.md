@@ -57,7 +57,7 @@ To use Pod Identity with your cluster, you must install the Amazon EKS Pod Ident
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

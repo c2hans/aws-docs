@@ -15,7 +15,7 @@ The `inference_geo` parameter is supported on Claude Opus 4.6, Claude Sonnet 4.6
 
  **Shell**
 
-```
+```bash
 curl "https://aws-external-anthropic.us-west-2.api.aws/v1/messages" \
   --aws-sigv4 "aws:amz:us-west-2:aws-external-anthropic" \
   --user "$AWS_ACCESS_KEY_ID:$AWS_SECRET_ACCESS_KEY" \
@@ -35,7 +35,7 @@ curl "https://aws-external-anthropic.us-west-2.api.aws/v1/messages" \
 
  **Python**
 
-```
+```python
 from anthropic import AnthropicAWS
 
 client = AnthropicAWS(aws_region="us-west-2")
@@ -50,7 +50,7 @@ print(message)
 
  **TypeScript**
 
-```
+```typescript
 import AnthropicAws from "@anthropic-ai/aws-sdk";
 const client = new AnthropicAws({ awsRegion: "us-west-2" });
 const message = await client.messages.create({
@@ -64,7 +64,7 @@ console.log(message);
 
  **C\#**
 
-```
+```csharp
 using Anthropic;
 using Anthropic.Aws;
 
@@ -83,7 +83,7 @@ Console.WriteLine(message);
 
  **Go**
 
-```
+```go
 client, err := anthropicaws.NewClient(context.Background(), anthropicaws.ClientConfig{})
 if err != nil {
     panic(err)
@@ -106,7 +106,7 @@ fmt.Println(message)
 
  **Java**
 
-```
+```java
 import com.anthropic.aws.backends.AwsBackend;
 import com.anthropic.client.AnthropicClient;
 import com.anthropic.client.okhttp.AnthropicOkHttpClient;
@@ -133,7 +133,7 @@ IO.println(message);
 
  **PHP**
 
-```
+```php
 use Anthropic\Aws\Client;
 
 $client = new Client(awsRegion: 'us-west-2');
@@ -150,7 +150,7 @@ echo $message;
 
  **Ruby**
 
-```
+```ruby
 require "anthropic"
 
 client = Anthropic::AWSClient.new(aws_region: "us-west-2")

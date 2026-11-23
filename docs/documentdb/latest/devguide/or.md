@@ -65,7 +65,7 @@ To view a code example for using the `$or` command, choose the tab for the langu
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function findCarsByMakeModel() {
@@ -90,7 +90,7 @@ findCarsByMakeModel();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def find_cars_by_make_model():

@@ -27,7 +27,7 @@ The following code example shows how to use `ListTranscriptionJobs`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/transcribe#code-examples).
 
-```
+```java
 public class ListTranscriptionJobs {
     public static void main(String[] args) {
         TranscribeClient transcribeClient = TranscribeClient.builder()
@@ -84,7 +84,7 @@ For more information, see [Getting started with Amazon Transcribe](https://docs.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/transcribe#code-examples).
 Transcribes a PCM file.
 
-```
+```java
 /**
  * To run this AWS code example, ensure that you have set up your development
  * environment, including your AWS credentials.
@@ -262,7 +262,7 @@ public class TranscribeStreamingDemoFile {
 ```
 Transcribes streaming audio from your computer's microphone.
 
-```
+```java
 public class TranscribeStreamingDemoApp {
     private static final Region REGION = Region.US_EAST_1;
     private static TranscribeStreamingAsyncClient client;

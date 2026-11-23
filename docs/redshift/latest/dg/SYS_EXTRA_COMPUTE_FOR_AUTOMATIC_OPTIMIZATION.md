@@ -27,7 +27,7 @@ SYS\_EXTRA\_COMPUTE\_FOR\_AUTOMATIC\_OPTIMIZATION is visible only to superusers.
 
 Following is an example query looking for automatic optimizations performed on September 16, 2025.
 
-```
+```sql
 SELECT *
 FROM sys_extra_compute_for_automatic_optimization
 WHERE start_time BETWEEN '2025-09-16 00:00:00' AND '2025-09-16 23:59:59';

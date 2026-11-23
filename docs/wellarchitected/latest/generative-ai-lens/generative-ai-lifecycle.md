@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 
 ![Generative AI lifecycle diagram](https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/images/lifecycle.png)
 
+*Generative AI lifecycle*
+
 ## Scoping
 <a name="scoping"></a>
 

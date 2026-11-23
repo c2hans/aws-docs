@@ -49,7 +49,7 @@ For more information, see [Tag an Application Load Balancer](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: This example lists the Tags for the specified resource.**
 
-```
+```powershell
 Get-ELB2Tag -ResourceArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f'
 ```
 **Output:**
@@ -64,7 +64,7 @@ arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/36
 **Tools for PowerShell V5**
 **Example 1: This example lists the Tags for the specified resource.**
 
-```
+```powershell
 Get-ELB2Tag -ResourceArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f'
 ```
 **Output:**

@@ -35,7 +35,7 @@ This example creates a queue with long polling enabled. If the queue already exi
 
 Create a new Go file named `CreateLPQueue.go`. You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "flag"
     "fmt"
@@ -49,7 +49,7 @@ import (
 
 Get the queue name and wait time from the command line. Ensure that the wait time is between 0 (zero) and 20 seconds.
 
-```
+```go
 queue := flag.String("q", "", "The name of the queue")
 waitTime := flag.Int("w", 10, "How long, in seconds, to wait for long polling")
 flag.Parse()
@@ -70,7 +70,7 @@ if *waitTime > 20 {
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file, `~/.aws/credentials` and the default AWS Region from `~/.aws/config`.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -78,7 +78,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Create a service client and call `CreateQueue`, passing in the time to wait for messages.
 
-```
+```go
 svc := sqs.New(sess)
 
 result, err := svc.CreateQueue(&sqs.CreateQueueInput{
@@ -98,7 +98,7 @@ Create a new Go file named `ConfigureLPQueue.go`.
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "flag"
     "fmt"
@@ -112,7 +112,7 @@ import (
 
 Get the queue name and the optional timeout value from the command line. Ensure that the wait time is between 1 and 20 seconds.
 
-```
+```go
 queue := flag.String("q", "", "The name of the queue")
 waitTime := flag.Int("w", 10, "The wait time, in seconds, for long polling")
 flag.Parse()
@@ -133,7 +133,7 @@ if *waitTime > 20 {
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file, `~/.aws/credentials`, and a default AWS Region from `~/.aws/config`.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -141,7 +141,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Get the URL of the queue.
 
-```
+```go
 svc := sqs.New(sess)
 
 result, err := svc.GetQueueUrl(&sqs.GetQueueUrlInput{
@@ -151,13 +151,13 @@ result, err := svc.GetQueueUrl(&sqs.GetQueueUrlInput{
 
 The URL is in the QueueUrl property of the returned object.
 
-```
+```go
 queueURL := result.QueueUrl
 ```
 
 Update the queue to enable long polling with a call to `SetQueueAttributes`, passing in the queue URL.
 
-```
+```go
 _, err := svc.SetQueueAttributes(&sqs.SetQueueAttributesInput{
     QueueUrl: queueURL,
     Attributes: aws.StringMap(map[string]string{
@@ -175,7 +175,7 @@ Create a new Go file named `ReceiveLPMessage.go`.
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "flag"
     "fmt"
@@ -188,7 +188,7 @@ import (
 
 Get the queue name and optional visibility and wait time values from the command line. Ensure that the visibility is between 0 (zero) seconds and 12 hours and that the wait time is between 0 and 20 seconds.
 
-```
+```go
 queue := flag.String("q", "", "The name of the queue")
 waitTime := flag.Int64("w", 10, "How long the queue waits for messages")
 flag.Parse()
@@ -209,7 +209,7 @@ if *waitTime > 20 {
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file, `~/.aws/credentials` and the default AWS Region from `~/.aws/config`.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -217,7 +217,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Create a service client and call `GetQueueUrl` to get the URL of the queue.
 
-```
+```go
 svc := sqs.New(sess)
 
 result, err := svc.GetQueueUrl(&sqs.GetQueueUrlInput{
@@ -227,7 +227,7 @@ result, err := svc.GetQueueUrl(&sqs.GetQueueUrlInput{
 
 Call `ReceiveMessage` to get the messages, using long polling, from the queue.
 
-```
+```go
 result, err := svc.ReceiveMessage(&sqs.ReceiveMessageInput{
     QueueUrl: queueURL,
     AttributeNames: aws.StringSlice([]string{
@@ -243,7 +243,7 @@ result, err := svc.ReceiveMessage(&sqs.ReceiveMessageInput{
 
 Display the IDs of the mesages.
 
-```
+```go
     fmt.Println("Message IDs:")
 
     for _, msg := range msgs {

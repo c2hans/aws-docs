@@ -18,7 +18,7 @@ This section describes how to configure your AWS services in ServiceNow.
 
    The rule should have this event pattern and point to the SQS queue created in Step 2.
 
-   ```
+   ```json
    "EventPattern": {
 
           "source": [

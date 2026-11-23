@@ -84,7 +84,7 @@ The following instructions assume you've created an AWS Lambda .NET Core functio
 
 On successful completion, the message **New Lambda function created** is displayed.
 
-```
+```sh
 C:\Lambda\AWSLambda1\AWSLambda1>dotnet lambda deploy-function
 Executing publish command
 ... invoking 'dotnet publish', working folder 'C:\Lambda\AWSLambda1\AWSLambda1\bin\Release\netcoreapp1.0\publish'
@@ -114,7 +114,7 @@ New Lambda function created
 
 If you deploy an existing function, the deploy function asks only for the AWS Region.
 
-```
+```sh
 C:\Lambda\AWSLambda1\AWSLambda1>dotnet lambda deploy-function
 Executing publish command
 Deleted previous publish folder

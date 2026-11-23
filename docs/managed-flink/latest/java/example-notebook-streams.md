@@ -22,7 +22,7 @@ You can create this stream using either the Amazon Kinesis console or the follow
 
 To create the stream (`ExampleInputStream`) using the AWS CLI, use the following Amazon Kinesis `create-stream` AWS CLI command.
 
-```
+```bash
 $ aws kinesis create-stream \
 --stream-name ExampleInputStream \
 --shard-count 1 \

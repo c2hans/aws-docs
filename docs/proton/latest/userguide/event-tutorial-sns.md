@@ -83,7 +83,7 @@ Register an *event rule* that captures status changes for your AWS Proton servic
 
       1. In the text editor, for `"resources":`, enter the service ARN that you copied in step viii.
 
-         ```
+         ```json
          {
              "source": ["aws.proton"],
              "detail-type": ["AWS Proton Service Status Change"],
@@ -132,7 +132,7 @@ Verify that your *event rule* is working by adding an instance to your AWS Proto
 
 1. After the **Service status** is `Active`, check your email to verify you received AWS notifications that give status updates.
 
-   ```
+   ```json
    {
        "version": "0",
        "id": "af76c382-2b3c-7a0a-cf01-936dff228276",
@@ -150,7 +150,7 @@ Verify that your *event rule* is working by adding an instance to your AWS Proto
    }
    ```
 
-   ```
+   ```json
    {
        "version": "0",
        "id": "87131e29-ad95-bda2-cd30-0ce825dfb0cd",

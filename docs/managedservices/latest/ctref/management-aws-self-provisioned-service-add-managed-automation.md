@@ -145,7 +145,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-aws-self-provisioned-service-add-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "ServiceName": "AWS License Manager"
 }
@@ -154,7 +154,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-aws-self-provisioned-service-add-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "ServiceName": "AWS License Manager",
   "IAMRole": "arn:aws:iam::123456789012:role/myrole",

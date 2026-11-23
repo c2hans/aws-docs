@@ -8,6 +8,8 @@ Amazon EKS operates a control plane that handles the AWS API calls responsible f
 
 ![](https://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-eks-auto-mode/images/image3.png)
 
+Figure 2: Security Overview covered content
+
 **Topics**
 + [Amazon EKS control plane](amazon-eks-control-plane.md)
 + [EKS Auto Mode data plane](eks-auto-mode-data-plane.md)

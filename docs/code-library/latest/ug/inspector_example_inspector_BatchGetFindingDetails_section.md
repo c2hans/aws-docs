@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 
-```
+```java
     /**
      * Retrieves detailed information about a specific AWS Inspector2 finding asynchronously.
      *
@@ -106,7 +106,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 

@@ -8,7 +8,7 @@ When the conversations are finished and any agent tasks are completed, end the s
 
 The following example code shows how to end a session with the AWS SDK for Python (Boto3).
 
-```
+```python
 def end_session(session_identifier):
 try:
     client.end_session(

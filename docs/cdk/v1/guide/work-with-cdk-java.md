@@ -94,7 +94,7 @@ In Java, props are expressed using the [Builder pattern](https://en.wikipedia.or
 
 The `BucketProps` class (like every AWS Construct Library props class) has an inner class called `Builder`. The `BucketProps.Builder` type offers methods to set the various properties of a `BucketProps` instance. Each method returns the `Builder` instance, so the method calls can be chained to set multiple properties. At the end of the chain, you call `build()` to actually produce the `BucketProps` object.
 
-```
+```java
 Bucket bucket = new Bucket(this, "MyBucket", new BucketProps.Builder()
                            .versioned(true)
                            .encryption(BucketEncryption.KMS_MANAGED)
@@ -103,7 +103,7 @@ Bucket bucket = new Bucket(this, "MyBucket", new BucketProps.Builder()
 
 Constructs, and other classes that take a props-like object as their final argument, offer a shortcut. The class has a `Builder` of its own that instantiates it and its props object in one step. This way, you don't need to explicitly instantiate (for example) both `BucketProps` and a `Bucket`—and you don't need an import for the props type.
 
-```
+```java
 Bucket bucket = Bucket.Builder.create(this, "MyBucket")
                            .versioned(true)
                            .encryption(BucketEncryption.KMS_MANAGED)
@@ -119,7 +119,7 @@ In some APIs, the AWS CDK uses JavaScript arrays or untyped objects as input to 
 
 Java does not provide a way to write literals for such containers like some other languages do. In Java 9 and later, you can use [`java.util.Map.of()`](https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry...-) to conveniently define maps of up to ten entries inline with one of these calls.
 
-```
+```java
 java.util.Map.of(
     "base-directory", "dist",
     "files", "LambdaStack.template.json"
@@ -132,7 +132,7 @@ If you are using Java 8, you could provide your own methods similar to to these.
 
 JavaScript arrays are represented as `List<Object>` or `List<String>` in Java. The method `java.util.Arrays.asList` is convenient for defining short `List`s.
 
-```
+```java
 List<String> cmds = Arrays.asList("cd lambda", "npm install", "npm install typescript")
 ```
 

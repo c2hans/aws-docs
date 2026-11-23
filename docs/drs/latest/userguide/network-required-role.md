@@ -32,7 +32,7 @@ This role includes the AWSElasticDisasterRecoverySourceNetworkPolicy policy and 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

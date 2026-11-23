@@ -37,7 +37,7 @@ This policy grants administrative permission to all HealthImaging actions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -76,7 +76,7 @@ This policy grants read-only permission to specific AWS HealthImaging actions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

@@ -113,7 +113,7 @@ The following fields are required:
 
 Each variant in the `variants` list is a [PromptVariant](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PromptVariant.html) object of the following general structure:
 
-```
+```json
 {
         "name": "string",
         # modelId or genAiResource (see below)
@@ -147,7 +147,7 @@ Fill in the fields as follows:
   + modelId – To specify a [foundation model](models-supported.md) or [inference profile](cross-region-inference.md) to use with the prompt, enter its ARN or ID.
   + genAiResource – To specify an [agent](agents.md), enter its ID or ARN. The value of the `genAiResource` is a JSON object of the following format:
 
-    ```
+    ```json
     {
         "genAiResource": {
         "agent": {

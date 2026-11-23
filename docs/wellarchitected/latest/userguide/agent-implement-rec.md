@@ -105,7 +105,7 @@ After completing all phases, choose **Mark recommendation as complete** at the t
 
 To mark a recommendation as complete:
 
-```
+```bash
 aws wellarchitected update-agent-recommendation-status \
     --recommendation-arn "{{arn:aws:wellarchitected:us-east-1:111122223333:agent-profile/my-profile/recommendation/rec-id}}" \
     --status COMPLETED
@@ -113,7 +113,7 @@ aws wellarchitected update-agent-recommendation-status \
 
 To suppress a recommendation:
 
-```
+```bash
 aws wellarchitected update-agent-recommendation-status \
     --recommendation-arn "{{arn:aws:wellarchitected:us-east-1:111122223333:agent-profile/my-profile/recommendation/rec-id}}" \
     --status SUPPRESSED \
@@ -122,7 +122,7 @@ aws wellarchitected update-agent-recommendation-status \
 
 To reopen a previously closed recommendation:
 
-```
+```bash
 aws wellarchitected update-agent-recommendation-status \
     --recommendation-arn "{{arn:aws:wellarchitected:us-east-1:111122223333:agent-profile/my-profile/recommendation/rec-id}}" \
     --status ACTIVE

@@ -21,7 +21,7 @@ Learn how to create a new documentation page. This topic includes instructions f
 
 1. Insert the page metadata using this template:
 
-```
+```asciidoc
  include::../attributes.txt[]
 
  [.topic]

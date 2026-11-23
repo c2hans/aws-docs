@@ -83,7 +83,7 @@ To better demonstrate this more complex command, we're using the `--cli-input-js
 
 1. Create a JSON file with a name like `my-patch-repository.json` and add the following content to it.
 
-   ```
+   ```json
    {
        "Description": "My patch repository for Amazon Linux 2",
        "Name": "Amazon-Linux-2",
@@ -1298,7 +1298,7 @@ The system returns information like the following.
 
 Run the following command in the AWS Command Line Interface (AWS CLI) to view patch compliance results for a single managed node.
 
-```
+```sh
 aws ssm describe-instance-patch-states --instance-id {{instance-id}}
 ```
 
@@ -1341,7 +1341,7 @@ The `describe-instance-patch-states` supports retrieving results for just one ma
 
 For example, if the [jq filter tool](https://stedolan.github.io/jq/download/) is installed on you local machine, you could run the following command to identify which of your EC2 instances in a particular AWS Region have a status of `InstalledPendingReboot`.
 
-```
+```sh
 aws ssm describe-instance-patch-states \
     --instance-ids $(aws ec2 describe-instances --region {{region}} | jq '.Reservations[].Instances[] | .InstanceId' | tr '\n|"' ' ') \
     --output text --query 'InstancePatchStates[*].{Instance:InstanceId, InstalledPendingRebootCount:InstalledPendingRebootCount}'
@@ -1351,7 +1351,7 @@ aws ssm describe-instance-patch-states \
 
 For example:
 
-```
+```sh
 aws ssm describe-instance-patch-states \
     --instance-ids $(aws ec2 describe-instances --region us-east-2 | jq '.Reservations[].Instances[] | .InstanceId' | tr '\n|"' ' ') \
     --output text --query 'InstancePatchStates[*].{Instance:InstanceId, InstalledPendingRebootCount:InstalledPendingRebootCount}'
@@ -1403,7 +1403,7 @@ Run the following command.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name 'AWS-RunPatchBaseline' \
     --targets Key=InstanceIds,Values='i-02573cafcfEXAMPLE,i-0471e04240EXAMPLE' \
@@ -1414,7 +1414,7 @@ aws ssm send-command \
 ------
 #### [ Windows Server ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name "AWS-RunPatchBaseline" ^
     --targets Key=InstanceIds,Values="i-02573cafcfEXAMPLE,i-0471e04240EXAMPLE" ^
@@ -1467,7 +1467,7 @@ Run the following command.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name 'AWS-RunPatchBaseline' \
     --targets Key='tag:PatchGroup',Values='Web servers' \
@@ -1478,7 +1478,7 @@ aws ssm send-command \
 ------
 #### [ Windows Server ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name "AWS-RunPatchBaseline" ^
     --targets Key="tag:PatchGroup",Values="Web servers" ^
@@ -1536,7 +1536,7 @@ The target managed nodes reboot as needed to complete patch installation. For mo
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name 'AWS-RunPatchBaseline' \
     --targets Key=InstanceIds,Values='i-02573cafcfEXAMPLE,i-0471e04240EXAMPLE' \
@@ -1547,7 +1547,7 @@ aws ssm send-command \
 ------
 #### [ Windows Server ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name "AWS-RunPatchBaseline" ^
     --targets Key=InstanceIds,Values="i-02573cafcfEXAMPLE,i-0471e04240EXAMPLE" ^
@@ -1600,7 +1600,7 @@ Run the following command.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm send-command \
     --document-name 'AWS-RunPatchBaseline' \
     --targets Key='tag:PatchGroup',Values='Web servers' \
@@ -1611,7 +1611,7 @@ aws ssm send-command \
 ------
 #### [ Windows Server ]
 
-```
+```sh
 aws ssm send-command ^
     --document-name "AWS-RunPatchBaseline" ^
     --targets Key="tag:PatchGroup",Values="Web servers" ^

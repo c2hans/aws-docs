@@ -26,7 +26,7 @@ The following code example shows how to use `Add-IAMClientIDToOpenIDConnectProvi
 **Tools for PowerShell V4**
 **Example 1: This command adds the client ID (or audience) `my-application-ID` to the existing OIDC provider named `server.example.com`.**
 
-```
+```powershell
 Add-IAMClientIDToOpenIDConnectProvider -ClientID "my-application-ID" -OpenIDConnectProviderARN "arn:aws:iam::123456789012:oidc-provider/server.example.com"
 ```
 +  For API details, see [AddClientIdToOpenIdConnectProvider](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -39,7 +39,7 @@ The following code example shows how to use `Add-IAMRoleTag`.
 **Tools for PowerShell V4**
 **Example 1: This example adds tag to Role in Identity Management Service**
 
-```
+```powershell
 Add-IAMRoleTag -RoleName AdminRoleacess -Tag @{ Key = 'abac'; Value = 'testing'}
 ```
 +  For API details, see [TagRole](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -52,7 +52,7 @@ The following code example shows how to use `Add-IAMRoleToInstanceProfile`.
 **Tools for PowerShell V4**
 **Example 1: This command adds the role named `S3Access` to an existing instance profile named `webserver`. To create the instance profile, use the `New-IAMInstanceProfile` command. After you create the instance profile and associate it with a role using this command, you can attach it to an EC2 instance. To do that, use the `New-EC2Instance` cmdlet with either the `InstanceProfile_Arn` or the `InstanceProfile-Name` parameter to launch the new instance.**
 
-```
+```powershell
 Add-IAMRoleToInstanceProfile -RoleName "S3Access" -InstanceProfileName "webserver"
 ```
 +  For API details, see [AddRoleToInstanceProfile](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -65,7 +65,7 @@ The following code example shows how to use `Add-IAMUserTag`.
 **Tools for PowerShell V4**
 **Example 1: This example adds tag to User in Identity Management Service**
 
-```
+```powershell
 Add-IAMUserTag -UserName joe -Tag @{ Key = 'abac'; Value = 'testing'}
 ```
 +  For API details, see [TagUser](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -78,7 +78,7 @@ The following code example shows how to use `Add-IAMUserToGroup`.
 **Tools for PowerShell V4**
 **Example 1: This command adds the user named `Bob` to the group named `Admins`.**
 
-```
+```powershell
 Add-IAMUserToGroup -UserName "Bob" -GroupName "Admins"
 ```
 +  For API details, see [AddUserToGroup](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -91,12 +91,12 @@ The following code example shows how to use `Disable-IAMMFADevice`.
 **Tools for PowerShell V4**
 **Example 1: This command disables the hardware MFA device associated with the user `Bob` that has the serial number `123456789012`.**
 
-```
+```powershell
 Disable-IAMMFADevice -UserName "Bob" -SerialNumber "123456789012"
 ```
 **Example 2: This command disables the virtual MFA device associated with the user `David` that has the ARN `arn:aws:iam::210987654321:mfa/David`. Note that virtual MFA device is not deleted from the account. The virtual device is still present and appears in the output of the `Get-IAMVirtualMFADevice` command. Before you can create a new virtual MFA device for the same user, you must delete the old one by using the `Remove-IAMVirtualMFADevice` command.**
 
-```
+```powershell
 Disable-IAMMFADevice -UserName "David" -SerialNumber "arn:aws:iam::210987654321:mfa/David"
 ```
 +  For API details, see [DeactivateMfaDevice](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -109,7 +109,7 @@ The following code example shows how to use `Edit-IAMPassword`.
 **Tools for PowerShell V4**
 **Example 1: This command changes the password for the user that is running the command. This command can be called by IAM users only. If this command is called when you are signed-in with AWS account (root) credentials, the command returns an `InvalidUserType` error.**
 
-```
+```powershell
 Edit-IAMPassword -OldPassword "MyOldP@ssw0rd" -NewPassword "MyNewP@ssw0rd"
 ```
 +  For API details, see [ChangePassword](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -122,12 +122,12 @@ The following code example shows how to use `Enable-IAMMFADevice`.
 **Tools for PowerShell V4**
 **Example 1: This command enables the hardware MFA device with the serial number `987654321098` and associates the device with the user `Bob`. It includes the first two codes in sequence from the device.**
 
-```
+```powershell
 Enable-IAMMFADevice -UserName "Bob" -SerialNumber "987654321098" -AuthenticationCode1 "12345678" -AuthenticationCode2 "87654321"
 ```
 **Example 2: This example creates and enables a virtual MFA device. The first command creates the virtual device and returns the device's object representation in the variable `$MFADevice`. You can use the `.Base32StringSeed` or `QRCodePng` properties to configure the user's software application. The final command assigns the device to the user `David`, identifying the device by its serial number. The command also synchronizes the device with AWS by including the first two codes in sequence from the virtual MFA device.**
 
-```
+```powershell
 $MFADevice = New-IAMVirtualMFADevice -VirtualMFADeviceName "MyMFADevice"
 # see example for New-IAMVirtualMFADevice to see how to configure the software program with PNG or base32 seed code
 Enable-IAMMFADevice -UserName "David" -SerialNumber -SerialNumber $MFADevice.SerialNumber -AuthenticationCode1 "24681357" -AuthenticationCode2 "13572468"
@@ -142,7 +142,7 @@ The following code example shows how to use `Get-IAMAccessKey`.
 **Tools for PowerShell V4**
 **Example 1: This command lists the access keys for the IAM user named `Bob`. Note that you cannot list the secret access keys for IAM users. If the secret access keys are lost, you must create new access keys with the `New-IAMAccessKey` cmdlet.**
 
-```
+```powershell
 Get-IAMAccessKey -UserName "Bob"
 ```
 **Output:**
@@ -163,7 +163,7 @@ The following code example shows how to use `Get-IAMAccessKeyLastUsed`.
 **Tools for PowerShell V4**
 **Example 1: Returns the owning user name and last-usage information for the supplied access key.**
 
-```
+```powershell
 Get-IAMAccessKeyLastUsed -AccessKeyId ABCDEXAMPLE
 ```
 +  For API details, see [GetAccessKeyLastUsed](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -176,7 +176,7 @@ The following code example shows how to use `Get-IAMAccountAlias`.
 **Tools for PowerShell V4**
 **Example 1: This command returns the account alias for the AWS account.**
 
-```
+```powershell
 Get-IAMAccountAlias
 ```
 **Output:**
@@ -194,7 +194,7 @@ The following code example shows how to use `Get-IAMAccountAuthorizationDetail`.
 **Tools for PowerShell V4**
 **Example 1: This example gets authorization details about the identities in the AWS account, and displays the element list of the returned object, including users, groups, and roles. For example, the `UserDetailList` property displays details about the users. Similar information is available in the `RoleDetailList` and `GroupDetailList` properties.**
 
-```
+```powershell
 $Details=Get-IAMAccountAuthorizationDetail
 $Details
 ```
@@ -208,7 +208,7 @@ RoleDetailList  : {TestRole1, AdminRole, TesterRole, clirole...}
 UserDetailList  : {Administrator, Bob, BackupToS3, }
 ```
 
-```
+```powershell
 $Details.UserDetailList
 ```
 **Output:**
@@ -248,7 +248,7 @@ The following code example shows how to use `Get-IAMAccountPasswordPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example returns details about the password policy for the current account. If no password policy is defined for the account, the command returns a `NoSuchEntity` error.**
 
-```
+```powershell
 Get-IAMAccountPasswordPolicy
 ```
 **Output:**
@@ -275,7 +275,7 @@ The following code example shows how to use `Get-IAMAccountSummary`.
 **Tools for PowerShell V4**
 **Example 1: This example returns information about the current IAM entity usage and current IAM entity quotas in the AWS account.**
 
-```
+```powershell
 Get-IAMAccountSummary
 ```
 **Output:**
@@ -326,7 +326,7 @@ The following code example shows how to use `Get-IAMAttachedGroupPolicyList`.
 **Tools for PowerShell V4**
 **Example 1: This command returns the names and ARNs of the managed policies that are attached to the IAM group named `Admins` in the AWS account. To see the list of inline policies embedded in the group, use the `Get-IAMGroupPolicyList` command.**
 
-```
+```powershell
 Get-IAMAttachedGroupPolicyList -GroupName "Admins"
 ```
 **Output:**
@@ -347,7 +347,7 @@ The following code example shows how to use `Get-IAMAttachedRolePolicyList`.
 **Tools for PowerShell V4**
 **Example 1: This command returns the names and ARNs of the managed policies attached to the IAM role named `SecurityAuditRole` in the AWS account. To see the list of inline policies that are embedded in the role, use the `Get-IAMRolePolicyList` command.**
 
-```
+```powershell
 Get-IAMAttachedRolePolicyList -RoleName "SecurityAuditRole"
 ```
 **Output:**
@@ -367,7 +367,7 @@ The following code example shows how to use `Get-IAMAttachedUserPolicyList`.
 **Tools for PowerShell V4**
 **Example 1: This command returns the names and ARNs of the managed policies for the IAM user named `Bob` in the AWS account. To see the list of inline policies that are embedded in the IAM user, use the `Get-IAMUserPolicyList` command.**
 
-```
+```powershell
 Get-IAMAttachedUserPolicyList -UserName "Bob"
 ```
 **Output:**
@@ -387,7 +387,7 @@ The following code example shows how to use `Get-IAMContextKeysForCustomPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example fetches all the context keys present in the provided policy json.In order to provide multiple policies you can provide as comma separated list of values.**
 
-```
+```powershell
 $policy1 = '{"Version":"2012-10-17",		 	 	 "Statement":{"Effect":"Allow","Action":"dynamodb:*","Resource":"arn:aws:dynamodb:us-west-2:123456789012:table/","Condition":{"DateGreaterThan":{"aws:CurrentTime":"2015-08-16T12:00:00Z"}}}}'
 $policy2 = '{"Version":"2012-10-17",		 	 	 "Statement":{"Effect":"Allow","Action":"dynamodb:*","Resource":"arn:aws:dynamodb:us-west-2:123456789012:table/"}}'
 Get-IAMContextKeysForCustomPolicy -PolicyInputList $policy1,$policy2
@@ -402,7 +402,7 @@ The following code example shows how to use `Get-IAMContextKeysForPrincipalPolic
 **Tools for PowerShell V4**
 **Example 1: This example fetches all the context keys present in the provided policy json and the policies attached to IAM entity(user/role etc.). For -PolicyInputList you can provide multiple values list as comma separated values. **
 
-```
+```powershell
 $policy1 = '{"Version":"2012-10-17",		 	 	 "Statement":{"Effect":"Allow","Action":"dynamodb:*","Resource":"arn:aws:dynamodb:us-west-2:123456789012:table/","Condition":{"DateGreaterThan":{"aws:CurrentTime":"2015-08-16T12:00:00Z"}}}}'
 $policy2 = '{"Version":"2012-10-17",		 	 	 "Statement":{"Effect":"Allow","Action":"dynamodb:*","Resource":"arn:aws:dynamodb:us-west-2:123456789012:table/"}}'
 Get-IAMContextKeysForPrincipalPolicy -PolicyInputList $policy1,$policy2 -PolicySourceArn arn:aws:iam::852640994763:user/TestUser
@@ -417,7 +417,7 @@ The following code example shows how to use `Get-IAMCredentialReport`.
 **Tools for PowerShell V4**
 **Example 1: This example opens the returned report and outputs it to the pipeline as an array of text lines. The first line is the header with comma-separated column names. Each successive row is the detail row for one user, with each field separated by commas. Before you can view the report, you must generate it with the `Request-IAMCredentialReport` cmdlet. To retrieve the report as a single string, use `-Raw` instead of `-AsTextArray`. The alias `-SplitLines` is also accepted for the `-AsTextArray` switch. For the full list of columns in the output consult the service API reference. Note that if you do not use `-AsTextArray` or `-SplitLines`, then you must extract the text from the `.Content` property using the .NET `StreamReader` class.**
 
-```
+```powershell
 Request-IAMCredentialReport
 ```
 **Output:**
@@ -428,7 +428,7 @@ Description                                                         State
 No report exists. Starting a new report generation task             STARTED
 ```
 
-```
+```powershell
 Get-IAMCredentialReport -AsTextArray
 ```
 **Output:**
@@ -448,7 +448,7 @@ The following code example shows how to use `Get-IAMEntitiesForPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example returns a list of IAM groups, roles, and users who have the policy `arn:aws:iam::123456789012:policy/TestPolicy` attached.**
 
-```
+```powershell
 Get-IAMEntitiesForPolicy -PolicyArn "arn:aws:iam::123456789012:policy/TestPolicy"
 ```
 **Output:**
@@ -470,7 +470,7 @@ The following code example shows how to use `Get-IAMGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example returns details about the IAM group `Testers`, including a collection of all the IAM users that belong to the group. **
 
-```
+```powershell
 $results = Get-IAMGroup -GroupName "Testers"
 $results
 ```
@@ -482,7 +482,7 @@ Group                                     IsTruncated           Marker          
 Amazon.IdentityManagement.Model.Group     False                                       {Theresa, David}
 ```
 
-```
+```powershell
 $results.Group
 ```
 **Output:**
@@ -495,7 +495,7 @@ GroupName  : Testers
 Path       : /
 ```
 
-```
+```powershell
 $results.Users
 ```
 **Output:**
@@ -525,7 +525,7 @@ The following code example shows how to use `Get-IAMGroupForUser`.
 **Tools for PowerShell V4**
 **Example 1: This example returns the list of IAM groups that the IAM user `David` belongs to.**
 
-```
+```powershell
 Get-IAMGroupForUser -UserName David
 ```
 **Output:**
@@ -559,7 +559,7 @@ The following code example shows how to use `Get-IAMGroupList`.
 **Tools for PowerShell V4**
 **Example 1: This example returns a collection of all the IAM groups defined in the current AWS account.**
 
-```
+```powershell
 Get-IAMGroupList
 ```
 **Output:**
@@ -593,7 +593,7 @@ The following code example shows how to use `Get-IAMGroupPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example returns details about the embedded inline policy named `PowerUserAccess-Testers` for the group `Testers`. The `PolicyDocument` property is URL encoded. It is decoded in this example with the `UrlDecode` .NET method.**
 
-```
+```powershell
 $results = Get-IAMGroupPolicy -GroupName Testers -PolicyName PowerUserAccess-Testers
 $results
 ```
@@ -631,7 +631,7 @@ The following code example shows how to use `Get-IAMGroupPolicyList`.
 **Tools for PowerShell V4**
 **Example 1: This example returns a list of the inline policies that are embedded in the group `Testers`. To get the managed policies that are attached to the group, use the command `Get-IAMAttachedGroupPolicyList`.**
 
-```
+```powershell
 Get-IAMGroupPolicyList -GroupName Testers
 ```
 **Output:**
@@ -650,7 +650,7 @@ The following code example shows how to use `Get-IAMInstanceProfile`.
 **Tools for PowerShell V4**
 **Example 1: This example returns details of the instance profile named `ec2instancerole` that is defined in the current AWS account.**
 
-```
+```powershell
 Get-IAMInstanceProfile -InstanceProfileName ec2instancerole
 ```
 **Output:**
@@ -673,7 +673,7 @@ The following code example shows how to use `Get-IAMInstanceProfileForRole`.
 **Tools for PowerShell V4**
 **Example 1: This example returns details of the instance profile associated with the role `ec2instancerole`.**
 
-```
+```powershell
 Get-IAMInstanceProfileForRole -RoleName ec2instancerole
 ```
 **Output:**
@@ -696,7 +696,7 @@ The following code example shows how to use `Get-IAMInstanceProfileList`.
 **Tools for PowerShell V4**
 **Example 1: This example returns a collection of the instance profiles defined in the current AWS account.**
 
-```
+```powershell
 Get-IAMInstanceProfileList
 ```
 **Output:**
@@ -719,7 +719,7 @@ The following code example shows how to use `Get-IAMLoginProfile`.
 **Tools for PowerShell V4**
 **Example 1: This example returns the password creation date and whether a password reset is required for the IAM user `David`.**
 
-```
+```powershell
 Get-IAMLoginProfile -UserName David
 ```
 **Output:**
@@ -739,7 +739,7 @@ The following code example shows how to use `Get-IAMMFADevice`.
 **Tools for PowerShell V4**
 **Example 1: This example returns details about the MFA device assigned to the IAM user `David`. In this example you can tell that it is a virtual device because the `SerialNumber` is an ARN instead of a physical device's actual serial number.**
 
-```
+```powershell
 Get-IAMMFADevice -UserName David
 ```
 **Output:**
@@ -759,7 +759,7 @@ The following code example shows how to use `Get-IAMOpenIDConnectProvider`.
 **Tools for PowerShell V4**
 **Example 1: This example returns details about the OpenID Connect provider whose ARN is `arn:aws:iam::123456789012:oidc-provider/accounts.google.com`. The `ClientIDList` property is a collection that contains all the Client IDs defined for this provider.**
 
-```
+```powershell
 Get-IAMOpenIDConnectProvider -OpenIDConnectProviderArn arn:aws:iam::123456789012:oidc-provider/oidc.example.com
 ```
 **Output:**
@@ -779,7 +779,7 @@ The following code example shows how to use `Get-IAMOpenIDConnectProviderList`.
 **Tools for PowerShell V4**
 **Example 1: This example returns a list of ARNS of all the OpenID Connect providers that are defined in the current AWS account.**
 
-```
+```powershell
 Get-IAMOpenIDConnectProviderList
 ```
 **Output:**
@@ -800,7 +800,7 @@ The following code example shows how to use `Get-IAMPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example returns details about the managed policy whose ARN is `arn:aws:iam::123456789012:policy/MySamplePolicy`.**
 
-```
+```powershell
 Get-IAMPolicy -PolicyArn arn:aws:iam::123456789012:policy/MySamplePolicy
 ```
 **Output:**
@@ -827,7 +827,7 @@ The following code example shows how to use `Get-IAMPolicyList`.
 **Tools for PowerShell V4**
 **Example 1: This example returns a collection of the first three managed policies available in the current AWS account. Because `-scope` is not specified, it defaults to `all` and includes both AWS managed and customer managed policies.**
 
-```
+```powershell
 Get-IAMPolicyList -MaxItem 3
 ```
 **Output:**
@@ -868,7 +868,7 @@ UpdateDate       : 2/11/2015 9:21:45 AM
 ```
 **Example 2: This example returns a collection of the first two customer managed policies available in current AWS account. It uses `-Scope local` to limit the output to only customer managed policies. **
 
-```
+```powershell
 Get-IAMPolicyList -Scope local -MaxItem 2
 ```
 **Output:**
@@ -906,7 +906,7 @@ The following code example shows how to use `Get-IAMPolicyVersion`.
 **Tools for PowerShell V4**
 **Example 1: This example returns the policy document for the `v2` version of the policy whose ARN is `arn:aws:iam::123456789012:policy/MyManagedPolicy`. The policy document in the `Document` property is URL encoded and is decoded in this example with the `UrlDecode` .NET method.**
 
-```
+```powershell
 $results = Get-IAMPolicyVersion -PolicyArn arn:aws:iam::123456789012:policy/MyManagedPolicy -VersionId v2
 $results
 ```
@@ -944,7 +944,7 @@ The following code example shows how to use `Get-IAMPolicyVersionList`.
 **Tools for PowerShell V4**
 **Example 1: This example returns the list of available versions of the policy whose ARN is `arn:aws:iam::123456789012:policy/MyManagedPolicy`. To get the policy document for a specific version, use the `Get-IAMPolicyVersion` command and specify the `VersionId` of the one you want.**
 
-```
+```powershell
 Get-IAMPolicyVersionList -PolicyArn arn:aws:iam::123456789012:policy/MyManagedPolicy
 ```
 **Output:**
@@ -965,7 +965,7 @@ The following code example shows how to use `Get-IAMRole`.
 **Tools for PowerShell V4**
 **Example 1: This example returns the details of the `lamda_exec_role`. It includes the trust policy document that specifies who can assume this role. The policy document is URL encoded and can be decoded using the .NET `UrlDecode` method. In this example, the original policy had all white space removed before it was uploaded to the policy. To see the permissions policy documents that determine what someone who assumes the role can do, use the `Get-IAMRolePolicy` for inline policies, and `Get-IAMPolicyVersion` for attached managed policies.**
 
-```
+```powershell
 $results = Get-IamRole -RoleName lambda_exec_role
 $results | Format-List
 ```
@@ -983,7 +983,7 @@ RoleId                   : 2YBIKAIBHNKB4EXAMPLE1
 RoleName                 : lambda_exec_role
 ```
 
-```
+```powershell
 $policy = [System.Web.HttpUtility]::UrlDecode($results.AssumeRolePolicyDocument)
 $policy
 ```
@@ -1002,7 +1002,7 @@ The following code example shows how to use `Get-IAMRoleList`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves a list of all of the IAM roles in the AWS account.**
 
-```
+```powershell
 Get-IAMRoleList
 ```
 +  For API details, see [ListRoles](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1015,7 +1015,7 @@ The following code example shows how to use `Get-IAMRolePolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example returns the permissions policy document for the policy named `oneClick_lambda_exec_role_policy` that is embedded in the IAM role `lamda_exec_role`. The resulting policy document is URL encoded. It is decoded in this example with the `UrlDecode` .NET method.**
 
-```
+```powershell
 $results = Get-IAMRolePolicy -RoleName lambda_exec_role -PolicyName oneClick_lambda_exec_role_policy
 $results
 ```
@@ -1027,7 +1027,7 @@ PolicyDocument                                            PolicyName            
 %7B%0A%20%20%22Version%22%3A%20%222012-10-17%22%2C%...    oneClick_lambda_exec_role_policy     lambda_exec_role
 ```
 
-```
+```powershell
 [System.Reflection.Assembly]::LoadWithPartialName("System.Web.HttpUtility")
 [System.Web.HttpUtility]::UrlDecode($results.PolicyDocument)
 ```
@@ -1067,7 +1067,7 @@ The following code example shows how to use `Get-IAMRolePolicyList`.
 **Tools for PowerShell V4**
 **Example 1: This example returns the list of names of inline policies that are embedded in the IAM role `lamda_exec_role`. To see the details of an inline policy, use the command `Get-IAMRolePolicy`.**
 
-```
+```powershell
 Get-IAMRolePolicyList -RoleName lambda_exec_role
 ```
 **Output:**
@@ -1085,7 +1085,7 @@ The following code example shows how to use `Get-IAMRoleTagList`.
 **Tools for PowerShell V4**
 **Example 1: This example fetches the tag associated with the role..**
 
-```
+```powershell
 Get-IAMRoleTagList -RoleName MyRoleName
 ```
 +  For API details, see [ListRoleTags](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1098,7 +1098,7 @@ The following code example shows how to use `Get-IAMSAMLProvider`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves the details about the SAML 2.0 provider whose ARM is arn:aws:iam::123456789012:saml-provider/SAMLADFS. The response includes the metadata document that you got from the identity provider to create the AWS SAML provider entity as well as the creation and expiration dates.**
 
-```
+```powershell
 Get-IAMSAMLProvider -SAMLProviderArn arn:aws:iam::123456789012:saml-provider/SAMLADFS
 ```
 **Output:**
@@ -1118,7 +1118,7 @@ The following code example shows how to use `Get-IAMSAMLProviderList`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves the list of SAML 2.0 providers created in the current AWS account. It returns the ARN, creation date, and expiration date for each SAML provider.**
 
-```
+```powershell
 Get-IAMSAMLProviderList
 ```
 **Output:**
@@ -1138,7 +1138,7 @@ The following code example shows how to use `Get-IAMServerCertificate`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves details about the server certificate named `MyServerCertificate`. You can find the certificate details in the `CertificateBody` and `ServerCertificateMetadata` properties.**
 
-```
+```powershell
 $result = Get-IAMServerCertificate -ServerCertificateName MyServerCertificate
 $result | format-list
 ```
@@ -1165,7 +1165,7 @@ CertificateChain          :
 ServerCertificateMetadata : Amazon.IdentityManagement.Model.ServerCertificateMetadata
 ```
 
-```
+```powershell
 $result.ServerCertificateMetadata
 ```
 **Output:**
@@ -1188,7 +1188,7 @@ The following code example shows how to use `Get-IAMServerCertificateList`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves the list of server certificates that have been uploaded to the current AWS account.**
 
-```
+```powershell
 Get-IAMServerCertificateList
 ```
 **Output:**
@@ -1211,7 +1211,7 @@ The following code example shows how to use `Get-IAMServiceLastAccessedDetail`.
 **Tools for PowerShell V4**
 **Example 1: This example provides details of the service last accessed by the IAM entity(user, group, role or policy) associated in Request call. **
 
-```
+```powershell
 Request-IAMServiceLastAccessedDetail -Arn arn:aws:iam::123456789012:user/TestUser
 ```
 **Output:**
@@ -1220,7 +1220,7 @@ Request-IAMServiceLastAccessedDetail -Arn arn:aws:iam::123456789012:user/TestUse
 f0b7a819-eab0-929b-dc26-ca598911cb9f
 ```
 
-```
+```powershell
 Get-IAMServiceLastAccessedDetail -JobId f0b7a819-eab0-929b-dc26-ca598911cb9f
 ```
 +  For API details, see [GetServiceLastAccessedDetails](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1233,7 +1233,7 @@ The following code example shows how to use `Get-IAMServiceLastAccessedDetailWit
 **Tools for PowerShell V4**
 **Example 1: This example provides the last accessed timestamp for the service in the request by that respective IAM entity.**
 
-```
+```powershell
 $results = Get-IAMServiceLastAccessedDetailWithEntity -JobId f0b7a819-eab0-929b-dc26-ca598911cb9f -ServiceNamespace ec2
 $results
 ```
@@ -1249,7 +1249,7 @@ JobStatus         : COMPLETED
 Marker            :
 ```
 
-```
+```powershell
 $results.EntityDetailsList
 ```
 **Output:**
@@ -1260,7 +1260,7 @@ EntityInfo                                 LastAuthenticated
 Amazon.IdentityManagement.Model.EntityInfo 11/16/19 3:47:00 PM
 ```
 
-```
+```powershell
 $results.EntityInfo
 ```
 **Output:**
@@ -1282,7 +1282,7 @@ The following code example shows how to use `Get-IAMSigningCertificate`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves details about the signing certificate that is associated with the user named `Bob`.**
 
-```
+```powershell
 Get-IAMSigningCertificate -UserName Bob
 ```
 **Output:**
@@ -1319,7 +1319,7 @@ The following code example shows how to use `Get-IAMUser`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves details about the user named `David`.**
 
-```
+```powershell
 Get-IAMUser -UserName David
 ```
 **Output:**
@@ -1334,7 +1334,7 @@ UserName         : David
 ```
 **Example 2: This example retrieves details about the currently signed-in IAM user.**
 
-```
+```powershell
 Get-IAMUser
 ```
 **Output:**
@@ -1357,7 +1357,7 @@ The following code example shows how to use `Get-IAMUserList`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves a collection of users in the current AWS account.**
 
-```
+```powershell
 Get-IAMUserList
 ```
 **Output:**
@@ -1394,7 +1394,7 @@ The following code example shows how to use `Get-IAMUserPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves the details of the inline policy named `Davids_IAM_Admin_Policy` that is embedded in the IAM user named `David`. The policy document is URL encoded.**
 
-```
+```powershell
 $results = Get-IAMUserPolicy -PolicyName Davids_IAM_Admin_Policy -UserName David
 $results
 ```
@@ -1433,7 +1433,7 @@ The following code example shows how to use `Get-IAMUserPolicyList`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves the list of names of the inline policies that are embedded in the IAM user named `David`.**
 
-```
+```powershell
 Get-IAMUserPolicyList -UserName David
 ```
 **Output:**
@@ -1451,7 +1451,7 @@ The following code example shows how to use `Get-IAMUserTagList`.
 **Tools for PowerShell V4**
 **Example 1: This example fetches the tag associated with the user.**
 
-```
+```powershell
 Get-IAMUserTagList -UserName joe
 ```
 +  For API details, see [ListUserTags](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1464,7 +1464,7 @@ The following code example shows how to use `Get-IAMVirtualMFADevice`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves a collection of the virtual MFA devices that are assigned to users in the AWS account. The `User` property of each is an object with details of the IAM user to which the device is assigned.**
 
-```
+```powershell
 Get-IAMVirtualMFADevice -AssignmentStatus Assigned
 ```
 **Output:**
@@ -1492,7 +1492,7 @@ The following code example shows how to use `New-IAMAccessKey`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new access key and secret access key pair and assigns it to the user `David`. Ensure that you save the `AccessKeyId` and `SecretAccessKey` values to a file because this is the only time you can obtain the `SecretAccessKey`. You cannot retrieve it later. If you lose the secret key, you must create a new access key pair.**
 
-```
+```powershell
 New-IAMAccessKey -UserName David
 ```
 **Output:**
@@ -1514,7 +1514,7 @@ The following code example shows how to use `New-IAMAccountAlias`.
 **Tools for PowerShell V4**
 **Example 1: This example changes the account alias for your AWS account to `mycompanyaws`. The address of the user logon page chages to https://mycompanyaws.signin.aws.amazon.com/console. The original URL using your account ID number instead of the alias (https://<accountidnumber>.signin.aws.amazon.com/console) continues to work. However, any previously defined alias-based URLs stop working.**
 
-```
+```powershell
 New-IAMAccountAlias -AccountAlias mycompanyaws
 ```
 +  For API details, see [CreateAccountAlias](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1527,7 +1527,7 @@ The following code example shows how to use `New-IAMGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new IAM group named `Developers`.**
 
-```
+```powershell
 New-IAMGroup -GroupName Developers
 ```
 **Output:**
@@ -1549,7 +1549,7 @@ The following code example shows how to use `New-IAMInstanceProfile`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new IAM instance profile named `ProfileForDevEC2Instance`. You must separately run the `Add-IAMRoleToInstanceProfile` command to associate the instance profile with an existing IAM role that provides permissions to the instance. Finally, attach the instance profile to an EC2 instance when you launch it. To do that, use the `New-EC2Instance` cmdlet with either the `InstanceProfile_Arn` or `InstanceProfile_Name` parameter.**
 
-```
+```powershell
 New-IAMInstanceProfile -InstanceProfileName ProfileForDevEC2Instance
 ```
 **Output:**
@@ -1572,7 +1572,7 @@ The following code example shows how to use `New-IAMLoginProfile`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a (temporary) password for the IAM user named Bob, and sets the flag that requires the user to change the password the next time `Bob` signs in.**
 
-```
+```powershell
 New-IAMLoginProfile -UserName Bob -Password P@ssw0rd -PasswordResetRequired $true
 ```
 **Output:**
@@ -1592,7 +1592,7 @@ The following code example shows how to use `New-IAMOpenIDConnectProvider`.
 **Tools for PowerShell V4**
 **Example 1: This example creates an IAM OIDC provider associated with the OIDC compatible provider service found at the URL `https://example.oidcprovider.com` and the client ID `my-testapp-1`. The OIDC provider supplies the thumbprint. To authenticate the thumbprint, follow the steps at http://docs.aws.amazon.com/IAM/latest/UserGuide/identity-providers-oidc-obtain-thumbprint.html.**
 
-```
+```powershell
 New-IAMOpenIDConnectProvider -Url https://example.oidcprovider.com -ClientIDList my-testapp-1 -ThumbprintList 990F419EXAMPLEECF12DDEDA5EXAMPLE52F20D9E
 ```
 **Output:**
@@ -1610,7 +1610,7 @@ The following code example shows how to use `New-IAMPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new IAM policy in the current AWS account named `MySamplePolicy` The file `MySamplePolicy.json` provides the policy content. Note that you must use the `-Raw` switch parameter to successfully process the JSON policy file.**
 
-```
+```powershell
 New-IAMPolicy -PolicyName MySamplePolicy -PolicyDocument (Get-Content -Raw MySamplePolicy.json)
 ```
 **Output:**
@@ -1637,7 +1637,7 @@ The following code example shows how to use `New-IAMPolicyVersion`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new "v2" version of the IAM policy whose ARN is `arn:aws:iam::123456789012:policy/MyPolicy` and makes it the default version. The `NewPolicyVersion.json` file provides the policy content. Note that you must use the `-Raw` switch parameter to successfully process the JSON policy file.**
 
-```
+```powershell
 New-IAMPolicyVersion -PolicyArn arn:aws:iam::123456789012:policy/MyPolicy -PolicyDocument (Get-content -Raw NewPolicyVersion.json) -SetAsDefault $true
 ```
 **Output:**
@@ -1657,7 +1657,7 @@ The following code example shows how to use `New-IAMRole`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new role named `MyNewRole` and attaches to it the policy found in the file `NewRoleTrustPolicy.json`. Note that you must use the `-Raw` switch parameter to successfully process the JSON policy file. The policy document displayed in the output is URL encoded. It is decoded in this example with the `UrlDecode` .NET method. **
 
-```
+```powershell
 $results = New-IAMRole -AssumeRolePolicyDocument (Get-Content -raw NewRoleTrustPolicy.json) -RoleName MyNewRole
 $results
 ```
@@ -1703,7 +1703,7 @@ The following code example shows how to use `New-IAMSAMLProvider`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new SAML provider entity in IAM. It is named `MySAMLProvider` and is described by the SAML metadata document found in the file `SAMLMetaData.xml`, which was separately downloaded from the SAML service provider's web site.**
 
-```
+```powershell
 New-IAMSAMLProvider -Name MySAMLProvider -SAMLMetadataDocument (Get-Content -Raw SAMLMetaData.xml)
 ```
 **Output:**
@@ -1721,7 +1721,7 @@ The following code example shows how to use `New-IAMServiceLinkedRole`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a servicelinked role for autoscaling service.**
 
-```
+```powershell
 New-IAMServiceLinkedRole -AWSServiceName autoscaling.amazonaws.com -CustomSuffix RoleNameEndsWithThis -Description "My service-linked role to support autoscaling"
 ```
 +  For API details, see [CreateServiceLinkedRole](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1734,7 +1734,7 @@ The following code example shows how to use `New-IAMUser`.
 **Tools for PowerShell V4**
 **Example 1: This example creates an IAM user named `Bob`. If Bob needs to sign in to the AWS console, then you must separately run the command `New-IAMLoginProfile` to create a sign-in profile with a password. If Bob needs to run AWS PowerShell or cross-platform CLI commands or make AWS API calls, then you must separately run the `New-IAMAccessKey` command to create access keys.**
 
-```
+```powershell
 New-IAMUser -UserName Bob
 ```
 **Output:**
@@ -1757,7 +1757,7 @@ The following code example shows how to use `New-IAMVirtualMFADevice`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new virtual MFA device. Lines 2 and 3 extract the `Base32StringSeed` value that the virtual MFA software program needs to create an account (as an alternative to the QR code). After you configure the program with the value, get two sequential authentication codes from the program. Finally, use the last command to link the virtual MFA device to the IAM user `Bob` and synchronize the account with the two authentication codes.**
 
-```
+```powershell
 $Device = New-IAMVirtualMFADevice -VirtualMFADeviceName BobsMFADevice
 $SR = New-Object System.IO.StreamReader($Device.Base32StringSeed)
 $base32stringseed = $SR.ReadToEnd()
@@ -1773,7 +1773,7 @@ Enable-IAMMFADevice -SerialNumber $Device.SerialNumber -UserName Bob -Authentica
 ```
 **Example 2: This example creates a new virtual MFA device. Lines 2 and 3 extract the `QRCodePNG` value and write it to a file. This image can be scanned by the virtual MFA software program to create an account (as an alternative to manually entering the Base32StringSeed value). After you create the account in your virtual MFA program, get two sequential authentication codes and enter them in the last commands to link the virtual MFA device to the IAM user `Bob` and synchronize the account.**
 
-```
+```powershell
 $Device = New-IAMVirtualMFADevice -VirtualMFADeviceName BobsMFADevice
 $BR = New-Object System.IO.BinaryReader($Device.QRCodePNG)
 $BR.ReadBytes($BR.BaseStream.Length) | Set-Content -Encoding Byte -Path QRCode.png
@@ -1795,7 +1795,7 @@ The following code example shows how to use `Publish-IAMServerCertificate`.
 **Tools for PowerShell V4**
 **Example 1: This example uploads a new server certificate to the IAM account. The files containing the certificate body, the private key, and (optionally) the certificate chain must all be PEM encoded. Note that the parameters require the actual content of the files rather than the file names. You must use the `-Raw` switch parameter to successfully process the file contents. **
 
-```
+```powershell
 Publish-IAMServerCertificate -ServerCertificateName MyTestCert -CertificateBody (Get-Content -Raw server.crt) -PrivateKey (Get-Content -Raw server.key)
 ```
 **Output:**
@@ -1818,7 +1818,7 @@ The following code example shows how to use `Publish-IAMSigningCertificate`.
 **Tools for PowerShell V4**
 **Example 1: This example uploads a new X.509 signing certificate and associates it with the IAM user named `Bob`. The file containing the certificate body is PEM encoded. The `CertificateBody` parameter requires the actual contents of the certificate file rather than the file name. You must use the `-Raw` switch parameter to successfully process the file.**
 
-```
+```powershell
 Publish-IAMSigningCertificate -UserName Bob -CertificateBody (Get-Content -Raw SampleSigningCert.pem)
 ```
 **Output:**
@@ -1855,12 +1855,12 @@ The following code example shows how to use `Register-IAMGroupPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example attaches the customer managed policy named `TesterPolicy` to the IAM group `Testers`. The users in that group are immediately affected by the permissions defined in the default version of that policy.**
 
-```
+```powershell
 Register-IAMGroupPolicy -GroupName Testers -PolicyArn arn:aws:iam::123456789012:policy/TesterPolicy
 ```
 **Example 2: This example attaches the AWS managed policy named `AdministratorAccess` to the IAM group `Admins`. The users in that group are immediately affected by the permissions defined in the latest version of that policy.**
 
-```
+```powershell
 Register-IAMGroupPolicy -GroupName Admins -PolicyArn arn:aws:iam::aws:policy/AdministratorAccess
 ```
 +  For API details, see [AttachGroupPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1873,7 +1873,7 @@ The following code example shows how to use `Register-IAMRolePolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example attaches the AWS managed policy named `SecurityAudit` to the IAM role `CoSecurityAuditors`. The users who assume that role are immediately affected by the permissions defined in the latest version of that policy.**
 
-```
+```powershell
 Register-IAMRolePolicy -RoleName CoSecurityAuditors -PolicyArn arn:aws:iam::aws:policy/SecurityAudit
 ```
 +  For API details, see [AttachRolePolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1886,7 +1886,7 @@ The following code example shows how to use `Register-IAMUserPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example attaches the AWS managed policy named `AmazonCognitoPowerUser` to the IAM user `Bob`. The user is immediately affected by the permissions defined in the latest version of that policy.**
 
-```
+```powershell
 Register-IAMUserPolicy -UserName Bob -PolicyArn arn:aws:iam::aws:policy/AmazonCognitoPowerUser
 ```
 +  For API details, see [AttachUserPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1899,7 +1899,7 @@ The following code example shows how to use `Remove-IAMAccessKey`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the AWS access key pair with the key ID `AKIAIOSFODNN7EXAMPLE` from the user named `Bob`.**
 
-```
+```powershell
 Remove-IAMAccessKey -AccessKeyId AKIAIOSFODNN7EXAMPLE -UserName Bob -Force
 ```
 +  For API details, see [DeleteAccessKey](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1912,7 +1912,7 @@ The following code example shows how to use `Remove-IAMAccountAlias`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the account alias from your AWS account. The user sign in page with the alias at https://mycompanyaws.signin.aws.amazon.com/console no longer works. You must instead use the original URL with your AWS account ID number at https://<accountidnumber>.signin.aws.amazon.com/console.**
 
-```
+```powershell
 Remove-IAMAccountAlias -AccountAlias mycompanyaws
 ```
 +  For API details, see [DeleteAccountAlias](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1925,7 +1925,7 @@ The following code example shows how to use `Remove-IAMAccountPasswordPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the password policy for the AWS account and resets all values to their original defaults. If a password policy does not currently exist, the following error message appears: The account policy with name PasswordPolicy cannot be found.**
 
-```
+```powershell
 Remove-IAMAccountPasswordPolicy
 ```
 +  For API details, see [DeleteAccountPasswordPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1938,7 +1938,7 @@ The following code example shows how to use `Remove-IAMClientIDFromOpenIDConnect
 **Tools for PowerShell V4**
 **Example 1: This example removes the client ID `My-TestApp-3` from the list of client IDs associated with the IAM OIDC provider whose ARN is `arn:aws:iam::123456789012:oidc-provider/example.oidcprovider.com`.**
 
-```
+```powershell
 Remove-IAMClientIDFromOpenIDConnectProvider -ClientID My-TestApp-3 -OpenIDConnectProviderArn arn:aws:iam::123456789012:oidc-provider/example.oidcprovider.com
 ```
 +  For API details, see [RemoveClientIdFromOpenIdConnectProvider](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1951,7 +1951,7 @@ The following code example shows how to use `Remove-IAMGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the IAM group named `MyTestGroup`. The first command removes any IAM users that are members of the group, and the second command deletes the IAM group. Both commands work without any prompts for confirmation.**
 
-```
+```powershell
 (Get-IAMGroup -GroupName MyTestGroup).Users | Remove-IAMUserFromGroup -GroupName MyTestGroup -Force
 Remove-IAMGroup -GroupName MyTestGroup -Force
 ```
@@ -1965,7 +1965,7 @@ The following code example shows how to use `Remove-IAMGroupPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the inline policy named `TesterPolicy` from the IAM group `Testers`. The users in that group immediately lose the permissions defined in that policy.**
 
-```
+```powershell
 Remove-IAMGroupPolicy -GroupName Testers -PolicyName TestPolicy
 ```
 +  For API details, see [DeleteGroupPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1978,7 +1978,7 @@ The following code example shows how to use `Remove-IAMInstanceProfile`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the EC2 instance profile named `MyAppInstanceProfile`. The first command detaches any roles from the instance profile, and then the second command deletes the instance profile.**
 
-```
+```powershell
 (Get-IAMInstanceProfile -InstanceProfileName MyAppInstanceProfile).Roles | Remove-IAMRoleFromInstanceProfile -InstanceProfileName MyAppInstanceProfile
 Remove-IAMInstanceProfile -InstanceProfileName MyAppInstanceProfile
 ```
@@ -1992,7 +1992,7 @@ The following code example shows how to use `Remove-IAMLoginProfile`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the login profile from the IAM user named `Bob`. This prevents the user from signing-in to the AWS console. It does not prevent the user from running any AWS CLI, PowerShell, or API calls using AWS access keys that might still be attached to the user account.**
 
-```
+```powershell
 Remove-IAMLoginProfile -UserName Bob
 ```
 +  For API details, see [DeleteLoginProfile](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2005,7 +2005,7 @@ The following code example shows how to use `Remove-IAMOpenIDConnectProvider`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the IAM OIDC provider that connects to the provider `example.oidcprovider.com`. Ensure that you update or delete any roles that reference this provider in the `Principal` element of the role's trust policy.**
 
-```
+```powershell
 Remove-IAMOpenIDConnectProvider -OpenIDConnectProviderArn arn:aws:iam::123456789012:oidc-provider/example.oidcprovider.com
 ```
 +  For API details, see [DeleteOpenIdConnectProvider](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2018,12 +2018,12 @@ The following code example shows how to use `Remove-IAMPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the policy whose ARN is `arn:aws:iam::123456789012:policy/MySamplePolicy`. Before you can delete the policy, you must first delete all versions except the default by running `Remove-IAMPolicyVersion`. You must also detach the policy from any IAM users, groups, or roles.**
 
-```
+```powershell
 Remove-IAMPolicy -PolicyArn arn:aws:iam::123456789012:policy/MySamplePolicy
 ```
 **Example 2: This example deletes a policy by first deleting all the non-default policy versions, detaching it from all attached IAM entities, and finally deleting the policy itself. The first line retrieves the policy object. The second line retrieves all the policy versions that are not flagged as the default version into a collection and then deletes each policy in the collection. The third line retrieves all of the IAM users, groups, and roles to which the policy is attached. Lines four through six detach the policy from each attached entity. The last line uses this command to remove the managed policy as well as the remaining default version. The example includes the `-Force` switch parameter on any line that needs it to suppress prompts for confirmation.**
 
-```
+```powershell
 $pol = Get-IAMPolicy -PolicyArn arn:aws:iam::123456789012:policy/MySamplePolicy
 Get-IAMPolicyVersions -PolicyArn $pol.Arn | where {-not $_.IsDefaultVersion} | Remove-IAMPolicyVersion -PolicyArn $pol.Arn -force
 $attached = Get-IAMEntitiesForPolicy -PolicyArn $pol.Arn
@@ -2042,12 +2042,12 @@ The following code example shows how to use `Remove-IAMPolicyVersion`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the version identified as `v2` from the policy whose ARN is `arn:aws:iam::123456789012:policy/MySamplePolicy`.**
 
-```
+```powershell
 Remove-IAMPolicyVersion -PolicyArn arn:aws:iam::123456789012:policy/MySamplePolicy -VersionID v2
 ```
 **Example 2: This example deletes a policy by first deleting all non-default policy versions and then deleting the policy itself. The first line retrieves the policy object. The second line retrieves all of the policy versions that are not flagged as the default into a collection and then uses this command to delete each policy in the collection. The last line removes the policy itself as well as the remaining default version. Note that to successfully delete a managed policy, you must also detach the policy from any users, groups, or roles by using the `Unregister-IAMUserPolicy`, `Unregister-IAMGroupPolicy`, and `Unregister-IAMRolePolicy` commands. See the example for the `Remove-IAMPolicy` cmdlet. **
 
-```
+```powershell
 $pol = Get-IAMPolicy -PolicyArn arn:aws:iam::123456789012:policy/MySamplePolicy
 Get-IAMPolicyVersions -PolicyArn $pol.Arn | where {-not $_.IsDefaultVersion} | Remove-IAMPolicyVersion -PolicyArn $pol.Arn -force
 Remove-IAMPolicy -PolicyArn $pol.Arn -force
@@ -2062,12 +2062,12 @@ The following code example shows how to use `Remove-IAMRole`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the role named `MyNewRole` from the current IAM account. Before you can delete the role you must first use the `Unregister-IAMRolePolicy` command to detach any managed policies. Inline policies are deleted with the role.**
 
-```
+```powershell
 Remove-IAMRole -RoleName MyNewRole
 ```
 **Example 2: This example detaches any managed policies from the role named `MyNewRole` and then deletes the role. The first line retrieves any managed policies attached to the role as a collection and then detaches each policy in the collection from the role. The second line deletes the role itself. Inline policies are deleted along with the role.**
 
-```
+```powershell
 Get-IAMAttachedRolePolicyList -RoleName MyNewRole | Unregister-IAMRolePolicy -RoleName MyNewRole
 Remove-IAMRole -RoleName MyNewRole
 ```
@@ -2081,7 +2081,7 @@ The following code example shows how to use `Remove-IAMRoleFromInstanceProfile`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the role named `MyNewRole` from the EC2 instance profile named `MyNewRole`. An instance profile that is created in the IAM console always has the same name as the role, as in this example. If you create them in the API or CLI, then they can have different names.**
 
-```
+```powershell
 Remove-IAMRoleFromInstanceProfile -InstanceProfileName MyNewRole -RoleName MyNewRole -Force
 ```
 +  For API details, see [RemoveRoleFromInstanceProfile](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2094,7 +2094,7 @@ The following code example shows how to use `Remove-IAMRolePermissionsBoundary`.
 **Tools for PowerShell V4**
 **Example 1: This example shows how to remove the permission boundary attached to an IAM role.**
 
-```
+```powershell
 Remove-IAMRolePermissionsBoundary -RoleName MyRoleName
 ```
 +  For API details, see [DeleteRolePermissionsBoundary](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2107,7 +2107,7 @@ The following code example shows how to use `Remove-IAMRolePolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the inline policy `S3AccessPolicy` that is embedded in the IAM role `S3BackupRole`.**
 
-```
+```powershell
 Remove-IAMRolePolicy -PolicyName S3AccessPolicy -RoleName S3BackupRole
 ```
 +  For API details, see [DeleteRolePolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2120,7 +2120,7 @@ The following code example shows how to use `Remove-IAMRoleTag`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the tag from the role named "MyRoleName" with tag key as "abac". To remove multiple tags, provide a comma separted tag keys list.**
 
-```
+```powershell
 Remove-IAMRoleTag -RoleName MyRoleName -TagKey "abac","xyzw"
 ```
 +  For API details, see [UntagRole](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2133,7 +2133,7 @@ The following code example shows how to use `Remove-IAMSAMLProvider`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the IAM SAML 2.0 provider whose ARN is `arn:aws:iam::123456789012:saml-provider/SAMLADFSProvider`.**
 
-```
+```powershell
 Remove-IAMSAMLProvider -SAMLProviderArn arn:aws:iam::123456789012:saml-provider/SAMLADFSProvider
 ```
 +  For API details, see [DeleteSAMLProvider](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2146,7 +2146,7 @@ The following code example shows how to use `Remove-IAMServerCertificate`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the server certificate named `MyServerCert`.**
 
-```
+```powershell
 Remove-IAMServerCertificate -ServerCertificateName MyServerCert
 ```
 +  For API details, see [DeleteServerCertificate](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2159,7 +2159,7 @@ The following code example shows how to use `Remove-IAMServiceLinkedRole`.
 **Tools for PowerShell V4**
 **Example 1: This example deleted the service linked role. Please note that if the service is still using this role, then this command results in a failure.**
 
-```
+```powershell
 Remove-IAMServiceLinkedRole -RoleName AWSServiceRoleForAutoScaling_RoleNameEndsWithThis
 ```
 +  For API details, see [DeleteServiceLinkedRole](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2172,7 +2172,7 @@ The following code example shows how to use `Remove-IAMSigningCertificate`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the signing certificate with the ID `Y3EK7RMEXAMPLESV33FCREXAMPLEMJLU` from the IAM user named `Bob`.**
 
-```
+```powershell
 Remove-IAMSigningCertificate -UserName Bob -CertificateId Y3EK7RMEXAMPLESV33FCREXAMPLEMJLU
 ```
 +  For API details, see [DeleteSigningCertificate](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2185,12 +2185,12 @@ The following code example shows how to use `Remove-IAMUser`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the IAM user named `Bob`.**
 
-```
+```powershell
 Remove-IAMUser -UserName Bob
 ```
 **Example 2: This example deletes the IAM user named `Theresa` along with any elements that must be deleted first.**
 
-```
+```powershell
 $name = "Theresa"
 
 # find any groups and remove user from them
@@ -2237,18 +2237,18 @@ The following code example shows how to use `Remove-IAMUserFromGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the IAM user `Bob` from the group `Testers`. **
 
-```
+```powershell
 Remove-IAMUserFromGroup -GroupName Testers -UserName Bob
 ```
 **Example 2: This example finds any groups of which IAM user `Theresa` is a member, and then removes `Theresa` from those groups.**
 
-```
+```powershell
 $groups = Get-IAMGroupForUser -UserName Theresa
 foreach ($group in $groups) { Remove-IAMUserFromGroup -GroupName $group.GroupName -UserName Theresa -Force }
 ```
 **Example 3: This example shows an alternate way of removing the IAM user `Bob` from the `Testers` group.**
 
-```
+```powershell
 Get-IAMGroupForUser -UserName Bob | Remove-IAMUserFromGroup -UserName Bob -GroupName Testers -Force
 ```
 +  For API details, see [RemoveUserFromGroup](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2261,7 +2261,7 @@ The following code example shows how to use `Remove-IAMUserPermissionsBoundary`.
 **Tools for PowerShell V4**
 **Example 1: This example shows how to remove the permission boundary attached to an IAM user.**
 
-```
+```powershell
 Remove-IAMUserPermissionsBoundary -UserName joe
 ```
 +  For API details, see [DeleteUserPermissionsBoundary](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2274,12 +2274,12 @@ The following code example shows how to use `Remove-IAMUserPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the inline policy named `AccessToEC2Policy` that is embedded in the IAM user named `Bob`.**
 
-```
+```powershell
 Remove-IAMUserPolicy -PolicyName AccessToEC2Policy -UserName Bob
 ```
 **Example 2: This example finds all of the inline polices that are embedded in the IAM user named `Theresa` and then deletes them.**
 
-```
+```powershell
 $inlinepols = Get-IAMUserPolicies -UserName Theresa
 foreach ($pol in $inlinepols) { Remove-IAMUserPolicy -PolicyName $pol -UserName Theresa -Force}
 ```
@@ -2293,7 +2293,7 @@ The following code example shows how to use `Remove-IAMUserTag`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the tag from the user named "joe" with tag key as "abac" and "xyzw". To remove multiple tags, provide a comma separted tag keys list.**
 
-```
+```powershell
 Remove-IAMUserTag -UserName joe -TagKey "abac","xyzw"
 ```
 +  For API details, see [UntagUser](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2306,12 +2306,12 @@ The following code example shows how to use `Remove-IAMVirtualMFADevice`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the IAM virtual MFA device whose ARN is `arn:aws:iam::123456789012:mfa/bob`.**
 
-```
+```powershell
 Remove-IAMVirtualMFADevice -SerialNumber arn:aws:iam::123456789012:mfa/bob
 ```
 **Example 2: This example checks to see whether the IAM user Theresa has an MFA device assigned. If one is found, the device is disabled for the IAM user. If the device is virtual, then it is also deleted.**
 
-```
+```powershell
 $mfa = Get-IAMMFADevice -UserName Theresa
 if ($mfa) {
     Disable-IAMMFADevice -SerialNumber $mfa.SerialNumber -UserName $name
@@ -2328,7 +2328,7 @@ The following code example shows how to use `Request-IAMCredentialReport`.
 **Tools for PowerShell V4**
 **Example 1: This example requests generation of a new report, which can be done every four hours. If the last report is still recent the State field reads `COMPLETE`. Use `Get-IAMCredentialReport` to view the completed report.**
 
-```
+```powershell
 Request-IAMCredentialReport
 ```
 **Output:**
@@ -2348,7 +2348,7 @@ The following code example shows how to use `Request-IAMServiceLastAccessedDetai
 **Tools for PowerShell V4**
 **Example 1: This example is equivalent cmdlet of GenerateServiceLastAccessedDetails API. This provides with a job id which can be used in Get-IAMServiceLastAccessedDetail and Get-IAMServiceLastAccessedDetailWithEntity**
 
-```
+```powershell
 Request-IAMServiceLastAccessedDetail -Arn arn:aws:iam::123456789012:user/TestUser
 ```
 +  For API details, see [GenerateServiceLastAccessedDetails](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2361,7 +2361,7 @@ The following code example shows how to use `Set-IAMDefaultPolicyVersion`.
 **Tools for PowerShell V4**
 **Example 1: This example sets the `v2` version of the policy whose ARN is `arn:aws:iam::123456789012:policy/MyPolicy` as the default active version.**
 
-```
+```powershell
 Set-IAMDefaultPolicyVersion -PolicyArn arn:aws:iam::123456789012:policy/MyPolicy -VersionId v2
 ```
 +  For API details, see [SetDefaultPolicyVersion](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2374,7 +2374,7 @@ The following code example shows how to use `Set-IAMRolePermissionsBoundary`.
 **Tools for PowerShell V4**
 **Example 1: This example shows how to set the Permission boundary for a IAM Role. You can set AWS Managed policies or Custom policies as permission boundary.**
 
-```
+```powershell
 Set-IAMRolePermissionsBoundary -RoleName MyRoleName -PermissionsBoundary arn:aws:iam::123456789012:policy/intern-boundary
 ```
 +  For API details, see [PutRolePermissionsBoundary](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2387,7 +2387,7 @@ The following code example shows how to use `Set-IAMUserPermissionsBoundary`.
 **Tools for PowerShell V4**
 **Example 1: This example shows how to set the Permission boundary for the user. You can set AWS Managed policies or Custom policies as permission boundary. **
 
-```
+```powershell
 Set-IAMUserPermissionsBoundary -UserName joe -PermissionsBoundary arn:aws:iam::123456789012:policy/intern-boundary
 ```
 +  For API details, see [PutUserPermissionsBoundary](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2400,12 +2400,12 @@ The following code example shows how to use `Sync-IAMMFADevice`.
 **Tools for PowerShell V4**
 **Example 1: This example synchronizes the MFA device that is associated with the IAM user `Bob` and whose ARN is `arn:aws:iam::123456789012:mfa/bob` with an authenticator program that provided the two authentication codes.**
 
-```
+```powershell
 Sync-IAMMFADevice -SerialNumber arn:aws:iam::123456789012:mfa/theresa -AuthenticationCode1 123456 -AuthenticationCode2 987654 -UserName Bob
 ```
 **Example 2: This example synchronizes the IAM MFA device that is associated with the IAM user `Theresa` with a physical device that has the serial number `ABCD12345678` and that provided the two authentication codes.**
 
-```
+```powershell
 Sync-IAMMFADevice -SerialNumber ABCD12345678 -AuthenticationCode1 123456 -AuthenticationCode2 987654 -UserName Theresa
 ```
 +  For API details, see [ResyncMfaDevice](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2418,12 +2418,12 @@ The following code example shows how to use `Unregister-IAMGroupPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example detaches the managed group policy whose ARN is `arn:aws:iam::123456789012:policy/TesterAccessPolicy` from the group named `Testers`.**
 
-```
+```powershell
 Unregister-IAMGroupPolicy -GroupName Testers -PolicyArn arn:aws:iam::123456789012:policy/TesterAccessPolicy
 ```
 **Example 2: This example finds all the managed policies that are attached to the group named `Testers` and detaches them from the group.**
 
-```
+```powershell
 Get-IAMAttachedGroupPolicies -GroupName Testers | Unregister-IAMGroupPolicy -Groupname Testers
 ```
 +  For API details, see [DetachGroupPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2436,12 +2436,12 @@ The following code example shows how to use `Unregister-IAMRolePolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example detaches the managed group policy whose ARN is `arn:aws:iam::123456789012:policy/FederatedTesterAccessPolicy` from the role named `FedTesterRole`.**
 
-```
+```powershell
 Unregister-IAMRolePolicy -RoleName FedTesterRole -PolicyArn arn:aws:iam::123456789012:policy/FederatedTesterAccessPolicy
 ```
 **Example 2: This example finds all of the managed policies that are attached to the role named `FedTesterRole` and detaches them from the role.**
 
-```
+```powershell
 Get-IAMAttachedRolePolicyList -RoleName FedTesterRole | Unregister-IAMRolePolicy -Rolename FedTesterRole
 ```
 +  For API details, see [DetachRolePolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2454,12 +2454,12 @@ The following code example shows how to use `Unregister-IAMUserPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example detaches the managed policy whose ARN is `arn:aws:iam::123456789012:policy/TesterPolicy` from the IAM user named `Bob`.**
 
-```
+```powershell
 Unregister-IAMUserPolicy -UserName Bob -PolicyArn arn:aws:iam::123456789012:policy/TesterPolicy
 ```
 **Example 2: This example finds all the managed policies that are attached to the IAM user named `Theresa` and detaches those policies from the user.**
 
-```
+```powershell
 Get-IAMAttachedUserPolicyList -UserName Theresa | Unregister-IAMUserPolicy -Username Theresa
 ```
 +  For API details, see [DetachUserPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2472,7 +2472,7 @@ The following code example shows how to use `Update-IAMAccessKey`.
 **Tools for PowerShell V4**
 **Example 1: This example changes the status of the access key `AKIAIOSFODNN7EXAMPLE` for the IAM user named `Bob` to `Inactive`.**
 
-```
+```powershell
 Update-IAMAccessKey -UserName Bob -AccessKeyId AKIAIOSFODNN7EXAMPLE -Status Inactive
 ```
 +  For API details, see [UpdateAccessKey](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2485,7 +2485,7 @@ The following code example shows how to use `Update-IAMAccountPasswordPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example updates the password policy for the account with the specified settings. Note that any parameters that are not included in the command are not left unmodified. Instead, they are reset to default values.**
 
-```
+```powershell
 Update-IAMAccountPasswordPolicy -AllowUsersToChangePasswords $true -HardExpiry $false -MaxPasswordAge 90 -MinimumPasswordLength 8 -PasswordReusePrevention 20 -RequireLowercaseCharacters $true -RequireNumbers $true -RequireSymbols $true -RequireUppercaseCharacters $true
 ```
 +  For API details, see [UpdateAccountPasswordPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2498,7 +2498,7 @@ The following code example shows how to use `Update-IAMAssumeRolePolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example updates the IAM role named `ClientRole` with a new trust policy, the contents of which come from the file `ClientRolePolicy.json`. Note that you must use the `-Raw` switch parameter to successfully process the contents of the JSON file.**
 
-```
+```powershell
 Update-IAMAssumeRolePolicy -RoleName ClientRole -PolicyDocument (Get-Content -raw ClientRolePolicy.json)
 ```
 +  For API details, see [UpdateAssumeRolePolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2511,12 +2511,12 @@ The following code example shows how to use `Update-IAMGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example renames the IAM group `Testers` to `AppTesters`.**
 
-```
+```powershell
 Update-IAMGroup -GroupName Testers -NewGroupName AppTesters
 ```
 **Example 2: This example changes the path of the IAM group `AppTesters` to `/Org1/Org2/`. This changes the ARN for the group to `arn:aws:iam::123456789012:group/Org1/Org2/AppTesters`.**
 
-```
+```powershell
 Update-IAMGroup -GroupName AppTesters -NewPath /Org1/Org2/
 ```
 +  For API details, see [UpdateGroup](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2529,7 +2529,7 @@ The following code example shows how to use `Update-IAMLoginProfile`.
 **Tools for PowerShell V4**
 **Example 1: This example sets a new temporary password for the IAM user `Bob`, and requires the user to change the password the next time the user signs in.**
 
-```
+```powershell
 Update-IAMLoginProfile -UserName Bob -Password "P@ssw0rd1234" -PasswordResetRequired $true
 ```
 +  For API details, see [UpdateLoginProfile](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2542,7 +2542,7 @@ The following code example shows how to use `Update-IAMOpenIDConnectProviderThum
 **Tools for PowerShell V4**
 **Example 1: This example updates the certificate thumbprint list for the OIDC provider whose ARN is `arn:aws:iam::123456789012:oidc-provider/example.oidcprovider.com` to use a new thumbprint. The OIDC provider shares the new value when the certificate that is associated with the provider changes.**
 
-```
+```powershell
 Update-IAMOpenIDConnectProviderThumbprint -OpenIDConnectProviderArn arn:aws:iam::123456789012:oidc-provider/example.oidcprovider.com -ThumbprintList 7359755EXAMPLEabc3060bce3EXAMPLEec4542a3
 ```
 +  For API details, see [UpdateOpenIdConnectProviderThumbprint](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2555,7 +2555,7 @@ The following code example shows how to use `Update-IAMRole`.
 **Tools for PowerShell V4**
 **Example 1: This example updates the role description and the maximum session duration value(in seconds) for which a role's session can be requested.**
 
-```
+```powershell
 Update-IAMRole -RoleName MyRoleName -Description "My testing role" -MaxSessionDuration 43200
 ```
 +  For API details, see [UpdateRole](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2568,7 +2568,7 @@ The following code example shows how to use `Update-IAMRoleDescription`.
 **Tools for PowerShell V4**
 **Example 1: This example updates the description of an IAM role in your account.**
 
-```
+```powershell
 Update-IAMRoleDescription -RoleName MyRoleName -Description "My testing role"
 ```
 +  For API details, see [UpdateRoleDescription](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2581,7 +2581,7 @@ The following code example shows how to use `Update-IAMSAMLProvider`.
 **Tools for PowerShell V4**
 **Example 1: This example updates the SAML provider in IAM whose ARN is `arn:aws:iam::123456789012:saml-provider/SAMLADFS` with a new SAML metadata document from the file `SAMLMetaData.xml`. Note that you must use the `-Raw` switch parameter to successfully process the contents of the JSON file.**
 
-```
+```powershell
 Update-IAMSAMLProvider -SAMLProviderArn arn:aws:iam::123456789012:saml-provider/SAMLADFS -SAMLMetadataDocument (Get-Content -Raw SAMLMetaData.xml)
 ```
 +  For API details, see [UpdateSamlProvider](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2594,12 +2594,12 @@ The following code example shows how to use `Update-IAMServerCertificate`.
 **Tools for PowerShell V4**
 **Example 1: This example renames the certificate named `MyServerCertificate` to `MyRenamedServerCertificate`.**
 
-```
+```powershell
 Update-IAMServerCertificate -ServerCertificateName MyServerCertificate -NewServerCertificateName MyRenamedServerCertificate
 ```
 **Example 2: This example moves the certificate named `MyServerCertificate` to the path /Org1/Org2/. This changes the ARN for the resource to `arn:aws:iam::123456789012:server-certificate/Org1/Org2/MyServerCertificate`.**
 
-```
+```powershell
 Update-IAMServerCertificate -ServerCertificateName MyServerCertificate -NewPath /Org1/Org2/
 ```
 +  For API details, see [UpdateServerCertificate](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2612,7 +2612,7 @@ The following code example shows how to use `Update-IAMSigningCertificate`.
 **Tools for PowerShell V4**
 **Example 1: This example updates the certificate that is associated with the IAM user named `Bob` and whose certificate ID si `Y3EK7RMEXAMPLESV33FCREXAMPLEMJLU` to mark it as inactive.**
 
-```
+```powershell
 Update-IAMSigningCertificate -CertificateId Y3EK7RMEXAMPLESV33FCREXAMPLEMJLU -UserName Bob -Status Inactive
 ```
 +  For API details, see [UpdateSigningCertificate](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2625,12 +2625,12 @@ The following code example shows how to use `Update-IAMUser`.
 **Tools for PowerShell V4**
 **Example 1: This example renames the IAM user `Bob` to `Robert`.**
 
-```
+```powershell
 Update-IAMUser -UserName Bob -NewUserName Robert
 ```
 **Example 2: This example changes the path of the IAM User `Bob` to `/Org1/Org2/`, which effectively changes the ARN for the user to `arn:aws:iam::123456789012:user/Org1/Org2/bob`.**
 
-```
+```powershell
 Update-IAMUser -UserName Bob -NewPath /Org1/Org2/
 ```
 +  For API details, see [UpdateUser](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2643,7 +2643,7 @@ The following code example shows how to use `Write-IAMGroupPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example creates an inline policy named `AppTesterPolicy` and embeds it in the IAM group `AppTesters`. If an inline policy with the same name already exists, then it is overwritten. The JSON policy content comes the file `apptesterpolicy.json`. Note that you must use the `-Raw` parameter to successfully process the content of the JSON file.**
 
-```
+```powershell
 Write-IAMGroupPolicy -GroupName AppTesters -PolicyName AppTesterPolicy -PolicyDocument (Get-Content -Raw apptesterpolicy.json)
 ```
 +  For API details, see [PutGroupPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2656,7 +2656,7 @@ The following code example shows how to use `Write-IAMRolePolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example creates an inline policy named `FedTesterRolePolicy` and embeds it in the IAM role `FedTesterRole`. If an inline policy with the same name already exists, then it is overwritten. The JSON policy content comes from the file `FedTesterPolicy.json`. Note that you must use the `-Raw` parameter to successfully process the content of the JSON file.**
 
-```
+```powershell
 Write-IAMRolePolicy -RoleName FedTesterRole -PolicyName FedTesterRolePolicy -PolicyDocument (Get-Content -Raw FedTesterPolicy.json)
 ```
 +  For API details, see [PutRolePolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2669,7 +2669,7 @@ The following code example shows how to use `Write-IAMUserPolicy`.
 **Tools for PowerShell V4**
 **Example 1: This example creates an inline policy named `EC2AccessPolicy` and embeds it in the IAM user `Bob`. If an inline policy with the same name already exists, then it is overwritten. The JSON policy content comes from the file `EC2AccessPolicy.json`. Note that you must use the `-Raw` parameter to successfully process the content of the JSON file.**
 
-```
+```powershell
 Write-IAMUserPolicy -UserName Bob -PolicyName EC2AccessPolicy -PolicyDocument (Get-Content -Raw EC2AccessPolicy.json)
 ```
 +  For API details, see [PutUserPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.

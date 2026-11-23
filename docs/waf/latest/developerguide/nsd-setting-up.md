@@ -57,7 +57,7 @@ The delegated administrator account requires specific IAM permissions to manage 
 
 **Required IAM policy for AWS Shield network security director delegated administrator:**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

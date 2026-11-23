@@ -86,7 +86,7 @@ This command includes a filter to limit the results to only those executions tha
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Get-SSMAssociationExecution `
      -AssociationId {{ID}} `
      -Filter @{"Key"="CreatedTime";"Value"="2019-06-01T19:15:38.372Z";"Type"="GREATER_THAN"}
@@ -224,7 +224,7 @@ This command includes a filter to limit the results to only those executions tha
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Get-SSMAssociationExecution `
      -AssociationId {{14bea65d-5ccc-462d-a2f3-e99c8EXAMPLE}} `
      -Filter @{"Key"="CreatedTime";"Value"="2019-06-01T19:15:38.372Z";"Type"="LESS_THAN"}
@@ -255,7 +255,7 @@ This command includes a filter to limit the results to only those executions tha
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Get-SSMAssociationExecution `
      -AssociationId {{14bea65d-5ccc-462d-a2f3-e99c8EXAMPLE}} `
      -Filter @{
@@ -295,7 +295,7 @@ This command includes a filter to limit the results to only those executions tha
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Get-SSMAssociationExecutionTarget `
      -AssociationId {{14bea65d-5ccc-462d-a2f3-e99c8EXAMPLE}} `
      -ExecutionId {{76a5a04f-caf6-490c-b448-92c02EXAMPLE}}
@@ -328,7 +328,7 @@ This command includes a filter to limit the results to only those executions tha
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Get-SSMAssociationExecutionTarget `
      -AssociationId {{14bea65d-5ccc-462d-a2f3-e99c8EXAMPLE}} `
      -ExecutionId {{76a5a04f-caf6-490c-b448-92c02EXAMPLE}} `
@@ -365,7 +365,7 @@ This command includes a filter to limit the results to only those executions tha
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Get-SSMAssociationExecutionTarget `
      -AssociationId {{14bea65d-5ccc-462d-a2f3-e99c8EXAMPLE}} `
      -ExecutionId {{76a5a04f-caf6-490c-b448-92c02EXAMPLE}} `

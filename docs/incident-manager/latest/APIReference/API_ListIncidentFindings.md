@@ -123,7 +123,7 @@ This example illustrates one usage of ListIncidentFindings.
 #### Sample Request
 <a name="API_ListIncidentFindings_Example_1_Request"></a>
 
-```
+```json
 POST /listIncidentFindings HTTP/1.1
 Host: ssm-incidents.us-east-2.amazonaws.com
 Accept-Encoding: identity
@@ -140,7 +140,7 @@ Content-Length: 113
 #### Sample Response
 <a name="API_ListIncidentFindings_Example_1_Response"></a>
 
-```
+```json
 {
   "findings": [
     {

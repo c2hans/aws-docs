@@ -132,7 +132,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-directory-dns-update-cluster-permissions-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-UpdateClusterDNSPermission-Admin",
   "Region": "us-east-1",
@@ -146,7 +146,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-directory-dns-update-cluster-permissions-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-UpdateClusterDNSPermission-Admin",
   "Region": "us-east-1",

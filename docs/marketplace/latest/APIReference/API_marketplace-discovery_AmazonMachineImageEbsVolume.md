@@ -20,7 +20,7 @@ Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: Yes
 
  ** iops **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageEbsVolume-iops"></a>
-The total number of provisioned IOPS supported.
+The total number of provisioned input/output operations per second (IOPS) that the volume supports.
 Type: Integer
 Valid Range: Minimum value of 0.
 Required: No

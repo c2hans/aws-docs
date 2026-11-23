@@ -22,7 +22,7 @@ AWS Signer reports to CloudWatch Events whenever the state of a signing job chan
 
 The following JSON shows an example of the "Signer Job Status Change" event that AWS Signer reports.
 
-```
+```json
 {
    "version":"0",
    "id":"{{event_ID}}",

@@ -42,12 +42,18 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops04-b
  Figures 1 through 3 show the [AWS CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html) blue/green workflow for Amazon EC2, Amazon ECS, and AWS Lambda. AWS CodeDeploy automates in-place and blue/green deployments across these compute types and integrates with monitoring, so a failed health check can halt or reverse a rollout. See [Automating safe, hands-off deployments](https://builder.aws.com/content/3ErTKQOTKc5NIw031UePBPxTQ6I/automating-safe-hands-off-deployments) and [My CI/CD pipeline is my release captain](https://builder.aws.com/content/3Ev3XnnYuuBhlgnywbbVFzwibm1/my-cicd-pipeline-is-my-release-captain) for how these stages fit together at scale. <a name="ops04-bp01-fig1"></a>
 
 ![Workflow diagram showing the AWS CodeDeploy blue/green deployment process for Amazon EC2, where a new application version is deployed to a replacement environment and traffic shifts after health checks pass.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/deployment-process-ec2.png)
+
+*AWS CodeDeploy blue/green deployment process for Amazon EC2*
 <a name="ops04-bp01-fig2"></a>
 
 ![Workflow diagram showing the AWS CodeDeploy blue/green deployment process for Amazon ECS, where a new task set is deployed and traffic shifts after health checks pass.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/deployment-process-ecs.png)
+
+*AWS CodeDeploy blue/green deployment process for Amazon ECS*
 <a name="ops04-bp01-fig3"></a>
 
 ![Workflow diagram showing the AWS CodeDeploy blue/green deployment process for AWS Lambda, where traffic shifts from the current function version to a new version according to a deployment configuration.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/deployment-process-lambda.png)
+
+*AWS CodeDeploy blue/green deployment process for AWS Lambda*
 
  Decouple your continuous integration (CI) pipeline from your continuous delivery (CD) pipeline. Services such as [Service Catalog](https://aws.amazon.com/servicecatalog/), [Amazon Elastic Container Registry (Amazon ECR)](https://aws.amazon.com/ecr/), and [AWS Serverless Application Repository](https://aws.amazon.com/serverless/serverlessrepo) host build artifacts that CD pipelines consume. Decoupling improves resilience and simplifies deploying across Regions: a single CI pipeline publishes the artifact to multiple Regions or accounts, and a separate instance of the CD pipeline deploys it in each Region, for example through an [AWS CloudFormation StackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html).
 

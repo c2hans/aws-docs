@@ -16,7 +16,7 @@ The default level is **Application**. The application reports metrics at the cur
 
 You set the CloudWatch metrics reporting level using the `MonitoringConfiguration` parameter of the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action, or the `MonitoringConfigurationUpdate` parameter of the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action. The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action sets the CloudWatch metrics reporting level to **Task**:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "CurrentApplicationVersionId": 4,

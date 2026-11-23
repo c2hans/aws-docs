@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_De
 
 # DeleteMembership
 
-Deletes a membership, revoking a user's access to an agent space.
+Deletes a membership, revoking a user's or group's access to an agent space.
 
 ## Request Syntax
 <a name="API_DeleteMembership_RequestSyntax"></a>
@@ -49,7 +49,7 @@ Required: Yes
  ** [memberType](#API_DeleteMembership_RequestSyntax) **   <a name="securityagent-DeleteMembership-request-memberType"></a>
 The type of member to remove.
 Type: String
-Valid Values: `USER`
+Valid Values: `USER | GROUP`
 Required: No
 
 ## Response Syntax

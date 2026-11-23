@@ -103,7 +103,7 @@ When CodePipeline runs the action, CodePipeline service role requires the follow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -167,7 +167,7 @@ When CodePipeline runs the action, CodePipeline service role requires the follow
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: Deploy
 actionTypeId:
   category: Deploy
@@ -189,7 +189,7 @@ namespace: DeployVariables
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "Deploy",
     "actionTypeId": {

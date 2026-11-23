@@ -114,7 +114,7 @@ When you use a customer managed key, DMS Schema Conversion creates grants on you
 
 DMS Schema Conversion creates a grant for accessing and managing the encryption keys during conversion. To use a customer managed key for your DMS Schema Conversion project, add the following to your customer managed key policy:
 
-```
+```json
 [
   {
     "Sid": "Allow {{ExampleRole}} to Describe this key for DMS Schema Conversion",

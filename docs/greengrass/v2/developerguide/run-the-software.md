@@ -17,7 +17,7 @@ If you don't see this message, do the following to run the software:
 
 1. Run the following command to run the software.
 
-   ```
+   ```bash
    sudo {{/greengrass/v2}}/alts/current/distro/bin/loader
    ```
 
@@ -29,7 +29,7 @@ If you don't see this message, do the following to run the software:
 
 1. You must leave the current command shell open to keep the AWS IoT Greengrass Core software running. If you use SSH to connect to the core device, run the following command on your development computer to open a second SSH session that you can use to run additional commands on the core device. Replace {{username}} with the name of the user to sign in, and replace {{pi-ip-address}} with the IP address of the device.
 
-   ```
+   ```bash
    ssh {{username}}@{{pi-ip-address}}
    ```
 

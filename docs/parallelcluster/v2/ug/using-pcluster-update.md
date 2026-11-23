@@ -39,7 +39,7 @@ This setting can be changed if [`[cluster]`](cluster-definition.md) [`fsx_settin
 
 This example demonstrates a [`pcluster update`](pcluster.update.md) with some changes that block the update.
 
-```
+```sh
 $ pcluster update
   Validating configuration file /home/{{username}}/.parallelcluster/config...
 Retrieving configuration from CloudFormation for cluster test-1...

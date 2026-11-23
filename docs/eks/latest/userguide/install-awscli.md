@@ -36,7 +36,7 @@ After installing the AWS CLI, do the following steps to configure it. For more i
 
 1. In a terminal window, enter the following command:
 
-   ```
+   ```bash
    aws configure
    ```
 
@@ -44,7 +44,7 @@ After installing the AWS CLI, do the following steps to configure it. For more i
 
 1. Enter your AWS credentials. For example:
 
-   ```
+   ```bash
    Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
    Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
    Default region name [None]: region-code
@@ -58,13 +58,13 @@ If needed, run the following command to get a new security token for the AWS CLI
 
 By default, the token is valid for 15 minutes. To change the default session timeout, pass the `--duration-seconds` flag. For example:
 
-```
+```bash
 aws sts get-session-token --duration-seconds 3600
 ```
 
 This command returns the temporary security credentials for an AWS CLI session. You should see the following response output:
 
-```
+```bash
 {
     "Credentials": {
         "AccessKeyId": "ASIA5FTRU3LOEXAMPLE",
@@ -80,13 +80,13 @@ This command returns the temporary security credentials for an AWS CLI session. 
 
 If needed, run the following command to verify the AWS credentials for your IAM user identity (such as {{ClusterAdmin}}) for the terminal session.
 
-```
+```bash
 aws sts get-caller-identity
 ```
 
 This command returns the Amazon Resource Name (ARN) of the IAM entity that’s configured for the AWS CLI. You should see the following example response output:
 
-```
+```bash
 {
     "UserId": "AKIAIOSFODNN7EXAMPLE",
     "Account": "01234567890",

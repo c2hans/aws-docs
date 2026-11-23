@@ -39,7 +39,7 @@ After disabling termination protection, return to **Agent profiles** and delete 
 
 To delete a profile:
 
-```
+```bash
 aws wellarchitected delete-agent-profile \
     --profile-arn "{{arn:aws:wellarchitected:us-east-1:111122223333:agent-profile/my-profile}}"
 ```

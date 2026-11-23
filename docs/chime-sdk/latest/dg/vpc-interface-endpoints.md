@@ -54,7 +54,7 @@ com.amazonaws.{{region}}.media-pipelines-chime
 
 The following example uses the AWS CLI to create an interface endpoint for Amazon Chime SDK Meetings. To create an endpoint for a different service, replace the service name accordingly (for example, `com.amazonaws.us-east-1.chime-sdk-voice` for Voice).
 
-```
+```bash
 aws ec2 create-vpc-endpoint \
     --vpc-id {{vpc-1a2b3c4d}} \
     --vpc-endpoint-type Interface \
@@ -128,7 +128,7 @@ For more information about endpoint policies, see [VPC endpoint policies](https:
 **Example Restrict endpoint to specific actions**
 The following endpoint policy allows all principals to call `GetVoiceConnector` and `ListVoiceConnectors` (Voice), `CreateMeeting` and `GetMeeting` (Meetings), and `CreateMediaCapturePipeline` and `ListMediaPipelines` (Media Pipelines) through the endpoint, but denies all other actions.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -152,7 +152,7 @@ The following endpoint policy allows all principals to call `GetVoiceConnector` 
 **Example Restrict access to a specific VPC endpoint**
 The following IAM policy denies access to Amazon Chime SDK APIs unless the request originates from a specific VPC endpoint. Use the `aws:sourceVpce` condition key to restrict access.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

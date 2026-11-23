@@ -29,7 +29,7 @@ The following code example shows how to use `AssignOpportunity`.
 **SDK for Java 2.x**
 Reassign an existing Opportunity to another user.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -104,7 +104,7 @@ The following code example shows how to use `AssociateOpportunity`.
 **SDK for Java 2.x**
 Create a formal association between an Opportunity and various related entities.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -173,7 +173,7 @@ The following code example shows how to use `CreateOpportunity`.
 **SDK for Java 2.x**
 Create an opportunity.
 
-```
+```java
 package org.example;
 
 import java.time.Instant;
@@ -410,7 +410,7 @@ The following code example shows how to use `DisassociateOpportunity`.
 **SDK for Java 2.x**
 Remove an existing association between an Opportunity and related entities.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -479,7 +479,7 @@ The following code example shows how to use `GetAwsOpportunitySummary`.
 **SDK for Java 2.x**
 Retrieves a summary of an AWS Opportunity.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -539,7 +539,7 @@ The following code example shows how to use `GetEngagementInvitation`.
 **SDK for Java 2.x**
 Retrieves the details of an engagement invitation shared by AWS with a partner.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -599,7 +599,7 @@ The following code example shows how to use `GetOpportunity`.
 **SDK for Java 2.x**
 Get an opportunity.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -659,7 +659,7 @@ The following code example shows how to use `ListEngagementInvitations`.
 **SDK for Java 2.x**
 Retrieves a list of engagement invitations sent to the partner.
 
-```
+```java
 package org.example;
 
 import java.util.ArrayList;
@@ -721,7 +721,7 @@ The following code example shows how to use `ListOpportunities`.
 **SDK for Java 2.x**
 List opportunities.
 
-```
+```java
 package org.example;
 
 import java.util.ArrayList;
@@ -794,7 +794,7 @@ The following code example shows how to use `ListSolutions`.
 **SDK for Java 2.x**
 Retrieves a list of Partner Solutions that the partner registered on Partner Central.
 
-```
+```java
 package org.example;
 
 import java.util.ArrayList;
@@ -855,7 +855,7 @@ The following code example shows how to use `RejectEngagementInvitation`.
 **SDK for Java 2.x**
 Rejects an EngagementInvitation that AWS shared.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -916,7 +916,7 @@ The following code example shows how to use `StartEngagementByAcceptingInvitatio
 **SDK for Java 2.x**
 Starts the engagement by accepting an EngagementInvitation.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -1001,7 +1001,7 @@ The following code example shows how to use `StartEngagementFromOpportunityTask`
 **SDK for Java 2.x**
 Initiates the engagement process from an existing opportunity by accepting the engagement invitation and creating a corresponding opportunity in the partner’s system.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -1066,7 +1066,7 @@ The following code example shows how to use `UpdateOpportunity`.
 **SDK for Java 2.x**
 Update an opportunity.
 
-```
+```java
 package org.example;
 
 import java.time.Instant;
@@ -1291,7 +1291,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Scenarios](https://github.com/aws-samples/partner-crm-integration-samples/tree/main/partner-central-api-sample-codes/java_preview) repository.
 Update associated entity of an opportunity
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;

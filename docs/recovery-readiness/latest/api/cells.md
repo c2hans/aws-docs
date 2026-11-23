@@ -74,7 +74,7 @@ Enables CORS by returning correct headers.
 #### POST schema
 <a name="cells-request-body-post-example"></a>
 
-```
+```json
 {
   "cells": [
     "string"
@@ -91,7 +91,7 @@ Enables CORS by returning correct headers.
 #### ListCellsResult schema
 <a name="cells-response-body-listcellsresult-example"></a>
 
-```
+```json
 {
   "cells": [
     {
@@ -114,7 +114,7 @@ Enables CORS by returning correct headers.
 #### CellOutput schema
 <a name="cells-response-body-celloutput-example"></a>
 
-```
+```json
 {
   "cells": [
     "string"

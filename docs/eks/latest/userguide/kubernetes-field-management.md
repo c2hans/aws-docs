@@ -71,7 +71,7 @@ The following portions of output for the CoreDNS add-on illustrate the previous 
 
   In the following output, you can see that both the `name` key and `name` field are managed. Adding or modifying any container name causes a conflict with this managed key.
 
-  ```
+  ```yaml
   [...]
   f:containers:
     k:{"name":"coredns"}:
@@ -93,19 +93,19 @@ You can modify all fields that aren’t managed by Amazon EKS, or another Kubern
 
 1. View the managed fields for an add-on by running the following command:
 
-   ```
+   ```bash
    kubectl get type/add-on-name -n add-on-namespace -o yaml
    ```
 
    For example, you can see the managed fields for the CoreDNS add-on with the following command.
 
-   ```
+   ```bash
    kubectl get deployment/coredns -n kube-system -o yaml
    ```
 
    Field management is listed in the following section in the returned output.
 
-   ```
+   ```yaml
    [...]
    managedFields:
      - apiVersion: apps/v1

@@ -33,7 +33,7 @@ aws route53-recovery-cluster list-routing-controls --control-panel-arn \
         --endpoint-url https://host-dddddd.us-west-2.example.com/v1
 ```
 
-```
+```json
 {
     "RoutingControls": [{
         "ControlPanelArn": "arn:aws:route53-recovery-control::111122223333:controlpanel/0123456bbbbbbb0123456bbbbbb0123456",
@@ -64,7 +64,7 @@ aws route53-recovery-cluster get-routing-control-state --routing-control-arn \
         --endpoint-url https://host-dddddd.us-west-2.example.com/v1
 ```
 
-```
+```json
 {"RoutingControlArn": "arn:aws:route53-recovery-control::111122223333:controlpanel/0123456bbbbbbb0123456bbbbbb0123456/routingcontrol/abcdefg1234567",
     "RoutingControlName": "RCOne",
     "RoutingControlState": "On"
@@ -87,7 +87,7 @@ aws route53-recovery-cluster update-routing-control-state \
         --endpoint-url https://host-dddddd.us-west-2.example.com/v1
 ```
 
-```
+```json
 {}
 ```
 
@@ -106,6 +106,6 @@ aws route53-recovery-cluster update-routing-control-states \
         --endpoint-url https://host-dddddd.us-west-2.example.com/v1
 ```
 
-```
+```json
 {}
 ```

@@ -31,7 +31,7 @@ For more information, see [Assign custom compliance metadata using the AWS CLI](
 **Tools for PowerShell V4**
 **Example 1: This example writes a custom compliance item for the given managed instance**
 
-```
+```powershell
 $item = [Amazon.SimpleSystemsManagement.Model.ComplianceItemEntry]::new()
 $item.Id = "07Jun2019-3"
 $item.Severity="LOW"
@@ -44,7 +44,7 @@ Write-SSMComplianceItem -ResourceId mi-012dcb3ecea45b678 -ComplianceType Custom:
 **Tools for PowerShell V5**
 **Example 1: This example writes a custom compliance item for the given managed instance**
 
-```
+```powershell
 $item = [Amazon.SimpleSystemsManagement.Model.ComplianceItemEntry]::new()
 $item.Id = "07Jun2019-3"
 $item.Severity="LOW"

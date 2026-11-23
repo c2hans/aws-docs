@@ -46,7 +46,7 @@ For more information, see [Getting started with Amazon Cognito identity pools](h
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cognito#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cognitoidentity.CognitoIdentityClient;
 import software.amazon.awssdk.services.cognitoidentity.model.CreateIdentityPoolRequest;
@@ -112,7 +112,7 @@ public class CreateIdentityPool {
 **Tools for PowerShell V4**
 **Example 1: Creates a new Identity Pool which allows unauthenticated identities.**
 
-```
+```powershell
 New-CGIIdentityPool -AllowUnauthenticatedIdentities $true -IdentityPoolName CommonTests13
 ```
 **Output:**
@@ -134,7 +134,7 @@ HttpStatusCode                 : OK
 **Tools for PowerShell V5**
 **Example 1: Creates a new Identity Pool which allows unauthenticated identities.**
 
-```
+```powershell
 New-CGIIdentityPool -AllowUnauthenticatedIdentities $true -IdentityPoolName CommonTests13
 ```
 **Output:**
@@ -159,7 +159,7 @@ HttpStatusCode                 : OK
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/cognito-identity/FindOrCreateIdentityPool#code-examples).
 
-```
+```swift
 import AWSCognitoIdentity
 
     /// Create a new identity pool and return its ID.

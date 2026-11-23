@@ -22,7 +22,7 @@ If a bucket fails to mount on a VDI, there are a few locations where you can che
 
    1. Run the following commands:
 
-      ```
+      ```bash
       sudo su
       cd ~/bootstrap/logs
       ```

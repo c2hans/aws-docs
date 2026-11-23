@@ -32,7 +32,7 @@ The following code example shows how to get started using Amazon Bedrock Runtime
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Bedrock-runtime#code-examples).
 
-```
+```csharp
 using Amazon;
 using Amazon.BedrockRuntime;
 using Amazon.BedrockRuntime.Model;
@@ -104,7 +104,7 @@ The following code example shows how to send a text message to Anthropic Claude,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API.
 
-```
+```csharp
 // Use the Converse API to send a text message to Anthropic Claude.
 
 using System;
@@ -168,7 +168,7 @@ The following code example shows how to send a text message to Anthropic Claude,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```csharp
 // Use the Converse API to send a text message to Anthropic Claude
 // and print the response stream.
 
@@ -242,7 +242,7 @@ The following code example shows how to send a text message to Meta Llama, using
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Bedrock-runtime#code-examples).
 Send a text message to Meta Llama, using Bedrock's Converse API.
 
-```
+```csharp
 // Use the Converse API to send a text message to Meta Llama.
 
 using System;
@@ -306,7 +306,7 @@ The following code example shows how to send a text message to Meta Llama, using
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Bedrock-runtime#code-examples).
 Send a text message to Meta Llama, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```csharp
 // Use the Converse API to send a text message to Meta Llama
 // and print the response stream.
 
@@ -380,7 +380,7 @@ The following code example shows how to send a text message to Mistral, using Be
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Bedrock-runtime#code-examples).
 Send a text message to Mistral, using Bedrock's Converse API.
 
-```
+```csharp
 // Use the Converse API to send a text message to Mistral.
 
 using System;
@@ -444,7 +444,7 @@ The following code example shows how to send a text message to Mistral, using Be
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Bedrock-runtime#code-examples).
 Send a text message to Mistral, using Bedrock's Converse API and process the response stream in real-time.
 
-```
+```csharp
 // Use the Converse API to send a text message to Mistral
 // and print the response stream.
 
@@ -518,7 +518,7 @@ The following code example shows how to invoke Stability.ai Stable Image Core on
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Bedrock-runtime#code-examples).
 Create an image with Stable Image Core.
 
-```
+```csharp
         /// <summary>
         /// Asynchronously invokes the Stability.ai Stable Image Core model to run an inference based on the provided input.
         /// </summary>

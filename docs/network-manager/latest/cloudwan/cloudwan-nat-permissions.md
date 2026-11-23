@@ -24,7 +24,7 @@ If you include a NAT configuration when you create an attachment, for example wi
 
 The following example policy lets a principal manage NAT only on attachments tagged `environment=prod`:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -45,7 +45,7 @@ The following example policy lets a principal manage NAT only on attachments tag
 
 The following example policy lets a principal create VPC attachments with a NAT configuration:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

@@ -84,7 +84,7 @@ If your key policy does not have your account root as key administrator, you nee
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

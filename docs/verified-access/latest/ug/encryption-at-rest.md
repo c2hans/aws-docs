@@ -86,7 +86,7 @@ To use your customer managed key with your Verified Access resources, the follow
 
 The following is an example key policy you can use for Verified Access.
 
-```
+```json
 "Statement" : [
     {
       "Sid" : "Allow access to principals authorized to use Verified Access",
@@ -161,7 +161,7 @@ Verified Access uses the same encryption context in all AWS KMS cryptographic op
 
 **Verified Access trust provider**
 
-```
+```json
 "encryptionContext": {
     "aws:verified-access:arn":
     "arn:aws:ec2:region:111122223333:VerifiedAccessTrustProviderId"
@@ -170,7 +170,7 @@ Verified Access uses the same encryption context in all AWS KMS cryptographic op
 
 **Verified Access group**
 
-```
+```json
 "encryptionContext": {
     "aws:verified-access:arn":
     "arn:aws:ec2:region:111122223333:VerifiedAccessGroupId"
@@ -179,7 +179,7 @@ Verified Access uses the same encryption context in all AWS KMS cryptographic op
 
 **Verified Access endpoint**
 
-```
+```json
 "encryptionContext": {
     "aws:verified-access:arn":
     "arn:aws:ec2:region:111122223333:VerifiedAccessEndpointId"
@@ -457,7 +457,7 @@ The following example event records the `DescribeKey` operation:
 
 The following example event records the `GenerateDataKey` operation:
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

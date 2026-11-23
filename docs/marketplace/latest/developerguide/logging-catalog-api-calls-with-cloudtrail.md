@@ -39,7 +39,7 @@ These examples have been formatted for improved readability. In a CloudTrail log
 
 The following example shows a AWS Marketplace Catalog API log entry that demonstrates the `ListEntities` action:
 
-```
+```json
 [
     {
         "eventVersion": "1.05",

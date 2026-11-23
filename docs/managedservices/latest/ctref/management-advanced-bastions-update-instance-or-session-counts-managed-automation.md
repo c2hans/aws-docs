@@ -153,7 +153,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-bastions-update-instance-or-session-counts-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "BastionType": "RDP Bastion"
 }
@@ -162,7 +162,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-bastions-update-instance-or-session-counts-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "BastionType": "RDP Bastion",
   "RDPBastionDesiredMaximumSessions": 10,

@@ -13,7 +13,7 @@ After creating a browser, you can start a session to interact with web applicati
 
 1. To start a Browser session using the AWS CLI, use the `start-browser-session` command:
 
-   ```
+   ```bash
     aws bedrock-agentcore start-browser-session \
      --region <Region> \
      --browser-identifier "my-browser" \
@@ -28,7 +28,7 @@ After creating a browser, you can start a session to interact with web applicati
 
    The following shows the request syntax:
 
-   ```
+   ```json
    response = dp_client.start_browser_session(
        browserIdentifier="aws.browser.v1",
        name="browser-session-1",
@@ -42,7 +42,7 @@ After creating a browser, you can start a session to interact with web applicati
 
 1. To start a browser session using the BrowserClient class for more control over the session lifecycle:
 
-   ```
+   ```python
    from bedrock_agentcore.tools.browser_client import BrowserClient
 
    # Create a browser client
@@ -65,7 +65,7 @@ After creating a browser, you can start a session to interact with web applicati
 
 1. To create a new browser session using the API, use the following call:
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X PUT \
      "https://bedrock-agentcore.<Region>.amazonaws.com/browsers/aws.browser.v1/sessions/start" \
@@ -93,7 +93,7 @@ You can get information about a browser session that you have created.
 
 1. To get information about a browser session using the AWS CLI, use the `get-browser-session` command:
 
-   ```
+   ```bash
    aws bedrock-agentcore get-browser-session \
      --region <Region> \
      --browser-identifier "aws.browser.v1" \
@@ -106,7 +106,7 @@ You can get information about a browser session that you have created.
 
    The following shows the request syntax:
 
-   ```
+   ```json
    response = dp_client.get_browser_session(
        browserIdentifier="aws.browser.v1",
        sessionId="<your-session-id>"
@@ -115,7 +115,7 @@ You can get information about a browser session that you have created.
 
 1. To get information about a browser session using the API, use the following call:
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X GET \
      "https://bedrock-agentcore.<Region>.amazonaws.com/browsers/aws.browser.v1/sessions/get?sessionId=<your-session-id>" \
@@ -172,7 +172,7 @@ Once you have started a Browser session, you can interact with it using the WebS
 
    You can use libraries like Playwright to establish a connection with the WebSocket and control the browser. Here’s an example:
 
-   ```
+   ```python
    from playwright.sync_api import sync_playwright, Playwright, BrowserType
    import os
    import base64
@@ -225,7 +225,7 @@ Once you have started a Browser session, you can interact with it using the WebS
 
    Below is the code.
 
-   ```
+   ```python
    import time
    from rich.console import Console
    from bedrock_agentcore.tools.browser_client import browser_session
@@ -272,7 +272,7 @@ You can list all active browser sessions to monitor and manage your resources. T
 
 1. To list Browser sessions using the AWS CLI, use the `list-browser-sessions` command:
 
-   ```
+   ```bash
    aws bedrock-agentcore list-browser-sessions \
      --region <Region> \
      --browser-id "<your-browser-id>" \
@@ -281,7 +281,7 @@ You can list all active browser sessions to monitor and manage your resources. T
 
    You can also filter sessions by status:
 
-   ```
+   ```bash
    aws bedrock-agentcore list-browser-sessions \
      --region <Region> \
      --browser-id "<your-browser-id>" \
@@ -294,7 +294,7 @@ You can list all active browser sessions to monitor and manage your resources. T
 
    The following shows the request syntax:
 
-   ```
+   ```json
    response = dp_client.list_browser_sessions(
        browserIdentifier="aws.browser.v1"
    )
@@ -302,7 +302,7 @@ You can list all active browser sessions to monitor and manage your resources. T
 
    You can also filter sessions by status:
 
-   ```
+   ```python
    # List only active sessions
    filtered_response = dp_client.list_browser_sessions(
        browserIdentifier="aws.browser.v1",
@@ -318,7 +318,7 @@ You can list all active browser sessions to monitor and manage your resources. T
 
 1. To list browser sessions using the API, use the following call:
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X POST \
      "https://bedrock-agentcore.<Region>.amazonaws.com/browsers/<your-browser-id>/sessions/list" \
@@ -333,7 +333,7 @@ You can list all active browser sessions to monitor and manage your resources. T
 
    You can also filter sessions by status:
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X POST \
      "https://bedrock-agentcore.<Region>.amazonaws.com/browsers/aws.browser.v1/sessions/list" \
@@ -356,7 +356,7 @@ When you are finished using a Browser session, you should stop it to release res
 
 1. To stop a Browser session using the AWS CLI, use the `stop-browser-session` command:
 
-   ```
+   ```bash
    aws bedrock-agentcore stop-browser-session \
      --region <Region> \
      --browser-id "<your-browser-id>" \
@@ -369,7 +369,7 @@ When you are finished using a Browser session, you should stop it to release res
 
    The following shows the request syntax:
 
-   ```
+   ```json
    response = dp_client.stop_browser_session(
            browserIdentifier="aws.browser.v1",
            sessionId="<your-session-id>",
@@ -378,7 +378,7 @@ When you are finished using a Browser session, you should stop it to release res
 
 1. To stop a browser session using the API, use the following call:
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X PUT \
      "https://bedrock-agentcore.<Region>.amazonaws.com/browsers/aws.browser.v1/sessions/stop?sessionId=<your-session-id>" \

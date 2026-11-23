@@ -21,7 +21,7 @@ An example custom defined function is `DTC_QUERY` as shown in the [demo script](
 
 1. Create a signal catalog that models a DTC signal as a string type.
 
-   ```
+   ```json
    [
     {
        "branch": {
@@ -50,7 +50,7 @@ An example custom defined function is `DTC_QUERY` as shown in the [demo script](
 1. Create and activate a decoder manifest with the DTC signal added. The DTC signal should be a `CUSTOM_DECODING_SIGNAL` signal decoder type with a `CUSTOM_DECODING_INTERFACE` network interface type.
 **Example signal decoder**
 
-   ```
+   ```json
    [
      {
        "fullyQualifiedName": "Vehicle.ECU1.DTC_INFO",
@@ -64,7 +64,7 @@ An example custom defined function is `DTC_QUERY` as shown in the [demo script](
    ```
 **Example network interface**
 
-   ```
+   ```json
    [
      {
        "interfaceId": "UDS_DTC",

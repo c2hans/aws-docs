@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Retrieve a list of the Amazon EC2 Auto Scaling activities for an
     /// Amazon EC2 Auto Scaling group.
@@ -50,7 +50,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/autoscaling#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -197,7 +197,7 @@ For more information, see [Verify a scaling activity for an Auto Scaling group](
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
     public static void describeScalingActivities(AutoScalingClient autoScalingClient, String groupName) {
         try {
             DescribeScalingActivitiesRequest scalingActivitiesRequest = DescribeScalingActivitiesRequest.builder()
@@ -227,7 +227,7 @@ For more information, see [Verify a scaling activity for an Auto Scaling group](
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun describeAutoScalingGroups(groupName: String) {
     val groupsReques =
         DescribeAutoScalingGroupsRequest {
@@ -251,7 +251,7 @@ suspend fun describeAutoScalingGroups(groupName: String) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function describeScalingActivities($autoScalingGroupName)
     {
         return $this->autoScalingClient->describeScalingActivities([
@@ -267,7 +267,7 @@ suspend fun describeAutoScalingGroups(groupName: String) {
 **Tools for PowerShell V4**
 **Example 1: This example describes the scaling activities for the last six weeks for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASScalingActivity -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -301,12 +301,12 @@ StatusMessage        :
 ```
 **Example 2: This example describes the specified scaling activity.**
 
-```
+```powershell
 Get-ASScalingActivity -ActivityId "063308ae-aa22-4a9b-94f4-9fae4EXAMPLE"
 ```
 **Example 3: This example describes the scaling activities for the last six weeks for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASScalingActivity
 ```
 +  For API details, see [DescribeScalingActivities](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -314,7 +314,7 @@ Get-ASScalingActivity
 **Tools for PowerShell V5**
 **Example 1: This example describes the scaling activities for the last six weeks for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASScalingActivity -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -348,12 +348,12 @@ StatusMessage        :
 ```
 **Example 2: This example describes the specified scaling activity.**
 
-```
+```powershell
 Get-ASScalingActivity -ActivityId "063308ae-aa22-4a9b-94f4-9fae4EXAMPLE"
 ```
 **Example 3: This example describes the scaling activities for the last six weeks for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASScalingActivity
 ```
 +  For API details, see [DescribeScalingActivities](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -364,7 +364,7 @@ Get-ASScalingActivity
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -421,7 +421,7 @@ class AutoScalingWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
     pub async fn describe_scenario(&self) -> AutoScalingScenarioDescription {
         let group = self
             .autoscaling
@@ -485,7 +485,7 @@ class AutoScalingWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: iv_group_name = 'my-auto-scaling-group'
 
     TRY.

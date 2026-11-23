@@ -17,7 +17,7 @@ Before you can share a dashboard with anyone on the internet, make sure to do th
 
 ****
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
        "Statement": [
@@ -39,7 +39,7 @@ Before you can share a dashboard with anyone on the internet, make sure to do th
 
 ****
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
        "Statement": [

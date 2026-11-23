@@ -13,12 +13,12 @@ If you connect to an Amazon EMR cluster from your Jupyter notebook in Studio, yo
 
 If you are using images with the SparkMagic PySpark and Spark kernels and want to parameterize your EMR connection command, provide your parameters in the **Environment variables** field instead of the Parameters field in the Create Job form (in the **Additional Options** dropdown menu). Make sure your EMR connection command in the Jupyter notebook passes these parameters as environment variables. For example, suppose you pass `cluster-id` as an environment variable when you create your job. Your EMR connection command should look like the following:
 
-```
+```py
 %%local
 import os
 ```
 
-```
+```py
 %sm_analytics emr connect —cluster-id {os.getenv('cluster_id')} --auth-type None
 ```
 
@@ -29,7 +29,7 @@ You need this workaround to meet requirements by SparkMagic and Papermill. For b
 
 To establish a secure connection to an Amazon EMR cluster that uses Kerberos, LDAP, or HTTP Basic Auth authentication, you use the AWS Secrets Manager to pass user credentials to your connection command. For information about how to create a Secrets Manager secret, see [Create an AWS Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html). Your secret must contain your username and password. You pass the secret with the `--secrets` argument, as shown in the following example:
 
-```
+```py
 %sm_analytics emr connect --cluster-id j_abcde12345
     --auth Kerberos
     --secret aws_secret_id_123
@@ -44,7 +44,7 @@ Your administrator can set up a flexible access policy using an attribute-based-
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -75,7 +75,7 @@ You can create a different secret for each user using the `PrincipleTag` tag, as
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

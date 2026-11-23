@@ -21,7 +21,7 @@ Apps running on training plan capacity are automatically shut down **30 minutes*
 
   For the Studio UI, add the following policy to your execution role:
 
-  ```
+  ```JSON
   {
       "Version": "2012-10-17",
       "Statement": [
@@ -39,7 +39,7 @@ Apps running on training plan capacity are automatically shut down **30 minutes*
 
   For the API or AWS CLI only, add the following policy to your execution role:
 
-  ```
+  ```JSON
   {
       "Version": "2012-10-17",
       "Statement": [

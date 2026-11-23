@@ -33,7 +33,7 @@ The Stream Manager SDK for Java is available as a JAR file that you can use to c
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
      "RecipeFormatVersion": "2020-01-25",
      "ComponentName": "com.example.StreamManagerS3Java",
@@ -63,7 +63,7 @@ The Stream Manager SDK for Java is available as a JAR file that you can use to c
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    ---
    RecipeFormatVersion: '2020-01-25'
    ComponentName: com.example.StreamManagerS3Java
@@ -93,7 +93,7 @@ The Stream Manager SDK for Python is available as source code that you can inclu
 
 1. Clone or download the [aws-greengrass-stream-manager-sdk-python](https://github.com/aws-greengrass/aws-greengrass-stream-manager-sdk-python) repository.
 
-   ```
+   ```bash
    git clone git@github.com:aws-greengrass/aws-greengrass-stream-manager-sdk-python.git
    ```
 
@@ -101,7 +101,7 @@ The Stream Manager SDK for Python is available as source code that you can inclu
 
    1. Open the folder that contains the repository that you cloned or downloaded in the previous step.
 
-      ```
+      ```bash
       cd aws-greengrass-stream-manager-sdk-python
       ```
 
@@ -110,21 +110,21 @@ The Stream Manager SDK for Python is available as source code that you can inclu
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       zip -rv stream_manager_sdk.zip stream_manager
       ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-      ```
+      ```cmd
       tar -acvf stream_manager_sdk.zip stream_manager
       ```
 
 ------
 #### [ PowerShell ]
 
-      ```
+      ```ps
       Compress-Archive stream_manager stream_manager_sdk.zip
       ```
 
@@ -135,14 +135,14 @@ The Stream Manager SDK for Python is available as source code that you can inclu
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       unzip -l stream_manager_sdk.zip
       ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-      ```
+      ```cmd
       tar -tf stream_manager_sdk.zip
       ```
 
@@ -171,14 +171,14 @@ The Stream Manager SDK for Python is available as source code that you can inclu
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    cp {stream_manager_sdk.zip,requirements.txt} {{~/greengrass-components}}/artifacts/com.example.StreamManagerS3Python/1.0.0/
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    robocopy . {{%USERPROFILE%\greengrass-components}}\artifacts\com.example.StreamManagerS3Python\1.0.0 stream_manager_sdk.zip
    robocopy . {{%USERPROFILE%\greengrass-components}}\artifacts\com.example.StreamManagerS3Python\1.0.0 requirements.txt
    ```
@@ -186,7 +186,7 @@ The Stream Manager SDK for Python is available as source code that you can inclu
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    cp .\stream_manager_sdk.zip,.\requirements.txt {{~\greengrass-components}}\artifacts\com.example.StreamManagerS3Python\1.0.0\
    ```
 
@@ -207,7 +207,7 @@ The Stream Manager SDK for Python is available as source code that you can inclu
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
      "RecipeFormatVersion": "2020-01-25",
      "ComponentName": "com.example.StreamManagerS3Python",
@@ -269,7 +269,7 @@ The Stream Manager SDK for Python is available as source code that you can inclu
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    ---
    RecipeFormatVersion: '2020-01-25'
    ComponentName: com.example.StreamManagerS3Python
@@ -319,7 +319,7 @@ The Stream Manager SDK for JavaScript is available as source code that you can i
 
 1. Clone or download the [aws-greengrass-stream-manager-sdk-js](https://github.com/aws-greengrass/aws-greengrass-stream-manager-sdk-js) repository.
 
-   ```
+   ```bash
    git clone git@github.com:aws-greengrass/aws-greengrass-stream-manager-sdk-js.git
    ```
 
@@ -327,7 +327,7 @@ The Stream Manager SDK for JavaScript is available as source code that you can i
 
    1. Open the folder that contains the repository that you cloned or downloaded in the previous step.
 
-      ```
+      ```bash
       cd aws-greengrass-stream-manager-sdk-js
       ```
 
@@ -336,21 +336,21 @@ The Stream Manager SDK for JavaScript is available as source code that you can i
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       zip -rv stream-manager-sdk.zip aws-greengrass-stream-manager-sdk
       ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-      ```
+      ```cmd
       tar -acvf stream-manager-sdk.zip aws-greengrass-stream-manager-sdk
       ```
 
 ------
 #### [ PowerShell ]
 
-      ```
+      ```ps
       Compress-Archive aws-greengrass-stream-manager-sdk stream-manager-sdk.zip
       ```
 
@@ -361,14 +361,14 @@ The Stream Manager SDK for JavaScript is available as source code that you can i
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       unzip -l stream-manager-sdk.zip
       ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-      ```
+      ```cmd
       tar -tf stream-manager-sdk.zip
       ```
 
@@ -398,21 +398,21 @@ The Stream Manager SDK for JavaScript is available as source code that you can i
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    cp stream-manager-sdk.zip {{~/greengrass-components}}/artifacts/com.example.StreamManagerS3JS/1.0.0/
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    robocopy . {{%USERPROFILE%\greengrass-components}}\artifacts\com.example.StreamManagerS3JS\1.0.0 stream-manager-sdk.zip
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    cp .\stream-manager-sdk.zip {{~\greengrass-components}}\artifacts\com.example.StreamManagerS3JS\1.0.0\
    ```
 
@@ -433,7 +433,7 @@ The Stream Manager SDK for JavaScript is available as source code that you can i
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
      "RecipeFormatVersion": "2020-01-25",
      "ComponentName": "com.example.StreamManagerS3JS",
@@ -489,7 +489,7 @@ The Stream Manager SDK for JavaScript is available as source code that you can i
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    ---
    RecipeFormatVersion: '2020-01-25'
    ComponentName: com.example.StreamManagerS3JS
@@ -535,7 +535,7 @@ To connect to stream manager in your application, create an instance of `StreamM
 
 **Example: Connect to stream manager with default port**
 
-```
+```java
 import com.amazonaws.greengrass.streammanager.client.StreamManagerClient;
 
 public class MyStreamManagerComponent {
@@ -548,7 +548,7 @@ public class MyStreamManagerComponent {
 }
 ```
 
-```
+```python
 from stream_manager import (
     StreamManagerClient
 )
@@ -559,7 +559,7 @@ def connect_to_stream_manager_with_default_port():
     # Use the client.
 ```
 
-```
+```javascript
 const {
     StreamManagerClient
 } = require('aws-greengrass-stream-manager-sdk');
@@ -575,7 +575,7 @@ function connectToStreamManagerWithDefaultPort() {
 If you configure stream manager with a port other than the default, you must use [interprocess communication](interprocess-communication.md) to retrieve the port from the component configuration.
 The `port` configuration parameter contains the value that you specify in `STREAM_MANAGER_SERVER_PORT` when you deploy stream manager.
 
-```
+```java
 void connectToStreamManagerWithCustomPort() {
     EventStreamRPCConnection eventStreamRpcConnection = IPCUtils.getEventStreamRpcConnection();
     GreengrassCoreIPCClient greengrassCoreIPCClient = new GreengrassCoreIPCClient(eventStreamRpcConnection);
@@ -599,7 +599,7 @@ void connectToStreamManagerWithCustomPort() {
 }
 ```
 
-```
+```python
 import awsiot.greengrasscoreipc
 from awsiot.greengrasscoreipc.model import (
     GetConfigurationRequest

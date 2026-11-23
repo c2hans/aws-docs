@@ -4,6 +4,8 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/creat
 
 # Examples of configuration files
 
+The following examples use the Classic configuration. For OpenTelemetry configuration examples, see [Create a CloudWatch agent configuration for OpenTelemetry](CloudWatch-Agent-OpenTelemetry-config.md).
+
 **Basic system metrics configuration**
 
 ```json

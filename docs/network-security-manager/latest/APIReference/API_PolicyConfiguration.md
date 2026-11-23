@@ -19,6 +19,11 @@ Specifies whether AWS Network Security Manager automatically removes the resourc
 Type: Boolean
 Required: Yes
 
+ ** igwFirewallConfig **   <a name="networksecuritymanager-Type-PolicyConfiguration-igwFirewallConfig"></a>
+Policy settings for Network Firewall automated internet firewall policies. Specify these settings only for this policy type.
+Type: [IgwFirewallConfig](API_IgwFirewallConfig.md) object
+Required: No
+
  ** wafConfig **   <a name="networksecuritymanager-Type-PolicyConfiguration-wafConfig"></a>
 AWS WAF-specific policy settings. This is populated only for AWS WAF policies.
 Type: [WafConfig](API_WafConfig.md) object

@@ -18,6 +18,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/device-p
 
 ![Registration flow](https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/images/image1.png)
 
+*Registration flow*
+
 1.  Device connects with claim certificate to AWS IoT Core
 
 1.  Fleet Provisioning service creates new certificate and private key assigned with AWS CA.

@@ -56,7 +56,7 @@ For more information, see [AWS Lambda Function Configuration](https://docs.aws.a
 **Tools for PowerShell V4**
 **Example 1: This example returns the version specific configuration of a Lambda Function.**
 
-```
+```powershell
 Get-LMFunctionConfiguration -FunctionName "MylambdaFunction123" -Qualifier "PowershellAlias"
 ```
 **Output:**
@@ -95,7 +95,7 @@ VpcConfig                  : Amazon.Lambda.Model.VpcConfigDetail
 **Tools for PowerShell V5**
 **Example 1: This example returns the version specific configuration of a Lambda Function.**
 
-```
+```powershell
 Get-LMFunctionConfiguration -FunctionName "MylambdaFunction123" -Qualifier "PowershellAlias"
 ```
 **Output:**

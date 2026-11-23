@@ -65,7 +65,7 @@ To increase accuracy and further customize your transcripts to your use case, su
 
 Here is a compiled post-call analytics output example:
 
-```
+```json
 {
     "JobStatus": "COMPLETED",
     "LanguageCode": "en-US",

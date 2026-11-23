@@ -140,7 +140,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="apps-application-id-channels-adm-request-body-put-example"></a>
 
-```
+```json
 {
   "ClientId": "string",
   "ClientSecret": "string",
@@ -154,7 +154,7 @@ Retrieves information about the communication requirements and options that are 
 #### ADMChannelResponse schema
 <a name="apps-application-id-channels-adm-response-body-admchannelresponse-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "IsArchived": boolean,
@@ -172,7 +172,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-channels-adm-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

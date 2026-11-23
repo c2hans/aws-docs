@@ -48,7 +48,7 @@ In the following example, you create a wrapper script to start the Python interp
 
 1. In the `bin` directory, paste the following code into a new file named `importtime_wrapper`. This is the wrapper script.
 
-   ```
+   ```bash
    #!/bin/bash
 
    # the path to the interpreter and all of the originally intended arguments
@@ -66,13 +66,13 @@ In the following example, you create a wrapper script to start the Python interp
 
 1. Give the script executable permissions:
 
-   ```
+   ```bash
    chmod +x {{importtime_wrapper}}
    ```
 
 1. Create a .zip file for the layer:
 
-   ```
+   ```bash
    cd ..
    zip -r ../{{python-wrapper-layer.zip}} .
    ```

@@ -15,7 +15,7 @@ The IAM principal that creates the flow log must be using an IAM role that has t
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -63,7 +63,7 @@ The IAM principal that creates the flow log must be using an IAM role that has t
    + To use the default flow log record format, choose **AWS default format**.
    + To create a custom format, choose **Custom format**. For **Log format**, choose the fields to include in the flow log record.
 
-1. For **Additional metadata**, select if you want to include metadata from Amazon ECS in the log format.
+1. For **Additional metadata**, select if you want to include metadata from Amazon ECS or Amazon EKS in the log format. Amazon EKS metadata is available only for flow logs that you create for a VPC or a subnet.
 
 1. For **Log file format**, specify the format for the log file.
    + **Text** – Plain text. This is the default format.

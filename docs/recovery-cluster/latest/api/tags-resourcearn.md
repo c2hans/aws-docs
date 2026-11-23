@@ -108,7 +108,7 @@ Removes a tag from a resource.
 #### POST schema
 <a name="tags-resourcearn-request-body-post-example"></a>
 
-```
+```json
 {
   "Tags": {
   }
@@ -121,7 +121,7 @@ Removes a tag from a resource.
 #### ListTagsForResourceResponse schema
 <a name="tags-resourcearn-response-body-listtagsforresourceresponse-example"></a>
 
-```
+```json
 {
   "Tags": {
   }
@@ -131,7 +131,7 @@ Removes a tag from a resource.
 #### TagResourceResponse schema
 <a name="tags-resourcearn-response-body-tagresourceresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -139,7 +139,7 @@ Removes a tag from a resource.
 #### UntagResourceResponse schema
 <a name="tags-resourcearn-response-body-untagresourceresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -147,7 +147,7 @@ Removes a tag from a resource.
 #### ValidationException schema
 <a name="tags-resourcearn-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -156,7 +156,7 @@ Removes a tag from a resource.
 #### ResourceNotFoundException schema
 <a name="tags-resourcearn-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -165,7 +165,7 @@ Removes a tag from a resource.
 #### InternalServerException schema
 <a name="tags-resourcearn-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

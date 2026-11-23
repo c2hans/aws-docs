@@ -82,7 +82,7 @@ For more information, see [View information about tasks and task executions (AWS
 **Tools for PowerShell V4**
 **Example 1: This example lists information about a task that was part of a maintenance window execution.**
 
-```
+```powershell
 Get-SSMMaintenanceWindowExecutionTask -TaskId "ac0c6ae1-daa3-4a89-832e-d384503b6586" -WindowExecutionId "518d5565-5969-4cca-8f0e-da3b2a638355"
 ```
 **Output:**
@@ -108,7 +108,7 @@ WindowExecutionId : 518d5565-5969-4cca-8f0e-da3b2a638355
 **Tools for PowerShell V5**
 **Example 1: This example lists information about a task that was part of a maintenance window execution.**
 
-```
+```powershell
 Get-SSMMaintenanceWindowExecutionTask -TaskId "ac0c6ae1-daa3-4a89-832e-d384503b6586" -WindowExecutionId "518d5565-5969-4cca-8f0e-da3b2a638355"
 ```
 **Output:**

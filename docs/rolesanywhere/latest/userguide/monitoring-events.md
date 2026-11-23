@@ -20,7 +20,7 @@ IAM Roles Anywhere sends daily expiration event for each trust anchor certificat
 
 Expiration events have the following structure.
 
-```
+```json
 {
   "version": "0",
   "id": "9c95e8e4-96a4-ef3f-b739-b6aa5b193afb",
@@ -47,7 +47,7 @@ IAM Roles Anywhere sends an expiration event for intermediate or end-entity cert
 
 Expiration events have the following structure.
 
-```
+```json
 {
   "version": "0",
   "id": "9c95e8e4-96a4-ef3f-b739-b6aa5b193afb",

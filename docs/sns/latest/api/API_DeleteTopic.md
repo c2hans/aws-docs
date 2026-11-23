@@ -76,7 +76,7 @@ https://sns.us-east-2.amazonaws.com/?Action=DeleteTopic
 #### Sample Response
 <a name="API_DeleteTopic_Example_1_Response"></a>
 
-```
+```xml
 <DeleteTopicResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ResponseMetadata>
         <RequestId>f3aa9ac9-3c3d-11df-8235-9dab105e9c32</RequestId>

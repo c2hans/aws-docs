@@ -129,7 +129,7 @@ To opt out of version reporting, use one of the following methods:
   Remember, the AWS CDK Toolkit synthesizes fresh templates before deploying, so you should also add `--no-version-reporting` to `cdk deploy` commands.
 + Set **versionReporting** to **false** in `./cdk.json` or `~/.cdk.json`. This opts out unless you opt in by specifying `--version-reporting` on an individual command.
 
-  ```
+  ```json
   {
     "app": "...",
     "versionReporting": false
@@ -170,7 +170,7 @@ The recommended approach for new users developing locally, who are not given a m
 
 Before accessing AWS services, you need an active AWS access portal session for the CDK Toolkit to use IAM Identity Center authentication to resolve credentials. Depending on your configured session lengths, your access will eventually expire and the CDK Toolkit will encounter an authentication error. Run the following command in the AWS CLI to sign in to the AWS access portal.
 
-```
+```bash
 aws sso login
 ```
 
@@ -178,7 +178,7 @@ aws sso login
 
 To test if you already have an active session, run the following AWS CLI command.
 
-```
+```bash
 aws sts get-caller-identity
 ```
 
@@ -216,7 +216,7 @@ Many features of the CDK Toolkit require one or more CloudFormation templates be
 
 First, and most commonly, it can be specified using the `app` key inside the file `cdk.json`, which is in the main directory of your AWS CDK project. The CDK Toolkit provides an appropriate command when creating a new project with `cdk init`. Here is the `cdk.json` from a fresh TypeScript project, for instance.
 
-```
+```json
 {
   "app": "npx ts-node bin/hello-cdk.ts"
 }
@@ -459,7 +459,7 @@ Any changes made while `cdk watch` is already performing a deployment will be co
 
 Watch mode uses the `"watch"` key in the project's `cdk.json` to determine which files to monitor. By default, these files are your application files and assets, but this can be changed by modifying the `"include"` and `"exclude"` entries in the `"watch"` key. The following `cdk.json` file shows an example of these entries.
 
-```
+```json
 {
   "app": "mvn -e -q compile exec:java",
   "watch": {
@@ -527,7 +527,7 @@ cdk deploy --require-approval {{LEVEL}}
 
 The setting can also be configured in the `cdk.json` file.
 
-```
+```json
 {
   "app": "...",
   "requireApproval": "never"

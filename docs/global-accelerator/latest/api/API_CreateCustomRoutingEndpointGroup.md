@@ -143,7 +143,7 @@ aws globalaccelerator create-custom-routing-endpoint-group
            --region us-west-2
 ```
 
-```
+```json
 {
     "EndpointGroup": {
         "EndpointGroupArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/098765zyxwvu",

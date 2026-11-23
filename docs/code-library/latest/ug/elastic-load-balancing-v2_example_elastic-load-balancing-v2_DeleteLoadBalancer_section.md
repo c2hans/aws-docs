@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/ElasticLoadBalancerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a load balancer by its specified name.
     /// </summary>
@@ -71,7 +71,7 @@ For more information, see [Delete an Application Load Balancer](https://docs.aws
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 
-```
+```java
     // Deletes a load balancer.
     public void deleteLoadBalancer(String lbName) {
         try {
@@ -103,7 +103,7 @@ For more information, see [Delete an Application Load Balancer](https://docs.aws
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
       const client = new ElasticLoadBalancingV2Client({});
       const loadBalancer = await findLoadBalancer(NAMES.loadBalancerName);
       await client.send(
@@ -126,7 +126,7 @@ For more information, see [Delete an Application Load Balancer](https://docs.aws
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified Load balancer.**
 
-```
+```powershell
 Remove-ELB2LoadBalancer -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f'
 ```
 **Output:**
@@ -142,7 +142,7 @@ Performing the operation "Remove-ELB2LoadBalancer (DeleteLoadBalancer)" on targe
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified Load balancer.**
 
-```
+```powershell
 Remove-ELB2LoadBalancer -LoadBalancerArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/test-alb/3651b4394dd9a24f'
 ```
 **Output:**
@@ -161,7 +161,7 @@ Performing the operation "Remove-ELB2LoadBalancer (DeleteLoadBalancer)" on targe
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/elastic-load-balancing#code-examples).
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 

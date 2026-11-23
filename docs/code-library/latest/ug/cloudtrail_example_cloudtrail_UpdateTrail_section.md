@@ -41,17 +41,17 @@ For more information, see [Using the update-trail command to update a trail](htt
 **Tools for PowerShell V4**
 **Example 1: Updates the specified trail so that global service events (such as those from IAM) are recorded and changes the common key prefix of the log files going forwards to be 'globallogs'.**
 
-```
+```powershell
 Update-CTTrail -Name "awscloudtrail-example" -IncludeGlobalServiceEvents $true -S3KeyPrefix "globallogs"
 ```
 **Example 2: Updates the specified trail so notifications about new log deliveries are sent to the specified SNS topic.**
 
-```
+```powershell
 Update-CTTrail -Name "awscloudtrail-example" -SnsTopicName "mlog-deliverytopic2"
 ```
 **Example 3: Updates the specified trail so logs are delivered to a different bucket.**
 
-```
+```powershell
 Update-CTTrail -Name "awscloudtrail-example" -S3BucketName "otherlogs"
 ```
 +  For API details, see [UpdateTrail](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -59,17 +59,17 @@ Update-CTTrail -Name "awscloudtrail-example" -S3BucketName "otherlogs"
 **Tools for PowerShell V5**
 **Example 1: Updates the specified trail so that global service events (such as those from IAM) are recorded and changes the common key prefix of the log files going forwards to be 'globallogs'.**
 
-```
+```powershell
 Update-CTTrail -Name "awscloudtrail-example" -IncludeGlobalServiceEvents $true -S3KeyPrefix "globallogs"
 ```
 **Example 2: Updates the specified trail so notifications about new log deliveries are sent to the specified SNS topic.**
 
-```
+```powershell
 Update-CTTrail -Name "awscloudtrail-example" -SnsTopicName "mlog-deliverytopic2"
 ```
 **Example 3: Updates the specified trail so logs are delivered to a different bucket.**
 
-```
+```powershell
 Update-CTTrail -Name "awscloudtrail-example" -S3BucketName "otherlogs"
 ```
 +  For API details, see [UpdateTrail](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

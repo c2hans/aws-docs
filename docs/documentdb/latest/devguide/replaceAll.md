@@ -105,7 +105,7 @@ To view a code example for using the `$replaceAll` command, choose the tab for t
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function replaceAll() {
@@ -138,7 +138,7 @@ replaceAll();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def replace_all():

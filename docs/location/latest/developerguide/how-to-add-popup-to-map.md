@@ -17,7 +17,7 @@ In this example, you will add your first popup.
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -57,7 +57,7 @@ In this example, you will add your first popup.
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```
@@ -75,7 +75,7 @@ In this example, you will attach a popup to a marker and display it on click.
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -120,7 +120,7 @@ In this example, you will attach a popup to a marker and display it on click.
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```
@@ -138,7 +138,7 @@ In this example, you will attach a popup to a marker and display it on hover.
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -186,7 +186,7 @@ In this example, you will attach a popup to a marker and display it on hover.
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```
@@ -204,7 +204,7 @@ In this example, you will attach a popup to multiple markers and display it on c
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -308,7 +308,7 @@ In this example, you will attach a popup to multiple markers and display it on c
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```
@@ -326,7 +326,7 @@ In this example, you will attach a popup to multiple markers and display it on h
 ------
 #### [ index.html ]
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -450,7 +450,7 @@ In this example, you will attach a popup to multiple markers and display it on h
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; padding: 0; }
 html, body, #map { height: 100%; }
 ```

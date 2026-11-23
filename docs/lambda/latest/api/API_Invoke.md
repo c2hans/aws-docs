@@ -16,7 +16,7 @@ For [asynchronous invocation](https://docs.aws.amazon.com/lambda/latest/dg/invoc
 
 The status code in the API response doesn't reflect function errors. Error codes are reserved for errors that prevent your function from executing, such as permissions errors, [quota](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html) errors, or issues with your function's code and configuration. For example, Lambda returns `TooManyRequestsException` if running the function would cause you to exceed a concurrency limit at either the account level (`ConcurrentInvocationLimitExceeded`) or function level (`ReservedFunctionConcurrentInvocationLimitExceeded`).
 
-For functions with a long timeout, your client might disconnect during synchronous invocation while it waits for a response. Configure your HTTP client, SDK, firewall, proxy, or operating system to allow for long connections with timeout or keep-alive settings.
+For functions with a long timeout, your client might disconnect during synchronous invocation while it waits for a response. Configure your HTTP client, SDK, firewall, proxy, or operating system to allow for long connections with timeout or keep-alive settings. Synchronous invocations can run for up to 30 minutes. Set the read timeout of your client higher than the function timeout, and turn on TCP keep-alive.
 
 This operation requires permission for the [lambda:InvokeFunction](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awslambda.html) action. For details on how to set up permissions for cross-account invocations, see [Granting function access to other accounts](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html#permissions-resource-xaccountinvoke).
 
@@ -41,6 +41,7 @@ The request uses the following URI parameters.
 
  ** [ClientContext](#API_Invoke_RequestSyntax) **   <a name="lambda-Invoke-request-ClientContext"></a>
 Up to 3,583 bytes of base64-encoded data about the invoking client to pass to the function in the context object. Lambda passes the `ClientContext` object to your function for synchronous invocations only.
+ `ClientContext` is logged to AWS CloudTrail if you turn on data events.
 
  ** [DurableExecutionName](#API_Invoke_RequestSyntax) **   <a name="lambda-Invoke-request-DurableExecutionName"></a>
 A unique name for the durable execution. If you invoke a durable function using a name that already exists with the same payload, Lambda returns the existing execution instead of creating a duplicate. If the payload differs, Lambda returns a `DurableExecutionAlreadyStartedException` error.

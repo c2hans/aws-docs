@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Redshift#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Modify an Amazon Redshift cluster.
     /// </summary>
@@ -235,7 +235,7 @@ For more information, see [Modifying a cluster](https://docs.aws.amazon.com/reds
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/redshift#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -283,7 +283,7 @@ func (actor RedshiftActions) ModifyCluster(ctx context.Context, clusterId string
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/redshift#code-examples).
 Modify a cluster.
 
-```
+```java
     /**
      * Modifies an Amazon Redshift cluster asynchronously.
      *
@@ -320,7 +320,7 @@ Modify a cluster.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/redshift#code-examples).
 Create the client.
 
-```
+```javascript
 import { RedshiftClient } from "@aws-sdk/client-redshift";
 // Set the AWS Region.
 const REGION = "REGION";
@@ -330,7 +330,7 @@ export { redshiftClient };
 ```
 Modify a cluster.
 
-```
+```javascript
 // Import required AWS SDK clients and commands for Node.js
 import { ModifyClusterCommand } from "@aws-sdk/client-redshift";
 import { redshiftClient } from "./libs/redshiftClient.js";
@@ -361,7 +361,7 @@ run();
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/redshift#code-examples).
 Modify a cluster.
 
-```
+```kotlin
 suspend fun modifyCluster(clusterId: String?) {
     val modifyClusterRequest =
         ModifyClusterRequest {
@@ -385,7 +385,7 @@ suspend fun modifyCluster(clusterId: String?) {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/redshift#code-examples).
 
-```
+```python
 class RedshiftWrapper:
     """
     Encapsulates Amazon Redshift cluster operations.
@@ -419,7 +419,7 @@ class RedshiftWrapper:
 ```
 The following code instantiates the RedshiftWrapper object.
 
-```
+```python
     client = boto3.client("redshift")
     redhift_wrapper = RedshiftWrapper(client)
 ```
@@ -432,7 +432,7 @@ The following code instantiates the RedshiftWrapper object.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rsh#code-examples).
 Modify a cluster.
 
-```
+```sap-abap
     TRY.
         " Example values: iv_cluster_identifier = 'my-redshift-cluster'
         " Example values: iv_pref_maintenance_wn = 'wed:07:30-wed:08:00'

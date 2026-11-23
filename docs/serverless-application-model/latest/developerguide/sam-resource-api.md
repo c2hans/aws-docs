@@ -29,7 +29,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-resource-api-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Serverless::Api
 Properties:
   [AccessLogSetting](#sam-api-accesslogsetting): {{[AccessLogSetting](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-accesslogsetting)}}
@@ -306,7 +306,7 @@ A Hello World AWS SAM template file that contains a Lambda Event Function with a
 #### YAML
 <a name="sam-resource-api--examples--simpleapiexample--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: AWS SAM template with a simple API definition
@@ -341,7 +341,7 @@ An AWS SAM template snippet with an API defined in an external Swagger file alon
 #### YAML
 <a name="sam-resource-api--examples--apicorsexample--yaml"></a>
 
-```
+```yaml
 Resources:
   ApiGatewayApi:
     Type: AWS::Serverless::Api
@@ -366,7 +366,7 @@ An AWS SAM template snippet with an API that uses Amazon Cognito to authorize re
 #### YAML
 <a name="sam-resource-api--examples--apicognitoauthexample--yaml"></a>
 
-```
+```yaml
 Resources:
   ApiGatewayApi:
     Type: AWS::Serverless::Api
@@ -389,7 +389,7 @@ An AWS SAM template snippet with an API that includes a Models schema. This is j
 #### YAML
 <a name="sam-resource-api--examples--apimodelsexample--yaml"></a>
 
-```
+```yaml
 Resources:
   ApiGatewayApi:
     Type: AWS::Serverless::Api
@@ -427,7 +427,7 @@ A Hello World AWS SAM template file that contains a Lambda Function with an API 
 #### YAML
 <a name="sam-resource-api--examples--caching-example--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: AWS SAM template with a simple API definition with caching turned on
@@ -472,7 +472,7 @@ A Hello World AWS SAM template file that contains a Lambda function with an API 
 #### YAML
 <a name="sam-resource-api--examples--custom-domain-example--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: AWS SAM template configured with a custom domain using a private API

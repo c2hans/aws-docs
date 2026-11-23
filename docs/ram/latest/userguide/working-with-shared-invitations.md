@@ -55,7 +55,7 @@ You can use the following commands to accept or reject invitations to a resource
 
 1. The following example starts by using the [get-resource-share-invitations](https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-share-invitations.html) command to retrieve a list of all of the invitations available to the user's AWS account. The AWS CLI `query` parameter lets you restrict the output to only those invitations with its `status` set to `PENDING`. This example shows one invitation from account 111111111111 is currently `PENDING` for the current account `123456789012` in the specified AWS Region.
 
-   ```
+   ```bash
    $ aws ram get-resource-share-invitations \
        --region us-east-1 \
        --query 'resourceShareInvitations[?status==`PENDING`]'
@@ -76,7 +76,7 @@ You can use the following commands to accept or reject invitations to a resource
 
 1. After you find the invitation that you want to accept, make note of the `resourceShareInvitationArn` in the output to use in the next command to accept the invitation.
 
-   ```
+   ```bash
    $ aws ram accept-resource-share-invitation \
        --region us-east-1 \
        --resource-share-invitation-arn arn:aws:ram:us-east-1:111111111111:resource-share-invitation/3b3bc051-fbf6-4336-8377-06c559dfee49
@@ -97,7 +97,7 @@ You can use the following commands to accept or reject invitations to a resource
 
 If you instead wanted to reject the invitation, run the [reject-resource-share-invitation](https://docs.aws.amazon.com/cli/latest/reference/ram/reject-resource-share-invitation.html) command, with the same parameters.
 
-```
+```bash
 $ aws ram reject-resource-share-invitation \
     --region us-east-1 \
     --resource-share-invitation-arn arn:aws:ram:us-east-1:111111111111:resource-share-invitation/3b3bc051-fbf6-4336-8377-06c559dfee49

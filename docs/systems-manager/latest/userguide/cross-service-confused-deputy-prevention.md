@@ -22,7 +22,7 @@ The following example demonstrates using the `aws:SourceArn` and `aws:SourceAcco
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -58,7 +58,7 @@ Systems Manager Inventory, Explorer, and Compliance enable you to create a resou
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "ssm-access-policy",

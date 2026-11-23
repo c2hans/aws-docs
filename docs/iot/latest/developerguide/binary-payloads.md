@@ -44,7 +44,7 @@ When you use \* to refer to the message payload as raw binary data, you can add 
     ```
   + The following is also supported.
 
-    ```
+    ```JSON
     {
     	"sql": "SELECT * FROM 'topic/subtopic'",
     	"actions": [
@@ -142,7 +142,7 @@ After you create your descriptor files `<FILENAME>.desc`, upload the descriptor 
 + Make sure that you grant AWS IoT Core access to read the `FileDescriptorSet` from S3. If your S3 bucket has server-side encryption (SSE) disabled or if your S3 bucket is encrypted using Amazon S3-managed keys (SSE-S3), no additional policy configurations are required. This can be accomplished with the example bucket policy:
 ****
 
-  ```
+  ```json
   {
   	"Version":"2012-10-17",
   	"Statement": [
@@ -184,7 +184,7 @@ After you upload the descriptor files to your Amazon S3 bucket, configure a [Rul
 
 The following is an example SQL expression using the [decode(value, decodingScheme)](iot-sql-functions.md#iot-sql-decode-base64) function:
 
-```
+```SQL
 SELECT VALUE decode(*, 'proto', '<BUCKET NAME>', '<FILENAME>.desc', '<PROTO_FILENAME>', '<PROTO_MESSAGE_TYPE>') FROM '<MY_TOPIC>'
 ```
 

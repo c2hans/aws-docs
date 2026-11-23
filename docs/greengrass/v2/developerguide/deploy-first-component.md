@@ -35,7 +35,7 @@ In this section, you deploy your Hello World component back to your Greengrass c
 
    1. Under **Configuration update**, in **Configuration to merge**, enter the following configuration.
 
-      ```
+      ```json
       {
         "Message": "universe"
       }
@@ -56,21 +56,21 @@ In this section, you deploy your Hello World component back to your Greengrass c
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/com.example.HelloWorld.log
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    type {{C:\greengrass\v2}}\\logs\\com.example.HelloWorld.log
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\\logs\\com.example.HelloWorld.log -Tail 10 -Wait
    ```
 
@@ -84,16 +84,16 @@ In this section, you deploy your Hello World component back to your Greengrass c
 **Note**
 If the log messages don't change, the deployment failed or didn't reach the core device. This can occur if your core device isn't connected to the internet or doesn't have permissions to retrieve artifacts from your S3 bucket. Run the following command on your core device to view the AWS IoT Greengrass Core software log file. This file includes logs from the Greengrass core device's deployment service.
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
    ```
 
-   ```
+   ```cmd
    type {{C:\greengrass\v2}}\\logs\\greengrass.log
    ```
 <a name="windows-cmd-type-observe-logs"></a>The `type` command writes the file's contents to the terminal. Run this command multiple times to observe changes in the file.
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\\logs\\greengrass.log -Tail 10 -Wait
    ```
 For more information, see [Troubleshooting AWS IoT Greengrass V2](troubleshooting.md).
@@ -105,7 +105,7 @@ For more information, see [Troubleshooting AWS IoT Greengrass V2](troubleshootin
 
 1. On your development computer, create a file called `hello-world-deployment.json` and copy the following JSON into the file. This file defines the components and configurations to deploy.
 
-   ```
+   ```json
    {
      "components": {
        "com.example.HelloWorld": {
@@ -125,7 +125,7 @@ For more information, see [Troubleshooting AWS IoT Greengrass V2](troubleshootin
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    aws greengrassv2 create-deployment \
      --target-arn "arn:aws:iot:{{region}}:{{account-id}}:thing/{{MyGreengrassCore}}" \
      --cli-input-json file://hello-world-deployment.json
@@ -134,7 +134,7 @@ For more information, see [Troubleshooting AWS IoT Greengrass V2](troubleshootin
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    aws greengrassv2 create-deployment ^
      --target-arn "arn:aws:iot:{{region}}:{{account-id}}:thing/{{MyGreengrassCore}}" ^
      --cli-input-json file://hello-world-deployment.json
@@ -143,7 +143,7 @@ For more information, see [Troubleshooting AWS IoT Greengrass V2](troubleshootin
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    aws greengrassv2 create-deployment `
      --target-arn "arn:aws:iot:{{region}}:{{account-id}}:thing/{{MyGreengrassCore}}" `
      --cli-input-json file://hello-world-deployment.json
@@ -153,7 +153,7 @@ For more information, see [Troubleshooting AWS IoT Greengrass V2](troubleshootin
 
    The command outputs a response similar to the following example.
 
-   ```
+   ```json
    {
      "deploymentId": "deb69c37-314a-4369-a6a1-3dff9fce73a9",
      "iotJobId": "b5d92151-6348-4941-8603-bdbfb3e02b75",
@@ -166,21 +166,21 @@ For more information, see [Troubleshooting AWS IoT Greengrass V2](troubleshootin
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/com.example.HelloWorld.log
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    type {{C:\greengrass\v2}}\\logs\\com.example.HelloWorld.log
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\\logs\\com.example.HelloWorld.log -Tail 10 -Wait
    ```
 
@@ -194,16 +194,16 @@ For more information, see [Troubleshooting AWS IoT Greengrass V2](troubleshootin
 **Note**
 If the log messages don't change, the deployment failed or didn't reach the core device. This can occur if your core device isn't connected to the internet or doesn't have permissions to retrieve artifacts from your S3 bucket. Run the following command on your core device to view the AWS IoT Greengrass Core software log file. This file includes logs from the Greengrass core device's deployment service.
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
    ```
 
-   ```
+   ```cmd
    type {{C:\greengrass\v2}}\\logs\\greengrass.log
    ```
 <a name="windows-cmd-type-observe-logs"></a>The `type` command writes the file's contents to the terminal. Run this command multiple times to observe changes in the file.
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\\logs\\greengrass.log -Tail 10 -Wait
    ```
 For more information, see [Troubleshooting AWS IoT Greengrass V2](troubleshooting.md).

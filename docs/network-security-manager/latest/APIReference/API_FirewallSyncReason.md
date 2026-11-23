@@ -21,7 +21,7 @@ Required: No
 A map of related resources whose configuration does not match the intended configuration, grouped by resource type. Each entry lists the resources of that type that are out of sync. For example, subnets whose connectivity type differs from the connectivity type that the policy specifies.
 Type: String to array of [InvalidResourceIssue](API_InvalidResourceIssue.md) objects map
 Map Entries: Minimum number of 0 items. Maximum number of 10 items.
-Valid Keys: `AWS::ApiGateway::Stage | AWS::CloudFront::Distribution | AWS::EC2::EIP | AWS::ElasticLoadBalancingV2::LoadBalancer::application | AWS::ElasticLoadBalancing::LoadBalancer | AWS::WAFv2::WebACL | AWS::Shield::Protection | AWS::ShieldRegional::Protection | AWS::EC2::VPC | AWS::EC2::TransitGateway | AWS::EC2::Subnet | AWS::EC2::RouteTable | AWS::NetworkFirewall::Firewall | AWS::NetworkFirewall::FirewallPolicy | AWS::NetworkFirewall::FirewallPolicyV2 | AWS::RAM::ResourceShare`
+Valid Keys: `AWS::ApiGateway::Stage | AWS::CloudFront::Distribution | AWS::EC2::EIP | AWS::ElasticLoadBalancingV2::LoadBalancer::application | AWS::ElasticLoadBalancing::LoadBalancer | AWS::EC2::VPC | AWS::EC2::Subnet`
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No
 

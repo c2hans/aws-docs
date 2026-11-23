@@ -34,6 +34,7 @@ If-Match: {{IfMatch}}
    <Domains>
       <DomainItem>
          <Domain>{{string}}</Domain>
+         <ServeOn>{{string}}</ServeOn>
       </DomainItem>
    </Domains>
    <Enabled>{{boolean}}</Enabled>
@@ -42,6 +43,7 @@ If-Match: {{IfMatch}}
       <PrimaryDomainName>{{string}}</PrimaryDomainName>
       <ValidationTokenHost>{{string}}</ValidationTokenHost>
    </ManagedCertificateRequest>
+   <OnDomainTakeover>{{string}}</OnDomainTakeover>
    <Parameters>
       <Parameter>
          <Name>{{string}}</Name>
@@ -105,6 +107,14 @@ An object that contains the CloudFront managed ACM certificate request.
 Type: [ManagedCertificateRequest](API_ManagedCertificateRequest.md) object
 Required: No
 
+ ** [OnDomainTakeover](#API_UpdateDistributionTenant_RequestSyntax) **   <a name="cloudfront-UpdateDistributionTenant-request-OnDomainTakeover"></a>
+Specifies whether CloudFront moves a domain in this request to this distribution tenant when the domain is already associated with another standard distribution or distribution tenant. Valid values are:
++  `allow` – CloudFront moves the domain to this distribution tenant when the domain's DNS points to this distribution tenant.
++  `reject` – CloudFront doesn't move the domain, and the request fails if the domain is associated with another resource. This is the default if you don't specify a value.
+Type: String
+Valid Values: `allow | reject`
+Required: No
+
  ** [Parameters](#API_UpdateDistributionTenant_RequestSyntax) **   <a name="cloudfront-UpdateDistributionTenant-request-Parameters"></a>
 A list of parameter values to add to the resource. A parameter is specified as a key-value pair. A valid parameter value must exist for any parameter that is marked as required in the multi-tenant distribution.
 Type: Array of [Parameter](API_Parameter.md) objects
@@ -139,6 +149,7 @@ HTTP/1.1 200
    <Domains>
       <DomainResult>
          <Domain>string</Domain>
+         <ServeOn>string</ServeOn>
          <Status>string</Status>
       </DomainResult>
    </Domains>

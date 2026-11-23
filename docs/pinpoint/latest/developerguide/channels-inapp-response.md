@@ -10,7 +10,7 @@ When you call the [GetInAppMessages](https://docs.aws.amazon.com/pinpoint/latest
 
 The following is an example of the JSON object that is returned when you call the `GetInAppMessages` API:
 
-```
+```json
 {
   "InAppMessagesResponse":{
     "InAppMessageCampaigns":[

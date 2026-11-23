@@ -25,7 +25,7 @@ You can use the [describe-opt-out-lists](https://docs.aws.amazon.com/cli/latest/
 **To view information about all of your opt-out lists using the AWS CLI**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 describe-opt-out-lists
   ```
 
@@ -34,7 +34,7 @@ You can also view information about specific opt-out lists by using the `OptOutL
 **To view information about specific opt-out lists using the AWS CLI**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 describe-opt-out-lists \
   > --opt-out-list-names {{optOutListName}}
   ```

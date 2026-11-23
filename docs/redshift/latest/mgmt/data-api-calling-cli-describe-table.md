@@ -21,7 +21,7 @@ aws redshift-data describe-table
 
 The following is an example of the response.
 
-```
+```json
 {
     "ColumnList": [
         {
@@ -67,7 +67,7 @@ aws redshift-data describe-table
 
 The following is an example of the response.
 
-```
+```json
 {
     "ColumnList": [
         {

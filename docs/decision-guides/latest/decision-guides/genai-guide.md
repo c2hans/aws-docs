@@ -34,7 +34,9 @@ For the third layer, the options sit on a spectrum from the least to the most op
 
  This guide helps you make that decision for each of your workloads.
 
-[![AWS Videos](https://img.youtube.com/vi/WEKTpzvJiec?si=39jHcyiMGTfiO2zB/0.jpg)](https://www.youtube.com/watch?v=WEKTpzvJiec?si=39jHcyiMGTfiO2zB)
+[![AWS Videos](https://img.youtube.com/vi/WEKTpzvJiec/0.jpg)](https://www.youtube.com/watch?v=WEKTpzvJiec)
+
+A 12-minute video about building generative AI applications on AWS, part one of a four-part series. View [part two](https://www.youtube.com/watch?v=HUuO9eJbOTk), [part three](https://www.youtube.com/watch?v=JbizhCFmC20) and [part four](https://www.youtube.com/watch?v=gNY06JM6m8U).
 
 ## Understand
 <a name="understand"></a>

@@ -17,20 +17,20 @@ You can attach `AWSPartnerCentralFullAccess` to your users, groups, and roles.
 <a name="AWSPartnerCentralFullAccess-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: November 18, 2024, 23:33 UTC
-+ **Edited time:** November 10, 2026, 08:27 UTC
++ **Edited time:** November 21, 2026, 02:57 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AWSPartnerCentralFullAccess`
 
 ## Policy version
 <a name="AWSPartnerCentralFullAccess-version"></a>
 
-**Policy version:** v17 (default)
+**Policy version:** v19 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
 ## JSON policy document
 <a name="AWSPartnerCentralFullAccess-json"></a>
 
-```
+```json
 {
   "Version" : "2012-10-17",
   "Statement" : [
@@ -141,7 +141,11 @@ The policy's default version is the version that defines the permissions for the
         "support:AddCommunicationToCase",
         "support:ResolveCase",
         "support:AddAttachmentsToSet",
-        "support:DescribeCommunications"
+        "support:DescribeCommunications",
+        "support:SearchForCases",
+        "support:DescribeAttachment",
+        "support:DescribeServices",
+        "support:DescribeCreateCaseOptions"
       ],
       "Resource" : "*"
     },
@@ -267,7 +271,10 @@ The policy's default version is the version that defines the permissions for the
       "Action" : [
         "iam:GetRole"
       ],
-      "Resource" : "arn:aws:iam::*:role/aws-service-role/partnercentral-account.amazonaws.com/AWSServiceRoleForPartnerCentralAccount"
+      "Resource" : [
+        "arn:aws:iam::*:role/aws-service-role/partnercentral-account.amazonaws.com/AWSServiceRoleForPartnerCentralAccount",
+        "arn:aws:iam::*:role/AWSServiceRoleForPartnerCentralAccount"
+      ]
     },
     {
       "Sid" : "CreateServiceLinkedRole",
@@ -291,6 +298,41 @@ The policy's default version is the version that defines the permissions for the
         "arn:aws:aws-marketplace::*:AWSMarketplace/ReportingData/Solution_V1/Dataset/Solution_V1",
         "arn:aws:aws-marketplace::*:AWSMarketplace/ReportingData/Marketing_V1/Dataset/CaseStudy_V1"
       ]
+    },
+    {
+      "Sid" : "DemandCenterServiceLinkedRoleCreation",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/partnercentral-marketing.amazonaws.com/AWSServiceRoleForPartnerCentralMarketing",
+      "Condition" : {
+        "StringEquals" : {
+          "iam:AWSServiceName" : "partnercentral-marketing.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid" : "DemandCenterServiceLinkedRoleRead",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:GetRole"
+      ],
+      "Resource" : [
+        "arn:aws:iam::*:role/aws-service-role/partnercentral-marketing.amazonaws.com/AWSServiceRoleForPartnerCentralMarketing",
+        "arn:aws:iam::*:role/AWSServiceRoleForPartnerCentralMarketing"
+      ]
+    },
+    {
+      "Sid" : "SupportConsole",
+      "Effect" : "Allow",
+      "Action" : [
+        "support-console:GetAccountState",
+        "support-console:GetAccountGovCloudEnabled",
+        "support-console:CheckSubscription",
+        "support-console:GetBanner"
+      ],
+      "Resource" : "*"
     }
   ]
 }

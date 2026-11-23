@@ -28,7 +28,7 @@ At the table level, the three dots icon provides the additional option to choose
 
 The JupyterLab notebook cell content below shows an example of what is automatically generated when selecting the **Query in notebook** menu on a `redshift-connection` data source in the SQL extension pane.
 
-```
+```SQL
 %%sm_sql --metastore-id redshift-connection --metastore-type GLUE_CONNECTION
 
 -- Query to list tables from schema 'dev.public'

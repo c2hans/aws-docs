@@ -62,7 +62,7 @@ For more information, see [Viewing Compliance Information and Evaluation Results
 **Tools for PowerShell V4**
 **Example 1: This example evaulation results for the given resource.**
 
-```
+```powershell
 Get-CFGComplianceDetailsByResource -ResourceId ABCD5STJ4EFGHIVEW6JAH -ResourceType 'AWS::IAM::User'
 ```
 **Output:**
@@ -80,7 +80,7 @@ ResultToken                :
 **Tools for PowerShell V5**
 **Example 1: This example evaulation results for the given resource.**
 
-```
+```powershell
 Get-CFGComplianceDetailsByResource -ResourceId ABCD5STJ4EFGHIVEW6JAH -ResourceType 'AWS::IAM::User'
 ```
 **Output:**

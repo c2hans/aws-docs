@@ -164,7 +164,7 @@ The following Python 3 example shows you how search all your projects for a spec
 
 1. Save the following code to a file named `find_tag.py`.
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
    """

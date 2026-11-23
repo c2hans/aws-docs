@@ -241,7 +241,7 @@ Point the task to your container image by entering its Amazon ECR URI (your imag
 
 Example trust policy:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

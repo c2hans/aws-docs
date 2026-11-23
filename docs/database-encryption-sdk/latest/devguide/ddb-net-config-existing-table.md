@@ -17,7 +17,7 @@ By default, primary key attributes are signed but not encrypted (`SIGN_ONLY`) an
 Specify `ENCRYPT_AND_SIGN` to encrypt and sign an attribute. Specify `SIGN_ONLY` to sign, but not encrypt, an attribute. Specify `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` to sign and attribute and include it in the encryption context. You cannot encrypt an attribute without also signing it. Specify `DO_NOTHING` to ignore an attribute. For more information, see [Attribute actions in the AWS Database Encryption SDK for DynamoDB](ddb-net-using.md#ddb-net-attribute-actions).
 If you specify any `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` attributes, then the partition and sort attributes must also be `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`.
 
-```
+```cs
 var attributeActionsOnEncrypt = new Dictionary<string, CryptoAction>
 {
     ["partition_key"] = CryptoAction.SIGN_ONLY, // The partition attribute must be SIGN_ONLY
@@ -31,7 +31,7 @@ var attributeActionsOnEncrypt = new Dictionary<string, CryptoAction>
 **2. Define which attributes will be excluded from the signatures**
 The following example assumes that all `DO_NOTHING` attributes share the distinct prefix "`:`", and uses the prefix to define the allowed unsigned attributes. The client will assume that any attribute name with the "`:`" prefix is excluded from the signatures. For more information, see [Allowed unsigned attributes](ddb-net-using.md#net-allowed-unauth).
 
-```
+```cs
 const String unsignAttrPrefix = ":";
 ```
 
@@ -39,7 +39,7 @@ const String unsignAttrPrefix = ":";
 The following example creates an [AWS KMS keyring](use-kms-keyring.md). The AWS KMS keyring uses symmetric encryption or asymmetric RSA AWS KMS keys to generate, encrypt, and decrypt data keys.
 This example uses `CreateMrkMultiKeyring` to create an AWS KMS keyring with a symmetric encryption KMS key. The `CreateAwsKmsMrkMultiKeyring` method ensures that the keyring will correctly handle both single-Region and multi-Region keys.
 
-```
+```cs
 var matProv = new MaterialProviders(new MaterialProvidersConfig());
 var keyringInput = new CreateAwsKmsMrkMultiKeyringInput { Generator = kmsKeyId };
 var kmsKeyring = matProv.CreateAwsKmsMrkMultiKeyring(keyringInput);
@@ -51,7 +51,7 @@ This example specifies the DynamoDB table name as the [logical table name](ddb-n
 You must specify `FORCE_WRITE_PLAINTEXT_ALLOW_READ_PLAINTEXT` as the plaintext override. This policy continues to read and write plaintext items, reads encrypted items, and prepares the client to write encrypted items.
 For more information on the values included in the table encryption configuration, see [Encryption configuration in the AWS Database Encryption SDK for DynamoDB](ddb-java-using.md#ddb-config-encrypt).
 
-```
+```cs
 Dictionary<String, DynamoDbTableEncryptionConfig> tableConfigs =
     new Dictionary<String, DynamoDbTableEncryptionConfig>();
 DynamoDbTableEncryptionConfig config = new DynamoDbTableEncryptionConfig
@@ -70,7 +70,7 @@ tableConfigs.Add(ddbTableName, config);
 **5. Create a new AWS SDK DynamoDB client**
 he following example creates a new AWS SDK DynamoDB client using the `TableEncryptionConfigs` from **Step 4**.
 
-```
+```cs
 var ddb = new Client.DynamoDbClient(
     new DynamoDbTablesEncryptionConfig { TableEncryptionConfigs = tableConfigs });
 ```
@@ -84,7 +84,7 @@ Before you proceed to [Step 3](#ddb-net-add-step3), you must encrypt and sign al
 
 The following example updates the table encryption configuration from **Step 1**. You must update the plaintext override with `FORBID_WRITE_PLAINTEXT_ALLOW_READ_PLAINTEXT`. This policy continues to read plaintext items, but also reads and writes encrypted items. Create a new AWS SDK DynamoDB client using the updated `TableEncryptionConfigs`.
 
-```
+```cs
 Dictionary<String, DynamoDbTableEncryptionConfig> tableConfigs =
     new Dictionary<String, DynamoDbTableEncryptionConfig>();
 DynamoDbTableEncryptionConfig config = new DynamoDbTableEncryptionConfig
@@ -107,7 +107,7 @@ After you have encrypted and signed all of your items, update the plaintext over
 
 The following example updates the table encryption configuration from **Step 2**. You can either update the plaintext override with `FORBID_WRITE_PLAINTEXT_FORBID_READ_PLAINTEXT` or remove the plaintext policy from your configuration. The client only reads and writes encrypted and signed items by default. Create a new AWS SDK DynamoDB client using the updated `TableEncryptionConfigs`.
 
-```
+```cs
 Dictionary<String, DynamoDbTableEncryptionConfig> tableConfigs =
     new Dictionary<String, DynamoDbTableEncryptionConfig>();
 DynamoDbTableEncryptionConfig config = new DynamoDbTableEncryptionConfig

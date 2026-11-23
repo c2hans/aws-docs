@@ -41,6 +41,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 
 ![EKS control plane managing pods across three availability zones using different node group types.](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image6.png)
 
+Amazon EKS use case
+
 ## Amazon EKS Anywhere
 <a name="eks-anywhere"></a>
 

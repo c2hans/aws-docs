@@ -27,7 +27,7 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/testing-and-
 
  When a request does not succeed, the gateway returns an HTTP error response with a JSON body in the following shape.
 
-```
+```json
 {"error":"true","reason":"{{message}}"}
 ```
 

@@ -21,7 +21,7 @@ Distributions prior to Ubuntu 14 and Red Hat Enterprise Linux 7 and 8 do not sup
 
 For a demonstration on the process of seamlessly joining a Linux instance to your AWS Managed Microsoft AD Active Directory, see the following YouTube video.
 
-[![AWS Videos](https://img.youtube.com/vi/NNUtdVVZVxU?si=_0zOiXhUObcW0_Wo/0.jpg)](https://www.youtube.com/watch?v=NNUtdVVZVxU?si=_0zOiXhUObcW0_Wo)
+[![AWS Videos](https://img.youtube.com/vi/NNUtdVVZVxU/0.jpg)](https://www.youtube.com/watch?v=NNUtdVVZVxU)
 
 ## Prerequisites
 <a name="seamless-linux-prereqs"></a>

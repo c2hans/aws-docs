@@ -33,7 +33,7 @@ You also must make sure that Amazon Redshift can assume the IAM role during `COP
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

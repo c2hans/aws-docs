@@ -96,7 +96,7 @@ Type: String
  ** [LastUpdateStatusReasonCode](#API_GetNetworkConnector_ResponseSyntax) **   <a name="lambdacore-GetNetworkConnector-response-LastUpdateStatusReasonCode"></a>
 A machine-readable code indicating the reason for the last update status. Use this for programmatic error handling.
 Type: String
-Valid Values: `DisallowedByVpcEncryptionControl | Ec2RequestLimitExceeded | InsufficientRolePermissions | InternalError | InvalidSecurityGroup | InvalidSubnet | SecurityGroupsPerInterfaceLimitExceeded | SubnetOutOfIPAddresses`
+Valid Values: `DisallowedByVpcEncryptionControl | Ec2RequestLimitExceeded | InsufficientRolePermissions | InternalError | InternetGatewayNotAttached | InvalidSecurityGroup | InvalidSubnet | SecurityGroupsPerInterfaceLimitExceeded | SubnetOutOfIPAddresses`
 
  ** [LatestVersion](#API_GetNetworkConnector_ResponseSyntax) **   <a name="lambdacore-GetNetworkConnector-response-LatestVersion"></a>
 The version number of the connector's latest active version. Each configuration update creates a new immutable version; this attribute exposes the most recent one. This field is returned only on a standard (unqualified) request.
@@ -133,7 +133,7 @@ Type: String
  ** [StateReasonCode](#API_GetNetworkConnector_ResponseSyntax) **   <a name="lambdacore-GetNetworkConnector-response-StateReasonCode"></a>
 A machine-readable code indicating the reason for the current state. Use this for programmatic error handling.
 Type: String
-Valid Values: `DisallowedByVpcEncryptionControl | Ec2RequestLimitExceeded | InsufficientRolePermissions | InternalError | InvalidSecurityGroup | InvalidSubnet | SecurityGroupsPerInterfaceLimitExceeded | SubnetOutOfIPAddresses`
+Valid Values: `DisallowedByVpcEncryptionControl | Ec2RequestLimitExceeded | InsufficientRolePermissions | InternalError | InternetGatewayNotAttached | InvalidSecurityGroup | InvalidSubnet | SecurityGroupsPerInterfaceLimitExceeded | SubnetOutOfIPAddresses`
 
  ** [Version](#API_GetNetworkConnector_ResponseSyntax) **   <a name="lambdacore-GetNetworkConnector-response-Version"></a>
 The version number of the network connector. On a standard (unqualified) request, this is the connector's current version; each configuration update increments it. When you supply a version-qualified identifier, this is the specific version you requested.

@@ -22,7 +22,7 @@ The SDK reads configuration values from the shared AWS configuration files. The 
 
 Both files use INI format, with one section for each profile. A profile is a named group of settings. In the config file, the section name for a profile other than `[default]` starts with `profile`, for example `[profile production]`. In the credentials file, the section name is the profile name alone, for example `[production]`.
 
-```
+```ini
 # ~/.aws/config
 [default]
 region = us-west-2
@@ -35,7 +35,7 @@ retry_mode = standard
 max_attempts = 10
 ```
 
-```
+```ini
 # ~/.aws/credentials
 [default]
 aws_access_key_id = AKIAIOSFODNN7EXAMPLE
@@ -49,7 +49,7 @@ With named profiles, you can keep separate configurations for different environm
 
 By default, the SDK uses the `[default]` profile. To use a different profile, pass the `profile` argument to `resolve()`:
 
-```
+```python
 from aws_sdk_bedrock_runtime import BedrockRuntimeConfig
 
 config = BedrockRuntimeConfig.resolve(profile="production")
@@ -57,22 +57,22 @@ config = BedrockRuntimeConfig.resolve(profile="production")
 
 Or set the `AWS_PROFILE` environment variable:
 
-```
+```bash
 export AWS_PROFILE=production
 ```
 
 If the requested profile doesn't exist in the config file, `resolve()` raises a `ProfileNotFoundError`. The error message says where the profile name came from:
 
-```
+```python
 config = BedrockRuntimeConfig.resolve(profile="typo")
 # raises ProfileNotFoundError: Profile 'typo' from profile argument was not found in config file.
 ```
 
-```
+```bash
 export AWS_PROFILE=typo
 ```
 
-```
+```python
 config = BedrockRuntimeConfig.resolve()
 # raises ProfileNotFoundError: Profile 'typo' from AWS_PROFILE environment variable was not found in config file.
 ```

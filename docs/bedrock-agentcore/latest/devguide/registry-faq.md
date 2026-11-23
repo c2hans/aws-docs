@@ -131,7 +131,7 @@ The registry (parent) detail type changed from a sentence to a short status stri
 
  **Before (`bedrock-agentcore` namespace, to be deprecated):**
 
-```
+```json
 {
   "version": "0",
   "detail-type": "Registry Record State changed to Pending Approval",
@@ -145,7 +145,7 @@ The registry (parent) detail type changed from a sentence to a short status stri
 
  **After (`agent-registry` namespace):**
 
-```
+```json
 {
   "version": "0",
   "detail-type": "Registry Record State changed to Pending Approval",
@@ -167,7 +167,7 @@ Replace the action prefix and resource ARN namespace in all your IAM policies.
 
  **Before (`bedrock-agentcore` namespace, to be deprecated):**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [{
@@ -194,7 +194,7 @@ Replace the action prefix and resource ARN namespace in all your IAM policies.
 
  **After (`agent-registry` namespace):**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [{
@@ -227,7 +227,7 @@ The `BatchGetDiscoverableRegistryRecord` API does not have its own IAM action. I
 **Important**
 Workload identity and OAuth credential provider resources remain under the `bedrock-agentcore` namespace. If your registries use URL sync (`source.fromUrl`) with OAuth or IAM credentials, you must retain the following permissions alongside your new `agent-registry:*` permissions:
 
-```
+```text
 "bedrock-agentcore:CreateWorkloadIdentity",
 "bedrock-agentcore:GetWorkloadIdentity",
 "bedrock-agentcore:DeleteWorkloadIdentity"
@@ -241,7 +241,7 @@ Update the service name, client class, and endpoint URL in your SDK calls.
 
  **Before (`bedrock-agentcore` namespace, to be deprecated):**
 
-```
+```python
 import boto3
 
 session = boto3.Session(region_name="us-west-2")
@@ -259,7 +259,7 @@ dp_client = session.client(
 
  **After (`agent-registry` namespace):**
 
-```
+```python
 import boto3
 
 session = boto3.Session(region_name="us-west-2")
@@ -282,7 +282,7 @@ Replace the CLI namespace in all scripts and automation.
 
  **Before (`bedrock-agentcore` namespace, to be deprecated):**
 
-```
+```bash
 aws bedrock-agentcore-control create-registry \
     --name "MyRegistry" \
     --description "Production registry" \
@@ -292,7 +292,7 @@ aws bedrock-agentcore-control create-registry \
 
  **After (`agent-registry` namespace):**
 
-```
+```bash
 aws agent-registry-control create-registry \
     --name "MyRegistry" \
     --description "Production registry" \
@@ -313,10 +313,12 @@ The authorization configuration on the registry resource — which controls how 
 The specific field changes are:
 +  `authorizerType` and `authorizerConfiguration` are moved inside a new `discoveryConfiguration` object.
 +  `approvalConfiguration.autoApproval` (boolean) is replaced with `approvalConfiguration.autoApprovalRules` (array of enum strings). The value `"APPROVE_ALL"` has the same semantic meaning as `autoApproval: true`. Rules specified in the enum list are applied. Not specifying (null) means approval is needed.
+**Note**
+ `autoApprovalRules` governs the record-approval gate, which controls internal discovery. Public discovery adds a second, independent approval gate for the Publisher association. For how the two gates and their auto-approval settings combine, see [Record approval and public-association approval](registry-create-manage.md#registry-create-approval-dimensions).
 
  **Before (`bedrock-agentcore` namespace, to be deprecated):**
 
-```
+```json
 {
   "name": "string",
   "description": "string",
@@ -330,7 +332,7 @@ The specific field changes are:
 
  **After (`agent-registry` namespace): with Approval ALL**
 
-```
+```json
 {
   "name": "string",
   "description": "string",
@@ -346,7 +348,7 @@ The specific field changes are:
 
  **After (`agent-registry` namespace): with NULL in enum list**
 
-```
+```json
 {
   "name": "string",
   "description": "Registry with manual approval only",
@@ -389,7 +391,7 @@ The following fields are renamed:
 
  **Before (`bedrock-agentcore` namespace, to be deprecated):**
 
-```
+```json
 {
   "recordId": "string",
   "name": "string",
@@ -442,7 +444,7 @@ The following fields are renamed:
 
  **After (`agent-registry` namespace):**
 
-```
+```json
 {
   "recordId": "string",
   "displayName": "string",
@@ -467,7 +469,10 @@ The following fields are renamed:
       "data": "string",
       "dataSchemaVersion": "string",
       "additionalData": {
-        "skillMd": { "data": "string", "dataSchemaVersion": "string", "source": { "fromUrl": { ... } } }
+        "skillMd": { "data": "string", "dataSchemaVersion": "string", "source": { "fromUrl": { "url": "string", "credentialProviderConfigurations": [ "CredentialProviderConfiguration" ] } } },
+        "skillPackage": { "source": { "fromUrl": { "url": "string", "credentialProviderConfigurations": [ "CredentialProviderConfiguration" ] } } },
+        "repositoryProvider": "GITHUB",
+        "sourceConfiguration": { "s3": { "bucketOwnerAccountId": "string" } }
       }
     },
     "custom"?: {
@@ -486,11 +491,11 @@ Exactly one primary descriptor key may be populated per record. The valid primar
 +  **SKILL:** `agentSkillsDefinition`, `custom`
 +  **CUSTOM:** `custom`
 
- `source` is per-descriptor rather than a single top-level block. It attaches to descriptors that carry a `source` field in the schema — `mcpServer` and `a2aAgentCard`. The `tools` child (under `mcpServer.additionalData`), the `agentSkillsDefinition` parent, and the `custom` descriptor carry no `source`.
+ `source` is per-descriptor rather than a single top-level block. It attaches to descriptors that carry a `source` field in the schema — `mcpServer`, `a2aAgentCard`, and the `skillMd` and `skillPackage` children under `agentSkillsDefinition.additionalData`. The `tools` child (under `mcpServer.additionalData`), the `agentSkillsDefinition` parent, and the `custom` descriptor carry no `source`.
 
 In the `agent-registry` namespace, only `source.fromUrl` is supported.
 
-Auto-synchronization is only triggered for the `mcpServer` and `a2aAgentCard` primary descriptors — that is, MCP and AGENT record types. A `source` on the `skillMd` child is persisted but not used to run sync, and SKILL records cannot be auto-synchronized. CUSTOM records must be created manually by providing `data` directly.
+Auto-synchronization is triggered for the `mcpServer` and `a2aAgentCard` primary descriptors — that is, MCP and AGENT record types — and for SKILL records whose `skillMd.source` or `skillPackage.source` is an Amazon S3 URL (`s3://`) or a GitHub folder URL with `repositoryProvider` set to `GITHUB`. The registry doesn’t synchronize an `https://` `skillMd.source` without `repositoryProvider`, and it no longer accepts one when you create a record or set or change the source. A record that already stores one keeps it. For skill synchronization, see [Synchronize a skill from Amazon S3](registry-skill-sync-s3.md) and [Synchronize a skill from GitHub](registry-skill-sync-github.md). CUSTOM records must be created manually by providing `data` directly.
 
 ### Change 4: Data plane filter updates
 <a name="registry-faq-change-4"></a>
@@ -509,7 +514,7 @@ Two new data plane APIs support building browsing and catalog experiences over a
 
  **ListDiscoverableRegistryRecords** — Returns a paginated list of approved registry records. Use this to build browsing interfaces over published content.
 
-```
+```json
 // HTTP: POST /registries/{registryId}/discoverable-records-list
 {
   "registryId": "string",           // path param, required (ARN or ID)
@@ -539,7 +544,7 @@ Two new data plane APIs support building browsing and catalog experiences over a
 
  **BatchGetDiscoverableRegistryRecord** — Retrieves full details for a batch of records across one or more registries in a single call.
 
-```
+```json
 // HTTP: POST /discoverable-records-batch
 {
   "entries": [
@@ -585,14 +590,14 @@ In the `bedrock-agentcore` namespace, List APIs expose each filterable field as 
 
  **Before (`bedrock-agentcore` namespace, to be deprecated):**
 
-```
+```text
 GET /registries?status=READY&authorizerType=AWS_IAM
 GET /registries/{registryId}/records?name=my-agent&status=APPROVED&recordType=MCP
 ```
 
  **After (`agent-registry` namespace):**
 
-```
+```json
 // ListRegistries
 // POST /registries-list
 {
@@ -668,7 +673,7 @@ Update the trust policy on the role referenced by each affected record.
 
  **Before (`bedrock-agentcore` namespace, to be deprecated):**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -683,7 +688,7 @@ Update the trust policy on the role referenced by each affected record.
 
  **After (`agent-registry` namespace):**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

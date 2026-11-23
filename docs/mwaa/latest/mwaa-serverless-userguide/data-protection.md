@@ -85,7 +85,7 @@ Data in transit is data that may be intercepted as it travels the network.
 ------
 #### [ JSON ]
 
-```
+```json
 {
 	"GranteePrincipal": "airflow-serverless.us-east-1.amazonaws.com",
 	"RetiringPrincipal": "airflow-serverless.us-east-1.amazonaws.com",
@@ -112,7 +112,7 @@ Data in transit is data that may be intercepted as it travels the network.
 ------
 #### [ JSON ]
 
-```
+```json
 {
 	"GranteePrincipal": "airflow-serverless.us-east-1.amazonaws.com",
 	"RetiringPrincipal": "airflow-serverless.us-east-1.amazonaws.com",
@@ -143,7 +143,7 @@ Data in transit is data that may be intercepted as it travels the network.
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -171,7 +171,7 @@ Data in transit is data that may be intercepted as it travels the network.
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -193,7 +193,7 @@ Data in transit is data that may be intercepted as it travels the network.
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "{{key-default-1}}",
@@ -242,7 +242,7 @@ Data in transit is data that may be intercepted as it travels the network.
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {
@@ -272,7 +272,7 @@ Data in transit is data that may be intercepted as it travels the network.
 ------
 #### [ JSON ]
 
-```
+```json
 {
             "Sid": "Enable Encrypt Decrypt with Context",
             "Effect": "Allow",
@@ -306,7 +306,7 @@ Data in transit is data that may be intercepted as it travels the network.
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -345,7 +345,7 @@ Data in transit is data that may be intercepted as it travels the network.
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -381,7 +381,7 @@ Data in transit is data that may be intercepted as it travels the network.
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

@@ -62,7 +62,7 @@ IAM policies that filter IP addresses use [IP Address Condition Operators](https
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -82,7 +82,7 @@ IAM policies that filter IP addresses use [IP Address Condition Operators](https
 
 To include IPv6 addresses, you can modify the policy's Condition element to allow both IPv4 (54.240.143.0/24) and IPv6 (2001:DB8:1234:5678::/64) address ranges as shown in the following example.
 
-```
+```JSON
 
   "Condition": {
     "IpAddress": {

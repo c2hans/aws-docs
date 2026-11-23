@@ -73,7 +73,7 @@ Use appropriate security measures to keep these credentials safe.
 
 1. Add the following text to the shared `credentials` file. Replace the example ID value and example key value with the values in the `.csv` file that you downloaded earlier.
 
-   ```
+   ```ini
    [default]
    aws_access_key_id = {{AKIAIOSFODNN7EXAMPLE}}
    aws_secret_access_key = {{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}

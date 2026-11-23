@@ -12,7 +12,7 @@ The following example JSON job converts an MP4 file to another MP4 file that is 
 
   Accelerated transcoding is supported with jobs that have only a single input; you can't do input stitching.
 
-```
+```JSON
 {
   "Role": "{{arn:aws:iam::123456789012:role/MediaConvert_Role}}",
   "AccelerationSettings" : {

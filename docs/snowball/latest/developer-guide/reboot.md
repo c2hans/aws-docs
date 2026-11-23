@@ -25,7 +25,7 @@ If the LCD screen is displaying the shutdown message when the device is not actu
 
 1. When all communication with the device has ended, use the `reboot-device` command to reboot it. When the device is ready, the LCD display shows a short video while the device is getting ready to start. After about 10 minutes, the device is ready to be unlocked.
 
-   ```
+   ```bash,sh,zsh
      snowballEdge reboot-device --profile profile-name
    ```
 

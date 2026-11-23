@@ -28,7 +28,7 @@ The following code example shows how to use `Get-MAC2FindingList`.
 **Tools for PowerShell V4**
 **Example 1: Returns list of FindingIds for Findings containing a sensitive data detection with type "CREDIT\_CARD\_NUMBER" or "US\_SOCIAL\_SECURITY\_NUMBER"**
 
-```
+```powershell
 $criterionAddProperties = New-Object Amazon.Macie2.Model.CriterionAdditionalProperties
 
 $criterionAddProperties.Eq = @(

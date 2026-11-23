@@ -33,19 +33,19 @@ You can change the value of `releasever` using one of the following methods. The
 
 In the following example, the version is {{2023.0.20230210}}:
 
-```
+```bash
 $ rpm -q system-release
 system-release-2023.0.20230210-0.amzn2023.noarch
 ```
 
 In a newly installed system, the override variable is not present. No upgrades are available because the system is locked to the installed version of `system-release`.
 
-```
+```bash
 $ cat /etc/dnf/vars/releasever
 cat: /etc/dnf/vars/releasever: No such file or directory
 ```
 
-```
+```bash
 $ sudo dnf upgrade
 Last metadata expiration check: 0:00:02 ago on Wed 15 Feb 2023 06:14:12 PM UTC.
 Dependencies resolved.
@@ -55,12 +55,12 @@ Complete!
 
 You can get packages of a specific version by using the `releasever` flag to provide the version that you want.
 
-```
+```bash
 $ rpm -q system-release
 system-release-2023.0.20230222-0.amzn2023.noarch
 ```
 
-```
+```bash
 $ sudo dnf upgrade --releasever=2023.0.20230329
 Amazon Linux 2023 repository                     26 MB/s |  12 MB     00:00
 Dependencies resolved.
@@ -109,7 +109,7 @@ You might want to install selected packages from a recent release, while leaving
 
 You can use `dnf check-update` to identify the packages that you want to upgrade.
 
-```
+```bash
 $ sudo dnf check-update --releasever=latest --security
 Amazon Linux 2023 repository                     13 MB/s |  10 MB     00:00
 Last metadata expiration check: 0:00:02 ago on Wed 15 Feb 2023 02:52:21 AM UTC.
@@ -154,7 +154,7 @@ zlib.aarch64                       1.2.11-32.amzn2023.0.3            amazonlinux
 
 Install the packages that you want to upgrade. Use `sudo dnf upgrade --releasever=latest` and the package names to ensure that the `system-release` package remains unchanged.
 
-```
+```bash
 $ sudo dnf upgrade --releasever=latest openssl openssl-libs
 Last metadata expiration check: 0:01:28 ago on Wed 15 Feb 2023 02:52:21 AM UTC.
 Dependencies resolved.
@@ -187,12 +187,12 @@ Instead of adding `--releasever=latest`, you can use persistent override to *unl
  By unlocking the package manager by using a persistent override of deterministic updates, you take the risk discovering any possible incompatibility between your application and an OS update in production.
  While incompatibilites *are* rare, with an OS update you are integrating new code changes into your environment, integration tests can prevent deploying code changes that have a negative impact on production environments.
 
-```
+```bash
 $ echo latest | sudo tee /etc/dnf/vars/releasever
 latest
 ```
 
-```
+```bash
 $ sudo dnf upgrade
 Last metadata expiration check: 0:03:36 ago on Wed 15 Feb 2023 02:52:21 AM UTC.
 Dependencies resolved.

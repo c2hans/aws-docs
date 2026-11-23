@@ -42,6 +42,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
 
 ![Tertiary analysis with data lakes reference architecture](https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image4.png)
 
+Figure 3: Tertiary analysis with data lakes reference architecture
+
 1.  A CloudWatch Events triggers an ingestion workflow for variant or annotation files into the Amazon S3 genomics data lake.
 
 1.  A bioinformatician uses a Jupyter notebook to query the data in the data lake using Amazon Athena with the [PyAthena](https://pypi.org/project/PyAthena/) python driver. Queries can also be performed using the Amazon Athena console, AWS CLI, or an API.

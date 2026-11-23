@@ -109,7 +109,7 @@ Amazon Cognito maps incoming claims to user pool attributes only if the claims e
 
 The following request body for [CreateIdentityProvider](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html) or [UpdateIdentityProvider](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateIdentityProvider.html) maps the SAML provider "MyIdP" attributes `emailaddress`, `birthdate`, and `phone` to the user pool attributes `email`, `birthdate`, and `phone_number`, in that order. This is a complete request body for a SAML 2.0 provider—your request body varies depending on IdP type and specific details. The attribute mapping is in the `AttributeMapping` parameter.
 
-```
+```json
 {
    "AttributeMapping": {
       "email" : "emailaddress",

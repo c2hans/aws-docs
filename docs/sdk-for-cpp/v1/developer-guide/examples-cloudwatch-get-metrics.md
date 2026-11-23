@@ -23,7 +23,7 @@ A list of metrics and dimensions that are posted by AWS services can be found wi
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/ListMetricsRequest.h>
@@ -34,7 +34,7 @@ A list of metrics and dimensions that are posted by AWS services can be found wi
 
  **Code**
 
-```
+```cpp
         Aws::CloudWatch::CloudWatchClient cw;
         Aws::CloudWatch::Model::ListMetricsRequest request;
 

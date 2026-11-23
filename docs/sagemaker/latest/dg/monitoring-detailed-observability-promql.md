@@ -41,7 +41,7 @@ To query detailed observability metrics from your existing observability tool in
 ### Option 2: Standard Prometheus data source
 <a name="detailed-observability-promql-grafana-standard"></a>
 
-```
+```json
 {
     "name": "SageMaker Inference (PromQL)",
     "type": "prometheus",
@@ -60,7 +60,7 @@ To query detailed observability metrics from your existing observability tool in
 ## IAM policy
 <a name="detailed-observability-promql-iam"></a>
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{
@@ -109,7 +109,7 @@ In PromQL, labels with dots must be enclosed in single quotes:
 ## Example PromQL queries
 <a name="detailed-observability-promql-examples"></a>
 
-```
+```promql
 # GPU utilization per IC
 avg by ('aws.sagemaker.inference_component.name') (
     DCGM_FI_DEV_GPU_UTIL{'aws.sagemaker.endpoint.name'="$endpoint"})

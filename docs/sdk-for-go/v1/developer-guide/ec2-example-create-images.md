@@ -30,7 +30,7 @@ The routines use the AWS SDK for Go to perform these tasks by using these method
 
 The Amazon EC2 service has an operation for creating instances ([RunInstances](https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.RunInstances)) and another for attaching tags to instances ([CreateTags](https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.CreateTags)). To create an instance with tags, call both of these operations in succession. The following example creates an instance and then adds a `Name` tag to it. The Amazon EC2 console displays the value of the `Name` tag in its list of instances.
 
-```
+```go
 package main
 
 import (
@@ -96,7 +96,7 @@ Sometimes when you create an Amazon EC2 image, you might want to explicitly excl
 
 The `NoDevice` parameter is compatible only with `DeviceName`, not with any other field in `BlockDeviceMapping`. The request will fail if other parameters are present.
 
-```
+```go
 package main
 
 import (

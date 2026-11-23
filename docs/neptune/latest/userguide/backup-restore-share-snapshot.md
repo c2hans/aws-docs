@@ -51,7 +51,7 @@ In the following key policy example, user `111122223333` is the owner of the KMS
 
 ****
 
-```
+```json
 {
     "Id": "key-policy-1",
     "Version":"2012-10-17",
@@ -114,7 +114,7 @@ The following example shows a policy that can be attached to an IAM user for AWS
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

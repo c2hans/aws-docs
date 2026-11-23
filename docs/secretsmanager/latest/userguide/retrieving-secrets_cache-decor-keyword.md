@@ -17,7 +17,7 @@ For a secret that contains this JSON:
 
 The following example shows how to extract the JSON values for `username` and `password` from the secret.
 
-```
+```python
 from aws_secretsmanager_caching import SecretCache
   from aws_secretsmanager_caching import InjectKeywordedSecretString,  InjectSecretString
 

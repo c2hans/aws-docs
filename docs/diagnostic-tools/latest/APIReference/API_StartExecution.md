@@ -188,7 +188,7 @@ This example illustrates one usage of `StartExecution`.
 #### Sample Request
 <a name="API_StartExecution_Example_1_Request"></a>
 
-```
+```json
 POST / HTTP/1.1
 Host: ts.us-east-2.amazonaws.com
 X-Amz-Target: Troubleshooting.StartExecution
@@ -212,7 +212,7 @@ Connection: Keep-Alive
 #### Sample Response
 <a name="API_StartExecution_Example_1_Response"></a>
 
-```
+```json
 HTTP/1.1 200 OK
 x-amzn-RequestId: <requestId>
 Content-Length: 0

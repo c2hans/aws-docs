@@ -133,14 +133,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-automated-iam-provisioning-with-read-write-permissions-update-custom-deny-list-managed-automation-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-managed-automated-iam-provisioning-with-read-write-permissions-update-custom-deny-list-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "CustomerCustomDenyActionsList1": "ec2:Create*,ec2:Delete*,sso-admin:*,resource-explorer-2:*",
   "Priority": "High"

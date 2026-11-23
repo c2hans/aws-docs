@@ -47,7 +47,7 @@ The agent retrieves the skill from the AWS MCP server and applies it to the curr
 
 If your agent doesn't use the AWS MCP server, you can install the skill locally from the [AWS Agent Toolkit for AWS](https://github.com/aws/agent-toolkit-for-aws) repository on GitHub. Run the following command from your project directory:
 
-```
+```bash
 npx skills add aws/agent-toolkit-for-aws/skills/specialized-skills/migration-and-modernization-skills/dms-schema-conversion
 ```
 

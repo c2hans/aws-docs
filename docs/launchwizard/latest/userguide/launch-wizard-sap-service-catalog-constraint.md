@@ -18,7 +18,7 @@ To create a launch constraint, complete the steps in the following procedure. Pe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -168,7 +168,7 @@ To create a launch constraint, complete the steps in the following procedure. Pe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -426,7 +426,7 @@ To create a launch constraint, complete the steps in the following procedure. Pe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

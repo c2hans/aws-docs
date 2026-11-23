@@ -98,7 +98,7 @@ Including this header in every request enables AWS to analyze request patterns, 
 
 To include the `X-Amzn-User-Agent` header in SDK calls, you can modify the client request behavior before making the API call. Below is a selling API example using the AWS SDK for Python (Boto3):
 
-```
+```python
 # Requires the AWS SDK for Python (Boto3)
 import boto3
 

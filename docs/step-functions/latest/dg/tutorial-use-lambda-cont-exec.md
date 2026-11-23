@@ -62,7 +62,7 @@ Your state machine then implements a `Choice` state that executes some applicati
 
 1. Copy the following code for the Lambda function into the **Code source** section of the **{{Iterator}}** page in the Lambda console.
 
-   ```
+   ```javascript
    exports.handler = function iterator (event, context, callback) {
      let index = event.iterator.index;
      let step = event.iterator.step;
@@ -95,7 +95,7 @@ To see your `Iterate` function working, run it with numeric values. You can prov
 
 1. Replace the example data with the following.
 
-   ```
+   ```json
    {
      "Comment": "Test my Iterator function",
      "iterator": {
@@ -114,7 +114,7 @@ To see your `Iterate` function working, run it with numeric values. You can prov
 
    The test results appear on the page. Choose **Details** and review the result.
 
-   ```
+   ```json
    {
      "index": 6,
      "step": 1,
@@ -150,7 +150,7 @@ If you set `index` to `9` for this test, the `index` increments to `10`, and `co
 
    The following code decrements a count of the number of executions, and starts a new execution of your state machine, including the decremented value.
 
-   ```
+   ```javascript
    var aws = require('aws-sdk');
    var sfn = new aws.StepFunctions();
 
@@ -183,7 +183,7 @@ Now that you've created your two Lambda functions, create a state machine. In th
 **Example ShouldRestart Choice state**
 The following excerpt shows the `ShouldRestart``Choice` state. This state determines whether or not you should restart the execution.
 
-```
+```json
 "ShouldRestart": {
 "Type": "Choice",
 "Choices": [
@@ -200,7 +200,7 @@ The `$.restart.executionCount` value is included in the input of the initial exe
 **Example Restart Task state**
 The following excerpt shows the `Restart``Task` state. This state uses the Lambda function you created earlier to restart the execution, and to decrement the count to track the remaining number of executions to start.
 
-```
+```json
 "Restart": {
   "Type": "Task",
   "Resource": "{{arn:aws:lambda:{{region}}:123456789012:function:Restart}}",
@@ -222,7 +222,7 @@ Make sure that your state machine is under the same AWS account and Region as th
 
 1. Remove the existing boilerplate code and paste the following code. Remember to replace the ARNs in this code with the ARNs of the Lambda functions you created.
 
-   ```
+   ```json
    {
        "Comment": "Continue-as-new State Machine Example",
        "StartAt": "ConfigureCount",
@@ -315,7 +315,7 @@ You can update the `Resource` line in the previous example to reference the ARN 
 
 ****
 
-```
+```json
 {
  "Version":"2012-10-17",
  "Statement": [

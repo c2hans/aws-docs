@@ -49,7 +49,7 @@ The following example response of the [ListExecutions](https://docs.aws.amazon.c
 
 The {{italicized}} text in the following code snippet represents resource-specific information.
 
-```
+```json
 {
     "executions": [
         {

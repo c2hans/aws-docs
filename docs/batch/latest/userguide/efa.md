@@ -21,7 +21,7 @@ To see a list of instance types that support EFAs in an AWS Region, run the foll
   The location of the [LinuxParameters](https://docs.aws.amazon.com/batch/latest/APIReference/API_LinuxParameters.html) members are different for multi-node parallel jobs and single-node container jobs. The following examples show the differences, but are missing required values.
 **Example for multi-node parallel job**
 
-  ```
+  ```json
   {
     "jobDefinitionName": "EFA-MNP-JobDef",
     "type": "multinode",
@@ -51,7 +51,7 @@ To see a list of instance types that support EFAs in an AWS Region, run the foll
   ```
 **Example for single-node container job**
 
-  ```
+  ```json
   {
     "jobDefinitionName": "EFA-Container-JobDef",
     "type": "container",

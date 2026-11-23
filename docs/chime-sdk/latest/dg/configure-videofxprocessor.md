@@ -29,7 +29,7 @@ You can change a `VideoFxProcessor` configuration at runtime by using the `video
 **Note**
 You can only specify one type of background replacement at a time. Specify a value for `backgroundImageURL` or `defaultColor`, but not both.
 
-```
+```javascript
 videoFxConfig.backgroundBlur.isEnabled = false;
 videoFxConfig.backgroundReplacement.isEnabled = true;
 try {
@@ -43,7 +43,7 @@ If `setEffectConfig` throws an exception, the previous configuration remains in 
 
 The following example shows how to change a background image while the video runs.
 
-```
+```javascript
 videoFxConfig.backgroundReplacement.backgroundImageURL = "https://{{my-domain.com}}/{{my-other-image.jpg}}";
 try {
   await videoFxProcessor.setEffectConfig(videoFxConfig);

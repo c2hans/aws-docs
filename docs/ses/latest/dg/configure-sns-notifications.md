@@ -32,7 +32,7 @@ When you create your topic using Amazon SNS, for **Type**, only choose **Standar
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "notification-policy",
@@ -74,7 +74,7 @@ When you create your topic using Amazon SNS, for **Type**, only choose **Standar
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

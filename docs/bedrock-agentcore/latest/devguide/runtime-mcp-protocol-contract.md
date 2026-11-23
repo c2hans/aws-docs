@@ -156,7 +156,7 @@ For version `2026-07-28` and later, `ResourceNotFoundException` returns JSON-RPC
 
 Example error response:
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "id": "req-001",

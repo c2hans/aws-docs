@@ -47,7 +47,7 @@ Creates and defines the criteria and other settings for a custom data identifier
 #### POST schema
 <a name="custom-data-identifiers-request-body-post-example"></a>
 
-```
+```json
 {
   "clientToken": "string",
   "description": "string",
@@ -77,7 +77,7 @@ Creates and defines the criteria and other settings for a custom data identifier
 #### CreateCustomDataIdentifierResponse schema
 <a name="custom-data-identifiers-response-body-createcustomdataidentifierresponse-example"></a>
 
-```
+```json
 {
   "customDataIdentifierId": "string"
 }
@@ -86,7 +86,7 @@ Creates and defines the criteria and other settings for a custom data identifier
 #### ValidationException schema
 <a name="custom-data-identifiers-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -95,7 +95,7 @@ Creates and defines the criteria and other settings for a custom data identifier
 #### ServiceQuotaExceededException schema
 <a name="custom-data-identifiers-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -104,7 +104,7 @@ Creates and defines the criteria and other settings for a custom data identifier
 #### AccessDeniedException schema
 <a name="custom-data-identifiers-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -113,7 +113,7 @@ Creates and defines the criteria and other settings for a custom data identifier
 #### ResourceNotFoundException schema
 <a name="custom-data-identifiers-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -122,7 +122,7 @@ Creates and defines the criteria and other settings for a custom data identifier
 #### ConflictException schema
 <a name="custom-data-identifiers-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -131,7 +131,7 @@ Creates and defines the criteria and other settings for a custom data identifier
 #### ThrottlingException schema
 <a name="custom-data-identifiers-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -140,7 +140,7 @@ Creates and defines the criteria and other settings for a custom data identifier
 #### InternalServerException schema
 <a name="custom-data-identifiers-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

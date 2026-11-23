@@ -87,7 +87,7 @@ Configure how the CDK CLI displays deployment progress.
 +  `events` – Provide a complete history, including all CloudFormation events.
 You can also configure this option in the project’s `cdk.json` file or at `~/.cdk.json` on your local development machine:
 
-```
+```json
 {
    "progress": "events"
 }
@@ -123,7 +123,7 @@ DevelopmentStack: deploying...
 ### Configure a cdk.json file for what to include and exclude from being watched for changes
 <a name="ref-cli-cmd-watch-examples-2"></a>
 
-```
+```json
 {
    "app": "mvn -e -q compile exec:java",
    "watch": {
@@ -136,7 +136,7 @@ DevelopmentStack: deploying...
 ### Build a CDK project using Java before deployment by configuring the cdk.json file
 <a name="ref-cli-cmd-watch-examples-3"></a>
 
-```
+```json
 {
   "app": "mvn -e -q exec:java",
   "build": "mvn package",

@@ -86,7 +86,7 @@ Following, you can find a description of the subset of AWS CLI commands and opti
 
     JSON syntax:
 
-    ```
+    ```json
     {
         "ImageId":"string",
         "InstanceType":"sbe-c.large",
@@ -112,7 +112,7 @@ Following, you can find a description of the subset of AWS CLI commands and opti
 
     JSON syntax:
 
-    ```
+    ```json
     {
         "ImageId":"string",
         "InstanceType":"sbe-c.large",
@@ -191,7 +191,7 @@ Following, you can find a description of the subset of AWS CLI commands and opti
     + `system-status.status` – The system status of the instance (`ok` \| `impaired` \| `initializing` \| `insufficient-data` \| `not-applicable` ).
   + JSON Syntax:
 
-    ```
+    ```JSON
     [
       {
         "Name": "string",
@@ -295,7 +295,7 @@ It can take up to an hour and a half to launch a compute instance on a Snowball 
 
     The JSON syntax for this command is as follows.
 
-    ```
+    ```json
     {
        "DeviceName": "/dev/sdh",
        "Ebs":
@@ -312,7 +312,7 @@ It can take up to an hour and a half to launch a compute instance on a Snowball 
   + --instance-type – The `sbe` instance type.
   + --launch-template `structure` – The launch template to use to launch the instances. Any parameters that you specify in the `run-instances` command override the same parameters in the launch template. You can specify either the name or ID of a launch template, but not both.
 
-    ```
+    ```json
     {
        "LaunchTemplateId": "string",
        "LaunchTemplateName": "string",

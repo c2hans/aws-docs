@@ -35,7 +35,7 @@ To set up and run this example, you must first complete these tasks:
 
 Configure the SDK for JavaScript by creating a global configuration object then setting the Region for your code. In this example, the Region is set to `us-west-2`.
 
-```
+```javascript
 // Load the SDK for JavaScript
 var AWS = require('aws-sdk');
 // Set the Region
@@ -51,7 +51,7 @@ Create an `AWS.S3` service object. The only parameter you need to pass is the na
 
 If the selected bucket has no policy, that information is returned to the callback function in the `error` parameter.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -88,7 +88,7 @@ Create an `AWS.S3` service object. Bucket policies are specified in JSON. First,
 
 Format the `Resource` string required by the policy, incorporating the name of the selected bucket. Insert that string into the JSON object. Prepare the parameters for the `putBucketPolicy` method, including the name of the bucket and the JSON policy converted to a string value.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -146,7 +146,7 @@ Create a Node.js module with the file name `s3_deletebucketpolicy.js`. The modul
 
  Create an `AWS.S3` service object. The only parameter you need to pass when calling the `deleteBucketPolicy` method is the name of the selected bucket.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region

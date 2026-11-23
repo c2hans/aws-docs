@@ -17,7 +17,7 @@ The `$validate` operation can be invoked on FHIR resources using POST methods:
 
 **Supported Operations**
 
-```
+```HTTP
 POST [base]/[type]/[id]/$validate
 POST [base]/[type]/$validate
 ```
@@ -47,7 +47,7 @@ HealthLake supports the following FHIR `$validate` parameters:
 
 **POST Request for Resource with ID and Parameters payload**
 
-```
+```json
 POST [base]/Patient/example-patient/$validate
 Content-Type: application/fhir+json
 
@@ -83,7 +83,7 @@ Content-Type: application/fhir+json
 
 **POST Request for Resource Type and Parameters payload**
 
-```
+```json
 POST [base]/Patient/$validate
 Content-Type: application/fhir+json
 
@@ -118,7 +118,7 @@ Content-Type: application/fhir+json
 
 **POST Request for Resource with ID and direct resource payload**
 
-```
+```json
 POST [base]/Patient/example-patient/$validate?profile={{http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient&mode=create}}
 Content-Type: application/fhir+json
 
@@ -138,7 +138,7 @@ Content-Type: application/fhir+json
 
 **POST Request for Resource Type and direct resource payload**
 
-```
+```json
 POST [base]/Patient/$validate?profile={{http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient&mode=create}}
 Content-Type: application/fhir+json
 
@@ -159,7 +159,7 @@ Content-Type: application/fhir+json
 **Sample Response**
 The operation returns an OperationOutcome resource with validation results:
 
-```
+```json
 {
   "resourceType": "OperationOutcome",
   "issue": [
@@ -174,7 +174,7 @@ The operation returns an OperationOutcome resource with validation results:
 
 **Sample Response with Validation Errors**
 
-```
+```json
 {
   "resourceType": "OperationOutcome",
   "issue": [

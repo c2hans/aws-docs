@@ -9,7 +9,7 @@ Sets the contact's TargetQueue. This is the queue is used by all other instructi
 ## Parameter object
 <a name="updatecontacttargetqueue-parameter"></a>
 
-```
+```json
 {
   "QueueId": [Optional] A queue ID or queue ARN. If AgentId is specified, this may not be specified. This must be either defined fully statically or as a single valid JSONPath identifier.
   "AgentId": [Optional] An agent ID or agent ARN, representing an agent queue. If QueueId is specified, this may not be specified. This must be either defined fully statically or as a single valid JSONPath identifier.

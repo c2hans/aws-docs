@@ -56,7 +56,7 @@ The response contains the Amazon Resource Name (ARN) of the new customer account
 
 The following example request creates a customer account in the `Sandbox` catalog.
 
-```
+```json
 {
    "Catalog": "Sandbox",
    "Account": {
@@ -111,7 +111,7 @@ The response is paginated. Use the `NextToken` value from each response to retri
 
 The following example returns enriched accounts with a high solution score, highest engagement score first.
 
-```
+```json
 {
    "Catalog": "Sandbox",
    "Filter": {
@@ -240,7 +240,7 @@ Both calls are idempotent for the same `ClientToken`. If `CreateEngagementInvita
 
 The following example shows a `CreateEngagementInvitation` request.
 
-```
+```json
 {
    "Catalog": "AWS",
    "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",

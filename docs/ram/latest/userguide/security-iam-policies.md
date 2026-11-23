@@ -35,7 +35,7 @@ The following sections provide the AWS RAM specific details for building an IAM 
 
 An IAM permission policy is a JSON document that includes the following statements: Effect, Action, Resource, and Condition. An IAM policy typically takes the following form.
 
-```
+```json
 {
     "Statement":[{
         "Effect":"<effect>",

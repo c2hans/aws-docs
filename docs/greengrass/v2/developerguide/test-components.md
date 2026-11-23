@@ -15,14 +15,14 @@ If you develop the component on a different computer, such as a local developmen
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
    ```
 
@@ -33,14 +33,14 @@ If you develop the component on a different computer, such as a local developmen
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/{{com.example.HelloWorld}}.log
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\logs\{{com.example.HelloWorld}}.log -Tail 10 -Wait
    ```
 
@@ -51,7 +51,7 @@ If you develop the component on a different computer, such as a local developmen
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo {{/greengrass/v2}}/bin/greengrass-cli deployment create \
      --recipeDir {{~/greengrassv2}}/recipes \
      --artifactDir {{~/greengrassv2}}/artifacts \
@@ -61,7 +61,7 @@ If you develop the component on a different computer, such as a local developmen
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    {{C:\greengrass\v2}}\bin\greengrass-cli deployment create ^
      --recipeDir {{%USERPROFILE%\greengrassv2}}\recipes ^
      --artifactDir {{%USERPROFILE%\greengrassv2}}\artifacts ^
@@ -71,7 +71,7 @@ If you develop the component on a different computer, such as a local developmen
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    {{C:\greengrass\v2}}\bin\greengrass-cli deployment create `
      --recipeDir {{~/greengrassv2}}/recipes `
      --artifactDir {{~/greengrassv2}}/artifacts `
@@ -87,7 +87,7 @@ You can also use the `greengrass-cli deployment create` command to set the value
 ------
 #### [ Unix or Linux ]
 
-   ```
+   ```bash
    sudo {{/greengrass/v2}}/bin/greengrass-cli deployment status \
      -i {{deployment-id}}
    ```
@@ -95,7 +95,7 @@ You can also use the `greengrass-cli deployment create` command to set the value
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    {{C:\greengrass\v2}}\bin\greengrass-cli deployment status ^
      -i {{deployment-id}}
    ```
@@ -103,7 +103,7 @@ You can also use the `greengrass-cli deployment create` command to set the value
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    {{C:\greengrass\v2}}\bin\greengrass-cli deployment status `
      -i {{deployment-id}}
    ```

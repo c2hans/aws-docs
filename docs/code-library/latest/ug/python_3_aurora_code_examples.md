@@ -33,7 +33,7 @@ The following code example shows how to get started using Aurora.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 import boto3
 
 # Create an RDS client
@@ -82,7 +82,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class AuroraClusterScenario:
     """Runs a scenario that shows how to get started using Aurora DB clusters."""
 
@@ -374,7 +374,7 @@ if __name__ == "__main__":
 ```
 Define functions that are called by the scenario to manage Aurora actions.
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -833,7 +833,7 @@ The following code example shows how to use `CreateDBCluster`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -908,7 +908,7 @@ The following code example shows how to use `CreateDBClusterParameterGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -966,7 +966,7 @@ The following code example shows how to use `CreateDBClusterSnapshot`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -1018,7 +1018,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -1080,7 +1080,7 @@ The following code example shows how to use `DeleteDBCluster`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -1123,7 +1123,7 @@ The following code example shows how to use `DeleteDBClusterParameterGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -1173,7 +1173,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -1226,7 +1226,7 @@ The following code example shows how to use `DescribeDBClusterParameterGroups`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -1280,7 +1280,7 @@ The following code example shows how to use `DescribeDBClusterParameters`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -1343,7 +1343,7 @@ The following code example shows how to use `DescribeDBClusterSnapshots`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -1394,7 +1394,7 @@ The following code example shows how to use `DescribeDBClusters`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -1448,7 +1448,7 @@ The following code example shows how to use `DescribeDBEngineVersions`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -1504,7 +1504,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -1558,7 +1558,7 @@ The following code example shows how to use `DescribeOrderableDBInstanceOptions`
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -1614,7 +1614,7 @@ The following code example shows how to use `ModifyDBClusterParameterGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 

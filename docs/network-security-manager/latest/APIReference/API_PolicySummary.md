@@ -26,7 +26,7 @@ Required: Yes
  ** firewallType **   <a name="networksecuritymanager-Type-PolicySummary-firewallType"></a>
 The firewall type associated with the resource.
 Type: String
-Valid Values: `WAF | SHIELD_ADVANCED`
+Valid Values: `WAF | SHIELD_ADVANCED | IGW_FIREWALL`
 Required: No
 
  ** hasPublishedVersion **   <a name="networksecuritymanager-Type-PolicySummary-hasPublishedVersion"></a>

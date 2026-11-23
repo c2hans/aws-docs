@@ -36,7 +36,7 @@ The example commands assume that your Amazon EC2 Spot Fleet role is named {{Amaz
 
 1. To attach the **AmazonEC2SpotFleetTaggingRole** managed IAM policy to your {{AmazonEC2SpotFleetRole}} role, run the following command using the AWS CLI.
 
-   ```
+   ```sh
    $ aws iam attach-role-policy \
        --policy-arn arn:aws:iam::aws:policy/service-role/AmazonEC2SpotFleetTaggingRole \
        --role-name {{AmazonEC2SpotFleetRole}}
@@ -44,7 +44,7 @@ The example commands assume that your Amazon EC2 Spot Fleet role is named {{Amaz
 
 1. To detach the **AmazonEC2SpotFleetRole** managed IAM policy from your {{AmazonEC2SpotFleetRole}} role, run the following command using the AWS CLI.
 
-   ```
+   ```sh
    $ aws iam detach-role-policy \
        --policy-arn arn:aws:iam::aws:policy/service-role/AmazonEC2SpotFleetRole \
        --role-name {{AmazonEC2SpotFleetRole}}

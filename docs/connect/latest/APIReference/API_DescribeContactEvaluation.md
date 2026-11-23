@@ -63,6 +63,9 @@ Content-type: application/json
       "EvaluationArn": "string",
       "EvaluationId": "string",
       "EvaluationType": "string",
+      "ItemEnablementStatus": {
+         "string" : "string"
+      },
       "LastModifiedTime": number,
       "Metadata": {
          "Acknowledgement": {
@@ -123,6 +126,31 @@ Content-type: application/json
             "PerformanceCategory": "string"
          }
       },
+      "SourceResolutionStatus": "string",
+      "SourceValues": [
+         {
+            "Source": {
+               "AiMetricsField": "string",
+               "ContactAttributeKey": "string",
+               "ContactField": "string",
+               "EvaluationMetadataField": "string",
+               "RefId": "string",
+               "SegmentAttributeKey": "string",
+               "Type": "string"
+            },
+            "Status": "string",
+            "Values": [
+               {
+                  "BooleanValue": boolean,
+                  "DateTimeValue": number,
+                  "NumericValue": number,
+                  "RefId": "string",
+                  "StringValue": "string",
+                  "Type": "string"
+               }
+            ]
+         }
+      ],
       "Status": "string",
       "Tags": {
          "string" : "string"

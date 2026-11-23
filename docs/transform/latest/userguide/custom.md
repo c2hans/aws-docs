@@ -126,7 +126,7 @@ To get useful findings, write the transformation definition so that it describes
 
 The following example finds Java projects that still target a Java version earlier than 17.
 
-```
+```markdown
 ---
 name: java-version-detector
 description: Report where a repository still targets a Java version earlier than 17, in build files, Dockerfiles, toolchain files, and CI workflows. Analysis only - no code is modified.

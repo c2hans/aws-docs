@@ -41,7 +41,7 @@ A `CHAR` string, a `VARCHAR` string, a binary expression, or an expression that 
 
 To concatenate the FIRSTNAME and LASTNAME fields from the USERS table in the sample database, use the following example.
 
-```
+```sql
 SELECT (firstname || ' ' || lastname) as fullname
 FROM users
 ORDER BY 1
@@ -65,7 +65,7 @@ LIMIT 10;
 
  To concatenate columns that might contain nulls, use the [NVL and COALESCE functions](r_NVL_function.md) expression. The following example uses NVL to return a `0` whenever `NULL` is encountered.
 
-```
+```sql
 SELECT (venuename || ' seats ' || NVL(venueseats, 0)) as seating
 FROM venue
 WHERE venuestate = 'NV' or venuestate = 'NC'

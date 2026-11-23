@@ -28,7 +28,7 @@ The following code example shows how to use `Get-CCBranch`.
 **Tools for PowerShell V4**
 **Example 1: This example gets information about the specified branch for the specified repository.**
 
-```
+```powershell
 Get-CCBranch -RepositoryName MyDemoRepo -BranchName MyNewBranch
 ```
 **Output:**
@@ -48,7 +48,7 @@ The following code example shows how to use `Get-CCBranchList`.
 **Tools for PowerShell V4**
 **Example 1: This example gets a list of branch names for the specified repository.**
 
-```
+```powershell
 Get-CCBranchList -RepositoryName MyDemoRepo
 ```
 **Output:**
@@ -67,7 +67,7 @@ The following code example shows how to use `Get-CCRepository`.
 **Tools for PowerShell V4**
 **Example 1: This example gets information for the specified repository.**
 
-```
+```powershell
 Get-CCRepository -RepositoryName MyDemoRepo
 ```
 **Output:**
@@ -94,7 +94,7 @@ The following code example shows how to use `Get-CCRepositoryBatch`.
 **Tools for PowerShell V4**
 **Example 1: This example confirms which of the specified repositories are found and not found.**
 
-```
+```powershell
 Get-CCRepositoryBatch -RepositoryName MyDemoRepo, MyNewRepo, AMissingRepo
 ```
 **Output:**
@@ -114,7 +114,7 @@ The following code example shows how to use `Get-CCRepositoryList`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all repositories in ascending order by repository name.**
 
-```
+```powershell
 Get-CCRepositoryList -Order Ascending -SortBy RepositoryName
 ```
 **Output:**
@@ -135,7 +135,7 @@ The following code example shows how to use `New-CCBranch`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new branch with the specified name for the specified repository and the specified commit ID.**
 
-```
+```powershell
 New-CCBranch -RepositoryName MyDemoRepo -BranchName MyNewBranch -CommitId 7763222d...561fc9c9
 ```
 +  For API details, see [CreateBranch](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -148,7 +148,7 @@ The following code example shows how to use `New-CCRepository`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new repository with the specified name and the specified description.**
 
-```
+```powershell
 New-CCRepository -RepositoryName MyDemoRepo -RepositoryDescription "This is a repository for demonstration purposes."
 ```
 **Output:**
@@ -175,7 +175,7 @@ The following code example shows how to use `Remove-CCRepository`.
 **Tools for PowerShell V4**
 **Example 1: This example forcibly deletes the specified repository. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the repository without a prompt.**
 
-```
+```powershell
 Remove-CCRepository -RepositoryName MyDemoRepo
 ```
 **Output:**
@@ -193,7 +193,7 @@ The following code example shows how to use `Update-CCDefaultBranch`.
 **Tools for PowerShell V4**
 **Example 1: This example changes the default branch for the specified repository to the specified branch.**
 
-```
+```powershell
 Update-CCDefaultBranch -RepositoryName MyDemoRepo -DefaultBranchName MyNewBranch
 ```
 +  For API details, see [UpdateDefaultBranch](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -206,7 +206,7 @@ The following code example shows how to use `Update-CCRepositoryDescription`.
 **Tools for PowerShell V4**
 **Example 1: This example changes the description for the specified repository.**
 
-```
+```powershell
 Update-CCRepositoryDescription -RepositoryName MyDemoRepo -RepositoryDescription "This is an updated description."
 ```
 +  For API details, see [UpdateRepositoryDescription](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -219,7 +219,7 @@ The following code example shows how to use `Update-CCRepositoryName`.
 **Tools for PowerShell V4**
 **Example 1: This example changes the name of the specified repository.**
 
-```
+```powershell
 Update-CCRepositoryName -NewName MyDemoRepo2 -OldName MyDemoRepo
 ```
 +  For API details, see [UpdateRepositoryName](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.

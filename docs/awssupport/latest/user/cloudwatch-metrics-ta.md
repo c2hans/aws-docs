@@ -161,7 +161,7 @@ aws cloudwatch list-metrics --namespace AWS/TrustedAdvisor
 ```
 Your output might look like the following.
 
-```
+```json
 {
     "Metrics": [
         {
@@ -241,7 +241,7 @@ aws cloudwatch list-metrics --namespace AWS/TrustedAdvisor --dimensions Name=Reg
 ```
 Your output might look like the following.
 
-```
+```json
 {
     "Metrics": [
         {
@@ -311,7 +311,7 @@ aws cloudwatch list-metrics --namespace AWS/TrustedAdvisor --metric-name {{RedRe
 ```
 Your output might look like the following.
 
-```
+```json
 {
     "Metrics": [
         {

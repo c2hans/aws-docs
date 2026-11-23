@@ -13,6 +13,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 
 ![Application Load Balancers provide a flexible feature set for HTTP and HTTPS applications](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/alb-features.png)
 
+*Figure 9 – Application Load Balancers provide a flexible feature set for HTTP and HTTPS applications*
+
  For more information about protecting web applications with Application Load Balancer, see [Getting Started with Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancer-getting-started.html).
 
 ## Best practices for TCP and UDP applications
@@ -24,6 +26,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
  For NLB with TCP listeners, it's recommended to deploy these behind an AWS Global Accelerator to help protect again SYN floods. Global Accelerator has an inbuilt SYN proxy and connections made through the NLB are automatically tracked.
 
 ![Network load balancers provide high performance and a suite of support features](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/nlb-features.png)
+
+*Figure 10 – Network load balancers provide high performance and a suite of support features*
 
  You can use Shield Advanced to configure DDoS protection for Elastic IP addresses. When an Elastic IP address is assigned per Availability Zone to the NLB, Shield Advanced will apply the relevant DDoS protections for the NLB traffic.
 

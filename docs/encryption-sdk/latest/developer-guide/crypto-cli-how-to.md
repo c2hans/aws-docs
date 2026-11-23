@@ -62,7 +62,7 @@ The `--master-keys` parameter is deprecated in version 1.8.*x* of the AWS Encryp
 
   You can use `--decrypt` or `--decrypt-unsigned` for decryption but not both.
 
-  ```
+  ```bash
   aws-encryption-cli --decrypt --input myEncryptedMessage \
                      --wrapping-keys key={{1234abcd-12ab-34cd-56ef-1234567890ab}} \
                      --output myPlaintextData \
@@ -96,22 +96,22 @@ If an attribute name or value includes spaces or special characters, enclose bot
 **Key: Specify a wrapping key**
 Use the **key** attribute to identify a wrapping key. When encrypting, the value can be any key identifier that the master key provider recognizes.
 
-```
+```bash
 --wrapping-keys key={{1234abcd-12ab-34cd-56ef-1234567890ab}}
 ```
 In an encrypt command, you must include at least one **key** attribute and value. To encrypt your data key under multiple wrapping keys, use [multiple **key** attributes](#cli-many-cmks).
 
-```
+```bash
 aws-encryption-cli --encrypt --wrapping-keys key={{1234abcd-12ab-34cd-56ef-1234567890ab}} key={{1a2b3c4d-5e6f-1a2b-3c4d-5e6f1a2b3c4d}}
 ```
 In encrypt commands that use AWS KMS keys, the value of **key** can be the key ID, its key ARN, an alias name, or alias ARN. For example, this encrypt command uses an alias ARN in the value of the **key** attribute. For details about the key identifiers for an AWS KMS key, see [Key Identifiers](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id) in the *AWS Key Management Service Developer Guide*.
 
-```
+```bash
 aws-encryption-cli --encrypt --wrapping-keys key={{arn:aws:kms:us-west-2:111122223333:alias/ExampleAlias}}
 ```
 In decrypt commands that use a custom master key provider, **key** and **provider** attributes are required.
 
-```
+```bash
 \\ Custom master key provider
 aws-encryption-cli --decrypt --wrapping-keys provider='myProvider' key='100101'
 ```
@@ -119,7 +119,7 @@ In decrypt commands that use AWS KMS, you can use the **key** attribute to speci
 Specifying the wrapping key is an [AWS Encryption SDK best practice](best-practices.md). It assures that you use the AWS KMS key you intend to use.
 In a decrypt command, the value of the **key** attribute must be a [key ARN](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN).
 
-```
+```bash
 \\ AWS KMS key
 aws-encryption-cli --decrypt --wrapping-keys key={{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}
 ```
@@ -129,7 +129,7 @@ If you don't need to limit the AWS KMS keys to use when decrypting, you can use 
 The **discovery** attribute with a value of `true` is an alternative to using the **key** attribute to specify AWS KMS keys. When decrypting a message encrypted with AWS KMS keys, each `--wrapping-keys` parameter must have a **key** attribute or a **discovery** attribute with a value of `true`, but not both.
 When discovery is true, it's a best practice to use the **discovery-partition** and **discovery-account** attributes to limit the AWS KMS keys used to those in the AWS accounts you specify. In the following example, the **discovery** attributes allow the AWS Encryption CLI to use any AWS KMS key in the specified AWS accounts.
 
-```
+```bash
 aws-encryption-cli --decrypt --wrapping-keys \
     discovery=true \
     discovery-partition={{aws}} \
@@ -140,7 +140,7 @@ aws-encryption-cli --decrypt --wrapping-keys \
 **Provider: Specify the master key provider**
 The **provider** attribute identifies the [master key provider](concepts.md#master-key-provider). The default value is `aws-kms`, which represents AWS KMS. If you are using a different master key provider, the **provider** attribute is required.
 
-```
+```bash
 --wrapping-keys key=12345 provider=my_custom_provider
 ```
 For more information about using custom (non-AWS KMS) master key providers, see the **Advanced Configuration** topic in the [README](https://github.com/aws/aws-encryption-sdk-cli/blob/master/README.rst) file for the [AWS Encryption CLI](https://github.com/aws/aws-encryption-sdk-cli/) repository.
@@ -148,7 +148,7 @@ For more information about using custom (non-AWS KMS) master key providers, see 
 **Region: Specify an AWS Region**
 Use the **region** attribute to specify the AWS Region of an AWS KMS key. This attribute is valid only in encrypt commands and only when the master key provider is AWS KMS.
 
-```
+```bash
 --encrypt --wrapping-keys key=alias/primary-key region=us-east-2
 ```
 AWS Encryption CLI commands use the AWS Region that is specified in the **key** attribute value if it includes a region, such as an ARN. if the **key** value specifies a AWS Region, the **region** attribute is ignored.
@@ -157,7 +157,7 @@ The **region** attribute takes precedence over other region specifications. If y
 **Profile: Specify a named profile**
 Use the **profile** attribute to specify an AWS CLI [named profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-using-profiles). Named profiles can include credentials and an AWS Region. This attribute is valid only when the master key provider is AWS KMS.
 
-```
+```bash
 --wrapping-keys key=alias/primary-key profile=admin-1
 ```
 You can use the **profile** attribute to specify alternate credentials in encrypt and decrypt commands. In an encrypt command, the AWS Encryption CLI uses the AWS Region in the named profile only when the **key** value does not include a region and there is no **region** attribute. In a decrypt command, the AWS Region in the name profile is ignored.
@@ -172,7 +172,7 @@ If you specify more than one wrapping key, the first wrapping key generates and 
 There are two ways to specify multiple wrapping keys:
 + Include multiple **key** attributes in the `--wrapping-keys` parameter value.
 
-  ```
+  ```bash
   $key_oregon=arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab
   $key_ohio=arn:aws:kms:us-east-2:111122223333:key/0987ab65-43cd-21ef-09ab-87654321cdef
 
@@ -180,7 +180,7 @@ There are two ways to specify multiple wrapping keys:
   ```
 + Include multiple `--wrapping-keys` parameters in the same command. Use this syntax when the attribute values that you specify do not apply to all of the wrapping keys in the command.
 
-  ```
+  ```bash
   --wrapping-keys region=us-east-2 key=alias/test_key \
   --wrapping-keys region=us-west-1 key=alias/test_key
   ```
@@ -208,22 +208,22 @@ The `--input` parameter (`-i`) , which tells the AWS Encryption CLI where to fin
 You can provide input in any of the following ways:
 + Use a file.
 
-  ```
+  ```bash
   --input myData.txt
   ```
 + Use a file name pattern.
 
-  ```
+  ```bash
   --input testdir/*.xml
   ```
 + Use a directory or directory name pattern. When the input is a directory, the `--recursive` parameter (`-r`, `-R`) is required.
 
-  ```
+  ```bash
   --input testdir --recursive
   ```
 + Pipe input to the command (stdin). Use a value of `-` for the `--input` parameter. (The `--input` parameter is always required.)
 
-  ```
+  ```bash
   echo 'Hello World' | aws-encryption-cli --encrypt --input -
   ```
 
@@ -240,14 +240,14 @@ Commands that overwrite output files begin by deleting the output file. If the c
 You can the output location in several ways.
 + Specify a file name. If you specify a path to the file, all directories in the path must exist before the command runs.
 
-  ```
+  ```bash
   --output myEncryptedData.txt
   ```
 + Specify a directory. The output directory must exist before the command runs.
 
   If the input contains subdirectories, the command reproduces the subdirectories under the specified directory.
 
-  ```
+  ```bash
   --output Test
   ```
 
@@ -257,7 +257,7 @@ You can the output location in several ways.
 
 + Write to the command line (stdout). Enter a value of `-` for the `--output` parameter. You can use `--output -` to pipe output to another command or program.
 
-  ```
+  ```bash
   --output -
   ```
 
@@ -274,7 +274,7 @@ The encryption context that you specify in an encrypt command, along with any ad
 
 The following example shows an encryption context with three `name=value` pairs.
 
-```
+```bash
 --encryption-context purpose=test dept=IT class=confidential
 ```
 
@@ -286,7 +286,7 @@ You are not required to provide an encryption context in a decrypt command, even
 
 For example, the following command decrypts the encrypted message only if its encryption context includes `dept=IT`.
 
-```
+```bash
 aws-encryption-cli --decrypt --encryption-context dept=IT ...
 ```
 
@@ -295,30 +295,30 @@ An encryption context is an important part of your security strategy. However, w
 **To specify an encryption context**
 + In an **encrypt** command, use the `--encryption-context` parameter with one or more `name=value` pairs. Use a space to separate each pair.
 
-  ```
+  ```bash
   --encryption-context name=value [name=value] ...
   ```
 + In a **decrypt** command, the `--encryption-context` parameter value can include `name=value` pairs, `name` elements (with no values), or a combination of both.
 
-  ```
+  ```bash
   --encryption-context name[=value] [name] [name=value] ...
   ```
 
 If the `name` or `value` in a `name=value` pair includes spaces or special characters, enclose the entire pair in quotation marks.
 
-```
+```bash
 --encryption-context "department=software engineering" "AWS Region=us-west-2"
 ```
 
 For example, this encrypt command includes an encryption context with two pairs, `purpose=test` and `dept=23`.
 
-```
+```bash
 aws-encryption-cli --encrypt --encryption-context purpose=test dept=23 ...
 ```
 
 These decrypt command would succeed. The encryption context in each commands is a subset of the original encryption context.
 
-```
+```bash
 \\ Any one or both of the encryption context pairs
 aws-encryption-cli --decrypt --encryption-context dept=23 ...
 
@@ -331,7 +331,7 @@ aws-encryption-cli --decrypt --encryption-context dept purpose=test ...
 
 However, these decrypt commands would fail. The encryption context in the encrypted message does not contain the specified elements.
 
-```
+```bash
 aws-encryption-cli --decrypt --encryption-context dept=Finance ...
 aws-encryption-cli --decrypt --encryption-context scope ...
 ```
@@ -343,7 +343,7 @@ To set the [commitment policy](concepts.md#commitment-policy) for the command, u
 
 For example, the following parameter value sets the commitment policy to `require-encrypt-allow-decrypt`, which always encrypts with key commitment, but will decrypt a ciphertext that was encrypted with or without key commitment.
 
-```
+```bash
 --commitment-policy require-encrypt-allow-decrypt
 ```
 
@@ -356,7 +356,7 @@ A *configuration file* is a text file that contains parameters and values for an
 
 The following example configuration file, `key.conf`, specifies two AWS KMS keys in different Regions.
 
-```
+```bash
 --wrapping-keys key=arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab
 --wrapping-keys key=arn:aws:kms:us-east-2:111122223333:key/0987ab65-43cd-21ef-09ab-87654321cdef
 ```
@@ -368,14 +368,14 @@ This example command uses the `key.conf` file in an encrypt command.
 ------
 #### [ Bash ]
 
-```
+```python
 $ aws-encryption-cli -e @key.conf -i hello.txt -o testdir
 ```
 
 ------
 #### [ PowerShell ]
 
-```
+```powershell
 PS C:\> aws-encryption-cli -e `@key.conf -i .\Hello.txt -o .\TestDir
 ```
 
@@ -391,7 +391,7 @@ The rules for using configuration files are as follows:
 
 For example, this is the contents of an example `encrypt.conf` file.
 
-```
+```bash
 # Archive Files
 --encrypt
 --output /archive/logs
@@ -408,14 +408,14 @@ You can also include multiple configuration files in a command. This example com
 ------
 #### [ Bash ]
 
-```
+```python
 $  aws-encryption-cli -i /usr/logs @encrypt.conf @master-keys.conf
 ```
 
 ------
 #### [ PowerShell ]
 
-```
+```powershell
 PS C:\> aws-encryption-cli -i $home\Test\*.log `@encrypt.conf `@master-keys.conf
 ```
 

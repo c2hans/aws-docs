@@ -15,6 +15,8 @@ For [AWS Toolkit for JetBrains](https://docs.aws.amazon.com/toolkit-for-jetbrain
 
  The following video gives an overview of schemas and schema registries:
 
+[![AWS Videos](https://img.youtube.com/vi/KixE94qTFjY/0.jpg)](https://www.youtube.com/watch?v=KixE94qTFjY)
+
 ## Schema registry API property value masking
 <a name="eb-schema-mask"></a>
 

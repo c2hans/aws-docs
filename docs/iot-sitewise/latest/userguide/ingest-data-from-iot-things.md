@@ -65,7 +65,7 @@ Use the following procedure to create an AWS IoT policy using the AWS IoT Core c
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -131,7 +131,7 @@ This policy uses wildcards to stay within AWS IoT SiteWise CLI size limits. For 
 
 Use the following AWS CLI command to create an IoT policy:
 
-```
+```sh
 aws iot create-policy \
   --policy-name "SiteWiseTutorialDevicePolicy" \
   --policy-document '{
@@ -171,7 +171,7 @@ aws iot create-policy \
 
 To verify that your policy was created successfully, use the following command:
 
-```
+```sh
 aws iot get-policy --policy-name "SiteWiseTutorialDevicePolicy"
 ```
 
@@ -196,14 +196,14 @@ In this procedure, you create and configure an AWS IoT thing. You can designate 
 
 1. Open a command line and run the following command to create a directory for this tutorial.
 
-   ```
+   ```bash
    mkdir iot-sitewise-rule-tutorial
    cd iot-sitewise-rule-tutorial
    ```
 
 1. Run the following command to create a directory for your thing's certificates.
 
-   ```
+   ```bash
    mkdir device1
    ```
 
@@ -242,19 +242,19 @@ Follow these steps to create and configure an AWS IoT thing using the AWS CLI:
 
 1. Open a command line and run the following command to create a directory for this tutorial:
 
-   ```
+   ```sh
    mkdir iot-sitewise-rule-tutorial
    ```
 
 1. Navigate to the tutorial directory:
 
-   ```
+   ```sh
    cd iot-sitewise-rule-tutorial
    ```
 
 1. Run the following command to create a directory for your thing's certificates:
 
-   ```
+   ```sh
    mkdir device1
    ```
 
@@ -262,7 +262,7 @@ Follow these steps to create and configure an AWS IoT thing using the AWS CLI:
 
 1. Create an AWS IoT thing:
 
-   ```
+   ```sh
    aws iot create-thing --thing-name "SiteWiseTutorialDevice1"
    ```
 **Important**
@@ -270,7 +270,7 @@ The thing name must match the name pattern used in the policy that you created i
 
 1. Create a certificate and save the files. Note the certificate ARN from the output - you'll need it in the next steps:
 
-   ```
+   ```sh
    aws iot create-keys-and-certificate \
        --set-as-active \
        --certificate-pem-outfile "device1/device.pem.crt" \
@@ -280,7 +280,7 @@ The thing name must match the name pattern used in the policy that you created i
 
 1. Attach the policy you created in Step 1 to the certificate:
 
-   ```
+   ```sh
    aws iot attach-policy \
        --policy-name "SiteWiseTutorialDevicePolicy" \
        --target "{{certificate-arn}}"
@@ -288,7 +288,7 @@ The thing name must match the name pattern used in the policy that you created i
 
 1. Attach the certificate to the thing:
 
-   ```
+   ```sh
    aws iot attach-thing-principal \
        --thing-name "SiteWiseTutorialDevice1" \
        --principal "{{certificate-arn}}"
@@ -296,7 +296,7 @@ The thing name must match the name pattern used in the policy that you created i
 
 1. Download the Amazon root CA certificate:
 
-   ```
+   ```sh
    curl https://www.amazontrust.com/repository/AmazonRootCA1.pem > AmazonRootCA1.pem
    ```
 
@@ -503,7 +503,7 @@ In this procedure, you establish a rule in AWS IoT Core. The rule is designed to
 
 1. Enter the following SQL statement and the choose **Next**.
 
-   ```
+   ```sql
    SELECT
      *
    FROM
@@ -595,13 +595,13 @@ For this tutorial, you aren't using an actual device to report data. Instead, yo
 
 1. Open a command line and run the following command to navigate to the tutorial directory you created earlier.
 
-   ```
+   ```bash
    cd iot-sitewise-rule-tutorial
    ```
 
 1. Run the following command to install the AWS IoT Device SDK for Python.
 
-   ```
+   ```bash
    pip3 install AWSIoTPythonSDK
    ```
 
@@ -609,7 +609,7 @@ For this tutorial, you aren't using an actual device to report data. Instead, yo
 
 1. Run the following command to install psutil, a cross-platform process and system utilities library.
 
-   ```
+   ```bash
    pip3 install psutil
    ```
 
@@ -617,7 +617,7 @@ For this tutorial, you aren't using an actual device to report data. Instead, yo
 
 1. Create a file called `thing_performance.py` in the `iot-sitewise-rule-tutorial` directory and then copy the following Python code into the file.
 
-   ```
+   ```python
    import AWSIoTPythonSDK.MQTTLib as AWSIoTPyMQTT
 
    import json
@@ -802,7 +802,7 @@ For this tutorial, you aren't using an actual device to report data. Instead, yo
 
    Your command should look similar to the following example.
 
-   ```
+   ```bash
    python3 thing_performance.py \
      --thingName SiteWiseTutorialDevice1 \
      --endpoint {{identifier}}.iot.{{region}}.amazonaws.com \
@@ -834,7 +834,7 @@ For this tutorial, you aren't using an actual device to report data. Instead, yo
 
    1. Choose the **Device Shadows** tab, choose **Classic Shadow**, and verify that the **Shadow state** looks like the following example.
 
-      ```
+      ```json
       {
         "reported": {
           "cpu": 24.6,

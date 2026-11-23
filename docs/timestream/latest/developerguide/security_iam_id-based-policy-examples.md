@@ -40,7 +40,7 @@ Timestream for LiveAnalytics does not require specific permissions to access the
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -104,7 +104,7 @@ The following is a sample policy that allows all operations in Timestream for Li
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -134,7 +134,7 @@ Replace `<account_ID>` with your Amazon account ID.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -175,7 +175,7 @@ Replace `<account_ID>` with your Amazon account ID.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -217,7 +217,7 @@ The following sample policy allows the user to perform metadata queries, but doe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -253,7 +253,7 @@ Replace `<account_ID>` with your Amazon account ID.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -289,7 +289,7 @@ The following sample policy allows a user to perform CRUD operations in Timestre
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -326,7 +326,7 @@ The following sample policy allows a user to cancel queries and perform `Select`
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -354,7 +354,7 @@ The following sample policy allows a user to create, describe, delete and descri
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -384,7 +384,7 @@ The following sample policy allows a user to list all databases that that are ta
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -416,7 +416,7 @@ The following sample policy to list all tables in database `sampleDB`:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -443,7 +443,7 @@ The following sample policy allows a user to create tables, describe tables, del
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -474,7 +474,7 @@ The following sample policy allows a user to query all tables except `DevOps` in
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -510,7 +510,7 @@ The following example shows how you can create a policy that grants permissions 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -540,7 +540,7 @@ The following policy grants permissions to a user to create tables with tags if 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -571,7 +571,7 @@ The policy below allows use of the `DescribeDatabase` API on any Database that h
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -621,7 +621,7 @@ The following sample policy allows a user to list, delete, update and execute sc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -652,7 +652,7 @@ The following sample policy allows a user to create a scheduled query that is en
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -697,7 +697,7 @@ The following sample policy allows a user to describe a scheduled query that was
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -732,7 +732,7 @@ Attach the following sample policy to the IAM role specified in the `ScheduledQu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -799,7 +799,7 @@ The following is the trust relationship for the IAM role specified in the `Sched
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -828,7 +828,7 @@ Attach the following sample policy to the IAM role specified in the `ScheduledQu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -863,7 +863,7 @@ Attach the following sample policy to the IAM role specified in the `ScheduledQu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

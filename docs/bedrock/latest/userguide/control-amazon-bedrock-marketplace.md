@@ -15,7 +15,7 @@ To restrict users to accessing only specific Bedrock Marketplace models, use an 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

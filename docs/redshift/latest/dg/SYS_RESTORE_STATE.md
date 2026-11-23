@@ -29,7 +29,7 @@ SYS\_RESTORE\_STATE is visible only to superusers. For more information, see [Vi
 
 The following query returns records for running and queued queries.
 
-```
+```sql
 SELECT * FROM sys_restore_state;
 ```
 
@@ -46,7 +46,7 @@ Sample output.
 
 The following gives you the data-processing status.
 
-```
+```sql
 SELECT
     redistribution_status, ROUND(SUM(block_count) / 1024.0, 2) AS total_size_gb
 FROM sys_restore_state sys inner join stv_tbl_perm stv

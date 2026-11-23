@@ -48,7 +48,7 @@ AWS Quick Automate provides granular role based access: Viewer, Contributor, and
 
 ### Configure integrations
 <a name="automate-configure-integrations"></a>
-+ After setting up AWS service integrations, you can begin using them in Quick Automate. See [Connectors](action-integrations.md) for setup details.
++ After setting up AWS service integrations, you can begin using them in Quick Automate. See [Connectors](integrations-connectors.md) for setup details.
 + First, add the integration to an Automation Group. This allows you to control access for which automations can use this integration. To add an integration to your Automation Group:
   + Go to the **Projects** page
   + Click **Manage groups** and select the group you want to add an integration to

@@ -77,7 +77,7 @@ The following request modifies the overlays in the event with the ID 16. It modi
 
 It also adds one overlay (in layer 4); if an overlay already exists in layer 4, that overlay is replaced with the new overlay (even if that overlay is currently running). If an overlay does not exist in layer 4, the overlay is added.
 
-```
+```XML
 POST http://198.51.100.22/live_events/16/image_inserter
 ```
 

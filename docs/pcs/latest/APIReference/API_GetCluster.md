@@ -79,6 +79,17 @@ Required: Yes
                "parameterValue": "string"
             }
          ],
+         "jobSubmitPlugins": [
+            {
+               "name": "string",
+               "scriptSource": {
+                  "checksum": "string",
+                  "s3VersionId": "string",
+                  "scriptLocation": "string"
+               },
+               "type": "string"
+            }
+         ],
          "jwtAuth": {
             "jwtKey": {
                "secretArn": "string",

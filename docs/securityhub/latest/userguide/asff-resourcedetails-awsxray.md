@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsX
 
 **Example**
 
-```
+```json
 "AwsXRayEncryptionConfig":{
     "KeyId": "arn:aws:kms:us-east-2:222222222222:key/example-key",
     "Status": "UPDATING",

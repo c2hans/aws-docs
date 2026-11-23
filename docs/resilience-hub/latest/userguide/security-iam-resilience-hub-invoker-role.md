@@ -37,7 +37,7 @@ If your resources are in different accounts, you have to create a role in each o
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -108,7 +108,7 @@ You can define the trust policy for the role using a separate JSON file and then
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

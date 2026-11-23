@@ -132,7 +132,7 @@ For more information, see [Auto Scaling launch configurations](https://docs.aws.
 **Tools for PowerShell V4**
 **Example 1: This example lists the names of your launch configurations.**
 
-```
+```powershell
 Get-ASLaunchConfiguration | format-table -property LaunchConfigurationName
 ```
 **Output:**
@@ -148,7 +148,7 @@ my-lc-5
 ```
 **Example 2: This example describes the specified launch configuration.**
 
-```
+```powershell
 Get-ASLaunchConfiguration -LaunchConfigurationName my-lc-1
 ```
 **Output:**
@@ -177,12 +177,12 @@ UserData                     :
 ```
 **Example 3: This example describes the specified two launch configurations.**
 
-```
+```powershell
 Get-ASLaunchConfiguration -LaunchConfigurationName @("my-lc-1", "my-lc-2")
 ```
 **Example 4: This example describes all your launch configurations.**
 
-```
+```powershell
 Get-ASLaunchConfiguration
 ```
 +  For API details, see [DescribeLaunchConfigurations](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -190,7 +190,7 @@ Get-ASLaunchConfiguration
 **Tools for PowerShell V5**
 **Example 1: This example lists the names of your launch configurations.**
 
-```
+```powershell
 Get-ASLaunchConfiguration | format-table -property LaunchConfigurationName
 ```
 **Output:**
@@ -206,7 +206,7 @@ my-lc-5
 ```
 **Example 2: This example describes the specified launch configuration.**
 
-```
+```powershell
 Get-ASLaunchConfiguration -LaunchConfigurationName my-lc-1
 ```
 **Output:**
@@ -235,12 +235,12 @@ UserData                     :
 ```
 **Example 3: This example describes the specified two launch configurations.**
 
-```
+```powershell
 Get-ASLaunchConfiguration -LaunchConfigurationName @("my-lc-1", "my-lc-2")
 ```
 **Example 4: This example describes all your launch configurations.**
 
-```
+```powershell
 Get-ASLaunchConfiguration
 ```
 +  For API details, see [DescribeLaunchConfigurations](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -31,7 +31,7 @@ The following example uses the `sagemaker:WorkteamType` condition key with the `
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -59,7 +59,7 @@ The following policies show how to restrict access to a work team using the `sag
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -85,7 +85,7 @@ The following policies show how to restrict access to a work team using the `sag
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

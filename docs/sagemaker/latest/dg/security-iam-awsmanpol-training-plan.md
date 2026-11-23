@@ -26,7 +26,7 @@ This policy includes the following permissions.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -103,7 +103,7 @@ This is a service-linked role policy. You cannot attach this policy to your IAM 
 This policy includes the following permissions.
 + `cloudwatch` – Allows publishing metric data to CloudWatch. This permission is scoped to the `aws/sagemaker/CapacityReservations` namespace using a condition key.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

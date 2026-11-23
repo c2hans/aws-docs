@@ -31,7 +31,7 @@ The capability does not create these resources for you, and it does not install 
 
 The notifications controller ignores a ConfigMap that does not carry an opt-in label. To turn notifications on, add the following label to your `argocd-notifications-cm` ConfigMap:
 
-```
+```yaml
 labels:
   eks.amazonaws.com/managed-notifications: "enabled"
 ```
@@ -48,7 +48,7 @@ The following example sends a message to Slack when an Application syncs success
 
 Create the ConfigMap and the Secret in your primary Argo CD namespace:
 
-```
+```yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -82,7 +82,7 @@ Replace `<SLACK_BOT_TOKEN>` with your Slack bot token. The `$slack-token` refere
 
 Add an annotation to each Application that you want notifications for. The annotation names a trigger and a service, and its value is the recipient.
 
-```
+```yaml
 metadata:
   annotations:
     notifications.argoproj.io/subscribe.on-sync-succeeded.slack: my-channel
@@ -129,7 +129,7 @@ The `awssqs` and `eventbridge` services authenticate with your IAM Capability Ro
 
 Attach a policy to your IAM Capability Role with only the statements that you need. In the following example, replace the AWS Region, the account ID, and the queue, key, and event bus names with your own values.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -168,7 +168,7 @@ The queue statement needs both actions. The controller looks up the queue URL fr
 
 Add the services to `argocd-notifications-cm`:
 
-```
+```yaml
   service.awssqs: |
     queue: my-queue
     region: us-west-2
@@ -202,7 +202,7 @@ The `detail-type` field of the published event. The default is `argocd-notificat
 
 Subscribe an Application with the queue name or the event bus name as the recipient:
 
-```
+```yaml
 metadata:
   annotations:
     notifications.argoproj.io/subscribe.on-sync-succeeded.awssqs: my-queue
@@ -229,21 +229,21 @@ Instead of storing a credential in `argocd-notifications-secret`, you can store 
 
 1. Store the ARN as the value of the key:
 
-   ```
+   ```yaml
    stringData:
      slack-token: arn:aws:secretsmanager:us-west-2:111122223333:secret:my-secret
    ```
 
 1. Reference the key from your service definition with `$`, exactly as you would for a literal value:
 
-   ```
+   ```yaml
      service.slack: |
        token: $slack-token
    ```
 
 1. Grant the Capability Role read access to the secret:
 
-   ```
+   ```json
    {
      "Effect": "Allow",
      "Action": "secretsmanager:GetSecretValue",
@@ -269,7 +269,7 @@ By default, the capability reads notification configuration only from your prima
 
 1. In the `argocd-cmd-params-cm` ConfigMap in your primary Argo CD namespace, list the namespaces and turn on self-service configuration:
 
-   ```
+   ```yaml
    apiVersion: v1
    kind: ConfigMap
    metadata:
@@ -351,7 +351,7 @@ The capability records Kubernetes events that explain why a notification did not
 
 Events on `argocd-notifications-cm` in the namespace that owns the configuration:
 
-```
+```bash
 kubectl describe configmap argocd-notifications-cm -n argocd
 ```
 
@@ -372,7 +372,7 @@ Every Secrets Manager reference resolved again.
 
 Events on an Application:
 
-```
+```bash
 kubectl describe application {{my-app}} -n argocd
 ```
 

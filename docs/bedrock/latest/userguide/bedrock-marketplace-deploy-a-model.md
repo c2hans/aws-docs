@@ -47,7 +47,7 @@ Use the `CreateMarketplaceModelEndpoint` operation to create an endpoint. Some m
 
 The following example uses an example AWS Command Line Interface command to create an endpoint:
 
-```
+```bash
 aws bedrock create-marketplace-model-endpoint --model-source-identifier {{HubContentArn}} --endpoint-config "{\"sageMaker\":{\"initialInstanceCount\":{{1}},\"instanceType\":\"{{ml.g5.xlarge}}\",\"executionRole\":\"arn:aws:iam::{{111122223333}}:role/{{example-IAM-role}}\"}}" --endpoint-name "{{example-endpoint-name}}"
 ```
 
@@ -64,7 +64,7 @@ You can modify the endpoint in both Amazon Bedrock Marketplace and Amazon SageMa
 
 For the endpoint to be operational, it must be registered and in service. You can use the following AWS Command Line Interface command to check the status of the endpoint.
 
-```
+```bash
 aws bedrock get-marketplace-model-endpoint --endpoint-arn arn:aws:sagemaker:region:{{111122223333}}:endpoint/{{example-endpoint-name}}
 ```
 
@@ -77,11 +77,11 @@ status: REGISTERED
 
 If you've made a modification that has caused the endpoint to fail, you can deregister and reregister the endpoint. Use the `DeregisterEndpoint` operation to deregister the endpoint. Use the `RegisterEndpoint` operation to reregister it.
 
-```
+```bash
 aws bedrock deregister-marketplace-model-endpoint --endpoint-arn arn:aws:sagemaker:region:{{111122223333}}:endpoint/{{example-endpoint-name}}
 ```
 
-```
+```bash
 aws bedrock register-marketplace-model-endpoint --endpoint-identifier arn:aws:sagemaker:region:{{111122223333}}:endpoint/{{example-endpoint-name}} --model-source-identifier
          {{HubContentArn}}
 ```

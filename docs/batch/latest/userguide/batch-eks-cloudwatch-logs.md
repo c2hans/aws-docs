@@ -20,7 +20,7 @@ For instructions on how to install AWS for Fluent Bit and create the CloudWatch 
 You must provide the following [additional configuration data](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Observability-EKS-addon.html#install-CloudWatch-Observability-EKS-addon-configuration) when installing the add-on:
 + If you install the add-on with the AWS Management Console you need to provide the following tolerations in **Configuration values**:
 
-  ```
+  ```JSON
   {
     "tolerations": [
       {
@@ -32,7 +32,7 @@ You must provide the following [additional configuration data](https://docs.aws.
   ```
 + If you install the add-on with the AWS CLI then add the following arguments:
 
-  ```
+  ```bash
   --configuration-values '{"tolerations":[{"key":"batch.amazonaws.com/batch-node","operator":"Exists"}]}'
   ```
 

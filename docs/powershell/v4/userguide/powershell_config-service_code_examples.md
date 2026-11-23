@@ -28,7 +28,7 @@ The following code example shows how to use `Add-CFGResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This example associates specified tag to the resource ARN, which is config-rule/config-rule-16iyn0 in this case. **
 
-```
+```powershell
 Add-CFGResourceTag -ResourceArn arn:aws:config:eu-west-1:123456789012:config-rule/config-rule-16iyn0 -Tag @{Key="Release";Value="Beta"}
 ```
 +  For API details, see [TagResource](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -41,7 +41,7 @@ The following code example shows how to use `Get-CFGAggregateComplianceByConfigR
 **Tools for PowerShell V4**
 **Example 1: This example fetches the details from ConfigurationAggregator 'kaju' filtering for the given config rule and expands/returns the 'Compliance' of the rule.**
 
-```
+```powershell
 Get-CFGAggregateComplianceByConfigRuleList -ConfigurationAggregatorName kaju -Filters_ConfigRuleName ALB_HTTP_TO_HTTPS_REDIRECTION_CHECK | Select-Object -ExpandProperty Compliance
 ```
 **Output:**
@@ -53,7 +53,7 @@ Amazon.ConfigService.Model.ComplianceContributorCount NON_COMPLIANT
 ```
 **Example 2: This example fetches details from the given ConfigurationAggregator, filters it for the given account for all regions covered in the aggregator and further retuns the compliance for all the rules.**
 
-```
+```powershell
 Get-CFGAggregateComplianceByConfigRuleList -ConfigurationAggregatorName kaju -Filters_AccountId 123456789012 | Select-Object ConfigRuleName, @{N="Compliance";E={$_.Compliance.ComplianceType}}
 ```
 **Output:**
@@ -75,7 +75,7 @@ The following code example shows how to use `Get-CFGAggregateComplianceDetailsBy
 **Tools for PowerShell V4**
 **Example 1: This example returns the evaluation results selecting the output with resource-id and resource-type for the AWS Config rule 'desired-instance-type' which are in 'COMPLIANT' state for the given account, aggregator, region and config rule**
 
-```
+```powershell
 Get-CFGAggregateComplianceDetailsByConfigRule -AccountId 123456789012 -AwsRegion eu-west-1 -ComplianceType COMPLIANT -ConfigRuleName desired-instance-type -ConfigurationAggregatorName raju | Select-Object -ExpandProperty EvaluationResultIdentifier | Select-Object -ExpandProperty EvaluationResultQualifier
 ```
 **Output:**
@@ -96,7 +96,7 @@ The following code example shows how to use `Get-CFGAggregateConfigRuleComplianc
 **Tools for PowerShell V4**
 **Example 1: This example returns the number of noncompliant rules for the given aggregator.**
 
-```
+```powershell
 (Get-CFGAggregateConfigRuleComplianceSummary -ConfigurationAggregatorName raju).AggregateComplianceCounts.ComplianceSummary.NonCompliantResourceCount
 ```
 **Output:**
@@ -116,7 +116,7 @@ The following code example shows how to use `Get-CFGAggregateDiscoveredResourceC
 **Tools for PowerShell V4**
 **Example 1: This example returns the resource count for the given aggregator filtered for region us-east-1.**
 
-```
+```powershell
 Get-CFGAggregateDiscoveredResourceCount -ConfigurationAggregatorName Master -Filters_Region us-east-1
 ```
 **Output:**
@@ -128,7 +128,7 @@ GroupByKey GroupedResourceCounts NextToken TotalDiscoveredResources
 ```
 **Example 2: This example returns the resource count grouped by RESOURCE\_TYPE for the filtered region for the given aggregator.**
 
-```
+```powershell
 Get-CFGAggregateDiscoveredResourceCount -ConfigurationAggregatorName Master -Filters_Region us-east-1 -GroupByKey RESOURCE_TYPE |
 			Select-Object -ExpandProperty GroupedResourceCounts
 ```
@@ -173,7 +173,7 @@ The following code example shows how to use `Get-CFGAggregateDiscoveredResourceL
 **Tools for PowerShell V4**
 **Example 1: This example returns the resource identifiers for the given resource type aggregated in 'Ireland' aggregator. For the list of resource types, please check https://docs.aws.amazon.com/sdkfornet/v3/apidocs/index.html?page=ConfigService/TConfigServiceResourceType.html&tocid=Amazon\_ConfigService\_ResourceType.**
 
-```
+```powershell
 Get-CFGAggregateDiscoveredResourceList -ConfigurationAggregatorName Ireland -ResourceType ([Amazon.ConfigService.ResourceType]::AWSAutoScalingAutoScalingGroup)
 ```
 **Output:**
@@ -187,7 +187,7 @@ SourceRegion    : eu-west-1
 ```
 **Example 2: This example returns the resource type `AwsEC2SecurityGroup` named 'default' for the given aggregator filtered with region us-east-1.**
 
-```
+```powershell
 Get-CFGAggregateDiscoveredResourceList -ConfigurationAggregatorName raju -ResourceType ([Amazon.ConfigService.ResourceType]::AWSEC2SecurityGroup) -Filters_Region us-east-1 -Filters_ResourceName default
 ```
 **Output:**
@@ -221,7 +221,7 @@ The following code example shows how to use `Get-CFGAggregateResourceConfig`.
 **Tools for PowerShell V4**
 **Example 1: This example returns the Configuration Item for the given resource aggregated and expands Configuration.**
 
-```
+```powershell
 (Get-CFGAggregateResourceConfig -ResourceIdentifier_SourceRegion us-east-1 -ResourceIdentifier_SourceAccountId 123456789012 -ResourceIdentifier_ResourceId sg-4fc1d234 -ResourceIdentifier_ResourceType ([Amazon.ConfigService.ResourceType]::AWSEC2SecurityGroup) -ConfigurationAggregatorName raju).Configuration | ConvertFrom-Json
 ```
 **Output:**
@@ -239,7 +239,7 @@ The following code example shows how to use `Get-CFGAggregateResourceConfigBatch
 **Tools for PowerShell V4**
 **Example 1: This example fetches current configuration item for resource (identified) present in the given aggregator.**
 
-```
+```powershell
 $resIdentifier=[Amazon.ConfigService.Model.AggregateResourceIdentifier]@{
 		ResourceId= "i-012e3cb4df567e8aa"
 		ResourceName = "arn:aws:ec2:eu-west-1:123456789012:instance/i-012e3cb4df567e8aa"
@@ -267,7 +267,7 @@ The following code example shows how to use `Get-CFGAggregationAuthorizationList
 **Tools for PowerShell V4**
 **Example 1: This example retrieves authorizations granted to aggregators.**
 
-```
+```powershell
 Get-CFGAggregationAuthorizationList
 ```
 **Output:**
@@ -287,7 +287,7 @@ The following code example shows how to use `Get-CFGComplianceByConfigRule`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves compliances details for the rule ebs-optimized-instance, for which there is no current evaluation results for the rule, hence it returns INSUFFICIENT\_DATA**
 
-```
+```powershell
 (Get-CFGComplianceByConfigRule -ConfigRuleName ebs-optimized-instance).Compliance
 ```
 **Output:**
@@ -299,7 +299,7 @@ ComplianceContributorCount ComplianceType
 ```
 **Example 2: This example returns the number of non-compliant resources for the rule ALB\_HTTP\_TO\_HTTPS\_REDIRECTION\_CHECK.**
 
-```
+```powershell
 (Get-CFGComplianceByConfigRule -ConfigRuleName ALB_HTTP_TO_HTTPS_REDIRECTION_CHECK -ComplianceType NON_COMPLIANT).Compliance.ComplianceContributorCount
 ```
 **Output:**
@@ -319,7 +319,7 @@ The following code example shows how to use `Get-CFGComplianceByResource`.
 **Tools for PowerShell V4**
 **Example 1: This example checks the `AWS::SSM::ManagedInstanceInventory` resource type for 'COMPLIANT' compliance type.**
 
-```
+```powershell
 Get-CFGComplianceByResource -ComplianceType COMPLIANT -ResourceType AWS::SSM::ManagedInstanceInventory
 ```
 **Output:**
@@ -340,7 +340,7 @@ The following code example shows how to use `Get-CFGComplianceDetailsByConfigRul
 **Tools for PowerShell V4**
 **Example 1: This example obtains the evaluation results for the rule access-keys-rotated and returns the output grouped by compliance-type**
 
-```
+```powershell
 Get-CFGComplianceDetailsByConfigRule -ConfigRuleName access-keys-rotated | Group-Object ComplianceType
 ```
 **Output:**
@@ -353,7 +353,7 @@ Count Name                      Group
 ```
 **Example 2: This example queries compliance details for the rule access-keys-rotated for COMPLIANT resources.**
 
-```
+```powershell
 Get-CFGComplianceDetailsByConfigRule -ConfigRuleName access-keys-rotated -ComplianceType COMPLIANT | ForEach-Object {$_.EvaluationResultIdentifier.EvaluationResultQualifier}
 ```
 **Output:**
@@ -374,7 +374,7 @@ The following code example shows how to use `Get-CFGComplianceDetailsByResource`
 **Tools for PowerShell V4**
 **Example 1: This example evaulation results for the given resource.**
 
-```
+```powershell
 Get-CFGComplianceDetailsByResource -ResourceId ABCD5STJ4EFGHIVEW6JAH -ResourceType 'AWS::IAM::User'
 ```
 **Output:**
@@ -397,7 +397,7 @@ The following code example shows how to use `Get-CFGComplianceSummaryByConfigRul
 **Tools for PowerShell V4**
 **Example 1: This sample returns the number of Config rules that are non-compliant.**
 
-```
+```powershell
 Get-CFGComplianceSummaryByConfigRule -Select ComplianceSummary.NonCompliantResourceCount
 ```
 **Output:**
@@ -417,7 +417,7 @@ The following code example shows how to use `Get-CFGComplianceSummaryByResourceT
 **Tools for PowerShell V4**
 **Example 1: This sample returns the number of resources that are compliant or noncompliant and converts the output to json.**
 
-```
+```powershell
 Get-CFGComplianceSummaryByResourceType -Select ComplianceSummariesByResourceType.ComplianceSummary | ConvertTo-Json
 {
   "ComplianceSummaryTimestamp": "2019-12-14T06:14:49.778Z",
@@ -441,7 +441,7 @@ The following code example shows how to use `Get-CFGConfigRule`.
 **Tools for PowerShell V4**
 **Example 1: This sample lists config rules for the account, with selected properties.**
 
-```
+```powershell
 Get-CFGConfigRule | Select-Object ConfigRuleName, ConfigRuleId, ConfigRuleArn, ConfigRuleState
 ```
 **Output:**
@@ -463,7 +463,7 @@ The following code example shows how to use `Get-CFGConfigRuleEvaluationStatus`.
 **Tools for PowerShell V4**
 **Example 1: This sample returns the status information for the given config rules. **
 
-```
+```powershell
 Get-CFGConfigRuleEvaluationStatus -ConfigRuleName root-account-mfa-enabled, vpc-flow-logs-enabled
 ```
 **Output:**
@@ -503,7 +503,7 @@ The following code example shows how to use `Get-CFGConfigurationAggregatorList`
 **Tools for PowerShell V4**
 **Example 1: This sample returns all the aggregators for the region/account.**
 
-```
+```powershell
 Get-CFGConfigurationAggregatorList
 ```
 **Output:**
@@ -533,7 +533,7 @@ The following code example shows how to use `Get-CFGConfigurationAggregatorSourc
 **Tools for PowerShell V4**
 **Example 1: This sample displays requested fields for the sources in the given aggregator.**
 
-```
+```powershell
 Get-CFGConfigurationAggregatorSourcesStatus -ConfigurationAggregatorName raju | select SourceType, LastUpdateStatus, LastUpdateTime, SourceId
 ```
 **Output:**
@@ -559,7 +559,7 @@ The following code example shows how to use `Get-CFGConfigurationRecorder`.
 **Tools for PowerShell V4**
 **Example 1: This example returns the details of configuration recorders.**
 
-```
+```powershell
 Get-CFGConfigurationRecorder | Format-List
 ```
 **Output:**
@@ -579,7 +579,7 @@ The following code example shows how to use `Get-CFGConfigurationRecorderStatus`
 **Tools for PowerShell V4**
 **Example 1: This sample returns status of the configuration recorders. **
 
-```
+```powershell
 Get-CFGConfigurationRecorderStatus
 ```
 **Output:**
@@ -604,7 +604,7 @@ The following code example shows how to use `Get-CFGConformancePack`.
 **Tools for PowerShell V4**
 **Example 1: This sample lists all conformance packs.**
 
-```
+```powershell
 Get-CFGConformancePack
 ```
 **Output:**
@@ -629,7 +629,7 @@ The following code example shows how to use `Get-CFGDeliveryChannel`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves the delivery channel for the region and displays details.**
 
-```
+```powershell
 Get-CFGDeliveryChannel -Region eu-west-1 | Select-Object Name, S3BucketName, S3KeyPrefix, @{N="DeliveryFrequency";E={$_.ConfigSnapshotDeliveryProperties.DeliveryFrequency}}
 ```
 **Output:**
@@ -649,7 +649,7 @@ The following code example shows how to use `Get-CFGResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This example lists associated tags for the given resource**
 
-```
+```powershell
 Get-CFGResourceTag -ResourceArn $rules[0].ConfigRuleArn
 ```
 **Output:**
@@ -669,7 +669,7 @@ The following code example shows how to use `Remove-CFGConformancePack`.
 **Tools for PowerShell V4**
 **Example 1: This sample removes the given conformance pack, along with all the rules, remediation actions and evaluation results for the pack.**
 
-```
+```powershell
 Remove-CFGConformancePack -ConformancePackName dono
 ```
 **Output:**
@@ -690,7 +690,7 @@ The following code example shows how to use `Write-CFGConformancePack`.
 **Tools for PowerShell V4**
 **Example 1: This sample creates conformance pack, fetching template from the given yaml file. **
 
-```
+```powershell
 Write-CFGConformancePack -ConformancePackName dono -DeliveryS3Bucket amzn-s3-demo-bucket -TemplateBody (Get-Content C:\windows\temp\template.yaml -Raw)
 ```
 +  For API details, see [PutConformancePack](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -703,7 +703,7 @@ The following code example shows how to use `Write-CFGDeliveryChannel`.
 **Tools for PowerShell V4**
 **Example 1: This example changes the deliveryFrequency property of an existing delivery channel.**
 
-```
+```powershell
 Write-CFGDeliveryChannel -ConfigSnapshotDeliveryProperties_DeliveryFrequency TwentyFour_Hours -DeliveryChannelName default -DeliveryChannel_S3BucketName amzn-s3-demo-bucket -DeliveryChannel_S3KeyPrefix my
 ```
 +  For API details, see [PutDeliveryChannel](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.

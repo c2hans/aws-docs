@@ -36,7 +36,7 @@ In this example, use a Node.js module to publish a message to an Amazon SNS topi
 
 Create a `libs` directory, and create a Node.js module with the file name `snsClient.js`. Copy and paste the code below into it, which creates the Amazon SNS client object. Replace {{REGION}} with your AWS Region.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 
 // The AWS Region can be provided here using the `region` property. If you leave it blank
@@ -55,7 +55,7 @@ Pass the parameters to the `PublishCommand` method of the `SNS` client class. cr
 **Note**
 Replace {{MESSAGE\_TEXT}} with the message text, and {{TOPIC\_ARN}} with the ARN of the SNS topic.
 
-```
+```javascript
 import { PublishCommand } from "@aws-sdk/client-sns";
 import { snsClient } from "../libs/snsClient.js";
 
@@ -92,7 +92,7 @@ export const publish = async (
 
 To run the example, enter the following at the command prompt.
 
-```
+```javascript
 node publish-topic.js
 ```
 

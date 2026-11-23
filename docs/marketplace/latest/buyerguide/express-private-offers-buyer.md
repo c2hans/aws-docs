@@ -24,7 +24,7 @@ During the process, you'll specify your desired quantities, contract terms, and 
 
 Before initiating an express private offer request, ensure you have an AWS account with the appropriate permissions. Your account can use the [AWSMarketplaceManageSubscriptions](https://docs.aws.amazon.com/aaws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html) or [AWSMarketplaceFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceFullAccess.html) managed policy for the right permissions. You also can use the following IAM policy:
 
-```
+```json
 {
     "Version": "2012-10-17"		 	 	 ,
     "Statement": [{

@@ -19,7 +19,7 @@ Let’s get started by writing the code for the Hit Counter AWS Lambda function.
 **Example**
 + Add a file called `lambda/hitcounter.js` with the following contents:
 
-  ```
+  ```typescript
   const { DynamoDB, Lambda } = require('aws-sdk');
 
   exports.handler = async function(event) {
@@ -51,7 +51,7 @@ Let’s get started by writing the code for the Hit Counter AWS Lambda function.
   ```
 + Add a file called `lambda/hitcounter.py` with the following contents:
 
-  ```
+  ```python
   import json
   import os
   import boto3
@@ -80,7 +80,7 @@ Let’s get started by writing the code for the Hit Counter AWS Lambda function.
   ```
 + Add a file called `lambda/hitcounter.js` with the following contents:
 
-  ```
+  ```typescript
   const { DynamoDB, Lambda } = require('aws-sdk');
 
   exports.handler = async function(event) {
@@ -118,16 +118,16 @@ As usual, we first need to install the dependency we need for our solution updat
 
 **Example**
 
-```
+```typescript
 npm install -s @aws-solutions-constructs/aws-lambda-dynamodb
 ```
 
-```
+```python
 pip install aws_solutions_constructs.aws_lambda_dynamodb
 ```
 + Edit the `pom.xml` file with the following information:
 
-  ```
+  ```xml
   <dependency>
       <groupId>software.amazon.awsconstructs</groupId>
       <artifactId>lambdadynamodb</artifactId>
@@ -137,7 +137,7 @@ pip install aws_solutions_constructs.aws_lambda_dynamodb
 
   Run the command:
 
-  ```
+  ```java
   mvn install
   ```
 
@@ -151,7 +151,7 @@ First, we are going to import our new dependency and move the "Hello" function o
 **Example**
 + Replace the code in `lib/hello-constructs-stack.ts` with the following:
 
-  ```
+  ```typescript
   import { Construct } from 'constructs';
   import { Stack, StackProps } from 'aws-cdk-lib';
   import * as lambda from 'aws-cdk-lib/aws-lambda';
@@ -191,7 +191,7 @@ First, we are going to import our new dependency and move the "Hello" function o
   ```
 + Replace the code in `hello_constructs/hello_constructs_stack.py` with the following:
 
-  ```
+  ```python
   from constructs import Construct
   from aws_cdk import (
       aws_lambda as _lambda,
@@ -235,7 +235,7 @@ First, we are going to import our new dependency and move the "Hello" function o
   ```
 + Replace the code in `HelloConstructsStack.java` with the following:
 
-  ```
+  ```java
   package com.myorg;
 
   import software.constructs.Construct;
@@ -287,7 +287,7 @@ The next update below defines the properties for the `aws-lambda-dynamodb` patte
 **Example**
 + Edit the file `lib/hello-constructs-stack.ts` with the following:
 
-  ```
+  ```typescript
   import { Construct } from 'constructs';
   import { Stack, StackProps, RemovalPolicy } from 'aws-cdk-lib';
   import * as lambda from 'aws-cdk-lib/aws-lambda';
@@ -346,7 +346,7 @@ The next update below defines the properties for the `aws-lambda-dynamodb` patte
   ```
 + Edit the file `hello_constructs/hello_constructs_stack.py` with the following:
 
-  ```
+  ```python
   from constructs import Construct
   from aws_cdk import (
       aws_lambda as _lambda,
@@ -412,7 +412,7 @@ The next update below defines the properties for the `aws-lambda-dynamodb` patte
   ```
 + Edit the file `HelloConstructsStack.java` with the following:
 
-  ```
+  ```java
   package com.myorg;
 
   import java.util.Map;
@@ -487,7 +487,7 @@ Next, we need to grant the Hit Counter function created from the `aws-lambda-dyn
 **Example**
 + Edit the file `lib/hello-constructs-stack.ts` with the following:
 
-  ```
+  ```typescript
   import { Construct } from 'constructs';
   import { Stack, StackProps, RemovalPolicy } from 'aws-cdk-lib';
   import * as lambda from 'aws-cdk-lib/aws-lambda';
@@ -550,7 +550,7 @@ Next, we need to grant the Hit Counter function created from the `aws-lambda-dyn
   ```
 + Edit the file `hello_constructs/hello_constructs_stack.py` with the following:
 
-  ```
+  ```python
   from constructs import Construct
   from aws_cdk import (
       aws_lambda as _lambda,
@@ -620,7 +620,7 @@ Next, we need to grant the Hit Counter function created from the `aws-lambda-dyn
   ```
 + Edit the file `src/../HelloConstructsStack.java` with the following:
 
-  ```
+  ```java
   package com.myorg;
 
   import java.util.Map;
@@ -698,7 +698,7 @@ Finally, we need to update our original `aws-apigateway-lambda` pattern to utili
 **Example**
 + Edit the file `lib/hello-constructs-stack.ts` with the following:
 
-  ```
+  ```typescript
   import { Construct } from 'constructs';
   import { Stack, StackProps, RemovalPolicy } from 'aws-cdk-lib';
   import * as lambda from 'aws-cdk-lib/aws-lambda';
@@ -757,7 +757,7 @@ Finally, we need to update our original `aws-apigateway-lambda` pattern to utili
   ```
 + Edit the file `hello_constructs/hello_constructs_stack.py` with the following:
 
-  ```
+  ```python
   from constructs import Construct
   from aws_cdk import (
       aws_lambda as _lambda,
@@ -823,7 +823,7 @@ Finally, we need to update our original `aws-apigateway-lambda` pattern to utili
   ```
 + Edit the file `src/../HelloConstructsStack.java` with the following:
 
-  ```
+  ```java
   package com.myorg;
 
   import java.util.Map;
@@ -900,16 +900,16 @@ Let’s build our project and review the changes to our resources that will happ
 
 **Example**
 
-```
+```typescript
 npm run build
 cdk diff
 ```
 
-```
+```python
 cdk diff
 ```
 
-```
+```java
 mvn package
 cdk diff
 ```
@@ -1254,7 +1254,7 @@ Outputs:
 
 Let’s try to hit this endpoint with curl. Copy the URL and execute (your prefix and region will likely be different).
 
-```
+```bash
 curl https://
   xxxxxxxxxx
   .execute-api.us-east-1.amazonaws.com/prod/
@@ -1290,13 +1290,13 @@ To avoid unexpected charges to your account, make sure you clean up your CDK sta
 
 You can either delete the stack through the AWS CloudFormation console or use cdk destroy:
 
-```
+```python
 cdk destroy
 ```
 
 You’ll be asked:
 
-```
+```python
 Are you sure you want to delete: HelloConstructsStack (y/n)?
 ```
 

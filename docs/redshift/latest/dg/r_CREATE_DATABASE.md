@@ -117,7 +117,7 @@ You can chain roles so that your cluster can assume another IAM role, possibly b
  To this IAM role, attach an IAM permissions policy similar to the following.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -226,43 +226,43 @@ CREATE DATABASE sampledb FROM ARN <glue-database-arn> WITH DATA CATALOG SCHEMA <
 
 To create a database using a zero-ETL integration identity, specify the `integration_id` in your CREATE DATABASE command.
 
-```
+```sql
 CREATE DATABASE {{destination_db_name}} FROM INTEGRATION '{{integration_id}}';
 ```
 
 For example, first, retrieve the integration ids from SVV\_INTEGRATION;
 
-```
+```sql
 SELECT integration_id FROM SVV_INTEGRATION;
 ```
 
 Then use one of the integration ids retrieved to create the database that receives zero-ETL integrations.
 
-```
+```sql
 CREATE DATABASE sampledb FROM INTEGRATION 'a1b2c3d4-5678-90ab-cdef-EXAMPLE11111';
 ```
 
 When the zero-ETL integrations source database is needed, then, for example, specify.
 
-```
+```sql
 CREATE DATABASE sampledb FROM INTEGRATION 'a1b2c3d4-5678-90ab-cdef-EXAMPLE11111' DATABASE sourcedb;
 ```
 
 You can also set a refresh interval for the database. For example, to set the refresh interval to 7,200 seconds for data from a zero-ETL integration source:
 
-```
+```sql
 CREATE DATABASE myacct_mysql FROM INTEGRATION 'a1b2c3d4-5678-90ab-cdef-EXAMPLE11111' SET REFRESH_INTERVAL 7200;
 ```
 
 Query the SVV\_INTEGRATION catalog view for information about a zero-ETL integration, such as, integration\_id, target\_database, source, refresh\_interval, and more.
 
-```
+```sql
 SELECT * FROM svv_integration;
 ```
 
 The following example creates a database from an integration with history mode on.
 
-```
+```sql
 CREATE DATABASE sample_integration_db FROM INTEGRATION 'a1b2c3d4-5678-90ab-cdef-EXAMPLE11111' SET HISTORY_MODE = true;
 ```
 

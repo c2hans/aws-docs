@@ -72,7 +72,7 @@ After enabling data events, you can access these logs in the Amazon S3 bucket co
 
 The following example shows a CloudTrail log entry (in JSON format) that demonstrates the `CreateServer` action.
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {
@@ -146,7 +146,7 @@ When you enable Amazon S3 data events for your CloudTrail trail, you can track f
 
 The following example shows a CloudTrail log entry for a successful file download operation through AWS Transfer Family.
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {

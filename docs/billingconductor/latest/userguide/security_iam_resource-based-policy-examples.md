@@ -21,7 +21,7 @@ The `Condition` block uses the `IpAddress` and `NotIpAddress` conditions and the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "S3PolicyId1",

@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Create a custom AWS ParallelCluster image in the specified Region.
 
-```
+```sh
 pcluster build-image [-h]
                  --image-configuration {{IMAGE_CONFIGURATION}}
                  --image-id {{IMAGE_ID}}

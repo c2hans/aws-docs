@@ -14,7 +14,7 @@ The following code examples show how to use `UpdateThingShadow`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/IoT#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Updates the Thing's shadow with new state information.
     /// </summary>
@@ -55,7 +55,7 @@ The following code examples show how to use `UpdateThingShadow`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iot#code-examples).
 
-```
+```cpp
 //! Update the shadow of an AWS IoT thing.
 /*!
   \param thingName: The name for the thing.
@@ -130,7 +130,7 @@ For more information, see [Device Shadow Service Data Flow](https://docs.aws.ama
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iot#code-examples).
 
-```
+```java
     /**
      * Updates the shadow of an IoT Thing asynchronously.
      *
@@ -176,7 +176,7 @@ For more information, see [Device Shadow Service Data Flow](https://docs.aws.ama
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iot#code-examples).
 
-```
+```kotlin
 suspend fun updateShawdowThing(thingNameVal: String?) {
     // Create the thing shadow state document.
     val stateDocument = "{\"state\":{\"reported\":{\"temperature\":25, \"humidity\":50}}}"
@@ -203,7 +203,7 @@ suspend fun updateShawdowThing(thingNameVal: String?) {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iot#code-examples).
 
-```
+```python
 class IoTWrapper:
     """Encapsulates AWS IoT actions."""
 
@@ -253,7 +253,7 @@ class IoTWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iop#code-examples).
 
-```
+```sap-abap
     TRY.
         " Convert JSON string to xstring for payload
         DATA(lv_payload) = /aws1/cl_rt_util=>string_to_xstring( iv_shadow_state ).

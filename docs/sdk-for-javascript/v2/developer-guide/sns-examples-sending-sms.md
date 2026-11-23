@@ -42,7 +42,7 @@ In this example, use a Node.js module to get the current SMS attributes in Amazo
 
 This example gets the `DefaultSMSType` attribute, which controls whether SMS messages are sent as `Promotional`, which optimizes message delivery to incur the lowest cost, or as `Transactional`, which optimizes message delivery to achieve the highest reliability. Pass the parameters to the `setTopicAttributes` method of the `AWS.SNS` client class. To call the `getSMSAttributes` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -74,7 +74,7 @@ getSMSTypePromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_getsmstype.js
 ```
 
@@ -87,7 +87,7 @@ In this example, use a Node.js module to get the current SMS attributes in Amazo
 
 This example sets the `DefaultSMSType` attribute to `Transactional`, which optimizes message delivery to achieve the highest reliability. Pass the parameters to the `setTopicAttributes` method of the `AWS.SNS` client class. To call the `getSMSAttributes` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -119,7 +119,7 @@ setSMSTypePromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_setsmstype.js
 ```
 
@@ -132,7 +132,7 @@ In this example, use a Node.js module to check a phone number to see if it has o
 
 This example sets the `PhoneNumber` parameter to specify the phone number to check. Pass the object to the `checkIfPhoneNumberIsOptedOut` method of the `AWS.SNS` client class. To call the `checkIfPhoneNumberIsOptedOut` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -155,7 +155,7 @@ phonenumPromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_checkphoneoptout.js
 ```
 
@@ -168,7 +168,7 @@ In this example, use a Node.js module to get a list of phone numbers that have o
 
 Pass the object to the `listPhoneNumbersOptedOut` method of the `AWS.SNS` client class. To call the `listPhoneNumbersOptedOut` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -191,7 +191,7 @@ phonelistPromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_listnumbersoptedout.js
 ```
 
@@ -206,7 +206,7 @@ When you send an SMS message, specify the phone number using the E.164 format. E
 
 This example sets the `PhoneNumber` parameter to specify the phone number to send the message. Pass the object to the `publish` method of the `AWS.SNS` client class. To call the `publish` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -235,7 +235,7 @@ publishTextPromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_publishsms.js
 ```
 

@@ -17,6 +17,7 @@ The following actions are supported by AWS Marketplace Catalog Service:
 +  [ListEntities](API_ListEntities.md)
 +  [ListTagsForResource](API_ListTagsForResource.md)
 +  [PutResourcePolicy](API_PutResourcePolicy.md)
++  [StartAssessment](API_StartAssessment.md)
 +  [StartChangeSet](API_StartChangeSet.md)
 +  [TagResource](API_TagResource.md)
 +  [UntagResource](API_UntagResource.md)
@@ -63,8 +64,12 @@ The following actions are supported by AWS Marketplace Agreement Service:
 +  [UpdatePurchaseOrders](API_marketplace-agreements_UpdatePurchaseOrders.md)
 
 The following actions are supported by AWS Marketplace Deployment Service:
++  [GetDeploymentConfiguration](API_marketplace-deployment_GetDeploymentConfiguration.md)
++  [GetDeploymentConfigurationJob](API_marketplace-deployment_GetDeploymentConfigurationJob.md)
++  [ListDeploymentConfigurationJobs](API_marketplace-deployment_ListDeploymentConfigurationJobs.md)
 +  [ListTagsForResource](API_marketplace-deployment_ListTagsForResource.md)
 +  [PutDeploymentParameter](API_marketplace-deployment_PutDeploymentParameter.md)
++  [StartDeploymentConfigurationJob](API_marketplace-deployment_StartDeploymentConfigurationJob.md)
 +  [TagResource](API_marketplace-deployment_TagResource.md)
 +  [UntagResource](API_marketplace-deployment_UntagResource.md)
 
@@ -75,6 +80,7 @@ The following actions are supported by AWS Marketplace Discovery:
 +  [GetOfferTerms](API_marketplace-discovery_GetOfferTerms.md)
 +  [GetProduct](API_marketplace-discovery_GetProduct.md)
 +  [ListFulfillmentOptions](API_marketplace-discovery_ListFulfillmentOptions.md)
++  [ListListingAttributes](API_marketplace-discovery_ListListingAttributes.md)
 +  [ListPurchaseOptions](API_marketplace-discovery_ListPurchaseOptions.md)
 +  [SearchFacets](API_marketplace-discovery_SearchFacets.md)
 +  [SearchListings](API_marketplace-discovery_SearchListings.md)

@@ -13,7 +13,7 @@ Organizations turns on service control policies (SCPs) and attaches an SCP to th
 
 The following policy shows the SCP that denies member accounts from leaving the organization or closing their accounts:
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

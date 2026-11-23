@@ -11,7 +11,7 @@ For a role to run model inference, you need to allow it to perform the model inv
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -30,7 +30,7 @@ You can use the [list-resources](https://docs.aws.amazon.com/cli/latest/referenc
 
 The following example shows the resources that are included in resource shares in the AWS Region (`us-east-1`) for the calling AWS account. To get the resources that you share in a different Region, use the `--region <region-code>` parameter.
 
-```
+```bash
 $ aws ram list-resources \
     --region us-east-1 \
     --resource-owner SELF

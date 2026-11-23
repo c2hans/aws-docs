@@ -209,7 +209,7 @@ During the database migration process, AWS Transform uses AWS Database Migration
 
 The following policy contains three statements. The first statement grants root account permissions for the AWS KMS key. The second statement allows the connector role to validate the key during discovery. The third statement allows the connector role to use the key for DMS operations.
 
-```
+```JSON
  "Statement": [
     {
       "Sid": "Enable IAM User Permissions",

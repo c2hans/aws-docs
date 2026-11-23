@@ -139,14 +139,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-redshift-pause-cluster-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-advanced-redshift-pause-cluster-ex-max"></a>
 
-```
+```json
 {
     "DocumentName": "AWSManagedServices-PauseRedshiftCluster",
     "Region": "us-east-1",

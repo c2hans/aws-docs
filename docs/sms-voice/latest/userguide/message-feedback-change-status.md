@@ -8,7 +8,7 @@ Once you have a signal that a customer has received your message you have to pro
 
 At the command line, enter the following command:
 
-```
+```bsh
 aws pinpoint-sms-voice-v2 --region '{{us-east-1}}' put-message-feedback --message-feedback-status {{Status}} --message-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 + Replace {{us-east-1}} with the AWS Region that your origination identity is stored in.

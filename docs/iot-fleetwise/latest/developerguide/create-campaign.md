@@ -293,7 +293,7 @@ aws iotfleetwise create-campaign --cli-input-json file://{{file-name}}.json
 + Replace {{target-arn}} with the ARN of a fleet or vehicle that you created.
 + Replace {{bucket-arn}} with the ARN of the S3 bucket.
 
-```
+```json
 {
     "name": "{{campaign-name}}",
     "targetArn": "{{target-arn}}",
@@ -350,7 +350,7 @@ Amazon Timestream is not available in the Asia Pacific (Mumbai) Region.
 + Replace {{role-arn}} with the ARN of the task execution role that grants AWS IoT FleetWise permission to deliver data to the Timestream table.
 + Replace {{table-arn}} with the ARN of the Timestream table.
 
-```
+```json
 {
   "name": "campaign-name",
   "targetArn": "target-arn",
@@ -402,7 +402,7 @@ Amazon Timestream is not available in the Asia Pacific (Mumbai) Region.
 + Replace {{topic-arn}} with the ARN of the [MQTT topic](https://docs.aws.amazon.com/iot/latest/developerguide/topics.html) that you specified as the destination for messages containing vehicle data.
 + Replace {{role-arn}} with the ARN of the task execution role that grants AWS IoT FleetWise permission to send, receive, and take action on messages for the MQTT topic you specified.
 
-```
+```json
 {
   "name": "{{campaign-name}}",
   "targetArn": "{{target-arn}}",
@@ -450,7 +450,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

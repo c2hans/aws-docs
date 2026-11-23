@@ -39,7 +39,7 @@ For more information, see [Developing Consumers Using the Kinesis Data Streams A
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kinesis#code-examples).
 
-```
+```java
 import software.amazon.awssdk.core.SdkBytes;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.kinesis.KinesisClient;
@@ -146,7 +146,7 @@ public class GetRecords {
 **Tools for PowerShell V4**
 **Example 1: This example shows how to return and extract data from a series of one or more records. The iterator supplierd to Get-KINRecord determines the starting position of the records to return which in this example are captured into a variable, $records. Each individual record can then be accessed by indexing the $records collection. Assuming the data in the record is UTF-8 encoded text, the final command shows how you can extract the data from the MemoryStream in the object and return it as text to the console.**
 
-```
+```powershell
 $records
 $records = Get-KINRecord -ShardIterator "AAAAAAAAAAGIc....9VnbiRNaP"
 ```
@@ -158,7 +158,7 @@ MillisBehindLatest NextShardIterator            Records
 0                  AAAAAAAAAAERNIq...uDn11HuUs  {Key1, Key2}
 ```
 
-```
+```powershell
 $records.Records[0]
 ```
 **Output:**
@@ -169,7 +169,7 @@ ApproximateArrivalTimestamp Data                   PartitionKey SequenceNumber
 3/7/2016 5:14:33 PM         System.IO.MemoryStream Key1         4955986459776...931586
 ```
 
-```
+```powershell
 [Text.Encoding]::UTF8.GetString($records.Records[0].Data.ToArray())
 ```
 **Output:**
@@ -182,7 +182,7 @@ test data from string
 **Tools for PowerShell V5**
 **Example 1: This example shows how to return and extract data from a series of one or more records. The iterator supplierd to Get-KINRecord determines the starting position of the records to return which in this example are captured into a variable, $records. Each individual record can then be accessed by indexing the $records collection. Assuming the data in the record is UTF-8 encoded text, the final command shows how you can extract the data from the MemoryStream in the object and return it as text to the console.**
 
-```
+```powershell
 $records
 $records = Get-KINRecord -ShardIterator "AAAAAAAAAAGIc....9VnbiRNaP"
 ```
@@ -194,7 +194,7 @@ MillisBehindLatest NextShardIterator            Records
 0                  AAAAAAAAAAERNIq...uDn11HuUs  {Key1, Key2}
 ```
 
-```
+```powershell
 $records.Records[0]
 ```
 **Output:**
@@ -205,7 +205,7 @@ ApproximateArrivalTimestamp Data                   PartitionKey SequenceNumber
 3/7/2016 5:14:33 PM         System.IO.MemoryStream Key1         4955986459776...931586
 ```
 
-```
+```powershell
 [Text.Encoding]::UTF8.GetString($records.Records[0].Data.ToArray())
 ```
 **Output:**
@@ -221,7 +221,7 @@ test data from string
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 class KinesisStream:
     """Encapsulates a Kinesis stream."""
 
@@ -293,7 +293,7 @@ class KinesisStream:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kns#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_kns->getrecords(             " oo_result is returned for testing purposes. "
             iv_sharditerator = iv_shard_iterator ).

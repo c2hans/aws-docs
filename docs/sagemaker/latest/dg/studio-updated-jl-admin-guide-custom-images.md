@@ -33,7 +33,7 @@ If you are bringing your own image to SageMaker Unified Studio, you will need to
 
 The following is an example AL2023 Dockerfile that meets the above information and [Custom image specifications](studio-updated-byoi-specs.md).
 
-```
+```docker
 FROM public.ecr.aws/amazonlinux/amazonlinux:2023
 
 ARG NB_USER="sagemaker-user"
@@ -72,7 +72,7 @@ CMD jupyter lab --ip 0.0.0.0 --port 8888 \
 
 The following is a example Amazon SageMaker Distribution Dockerfile that meets the above information and [Custom image specifications](studio-updated-byoi-specs.md).
 
-```
+```docker
 FROM public.ecr.aws/sagemaker/sagemaker-distribution:latest-cpu
 ARG NB_USER="sagemaker-user"
 ARG NB_UID=1000

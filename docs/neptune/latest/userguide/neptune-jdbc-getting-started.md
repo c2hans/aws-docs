@@ -10,7 +10,7 @@ You can download the driver [here](https://github.com/aws/amazon-neptune-jdbc-dr
 
 The driver needs a JDBC connection URL to connect with Neptune, in a form like this:
 
-```
+```java
 jdbc:neptune:{{(connection type)}}://{{(host)}};{{property}}={{value}};{{property}}={{value}};{{...}};{{property}}={{value}}
 ```
 
@@ -18,7 +18,7 @@ The sections for each query language in the GitHub project describe the properti
 
 If the JAR file is in your application's `classpath`, no other configuration is necessary. You can connect the driver using the JDBC `DriverManager` interface and a Neptune connection string. For example, if your Neptune DB cluster is accessible through the endpoint `neptune-example.com` on port 8182, you would be able to connect with openCypher like this:
 
-```
+```java
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;

@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-graphqlapi-auth-syntax-yaml"></a>
 
-```
+```yaml
 Additional:
 - {{AuthProvider}}
 LambdaAuthorizer: {{[LambdaAuthorizerConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-lambdaauthorizerconfig.html)}}
@@ -66,7 +66,7 @@ Specify the optional authorization configuration for using Amazon Cognito user p
 
 In this example, we start by configuring a Lambda authorizer as the default authorization type for our GraphQL API.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...
@@ -84,7 +84,7 @@ Resources:
 
 Next, we configure additional authorization types for our GraphQL API by adding the following to our AWS SAM template:
 
-```
+```yaml
         Additional:
         - Type: AWS_IAM
         - Type: API_KEY
@@ -98,7 +98,7 @@ Next, we configure additional authorization types for our GraphQL API by adding 
 
 This results in the following AWS SAM template:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 ...

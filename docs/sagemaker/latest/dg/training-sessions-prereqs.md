@@ -18,7 +18,7 @@ The training session APIs provide two AWS managed policies. Attach each to the a
 
 Allow the caller identity to pass the execution role to the Training Sessions service principal. The `AmazonSageMakerTrainingSessionAccess` managed policy already includes this permission, scoped to roles under the `service-role` path whose names contain `SageMaker`. If you use a custom caller policy, include the following statement:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -42,7 +42,7 @@ Allow the caller identity to pass the execution role to the Training Sessions se
 
 Add the Training Sessions service principal to the trust policy of your execution role so that the service can assume it:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -62,7 +62,7 @@ Add the Training Sessions service principal to the trust policy of your executio
 
 The service registers each checkpoint you save as a model package in a SageMaker AI model package group. Create a group for your checkpoints and pass its ARN as `model_package_group_arn` when you create the `ServiceClient`:
 
-```
+```bash
 aws sagemaker create-model-package-group \
     --model-package-group-name {{my-training-session-checkpoints}} \
     --region {{us-west-2}}

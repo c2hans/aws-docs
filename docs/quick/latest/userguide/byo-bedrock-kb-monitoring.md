@@ -13,7 +13,7 @@ Set up a CloudTrail trail that captures Amazon Bedrock knowledge base data event
 
 Create the S3 bucket, apply a bucket policy that allows CloudTrail to write, and create the Amazon CloudWatch Logs log group:
 
-```
+```bash
 aws s3 mb s3://{{YOUR_TRAIL_BUCKET}}
 
 aws s3api put-bucket-policy --bucket {{YOUR_TRAIL_BUCKET}} --policy '{
@@ -40,7 +40,7 @@ aws logs create-log-group --log-group-name bedrock-kb-cloudtrail
 
 Create an IAM role that allows CloudTrail to deliver logs to the log group:
 
-```
+```bash
 aws iam create-role \
   --role-name CloudTrail-CWLogs-Role \
   --assume-role-policy-document '{
@@ -67,7 +67,7 @@ aws iam put-role-policy \
 
 Create the trail, configure it to capture Amazon Bedrock knowledge base data events, and start logging:
 
-```
+```bash
 aws cloudtrail create-trail \
   --name bedrock-kb-data-events \
   --s3-bucket-name {{YOUR_TRAIL_BUCKET}} \
@@ -94,7 +94,7 @@ Create metric filters to track retrieval calls and errors when AWS Quick invokes
 
 **Call volume metric** — tracks retrieval call volume to your managed knowledge base.
 
-```
+```bash
 aws logs put-metric-filter \
   --log-group-name bedrock-kb-cloudtrail \
   --filter-name QuickSight-Retrieve-CallCount-{{KB_ID}} \
@@ -109,7 +109,7 @@ aws logs put-metric-filter \
 
 **Error metric** — the following example counts `Retrieve` calls from AWS Quick that fail with `AccessDenied`. This alarm fires when the AWS Quick service role is missing permissions or when a cross-account resource policy is misconfigured. You can create additional metric filters for other error codes such as `ThrottlingException` depending on your monitoring needs.
 
-```
+```bash
 aws logs put-metric-filter \
   --log-group-name bedrock-kb-cloudtrail \
   --filter-name QuickSight-Retrieve-AccessDenied-{{KB_ID}} \
@@ -127,7 +127,7 @@ aws logs put-metric-filter \
 
 Create an alarm that triggers when access denied errors occur. Optionally add an SNS topic ARN to `--alarm-actions` for notifications.
 
-```
+```bash
 aws cloudwatch put-metric-alarm \
   --alarm-name QuickSight-Retrieve-AccessDenied-{{KB_ID}} \
   --metric-name RetrieveAccessDeniedCount \

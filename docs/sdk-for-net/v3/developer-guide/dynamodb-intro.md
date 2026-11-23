@@ -29,7 +29,7 @@ The following examples show you how to use the low-level model to create a table
 
 In the following example, you create a table by using the `CreateTable` method of the `AmazonDynamoDBClient` class. The `CreateTable` method uses an instance of the `CreateTableRequest` class that contains characteristics such as required item attribute names, primary key definition, and throughput capacity. The `CreateTable` method returns an instance of the `CreateTableResponse` class.
 
-```
+```csharp
 // using Amazon.DynamoDBv2;
 // using Amazon.DynamoDBv2.Model;
 
@@ -90,7 +90,7 @@ if (!currentTables.Contains("AnimalsInventory"))
 
 Before you can change or modify a table, the table has to be ready for modification. The following example shows how to use the low-level model to verify that a table in DynamoDB is ready. In this example, the target table to check is referenced through the `DescribeTable` method of the `AmazonDynamoDBClient` class. Every five seconds, the code checks the value of the table’s `TableStatus` property. When the status is set to `ACTIVE`, the table is ready to be modified.
 
-```
+```csharp
 // using Amazon.DynamoDBv2;
 // using Amazon.DynamoDBv2.Model;
 
@@ -129,7 +129,7 @@ do
 
 In the following example, you use the low-level model to insert two items into a table in DynamoDB. Each item is inserted through the `PutItem` method of the `AmazonDynamoDBClient` class, using an instance of the `PutItemRequest` class. Each of the two instances of the `PutItemRequest` class takes the name of the table that the items will be inserted in, with a series of item attribute values.
 
-```
+```csharp
 // using Amazon.DynamoDBv2;
 // using Amazon.DynamoDBv2.Model;
 
@@ -181,7 +181,7 @@ To perform data operations using the document model, you must first create an in
 
 The first mechanism is to use one of the static `LoadTable` methods of the [`Table`](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/DynamoDBv2/TTable.html) class, similar to the following example:
 
-```
+```cs
 var client = new AmazonDynamoDBClient();
 Table table = Table.LoadTable(client, "Reply");
 ```
@@ -193,7 +193,7 @@ While this mechanism works, under certain conditions, it can sometimes lead to a
 
 An alternative mechanism, the [`TableBuilder`](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/DynamoDBv2/TTableBuilder.html) class, was introduced in [version 3.7.203 of the AWSSDK.DynamoDBv2 NuGet package](https://www.nuget.org/packages/AWSSDK.DynamoDBv2/3.7.203). This mechanism can address the behaviors mentioned above by removing certain implicit method calls; specifically, the `DescribeTable` method. This mechanism is used in a manner similar to the following example:
 
-```
+```cs
 var client = new AmazonDynamoDBClient();
 var table = new TableBuilder(client, "Reply")
     .AddHashKey("Id", DynamoDBEntryType.String)
@@ -209,7 +209,7 @@ For more information about this alternative mechanism, see again the blog post [
 
 In the following example, a reply is inserted into the Reply table through the `PutItemAsync` method of the `Table` class. The `PutItemAsync` method takes an instance of the `Document` class; the `Document` class is simply a collection of initialized attributes.
 
-```
+```csharp
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DocumentModel;
 
@@ -231,7 +231,7 @@ await table.PutItemAsync(newReply);
 
 In the following example, a reply is retrieved through the `GetItemAsync` method of the `Table` class. To determine the reply to get, the `GetItemAsync` method uses the hash-and-range primary key of the target reply.
 
-```
+```csharp
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DocumentModel;
 
@@ -249,7 +249,7 @@ Console.WriteLine("Message = " + reply["Message"]);
 
 The preceding example implicitly converts the table values to strings for the `WriteLine` method. You can do explicit conversions by using the various "As[type]" methods of the `DynamoDBEntry` class. For example, you can explicitly convert the value for `Id` from a `Primitive` data type to a GUID through the `AsGuid()` method:
 
-```
+```csharp
 var guid = reply["Id"].AsGuid();
 ```
 
@@ -269,7 +269,7 @@ The following examples show you how to define a .NET class that represents a Dyn
 
 In the following example of a class definition, the `DynamoDBTable` attribute specifies the table name, while the `DynamoDBHashKey` and `DynamoDBRangeKey` attributes model the table's hash-and-range primary key. The `DynamoDBGlobalSecondaryIndexHashKey` attribute is defined so that a query for replies by a specific author can be constructed.
 
-```
+```default
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 
@@ -300,7 +300,7 @@ To use the object persistence programming model for DynamoDB, you must create a 
 
 The following example shows how to create the most basic context.
 
-```
+```cs
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 
@@ -312,7 +312,7 @@ var context = new DynamoDBContext(client);
 
 The following example shows how you might additionally set the `DisableFetchingTableMetadata` property of the `DynamoDBContextConfig` class to prevent implicit calls to the `DescribeTable` method.
 
-```
+```cs
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 
@@ -334,7 +334,7 @@ For more information about these behaviors, see the blog post [Improved DynamoDB
 
 In this example, an item is inserted through the `SaveAsync` method of the `DynamoDBContext` class, which takes an initialized instance of the .NET class that represents the item.
 
-```
+```cs
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 
@@ -362,7 +362,7 @@ await context.SaveAsync<Reply>(reply, new DynamoDBOperationConfig
 
 In this example, a query is created to find all the records of "Author1" by using the `QueryAsync` method of the `DynamoDBContext` class. Then, items are retrieved through the query's `GetNextSetAsync` method.
 
-```
+```cs
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 
@@ -395,7 +395,7 @@ The following is some additional information about this property.
 + This property can be set globally in your `app.config` or `web.config` file if you're using .NET Framework.
 + This property can be set globally by using the [`AWSConfigsDynamoDB`](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Amazon/TAWSConfigsDynamoDB.html) class, as shown in the following example.
 
-  ```
+  ```cs
   // Set the DisableFetchingTableMetadata property globally
   // before constructing any context objects.
   AWSConfigsDynamoDB.Context.DisableFetchingTableMetadata = true;
@@ -405,7 +405,7 @@ The following is some additional information about this property.
   ```
 + In some cases, you can't add DynamoDB attributes to a .NET class; for example, if the class is defined in a dependency. In such cases, it's possible to still take advantage of the `DisableFetchingTableMetadata` property. To do so, use the [`TableBuilder`](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/DynamoDBv2/TTableBuilder.html) class in addition to the `DisableFetchingTableMetadata` property. The `TableBuilder` class was also introduced in [version 3.7.203 of the AWSSDK.DynamoDBv2 NuGet package](https://www.nuget.org/packages/AWSSDK.DynamoDBv2/3.7.203).
 
-  ```
+  ```cs
   // Set the DisableFetchingTableMetadata property globally
   // before constructing any context objects.
   AWSConfigsDynamoDB.Context.DisableFetchingTableMetadata = true;

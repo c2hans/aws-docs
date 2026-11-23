@@ -61,7 +61,7 @@ To view a code example for using the `$$DESCEND` command, choose the tab for the
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function redactPatients() {
@@ -89,7 +89,7 @@ redactPatients();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def redact_patients():

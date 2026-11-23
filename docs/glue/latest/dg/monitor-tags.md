@@ -73,7 +73,7 @@ aws glue create-job --name job-test-tags --role MyJobRole --command Name=glueetl
 
 **CloudFormation JSON**
 
-```
+```json
 {
   "Description": "AWS Glue Job Test Tags",
   "Resources": {

@@ -49,6 +49,8 @@ ExpressLink Evaluation Kits are able to use the ExpressLink staging account to d
 
 <a name="elpg-figure5"></a>![Figure 5 - ExpressLink evaluation kit Quick Connect flow](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/QuickConnect_Visualizer.r.png)
 
+Figure 5 - ExpressLink evaluation kit Quick Connect flow
+
 Developers are also able to register their ExpressLink modules to their private developer's accounts and proceed to application development with a few simple, manual steps, including:
 + extracting the device certificate
 + uploading it to their private accounts
@@ -112,6 +114,8 @@ The configuration parameter Endpoint (see [Table 2 - Configuration Dictionary Pe
 **12.3.2.5**   When (and only when) in the *onboarded* state, a connected ExpressLink module subscribes automatically to several AWS-reserved topics as required to support OTA and other core ExpressLink functionality. In the same way, features dependent on the AWS IoT Device Defender and AWS IoT Device Shadow services are supported only when a module is in the *onboarded* state.
 
 <a name="elpg-figure6"></a>![Figure 6 - ExpressLink onboarding states diagram](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/image5.png)
+
+Figure 6 - ExpressLink onboarding states diagram
 
 Once onboarded, all ExpressLink modules behave as fully owned devices and connect to the customer/OEM account as the ExpressLink things are transferred to the chosen OEM registry. It is the responsibility of the OEM to manage the product life cycle, use the OTA services to apply module updates (with images provided by the ExpressLink module vendor) and apply host processor application updates as needed.
 

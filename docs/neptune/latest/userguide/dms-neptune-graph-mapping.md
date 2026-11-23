@@ -61,7 +61,7 @@ The W3 Recommendation at [R2RML: RDB to RDF Mapping Language](https://www.w3.org
 
 A comparable `GraphMappingConfig` for property-graph data is a JSON object that provides a mapping rule for each graph entity to be genereated from the source data. The following template shows what each rule in this object looks like:
 
-```
+```json
 {
   "rules": [
     {
@@ -119,7 +119,7 @@ Note that the presence of a vertex label implies that the vertex is being create
 
 Here is a sample rule for an employee record:
 
-```
+```json
 {
   "rules": [
     {

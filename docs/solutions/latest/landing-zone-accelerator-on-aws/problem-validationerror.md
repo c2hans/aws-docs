@@ -23,7 +23,7 @@ Depending on your deployment, you might choose to remove an existing solution-pr
 
 1. Deactivate termination protection on the stack by running the [update-termination-protection](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-termination-protection.html) command with the CLI:
 
-   ```
+   ```bash
    $ aws cloudformation update-termination-protection --stack-name <stack-name> --no-enable-termination-protection
    ```
 

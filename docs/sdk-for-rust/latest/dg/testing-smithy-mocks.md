@@ -21,7 +21,7 @@ When writing tests for code that uses AWS services, you often want to avoid maki
 
 In a command prompt for your project directory, add the [`aws-smithy-mocks`](https://crates.io/crates/aws-smithy-mocks) crate as a dependency:
 
-```
+```sh
 $ cargo add --dev aws-smithy-mocks
 ```
 
@@ -29,7 +29,7 @@ Using the `--dev` [option](https://doc.rust-lang.org/cargo/commands/cargo-add.ht
 
 This example code also use Amazon Simple Storage Service as the example AWS service, and requires feature `test-util`.
 
-```
+```sh
 $ cargo add aws-sdk-s3 --features test-util
 ```
 
@@ -40,7 +40,7 @@ This adds the crate to the `[dependencies]` section of your `Cargo.toml` file.
 
  Here's a simple example of how to use `aws-smithy-mocks` to test code that interacts with Amazon Simple Storage Service (Amazon S3):
 
-```
+```rust
 use aws_sdk_s3::operation::get_object::GetObjectOutput;
 use aws_sdk_s3::primitives::ByteStream;
 use aws_smithy_mocks::{mock, mock_client};
@@ -86,7 +86,7 @@ Rules are created using the `mock!` macro, which takes a client operation as an 
 
  You can make rules more specific by matching on request properties:
 
-```
+```rust
 let rule = mock!(Client::get_object)
     .match_requests(|req| req.bucket() == Some("test-bucket") && req.key() == Some("test-key"))
     .then_output(|| {
@@ -101,7 +101,7 @@ let rule = mock!(Client::get_object)
 
 You can return different types of responses:
 
-```
+```rust
 // Return a successful response
 let success_rule = mock!(Client::get_object)
     .then_output(|| GetObjectOutput::builder().build());
@@ -125,7 +125,7 @@ let http_rule = mock!(Client::get_object)
 
 One of the most powerful features of `aws-smithy-mocks` is the ability to test retry behavior by defining sequences of responses:
 
-```
+```rust
 // Create a rule that returns 503 twice, then succeeds
 let retry_rule = mock!(aws_sdk_s3::Client::get_object)
     .sequence()
@@ -148,7 +148,7 @@ let retry_rule = mock!(Client::get_object)
 
 You can control how rules are matched and applied using rule modes:
 
-```
+```rust
 // Sequential mode: Rules are tried in order, and when a rule is exhausted, the next rule is used
 let client = mock_client!(aws_sdk_s3, RuleMode::Sequential, [&rule1, &rule2]);
 
@@ -161,7 +161,7 @@ let client = mock_client!(aws_sdk_s3, RuleMode::MatchAny, [&rule1, &rule2]);
 
 Here's a more complete example showing how to test retry behavior:
 
-```
+```rust
 use aws_sdk_s3::operation::get_object::GetObjectOutput;
 use aws_sdk_s3::config::RetryConfig;
 use aws_sdk_s3::primitives::ByteStream;
@@ -212,7 +212,7 @@ async fn test_retry_behavior() {
 
 You can also create rules that return different responses based on request parameters:
 
-```
+```rust
 use aws_sdk_s3::operation::get_object::{GetObjectOutput, GetObjectError};
 use aws_sdk_s3::types::error::NoSuchKey;
 use aws_sdk_s3::Client;

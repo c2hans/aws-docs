@@ -48,7 +48,7 @@ Even if the native service API is in camelCase, for example the API action `star
 
 **Response syntax**
 
-```
+```json
 {
   "Output": {
     "Message": {
@@ -87,7 +87,7 @@ The Step Functions resource URI uses `bedrockagentcore` (no hyphen), while Amazo
 
 **Example basic invocation with model override and system prompt**
 
-```
+```json
 {
   "Type": "Task",
   "Resource": "arn:aws:states:::bedrockagentcore:invokeHarness",
@@ -116,7 +116,7 @@ The Step Functions resource URI uses `bedrockagentcore` (no hyphen), while Amazo
 
 **Example invocation with tools (browser)**
 
-```
+```json
 {
   "Type": "Task",
   "Resource": "arn:aws:states:::bedrockagentcore:invokeHarness",
@@ -157,7 +157,7 @@ The `InvokeHarness` API can fail with a variety of errors, including throttling,
 
 The following example shows a Task state with `Retry` and `Catch` fields for error handling:
 
-```
+```json
 {
   "Type": "Task",
   "Resource": "arn:aws:states:::bedrockagentcore:invokeHarness",
@@ -211,7 +211,7 @@ In the following policy examples, replace the placeholder values with your own v
 
  The following example policy allows invoking a specific Amazon Bedrock AgentCore harness by ARN.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -233,7 +233,7 @@ In the following policy examples, replace the placeholder values with your own v
 
  The following example policy allows invoking any Amazon Bedrock AgentCore harness in your account. We recommend scoping down to a specific harness ARN when possible.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

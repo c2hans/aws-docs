@@ -32,7 +32,7 @@ From the console, follow these steps to delete a run cache.
 
 Use the **delete-run-cache** CLI command to delete a run cache.
 
-```
+```bash
 aws omics delete-run-cache \
       --id "my cache id"
 ```

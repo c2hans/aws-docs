@@ -10,7 +10,7 @@ Learn how to convert AWS ParallelCluster managed storage to external storage.
 
 The procedures are based on the following example configuration file snippet.
 
-```
+```yaml
 ...
   - MountDir: /fsx
     Name: fsx
@@ -25,7 +25,7 @@ The procedures are based on the following example configuration file snippet.
 
 1. Set the `DeletionPolicy` to `Retain` in the cluster configuration file.
 
-   ```
+   ```yaml
    ...
       - MountDir: /fsx
         Name: fsx
@@ -44,7 +44,7 @@ The procedures are based on the following example configuration file snippet.
 
 1. Remove the `SharedStorage` section from the cluster configuration file.
 
-   ```
+   ```yaml
    ...
    ...
    ```

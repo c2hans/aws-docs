@@ -25,6 +25,7 @@ This dashboard includes:
 + [Agent status drill down](#agent-status-drill-down)
 + [Customer segment filters and groupings](#queue-performance-dashboard-customer-segments)
 + [Dashboard functionality limitations](#queue-performance-dashboard-functionality-limitations)
++ [Force agent logout](dashboard-force-agent-logout.md)
 
 ## Enable access to the dashboard
 <a name="queue-performance-dashboard-enable-access"></a>

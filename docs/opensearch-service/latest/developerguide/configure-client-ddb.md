@@ -39,7 +39,7 @@ After you have your DynamoDB table set up, [set up the pipeline role](pipeline-s
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -115,7 +115,7 @@ You can also use an AWS KMS customer managed key to encrypt the export data file
 
 You can then configure an OpenSearch Ingestion pipeline like the following, which specifies DynamoDB as the source. This sample pipeline ingests data from `table-a` with the PITR snapshot, followed by events from DynamoDB Streams. A start position of `LATEST` indicates that the pipeline should read the latest data from DynamoDB Streams.
 
-```
+```YAML
 version: "2"
 cdc-pipeline:
   source:

@@ -125,7 +125,7 @@ HTTP Status Code: 429
 
 The following example shows a request and response.
 
-```
+```json
 POST https://connect.us-west-2.amazonaws.com/predefined-attributes/InstanceId/Name HTTP/1.1
 Content-type: application/json
 {

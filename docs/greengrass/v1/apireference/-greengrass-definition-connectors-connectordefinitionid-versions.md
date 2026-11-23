@@ -41,7 +41,7 @@ type: integer
 ### CLI
 <a name="-greengrass-definition-connectors-connectordefinitionid-versions-get-cli"></a>
 
-```
+```bash
 aws greengrass list-connector-definition-versions \
   --connector-definition-id <value> \
   [--next-token <value>] \
@@ -52,7 +52,7 @@ aws greengrass list-connector-definition-versions \
 
 cli-input-json format:
 
-```
+```json
 {
 "ConnectorDefinitionId": "string",
 "NextToken": "string",
@@ -67,7 +67,7 @@ cli-input-json format:
 
  [ ListVersionsResponse](definitions-listversionsresponse.md)
 
-```
+```json
 {
 "Versions": [
   {
@@ -110,7 +110,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -160,7 +160,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "Connectors": [
   {
@@ -216,7 +216,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-connectors-connectordefinitionid-versions-post-cli"></a>
 
-```
+```bash
 aws greengrass create-connector-definition-version \
   --connector-definition-id <value> \
   [--connectors <value>] \
@@ -227,7 +227,7 @@ aws greengrass create-connector-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "ConnectorDefinitionId": "string",
 "Connectors": [
@@ -252,7 +252,7 @@ cli-input-json format:
 
  [ VersionInformation](definitions-versioninformation.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -280,7 +280,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

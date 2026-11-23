@@ -106,7 +106,7 @@ The `IssueCertificateDetails` event complements the existing `SignCertificate` e
 **Example: Successful certificate issuance**
 The following example shows an `IssueCertificateDetails` event for a successfully issued certificate.
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -159,7 +159,7 @@ The following example shows an `IssueCertificateDetails` event for a successfull
 **Example: Failed certificate issuance**
 The following example shows an `IssueCertificateDetails` event for a failed certificate issuance. When issuance fails, the `status` field is `FAILED` and the `statusReason` field describes the cause. The validity fields (`notBefore`, `notAfter`) and `issuedAt` are omitted because no certificate was issued. Fields derived from the TBS certificate (`tbsCertificate`, `subject`, `issuerName`, `serialNumber`, and `issuerAuthorityKeyIdentifier`) are present only when the failure occurred after AWS Private CA generated the TBS certificate.
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -241,7 +241,7 @@ The following are examples of AWS Private CA CloudTrail events.
 **Example 1: Management event, `IssueCertificate`**
 The following example shows a CloudTrail log entry that demonstrates the `IssueCertificate` action.
 
-```
+```json
 {
    "version":"0",
    "id":"{{event_ID}}",
@@ -263,7 +263,7 @@ The following example shows a CloudTrail log entry that demonstrates the `IssueC
 **Example 2: Management event, `ImportCertificateAuthorityCertificate`**
 The following example shows a CloudTrail log entry that demonstrates the `ImportCertificateAuthorityCertificate` action.
 
-```
+```json
 {
    "eventVersion":"1.05",
    "userIdentity":{

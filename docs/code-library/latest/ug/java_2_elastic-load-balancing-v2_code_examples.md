@@ -30,7 +30,7 @@ The following code example shows how to get started using Elastic Load Balancing
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 
-```
+```java
 public class HelloLoadBalancer {
 
         public static void main(String[] args) {
@@ -59,7 +59,7 @@ The following code example shows how to use `CreateListener`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 
-```
+```java
     /*
      * Creates an Elastic Load Balancing load balancer that uses the specified
      * subnets
@@ -133,7 +133,7 @@ The following code example shows how to use `CreateLoadBalancer`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 
-```
+```java
     /*
      * Creates an Elastic Load Balancing load balancer that uses the specified
      * subnets
@@ -207,7 +207,7 @@ The following code example shows how to use `CreateTargetGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 
-```
+```java
     /*
      * Creates an Elastic Load Balancing target group. The target group specifies
      * how
@@ -241,7 +241,7 @@ The following code example shows how to use `DeleteLoadBalancer`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 
-```
+```java
     // Deletes a load balancer.
     public void deleteLoadBalancer(String lbName) {
         try {
@@ -275,7 +275,7 @@ The following code example shows how to use `DeleteTargetGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 
-```
+```java
     // Deletes the target group.
     public void deleteTargetGroup(String targetGroupName) {
         try {
@@ -299,7 +299,7 @@ The following code example shows how to use `DescribeTargetHealth`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 
-```
+```java
     // Checks the health of the instances in the target group.
     public List<TargetHealthDescription> checkTargetHealth(String targetGroupName) {
         DescribeTargetGroupsRequest targetGroupsRequest = DescribeTargetGroupsRequest.builder()
@@ -336,7 +336,7 @@ The following code example shows how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/resilient_service#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```java
 public class Main {
 
     public static final String fileName = "C:\\AWS\\resworkflow\\recommendations.json"; // Modify file location.
@@ -770,7 +770,7 @@ public class Main {
 ```
 Create a class that wraps Auto Scaling and Amazon EC2 actions.
 
-```
+```java
 public class AutoScaler {
 
     private static Ec2Client ec2Client;
@@ -1263,7 +1263,7 @@ public class AutoScaler {
 ```
 Create a class that wraps Elastic Load Balancing actions.
 
-```
+```java
 public class LoadBalancer {
     public ElasticLoadBalancingV2Client elasticLoadBalancingV2Client;
 
@@ -1457,7 +1457,7 @@ public class LoadBalancer {
 ```
 Create a class that uses DynamoDB to simulate a recommendation service.
 
-```
+```java
 public class Database {
 
     private static DynamoDbClient dynamoDbClient;
@@ -1587,7 +1587,7 @@ public class Database {
 ```
 Create a class that wraps Systems Manager actions.
 
-```
+```java
 public class ParameterHelper {
 
     String tableName = "doc-example-resilient-architecture-table";

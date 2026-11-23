@@ -8,13 +8,13 @@ source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/jdbc20-build-connec
 
 Use the connection URL to supply connection information to the data store that you are accessing. The following is the format of the connection URL for the Amazon Redshift JDBC driver version 2.x. Here, [Host] the endpoint of the Amazon Redshift server and [Port] is the number of the Transmission Control Protocol (TCP) port that the server uses to listen for client requests.
 
-```
+```java
 jdbc:redshift://[Host]:[Port]
 ```
 
 The following is the format of a connection URL that specifies some optional settings.
 
-```
+```java
 jdbc:redshift://[Host]:[Port]/[database];[Property1]=[Value];
 [Property2]=[Value];
 ```
@@ -37,7 +37,7 @@ For example, if your `PWD` value is `password:password`, a connection URL using 
 
 For example, suppose that you want to connect to port 9000 on an Amazon Redshift cluster in the US West (N. California) Region on AWS. You also want to access the database named `dev` and authenticate the connection using a database username and password. In this case, you use the following connection URL.
 
-```
+```java
 jdbc:redshift://redshift.company.us-west-1.redshift.amazonaws.com:9000/dev;UID=amazon;PWD=amazon
 ```
 

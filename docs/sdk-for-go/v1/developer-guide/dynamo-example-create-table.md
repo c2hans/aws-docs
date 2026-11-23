@@ -10,7 +10,7 @@ The following example uses the DynamoDB [CreateTable](https://docs.aws.amazon.c
 
 Create the file *DynamoDBCreateTable.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -23,7 +23,7 @@ import (
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials` and region from the shared configuration file `~/.aws/config`, and create the DynamoDB client.
 
-```
+```go
 // Initialize a session that the SDK will use to load
 // credentials from the shared credentials file ~/.aws/credentials
 // and region from the shared configuration file ~/.aws/config.
@@ -37,7 +37,7 @@ svc := dynamodb.New(sess)
 
 Call **CreateTable**. If an error occurs, print the error and exit. If no error occurs, print an message that the table was created.
 
-```
+```go
 // Create table Movies
 tableName := "Movies"
 

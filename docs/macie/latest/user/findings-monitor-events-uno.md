@@ -50,7 +50,7 @@ With this configuration, User Notifications monitors EventBridge events for your
 
 The underlying JSON pattern for the event rule is:
 
-```
+```json
 {
     "source": ["aws.macie"],
     "detail-type": ["Macie Finding"]
@@ -63,7 +63,7 @@ If you create a rule that uses a custom JSON pattern, you can create multiple no
 
 For example, you might create one rule that notifies you if Macie generates or updates a *Policy:IAMUser/S3BucketPublic* finding. In this case, the pattern for the rule might be:
 
-```
+```json
 {
     "source": ["aws.macie"],
     "detail-type": ["Macie Finding"],
@@ -75,7 +75,7 @@ For example, you might create one rule that notifies you if Macie generates or u
 
 And you might create another rule that notifies you if Macie generates a sensitive data finding for an S3 bucket that's publicly accessible. In this case, the pattern for the rule might be:
 
-```
+```json
 {
     "source": ["aws.macie"],
     "detail-type": ["Macie Finding"],

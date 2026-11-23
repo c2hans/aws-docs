@@ -16,7 +16,7 @@ Before you use user-generated KMS master keys, ensure that your Kinesis stream p
 
 When Amazon Kinesis Data Streams calls AWS KMS on your behalf, it passes an encryption context to AWS KMS that can be used as a condition for authorization in key policies and grants. Kinesis Data Streams uses the stream ARN as the encryption context in all AWS KMS calls.
 
-```
+```JSON
 "encryptionContext": {
     "aws:kinesis:arn": "arn:aws:kinesis:{{region}}:{{account-id}}:stream/{{stream-name}}"
 }
@@ -36,7 +36,7 @@ Your Kinesis stream producers must have the `kms:GenerateDataKey` permission.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -71,7 +71,7 @@ Your Kinesis stream consumers must have the `kms:Decrypt` permission.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

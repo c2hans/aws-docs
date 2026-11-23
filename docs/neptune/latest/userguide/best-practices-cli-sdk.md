@@ -31,7 +31,7 @@ The `--cli-read-timeout 0` parameter disables the read timeout, allowing the AWS
 ------
 #### [ Python (boto3) ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -51,7 +51,7 @@ Setting `read_timeout=None` disables the read timeout. Setting `total_max_attemp
 ------
 #### [ Java V2 SDK ]
 
-```
+```java
 import software.amazon.awssdk.services.neptunedata.NeptunedataClient;
 import software.amazon.awssdk.core.client.config.ClientOverrideConfiguration;
 import software.amazon.awssdk.core.retry.RetryPolicy;

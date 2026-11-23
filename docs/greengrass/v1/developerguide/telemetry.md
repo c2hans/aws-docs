@@ -72,7 +72,7 @@ If you're running an earlier version and you don't want to use telemetry, you do
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -140,12 +140,12 @@ The following command gets the telemetry settings of a Greengrass core.
 
   To get the thing name, you use the [get-core-definition-version](https://docs.aws.amazon.com/cli/latest/reference/greengrass/get-core-definition-version.html) command. The command returns the ARN of the thing that contains the thing name.
 
-```
+```bash
 aws greengrass get-thing-runtime-configuration --thing-name {{core-thing-name}}
 ```
 The command returns a `GetCoreRuntimeConfigurationResponse` object in the JSON response. For example:
 
-```
+```json
 {
     "RuntimeConfiguration": {
         "TelemetryConfiguration": {
@@ -162,7 +162,7 @@ The following command updates the telemetry settings for a Greengrass core.
 
   To get the thing name, you use the [get-core-definition-version](https://docs.aws.amazon.com/cli/latest/reference/greengrass/get-core-definition-version.html) command. The command returns the ARN of the thing that contains the thing name.
 
-```
+```bash
 aws greengrass update-thing-runtime-configuration --thing-name {{core-thing-name}} --telemetry-configuration  '{
     "RuntimeConfiguration": {
         "TelemetryConfiguration": {
@@ -173,7 +173,7 @@ aws greengrass update-thing-runtime-configuration --thing-name {{core-thing-name
 }
 ```
 
-```
+```bash
 aws greengrass update-thing-runtime-configuration --thing-name {{core-thing-name}} --telemetry-configuration "{\"TelemetryConfiguration\":{\"ConfigurationSyncStatus\":\"InSync\",\"Telemetry\":\"Off\"}}"
 ```
 Changes to telemetry settings have been applied if the `ConfigurationSyncStatus` is `InSync`. The changes take effect at runtime. You don't need to deploy the group.
@@ -203,7 +203,7 @@ You can create rules in Amazon EventBridge that define how to process telemetry 
 
 The event for a deployment state change including the telemetry data uses the following format:
 
-```
+```json
 {
     "version": "0",
     "id": "f70f943b-9ae2-e7a5-fec4-4c22178a3e6a",

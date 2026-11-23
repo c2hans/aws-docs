@@ -26,7 +26,7 @@ Required: Yes
  ** ProviderType **   <a name="codeconnections-Type-SyncConfiguration-ProviderType"></a>
 The connection provider type associated with a specific sync configuration, such as GitHub.
 Type: String
-Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps`
+Valid Values: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged | AzureDevOps | GitHubEnterpriseCloudDataResidency`
 Required: Yes
 
  ** RepositoryLinkId **   <a name="codeconnections-Type-SyncConfiguration-RepositoryLinkId"></a>

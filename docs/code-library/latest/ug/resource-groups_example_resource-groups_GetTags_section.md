@@ -39,7 +39,7 @@ For more information, see [What are resource groups?](https://docs.aws.amazon.co
 **Tools for PowerShell V4**
 **Example 1: This example lists tags for the given resource group arn**
 
-```
+```powershell
 Get-RGResourceTag -Arn arn:aws:resource-groups:eu-west-1:123456789012:group/workboxes
 ```
 **Output:**
@@ -54,7 +54,7 @@ Instances workboxes
 **Tools for PowerShell V5**
 **Example 1: This example lists tags for the given resource group arn**
 
-```
+```powershell
 Get-RGResourceTag -Arn arn:aws:resource-groups:eu-west-1:123456789012:group/workboxes
 ```
 **Output:**

@@ -39,6 +39,7 @@ The request does not have a request body.
 HTTP/1.1 202
 <?xml version="1.0" encoding="UTF-8"?>
 <VpcOrigin>
+   <AccountId>string</AccountId>
    <Arn>string</Arn>
    <CreatedTime>timestamp</CreatedTime>
    <Id>string</Id>
@@ -48,6 +49,7 @@ HTTP/1.1 202
       <Arn>string</Arn>
       <HTTPPort>integer</HTTPPort>
       <HTTPSPort>integer</HTTPSPort>
+      <IpAddressType>string</IpAddressType>
       <Name>string</Name>
       <OriginProtocolPolicy>string</OriginProtocolPolicy>
       <OriginSslProtocols>
@@ -70,6 +72,10 @@ The following data is returned in XML format by the service.
  ** [VpcOrigin](#API_DeleteVpcOrigin_ResponseSyntax) **   <a name="cloudfront-DeleteVpcOrigin-response-VpcOrigin"></a>
 Root level tag for the VpcOrigin parameters.
 Required: Yes
+
+ ** [AccountId](#API_DeleteVpcOrigin_ResponseSyntax) **   <a name="cloudfront-DeleteVpcOrigin-response-AccountId"></a>
+The account ID of the AWS account that owns the VPC origin.
+Type: String
 
  ** [Arn](#API_DeleteVpcOrigin_ResponseSyntax) **   <a name="cloudfront-DeleteVpcOrigin-response-Arn"></a>
 The VPC origin ARN.

@@ -10,6 +10,8 @@ For example, many companies have a specific syntax for employee IDs. One such sy
 
 For a demonstration of how keywords can help you find sensitive data and avoid false positives, watch the following video:
 
+[![AWS Videos](https://img.youtube.com/vi/GBaIAwLYN-o/0.jpg)](https://www.youtube.com/watch?v=GBaIAwLYN-o)
+
 In addition to detection criteria, you can optionally specify custom severity settings for findings that a custom data identifier produces. Severity can be based on the number of occurrences of text that match the identifier's detection criteria. If you don't specify these settings, Macie automatically assigns the *Medium* severity to all the findings that the identifier produces. Severity doesn't change based on the number of occurrences of text that match the identifier's detection criteria.
 
 For detailed information about these and other settings, see [Configuration options for custom data identifiers](cdis-options.md).

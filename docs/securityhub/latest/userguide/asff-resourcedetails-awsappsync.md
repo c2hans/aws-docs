@@ -17,7 +17,7 @@ The following example shows the ASFF for the `AwsAppSyncGraphQLApi` object. To v
 
 **Example**
 
-```
+```JSON
 "AwsAppSyncGraphQLApi": {
     "AdditionalAuthenticationProviders": [
     {

@@ -54,7 +54,7 @@ The following AWS CLI example creates a `String` parameter with the data type `i
 ------
 #### [ Linux & macOS ]
 
-```
+```bash
 aws ssm put-parameter \
     --name "/myapp/config/port" \
     --value "443" \
@@ -65,7 +65,7 @@ aws ssm put-parameter \
 ------
 #### [ Windows ]
 
-```
+```bash
 aws ssm put-parameter ^
     --name "/myapp/config/port" ^
     --value "443" ^

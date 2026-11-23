@@ -20,7 +20,7 @@ Modify how SAP HANA services are managed to enable cluster takeover and operatio
 
 The pacemaker software creates a haclient operating system group. To ensure proper cluster access permissions, add the sidadm user to this group on all cluster nodes. Run the following command as root:
 
-```
+```console
 # usermod -a -G haclient hdbadm
 ```
 
@@ -31,7 +31,7 @@ To prevent automatic SAP HANA startup by the SAP start framework when an instanc
 
 As <sid>adm, edit the SAP HANA profile `<SID>_HDB<hana_sys_nr>_<hostname>` and modify or add the Autostart parameter, ensuring it is set to 0:
 
-```
+```text
 Autostart = 0
 ```
 
@@ -51,13 +51,13 @@ Follow these steps to configure the SAPHanaSR hook:
 
    Check the expected package is installed
 
-   ```
+   ```console
    # rpm -qa SAPHanaSR
    ```
 
    Review the man pages for more details.
 
-   ```
+   ```console
    # man SAPHanaSR
    # man SAPHanaSR.py
    ```
@@ -67,13 +67,13 @@ Follow these steps to configure the SAPHanaSR hook:
 
    Check the expected package is installed
 
-   ```
+   ```console
    # rpm -qa SAPHanaSR-angi
    ```
 
    Review the man pages for more details
 
-   ```
+   ```console
    # man SAPHanaSR-angi
    # man SAPHanaSR.py
    ```
@@ -91,7 +91,7 @@ Follow these steps to configure the SAPHanaSR hook:
 ------
 #### [ SAPHanaSR ]
 
-   ```
+   ```ini
    [ha_dr_provider_SAPHanaSR]
    provider = SAPHanaSR
    path = /usr/share/SAPHanaSR
@@ -107,7 +107,7 @@ Update the path if you have modified the package location.
 ------
 #### [ SAPHanaSR-angi ]
 
-   ```
+   ```ini
    [ha_dr_provider_sushanasr]
    provider = susHanaSR
    path = /usr/share/SAPHanaSR-angi
@@ -132,7 +132,7 @@ Update the path if you have modified the package location.
 
    1. Add the following configuration, replacing <sid> with lowercase system ID and <SID> with uppercase system ID:
 
-      ```
+      ```text
       Cmnd_Alias SITE_SOK = /usr/sbin/crm_attribute -n hana_<sid>_site_srHook_[a-zA-Z0-9_]* -v SOK -t crm_config -s SAPHanaSR
       Cmnd_Alias SITE_SFAIL = /usr/sbin/crm_attribute -n hana_<sid>_site_srHook_[a-zA-Z0-9_]* -v SFAIL -t crm_config -s SAPHanaSR
       Cmnd_Alias HOOK_HELPER  = /usr/sbin/SAPHanaSR-hookHelper --sid=<SID> --case=checkTakeover
@@ -141,7 +141,7 @@ Update the path if you have modified the package location.
 
       For example:
 
-      ```
+      ```text
       Cmnd_Alias SITE_SOK = /usr/sbin/crm_attribute -n hana_hdb_site_srHook_[a-zA-Z0-9_]* -v SOK -t crm_config -s SAPHanaSR
       Cmnd_Alias SITE_SFAIL = /usr/sbin/crm_attribute -n hana_hdb_site_srHook_[a-zA-Z0-9_]* -v SFAIL -t crm_config -s SAPHanaSR
       Cmnd_Alias HOOK_HELPER  = /usr/sbin/SAPHanaSR-hookHelper --sid=HDB --case=checkTakeover
@@ -154,7 +154,7 @@ The syntax uses a glob expression which allows it to adapt to different HSR site
 
    As <sid>adm reload the changes to `global.ini` using either a HANA restart or the command:
 
-   ```
+   ```console
    hdbadm> hdbnsutil -reconfig
    ```
 
@@ -162,7 +162,7 @@ The syntax uses a glob expression which allows it to adapt to different HSR site
 
    As <sid>adm, verify the hook is loaded:
 
-   ```
+   ```console
    hdbadm> cdtrace
    hdbadm> grep "loading HA/DR Provider" nameserver*
    ```
@@ -180,13 +180,13 @@ susTkOver.py prevents a manual takeover of the HANA primary if the SAP HANA mult
 
 For more details:
 
-```
+```console
 # man susTkOver.py
 ```
 
 In addition to the steps for the previous hook, add an additional entry in the global.ini on each node. It is necessary to restart Hana:
 
-```
+```ini
 [ha_dr_provider_susTkOver]
 provider = susTkOver
 path = /usr/share/SAPHanaSR
@@ -205,7 +205,7 @@ In the default configuration, a failure of the SAP HANA IndexServer will result 
 **Important**
 As this hook can be configured using several different options. We suggest consulting the man page or SUSE documentation, and evaluating the best option for your setup.
 
-```
+```console
 # man susChksrv.py
 ```
 
@@ -227,7 +227,7 @@ For more information, see SAP Documentation: [SAP HANA Fast Restart Option](http
 
 Review SAP HANA version and systemd version to determine whether the prerequisites for systemd are available:
 
-```
+```console
 sidadm> systemctl --version
 ```
 
@@ -243,19 +243,19 @@ When using an SAP HANA version with systemd integration (SPS07 and later), you m
 
    Use the following command as root to find SAP systemd services:
 
-   ```
+   ```console
    # systemctl list-unit-files | grep -i sap
    ```
 
 1. Create a pacemaker service drop-in file:
 
-   ```
+   ```console
    # mkdir -p /etc/systemd/system/pacemaker.service.d/
    ```
 
 1. Create the file /etc/systemd/system/pacemaker.service.d/50-saphana.conf with the following content:
 
-   ```
+   ```ini
    [Unit]
    Description=pacemaker needs SAP instance service
    Documentation=man:SAPHanaSR_basic_cluster(7)
@@ -265,13 +265,13 @@ When using an SAP HANA version with systemd integration (SPS07 and later), you m
 
 1. Enable the drop-in file by reloading systemd:
 
-   ```
+   ```console
    # systemctl daemon-reload
    ```
 
 1. Verify that the change is active:
 
-   ```
+   ```console
    # systemctl show pacemaker.service | grep SAP<SID>_<hana_sys_nr>
    ```
 

@@ -40,7 +40,7 @@ Choose a menu based on your access preference to AWS HealthImaging.
 
 **AWS CLI with Bash script**
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -163,7 +163,7 @@ Output:
 
 **SDK for Java 2.x**
 
-```
+```java
     public static String createMedicalImageDatastore(MedicalImagingClient medicalImagingClient,
             String datastoreName) {
         try {
@@ -188,7 +188,7 @@ Output:
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { CreateDatastoreCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -223,7 +223,7 @@ export const createDatastore = async (datastoreName = "DATASTORE_NAME") => {
 
 **SDK for Python (Boto3)**
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -250,7 +250,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```
@@ -262,7 +262,7 @@ The following code instantiates the MedicalImagingWrapper object.
 
 **SDK for SAP ABAP**
 
-```
+```sap-abap
     TRY.
         " iv_datastore_name = 'my-datastore-name'
         oo_result = lo_mig->createdatastore( iv_datastorename = iv_datastore_name ).

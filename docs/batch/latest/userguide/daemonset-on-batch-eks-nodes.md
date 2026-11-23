@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/daemonset-on-batc
 
 AWS Batch sets taints on AWS Batch managed Kubernetes nodes. You can target a DaemonSet to run on AWS Batch managed nodes with the following `tolerations`.
 
-```
+```yaml
 tolerations:
   - key: "batch.amazonaws.com/batch-node"
     operator: "Exists"
@@ -14,7 +14,7 @@ tolerations:
 
 Another way to do this is with the following `tolerations`.
 
-```
+```yaml
 tolerations:
   - key: "batch.amazonaws.com/batch-node"
     operator: "Exists"

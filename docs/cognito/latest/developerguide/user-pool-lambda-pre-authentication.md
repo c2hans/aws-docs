@@ -75,7 +75,7 @@ This example function prevents users from signing in to your user pool with a sp
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const handler = async (event) => {
   if (
     event.callerContext.clientId === "user-pool-app-client-id-to-be-blocked"

@@ -36,7 +36,7 @@ In practice, users set an `endpointUrl` value to point at a development or previ
 
 A service client’s `EndpointProvider` implementation determines final endpoint resolution. The `EndpointProvider` interface shown in the following code block exposes the `resolveEndpoint` method.
 
-```
+```kotlin
 public fun interface EndpointProvider<T> {
     public suspend fun resolveEndpoint(params: T): Endpoint
 }
@@ -67,7 +67,7 @@ If you implement your own provider, you shouldn’t need to construct your own i
 
 It is important to understand that the following two statements do NOT produce clients with equivalent endpoint resolution behavior:
 
-```
+```kotlin
 // Use endpointUrl.
 S3Client.fromEnvironment {
     endpointUrl = Url.parse("https://endpoint.example")
@@ -102,7 +102,7 @@ Because of this, we recommend that you don’t replace the `EndpointProvider` im
 
 The following code snippet shows how the general service endpoint can be overridden for an Amazon S3 client.
 
-```
+```kotlin
 val client = S3Client.fromEnvironment {
     endpointUrl = Url.parse("https://custom-s3-endpoint.local")
     // EndpointProvider is left as the default.
@@ -114,7 +114,7 @@ val client = S3Client.fromEnvironment {
 
 The following code snippet shows how to provide a custom endpoint provider that wraps the default implementation for Amazon S3.
 
-```
+```kotlin
 import aws.sdk.kotlin.services.s3.endpoints.DefaultS3EndpointProvider
 import aws.sdk.kotlin.services.s3.endpoints.S3EndpointParameters
 import aws.sdk.kotlin.services.s3.endpoints.S3EndpointProvider
@@ -136,7 +136,7 @@ public class CustomS3EndpointProvider : S3EndpointProvider {
 
 The following example program demonstrates the interaction between the `endpointUrl` and `endpointProvider` settings. This is an advanced use case.
 
-```
+```kotlin
 import aws.sdk.kotlin.services.s3.S3Client
 import aws.sdk.kotlin.services.s3.endpoints.DefaultS3EndpointProvider
 import aws.sdk.kotlin.services.s3.endpoints.S3EndpointParameters

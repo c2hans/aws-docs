@@ -20,7 +20,7 @@ In this example, you will set update style to show map labels in Japanese (ja).
 ------
 #### [ index.html ]
 
-```
+```html
 <html>
 <head>
     <link href="https://unpkg.com/maplibre-gl@5.x/dist/maplibre-gl.css" rel="stylesheet" />
@@ -61,7 +61,7 @@ In this example, you will set update style to show map labels in Japanese (ja).
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; }
 #map { height: 100vh; }
 ```
@@ -69,7 +69,7 @@ body { margin: 0; }
 ------
 #### [ main.js ]
 
-```
+```javascript
 async function getStyleWithPreferredLanguage(preferredLanguage) {
     const styleUrl = `https://maps.geo.${awsRegion}.amazonaws.com/v2/styles/${mapStyle}/descriptor?key=${apiKey}`;
 
@@ -161,7 +161,7 @@ In this example, you will set update style to show map labels in user's device l
 ------
 #### [ index.html ]
 
-```
+```html
 <html>
 <head>
     <link href="https://unpkg.com/maplibre-gl@5.x/dist/maplibre-gl.css" rel="stylesheet" />
@@ -201,7 +201,7 @@ In this example, you will set update style to show map labels in user's device l
 ------
 #### [ style.css ]
 
-```
+```css
 body { margin: 0; }
 #map { height: 100vh; }
 ```
@@ -209,7 +209,7 @@ body { margin: 0; }
 ------
 #### [ main.js ]
 
-```
+```javascript
 async function getStyleWithPreferredLanguage(preferredLanguage) {
     const styleUrl = `https://maps.geo.${awsRegion}.amazonaws.com/v2/styles/${mapStyle}/descriptor?key=${apiKey}`;
 

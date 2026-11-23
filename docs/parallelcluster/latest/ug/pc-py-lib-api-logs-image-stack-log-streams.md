@@ -6,7 +6,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 # `list_image_log_streams`
 
-```
+```python
 list_image_log_streams(image_id, region, next_token)
 ```
 

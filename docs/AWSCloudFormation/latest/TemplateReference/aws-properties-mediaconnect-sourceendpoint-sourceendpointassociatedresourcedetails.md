@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::SourceEndpoint SourceEndpointAssociatedResourceDetails
 
-<a name="aws-properties-mediaconnect-sourceendpoint-sourceendpointassociatedresourcedetails-description"></a>The `SourceEndpointAssociatedResourceDetails` property type specifies Property description not available. for an [AWS::MediaConnect::SourceEndpoint](aws-resource-mediaconnect-sourceendpoint.md).
+The details of the resource that is associated with a source endpoint. This is a union type, so exactly one of its members is set, depending on the type of the source endpoint.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-sourceendpointassociatedresourcedetails-syntax"></a>
@@ -36,13 +36,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-sourceendpointassociatedresourcedetails-properties"></a>
 
 `RouterOutput`  <a name="cfn-mediaconnect-sourceendpoint-sourceendpointassociatedresourcedetails-routeroutput"></a>
-Property description not available.
+The associated resource details for a source endpoint that represents a router output.
 *Required*: No
 *Type*: [RouterOutputSourceEndpointAssociatedResourceDetails](aws-properties-mediaconnect-sourceendpoint-routeroutputsourceendpointassociatedresourcedetails.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Standard`  <a name="cfn-mediaconnect-sourceendpoint-sourceendpointassociatedresourcedetails-standard"></a>
-Property description not available.
+The associated resource details for a standard source endpoint.
 *Required*: No
 *Type*: Json
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

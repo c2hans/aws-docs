@@ -23,7 +23,7 @@ Before AWS ParallelCluster version 2.10.0, these settings were required and appl
 
 To store credentials, you can use the environment, IAM roles for Amazon EC2, or the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html), rather than saving credentials into the AWS ParallelCluster config file.
 
-```
+```ini
 [aws]
 aws_region_name = {{Region}}
 ```

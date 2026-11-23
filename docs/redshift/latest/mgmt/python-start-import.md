@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/python-start-import
 
 To import the Python connector, run the following command.
 
-```
+```python
 >>> import redshift_connector
 ```
 

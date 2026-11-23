@@ -46,7 +46,7 @@ The source server shows a **Disconnected** status in the AWS Elastic Disaster Re
 
 1. Run the following command to check the source server state:
 
-   ```
+   ```bash
    aws drs describe-source-servers \
        --filters sourceServerIDs={{source-server-id}} \
        --query "items[0].{State:dataReplicationInfo.dataReplicationState,Error:dataReplicationInfo.dataReplicationError.error,LastSeen:lastLaunchedInstance}"
@@ -55,24 +55,24 @@ The source server shows a **Disconnected** status in the AWS Elastic Disaster Re
 1. Verify that the agent is running on the source server.
    + **Linux:**
 
-     ```
+     ```bash
      systemctl status aws-replication-agent
      ```
    + **Windows:**
 
-     ```
+     ```powershell
      Get-Service -Name AwsReplicationService
      ```
 
 1. Test TCP 443 connectivity to the AWS Elastic Disaster Recovery endpoint.
    + **Linux:**
 
-     ```
+     ```bash
      curl -v https://drs.{{region}}.amazonaws.com
      ```
    + **Windows:**
 
-     ```
+     ```powershell
      Test-NetConnection -ComputerName drs.{{region}}.amazonaws.com -Port 443
      ```
 
@@ -108,7 +108,7 @@ If this error appears on the recovery dashboard, verify that the `AWSElasticDisa
 
 1. Run the following command to retrieve the staging area network configuration:
 
-   ```
+   ```bash
    aws drs get-replication-configuration \
        --source-server-id {{source-server-id}} \
        --query "{Subnet:stagingAreaSubnetId,SGs:stagingAreaTags}"
@@ -180,7 +180,7 @@ During failback, verify that TCP port 1500 is open for inbound traffic on the re
 
 1. Retrieve the security group IDs for the replication configuration:
 
-   ```
+   ```bash
    aws drs get-replication-configuration \
        --source-server-id {{source-server-id}} \
        --query "replicationServersSecurityGroupsIDs"
@@ -188,7 +188,7 @@ During failback, verify that TCP port 1500 is open for inbound traffic on the re
 
 1. Verify that the security group allows inbound TCP port 1500:
 
-   ```
+   ```bash
    aws ec2 describe-security-groups \
        --group-ids {{sg-id}} \
        --query "SecurityGroups[].IpPermissions[?FromPort==`1500`]"
@@ -197,12 +197,12 @@ During failback, verify that TCP port 1500 is open for inbound traffic on the re
 1. Test connectivity to the replication server on port 1500.
    + **Linux:**
 
-     ```
+     ```bash
      nc -zv {{replication-server-ip}} 1500
      ```
    + **Windows:**
 
-     ```
+     ```powershell
      Test-NetConnection -ComputerName {{replication-server-ip}} -Port 1500
      ```
 

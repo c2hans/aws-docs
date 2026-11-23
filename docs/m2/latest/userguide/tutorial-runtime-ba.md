@@ -44,7 +44,7 @@ The folder in the bucket is required.
 
 To deploy an application to the managed runtime, you need an AWS Mainframe Modernization application definition. This definition is a JSON file that describes the application location and settings. The following example is such an application definition for the demo application:
 
-```
+```json
 {
     "template-version": "2.0",
     "source-locations": [{

@@ -33,7 +33,7 @@ Let's look at the tests for the same `determine_prefix_file_size()` function in 
 
 1. In a command prompt for your project directory, add the [`aws-smithy-http-client`](https://crates.io/crates/aws-smithy-http-client) crate as a dependency:
 
-   ```
+   ```sh
    $ cargo add --dev aws-smithy-http-client --features test-util
    ```
 
@@ -41,7 +41,7 @@ Let's look at the tests for the same `determine_prefix_file_size()` function in 
 
    This example code also use Amazon Simple Storage Service as the example AWS service.
 
-   ```
+   ```sh
    $ cargo add aws-sdk-s3
    ```
 
@@ -49,14 +49,14 @@ Let's look at the tests for the same `determine_prefix_file_size()` function in 
 
 1. In your test code module, include both of the types that you'll need.
 
-   ```
+   ```rust
    use aws_smithy_http_client::test_util::{ReplayEvent, StaticReplayClient};
    use aws_sdk_s3::primitives::SdkBody;
    ```
 
 1. The test begins by creating the `ReplayEvent` structures representing each of the HTTP transactions that should take place during the test. Each event contains an HTTP request object and an HTTP response object representing the information that the AWS service would normally reply with. These events are passed into a call to `StaticReplayClient::new()`:
 
-   ```
+   ```rust
            let page_1 = ReplayEvent::new(
                    http::Request::builder()
                        .method("GET")
@@ -86,7 +86,7 @@ Let's look at the tests for the same `determine_prefix_file_size()` function in 
 
 1. To create the Amazon S3 client, call the client class's `from_conf()` function to create the client using a configuration object:
 
-   ```
+   ```rust
            let client: s3::Client = s3::Client::from_conf(
                s3::Config::builder()
                    .behavior_version(BehaviorVersion::latest())
@@ -99,7 +99,7 @@ Let's look at the tests for the same `determine_prefix_file_size()` function in 
 
    The configuration object is specified using the builder's `http_client()` method, and the credentials are specified using the `credentials_provider()` method. The credentials are created using a function called `make_s3_test_credentials()`, which returns a fake credentials structure:
 
-   ```
+   ```rust
    fn make_s3_test_credentials() -> s3::config::Credentials {
        s3::config::Credentials::new(
            "ATESTCLIENT",
@@ -115,7 +115,7 @@ Let's look at the tests for the same `determine_prefix_file_size()` function in 
 
 1. Run the test by calling the function that needs testing. In this example, that function's name is `determine_prefix_file_size()`. Its first parameter is the Amazon S3 client object to use for its requests. Therefore, specify the client created using the `StaticReplayClient` so requests are handled by that rather than going out over the network:
 
-   ```
+   ```rust
            let size = determine_prefix_file_size(client, "test-bucket", "test-prefix")
                .await
                .unwrap();

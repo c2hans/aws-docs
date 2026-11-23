@@ -42,7 +42,7 @@ Throughout this tutorial, replace the following placeholders with your own value
 
 Create a small Flask application with one endpoint that builds a SQL query by string concatenation — a classic SQL injection. In your repository, add `app.py`:
 
-```
+```python
 import sqlite3
 from flask import Flask, request
 
@@ -72,7 +72,7 @@ The workflow authenticates to AWS with GitHub OIDC — no long-lived access keys
 
 1. If you do not already have one, create the GitHub OIDC identity provider:
 
-   ```
+   ```bash
    aws iam create-open-id-connect-provider \
      --url https://token.actions.githubusercontent.com \
      --client-id-list sts.amazonaws.com
@@ -80,7 +80,7 @@ The workflow authenticates to AWS with GitHub OIDC — no long-lived access keys
 
 1. Create the IAM role with a trust policy scoped to your repository and branch. Save the following as `trust-policy.json`, replacing the account ID and repository:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -107,7 +107,7 @@ The workflow authenticates to AWS with GitHub OIDC — no long-lived access keys
 
 1. Save the least-privilege permissions policy as `permissions.json`:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -131,7 +131,7 @@ The workflow authenticates to AWS with GitHub OIDC — no long-lived access keys
 
 1. Create the role and attach the policy. A penetration test job can run for tens of minutes, so create the role with a maximum session duration long enough to outlast the step’s timeout:
 
-   ```
+   ```bash
    aws iam create-role --role-name my-pentest-gate-role \
      --assume-role-policy-document file://trust-policy.json \
      --max-session-duration 7200
@@ -148,7 +148,7 @@ The workflow authenticates to AWS with GitHub OIDC — no long-lived access keys
 
 Add `.github/workflows/deploy-and-pentest.yml` to your repository. The `deploy` job deploys the sample application to staging; the `security-pentest` job then runs the gate and, because production promotion depends on it, blocks production when the gate fails.
 
-```
+```yaml
 name: Deploy and pentest
 on:
   push:
@@ -226,7 +226,7 @@ Pin `aws-actions/aws-continuum-run-pentest` to a specific commit SHA (for exampl
 
 Before you rely on the gate, run it once in dry-run mode. Add `dry-run: "true"` to the action inputs and trigger the workflow:
 
-```
+```yaml
       - uses: aws-actions/aws-continuum-run-pentest@v1
         with:
           agent-space-id: as-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
@@ -262,7 +262,7 @@ The action also sets outputs you can consume in later steps, including `scope-de
 
 Fix the vulnerability by using a parameterized query instead of string concatenation. In `app.py`, replace the query construction:
 
-```
+```python
     category = request.args.get("category", "")
     conn = sqlite3.connect("products.db")
     cursor = conn.cursor()
@@ -289,7 +289,7 @@ To avoid ongoing cost and to remove the intentionally vulnerable application:
 
 1. If you created the IAM role and OIDC provider only for this tutorial, delete them:
 
-   ```
+   ```bash
    aws iam delete-role-policy --role-name my-pentest-gate-role \
      --policy-name securityagent-run-pentest
    aws iam delete-role --role-name my-pentest-gate-role

@@ -33,7 +33,7 @@ The following examples use the TICKIT sample database. For more information, see
 
 To calculate the commission paid plus a $2.00 handling for a given transaction, use the following example.
 
-```
+```sql
 SELECT
     commission,
     (commission + 2.00) AS comm
@@ -51,7 +51,7 @@ WHERE
 
 To calculate 20 percent of the sales price for a given transaction, use the following example.
 
-```
+```sql
 SELECT pricepaid, (pricepaid * .20) as twentypct
 FROM sales
 WHERE salesid=10000;
@@ -65,7 +65,7 @@ WHERE salesid=10000;
 
 To forecast ticket sales based on a continuous growth pattern, use the following example. In this example, the subquery returns the number of tickets sold in 2008. That result is multiplied exponentially by a continuous growth rate of 5% over 10 years.
 
-```
+```sql
 SELECT (SELECT SUM(qtysold) FROM sales, date
 WHERE sales.dateid=date.dateid AND year=2008)^((5::float/100)*10) AS qty10years;
 
@@ -78,7 +78,7 @@ WHERE sales.dateid=date.dateid AND year=2008)^((5::float/100)*10) AS qty10years;
 
 To find the total price paid and commission for sales with a date ID that is greater than or equal to 2000, use the following example. Then subtract the total commission from the total price paid.
 
-```
+```sql
 SELECT SUM(pricepaid) AS sum_price, dateid,
 SUM(commission) AS sum_comm, (SUM(pricepaid) - SUM(commission)) AS value
 FROM sales

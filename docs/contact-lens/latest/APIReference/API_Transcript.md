@@ -55,6 +55,13 @@ Type: Array of [IssueDetected](API_connect-contact-lens_IssueDetected.md) object
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
 Required: No
 
+ ** LanguageCode **   <a name="connect-Type-connect-contact-lens_Transcript-LanguageCode"></a>
+The language code detected for this piece of transcript, for example, `en-US`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `.*\S.*`
+Required: No
+
  ** Sentiment **   <a name="connect-Type-connect-contact-lens_Transcript-Sentiment"></a>
 The sentiment detected for this piece of transcript.
 Type: String

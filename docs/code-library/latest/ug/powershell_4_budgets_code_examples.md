@@ -26,7 +26,7 @@ The following code example shows how to use `New-BGTBudget`.
 **Tools for PowerShell V4**
 **Example 1: Creates a new budget with the specified budgetary and time constraints with email notifications.**
 
-```
+```powershell
 $notification = @{
     NotificationType = "ACTUAL"
     ComparisonOperator = "GREATER_THAN"

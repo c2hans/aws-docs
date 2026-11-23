@@ -148,7 +148,7 @@ For more information, see [Configure distributions](https://docs.aws.amazon.com/
 **Tools for PowerShell V4**
 **Example 1: Retrieves the information for a specific distribution.**
 
-```
+```powershell
 Get-CFDistribution -Id EXAMPLE0000ID
 ```
 +  For API details, see [GetDistribution](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -156,7 +156,7 @@ Get-CFDistribution -Id EXAMPLE0000ID
 **Tools for PowerShell V5**
 **Example 1: Retrieves the information for a specific distribution.**
 
-```
+```powershell
 Get-CFDistribution -Id EXAMPLE0000ID
 ```
 +  For API details, see [GetDistribution](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

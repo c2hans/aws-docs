@@ -38,7 +38,7 @@ Edit the project’s `package.json` to tell NPM how to run Jest, and to tell Jes
 + Add a new `jest` top-level key with a `moduleFileExtensions` declaration
 These changes are shown in the following outline. Place the new text where indicated in `package.json`. The "…​" placeholders indicate existing parts of the file that should not be changed.
 
-```
+```json
 {
   ...
   "scripts": {
@@ -72,7 +72,7 @@ Edit the project’s `package.json` to tell NPM how to run Jest, and to tell Jes
 + Add a new `jest` top-level key with a `moduleFileExtensions` declaration
 These changes are shown in the following outline. Place the new text where indicated in `package.json`. The "…​" placeholders indicate existing parts of the file that shouldn’t be changed.
 
-```
+```json
 {
   ...
   "scripts": {
@@ -121,7 +121,7 @@ You don’t have to do anything special to make the app testable. In fact, this 
 **Example**
 Place the following code in `lib/state-machine-stack.ts`:
 
-```
+```javascript
 import * as cdk from "aws-cdk-lib";
 import * as sns from "aws-cdk-lib/aws-sns";
 import * as sns_subscriptions from "aws-cdk-lib/aws-sns-subscriptions";
@@ -162,7 +162,7 @@ export class StateMachineStack extends cdk.Stack {
 ```
 Place the following code in `lib/state-machine-stack.js`:
 
-```
+```javascript
 const cdk = require("aws-cdk-lib");
 const sns = require("aws-cdk-lib/aws-sns");
 const sns_subscriptions = require("aws-cdk-lib/aws-sns-subscriptions");
@@ -200,7 +200,7 @@ module.exports = { StateMachineStack }
 ```
 Place the following code in `state_machine/state_machine_stack.py`:
 
-```
+```python
 from typing import List
 
 import aws_cdk.aws_lambda as lambda_
@@ -243,7 +243,7 @@ class StateMachineStack(cdk.Stack):
             topic.add_subscription(subscription)
 ```
 
-```
+```java
 package software.amazon.samples.awscdkassertionssamples;
 
 import software.constructs.Construct;
@@ -291,7 +291,7 @@ public class StateMachineStack extends Stack {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.Lambda;
 using Amazon.CDK.AWS.StepFunctions;
@@ -347,7 +347,7 @@ We’ll modify the app’s main entry point so that we don’t actually instanti
 **Example**
 In `bin/state-machine.ts`:
 
-```
+```javascript
 #!/usr/bin/env node
 import * as cdk from "aws-cdk-lib";
 
@@ -358,7 +358,7 @@ const app = new cdk.App();
 ```
 In `bin/state-machine.js`:
 
-```
+```javascript
 #!/usr/bin/env node
 const cdk = require("aws-cdk-lib");
 
@@ -369,7 +369,7 @@ const app = new cdk.App();
 ```
 In `app.py`:
 
-```
+```python
 #!/usr/bin/env python3
 import os
 
@@ -383,7 +383,7 @@ app = cdk.App()
 app.synth()
 ```
 
-```
+```java
 package software.amazon.samples.awscdkassertionssamples;
 
 import software.amazon.awscdk.App;
@@ -399,7 +399,7 @@ public class SampleApp {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 
 namespace AwsCdkAssertionSamples
@@ -425,7 +425,7 @@ Our example stack includes a Lambda function that starts our state machine. We m
 + Create the folder `start-state-machine` in the app’s main directory.
 + In this folder, create at least one file. For example, you can save the following code in `start-state-machines/index.js`.
 
-  ```
+  ```javascript
   exports.handler = async function (event, context) {
   	return 'hello world';
   };
@@ -440,11 +440,11 @@ For reference, here are the commands you use to run tests in your AWS CDK app. T
 
 **Example**
 
-```
+```javascript
 $ tsc && npm test
 ```
 
-```
+```javascript
 $ npm test
 ```
 
@@ -473,7 +473,7 @@ Ordinarily, when writing a CDK app, you can subclass `Stack` and instantiate the
 
 **Example**
 
-```
+```javascript
 import { Capture, Match, Template } from "aws-cdk-lib/assertions";
 import * as cdk from "aws-cdk-lib";
 import * as sns from "aws-cdk-lib/aws-sns";
@@ -503,7 +503,7 @@ describe("StateMachineStack", () => {
 })
 ```
 
-```
+```javascript
 const { Capture, Match, Template } = require("aws-cdk-lib/assertions");
 const cdk = require("aws-cdk-lib");
 const sns = require("aws-cdk-lib/aws-sns");
@@ -533,7 +533,7 @@ describe("StateMachineStack", () => {
 })
 ```
 
-```
+```python
 from aws_cdk import aws_sns as sns
 import aws_cdk as cdk
 from aws_cdk.assertions import Template
@@ -561,7 +561,7 @@ def test_synthesizes_properly():
     template = Template.from_stack(state_machine_stack)
 ```
 
-```
+```java
 package software.amazon.samples.awscdkassertionssamples;
 
 import org.junit.jupiter.api.Test;
@@ -602,7 +602,7 @@ public class StateMachineStackTest {
 }
 ```
 
-```
+```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using Amazon.CDK;
@@ -650,7 +650,7 @@ Now we can assert that the Lambda function and the Amazon SNS subscription were 
 
 **Example**
 
-```
+```javascript
     // Assert it creates the function with the correct properties...
     template.hasResourceProperties("AWS::Lambda::Function", {
       Handler: "handler",
@@ -661,7 +661,7 @@ Now we can assert that the Lambda function and the Amazon SNS subscription were 
     template.resourceCountIs("AWS::SNS::Subscription", 1);
 ```
 
-```
+```javascript
     // Assert it creates the function with the correct properties...
     template.hasResourceProperties("AWS::Lambda::Function", {
       Handler: "handler",
@@ -672,7 +672,7 @@ Now we can assert that the Lambda function and the Amazon SNS subscription were 
     template.resourceCountIs("AWS::SNS::Subscription", 1);
 ```
 
-```
+```python
 # Assert that we have created the function with the correct properties
     template.has_resource_properties(
         "AWS::Lambda::Function",
@@ -686,7 +686,7 @@ Now we can assert that the Lambda function and the Amazon SNS subscription were 
     template.resource_count_is("AWS::SNS::Subscription", 1)
 ```
 
-```
+```java
         // Assert it creates the function with the correct properties...
         template.hasResourceProperties("AWS::Lambda::Function", Map.of(
                 "Handler", "handler",
@@ -697,7 +697,7 @@ Now we can assert that the Lambda function and the Amazon SNS subscription were 
         template.resourceCountIs("AWS::SNS::Subscription", 1);
 ```
 
-```
+```csharp
             // Prepare the stack for assertions.
             var template = Template.FromStack(stateMachineStack);
 
@@ -721,7 +721,7 @@ Matchers range from lenient (`Match.anyValue`) to strict (`Match.objectEquals`).
 
 **Example**
 
-```
+```javascript
     // Fully assert on the state machine's IAM role with matchers.
     template.hasResourceProperties(
       "AWS::IAM::Role",
@@ -747,7 +747,7 @@ Matchers range from lenient (`Match.anyValue`) to strict (`Match.objectEquals`).
     );
 ```
 
-```
+```javascript
     // Fully assert on the state machine's IAM role with matchers.
     template.hasResourceProperties(
       "AWS::IAM::Role",
@@ -773,7 +773,7 @@ Matchers range from lenient (`Match.anyValue`) to strict (`Match.objectEquals`).
     );
 ```
 
-```
+```python
 from aws_cdk.assertions import Match
 
     # Fully assert on the state machine's IAM role with matchers.
@@ -807,7 +807,7 @@ from aws_cdk.assertions import Match
     )
 ```
 
-```
+```java
         // Fully assert on the state machine's IAM role with matchers.
         template.hasResourceProperties("AWS::IAM::Role", Match.objectEquals(
                 Collections.singletonMap("AssumeRolePolicyDocument", Map.of(
@@ -828,7 +828,7 @@ from aws_cdk.assertions import Match
         ));
 ```
 
-```
+```csharp
             // Fully assert on the state machine's IAM role with matchers.
             template.HasResource("AWS::IAM::Role", Match.ObjectEquals(new ObjectDict
             {
@@ -869,7 +869,7 @@ For example, Step Functions state machines are defined using a string in the JSO
 
 **Example**
 
-```
+```javascript
     // Assert on the state machine's definition with the Match.serializedJson()
     // matcher.
     template.hasResourceProperties("AWS::StepFunctions::StateMachine", {
@@ -892,7 +892,7 @@ For example, Step Functions state machines are defined using a string in the JSO
     });
 ```
 
-```
+```javascript
     // Assert on the state machine's definition with the Match.serializedJson()
     // matcher.
     template.hasResourceProperties("AWS::StepFunctions::StateMachine", {
@@ -915,7 +915,7 @@ For example, Step Functions state machines are defined using a string in the JSO
     });
 ```
 
-```
+```python
     # Assert on the state machine's definition with the serialized_json matcher.
     template.has_resource_properties(
         "AWS::StepFunctions::StateMachine",
@@ -941,7 +941,7 @@ For example, Step Functions state machines are defined using a string in the JSO
     )
 ```
 
-```
+```java
         // Assert on the state machine's definition with the Match.serializedJson() matcher.
         template.hasResourceProperties("AWS::StepFunctions::StateMachine", Collections.singletonMap(
                 "DefinitionString", Match.serializedJson(
@@ -962,7 +962,7 @@ For example, Step Functions state machines are defined using a string in the JSO
         ));
 ```
 
-```
+```csharp
             // Assert on the state machine's definition with the Match.serializedJson() matcher
             template.HasResourceProperties("AWS::StepFunctions::StateMachine", new ObjectDict
             {
@@ -991,7 +991,7 @@ The following example tests to make sure that the starting state of our state ma
 
 **Example**
 
-```
+```javascript
     // Capture some data from the state machine's definition.
     const startAtCapture = new Capture();
     const statesCapture = new Capture();
@@ -1012,7 +1012,7 @@ The following example tests to make sure that the starting state of our state ma
     expect(statesCapture.asObject()).toHaveProperty(startAtCapture.asString());
 ```
 
-```
+```javascript
     // Capture some data from the state machine's definition.
     const startAtCapture = new Capture();
     const statesCapture = new Capture();
@@ -1033,7 +1033,7 @@ The following example tests to make sure that the starting state of our state ma
     expect(statesCapture.asObject()).toHaveProperty(startAtCapture.asString());
 ```
 
-```
+```python
 import re
 
     from aws_cdk.assertions import Capture
@@ -1065,7 +1065,7 @@ import re
     assert start_at_capture.as_string() in states_capture.as_object()
 ```
 
-```
+```java
         // Capture some data from the state machine's definition.
         final Capture startAtCapture = new Capture();
         final Capture statesCapture = new Capture();
@@ -1085,7 +1085,7 @@ import re
         assertThat(statesCapture.asObject()).containsKey(startAtCapture.asString());
 ```
 
-```
+```csharp
             // Capture some data from the state machine's definition.
             var startAtCapture = new Capture();
             var statesCapture = new Capture();
@@ -1117,7 +1117,7 @@ For example, if we have this `DeadLetterQueue` construct:
 
 **Example**
 
-```
+```javascript
 export class DeadLetterQueue extends sqs.Queue {
   public readonly messagesInQueueAlarm: cloudwatch.IAlarm;
 
@@ -1135,7 +1135,7 @@ export class DeadLetterQueue extends sqs.Queue {
 }
 ```
 
-```
+```javascript
 class DeadLetterQueue extends sqs.Queue {
 
   constructor(scope, id) {
@@ -1154,7 +1154,7 @@ class DeadLetterQueue extends sqs.Queue {
 module.exports = { DeadLetterQueue }
 ```
 
-```
+```python
 class DeadLetterQueue(sqs.Queue):
     def __init__(self, scope: Construct, id: str):
         super().__init__(scope, id)
@@ -1169,7 +1169,7 @@ class DeadLetterQueue(sqs.Queue):
         )
 ```
 
-```
+```java
 public class DeadLetterQueue extends Queue {
     private final IAlarm messagesInQueueAlarm;
 
@@ -1190,7 +1190,7 @@ public class DeadLetterQueue extends Queue {
 }
 ```
 
-```
+```csharp
 namespace AwsCdkAssertionSamples
 {
     public class DeadLetterQueue : Queue
@@ -1215,7 +1215,7 @@ We can test it like this:
 
 **Example**
 
-```
+```javascript
 import { Match, Template } from "aws-cdk-lib/assertions";
 import * as cdk from "aws-cdk-lib";
 import { DeadLetterQueue } from "../lib/dead-letter-queue";
@@ -1231,7 +1231,7 @@ describe("DeadLetterQueue", () => {
 });
 ```
 
-```
+```javascript
 const { Match, Template } = require("aws-cdk-lib/assertions");
 const cdk = require("aws-cdk-lib");
 const { DeadLetterQueue } = require("../lib/dead-letter-queue");
@@ -1247,7 +1247,7 @@ describe("DeadLetterQueue", () => {
 });
 ```
 
-```
+```python
 import aws_cdk_lib as cdk
 from aws_cdk_lib.assertions import Match, Template
 
@@ -1261,7 +1261,7 @@ def snapshot_test():
     assert template.to_json() == snapshot
 ```
 
-```
+```java
 package software.amazon.samples.awscdkassertionssamples;
 
 import org.junit.jupiter.api.Test;
@@ -1285,7 +1285,7 @@ public class DeadLetterQueueTest {
 }
 ```
 
-```
+```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using Amazon.CDK;

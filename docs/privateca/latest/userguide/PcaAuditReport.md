@@ -34,7 +34,7 @@ awsAccountId,requestedByServicePrincipal,certificateArn,serial,subject,notBefore
 
 The following example shows a JSON-formatted report.
 
-```
+```json
 [
    {
       "awsAccountId":"123456789012",
@@ -225,7 +225,7 @@ Complete the following steps to enable encryption using a custom key.
 
       If your Amazon S3 bucket key is *enabled*, use the following statement:
 
-      ```
+      ```json
       {
          "Sid":"Allow ACM-PCA use of the key",
          "Effect":"Allow",
@@ -247,7 +247,7 @@ Complete the following steps to enable encryption using a custom key.
 
       If your Amazon S3 bucket key is *disabled*, use the following statement:
 
-      ```
+      ```json
       {
          "Sid":"Allow ACM-PCA use of the key",
          "Effect":"Allow",

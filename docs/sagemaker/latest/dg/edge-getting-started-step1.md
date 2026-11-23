@@ -102,7 +102,7 @@ You can create an IAM role by using the IAM console, AWS SDK for Python (Boto3),
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

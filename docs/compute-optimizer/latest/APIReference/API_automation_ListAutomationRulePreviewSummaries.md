@@ -65,7 +65,10 @@ Returns a summary of the recommended actions that match your rule preview config
    "maxResults": {{number}},
    "nextToken": "{{string}}",
    "organizationScope": {
-      "accountIds": [ "{{string}}" ]
+      "accountIds": [ "{{string}}" ],
+      "excludedAccountIds": [ "{{string}}" ],
+      "excludedOrganizationalUnitIds": [ "{{string}}" ],
+      "organizationalUnitIds": [ "{{string}}" ]
    },
    "recommendedActionTypes": [ "{{string}}" ],
    "ruleType": "{{string}}"
@@ -85,7 +88,7 @@ Type: [Criteria](API_automation_Criteria.md) object
 Required: No
 
  ** [maxResults](#API_automation_ListAutomationRulePreviewSummaries_RequestSyntax) **   <a name="computeoptimizer-automation_ListAutomationRulePreviewSummaries-request-maxResults"></a>
-The maximum number of automation rule preview summaries to return in a single response. Valid range is 1-1000.
+The maximum number of automation rule preview summaries to return in a single response. If you don't specify a value, the default is 100.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
@@ -97,7 +100,7 @@ Pattern: `[A-Za-z0-9+/=]+`
 Required: No
 
  ** [organizationScope](#API_automation_ListAutomationRulePreviewSummaries_RequestSyntax) **   <a name="computeoptimizer-automation_ListAutomationRulePreviewSummaries-request-organizationScope"></a>
-The organizational scope for the rule preview.
+The organizational scope for the rule preview. This parameter is required when `ruleType` is `OrganizationRule`. Don't specify it when `ruleType` is `AccountRule`.
 Type: [OrganizationScope](API_automation_OrganizationScope.md) object
 Required: No
 
@@ -159,11 +162,11 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
  You do not have sufficient permissions to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ForbiddenException **
  You are not authorized to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** InternalServerException **
  An internal error occurred while processing the request.
@@ -175,15 +178,15 @@ HTTP Status Code: 400
 
  ** OptInRequiredException **
  The account must be opted in to Compute Optimizer Automation before performing this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ServiceUnavailableException **
  The service is temporarily unavailable.
-HTTP Status Code: 500
+HTTP Status Code: 503
 
  ** ThrottlingException **
  The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_automation_ListAutomationRulePreviewSummaries_SeeAlso"></a>

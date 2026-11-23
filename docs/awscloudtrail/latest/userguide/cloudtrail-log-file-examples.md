@@ -50,7 +50,7 @@ Amazon Elastic Compute Cloud (Amazon EC2) provides resizeable computing capacity
 
 The following example shows that an IAM user named `Mateo` ran the **aws ec2 start-instances** command to call the Amazon EC2 [`StartInstances`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartInstances.html) action for instances `i-EXAMPLE56126103cb` and `i-EXAMPLEaff4840c22`.
 
-```
+```JSON
 {"Records": [{
     "eventVersion": "1.08",
     "userIdentity": {
@@ -134,7 +134,7 @@ The following example shows that an IAM user named `Mateo` ran the **aws ec2 sta
 
 The following example shows that an IAM user named `Nikki` ran the **aws ec2 stop-instances** command to call the Amazon EC2 [`StopInstances`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StopInstances.html) action to stop two instances.
 
-```
+```JSON
 {"Records": [{
     "eventVersion": "1.08",
     "userIdentity": {
@@ -219,7 +219,7 @@ The following example shows that an IAM user named `Nikki` ran the **aws ec2 sto
 
 The following example shows that an IAM user named `Arnav` ran the **aws ec2 create-key-pair** command to call the [`CreateKeyPair`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateKeyPair.html) action. Note that the `responseElements` contain a hash of the key pair and that AWS removed the key material.
 
-```
+```JSON
 {"Records": [{
     "eventVersion": "1.08",
     "userIdentity": {
@@ -279,7 +279,7 @@ AWS Identity and Access Management (IAM) is a web service that helps you securel
 
 The following example shows that the IAM user named `Mary` ran the **aws iam create-user** command to call the [`CreateUser`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateUser.html) action to create a new user named `Richard`.
 
-```
+```JSON
 {"Records": [{
     "eventVersion": "1.08",
     "userIdentity": {
@@ -334,7 +334,7 @@ The following example shows that the IAM user named `Mary` ran the **aws iam cre
 
 The following example shows that the IAM user named `Paulo` ran the **aws iam add-user-to-group** command to call the [`AddUserToGroup`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_AddUserToGroup.html) action to add a user named `Jane` to the `Admin` group.
 
-```
+```JSON
 {"Records": [{
     "eventVersion": "1.08",
     "userIdentity": {
@@ -382,7 +382,7 @@ The following example shows that the IAM user named `Paulo` ran the **aws iam ad
 
 The following example shows that the IAM user named `Saanvi` ran the **aws iam create-role** command to call the [`CreateRole`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html) action to create a role.
 
-```
+```JSON
 {"Records": [{
     "eventVersion": "1.08",
     "userIdentity": {
@@ -443,7 +443,7 @@ The following example shows that the IAM user named `Saanvi` ran the **aws iam c
 
 The following example shows that the IAM user named `Terry` ran the **aws cloudtrail update-trail** command to call the [`UpdateTrail`](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateTrail.html) action to update a trail named `myTrail2`, but the trail name was not found. The log shows this error in the `errorCode` and `errorMessage` elements.
 
-```
+```JSON
 {"Records": [{
     "eventVersion": "1.09",
     "userIdentity": {
@@ -494,7 +494,7 @@ The following example shows that the IAM user named `Terry` ran the **aws cloudt
 
 The following example shows a CloudTrail Insights event log. An Insights event is actually a pair of events that mark the start and end of a period of unusual write management API activity or error response activity. The `state` field shows whether the event was logged at the start or end of the period of unusual activity. The event name, `UpdateInstanceInformation`, is the same name as the AWS Systems Manager API for which CloudTrail analyzed management events to determine that unusual activity occurred. Although the start and end events have unique `eventID` values, they also have a `sharedEventID` value that is used by the pair. The Insights event shows the `baseline`, or the normal pattern of activity, the `insight`, or average unusual activity that triggered the start Insights event, and in the end event, the `insight` value for the average unusual activity over the duration of the Insights event. For more information about CloudTrail Insights, see [Working with CloudTrail Insights](logging-insights-events-with-cloudtrail.md).
 
-```
+```JSON
 {
     "Records": [{
         "eventVersion": "1.08",

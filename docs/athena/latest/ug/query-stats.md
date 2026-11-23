@@ -50,3 +50,5 @@ For more information, see the following resources.
 [Using EXPLAIN and EXPLAIN ANALYZE in Athena](athena-explain-statement.md)
 
 [![AWS Videos](https://img.youtube.com/vi/7JUyTqglmNU/0.jpg)](https://www.youtube.com/watch?v=7JUyTqglmNU)
+
+Visual query execution analysis in Amazon Athena (AWS YouTube channel)

@@ -10,7 +10,7 @@ You can convert `Date` parameters automatically using the [migration tool](migra
 
 **Example - Generate a presigned URL with an expiration date in version 1**
 
-```
+```java
 // Generate a presigned URL that expires at a specific date
 Date expiration = new Date(System.currentTimeMillis() + 3600000); // 1 hour from now
 URL presignedUrl = s3Client.generatePresignedUrl(bucketName, keyName, expiration);
@@ -18,7 +18,7 @@ URL presignedUrl = s3Client.generatePresignedUrl(bucketName, keyName, expiration
 
 **Example - Generate a presigned URL with an expiration instant in version 2**
 
-```
+```java
 // Generate a presigned URL that expires at a specific instant
 Date expiration = new Date(System.currentTimeMillis() + 3600000); // 1 hour from now
 PresignedGetObjectRequest presignedRequest = presigner.presignGetObject(

@@ -22,7 +22,7 @@ You can view a list of all your Code Interpreter tools to manage and monitor the
 
 1. To list Code Interpreters using the AWS CLI, use the `list-code-interpreters` command:
 
-   ```
+   ```bash
    aws bedrock-agentcore list-code-interpreters \
      --region <Region> \
      --max-results 10
@@ -30,7 +30,7 @@ You can view a list of all your Code Interpreter tools to manage and monitor the
 
    You can use the `--next-token` parameter for pagination if you have more than the maximum results:
 
-   ```
+   ```bash
    aws bedrock-agentcore list-code-interpreters \
      --region <Region> \
      --max-results 10 \
@@ -39,7 +39,7 @@ You can view a list of all your Code Interpreter tools to manage and monitor the
 
 1. To list Code Interpreters using the AWS SDK for Python, use the `list_code_interpreters` method:
 
-   ```
+   ```python
    import boto3
 
    # Initialize the boto3 client
@@ -72,7 +72,7 @@ You can view a list of all your Code Interpreter tools to manage and monitor the
 **Note**
 For pagination, include the nextToken parameter.
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X POST "https://bedrock-agentcore-control.<Region>.amazonaws.com/code-interpreters" \
      -H "Accept: application/json" \

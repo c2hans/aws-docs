@@ -39,7 +39,7 @@ Both batch and transaction bundles use the same `Bundle` resource structure. The
 
 The following example shows a transaction bundle with multiple resource types and operations.
 
-```
+```json
 {
   "resourceType": "Bundle",
   "type": "transaction",
@@ -182,7 +182,7 @@ The following example shows a transaction bundle with multiple resource types an
 
 1. Construct a JSON body for the request, specifying each HTTP verb as part of the `method` elements. The following example uses a `batch` type interaction with the `Bundle` resource to create new `Patient` and `Medication` resources. All required sections are commented accordingly. For the purpose of this procedure, save the file as `batch-independent.json`.
 
-   ```
+   ```json
    {
        "resourceType": "Bundle",
        "id": "bundle-batch",
@@ -293,7 +293,7 @@ The following example shows a transaction bundle with multiple resource types an
 
    SigV4 authorization
 
-   ```
+   ```sh
    curl --request POST \
      'https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/' \
      --aws-sigv4 'aws:amz:region:healthlake' \
@@ -308,7 +308,7 @@ The following example shows a transaction bundle with multiple resource types an
 
    SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
-   ```
+   ```json
    {
        "AuthorizationStrategy": "SMART_ON_FHIR",
        "FineGrainedAuthorizationEnabled": true,
@@ -351,7 +351,7 @@ When you use conditional PUTs in bundles, AWS HealthLake evaluates the query par
 
 In the following example bundle with a conditional update, the `Patient` resource with FHIR ID `476` updates only if the condition `_lastUpdated=lt2025-04-20` is met.
 
-```
+```json
 {
     "resourceType": "Bundle",
     "id": "bundle-batch",
@@ -467,7 +467,7 @@ In the following example bundle with a conditional update, the `Patient` resourc
 
 1. Construct a JSON body for the request, specifying the FHIR resources to group together. The following example groups two `Patient` resources in HealthLake. For the purpose of this procedure, save the file as `batch-single.json`.
 
-   ```
+   ```json
    {
        "resourceType": "Bundle",
        "id": "bundle-minimal",
@@ -531,7 +531,7 @@ In the following example bundle with a conditional update, the `Patient` resourc
 
    SigV4 authorization
 
-   ```
+   ```sh
    curl --request POST \
      'https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/Bundle' \
      --aws-sigv4 'aws:amz:region:healthlake' \
@@ -546,7 +546,7 @@ In the following example bundle with a conditional update, the `Patient` resourc
 
    SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
-   ```
+   ```json
    {
        "AuthorizationStrategy": "SMART_ON_FHIR",
        "FineGrainedAuthorizationEnabled": true,
@@ -571,7 +571,7 @@ When bundling FHIR resources, you can optionally specify an `x-amzn-healthlake-f
 
 Resources bundled with the minimal validation level may be ingested into a Datastore despite failing validation required for search indexing. In this case, resources will be updated to include a Healthlake specific extension to document said failures, and the entries within the Bundle response will include OperationOutcome resources as follows:
 
-```
+```json
 {
     "resourceType": "Bundle",
     "type": "batch-response",
@@ -634,7 +634,7 @@ This feature requires explicit AWS account allowlisting and does not enforce FHI
 ### Example message Bundle structure
 <a name="bundle-message-example"></a>
 
-```
+```json
 {
               "resourceType": "Bundle",
               "type": "message",
@@ -699,7 +699,7 @@ HealthLake does initial validations for the bundle at submission time. If valida
 
 1. Construct a JSON body for the request with bundle type `transaction`. For the purpose of this procedure, save the file as `async-transaction.json`.
 
-   ```
+   ```json
    {
        "resourceType": "Bundle",
        "type": "transaction",
@@ -756,7 +756,7 @@ HealthLake does initial validations for the bundle at submission time. If valida
 
    SigV4 authorization
 
-   ```
+   ```sh
    curl --request POST \
      'https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/' \
      --aws-sigv4 'aws:amz:region:healthlake' \
@@ -772,7 +772,7 @@ HealthLake does initial validations for the bundle at submission time. If valida
 
    SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
-   ```
+   ```json
    {
        "AuthorizationStrategy": "SMART_ON_FHIR",
        "FineGrainedAuthorizationEnabled": true,
@@ -792,7 +792,7 @@ HealthLake does initial validations for the bundle at submission time. If valida
    content-location: https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/Transaction/{{transactionId}}
    ```
 
-   ```
+   ```json
    {
        "resourceType": "OperationOutcome",
        "issue": [
@@ -823,7 +823,7 @@ Send a `GET` request to the polling URL. The following example uses the `curl` c
 
 SigV4 authorization
 
-```
+```sh
 curl --request GET \
   'https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/Transaction/{{transactionId}}' \
   --aws-sigv4 'aws:amz:region:healthlake' \
@@ -837,7 +837,7 @@ curl --request GET \
 
 SMART on FHIR authorization. The authorization token must include `read` permissions on the `Transaction` resource type.
 
-```
+```sh
 curl --request GET \
   'https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/Transaction/{{transactionId}}' \
   --header 'Authorization: Bearer {{$SMART_ACCESS_TOKEN}}' \
@@ -861,7 +861,7 @@ The following examples show each response type.
 
 **Transaction queued (202)**
 
-```
+```json
 {
     "resourceType": "OperationOutcome",
     "id": "{{transactionId}}",
@@ -877,7 +877,7 @@ The following examples show each response type.
 
 **Transaction processing (202)**
 
-```
+```json
 {
     "resourceType": "OperationOutcome",
     "id": "{{transactionId}}",
@@ -893,7 +893,7 @@ The following examples show each response type.
 
 **Transaction completed (200)**
 
-```
+```json
 {
     "resourceType": "Bundle",
     "type": "transaction-response",
@@ -920,7 +920,7 @@ The following examples show each response type.
 
 **Transaction failed (4xx/5xx)**
 
-```
+```json
 {
     "resourceType": "OperationOutcome",
     "issue": [

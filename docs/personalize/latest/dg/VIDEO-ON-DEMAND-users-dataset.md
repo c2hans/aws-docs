@@ -26,7 +26,7 @@ Categorical values can have at most 1000 characters. If you have a user with a c
 
  The following is the default VIDEO\_ON\_DEMAND domain schema for Users datasets.
 
-```
+```json
 {
 
   "type": "record",

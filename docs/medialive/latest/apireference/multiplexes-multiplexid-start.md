@@ -46,7 +46,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### Multiplex schema
 <a name="multiplexes-multiplexid-start-response-body-multiplex-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "availabilityZones": [
@@ -78,7 +78,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### InvalidRequest schema
 <a name="multiplexes-multiplexid-start-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -87,7 +87,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### AccessDenied schema
 <a name="multiplexes-multiplexid-start-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -96,7 +96,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### ResourceNotFound schema
 <a name="multiplexes-multiplexid-start-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -105,7 +105,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### ResourceConflict schema
 <a name="multiplexes-multiplexid-start-response-body-resourceconflict-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -114,7 +114,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### LimitExceeded schema
 <a name="multiplexes-multiplexid-start-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -123,7 +123,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### InternalServiceError schema
 <a name="multiplexes-multiplexid-start-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -132,7 +132,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### BadGatewayException schema
 <a name="multiplexes-multiplexid-start-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -141,7 +141,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 #### GatewayTimeoutException schema
 <a name="multiplexes-multiplexid-start-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

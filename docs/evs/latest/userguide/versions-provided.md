@@ -62,12 +62,12 @@ To check the versions in the Amazon EVS console or with the AWS CLI, do the foll
    1. Select an instance type to see the available ESX versions.
 Run the following command to retrieve information about VCF and ESX versions. Replace `<region-code>` with the code of the Region that you want to check.
 
-```
+```bash
 aws evs get-versions --region <region-code>
 ```
 The following is example output.
 
-```
+```json
 {
     "vcfVersions": [
         {

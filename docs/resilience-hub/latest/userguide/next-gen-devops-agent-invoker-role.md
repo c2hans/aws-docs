@@ -12,7 +12,7 @@ If the invoker role is missing these permissions, the connection fails with an a
 
 Attach the following least-privilege policy to the invoker role. These eight actions are the complete set that Resilience Hub calls on your behalf – validating connectivity and starting, polling, and canceling investigations. None of them can mutate your Agent Space, or your resources.
 
-```
+```json
 {
   "Version": "2012-10-17"		 	 	 ,
   "Statement": [

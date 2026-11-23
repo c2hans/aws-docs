@@ -56,7 +56,7 @@ For more information, see [Working with associations in Systems Manager](https:/
 **Tools for PowerShell V4**
 **Example 1: This example shows details of the associations for an instance.**
 
-```
+```powershell
 Get-SSMInstanceAssociationsStatus -InstanceId "i-0000293ffd8c57862"
 ```
 **Output:**
@@ -75,7 +75,7 @@ Status           : Pending
 ```
 **Example 2: This example checks the instance association status for the given instance id and further, displays the execution status of those associations**
 
-```
+```powershell
 Get-SSMInstanceAssociationsStatus -InstanceId i-012e3cb4df567e8aa | ForEach-Object {Get-SSMAssociationExecution -AssociationId .AssociationId}
 ```
 **Output:**
@@ -95,7 +95,7 @@ Status                : Success
 **Tools for PowerShell V5**
 **Example 1: This example shows details of the associations for an instance.**
 
-```
+```powershell
 Get-SSMInstanceAssociationsStatus -InstanceId "i-0000293ffd8c57862"
 ```
 **Output:**
@@ -114,7 +114,7 @@ Status           : Pending
 ```
 **Example 2: This example checks the instance association status for the given instance id and further, displays the execution status of those associations**
 
-```
+```powershell
 Get-SSMInstanceAssociationsStatus -InstanceId i-012e3cb4df567e8aa | ForEach-Object {Get-SSMAssociationExecution -AssociationId .AssociationId}
 ```
 **Output:**

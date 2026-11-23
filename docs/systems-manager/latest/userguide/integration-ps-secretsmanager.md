@@ -44,7 +44,7 @@ Parameter Store functions as a pass-through service for references to Secrets Ma
 
    Here is a Java code example that references an access key and a secret key that are stored in Secrets Manager. This code example sets up an Amazon DynamoDB client. The code retrieves configuration data and credentials from Parameter Store. The configuration data is stored as a string parameter in Parameter Store and the credentials are stored in Secrets Manager. Even though the configuration data and credentials are stored in separate services, both sets of data can be accessed from Parameter Store by using the `GetParameter` API.
 
-   ```
+   ```java
    /**
    * Initialize Systems Manager client with default credentials
    */
@@ -90,7 +90,7 @@ Parameter Store functions as a pass-through service for references to Secrets Ma
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm get-parameter \
        --name /aws/reference/secretsmanager/{{s1-secret}} \
        --with-decryption
@@ -99,7 +99,7 @@ Parameter Store functions as a pass-through service for references to Secrets Ma
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm get-parameter ^
        --name /aws/reference/secretsmanager/{{s1-secret}} ^
        --with-decryption
@@ -137,7 +137,7 @@ Parameter Store functions as a pass-through service for references to Secrets Ma
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm get-parameter \
        --name /aws/reference/secretsmanager/{{s1-secret:11111-aaa-bbb-ccc-123456789}} \
        --with-decryption
@@ -146,7 +146,7 @@ Parameter Store functions as a pass-through service for references to Secrets Ma
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm get-parameter ^
        --name /aws/reference/secretsmanager/{{s1-secret:11111-aaa-bbb-ccc-123456789}} ^
        --with-decryption
@@ -185,7 +185,7 @@ Parameter Store functions as a pass-through service for references to Secrets Ma
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm get-parameter \
        --name /aws/reference/secretsmanager/{{s1-secret:AWSCURRENT}} \
        --with-decryption
@@ -194,7 +194,7 @@ Parameter Store functions as a pass-through service for references to Secrets Ma
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm get-parameter ^
        --name /aws/reference/secretsmanager/{{s1-secret:AWSCURRENT}} ^
        --with-decryption

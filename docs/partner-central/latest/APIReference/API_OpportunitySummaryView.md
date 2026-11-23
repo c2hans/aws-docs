@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 
 # OpportunitySummaryView
 
- Provides a comprehensive view of an opportunity summary, including lifecycle information, team details, opportunity type, primary needs from AWS, and associated project information.
+Provides a comprehensive view of an opportunity summary, including lifecycle information, team details, opportunity type, primary needs from AWS, and associated project information.
 
 ## Contents
 <a name="API_OpportunitySummaryView_Contents"></a>
@@ -13,12 +13,12 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 In the following list, the required parameters are described first.
 
  ** Customer **   <a name="AWSPartnerCentral-Type-OpportunitySummaryView-Customer"></a>
-An object that contains the customer's `Account` and `Contact`.
+Contains details about the customer that the opportunity belongs to.
 Type: [Customer](API_Customer.md) object
 Required: No
 
  ** Lifecycle **   <a name="AWSPartnerCentral-Type-OpportunitySummaryView-Lifecycle"></a>
- Contains information about the opportunity's lifecycle, including its current stage, status, and important dates such as creation and last modification times.
+Contains information about the opportunity's lifecycle, including its current stage, status, and important dates such as creation and last modification times.
 Type: [LifeCycleForView](API_LifeCycleForView.md) object
 Required: No
 
@@ -41,12 +41,12 @@ Valid Values: `Co-Sell - Architectural Validation | Co-Sell - Business Presentat
 Required: No
 
  ** Project **   <a name="AWSPartnerCentral-Type-OpportunitySummaryView-Project"></a>
- Contains summary information about the project associated with the opportunity, including project name, description, timeline, and other relevant details.
+Contains summary information about the project associated with the opportunity, including project name, description, timeline, and other relevant details.
 Type: [ProjectView](API_ProjectView.md) object
 Required: No
 
  ** RelatedEntityIdentifiers **   <a name="AWSPartnerCentral-Type-OpportunitySummaryView-RelatedEntityIdentifiers"></a>
-This field provides the associations' information for other entities with the opportunity. These entities include identifiers for `AWSProducts`, `Partner Solutions`, and `AWSMarketplaceOffers`.
+Lists the identifiers of entities that relate to the opportunity, such as AWS products, partner solutions, and AWS Marketplace offers.
 Type: [RelatedEntityIdentifiers](API_RelatedEntityIdentifiers.md) object
 Required: No
 

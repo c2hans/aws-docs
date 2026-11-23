@@ -65,7 +65,7 @@ You can use the [**create-domain-configuration**](https://docs.aws.amazon.com/cl
 
    The output of this command can look like the following:
 
-   ```
+   ```JSON
    {
    "domainConfigurationName": "test",
    "domainConfigurationArn": "arn:aws:iot:us-west-2:123456789012:domainconfiguration/test/34ga9"
@@ -83,7 +83,7 @@ You can use the [**create-domain-configuration**](https://docs.aws.amazon.com/cl
 
    This command can return the domain configuration details that include the TLS settings like the following:
 
-   ```
+   ```JSON
    {
     "tlsConfig": {
     "securityPolicy": "IoTSecurityPolicy_TLS13_1_2_2022_10"
@@ -109,7 +109,7 @@ You can use the [**create-domain-configuration**](https://docs.aws.amazon.com/cl
 
    The output of this command can look like the following:
 
-   ```
+   ```JSON
    {
    "domainConfigurationName": "test",
    "domainConfigurationArn": "arn:aws:iot:us-west-2:123456789012:domainconfiguration/test/34ga9"
@@ -126,7 +126,7 @@ You can use the [**create-domain-configuration**](https://docs.aws.amazon.com/cl
 
    The output of the command can look like the following:
 
-   ```
+   ```JSON
    {
    "domainConfigurationName": "iot:Data-ATS",
    "domainConfigurationArn": "arn:aws:iot:us-west-2:123456789012:domainconfiguration/iot:Data-ATS"

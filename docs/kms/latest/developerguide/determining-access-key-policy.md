@@ -19,7 +19,7 @@ The following examples use the policy statements found in the [default key polic
 
 **Example Policy statement 1**
 
-```
+```json
 {
   "Sid": "Enable IAM User Permissions",
   "Effect": "Allow",
@@ -33,7 +33,7 @@ A key policy document with a statement that allows access to the AWS account ena
 
 **Example Policy statement 2**
 
-```
+```json
 {
   "Sid": "Allow access for Key Administrators",
   "Effect": "Allow",
@@ -59,7 +59,7 @@ In policy statement 2, `arn:aws:iam::111122223333:role/KMSKeyAdmins` refers to t
 
 **Example Policy statement 3**
 
-```
+```json
 {
   "Sid": "Allow use of the key",
   "Effect": "Allow",
@@ -78,7 +78,7 @@ In policy statement 3, `arn:aws:iam::111122223333:role/EncryptionApp` refers to 
 
 **Example Policy statement 4**
 
-```
+```json
 {
   "Sid": "Allow attachment of persistent resources",
   "Effect": "Allow",

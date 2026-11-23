@@ -39,7 +39,7 @@ You can reset group deployments from group configuration page in the AWS IoT con
 
 You can use the `ResetDeployments` action in the AWS CLI, AWS IoT Greengrass API, or AWS SDK to reset deployments. The examples in this topic use the CLI.
 
-```
+```bash
 aws greengrass reset-deployments --group-id {{GroupId}} [--force]
 ```Arguments for the `reset-deployments` CLI command:
 
@@ -51,7 +51,7 @@ Optional. Use this parameter if the group's core device has been lost, stolen, o
 
 The output of the `reset-deployments` CLI command looks like this:
 
-```
+```json
 {
     "DeploymentId": "4db95ef8-9309-4774-95a4-eea580b6ceef",
     "DeploymentArn": "arn:aws:greengrass:us-west-2:106511594199:/greengrass/groups/b744ed45-a7df-4227-860a-8d4492caa412/deployments/4db95ef8-9309-4774-95a4-eea580b6ceef"
@@ -60,7 +60,7 @@ The output of the `reset-deployments` CLI command looks like this:
 
 You can check the status of the reset deployment with the `get-deployment-status` CLI command:
 
-```
+```bash
 aws greengrass get-deployment-status --deployment-id {{DeploymentId}} --group-id {{GroupId}}
 ```Arguments for the `get-deployment-status` CLI command:
 
@@ -72,7 +72,7 @@ The group ID.
 
 The output of the `get-deployment-status` CLI command looks like this:
 
-```
+```json
 {
     "DeploymentStatus": "Success",
     "UpdatedAt": "2017-04-04T00:00:00.000Z"

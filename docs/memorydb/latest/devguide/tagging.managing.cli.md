@@ -37,7 +37,7 @@ aws memorydb list-tags ^
 
 Output from this operation will look something like the following, a list of all the tags on the resource.
 
-```
+```json
 {
    "TagList": [
       {
@@ -54,7 +54,7 @@ Output from this operation will look something like the following, a list of all
 
 If there are no tags on the resource, the output will be an empty TagList.
 
-```
+```json
 {
    "TagList": []
 }
@@ -89,7 +89,7 @@ aws memorydb tag-resource ^
 
 Output from this operation will look something like the following, a list of all the tags on the resource following the operation.
 
-```
+```json
 {
    "TagList": [
       {
@@ -144,7 +144,7 @@ aws memorydb untag-resource ^
 
 Output from this operation will look something like the following, a list of all the tags on the resource following the operation.
 
-```
+```json
 {
    "TagList": []
 }

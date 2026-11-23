@@ -36,7 +36,7 @@ Deprecation is available from any record status.
 
 **Example**
 
-```
+```bash
 aws agent-registry-control update-registry-record-status \
   --registry-id "<registryId>" \
   --record-id "<recordId>" \
@@ -45,7 +45,7 @@ aws agent-registry-control update-registry-record-status \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control update-registry-record-status \
   --registry-id "<registryId>" \
   --record-id "<recordId>" \
@@ -59,7 +59,7 @@ aws bedrock-agentcore-control update-registry-record-status \
 
 **Example**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')
@@ -74,7 +74,7 @@ print(f"Status: {response['status']}")  # DEPRECATED
 print(f"StatusReason: {response['statusReason']}")
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control')

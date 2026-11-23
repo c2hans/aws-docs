@@ -72,7 +72,7 @@ To connect to a structured data store using the AWS Management Console, do the f
 
 To connect to a structured data store using the Amazon Bedrock API, send a [CreateKnowledgeBase](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt) with the following general request body:
 
-```
+```json
 {
     "name": "string",
     "roleArn": "string",
@@ -116,7 +116,7 @@ You can configure the following types of query engine:
 
 If your Amazon Redshift databases are provisioned on dedicated compute nodes, the value of the `queryEngineConfiguration` field should be a [RedshiftQueryEngineConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_RedshiftQueryEngineConfiguration.html) in the following format:
 
-```
+```json
 {
     "type": "PROVISIONED",
     "provisionedConfiguration": {
@@ -133,7 +133,7 @@ Specify the ID of the cluster in the `clusterIdentifier` field. The [RedshiftPro
 
 If you authorize with your IAM role, you need to specify only `IAM` as the type in the [RedshiftProvisionedAuthConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_RedshiftProvisionedAuthConfiguration.html) with no additional fields.
 
-```
+```json
 {
     "type": "IAM"
 }
@@ -144,7 +144,7 @@ If you authorize with your IAM role, you need to specify only `IAM` as the type 
 
 If you authorize with the database user name, specify the `type` as `USERNAME` and specify the user name in the `databaseUser` field in the `RedshiftProvisionedAuthConfig`:
 
-```
+```json
 {
     "type": "USERNAME",
     "databaseUser": "string"
@@ -156,7 +156,7 @@ If you authorize with the database user name, specify the `type` as `USERNAME` a
 
 If you authorize with AWS Secrets Manager, specify the `type` as `USERNAME_PASSWORD` and specify the ARN of the secret in the `usernamePasswordSecretArn` field in the `RedshiftProvisionedAuthConfig`:
 
-```
+```json
 {
     "type": "USERNAME_PASSWORD",
     "usernamePasswordSecretArn": "string"
@@ -170,7 +170,7 @@ If you authorize with AWS Secrets Manager, specify the `type` as `USERNAME_PASSW
 
 If you're using Amazon Redshift Serverless, the value of the `queryConfiguration`field should be a [RedshiftQueryEngineConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_RedshiftQueryEngineConfiguration.html) in the following format:
 
-```
+```json
 {
     "type": "SERVERLESS",
     "serverlessConfiguration": {
@@ -187,7 +187,7 @@ Specify the ARN of your workgroup in the `workgroupArn` field. The [RedshiftServ
 
 If you authorize with your IAM role, you need to specify only `IAM` as the type in the `RedshiftServerlessAuthConfiguration` with no additional fields.
 
-```
+```json
 {
     "type": "IAM"
 }
@@ -198,7 +198,7 @@ If you authorize with your IAM role, you need to specify only `IAM` as the type 
 
 If you authorize with AWS Secrets Manager, specify the `type` as `USERNAME_PASSWORD` and specify the ARN of the secret in the `usernamePasswordSecretArn` field in the `RedshiftServerlessAuthConfiguration`:
 
-```
+```json
 {
     "type": "USERNAME_PASSWORD",
     "usernamePasswordSecretArn": "string"
@@ -217,7 +217,7 @@ This field maps to an array containing a single [RedshiftQueryEngineStorageConfi
 
 If your data is stored in AWS Glue Data Catalog, the `RedshiftQueryEngineStorageConfiguration` should be in the following format:
 
-```
+```json
 {
     "type": "AWS_DATA_CATALOG",
     "awsDataCatalogConfiguration": {
@@ -236,7 +236,7 @@ Enter table names in the pattern described in [Cross-database queries](https://d
 
 If your data is stored in an Amazon Redshift database, the `RedshiftQueryEngineStorageConfiguration` should be in the following format:
 
-```
+```json
 {
     "type": "string",
     "redshiftConfiguration": {
@@ -257,7 +257,7 @@ If your database is mounted through Amazon SageMaker AI Lakehouse, the database 
 
 This field maps to the following [QueryGenerationConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_QueryGenerationConfiguration.html) that you can use to configure how your data is queried:
 
-```
+```json
 {
     "executionTimeoutSeconds": number,
     "generationContext": {
@@ -303,7 +303,7 @@ For information about generation contexts that you can include, expand the follo
 To improve the accuracy of SQL generation for querying the database, you can provide a description for the table or column that provides more context than a short table or column name. You can do the following:
 + To add a description for a table, include a [QueryGenerationTable](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_QueryGenerationTable.html) object in the `tables` array. In that object, specify the name of the table in the `name` field and a description in the `description` field, as in the following example:
 
-  ```
+  ```json
   {
       "name": "database.schema.tableA",
       "description": "Description for Table A"
@@ -311,7 +311,7 @@ To improve the accuracy of SQL generation for querying the database, you can pro
   ```
 + To add a description for a column, include a [QueryGenerationTable](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_QueryGenerationTable.html) object in the `tables` array. In that object, specify the name of the table in the `name` field and include the `columns` field, which maps to an array of [QueryGenerationColumn](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_QueryGenerationColumn.html). In a `QueryGenerationColumn` object, include the name of the column in the `name` field and a description in the `description` field, as in the following example:
 
-  ```
+  ```json
   {
       "name": "database.schema.tableA",
       "columns": [
@@ -324,7 +324,7 @@ To improve the accuracy of SQL generation for querying the database, you can pro
   ```
 + You can add a description for both a table and a column in it, as in the following example:
 
-  ```
+  ```json
   {
       "name": "database.schema.tableA",
       "description": "Description for Table A",
@@ -349,7 +349,7 @@ You can suggest tables or columns to include or exclude when generating SQL by u
 You can specify whether to include or exclude tables or columns in the following ways:
 + To include or exclude a table, include a [QueryGenerationTable](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_QueryGenerationTable.html) object in the `tables` array. In that object, specify the name of the table in the `name` field and whether to include or exclude it in the `inclusion` field, as in the following example:
 
-  ```
+  ```json
   {
       "name": "database.schema.tableA",
       "inclusion": "EXCLUDE"
@@ -359,7 +359,7 @@ You can specify whether to include or exclude tables or columns in the following
   The query engine doesn't add `Table A` in the additional context for generating SQL.
 + To include or exclude a column, include a [QueryGenerationTable](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_QueryGenerationTable.html) object in the `tables` array. In that object, specify the name of the table in the `name` field and include the `columns` field, which maps to an array of [QueryGenerationColumn](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_QueryGenerationColumn.html). In a `QueryGenerationColumn` object, include the name of the column in the `name` field and whether to include or exclude it in the `inclusion` field, as in the following example:
 
-  ```
+  ```json
   {
       "name": "database.schema.tableA",
       "columns": [
@@ -374,7 +374,7 @@ You can specify whether to include or exclude tables or columns in the following
   The SQL generation ignores `Column A` in `Table A` in the context when generating SQL.
 + You can combine tables and columns when specifying inclusions or exclusions, as in the following example:
 
-  ```
+  ```json
   {
       "name": "database.schema.tableA",
       "inclusion": "INCLUDE",

@@ -30,7 +30,7 @@ Any sensitive information, such as passwords, authentication tokens, file commen
 
 The following shows an example of a CloudTrail log entry for WorkSpaces.
 
-```
+```json
 {
   "Records" : [
     {

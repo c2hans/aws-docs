@@ -20,7 +20,7 @@ When you submit a step to EMR, you can configure the step's logging behavior via
 
 The following example shows you how you can customize a step's S3 bucket and KMS key from a python script:
 
-```
+```python
 import boto3
 
 emr_client = boto3.client("emr", region_name="us-east-1")

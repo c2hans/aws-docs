@@ -24,7 +24,7 @@ The following code example shows how to use `SendEmail`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ses/v2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-sesv2'
 require_relative 'config' # Recipient and sender email addresses.
 

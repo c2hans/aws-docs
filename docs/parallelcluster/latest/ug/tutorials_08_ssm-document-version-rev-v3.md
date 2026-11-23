@@ -19,7 +19,7 @@ When using the AWS ParallelCluster command line interface (CLI) or API, you only
 
 1. In your terminal, run the following command to get the list of existing SSM documents that you own.
 
-   ```
+   ```bash
    $ aws ssm list-documents --document-filter "key=Owner,value=Self"
    ```
 
@@ -27,7 +27,7 @@ When using the AWS ParallelCluster command line interface (CLI) or API, you only
 
    1. Find the `DocumentVersion` parameter for `SessionManagerRunShell` by running the following command:
 
-      ```
+      ```bash
       $ aws ssm describe-document --name {{"SSM-SessionManagerRunShell"}}
       {
           "Document": {
@@ -65,13 +65,13 @@ When using the AWS ParallelCluster command line interface (CLI) or API, you only
 
    1. Revert to the previous version by running the following command:
 
-      ```
+      ```bash
       $ aws ssm delete-document --name {{"SSM-SessionManagerRunShell"}} --document-version {{2}}
       ```
 
 1. Verify that the document version has been reverted by running the `describe-document` command again:
 
-   ```
+   ```bash
    $ aws ssm describe-document --name {{"SSM-SessionManagerRunShell"}}
    {
        "Document": {

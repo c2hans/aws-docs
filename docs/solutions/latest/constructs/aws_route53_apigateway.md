@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import * as route53 from "aws-cdk-lib/aws-route53";
@@ -56,7 +56,7 @@ new Route53ToApiGateway(this, 'Route53ToApiGatewayPattern', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_route53_apigateway import Route53ToApiGateway
 from aws_cdk import (
     aws_route53 as route53,
@@ -90,7 +90,7 @@ Route53ToApiGateway(self, 'Route53ToApigatewayPattern',
                     )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

@@ -44,7 +44,7 @@ For more information, see [Create a Lambda function with the console](https://do
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/lambda#code-examples).
 The Cargo.toml with dependencies used in this scenario.
 
-```
+```rust
 [package]
 name = "lambda-code-examples"
 version = "0.1.0"
@@ -72,7 +72,7 @@ serde = "1.0.164"
 ```
 A collection of utilities that streamline calling Lambda for this scenario. This file is src/ations.rs in the crate.
 
-```
+```rust
 use anyhow::anyhow;
 use aws_sdk_iam::operation::{create_role::CreateRoleError, delete_role::DeleteRoleOutput};
 use aws_sdk_lambda::{
@@ -635,7 +635,7 @@ mod test {
 ```
 A binary to run the scenario from front to end, using command line flags to control some behavior. This file is src/bin/scenario.rs in the crate.
 
-```
+```rust
 /*
 ## Service actions
 
@@ -872,7 +872,7 @@ The following code example shows how to use `CreateFunction`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/lambda#code-examples).
 
-```
+```rust
     /**
      * Create a function, uploading from a zip file.
      */
@@ -950,7 +950,7 @@ The following code example shows how to use `DeleteFunction`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/lambda#code-examples).
 
-```
+```rust
     /** Delete a function and its role, and if possible or necessary, its associated code object and bucket. */
     pub async fn delete_function(
         &self,
@@ -1008,7 +1008,7 @@ The following code example shows how to use `GetFunction`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/lambda#code-examples).
 
-```
+```rust
     /** Get the Lambda function with this Manager's name. */
     pub async fn get_function(&self) -> Result<GetFunctionOutput, anyhow::Error> {
         info!("Getting lambda function");
@@ -1030,7 +1030,7 @@ The following code example shows how to use `Invoke`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/lambda#code-examples).
 
-```
+```rust
     /** Invoke the lambda function using calculator InvokeArgs. */
     pub async fn invoke(&self, args: InvokeArgs) -> Result<InvokeOutput, anyhow::Error> {
         info!(?args, "Invoking {}", self.lambda_name);
@@ -1069,7 +1069,7 @@ The following code example shows how to use `ListFunctions`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/lambda#code-examples).
 
-```
+```rust
     /** List all Lambda functions in the current Region. */
     pub async fn list_functions(&self) -> Result<ListFunctionsOutput, anyhow::Error> {
         info!("Listing lambda functions");
@@ -1090,7 +1090,7 @@ The following code example shows how to use `UpdateFunctionCode`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/lambda#code-examples).
 
-```
+```rust
     /** Given a Path to a zip file, update the function's code and wait for the update to finish. */
     pub async fn update_function_code(
         &self,
@@ -1155,7 +1155,7 @@ The following code example shows how to use `UpdateFunctionConfiguration`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/lambda#code-examples).
 
-```
+```rust
     /** Update the environment for a function. */
     pub async fn update_function_configuration(
         &self,
@@ -1214,7 +1214,7 @@ The following code example shows how to implement a Lambda function that connect
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-connect-rds-iam) repository.
 Connecting to an Amazon RDS database in a Lambda function using Rust.
 
-```
+```rust
 use aws_config::BehaviorVersion;
 use aws_credential_types::provider::ProvideCredentials;
 use aws_sigv4::{
@@ -1335,7 +1335,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda) repository.
 Consuming an Kinesis event with Lambda using Rust.
 
-```
+```rust
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 use aws_lambda_events::event::kinesis::KinesisEvent;
@@ -1394,7 +1394,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using Rust.
 
-```
+```rust
 use lambda_runtime::{service_fn, tracing, Error, LambdaEvent};
 use aws_lambda_events::{
     event::dynamodb::{Event, EventRecord},
@@ -1460,7 +1460,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using Rust.
 
-```
+```rust
 use lambda_runtime::{service_fn, tracing, Error, LambdaEvent};
 use aws_lambda_events::{
     event::documentdb::{DocumentDbEvent, DocumentDbInnerEvent},
@@ -1528,7 +1528,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-msk-to-lambda) repository.
 Consuming an Amazon MSK event with Lambda using Rust.
 
-```
+```rust
 use aws_lambda_events::event::kafka::KafkaEvent;
 use lambda_runtime::{run, service_fn, tracing, Error, LambdaEvent};
 use base64::prelude::*;
@@ -1588,7 +1588,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using Rust.
 
-```
+```rust
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 use aws_lambda_events::event::s3::S3Event;
@@ -1655,7 +1655,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sns-to-lambda) repository.
 Consuming an SNS event with Lambda using Rust.
 
-```
+```rust
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 use aws_lambda_events::event::sns::SnsEvent;
@@ -1707,7 +1707,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda) repository.
 Consuming an SQS event with Lambda using Rust.
 
-```
+```rust
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 use aws_lambda_events::event::sqs::SqsEvent;
@@ -1745,7 +1745,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda-with-batch-item-handling) repository.
 Reporting Kinesis batch item failures with Lambda using Rust.
 
-```
+```rust
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 use aws_lambda_events::{
@@ -1830,7 +1830,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using Rust.
 
-```
+```rust
 use aws_lambda_events::{
     event::dynamodb::{Event, EventRecord, StreamRecord},
     streams::{DynamoDbBatchItemFailure, DynamoDbEventResponse},
@@ -1910,7 +1910,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using Rust.
 
-```
+```rust
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 use aws_lambda_events::{

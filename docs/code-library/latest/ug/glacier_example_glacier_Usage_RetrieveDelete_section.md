@@ -19,7 +19,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 Create a class that wraps Amazon Glacier operations.
 
-```
+```python
 import argparse
 import logging
 import os
@@ -125,7 +125,7 @@ class GlacierWrapper:
 ```
 Call functions on the wrapper class to get archive content from a completed job, then delete the archive.
 
-```
+```python
 def retrieve_demo(glacier, vault_name):
     """
     Shows how to:

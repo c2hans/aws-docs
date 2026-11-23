@@ -10,13 +10,13 @@ AWS End User Messaging sends MMS media from an Amazon S3 bucket. You store your 
 
 1. Create an Amazon S3 bucket in the same AWS Region as your origination identity, using the [create-bucket](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/create-bucket.html) command:
 
-   ```
+   ```bsh
    aws s3api create-bucket --region {{us-east-1}} --bucket {{BucketName}}
    ```
 
 1. Upload each media file to the bucket, using the [cp](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-managing-objects-copy) command:
 
-   ```
+   ```bsh
    aws s3 cp {{SourceFilePathAndName}} s3://{{BucketName}}/{{FileName}}
    ```
 

@@ -14,7 +14,7 @@ The following code examples show how to use `PutTargets`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.cloudwatch.model.CloudWatchException;
 import software.amazon.awssdk.services.cloudwatchevents.CloudWatchEventsClient;
 import software.amazon.awssdk.services.cloudwatchevents.model.PutTargetsRequest;
@@ -89,7 +89,7 @@ public class PutTargets {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-events#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { PutTargetsCommand } from "@aws-sdk/client-cloudwatch-events";
 import { client } from "../libs/client.js";
 
@@ -119,7 +119,7 @@ export default run();
 ```
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { CloudWatchEventsClient } from "@aws-sdk/client-cloudwatch-events";
 
 export const client = new CloudWatchEventsClient({});
@@ -130,7 +130,7 @@ export const client = new CloudWatchEventsClient({});
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/cloudwatch-events#code-examples).
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region

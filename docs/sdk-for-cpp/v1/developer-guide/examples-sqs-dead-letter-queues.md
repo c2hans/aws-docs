@@ -29,14 +29,14 @@ Here is an example function that creates a redrive policy by providing it with t
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/core/utils/json/JsonSerializer.h>
 ```
 
  **Code**
 
-```
+```cpp
 Aws::String MakeRedrivePolicy(const Aws::String &queueArn, int maxReceiveCount) {
     Aws::Utils::Json::JsonValue redrive_arn_entry;
     redrive_arn_entry.AsString(queueArn);
@@ -61,7 +61,7 @@ To finish setting up your dead letter queue, call the SQSClient class’ `SetQue
 
  **Includes**
 
-```
+```cpp
 #include <aws/sqs/SQSClient.h>
 #include <aws/sqs/model/SetQueueAttributesRequest.h>
 #include <iostream>
@@ -69,7 +69,7 @@ To finish setting up your dead letter queue, call the SQSClient class’ `SetQue
 
  **Code**
 
-```
+```cpp
     Aws::SQS::Model::SetQueueAttributesRequest request;
     request.SetQueueUrl(srcQueueUrl);
     request.AddAttributes(

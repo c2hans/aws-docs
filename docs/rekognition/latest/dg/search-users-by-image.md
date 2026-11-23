@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/search-users-by-im
 
    This Java example searchers the users in a collection based off an inpute image, using the `SearchUsersByImage` operation.
 
-   ```
+   ```java
    import com.amazonaws.services.rekognition.AmazonRekognition;
    import com.amazonaws.services.rekognition.AmazonRekognitionClientBuilder;
    import com.amazonaws.services.rekognition.model.Image;
@@ -78,7 +78,7 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/search-users-by-im
 
    The following example searches the users in a collection based on an input image, with the `SearchUsersByImage` operation.
 
-   ```
+   ```python
    # Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 

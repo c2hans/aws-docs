@@ -29,7 +29,7 @@ The MQTT message payload contains data collected from the vehicles. You can spec
 
 The MQTT message payload is protocol buffers (Protobuf) encoded, and the MQTT message header contains a content type indicator defined as application/octet-stream. The Protobuf encoding schema is as follows:
 
-```
+```java
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 

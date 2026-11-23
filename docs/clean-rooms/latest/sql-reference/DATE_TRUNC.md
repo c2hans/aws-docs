@@ -42,7 +42,7 @@ Returns timestamp *ts* truncated to the unit specified by the format model
 
 The following example truncates a date value to the beginning of the year. The output shows that the date "2015-03-05" has been truncated to "2015-01-01", which is the beginning of the year 2015.
 
-```
+```sql
 SELECT date_trunc('YEAR', '2015-03-05');
 
  date_trunc

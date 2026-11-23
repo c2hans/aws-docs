@@ -69,7 +69,7 @@ The following code snippets show how you might change synchronous code into asyn
 
 The original code calls [ListBuckets](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/MS3ListBuckets.html).
 
-```
+```c#
 private static ListBucketsResponse MyListBuckets()
 {
   var s3Client = new AmazonS3Client();
@@ -84,7 +84,7 @@ Console.WriteLine($"Number of buckets: {response.Buckets.Count}");
 
 To use version 3.5 of the SDK, call [ListBucketsAsync](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/MS3ListBucketsAsyncCancellationToken.html) instead.
 
-```
+```c#
 private static async Task<ListBucketsResponse> MyListBuckets()
 {
   var s3Client = new AmazonS3Client();

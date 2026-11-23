@@ -261,7 +261,7 @@ If you need to change your capacity after you complete your order, contact [AWS 
 
    Example JSON file:
 
-   ```
+   ```JSON
    {
        "InstancePools": [
            {

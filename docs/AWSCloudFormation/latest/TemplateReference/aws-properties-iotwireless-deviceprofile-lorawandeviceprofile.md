@@ -112,7 +112,7 @@ The MaxEIRP value.
 *Required*: No
 *Type*: Integer
 *Minimum*: `0`
-*Maximum*: `15`
+*Maximum*: `36`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `PingSlotDr`  <a name="cfn-iotwireless-deviceprofile-lorawandeviceprofile-pingslotdr"></a>

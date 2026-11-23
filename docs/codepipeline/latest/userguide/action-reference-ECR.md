@@ -98,7 +98,7 @@ For more information about this action, see [Amazon ECR source action reference]
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: Source
 Actions:
   - InputArtifacts: []
@@ -120,7 +120,7 @@ Actions:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "Source",
     "Actions": [

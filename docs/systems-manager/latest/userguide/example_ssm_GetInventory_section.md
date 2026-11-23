@@ -56,7 +56,7 @@ For more information, see [AWS Systems Manager Inventory](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This example gets the custom metadata for your inventory.**
 
-```
+```powershell
 Get-SSMInventory
 ```
 **Output:**
@@ -71,7 +71,7 @@ Data                                                                            
 **Tools for PowerShell V5**
 **Example 1: This example gets the custom metadata for your inventory.**
 
-```
+```powershell
 Get-SSMInventory
 ```
 **Output:**

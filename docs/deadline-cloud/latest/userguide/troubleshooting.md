@@ -122,7 +122,7 @@ The CHUNK[INT] task parameter requires the TASK_CHUNKING extension.
 
 To resolve this issue, add the following to your job template:
 
-```
+```yaml
 extensions:
   - TASK_CHUNKING
 ```

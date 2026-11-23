@@ -20,7 +20,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Retrieve information for one or all Amazon EC2 security group.
     /// </summary>
@@ -120,7 +120,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_describe_security_groups
 #
@@ -185,7 +185,7 @@ function ec2_describe_security_groups() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -237,7 +237,7 @@ function aws_cli_error_log() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Describe all Amazon Elastic Compute Cloud (Amazon EC2) security groups, or a specific group.
 /*!
   \param groupID: A group ID, ignored if empty.
@@ -419,7 +419,7 @@ For additional examples using tag filters, see [Working with tags](https://docs.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Asynchronously describes the security groups for the specified group ID.
      *
@@ -461,7 +461,7 @@ For additional examples using tag filters, see [Working with tags](https://docs.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { DescribeSecurityGroupsCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -506,7 +506,7 @@ export const main = async ({ groupIds = [] }) => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun describeEC2SecurityGroups(groupId: String) {
     val request =
         DescribeSecurityGroupsRequest {
@@ -529,7 +529,7 @@ suspend fun describeEC2SecurityGroups(groupId: String) {
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified security group for a VPC. When working with security groups belonging to a VPC you must use the security group ID (-GroupId parameter), not name (-GroupName parameter), to reference the group.**
 
-```
+```powershell
 Get-EC2SecurityGroup -GroupId sg-12345678
 ```
 **Output:**
@@ -546,7 +546,7 @@ VpcId               : vpc-12345678
 ```
 **Example 2: This example describes the specified security group for EC2-Classic. When working with security groups for EC2-Classic you may use either the group name (-GroupName parameter) or group ID (-GroupId parameter) to reference the security group.**
 
-```
+```powershell
 Get-EC2SecurityGroup -GroupName my-security-group
 ```
 **Output:**
@@ -563,7 +563,7 @@ VpcId               :
 ```
 **Example 3: This example retrieves all the security groups for the vpc-0fc1ff23456b789eb**
 
-```
+```powershell
 Get-EC2SecurityGroup -Filter @{Name="vpc-id";Values="vpc-0fc1ff23456b789eb"}
 ```
 +  For API details, see [DescribeSecurityGroups](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -571,7 +571,7 @@ Get-EC2SecurityGroup -Filter @{Name="vpc-id";Values="vpc-0fc1ff23456b789eb"}
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified security group for a VPC. When working with security groups belonging to a VPC you must use the security group ID (-GroupId parameter), not name (-GroupName parameter), to reference the group.**
 
-```
+```powershell
 Get-EC2SecurityGroup -GroupId sg-12345678
 ```
 **Output:**
@@ -588,7 +588,7 @@ VpcId               : vpc-12345678
 ```
 **Example 2: This example describes the specified security group for EC2-Classic. When working with security groups for EC2-Classic you may use either the group name (-GroupName parameter) or group ID (-GroupId parameter) to reference the security group.**
 
-```
+```powershell
 Get-EC2SecurityGroup -GroupName my-security-group
 ```
 **Output:**
@@ -605,7 +605,7 @@ VpcId               :
 ```
 **Example 3: This example retrieves all the security groups for the vpc-0fc1ff23456b789eb**
 
-```
+```powershell
 Get-EC2SecurityGroup -Filter @{Name="vpc-id";Values="vpc-0fc1ff23456b789eb"}
 ```
 +  For API details, see [DescribeSecurityGroups](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -616,7 +616,7 @@ Get-EC2SecurityGroup -Filter @{Name="vpc-id";Values="vpc-0fc1ff23456b789eb"}
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ec2#code-examples).
 
-```
+```python
 class SecurityGroupWrapper:
     """Encapsulates Amazon Elastic Compute Cloud (Amazon EC2) security group actions."""
 
@@ -687,7 +687,7 @@ class SecurityGroupWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
 async fn show_security_groups(client: &aws_sdk_ec2::Client, group_ids: Vec<String>) {
     let response = client
         .describe_security_groups()
@@ -725,7 +725,7 @@ async fn show_security_groups(client: &aws_sdk_ec2::Client, group_ids: Vec<Strin
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA lt_group_ids TYPE /aws1/cl_ec2groupidstrlist_w=>tt_groupidstringlist.
         APPEND NEW /aws1/cl_ec2groupidstrlist_w( iv_value = iv_group_id ) TO lt_group_ids.
@@ -746,7 +746,7 @@ async fn show_security_groups(client: &aws_sdk_ec2::Client, group_ids: Vec<Strin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 Using pagination with `describeSecurityGroupsPaginated()`.
 
-```
+```swift
 import AWSEC2
 
     /// Return an array of strings giving the names of every security group
@@ -784,7 +784,7 @@ import AWSEC2
 ```
 Without pagination.
 
-```
+```swift
 import AWSEC2
 
     func describeSecurityGroups(groupId: String) async -> Bool {

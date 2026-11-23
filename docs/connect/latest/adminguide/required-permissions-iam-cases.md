@@ -27,7 +27,7 @@ Following is a sample IAM policy with these permissions:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -76,7 +76,7 @@ Include the [AmazonConnectReadOnlyAccess](security-iam-amazon-connect-permission
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -120,7 +120,7 @@ Following is a sample IAM policy with these permissions:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -204,7 +204,7 @@ The following combination of policies will also work:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

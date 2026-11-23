@@ -25,13 +25,13 @@ When you upload an object, the SDK calculates a CRC64NVME checksum of the body a
 
  **Imports**
 
-```
+```python
 from aws_sdk_s3 import S3Client
 ```
 
  **Code**
 
-```
+```python
 def upload_with_sha256(
     client: S3Client, bucket_name: str, key: str, data: bytes
 ) -> str | None:
@@ -56,7 +56,7 @@ Because the SDK detects a mismatch only at the end of the body, the following ex
 
  **Imports**
 
-```
+```python
 import os
 
 from aws_sdk_s3 import S3Client
@@ -65,7 +65,7 @@ from smithy_aws_core.checksums import ChecksumMismatchError
 
  **Code**
 
-```
+```python
 def download_file_verified(
     client: S3Client, bucket_name: str, key: str, file_path: str
 ) -> None:
@@ -89,7 +89,7 @@ Two configuration fields control when the SDK uses checksums. Both accept `"when
 
 Use `"when_required"` if you send requests to a storage service that implements the Amazon S3 API but doesn't support these checksums. The following example sets both fields when it resolves the configuration.
 
-```
+```python
 config = S3Config.resolve(
     request_checksum_calculation="when_required",
     response_checksum_validation="when_required",
@@ -98,7 +98,7 @@ config = S3Config.resolve(
 
 You can also set the values with the `AWS_REQUEST_CHECKSUM_CALCULATION` and `AWS_RESPONSE_CHECKSUM_VALIDATION` environment variables, or with settings of the same names as the fields in the shared AWS `config` file.
 
-```
+```ini
 # ~/.aws/config
 [default]
 request_checksum_calculation = when_required

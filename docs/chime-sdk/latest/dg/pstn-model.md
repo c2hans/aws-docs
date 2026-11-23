@@ -11,7 +11,7 @@ The PSTN audio service uses a request/response programming model that in turn us
 
 This example shows a `PlayAudio` action.
 
-```
+```json
 {
     "Type": "PlayAudio",
     "Parameters": {

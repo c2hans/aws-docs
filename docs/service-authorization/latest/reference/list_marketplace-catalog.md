@@ -93,6 +93,11 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
+- **   StartAssessment  **
+  - **IAM action:**  [aws-marketplace:DescribeEntity](#list_marketplace-catalog-action-DescribeEntity)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [aws-marketplace:StartAssessment](#list_marketplace-catalog-action-StartAssessment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [aws-marketplace:TagResource](#list_marketplace-catalog-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   StartChangeSet  **
   - **IAM action:**  [aws-marketplace:DescribeAgreement](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-iam-users-groups-policies.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [aws-marketplace:DescribeChangeSet](#list_marketplace-catalog-action-DescribeChangeSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
@@ -230,6 +235,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListTagsForResource](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_ListTagsForResource.html)  **
   - **Description:** Grants permission to list tags on an existing entity, change set, invoice submission task, issued tax invoice, VerificationEvidence, TaxComplianceProfile, or TaxComplianceProfileChangeTask
+  - **Resource types (\*required):** [Assessment](#list_marketplace-catalog-resource-Assessment) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ChangeSet](#list_marketplace-catalog-resource-ChangeSet) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)<br />[catalog:ChangeType](#list_marketplace-catalog-catalog_ChangeType)
   - **Resource types (\*required):** [Entity](#list_marketplace-catalog-resource-Entity) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)<br />[catalog:ChangeType](#list_marketplace-catalog-catalog_ChangeType)
   - **Resource types (\*required):** [InvoiceSubmissionTask](#list_marketplace-catalog-resource-InvoiceSubmissionTask) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)
@@ -301,6 +307,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [TagResource](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_TagResource.html)  **
   - **Description:** Grants permission to add new tags to a resource. Supported resources: Entity, ChangeSet, InvoiceSubmissionTask, IssuedTaxInvoice, VerificationEvidence, TaxComplianceProfile, and TaxComplianceProfileChangeTask
+  - **Resource types (\*required):** [Assessment](#list_marketplace-catalog-resource-Assessment) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_marketplace-catalog-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_marketplace-catalog-aws_TagKeys)
   - **Resource types (\*required):** [ChangeSet](#list_marketplace-catalog-resource-ChangeSet) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_marketplace-catalog-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_marketplace-catalog-aws_TagKeys)<br />[catalog:ChangeType](#list_marketplace-catalog-catalog_ChangeType)
   - **Resource types (\*required):** [Entity](#list_marketplace-catalog-resource-Entity) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_marketplace-catalog-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_marketplace-catalog-aws_TagKeys)<br />[catalog:ChangeType](#list_marketplace-catalog-catalog_ChangeType)
   - **Resource types (\*required):** [InvoiceSubmissionTask](#list_marketplace-catalog-resource-InvoiceSubmissionTask) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_marketplace-catalog-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_marketplace-catalog-aws_TagKeys)
@@ -312,6 +319,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UntagResource](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_UntagResource.html)  **
   - **Description:** Grants permission to remove tags from a resource. Supported resources: Entity, ChangeSet, InvoiceSubmissionTask, IssuedTaxInvoice, VerificationEvidence, TaxComplianceProfile, and TaxComplianceProfileChangeTask
+  - **Resource types (\*required):** [Assessment](#list_marketplace-catalog-resource-Assessment) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_marketplace-catalog-aws_TagKeys)
   - **Resource types (\*required):** [ChangeSet](#list_marketplace-catalog-resource-ChangeSet) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_marketplace-catalog-aws_TagKeys)<br />[catalog:ChangeType](#list_marketplace-catalog-catalog_ChangeType)
   - **Resource types (\*required):** [Entity](#list_marketplace-catalog-resource-Entity) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_marketplace-catalog-aws_TagKeys)<br />[catalog:ChangeType](#list_marketplace-catalog-catalog_ChangeType)
   - **Resource types (\*required):** [InvoiceSubmissionTask](#list_marketplace-catalog-resource-InvoiceSubmissionTask) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_marketplace-catalog-aws_TagKeys)

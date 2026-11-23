@@ -64,7 +64,7 @@ This example illustrates one usage of DeleteSMSSandboxPhoneNumber.
 #### Sample Request
 <a name="API_DeleteSMSSandboxPhoneNumber_Example_1_Request"></a>
 
-```
+```xml
 https://sns.us-west-2.amazonaws.com/?Action=DeleteSMSSandboxPhoneNumber
 &PhoneNumber=%2B12065550100
 &Version=2010-03-31
@@ -74,7 +74,7 @@ https://sns.us-west-2.amazonaws.com/?Action=DeleteSMSSandboxPhoneNumber
 #### Sample Response
 <a name="API_DeleteSMSSandboxPhoneNumber_Example_1_Response"></a>
 
-```
+```xml
 <DeleteSMSSandboxPhoneNumberResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <DeleteSMSSandboxPhoneNumberResult>
     </DeleteSMSSandboxPhoneNumberResult>

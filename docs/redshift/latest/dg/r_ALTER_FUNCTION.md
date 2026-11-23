@@ -11,12 +11,12 @@ Renames a function or changes the owner. Both the function name and data types a
 ## Syntax
 <a name="r_ALTER_FUNCTION-synopsis"></a>
 
-```
+```sql
 ALTER FUNCTION function_name ( { [ py_arg_name py_arg_data_type | sql_arg_data_type } [ , ... ] ] )
      RENAME TO new_name
 ```
 
-```
+```sql
 ALTER FUNCTION function_name ( { [ py_arg_name py_arg_data_type | sql_arg_data_type } [ , ... ] ] )
      OWNER TO { new_owner | CURRENT_USER | SESSION_USER }
 ```
@@ -41,13 +41,13 @@ A new owner for the user-defined function.
 
 The following example changes the name of a function from `first_quarter_revenue` to `quarterly_revenue`.
 
-```
+```sql
 ALTER FUNCTION first_quarter_revenue(bigint, numeric, int)
          RENAME TO quarterly_revenue;
 ```
 
 The following example changes the owner of the `quarterly_revenue` function to `etl_user`.
 
-```
+```sql
 ALTER FUNCTION quarterly_revenue(bigint, numeric) OWNER TO etl_user;
 ```

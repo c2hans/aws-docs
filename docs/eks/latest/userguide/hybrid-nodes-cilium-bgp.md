@@ -22,7 +22,7 @@ This topic describes how to configure Cilium Border Gateway Protocol (BGP) for A
 
 1. To use BGP with Cilium to advertise pod or service addresses with your on-premises network, Cilium must be installed with `bgpControlPlane.enabled: true`. If you are enabling BGP for an existing Cilium deployment, you must restart the Cilium operator to apply the BGP configuration if BGP was not previously enabled. You can set `operator.rollOutPods` to `true` in your Helm values to restart the Cilium operator as part of the Helm install/upgrade process.
 
-   ```
+   ```yaml
    helm upgrade cilium oci://public.ecr.aws/eks/cilium/cilium \
      --namespace kube-system \
      --reuse-values \
@@ -32,11 +32,11 @@ This topic describes how to configure Cilium Border Gateway Protocol (BGP) for A
 
 1. Confirm that the Cilium operator and agents were restarted and are running.
 
-   ```
+   ```bash
    kubectl -n kube-system get pods --selector=app.kubernetes.io/part-of=cilium
    ```
 
-   ```
+   ```bash
    NAME                               READY   STATUS    RESTARTS   AGE
    cilium-grwlc                       1/1     Running   0          4m12s
    cilium-operator-68f7766967-5nnbl   1/1     Running   0          4m20s
@@ -52,7 +52,7 @@ This topic describes how to configure Cilium Border Gateway Protocol (BGP) for A
    + Configure `peerASN` with the ASN for your on-premises router.
    + Configure the `peerAddress` with the on-premises router IP that each node running Cilium will peer with.
 
-     ```
+     ```yaml
      apiVersion: cilium.io/v2alpha1
      kind: CiliumBGPClusterConfig
      metadata:
@@ -77,7 +77,7 @@ This topic describes how to configure Cilium Border Gateway Protocol (BGP) for A
 
 1. Apply the Cilium BGP cluster configuration to your cluster.
 
-   ```
+   ```bash
    kubectl apply -f cilium-bgp-cluster.yaml
    ```
 
@@ -88,7 +88,7 @@ This topic describes how to configure Cilium Border Gateway Protocol (BGP) for A
    + Configure `keepAliveTimeSeconds` which determines if a BGP peer is still reachable and the BGP session is active. The default is 30 seconds.
    + Configure `restartTimeSeconds` which determines the time that Cilium’s BGP control plane is expected to re-establish the BGP session after a restart. The default is 120 seconds.
 
-     ```
+     ```yaml
      apiVersion: cilium.io/v2alpha1
      kind: CiliumBGPPeerConfig
      metadata:
@@ -110,7 +110,7 @@ This topic describes how to configure Cilium Border Gateway Protocol (BGP) for A
 
 1. Apply the Cilium BGP peer configuration to your cluster.
 
-   ```
+   ```bash
    kubectl apply -f cilium-bgp-peer.yaml
    ```
 
@@ -118,7 +118,7 @@ This topic describes how to configure Cilium Border Gateway Protocol (BGP) for A
    + The `CiliumBGPAdvertisement` resource is used to define advertisement types and attributes associated with them. The example below configures Cilium to advertise only pod CIDRs. See the examples in [Service type LoadBalancer](hybrid-nodes-ingress.md#hybrid-nodes-ingress-cilium-loadbalancer) and [Cilium in-cluster load balancing](hybrid-nodes-load-balancing.md#hybrid-nodes-service-lb-cilium) for more information on configuring Cilium to advertise service addresses.
    + Each hybrid node running the Cilium agent peers with the upstream BGP-enabled router. Each node advertises the pod CIDR range that it owns when Cilium’s `advertisementType` is set to `PodCIDR` like in the example below. See the [BGP Advertisements configuration](https://docs.cilium.io/en/stable/network/bgp-control-plane/bgp-control-plane-v2/#bgp-advertisements) in the Cilium documentation for more information.
 
-     ```
+     ```yaml
      apiVersion: cilium.io/v2alpha1
      kind: CiliumBGPAdvertisement
      metadata:
@@ -132,7 +132,7 @@ This topic describes how to configure Cilium Border Gateway Protocol (BGP) for A
 
 1. Apply the Cilium BGP Advertisement configuration to your cluster.
 
-   ```
+   ```bash
    kubectl apply -f cilium-bgp-advertisement-pods.yaml
    ```
 
@@ -140,11 +140,11 @@ This topic describes how to configure Cilium Border Gateway Protocol (BGP) for A
 
    In the examples below, there are five hybrid nodes running the Cilium agent and each node is advertising the Pod CIDR range that it owns.
 
-   ```
+   ```bash
    cilium bgp peers
    ```
 
-   ```
+   ```bash
    Node                   Local AS    Peer AS               Peer Address        Session State   Uptime     Family         Received   Advertised
    mi-026d6a261e355fba7   {{NODES_ASN}}
                      {{ONPREM_ROUTER_ASN}}
@@ -163,11 +163,11 @@ This topic describes how to configure Cilium Border Gateway Protocol (BGP) for A
                      {{ONPREM_ROUTER_IP}}    established     1h18m58s   ipv4/unicast   1          2
    ```
 
-   ```
+   ```bash
    cilium bgp routes
    ```
 
-   ```
+   ```bash
    Node                   VRouter       Prefix           NextHop   Age         Attrs
    mi-026d6a261e355fba7   {{NODES_ASN}}     10.86.2.0/26     0.0.0.0   1h16m46s   [{Origin: i} {Nexthop: 0.0.0.0}]
    mi-082f73826a163626e   {{NODES_ASN}}     10.86.2.192/26   0.0.0.0   1h16m46s   [{Origin: i} {Nexthop: 0.0.0.0}]

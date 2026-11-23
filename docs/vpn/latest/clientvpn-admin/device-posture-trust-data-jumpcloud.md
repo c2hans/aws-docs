@@ -15,7 +15,7 @@ When JumpCloud is configured as a trust provider, the following fields are avail
 
 The following example policy permits access when the device is under management.
 
-```
+```text
 permit(principal, action, resource)
 when { context.jumpcloud.device.is_managed == true };
 ```

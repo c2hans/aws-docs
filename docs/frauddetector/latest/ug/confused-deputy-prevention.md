@@ -27,7 +27,7 @@ The following role trust policy allows Amazon Fraud Detector access to only `ext
 
 ****
 
-```
+```json
     {
   "Version":"2012-10-17",
   "Statement": [

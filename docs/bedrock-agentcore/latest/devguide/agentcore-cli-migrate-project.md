@@ -18,7 +18,7 @@ Before you migrate:
 
 If the CLI reports that the project’s CDK dependencies are older than v0.24.2, run:
 
-```
+```bash
 npx @aws/agentcore@0 deploy
 ```
 
@@ -27,6 +27,6 @@ npx @aws/agentcore@0 deploy
 
 Run:
 
-```
+```bash
 agentcore migrate
 ```

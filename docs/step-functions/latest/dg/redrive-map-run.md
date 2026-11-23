@@ -70,7 +70,7 @@ Step Functions needs appropriate permission to redrive a Map Run. The following 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

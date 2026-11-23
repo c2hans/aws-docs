@@ -20,7 +20,7 @@ You can use API operations to build a consumer that uses enhanced fan-out in Kin
 
 The following code is an example of how you can subscribe your consumer to a shard, renew the subscription periodically, and handle the events.
 
-```
+```JAVA
     import software.amazon.awssdk.services.kinesis.KinesisAsyncClient;
     import software.amazon.awssdk.services.kinesis.model.ShardIteratorType;
     import software.amazon.awssdk.services.kinesis.model.SubscribeToShardEvent;

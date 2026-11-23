@@ -21,7 +21,7 @@ The SearchText API allows users to search for a place, POI, or business by name,
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryText": "Gas Town",
     "BiasPosition": [
@@ -34,7 +34,7 @@ The SearchText API allows users to search for a place, POI, or business by name,
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -78,7 +78,7 @@ The SearchText API allows users to search for a place, POI, or business by name,
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/search-text?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -94,7 +94,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places search-text --key ${{{YourKey}}} --query-text "Gas Town" --bias-position -123.11336 49.26038
 ```
 
@@ -106,7 +106,7 @@ aws geo-places search-text --key ${{{YourKey}}} --query-text "Gas Town" --bias-p
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryText": "Stanley Park",
     "BiasPosition": [
@@ -119,7 +119,7 @@ aws geo-places search-text --key ${{{YourKey}}} --query-text "Gas Town" --bias-p
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -181,7 +181,7 @@ aws geo-places search-text --key ${{{YourKey}}} --query-text "Gas Town" --bias-p
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/search-text?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -197,7 +197,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places search-text --key ${{{YourKey}}} --query-text "Stanley Park" --bias-position -123.11336 49.26038
 ```
 
@@ -209,7 +209,7 @@ aws geo-places search-text --key ${{{YourKey}}} --query-text "Stanley Park" --bi
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryText": "Amazon YVR11",
     "BiasPosition": [
@@ -222,7 +222,7 @@ aws geo-places search-text --key ${{{YourKey}}} --query-text "Stanley Park" --bi
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -288,7 +288,7 @@ aws geo-places search-text --key ${{{YourKey}}} --query-text "Stanley Park" --bi
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/search-text?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -304,7 +304,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places search-text --key ${{{YourKey}}} --query-text "Amazon YVR11" --bias-position -123.11336 49.26038
 ```
 

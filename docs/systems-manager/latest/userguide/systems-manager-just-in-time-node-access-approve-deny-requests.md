@@ -28,7 +28,7 @@ After approving an access request you can revoke your approval at any time by se
 
 1. Run the following command to return details about the access request approval workflow, making sure to replace the {{placeholder values}} with your own information.
 
-   ```
+   ```sh
    aws ssm get-ops-item \
        --ops-item-id {{oi-12345abcdef}}
    ```
@@ -37,7 +37,7 @@ After approving an access request you can revoke your approval at any time by se
 
 1. Run the following command to approve or deny the access request. Use the `Approve` signal type to approve the request, and `Deny` to deny the request. Make sure to replace the {{placeholder values}} with your own information.
 
-   ```
+   ```sh
    aws ssm send-automation-signal \
        --automation-execution-id {{9231944f-61c6-40be-8bce-8ee2bEXAMPLE}} \
        --signal-type "Approve"

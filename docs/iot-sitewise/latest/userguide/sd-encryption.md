@@ -42,7 +42,7 @@ When you create a workspace, specify the encryption configuration using the `enc
 
 To allow AWS IoT SiteWise to use a customer managed key, the key policy must grant the necessary permissions. The following is a least-privilege key policy with six statements:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -169,7 +169,7 @@ The following describes the purpose of each statement in the key policy:
 
 To create a workspace with a customer managed key, specify the `--encryption-configuration` parameter in the `CreateWorkspace` API request:
 
-```
+```bash
 aws iotsitewise create-workspace \
     --workspace-name my-workspace \
     --encryption-configuration encryptionType=KMS_BASED_ENCRYPTION,kmsKeyId=arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab \
@@ -216,7 +216,7 @@ AWS CloudTrail logs all KMS API calls made by AWS IoT SiteWise and underlying AW
 
 Amazon OpenSearch Serverless creates a grant to use your customer managed key for encrypting indexed session data:
 
-```
+```json
 {
   "eventSource": "kms.amazonaws.com",
   "eventName": "CreateGrant",
@@ -243,7 +243,7 @@ Amazon OpenSearch Serverless creates a grant to use your customer managed key fo
 
 Amazon S3 uses your customer managed key to encrypt stored video data:
 
-```
+```json
 {
   "eventSource": "kms.amazonaws.com",
   "eventName": "GenerateDataKey",
@@ -266,7 +266,7 @@ Amazon S3 uses your customer managed key to encrypt stored video data:
 
 AWS IoT SiteWise generates data keys for internal encryption operations:
 
-```
+```json
 {
   "eventSource": "kms.amazonaws.com",
   "eventName": "GenerateDataKey",

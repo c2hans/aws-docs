@@ -14,7 +14,7 @@ See also [Referencing files in an artifact](workflows-working-artifacts-refer-fi
 **To reference a file stored in a source repository**
 + In the action where you want to reference a file, add code similar to the following:
 
-  ```
+  ```yaml
   Actions:
     My-action:
       Inputs:

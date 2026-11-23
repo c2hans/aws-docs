@@ -13,7 +13,7 @@ The following example shows the pipeline and metadata level of the pipeline stru
 ------
 #### [ YAML ]
 
-```
+```YAML
 pipeline:
   name: MyPipeline
   roleArn: >-
@@ -55,7 +55,7 @@ metadata:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "pipeline": {
         "name": "MyPipeline",

@@ -82,7 +82,7 @@ Enable CORS by returning correct headers.
 #### POST schema
 <a name="origin_endpoints-request-body-post-example"></a>
 
-```
+```json
 {
   "startoverWindowSeconds": integer,
   "manifestName": "string",
@@ -254,7 +254,7 @@ Enable CORS by returning correct headers.
 #### OriginEndpointList schema
 <a name="origin_endpoints-response-body-originendpointlist-example"></a>
 
-```
+```json
 {
   "originEndpoints": [
     {
@@ -428,7 +428,7 @@ Enable CORS by returning correct headers.
 #### OriginEndpoint schema
 <a name="origin_endpoints-response-body-originendpoint-example"></a>
 
-```
+```json
 {
   "startoverWindowSeconds": integer,
   "manifestName": "string",

@@ -24,7 +24,7 @@ As a producer cluster or workgroup administrator, follow these steps to share da
 
 1. Add objects to the datashare. The producer cluster or workgroup administrator continues to manage datashare objects that are available. To add objects to a datashare, add the schema before adding objects. When you add a schema, Amazon Redshift doesn't add all the objects under it. You must add them explicitly. For more information, see [ALTER DATASHARE](https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_DATASHARE.html).
 
-   ```
+   ```sql
    ALTER DATASHARE salesshare ADD SCHEMA PUBLIC;
    ALTER DATASHARE salesshare ADD TABLE public.tickit_sales_redshift;
    ALTER DATASHARE salesshare ADD ALL TABLES IN SCHEMA PUBLIC;
@@ -32,7 +32,7 @@ As a producer cluster or workgroup administrator, follow these steps to share da
 
    You can also add views to a datashare. Supported views are standard views, late binding views, and materialized views.
 
-   ```
+   ```sql
    CREATE VIEW public.sales_data_summary_view AS SELECT * FROM public.tickit_sales_redshift;
    ALTER DATASHARE salesshare ADD TABLE public.tickit_sales_redshift;
    ```
@@ -41,20 +41,20 @@ As a producer cluster or workgroup administrator, follow these steps to share da
 
    Use the INCLUDENEW clause to add any new tables and views created in a specified schema to the datashare. Only superusers can change this property for each datashare-schema pair.
 
-   ```
+   ```sql
    ALTER DATASHARE salesshare ADD SCHEMA PUBLIC;
    ALTER DATASHARE salesshare SET INCLUDENEW = TRUE FOR SCHEMA PUBLIC;
    ```
 
 1. Grant access of the datashare to a Lake Formation administrator account.
 
-   ```
+   ```sql
    GRANT USAGE ON DATASHARE salesshare TO ACCOUNT '012345678910' VIA DATA CATALOG;
    ```
 
    To revoke usage, use the following command.
 
-   ```
+   ```sql
    REVOKE USAGE ON DATASHARE salesshare FROM ACCOUNT '012345678910' VIA DATA CATALOG;
    ```
 
@@ -76,7 +76,7 @@ As a producer cluster or workgroup administrator, follow these steps to share da
 
     At any time, if the producer cluster or workgroup administrator decides that there is no longer a need to share data with the consumer cluster or workgroup, they can use DROP DATASHARE to delete the datashare, deauthorize the datashare, or revoke datashare permissions. The associated permissions and objects in Lake Formation are not automatically deleted.
 
-   ```
+   ```sql
    DROP DATASHARE salesshare;
    ```
 

@@ -30,19 +30,19 @@ Use the AWS Command Line Interface to import your code-signing certificate, priv
 
 1. Create an ECDSA code-signing private key:
 
-   ```
+   ```bash
    openssl genpkey -algorithm EC -pkeyopt ec_paramgen_curve:P-256 -pkeyopt ec_param_enc:named_curve -outform PEM -out ecdsasigner.key
    ```
 
 1. Create an ECDSA code-signing certificate:
 
-   ```
+   ```bash
    openssl req -new -x509 -config cert_config.txt -extensions my_exts -nodes -days 365 -key ecdsasigner.key -out ecdsasigner.crt
    ```
 
 1. Import the code-signing certificate, private key, and certificate chain into AWS Certificate Manager:
 
-   ```
+   ```bash
    aws acm import-certificate --certificate fileb://ecdsasigner.crt --private-key fileb://ecdsasigner.key
    ```
 

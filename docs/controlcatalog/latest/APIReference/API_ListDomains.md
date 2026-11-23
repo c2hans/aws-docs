@@ -100,7 +100,7 @@ Use this operation to see a paginated list of all domains that are available in 
 #### Sample Request
 <a name="API_ListDomains_Example_1_Request"></a>
 
-```
+```json
 aws controlcatalog list-domains
 ```
 

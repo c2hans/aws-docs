@@ -47,7 +47,7 @@ In [step 1](#encryption-speke-set-up-on-board-key-provider), you worked with a C
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -118,7 +118,7 @@ In [step 2](#encryption-speke-set-up-create-iam-policy), you created an **APIGat
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

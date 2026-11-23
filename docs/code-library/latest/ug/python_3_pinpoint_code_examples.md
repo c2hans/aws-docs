@@ -27,7 +27,7 @@ The following code example shows how to use `SendMessages`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/pinpoint#code-examples).
 Send an email message.
 
-```
+```python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -131,7 +131,7 @@ if __name__ == "__main__":
 ```
 Send an SMS message.
 
-```
+```python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -209,7 +209,7 @@ if __name__ == "__main__":
 ```
 Send an email message with an existing email template.
 
-```
+```python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -281,7 +281,7 @@ if __name__ == "__main__":
 ```
 Send a text message with an existing SMS template.
 
-```
+```python
 import logging
 import boto3
 from botocore.exceptions import ClientError

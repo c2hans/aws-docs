@@ -65,7 +65,7 @@ Below is an example policy for the bucket in Regions available before August 202
 
 ****
 
-    ```
+    ```json
     {
       "Version":"2012-10-17",
       "Statement": [

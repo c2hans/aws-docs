@@ -12,7 +12,7 @@ To update an existing signal catalog, run the following command.
 
 Replace {{signal-catalog-configuration}} with the name of the .json file that contains the configuration.
 
-```
+```bash
 aws iotfleetwise update-signal-catalog --cli-input-json file://{{signal-catalog-configuration}}.json
 ```
 
@@ -27,7 +27,7 @@ For more information about how to configure branches, attributes, sensors, and a
 Custom structures are immutable. If you need to re-order or insert properties to an existing custom structure (struct), delete the structure and create a brand-new structure with the desired order of properties.
 To delete a custom structure, add the structure's fully qualified name in `nodesToRemove`. A structure can't be deleted if it's referred to by any signals. Any signals that refer to the structure (their data type is defined as the target structure) must be updated or deleted before the request to update the signal catalog.
 
-```
+```json
 {
     	"name": "signal-catalog-name",
     	"nodesToAdd": [{
@@ -84,7 +84,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -113,7 +113,7 @@ To retrieve a paginated list of summaries of all signals (nodes) in a given sign
 
 Replace {{signal-catalog-name}} with the name of the signal catalog that you're checking.
 
-```
+```bash
 aws iotfleetwise list-signal-catalog-nodes --name {{signal-catalog-name}}
 ```
 
@@ -124,7 +124,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

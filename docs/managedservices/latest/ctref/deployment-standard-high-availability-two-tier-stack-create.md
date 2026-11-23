@@ -153,7 +153,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-standard-high-availability-two-tier-stack-create-ex-min"></a>
 
-```
+```json
 {
   "Description": "My stack",
   "TimeoutInMinutes": 60,
@@ -181,7 +181,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-standard-high-availability-two-tier-stack-create-ex-max"></a>
 
-```
+```json
 {
   "Description": "My stack",
   "VpcId": "vpc-12345678",

@@ -34,7 +34,7 @@ abc,123,"This string contains commas, a double quotation marks (""), and a newli
 
 The following state machine reads this CSV file and uses [ItemSelector (Map)](input-output-itemselector.md) to convert the data types of some of the fields.
 
-```
+```json
 {
   "StartAt": "Map",
   "States": {
@@ -88,7 +88,7 @@ The following state machine reads this CSV file and uses [ItemSelector (Map)](in
 
 When you run this state machine, it produces the following output.
 
-```
+```json
 [
   {
     "MyNumbers": 123,

@@ -37,7 +37,7 @@ If the SRID value is not found, then an error is returned.
 
 The following SQL returns the Cartesian length of a multilinestring.
 
-```
+```sql
 SELECT ST_Length(ST_GeomFromText('MULTILINESTRING((0 0,10 0,0 10),(10 0,20 0,20 10))'));
 ```
 
@@ -49,7 +49,7 @@ st_length
 
 The following SQL returns the length of a linestring in a geography.
 
-```
+```sql
 SELECT ST_Length(ST_GeogFromText('SRID=4326;LINESTRING(5 0,6 0,4 0)'));
 ```
 
@@ -61,7 +61,7 @@ SELECT ST_Length(ST_GeogFromText('SRID=4326;LINESTRING(5 0,6 0,4 0)'));
 
 The following SQL returns the length of a point in a geography.
 
-```
+```sql
 SELECT ST_Length(ST_GeogFromText('SRID=4326;POINT(4 5)'));
 ```
 

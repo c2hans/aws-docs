@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/RDS#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of orderable DB instance options for a specific
     /// engine and engine version.
@@ -51,7 +51,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/rds#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -183,7 +183,7 @@ For more information, see [DB instance classes](https://docs.aws.amazon.com/Amaz
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/rds#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -231,7 +231,7 @@ func (instances *DbInstances) GetOrderableInstances(ctx context.Context, engine 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rds#code-examples).
 
-```
+```python
 class InstanceWrapper:
     """Encapsulates Amazon RDS DB instance actions."""
 
@@ -285,7 +285,7 @@ class InstanceWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rds#code-examples).
 
-```
+```sap-abap
     " iv_engine        = 'mysql'
     " iv_engineversion = '8.0.35'
     TRY.
@@ -304,7 +304,7 @@ class InstanceWrapper:
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 
-```
+```swift
 import AWSRDS
 
     /// Print a list of available database instances with "micro" in the class

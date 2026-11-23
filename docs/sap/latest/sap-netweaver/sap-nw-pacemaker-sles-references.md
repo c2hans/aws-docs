@@ -69,7 +69,7 @@ These steps must be performed in an outage window, allowing stop/start of servic
 
 1. Backup the configuration with the following command.
 
-   ```
+   ```console
    # crm config show >> /tmp/classic_ha_setup.txt
    ```
 
@@ -77,7 +77,7 @@ These steps must be performed in an outage window, allowing stop/start of servic
 
 1.  *Optional* – delete the configuration. You can edit in place but we recommend starting with a blank configuration. This ensures that latest timeout and priority parameters are in place. See [Reset Configuration – Optional](cluster-config-nw-sles.md#reset-config-nw-sles)
 
-   ```
+   ```console
    # crm config erase
    # crm config show
    ```

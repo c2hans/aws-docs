@@ -36,7 +36,7 @@ In this example, use a Node.js module to list all subscriptions to an Amazon SNS
 
 Create an object containing the `TopicArn` parameter for the topic whose subscriptions you want to list. Pass the parameters to the `listSubscriptionsByTopic` method of the `AWS.SNS` client class. To call the `listSubscriptionsByTopic` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -63,7 +63,7 @@ subslistPromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_listsubscriptions.js
 ```
 
@@ -78,7 +78,7 @@ Create an object containing the `Protocol` parameter to specify the `email` prot
 
 To call the `subscribe` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -108,7 +108,7 @@ subscribePromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_subscribeemail.js
 ```
 
@@ -123,7 +123,7 @@ Create an object containing the `Protocol` parameter to specify the `application
 
 To call the `subscribe` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -153,7 +153,7 @@ subscribePromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_subscribeapp.js
 ```
 
@@ -168,7 +168,7 @@ Create an object containing the `Protocol` parameter, specifying the `lambda` pr
 
 To call the `subscribe` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -198,7 +198,7 @@ subscribePromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_subscribelambda.js
 ```
 
@@ -213,7 +213,7 @@ Create an object containing the `SubscriptionArn` parameter, specifying the ARN 
 
 To call the `unsubscribe` method, create a promise for invoking an Amazon SNS service object, passing the parameters object. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set region
@@ -236,7 +236,7 @@ subscribePromise
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node sns_unsubscribe.js
 ```
 

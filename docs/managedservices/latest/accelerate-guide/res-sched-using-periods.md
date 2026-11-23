@@ -29,7 +29,7 @@ Attach the following policy to the appropriate IAM entity (user, group or role) 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

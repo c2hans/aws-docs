@@ -14,7 +14,7 @@ Read the [Quickstart](getting-started.md) to write your first API call using Ama
 ------
 #### [ Messages API ]
 
-```
+```python
 from anthropic import Anthropic
 from aws_bedrock_token_generator import provide_token
 
@@ -36,7 +36,7 @@ print(response)
 ------
 #### [ Responses API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -51,7 +51,7 @@ print(response)
 ------
 #### [ Chat Completions API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
@@ -66,7 +66,7 @@ print(response)
 ------
 #### [ Converse API ]
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-runtime', region_name='us-east-1')
@@ -85,7 +85,7 @@ print(response)
 ------
 #### [ Invoke API ]
 
-```
+```python
 import json
 import boto3
 

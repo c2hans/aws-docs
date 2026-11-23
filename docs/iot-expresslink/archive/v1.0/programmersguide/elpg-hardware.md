@@ -9,6 +9,8 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmers
 
 <a name="elpg-figure1"></a>![Figure 1 - Simplified block diagram](https://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmersguide/images/image1.png)
 
+Figure 1 - Simplified block diagram
+
 ## 1.2 Pin definitions
 <a name="elpg-hardware-pin-definitions"></a>
 

@@ -25,7 +25,7 @@ The Amazon is the largest rainforest on the planet.
 
 These partial results are present in your transcription output within the [`Results`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_Result.html) objects. Also in this object block is an **IsPartial** field. If this field is true, your transcription segment is not yet complete. You can view the difference between an incomplete and a complete segment below:
 
-```
+```json
 {{"IsPartial": true (incomplete segment)}}
 
 "Transcript": "The Amazon is the largest rainforest."
@@ -96,7 +96,7 @@ To learn more about improving accuracy with real-time transcriptions, see:
 
 The following example output shows `Stable` flags for an incomplete segment (`"IsPartial": true`). You can see that the words "*to*" and "*Amazon*" are not stable and therefore could change before the segment is finalized.
 
-```
+```json
 "Transcript": {
     "Results": [
         {

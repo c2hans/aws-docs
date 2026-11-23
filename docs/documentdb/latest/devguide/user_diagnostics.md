@@ -150,7 +150,7 @@ Next, you can narrow down the query to find the `opid` of a query running for mo
 
    Output from this operation looks something like the following (JSON format).
 
-   ```
+   ```json
    {
        "waitedMS" : NumberLong(0),
        "cursor" : {
@@ -199,7 +199,7 @@ db.runCommand({explain:{
 
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "queryPlanner" : {
         "plannerVersion" : 1,
@@ -223,7 +223,7 @@ In this example, the query checks whether the field `"x"` equals 1 in all docume
 
 After creating an index on field `"x"`, the `explain` output is as follows.
 
-```
+```json
 {
     "queryPlanner" : {
          "plannerVersion" : 1,
@@ -353,7 +353,7 @@ The query returns the complete list of all user queries and internal system task
 
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "inprog" : [
         {
@@ -464,7 +464,7 @@ If the output document for the query of interest has a `WaitState` field, it ind
 
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "waitedMS" : NumberLong(0),
     "cursor" : {
@@ -493,7 +493,7 @@ If the task at the head of the chain is an internal task, the only mitigation in
 
 The following is sample output in which the find query is blocked on a collection lock that is owned by another task.
 
-```
+```json
 {
     "inprog" : [
         {
@@ -568,7 +568,7 @@ This query returns an aggregate of all queries running in each namespace, all th
 
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "waitedMS" : NumberLong(0),
     "cursor" : {
@@ -643,7 +643,7 @@ db.runCommand({getEngineVersion: 1})
 
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 { "engineVersion" : "2.x.x", "ok" : 1 }
 ```
 
@@ -750,7 +750,7 @@ db.rides.count({"fare.totalAmount":{$gt:10.0}}))
 
 In order to execute this example, the query had to perform a collection scan (i.e. read every single document in the collection) since there is no index on the `fare.totalAmount` field. Output from the Amazon DocumentDB profiler for this query looks something like the following:
 
-```
+```json
 {
     ...
     "cursorExhausted": true,

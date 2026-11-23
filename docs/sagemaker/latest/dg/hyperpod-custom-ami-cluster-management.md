@@ -22,7 +22,7 @@ The following policy is a scoped down policy to ensure only AMIs tagged with `Al
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -36,7 +36,7 @@ GET https://search-{{my-domain}}.{{us-west-1.}}es.amazonaws.com/_search?q=house
 
 A sample response might look like the following:
 
-```
+```json
 {
   "took": 25,
   "timed_out": false,
@@ -110,7 +110,7 @@ You can't include Unicode special characters in a text field value, or the value
 
 The following `match` query is similar to the final [URI search](#searching-uri) example:
 
-```
+```json
 POST https://search-{{my-domain}}.{{us-west-1.}}es.amazonaws.com/movies/_search
 {
   "size": 20,
@@ -133,7 +133,7 @@ The `_search` API accepts HTTP `GET` and `POST` for request body searches, but n
 
 In many cases, you might want to search several fields, but not all fields. Use the `multi_match` query:
 
-```
+```json
 POST https://search-{{my-domain}}.{{us-west-1.}}es.amazonaws.com/movies/_search
 {
   "size": 20,
@@ -151,7 +151,7 @@ POST https://search-{{my-domain}}.{{us-west-1.}}es.amazonaws.com/movies/_search
 
 You can improve search relevancy by "boosting" certain fields. Boosts are multipliers that weigh matches in one field more heavily than matches in other fields. In the following example, a match for *john* in the `title` field influences `_score` twice as much as a match in the `plot` field and four times as much as a match in the `actors` or `directors` fields. The result is that films like *John Wick* and *John Carter* are near the top of the search results, and films starring John Travolta are near the bottom.
 
-```
+```json
 POST https://search-{{my-domain}}.{{us-west-1.}}es.amazonaws.com/movies/_search
 {
   "size": 20,
@@ -169,7 +169,7 @@ POST https://search-{{my-domain}}.{{us-west-1.}}es.amazonaws.com/movies/_search
 
 The `highlight` option tells OpenSearch to return an additional object inside of the `hits` array if the query matched one or more fields:
 
-```
+```json
 POST https://search-{{my-domain}}.{{us-west-1.}}es.amazonaws.com/movies/_search
 {
   "size": 20,
@@ -189,7 +189,7 @@ POST https://search-{{my-domain}}.{{us-west-1.}}es.amazonaws.com/movies/_search
 
 If the query matched the content of the `plot` field, a hit might look like the following:
 
-```
+```json
 {
   "_index": "movies",
   "_type": "movie",
@@ -228,7 +228,7 @@ If the query matched the content of the `plot` field, a hit might look like the 
 
 By default, OpenSearch wraps the matching string in `<em>` tags, provides up to 100 characters of context around the match, and breaks content into sentences by identifying punctuation marks, spaces, tabs, and line breaks. All of these settings are customizable:
 
-```
+```json
 POST https://search-{{my-domain}}.{{us-west-1.}}es.amazonaws.com/movies/_search
 {
   "size": 20,
@@ -255,7 +255,7 @@ POST https://search-{{my-domain}}.{{us-west-1.}}es.amazonaws.com/movies/_search
 
 If you're not interested in the contents of your documents and just want to know the number of matches, you can use the `_count` API instead of the `_search` API. The following request uses the `query_string` query to identify romantic comedies:
 
-```
+```json
 POST https://search-{{my-domain}}.{{us-west-1.}}es.amazonaws.com/movies/_count
 {
   "query": {
@@ -269,7 +269,7 @@ POST https://search-{{my-domain}}.{{us-west-1.}}es.amazonaws.com/movies/_count
 
 A sample response might look like the following:
 
-```
+```json
 {
   "count": 564,
   "_shards": {
@@ -296,7 +296,7 @@ The point in time (PIT) feature is a type of search that lets you run different 
 
 The simplest way to paginate is with the `from` and `size` parameters. The following request returns results 20–39 of the zero-indexed list of search results:
 
-```
+```json
 POST https://search-{{my-domain}}.{{us-west-1.}}es.amazonaws.com/movies/_search
 {
   "from": 20,

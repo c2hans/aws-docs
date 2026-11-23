@@ -25,7 +25,7 @@ The following table summarizes the various forms of rule reference that are poss
 
 **Example**
 
-```
+```xml
 <rule id="city" scope="public">
     <one-of>
         <item>Boston</item>

@@ -32,7 +32,7 @@ You cannot use `StandardAttributes` in conjunction with `CustomAttributes`. Howe
 ## Create CA with CustomAttribute
 <a name="CA_CustomAttribute"></a>
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.auth.AWSCredentials;
@@ -178,7 +178,7 @@ public class CreateCertificateAuthorityWithCustomAttributes {
 ## Issue a certificate with CustomAttribute
 <a name="Certificate_CustomAttribute"></a>
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.auth.AWSCredentials;

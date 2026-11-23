@@ -76,7 +76,7 @@ Including other Amazon Location actions will have no effect, and unauthenticated
 
    The following policy grants read-only access to a map resource named {{ExampleMap}}.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -144,7 +144,7 @@ Including other Amazon Location actions will have no effect, and unauthenticated
 
    The following policy grants read-only access to a place index resource named {{ExamplePlaceIndex}} to search for places by text or positions.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -192,7 +192,7 @@ Including other Amazon Location actions will have no effect, and unauthenticated
 
    The following policy grants access to a tracker resource named {{ExampleTracker}} to update device positions.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -239,7 +239,7 @@ Including other Amazon Location actions will have no effect, and unauthenticated
 
    The following policy grants access to a route calculator resource named {{ExampleCalculator}} to calculate a route.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -303,7 +303,7 @@ For more policy examples specific to Amazon Location, see [Identity-based policy
 
 The following example exchanges the unauthenticated identity pool that you've created for credentials that are then used to fetch the style descriptor for your map resource {{ExampleMap}}.
 
-```
+```js
 const AWS = require("aws-sdk");
 
 const credentials = new AWS.CognitoIdentityCredentials({
@@ -323,7 +323,7 @@ Retrieved credentials from unauthenticated identities are valid for **one hour**
 
 The following is an example of a function that automatically renews credentials before they expire.
 
-```
+```js
 async function refreshCredentials() {
   await credentials.refreshPromise();
   // schedule the next credential refresh when they're about to expire

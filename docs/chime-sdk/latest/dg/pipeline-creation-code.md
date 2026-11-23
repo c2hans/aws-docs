@@ -9,7 +9,7 @@ The following examples show how to create media stream pipelines for mixed audio
 ## CreateMediaStreamPipeline for mixed audio
 <a name="create-mixed-sample"></a>
 
-```
+```json
 response = client.create_media_stream_pipeline(
     Sources=[
         {
@@ -37,7 +37,7 @@ response = client.create_media_stream_pipeline(
 
 **Response**:
 
-```
+```json
 {
     'MediaStreamPipeline': {
         'MediaPipelineId': '{{45bc79a0-4591-4ebe-a642-d42c4e279f2d}}',
@@ -66,7 +66,7 @@ response = client.create_media_stream_pipeline(
 ## CreateMediaStreamPipeline for individual audio
 <a name="create-individual-sample"></a>
 
-```
+```json
 response = client.create_media_stream_pipeline(
     Sources=[
         {
@@ -94,7 +94,7 @@ response = client.create_media_stream_pipeline(
 
 **Response**:
 
-```
+```json
 {
     'MediaStreamPipeline': {
         'MediaPipelineId': '{{45bc79a0-4591-4ebe-a642-d42c4e279f2d}}',
@@ -123,7 +123,7 @@ response = client.create_media_stream_pipeline(
 ## CreateMediaStreamPipeline for mixed and individual audio
 <a name="create-both-sample"></a>
 
-```
+```json
 response = client.create_media_stream_pipeline(
     Sources=[
         {
@@ -157,7 +157,7 @@ response = client.create_media_stream_pipeline(
 
 **Response**:
 
-```
+```json
 {
     'MediaStreamPipeline': {
         'MediaPipelineId': '{{45bc79a0-4591-4ebe-a642-d42c4e279f2d}}',

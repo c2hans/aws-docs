@@ -30,7 +30,7 @@ The following code example shows how to get started using .
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 
-```
+```python
 import logging
 
 import boto3
@@ -129,7 +129,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 Run an interactive scenario demonstrating features.
 
-```
+```python
 class InspectorScenario:
     """Runs an interactive scenario that shows how to use Amazon Inspector."""
 
@@ -421,7 +421,7 @@ class InspectorScenario:
 ```
 A wrapper class for SDK methods.
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 
@@ -797,7 +797,7 @@ The following code example shows how to use `BatchGetAccountStatus`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 
@@ -853,7 +853,7 @@ The following code example shows how to use `BatchGetFindingDetails`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 
@@ -913,7 +913,7 @@ The following code example shows how to use `CreateFilter`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 
@@ -979,7 +979,7 @@ The following code example shows how to use `DeleteFilter`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 
@@ -1034,7 +1034,7 @@ The following code example shows how to use `Disable`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 
@@ -1093,7 +1093,7 @@ The following code example shows how to use `Enable`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 
@@ -1152,7 +1152,7 @@ The following code example shows how to use `ListCoverage`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 
@@ -1213,7 +1213,7 @@ The following code example shows how to use `ListCoverageStatistics`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 
@@ -1282,7 +1282,7 @@ The following code example shows how to use `ListFilters`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 
@@ -1335,7 +1335,7 @@ The following code example shows how to use `ListFindings`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 
@@ -1399,7 +1399,7 @@ The following code example shows how to use `ListUsageTotals`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/inspector#code-examples).
 
-```
+```python
 class Inspector2Wrapper:
     """Encapsulates Amazon Inspector (Inspector2) operations."""
 

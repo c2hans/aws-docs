@@ -39,7 +39,7 @@ To set up and run this example, first complete these tasks:
 
 Create a Node.js module with the file name `ec2_describesecuritygroups.js`. Be sure to configure the SDK as previously shown. To access Amazon EC2, create an `AWS.EC2` service object. Create a JSON object to pass as parameters, including the group IDs for the security groups you want to describe. Then call the `describeSecurityGroups` method of the Amazon EC2 service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -64,7 +64,7 @@ ec2.describeSecurityGroups(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```sh
 node ec2_describesecuritygroups.js
 ```
 
@@ -77,7 +77,7 @@ Create a Node.js module with the file name `ec2_createsecuritygroup.js`. Be sure
 
 After you successfully create the security group, you can define rules for allowing inbound traffic. Create a JSON object for parameters that specify the IP protocol and inbound ports on which the Amazon EC2 instance will receive traffic. Pass the parameters to the `authorizeSecurityGroupIngress` method.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Load credentials and set region from JSON file
@@ -139,7 +139,7 @@ ec2.describeVpcs(function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```sh
 node ec2_createsecuritygroup.js
 ```
 
@@ -150,7 +150,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `ec2_deletesecuritygroup.js`. Be sure to configure the SDK as previously shown. To access Amazon EC2, create an `AWS.EC2` service object. Create the JSON parameters to specify the name of the security group to delete. Then call the `deleteSecurityGroup` method.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -175,7 +175,7 @@ ec2.deleteSecurityGroup(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```sh
 node ec2_deletesecuritygroup.js
 ```
 

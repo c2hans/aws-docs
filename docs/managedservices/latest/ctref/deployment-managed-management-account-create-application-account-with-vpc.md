@@ -216,7 +216,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-managed-management-account-create-application-account-with-vpc-ex-min"></a>
 
-```
+```json
 {
   "AccountName": "AccountName",
   "AccountEmail": "nobody@amazon.com",
@@ -236,7 +236,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-managed-management-account-create-application-account-with-vpc-ex-max"></a>
 
-```
+```json
 {
   "AccountName": "AccountName",
   "AccountEmail": "nobody@amazon.com",

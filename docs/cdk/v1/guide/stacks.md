@@ -17,7 +17,7 @@ For example, the following code defines an AWS CDK app with two stacks.
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const app = new App();
 
 new MyFirstStack(app, 'stack1');
@@ -29,7 +29,7 @@ app.synth();
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const app = new App();
 
 new MyFirstStack(app, 'stack1');
@@ -41,7 +41,7 @@ app.synth();
 ------
 #### [ Python ]
 
-```
+```python
 app = App()
 
 MyFirstStack(app, 'stack1')
@@ -53,7 +53,7 @@ app.synth()
 ------
 #### [ Java ]
 
-```
+```java
 App app = new App();
 
 new MyFirstStack(app, "stack1");
@@ -65,7 +65,7 @@ app.synth();
 ------
 #### [ C\# ]
 
-```
+```csharp
 var app = new App();
 
 new MyFirstStack(app, "stack1");
@@ -101,7 +101,7 @@ Like any other construct, stacks can be composed together into groups. The follo
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import { App, Construct, Stack } from "@aws-cdk/core";
 
 interface EnvProps {
@@ -135,7 +135,7 @@ app.synth();
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const { App , Construct , Stack } = require("@aws-cdk/core");
 
 // imagine these stacks declare a bunch of related resources
@@ -166,7 +166,7 @@ app.synth();
 ------
 #### [ Python ]
 
-```
+```python
 from aws_cdk.core import App, Construct, Stack
 
 # imagine these stacks declare a bunch of related resources
@@ -195,7 +195,7 @@ app.synth()
 ------
 #### [ Java ]
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.core.App;
@@ -252,7 +252,7 @@ public class MyApp {
 ------
 #### [ C\# ]
 
-```
+```csharp
 using Amazon.CDK;
 
 // imagine these stacks declare a bunch of related resources
@@ -313,28 +313,28 @@ The physical names of the CloudFormation stacks are automatically determined by 
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 new MyStack(this, 'not:a:stack:name', { stackName: 'this-is-stack-name' });
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 new MyStack(this, 'not:a:stack:name', { stackName: 'this-is-stack-name' });
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 MyStack(self, "not:a:stack:name", stack_name="this-is-stack-name")
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 new MyStack(this, "not:a:stack:name", StackProps.builder()
     .StackName("this-is-stack-name").build());
 ```
@@ -342,7 +342,7 @@ new MyStack(this, "not:a:stack:name", StackProps.builder()
 ------
 #### [ C\# ]
 
-```
+```csharp
 new MyStack(this, "not:a:stack:name", new StackProps
 {
     StackName = "this-is-stack-name"

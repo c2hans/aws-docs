@@ -22,7 +22,7 @@ Alternatively, you can chose the automatic deployment option when creating your 
 
    The following AWS CLI command example uses the [DescribeAutoMLJobV2](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeAutoMLJobV2.html) API to obtain details of the AutoML job, including the information about the best model candidate.
 
-   ```
+   ```bash
    aws sagemaker describe-auto-ml-job-v2 --auto-ml-job-name {{job-name}} --region {{region}}
    ```
 
@@ -32,7 +32,7 @@ Alternatively, you can chose the automatic deployment option when creating your 
 
    A container definition is the containerized environment used to host the trained SageMaker AI model for making predictions.
 
-   ```
+   ```bash
    BEST_CANDIDATE=$(aws sagemaker describe-auto-ml-job-v2 \
      --auto-ml-job-name {{job-name}}
      --region {{region}} \
@@ -48,7 +48,7 @@ Alternatively, you can chose the automatic deployment option when creating your 
 
    Use the container definitions from the previous steps to create a SageMaker AI model by using the [CreateModel](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) API.
 
-   ```
+   ```bash
    aws sagemaker create-model \
                --model-name '{{your-candidate-name>}}' \
                --primary-container "$BEST_CANDIDATE"
@@ -64,7 +64,7 @@ Alternatively, you can chose the automatic deployment option when creating your 
 
    The following AWS CLI command uses the [CreateEndpointConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html) API to create an endpoint configuration.
 
-   ```
+   ```bash
    aws sagemaker create-endpoint-config \
      --production-variants file://production-variants.json \
      --region '{{region}}'
@@ -74,7 +74,7 @@ Alternatively, you can chose the automatic deployment option when creating your 
 **Note**
 We recommend using [m5.12xlarge](https://aws.amazon.com/ec2/instance-types/m5/) instances for real-time forecasting.
 
-   ```
+   ```JSON
    [
        {
          "VariantName": "{{variant-name}}",
@@ -92,7 +92,7 @@ We recommend using [m5.12xlarge](https://aws.amazon.com/ec2/instance-types/m5/) 
 
    The following AWS CLI example uses the [CreateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) API to create the endpoint.
 
-   ```
+   ```bash
    aws sagemaker create-endpoint \
                --endpoint-name '{{endpoint-name>}}' \
                --endpoint-config-name '{{endpoint-config-name}}' \
@@ -101,7 +101,7 @@ We recommend using [m5.12xlarge](https://aws.amazon.com/ec2/instance-types/m5/) 
 
    Check the progress of your real-time inference endpoint deployment by using the [DescribeEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeEndpoint.html) API. See the following AWS CLI command as an example.
 
-   ```
+   ```bash
    aws sagemaker describe-endpoint \
                --endpoint-name '{{endpoint-name}}' \
                --region '{{region}}'
@@ -113,7 +113,7 @@ We recommend using [m5.12xlarge](https://aws.amazon.com/ec2/instance-types/m5/) 
 
 **Invoke the SageMaker AI endpoint to make predictions.**
 
-   ```
+   ```bash
    aws sagemaker invoke-endpoint \
                --endpoint-name '{{endpoint-name}}' \
                --region '{{region}}' \

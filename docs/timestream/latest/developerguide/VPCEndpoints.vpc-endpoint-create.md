@@ -39,13 +39,13 @@ Before completing the steps below, ensure that you understand [specific consider
 
 In the following example, the `DescribeEndpoints` action is executed in the AWS CLI using the Write API in the `us-west-2` region:
 
-```
+```bash
 aws timestream-write describe-endpoints --region us-west-2
 ```
 
 This command will return the following output:
 
-```
+```json
 {
     "Endpoints": [
         {

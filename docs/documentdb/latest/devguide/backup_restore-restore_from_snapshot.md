@@ -116,7 +116,7 @@ aws docdb restore-db-cluster-from-snapshot ^
 
 Output from this operation looks something like the following.
 
-```
+```json
 {
     "DBCluster": {
         "AvailabilityZones": [
@@ -185,7 +185,7 @@ aws docdb create-db-instance ^
 
 Output from this operation looks something like the following.
 
-```
+```json
 {
     "DBInstance": {
         "DBInstanceIdentifier": "sample-cluster-restore-instance",

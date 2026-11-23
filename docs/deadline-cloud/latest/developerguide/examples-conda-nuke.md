@@ -15,6 +15,6 @@ To build a recipe, download the matching Nuke source archive from the Foundry we
 
 Submit the build:
 
-```
+```bash
 ./submit-package-job nuke-17.0
 ```

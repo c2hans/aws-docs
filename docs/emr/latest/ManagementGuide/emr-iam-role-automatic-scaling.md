@@ -15,7 +15,7 @@ The contents of version 1 of `AmazonElasticMapReduceforAutoScalingRole` are show
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -47,7 +47,7 @@ The following trust policy includes the [`aws:SourceArn`](https://docs.aws.amazo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

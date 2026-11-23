@@ -11,3 +11,5 @@ The firewall protects the subnets within your VPC by filtering traffic going bet
 ![An AWS Region has a VPC in a single Availability Zone with an internet gateway. A VPC spans the Region and contains a Network Firewall firewall subnet and a customer subnet. The firewall subnet is between the customer subnet and an internet gateway and is filtering traffic in both directions.](https://docs.aws.amazon.com/network-firewall/latest/developerguide/images/arch-igw-simple.png)
 
 To enable the firewall's protection, you modify your Amazon VPC route tables to send your network traffic through the Network Firewall firewall endpoints. For information about managing route tables for your VPC, see [Route tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html) in the *Amazon Virtual Private Cloud User Guide*.
+
+This describes a firewall with the *routed firewall* capability. A *NAT/Proxy firewall* also creates NAT gateways for you and acts as an explicit proxy, so clients that use the proxy don't need route table changes. For information, see [How a NAT/Proxy firewall works](nfw-proxy-how-it-works.md).

@@ -53,13 +53,13 @@ If you create a new instance from a blueprint that includes PHP, follow the step
 
 1. Run the following command.
 
-   ```
+   ```bash
    php -v
    ```
 
    On instances created from Bitnami blueprints, run the following command instead:
 
-   ```
+   ```bash
    /opt/bitnami/php/bin/php -v
    ```
 
@@ -76,7 +76,7 @@ Follow these steps for instances created from the following blueprints packaged 
 
 1. Update PHP:
 
-   ```
+   ```bash
    sudo apt update
    sudo apt upgrade
    ```
@@ -84,18 +84,18 @@ Follow these steps for instances created from the following blueprints packaged 
 1. Restart the web server so that it loads the updated PHP.
    + WordPress, WordPress Multisite, and LAMP:
 
-     ```
+     ```bash
      sudo systemctl restart apache2
      ```
    + Nginx:
 
-     ```
+     ```bash
      sudo systemctl restart php8.2-fpm
      ```
 
 1. Confirm the installed version:
 
-   ```
+   ```bash
    php -v
    ```
 
@@ -130,7 +130,7 @@ These steps change several configuration files on your instance. If you're not c
 
 1. **Check your current PHP version.** Run the following command and note the PHP release line in the output (for example, 8.2). In the next step, you install the same release line to avoid compatibility issues with your themes and plugins.
 
-   ```
+   ```bash
    /opt/bitnami/php/bin/php -v
    ```
 
@@ -138,7 +138,7 @@ These steps change several configuration files on your instance. If you're not c
 **Important**
 The Sury PHP repository is a third-party repository. AWS doesn't own or maintain it. For more information, see the [Sury website](https://deb.sury.org/).
 
-   ```
+   ```bash
    PHP_VERSION=$(/opt/bitnami/php/bin/php -r 'echo PHP_MAJOR_VERSION.".".PHP_MINOR_VERSION;')
    echo "Installing PHP ${PHP_VERSION}"
    sudo apt update
@@ -157,7 +157,7 @@ The following steps use the `PHP_VERSION` variable. Run the remaining steps in t
 
    Run the following commands. They use the MariaDB socket if it exists, and otherwise use the MySQL socket, then set it in the new PHP configuration:
 
-   ```
+   ```bash
    DB_SOCKET=/opt/bitnami/mariadb/tmp/mysql.sock
    [ -S "$DB_SOCKET" ] || DB_SOCKET=/opt/bitnami/mysql/tmp/mysql.sock
    sudo sed -i -E "s|^;?\s*pdo_mysql.default_socket\s*=.*|pdo_mysql.default_socket = ${DB_SOCKET}|; s|^;?\s*mysqli.default_socket\s*=.*|mysqli.default_socket = ${DB_SOCKET}|" /etc/php/${PHP_VERSION}/fpm/php.ini
@@ -168,7 +168,7 @@ The following steps use the `PHP_VERSION` variable. Run the remaining steps in t
 
 1. **Create a PHP-FPM pool that runs as the Bitnami web server user.** Run the following commands to add a pool that runs as user and group `daemon` and listens on a new socket, then start the service. These steps apply to all Bitnami blueprints that serve PHP through Apache or Nginx, such as WordPress, WordPress Multisite, LAMP, and Nginx.
 
-   ```
+   ```bash
    sudo tee /etc/php/${PHP_VERSION}/fpm/pool.d/bitnami.conf > /dev/null <<'EOF'
    [bitnami]
    listen = /opt/bitnami/php/var/run/ww2.sock
@@ -194,7 +194,7 @@ The following steps use the `PHP_VERSION` variable. Run the remaining steps in t
 
 1. **Point the Bitnami web server at the new PHP.** Run the following commands to switch the Bitnami Apache or Nginx configuration from the Bitnami PHP socket (`www.sock`) to the new one (`ww2.sock`), then restart the web server. The commands keep a backup of each changed file with a `.bak` extension.
 
-   ```
+   ```bash
    for f in $(sudo grep -rl '/opt/bitnami/php/var/run/www.sock' /opt/bitnami/apache2/conf /opt/bitnami/nginx/conf 2>/dev/null); do
      sudo cp "$f" "$f.bak"
      sudo sed -i 's|/opt/bitnami/php/var/run/www.sock|/opt/bitnami/php/var/run/ww2.sock|g' "$f"
@@ -208,7 +208,7 @@ The following steps use the `PHP_VERSION` variable. Run the remaining steps in t
 
 1. **Use the new PHP on the command line.** The Bitnami PHP directory comes before the system directories in your `PATH`, so the `php` command still runs the Bitnami PHP. Put the system directory first for your user, then confirm that `php` now points to the new PHP:
 
-   ```
+   ```bash
    echo 'export PATH="/usr/bin:$PATH"' >> ~/.bashrc
    source ~/.bashrc
    hash -r
@@ -223,44 +223,44 @@ The following steps use the `PHP_VERSION` variable. Run the remaining steps in t
    First, set `DOCROOT` to the folder that your web server serves your site from:
    + WordPress and WordPress Multisite:
 
-     ```
+     ```bash
      DOCROOT=/opt/bitnami/wordpress
      ```
    + LAMP:
 
-     ```
+     ```bash
      DOCROOT=/opt/bitnami/apache/htdocs
      ```
    + Drupal:
 
-     ```
+     ```bash
      DOCROOT=/opt/bitnami/drupal
      ```
    + Joomla:
 
-     ```
+     ```bash
      DOCROOT=/opt/bitnami/joomla
      ```
    + Magento:
 
-     ```
+     ```bash
      DOCROOT=/opt/bitnami/magento/pub
      ```
    + PrestaShop:
 
-     ```
+     ```bash
      DOCROOT=/opt/bitnami/prestashop
      ```
    + Nginx:
 
-     ```
+     ```bash
      DOCROOT=/opt/bitnami/nginx/html
      ```
    + Other PHP-based applications: the folder that contains your application's files, usually under `/opt/bitnami`.
 
    Then run the following commands:
 
-   ```
+   ```bash
    echo '<?php echo PHP_VERSION, " ", PHP_SAPI, " ", php_ini_loaded_file();' | sudo tee "$DOCROOT/v.php" > /dev/null
    curl -s http://localhost/v.php; echo
    sudo rm -f "$DOCROOT/v.php"

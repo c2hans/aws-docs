@@ -54,7 +54,7 @@ AL2027 also includes the `yum-utils` command-line tools, such as `repoquery` and
 
 The `dnf5-plugin-automatic` package replaces the `dnf-automatic` tool from AL2023. Installing the `dnf-automatic` package name resolves to it, and the AL2023 timer spelling still works:
 
-```
+```bash
 sudo dnf install dnf-automatic
 sudo systemctl enable --now dnf-automatic.timer
 ```

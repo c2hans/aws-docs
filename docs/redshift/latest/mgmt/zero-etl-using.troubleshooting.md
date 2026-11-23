@@ -52,7 +52,7 @@ To resolve this issue, go to the **Table statistics** tab on the integration det
 
 If you don't see one or more tables reflected in Amazon Redshift, you can run the following command to resynchronize them. Replace {{dbname}} with the name of your Amazon Redshift database. And, replace {{table1}} and {{table2}} with the names of the tables to be synchronized.
 
-```
+```sql
 ALTER DATABASE {{dbname}} INTEGRATION REFRESH TABLE {{table1}}, {{table2}};
 ```
 
@@ -169,7 +169,7 @@ To resolve this issue, go to the **Table statistics** tab on the integration det
 
 If you don't see one or more tables reflected in Amazon Redshift, you can run the following command to resynchronize them. Replace {{dbname}} with the name of your Amazon Redshift database. And, replace {{table1}} and {{table2}} with the names of the tables to be synchronized.
 
-```
+```sql
 ALTER DATABASE {{dbname}} INTEGRATION REFRESH TABLE {{table1}}, {{table2}};
 ```
 
@@ -281,7 +281,7 @@ To resolve this issue, go to the **Table statistics** tab on the integration det
 
 If you don't see one or more tables reflected in Amazon Redshift, you can run the following command to resynchronize them. Replace {{dbname}} with the name of your Amazon Redshift database. And, replace {{table1}} and {{table2}} with the names of the tables to be synchronized.
 
-```
+```sql
 ALTER DATABASE {{dbname}} INTEGRATION REFRESH TABLE {{table1}}, {{table2}};
 ```
 
@@ -399,7 +399,7 @@ Amazon Redshift can't load data from a zero-ETL integration.
 
 To resolve this issue, refresh the integration with ALTER DATABASE.
 
-```
+```sql
 ALTER DATABASE {{sample_integration_db}} INTEGRATION REFRESH ALL TABLES
 ```
 
@@ -422,7 +422,7 @@ To resolve this issue, create a database for the integration. See [Creating dest
 
 Enabling PITR is required for DynamoDB to export data. Ensure PITR is always enabled. If you ever turn off PITR while the integration is active, you’ll need to follow instructions in the error message and refresh the integration using ALTER DATABASE.
 
-```
+```sql
 ALTER DATABASE {{sample_integration_db}} INTEGRATION REFRESH ALL TABLES
 ```
 
@@ -463,7 +463,7 @@ In the destination database, one or more of the tables don't have a primary key 
 
 To resolve this issue, go to the **Table statistics** tab on the integration details page or use SVV\_INTEGRATION\_TABLE\_STATE to view the failed tables. You can add primary keys to the tables and Amazon Redshift will resynchronize the tables. You can run the following command to resynchronize them. Replace {{dbname}} with the name of your Amazon Redshift database. And, replace {{table1}} and {{table2}} with the names of the tables to be synchronized.
 
-```
+```sql
 ALTER DATABASE {{dbname}} INTEGRATION REFRESH TABLE {{table1}}, {{table2}};
 ```
 

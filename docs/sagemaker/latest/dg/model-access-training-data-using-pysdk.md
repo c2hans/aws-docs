@@ -8,7 +8,7 @@ SageMaker Python SDK provides the generic [ModelTrainer class](https://sagemaker
 
 **To specify the input mode using the ModelTrainer class**
 
-```
+```py
 from sagemaker.train import ModelTrainer
 from sagemaker.train.configs import InputData, OutputDataConfig, CheckpointConfig
 
@@ -30,7 +30,7 @@ For more information, see the [sagemaker.train.ModelTrainer](https://sagemaker.r
 
 **To specify the input mode through the `model_trainer.train()` method**
 
-```
+```py
 from sagemaker.train import ModelTrainer
 from sagemaker.train.configs import InputData, OutputDataConfig, CheckpointConfig
 from sagemaker.core.shapes import Channel, DataSource, S3DataSource

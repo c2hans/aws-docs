@@ -13,7 +13,7 @@ Removes tags from an event bus, subscriber, or event source.
 ARN for an EventBridge resource that supports tagging: event buses, subscribers, and event sources.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1011.
-Pattern: `arn:aws(-[a-z0-9]+)*:events:[a-z][a-z0-9]*(-[a-z0-9]+)*:([0-9]{12}):(event-busv2|subscriber|event-sourcev2\/(aws\.service|aws\.partner))\/[A-Za-z0-9][\.\-_A-Za-z0-9]{0,255}\/[a-z0-9]{25}`
+Pattern: `arn:aws(-[a-z0-9]+)*:events:[a-z][a-z0-9]*(-[a-z0-9]+)*:([0-9]{12}):(event-busv2|subscriber|event-sourcev2\/(aws\.service|aws\.partner|webhook))\/[A-Za-z0-9][\.\-_A-Za-z0-9]{0,255}\/[a-z0-9]{25}`
 Required: Yes
 
  ** TagKeys **

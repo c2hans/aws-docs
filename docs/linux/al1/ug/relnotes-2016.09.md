@@ -30,19 +30,19 @@ Due to a bug that existed in our `dracut` package from previous releases, BTRFS-
 
 1. Update `dracut`
 
-   ```
+   ```sh
    $ sudo yum update dracut
    ```
 
 1. Make a backup of the `initramfs` in case errors are encountered and must be rolled back
 
-   ```
+   ```sh
    $ sudo cp /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r).img.bak
    ```
 
 1. Rebuild the `initramfs`
 
-   ```
+   ```sh
    $ sudo dracut -f
    ```
 
@@ -81,7 +81,7 @@ The latest in the Python 3.x series has been integrated with our existing Python
 
 **Example Commands**
 
-```
+```sh
 $ yum search python35
 $ sudo yum install python35-virtualenv
 $ sudo alternatives --set python /usr/bin/python3.5

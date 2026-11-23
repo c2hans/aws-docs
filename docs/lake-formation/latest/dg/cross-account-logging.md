@@ -25,7 +25,7 @@ If the data access occurs through a resource link, two events are logged in the 
 
 The following is an excerpt from a default cross-account CloudTrail event (without opt-in). The account performing the data access is 1111-2222-3333. This is the log that is shown in both the calling account and the resource owner account. Lake Formation populates logs in both accounts in the cross-account case.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -47,7 +47,7 @@ The following is an excerpt from a default cross-account CloudTrail event (witho
 
 As a shared resource consumer, when you opt in to include the principal ARN, the excerpt becomes the following. The `lakeFormationPrincipal` field represents the end role or user performing the query through Amazon Athena, Amazon Redshift Spectrum, or AWS Glue jobs.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

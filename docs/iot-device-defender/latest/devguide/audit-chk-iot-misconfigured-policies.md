@@ -38,7 +38,7 @@ The **AWS IoT policy potentially misconfigured** check will flag this policy wit
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -70,7 +70,7 @@ The following is an example of a properly configured policy. Devices don't have 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -114,7 +114,7 @@ The following example policy has permissions to receive message on `building/con
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -146,7 +146,7 @@ The following is an example of a properly configured policy. Devices don't have 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -23,7 +23,7 @@ You can create EBS volumes from an EBS snapshot. You can attach an EBS volume to
 
    The following is example output.
 
-   ```
+   ```json
    {
        "AvailabilityZone": "us-east-1a",
        "VolumeId": "vol-1234567890abcdef0",
@@ -43,7 +43,7 @@ You can create EBS volumes from an EBS snapshot. You can attach an EBS volume to
 
    The following is example output.
 
-   ```
+   ```json
    {
        "AttachTime": "YYYY-MM-DDTHH:MM:SS.000Z",
        "InstanceId": "i-1234567890abcdef0",
@@ -64,7 +64,7 @@ You can create EBS volumes from an EBS snapshot. You can attach an EBS volume to
 
 1. Use the [New-EC2Volume](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Volume.html) cmdlet to create a volume from the snapshot. You must select the Availability Zone of the instance to which you'll attach the volume.
 
-   ```
+   ```powershell
    New-EC2Volume `
        -AvailabilityZone {{us-east-1a}} `
        -SnapshotId {{snap-1234567890abcdef0}}
@@ -95,7 +95,7 @@ You can create EBS volumes from an EBS snapshot. You can attach an EBS volume to
 
 1. Use the [Add-EC2Volume](https://docs.aws.amazon.com/powershell/latest/reference/items/Add-EC2Volume.html) cmdlet
 
-   ```
+   ```powershell
    Add-EC2Volume `
        -VolumeId {{vol-1234567890abcdef0}} `
        -InstanceId {{i-1234567890abcdef0}} `

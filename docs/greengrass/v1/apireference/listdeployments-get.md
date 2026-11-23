@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="listdeployments-get-cli"></a>
 
-```
+```bash
 aws greengrass list-deployments \
   --group-id <value> \
   [--max-results <value>] \
@@ -26,7 +26,7 @@ aws greengrass list-deployments \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "MaxResults": "integer",
@@ -59,7 +59,7 @@ type: string
 Success. The response body contains the list of deployments for the given group.
  [ ListDeploymentsResponse](definitions-listdeploymentsresponse.md)
 
-```
+```json
 {
 "Deployments": [
   {
@@ -106,7 +106,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

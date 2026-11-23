@@ -17,37 +17,37 @@ Apps are then synthesized to create AWS CloudFormation templates for your stacks
 
 **Example**
 
-```
+```javascript
 const app = new App();
 new MyFirstStack(app, 'hello-cdk');
 app.synth();
 ```
 
-```
+```javascript
 const app = new App();
 new MyFirstStack(app, 'hello-cdk');
 app.synth();
 ```
 
-```
+```python
 app = App()
 MyFirstStack(app, "hello-cdk")
 app.synth()
 ```
 
-```
+```java
 App app = new App();
 new MyFirstStack(app, "hello-cdk");
 app.synth();
 ```
 
-```
+```csharp
 var app = new App();
 new MyFirstStack(app, "hello-cdk");
 app.Synth();
 ```
 
-```
+```go
 app := awscdk.NewApp(nil)
 
 MyFirstStack(app, "MyFirstStack", &MyFirstStackProps{

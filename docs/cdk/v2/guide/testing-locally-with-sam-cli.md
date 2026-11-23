@@ -31,7 +31,7 @@ $  sam local start-lambda -t <./cdk.out/CdkSamExampleStack.template.json> <OPTIO
 
 Consider stacks and functions that are declared with the following sample:
 
-```
+```javascript
 app = new HelloCdkStack(app, "HelloCdkStack",
    ...
 )

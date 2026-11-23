@@ -43,7 +43,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 
     The following abbreviated example shows the pattern: a detection rule paired with a RemediationConfiguration that invokes an SSM document (AWS-DisableS3BucketPublicReadWrite) in one template. Parameters are omitted for brevity. For the complete version, see [Operational Best Practices for Amazon S3 with Remediation](https://github.com/awslabs/aws-config-rules/blob/master/aws-config-conformance-packs/Operational-Best-Practices-for-Amazon-S3-with-Remediation.yaml).
 
-   ```
+   ```yaml
    Resources:
      # Detection rule
      S3BucketPublicReadProhibited:

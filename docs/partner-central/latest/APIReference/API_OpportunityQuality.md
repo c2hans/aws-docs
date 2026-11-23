@@ -13,7 +13,7 @@ Opportunity quality score and trend.
 In the following list, the required parameters are described first.
 
  ** Score **   <a name="AWSPartnerCentral-Type-OpportunityQuality-Score"></a>
-Deal quality score based on opportunity content completeness and sales methodology criteria. Values range from 0 to 100.
+Deal quality score assigned to the opportunity. Values range from 0 to 100.
 Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 100.
 Required: No

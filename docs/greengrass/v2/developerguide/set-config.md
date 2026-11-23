@@ -32,7 +32,7 @@ aws_secret_access_key = {{<your_secret_access_key>}}
 
 To configure IDT for AWS IoT Greengrass V2 to use AWS credentials from your `credentials` file, edit your `config.json` file as follows:
 
-```
+```json
 {
   "awsRegion": "{{region}}",
   "auth": {
@@ -68,7 +68,7 @@ set AWS_SECRET_ACCESS_KEY={{<your_secret_access_key>}}
 
 To configure IDT to use the environment variables, edit the `auth` section in your `config.json` file. Here is an example:
 
-```
+```json
 {
   "awsRegion": "{{region}}",
   "auth": {
@@ -90,7 +90,7 @@ You must provide this information using the `device.json` template located in `{
 ------
 #### [ IDT v4.9.3 ]
 
-```
+```json
 [
   {
     "id": "{{<pool-id>}}",
@@ -223,7 +223,7 @@ The user name for signing in to the device being tested.
 ------
 #### [ IDT v4.9.4 ]
 
-```
+```json
 [
   {
     "id": "{{<pool-id>}}",
@@ -347,7 +347,7 @@ IDT for AWS IoT Greengrass V2 also needs additional information about the locati
 
 You must provide this information using the `userdata.json` template located in `{{ <device_tester_extract_location>}}/configs/userdata.json`:
 
-```
+```json
 {
     "TempResourcesDirOnDevice": "{{/path/to/temp/folder}}",
     "InstallationDirRootOnDevice": "{{/path/to/installation/folder}}",
@@ -377,7 +377,7 @@ IDT deletes the contents of this folder when it finishes running a test.
 The full path to a folder on the device in which to install AWS IoT Greengrass. For PreInstalled Greengrass, this is the path to the Greengrass installation directory.
 You must set the required file permissions for this folder. Run the following command for each folder in the installation path.
 
-```
+```bash
 sudo chmod 755 {{folder-name}}
 ```
 
@@ -428,7 +428,7 @@ AWS IoT Device Tester (IDT) includes an optional feature to fetch configuration 
 
 1. To use this feature, you must update the permissions used in creating your [IDT user](https://docs.aws.amazon.com/greengrass/v2/developerguide/dev-tst-prereqs.html) to allow the GetParameter action on the parameters that IDT is configured to use. The below is an example of a permission statement that can be added to the IDT user. For more information, see [AWS Systems Manager userguide](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-paramstore-access.html).
 
-   ```
+   ```json
    {
           "Sid":"parameterStoreResources",
           "Effect": "Allow",
@@ -443,19 +443,19 @@ AWS IoT Device Tester (IDT) includes an optional feature to fetch configuration 
 
 1. You need to store your configuration values inside AWS Paramater Store. This can be done from the AWS console or from the AWS CLI. AWS Parameter Store allows you to choose encrypted or unencrypted storage. For storage of sensitive values like secrets, passwords, and pins, you should use the encrypted option which is a parameter type of SecureString. To upload a parameter using the AWS CLI, you can use the following command:
 
-   ```
+   ```bash
    aws ssm put-parameter --name IDT-example-name --value IDT-example-value --type SecureString
    ```
 
    You can verify that a parameter is stored using the following command. (Optional) Use the `--with-decryption` flag to fetch a decrypted SecureString parameter.
 
-   ```
+   ```bash
    aws ssm get-parameter --name IDT-example-name
    ```
 
    Using the AWS CLI will upload the parameter in the AWS region of the current CLI user and IDT will fetch parameters from the region configured in `config.json`. To check your region from the AWS CLI, use the following:
 
-   ```
+   ```bash
    aws configure get region
    ```
 

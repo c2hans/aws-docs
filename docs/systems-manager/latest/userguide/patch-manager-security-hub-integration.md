@@ -100,7 +100,7 @@ Patch Manager sends findings to Security Hub CSPM using the [AWS Security Findin
 
 Here is an example of a typical finding from Patch Manager.
 
-```
+```JSON
 {
   "SchemaVersion": "2018-10-08",
   "Id": "arn:aws:patchmanager:us-east-2:111122223333:instance/i-02573cafcfEXAMPLE/document/AWS-RunPatchBaseline/run-command/d710f5bd-04e3-47b4-82f6-df4e0EXAMPLE",

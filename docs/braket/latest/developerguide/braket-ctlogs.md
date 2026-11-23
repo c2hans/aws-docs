@@ -39,7 +39,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example is a log entry for the `GetQuantumTask` action, which gets the details of a quantum task.
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -83,7 +83,7 @@ The following example is a log entry for the `GetQuantumTask` action, which gets
 
 The following shows a log entry for the `GetDevice` action, which returns the details of a device event.
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -131,7 +131,7 @@ The following shows a log entry for the `GetDevice` action, which returns the de
 
 You can use EventBridge to receive CloudTrail events when spending limit resources are created, updated, or deleted. This allows you to track changes to your spending limits. To filter for spending limit operations, use the following event pattern in EventBridge:
 
-```
+```json
 {
   "source": ["aws.braket"],
   "detail-type": ["AWS API Call via CloudTrail"],

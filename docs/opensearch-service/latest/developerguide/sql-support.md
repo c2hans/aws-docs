@@ -46,7 +46,7 @@ Use the following table to find the version of the SQL plugin that's supported b
 
 To query your data with SQL, send HTTP requests to `_sql` using the following format:
 
-```
+```json
 POST {{domain-endpoint}}/_plugins/_sql
 {
   "query": "SELECT * FROM my-index LIMIT 50"
@@ -65,7 +65,7 @@ For security considerations related to using SQL with fine-grained access contro
 
 The OpenSearch SQL plugin includes many [tunable settings](https://docs.opensearch.org/latest/search-plugins/sql/settings/). In OpenSearch Service, use the `_cluster/settings` path, not the plugin settings path (`_plugins/_query/settings`):
 
-```
+```json
 PUT _cluster/settings
 {
   "transient" : {
@@ -76,7 +76,7 @@ PUT _cluster/settings
 
 For legacy Elasticsearch domains, replace `plugins` with `opendistro`:
 
-```
+```json
 PUT _cluster/settings
 {
   "transient" : {

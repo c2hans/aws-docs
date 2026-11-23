@@ -66,7 +66,7 @@ For more information, see [How AWS Site-to-Site VPN works](https://docs.aws.amaz
 **Tools for PowerShell V4**
 **Example 1: This example creates the specified virtual private gateway.**
 
-```
+```powershell
 New-EC2VpnGateway -Type ipsec.1
 ```
 **Output:**
@@ -84,7 +84,7 @@ VpnGatewayId     : vgw-1a2b3c4d
 **Tools for PowerShell V5**
 **Example 1: This example creates the specified virtual private gateway.**
 
-```
+```powershell
 New-EC2VpnGateway -Type ipsec.1
 ```
 **Output:**

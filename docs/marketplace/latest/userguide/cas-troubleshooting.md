@@ -8,11 +8,11 @@ You can troubleshoot issues with the AWS Marketplace Commerce Analytics Service,
 
  **I can't access the service because of an allow list issue.**
 
-If you're not yet registered as a seller on the AWS Marketplace, visit [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home) to register. If you have already registered as a seller on AWS Marketplace, contact the [**AWS Marketplace Seller Operations**](https://aws.amazon.com/marketplace/management/contact-us/) team.
+If you're not yet registered as a seller on the AWS Marketplace, visit [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home) to register. If you have already registered as a seller on AWS Marketplace, contact the AWS Marketplace support team on the [AWS Partner Central and Marketplace Support page](https://us-east-1.console.aws.amazon.com/partnercentral/support?region=us-east-1) in the AWS Partner Central console.
 
 **I can't request datasets for a date in the past, even though the SDK documentation says it should be available for this date.**
 
-Even though datasets are listed as being available for certain dates in the past, we have data only since the time that you joined AWS Marketplace. If you believe that this is in error, contact the [**AWS Marketplace Seller Operations**](https://aws.amazon.com/marketplace/management/contact-us/) team.
+Even though datasets are listed as being available for certain dates in the past, we have data only since the time that you joined AWS Marketplace. If you believe that this is in error, contact the AWS Marketplace support team on the AWS Partner Central and Marketplace Support page.
 
  **When I call the service, I receive the error message "Could not connect to the endpoint URL: https://marketplacecommerceanalytics.eu-central-1.amazonaws.com/”**
 
@@ -103,4 +103,4 @@ To provide access, add permissions to your users, groups, or roles:
 
  **My problem isn't listed here.**
 
- Contact the [**AWS Marketplace Seller Operations**](https://aws.amazon.com/marketplace/management/contact-us/) team.
+ Contact the AWS Marketplace support team on the AWS Partner Central and Marketplace Support page.

@@ -31,7 +31,7 @@ If a table with the name you chose already exists, an [AmazonServiceException](h
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
@@ -51,7 +51,7 @@ This code creates a table with a simple primary key ("Name").
 
  **Code**
 
-```
+```java
 CreateTableRequest request = new CreateTableRequest()
     .withAttributeDefinitions(new AttributeDefinition(
              "Name", ScalarAttributeType.S))
@@ -80,7 +80,7 @@ Add another [AttributeDefinition](https://docs.aws.amazon.com/sdk-for-java/v1/re
 
  **Code**
 
-```
+```java
 CreateTableRequest request = new CreateTableRequest()
     .withAttributeDefinitions(
           new AttributeDefinition("Language", ScalarAttributeType.S),
@@ -105,7 +105,7 @@ If the named table doesn’t exist for your account and region, a [ResourceNotFo
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
@@ -115,7 +115,7 @@ import com.amazonaws.services.dynamodbv2.model.ListTablesResult;
 
  **Code**
 
-```
+```java
 final AmazonDynamoDB ddb = AmazonDynamoDBClientBuilder.defaultClient();
 
 ListTablesRequest request;
@@ -166,7 +166,7 @@ If the named table doesn’t exist for your account and region, a [ResourceNotFo
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
@@ -177,7 +177,7 @@ import com.amazonaws.services.dynamodbv2.model.TableDescription;
 
  **Code**
 
-```
+```java
 final AmazonDynamoDB ddb = AmazonDynamoDBClientBuilder.defaultClient();
 
 try {
@@ -230,7 +230,7 @@ If the named table doesn’t exist for your account and region, a [ResourceNotFo
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput;
@@ -239,7 +239,7 @@ import com.amazonaws.AmazonServiceException;
 
  **Code**
 
-```
+```java
 ProvisionedThroughput table_throughput = new ProvisionedThroughput(
       read_capacity, write_capacity);
 
@@ -265,7 +265,7 @@ If the named table doesn’t exist for your account and region, a [ResourceNotFo
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
@@ -273,7 +273,7 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 
  **Code**
 
-```
+```java
 final AmazonDynamoDB ddb = AmazonDynamoDBClientBuilder.defaultClient();
 
 try {

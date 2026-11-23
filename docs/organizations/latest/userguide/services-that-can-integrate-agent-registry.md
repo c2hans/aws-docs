@@ -69,7 +69,7 @@ Use the following AWS CLI commands or API operations to enable trusted service a
 
   Run the following command to enable AWS Agent Registry as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations enable-aws-service-access \
       --service-principal agent-registry.amazonaws.com
   ```
@@ -103,7 +103,7 @@ Use the following AWS CLI commands or API operations to disable trusted service 
 
   Run the following command to disable AWS Agent Registry as a trusted service with Organizations.
 
-  ```
+  ```bash
   $ aws organizations disable-aws-service-access \
       --service-principal agent-registry.amazonaws.com
   ```
@@ -127,7 +127,7 @@ Only an administrator in the Organizations management account can configure a de
 You can register a delegated administrator account using the AWS CLI or one of the AWS SDKs:
 + AWS CLI: [register-delegated-administrator](https://docs.aws.amazon.com/cli/latest/reference/organizations/register-delegated-administrator.html)
 
-  ```
+  ```bash
   $ aws organizations register-delegated-administrator \
       --account-id {{ACCOUNT_ID}} \
       --service-principal agent-registry.amazonaws.com
@@ -147,7 +147,7 @@ Only an administrator in the Organizations management account can remove a deleg
 You can remove a delegated administrator account using the AWS CLI or one of the AWS SDKs:
 + AWS CLI: [deregister-delegated-administrator](https://docs.aws.amazon.com/cli/latest/reference/organizations/deregister-delegated-administrator.html)
 
-  ```
+  ```bash
   $ aws organizations deregister-delegated-administrator \
       --account-id {{ACCOUNT_ID}} \
       --service-principal agent-registry.amazonaws.com

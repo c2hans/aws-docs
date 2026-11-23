@@ -18,7 +18,7 @@ The following policy allows `DescribeSecret` access on secrets with a tag with t
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -46,7 +46,7 @@ The following policy allows any identities in the account `GetSecretValue` acces
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

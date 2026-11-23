@@ -97,7 +97,7 @@ cancelQueryInput := &timestreamquery.CancelQueryInput{
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/sample_apps/js).
 
-```
+```javascript
 async function tryCancelQuery() {
     const params = {
         QueryString: SELECT_ALL_QUERY

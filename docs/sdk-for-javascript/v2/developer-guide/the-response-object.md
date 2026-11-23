@@ -12,7 +12,7 @@ After a service object method has been called, it returns an `AWS.Response` obje
 
 When using the standard callback mechanism, these two properties are provided as parameters on the anonymous callback function as shown in the following example.
 
-```
+```javascript
 function(error, data) {
     if (error) {
         // error handling code
@@ -31,7 +31,7 @@ The `data` property of the `AWS.Response` object contains the serialized data re
 
 Here is an example of calling the `getItem` method of a DynamoDB table to retrieve the file name of an image file to use as part of a game.
 
-```
+```javascript
 // Initialize parameters needed to call DynamoDB
 var slotParams = {
     Key : {'slotPosition' : {N: '0'}},
@@ -61,7 +61,7 @@ Sometimes the contents of the `data` property returned by a service request span
 
 You can check to see if the data returned by a service request has additional pages of data by calling the `response.hasNextPage` method. This method returns a boolean to indicate whether calling `response.nextPage` returns additional data.
 
-```
+```javascript
 s3.listObjects({Bucket: 'bucket'}).on('success', function handlePage(response) {
     // do something with response.data
     if (response.hasNextPage()) {
@@ -75,7 +75,7 @@ s3.listObjects({Bucket: 'bucket'}).on('success', function handlePage(response) {
 
 The `error` property of the `AWS.Response` object contains the available error data in the event of a service error or transfer error. The error returned takes the following form.
 
-```
+```javascript
 { code: 'SHORT_UNIQUE_ERROR_CODE', message: 'a descriptive error message' }
 ```
 
@@ -86,7 +86,7 @@ In the case of an error, the value of the `data` property is `null`. If you hand
 
 The `request` property provides access to the originating `AWS.Request` object. It can be useful to refer to the original `AWS.Request` object to access the original parameters it sent. In the following example, the `request` property is used to access the `Key` parameter of the original service request.
 
-```
+```javascript
 s3.getObject({Bucket: 'bucket', Key: 'key'}).on('success', function(response) {
    console.log("Key was", response.request.params.Key);
 }).send();

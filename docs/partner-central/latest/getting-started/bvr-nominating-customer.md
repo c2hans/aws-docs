@@ -35,3 +35,5 @@ Confirm that:
 + Your Partner Success Specialist (PSS) reviews the nomination.
 + If approved, the initiative moves to its first pit stop and activities become available.
 + If changes are needed, you receive specific feedback and can edit and resubmit.
+
+After nomination approval, draft your VRP for this customer with the AWS Partner Central chat agent. For more information, see [Drafting a VRP with the AWS Partner Central chat agent](bvr-drafting-vrp-chat-agent.md).

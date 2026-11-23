@@ -29,7 +29,7 @@ Each file in the dataset must adhere to the following format:
 
 The following example illustrates the input data format for instruction-based fine-tuning in Autopilot.
 
-```
+```xml
 input,output
 "<prompt text>","<expected generated text>"
 ```

@@ -8,7 +8,7 @@ Although you usually use an instance of an `EnhancedDocument` to read and write 
 
 You can use `EnhancedDocuments` for their ability to convert between JSON strings or custom objects to low-level maps of `AttributeValues` as shown in the following example.
 
-```
+```java
     public static void conversionWithoutDynamoDbExample() {
         Address address = new Address();
         address.setCity("my city");

@@ -12,7 +12,7 @@ The following code examples show how to get started using AWS IoT SiteWise.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iotsitewise#code-examples).
 
-```
+```java
 public class HelloSitewise {
     private static final Logger logger = LoggerFactory.getLogger(HelloSitewise.class);
     public static void main(String[] args) {
@@ -49,7 +49,7 @@ public class HelloSitewise {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iotsitewise#code-examples).
 
-```
+```javascript
 import {
   paginateListAssetModels,
   IoTSiteWiseClient,
@@ -91,7 +91,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 
-```
+```python
 import boto3
 
 def hello_iot_sitewise(iot_sitewise_client):
@@ -128,7 +128,7 @@ if __name__ == "__main__":
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ios#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ios->listassetmodels( ). " oo_result is returned for testing purposes. "
         DATA(lt_asset_models) = oo_result->get_assetmodelsummaries( ).

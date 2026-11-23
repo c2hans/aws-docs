@@ -42,7 +42,7 @@ View details about a service, quota name, and status in the **Quota request hist
 **To view the quota request history**
 + The `ListRequestedServiceQuotaChangeHistory` operation, which submits the request, requires a `QuotaRequestedAtLevel` parameter. The following CLI example is for all resource and account level requests.
 
-  ```
+  ```bash
   $ aws service-quotas list-requested-service-quota-change-history \
           --quota-applied-at-level ALL
   {

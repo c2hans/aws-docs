@@ -125,7 +125,7 @@ The syntax for a stagger window is defined in a special clause, `WINDOWED BY`. T
 
 The stagger window is defined in the `WINDOWED BY` clause and takes two parameters: partition keys and window length. The partition keys partition the incoming data stream and define when the window opens. A stagger window opens when the first event with a unique partition key appears on the stream. The stagger window closes after a fixed time period defined by the window length. The syntax is shown in the following code example:
 
-```
+```sql
 ...
 FROM <stream-name>
 WHERE <... optional statements...>

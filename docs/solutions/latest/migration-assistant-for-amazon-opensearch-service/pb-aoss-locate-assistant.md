@@ -6,19 +6,19 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 Open a shell on the Migration Console pod, refreshing your kubeconfig first if you are on a new shell:
 
-```
+```bash
 aws eks update-kubeconfig --region <REGION> --name migration-eks-cluster-<STAGE>-<REGION>
 kubectl exec -it migration-console-0 -n ma -- /bin/bash
 ```
 
 Confirm the installed schema version, because the workflow configuration can change by release:
 
-```
+```bash
 console --version
 ```
 
 The migration’s write identity is the IAM role `<eks-cluster-name>-migrations-role`, which you already added as the principal in the data access policy in [Create the data access policy](pb-aoss-create-security-policies.md#pb-aoss-data-access-policy). From the Migration Console pod, confirm pod identity is delivering credentials:
 
-```
+```bash
 aws sts get-caller-identity
 ```

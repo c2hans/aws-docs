@@ -20,7 +20,7 @@ AVX exposes integration points across six partner domains. In each case the patt
 
 The following example shows a payment-initiation tool. The same structure applies to any partner domain — replace the API call and return shape:
 
-```
+```python
 # agents/supervisor/tools/payment_initiation.py
 import logging
 import httpx

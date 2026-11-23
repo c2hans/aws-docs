@@ -29,7 +29,7 @@ Before you can use your customer managed key with HyperPod, you must complete th
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -53,7 +53,7 @@ Before you can use your customer managed key with HyperPod, you must complete th
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Id": "hyperpod-key-policy",

@@ -63,7 +63,7 @@ aws elbv2 modify-target-group-attributes \
 **To update the deregistration delay value**
 Update the [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html) resource to include the `deregistration_delay.timeout_seconds` attribute.
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
@@ -139,7 +139,7 @@ aws elbv2 modify-target-group-attributes \
 **To update the routing algorithm**
 Update the [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html) resource to include the `load_balancing.algorithm.type` attribute.
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
@@ -205,7 +205,7 @@ aws elbv2 modify-target-group-attributes \
 **To update the slow start duration value**
 Update the [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html) resource to include the `slow_start.duration_seconds` attribute.
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
@@ -272,7 +272,7 @@ aws elbv2 modify-target-group-attributes \
 **To modify target group health settings**
 Update the [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html) resource. The following example sets the healthy threshold for both unhealthy state actions to 50%.
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
@@ -350,7 +350,7 @@ aws elbv2 modify-target-group-attributes \
 **To turn off cross-zone load balancing**
 Update the [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html) resource to include the `load_balancing.cross_zone.enabled` attribute.
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
@@ -407,7 +407,7 @@ aws elbv2 modify-target-group-attributes \
 **To turn on cross-zone load balancing**
 Update the [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html) resource to include the `load_balancing.cross_zone.enabled` attribute.
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
@@ -652,7 +652,7 @@ aws elbv2 modify-target-group-attributes \
 **To enable duration-based stickiness**
 Update the [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html) resource to include the `stickiness.enabled` and `stickiness.lb_cookie.duration_seconds` attributes.
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
@@ -745,7 +745,7 @@ Update the [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.co
 + `stickiness.app_cookie.cookie_name`
 + `stickiness.app_cookie.duration_seconds`
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'

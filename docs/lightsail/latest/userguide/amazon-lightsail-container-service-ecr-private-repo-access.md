@@ -33,7 +33,7 @@ The following permissions policy grants a user permission to configure access to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -72,7 +72,7 @@ Following is an example of the permissions policy populated with example values.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -249,7 +249,7 @@ You must install the AWS CLI and configure it for Amazon ECR before continuing w
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -372,7 +372,7 @@ You must install the AWS CLI and configure it for Amazon ECR before you can cont
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

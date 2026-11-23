@@ -38,7 +38,7 @@ The following table gives the distribution style for each value in RELEFFECTIVED
 
 The following query returns the current distribution style of tables in the catalog.
 
-```
+```sql
 select reloid as tableid,trim(nspname) as schemaname,trim(relname) as tablename,reldiststyle,releffectivediststyle,
 CASE WHEN "reldiststyle" = 0 THEN 'EVEN'::text
      WHEN "reldiststyle" = 1 THEN 'KEY'::text

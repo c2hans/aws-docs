@@ -35,6 +35,8 @@ Service-oriented architectures (SOA) define services with well-delineated functi
 
 ![Flow chart depicting the approach of domain-driven decision.](https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/domain-driven-decision.png)
 
+*Domain-driven decision*
+
 ## Implementation steps
 <a name="implementation-steps"></a>
 +  Teams can hold [event storming](https://serverlessland.com/event-driven-architecture/visuals/event-storming) workshops to quickly identify events, commands, aggregates and domains in a lightweight sticky note format.

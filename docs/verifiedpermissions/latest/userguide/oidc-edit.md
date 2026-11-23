@@ -37,7 +37,7 @@ You can update an identity source by using the [UpdateIdentitySource](https://do
 
 1. Create a `config.txt` file that contains the following details of an OIDC IdP for use by the `--configuration` parameter of the `update-identity-source` command.
 
-   ```
+   ```json
    {
        "openIdConnectConfiguration": {
            "issuer": "https://auth2.example.com",
@@ -58,7 +58,7 @@ You can update an identity source by using the [UpdateIdentitySource](https://do
 
 1. Run the following command to update an OIDC identity source.
 
-   ```
+   ```bash
    $ aws verifiedpermissions update-identity-source \
        --update-configuration file://config.txt \
        --policy-store-id 123456789012

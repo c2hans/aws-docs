@@ -78,7 +78,7 @@ However, if you want users to be able to search for resources in ***only*** the 
 **To create a Resource Explorer index in an AWS Region**
 Run the following command for each AWS Region in which you want to create an index to support searching that Region's resources. The following example command registers Resource Explorer in the US East (N. Virginia) (`us-east-1`).
 
-```
+```bash
 $ aws resource-explorer-2 create-index \
     --region us-east-1
 {

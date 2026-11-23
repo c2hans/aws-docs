@@ -20,7 +20,7 @@ The following example shows the JSON for the key policy created for an AWS KMS e
 
 ****
 
-```
+```json
 {
   "Id": "key-consolepolicy-3",
   "Version":"2012-10-17",
@@ -117,7 +117,7 @@ The following example shows the JSON for the key policy created for an AWS KMS e
 
 ****
 
-```
+```json
 {
     "Id": "key-consolepolicy-3",
     "Version":"2012-10-17",

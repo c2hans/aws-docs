@@ -40,13 +40,13 @@ You can delete the hosts and the environment by using the Amazon EVS console or 
 
 1. Identify the environment that contains the hosts to delete.
 
-   ```
+   ```bash
    aws evs list-environments
    ```
 
    The following is a sample response.
 
-   ```
+   ```json
    {
        "environmentSummaries": [
            {
@@ -75,7 +75,7 @@ You can delete the hosts and the environment by using the Amazon EVS console or 
 
 1. Delete a host from the environment. The following is a sample `aws evs delete-environment-host` request.
 
-   ```
+   ```bash
    aws evs delete-environment-host \
    --environment-id env-abcde12345 \
    --host-name esx01
@@ -85,13 +85,13 @@ You can delete the hosts and the environment by using the Amazon EVS console or 
 
 1. Wait until the following command returns no hosts.
 
-   ```
+   ```bash
    aws evs list-environment-hosts --environment-id env-abcde12345
    ```
 
 1. Delete the environment.
 
-   ```
+   ```bash
    aws evs delete-environment --environment-id env-abcde12345
    ```
 

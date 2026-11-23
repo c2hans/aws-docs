@@ -33,14 +33,14 @@ The AWS IoT SiteWise OPC UA Collector component uses the following log file.
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.iot.SiteWiseEdgeCollectorOpcua.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\aws.iot.SiteWiseEdgeCollectorOpcua.log -Tail 10 -Wait
   ```
 
@@ -73,14 +73,14 @@ The AWS IoT SiteWise Publisher component uses the following log file.
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.iot.SiteWiseEdgePublisher.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\aws.iot.SiteWiseEdgePublisher.log -Tail 10 -Wait
   ```
 

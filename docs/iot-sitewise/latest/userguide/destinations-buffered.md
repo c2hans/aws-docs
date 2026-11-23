@@ -46,7 +46,7 @@ Use the AWS Management Console to add an AWS IoT SiteWise destination buffered u
 Use the [UpdateGatewayCapabilityConfiguration](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateGatewayCapabilityConfiguration.html) API to configure the publisher.
 Set the `capabilityNamespace` parameter to `iotsitewise:publisher:3`.
 
-```
+```json
 {
     "sources": [
       {
@@ -88,7 +88,7 @@ Set the `capabilityNamespace` parameter to `iotsitewise:publisher:3`.
 To update an existing AWS IoT SiteWise real-time destination, first use the `DescribeGatewayCapabilityConfiguration` API to find the `destinationId`.
 The publisher namespace: `iotsitewise:publisher:3`
 
-```
+```json
 {
     "sources": [
       {

@@ -61,7 +61,7 @@ You need a Deadline Cloud farm with a queue that has a conda queue environment (
 
 **IAM permissions** – Your queue role needs Amazon ECR pull permissions, because the task script runs `docker pull` under queue role credentials. Attach a policy like the following:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -94,13 +94,13 @@ The job runs inside a Docker container based on the [carlasim/carla:0.9.16 base 
 
 1. Create an Amazon ECR repository if you don't have one:
 
-   ```
+   ```bash
    aws ecr create-repository --repository-name carla-deadline --region {{REGION}}
    ```
 
 1. From the `docker/` directory of the `autonomous_driving_carla` bundle, build the image:
 
-   ```
+   ```bash
    cd docker/
    docker build -t carla-deadline:0.9.16 .
    ```
@@ -109,7 +109,7 @@ The Dockerfile pulls `carlasim/carla:0.9.16` from Docker Hub as the base image. 
 
 1. Push the image to Amazon ECR:
 
-   ```
+   ```bash
    aws ecr get-login-password --region {{REGION}} | \
      docker login --username AWS --password-stdin {{ACCOUNT_ID}}.dkr.ecr.{{REGION}}.amazonaws.com
 
@@ -126,7 +126,7 @@ The Dockerfile pulls `carlasim/carla:0.9.16` from Docker Hub as the base image. 
 
 1. From the bundle directory, open the submitter:
 
-   ```
+   ```bash
    cd autonomous_driving_carla
    deadline bundle gui-submit .
    ```
@@ -141,7 +141,7 @@ The Dockerfile pulls `carlasim/carla:0.9.16` from Docker Hub as the base image. 
 
 Alternatively, submit with the CLI:
 
-```
+```bash
 deadline bundle submit . \
   --farm-id {{FARM_ID}} \
   --queue-id {{QUEUE_ID}} \
@@ -169,7 +169,7 @@ The log output shows:
 
 1. After the job completes, run the download command from the same directory you used at submit time, so the `OutputDir` path (default `./outputs`) resolves to the same place:
 
-   ```
+   ```bash
    deadline job download-output --job-id {{job-id}}
    ```
 

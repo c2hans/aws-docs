@@ -49,7 +49,7 @@ The following example Java 21 Lambda function code takes in information about an
 
 **Example `OrderHandler.java` Lambda Event Function**
 
-```
+```java
 package example;
 
 import com.amazonaws.services.lambda.runtime.Context;

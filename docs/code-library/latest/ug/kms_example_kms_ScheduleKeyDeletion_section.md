@@ -44,7 +44,7 @@ For more information, see [Deleting keys](https://docs.aws.amazon.com/kms/latest
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Deletes a KMS key asynchronously.
      *
@@ -79,7 +79,7 @@ For more information, see [Deleting keys](https://docs.aws.amazon.com/kms/latest
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keyId
      * @param int $pendingWindowInDays
@@ -106,7 +106,7 @@ For more information, see [Deleting keys](https://docs.aws.amazon.com/kms/latest
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -154,7 +154,7 @@ class KeyManager:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
         " iv_pending_window_days = 7

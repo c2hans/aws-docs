@@ -66,7 +66,7 @@ For AWS OpsWorks support, add the following to your policy statement:
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: ActionName
 ActionTypeId:
   Category: Deploy
@@ -83,7 +83,7 @@ Configuration:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "ActionName",
     "ActionTypeId": {

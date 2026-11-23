@@ -70,7 +70,7 @@ https://sns.us-west-2.amazonaws.com/?Action=SetEndpointAttributes
 #### Sample Response
 <a name="API_SetEndpointAttributes_Example_1_Response"></a>
 
-```
+```xml
 <SetEndpointAttributesResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ResponseMetadata>
         <RequestId>2fe0bfc7-3e85-5ee5-a9e2-f58b35e85f6a</RequestId>

@@ -32,7 +32,7 @@ Maintenance window tasks require an IAM role to provide the permissions required
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -174,7 +174,7 @@ Use the following procedure to create a custom service role for Maintenance Wind
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -220,7 +220,7 @@ If an IAM entity (user, role, or group) is set up with administrator permissions
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -277,7 +277,7 @@ If an IAM entity (user, role, or group) is set up with administrator permissions
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -332,7 +332,7 @@ You can deny the `ssm:RegisterTaskWithMaintenanceWindow` permission for the user
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

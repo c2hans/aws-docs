@@ -87,7 +87,7 @@ The policy in the following example enables a user to call the `CreateEnvironmen
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -131,7 +131,7 @@ The above policy shows how to grant limited access to Elastic Beanstalk operatio
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -166,7 +166,7 @@ The policy in the following example enables a user to pull Elastic Beanstalk log
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -205,7 +205,7 @@ The policy doesn't deny access to any resources through other services. It demon
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

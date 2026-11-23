@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/email-to-dns-overvi
 ---
 
 # How migration works
-<a name="email-to-dns-overview"></a>
 
 When you initiate migration, ACM generates one CNAME record for each domain on the certificate. You have up to 72 hours to add these records to your DNS configuration. After ACM verifies the records, the certificate switches from email validation to DNS validation. The certificate ARN remains the same.
 + **Certificate ARN** — The ARN is preserved. You don't need to update any references to the certificate.
@@ -42,7 +41,3 @@ You cannot migrate the following certificates:
 + Certificates that already use DNS validation.
 + Imported certificates.
 + Certificates with a status other than **Issued**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

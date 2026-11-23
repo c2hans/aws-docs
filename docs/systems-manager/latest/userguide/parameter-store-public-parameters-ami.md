@@ -17,7 +17,7 @@ You can view a list of all Amazon Linux 2 and Amazon Linux 2023 (AL2023) AMIs in
 ------
 #### [ Linux & macOS ]
 
-```
+```bash
 aws ssm get-parameters-by-path \
     --path /aws/service/ami-amazon-linux-latest \
     --query 'Parameters[].Name'
@@ -26,7 +26,7 @@ aws ssm get-parameters-by-path \
 ------
 #### [ Windows ]
 
-```
+```bash
 aws ssm get-parameters-by-path ^
     --path /aws/service/ami-amazon-linux-latest ^
     --query Parameters[].Name
@@ -67,7 +67,7 @@ You can view details about these AMIs, including the AMI IDs and Amazon Resource
 ------
 #### [ Linux & macOS ]
 
-```
+```bash
 aws ssm get-parameters-by-path \
     --path "/aws/service/ami-amazon-linux-latest" \
     --region {{region}}
@@ -76,7 +76,7 @@ aws ssm get-parameters-by-path \
 ------
 #### [ Windows ]
 
-```
+```bash
 aws ssm get-parameters-by-path ^
     --path "/aws/service/ami-amazon-linux-latest" ^
     --region {{region}}
@@ -127,7 +127,7 @@ You can view details of a specific AMI by using the [GetParameters](https://docs
 ------
 #### [ Linux & macOS ]
 
-```
+```bash
 aws ssm get-parameters \
     --names /aws/service/ami-amazon-linux-latest/al2023-ami-kernel-6.1-arm64 \
     --region us-east-2
@@ -136,7 +136,7 @@ aws ssm get-parameters \
 ------
 #### [ Windows ]
 
-```
+```bash
 aws ssm get-parameters ^
     --names /aws/service/ami-amazon-linux-latest/al2023-ami-kernel-6.1-arm64 ^
     --region us-east-2
@@ -171,7 +171,7 @@ You can view a list of all macOS AMIs in the current AWS Region by using the fol
 ------
 #### [ Linux & macOS ]
 
-```
+```bash
 aws ssm get-parameters-by-path \
     --path /aws/service/ec2-macos\
     --query 'Parameters[].Name'
@@ -180,7 +180,7 @@ aws ssm get-parameters-by-path \
 ------
 #### [ Windows ]
 
-```
+```bash
 aws ssm get-parameters-by-path ^
     --path /aws/service/ec2-macos ^
     --query Parameters[].Name
@@ -204,7 +204,7 @@ You can view details about these AMIs, including the AMI IDs and Amazon Resource
 ------
 #### [ Linux & macOS ]
 
-```
+```bash
 aws ssm get-parameters-by-path \
     --path "/aws/service/ec2-macos" \
     --region {{region}}
@@ -213,7 +213,7 @@ aws ssm get-parameters-by-path \
 ------
 #### [ Windows ]
 
-```
+```bash
 aws ssm get-parameters-by-path ^
     --path "/aws/service/ec2-macos" ^
     --region {{region}}
@@ -238,7 +238,7 @@ You can view details of a specific AMI by using the [GetParameters](https://docs
 ------
 #### [ Linux & macOS ]
 
-```
+```bash
 aws ssm get-parameters \
     --names /aws/service/ec2-macos/{{...pending...}} \
     --region us-east-2
@@ -247,7 +247,7 @@ aws ssm get-parameters \
 ------
 #### [ Windows ]
 
-```
+```bash
 aws ssm get-parameters ^
      --names /aws/service/ec2-macos/{{...pending...}} ^
     --region us-east-2
@@ -274,7 +274,7 @@ You can view a list of all Windows Server AMIs in the current AWS Region by usin
 ------
 #### [ Linux & macOS ]
 
-```
+```bash
 aws ssm get-parameters-by-path \
     --path /aws/service/ami-windows-latest \
     --query 'Parameters[].Name'
@@ -283,7 +283,7 @@ aws ssm get-parameters-by-path \
 ------
 #### [ Windows ]
 
-```
+```bash
 aws ssm get-parameters-by-path ^
     --path /aws/service/ami-windows-latest ^
     --query Parameters[].Name
@@ -331,7 +331,7 @@ You can view details about these AMIs, including the AMI IDs and Amazon Resource
 ------
 #### [ Linux & macOS ]
 
-```
+```bash
 aws ssm get-parameters-by-path \
     --path "/aws/service/ami-windows-latest" \
     --region {{region}}
@@ -340,7 +340,7 @@ aws ssm get-parameters-by-path \
 ------
 #### [ Windows ]
 
-```
+```bash
 aws ssm get-parameters-by-path ^
     --path "/aws/service/ami-windows-latest" ^
     --region {{region}}
@@ -391,7 +391,7 @@ You can view details of a specific AMI by using the [GetParameters](https://docs
 ------
 #### [ Linux & macOS ]
 
-```
+```bash
 aws ssm get-parameters \
     --names /aws/service/ami-windows-latest/EC2LaunchV2-Windows_Server-2016-English-Full-Base \
     --region us-east-2
@@ -400,7 +400,7 @@ aws ssm get-parameters \
 ------
 #### [ Windows ]
 
-```
+```bash
 aws ssm get-parameters ^
     --names /aws/service/ami-windows-latest/EC2LaunchV2-Windows_Server-2016-English-Full-Base ^
     --region us-east-2

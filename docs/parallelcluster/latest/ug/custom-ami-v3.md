@@ -56,7 +56,7 @@ Use this command to get the log stream of build image process events.
 
 For example, you can tail build image events using the following command.
 
-```
+```bash
 $ watch -n 1 'pcluster get-image-log-events -i {{<image-id>}} \
         --log-stream-name/1 {{<pcluster-version>}} \
         --query "events[*].message" | tail -n 50'

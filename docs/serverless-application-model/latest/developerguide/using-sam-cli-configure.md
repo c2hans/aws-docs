@@ -56,7 +56,7 @@ Configuration files are structured by environment, command, and parameter value.
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    prod:
      global:
        parameters:
@@ -79,7 +79,7 @@ Configuration files are structured by environment, command, and parameter value.
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    prod:
      global:
        parameters:
@@ -113,7 +113,7 @@ Configuration files are structured by environment, command, and parameter value.
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    default:
      deploy:
        parameters:
@@ -135,7 +135,7 @@ Configuration files are structured by environment, command, and parameter value.
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    default:
      global:
        parameters:
@@ -218,7 +218,7 @@ watch = false
 
 The following is an example of a `samconfig.yaml` configuration file:
 
-```
+```yaml
 version 0.1
 default:
   global:

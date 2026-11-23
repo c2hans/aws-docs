@@ -9,558 +9,534 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/a
 |  |  |
 | --- |--- |
 | **Purpose** | Help determine which AWS analytics services are the best fit for your organization. |
-| **Last updated** | September 24, 2025 |
-| **Covered services** |  +  [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/getting-started.html) <br />+  [AWS Clean Rooms](https://docs.aws.amazon.com/clean-rooms/latest/userguide/what-is.html#first-time-user) <br />+   [Amazon Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html) <br />+  [Amazon DataZone](https://docs.aws.amazon.com/datazone/latest/userguide/getting-started.html) <br />+  [Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html) <br />+  [AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/setting-up.html) <br />+  [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/examples.html) <br />+  [Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com/managed-flink/latest/java/what-is.html) <br />+  [Amazon Managed Streaming for Apache Kafka](https://docs.aws.amazon.com/msk/latest/developerguide/getting-started.html) <br />+  [Amazon Managed Workflows for Apache Airflow](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html) <br />+  [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/gsg.html) <br />+  [Quick](https://docs.aws.amazon.com/quicksight/latest/user/getting-started.html) <br />+  [Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/gsg/new-user.html) <br />+  [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html) <br />+  [Amazon SageMaker](https://docs.aws.amazon.com/next-generation-sagemaker/)   |
+| **Last updated** | November 19, 2026 |
+| **Covered services** |  +  [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/getting-started.html) <br />+  [AWS Clean Rooms](https://docs.aws.amazon.com/clean-rooms/latest/userguide/what-is.html#first-time-user) <br />+   [Amazon Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html) <br />+  [Amazon DataZone](https://docs.aws.amazon.com/datazone/latest/userguide/getting-started.html) <br />+  [Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html) <br />+  [AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/setting-up.html) <br />+  [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/examples.html) <br />+  [AWS Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/getting-started-setup.html) <br />+  [Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com/managed-flink/latest/java/what-is.html) <br />+  [Amazon Managed Streaming for Apache Kafka](https://docs.aws.amazon.com/msk/latest/developerguide/getting-started.html) <br />+  [Amazon Managed Workflows for Apache Airflow](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html) <br />+  [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/gsg.html) <br />+  [AWS Quick Sight](https://docs.aws.amazon.com/quick/latest/userguide/quick-sight-getting-started.html) <br />+  [Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/gsg/new-user.html) <br />+  [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html) <br />+  [Amazon SageMaker](https://docs.aws.amazon.com/next-generation-sagemaker/)   |
 
 ## Introduction
 <a name="intro"></a>
 
-Data is foundational to modern business. People and applications need to securely access and analyze data, which comes from new and diverse sources. The volume of data is also constantly increasing, which can cause organizations to struggle with capturing, storing, and analyzing all the necessary data.
+Organizations collect data from operational databases, business applications, files, and continuous event streams, and they need to turn that data into reports, dashboards, real-time insights, and inputs for machine learning (ML) and generative AI. AWS offers analytics services for each step: bringing data in, storing it, processing and transforming it, querying it, visualizing it, and governing who can access it.
 
-Meeting these challenges means building a modern data architecture that breaks down all of your data silos for analytics and insights--including third-party data--and makes it accessible to everyone in the organization, in one place, with end-to-end governance. It's also increasingly important to connect your analytics and machine learning (ML) systems to enable predictive analytics.
+**Many of these services overlap, by design.** The same job can often be done in more than one way:
++ **SQL on data in Amazon S3** can run in Amazon Athena, in Amazon Redshift through Redshift Spectrum, or with Trino on Amazon EMR.
++ **Apache Spark processing** can run in AWS Glue, Amazon EMR, or Athena for Apache Spark.
++ **Replicating operational data without pipelines** is available through zero-ETL integrations in both Amazon Redshift and AWS Glue.
++ **Federated query** is available in both Athena and Amazon Redshift.
++ **Stream processing** can run in Amazon Managed Service for Apache Flink, as Apache Flink on Amazon EMR, or as AWS Glue streaming ETL.
++ **Apache Iceberg tables** work with Amazon EMR, Athena, Amazon Redshift, AWS Glue, and Amazon SageMaker, so different engines can work on the same copy of data.
 
-This decision guide helps you ask the right questions to build your modern data architecture on AWS services. It explains how to break down your data silos (by connecting your data lake and data warehouses), your system silos (by connecting ML and analytics), and your people silos (by putting data in the hands of everyone in your organization).
+Because of this overlap, choosing a service is less about finding the single service that can do a job and more about finding the one that fits how you work. The most important factors are:
++ **How your teams work:** SQL, code, or visual tools.
++ **How much infrastructure you want to manage:** serverless, or clusters that you configure.
++ **How quickly you need results:** batch, interactive, or streaming.
++ **Where your data lives today:** operational databases, software as a service (SaaS) applications, Amazon S3, or event streams.
 
-[![AWS Videos](https://img.youtube.com/vi/9Y1bwAmx0Do?start=397&end=848/0.jpg)](https://www.youtube.com/watch?v=9Y1bwAmx0Do?start=397&end=848)
+You don't have to choose between individual services and a unified experience. Amazon SageMaker Unified Studio brings tools from Amazon EMR, AWS Glue, Amazon Redshift, Amazon Bedrock, and Amazon SageMaker Studio into one environment for SQL analytics, big data processing, and model development. Many architectures use several of the services in this guide together.
+
+**How to use this guide**
+
+1. **Understand** the jobs that analytics architectures perform and which AWS services perform each one.
+
+1. **Consider** the criteria that change which service fits your workload.
+
+1. **Choose** a starting service for each of your needs, and see when an alternative is a better fit.
+
+1. **Use** the getting-started resources for the services you choose.
+
+1. **Explore** reference architectures, solutions, and other resources.
+
+[![AWS Videos](https://img.youtube.com/vi/9Y1bwAmx0Do/0.jpg)](https://www.youtube.com/watch?v=9Y1bwAmx0Do)
+
+This eight-minute excerpt is from a one-hour presentation by Sirish Chandrasekaran and Rick Sears at re:Invent 2024. It provides an overview of how a fictional company, Maxdome, uses SageMaker Unified Studio AI and analytics to unlock data insights.
 
 ## Understand AWS analytics services
 <a name="understand"></a>
 
-A modern data strategy is built with a set of technology building blocks that help you manage, access, analyze, and act on data. It also gives you multiple options to connect to data sources. A modern data strategy should empower your teams to:
-+ Use your preferred tools or techniques
-+ Use artificial intelligence (AI) to assist with finding answers to specific questions about your data
-+ Manage who has access to data with the proper security and data governance controls
-+ Break down data silos to give you the best of both data lakes and purpose-built data stores
-+ Store any amount of data, at low-cost, and in open, standards-based data formats
-+ Connect your data lakes, data warehouses, operational databases, applications, and federated data sources into a coherent whole
-
-AWS offers a variety of services to help you achieve a modern data strategy. The following diagram depicts the AWS services for analytics that this guide covers. The tabs that follow provide additional details.
+Most analytics architectures do the same set of jobs: bring data in, store it, process and transform it, query it, analyze streams as they arrive, present results, and govern access. Many AWS services overlap. Several of them can do the same job in different ways, such as with SQL or code, serverless or on clusters you configure, and in batch or in real time. The following diagram shows the AWS analytics services that this guide covers. The tabs that follow are organized by job. Each one lists the services in this guide that do that job, and explains how.
 
 ![Diagram showing the AWS analytics services](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/analytics-services.png)
+
+This guide covers the following services, organized by the job they do:
++ **Unified analytics and AI**: Amazon SageMaker Unified Studio and Amazon SageMaker.
++ **Ingest and replicate data**: Amazon Redshift, AWS Glue, Amazon Kinesis Data Streams, Amazon Managed Streaming for Apache Kafka, and Amazon Data Firehose.
++ **Process and transform data**: AWS Glue, Amazon EMR, Amazon Athena, and Amazon Managed Workflows for Apache Airflow.
++ **Query data**: Amazon Athena, Amazon Redshift, Amazon EMR, and Amazon OpenSearch Service.
++ **Process streaming data**: Amazon Managed Service for Apache Flink, Amazon EMR, AWS Glue, and Amazon Redshift.
++ **Store data in data lakes and data warehouses**: Amazon Simple Storage Service and Amazon Redshift.
++ **Visualize and search data**: AWS Quick Sight and Amazon OpenSearch Service.
++ **Govern and collaborate**: Amazon SageMaker Catalog, AWS Lake Formation, and AWS Clean Rooms.
 
 ------
 #### [ Unified analytics and AI ]
 
-The next generation of [Amazon SageMaker](https://aws.amazon.com/sagemaker/) combines widely adopted AWS machine learning (ML) and analytics capabilities to deliver an integrated experience for analytics and AI, providing unified access to all your data. Using [Amazon SageMaker Unified Studio](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/getting-started.html), you can collaborate and build faster with familiar AWS tools for model development, generative AI application development, data processing, and SQL analytics, all accelerated by Amazon Q Developer, our generative AI assistant for software development. Access your data from data lakes, data warehouses, or third-party and federated sources, with built-in governance to meet enterprise security requirements.
+[Amazon SageMaker Unified Studio](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/getting-started.html) provides an integrated environment for using your data and tools for analytics and AI. You can discover data and work with familiar AWS analytics and machine learning services for model development, generative AI, big data processing, and SQL analytics, assisted by Amazon Q Developer. It brings together tools that were previously in separate studios and query editors in Amazon EMR, AWS Glue, Amazon Redshift, Amazon Bedrock, and Amazon SageMaker Studio.
+
+The [lakehouse architecture of Amazon SageMaker](https://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/userguide/lakehouse-how.html) organizes data into catalogs. You can create new catalogs to store data in Amazon S3 or Redshift Managed Storage. You can also connect existing sources as catalogs. *Federated catalogs* connect to sources such as Amazon Redshift, Amazon DynamoDB, Amazon DocumentDB, Amazon Aurora MySQL and PostgreSQL, MySQL, PostgreSQL, SQL Server, Oracle, Snowflake, Google BigQuery, and Microsoft Azure SQL, so you can query them in place with fine-grained permissions managed through AWS Lake Formation.
 
 ------
-#### [ Data processing ]
-+ [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/getting-started.html) helps you analyze unstructured, semi-structured, and structured data stored in Amazon S3. Examples include CSV, JSON, or columnar data formats such as Apache Parquet and Apache ORC. You can use Athena to run ad-hoc queries using ANSI SQL, without the need to aggregate or load the data into Athena. Athena integrates with Quick, AWS Glue Data Catalog, and [other AWS services](https://docs.aws.amazon.com/athena/latest/ug/athena-aws-service-integrations.html). You can also analyze data at scale with [Trino](https://trino.io/), without needing to manage infrastructure, and build real-time analytics using Apache Flink and Apache Spark.
-+ [Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html) is a managed cluster platform that simplifies running big data frameworks, such as Apache Hadoop and Apache Spark, on AWS to process and analyze vast amounts of data. Using these frameworks and related open-source projects, you can process data for analytics purposes and business intelligence workloads. Amazon EMR also lets you transform and move large amounts of data into and out of other AWS data stores and databases, such as Amazon S3.
-+ With [AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/setting-up.html), you can discover and connect to more than 100 diverse data sources and manage your data in a centralized data catalog. You can visually create, run, and monitor ETL pipelines to load data into your data lakes. Also, you can immediately search and query cataloged data using Athena, Amazon EMR, and Amazon Redshift Spectrum.
-+ [Amazon Managed Workflows for Apache Airflow](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html) (MWAA) is a fully managed implementation of Apache Airflow that makes it easier to create, schedule, and monitor data workflows in the cloud. MWAA automatically scales workflow capacity to meet your needs and integrates with AWS security services. You can use MWAA to orchestrate workflows across your analytics services, including data processing, ETL jobs, and machine learning pipelines.
+#### [ Ingest and replicate data ]
+
+**Zero-ETL integrations** replicate data from operational and application sources into analytics destinations, so you don't have to build and maintain pipelines.
++ **[Amazon Redshift zero-ETL integrations](https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-using.html)** replicate data into an Amazon Redshift data warehouse from Amazon Aurora MySQL, Aurora PostgreSQL, Amazon DynamoDB, Amazon RDS for MySQL, Amazon RDS for Oracle, Amazon RDS for PostgreSQL, Oracle Database@AWS, applications (including Salesforce, Salesforce Marketing Cloud Account Engagement, SAP, ServiceNow, Instagram ads, Meta ads, and Zendesk), and self-managed MySQL, PostgreSQL, SQL Server, and Oracle.
++ **[AWS Glue zero-ETL integrations](https://docs.aws.amazon.com/glue/latest/dg/zero-etl-using.html)** replicate data from Amazon DynamoDB, Oracle Database@AWS, third-party applications (Facebook Ads, Instagram Ads, Salesforce, Salesforce Marketing Cloud Account Engagement, SAP OData, ServiceNow, Zendesk, and Zoho CRM), and self-managed Oracle, SQL Server, MySQL, and PostgreSQL. Targets are general purpose Amazon S3 buckets, Amazon S3 Tables, and Redshift Managed Storage through the lakehouse architecture of SageMaker, and Amazon Redshift data warehouses. Self-managed database sources can replicate only to an Amazon Redshift data warehouse.
+
+**AWS Glue ETL** is the choice when data must be transformed before analysis. Zero-ETL provides service-managed replication with no custom logic. AWS Glue ETL lets you write transformation logic, combine sources, apply data quality rules, and cleanse or aggregate data. Source connections can be reused between AWS Glue ETL and AWS Glue zero-ETL. For more information, see [Simplify data integration with AWS Glue and zero-ETL to Amazon SageMaker Lakehouse](https://aws.amazon.com/blogs/big-data/simplify-data-integration-with-aws-glue-and-zero-etl-to-amazon-sagemaker-lakehouse/) on the AWS Big Data Blog. AWS Glue connects to a wide range of AWS, database, and SaaS sources.
+
+**Streaming ingestion services** capture data continuously as it's produced:
++ [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/introduction.html) collects and processes large streams of data records in real time. Applications read records from a data stream and can send results to dashboards, alerts, or other AWS services.
++ [Amazon Managed Streaming for Apache Kafka](https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html) (Amazon MSK) is a fully managed service for building and running applications that use Apache Kafka. It runs open-source versions of Apache Kafka, so existing Kafka applications, tools, and plugins work without changes.
++ [Amazon Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html) delivers streaming data to destinations without consumer applications that you write. Destinations include Amazon S3, Amazon Redshift, Amazon OpenSearch Service, OpenSearch Service Serverless, Apache Iceberg tables, and HTTP endpoints and third-party providers such as Coralogix, Datadog, Dynatrace, Elastic, and Grafana Cloud.
++ [Amazon Redshift streaming ingestion](https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-streaming-ingestion-getting-started.html) loads streaming data directly into Amazon Redshift materialized views from Amazon Kinesis Data Streams, Amazon MSK, Apache Kafka, and Confluent Cloud, without staging it in Amazon S3.
 
 ------
-#### [ Data streaming ]
-+ With [Amazon Managed Streaming for Apache Kafka](https://docs.aws.amazon.com/msk/latest/developerguide/getting-started.html) (Amazon MSK), you can build and run applications that use Apache Kafka to process streaming data. Amazon MSK provides the control-plane operations, such as those for creating, updating, and deleting clusters. It lets you use Apache Kafka data-plane operations, such as those for producing and consuming data.
-+ With [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/examples.html), you can collect and process large streams of data records in real time. The type of data used can include IT infrastructure log data, application logs, social media, market data feeds, and web clickstream data.
-+ [Amazon Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html) is a fully managed service for delivering real-time streaming data to destinations such as Amazon S3, Amazon Redshift, Amazon OpenSearch Service, Splunk, and Apache Iceberg Tables. You can also send data to any custom HTTP endpoint or HTTP endpoints owned by supported third-party service providers, including Datadog, Dynatrace, LogicMonitor, MongoDB, New Relic, Coralogix, and Elastic.
-+  With [Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com/managed-flink/latest/java/what-is.html), you can use Java, Scala, Python, or SQL to process and analyze streaming data. You can author and run code against streaming sources and static sources to perform time-series analytics, feed real-time dashboards, and metrics.
+#### [ Process and transform data ]
++ [AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html) is a serverless data integration service for discovering, preparing, moving, and integrating data from multiple sources. Its core capability is ETL. With AWS Glue Studio, you can [visually build ETL jobs](https://docs.aws.amazon.com/glue/latest/dg/author-job-glue.html) that run on the Apache Spark–based serverless engine of AWS Glue, without writing code. AWS Glue Data Quality recommends rules, detects anomalies with machine learning, and provides more than 25 built-in rule types.
++ [Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html) runs open-source frameworks such as Apache Spark, Apache Hive, Trino, and Apache Flink. You can deploy it on Amazon EC2, on Amazon EKS, on AWS Outposts, or as EMR Serverless. [Amazon EMR Serverless](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless.html) runs applications that use frameworks such as Spark and Hive without clusters to configure, optimize, secure, or operate.
++ [Amazon Athena for Apache Spark](https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark.html) runs Spark applications interactively without planning, configuring, or managing resources, and scales automatically on demand. You can use notebooks in the Athena console or Amazon SageMaker Unified Studio, or Spark Connect–compatible clients.
++ [Amazon Managed Workflows for Apache Airflow](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html) (Amazon MWAA) orchestrates data pipelines and workflows with Apache Airflow. It scales Airflow workers automatically within limits you set. [Amazon MWAA Serverless](https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/what-is-mwaa-serverless.html) is a deployment option that removes environment management and charges only for workflow run time.
 
 ------
-#### [ Business intelligence ]
-
-[Quick](https://docs.aws.amazon.com/quicksight/latest/user/getting-started.html) gives decision-makers the opportunity to explore and interpret information in an interactive visual environment. In a single data dashboard, Quick can include AWS data, third-party data, big data, spreadsheet data, SaaS data, B2B data, and more. With Quick Q, you can use natural language to ask questions about your data and receive a response. For example, "What are the top-selling categories in California?"
-
-------
-#### [ Search analytics ]
-
-[Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/gsg.html) provisions all the resources for your OpenSearch cluster and launches it. It also automatically detects and replaces failed OpenSearch Service nodes, reducing the overhead associated with self-managed infrastructures. You can use OpenSearch Service direct query to analyze data in Amazon S3 and other AWS services.
+#### [ Query data ]
++ [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html) runs ad hoc SQL queries on data in Amazon S3 without loading it, in formats such as CSV, JSON, Apache Parquet, and Apache ORC. It can run read, time travel, write, and data definition language (DDL) queries on Apache Iceberg tables. **Athena Federated Query** uses data source connectors that run on Lambda to query other sources. Prebuilt connectors include Amazon CloudWatch Logs, Amazon DynamoDB, Amazon DocumentDB, Amazon OpenSearch Service, and JDBC-compliant sources such as MySQL, PostgreSQL, and Amazon Redshift. You can write custom connectors with the Athena Query Federation SDK.
++ [Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html) is a fully managed, petabyte-scale data warehouse, available as provisioned clusters or as Redshift Serverless, which scales compute automatically and charges only when the warehouse is in use. **Amazon Redshift Spectrum** queries structured and semi-structured data in Amazon S3 without loading it into Amazon Redshift tables. **Federated queries** query live data in Amazon RDS for PostgreSQL, Amazon Aurora PostgreSQL, Amazon RDS for MySQL, and Aurora MySQL, and combine it with data in Amazon Redshift and Amazon S3. **Amazon Q generative SQL** in query editor v2 helps you write SQL from natural language.
++ **Trino on Amazon EMR** runs ANSI SQL–compliant interactive queries, most commonly complex SQL on large datasets in Amazon S3. For more information, see [Trino](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-trino.html) in the Amazon EMR documentation.
++ [Amazon OpenSearch Service direct query](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/direct-query-s3-overview.html) analyzes data in Amazon S3 without first copying it into OpenSearch. It requires OpenSearch 2.13 or later and the AWS Glue Data Catalog.
 
 ------
-#### [ Data governance ]
-
-With [Amazon DataZone](https://docs.aws.amazon.com/datazone/latest/userguide/getting-started.html), you can manage and govern access to data by using fine-grained controls. These controls help ensure access with the right level of privileges and context. Amazon DataZone simplifies your architecture by integrating data management services, including Amazon Redshift, Athena, Quick, AWS Glue, on-premises sources, and third-party sources.
-
-------
-#### [ Data collaboration ]
-
-[AWS Clean Rooms](https://docs.aws.amazon.com/clean-rooms/latest/userguide/setting-up.html) is a secure collaboration workspace where you can analyze collective datasets without providing access to the raw data. You can collaborate with other companies by choosing the partners with whom you want to collaborate, selecting their datasets, and configuring privacy-enhancing controls for those partners. When you run queries, AWS Clean Rooms reads data from that data's original location and applies built-in analysis rules to help you maintain control over that data.
+#### [ Process streaming data ]
++ [Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com/managed-flink/latest/java/what-is.html) processes and analyzes streaming data with Java, Scala, Python, or SQL for time-series analytics, real-time dashboards, and metrics.
++ **Apache Flink on Amazon EMR** runs real-time stream processing as a YARN application on transient or long-running clusters, with connectors for sources including Amazon Kinesis Data Streams and Apache Kafka. For more information, see [Apache Flink](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-flink.html) in the Amazon EMR documentation.
++ **AWS Glue streaming ETL** runs continuous jobs on Apache Spark Structured Streaming. It ingests from Amazon Kinesis Data Streams, Apache Kafka, and Amazon MSK, then cleans and transforms the data and loads it into Amazon S3 or JDBC data stores. For more information, see [AWS Glue components](https://docs.aws.amazon.com/glue/latest/dg/components-overview.html).
++ **Amazon Redshift streaming ingestion** (see *Ingest and replicate data*) makes streams queryable in the data warehouse, and you can filter and aggregate in the materialized-view definition.
 
 ------
-#### [ Data lake and data warehouse ]
-+ [The next generation of Amazon SageMaker](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/lakehouse-get-started.html) is fully compatible with Apache Iceberg, allowing you to unify data across Amazon Simple Storage Service (Amazon S3) data lakes and Amazon Redshift data warehouses. This enables building analytics and AI and machine learning (ML) applications on a single data copy. Through zero-ETL integrations, you can stream data from operational sources in near real-time, run federated queries across multiple sources, and access data with Apache Iceberg–compatible tools. You can secure your data by defining fine-grained permissions that are enforced across all your analytics and ML tools and engines.
-+ [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html) can store and protect virtually any amount and kind of data, which you can use for your data lake foundation. Amazon S3 provides management features so that you can optimize, organize, and configure access to your data to meet your specific business, organizational, and compliance requirements. Amazon S3 Tables provide S3 storage that’s optimized for analytics workloads. Using standard SQL statements, you can query your tables with query engines that support Iceberg, such as Athena, Amazon Redshift, and Apache Spark.
-+ [Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/gsg/new-user.html) is a fully managed, petabyte-scale data warehouse service. Amazon Redshift can be connected to a data lakehouse in Amazon SageMaker, allowing you to use its powerful SQL analytic capabilities on your unified data across Amazon Redshift data warehouses and Amazon S3 data lakes. You can also use Amazon Q in Amazon Redshift, which simplifies SQL authoring through natural language.
+#### [ Store data in data lakes and data warehouses ]
++ [Amazon Simple Storage Service](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) (Amazon S3) is the foundation for data lakes on AWS. **Amazon S3 Tables** store tabular data in Apache Iceberg format in table buckets, which provide higher transactions per second and better query throughput than self-managed tables in general purpose buckets.
++ **Apache Iceberg** is supported by Amazon EMR, Amazon Athena, Amazon Redshift, AWS Glue, and Amazon SageMaker, so multiple engines can work with the same tables. For more information, see [Modern data lakes](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/data-lakes.html) in *Using Apache Iceberg on AWS*.
++ **Amazon Redshift** stores structured and semi-structured data in a managed data warehouse (see *Query data*).
+
+------
+#### [ Visualize and search data ]
++ [AWS Quick Sight](https://docs.aws.amazon.com/quick/latest/userguide/what-is.html) is the interactive data visualization and business intelligence capability of AWS Quick. You can connect to data sources, build dashboards, and embed analytics in applications. Supported sources include Amazon Athena, Amazon Aurora, Amazon OpenSearch Service, Amazon Redshift, Amazon Redshift Spectrum, Amazon S3, Amazon S3 Tables, Google BigQuery, and many relational databases.
++ [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html) supports log analytics workloads, such as monitoring application performance, troubleshooting errors, and analyzing user behavior from logs. Direct query analyzes data in Amazon S3 without copying it (see *Query data*).
+
+------
+#### [ Govern and collaborate ]
++ [Amazon SageMaker Catalog](https://docs.aws.amazon.com/datazone/latest/userguide/sagemaker-datazone.html), built on Amazon DataZone, centrally manages data assets. You can catalog, search, and discover data, generate metadata with generative AI, and enforce access policies with a single permission model in Amazon SageMaker Unified Studio. The Amazon DataZone guide explains when to use SageMaker or Amazon DataZone.
++ [AWS Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/data-filtering.html) manages fine-grained permissions on AWS Glue Data Catalog tables, including column-level, row-level, and cell-level security through data filters. AWS Glue, Amazon Athena, Amazon Redshift Spectrum, and Amazon EMR honor Lake Formation permissions.
++ [AWS Clean Rooms](https://docs.aws.amazon.com/clean-rooms/latest/userguide/what-is.html) lets companies analyze combined datasets without sharing raw data. When you run queries, AWS Clean Rooms reads data from its original location. Collaborators control queries with analysis rules and can turn on differential privacy through a custom analysis rule.
 
 ------
 
 ## Consider criteria for AWS analytics services
 <a name="consider"></a>
 
-There are many reasons for building data analytics on AWS. You might need to support a greenfield or pilot project as a first step in your cloud migration journey. Alternatively, you might be migrating an existing workload with as little disruption as possible. Whatever your goal, the following considerations can be useful in making your choice.
+The following criteria are the ones most likely to change which AWS analytics service you choose. For each one, consider your current workload and how you expect it to grow. Most organizations end up using several services, so you might apply these criteria separately to each part of your pipeline.
 
 ------
-#### [ Assess data sources and data types ]
+#### [ Where your data comes from and what form it's in ]
 
-Analyze available data sources and data types to gain a comprehensive understanding of data diversity, frequency, and quality. Understand any potential challenges in processing and analyzing the data. This analysis is crucial because:
-+ Data sources are diverse and come from various systems, applications, devices, and external platforms.
-+ Data sources have unique structure, format, and frequency of data updates. Analyzing these sources helps in identifying suitable data collection methods and technologies.
-+ Analyzing data types, such as structured, semi-structured, and unstructured data determines the appropriate data processing and storage approaches.
-+ Analyzing data sources and types facilitates data quality assessment, helps you anticipate potential data quality issues—missing values, inconsistencies, or inaccuracies.
-
-------
-#### [ Data processing requirements ]
-
-Determine data processing requirements for how data is ingested, transformed, cleansed, and prepared for analysis. Key considerations include:
-+ **Data transformation:** Determine the specific transformations needed to make the raw data suitable for analysis. This involves tasks like data aggregation, normalization, filtering, and enrichment.
-+ **Data cleansing:** Assess data quality and define processes to handle missing, inaccurate, or inconsistent data. Implement data cleansing techniques to ensure high-quality data for reliable insights.
-+ **Processing frequency:** Determine whether real-time, near real-time, or batch processing is required based on the analytical needs. Real-time processing enables immediate insights, while batch processing may be sufficient for periodic analyses.
-+ **Scalability and throughput:** Evaluate the scalability requirements for handling data volumes, processing speed, and the number of concurrent data requests. Ensure that the chosen processing approach can accommodate future growth.
-+ **Latency:** Consider the acceptable latency for data processing and the time it takes from data ingestion to analysis results. This is particularly important for real-time or time-sensitive analytics.
+Your data sources narrow your options more than any other factor.
++ **Operational databases and SaaS applications.** If your data is in databases such as Amazon Aurora, Amazon RDS, or Amazon DynamoDB, or in applications such as Salesforce, SAP, ServiceNow, or Zendesk, check whether a zero-ETL integration supports your source. Amazon Redshift and AWS Glue both offer zero-ETL integrations, and their supported sources and targets differ. If no zero-ETL integration covers your source, or you need to transform data on the way in, AWS Glue provides connections to a wide range of AWS, database, and SaaS sources.
++ **Files in Amazon S3.** If your data is already in Amazon S3 in formats such as CSV, JSON, Apache Parquet, or Apache ORC, you can query it in place with [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html) without loading it. Amazon Redshift Spectrum can also query data in Amazon S3 without loading it into Amazon Redshift tables.
++ **Event streams.** If data arrives continuously, such as clickstreams, application logs, or IoT telemetry, you need a streaming ingestion service such as [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/introduction.html) or [Amazon MSK](https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html). If your teams already use Apache Kafka, Amazon MSK runs open-source Kafka, so existing applications and tools work without changes.
++ **Data you can't or don't want to move.** If data must stay in its source system, use federated query. Athena Federated Query uses connectors to query relational, non-relational, object, and custom data sources. Amazon Redshift federated queries work with Amazon RDS and Aurora PostgreSQL and MySQL.
++ **Semi-structured data.** Athena queries semi-structured formats such as JSON in Amazon S3. Amazon Redshift stores and queries semi-structured data natively with the SUPER data type.
 
 ------
-#### [ Storage requirements ]
+#### [ How quickly you need results ]
 
-Determine storage needs by determining how and where data is stored throughout the analytics pipeline. Important considerations include:
-+ **Data volume:** Assess the amount of data being generated and collected, and estimate future data growth to plan for sufficient storage capacity.
-+ **Data retention:** Define the duration for which data should be retained for historical analysis or compliance purposes. Determine the appropriate data retention policies.
-+ **Data access patterns:** Understand how data will be accessed and queried to choose the most suitable storage solution. Consider read and write operations, data access frequency, and data locality.
-+ **Data security:** Prioritize data security by evaluating encryption options, access controls, and data protection mechanisms to safeguard sensitive information.
-+ **Cost optimization:** Optimize storage costs by selecting the most cost-effective storage solutions based on data access patterns and usage.
-+ **Integration with analytics services:** Ensure seamless integration between the chosen storage solution and the data processing and analytics tools in the pipeline.
+Decide whether each workload is batch, interactive, or streaming. Different services fit each one.
++ **Batch.** Scheduled jobs that process large volumes of data periodically, such as nightly ETL. AWS Glue ETL jobs and Amazon EMR are common choices, orchestrated with Amazon Managed Workflows for Apache Airflow. For jobs that aren't time-sensitive, AWS Glue offers a flexible execution class, while the standard class suits time-sensitive workloads that need fast startup.
++ **Interactive.** Analysts and dashboards that expect answers in seconds. Amazon Athena runs ad hoc SQL on Amazon S3, and Amazon Redshift serves repeated queries from many users. With concurrency scaling, Amazon Redshift supports thousands of concurrent users and queries with consistently fast performance. For interactive Spark, Athena for Apache Spark runs without resources to manage and scales on demand.
++ **Streaming.** Data processed continuously as it arrives. Options include Amazon Managed Service for Apache Flink, Apache Flink on Amazon EMR, and AWS Glue streaming ETL. To query streaming data in your data warehouse, Amazon Redshift streaming ingestion loads streams directly into materialized views, without staging data in Amazon S3.
++ **Near real-time replication.** If you need fresh copies of operational data rather than continuous stream processing, zero-ETL integrations replicate changes after an initial load.
 
 ------
-#### [ Types of data ]
+#### [ How your teams prefer to work ]
 
-When deciding on analytics services for the collection and ingestion of data, consider various types of data that are relevant to your organization's needs and objectives. Common types of data that you might need to consider includes:
-+ **Transactional data:** Includes information about individual interactions or transactions, such as customer purchases, financial transactions, online orders, and user activity logs.
-+ **File-based data:** Refers to structured or unstructured data that is stored in files, such as log files, spreadsheets, documents, images, audio files, and video files. Analytics services should support the ingestion of different file formats.
-+ **Event data:** Captures significant occurrences or incidents, such as user actions, system events, machine events, or business events. Events can include any data that is arriving in high velocity that is captured for onstream or downstream processing.
-
-------
-#### [ Operational considerations ]
-
-Operational responsibility is shared between you, and AWS, with the division of responsibility varying across different levels of modernization. You have the option of self-managing your analytics infrastructure on AWS or leveraging the numerous serverless analytics services to lesson your infrastructure management burden.
-
-Self-managed options grant users greater control over the infrastructure and configurations, but they require more operational effort.
-
-Serverless options abstract away much of the operational burden, providing automatic scalability, high availability, and robust security features, allowing users to focus more on building analytical solutions and driving insights rather than managing infrastructure and operational tasks. Consider these benefits of serverless analytics solutions:
-+ **Infrastructure abstraction:** Serverless services abstract infrastructure management, relieving users from provisioning, scaling, and maintenance tasks. AWS handles these operational aspects, reducing management overhead.
-+ **Auto-scaling and performance:** Serverless services automatically scale resources based on workload demands, ensuring optimal performance without manual intervention.
-+ **High availability and disaster recovery:** AWS provides high availability for serverless services. AWS manages data redundancy, replication, and disaster recovery to enhance data availability and reliability.
-+ **Security and compliance:** AWS manages security measures, data encryption, and compliance for serverless services, adhering to industry standards and best practices.
-+ **Monitoring and logging:** AWS offers built-in monitoring, logging, and alerting capabilities for serverless services. Users can access detailed metrics and logs through Amazon CloudWatch.
+The skills and tools your teams already use are often the deciding factor between services that overlap.
++ **SQL.** Analysts who work in SQL can use Amazon Athena or Amazon Redshift. Trino on Amazon EMR is also ANSI SQL–compliant. In Amazon Redshift, Amazon Q generative SQL helps write queries from natural language.
++ **Code (Python, Scala, Java).** Data engineers who write Spark code can use AWS Glue, Amazon EMR, or Athena for Apache Spark. Stream processing in Amazon Managed Service for Apache Flink supports Java, Scala, Python, and SQL.
++ **Visual tools.** AWS Glue Studio lets you build ETL jobs visually without writing Spark code. Business users can explore data in AWS Quick Sight dashboards and ask questions in natural language in AWS Quick.
++ **Mixed teams.** If data engineers, analysts, and data scientists need to work on the same data, Amazon SageMaker Unified Studio brings SQL analytics, big data processing, and model development into one environment.
 
 ------
-#### [ Type of workload ]
+#### [ How much infrastructure you want to manage ]
 
-When building a modern analytics pipeline, deciding on the types of workload to support is crucial to meet different analytical needs effectively. Key decision points to consider for each type of workload includes:
+Many analytics services offer both serverless and provisioned options. Serverless options remove capacity planning. Provisioned options give you more control over configuration, performance tuning, and cost for steady workloads.
 
-**Batch workload**
-+ **Data volume and frequency:** Batch processing is suitable for large volumes of data with periodic updates.
-+  **Data latency:** Batch processing might introduce some delay in delivering insights compared to real-time processing.
+| Job | Serverless options | Options with more configuration control |
+| --- | --- | --- |
+| SQL on the data lake | Amazon Athena | Trino on Amazon EMR |
+| Data warehouse | Amazon Redshift Serverless | Amazon Redshift provisioned clusters |
+| Spark and big data processing | AWS Glue, EMR Serverless, Athena for Apache Spark | Amazon EMR on Amazon EC2, on Amazon EKS, or on AWS Outposts |
+| Stream ingestion | Amazon Kinesis Data Streams on-demand mode, Amazon MSK Serverless, Amazon Data Firehose | Amazon Kinesis Data Streams provisioned mode, Amazon MSK provisioned clusters |
+| Workflow orchestration | Amazon MWAA Serverless | Amazon MWAA provisioned |
+| Search and log analytics | OpenSearch Service Serverless | Amazon OpenSearch Service domains |
 
-**Interactive analysis**
-+ **Data query complexity:** Interactive analysis requires low-latency responses for quick feedback.
-+ **Data visualization:** Evaluate the need for interactive data visualization tools to enable business users to explore data visually.
-
-**Streaming workloads**
-+ **Data velocity and volume:** Streaming workloads require real-time processing to handle high-velocity data.
-+ **Data windowing:** Define data windowing and time-based aggregations for streaming data to extract relevant insights.
-
-------
-#### [ Type of analysis needed ]
-
-Clearly define the business objectives and the insights you aim to derive from the analytics. Different types of analytics serve different purposes. For example:
-+ Descriptive analytics is ideal for gaining a historical overview
-+ Diagnostic analytics helps understand the reasons behind past events
-+ Predictive analytics forecasts future outcomes
-+ Prescriptive analytics provides recommendations for optimal actions
-
-Match your business goals with the relevant types of analytics. Here are some key decision criteria to help you choose the right types of analytics:
-+ **Data availability and quality:** Descriptive and diagnostic analytics rely on historical data, while predictive and prescriptive analytics require sufficient historical data and high-quality data to build accurate models.
-+ **Data volume and complexity:** Predictive and prescriptive analytics require substantial data processing and computational resources. Ensure that your infrastructure and tools can handle the data volume and complexity.
-+ **Decision complexity:** If decisions involve multiple variables, constraints, and objectives, prescriptive analytics may be more suitable to guide optimal actions.
-+ **Risk tolerance:** Prescriptive analytics may provide recommendations, but come with associated uncertainties. Ensure that decision-makers understand the risks associated with the analytics outputs.
+A serverless option fits when workloads are variable or unpredictable, or when you don't have dedicated staff to operate clusters. For example, Amazon Kinesis Data Streams on-demand mode scales automatically with no capacity planning. A provisioned option fits when you need specific instance types or framework versions. Amazon EMR, for example, lets you select instance types and purchasing options.
 
 ------
-#### [ Evaluate scalability and performance ]
+#### [ Open formats and multi-engine access ]
 
-Assess the scalability and performance needs of the architecture. The design must handle increasing data volumes, user demands, and analytical workloads. Key decision factors to consider includes:
-+ **Data volume and growth:** Assess the current data volume and anticipate future growth.
-+ **Data velocity and real-time requirements:** Determine if the data needs to be processed and analyzed in real-time or near real-time.
-+ **Data processing complexity:** Analyze the complexity of your data processing and analysis tasks. For computationally intensive tasks, services such as Amazon EMR provide a scalable and managed environment for big data processing.
-+ **Concurrency and user load:** Consider the number of concurrent users and the level of user load on the system.
-+ **Auto-scaling capabilities:** Consider services that offer auto-scaling capabilities, allowing resources to automatically scale up or down based on demand. This ensures efficient resource utilization and cost optimization.
-+ **Geographic distribution:** Consider services with global replication and low-latency data access if your data architecture needs to be distributed across multiple regions or locations.
-+ **Cost-performance trade-off:** Balance the performance needs with cost considerations. Services with high performance may come at a higher cost.
-+ **Service-level agreements (SLAs):** Check the SLAs provided by AWS services to ensure they meet your scalability and performance expectations.
+If different teams use different engines on the same data, store it in an open table format. Apache Iceberg is supported by Amazon EMR, Amazon Athena, Amazon Redshift, AWS Glue, and Amazon SageMaker. Athena supports read, time travel, write, and DDL queries on Iceberg tables.
++ **Amazon S3 Tables** store data in Iceberg format in table buckets, which provide higher transactions per second and better query throughput than self-managed tables in general purpose buckets.
++ **The lakehouse architecture of SageMaker** organizes data from Amazon S3, Amazon Redshift, databases, and applications into catalogs, and mounts them as databases in Amazon Redshift so they can be queried together.
++ **The AWS Glue Data Catalog** stores table metadata that Athena uses to find and query data in Amazon S3.
 
 ------
-#### [ Data governance ]
+#### [ Governance and access control ]
 
-Data governance is the set of processes, policies, and controls you need to implement to ensure effective management, quality, security, and compliance of your data assets. Key decision points to consider includes:
-+ **Data retention policies:** Define data retention policies based on regulatory requirements and business needs and establish processes for secure data disposal when it is no longer needed.
-+ **Audit trail and logging:** Decide on the logging and auditing mechanisms to monitor data access and usage. Implement comprehensive audit trails to track data changes, access attempts, and user activities for compliance and security monitoring.
-+ **Compliance requirements:** Understand the industry-specific and geographic data compliance regulations that apply to your organization. Ensure that the data architecture aligns with these regulations and guidelines.
-+ **Data classification:** Classify data based on its sensitivity and define appropriate security controls for each data class.
-+ **Disaster recovery and business continuity:** Plan for disaster recovery and business continuity to ensure data availability and resilience in case of unexpected events or system failures.
-+ **Third-party data sharing:** If sharing data with third-party entities, implement secure data sharing protocols and agreements to protect data confidentiality and prevent data misuse.
+Decide where access policies are defined and how fine-grained they need to be.
++ **Central catalog and discovery.** [Amazon SageMaker Catalog](https://docs.aws.amazon.com/datazone/latest/userguide/sagemaker-datazone.html), built on Amazon DataZone, lets users catalog, search, and discover data and enforce access policies with one permission model.
++ **Fine-grained permissions on data lake tables.** [AWS Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/data-filtering.html) provides column-level, row-level, and cell-level security through data filters. AWS Glue, Amazon Athena, Amazon Redshift Spectrum, and Amazon EMR honor Lake Formation permissions. Check which engines your teams use and confirm that each one is integrated.
++ **Federated sources.** Federated catalogs in the lakehouse architecture of SageMaker apply fine-grained permissions at the catalog, database, table, and column levels, managed centrally through Lake Formation. Supported sources include Amazon Redshift, Amazon DynamoDB, Amazon DocumentDB, Aurora, MySQL, PostgreSQL, SQL Server, Oracle, Snowflake, Google BigQuery, and Microsoft Azure SQL.
++ **Sharing with other organizations.** If you need to analyze data with partners without sharing raw data, [AWS Clean Rooms](https://docs.aws.amazon.com/clean-rooms/latest/userguide/what-is.html) reads data from its original location when you run queries, without moving it out of AWS. Analysis rules enforce query and output controls, and differential privacy can be turned on through a custom analysis rule.
 
 ------
-#### [ Security ]
+#### [ Network security ]
 
-The security of data in the analytics pipeline involves protecting data at every stage of the pipeline to ensure its confidentiality, integrity, and availability. Key decision points to consider includes:
-+ **Access control and authorization:** Implement robust authentication and authorization protocols to ensure that only authorized users can access specific data resources.
-+ **Data encryption:** Choose appropriate encryption methods for data stored in databases, data lakes, and during data movement between different components of the architecture.
-+ **Data masking and anonymization:** Consider the need for data masking or anonymization to protect sensitive data, such as PII or sensitive business data, while allowing certain analytical processes to continue.
-+ **Secure data integration:** Establish secure data integration practices to ensure that data flows securely between different components of the architecture, avoiding data leaks or unauthorized access during data movement.
-+ **Network isolation:** Consider services that support [Amazon VPC Endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/concepts.html) to avoid exposing resources to the public internet.
+If your security requirements prohibit traffic over the public internet, confirm that each service supports private connectivity. For example, Amazon Athena, AWS Glue, and Amazon Redshift support interface Amazon VPC endpoints powered by AWS PrivateLink. Check the security chapter of each service's documentation for its encryption options and network controls.
 
 ------
-#### [ Plan for integration and data flows ]
+#### [ Cost model ]
 
-Define the integration points and data flows between various components of the analytics pipeline to ensure seamless data flow and interoperability. Key decision points to consider includes:
-+ **Data source integration:** Identify the data sources from which data will be collected, such as databases, applications, files, or external APIs. Decide on the data ingestion methods (batch, real-time, event-based) to bring data into the pipeline efficiently and with minimal latency.
-+ **Data transformation:** Determine the transformations required to prepare data for analysis. Decide on the tools and processes to clean, aggregate, normalize, or enrich the data as it moves through the pipeline.
-+ **Data movement architecture:** Choose the appropriate architecture for data movement between pipeline components. Consider batch processing, stream processing, or a combination of both based on the real-time requirements and data volume.
-+ **Data replication and sync:** Decide on data replication and synchronization mechanisms to keep data up-to-date across all components. Consider real-time replication solutions or periodic data syncs depending on data freshness requirements.
-+ **Data quality and validation:** Implement data quality checks and validation steps to ensure the integrity of data as it moves through the pipeline. Decide on the actions to be taken when data fails validation, such as alerting or error handling.
-+ **Data security and encryption:** Determine how data will be secured during transit and at rest. Decide on the encryption methods to protect sensitive data throughout the pipeline, considering the level of security required based on data sensitivity.
-+ **Scalability and resilience:** Ensure that the data flow design allows for horizontal scalability and can handle increased data volumes and traffic.
+Analytics services are priced differently. Match the pricing model to your usage pattern.
 
-------
-#### [ Architect for cost optimization ]
+| Service | How you pay | Fits best when |
+| --- | --- | --- |
+| Amazon Athena | Per query, based on data scanned, or through capacity reservations that provide dedicated processing capacity in Data Processing Units (DPUs). You can use both in the same account. | Ad hoc or intermittent queries |
+| Amazon Redshift Serverless | Compute in Redshift Processing Units (RPUs), with no charges while the warehouse is idle. Reservations of RPUs for one year offer discounts of up to 24 percent. | Variable warehouse workloads |
+| AWS Glue | Per DPU for the time a job runs, with no charge for startup or shutdown. One DPU provides 4 vCPUs and 16 GB of memory. | Scheduled or event-driven ETL |
+| Amazon EMR Serverless | For the vCPU, memory, and storage your applications use. | Spark and Hive jobs without cluster management |
+| Amazon EMR on Amazon EC2 | For the instances in your cluster. Task nodes, which don't store HDFS data, are well suited to Spot Instances. | Long-running or highly tuned clusters |
 
-Building your analytics pipeline on AWS provides various cost optimization opportunities. To ensure cost efficiency, consider the following strategies:
-+ **Resource sizing and selection:** Right-size your resources based on actual workload requirements. Choose AWS services and instance types that match the workloads performance needs while avoiding overprovisioning.
-+ **Auto-scaling:** Implement auto-scaling for services that experience varying workloads. Auto-scaling dynamically adjusts the number of instances based on demand, reducing costs during low-traffic periods.
-+ **Spot Instances:** Use Amazon EC2 Spot Instances for non-critical and fault-tolerant workloads. Spot Instances can significantly reduce costs compared to on-demand instances.
-+ **Reserved instances:** Consider purchasing AWS Reserved Instances to achieve significant cost savings over on-demand pricing for stable workloads with predictable usage.
-+ **Data storage tiering:** Optimize data storage costs by using different storage classes based on data access frequency.
-+ **Data lifecycle policies:** Establish data lifecycle policies to automatically move or delete data based on its age and usage patterns. This helps manage storage costs and keeps data storage aligned with its value.
+To reduce data lake query costs, partition data and store it in compressed, columnar formats so that queries scan less data. For current prices, see each service's pricing page.
 
 ------
 
 ## Choose AWS analytics services
 <a name="choose"></a>
 
-Now that you know the criteria to evaluate your analytics needs, you are ready to choose which AWS analytics services are right for your organizational needs. The following table aligns sets of services with common capabilities and business goals.
+Many AWS analytics services share capabilities. For example, Amazon Athena, Amazon Redshift, and Amazon EMR can all run SQL on data in Amazon S3, and AWS Glue, Amazon EMR, and Athena can all run Apache Spark. The right choice depends on how your teams prefer to work (SQL, code, or visual tools), how much infrastructure you want to manage (serverless or clusters you configure), how quickly you need results (batch, interactive, or streaming), and where your data lives today.
 
-- ****Unified analytics and AI****
-  - **What is it optimized for?:** **Analytics and AI development**<br />Optimized for using a single development environment, Amazon SageMaker Unified Studio, to access data, analytics, and AI capabilities.
-  - **Services:** [Amazon SageMaker](https://docs.aws.amazon.com/next-generation-sagemaker)
+Each entry that follows describes a common need. It names the service to start with, other services that support the same need, and when to choose them. A single architecture often uses several of these services together.
 
-- ** **Data processing** **
-  - **What is it optimized for?:** **Interactive analytics**<br />Optimized for performing real-time data analysis and exploration, which allows users to interactively query and visualize data. / **Services:** [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html)
-  - **What is it optimized for?:** **Big data processing**<br />Optimized for processing, moving, and transforming large amounts of data. / **Services:** [Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html)
-  - **What is it optimized for?:** **Data catalog**<br />Optimized for providing detailed information about the available data, its structure, characteristics, and relationships. / **Services:** [AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html)
-  - **What is it optimized for?:** **Workflow orchestration**<br />Optimized for creating, scheduling, and monitoring data workflows using Apache Airflow to coordinate analytics processes and ETL jobs. / **Services:** [Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html)
+**Choosing an analytics service by need**
 
-- ****Data streaming****
-  - **What is it optimized for?:** **Apache Kafka processing of streaming data**<br />Optimized for using Apache Kafka data-plane operations and running open source versions of Apache Kafka.  / **Services:** [Amazon MSK](https://docs.aws.amazon.com/msk/latest/developerguide/getting-started.html)
-  - **What is it optimized for?:** **Real-time processing**<br />Optimized for rapid and continuous data intake and aggregation, including IT infrastructure log data, application logs, social media, market data feeds, and web clickstream data. / **Services:** [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/introduction.html)
-  - **What is it optimized for?:** **Real-time streaming data delivery**<br />Optimized for delivering real-time streaming data to destinations such as Amazon S3, Amazon Redshift, OpenSearch Service, Splunk, Apache Iceberg Tables, and any custom HTTP endpoint or HTTP endpoints owned by supported third-party service providers. / **Services:** [Amazon Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html)
-  - **What is it optimized for?:** **Building Apache Flink applications**<br />Optimized for using Java, Scala, Python, or SQL to process and analyze streaming data. / **Services:** [Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com/msk/latest/developerguide/getting-started.html)
-
-- ****Business intelligence****
-  - **What is it optimized for?:** **Dashboards and visualizations**<br />Optimized for visually representing complex datasets, and providing natural language query of your data.
-  - **Services:** [Quick](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)
-
-- ****Search analytics****
-  - **What is it optimized for?:** **Managed OpenSearch clusters**<br />Optimized for log analytics, real-time application monitoring, and clickstream analysis.
-  - **Services:** [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html)
-
-- ****Data governance****
-  - **What is it optimized for?:** **Managing data access**<br />Optimized for setting up the proper management, availability, usability, integrity, and security of data throughout its lifecycle.
-  - **Services:** [Amazon DataZone](https://docs.aws.amazon.com/datazone/latest/userguide/what-is-datazone.html)
-
-- ****Data collaboration****
-  - **What is it optimized for?:** **Secure data clean rooms**<br />Optimized for collaborating with other companies without sharing raw underlying data.
-  - **Services:** [AWS Clean Rooms](https://docs.aws.amazon.com/clean-rooms/latest/userguide/what-is.html)
-
-- ****Data lake and warehouse****
-  - **What is it optimized for?:** **Unified access to data lakes and data warehouses**<br />Built on a lakehouse architecture to optimize for unifying data access across Amazon S3 data lakes, Amazon Redshift data warehouses, operational databases, and third-party and federated data sources. / **Services:** [Amazon SageMaker](https://docs.aws.amazon.com/next-generation-sagemaker)
-  - **What is it optimized for?:** **Object storage for data lakes**<br />Optimized for providing a data lake foundation with virtually unlimited scalability and high durability.  / **Services:** [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
-  - **What is it optimized for?:** **Data warehousing**<br />Optimized for centrally storing, organizing, and retrieving large volumes of structured and sometimes semi-structured data from various sources within an organization. / **Services:** [Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html)
+| Your need | Start with | Also consider | When to choose |
+| --- | --- | --- | --- |
+| Build analytics and AI in one environment | [Amazon SageMaker Unified Studio](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/getting-started.html) | Individual services, for teams that work within one service | Start here for one environment spanning model development, generative AI, big data processing, and SQL analytics. Use individual services when a team works within one. |
+| Query data in your data lake with SQL | [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html) | [Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html), [Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html) (Trino) | Athena for serverless SQL on Amazon S3, paying per query. Amazon Redshift when many users query at once or you join lake and warehouse tables. Trino on Amazon EMR for an ANSI SQL engine on clusters you configure. |
+| Run a data warehouse for business intelligence (BI) and reporting | Amazon Redshift | Amazon Athena | Amazon Redshift for a managed, petabyte-scale warehouse. Athena when queries are ad hoc or infrequent and data is already in Amazon S3. |
+| Transform data and build ETL pipelines | [AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html) | Amazon EMR, Athena for Apache Spark, [Amazon Managed Workflows for Apache Airflow](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html) (orchestration) | AWS Glue for serverless visual ETL. Amazon EMR for open-source frameworks with instance control. Athena for Apache Spark for interactive notebooks. Amazon Managed Workflows for Apache Airflow to orchestrate pipelines. |
+| Replicate operational and SaaS data without building pipelines | Zero-ETL integrations (AWS Glue, Amazon Redshift) | AWS Glue ETL, when you need transformations | Zero-ETL to make operational and application data available without pipelines. AWS Glue ETL when data must be transformed first. |
+| Query data where it lives | Federated query (Amazon Athena, Amazon Redshift) | Lakehouse architecture of SageMaker | Federated query to analyze data in place without copying it. Lakehouse architecture of SageMaker to catalog and govern federated sources centrally. |
+| Ingest streaming data | [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/introduction.html), [Amazon MSK](https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html) | [Amazon Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html), Amazon Redshift streaming ingestion | Amazon Kinesis Data Streams for real-time collection; Amazon MSK when you use Apache Kafka. Amazon Data Firehose to deliver streams without consumer applications; Amazon Redshift streaming ingestion for low-latency data in the warehouse. |
+| Process streaming data | [Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com/managed-flink/latest/java/what-is.html) | Amazon EMR (Flink), AWS Glue streaming ETL | Amazon Managed Service for Apache Flink for stream processing in Java, Scala, Python, or SQL. Flink on Amazon EMR to run alongside other cluster applications; AWS Glue streaming ETL for Apache Spark Structured Streaming. |
+| Visualize data and ask questions in natural language | [AWS Quick Sight](https://docs.aws.amazon.com/quick/latest/userguide/what-is.html) | None | AWS Quick Sight for visualization and BI; ask questions in natural language in Quick. |
+| Analyze logs and search data | [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html) | None | Amazon OpenSearch Service for log analytics; direct query analyzes Amazon S3 data without copying it into OpenSearch. |
+| Govern access to data | [Amazon SageMaker Catalog](https://docs.aws.amazon.com/datazone/latest/userguide/sagemaker-datazone.html) (built on Amazon DataZone) | [AWS Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/data-filtering.html) | Amazon SageMaker Catalog to catalog and enforce a single permission model. AWS Lake Formation for column-, row-, or cell-level permissions on AWS Glue Data Catalog tables. |
+| Collaborate with partners without sharing raw data | [AWS Clean Rooms](https://docs.aws.amazon.com/clean-rooms/latest/userguide/what-is.html) | None | AWS Clean Rooms to analyze combined datasets without sharing raw data; enforce controls with analysis rules and optional differential privacy. |
 
 ## Use AWS analytics services
 <a name="use"></a>
 
-You should now have a clear understanding of your business objectives, and the volume and velocity of data you will be ingesting and analyzing to begin building your data pipelines.
-
-To explore how to use and learn more about each of the available services—we have provided a pathway to explore how each of the services work. The following sections provides links to in-depth documentation, hands-on tutorials, and resources to get you started from basic usage to more advanced deep dives.
+The following resources help you start with each service in this guide. For each service, the getting-started resource comes first, followed by resources for the capabilities discussed in the Understand and Choose sections. Services are listed alphabetically.
 
 ------
 #### [ Amazon Athena ]
-+ **Getting started with Amazon Athena**
++ **Get started**
 
-  Learn how to use Amazon Athena to query data and create a table based on sample data stored in Amazon S3, query the table, and check the results of the query.
+  Use Athena to create a table based on sample data stored in Amazon S3, query the table, and check the results.
 
-  [Get started with the tutorial](https://docs.aws.amazon.com/athena/latest/ug/getting-started.html)
-+ **Get started with Apache Spark on Athena**
+  [Get started with Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/getting-started.html)
++ **Work with Apache Iceberg tables**
 
-  Use the simplified notebook experience in Athena console to develop Apache Spark applications using Python or Athena notebook APIs.
+  Run read, time travel, write, and DDL queries on Iceberg tables, and create Iceberg tables for use in Athena.
 
-  [Get started with the tutorial](https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark.html)
-+ **Catalog and govern Athena federated queries with Amazon SageMaker lakehouse architecture**
+  [Query Apache Iceberg tables](https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg.html)
 
-  Learn how to connect to, govern, and run federated queries on data stored in Amazon Redshift, DynamoDB, and Snowflake via the data lakehouse in Amazon SageMaker.
+  [Create Iceberg tables](https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-creating-tables.html)
++ **Available data source connectors**
 
-  [Read the blog](https://aws.amazon.com/blogs/big-data/catalog-and-govern-amazon-athena-federated-queries-with-amazon-sagemaker-lakehouse/)
-+ **Analyzing data in Amazon S3 using Athena**
+  Find the prebuilt connectors you can use with Athena Federated Query to query data outside Amazon S3.
 
-  Explore how to use Athena on logs from Elastic Load Balancers, generated as text files in a pre-defined format. We show you how to create a table, partition the data in a format used by Athena, convert it to Parquet, and compare query performance.
+  [View the available connectors](https://docs.aws.amazon.com/athena/latest/ug/connectors-available.html)
++ **Use Apache Spark in Amazon Athena**
 
-  [Read the blog post](https://aws.amazon.com/blogs/big-data/analyzing-data-in-s3-using-amazon-athena/)
+  Run Spark applications interactively in Athena without planning, configuring, or managing resources.
+
+  [Use Apache Spark in Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark.html)
++ **Use the AWS Glue Data Catalog to connect to your data**
+
+  Learn how Athena uses the AWS Glue Data Catalog to store and find table metadata.
+
+  [Use the AWS Glue Data Catalog to connect to your data](https://docs.aws.amazon.com/athena/latest/ug/data-sources-glue.html)
 
 ------
 #### [ AWS Clean Rooms ]
-+  **Setting up AWS Clean Rooms**
++ **Setting up AWS Clean Rooms**
 
-  Learn how to set up AWS Clean Rooms in your AWS acccount.
+  Set up an AWS account and service roles for AWS Clean Rooms.
 
-   [Read the guide](https://docs.aws.amazon.com/clean-rooms/latest/userguide/setting-up.html)
-+  **Unlock data insights across multi-party datasets using AWS Entity Resolution on AWS Clean Rooms without sharing underlying data**
+  [Set up AWS Clean Rooms](https://docs.aws.amazon.com/clean-rooms/latest/userguide/setting-up.html)
++ **Creating a collaboration**
 
-  Learn how to use preparation and matching to help improve data matching with collaborators.
+  Create a collaboration and invite other members to analyze data together.
 
-   [Read the blog post](https://aws.amazon.com/blogs/industries/unlock-data-insights-across-multi-party-datasets-using-aws-entity-resolution-on-aws-clean-rooms-without-sharing-underlying-data/)
-+  **How differential privacy helps unlock insights without revealing data at the individual-level**
+  [Create a collaboration](https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-collaboration.html)
++ **AWS Clean Rooms Differential Privacy**
 
-  Learn how AWS Clean Rooms Differential Privacy simplifies applying differential privacy and helps protect the privacy of your users.
+  Turn on differential privacy with a custom analysis rule to protect data in query results.
 
-   [Read the blog](https://aws.amazon.com/blogs/industries/how-differential-privacy-helps-unlock-insights-without-revealing-data-at-the-individual-level/)
+  [Learn about differential privacy](https://docs.aws.amazon.com/clean-rooms/latest/userguide/differential-privacy.html)
++ **Best practices for data collaborations**
+
+  Configure analysis rules to enforce query controls and query output controls.
+
+  [Review the best practices](https://docs.aws.amazon.com/clean-rooms/latest/userguide/best-practices.html)
 
 ------
 #### [ Amazon Data Firehose ]
-+  **Tutorial: Create a Firehose stream from console**
++ **Tutorial: Create a Firehose stream from console**
 
-  Learn how to use the AWS Management Console or an AWS SDK to create a Firehose stream to your chosen destination.
+  Use the AWS Management Console or an AWS SDK to create a Firehose stream to your chosen destination.
 
-   [Read the guide](https://docs.aws.amazon.com/firehose/latest/dev/basic-create.html)
-+  **Send data to a Firehose stream**
-
-  Learn how to use different data sources to send data to your Firehose stream.
-
-   [Read the guide](https://docs.aws.amazon.com/firehose/latest/dev/basic-write.html)
-+  **Transform source data in Firehose**
-
-  Learn how to invoke your Lambda function to transform incoming source data and deliver the transformed data to destinations.
-
-   [Read the guide](https://docs.aws.amazon.com/firehose/latest/dev/data-transformation.html)
+  [Create a Firehose stream](https://docs.aws.amazon.com/firehose/latest/dev/basic-create.html)
 
 ------
 #### [ Amazon DataZone ]
-+ **Getting started with Amazon DataZone **
++ **Getting started with Amazon DataZone**
 
-  Learn how to create the Amazon DataZone root domain, obtain the data portal URL, walk through the basic Amazon DataZone workflows for data producers and data consumers.
+  Set up Amazon DataZone and walk through its basic workflows.
 
-  [Get started with the tutorial](https://docs.aws.amazon.com/datazone/latest/userguide/getting-started.html)
-+ **Announcing the general availability of data lineage in the next generation of Amazon SageMaker and Amazon DataZone **
+  [Get started with Amazon DataZone](https://docs.aws.amazon.com/datazone/latest/userguide/getting-started.html)
++ **When to use SageMaker versus Amazon DataZone**
 
-  Learn how Amazon DataZone uses automated lineage capture to focus on automatically collecting and mapping lineage information from AWS Glue and Amazon Redshift.
+  Understand how Amazon SageMaker Catalog, built on Amazon DataZone, relates to Amazon DataZone, and which to use.
 
-  [Read the blog](https://aws.amazon.com/blogs/aws/announcing-the-general-availability-of-data-lineage-in-the-next-generation-of-amazon-sagemaker-and-amazon-datazone/)
+  [Compare SageMaker and Amazon DataZone](https://docs.aws.amazon.com/datazone/latest/userguide/sagemaker-datazone.html)
 
 ------
 #### [ Amazon EMR ]
-+ **Getting started with Amazon EMR**
++ **Tutorial: Getting started with Amazon EMR**
 
-  Learn how to launch a sample cluster using Spark, and how to run a simple PySpark script stored in an Amazon S3 bucket.
+  Set up a cluster to process and analyze data with big data frameworks.
 
-  [Get started with the tutorial](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html)
+  [Get started with Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html)
++ **Getting started with Amazon EMR Serverless**
+
+  Deploy a sample Spark or Hive workload on EMR Serverless.
+
+  [Get started with EMR Serverless](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/getting-started.html)
 + **Getting started with Amazon EMR on Amazon EKS**
 
-  We show you how to get started using Amazon EMR on Amazon EKS by deploying a Spark application on a virtual cluster.
+  Deploy a Spark application on a virtual cluster.
 
-  [Explore the guide](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/getting-started.html)
-+ **Get started with EMR Serverless**
+  [Get started with Amazon EMR on Amazon EKS](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/getting-started.html)
++ **Open-source frameworks on Amazon EMR**
 
-  Explore how Amazon EMR Serverless provides a serverless runtime environment that simplifies the operation of analytics applications that use the latest open source frameworks.
+  Use Flink for stream processing, Trino for interactive SQL, and Iceberg tables on Amazon EMR.
 
-  [Get started with the tutorial](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/getting-started.html)
+  [Apache Flink on Amazon EMR](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-flink.html)
+
+  [Trino on Amazon EMR](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-trino.html)
+
+  [Iceberg on Amazon EMR](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-iceberg.html)
 
 ------
 #### [ AWS Glue ]
-+ **Getting started with AWS Glue DataBrew**
++ **Getting started with AWS Glue**
 
-  Learn how to create your first DataBrew project. You load a sample dataset, run transformations on that dataset, build a recipe to capture those transformations, and run a job to write the transformed data to Amazon S3.
+  Set up AWS Glue, including the permissions it needs.
 
-  [Get started with the tutorial](https://docs.aws.amazon.com/databrew/latest/dg/getting-started.html)
-+ **Transform data with AWS Glue DataBrew**
+  [Get started with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/setting-up.html)
++ **Starting visual ETL jobs in AWS Glue Studio**
 
-  Learn about AWS Glue DataBrew, a visual data preparation tool that makes it easy for data analysts and data scientists to clean and normalize data to prepare it for analytics and machine learning. Learn how to construct an ETL process using AWS Glue DataBrew.
+  Create an ETL job visually in AWS Glue Studio.
 
-  [Get started with the lab](https://catalog.workshops.aws/introduction-to-analytics-on-aws/en-US/lab-guide/transform-glue-databrew)
-+ **AWS Glue DataBrew immersion day**
+  [Start a visual ETL job](https://docs.aws.amazon.com/glue/latest/dg/edit-nodes-chapter.html)
++ **Streaming ETL jobs in AWS Glue**
 
-  Explore how to use AWS Glue DataBrew to clean and normalize data for analytics and machine learning.
+  Create ETL jobs that run continuously and consume data from streaming sources.
 
-  [Get started with the workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/6532bf37-3ad2-4844-bd26-d775a31ce1fa/en-US)
+  [Create a streaming ETL job](https://docs.aws.amazon.com/glue/latest/dg/add-job-streaming.html)
++ **Zero-ETL integrations**
+
+  Find supported zero-ETL sources and targets, and configure an integration.
+
+  [Learn about zero-ETL integrations](https://docs.aws.amazon.com/glue/latest/dg/zero-etl-using.html)
+
+  [Configure a target for a zero-ETL integration](https://docs.aws.amazon.com/glue/latest/dg/zero-etl-target.html)
++ **AWS Glue Data Quality**
+
+  Get recommended data quality rules and detect anomalies in your data.
+
+  [Learn about AWS Glue Data Quality](https://docs.aws.amazon.com/glue/latest/dg/glue-data-quality.html)
 + **Getting started with the AWS Glue Data Catalog**
 
-  Learn how to create your first AWS Glue Data Catalog, which uses an Amazon S3 bucket as your data source.
+  Create your first AWS Glue Data Catalog, with an Amazon S3 bucket as your data source.
 
-  [Get started with the tutorial](https://docs.aws.amazon.com/glue/latest/dg/start-data-catalog.html)
-+ **Data catalog and crawlers in AWS Glue**
-
-  Discover how you can use the information in the Data Catalog to create and monitor your ETL jobs.
-
-  [Explore the guide](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html)
+  [Get started with the AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/start-data-catalog.html)
 
 ------
 #### [ Amazon Kinesis Data Streams ]
 + **Getting started tutorials for Amazon Kinesis Data Streams**
 
-  Learn how to process and analyze real-time stock data.
+  Work through tutorials for ingesting and consuming data with Amazon Kinesis Data Streams.
 
-  [Get started with the tutorials](https://docs.aws.amazon.com/streams/latest/dev/examples.html)
-+ **Architectural patterns for real-time analytics using Amazon Kinesis Data Streams, part 1**
+  [Explore the getting-started tutorials](https://docs.aws.amazon.com/streams/latest/dev/examples.html)
++ **Choose the right mode to stream in**
 
-  Learn about common architectural patterns of two use cases: time series data analysis and event driven microservices.
+  Compare on-demand and provisioned capacity modes.
 
-  [Read the blog](https://aws.amazon.com/blogs/big-data/architectural-patterns-for-real-time-analytics-using-amazon-kinesis-data-streams-part-1/)
-+ **Architectural Patterns for real-time analytics using Amazon Kinesis Data Streams, part 2**
+  [Compare capacity modes](https://docs.aws.amazon.com/streams/latest/dev/how-do-i-size-a-stream.html)
 
-  Learn about AI applications with Kinesis Data Streams in three scenarios: real-time generative business intelligence, real-time recommendation systems, and Internet of Things data streaming and inferencing.
+------
+#### [ AWS Lake Formation ]
++ **Getting started with Lake Formation**
 
-  [Read the blog](https://aws.amazon.com/blogs/big-data/architectural-patterns-for-real-time-analytics-using-amazon-kinesis-data-streams-part-2-ai-applications/)
+  Complete the setup tasks for Lake Formation.
+
+  [Get started with Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/getting-started-setup.html)
++ **Data filtering and cell-level security**
+
+  Use data filters for column-level, row-level, and cell-level security.
+
+  [Set up data filtering](https://docs.aws.amazon.com/lake-formation/latest/dg/data-filtering.html)
++ **AWS service integrations with Lake Formation**
+
+  See which AWS analytics services honor Lake Formation permissions.
+
+  [View the service integrations](https://docs.aws.amazon.com/lake-formation/latest/dg/service-integrations.html)
 
 ------
 #### [ Amazon Managed Service for Apache Flink ]
-+ **What is Amazon Managed Service for Apache Flink?**
++ **Get started with Amazon Managed Service for Apache Flink**
 
-  Understand the fundamental concepts of Amazon Managed Service for Apache Flink.
+  Learn the fundamental concepts and create an application with the DataStream API or the Table API.
 
-  [Explore the guide](https://docs.aws.amazon.com/managed-flink/latest/java/what-is.html)
-+ **Amazon Managed Service for Apache Flink Workshop**
+  [Get started with the DataStream API](https://docs.aws.amazon.com/managed-flink/latest/java/getting-started.html)
 
-  In this workshop, you will learn how to deploy, operate, and scale a Flink application with Amazon Managed Service for Apache Flink.
-
-  [Attend the virtual workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/2437ee74-38ed-4817-94b9-45b920cb168a/en-US)
+  [Get started with the Table API](https://docs.aws.amazon.com/managed-flink/latest/java/gs-table.html)
 
 ------
 #### [ Amazon MSK ]
-+ **Getting Started with Amazon MSK**
++ **Setting up Amazon MSK**
 
-  Learn how to create an Amazon MSK cluster, produce and consume data, and monitor the health of your cluster using metrics.
+  Complete the tasks required before you use Amazon MSK for the first time.
 
-  [Get started with the guide](https://docs.aws.amazon.com/msk/latest/developerguide/getting-started.html)
-+ **Amazon MSK Workshop**
+  [Set up Amazon MSK](https://docs.aws.amazon.com/msk/latest/developerguide/before-you-begin.html)
++ **What is Amazon MSK Serverless?**
 
-  Go deep with this hands-on Amazon MSK workshop.
+  Learn about the serverless cluster type for Amazon MSK.
 
-  [Get started with the workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/c2b72b6f-666b-4596-b8bc-bafa5dcca741/en-US)
+  [Learn about Amazon MSK Serverless](https://docs.aws.amazon.com/msk/latest/developerguide/serverless.html)
 
 ------
 #### [ Amazon MWAA ]
-+ **Getting started with Amazon MWAA**
++ **Get started with Amazon MWAA**
 
-  Learn how to create your first MWAA environment, upload a DAG to Amazon S3, and run your first workflow.
+  Set up an environment with an Amazon VPC, DAG files, and supporting files.
 
-  [Get started with the tutorial](https://docs.aws.amazon.com/mwaa/latest/userguide/get-started.html)
-+ **Building data pipelines with Amazon MWAA**
+  [Get started with Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/get-started.html)
++ **Quick start tutorial**
 
-  Learn how to build end-to-end data pipelines that orchestrate other AWS analytics services like Glue, EMR, and Redshift. This blog post explores a streamlined, configuration-driven approach to orchestrating dbt Core jobs using MWAA and Cosmos, with jobs running transformations on Amazon Redshift.
+  Use an AWS CloudFormation template to create the resources for an Amazon MWAA environment.
 
-  [Read the blog post](https://aws.amazon.com/blogs/big-data/build-data-pipelines-with-dbt-in-amazon-redshift-using-amazon-mwaa-and-cosmos/)
-+ **Amazon MWAA workshop**
-
-  Explore hands-on exercises to learn how to deploy, configure, and use Amazon MWAA for data workflow orchestration.
-
-  [Get started with the workshop](https://catalog.workshops.aws/amazon-mwaa-for-analytics/en-US)
-+ **Best practices for Amazon MWAA**
-
-  Learn architectural patterns and best practices for using Amazon MWAA in your analytics workflows.
-
-  [Read the guide](https://docs.aws.amazon.com/mwaa/latest/userguide/best-practices.html)
+  [Follow the quick start tutorial](https://docs.aws.amazon.com/mwaa/latest/userguide/quick-start.html)
 
 ------
 #### [ OpenSearch Service ]
-+ **Getting started with OpenSearch Service **
++ **Getting started with Amazon OpenSearch Service**
 
-  Learn how to use Amazon OpenSearch Service to create and configure a test domain.
+  Create and work with an OpenSearch Service domain.
 
-  [Get started with the tutorial](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/gsg.html)
-+ **Visualizing customer support calls with OpenSearch Service and OpenSearch Dashboards**
+  [Get started with Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/gsg.html)
++ **Tutorial: Getting started with OpenSearch Service Serverless**
 
-  Discover a full walkthrough of the following situation: a business receives some number of customer support calls and wants to analyze them. What is the subject of each call? How many were positive? How many were negative? How can managers search or review the the transcripts of these calls?
+  Create an OpenSearch Service Serverless search collection.
 
-  [Get started with the tutorial](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/walkthrough.html)
-+ **Getting started with Amazon OpenSearch Serverless workshop**
+  [Get started with OpenSearch Service Serverless](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-getting-started.html)
++ **Directly querying Amazon S3 data**
 
-  Learn how to set up a new Amazon OpenSearch Serverless domain in the AWS console. Explore the different types of search queries available, and design eye-catching visualizations, and learn how you can secure your domain and documents based on assigned user privileges.
+  Analyze data in Amazon S3 from OpenSearch Service without copying it.
 
-  [Get started with the workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/f8d2c175-634d-4c5d-94cb-d83bbc656c6a/en-US)
-+ **Cost Optimized Vector Database: Introduction to Amazon OpenSearch Service quantization techniques**
-
-  Learn how OpenSearch Service supports scalar and product quantization techniques to optimize memory usage and reduce operational costs.
-
-  [Read the blog post](https://aws.amazon.com/blogs/big-data/cost-optimized-vector-database-introduction-to-amazon-opensearch-service-quantization-techniques/)
+  [Set up direct query](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/direct-query-s3-overview.html)
 
 ------
-#### [ Quick ]
-+ **Getting started with Quick data analysis**
+#### [ AWS Quick Sight ]
++ **Getting started with AWS Quick Sight**
 
-  Learn how to create your first analysis. Use sample data to create either a simple or a more advanced analysis. Or you can connect to your own data to create an analysis.
+  Create your first analysis and dashboard in Quick Sight, the data visualization and analysis component of AWS Quick.
 
-  [Explore the guide](https://docs.aws.amazon.com/quicksight/latest/user/getting-started.html)
-+ **Visualizing with Quick**
+  [Get started with AWS Quick Sight](https://docs.aws.amazon.com/quick/latest/userguide/quick-sight-getting-started.html)
++ **Supported data sources**
 
-  Discover the technical side of business intelligence (BI) and data visualization with AWS. Learn how to embed dashboards into applications and websites, and securely manage access and permissions.
+  Find the data sources that you can connect to Quick Sight.
 
-  [Get started with the course](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/41/visualizing-with-quicksight)
-+ **Quick workshops**
-
-  Get a head start on your Quick journey with workshops
-
-  [Get started with the workshops](https://catalog.workshops.aws/quicksight/en-US)
+  [View the supported data sources](https://docs.aws.amazon.com/quick/latest/userguide/supported-data-sources.html)
 
 ------
 #### [ Amazon Redshift ]
-+ **Getting started with Amazon Redshift Serverless**
++ **Get started with Redshift Serverless data warehouses**
 
-  Understand the basic flow of Amazon Redshift Serverless to create serverless resources, connect to Amazon Redshift Serverless, load sample data, and then run queries on the data.
+  Create a Redshift Serverless data warehouse, load sample data, and run queries.
 
-  [Explore the guide](https://docs.aws.amazon.com/redshift/latest/gsg/new-user-serverless.html)
-+ **Amazon Redshift deep dive workshop**
+  [Get started with Redshift Serverless](https://docs.aws.amazon.com/redshift/latest/gsg/new-user-serverless.html)
++ **Create a zero-ETL integration**
 
-  Explore a series of exercises which help users get started using the Amazon Redshift platform.
+  Replicate data from a supported source into Amazon Redshift.
 
-  [Get started with the workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/380e0b8a-5d4c-46e3-95a8-82d68cf5789a/en-US)
+  [Create a zero-ETL integration](https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-setting-up.create-integration.html)
++ **Streaming ingestion to a materialized view**
+
+  Ingest data from Amazon Kinesis Data Streams or Apache Kafka sources directly into Amazon Redshift.
+
+  [Set up streaming ingestion](https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-streaming-ingestion.html)
++ **Querying data with federated queries**
+
+  Query live data in Amazon RDS and Aurora databases from Amazon Redshift.
+
+  [Query data with federated queries](https://docs.aws.amazon.com/redshift/latest/dg/federated-overview.html)
++ **Conduct a proof of concept for Amazon Redshift**
+
+  Plan and run a proof of concept for your workload.
+
+  [Conduct a proof of concept](https://docs.aws.amazon.com/redshift/latest/dg/proof-of-concept-playbook.html)
 
 ------
 #### [ Amazon S3 ]
 + **Getting started with Amazon S3**
 
-  Learn how to create your first DataBrew project. You load a sample dataset, run transformations on that dataset, build a recipe to capture those transformations, and run a job to write the transformed data to Amazon S3.
+  Create a bucket and work with the objects in it.
 
-  [Get started with the guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html)
+  [Get started with Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html)
++ **Tutorial: Getting started with Amazon S3 Tables**
+
+  Create a table bucket and integrate table buckets in your Region with AWS analytics services.
+
+  [Get started with Amazon S3 Tables](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-getting-started.html)
 
 ------
 #### [ Amazon SageMaker ]
-+  **Getting started with SageMaker**
++ **Setting up Amazon SageMaker Unified Studio**
 
-  Learn how to create a project, add members, and use the sample JupyterLab notebook to begin building.
+  Configure Amazon SageMaker Unified Studio, including authentication through AWS IAM Identity Center.
 
-   [Read the guide](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/getting-started.html)
-+  **Introducing the next generation of Amazon SageMaker: The center for all your data, analytics, and AI**
+  [Set up Amazon SageMaker Unified Studio](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/setting-up.html)
++ **Getting started with the lakehouse architecture of Amazon SageMaker**
 
-  Learn how to get started with data processing, model development, and generative AI app development.
+  Find relevant datasets, run SQL queries, and complete other common tasks in the lakehouse.
 
-   [Read the blog](https://aws.amazon.com/blogs/aws/introducing-the-next-generation-of-amazon-sagemaker-the-center-for-all-your-data-analytics-and-ai/)
-+  **What is SageMaker Unified Studio?**
+  [Get started with the lakehouse architecture](https://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/userguide/lakehouse-get-started.html)
++ **How the lakehouse architecture of Amazon SageMaker works**
 
-  Learn about the capabilities of SageMaker Unified Studio and how to access them when you use Amazon SageMaker.
+  Understand how the lakehouse organizes data from different sources into catalogs.
 
-   [Read the guide](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/what-is-sagemaker-unified-studio.html)
-+  **Getting started with the lakehouse architecture of Amazon SageMaker**
-
-  Learn how to create a project and to browse, upload, and query data for your business use cases in Amazon SageMaker.
-
-   [Read the guide](https://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/userguide/lakehouse-get-started.html)
-+  **Data connections in the lakehouse architecture of Amazon SageMaker**
-
-  Learn how the lakehouse architecture provides a unified approach to managing data connections across AWS services and enterprise applications.
-
-   [Read the guide](https://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/userguide/lakehouse-data-connection.html)
-+  **Catalog and govern Athena federated queries with the SageMaker lakehouse architecture**
-
-  Learn how to connect to, govern, and run federated queries on data stored in Amazon Redshift, DynamoDB, and Snowflake for your Amazon SageMaker projects.
-
-   [Read the blog](https://aws.amazon.com/blogs/big-data/catalog-and-govern-amazon-athena-federated-queries-with-amazon-sagemaker-lakehouse/)
+  [Learn how the lakehouse architecture works](https://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/userguide/lakehouse-how.html)
 
 ------
 
@@ -568,26 +544,65 @@ To explore how to use and learn more about each of the available services—we h
 <a name="explore"></a>
 
 ------
-#### [ Editable architecture diagrams ]
+#### [ Reference architectures ]
++ **Modern Data Analytics Reference Architecture on AWS**
 
-**Reference architecture diagrams**
+  Follow how data is collected from enterprise sources, SaaS applications, devices, logs, and streams, then ingested, stored, processed, and analyzed with AWS analytics services.
 
-Explore architecture diagrams to help you develop, scale, and test your analytics solutions on AWS.
+  [View the reference architecture](https://docs.aws.amazon.com/reference-architecture-diagrams/latest/modern-data-analytics-on-aws/modern-data-analytics-on-aws.html)
++ **Architecture Best Practices for Analytics and Big Data**
 
-[ Explore analytics reference architectures](https://aws.amazon.com/architecture/reference-architecture-diagrams/?achp_navlib4&ams%23interactive-card-vertical%23pattern-data--366709333.filter=%257B%2522search%2522%253A%2522analytics%2522%257D)
+  Browse reference architectures, diagrams, and best practices for analytics in the AWS Architecture Center.
 
-------
-#### [ Ready-to-use code ]
-
-|  |  |
-| --- |--- |
-| *Featured solution*<br />**Scalable Analytics Using Apache Druid on AWS**<br />Deploy AWS-built code to help you set up, operate, and manage Apache Druid on AWS, a cost-effective, highly available, resilient, and fault tolerant hosting environment.<br />[Explore this solution](https://aws.amazon.com/solutions/implementations/scalable-analytics-using-apache-druid-on-aws/) | **AWS Solutions**<br />Explore pre-configured, deployable solutions and their implementation guides, built by AWS.<br />[Explore all AWS security, identity, and governance solutions](https://aws.amazon.com/architecture/?nc2=h_ql_le_arc&cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=content-type%23solution&awsf.methodology=*all&awsf.tech-category=tech-category%23analytics&awsf.industries=*all&awsf.business-category=*all) |
+  [Browse the Architecture Center on the AWS website](https://aws.amazon.com/architecture/analytics-big-data/)
 
 ------
-#### [ Documentation ]
+#### [ Architecture guidance ]
++ **Data Analytics Lens – AWS Well-Architected Framework**
 
-|  |  |
-| --- |--- |
-| **Analytics whitepapers** <br />Explore whitepapers for further insights and best practices on choosing, implementing, and using the analytics services that best fit your organization. <br />[Explore analytics whitepapers ](https://aws.amazon.com/whitepapers/?ams%23interactive-card-vertical%23pattern-data-1858756679.filter=%257B%2522filters%2522%253A%255B%257B%2522id%2522%253A%2522GLOBAL%2523aws-tech-category.and%2522%252C%2522value%2522%253A%255B%2522analytics%2522%255D%257D%255D%257D) | **AWS Big Data Blog** <br />Explore blog posts that address specific big data use cases. <br /> [Explore the AWS Big Data blog](https://aws.amazon.com/blogs/big-data/)  |
+  Apply customer-proven best practices for designing well-architected analytics workloads.
+
+  [Read the Data Analytics Lens](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/analytics-lens.html)
++ **Using Apache Iceberg on AWS**
+
+  Learn how to work with Iceberg tables across Amazon EMR, AWS Glue, Amazon Athena, and Amazon Redshift.
+
+  [Read the guidance](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/introduction.html)
++ **Build Modern Data Streaming Architectures on AWS**
+
+  Design architectures to ingest, process, and analyze high-velocity data in real time.
+
+  [Read the whitepaper](https://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/build-modern-data-streaming-analytics-architectures.html)
++ **What is the lakehouse architecture of Amazon SageMaker?**
+
+  Understand how the lakehouse unifies data across Amazon S3 data lakes and Amazon Redshift data warehouses.
+
+  [Learn about the lakehouse architecture](https://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/userguide/what-is-smlh.html)
+
+------
+#### [ Solutions and guidance ]
++ **Guidance for Data Lakes on AWS**
+
+  Deploy an automatically configured, event-driven, serverless data lake that ingests, stores, processes, and analyzes data with data governance.
+
+  [Explore the guidance](https://docs.aws.amazon.com/solutions/data-lakes-on-aws/)
++ **Guidance for Scalable Analytics Using Apache Druid on AWS**
+
+  Deploy Apache Druid on AWS for scalable, highly available, real-time analytics on large data volumes.
+
+  [Explore the guidance](https://docs.aws.amazon.com/solutions/scalable-analytics-using-apache-druid-on-aws/)
++ **Solutions for Analytics**
+
+  Browse curated solutions for analytics use cases in the AWS Solutions Library.
+
+  [Browse the Solutions Library on the AWS website](https://aws.amazon.com/solutions/analytics/)
+
+------
+#### [ Blogs ]
++ **AWS Big Data Blog**
+
+  Read posts on specific analytics use cases, new features, and architecture patterns.
+
+  [Read the AWS Big Data Blog on the AWS website](https://aws.amazon.com/blogs/big-data/)
 
 ------

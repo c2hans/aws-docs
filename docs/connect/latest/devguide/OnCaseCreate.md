@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnCaseCreate.htm
 + ComparisonValue – "$.Case.Fields.assigned\_queue"
 + Negate - false
 
-```
+```json
 {
     "Operator": "CONTAINS_ANY",
     "Operands": ["queueId"],
@@ -31,7 +31,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnCaseCreate.htm
 + ComparisonValue – "$.Case.Fields.assigned\_user"
 + Negate - false
 
-```
+```json
 {
     "Operator": "CONTAINS_ANY",
     "Operands": ["userId1, userId2"],
@@ -49,7 +49,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnCaseCreate.htm
 + ComparisonValue – "$.Case.Fields.case\_reason"
 + Negate - true/false
 
-```
+```json
 {
     "Operator": "EQUALS",
     "Operands": ["Refund"],
@@ -67,7 +67,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnCaseCreate.htm
 + ComparisonValue – "$.Case.Fields.status"
 + Negate - false
 
-```
+```json
 {
     "Operator": "EQUALS",
     "Operands": ["open"],
@@ -85,7 +85,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnCaseCreate.htm
 + ComparisonValue – "$.Case.Fields.summary"
 + Negate - false
 
-```
+```json
 {
     "Operator": "EQUALS",
     "Operands": ["open"],
@@ -103,7 +103,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnCaseCreate.htm
 + ComparisonValue – "$.Case.Fields.last\_closed\_datetime"
 + Negate - false
 
-```
+```json
 {
     "Operator": "NumberLessOrEqualTo",
     "Operands": ["2023-11-11T11:11:11.111111Z"],
@@ -121,7 +121,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnCaseCreate.htm
 + ComparisonValue – "$.Case.Fields.last\_updated\_datetime"
 + Negate - false
 
-```
+```json
 {
     "Operator": "NumberLessOrEqualTo",
     "Operands": ["2023-11-11T11:11:11.111111Z"],
@@ -139,7 +139,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnCaseCreate.htm
 + ComparisonValue – "$.Case.Fields.created\_datetime"
 + Negate - true/false
 
-```
+```json
 {
     "Operator": "NumberLessOrEqualTo",
     "Operands": ["2023-11-11T11:11:11.111111Z"],
@@ -157,7 +157,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnCaseCreate.htm
 + ComparisonValue – "$.Case.Fields.reference\_number"
 + Negate - true
 
-```
+```json
 {
     "Operator": "CONTAINS",
     "Operands": ["11111111"],
@@ -175,7 +175,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnCaseCreate.htm
 + ComparisonValue – "$.Case.Fields.custom\_case\_field\_id"
 + Negate - true/false
 
-```
+```json
 {
     "Operator": "EQUALS",
     "Operands": ["vip"],
@@ -193,7 +193,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnCaseCreate.htm
 + ComparisonValue – "$.Case.TemplateId"
 + Negate - true/false
 
-```
+```json
 {
 "Operator": "CONTAINS_ANY",
 "Operands": ["templateId"],

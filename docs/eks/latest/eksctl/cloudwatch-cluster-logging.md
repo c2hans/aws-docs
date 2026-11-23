@@ -84,7 +84,7 @@ To disable all types, use `[]` or remove the `cloudWatch` section completely.
 
 You can enable all types with `"*"` or `"all"`. For example:
 
-```
+```yaml
 cloudWatch:
   clusterLogging:
     enableTypes: ["*"]
@@ -95,7 +95,7 @@ cloudWatch:
 
 You can enable a subset of types by listing the types you want to enable. For example:
 
-```
+```yaml
 cloudWatch:
   clusterLogging:
     enableTypes:
@@ -108,7 +108,7 @@ cloudWatch:
 
 By default, logs are stored in CloudWatch Logs, indefinitely. You can specify the number of days for which the control plane logs should be retained in CloudWatch Logs. The following example retains logs for 7 days:
 
-```
+```yaml
 cloudWatch:
   clusterLogging:
     logRetentionInDays: 7
@@ -117,7 +117,7 @@ cloudWatch:
 ### Complete example
 <a name="_complete_example"></a>
 
-```
+```yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 

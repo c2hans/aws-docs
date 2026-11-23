@@ -19,7 +19,7 @@ The following is an example policy that prevents an IAM user from deleting a spe
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -45,7 +45,7 @@ The following is an example policy that allows an IAM user to create DB instance
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -71,7 +71,7 @@ The following is an example policy that allows an IAM user to create DB instance
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -100,7 +100,7 @@ The following is an example policy that allows an IAM user to describe any Neptu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -131,7 +131,7 @@ The policy below allows use of the `ModifyDBInstance`, `CreateDBInstance` or `De
 
 ****
 
-```
+```json
 { "Version":"2012-10-17",
   "Statement": [
     {
@@ -169,7 +169,7 @@ This policy uses a `Condition` key to allow a tag that has the key `env` and a v
 
 ****
 
-```
+```json
 { "Version":"2012-10-17",
   "Statement": [
     {
@@ -207,7 +207,7 @@ The following policy is similar to the first example above, but uses the `aws:Re
 
 ****
 
-```
+```json
 { "Version":"2012-10-17",
   "Statement": [
     {

@@ -12,7 +12,7 @@ The SIP media application only returns `ACTION_SUCCESSFUL` if all the actions on
 
 The following event shows a sample payload for the `ACTION_SUCCESSFUL` invocation event type after a `PlayAudioAndGetDigits` action.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{3}},
@@ -64,7 +64,7 @@ The following event shows a sample payload for the `ACTION_SUCCESSFUL` invocatio
 
 When any action in a list fails to complete successfully, the SIP media application invokes the AWS Lambda function to notify you of the failure, and to get a new set of actions to run on that call. The following event shows the sample payload for the `ACTION_FAILED` invocation event type after a `PlayAudio` action.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": {{4}},

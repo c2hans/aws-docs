@@ -23,7 +23,7 @@ The example's complete source code is [available on GitHub](https://github.com/a
 
 The example begins by importing the modules it needs:
 
-```
+```swift
 import ArgumentParser
 import AWSClientRuntime
 import AWSTranscribeStreaming
@@ -35,7 +35,7 @@ import Foundation
 
 Then an enum is defined to represent the three audio formats Amazon Transcribe supports for streaming. These are used to match against the format specified on the command line using the **--format** option.:
 
-```
+```swift
 /// Identify one of the media file formats supported by Amazon Transcribe.
 enum TranscribeFormat: String, ExpressibleByArgument {
     case ogg = "ogg"
@@ -49,7 +49,7 @@ enum TranscribeFormat: String, ExpressibleByArgument {
 
 A function named `createAudioStream()` returns an `[AsyncThrowingStream](https://developer.apple.com/documentation/swift/asyncthrowingstream)` that contains the audio file's contents, broken into 125ms chunks. The `AsyncThrowingStream` supplies audio data to Amazon Transcribe. The stream is specified as an input property when calling the client's `[startStreamTranscription(input:)](https://sdk.amazonaws.com/swift/api/awstranscribestreaming/latest/documentation/awstranscribestreaming/transcribestreamingclient/startstreamtranscription(input:))` function.
 
-```
+```swift
     /// Create and return an Amazon Transcribe audio stream from the file
     /// specified in the arguments.
     ///
@@ -136,7 +136,7 @@ This continues until the last chunk of audio is sent; then the continuation's `f
 
 Transcription is handled by the `transcribe()` function:
 
-```
+```swift
     /// Run the transcription process.
     ///
     /// - Throws: An error from `TranscribeError`.
@@ -211,13 +211,13 @@ If it's a completed transcription of a section of the audio, the transcription i
 
 If you download and build the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/transcribe-streaming/transcribe-events), you can run it using the **tsevents** executable. For example, if you have a 44,100Hz audio file named `audio-sample.flac`, you can process it with the command:
 
-```
+```console
 $ tsevents --path audio-sample.flac --format flac --sample-rate 44100
 ```
 
 If the language of the audio file isn't US English, you can specify the file's language using the **--lang** option. For example, for modern Arabic, you can use:
 
-```
+```console
 $ tsevents --path audio-sample.flac --format flac --sample-rate 44100 --lang ar-SA
 ```
 

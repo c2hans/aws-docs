@@ -52,7 +52,7 @@ To avoid incurring charges, you can run this tutorial without creating a Kinesis
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -122,7 +122,7 @@ In this step, you create a Lambda function deployment package that contains Pyth
 **Tip**
  For example code that uses Java and NodeJS, see the [AWS IoT Greengrass Core SDK for Java](https://github.com/aws/aws-greengrass-core-sdk-java/blob/master/samples/StreamManagerKinesis/src/main/java/com/amazonaws/greengrass/examples/StreamManagerKinesis.java) and [AWS IoT Greengrass Core SDK for Node.js](https://github.com/aws/aws-greengrass-core-sdk-js/blob/master/greengrassExamples/StreamManagerKinesis/index.js) on GitHub.
 
-   ```
+   ```python
    import asyncio
    import logging
    import random
@@ -225,7 +225,7 @@ In this step, you create a Lambda function deployment package that contains Pyth
 ------
 #### [ JSON Expanded ]
 
-   ```
+   ```bash
    aws iam create-role --role-name Lambda_empty --assume-role-policy '{
        "Version": "2012-10-17",
        "Statement": [
@@ -243,7 +243,7 @@ In this step, you create a Lambda function deployment package that contains Pyth
 ------
 #### [ JSON Single-line ]
 
-   ```
+   ```bash
    aws iam create-role --role-name Lambda_empty --assume-role-policy '{"Version": "2012-10-17",		 	 	  "Statement": [{"Effect": "Allow", "Principal": {"Service": "lambda.amazonaws.com"},"Action": "sts:AssumeRole"}]}'
    ```
 
@@ -352,7 +352,7 @@ Configure the group's logging settings. For this tutorial, you configure AWS IoT
 ------
 #### [ JSON Expanded ]
 
-   ```
+   ```bash
    aws greengrass create-logger-definition --name "LoggingConfigs" --initial-version '{
        "Loggers": [
            {
@@ -376,7 +376,7 @@ Configure the group's logging settings. For this tutorial, you configure AWS IoT
 ------
 #### [ JSON Single-line ]
 
-   ```
+   ```bash
    aws greengrass create-logger-definition \
        --name "LoggingConfigs" \
        --initial-version '{"Loggers":[{"Id":"1","Component":"GreengrassSystem","Level":"INFO","Space":10240,"Type":"FileSystem"},{"Id":"2","Component":"Lambda","Level":"INFO","Space":10240,"Type":"FileSystem"}]}'
@@ -415,7 +415,7 @@ Get the ARN of the core definition version to add to your new group version. To 
       + Replace {{group-id}} with the `Id` that you copied for the group.
       + Replace {{group-version-id}} with the `LatestVersion` that you copied for the group.
 
-      ```
+      ```bash
       aws greengrass get-group-version \
       --group-id {{group-id}} \
       --group-version-id {{group-version-id}}
@@ -453,7 +453,7 @@ Deploy the group to the core device.
 
    1. To check whether the daemon is running:
 
-      ```
+      ```bash
       ps aux | grep -E 'greengrass.*daemon'
       ```
 
@@ -463,7 +463,7 @@ The version in the path depends on the AWS IoT Greengrass Core software version 
 
    1. To start the daemon:
 
-      ```
+      ```bash
       cd /greengrass/ggc/core/
       sudo ./greengrassd start
       ```
@@ -472,7 +472,7 @@ The version in the path depends on the AWS IoT Greengrass Core software version 
    + Replace {{group-id}} with the `Id` that you copied for the group.
    + Replace {{group-version-id}} with the `Version` that you copied for the new group version.
 
-   ```
+   ```bash
    aws greengrass create-deployment \
    --deployment-type NewDeployment \
    --group-id {{group-id}} \
@@ -485,7 +485,7 @@ The version in the path depends on the AWS IoT Greengrass Core software version 
    + Replace {{group-id}} with the `Id` that you copied for the group.
    + Replace {{deployment-id}} with the `DeploymentId` that you copied for the deployment.
 
-   ```
+   ```bash
    aws greengrass get-deployment-status \
    --group-id {{group-id}} \
    --deployment-id {{deployment-id}}

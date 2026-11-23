@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="createconnectordefinitionversion-post-cli"></a>
 
-```
+```bash
 aws greengrass create-connector-definition-version \
   --connector-definition-id <value> \
   [--connectors <value>] \
@@ -26,7 +26,7 @@ aws greengrass create-connector-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "ConnectorDefinitionId": "string",
 "Connectors": [
@@ -56,7 +56,7 @@ type: string
 
 where used: body; required: true
 
-```
+```json
 {
 "Connectors": [
   {
@@ -106,7 +106,7 @@ type: string
 
  [ VersionInformation](definitions-versioninformation.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -134,7 +134,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

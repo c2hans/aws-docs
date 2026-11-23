@@ -25,7 +25,7 @@ Parameters are only available in the AWS Region where they were created.
 
 1. Run the following command to create a parameter that contains a plain text value. Replace each {{example resource placeholder}} with your own information.
 
-   ```
+   ```powershell
    Write-SSMParameter `
        -Name "{{parameter-name}}" `
        -Value "{{parameter-value}}" `
@@ -38,13 +38,13 @@ Parameters are only available in the AWS Region where they were created.
 **Note**
 To create a parameter with a tag, first create an `Amazon.SimpleSystemsManagement.Model.Tag` object as a variable. The following is an example.
 
-   ```
+   ```powershell
    $tag = New-Object Amazon.SimpleSystemsManagement.Model.Tag
    $tag.Key = "tag-key"
    $tag.Value = "tag-value"
    ```
 
-   ```
+   ```powershell
    Write-SSMParameter `
        -Name "{{parameter-name}}" `
        -Value "{{an-AMI-id}}" `
@@ -57,7 +57,7 @@ To create a parameter with a tag, first create an `Amazon.SimpleSystemsManagemen
 
    Here is an example that uses a parameter hierarchy.
 
-   ```
+   ```powershell
    Write-SSMParameter `
        -Name "/IAD/Web/SQL/IPaddress" `
        -Value "99.99.99.999" `
@@ -67,7 +67,7 @@ To create a parameter with a tag, first create an `Amazon.SimpleSystemsManagemen
 
 1. Run the following command to verify the details of the parameter.
 
-   ```
+   ```powershell
    (Get-SSMParameterValue -Name "{{the-parameter-name-you-specified}}").Parameters
    ```
 
@@ -82,13 +82,13 @@ To create a parameter with a tag, first create an `Amazon.SimpleSystemsManagemen
 **Note**
 To create a parameter with a tag, first create an `Amazon.SimpleSystemsManagement.Model.Tag` object as a variable. The following is an example.
 
-   ```
+   ```powershell
    $tag = New-Object Amazon.SimpleSystemsManagement.Model.Tag
    $tag.Key = "tag-key"
    $tag.Value = "tag-value"
    ```
 
-   ```
+   ```powershell
    Write-SSMParameter `
        -Name "{{parameter-name}}" `
        -Value "{{a-comma-separated-list-of-values}}" `
@@ -100,7 +100,7 @@ To create a parameter with a tag, first create an `Amazon.SimpleSystemsManagemen
 
    Here is an example.
 
-   ```
+   ```powershell
    Write-SSMParameter `
        -Name "stringlist-parameter" `
        -Value "Milana,Mariana,Mark,Miguel" `
@@ -112,7 +112,7 @@ Items in a `StringList` must be separated by a comma (,). You can't use other pu
 
 1. Run the following command to verify the details of the parameter.
 
-   ```
+   ```powershell
    (Get-SSMParameterValue -Name "{{the-parameter-name-you-specified}}").Parameters
    ```
 
@@ -134,13 +134,13 @@ Parameter Store only supports [symmetric encryption KMS keys](https://docs.aws.a
 **Note**
 To create a parameter with a tag, first create an `Amazon.SimpleSystemsManagement.Model.Tag` object as a variable. The following is an example.
 
-   ```
+   ```powershell
    $tag = New-Object Amazon.SimpleSystemsManagement.Model.Tag
    $tag.Key = "tag-key"
    $tag.Value = "tag-value"
    ```
 
-   ```
+   ```powershell
    Write-SSMParameter `
        -Name "{{parameter-name}}" `
        -Value "{{parameter-value}}" `
@@ -155,7 +155,7 @@ To use the AWS managed key assigned to your account, remove the `-KeyId` paramet
 
    The following example creates a `SecureString` parameter named `/myapp/dev/vendor/merchant-id` with a merchant ID as the encrypted value and an AWS managed key.
 
-   ```
+   ```powershell
    Write-SSMParameter `
        -Name "/myapp/dev/vendor/merchant-id" `
        -Value "merchant-739482" `
@@ -165,7 +165,7 @@ To use the AWS managed key assigned to your account, remove the `-KeyId` paramet
 
 1. Run the following command to verify the details of the parameter.
 
-   ```
+   ```powershell
    (Get-SSMParameterValue -Name "{{the-parameter-name-you-specified}}" –WithDecryption $true).Parameters
    ```
 

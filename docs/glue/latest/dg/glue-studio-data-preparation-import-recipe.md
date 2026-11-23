@@ -33,7 +33,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-studio-data-preparat
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

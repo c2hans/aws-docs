@@ -84,7 +84,7 @@ Creates a new event destination in a configuration set.
 #### POST schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-request-body-post-example"></a>
 
-```
+```json
 {
   "EventDestinationName": "string",
   "EventDestination": {
@@ -113,7 +113,7 @@ Creates a new event destination in a configuration set.
 #### GetConfigurationSetEventDestinationsResponse schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-response-body-getconfigurationseteventdestinationsresponse-example"></a>
 
-```
+```json
 {
   "EventDestinations": [
     {
@@ -141,7 +141,7 @@ Creates a new event destination in a configuration set.
 #### CreateConfigurationSetEventDestinationResponse schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-response-body-createconfigurationseteventdestinationresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -149,7 +149,7 @@ Creates a new event destination in a configuration set.
 #### BadRequestException schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -158,7 +158,7 @@ Creates a new event destination in a configuration set.
 #### NotFoundException schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -167,7 +167,7 @@ Creates a new event destination in a configuration set.
 #### AlreadyExistsException schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-response-body-alreadyexistsexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -176,7 +176,7 @@ Creates a new event destination in a configuration set.
 #### LimitExceededException schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -185,7 +185,7 @@ Creates a new event destination in a configuration set.
 #### TooManyRequestsException schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-response-body-toomanyrequestsexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -194,7 +194,7 @@ Creates a new event destination in a configuration set.
 #### InternalServiceErrorException schema
 <a name="v1-sms-voice-configuration-sets-configurationsetname-event-destinations-response-body-internalserviceerrorexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }

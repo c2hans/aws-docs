@@ -119,7 +119,7 @@ Thanks in advance,
 
 You can also use following command in AWS CloudShell to create this case via command line (requires AWS Enterprise or OnRamp Support):
 
-```
+```bash
 aws support create-case \
     --subject "Backfill Data" \
     --service-code "billing" \
@@ -208,13 +208,13 @@ An alternative method to install dashboards is the [cid-cmd](https://github.com/
 
 1. Install cid-cmd tool. Run the following command and make sure you hit enter :
 
-   ```
+   ```bash
     pip3 install --upgrade cid-cmd
    ```
 
 1. Deploy CUDOS Dashboard:
 
-   ```
+   ```bash
     cid-cmd deploy --dashboard-id cudos-v5
    ```
 
@@ -222,7 +222,7 @@ An alternative method to install dashboards is the [cid-cmd](https://github.com/
 
 1. Repeat deployment command for Cost Intelligence Dashboard and KPI:
 
-   ```
+   ```bash
     cid-cmd deploy
    ```
 
@@ -240,7 +240,7 @@ You can also deploy the foundational dashboards (CUDOS, Cost Intelligence, and K
 
 1. Run the standard Terraform workflow:
 
-   ```
+   ```bash
    terraform init
    terraform plan
    terraform apply

@@ -15,7 +15,7 @@ Applications built with Amazon Kinesis Video Streams with WebRTC are comprised o
 
 Signaling metrics can be used to understand how the signaling client behaves while your application is running. You can use the `STATUS signalingClientGetMetrics (SIGNALING_CLIENT_HANDLE, PSignalingClientMetrics)` API to obtain these signaling metrics. Here's an example usage pattern:
 
-```
+```bash
 SIGNALING_CLIENT_HANDLE signalingClientHandle;
 SignalingClientMetrics signalingClientMetrics;
 STATUS retStatus = signalingClientGetMetrics(signalingClientHandle, &signalingClientMetrics);
@@ -56,7 +56,7 @@ A subset of the [W3C](https://www.w3.org/TR/webrtc-stats/) standard metrics is c
 
 You can use the `STATUS rtcPeerConnectionGetMetrics (PRtcPeerConnection, PRtcRtpTransceiver, PRtcStats)` API to gather metrics related to ICE, RTP and the data channel. Here's a usage example:
 
-```
+```bash
 RtcStats rtcStats;
 rtcStats.requestedTypeOfStats = RTC_STATS_TYPE_LOCAL_CANDIDATE;
 STATUS retStatus = rtcPeerConnectionGetMetrics (pRtcPeerConnection, NULL, &rtcStats);
@@ -65,7 +65,7 @@ printf(“Local Candidate address: %s\n”, rtcStats.rtcStatsObject.localIceCand
 
 Here's another example that shows usage pattern to get transceiver related stats:
 
-```
+```bash
 RtcStats rtcStats;
 PRtcRtpTransceiver pVideoRtcRtpTransceiver;
 rtcStats.requestedTypeOfStats = RTC_STATS_TYPE_OUTBOUND_RTP;

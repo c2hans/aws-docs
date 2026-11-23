@@ -33,7 +33,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-deployments-deploymentid-status-get-cli"></a>
 
-```
+```bash
 aws greengrass get-deployment-status \
   --group-id <value> \
   --deployment-id <value>  \
@@ -43,7 +43,7 @@ aws greengrass get-deployment-status \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "DeploymentId": "string"
@@ -57,7 +57,7 @@ cli-input-json format:
 Success. The response body contains the status of the deployment for the group.
  [ GetDeploymentStatusResponse](definitions-getdeploymentstatusresponse.md)
 
-```
+```json
 {
 "DeploymentStatus": "string",
 "DeploymentType": "NewDeployment|Redeployment|ResetDeployment|ForceResetDeployment",
@@ -105,7 +105,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

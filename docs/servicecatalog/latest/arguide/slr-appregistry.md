@@ -29,7 +29,7 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -88,7 +88,7 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
 
  You can allow an entity to create the service-linked role `AWSServiceRoleForAWSServiceCatalogAppRegistry` by adding this statement to the permissions policy for the IAM entity that creates the service-linked role.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [

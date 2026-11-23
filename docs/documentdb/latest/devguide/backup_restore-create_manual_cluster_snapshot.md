@@ -92,7 +92,7 @@ aws docdb create-db-cluster-snapshot ^
 
 Output from this operation looks something like the following.
 
-```
+```json
 {
     "DBClusterSnapshot": {
         "AvailabilityZones": [

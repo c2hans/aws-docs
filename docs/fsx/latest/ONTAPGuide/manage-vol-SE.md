@@ -78,12 +78,12 @@ If you modify storage efficiency settings with the ONTAP CLI or REST API, or if 
 To restore the Amazon FSx-managed configuration and have the console report **Enabled**, use one of the following methods:
 + **AWS CLI:**
 
-  ```
+  ```bash
   aws fsx update-volume --volume-id {{vol-id}} --ontap-configuration StorageEfficiencyEnabled=true
   ```
 + **ONTAP CLI:**
 
-  ```
+  ```bash
   ::> volume efficiency on -vserver {{svm-name}} -volume {{vol-name}}
   ::> volume efficiency modify -vserver {{svm-name}} -volume {{vol-name}} -inline-dedupe true -inline-compression true -data-compaction true -compression true
   ```

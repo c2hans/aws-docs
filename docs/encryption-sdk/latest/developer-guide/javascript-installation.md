@@ -14,13 +14,13 @@ To install the modules, use the [npm package manager](https://www.npmjs.com/get-
 
 For example, to install the `client-node` module, which includes all of the modules you need to program with the AWS Encryption SDK for JavaScript in Node.js, use the following command.
 
-```
+```bash
 npm install @aws-crypto/client-node
 ```
 
 To install the `client-browser` module, which includes all of the modules you need to program with the AWS Encryption SDK for JavaScript in the browser, use the following command.
 
-```
+```bash
 npm install @aws-crypto/client-browser
 ```
 

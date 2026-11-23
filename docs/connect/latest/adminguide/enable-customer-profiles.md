@@ -56,7 +56,7 @@ Amazon AppFlow handles connecting to the external application and moving data fr
 
 When you enable Customer Profiles, you have the option of specifying an Amazon SQS queue as your dead-letter queue. If you select this option, add the following resource policy to Amazon SQS so Customer Profiles has permissions to send messages to that queue:
 
-```
+```json
 {
       "Sid": "Customer Profiles SQS policy",
       "Effect": "Allow",
@@ -134,7 +134,7 @@ You can't enable Data Store if Customer Profiles detects naming conflicts. After
 ![The Access policy section.](https://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-create-dlq-statement.png)
    +  Then copy and paste the following code:
 
-     ```
+     ```json
      {
            "Sid": "Customer Profiles SQS policy",
            "Effect": "Allow",

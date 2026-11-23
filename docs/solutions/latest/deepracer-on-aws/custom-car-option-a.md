@@ -46,7 +46,7 @@ Before connecting the ESC to the servo hat, **remove the center (power/positive)
 
    1. The camera mounts upside down. After the first boot, add the following line to `/etc/rc.local` before the `exit 0` line to apply a permanent 180° rotation at startup:
 
-      ```
+      ```bash
       v4l2-ctl --set-ctrl=rotate=180
       ```
 

@@ -9,7 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 *Alias records only:* Information about the AWS resource, such as a CloudFront distribution or an Amazon S3 bucket, that you want to route traffic to.
 
 When creating records for a private hosted zone, note the following:
-+ Creating geolocation alias and latency alias records in a private hosted zone is allowed but not supported.
++ You can create alias records in a private hosted zone with any routing policy that private hosted zones support. For the list of supported routing policies, see [Supported routing policies for records in a private hosted zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-private-considerations.html#hosted-zone-private-considerations-routing-policies).
 + For information about creating failover records in a private hosted zone, see [Configuring Failover in a Private Hosted Zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-private-hosted-zones.html).
 
 ## Syntax
@@ -90,7 +90,7 @@ If you're creating an alias record that has the same name as the hosted zone (kn
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EvaluateTargetHealth`  <a name="cfn-route53-recordset-aliastarget-evaluatetargethealth"></a>
-*Applies only to alias, failover alias, geolocation alias, latency alias, and weighted alias resource record sets:* When `EvaluateTargetHealth` is `true`, an alias resource record set inherits the health of the referenced AWS resource, such as an ELB load balancer or another resource record set in the hosted zone.
+*Applies only to alias, az-affinity alias, failover alias, geolocation alias, latency alias, and weighted alias resource record sets:* When `EvaluateTargetHealth` is `true`, an alias resource record set inherits the health of the referenced AWS resource, such as an ELB load balancer or another resource record set in the hosted zone.
 Note the following:
 CloudFront distributions
 You can't set `EvaluateTargetHealth` to `true` when the alias target is a CloudFront distribution.

@@ -18,7 +18,7 @@ The following code examples show how to:
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb#code-examples).
 
-```
+```csharp
 namespace PartiQL_Basics_Scenario
 {
     public class PartiQLMethods
@@ -375,7 +375,7 @@ namespace PartiQL_Basics_Scenario
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
         //  1. Create a table. (CreateTable)
         if (AwsDoc::DynamoDB::createMoviesDynamoDBTable(clientConfig)) {
 
@@ -737,7 +737,7 @@ bool AwsDoc::DynamoDB::waitTableActive(const Aws::String &tableName,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 Run a scenario that creates a table and runs PartiQL queries.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -853,7 +853,7 @@ func RunPartiQLSingleScenario(ctx context.Context, sdkConfig aws.Config, tableNa
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -898,7 +898,7 @@ func (movie Movie) String() string {
 ```
 Create a struct and methods that run PartiQL statements.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -1006,7 +1006,7 @@ func (runner PartiQLRunner) DeleteMovie(ctx context.Context, movie Movie) error 
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 
-```
+```java
 public class ScenarioPartiQ {
     public static void main(String[] args) throws IOException {
         String fileName = "../../../resources/sample_files/movies.json";
@@ -1285,7 +1285,7 @@ public class ScenarioPartiQ {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 Execute single PartiQL statements.
 
-```
+```javascript
 import {
   BillingMode,
   CreateTableCommand,
@@ -1449,7 +1449,7 @@ this table, the scenario cannot continue. Delete it?`,
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun main() {
     val ddb = DynamoDbClient.fromEnvironment { region = "us-east-1" }
     val tableName = "MoviesPartiQ"
@@ -1623,7 +1623,7 @@ suspend fun executeStatementPartiQL(
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
 namespace DynamoDb\PartiQL_Basics;
 
 use Aws\DynamoDb\Marshaler;
@@ -1811,7 +1811,7 @@ class GettingStartedWithPartiQL
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 Create a class that can run PartiQL statements.
 
-```
+```python
 from datetime import datetime
 from decimal import Decimal
 import logging
@@ -1871,7 +1871,7 @@ class PartiQLWrapper:
 ```
 Run a scenario that creates a table and runs PartiQL queries.
 
-```
+```python
 def run_scenario(scaffold, wrapper, table_name):
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
@@ -1955,7 +1955,7 @@ if __name__ == "__main__":
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 Run a scenario that creates a table and runs PartiQL queries.
 
-```
+```ruby
   table_name = "doc-example-table-movies-partiql-#{rand(10**8)}"
   scaffold = Scaffold.new(table_name)
   sdk = DynamoDBPartiQLSingle.new(table_name)
@@ -2011,7 +2011,7 @@ end
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 
-```
+```rust
 async fn make_table(
     client: &Client,
     table: &str,

@@ -62,7 +62,7 @@ Type: Timestamp
 Required: No
 
  ** ebsVolume **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageFulfillmentOption-ebsVolume"></a>
-The supported Amazon EBS volume configuration for the AMI.
+The supported Amazon Elastic Block Store (Amazon EBS) volume configuration for the AMI.
 Type: [AmazonMachineImageEbsVolume](API_marketplace-discovery_AmazonMachineImageEbsVolume.md) object
 Required: No
 
@@ -72,12 +72,12 @@ Type: String
 Required: No
 
  ** recommendation **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageFulfillmentOption-recommendation"></a>
-Recommended instance types for running this AMI.
+The recommended instance types for running this AMI.
 Type: [AmazonMachineImageRecommendation](API_marketplace-discovery_AmazonMachineImageRecommendation.md) object
 Required: No
 
  ** releaseNotes **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageFulfillmentOption-releaseNotes"></a>
-Release notes describing changes in this version of the fulfillment option.
+Release notes that describe the changes in this version of the fulfillment option.
 Type: String
 Required: No
 

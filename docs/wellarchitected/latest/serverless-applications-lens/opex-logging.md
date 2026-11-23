@@ -10,6 +10,8 @@ JSON is a ubiquitous format which is often used as an output format and supporte
 
 ![Two screenshots showing a CloudWatch Logs Insights query to find statistics on cold starts, and the subsequent result.](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/cloudwatch-logs-insights-query-cold-start-statistics.png)
 
+*Figure 8: CloudWatch Logs Insights query to find statistics on cold starts*
+
 Consistently logging of correlation IDs and passing them to downstream systems allows tracing and tracking of individual requests or invocations. As your system grows and more logging is ingested, consider using appropriate logging levels and a sampling mechanism to log a small percentage of logs in DEBUG mode. Log level configuration should be passed to downstream systems for consistent tracing in a microservice architecture.
 
  The Lambda Logs API can be used to send Lambda logs to locations other than CloudWatch. A number of partner solutions provide Lambda layers which use the Lambda Logs API and make integration with their systems easier. The recommendations and guidance here applies uniformly regardless of log destination.

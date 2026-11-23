@@ -26,7 +26,7 @@ The request accepts the following data in JSON format.
 The Amazon Resource Name (ARN) of a connection.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `arn:aws(-[\w]+)*:.+:.+:[0-9]{12}:.+`
+Pattern: `arn:aws(-[\w]+)*:(codestar-connections|codeconnections):[a-z0-9\-]+:[0-9]{12}:connection\/[\w\-]+`
 Required: Yes
 
 ## Response Syntax
@@ -40,6 +40,7 @@ Required: Yes
       "ConnectionStatus": "string",
       "HostArn": "string",
       "OwnerAccountId": "string",
+      "ProviderEndpoint": "string",
       "ProviderType": "string"
    }
 }

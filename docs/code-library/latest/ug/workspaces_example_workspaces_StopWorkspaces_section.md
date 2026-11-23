@@ -35,17 +35,17 @@ For more information, see [Stop and start an AutoStop WorkSpace](https://docs.aw
 **Tools for PowerShell V4**
 **Example 1: Stops multiple WorkSpaces.**
 
-```
+```powershell
 Stop-WKSWorkspace -WorkspaceId "ws-1a2b3c4d5","ws-6a7b8c9d0"
 ```
 **Example 2: Retrieves the collection of all your WorkSpaces and pipes the IDs to the -WorkSpaceId parameter of Stop-WKSWorkspace causing the WorkSpaces to be stopped.**
 
-```
+```powershell
 Get-WKSWorkspaces | Stop-WKSWorkspace
 ```
 **Example 3: This example shows how to pass StopRequest objects defining the WorkSpaces to be stopped.**
 
-```
+```powershell
 $arrRequest = @()
 $request1 = New-Object Amazon.WorkSpaces.Model.StopRequest
 $request1.WorkspaceId = 'ws-12345678'
@@ -60,17 +60,17 @@ Stop-WKSWorkspace -Request $arrRequest
 **Tools for PowerShell V5**
 **Example 1: Stops multiple WorkSpaces.**
 
-```
+```powershell
 Stop-WKSWorkspace -WorkspaceId "ws-1a2b3c4d5","ws-6a7b8c9d0"
 ```
 **Example 2: Retrieves the collection of all your WorkSpaces and pipes the IDs to the -WorkSpaceId parameter of Stop-WKSWorkspace causing the WorkSpaces to be stopped.**
 
-```
+```powershell
 Get-WKSWorkspaces | Stop-WKSWorkspace
 ```
 **Example 3: This example shows how to pass StopRequest objects defining the WorkSpaces to be stopped.**
 
-```
+```powershell
 $arrRequest = @()
 $request1 = New-Object Amazon.WorkSpaces.Model.StopRequest
 $request1.WorkspaceId = 'ws-12345678'

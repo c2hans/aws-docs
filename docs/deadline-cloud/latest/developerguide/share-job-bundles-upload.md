@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/sha
 
 To share a job bundle from the command line, upload the bundle directory:
 
-```
+```bash
 deadline bundle upload {{/path/to/job/bundle}}
 ```
 
@@ -20,7 +20,7 @@ Uploaded bundle to s3://{{amzn-s3-demo-bucket}}/DeadlineCloud/job-bundles/{{my_r
 
 By default, the shared bundle takes the name of the bundle directory. To use a different name, pass the `--name` option. You can also upload an `.ojd` archive that you exported earlier instead of a directory.
 
-```
+```bash
 deadline bundle upload {{/path/to/job/bundle}} --name {{my_render_job_v2}}
 ```
 

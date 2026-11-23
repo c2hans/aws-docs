@@ -66,7 +66,7 @@ Central hosted agents can connect to multiple services with OpenSearch as one co
 ### Example using the Strands Agents framework
 <a name="strands-agent-integration-id"></a>
 
-```
+```python
 import os
 import requests
 from strands import Agent

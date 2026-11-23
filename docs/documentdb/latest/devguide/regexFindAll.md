@@ -100,7 +100,7 @@ To view a code example for using the `$regexFindAll` command, choose the tab for
 
 Here's an example of using the `$regexFind` operator in a Node.js application:
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function main() {
@@ -132,7 +132,7 @@ main();
 
 Here's an example of using the `$regexFind` operator in a Python application:
 
-```
+```python
 from pymongo import MongoClient
 
 client = MongoClient('mongodb://<username>:<password>@<cluster-endpoint>:27017/?tls=true&tlsCAFile=global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false')

@@ -14,7 +14,7 @@ To create a cross-account event source mapping, you must first [configure multi-
 **Example — Create cross-account event source mapping for cluster that uses IAM authentication**
 When the cluster uses [IAM role-based authentication](msk-cluster-auth.md#msk-iam-auth), you don't need a [SourceAccessConfiguration](https://docs.aws.amazon.com/lambda/latest/api/API_SourceAccessConfiguration.html) object. Example:
 
-```
+```bash
 aws lambda create-event-source-mapping \
   --event-source-arn arn:aws:kafka:{{us-east-1:111122223333}}:vpc-connection/{{444455556666/my-cluster-name/51jn98b4-0a61-46cc-b0a6-61g9a3d797d5-7}} \
   --topics AWSKafkaTopic \

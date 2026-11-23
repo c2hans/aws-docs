@@ -18,14 +18,14 @@ When you have received a message, you can modify its visibility timeout by passi
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 ```
 
  **Code**
 
-```
+```java
 AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
 
 // Get the receipt handle for the first message in the queue.
@@ -46,7 +46,7 @@ To set the message visibility timeout for multiple messages at once, create a li
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 import com.amazonaws.services.sqs.model.ChangeMessageVisibilityBatchRequestEntry;
@@ -56,7 +56,7 @@ import java.util.List;
 
  **Code**
 
-```
+```java
 AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
 
 List<ChangeMessageVisibilityBatchRequestEntry> entries =

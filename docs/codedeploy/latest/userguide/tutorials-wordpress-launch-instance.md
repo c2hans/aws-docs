@@ -19,7 +19,7 @@ After your new Amazon EC2 instance is launched, follow these instructions to pra
 
    For example, if the public DNS address is **ec2-01-234-567-890.compute-1.amazonaws.com**, and your Amazon EC2 instance key pair for SSH access is named **codedeploydemo.pem**, you would type:
 
-   ```
+   ```sh
    ssh -i {{/path/to/}}codedeploydemo.pem ec2-user@ec2-01-234-567-890.compute-1.amazonaws.com
    ```
 
@@ -27,13 +27,13 @@ After your new Amazon EC2 instance is launched, follow these instructions to pra
 **Note**
 If you receive an error about your key file's permissions being too open, you will need to restrict its permissions to give access only to the current user (you). For example, with the **chmod** command on Linux, macOS, or Unix, type:
 
-   ```
+   ```sh
    chmod 400 {{/path/to/}}codedeploydemo.pem
    ```
 
 1. After you are signed in, you will see the AMI banner for the Amazon EC2 instance. For Amazon Linux, it should look like this:
 
-   ```
+   ```sh
           __|  __|_  )
           _|  (     /   Amazon Linux AMI
          ___|\___|___|

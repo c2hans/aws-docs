@@ -30,7 +30,7 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch_sns_reg_rul
 
 1. Paste the following event pattern into the text area.
 
-   ```
+   ```json
    {
      "detail-type": [
        "Batch Job State Change"

@@ -46,7 +46,7 @@ To allow full read/write access to Connect Customer, you must attach two policie
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

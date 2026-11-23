@@ -25,7 +25,7 @@ pip install requests-auth-aws-sigv4
 
 Within the script, replace all instances of `{{account-id}}` with your AWS account ID.
 
-```
+```python
 import boto3
 import botocore
 from botocore.config import Config

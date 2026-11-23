@@ -9,7 +9,7 @@ A route table contains a set of rules, called routes, that determine where netwo
 ## Syntax
 <a name="node-route-table-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Networking.RouteTable:
   properties:
     tags: List
@@ -36,7 +36,7 @@ Type: String
 ## Example
 <a name="node-route-table-example"></a>
 
-```
+```yaml
 SampleRouteTable:
   type: tosca.nodes.AWS.Networking.RouteTable
   properties:

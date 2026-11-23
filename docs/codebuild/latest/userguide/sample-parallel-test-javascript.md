@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-parall
 
 The following is sample of a `buildspec.yml` that shows parallel test execution with Javascript on an Ubuntu platform:
 
-```
+```json
 version: 0.2
 
 batch:

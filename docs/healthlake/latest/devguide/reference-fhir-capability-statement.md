@@ -21,7 +21,7 @@ To find the FHIR-related capabilities (behaviors) of an active HealthLake data s
 ------
 #### [ curl ]
 
-   ```
+   ```sh
    curl --request GET \
      'https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/metadata \
      --aws-sigv4 'aws:amz:region:healthlake' \

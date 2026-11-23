@@ -34,7 +34,7 @@ Write every IAM action with the `events:` prefix, for example `events:PutRawEven
 
 The following identity-based policy allows a producer to publish to one bus with either publish API. For the full action list, condition keys, and cross-account grants, see [Access control for the Custom Event Bus](eb-custom-bus-access.md); the authoritative list of actions, resources, and condition keys is in the [Service Authorization Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/list_eventbridge.html).
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

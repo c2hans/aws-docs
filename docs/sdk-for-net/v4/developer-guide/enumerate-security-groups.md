@@ -26,7 +26,7 @@ The following snippet enumerates your security groups. It enumerates all groups 
 
 The example [at the end of this topic](#enum-sec-groups-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to enumerate the security groups
     private static async Task EnumerateGroups(IAmazonEC2 ec2Client, string vpcID)
@@ -90,7 +90,7 @@ Programming elements:
 ### The Code
 <a name="w2aac19c15c21c13c13c15b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;

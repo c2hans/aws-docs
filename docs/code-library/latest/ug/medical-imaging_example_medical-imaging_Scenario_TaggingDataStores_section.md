@@ -14,7 +14,7 @@ The following code examples show how to tag a HealthImaging data store.
 **SDK for Java 2.x**
 To tag a data store.
 
-```
+```java
                 final String datastoreArn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012";
 
                 TagResource.tagMedicalImagingResource(medicalImagingClient, datastoreArn,
@@ -22,7 +22,7 @@ To tag a data store.
 ```
 The utility function for tagging a resource.
 
-```
+```java
     public static void tagMedicalImagingResource(MedicalImagingClient medicalImagingClient,
             String resourceArn,
             Map<String, String> tags) {
@@ -43,7 +43,7 @@ The utility function for tagging a resource.
 ```
 To list tags for a data store.
 
-```
+```java
                 final String datastoreArn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012";
 
                 ListTagsForResourceResponse result = ListTagsForResource.listMedicalImagingResourceTags(
@@ -55,7 +55,7 @@ To list tags for a data store.
 ```
 The utility function for listing a resource's tags.
 
-```
+```java
     public static ListTagsForResourceResponse listMedicalImagingResourceTags(MedicalImagingClient medicalImagingClient,
             String resourceArn) {
         try {
@@ -74,7 +74,7 @@ The utility function for listing a resource's tags.
 ```
 To untag a data store.
 
-```
+```java
                 final String datastoreArn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012";
 
                 UntagResource.untagMedicalImagingResource(medicalImagingClient, datastoreArn,
@@ -82,7 +82,7 @@ To untag a data store.
 ```
 The utility function for untagging a resource.
 
-```
+```java
     public static void untagMedicalImagingResource(MedicalImagingClient medicalImagingClient,
             String resourceArn,
             Collection<String> tagKeys) {
@@ -113,7 +113,7 @@ The utility function for untagging a resource.
 **SDK for JavaScript (v3)**
 To tag a data store.
 
-```
+```javascript
   try {
     const datastoreArn =
       "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012";
@@ -127,7 +127,7 @@ To tag a data store.
 ```
 The utility function for tagging a resource.
 
-```
+```javascript
 import { TagResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -160,7 +160,7 @@ export const tagResource = async (
 ```
 To list tags for a data store.
 
-```
+```javascript
   try {
     const datastoreArn =
       "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012";
@@ -172,7 +172,7 @@ To list tags for a data store.
 ```
 The utility function for listing a resource's tags.
 
-```
+```javascript
 import { ListTagsForResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -203,7 +203,7 @@ export const listTagsForResource = async (
 ```
 To untag a data store.
 
-```
+```javascript
   try {
     const datastoreArn =
       "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012";
@@ -215,7 +215,7 @@ To untag a data store.
 ```
 The utility function for untagging a resource.
 
-```
+```javascript
 import { UntagResourceCommand } from "@aws-sdk/client-medical-imaging";
 import { medicalImagingClient } from "../libs/medicalImagingClient.js";
 
@@ -257,14 +257,14 @@ export const untagResource = async (
 **SDK for Python (Boto3)**
 To tag a data store.
 
-```
+```python
     a_data_store_arn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012"
 
     medical_imaging_wrapper.tag_resource(data_store_arn, {"Deployment": "Development"})
 ```
 The utility function for tagging a resource.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -288,14 +288,14 @@ class MedicalImagingWrapper:
 ```
 To list tags for a data store.
 
-```
+```python
     a_data_store_arn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012"
 
     medical_imaging_wrapper.list_tags_for_resource(data_store_arn)
 ```
 The utility function for listing a resource's tags.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -323,14 +323,14 @@ class MedicalImagingWrapper:
 ```
 To untag a data store.
 
-```
+```python
     a_data_store_arn = "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012"
 
     medical_imaging_wrapper.untag_resource(data_store_arn, ["Deployment"])
 ```
 The utility function for untagging a resource.
 
-```
+```python
 class MedicalImagingWrapper:
     def __init__(self, health_imaging_client):
         self.health_imaging_client = health_imaging_client
@@ -356,7 +356,7 @@ class MedicalImagingWrapper:
 ```
 The following code instantiates the MedicalImagingWrapper object.
 
-```
+```python
     client = boto3.client("medical-imaging")
     medical_imaging_wrapper = MedicalImagingWrapper(client)
 ```

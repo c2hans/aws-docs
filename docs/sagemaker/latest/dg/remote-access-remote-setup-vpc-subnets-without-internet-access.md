@@ -44,7 +44,7 @@ The following are the recommended VPC endpoint policies that allow the necessary
 
 Use the following policy for the `com.amazonaws.{{REGION}}.ssm` endpoint:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -80,7 +80,7 @@ Use the following policy for the `com.amazonaws.{{REGION}}.ssm` endpoint:
 
 Use the following policy for the `com.amazonaws.{{REGION}}.ssmmessages` endpoint:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

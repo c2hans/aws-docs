@@ -115,7 +115,7 @@ When you customize bootstrapping, follow the bootstrap template contract to rema
 
 The bootstrap template should contain a resource to create an Amazon EC2 Systems Manager (SSM) parameter with a well-known name and an output to reflect the template’s version:
 
-```
+```yaml
 Resources:
   CdkBootstrapVersion:
     Type: AWS::SSM::Parameter

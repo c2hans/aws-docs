@@ -101,7 +101,7 @@ Output:
 **Tools for PowerShell V4**
 **Example 1: This example gets the patch compliance details for an instance.**
 
-```
+```powershell
 Get-SSMInstancePatch -InstanceId "i-08ee91c0b17045407"
 ```
 +  For API details, see [DescribeInstancePatches](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -109,7 +109,7 @@ Get-SSMInstancePatch -InstanceId "i-08ee91c0b17045407"
 **Tools for PowerShell V5**
 **Example 1: This example gets the patch compliance details for an instance.**
 
-```
+```powershell
 Get-SSMInstancePatch -InstanceId "i-08ee91c0b17045407"
 ```
 +  For API details, see [DescribeInstancePatches](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

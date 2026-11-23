@@ -48,7 +48,7 @@ You can use one of the following operations:
 
   1. Run the following command to find the billing transfer ID for inbound billings:
 
-     ```
+     ```bash
      $ C:\> aws organizations list-inbound-responsibility-transfers \
          --type BILLING
      ```
@@ -57,7 +57,7 @@ You can use one of the following operations:
 
   1. Run the following command to update the transfer:
 
-     ```
+     ```bash
      $ C:\> aws organizations update-responsibility-transfer \
          --id {{exampleid}}
          --name {{"Updated name for billing transfer"}}

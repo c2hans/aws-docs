@@ -43,7 +43,7 @@ There is no additional charge for cross-Region inference routing. You pay standa
 
 You can create and manage inference routers with the AWS CLI, the AWS SDKs, and AWS CloudFormation (resource types `AWS::SageMaker::InferenceRouter` and `AWS::SageMaker::EndpointPolicy`; see [Set up cross-account access with AWS CloudFormation](inference-router-cross-account.md#inference-router-cloudformation)). The SageMaker AI console doesn't support inference routers. You manage routers with the `sagemaker` client, and invoke them with a separate runtime service, SageMaker AI Inference Router Runtime (`sagemaker-inference-router-runtime` in the AWS CLI and the SDKs), not with `sagemaker-runtime`. Its endpoint is `inferencerouter-runtime.sagemaker.{{region}}.amazonaws.com`. To call a router from your Amazon VPC without crossing the internet, see [Invoke inference routers through an interface VPC endpoint](inference-router-security.md#inference-router-privatelink). For the AWS Regions where inference routers are available, and their service endpoints, see [SageMaker AI endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/sagemaker.html) in the *AWS General Reference*.
 
-Asynchronous routing (`InvokeInferenceRouterAsync`) isn't available in Asia Pacific (New Zealand), Asia Pacific (Jakarta), Asia Pacific (Hyderabad), Asia Pacific (Melbourne), Asia Pacific (Taipei), Europe (Milan), Israel (Tel Aviv), and Canada West (Calgary).
+Asynchronous routing (`InvokeInferenceRouterAsync`) isn't available in Asia Pacific (New Zealand), Asia Pacific (Jakarta), Asia Pacific (Hyderabad), Asia Pacific (Melbourne), Europe (Milan), Israel (Tel Aviv), and Canada West (Calgary).
 
 ## How the router chooses a destination
 <a name="inference-router-how"></a>
@@ -92,7 +92,7 @@ To keep an endpoint's capacity for requests from its own AWS Region, you can lim
 
 The limit is the percentage of `MaxInvocationsPerSecondPerInstance` multiplied by the number of `InService` instances, so it grows and shrinks with the endpoint. All production variants and inference components of the endpoint share it. For example, the following endpoint configuration limits requests from inference routers in other Regions to 25 per second on an endpoint with two instances.
 
-```
+```bash
 aws sagemaker create-endpoint-config \
     --endpoint-config-name {{my-endpoint-config}} \
     --production-variants file://{{production-variants.json}} \

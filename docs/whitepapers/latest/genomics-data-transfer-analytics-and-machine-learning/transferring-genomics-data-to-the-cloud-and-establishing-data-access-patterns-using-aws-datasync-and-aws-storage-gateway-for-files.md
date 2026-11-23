@@ -34,6 +34,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
 
 ![Process workflow using a run completion tracker script with AWS DataSync](https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image2.png)
 
+Figure 1: Process workflow using a run completion tracker script with AWS DataSync
+
  Figure 1 shows the process workflow using a run completion tracker script with AWS DataSync:
 
 1.  A technician loads a genomic sample on a sequencer.

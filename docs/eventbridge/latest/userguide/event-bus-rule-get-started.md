@@ -238,7 +238,7 @@ Save the following YAML code as a separate file to use as the CloudFormation tem
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: '[AWSDocs] EventBridge: event-bus-rule-get-started'
 
@@ -395,7 +395,7 @@ Outputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "[AWSDocs] EventBridge: event-bus-rule-get-started",

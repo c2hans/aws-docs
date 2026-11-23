@@ -12,7 +12,7 @@ By default, when you add a gate to a workflow, CodeCatalyst adds the full versio
 
 For example:
 
-```
+```yaml
 My-Gate:
   Identifier: aws/approval@v1
 ```

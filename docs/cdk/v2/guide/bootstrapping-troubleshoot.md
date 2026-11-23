@@ -67,7 +67,7 @@ When developing your CDK app, you must specify your custom qualifier in your syn
 
 **Example**
 
-```
+```javascript
 new MyStack(this, 'MyStack', {
   synthesizer: new DefaultStackSynthesizer({
     qualifier: 'abcde0123',
@@ -75,7 +75,7 @@ new MyStack(this, 'MyStack', {
 });
 ```
 
-```
+```javascript
 new MyStack(this, 'MyStack', {
   synthesizer: new DefaultStackSynthesizer({
     qualifier: 'abcde0123',
@@ -83,14 +83,14 @@ new MyStack(this, 'MyStack', {
 })
 ```
 
-```
+```python
 MyStack(self, "MyStack",
     synthesizer=DefaultStackSynthesizer(
         qualifier="abcde0123"
 ))
 ```
 
-```
+```java
 new MyStack(app, "MyStack", StackProps.builder()
   .synthesizer(DefaultStackSynthesizer.Builder.create()
     .qualifier("abcde0123")
@@ -99,7 +99,7 @@ new MyStack(app, "MyStack", StackProps.builder()
 )
 ```
 
-```
+```csharp
 new MyStack(app, "MyStack", new StackProps
 {
     Synthesizer = new DefaultStackSynthesizer(new DefaultStackSynthesizerProps
@@ -109,7 +109,7 @@ new MyStack(app, "MyStack", new StackProps
 });
 ```
 
-```
+```go
 func NewMyStack(scope constructs.Construct, id string, props *MyStackProps) awscdk.Stack {
 	var sprops awscdk.StackProps
 	if props != nil {
@@ -128,7 +128,7 @@ func NewMyStack(scope constructs.Construct, id string, props *MyStackProps) awsc
 ```
 You can also specify the new qualifier in the `cdk.json` file of your CDK project:
 
-```
+```json
 {
   "app": "...",
   "context": {
@@ -146,7 +146,7 @@ When developing your CDK app, you must specify your new bucket name in your synt
 
 **Example**
 
-```
+```javascript
 new MyStack(this, 'MyStack', {
   synthesizer: new DefaultStackSynthesizer({
     fileAssetsBucketName: 'my-new-bucket-name',
@@ -154,7 +154,7 @@ new MyStack(this, 'MyStack', {
 });
 ```
 
-```
+```javascript
 new MyStack(this, 'MyStack', {
   synthesizer: new DefaultStackSynthesizer({
     fileAssetsBucketName: 'my-new-bucket-name',
@@ -162,14 +162,14 @@ new MyStack(this, 'MyStack', {
 })
 ```
 
-```
+```python
 MyStack(self, "MyStack",
     synthesizer=DefaultStackSynthesizer(
         file_assets_bucket_name='my-new-bucket-name'
 ))
 ```
 
-```
+```java
 new MyStack(app, "MyStack", StackProps.builder()
   .synthesizer(DefaultStackSynthesizer.Builder.create()
     .fileAssetsBucketName("my-new-bucket-name")
@@ -178,7 +178,7 @@ new MyStack(app, "MyStack", StackProps.builder()
 )
 ```
 
-```
+```csharp
 new MyStack(app, "MyStack", new StackProps
 {
     Synthesizer = new DefaultStackSynthesizer(new DefaultStackSynthesizerProps
@@ -188,7 +188,7 @@ new MyStack(app, "MyStack", new StackProps
 });
 ```
 
-```
+```go
 func NewMyStack(scope constructs.Construct, id string, props *MyStackProps) awscdk.Stack {
 	var sprops awscdk.StackProps
 	if props != nil {

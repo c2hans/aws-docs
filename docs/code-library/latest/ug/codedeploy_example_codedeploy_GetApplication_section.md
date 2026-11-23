@@ -40,7 +40,7 @@ For more information, see [View application details with CodeDeploy](https://doc
 **Tools for PowerShell V4**
 **Example 1: This example gets information about the specified application.**
 
-```
+```powershell
 Get-CDApplication -ApplicationName CodeDeployDemoApplication
 ```
 **Output:**
@@ -55,7 +55,7 @@ e07fb938-091e-4f2f-8963-4d3e8EXAMPLE    CodeDeployDemoApplication    7/20/2015 9
 **Tools for PowerShell V5**
 **Example 1: This example gets information about the specified application.**
 
-```
+```powershell
 Get-CDApplication -ApplicationName CodeDeployDemoApplication
 ```
 **Output:**

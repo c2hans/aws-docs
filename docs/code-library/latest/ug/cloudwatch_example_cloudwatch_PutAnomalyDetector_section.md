@@ -14,7 +14,7 @@ The following code examples show how to use `PutAnomalyDetector`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Add an anomaly detector for a single metric.
     /// </summary>
@@ -56,7 +56,7 @@ For more information, see [Using CloudWatch anomaly detection](https://docs.aws.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Adds an anomaly detector for the given file.
      *
@@ -109,7 +109,7 @@ For more information, see [Using CloudWatch anomaly detection](https://docs.aws.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun addAnomalyDetector(
     namespaceVal: String,
     metricNameVal: String,

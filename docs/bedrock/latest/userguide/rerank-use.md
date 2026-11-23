@@ -53,7 +53,7 @@ The format of the `RerankSource` object that you include depends on the format o
 
 If the document is a string, then specify the value of the `type` field of the [RerankDocument](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RerankDocument.html) object as `TEXT` and include the document in the `text` field. For example:
 
-```
+```json
 {
     "inlineDocumentSource": {
         "textDocument": {
@@ -70,7 +70,7 @@ If the document is a string, then specify the value of the `type` field of the [
 
 If the document is a JSON object, then specify the value of the `type` field in the [RerankDocument](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RerankDocument.html) object as `JSON` and include the document in the `jsonDocument` field. For example:
 
-```
+```json
 {
     "inlineDocumentSource": {
         "jsonDocument": JSON value,
@@ -96,7 +96,7 @@ The following examples show how to call the Rerank API using the AWS SDKs.
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agent-runtime', region_name='us-east-1')
@@ -138,7 +138,7 @@ for result in response['results']:
 ------
 #### [ Node.js ]
 
-```
+```javascript
 import { BedrockAgentRuntimeClient, RerankCommand } from "@aws-sdk/client-bedrock-agent-runtime";
 
 const client = new BedrockAgentRuntimeClient({ region: "us-east-1" });

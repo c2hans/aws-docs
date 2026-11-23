@@ -68,7 +68,7 @@ In this step, you'll use the rule query statement to format the data from the im
 
 A sample message payload received from a weather sensor device looks like this:
 
-```
+```json
 {
   "temperature": 28,
   "humidity": 80,
@@ -82,7 +82,7 @@ A sample message payload received from a weather sensor device looks like this:
 
 For the database entry, you'll use the rule query statement to flatten the structure of the message payload to look like this:
 
-```
+```json
 {
   "temperature": 28,
   "humidity": 80,
@@ -195,7 +195,7 @@ Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com/iot
 
    1. For **Message payload**, enter the following sample data.
 
-      ```
+      ```json
       {
         "temperature": 28,
         "humidity": 80,

@@ -62,7 +62,7 @@ The following example shows how you can use `"${Proton::CURRENT_VAL}"` in a `spe
 
 Spec:
 
-```
+```yaml
 proton: ServiceSpec
 
 pipeline:
@@ -83,7 +83,7 @@ instances:
 
 Command: to update
 
-```
+```sh
 $ aws proton update-service-instance \
     --name "{{instance-one}}" \
     --service-name "{{simple-svc}}" \
@@ -95,7 +95,7 @@ $ aws proton update-service-instance \
 
 Response:
 
-```
+```json
 {
     "serviceInstance": {
         "arn": "arn:aws:proton:region-id:123456789012:service/simple-svc/service-instance/instance-one",
@@ -115,7 +115,7 @@ Response:
 
 Command: to get and confirm status
 
-```
+```sh
 $ aws proton get-service-instance \
     --name "{{instance-one}}" \
     --service-name "{{simple-svc}}"
@@ -123,7 +123,7 @@ $ aws proton get-service-instance \
 
 Response:
 
-```
+```json
 {
     "serviceInstance": {
         "arn": "arn:aws:proton:region-id:123456789012:service/simple-svc/service-instance/instance-one",
@@ -168,7 +168,7 @@ A wait condition is included in the template used for this example so that the c
 
 Command: to cancel
 
-```
+```sh
 $ aws proton cancel-service-instance-deployment \
     --service-instance-name "{{instance-one}}" \
     --service-name "{{simple-svc}}"
@@ -176,7 +176,7 @@ $ aws proton cancel-service-instance-deployment \
 
 Response:
 
-```
+```json
 {
     "serviceInstance": {
         "arn": "arn:aws:proton:region-id:123456789012:service/simple-svc/service-instance/instance-one",
@@ -197,7 +197,7 @@ Response:
 
 Command: to get and confirm status
 
-```
+```sh
 $ aws proton get-service-instance \
     --name "{{instance-one}}" \
     --service-name "{{simple-svc}}"
@@ -205,7 +205,7 @@ $ aws proton get-service-instance \
 
 Response:
 
-```
+```json
 {
     "serviceInstance": {
         "arn": "arn:aws:proton:region-id:123456789012:service/simple-svc/service-instance/instance-one",

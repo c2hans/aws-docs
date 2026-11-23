@@ -30,7 +30,7 @@ To list the shards in a Kinesis data stream, use the [ListShards](https://docs.a
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -38,7 +38,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $kinesisClient = new Aws\Kinesis\KinesisClient([
     'profile' => 'default',
     'version' => '2013-12-02',
@@ -70,7 +70,7 @@ To update the shard count of a Kinesis data stream, use the [UpdateShardCount](h
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -78,7 +78,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $kinesisClient = new Aws\Kinesis\KinesisClient([
     'profile' => 'default',
     'version' => '2013-12-02',

@@ -16,7 +16,7 @@ To port FreeRTOS for your device, see the [FreeRTOS Porting Guide](https://docs.
 
 You need to configure your AWS credentials for AWS IoT Device Tester to communicate with the AWS Cloud. For more information, see [Set up AWS Credentials and Region for Development](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html). Valid AWS credentials are specified in the `{{devicetester_extract_location}}/devicetester_freertos_{{[win|mac|linux]}}/configs/config.json` configuration file.
 
-```
+```json
 "auth": {
    "method": "environment"
 }

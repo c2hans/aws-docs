@@ -14,7 +14,7 @@ The following code examples show how to get started using EventBridge Scheduler.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge Scheduler#code-examples).
 
-```
+```csharp
 public static class HelloScheduler
 {
     static async Task Main(string[] args)
@@ -53,7 +53,7 @@ public static class HelloScheduler
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/scheduler#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.scheduler.SchedulerAsyncClient;
 import software.amazon.awssdk.services.scheduler.model.ListSchedulesRequest;
 import software.amazon.awssdk.services.scheduler.model.ScheduleSummary;
@@ -110,7 +110,7 @@ public class HelloScheduler {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/scheduler#code-examples).
 
-```
+```python
 import boto3
 
 def hello_scheduler(scheduler_client):

@@ -135,7 +135,7 @@ Type: String
 
 The following shows the `AgentCrossRegionRoutingConfiguration` object for an agent signed in to us-east-1 and configured to handle contacts from both us-west-2 and us-east-1.
 
-```
+```json
 "AgentCrossRegionRoutingConfiguration": {
     "ConfiguredRegions": ["us-west-2", "us-east-1"],
     "CurrentRegion": "us-east-1"

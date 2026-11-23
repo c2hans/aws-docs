@@ -148,7 +148,7 @@ The following policy allows DKIM signing key replication from a parent identity 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

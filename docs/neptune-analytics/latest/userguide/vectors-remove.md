@@ -54,7 +54,7 @@ RETURN n, success
 
 Here is an example of the output returned by `.vectors.remove` when run against the sample Wikipedia dataset using the following query:
 
-```
+```json
 aws neptune-graph execute-query \
   --graph-identifier ${graphIdentifier} \
   --query-string "MATCH (n {`~id`: '1'})

@@ -23,7 +23,7 @@ Client traffic is sent to the proxy Service, which forwards requests to the sour
 
 Add a `traffic` section to your workflow configuration and edit it from the Migration Console pod:
 
-```
+```bash
 workflow configure edit
 ```
 
@@ -66,7 +66,7 @@ By default, if your workflow includes `traffic.proxies` or `traffic.s3Sources` a
 
 Define `kafkaClusterConfiguration` when you need to tune the workflow-managed Kafka cluster, use more than one Kafka cluster, or point Migration Assistant at an existing Kafka or Amazon MSK cluster. The `kafka` and `kafkaTopic` fields live next to `proxyConfig`, not inside it. The `traffic.replayers` map is required by the workflow schema; use an empty object while you are configuring capture only, then add replayer entries when you are ready to replay.
 
-```
+```json
 {
   "kafkaClusterConfiguration": {
     "default": {
@@ -99,7 +99,7 @@ The workflow-managed baseline is a three-broker combined controller/broker Kafka
 
 For an existing Kafka or Amazon MSK cluster, use `kafkaClusterConfiguration.<cluster>.existing` with `kafkaConnection`, optional default `kafkaTopic`, and an explicit auth configuration. The workflow profile supports `auth.type: none` for unauthenticated Kafka and `auth.type: scram-sha-512` for SCRAM; `msk-iam` is not a valid workflow `auth.type` value. For SCRAM, `secretName` must name a Kubernetes Secret in the `ma` namespace with a `password` key, `caSecretName` must name a Secret with the cluster CA certificate at `ca.crt`, and `kafkaUserName` should be the Kafka principal for that password.
 
-```
+```json
 {
   "kafkaClusterConfiguration": {
     "external-kafka": {
@@ -129,7 +129,7 @@ For an existing Kafka or Amazon MSK cluster, use `kafkaClusterConfiguration.<clu
 
 For an existing SCRAM-protected Kafka cluster, configure the client identity and trust material explicitly:
 
-```
+```json
 {
   "kafkaClusterConfiguration": {
     "external-kafka": {
@@ -166,7 +166,7 @@ To require mutual TLS client authentication, add `clientAuth` under the `certMan
 
 The following example serves the proxy with an existing Kubernetes TLS secret and requires client certificates signed by the CA stored in a ConfigMap:
 
-```
+```json
 {
   "traffic": {
     "proxies": {
@@ -200,7 +200,7 @@ The following example serves the proxy with an existing Kubernetes TLS secret an
 
 If your source cluster routes on the `Host` header or you need to inject a static header on captured requests, use `setHeader` in the proxy configuration. For example:
 
-```
+```json
 {
   "setHeader": ["Host", "source.example.com"]
 }
@@ -211,7 +211,7 @@ If your source cluster routes on the `Host` header or you need to inject a stati
 
 After the workflow creates the proxy, find the Service endpoint that clients should target:
 
-```
+```bash
 kubectl get svc -n ma
 ```
 
@@ -222,7 +222,7 @@ On Amazon EKS, the external address of the load-balancer-backed Service is the e
 
 Confirm that traffic is flowing through the proxy and being recorded before you start the snapshot and backfill phase. Use the Workflow CLI to watch the run:
 
-```
+```bash
 workflow status
 workflow manage
 ```

@@ -17,7 +17,7 @@ After creating namespaces, you can view a list of the namespaces you've created 
 #### [ AWS CLI ]
 + List namespaces with the `[list-namespaces](https://docs.aws.amazon.com/cli/latest/reference/servicediscovery/list-namespaces.html)` command.
 
-  ```
+  ```python
   aws servicediscovery list-namespaces
   ```
 
@@ -35,7 +35,7 @@ After creating namespaces, you can view a list of the namespaces you've created 
 
 1. List namespaces with `list_namespaces()`.
 
-   ```
+   ```python
    response = client.list_namespaces()
    # If you want to see the response
    print(response)

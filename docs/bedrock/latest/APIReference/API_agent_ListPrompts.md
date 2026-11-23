@@ -112,7 +112,7 @@ HTTP Status Code: 400
 
 The following request returns information about the working draft of each prompt in the account:
 
-```
+```json
 GET /prompts/ HTTP/1.1
 ```
 
@@ -121,7 +121,7 @@ GET /prompts/ HTTP/1.1
 
 The following request returns information about all versions of the prompt in the account with the identifier `PROMPT12345`:
 
-```
+```json
 GET /prompts?promptIdentifier=PROMPT12345 HTTP/1.1
 ```
 

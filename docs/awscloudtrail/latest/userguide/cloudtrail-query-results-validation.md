@@ -345,7 +345,7 @@ The sample snippet shows:
 + How to verify the sign file's signature.
 + How to calculate the hash value for the query result file and compare it with the `fileHashValue` listed in the sign file to verify the authenticity of the query result file.
 
-```
+```java
 import org.apache.commons.codec.binary.Hex;
 import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
 import org.bouncycastle.asn1.pkcs.RSAPublicKey;

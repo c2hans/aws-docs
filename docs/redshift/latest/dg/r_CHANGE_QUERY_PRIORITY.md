@@ -36,7 +36,7 @@ None
 
 To show the column `query_priority` in the STV\_WLM\_QUERY\_STATE system table, use the following example.
 
-```
+```sql
 SELECT query, service_class, query_priority, state
 FROM stv_wlm_query_state WHERE service_class = 101;
 
@@ -50,7 +50,7 @@ FROM stv_wlm_query_state WHERE service_class = 101;
 
 To show the results of a superuser running the function `change_query_priority` to change the priority to `CRITICAL`, use the following example.
 
-```
+```sql
 SELECT CHANGE_QUERY_PRIORITY(1076, 'Critical');
 
 +-------------------------------------------------------------------------------+

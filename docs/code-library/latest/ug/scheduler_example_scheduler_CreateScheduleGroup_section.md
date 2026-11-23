@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge Scheduler#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Creates a new schedule group in Amazon EventBridge Scheduler.
     /// </summary>
@@ -57,7 +57,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/scheduler#code-examples).
 
-```
+```java
     /**
      * Creates a new schedule group.
      *
@@ -97,7 +97,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/scheduler#code-examples).
 
-```
+```python
 class SchedulerWrapper:
     def __init__(self, eventbridge_scheduler_client: client):
         self.scheduler_client = eventbridge_scheduler_client
@@ -146,7 +146,7 @@ class SchedulerWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/scd#code-examples).
 
-```
+```sap-abap
     TRY.
         " Example iv_name = 'my-schedule-group'
         DATA(lo_result) = lo_scd->createschedulegroup(

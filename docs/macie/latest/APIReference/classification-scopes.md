@@ -51,7 +51,7 @@ Retrieves a subset of information about the classification scope for an account.
 #### ListClassificationScopesResponse schema
 <a name="classification-scopes-response-body-listclassificationscopesresponse-example"></a>
 
-```
+```json
 {
   "classificationScopes": [
     {
@@ -66,7 +66,7 @@ Retrieves a subset of information about the classification scope for an account.
 #### ValidationException schema
 <a name="classification-scopes-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -75,7 +75,7 @@ Retrieves a subset of information about the classification scope for an account.
 #### AccessDeniedException schema
 <a name="classification-scopes-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -84,7 +84,7 @@ Retrieves a subset of information about the classification scope for an account.
 #### ThrottlingException schema
 <a name="classification-scopes-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -93,7 +93,7 @@ Retrieves a subset of information about the classification scope for an account.
 #### InternalServerException schema
 <a name="classification-scopes-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

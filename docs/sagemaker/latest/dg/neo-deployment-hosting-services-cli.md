@@ -21,7 +21,7 @@ From [Neo Inference Container Images](https://docs.aws.amazon.com/sagemaker/late
 
 1. Create a `create_model.json` file. Within the file, specify the name of the model, the image URI, the path to the `model.tar.gz` file in your Amazon S3 bucket, and your SageMaker AI execution role:
 
-   ```
+   ```json
    {
        "ModelName": {{"insert model name"}},
        "PrimaryContainer": {
@@ -35,7 +35,7 @@ From [Neo Inference Container Images](https://docs.aws.amazon.com/sagemaker/late
 
    If you trained your model using SageMaker AI, specify the following environment variable:
 
-   ```
+   ```json
    "Environment": {
        "SAGEMAKER_SUBMIT_DIRECTORY" : {{"[Full S3 path for *.tar.gz file containing the training script]"}}
    }
@@ -46,7 +46,7 @@ From [Neo Inference Container Images](https://docs.aws.amazon.com/sagemaker/late
 ------
 #### [ MXNet and PyTorch ]
 
-   ```
+   ```json
    "Environment": {
        "SAGEMAKER_PROGRAM": "inference.py",
        "SAGEMAKER_SUBMIT_DIRECTORY": {{"/opt/ml/model/code"}},
@@ -59,7 +59,7 @@ From [Neo Inference Container Images](https://docs.aws.amazon.com/sagemaker/late
 ------
 #### [ TensorFlow ]
 
-   ```
+   ```json
    "Environment": {
        "SAGEMAKER_PROGRAM": "inference.py",
        "SAGEMAKER_SUBMIT_DIRECTORY": {{"/opt/ml/model/code"}},
@@ -74,7 +74,7 @@ The `AmazonSageMakerFullAccess` and `AmazonS3ReadOnlyAccess` policies must be at
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws sagemaker create-model --cli-input-json file://create_model.json
    ```
 
@@ -85,7 +85,7 @@ The `AmazonSageMakerFullAccess` and `AmazonS3ReadOnlyAccess` policies must be at
 
 After creating a SageMaker AI model, create the endpoint configuration using the `create-endpoint-config` API. To do this, create a JSON file with your endpoint configuration specifications. For example, you can use the following code template and save it as `create_config.json`:
 
-```
+```json
 {
     "EndpointConfigName": {{"<provide your endpoint config name>"}},
     "ProductionVariants": [
@@ -102,7 +102,7 @@ After creating a SageMaker AI model, create the endpoint configuration using the
 
 Now run the following AWS CLI command to create your endpoint configuration:
 
-```
+```bash
 aws sagemaker create-endpoint-config --cli-input-json file://create_config.json
 ```
 
@@ -113,7 +113,7 @@ For the full syntax of the `create-endpoint-config` API, see [`create-endpoint-c
 
 After you have created your endpoint configuration, create an endpoint using the `create-endpoint` API:
 
-```
+```bash
 aws sagemaker create-endpoint --endpoint-name {{'<provide your endpoint name>'}} --endpoint-config-name {{'<insert your endpoint config name>'}}
 ```
 

@@ -31,7 +31,7 @@ npm install --save @aws-cdk/toolkit-lib
 
 Create a CDK Toolkit instance to perform programmatic actions on your CDK app.
 
-```
+```typescript
 import { Toolkit } from '@aws-cdk/toolkit-lib';
 
 const toolkit = new Toolkit({
@@ -48,7 +48,7 @@ A cloud assembly source provides instructions for generating CloudFormation temp
 
 1.  **An inline assembly builder function**:
 
-   ```
+   ```typescript
    import * as cdk from 'aws-cdk-lib';
 
    const cloudAssemblySource = await toolkit.fromAssemblyBuilder(async () => {
@@ -60,7 +60,7 @@ A cloud assembly source provides instructions for generating CloudFormation temp
 
 1.  **An existing CDK app file**:
 
-   ```
+   ```typescript
    const cloudAssemblySource = await toolkit.fromCdkApp("ts-node app.ts");
    ```
 
@@ -71,7 +71,7 @@ For more information, see [Configure cloud assembly sources](toolkit-library-con
 
 Now that you’ve created a CDK Toolkit instance and cloud assembly source, you can start to define programmatic actions. The following is a basic example that creates a deployment of the `MyStack` stack:
 
-```
+```typescript
 import { StackSelectionStrategy } from '@aws-cdk/toolkit-lib';
 
 await toolkit.deploy(cloudAssemblySource, {

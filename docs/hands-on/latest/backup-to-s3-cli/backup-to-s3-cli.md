@@ -134,7 +134,7 @@ In this step, you will use the AWS CLI to create a bucket in Amazon S3 and copy 
 
    Creating a bucket is optional if you already have a bucket created that you want to use. To create a new bucket named my-first-backup-bucket type:
 
-   ```
+   ```bash
    aws s3 mb s3://my-first-backup-bucket
    ```
 **Note**
@@ -145,7 +145,7 @@ Bucket naming has some restrictions; one of those restrictions is that bucket na
 
    To upload the file **my first backup.bak** located in the local directory (`C:\users`) to the S3 bucket **my-first-backup-bucket**, you would use the following command:
 
-   ```
+   ```bash
    aws s3 cp “C:\users\my first backup.bak” s3://my-first-backup-bucket/
    ```
 
@@ -156,7 +156,7 @@ Bucket naming has some restrictions; one of those restrictions is that bucket na
 
    To download **my-first-backup.bak** from S3 to the local directory we would reverse the order of the commands as follows:
 
-   ```
+   ```bash
    aws s3 cp s3://my-first-backup-bucket/my-first-backup.bak ./
    ```
 ![Using the aws s3 cp command to download from an S3 bucket.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/oxl-bda-interface-1.png)
@@ -165,7 +165,7 @@ Bucket naming has some restrictions; one of those restrictions is that bucket na
 
    To delete **my-first-backup.bak** from your **my-first-backup-bucket** bucket, use the following command:
 
-   ```
+   ```bash
    aws s3 rm s3://my-first-backup-bucket/my-first-backup.bak
    ```
 ![Using the aws s3 rm command to delete a file from an S3 bucket.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/interface.png)

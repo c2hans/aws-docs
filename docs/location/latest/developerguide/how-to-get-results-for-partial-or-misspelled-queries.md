@@ -19,7 +19,7 @@ The Suggest API enables applications to complete user queries for places or cate
 ------
 #### [ Sample request ]
 
-```
+```json
 {
   "QueryText": "Effel tow",
   "Filter": {
@@ -36,7 +36,7 @@ The Suggest API enables applications to complete user queries for places or cate
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -76,7 +76,7 @@ The Suggest API enables applications to complete user queries for places or cate
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/suggest?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -93,7 +93,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places suggest --key ${YourKey} \
 --query-text "Effel tow" \
 --filter '{"Circle": {"Radius": 1000, "Center": [2.3431932014695382, 48.858844492141145]}, "IncludeCountries": ["FRA"]}' \
@@ -107,7 +107,7 @@ aws geo-places suggest --key ${YourKey} \
 
 Use filters such as `Filter.IncludeCountries` or `Filter.BoundingBox` with `BiasPosition`. These filters can help narrow down possible results and improve accuracy.
 
-```
+```json
 {
   "QueryText": "Effel tow",
   "BiasPosition": [2.2982750966095398, 48.856078089325294],

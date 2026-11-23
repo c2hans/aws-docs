@@ -14,7 +14,7 @@ The `endpoint` and `capability` data elements are used to describe a device in t
 
 The `endpoint` represents the logical interfaces or services offered by the feature.
 
-```
+```JSON
 {
     "endpointId": { "type":"string" },
     "capabilities": Capability[]
@@ -25,7 +25,7 @@ The `endpoint` represents the logical interfaces or services offered by the feat
 
 The `capability` represents the device capabilities.
 
-```
+```JSON
 {
     "$id": "string",                // Schema identifier (e.g. /schema-versions/capability/matter.OnOff@1.4)
     "name": "string",               // Human readable name
@@ -40,7 +40,7 @@ For the `capability` data element, there are three items that comprise that item
 + **Property**: States that are held by the device, such as the current brightness level attribute of a dimmable light.
   +
 
-    ```
+    ```JSON
     {
         "name":                      // Property Name is outside of Property Entity
         "value": Value,              // value represented in any type e.g. 4, "A", []
@@ -54,7 +54,7 @@ For the `capability` data element, there are three items that comprise that item
 + **Action**: Tasks that may be performed, such as locking a door on a door lock. Actions may generate responses and results.
   +
 
-    ```
+    ```JSON
     {
         "name": { "$ref": "/schema-versions/definition/aws.name@1.0" }, //required
         "parameters": Map<String name, JSONNode value>,
@@ -68,7 +68,7 @@ For the `capability` data element, there are three items that comprise that item
 + **Event**: Essentially a record of past state transitions. While `property` represent the current states, events are a journal of the past, and include a monotonically increasing counter, a timestamp, and a priority. They enable capturing state transitions, as well as data modeling that is not readily achieved with `property`.
   +
 
-    ```
+    ```JSON
     {
         "name": { "$ref": "/schema-versions/definition/aws.name@1.0" },        //required
         "parameters": Map<String name, JSONNode value>

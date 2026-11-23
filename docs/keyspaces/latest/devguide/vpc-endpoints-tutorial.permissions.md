@@ -44,7 +44,7 @@ The procedures in this step demonstrate how to configure rules and permissions f
 **Note**
 The minimum permissions required for an IAM user or role to access Amazon Keyspaces are read permissions to the system table, as shown in the following policy. For more information about policy-based permissions, see [Amazon Keyspaces identity-based policy examples](security_iam_id-based-policy-examples.md).
 
-   ```
+   ```JSON
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -75,7 +75,7 @@ The managed policies `AmazonKeyspacesReadOnlyAccess_v2` and `AmazonKeyspacesFull
 
    1. Copy the following policy and choose **Next: Tags**.
 
-      ```
+      ```JSON
       {
          "Version":"2012-10-17",
          "Statement":[

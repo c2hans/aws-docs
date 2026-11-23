@@ -30,7 +30,7 @@ The following code example shows how to get started using SageMaker AI.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sagemaker#code-examples).
 
-```
+```javascript
 import {
   SageMakerClient,
   ListNotebookInstancesCommand,
@@ -84,7 +84,7 @@ The following code example shows how to use `CreatePipeline`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sagemaker#code-examples).
 A function that creates a SageMaker AI pipeline using a locally provided JSON definition.
 
-```
+```javascript
 /**
  * Create the Amazon SageMaker pipeline using a JSON pipeline definition. The definition
  * can also be provided as an Amazon S3 object using PipelineDefinitionS3Location.
@@ -160,7 +160,7 @@ The following code example shows how to use `DeletePipeline`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sagemaker#code-examples).
 The syntax for deleting a SageMaker AI pipeline. This code is part of a larger function. Refer to 'Create a pipeline' or the GitHub repository for more context.
 
-```
+```javascript
       await sagemakerClient.send(
         new DeletePipelineCommand({ PipelineName: name }),
       );
@@ -176,7 +176,7 @@ The following code example shows how to use `DescribePipelineExecution`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sagemaker#code-examples).
 Wait for a SageMaker AI pipeline execution to succeed, fail, or stop.
 
-```
+```javascript
 /**
  * Poll the executing pipeline until the status is 'SUCCEEDED', 'STOPPED', or 'FAILED'.
  * @param {{ arn: string, sagemakerClient: import('@aws-sdk/client-sagemaker').SageMakerClient, wait: (ms: number) => Promise<void>}} props
@@ -226,7 +226,7 @@ The following code example shows how to use `StartPipelineExecution`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sagemaker#code-examples).
 Start a SageMaker AI pipeline execution.
 
-```
+```javascript
 /**
  * Start the execution of the Amazon SageMaker pipeline. Parameters that are
  * passed in are used in the AWS Lambda function.
@@ -332,7 +332,7 @@ For more information, see [Create and run SageMaker pipelines using AWS SDKs on 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sagemaker#code-examples).
 The following file excerpt contains functions that use the SageMaker AI client to manage a pipeline.
 
-```
+```javascript
 import { readFileSync } from "node:fs";
 
 import {
@@ -1170,7 +1170,7 @@ export async function getObject({ bucket, s3Client }) {
 ```
 This function is an excerpt from a file that uses the preceding library functions to set up a SageMaker AI pipeline, execute it, and delete all created resources.
 
-```
+```javascript
 import { retry, wait } from "@aws-doc-sdk-examples/lib/utils/util-timers.js";
 import {
   attachPolicy,

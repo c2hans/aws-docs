@@ -117,7 +117,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of ListAgents.
 
-```
+```json
 POST /agents/ HTTP/1.1
 Content-type: application/json
 

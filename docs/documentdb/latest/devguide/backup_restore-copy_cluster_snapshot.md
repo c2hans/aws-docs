@@ -148,7 +148,7 @@ aws docdb copy-db-cluster-snapshot ^
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 {
     "DBClusterSnapshot": {
         "AvailabilityZones": [
@@ -195,7 +195,7 @@ aws docdb copy-db-cluster-snapshot ^
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 {
     "DBClusterSnapshot": {
         "AvailabilityZones": [
@@ -247,7 +247,7 @@ aws docdb copy-db-cluster-snapshot ^
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 {
     "DBClusterSnapshot": {
         "AvailabilityZones": [],
@@ -293,7 +293,7 @@ aws docdb copy-db-cluster-snapshot ^
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 {
  "DBClusterSnapshots": [
  {
@@ -340,7 +340,7 @@ aws docdb copy-db-cluster-snapshot ^
 ```
 Output from this operation looks something like the following.
 
-```
+```json
 {
  "DBClusterSnapshots": [
  {

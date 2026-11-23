@@ -18,8 +18,8 @@ Required: Yes
  ** FunctionARN **   <a name="cloudfront-Type-FunctionAssociation-FunctionARN"></a>
 The Amazon Resource Name (ARN) of the function.
 Type: String
-Length Constraints: Minimum length of 0. Maximum length of 108.
-Pattern: `arn:aws:cloudfront::[0-9]{12}:function\/[a-zA-Z0-9-_]{1,64}`
+Length Constraints: Minimum length of 0. Maximum length of 111.
+Pattern: `arn:aws(-[a-z]+)*:cloudfront::[0-9]{12}:function\/[a-zA-Z0-9-_]{1,64}`
 Required: Yes
 
 ## See Also

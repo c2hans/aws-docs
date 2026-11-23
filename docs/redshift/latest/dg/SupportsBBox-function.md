@@ -33,7 +33,7 @@ If *geom* is null, then null is returned.
 
 The following SQL returns true because the input point geometry supports being encoded with a bounding box.
 
-```
+```sql
 SELECT SupportsBBox(AddBBox(ST_GeomFromText('POLYGON((0 0,1 0,0 1,0 0))')));
 ```
 
@@ -45,7 +45,7 @@ t
 
 The following SQL returns false because the input point geometry doesn't support being encoded with a bounding box.
 
-```
+```sql
 SELECT SupportsBBox(DropBBox(ST_GeomFromText('POLYGON((0 0,1 0,0 1,0 0))')));
 ```
 

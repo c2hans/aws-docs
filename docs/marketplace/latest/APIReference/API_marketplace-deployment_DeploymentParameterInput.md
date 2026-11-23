@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 The shape containing the requested deployment parameter name and secretString.
 
 **Note**
-To support AWS CloudFormation dynamic references to this resource using Quick Launch, this value must match a parameter defined in the CloudFormation templated provided to buyers.
+To support AWS CloudFormation dynamic references to this resource using Quick Launch, this value must match a parameter defined in the CloudFormation template provided to buyers.
 
 ## Contents
 <a name="API_marketplace-deployment_DeploymentParameterInput_Contents"></a>

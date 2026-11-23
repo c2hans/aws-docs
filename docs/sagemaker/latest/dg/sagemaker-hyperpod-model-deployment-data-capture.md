@@ -146,13 +146,13 @@ HP_ARN={{HYPERPOD_CLUSTER_ARN}}
 
 Connect to your EKS cluster:
 
-```
+```bash
 aws eks update-kubeconfig --region {{REGION}} --name {{EKS_CLUSTER_NAME}}
 ```
 
 Update the addon configuration:
 
-```
+```bash
 VERSION=$(aws eks describe-addon --cluster-name $CLUSTER --addon-name amazon-sagemaker-hyperpod-inference --region $REGION --query 'addon.addonVersion' --output text)
 CURRENT_CONFIG=$(aws eks describe-addon --cluster-name $CLUSTER --addon-name amazon-sagemaker-hyperpod-inference --region $REGION --query 'addon.configurationValues' --output text)
 NEW_CONFIG=$(echo "$CURRENT_CONFIG" | jq --arg arn "$HP_ARN" '. + {hyperpodClusterArn: $arn}')

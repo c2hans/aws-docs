@@ -70,7 +70,7 @@ To allow the Amazon Bedrock service principal to access the Lambda function, [at
 
      If you prefer to define the function by using a JSON object, choose **JSON editor** instead of **Table**. The JSON object format is as follows (each key in the `parameters` object is a parameter name that you provide):
 
-     ```
+     ```json
      {
          "name": "string",
          "description": "string",
@@ -141,7 +141,7 @@ The following list describes the fields in the request:
 
     The general format of the `functionSchema` is as follows:
 
-    ```
+    ```json
     "functionSchema": [
         {
             "name": "string",
@@ -163,7 +163,7 @@ The following list describes the fields in the request:
 
     1. For the following format, you can directly paste the JSON or YAML-formatted OpenAPI schema as the value.
 
-       ```
+       ```json
        "apiSchema": {
            "payload": "string"
        }
@@ -171,7 +171,7 @@ The following list describes the fields in the request:
 
     1. For the following format, specify the Amazon S3 bucket name and object key where the OpenAPI schema is stored.
 
-       ```
+       ```json
        "apiSchema": {
            "s3": {
                "s3BucketName": "string",
@@ -205,7 +205,7 @@ The following list describes the fields in the request:
 </tbody>
 </table>
 
-  ```
+  ```python
       def create_agent_action_group(
               self, name, description, agent_id, agent_version, function_arn, api_schema
       ):

@@ -28,7 +28,7 @@ The following code example shows how to get started using AWS Key Management Ser
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.kms.KmsAsyncClient;
 import software.amazon.awssdk.services.kms.model.ListKeysRequest;
 import software.amazon.awssdk.services.kms.paginators.ListKeysPublisher;
@@ -102,7 +102,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 Run a scenario at a command prompt.
 
-```
+```java
 import software.amazon.awssdk.core.SdkBytes;
 import software.amazon.awssdk.regions.Region;
 import org.slf4j.Logger;
@@ -716,7 +716,7 @@ public class KMSScenario {
 ```
 Define a class that wraps KMS actions.
 
-```
+```java
 public class KMSActions {
     private static final Logger logger = LoggerFactory.getLogger(KMSActions.class);
     private static KmsAsyncClient kmsAsyncClient;
@@ -1344,7 +1344,7 @@ The following code example shows how to use `CreateAlias`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Creates a custom alias for the specified target key asynchronously.
      *
@@ -1386,7 +1386,7 @@ The following code example shows how to use `CreateGrant`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Grants permissions to a specified principal on a customer master key (CMK) asynchronously.
      *
@@ -1435,7 +1435,7 @@ The following code example shows how to use `CreateKey`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Creates a new symmetric encryption key asynchronously.
      *
@@ -1467,7 +1467,7 @@ The following code example shows how to use `Decrypt`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Asynchronously decrypts the given encrypted data using the specified key ID.
      *
@@ -1509,7 +1509,7 @@ The following code example shows how to use `DeleteAlias`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Deletes a specific KMS alias asynchronously.
      *
@@ -1540,7 +1540,7 @@ The following code example shows how to use `DescribeKey`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Asynchronously checks if a specified key is enabled.
      *
@@ -1579,7 +1579,7 @@ The following code example shows how to use `DisableKey`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Asynchronously disables the specified AWS Key Management Service (KMS) key.
      *
@@ -1610,7 +1610,7 @@ The following code example shows how to use `EnableKey`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Asynchronously enables the specified key.
      *
@@ -1648,7 +1648,7 @@ The following code example shows how to use `Encrypt`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Encrypts the given text asynchronously using the specified KMS client and key ID.
      *
@@ -1684,7 +1684,7 @@ The following code example shows how to use `ListAliases`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Asynchronously lists all the aliases in the current AWS account.
      *
@@ -1722,7 +1722,7 @@ The following code example shows how to use `ListGrants`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Asynchronously displays the grant IDs for the specified key ID.
      *
@@ -1763,7 +1763,7 @@ The following code example shows how to use `ListKeyPolicies`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Asynchronously retrieves the key policy for the specified key ID and policy name.
      *
@@ -1798,7 +1798,7 @@ The following code example shows how to use `ListKeys`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.kms.KmsAsyncClient;
 import software.amazon.awssdk.services.kms.model.ListKeysRequest;
 import software.amazon.awssdk.services.kms.paginators.ListKeysPublisher;
@@ -1861,7 +1861,7 @@ The following code example shows how to use `RevokeGrant`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Revokes a grant for the specified AWS KMS key asynchronously.
      *
@@ -1907,7 +1907,7 @@ The following code example shows how to use `ScheduleKeyDeletion`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Deletes a KMS key asynchronously.
      *
@@ -1944,7 +1944,7 @@ The following code example shows how to use `Sign`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Asynchronously signs and verifies data using AWS KMS.
      *
@@ -2013,7 +2013,7 @@ The following code example shows how to use `TagResource`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Asynchronously tags a KMS key with a specific tag.
      *

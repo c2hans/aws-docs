@@ -54,7 +54,7 @@ You can use the [ kms:RotationPeriodInDays](conditions-kms.md#conditions-kms-rot
 
 The following example enables key rotation with a rotation period of 180 days on the specified symmetric encryption KMS key and uses the [GetKeyRotationStatus](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetKeyRotationStatus.html) operation to see the result.
 
-```
+```bash
 $ aws kms enable-key-rotation \
     --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
     --rotation-period-in-days {{180}}

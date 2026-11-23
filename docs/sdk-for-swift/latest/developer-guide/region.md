@@ -18,7 +18,7 @@ For examples on how to set the default region through the shared AWS `config` fi
 
 Most services let you directly specify the Region when you call their constructors. For example, to create an Amazon S3 client configured for the Region `af-south-1`, specify the `region` parameter when creating the client, as shown.
 
-```
+```swift
 do {
     let s3 = try S3Client(region: "af-south-1")
 

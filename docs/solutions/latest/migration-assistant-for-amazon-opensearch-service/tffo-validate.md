@@ -8,13 +8,13 @@ After metadata migration completes, confirm that the affected fields landed as `
 
 First, inspect the mapping for an affected index on the target:
 
-```
+```bash
 console clusters curl target /<INDEX>/_mapping?pretty
 ```
 
 Confirm that the field that was `flattened` on the source is now reported as `flat_object`:
 
-```
+```json
 {
   "products": {
     "mappings": {
@@ -30,7 +30,7 @@ Confirm that the field that was `flattened` on the source is now reported as `fl
 
 Next, run a representative query against a nested key inside the converted field to verify retrieval behavior on the target. For a `flat_object` field, reference a nested key with dot notation:
 
-```
+```bash
 console clusters curl target /<INDEX>/_search?pretty -X POST -H 'Content-Type: application/json' -d '{
   "query": {
     "term": {

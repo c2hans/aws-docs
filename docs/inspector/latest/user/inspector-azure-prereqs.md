@@ -23,7 +23,7 @@ A connector ARN is required when creating a connector via API. The Config connec
 Console IAM permissions
 The IAM principal (user or role) that creates the connector requires the following permissions:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

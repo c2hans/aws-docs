@@ -18,7 +18,7 @@ When CrowdStrike is configured as a trust provider, the following fields are ava
 
 The following example policy permits access when the overall assessment score is greater than 50.
 
-```
+```text
 permit(principal, action, resource)
 when { context.crowdstrike.assessment.overall > 50 };
 ```

@@ -19,7 +19,7 @@ To automatically start Amazon EC2-compatible compute instances on your AWS Snowb
 
 **Usage**
 
-```
+```json
 snowballEdge create-autostart-configuration --physical-connector-type [SFP_PLUS or RJ45 or QSFP] --ip-address-assignment [DHCP or STATIC] [--static-ip-address-configuration IpAddress=[IP address],NetMask=[Netmask]] --launch-template-id [--launch-template-version]
 ```
 
@@ -30,7 +30,7 @@ To update an existing launch configuration on your Snowball Edge, use the `snowb
 
 **Usage**
 
-```
+```json
 snowballEdge update-autostart-configuration --autostart-configuration-arn [--physical-connector-type [SFP_PLUS or RJ45 or QSFP]] [--ip-address-assignment [DHCP or STATIC]] [--static-ip-address-configuration IpAddress=[IP address],NetMask=[Netmask]][--launch-template-id] [--launch-template-version] [--enabled]
 ```
 
@@ -41,7 +41,7 @@ To delete a launch configuration that's no longer in use, use the `snowballEdge 
 
 **Usage**
 
-```
+```json
 snowballEdge delete-autostart-configuration --autostart-configuration-arn
 ```
 
@@ -52,7 +52,7 @@ To list the launch configurations that you have created on your Snowball Edge, u
 
 **Usage**
 
-```
+```json
 snowballEdge describe-autostart-configurations
 ```
 

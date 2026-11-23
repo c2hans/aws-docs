@@ -73,7 +73,7 @@ To find the VLAN IDs for your environment, use one of the following methods.
 
   In the following command, replace `<environment-id>` with the ID of your environment. Replace `<region-code>` with the Region where you created the environment.
 
-  ```
+  ```bash
   aws evs list-environment-vlans \
       --environment-id <environment-id> \
       --region <region-code>

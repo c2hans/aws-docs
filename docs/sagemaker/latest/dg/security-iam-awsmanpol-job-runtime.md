@@ -21,7 +21,7 @@ This policy includes the following permissions.
 + `sagemaker` – Grants permissions to invoke job runtime APIs including generating samples, generating samples with response streaming, completing rollouts, and updating rewards on SageMaker AI job resources. Also grants permissions to call APIs with bearer token authentication.
 + `kms` – Grants permissions to decrypt and generate data keys to support AWS KMS encryption for Multi-Turn Reinforcement Learning (MTRL) runtime when you configure a customer managed key. This policy restricts these permissions to KMS keys in your own account (`aws:ResourceAccount` equals `aws:PrincipalAccount`) and requires that SageMaker AI service integrations route the requests (`kms:ViaService` set to `sagemaker.*.amazonaws.com`).
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

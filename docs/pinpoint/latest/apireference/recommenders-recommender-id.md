@@ -146,7 +146,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="recommenders-recommender-id-request-body-put-example"></a>
 
-```
+```json
 {
   "Name": "string",
   "Description": "string",
@@ -167,7 +167,7 @@ Retrieves information about the communication requirements and options that are 
 #### RecommenderConfigurationResponse schema
 <a name="recommenders-recommender-id-response-body-recommenderconfigurationresponse-example"></a>
 
-```
+```json
 {
   "Id": "string",
   "CreationDate": "string",
@@ -188,7 +188,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="recommenders-recommender-id-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

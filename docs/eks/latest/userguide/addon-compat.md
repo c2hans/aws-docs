@@ -20,13 +20,13 @@ Use the [describe-addon-versions API](https://docs.aws.amazon.com/eks/latest/API
 
 1. Use the AWS CLI to retrieve the addon versions that are compatible with the Kubernetes version of your cluster.
 
-   ```
+   ```bash
    aws eks describe-addon-versions --addon-name amazon-cloudwatch-observability --kubernetes-version 1.37
    ```
 
    An example output is as follows.
 
-   ```
+   ```json
    {
        "addons": [
            {

@@ -15,7 +15,7 @@ Only [`GetItem`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/
 
 The following is an example `Task` state that retrieves a message from DynamoDB.
 
-```
+```json
 "Read next Message from DynamoDB": {
     "Type": "Task",
     "Resource": "arn:aws:states:::dynamodb:getItem",
@@ -55,7 +55,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -79,7 +79,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

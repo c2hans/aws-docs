@@ -25,7 +25,7 @@ You must have the following permissions to configure your firewall to send logs 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

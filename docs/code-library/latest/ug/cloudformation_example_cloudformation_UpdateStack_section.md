@@ -67,33 +67,33 @@ For more information, see [AWS CloudFormation stack updates](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: Updates the stack 'myStack' with the specified template and customization parameters. 'PK1' represents the name of a parameter declared in the template and 'PV1' represents its value. The customization parameters can also be specified using 'Key' and 'Value' instead of 'ParameterKey' and 'ParameterValue'.**
 
-```
+```powershell
 Update-CFNStack -StackName "myStack" `
                 -TemplateBody "{Template Content Here}" `
                 -Parameter @{ ParameterKey="PK1"; ParameterValue="PV1" }
 ```
 **Example 2: Updates the stack 'myStack' with the specified template and customization parameters. 'PK1' and 'PK2' represent the names of parameters declared in the template, 'PV1' and 'PV2' represents their requested values. The customization parameters can also be specified using 'Key' and 'Value' instead of 'ParameterKey' and 'ParameterValue'.**
 
-```
+```powershell
 Update-CFNStack -StackName "myStack" `
                 -TemplateBody "{Template Content Here}" `
                 -Parameter @( @{ ParameterKey="PK1"; ParameterValue="PV1" }, @{ ParameterKey="PK2"; ParameterValue="PV2" } )
 ```
 **Example 3: Updates the stack 'myStack' with the specified template and customization parameters. 'PK1' represents the name of a parameter declared in the template and 'PV2' represents its value. The customization parameters can also be specified using 'Key' and 'Value' instead of 'ParameterKey' and 'ParameterValue'.**
 
-```
+```powershell
 Update-CFNStack -StackName "myStack" -TemplateBody "{Template Content Here}" -Parameters @{ ParameterKey="PK1"; ParameterValue="PV1" }
 ```
 **Example 4: Updates the stack 'myStack' with the specified template, obtained from Amazon S3, and customization parameters. 'PK1' and 'PK2' represent the names of parameters declared in the template, 'PV1' and 'PV2' represents their requested values. The customization parameters can also be specified using 'Key' and 'Value' instead of 'ParameterKey' and 'ParameterValue'.**
 
-```
+```powershell
 Update-CFNStack -StackName "myStack" `
                 -TemplateURL https://s3.amazonaws.com/amzn-s3-demo-bucket/templatefile.template `
                 -Parameter @( @{ ParameterKey="PK1"; ParameterValue="PV1" }, @{ ParameterKey="PK2"; ParameterValue="PV2" } )
 ```
 **Example 5: Updates the stack 'myStack', which is assumed in this example to contain IAM resources, with the specified template, obtained from Amazon S3, and customization parameters. 'PK1' and 'PK2' represent the names of parameters declared in the template, 'PV1' and 'PV2' represents their requested values. The customization parameters can also be specified using 'Key' and 'Value' instead of 'ParameterKey' and 'ParameterValue'. Stacks containing IAM resources require you to specify the -Capabilities "CAPABILITY\_IAM" parameter otherwise the update will fail with an 'InsufficientCapabilities' error.**
 
-```
+```powershell
 Update-CFNStack -StackName "myStack" `
                 -TemplateURL https://s3.amazonaws.com/amzn-s3-demo-bucket/templatefile.template `
                 -Parameter @( @{ ParameterKey="PK1"; ParameterValue="PV1" }, @{ ParameterKey="PK2"; ParameterValue="PV2" } ) `
@@ -104,33 +104,33 @@ Update-CFNStack -StackName "myStack" `
 **Tools for PowerShell V5**
 **Example 1: Updates the stack 'myStack' with the specified template and customization parameters. 'PK1' represents the name of a parameter declared in the template and 'PV1' represents its value. The customization parameters can also be specified using 'Key' and 'Value' instead of 'ParameterKey' and 'ParameterValue'.**
 
-```
+```powershell
 Update-CFNStack -StackName "myStack" `
                 -TemplateBody "{Template Content Here}" `
                 -Parameter @{ ParameterKey="PK1"; ParameterValue="PV1" }
 ```
 **Example 2: Updates the stack 'myStack' with the specified template and customization parameters. 'PK1' and 'PK2' represent the names of parameters declared in the template, 'PV1' and 'PV2' represents their requested values. The customization parameters can also be specified using 'Key' and 'Value' instead of 'ParameterKey' and 'ParameterValue'.**
 
-```
+```powershell
 Update-CFNStack -StackName "myStack" `
                 -TemplateBody "{Template Content Here}" `
                 -Parameter @( @{ ParameterKey="PK1"; ParameterValue="PV1" }, @{ ParameterKey="PK2"; ParameterValue="PV2" } )
 ```
 **Example 3: Updates the stack 'myStack' with the specified template and customization parameters. 'PK1' represents the name of a parameter declared in the template and 'PV2' represents its value. The customization parameters can also be specified using 'Key' and 'Value' instead of 'ParameterKey' and 'ParameterValue'.**
 
-```
+```powershell
 Update-CFNStack -StackName "myStack" -TemplateBody "{Template Content Here}" -Parameters @{ ParameterKey="PK1"; ParameterValue="PV1" }
 ```
 **Example 4: Updates the stack 'myStack' with the specified template, obtained from Amazon S3, and customization parameters. 'PK1' and 'PK2' represent the names of parameters declared in the template, 'PV1' and 'PV2' represents their requested values. The customization parameters can also be specified using 'Key' and 'Value' instead of 'ParameterKey' and 'ParameterValue'.**
 
-```
+```powershell
 Update-CFNStack -StackName "myStack" `
                 -TemplateURL https://s3.amazonaws.com/amzn-s3-demo-bucket/templatefile.template `
                 -Parameter @( @{ ParameterKey="PK1"; ParameterValue="PV1" }, @{ ParameterKey="PK2"; ParameterValue="PV2" } )
 ```
 **Example 5: Updates the stack 'myStack', which is assumed in this example to contain IAM resources, with the specified template, obtained from Amazon S3, and customization parameters. 'PK1' and 'PK2' represent the names of parameters declared in the template, 'PV1' and 'PV2' represents their requested values. The customization parameters can also be specified using 'Key' and 'Value' instead of 'ParameterKey' and 'ParameterValue'. Stacks containing IAM resources require you to specify the -Capabilities "CAPABILITY\_IAM" parameter otherwise the update will fail with an 'InsufficientCapabilities' error.**
 
-```
+```powershell
 Update-CFNStack -StackName "myStack" `
                 -TemplateURL https://s3.amazonaws.com/amzn-s3-demo-bucket/templatefile.template `
                 -Parameter @( @{ ParameterKey="PK1"; ParameterValue="PV1" }, @{ ParameterKey="PK2"; ParameterValue="PV2" } ) `

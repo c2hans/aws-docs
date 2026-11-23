@@ -27,7 +27,7 @@ The connection definition file should follow the following general format:
 + **ConnectionType** is the type of connection. Choose `REDSHIFT`, `ATHENA`, or `SNOWFLAKE`.
 + **ConnectionProperties** is a map of key-value pairs for the connection properties, such as the ARN of your AWS secret, or the name of your database.
 
-```
+```JSON
 {
     "ConnectionInput": {
         "Name": <GLUE_CONNECTION_NAME>,
@@ -91,7 +91,7 @@ Before creating a new connection, keep these recommendations in mind:
 By default, the SQL extension connector for Python runs all queries in a transaction, unless the `auto_commit` in connection properties is set to `true`.
 You can add all connection parameters, including the `database` name, to a secret.
 
-```
+```JSON
 {
   "ConnectionInput": {
       "Name": "{{Redshift connection name}}",
@@ -124,7 +124,7 @@ Before creating a new connection, keep these recommendations in mind:
 You can add all connection parameters, including the `catalog_name` or `s3_staging_dir`, to a secret.
 If you specify a `workgroup`, you don't need to specify `s3_staging_dir`.
 
-```
+```JSON
 {
     "ConnectionInput": {
         "Name": "{{Athena connection name}}",
@@ -157,7 +157,7 @@ This section provides details on the secret and connection properties in JSON de
 
 1. In the key-value pair, choose **Plaintext**, and then copy the following JSON content. Replace the `user`, `password`, and `account` by their values.
 
-   ```
+   ```JSON
    {
        "user":"{{snowflake_user}}",
        "password":"{{snowflake_password}}",
@@ -183,7 +183,7 @@ Before creating a new connection, keep these recommendations in mind:
 **Note**
 You can add all connection parameters, including the `account`, to a secret.
 
-```
+```JSON
 {
     "ConnectionInput": {
         "Name": "{{Snowflake connection name}}",
@@ -206,13 +206,13 @@ To create an AWS Glue connection through the AWS CLI, use your connection defini
 **Note**
 The path to your configuration definition file must be preceded by `file://`.
 
-```
+```bash
 aws --region {{region}} glue create-connection --cli-input-json file://{{path_to_file/sagemaker-sql-connection.json}}
 ```
 
 Verify that the AWS Glue connection was created by running the following command and check for your connection name.
 
-```
+```bash
 aws --region {{region}} glue get-connections
 ```
 
@@ -220,6 +220,6 @@ Alternatively, you can update an existing AWS Glue connection as follows:
 + Modify the AWS Glue connection definition file as required.
 + Run the following command to update the connection.
 
-  ```
+  ```bash
   aws --region {{region}} glue update-connection --name {{glue_connection_name}} --cli-input-json file://{{path_to_file/sagemaker-sql-connection.json}}
   ```

@@ -22,7 +22,7 @@ This topic provides information that will help you get started using the Message
   ```
 + The framework integrates with .NET's [dependency injection (DI) service container](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection). You can configure the framework during your application's startup by calling `AddAWSMessageBus` to add it to the DI container.
 
-  ```
+  ```csharp
   var builder = WebApplication.CreateBuilder(args);
 
   // Register the AWS Message Processing Framework for .NET
@@ -65,7 +65,7 @@ aws sqs create-queue --queue-name {{DemoQueue}}
 ------
 #### [ AWS Tools for PowerShell ]
 
-```
+```ps
 New-SQSQueue -QueueName DemoQueue
 ```
 
@@ -80,13 +80,13 @@ Use the following procedure to create and run the publishing application.
 
 1. In that folder, run the following command to create the .NET project.
 
-   ```
+   ```text
    dotnet new webapi --name Publisher
    ```
 
 1. Navigate into the new project's folder. Add a dependency on the AWS Message Processing Framework for .NET.
 
-   ```
+   ```text
    cd Publisher
    dotnet add package AWS.Messaging
    ```
@@ -95,7 +95,7 @@ If you're using AWS IAM Identity Center for authentication, be sure to also add 
 
 1. Replace the code in `Program.cs` with the following code.
 
-   ```
+   ```csharp
    using AWS.Messaging;
    using Microsoft.AspNetCore.Mvc;
    using Publisher;
@@ -182,7 +182,7 @@ If you're using AWS IAM Identity Center for authentication, be sure to also add 
 
 1. Run the following command. This should open a browser window with the Swagger UI, which allows you to explore and test your API.
 
-   ```
+   ```text
    dotnet watch run {{<queue URL created earlier>}}
    ```
 
@@ -199,13 +199,13 @@ Use the following procedure to create and run the handling application.
 
 1. In that folder, run the following command to create the .NET project.
 
-   ```
+   ```text
    dotnet new console --name Handler
    ```
 
 1. Navigate into the new project's folder. Add a dependency on the AWS Message Processing Framework for .NET. Also add the `Microsoft.Extensions.Hosting` package, which allows you to configure the framework through the [.NET Generic Host](https://learn.microsoft.com/en-us/dotnet/core/extensions/generic-host).
 
-   ```
+   ```text
    cd Handler
    dotnet add package AWS.Messaging
    dotnet add package Microsoft.Extensions.Hosting
@@ -215,7 +215,7 @@ If you're using AWS IAM Identity Center for authentication, be sure to also add 
 
 1. Replace the code in `Program.cs` with the following code.
 
-   ```
+   ```csharp
    using AWS.Messaging;
    using Handler;
    using Microsoft.Extensions.DependencyInjection;
@@ -278,13 +278,13 @@ If you're using AWS IAM Identity Center for authentication, be sure to also add 
 
 1. Run the following command. This starts a long-running poller.
 
-   ```
+   ```text
    dotnet run {{<queue URL created earlier>}}
    ```
 
    Shortly after startup the application will receive the message that was sent in the first part of this tutorial and log the following message:
 
-   ```
+   ```text
    Received message {greeting} from {senderName}
    ```
 
@@ -305,7 +305,7 @@ aws sqs delete-queue --queue-url "{{<queue URL created earlier>}}"
 ------
 #### [ AWS Tools for PowerShell ]
 
-```
+```ps
 Remove-SQSQueue -QueueUrl "{{<queue URL created earlier>}}"
 ```
 

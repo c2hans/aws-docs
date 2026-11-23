@@ -21,7 +21,7 @@ This action supports most parameters for the Step Functions [StartExecution](htt
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: executeTheStateMachine
 action: aws:executeStateMachine
 inputs:
@@ -33,7 +33,7 @@ inputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "executeTheStateMachine",
     "action": "aws:executeStateMachine",

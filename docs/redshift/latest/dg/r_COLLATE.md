@@ -51,7 +51,7 @@ INSERT INTO T VALUES ('john'),('JOHN');
 
  When you run the first query, Amazon Redshift only returns `john`. After the COLLATE function runs on col1, the collation becomes `case_insensitive`. The second query returns both `john` and `JOHN`.
 
-```
+```sql
 SELECT * FROM T WHERE col1 = 'john';
 
 +------+
@@ -80,7 +80,7 @@ INSERT INTO A VALUES ('john'),('JOHN');
 
  When you run the first query, Amazon Redshift returns both `john` and `JOHN`. After the COLLATE function runs on col1, the collation becomes `case_sensitive`. The second query returns only `john`.
 
-```
+```sql
 SELECT * FROM A WHERE col1 = 'john';
 
 +------+

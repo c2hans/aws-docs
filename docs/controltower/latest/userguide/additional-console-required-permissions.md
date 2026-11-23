@@ -29,7 +29,7 @@ Here's an example showing the updated permissions in the policy.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -30,14 +30,14 @@ For more information about images, see [Amazon SageMaker Images Available for Us
 
 Use the following code to import the data preparation widget and pandas. The widget uses pandas dataframes to analyze your data.
 
-```
+```python
 import pandas as pd
 import sagemaker_datawrangler
 ```
 
 The following example code loads a file into the dataframe called `df`.
 
-```
+```python
 df = pd.read_csv("example-dataset.csv")
 ```
 
@@ -45,7 +45,7 @@ You can use a dataset in any format that you can load as a pandas dataframe obje
 
 The following cell runs the `df` variable to start the widget.
 
-```
+```python
 df
 ```
 

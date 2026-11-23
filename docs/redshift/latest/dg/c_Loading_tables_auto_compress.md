@@ -53,13 +53,13 @@ In this example, assume that the TICKIT database contains a copy of the LISTING 
 
 1. Make sure that the table is empty. You can apply automatic compression only to an empty table:
 
-   ```
+   ```sql
    TRUNCATE biglist;
    ```
 
 1. Load the table with a single COPY command. Although the table is empty, some earlier encoding might have been specified. To facilitate that Amazon Redshift performs a compression analysis, set the COMPUPDATE parameter to ON.
 
-   ```
+   ```sql
    COPY biglist FROM 's3://amzn-s3-demo-bucket/biglist.txt'
    IAM_ROLE 'arn:aws:iam::0123456789012:role/MyRedshiftRole'
    DELIMITER '|' COMPUPDATE ON;
@@ -69,7 +69,7 @@ In this example, assume that the TICKIT database contains a copy of the LISTING 
 
 1. Look at the new schema for the BIGLIST table in order to review the automatically chosen encoding schemes.
 
-   ```
+   ```sql
    SELECT "column", type, encoding
    from pg_table_def where tablename = 'biglist';
 
@@ -87,7 +87,7 @@ In this example, assume that the TICKIT database contains a copy of the LISTING 
 
 1. Verify that the expected number of rows were loaded:
 
-   ```
+   ```sql
    select count(*) from biglist;
 
    count

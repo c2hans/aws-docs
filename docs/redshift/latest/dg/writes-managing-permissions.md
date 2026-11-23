@@ -50,7 +50,7 @@ After granting usage rights on the database or schema, an administrator can furt
 
 The following example grants permissions to access a shared table at the database level.
 
-```
+```sql
 GRANT USAGE ON DATABASE sales_db TO Bob;
 GRANT USAGE FOR SCHEMAS IN DATABASE sales_db TO Bob;
 GRANT SELECT ON sales_db.public.tickit_sales_redshift TO Bob;

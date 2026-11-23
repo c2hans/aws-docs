@@ -10,6 +10,8 @@ The Inspection VPC along with other Spoke VPCs are connected together through a 
 
 ![A diagram depicting centralized ingress traffic inspection using third-party appliances and ELB](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/ingress-inspection-third-party.png)
 
+**Centralized ingress traffic inspection using third-party appliances and ELB**
+
 ## Advantages
 <a name="advantages-22"></a>
 + This architecture can support any application type for inspection and advanced inspection capabilities offered through third-party firewall appliances.

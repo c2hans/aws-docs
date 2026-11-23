@@ -9,7 +9,7 @@ Sets contact recording behavior, including analysis behavior and which participa
 ## Parameter object
 <a name="updatecontactrecordingandanalyticsbehavior-parameter"></a>
 
-```
+```json
 {
     // Only ONE of the following channel behavior objects can be defined per configuration
 

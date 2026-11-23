@@ -45,21 +45,21 @@ The **Actions** menu is not available if you didn't work with Patch Manager in t
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm register-default-patch-baseline \
        --baseline-id {{baseline-id-or-ARN}}
    ```
 
    The following is an example of a setting a custom baseline as the default.
 
-   ```
+   ```sh
    aws ssm register-default-patch-baseline \
        --baseline-id pb-abc123cf9bEXAMPLE
    ```
 
    The following is an example of a setting a predefined baseline managed by AWS as the default.
 
-   ```
+   ```sh
    aws ssm register-default-patch-baseline \
        --baseline-id arn:aws:ssm:us-east-2:733109147000:patchbaseline/pb-0574b43a65ea646e
    ```
@@ -67,21 +67,21 @@ The **Actions** menu is not available if you didn't work with Patch Manager in t
 ------
 #### [ Windows Server ]
 
-   ```
+   ```sh
    aws ssm register-default-patch-baseline ^
        --baseline-id {{baseline-id-or-ARN}}
    ```
 
    The following is an example of a setting a custom baseline as the default.
 
-   ```
+   ```sh
    aws ssm register-default-patch-baseline ^
        --baseline-id pb-abc123cf9bEXAMPLE
    ```
 
    The following is an example of a setting a predefined baseline managed by AWS as the default.
 
-   ```
+   ```sh
    aws ssm register-default-patch-baseline ^
        --baseline-id arn:aws:ssm:us-east-2:733109147000:patchbaseline/pb-071da192df1226b63
    ```

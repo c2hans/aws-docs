@@ -16,35 +16,35 @@ Many AWS Construct Library modules let you set an alarm on an existing metric by
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const metric = queue.metric("ApproximateNumberOfMessagesVisible");
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const metric = queue.metric("ApproximateNumberOfMessagesVisible");
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 metric = queue.metric("ApproximateNumberOfMessagesVisible")
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 Metric metric = queue.metric("ApproximateNumberOfMessagesVisible");
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 var metric = queue.Metric("ApproximateNumberOfMessagesVisible");
 ```
 
@@ -58,7 +58,7 @@ Create your own [metric](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_aw
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const metric = new cloudwatch.Metric({
   namespace: 'MyNamespace',
   metricName: 'MyMetric',
@@ -69,7 +69,7 @@ const metric = new cloudwatch.Metric({
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const metric = new cloudwatch.Metric({
   namespace: 'MyNamespace',
   metricName: 'MyMetric',
@@ -80,7 +80,7 @@ const metric = new cloudwatch.Metric({
 ------
 #### [ Python ]
 
-```
+```python
 metric = cloudwatch.Metric(
     namespace="MyNamespace",
     metric_name="MyMetric",
@@ -91,7 +91,7 @@ metric = cloudwatch.Metric(
 ------
 #### [ Java ]
 
-```
+```java
 Metric metric = Metric.Builder.create()
         .namespace("MyNamespace")
         .metricName("MyMetric")
@@ -103,7 +103,7 @@ Metric metric = Metric.Builder.create()
 ------
 #### [ C\# ]
 
-```
+```csharp
 var metric = new Metric(this, "Metric", new MetricProps
 {
     Namespace = "MyNamespace",
@@ -125,7 +125,7 @@ Once you have a metric, either an existing one or one you defined, you can creat
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const alarm = new cloudwatch.Alarm(this, 'Alarm', {
   metric: metric,
   threshold: 100,
@@ -137,7 +137,7 @@ const alarm = new cloudwatch.Alarm(this, 'Alarm', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const alarm = new cloudwatch.Alarm(this, 'Alarm', {
   metric: metric,
   threshold: 100,
@@ -149,7 +149,7 @@ const alarm = new cloudwatch.Alarm(this, 'Alarm', {
 ------
 #### [ Python ]
 
-```
+```python
 alarm = cloudwatch.Alarm(self, "Alarm",
     metric=metric,
     threshold=100,
@@ -161,7 +161,7 @@ alarm = cloudwatch.Alarm(self, "Alarm",
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awscdk.services.cloudwatch.Alarm;
 import software.amazon.awscdk.services.cloudwatch.Metric;
 
@@ -175,7 +175,7 @@ Alarm alarm = Alarm.Builder.create(this, "Alarm")
 ------
 #### [ C\# ]
 
-```
+```csharp
 var alarm = new Alarm(this, "Alarm", new AlarmProps
 {
     Metric = metric,
@@ -192,7 +192,7 @@ An alternative way to create an alarm is using the metric's [createAlarm()](http
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 metric.createAlarm(this, 'Alarm', {
   threshold: 100,
   evaluationPeriods: 3,
@@ -203,7 +203,7 @@ metric.createAlarm(this, 'Alarm', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 metric.createAlarm(this, 'Alarm', {
   threshold: 100,
   evaluationPeriods: 3,
@@ -214,7 +214,7 @@ metric.createAlarm(this, 'Alarm', {
 ------
 #### [ Python ]
 
-```
+```python
 metric.create_alarm(self, "Alarm",
     threshold=100,
     evaluation_periods=3,
@@ -225,7 +225,7 @@ metric.create_alarm(self, "Alarm",
 ------
 #### [ Java ]
 
-```
+```java
 metric.createAlarm(this, "Alarm", new CreateAlarmOptions.Builder()
         .threshold(100)
         .evaluationPeriods(3)
@@ -236,7 +236,7 @@ metric.createAlarm(this, "Alarm", new CreateAlarmOptions.Builder()
 ------
 #### [ C\# ]
 
-```
+```csharp
 metric.CreateAlarm(this, "Alarm", new CreateAlarmOptions
 {
     Threshold = 100,

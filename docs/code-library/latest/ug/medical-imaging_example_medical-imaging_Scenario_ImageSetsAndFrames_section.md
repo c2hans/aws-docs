@@ -22,7 +22,7 @@ The implementation is structured as a command-line application.
 **SDK for C\+\+**
 Create an CloudFormation stack with the necessary resources.
 
-```
+```cpp
     Aws::String inputBucketName;
     Aws::String outputBucketName;
     Aws::String dataStoreId;
@@ -70,7 +70,7 @@ Create an CloudFormation stack with the necessary resources.
 ```
 Copy DICOM files to the Amazon S3 import bucket.
 
-```
+```cpp
     std::cout
             << "This workflow uses DICOM files from the National Cancer Institute Imaging Data\n"
             << "Commons (IDC) Collections." << std::endl;
@@ -113,7 +113,7 @@ Copy DICOM files to the Amazon S3 import bucket.
 ```
 Import the DICOM files to the Amazon S3 data store.
 
-```
+```cpp
 bool AwsDoc::Medical_Imaging::startDicomImport(const Aws::String &dataStoreID,
                                                const Aws::String &inputBucketName,
                                                const Aws::String &inputDirectory,
@@ -242,7 +242,7 @@ AwsDoc::Medical_Imaging::getDICOMImportJob(const Aws::String &dataStoreID,
 ```
 Get image sets created by the DICOM import job.
 
-```
+```cpp
 bool
 AwsDoc::Medical_Imaging::getImageSetsForDicomImportJob(const Aws::String &datastoreID,
                                                        const Aws::String &importJobId,
@@ -304,7 +304,7 @@ AwsDoc::Medical_Imaging::getImageSetsForDicomImportJob(const Aws::String &datast
 ```
 Get image frame information for image sets.
 
-```
+```cpp
 bool AwsDoc::Medical_Imaging::getImageFramesForImageSet(const Aws::String &dataStoreID,
                                                         const Aws::String &imageSetID,
                                                         const Aws::String &outDirectory,
@@ -416,7 +416,7 @@ bool AwsDoc::Medical_Imaging::getImageSetMetadata(const Aws::String &dataStoreID
 ```
 Download, decode and verify image frames.
 
-```
+```cpp
 bool AwsDoc::Medical_Imaging::downloadDecodeAndCheckImageFrames(
         const Aws::String &dataStoreID,
         const Aws::Vector<ImageFrameInfo> &imageFrames,
@@ -698,7 +698,7 @@ bool AwsDoc::Medical_Imaging::verifyChecksumForImage(opj_image_t *image,
 ```
 Clean up resources.
 
-```
+```cpp
 bool AwsDoc::Medical_Imaging::cleanup(const Aws::String &stackName,
                                       const Aws::String &dataStoreId,
                                       const Aws::Client::ClientConfiguration &clientConfiguration) {
@@ -747,7 +747,7 @@ bool AwsDoc::Medical_Imaging::emptyDatastore(const Aws::String &datastoreID,
 **SDK for JavaScript (v3)**
 Orchestrate steps (index.js).
 
-```
+```javascript
 import {
   parseScenarioArgs,
   Scenario,
@@ -855,7 +855,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 ```
 Deploy resources (deploy-steps.js).
 
-```
+```javascript
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -991,7 +991,7 @@ Role ARN: ${stackOutputs?.RoleArn}
 ```
 Copy DICOM files (dataset-steps.js).
 
-```
+```javascript
 import {
   S3Client,
   CopyObjectCommand,
@@ -1100,7 +1100,7 @@ export const outputCopiedObjects = new ScenarioOutput(
 ```
 Start import into datastore (import-steps.js).
 
-```
+```javascript
 import {
   MedicalImagingClient,
   StartDICOMImportJobCommand,
@@ -1185,7 +1185,7 @@ export const outputImportJobStatus = new ScenarioOutput(
 ```
 Get image set IDs (image-set-steps.js - ).
 
-```
+```javascript
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
 
 import {
@@ -1248,7 +1248,7 @@ export const outputImageSetIds = new ScenarioOutput(
 ```
 Get image frame IDs (image-frame-steps.js).
 
-```
+```javascript
 import {
   MedicalImagingClient,
   GetImageSetMetadataCommand,
@@ -1374,7 +1374,7 @@ export const outputImageFrameIds = new ScenarioOutput(
 ```
 Verify image frames (verify-steps.js). The [AWS HealthImaging Pixel Data Verification](https://github.com/aws-samples/aws-healthimaging-samples/tree/main/pixel-data-verification) library was used for verification.
 
-```
+```javascript
 import { spawn } from "node:child_process";
 
 import {
@@ -1500,7 +1500,7 @@ export const decodeAndVerifyImages = new ScenarioAction(
 ```
 Destroy resources (clean-up-steps.js).
 
-```
+```javascript
 import {
   CloudFormationClient,
   DeleteStackCommand,
@@ -1641,7 +1641,7 @@ export const deleteStack = new ScenarioAction(
 **SDK for Python (Boto3)**
 Create an CloudFormation stack with the necessary resources.
 
-```
+```python
     def deploy(self):
         """
         Deploys prerequisite resources used by the scenario. The resources are
@@ -1695,7 +1695,7 @@ Create an CloudFormation stack with the necessary resources.
 ```
 Copy DICOM files to the Amazon S3 import bucket.
 
-```
+```python
     def copy_single_object(self, key, source_bucket, target_bucket, target_directory):
         """
         Copies a single object from a source to a target bucket.
@@ -1739,7 +1739,7 @@ Copy DICOM files to the Amazon S3 import bucket.
 ```
 Import the DICOM files to the Amazon S3 data store.
 
-```
+```python
 class MedicalImagingWrapper:
     """Encapsulates AWS HealthImaging functionality."""
 
@@ -1800,7 +1800,7 @@ class MedicalImagingWrapper:
 ```
 Get image sets created by the DICOM import job.
 
-```
+```python
 class MedicalImagingWrapper:
     """Encapsulates AWS HealthImaging functionality."""
 
@@ -1889,7 +1889,7 @@ class MedicalImagingWrapper:
 ```
 Get image frame information for image sets.
 
-```
+```python
 class MedicalImagingWrapper:
     """Encapsulates AWS HealthImaging functionality."""
 
@@ -1993,7 +1993,7 @@ class MedicalImagingWrapper:
 ```
 Download, decode and verify image frames.
 
-```
+```python
 class MedicalImagingWrapper:
     """Encapsulates AWS HealthImaging functionality."""
 
@@ -2089,7 +2089,7 @@ class MedicalImagingWrapper:
 ```
 Clean up resources.
 
-```
+```python
     def destroy(self, stack):
         """
         Destroys the resources managed by the CloudFormation stack, and the CloudFormation

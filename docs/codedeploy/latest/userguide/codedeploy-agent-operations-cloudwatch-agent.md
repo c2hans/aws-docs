@@ -95,7 +95,7 @@ You can configure the CloudWatch agent by stepping through a wizard or by manual
 
    The updater log path differs by version. For version 2.0.x and later, use `/var/log/aws/codedeploy-agent/codedeploy-agent-updater.log`. For version 1.8.x and earlier, use `/tmp/codedeploy-agent.update.log`.
 
-   ```
+   ```json
    ...
    "logs": {
        "logs_collected": {
@@ -131,7 +131,7 @@ You can configure the CloudWatch agent by stepping through a wizard or by manual
 
    For version 2.0.x and later, the agent log filename is `codedeploy-agent.log`. For version 1.8.x and earlier, the agent log filename is `codedeploy-agent-log.txt`. The deployment log path is the same for both versions.
 
-   ```
+   ```json
    ...
    "logs": {
            "logs_collected": {

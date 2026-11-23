@@ -28,7 +28,7 @@ The following code example shows how to get started using .
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -117,7 +117,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 Run an interactive scenario demonstrating features.
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -315,7 +315,7 @@ public class InspectorScenario {
 ```
 A wrapper class for SDK methods.
 
-```
+```java
 public class InspectorActions {
     private static Inspector2AsyncClient inspectorAsyncClient;
     private static final Logger logger = LoggerFactory.getLogger(InspectorActions.class);
@@ -1026,7 +1026,7 @@ The following code example shows how to use `BatchGetAccountStatus`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 
-```
+```java
     /**
      * Retrieves the account status using the Inspector2Client.
      */
@@ -1113,7 +1113,7 @@ The following code example shows how to use `BatchGetFindingDetails`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 
-```
+```java
     /**
      * Retrieves detailed information about a specific AWS Inspector2 finding asynchronously.
      *
@@ -1204,7 +1204,7 @@ The following code example shows how to use `CreateFilter`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 
-```
+```java
     /**
      * Creates a new LOW severity filter in AWS Inspector2 to suppress findings.
      *
@@ -1276,7 +1276,7 @@ The following code example shows how to use `DeleteFilter`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 
-```
+```java
     /**
      * Deletes an AWS Inspector2 filter.
      *
@@ -1314,7 +1314,7 @@ The following code example shows how to use `Disable`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 
-```
+```java
     /**
      * Asynchronously disables AWS Inspector for the specified accounts and resource types.
      *
@@ -1401,7 +1401,7 @@ The following code example shows how to use `Enable`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 
-```
+```java
     /**
      * Enables AWS Inspector for the provided account(s) and default resource types.
      *
@@ -1481,7 +1481,7 @@ The following code example shows how to use `ListCoverage`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 
-```
+```java
     /**
      * Lists AWS Inspector2 coverage details for scanned resources using a paginator.
      *
@@ -1556,7 +1556,7 @@ The following code example shows how to use `ListCoverageStatistics`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 
-```
+```java
     /**
      * Retrieves and prints the coverage statistics using a paginator.
      */
@@ -1621,7 +1621,7 @@ The following code example shows how to use `ListFilters`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 
-```
+```java
     /**
      * Asynchronously lists Inspector2 filters using a paginator.
      *
@@ -1675,7 +1675,7 @@ The following code example shows how to use `ListFindings`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 
-```
+```java
     /**
      * Lists all AWS Inspector findings of LOW severity asynchronously.
      *
@@ -1737,7 +1737,7 @@ The following code example shows how to use `ListUsageTotals`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/inspector#code-examples).
 
-```
+```java
     /**
      * Asynchronously lists Inspector2 usage totals using a paginator.
      *

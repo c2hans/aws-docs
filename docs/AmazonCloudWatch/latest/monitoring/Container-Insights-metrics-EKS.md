@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 
 The following tables list the metrics and dimensions that Container Insights collects for Amazon EKS and Kubernetes. These metrics are in the `ContainerInsights` namespace. For more information, see [Metrics](cloudwatch_concepts.md#Metric).
 
-If you do not see any Container Insights metrics in your console, be sure that you have completed the setup of Container Insights. Metrics do not appear before Container Insights has been set up completely. For more information, see [Container Insights](ContainerInsights.md).
+If you do not see any Container Insights metrics in your console, be sure that you have completed the setup of Container Insights. Metrics do not appear before Container Insights has been set up completely. For more information, see [Container Insights for Amazon EKS](ContainerInsights.md).
 
 | Metric name | Dimensions | Description |
 | --- | --- | --- |

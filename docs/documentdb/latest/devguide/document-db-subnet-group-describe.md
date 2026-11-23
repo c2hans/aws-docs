@@ -46,7 +46,7 @@ aws docdb describe-db-subnet-groups ^
 ```
 Output from this operation looks something like the following (JSON format).
 
-```
+```json
 {
     "DBSubnetGroup": {
         "DBSubnetGroupArn": "arn:aws:rds:us-east-1:123SAMPLE012:subgrp:sample-subnet-group",

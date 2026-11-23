@@ -18,7 +18,7 @@ You can use EventBridge rules to:
 
 **Example: Match all InfluxDB 3 cluster failure events**
 
-```
+```json
 {
   "source": ["aws.timestream-influxdb"],
   "detail-type": ["Timestream InfluxDB DB Cluster Event"],
@@ -30,7 +30,7 @@ You can use EventBridge rules to:
 
 **Example: Match scaling events for a specific cluster**
 
-```
+```json
 {
   "source": ["aws.timestream-influxdb"],
   "detail": {

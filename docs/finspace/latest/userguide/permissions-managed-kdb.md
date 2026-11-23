@@ -66,7 +66,7 @@ In the following example, replace each {{*user input placeholder*}} with your ow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "FinSpaceServiceAccess",
@@ -112,7 +112,7 @@ In the following example, replace each {{*user input placeholder*}} with your ow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "FinSpaceServiceAccess",
@@ -170,7 +170,7 @@ In the following example, replace each {{*user input placeholder*}} with your ow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "FinSpaceServiceAccess",
@@ -213,7 +213,7 @@ In the following example, replace each {{*user input placeholder*}} with your ow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "FinSpaceServiceAccess",
@@ -272,7 +272,7 @@ In the following example, replace each {{*user input placeholder*}} with your ow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "FinSpaceServiceAccess",

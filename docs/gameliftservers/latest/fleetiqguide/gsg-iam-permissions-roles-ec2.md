@@ -20,7 +20,7 @@ These steps describe how to create a service role with custom Amazon GameLift Se
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -60,7 +60,7 @@ These steps describe how to create a service role with custom Amazon GameLift Se
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

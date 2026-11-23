@@ -33,7 +33,7 @@ Deletion permanently removes all data, so ensure you have exported any critical 
 
 To delete a cluster using the AWS CLI:
 
-```
+```sh
 aws timestream-influxdb delete-db-cluster \
   --region us-east-1 \
   --identifier "my-influxdb3-cluster"
@@ -71,7 +71,7 @@ What is retained:
 
 1.  **Export critical data:** Use the following query to export data to JSON format. For more information, see [Output format](https://docs.influxdata.com/influxdb3/core/query-data/execute-queries/influxdb3-cli/?section=influxdb3%252Fcore%252Fquery-data#output-format) for the `influxdb3 query` command in the *Influx DB 3 documentation*.
 
-   ```
+   ```sql
    influxdb3 query \
      --token AUTH_TOKEN \
      --database DATABASE_NAME \
@@ -81,14 +81,14 @@ What is retained:
 
 1.  **Document cluster configuration:**
 
-   ```
+   ```sh
    aws timestream-influxdb describe-db-cluster \
      --identifier "my-influxdb3-cluster" > cluster-config-backup.json
    ```
 
 1.  **Save parameter group configuration:**
 
-   ```
+   ```sh
    aws timestream-influxdb describe-db-parameter-group \
      --identifier "your-parameter-group-id" > parameter-group-backup.json
    ```

@@ -146,7 +146,7 @@ You can chain roles so that your cluster can assume another IAM role, possibly b
  To this IAM role, attach an IAM permissions policy similar to the following.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

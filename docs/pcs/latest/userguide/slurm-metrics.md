@@ -30,7 +30,7 @@ For more information about custom Slurm settings, see [Configuring custom Slurm 
 
 Query the metrics endpoint from a host with network access to the controller:
 
-```
+```cmd
 curl http://{{controller-ip}}:6817/metrics
 ```
 

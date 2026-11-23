@@ -59,6 +59,8 @@ AWS includes several additional metrics and alarms to notify you about an attack
 
 ![Global activity detected by AWS Shield](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/global-activity-detected.png)
 
+*Figure 11 – Global activity detected by AWS Shield*
+
 In addition, the global threat environment dashboard provides summary information about all DDoS attacks that have been detected by AWS. This information can be useful to better understand DDoS threats across a larger population of applications in addition to attack trends, and comparing with attacks that you might have observed.
 
 If you're subscribed to AWS Shield Advanced, the service dashboard displays additional detection and mitigation metrics and network traffic details for events detected on protected resources. AWS Shield evaluates traffic to your protected resource along multiple dimensions. When an anomaly is detected, AWS Shield creates an event and reports the traffic dimension where the anomaly was observed. With a placed mitigation this protects your resource from receiving excess traffic and traffic that matches a known DDoS event signature.

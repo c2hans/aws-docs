@@ -34,7 +34,7 @@ Create a service role that grants Image Builder permission to perform lifecycle 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -80,7 +80,7 @@ Create this role in each destination account where Image Builder distributed ass
 **Note**
 Image Builder uses this role on behalf of the destination account owner. Set the `aws:SourceAccount` to the account where Image Builder distributed the resources.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

@@ -20,7 +20,7 @@ When you run the merge operation detailed in the procedure, put all of the steps
 
 1. Create a staging table, and then populate it with data to be merged, as shown in the following pseudocode.
 
-   ```
+   ```sql
    create temp table stage (like target);
    insert into stage
    select * from source
@@ -37,7 +37,7 @@ When you run the merge operation detailed in the procedure, put all of the steps
 
     For example:
 
-   ```
+   ```sql
    begin transaction;
 
    update target
@@ -55,7 +55,7 @@ When you run the merge operation detailed in the procedure, put all of the steps
 
 1. Delete unneeded rows from the staging table by using an inner join with the target table. Some rows in the target table already match the corresponding rows in the staging table, and others were updated in the previous step. In either case, they are not needed for the insert.
 
-   ```
+   ```sql
    delete from stage
    using target
    where stage.primarykey = target.primarykey;
@@ -63,7 +63,7 @@ When you run the merge operation detailed in the procedure, put all of the steps
 
 1. Insert the remaining rows from the staging table. Use the same column list in the VALUES clause that you used in the UPDATE statement in step two.
 
-   ```
+   ```sql
    insert into target
    (select col1, col2, 'expression'
    from stage);
@@ -73,6 +73,6 @@ When you run the merge operation detailed in the procedure, put all of the steps
 
 1. Drop the staging table.
 
-   ```
+   ```sql
    drop table stage;
    ```

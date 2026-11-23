@@ -57,7 +57,7 @@ The following example key policy statement grants this access. The conditions li
 
 **Example – Key policy statement for the service-linked role**
 
-```
+```json
 {
   "Sid": "Enable Transfer SLR to access",
   "Effect": "Allow",

@@ -17,7 +17,7 @@ The following is an example of a simple text transformation on one of the fields
 
 This code creates a transformed data stream. The new data stream has the same data as the original stream, with the string "` Company`" appended to the contents of the `TICKER` field.
 
-```
+```java
 DataStream<ObjectNode> output = input.map(
     new MapFunction<ObjectNode, ObjectNode>() {
         @Override
@@ -33,7 +33,7 @@ DataStream<ObjectNode> output = input.map(
 
 The following is an example of an aggregation operator. The code creates an aggregated data stream. The operator creates a 5-second tumbling window and returns the sum of the `PRICE` values for the records in the window with the same `TICKER` value.
 
-```
+```java
 DataStream<ObjectNode> output = input.keyBy(node -> node.get("TICKER").asText())
     .window(TumblingProcessingTimeWindows.of(Time.seconds(5)))
     .reduce((node1, node2) -> {

@@ -24,7 +24,7 @@ AWS SDK clients are async safe and do not require special handling.
 
 The following code uses a global object which is mutated inside the function handler. This is not async-safe.
 
-```
+```javascript
 let state = {
     currentUser: null,
     requestData: null
@@ -43,7 +43,7 @@ export const handler = async (event, context) => {
 
 Initialising the `state` object inside the function handler avoids shared global state.
 
-```
+```javascript
 export const handler = async (event, context) => {
     let state = {
         currentUser: event.userId,
@@ -60,7 +60,7 @@ export const handler = async (event, context) => {
 
 The following code uses a shared client object which is shared between multiple invocations. Depending on the connection library used, this might not be concurrency safe.
 
-```
+```javascript
 const { Client } = require('pg');
 
 // Single connection created at init time
@@ -88,7 +88,7 @@ exports.handler = async (event) => {
 
 A concurrency-safe approach is to use a connection pool. The pool uses a separate connection for each concurrent database query.
 
-```
+```javascript
 const { Pool } = require('pg');
 
 // Connection pool created at init time
@@ -145,7 +145,7 @@ Use `context.getRemainingTimeInMillis()` to detect timeouts. See [Error handling
 
 Check remaining time before each unit of work and stop processing before the timeout fires. Configure `BUFFER_MS` based on the expected duration of your next chunk of work.
 
-```
+```javascript
 const BUFFER_MS = 2000; // Configure based on your next chunk of work
 
 exports.handler = async (event, context) => {
@@ -162,7 +162,7 @@ exports.handler = async (event, context) => {
 
 When making calls to downstream services, propagate the remaining time as a timeout to avoid hanging on network calls that would outlive your invocation:
 
-```
+```javascript
 const { S3Client, GetObjectCommand } = require("@aws-sdk/client-s3");
 const client = new S3Client({});
 

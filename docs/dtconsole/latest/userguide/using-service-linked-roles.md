@@ -42,7 +42,7 @@ You can see these actions in the policy statement for the AWSServiceRoleForCodeS
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

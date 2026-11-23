@@ -14,7 +14,7 @@ Before ingesting a CSV file, make sure:
 + Metadata fields provided in your metadata.json are present as columns in your CSV.
 + You provide a fileName.csv.metadata.json file with the following format:
 
-  ```
+  ```json
   {
       "metadataAttributes": {
           "${attribute1}": "${value1}",
@@ -70,7 +70,7 @@ description,city,price,bedrooms
 
 **Corresponding metadata file (`properties.csv.metadata.json`)**
 
-```
+```json
 {
     "metadataAttributes": {
         "source": "property_listings_2024"

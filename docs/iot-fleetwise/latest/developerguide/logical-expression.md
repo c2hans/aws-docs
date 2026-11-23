@@ -12,7 +12,7 @@ The expression variable should be constructed to comply with the rules for the t
 
 For example, if the signal catalog contains the following nodes:
 
-```
+```json
 {
     myVehicle.ADAS.Camera:
     type: sensor
@@ -27,7 +27,7 @@ For example, if the signal catalog contains the following nodes:
 
 If the nodes follow the ROS 2 definition:
 
-```
+```json
 {
     Vehicle.ADAS.CameraStruct.msg:
     boolean obstaclesExists
@@ -44,7 +44,7 @@ If the nodes follow the ROS 2 definition:
 
 The following are all possible event expression variables:
 
-```
+```json
 {
 ...
     $variable.`myVehicle.ADAS.Camera.obstaclesExists`

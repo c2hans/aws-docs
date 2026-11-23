@@ -19,7 +19,7 @@ All three tools require you to:
 
 Use CloudFormation to define your durable function in a template. The following example creates a durable function with the required permissions.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Lambda durable function example
 
@@ -78,7 +78,7 @@ Outputs:
 
 **To deploy the template**
 
-```
+```bash
 aws cloudformation deploy \
   --template-file template.yaml \
   --stack-name my-durable-function-stack \
@@ -93,7 +93,7 @@ With AWS CDK, you can define infrastructure using programming languages. The fol
 ------
 #### [ TypeScript ]
 
-```
+```typescript
 import * as cdk from 'aws-cdk-lib';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as iam from 'aws-cdk-lib/aws-iam';
@@ -131,7 +131,7 @@ export class DurableFunctionStack extends cdk.Stack {
 ------
 #### [ Python ]
 
-```
+```python
 from aws_cdk import (
     Stack,
     aws_lambda as lambda_,
@@ -179,7 +179,7 @@ class DurableFunctionStack(Stack):
 
 **To deploy the CDK stack**
 
-```
+```bash
 cdk deploy
 ```
 
@@ -188,7 +188,7 @@ cdk deploy
 
 AWS SAM simplifies CloudFormation templates for serverless applications. The following template creates a durable function with AWS SAM.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Lambda durable function with SAM
@@ -219,7 +219,7 @@ Outputs:
 
 **To deploy the SAM template**
 
-```
+```bash
 sam build
 sam deploy --guided
 ```
@@ -229,7 +229,7 @@ sam deploy --guided
 
 Terraform is a popular open-source IaC tool that supports AWS resources. The following example creates a durable function with Terraform using the AWS provider version 6.25.0 or later.
 
-```
+```hcl
 terraform {
   required_version = ">= 1.0"
   required_providers {
@@ -302,7 +302,7 @@ output "alias_arn" {
 
 **To deploy with Terraform**
 
-```
+```bash
 terraform init
 terraform plan
 terraform apply
@@ -321,7 +321,7 @@ You can also create Durable functions based off of container images. For instruc
 
 With AWS CDK, you can define infrastructure using programming languages. The following examples show how to create a durable function using TypeScript from a container image.
 
-```
+```typescript
 import * as cdk from 'aws-cdk-lib';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as iam from 'aws-cdk-lib/aws-iam';
@@ -360,7 +360,7 @@ export class DurableFunctionStack extends cdk.Stack {
 
 **To deploy the CDK stack**
 
-```
+```bash
 cdk deploy
 ```
 
@@ -369,7 +369,7 @@ cdk deploy
 
 AWS SAM simplifies CloudFormation templates for serverless applications. The following template creates a durable function with AWS SAM.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Lambda durable function with SAM
@@ -403,7 +403,7 @@ Outputs:
 
 **To deploy the SAM template**
 
-```
+```bash
 sam build
 sam deploy --guided
 ```

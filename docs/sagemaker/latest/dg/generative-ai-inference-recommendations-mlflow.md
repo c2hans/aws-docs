@@ -40,7 +40,7 @@ Add the `MlflowConfig` object to `OutputConfig` when you create a recommendation
 
 **Python (boto3)**
 
-```
+```python
 response = client.create_ai_recommendation_job(
     AIRecommendationJobName="my-recommendation-job",
     ModelSource={
@@ -94,7 +94,7 @@ Add the `MlflowConfig` object to `OutputConfig` when you create a benchmark job.
 
 **Python (boto3)**
 
-```
+```python
 response = client.create_ai_benchmark_job(
     AIBenchmarkJobName="my-benchmark-job",
     BenchmarkTarget={

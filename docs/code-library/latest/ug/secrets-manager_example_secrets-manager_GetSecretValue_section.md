@@ -20,7 +20,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SecretsManager#code-examples).
 
-```
+```csharp
     using System;
     using System.IO;
     using System.Threading.Tasks;
@@ -136,7 +136,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/secrets-manager#code-examples).
 
-```
+```cpp
 //! Retrieve an AWS Secrets Manager encrypted secret.
 /*!
   \param secretID: The ID for the secret.
@@ -222,7 +222,7 @@ For more information, see [Retrieve a secret](https://docs.aws.amazon.com/secret
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/secrets-manager#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.secretsmanager.SecretsManagerClient;
 import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueRequest;
@@ -295,7 +295,7 @@ public class GetSecretValue {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/secrets-manager#code-examples).
 
-```
+```javascript
 import {
   GetSecretValueCommand,
   SecretsManagerClient,
@@ -347,7 +347,7 @@ export const getSecretValue = async (secretName = "SECRET_NAME") => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/secrets-manager#code-examples).
 
-```
+```kotlin
 suspend fun getValue(secretName: String?) {
     val valueRequest =
         GetSecretValueRequest {
@@ -369,7 +369,7 @@ suspend fun getValue(secretName: String?) {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/secretsmanager#code-examples).
 
-```
+```python
 class GetSecretWrapper:
     def __init__(self, secretsmanager_client):
         self.client = secretsmanager_client
@@ -405,7 +405,7 @@ class GetSecretWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/secretsmanager#code-examples).
 
-```
+```rust
 async fn show_secret(client: &Client, name: &str) -> Result<(), Error> {
     let resp = client.get_secret_value().secret_id(name).send().await?;
 
@@ -422,7 +422,7 @@ async fn show_secret(client: &Client, name: &str) -> Result<(), Error> {
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/smr#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_secret_name = 'MySecretName'
         DATA(lo_result) = lo_smr->getsecretvalue( iv_secretid = iv_secret_name ).

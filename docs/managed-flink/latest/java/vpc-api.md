@@ -13,7 +13,7 @@ Use the [CreateApplication](https://docs.aws.amazon.com/managed-flink/latest/api
 
 The following example request code for the `CreateApplication` action includes a VPC configuration when the application is created:
 
-```
+```json
 {
   "ApplicationName":"MyApplication",
   "ApplicationDescription":"My-Application-Description",
@@ -55,7 +55,7 @@ Use the [AddApplicationVpcConfiguration](https://docs.aws.amazon.com/managed-fli
 
 The following example request code for the `AddApplicationVpcConfiguration` action adds a VPC configuration to an existing application:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "CurrentApplicationVersionId": 9,
@@ -76,7 +76,7 @@ Use the [DeleteApplicationVpcConfiguration](https://docs.aws.amazon.com/managed-
 
 The following example request code for the `AddApplicationVpcConfiguration` action removes an existing VPC configuration from an application:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "CurrentApplicationVersionId": 9,
@@ -94,7 +94,7 @@ Use the [UpdateApplication](https://docs.aws.amazon.com/managed-flink/latest/api
 
 The following example request code for the `UpdateApplication` action updates all of the VPC configurations for an application:
 
-```
+```json
 {
    "ApplicationConfigurationUpdate": {
       "VpcConfigurationUpdates": [

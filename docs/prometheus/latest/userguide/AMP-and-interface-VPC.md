@@ -47,7 +47,7 @@ The following is an example of an endpoint policy for Amazon Managed Service for
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

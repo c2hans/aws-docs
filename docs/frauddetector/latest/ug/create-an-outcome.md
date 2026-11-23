@@ -34,7 +34,7 @@ You can create outcomes in the Amazon Fraud Detector console, using the [put-out
 
 The following example uses the `PutOutcome` API to create three outcomes. They are `verify_customer`, `review`, and `approve`. After the outcomes are created, you can assign them to rules.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

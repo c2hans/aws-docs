@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```JSON
 "AwsEc2ClientVpnEndpoint": {
     "AuthenticationOptions": [
         {
@@ -62,7 +62,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```JSON
 "AwsEc2Eip": {
     "InstanceId": "instance1",
     "PublicIp": "192.0.2.04",
@@ -86,7 +86,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```JSON
 "AwsEc2Instance": {
     "IamInstanceProfileArn": "arn:aws:iam::123456789012:instance-profile/AdminRole",
     "ImageId": "ami-1234",
@@ -124,7 +124,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```json
 "AwsEc2LaunchTemplate": {
     "DefaultVersionNumber": "1",
     "ElasticGpuSpecifications": ["string"],
@@ -169,7 +169,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```json
 "AwsEc2NetworkAcl": {
     "IsDefault": false,
     "NetworkAclId": "acl-1234567890abcdef0",
@@ -208,7 +208,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```JSON
 "AwsEc2NetworkInterface": {
     "Attachment": {
         "AttachTime": "2019-01-01T03:03:21Z",
@@ -239,7 +239,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```JSON
 "AwsEc2RouteTable": {
     "AssociationSet": [{
     	"AssociationSet": {
@@ -278,7 +278,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```JSON
 "AwsEc2SecurityGroup": {
     "GroupName": "MySecurityGroup",
     "GroupId": "sg-903004f8",
@@ -323,7 +323,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```json
 AwsEc2Subnet: {
     "AssignIpv6AddressOnCreation": false,
     "AvailabilityZone": "us-west-2c",
@@ -354,7 +354,7 @@ The following is an example `AwsEc2TransitGateway` finding in the AWS Security F
 
 **Example**
 
-```
+```JSON
 "AwsEc2TransitGateway": {
 	"AmazonSideAsn": 65000,
 	"AssociationDefaultRouteTableId": "tgw-rtb-099ba47cbbea837cc",
@@ -380,7 +380,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```JSON
 "AwsEc2Volume": {
     "Attachments": [
       {
@@ -408,7 +408,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```JSON
 "AwsEc2Vpc": {
     "CidrBlockAssociationSet": [
         {
@@ -439,7 +439,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```json
 "AwsEc2VpcEndpointService": {
     "ServiceType": [
       {
@@ -474,7 +474,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
 
 **Example**
 
-```
+```JSON
 "AwsEc2VpcPeeringConnection": {
 	"AccepterVpcInfo": {
 		"CidrBlock": "10.0.0.0/28",

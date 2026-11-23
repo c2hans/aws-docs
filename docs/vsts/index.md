@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/vsts/index.html
 title: 'AWS Toolkit for Microsoft Azure DevOps Documentation'
 canonical_url: https://docs.aws.amazon.com/vsts/
 source: aws-documentation
-generated_on: 2026-11-18
+generated_on: 2026-11-20
 ---
 
 # AWS Toolkit for Microsoft Azure DevOps Documentation

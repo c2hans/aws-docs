@@ -32,7 +32,7 @@ aws application-autoscaling describe-scaling-activities \
 
 The following example shows the output produced when you run this command.
 
-```
+```json
 {
     "ActivityId": "activity-id",
     "ServiceNamespace": "sagemaker",
@@ -62,7 +62,7 @@ aws application-autoscaling describe-scaling-activities \
 
 Within the return syntax, check the [StatusCode](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_ScalingActivity.html#autoscaling-Type-ScalingActivity-StatusCode) and [StatusMessage](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_ScalingActivity.html#autoscaling-Type-ScalingActivity-StatusMessage) keys and their associated values. `StatusCode` returns `Failed`. Within `StatusMessage` there is a message indicating that the account-level service quota was reached. The following is an example of what that message might look like:
 
-```
+```json
 {
     "ActivityId": "activity-id",
     "ServiceNamespace": "sagemaker",

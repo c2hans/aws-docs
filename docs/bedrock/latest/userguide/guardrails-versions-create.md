@@ -30,7 +30,7 @@ To create a version of your guardrail, send a [CreateGuardrailVersion](https://d
 
 The request format is as follows:
 
-```
+```json
 POST /guardrails/{{guardrailIdentifier}} HTTP/1.1
 Content-type: application/json
 
@@ -42,7 +42,7 @@ Content-type: application/json
 
 The response format is as follows:
 
-```
+```json
 HTTP/1.1 202
 Content-type: application/json
 

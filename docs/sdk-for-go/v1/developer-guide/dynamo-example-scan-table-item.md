@@ -12,7 +12,7 @@ The example uses the [Expression Builder](https://aws.amazon.com/blogs/developer
 
 Create the file *DynamoDBScanItem.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -27,7 +27,7 @@ import (
 
 Create the data structure we use to contain the information about the table item.
 
-```
+```go
 // Create struct to hold info about new item
 type Item struct {
     Year   int
@@ -39,7 +39,7 @@ type Item struct {
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials` and region from the shared configuration file `~/.aws/config` and create a new DynamoDB service client.
 
-```
+```go
 // Initialize a session that the SDK will use to load
 // credentials from the shared credentials file ~/.aws/credentials
 // and region from the shared configuration file ~/.aws/config.
@@ -53,7 +53,7 @@ svc := dynamodb.New(sess)
 
 Create variables for the minimum rating and year for the table items to retrieve.
 
-```
+```go
 tableName := "Movies"
 minRating := 4.0
 year := 2013
@@ -61,7 +61,7 @@ year := 2013
 
 Create the expression defining the year for which we filter the table items to retrieve, and the projection so we get the title, year, and rating for each retrieved item. Then build the expression.
 
-```
+```go
 // Create the Expression to fill the input struct with.
 // Get all movies in that year; we'll pull out those with a higher rating later
 filt := expression.Name("Year").Equal(expression.Value(year))
@@ -80,7 +80,7 @@ if err != nil {
 
 Create the inputs for and call **Scan** to retrieve the items from the table (the movies made in 2013).
 
-```
+```go
 // Build the query input parameters
 params := &dynamodb.ScanInput{
     ExpressionAttributeNames:  expr.Names(),
@@ -99,7 +99,7 @@ if err != nil {
 
 Loop through the movies from 2013 and display the title and rating for those where the rating is greater than 4.0
 
-```
+```go
 numItems := 0
 
 for _, i := range result.Items {

@@ -84,7 +84,7 @@ You can also create an AWS RCS Agent using the AWS CLI. First, create the agent,
 
 Step 1: Create the AWS RCS Agent:
 
-```
+```bash
 aws pinpoint-sms-voice-v2 create-rcs-agent \
     --deletion-protection-enabled
 ```
@@ -121,7 +121,7 @@ After you add a test device, the tester invitation is not sent immediately. The 
 
 Use the `CreateVerifiedDestinationNumber` API with the `--rcs-agent-id` parameter to register a test device for your AWS RCS Agent:
 
-```
+```bash
 aws pinpoint-sms-voice-v2 create-verified-destination-number \
     --destination-phone-number +12065550100 \
     --rcs-agent-id rcs-a1b2c3d4
@@ -164,7 +164,7 @@ You can optionally set a configuration set for message events. Configuration set
 
 Use the `send-text-message` command to send a test message. Specify your AWS RCS Agent ARN as the origination identity:
 
-```
+```bash
 aws pinpoint-sms-voice-v2 send-text-message \
     --destination-phone-number +12065550100 \
     --origination-identity arn:aws:sms-voice:us-east-1:123456789012:rcs-agent/rcs-a1b2c3d4 \

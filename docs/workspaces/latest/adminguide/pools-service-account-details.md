@@ -61,7 +61,7 @@ Complete the following procedure to create an AWS KMS customer managed key
 
 1. In the Key policy section of the page, add the following:
 
-   ```
+   ```json
            {
                "Sid": "Allow access for Workspaces SP",
                "Effect": "Allow",
@@ -108,7 +108,7 @@ Complete the following procedure to create a Secrets Manager secret to store you
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

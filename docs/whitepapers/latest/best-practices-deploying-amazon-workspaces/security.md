@@ -104,6 +104,8 @@ For more infomation about adding a security group to a WorkSpaces directory or e
 
 ![Screenshot showing a WorkSpaces client with MFA enabled](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/pre-session-authentication.png)
 
+*Figure 21: WorkSpaces client with MFA enabled*
+
 ## Network Access Control Lists (ACLs)
 <a name="network-access-control-lists-acls"></a>
 
@@ -147,6 +149,8 @@ Due to the added complexity in managing yet another firewall, Network ACLs are c
 
 ![Sample architecture using Transit Gateway attachments.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/transit-gateway-attach.png)
 
+*Figure 22: Sample architecture using Transit Gateway attachments*
+
 ## Encrypted WorkSpaces
 <a name="encrypted-workspaces"></a>
 
@@ -163,6 +167,8 @@ Due to the added complexity in managing yet another firewall, Network ACLs are c
  Encryption for a WorkSpace should be specified when launching (creating) the WorkSpace. WorkSpaces volumes can be encrypted only at launch time: after launch, the volume encryption status cannot be changed. The following figure shows the Amazon WorkSpaces console page for choosing encryption during the launch of a new WorkSpace.
 
 ![Screenshot of WorkSpaces console and how to excrypt the root volume](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/root-volume.png)
+
+*Figure 23: Encrypting WorkSpace root volumes*
 
 ### How is a new WorkSpace encrypted?
 <a name="how-is-a-new-workspace-encrypted"></a>
@@ -222,6 +228,8 @@ Amazon WorkSpaces provides customers options to manage which client devices can 
 
 ![Screenshot of metrics in the console](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/cloudwatch-metrics.png)
 
+*Figure 24: CloudWatch metrics: ConnectionAttempt / ConnectionFailure*
+
 By default, the following metrics are enabled and are available at no extra cost:
 +  **Available** — WorkSpaces that respond to a status check are counted in this metric.
 +  **Unhealthy** — WorkSpaces that don’t respond to the same status check are counted in this metric.
@@ -235,6 +243,8 @@ By default, the following metrics are enabled and are available at no extra cost
  Additionally, alarms can be created, as shown in the following figure.
 
 ![Screenshot showing a CloudWatch alarm for connection errors](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/cloudwatch-alarm.png)
+
+*Figure 25: Create CloudWatch alarm for WorkSpaces connection errors*
 
 ### Amazon CloudWatch Events for WorkSpaces
 <a name="amazon-cloudwatch-events-for-workspaces"></a>
